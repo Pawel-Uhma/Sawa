@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Sawa — pitch dla zespołu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&family=Baloo+2:wght@700;800&family=Shrikhand&family=Gluten:wght@700;800&family=Bagel+Fat+One&display=swap" rel="stylesheet">
+<style>
+  /* Marka Sawy: kolory z awatara 32 */
+  :root {
+    --glebia: #17706F;   /* primary */
+    --mieta:  #8ED1B5;   /* secondary */
+    --koral:  #F2755F;   /* akcent */
+    --ink:    #102B2A;
+    --ink-2:  #566867;
+    --paper:  #FFFFFF;
+    --cream:  #FFF9F3;
+    --mint-bg:#E8F6F0;
+    --koral-bg:#FFEDE7;
+    --display: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --play: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --logo: 'Fredoka', 'Plus Jakarta Sans', sans-serif; /* tylko logo */
+  }
+  @page { size: 1920px 1080px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); }
+  body { font-family: var(--display); color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  .slide {
+    width: 1920px; height: 1080px; position: relative; overflow: hidden;
+    padding: 120px 140px; display: flex; flex-direction: column;
+    page-break-after: always; break-after: page; background: var(--paper);
+  }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+  .cream { background: var(--cream); }
+  .mint  { background: var(--mint-bg); }
+  .peach { background: var(--koral-bg); }
+
+  /* Typografia: tracking zależny od rozmiaru */
+  .eyebrow { font-family: var(--play); font-weight: 700; font-size: 38px; line-height: 1.2; letter-spacing: 0; color: var(--koral); }
+  .peach .eyebrow { color: #C9503B; }
+  .eyebrow.small { font-size: 30px; }
+  h1 { font-family: var(--logo); font-weight: 600; font-size: 240px; line-height: 0.9; letter-spacing: -0.02em; color: var(--glebia); }
+  h2 { font-weight: 800; font-size: 100px; line-height: 1.04; letter-spacing: -0.022em; word-spacing: 0.06em; }
+  h2.play { font-family: var(--play); font-weight: 800; font-size: 100px; letter-spacing: -0.022em; word-spacing: 0.06em; line-height: 1.04; }
+  h3 { font-weight: 700; font-size: 44px; line-height: 1.12; letter-spacing: -0.012em; word-spacing: 0.04em; }
+  h3.play { font-family: var(--play); font-weight: 700; }
+  .lead { font-size: 42px; line-height: 1.34; letter-spacing: -0.005em; word-spacing: 0.05em; color: var(--ink-2); font-weight: 400; }
+  p, li { font-size: 30px; line-height: 1.45; color: var(--ink-2); word-spacing: 0.05em; }
+  .muted { color: var(--ink-2); }
+  .accent { color: var(--glebia); }
+  .koral { color: var(--koral); }
+  .foot { position: absolute; left: 140px; right: 140px; bottom: 56px; display: flex; justify-content: space-between; font-size: 22px; color: #9AA7A6; letter-spacing: 0.01em; }
+
+  .spacer { flex: 1; }
+  .row { display: flex; gap: 40px; }
+  .card { background: var(--paper); border-radius: 40px; padding: 52px; flex: 1; display: flex; flex-direction: column; gap: 18px; border: 2px solid #EEF1EF; }
+  .tag { display: inline-block; align-self: flex-start; font-family: var(--play); font-weight: 700; font-size: 24px; letter-spacing: 0.02em; padding: 8px 20px; border-radius: 999px; }
+  .tag.g { background: #DDF0EC; color: var(--glebia); }
+  .tag.k { background: #FDE2DA; color: #C9503B; }
+  .tag.m { background: #DDF4EA; color: #2E8B6C; }
+
+  ul.clean { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  ul.clean li { padding-left: 36px; position: relative; }
+  ul.clean li::before { content: ''; position: absolute; left: 0; top: 17px; width: 14px; height: 14px; border-radius: 50%; background: var(--mieta); }
+  ul.clean.k li::before { background: var(--koral); }
+
+  /* Dekoracyjna fala */
+  .wave { position: absolute; left: 0; right: 0; bottom: 0; height: 160px; }
+
+  /* Galeria */
+  .grid { display: grid; gap: 24px; flex: 1; min-height: 0; margin-top: 48px; }
+  .grid.contain .tile img { object-fit: contain; }
+  .g10 { grid-template-columns: repeat(5, minmax(0,1fr)); grid-template-rows: repeat(2, minmax(0,1fr)); }
+  .g8  { grid-template-columns: repeat(4, minmax(0,1fr)); grid-template-rows: repeat(2, minmax(0,1fr)); }
+  .g6  { grid-template-columns: repeat(3, minmax(0,1fr)); grid-template-rows: repeat(2, minmax(0,1fr)); }
+  .tile { min-height: 0; background: #FFFFFF; border: 2px solid #EEF1EF; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column;  position: relative; }
+  .tile img { flex: 1; min-height: 0; width: 100%; object-fit: cover; display: block; }
+  .tile .cap { padding: 14px 20px 16px; font-size: 20px; line-height: 1.3; color: var(--ink-2); display: flex; gap: 10px; align-items: baseline; }
+  .tile .cap b { font-family: var(--play); font-weight: 600; color: var(--ink); font-size: 22px; }
+  .tile.pick { outline: 6px solid var(--koral); outline-offset: -6px; }
+  .tile.fav { outline: 4px solid var(--mieta); outline-offset: -4px; }
+  .badge { position: absolute; top: 16px; right: 16px; background: var(--koral); color: #fff; font-family: var(--play); font-weight: 600; font-size: 20px; padding: 6px 16px; border-radius: 999px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 30px; }
+  td, th { text-align: left; padding: 22px 0; border-bottom: 1px solid #E3E8E7; vertical-align: top; }
+  th { font-weight: 700; font-size: 22px; letter-spacing: 0.06em; text-transform: uppercase; color: #9AA7A6; padding-top: 0; }
+  td.n { font-family: var(--play); font-weight: 600; font-size: 34px; color: var(--ink); width: 22%; }
+  td.w { font-weight: 800; color: var(--glebia); width: 12%; }
+  td { color: var(--ink-2); }
+
+  /* Logo: propozycje */
+  .logos { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); grid-template-rows: repeat(2, minmax(0,1fr)); gap: 28px; flex: 1; min-height: 0; margin-top: 44px; }
+  .logo { border-radius: 36px; background: var(--paper); border: 2px solid #EEF1EF; display: flex; flex-direction: column; overflow: hidden;  }
+  .logo .art { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; }
+  .logo .cap { padding: 16px 26px 20px; font-size: 22px; color: var(--ink-2); border-top: 1px solid #EEF1F0; }
+  .logo .cap b { font-family: var(--play); font-weight: 600; color: var(--ink); font-size: 24px; margin-right: 8px; }
+  .face { border-radius: 50%; overflow: hidden; position: relative; background: #fff; }
+  .face img { position: absolute; }
+
+  /* Ikona i telefon */
+  .appicon { border-radius: 22.5%; overflow: hidden; background:#fff; border: 2px solid #E6EBE9; }
+  .appicon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .phone { width: 470px; height: 900px; border-radius: 76px; background: #1A1F1F; padding: 16px;  }
+  .screen { width: 100%; height: 100%; border-radius: 62px; background: linear-gradient(160deg, #FFF3EA 0%, #E3F4ED 55%, #CBEBDF 100%); position: relative; overflow: hidden; padding: 110px 34px 0; }
+  .home { display: grid; grid-template-columns: repeat(4, 1fr); row-gap: 30px; column-gap: 14px; justify-items: center; }
+  .app { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .app .sq { width: 74px; height: 74px; border-radius: 18px; }
+  .app span { font-size: 15px; color: #2A3A39; font-weight: 500; }
+  .dock { position: absolute; left: 22px; right: 22px; bottom: 22px; height: 116px; border-radius: 40px; background: rgba(255,255,255,0.45);  display: flex; justify-content: space-around; align-items: center; }
+
+  /* Makieta App Store */
+  .store { background: #FFFFFF; padding: 96px 30px 0; }
+  .store .hdr { display: flex; gap: 22px; align-items: center; }
+  .store .t { font-size: 30px; font-weight: 700; color: #111; line-height: 1.1; }
+  .store .st { font-size: 19px; color: #7A8483; margin-top: 4px; }
+  .store .get { margin-top: 12px; display: inline-block; background: #0A84FF; color: #fff; font-weight: 700; font-size: 18px; padding: 7px 22px; border-radius: 999px; }
+  .store .meta { display: flex; justify-content: space-between; margin: 26px 0 18px; padding: 16px 0; border-top: 1px solid #ECEEEE; border-bottom: 1px solid #ECEEEE; }
+  .store .meta div { text-align: center; flex: 1; }
+  .store .meta small { display: block; font-size: 12px; color: #9AA2A1; text-transform: uppercase; letter-spacing: 0.04em; }
+  .store .meta b { display: block; font-size: 20px; color: #4A5352; margin-top: 4px; }
+  .shots { display: flex; gap: 12px; }
+  .shot { width: 128px; height: 262px; border-radius: 18px; overflow: hidden; position: relative; padding: 14px 10px; display: flex; flex-direction: column; gap: 8px; }
+  .shot h6 { font-family: var(--play); font-weight: 600; font-size: 15px; line-height: 1.1; color: var(--ink); }
+  .bub { background: #fff; border-radius: 12px 12px 12px 4px; padding: 7px 8px; font-size: 10px; line-height: 1.3; color: var(--ink);  }
+  .bub.me { background: var(--glebia); color: #fff; border-radius: 12px 12px 4px 12px; align-self: flex-end; }
+  .pin { position: absolute; width: 14px; height: 14px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); }
+</style>
+</head>
+<body>
+
+<!-- 1. Okładka -->
+<section class="slide cream" style="flex-direction:row; align-items:center; padding-right:60px;">
+  <div style="flex:1; display:flex; flex-direction:column; gap:36px;">
+    <div class="eyebrow">Warsaw Open Data Hackathon · 17–18.10</div>
+    <h1>sawa<span class="koral">.</span></h1>
+    <p class="lead" style="max-width:820px;">Syrenka, która oprowadza cię po Warszawie. Łączy historię miasta z tym, co dzieje się dziś wieczorem.</p>
+  </div>
+  <img src="img/sawa-32.png" alt="Sawa" style="width:860px; height:860px; object-fit:contain;">
+  <div class="foot"><span>Propozycja Pawła na spotkanie zespołu</span><span>Środa, 14.10.2026</span></div>
+</section>
+
+<!-- 2. Czym jest Sawa: legenda -->
+<section class="slide mint" style="flex-direction:row; gap:70px; align-items:center;">
+  <div style="flex:1; display:flex; flex-direction:column; gap:32px;">
+    <div class="eyebrow">Czym jest Sawa</div>
+    <h2 class="play" style="color:var(--glebia);">Syrena z legendy o&nbsp;powstaniu Warszawy.</h2>
+    <p class="lead">Według legendy rybak <b style="color:var(--ink); font-weight:700;">Wars</b> i syrena <b style="color:var(--ink); font-weight:700;">Sawa</b> dali miastu imię: <b style="color:var(--koral); font-weight:700;">Wars + Sawa = Warszawa</b>.</p>
+    <div class="row" style="gap:24px; margin-top:8px;">
+      <div class="card" style="gap:10px; padding:36px;">
+        <span class="tag k">Herb</span>
+        <h3 class="play" style="font-size:36px;">Miecz i tarcza</h3>
+        <p style="font-size:24px;">W innej wersji legendy syrena obiecała bronić miasta. Stąd miecz i tarcza w herbie, a u nas złota spinka we włosach.</p>
+      </div>
+      <div class="card" style="gap:10px; padding:36px;">
+        <span class="tag g">Pomnik</span>
+        <h3 class="play" style="font-size:36px;">Syrenka nad Wisłą</h3>
+        <p style="font-size:24px;">Rzeźba Ludwiki Nitschowej z 1939 r. Pozowała Krystyna Krahelska, poetka, która zginęła w Powstaniu.</p>
+      </div>
+    </div>
+  </div>
+  <img src="img/scena-herb.png" alt="Sawa z mieczem i tarczą" style="width:600px; height:760px; object-fit:contain;">
+  <div class="foot"><span>Nasza Sawa to ta sama syrena, tylko w wersji na 2076 rok</span><span>02</span></div>
+</section>
+
+<!-- 3. Hak: 2076 -->
+<section class="slide cream" style="flex-direction:row; gap:80px; align-items:center; padding-right:120px;">
+  <div style="flex:1; display:flex; flex-direction:column; gap:44px;">
+    <div class="eyebrow">Warszawa, rok 2076</div>
+    <h2 class="play" style="font-size:88px;">W&nbsp;2076 roku Warszawa jest jak Nowy Jork. Pełna ludzi z&nbsp;całego świata, którzy nie wiedzą, po czym chodzą.</h2>
+    <p class="lead" style="font-size:38px;">Świadków powstania już nie ma. Granica getta to linia w bruku, której nikt nie zauważa. Sąsiedzi mieszkają obok siebie, nie razem.</p>
+  </div>
+  <img src="img/scena-2076.jpg" alt="Sawa patrzy na wieżowce wokół Pałacu Kultury" style="width:660px; height:825px; object-fit:cover; border-radius:48px;">
+  <div class="foot"><span>sawa</span><span>03</span></div>
+</section>
+
+<!-- 4. Kim jest Sawa -->
+<section class="slide">
+  <div class="eyebrow">Co robi Sawa</div>
+  <h2 style="margin-top:24px;">Jedna postać, trzy role.</h2>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="card" style="padding:40px 44px; gap:12px; background:var(--mint-bg); "><img src="img/rola-przewodniczka.png" alt="" style="height:230px; width:100%; object-fit:contain;"><span class="tag g">Przeszłość</span><h3 class="play">Przewodniczka</h3><p>Mówi, co wydarzyło się tam, gdzie właśnie jesteś: getto, powstanie, odbudowa, ludzie stąd.</p></div>
+    <div class="card" style="padding:40px 44px; gap:12px; background:var(--cream); "><img src="img/rola-kumpela.png" alt="" style="height:230px; width:100%; object-fit:contain;"><span class="tag m">Teraz</span><h3 class="play">Kumpela z miasta</h3><p>Zna koncerty, domy kultury, zajęcia i boiska. Podpowiada, co jest blisko, dziś albo jutro.</p></div>
+    <div class="card" style="padding:40px 44px; gap:12px; background:var(--koral-bg); "><img src="img/rola-laczniczka.png" alt="" style="height:230px; width:100%; object-fit:contain;"><span class="tag k">Razem</span><h3 class="play">Łączniczka</h3><p>Pomaga umówić się ze znajomymi. Ty podajesz termin i dzielnicę, ona daje gotowy plan.</p></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="foot"><span>sawa</span><span>04</span></div>
+</section>
+
+<!-- 5. Trzy sceny -->
+<section class="slide cream">
+  <div class="eyebrow">Jak to wygląda</div>
+  <h2 style="margin-top:24px;">Trzy sceny z demo.</h2>
+  <div class="spacer"></div>
+  <div style="display:flex; flex-direction:column; gap:24px;">
+    <div class="row" style="align-items:center; gap:32px;">
+      <div style="width:340px;" class="eyebrow small">Tramwajem przez Muranów</div>
+      <div style="flex:1; background:var(--paper); border-radius:40px 40px 40px 10px; padding:30px 40px; font-family:var(--play); font-size:40px; font-weight:500; line-height:1.25; ">„Po lewej przebiegała granica getta. Chcesz posłuchać, co tu było w 1942?”</div>
+    </div>
+    <div class="row" style="align-items:center; gap:32px;">
+      <div style="width:340px;" class="eyebrow small">Spacer po Pradze</div>
+      <div style="flex:1; background:var(--paper); border-radius:40px 40px 40px 10px; padding:30px 40px; font-family:var(--play); font-size:40px; font-weight:500; line-height:1.25; ">„Dwie ulice stąd, w domu kultury, jutro o 19 jest koncert. Wejście wolne.”</div>
+    </div>
+    <div class="row" style="align-items:center; gap:32px;">
+      <div style="width:340px;" class="eyebrow small">Ty do Sawy</div>
+      <div style="flex:1; background:var(--glebia); color:#fff; border-radius:40px 40px 10px 40px; padding:30px 40px; font-family:var(--play); font-size:40px; font-weight:500; line-height:1.25;">„Spotykam się z Kubą we wtorek o 18 na Mokotowie. Co robimy?”</div>
+    </div>
+    <p style="padding-left:372px; font-size:28px;">Sawa daje trzy plany z dojazdem i pogodą.</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="foot"><span>sawa</span><span>05</span></div>
+</section>
+
+<!-- 6. Dane -->
+<section class="slide">
+  <div class="eyebrow">Dane</div>
+  <h2 style="margin-top:24px;">Skąd Sawa wie, co mówi.</h2>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="card" style="background:var(--mint-bg); "><div style="display:flex; gap:24px; align-items:flex-end;"><div style="flex:1; display:flex; flex-direction:column; gap:18px;">
+      <span class="tag g">Z portalu miasta · jest</span>
+      <h3 class="play">Teraźniejszość</h3>
+      <ul class="clean">
+        <li>Kalendarz wydarzeń ze współrzędnymi</li>
+        <li>Zajęcia sportowe i otwarte boiska</li>
+        <li>Przystanki, odjazdy, tramwaje na żywo</li>
+        <li>Pogoda i jakość powietrza</li>
+      </ul></div><img src="img/dane-teraz.png" alt="" style="width:230px; height:330px; object-fit:contain;"></div>
+    </div>
+    <div class="card" style="background:var(--koral-bg); "><div style="display:flex; gap:24px; align-items:flex-end;"><div style="flex:1; display:flex; flex-direction:column; gap:18px;">
+      <span class="tag k">Spoza portalu · do zebrania</span>
+      <h3 class="play">Przeszłość</h3>
+      <ul class="clean k">
+        <li>Historia miejsc: getto, powstanie, zabytki</li>
+        <li>Parki i zieleń</li>
+        <li>Wikidata, Wikipedia, otwarte mapy historyczne</li>
+        <li>20–30 sprawdzonych punktów ze źródłami</li>
+      </ul></div><img src="img/dane-przeszlosc.png" alt="" style="width:230px; height:330px; object-fit:contain;"></div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="foot"><span>Portal ma 19 zbiorów (stan na 26.09), bez parków i historii. Regulamin wymaga min. 1 zbioru z portalu, resztę wolno dołożyć</span><span>06</span></div>
+</section>
+
+<!-- 7. Punktacja -->
+<section class="slide cream">
+  <div class="eyebrow">Dlaczego to może wygrać</div>
+  <h2 style="margin-top:24px;">Sawa a kryteria jury.</h2>
+  <div class="spacer"></div>
+  <table>
+    <tr><th>Kryterium</th><th>Waga</th><th>Dlaczego Sawa</th></tr>
+    <tr><td class="n">Innowacyjność</td><td class="w">25%</td><td>Postać z charakterem zamiast kolejnego katalogu wydarzeń</td></tr>
+    <tr><td class="n">Otwarte dane</td><td class="w">20%</td><td>6–8 zbiorów miasta, część na żywo (ZTM)</td></tr>
+    <tr><td class="n">Wdrożenie</td><td class="w">20%</td><td>Miasto, turystyka, szkoły, muzea</td></tr>
+    <tr><td class="n">Prezentacja</td><td class="w">20%</td><td>Syrenka mówi na scenie, ludzie ją zapamiętają</td></tr>
+    <tr><td class="n">Warszawa</td><td class="w">15%</td><td>Bohaterka z herbu i legendy o nazwie miasta</td></tr>
+  </table>
+  <div class="spacer"></div>
+  <div class="foot"><span>W jury jest osoba z Bielik.AI, więc Sawa mówiąca polskim modelem to dodatkowy plus</span><span>07</span></div>
+</section>
+
+<!-- 8. MVP -->
+<section class="slide">
+  <div class="eyebrow">Zakres</div>
+  <h2 style="margin-top:24px;">Co budujemy w 24 godziny.</h2>
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="card" style="background:var(--mint-bg); ">
+      <span class="tag g">Musi działać</span>
+      <ul class="clean">
+        <li>Mapa z wydarzeniami i punktami historii</li>
+        <li>Symulowany spacer: Sawa odzywa się przy punktach</li>
+        <li>Czat: „co robimy we wtorek o 18?”</li>
+        <li>Publiczny link na scenę</li>
+      </ul>
+    </div>
+    <div class="card" style="background:var(--koral-bg); ">
+      <span class="tag k">Jeśli zdążymy</span>
+      <ul class="clean k">
+        <li>Głos Sawy</li>
+        <li>Tryb „jadę tramwajem” na pozycjach ZTM</li>
+        <li>Wersja angielska</li>
+        <li>Fizyczna mówiąca figurka Sawy</li>
+      </ul>
+    </div>
+    <img src="img/scena-laptop.png" alt="Sawa przy laptopie" style="width:340px; align-self:flex-end;">
+  </div>
+  <div class="spacer"></div>
+  <p style="font-size:26px;">Stack: Next.js, MapLibre, LLM Bielik (zapasowo Claude). O historii Sawa mówi tylko z naszej bazy punktów, zawsze ze źródłem.</p>
+  <div class="foot"><span>sawa</span><span>08</span></div>
+</section>
+
+<!-- 9. Zespół -->
+<section class="slide cream">
+  <div class="eyebrow">Zespół</div>
+  <h2 style="margin-top:24px;">Propozycja ról.</h2>
+  <div class="spacer"></div>
+  <table>
+    <tr><th>Kto</th><th></th><th>Co robi</th></tr>
+    <tr><td class="n">Antek</td><td class="w"></td><td>Dane miasta i backend: proxy do API, ZTM na żywo, cache</td></tr>
+    <tr><td class="n">Kuba</td><td class="w"></td><td>Mapa i spacer z punktami, z Antkiem ewentualnie figurka</td></tr>
+    <tr><td class="n">Ala</td><td class="w"></td><td>Treść i charakter Sawy: punkty historii, źródła, scenariusz pitcha</td></tr>
+    <tr><td class="n">Janek</td><td class="w"></td><td>Repo, deploy, hosting LLM, żeby wszystko działało na scenie</td></tr>
+    <tr><td class="n">Paweł</td><td class="w"></td><td>Sawa jako AI: prompty, narzędzia LLM, czat, praca z agentami</td></tr>
+  </table>
+  <div class="spacer"></div>
+  <div class="foot"><span>Do dyskusji. Każdy pracuje z własnym agentem AI, repo jest wspólnym „mózgiem”</span><span>09</span></div>
+</section>
+
+<!-- 10. Ryzyka -->
+<section class="slide">
+  <div class="eyebrow">Ryzyka</div>
+  <h2 style="margin-top:24px;">Co może pójść źle.</h2>
+  <img src="img/scena-lupa.png" alt="Sawa sprawdza źródła" style="position:absolute; right:150px; top:50px; width:250px;">
+  <div class="spacer"></div>
+  <div class="row">
+    <div class="card" style="background:var(--cream); "><h3 class="play">Zmyślona historia</h3><p>Sawa mówi tylko z bazy punktów przygotowanej przez Alę, z podanym źródłem.</p></div>
+    <div class="card" style="background:var(--cream); "><h3 class="play">Trudne tematy</h3><p>Getto i powstanie wymagają taktu. Osobny ton dla takich miejsc, bez żartów.</p></div>
+    <div class="card" style="background:var(--cream); "><h3 class="play">Za duży zakres</h3><p>Najpierw jedna ścieżka od początku do końca, dopiero potem dodatki.</p></div>
+    <div class="card" style="background:var(--koral-bg); "><h3 class="play">Regulamin</h3><p>Przed 17.10, 11:00 zero kodu i gotowych grafik. Sawę i logo robimy od nowa w sobotę.</p></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="foot"><span>sawa</span><span>10</span></div>
+</section>
+
+<!-- 11. Marka -->
+<section class="slide cream" style="flex-direction:row; gap:80px; align-items:stretch;">
+  <div style="width:720px; display:flex; flex-direction:column;">
+    <div class="eyebrow">Marka</div>
+    <h2 class="play" style="margin-top:24px; font-size:96px;">Cute, glossy, z&nbsp;charakterem.</h2>
+    <div class="spacer"></div>
+    <img src="img/sawa-32.png" alt="Sawa, wariant 32" style="width:580px; height:580px; object-fit:contain; align-self:center;">
+  </div>
+  <div style="flex:1; display:flex; flex-direction:column; gap:56px; padding-top:20px;">
+    <div>
+      <div class="eyebrow small" style="color:#9AA7A6;">Paleta</div>
+      <div class="row" style="margin-top:28px; gap:28px;">
+        <div style="flex:1;"><div style="height:220px; border-radius:40px; background:var(--glebia);"></div><h3 class="play" style="margin-top:20px; font-size:36px;">Głębia</h3><p style="font-size:24px;">#17706F · primary</p></div>
+        <div style="flex:1;"><div style="height:220px; border-radius:40px; background:var(--mieta);"></div><h3 class="play" style="margin-top:20px; font-size:36px;">Mięta</h3><p style="font-size:24px;">#8ED1B5 · secondary</p></div>
+        <div style="flex:1;"><div style="height:220px; border-radius:40px; background:var(--koral);"></div><h3 class="play" style="margin-top:20px; font-size:36px;">Koral</h3><p style="font-size:24px;">#F2755F · akcent</p></div>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow small" style="color:#9AA7A6;">Fonty</div>
+      <div class="row" style="margin-top:28px; gap:28px;">
+        <div class="card" style="padding:40px;">
+          <div style="font-family:var(--logo); font-weight:600; font-size:96px; line-height:1; color:var(--glebia);">sawa.</div>
+          <h3 style="font-size:32px;">Fredoka</h3>
+          <p style="font-size:24px;">Tylko logo.</p>
+        </div>
+        <div class="card" style="padding:40px;">
+          <div style="font-family:var(--display); font-weight:800; font-size:96px; letter-spacing:-0.03em; line-height:1;">Aa</div>
+          <h3 style="font-size:32px;">Plus Jakarta Sans</h3>
+          <p style="font-size:24px;">Wszystko poza logo: nagłówki, tekst, interfejs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Kolory pobrane z awatara 32</span><span>11</span></div>
+</section>
+
+<!-- 12. Logo -->
+<section class="slide">
+  <div class="eyebrow">Logo · 5 propozycji</div>
+  <h2 style="margin-top:20px; font-size:80px;">Który znak to Sawa?</h2>
+  <div class="logos">
+
+    <!-- 1. Fredoka + fala -->
+    <div class="logo">
+      <div class="art" style="background:var(--cream); flex-direction:column;">
+        <div style="font-family:'Fredoka'; font-weight:600; font-size:150px; line-height:0.9; color:var(--glebia); letter-spacing:-0.01em;">sawa</div>
+        <svg width="300" height="34" viewBox="0 0 300 34" aria-label="fala"><path d="M4 18 Q 41 0 79 18 T 154 18 T 229 18 T 296 18" fill="none" stroke="#8ED1B5" stroke-width="10" stroke-linecap="round"/></svg>
+      </div>
+      <div class="cap"><b>1</b>Fredoka · fala Wisły pod spodem</div>
+    </div>
+
+    <!-- 2. Baloo + miecz -->
+    <div class="logo">
+      <div class="art" style="background:var(--mint-bg);">
+        <div style="position:relative; font-family:'Baloo 2'; font-weight:800; font-size:150px; line-height:1; color:var(--glebia); letter-spacing:-0.02em;">Sawa
+          <svg style="position:absolute; right:-62px; top:0px; transform:rotate(28deg);" width="40" height="120" viewBox="0 0 40 120" aria-label="miecz"><path d="M20 4 L27 78 L13 78 Z" fill="#F2B544"/><rect x="4" y="76" width="32" height="8" rx="4" fill="#F2755F"/><rect x="16" y="84" width="8" height="24" rx="4" fill="#F2755F"/><circle cx="20" cy="112" r="6" fill="#F2B544"/></svg>
+        </div>
+      </div>
+      <div class="cap"><b>2</b>Baloo 2 · złoty mieczyk ze spinki</div>
+    </div>
+
+    <!-- 3. Shrikhand naklejka -->
+    <div class="logo">
+      <div class="art" style="background:var(--koral-bg);">
+        <div style="font-family:'Shrikhand'; font-size:140px; line-height:1; color:var(--koral); text-shadow: 6px 6px 0 #17706F; transform:rotate(-6deg);">Sawa</div>
+      </div>
+      <div class="cap"><b>3</b>Shrikhand · retro naklejka z cieniem</div>
+    </div>
+
+    <!-- 4. Gluten, skaczące litery -->
+    <div class="logo">
+      <div class="art" style="background:var(--cream);">
+        <div style="font-family:'Gluten'; font-weight:800; font-size:150px; line-height:1; display:flex;">
+          <span style="color:#17706F; transform:rotate(-8deg) translateY(6px); display:inline-block;">s</span>
+          <span style="color:#8ED1B5; transform:rotate(6deg) translateY(-10px); display:inline-block;">a</span>
+          <span style="color:#F2755F; transform:rotate(-4deg) translateY(4px); display:inline-block;">w</span>
+          <span style="color:#17706F; transform:rotate(8deg) translateY(-6px); display:inline-block;">a</span>
+        </div>
+      </div>
+      <div class="cap"><b>4</b>Gluten · litery tańczą jak na wodzie</div>
+    </div>
+
+    <!-- 5. Bagel Fat One + twarz -->
+    <div class="logo">
+      <div class="art" style="background:var(--mint-bg);">
+        <div style="display:flex; align-items:center; gap:18px; background:var(--glebia); padding:16px 40px 16px 16px; border-radius:999px;">
+          <div class="face" style="width:120px; height:120px;"><img src="img/32-31-nano-banana-2.1.jpg" alt="" style="width:264px; left:-72px; top:-14px;"></div>
+          <div style="font-family:'Bagel Fat One'; font-size:84px; line-height:1; color:#FFF9F3; letter-spacing:0.01em;">SAWA</div>
+        </div>
+      </div>
+      <div class="cap"><b>5</b>Bagel Fat One · plakietka z buzią Sawy</div>
+    </div>
+
+    <!-- Ikony aplikacji -->
+    <div class="logo">
+      <div class="art" style="background:#F4F6F5; gap:30px;">
+        <div style="width:150px; height:150px; border-radius:38px; background:var(--glebia); display:flex; align-items:center; justify-content:center; font-family:'Fredoka'; font-weight:600; font-size:110px; color:#fff; line-height:1;">s</div>
+        <div style="width:150px; height:150px; border-radius:38px; background:var(--koral-bg); display:flex; align-items:center; justify-content:center; font-family:'Shrikhand'; font-size:100px; color:var(--koral); line-height:1;">S</div>
+        <div class="appicon" style="width:150px; height:150px;"><img src="img/ikona-sawa.jpg" alt=""></div>
+      </div>
+      <div class="cap"><b>+</b>Jak to wygląda jako ikona aplikacji</div>
+    </div>
+
+  </div>
+  <div class="foot" style="bottom:40px;"><span>Szkice do wyboru. Finalne logo rysujemy w sobotę</span><span>12</span></div>
+</section>
+
+
+<!-- Logo i ikona (wybór) -->
+<section class="slide cream" style="flex-direction:row; gap:90px; align-items:center;">
+  <div style="flex:1; display:flex; flex-direction:column; gap:40px;">
+    <div class="eyebrow">Logo i ikona</div>
+    <div style="font-family:var(--logo); font-weight:600; font-size:220px; line-height:0.9; color:var(--glebia); letter-spacing:-0.01em;">sawa<span class="koral">.</span></div>
+    <p class="lead" style="max-width:780px;">Napis w Fredoce z koralową kropką. Ikona aplikacji to duże zbliżenie na głowę Sawy na jasnym tle.</p>
+    <div class="row" style="align-items:flex-end; gap:36px; margin-top:10px;">
+      <div class="appicon" style="width:180px; height:180px;"><img src="img/ikona-sawa.jpg" alt=""></div>
+      <div class="appicon" style="width:120px; height:120px;"><img src="img/ikona-sawa.jpg" alt=""></div>
+      <div class="appicon" style="width:76px; height:76px;"><img src="img/ikona-sawa.jpg" alt=""></div>
+      <div class="appicon" style="width:48px; height:48px;"><img src="img/ikona-sawa.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="phone"><div class="screen">
+    <div class="home"><div class="app"><div class="sq" style="background:#F6D9C9;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#D7E9F3;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#E9E1F5;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#F3E8C8;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#D9EFE3;"></div><span>&nbsp;</span></div><div class="app"><div class="sq appicon" style=""><img src="img/ikona-sawa.jpg" alt="Sawa"></div><span style="font-weight:600;">Sawa</span></div><div class="app"><div class="sq" style="background:#F7D3D3;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#DDE5E4;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#F3E3D3;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#E1F0EA;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#EEDDF0;"></div><span>&nbsp;</span></div><div class="app"><div class="sq" style="background:#D8E8F7;"></div><span>&nbsp;</span></div></div>
+    <div class="dock"><div class="sq" style="width:74px;height:74px;border-radius:18px;background:#F6D9C9;"></div><div class="sq" style="width:74px;height:74px;border-radius:18px;background:#D7E9F3;"></div><div class="sq" style="width:74px;height:74px;border-radius:18px;background:#E1F0EA;"></div><div class="sq" style="width:74px;height:74px;border-radius:18px;background:#F3E8C8;"></div></div>
+  </div></div>
+  <div class="foot"><span>Ikona: zbliżenie na głowę z awatara 32</span><span>13</span></div>
+</section>
+
+
+<!-- Makieta App Store -->
+<section class="slide mint" style="flex-direction:row; gap:90px; align-items:center;">
+  <div style="flex:1; display:flex; flex-direction:column; gap:36px;">
+    <div class="eyebrow">Tak by to wyglądało</div>
+    <h2 class="play" style="color:var(--glebia);">Sawa w&nbsp;sklepie z&nbsp;aplikacjami.</h2>
+    <p class="lead" style="max-width:820px;">Nazwa, ikona i trzy zrzuty, które od razu mówią, co robi Sawa: opowiada historię, pokazuje, co się dzieje, i pomaga się umówić.</p>
+    <p style="font-size:24px;">Makieta poglądowa. Na hackathonie robimy aplikację webową, nie publikujemy jej w sklepie.</p>
+  </div>
+  <div class="phone"><div class="screen store">
+    <div class="hdr">
+      <div class="appicon" style="width:118px; height:118px; flex:none;"><img src="img/ikona-sawa.jpg" alt=""></div>
+      <div>
+        <div class="t">Sawa</div>
+        <div class="st">Syrenka, która oprowadza cię po Warszawie</div>
+        <span class="get">POBIERZ</span>
+      </div>
+    </div>
+    <div class="meta">
+      <div><small>Kategoria</small><b>Podróże</b></div>
+      <div><small>Wiek</small><b>4+</b></div>
+      <div><small>Język</small><b>PL, EN</b></div>
+    </div>
+    <div class="shots">
+      <div class="shot" style="background:#FFEDE7;">
+        <h6>Historia tam, gdzie stoisz</h6>
+        <img src="img/sawa-32.png" alt="" style="width:86px; height:86px; object-fit:contain; align-self:center;">
+        <div class="bub">Po lewej przebiegała granica getta. Opowiedzieć ci?</div>
+      </div>
+      <div class="shot" style="background:#E8F6F0;">
+        <h6>Co dziś blisko ciebie</h6>
+        <div style="flex:1; border-radius:12px; background:repeating-linear-gradient(35deg,#F7FBF9 0 14px,#E3EFEA 14px 16px); position:relative;">
+          <div class="pin" style="left:24px; top:30px; background:var(--koral);"></div>
+          <div class="pin" style="left:74px; top:70px; background:var(--glebia);"></div>
+          <div class="pin" style="left:40px; top:118px; background:var(--koral);"></div>
+          <div class="bub" style="position:absolute; left:6px; right:6px; bottom:8px;">Koncert w domu kultury, jutro 19:00</div>
+        </div>
+      </div>
+      <div class="shot" style="background:#FFF9F3;">
+        <h6>Umów się ze znajomymi</h6>
+        <div class="bub me">Wtorek 18:00, Mokotów. Co robimy?</div>
+        <div class="bub">Mam 3 plany: spacer, kino plenerowe albo boisko.</div>
+        <div class="bub" style="background:var(--koral-bg);">Dojazd: 10 min tramwajem 18</div>
+      </div>
+    </div>
+    <div style="margin-top:22px; font-size:17px; line-height:1.45; color:#4A5352;">Sawa to syrena z legendy o powstaniu Warszawy, tylko w wersji na dziś. Idź przez miasto, a opowie ci, co tu było. Zapytaj, co robić wieczorem, a znajdzie koncert, zajęcia albo boisko blisko ciebie.</div>
+    <div style="margin-top:14px; display:flex; gap:8px; flex-wrap:wrap;">
+      <span style="font-size:14px; background:#E8F6F0; color:var(--glebia); padding:5px 12px; border-radius:999px; font-weight:600;">Dane miasta na żywo</span>
+      <span style="font-size:14px; background:#FFEDE7; color:#C9503B; padding:5px 12px; border-radius:999px; font-weight:600;">Historia ze źródłami</span>
+      <span style="font-size:14px; background:#F4F6F5; color:#4A5352; padding:5px 12px; border-radius:999px; font-weight:600;">Polski model AI</span>
+    </div>
+  </div></div>
+  <div class="foot"><span>Makieta, nie prawdziwa strona w sklepie</span><span>14</span></div>
+</section>
+
+<!-- 13. Proces: wstęp -->
+<section class="slide peach" style="justify-content:center; gap:48px;">
+  <div class="eyebrow">Jak powstała Sawa</div>
+  <h2 class="play" style="max-width:1500px; color:var(--koral);">34 szkice. 7 rund. 11 modeli.</h2>
+  <img src="img/scena-zaglada.png" alt="" style="position:absolute; right:160px; bottom:0; width:560px;">
+  <p class="lead" style="max-width:1100px;">Od dziesięciu stylów do jednej postaci, za ok. 1–2 USD. To szkice do rozmowy: właściwą Sawę generujemy w sobotę tym samym promptem.</p>
+  <div class="foot"><span>Pełne prompty: docs/awatar/README.md</span><span>15</span></div>
+</section>
+
+<!-- 14. Galeria R1 -->
+<section class="slide cream">
+  <div class="eyebrow">Runda 1 · 10 modeli, 10 stylów</div>
+  <h3 class="play" style="margin-top:16px; font-size:60px;">Szukanie kierunku.</h3>
+  <div class="grid g10">
+    <div class="tile"><img src="img/01-nano-banana-2.1-clay.jpg"><div class="cap"><b>01</b>Nano Banana 2.1 · glina</div></div>
+    <div class="tile"><img src="img/02-gpt-image-2-vinyl.jpg"><div class="cap"><b>02</b>GPT Image 2 · winyl</div></div>
+    <div class="tile"><img src="img/03-muse-szklo.jpg"><div class="cap"><b>03</b>Meta Muse · szkło</div></div>
+    <div class="tile"><img src="img/04-flux-3-hoodie.jpg"><div class="cap"><b>04</b>Flux 3 · bluza</div></div>
+    <div class="tile"><img src="img/05-seedream-5-pro-semi-real.jpg"><div class="cap"><b>05</b>Seedream 5 Pro · półrealizm</div></div>
+    <div class="tile"><img src="img/06-ideogram-4.5-geometria.jpg"><div class="cap"><b>06</b>Ideogram 4.5 · bryły</div></div>
+    <div class="tile"><img src="img/07-krea-2-plusz.jpg"><div class="cap"><b>07</b>Krea 2 · pluszak</div></div>
+    <div class="tile"><img src="img/08-grok-2-toon.jpg"><div class="cap"><b>08</b>Grok 2 · toon</div></div>
+    <div class="tile"><img src="img/09-qwen-3-ikona.jpg"><div class="cap"><b>09</b>Qwen 3 · ikona</div></div>
+    <div class="tile"><img src="img/10-nano-banana-pro-wisla.jpg"><div class="cap"><b>10</b>Nano Banana Pro · Wisła</div></div>
+  </div>
+</section>
+
+<!-- 15. Galeria R2 + R3 -->
+<section class="slide cream">
+  <div class="eyebrow">Rundy 2–3 · cała postać, potem prawdziwa syrena</div>
+  <h3 class="play" style="margin-top:16px; font-size:60px;">Od maskotki do syreny.</h3>
+  <div class="grid g10">
+    <div class="tile"><img src="img/11-nano-banana-2.1-futro-ulica.jpg"><div class="cap"><b>11</b>Nano Banana 2.1 · futro</div></div>
+    <div class="tile"><img src="img/12-gpt-image-2-glina-bluza.jpg"><div class="cap"><b>12</b>GPT Image 2 · glina</div></div>
+    <div class="tile"><img src="img/13-flux-3-bryly-ikony.jpg"><div class="cap"><b>13</b>Flux 3 · bryły</div></div>
+    <div class="tile"><img src="img/14-seedream-5-pro-futro-wisla.jpg"><div class="cap"><b>14</b>Seedream 5 Pro · Wisła</div></div>
+    <div class="tile"><img src="img/15-muse-welur-czapka.jpg"><div class="cap"><b>15</b>Meta Muse · welur</div></div>
+    <div class="tile"><img src="img/16-lite-bob-macha.jpg"><div class="cap"><b>16</b>Lite · bob</div></div>
+    <div class="tile"><img src="img/17-lite-kucyk-muszle.jpg"><div class="cap"><b>17</b>Lite · kucyk</div></div>
+    <div class="tile fav"><img src="img/18-lite-winyl-rece-na-biodrach.jpg"><div class="cap"><b>18</b>Lite · winyl</div></div>
+    <div class="tile"><img src="img/19-lite-minimal-telefon.jpg"><div class="cap"><b>19</b>Lite · minimal</div></div>
+    <div class="tile"><img src="img/20-lite-piegi-rozowe-konce.jpg"><div class="cap"><b>20</b>Lite · piegi</div></div>
+  </div>
+</section>
+
+<!-- 16. Galeria R4 + R5 -->
+<section class="slide cream">
+  <div class="eyebrow">Rundy 4–5 · wygląd 18 w innych kolorach</div>
+  <h3 class="play" style="margin-top:16px; font-size:60px;">Szukanie wyglądu.</h3>
+  <div class="grid g6 contain">
+    <div class="tile"><img src="img/21-lite-granat-czerwien.jpg"><div class="cap"><b>21</b>Granat i czerwień</div></div>
+    <div class="tile"><img src="img/22-lite-koczki-lawenda.jpg"><div class="cap"><b>22</b>Koczki i lawenda</div></div>
+    <div class="tile"><img src="img/23-lite-rude-koral.jpg"><div class="cap"><b>23</b>Rude i koral</div></div>
+    <div class="tile"><img src="img/24-lite-czarny-bob-tarcza.jpg"><div class="cap"><b>24</b>Czarny bob i tarcza</div></div>
+    <div class="tile"><img src="img/25-lite-blond-czerwien-zloto.jpg"><div class="cap"><b>25</b>Barwy Warszawy</div></div>
+    <div class="tile"><img src="img/26-lite-blond-charakter.jpg"><div class="cap"><b>26</b>Blond, nowe rysy</div></div>
+  </div>
+</section>
+
+<!-- 17. Galeria R6 + R7 -->
+<section class="slide cream">
+  <div class="eyebrow">Rundy 6–7 · charakter, potem mocniejsze modele</div>
+  <h3 class="play" style="margin-top:16px; font-size:60px;">Szukanie charakteru.</h3>
+  <div class="grid g8 contain">
+    <div class="tile"><img src="img/27-lite-ciepla-przewodniczka.jpg"><div class="cap"><b>27</b>Ciepła przewodniczka</div></div>
+    <div class="tile"><img src="img/28-lite-marzycielka.jpg"><div class="cap"><b>28</b>Marzycielka</div></div>
+    <div class="tile"><img src="img/29-lite-odkrywczyni.jpg"><div class="cap"><b>29</b>Odkrywczyni</div></div>
+    <div class="tile"><img src="img/30-lite-stara-dusza.jpg"><div class="cap"><b>30</b>Stara dusza</div></div>
+    <div class="tile fav"><img src="img/31-lite-dowcipna-kumpela.jpg"><div class="cap"><b>31</b>Dowcipna kumpela</div></div>
+    <div class="tile pick"><span class="badge">wybrana</span><img src="img/32-31-nano-banana-2.1.jpg"><div class="cap"><b>32</b>31 · Nano Banana 2.1</div></div>
+    <div class="tile"><img src="img/33-31-gpt-image-2-medium.jpg"><div class="cap"><b>33</b>31 · GPT Image 2</div></div>
+    <div class="tile"><img src="img/34-31-seedream-5-pro.jpg"><div class="cap"><b>34</b>31 · Seedream 5 Pro</div></div>
+  </div>
+</section>
+
+<!-- 18. Decyzje -->
+<section class="slide mint">
+  <div class="eyebrow">Na dziś</div>
+  <h2 class="play" style="margin-top:24px; color:var(--glebia);">Co ustalamy w środę.</h2>
+  <img src="img/scena-checklista.png" alt="Sawa z listą" style="position:absolute; right:150px; top:60px; width:270px;">
+  <div class="spacer"></div>
+  <div class="row" style="gap:24px;">
+    <div class="card" style="padding:40px 36px;"><h3 class="play" style="font-size:40px; white-space:nowrap;">1. Pomysł</h3><p>Idziemy w Sawę? Jaki pomysł zostaje zapasowy?</p></div>
+    <div class="card" style="padding:40px 36px;"><h3 class="play" style="font-size:40px; white-space:nowrap;">2. Demo</h3><p>Która scena jest główna? Co wycinamy?</p></div>
+    <div class="card" style="padding:40px 36px;"><h3 class="play" style="font-size:40px; white-space:nowrap;">3. Role</h3><p>Kto co robi i kto zbiera punkty historii przed sobotą.</p></div>
+    <div class="card" style="padding:40px 36px;"><h3 class="play" style="font-size:40px; white-space:nowrap;">4. Wyzwanie</h3><p>Które podaliśmy przy rejestracji: 2 czy 3?</p></div>
+    <div class="card" style="padding:40px 36px;"><h3 class="play" style="font-size:40px; white-space:nowrap;">5. Logo</h3><p>Która z 5 propozycji?</p></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="foot"><span>sawa</span><span>20</span></div>
+</section>
+
+</body>
+</html>
