@@ -202,3 +202,5 @@ _brak_
 
 > zrob repo git publiczne
 
+
+**AI:** Utworzone publiczne repo https://github.com/Pawel-Uhma/sawa (gałąź main, sama dokumentacja, bez kodu aplikacji). Przed publikacją dwa surowe transkrypty spotkania w `docs/ai-log.md` zastąpione krótką notatką, a do `.gitignore` dodany `.DS_Store`. Sekretów w repo nie ma, `.env*.local` jest ignorowany.
