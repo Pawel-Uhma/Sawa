@@ -9,7 +9,7 @@
 | Decyzja | Status |
 |---|---|
 | Wyzwanie | Propozycja: **2. „Warszawa – złap oddech!”** jako pierwszy wybór, **3. „Twój ruch!”** jako drugi |
-| Pomysł | Do wyboru, kandydaci w [04-pomysly.md](04-pomysly.md) |
+| Pomysł | **Sawa**, syrenka-przewodniczka („co tu było?”). Dane historyczne okolicy w [historia/](historia/README.md) |
 | Stack | Next.js + TypeScript, szczegóły w [05-plan-architektury.md](05-plan-architektury.md) |
 | Kod przed wydarzeniem | **Nie piszemy** (regulamin §4 ust. 3) |
 
@@ -23,7 +23,8 @@
 6. [06-plan-dnia.md](06-plan-dnia.md): harmonogram, role, checklista przed wydarzeniem
 7. [07-brainstorm-problemy.md](07-brainstorm-problemy.md): brainstorm problemów Warszawy za 50 lat i propozycja Sawy
 8. [08-badania-trendy.md](08-badania-trendy.md): badania o Warszawie z lat 2020–2026 i trendy na 50 lat
-9. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
+9. [historia/](historia/README.md): historia miejsc w promieniu 400 m od 42 Warsaw (GeoJSON, ludzie, oś czasu, zdjęcia)
+10. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
 
 ## Do zrobienia przed 17.10
 
