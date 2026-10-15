@@ -1,0 +1,355 @@
+[
+  {
+    "id": "elektrownia-tramwajowa-muzeum-powstania",
+    "nazwa": "Elektrownia Tramwajowa (dziś Muzeum Powstania Warszawskiego)",
+    "name_en": "Warsaw Tram Power Station (today the Warsaw Rising Museum)",
+    "typ": "budynek",
+    "adres_dzis": "Grzybowska 79 (oficjalny adres muzeum)",
+    "adres_historyczny": "Przyokopowa 28",
+    "lat": 52.2329,
+    "lon": 20.9810,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 363,
+    "okres": "1905–dziś",
+    "fakty": [
+      "Elektrownię tramwajową przy Przyokopowej zbudowano w latach 1905–1908 (wg hasła o Muzeum Powstania Warszawskiego: 1904–1908; hasło o samej elektrowni podaje 1905–1909). Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie; Wikipedia, Muzeum Powstania Warszawskiego.",
+      "Lokalizację przy Przyokopowej tłumaczono bliskością stacji towarowej Kolei Warszawsko-Wiedeńskiej, skąd miał być dostarczany węgiel. Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie.",
+      "7 lutego 1908 uruchomiono elektrownię, a 26 marca 1908 po ulicach miasta pojechał pierwszy tramwaj elektryczny. Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie.",
+      "13 kwietnia 1917 wybuchł kocioł; zginął jeden pracownik (Piotr Lędziakowski), a elektrownia wróciła do pracy po ok. 6 tygodniach. Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie.",
+      "Podczas obrony Warszawy we wrześniu 1939 elektrownia została uszkodzona; komunikacja tramwajowa stanęła 8 września 1939. Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie.",
+      "1 sierpnia 1944 grupa żołnierzy Kedywu miała odeprzeć ataki żandarmerii i Wehrmachtu; pracownicy elektrowni pozostawali na posterunku do 6 sierpnia, gdy Niemcy weszli i rozstrzelali załogę. Źródło: Wikipedia, Muzeum Powstania Warszawskiego (bez przypisu, patrz uwagi).",
+      "6 sierpnia 1944 elektrownia została zbombardowana przez Niemców, a po upadku powstania ocalałe mury wysadzono; zniszczenie objęło w 90% budynki. Po 1945 budynek przekazano jako ciepłownię. Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie.",
+      "W 2003 władze miasta przeznaczyły budynek na siedzibę Muzeum Powstania Warszawskiego; muzeum otwarto 31 lipca 2004, dzień przed 60. rocznicą wybuchu powstania. Źródło: Wikipedia, Muzeum Powstania Warszawskiego.",
+      "Przy Muzeum leży Park Wolności z Murem Pamięci (156 m, ponad 11 tys. nazwisk żołnierzy AK poległych w powstaniu). W centralnej części muru wisi dzwon „Monter” o wadze 230 kg, poświęcony Antoniemu Chruścielowi; bije 1 sierpnia o godz. 17.00. Źródło: Wikipedia, Muzeum Powstania Warszawskiego (Park Wolności).",
+      "Wewnątrz muzeum zachowano i odrestaurowano jeden z kotłów elektrowni; na antresoli działa sala kinowa z filmem „Warszawa walczy” z 1944. Źródło: Wikipedia, Muzeum Powstania Warszawskiego.",
+      "W lutym 2005 oddano do użytku kaplicę muzealną, patronem jest bł. ks. Józef Stanek. Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie."
+    ],
+    "ciekawostki": [
+      "Na elewacji gmachu znajduje się syrenka nad uskrzydlonym kołem, znak warszawskich tramwajów. Źródło: dzieje.pl (PAP, Marta Stańczyk, 02.12.2023), https://dzieje.pl/node/153671",
+      "Budynek przez lata 70. XX wieku pokrywał szary tynk, zwany „baranek”; po przebudowie (projekt Wojciech Obtułowicz) odsłonięto klinkierową cegłę, a z tyłu powstała 35-metrowa wieża ze znakiem Polski Walczącej. Źródło: Wikipedia, Elektrownia Tramwajowa w Warszawie.",
+      "Na terenie Parku Wolności stoi replika powstańczego wozu pancernego „Kubuś” (2004) i fragment pomnika ks. Józefa Poniatowskiego zniszczonego w grudniu 1944. Źródło: Wikipedia, Muzeum Powstania Warszawskiego."
+    ],
+    "summary_en": "A neo-Romanesque tram power station built in 1905–1908 on Przyokopowa street, supplying Warsaw's first electric trams in 1908. Badly damaged in 1944 and blown up after the Uprising, it has housed the Warsaw Rising Museum since 2004, next to the Wall of Remembrance and the bell 'Monter'.",
+    "ludzie": [
+      {"kto": "Lech Kaczyński", "rola": "prezydent Warszawy, który przekazał budynek na muzeum i otworzył je 31 lipca 2004", "wiki": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"kto": "Jan Ołdakowski", "rola": "pełnomocnik ds. budowy Muzeum Powstania Warszawskiego (2003)", "wiki": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"kto": "Wojciech Obtułowicz", "rola": "autor konkursowego projektu architektonicznego muzeum", "wiki": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"kto": "Antoni Chruściel", "rola": "dowódca powstania, patron dzwonu „Monter” wiszącego w Murze Pamięci", "wiki": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"kto": "Piotr Lędziakowski", "rola": "pracownik elektrowni, zginął przy wybuchu kotła 13 kwietnia 1917", "wiki": "https://pl.wikipedia.org/wiki/Elektrownia_Tramwajowa_w_Warszawie"}
+    ],
+    "dawne_nazwy": ["Elektrownia Tramwajów Miejskich (nazwa w OSM i Wikidata)"],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Elektrownia Tramwajowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Elektrownia_Tramwajowa_w_Warszawie"},
+      {"tytul": "Wikipedia: Muzeum Powstania Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"tytul": "dzieje.pl: artykuł PAP o muzeum i elektrowni (02.12.2023)", "url": "https://dzieje.pl/node/153671"},
+      {"tytul": "Wikidata: Q9252514 (Elektrownia Tramwajów Miejskich)", "url": "https://www.wikidata.org/wiki/Q9252514"},
+      {"tytul": "OpenStreetMap: way 167109420 (Elektrownia Tramwajów Miejskich)", "url": "https://www.openstreetmap.org/way/167109420"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Daty budowy różnią się między hasłami Wikipedii (1904–1908 vs 1905–1909); podano obie. Opis 1 sierpnia 1944 (Kedyw) występuje w haśle MPW bez przypisu, jest jedynym źródłem; do weryfikacji (np. na 1944.pl). Punkt Wikidata elektrowni jest ok. 363 m od centrum, punkt MPW (Wikidata Q574328) ok. 430 m, czyli poza promieniem; rekord zbiorczy trzyma się elektrowni. Mur Pamięci (OSM, ok. 446 m) też poza promieniem, opisany tutaj jako część zespołu. Nie ma w rekordzie zdjęć: nie sprawdzono licencji plików na Commons."
+  },
+  {
+    "id": "ringstand-58c-tobruk",
+    "nazwa": "Schron Ringstand 58c („Tobruk”) przy Muzeum Powstania Warszawskiego",
+    "name_en": "Ringstand 58c 'Tobruk' bunker at the Warsaw Rising Museum",
+    "typ": "budynek",
+    "adres_dzis": "teren Muzeum Powstania Warszawskiego, od strony Grzybowskiej, między budynkiem administracyjnym a murem",
+    "adres_historyczny": "zaułek Piękna (budowa biurowca u zbiegu Kruczej, Mokotowskiej i Pięknej, na Śródmieściu)",
+    "lat": 52.2329,
+    "lon": 20.9811,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 361,
+    "okres": "1944 (budowa), 2004 (przeniesienie do muzeum)",
+    "fakty": [
+      "Ringstand 58c to niemiecki żelbetowy schron bojowy typu „Tobruk”, który na Woli i w Warszawie budowano pod koniec 1944 r. jako element umocnień Festung Warschau. Źródło: Wikipedia, Ringstand 58c.",
+      "Schron znaleziono na placu budowy biurowca Zaułek Piękna (u zbiegu ulic Kruczej, Mokotowskiej i Pięknej) i w sierpniu 2004 przewieziono go na obecne miejsce przy muzeum. Źródło: Wikipedia, Muzeum Powstania Warszawskiego (Schron Ringstand 58c).",
+      "Schron nie został ponownie wkopany w ziemię, dzięki czemu można go obejrzeć od środka. Źródło: Wikipedia, Muzeum Powstania Warszawskiego.",
+      "Konstrukcja ma dwa przedziały: dolny (skład amunicji) i górny, bojowy, z otworem w stropie; ściany ok. 40 cm, załoga 1–2 żołnierzy, uzbrojenie najczęściej MG 34 lub MG 42. Źródło: Wikipedia, Ringstand 58c."
+    ],
+    "ciekawostki": [
+      "W Warszawie zbudowano ok. 60 takich schronów, z czego ponad 30 zachowało się w różnym stanie. Źródło: Wikipedia, Ringstand 58c.",
+      "Słowo „tobruk” to potoczna nazwa od włoskiego schronu z walk o Tobruk w Afryce Północnej, na którym wzorowano niemiecki typ. Źródło: Wikipedia, Ringstand 58c."
+    ],
+    "summary_en": "A German reinforced-concrete 'Tobruk' bunker (Ringstand 58c) built in late 1944 as part of the defences of the Warsaw fortress. Found on a construction site on Zaułek Piękna, it was moved to the Warsaw Rising Museum in 2004 and can be entered and seen from inside.",
+    "ludzie": [],
+    "dawne_nazwy": ["zaułek Piękna (miejsce znalezienia, przed 2004)"],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ringstand 58c", "url": "https://pl.wikipedia.org/wiki/Ringstand_58c"},
+      {"tytul": "Wikipedia: Muzeum Powstania Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"tytul": "OpenStreetMap: way 167109417 (Ringstand 58c (Tobruk))", "url": "https://www.openstreetmap.org/way/167109417"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z OSM (punkt środka obiektu); wg Wikipedii obiekt stoi między budynkiem administracyjnym a murem od Grzybowskiej."
+  },
+  {
+    "id": "tablica-zdobycie-elektrowni-tramwajowej",
+    "nazwa": "Tablica „Zdobycie Elektrowni Tramwajowej” (przy Muzeum Powstania)",
+    "name_en": "Plaque 'Capture of the Tram Power Station' near the Warsaw Rising Museum",
+    "typ": "tablica",
+    "adres_dzis": "okolice Muzeum Powstania Warszawskiego (dokładne miejsce do weryfikacji na miejscu)",
+    "adres_historyczny": null,
+    "lat": 52.2327,
+    "lon": 20.9806,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 374,
+    "okres": "1944 (upamiętniona data)",
+    "fakty": [
+      "W OSM zapisano tablicę pamiątkową (historic=memorial, memorial=plaque) o nazwie „Zdobycie Elektrowni Tramwajowej”, ok. 374 m od centrum. Źródło: OpenStreetMap, node 10759425107.",
+      "Treść i autor tablicy nie są znane z danych OSM."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A memorial plaque recorded in OpenStreetMap as 'Capture of the Tram Power Station', placed near the Warsaw Rising Museum. The inscription and date are not confirmed; the historical record points to a different 1944 event.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "OpenStreetMap: node 10759425107", "url": "https://www.openstreetmap.org/node/10759425107"},
+      {"tytul": "Wikipedia: Muzeum Powstania Warszawskiego (Historia budynku)", "url": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"tytul": "1944.pl: Nie ostatnia bitwa o prąd – upadek elektrowni i dalsza walka o energię (29.08.2022)", "url": "https://www.1944.pl/artykul/nie-ostatnia-bitwa-o-prad-upadek-elektrowni,5321.html"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Niezgodność: nazwa tablicy sugeruje zdobycie elektrowni 1 sierpnia 1944. Wg 1944.pl szturm 1 sierpnia (WSOP, kpt. Stanisław Skibniewski „Cubryna”) dotyczył Elektrowni Miejskiej na Powiślu, a nie tramwajowej na Woli. Wg Wikipedii tramwajowa była broniona 1 sierpnia i zajęta przez Niemców 6 sierpnia. Możliwa pomyłka w nazwie tablicy lub w tagowaniu OSM. Wymaga sprawdzenia na miejscu. Współrzędne z OSM, dokładność niska."
+  },
+  {
+    "id": "tablica-lech-kaczynski-muzeum",
+    "nazwa": "Tablica pamiątkowa Lecha Kaczyńskiego na Muzeum Powstania Warszawskiego",
+    "name_en": "Memorial plaque to Lech Kaczyński at the Warsaw Rising Museum",
+    "typ": "tablica",
+    "adres_dzis": "fasada Muzeum Powstania Warszawskiego, Grzybowska 79",
+    "adres_historyczny": null,
+    "lat": 52.2326,
+    "lon": 20.9807,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 392,
+    "okres": "2011",
+    "fakty": [
+      "8 kwietnia 2011 na fasadzie siedziby muzeum odsłonięto tablicę pamiątkową poświęconą Lechowi Kaczyńskiemu. Źródło: Wikipedia, Muzeum Powstania Warszawskiego.",
+      "Tablica wykonana z czarnego, satynowanego granitu, z odlaną z brązu podobizną zmarłego prezydenta; autorem projektu był Andrzej Renes. Źródło: Wikipedia, Muzeum Powstania Warszawskiego.",
+      "Jako prezydent Warszawy Lech Kaczyński przekazał budynek elektrowni na siedzibę muzeum i obiecał powstańcom jego otwarcie na 60. rocznicę powstania. Źródło: Wikipedia, Muzeum Powstania Warszawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A black granite plaque with a bronze portrait of Lech Kaczyński, unveiled on the museum facade on 8 April 2011. Designed by Andrzej Renes, it commemorates the Warsaw mayor who backed the museum's creation.",
+    "ludzie": [
+      {"kto": "Lech Kaczyński", "rola": "prezydent Warszawy (od 2002), inicjator muzeum; upamiętniony tablicą", "wiki": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"kto": "Andrzej Renes", "rola": "autor projektu tablicy", "wiki": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"}
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Powstania Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"},
+      {"tytul": "OpenStreetMap: node 11208765675 (Prezydentowi RP Lechowi Kaczyńskiemu)", "url": "https://www.openstreetmap.org/node/11208765675"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Napis w OSM: „Prezydentowi RP Lechowi Kaczyńskiemu”; w Wikipedii mowa o tablicy poświęconej Lechowi Kaczyńskiemu (bez tytułu w cytacie). Brak zdjęcia i licencji."
+  },
+  {
+    "id": "tablica-stanislaw-conrad",
+    "nazwa": "Tablica pamiątkowa „Stanisław Conrad” (okolice Muzeum Powstania)",
+    "name_en": "Memorial plaque 'Stanisław Conrad' near the Warsaw Rising Museum",
+    "typ": "tablica",
+    "adres_dzis": "okolice Muzeum Powstania Warszawskiego (dokładne miejsce do weryfikacji)",
+    "adres_historyczny": null,
+    "lat": 52.2337,
+    "lon": 20.9804,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 262,
+    "okres": "nieustalony",
+    "fakty": [
+      "W OSM jest tablica pamiątkowa (historic=memorial, memorial=plaque, materiał: metal) z nazwiskiem „Stanisław Conrad”, ok. 262 m od centrum. Źródło: OpenStreetMap, node 10871244506."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A metal memorial plaque bearing the name Stanisław Conrad, recorded in OpenStreetMap near the Warsaw Rising Museum. Who he was and what the plaque commemorates have not been confirmed.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "OpenStreetMap: node 10871244506 (Stanisław Conrad)", "url": "https://www.openstreetmap.org/node/10871244506"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "NIE USTALONO: kim był Stanisław Conrad i czego dotyczy tablica. Wyszukiwanie w sieci (dzieje.pl, ogólne wyniki) nie dało trafnego wyniku; w Wikipedii hasła „Stanisław Conrad” nie udało się pobrać. Rekord zostawiony jako znalezisko z OSM; do uzupełnienia po sprawdzeniu na miejscu lub w IPN/Muzeum."
+  },
+  {
+    "id": "kamien-galczynski-towarowa-grzybowska",
+    "nazwa": "Kamień pamiątkowy Konstantego Ildefonsa Gałczyńskiego (róg Towarowej i Grzybowskiej)",
+    "name_en": "Memorial stone to Konstanty Ildefons Gałczyński at Towarowa and Grzybowska corner",
+    "typ": "pomnik",
+    "adres_dzis": "róg ul. Towarowej i ul. Grzybowskiej",
+    "adres_historyczny": "Towarowa 54 (kamienica na rogu z Grzybowską)",
+    "lat": 52.2335,
+    "lon": 20.9827,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 372,
+    "okres": "1905–1914, 1918–1931 (zamieszkanie poety)",
+    "fakty": [
+      "Kamień pamiątkowy stoi na rogu ulic Towarowej i Grzybowskiej, w miejscu kamienicy, w której Konstanty Ildefons Gałczyński mieszkał w latach 1905–1914 oraz 1918–1931. Źródło: Wikipedia, Konstanty Ildefons Gałczyński.",
+      "Rodzina Gałczyńskich przeprowadziła się do mieszkania na pierwszym piętrze kamienicy przy Towarowej 54, na rogu z Grzybowską. Źródło: Wikipedia, Konstanty Ildefons Gałczyński.",
+      "Kamień ustawiono z inicjatywy córki poety, Kiry Gałczyńskiej. Źródło: Wikipedia, Konstanty Ildefons Gałczyński.",
+      "Gałczyński urodził się w Warszawie 23 stycznia 1905 r., zmarł tam 6 grudnia 1953 r., pochowany na Powązkach. Źródło: Wikipedia, Konstanty Ildefons Gałczyński."
+    ],
+    "ciekawostki": [
+      "Gałczyński jest autorem serii humoresek „Teatrzyk Zielona Gęś” z postaciami takimi jak Porfirion Osiełek czy Piekielny Piotruś. Źródło: Wikipedia, Konstanty Ildefons Gałczyński."
+    ],
+    "summary_en": "A memorial stone marks the corner of Towarowa and Grzybowska streets, where the poet Konstanty Ildefons Gałczyński lived for most of his childhood and youth in the early 20th century. The stone was set up on the initiative of his daughter Kira.",
+    "ludzie": [
+      {"kto": "Konstanty Ildefons Gałczyński", "rola": "poeta, mieszkał w kamienicy na rogu Towarowej i Grzybowskiej", "wiki": "https://pl.wikipedia.org/wiki/Konstanty_Ildefons_Gałczyński"},
+      {"kto": "Kira Gałczyńska", "rola": "córka poety, inicjatorka postawienia kamienia", "wiki": "https://pl.wikipedia.org/wiki/Konstanty_Ildefons_Gałczyński"}
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Konstanty Ildefons Gałczyński", "url": "https://pl.wikipedia.org/wiki/Konstanty_Ildefons_Gałczyński"},
+      {"tytul": "OpenStreetMap: node 5277858410 (Konstanty Ildefons Gałczyński, memorial=stone)", "url": "https://www.openstreetmap.org/node/5277858410"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok ustawienia kamienia nieustalony (w Wikipedii brak daty). Współrzędne z OSM, zgodne z punktem na rogu ulic. Źródło o kamienicy to hasło Wikipedii, bez zdjęcia."
+  },
+  {
+    "id": "muzeum-nurkowania",
+    "nazwa": "Muzeum Nurkowania",
+    "name_en": "Museum of Diving (Muzeum Nurkowania)",
+    "typ": "miejsce",
+    "adres_dzis": "Grzybowska 88",
+    "adres_historyczny": null,
+    "lat": 52.2331,
+    "lon": 20.9811,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 346,
+    "okres": "1930–1931 (budynek), 2006 (muzeum)",
+    "fakty": [
+      "Muzeum Nurkowania działa przy Warszawskim Klubie Płetwonurków w piwnicy przedwojennego budynku dawnego Laboratorium chemiczno-farmaceutycznego „Asmidar”, wzniesionego w latach 1930–1931. Źródło: Wikipedia, Muzeum Nurkowania.",
+      "Muzeum otwarto 27 lutego 2006 r., w czasie obchodów 50-lecia Warszawskiego Klubu Płetwonurków. Źródło: Wikipedia, Muzeum Nurkowania.",
+      "W 2008 roku brytyjskie Stowarzyszenie Miłośników Historii Nurkowania przyznało muzeum nagrodę The Nautiek Award. Źródło: Wikipedia, Muzeum Nurkowania.",
+      "Muzeum gromadzi ok. 800 eksponatów; najstarszy to hełm nurka klasycznego z 1895 r. Źródło: Wikipedia, Muzeum Nurkowania."
+    ],
+    "ciekawostki": [
+      "Muzeum jest jedyną placówką tego typu w Polsce i jedną z nielicznych w Europie. Źródło: Wikipedia, Muzeum Nurkowania.",
+      "W zbiorach jest m.in. polski skafander „Foka” z bezprzewodową łącznością podwodną z lat 70. XX w. oraz ząb megalodona. Źródło: Wikipedia, Muzeum Nurkowania."
+    ],
+    "summary_en": "Poland's only diving museum, set up in 2006 by the Warsaw Diving Club in the basement of a 1930s former chemical-pharmaceutical laboratory building on Grzybowska street. Its roughly 800 items include a helmet from 1895 and a Polish 1970s underwater suit.",
+    "ludzie": [
+      {"kto": "Karina Kowalska", "rola": "inicjatorka muzeum z Warszawskiego Klubu Płetwonurków", "wiki": "https://pl.wikipedia.org/wiki/Muzeum_Nurkowania"}
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Nurkowania", "url": "https://pl.wikipedia.org/wiki/Muzeum_Nurkowania"},
+      {"tytul": "Wikidata: Q11787098", "url": "https://www.wikidata.org/wiki/Q11787098"},
+      {"tytul": "OpenStreetMap: node 369549823", "url": "https://www.openstreetmap.org/node/369549823"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Godziny otwarcia z OSM (wtorek 11–17, pozostałe dni na telefon/e-mail) nie zweryfikowane, nie wpisywane. Współrzędne z Wikidata."
+  },
+  {
+    "id": "kolmex-biurowiec",
+    "nazwa": "Kolmex (biurowiec)",
+    "name_en": "Kolmex office building",
+    "typ": "budynek",
+    "adres_dzis": "Grzybowska 80/82",
+    "adres_historyczny": null,
+    "lat": 52.2339,
+    "lon": 20.9829,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 355,
+    "okres": "1990–1992",
+    "fakty": [
+      "Kolmex to ośmiopiętrowy budynek biurowo-usługowy na planie kwadratu z dziedzińcem przykrytym szklanym dachem, na narożniku Grzybowskiej i Towarowej. Wzniesiono go w latach 1990–1992. Źródło: Wikipedia, Kolmex (biurowiec).",
+      "Projekt: Tadeusz Spychała przy współpracy Janiny Chrzanowskiej-Neykoff, Andrzeja Kapuścika, Grzegorza Keplera, Hermana Kittela i Herberta Swobody. Źródło: Wikipedia, Kolmex (biurowiec).",
+      "Budynek był nominowany do I edycji konkursu „Życie w Architekturze” na najlepszy budynek Warszawy 1989–1995. Źródło: Wikipedia, Kolmex (biurowiec).",
+      "Obecny właściciel rozważa rozbiórkę i budowę w tym miejscu wieżowca (informacja z hasła Wikipedii, bez daty). Źródło: Wikipedia, Kolmex (biurowiec)."
+    ],
+    "ciekawostki": [
+      "Pierwotna nazwa budynku to „Kolmex. Centrum Handlowo-Usługowe”. Źródło: Wikipedia, Kolmex (biurowiec).",
+      "Boczne ściany od strony wschodniej i północnej pozostawiono ślepe, bo spodziewano się zabudowy sąsiednich działek. Źródło: Wikipedia, Kolmex (biurowiec).",
+      "Stylistycznie to umiarkowany dekonstruktywizm inspirowany Frankiem Gehrym. Źródło: Wikipedia, Kolmex (biurowiec)."
+    ],
+    "summary_en": "An eight-storey office building from 1990–1992 at the corner of Grzybowska and Towarowa streets, designed by Tadeusz Spychała. It is one of the first modern office buildings in Warsaw after 1989, with a glass-roofed courtyard and blind side walls.",
+    "ludzie": [
+      {"kto": "Tadeusz Spychała", "rola": "główny projektant budynku", "wiki": "https://pl.wikipedia.org/wiki/Kolmex_(biurowiec)"}
+    ],
+    "dawne_nazwy": ["Kolmex. Centrum Handlowo-Usługowe (pierwotna nazwa)"],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kolmex (biurowiec)", "url": "https://pl.wikipedia.org/wiki/Kolmex_(biurowiec)"},
+      {"tytul": "Wikidata: Q15813104 (Kolmex)", "url": "https://www.wikidata.org/wiki/Q15813104"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Informacja o planowanej rozbiórce pochodzi z hasła bez daty; warto sprawdzić aktualność. Na tym samym skrzyżowaniu od wschodu leży Plac Europejski z Warsaw Spire, ale jego punkt (Wikidata Q108275580) jest ok. 512 m od centrum, więc poza promieniem i nie opisany tutaj. Wojskowe Zakłady Graficzne, które stały na tej działce przed budową placu, nie mają osobnego rekordu."
+  },
+  {
+    "id": "ulica-grzybowska",
+    "nazwa": "ulica Grzybowska",
+    "name_en": "Grzybowska Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Grzybowska (Śródmieście i Wola)",
+    "adres_historyczny": null,
+    "lat": 52.2328,
+    "lon": 20.9795,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 343,
+    "okres": "1770–dziś",
+    "fakty": [
+      "Nazwa ulicy została nadana oficjalnie w 1770 r. i pochodzi od jurydyki Grzybów. Źródło: Wikipedia, Ulica Grzybowska w Warszawie.",
+      "Już w 1784 r. przy ulicy działało 11 browarów; w latach 1869–1870 pięć, a w pobliżu działał browar Haberbusch i Schiele. Źródło: Wikipedia, Ulica Grzybowska w Warszawie.",
+      "W 1939 r. spłonęła zabudowa w rejonie placu Grzybowskiego oraz browar Kazimirusa u zbiegu z ulicą Ciepłą. Źródło: Wikipedia, Ulica Grzybowska w Warszawie.",
+      "W czasie powstania rejon Grzybowskiej i Krochmalnej bronił Zgrupowanie „Chrobry II”; skrzyżowanie z Wronią zamknięto barykadą. Źródło: Wikipedia, Ulica Grzybowska w Warszawie.",
+      "Browar Haberbusch i Schiele (Krochmalna 59, zabudowania też przy Grzybowskiej 58) był pod kontrolą Niemców; powstańcy zajęli pobliskie magazyny przy Grzybowskiej 58 (wejście od Ceglanej 4/6), z dużymi zapasami jęczmienia, które stały się ważnym źródłem żywności dla mieszkańców; ze zboża przygotowywano m.in. zupę plujkę. Źródło: Wikipedia, Haberbusch i Schiele.",
+      "W 1945 r. w piwnicach zniszczonego browaru sprzedano kilka tysięcy hektolitrów piwa. Źródło: Wikipedia, Haberbusch i Schiele.",
+      "Po wojnie na terenie między Towarową, Grzybowską, Wronią i Łucką powstał zespół budynków Wojskowych Zakładów Graficznych. Źródło: Wikipedia, Ulica Grzybowska w Warszawie.",
+      "Browary Warszawskie, czyli dawny browar przy Grzybowskiej 58/70, działały w latach 1948–2004; 19 lipca 1972 zjechały z linii pierwsze w Polsce butelki licencyjnej Coca-Coli. Źródło: Wikipedia, Browary Warszawskie.",
+      "Obecnie w miejscu browaru (Echo Investment, 2014) powstał kompleks Browary Warszawskie z biurami, mieszkaniami i gastronomią. Źródło: Wikipedia, Browary Warszawskie."
+    ],
+    "ciekawostki": [
+      "Przedwojenna Grzybowska była wybrukowana kocimi łbami i oświetlona gazowymi latarniami, zachowanymi do lat 60. XX w. Źródło: Wikipedia, Ulica Grzybowska w Warszawie.",
+      "Od 2020 r. odcinek od Hrubieszowskiej do Grzybowskiej jest jednokierunkowy. Źródło: Wikipedia, Ulica Grzybowska w Warszawie.",
+      "Stara nazwa drogi w XVIII w. to Landt Straße nach Breslau (Droga krajowa do Wrocławia). Źródło: Wikipedia, Ulica Grzybowska w Warszawie."
+    ],
+    "summary_en": "Grzybowska is an old road named in 1770 after the Grzybów estate. Before the war it was lined with breweries, and in 1944 the nearby Haberbusch & Schiele brewery and warehouses fed the Uprising's defenders and residents.",
+    "ludzie": [],
+    "dawne_nazwy": ["Landt Straße nach Breslau (nazwa historyczna z planów)"],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grzybowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Grzybowska_w_Warszawie"},
+      {"tytul": "Wikipedia: Haberbusch i Schiele", "url": "https://pl.wikipedia.org/wiki/Haberbusch_i_Schiele"},
+      {"tytul": "Wikipedia: Browary Warszawskie", "url": "https://pl.wikipedia.org/wiki/Browary_Warszawskie"},
+      {"tytul": "OpenStreetMap: way 30097367 (Grzybowska)", "url": "https://www.openstreetmap.org/way/30097367"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "SPRZECZNOŚĆ: hasło o ulicy pisze, że w powstaniu „głównym punktem oporu” był browar Haberbusch i Schiele; hasło o browarze mówi, że browar był pod kontrolą Niemców i penetrowany tylko nocami, a powstańcy zajęli magazyny przy Grzybowskiej 58. Podano wersję z hasła o browarze, a obie są w zrodlach. Współrzędne z OSM (środek odcinka, nie cała ulica); odcinek od Przyokopowej do Karolkowej to część tej samej ulicy. Browar nie ma osobnego rekordu: jego punkt (Wikidata Q65920315) jest ok. 540 m od centrum, czyli poza promieniem."
+  },
+  {
+    "id": "ulica-przyokopowa",
+    "nazwa": "ulica Przyokopowa",
+    "name_en": "Przyokopowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Przyokopowa (Wola)",
+    "adres_historyczny": "Przy Okopach",
+    "lat": 52.2333,
+    "lon": 20.9805,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 307,
+    "okres": "1808–dziś",
+    "fakty": [
+      "Nazwa ulicy została poświadczona w 1808 r.; wcześniej nazywała się Przy Okopach, bo biegła po zachodniej stronie Okopów Lubomirskiego. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie.",
+      "W 1844 r. ulicę przecięto torami Kolei Warszawsko-Wiedeńskiej; ok. 1885 r. powstała tu stacja towarowa. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie.",
+      "W latach 1905–1909 przy ulicy wzniesiono elektrownię tramwajową, dziś Muzeum Powstania Warszawskiego. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie.",
+      "W 1923 r. na działce między Karolkową, Grzybowską i Przyokopową Polsko-Holenderska Fabryka Lampek Elektrycznych (koncern Philips) zaczęła produkcję żarówek. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie.",
+      "W czasie powstania ulicę przegrodzono dwiema barykadami. Po kapitulacji Niemcy wywieźli sprzęt z fabryki Philipsa i wysadzili zabudowania. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie."
+    ],
+    "ciekawostki": [
+      "Po wojnie w miejscu fabryki Philipsa powstały hale Zakładów Wytwórczych Lamp Elektrycznych im. Róży Luksemburg. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie.",
+      "W XVIII w. droga prowadziła od rogatek Wolskich do Szczęśliwic i Rakowca; u zbiegu z Karolkową były zabudowania wsi Czyste. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie."
+    ],
+    "summary_en": "Przyokopowa runs along the old Lubomirski earthworks in Wola. Its railway cut, freight station and tram power plant (now the Warsaw Rising Museum) made it an industrial street, and the Philips lamp factory was destroyed in 1944.",
+    "ludzie": [],
+    "dawne_nazwy": ["Przy Okopach"],
+    "zdjecia": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Przyokopowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Przyokopowa_w_Warszawie"},
+      {"tytul": "OpenStreetMap: way 121806942 (Przyokopowa)", "url": "https://www.openstreetmap.org/way/121806942"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z OSM (środek odcinka). Siedmiogrodzka (zakres z zadania) nie ma tu rekordu: środek jej odcinka w OSM jest ok. 407 m od centrum, a punktu wschodniego końca nie udało się ustalić bez geometrii. Do decyzji zespołu."
+  }
+]
