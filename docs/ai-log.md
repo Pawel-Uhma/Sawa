@@ -204,3 +204,43 @@ _brak_
 
 
 **AI:** Utworzone publiczne repo https://github.com/Pawel-Uhma/sawa (gałąź main, sama dokumentacja, bez kodu aplikacji). Przed publikacją dwa surowe transkrypty spotkania w `docs/ai-log.md` zastąpione krótką notatką, a do `.gitignore` dodany `.DS_Store`. Sekretów w repo nie ma, `.env*.local` jest ignorowany.
+
+### 2026-10-15 09:38 · Pawel
+
+> jednak nie chce repo publiczne bo tak dojda ze zalozylismy je przed hackathonem. usun je jezeli mozesz albo powiedz mi jak mam to zrobic
+
+
+**AI:** Zespół nie chce publicznego repo, bo widać by było, że powstało przed hackathonem. Repo `Pawel-Uhma/sawa` zmienione na prywatne. Usunięcie nie przeszło, bo token gh nie ma uprawnienia `delete_repo`, więc Paweł musi je dodać.
+
+### 2026-10-15 09:38 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 559432c..9f8d0a9 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -204,3 +204,10 @@ _brak_
+>  
+>  
+>  **AI:** Utworzone publiczne repo https://github.com/Pawel-Uhma/sawa (gałąź main, sama dokumentacja, bez kodu aplikacji). Przed publikacją dwa surowe transkrypty spotkania w `docs/ai-log.md` zastąpione krótką notatką, a do `.gitignore` dodany `.DS_Store`. Sekretów w repo nie ma, `.env*.local` jest ignorowany.
+> +
+> +### 2026-10-15 09:38 · Pawel
+> +
+> +> jednak nie chce repo publiczne bo tak dojda ze zalozylismy je przed hackathonem. usun je jezeli mozesz albo powiedz mi jak mam to zrobic
+> +
+> +
+> +**AI:** Zespół nie chce publicznego repo, bo widać by było, że powstało przed hackathonem. Repo `Pawel-Uhma/sawa` zmienione na prywatne. Usunięcie nie przeszło, bo token gh nie ma uprawnienia `delete_repo`, więc Paweł musi je dodać.
+
