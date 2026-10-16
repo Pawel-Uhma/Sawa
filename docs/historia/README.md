@@ -1,6 +1,6 @@
-# Historia okolicy 42 Warsaw (promień 400 m)
+# Historia okolicy 42 Warsaw (promień 1 km)
 
-Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czyste (Wola), 52.2359, 20.9789**. Zebrane 15–16.10.2026 w dwóch rundach agentów AI (Haiku, 8 + 10 agentów), uzupełnione skryptem z warszawa1939.pl i Google Places, scalone i sprawdzone automatycznie.
+Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czyste (Wola), 52.2359, 20.9789**. Zebrane 15–16.10.2026 w trzech rundach. Rundy 1–2 (do 400 m): agenci AI Haiku szukali w sieci. Runda 3 (do 1 km): skrypty pobrały wszystko, co ma współrzędne (Wikipedia, Wikidata, OSM, Commons, warszawa1939.pl, Google Places), a 9 agentów Haiku wyciągało fakty wyłącznie z pobranych tekstów. Całość scalona i sprawdzona automatycznie.
 
 ## Ustalenia (15.10, Paweł)
 
@@ -11,17 +11,19 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 
 ## Mapa
 
-![Mapa historii okolicy](mapa-historia.png)
+![Mapa historii okolicy, 1 km](mapa-historia-1km.png)
+
+Zbliżenie na 400 m: [mapa-historia.png](mapa-historia.png) (stan po rundzie 2).
 
 ## Pliki
 
 | Plik | Co jest w środku |
 |---|---|
-| [sawa-historia.geojson](sawa-historia.geojson) | **90 punktów, 773 fakty i ciekawostki**: 39 budynków (istniejących i dawnych), 16 ulic, 11 tablic, 9 miejsc, 8 pomników, 4 murale, 3 zdarzenia. Każdy ma fakty, ciekawostki, `summary_en`, źródła i odległość od wejścia. 65 zdjęć archiwalnych, 62 punkty mają pole `dzis` (co jest tu teraz, z Google Places) |
+| [sawa-historia.geojson](sawa-historia.geojson) | **326 punktów, 2367 faktów i ciekawostek**: 92 do 400 m i 234 w pasie 400–1000 m (pole `pas`). 118 budynków, 66 pomników, 48 tablic, 27 ulic, 27 miejsc, 20 murali, 9 zdarzeń, 7 świątyń, 4 cmentarze. 351 zdjęć (archiwalne z warszawa1939.pl i Commons oraz ilustracje artykułów), 224 punkty z warstwą `dzis` (Google Places) |
 | [ludzie.json](ludzie.json) | 12 osób, w tym 7 w promieniu (Korczak, Wilczyńska, Gałczyński, Tchorek, Chopin, Świerczewski, Weinstein). Osoby spoza promienia mają `poza_promieniem: true` |
 | [os-czasu.json](os-czasu.json) | 33 wydarzenia, od 1573 (elekcja) do 2016 (Warsaw Spire), PL i EN |
 | [zdjecia.json](zdjecia.json) | 31 zdjęć archiwalnych z Wikimedia Commons, licencje z metadanych. Są też dopięte do punktów w GeoJSON (pole `zdjecia`) |
-| [surowe/](surowe/) | Wyniki agentów (runda 1: `1-…8-`, runda 2: `r2-*`), dane z warszawa1939.pl (`r2-11`), wynik Google Places (`google-places.json`, 777 miejsc), wyciąg z OSM i `scalenie-log.txt` (co połączono, co odrzucono i dlaczego) |
+| [surowe/](surowe/) | Wyniki agentów (runda 1: `1-…8-`, runda 2: `r2-*`, runda 3: `r3-wiki-*` z Wikipedii i `r3-auto.json` z OSM i warszawa1939.pl), `google-places-1km.json` (3011 miejsc), `osm-1km.json`, `scalenie-log-1km.txt` (połączenia, odrzucenia i 68 pominiętych artykułów o firmach), dane z warszawa1939.pl (`r2-11`), wynik Google Places (`google-places.json`, 777 miejsc), wyciąg z OSM i `scalenie-log.txt` (co połączono, co odrzucono i dlaczego) |
 
 ## Najmocniejsze miejsca do demo
 
@@ -40,14 +42,14 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 ## Jak czytać pola
 
 - `pewnosc`: wysoka / srednia / niska, w ocenie agenta.
-- `do_weryfikacji`: fakty, których daty skrypt nie znalazł w tekście źródłowego artykułu Wikipedii (23 z 773). Zwykle pochodzą z innego źródła, np. korczak.ckc.uw.edu.pl albo dzieje.pl.
+- `do_weryfikacji`: fakty, których daty skrypt nie znalazł w tekście źródłowego artykułu Wikipedii (35 z 2367). Zwykle pochodzą z innego źródła, np. korczak.ckc.uw.edu.pl albo dzieje.pl.
 - `zrodla_wikipedia_sprawdzone: false`: punkt ma tylko źródła spoza Wikipedii (warszawa1939.pl, Google, OSM, prasa).
 - `dzis`: obiekty z Google Places stojące dziś w tym miejscu (do 25 m), z linkiem do Google Maps. Rekordy z id `g-*` pochodzą tylko z Google i mają historię do uzupełnienia.
 - `istnieje`: czy budynek stoi do dziś (wg warszawa1939.pl „OBIEKT NIE ISTNIEJE”).
 - `lokalizacja: przyblizona`: punkt jest na ulicy albo przy obiekcie, a nie w dokładnym miejscu zdarzenia.
 - `uwagi`: sprzeczności między źródłami, na przykład liczby ofiar albo daty nadania nazw.
 
-**Ograniczenie weryfikacji:** skrypt sprawdzał tylko, czy lata z faktu występują w źródle (692 z 773 przeszło, 58 faktów pochodzi spoza Wikipedii i nie było z czym porównać). Nie sprawdzał nazwisk ani liczb. Agenci często czytali Wikipedię przez streszczenia, a nie dosłowny tekst. Zanim fakt trafi do pitchu, trzeba go przeczytać w źródle.
+**Ograniczenie weryfikacji:** skrypt sprawdzał tylko, czy lata z faktu występują w źródle (2071 z 2367 przeszło; 261 faktów pochodzi spoza Wikipedii, głównie z OSM, warszawa1939.pl i Google, i nie było z czym porównać). Nie sprawdzał nazwisk ani liczb. Agenci często czytali Wikipedię przez streszczenia, a nie dosłowny tekst. Zanim fakt trafi do pitchu, trzeba go przeczytać w źródle.
 
 ## Do sprawdzenia na miejscu w sobotę (zrób zdjęcia)
 
@@ -75,6 +77,13 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 - Najwięcej dało bezpośrednie pobranie kart z warszawa1939.pl: Rogatki Wolskie Kubickiego, kino Kometa, kamienica Machleida, szkoła przy Karolkowej z 1925 r., fabryka Philipsa, kamienica Węgiełka, przedwojenne zdjęcia.
 - Agenci Haiku przeszukujący blogi i prasę dali mało (2–16 rekordów na agenta): Warszawikia blokuje boty (HTTP 402), wiele artykułów to PDF-y, a Nominatim i Overpass zaczęły odrzucać zapytania przy kilku agentach naraz.
 - Odrzucone jako leżące poza 400 m mimo przypisania im przez agentów współrzędnych ulicy: Sąd na Lesznie, Leszno 13, brama i kładka przy Żelaznej, Koszary Mirowskie, kino „Czary”, przedwojenne Leszno 81–84 i 100. Pełna lista w `surowe/scalenie-log.txt`.
+
+## Runda 3 (16.10): promień 1 km
+
+- Źródła pobrane skryptami: 181 artykułów pl.wikipedii i 37 en z geotagiem w promieniu 1 km, 496 obiektów Wikidaty, 914 obiektów OSM (278 historycznych w pasie 400–1000 m), 3368 zdjęć z Commons (194 sprzed 1970), 112 kart warszawa1939.pl (34 w promieniu), 3011 miejsc z Google Places.
+- Agenci przetwarzali tylko lokalne teksty, bez internetu. Odrzucili 68 artykułów o firmach i urzędach, które mają tu tylko biuro.
+- Rekordy `osm-*` i `g-*` są automatyczne: mają nazwę i napis z tablicy, ale bez kontekstu. Rekordy `w1939-*` mają opis budynku z warszawa1939.pl i zdjęcia sprzed wojny. Położenie przedwojennych adresów przy Lesznie jest interpolowane (inna numeracja niż dziś).
+- Nowe mocne miejsca w pasie 400–1000 m: Gęsiówka, Archiwum Ringelbluma, Kładka Pamięci, Kamienica pod Zegarem, kościół św. Karola Boromeusza, Pałacyk Michla, Kolonia Wawelberga, Szpital Wolski, cmentarze ewangelickie, synagoga Icchaka Altera, Norblin, Browary Warszawskie, Fabryka Kamlera, Pałacyk Bogusławskiego.
 
 ## Na 17.10
 
