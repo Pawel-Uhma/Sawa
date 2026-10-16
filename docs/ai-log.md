@@ -1273,3 +1273,43 @@ _brak_
 >  
 >  | Plik | Co jest w środku |
 
+
+### 2026-10-16 07:04 · Pawel
+
+> jaki stack polecasz na sawe - tak zeby dzialala jako aplikacja webowa i mobilna
+
+
+**AI:** Rekomendacja: zostajemy przy Next.js + TypeScript + Tailwind + MapLibre i robimy z tego PWA (manifest, opcjonalnie service worker @serwist/next, układ mobile-first, TTS na serwerze), bez osobnej aplikacji natywnej. Capacitor dopiero po hackathonie, jeśli trzeba będzie wejść do sklepów. Plików nie zmieniałem, decyzja czeka na zespół.
+
+### 2026-10-16 07:04 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 4891a53..390b08f 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1273,3 +1273,10 @@ _brak_
+>  >  
+>  >  | Plik | Co jest w środku |
+>  
+> +
+> +### 2026-10-16 07:04 · Pawel
+> +
+> +> jaki stack polecasz na sawe - tak zeby dzialala jako aplikacja webowa i mobilna
+> +
+> +
+> +**AI:** Rekomendacja: zostajemy przy Next.js + TypeScript + Tailwind + MapLibre i robimy z tego PWA (manifest, opcjonalnie service worker @serwist/next, układ mobile-first, TTS na serwerze), bez osobnej aplikacji natywnej. Capacitor dopiero po hackathonie, jeśli trzeba będzie wejść do sklepów. Plików nie zmieniałem, decyzja czeka na zespół.
+
