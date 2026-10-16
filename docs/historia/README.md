@@ -9,6 +9,10 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 - Treść: **fakty i ciekawostki ze źródłami**. Kwestie Sawy generuje LLM na żywo 17.10. Gotowych tekstów jej głosem nie piszemy (§4 ust. 3 regulaminu).
 - Dodatki: linki do zdjęć archiwalnych z licencjami, streszczenie po angielsku, dawne nazwy ulic, ludzie związani z miejscem.
 
+## Mapa
+
+![Mapa historii okolicy](mapa-historia.png)
+
 ## Pliki
 
 | Plik | Co jest w środku |

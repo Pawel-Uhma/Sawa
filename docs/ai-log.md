@@ -1217,3 +1217,59 @@ _brak_
 > new file: docs/historia/sawa-historia.geojson
 > new file: docs/historia/zdjecia.json
 
+
+### 2026-10-16 07:00 · Pawel
+
+> na podstawie danych ktorych zrobiles scraping przygotuj zdjecie mapy gdzie jest zaznaczony punkt hackathonu i kropki na kazda historyczna wiadomosc jaka znalazles z roznymi kateogriami w roznych kolorach oznaczonych na legendzie
+
+**AI:** Wygenerowana mapa `docs/historia/mapa-historia.png`: punkt hackathonu, okrąg 400 m i 53 punkty z `sawa-historia.geojson` i `ludzie.json`. Sześć kategorii ma różne kolory i kształty (ulica, tablica, pomnik, budynek, miejsce, osoba), a legenda podaje liczbę punktów w każdej. Podkład to OSM w szarości, bo CARTO wymaga teraz klucza API.
+
+
+### 2026-10-16 07:03 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md          | 7 +++++++
+>  docs/historia/README.md | 4 ++++
+>  2 files changed, 11 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index c1c1ad8..327f518 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1217,3 +1217,10 @@ _brak_
+>  > new file: docs/historia/sawa-historia.geojson
+>  > new file: docs/historia/zdjecia.json
+>  
+> +
+> +### 2026-10-16 07:00 · Pawel
+> +
+> +> na podstawie danych ktorych zrobiles scraping przygotuj zdjecie mapy gdzie jest zaznaczony punkt hackathonu i kropki na kazda historyczna wiadomosc jaka znalazles z roznymi kateogriami w roznych kolorach oznaczonych na legendzie
+> +
+> +**AI:** Wygenerowana mapa `docs/historia/mapa-historia.png`: punkt hackathonu, okrąg 400 m i 53 punkty z `sawa-historia.geojson` i `ludzie.json`. Sześć kategorii ma różne kolory i kształty (ulica, tablica, pomnik, budynek, miejsce, osoba), a legenda podaje liczbę punktów w każdej. Podkład to OSM w szarości, bo CARTO wymaga teraz klucza API.
+> +
+> diff --git a/docs/historia/README.md b/docs/historia/README.md
+> index 8ea3b54..4f64ffa 100644
+> --- a/docs/historia/README.md
+> +++ b/docs/historia/README.md
+> @@ -9,6 +9,10 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
+>  - Treść: **fakty i ciekawostki ze źródłami**. Kwestie Sawy generuje LLM na żywo 17.10. Gotowych tekstów jej głosem nie piszemy (§4 ust. 3 regulaminu).
+>  - Dodatki: linki do zdjęć archiwalnych z licencjami, streszczenie po angielsku, dawne nazwy ulic, ludzie związani z miejscem.
+>  
+> +## Mapa
+> +
+> +![Mapa historii okolicy](mapa-historia.png)
+> +
+>  ## Pliki
+>  
+>  | Plik | Co jest w środku |
+
