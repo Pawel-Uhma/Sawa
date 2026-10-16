@@ -1,6 +1,6 @@
 # Historia okolicy 42 Warsaw (promień 400 m)
 
-Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czyste (Wola), 52.2359, 20.9789**. Zebrane 15.10.2026 przez 8 agentów AI (Haiku), scalone i sprawdzone automatycznie.
+Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czyste (Wola), 52.2359, 20.9789**. Zebrane 15–16.10.2026 w dwóch rundach agentów AI (Haiku, 8 + 10 agentów), uzupełnione skryptem z warszawa1939.pl i Google Places, scalone i sprawdzone automatycznie.
 
 ## Ustalenia (15.10, Paweł)
 
@@ -17,11 +17,11 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 
 | Plik | Co jest w środku |
 |---|---|
-| [sawa-historia.geojson](sawa-historia.geojson) | **47 punktów**: 17 ulic, 13 tablic i pomników, 9 budynków, 6 miejsc, 1 nieistniejący budynek. Każdy ma fakty, ciekawostki, `summary_en`, źródła i odległość od wejścia |
+| [sawa-historia.geojson](sawa-historia.geojson) | **87 punktów, 761 faktów i ciekawostek**: 37 budynków (istniejących i dawnych), 16 ulic, 11 tablic, 9 miejsc, 8 pomników, 4 murale, 2 zdarzenia. Każdy ma fakty, ciekawostki, `summary_en`, źródła i odległość od wejścia. 65 zdjęć archiwalnych, 62 punkty mają pole `dzis` (co jest tu teraz, z Google Places) |
 | [ludzie.json](ludzie.json) | 12 osób, w tym 7 w promieniu (Korczak, Wilczyńska, Gałczyński, Tchorek, Chopin, Świerczewski, Weinstein). Osoby spoza promienia mają `poza_promieniem: true` |
 | [os-czasu.json](os-czasu.json) | 33 wydarzenia, od 1573 (elekcja) do 2016 (Warsaw Spire), PL i EN |
 | [zdjecia.json](zdjecia.json) | 31 zdjęć archiwalnych z Wikimedia Commons, licencje z metadanych. Są też dopięte do punktów w GeoJSON (pole `zdjecia`) |
-| [surowe/](surowe/) | Wyniki poszczególnych agentów, schemat rekordu, wyciąg z OSM (122 adresy, 15 ulic) |
+| [surowe/](surowe/) | Wyniki agentów (runda 1: `1-…8-`, runda 2: `r2-*`), dane z warszawa1939.pl (`r2-11`), wynik Google Places (`google-places.json`, 777 miejsc), wyciąg z OSM i `scalenie-log.txt` (co połączono, co odrzucono i dlaczego) |
 
 ## Najmocniejsze miejsca do demo
 
@@ -40,12 +40,14 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 ## Jak czytać pola
 
 - `pewnosc`: wysoka / srednia / niska, w ocenie agenta.
-- `do_weryfikacji`: fakty, których daty skrypt nie znalazł w tekście źródłowego artykułu Wikipedii (14 z 498). Zwykle pochodzą z innego źródła, np. korczak.ckc.uw.edu.pl albo dzieje.pl.
-- `zrodla_wikipedia_sprawdzone: false`: punkt ma tylko źródła spoza Wikipedii, najczęściej OSM (5 tablic).
+- `do_weryfikacji`: fakty, których daty skrypt nie znalazł w tekście źródłowego artykułu Wikipedii (23 z 761). Zwykle pochodzą z innego źródła, np. korczak.ckc.uw.edu.pl albo dzieje.pl.
+- `zrodla_wikipedia_sprawdzone: false`: punkt ma tylko źródła spoza Wikipedii (warszawa1939.pl, Google, OSM, prasa).
+- `dzis`: obiekty z Google Places stojące dziś w tym miejscu (do 25 m), z linkiem do Google Maps. Rekordy z id `g-*` pochodzą tylko z Google i mają historię do uzupełnienia.
+- `istnieje`: czy budynek stoi do dziś (wg warszawa1939.pl „OBIEKT NIE ISTNIEJE”).
 - `lokalizacja: przyblizona`: punkt jest na ulicy albo przy obiekcie, a nie w dokładnym miejscu zdarzenia.
 - `uwagi`: sprzeczności między źródłami, na przykład liczby ofiar albo daty nadania nazw.
 
-**Ograniczenie weryfikacji:** skrypt sprawdzał tylko, czy lata z faktu występują w źródle (478 z 498 przeszło). Nie sprawdzał nazwisk ani liczb. Agenci często czytali Wikipedię przez streszczenia, a nie dosłowny tekst. Zanim fakt trafi do pitchu, trzeba go przeczytać w źródle.
+**Ograniczenie weryfikacji:** skrypt sprawdzał tylko, czy lata z faktu występują w źródle (681 z 761 przeszło, 57 faktów pochodzi spoza Wikipedii i nie było z czym porównać). Nie sprawdzał nazwisk ani liczb. Agenci często czytali Wikipedię przez streszczenia, a nie dosłowny tekst. Zanim fakt trafi do pitchu, trzeba go przeczytać w źródle.
 
 ## Do sprawdzenia na miejscu w sobotę (zrób zdjęcia)
 
@@ -61,6 +63,18 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 - Skwer Hanki Bielickiej i Skwer Gwary Warszawskiej: brak źródeł o nazwaniu.
 - Sprzeczności do rozstrzygnięcia: Jaktorowska nazwana w 1916 czy w 1970 r.; granice getta na Chłodnej w grudniu 1941 r.; liczba ofiar wśród redemptorystów (24 czy 30).
 - Poza promieniem, ale blisko i mocne: browar Haberbuscha i Schielego (ok. 600 m), Singer przy Krochmalnej 10 (540 m), Kamienica pod Zegarem i Czerniaków przy Chłodnej 20 (800 m), kładka na Chłodnej. Opisy są w faktach ulic, bez osobnych punktów.
+
+## Licencje i warunki
+
+- Wikipedia: CC BY-SA. OSM: ODbL. Commons: licencja przy każdym zdjęciu.
+- **warszawa1939.pl: CC BY-NC.** Na hackathonie (niekomercyjnie) wolno, z podpisem. Przy komercjalizacji trzeba to zmienić.
+- **Google Places:** warunki Google pozwalają trzymać treści najwyżej 30 dni (bezterminowo tylko `place_id`). Po hackathonie dane z Google odświeżamy przez API albo usuwamy.
+
+## Runda 2 (16.10): co zadziałało, a co nie
+
+- Najwięcej dało bezpośrednie pobranie kart z warszawa1939.pl: Rogatki Wolskie Kubickiego, kino Kometa, kamienica Machleida, szkoła przy Karolkowej z 1925 r., fabryka Philipsa, kamienica Węgiełka, przedwojenne zdjęcia.
+- Agenci Haiku przeszukujący blogi i prasę dali mało (2–16 rekordów na agenta): Warszawikia blokuje boty (HTTP 402), wiele artykułów to PDF-y, a Nominatim i Overpass zaczęły odrzucać zapytania przy kilku agentach naraz.
+- Odrzucone jako leżące poza 400 m mimo przypisania im przez agentów współrzędnych ulicy: Sąd na Lesznie, Leszno 13, brama i kładka przy Żelaznej, Koszary Mirowskie, kino „Czary”, przedwojenne Leszno 81–84 i 100. Pełna lista w `surowe/scalenie-log.txt`.
 
 ## Na 17.10
 

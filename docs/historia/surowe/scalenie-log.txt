@@ -1,0 +1,110 @@
+MERGE r2-01-wolska-mlynarska.json:dom-sierot-jaktorowska-6
+NEW r2-01-wolska-mlynarska.json:mlynarska-8-12-pdt-wola
+NEW r2-01-wolska-mlynarska.json:wolska-17-henneberg
+NEW r2-01-wolska-mlynarska.json:wolska-31-35-hoser
+MERGE r2-01-wolska-mlynarska.json:wolska-27-29-palacyk-biernackich
+NEW r2-01-wolska-mlynarska.json:wilimczyk-wolska-19
+MERGE r2-02-karolkowa-leszno.json:szkola-karolkowa-56
+MERGE r2-02-karolkowa-leszno.json:tablica-tchorka-karolkowa-56-szpital-lazarza
+NEW r2-02-karolkowa-leszno.json:karolkowa-53
+MERGE r2-02-karolkowa-leszno.json:kosciol-klemensa-hofbauera-karolkowa-49
+MERGE r2-02-karolkowa-leszno.json:szpital-sw-lazarza
+MERGE r2-02-karolkowa-leszno.json:leszno
+MERGE r2-02-karolkowa-leszno.json:karolkowa
+DROP karol-i-maria-leszno-136: szpital Karola i Marii: współrzędne niepewne, prawdopodobnie poza 400 m
+DROP tablica-tchorka-leszno-30: położenie niepewne (agent przypisał punkt tablicy z Karolkowej 56)
+NEW r2-02-karolkowa-leszno.json:leszno-15
+NEW r2-02-karolkowa-leszno.json:przedszkole-134-leszno-24-26a
+NEW r2-02-karolkowa-leszno.json:przedszkole-133-okopowa-7a
+NEW r2-02-karolkowa-leszno.json:szkola-w-kontakcie-karolkowa-62
+MERGE r2-03-okopowa-zytnia-ogrodowa.json:kercelak
+NEW r2-03-okopowa-zytnia-ogrodowa.json:dworzec-pks-zytnia-15-17
+MERGE r2-03-okopowa-zytnia-ogrodowa.json:zytnia
+NEW r2-03-okopowa-zytnia-ogrodowa.json:okopowa-5
+NEW r2-03-okopowa-zytnia-ogrodowa.json:okopowa-7-7a
+NEW r2-03-okopowa-zytnia-ogrodowa.json:ogrodowa-56-bruk
+NEW r2-03-okopowa-zytnia-ogrodowa.json:ogrodowa-65-kamienica-wegielka
+NEW r2-03-okopowa-zytnia-ogrodowa.json:ogrodowa-67-mural-lityn
+DROP gmach-sadu-grodzkiego-ogrodowa: jw., ok. 1 km
+NEW r2-03-okopowa-zytnia-ogrodowa.json:unia-chlodna-56-60
+DROP skwer-hanki-bielickiej: brak faktów
+NEW r2-05-grzybowska-towarowa.json:fabryka-philips-karolkowa
+DROP grzybowska-96-inwestycja-art-deco: oferta dewelopera, bez historii
+DROP towarowa-36-hotel-moxy: tylko data otwarcia hotelu, bez historii
+NEW r2-06-solidarnosci-znikniete.json:rogatki-wolskie
+NEW r2-06-solidarnosci-znikniete.json:ogrod-rembaczewskiego
+MERGE r2-06-solidarnosci-znikniete.json:fabryka-philips-karolkowa
+NEW r2-06-solidarnosci-znikniete.json:karolkowa-59-kamienica-1844
+NEW r2-06-solidarnosci-znikniete.json:dziki-zachod-chlodna
+NEW r2-06-solidarnosci-znikniete.json:zniszczenie-okopowa-towarowa-1944
+NEW r2-06-solidarnosci-znikniete.json:trasa-w-z
+MERGE r2-06-solidarnosci-znikniete.json:leszno
+MERGE r2-06-solidarnosci-znikniete.json:osiedle-czyste
+NEW r2-06-solidarnosci-znikniete.json:osiedle-mirow
+DROP koszary-mirowskie: plac Mirowski: ok. 1,3 km
+MERGE r2-07-powstanie-1939.json:szpital-sw-lazarza
+MERGE r2-07-powstanie-1939.json:szpital-sw-lazarza
+MERGE r2-07-powstanie-1939.json:tablica-tchorka-karolkowa-56-szpital-lazarza
+MERGE r2-07-powstanie-1939.json:kosciol-klemensa-hofbauera-karolkowa-49
+MERGE r2-07-powstanie-1939.json:klasztor-karmelitanek-bosych-wolska-27-29
+MERGE r2-07-powstanie-1939.json:karolkowa
+MERGE r2-07-powstanie-1939.json:mlynarska
+MERGE r2-07-powstanie-1939.json:przyokopowa
+MERGE r2-07-powstanie-1939.json:brama-getta-chlodna-wronia
+MERGE r2-07-powstanie-1939.json:kercelak
+MERGE r2-07-powstanie-1939.json:wolska
+MERGE r2-08-zydowska-warszawa.json:dom-sierot-jaktorowska-6
+DROP brama-getta-chlodna-zelazna: Chłodna/Żelazna: ok. 750 m
+DROP kladka-chlodna-zelazna-1942: kładka przy Żelaznej: ok. 750 m
+MERGE r2-08-zydowska-warszawa.json:kercelak
+MERGE r2-08-zydowska-warszawa.json:ogrodowa
+DROP gmach-sadu-grodzkiego-leszno-ogrodowa: Leszno 53/55, dziś al. Solidarności 127: ok. 1 km
+MERGE r2-08-zydowska-warszawa.json:leszno
+DROP urzad-do-walki-z-lichwa-leszno-13: Leszno 13: wschodni koniec ulicy, ponad 1 km
+MERGE r2-08-zydowska-warszawa.json:krochmalna
+MERGE r2-08-zydowska-warszawa.json:jaktorowska
+MERGE r2-08-zydowska-warszawa.json:karolkowa
+NEW r2-08-zydowska-warszawa.json:przytulek-starozakonnych-karolkowa-wolska
+NEW r2-08-zydowska-warszawa.json:dab-doktora-korczaka
+MERGE r2-08-zydowska-warszawa.json:chlodna
+MERGE r2-08-zydowska-warszawa.json:wronia
+MERGE r2-08-zydowska-warszawa.json:okopowa
+MERGE r2-09-przemysl-codziennosc.json:unia-chlodna-56-60
+NEW r2-09-przemysl-codziennosc.json:kino-kometa-chlodna-47
+DROP kino-czary-chlodna-29: Chłodna 29: ok. 650 m
+NEW r2-09-przemysl-codziennosc.json:kino-helios-wolska-8
+NEW r2-09-przemysl-codziennosc.json:kino-roxy-wolska-14
+NEW r2-09-przemysl-codziennosc.json:kino-italia-wolska-32
+MERGE r2-09-przemysl-codziennosc.json:dom-sierot-jaktorowska-6
+MERGE r2-10-blogi-prasa.json:warsaw-trade-tower
+MERGE r2-10-blogi-prasa.json:kercelak
+MERGE r2-11-warszawa1939.json:dom-sierot-jaktorowska-6
+MERGE r2-11-warszawa1939.json:szkola-karolkowa-56
+MERGE r2-11-warszawa1939.json:fabryka-philips-karolkowa
+MERGE r2-11-warszawa1939.json:kino-kometa-chlodna-47
+MERGE r2-11-warszawa1939.json:kino-helios-wolska-8
+MERGE r2-11-warszawa1939.json:ogrodowa-65-kamienica-wegielka
+MERGE r2-11-warszawa1939.json:klasztor-karmelitanek-bosych-wolska-27-29
+MERGE r2-11-warszawa1939.json:rogatki-wolskie
+NEW r2-11-warszawa1939.json:kercelak-hala-targowa
+NEW r2-11-warszawa1939.json:chlodna-45-kamienica-machleida
+PLACES NEW g-mural-wolska-tytusa-brzozowskiego (mural)
+PLACES NEW g-balon-na-woli-mural-tytusa-brzozowskiego (mural)
+PLACES -> dom-sierot-jaktorowska-6: Dom Sierot
+PLACES NEW g-pomnik-polakow-poleglych-za-wolnosc-ojczyzny-1944 (pomnik)
+PLACES -> dom-sierot-jaktorowska-6: Korczakianum, pracownia naukowa Muzeum Warszawy
+PLACES -> janusz-korczak-popiersie-jaktorowska: Pomnik Janusza Korczaka
+PLACES -> ogrodowa-67-mural-lityn: Mural przedstawiający Jana Lityńskiego
+PLACES NEW g-kapliczka (pomnik)
+PLACES -> kosciol-klemensa-hofbauera-karolkowa-49: Kaplica Adoracji Najświętszego Sakramentu
+PLACES NEW g-mural-cyklisc-alei-bialej (mural)
+PLACES -> g-mural-cyklisc-alei-bialej: Mural "Kolarze"
+PLACES NEW g-plac-meczennikow-warszawskiej-woli (miejsce)
+PLACES NEW g-pomnik-meczenstwa-mieszkancow-woli (pomnik)
+PLACES -> klasztor-karmelitanek-bosych-wolska-27-29: Klasztor Sióstr Karmelitanek Bosych
+PLACES NEW g-mural-chlopiec-pge (mural)
+PLACES -> g-mural-chlopiec-pge: Mural Gen. Anders
+PLACES -> muzeum-nurkowania: Muzeum Nurkowania
+PLACES -> elektrownia-tramwajowa-muzeum-powstania: Elektrownia Tramwajów Miejskich
+PLACES -> brama-getta-chlodna-wronia: Mural na Chłodnej 45
+POZA PROMIENIEM / BEZ FAKTÓW:
