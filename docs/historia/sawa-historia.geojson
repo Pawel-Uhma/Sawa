@@ -4360,6 +4360,79 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     20.982455,
+     52.2354
+    ]
+   },
+   "properties": {
+    "id": "browar-brzezinskiego-chlodna-51",
+    "nazwa": "Browar Fryderyka Brzezińskiego (Chłodna 51)",
+    "name_en": "Fryderyk Brzeziński's brewery (Chłodna 51)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Chłodna 51",
+    "adres_historyczny": "ul. Chłodna 51",
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 248,
+    "okres": "po 1831 – ok. 1997",
+    "fakty": [
+     "Po wojnie 1831 roku przy Chłodnej powstały trzy browary: Fryderyka Brzezińskiego pod nr 51, Karola Sommera pod nr 45/47 oraz – około 1850 – Jana Szymanowskiego u zbiegu z ul. Żelazną (Wikipedia pl: Ulica Chłodna w Warszawie).",
+     "Na miejscu dawnego browaru przy Chłodnej 51 wzniesiono wieżowiec Warsaw Trade Tower (budowa 1997–1999, inwestor koncern Daewoo) (Wikipedia pl: Warsaw Trade Tower)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fryderyk Brzeziński ran a brewery at Chłodna 51, one of three breweries that opened on the street after 1831. The site later became the Warsaw Trade Tower, completed in 1999.",
+    "ludzie": [],
+    "dawne_nazwy": [
+     "browar Fryderyka Brzezińskiego (Chłodna 51)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia pl: Ulica Chłodna w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+     },
+     {
+      "tytul": "Wikipedia pl: Warsaw Trade Tower",
+      "url": "https://pl.wikipedia.org/wiki/Warsaw_Trade_Tower"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Data założenia i likwidacji browaru nieustalona. Źródła nie podają, kiedy browar przestał działać. Współrzędne z geokodera (Photon), dokładność rzędu kilkunastu metrów. Ulica Chłodna jest w części rejonu włączona do getta w grudniu 1941 (kamienice nieparzystej strony od Żelaznej do Waliców); nie ustalono, czy nr 51 leży w tym odcinku. Dziś: biurowiec Warsaw Trade Tower i zabudowa Chłodnej 51 (Altkom Akademia, biura).",
+    "dzis": [
+     {
+      "nazwa": "Altkom Akademia",
+      "typ": null,
+      "google_maps": "https://maps.google.com/?cid=8390163490191569323&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJx-lYsIPMHkcRq_FRyD3Zb3Q"
+     },
+     {
+      "nazwa": "Polskie Sloty",
+      "typ": "Szkoła",
+      "google_maps": "https://maps.google.com/?cid=8156435847610955170&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJ9eRx00bNHkcRovUcUjB7MXE"
+     },
+     {
+      "nazwa": "Centrum Rozwoju Dziecka sp. z o.o.",
+      "typ": "Szkoła",
+      "google_maps": "https://maps.google.com/?cid=1844201807493189821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJEcv2O6nNHkcRvdDD3cXrlxk"
+     },
+     {
+      "nazwa": "Business Health Sp. z o.o.",
+      "typ": "Usługi",
+      "google_maps": "https://maps.google.com/?cid=7700695192510437634&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJn611q6TPHkcRApkkQXpd3mo"
+     }
+    ],
+    "istnieje": true,
+    "do_weryfikacji": [],
+    "zrodla_wikipedia_sprawdzone": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      20.9824735,
      52.2354009
     ]
@@ -4421,28 +4494,22 @@
     "odleglosc_m": 250,
     "dzis": [
      {
-      "nazwa": "Altkom Akademia",
-      "typ": null,
-      "google_maps": "https://maps.google.com/?cid=8390163490191569323&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
-      "place_id": "ChIJx-lYsIPMHkcRq_FRyD3Zb3Q"
+      "nazwa": "Kancelaria Adwokacka Kabaczyńska-Garbaczewska",
+      "typ": "Prawnik",
+      "google_maps": "https://maps.google.com/?cid=4110599071475800322&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJxTtUNWvLt0wRApldnRPICzk"
      },
      {
-      "nazwa": "Polskie Sloty",
-      "typ": "Szkoła",
-      "google_maps": "https://maps.google.com/?cid=8156435847610955170&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
-      "place_id": "ChIJ9eRx00bNHkcRovUcUjB7MXE"
-     },
-     {
-      "nazwa": "Centrum Rozwoju Dziecka sp. z o.o.",
-      "typ": "Szkoła",
-      "google_maps": "https://maps.google.com/?cid=1844201807493189821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
-      "place_id": "ChIJEcv2O6nNHkcRvdDD3cXrlxk"
-     },
-     {
-      "nazwa": "Business Health Sp. z o.o.",
+      "nazwa": "MPED Sp. z o.o.",
       "typ": "Usługi",
-      "google_maps": "https://maps.google.com/?cid=7700695192510437634&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
-      "place_id": "ChIJn611q6TPHkcRApkkQXpd3mo"
+      "google_maps": "https://maps.google.com/?cid=9319338306835958654&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJYUeruYjLHkcRfsulaNDwVIE"
+     },
+     {
+      "nazwa": "FleetConsult Sp. z .o.o",
+      "typ": "Usługi",
+      "google_maps": "https://maps.google.com/?cid=18339505321274980983&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJYXBtZz2qrEgRdzr7PuwCg_4"
      }
     ],
     "istnieje": true,
@@ -4980,13 +5047,16 @@
     "name_en": "Unia pharmaceutical works (Chłodna 56/60)",
     "typ": "budynek",
     "adres_dzis": "ul. Chłodna 56/60 (siedziba wg KRS)",
-    "adres_historyczny": null,
+    "adres_historyczny": "ul. Chłodna 56/60",
     "lokalizacja": "dokladna",
     "okres": "1938–dziś",
     "fakty": [
      "Zakłady Farmaceutyczne „Unia” Spółdzielnia Pracy mają zarejestrowaną siedzibę przy ul. Chłodnej 56/60; wpis w KRS z 18.09.2002 r. (KRS 0000131447, krs-pobierz.pl).",
      "Według strony trungtamthuoc.com (jedyne źródło historii) spółdzielnia farmaceutów powstała po zebraniu założycielskim w marcu 1937 r. w Warszawie i zaczęła działać 28 stycznia 1938 r. jako pośrednik między producentami leków a właścicielami aptek będącymi członkami.",
      "Ta sama strona podaje, że w czasie powstania warszawskiego zniszczono siedzibę główną, a organizacja przetrwała dzięki oddziałom w Częstochowie i Lublinie.",
+     "W 1961 roku powołano spółdzielczy zakład przemysłowy przy Chłodnej 56/60; zakład rozpoczął działalność w 1967 roku (trungtamthuoc.com, streszczenie tekstu w języku wietnamskim).",
+     "W 1967 roku zakład zaczął produkować zawory do pojemników aerozolowych na podstawie licencji zagranicznej; później powstało laboratorium aerozolowe (trungtamthuoc.com, streszczenie).",
+     "Spółdzielnia Pracy „Zakłady Farmaceutyczne Unia” jest wpisana do KRS (nr KRS 0000131447) z siedzibą przy Chłodnej 56/60; wpis z września 2002 roku (krs-pobierz.pl).",
      "Spółdzielnia zakupu dla właścicieli aptek powstała w Warszawie: pierwsze zebranie założycielskie odbyło się 25 marca 1937 r., wpis do rejestru spółdzielczego nastąpił 20 lipca 1937 r., a działalność ruszyła 28 stycznia 1938 r. (źródło: trungtamthuoc.com, historia firmy; do weryfikacji w polskich źródłach).",
      "Siedziba główna spółdzielni została całkowicie zniszczona podczas powstania warszawskiego w 1944 r.; działalność utrzymywały głównie oddziały w Częstochowie i Lublinie (trungtamthuoc.com).",
      "Decyzja Głównego Inspektora Farmaceutycznego z 24.04.2003 r. wskazuje jako producenta „Zakłady Farmaceutyczno-Aerozolowe »UNIA« S.P.” pod adresem Chłodna 56/60 (archiwum.gif.gov.pl).",
@@ -5018,7 +5088,7 @@
      }
     ],
     "pewnosc": "niska",
-    "uwagi": "Historia z jednego, słabego źródła (strona handlowa, tłumaczona). Nie znaleziono powiązania przedwojennej siedziby z Chłodną 56/60; nie wiadomo, czy zakład produkował tam przed 1939 r. Nie znaleziono żadnych danych o Unii przy Ogrodowej. Ponieważ w Warszawie działa Polfa przy Karolkowej (inny podmiot), tego nie mieszać. Nazwę warto potwierdzić w źródłach zakładowych lub w Muzeum Farmacji. | Adres i forma prawna potwierdzone (KRS, decyzja GIF). Historia 1937–1944 pochodzi z jednego, słabego źródła (strona firmy farmaceutycznej w języku wietnamskim) i wymaga weryfikacji. Nieustalone: czy w PRL firma działała pod tym adresem, data 1950 r. (z zapytania) bez potwierdzenia, losy budynku. Współrzędne z OSM (węzeł biurowy „Chłodna 56/60”).",
+    "uwagi": "Historia z jednego, słabego źródła (strona handlowa, tłumaczona). Nie znaleziono powiązania przedwojennej siedziby z Chłodną 56/60; nie wiadomo, czy zakład produkował tam przed 1939 r. Nie znaleziono żadnych danych o Unii przy Ogrodowej. Ponieważ w Warszawie działa Polfa przy Karolkowej (inny podmiot), tego nie mieszać. Nazwę warto potwierdzić w źródłach zakładowych lub w Muzeum Farmacji. | Daty 1961 i 1967 oraz historia licencji pochodzą z tekstu wietnamskiego (streszczenie, bez weryfikacji z polskim źródłem). Wpis KRS potwierdza siedzibę i rok rejestracji. Nie znaleziono polskiej monografii ani hasła Wikipedii. Przedwojenna spółdzielnia (wg strony wietnamskiej: wpis 1937, działalność 1938, pośrednik między producentami leków a aptekarzami; siedziba zniszczona w powstaniu) nie została tu przypisana do Chłodnej 56/60, bo źródła nie wskazują adresu. Poza promieniem 400 m (szacunek geokodera, ok. 430–450 m): Chłodna 40 (w czasie powstania mieszkał tu Miron Białoszewski wg Wikipedii; numer poza promieniem), Chłodna 41–43 (423–441 m), Wronia 45 (tablica Tchorka; 430 m), Wronia 45A (405 m), Wronia 47 (kamienica, Wikidata Q60195402; 399–402 m, na granicy). Pominięte zgodnie ze schematem. | Adres i forma prawna potwierdzone (KRS, decyzja GIF). Historia 1937–1944 pochodzi z jednego, słabego źródła (strona firmy farmaceutycznej w języku wietnamskim) i wymaga weryfikacji. Nieustalone: czy w PRL firma działała pod tym adresem, data 1950 r. (z zapytania) bez potwierdzenia, losy budynku. Współrzędne z OSM (węzeł biurowy „Chłodna 56/60”).",
     "odleglosc_m": 295,
     "dzis": [
      {
@@ -5597,25 +5667,84 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     20.98365,
-     52.23584
+     20.983652,
+     52.235836
+    ]
+   },
+   "properties": {
+    "id": "browar-sommera-chlodna-45-47",
+    "nazwa": "Browar Karola Sommera (Chłodna 45/47)",
+    "name_en": "Karol Sommer's brewery (Chłodna 45/47)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Chłodna 45–47",
+    "adres_historyczny": "ul. Chłodna 45/47",
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 324,
+    "okres": "po 1831 – nieustalony",
+    "fakty": [
+     "Po wojnie 1831 roku przy Chłodnej powstał browar Karola Sommera pod nr 45/47 (Wikipedia pl: Ulica Chłodna w Warszawie)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Karol Sommer's brewery stood at Chłodna 45/47 after the 1831 war, one of three breweries on the street at that time.",
+    "ludzie": [
+     {
+      "kto": "Karol Sommer",
+      "rola": "właściciel browaru przy Chłodnej 45/47",
+      "wiki": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+     }
+    ],
+    "dawne_nazwy": [
+     "browar Karola Sommera (Chłodna 45/47)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia pl: Ulica Chłodna w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Jedno źródło (Wikipedia). Brak dat działalności, brak informacji o losach browaru. Współrzędne z geokodera dla nr 47 (Photon), dokładność kilkanaście metrów. Dziś: zabudowa Chłodnej 45–47, nie ustalono właściciela ani funkcji (OSM bez tagów).",
+    "dzis": [
+     {
+      "nazwa": "REMAK-ENERGOMONTAŻ S.A.",
+      "typ": "Stowarzyszenie lub organizacja",
+      "google_maps": "https://maps.google.com/?cid=2943563711494563326&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "place_id": "ChIJG7t8v4PMHkcR_iVdlZmj2Sg"
+     }
+    ],
+    "istnieje": true,
+    "do_weryfikacji": [],
+    "zrodla_wikipedia_sprawdzone": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.983652,
+     52.235836
     ]
    },
    "properties": {
     "id": "kino-kometa-chlodna-47",
-    "nazwa": "Kino „Kometa” (Chłodna 47)",
-    "name_en": "“Kometa” cinema, Chłodna 47",
+    "nazwa": "Kinoteatr „Kometa” (Chłodna 47)",
+    "name_en": "Kometa cinema (Chłodna 47)",
     "typ": "budynek",
     "adres_dzis": "ul. Chłodna 47",
-    "adres_historyczny": null,
+    "adres_historyczny": "ul. Chłodna 47",
     "lokalizacja": "przyblizona",
-    "okres": "nieustalone",
+    "odleglosc_m": 324,
+    "okres": "początek XX w. – nieustalony",
     "fakty": [
+     "Na początku XX wieku pod nr 47 przy Chłodnej powstał olbrzymi kinoteatr „Kometa” z widownią na 1500 osób (Wikipedia pl: Ulica Chłodna w Warszawie).",
+     "Wikipedia podaje, że w tym czasie przy ulicy działały też małe fabryczki i wytwórnie; sala kinowa była także w kinie „Czary” i w Domu Katolickim im. kard. Kakowskiego pod nr 9 (Wikipedia pl: Ulica Chłodna w Warszawie).",
      "Przewodnik Fundacji Hereditas po ulicy Chłodnej wymienia kino „Kometa” przy ul. Chłodnej 47 wśród „legendarnych kin” tej ulicy (Fundacja Hereditas, Krótkie opisy spacerów, spacer 12).",
      "Budynek kinoteatru powstał na posesji o podwójnym numerze nr 47/49. W zachodniej części działki znajdowały się dwa budynki : dwupiętrowa oficyna oraz długi budynek z parterowym neogotyckim frontem - prawdopodobnie relikt zabudowy fabrycznej na tej działce. (warszawa1939.pl)"
     ],
     "ciekawostki": [],
-    "summary_en": "The Kometa cinema at Chłodna 47 is listed among the legendary cinemas of Chłodna street in a 2023 walking guide. The dates and the fate of the building are not established.",
+    "summary_en": "The Kometa cinema at Chłodna 47 had a hall for about 1500 people, one of the largest cinemas on the street in the early 20th century.",
     "ludzie": [],
     "dawne_nazwy": [],
     "zdjecia": [
@@ -5646,6 +5775,10 @@
     ],
     "zrodla": [
      {
+      "tytul": "Wikipedia pl: Ulica Chłodna w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+     },
+     {
       "tytul": "Fundacja Hereditas, Krótkie opisy spacerów (2023), PDF",
       "url": "https://fundacja-hereditas.pl/wp-content/uploads/2023/03/Krotkie-opisy-spacerow.pdf"
      },
@@ -5654,20 +5787,11 @@
       "url": "https://www.warszawa1939.pl/obiekt/chlodna-47"
      }
     ],
-    "pewnosc": "niska",
-    "uwagi": "Źródło podaje tylko nazwę i numer. Nie ustalono lat działania, właściciela ani czy budynek przy Chłodnej 47 (dzisiejszy) to ten sam, co przedwojenny. Współrzędne z OSM (budynek przy Chłodnej 47), nie potwierdzone historycznie.",
-    "odleglosc_m": 324,
-    "dzis": [
-     {
-      "nazwa": "REMAK-ENERGOMONTAŻ S.A.",
-      "typ": "Stowarzyszenie lub organizacja",
-      "google_maps": "https://maps.google.com/?cid=2943563711494563326&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
-      "place_id": "ChIJG7t8v4PMHkcR_iVdlZmj2Sg"
-     }
-    ],
+    "pewnosc": "srednia",
+    "uwagi": "Jedno źródło (Wikipedia, bez dokładnej daty). Nie znaleziono niezależnego potwierdzenia (wyszukiwanie w sieci nie zwróciło wzmianek o kinie). Nie ustalono, czy kino stało na miejscu browaru Sommera (45/47) ani jego losów w 1939–1944 i dziś. | Źródło podaje tylko nazwę i numer. Nie ustalono lat działania, właściciela ani czy budynek przy Chłodnej 47 (dzisiejszy) to ten sam, co przedwojenny. Współrzędne z OSM (budynek przy Chłodnej 47), nie potwierdzone historycznie.",
     "istnieje": true,
     "do_weryfikacji": [],
-    "zrodla_wikipedia_sprawdzone": false
+    "zrodla_wikipedia_sprawdzone": true
    }
   },
   {
@@ -6670,6 +6794,53 @@
     "pewnosc": "srednia",
     "uwagi": "Dokładny punkt bramy nie jest podany w źródłach. Współrzędne to przybliżenie na skrzyżowaniu. Nie znalazłem tablicy ani pozostałości bramy w OSM. | Wzmianka dotyczy skrzyżowania z Wronią, czyli miejsca rekordu. Źródło opisuje ulicę jako całość, więc data 6 VIII dotyczy szerszego odcinka.",
     "odleglosc_m": 375,
+    "istnieje": true,
+    "do_weryfikacji": [],
+    "zrodla_wikipedia_sprawdzone": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9844,
+     52.2361
+    ]
+   },
+   "properties": {
+    "id": "barykada-chlodna-wronia-1944",
+    "nazwa": "Barykada i walki na skrzyżowaniu Chłodnej i Wroniej (1944)",
+    "name_en": "Barricade and fighting at the Chłodna–Wronia crossing (1944)",
+    "typ": "zdarzenie",
+    "adres_dzis": "skrzyżowanie ul. Chłodnej i ul. Wroniej",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 375,
+    "okres": "sierpień 1944",
+    "fakty": [
+     "Podczas powstania warszawskiego skrzyżowanie Chłodnej z Wronią zostało zamknięte przez powstańców barykadą (Wikipedia pl: Ulica Chłodna w Warszawie).",
+     "6 sierpnia 1944 roku toczyły się tu ciężkie walki o barykadę przy Chłodnej, którą nacierały główne siły niemieckie, przebijające się w kierunku Ogrodu Saskiego i pałacu Brühla (Wikipedia pl: Ulica Wronia w Warszawie).",
+     "Podczas Rzezi Woli setki mieszkańców Chłodnej i okolicznych ulic zostało wymordowanych (Wikipedia pl: Ulica Chłodna w Warszawie).",
+     "W drugiej połowie sierpnia 1944 roku ulicą Wronią przebiegała linia frontu między oddziałami polskimi i niemieckimi (Wikipedia pl: Ulica Wronia w Warszawie)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Chłodna and Wronia crossing was closed by a Home Army barricade during the Warsaw Uprising. On 6 August 1944 German forces fought hard to break through here, during the Wola massacre.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia pl: Ulica Chłodna w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+     },
+     {
+      "tytul": "Wikipedia pl: Ulica Wronia w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie na skrzyżowaniu, a nie pod konkretnym numerem; współrzędne skrzyżowania przybliżone (ten sam punkt co rekord brama-getta-chlodna-wronia). Nie ustalono, który narożnik był barykadowany. Wronia: 4 września 1939 nalot Luftwaffe zabił ok. 30 osób pod gruzami dwóch domów, ale nie podano numeru, więc rekordu nie dodałem. Dziś: zabudowa biurowa i mieszkaniowa na skrzyżowaniu, bez tablicy na tym punkcie (nie sprawdzono).",
     "dzis": [
      {
       "nazwa": "Parking",

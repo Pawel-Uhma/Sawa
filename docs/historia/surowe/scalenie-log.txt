@@ -28,6 +28,11 @@ NEW r2-03-okopowa-zytnia-ogrodowa.json:ogrodowa-67-mural-lityn
 DROP gmach-sadu-grodzkiego-ogrodowa: jw., ok. 1 km
 NEW r2-03-okopowa-zytnia-ogrodowa.json:unia-chlodna-56-60
 DROP skwer-hanki-bielickiej: brak faktów
+NEW r2-04-chlodna-wronia-krochmalna.json:browar-brzezinskiego-chlodna-51
+NEW r2-04-chlodna-wronia-krochmalna.json:browar-sommera-chlodna-45-47
+NEW r2-04-chlodna-wronia-krochmalna.json:kino-kometa-chlodna-47
+MERGE r2-04-chlodna-wronia-krochmalna.json:unia-chlodna-56-60
+NEW r2-04-chlodna-wronia-krochmalna.json:barykada-chlodna-wronia-1944
 NEW r2-05-grzybowska-towarowa.json:fabryka-philips-karolkowa
 DROP grzybowska-96-inwestycja-art-deco: oferta dewelopera, bez historii
 DROP towarowa-36-hotel-moxy: tylko data otwarcia hotelu, bez historii
@@ -70,7 +75,7 @@ MERGE r2-08-zydowska-warszawa.json:chlodna
 MERGE r2-08-zydowska-warszawa.json:wronia
 MERGE r2-08-zydowska-warszawa.json:okopowa
 MERGE r2-09-przemysl-codziennosc.json:unia-chlodna-56-60
-NEW r2-09-przemysl-codziennosc.json:kino-kometa-chlodna-47
+MERGE r2-09-przemysl-codziennosc.json:kino-kometa-chlodna-47
 DROP kino-czary-chlodna-29: Chłodna 29: ok. 650 m
 NEW r2-09-przemysl-codziennosc.json:kino-helios-wolska-8
 NEW r2-09-przemysl-codziennosc.json:kino-roxy-wolska-14
@@ -106,5 +111,5 @@ PLACES NEW g-mural-chlopiec-pge (mural)
 PLACES -> g-mural-chlopiec-pge: Mural Gen. Anders
 PLACES -> muzeum-nurkowania: Muzeum Nurkowania
 PLACES -> elektrownia-tramwajowa-muzeum-powstania: Elektrownia Tramwajów Miejskich
-PLACES -> brama-getta-chlodna-wronia: Mural na Chłodnej 45
+PLACES -> barykada-chlodna-wronia-1944: Mural na Chłodnej 45
 POZA PROMIENIEM / BEZ FAKTÓW:

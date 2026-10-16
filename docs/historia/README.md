@@ -17,7 +17,7 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 
 | Plik | Co jest w środku |
 |---|---|
-| [sawa-historia.geojson](sawa-historia.geojson) | **87 punktów, 761 faktów i ciekawostek**: 37 budynków (istniejących i dawnych), 16 ulic, 11 tablic, 9 miejsc, 8 pomników, 4 murale, 2 zdarzenia. Każdy ma fakty, ciekawostki, `summary_en`, źródła i odległość od wejścia. 65 zdjęć archiwalnych, 62 punkty mają pole `dzis` (co jest tu teraz, z Google Places) |
+| [sawa-historia.geojson](sawa-historia.geojson) | **90 punktów, 773 fakty i ciekawostki**: 39 budynków (istniejących i dawnych), 16 ulic, 11 tablic, 9 miejsc, 8 pomników, 4 murale, 3 zdarzenia. Każdy ma fakty, ciekawostki, `summary_en`, źródła i odległość od wejścia. 65 zdjęć archiwalnych, 62 punkty mają pole `dzis` (co jest tu teraz, z Google Places) |
 | [ludzie.json](ludzie.json) | 12 osób, w tym 7 w promieniu (Korczak, Wilczyńska, Gałczyński, Tchorek, Chopin, Świerczewski, Weinstein). Osoby spoza promienia mają `poza_promieniem: true` |
 | [os-czasu.json](os-czasu.json) | 33 wydarzenia, od 1573 (elekcja) do 2016 (Warsaw Spire), PL i EN |
 | [zdjecia.json](zdjecia.json) | 31 zdjęć archiwalnych z Wikimedia Commons, licencje z metadanych. Są też dopięte do punktów w GeoJSON (pole `zdjecia`) |
@@ -40,14 +40,14 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 ## Jak czytać pola
 
 - `pewnosc`: wysoka / srednia / niska, w ocenie agenta.
-- `do_weryfikacji`: fakty, których daty skrypt nie znalazł w tekście źródłowego artykułu Wikipedii (23 z 761). Zwykle pochodzą z innego źródła, np. korczak.ckc.uw.edu.pl albo dzieje.pl.
+- `do_weryfikacji`: fakty, których daty skrypt nie znalazł w tekście źródłowego artykułu Wikipedii (23 z 773). Zwykle pochodzą z innego źródła, np. korczak.ckc.uw.edu.pl albo dzieje.pl.
 - `zrodla_wikipedia_sprawdzone: false`: punkt ma tylko źródła spoza Wikipedii (warszawa1939.pl, Google, OSM, prasa).
 - `dzis`: obiekty z Google Places stojące dziś w tym miejscu (do 25 m), z linkiem do Google Maps. Rekordy z id `g-*` pochodzą tylko z Google i mają historię do uzupełnienia.
 - `istnieje`: czy budynek stoi do dziś (wg warszawa1939.pl „OBIEKT NIE ISTNIEJE”).
 - `lokalizacja: przyblizona`: punkt jest na ulicy albo przy obiekcie, a nie w dokładnym miejscu zdarzenia.
 - `uwagi`: sprzeczności między źródłami, na przykład liczby ofiar albo daty nadania nazw.
 
-**Ograniczenie weryfikacji:** skrypt sprawdzał tylko, czy lata z faktu występują w źródle (681 z 761 przeszło, 57 faktów pochodzi spoza Wikipedii i nie było z czym porównać). Nie sprawdzał nazwisk ani liczb. Agenci często czytali Wikipedię przez streszczenia, a nie dosłowny tekst. Zanim fakt trafi do pitchu, trzeba go przeczytać w źródle.
+**Ograniczenie weryfikacji:** skrypt sprawdzał tylko, czy lata z faktu występują w źródle (692 z 773 przeszło, 58 faktów pochodzi spoza Wikipedii i nie było z czym porównać). Nie sprawdzał nazwisk ani liczb. Agenci często czytali Wikipedię przez streszczenia, a nie dosłowny tekst. Zanim fakt trafi do pitchu, trzeba go przeczytać w źródle.
 
 ## Do sprawdzenia na miejscu w sobotę (zrób zdjęcia)
 
