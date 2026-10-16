@@ -1313,3 +1313,49 @@ _brak_
 > +
 > +**AI:** Rekomendacja: zostajemy przy Next.js + TypeScript + Tailwind + MapLibre i robimy z tego PWA (manifest, opcjonalnie service worker @serwist/next, układ mobile-first, TTS na serwerze), bez osobnej aplikacji natywnej. Capacitor dopiero po hackathonie, jeśli trzeba będzie wejść do sklepów. Plików nie zmieniałem, decyzja czeka na zespół.
 
+
+### 2026-10-16 07:05 · Pawel
+
+> naprawde tak malo znalazles? czy jak zrobisz fetch jakiejs ulicy z site:wikipedia to nie wyskakuje wiecej informacji i historii ? NIe tylko z wikipedii ale tez z roznych blogow artykulow itd?
+
+
+### 2026-10-16 07:06 · Pawel
+
+> uzyj tez google places api
+
+
+### 2026-10-16 07:07 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 10 ++++++++++
+>  1 file changed, 10 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 88b5f33..2bd5828 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1313,3 +1313,13 @@ _brak_
+>  > +
+>  > +**AI:** Rekomendacja: zostajemy przy Next.js + TypeScript + Tailwind + MapLibre i robimy z tego PWA (manifest, opcjonalnie service worker @serwist/next, układ mobile-first, TTS na serwerze), bez osobnej aplikacji natywnej. Capacitor dopiero po hackathonie, jeśli trzeba będzie wejść do sklepów. Plików nie zmieniałem, decyzja czeka na zespół.
+>  
+> +
+> +### 2026-10-16 07:05 · Pawel
+> +
+> +> naprawde tak malo znalazles? czy jak zrobisz fetch jakiejs ulicy z site:wikipedia to nie wyskakuje wiecej informacji i historii ? NIe tylko z wikipedii ale tez z roznych blogow artykulow itd?
+> +
+> +
+> +### 2026-10-16 07:06 · Pawel
+> +
+> +> uzyj tez google places api
+> +
+
