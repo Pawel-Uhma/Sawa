@@ -55,6 +55,10 @@ Najbliższy dostępny defibrylator i trasa do niego.
 
 ## Wyzwanie 1: Warszawa 2076
 
+### H. Sawa: podcast z okna autobusu ✅
+
+Wybrany 17.10. Planowanie przejazdu komunikacją miejską pod czas i zainteresowania, a Sawa opowiada o mijanych miejscach. Szczegóły w [10-prd.md](10-prd.md).
+
 ### G. Indeks miasta 15-minutowego
 
 Rejestr Cen Nieruchomości połączony z dostępnością komunikacji, boisk, AED i jakością powietrza. Z tego mapa „gdzie się dobrze mieszka za swoje pieniądze” i symulacja scenariuszy na 2076 rok.
@@ -64,6 +68,6 @@ Rejestr Cen Nieruchomości połączony z dostępnością komunikacji, boisk, AED
 
 ## Do dyskusji w zespole
 
-- [ ] Wybór: A / B / D / inny
+- [x] Wybór: H, Sawa (17.10)
 - [ ] Pomysł zapasowy na wypadek przydziału do wyzwania 3
 - [ ] Czy rozmowa z LLM wchodzi do minimalnej wersji, czy jest dodatkiem

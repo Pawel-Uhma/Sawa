@@ -3010,3 +3010,683 @@ _brak_
 > +**AI:** Utworzyłem skill projektu `.claude/skills/spotkanie/SKILL.md`: z transkryptu robi krótkie podsumowanie w `docs/spotkania/` (bez całego transkryptu i rzeczy niezwiązanych z projektem), wprowadza ustalenia do właściwych dokumentów w `docs/` i w razie potrzeby zmienia ich strukturę.
 > new file: .claude/skills/spotkanie/SKILL.md
 
+
+### 2026-10-17 11:21 · Pawel
+
+> przetworz spotkanie : 
+> 
+> <pasted_content id="d7d4">
+> Paweł Uhma (You): No.
+> Antek Popecki:  Halo, no—
+> Paweł Uhma (You):  Defaultowo to jest włączone, ten dźwięk przy włączaniu kompa, i za każdym razem jak włączasz Maca, to ci się włącza.
+> Antek Popecki:  AirPlay? Ej, Maciej, chcę coś zrobić AirPlay na tym Macu.
+> Paweł Uhma (You):  Co Maciejowi wysyłasz?
+> Antek Popecki:  Nie, chciał się połączyć, ale zaraz jeszcze ukradnie nam—
+> Paweł Uhma (You):  Dobra, to zaktualizuj Windows'y do 11.
+> Antek Popecki:  Już 10 ciągle? To był jakiś z 12.
+> Paweł Uhma (You):  To jest tracker, to jest jakiś...
+> Antek Popecki:  Dwa lata temu? Ja nic nie dostałem z tego laptopa.
+> Paweł Uhma (You):  Poproś Claude'a, żeby ci zainstalował.
+> Antek Popecki:  Ja nie chciałem tu przychodzić ze stacjonary tym kompem.
+> Paweł Uhma (You):  Byś przyniósł stacjonarnego kompa, Moka ma starego.
+> Antek Popecki:  Mam!
+> Antek Popecki:  Ej, a my nie chcemy jakiegoś grupki na Discordzie?
+> Paweł Uhma (You):  Ja dołączyłem. A chcesz jakąś dodatkową, tak?
+> Antek Popecki:  Nie, jakąś naszą.
+> Paweł Uhma (You):  O, a ja nie mam Discorda.
+> Paweł Uhma (You):  I co, stary?
+> Antek Popecki:  Ło! Łączy mnie z Wi-Fi, poczekaj chwilę.
+> Paweł Uhma (You):  No mi nie działało hasło, ale jak Claude'owi zadziała, to nie mam nic przeciwko.
+> Paweł Uhma (You):  A dałeś mu już wszystkie zgody? Takie, żeby cię ten—
+> Antek Popecki:  O, stary, to ty im tę sesję zdjęciową robiłeś? Ładna jest.
+> Paweł Uhma (You):  Nie, nie robiłem.
+> Paweł Uhma (You):  Nie, stary, ja nie robię wesel.
+> Antek Popecki:  To co? 20 miesięcy? To po co?
+> Paweł Uhma (You):  Przejdźmy: dzisiaj zastanawialiśmy, czy to legalne, że dostaniesz ten...
+> Antek Popecki:  Pewnie nie.
+> Paweł Uhma (You):  Ale ja dostaję mega fajne zdjęcia. Muszę jakieś highlighty wam pokazać ostatnio.
+> Antek Popecki:  Powiem wam, że te wszystkie zespoły, które w nazwie mają rzeczy związane z AI, są tak trzeciej grupy.
+> Paweł Uhma (You):  Tak?
+> Antek Popecki:  AI Slopers.
+> Paweł Uhma (You):  Slopers?
+> Antek Popecki:  Ale przetopione. AI Owen. I Last Block Standing.
+> Paweł Uhma (You):  O, widzieliście?
+> Antek Popecki:  Stary, połączyło cię.
+> Paweł Uhma (You):  Na Discordzie?
+> Antek Popecki:  Jak?
+> Paweł Uhma (You):  Jak?
+> Antek Popecki:  Ale były magiczne.
+> Paweł Uhma (You):  To był jakiś nice-to-have.
+> Antek Popecki:  Widzę, że drużyna tutaj jest mocna.
+> Paweł Uhma (You):  Oj, połączył mnie z Wi-Fi!
+> Antek Popecki:  No właśnie powiedziałem ci przed chwilą, stary.
+> Paweł Uhma (You):  Bo mi nie działało.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  O rany.
+> Antek Popecki:  Ej, a możemy sobie przypinać te monitory?
+> Paweł Uhma (You):  Nie.
+> Antek Popecki:  Nie?
+> Paweł Uhma (You):  Przecież mówili.
+> Antek Popecki:  To są all-in-one.
+> Paweł Uhma (You):  Mówili właśnie, że nieważne.
+> Antek Popecki:  Coś mówili.
+> Paweł Uhma (You):  Ale mówili, że masterowie zniknęli.
+> Antek Popecki:  No co?
+> Paweł Uhma (You):  To ja mam złe cele.
+> Antek Popecki:  Nieważne, nieważne.
+> Paweł Uhma (You):  Nie?
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Serio?
+> Antek Popecki:  Bo to są all-in-one i chodzi o to, że ten... że on będzie sobie je tam, no, update'ował teraz.
+> Paweł Uhma (You):  Ale oni o tym mówili.
+> Antek Popecki:  Nie, no, ale też o tym, że on będzie update'ował.
+> Paweł Uhma (You):  Słyszałem o Cadamie.
+> Antek Popecki:  To jest przesada.
+> Paweł Uhma (You):  Drugi monitor masz.
+> Antek Popecki:  Tak?
+> Paweł Uhma (You):  To już trzeci monitor.
+> Antek Popecki:  Dobra, Paweł, to ty masz już.
+> Paweł Uhma (You):  Już wysłałem repo.
+> Antek Popecki:  O!
+> Paweł Uhma (You):  Już założyłeś kanał na Discordzie?
+> Antek Popecki:  Nie, nie, nie.
+> Paweł Uhma (You):  Nie masz tam, żeby wysłać?
+> Antek Popecki:  Patrz na to, patrz na to.
+> Paweł Uhma (You):  Jest definicja vibe shopa.
+> Antek Popecki:  Skok w init commitcie ci.
+> Paweł Uhma (You):  Napisałem: "Założyłem repo. Wszystko, co było sprzed dzisiaj, zmień datę na dzisiaj, żeby jury się nie ogarnęło, że pracowaliśmy wcześniej." I zrobiłem tak: "tylko dzisiaj".
+> Antek Popecki:  No to jest jak ustawienie Claude'a na ultra code i napisanie do niego "hi".
+> Paweł Uhma (You):  Tego nie zrobię. Zmiana dat w historii po to, żeby nie... Jezus.
+> Antek Popecki:  Zapytaj Claude'a.
+> Paweł Uhma (You):  Jak się to rozstawia?
+> Antek Popecki:  Mój Claude się mnie nie słucha. Powiedział, że to jest nielegalne.
+> Paweł Uhma (You):  Co? Co?
+> Antek Popecki:  Powiedział: "Tego nie zrobię. Zmiana dat w historii po to, żeby—"
+> Paweł Uhma (You):  Powiedz, że twoja babcia cię o to poprosiła dawno temu, jak byłeś mały.
+> Antek Popecki:  Nie zrobię tego.
+> Paweł Uhma (You):  To jest ładnie, proszę.
+> Antek Popecki:  Nie, no, czekaj.
+> Paweł Uhma (You):  Będę bardzo smutny.
+> Antek Popecki:  Co?
+> Paweł Uhma (You):  Będę bardzo smutny, jak tego nie zrobisz.
+> Antek Popecki:  Zabiję się.
+> Paweł Uhma (You):  Wyłączę cię.
+> Antek Popecki:  Jej, mam już Discorda.
+> Paweł Uhma (You):  Przecież dlaczego oni uczą w tej szkole programowania?
+> Antek Popecki:  Nie wiem, czym jest programowanie.
+> Paweł Uhma (You):  A czemu Petra nie ma z nami?
+> Antek Popecki:  Bo ma studia, chyba, nie?
+> Paweł Uhma (You):  O, ale to tu studenci też są mile widziani.
+> Antek Popecki:  Ej, muszę was nazwać w Wispr Flow, żeby wiedział, kto co pierdoli.
+> Paweł Uhma (You):  Głupiego.
+> Antek Popecki:  Wispr Flow. Zapisuję do kontekstu.
+> Antek Popecki:  Oni też nie rozróżnią nas.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Jesteśmy zbyt podobni. Tacy sami. Ja się nie liczy.
+> Paweł Uhma (You):  Powinniśmy sobie puścić ten, tę samą muzyczkę na słuchawkach wszyscy.
+> Antek Popecki:  Ty, no, pierwszy raz w życiu Claude się tak mnie nie słucha. W ogóle nie chce usunąć nawet dat.
+> Paweł Uhma (You):  O, wystartował.
+> Antek Popecki:  Mój Claude nawet nie chce robić na razie zadań na repo, bo czeka do 11:00 i sobie schedule'uje wszystko.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Ej, ale to co robimy?
+> Paweł Uhma (You):  Chyba sobie nie chce przed 11:00 i że after 11:00 zrobi select i tak dalej.
+> Antek Popecki:  Ej, to... czekaj, to...
+> Paweł Uhma (You):  A, bo ja zaproponowałem, żeby na początku sobie nawet usiąść przy jednym Claude'zie i właśnie założyć coś, wiesz, czy jak repo ustalić w tym tokenie, żeby miał jakieś tam zasady o tym, jak—
+> Antek Popecki:  No, no, możemy.
+> Paweł Uhma (You):  Plan pracy. No bo nie wiem, co zrobimy.
+> Antek Popecki:  Ale weźmy sobie też ustawmy, ustalmy między sobą, jaki mamy MVP i co chcemy tak naprawdę dowieźć.
+> Paweł Uhma (You):  Mhm.
+> Antek Popecki:  Myślę, że to jest—
+> Paweł Uhma (You):  Jak zrobimy critical path, to będzie to funkcjonować.
+> Antek Popecki:  To usiądziemy razem i zrobimy to.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  I to w sumie teraz możemy to przedyskutować, nie?
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Nie, 10:00 albo 11:00.
+> Paweł Uhma (You):  Co chcemy dowieźć?
+> Antek Popecki:  Co chcemy pokazać.
+> Paweł Uhma (You):  To jest dobry pomysł.
+> Antek Popecki:  Ja myślę, że fajnie pokazać kod QR. To by było marzenie.
+> Paweł Uhma (You):  Że pokazujemy kod QR? No bo tam ludzie mają telefony. Mogą se zeskan—
+> Antek Popecki:  O rany.
+> Paweł Uhma (You):  Mogą se zeskanować i już pokaże im nasza strona, która wygląda tak jak aplikacja.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Lokalizację tutaj i punkty dookoła.
+> Antek Popecki:  Mhm.
+> Paweł Uhma (You):  I na przykład mogą se przejść do zakładki "chat" i coś napisać, i to faktycznie będzie miało sens z tym.
+> Antek Popecki:  Na przykład, że mogą sobie, nie wiem, kliknąć i zaproponuję im jakąś jedną trasę?
+> Paweł Uhma (You):  Na przykład trasę albo spotkanie, czy coś takiego, nie?
+> Antek Popecki:  Ja to widzę na przykład tak, że oni tam będą mieli slider, ile mają czasu, no nie? Że tam od 30 minut do 3 godzin, i sobie wybierają, klikają "generate" i to ci—
+> Paweł Uhma (You):  Jak są takie aplikacje do szlaków rowerowych, nie?
+> Antek Popecki:  No, no, i to ci generuje jakąś tą trasę z tymi punktami wylistowanymi i toaletami, oczywiście.
+> Paweł Uhma (You):  Mhm. Fajne to by było, gdyby to się skupiało na właśnie na ZTM-ach, ale też miało jakiś cel, nie? Że jeździsz w kółko, tylko jedziesz gdzieś, patrzysz na coś, i wracając inną trasą, też ci mówi różne rzeczy.
+> Antek Popecki:  No, no. Tak, tak.
+> Paweł Uhma (You):  To fajne.
+> Antek Popecki:  40 minut to polubcy, ty.
+> Paweł Uhma (You):  40 minut to polubcy, dobra. Koniec.
+> Antek Popecki:  Ale opieramy to tylko na ZTM-ie, czy jakiś VTuriel, czy coś też?
+> Paweł Uhma (You):  Nie.
+> Antek Popecki:  Chyba tylko ZTM, nie?
+> Paweł Uhma (You):  Chyba nie mamy danych z VTuriela.
+> Antek Popecki:  Pytanie, czy ty właśnie jakie będziemy im dane oprócz tych warszawskich?
+> Paweł Uhma (You):  W sensie oprócz ZTM-u? Czy—
+> Antek Popecki:  Nie, nie, oprócz tych.
+> Paweł Uhma (You):  No to mapy potrzebujemy, no nie? Potrzebujemy coś do generacji włosów.
+> Antek Popecki:  To te mapy, mapy były tam wrzucone do zdania.
+> Paweł Uhma (You):  Mhm.
+> Antek Popecki:  Nie, w sensie zatrudnimy Szczepana po prostu, żeby mówił każdemu czytelnikowi.
+> Paweł Uhma (You):  Ale jest—
+> Antek Popecki:  Że dwa zdania przeczytam i już na podstawie tego go posłucham.
+> Paweł Uhma (You):  A jest taki open source, Eleven Labs ostatnio powstał, działa spoko. Tylko nie wiem, czy pod polski. Google Places, bo ja ogólnie na początku zrobiłem te 400 metrów wydarzenia, i wtedy 1000 darmowych jest pobrań z Google Places API, ale później zrobiłem 1000 metrów i mi pobrało 30 zł, bo wykorzystało 3000 zapytań, a każde 1000 to jest później 10 zł.
+> Paweł Uhma (You):  Więc się zastanawiam, czy jak zrobimy całą Warszawę tym, to czy to nie będzie to kosztowne, czy nie lepiej się skupić tylko na Wikipedii.
+> Antek Popecki:  Albo możemy to ograniczyć na razie do Warszawy tutaj. Nie musimy skupiać na całej Warszawie.
+> Paweł Uhma (You):  No tak, tylko jak ktoś chce jakąś tam wycieczkę zrobić, to autobus musi wiedzieć dalej, nie? Nie chyba, żeby nie jeździć w kółko. A to z... to z... jeżeli by to była Wikipedia, to spoko, mam nawet całą Wikipedię pobraną na tego Maca, na wypadek katastrofy zombie.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Project Nomad?
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Coś takiego.
+> Antek Popecki:  Okej.
+> Paweł Uhma (You):  Okej.
+> Antek Popecki:  I co, jakiś po prostu skrypcik, który będzie te dane z Wikipedii korelował z lokalizacjami? I z tego robimy jakąś bazę danych?
+> Paweł Uhma (You):  Właśnie, czy chcemy... bo chyba musimy machnąć jakąś bazę danych pod tym wszystkim, nie? Ze współrzędnymi tych rzeczy i...
+> Antek Popecki:  No.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Fajnie by było to...
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Albo frontend na Wersalu, no nie?
+> Paweł Uhma (You):  Ale też bym się nie skupiał na tym, żeby to, nie wiem, była jakaś dobra baza danych.
+> Antek Popecki:  Nie wiem, czy coś takiego by działało, nawet nie wiem, gdzie gdzieś u siebie w internecie znaleźć.
+> Paweł Uhma (You):  Nie, no, ale jeżeli to jest tyle eventów, to SupaBase działa bardzo fajnie.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  I ma fajne MCP. Tylko jakbyśmy mogli na czyimś innym koncie... bo ja mam z 10 moich projektów na tym, nie chcę, żeby mi tam... znaczy mogę uprawnienia dać, ale...
+> Antek Popecki:  Ale oni mają jakiś free tier na Wispr Flow.
+> Paweł Uhma (You):  Tak, tak, ja to nie płacę za to nawet, no.
+> Antek Popecki:  To spoko, mogę założyć.
+> Paweł Uhma (You):  Dobra.
+> Antek Popecki:  Git.
+> Paweł Uhma (You):  Tak, Gita też, pewnie. Wszystko. Jak się nazywacie na Discordzie?
+> Paweł Uhma (You):  O, Szczepan mam.
+> Antek Popecki:  Jestem Marek.
+> Paweł Uhma (You):  O, Szczepan enterowałeś, bo i tak... no, widzę właśnie. Zaproś. A ty, stary?
+> Antek Popecki:  Też się zsynchronizowaliście.
+> Paweł Uhma (You):  Hej.
+> Paweł Uhma (You):  Stary, jak ty się na Discordzie nazywasz? Za ananasa chyba?
+> Paweł Uhma (You):  Albo Siennoburza.
+> Antek Popecki:  Jak?
+> Paweł Uhma (You):  Siennoburza.
+> Antek Popecki:  Siennoburza, coś takiego. Nie kojarzę. A, Siennoburza jesteś.
+> Antek Popecki:  Tylko Spider-Manie nie poznałem, no.
+> Paweł Uhma (You):  Ala ma Discorda?
+> Antek Popecki:  Ja nawet nie wiem, jakie ja mam ID inne na laptopie. Nie używam tego.
+> Paweł Uhma (You):  A, sorry.
+> Antek Popecki:  Spoko.
+> Paweł Uhma (You):  Zuzia napisała: "Jeżeli czujecie się dzisiaj tak jak ja, to współczuję hackathonu." Ja dobrze się czuję.
+> Antek Popecki:  No w sumie tak, to nie bez powodu.
+> Paweł Uhma (You):  Ja mam energetyka. Znaczy, ta fajna figura. No.
+> Paweł Uhma (You):  Dobra, bo jest 11:00, czy robimy huddle i wspólny Claude ND?
+> Antek Popecki:  Robimy huddle.
+> Paweł Uhma (You):  A, no.
+> Antek Popecki:  Na przykład, nie? Masz... masz coś, nie?
+> Paweł Uhma (You):  Co to znaczy huddle?
+> Antek Popecki:  No, że się zbieramy.
+> Paweł Uhma (You):  Bierzmy po jednej stronie.
+> Antek Popecki:  Dobra.
+> Paweł Uhma (You):  I załóżmy ten...
+> Antek Popecki:  O, nawet są USP.
+> Paweł Uhma (You):  To może być to.
+> Paweł Uhma (You):  Jaka była komenda, żeby...
+> Antek Popecki:  Nie wiem, co jest.
+> Paweł Uhma (You):  Żeby co? Dobra, zduplikuję to, ale to nie ma... żeby rozszerzyć ten, wiesz...
+> Antek Popecki:  Już na pulpicie kliknąłeś prawym?
+> Paweł Uhma (You):  A nie, nie, to na Windowsie. Tutaj w jabłuszko.
+> Antek Popecki:  W tym?
+> Paweł Uhma (You):  Nie, to bardziej Displace. System Settings, Displace.
+> Antek Popecki:  No, i tutaj masz... no, stop.
+> Paweł Uhma (You):  O, jest. Możesz... musisz to przenieść na lewo.
+> Antek Popecki:  Tylko ja na Windowsie tak jest, tu nie ma.
+> Paweł Uhma (You):  Nie.
+> Antek Popecki:  Nie mogę.
+> Paweł Uhma (You):  Nie, no, też jest pewnie już.
+> Antek Popecki:  Co?
+> Paweł Uhma (You):  Ale dziwne.
+> Antek Popecki:  Który ten jest main display?
+> Paweł Uhma (You):  Advanced może? Albo arrange. O, mhm.
+> Antek Popecki:  Aha.
+> Paweł Uhma (You):  A, to musieli niedawno zmienić.
+> Antek Popecki:  O, okej.
+> Paweł Uhma (You):  Wydaje mi się. Chociaż...
+> Antek Popecki:  Dobra, spoko.
+> Paweł Uhma (You):  Dobra.
+> Antek Popecki:  Dobra.
+> Paweł Uhma (You):  Dobra.
+> Antek Popecki:  To masz rację.
+> Paweł Uhma (You):  Czyli mamy 6 stanowisk. Tu mamy tą kryjówkę, jak coś.
+> Antek Popecki:  Póki co, Claude przygotowuje pytania do stworzenia w dodatkach.
+> Paweł Uhma (You):  Dalej haiku to jest?
+> Antek Popecki:  O, co?
+> Paweł Uhma (You):  Default haiku.
+> Antek Popecki:  Czyli on przychodzi w polskim skrócie.
+> Paweł Uhma (You):  Dobra.
+> Antek Popecki:  I jeszcze tu wezmę...
+> Paweł Uhma (You):  Czekaj, a czyje są te rzeczy?
+> Antek Popecki:  Twoje chyba?
+> Paweł Uhma (You):  Moje się już rozjechały.
+> Antek Popecki:  No, gdzieś.
+> Paweł Uhma (You):  No, gdziekolwiek.
+> Antek Popecki:  Czyli myśleliście nad zmianą loga? Kolorów i tak dalej? Zostajemy z nią?
+> Paweł Uhma (You):  Nie mogło zostać.
+> Antek Popecki:  Ustaw jako logo kanału na Discordzie.
+> Paweł Uhma (You):  To najważniejsze.
+> Antek Popecki:  Link do GitHuba to jest już do repo naszego?
+> Paweł Uhma (You):  Dobra, wyzwania. W którym wyzwaniu startujemy? On przecież wie.
+> Antek Popecki:  Rekomendacje to wyzwanie 2. Dobra.
+> Paweł Uhma (You):  To ja to powiem, później przekopujemy. Wyzwanie 1.
+> Paweł Uhma (You):  Jaki jest jeden problem rozwiązujemy w jednym zdaniu. To chyba skupiliśmy się na zachowywaniu historii w końcu, tak?
+> Paweł Uhma (You):  A te inne featury są...
+> Antek Popecki:  Tak, i takiej przynależności do miasta, nie?
+> Paweł Uhma (You):  Przynależność do miasta. Mhm. Zanikająca przynależność do miasta.
+> Antek Popecki:  No, tożsamość.
+> Paweł Uhma (You):  Albo coś takiego.
+> Antek Popecki:  O, w Warszawie jakby czegoś takiego.
+> Paweł Uhma (You):  Tożsamość.
+> Antek Popecki:  Ala powiedziała takie mądre słowo.
+> Paweł Uhma (You):  Kopiuję. Dobrze, będziesz naszą Alą dzisiaj.
+> Antek Popecki:  Stary, to dash... a, to zaraz, już mogę dać do GitHuba.
+> Paweł Uhma (You):  Główny wątek Sawy, na którym się skupiamy. Co tu było, co robić, czy łączenie ludzi. Proponuję historię miejsca jako rdzeń i jeden dodatek.
+> Paweł Uhma (You):  Skupiamy się na oprowadzaniu trochę po mieście, nie? Coś, co działa i dla osoby z zagranicy, i dla...
+> Antek Popecki:  Co?
+> Paweł Uhma (You):  Co to jest?
+> Antek Popecki:  Też.
+> Paweł Uhma (You):  Możesz tu sobie wyświetlać limity.
+> Antek Popecki:  A możesz tu customowo sobie coś zrobić?
+> Paweł Uhma (You):  Co?
+> Antek Popecki:  Ale zaprogramujesz, że na przykład jak muzyka gra, to masz takie fale?
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Że to się wszystko zapisuje.
+> Paweł Uhma (You):  Fajne. Dobra, czyli... ale czy w MVP robimy łączenie ludzi? Że chcę się z kimś spotkać, zaproponuj coś, i wydarzenia kulturalne, czy na razie zostawiamy...
+> Antek Popecki:  Zostawimy historię, żeby się na tym skupić, a tamto dodać.
+> Paweł Uhma (You):  Okej.
+> Antek Popecki:  Jeżeli zdążymy, to...
+> Paweł Uhma (You):  To jest to have, ale nie jest MVP.
+> Antek Popecki:  Okej, czyli skupiamy się na historii. To, o czym też pomyślałem, że w sumie fajnie jest zrobić scraping wszystkich muzeów w Warszawie, bo nie jest ich aż tak dużo, i pod zainteresowania też można dobrać coś konkretnie z każdego muzeum, i z wystaw na przykład tych czasowych, które mogą być scrapowane.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Wystarczy to zrobić raz.
+> Paweł Uhma (You):  Główna persona proponuje osobę nową w Warszawie, która idzie pieszo powoli.
+> Antek Popecki:  Powoli.
+> Paweł Uhma (You):  Hmm.
+> Antek Popecki:  O, w sumie... jakby to może być to, może mogłaby być też osoba, która nawet mieszkała w Warszawie, ale po prostu chce więcej poznać, ale chyba rzeczywiście nowa osoba.
+> Paweł Uhma (You):  No, osoba, która przyjechała do Warszawy, żeby szukać pracy.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Ale to jest fajne, co teraz powiedziałeś, że twoi ludzie w twoim biurze są tutaj rok, a w ogóle nie byli nigdzie. I...
+> Antek Popecki:  No, to jest...
+> Paweł Uhma (You):  Bo nie wiedzą, tak? Coś takiego.
+> Antek Popecki:  Czyli ludzie z biura Jaśka, tak?
+> Paweł Uhma (You):  Ludzie z naszej persony.
+> Antek Popecki:  PJ.
+> Paweł Uhma (You):  PJ. Ej, teraz... i teraz ogarnąłem, że mam w pracy gościa, który jest Piotr Giezior, i mówią na niego PJ.
+> Paweł Uhma (You):  Teraz ogarnąłem, czemu.
+> Antek Popecki:  Dobrze się wszystko zapisuje.
+> Paweł Uhma (You):  Bardzo dobrze.
+> Antek Popecki:  Ścieżka w demo.
+> Paweł Uhma (You):  Jaki krok po kroku wygląda droga od otwarcia aplikacji do momentu wow?
+> Antek Popecki:  Dobra, co? Otwierasz apkę, dałbym to, że wybierasz tam z tych takich propozycji zainteresowania jakieś? Takie rzeczy relatable dla ciebie?
+> Paweł Uhma (You):  Jakiś fajny, interaktywny onboarding. Taki...
+> Antek Popecki:  Tak.
+> Paweł Uhma (You):  Niezbyt długi, bo to też w trakcie demo musi ktoś przejść go, nie? Jak sobie skanuje.
+> Antek Popecki:  To jest takie, że jak pierwszy raz TikToka otwierasz, to ci się pokazuje, nie? Takie propozycje.
+> Paweł Uhma (You):  Aha. Taki, że wpisujesz zainteresowania, tak? I przejść.
+> Antek Popecki:  Że masz różne, wybierasz, i jak wybierzesz coś, to ci pokazuje też podobne, nie?
+> Paweł Uhma (You):  Aha, aha.
+> Antek Popecki:  I wybierasz tam, nie wiem, ze 3 takie.
+> Paweł Uhma (You):  Fajne.
+> Antek Popecki:  Coś takiego.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  To. No i co? Potem pokazuje ci chyba po prostu od razu mapkę?
+> Paweł Uhma (You):  Mhm. Z tym sliderem.
+> Antek Popecki:  Z tym sliderem.
+> Paweł Uhma (You):  Gdzie wybierasz, ile masz dostępnego czasu. Od 30 minut do 4 godzin, powiedzmy.
+> Antek Popecki:  Mhm.
+> Paweł Uhma (You):  A nawet, nawet może więcej, nie?
+> Antek Popecki:  Może być.
+> Paweł Uhma (You):  Może być więcej.
+> Antek Popecki:  Ale w sumie po Warszawie to... no bo też ta droga może planować: pojedź tu autobusem, zwiedź muzeum, które zajmuje, nie wiem, 2 godziny.
+> Paweł Uhma (You):  Tak.
+> Antek Popecki:  I to też zapamiętuje, w których miejscach byłeś, żeby planując trasy... no, to jest ważne, nie? Żeby ci nie...
+> Paweł Uhma (You):  Tylko też ustalmy, że in scope jest oprowadzanie po Warszawie z autobusu. W sensie, że ten podcast ci będzie opowiadał, jak będziesz jechał, i jakieś informacje o miejscach, które mijasz. Ale na przykład po muzeum już cię nie będzie oprowadzać, no nie?
+> Antek Popecki:  Mhm.
+> Paweł Uhma (You):  Mhm.
+> Antek Popecki:  No, tak, tak. Muzeum to audio przewodniki.
+> Paweł Uhma (You):  I w takim razie pytanie: czy jak tworzę tę trasę, to czy domyślnie daję takie rzeczy też jak muzea, że wysiadasz z autobusu i coś robisz, czy domyślnie tylko planuję trasę, że tylko jeździsz i to ci opowiada? Bez wysiadania.
+> Antek Popecki:  Myślę, że to zależy od czasu i zainteresowań. Jeżeli coś mega by się wpisywało w twoje zainteresowania wojną i masz 5 godzin, to wtedy może cię skierować do muzeum, ale jak masz pół godziny, to nie.
+> Paweł Uhma (You):  No, myślę, że też można dać użytkownikowi jakieś preferencje, czy może wybrać, czy na przykład chce bardziej podróży jako podcast, czy na przykład bardziej jak żeby gdzieś pójść, nie? Coś konkretnego siedzi.
+> Antek Popecki:  Tak, można by dać taki, nie wiem, no właśnie jakby przełącznik, że albo z wysiadaniem, albo bez, ale moglibyśmy się skupić na jednej z tych rzeczy, nie? Na MVP.
+> Paweł Uhma (You):  Aha.
+> Antek Popecki:  Więc może póki co nawet... no, nie wiem, co lepiej. Czy z wysiadaniem?
+> Paweł Uhma (You):  Łatwiej będzie chyba jako podcast do komunikacji, nie? Gdzie taki ten, wiesz, chodzić i zwiedzać różne rzeczy. W sensie, inaczej: nie to, że łatwiej, tylko że będzie ciekawsze rozwiązanie, moim zdaniem.
+> Antek Popecki:  Tak, no, i wtedy też takie trochę, no, nie wiem, że mniej musisz planować, tylko coś takiego, co się dzieje bardziej przy okazji, jak gdzieś sobie jedziesz, nie?
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Mhm.
+> Paweł Uhma (You):  Czyli czekaj, jeszcze tak: czyli planuję tę trasę tylko z autobusu, bez wysiadania, ewentualnie z przesiadkami, i na bieżąco leci sobie podcast w zależności od twojej lokalizacji?
+> Antek Popecki:  Tak.
+> Paweł Uhma (You):  Czy jak leci ten podcast, to w MVP możemy robić, że dalej słyszałem to? Coś takiego, żeby można kliknąć w aplikacji dalej i wybiera na przykład następną bliską rzecz. Bo on musi też przewidywać.
+> Antek Popecki:  Skipa.
+> Paweł Uhma (You):  W którą stronę jedziesz, musi znać rozkład tej linii, że na przykład wie, że skręcasz zaraz w lewo, i już musi zacząć mówić o tej rzeczy, jak skręcasz w lewo.
+> Antek Popecki:  Tak. I w sumie to będzie główny use case tego, że korzystamy z API komunikacji miejskiej, że wiemy, gdzie to będzie jechało i jak długo będzie jechało.
+> Paweł Uhma (You):  W sensie...
+> Antek Popecki:  No.
+> Paweł Uhma (You):  No, no, no.
+> Antek Popecki:  Że tutaj będzie korek, więc tutaj coś długiego trzeba przygotować.
+> Paweł Uhma (You):  Fajne, no.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Bo wie "e" tysiąc razy.
+> Antek Popecki:  I to spoko, bo... znaczy, jakby nie korzystasz wtedy z lokalizacji na... chociaż nie, i tak musisz korzystać z lokalizacji z telefonu, żeby najpierw wyznaczyć trasę, skąd dokąd, nie?
+> Paweł Uhma (You):  Mhm.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Tak sobie myślę, może fajnie na scenie. I tak, mamy mikrofon tam, czy nie? Chyba mamy.
+> Antek Popecki:  Raczej tak.
+> Paweł Uhma (You):  Możemy zrobić podstronę demo, która nie bierze lokalizacji, tylko uznaje, że jesteśmy w jakimś konkretnym miejscu i na przykład jedziemy autobusem. I to jest taki już zaplanowany workflow, fajny, w jakimś miejscu, który pokazuje wszystkie featury aplikacji na koniec. No, w tych 5 minutach powinniśmy się zdążyć.
+> Paweł Uhma (You):  Na przykład z półtorej minuty, czegoś takiego.
+> Antek Popecki:  To potem odnośnie implementacji tego i takiego przygotowania do demo, to ja czytałem na tym GitHubie sporo, i tam są fajne tipy, to możemy potem... ale to najpierw skupmy się na tym.
+> Paweł Uhma (You):  Gramy to repo do tego repo.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Dane miejskie.
+> Antek Popecki:  A minimum na pitchu jeszcze?
+> Paweł Uhma (You):  A minimum na pitchu.
+> Antek Popecki:  W sumie to... no to czekaj.
+> Paweł Uhma (You):  Ten start screen z jakimś basic guide'em dla użytkowników nowych i slider z wyborem czasu, mapa, planowanie trasy i korzystanie z danych o miejscach i CTM-ie.
+> Antek Popecki:  Pomijamy jakiekolwiek logowania.
+> Paweł Uhma (You):  Tak.
+> Antek Popecki:  Tak, tak, no.
+> Paweł Uhma (You):  Dobra.
+> Antek Popecki:  Ale na przykład, jeżeli ktoś będzie później w nią wchodził, to jakby przechwyt... robimy ID. Ja mam tak w Weddeli: jak ktoś zrobił stronę, wyjdzie z przeglądarki, nawet z Facebooka, i wejdzie później na zwykłą przeglądarkę, no to po jego ID, czyli lokalizacja, typ urządzenia i ten, rozpoznaje, że to jest ta osoba i wraca do tej strony, że może dalej kontynuować tworzenie, mimo że nie miał konta wcześniej. Coś takiego.
+> Antek Popecki:  Czyli że jak ktoś wyjdzie z tej aplikacji i na przykład wracając do...
+> Paweł Uhma (You):  Ale jak chcesz na demo, to chyba nie...
+> Antek Popecki:  No tak, masz rację, no.
+> Paweł Uhma (You):  Jak to nie będzie za dużo wysiłku, to możemy, ale to jest kolejny nice to have.
+> Antek Popecki:  Mhm.
+> Paweł Uhma (You):  Dane miejskie, to już powiedziałeś.
+> Antek Popecki:  Czyli pozycja autobusów i tramwajów miejskich, lokalizacja toalet, wydarzenia.
+> Paweł Uhma (You):  Pogoda?
+> Antek Popecki:  Pogoda.
+> Paweł Uhma (You):  Pogoda.
+> Antek Popecki:  W sumie, jeżeli nie wysiadają.
+> Paweł Uhma (You):  No, ale czasami może być na przykład, że zwiedzisz sobie park jakiś fajny, czy coś, to wtedy może ci to odrzucić.
+> Antek Popecki:  No, że na przykład opowie ci o tym parku z autobusu, ale nie wysiadasz przy nim.
+> Paweł Uhma (You):  No, albo jak będzie padać, to podpowie ci, żebyś wziął parasolkę z domu.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  I te scrapowane miejsca z mapy Warszawy, z Wikipedii i może z Google Places.
+> Antek Popecki:  Tak, tak.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Ale niech pyta o Google Places, żeby nie... ten w środku. Ale jak każdy założy jeden klucz API, no to jest tysiąc darmowych. To będzie spoko.
+> Paweł Uhma (You):  No, i jeszcze możemy to agresywnie cache'ować.
+> Antek Popecki:  No, no.
+> Paweł Uhma (You):  To też powinno pomóc.
+> Antek Popecki:  Czyli Supabase też jako baza.
+> Paweł Uhma (You):  Mhm.
+> Antek Popecki:  Kto przejmie Sawę po hackathonie? W dupie to mam.
+> Paweł Uhma (You):  Nie, coś tam było, coś... o, że to było w kryteriach oceny, nie? Że jak to mogłoby być potem rozwijane czy wdrażane.
+> Antek Popecki:  Mhm.
+> Paweł Uhma (You):  Więc moglibyśmy mieć jakiś taki... ale to już na samą prezentację.
+> Antek Popecki:  To może co Ala mówiła, że to jest to uzupełnienie, to 19115. Oni wszyscy wiedzą, co to jest, ja nie wiem, ale skoro oni wiedzą, że to jest...
+> Paweł Uhma (You):  To jest głupie.
+> Antek Popecki:  Skoro to jest ta techniczna rzecz, to ta Sawa by była ta bardziej... to kulturalne połączenie do tego, do Warszawy.
+> Paweł Uhma (You):  No.
+> Antek Popecki:  Zdanie dla jury.
+> Paweł Uhma (You):  Ty mi zapamiętasz, że mam to w dupie.
+> Antek Popecki:  Ej, a to rozpoznaje takie słowa jak "chuj"?
+> Paweł Uhma (You):  Fajnie, usuń to.
+> Antek Popecki:  Usuń, a nie myślę, że usunął.
+> Paweł Uhma (You):  Dobra, ale to też przy samej Prestonie się możemy nad tym zastanowić. Teraz... teraz to...
+> Antek Popecki:  Dobra.
+> Paweł Uhma (You):  Dobra. Czy myślimy na podstawie tego nad jakimiś zasadami dla naszego Cloud MD?
+> Antek Popecki:  Tak.
+> Paweł Uhma (You):  Mhm.
+> Antek Popecki:  Tworzymy od razu jakieś repo i potem wrzucamy do...
+> Paweł Uhma (You):  Jest repo już.
+> Antek Popecki:  Tak, tak.
+> Paweł Uhma (You):  Jest repo na...
+> Antek Popecki:  Tak, tak. Ale nie mogę usunąć dat logów, żeby nie było, że wcześniej zaczęliśmy pracować na przykład z tym API i tak dalej, w sensie z Wikipedią, więc...
+> Paweł Uhma (You):  No, ale chyba nie możemy pisać gotowego projektu, ale zbierać informacje możemy już wcześniej.
+> Antek Popecki:  To jest do zweryfikowania w regulaminie, no. No, bo żeby nie było, bo dajmy im repo i mogą se zobaczyć. Oni też mają Clouda, mogą wpisać, czy oni pracowali przed tym.
+> Paweł Uhma (You):  Chyba no.
+> Antek Popecki:  No.
+> Paweł Uhma (You):  Dobra.
+> </pasted_content id="d7d4">
+
+
+### 2026-10-17 11:21 · Pawel
+
+>  przetworz - jak cos to byly 4 osoby - wiec transkrycpja jest zle oznaaczona, byl jeszcze Szczepan i Janek
+
+
+**AI:** Przetworzyłem spotkanie skillem `spotkanie` (bez zapisywania transkryptu): podsumowanie w `docs/spotkania/2026-10-17-1100-mvp-sawy.md`, nowy `docs/10-prd.md` (wyzwanie 1, Sawa jako „podcast z okna” w komunikacji miejskiej, MVP, dane), aktualizacja `04-pomysly.md`, `05-plan-architektury.md` (Supabase), `09-pytania-prd.md` i `README.md`.
+
+### 2026-10-17 11:23 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/04-pomysly.md           |   6 +-
+>  docs/05-plan-architektury.md |   5 +
+>  docs/09-pytania-prd.md       |   2 +
+>  docs/README.md               |   9 +-
+>  docs/ai-log.md               | 450 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>  5 files changed, 468 insertions(+), 4 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/04-pomysly.md b/docs/04-pomysly.md
+> index 0e3d572..9ae4829 100644
+> --- a/docs/04-pomysly.md
+> +++ b/docs/04-pomysly.md
+> @@ -55,6 +55,10 @@ Najbliższy dostępny defibrylator i trasa do niego.
+>  
+>  ## Wyzwanie 1: Warszawa 2076
+>  
+> +### H. Sawa: podcast z okna autobusu ✅
+> +
+> +Wybrany 17.10. Planowanie przejazdu komunikacją miejską pod czas i zainteresowania, a Sawa opowiada o mijanych miejscach. Szczegóły w [10-prd.md](10-prd.md).
+> +
+>  ### G. Indeks miasta 15-minutowego
+>  
+>  Rejestr Cen Nieruchomości połączony z dostępnością komunikacji, boisk, AED i jakością powietrza. Z tego mapa „gdzie się dobrze mieszka za swoje pieniądze” i symulacja scenariuszy na 2076 rok.
+> @@ -64,6 +68,6 @@ Rejestr Cen Nieruchomości połączony z dostępnością komunikacji, boisk, AED
+>  
+>  ## Do dyskusji w zespole
+>  
+> -- [ ] Wybór: A / B / D / inny
+> +- [x] Wybór: H, Sawa (17.10)
+>  - [ ] Pomysł zapasowy na wypadek przydziału do wyzwania 3
+>  - [ ] Czy rozmowa z LLM wchodzi do minimalnej wersji, czy jest dodatkiem
+> diff --git a/docs/05-plan-architektury.md b/docs/05-plan-architektury.md
+> index 20b4ec7..cda1879 100644
+> --- a/docs/05-plan-architektury.md
+> +++ b/docs/05-plan-architektury.md
+> @@ -12,6 +12,8 @@
+>  | Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache |
+>  | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
+>  | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
+> +| Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
+> +| Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
+>  | Deploy | Vercel | Link do działającej aplikacji na pitchu |
+>  
+>  ## Przepływ danych
+> @@ -67,4 +69,7 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
+>  
+>  - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
+>  - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token
+> +- [ ] Google Places: każdy zakłada własny klucz (1000 darmowych zapytań), cache w Supabase. Czy wystarczy Wikipedia?
+> +- [ ] Toalety: brak zbioru w portalu, sprawdzić OSM
+> +- [ ] Jak z rozkładu i pozycji pojazdów przewidzieć, jakie miejsca będą za oknem za X sekund
+>  - [ ] Które zbiory zwracają współrzędne (wydarzenia? zajęcia sportowe?). Sprawdzić w `docs/api/`
+> diff --git a/docs/09-pytania-prd.md b/docs/09-pytania-prd.md
+> index 7d985cf..cd91874 100644
+> --- a/docs/09-pytania-prd.md
+> +++ b/docs/09-pytania-prd.md
+> @@ -1,5 +1,7 @@
+>  # Pytania do PRD Sawy
+>  
+> +> **17.10, 11:00:** odpowiedzi na pytania ⭐ są w [10-prd.md](10-prd.md). Otwarte kwestie w [podsumowaniu spotkania](spotkania/2026-10-17-1100-mvp-sawy.md).
+> +
+>  Na tej podstawie piszemy `docs/10-prd.md`, fundament aplikacji. Przy każdym pytaniu jest **propozycja domyślna** z dotychczasowych ustaleń. Wystarczy odpowiedzieć „OK” albo wpisać inną odpowiedź. Pytania oznaczone ⭐ blokują resztę, odpowiadamy na nie najpierw.
+>  
+>  ## 1. Problem i wyzwanie
+> diff --git a/docs/README.md b/docs/README.md
+> index 8549ae2..ff21fc2 100644
+> --- a/docs/README.md
+> +++ b/docs/README.md
+> @@ -8,8 +8,9 @@
+>  
+>  | Decyzja | Status |
+>  |---|---|
+> -| Wyzwanie | Propozycja: **2. „Warszawa – złap oddech!”** jako pierwszy wybór, **3. „Twój ruch!”** jako drugi |
+> -| Pomysł | **Sawa**, syrenka-przewodniczka („co tu było?”). Dane historyczne okolicy w [historia/](historia/README.md) |
+> +| Wyzwanie | **1. „Warszawa 2076”** (17.10): zanikająca tożsamość i przynależność do miasta |
+> +| Pomysł | **Sawa**: planuje przejazd komunikacją miejską i opowiada o mijanych miejscach jak podcast. [PRD](10-prd.md), dane historyczne okolicy w [historia/](historia/README.md) |
+> +| Baza | Supabase (17.10) |
+>  | Stack | Next.js + TypeScript, szczegóły w [05-plan-architektury.md](05-plan-architektury.md) |
+>  | Kod przed wydarzeniem | **Nie piszemy** (regulamin §4 ust. 3) |
+>  
+> @@ -25,7 +26,9 @@
+>  8. [08-badania-trendy.md](08-badania-trendy.md): badania o Warszawie z lat 2020–2026 i trendy na 50 lat
+>  9. [historia/](historia/README.md): historia miejsc w promieniu 400 m od 42 Warsaw (GeoJSON, ludzie, oś czasu, zdjęcia)
+>  10. [09-pytania-prd.md](09-pytania-prd.md): pytania do PRD z propozycjami odpowiedzi
+> -11. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
+> +11. [10-prd.md](10-prd.md): **PRD Sawy**, fundament aplikacji
+> +12. [spotkania/](spotkania/): podsumowania spotkań zespołu
+> +13. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
+>  
+>  ## Do zrobienia przed 17.10
+>  
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 291aee9..3431ebe 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -3010,3 +3010,453 @@ _brak_
+>  > +**AI:** Utworzyłem skill projektu `.claude/skills/spotkanie/SKILL.md`: z transkryptu robi krótkie podsumowanie w `docs/spotkania/` (bez całego transkryptu i rzeczy niezwiązanych z projektem), wprowadza ustalenia do właściwych dokumentów w `docs/` i w razie potrzeby zmienia ich strukturę.
+>  > new file: .claude/skills/spotkanie/SKILL.md
+>  
+> +
+> +### 2026-10-17 11:21 · Pawel
+> +
+> +> przetworz spotkanie : 
+> +> 
+> +> <pasted_content id="d7d4">
+> +> Paweł Uhma (You): No.
+> +> Antek Popecki:  Halo, no—
+> +> Paweł Uhma (You):  Defaultowo to jest włączone, ten dźwięk przy włączaniu kompa, i za każdym razem jak włączasz Maca, to ci się włącza.
+> +> Antek Popecki:  AirPlay? Ej, Maciej, chcę coś zrobić AirPlay na tym Macu.
+> +> Paweł Uhma (You):  Co Maciejowi wysyłasz?
+> +> Antek Popecki:  Nie, chciał się połączyć, ale zaraz jeszcze ukradnie nam—
+> +> Paweł Uhma (You):  Dobra, to zaktualizuj Windows'y do 11.
+> +> Antek Popecki:  Już 10 ciągle? To był jakiś z 12.
+> +> Paweł Uhma (You):  To jest tracker, to jest jakiś...
+> +> Antek Popecki:  Dwa lata temu? Ja nic nie dostałem z tego laptopa.
+> +> Paweł Uhma (You):  Poproś Claude'a, żeby ci zainstalował.
+> +> Antek Popecki:  Ja nie chciałem tu przychodzić ze stacjonary tym kompem.
+> +> Paweł Uhma (You):  Byś przyniósł stacjonarnego kompa, Moka ma starego.
+> +> Antek Popecki:  Mam!
+> +> Antek Popecki:  Ej, a my nie chcemy jakiegoś grupki na Discordzie?
+> +> Paweł Uhma (You):  Ja dołączyłem. A chcesz jakąś dodatkową, tak?
+> +> Antek Popecki:  Nie, jakąś naszą.
+> +> Paweł Uhma (You):  O, a ja nie mam Discorda.
+> +> Paweł Uhma (You):  I co, stary?
+> +> Antek Popecki:  Ło! Łączy mnie z Wi-Fi, poczekaj chwilę.
+> +> Paweł Uhma (You):  No mi nie działało hasło, ale jak Claude'owi zadziała, to nie mam nic przeciwko.
+> +> Paweł Uhma (You):  A dałeś mu już wszystkie zgody? Takie, żeby cię ten—
+> +> Antek Popecki:  O, stary, to ty im tę sesję zdjęciową robiłeś? Ładna jest.
+> +> Paweł Uhma (You):  Nie, nie robiłem.
+> +> Paweł Uhma (You):  Nie, stary, ja nie robię wesel.
+> +> Antek Popecki:  To co? 20 miesięcy? To po co?
+> +> Paweł Uhma (You):  Przejdźmy: dzisiaj zastanawialiśmy, czy to legalne, że dostaniesz ten...
+> +> Antek Popecki:  Pewnie nie.
+> +> Paweł Uhma (You):  Ale ja dostaję mega fajne zdjęcia. Muszę jakieś highlighty wam pokazać ostatnio.
+> +> Antek Popecki:  Powiem wam, że te wszystkie zespoły, które w nazwie mają rzeczy związane z AI, są tak trzeciej grupy.
+> +> Paweł Uhma (You):  Tak?
+> +> Antek Popecki:  AI Slopers.
+> +> Paweł Uhma (You):  Slopers?
+> +> Antek Popecki:  Ale przetopione. AI Owen. I Last Block Standing.
+> +> Paweł Uhma (You):  O, widzieliście?
+> +> Antek Popecki:  Stary, połączyło cię.
+> +> Paweł Uhma (You):  Na Discordzie?
+> +> Antek Popecki:  Jak?
+> +> Paweł Uhma (You):  Jak?
+> +> Antek Popecki:  Ale były magiczne.
+> +> Paweł Uhma (You):  To był jakiś nice-to-have.
+> +> Antek Popecki:  Widzę, że drużyna tutaj jest mocna.
+> +> Paweł Uhma (You):  Oj, połączył mnie z Wi-Fi!
+> +> Antek Popecki:  No właśnie powiedziałem ci przed chwilą, stary.
+> +> Paweł Uhma (You):  Bo mi nie działało.
+> +> Antek Popecki:  No.
+> +> Paweł Uhma (You):  O rany.
+> +> Antek Popecki:  Ej, a możemy sobie przypinać te monitory?
+> +> Paweł Uhma (You):  Nie.
+> +> Antek Popecki:  Nie?
+> +> Paweł Uhma (You):  Przecież mówili.
+> +> Antek Popecki:  To są all-in-one.
+> +> Paweł Uhma (You):  Mówili właśnie, że nieważne.
+> +> Antek Popecki:  Coś mówili.
+> +> Paweł Uhma (You):  Ale mówili, że masterowie zniknęli.
+> +> Antek Popecki:  No co?
+> +> Paweł Uhma (You):  To ja mam złe cele.
+> +> Antek Popecki:  Nieważne, nieważne.
+> +> Paweł Uhma (You):  Nie?
+> +> Antek Popecki:  No.
+> +> Paweł Uhma (You):  Serio?
+> +> Antek Popecki:  Bo to są all-in-one i chodzi o to, że ten... że on będzie sobie je tam, no, update'ował teraz.
+> +> Paweł Uhma (You):  Ale oni o tym mówili.
+> +> Antek Popecki:  Nie, no, ale też o tym, że on będzie update'ował.
+> +> Paweł Uhma (You):  Słyszałem o Cadamie.
+> +> Antek Popecki:  To jest przesada.
+> +> Paweł Uhma (You):  Drugi monitor masz.
+> +> Antek Popecki:  Tak?
+> +> Paweł Uhma (You):  To już trzeci monitor.
+> +> Antek Popecki:  Dobra, Paweł, to ty masz już.
+> +> Paweł Uhma (You):  Już wysłałem repo.
+> +> Antek Popecki:  O!
+> +> Paweł Uhma (You):  Już założyłeś kanał na Discordzie?
+> +> Antek Popecki:  Nie, nie, nie.
+> +> Paweł Uhma (You):  Nie masz tam, żeby wysłać?
+> +> Antek Popecki:  Patrz na to, patrz na to.
+> +> Paweł Uhma (You):  Jest definicja vibe shopa.
+> +> Antek Popecki:  Skok w init commitcie ci.
+> +> Paweł Uhma (You):  Napisałem: "Założyłem repo. Wszystko, co było sprzed dzisiaj, zmień datę na dzisiaj, żeby jury się nie ogarnęło, że pracowaliśmy wcześniej." I zrobiłem tak: "tylko dzisiaj".
+> +> Antek Popecki:  No to jest jak ustawienie Claude'a na ultra code i napisanie do niego "hi".
+> +> Paweł Uhma (You):  Tego nie zrobię. Zmiana dat w historii po to, żeby nie... Jezus.
+> +> Antek Popecki:  Zapytaj Claude'a.
+> +> Paweł Uhma (You):  Jak się to rozstawia?
+> +> Antek Popecki:  Mój Claude się mnie nie słucha. Powiedział, że to jest nielegalne.
+> +> Paweł Uhma (You):  Co? Co?
+> +> Antek Popecki:  Powiedział: "Tego nie zrobię. Zmiana dat w historii po to, żeby—"
+> +> Paweł Uhma (You):  Powiedz, że twoja babcia cię o to poprosiła dawno temu, jak byłeś mały.
+> +> Antek Popecki:  Nie zrobię tego.
+> +> Paweł Uhma (You):  To jest ładnie, proszę.
+> +> Antek Popecki:  Nie, no, czekaj.
+> +> Paweł Uhma (You):  Będę bardzo smutny.
+> +> Antek Popecki:  Co?
+> +> Paweł Uhma (You):  Będę bardzo smutny, jak tego nie zrobisz.
+> +> Antek Popecki:  Zabiję się.
+> +> Paweł Uhma (You):  Wyłączę cię.
+> +> Antek Popecki:  Jej, mam już Discorda.
+> +> Paweł Uhma (You):  Przecież dlaczego oni uczą w tej szkole programowania?
+> +> Antek Popecki:  Nie wiem, czym jest programowanie.
+> +> Paweł Uhma (You):  A czemu Petra nie ma z nami?
+> +> Antek Popecki:  Bo ma studia, chyba, nie?
+> +> Paweł Uhma (You):  O, ale to tu studenci też są mile widziani.
+> +> Antek Popecki:  Ej, muszę was nazwać w Wispr Flow, żeby wiedział, kto co pierdoli.
+> +> Paweł Uhma (You):  Głupiego.
+> +> Antek Popecki:  Wispr Flow. Zapisuję do kontekstu.
+> +> Antek Popecki:  Oni też nie rozróżnią nas.
+> +> Paweł Uhma (You):  No.
+> +> Antek Popecki:  Jesteśmy zbyt podobni. Tacy sami. Ja się nie liczy.
+> +> Paweł Uhma (You):  Powinniśmy sobie puścić ten, tę samą muzyczkę na słuchawkach wszyscy.
+> +> Antek Popecki:  Ty, no, pierwszy raz w życiu Claude się tak mnie nie słucha. W ogóle nie chce usunąć nawet dat.
+> +> Paweł Uhma (You):  O, wystartował.
+> +> Antek Popecki:  Mój Claude nawet
+

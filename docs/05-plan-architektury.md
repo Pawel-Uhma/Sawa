@@ -12,6 +12,8 @@
 | Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache |
 | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
 | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
+| Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
+| Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
 | Deploy | Vercel | Link do działającej aplikacji na pitchu |
 
 ## Przepływ danych
@@ -67,4 +69,7 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
 
 - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
 - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token
+- [ ] Google Places: każdy zakłada własny klucz (1000 darmowych zapytań), cache w Supabase. Czy wystarczy Wikipedia?
+- [ ] Toalety: brak zbioru w portalu, sprawdzić OSM
+- [ ] Jak z rozkładu i pozycji pojazdów przewidzieć, jakie miejsca będą za oknem za X sekund
 - [ ] Które zbiory zwracają współrzędne (wydarzenia? zajęcia sportowe?). Sprawdzić w `docs/api/`

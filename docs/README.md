@@ -8,8 +8,9 @@
 
 | Decyzja | Status |
 |---|---|
-| Wyzwanie | Propozycja: **2. „Warszawa – złap oddech!”** jako pierwszy wybór, **3. „Twój ruch!”** jako drugi |
-| Pomysł | **Sawa**, syrenka-przewodniczka („co tu było?”). Dane historyczne okolicy w [historia/](historia/README.md) |
+| Wyzwanie | **1. „Warszawa 2076”** (17.10): zanikająca tożsamość i przynależność do miasta |
+| Pomysł | **Sawa**: planuje przejazd komunikacją miejską i opowiada o mijanych miejscach jak podcast. [PRD](10-prd.md), dane historyczne okolicy w [historia/](historia/README.md) |
+| Baza | Supabase (17.10) |
 | Stack | Next.js + TypeScript, szczegóły w [05-plan-architektury.md](05-plan-architektury.md) |
 | Kod przed wydarzeniem | **Nie piszemy** (regulamin §4 ust. 3) |
 
@@ -25,7 +26,9 @@
 8. [08-badania-trendy.md](08-badania-trendy.md): badania o Warszawie z lat 2020–2026 i trendy na 50 lat
 9. [historia/](historia/README.md): historia miejsc w promieniu 400 m od 42 Warsaw (GeoJSON, ludzie, oś czasu, zdjęcia)
 10. [09-pytania-prd.md](09-pytania-prd.md): pytania do PRD z propozycjami odpowiedzi
-11. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
+11. [10-prd.md](10-prd.md): **PRD Sawy**, fundament aplikacji
+12. [spotkania/](spotkania/): podsumowania spotkań zespołu
+13. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
 
 ## Do zrobienia przed 17.10
 

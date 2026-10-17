@@ -1,5 +1,7 @@
 # Pytania do PRD Sawy
 
+> **17.10, 11:00:** odpowiedzi na pytania ⭐ są w [10-prd.md](10-prd.md). Otwarte kwestie w [podsumowaniu spotkania](spotkania/2026-10-17-1100-mvp-sawy.md).
+
 Na tej podstawie piszemy `docs/10-prd.md`, fundament aplikacji. Przy każdym pytaniu jest **propozycja domyślna** z dotychczasowych ustaleń. Wystarczy odpowiedzieć „OK” albo wpisać inną odpowiedź. Pytania oznaczone ⭐ blokują resztę, odpowiadamy na nie najpierw.
 
 ## 1. Problem i wyzwanie
