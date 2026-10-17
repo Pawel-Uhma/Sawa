@@ -6,7 +6,7 @@
 
 ## Teraz
 
-- 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`. **R1:** `WAW_API_BASE_URL` + `WAW_PROXY_KEY` w adapterach i na Railway (klucz od Antka prywatnie).
+- 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`. **Jasiek:** `WAW_API_BASE_URL` + `WAW_PROXY_KEY` w adapterach i na Railway (klucz od Antka prywatnie).
 - Jasiek (R2 z agentem, T-53): `README.md` przebudowane pod jury według starter packa hackathonowego: link na żywo, problem i rozwiązanie, „jak to działa”, tabela zbiorów z dane.um.warszawa.pl i innych źródeł z licencjami, diagram architektury, stack z uzasadnieniem, sekcja „Użycie AI”. Instrukcja dla developerów jest niżej. Zrzuty z produkcji w `docs/img/readme-*.png`. **Do zrobienia:** sekcję AI niech przejrzy każdy, czy nic nie brakuje.
 
 - 17.10 (Paweł, z agentem R3): **głos wyłączony domyślnie** (kredyty ElevenLabs). Opowieść leci tekstem na timerze, a mowa działa dopiero pod adresem z `?voice=1` (`voiceOn()` w `features/demo/lib/story-player.ts`, `fetchClip` pomija audio). Dotyczy też „Posłuchaj” w karcie miejsca. API `/v1/stories/audio` bez zmian.
