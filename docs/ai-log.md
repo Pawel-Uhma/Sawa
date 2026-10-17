@@ -2969,3 +2969,44 @@ _brak_
 > +**AI:** Utworzyłem `docs/09-pytania-prd.md`: 34 pytania do PRD Sawy w 10 blokach (problem, użytkownik, główna ścieżka, MVP, dane miejskie, AI, wdrożenie, wymagania niefunkcjonalne, demo, zespół), każde z propozycją domyślną z dotychczasowych dokumentów; 9 kluczowych oznaczyłem ⭐.
 > new file: docs/09-pytania-prd.md
 
+
+### 2026-10-17 11:20 · Pawel
+
+> stworz krotkiego skilla dla tego repo do przetwarzania spotkan z hackathony , nie zapisuj calej transkrypcji tylko podsumowanie , nie przepisuj rzeczy nie zwiazanych z projektem ani nic glupiego co mowimy. zapisuj kontekst odpowiednio w mozgu, jak trzeba to zmieniaj strukture mozgu
+
+
+**AI:** Utworzyłem skill projektu `.claude/skills/spotkanie/SKILL.md`: z transkryptu robi krótkie podsumowanie w `docs/spotkania/` (bez całego transkryptu i rzeczy niezwiązanych z projektem), wprowadza ustalenia do właściwych dokumentów w `docs/` i w razie potrzeby zmienia ich strukturę.
+
+### 2026-10-17 11:20 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index cead18e..a84d806 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2969,3 +2969,10 @@ _brak_
+>  > +**AI:** Utworzyłem `docs/09-pytania-prd.md`: 34 pytania do PRD Sawy w 10 blokach (problem, użytkownik, główna ścieżka, MVP, dane miejskie, AI, wdrożenie, wymagania niefunkcjonalne, demo, zespół), każde z propozycją domyślną z dotychczasowych dokumentów; 9 kluczowych oznaczyłem ⭐.
+>  > new file: docs/09-pytania-prd.md
+>  
+> +
+> +### 2026-10-17 11:20 · Pawel
+> +
+> +> stworz krotkiego skilla dla tego repo do przetwarzania spotkan z hackathony , nie zapisuj calej transkrypcji tylko podsumowanie , nie przepisuj rzeczy nie zwiazanych z projektem ani nic glupiego co mowimy. zapisuj kontekst odpowiednio w mozgu, jak trzeba to zmieniaj strukture mozgu
+> +
+> +
+> +**AI:** Utworzyłem skill projektu `.claude/skills/spotkanie/SKILL.md`: z transkryptu robi krótkie podsumowanie w `docs/spotkania/` (bez całego transkryptu i rzeczy niezwiązanych z projektem), wprowadza ustalenia do właściwych dokumentów w `docs/` i w razie potrzeby zmienia ich strukturę.
+> new file: .claude/skills/spotkanie/SKILL.md
+
