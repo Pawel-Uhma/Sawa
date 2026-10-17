@@ -210,7 +210,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const activeStop = route[activeIndex];
   const isHome = stage === "map" && tab === "map";
   const destination = rideEnd.type === "destination" ? rideEnd : null;
-  const isPlaceOpen = isHome && selectedPlace !== null;
+  // Karta miejsca działa też na trasie: klik w pinezkę spoza trasy pokazuje to miejsce.
+  const isPlaceOpen = (isHome || isRoute) && selectedPlace !== null;
 
   const padding: MapPadding = useMemo(() => {
     if (isDesktop) {
@@ -221,8 +222,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
         left: (isWide ? PANEL_PX.laptop : PANEL_PX.tablet) + DESKTOP_GAP_PX * 2,
       };
     }
+    if (isPlaceOpen) return { top: isRoute ? 88 : 120, right: 0, bottom: placeCoverPx, left: 0 };
     if (isRoute) return { top: 88, right: 0, bottom: sheetCoverPx, left: 0 };
-    if (isPlaceOpen) return { top: 120, right: 0, bottom: placeCoverPx, left: 0 };
     return { top: 120, right: 0, bottom: panelCollapsed ? 200 : destination ? 560 : 480, left: 0 };
   }, [
     isDesktop,
@@ -236,13 +237,13 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   ]);
 
   const camera: MapCamera = useMemo(() => {
-    if (isRoute && activeStop) {
-      const [lng, lat] = activeStop.coord;
-      return { type: "center", center: { lat, lng }, zoom: 15.4 };
-    }
     // Wybrane miejsce jedzie nad kartę; zoom zostaje taki, jaki ustawił użytkownik
     if (isPlaceOpen && selectedPlace.position) {
       return { type: "center", center: selectedPlace.position };
+    }
+    if (isRoute && activeStop) {
+      const [lng, lat] = activeStop.coord;
+      return { type: "center", center: { lat, lng }, zoom: 15.4 };
     }
     // Wybrany cel: mapa pokazuje start i cel naraz
     if (isHome && destination) {
@@ -443,12 +444,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
 
           {stage !== "onboarding" && (
             <PlaceCardHost
-              isActive={isHome}
+              isActive={isHome || isRoute}
               listener={listener}
               onSelectionChange={setSelectedPlace}
               onCoverChange={setPlaceCoverPx}
               onRideTo={(name, point) => {
                 changeRideEnd({ type: "destination", name, point });
+                // Z trasy wracamy na ekran główny, żeby wyznaczyć przejazd do nowego celu
+                setStage("map");
+                setTab("map");
                 setPanelCollapsed(false);
               }}
             />
