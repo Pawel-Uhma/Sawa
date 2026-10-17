@@ -150,7 +150,7 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [x] **T-140** Wyszukiwanie celu znajduje też ulice i adresy (dziś Google Places zwraca tylko miejsca) ([#97](https://github.com/Pawel-Uhma/Sawa/issues/97)). Równolegle z Text Search: Autocomplete (New) z typami adresu i ulicy + Place Details, adres pierwszy, pole `kind` w kontrakcie, pinezka w UI — `R3` — (Paweł z agentem, 20:25–20:40; do sprawdzenia na produkcji po deployu)
 - [ ] **T-141** Ciemny motyw: jaśniejsze ulice na mapie, syrenka czytelna na ciemnym tle — `R3` (Antek)
 - [ ] **T-142** Stany czekania (spinner, kółka) w czcionce i kolorach Sawy — `R3`
-- [ ] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł)
+- [x] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł, 23:10: podziałki 5 min, 1 h, 2 h, 3 h, 4 h; wartość czasu w osobnym wierszu nad suwakiem, bo ucinała „Ile masz czasu?”, wariant 2300-A)
 - [x] **T-148** Stop i pauza zatrzymują zegar jazdy także przed pierwszym miejscem: osobny stan „zatrzymane przez użytkownika” (`held` w `useRideClock`), wznowienie od tego samego miejsca, GPS (`useGpsClockSync`) nie przesuwa zegara przy zatrzymanej Sawie (#93) — `R3` — (Paweł z agentem, 17.10, 20:11, PR w toku)
 - [ ] **T-144** Głos czyta lata źle („1099” zamiast 1939, „1090” zamiast 1940, „5355” zamiast 53/55): sprawdzić, czy prompt pisze liczby słownie (T-98) — `R4`
 - [x] **T-145** Przetestować proxy z home labu (#63) na produkcji: API miasta, pojazdy — `R1` + Antek — (Jasiek, 20:15: PR #86, `WAW_API_BASE_URL` i `WAW_PROXY_KEY` na Railway; `/v1/vehicles/track` `stale: false` z pojazdami, odjazdy `realDeparture: true`)
