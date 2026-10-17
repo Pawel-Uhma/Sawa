@@ -8,7 +8,7 @@
 |---|---|---|
 | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
 | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
-| Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source. Chcemy własny styl (nie wygląd Google Maps); dostawca stylu do ustalenia (R3) |
+| Mapa | MapLibre GL (`react-map-gl`) + styl z Mapbox | Decyzja 17.10 (R3): własny styl (nie wygląd Google Maps) z Mapbox. Wymaga tokenu w `.env.local`, nigdy w repo. Wcześniej plan był na podkład OSM bez klucza |
 | Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
 | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
 | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |

@@ -1302,3 +1302,93 @@
 > +
 > +**AI:** Odpowiedziałem na pytanie o darmowe API map z customowym stylem (MapTiler, OpenFreeMap, Protomaps, Stadia Maps). Nic nie zmieniałem w kodzie ani w dokumentach.
 
+
+### 2026-10-17 11:48 · Pawel
+
+> korzystamy z mapbox do map
+
+
+**AI:** Zapisałem decyzję „mapa na Mapbox” (R3) w `stan.md` (usunięte z otwartych decyzji, dopisane do ostatnich), `05-plan-architektury.md` (wiersz Mapa) i `todo.md` (T-65 oznaczone [x]). Nie commitowałem: `git pull` się nie udał (gałęzie rozjechane), więc trzeba go najpierw rozwiązać.
+
+### 2026-10-17 11:48 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/05-plan-architektury.md | 2 +-
+>  docs/ai-log.md               | 7 +++++++
+>  docs/stan.md                 | 2 +-
+>  docs/todo.md                 | 2 +-
+>  4 files changed, 10 insertions(+), 3 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/05-plan-architektury.md b/docs/05-plan-architektury.md
+> index ed1d12c..bd198fc 100644
+> --- a/docs/05-plan-architektury.md
+> +++ b/docs/05-plan-architektury.md
+> @@ -8,7 +8,7 @@
+>  |---|---|---|
+>  | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
+>  | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
+> -| Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source. Chcemy własny styl (nie wygląd Google Maps); dostawca stylu do ustalenia (R3) |
+> +| Mapa | MapLibre GL (`react-map-gl`) + styl z Mapbox | Decyzja 17.10 (R3): własny styl (nie wygląd Google Maps) z Mapbox. Wymaga tokenu w `.env.local`, nigdy w repo. Wcześniej plan był na podkład OSM bez klucza |
+>  | Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
+>  | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
+>  | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 31287f5..1fc09d4 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1302,3 +1302,10 @@
+>  > +
+>  > +**AI:** Odpowiedziałem na pytanie o darmowe API map z customowym stylem (MapTiler, OpenFreeMap, Protomaps, Stadia Maps). Nic nie zmieniałem w kodzie ani w dokumentach.
+>  
+> +
+> +### 2026-10-17 11:48 · Pawel
+> +
+> +> korzystamy z mapbox do map
+> +
+> +
+> +**AI:** Zapisałem decyzję „mapa na Mapbox” (R3) w `stan.md` (usunięte z otwartych decyzji, dopisane do ostatnich), `05-plan-architektury.md` (wiersz Mapa) i `todo.md` (T-65 oznaczone [x]). Nie commitowałem: `git pull` się nie udał (gałęzie rozjechane), więc trzeba go najpierw rozwiązać.
+> diff --git a/docs/stan.md b/docs/stan.md
+> index e7072bd..9f6ea87 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -27,12 +27,12 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+>  | API Bielika: gdzie hostowane, limity; zapasowy LLM | R4 | [05-plan-architektury.md](05-plan-architektury.md) |
+>  | Rozpoznawanie powracającego użytkownika bez konta | zespół (dodatek, jeśli zostanie czas) | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+>  | Zasady pracy z repo (gałęzie, PR, merge) | zespół | [spotkania/2026-10-17-1130-stack-repo-domena.md](spotkania/2026-10-17-1130-stack-repo-domena.md) |
+> -| Własny styl mapy: który dostawca | R3 | jw. |
+>  | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
+>  
+>  ## Ostatnie decyzje
+>  
+>  - 17.10: backend na Railway; zostajemy przy darmowej subdomenie Vercela. [05-plan-architektury.md](05-plan-architektury.md)
+> +- 17.10: mapa na Mapbox (styl własny; R3). Renderer nadal MapLibre. Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
+>  
+>  - 17.10, 11:30: stack Next.js + Supabase + Vercel potwierdzony; repo z dokumentacją i klucz API na Discordzie zespołu. [Podsumowanie](spotkania/2026-10-17-1130-stack-repo-domena.md)
+>  
+> diff --git a/docs/todo.md b/docs/todo.md
+> index b7b4df7..0d9e9b3 100644
+> --- a/docs/todo.md
+> +++ b/docs/todo.md
+> @@ -22,7 +22,7 @@
+>  - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
+>  - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
+>  - [ ] **T-62** Zasady pracy z repo: gałęzie, PR, kto merge'uje; zapisać w `CLAUDE.md` — `Wszyscy` — 13:00
+> -- [ ] **T-65** Znaleźć darmowe API do własnego stylu mapy, sprawdzić z MapLibre — `R3` — 13:00
+> +- [x] **T-65** Dostawca stylu mapy: Mapbox (decyzja R3, 17.10). Sprawdzenie z MapLibre idzie do T-30 — `R3` — 13:00
+>  - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
+>  
+>  ## R1 · Dane i planer tras
+> new file: docs/ui/propozycje/html/_mapa.js
+> new file: docs/ui/propozycje/html/_ui.js
+> new file: docs/ui/propozycje/html/a-arkusz-na-mapie.html
+

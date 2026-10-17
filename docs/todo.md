@@ -22,7 +22,7 @@
 - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
 - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
 - [ ] **T-62** Zasady pracy z repo: gałęzie, PR, kto merge'uje; zapisać w `CLAUDE.md` — `Wszyscy` — 13:00
-- [ ] **T-65** Znaleźć darmowe API do własnego stylu mapy, sprawdzić z MapLibre — `R3` — 13:00
+- [x] **T-65** Dostawca stylu mapy: Mapbox (decyzja R3, 17.10). Sprawdzenie z MapLibre idzie do T-30 — `R3` — 13:00
 - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
 
 ## R1 · Dane i planer tras
