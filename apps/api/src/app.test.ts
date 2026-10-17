@@ -1,10 +1,12 @@
 import { ApiErrorSchema, HealthSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { createApp } from "./app";
+import { createFakeRoutePlanner } from "./services/fake-route-planner";
 
 const app = createApp({
   corsOrigins: ["http://localhost:3000"],
-  corsPreviewPattern: "^https://sawa-[a-z0-9-]+.vercel.app$",
+  corsPreviewPattern: "^https://sawa-[a-z0-9-]+\\.vercel\\.app$",
+  services: { routePlanner: createFakeRoutePlanner() },
 });
 
 describe("GET /health", () => {

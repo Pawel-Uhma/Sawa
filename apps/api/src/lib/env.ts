@@ -13,6 +13,15 @@ const EnvSchema = z.object({
     ),
   CORS_PREVIEW_PATTERN: z.string().optional(),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
+  /** dane.um.warszawa.pl token; without it departures fall back to the GTFS headway. */
+  WAW_TOKEN: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
+  DEBUG_PAGES: z
+    .enum(["0", "1"])
+    .default("0")
+    .transform((v) => v === "1"),
 });
 
 export type Env = z.infer<typeof EnvSchema>;

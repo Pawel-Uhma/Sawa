@@ -1,6 +1,7 @@
 import type { Leg, Route, RoutePlace, Stop } from "@sawa/shared";
 import type { Ride } from "./beam-search";
 import { cumulativeDistancesM, slicePolyline } from "./geometry";
+import { selectStoryPlaces } from "./select-stories";
 import type { Network, Pattern, PatternStop, PlacePoint } from "./types";
 
 export type BuildRouteInput = {
@@ -21,7 +22,10 @@ function toStop(network: Network, stopId: string): Stop {
   return { id: stop.id, name: stop.name, position: stop.position };
 }
 
-/** A planned ride → the API `Route` (legs with shapes, places with ETA and story windows). */
+/**
+ * A planned ride → the API `Route`: legs with shapes, and the places Sawa narrates
+ * (spaced by `selectStoryPlaces`) with their ETA and story window.
+ */
 export function buildRoute({
   ride,
   network,
@@ -46,7 +50,7 @@ export function buildRoute({
     };
   });
 
-  const sorted = [...ride.places].sort((a, b) => a.etaSec - b.etaSec);
+  const sorted = selectStoryPlaces(ride.places);
   const places: RoutePlace[] = sorted.flatMap((p, i) => {
     const place = placesById.get(p.placeId);
     if (!place) return [];

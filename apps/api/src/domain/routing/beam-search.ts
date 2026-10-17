@@ -51,6 +51,7 @@ export type CollectedPlace = {
   etaSec: number;
   distanceM: number;
   legIndex: number;
+  score: number;
 };
 
 export type Ride = {
@@ -153,12 +154,14 @@ function expand(state: State, input: SearchInput, opts: SearchOptions): State[] 
         ) {
           continue;
         }
-        gain += scorePlace(place, hit.distanceM, input.interests);
+        const score = scorePlace(place, hit.distanceM, input.interests);
+        gain += score;
         gained.push({
           placeId: hit.placeId,
           etaSec: boardElapsedSec + hit.atSec - board.atSec,
           distanceM: hit.distanceM,
           legIndex,
+          score,
         });
       }
 
