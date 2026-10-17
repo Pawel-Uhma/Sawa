@@ -106,15 +106,16 @@ Regulamin (§4 ust. 4) wymaga opisu zakresu użycia AI. Za wszystkie treści odp
 
 **W aplikacji:**
 
-- **Opowieści Sawy** generuje LLM (OpenRouter, `google/gemini-3.5-flash-lite`) na żywo, wyłącznie z faktów z naszej bazy przypisanych do miejsca. Prompt zabrania dopisywania dat, liczb, nazwisk i wydarzeń spoza tych faktów. Bez klucza LLM aplikacja czyta same fakty. Prompty: `apps/api/src/prompts/`.
-- **Głos Sawy:** synteza mowy ElevenLabs.
+- **Opowieści Sawy** generuje LLM (OpenRouter, `google/gemini-3.5-flash-lite`) na żywo, wyłącznie z faktów z naszej bazy przypisanych do miejsca. Prompt zabrania dopisywania dat, liczb, nazwisk i wydarzeń spoza tych faktów. Tryb dla dzieci ma osobny prompt: prostszy język, te same fakty. Bez klucza LLM aplikacja czyta same fakty. Prompty: `apps/api/src/prompts/`.
+- **Głos Sawy:** synteza mowy ElevenLabs (`eleven_multilingual_v2`, polski głos „Asia” z biblioteki ElevenLabs, wybrany na ucho). API trzyma nagrania w pamięci, więc powtórzona opowieść nie kosztuje drugi raz.
 
 **Przy budowie:**
 
 - **Kod:** każdy z 4 członków zespołu pracował z własnym agentem Claude Code. Kod powstał w czasie hackathonu (od 17.10, 11:00) przez PR-y do `main`. Każdy PR przechodził typecheck, lint i testy w CI, a zmiany przeglądał człowiek.
-- **Dane:** skrypty w `scripts/` pobierają dane z OSM, Wikipedii, Warszawikii, warszawa1939.pl i API miasta. Fakty z artykułów Warszawikii wyciągały agenty Claude Haiku. Każdy fakt ma podane źródło.
-- **Grafika:** awatar Sawy i jego warianty wygenerowały modele obrazów (fal.ai, m.in. Nano Banana, GPT Image). Wybór i poprawki należały do zespołu ([docs/awatar/](docs/awatar/README.md)).
-- **Dokumentacja i plan:** analiza danych, PRD, plany i pitch powstawały razem z agentami ([docs/](docs/README.md)). Do 17.10, 13:30 prowadziliśmy dziennik promptów: [docs/ai-log.md](docs/ai-log.md).
+- **Dane:** skrypty pobrały teksty z Wikipedii (lokalny zrzut ZIM i API), Wikidaty, OSM, Commons, Warszawikii (API MediaWiki), warszawa1939.pl i Wirtualnego Sztetla (te dwa przez Firecrawl) oraz z API miasta. Fakty z artykułów Wikipedii i Warszawikii oraz z adresów w biogramach wyciągały agenty Claude Haiku. Pracowały tylko na pobranym tekście, bez dostępu do sieci, i każdy fakt ma źródło. Skrypt sprawdził, czy każdy rok z faktu występuje w źródle, a fakty, które nie przeszły, nie trafiają do opowieści. Nazwisk i liczb skrypt nie sprawdzał. Karty z warszawa1939.pl i tagi OSM weszły dosłownie, bez LLM. Angielskie nazwy i streszczenia miejsc to tłumaczenia agentów. W pierwszych dwóch rundach (okolica 42 Warsaw) agenty Haiku szukały też w sieci. Szczegóły: [docs/historia/](docs/historia/README.md), [docs/historia/dzielnice/](docs/historia/dzielnice/README.md).
+- **Grafika:** awatar Sawy to obraz 32 z `google/nano-banana-2.1` (fal.ai). Wcześniej w 7 rundach szkiców sprawdziliśmy 10 modeli obrazów, m.in. GPT Image, Flux, Seedream i Ideogram. Ikonę aplikacji, pozy Sawy i 8 ikon zainteresowań w onboardingu zrobił `google/nano-banana-2.1/edit` z obrazem 32 jako referencją, a tło wycinał `fal-ai/birefnet/v2`. Ikony przystanku, tramwaju i autobusu na mapie to `flux-2-pro`, sceny z Sawą do prezentacji to `google/nano-banana-2-lite`. Znaczniki miejsc na mapie to glify SVG rysowane skryptem, bez modelu obrazów. Kierunek, prompty i wybór należały do zespołu, a wszystkie prompty i koszty są w [docs/awatar/](docs/awatar/README.md) i [docs/ui/](docs/ui/README.md).
+- **Film i nagrania do pitchu:** nagranie demo składa Remotion z zapisu ekranu aplikacji (`tools/pitch-video/`). Głos Sawy w nagraniach i w filmie z tramwaju to plik wygenerowany przez aplikację (ElevenLabs), bez osobnego lektora AI.
+- **Dokumentacja i plan:** analiza danych, PRD, plany i makiety ekranów powstawały razem z agentami ([docs/](docs/README.md)). Plan pitchu Paweł przygotował z agentem: research taktyk z artykułów, potem dwie rundy narady sześciu agentów w rolach znanych mówców i projektantów ([docs/pitch/plan-pitchu.md](docs/pitch/plan-pitchu.md)). Do 17.10, 13:30 prowadziliśmy dziennik promptów: [docs/ai-log.md](docs/ai-log.md).
 
 ---
 
