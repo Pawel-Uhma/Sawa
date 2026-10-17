@@ -512,6 +512,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
             {isRoute && (
               <RouteSheet
                 key="route"
+                listener={listener}
                 durationMin={durationMin}
                 end={planned ? routeEnd(planned, rideEnd, lang) : null}
                 legs={planned?.legs ?? []}

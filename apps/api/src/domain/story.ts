@@ -1,6 +1,6 @@
 import { type Audience, factId, haversineM, type LatLng, type StoryStyle } from "@sawa/shared";
-import type { BBox, Place, PlaceKind, PlaceSource, PlaceSummary } from "./place";
 import { isDryFact } from "./dry-facts";
+import type { BBox, Place, PlaceKind, PlaceSource, PlaceSummary } from "./place";
 import type { Finding } from "./research";
 
 /** Polish speech in ElevenLabs runs at about 2.5 words a second (docs/12-plan-mvp.md §8). */
@@ -304,7 +304,8 @@ export function agoPhrase(sec: number): string {
   if (days < 3) return "przedwczoraj";
   if (days < 7) return `${countPl(days, ["dni", "dni"])} temu`;
   const weeks = Math.floor(days / 7);
-  if (days < 30) return weeks < 2 ? "tydzień temu" : `${countPl(weeks, ["tygodnie", "tygodni"])} temu`;
+  if (days < 30)
+    return weeks < 2 ? "tydzień temu" : `${countPl(weeks, ["tygodnie", "tygodni"])} temu`;
   const months = Math.floor(days / 30);
   if (days < 365) {
     if (months < 2) return "miesiąc temu";
@@ -348,7 +349,9 @@ export function heardIntro(
       : `Już ci kiedyś mówiłam ${about}, ale jest jeszcze coś.`;
   }
   const ago = sentence(agoPhrase(agoSec));
-  return recap ? `${ago} opowiadałam ci ${about}.` : `${ago} mówiłam ci już ${about}, ale jest jeszcze coś.`;
+  return recap
+    ? `${ago} opowiadałam ci ${about}.`
+    : `${ago} mówiłam ci już ${about}, ale jest jeszcze coś.`;
 }
 
 /** How far Sawa looks for another place when nothing new is left here ("to tuż obok"). */

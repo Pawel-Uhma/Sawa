@@ -50,6 +50,8 @@ export type RouteLiveProps = {
   transcript: TranscriptPart[];
   /** Nagłówek z nazwą miejsca (`PodcastHeader`), na samej górze arkusza; sterowanie jest w doku. */
   header: ReactNode;
+  /** Pod tekstem bieżącej opowieści, np. miejsce obok, które Sawa poleca (`StorySuggestion`). */
+  storyFooter?: ReactNode;
 };
 
 /* ------------------------------------------------------------------ */
@@ -218,6 +220,7 @@ export function RouteLive({
   storyState,
   transcript,
   header,
+  storyFooter,
 }: RouteLiveProps) {
   const t = useT();
   const waiting = waitSec !== null;
@@ -297,6 +300,7 @@ export function RouteLive({
                     className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"
                   />
                 )}
+                {!waiting && storyFooter}
               </section>
             )}
           </div>

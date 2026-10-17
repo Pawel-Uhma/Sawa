@@ -51,7 +51,10 @@ describe("parseResearchAnswer and dry data", () => {
   it("drops office space and parking places found on the web", () => {
     const raw = JSON.stringify({
       findings: [
-        { text: "Powierzchnia najmu to 12 300 m², a I etap ma 86 miejsc parkingowych.", url: page.url },
+        {
+          text: "Powierzchnia najmu to 12 300 m², a I etap ma 86 miejsc parkingowych.",
+          url: page.url,
+        },
         { text: "Przy budowie znaleziono butelkę z XIX-wiecznego browaru.", url: page.url },
       ],
     });

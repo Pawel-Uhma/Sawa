@@ -9,11 +9,13 @@ import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { backTarget } from "../lib/podcast";
 import { dueIndex as placeAt, type RideClock, storyStartSec } from "../lib/ride-clock";
+import type { Listener } from "../lib/api-data";
 import type { StoryPlayer } from "../lib/story-player";
 import { claimVoice, ROUTE_VOICE } from "../lib/voice";
 import { RoutesIcon } from "./icons";
 import { PodcastDock, PodcastHeader, usePodcast } from "./podcast-controls";
 import { RouteLive } from "./route-live";
+import { StorySuggestion } from "./story-suggestion";
 
 type RouteSheetProps = {
   durationMin: number;
@@ -26,6 +28,8 @@ type RouteSheetProps = {
   stops: MockStop[];
   /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
   player: StoryPlayer;
+  /** Kto słucha: do opowieści o miejscu obok, które Sawa poleca. */
+  listener: Listener;
   activeIndex: number;
   onActiveChange: (index: number) => void;
   /** Przejście do miejsca z przycisków: zegar jazdy staje przy nim, opowieść gra od początku. */
@@ -139,6 +143,15 @@ export function RouteSheet(props: RouteSheetProps) {
       waitSec={clock.waitSec}
       storyText={player.text}
       transcript={transcript}
+      storyFooter={
+        player.suggestion && (
+          <StorySuggestion
+            key={player.suggestion.placeId}
+            suggestion={player.suggestion}
+            listener={props.listener}
+          />
+        )
+      }
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
       header={
         <div ref={headerRef}>

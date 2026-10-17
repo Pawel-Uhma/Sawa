@@ -1,6 +1,6 @@
 import type { Story, StoryRequestInput } from "@sawa/shared";
-import type { Place } from "../domain/place";
 import { contextFor, knownContextsOf } from "../domain/contexts";
+import type { Place } from "../domain/place";
 import {
   bandFor,
   bboxAround,
