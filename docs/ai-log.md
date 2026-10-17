@@ -3299,3 +3299,586 @@
 > zmien adres na sawa-hackathon
 
 **AI:** Produkcyjny adres weba to teraz https://sawa-hackathon.vercel.app (domena projektu w Vercelu, sawa-beta usunięta). CORS_ORIGINS w Railway zaktualizowane, stan.md i todo.md też.
+
+### 2026-10-17 13:17 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/app/globals.css                | 128 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+>  apps/web/src/app/layout.tsx                 |  28 ++++++++++------
+>  apps/web/src/features/health/api-status.tsx |  27 ---------------
+>  apps/web/src/features/health/index.ts       |   1 -
+>  4 files changed, 131 insertions(+), 53 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/app/globals.css b/apps/web/src/app/globals.css
+> index a2dc41e..a0ff4f4 100644
+> --- a/apps/web/src/app/globals.css
+> +++ b/apps/web/src/app/globals.css
+> @@ -1,26 +1,124 @@
+>  @import "tailwindcss";
+>  
+> +/* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
+> +@theme inline {
+> +  --color-glebia: #17706f;
+> +  --color-glebia-ciemna: #0f5554;
+> +  --color-mieta: #8ed1b5;
+> +  --color-mieta-jasna: #ddf2e9;
+> +  --color-koral: #f2755f;
+> +  --color-tekst: #102b2a;
+> +  --color-tekst-2: #4c6462;
+> +  --color-tekst-3: #8a9c9a;
+> +  --color-tlo-2: #f4f6f5;
+> +  --font-sans: var(--font-plus);
+> +  --font-logo: var(--font-fredoka);
+> +}
+> +
+>  :root {
+> -  --background: #ffffff;
+> -  --foreground: #171717;
+> +  --background: #eef3f0;
+>  }
+>  
+> -@theme inline {
+> -  --color-background: var(--background);
+> -  --color-foreground: var(--foreground);
+> -  --font-sans: var(--font-geist-sans);
+> -  --font-mono: var(--font-geist-mono);
+> +body {
+> +  background: var(--background);
+> +  color: var(--color-tekst);
+> +  font-family: var(--font-plus), system-ui, sans-serif;
+> +  -webkit-font-smoothing: antialiased;
+> +}
+> +
+> +/* Szklana karta: półprzezroczysta, z rozmyciem tła */
+> +.szklo {
+> +  background: rgba(255, 255, 255, 0.92);
+> +  backdrop-filter: blur(18px) saturate(1.4);
+> +  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+> +  border: 1px solid rgba(255, 255, 255, 0.85);
+> +  box-shadow:
+> +    0 2px 4px rgba(16, 43, 42, 0.06),
+> +    0 18px 40px rgba(16, 43, 42, 0.16);
+>  }
+>  
+> -@media (prefers-color-scheme: dark) {
+> -  :root {
+> -    --background: #0a0a0a;
+> -    --foreground: #ededed;
+> +/* Wejście ekranu: krótkie, fizyczne przesunięcie w górę */
+> +@keyframes wejdz {
+> +  from {
+> +    opacity: 0;
+> +    transform: translateY(12px);
+> +  }
+> +  to {
+> +    opacity: 1;
+> +    transform: translateY(0);
+>    }
+>  }
+>  
+> -body {
+> -  background: var(--background);
+> -  color: var(--foreground);
+> -  font-family: Arial, Helvetica, sans-serif;
+> +.wejdz {
+> +  animation: wejdz 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+> +}
+> +
+> +/* Suwak czasu w barwach Sawy */
+> +input[type="range"].suwak {
+> +  -webkit-appearance: none;
+> +  appearance: none;
+> +  width: 100%;
+> +  height: 28px;
+> +  background: transparent;
+> +  cursor: pointer;
+> +}
+> +
+> +input[type="range"].suwak::-webkit-slider-runnable-track {
+> +  height: 6px;
+> +  border-radius: 999px;
+> +  background: linear-gradient(to right, #17706f var(--postep, 0%), #dde5e2 var(--postep, 0%));
+> +}
+> +
+> +input[type="range"].suwak::-webkit-slider-thumb {
+> +  -webkit-appearance: none;
+> +  width: 28px;
+> +  height: 28px;
+> +  margin-top: -11px;
+> +  border-radius: 999px;
+> +  background: #fff;
+> +  border: 0;
+> +  box-shadow: 0 2px 8px rgba(16, 43, 42, 0.25);
+> +  transition: transform 160ms ease;
+> +}
+> +
+> +input[type="range"].suwak:active::-webkit-slider-thumb {
+> +  transform: scale(1.12);
+> +}
+> +
+> +input[type="range"].suwak::-moz-range-track {
+> +  height: 6px;
+> +  border-radius: 999px;
+> +  background: #dde5e2;
+> +}
+> +
+> +input[type="range"].suwak::-moz-range-progress {
+> +  height: 6px;
+> +  border-radius: 999px;
+> +  background: #17706f;
+> +}
+> +
+> +input[type="range"].suwak::-moz-range-thumb {
+> +  width: 28px;
+> +  height: 28px;
+> +  border: 0;
+> +  border-radius: 999px;
+> +  background: #fff;
+> +  box-shadow: 0 2px 8px rgba(16, 43, 42, 0.25);
+> +}
+> +
+> +input[type="range"].suwak:focus-visible {
+> +  outline: 2px solid #17706f;
+> +  outline-offset: 4px;
+> +  border-radius: 999px;
+> +}
+> +
+> +@media (prefers-reduced-motion: reduce) {
+> +  .wejdz,
+> +  .wejdz * {
+> +    animation: none !important;
+> +  }
+> +
+> +  input[type="range"].suwak::-webkit-slider-thumb {
+> +    transition: none;
+> +  }
+>  }
+> diff --git a/apps/web/src/app/layout.tsx b/apps/web/src/app/layout.tsx
+> index a26f8b6..4c5d5ce 100644
+> --- a/apps/web/src/app/layout.tsx
+> +++ b/apps/web/src/app/layout.tsx
+> @@ -1,15 +1,17 @@
+> -import type { Metadata } from "next";
+> -import { Geist, Geist_Mono } from "next/font/google";
+> +import type { Metadata, Viewport } from "next";
+> +import { Fredoka, Plus_Jakarta_Sans } from "next/font/google";
+>  import "./globals.css";
+>  
+> -const geistSans = Geist({
+> -  variable: "--font-geist-sans",
+> -  subsets: ["latin"],
+> +const sans = Plus_Jakarta_Sans({
+> +  variable: "--font-plus",
+> +  subsets: ["latin", "latin-ext"],
+> +  weight: ["400", "500", "600", "700", "800"],
+>  });
+>  
+> -const geistMono = Geist_Mono({
+> -  variable: "--font-geist-mono",
+> -  subsets: ["latin"],
+> +const logo = Fredoka({
+> +  variable: "--font-fredoka",
+> +  subsets: ["latin", "latin-ext"],
+> +  weight: ["600"],
+>  });
+>  
+>  export const metadata: Metadata = {
+> @@ -17,10 +19,16 @@ export const metadata: Metadata = {
+>    description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
+>  };
+>  
+> +export const viewport: Viewport = {
+> +  width: "device-width",
+> +  initialScale: 1,
+> +  themeColor: "#17706F",
+> +};
+> +
+>  export default function RootLayout({ children }: LayoutProps<"/">) {
+>    return (
+> -    <html lang="pl" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+> -      <body className="min-h-full flex flex-col">{children}</body>
+> +    <html lang="pl" className={`${sans.variable} ${logo.variable} h-full antialiased`}>
+> +      <body className="min-h-full">{children}</body>
+>      </html>
+>    );
+>  }
+> diff --git a/apps/web/src/features/health/api-status.tsx b/apps/web/src/features/health/api-status.tsx
+> deleted file mode 100644
+> index cdb648c..0000000
+> --- a/apps/web/src/features/health/api-status.tsx
+> +++ /dev/null
+> @@ -1,27 +0,0 @@
+> -"use client";
+> -
+> -import { useEffect, useState } from "react";
+> -import { api } from "@/lib/api";
+> -
+> -type Status = "checking" | "up" | "down";
+> -
+> -export function ApiStatus() {
+> -  const [status, setStatus] = useState<Status>("checking");
+> -  const [version, setVersion] = useState<string | null>(null);
+> -
+> -  useEffect(() => {
+> -    api.health
+> -      .$get()
+> -      .then((res) => res.json())
+> -      .then((body) => {
+> -        setVersion(body.version);
+> -        setStatus("up");
+> -      })
+> -      .catch(() => setStatus("down"));
+> -  }, []);
+> -
+> -  const label = { checking: "sprawdzam…", up: `działa (${version})`, down: "nie odpowiada" }[
+> -    status
+> -  ];
+> -  return <p className="text-sm text-zinc-500">API: {label}</p>;
+> -}
+> diff --git a/apps/web/src/features/health/index.ts b/apps/web/src/features/health/index.ts
+> deleted file mode 100644
+> index fcc6938..0000000
+> --- a/apps/web/src/features/health/index.ts
+> +++ /dev/null
+> @@ -1 +0,0 @@
+> -export { ApiStatus } from "./api-status";
+> new file: apps/web/public/sawa-32.png
+> new file: apps/web/src/features/demo/components/mock-map.tsx
+> new file: apps/web/src/features/demo/lib/format.ts
+> new file: apps/web/src/features/demo/lib/mock-data.ts
+
+
+### 2026-10-17 13:18 · Pawel
+
+> zrobilem push na vercel z key ELEVENLABS_KEY
+
+
+> zrobilem push na vercel z key ELEVENLABS_KEY
+
+**AI:** Sprawdziłem repo i historię gita: klucza ElevenLabs nie ma w kodzie ani w commitach, śledzone są tylko pliki .env.example. Klucz jest w env Vercela (web), a plan zakładał ELEVENLABS_API_KEY w Railway (api), więc do ustalenia z R4.
+
+### 2026-10-17 13:18 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/app/page.tsx |  10 +---
+>  docs/ai-log.md            | 267 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>  2 files changed, 269 insertions(+), 8 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/app/page.tsx b/apps/web/src/app/page.tsx
+> index e6a15b7..8bff7ac 100644
+> --- a/apps/web/src/app/page.tsx
+> +++ b/apps/web/src/app/page.tsx
+> @@ -1,11 +1,5 @@
+> -import { ApiStatus } from "@/features/health";
+> +import { DemoApp } from "@/features/demo";
+>  
+>  export default function Home() {
+> -  return (
+> -    <main className="flex flex-1 flex-col items-center justify-center gap-4 px-4 text-center">
+> -      <h1 className="text-4xl font-semibold tracking-tight">Sawa</h1>
+> -      <p className="max-w-sm text-zinc-600">Opowie Ci o mieście za oknem tramwaju.</p>
+> -      <ApiStatus />
+> -    </main>
+> -  );
+> +  return <DemoApp />;
+>  }
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index b97c68b..d1d91f2 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -3299,3 +3299,270 @@
+>  > zmien adres na sawa-hackathon
+>  
+>  **AI:** Produkcyjny adres weba to teraz https://sawa-hackathon.vercel.app (domena projektu w Vercelu, sawa-beta usunięta). CORS_ORIGINS w Railway zaktualizowane, stan.md i todo.md też.
+> +
+> +### 2026-10-17 13:17 · Pawel
+> +
+> +> You are a pragmatic engineer about to commit your uncommitted changes.
+> +> 
+> +> If they are NOT worth committing on their own (only whitespace, a stray debug
+> +> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> +> 
+> +> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> +> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> +> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> +> Reply with ONLY the message, or SKIP. Nothing else.
+> +> 
+> +> Changes:
+> +>  apps/web/src/app/globals.css                | 128 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+> +>  apps/web/src/app/layout.tsx                 |  28 ++++++++++------
+> +>  apps/web/src/features/health/api-status.tsx |  27 ---------------
+> +>  apps/web/src/features/health/index.ts       |   1 -
+> +>  4 files changed, 131 insertions(+), 53 deletions(-)
+> +> ----- patch (truncated) -----
+> +> diff --git a/apps/web/src/app/globals.css b/apps/web/src/app/globals.css
+> +> index a2dc41e..a0ff4f4 100644
+> +> --- a/apps/web/src/app/globals.css
+> +> +++ b/apps/web/src/app/globals.css
+> +> @@ -1,26 +1,124 @@
+> +>  @import "tailwindcss";
+> +>  
+> +> +/* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
+> +> +@theme inline {
+> +> +  --color-glebia: #17706f;
+> +> +  --color-glebia-ciemna: #0f5554;
+> +> +  --color-mieta: #8ed1b5;
+> +> +  --color-mieta-jasna: #ddf2e9;
+> +> +  --color-koral: #f2755f;
+> +> +  --color-tekst: #102b2a;
+> +> +  --color-tekst-2: #4c6462;
+> +> +  --color-tekst-3: #8a9c9a;
+> +> +  --color-tlo-2: #f4f6f5;
+> +> +  --font-sans: var(--font-plus);
+> +> +  --font-logo: var(--font-fredoka);
+> +> +}
+> +> +
+> +>  :root {
+> +> -  --background: #ffffff;
+> +> -  --foreground: #171717;
+> +> +  --background: #eef3f0;
+> +>  }
+> +>  
+> +> -@theme inline {
+> +> -  --color-background: var(--background);
+> +> -  --color-foreground: var(--foreground);
+> +> -  --font-sans: var(--font-geist-sans);
+> +> -  --font-mono: var(--font-geist-mono);
+> +> +body {
+> +> +  background: var(--background);
+> +> +  color: var(--color-tekst);
+> +> +  font-family: var(--font-plus), system-ui, sans-serif;
+> +> +  -webkit-font-smoothing: antialiased;
+> +> +}
+> +> +
+> +> +/* Szklana karta: półprzezroczysta, z rozmyciem tła */
+> +> +.szklo {
+> +> +  background: rgba(255, 255, 255, 0.92);
+> +> +  backdrop-filter: blur(18px) saturate(1.4);
+> +> +  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+> +> +  border: 1px solid rgba(255, 255, 255, 0.85);
+> +> +  box-shadow:
+> +> +    0 2px 4px rgba(16, 43, 42, 0.06),
+> +> +    0 18px 40px rgba(16, 43, 42, 0.16);
+> +>  }
+> +>  
+> +> -@media (prefers-color-scheme: dark) {
+> +> -  :root {
+> +> -    --background: #0a0a0a;
+> +> -    --foreground: #ededed;
+> +> +/* Wejście ekranu: krótkie, fizyczne przesunięcie w górę */
+> +> +@keyframes wejdz {
+> +> +  from {
+> +> +    opacity: 0;
+> +> +    transform: translateY(12px);
+> +> +  }
+> +> +  to {
+> +> +    opacity: 1;
+> +> +    transform: translateY(0);
+> +>    }
+> +>  }
+> +>  
+> +> -body {
+> +> -  background: var(--background);
+> +> -  color: var(--foreground);
+> +> -  font-family: Arial, Helvetica, sans-serif;
+> +> +.wejdz {
+> +> +  animation: wejdz 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+> +> +}
+> +> +
+> +> +/* Suwak czasu w barwach Sawy */
+> +> +input[type="range"].suwak {
+> +> +  -webkit-appearance: none;
+> +> +  appearance: none;
+> +> +  width: 100%;
+> +> +  height: 28px;
+> +> +  background: transparent;
+> +> +  cursor: pointer;
+> +> +}
+> +> +
+> +> +input[type="range"].suwak::-webkit-slider-runnable-track {
+> +> +  height: 6px;
+> +> +  border-radius: 999px;
+> +> +  background: linear-gradient(to right, #17706f var(--postep, 0%), #dde5e2 var(--postep, 0%));
+> +> +}
+> +> +
+> +> +input[type="range"].suwak::-webkit-slider-thumb {
+> +> +  -webkit-appearance: none;
+> +> +  width: 28px;
+> +> +  height: 28px;
+> +> +  margin-top: -11px;
+> +> +  border-radius: 999px;
+> +> +  background: #fff;
+> +> +  border: 0;
+> +> +  box-shadow: 0 2px 8px rgba(16, 43, 42, 0.25);
+> +> +  transition: transform 160ms ease;
+> +> +}
+> +> +
+> +> +input[type="range"].suwak:active::-webkit-slider-thumb {
+> +> +  transform: scale(1.12);
+> +> +}
+> +> +
+> +> +input[type="range"].suwak::-moz-range-track {
+> +> +  height: 6px;
+> +> +  border-radius: 999px;
+> +> +  background: #dde5e2;
+> +> +}
+> +> +
+> +> +input[type="range"].suwak::-moz-range-progress {
+> +> +  height: 6px;
+> +> +  border-radius: 999px;
+> +> +  background: #17706f;
+> +> +}
+> +> +
+> +> +input[type="range"].suwak::-moz-range-thumb {
+> +> +  width: 28px;
+> +> +  height: 28px;
+> +> +  border: 0;
+> +> +  border-radius: 999px;
+> +> +  background: #fff;
+> +> +  box-shadow: 0 2px 8px rgba(16, 43, 42, 0.25);
+> +> +}
+> +> +
+> +> +input[type="range"].suwak:focus-visible {
+> +> +  outline: 2px solid #17706f;
+> +> +  outline-offset: 4px;
+> +> +  border-radius: 999px;
+> +> +}
+> +> +
+> +> +@media (prefers-reduced-motion: reduce) {
+> +> +  .wejdz,
+> +> +  .wejdz * {
+> +> +    animation: none !important;
+> +> +  }
+> +> +
+> +> +  input[type="range"].suwak::-webkit-slider-thumb {
+> +> +    transition: none;
+> +> +  }
+> +>  }
+> +> diff --git a/apps/web/src/app/layout.tsx b/apps/web/src/app/layout.tsx
+> +> index a26f8b6..4c5d5ce 100644
+> +> --- a/apps/web/src/app/layout.tsx
+> +> +++ b/apps/web/src/app/layout.tsx
+> +> @@ -1,15 +1,17 @@
+> +> -import type { Metadata } from "next";
+> +> -import { Geist, Geist_Mono } from "next/font/google";
+> +> +import type { Metadata, Viewport } from "next";
+> +> +import { Fredoka, Plus_Jakarta_Sans } from "next/font/google";
+> +>  import "./globals.css";
+> +>  
+> +> -const geistSans = Geist({
+> +> -  variable: "--font-geist-sans",
+> +> -  subsets: ["latin"],
+> +> +const sans = Plus_Jakarta_Sans({
+> +> +  variable: "--font-plus",
+> +> +  subsets: ["latin", "latin-ext"],
+> +> +  weight: ["400", "500", "600", "700", "800"],
+> +>  });
+> +>  
+> +> -const geistMono = Geist_Mono({
+> +> -  variable: "--font-geist-mono",
+> +> -  subsets: ["latin"],
+> +> +const logo = Fredoka({
+> +> +  variable: "--font-fredoka",
+> +> +  subsets: ["latin", "latin-ext"],
+> +> +  weight: ["600"],
+> +>  });
+> +>  
+> +>  export const metadata: Metadata = {
+> +> @@ -17,10 +19,16 @@ export const metadata: Metadata = {
+> +>    description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
+> +>  };
+> +>  
+> +> +export const viewport: Viewport = {
+> +> +  width: "device-width",
+> +> +  initialScale: 1,
+> +> +  themeColor: "#17706F",
+> +> +};
+> +> +
+> +>  export default function RootLayout({ children }: LayoutProps<"/">) {
+> +>    return (
+> +> -    <html lang="pl" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+> +> -      <body className="min-h-full flex flex-col">{children}</body>
+> +> +    <html lang="pl" className={`${sans.variable} ${logo.variable} h-full antialiased`}>
+> +> +      <body className="min-h-full">{children}</body>
+> +>      </html>
+> +>    );
+> +>  }
+> +> diff --git a/apps/web/src/features/health/api-status.tsx b/apps/web/src/features/health/api-status.tsx
+> +> deleted file mode 100644
+> +> index cdb648c..0000000
+> +> --- a/apps/web/src/features/health/api-status.tsx
+> +> +++ /dev/null
+> +> @@ -1,27 +0,0 @@
+> +> -"use client";
+> +> -
+> +> -import { useEffect, useState } from "react";
+> +> -import { api } from "@/lib/api";
+> +> -
+> +> -type Status = "checking" | "up" | "down";
+> +> -
+> +> -export function ApiStatus() {
+> +> -  const [status, setStatus] = useState<Status>("checking");
+> +> -  const [version, setVersion] = useState<string | null>(null);
+> +> -
+> +> -  useEffect(() => {
+> +> -    api.health
+> +> -      .$get()
+> +> -      .then((res) => res.json())
+> +> -      .then((body) => {
+> +> -        setVersion(body.version);
+> +> -        setStatus("up");
+> +> -      })
+> +> -      .catch(() => setStatus("down"));
+> +> -  }, []);
+> +> -
+> +> -  const label = { checking: "sprawdzam…", up: `działa (${version})`, down: "nie odpowiada" }[
+> +> -    status
+> +> -  ];
+> +> -  return <p className="text-sm text-zinc-500">API: {label}</p>;
+> +> -}
+> +> diff --git a/apps/web/src/features/health/index.ts b/apps/web/src/features/health/index.ts
+> +> deleted file mode 100644
+> +> index fcc6938..0000000
+> +> --- a/apps/web/src/features/health/index.ts
+> +> +++ /dev/null
+> +> @@ -1 +0,0 @@
+> +> -export { ApiStatus } from "./api-status";
+> +> new file: apps/web/public/sawa-32.png
+> +> new file: apps/web/src/features/demo/components/mock-map.tsx
+> +> new file: apps/web/src/features/demo/lib/format.ts
+> +> new file: apps/web/src/features/demo/lib/mock-data.ts
+> +
+> +
+> +### 2026-10-17 13:18 · Pawel
+> +
+> +> zrobilem push na vercel z key ELEVENLABS_KEY
+> +
+> +
+> +> zrobilem push na vercel z key ELEVENLABS_KEY
+> +
+> +**AI:** Sprawdziłem repo i historię gita: klucza ElevenLabs nie ma w kodzie ani w commitach, śledzone są tylko pliki .env.example. Klucz jest w env Vercela (web), a plan zakładał ELEVENLABS_API_KEY w Railway (api), więc do ustalenia z R4.
+> new file: apps/web/src/features/demo/components/demo-app.tsx
+> new file: apps/web/src/features/demo/components/route-screen.tsx
+> new file: apps/web/src/features/demo/components/story-player.tsx
+> new file: apps/web/src/features/demo/index.ts
+
