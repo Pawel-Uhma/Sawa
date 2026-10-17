@@ -286,7 +286,7 @@ export function RouteViewPlayer({
           </p>
           <p
             aria-live="polite"
-            className={`mt-4 min-h-[5.5em] text-[17px] leading-[1.55] text-tekst-2 ${
+            className={`mt-4 line-clamp-5 min-h-[5.5em] text-[17px] leading-[1.55] text-tekst-2 ${
               storyState === "loading" ? "animate-pulse opacity-60" : ""
             }`}
           >
