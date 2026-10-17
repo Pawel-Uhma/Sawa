@@ -3,6 +3,7 @@
 import type { LatLng, Route, Travel } from "@sawa/shared";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { SkeletonLines, Spinner } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { planRoute, routeLine } from "../lib/api-data";
 import { haptic, SPRING } from "../lib/device";
@@ -200,10 +201,13 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
             stops={places.map((place) => [place.position.lng, place.position.lat])}
             className="absolute inset-0 size-full"
           />
+        ) : failed ? (
+          <TramIcon className="absolute inset-0 m-auto size-10 text-tekst-3" />
         ) : (
-          <TramIcon
-            className={`absolute inset-0 m-auto size-10 text-tekst-3 ${failed ? "" : "animate-pulse"}`}
-          />
+          // Podgląd trasy w budowie: połysk po mapie, w środku spinner
+          <span className="szkielet absolute inset-0 grid place-items-center !bg-mapa">
+            <Spinner className="size-6 text-tekst-3" />
+          </span>
         )}
         <span className="szklo absolute left-3 top-3 flex h-7 items-center gap-1.5 rounded-full px-2.5 text-xs font-bold text-glebia-ciemna">
           <span className="size-2 rounded-full bg-glebia" />
@@ -260,11 +264,16 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
             </p>
           </>
         ) : (
-          <p className="mt-1 text-[13px] text-tekst-2">
-            {failed
-              ? t("Trasę ułożę, gdy ruszysz.", "I'll plan the route when you set off.")
-              : t("Układam trasę…", "Planning the route…")}
-          </p>
+          <div role="status" className="mt-1.5 text-[13px] text-tekst-2">
+            {failed ? (
+              t("Trasę ułożę, gdy ruszysz.", "I'll plan the route when you set off.")
+            ) : (
+              <>
+                <span className="sr-only">{t("Układam trasę…", "Planning the route…")}</span>
+                <SkeletonLines lines={2} />
+              </>
+            )}
+          </div>
         )}
       </div>
     </article>
