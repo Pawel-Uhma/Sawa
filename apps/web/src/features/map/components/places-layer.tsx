@@ -1,5 +1,5 @@
 import type { PlaceSummaryFeature } from "@sawa/shared";
-import type { ExpressionSpecification } from "maplibre-gl";
+import type { ExpressionSpecification, SymbolLayerSpecification } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
 import {
@@ -24,6 +24,24 @@ const ICON_SIZE: ExpressionSpecification = [
   17,
   ["interpolate", ["linear"], ["get", "richness"], 1, 0.85, 40, 0.95],
 ];
+
+const LABEL_MIN_ZOOM = 16;
+const LABEL_LAYOUT = {
+  "text-font": LABEL_FONT,
+  "text-size": 12,
+  "text-anchor": "top",
+  "text-offset": [0, 1.6],
+  "text-max-width": 10,
+  "text-optional": true,
+} satisfies SymbolLayerSpecification["layout"];
+
+function labelPaint(palette: MapPalette) {
+  return {
+    "text-color": palette.label,
+    "text-halo-color": palette.labelHalo,
+    "text-halo-width": 1.2,
+  } satisfies SymbolLayerSpecification["paint"];
+}
 
 type PlacesLayerProps = {
   places: PlaceSummaryFeature[];
@@ -51,8 +69,12 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
             // Overlapping icons hide each other; richer places are placed first and win.
             "icon-padding": 1,
             "symbol-sort-key": ["-", 0, ["get", "richness"]],
+            // The name sits in the same symbol as the icon: when it does not fit, only the
+            // text drops. A separate label layer is placed first and would hide the icons.
+            ...LABEL_LAYOUT,
+            "text-field": ["step", ["zoom"], "", LABEL_MIN_ZOOM, ["get", "name"]],
           }}
-          paint={{ "icon-opacity": opacity }}
+          paint={{ "icon-opacity": opacity, ...labelPaint(palette) }}
         />
       ) : (
         // If the icons failed to load, coloured dots keep places visible.
@@ -80,25 +102,15 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
           "circle-stroke-width": 3,
         }}
       />
-      <Layer
-        id="places-label"
-        type="symbol"
-        minzoom={16}
-        layout={{
-          "text-field": ["get", "name"],
-          "text-font": LABEL_FONT,
-          "text-size": 12,
-          "text-anchor": "top",
-          "text-offset": [0, 1.6],
-          "text-max-width": 10,
-          "text-optional": true,
-        }}
-        paint={{
-          "text-color": palette.label,
-          "text-halo-color": palette.labelHalo,
-          "text-halo-width": 1.2,
-        }}
-      />
+      {!hasIcons && (
+        <Layer
+          id="places-label"
+          type="symbol"
+          minzoom={LABEL_MIN_ZOOM}
+          layout={{ ...LABEL_LAYOUT, "text-field": ["get", "name"] }}
+          paint={labelPaint(palette)}
+        />
+      )}
     </Source>
   );
 }
