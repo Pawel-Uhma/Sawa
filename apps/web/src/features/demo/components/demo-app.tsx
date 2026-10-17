@@ -8,7 +8,7 @@ import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
 import { forgetAll, useMemory } from "../lib/memory";
-import { type MockStop, USER_LOCATION } from "../lib/mock-data";
+import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
 import {
   CUSTOM_DESTINATION_NAME,
@@ -16,6 +16,7 @@ import {
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
+import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
@@ -39,8 +40,6 @@ const PlaceCardHost = dynamic(() => import("./place-card-host").then((mod) => mo
 });
 
 type Stage = "onboarding" | "map" | "route";
-
-const USER = { lat: USER_LOCATION[1], lng: USER_LOCATION[0] };
 
 // Szerokość panelu (md: 360, lg: 400) i margines wokół niego, jak w route-sheet.tsx i home-panel.tsx
 const PANEL_PX = { tablet: 360, laptop: 400 };
@@ -70,6 +69,9 @@ export function DemoApp() {
   const [panelCollapsed, setPanelCollapsed] = useState(false);
   const [selectedPlace, setSelectedPlace] = useState<PlaceSelection | null>(null);
   const [placeCoverPx, setPlaceCoverPx] = useState(360);
+  // O zgodę na lokalizację pytamy dopiero po onboardingu
+  const start = useStartPoint(stage !== "onboarding");
+  const origin = start.point;
 
   const showRoute = useCallback((next: Route) => {
     setPlanned(next);
@@ -82,13 +84,17 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(durationMin, profile, rideEnd, travel));
+      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
     } catch {
-      setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
+      setPlanError(
+        start.status === "located"
+          ? "Nie udało się ułożyć trasy stąd. Może w pobliżu nie ma przystanku? Spróbuj startu spod 42 Warsaw w menu Sawy."
+          : "Nie udało się ułożyć trasy. Spróbuj jeszcze raz.",
+      );
     } finally {
       setPlanning(false);
     }
-  }, [durationMin, profile, rideEnd, travel, showRoute]);
+  }, [origin, start.status, durationMin, profile, rideEnd, travel, showRoute]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);
@@ -194,10 +200,10 @@ export function DemoApp() {
     }
     // Wybrany cel: mapa pokazuje start i cel naraz
     if (isHome && destination) {
-      return { type: "fit", points: [USER, destination.point], maxZoom: 15 };
+      return { type: "fit", points: [origin, destination.point], maxZoom: 15 };
     }
-    return { type: "center", center: USER, zoom: isDesktop ? 15.3 : 14.8 };
-  }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace]);
+    return { type: "center", center: origin, zoom: isDesktop ? 15.3 : 14.8 };
+  }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace, origin]);
 
   const listener = useMemo(() => listenerOf(profile), [profile]);
   const memory = useMemory();
@@ -232,8 +238,21 @@ export function DemoApp() {
       onRestart: restart,
       rememberedPlaces: Object.keys(memory.places).length,
       onForget: forgetAll,
+      startMode: start.mode,
+      startLabel: startLabel(start.status),
+      onStartModeChange: start.setMode,
     }),
-    [profile, editProfile, planned, route.length, restart, memory],
+    [
+      profile,
+      editProfile,
+      planned,
+      route.length,
+      restart,
+      memory,
+      start.mode,
+      start.status,
+      start.setMode,
+    ],
   );
 
   return (
@@ -246,7 +265,7 @@ export function DemoApp() {
               route={isRoute ? (planned ?? undefined) : undefined}
               camera={camera}
               padding={padding}
-              user={USER}
+              user={origin}
               destination={isRoute || isHome ? destination?.point : undefined}
               onMapClick={
                 isHome && destination
@@ -295,6 +314,8 @@ export function DemoApp() {
               <RidesPanel
                 key="rides"
                 profile={profile}
+                origin={origin}
+                originLabel={startLabel(start.status)}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
                 rideEnd={rideEnd}

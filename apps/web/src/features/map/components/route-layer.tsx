@@ -2,7 +2,7 @@ import type { Route } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
-import { ACTIVE_STOP_COLOR, LABEL_FONT, mapIconId, WALK_COLOR } from "../lib/map-style";
+import { ACTIVE_STOP_COLOR, LABEL_FONT, type MapPalette, mapIconId } from "../lib/map-style";
 import {
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
@@ -19,9 +19,10 @@ type RouteLayerProps = {
   activeId?: string;
   /** Icons registered in the style; draws a stop icon inside the boarding ring. */
   hasIcons: boolean;
+  palette: MapPalette;
 };
 
-export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayerProps) {
+export function RouteLayer({ route, selectedId, activeId, hasIcons, palette }: RouteLayerProps) {
   const isActive: ExpressionSpecification = ["==", ["get", "id"], activeId ?? ""];
   const legs = useMemo(() => routeLegsToGeoJson(route), [route]);
   const places = useMemo(() => routePlacesToGeoJson(route), [route]);
@@ -35,7 +36,7 @@ export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayer
           id="route-walk"
           type="line"
           layout={{ "line-cap": "round", "line-join": "round" }}
-          paint={{ "line-color": WALK_COLOR, "line-width": 3, "line-dasharray": [0.1, 2] }}
+          paint={{ "line-color": palette.walk, "line-width": 3, "line-dasharray": [0.1, 2] }}
         />
       </Source>
       <Source id="route-legs" type="geojson" data={legs}>
@@ -43,7 +44,7 @@ export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayer
           id="route-casing"
           type="line"
           layout={{ "line-cap": "round", "line-join": "round" }}
-          paint={{ "line-color": "#ffffff", "line-width": 9 }}
+          paint={{ "line-color": palette.casing, "line-width": 9 }}
         />
         <Layer
           id="route-line"
@@ -64,7 +65,7 @@ export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayer
             "circle-radius": hasIcons
               ? ["case", ["get", "isTransfer"], 15, 14]
               : ["case", ["get", "isTransfer"], 7, 6],
-            "circle-color": "#ffffff",
+            "circle-color": palette.boardingFill,
             "circle-stroke-color": ["get", "color"],
             "circle-stroke-width": ["case", ["get", "isTransfer"], 4, 3],
           }}
@@ -105,8 +106,8 @@ export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayer
           type="circle"
           paint={{
             "circle-radius": ["case", isActive, 14, 11],
-            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, "#18181b"],
-            "circle-stroke-color": "#ffffff",
+            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, palette.stopFill],
+            "circle-stroke-color": palette.ring,
             "circle-stroke-width": 2,
           }}
         />
@@ -117,7 +118,7 @@ export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayer
           paint={{
             "circle-radius": 15,
             "circle-opacity": 0,
-            "circle-stroke-color": "#18181b",
+            "circle-stroke-color": palette.selected,
             "circle-stroke-width": 3,
           }}
         />
@@ -131,7 +132,7 @@ export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayer
             "text-allow-overlap": true,
             "text-ignore-placement": true,
           }}
-          paint={{ "text-color": "#ffffff" }}
+          paint={{ "text-color": ["case", isActive, "#ffffff", palette.stopText] }}
         />
       </Source>
     </>

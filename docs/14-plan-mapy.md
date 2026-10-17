@@ -18,7 +18,7 @@ Podkład: **OpenFreeMap**, styl `https://tiles.openfreemap.org/styles/positron` 
 ## Stan wdrożenia (15:00, PR z gałęzi `r3/maplibre-map`)
 
 - Strona `/mapa` (link „Otwórz mapę” na `/`). Kroki 1–6 i 5a z §10 zrobione.
-- Miejsca z `GET /v1/places` (bbox obszaru danych, `PLACES_BBOX`), karta ze szczegółami z `GET /v1/places/:id`: okres, adres, tagi, pierwsze zdjęcie z podpisem, fakty (3 + rozwiń), źródła. Bez kluczy Supabase API serwuje `fake`.
+- Miejsca z `GET /v1/places` po kafelkach z widoku (od 16:07, niżej §3), karta ze szczegółami z `GET /v1/places/:id`: okres, adres, tagi, pierwsze zdjęcie z podpisem, fakty (3 + rozwiń), źródła. Bez kluczy Supabase API serwuje `fake`.
 - Zainteresowania w `?i=` to kategorie (`historical`, `cultural`, `sports`, `nature`). Miejsca mają tagi, filtr mapuje je przez `interestsOfTags` z `packages/shared`.
 - Trasa: `useDemoRoute` w `features/planner` woła `GET /v1/routes/demo` (planer R1). Brak API → mapa bez trasy i komunikat.
 - Sprawdzone zrzutami w headless Chromium (375 px i desktop).
@@ -42,6 +42,13 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 
 **Playground:** `/mapa/playground` (`features/map-playground`). Każdy prop ma kontrolkę, nakładka pokazuje obszar `padding`, dziennik zbiera `onStopClick`, a na dole jest gotowy JSX do skopiowania. Trasa demo albo prawdziwy planer (`POST /v1/routes/plan`).
 
+## Ciemny motyw (17.10, 17:05, T-105)
+
+- Wybór Jasny / Ciemny / Auto w `features/theme` (menu Sawy, grupa „Wygląd”). Wynik trafia do `<html data-theme>`, skrypt w `app/layout.tsx` ustawia go przed pierwszym malowaniem.
+- Mapa bierze motyw z `useTheme()`: podkład `BASEMAP_STYLE_URLS[theme]` (OpenFreeMap `positron` / `dark`) i kolory własnych warstw z `MAP_PALETTES[theme]` (obwódki, numery miejsc trasy, podpisy, dojścia, krycie przygaszonych miejsc). Kolory linii trasy zostają te same, w ciemnym motywie mają jasną obwódkę.
+- Tokeny z `globals.css` ciemnieją wewnątrz `.motyw` (kontener `SawaMap`), więc ciemne są karta miejsca, podpowiedzi i kontrolki MapLibre.
+- Ciemny styl OpenFreeMap loguje „Image wood-pattern could not be loaded” (brak obrazka w sprite). To ostrzeżenie, mapa działa.
+
 ## 3. Przepływ danych
 
 Przeglądarka nie łączy się z Supabase (Z3). Wszystko idzie przez API.
@@ -56,11 +63,11 @@ features/map (React)
 
 | Dane | Skąd | Kiedy pobieramy | Cache (Query) |
 |---|---|---|---|
-| Miejsca na mapie | `GET /v1/places` z bbox całego obszaru 1 km wokół 42 Warsaw | raz przy wejściu na mapę (326 punktów to ok. 60 kB) **[Z]** | `staleTime: Infinity` |
+| Miejsca na mapie | `GET /v1/places?bbox=` osobno dla każdego kafelka siatki w widoku | po zatrzymaniu mapy (`moveend`), tylko nowe kafelki | per kafelek, `staleTime: Infinity`, `gcTime` 30 min |
 | Szczegóły miejsca | `GET /v1/places/:id` | po kliknięciu punktu, prefetch przy najechaniu na desktopie | per `id` |
 | Trasa | `POST /v1/routes/plan` (`origin`, `durationMin`, `interests`) | po „Generuj” | per parametry |
 
-Pobieranie miejsc po ruchu mapy (bbox z widoku) robimy dopiero wtedy, gdy dane wyjdą poza 1 km. Endpoint już przyjmuje `bbox`, więc zmiana będzie mała.
+**Bbox z widoku (17.10, 16:07, decyzja Antka).** Baza ma już ok. 1300 miejsc w całej Warszawie, a stały prostokąt wokół 42 Warsaw gubił ich większość. Widok dzielimy na stałą siatkę kafelków 0,04° × 0,025° (ok. 2,7 × 2,8 km, `lib/place-tiles.ts`) i o każdy kafelek pytamy osobno. Przesunięcie mapy dociąga tylko nowe kafelki, a powrót bierze je z cache. Poniżej zoomu 13 mapa nie pobiera miejsc i pokazuje „Przybliż mapę, żeby zobaczyć miejsca”. Na bardzo szerokim ekranie najwyżej 36 kafelków najbliżej środka. Karta z linku `?p=` działa także wtedy, gdy miejsce leży poza widokiem: nazwa przychodzi z `GET /v1/places/:id`.
 
 ## 4. Kontrakt (potrzebny z T-63)
 

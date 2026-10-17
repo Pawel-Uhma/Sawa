@@ -3,6 +3,7 @@ import {
   type Familiarity,
   type Interest,
   interestsOfTags,
+  type LatLng,
   type Route,
   STORY_STYLES,
   type StoryStyle,
@@ -11,7 +12,6 @@ import {
 import { api } from "@/lib/api";
 import { getMemory, heardCounts } from "./memory";
 import type { LngLat, MockStop } from "./mock-data";
-import { USER_LOCATION } from "./mock-data";
 import type { Profile } from "./onboarding";
 import { type RideEnd, rideEndRequest } from "./ride-end";
 
@@ -43,10 +43,11 @@ export function listenerOf(profile: Profile): Listener {
 }
 
 /**
- * Plans a ride from the demo start with `POST /v1/routes/plan`. Sends what Sawa already told
- * (lib/memory.ts), so places told in full give way to new ones.
+ * Plans a ride from `origin` (lib/start-point.ts) with `POST /v1/routes/plan`. Sends what Sawa
+ * already told (lib/memory.ts), so places told in full give way to new ones.
  */
 export async function planRoute(
+  origin: LatLng,
   durationMin: number,
   profile: Profile,
   end: RideEnd = { type: "open" },
@@ -56,7 +57,7 @@ export async function planRoute(
   const heard = heardCounts(getMemory());
   const res = await api.v1.routes.plan.$post({
     json: {
-      origin: { lat: USER_LOCATION[1], lng: USER_LOCATION[0] },
+      origin,
       durationMin,
       interests,
       ...rideEndRequest(end),

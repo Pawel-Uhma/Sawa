@@ -4,6 +4,7 @@ import type { ContentfulStatusCode } from "hono/utils/http-status";
 const STATUS_BY_CODE = {
   VALIDATION: 400,
   NOT_FOUND: 404,
+  RATE_LIMITED: 429,
   UPSTREAM_ERROR: 502,
   UPSTREAM_TIMEOUT: 504,
   INTERNAL: 500,

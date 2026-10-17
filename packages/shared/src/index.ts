@@ -8,3 +8,5 @@ export * from "./schemas/route";
 export * from "./schemas/speech";
 export * from "./schemas/story";
 export * from "./schemas/transit-graph";
+export * from "./schemas/vehicles";
+export * from "./vehicle-track";

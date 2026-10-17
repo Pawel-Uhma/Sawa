@@ -2,6 +2,7 @@ import type { Destination, LatLng } from "@sawa/shared";
 import type { BBox, Place, PlaceAlongLine, PlaceSummary } from "../domain/place";
 import type { Network } from "../domain/routing/types";
 import type { SpeechAudio } from "../domain/speech";
+import type { VehicleReport } from "../domain/vehicles/types";
 
 /** Interfaces services depend on; adapters implement them (docs/11-zasady-pracy-i-kodu.md §4). */
 
@@ -18,6 +19,20 @@ export interface PlacesRepository {
 export interface DepartureSource {
   /** Departures of `line` from the platform on the Warsaw service day of `day`. */
   departures(stopId: string, line: string, day: Date): Promise<Date[] | undefined>;
+}
+
+/** Live tram and bus positions (ZTM, refreshed every 10 s). Throws AppError when ZTM fails. */
+export interface VehiclePositionSource {
+  positions(): Promise<VehicleReport[]>;
+}
+
+/** Walking paths along streets and footways (OSRM foot profile). */
+export interface WalkPathSource {
+  /**
+   * The path through `points` in order, as [lng, lat] pairs starting and ending at the first
+   * and last point; undefined when unknown (router down, timeout, no path).
+   */
+  path(points: LatLng[]): Promise<[number, number][] | undefined>;
 }
 
 /** Tram and bus network for one service day (apps/api/data/transit-graph.json.gz). */

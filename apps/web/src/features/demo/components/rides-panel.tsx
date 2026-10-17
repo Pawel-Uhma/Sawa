@@ -1,6 +1,6 @@
 "use client";
 
-import type { Route, Travel } from "@sawa/shared";
+import type { LatLng, Route, Travel } from "@sawa/shared";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { planRoute, routeLine } from "../lib/api-data";
@@ -15,6 +15,9 @@ import { KORAL, RouteThumb } from "./route-thumb";
 
 type RidesPanelProps = {
   profile: Profile;
+  /** Start przejażdżki i jego podpis (lib/start-point.ts). */
+  origin: LatLng;
+  originLabel: string;
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
   /** Koniec trasy wybrany na ekranie głównym; podgląd planuje z nim, żeby start pokazał to samo. */
@@ -33,6 +36,8 @@ const SEGMENTS = [30, 60, 120, 240];
 /** Zakładka Przejażdżki (makieta D): gotowe trasy jak odcinki podcastu, przełącznik czasu, ostatnia trasa. */
 export function RidesPanel({
   profile,
+  origin,
+  originLabel,
   durationMin,
   onDurationChange,
   rideEnd,
@@ -47,7 +52,7 @@ export function RidesPanel({
   useEffect(() => {
     let cancelled = false;
     setFailed(false);
-    planRoute(durationMin, profile, rideEnd, travel)
+    planRoute(origin, durationMin, profile, rideEnd, travel)
       .then((route) => !cancelled && setPreview(route))
       .catch(() => {
         if (cancelled) return;
@@ -57,7 +62,7 @@ export function RidesPanel({
     return () => {
       cancelled = true;
     };
-  }, [durationMin, profile, rideEnd, travel]);
+  }, [origin, durationMin, profile, rideEnd, travel]);
   const nearest = SEGMENTS.reduce((best, value) =>
     Math.abs(value - durationMin) < Math.abs(best - durationMin) ? value : best,
   );
@@ -76,7 +81,7 @@ export function RidesPanel({
         <h1 className="text-[30px] font-extrabold leading-[1.1] tracking-[-0.035em] md:text-[26px]">
           Przejażdżki na dziś
         </h1>
-        <p className="mt-1 text-sm text-tekst-2">Ułożone z Twoich tematów, start spod 42 Warsaw</p>
+        <p className="mt-1 text-sm text-tekst-2">Ułożone z Twoich tematów. Start: {originLabel}</p>
 
         <div
           role="radiogroup"

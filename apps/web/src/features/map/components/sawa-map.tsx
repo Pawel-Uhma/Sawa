@@ -2,6 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Interest, LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
+import type { Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -10,8 +11,11 @@ import {
   type MapRef,
   NavigationControl,
 } from "react-map-gl/maplibre";
+import { useTheme } from "@/features/theme";
+import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
   DEFAULT_MAP_PADDING,
@@ -20,10 +24,12 @@ import {
   resolveCamera,
 } from "../lib/camera";
 import { loadMapIcons } from "../lib/map-icons";
-import { BASEMAP_STYLE_URL, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
+import { BASEMAP_STYLE_URLS, MAP_PALETTES, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
+import { MIN_PLACES_ZOOM, tilesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
+import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
@@ -74,11 +80,20 @@ export function SawaMap({
   // Layers mount only after the icons are in the style, so they keep their stacking order.
   const [icons, setIcons] = useState<"loading" | "ready" | "failed">("loading");
   const [cursor, setCursor] = useState<string>("grab");
-  const places = usePlaces();
+  const [view, setView] = useState<MapView | null>(null);
+  const tiles = useMemo(() => (view ? tilesInView(view.bounds, view.zoom) : []), [view]);
+  const places = usePlaces(tiles);
+  const vehicles = useLiveVehicles(route);
+  const attribution = useMemo(
+    () => [...(route?.attribution ?? []), ...(vehicles.data?.attribution ?? [])],
+    [route?.attribution, vehicles.data?.attribution],
+  );
+  const theme = useTheme();
+  const palette = MAP_PALETTES[theme];
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
-    () => selectVisiblePlaces(places.data ?? [], { interests, minRichness: MIN_PLACE_RICHNESS }),
+    () => selectVisiblePlaces(places.data, { interests, minRichness: MIN_PLACE_RICHNESS }),
     [places.data, interests],
   );
 
@@ -108,7 +123,7 @@ export function SawaMap({
   }, [moveKey, isLoaded]);
 
   const selected = useMemo(
-    () => (hasPlaceSheet ? findPlace(selectedId, places.data ?? [], route) : null),
+    () => (hasPlaceSheet ? findPlace(selectedId, places.data, route) : null),
     [hasPlaceSheet, selectedId, places.data, route],
   );
 
@@ -128,11 +143,11 @@ export function SawaMap({
   }
 
   return (
-    <div className="relative h-full w-full">
+    <div className="motyw relative h-full w-full">
       <MapLibreMap
         ref={mapRef}
         initialViewState={START_VIEW}
-        mapStyle={BASEMAP_STYLE_URL}
+        mapStyle={BASEMAP_STYLE_URLS[theme]}
         interactiveLayerIds={INTERACTIVE_LAYERS}
         cursor={cursor}
         onMouseEnter={() => setCursor("pointer")}
@@ -145,20 +160,23 @@ export function SawaMap({
             .getContainer()
             .querySelector(".maplibregl-ctrl-attrib")
             ?.classList.remove("maplibregl-compact-show");
+          setView(viewOf(event.target));
           setIsLoaded(true);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
+        onMoveEnd={(event) => setView(viewOf(event.target))}
         attributionControl={false}
         style={{ width: "100%", height: "100%" }}
       >
         {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
-        <AttributionControl compact customAttribution={route?.attribution} />
+        <AttributionControl compact customAttribution={attribution} />
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
             hasIcons={icons === "ready"}
+            palette={palette}
           />
         )}
         {icons !== "loading" && route && (
@@ -167,17 +185,24 @@ export function SawaMap({
             selectedId={selectedId}
             activeId={activeStopId}
             hasIcons={icons === "ready"}
+            palette={palette}
           />
         )}
-        {destination && <DestinationLayer position={destination} />}
-        {user && <UserLayer position={user} />}
+        {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
+        {destination && <DestinationLayer position={destination} ring={palette.ring} />}
+        {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
       {places.isError && (
-        <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-white px-3 py-2 text-sm text-red-700 shadow">
+        <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-powierzchnia px-3 py-2 text-sm text-koral shadow">
           Nie udało się pobrać miejsc.{" "}
           <button type="button" className="font-medium underline" onClick={() => places.refetch()}>
             Spróbuj ponownie
           </button>
+        </p>
+      )}
+      {view && view.zoom < MIN_PLACES_ZOOM && (
+        <p className="pointer-events-none absolute top-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-powierzchnia/90 px-3 py-1.5 text-sm whitespace-nowrap text-tekst-2 shadow">
+          Przybliż mapę, żeby zobaczyć miejsca
         </p>
       )}
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
@@ -185,6 +210,23 @@ export function SawaMap({
   );
 }
 
+type MapView = { bounds: LngLatBounds; zoom: number };
+
+function viewOf(map: MapLibre): MapView {
+  const bounds = map.getBounds();
+  return {
+    bounds: [
+      [bounds.getWest(), bounds.getSouth()],
+      [bounds.getEast(), bounds.getNorth()],
+    ],
+    zoom: map.getZoom(),
+  };
+}
+
+/**
+ * Summary for the card. The place may sit in a tile that is out of view (panned away, or opened
+ * from a `?p=` link), then the card shows the name once the detail loads.
+ */
 function findPlace(
   id: string | null,
   places: PlaceSummaryFeature[],
@@ -193,10 +235,9 @@ function findPlace(
   if (!id) return null;
   const onRoute = route && routePlacesToGeoJson(route).features.find((f) => f.properties.id === id);
   const summary = places.find((p) => p.properties.id === id)?.properties;
-  if (!summary && !onRoute) return null;
   return {
     id,
-    name: summary?.name ?? onRoute?.properties.name ?? id,
+    name: summary?.name ?? onRoute?.properties.name,
     kind: summary?.kind,
     tags: summary?.interests,
     order: onRoute?.properties.order,

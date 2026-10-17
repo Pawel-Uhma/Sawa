@@ -1,9 +1,18 @@
-import { HACKATHON_VENUE, haversineM, INTERESTS, type Route, RouteSchema } from "@sawa/shared";
+import {
+  HACKATHON_VENUE,
+  haversineM,
+  INTERESTS,
+  type LatLng,
+  type PlanRouteRequest,
+  type Route,
+  RouteSchema,
+  toLngLat,
+} from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import { createRoutePlanner } from "./plan-route";
-import type { DepartureSource } from "./ports";
+import type { DepartureSource, WalkPathSource } from "./ports";
 
 // Integration test on the committed data files (real Warsaw network and places).
 const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
@@ -122,7 +131,7 @@ describe("route planner on real data", () => {
     expect(route.places.length).toBeGreaterThan(0);
   });
 
-  it("shows the walk to the first stop and keeps places on their ride legs", async () => {
+  it("shows the walk to the first stop and puts each place on the leg it is passed on", async () => {
     const route = await planner.plan(
       { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"] },
       NOW,
@@ -130,7 +139,37 @@ describe("route planner on real data", () => {
     expect(route.legs[0]?.mode).toBe("walk");
     expect(route.legs[0]?.fromStop.position).toEqual(HACKATHON_VENUE);
     expect(route.legs[0]?.toStop.id).toBe(route.legs[1]?.fromStop.id);
-    for (const p of route.places) expect(route.legs[p.legIndex]?.mode).not.toBe("walk");
+    const walkSec = (route.legs[0]?.durationMin ?? 0) * 60;
+    for (const p of route.places) {
+      // Places on the walk come before boarding; the rest are on ride legs.
+      expect(route.legs[p.legIndex]?.mode === "walk").toBe(p.etaSec <= walkSec + 1);
+    }
+  });
+
+  it("starts telling stories on the walk to the first stop", async () => {
+    const route = await planner.plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical", "cultural"] },
+      NOW,
+    );
+    expect(route.places[0]?.legIndex).toBe(0);
+    expect(route.places[0]?.etaSec).toBeLessThan(6 * 60);
+  });
+
+  it.each([
+    ["trivia", 30, 60],
+    ["fun", 45, 120],
+    ["deep", 90, 300],
+  ] as const)("keeps %s stories between %i and %i s", async (storyStyle, min, max) => {
+    for (const durationMin of [5, 30, 120]) {
+      const route = await planner.plan(
+        { origin: HACKATHON_VENUE, durationMin, interests: ["historical"], storyStyle },
+        NOW,
+      );
+      for (const p of route.places) {
+        expect(p.windowSec).toBeGreaterThanOrEqual(min);
+        expect(p.windowSec).toBeLessThanOrEqual(max);
+      }
+    }
   });
 
   it("walks from the last stop back to the start of a loop", async () => {
@@ -141,6 +180,35 @@ describe("route planner on real data", () => {
     const last = route.legs[route.legs.length - 1];
     expect(last?.mode).toBe("walk");
     expect(last?.toStop.position).toEqual(HACKATHON_VENUE);
+  });
+
+  it("plans the fastest way to the Castle Square without a duration", async () => {
+    const castleSquare = { lat: 52.2477, lng: 21.0137 };
+    const plan = (durationMin?: number) =>
+      planner.plan(
+        {
+          origin: HACKATHON_VENUE,
+          interests: ["historical"],
+          destination: castleSquare,
+          durationMin,
+        },
+        NOW,
+      );
+    const fastest = RouteSchema.parse(await plan());
+    const scenic = await plan(60);
+    expect(fastest.endsAtDestination).toBe(true);
+    expect(fastest.legs[fastest.legs.length - 1]?.toStop.position).toEqual(castleSquare);
+    expect(fastest.totalMin).toBeLessThan(scenic.totalMin);
+    expect(fastest.totalMin).toBeLessThan(30);
+  });
+
+  it("takes the fastest ride when a timed ride cannot reach the destination", async () => {
+    const wilanow = { lat: 52.1652, lng: 21.0907 };
+    const route = await planner.plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], destination: wilanow },
+      NOW,
+    );
+    expect(route.endsAtDestination).toBe(true);
   });
 
   it("plans a ride that ends at the Castle Square", async () => {
@@ -199,5 +267,43 @@ describe("route planner on real data", () => {
       NOW,
     );
     expect(route.legs.every((l) => l.realDeparture === undefined)).toBe(true);
+  });
+
+  it("draws walking legs along the paths from the walk router, keeping the times", async () => {
+    const asked: LatLng[][] = [];
+    const walkPaths: WalkPathSource = {
+      path: async (points) => {
+        asked.push(points);
+        const [a, b] = [points[0] as LatLng, points[points.length - 1] as LatLng];
+        // An L-shaped "street" between the ends.
+        return [toLngLat(a), [b.lng, a.lat], toLngLat(b)];
+      },
+    };
+    const request: PlanRouteRequest = {
+      origin: HACKATHON_VENUE,
+      durationMin: 60,
+      interests: ["historical"],
+    };
+    const straight = await planner.plan(request, NOW);
+    const route = RouteSchema.parse(
+      await createRoutePlanner({ transit, places, walkPaths }).plan(request, NOW),
+    );
+    const walks = route.legs.filter((l) => l.mode === "walk");
+    expect(walks.length).toBeGreaterThan(0);
+    expect(asked).toHaveLength(walks.length);
+    for (const leg of walks) expect(leg.lngLats).toHaveLength(3);
+    expect(route.legs.map((l) => l.durationMin)).toEqual(straight.legs.map((l) => l.durationMin));
+    expect(route.places).toEqual(straight.places);
+  });
+
+  it("keeps straight walking legs when the walk router has no path", async () => {
+    const walkPaths: WalkPathSource = { path: async () => undefined };
+    const request: PlanRouteRequest = {
+      origin: HACKATHON_VENUE,
+      durationMin: 10,
+      interests: ["historical"],
+    };
+    const route = await createRoutePlanner({ transit, places, walkPaths }).plan(request, NOW);
+    expect(route).toEqual(await planner.plan(request, NOW));
   });
 });

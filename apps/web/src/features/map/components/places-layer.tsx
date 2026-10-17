@@ -2,7 +2,12 @@ import type { PlaceSummaryFeature } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
-import { LABEL_FONT, placeKindColorExpression, placeKindIconExpression } from "../lib/map-style";
+import {
+  LABEL_FONT,
+  type MapPalette,
+  placeKindColorExpression,
+  placeKindIconExpression,
+} from "../lib/map-style";
 
 export const PLACES_LAYER_ID = "places-circle";
 
@@ -24,11 +29,12 @@ type PlacesLayerProps = {
   isDimmed: boolean;
   /** Icons registered in the style; without them places are coloured dots. */
   hasIcons: boolean;
+  palette: MapPalette;
 };
 
-export function PlacesLayer({ places, selectedId, isDimmed, hasIcons }: PlacesLayerProps) {
+export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }: PlacesLayerProps) {
   const data = useMemo(() => ({ type: "FeatureCollection" as const, features: places }), [places]);
-  const opacity = isDimmed ? 0.35 : 1;
+  const opacity = isDimmed ? palette.dimmedOpacity : 0.9;
 
   return (
     <Source id="places" type="geojson" data={data}>
@@ -53,7 +59,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons }: PlacesLa
           paint={{
             "circle-color": placeKindColorExpression(),
             "circle-radius": ["interpolate", ["linear"], ["get", "richness"], 1, 5, 10, 7, 40, 9],
-            "circle-stroke-color": "#ffffff",
+            "circle-stroke-color": palette.ring,
             "circle-stroke-width": 1.5,
             "circle-opacity": opacity,
             "circle-stroke-opacity": opacity,
@@ -67,7 +73,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons }: PlacesLa
         paint={{
           "circle-radius": 20,
           "circle-opacity": 0,
-          "circle-stroke-color": "#18181b",
+          "circle-stroke-color": palette.selected,
           "circle-stroke-width": 3,
         }}
       />
@@ -84,7 +90,11 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons }: PlacesLa
           "text-max-width": 10,
           "text-optional": true,
         }}
-        paint={{ "text-color": "#27272a", "text-halo-color": "#ffffff", "text-halo-width": 1.2 }}
+        paint={{
+          "text-color": palette.label,
+          "text-halo-color": palette.labelHalo,
+          "text-halo-width": 1.2,
+        }}
       />
     </Source>
   );

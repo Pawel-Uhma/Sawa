@@ -3,18 +3,21 @@ import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthe
 import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
+import { createOsrmWalkPathSource } from "./adapters/osrm/walk-paths";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
 import {
   createSupabaseClient,
   createSupabasePlacesRepository,
 } from "./adapters/supabase/places-repository";
 import { createWawDepartureSource } from "./adapters/waw/departures";
+import { createWawVehiclePositionSource } from "./adapters/waw/vehicle-positions";
 import { createApp } from "./app";
 import { loadEnv } from "./lib/env";
 import { createLogger } from "./lib/logger";
 import { createRoutePlanner } from "./services/plan-route";
 import { createDestinationService } from "./services/search-destinations";
 import { createSpeechService } from "./services/speak";
+import { createVehicleTracker } from "./services/track-vehicles";
 
 const env = loadEnv();
 const logger = createLogger(env.LOG_LEVEL);
@@ -46,8 +49,17 @@ const routePlanner = createRoutePlanner({
   places: placesRepository ?? placesFile,
   fallbackPlaces: placesRepository ? placesFile : undefined,
   departures: createWawDepartureSource(env.WAW_TOKEN),
+  walkPaths: env.WALK_ROUTER_URL ? createOsrmWalkPathSource(env.WALK_ROUTER_URL) : undefined,
   logger,
 });
+
+const vehicles = createVehicleTracker({
+  source: env.WAW_TOKEN ? createWawVehiclePositionSource(env.WAW_TOKEN) : undefined,
+  transit,
+  logger,
+  alwaysOn: env.VEHICLES_ALWAYS_ON,
+});
+vehicles.start();
 
 const llm = env.OPENROUTER_KEY
   ? createOpenRouterProvider({ apiKey: env.OPENROUTER_KEY, model: env.OPENROUTER_MODEL })
@@ -71,6 +83,7 @@ const app = createApp({
     llm,
     speech,
     destinations,
+    vehicles,
     onLlmError: (err, placeId) => logger.warn({ err, placeId }, "llm failed, story from facts"),
   },
   onUnexpectedError: (err) => logger.error({ err }, "unhandled error"),
@@ -81,6 +94,7 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
     {
       port,
       departures: Boolean(env.WAW_TOKEN),
+      walkPaths: env.WALK_ROUTER_URL ?? null,
       llm: llm?.model ?? null,
       speech: Boolean(speech),
       destinations: Boolean(destinations),

@@ -108,6 +108,25 @@ describe("lines and transfers", () => {
     expect(features[1].geometry.coordinates).toEqual([20.98, 52.24]);
   });
 
+  it("draws a walking leg along its whole path, joined to the ride that follows", () => {
+    const path: [number, number][] = [
+      [20.955, 52.228],
+      [20.957, 52.228],
+      [20.958, 52.2295],
+      [20.96, 52.23],
+    ];
+    const walk = {
+      ...ROUTE.legs[0],
+      line: "",
+      mode: "walk" as const,
+      fromStop: stop("start", 52.228, 20.955),
+      toStop: ROUTE.legs[0].fromStop,
+      lngLats: path,
+    };
+    const { features } = routeWalksToGeoJson({ ...ROUTE, legs: [walk, ...ROUTE.legs] });
+    expect(features.map((f) => f.geometry.coordinates)).toEqual([path]);
+  });
+
   it("draws a walk only where the next leg starts somewhere else", () => {
     expect(routeWalksToGeoJson(ROUTE).features).toEqual([]);
     const moved = {
