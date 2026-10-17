@@ -26,4 +26,4 @@ Kolumna „Rola” to kod roli: `R1`, `R2`, `R3` albo `R4`. Zespół ma 4 osoby,
 ## Pliki wspólne
 
 Nikt nie zmienia ich po cichu. Edytuj krótko, zrób `git pull` przed i po:
-`CLAUDE.md`, `docs/README.md`, `docs/stan.md`, `docs/todo.md`, `docs/zespol.md`, `docs/ai-log.md` (dopisujesz tylko na końcu).
+`CLAUDE.md`, `docs/README.md`, `docs/stan.md`, `docs/todo.md`, `docs/zespol.md`.

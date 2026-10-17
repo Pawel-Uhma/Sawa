@@ -2,7 +2,7 @@
 
 > **Rola rozwiązana 17.10 (zespół ma 4 osoby).** Zadania przejmuje **R2**, testy na telefonie robią wszyscy na zmianę. Poniższe zasady dalej obowiązują. Zobacz [12-plan-mvp.md](../12-plan-mvp.md) §11, Z2.
 
-**Cel:** wszyscy wiedzą, co pokazujemy i po co. Demo przećwiczone, deck gotowy, aplikacja przetestowana na telefonie, dokumentacja i dziennik AI gotowe do oddania o 10:30 w niedzielę.
+**Cel:** wszyscy wiedzą, co pokazujemy i po co. Demo przećwiczone, deck gotowy, aplikacja przetestowana na telefonie, dokumentacja i opis użycia AI gotowe do oddania o 10:30 w niedzielę.
 
 **Twoje pliki:** [10-prd.md](../10-prd.md), [09-pytania-prd.md](../09-pytania-prd.md), [pitch/](../pitch/), scenariusz demo (dodaj `docs/demo-scenariusz.md`), [06-plan-dnia.md](../06-plan-dnia.md).
 
@@ -11,7 +11,7 @@
 **Zasady:**
 - Pilnujesz, żeby każde zadanie w `todo.md` miało właściciela i termin. Jeśli nie ma, dopisujesz pytanie do `stan.md`.
 - Testy na telefonie co 2 godziny: zgłoszenia od razu w `todo.md` z tagiem roli, do której należy błąd.
-- Dziennik AI (`ai-log.md`) prowadzą wszyscy przez hook, ale na koniec sprawdzasz, czy każdy prompt ma linię `**AI:**`.
+- Opis zakresu użycia AI na oddanie (regulamin §4 ust. 4) piszesz raz, na koniec, z historii git, PR-ów i archiwum `ai-log.md` (T-53).
 - Jedna ścieżka demo, przećwiczona. Nagranie wideo jako zapas.
 
 **Zadania:** tag `R5` w [todo.md](../todo.md).

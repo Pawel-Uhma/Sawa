@@ -19,15 +19,9 @@ Repozytorium zespołu (4 osoby, każda z własnym agentem) na hackathon 17–18.
 - **Każde rozwiązanie musi korzystać z min. 1 zbioru z dane.um.warszawa.pl** (katalog: `docs/03-dane.md`).
 - **Nigdy nie commituj tokenu API.** Token trzymamy w `.env.local`, a ten plik jest w `.gitignore`.
 
-## Dziennik AI: aktualizuj po każdym prompcie
+## Użycie AI
 
-Hook sam dopisuje treść promptu do `docs/ai-log.md`. **Na końcu każdej odpowiedzi, w której coś zrobiłeś, dopisz pod ostatnim promptem w tym pliku jedną linię:**
-
-```
-**AI:** <co zrobiłeś, 1–3 zdania: jakie pliki zmieniłeś lub utworzyłeś, co wygenerowałeś, jakie decyzje podjął zespół>
-```
-
-Jeśli prompt był tylko pytaniem i nic nie zmieniłeś, i tak dopisz linię `**AI:**` z krótką odpowiedzią. Jeśli zmieniła się wiedza w innym dokumencie (np. wybrany pomysł, zmiana architektury), zaktualizuj też ten dokument.
+Dziennika promptów nie prowadzimy (decyzja z 17.10, ok. 13:30: hook generował konflikty w każdym PR). `docs/ai-log.md` to archiwum do 17.10, 13:30, nie dopisuj do niego. Regulamin (§4 ust. 4) wymaga opisu zakresu użycia AI w dokumentacji na oddanie: przygotowuje go R2 w T-53 z historii git, PR-ów i archiwum. Jeśli zmieniła się wiedza w dokumencie tematycznym (np. architektura), zaktualizuj ten dokument.
 
 ## Stack (od 17.10)
 

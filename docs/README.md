@@ -38,7 +38,7 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 | [role/](role/) | Karty ról R1–R5 | właściciel roli |
 | [06-plan-dnia.md](06-plan-dnia.md) | Harmonogram sobota/niedziela, struktura pitcha, checklista | R5 |
 | [spotkania/](spotkania/) | Podsumowania spotkań zespołu | skill `spotkanie` |
-| [ai-log.md](ai-log.md) | Dziennik użycia AI (regulamin §4 ust. 4) | hook sam, plus linia `**AI:**` od agenta |
+| [ai-log.md](ai-log.md) | Archiwum dziennika AI do 17.10, 13:30 (już nie prowadzimy; opis użycia AI na oddanie: T-53) | nikt |
 
 **Produkt**
 

@@ -173,7 +173,7 @@ Synchronizacja (10 min): **13:30, 15:00, 17:00, 22:00, 08:00**.
 
 ### M4 · 08:00–11:00 · oddanie
 
-08:00 próba pitcha → **09:00 zamrożenie kodu** → 10:00 ostatni deploy, test na 3 telefonach → **10:30 wysłanie**: repo, deck, dokumentacja, `ai-log.md`.
+08:00 próba pitcha → **09:00 zamrożenie kodu** → 10:00 ostatni deploy, test na 3 telefonach → **10:30 wysłanie**: repo, deck, dokumentacja z opisem użycia AI.
 
 **Ścieżka krytyczna:** monorepo (12:30) → kontrakt (13:30) → miejsca w bazie → planer → opowieść → `/demo`. Gdy czas ucieka, najpierw upraszczamy planer: trasa jedną linią bez przesiadek.
 

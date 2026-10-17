@@ -1,3 +1,4 @@
+> **Archiwum.** Od 17.10.2026, ok. 13:30 dziennika nie prowadzimy (hook usunięty, konflikty w PR). Opis zakresu użycia AI na oddanie: T-53 w `todo.md`.
 
 ### 2026-10-17 11:25 · Pawel
 
