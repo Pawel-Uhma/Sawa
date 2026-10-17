@@ -20,6 +20,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
+import { ThemeSwitch } from "@/features/theme";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import { FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
@@ -453,6 +454,12 @@ function MenuContent({ actions, run }: MenuContentProps) {
           }}
           chevron={false}
         />
+      </Group>
+
+      <Group title="Wygląd">
+        <div className="p-3">
+          <ThemeSwitch />
+        </div>
       </Group>
 
       <Group>

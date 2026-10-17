@@ -1,8 +1,60 @@
 import { HACKATHON_VENUE } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 
-/** OpenFreeMap basemap: no API key, OSM data. */
-export const BASEMAP_STYLE_URL = "https://tiles.openfreemap.org/styles/positron";
+export type MapTheme = "light" | "dark";
+
+/** OpenFreeMap basemaps: no API key, OSM data. The theme follows the system setting. */
+export const BASEMAP_STYLE_URLS: Record<MapTheme, string> = {
+  light: "https://tiles.openfreemap.org/styles/positron",
+  dark: "https://tiles.openfreemap.org/styles/dark",
+};
+
+/** Colours of our own layers that have to change with the basemap. */
+export type MapPalette = {
+  /** Outline under route lines and rings around dots, so they read on the basemap. */
+  casing: string;
+  ring: string;
+  /** Numbered route place (not the active one) and its number. */
+  stopFill: string;
+  stopText: string;
+  /** Ring around the selected place. */
+  selected: string;
+  /** Fill of the start and transfer rings. */
+  boardingFill: string;
+  label: string;
+  labelHalo: string;
+  walk: string;
+  /** Opacity of regular places while a route is shown; dark needs more to stay visible. */
+  dimmedOpacity: number;
+};
+
+export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
+  light: {
+    casing: "#ffffff",
+    ring: "#ffffff",
+    stopFill: "#18181b",
+    stopText: "#ffffff",
+    selected: "#18181b",
+    boardingFill: "#ffffff",
+    label: "#27272a",
+    labelHalo: "#ffffff",
+    walk: "#52525b",
+    dimmedOpacity: 0.35,
+  },
+  dark: {
+    // A light outline keeps the deep line colours (blue, violet) visible on the dark basemap.
+    casing: "#d5dfdd",
+    ring: "#0e1615",
+    stopFill: "#e6efed",
+    stopText: "#0e1615",
+    selected: "#e6efed",
+    boardingFill: "#0e1615",
+    label: "#d5dfdd",
+    labelHalo: "#0e1615",
+    walk: "#a1a1aa",
+    dimmedOpacity: 0.6,
+  },
+};
 
 /** Fonts available in the OpenFreeMap glyph server. */
 export const LABEL_FONT = ["Noto Sans Regular"];
@@ -65,9 +117,6 @@ export const ACTIVE_STOP_COLOR = "#17706f";
  * Kept away from the teal of the active stop and the coral of the destination.
  */
 export const LINE_COLORS = ["#d62828", "#1d4ed8", "#7c3aed", "#e07a00", "#c2185b", "#4d7c0f"];
-
-/** Walk between two stops at a transfer. */
-export const WALK_COLOR = "#52525b";
 
 export function lineColor(lineIndex: number): string {
   return LINE_COLORS[lineIndex % LINE_COLORS.length];

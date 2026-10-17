@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import { PLACES, searchInput } from "./__fixtures__/synthetic";
 import { planRide } from "./beam-search";
 import { buildRoute } from "./build-route";
+import { MIN_STORY_GAP_SEC, STORY_MAX_SEC, storyWindowSec } from "./select-stories";
 
 const NOW = new Date("2026-10-17T14:00:00Z");
 
@@ -27,12 +28,16 @@ describe("buildRoute", () => {
     expect(() => RouteSchema.parse(routeFor(["war_uprising"], 30).route)).not.toThrow();
   });
 
-  it("orders places by ETA and gives each the time until the next one", () => {
+  it("orders places by ETA and gives the last one the time left, within the story bounds", () => {
     const { route, ride } = routeFor(["war_uprising"], 30);
     const etas = route.places.map((p) => p.etaSec);
     expect(etas).toEqual([...etas].sort((a, b) => a - b));
     const lastPlace = route.places[route.places.length - 1];
-    expect(lastPlace && lastPlace.etaSec + lastPlace.windowSec).toBeCloseTo(ride.elapsedSec, -1);
+    const left = ride.elapsedSec - (lastPlace?.etaSec ?? 0);
+    expect(lastPlace?.windowSec).toBeCloseTo(
+      storyWindowSec(left, MIN_STORY_GAP_SEC, STORY_MAX_SEC.fun),
+      -1,
+    );
   });
 
   it("starts each leg shape at its boarding stop and stamps the departure time", () => {

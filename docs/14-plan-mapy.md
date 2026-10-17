@@ -42,6 +42,13 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 
 **Playground:** `/mapa/playground` (`features/map-playground`). Każdy prop ma kontrolkę, nakładka pokazuje obszar `padding`, dziennik zbiera `onStopClick`, a na dole jest gotowy JSX do skopiowania. Trasa demo albo prawdziwy planer (`POST /v1/routes/plan`).
 
+## Ciemny motyw (17.10, 17:05, T-105)
+
+- Wybór Jasny / Ciemny / Auto w `features/theme` (menu Sawy, grupa „Wygląd”). Wynik trafia do `<html data-theme>`, skrypt w `app/layout.tsx` ustawia go przed pierwszym malowaniem.
+- Mapa bierze motyw z `useTheme()`: podkład `BASEMAP_STYLE_URLS[theme]` (OpenFreeMap `positron` / `dark`) i kolory własnych warstw z `MAP_PALETTES[theme]` (obwódki, numery miejsc trasy, podpisy, dojścia, krycie przygaszonych miejsc). Kolory linii trasy zostają te same, w ciemnym motywie mają jasną obwódkę.
+- Tokeny z `globals.css` ciemnieją wewnątrz `.motyw` (kontener `SawaMap`), więc ciemne są karta miejsca, podpowiedzi i kontrolki MapLibre.
+- Ciemny styl OpenFreeMap loguje „Image wood-pattern could not be loaded” (brak obrazka w sprite). To ostrzeżenie, mapa działa.
+
 ## 3. Przepływ danych
 
 Przeglądarka nie łączy się z Supabase (Z3). Wszystko idzie przez API.

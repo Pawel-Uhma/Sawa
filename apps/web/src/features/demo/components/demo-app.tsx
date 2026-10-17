@@ -52,8 +52,8 @@ export function DemoApp() {
   const [profile, setProfile] = useState<Profile>(EMPTY_PROFILE);
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(90);
-  const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "open" });
-  // Ostatni wybrany cel wraca po przełączeniu „Przed siebie” → „Do celu”
+  const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "loop" });
+  // Ostatni wybrany cel wraca po przełączeniu „Wracam tu” → „Do celu”
   const [lastDestination, setLastDestination] = useState<Extract<RideEnd, { type: "destination" }>>(
     { type: "destination", ...DESTINATION_PRESETS[0] },
   );
@@ -392,10 +392,8 @@ export function DemoApp() {
 }
 
 /** Podpis końca trasy w arkuszu; gdy planer nie dojechał do celu albo nie zamknął pętli, mówi to wprost. */
-function routeEnd(route: Route, end: RideEnd): { label: string; reached: boolean } | null {
+function routeEnd(route: Route, end: RideEnd): { label: string; reached: boolean } {
   switch (end.type) {
-    case "open":
-      return null;
     case "loop":
       return route.endsAtStart
         ? { label: "Wracasz na start", reached: true }

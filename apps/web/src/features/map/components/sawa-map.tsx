@@ -11,6 +11,8 @@ import {
   type MapRef,
   NavigationControl,
 } from "react-map-gl/maplibre";
+import { useTheme } from "@/features/theme";
+import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
 import type { LngLatBounds } from "../lib/bounds";
@@ -21,11 +23,12 @@ import {
   type MapPadding,
   resolveCamera,
 } from "../lib/camera";
-import { BASEMAP_STYLE_URL, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
+import { BASEMAP_STYLE_URLS, MAP_PALETTES, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
 import { MIN_PLACES_ZOOM, tilesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
+import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
@@ -77,6 +80,13 @@ export function SawaMap({
   const [view, setView] = useState<MapView | null>(null);
   const tiles = useMemo(() => (view ? tilesInView(view.bounds, view.zoom) : []), [view]);
   const places = usePlaces(tiles);
+  const vehicles = useLiveVehicles(route);
+  const attribution = useMemo(
+    () => [...(route?.attribution ?? []), ...(vehicles.data?.attribution ?? [])],
+    [route?.attribution, vehicles.data?.attribution],
+  );
+  const theme = useTheme();
+  const palette = MAP_PALETTES[theme];
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
@@ -130,11 +140,11 @@ export function SawaMap({
   }
 
   return (
-    <div className="relative h-full w-full">
+    <div className="motyw relative h-full w-full">
       <MapLibreMap
         ref={mapRef}
         initialViewState={START_VIEW}
-        mapStyle={BASEMAP_STYLE_URL}
+        mapStyle={BASEMAP_STYLE_URLS[theme]}
         interactiveLayerIds={INTERACTIVE_LAYERS}
         cursor={cursor}
         onMouseEnter={() => setCursor("pointer")}
@@ -155,14 +165,27 @@ export function SawaMap({
         style={{ width: "100%", height: "100%" }}
       >
         {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
-        <AttributionControl compact customAttribution={route?.attribution} />
-        <PlacesLayer places={visiblePlaces} selectedId={selectedId} isDimmed={Boolean(route)} />
-        {route && <RouteLayer route={route} selectedId={selectedId} activeId={activeStopId} />}
-        {destination && <DestinationLayer position={destination} />}
-        {user && <UserLayer position={user} />}
+        <AttributionControl compact customAttribution={attribution} />
+        <PlacesLayer
+          places={visiblePlaces}
+          selectedId={selectedId}
+          isDimmed={Boolean(route)}
+          palette={palette}
+        />
+        {route && (
+          <RouteLayer
+            route={route}
+            selectedId={selectedId}
+            activeId={activeStopId}
+            palette={palette}
+          />
+        )}
+        {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
+        {destination && <DestinationLayer position={destination} ring={palette.ring} />}
+        {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
       {places.isError && (
-        <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-white px-3 py-2 text-sm text-red-700 shadow">
+        <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-powierzchnia px-3 py-2 text-sm text-koral shadow">
           Nie udało się pobrać miejsc.{" "}
           <button type="button" className="font-medium underline" onClick={() => places.refetch()}>
             Spróbuj ponownie
@@ -170,7 +193,7 @@ export function SawaMap({
         </p>
       )}
       {view && view.zoom < MIN_PLACES_ZOOM && (
-        <p className="pointer-events-none absolute top-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-white/90 px-3 py-1.5 text-sm text-zinc-700 shadow">
+        <p className="pointer-events-none absolute top-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-powierzchnia/90 px-3 py-1.5 text-sm whitespace-nowrap text-tekst-2 shadow">
           Przybliż mapę, żeby zobaczyć miejsca
         </p>
       )}

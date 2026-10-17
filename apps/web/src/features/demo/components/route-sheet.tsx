@@ -13,7 +13,7 @@ import { StoryCard } from "./story-card";
 
 type RouteSheetProps = {
   durationMin: number;
-  /** Koniec trasy (pętla albo cel); null przy trasie „przed siebie”. */
+  /** Koniec trasy (pętla albo cel); null, gdy trasy jeszcze nie ma. */
   end: { label: string; reached: boolean } | null;
   stops: MockStop[];
   /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
@@ -251,7 +251,8 @@ function SheetContent({
   togglePlay,
 }: SheetContentProps) {
   const activeStop = stops[activeIndex];
-  const lines = [...new Set(stops.map((stop) => stop.line))];
+  // Odcinki piesze nie mają linii (pusty `line`).
+  const lines = [...new Set(stops.map((stop) => stop.line).filter(Boolean))];
 
   return (
     <div className="flex flex-col gap-5">
@@ -277,9 +278,13 @@ function SheetContent({
         <p className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm text-tekst-2">
           <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>·
           <span>{stops.length} opowieści</span>·
-          <span className="inline-flex items-center gap-1">
-            <TramIcon className="size-4" /> {lines.join(", ")}
-          </span>
+          {lines.length > 0 ? (
+            <span className="inline-flex items-center gap-1">
+              <TramIcon className="size-4" /> {lines.join(", ")}
+            </span>
+          ) : (
+            <span>pieszo</span>
+          )}
         </p>
         {end && (
           <p

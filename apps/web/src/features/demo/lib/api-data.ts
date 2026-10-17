@@ -49,7 +49,7 @@ export async function planRoute(
   origin: LatLng,
   durationMin: number,
   profile: Profile,
-  end: RideEnd = { type: "open" },
+  end: RideEnd = { type: "loop" },
 ): Promise<Route> {
   const { interests, familiarity, storyStyle } = listenerOf(profile);
   const heard = heardCounts(getMemory());
