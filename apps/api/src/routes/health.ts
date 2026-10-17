@@ -1,7 +1,7 @@
 import type { Health } from "@sawa/shared";
 import { Hono } from "hono";
-
 import { warsawDate } from "../lib/warsaw-date";
+import type { DemoMode } from "../services/demo";
 
 export { warsawDate };
 
@@ -13,6 +13,7 @@ const VERSION = process.env.RAILWAY_GIT_COMMIT_SHA?.slice(0, 7) ?? "dev";
  */
 export function createHealthRoutes(
   transitDate?: string | ((now: Date) => string),
+  demoMode: DemoMode = "off",
   clock: () => Date = () => new Date(),
 ) {
   return new Hono().get("/health", (c) => {
@@ -22,6 +23,7 @@ export function createHealthRoutes(
       ok: true,
       version: VERSION,
       ...(date ? { transitDate: date, transitIsToday: date === warsawDate(now) } : {}),
+      ...(demoMode !== "off" ? { demoMode } : {}),
     } satisfies Health);
   });
 }
