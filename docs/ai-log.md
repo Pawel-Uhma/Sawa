@@ -3927,3 +3927,71 @@
 > +
 > +**AI:** Korekta: klucz jest w Railway (api), czyli zgodnie z planem. Do ustalenia zostaje tylko nazwa zmiennej (ELEVENLABS_KEY czy ELEVENLABS_API_KEY) z R4.
 
+
+### 2026-10-17 13:24 · Pawel
+
+> Ale nie dziala dobrze na desktopie - ma miec pelna wersje desktopowa - ktora dziala tak samo tylko ma swietny design na laptopie i dziala na kazdej szerokosci ekranu
+
+
+### 2026-10-17 13:24 · Pawel
+
+> w railawy jest ELEVENLABS_KEY i tak zostaw
+
+
+> w railawy jest ELEVENLABS_KEY i tak zostaw
+
+**AI:** Nazwa zostaje ELEVENLABS_KEY. Poprawiłem artefakt „Głos Sawy w ElevenLabs” (blok .env.local, curl, konfiguracja) i wiersz o głosie w docs/stan.md.
+
+### 2026-10-17 13:25 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 14 ++++++++++++++
+>  docs/stan.md   |  2 +-
+>  2 files changed, 15 insertions(+), 1 deletion(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 1d255b7..1fb9afb 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -3927,3 +3927,17 @@
+>  > +
+>  > +**AI:** Korekta: klucz jest w Railway (api), czyli zgodnie z planem. Do ustalenia zostaje tylko nazwa zmiennej (ELEVENLABS_KEY czy ELEVENLABS_API_KEY) z R4.
+>  
+> +
+> +### 2026-10-17 13:24 · Pawel
+> +
+> +> Ale nie dziala dobrze na desktopie - ma miec pelna wersje desktopowa - ktora dziala tak samo tylko ma swietny design na laptopie i dziala na kazdej szerokosci ekranu
+> +
+> +
+> +### 2026-10-17 13:24 · Pawel
+> +
+> +> w railawy jest ELEVENLABS_KEY i tak zostaw
+> +
+> +
+> +> w railawy jest ELEVENLABS_KEY i tak zostaw
+> +
+> +**AI:** Nazwa zostaje ELEVENLABS_KEY. Poprawiłem artefakt „Głos Sawy w ElevenLabs” (blok .env.local, curl, konfiguracja) i wiersz o głosie w docs/stan.md.
+> diff --git a/docs/stan.md b/docs/stan.md
+> index 9a58129..f994b80 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -32,7 +32,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+>  | Skąd kolejność przystanków linii (GTFS?) | R1, 13:30 | [12-plan-mvp.md](12-plan-mvp.md) §7, P1 |
+>  | Konta Vercel i Railway: zespołowe czy prywatne | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) P7 |
+>  | Przycisk „dalej” w opowieści: MVP czy później | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+> -| Głos: ElevenLabs czy open source, jakość polskiego | R4 + zespół | [05-plan-architektury.md](05-plan-architektury.md) |
+> +| Głos: Pawel wybrał ElevenLabs, klucz jest już w Railway (serwis api) jako `ELEVENLABS_KEY`, potwierdzenie i integracja po stronie R4 | R4 + zespół | [05-plan-architektury.md](05-plan-architektury.md) |
+>  | Toalety: brak zbioru w portalu, OSM czy rezygnacja | R1 | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+>  | Tryb „z wysiadaniem” (muzea): MVP czy po MVP | zespół | [10-prd.md](10-prd.md) |
+>  | Scraping muzeów i wystaw pod zainteresowania | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+
