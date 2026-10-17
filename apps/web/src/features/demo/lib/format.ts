@@ -1,3 +1,4 @@
+import { LANG_LOCALES, type Lang } from "@/features/i18n";
 import { DURATION_STOPS_MIN } from "./mock-data";
 
 /** 90 → "1 h 30 min", 240 → "4 h", 45 → "45 min". */
@@ -15,12 +16,12 @@ export function sliderPercent(durationMin: number): number {
   return (index / (DURATION_STOPS_MIN.length - 1)) * 100;
 }
 
-const CLOCK = new Intl.DateTimeFormat("pl-PL", { hour: "2-digit", minute: "2-digit" });
-const DAY = new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "numeric" });
-
-/** Kiedy Sawa coś opowiedziała: „dziś, 14:32” albo „17.10, 9:05”. */
-export function formatWhen(at: number, now = Date.now()): string {
+/** Kiedy Sawa coś opowiedziała: „dziś, 14:32” albo „17.10, 9:05” („today, 14:32” po angielsku). */
+export function formatWhen(at: number, now = Date.now(), lang: Lang = "pl"): string {
+  const clock = new Intl.DateTimeFormat(LANG_LOCALES[lang], { hour: "2-digit", minute: "2-digit" });
+  const day = new Intl.DateTimeFormat(LANG_LOCALES[lang], { day: "numeric", month: "numeric" });
   const date = new Date(at);
   const sameDay = new Date(now).toDateString() === date.toDateString();
-  return sameDay ? `dziś, ${CLOCK.format(date)}` : `${DAY.format(date)}, ${CLOCK.format(date)}`;
+  const today = lang === "en" ? "today" : "dziś";
+  return sameDay ? `${today}, ${clock.format(date)}` : `${day.format(date)}, ${clock.format(date)}`;
 }

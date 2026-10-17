@@ -1,5 +1,6 @@
 // Supabase RPC responses (snake_case, jsonb) → domain types. Pure; tested on real fixtures.
 
+import { OptionalSubkindSchema } from "@sawa/shared";
 import { z } from "zod";
 import {
   PLACE_KINDS,
@@ -19,6 +20,7 @@ const FeatureCollectionSchema = z.object({
         id: z.string(),
         name: z.string(),
         kind: KindSchema,
+        subkind: OptionalSubkindSchema,
         interests: z.array(z.string()),
         richness: z.number(),
       }),
@@ -30,6 +32,7 @@ const NearLineRowSchema = z.object({
   id: z.string(),
   name: z.string(),
   kind: KindSchema,
+  subkind: OptionalSubkindSchema,
   interests: z.array(z.string()),
   richness: z.number(),
   lat: z.number(),
@@ -43,6 +46,7 @@ const PlaceDetailSchema = z.object({
   name: z.string(),
   name_en: z.string().nullable(),
   kind: KindSchema,
+  subkind: OptionalSubkindSchema,
   lat: z.number(),
   lng: z.number(),
   interests: z.array(z.string()),
@@ -109,6 +113,7 @@ export function toPlace(data: unknown): Place | null {
     id: p.id,
     name: p.name,
     kind: p.kind,
+    subkind: p.subkind,
     interests: p.interests,
     position: { lat: p.lat, lng: p.lng },
     richness: p.richness,

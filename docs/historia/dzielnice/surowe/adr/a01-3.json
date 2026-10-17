@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "kamienica-wierzbowa-11",
+    "nazwa": "Kamienica przy ul. Wierzbowej 11 (atelier Foto Forbert)",
+    "name_en": "Tenement house at Wierzbowa 11 (Foto Forbert studio)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wierzbowa 11",
+    "adres_historyczny": null,
+    "lat": 52.2435249,
+    "lon": 21.0081855,
+    "lokalizacja": "dokladna",
+    "okres": "1908–1940",
+    "istnieje": null,
+    "fakty": [
+      "Henryk Bojm i Leon Forbert (1892–1938) zawiązali spółkę i prowadzili przy ul. Wierzbowej 11 atelier Foto Forbert.",
+      "W 1940 roku studio Foto Forbert przy ul. Wierzbowej 11 przejęła Halina Skowrońska-Macherska.",
+      "Firma Foto Forbert działała do 1939 roku w lokalu przy ul. Wierzbowej 11.",
+      "Aleksander Sawicki (1866–1927) przed śmiercią mieszkał w Warszawie przy ul. Wierzbowej 11.",
+      "Poselstwo Królestwa Niderlandów mieściło się przy ul. Wierzbowej 11 w latach 1908–1911 (dalsza część zdania urwana)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building at Wierzbowa 11 that housed the Foto Forbert photography studio run by Henryk Bojm and Leon Forbert. Aleksander Sawicki lived here before his death in 1927.",
+    "ludzie": [
+      {"kto": "Henryk Bojm", "rola": "współzałożyciel spółki Foto Forbert", "wiki": "https://pl.wikipedia.org/wiki/Henryk_Bojm"},
+      {"kto": "Leon Forbert", "rola": "współzałożyciel spółki Foto Forbert (1892–1938)", "wiki": "https://pl.wikipedia.org/wiki/Leon_Forbert"},
+      {"kto": "Halina Skowrońska-Macherska", "rola": "przejęła studio Foto Forbert w 1940 roku", "wiki": null},
+      {"kto": "Aleksander Sawicki (1866–1927)", "rola": "mieszkał przy Wierzbowej 11 przed śmiercią", "wiki": "https://pl.wikipedia.org/wiki/Aleksander_Sawicki_(1866–1927)"}
+    ],
+    "dawne_nazwy": ["Foto Forbert"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Henryk Bojm", "url": "https://pl.wikipedia.org/wiki/Henryk_Bojm"},
+      {"tytul": "Wikipedia: Leon Forbert", "url": "https://pl.wikipedia.org/wiki/Leon_Forbert"},
+      {"tytul": "Wikipedia: Aleksander Sawicki (1866–1927)", "url": "https://pl.wikipedia.org/wiki/Aleksander_Sawicki_(1866–1927)"},
+      {"tytul": "Wikipedia: Ambasada Królestwa Niderlandów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ambasada_Królestwa_Niderlandów_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rok 1939 („działa do”) i 1940 (przejęcie studia) to różne daty z paczki. Okres 1908–1940 złożony z dat zdań. Zdanie o kamienicy Popławskich urwane, pominięte."
+  },
+  {
+    "id": "restauracja-oaza-wierzbowa-9",
+    "nazwa": "Restauracja Oaza (scena kabaretu Momus) przy ul. Wierzbowej 9",
+    "name_en": "Oaza restaurant (Momus cabaret stage) at Wierzbowa 9",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wierzbowa 9",
+    "adres_historyczny": null,
+    "lat": 52.2432818,
+    "lon": 21.0087472,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce (egzekucja 1943–1944)",
+    "istnieje": null,
+    "fakty": [
+      "Przy placu Teatralnym, przy ul. Wierzbowej 9, naprzeciw Teatru Wielkiego, w restauracji Oaza powstała scena kabaretowa Momusa.",
+      "Około 70 skazańców rozstrzelano w egzekucji ulicznej przy ul. Wierzbowej 9/11, w pobliżu Placu Teatralnego.",
+      "Z Biura Projektów Typowych i Studiów Budownictwa Miejskiego, z siedzibą przy ul. Wierzbowej 9, pochodzili generalni projektanci prototypu „Służewiec”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A restaurant called Oaza on Wierzbowa 9, next to Plac Teatralny. The Momus cabaret stage was set up here, and about 70 people were shot in a street execution nearby in 1943-1944.",
+    "ludzie": [
+      {"kto": "Szyfman", "rola": "znalazł sponsorów, dzięki którym powstała scena Momusa (imię urwane w paczce)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Oaza"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Momus (kabaret)", "url": "https://pl.wikipedia.org/wiki/Momus_(kabaret)"},
+      {"tytul": "Wikipedia: Egzekucje uliczne w Warszawie (1943–1944)", "url": "https://pl.wikipedia.org/wiki/Egzekucje_uliczne_w_Warszawie_(1943–1944)"},
+      {"tytul": "Wikipedia: Służewiec-Prototypy", "url": "https://pl.wikipedia.org/wiki/Służewiec-Prototypy"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Data powstania sceny Momusa nie pada w paczce. Egzekucja z artykułu o egzekucjach ulicznych (1943–1944) bez dokładnej daty. Zdanie o ambasadzie Brazylii (wydział handlowy 1964–1966) pominięte jako sama siedziba."
+  },
+  {
+    "id": "kryjowka-zelazna-64",
+    "nazwa": "Mieszkanie-kryjówka przy ul. Żelaznej 64",
+    "name_en": "Hiding place in a flat at Żelazna 64",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Żelazna 64",
+    "adres_historyczny": null,
+    "lat": 52.2358439,
+    "lon": 20.9902144,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce",
+    "istnieje": null,
+    "fakty": [
+      "Mieszkanie Skowronków przy ul. Żelaznej 64 służyło jako kryjówka; Janina Skowronek zaproponowała tu kryjówkę Kuperszmidom, bo na ul. Łuckiej nie było miejsca.",
+      "Rodzina Skowronków przeniosła się z ul. Łuckiej do mieszkania przy Żelaznej 64, dokąd planowała przeprowadzkę w bliskim czasie.",
+      "Hanna Gałązka spędziła pierwsze lata życia w Warszawie, najpierw przy ul. Łuckiej, później w mieszkaniu przy Żelaznej 64."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A flat at Żelazna 64 in Wola, used as a hiding place during the occupation. Janina Skowronek offered the Kuperszmid family shelter here after there was no room on Łucka street.",
+    "ludzie": [
+      {"kto": "Stanisław Skowronek", "rola": "członek rodziny Skowronków, której mieszkanie służyło jako kryjówka", "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Skowronek"},
+      {"kto": "Janina Skowronek", "rola": "zaproponowała Kuperszmidom kryjówkę w mieszkaniu przy Żelaznej 64", "wiki": "https://pl.wikipedia.org/wiki/Janina_Skowronek"},
+      {"kto": "Hanna Gałązka", "rola": "mieszkała w tym mieszkaniu w dzieciństwie", "wiki": "https://pl.wikipedia.org/wiki/Hanna_Gałązka"},
+      {"kto": "Kuperszmidowie", "rola": "ukrywani w kryjówce przy Żelaznej 64", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Łucka (poprzednie mieszkanie Skowronków)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stanisław Skowronek", "url": "https://pl.wikipedia.org/wiki/Stanisław_Skowronek"},
+      {"tytul": "Wikipedia: Janina Skowronek", "url": "https://pl.wikipedia.org/wiki/Janina_Skowronek"},
+      {"tytul": "Wikipedia: Hanna Gałązka", "url": "https://pl.wikipedia.org/wiki/Hanna_Gałązka"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Daty pobytu nie pada w paczce. Dwa zdania o kryjówce powtarzają się w artykułach Skowronka i Janiny; zachowano jeden wpis. Zdanie „ulokować je” w paczce nie wymienia wprost Kuperszmidów: podano jako w tekście o Janinie Skowronek."
+  },
+  {
+    "id": "kasyno-szucha-29",
+    "nazwa": "Dawne oficerskie kasyno garnizonowe przy al. Szucha 29",
+    "name_en": "Former garrison officers' casino at Szucha 29",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleja Jana Chrystiana Szucha 29",
+    "adres_historyczny": null,
+    "lat": 52.2187527,
+    "lon": 21.0244104,
+    "lokalizacja": "dokladna",
+    "okres": "1940–1944",
+    "istnieje": null,
+    "fakty": [
+      "Dawne oficerskie kasyno garnizonowe przy al. Szucha 29, w dzielnicy policyjnej, od października 1940 roku prowadzili Niemcy jako lokal dla Polaków.",
+      "Czesław Łapiński przez cały ten okres pracował jako starszy krupier w kontrolowanym przez Niemców kasynie gry dla Polaków przy al. Szucha 29.",
+      "W powstaniu warszawskim (1 sierpnia 1944, wg kalendarium) zdobyto budynek kasyna przy al. Szucha 29."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The former officers' casino of the garrison at Szucha 29, in the Gestapo-controlled police district. From October 1940 the Germans ran it as a gambling house for Poles. The building was taken during the uprising on 1 August 1944.",
+    "ludzie": [
+      {"kto": "Czesław Łapiński (wojskowy)", "rola": "starszy krupier w kasynie dla Polaków przy al. Szucha 29", "wiki": "https://pl.wikipedia.org/wiki/Czesław_Łapiński_(wojskowy)"}
+    ],
+    "dawne_nazwy": ["Oficerskie kasyno garnizonowe"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zamach na kasyno przy alei Szucha", "url": "https://pl.wikipedia.org/wiki/Zamach_na_kasyno_przy_alei_Szucha"},
+      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 1 sierpnia", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_1_sierpnia"},
+      {"tytul": "Wikipedia: Czesław Łapiński (wojskowy)", "url": "https://pl.wikipedia.org/wiki/Czesław_Łapiński_(wojskowy)"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie o Tadeuszu Bartoszku (lista budynków, urwana) pominięte. Dzień 1 sierpnia 1944 z tytułu hasła kalendarium."
+  },
+  {
+    "id": "fabryka-piskorskich-bialoskornicza-3",
+    "nazwa": "Fabryka białoskórnicza Piskorskich przy ul. Białoskórniczej 3",
+    "name_en": "Piskorski leather tanning factory at Białoskórnicza 3",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Białoskórnicza 3",
+    "adres_historyczny": null,
+    "lat": 52.2465215,
+    "lon": 21.0186019,
+    "lokalizacja": "dokladna",
+    "okres": "1844–ok. 1944",
+    "istnieje": null,
+    "fakty": [
+      "W 1844 roku August Piskorski założył fabrykę białoskórniczą przy ul. Białoskórniczej 3 na Mariensztacie.",
+      "Siedziba cechu mieściła się przy ul. Białoskórniczej 3 w zakładzie syna Augusta Piskorskiego, Wacława.",
+      "Firma działała przez 100 lat od 1844 roku przy ul. Białoskórniczej 3 pod nazwami „Wacław Piskorski i syn” i „Leonard Piskorski – Fabryka Białoskórnicza”.",
+      "Zakład wyprawiał skóry systemem glacé, mocha (sztuczny zamsz) oraz skóry rękawiczkowe i obuwiowe na białe damskie pantofle."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A leather tanning factory founded by August Piskorski in 1844 on Mariensztat, at Białoskórnicza 3. It operated for about 100 years under the Piskorski family name and specialised in glacé and mocha leathers.",
+    "ludzie": [
+      {"kto": "August Piskorski", "rola": "założyciel fabryki w 1844 roku", "wiki": "https://pl.wikipedia.org/wiki/August_Piskorski"},
+      {"kto": "Wacław Piskorski", "rola": "syn Augusta; firma „Wacław Piskorski i syn”", "wiki": "https://pl.wikipedia.org/wiki/Wacław_Piskorski"},
+      {"kto": "Leonard Piskorski", "rola": "firma „Leonard Piskorski – Fabryka Białoskórnicza”", "wiki": "https://pl.wikipedia.org/wiki/Leonard_Piskorski"}
+    ],
+    "dawne_nazwy": ["Wacław Piskorski i syn", "Leonard Piskorski – Fabryka Białoskórnicza"],
+    "zrodla": [
+      {"tytul": "Wikipedia: August Piskorski", "url": "https://pl.wikipedia.org/wiki/August_Piskorski"},
+      {"tytul": "Wikipedia: Leonard Piskorski", "url": "https://pl.wikipedia.org/wiki/Leonard_Piskorski"},
+      {"tytul": "Wikipedia: Wacław Piskorski", "url": "https://pl.wikipedia.org/wiki/Wacław_Piskorski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres „100 lat” od 1844 roku: koniec (ok. 1944) wyliczony, nie podany wprost. Telefon i zdanie urwane pominięte."
+  },
+  {
+    "id": "fabryka-kamlera-dzielna-72",
+    "nazwa": "Fabryka mebli Kamlera przy ul. Dzielnej 72",
+    "name_en": "Kamler furniture factory at Dzielna 72 (AK Home Army headquarters, 1944)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Dzielna 72",
+    "adres_historyczny": null,
+    "lat": 52.2433691,
+    "lon": 20.9811129,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "istnieje": null,
+    "fakty": [
+      "6 sierpnia 1944 roku Tadeusz Bór-Komorowski podjął decyzję o ewakuacji Komendy Głównej AK i Delegatury z fabryki Kamlera przy ul. Dzielnej 72 na Woli w kierunku Starego Miasta.",
+      "Dowództwo AK wybrało na swoją siedzibę fabrykę Kamlera przy ul. Dzielnej 72; Kedyw otrzymał rozkaz zabezpieczenia jej najbliższej okolicy.",
+      "W godzinie „W” Bór ulokował się w budynku fabryki mebli Kamlera przy ul. Dzielnej 72.",
+      "1112 pluton, stanowiący osłonę Komendy Głównej, zebrał się w fabryce meblarskiej Kamlera przy ul. Dzielnej 72."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The furniture factory of Kamler at Dzielna 72 in Wola. During the Warsaw Uprising the Home Army Main Command was based here from the start, until it was moved to the Old Town on 6 August 1944.",
+    "ludzie": [
+      {"kto": "Tadeusz Bór-Komorowski", "rola": "dowódca AK; ulokował tu Komendę Główną, a 6 sierpnia 1944 zarządził ewakuację", "wiki": null}
+    ],
+    "dawne_nazwy": ["Fabryka mebli Kamlera"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 6 sierpnia", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_6_sierpnia"},
+      {"tytul": "Wikipedia: Obrona cmentarzy wolskich (1944)", "url": "https://pl.wikipedia.org/wiki/Obrona_cmentarzy_wolskich_(1944)"},
+      {"tytul": "Wikipedia: Dywizjon „Jeleń”", "url": "https://pl.wikipedia.org/wiki/Dywizjon_„Jeleń”"},
+      {"tytul": "Wikipedia: Godzina „W”", "url": "https://pl.wikipedia.org/wiki/Godzina_„W”"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Fragment o „Godzinie W” nie podaje daty wprost (uzupełnienie: 1 sierpnia 1944). Tadeusz Bór-Komorowski bez artykułu w tym bloku, wiki null."
+  },
+  {
+    "id": "dom-foksal-16",
+    "nazwa": "Dom przy ul. Foksal 16 (Teatr Sabat)",
+    "name_en": "House at Foksal 16 (Sabat Theatre)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Foksal 16",
+    "adres_historyczny": null,
+    "lat": 52.2337872,
+    "lon": 21.0206517,
+    "lokalizacja": "dokladna",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Bronisław Brochwicz-Rogoyski projektował m.in. Szarą Willę oraz domy przy ul. Foksal 16, 18 i 19.",
+      "Konsulat Grecji funkcjonował ponownie przy ul. Foksal 16 w latach 1919–1922.",
+      "W 2001 roku Małgorzata Potocka stworzyła Teatr Sabat, działający przy ul. Foksal 16 w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A house at Foksal 16 in Śródmieście. The Greek consulate operated here in 1919-1922, and since 2001 the Sabat Theatre founded by dancer Małgorzata Potocka has been based here.",
+    "ludzie": [
+      {"kto": "Bronisław Brochwicz-Rogoyski", "rola": "projektant domów przy ul. Foksal 16, 18 i 19 oraz Szarej Willi", "wiki": "https://pl.wikipedia.org/wiki/Bronisław_Brochwicz-Rogoyski"},
+      {"kto": "Małgorzata Potocka", "rola": "założycielka Teatru Sabat (2001)", "wiki": "https://pl.wikipedia.org/wiki/Małgorzata_Potocka_(tancerka)"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bronisław Brochwicz-Rogoyski", "url": "https://pl.wikipedia.org/wiki/Bronisław_Brochwicz-Rogoyski"},
+      {"tytul": "Wikipedia: Ambasada Grecji w Polsce", "url": "https://pl.wikipedia.org/wiki/Ambasada_Grecji_w_Polsce"},
+      {"tytul": "Wikipedia: Małgorzata Potocka (tancerka)", "url": "https://pl.wikipedia.org/wiki/Małgorzata_Potocka_(tancerka)"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdania o Ambasadzie Grecji (1903–1905, róg Trębackiej 4) urwane, pominięte. Adres 16 przy projektach Brochwicza: lista urwana w paczce."
+  },
+  {
+    "id": "budynek-frascati-2",
+    "nazwa": "Budynek przy ul. Frascati 2",
+    "name_en": "Building at Frascati 2",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Frascati 2",
+    "adres_historyczny": null,
+    "lat": 52.2265206,
+    "lon": 21.0264322,
+    "lokalizacja": "dokladna",
+    "okres": "1933–1948",
+    "istnieje": null,
+    "fakty": [
+      "Jan Koelichen mieszkał wówczas przy Alei Frascati 2 (zdanie bez daty).",
+      "Ambasada Wielkiej Brytanii mieściła się przy ul. Frascati 2 w latach 1933–1937.",
+      "Od czerwca 1948 roku Albert Wojciechowski pracował w Biurze Rewindykacji UNRRA Demobilu I Reliefu przy ul. Frascati 2, jako kierownik Referatu Transportu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building at Frascati 2 in Śródmieście. The British Embassy was based here in 1933-1937, and from June 1948 the UNRRA Restitution Office operated from here.",
+    "ludzie": [
+      {"kto": "Jan Koelichen", "rola": "mieszkał przy Alei Frascati 2", "wiki": "https://pl.wikipedia.org/wiki/Jan_Koelichen"},
+      {"kto": "Albert Wojciechowski", "rola": "kierownik Referatu Transportu w Biurze Rewindykacji UNRRA Demobilu I Reliefu", "wiki": "https://pl.wikipedia.org/wiki/Albert_Wojciechowski"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Jan Koelichen", "url": "https://pl.wikipedia.org/wiki/Jan_Koelichen"},
+      {"tytul": "Wikipedia: Ambasada Wielkiej Brytanii w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ambasada_Wielkiej_Brytanii_w_Warszawie"},
+      {"tytul": "Wikipedia: Albert Wojciechowski", "url": "https://pl.wikipedia.org/wiki/Albert_Wojciechowski"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdania o Kancelarii Sejmu (użytkuje budynki przy Frascati 2) i o przeniesieniu Ambasady Wielkiej Brytanii z Pięknej 6 pominięte: urwane lub same siedziby. Okres 1933–1948 z dat zdań."
+  },
+  {
+    "id": "panorama-karowa-18a",
+    "nazwa": "Gmach Panoramy przy ul. Karowej 18a",
+    "name_en": "Panorama building at Karowa 18a",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karowa 18a",
+    "adres_historyczny": null,
+    "lat": 52.242631,
+    "lon": 21.0173649,
+    "lokalizacja": "dokladna",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "10 sierpnia 1922 roku dyrektor Mieczysław Zudar wydzierżawił od Towarzystwa Teatrów Stołecznych salę w gmachu Panoramy przy Karowej 18a, zajmując dawny Teatr Maska (Teatr Stańczyk).",
+      "Sala kinowa w gmachu Panoramy, w dawnym Teatrze Artystów, mieściła się przy ul. Karowej 18a.",
+      "Od 2018 roku Filip Gębski prowadzi przy ul. Karowej 18a wspólne atelier (drugie nazwisko urwane w paczce)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Panorama building at Karowa 18a, part of the complex with Karowa 18. From 1922 the Stańczyk theatre leased a hall here, and a cinema was later located in the former Teatr Artystów.",
+    "ludzie": [
+      {"kto": "Mieczysław Zudar", "rola": "dyrektor teatru, który wydzierżawił salę w gmachu Panoramy w 1922 roku", "wiki": null},
+      {"kto": "Jerzy Kuźmienko", "rola": "współtwórca budynku wielorodzinnego przy ul. Karowej 18a (zdanie urwane)", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Kuźmienko"},
+      {"kto": "Filip Gębski", "rola": "prowadzi wspólne atelier przy Karowej 18a od 2018 roku", "wiki": "https://pl.wikipedia.org/wiki/Filip_Gębski"}
+    ],
+    "dawne_nazwy": ["Teatr Maska", "Teatr Artystów", "Panorama"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Stańczyk", "url": "https://pl.wikipedia.org/wiki/Teatr_Stańczyk"},
+      {"tytul": "Wikipedia: Kina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kina_w_Warszawie"},
+      {"tytul": "Wikipedia: Jerzy Kuźmienko", "url": "https://pl.wikipedia.org/wiki/Jerzy_Kuźmienko"},
+      {"tytul": "Wikipedia: Filip Gębski", "url": "https://pl.wikipedia.org/wiki/Filip_Gębski"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Ten sam kompleks Panoramy co Karowa 18 (Paderewski); w paczce adresy 18 i 18a są osobne. Zdanie o Kuźmience zawiera urwane nazwiska współpracowników."
+  },
+  {
+    "id": "areszt-mbp-koszykowa-6",
+    "nazwa": "Areszt MBP przy ul. Koszykowej 6",
+    "name_en": "Ministry of Public Security detention centre at Koszykowa 6",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koszykowa 6",
+    "adres_historyczny": null,
+    "lat": 52.2205752,
+    "lon": 21.0235249,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce",
+    "istnieje": null,
+    "fakty": [
+      "Ambasada Argentyny mieściła się przy ul. Koszykowej 6 w latach 1936–1937.",
+      "Irena Tomalak była w śledztwie przetrzymywana w areszcie Ministerstwa Bezpieczeństwa Publicznego przy ul. Koszykowej 6 i przesłuchiwana w procesach dwóch komendantów WiN.",
+      "Makary Sieradzki spędził 7 dni w piwnicy MBP przy ul. Koszykowej 6 w Warszawie; łącznie w więzieniu 9 lat i 5 dni."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ministry of Public Security detention facility at Koszykowa 6. Irena Tomalak was held here during her investigation, and Makary Sieradzki spent seven days in the ministry's cellar.",
+    "ludzie": [
+      {"kto": "Irena Tomalak", "rola": "przetrzymywana w areszcie MBP w śledztwie", "wiki": "https://pl.wikipedia.org/wiki/Irena_Tomalak"},
+      {"kto": "Makary Sieradzki", "rola": "7 dni w piwnicy MBP przy ul. Koszykowej 6", "wiki": "https://pl.wikipedia.org/wiki/Makary_Sieradzki"}
+    ],
+    "dawne_nazwy": ["Ministerstwo Bezpieczeństwa Publicznego (MBP)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Irena Tomalak", "url": "https://pl.wikipedia.org/wiki/Irena_Tomalak"},
+      {"tytul": "Wikipedia: Makary Sieradzki", "url": "https://pl.wikipedia.org/wiki/Makary_Sieradzki"},
+      {"tytul": "Wikipedia: Ambasada Argentyny w Polsce", "url": "https://pl.wikipedia.org/wiki/Ambasada_Argentyny_w_Polsce"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie o ambasadzie Chile (urwane) pominięte. Okres detencji nie podany w paczce."
+  },
+  {
+    "id": "biblioteka-krasinskich-okolnik-9",
+    "nazwa": "Biblioteka Ordynacji Krasińskich przy ul. Okólnik 9",
+    "name_en": "Library of the Krasiński Entail at Okólnik 9",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Okólnik 9",
+    "adres_historyczny": null,
+    "lat": 52.2350744,
+    "lon": 21.0218238,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1944–po 1945",
+    "istnieje": null,
+    "fakty": [
+      "Zbiory biblioteki znajdujące się przy ul. Okólnik 9 zostały w 1944 roku celowo podpalone przez okupanta; zabytek Biblioteki Krasińskich przetrwał do tego czasu.",
+      "Po upadku powstania warszawskiego w Bibliotece Ordynacji Krasińskich przy ul. Okólnik 9 złożono urnę z prochami starodruków i rękopisów spalonych w powstaniu; stała się dwumilionowym obiektem Polony.",
+      "Po upadku powstania zbiory Muzeum Polskiego w Rapperswilu znalazły się w gmachu Biblioteki Ordynacji Krasińskich przy ul. Okólnik 9 (początek zdania urwany).",
+      "Po wojnie Tadeusz Gronowski wrócił do pracy w nowym lokalu przy ul. Okólnik 9 i tworzył tam do końca życia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Krasiński Entail library at Okólnik 9 in Śródmieście. Its collections were deliberately burned by the Germans in 1944, and the urn with ashes of the burnt books became the two-millionth item in the Polona digital library.",
+    "ludzie": [
+      {"kto": "Tadeusz Gronowski", "rola": "pracował w bibliotece przy Okólniku 9 po wojnie", "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Gronowski"}
+    ],
+    "dawne_nazwy": ["Biblioteka Ordynacji Krasińskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kras 52", "url": "https://pl.wikipedia.org/wiki/Kras_52"},
+      {"tytul": "Wikipedia: Polona", "url": "https://pl.wikipedia.org/wiki/Polona"},
+      {"tytul": "Wikipedia: Muzeum Polskie w Rapperswilu", "url": "https://pl.wikipedia.org/wiki/Muzeum_Polskie_w_Rapperswilu"},
+      {"tytul": "Wikipedia: Tadeusz Gronowski", "url": "https://pl.wikipedia.org/wiki/Tadeusz_Gronowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie o Muzeum w Rapperswilu zaczyna się urwanym fragmentem: przepisano tylko końcówkę. „Po wojnie” w zdaniu Gronowskiego bez daty."
+  },
+  {
+    "id": "budynek-pkpg-trzech-krzyzy-3",
+    "nazwa": "Budynek Państwowej Komisji Planowania Gospodarczego (pl. Trzech Krzyży 3/5)",
+    "name_en": "State Commission for Economic Planning building (Trzech Krzyży Square 3/5)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Trzech Krzyży 3",
+    "adres_historyczny": "pl. Trzech Krzyży 3/5",
+    "lat": 52.2276905,
+    "lon": 21.0227282,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ministerstwo Rozwoju ma siedzibę w budynku Państwowej Komisji Planowania Gospodarczego przy pl. Trzech Krzyży 3/5.",
+      "Kino Iluzjon działało w sali „Pod Kopułą” w budynku PKPG przy pl. Trzech Krzyży 3/5 (początek zdania urwany)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The building of the State Commission for Economic Planning on Trzech Krzyży Square. It houses the Ministry of Development today, and the Iluzjon cinema used its 'Under the Dome' hall here.",
+    "ludzie": [
+      {"kto": "Stanisław Bieńkuński", "rola": "związany z PKPG przy pl. Trzech Krzyży 3–5 (zdanie urwane)", "wiki": null},
+      {"kto": "Stanisław Rychłowski", "rola": "związany z PKPG przy pl. Trzech Krzyży 3–5 (zdanie urwane)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Państwowa Komisja Planowania Gospodarczego (PKPG)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Państwowa Komisja Planowania Gospodarczego", "url": "https://pl.wikipedia.org/wiki/Państwowa_Komisja_Planowania_Gospodarczego"},
+      {"tytul": "Wikipedia: Ministerstwo Rozwoju", "url": "https://pl.wikipedia.org/wiki/Ministerstwo_Rozwoju"},
+      {"tytul": "Wikipedia: Kino Iluzjon", "url": "https://pl.wikipedia.org/wiki/Kino_Iluzjon"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord uboższy: paczka daje dwa fakty. Ministerstwo Rozwoju, Pracy i Technologii (wcześniejsza nazwa) też miało tu siedzibę. Dwa zdania z nazwiskami urwane."
+  },
+  {
+    "id": "kamienica-smolna-36",
+    "nazwa": "Kamienica przy ul. Smolnej 36 (oficyna)",
+    "name_en": "Tenement house at Smolna 36 (side wing)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Smolna 36",
+    "adres_historyczny": null,
+    "lat": 52.2328554,
+    "lon": 21.0220365,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce",
+    "istnieje": null,
+    "fakty": [
+      "Karol Tchorek pracował w XX wieku w oficynie kamienicy przy ul. Smolnej 36 (zdanie urwane).",
+      "W 1990 roku warszawska pracownia Karola Tchorka mieściła się przy ul. Smolnej 36 (zdanie urwane).",
+      "Torsten Vingqvist mieszkał przy ul. Smolnej 36, zanim do końca życia przeniósł się do siedziby przedsiębiorstwa przy ul. Zielnej 37.",
+      "Jan Michalski z żoną zamieszkali przy ul. Smolnej 36, naprzeciwko gmachu Muzeum Narodowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement house at Smolna 36 in Śródmieście, home to the Warsaw studio of sculptor Karol Tchorek in 1990. Torsten Vingqvist lived here before moving to the company headquarters at Zielna 37. Publisher Jan Michalski also lived here.",
+    "ludzie": [
+      {"kto": "Karol Tchorek", "rola": "artysta; pracownia w oficynie kamienicy", "wiki": "https://pl.wikipedia.org/wiki/Karol_Tchorek"},
+      {"kto": "Torsten Vingqvist", "rola": "mieszkał tu przed przeprowadzką do siedziby przedsiębiorstwa przy Zielnej 37", "wiki": "https://pl.wikipedia.org/wiki/Torsten_Vingqvist"},
+      {"kto": "Jan Michalski (wydawca)", "rola": "zamieszkał z żoną przy ul. Smolnej 36", "wiki": "https://pl.wikipedia.org/wiki/Jan_Michalski_(wydawca)"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Karol Tchorek", "url": "https://pl.wikipedia.org/wiki/Karol_Tchorek"},
+      {"tytul": "Wikipedia: Torsten Vingqvist", "url": "https://pl.wikipedia.org/wiki/Torsten_Vingqvist"},
+      {"tytul": "Wikipedia: Jan Michalski (wydawca)", "url": "https://pl.wikipedia.org/wiki/Jan_Michalski_(wydawca)"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dwa zdania o Tchorku urwane: podano tylko to, co wynika z fragmentów. Daty zamieszkania Michalskiego nie ma w paczce."
+  },
+  {
+    "id": "budynek-spokojna-15",
+    "nazwa": "Budynek przy ul. Spokojnej 15 (dawne Miejskie Zakłady Sanitarne, dziś ASP)",
+    "name_en": "Building at Spokojna 15 (former Municipal Sanitary Works, today ASP)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Spokojna 15",
+    "adres_historyczny": null,
+    "lat": 52.2519379,
+    "lon": 20.975337,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1936 roku Antoni Gryzina-Lasek był pełniącym obowiązki kierownika Miejskich Zakładów Sanitarnych przy ul. Spokojnej 15 w Warszawie.",
+      "Wydział Sztuki Mediów Akademii Sztuk Pięknych w Warszawie ma swoją siedzibę przy ul. Spokojnej 15.",
+      "Wydział Rzeźby ASP korzysta z budynków przy Wybrzeżu Kościuszkowskim 37 oraz przy ul. Spokojnej 15.",
+      "Dariusz Krzysztof Zawiślak uroczyście otworzył przy ul. Spokojnej 15 Woody Allen Square, rok po wcześniejszym wydarzeniu, którego data nie pada w paczce."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building on Spokojna 15 in Wola. In 1936 it housed the Municipal Sanitary Works, and today it is used by the Academy of Fine Arts in Warsaw. Woody Allen Square was opened here by Dariusz Krzysztof Zawiślak.",
+    "ludzie": [
+      {"kto": "Antoni Gryzina-Lasek", "rola": "pełniący obowiązki kierownika Miejskich Zakładów Sanitarnych w 1936 roku", "wiki": "https://pl.wikipedia.org/wiki/Antoni_Gryzina-Lasek"},
+      {"kto": "Dariusz Krzysztof Zawiślak", "rola": "otworzył Woody Allen Square przy ul. Spokojnej 15", "wiki": "https://pl.wikipedia.org/wiki/Dariusz_Krzysztof_Zawiślak"}
+    ],
+    "dawne_nazwy": ["Miejskie Zakłady Sanitarne"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akademia Sztuk Pięknych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Akademia_Sztuk_Pięknych_w_Warszawie"},
+      {"tytul": "Wikipedia: Antoni Gryzina-Lasek", "url": "https://pl.wikipedia.org/wiki/Antoni_Gryzina-Lasek"},
+      {"tytul": "Wikipedia: Dariusz Krzysztof Zawiślak", "url": "https://pl.wikipedia.org/wiki/Dariusz_Krzysztof_Zawiślak"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Data otwarcia Woody Allen Square (rok po wcześniejszym wydarzeniu) nieokreślona w paczce. Przy ul. Spokojnej 15 mieści się także wydział ASP: zostawiono jako fakt z zdania."
+  },
+  {
+    "id": "budynek-nuncjatury-szucha-12",
+    "nazwa": "Budynek Nuncjatury Apostolskiej przy al. Szucha 12",
+    "name_en": "Apostolic Nunciature building at Szucha 12",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleja Jana Chrystiana Szucha 12",
+    "adres_historyczny": null,
+    "lat": 52.2151194,
+    "lon": 21.0233268,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Siedziba Nuncjatury Apostolskiej w Polsce znajduje się przy al. Szucha 12 w Warszawie.",
+      "Od wznowienia stosunków dyplomatycznych między RP a Stolicą Apostolską w 1989 roku budynek przy al. Szucha 12 jest siedzibą nuncjatury (zdanie urwane).",
+      "W czerwcu 1946 roku Okręgowa Komisja Badania Zbrodni Niemieckich w Warszawie odnotowała w protokole prochy ludzkie odnalezione w piwnicy przy al. Szucha 12/14 (ciężar w zdaniu urwany).",
+      "Budynek przy al. Szucha 12 kupił Episkopat Polski za 70 tys. dolarów od Maksymiliana i Tekli z Węgierków Jezierskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Apostolic Nunciature in Poland at al. Szucha 12. After diplomatic relations were restored in 1989, the building became the nunciature; a 1946 report records human remains found in a cellar at Szucha 12/14.",
+    "ludzie": [
+      {"kto": "Paul Otto Geibel", "rola": "wymieniony w swoim artykule w związku z prochami w piwnicy przy al. Szucha 12/14", "wiki": "https://pl.wikipedia.org/wiki/Paul_Otto_Geibel"},
+      {"kto": "Maksymilian Jezierski", "rola": "sprzedał budynek Episkopatowi Polski (wraz z Teklą)", "wiki": null},
+      {"kto": "Tekla z Węgierków Jezierska", "rola": "sprzedała budynek Episkopatowi Polski (wraz z Maksymilianem)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nuncjatura Apostolska w Polsce", "url": "https://pl.wikipedia.org/wiki/Nuncjatura_Apostolska_w_Polsce"},
+      {"tytul": "Wikipedia: Paul Otto Geibel", "url": "https://pl.wikipedia.org/wiki/Paul_Otto_Geibel"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zakup przez Episkopat (70 tys. dolarów) pochodzi ze zdania o nuncjaturze z Książęcej 21; w paczce budynek opisany jako „przy al.” z urwanym adresem: przypisanie do Szucha 12 domniemane, sprawdzić. Zdanie o Geiblu i prochach: podmiot niejasny."
+  },
+  {
+    "id": "dom-generalski-szucha-16",
+    "nazwa": "Kamienica i Dom Generalski przy al. Szucha 16",
+    "name_en": "Tenement house and Generals' House at Szucha 16",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleja Jana Chrystiana Szucha 16",
+    "adres_historyczny": null,
+    "lat": 52.2175553,
+    "lon": 21.0242374,
+    "lokalizacja": "dokladna",
+    "okres": "1939",
+    "istnieje": null,
+    "fakty": [
+      "2 kwietnia 1939 roku Symeon Kazimierz Werner był pośrednim świadkiem samobójstwa Walerego Sławka, który mieszkał w mieszkaniu powyżej, w kamienicy przy al. Szucha 16.",
+      "Henryk Czarnik zamieszkał u ojczyma w Domu Generalskim przy al. Szucha 16.",
+      "Do 1939 roku Andrzej Mozołowski mieszkał z rodziną w kamienicy przy al. Szucha 16."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement house and the Generals' House at Szucha 16 in Śródmieście. On 2 April 1939 one neighbour's suicide was witnessed here by Symeon Kazimierz Werner; Henryk Czarnik lived with his stepfather in the Generals' House.",
+    "ludzie": [
+      {"kto": "Symeon Kazimierz Werner", "rola": "mieszkał w kamienicy; pośredni świadek samobójstwa 2 kwietnia 1939", "wiki": "https://pl.wikipedia.org/wiki/Symeon_Kazimierz_Werner"},
+      {"kto": "Walery Sławek", "rola": "popełnił samobójstwo 2 kwietnia 1939 w mieszkaniu w tym budynku (w paczce: „Walerego Sławka”)", "wiki": null},
+      {"kto": "Henryk Czarnik", "rola": "zamieszkał u ojczyma w Domu Generalskim", "wiki": "https://pl.wikipedia.org/wiki/Henryk_Czarnik"},
+      {"kto": "Andrzej Mozołowski", "rola": "mieszkał z rodziną w kamienicy do 1939 roku", "wiki": "https://pl.wikipedia.org/wiki/Andrzej_Mozołowski"}
+    ],
+    "dawne_nazwy": ["Dom Generalski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Symeon Kazimierz Werner", "url": "https://pl.wikipedia.org/wiki/Symeon_Kazimierz_Werner"},
+      {"tytul": "Wikipedia: Henryk Czarnik", "url": "https://pl.wikipedia.org/wiki/Henryk_Czarnik"},
+      {"tytul": "Wikipedia: Andrzej Mozołowski", "url": "https://pl.wikipedia.org/wiki/Andrzej_Mozołowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wpis o Walerym Sławku (rola wynika ze zdania o Wernerze) bez artykułu w paczce. Okres „1939” z dat zdań."
+  },
+  {
+    "id": "budynek-szucha-7",
+    "nazwa": "Budynek przy al. Szucha 7 (dawne Przedstawicielstwo Handlowe ZSRR)",
+    "name_en": "Building at Szucha 7 (former Soviet trade representation)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleja Jana Chrystiana Szucha 7",
+    "adres_historyczny": null,
+    "lat": 52.2149483,
+    "lon": 21.0219303,
+    "lokalizacja": "dokladna",
+    "okres": "1946–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przedstawicielstwo Handlowe ZSRR działało w al. Szucha 7 w latach 1946–1976.",
+      "Od 1996 roku budynek przy al. Szucha 7 zajmuje Ambasada Ukrainy w Polsce."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building at Szucha 7 that housed the Soviet trade representation from 1946 to 1976. Since 1996 it has been the seat of the Embassy of Ukraine in Poland.",
+    "ludzie": [],
+    "dawne_nazwy": ["Przedstawicielstwo Handlowe ZSRR"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ambasada Ukrainy w Polsce", "url": "https://pl.wikipedia.org/wiki/Ambasada_Ukrainy_w_Polsce"},
+      {"tytul": "Wikipedia: Ambasada Rosji w Polsce", "url": "https://pl.wikipedia.org/wiki/Ambasada_Rosji_w_Polsce"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord z dwoma faktami. Fragment o Edwardzie Zachariaszu Ebera (urwany, z nawiasem) nie wpisany. Zdania o ambasadzie w paczce są w obcym alfabecie w nawiasach: pominięte."
+  },
+  {
+    "id": "mala-past-felinskiego-39",
+    "nazwa": "Mała PAST-a przy ul. Felińskiego 39",
+    "name_en": "Small PAST building at Feliński 39 (Żoliborz)",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Alojzego Felińskiego 39",
+    "adres_historyczny": null,
+    "lat": 52.265937,
+    "lon": 20.9853393,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce",
+    "istnieje": null,
+    "fakty": [
+      "Polska Akcyjna Spółka Telefoniczna miała budynki m.in. przy ul. Brzeskiej 24 i ul. A. Felińskiego 39 (kolejna lokalizacja urwana).",
+      "W powstaniu oddział „Sokoła” (zgrupowanie „Żaglowiec”) obsadził budynek PAST-y przy ul. Felińskiego 39."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small PAST telephone building at Alojzy Feliński 39 in Żoliborz. During the Warsaw Uprising the Sokół unit of the Żaglowiec group held it.",
+    "ludzie": [
+      {"kto": "Władysław Jasiński (oficer artylerii)", "rola": "związany w artykule z małą PAST-ą przy ul. Felińskiego 39 (zdanie urwane)", "wiki": "https://pl.wikipedia.org/wiki/Władysław_Jasiński_(oficer_artylerii)"}
+    ],
+    "dawne_nazwy": ["PAST (Polska Akcyjna Spółka Telefoniczna)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Polska Akcyjna Spółka Telefoniczna", "url": "https://pl.wikipedia.org/wiki/Polska_Akcyjna_Spółka_Telefoniczna"},
+      {"tytul": "Wikipedia: Zgrupowanie „Żaglowiec”", "url": "https://pl.wikipedia.org/wiki/Zgrupowanie_„Żaglowiec”"},
+      {"tytul": "Wikipedia: Władysław Jasiński (oficer artylerii)", "url": "https://pl.wikipedia.org/wiki/Władysław_Jasiński_(oficer_artylerii)"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord z dwoma faktami. Zdanie o Jasińskim urwane przed funkcją. Nazwa „Sokół” z paczki bez dalszych szczegółów. Dzielnica z bloku: Żoliborz."
+  },
+  {
+    "id": "stara-prochownia-bolesc-2",
+    "nazwa": "Budynek przy ul. Boleść 2 (Stara Prochownia)",
+    "name_en": "Building at Boleść 2 (Old Powder Magazine)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Boleść 2",
+    "adres_historyczny": null,
+    "lat": 52.2520395,
+    "lon": 21.0119542,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tablica pamiątkowa batalionu „Dzik” (Wojskowa Służba Ochrony Powstania) znajduje się na frontowej ścianie budynku przy ul. Boleść 2.",
+      "W 2024 roku w Galerii Stara Prochownia SCEK przy ul. Boleść 2 odbyła się wystawa wykładowców Wydziału Konserwacji i Restauracji Dzieł Sztuki ASP, pt. ...(tytuł urwany)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Old Powder Magazine at Boleść 2 houses the Galeria Stara Prochownia SCEK. A plaque to the Dzik battalion of the Wojskowa Służba Ochrony Powstania is on its front wall.",
+    "ludzie": [
+      {"kto": "Paweł Marek Jakubowski", "rola": "wystawiał w Galerii Stara Prochownia SCEK w 2024 roku", "wiki": "https://pl.wikipedia.org/wiki/Paweł_Marek_Jakubowski"}
+    ],
+    "dawne_nazwy": ["Stara Prochownia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Batalion „Dzik”", "url": "https://pl.wikipedia.org/wiki/Batalion_„Dzik”"},
+      {"tytul": "Wikipedia: Wojskowa Służba Ochrony Powstania", "url": "https://pl.wikipedia.org/wiki/Wojskowa_Służba_Ochrony_Powstania"},
+      {"tytul": "Wikipedia: Paweł Marek Jakubowski", "url": "https://pl.wikipedia.org/wiki/Paweł_Marek_Jakubowski"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dwa fakty (tablica pojawia się w dwóch zdaniach jako jedna). Okres „1944” z tablicy batalionu. Tytuł wystawy urwany."
+  },
+  {
+    "id": "kamienica-chmielna-26",
+    "nazwa": "Kamienica przy ul. Chmielnej 26 (szpital polowy „Bakcyl”)",
+    "name_en": "Tenement house at Chmielna 26 (Bakcyl field hospital)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Chmielna 26",
+    "adres_historyczny": null,
+    "lat": 52.23218,
+    "lon": 21.0133442,
+    "lokalizacja": "dokladna",
+    "okres": "1884–1944",
+    "istnieje": null,
+    "fakty": [
+      "Bracia Pakulscy zamieszkiwali w kamienicy przy Chmielnej 26 (rok 1884 podany w nawiasie w paczce).",
+      "Urszula Niepokojczycka pracowała w szpitalu polowym przy ul. Chmielnej 26 w oddziale „Bakcyl” (Sanitariat Okręgu Warszawskiego AK).",
+      "W czasie powstania warszawskiego Jerzy Choróbski prowadził tu szpital polowy przy ul. Chmielnej 26."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement house at Chmielna 26 that served as a field hospital of the Bakcyl unit (Warsaw District Army Medical Service) in the 1944 uprising. The Pakulski brothers lived here earlier.",
+    "ludzie": [
+      {"kto": "Bracia Pakulscy", "rola": "zamieszkiwali kamienicę przy Chmielnej 26", "wiki": "https://pl.wikipedia.org/wiki/Bracia_Pakulscy"},
+      {"kto": "Urszula Niepokojczycka", "rola": "pracowała w szpitalu polowym „Bakcyl” przy Chmielnej 26; była też komendantką Szpitala PCK (adres urwany)", "wiki": "https://pl.wikipedia.org/wiki/Urszula_Niepokojczycka"},
+      {"kto": "Jerzy Choróbski", "rola": "prowadził szpital polowy przy Chmielnej 26 w powstaniu", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Choróbski"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bracia Pakulscy", "url": "https://pl.wikipedia.org/wiki/Bracia_Pakulscy"},
+      {"tytul": "Wikipedia: Urszula Niepokojczycka", "url": "https://pl.wikipedia.org/wiki/Urszula_Niepokojczycka"},
+      {"tytul": "Wikipedia: Jerzy Choróbski", "url": "https://pl.wikipedia.org/wiki/Jerzy_Choróbski"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rok 1884 w nawiasie niepewny. Okres 1884–1944: początek z tego nawiasu, koniec z powstania."
+  },
+  {
+    "id": "szpital-powstancze-chmielna-28",
+    "nazwa": "Szpital powstańczy przy ul. Chmielnej 28",
+    "name_en": "Insurgent hospital at Chmielna 28",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Chmielna 28",
+    "adres_historyczny": null,
+    "lat": 52.2321404,
+    "lon": 21.0131183,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "istnieje": null,
+    "fakty": [
+      "Stanisław Silkiewicz zmarł 17 września (1944) z powodu ran w powstańczym szpitalu przy ul. Chmielnej 28.",
+      "Jerzy Zański uczestniczył w powstaniu w oddziale „Bakcyl” w szpitalu polowym przy ul. Chmielnej 28 (dzielnica Śródmieście Północ).",
+      "Kalendarium powstania (8 września 1944) wspomina szpital powstańczy przy ul. Chmielnej 28 (zdanie urwane)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An insurgent hospital at Chmielna 28 during the Warsaw Uprising. Stanisław Silkiewicz died of wounds here on 17 September 1944, and Jerzy Zański served at the hospital with the Bakcyl unit.",
+    "ludzie": [
+      {"kto": "Stanisław Silkiewicz", "rola": "zmarł z ran 17 września w powstańczym szpitalu przy Chmielnej 28", "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Silkiewicz"},
+      {"kto": "Jerzy Zański", "rola": "w oddziale „Bakcyl” w szpitalu polowym przy Chmielnej 28", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Zański"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 8 września", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_8_września"},
+      {"tytul": "Wikipedia: Stanisław Silkiewicz", "url": "https://pl.wikipedia.org/wiki/Stanisław_Silkiewicz"},
+      {"tytul": "Wikipedia: Jerzy Zański", "url": "https://pl.wikipedia.org/wiki/Jerzy_Zański"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie z kalendarium (8 września) urwane. Rok 1944 z kontekstu powstania."
+  },
+  {
+    "id": "kino-atlantic-chmielna-33",
+    "nazwa": "Kino Atlantic przy ul. Chmielnej 33",
+    "name_en": "Atlantic cinema at Chmielna 33",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Chmielna 33",
+    "adres_historyczny": null,
+    "lat": 52.2315835,
+    "lon": 21.0125319,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kino Atlantic, najstarsze kino Warszawy, mieści się przy ul. Chmielnej 33 i ma cztery sale kinowe z 794 miejscami.",
+      "Kino Non Stop znajdowało się na ul. Chmielnej 33 i sąsiadowało przez ścianę z Kinem Atlantic."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Atlantic cinema at Chmielna 33, described as the oldest cinema in Warsaw, with four screens and 794 seats. The former Non Stop cinema was next door.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kino Non Stop"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kina_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Paczka daje tylko dwa fakty (trzy zdania powtarzają informację o Atlantic). Data otwarcia nie pada w paczce."
+  },
+  {
+    "id": "kamienica-chmielna-35",
+    "nazwa": "Kamienica przy ul. Chmielnej 35",
+    "name_en": "Tenement house at Chmielna 35",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Chmielna 35",
+    "adres_historyczny": null,
+    "lat": 52.2316834,
+    "lon": 21.0121247,
+    "lokalizacja": "dokladna",
+    "okres": "1905–1925",
+    "istnieje": null,
+    "fakty": [
+      "W 1905 roku rodzina Jadwigi Smosarskiej wróciła na stałe do Warszawy i zamieszkała w kamienicy przy ul. Chmielnej 35.",
+      "W 1925 roku gabinet lekarski Juliana Lindenszata mieścił się przy ul. Chmielnej 35; w latach 1930–1939 przeniósł się na Marszałkowską 111 (Światowid).",
+      "Julian Lindenszat mieszkał w Warszawie przy ul. Chmielnej 35."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement house at Chmielna 35. Jadwiga Smosarska's family settled here in 1905, and in 1925 the doctor Julian Lindenszat had his surgery here.",
+    "ludzie": [
+      {"kto": "Jadwiga Smosarska", "rola": "rodzina zamieszkała w kamienicy w 1905 roku", "wiki": "https://pl.wikipedia.org/wiki/Jadwiga_Smosarska"},
+      {"kto": "Julian Lindenszat", "rola": "lekarz; gabinet przy Chmielnej 35 w 1925 roku, mieszkał tu", "wiki": "https://pl.wikipedia.org/wiki/Julian_Lindenszat"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Julian Lindenszat", "url": "https://pl.wikipedia.org/wiki/Julian_Lindenszat"},
+      {"tytul": "Wikipedia: Jadwiga Smosarska", "url": "https://pl.wikipedia.org/wiki/Jadwiga_Smosarska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres 1905–1925 z dat zdań. Zdanie „mieszkał w Warszawie przy ul. Chmielnej 35” bez daty."
+  },
+  {
+    "id": "kamienica-pod-zegarem-chlodna-20",
+    "nazwa": "Kamienica pod Zegarem przy ul. Chłodnej 20",
+    "name_en": "Tenement house 'Under the Clock' at Chłodna 20",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Chłodna 20",
+    "adres_historyczny": null,
+    "lat": 52.2378435,
+    "lon": 20.9905662,
+    "lokalizacja": "dokladna",
+    "okres": "1941–1944",
+    "istnieje": null,
+    "fakty": [
+      "Stefan Bałuk kierował pracownią fotograficzną przy ul. Chłodnej 20 w Wydziale Legalizacji i Techniki Oddziału II KG AK, który produkował fałszywe dokumenty i prowadził wywiad.",
+      "Laboratorium fotograficzne Stefana Bałuka mieściło się w kamienicy przy ul. Chłodnej 20.",
+      "13 grudnia 1941 roku Felicja Czerniaków z rodziną przeniosła się do kamienicy pod Zegarem przy ul. Chłodnej 20 i zajęła lokal na pierwszym piętrze."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The 'Under the Clock' tenement house at Chłodna 20 in Wola. Stefan Bałuk's photographic lab for the Home Army's intelligence section was here, and Felicja Czerniaków moved in with her family in December 1941.",
+    "ludzie": [
+      {"kto": "Stefan Bałuk", "rola": "kierownik pracowni fotograficznej Wydziału Legalizacji i Techniki Oddziału II KG AK", "wiki": "https://pl.wikipedia.org/wiki/Stefan_Bałuk"},
+      {"kto": "Felicja Czerniaków", "rola": "zamieszkała w kamienicy od 13 grudnia 1941", "wiki": "https://pl.wikipedia.org/wiki/Felicja_Czerniaków"},
+      {"kto": "Stanisław Jankowski „Agaton”", "rola": "dowodził Oddziałem II Komendy Głównej AK, do którego należał Wydział Legalizacji i Techniki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica pod Zegarem"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stefan Bałuk", "url": "https://pl.wikipedia.org/wiki/Stefan_Bałuk"},
+      {"tytul": "Wikipedia: Felicja Czerniaków", "url": "https://pl.wikipedia.org/wiki/Felicja_Czerniaków"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres 1941–1944 z dat zdań i kontekstu (wojna i AK). Dwa zdania o pracowni Bałuka powtarzają adres."
+  },
+  {
+    "id": "brama-dzielna-21",
+    "nazwa": "Brama kamienicy przy ul. Dzielnej 21 (egzekucje w ruinach getta)",
+    "name_en": "Gate of the tenement at Dzielna 21 (executions in the ghetto ruins)",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Dzielna 21",
+    "adres_historyczny": null,
+    "lat": 52.2421932,
+    "lon": 20.9800081,
+    "lokalizacja": "dokladna",
+    "okres": "1943–1944",
+    "istnieje": null,
+    "fakty": [
+      "Kazimierz Smoleński został rozstrzelany w bramie domu przy ul. Dzielnej 21 wraz z kilkudziesięcioma więźniami Pawiaka w pierwszej masowej egzekucji w ruinach getta warszawskiego.",
+      "W bramie kamienicy przy ul. Dzielnej 21 zamordowano w tych egzekucjach 94 osoby."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The gate of a tenement at Dzielna 21 in the Warsaw Ghetto ruins, where Kazimierz Smoleński and dozens of Pawiak prisoners were shot in the first mass execution there. In total 94 people were murdered in this gate in 1943-1944.",
+    "ludzie": [
+      {"kto": "Kazimierz Smoleński", "rola": "rozstrzelany w bramie domu przy Dzielnej 21 w pierwszej masowej egzekucji w ruinach getta", "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Smoleński"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Egzekucje w ruinach getta warszawskiego (1943–1944)", "url": "https://pl.wikipedia.org/wiki/Egzekucje_w_ruinach_getta_warszawskiego_(1943–1944)"},
+      {"tytul": "Wikipedia: Kazimierz Smoleński", "url": "https://pl.wikipedia.org/wiki/Kazimierz_Smoleński"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie o firmie w pobliżu adresu (urwane: „Stanisław Szafnicki”, schrony przeciwgazowe) pominięte: siedziba firmy bez historii miejsca. Dzielnica z bloku: Wola."
+  },
+  {
+    "id": "dom-elektoralna-11",
+    "nazwa": "Dom przy ul. Elektoralnej 11",
+    "name_en": "House at Elektoralna 11",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Elektoralna 11",
+    "adres_historyczny": null,
+    "lat": 52.2410839,
+    "lon": 21.0003984,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce",
+    "istnieje": null,
+    "fakty": [
+      "Szołem Ferber przyjmował przy ul. Elektoralnej 11, zanim został przesiedlony do getta warszawskiego (zdanie urwane).",
+      "Adam Czerniaków przeprowadził się z ul. Wspólnej 58 na ul. Elektoralną 11 (początek zdania urwany).",
+      "Po zamknięciu w getcie Adam Czerniaków wraz z żoną mieszkał początkowo w domu przy ul. Elektoralnej 11."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A house at Elektoralna 11, linked to Szołem Ferber and to Adam Czerniaków, chairman of the Warsaw Jewish Council, who lived here with his wife after the ghetto was closed.",
+    "ludzie": [
+      {"kto": "Szołem Ferber", "rola": "przyjmował przy Elektoralnej 11 przed przesiedleniem do getta", "wiki": "https://pl.wikipedia.org/wiki/Szołem_Ferber"},
+      {"kto": "Adam Czerniaków", "rola": "przeprowadził się na Elektoralną 11; po zamknięciu getta mieszkał tu z żoną", "wiki": "https://pl.wikipedia.org/wiki/Adam_Czerniaków"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szołem Ferber", "url": "https://pl.wikipedia.org/wiki/Szołem_Ferber"},
+      {"tytul": "Wikipedia: Adam Czerniaków", "url": "https://pl.wikipedia.org/wiki/Adam_Czerniaków"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dwa zdania o zdaniu Czerniakowa urwane na początku. Data zamknięcia getta w paczce nie pada."
+  },
+  {
+    "id": "konopczynskiego-3-szpital-polowy",
+    "nazwa": "Kamienica przy ul. Emiliana Konopczyńskiego 3 (szpital polowy)",
+    "name_en": "Tenement house at Emilian Konopczyński 3 (field hospital)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Emiliana Konopczyńskiego 3",
+    "adres_historyczny": null,
+    "lat": 52.2374249,
+    "lon": 21.0220892,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "istnieje": null,
+    "fakty": [
+      "W czasie powstania warszawskiego w kamienicach przy Konopczyńskiego 3 i 5/7 działał szpital polowy.",
+      "Pod opieką szpitala polowego znalazł się także pobliski punkt opatrunkowy przy ul. Konopczyńskiego 3, funkcjonujący od 6 sierpnia (1944).",
+      "3 września 1944 roku, po pożarze wywołanym niemieckim ostrzałem, rannych z budynku przy ul. Konopczyńskiego 3 przeniesiono do piwnicy kamienicy nr 5/7."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement house at Emilian Konopczyński 3 that housed a field hospital in the 1944 uprising. On 3 September a fire from German shelling forced the wounded to be moved to the cellar of No. 5/7.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fundacja Warszawskie Szpitale Polowe", "url": "https://pl.wikipedia.org/wiki/Fundacja_Warszawskie_Szpitale_Polowe"},
+      {"tytul": "Wikipedia: Zbrodnie niemieckie na warszawskim Powiślu (1944)", "url": "https://pl.wikipedia.org/wiki/Zbrodnie_niemieckie_na_warszawskim_Powiślu_(1944)"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres 1944 z kontekstu powstania; daty 6 sierpnia i 3 września z tekstu."
+  },
+  {
+    "id": "dom-filtrowa-7",
+    "nazwa": "Dom przy ul. Filtrowej 7",
+    "name_en": "House at Filtrowa 7",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Filtrowa 7",
+    "adres_historyczny": null,
+    "lat": 52.2185779,
+    "lon": 21.0061244,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty w paczce–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Erwin Brenneisen mieszkał w czasie okupacji przy ul. Filtrowej 7.",
+      "Cyryl Ratajski spędził ostatni rok życia w mieszkaniu Mariana i Anny Reiterów przy ul. Filtrowej 7 (narożnik Lekarskiej).",
+      "Na domu przy ul. Filtrowej 7 odsłonięto tablicę pamiątkową Cyryla Ratajskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A house at Filtrowa 7 (corner of Lekarska street). Erwin Brenneisen lived here during the occupation, and Cyryl Ratajski spent his last year in a flat here. A memorial plaque to Ratajski is on the house.",
+    "ludzie": [
+      {"kto": "Erwin Brenneisen", "rola": "mieszkał tu w czasie okupacji", "wiki": "https://pl.wikipedia.org/wiki/Erwin_Brenneisen"},
+      {"kto": "Cyryl Ratajski", "rola": "ostatni rok życia w mieszkaniu przy Filtrowej 7; tablica pamiątkowa", "wiki": "https://pl.wikipedia.org/wiki/Cyryl_Ratajski"},
+      {"kto": "Marian i Anna Reiterowie", "rola": "gospodarze mieszkania, w którym mieszkał Ratajski", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Erwin Brenneisen", "url": "https://pl.wikipedia.org/wiki/Erwin_Brenneisen"},
+      {"tytul": "Wikipedia: Cyryl Ratajski", "url": "https://pl.wikipedia.org/wiki/Cyryl_Ratajski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data odsłonięcia tablicy nie pada w paczce; okres bez daty początku."
+  },
+  {
+    "id": "gmach-mon-klonowa-1",
+    "nazwa": "Gmach Ministerstwa Obrony Narodowej przy ul. Klonowej 1 (dawny pałacyk MON)",
+    "name_en": "Ministry of National Defence building at Klonowa 1 (former MON palace)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Klonowa 1",
+    "adres_historyczny": null,
+    "lat": 52.2123723,
+    "lon": 21.0258337,
+    "lokalizacja": "dokladna",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tereny między ulicami Belwederską, Klonową, Spacerową i Zawrotną należały częściowo do pałacyku MON przy ul. Klonowej 1, który w okresie międzywojennym był rezydencją marszałka Edwarda Rydza-Śmigłego.",
+      "W 2007 roku w siedzibie MON przy ul. Klonowej 1 podpisano porozumienie między Ministerstwem Obrony Narodowej a Telewizją Polską S.A. (dzień urwany).",
+      "10 listopada 2010 roku na frontonie gmachu MON przy ul. Klonowej 1 odsłonięto tablicę pamiątkową po katastrofie Tu-154 w Smoleńsku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ministry of National Defence building at Klonowa 1, on the site of a palace that was the interwar residence of Marshal Edward Rydz-Śmigły. A memorial plaque to the Smolensk Tu-154 crash victims was unveiled on its front on 10 November 2010.",
+    "ludzie": [
+      {"kto": "Edward Rydz-Śmigły", "rola": "marszałek; w okresie międzywojennym rezydencja w pałacyku MON przy Klonowej 1", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałacyk MON"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ambasada Rosji w Polsce", "url": "https://pl.wikipedia.org/wiki/Ambasada_Rosji_w_Polsce"},
+      {"tytul": "Wikipedia: 2007 w Wojsku Polskim", "url": "https://pl.wikipedia.org/wiki/2007_w_Wojsku_Polskim"},
+      {"tytul": "Wikipedia: Pomniki i tablice pamiątkowe po katastrofie polskiego Tu-154 w Smoleńsku (2010–2011)", "url": "https://pl.wikipedia.org/wiki/Pomniki_i_tablice_pamiątkowe_po_katastrofie_polskiego_Tu-154_w_Smoleńsku_(2010–2011)"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok 2007: z tytułu hasła, dzień urwany. Zdanie o Ambasadzie Rosji (teren między ulicami) przepisano jako tło historyczne."
+  },
+  {
+    "id": "gmach-biblioteki-publicznej-koszykowa-26",
+    "nazwa": "Gmach Biblioteki Publicznej przy ul. Koszykowej 26–28",
+    "name_en": "Public Library building at Koszykowa 26-28",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koszykowa 26",
+    "adres_historyczny": "ul. Koszykowa 26–28",
+    "lat": 52.2224157,
+    "lon": 21.0186258,
+    "lokalizacja": "dokladna",
+    "okres": "1914–1944",
+    "istnieje": null,
+    "fakty": [
+      "W 1914 roku Eugenia Kierbedź ufundowała z funduszu zapisanego przez męża gmach Biblioteki Publicznej w Warszawie przy ul. Koszykowej 26–28.",
+      "Po zamknięciu bibliotek publicznych przez władze okupacyjne w 1942 roku Zofia Warczygłowa-Piotrowska została przeniesiona do Biblioteki Głównej przy ul. Koszykowej 26 i pracowała jako kierownik Kancelarii do wybuchu powstania."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Public Library building at Koszykowa 26-28, funded in 1914 by Eugenia Kierbedź from her late husband's bequest. During the occupation the Main Library was located here, and Zofia Warczygłowa-Piotrowska worked there until the uprising.",
+    "ludzie": [
+      {"kto": "Eugenia Kierbedź", "rola": "ufundowała gmach Biblioteki Publicznej w 1914 roku", "wiki": "https://pl.wikipedia.org/wiki/Eugenia_Kierbedź"},
+      {"kto": "Zofia Warczygłowa-Piotrowska", "rola": "kierownik Kancelarii w Bibliotece Głównej do wybuchu powstania", "wiki": "https://pl.wikipedia.org/wiki/Zofia_Warczygłowa-Piotrowska"}
+    ],
+    "dawne_nazwy": ["Biblioteka Główna"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Eugenia Kierbedź", "url": "https://pl.wikipedia.org/wiki/Eugenia_Kierbedź"},
+      {"tytul": "Wikipedia: Zofia Warczygłowa-Piotrowska", "url": "https://pl.wikipedia.org/wiki/Zofia_Warczygłowa-Piotrowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie o Krzysztofie Gawlikowskim (transmisja na żywo, urwane) pominięte. Okres 1914–1944 z dat zdań."
+  },
+  {
+    "id": "gmach-tkz-kredytowa-1",
+    "nazwa": "Gmach Towarzystwa Kredytowego Ziemskiego w Królestwie Polskim",
+    "name_en": "Building of the Land Credit Society in the Congress Kingdom (Kredytowa 1)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kredytowa 1",
+    "adres_historyczny": null,
+    "lat": 52.2381491,
+    "lon": 21.0121665,
+    "lokalizacja": "dokladna",
+    "okres": "1856–dziś",
+    "istnieje": null,
+    "fakty": [
+      "Gmach Towarzystwa Kredytowego Ziemskiego w Królestwie Polskim wzniesiono w latach 1856–1858 według projektu Henryka Marconiego i Józefa Góreckiego.",
+      "W oficynie gmachu przy ul. Kredytowej 1 mieściła się siedziba wydawnictwa „Rój”.",
+      "W gmachu Państwowego Muzeum Etnograficznego przy ul. Kredytowej 1 mieściła się siedziba miesięcznika „Nieznany Świat”, gdzie rozpoczęto też prezentacje sztuki związanej z jego tematyką."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Land Credit Society building on Kredytowa 1, designed by Henryk Marconi and Józef Górecki in 1856-1858. Later it housed the Rój publishing house and the Ethnographic Museum, where the magazine Nieznany Świat had its seat.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant gmachu (1856–1858)", "wiki": null},
+      {"kto": "Józef Górecki", "rola": "projektant gmachu (1856–1858)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Towarzystwo Kredytowe Ziemskie w Królestwie Polskim"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Towarzystwo Kredytowe Ziemskie w Królestwie Polskim", "url": "https://pl.wikipedia.org/wiki/Towarzystwo_Kredytowe_Ziemskie_w_Królestwie_Polskim"},
+      {"tytul": "Wikipedia: Towarzystwo Wydawnicze „Rój”", "url": "https://pl.wikipedia.org/wiki/Towarzystwo_Wydawnicze_„Rój”"},
+      {"tytul": "Wikipedia: Nieznany Świat", "url": "https://pl.wikipedia.org/wiki/Nieznany_Świat"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy stan budynku w paczce nie wynika wprost (podano Państwowe Muzeum Etnograficzne w czasie przeszłym). Okres „dziś” wpisany tylko jako domyślny: sprawdzić."
+  },
+  {
+    "id": "dom-krucza-3",
+    "nazwa": "Dom przy ul. Kruczej 3",
+    "name_en": "House at Krucza 3",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krucza 3",
+    "adres_historyczny": null,
+    "lat": 52.2240532,
+    "lon": 21.0193257,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "istnieje": null,
+    "fakty": [
+      "17 września 1944 roku poległa Halina Grotowska wraz z siostrą Ireną na ulicy Kruczej 3.",
+      "Armand Vetulani zamieszkiwał w tym czasie przy ul. Kruczej 3."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A house at Krucza 3 in Śródmieście. The sisters Halina and Irena Grotowska were killed here in September 1944 during the uprising. Armand Vetulani lived here at that time.",
+    "ludzie": [
+      {"kto": "Halina Grotowska", "rola": "poległa 17 września 1944 na ul. Kruczej 3 wraz z siostrą", "wiki": "https://pl.wikipedia.org/wiki/Halina_Grotowska"},
+      {"kto": "Irena Grotowska", "rola": "poległa na ul. Kruczej 3 wraz z siostrą Haliną", "wiki": "https://pl.wikipedia.org/wiki/Irena_Grotowska"},
+      {"kto": "Armand Vetulani", "rola": "zamieszkiwał przy ul. Kruczej 3 w tym czasie", "wiki": "https://pl.wikipedia.org/wiki/Armand_Vetulani"}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Irena Grotowska", "url": "https://pl.wikipedia.org/wiki/Irena_Grotowska"},
+      {"tytul": "Wikipedia: Halina Grotowska", "url": "https://pl.wikipedia.org/wiki/Halina_Grotowska"},
+      {"tytul": "Wikipedia: Armand Vetulani", "url": "https://pl.wikipedia.org/wiki/Armand_Vetulani"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dwa fakty, z których jeden to data z wpisu Haliny. „W tym czasie” w zdaniu Vetulaniego bez daty. Rok 1944 z daty."
+  },
+  {
+    "id": "budynek-ksiazeca-21",
+    "nazwa": "Budynek przy ul. Książęcej 21 (nazwa niepełna w paczce)",
+    "name_en": "Building at Książęca 21 (name incomplete in the source)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Książęca 21",
+    "adres_historyczny": null,
+    "lat": 52.2297264,
+    "lon": 21.0238466,
+    "lokalizacja": "dokladna",
+    "okres": "1900–1924",
+    "istnieje": null,
+    "fakty": [
+      "Budynek przy ul. Książęcej 21 wzniesiono w latach 1900–1902 według projektu Tomasza Sariusza-Bielskiego (nazwa obiektu urwana w zdaniu).",
+      "W latach 1919–1924 przy ul. Książęcej 21 mieściła się Nuncjatura Apostolska (zdanie urwane).",
+      "Nuncjaturę przeniesiono następnie do budynku przy al. (adres urwany), zakupionego przez Episkopat Polski za 70 tys. dolarów od Maksymiliana i Tekli z Węgierków Jezierskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building at Książęca 21 in Śródmieście, built in 1900-1902 to a design by Tomasz Sariusz-Bielski. The Apostolic Nunciature was here from 1919 to 1924 before moving to a building bought by the Polish Episcopate.",
+    "ludzie": [
+      {"kto": "Tomasz Sariusz-Bielski", "rola": "architekt budynku wzniesionego w latach 1900–1902", "wiki": "https://pl.wikipedia.org/wiki/Tomasz_Sariusz-Bielski_(architekt)"},
+      {"kto": "Maksymilian Jezierski", "rola": "sprzedał budynek Episkopatowi Polski (z Teklą)", "wiki": null},
+      {"kto": "Tekla z Węgierków Jezierska", "rola": "sprzedała budynek Episkopatowi Polski (z Maksymilianem)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Batalion „Stefan”", "url": "https://pl.wikipedia.org/wiki/Batalion_„Stefan”"},
+      {"tytul": "Wikipedia: Nuncjatura Apostolska w Polsce", "url": "https://pl.wikipedia.org/wiki/Nuncjatura_Apostolska_w_Polsce"},
+      {"tytul": "Wikipedia: Tomasz Sariusz-Bielski (architekt)", "url": "https://pl.wikipedia.org/wiki/Tomasz_Sariusz-Bielski_(architekt)"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Nazwa obiektu urwana w każdym zdaniu (po „Aleksandra”): prawdopodobnie kościół św. Aleksandra, niepotwierdzone w paczce. Adres docelowy nuncjatury (al. ...) urwany, domniemany Szucha 12: wpis w budynku Szucha 12."
+  }
+]

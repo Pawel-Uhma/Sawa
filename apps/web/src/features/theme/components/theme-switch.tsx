@@ -2,20 +2,26 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import { useId } from "react";
+import { useT } from "@/features/i18n";
 import { setThemePreference, useThemePreference } from "../hooks/use-theme";
-import { THEME_PREFERENCE_LABELS, THEME_PREFERENCES } from "../lib/theme";
+import {
+  THEME_PREFERENCE_LABELS,
+  THEME_PREFERENCE_LABELS_EN,
+  THEME_PREFERENCES,
+} from "../lib/theme";
 
 const THUMB_SPRING = { type: "spring", bounce: 0.15, duration: 0.4 } as const;
 
 /** Segmented control like in iOS: Jasny / Ciemny / Auto, the thumb slides to the picked one. */
 export function ThemeSwitch({ className = "" }: { className?: string }) {
+  const t = useT();
   const preference = useThemePreference();
   const isReducedMotion = useReducedMotion();
   const groupName = useId();
 
   return (
     <fieldset className={`grid grid-cols-3 rounded-[11px] bg-tekst/[0.07] p-0.5 ${className}`}>
-      <legend className="sr-only">Wygląd</legend>
+      <legend className="sr-only">{t("Wygląd", "Appearance")}</legend>
       {THEME_PREFERENCES.map((option) => {
         const isSelected = option === preference;
         return (
@@ -40,7 +46,9 @@ export function ThemeSwitch({ className = "" }: { className?: string }) {
                 className="absolute inset-0 rounded-[9px] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.14)]"
               />
             )}
-            <span className="relative">{THEME_PREFERENCE_LABELS[option]}</span>
+            <span className="relative">
+              {t(THEME_PREFERENCE_LABELS[option], THEME_PREFERENCE_LABELS_EN[option])}
+            </span>
           </label>
         );
       })}

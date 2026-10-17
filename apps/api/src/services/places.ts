@@ -16,10 +16,10 @@ export async function listPlaces(
   const found = await places.listInBBox(bbox, interests && tagsOf(interests));
   return {
     type: "FeatureCollection",
-    features: found.map(({ position, id, name, kind, interests, richness }) => ({
+    features: found.map(({ position, id, name, kind, subkind, interests, richness }) => ({
       type: "Feature",
       geometry: { type: "Point", coordinates: toLngLat(position) },
-      properties: { id, name, kind, interests, richness },
+      properties: { id, name, kind, subkind, interests, richness },
     })),
   };
 }

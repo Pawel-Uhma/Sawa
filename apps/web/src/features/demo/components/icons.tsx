@@ -83,6 +83,17 @@ export function BubbleIcon(props: IconProps) {
   );
 }
 
+export function ListenerIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <circle cx="9" cy="6.5" r="2.5" />
+      <path d="M4 21v-2a5 5 0 0 1 10 0v2" />
+      <circle cx="17.5" cy="11" r="2" />
+      <path d="M14 21v-1a3.5 3.5 0 0 1 7 0v1" />
+    </svg>
+  );
+}
+
 export function ShareIcon(props: IconProps) {
   return (
     <svg aria-hidden="true" {...base} {...props}>
@@ -197,6 +208,14 @@ export function ForwardIcon(props: IconProps) {
   return (
     <svg aria-hidden="true" {...base} {...props}>
       <path d="M5 12h12M13 6l6 6-6 6" />
+    </svg>
+  );
+}
+
+export function CloseIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M6 6l12 12M18 6 6 18" />
     </svg>
   );
 }

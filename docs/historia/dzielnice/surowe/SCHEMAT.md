@@ -51,3 +51,10 @@ Paczki `aNN.txt`: blok na adres (`ADRES`, `WSPÓŁRZĘDNE`, `DZIELNICA`) i lista
 - `zrodla`: każdy użyty artykuł jako `{"tytul": "Wikipedia: <Tytuł>", "url": "https://pl.wikipedia.org/wiki/<Tytuł_z_podkreśleniami>"}`.
 - `lat`/`lon` z `WSPÓŁRZĘDNE`, `lokalizacja: dokladna`, `adres_dzis` = adres z bloku.
 - Pomijasz zdania, które podają tylko siedzibę firmy lub instytucji bez historii, i zdania, które ewidentnie dotyczą innego miasta. Adres bez żadnego użytecznego zdania pomijasz.
+
+## Runda 7: Wirtualny Sztetl (sztetl.org.pl, POLIN)
+
+Paczki `sNN.txt`, wyniki do `surowe/sz/sNN-K.json`. Ten sam schemat, bez współrzędnych (`lat`/`lon` = null):
+- `adres_dzis`: dzisiejszy adres „Ulica numer”, jeśli tekst go podaje; `adres_historyczny`: adres przedwojenny (np. „Gęsia 9”). Jeśli jest tylko przedwojenny, wpisz go w oba pola i zaznacz w `uwagi`.
+- Pomijasz obiekty spoza Warszawy i spoza dzielnic Wola, Śródmieście (z Muranowem i Powiślem), Żoliborz, Bielany, Bemowo.
+- `zrodla`: `{"tytul": "Wirtualny Sztetl: <tytuł>", "url": <URL>}`. Wpis jednozdaniowy z księgi adresowej też jest faktem, jeśli ma rok i adres.

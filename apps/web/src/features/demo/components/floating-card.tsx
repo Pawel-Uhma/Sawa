@@ -10,17 +10,18 @@ import {
   useTransform,
 } from "motion/react";
 import { type ReactNode, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useT } from "@/features/i18n";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 
-// Odstęp między dołem karty a górą paska zakładek (karta: 76 px nad marginesem, pasek: 20 + 64 px).
+// Odstęp między dołem karty a dołem ekranu (bottom-3).
 const GAP_PX = 12;
 
 type FloatingCardProps = {
   label: string;
   collapsed: boolean;
   onCollapsedChange: (collapsed: boolean) => void;
-  /** Ile pikseli górnej części karty zostaje nad paskiem zakładek po zwinięciu. */
+  /** Ile pikseli górnej części karty zostaje na ekranie po zwinięciu. */
   peekPx: number;
   /** Co wystaje nad kartą (Sawa z dymkiem). Dostaje postęp zwijania 0–1, żeby mogło znikać razem z kartą. */
   above?: (progress: MotionValue<number>) => ReactNode;
@@ -29,7 +30,7 @@ type FloatingCardProps = {
 };
 
 /**
- * Pływająca karta nad paskiem zakładek. Na telefonie ściąga się ją palcem w dół i chowa za pasek,
+ * Pływająca karta na dole ekranu. Na telefonie ściąga się ją palcem w dół i chowa za krawędź,
  * zostawiając nagłówek; tapnięcie albo ruch w górę ją wysuwa. Na desktopie stoi w miejscu.
  */
 export function FloatingCard({
@@ -41,6 +42,7 @@ export function FloatingCard({
   className = "",
   children,
 }: FloatingCardProps) {
+  const t = useT();
   const isDesktop = useIsDesktop();
   const reduce = useReducedMotion();
   const dragRef = useRef<HTMLDivElement>(null);
@@ -103,10 +105,9 @@ export function FloatingCard({
   });
 
   return (
-    // Opakowanie kończy się na górnej krawędzi paska zakładek i przycina zjeżdżającą kartę,
-    // więc schowana część nie prześwituje przez szklany pasek.
+    // Opakowanie kończy się nad wskaźnikiem home i przycina zjeżdżającą kartę.
     <div
-      className={`pointer-events-none absolute inset-x-0 top-0 bottom-[calc(max(1.25rem,env(safe-area-inset-bottom))+64px)] z-20 md:bottom-0 md:overflow-visible ${
+      className={`pointer-events-none absolute inset-x-0 top-0 bottom-[env(safe-area-inset-bottom)] z-20 md:bottom-0 md:overflow-visible ${
         isClipped ? "[overflow-y:clip]" : ""
       }`}
     >
@@ -135,7 +136,7 @@ export function FloatingCard({
             {collapsed && !isDesktop && (
               <button
                 type="button"
-                aria-label={`Rozwiń: ${label}`}
+                aria-label={t(`Rozwiń: ${label}`, `Expand: ${label}`)}
                 onClick={() => {
                   haptic();
                   onCollapsedChange(false);

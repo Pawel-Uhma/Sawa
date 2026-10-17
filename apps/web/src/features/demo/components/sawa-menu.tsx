@@ -20,10 +20,18 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
+import { type Lang, LangSwitch, pick, useLang, useT } from "@/features/i18n";
 import { ThemeSwitch } from "@/features/theme";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
-import { FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
+import {
+  AUDIENCES,
+  type Choice,
+  FAMILIARITY,
+  INTERESTS,
+  type Profile,
+  STORY_STYLES,
+} from "../lib/onboarding";
 import type { StartMode } from "../lib/start-point";
 import { topicStyle } from "../lib/topic-style";
 import {
@@ -31,6 +39,7 @@ import {
   ChevronRightIcon,
   CompassIcon,
   InfoIcon,
+  ListenerIcon,
   LocateIcon,
   PinIcon,
   RestartIcon,
@@ -48,6 +57,10 @@ export type SawaMenuActions = {
   /** Liczba opowieści w ostatniej trasie; null, gdy jeszcze żadnej nie było. */
   lastRouteStops: number | null;
   onOpenLastRoute: () => void;
+  /** Gotowe przejażdżki z okolicy (dawna zakładka w pasku). */
+  onOpenRides: () => void;
+  /** Ekran Sawy: co mówi teraz i o czym już opowiedziała (dawna zakładka w pasku). */
+  onOpenSawa: () => void;
   onRestart: () => void;
   /** Ile miejsc Sawa już opowiedziała temu słuchaczowi (lib/memory.ts). */
   rememberedPlaces: number;
@@ -83,6 +96,7 @@ type SawaMenuButtonProps = {
  * na desktopie popover wyrastający spod logo.
  */
 export function SawaMenuButton({ variant = "badge" }: SawaMenuButtonProps) {
+  const t = useT();
   const actions = useContext(SawaMenuContext);
   const isDesktop = useIsDesktop();
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -126,7 +140,7 @@ export function SawaMenuButton({ variant = "badge" }: SawaMenuButtonProps) {
       <button
         ref={triggerRef}
         type="button"
-        aria-label="Menu Sawy"
+        aria-label={t("Menu Sawy", "Sawa menu")}
         aria-haspopup="dialog"
         aria-expanded={open}
         onClick={() => !open && openMenu()}
@@ -174,6 +188,7 @@ type MenuSheetProps = {
  * Przyciemnienie mapy zależy od położenia arkusza, więc gaśnie razem z nim, także w trakcie gestu.
  */
 function MenuSheet({ closeRequested, onClosed, children }: MenuSheetProps) {
+  const t = useT();
   const reduce = useReducedMotion();
   const sheetRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -272,7 +287,7 @@ function MenuSheet({ closeRequested, onClosed, children }: MenuSheetProps) {
         ref={sheetRef}
         role="dialog"
         aria-modal="true"
-        aria-label="Menu Sawy"
+        aria-label={t("Menu Sawy", "Sawa menu")}
         tabIndex={-1}
         style={{ y, opacity }}
         className="karta absolute inset-x-2 bg-powierzchnia! bottom-[max(0.5rem,env(safe-area-inset-bottom))] rounded-[34px] outline-none"
@@ -300,6 +315,7 @@ type MenuPopoverProps = {
 
 /** Popover pod logo: rośnie z rogu, w którym jest logo, i wraca tą samą drogą. */
 function MenuPopover({ anchor, onClose, children }: MenuPopoverProps) {
+  const t = useT();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -319,7 +335,7 @@ function MenuPopover({ anchor, onClose, children }: MenuPopoverProps) {
       <motion.div
         ref={ref}
         role="dialog"
-        aria-label="Menu Sawy"
+        aria-label={t("Menu Sawy", "Sawa menu")}
         tabIndex={-1}
         initial={hidden}
         animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
@@ -334,8 +350,10 @@ function MenuPopover({ anchor, onClose, children }: MenuPopoverProps) {
   );
 }
 
-const labelOf = (list: { key: string; label: string }[], key: string | null) =>
-  list.find((item) => item.key === key)?.label ?? null;
+const labelOf = (list: Choice[], key: string | null, lang: Lang) => {
+  const item = list.find((choice) => choice.key === key);
+  return item ? pick(lang, item.label, item.en.label) : null;
+};
 
 type MenuContentProps = {
   actions: SawaMenuActions;
@@ -344,6 +362,8 @@ type MenuContentProps = {
 
 function MenuContent({ actions, run }: MenuContentProps) {
   const { profile } = actions;
+  const t = useT();
+  const lang = useLang();
   const [aboutOpen, setAboutOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const copiedTimer = useRef<number | undefined>(undefined);
@@ -370,8 +390,9 @@ function MenuContent({ actions, run }: MenuContentProps) {
     actions.onForget();
   }
 
-  const familiarity = labelOf(FAMILIARITY, profile.familiarity);
-  const style = labelOf(STORY_STYLES, profile.storyStyle);
+  const familiarity = labelOf(FAMILIARITY, profile.familiarity, lang);
+  const style = labelOf(STORY_STYLES, profile.storyStyle, lang);
+  const audience = labelOf(AUDIENCES, profile.audience, lang);
   // Nazwy w kolorach tematów: ta sama legenda co obwódki miejsc na mapie
   const interests = profile.interests.flatMap((key, i) => {
     const item = INTERESTS.find((interest) => interest.key === key);
@@ -379,7 +400,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
     return [
       <span key={key} className="temat font-semibold text-(--temat)" style={topicStyle(item.key)}>
         {i > 0 && <span className="font-normal text-tekst-2">, </span>}
-        {item.label}
+        {t(item.label, item.en.label)}
       </span>,
     ];
   });
@@ -391,7 +412,10 @@ function MenuContent({ actions, run }: MenuContentProps) {
       if (navigator.share) {
         await navigator.share({
           title: "Sawa",
-          text: "Sawa opowiada o miejscach, które mijasz tramwajem i autobusem.",
+          text: t(
+            "Sawa opowiada o miejscach, które mijasz tramwajem i autobusem.",
+            "Sawa tells you about the places you pass by tram and bus.",
+          ),
           url,
         });
         return;
@@ -414,50 +438,91 @@ function MenuContent({ actions, run }: MenuContentProps) {
             sawa<span className="text-koral">.</span>
           </h2>
           <p className="mt-1 text-[13px] leading-snug text-tekst-2">
-            Twoja przewodniczka po tym, co mijasz za oknem.
+            {t(
+              "Twoja przewodniczka po tym, co mijasz za oknem.",
+              "Your guide to what you pass outside the window.",
+            )}
           </p>
         </div>
       </header>
 
-      <Group title="Jak opowiadam">
+      <Group>
+        <Row
+          Icon={RoutesIcon}
+          label={t("Gotowe przejażdżki", "Ready-made rides")}
+          value={t("Trasy ułożone z Twoich tematów", "Routes built from your topics")}
+          onClick={() => run(actions.onOpenRides)}
+        />
+        <Row
+          Icon={BubbleIcon}
+          label={t("Co opowiada Sawa", "What Sawa is telling")}
+          value={
+            actions.lastRouteStops !== null
+              ? t("Teraz i to, co już opowiedziała", "Now and what she's already told")
+              : t("Ruszy z pierwszą trasą", "Starts with your first ride")
+          }
+          onClick={() => run(actions.onOpenSawa)}
+        />
+      </Group>
+
+      <Group title={t("Jak opowiadam", "How I tell stories")}>
         <Row
           Icon={SparkIcon}
-          label="Zainteresowania"
-          value={interests.length > 0 ? interests : "Wszystko po trochu"}
+          label={t("Zainteresowania", "Interests")}
+          value={interests.length > 0 ? interests : t("Wszystko po trochu", "A bit of everything")}
           onClick={() => run(() => actions.onEditProfile("interests"))}
         />
         <Row
           Icon={CompassIcon}
-          label="Znajomość miasta"
-          value={familiarity ?? "Nie wybrano"}
+          label={t("Znajomość miasta", "How well you know the city")}
+          value={familiarity ?? t("Nie wybrano", "Not chosen")}
           onClick={() => run(() => actions.onEditProfile("familiarity"))}
         />
         <Row
           Icon={BubbleIcon}
-          label="Styl opowieści"
-          value={style ?? "Nie wybrano"}
+          label={t("Styl opowieści", "Story style")}
+          value={style ?? t("Nie wybrano", "Not chosen")}
           onClick={() => run(() => actions.onEditProfile("style"))}
         />
         <Row
+          Icon={ListenerIcon}
+          label={t("Kto słucha", "Who's listening")}
+          value={audience ?? t("Dorośli", "Adults")}
+          onClick={() => run(() => actions.onEditProfile("audience"))}
+        />
+        <Row
           Icon={PinIcon}
-          label="Co już Ci opowiedziałam"
+          label={t("Co już Ci opowiedziałam", "What I've already told you")}
           value={
             actions.rememberedPlaces === 0
-              ? "Jeszcze nic. Zapamiętam, co usłyszysz"
+              ? t(
+                  "Jeszcze nic. Zapamiętam, co usłyszysz",
+                  "Nothing yet. I'll remember what you hear",
+                )
               : confirmForget
-                ? "Stuknij jeszcze raz, żeby zapomnieć"
-                : `${placesLabel(actions.rememberedPlaces)} · stuknij, żeby zapomnieć`
+                ? t("Stuknij jeszcze raz, żeby zapomnieć", "Tap again to forget")
+                : t(
+                    `${placesLabel(actions.rememberedPlaces)} · stuknij, żeby zapomnieć`,
+                    `${placesLabelEn(actions.rememberedPlaces)} · tap to forget`,
+                  )
           }
           onClick={actions.rememberedPlaces === 0 ? () => {} : forget}
           chevron={false}
         />
       </Group>
 
-      <Group title="Skąd ruszamy">
+      <Group title={t("Skąd ruszamy", "Where we start")}>
         <Row
           Icon={LocateIcon}
-          label={actions.startMode === "gps" ? "Z Twojej lokalizacji" : "Spod 42 Warsaw"}
-          value={`${actions.startLabel} · stuknij, żeby zmienić`}
+          label={
+            actions.startMode === "gps"
+              ? t("Z Twojej lokalizacji", "From your location")
+              : t("Spod 42 Warsaw", "From 42 Warsaw")
+          }
+          value={t(
+            `${actions.startLabel} · stuknij, żeby zmienić`,
+            `${actions.startLabel} · tap to change`,
+          )}
           onClick={() => {
             haptic();
             actions.onStartModeChange(actions.startMode === "gps" ? "venue" : "gps");
@@ -466,9 +531,15 @@ function MenuContent({ actions, run }: MenuContentProps) {
         />
       </Group>
 
-      <Group title="Wygląd">
+      <Group title={t("Wygląd", "Appearance")}>
         <div className="p-3">
           <ThemeSwitch />
+        </div>
+      </Group>
+
+      <Group title="Język · Language">
+        <div className="p-3">
+          <LangSwitch />
         </div>
       </Group>
 
@@ -476,21 +547,24 @@ function MenuContent({ actions, run }: MenuContentProps) {
         {actions.lastRouteStops !== null && (
           <Row
             Icon={RoutesIcon}
-            label="Ostatnia przejażdżka"
-            value={`${actions.lastRouteStops} opowieści`}
+            label={t("Ostatnia przejażdżka", "Last ride")}
+            value={t(
+              `${actions.lastRouteStops} opowieści`,
+              `${actions.lastRouteStops} ${actions.lastRouteStops === 1 ? "story" : "stories"}`,
+            )}
             onClick={() => run(actions.onOpenLastRoute)}
           />
         )}
         <Row
           Icon={ShareIcon}
-          label="Poleć Sawę"
-          value={copied ? "Skopiowano link" : undefined}
+          label={t("Poleć Sawę", "Recommend Sawa")}
+          value={copied ? t("Skopiowano link", "Link copied") : undefined}
           onClick={share}
           chevron={false}
         />
         <Row
           Icon={InfoIcon}
-          label="Skąd Sawa to wie"
+          label={t("Skąd Sawa to wie", "How Sawa knows this")}
           onClick={() => {
             haptic();
             setAboutOpen((current) => !current);
@@ -509,10 +583,17 @@ function MenuContent({ actions, run }: MenuContentProps) {
             >
               <div className="space-y-2 px-4 pb-4 pt-1 text-[14px] leading-relaxed text-tekst-2">
                 <p>
-                  Miejsca i fakty biorę z otwartych danych Warszawy (dane.um.warszawa.pl) i z
-                  OpenStreetMap. Trasy i odjazdy liczę z rozkładu ZTM.
+                  {t(
+                    "Miejsca i fakty biorę z otwartych danych Warszawy (dane.um.warszawa.pl) i z OpenStreetMap. Trasy i odjazdy liczę z rozkładu ZTM.",
+                    "I take places and facts from Warsaw's open data (dane.um.warszawa.pl) and OpenStreetMap. Routes and departures come from the ZTM timetable.",
+                  )}
                 </p>
-                <p>Z tych faktów opowieść układa model językowy, a czyta ją syntezator mowy.</p>
+                <p>
+                  {t(
+                    "Z tych faktów opowieść układa model językowy, a czyta ją syntezator mowy.",
+                    "A language model turns these facts into a story, and a speech synthesiser reads it.",
+                  )}
+                </p>
               </div>
             </motion.div>
           )}
@@ -525,7 +606,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
         className="flex h-12 items-center justify-center gap-2 rounded-[18px] text-[15px] font-bold text-koral transition-colors duration-100 active:bg-koral/10 md:hover:bg-koral/10"
       >
         <RestartIcon className="size-5" />
-        Zacznij od nowa
+        {t("Zacznij od nowa", "Start over")}
       </button>
     </div>
   );
@@ -548,6 +629,10 @@ function placesLabel(n: number) {
   if (n === 1) return "1 miejsce";
   if (ones >= 2 && ones <= 4 && (tens < 12 || tens > 14)) return `${n} miejsca`;
   return `${n} miejsc`;
+}
+
+function placesLabelEn(n: number) {
+  return `${n} ${n === 1 ? "place" : "places"}`;
 }
 
 type RowProps = {

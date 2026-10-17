@@ -40,8 +40,16 @@ export function createFakePlacesRepository(
   };
 }
 
-function toSummary({ id, name, kind, interests, position, richness }: Place): PlaceSummary {
-  return { id, name, kind, interests, position, richness };
+function toSummary({
+  id,
+  name,
+  kind,
+  subkind,
+  interests,
+  position,
+  richness,
+}: Place): PlaceSummary {
+  return { id, name, kind, subkind, interests, position, richness };
 }
 
 /** Equirectangular approximation: good to well under 1 m at city scale. */

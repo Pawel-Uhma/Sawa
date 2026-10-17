@@ -1,0 +1,346 @@
+[
+  {
+    "id": "gimnazjum-jakuba-finkla-leszno-14",
+    "nazwa": "Gimnazjum i Liceum Jakuba Finkla (ul. Leszno 14)",
+    "name_en": "Jakub Finkiel Gymnasium and Lyceum (14 Leszno Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Leszno 14",
+    "adres_historyczny": "ul. Leszno 14",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1915–około 1942",
+    "istnieje": false,
+    "fakty": [
+      "Gimnazjum powstało w 1915 r. i było własnością inż. Jakuba Finkla (Finkiela), który pełnił obowiązki dyrektora.",
+      "Siedziba mieściła się przy ul. Leszno 14, na posesji sąsiadującej z zachowanym kościołem ewangelicko-reformowanym (dziś al. Solidarności 76, przed wojną Leszno 16).",
+      "W latach 30. szkoła nosiła nr 99.",
+      "W 1926 r. placówka była ośmioklasowa, humanistyczna, z językiem polskim; powołano 9 klas z 206 uczniami.",
+      "W roku szkolnym 1930/1931 szkoła miała 279 uczniów w 10 oddziałach.",
+      "Szkoła istniała w formie tajnych kompletów gimnazjalnych i licealnych w getcie warszawskim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A private gymnasium founded in 1915 by engineer Jakub Finkiel, who was also its acting director. It was based at 14 Leszno Street, had 279 pupils in 1930/31, and continued as secret classes inside the Warsaw Ghetto until about 1942.",
+    "ludzie": [
+      {"kto": "Jakub Finkiel", "rola": "właściciel szkoły, inż., pełniący obowiązki dyrektora", "wiki": null}
+    ],
+    "dawne_nazwy": ["Leszno 14"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Gimnazjum i Liceum Jakuba Finkla w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138767-gimnazjum-i-liceum-jakuba-finkla-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres przedwojenny, wpisany w oba pola. Dzielnica (Śródmieście) wg lokalizacji ulicy."
+  },
+  {
+    "id": "mur-pamieci-muzeum-powstania-grzybowska-79",
+    "nazwa": "Mur Pamięci przy Muzeum Powstania Warszawskiego",
+    "name_en": "Wall of Remembrance at the Warsaw Rising Museum",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Grzybowska 79",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "brak daty w tekście",
+    "istnieje": true,
+    "fakty": [
+      "Na 156-metrowym Murze Pamięci okalającym Muzeum Powstania Warszawskiego wyryto tysiące nazwisk powstańców, którzy polegli w walkach w sierpniu i wrześniu 1944 r.",
+      "Na murze znajdują się nazwiska powstańców pochodzenia żydowskiego, m.in. Mojżesza Abcuka, Hersza Berlińskiego, Chaji Borensterin, Estery Borenstein, Chaima Brande, Mojżesza Bursztyna, Mojżesza Cymerynga, Dawida Goldmana, Chaima Grossa, Hersza Hamerlunga, Mojżesza Kalskiego, Szmula Klajmana, Alicji Lichtenbaum, Hersza Pieniążka, Dawida Rajzmana, Mojżesza Rozencweiga, Chaima Rozencwajga i Dawida Sznajdermana."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The 156-metre Wall of Remembrance around the Warsaw Rising Museum bears thousands of names of insurgents who fell in August and September 1944, including many insurgents of Jewish origin.",
+    "ludzie": [
+      {"kto": "Mojżesz Abcuk", "rola": "powstaniec pochodzenia żydowskiego, nazwisko na Murze Pamięci", "wiki": null},
+      {"kto": "Hersz Berliński", "rola": "powstaniec pochodzenia żydowskiego, nazwisko na Murze Pamięci", "wiki": null},
+      {"kto": "Alicja Lichtenbaum", "rola": "powstanka pochodzenia żydowskiego, nazwisko na Murze Pamięci", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Mur Pamięci przy Muzeum Powstania Warszawskiego (ul. Grzybowska 79)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52329-mur-pamieci-przy-muzeum-powstania-warszawskiego-ul-grzybowska-79"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok ufundowania muru nie pada w tekście (do uzupełnienia). Dzielnica (Wola) wg lokalizacji muzeum. Na liście „ludzie” tylko trzy z wielu nazwisk."
+  },
+  {
+    "id": "szkola-powszechna-dzielna-20-ii",
+    "nazwa": "Szkoła powszechna przy ul. Dzielnej 20 (II)",
+    "name_en": "Elementary school at 20 Dzielna Street (II)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzielna 20",
+    "adres_historyczny": "ul. Dzielna 20",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Dzielnej 20 funkcjonowała pięcioklasowa żeńska szkoła powszechna z językami nauczania polskim i jidysz oraz nauczanym hebrajskim.",
+      "Szkoła posiadała 4 sale lekcyjne, 7 nauczycieli i 172 uczennice.",
+      "Szkoła miała zapewne związek z mieszczącym się pod tym samym adresem Gimnazjum Cecylii Brojdo."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A five-grade girls' elementary school at 20 Dzielna Street, teaching in Polish, Yiddish and Hebrew. In 1930/31 it had 172 pupils and 7 teachers, probably linked to the Cecylia Brojdo gymnasium at the same address.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna przy ul. Dzielnej 20 w Warszawie II", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138886-szkola-powszechna-przy-ul-dzielnej-20-w-warszawie-ii"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "nordwache-chlodna-25",
+    "nazwa": "Posterunek żandarmerii „Nordwache” (róg Chłodnej i Żelaznej)",
+    "name_en": "Nordwache gendarmerie post (corner of Chłodna and Żelazna)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Chłodna 25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1937–1938 na rogu ulic Żelaznej i Chłodnej wzniesiono pięciopiętrową modernistyczną kamienicę projektu Edwarda Hersteina.",
+      "W czasie wojny naprzeciw budynku znajdowała się drewniana kładka dla pieszych łącząca „małe” i „duże” getto.",
+      "W kamienicy mieścił się posterunek żandarmerii niemieckiej, tzw. Nordwache, oraz komenda obwodowa policji granatowej.",
+      "Gmach był miejscem kaźni obywateli polskich, w tym wielu osób pochodzenia żydowskiego.",
+      "3 sierpnia 1944 r. żołnierze batalionu „Chrobry I” dowodzeni przez kpt. Gustawa Billewicza „Sosnę” przystąpili do zdobywania Nordwache; po jego zajęciu uwolniono kilkudziesięciu cywilów przetrzymywanych w piwnicach.",
+      "Budynek przetrwał II wojnę światową; tablica pamiątkowa od strony Chłodnej upamiętnia zdobycie posterunku."
+    ],
+    "ciekawostki": [
+      "Miejsce, w którym znajdował się bunkier, oznaczono brązową kostką na chodniku przy ulicy Żelaznej."
+    ],
+    "summary_en": "A 1937–1938 modernist block at the corner of Żelazna and Chłodna streets, used by the Germans as a gendarmerie post and place of executions. It was captured by the Home Army on 3 August 1944 and survived the war.",
+    "ludzie": [
+      {"kto": "Edward Herstein", "rola": "projektant kamienicy (1937–1938)", "wiki": null},
+      {"kto": "Gustaw Billewicz „Sosna”", "rola": "dowódca akcji zdobycia Nordwache (kpt.)", "wiki": null},
+      {"kto": "Władysław Żurawski „Klim”", "rola": "dowódca grupy atakującej budynek od frontu (por.)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Posterunek żandarmerii - tzw. Nordwache (ul. Chłodna 25)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52101-posterunek-zandarmerii-tzw-nordwache-ul-chlodna-25"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica (Wola) wg lokalizacji przy Żelaznej. Nazwa Edwarda Hersteina w tekście zapisana jako „Hersteina”."
+  },
+  {
+    "id": "szkola-religijna-nowolipki-24",
+    "nazwa": "Szkoła religijna przy ul. Nowolipki 24",
+    "name_en": "Religious school at 24 Nowolipki Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowolipki 24",
+    "adres_historyczny": "ul. Nowolipki 24",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Nowolipki 24 funkcjonowała czteroklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła posiadała 4 wynajęte sale lekcyjne (102 m kw.), 7 nauczycieli (jeden na pełen etat) i 102 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A four-class religious school for boys at 24 Nowolipki Street. In 1930/31 it had 102 pupils and 7 teachers in four rented rooms.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Nowolipki 24 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139055-szkola-religijna-przy-ul-nowolipki-24-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-religijna-niska-37",
+    "nazwa": "Szkoła religijna przy ul. Niskiej 37",
+    "name_en": "Religious school at 37 Niska Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Niska 37",
+    "adres_historyczny": "ul. Niska 37",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Niskiej 37 funkcjonowała trzyklasowa męska szkoła religijna z językami nauczania polskim i jidysz.",
+      "Szkoła posiadała dwie wynajęte sale lekcyjne (68 m kw.), 4 nauczycieli i 84 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-class religious school for boys at 37 Niska Street. In 1930/31 it had 84 pupils and 4 teachers in two rented classrooms of 68 m2.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Niskiej 37 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139049-szkola-religijna-przy-ul-niskiej-37-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica (Muranów) wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-powszechna-czerniakowej-zweibaumowej-marszalkowska-95",
+    "nazwa": "Szkoła powszechna Czerniakowej i Zweibaumowej (ul. Marszałkowska 95)",
+    "name_en": "Czerniakowa and Zweibaum elementary school (95 Marszałkowska Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 95",
+    "adres_historyczny": "ul. Marszałkowska 95",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1937",
+    "istnieje": null,
+    "fakty": [
+      "W 1937 r. koedukacyjna szkoła powszechna wraz z przedszkolem, należąca do dr. fil. F. Czerniakowej i dr E. Zweibaumowej, funkcjonowała przy ul. Marszałkowskiej 95.",
+      "Szkoła miała charakter sześcioklasowy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A coeducational six-grade elementary school with a kindergarten, owned by two doctors of philosophy, F. Czerniakowa and E. Zweibaum, at 95 Marszałkowska Street in 1937.",
+    "ludzie": [
+      {"kto": "F. Czerniakowa", "rola": "dr fil., współwłaścicielka szkoły powszechnej (1937)", "wiki": null},
+      {"kto": "E. Zweibaum", "rola": "dr, współwłaścicielka szkoły powszechnej (1937)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna Czerniakowej i Zweibaumowej w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139059-szkola-powszechna-czerniakowej-i-zweibaumowej-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Księgi adresowej Polski” za 1937 r. Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Imiona właścicielek nie padają w tekście; wpisano same inicjały."
+  },
+  {
+    "id": "umschlagplatz-stawki-10",
+    "nazwa": "Umschlagplatz (ul. Stawki 10)",
+    "name_en": "Umschlagplatz (10 Stawki Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Stawki 10",
+    "adres_historyczny": "ul. Stawki 10",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "od 22 VII 1942 (zbiórka przed wywózką); od 1988 pomnik",
+    "istnieje": true,
+    "fakty": [
+      "W drugiej połowie XIX w. na północ od ul. Stawki powstał kompleks bocznic kolejowych stacji Warszawa Nadwiślańska (później Warszawa Gdańska); w latach 1918–1939 głównym użytkownikiem były Miejskie Zakłady Zaopatrywania Warszawy.",
+      "Od 22 lipca 1942 r. na otoczony murem plac codziennie spędzano tysiące osób, które czekały godzinami na zapełnienie transportu do Treblinki II.",
+      "Łącznie przez Umschlagplatz przeszło ok. 320 tys. Żydów z getta warszawskiego.",
+      "W 1988 r. odsłonięto na miejscu pomnik zaprojektowany przez Hannę Szmalenberg i Władysława Klamerusa; na pękniętej ścianie wyryto 400 imion żydowskich w porządku alfabetycznym."
+    ],
+    "ciekawostki": [
+      "Zygmunt Nissenbaum (1926–2001), późniejszy założyciel Fundacji im. Rodziny Nissenbaumów, przeszedł przez Umschlagplatz z rodziną."
+    ],
+    "summary_en": "The Umschlagplatz, a railway loading area off Stawki Street, where the Germans gathered Jews from the Warsaw Ghetto before deportation to Treblinka II. About 320,000 Jews passed through it; a memorial was unveiled there in 1988.",
+    "ludzie": [
+      {"kto": "Zygmunt Nissenbaum", "rola": "więzień, który przeszedł przez Umschlagplatz; późniejszy założyciel Fundacji im. Rodziny Nissenbaumów", "wiki": null},
+      {"kto": "Ludwik Hirszfeld", "rola": "świadek zdarzeń na Umschlagplatzu (szpital na Stawkach)", "wiki": null},
+      {"kto": "Hanna Szmalenberg", "rola": "projektantka pomnika z 1988 r.", "wiki": null},
+      {"kto": "Władysław Klamerus", "rola": "projektant pomnika z 1988 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawa Nadwiślańska (stacja)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Umschlagplatz – miejsce koncentracji Żydów przed wywózką (ul. Stawki 10)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52343-umschlagplatz-miejsce-koncentracji-zydow-przed-wywozka-ul-stawki-10"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica (Śródmieście) wg lokalizacji przy Stawkach. Okres po wojnie (pomnik 1988) z tekstu. Lista imion z 400 nazwisk pominięta."
+  },
+  {
+    "id": "dom-modlitwy-gesia-29",
+    "nazwa": "Dom modlitwy przy ul. Gęsiej 29",
+    "name_en": "Prayer house at 29 Gęsia Street",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Gęsia 29",
+    "adres_historyczny": "ul. Gęsia 29 (nr hip. 2297/2298 b)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po I wojnie(?)–1942(?)",
+    "istnieje": false,
+    "fakty": [
+      "Dom modlitwy pod tym adresem (nr hip. 2297/2298 b) znajdujemy tylko w spisie z 1926 r.",
+      "Sufit został wydzielony w pole kwadratowe; w jego centrum umieszczono krąg z malowanymi instrumentami muzycznymi i wersetem z Psalmu 150, a ze środka kręgu zwisał sześcioświecowy żyrandol elektryczny.",
+      "W narożnikach kwadratu umieszczono zapewne wizerunki czterech zwierząt z Pirkej awot (Sentencji Praojców), a na ścianie oprawiony tekst porannej modlitwy dziękczynnej modiim deraban.",
+      "Na zdjęciu nie widać wyposażenia poza amudem, ale dekoracje wskazują na stały charakter sali modlitwy.",
+      "Malarskie instrumenty są podobne do tych w sali modlitwy w sąsiedniej kamienicy na Gęsiej 27, co może oznaczać, że zostały tu umieszczone po 1937 r."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A prayer house at 29 Gęsia Street, recorded in the 1926 directory, with painted musical instruments and a Psalm 150 frieze on the ceiling. It was probably decorated after 1937.",
+    "ludzie": [],
+    "dawne_nazwy": ["nr hip. 2297/2298 b"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Gęsiej 29 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89575-dom-modlitwy-przy-ul-gesiej-29-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres przedwojenny, wpisany w oba pola. Dzielnica (Śródmieście) wg lokalizacji ulicy. Tekst nie podaje, czy żyrandol był zawieszony w tym samym pomieszczeniu co krąg (opis z pozycji rzeczywistej sali)."
+  },
+  {
+    "id": "kosciol-wszystkich-swietych-grzybowski-3-5",
+    "nazwa": "Kościół pw. Wszystkich Świętych (pl. Grzybowski 3/5)",
+    "name_en": "All Saints Church (3/5 Grzybowski Square)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Grzybowski 3/5",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "II poł. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół pw. Wszystkich Świętych wzniesiono w II poł. XIX w. według projektu Henryka Marconiego.",
+      "We wrześniu 1939 r. kościół został poważnie zniszczony: spłonęły organy, a dzwony roztopiły się.",
+      "Po zajęciu Warszawy przez Niemców kościół znalazł się na terenie getta i służył chrześcijanom pochodzenia żydowskiego, których w getcie było 5 tys.",
+      "Na plebanii księża Marceli Godlewski i Antoni Czarnecki udzielili schronienia i pomocy wielu osobom pochodzenia żydowskiego, m.in. prof. Ludwikowi Hirszfeldowi oraz Krzysztofowi Zamenhofowi z żoną Wandą.",
+      "Szacuje się, że prałat Godlewski uratował od tysiąca do trzech tysięcy Żydów; w parafii wydawano metryki chrztu.",
+      "Po akcji likwidacyjnej w lipcu 1942 r. ksiądz musiał opuścić teren getta; w 2009 r. Instytut Yad Vashem pośmiertnie przyznał mu medal Sprawiedliwego Wśród Narodów Świata.",
+      "Kościół został zniszczony w powstaniu w 1944 r., a po wojnie odbudowany dzięki wsparciu finansowemu Żydów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "All Saints Church on Grzybowski Square, designed by Henryk Marconi. During the occupation it lay inside the ghetto, and its priests Marceli Godlewski and Antoni Czarnecki sheltered Jews on the parish premises.",
+    "ludzie": [
+      {"kto": "Marceli Godlewski", "rola": "prałat, proboszcz; ratował Żydów, pośmiertnie Sprawiedliwy Wśród Narodów Świata (2009)", "wiki": null},
+      {"kto": "Antoni Czarnecki", "rola": "ksiądz, który udzielał pomocy Żydom na plebanii", "wiki": null},
+      {"kto": "Ludwik Hirszfeld", "rola": "profesor, ukrywający się na plebanii", "wiki": null},
+      {"kto": "Krzysztof Zamenhof", "rola": "wnuk Ludwika Zamenhofa, ukrywający się na plebanii z żoną Wandą", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projektant kościoła", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kościół pw. Wszystkich Świętych – miejsce ukrywania Żydów (pl. Grzybowski 3/5)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52278-kosciol-pw-wszystkich-swietych-miejsce-ukrywania-zydow-pl-grzybowski-35"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica (Śródmieście) wg lokalizacji placu. Tekst nie podaje dzielnicy."
+  },
+  {
+    "id": "szkola-religijna-freta-25",
+    "nazwa": "Szkoła religijna przy ul. Freta 25",
+    "name_en": "Religious school at 25 Freta Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta 25",
+    "adres_historyczny": "ul. Freta 25",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Freta 25 funkcjonowała trzyklasowa męska szkoła religijna z językami nauczania polskim i jidysz.",
+      "Szkoła posiadała 3 sale lekcyjne o łącznej powierzchni 103 m kw. (wynajem), 5 nauczycieli, w tym 3 na pełen etat, i 67 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-class religious school for boys at 25 Freta Street. In 1930/31 it had 67 pupils and 5 teachers in three rented rooms of 103 m2.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Freta 25 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138962-szkola-religijna-przy-ul-freta-25-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica (Śródmieście, Nowe Miasto) wg lokalizacji ulicy."
+  }
+]

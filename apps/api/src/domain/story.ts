@@ -1,4 +1,4 @@
-import { factId, type StoryStyle } from "@sawa/shared";
+import { type Audience, factId, type StoryStyle } from "@sawa/shared";
 import type { Place, PlaceSource } from "./place";
 
 /** Polish speech in ElevenLabs runs at about 2.5 words a second (docs/12-plan-mvp.md §8). */
@@ -51,6 +51,17 @@ const FACT_WORD_SHARE = 0.7;
 const TRIVIA_STYLE_FACTS = 2;
 const TRIVIA_STYLE_WORDS = 40;
 const RECAP_WORDS = 35;
+/** A child listens to shorter stories: this share of an adult's words (#65). */
+const KIDS_WORD_SHARE = 0.7;
+
+/**
+ * War, the ghetto and the Holocaust: told to a child gently, without details of violence
+ * (decision in docs/stan.md, #65), and never read out plainly as facts.
+ */
+const KIDS_GENTLE_TAGS = ["war_uprising", "jewish_warsaw"];
+
+export const isGentleForKids = (place: Pick<Place, "interests">) =>
+  place.interests.some((tag) => KIDS_GENTLE_TAGS.includes(tag));
 
 const wordCount = (text: string) => text.split(/\s+/).filter(Boolean).length;
 
@@ -64,10 +75,15 @@ export function placeFacts(place: Pick<Place, "facts" | "trivia">): StoryFact[] 
 }
 
 /** How many words the story may have: trivia and reminders are short whatever the window. */
-export function storyWords(band: StoryBand, style: StoryStyle | undefined, recap: boolean) {
+export function storyWords(
+  band: StoryBand,
+  style: StoryStyle | undefined,
+  recap: boolean,
+  audience?: Audience,
+) {
   if (recap) return Math.min(band.words, RECAP_WORDS);
   if (style === "trivia") return Math.min(band.words, TRIVIA_STYLE_WORDS);
-  return band.words;
+  return audience === "kids" ? Math.round(band.words * KIDS_WORD_SHARE) : band.words;
 }
 
 /**
@@ -77,7 +93,13 @@ export function storyWords(band: StoryBand, style: StoryStyle | undefined, recap
  */
 export function pickFacts(
   place: Pick<Place, "facts" | "trivia">,
-  opts: { heard: readonly string[]; style?: StoryStyle; band: StoryBand; reservedWords?: number },
+  opts: {
+    heard: readonly string[];
+    style?: StoryStyle;
+    audience?: Audience;
+    band: StoryBand;
+    reservedWords?: number;
+  },
 ): FactPick {
   const all = placeFacts(place);
   const ordered =
@@ -89,7 +111,8 @@ export function pickFacts(
   const pool = recap ? ordered : fresh;
   const maxCount = recap ? 1 : opts.style === "trivia" ? TRIVIA_STYLE_FACTS : pool.length;
   const budget =
-    (storyWords(opts.band, opts.style, recap) - (opts.reservedWords ?? 0)) * FACT_WORD_SHARE;
+    (storyWords(opts.band, opts.style, recap, opts.audience) - (opts.reservedWords ?? 0)) *
+    FACT_WORD_SHARE;
 
   const facts: StoryFact[] = [];
   let words = 0;

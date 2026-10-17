@@ -60,6 +60,8 @@
 ## R3 · Frontend i mapa
 
 - [ ] **T-123** Tryb dla dzieci: przełącznik w onboardingu, pole `audience` w kontrakcie, prostsza opowieść Sawy (dalej tylko z faktów), delikatnie o miejscach wojennych; pomysły dodatkowe w issue ([#65](https://github.com/Pawel-Uhma/Sawa/issues/65)) — `R3` (Paweł; prompt to obszar R4)
+- [x] **T-128** Interfejs po angielsku: przełącznik Polski / English w menu i na ekranie powitalnym, `features/i18n` (`useT`, `pick`), wybór w localStorage — `R3` (Paweł, 17.10, 19:10)
+- [ ] **T-129** Opowieści i głos po angielsku: pole `lang` w `StoryRequest` (kontrakt), prompt i TTS w języku interfejsu; web wyśle `useLang()` po dodaniu pola — `R4` (prompt) + `R3`
 
 - [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
@@ -67,6 +69,7 @@
 - [x] **T-119** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; numer zmieniony z T-105, który był zajęty)
 - [x] **T-121** Sawa nie mówi od razu po wyznaczeniu trasy: czeka na pierwsze miejsce (zegar jazdy albo GPS w promieniu 150 m), stuknięcie w odtwarzanie startuje od razu — `R3` — (Szczepan na prośbę użytkownika, 18:11, gałąź `r3/wait-for-first-place`)
 - [x] **T-120** Ekrany demo na tokenach zamiast `bg-white` i hexów, ciemny motyw w całej aplikacji (`.motyw` na `<body>`); rzeki i woda na mapie na niebiesko w obu motywach — `R3` — (Antek, 17:52, gałąź `r3/demo-tokens`)
+- [x] **T-123** Tryb dla dzieci ([#65](https://github.com/Pawel-Uhma/Sawa/issues/65)): krok „Kto będzie słuchał?” w onboardingu i „Kto słucha” w menu, `audience: "adult" | "kids"` w kontrakcie opowieści i trasy, osobny prompt dla dzieci (prościej, krócej o 30%, pytanie albo „Wypatrz przez okno” na koniec, wojna delikatnie) — `R3` + `R4` — (Paweł z agentem, 18:20–18:45, gałąź `r3/kids-mode`; planer jeszcze nie używa `audience`, wolniejszy głos dla dzieci to następny krok)
 - [x] **T-122** Przełącznik jasny / ciemny już w onboardingu: słońce / księżyc w prawym górnym rogu nagłówka (`ThemeToggleButton` z `features/theme`), „Auto” zostaje w menu Sawy — `R3` — (Antek, 18:13, gałąź `r3/onboarding-theme`)
 - [x] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap; 14:54: demo na `SawaMap` Antka, piny z `/v1/places`, trasa z `POST /v1/routes/plan`, zob. `stan.md`)
 - [x] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — (Paweł z agentem, 17.10 13:25: mock bez API, mapa szkicowa zamiast Mapbox; 13:51: wariant A6 z makiety, Sawa z dymkiem, pasek zakładek, prawdziwa mapa)
@@ -85,6 +88,7 @@
 - [x] **T-109** Słabe punkty planera: bez dobijania czasu czekaniem, przesiadki pieszo do 300 m, wiązka bez kopii — `R1` — (Szczepan, 19:40, PR w toku)
 - [x] **T-100** Pojazdy na mapie trasy (PR, Paweł, 17.10, ok. 16:45): hook `useLiveVehicles` (co 10 s), osobne ikony tramwaju i autobusu, płynny ruch przez `positionOnTrack` w `requestAnimationFrame`, wyróżniony pojazd `ride`. Gotowe przykłady kodu w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R3` (Paweł, issue #30) — po T-99 (PR #29)
 - [~] **T-101** Mapa: `fitBounds` trasy z uwzględnieniem otwartej karty miejsca (trasa chowa się pod kartą) i ostrzeżenie „Expected number, found null” w konsoli — `R3` (Antek, 16:55: karta doliczana do paddingu kamery, `paddingWithSheet`, gałąź `r3/fit-place-sheet`; ostrzeżenie zostaje)
+- [~] **T-126** Drobniejsze znaczniki miejsc: `places.subkind` (35 podrodzajów, 8 kolorów grup), migracja, reguły w seedzie, ikony „Naklejka” — `R3` (Paweł z agentem, od 18:15; zmiana schematu R2 na prośbę Pawła, gałąź `r3/subkind`)
 - [ ] **T-102** Pozycja „za oknem”: znacznik jedzie wzdłuż `Leg.lngLats` w czasie odtwarzania (krok 8 w [14-plan-mapy.md](14-plan-mapy.md) §10, M2 planu MVP); potrzebne do T-36 — `R3` (Antek) — niedziela 08:00
 - [ ] **T-103** Mapa na 2 prawdziwych telefonach: karta miejsca z przeciąganiem, 16 px marginesu, bez poziomego scrolla (krok 7 w [14-plan-mapy.md](14-plan-mapy.md) §10) — `R3` (Antek)
 - [x] **T-118** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42) — (Antek z agentem, 17:42)
@@ -109,9 +113,11 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-50** Scenariusz demo 1,5 min (ścieżka z [10-prd.md](10-prd.md)) i tekst pitcha 5 min — `R2` — 15:00
 - [ ] **T-51** Zaktualizować pitch deck w [pitch/](pitch/) pod MVP — `R2` — 22:00
 - [ ] **T-52** Test na telefonie co 2 h: wszystkie ścieżki z PRD, zgłoszenia w tym pliku (robią wszyscy na zmianę, R2 pilnuje) — `R2` — od 17:00
-- [ ] **T-55** Nagranie wideo demo jako zapas — `R2` — 22:00
+- [ ] **T-55** Nagranie wideo demo jako zapas: nagrywamy ludzi używających aplikacji, nie sam ekran; montaż po działającym deployu — `R2` — dziś w nocy albo jutro rano (spotkanie 17.10 wieczór)
+- [ ] **T-126** Trasa pieszo: zahaczać o punkty (nie linia prosta do nich w przecznicy) i nie wracać tą samą drogą — `R1` (Szczepan, do potwierdzenia) — przed testem na telefonie
+- [ ] **T-127** Sub-kind miejsc w bazie (np. budynki, instytucje), każdy typ z własną ikoną; wpływ na schemat i ikony — `R2` (Jasiek, do potwierdzenia) — przed zamrożeniem
 - [ ] **T-114** Pitch pod „Warszawa 2076” według uwag mentorów (spotkanie 19:30): kto jest odbiorcą, co miasto zyska za 50 lat, dowód, że dane miasta dają wartość; sprawdzić źródło liczby „20% warszawiaków spoza Warszawy”; z gotową prezentacją do Bartka (Play) — `R2` (z T-50). Plan: [pitch/plan-pitchu.md](pitch/plan-pitchu.md) (Paweł, 17.10 w nocy), zadania w §10
-- [~] **T-53** Opis zakresu użycia AI (z historii git, PR-ów i archiwum `ai-log.md`) i dokumentacja na oddanie (`README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30 · Jasiek od 17.10: README pod jury gotowe (zrzuty ekranu, problem, zbiory z licencjami, architektura, stack, użycie AI); brakuje przeglądu sekcji AI przez zespół
+- [~] **T-53** Opis zakresu użycia AI (z historii git, PR-ów i archiwum `ai-log.md`) i dokumentacja na oddanie (`README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30 · Jasiek od 17.10: README pod jury gotowe (zrzuty ekranu, problem, zbiory z licencjami, architektura, stack, użycie AI); sekcja AI do przejrzenia przez Pawła (issue #77)
 - [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R2` — niedziela 10:30
 
 ## Z przeglądu stanu (Jasiek, 15:00; numery T-90+, bo T-76 zajął R1)
