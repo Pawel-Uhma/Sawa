@@ -1,9 +1,10 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 19:10 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 19:40 (Szczepan, z agentem)
 
 ## Teraz
 
+- R1 (Szczepan, 19:40): czasy na żywo (T-108): odjazd z rozkładu ZTM dla każdego odcinka i opóźnienie pierwszego pojazdu z pozycji (`Leg.delaySec`); trasa z danymi miasta ma ich podpis (T-95); `/health` mówi, czy graf GTFS jest na dziś (w niedzielę rano przebudować, T-18). Słabe punkty planera (T-109): bez dobijania czasu czekaniem, przesiadki pieszo do 300 m. Odcinki po ulicach zostają z T-106 Jaśka. **Produkcja:** `WAW_TOKEN` jest, ale zapytania do API miasta z Railway padają (szczegóły w T-17). **Dla R3:** issues #43 (T-110) i #44 (T-111).
 - Jasiek (16:57, R2 z agentem, za zgodą R1): T-106. Odcinki `walk` idą po ulicach i chodnikach: planer liczy jak dotąd (prosto × 1,3), a potem `Leg.lngLats` każdego odcinka pieszego bierze z OSRM (profil pieszy, `WALK_ROUTER_URL`, domyślnie FOSSGIS, bez klucza, timeout 3 s, przy awarii proste odcinki). Czasy i `etaSec` bez zmian. **Dla R3:** mapa rysuje to bez zmian w kodzie; w T-102 interpoluj po długości łamanej, nie po indeksie punktu.
 - Jasiek (18:15, R2 z agentem, zadania R3/R4 z polecenia użytkownika): T-92, T-93, T-98. **`POST /v1/speech` nie istnieje poza `DEBUG_PAGES=1`**, odtwarzacz bierze głos z `/v1/stories/audio` (ten sam cache opowieści). `/v1/stories*` mają limit 300/10 min na IP (429 `RATE_LIMITED`). Cache klipów w odtwarzaczu po punkcie, długości i profilu. Prompt: liczby i lata słownie. **Dla R4:** sprawdźcie na produkcji, czy LLM pisze lata słownie.
 - R1 (Szczepan, 19:10): najszybsza trasa do celu (T-104, [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 11). **Dla R3 (T-78):** po wyborze celu wyślij `destination` bez `durationMin`, pokaż tę trasę, a jej `totalMin` daj jako najkrótszy czas na suwaku; dłuższy czas = trasa krajoznawcza do tego samego celu. Plac Zamkowy z 42 Warsaw: 20 min (190) zamiast 64 min.
@@ -89,7 +90,6 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 | Dziennik AI: wyłączyć hook i na koniec opisać użycie AI (§4 ust. 4), czy zostawić | zespół, R2 (T-53) | [spotkania/2026-10-17-1330-postep-i-podzial.md](spotkania/2026-10-17-1330-postep-i-podzial.md) |
 | Planer: ile miejsc na trasę (30 min daje teraz 120) | R1 | [spotkania/2026-10-17-1330-postep-i-podzial.md](spotkania/2026-10-17-1330-postep-i-podzial.md) |
 | Kto prezentuje, jeśli Ala nie dojedzie (zdalnie przez FaceTime?) | zespół | [spotkania/2026-10-17-1330-postep-i-podzial.md](spotkania/2026-10-17-1330-postep-i-podzial.md) |
-| Toalety: brak zbioru w portalu, OSM czy rezygnacja | R1 | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | Tryb „z wysiadaniem” (muzea): MVP czy po MVP | zespół | [10-prd.md](10-prd.md) |
 | Scraping muzeów i wystaw pod zainteresowania | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | API Bielika: gdzie hostowane, limity; zapasowy LLM | R4 | [05-plan-architektury.md](05-plan-architektury.md) |
@@ -103,6 +103,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 ## Ostatnie decyzje
 
+- 17.10, 19:40: toalety (T-05) poza MVP: brak zbioru w portalu. Kalendarz i pogoda (T-12) poza MVP, R1 nie robi. Rozstrzygnął Szczepan (R1).
 - 17.10, 16:54: najkrótsza przejażdżka to 5 min (`MIN_DURATION_MIN`, wcześniej 30). Krótkie trasy mogą być samym spacerem (T-79). Nowość miejsca (`heard`, `HEARD_FLOOR` w `score.ts`) od Pawła zaakceptowana. Zdecydował Szczepan (R1).
 - 17.10, 13:37: zainteresowania to 4 ogólne kategorie `historical`, `cultural`, `sports`, `nature` (`packages/shared/src/interests.ts`, PR #7); szczegółowe tagi zostają w danych. Zastępuje listę 8 kluczy z [13-plan-bazy.md §5](13-plan-bazy.md). Zdecydował Szczepan (R1).
 
