@@ -1,6 +1,6 @@
 # Zasady pracy i kodu
 
-Obowiązują od 17.10, 12:00. Dotyczą 4 osób i ich agentów Claude Code. Plan budowy i stack: [12-plan-mvp.md](12-plan-mvp.md). Zasady pracy z dokumentami (`todo.md`, `stan.md`, dziennik AI) są w [CLAUDE.md](../CLAUDE.md) i dalej obowiązują.
+Obowiązują od 17.10, 12:00. Dotyczą 4 osób i ich agentów Claude Code. Plan budowy i stack: [12-plan-mvp.md](12-plan-mvp.md). **Zakres to tylko lista MVP z [10-prd.md](10-prd.md).** Zasady pracy z dokumentami (`todo.md`, `stan.md`, dziennik AI) są w [CLAUDE.md](../CLAUDE.md) i dalej obowiązują.
 
 Oznaczenia: **[Z]** założenie, którego zespół jeszcze nie potwierdził. Jeśli się z nim nie zgadzasz, zgłoś w `stan.md`, nie zmieniaj po cichu.
 
@@ -43,10 +43,10 @@ Cztery role. Dawna R5 (produkt, pitch, QA) jest rozdzielona: prowadzi ją R2, a 
 
 | Rola | Obszar w repo | Deploy |
 |---|---|---|
-| R1 Dane i planer | `apps/api/src/adapters/waw/`, `adapters/gtfs/`, `domain/routing/`, `services/plan-route.ts`, `services/transit.ts`, `routes/transit.ts`, `routes/routes.ts`; schematy tras i transportu w `packages/shared` | Railway |
+| R1 Dane i planer | `apps/api/src/adapters/waw/`, `adapters/gtfs/`, `domain/routing/`, `services/plan-route.ts`, `routes/routes.ts`; schematy tras w `packages/shared` | Railway |
 | R2 Baza, historia, produkt | `supabase/`, `scripts/`, `apps/api/src/adapters/supabase/`, `services/places.ts`, `routes/places.ts`; PRD, scenariusz demo, pitch, oddanie | Supabase |
 | R3 Frontend i mapa | `apps/web/` w całości, `packages/ui` jeśli powstanie | Vercel |
-| R4 AI i głos | `apps/api/src/adapters/llm/`, `adapters/tts/`, `prompts/`, `services/story.ts`, `services/chat.ts`, `routes/stories.ts`, `routes/chat.ts` | — |
+| R4 AI | `apps/api/src/adapters/llm/`, `prompts/`, `services/story.ts`, `routes/stories.ts`, `scripts/prewarm-stories.ts` | — |
 | Wspólne | `packages/shared/`, `apps/api/src/index.ts` i `app.ts` (składanie), `apps/api/src/lib/`, konfiguracja w katalogu głównym, `.github/` | zmiana = PR z akceptacją zainteresowanych |
 
 ## 4. Warstwy abstrakcji
@@ -55,12 +55,12 @@ Cztery role. Dawna R5 (produkt, pitch, QA) jest rozdzielona: prowadzi ją R2, a 
 
 ```
 apps/api/src/
-  index.ts          # start serwera, poller pojazdów
+  index.ts          # start serwera
   app.ts            # składanie: tworzy adaptery, wstrzykuje do serwisów, montuje trasy
   routes/           # HTTP: walidacja zod, wywołanie serwisu, mapowanie na odpowiedź
-  services/         # przypadki użycia: planRoute, getStory, chat... Zależą od interfejsów (ports.ts)
+  services/         # przypadki użycia: planRoute, getStory... Zależą od interfejsów (ports.ts)
   domain/           # czyste funkcje i typy: geo, punktacja miejsc, ETA, długość opowieści. Zero IO
-  adapters/         # świat zewnętrzny: waw/ (dane.um), gtfs/, supabase/, llm/, tts/
+  adapters/         # świat zewnętrzny: waw/ (dane.um), gtfs/, supabase/, llm/
   prompts/          # prompty Sawy (tekst po polsku + builder w TS)
   lib/              # env, cache, logger, błędy, fetch z timeoutem
 ```
@@ -76,14 +76,14 @@ apps/api/src/
 
 **Adapter = warstwa antykorupcyjna.** API miasta zwraca listy `{key, value}` z polskimi kluczami (`szer_geo`, `nazwa_zespolu`). Adapter `waw` zamienia je na typy domenowe (`Stop { id, name, position: { lat, lng } }`) i tylko on wie o tym formacie. To samo dla GeoJSON historii (`fakty` → `facts`) i odpowiedzi LLM.
 
-**Porty do wymiany dostawcy.** `LlmProvider` (Bielik / Claude), `TtsProvider`, `PlacesRepository`, `TransitSource`. Dostawcę wybiera zmienna env w `app.ts` (`LLM_PROVIDER=bielik|claude|fake`). Każdy port ma implementację `fake` do testów i trybu offline.
+**Porty do wymiany dostawcy.** `LlmProvider` (Bielik / Claude), `PlacesRepository`, `TransitSource`. Dostawcę wybiera zmienna env w `app.ts` (`LLM_PROVIDER=bielik|claude|fake`). Każdy port ma implementację `fake` do testów i trybu offline.
 
 ### Frontend (`apps/web`, Next.js)
 
 ```
 apps/web/src/
   app/              # trasy Next.js: page.tsx, layout.tsx, demo/. Cienkie, składają features
-  features/         # onboarding/, map/, planner/, player/, chat/, demo/
+  features/         # onboarding/, map/, planner/, player/, demo/
     <feature>/
       components/   # komponenty tej funkcji
       hooks/        # useQuery, logika stanu
@@ -100,7 +100,7 @@ apps/web/src/
 
 ### Kontrakt (`packages/shared`)
 
-- Schematy zod i typy z `z.infer` dla wszystkiego, co przechodzi przez HTTP: `Place`, `PlaceSummary`, `PlanRouteRequest`, `Route`, `Leg`, `RoutePlace`, `Story`, `ChatMessage`, `Weather`, `Vehicle`, `Interest`.
+- Schematy zod i typy z `z.infer` dla wszystkiego, co przechodzi przez HTTP: `Place`, `PlaceSummary`, `PlanRouteRequest`, `Route`, `Leg`, `RoutePlace`, `Story`, `Interest`.
 - API waliduje nimi wejście, web dostaje typy przez klienta `hc` z Hono. Ręcznie przepisanych typów odpowiedzi w web nie ma.
 - Do tego stałe wspólne dla obu stron (lista zainteresowań, limity czasu 30–240 min) i czyste funkcje geo.
 - Zmiana pola: najpierw dodaj (opcjonalne), potem przełącz konsumenta, na końcu usuń stare. Nigdy nie zmieniaj znaczenia istniejącego pola.
@@ -169,9 +169,9 @@ Narzędzie: **Vitest** w całym monorepo. Testy nie mogą wołać prawdziwych AP
 
 **Błędy i odporność**
 - Jedna klasa `AppError` z kodem (`NOT_FOUND`, `UPSTREAM_TIMEOUT`, `VALIDATION`, ...). Middleware w `app.ts` zamienia ją na status HTTP i JSON `{ error: { code, message } }`. Stack trace nie wychodzi do klienta.
-- Timeout na każdym wywołaniu: API miasta 5 s, Supabase 5 s, LLM 30 s (strumień: 10 s do pierwszego tokenu).
-- Fallback ustalony z góry: API miasta padło → ostatnia wartość z cache z flagą `stale: true`; LLM padł → opowieść z `story_cache`, a gdy jej nie ma, same fakty z bazy; brak GPS → lokalizacja 42 Warsaw.
-- Cache w pamięci z TTL wg [05-plan-architektury.md](05-plan-architektury.md) (pojazdy 10 s, pogoda 10 min, przystanki i rozkłady 1 h+).
+- Timeout na każdym wywołaniu: API miasta 5 s, Supabase 5 s, LLM 30 s.
+- Fallback ustalony z góry: API miasta padło → ostatnia wartość z cache z flagą `stale: true`; LLM padł → opowieść z `story_cache`, a gdy jej nie ma, same fakty z bazy; brak GPS → lokalizacja 42 Warsaw. Szczegóły: [12-plan-mvp.md](12-plan-mvp.md) §8.
+- Cache w pamięci z TTL: przystanki 24 h, linie i odjazdy 1 h.
 
 **Bezpieczeństwo i licencje**
 - Sekrety tylko w `.env.local` (lokalnie), Vercel i Railway (produkcja). `.env.example` z pustymi wartościami w repo.
@@ -181,9 +181,9 @@ Narzędzie: **Vitest** w całym monorepo. Testy nie mogą wołać prawdziwych AP
 
 **Czytelność i utrzymanie**
 - Bez zakomentowanego kodu i martwych plików. Usuwasz, git pamięta.
-- `TODO` tylko z numerem zadania: `// TODO(T-14): korekta o opóźnienie pojazdu`.
+- `TODO` tylko z numerem zadania: `// TODO(T-13): kara za przesiadkę z dojściem`.
 - Komentarz mówi „dlaczego”, nie „co”. Nieoczywiste rzeczy z danych miasta (np. godziny po 24:00) zawsze z komentarzem.
-- Funkcje ukryte za flagą env (`FEATURE_TTS`, `FEATURE_SKIP_BUTTON`), żeby niedokończona rzecz nie psuła `main`.
+- Budujemy tylko punkty MVP z [12-plan-mvp.md](12-plan-mvp.md) §1. Rzeczy z §10 („Poza planem”) wymagają decyzji zespołu w `stan.md`. Niedokończoną funkcję chowasz za flagą env, żeby nie psuła `main`.
 - Logi w API przez `pino` (JSON). W web bez `console.log` w commitach.
 - Nowa zależność: sprawdź, czy już nie ma podobnej w repo. Dodajesz tylko w swoim pakiecie (`pnpm --filter web add ...`). Licencja musi pozwalać na użycie komercyjne (regulamin §4 ust. 3).
 
