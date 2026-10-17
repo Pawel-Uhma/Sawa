@@ -27,7 +27,7 @@
 
 ## Zablokowane
 
-- Trasy dłuższe niż ok. 20 min są puste w drugiej połowie: miejsca są tylko do 1 km od 42 Warsaw. Odblokowuje R2 (Jasiek): więcej miejsc i kategorie `sports`, `nature` (T-25).
+- Trasy dłuższe niż ok. 20 min były puste w drugiej połowie (miejsca tylko do 1 km od 42 Warsaw). Po odświeżeniu `places.geojson` przez R2 (14:08, 428 miejsc) do sprawdzenia, czy zasięg się poprawił. Sprawdza R1 (Szczepan), więcej miejsc dokłada R2 (Jasiek).
 - Front na Vercelu nie ma API, dopóki nie ma deployu na Railway (T-62). Odblokowuje R1 (Szczepan).
 
 ## Otwarte decyzje
@@ -36,13 +36,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 | Pytanie | Kto rozstrzyga | Gdzie szukać kontekstu |
 |---|---|---|
-<<<<<<< Updated upstream
-| Kiedy `GET /v1/places` i `/v1/places/:id` w API (choćby z `fake`), żeby mapa (T-30) czytała bazę | R2 (Jasiek) | [14-plan-mapy.md §11](14-plan-mapy.md) |
-| Mock trasy T-16: termin i czy `Leg.lngLats` to kształt po ulicach | R1 (Szczepan) | [14-plan-mapy.md §11](14-plan-mapy.md) |
-| Lista zainteresowań (8 kluczy) i reguły przypisania w seedzie | R3 + R2 | [13-plan-bazy.md §5](13-plan-bazy.md) |
-=======
 | Kto robi opowieści (R4: T-45, T-41, T-42) | zespół | [role/R4-ai-i-glos.md](role/R4-ai-i-glos.md) |
->>>>>>> Stashed changes
 | Potwierdzenie stacku z planu MVP: Hono na Railway + monorepo pnpm, 4 role (R5 → R2) | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) §2, §11 |
 | Konta Vercel i Railway: zespołowe czy prywatne | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) P7 |
 | Przycisk „dalej” w opowieści: MVP czy później | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
