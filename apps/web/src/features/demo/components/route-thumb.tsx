@@ -74,7 +74,7 @@ export function RouteThumb({
           patternUnits="userSpaceOnUse"
           patternTransform="rotate(-12)"
         >
-          <path d="M0 0H36M0 0V36" stroke="#fff" strokeWidth="3" />
+          <path d="M0 0H36M0 0V36" className="stroke-powierzchnia" strokeWidth="3" />
         </pattern>
       </defs>
       {/* Umowne kwartały ulic: tylko faktura, nie prawdziwa siatka */}
@@ -82,7 +82,7 @@ export function RouteThumb({
       <path
         d={path}
         fill="none"
-        stroke="#fff"
+        className="stroke-powierzchnia"
         strokeWidth={strokeWidth + 4}
         strokeLinejoin="round"
         strokeLinecap="round"
@@ -105,7 +105,7 @@ export function RouteThumb({
           cx={x}
           cy={y}
           r={4.5}
-          fill="#fff"
+          className="fill-powierzchnia"
           stroke={color}
           strokeWidth={2.5}
         />
@@ -113,7 +113,14 @@ export function RouteThumb({
       {start && (
         <g>
           <circle cx={start[0]} cy={start[1]} r={18} fill={GLEBIA} opacity="0.14" />
-          <circle cx={start[0]} cy={start[1]} r={8} fill={GLEBIA} stroke="#fff" strokeWidth={3} />
+          <circle
+            cx={start[0]}
+            cy={start[1]}
+            r={8}
+            fill={GLEBIA}
+            className="stroke-powierzchnia"
+            strokeWidth={3}
+          />
         </g>
       )}
     </svg>

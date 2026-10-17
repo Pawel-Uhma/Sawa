@@ -274,7 +274,7 @@ function MenuSheet({ closeRequested, onClosed, children }: MenuSheetProps) {
         aria-label="Menu Sawy"
         tabIndex={-1}
         style={{ y, opacity }}
-        className="karta absolute inset-x-2 bg-white! bottom-[max(0.5rem,env(safe-area-inset-bottom))] rounded-[34px] outline-none"
+        className="karta absolute inset-x-2 bg-powierzchnia! bottom-[max(0.5rem,env(safe-area-inset-bottom))] rounded-[34px] outline-none"
       >
         <span
           aria-hidden="true"
@@ -325,7 +325,7 @@ function MenuPopover({ anchor, onClose, children }: MenuPopoverProps) {
         exit={hidden}
         transition={POPOVER_SPRING}
         style={{ top: anchor.bottom + 10, left: anchor.left, transformOrigin: "24px 0" }}
-        className="karta fixed z-50 bg-white! max-h-[calc(100dvh-120px)] w-[340px] overflow-y-auto rounded-[28px] p-4 outline-none"
+        className="karta fixed z-50 bg-powierzchnia! max-h-[calc(100dvh-120px)] w-[340px] overflow-y-auto rounded-[28px] p-4 outline-none"
       >
         {children}
       </motion.div>
@@ -557,7 +557,7 @@ function Row({ Icon, label, value, onClick, chevron = true, expanded }: RowProps
       aria-expanded={expanded}
       className="flex min-h-14 w-full items-center gap-3 px-3 py-2.5 text-left transition-colors duration-100 active:bg-tekst/[0.06] md:hover:bg-tekst/[0.04]"
     >
-      <span className="flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-white text-glebia shadow-[0_1px_2px_rgba(16,43,42,0.08)]">
+      <span className="flex size-9 shrink-0 items-center justify-center rounded-[11px] bg-powierzchnia text-glebia shadow-[0_1px_2px_rgba(16,43,42,0.08)]">
         <Icon className="size-5" />
       </span>
       <span className="min-w-0 flex-1">

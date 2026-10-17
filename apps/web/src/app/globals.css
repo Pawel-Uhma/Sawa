@@ -35,13 +35,12 @@
   --karta-tlo: rgba(255, 255, 255, 0.94);
   --szklo-krawedz: rgba(255, 255, 255, 0.7);
   --cien: rgba(16, 43, 42, 0.1);
-  --background: var(--mapa);
 }
 
 /* Ciemny motyw: <html data-theme="dark"> ustawia features/theme (wybór Jasny / Ciemny / Auto, Auto idzie
-   za systemem). Tokeny ciemnieją na razie tylko wewnątrz .motyw (mapa). Ekrany demo mają jeszcze wpisane
-   jasne tła (bg-white, hexy), a tekst z tokenów, więc w ciemnym motywie byłyby nieczytelne.
-   Gdy przejdą na tokeny, klasa .motyw trafia na <body>.
+   za systemem). Tokeny ciemnieją wewnątrz .motyw, a ta klasa jest na <body>, więc w całej aplikacji.
+   W komponentach tła i tekst tylko z tokenów (bg-powierzchnia, bg-tlo-2, text-tekst…), bez bg-white i hexów;
+   biały zostaje tylko na kolorowych przyciskach (bg-glebia, bg-koral).
    Głębia jaśnieje, żeby linki i przyciski miały kontrast na ciemnym tle. */
 :root[data-theme="dark"] {
   .motyw {
@@ -72,9 +71,10 @@ body {
   touch-action: pan-x pan-y;
 }
 
+/* Tokeny wprost (nie --color-*): te liczą się na :root, więc nie ciemniałyby razem z body.motyw */
 body {
-  background: var(--background);
-  color: var(--color-tekst);
+  background: var(--mapa);
+  color: var(--tekst);
   font-family: var(--font-plus), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
@@ -140,7 +140,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-tekst-3);
+  color: var(--tekst-3);
 }
 
 /* Mgiełka pod paskiem statusu, gdy pod spodem jest mapa */
@@ -175,11 +175,6 @@ button {
 
 /* Kontrolki MapLibre (zoom, atrybucja) w ciemnym motywie */
 :root[data-theme="dark"] {
-  /* Mgiełka leży zawsze na mapie, a mapa jest już ciemna (poza .motyw, więc kolor wprost) */
-  .mgla {
-    background: linear-gradient(rgba(14, 22, 21, 0.95) 30%, rgba(14, 22, 21, 0));
-  }
-
   .maplibregl-ctrl-group,
   .maplibregl-ctrl-attrib.maplibregl-compact {
     background: var(--powierzchnia);
@@ -229,7 +224,7 @@ button {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: var(--color-glebia);
+  background: var(--glebia);
   border: 4px solid #fff;
   box-shadow:
     0 0 0 10px rgba(23, 112, 111, 0.18),
@@ -257,7 +252,7 @@ button {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: var(--color-koral);
+  background: var(--koral);
 }
 
 /* Numerowany punkt opowieści */
@@ -267,7 +262,7 @@ button {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: var(--color-koral);
+  background: var(--koral);
   color: #fff;
   border: 2.5px solid #fff;
   font-size: 12px;
@@ -281,7 +276,7 @@ button {
 }
 
 .mapa-nr.aktywny {
-  background: var(--color-glebia);
+  background: var(--glebia);
   transform: scale(1.3);
 }
 
