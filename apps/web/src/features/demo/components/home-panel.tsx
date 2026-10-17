@@ -3,6 +3,7 @@
 import type { Travel } from "@sawa/shared";
 import { AnimatePresence, motion, useAnimationControls, useReducedMotion } from "motion/react";
 import { type CSSProperties, type ReactNode, useLayoutEffect, useRef, useState } from "react";
+import { RollingText, Spinner, useDelayed, useWaitMessage } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING } from "../lib/device";
@@ -31,6 +32,8 @@ type HomePanelProps = {
   onGenerate: () => void;
   planning: boolean;
   planError: string | null;
+  /** Telefon jeszcze szuka lokalizacji; do tego czasu start jest pod 42 Warsaw. */
+  locating: boolean;
   collapsed: boolean;
   onCollapsedChange: (collapsed: boolean) => void;
 };
@@ -71,6 +74,7 @@ export function HomePanel({
   onGenerate,
   planning,
   planError,
+  locating,
   collapsed,
   onCollapsedChange,
 }: HomePanelProps) {
@@ -82,6 +86,20 @@ export function HomePanel({
   // Na najkrótszym kroku nagłówek pokazuje prawdziwy czas najszybszej drogi, nie zaokrąglony krok
   const shownMin =
     isFastest && fastestMin !== null ? Math.max(1, Math.round(fastestMin)) : durationMin;
+  // Planer potrafi liczyć kilkanaście sekund: przycisk mówi, co teraz robi, a potem, że to trwa
+  const planningText = useWaitMessage(planning, [
+    {
+      afterSec: 0,
+      text:
+        travel === "walk"
+          ? t("Sprawdzam ulice w okolicy…", "Checking the streets nearby…")
+          : t("Sprawdzam rozkład ZTM…", "Checking the ZTM timetable…"),
+    },
+    { afterSec: 3, text: t("Wybieram miejsca z historią…", "Picking places with stories…") },
+    { afterSec: 7, text: t("Układam kolejność przystanków…", "Putting the stops in order…") },
+    { afterSec: 14, text: t("Jeszcze chwila, to dłuższa trasa…", "Almost there, it's a long one…") },
+  ]);
+  const showLocating = useDelayed(locating, 600);
 
   // Dotknięcie Sawy: krótkie, sprężyste przechylenie (reakcja, nie dekoracja)
   function poke() {
@@ -116,8 +134,15 @@ export function HomePanel({
           <h2 className="truncate text-[18px] font-extrabold leading-tight tracking-[-0.02em] md:text-[20px]">
             {t("Ile masz czasu?", "How much time do you have?")}
           </h2>
-          <p className="truncate text-[12.5px] leading-snug text-tekst-2">
-            {t("Opowiem, co mijasz", "I'll tell you what you pass")}
+          <p className="flex min-w-0 items-center gap-1.5 text-[12.5px] leading-snug text-tekst-2">
+            {showLocating && <Spinner className="size-3 text-glebia" />}
+            <RollingText
+              text={
+                showLocating
+                  ? t("Szukam, gdzie jesteś…", "Finding where you are…")
+                  : t("Opowiem, co mijasz", "I'll tell you what you pass")
+              }
+            />
           </p>
         </div>
         <span className="relative h-9 shrink-0 overflow-hidden md:h-[42px]">
@@ -137,7 +162,8 @@ export function HomePanel({
       </div>
 
       {isFindingFastest ? (
-        <p className="mt-2 text-[13px] text-tekst-2">
+        <p role="status" className="mt-2 flex items-center gap-1.5 text-[13px] text-tekst-2">
+          <Spinner className="size-3.5 text-glebia" />
           {t("Szukam najszybszej drogi do celu…", "Finding the fastest way there…")}
         </p>
       ) : (
@@ -222,15 +248,31 @@ export function HomePanel({
         onChange={onRideEndChange}
       />
 
-      <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-4 !h-12 md:!h-14">
-        {/* Przycisk mówi, co wyjdzie: pętla albo droga do celu (czas jest w nagłówku) */}
-        {planning
-          ? t("Układam trasę…", "Planning your route…")
-          : rideEnd.type === "loop"
-            ? t("Wyznacz pętlę", "Plan a loop")
-            : t("Wyznacz trasę do celu", "Plan the way there")}
-        <ArrowRightIcon className="size-5" />
+      <PrimaryButton
+        onClick={onGenerate}
+        disabled={planning}
+        aria-busy={planning}
+        className={`mt-4 !h-12 md:!h-14 ${planning ? "disabled:!opacity-100" : ""}`}
+      >
+        {/* Przycisk mówi, co wyjdzie: pętla albo droga do celu (czas jest w nagłówku).
+            W czasie liczenia zostaje pełny, ze spinnerem i tym, co planer teraz robi. */}
+        {planningText ? (
+          <>
+            <Spinner className="size-[18px]" />
+            <RollingText text={planningText} className="text-[15px]" />
+          </>
+        ) : (
+          <>
+            {rideEnd.type === "loop"
+              ? t("Wyznacz pętlę", "Plan a loop")
+              : t("Wyznacz trasę do celu", "Plan the way there")}
+            <ArrowRightIcon className="size-5" />
+          </>
+        )}
       </PrimaryButton>
+      <span role="status" className="sr-only">
+        {planning ? t("Układam trasę", "Planning your route") : ""}
+      </span>
       {planError && (
         <p role="alert" className="mt-2 text-center text-sm text-tekst-2">
           {planError}
@@ -379,6 +421,9 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
     <div className="pt-2.5">
       <div className="relative">
         <PinIcon className="pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2 text-tekst-3" />
+        {isSearching && hasQuery && (
+          <Spinner className="pointer-events-none absolute right-3 top-1/2 z-10 size-4 -translate-y-1/2 text-tekst-3" />
+        )}
         <input
           type="search"
           value={text}
@@ -414,9 +459,10 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
                 </li>
               ))}
               {results.length === 0 && (
-                <li className="px-3 py-2 text-[13px] text-tekst-3">
+                <li role="status" className="flex items-center gap-2 px-3 py-2 text-[13px] text-tekst-3">
+                  {isSearching && <Spinner className="size-3.5" />}
                   {isSearching
-                    ? t("Szukam…", "Searching…")
+                    ? t("Szukam w Warszawie…", "Searching Warsaw…")
                     : isError
                       ? t(
                           "Nie udało się wyszukać. Wybierz cel na mapie.",
