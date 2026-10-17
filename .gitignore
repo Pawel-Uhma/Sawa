@@ -3,3 +3,8 @@ node_modules/
 .env*.local
 .claude/settings.local.json
 .DS_Store
+.env
+dist/
+coverage/
+*.tsbuildinfo
+.vercel

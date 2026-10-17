@@ -1,0 +1,9 @@
+{
+  "name": "@sawa/scripts",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@sawa/shared": "workspace:*",
+    "tsx": "^4.23.15"
+  }
+}
