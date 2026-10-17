@@ -6,6 +6,7 @@ import { type Ref, useEffect, useRef, useState } from "react";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
+import { Attribution, Departures } from "./departures";
 import { ChevronLeftIcon, PauseIcon, PinIcon, PlayIcon } from "./icons";
 import { Journey } from "./line-badge";
 import { SawaMenuButton } from "./sawa-menu";
@@ -24,6 +25,8 @@ export type RouteLiveProps = {
   durationMin: number;
   end: { label: string; reached: boolean } | null;
   legs: Leg[];
+  /** Podpis źródeł danych trasy (`Route.attribution`). */
+  attribution: string[];
   stops: MockStop[];
   /** Punkt, przy którym jest użytkownik i o którym Sawa teraz mówi. */
   activeIndex: number;
@@ -242,6 +245,7 @@ export function RouteLive({
   durationMin,
   end,
   legs,
+  attribution,
   stops,
   activeIndex,
   onBack,
@@ -298,6 +302,8 @@ export function RouteLive({
           </p>
         </div>
       </header>
+
+      <Departures legs={legs} />
 
       {stop && (
         <div className="flex items-center gap-2">
@@ -376,6 +382,8 @@ export function RouteLive({
         <PlayButton isPlaying={isPlaying} onToggle={togglePlay} size="lg" />
         <NextUp stops={stops} activeIndex={activeIndex} progress={progress} end={end} />
       </div>
+
+      <Attribution lines={attribution} />
     </div>
   );
 }
