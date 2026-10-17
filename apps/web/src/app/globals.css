@@ -186,6 +186,27 @@ button {
   }
 }
 
+/* Legenda kolorów tematów (T-151): pod przyciskami zoomu (2 × 29 px + marginesy 10 px), wyrównana do nich */
+.legenda-mapy {
+  top: calc(max(1rem, env(safe-area-inset-top)) + 52px + 10px + 58px + 10px);
+  right: 18px;
+}
+
+.legenda-mapy--bez-zoomu {
+  top: calc(max(1rem, env(safe-area-inset-top)) + 52px + 10px);
+}
+
+@media (min-width: 768px) {
+  .legenda-mapy {
+    top: calc(80px + 10px + 58px + 10px);
+    right: 26px;
+  }
+
+  .legenda-mapy--bez-zoomu {
+    top: 90px;
+  }
+}
+
 .maplibregl-ctrl-attrib.maplibregl-compact {
   background: color-mix(in srgb, var(--powierzchnia) 70%, transparent);
 }

@@ -6,6 +6,7 @@ import { createFakeRoutePlanner } from "../services/fake-route-planner";
 import {
   createDestinationService,
   createDisabledDestinationService,
+  DESTINATION_CACHE_TTL_MS,
 } from "../services/search-destinations";
 
 const PKIN = {
@@ -15,7 +16,11 @@ const PKIN = {
   position: { lat: 52.2318, lng: 21.006 },
 };
 
-const appWith = (destinations = createDestinationService({ search: async () => [PKIN] })) =>
+const appWith = (
+  destinations = createDestinationService({
+    search: async () => ({ results: [PKIN], partial: false }),
+  }),
+) =>
   createApp({
     corsOrigins: [],
     services: { routePlanner: createFakeRoutePlanner(), destinations },
@@ -26,6 +31,7 @@ describe("GET /v1/destinations", () => {
     const res = await appWith().request("/v1/destinations?q=pałac%20kultury");
     expect(res.status).toBe(200);
     expect(DestinationsResponseSchema.parse(await res.json()).results).toEqual([PKIN]);
+    expect(res.headers.get("Cache-Control")).toBe("private, max-age=60");
   });
 
   it("rejects a one-letter query", async () => {
@@ -40,18 +46,47 @@ describe("GET /v1/destinations", () => {
     );
     expect(res.status).toBe(502);
   });
+});
+
+describe("createDestinationService", () => {
+  const counting = (partial = false) => {
+    const source = {
+      calls: 0,
+      async search() {
+        source.calls += 1;
+        return { results: [PKIN], partial };
+      },
+    };
+    return source;
+  };
 
   it("asks the source once for the same query typed differently", async () => {
-    let calls = 0;
-    const service = createDestinationService({
-      search: async () => {
-        calls += 1;
-        return [PKIN];
-      },
-    });
+    const source = counting();
+    const service = createDestinationService(source);
     await service.search("Pałac  Kultury");
     await service.search("pałac kultury ");
-    expect(calls).toBe(1);
+    expect(source.calls).toBe(1);
+  });
+
+  it("does not keep an answer missing the street", async () => {
+    const source = counting(true);
+    const service = createDestinationService(source);
+    expect(await service.search("lwa")).toEqual([PKIN]);
+    await service.search("lwa");
+    expect(source.calls).toBe(2);
+  });
+
+  it("asks again after an hour", async () => {
+    let now = 0;
+    const source = counting();
+    const service = createDestinationService(source, { now: () => now });
+    await service.search("lwa");
+    now = DESTINATION_CACHE_TTL_MS - 1;
+    await service.search("lwa");
+    expect(source.calls).toBe(1);
+    now = DESTINATION_CACHE_TTL_MS;
+    await service.search("lwa");
+    expect(source.calls).toBe(2);
   });
 });
 

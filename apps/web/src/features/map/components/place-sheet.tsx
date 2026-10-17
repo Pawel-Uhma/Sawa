@@ -2,9 +2,10 @@ import type { Place } from "@sawa/shared";
 import { useState } from "react";
 import { FadeImage, Skeleton, SkeletonLines } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
+import { useTheme } from "@/features/theme";
 import { placeTagLabel } from "@/lib/interest-labels";
 import { usePlace } from "../hooks/use-place";
-import { placeKindColor, placeKindLabel } from "../lib/map-style";
+import { placeKindLabel, placeTopicColor } from "../lib/map-style";
 
 const FACTS_PREVIEW = 3;
 
@@ -21,12 +22,15 @@ export type PlaceSheetPlace = {
 
 type PlaceSheetProps = {
   place: PlaceSheetPlace;
+  /** Topics the user picked; the dot takes the same topic colour as the place on the map. */
+  interests: readonly string[];
   onClose: () => void;
 };
 
 /** Bottom sheet on phones, side panel from md up. Summary shows at once, details load after. */
-export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
+export function PlaceSheet({ place, interests, onClose }: PlaceSheetProps) {
   const t = useT();
+  const theme = useTheme();
   const lang = useLang();
   const detail = usePlace(place.id);
   const kind = detail.data?.kind ?? place.kind;
@@ -52,7 +56,7 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
                 <span
                   aria-hidden
                   className="inline-block size-2.5 rounded-full"
-                  style={{ backgroundColor: placeKindColor(kind, subkind) }}
+                  style={{ backgroundColor: placeTopicColor(tags, interests, theme) }}
                 />
               )}
               {eyebrow.join(" · ")}

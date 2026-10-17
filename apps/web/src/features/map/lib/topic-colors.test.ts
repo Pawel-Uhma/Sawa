@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import {
   type MapTheme,
   NO_TOPIC_COLOR,
+  placeStickerColors,
   placeTopic,
   placeTopicColor,
   placeTopicColorExpression,
@@ -94,8 +95,19 @@ describe("topic colours", () => {
       expect(contrast(hint, tint), `${theme} ${topic} hint on tint`).toBeGreaterThanOrEqual(4.5);
       // Check mark on the topic colour.
       expect(contrast(onColor, color), `${theme} ${topic} check`).toBeGreaterThanOrEqual(4.5);
-      // Ring on the map: non-text graphics, 3:1.
+      // Place marker on the map: non-text graphics, 3:1.
       expect(contrast(color, map), `${theme} ${topic} on map`).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it.each(THEMES)("keep marker glyphs readable against their outline in the %s theme", (theme) => {
+    for (const topic of [...INTERESTS, null]) {
+      const { fill, outline } = placeStickerColors(theme, topic);
+      expect(fill).toBe(topic ? TOPIC_COLORS[theme][topic].color : NO_TOPIC_COLOR[theme]);
+      // The glyph shape tells the kind of place, so it has to stand out from its outline: 3:1.
+      expect(contrast(fill, outline), `${theme} ${topic} glyph on outline`).toBeGreaterThanOrEqual(
+        3,
+      );
     }
   });
 });
