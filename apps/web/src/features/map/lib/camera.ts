@@ -11,6 +11,9 @@ export type MapCamera =
 
 export type MapPadding = { top: number; right: number; bottom: number; left: number };
 
+/** Leaves room for the place card on phones when a screen gives no padding. */
+export const DEFAULT_MAP_PADDING: MapPadding = { top: 48, right: 32, bottom: 200, left: 32 };
+
 export type CameraMove =
   | { type: "ease"; center: LngLat; zoom?: number }
   | { type: "fit"; bounds: LngLatBounds; maxZoom?: number };

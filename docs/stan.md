@@ -1,9 +1,10 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 14:40 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 16:30 (Szczepan, z agentem)
 
 ## Teraz
 
+- R1 (Szczepan, 16:30): planer czyta odpowiedzi z onboardingu: `tags` (kafelki), `familiarity`, `storyStyle` w `POST /v1/routes/plan` ([12-plan-mvp.md](12-plan-mvp.md) §7 pkt 8). Odjazdy z prawdziwym tokenem działają (PR #20: API zwraca gołą tablicę). **Dla R3:** w `api-data.ts` `planRoute` przyjmuje trzeci argument z profilem, `demo-app.tsx` go przekazuje (2 linie w Waszych plikach); `rides-panel.tsx` nadal bez profilu. **Dla R4:** `storyStyle` zmienia tylko odstępy (deep = dłuższe `windowSec`), prompt może go też czytać.
 - 16:10 (Paweł, z agentem R3): pogoda z górnego paska usunięta. Lewy górny róg: na telefonie głowa Sawy, na desktopie głowa + „sawa.”. Klik otwiera menu (`features/demo/components/sawa-menu.tsx`): arkusz od dołu na telefonie, popover spod logo na desktopie. W menu: zainteresowania, znajomość miasta, styl opowieści (wracają do kroku onboardingu), ostatnia przejażdżka, polecenie Sawy (share/schowek), źródła danych, „Zacznij od nowa”.
 - 16:00 (Paweł, z agentem R3): mapa rysuje każdą linię trasy innym kolorem (`LINE_COLORS` w `map-style.ts`, kolejne odcinki tej samej linii dzielą kolor), start i przesiadki to kółka w kolorze linii z jej numerem, a przejście między przystankami to kropkowana linia. Zamiast koloru wg `mode` (`LEG_MODE_COLORS` usunięte; Antek: do akceptacji, `features/map`). Suwak czasu: podpisy stoją w miejscach swoich wartości.
 - 15:54 (Paweł, z agentem R3): karta miejsca: wybrany wariant A (arkusz jak w Mapach Apple), B i C oraz przełącznik usunięte. Kod: `features/demo/components/place-card.tsx` (powłoka i części), `place-details.tsx` (treść), `place-card-host.tsx`.

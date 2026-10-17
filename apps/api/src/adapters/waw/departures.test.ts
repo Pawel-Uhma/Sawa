@@ -14,6 +14,13 @@ describe("parseDepartureTimes", () => {
     );
   });
 
+  it("reads the live API's bare array of rows", () => {
+    expect(parseDepartureTimes([row("14:02:00"), row("07:17:00")])).toEqual([
+      "14:02:00",
+      "07:17:00",
+    ]);
+  });
+
   it("returns nothing for the portal's error shape", () => {
     expect(parseDepartureTimes({ result: "false", error: "Nieautoryzowany dostęp" })).toEqual([]);
   });

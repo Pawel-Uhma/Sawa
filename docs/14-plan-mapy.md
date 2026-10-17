@@ -40,6 +40,8 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 | `hasPlaceSheet?` | `boolean`, domyślnie `true` | wbudowana karta miejsca (`?p=`); wyłącz, gdy ekran ma własną |
 | `hasZoomControls?` | `boolean`, domyślnie `true` | przyciski zoomu w prawym górnym rogu |
 
+**Playground:** `/mapa/playground` (`features/map-playground`). Każdy prop ma kontrolkę, nakładka pokazuje obszar `padding`, dziennik zbiera `onStopClick`, a na dole jest gotowy JSX do skopiowania. Trasa demo albo prawdziwy planer (`POST /v1/routes/plan`).
+
 ## 3. Przepływ danych
 
 Przeglądarka nie łączy się z Supabase (Z3). Wszystko idzie przez API.

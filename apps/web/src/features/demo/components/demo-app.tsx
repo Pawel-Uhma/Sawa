@@ -77,13 +77,13 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(durationMin, profile.interests, rideEnd));
+      showRoute(await planRoute(durationMin, profile.interests, rideEnd, profile));
     } catch {
       setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
     } finally {
       setPlanning(false);
     }
-  }, [durationMin, profile.interests, rideEnd, showRoute]);
+  }, [durationMin, profile, rideEnd, showRoute]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);

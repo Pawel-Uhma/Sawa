@@ -20,6 +20,7 @@ describe("toPlacePoints", () => {
         name: "Kercelak",
         position: { lat: 52.237, lng: 20.9802 },
         interests: ["historical", "cultural"],
+        tags: ["everyday_life", "war_uprising"],
         weight: 3,
       },
     ]);
