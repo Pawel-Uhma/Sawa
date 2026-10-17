@@ -60,6 +60,25 @@ export function toSegment(p: LatLng, a: LatLng, b: LatLng): { distanceM: number;
   return { distanceM: Math.hypot(px - t * bx, py - t * by), t };
 }
 
+export type Segment = { from: LatLng; to: LatLng; startSec: number; sec: number };
+
+/** Places within sight of a straight walk, with the time each is passed (`legIndex` 0). */
+export function placesAlong(
+  places: Iterable<PlacePoint>,
+  { from, to, startSec, sec }: Segment,
+  scoring: { interests: ReadonlySet<string>; prefs?: ScorePrefs; skip?: ReadonlySet<string> },
+): CollectedPlace[] {
+  const gained: CollectedPlace[] = [];
+  for (const place of places) {
+    if (scoring.skip?.has(place.id)) continue;
+    const { distanceM, t } = toSegment(place.position, from, to);
+    if (distanceM > VISIBLE_RADIUS_M) continue;
+    const score = scorePlace(place, distanceM, scoring.interests, scoring.prefs);
+    gained.push({ placeId: place.id, etaSec: startSec + t * sec, distanceM, legIndex: 0, score });
+  }
+  return gained;
+}
+
 /**
  * A short sightseeing walk: beam search over places near the origin, walking straight from
  * one to the next (× detour factor). Places within sight of each segment count, scored like
@@ -89,20 +108,15 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
   /** `state` extended by walking straight to `to`, collecting places passed. */
   function walkTo(state: State, to: LatLng, key: string): State {
     const sec = secBetween(state.at, to);
-    const gained: CollectedPlace[] = [];
-    for (const place of reachable) {
-      if (state.visited.has(place.id)) continue;
-      const { distanceM, t } = toSegment(place.position, state.at, to);
-      if (distanceM > VISIBLE_RADIUS_M) continue;
-      const score = scorePlace(place, distanceM, input.interests, input.prefs);
-      gained.push({
-        placeId: place.id,
-        etaSec: state.elapsedSec + t * sec,
-        distanceM,
-        legIndex: 0,
-        score,
-      });
-    }
+    const gained = placesAlong(
+      reachable,
+      { from: state.at, to, startSec: state.elapsedSec, sec },
+      {
+        interests: input.interests,
+        prefs: input.prefs,
+        skip: state.visited,
+      },
+    );
     const visited = new Set(state.visited);
     for (const g of gained) visited.add(g.placeId);
     return {

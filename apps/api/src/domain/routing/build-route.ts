@@ -9,7 +9,12 @@ import {
 } from "@sawa/shared";
 import type { CollectedPlace, Ride } from "./beam-search";
 import { cumulativeDistancesM, slicePolyline } from "./geometry";
-import { selectStoryPlaces } from "./select-stories";
+import {
+  MIN_STORY_GAP_SEC,
+  STORY_MAX_SEC,
+  selectStoryPlaces,
+  storyWindowSec,
+} from "./select-stories";
 import type { Network, Pattern, PatternStop, PlacePoint } from "./types";
 import type { Walk } from "./walk-tour";
 
@@ -26,8 +31,12 @@ export type BuildRouteInput = {
   attribution: string[];
   /** Shortest time between two narrated places (story style); default `MIN_STORY_GAP_SEC`. */
   storyGapSec?: number;
+  /** Longest story (story style); default `STORY_MAX_SEC.fun`. */
+  storyMaxSec?: number;
   /** Where the user starts: the walk to the first stop becomes a leg. */
   origin?: LatLng;
+  /** Places passed on the walk to the first stop (see `placesAlong`). */
+  walkInPlaces?: CollectedPlace[];
   /** Where the user ends (destination, or origin of a loop): the walk from the last stop. */
   end?: LatLng;
 };
@@ -69,10 +78,10 @@ function toRoutePlaces(
   collected: CollectedPlace[],
   placesById: Map<string, PlacePoint>,
   endSec: number,
-  storyGapSec: number | undefined,
-  legShift: number,
+  gapSec = MIN_STORY_GAP_SEC,
+  maxSec = STORY_MAX_SEC.fun,
 ): RoutePlace[] {
-  const sorted = selectStoryPlaces(collected, storyGapSec);
+  const sorted = selectStoryPlaces(collected, gapSec);
   return sorted.flatMap((p, i) => {
     const place = placesById.get(p.placeId);
     if (!place) return [];
@@ -83,8 +92,8 @@ function toRoutePlaces(
         name: place.name,
         position: place.position,
         etaSec: Math.round(p.etaSec),
-        windowSec: Math.max(0, Math.round(nextEtaSec - p.etaSec)),
-        legIndex: p.legIndex + legShift,
+        windowSec: storyWindowSec(nextEtaSec - p.etaSec, gapSec, maxSec),
+        legIndex: p.legIndex,
         distanceM: Math.round(p.distanceM),
       },
     ];
@@ -102,8 +111,10 @@ export function buildRoute({
   now,
   attribution,
   storyGapSec,
+  storyMaxSec,
   origin,
   end,
+  walkInPlaces = [],
 }: BuildRouteInput): Route {
   const rideLegs: Leg[] = ride.legs.map((leg) => {
     const pattern = network.patterns.get(leg.patternId) as Pattern;
@@ -154,7 +165,17 @@ export function buildRoute({
   return {
     id: ride.legs.map((l) => `${l.patternId}:${l.boardIndex}-${l.alightIndex}`).join("|"),
     legs,
-    places: toRoutePlaces(ride.places, placesById, ride.elapsedSec, storyGapSec, walkIn ? 1 : 0),
+    places: toRoutePlaces(
+      [
+        // Places on the walk to the first stop belong to that walking leg.
+        ...(walkIn ? walkInPlaces : []),
+        ...ride.places.map((p) => ({ ...p, legIndex: p.legIndex + (walkIn ? 1 : 0) })),
+      ],
+      placesById,
+      ride.elapsedSec,
+      storyGapSec,
+      storyMaxSec,
+    ),
     totalMin: Math.round((ride.elapsedSec + (walkOut ? walkOutSec : 0)) / 6) / 10,
     endsAtStart: ride.endsAtStart,
     ...(ride.endsAtDestination === undefined ? {} : { endsAtDestination: ride.endsAtDestination }),
@@ -168,6 +189,7 @@ export type BuildWalkRouteInput = {
   now: Date;
   attribution: string[];
   storyGapSec?: number;
+  storyMaxSec?: number;
   origin: LatLng;
   /** Requested destination, if any (sets `endsAtDestination`). */
   destination?: LatLng;
@@ -180,6 +202,7 @@ export function buildWalkRoute({
   now,
   attribution,
   storyGapSec,
+  storyMaxSec,
   origin,
   destination,
 }: BuildWalkRouteInput): Route {
@@ -197,7 +220,7 @@ export function buildWalkRoute({
   return {
     id: `walk:${walk.waypoints.map((p) => `${p.lat.toFixed(5)},${p.lng.toFixed(5)}`).join("|")}`,
     legs: [leg],
-    places: toRoutePlaces(walk.places, placesById, walk.elapsedSec, storyGapSec, 0),
+    places: toRoutePlaces(walk.places, placesById, walk.elapsedSec, storyGapSec, storyMaxSec),
     totalMin: Math.round(walk.elapsedSec / 6) / 10,
     endsAtStart: haversineM(endPoint, origin) <= 500,
     ...(destination ? { endsAtDestination: haversineM(endPoint, destination) <= 500 } : {}),
