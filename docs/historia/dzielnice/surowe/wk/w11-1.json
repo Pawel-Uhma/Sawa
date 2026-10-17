@@ -1,0 +1,179 @@
+[
+  {
+    "id": "ulica-bagatela",
+    "nazwa": "ulica Bagatela",
+    "name_en": "Bagatela Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bagatela",
+    "adres_historyczny": "Droga do Alej; Brombergerstrasse (okupacja)",
+    "lat": 52.213673,
+    "lon": 21.0224925,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w II połowie lat 60. XVIII wieku jako aleja dopełniająca założenie Osi Stanisławowskiej.",
+      "W 1818 roku Szymon Chavot założył przy ulicy restaurację „Bagatela”.",
+      "W 1870 roku ulica uzyskała nazwę Bagatela.",
+      "W 1881 roku uruchomiono wzdłuż niej linię tramwaju konnego, potem elektrycznego.",
+      "W 1884 roku z inicjatywy Jana Maurycego Kamińskiego w zachodniej części ulicy powstał ogród zoologiczny, który działał siedem lat.",
+      "Od 1946 roku ulicą kursowały trolejbusy, które zlikwidowano w 1967 roku.",
+      "W 2013 roku zaproponowano trasę tramwajową wzdłuż ulicy od pl. Unii Lubelskiej."
+    ],
+    "ciekawostki": [
+      "Nazwę „bagatela” miał podobno ukuć Marcello Bacciarelli dla swojej rezydencji, być może w nawiązaniu do niewielkiego znaczenia tej drogi w układzie Osi Stanisławowskiej.",
+      "W kamienicy pod numerem 10 urodził się Krzysztof Kamil Baczyński."
+    ],
+    "summary_en": "Bagatela Street runs about 300 metres through Ujazdów in the Śródmieście district, from the Aleje Ujazdowskie to Plac Unii Lubelskiej. It was laid out in the 1760s as part of the Royal Route axis and took its name in 1870. Its prewar tenements include the house where poet Krzysztof Kamil Baczyński was born.",
+    "ludzie": [
+      {"kto": "Marcello Bacciarelli", "rola": "malarz, właściciel pałacyku przy ulicy, któremu przypisuje się nadanie nazwy „bagatela”", "wiki": null},
+      {"kto": "Szymon Chavot", "rola": "założyciel restauracji „Bagatela” (1818)", "wiki": null},
+      {"kto": "Jan Maurycy Kamiński", "rola": "inicjator ogrodu zoologicznego w zachodniej części ulicy (1884)", "wiki": null},
+      {"kto": "Krzysztof Kamil Baczyński", "rola": "poeta, urodzony w kamienicy Wildera (nr 10)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga do Alej", "Okopowa (w części źródeł)", "Brombergerstrasse (okupacja)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Bagatela", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bagatela"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bagno",
+    "nazwa": "ulica Bagno",
+    "name_en": "Bagno Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bagno",
+    "adres_historyczny": null,
+    "lat": 52.2360025,
+    "lon": 21.0067052,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Bagno powstała w XVIII wieku, a uregulowana została w 1770 roku.",
+      "W 1882 roku powstała na ulicy linia tramwaju konnego.",
+      "W okresie wojny ulica znajdowała się w całości w obszarze tzw. małego getta.",
+      "W 1962 roku Krajowa Rada Narodowa zdecydowała o wyburzeniu całej zabudowy Bagna i zmianie jej przebiegu.",
+      "W miejscu zabytkowych budynków powstało zaprojektowane przez Bohdana Gniewiewskiego i Jana Bogusławskiego blokowisko „Grzybów I”.",
+      "Dopiero w latach 90. ulicę przebito do ul. Zielnej przez przejazd w budynku biurowym.",
+      "Ulica zaczyna się na placu Grzybowskim i po około 250 metrach kończy na ul. Zielnej."
+    ],
+    "ciekawostki": [
+      "Przed wojną była najkrótszym połączeniem placu Grzybowskiego z rejonem Marszałkowskiej, a po wojnie działał tu przedwojenny prywatny handel, unikatowy w powojennej Warszawie.",
+      "Część domów odbudowano po wojnie z rąk prywatnych właścicieli i wpisano je do rejestru zabytków."
+    ],
+    "summary_en": "Bagno is a short Śródmieście street that runs from Plac Grzybowski about 250 metres east to Zielna. Its prewar core was a dense cluster of small private shops and workshops. In 1962 the decision was made to demolish the old buildings and replace them with a housing estate, and the street was later cut back and re-routed.",
+    "ludzie": [
+      {"kto": "Bohdan Gniewiewski", "rola": "współprojektant blokowiska „Grzybów I”", "wiki": null},
+      {"kto": "Jan Bogusławski", "rola": "współprojektant blokowiska „Grzybów I”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Bagno", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bagno"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-barokowa",
+    "nazwa": "ulica Barokowa",
+    "name_en": "Barokowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Barokowa",
+    "adres_historyczny": null,
+    "lat": 52.2477187,
+    "lon": 21.0047746,
+    "lokalizacja": "przyblizona",
+    "okres": "1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Uliczka została wytyczona około 1937 roku między zabudowaniami ulicy Długiej.",
+      "Wkrótce powstał przy niej nowoczesny gmach Miejskich Szkół Powszechnych (nr 5) oraz budynek przedszkola (nr 4).",
+      "Podczas niemieckiej okupacji szkołę zamieniono na szpital Wehrmachtu.",
+      "Podczas powstania warszawskiego powstańcy zmusili Niemców do wycofania się z tego terenu.",
+      "W dniach 6–13 sierpnia 1944 roku w budynku szkoły stacjonowała Komenda Główna Armii Krajowej.",
+      "Cała zabudowa uległa zniszczeniu w 1944 roku i żadne relikty nie dotrwały do czasów współczesnych."
+    ],
+    "ciekawostki": [
+      "Uliczka ma około 100 metrów długości, jest wyłożona kostką i kończy się ślepo na terenie ogrodu Krasińskich."
+    ],
+    "summary_en": "Barokowa is a roughly 100-metre dead-end lane on Muranów, laid out around 1937 between the buildings of Długa Street. Its interwar school and kindergarten were destroyed in 1944, and the Home Army Main Command was based in the school building in early August 1944.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Barokowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Barokowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zabudowa z 1937 roku zniszczona w 1944 roku; w artykule brak aktualnych budynków, rekord dotyczy samej uliczki."
+  },
+  {
+    "id": "ulica-belwederska",
+    "nazwa": "ulica Belwederska",
+    "name_en": "Belwederska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Belwederska",
+    "adres_historyczny": "Aleja Belwederska; Sonnenstrasse (okupacja)",
+    "lat": 52.2068599,
+    "lon": 21.0307319,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała mniej więcej w XVII wieku; wcześniej istniał tu kościół św. Anny.",
+      "Od 1659 roku kościołowi towarzyszył pałac wybudowany dla Krzysztofa Zygmunta Paca.",
+      "W 1770 roku obszar znalazł się poza okopami, a obok powstały rogatki belwederskie.",
+      "W 1892 roku rozpoczęła kursowanie kolej wilanowska, która wzdłuż ulicy dojeżdżała do Wilanowa.",
+      "W latach 30. XX wieku pojawiły się nowoczesne kamienice, w tym zespół bloków osiedla ZUS.",
+      "W latach 50. XX wieku zlikwidowano odcinek kolejki wilanowskiej biegnący wzdłuż ulicy.",
+      "16 maja 1998 roku na zjeździe z ulicy doszło do wypadku autobusu Ikarus 435 linii 195, w którym zginęła jedna osoba.",
+      "W latach 2022–2025 powstała wzdłuż ulicy linia tramwajowa do Miasteczka Wilanów."
+    ],
+    "ciekawostki": [
+      "Na rogu z ul. Promenada stoi kamień upamiętniający Redutę Magnet, którą żołnierze kompanii O-2 pułku „Baszta” bronili od 17 sierpnia do 22 września 1944 roku.",
+      "Ścieżka rowerowa po zachodniej stronie jezdni ma największy kąt nachylenia z dróg rowerowych w Warszawie."
+    ],
+    "summary_en": "Belwederska is part of the Royal Route, running from the Aleje Ujazdowskie to Chełmska and Dolna. Its name comes from the nearby Belweder palace. The street was rebuilt in the 1970s and again in the 2020s, when a tram line to Miasteczko Wilanów was built along it.",
+    "ludzie": [
+      {"kto": "Krzysztof Zygmunt Pac", "rola": "osoba, dla której od 1659 roku wybudowano pałac przy kościele św. Anny", "wiki": null},
+      {"kto": "Jakub Kubicki", "rola": "architekt przebudowy pałacu w latach 1818–1822", "wiki": null},
+      {"kto": "Władysław Sikorski", "rola": "patron willi przy ulicy, zlikwidowanej w latach 50.; jego pomnik stoi przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Aleja Belwederska", "Sonnenstrasse (okupacja)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Belwederska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Belwederska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dzielnice Śródmieście i Mokotów; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-boduena",
+    "nazwa": "ulica Gabriela Boduena",
+    "name_en": "Gabriela Boduena Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Boduena",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1902–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1902 roku po przeniesieniu Szpitala Dzieciątka Jezus.",
+      "Patronem ulicy jest Gabriel Boduen, XVI-wieczny francuski ksiądz, założyciel sfinansowanego z darowizn szpitala dla podrzutków przy Krakowskim Przedmieściu.",
+      "Pierwszym budynkiem na ulicy była wybudowana w 1904 roku kamienica Towarzystwa Ubezpieczeń od Ognia wg projektu Władysława Marconiego.",
+      "W 1911 roku pod numerami 4 i 6 powstały istniejące do dziś kamienice rodziny Seidenbeuthlów.",
+      "W 2008 roku pod numerem 3/5 wybudowano gmach Naczelnego Sądu Administracyjnego.",
+      "Ulica zaczyna swój bieg na placu Powstańców Warszawy i kończy skrzyżowaniem z Jasną."
+    ],
+    "ciekawostki": [
+      "W okresie PRL-u południową część ulicy zajmowała stacja obsługi pojazdów, zamieniona później na salon gier."
+    ],
+    "summary_en": "Gabriela Boduena Street is a 120-metre one-way street in Śródmieście Północne, running from Plac Powstańców Warszawy to Jasna. It was laid out in 1902 after the Hospital of the Infant Jesus moved, and was named after the French priest who founded a foundling hospital in Warsaw.",
+    "ludzie": [
+      {"kto": "Gabriel Boduen", "rola": "XVI-wieczny francuski ksiądz, patron ulicy, założyciel szpitala dla podrzutków", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "projektant kamienicy Towarzystwa Ubezpieczeń od Ognia (1904)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Boduena", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Boduena"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy, numery budynków występują tylko w faktach."
+  }
+]

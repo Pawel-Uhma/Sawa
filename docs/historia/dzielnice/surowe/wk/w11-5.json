@@ -1,0 +1,210 @@
+[
+  {
+    "id": "ulica-krakowskie-przedmiescie",
+    "nazwa": "ulica Krakowskie Przedmieście",
+    "name_en": "Krakowskie Przedmieście Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście",
+    "adres_historyczny": "Bernardyńskie Przedmieście; Czerskie Przedmieście; Krakauer Strasse (okupacja)",
+    "lat": 52.24484,
+    "lon": 21.013924,
+    "lokalizacja": "przyblizona",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Krakowskie Przedmieście wywodzi się z dawnego traktu Zakroczym–Czersk, biegnącego na południe do Jazdowa, Czerska i dalej do Krakowa.",
+      "Przedmieścia przy Bramie Krakowskiej zaczęły się tworzyć już w XIV wieku, a w 1454 roku powstał przy nich kościół Bernardynów.",
+      "Około 1762 roku ulica była już całkowicie wybrukowana, a do 1855 roku uzyskała oświetlenie gazowe.",
+      "27 lutego 1861 roku rosyjskie wojsko zaczęło strzelać do protestujących, zabijając pięć osób.",
+      "W 1865 roku rozebrano kamienice pośrodku Szerokiego Krakowskiego Przedmieścia, a w 1866 roku ruszyła tędy linia tramwaju konnego.",
+      "1 czerwca 1965 roku całą ulicę wpisano do rejestru zabytków pod numerem 205.",
+      "Prace remontowe w południowej części rozpoczęły się 22 września 2006 roku, a północną część oficjalnie otwarto 13 lipca 2008 roku.",
+      "Remont kosztował 86 mln złotych i trwał dwa lata."
+    ],
+    "ciekawostki": [
+      "Żółtawy granit sprowadzony z Chin miał imitować kolor nawierzchni z XVIII wieku, nawiązując do obrazów Canaletta."
+    ],
+    "summary_en": "Krakowskie Przedmieście is the northern stretch of the Royal Route, about 1.1 kilometres long, running from Plac Zamkowy to Kopernika and Nowy Świat. It grew from the Bernardine suburb outside the Kraków Gate, was listed as a monument in 1965, and was rebuilt as a pedestrian boulevard in 2006–2008.",
+    "ludzie": [
+      {"kto": "Hanna Gronkiewicz-Waltz", "rola": "prezydent Warszawy, która oficjalnie otworzyła północną część ulicy po remoncie (13 lipca 2008)", "wiki": null},
+      {"kto": "Krzysztof Domaradzki", "rola": "projektant przebudowy ulicy (2006–2008)", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "spotkanie z młodzieżą na ulicy w 1979 roku (przed kościołem św. Anny)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bernardyńskie Przedmieście", "Czerskie Przedmieście", "Krakauer Strasse (okupacja)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Krakowskie Przedmieście", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Krakowskie_Przedmieście"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst artykułu urywa się w opisie przebiegu; rekord oparty na całej dostępnej treści. Nagłówek podaje też Stare Miasto i Śródmieście Północne; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-kredytowa",
+    "nazwa": "ulica Kredytowa",
+    "name_en": "Kredytowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kredytowa",
+    "adres_historyczny": "Nowopróżna; Erywańska",
+    "lat": 52.2379161,
+    "lon": 21.0104689,
+    "lokalizacja": "przyblizona",
+    "okres": "1855–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1856 roku w miejscu dawnej drogi; początkowo nazywała się Nowopróżna, a wkrótce Erywańska, na cześć hrabiego erywańskiego Iwana F. Paskiewicza.",
+      "Inicjatorem wytyczenia ulicy było Towarzystwo Kredytowe Ziemskie, którego gmach powstał w tym samym czasie.",
+      "W 1917 roku ulica otrzymała nazwę Kredytowa.",
+      "W 1925 roku otwarto tu pierwszą rozgłośnię Polskiego Radia.",
+      "W 1946 roku skierowano tu trolejbusy, które kursowały do 1972 roku.",
+      "W latach 50. XX wieku ulicę skrócono do ul. Jasnej.",
+      "W 1959 roku budynek pod nr 8 został wybrany jako pierwszy Misterem Warszawy."
+    ],
+    "ciekawostki": [
+      "Rejon ulicy, zwłaszcza placu Dąbrowskiego, znany jest jako zagłębie sprzedawców podręczników szkolnych, bo w latach 90. XX wieku działały tu liczne księgarnie szkolne."
+    ],
+    "summary_en": "Kredytowa is a 250-metre street in Śródmieście Północne, running west from Traugutta and Plac Małachowskiego to Jasna. It was laid out in the 1850s and named in 1917 after the Land Credit Society whose building stands here. The first Polish Radio station opened on it in 1925.",
+    "ludzie": [
+      {"kto": "Iwan Paskiewicz", "rola": "hrabia erywański, którego imię nosiła pierwotna nazwa ulicy Erywańska (w tekście „Iwan F. Paskiewicz”)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowopróżna", "Erywańska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Kredytowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kredytowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje rok 1855, tekst rok 1856. Artykuł podaje dzielnicę Śródmieście."
+  },
+  {
+    "id": "ulica-krywulta",
+    "nazwa": "ulica Aleksandra Krywulta",
+    "name_en": "Aleksander Krywult Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Aleksandra Krywulta",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 60. XX wieku jako bezimienne połączenie ulic Foksal i Szczyglej.",
+      "Swojego aktualnego patrona ulica otrzymała dopiero w 1998 roku.",
+      "Ulica jest jednokierunkowa w kierunku północnym i ma około 90 metrów długości.",
+      "W dawnym kinie Domu Kultury Radzieckiej działała meksykańska restauracja; w jej miejscu w latach 2012–2014 powstał biurowiec."
+    ],
+    "ciekawostki": [
+      "Najbardziej rozpoznawalnym obiektem na ulicy była właśnie meksykańska restauracja w dawnym kinie Domu Kultury Radzieckiej."
+    ],
+    "summary_en": "Aleksander Krywult Street is a short one-way street of about 90 metres in Śródmieście Północne. It was formed in the 1960s as an unnamed link between Foksal and Szczygla, and received its present name in 1998.",
+    "ludzie": [
+      {"kto": "Aleksander Krywult", "rola": "twórca warszawskiego salonu artystycznego działającego w latach 1880–1906; patron ulicy od 1998 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Krywulta", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Krywulta"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy. Nagłówek podaje „Ul. Aleksandra Krywulta”."
+  },
+  {
+    "id": "ulica-krzywe-kolo",
+    "nazwa": "ulica Krzywe Koło",
+    "name_en": "Krzywe Koło Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krzywe Koło",
+    "adres_historyczny": "Curvae Rotae; Crzive Colo (nazwy historyczne)",
+    "lat": 52.2505297,
+    "lon": 21.0114078,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIII i XIV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona prawdopodobnie na przełomie XIII i XIV wieku; kształt i nazwę zawdzięcza zarysowi murów obronnych.",
+      "Ulica była uliczką gospodarczą dla kamienic przy Rynku.",
+      "W połowie XIV wieku stanęła tu pierwsza warszawska murowana kamienica, być może należąca do wójta.",
+      "Pierwsze gotyckie kamieniczki legły w gruzach po pożarze w 1607 roku.",
+      "W 1944 roku znaczna część zabudowy uległa zniszczeniu, nie licząc kamienic nr 7 i nr 9 odremontowanych tuż przed wojną.",
+      "Zabudowę odtworzono według projektu Stanisława Żaryna do 1955 roku.",
+      "W 2012 roku nawierzchnię ulicy wyremontowano."
+    ],
+    "ciekawostki": [
+      "Według popularnej legendy w ruinach domostwa przy Krzywym Kole mieszkał Bazyliszek, który zamieniał w kamień wszystko, na co spojrzał; pokonał go człowiek obwieszony zwierciadłami."
+    ],
+    "summary_en": "Krzywe Koło is a car-free curved street of about 150 metres in the Old Town, running from the north-eastern corner of the Market Square to Nowomiejska. Its name refers to the curve of the city wall. Most of its buildings were rebuilt after 1944, and numbers 7, 9 and 11 house the State Archive of Warsaw.",
+    "ludzie": [
+      {"kto": "Andrzej Le Brun", "rola": "rzeźbiarz, mieszkał w jednej z kamienic w XVIII wieku", "wiki": null},
+      {"kto": "Karol Wedel", "rola": "znany warszawski cukiernik, mieszkał przy ulicy w XIX wieku", "wiki": null},
+      {"kto": "Józef Sierakowski", "rola": "rzeźnik, jeden z przywódców powstania kościuszkowskiego w Warszawie; mieszkał w kamienicy nr 3", "wiki": null},
+      {"kto": "Stanisław Żaryn", "rola": "autor projektu odbudowy zabudowy do 1955 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Curvae Rotae", "Crzive Colo"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Krzywe Koło", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Krzywe_Koło"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-ludna",
+    "nazwa": "ulica Ludna",
+    "name_en": "Ludna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Ludna",
+    "adres_historyczny": null,
+    "lat": 52.2334506,
+    "lon": 21.0387025,
+    "lokalizacja": "przyblizona",
+    "okres": "2. połowa XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Ludna powstała w drugiej połowie XVIII wieku.",
+      "Do połowy XIX wieku była bardzo zaniedbana, nie miała bruku i często zalewały ją wezbrane wody Wisły.",
+      "Pierwsza nawierzchnia z polnych kamieni pojawiła się na niej około 1856 roku.",
+      "W 1922 roku ulicą pojechał pierwszy tramwaj elektryczny linii „P”.",
+      "W latach 2020–2021 ulica została przebudowana, a liczba miejsc parkingowych wzrosła z 35 do 61."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ludna is a 750-metre street in Powiśle, running from Wioślarska to Rozbrat. For most of the 19th century it was unpaved and often flooded by the Vistula. It was rebuilt in 2020–2021, when parking spaces were increased from 35 to 61.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Ludna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Ludna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje Powiśle; rekord przypisany do Śródmieścia zgodnie z nagłówkiem DZIELNICE."
+  },
+  {
+    "id": "ulica-mostowa",
+    "nazwa": "ulica Mostowa",
+    "name_en": "Mostowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mostowa",
+    "adres_historyczny": "Chwaliszewo (Waliszewo); Przewoźna",
+    "lat": 52.2517311,
+    "lon": 21.0114201,
+    "lokalizacja": "przyblizona",
+    "okres": "około XIV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała jako podmiejska dla nowo lokowanej Nowej Warszawy, w wąwozie potoku Dunaj.",
+      "W 1573 roku stała się jedną z najważniejszych ulic miasta, bo prowadziła do pierwszego stałego mostu na Wiśle, od którego nazwano ją Mostowa.",
+      "W 1595 roku ulicę wybrukowano.",
+      "Szpital św. Łazarza założono z inicjatywy ks. Piotra Skargi w 1584 roku.",
+      "Podczas potopu szwedzkiego cała zabudowa została spalona; 7 maja 1656 roku szwedzki feldmarszałek Arvid Wittenberg wydał rozkaz spalenia zabudowy.",
+      "W 1769 roku w baszcie utworzono więzienie, tzw. Dom Poprawy, a w 1835 roku przeniesiono je na Pawiak.",
+      "W 1909 roku do ulicy przebito ulicę Starą.",
+      "Podczas powstania warszawskiego ulica znalazła się w głównym ogniu walk; broniła jej m.in. batalion „Dzik” zgrupowania „Róg”."
+    ],
+    "ciekawostki": [
+      "Na kamienicy nr 2 tablica upamiętnia aresztowanie Hanki Sawickiej, a na kamienicy nr 6 tablica upamiętnia Edmunda Burke’a."
+    ],
+    "summary_en": "Mostowa is a 200-metre street on the border of the Old and New Towns, climbing the Vistula escarpment from Boleść to Freta. It was named after the first permanent bridge over the Vistula in 1573. Its buildings were burned by the Swedes in 1656 and destroyed in 1944, then rebuilt with stepped roofs.",
+    "ludzie": [
+      {"kto": "Piotr Skarga", "rola": "inicjator założenia szpitala św. Łazarza (1584)", "wiki": null},
+      {"kto": "Arvid Wittenberg", "rola": "szwedzki feldmarszałek, który 7 maja 1656 roku wydał rozkaz spalenia zabudowy", "wiki": null},
+      {"kto": "Jakub Graszowski", "rola": "inwestor pierwszej murowanej kamieniczki przy ulicy (przed 1655)", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "autor projektu nowej fasady więzienia Dom Poprawy", "wiki": null},
+      {"kto": "Hanka Sawicka", "rola": "upamiętniona tablicą na kamienicy nr 2 (aresztowanie)", "wiki": null},
+      {"kto": "Edmund Burke", "rola": "upamiętniony tablicą na kamienicy nr 6", "wiki": null},
+      {"kto": "Krystyna Jakimowicz-Malinowska", "rola": "autorka odbudowy zabudowy w latach 1948–1956", "wiki": null}
+    ],
+    "dawne_nazwy": ["Chwaliszewo (Waliszewo)", "Przewoźna"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Mostowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Mostowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje dzielnice Nowe Miasto i Stare Miasto; rekord przypisany do Śródmieścia zgodnie z nagłówkiem DZIELNICE."
+  }
+]

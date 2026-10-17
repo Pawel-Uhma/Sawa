@@ -1,0 +1,128 @@
+[
+  {
+    "id": "ulica-platnicza",
+    "nazwa": "Ulica Płatnicza",
+    "name_en": "Płatnicza Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Płatnicza",
+    "adres_historyczny": null,
+    "lat": 52.2811566,
+    "lon": 20.9472127,
+    "lokalizacja": "przyblizona",
+    "okres": "II poł. lat 20. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ma prawie 750 metrów długości. Leży na osiedlu Zdobycz Robotnicza w obszarze MSI Stare Bielany i jest jednokierunkowa, w kierunku południowym.",
+      "Ulicę wytyczono w II połowie lat 20. XX wieku. W latach 1927–1929 spółdzielnia Zdobycz Robotnicza zabudowała ją domami szeregowymi i wolnostojącymi w stylu dworkowym.",
+      "Dawniej nosiła nazwę Chełmżyńska, którą zmieniono w 1951 roku.",
+      "Domy nr 17–32 wybudowano w latach 1928–1930 według projektu Janusza Dzierżawskiego w stylu neoklasycyzmu narodowego.",
+      "Dom nr 46 wzniesiono w latach 1933–1935 dla Spółdzielni Towarzystwa Ogródków Robotniczych według projektu Borysa Zinserlinga.",
+      "Dom nr 52 to modernistyczny dom według projektu Jerzego Przymanowskiego i Romana Morgulca z 1933 roku. Był kilkukrotnie przebudowywany i ma postać asymetrycznego domu bliźniaczego.",
+      "Dom nr 50 to modernistyczny dom Stanisława Czernego z 1939 roku. Był to ostatni dom na Płatniczej ukończony przed wybuchem II wojny światowej.",
+      "Dom nr 35 wybudowano w 1985 roku w stylu staropolskiego dworku, w miejscu dawnego baraku."
+    ],
+    "ciekawostki": [
+      "Na całej długości ulicy stoją latarnie gazowe, zainstalowane w latach 1935–1936 po przeniesieniu z centrum Warszawy. Po remoncie z 2010 roku przywrócono im żeliwne elementy, a zapala się je na fotokomórkę.",
+      "Na domu nr 59 jest neon upamiętniający piosenkarkę Korę, mieszkankę tego domu.",
+      "Przy Płatniczej 51 znajduje się figura Najświętszej Marii Panny z lat 30. XX wieku."
+    ],
+    "summary_en": "Płatnicza is a one-way street of about 750 m in the Zdobycz Robotnicza estate, Stare Bielany. Built in 1927–1929 in the national 'dworkowy' style, it has many listed houses by Janusz Dzierżawski and other architects, and gas street lamps from 1935–1936.",
+    "ludzie": [
+      {"kto": "Janusz Dzierżawski", "rola": "projektant domów nr 17–32", "wiki": null},
+      {"kto": "Borys Zinserling", "rola": "projektant domu nr 46", "wiki": null},
+      {"kto": "Jerzy Przymanowski", "rola": "współprojektant domu nr 52", "wiki": null},
+      {"kto": "Roman Morgulec", "rola": "współprojektant domu nr 52", "wiki": null},
+      {"kto": "Stanisław Czerny", "rola": "projektant domu nr 50", "wiki": null},
+      {"kto": "Kora", "rola": "mieszkanka domu nr 59 (upamiętniona neonem)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Chełmżyńska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Płatnicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Płatnicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wspolrzedne to srodek odcinka z naglowka."
+  },
+  {
+    "id": "ulica-szaflarska",
+    "nazwa": "Ulica Szaflarska",
+    "name_en": "Szaflarska Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Szaflarska",
+    "adres_historyczny": null,
+    "lat": 52.2832154,
+    "lon": 20.9501872,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ma około 120 metrów długości i leży na Starych Bielanach. Biegnie między ul. Grębałowską a ul. Twardowską i nie ma innych przecznic.",
+      "Powstała około 1930 roku. Jest wyłożona kostką brukową, a w skrajni jezdni stoją stare gazowe latarnie.",
+      "Nazwa najpewniej pochodzi od miejscowości Szaflary na Podhalu.",
+      "Domy nr 1, 3, 5, 7 i 9 to modernistyczne domy według projektu Romualda Millera z lat 1934–1935. Obecnie w pierwotnym kształcie zachowały się tylko domy nr 3, 5 i 7."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Szaflarska is a cobbled street of about 120 m in Stare Bielany, between Grębałowska and Twardowska. Its gas lamps stand in the carriageway, and the modernist houses at nos. 1–9 were designed by Romuald Miller in 1934–1935.",
+    "ludzie": [
+      {"kto": "Romuald Miller", "rola": "projektant domów nr 1–9", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Szaflarska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Szaflarska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wspolrzedne to srodek odcinka z naglowka."
+  },
+  {
+    "id": "zuga-16",
+    "nazwa": "Budynek szkolny przy Zuga 16",
+    "name_en": "School building at Zuga 16",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Zuga 16",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek szkolny wybudowano w latach 1936–1937 według projektu Jerzego Przymanowskiego; to modernistyczno-neoklasycystyczny budynek wpisany na listę zabytków.",
+      "Od 1 września 2009 roku mieści się tu XXXIX Liceum Ogólnokształcące im. Lotnictwa Polskiego („Dewulot”).",
+      "Przed 2009 rokiem działał tu zespół szkół sportowych: Sportowa Szkoła Podstawowa nr 21, Gimnazjum Sportowe nr 79 oraz LIX Liceum Ogólnokształcące Mistrzostwa Sportowego im. Janusza Kusocińskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A listed 1936–1937 school building at Zuga 16 in Stare Bielany, designed by Jerzy Przymanowski. Since 2009 it has housed a general secondary school, earlier a sports school complex.",
+    "ludzie": [
+      {"kto": "Jerzy Przymanowski", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Zuga", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zuga"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul o ulicy nie podaje wspolrzednych; lat/lon puste, do uzupelnienia geokodowaniem po adresie."
+  },
+  {
+    "id": "zuga-26",
+    "nazwa": "Dom przy Zuga 26",
+    "name_en": "House at Zuga 26",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Zuga 26",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Modernistyczny dom wybudowany w 1935 roku według projektu Romualda Millera.",
+      "W projekcie zastosowano głównie materiały drewnopochodne. Dom należał do osiedla „Związkowiec”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1935 modernist house at Zuga 26 in Stare Bielany, designed by Romuald Miller mostly in timber-based materials. It belonged to the Związkowiec estate.",
+    "ludzie": [
+      {"kto": "Romuald Miller", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Zuga", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zuga"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul o ulicy nie podaje wspolrzednych; lat/lon puste, do uzupelnienia geokodowaniem po adresie."
+  }
+]

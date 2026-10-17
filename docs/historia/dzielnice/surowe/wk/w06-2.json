@@ -1,0 +1,244 @@
+[
+  {
+    "id": "biurowiec-nowy-swiat-2-0",
+    "nazwa": "Biurowiec Nowy Świat 2.0",
+    "name_en": "Nowy Świat 2.0 Office Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 4a",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2013–2015",
+    "istnieje": true,
+    "fakty": [
+      "W tym miejscu stał XIX-wieczny budynek III Oddziału Warszawskiej Straży Ogniowej (nr 6), rozebrany około 1950 roku w związku z budową sąsiedniego gmachu Komitetu Centralnego PZPR.",
+      "Zapowiedź budowy biurowca o roboczej nazwie „Nowy Świat Bis” pojawiła się w listopadzie 2011 roku z inicjatywy Agencji Rozwoju Przemysłu.",
+      "Budowa rozpoczęła się 27 czerwca 2013 roku od symbolicznego wbicia pierwszej łopaty.",
+      "Wiecha na szczycie została zawieszona w połowie lutego 2015 roku.",
+      "Budynek oddano do użytku 10 grudnia 2015 roku.",
+      "Budynek ma pięć kondygnacji nadziemnych i trzy podziemne, z parkingiem na 140 samochodów; na piętrach jest 4 tysiące metrów kwadratowych powierzchni biurowej."
+    ],
+    "ciekawostki": [
+      "Projekt przygotowała pracownia Andrzeja M. Chołdzyńskiego; przed budynkiem urządzono niewielki plac miejski."
+    ],
+    "summary_en": "A five-storey office building at Nowy Świat 4a, built behind the former Central Committee building in 2013-2015 on the site of a 19th-century fire station.",
+    "ludzie": [
+      {"kto": "Andrzej M. Chołdzyński", "rola": "pracownia projektowa", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowy Świat Bis", "Nowy Świat 2.0"],
+    "zrodla": [{"tytul": "Warszawikia: Biurowiec Nowy Świat 2.0", "url": "https://warszawa.fandom.com/pl/wiki/Biurowiec_Nowy_Świat_2.0"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu. Stara nazwa „Al. Lorentza” występuje w artykule dla uliczki od strony budynku."
+  },
+  {
+    "id": "budynek-koszar-huzarskich-29-listopada-5",
+    "nazwa": "Budynek Koszar Huzarskich (29 Listopada 5)",
+    "name_en": "Former Hussar Barracks Building (29 Listopada 5)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "29 Listopada 5",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1900–2011",
+    "istnieje": false,
+    "fakty": [
+      "Murowany, jednopiętrowy budynek powstał najpewniej na przełomie XIX i XX wieku na terenie koszar Grodzieńskiego Huzarskiego Pułku Lejbgwardii.",
+      "Nie uległ zniszczeniu podczas II wojny światowej; był kolejno budynkiem wojskowym, komunalnym, a potem należał do Polmosu Lublin, który sprzedał go w 2008 roku firmie Parkview Terrace.",
+      "Na mocy decyzji nr 437/2011 z 20 kwietnia 2011 roku do rejestru zabytków wpisano ścianę frontową i ściany szczytowe budynku.",
+      "W 2010 roku częściowo rozebrano wnętrza, a prace wstrzymał dopiero nakaz stołecznego konserwatora zabytków.",
+      "W październiku 2011 roku inwestor zburzył wszystkie ściany, mimo że obiekt podlegał ochronie w toku procedury wpisowej.",
+      "W czerwcu 2012 roku uzyskano warunki zabudowy dla trójkondygnacyjnego budynku mieszkalnego, cofniętego o dziewięć metrów w głąb działki.",
+      "W czerwcu 2013 roku sąd okręgowy uznał, że wyburzenie koszar było sprzeczne z aktem notarialnym, i nakazał zwrot działki miastu."
+    ],
+    "ciekawostki": [
+      "Łazienki Królewskie zgłosiły roszczenie do działki, uznając, że wchodzi ona w historyczne granice Łazienek.",
+      "W październiku 2013 roku firma Griffin Group złożyła notyfikację na podstawie umowy o ochronie inwestycji z 1987 roku między Polską a Królestwem Belgii."
+    ],
+    "summary_en": "A former one-storey barracks building of the Grodno Hussar Regiment at 29 Listopada 5, demolished in 2011 despite a pending heritage listing. The case led to a long legal dispute over the plot.",
+    "ludzie": [],
+    "dawne_nazwy": ["Koszary Huzarskie, ul. Huzarska"],
+    "zrodla": [{"tytul": "Warszawikia: Budynek Koszar Huzarskich 29 Listopada 5", "url": "https://warszawa.fandom.com/pl/wiki/Budynek_Koszar_Huzarskich_29_Listopada_5"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu. Obiekt nieistniejący. Daty sporu sądowego i notyfikacji podane w artykule bez roku przy części zdarzeń (wyrok sądu bez roku; przyjęto kontekst 2013)."
+  },
+  {
+    "id": "budynek-stawki-8",
+    "nazwa": "Budynek Stawki 8",
+    "name_en": "Stawki 8 Residential Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Stawki 8",
+    "adres_historyczny": "południowo-wschodni skraj pl. Broni",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2011–2013",
+    "istnieje": true,
+    "fakty": [
+      "W tym miejscu od lat 90. XIX wieku powstawały bocznice kolejowe oraz baraki magazynowe, wykorzystywane w okresie międzywojennym przez Miejskie Zakłady Zaopatrywania Warszawy.",
+      "Ostatnie baraki magazynowe rozebrano około 2005 roku.",
+      "Przedwojenny parterowy domek rozebrano w 2011 roku w związku z przygotowaniami do inwestycji.",
+      "Budowa zespołu budynków rozpoczęła się we wrześniu 2011 roku według projektu Jakuba Wacławka i Grzegorza Stiasnego z pracowni ARE dla Spółdzielni Mieszkaniowej „Wola”.",
+      "Prace budowlane zakończono we wrześniu 2013 roku.",
+      "Zespół składa się z budynku „A” (trójskrzydłowego, z ośmioma klatkami schodowymi) i budynku „B”; mieści 185 lokali mieszkalnych i 11 lokali usługowych, a budynki mają od czterech do dwunastu pięter."
+    ],
+    "ciekawostki": [
+      "Równocześnie z budynkiem powstał przyklejony do niego od strony północnej budynek mieszkalny przy ul. Inflanckiej 13."
+    ],
+    "summary_en": "A residential complex on Muranów, at Stawki 8, built in 2011-2013 on the south-eastern edge of the former pl. Broni, where railway sidings and warehouses once stood.",
+    "ludzie": [
+      {"kto": "Jakub Wacławek", "rola": "projektant (pracownia ARE)", "wiki": null},
+      {"kto": "Grzegorz Stiasny", "rola": "projektant (pracownia ARE)", "wiki": null}
+    ],
+    "dawne_nazwy": ["pl. Broni (południowo-wschodni skraj)"],
+    "zrodla": [{"tytul": "Warszawikia: Budynek Stawki 8", "url": "https://warszawa.fandom.com/pl/wiki/Budynek_Stawki_8"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "blekitny-wiezowiec",
+    "nazwa": "Błękitny Wieżowiec",
+    "name_en": "Blue Skyscraper",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Bankowy 2",
+    "adres_historyczny": "miejsce przedwojennej Wielkiej Synagogi na Tłomackiem",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70. XX wieku–1991",
+    "istnieje": true,
+    "fakty": [
+      "Budowę wieżowca w tym miejscu projektowano już w latach 50. XX wieku, a rozpoczęto ją w latach 70.",
+      "Stoi w miejscu przedwojennej Wielkiej Synagogi na Tłomackiem, wysadzonej przez Niemców w 1943 roku.",
+      "Protesty gminy żydowskiej wstrzymały prace; wznowiono je pod koniec lat 80., gdy wykończeniem zajęła się jugosłowiańska firma Generalexport-Giposs.",
+      "Według danych w infoboksie wieżowiec ukończono w 1991 roku; ma 120 metrów wysokości (wraz z iglicą) i 100 metrów do dachu.",
+      "Elewację zamieniono na niebarwione refleksyjne szkło, które w pogodne dni odbija błękit nieba.",
+      "Dolne piętra zajmują punkty usługowe, wyżej mieszczą się biura, m.in. Pekao S.A., PKO BP S.A. i Peugeot Polska."
+    ],
+    "ciekawostki": [
+      "Według miejskiej legendy wszelkie niepowodzenia budowy miały wynikać z uroku rzuconego przez rabina Wielkiej Synagogi; dopiero przyjazd innego rabina i odczynienie klątwy pozwoliło ją ukończyć.",
+      "Na fasadzie od strony ul. Tłomackie znajduje się tablica MSI poświęcona Wielkiej Synagodze."
+    ],
+    "summary_en": "Warsaw's tallest building at its completion, on pl. Bankowy, built on the site of the pre-war Great Synagogue on Tłomackie, which was blown up by the Germans in 1943. Construction began in the 1970s and was completed in 1991.",
+    "ludzie": [
+      {"kto": "Jerzy Czyż, Andrzej Skopiński, Jan Furman, Lech Robaczyński, Marzena Leszczyńska", "rola": "projektanci", "wiki": null}
+    ],
+    "dawne_nazwy": ["Srebrny Wieżowiec", "Złocisty Wieżowiec", "Złoty Wieżowiec"],
+    "zrodla": [{"tytul": "Warszawikia: Błękitny Wieżowiec", "url": "https://warszawa.fandom.com/pl/wiki/Błękitny_Wieżowiec"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Adres: nagłówek podaje „pl. Bankowy 2”, a tekst „placu Bankowym, 11”; wpisano wariant z nagłówka. Liczba kondygnacji: infobox 27, tekst 28."
+  },
+  {
+    "id": "cedet-krucza-48",
+    "nazwa": "Cedet",
+    "name_en": "Cedet (former Smyk department store)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krucza 48",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1948–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1948–1952 powstał gmach Centralnego Domu Towarowego zaprojektowany przez Zbigniewa Ihnatowicza i Jerzego Romańskiego, na miejscu kilku przedwojennych kamienic.",
+      "W momencie powstania dom handlowy posiadał drugie w stolicy schody ruchome; na dachu znajdowała się restauracja na 400 osób.",
+      "W nocy z 20 na 21 września 1975 roku w CDT wybuchł pożar, który znacznie zniszczył obiekt; rewitalizacja trwała do 1977 roku.",
+      "W 2000 roku DH Smyk został wydzielony ze spółki Domy Towarowe Centrum.",
+      "Sklep Smyk opuścił budynek w połowie czerwca 2013 roku; pierwsze prace rozpoczęły się w październiku 2014 roku.",
+      "Budynek pod nazwą Cedet oddano do użytku w maju 2018 roku; ok. 7 tys. m² przeznaczono na handel i usługi, a 15 tys. m² na biura."
+    ],
+    "ciekawostki": [
+      "Muzeum Architektury we Frankfurcie nad Menem wybrało budynek jako jeden z trzech obiektów reprezentujących polską architekturę w publikacji „Architektura XX wieku”.",
+      "Pobliski przystanek, dawniej nazywany „DH Smyk”, 26 lipca 2014 roku przemianowano na „Krucza”."
+    ],
+    "summary_en": "A former Central Department Store on Krucza Street, built in 1948-1952 and damaged by fire in 1975. After a long redevelopment it reopened in 2018 as the Cedet office and retail building.",
+    "ludzie": [
+      {"kto": "Zbigniew Ihnatowicz", "rola": "projektant gmachu CDT (1948–1952)", "wiki": null},
+      {"kto": "Jerzy Romański", "rola": "projektant gmachu CDT (1948–1952)", "wiki": null},
+      {"kto": "Andrzej Chołdzyński", "rola": "autor koncepcji rozbudowy po 2000 roku", "wiki": null},
+      {"kto": "Wojciech Grabianowski", "rola": "autor koncepcji rozbudowy po 2000 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Centralny Dom Towarowy (CDT)", "CeDeT", "Centralny Dom Dziecka", "DH Smyk"],
+    "zrodla": [{"tytul": "Warszawikia: Cedet", "url": "https://warszawa.fandom.com/pl/wiki/Cedet"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "centrum-lim",
+    "nazwa": "Centrum LIM",
+    "name_en": "LIM Center",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 65/79",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1980–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę prowadzono w latach 1980–1989; wieżowiec otwarto w 1989 roku.",
+      "Budynek ma 140 metrów do dachu, a wraz z 30-metrową anteną 170 metrów; ma 42 kondygnacje nadziemne.",
+      "Projekt wykonali Jerzy Skrzypczak, Andrzej Bielobradek i Krzysztof Stefański.",
+      "Spółka LIM Joint Venture została utworzona w 1987 roku przez PLL LOT, ILBAU GmbH i Marriott International.",
+      "Najniższą naziemną kondygnację zajmuje galeria handlowa z 44 sklepami, kawiarniami i restauracjami oraz kasami LOT.",
+      "Od 20. piętra wyżej mieści się Warsaw Presidential Hotel."
+    ],
+    "ciekawostki": [
+      "W 1998 roku Alain Robert wspiął się bez zabezpieczenia i pozwolenia na szczyt budynku w 17 minut; jedyną karą było upomnienie.",
+      "Ostatnią znaną osobą, która wspięła się na budynek, był Marcin BNT Banot, 2 czerwca 2019 roku."
+    ],
+    "summary_en": "An international-style skyscraper on Aleje Jerozolimskie, built in 1980-1989 and opened in 1989. It houses a shopping gallery, offices and the Warsaw Presidential Hotel, and is popularly known as the Marriott.",
+    "ludzie": [
+      {"kto": "Jerzy Skrzypczak", "rola": "projektant", "wiki": null},
+      {"kto": "Andrzej Bielobradek", "rola": "projektant", "wiki": null},
+      {"kto": "Krzysztof Stefański", "rola": "projektant", "wiki": null},
+      {"kto": "Alain Robert", "rola": "wspinacz, który wszedł na szczyt budynku w 1998 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Marriott"],
+    "zrodla": [{"tytul": "Warszawikia: Centrum LIM", "url": "https://warszawa.fandom.com/pl/wiki/Centrum_LIM"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu. Wysokość 170 m z infoboksu; w tekście 140 m do dachu i 30 m anteny."
+  },
+  {
+    "id": "chalubinskiego-8",
+    "nazwa": "Chałubińskiego 8",
+    "name_en": "Chałubińskiego 8 skyscraper",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Chałubińskiego 8",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę rozpoczęto w 1975 roku, a oddano do użytku w 1979 roku.",
+      "Wieżowiec ma 150 metrów wysokości i 46 kondygnacji nadziemnych (139 metrów do dachu).",
+      "Zbudowany w stylu międzynarodowym według projektu Jerzego Skrzypczaka, Haliny Świergockiej-Kaim i Wojciecha Grzybowskiego.",
+      "Był jednym z pierwszych drapaczy chmur w powojennej Warszawie.",
+      "Wchodzi w skład tzw. Centrum Zachodniego, którego budowa miała osłabić dominację Pałacu Kultury i Nauki nad Śródmieściem."
+    ],
+    "ciekawostki": [
+      "Budynek pojawił się w filmie „Pan Kleks w kosmosie” jako Szkoła Podstawowa im. Stanisława Lema."
+    ],
+    "summary_en": "A 150-metre, 46-storey office tower on Chałubińskiego Street, built in 1975-1979. It was one of the first skyscrapers in post-war Warsaw.",
+    "ludzie": [
+      {"kto": "Jerzy Skrzypczak", "rola": "projektant", "wiki": null},
+      {"kto": "Halina Świergocka-Kaim", "rola": "projektantka", "wiki": null},
+      {"kto": "Wojciech Grzybowski", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": ["Intraco II", "Elektrim", "Oxford Tower"],
+    "zrodla": [{"tytul": "Warszawikia: Chałubińskiego 8", "url": "https://warszawa.fandom.com/pl/wiki/Chałubińskiego_8"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  }
+]

@@ -1,0 +1,243 @@
+[
+  {
+    "id": "ulica-boya-zelenskiego",
+    "nazwa": "ulica Tadeusza Boya-Żeleńskiego",
+    "name_en": "Tadeusz Boy-Żeleński Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Boya-Żeleńskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica o długości około 200 metrów biegnie od placu Unii Lubelskiej do skrzyżowania z ul. Waryńskiego i Batorego.",
+      "Pierwszy pomysł wybudowania w tym miejscu ulicy pochodzi z lat 30. XX wieku, gdy projektowano ulicę Zułowską.",
+      "Przed wojną wzniesiono mury zespołu domów Towarzystwa Kredytowego Miejskiego, które dostały tymczasowy adres Polna 3.",
+      "Gmach zespołu ukończono do 1949 roku.",
+      "Na początku lat 60. XX wieku, śladem planowanej ulicy Zułowskiej, wybudowano nową ulicę Tadeusza Boya-Żeleńskiego.",
+      "Przy ulicy znajdują się trzy obiekty: blok mieszkalny pod nr 2, zespół domów TKM pod nr 4/6 z przedszkolem nr 25 oraz skwer Mieczysława Fogga."
+    ],
+    "ciekawostki": [
+      "Skwer Mieczysława Fogga leży w miejscu planowanego dawniej placu Konstytucji Kwietniowej."
+    ],
+    "summary_en": "Tadeusz Boy-Żeleński Street is a roughly 200-metre street between Plac Unii Lubelskiej and Waryńskiego, on the border of Śródmieście and Mokotów. It was built in the early 1960s on the line of a street planned in the 1930s. Its only older buildings are the prewar Towarzystwo Kredytowego Miejskiego houses.",
+    "ludzie": [
+      {"kto": "Tadeusz Boy-Żeleński", "rola": "patron ulicy; lekarz, publicysta, tłumacz, krytyk, autor przekładu ponad 100 tomów literatury francuskiej (1874–1941)", "wiki": null},
+      {"kto": "Mieczysław Fogg", "rola": "patron skweru między blokami zespołu domów TKM", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Tadeusza Boya-Żeleńskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Boya-Żeleńskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy. Artykuł podaje dzielnice Mokotów i Śródmieście; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-bracka",
+    "nazwa": "ulica Bracka",
+    "name_en": "Bracka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bracka",
+    "adres_historyczny": "Ordenstrasse (Zakonna, okupacja)",
+    "lat": 52.2308849,
+    "lon": 21.0189417,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została uregulowana prawdopodobnie około 1770 roku; nazwa Bracka jest poświadczona już w 1643 roku.",
+      "W 1782 roku u zbiegu z ul. Chmielną powstała drewniana rotunda cyrku „Heca”.",
+      "Pierwszą kamienicą wzdłuż ulicy była wybudowana w 1834 roku kamienica Gołaszewskich (nr 11/13), zaprojektowana przez Antonio Corazziego.",
+      "W 1939 roku kilka kamienic zostało spalonych w wyniku niemieckich bombardowań.",
+      "2 lutego 1943 roku w kamienicy nr 23 dokonano akcji „Bracka”.",
+      "Podczas powstania warszawskiego w rejonie ulicy toczyły się ciężkie walki; 8 sierpnia zginął Antoni Godlewski, a obok lokalu „Cristal” (nr 16) Niemcy rozstrzelali 90 osób.",
+      "W latach 1946–1972 na odcinku Chmielna–Krucza kursowały trolejbusy.",
+      "W latach 2008–2011 w miejscu parkingu przy ul. Nowogrodzkiej wybudowano budynek Wolf Bracka."
+    ],
+    "ciekawostki": [
+      "Na podwórku kamienicy nr 5 zachował się grób powstańczy Antoniego Godlewskiego „Antka Rozpylacza”.",
+      "W 1941 roku okupanci wprowadzili nazwę Ordenstrasse (Zakonna)."
+    ],
+    "summary_en": "Bracka runs about 600 metres in Śródmieście from Plac Trzech Krzyży to the small square at Chmielna, Szpitalna and Zgoda. Its 19th-century tenements were heavily fought over in the 1944 Warsaw Uprising, and the street was later rebuilt around the Central Department Store.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "architekt, projektant pierwszej kamienicy przy ulicy (1834)", "wiki": null},
+      {"kto": "Antoni Godlewski „Antek Rozpylacz”", "rola": "zginął przy ulicy 8 sierpnia 1944 roku; grób w podwórku kamienicy nr 5", "wiki": null},
+      {"kto": "Franciszek Wołowski", "rola": "właściciel browaru w rejonie Placu Trzech Krzyży", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ordenstrasse (Zakonna, okupacja)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Bracka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bracka"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bugaj",
+    "nazwa": "ulica Bugaj",
+    "name_en": "Bugaj Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bugaj",
+    "adres_historyczny": null,
+    "lat": 52.2516852,
+    "lon": 21.0121221,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa Bugaj została oficjalnie nadana w 1770 roku; pochodzi od dawnego określenia Bugay nad Wisłą, czyli niski brzeg zalewany przez wodę.",
+      "Co najmniej od XVII wieku na przybrzeżu kształtowała się osada Rybaki; uległa zniszczeniu w czasie potopu szwedzkiego, a później się odrodziła.",
+      "W XIX wieku południową część ulicy nakryto Arkadami Kubickiego.",
+      "W 1863 roku wzdłuż ulicy wybudowano telegraf optyczny, który połączył Zamek Królewski z Cytadelą.",
+      "W okresie międzywojennym powstały koszary Oddziału Zamkowego Prezydenta RP (nr 2 i 3) oraz przedszkole im. M. Mościckiej (nr 10).",
+      "Największą inwestycją międzywojenną był rozległy Dom Mieszkalny Pocztowej Kasy Oszczędności na rogu ul. Celnej.",
+      "W czasie II wojny światowej zabudowa uległa znacznym zniszczeniom, a w dużej mierze nie została odbudowana, w tym Dom Mieszkalny PKO."
+    ],
+    "ciekawostki": [
+      "Według artykułu w rejonie ulicy może powstać podziemny parking na około 300 samochodów."
+    ],
+    "summary_en": "Bugaj is a 600-metre street on the Old Town side of the Vistula escarpment, running from Grodzka to Boleść. Its name dates from 1770 and refers to the low riverbank once flooded by the Vistula. Much of its interwar development, including the Post Office Savings Bank housing block, was destroyed in the Second World War.",
+    "ludzie": [
+      {"kto": "Michalina Mościcka", "rola": "patronka przedszkola przy ul. Bugaj 10 (dziś nie istnieje)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Bugaj", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bugaj"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Część wymienionych obiektów nie istnieje (koszary nr 2, Dom PKO, przedszkole nr 10); rekord dotyczy ulicy."
+  },
+  {
+    "id": "ulica-celna",
+    "nazwa": "ulica Celna",
+    "name_en": "Celna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Celna",
+    "adres_historyczny": "Gnojna",
+    "lat": 52.2498535,
+    "lon": 21.0132944,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIII i XIV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała wraz z lokacją Starej Warszawy na przełomie XIII i XIV wieku.",
+      "W XIV wieku przebito w murach Bramę Gnojną, która prowadziła na wysypisko na Gnojnej Górze; ulica otrzymała wtedy nazwę Gnojna.",
+      "Wysypisko funkcjonowało do 1774 roku, a wkrótce potem ulicę przedłużono o drewniane schody do ulicy Bugaj.",
+      "W 1833 (lub 1838) roku bramę wyburzono, ulicę poszerzono i zmieniono jej nazwę na Celną ze względu na sąsiedztwo komory celnej.",
+      "Zabudowa uległa zniszczeniu podczas powstania warszawskiego i została odbudowana wraz z całym Starym Miastem.",
+      "W pobliżu Brzozowej, w północnej pierzei ulicy, zachował się fragment dawnych murów miejskich."
+    ],
+    "ciekawostki": [
+      "Ulica ma około 50 metrów długości i jest jedną z najkrótszych ulic w Warszawie."
+    ],
+    "summary_en": "Celna is a roughly 50-metre street in the Old Town that links the southeastern corner of the Market Square with Brzozowa. Originally called Gnojna after a city gate that led to a rubbish dump, it was renamed Celna in the 1830s after a nearby customs house.",
+    "ludzie": [],
+    "dawne_nazwy": ["Gnojna"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Celna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Celna"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-chalubinskiego",
+    "nazwa": "ulica Tytusa Chałubińskiego",
+    "name_en": "Tytus Chałubiński Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Chałubińskiego",
+    "adres_historyczny": "Teodora",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1881–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została zaprojektowana w 1871 roku, a wytyczona w 1881 roku na terenach dawnego folwarku Świętokrzyskiego.",
+      "Początkowo nazywała się Teodora, dla upamiętnienia carskiego namiestnika Teodora Berga.",
+      "W latach 1897–1901 wzdłuż zachodniej pierzei wzniesiono zabudowania dla Szpitala Dzieciątka Jezus.",
+      "7 lutego 1917 roku zmieniono patrona ulicy na Tytusa Chałubińskiego, lekarza i twórcę warszawskiej szkoły internistycznej.",
+      "W okresie międzywojennym wzdłuż ulicy wybudowano szereg gmachów rządowych, m.in. dla ministerstwa komunikacji.",
+      "W 1930 roku wzdłuż ulicy poprowadzono linię tramwajową, a w 1935 roku przebito ulicę Wspólną.",
+      "Po wojnie zlikwidowano Ogród Pomologiczny, a w jego miejscu powstały najpierw szkoły, a potem wieżowiec Intraco II.",
+      "W latach 1952–1970 ulicą kursowały trolejbusy."
+    ],
+    "ciekawostki": [
+      "Tytus Chałubiński był współtwórcą Towarzystwa Tatarzańskiego (tak w tekście artykułu)."
+    ],
+    "summary_en": "Chałubińskiego runs north from Koszykowa and Aleja Niepodległości to the Jana Pawła II and Jerozolimskie junction, on the border of Śródmieście and Ochota. Opened in 1881 as Teodora, it was renamed in 1917 after the physician Tytus Chałubiński. It is lined with interwar government buildings and the Ministry of National Defence.",
+    "ludzie": [
+      {"kto": "Tytus Chałubiński", "rola": "lekarz, patolog, twórca warszawskiej szkoły internistycznej; patron ulicy od 1917 roku", "wiki": null},
+      {"kto": "Teodor Berg", "rola": "carski namiestnik, którego upamiętniała pierwotna nazwa Teodora", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teodora"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Chałubińskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Chałubińskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy. Artykuł podaje dzielnice Ochota i Śródmieście; rekord przypisany do Śródmieścia. Słowo „Tatarzańskiego” przepisane z artykułu, prawdopodobnie błąd za „Tatrzańskiego”."
+  },
+  {
+    "id": "ulica-corazziego",
+    "nazwa": "ulica Antoniego Corazziego",
+    "name_en": "Antonio Corazzi Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Corazziego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach 60. XX wieku.",
+      "Nazwano ją na cześć Antonio Corazziego, włoskiego architekta zasłużonego dla Warszawy.",
+      "Wcześniej tę nazwę nosiła dzisiejsza ul. Morskie Oko.",
+      "Jest to niewielka, ślepa ulica: zaczyna się od skrzyżowania z ul. Bielańską, przecina ul. Gamerskiego i kończy przy Błękitnym Wieżowcu.",
+      "Przejazd w ulicę Tłomackie uniemożliwiają kwietniki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Corazzi Street is a small dead-end street in Śródmieście Północne, running from Bielańska to the Błękitny Wieżowiec. It was laid out in the 1960s and named after the Italian architect Antonio Corazzi, who designed the Grand Theatre and the Staszic Palace.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "włoski architekt, projektant m.in. Teatru Wielkiego i Pałacu Staszica, regulator placów Teatralnego i Bankowego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Corazziego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Corazziego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy."
+  },
+  {
+    "id": "ulica-czackiego",
+    "nazwa": "ulica Tadeusza Czackiego",
+    "name_en": "Tadeusz Czacki Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Czackiego",
+    "adres_historyczny": "Włodzimierska",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1866 roku na gruntach należących do księży misjonarzy z kościoła św. Krzyża.",
+      "Początkowo nazywała się Włodzimierska, dla upamiętnienia rosyjskiego średniowiecznego władcy Włodzimierza I Wielkiego.",
+      "Wkrótce została zabudowana nowoczesnymi kamienicami oraz gmachami użytkowymi; mieszkało tu wielu przedstawicieli ówczesnej burżuazji.",
+      "Zabudowa uległa zniszczeniu w 1939 roku i podczas powstania warszawskiego, szczególnie w walkach o ulicę 8 i 9 września.",
+      "Odrestaurowano jedynie budynki Stowarzyszenia Techników oraz Towarzystwa Kredytowego Miejskiego.",
+      "26 października 1916 roku patronem ulicy został Tadeusz Czacki, działacz oświatowy i gospodarczy, współzałożyciel Towarzystwa Przyjaciół Nauk."
+    ],
+    "ciekawostki": [
+      "W nieistniejącej dziś kamienicy nr 6 na przełomie XIX i XX wieku eksperymenty parapsychologiczne prowadził doktor Julian Ochoronowicz.",
+      "Podczas tych eksperymentów Bolesław Prus słyszał ponoć dziwne klaskanie, malarz Henryk Siemiradzki widział lewitującego medium, a historyk Aleksander Kraushar widział unoszący się stół."
+    ],
+    "summary_en": "Czackiego is a Śródmieście street between Świętokrzyska and Traugutta, laid out in 1866 as Włodzimierska. It was named after Tadeusz Czacki in 1916. Most of its prewar buildings were destroyed in 1939 and 1944, and only two were restored.",
+    "ludzie": [
+      {"kto": "Tadeusz Czacki", "rola": "działacz oświatowy i gospodarczy, historyk, współzałożyciel Towarzystwa Przyjaciół Nauk; patron ulicy od 1916 roku", "wiki": null},
+      {"kto": "Julian Ochoronowicz", "rola": "doktor, prowadził eksperymenty parapsychologiczne w kamienicy nr 6", "wiki": null},
+      {"kto": "Bolesław Prus", "rola": "uczestnik eksperymentów parapsychologicznych w kamienicy nr 6", "wiki": null},
+      {"kto": "Henryk Siemiradzki", "rola": "malarz, uczestnik eksperymentów parapsychologicznych w kamienicy nr 6", "wiki": null},
+      {"kto": "Aleksander Kraushar", "rola": "historyk, uczestnik eksperymentów parapsychologicznych w kamienicy nr 6", "wiki": null}
+    ],
+    "dawne_nazwy": ["Włodzimierska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Czackiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Czackiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy."
+  }
+]

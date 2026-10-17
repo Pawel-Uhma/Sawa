@@ -1,0 +1,116 @@
+[
+  {
+    "id": "hala-gwardii",
+    "nazwa": "Hala Gwardii",
+    "name_en": "Gwardia Hall",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Żelaznej Bramy 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1899–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hala, wraz z Halą Mirowską, została zbudowana w latach 1899–1901 jako jedna z dwóch bliźniaczych hal targowych.",
+      "Projekt wykonali Bolesław Milkowski, Ludwik Panczakiewicz, Apoloniusz Niewski i Władysław Kozłowski, w oparciu o wcześniejsze założenia Stefana Szyllera.",
+      "Od razu stała się największym obiektem handlowym w Warszawie; sprzedawano tu głównie świeże ryby i warzywa.",
+      "W nocy z 30 na 31 sierpnia 1944 roku, podczas natarcia Niemców w powstaniu warszawskim, hale spłonęły, ale nie zostały całkiem zniszczone i je odbudowano.",
+      "W 1948 roku hala na krótko została zaadaptowana na zajezdnię autobusów MZK.",
+      "Hala została otwarta ponownie w 1953 roku; odbywały się tu koncerty i wydarzenia sportowe, a przez długi czas należała do Milicyjnego Klubu Sportowego „Gwardia”, od czego wzięła się potoczna nazwa.",
+      "Pod koniec XX wieku hala znów pełniła funkcję handlową; obecnie wynajmuje ją firma MarcPol."
+    ],
+    "ciekawostki": [
+      "Wzdłuż hali od południa znajduje się część pasaży „Hale Mirowskie”."
+    ],
+    "summary_en": "A market hall on Plac Żelaznej Bramy, built in 1899-1901 as one of two twin trade halls with Hale Mirowskie. It burned in 1944, was rebuilt and later became a sports venue and a trade hall again.",
+    "ludzie": [
+      {"kto": "Bolesław Milkowski", "rola": "projektant hal (1899–1901)", "wiki": null},
+      {"kto": "Ludwik Panczakiewicz", "rola": "projektant hal (1899–1901)", "wiki": null},
+      {"kto": "Apoloniusz Niewski", "rola": "projektant hal (1899–1901)", "wiki": null},
+      {"kto": "Władysław Kozłowski", "rola": "projektant hal (1899–1901)", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "autor wcześniejszych założeń projektowych", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hala targowa", "Hala Gwardii (od klubu Gwardia)"],
+    "zrodla": [{"tytul": "Warszawikia: Hala Gwardii", "url": "https://warszawa.fandom.com/pl/wiki/Hala_Gwardii"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Nagłówek artykułu podaje „pl. Mirowski”, a adres to pl. Żelaznej Bramy 1 (wg tekstu)."
+  },
+  {
+    "id": "hala-swietojerska",
+    "nazwa": "Hala Świętojerska",
+    "name_en": "Świętojerska Market Hall",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Świętojerska 4/6",
+    "adres_historyczny": "między ul. Świętojerską 4/6 a ul. Koźlą 5",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1913–1962 (nieistniejąca)",
+    "istnieje": false,
+    "fakty": [
+      "Hala powstała w latach 1913–1916 w wyniku przebudowy zachowanych zabudowań dawnego kościoła św. Jerzego.",
+      "Projekt przebudowy opracowali Henryk J. Gay, Artur Friedman i Kazimierz Gadomski.",
+      "Hala miała 135 metrów długości, sięgała ul. Koźlej i mieściła 600 straganów, 74 sklepy, 68 jatek mięsnych oraz baseny rybne.",
+      "W latach 20. XX wieku przeniósł się do niej handel uliczny ze Starego Miasta.",
+      "Hala została znacznie zniszczona w 1944 roku; pozostałości zaczęto rozbierać w 1947 roku.",
+      "Odkryte fragmenty dawnego kościoła św. Jerzego rozebrano w 1962 roku."
+    ],
+    "ciekawostki": [
+      "Hala była znana również jako Bazar Feinkinda."
+    ],
+    "summary_en": "A 135-metre market hall in Nowe Miasto, built in 1913-1916 inside remains of the former St. George church. It was heavily damaged in 1944 and demolished after the war.",
+    "ludzie": [
+      {"kto": "Henryk J. Gay", "rola": "autor projektu przebudowy (1913–1916)", "wiki": null},
+      {"kto": "Artur Friedman", "rola": "autor projektu przebudowy (1913–1916)", "wiki": null},
+      {"kto": "Kazimierz Gadomski", "rola": "autor projektu przebudowy (1913–1916)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bazar Feinkinda"],
+    "zrodla": [{"tytul": "Warszawikia: Hala Świętojerska", "url": "https://warszawa.fandom.com/pl/wiki/Hala_Świętojerska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Adres z nagłówka i tekstu (Świętojerska 4/6, róg Koźlej 5)."
+  },
+  {
+    "id": "hotel-bristol",
+    "nazwa": "Hotel Bristol",
+    "name_en": "Bristol Hotel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 42/44",
+    "adres_historyczny": "w miejscu pałacu Tarnowskich",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1898–1901–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W drugiej połowie XIX wieku na miejscu hotelu stał pałac Tarnowskich, w którym mieściły się instytucje publiczne.",
+      "W 1895 roku nieruchomość nabyła spółka z udziałem Ignacego Paderewskiego, Stanisława Roszkowskiego i Edmunda Zaremby.",
+      "W 1898 roku konkurs na projekt wygrali Tadeusz Stryjeński i Franciszek Mączyński, ale projekt zmienił Władysław Marconi na neorenesansowy.",
+      "Hotel otwarto w listopadzie 1901 roku; oferował 200 pokoi, w tym apartamenty w stylu secesyjnym.",
+      "W czasie II wojny światowej pełnił funkcję szpitala, a następnie służył Niemcom; przetrwał powstanie warszawskie z niewielkimi zniszczeniami.",
+      "W 1965 roku budynek wpisano do rejestru zabytków; w 1980 roku zamknięto go z powodu złego stanu technicznego.",
+      "Hotel ponownie otwarto w 1993 roku; od 2013 roku jest częścią The Luxury Collection, a obecnie oferuje 165 pokoi i 41 apartamentów."
+    ],
+    "ciekawostki": [
+      "Na części działki, którą nabyła spółka, wkrótce powstała rotunda z Panoramą Jana Styki.",
+      "Hotel gościł m.in. na bankietach na cześć Marii Skłodowskiej-Curie oraz wystąpieniach Jana Kiepury."
+    ],
+    "summary_en": "A five-star hotel next to the Presidential Palace on Krakowskie Przedmieście, opened in 1901 in a neo-Renaissance design by Władysław Marconi. It was registered as a monument in 1965 and reopened in 1993 after renovation.",
+    "ludzie": [
+      {"kto": "Ignacy Paderewski", "rola": "współudziałowiec spółki, która nabyła nieruchomość w 1895 roku", "wiki": null},
+      {"kto": "Stanisław Roszkowski", "rola": "współudziałowiec spółki; inicjator hotelu", "wiki": null},
+      {"kto": "Edmund Zaremba", "rola": "współudziałowiec spółki", "wiki": null},
+      {"kto": "Tadeusz Stryjeński", "rola": "zwycięzca konkursu na projekt (1898)", "wiki": null},
+      {"kto": "Franciszek Mączyński", "rola": "zwycięzca konkursu na projekt (1898)", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "autor ostatecznego, neorenesansowego projektu", "wiki": null},
+      {"kto": "Jan Styka", "rola": "autor Panoramy w rotundzie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Tarnowskich (poprzednia zabudowa)"],
+    "zrodla": [{"tytul": "Warszawikia: Hotel Bristol", "url": "https://warszawa.fandom.com/pl/wiki/Hotel_Bristol"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  }
+]

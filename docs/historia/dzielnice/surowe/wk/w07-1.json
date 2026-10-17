@@ -1,0 +1,286 @@
+[
+  {
+    "id": "hotel-europejski",
+    "nazwa": "Hotel Europejski",
+    "name_en": "Hotel Europejski (Raffles Europejski Warsaw)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 13",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1855–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel zbudowano etapami w latach 1855–1878 według projektu Henryka i Leandra Marconich.",
+      "Hotel otwarto 1 stycznia 1857 roku, zyskując miano jednego z najbardziej luksusowych obiektów w Warszawie.",
+      "Podczas II wojny światowej budynek uległ poważnym zniszczeniom.",
+      "W 1948 roku obiekt przejęło Ministerstwo Obrony Narodowej, które ukończyło odbudowę według projektu Bohdana Pniewskiego, przekształcając hotel na siedzibę akademii wojskowej.",
+      "Hotel ponownie otwarto 2 lipca 1962 roku jako obiekt sieci Orbis.",
+      "Z końcem czerwca 2005 roku hotel zakończył działalność w ramach sieci Orbis.",
+      "W latach 2013–2018 przeprowadzono generalny remont, w trakcie którego nadbudowano dwa piętra; ponowne otwarcie nastąpiło w maju 2018 roku pod marką Raffles."
+    ],
+    "ciekawostki": [
+      "W jednym z odcinków serialu „Zmiennicy” prezes Gonshorek (Jerzy Przybylski) poszukuje hotelu taksówką 1313."
+    ],
+    "summary_en": "A luxury hotel at Krakowskie Przedmieście 13, built in stages in 1855–1878 to designs by Henryk and Leander Marconich. It opened in 1857, was run by the Orbis chain from 1962 to 2005, and reopened in 2018 as Raffles Europejski Warsaw.",
+    "ludzie": [
+      {"kto": "Henryk Marconich", "rola": "projektant hotelu (z Leandrem Marconichem)", "wiki": null},
+      {"kto": "Leander Marconich", "rola": "projektant hotelu (z Henrykiem Marconichem)", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "projektant odbudowy po 1948 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Europejski"],
+    "zrodla": [{"tytul": "Warszawikia: Hotel Europejski", "url": "https://warszawa.fandom.com/pl/wiki/Hotel_Europejski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu, bez numeru odpowiadającego kodowi. Artykuł podaje, że hotel od 2018 roku nosi nazwę Raffles Europejski Warsaw."
+  },
+  {
+    "id": "hotel-intercontinental",
+    "nazwa": "Hotel InterContinental",
+    "name_en": "InterContinental Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Emilii Plater 49",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę hotelu rozpoczęto w 1997 roku, a uroczyste otwarcie odbyło się 23 kwietnia 2004 roku.",
+      "Budynek zaprojektował zespół architektów pod kierownictwem Tadeusza Spychały.",
+      "Wysokość budynku wynosi 164 m, wysokość do dachu 154 m, a liczba kondygnacji nadziemnych to 45.",
+      "W budynku mieści się 326 pokoi, w tym 75 apartamentów mieszkalnych oraz 12 sal konferencyjnych.",
+      "Pod ziemią znajdują się parkingi dla 175 pojazdów, rozłożone na pięciu poziomach.",
+      "Przed rozpoczęciem budowy zamknięto na prawie rok, a następnie wyburzono pierwszy w Polsce klub jazzowy, legendarne Akwarium (rok zał. 1970).",
+      "Hotel otrzymał nagrody EMEA Market Performance Award 2005 oraz EMEA Quality Award 2005."
+    ],
+    "ciekawostki": [
+      "Hotel InterContinental Warszawa jest trzecim co do wysokości pięciogwiazdkowym hotelem w Europie po Hotelu Ukraine i Gran Hotelu Bali.",
+      "Stoi na charakterystycznej „kurzej stopce”, która została dodana, aby mieszkańcy budynków obok mieli dostęp do światła słonecznego.",
+      "Klub jazzowy został reaktywowany w kompleksie Złote Tarasy."
+    ],
+    "summary_en": "A five-star hotel at ul. Emilii Plater 49, built from 1997 and opened on 23 April 2004. Its design, by a team led by Tadeusz Spychała, includes a 'chicken-foot' base added to address neighbours' concerns about sunlight.",
+    "ludzie": [
+      {"kto": "Tadeusz Spychała", "rola": "architekt, kierownik zespołu projektowego (nieżyjący)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Hotel InterContinental", "url": "https://warszawa.fandom.com/pl/wiki/Hotel_InterContinental"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (infobox i opis)."
+  },
+  {
+    "id": "hotel-mercure-fryderyk-chopin",
+    "nazwa": "Hotel Mercure Fryderyk Chopin",
+    "name_en": "Mercure Fryderyk Chopin hotel (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Pawła II 22",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1993–2012",
+    "istnieje": false,
+    "fakty": [
+      "Budynek zaprojektował w latach 1991–1992 Juliusz Rouba, polski architekt działający w Paryżu; była to jego ostatnia realizacja.",
+      "Hotel otwarto w 1993 roku.",
+      "W 2011 roku obiekt za 130 mln złotych przejął deweloper Echo Investment z zamiarem wybudowania w jego miejscu 155-metrowego wieżowca.",
+      "15 grudnia 2011 roku hotel zakończył działalność.",
+      "W kwietniu 2012 roku rozpoczęto prace rozbiórkowe, które zakończyły się w grudniu 2012 roku.",
+      "Na hotelu umieszczona była tablica upamiętniająca fabrykę „Konrad, Jarnuszkiewicz i Spółka” (ul. Ciepła 12), w której w latach 1942–1944 w podziemiu produkowano karabiny maszynowe „Polski Sten”.",
+      "W jego miejscu w latach 2013–2016 powstał wieżowiec Q22."
+    ],
+    "ciekawostki": [
+      "Dla odróżnienia od drugiego hotelu sieci Mercure, Mercure Grand przy ul. Kruczej, nosił imię Fryderyka Chopina."
+    ],
+    "summary_en": "A three-star hotel at al. Jana Pawła II 22, corner of ul. Grzybowska, opened in 1993 and closed in December 2011. It was demolished in 2012, and the Q22 tower was built on the site in 2013–2016.",
+    "ludzie": [
+      {"kto": "Juliusz Rouba", "rola": "architekt budynku hotelu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Mercure Fryderyk Chopin"],
+    "zrodla": [{"tytul": "Warszawikia: Hotel Mercure Fryderyk Chopin", "url": "https://warszawa.fandom.com/pl/wiki/Hotel_Mercure_Fryderyk_Chopin"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku. Adres z tekstu artykułu (al. Jana Pawła II 22); hotel już nie istnieje, na jego miejscu stoi Q22."
+  },
+  {
+    "id": "hotel-polonia-palace",
+    "nazwa": "Hotel Polonia Palace",
+    "name_en": "Hotel Polonia Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jerozolimskie 45",
+    "adres_historyczny": "al. Jerozolimskie 39",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel uroczyście otwarto 14 lipca 1913 roku; fundatorem był Konstanty hr. Przeździecki, który zarządzał nim do 1939 roku.",
+      "Za projekt budynku odpowiadali architekci Józef Holewiński i Juliusz Nagórski, a budowę przeprowadziła firma Stanisława Puka.",
+      "Hotel był pierwszym w mieście obiektem oferującym centralne ogrzewanie, ciepłą i zimną wodę w każdym z 160 pokoi oraz telefon.",
+      "W 1924 roku zbudowano nową salę dancingową.",
+      "W 1929 roku w Polonii zatrzymał się król Afganistanu Amanullach Chan, który został uhonorowany Orderem Orła Białego.",
+      "W czasie powstania warszawskiego hotel służył jako szpital i magazyn zaopatrzeniowy dla powstańców.",
+      "Hotel wznowił działalność 26 kwietnia 1945 roku jako pierwszy hotel w powojennej Warszawie.",
+      "W 1965 roku dobudowano sąsiedni Hotel Metropol, tworząc wspólny kompleks.",
+      "W 2012 roku Polonia Palace został zreprywatyzowany; obecnie oferuje 206 pokoi."
+    ],
+    "ciekawostki": [
+      "Jest drugim – po hotelu Bristol – najstarszym hotelem działającym w stolicy.",
+      "W 1946 roku odbył się tu pierwszy w Warszawie pokaz mody."
+    ],
+    "summary_en": "One of Warsaw's oldest hotels, at al. Jerozolimskie 45 corner of ul. Poznańska. It opened on 14 July 1913 and was the first hotel to reopen in postwar Warsaw, on 26 April 1945.",
+    "ludzie": [
+      {"kto": "Konstanty Przeździecki", "rola": "hrabia, fundator hotelu, zarządzał nim do 1939 roku", "wiki": null},
+      {"kto": "Józef Holewiński", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "architekt budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Polonia"],
+    "zrodla": [{"tytul": "Warszawikia: Hotel Polonia Palace", "url": "https://warszawa.fandom.com/pl/wiki/Hotel_Polonia_Palace"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku. Adres z tekstu artykułu (w tekście: „Al. Jerozolimskich 45”, wcześniej „Al. Jerozolimskie 39”)."
+  },
+  {
+    "id": "hotel-savoy",
+    "nazwa": "Hotel Savoy",
+    "name_en": "Savoy Hotel (Nowy Świat 58)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 58",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę przy Nowym Świecie 58 wzniesiono w latach 1904–1905; projekt wykonał Bronisław Colonna-Czosnowski, a inwestorem był Stanisław Fok.",
+      "Secesyjne ornamenty elewacji zaprojektował Emil Lindeman, a wnętrza zdobiły witraże Franciszka Białkowskiego.",
+      "W 1907 roku budynek trafił na licytację i został sprzedany za 165 tysięcy rubli Stanisławowi i Józefowi Karszom.",
+      "W latach 20. XX wieku ajent Szymański otworzył w restauracji budynku pierwszy w Warszawie dansing, który jako pierwszy pozwalał samotnym kobietom wchodzić bez obawy o naruszenie reputacji.",
+      "W hotelowym sejfie Lothar Beutel, szef Einsatzgruppe IV, składował kosztowności zrabowane ludności cywilnej podczas kampanii wrześniowej.",
+      "Po wojnie budynek obniżono z pięciu kondygnacji do dwóch, a oficyny do trzech, a secesyjną fasadę zastąpiono gładką elewacją z socrealistycznymi detalami.",
+      "Obecnie w kamienicy mieści się m.in. siedziba Wyższej Szkoły Dziennikarskiej im. Melchiora Wańkowicza."
+    ],
+    "ciekawostki": [
+      "Restauracja hotelu miała oświetlenie elektryczne złożone z 250 żarówek.",
+      "Jest jedynym w pełni secesyjnym budynkiem przy Nowym Świecie."
+    ],
+    "summary_en": "Former prestigious Art Nouveau hotel at Nowy Świat 58, built in 1904–1905. The hotel is no longer operating; the building stands after postwar reconstruction and now houses the Wańkowicz School of Journalism.",
+    "ludzie": [
+      {"kto": "Bronisław Colonna-Czosnowski", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Stanisław Fok", "rola": "inwestor", "wiki": null},
+      {"kto": "Lothar Beutel", "rola": "szef Einsatzgruppe IV, składował zrabowane kosztowności w sejfie hotelu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Savoy Hotel"],
+    "zrodla": [{"tytul": "Warszawikia: Hotel Savoy", "url": "https://warszawa.fandom.com/pl/wiki/Hotel_Savoy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku. Hotel nie działa, budynek stoi. Artykuł podaje sprzeczne liczby kondygnacji przed wojną (osiem w opisie projektu, pięć w historii po wojnie); zapisano obie wprost z tekstu."
+  },
+  {
+    "id": "zespol-budynkow-ii-lo-batorego",
+    "nazwa": "Zespół budynków II LO im. Stefana Batorego",
+    "name_en": "Complex of II Stefan Batory High School buildings",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Myśliwiecka 6",
+    "adres_historyczny": "ul. Kapucyńska 21 (pierwotna siedziba gimnazjum)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół budynków pod adresem Myśliwiecka 6, 6a i 6b wzniesiono w latach 1922–1924 według planów architekta Tadeusza Tołwińskiego, w formie wczesnobarokowego pałacu magnackiego.",
+      "Budynki wzniesiono dla gimnazjum, którego pierwotną siedzibą był gmach na ul. Kapucyńskiej 21.",
+      "W 1933 roku Janusz Jędrzejewicz, ówczesny premier Polski, dokonał odsłonięcia popiersia patrona szkoły króla Stefana Batorego.",
+      "W 1939 roku w wyniku działań wojennych spalono zachodni pawilon, a w 1944 roku zniszczeniu uległ pawilon wschodni oraz frontowe skrzydło gmachu głównego.",
+      "W 1952 roku gimnazjum zlikwidowano, a przez kolejne 6 lat budynki zajmowała X Szkoła Ogólnokształcąca Stopnia Licealnego Towarzystwa Przyjaciół Dzieci.",
+      "W 2010 roku zespół budynków wpisano do rejestru zabytków, a w 2013 roku budynki odremontowano."
+    ],
+    "ciekawostki": [
+      "Dziedziniec obudowany czterema skrzydłami przypomina swym rozwiązaniem renesansowe zamki.",
+      "W budynku działała „Pomarańczarnia”, czyli 23. Warszawska Drużyna Harcerska, której bohaterami byli uczestnicy „Akcji pod Arsenałem”."
+    ],
+    "summary_en": "A complex of school buildings at Myśliwiecka 6, 6a and 6b, built in 1922–1924 in an early-Baroque palace style. Damaged in the war, it was entered in the register of monuments in 2010.",
+    "ludzie": [
+      {"kto": "Tadeusz Tołwiński", "rola": "architekt budynków", "wiki": null},
+      {"kto": "Janusz Jędrzejewicz", "rola": "premier Polski, odsłonił popiersie patrona szkoły w 1933 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Królewsko-Polskie Gimnazjum Męskie im. Króla Stefana Batorego"],
+    "zrodla": [{"tytul": "Warszawikia: II Liceum Ogólnokształcące im. Stefana Batorego", "url": "https://warszawa.fandom.com/pl/wiki/II_Liceum_Ogólnokształcące_im._Stefana_Batorego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Rekord dotyczy zespołu budynków, a nie szkoły jako instytucji."
+  },
+  {
+    "id": "instalacja-tecza",
+    "nazwa": "Instalacja Tęcza",
+    "name_en": "Tęcza (Rainbow) installation",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Zbawiciela",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2012–2015",
+    "istnieje": false,
+    "fakty": [
+      "Instalacja stała na wysepce pl. Zbawiciela od czerwca 2012 roku do sierpnia 2015 roku; autorką była Julita Wójcik, a producentem Instytut Adama Mickiewicza.",
+      "Tęcza spłonęła po raz pierwszy 13 października 2012 roku.",
+      "11 listopada 2013 roku, podczas Marszu Niepodległości, instalację podpalili uczestnicy demonstracji, którzy oddalili się od przemarszu.",
+      "Ponowne ustawienie instalacji na pl. Zbawiciela zakończyło się 30 kwietnia 2014 roku; koszt ostatniej renowacji wyniósł 44 tysiące złotych.",
+      "7 sierpnia 2014 roku nad ranem trzech pijanych mężczyzn ponownie podpaliło instalację; koszt naprawy wyceniono na 70 tysięcy złotych.",
+      "Demontaż nastąpił w nocy z 26 na 27 sierpnia 2015 roku."
+    ],
+    "ciekawostki": [
+      "1 maja 2014 roku pod tęczą protestował Ruch Narodowy, argumentując, że ma sześć zamiast siedmiu kolorów."
+    ],
+    "summary_en": "A metal rainbow-shaped art installation wrapped in flowers, placed on a traffic island at plac Zbawiciela from 2012 to 2015. It was burned several times and removed in August 2015.",
+    "ludzie": [
+      {"kto": "Julita Wójcik", "rola": "autorka instalacji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Instalacja Tęcza", "url": "https://warszawa.fandom.com/pl/wiki/Instalacja_Tęcza"}],
+    "pewnosc": "średnia",
+    "uwagi": "Brak współrzędnych w nagłówku. W tekście jest tylko adres „pl. Zbawiciela” bez numeru; adres_dzis podany jako plac, do weryfikacji przy geokodowaniu."
+  },
+  {
+    "id": "ilmet",
+    "nazwa": "Ilmet",
+    "name_en": "Ilmet skyscraper",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Jana Pawła II 15",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1995–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę wieżowca rozpoczęto w 1995 roku, a ukończono w 1997 roku.",
+      "Projektantami byli Miljenko Dumencic i Mirosław Kartowicz.",
+      "Budynek ma 103 m wysokości i 22 kondygnacje nadziemne; wysokość do dachu wynosi 84 m.",
+      "W holu głównym znajduje się podświetlana tuba z Aktem położenia kamienia węgielnego z 12 czerwca 1995 roku.",
+      "Na budynku od strony ul. Pańskiej umieszczono tablicę upamiętniającą 50. rocznicę powstania Organizacji Narodów Zjednoczonych.",
+      "W planach jest wyburzenie wieżowca i postawienie w jego miejscu wyższej konstrukcji."
+    ],
+    "ciekawostki": [
+      "Tuba z Aktem zawiera również polskie i austriackie dzienniki oraz kilka polskich banknotów sprzed denominacji."
+    ],
+    "summary_en": "A 103-metre, 22-storey office tower by the ONZ roundabout on al. Jana Pawła II, built 1995–1997. A plaque on its Pańska Street side marks the 50th anniversary of the United Nations.",
+    "ludzie": [
+      {"kto": "Miljenko Dumencic", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Mirosław Kartowicz", "rola": "projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ilmet", "url": "https://warszawa.fandom.com/pl/wiki/Ilmet"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z infoboksu artykułu. Infobox podaje dzielnicę Wola, a nagłówek DZIELNICE podaje Śródmieście (zapisano nagłówek)."
+  }
+]
