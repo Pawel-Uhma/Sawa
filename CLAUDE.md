@@ -28,7 +28,7 @@ Dziennika promptów nie prowadzimy (decyzja z 17.10, ok. 13:30: hook generował 
 
 Monorepo pnpm: `apps/web` (Next.js App Router, Tailwind, shadcn/ui, MapLibre → Vercel), `apps/api` (Hono na Node → Railway), `packages/shared` (kontrakt zod), Supabase (Postgres + PostGIS, migracje w `supabase/migrations/`). Testy Vitest, lint Biome. Szczegóły w `docs/12-plan-mvp.md`.
 
-Przed PR: `pnpm typecheck && pnpm lint && pnpm test`. Nie commitujesz ani nie pushujesz bez polecenia człowieka.
+Przed PR: `pnpm typecheck && pnpm lint && pnpm test`. Test `apps/api/src/demo-mode.test.ts` pilnuje trybu demo na pitch ([`docs/16-tryb-demo.md`](docs/16-tryb-demo.md)); jeśli zmieniasz opowieści, głos, cel trasy albo kontrakt, sprawdź też ręcznie API z `DEMO_MODE=replay` (bez kluczy LLM i ElevenLabs) i nie psuj plików w `apps/api/data/demo/`. Nie commitujesz ani nie pushujesz bez polecenia człowieka.
 
 ## Frontend
 

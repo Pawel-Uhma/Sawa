@@ -2,7 +2,7 @@
 
 import type { Leg, Place } from "@sawa/shared";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { type ReactNode, type Ref, useEffect, useRef, useState } from "react";
+import { type ReactNode, type Ref, useEffect, useReducer, useRef } from "react";
 import { FadeImage, RollingText, SkeletonLines, Spinner } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { usePlace } from "@/features/map";
@@ -11,6 +11,7 @@ import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
 import { spokenCut } from "../lib/story-player";
 import { useStoryWaitMessage } from "../lib/story-wait";
+import { FOLLOW_INITIAL, followReducer, SCROLL_KEYS } from "../lib/transcript-follow";
 import { Attribution, Itinerary } from "./departures";
 import { PinIcon } from "./icons";
 import { LiveDot } from "./podcast-controls";
@@ -202,6 +203,9 @@ function PlaceFacts({ place }: { place: Place }) {
 /** Wysokość zapisu (od góry), na której trzymamy granicę wypowiedzianych słów. */
 const FOLLOW_AT = 0.66;
 
+/** Po tylu ms bez zdarzenia scroll uznajemy, że przewijanie (z bezwładnością) się skończyło. */
+const SETTLE_MS = 140;
+
 /** Odległość granicy słów od górnej krawędzi widocznego zapisu. */
 function edgeOffset(el: HTMLElement, edge: HTMLElement) {
   return edge.getBoundingClientRect().top - el.getBoundingClientRect().top;
@@ -230,12 +234,13 @@ export function RouteLive({
   const reduce = useReducedMotion();
   const scrollRef = useRef<HTMLDivElement>(null);
   const edgeRef = useRef<HTMLSpanElement>(null);
-  const [following, setFollowing] = useState(true);
+  const [{ following }, dispatch] = useReducer(followReducer, FOLLOW_INITIAL);
+  const settleTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
   const stop = stops[activeIndex];
   const past = transcript.filter((part) => part.stopIndex < activeIndex);
 
   // Zapis jedzie za głosem (granica wypowiedzianych słów na ok. 2/3 wysokości),
-  // dopóki użytkownik sam nie przewinie
+  // dopóki użytkownik sam nie przewinie (lib/transcript-follow.ts). Reduced motion: bez płynnego przewijania
   // biome-ignore lint/correctness/useExhaustiveDependencies: przewijamy przy każdym nowym słowie
   useEffect(() => {
     const el = scrollRef.current;
@@ -251,19 +256,39 @@ export function RouteLive({
     el.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
   }, [following, waiting, progress, storyText, activeIndex, reduce]);
 
-  // Ręczne przewinięcie (palec, kółko) odpina zapis od głosu; nasze scrollTo tego nie robi
-  function stopFollowing() {
-    setFollowing(false);
+  // Koniec przewijania: jeśli użytkownik sam wrócił granicą słów na jej wysokość, zapis znowu jedzie za głosem
+  function settleSoon() {
+    clearTimeout(settleTimer.current);
+    settleTimer.current = setTimeout(() => {
+      const el = scrollRef.current;
+      const edge = edgeRef.current;
+      if (!el) return;
+      const edgeGapPx = edge ? edgeOffset(el, edge) - el.clientHeight * FOLLOW_AT : null;
+      dispatch({ type: "settle", edgeGapPx, viewportPx: el.clientHeight });
+    }, SETTLE_MS);
+  }
+  useEffect(() => () => clearTimeout(settleTimer.current), []);
+
+  // Palec albo przycisk myszy (także na pasku przewijania) trzyma zapis. Puszczenie łapiemy na oknie,
+  // bo kursor mógł zjechać poza zapis
+  function hold() {
+    dispatch({ type: "hold" });
+    const release = () => {
+      window.removeEventListener("pointerup", release);
+      window.removeEventListener("touchend", release);
+      window.removeEventListener("touchcancel", release);
+      dispatch({ type: "release" });
+      settleSoon();
+    };
+    window.addEventListener("pointerup", release);
+    window.addEventListener("touchend", release);
+    window.addEventListener("touchcancel", release);
   }
 
-  // Przewinięcie z powrotem do głosu (granica na swojej wysokości albo sam dół) przypina zapis znowu
-  function resumeAtEdge() {
-    const el = scrollRef.current;
-    const edge = edgeRef.current;
-    if (following || !el) return;
-    const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 2;
-    const atEdge = edge && edgeOffset(el, edge) <= el.clientHeight * FOLLOW_AT - 8;
-    if (atBottom || atEdge) setFollowing(true);
+  // Przewinięcie odpina zapis tylko wtedy, gdy robi je użytkownik; nasze scrollTo leci bez trzymania
+  function onScroll() {
+    dispatch({ type: "scroll" });
+    settleSoon();
   }
 
   return (
@@ -272,11 +297,20 @@ export function RouteLive({
       {header}
       {/* Zapis wypełnia miejsce między nagłówkiem a dokiem (wysokości mierzy arkusz) */}
       <div className="relative">
+        {/* biome-ignore lint/a11y/noStaticElementInteractions: zdarzenia tylko rozpoznają przewijanie przez użytkownika */}
         <div
           ref={scrollRef}
-          onTouchMove={stopFollowing}
-          onWheel={stopFollowing}
-          onScroll={resumeAtEdge}
+          onTouchStart={hold}
+          onPointerDown={(e) => {
+            if (e.pointerType === "mouse") hold();
+          }}
+          onWheel={(e) => {
+            if (e.deltaY !== 0) dispatch({ type: "user-scroll" });
+          }}
+          onKeyDown={(e) => {
+            if (SCROLL_KEYS.has(e.key)) dispatch({ type: "user-scroll" });
+          }}
+          onScroll={onScroll}
           className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-var(--trasa-glowa,150px)-var(--trasa-dok,190px)-16px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
         >
           <div className="pb-[40%] pt-6">
@@ -316,7 +350,7 @@ export function RouteLive({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 8 }}
               transition={SPRING}
-              onClick={() => setFollowing(true)}
+              onClick={() => dispatch({ type: "resume" })}
               className="szklo absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full px-3.5 py-2 text-[13px] font-bold"
             >
               <LiveDot on={isPlaying} />
