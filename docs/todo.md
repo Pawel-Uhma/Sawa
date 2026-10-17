@@ -33,14 +33,15 @@
 
 - [x] **T-19** Planer bierze miejsca z Supabase (`PlacesRepository.listInBBox`) zamiast z `apps/api/data/places.geojson`, żeby nowe miejsca z T-25 trafiały do tras bez eksportu pliku — `R1` — 17:00 (Szczepan, 14:38, PR #17)
 - [x] **T-65** Pętla z powrotem do startu (`returnToStart`, PR #9) i kształt odcinka do ostatniego przystanku (PR #11) — `R1` — (Szczepan, 13:58)
-- [x] **T-66** Wybór punktu końcowego trasy (`destination`, `endsAtDestination`) — `R1` — (Szczepan, 14:40, PR w toku)
+- [x] **T-66** Wybór punktu końcowego trasy (`destination`, `endsAtDestination`) — `R1` — (Szczepan, 14:40, PR #19)
+- [x] **T-76** Odjazdy z rozkładu ZTM dla każdego odcinka trasy, także przesiadek, `Leg.realDeparture` w kontrakcie — `R1` — (Szczepan, 15:00, PR #19; z prawdziwym tokenem do sprawdzenia w T-17)
 - [ ] **T-10** Adapter `apps/api/src/adapters/waw` (przystanki, linie, odjazdy) z cache w pamięci i fixtures z curl — `R1` — 15:00 (do przeglądu: mapa bierze miejsca z `/v1/places`, planer jedzie na GTFS, w MVP może zostać tylko odjazdy z T-17)
 - [x] **T-15** Skąd kolejność przystanków linii (GTFS / stare API / kształt z pozycji pojazdów), decyzja w `stan.md` (P1 w planie MVP) — `R1` — 13:30 (Szczepan, 13:15: GTFS z mkuran.pl, skompresowany do pliku w repo)
 - [x] **T-16** Mock `POST /v1/routes/plan` z fixture zgodnej z kontraktem, żeby R3 i R4 nie czekali — `R1` — 14:30 (Szczepan, 13:20, PR #2; od 14:00 zastąpiony prawdziwym planerem)
 - [ ] **T-11** Odjazdy z przystanku i linie na przystanku (endpointy z [api/](api/)) — `R1` — 15:00
 - [ ] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00
 - [x] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00 (Szczepan, 14:00: GTFS + beam search, podgląd `/debug/planner`, PR #4)
-- [ ] **T-17** `WAW_TOKEN` w `apps/api/.env.local` i na Railway, sprawdzić odjazdy na żywo (format odpowiedzi API nie był testowany z tokenem) — `R1` — 17:00
+- [ ] **T-17** `WAW_TOKEN` w `apps/api/.env.local` i na Railway, sprawdzić odjazdy na żywo (format odpowiedzi API nie był testowany z tokenem) — `R1` — 17:00 (planer pyta już o odjazdy dla każdego odcinka, T-76; brakuje tylko testu z tokenem)
 - [ ] **T-18** Przed demo: przebudować graf na niedzielę (`pnpm --filter @sawa/scripts transit --date 2026-10-18`) i zapisać trasę demo jako fixture do trybu offline — `R1` — niedziela 08:00
 
 ## R2 · Baza i historia
