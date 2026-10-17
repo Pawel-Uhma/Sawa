@@ -4,6 +4,7 @@
 
 ## Teraz
 
+- 15:55 (Paweł, z agentem R3): ekran główny demo ma wybór końca trasy: „Przed siebie”, „Wracam tu” (`returnToStart`) i „Do celu” (`destination`: 4 gotowe cele albo stuknięcie w mapę). Cel to koralowa kropka na mapie, a arkusz trasy mówi, gdy planer nie dojechał (`endsAtDestination`/`endsAtStart` = false). `SawaMap` ma dwa nowe propsy: `destination` i `onMapClick`.
 - 15:42 (Paweł, z agentem R3): Sawa działa jako PWA. Na iPhonie w Safari wybierz „Udostępnij” i „Do ekranu początkowego”: aplikacja otwiera się pełnoekranowo z ikoną syrenki. Dodane `app/manifest.ts`, `app/apple-icon.png` i `public/icons/`.
 - R1 (Szczepan, 15:00): planer bierze odjazdy z rozkładu ZTM dla każdego odcinka, także przesiadek. **Dla R3:** `Leg.realDeparture: true` = godzina z rozkładu; bez pola godzina jest szacowana (można pokazać „ok. 14:05”). Do sprawdzenia z prawdziwym tokenem (T-17).
 - R1 (Szczepan, 14:40): planer przyjmuje punkt końcowy: `destination: {lat, lng}` w `POST /v1/routes/plan` (nie razem z `returnToStart`), odpowiedź ma `endsAtDestination`. **Dla R3:** wybór celu na mapie wysyła `destination`; gdy `endsAtDestination` jest `false`, pokaż, że do celu nie udało się dojechać. Szczegóły: [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 7.

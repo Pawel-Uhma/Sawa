@@ -8,12 +8,14 @@ import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { useStoryPlayer } from "../lib/story-player";
-import { ChevronLeftIcon, TramIcon } from "./icons";
+import { ChevronLeftIcon, PinIcon, TramIcon } from "./icons";
 import { Logo } from "./logo";
 import { StoryCard } from "./story-card";
 
 type RouteSheetProps = {
   durationMin: number;
+  /** Koniec trasy (pętla albo cel); null przy trasie „przed siebie”. */
+  end: { label: string; reached: boolean } | null;
   stops: MockStop[];
   /** Kategorie z onboardingu: Sawa opowiada pod nie. */
   interests: Interest[];
@@ -236,6 +238,7 @@ type SheetContentProps = RouteSheetProps & {
 
 function SheetContent({
   durationMin,
+  end,
   stops,
   activeIndex,
   onBack,
@@ -275,6 +278,17 @@ function SheetContent({
             <TramIcon className="size-4" /> {lines.join(", ")}
           </span>
         </p>
+        {end && (
+          <p
+            role={end.reached ? undefined : "status"}
+            className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[13px] font-semibold ${
+              end.reached ? "bg-mieta-jasna text-glebia" : "bg-koral/15 text-tekst"
+            }`}
+          >
+            <PinIcon className="size-4 shrink-0" />
+            {end.label}
+          </p>
+        )}
       </header>
 
       {activeStop && (

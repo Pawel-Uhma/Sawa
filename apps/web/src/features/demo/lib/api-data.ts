@@ -2,6 +2,7 @@ import { type Interest, interestsOfTags, type Route } from "@sawa/shared";
 import { api } from "@/lib/api";
 import type { LngLat, MockStop } from "./mock-data";
 import { USER_LOCATION } from "./mock-data";
+import { type RideEnd, rideEndRequest } from "./ride-end";
 
 /**
  * Onboarding stores detailed tags (e.g. `jewish_warsaw`); the planner takes broad categories.
@@ -13,13 +14,17 @@ export function toPlannerInterests(tags: readonly string[]): Interest[] {
 }
 
 /** Plans a ride from the demo start with `POST /v1/routes/plan`. */
-export async function planRoute(durationMin: number, tags: readonly string[]): Promise<Route> {
+export async function planRoute(
+  durationMin: number,
+  tags: readonly string[],
+  end: RideEnd = { type: "open" },
+): Promise<Route> {
   const res = await api.v1.routes.plan.$post({
     json: {
       origin: { lat: USER_LOCATION[1], lng: USER_LOCATION[0] },
       durationMin,
       interests: toPlannerInterests(tags),
-      returnToStart: false,
+      ...rideEndRequest(end),
     },
   });
   if (!res.ok) throw new Error(`POST /v1/routes/plan: ${res.status}`);

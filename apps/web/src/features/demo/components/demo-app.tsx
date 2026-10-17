@@ -9,6 +9,12 @@ import { planRoute, routeStops, toPlannerInterests } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
 import { type MockStop, USER_LOCATION } from "../lib/mock-data";
 import { EMPTY_PROFILE, type Profile } from "../lib/onboarding";
+import {
+  CUSTOM_DESTINATION_NAME,
+  DESTINATION_PRESETS,
+  type RideEnd,
+  type RideEndType,
+} from "../lib/ride-end";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
 import { RidesPanel } from "./rides-panel";
@@ -38,6 +44,11 @@ export function DemoApp() {
   const [profile, setProfile] = useState<Profile>(EMPTY_PROFILE);
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(90);
+  const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "open" });
+  // Ostatni wybrany cel wraca po przełączeniu „Przed siebie” → „Do celu”
+  const [lastDestination, setLastDestination] = useState<Extract<RideEnd, { type: "destination" }>>(
+    { type: "destination", ...DESTINATION_PRESETS[0] },
+  );
   const [route, setRoute] = useState<MockStop[]>([]);
   const [planned, setPlanned] = useState<Route | null>(null);
   const [planning, setPlanning] = useState(false);
@@ -57,13 +68,23 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(durationMin, profile.interests));
+      showRoute(await planRoute(durationMin, profile.interests, rideEnd));
     } catch {
       setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
     } finally {
       setPlanning(false);
     }
-  }, [durationMin, profile.interests, showRoute]);
+  }, [durationMin, profile.interests, rideEnd, showRoute]);
+
+  const changeRideEnd = useCallback((next: RideEnd) => {
+    if (next.type === "destination") setLastDestination(next);
+    setRideEnd(next);
+  }, []);
+
+  const changeRideEndType = useCallback(
+    (type: RideEndType) => setRideEnd(type === "destination" ? lastDestination : { type }),
+    [lastDestination],
+  );
 
   // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
   useEffect(() => {
@@ -89,6 +110,8 @@ export function DemoApp() {
   // Mapa jest jedna pod wszystkimi ekranami. Ekrany zmieniają tylko kamerę i to, co na niej leży.
   const isRoute = stage === "route" && planned !== null && route.length > 0;
   const activeStop = route[activeIndex];
+  const isHome = stage === "map" && tab === "map";
+  const destination = rideEnd.type === "destination" ? rideEnd : null;
 
   const padding: MapPadding = useMemo(() => {
     if (isDesktop) {
@@ -101,16 +124,20 @@ export function DemoApp() {
     }
     return isRoute
       ? { top: 88, right: 0, bottom: sheetCoverPx, left: 0 }
-      : { top: 120, right: 0, bottom: panelCollapsed ? 200 : 430, left: 0 };
-  }, [isDesktop, isWide, isRoute, sheetCoverPx, panelCollapsed]);
+      : { top: 120, right: 0, bottom: panelCollapsed ? 200 : destination ? 560 : 480, left: 0 };
+  }, [isDesktop, isWide, isRoute, sheetCoverPx, panelCollapsed, destination]);
 
   const camera: MapCamera = useMemo(() => {
     if (isRoute && activeStop) {
       const [lng, lat] = activeStop.coord;
       return { type: "center", center: { lat, lng }, zoom: 15.4 };
     }
+    // Wybrany cel: mapa pokazuje start i cel naraz
+    if (isHome && destination) {
+      return { type: "fit", points: [USER, destination.point], maxZoom: 15 };
+    }
     return { type: "center", center: USER, zoom: isDesktop ? 15.3 : 14.8 };
-  }, [isRoute, activeStop, isDesktop]);
+  }, [isRoute, activeStop, isDesktop, isHome, destination]);
 
   const storyInterests = useMemo(() => toPlannerInterests(profile.interests), [profile.interests]);
   // Na mapie pusta lista znaczy „wszystkie miejsca”, więc bez zapasowej kategorii z planera.
@@ -126,6 +153,13 @@ export function DemoApp() {
             camera={camera}
             padding={padding}
             user={USER}
+            destination={isRoute || isHome ? destination?.point : undefined}
+            onMapClick={
+              isHome && destination
+                ? (point) =>
+                    changeRideEnd({ type: "destination", name: CUSTOM_DESTINATION_NAME, point })
+                : undefined
+            }
             activeStopId={isRoute ? activeStop?.id : undefined}
             onStopClick={(id) => {
               const index = route.findIndex((stop) => stop.id === id);
@@ -150,6 +184,9 @@ export function DemoApp() {
               interests={profile.interests}
               durationMin={durationMin}
               onDurationChange={setDurationMin}
+              rideEnd={rideEnd}
+              onRideEndTypeChange={changeRideEndType}
+              onRideEndChange={changeRideEnd}
               onEditInterests={editInterests}
               collapsed={panelCollapsed}
               onCollapsedChange={setPanelCollapsed}
@@ -187,6 +224,7 @@ export function DemoApp() {
             <RouteSheet
               key="route"
               durationMin={durationMin}
+              end={planned ? routeEnd(planned, rideEnd) : null}
               stops={route}
               interests={storyInterests}
               activeIndex={activeIndex}
@@ -222,4 +260,20 @@ export function DemoApp() {
       </div>
     </MotionConfig>
   );
+}
+
+/** Podpis końca trasy w arkuszu; gdy planer nie dojechał do celu albo nie zamknął pętli, mówi to wprost. */
+function routeEnd(route: Route, end: RideEnd): { label: string; reached: boolean } | null {
+  switch (end.type) {
+    case "open":
+      return null;
+    case "loop":
+      return route.endsAtStart
+        ? { label: "Wracasz na start", reached: true }
+        : { label: "Nie udało się wrócić na start w tym czasie", reached: false };
+    case "destination":
+      return route.endsAtDestination
+        ? { label: `Do celu: ${end.name}`, reached: true }
+        : { label: `Nie udało się dojechać do celu (${end.name}) w tym czasie`, reached: false };
+  }
 }

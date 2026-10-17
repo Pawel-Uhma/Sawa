@@ -16,6 +16,7 @@ import { cameraMoveKey, type MapCamera, type MapPadding, resolveCamera } from ".
 import { BASEMAP_STYLE_URL, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
+import { DestinationLayer } from "./destination-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
@@ -38,6 +39,8 @@ export type SawaMapProps = {
   padding?: Partial<MapPadding>;
   /** User position dot. */
   user?: LatLng;
+  /** Where the ride should end; drawn as a pin. */
+  destination?: LatLng;
   /** Route place the story is about right now. */
   activeStopId?: string;
   /** Click on a route place. When set, it replaces the built-in place card for route places. */
@@ -45,6 +48,8 @@ export type SawaMapProps = {
   /** Built-in card after clicking a place; turn off when the screen shows its own. */
   hasPlaceSheet?: boolean;
   hasZoomControls?: boolean;
+  /** Click on the map outside any place (e.g. to pick a destination). */
+  onMapClick?: (point: LatLng) => void;
 };
 
 export function SawaMap({
@@ -53,10 +58,12 @@ export function SawaMap({
   camera,
   padding,
   user,
+  destination,
   activeStopId,
   onStopClick,
   hasPlaceSheet = true,
   hasZoomControls = true,
+  onMapClick,
 }: SawaMapProps) {
   const mapRef = useRef<MapRef>(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -104,6 +111,7 @@ export function SawaMap({
     const id = feature?.properties?.id;
     if (typeof id !== "string") {
       select(null);
+      onMapClick?.({ lat: event.lngLat.lat, lng: event.lngLat.lng });
       return;
     }
     if (feature?.layer.id === ROUTE_PLACES_LAYER_ID && onStopClick) {
@@ -140,6 +148,7 @@ export function SawaMap({
         <AttributionControl compact customAttribution={route?.attribution} />
         <PlacesLayer places={visiblePlaces} selectedId={selectedId} isDimmed={Boolean(route)} />
         {route && <RouteLayer route={route} selectedId={selectedId} activeId={activeStopId} />}
+        {destination && <DestinationLayer position={destination} />}
         {user && <UserLayer position={user} />}
       </MapLibreMap>
       {places.isError && (

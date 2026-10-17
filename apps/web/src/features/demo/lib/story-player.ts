@@ -15,7 +15,7 @@ const MAX_TARGET_SEC = 600;
 const FAILED_STORY_MS = 6000;
 
 /** One story: text for the card, mp3 when the voice answered. */
-type Clip = { text: string; audioUrl: string | null };
+export type Clip = { text: string; audioUrl: string | null };
 
 /** Sawa may talk until the next stop. */
 function targetSecFor(stops: readonly MockStop[], index: number): number {
@@ -25,7 +25,11 @@ function targetSecFor(stops: readonly MockStop[], index: number): number {
   return Math.min(MAX_TARGET_SEC, Math.max(MIN_TARGET_SEC, Math.round(sec)));
 }
 
-async function fetchClip(placeId: string, interests: Interest[], targetSec: number): Promise<Clip> {
+export async function fetchClip(
+  placeId: string,
+  interests: Interest[],
+  targetSec: number,
+): Promise<Clip> {
   const res = await api.v1.stories.$post({ json: { placeId, interests, targetSec } });
   if (!res.ok) throw new Error(`POST /v1/stories: ${res.status}`);
   const { text } = await res.json();

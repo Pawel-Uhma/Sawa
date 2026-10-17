@@ -65,6 +65,9 @@ export const PLACE_KIND_LABELS: Record<string, string> = {
 /** User position dot. */
 export const USER_COLOR = "#2563eb";
 
+/** End point the user picked for the ride. */
+export const DESTINATION_COLOR = "#f2755f";
+
 /** Route place the story is about right now. */
 export const ACTIVE_STOP_COLOR = "#17706f";
 

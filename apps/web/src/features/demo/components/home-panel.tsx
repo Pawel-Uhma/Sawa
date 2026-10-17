@@ -12,6 +12,12 @@ import { type CSSProperties, useRef } from "react";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
 import { DURATION_MAX_MIN, DURATION_MIN_MIN, DURATION_STEP_MIN, INTERESTS } from "../lib/mock-data";
+import {
+  CUSTOM_DESTINATION_NAME,
+  DESTINATION_PRESETS,
+  type RideEnd,
+  type RideEndType,
+} from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import { ArrowRightIcon } from "./icons";
 import { PrimaryButton } from "./primary-button";
@@ -20,6 +26,9 @@ type HomePanelProps = {
   interests: string[];
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
+  rideEnd: RideEnd;
+  onRideEndTypeChange: (type: RideEndType) => void;
+  onRideEndChange: (end: RideEnd) => void;
   onEditInterests: () => void;
   onGenerate: () => void;
   planning: boolean;
@@ -30,11 +39,20 @@ type HomePanelProps = {
 
 const SCALE = ["30 min", "1 h", "2 h", "3 h", "4 h+"];
 
+const END_OPTIONS: { type: RideEndType; label: string }[] = [
+  { type: "open", label: "Przed siebie" },
+  { type: "loop", label: "Wracam tu" },
+  { type: "destination", label: "Do celu" },
+];
+
 /** Ekran główny A6: pływająca karta nad paskiem zakładek, Sawa wychyla się zza karty i pyta w dymku. */
 export function HomePanel({
   interests,
   durationMin,
   onDurationChange,
+  rideEnd,
+  onRideEndTypeChange,
+  onRideEndChange,
   onEditInterests,
   onGenerate,
   planning,
@@ -111,6 +129,12 @@ export function HomePanel({
         ))}
       </div>
 
+      <RideEndPicker
+        rideEnd={rideEnd}
+        onTypeChange={onRideEndTypeChange}
+        onChange={onRideEndChange}
+      />
+
       <div className="mt-3 flex items-center gap-1.5 text-[13px] text-tekst-2">
         <span className="shrink-0">Tematy:</span>
         <b className="min-w-0 truncate font-bold text-tekst">{labels || "wszystkie"}</b>
@@ -133,6 +157,103 @@ export function HomePanel({
         </p>
       )}
     </FloatingCard>
+  );
+}
+
+type RideEndPickerProps = {
+  rideEnd: RideEnd;
+  onTypeChange: (type: RideEndType) => void;
+  onChange: (end: RideEnd) => void;
+};
+
+/** Koniec trasy: przełącznik segmentowy, a przy „Do celu” cele do stuknięcia i podpowiedź o mapie. */
+function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) {
+  const destination = rideEnd.type === "destination" ? rideEnd : null;
+  const isCustom =
+    destination !== null && !DESTINATION_PRESETS.some((preset) => preset.name === destination.name);
+
+  return (
+    <div className="mt-4">
+      <div
+        role="radiogroup"
+        aria-label="Gdzie kończysz"
+        className="flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
+      >
+        {END_OPTIONS.map((option) => {
+          const isActive = option.type === rideEnd.type;
+          return (
+            // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
+            <button
+              key={option.type}
+              type="button"
+              role="radio"
+              aria-checked={isActive}
+              onClick={() => {
+                if (isActive) return;
+                haptic(4);
+                onTypeChange(option.type);
+              }}
+              className={`relative h-[34px] flex-1 rounded-[11px] text-[13px] font-semibold transition-colors duration-200 active:scale-[0.97] ${
+                isActive ? "text-tekst" : "text-tekst-2"
+              }`}
+            >
+              {isActive && (
+                <motion.span
+                  layoutId="segment-konca"
+                  transition={SPRING}
+                  className="absolute inset-0 rounded-[inherit] bg-white shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
+                />
+              )}
+              <span className="relative">{option.label}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      <AnimatePresence initial={false}>
+        {destination && (
+          <motion.div
+            key="cele"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ type: "spring", bounce: 0, duration: 0.35 }}
+            className="overflow-hidden"
+          >
+            <div className="-mx-[18px] flex gap-2 overflow-x-auto px-[18px] pt-2.5 [scrollbar-width:none] md:-mx-6 md:px-6">
+              {DESTINATION_PRESETS.map((preset) => {
+                const isActive = preset.name === destination.name;
+                return (
+                  <button
+                    key={preset.id}
+                    type="button"
+                    aria-pressed={isActive}
+                    onClick={() => {
+                      if (isActive) return;
+                      haptic(4);
+                      onChange({ type: "destination", name: preset.name, point: preset.point });
+                    }}
+                    className={`h-8 shrink-0 rounded-full px-3 text-[13px] font-semibold transition-[transform,background-color,color] active:scale-[0.96] ${
+                      isActive ? "bg-glebia text-white" : "bg-mieta-jasna text-glebia"
+                    }`}
+                  >
+                    {preset.name}
+                  </button>
+                );
+              })}
+              {isCustom && (
+                <span className="flex h-8 shrink-0 items-center rounded-full bg-glebia px-3 text-[13px] font-semibold text-white">
+                  {CUSTOM_DESTINATION_NAME}
+                </span>
+              )}
+            </div>
+            <p className="mt-1.5 text-xs text-tekst-3">
+              Albo stuknij w mapę, żeby wybrać własny cel.
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
 
