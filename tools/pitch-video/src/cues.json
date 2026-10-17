@@ -1,0 +1,102 @@
+{
+  "screenSec": 77.85240687096774,
+  "segments": [
+    {
+      "atSec": 0,
+      "srcFromSec": 3.4,
+      "durationSec": 3.2289999999999996,
+      "kicker": "Start: 42 Warsaw, al. Solidarności",
+      "text": "Sawa układa przejazd tramwajem pod Twój czas i zainteresowania.",
+      "audio": null,
+      "subtitles": []
+    },
+    {
+      "atSec": 3.2289999999999996,
+      "srcFromSec": 6.629,
+      "durationSec": 31.181048870967743,
+      "kicker": "Teraz za oknem · Leszno",
+      "text": null,
+      "audio": {
+        "file": "clip-00.mp3",
+        "atSec": 3.2289999999999996,
+        "durationSec": 31.181048870967743
+      },
+      "subtitles": [
+        {
+          "text": "Zaraz mijamy ulicę Leszno, a wiesz, że ona wzięła się z dawnego traktu z Warszawy do Błonia?",
+          "fromSec": 3.2289999999999996,
+          "toSec": 8.677878064516129
+        },
+        {
+          "text": "Słyszałam, że w tysiąc sześćset czterdziestym ósmym roku podskarbi wielki koronny Bogusław Leszczyński wraz ze stryjem, kanclerzem Janem Leszczyńskim, założyli tu jurydykę.",
+          "fromSec": 8.677878064516129,
+          "toSec": 18.864910967741935
+        },
+        {
+          "text": "Osią osadniczą było właśnie to miejsce, a osiedlała się tu głównie ludność wyznania ewangelickiego, która przybyła z Leszna.",
+          "fromSec": 18.864910967741935,
+          "toSec": 26.209050967741934
+        },
+        {
+          "text": "Pod numerem pięćdziesiątym ósmym już w tysiąc osiemset dziewięćdziesiątym siódmym roku działała centrala warszawskiego pogotowia ratunkowego.",
+          "fromSec": 26.209050967741934,
+          "toSec": 34.56004887096774
+        }
+      ]
+    },
+    {
+      "atSec": 34.41004887096774,
+      "srcFromSec": 59.537,
+      "durationSec": 43.442358000000006,
+      "kicker": "150 m od tej sali · Kercelak",
+      "text": null,
+      "audio": {
+        "file": "clip-01.mp3",
+        "atSec": 34.81004887096774,
+        "durationSec": 43.04235800000001
+      },
+      "subtitles": [
+        {
+          "text": "Wiesz, jak tu teraz gładko i nowocześnie, a zobacz, tu, przy trasie, kryje się kawał historii dawnej Woli.",
+          "fromSec": 34.81004887096774,
+          "toSec": 40.81179440276747
+        },
+        {
+          "text": "Zanim powstało to miejsce, były tu tylko okopy i fosy z wodą.",
+          "fromSec": 40.81179440276747,
+          "toSec": 44.265629095595614
+        },
+        {
+          "text": "W tysiąc osiemset sześćdziesiątym siódmym roku powstało tu wielkie targowisko o powierzchni około półtora hektara.",
+          "fromSec": 44.265629095595614,
+          "toSec": 50.72033655432362
+        },
+        {
+          "text": "Teren przekazał miasto pod targ paszą Józef Kercelego, który był właścicielem tutejszych nieruchomości.",
+          "fromSec": 50.72033655432362,
+          "toSec": 56.55222136352525
+        },
+        {
+          "text": "Potem zresztą przeniesiono tu jeszcze stragany z placu Grzybowskiego, bo tam akurat budowano kościół Wszystkich Świętych.",
+          "fromSec": 56.55222136352525,
+          "toSec": 63.4032705083155
+        },
+        {
+          "text": "A skąd wzięła się ta potoczna nazwa Kercelak?",
+          "fromSec": 63.4032705083155,
+          "toSec": 65.95118134728709
+        },
+        {
+          "text": "To po prostu urok warszawskiego zwyczaju skracania nazw, sama się do tego przyzwyczaiłam.",
+          "fromSec": 65.95118134728709,
+          "toSec": 70.99038278436421
+        },
+        {
+          "text": "No przyznaj, że fajnie tak sobie pomyśleć, co tu się kiedyś działo, zwłaszcza jak się lubi historię.",
+          "fromSec": 70.99038278436421,
+          "toSec": 76.65240687096772
+        }
+      ]
+    }
+  ]
+}

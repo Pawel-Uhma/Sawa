@@ -2,12 +2,13 @@
 // Wynik: public/capture/screen.mp4, public/capture/clip-NN.mp3, public/capture/timeline.json
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, linkSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { chromium } from "playwright";
 
-const APP_URL = process.env.APP_URL ?? "http://localhost:3100/demo?voice=1";
+const APP_URL = process.env.APP_URL ?? "http://localhost:3101/demo?voice=1";
 const RECORD_MS = Number(process.env.RECORD_MS ?? 100_000);
+const SKIP_FFMPEG = process.env.SKIP_FFMPEG === "1";
 const OUT = "public/capture";
 const VIEWPORT = { width: 393, height: 852 };
 
@@ -16,6 +17,7 @@ mkdirSync(`${OUT}/frames`, { recursive: true });
 
 const browser = await chromium.launch({
   channel: "chrome",
+  headless: process.env.HEADLESS === "1",
   args: ["--autoplay-policy=no-user-gesture-required"],
 });
 const context = await browser.newContext({
@@ -35,13 +37,19 @@ const stories = [];
 mkdirSync("audio-cache", { recursive: true });
 await context.route(/railway\.app/, async (route) => {
   const path = new URL(route.request().url()).pathname;
-  const cacheFile = `audio-cache/${createHash("sha1").update(route.request().postData() ?? "").digest("hex")}.mp3`;
+  const cacheFile = `audio-cache/${createHash("sha1")
+    .update(route.request().postData() ?? "")
+    .digest("hex")}.mp3`;
   if (path === "/v1/stories/audio" && existsSync(cacheFile)) {
     const body = readFileSync(cacheFile);
     const file = `clip-${String(clips.length).padStart(2, "0")}.mp3`;
     writeFileSync(join(OUT, file), body);
     clips.push({ file, bytes: body.length, fetchedAt: Date.now() - t0 });
-    return route.fulfill({ status: 200, body, headers: { "content-type": "audio/mpeg", "access-control-allow-origin": "*" } });
+    return route.fulfill({
+      status: 200,
+      body,
+      headers: { "content-type": "audio/mpeg", "access-control-allow-origin": "*" },
+    });
   }
   const res = await route.fetch();
   const body = await res.body();
@@ -98,22 +106,38 @@ const page = await context.newPage();
 // Klatki z CDP screencast (ffmpeg Playwrighta nie działa na tym Macu), potem składa je systemowy ffmpeg.
 const frames = []; // { file, at }
 const cdp = await context.newCDPSession(page);
-cdp.on("Page.screencastFrame", async ({ data, sessionId }) => {
+cdp.on("Page.screencastFrame", async ({ data, sessionId, metadata }) => {
   const file = `f${String(frames.length).padStart(5, "0")}.jpg`;
   writeFileSync(join(OUT, "frames", file), Buffer.from(data, "base64"));
-  frames.push({ file, at: Date.now() - t0 });
+  // Czas klatki z przeglądarki (sekundy od epoki), nie z chwili odbioru.
+  frames.push({ file, at: metadata.timestamp ? metadata.timestamp * 1000 - t0 : Date.now() - t0 });
   await cdp.send("Page.screencastFrameAck", { sessionId }).catch(() => {});
 });
-await cdp.send("Page.startScreencast", { format: "jpeg", quality: 92, maxWidth: VIEWPORT.width * 2, maxHeight: VIEWPORT.height * 2 });
+await cdp.send("Page.startScreencast", {
+  format: "jpeg",
+  quality: 92,
+  maxWidth: VIEWPORT.width * 2,
+  maxHeight: VIEWPORT.height * 2,
+});
 await page.goto(APP_URL);
 // Badż Next.js w trybie dev nie idzie na film.
 await page.addStyleTag({ content: "nextjs-portal{display:none!important}" });
-await page.waitForTimeout(RECORD_MS);
+// Arkusz trasy chowa się po starcie jazdy, a film ma pokazać transkrypt: otwieramy go.
+const showRoute = page.getByRole("button", { name: "Pokaż trasę" });
+for (let i = 0; i < 40; i++) {
+  if (await showRoute.isVisible().catch(() => false)) {
+    await page.waitForTimeout(600);
+    await showRoute.tap().catch(() => showRoute.click({ force: true }));
+    break;
+  }
+  await page.waitForTimeout(250);
+}
+await page.waitForTimeout(Math.max(0, RECORD_MS - (Date.now() - t0)));
 
 const plays = await page.evaluate(() => window.__plays);
+await context.unrouteAll({ behavior: "ignoreErrors" });
 await context.close();
 await browser.close();
-
 
 const timeline = plays
   .filter((p) => p.at)
@@ -141,14 +165,36 @@ writeFileSync(
 console.log(`klipy: ${clips.length}, odtworzenia: ${timeline.length}`);
 console.log(timeline);
 
-// Klatki przychodzą tylko przy zmianie obrazu, więc każda trwa do następnej (concat z czasami).
-const list = frames.map((f, i) => {
-  const until = frames[i + 1]?.at ?? RECORD_MS;
-  return `file 'frames/${f.file}'\nduration ${((until - f.at) / 1000).toFixed(3)}`;
-});
-writeFileSync(join(OUT, "frames.txt"), `${list.join("\n")}\nfile 'frames/${frames.at(-1).file}'\n`);
-// Pierwsza klatka przychodzi po starcie, więc wideo przesuwamy o jej czas (tpad), żeby t=0 było t0.
-execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", join(OUT, "frames.txt"),
-  "-vf", `tpad=start_duration=${frames[0].at / 1000}:start_mode=clone,fps=30,scale=786:1704:flags=lanczos,format=yuv420p`,
-  "-c:v", "libx264", "-crf", "16", "-preset", "slow", join(OUT, "screen.mp4")]);
+// Klatki przychodzą nierówno, więc składamy stałe 30 kl./s: każda klatka wyjścia to ostatnia klatka
+// przeglądarki sprzed jej chwili (twarde linki w kolejności, potem image2 bez zaokrągleń czasu).
+const FPS = 30;
+mkdirSync(join(OUT, "seq"), { recursive: true });
+let src = 0;
+for (let k = 0; k < Math.round((RECORD_MS / 1000) * FPS); k++) {
+  const at = (k / FPS) * 1000;
+  while (frames[src + 1] && frames[src + 1].at <= at) src++;
+  linkSync(
+    join(OUT, "frames", frames[src].file),
+    join(OUT, "seq", `s${String(k).padStart(5, "0")}.jpg`),
+  );
+}
+execFileSync("ffmpeg", [
+  "-y",
+  "-loglevel",
+  "error",
+  "-framerate",
+  String(FPS),
+  "-i",
+  join(OUT, "seq", "s%05d.jpg"),
+  "-vf",
+  "scale=786:1704:flags=lanczos,setsar=1,format=yuv420p",
+  "-c:v",
+  "libx264",
+  "-crf",
+  "16",
+  "-preset",
+  "slow",
+  join(OUT, "screen.mp4"),
+]);
+rmSync(join(OUT, "seq"), { recursive: true });
 rmSync(join(OUT, "frames"), { recursive: true });
