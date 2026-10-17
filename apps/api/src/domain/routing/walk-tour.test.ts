@@ -1,7 +1,7 @@
 import { haversineM } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
-import { planWalk, toSegment } from "./walk-tour";
+import { planWalk, retracedShare, toSegment } from "./walk-tour";
 
 const ORIGIN = { lat: 52.23, lng: 21.0 };
 // ~70 m per 0.001° of longitude here; walking 1.2 m/s × 1.3 detour ≈ 0.92 m/s.
@@ -58,5 +58,37 @@ describe("planWalk", () => {
 
   it("returns null when even the walk to the end does not fit", () => {
     expect(planWalk(input(5, { lat: 52.23, lng: 21.05 }))).toBeNull();
+  });
+});
+
+describe("walking back the same way", () => {
+  const east = { lat: 52.23, lng: 21.008 };
+
+  it("measures how much of a segment goes along the walk so far", () => {
+    expect(retracedShare([ORIGIN, east], east, ORIGIN)).toBeGreaterThan(0.8);
+    expect(retracedShare([ORIGIN, east], east, { lat: 52.235, lng: 21.008 })).toBe(0);
+  });
+
+  // ~550 m east and back fits 20 min; the detour past a minor place ~180 m north takes longer.
+  const loop = {
+    places: [
+      place("east", 21.008, 52.23, ["historical"]),
+      place("detour", 21.004, 52.2316, ["cultural"], 0.1),
+    ],
+    origin: ORIGIN,
+    end: ORIGIN,
+    budgetSec: 20 * 60,
+    interests: new Set(["historical"]),
+  };
+
+  it("goes out and back when nothing penalises it", () => {
+    const walk = planWalk(loop, { backtrackPenalty: 0 });
+    expect(walk?.waypoints).toHaveLength(3);
+  });
+
+  it("comes back another way when one fits the time", () => {
+    const walk = planWalk(loop);
+    expect(walk?.waypoints.map((p) => p.lat)).toEqual([52.23, 52.2316, 52.23, 52.23]);
+    expect(walk?.elapsedSec).toBeLessThanOrEqual(1.1 * 20 * 60);
   });
 });
