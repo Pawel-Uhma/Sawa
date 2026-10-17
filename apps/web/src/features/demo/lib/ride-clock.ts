@@ -45,19 +45,21 @@ export function isAt(point: LatLng, stop: Pick<MockStop, "coord">): boolean {
 
 /**
  * Whether the ride clock runs: before the first place it runs alone (Sawa waits for it),
- * after that only while Sawa plays, so a pause or stop also stops the slider and countdowns.
+ * after that only while Sawa plays. `held` is a stop or pause by the user: it stops the clock
+ * also before the first place, so the slider and countdowns stand until the user resumes.
  */
 export function isClockRunning(
   stops: readonly MockStop[],
   rideSec: number,
   isPlaying: boolean,
+  held = false,
 ): boolean {
-  return stops.length > 0 && (isPlaying || waitSec(stops, rideSec) !== null);
+  return stops.length > 0 && !held && (isPlaying || waitSec(stops, rideSec) !== null);
 }
 
 /**
  * Time on the ride, until location replaces it: starts with a new route, stops while Sawa is
- * paused (`isClockRunning`) and goes on from there. `syncTo` moves it to a place the user picked.
+ * paused or stopped by the user (`isClockRunning`) and goes on from there. `syncTo` moves it to a place the user picked.
  */
 export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
   // Set in the effect: Date.now() during render breaks the prerender with cacheComponents.
@@ -65,7 +67,10 @@ export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
   // Time belongs to its route: in the render with a new route the old ride's time is not used.
   const [tick, setTick] = useState({ stops, sec: 0 });
   const rideSec = tick.stops === stops ? tick.sec : 0;
-  const running = isClockRunning(stops, rideSec, isPlaying);
+  // Stopped by the user (stop or pause); like the time, it belongs to its route.
+  const [hold, setHold] = useState({ stops, on: false });
+  const held = hold.stops === stops && hold.on;
+  const running = isClockRunning(stops, rideSec, isPlaying, held);
   // Where the clock stood when it stopped, so it goes on from there and not from the start
   const secRef = useRef(rideSec);
   secRef.current = rideSec;
@@ -102,6 +107,9 @@ export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
     [stops, seekTo],
   );
 
+  /** The user stopped (true) or resumed (false) Sawa: the clock stands or goes on from there. */
+  const setHeld = useCallback((on: boolean) => setHold({ stops, on }), [stops]);
+
   const due = dueIndex(stops, rideSec);
   const next = stops[due + 1];
   return {
@@ -111,6 +119,9 @@ export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
     waitSec: waitSec(stops, rideSec),
     /** Seconds until the next story should start; null after the last place. */
     nextInSec: next ? Math.max(0, storyStartSec(next) - rideSec) : null,
+    /** The user stopped Sawa: the clock stands, also before the first place. */
+    held,
+    setHeld,
     syncTo,
     seekTo,
   };

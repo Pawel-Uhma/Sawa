@@ -143,6 +143,7 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-141** Ciemny motyw: jaśniejsze ulice na mapie, syrenka czytelna na ciemnym tle — `R3` (Antek)
 - [ ] **T-142** Stany czekania (spinner, kółka) w czcionce i kolorach Sawy — `R3`
 - [ ] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł)
+- [x] **T-148** Stop i pauza zatrzymują zegar jazdy także przed pierwszym miejscem: osobny stan „zatrzymane przez użytkownika” (`held` w `useRideClock`), wznowienie od tego samego miejsca, GPS (`useGpsClockSync`) nie przesuwa zegara przy zatrzymanej Sawie (#93) — `R3` — (Paweł z agentem, 17.10, 20:11, PR w toku)
 - [ ] **T-144** Głos czyta lata źle („1099” zamiast 1939, „1090” zamiast 1940, „5355” zamiast 53/55): sprawdzić, czy prompt pisze liczby słownie (T-98) — `R4`
 - [ ] **T-145** Przetestować proxy z home labu (#63) na produkcji: API miasta, pojazdy — `R1` + Antek
 - [ ] **T-146** Firecrawl: klucz z drugiego konta, kolejne miejsca rzadziej i po całej Warszawie (poza Śródmieściem i Wolą) — `R2`
