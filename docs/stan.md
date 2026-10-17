@@ -1,10 +1,12 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 20:00 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026 (Paweł, z agentem R3)
 
 - 16:45 (Paweł, z agentem R3): pojazdy na mapie (T-100, issue #30) w gałęzi `r3/pojazdy-na-zywo`: hook co 10 s, ikony tramwaju i autobusu z `public/icons/`, płynny ruch w `requestAnimationFrame`. Typecheck, lint i testy zielone; zmergowane do `main` (PR, typecheck, lint i testy zielone). Do sprawdzenia na mapie z `WAW_TOKEN`.
 
 ## Teraz
+
+- 17.10 (Paweł, z agentem R3): **głos wyłączony domyślnie** (kredyty ElevenLabs). Opowieść leci tekstem na timerze, a mowa działa dopiero pod adresem z `?voice=1` (`voiceOn()` w `features/demo/lib/story-player.ts`, `fetchClip` pomija audio). Dotyczy też „Posłuchaj” w karcie miejsca. API `/v1/stories/audio` bez zmian.
 
 - R1 (Szczepan, 18:11, plik R3 na prośbę użytkownika): T-121. Po wyznaczeniu trasy Sawa milczy do pierwszego miejsca: `useRideClock` zwraca `waitSec` (do `storyStartSec` pierwszego punktu), GPS w promieniu `ARRIVE_M` = 150 m przestawia zegar na to miejsce, stuknięcie w odtwarzanie startuje od razu. Ekran trasy pokazuje „Sawa czeka na pierwsze miejsce” i „Najpierw X · za ok. N min”. **Na pokaz spod 42 Warsaw:** stuknąć odtwarzanie, bo bez ruchu Sawa czeka do czasu z rozkładu. **Dla Pawła/Antka:** zmiany w `demo-app.tsx`, `route-live.tsx`, `ride-clock.ts`.
 - 18:13 (Antek, R3): motyw da się zmienić już w onboardingu (T-122): okrągły przycisk słońce / księżyc w prawym górnym rogu nagłówka, stuknięcie przełącza jasny ↔ ciemny. Komponent `ThemeToggleButton` w `features/theme`, w `onboarding-flow.tsx` (plik Pawła) tylko jego wstawienie w nagłówek.
