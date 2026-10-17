@@ -1,0 +1,72 @@
+# Wersja do wklejenia w Portainer → Stacks → Add stack → Web editor (bez build, bez plików obok).
+# Caddyfile i walidacja klucza są wpisane inline; źródłem prawdy jest Caddyfile + entrypoint.sh obok.
+# W "Environment variables" stacka: PROXY_KEY (openssl rand -hex 32) i TUNNEL_TOKEN (Cloudflare Zero Trust → Tunnels).
+# Port jest tylko na localhost hosta (do testów curl); z zewnątrz ruch idzie wyłącznie przez tunel.
+services:
+  waw-proxy:
+    image: caddy:2.10-alpine
+    restart: unless-stopped
+    environment:
+      PROXY_KEY: ${PROXY_KEY:-}
+    ports:
+      - "127.0.0.1:${PROXY_PORT:-8080}:8080"
+    read_only: true
+    tmpfs:
+      - /config
+      - /data
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/health"]
+      interval: 10s
+      timeout: 3s
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        if [ "$${#PROXY_KEY}" -lt 32 ]; then echo "PROXY_KEY musi mieć co najmniej 32 znaki (openssl rand -hex 32)" >&2; exit 1; fi
+        case "$$PROXY_KEY" in *[!A-Za-z0-9]*) echo "PROXY_KEY: tylko litery i cyfry" >&2; exit 1 ;; esac
+        cat > /config/Caddyfile <<'CADDY'
+        {
+        	admin off
+        	auto_https off
+        }
+        :8080 {
+        	handle /health {
+        		respond "ok" 200
+        	}
+        	@allowed {
+        		method POST
+        		path /api/action/*
+        		header X-Proxy-Key {$$PROXY_KEY}
+        	}
+        	handle @allowed {
+        		request_header -X-Proxy-Key
+        		reverse_proxy https://dane.um.warszawa.pl {
+        			header_up Host {upstream_hostport}
+        			header_up -X-Forwarded-For
+        			header_up -X-Forwarded-Host
+        			header_up -X-Forwarded-Proto
+        			transport http {
+        				dial_timeout 5s
+        				response_header_timeout 20s
+        			}
+        		}
+        	}
+        	handle {
+        		respond 403
+        	}
+        }
+        CADDY
+        exec caddy run --config /config/Caddyfile --adapter caddyfile
+
+  # Cloudflare Tunnel: public hostname w panelu Cloudflare → http://waw-proxy:8080
+  cloudflared:
+    image: cloudflare/cloudflared:2025.10.0
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN:?ustaw TUNNEL_TOKEN}
+    depends_on:
+      waw-proxy:
+        condition: service_healthy
