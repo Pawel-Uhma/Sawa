@@ -4,6 +4,8 @@
 
 ## Teraz
 
+- 15:42 (Paweł, z agentem R3): Sawa działa jako PWA. Na iPhonie w Safari wybierz „Udostępnij” i „Do ekranu początkowego”: aplikacja otwiera się pełnoekranowo z ikoną syrenki. Dodane `app/manifest.ts`, `app/apple-icon.png` i `public/icons/`.
+
 - 14:54 (Paweł, z agentem R3): PR #16 Antka w `main`, ekrany demo (`demo-app.tsx`) używają już jego `SawaMap` z `@/features/map`; stara mapa `features/demo/components/sawa-map.tsx` usunięta. Wbudowana karta miejsca jest w demo wyłączona (`hasPlaceSheet={false}`), bo wjeżdżałaby pod panele; klik w zwykłe miejsce na ekranie głównym na razie nic nie robi.
 
 - 14:46 (Paweł, z agentem R3): zakładka Przejażdżki (T-75, makieta D). Podgląd trasy to prawdziwy `POST /v1/routes/plan` dla wybranego czasu, „graj” uruchamia tę samą trasę bez drugiego planowania. Śródmieście i Praga są tylko zapowiedziami, bo historia miejsc obejmuje 1 km od 42 Warsaw.
