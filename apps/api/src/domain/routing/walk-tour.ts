@@ -1,5 +1,6 @@
-import { haversineM, type LatLng } from "@sawa/shared";
+import { haversineM, type LatLng, toLngLat } from "@sawa/shared";
 import type { CollectedPlace } from "./beam-search";
+import { bboxAround, cumulativeDistancesM, isInBbox } from "./geometry";
 import { type ScorePrefs, scorePlace } from "./score";
 import type { PlacePoint } from "./types";
 
@@ -204,13 +205,11 @@ export function walkThrough(
   }
   near.sort((a, b) => b.score - a.score || a.place.id.localeCompare(b.place.id));
 
-  const lengthM = (points: LatLng[]) =>
-    points.reduce((sum, p, i) => (i === 0 ? 0 : sum + haversineM(points[i - 1] as LatLng, p)), 0);
   const maxM = (1 + WALK_DETOUR_SHARE) * haversineM(from, to);
   let detours: typeof near = [];
   for (const candidate of near.slice(0, MAX_DETOURS)) {
     const tried = [...detours, candidate].sort((a, b) => a.t - b.t);
-    if (lengthM([from, ...tried.map((d) => d.place.position), to]) <= maxM) detours = tried;
+    if (polylineM([from, ...tried.map((d) => d.place.position), to]) <= maxM) detours = tried;
   }
 
   const waypoints = [from, ...detours.map((d) => d.place.position), to];
@@ -278,10 +277,7 @@ export function loopObjective(score: number, shape: number, offBudget: number): 
 
 /** Length in metres of the walk through `points`. */
 export function polylineM(points: LatLng[]): number {
-  return points.reduce(
-    (sum, p, i) => (i === 0 ? 0 : sum + haversineM(points[i - 1] as LatLng, p)),
-    0,
-  );
+  return cumulativeDistancesM(points.map(toLngLat)).at(-1) ?? 0;
 }
 
 /**
@@ -410,13 +406,8 @@ export function planSquareLoops(
 
 /** Places in the box around `a`–`b` padded by `WALK_DETOUR_M` (all a walk between them can pass). */
 function placesByBox(places: PlacePoint[], a: LatLng, b: LatLng): PlacePoint[] {
-  const padLat = WALK_DETOUR_M / M_PER_DEG_LAT;
-  const padLng = padLat / Math.cos((a.lat * Math.PI) / 180);
-  const [minLat, maxLat] = [Math.min(a.lat, b.lat) - padLat, Math.max(a.lat, b.lat) + padLat];
-  const [minLng, maxLng] = [Math.min(a.lng, b.lng) - padLng, Math.max(a.lng, b.lng) + padLng];
-  return places.filter(
-    ({ position: p }) => p.lat >= minLat && p.lat <= maxLat && p.lng >= minLng && p.lng <= maxLng,
-  );
+  const box = bboxAround([toLngLat(a), toLngLat(b)], WALK_DETOUR_M);
+  return places.filter((p) => isInBbox(p.position, box));
 }
 
 /**
@@ -460,7 +451,8 @@ const RESIZE_SLACK = 0.03;
 /**
  * `loop` with its bare corners (those with no place) moved towards or away from the origin so
  * its straight length is about `lengthM`; the places at its corners stay. Undefined when it has
- * no bare corner to move, or moving them (to half or twice as far) does not get there.
+ * no bare corner to move, moving them (to half or twice as far) does not get there, or the
+ * loop it makes is not square enough (`MIN_SQUARENESS`).
  */
 export function resizeLoop(
   input: WalkInput,
@@ -492,6 +484,8 @@ export function resizeLoop(
   }
   const corners = scaled((lo + hi) / 2);
   if (Math.abs(polylineM(corners) / lengthM - 1) > RESIZE_SLACK) return undefined;
+  // Moving some corners only can pull the loop into a narrow V back along the way out.
+  if (squareness(corners.slice(0, -1)) < MIN_SQUARENESS) return undefined;
   return loopThrough(input, corners, opts);
 }
 

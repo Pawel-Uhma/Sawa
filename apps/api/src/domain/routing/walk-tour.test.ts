@@ -279,6 +279,20 @@ describe("a loop walks round a square of places", () => {
     expect(resizeLoop(loop([west]), planSquareLoop(loop([west])), 100)).toBeUndefined();
   });
 
+  it("does not shrink a loop into a narrow V back along the way out", () => {
+    // Places ~300 m east and north; the bare corner just outside the line between them, so
+    // pulling it in makes a dart back towards the start.
+    const east = place("east", 21.0044, 52.23, ["historical"]);
+    const north = place("north", 21.0, 52.2327, ["historical"]);
+    const bare = { lat: 52.23 + 0.48 * 0.0027, lng: 21.0 + 0.6 * 0.0044 };
+    const corners = [ORIGIN, east.position, bare, north.position, ORIGIN];
+    const dart = { waypoints: corners, corners, places: [], elapsedSec: 0, score: 0 };
+    const input = { ...loop([east, north]) };
+    expect(squareness(corners.slice(0, -1))).toBeGreaterThan(0.7);
+    expect(resizeLoop(input, dart, 0.97 * polylineM(corners))).toBeUndefined();
+    expect(resizeLoop(input, dart, 1.05 * polylineM(corners))).toBeDefined();
+  });
+
   it("offers different loops, the best first", () => {
     const loops = planSquareLoops(loop(), {}, 3);
     expect(loops[0]).toEqual(planSquareLoop(loop()));
