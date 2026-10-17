@@ -108,6 +108,10 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Na scenie nie pytamy o lokalizację: stała pozycja pod 42 Warsaw
   const start = useStartPoint(!isStage && stage !== "onboarding");
   const origin = isStage ? HACKATHON_VENUE : start.point;
+  // Kropka „tu jesteś”: GPS na żywo; 42 Warsaw tylko, gdy to wybrany start (scena, menu).
+  // Bez lokalizacji kropki nie ma, bo pod 42 Warsaw wyglądałaby jak zamrożony GPS.
+  const userDot =
+    isStage || start.mode === "venue" ? HACKATHON_VENUE : (start.position ?? undefined);
   const fastest = useFastestRoute(origin, profile, rideEnd, travel);
   // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
   const minDurationMin =
@@ -293,8 +297,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const heldRef = useRef(held);
   heldRef.current = held;
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
-  const position = start.status === "located" ? start.point : null;
-  useGpsClockSync(route, position, clock);
+  useGpsClockSync(route, start.position, clock);
   const pickStop = useCallback(
     (index: number) => {
       syncTo(index);
@@ -409,7 +412,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               }
               camera={camera}
               padding={padding}
-              user={origin}
+              user={userDot}
               destination={isRoute || isHome ? destination?.point : undefined}
               onMapClick={
                 isHome && isPickingEnd
