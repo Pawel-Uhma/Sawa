@@ -30,10 +30,12 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
 | Tryb trasy w MVP: (a) „jak dojadę”, (b) przejażdżka z czasem, (c) start–koniec | zespół | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
 | Czat z Sawą w MVP (T-34) czy tylko na prezentacji | zespół | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
+| Grupa docelowa (przyjezdni czy mieszkańcy) i format: podcast dwóch głosów czy narracja | zespół (przy PRD) | [spotkania/2026-10-17-wieczor-jury-koncept.md](spotkania/2026-10-17-wieczor-jury-koncept.md) |
 | Hook auto-push z rozwiązywaniem konfliktów; wspólna gałąź czy osobne | zespół (przy T-62) | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
 
 ## Ostatnie decyzje
 
+- 17.10, wieczór (rozmowa z jury): problem to przyjezdni w Warszawie; konkurencja to aplikacja Warsaw Polish Guide, nie powielamy jej funkcji. [Podsumowanie](spotkania/2026-10-17-wieczor-jury-koncept.md)
 - 17.10, wieczór: ekran główny to wariant A (arkusz na mapie, mobile); język: docs po polsku, kod po angielsku; commit podpisuje osoba, nie agent. [Podsumowanie](spotkania/2026-10-17-wieczor-podzial-i-ui.md)
 - 17.10: backend na Railway; zostajemy przy darmowej subdomenie Vercela. [05-plan-architektury.md](05-plan-architektury.md)
 - 17.10: mapa na Mapbox (styl własny; R3). Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
