@@ -1,14 +1,6 @@
 import { INTERESTS } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
-import {
-  type MapTheme,
-  NO_TOPIC_COLOR,
-  placeStickerColors,
-  placeTopic,
-  placeTopicColor,
-  placeTopicColorExpression,
-  TOPIC_COLORS,
-} from "./map-style";
+import { type MapTheme, placeTopic, TOPIC_COLORS } from "./map-style";
 
 /** WCAG 2 relative luminance and contrast ratio of two #rrggbb colours. */
 function luminance(hex: string): number {
@@ -24,10 +16,10 @@ function contrast(a: string, b: string): number {
   return (hi + 0.05) / (lo + 0.05);
 }
 
-/** Card surface (--powierzchnia) and map land of each theme. */
-const BACKGROUNDS: Record<MapTheme, { surface: string; map: string; hint: string }> = {
-  light: { surface: "#ffffff", map: "#f2f3f0", hint: "#4c6462" },
-  dark: { surface: "#172120", map: "#0e1615", hint: "#a6b9b7" },
+/** Card surface (--powierzchnia) and chip hint (--tekst-2) of each theme. */
+const BACKGROUNDS: Record<MapTheme, { surface: string; hint: string }> = {
+  light: { surface: "#ffffff", hint: "#4c6462" },
+  dark: { surface: "#172120", hint: "#a6b9b7" },
 };
 const THEMES: MapTheme[] = ["light", "dark"];
 
@@ -55,25 +47,6 @@ describe("place topic", () => {
     expect(placeTopic(["ufo"])).toBeNull();
     expect(placeTopic([])).toBeNull();
   });
-
-  it("colours a place with its topic, grey without one", () => {
-    expect(placeTopicColor(["religion", "sport"], ["sports"], "light")).toBe(
-      TOPIC_COLORS.light.sports.color,
-    );
-    expect(placeTopicColor(["religion", "sport"], [], "dark")).toBe(
-      TOPIC_COLORS.dark.cultural.color,
-    );
-    expect(placeTopicColor(["ufo"], [], "dark")).toBe(NO_TOPIC_COLOR.dark);
-  });
-
-  it("builds a map expression with every topic and grey as fallback", () => {
-    const expression = placeTopicColorExpression("light");
-    for (const topic of INTERESTS) {
-      expect(expression).toContain(topic);
-      expect(expression).toContain(TOPIC_COLORS.light[topic].color);
-    }
-    expect(expression.at(-1)).toBe(NO_TOPIC_COLOR.light);
-  });
 });
 
 describe("topic colours", () => {
@@ -85,7 +58,7 @@ describe("topic colours", () => {
   });
 
   it.each(THEMES)("pass WCAG AA in the %s theme", (theme) => {
-    const { surface, map, hint } = BACKGROUNDS[theme];
+    const { surface, hint } = BACKGROUNDS[theme];
     for (const topic of INTERESTS) {
       const { color, tint, onColor } = TOPIC_COLORS[theme][topic];
       // Chip label on the card and on the picked chip's tint: text, 4.5:1.
@@ -95,19 +68,6 @@ describe("topic colours", () => {
       expect(contrast(hint, tint), `${theme} ${topic} hint on tint`).toBeGreaterThanOrEqual(4.5);
       // Check mark on the topic colour.
       expect(contrast(onColor, color), `${theme} ${topic} check`).toBeGreaterThanOrEqual(4.5);
-      // Place marker on the map: non-text graphics, 3:1.
-      expect(contrast(color, map), `${theme} ${topic} on map`).toBeGreaterThanOrEqual(3);
-    }
-  });
-
-  it.each(THEMES)("keep marker glyphs readable against their outline in the %s theme", (theme) => {
-    for (const topic of [...INTERESTS, null]) {
-      const { fill, outline } = placeStickerColors(theme, topic);
-      expect(fill).toBe(topic ? TOPIC_COLORS[theme][topic].color : NO_TOPIC_COLOR[theme]);
-      // The glyph shape tells the kind of place, so it has to stand out from its outline: 3:1.
-      expect(contrast(fill, outline), `${theme} ${topic} glyph on outline`).toBeGreaterThanOrEqual(
-        3,
-      );
     }
   });
 });

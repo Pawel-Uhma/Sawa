@@ -7,10 +7,13 @@ import {
   MAP_ICONS,
   MAP_PALETTES,
   mapIconUrl,
-  NO_TOPIC,
+  PLACE_GROUP_COLORS,
   PLACE_ICON_KINDS,
+  PLACE_SUBKIND_GROUPS,
   parsePlaceStickerId,
+  placeKindColor,
   placeKindLabel,
+  placeStickerColors,
   placeStickerExpression,
   placeStickerId,
   roadPaintOverrides,
@@ -55,27 +58,33 @@ describe("map style", () => {
     }
   });
 
-  it("builds sticker ids from subkind and topic, with the pin for unknown kinds", () => {
+  it("builds sticker ids from the subkind, with the pin for unknown kinds", () => {
     const expression = placeStickerExpression("dark");
     expect(expression[0]).toBe("concat");
     expect(expression[1]).toBe("sawa-place-dark-");
     expect(JSON.stringify(expression)).toContain(`"${FALLBACK_PLACE_ICON}"]`);
-    expect(JSON.stringify(expression)).toContain(`"${NO_TOPIC}"]`);
   });
 
   it("reads back every sticker id it makes and ignores other images", () => {
-    const sticker = { theme: "light", marker: "church", topic: "cultural" } as const;
-    expect(placeStickerId(sticker)).toBe("sawa-place-light-church-cultural");
+    const sticker = { theme: "light", marker: "church" } as const;
+    expect(placeStickerId(sticker)).toBe("sawa-place-light-church");
     expect(parsePlaceStickerId(placeStickerId(sticker))).toEqual(sticker);
-    expect(parsePlaceStickerId("sawa-place-dark-site-none")).toEqual({
-      theme: "dark",
-      marker: "site",
-      topic: null,
-    });
     expect(parsePlaceStickerId("sawa-stop")).toBeNull();
-    expect(parsePlaceStickerId("sawa-place-dark-ufo-none")).toBeNull();
-    expect(parsePlaceStickerId("sawa-place-sepia-site-none")).toBeNull();
-    expect(parsePlaceStickerId("sawa-place-dark-site-music")).toBeNull();
+    expect(parsePlaceStickerId("sawa-place-dark-ufo")).toBeNull();
+    expect(parsePlaceStickerId("sawa-place-sepia-site")).toBeNull();
+    expect(parsePlaceStickerId("sawa-place-dark-site-none")).toBeNull();
+  });
+
+  it("colours markers by the group of their kind, grey for unknown kinds", () => {
+    expect(placeKindColor("building", "palace")).toBe(PLACE_GROUP_COLORS.living);
+    expect(placeKindColor("church")).toBe(PLACE_GROUP_COLORS.sacred);
+    expect(placeKindColor("ufo")).toBe("#71717a");
+    for (const subkind of PLACE_SUBKINDS) {
+      expect(placeStickerColors(subkind)).toEqual({
+        fill: PLACE_GROUP_COLORS[PLACE_SUBKIND_GROUPS[subkind]],
+        outline: "#ffffff",
+      });
+    }
   });
 
   it("paints water fills, river lines and their labels with the theme's blues", () => {

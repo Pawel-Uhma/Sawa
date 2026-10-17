@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 21:35 (Paweł, z agentem R3): **kolor znacznika miejsca znów według grupy rodzaju, nie tematu (cofa część T-151).** 8 kolorów `PLACE_GROUP_COLORS` jak w arkuszu „Naklejka”, biała obwódka w obu motywach; kropka w karcie miejsca też. Legenda pokazuje grupy. Klastry zostają, chipy tematów mają swoje kolory dalej.
 - 21:20 (Paweł, z agentem R3): **ulica podświetla się w całości po kliknięciu, na desktopie po najechaniu (T-153).** Ikona zostaje. Linia z kafelków mapy bazowej (`street-layer.tsx`, `lib/street-highlight.ts`), bez nowych danych. Kamera nie dopasowuje się do ulicy (T-101 Antka). Lokalne API ma tylko 5 miejsc, sprawdzone z danymi z produkcji.
 
 - 21:30 (Jasiek, z agentem R2): **symulacja 100 klientów na produkcji: 0 błędów** (mapa, karta miejsca, planer, pojazdy; 100 naraz: mapa p95 0,25 s, planer 2,1 s; 300 naraz bez błędów, ale p95 5–10 s). Opowieści nietestowane (kredyty). Limit opowieści na IP podniesiony z 300 do 3000 / 10 min (`routes/stories.ts`, plik R4, na prośbę Jaśka), bo Wi-Fi sali to jedno IP. **Dla R4:** `/v1/stories/warm` puszcza wyszukiwanie w sieci dla każdego miejsca trasy bez limitu; o 21:13 Gemini przez OpenRouter dał 168× 429, przy 100 osobach grozi opowieściami z samych faktów.

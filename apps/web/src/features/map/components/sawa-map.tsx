@@ -286,13 +286,7 @@ export function SawaMap({
         </StatusPill>
       </div>
       <TopicLegend hasZoomControls={hasZoomControls} />
-      {selected && (
-        <PlaceSheet
-          key={selected.id}
-          place={selected}
-          onClose={() => select(null)}
-        />
-      )}
+      {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );
 }
