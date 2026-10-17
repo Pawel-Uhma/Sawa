@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import { SPRING } from "../lib/device";
 import { type Choice, INTERESTS, interestIcon } from "../lib/onboarding";
+import { topicStyle } from "../lib/topic-style";
 
 // Wybory używane w onboardingu i w modalach edycji profilu (profile-modal.tsx).
 
@@ -69,14 +70,16 @@ export function InterestPicker({ picked, onToggle }: InterestPickerProps) {
         const isOn = picked.includes(item.key);
         return (
           <li key={item.key}>
+            {/* Kolor tematu = kolor obwódek jego miejsc na mapie, więc wybór działa też jako legenda */}
             <motion.button
               type="button"
               aria-pressed={isOn}
               onClick={() => onToggle(item.key)}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", bounce: 0, duration: 0.2 }}
-              className={`flex h-full w-full flex-col items-start gap-2 rounded-3xl border-2 bg-powierzchnia p-3 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia md:gap-3 md:p-4 ${
-                isOn ? "border-glebia bg-mieta-jasna" : "border-transparent"
+              style={topicStyle(item.key)}
+              className={`temat flex h-full w-full flex-col items-start gap-2 rounded-3xl border-2 p-3 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--temat) md:gap-3 md:p-4 ${
+                isOn ? "border-(--temat) bg-(--temat-tlo)" : "border-transparent bg-powierzchnia"
               }`}
             >
               <span className="flex w-full items-start justify-between">
@@ -93,10 +96,12 @@ export function InterestPicker({ picked, onToggle }: InterestPickerProps) {
                     className="size-14 md:size-16"
                   />
                 </motion.span>
-                <Check on={isOn} />
+                <Check on={isOn} isTopic />
               </span>
               <span className="flex flex-col gap-0.5">
-                <span className="text-base font-bold leading-tight md:text-lg">{item.label}</span>
+                <span className="text-base font-bold leading-tight text-(--temat) md:text-lg">
+                  {item.label}
+                </span>
                 <span className="text-[13px] leading-snug text-tekst-2 md:text-sm">
                   {item.hint}
                 </span>
@@ -109,11 +114,15 @@ export function InterestPicker({ picked, onToggle }: InterestPickerProps) {
   );
 }
 
-export function Check({ on }: { on: boolean }) {
+/** `isTopic`: inside a `temat` element, filled with the topic colour instead of Głębia. */
+export function Check({ on, isTopic = false }: { on: boolean; isTopic?: boolean }) {
+  const onClass = isTopic
+    ? "border-(--temat) bg-(--temat) text-(--temat-na)"
+    : "border-glebia bg-glebia text-white";
   return (
     <span
       className={`flex size-7 shrink-0 items-center justify-center rounded-full border-2 transition-colors duration-200 ${
-        on ? "border-glebia bg-glebia" : "border-tekst/15"
+        on ? onClass : "border-tekst/15"
       }`}
       aria-hidden="true"
     >
@@ -131,7 +140,7 @@ export function Check({ on }: { on: boolean }) {
           >
             <path
               d="M5 12.5l4.5 4.5L19 7.5"
-              stroke="white"
+              stroke="currentColor"
               strokeWidth="3"
               strokeLinecap="round"
               strokeLinejoin="round"

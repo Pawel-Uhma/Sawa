@@ -25,6 +25,7 @@ import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/devi
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import { FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
 import type { StartMode } from "../lib/start-point";
+import { topicStyle } from "../lib/topic-style";
 import {
   BubbleIcon,
   ChevronRightIcon,
@@ -371,7 +372,17 @@ function MenuContent({ actions, run }: MenuContentProps) {
 
   const familiarity = labelOf(FAMILIARITY, profile.familiarity);
   const style = labelOf(STORY_STYLES, profile.storyStyle);
-  const interests = profile.interests.map((key) => labelOf(INTERESTS, key) ?? key);
+  // Nazwy w kolorach tematów: ta sama legenda co obwódki miejsc na mapie
+  const interests = profile.interests.flatMap((key, i) => {
+    const item = INTERESTS.find((interest) => interest.key === key);
+    if (!item) return [];
+    return [
+      <span key={key} className="temat font-semibold text-(--temat)" style={topicStyle(item.key)}>
+        {i > 0 && <span className="font-normal text-tekst-2">, </span>}
+        {item.label}
+      </span>,
+    ];
+  });
 
   async function share() {
     haptic();
@@ -412,7 +423,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
         <Row
           Icon={SparkIcon}
           label="Zainteresowania"
-          value={interests.length > 0 ? interests.join(", ") : "Wszystko po trochu"}
+          value={interests.length > 0 ? interests : "Wszystko po trochu"}
           onClick={() => run(() => actions.onEditProfile("interests"))}
         />
         <Row
@@ -542,7 +553,7 @@ function placesLabel(n: number) {
 type RowProps = {
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
   label: string;
-  value?: string;
+  value?: ReactNode;
   onClick: () => void;
   chevron?: boolean;
   /** Wiersz rozwijany: strzałka obraca się w dół, gdy treść jest widoczna. */
