@@ -1,7 +1,8 @@
 import type { Route } from "@sawa/shared";
+import type { ExpressionSpecification } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
-import { LABEL_FONT, LEG_MODE_COLORS } from "../lib/map-style";
+import { ACTIVE_STOP_COLOR, LABEL_FONT, LEG_MODE_COLORS } from "../lib/map-style";
 import { routeLegsToGeoJson, routePlacesToGeoJson } from "../lib/route-to-geojson";
 
 export const ROUTE_PLACES_LAYER_ID = "route-places-circle";
@@ -9,9 +10,12 @@ export const ROUTE_PLACES_LAYER_ID = "route-places-circle";
 type RouteLayerProps = {
   route: Route;
   selectedId: string | null;
+  /** Place the story is about right now; drawn larger and in the accent colour. */
+  activeId?: string;
 };
 
-export function RouteLayer({ route, selectedId }: RouteLayerProps) {
+export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
+  const isActive: ExpressionSpecification = ["==", ["get", "id"], activeId ?? ""];
   const legs = useMemo(() => routeLegsToGeoJson(route), [route]);
   const places = useMemo(() => routePlacesToGeoJson(route), [route]);
 
@@ -45,8 +49,8 @@ export function RouteLayer({ route, selectedId }: RouteLayerProps) {
           id={ROUTE_PLACES_LAYER_ID}
           type="circle"
           paint={{
-            "circle-radius": 11,
-            "circle-color": "#18181b",
+            "circle-radius": ["case", isActive, 14, 11],
+            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, "#18181b"],
             "circle-stroke-color": "#ffffff",
             "circle-stroke-width": 2,
           }}

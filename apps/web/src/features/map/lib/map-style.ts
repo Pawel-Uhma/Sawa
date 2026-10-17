@@ -62,6 +62,12 @@ export const PLACE_KIND_LABELS: Record<string, string> = {
   event: "wydarzenie",
 };
 
+/** User position dot. */
+export const USER_COLOR = "#2563eb";
+
+/** Route place the story is about right now. */
+export const ACTIVE_STOP_COLOR = "#17706f";
+
 export const LEG_MODE_COLORS: Record<Leg["mode"], string> = {
   tram: "#d62828",
   bus: "#1d3557",

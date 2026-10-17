@@ -24,6 +24,22 @@ Podkład: **OpenFreeMap**, styl `https://tiles.openfreemap.org/styles/positron` 
 - Sprawdzone zrzutami w headless Chromium (375 px i desktop).
 - Do zrobienia: `fitBounds` nie uwzględnia otwartej karty (trasa bywa pod nią), ostrzeżenie „Expected number, found null” w konsoli (prawdopodobnie styl podkładu).
 
+## API `SawaMap` dla ekranów (17.10, uzgodnione z Pawłem)
+
+Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za oknem”), Paweł ekrany i `/demo`. Ekrany używają tylko `SawaMap` z `@/features/map`, ładowanej przez `next/dynamic` z `ssr: false`. Mapa wypełnia rodzica.
+
+| Prop | Typ | Co robi |
+|---|---|---|
+| `interests` | `Interest[]` | kategorie z onboardingu, pusta lista = wszystkie miejsca |
+| `route?` | `Route` | trasa z planera: linie, ponumerowane miejsca, podpis danych |
+| `camera?` | `{type:"center", center, zoom?}` · `{type:"fit", points, maxZoom?}` · `{type:"route"}` | widok; bez propsa mapa dopasowuje się do trasy. Rusza się tylko, gdy żądanie naprawdę się zmieni |
+| `padding?` | `{top,right,bottom,left}` (częściowo) | miejsce zajęte przez panele ekranu, np. `{ bottom: 380 }` pod arkusz |
+| `user?` | `LatLng` | niebieska kropka użytkownika |
+| `activeStopId?` | `string` (id miejsca) | wyróżnione miejsce trasy, o którym jest teraz opowieść |
+| `onStopClick?` | `(placeId) => void` | klik w miejsce trasy; zastępuje wtedy wbudowaną kartę dla miejsc trasy |
+| `hasPlaceSheet?` | `boolean`, domyślnie `true` | wbudowana karta miejsca (`?p=`); wyłącz, gdy ekran ma własną |
+| `hasZoomControls?` | `boolean`, domyślnie `true` | przyciski zoomu w prawym górnym rogu |
+
 ## 3. Przepływ danych
 
 Przeglądarka nie łączy się z Supabase (Z3). Wszystko idzie przez API.
