@@ -99,7 +99,7 @@ function DesktopPanel({ children }: { children: ReactNode }) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -32 }}
       transition={SPRING}
-      style={{ ["--trasa-widoczne" as string]: "calc(100dvh - 70px)" }}
+      style={{ ["--trasa-widoczne" as string]: "calc(100dvh - 100px)" }}
       className="karta absolute bottom-6 left-6 top-6 z-20 flex w-[360px] flex-col overflow-hidden rounded-[28px] lg:w-[400px]"
     >
       <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-6 pb-6 pt-6">
