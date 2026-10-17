@@ -125,25 +125,15 @@ Jeśli ikony mają być „zawsze prosto” (bez obracania), usuń `icon-rotate`
 
 **3. Płynny ruch: pętla `requestAnimationFrame`, nie stan Reacta.** Co klatkę licz pozycje funkcją `positionOnTrack(track, Date.now())` z `@sawa/shared` i wstawiaj GeoJSON prosto do źródła mapy (`map.getSource("live-vehicles").setData(fc)`). `setState` 60 razy na sekundę zabije wydajność na telefonie.
 
-Gdy przychodzi nowa odpowiedź, tor się zmienia i pojazd mógłby przeskoczyć o kilkadziesiąt metrów. Żeby nie szarpało, przez ok. 0,8 s przejdź od pozycji wyświetlanej do nowej (przerywalnie, w duchu `apple-design`):
+Gdy przychodzi nowa odpowiedź, tor się zmienia i pojazd mógłby przeskoczyć o kilkadziesiąt metrów, także do tyłu, gdy w rzeczywistości jedzie wolniej niż prognoza. Tak to robi `features/map/lib/vehicle-motion.ts` (od 17.10, 23:50):
 
-```ts
-type Shown = { lngLat: [number, number]; from?: [number, number]; since: number };
-const BLEND_MS = 800;
-const easeOut = (t: number) => 1 - (1 - t) ** 3;
-
-// przy nowej odpowiedzi: dla każdego vehicle.id zapamiętaj from = aktualnie wyświetlana pozycja, since = now
-// w każdej klatce:
-const target = positionOnTrack(vehicle.track, now);
-const k = shown.from ? Math.min(1, (now - shown.since) / BLEND_MS) : 1;
-const lngLat = shown.from
-  ? lerp(shown.from, target.lngLat, easeOut(k)) // lerp: liniowo po lng i lat
-  : target.lngLat;
-```
+- **Niedoszacowanie prędkości.** Tor jest odtwarzany w tempie 85% prognozy (`TRACK_SPEED_SHARE`), więc pojazd na mapie raczej zostaje w tyle, niż wyprzedza prawdziwy. Doganianie do przodu wygląda dobrze, cofanie nie.
+- **Bez cofania.** Pozycja to odległość wzdłuż toru. Po nowej odpowiedzi pojazd zostaje tam, gdzie jest narysowany (rzut na nowy tor), i co klatkę jedzie z prędkością prognozy plus wykładniczą korektą luki (stała 3 s, najwyżej 12 m/s ponad własną prędkość). Krok nigdy nie jest ujemny: pojazd narysowany przed prognozą zwalnia albo czeka, aż prognoza go dogoni.
+- Gdy narysowany pojazd jest ponad 80 m od nowego toru (inny wariant, błąd dopasowania), staje od razu na nowym torze.
 
 Nowy pojazd (nowe `id`) pojawia się z fade-in (`icon-opacity` przez feature-state albo osobna właściwość), znikający z fade-out. Przy `prefers-reduced-motion`: bez przejścia, pozycja aktualizowana raz na sekundę zamiast co klatkę.
 
-**4. Puste i błędy:** `live: false` albo puste `vehicles`: warstwa pusta, bez komunikatu (trasa działa i bez pojazdów). `stale: true`: można przygasić ikony. Pokaż `attribution` w podpisie mapy.
+**4. Puste i błędy:** `live: false` albo puste `vehicles`: warstwa pusta, bez komunikatu (trasa działa i bez pojazdów). `stale: true`: ikony przygaszone. Poprzedni i następny pojazd (`ahead`, `behind`) mają ten sam rozmiar co nasz i tę samą ikonę rozjaśnioną o 40% (generowaną na canvasie), nasz jest rysowany na wierzchu. Przed poprzednim i następnym pojazdem rysujemy jego tor do końca prognozy (ok. 2 min): ta sama grubość i obwódka co linia trasy, kolor linii odcinka rozjaśniony o 40% (`paleColor`). Pokaż `attribution` w podpisie mapy.
 
 ## Ograniczenia
 

@@ -387,6 +387,20 @@ export function lineColor(lineIndex: number): string {
   return LINE_COLORS[lineIndex % LINE_COLORS.length];
 }
 
+/** How much white goes into the colour of the previous and next vehicle of the line. */
+export const PALE_SHARE = 0.4;
+
+/** `#rrggbb` mixed with white, `share` of it (0 = unchanged, 1 = white). */
+export function paleColor(hex: string, share = PALE_SHARE): string {
+  const channels = [1, 3, 5].map((i) => {
+    const v = Number.parseInt(hex.slice(i, i + 2), 16);
+    return Math.round(v + (255 - v) * share)
+      .toString(16)
+      .padStart(2, "0");
+  });
+  return `#${channels.join("")}`;
+}
+
 /**
  * Map icons in `public/map-icons/`, 96 px PNGs registered with pixelRatio 2, so icon-size 1 is 48 css px.
  * Place markers are not here: they are drawn in the browser in their topic colour (place-stickers.ts).
