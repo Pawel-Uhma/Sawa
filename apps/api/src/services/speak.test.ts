@@ -41,3 +41,52 @@ describe("createDisabledSpeechService", () => {
     await expect(createDisabledSpeechService().speak("Cześć")).rejects.toThrow("ELEVENLABS_KEY");
   });
 });
+
+describe("speakStream", () => {
+  async function* pieces(...texts: string[]) {
+    yield* texts;
+  }
+  const decode = (parts: Uint8Array[]) => parts.map((p) => new TextDecoder().decode(p));
+
+  function streamingSynthesizer() {
+    const stream = vi.fn(async function* (text: string, _opts: { previousText: string }) {
+      yield new TextEncoder().encode(`<${text}>`);
+    });
+    return { ...fakeSynthesizer(), stream };
+  }
+
+  it("reads sentence by sentence, telling TTS what was already said", async () => {
+    const synth = streamingSynthesizer();
+    const out: Uint8Array[] = [];
+    const text = pieces("Bowie wysiadł tu z pociągu na krótki spacer. ", "Kupił płytę.");
+    for await (const b of createSpeechService(synth).speakStream(text)) out.push(b);
+
+    expect(decode(out)).toEqual([
+      "<Bowie wysiadł tu z pociągu na krótki spacer.>",
+      "<Kupił płytę.>",
+    ]);
+    expect(synth.stream.mock.calls[1]?.[1]).toEqual({
+      previousText: "Bowie wysiadł tu z pociągu na krótki spacer.",
+    });
+  });
+
+  it("keeps the whole story as one clip, so it plays again from the cache", async () => {
+    const synth = streamingSynthesizer();
+    const service = createSpeechService(synth);
+    const whole = "Bowie wysiadł tu z pociągu na krótki spacer. Kupił płytę.";
+    for await (const _ of service.speakStream(pieces(whole))) {
+    }
+    const again: Uint8Array[] = [];
+    for await (const b of service.speakStream(pieces(whole), { whole })) again.push(b);
+    expect(decode(again)).toEqual(["<Bowie wysiadł tu z pociągu na krótki spacer.><Kupił płytę.>"]);
+    expect(synth.stream).toHaveBeenCalledTimes(2);
+  });
+
+  it("reads the whole text at once when the synthesizer cannot stream", async () => {
+    const synth = fakeSynthesizer();
+    const out: Uint8Array[] = [];
+    for await (const b of createSpeechService(synth).speakStream(pieces("Hej. ", "Tu.")))
+      out.push(b);
+    expect(decode(out)).toEqual(["Hej. Tu."]);
+  });
+});

@@ -65,7 +65,19 @@ export async function planRoute(
     },
   });
   if (!res.ok) throw new Error(`POST /v1/routes/plan: ${res.status}`);
-  return res.json();
+  const route = await res.json();
+  warmStories(route);
+  return route;
+}
+
+/**
+ * The API looks up stories about the route's places on the web while the rider still looks at
+ * the plan, so the first story does not wait for the search. Best effort: a failure costs nothing.
+ */
+function warmStories(route: Route) {
+  const placeIds = [...new Set(route.places.map((p) => p.placeId))].slice(0, 40);
+  if (placeIds.length === 0) return;
+  api.v1.stories.warm.$post({ json: { placeIds } }).catch(() => {});
 }
 
 /** The ride's shape for MapLibre: all legs in order. */

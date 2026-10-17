@@ -79,6 +79,10 @@ Warstwy i zależności: [11-zasady-pracy-i-kodu.md §4](11-zasady-pracy-i-kodu.m
 | `GET /v1/routes/demo` | — | stała `Route` | M6 | R1 |
 | `POST /v1/stories` | `{ placeId, interests[], targetSec }` | `Story { text, sources[], cached }` | M5 | R4 |
 | `POST /v1/stories/audio` | jak wyżej | `audio/mpeg`: ta sama opowieść głosem Sawy (ElevenLabs) | M5 | R4 |
+| `POST /v1/stories/live` | jak wyżej | `{ id }` od razu; opowieść powstaje strumieniem (używa odtwarzacz) | M5 | R4 |
+| `GET /v1/stories/live/:id` | — | `LiveStory { text, done, story }`: tekst rośnie, `story` po końcu | M5 | R4 |
+| `GET /v1/stories/live/:id/audio` | — | `audio/mpeg` strumieniem: głos rusza od pierwszego zdania; gotowy odpowiada też na `Range` | M5 | R4 |
+| `POST /v1/stories/warm` | `{ placeIds[] }` | 202; API szuka historii o miejscach trasy w sieci, zanim ruszy przejazd | M5 | R4 |
 
 ```ts
 type LatLng = { lat: number; lng: number };
@@ -134,6 +138,7 @@ Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiada
 
 ## 8. Opowieść i tryb demo (R4 + R3, M5–M6)
 
+- Opowieść na żywo: research miejsca (OpenRouter `web`, raz na miejsce) → LLM strumieniem (`stream: true`), z JSON-a w locie wyciągany `text` → całe zdania od razu do ElevenLabs `/stream` (po jednym, z `previous_text`) → mp3 do odtwarzacza w trakcie. Pierwszy głos po ok. sekundzie od końca researchu zamiast po całym tekście i całym mp3.
 - `POST /v1/stories`: `story_cache` → prompt z faktów miejsca (tylko `facts`, `trivia`, `people`, `sources` z bazy) → LLM → walidacja wyjścia zod (`text`, `sourceIds[]` z listy wejściowej) → zapis do cache.
 - Długość z `targetSec`: ok. 2,5 słowa na sekundę, trzy przedziały. Opowieść jako tekst.
 - Prompt Sawy w `apps/api/src/prompts/`.

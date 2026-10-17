@@ -40,4 +40,68 @@ describe("createOpenRouterProvider", () => {
     });
     await expect(llm.complete(request)).rejects.toMatchObject({ code: "UPSTREAM_TIMEOUT" });
   });
+
+  it("searches the web with the plugin and returns the cited pages once each", async () => {
+    const cite = (url: string, title = "") => ({
+      type: "url_citation",
+      url_citation: { url, title },
+    });
+    const fetchMock = vi.fn(async () =>
+      Response.json({
+        choices: [
+          {
+            message: {
+              content: '{"findings":[]}',
+              annotations: [
+                cite("https://a.pl/x", "A"),
+                cite("https://a.pl/x", "A"),
+                cite("https://b.pl/"),
+              ],
+            },
+          },
+        ],
+      }),
+    );
+    vi.stubGlobal("fetch", fetchMock);
+
+    const answer = await llm.completeWithWeb?.({ ...request, maxResults: 3 });
+    expect(answer).toEqual({
+      content: '{"findings":[]}',
+      citations: [
+        { url: "https://a.pl/x", title: "A" },
+        { url: "https://b.pl/", title: "https://b.pl/" },
+      ],
+    });
+    const [, init] = fetchMock.mock.calls[0] as unknown as [string, RequestInit];
+    expect(JSON.parse(init.body as string)).toMatchObject({
+      plugins: [{ id: "web", max_results: 3 }],
+    });
+  });
+
+  it("streams the answer's pieces from server-sent events", async () => {
+    const sse = [
+      ": OPENROUTER PROCESSING\n\n",
+      'data: {"choices":[{"delta":{"content":"{\\"text\\":"}}]}\n\ndata: {"choi',
+      'ces":[{"delta":{"content":"\\"Hej\\"}"}}]}\n\n',
+      "data: [DONE]\n\n",
+    ];
+    const fetchMock = vi.fn(
+      async () =>
+        new Response(
+          new ReadableStream({
+            start(c) {
+              for (const part of sse) c.enqueue(new TextEncoder().encode(part));
+              c.close();
+            },
+          }),
+        ),
+    );
+    vi.stubGlobal("fetch", fetchMock);
+
+    const pieces: string[] = [];
+    for await (const piece of llm.stream?.(request) ?? []) pieces.push(piece);
+    expect(pieces).toEqual(['{"text":', '"Hej"}']);
+    const [, init] = fetchMock.mock.calls[0] as unknown as [string, RequestInit];
+    expect(JSON.parse(init.body as string)).toMatchObject({ stream: true });
+  });
 });

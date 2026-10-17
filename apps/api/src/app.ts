@@ -9,8 +9,10 @@ import { createRouteRoutes } from "./routes/routes";
 import { createSpeechRoutes } from "./routes/speech";
 import { createStoryRoutes } from "./routes/stories";
 import { createVehicleRoutes } from "./routes/vehicles";
+import { createLiveStoryService } from "./services/live-story";
 import type { RoutePlanner } from "./services/plan-route";
 import type { LlmProvider, PlacesRepository } from "./services/ports";
+import type { PlaceResearch } from "./services/research-place";
 import { createDisabledSpeechService, type SpeechService } from "./services/speak";
 import { createStoryService } from "./services/tell-story";
 import { createDisabledVehicleTracker, type VehicleTracker } from "./services/track-vehicles";
@@ -21,6 +23,8 @@ export type AppServices = {
   places?: PlacesRepository;
   /** Missing → stories are the place's facts read plainly. */
   llm?: LlmProvider;
+  /** Missing → stories use the seed's facts only, without stories from the web. */
+  research?: PlaceResearch;
   /** Missing → POST /v1/stories/audio (and debug /v1/speech) answer UPSTREAM_ERROR. */
   speech?: SpeechService;
   onLlmError?: (err: unknown, placeId: string) => void;
@@ -43,9 +47,11 @@ export function createApp(config: AppConfig) {
   const stories = createStoryService({
     places: services.places ?? createFakePlacesRepository(),
     llm: services.llm,
+    research: services.research,
     onLlmError: services.onLlmError,
   });
   const speech = services.speech ?? createDisabledSpeechService();
+  const live = createLiveStoryService({ stories, speech, onError: services.onLlmError });
   const previewPattern = config.corsPreviewPattern ? new RegExp(config.corsPreviewPattern) : null;
 
   const app = new Hono()
@@ -67,7 +73,7 @@ export function createApp(config: AppConfig) {
     .route("/", healthRoutes)
     .route("/", createRouteRoutes(services.routePlanner))
     .route("/", placeRoutes(services.places ?? createFakePlacesRepository()))
-    .route("/", createStoryRoutes(stories, speech))
+    .route("/", createStoryRoutes(stories, speech, live))
     .route("/", createVehicleRoutes(services.vehicles ?? createDisabledVehicleTracker()));
 
   // Speaking any text spends ElevenLabs credits for anyone (T-92); the player uses /v1/stories/audio.
