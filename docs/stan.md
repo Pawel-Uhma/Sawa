@@ -11,9 +11,12 @@
 - Najbliższe: wpisanie git user.name i ról do `zespol.md` (T-08), inicjalizacja repo aplikacji (T-04), zdjęcie decyzji o API Bielika i Supabase (T-01, T-02).
 - Plan bazy miejsc w [13-plan-bazy.md](13-plan-bazy.md) (Jasiek, 13:00): baza Supabase pusta, PostGIS do włączenia; 13:10: schemat i RPC w Supabase (T-20), 13:08: dane załadowane (326 miejsc, 351 zdjęć, T-21). R3 i R4 mogą czytać przez RPC `places_in_bbox`, `place_detail`, R1 przez `places_near_line` (Jasiek).
 
+- 13:20 (Paweł): deploy działa. Web: https://sawa-beta.vercel.app (Vercel, konto Pawła; `sawa.vercel.app` zajęte przez kogoś spoza zespołu). API: https://api-production-d213.up.railway.app/health (Railway, projekt `sawa`, serwis `api`, auto-deploy z `main`). Railway nie czyta już `apps/api/railway.json`, ustawienia są w serwisie.
+
 ## Zablokowane
 
-- Nic zgłoszonego. Dopisz tu blokadę od razu, z nazwiskiem osoby, która może ją odblokować.
+- Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.
+- Nic więcej nie zgłoszono. Dopisz tu blokadę od razu, z nazwiskiem osoby, która może ją odblokować.
 
 ## Otwarte decyzje
 

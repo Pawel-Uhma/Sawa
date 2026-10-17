@@ -19,7 +19,7 @@
 - [ ] **T-09** Konta: GitHub (repo), Vercel, dostęp do LLM — `Wszyscy` — 12:00
 - [ ] **T-02** Projekt Supabase na koncie zespołu (nie prywatnym); kto zakłada, do potwierdzenia — `R2` — 13:00
 - [x] **T-04** Monorepo: pnpm, `apps/web` (Next 16), `apps/api` (Hono, `/health`), `packages/shared`, Biome, Vitest, CI w GitHub Actions — `R3` — (Szczepan, 12:05; projekty Vercel i Railway jeszcze nie założone)
-- [ ] **T-62** Projekt Railway dla `apps/api`, deploy `/health`, zmienne env, CORS dla Vercela — `R1` — 13:30
+- [x] **T-62** Projekt Railway dla `apps/api`, deploy `/health`, zmienne env, CORS dla Vercela — `R1` — 13:30 (zrobił Paweł z agentem na swoje polecenie, 13:20: https://api-production-d213.up.railway.app)
 - [ ] **T-63** Kontrakt v0 w `packages/shared` (§5 planu MVP): `Place`, `Route`, `Story` i reszta, zatwierdzony na synchronizacji — `Wszyscy` — 13:30
 - [ ] **T-64** Każdy czyta [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) i zgłasza w `stan.md` niezgodę z założeniami [Z] z [12-plan-mvp.md](12-plan-mvp.md) §11 — `Wszyscy` — 12:30
 - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
@@ -54,7 +54,7 @@
 - [ ] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — 22:00
 - [ ] **T-35** Wersja mobilna: 16 px marginesu, bez poziomego scrolla — `R3` — 22:00
 - [ ] **T-36** Podstrona demo: stała lokalizacja, symulowana jazda ok. 1,5 min — `R3` — niedziela 08:00
-- [ ] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00
+- [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-beta.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos
 

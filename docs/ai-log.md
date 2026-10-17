@@ -3276,3 +3276,10 @@
 > zrób osobny branch, opisz go, zrób commit, push i otwórz PR
 
 **AI:** Utworzyłem gałąź `r2/places-migration` z trzema commitami (migracje, seed z `.env.example`, dokumenty), wypchnąłem ją i otworzyłem PR #1 (https://github.com/Pawel-Uhma/Sawa/pull/1) z opisem: co, dlaczego, jak sprawdzić, otwarte decyzje.
+
+### 2026-10-17 13:08 · Pawel
+
+> Potwierdzam
+
+
+**AI:** Założyłem projekt Railway `sawa` (serwis `api` z repo, start przez pnpm, healthcheck /health, CORS dla Vercela) i projekt Vercel `sawa` (root `apps/web`, region fra1, NEXT_PUBLIC_API_URL na Railway). Web działa pod https://sawa-beta.vercel.app, bo sawa.vercel.app jest zajęte; API pod https://api-production-d213.up.railway.app. Zaktualizowałem todo.md (T-60, T-62) i stan.md.
