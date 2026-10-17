@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 17.10, noc (Paweł, z agentem): **plan pitchu** w [pitch/plan-pitchu.md](pitch/plan-pitchu.md): scenariusz 5 min sekunda po sekundzie, film 45 s z tramwaju (zdjęcia nd 7:30), demo `/demo` od Kercelaka, slajd 2076, pytania jury, próby. **Dla R2 (Jasiek, T-50/T-114):** do przejrzenia; otwarte: kto mówi, ankieta.
+
 - 18:08 (Paweł, z agentem R3): **nowe znaczniki miejsc (T-119).** Po trzech rundach propozycji ([dziennik UI](ui/README.md), 1800/1759/1801) Paweł wybrał I „Naklejka”: pełny glif w kolorze grupy z białą obwódką i cieniem, bez tła, po jednym kształcie na kolor (kamienica, obelisk, kropla farby, krzyż, gwiazda). PNG generuje `docs/ui/ikony-mapy/znaczniki.mjs`, większe `ICON_SIZE` w `places-layer.tsx`. Ikony przystanków i pojazdów bez zmian. Nie ma jeszcze w commicie.
 - 18:02 (Paweł, z agentem R3): **cel trasy (T-110, #43) i T-117.** Po wyborze „Do celu” planer dostaje `destination` bez `durationMin` i mapa pokazuje najszybszą trasę; jej czas to dolna granica suwaka, a dłuższy czas daje trasę krajoznawczą. Kod: `features/demo/lib/fastest-route.ts`, `ride-duration.ts`, `home-panel.tsx`. Typecheck, lint i testy zielone. Commit `eed9876` powstał bez mojego polecenia (z tego samego checkoutu, razem z pngami propozycji znaczników); do przejrzenia przez Pawła. Na telefonie jeszcze niesprawdzone.
 - Antek (R3 z agentem): T-118 (issue #42). Przy oddaleniu miejsca grupują się w kółka z liczbą zamiast znikać, a klik w kółko przybliża mapę. Poniżej zoomu 13 jedno zapytanie o całe miasto (`CITY_BBOX`) zamiast kafelków, podpowiedź „Przybliż mapę” usunięta. Kolory klastra w `MapPalette` (jasny i ciemny).
