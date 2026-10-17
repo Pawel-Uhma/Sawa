@@ -20,7 +20,7 @@ const logo = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "Sawa",
+  title: { default: "Sawa · Warszawa za oknem", template: "%s · Sawa" },
   description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
   // Po dodaniu do ekranu głównego działa jak aplikacja, bez paska przeglądarki
   appleWebApp: { capable: true, title: "Sawa", statusBarStyle: "default" },
@@ -41,7 +41,11 @@ export const viewport: Viewport = {
   userScalable: false,
   // Treść pod wcięciem i paskiem home; marginesy bierzemy z env(safe-area-inset-*)
   viewportFit: "cover",
-  themeColor: "#EEF3F0",
+  // Kolor paska przeglądarki jak tło (--mapa); przy ręcznym wyborze motywu idzie za systemem, nie za wyborem
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#EEF3F0" },
+    { media: "(prefers-color-scheme: dark)", color: "#0E1615" },
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -52,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${sans.variable} ${logo.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full">
+      <body className="motyw min-h-full">
         {/* Motyw przed pierwszym malowaniem, bez mignięcia jasnej mapy (features/theme) */}
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}

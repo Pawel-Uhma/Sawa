@@ -1,7 +1,7 @@
 "use client";
 
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { Interest, LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
+import type { LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
 import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -12,6 +12,7 @@ import {
   NavigationControl,
 } from "react-map-gl/maplibre";
 import { useTheme } from "@/features/theme";
+import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
@@ -25,7 +26,13 @@ import {
   resolveCamera,
 } from "../lib/camera";
 import { loadMapIcons } from "../lib/map-icons";
-import { BASEMAP_STYLE_URLS, MAP_PALETTES, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
+import {
+  BASEMAP_STYLE_URLS,
+  MAP_PALETTES,
+  MIN_PLACE_RICHNESS,
+  START_VIEW,
+  waterPaintOverrides,
+} from "../lib/map-style";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
@@ -46,8 +53,6 @@ const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUST
 const CAMERA_DURATION_MS = 800;
 
 export type SawaMapProps = {
-  /** Categories from onboarding; empty = all places. */
-  interests: readonly Interest[];
   route?: Route;
   /** Requested view; without it the map fits the route (or stays where the user left it). */
   camera?: MapCamera;
@@ -69,7 +74,6 @@ export type SawaMapProps = {
 };
 
 export function SawaMap({
-  interests,
   route,
   camera,
   padding,
@@ -96,11 +100,13 @@ export function SawaMap({
   );
   const theme = useTheme();
   const palette = MAP_PALETTES[theme];
+  const waterOverrides = useMemo(() => waterPaintOverrides(palette), [palette]);
+  useBasemapOverrides(mapRef, isLoaded, waterOverrides);
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
-    () => selectVisiblePlaces(places.data, { interests, minRichness: MIN_PLACE_RICHNESS }),
-    [places.data, interests],
+    () => selectVisiblePlaces(places.data, { minRichness: MIN_PLACE_RICHNESS }),
+    [places.data],
   );
 
   const selected = useMemo(

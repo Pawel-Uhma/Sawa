@@ -220,7 +220,7 @@ export function HomePanel({
         <ArrowRightIcon className="size-5" />
       </PrimaryButton>
       {planError && (
-        <p role="alert" className="mt-2 text-center text-sm text-zinc-600">
+        <p role="alert" className="mt-2 text-center text-sm text-tekst-2">
           {planError}
         </p>
       )}
@@ -263,7 +263,7 @@ function TravelPicker({ travel, onChange }: TravelPickerProps) {
               <motion.span
                 layoutId="segment-sposob"
                 transition={SPRING}
-                className="absolute inset-0 rounded-[inherit] bg-white shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
+                className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
               />
             )}
             <span className="relative">{option.label}</span>
@@ -315,7 +315,7 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
                 <motion.span
                   layoutId="segment-konca"
                   transition={SPRING}
-                  className="absolute inset-0 rounded-[inherit] bg-white shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
+                  className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
                 />
               )}
               <span className="relative">{option.label}</span>
@@ -389,11 +389,11 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
           aria-label="DokÄ…d jedziesz"
           enterKeyHint="search"
           autoComplete="off"
-          className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-white focus:ring-2 focus:ring-glebia"
+          className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
         />
       </div>
       {hasQuery && (
-        <ul aria-label="Wyniki" className="mt-1.5 overflow-hidden rounded-[14px] bg-white">
+        <ul aria-label="Wyniki" className="mt-1.5 overflow-hidden rounded-[14px] bg-powierzchnia">
           {results.map((result) => (
             <li key={result.id}>
               <button

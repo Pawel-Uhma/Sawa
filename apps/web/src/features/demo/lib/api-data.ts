@@ -89,5 +89,7 @@ export function routeStops(route: Route): MockStop[] {
     coord: [place.position.lng, place.position.lat],
     along: place.etaSec / totalSec,
     etaMin: Math.round(place.etaSec / 60),
+    etaSec: place.etaSec,
+    windowSec: place.windowSec,
   }));
 }
