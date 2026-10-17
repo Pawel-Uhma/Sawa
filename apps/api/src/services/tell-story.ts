@@ -85,7 +85,7 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
 
   /** Everything a story needs before the model writes it. */
   async function prepare(request: StoryRequestInput) {
-    const { placeId, targetSec, storyStyle, familiarity, audience } = request;
+    const { placeId, targetSec, storyStyle, familiarity, audience, side } = request;
     const { interests = [], heardFacts = [], knownContexts = [] } = request;
     const place = await places.getById(placeId);
     if (!place) throw new AppError("NOT_FOUND", `Place "${placeId}" not found`);
@@ -126,6 +126,7 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
       storyStyle ?? "",
       familiarity ?? "",
       audience === "kids" ? "kids" : "",
+      side ?? "",
       pick.facts.map((f) => f.id).join("."),
       context?.id ?? "",
       String(pick.recap),
@@ -140,6 +141,7 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
         style: storyStyle,
         familiarity,
         audience,
+        side,
         context,
         knownContexts: knownContextsOf(place, knownContexts),
       }),

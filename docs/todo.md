@@ -111,6 +111,7 @@
 - [x] **T-152** Wyszukiwanie celu: stara odpowiedź bez ulicy przez cache ([#107](https://github.com/Pawel-Uhma/Sawa/issues/107)). Cache HTTP `private, max-age=60`, w web `staleTime` 5 min; adapter zwraca `partial`, gdy Autocomplete/Place Details padnie, i loguje `logger.warn` ze statusem Google; serwis nie cache'uje `partial`, TTL 1 h — `R3` — (Paweł z agentem, 20:55–21:05)
 - [x] **T-154** Mapa: ulica zostaje ikoną, ale po kliknięciu (na desktopie też po najechaniu) podświetla się cała jej linia z kafelków OpenFreeMap (`transportation_name`, filtr po nazwie); propozycje w `ui/propozycje/html/ulice-jako-linie.html` — `R3` (Paweł z agentem, 21:20)
 - [x] **T-155** Mapa: jeden ruch kamery przy pierwszym kliknięciu miejsca ([#117](https://github.com/Pawel-Uhma/Sawa/issues/117)). Zanim dojdzie pozycja miejsca, kamera stoi (`{ type: "stay" }`), zamiast wracać na start; logika w `demo/lib/screen-camera.ts` z testami — `R3` (Paweł) — (Paweł z agentem, 22:13, gałąź `r3/camera-one-move`)
+- [x] **T-156** Opowieść jak przewodnik: najpierw gdzie patrzeć i co widać („Po lewej stronie widzimy…”), nazwa miejsca na głos (słuchacz nie patrzy w telefon), jedna historia z otwartym pytaniem; bez firm, pracowni, wykonawców i inwestorów. Pole `side` w `StoryRequest`, web liczy stronę z geometrii odcinka (`demo/lib/side.ts`) — `R3` + `R4` (prompt R4, na prośbę Pawła) — (Paweł z agentem, 22:40, gałąź `r3/prompt-przewodnik`)
 
 ## R4 · AI i głos
 
