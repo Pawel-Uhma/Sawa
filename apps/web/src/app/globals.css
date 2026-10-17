@@ -87,6 +87,28 @@ body {
   -webkit-touch-callout: none;
 }
 
+/* Cienki pasek przewijania bez strzałek i tła, w kolorze tekstu: na Windowsie domyślny szary pasek ze strzałkami gryzł się z kartami */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--tekst) 22%, transparent) transparent;
+}
+
+/* Safari przed 26 nie zna scrollbar-color */
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--tekst) 22%, transparent);
+    border-radius: 999px;
+  }
+}
+
 input,
 textarea {
   -webkit-user-select: auto;
