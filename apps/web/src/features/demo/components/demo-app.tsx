@@ -17,6 +17,7 @@ import {
 } from "../lib/ride-end";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
+import type { PlaceSelection } from "./place-card-host";
 import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
 import { type Tab, TabBar } from "./tab-bar";
@@ -25,6 +26,11 @@ import { TopBar } from "./top-bar";
 
 // Mapa Antka (features/map). MapLibre potrzebuje window i WebGL, więc tylko w przeglądarce.
 const SawaMap = dynamic(() => import("@/features/map").then((mod) => mod.SawaMap), {
+  ssr: false,
+});
+
+// Karta miejsca czyta wybór z URL-a (`?p=`) i dane mapy, więc też tylko w przeglądarce.
+const PlaceCardHost = dynamic(() => import("./place-card-host").then((mod) => mod.PlaceCardHost), {
   ssr: false,
 });
 
@@ -56,6 +62,8 @@ export function DemoApp() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [sheetCoverPx, setSheetCoverPx] = useState(360);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
+  const [selectedPlace, setSelectedPlace] = useState<PlaceSelection | null>(null);
+  const [placeCoverPx, setPlaceCoverPx] = useState(360);
 
   const showRoute = useCallback((next: Route) => {
     setPlanned(next);
@@ -112,6 +120,7 @@ export function DemoApp() {
   const activeStop = route[activeIndex];
   const isHome = stage === "map" && tab === "map";
   const destination = rideEnd.type === "destination" ? rideEnd : null;
+  const isPlaceOpen = isHome && selectedPlace !== null;
 
   const padding: MapPadding = useMemo(() => {
     if (isDesktop) {
@@ -122,22 +131,35 @@ export function DemoApp() {
         left: (isWide ? PANEL_PX.laptop : PANEL_PX.tablet) + DESKTOP_GAP_PX * 2,
       };
     }
-    return isRoute
-      ? { top: 88, right: 0, bottom: sheetCoverPx, left: 0 }
-      : { top: 120, right: 0, bottom: panelCollapsed ? 200 : destination ? 560 : 480, left: 0 };
-  }, [isDesktop, isWide, isRoute, sheetCoverPx, panelCollapsed, destination]);
+    if (isRoute) return { top: 88, right: 0, bottom: sheetCoverPx, left: 0 };
+    if (isPlaceOpen) return { top: 120, right: 0, bottom: placeCoverPx, left: 0 };
+    return { top: 120, right: 0, bottom: panelCollapsed ? 200 : destination ? 560 : 480, left: 0 };
+  }, [
+    isDesktop,
+    isWide,
+    isRoute,
+    isPlaceOpen,
+    sheetCoverPx,
+    placeCoverPx,
+    panelCollapsed,
+    destination,
+  ]);
 
   const camera: MapCamera = useMemo(() => {
     if (isRoute && activeStop) {
       const [lng, lat] = activeStop.coord;
       return { type: "center", center: { lat, lng }, zoom: 15.4 };
     }
+    // Wybrane miejsce jedzie nad kartę; zoom zostaje taki, jaki ustawił użytkownik
+    if (isPlaceOpen && selectedPlace.position) {
+      return { type: "center", center: selectedPlace.position };
+    }
     // Wybrany cel: mapa pokazuje start i cel naraz
     if (isHome && destination) {
       return { type: "fit", points: [USER, destination.point], maxZoom: 15 };
     }
     return { type: "center", center: USER, zoom: isDesktop ? 15.3 : 14.8 };
-  }, [isRoute, activeStop, isDesktop, isHome, destination]);
+  }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace]);
 
   const storyInterests = useMemo(() => toPlannerInterests(profile.interests), [profile.interests]);
   // Na mapie pusta lista znaczy „wszystkie miejsca”, więc bez zapasowej kategorii z planera.
@@ -178,7 +200,7 @@ export function DemoApp() {
         </AnimatePresence>
 
         <AnimatePresence>
-          {stage === "map" && tab === "map" && (
+          {isHome && !isPlaceOpen && (
             <HomePanel
               key="home"
               interests={profile.interests}
@@ -235,6 +257,15 @@ export function DemoApp() {
             />
           )}
         </AnimatePresence>
+
+        {stage !== "onboarding" && (
+          <PlaceCardHost
+            isActive={isHome}
+            interests={storyInterests}
+            onSelectionChange={setSelectedPlace}
+            onCoverChange={setPlaceCoverPx}
+          />
+        )}
 
         <AnimatePresence>
           {stage === "map" && <TabBar key="tabs" active={tab} onChange={setTab} />}

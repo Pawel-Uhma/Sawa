@@ -66,9 +66,7 @@ export function PlaceCardHost({
   return (
     <>
       <AnimatePresence>
-        {isOpen && (
-          <VariantSwitch key="switch" variant={variant} onChange={changeVariant} />
-        )}
+        {isOpen && <VariantSwitch key="switch" variant={variant} onChange={changeVariant} />}
       </AnimatePresence>
       <AnimatePresence>
         {isOpen && (
