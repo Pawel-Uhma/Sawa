@@ -5394,3 +5394,331 @@
 > Dzięki za podpięcie. Poprawiłem noArrayIndexKey w onboarding-flow.tsx: segmenty paska postępu mają teraz klucze z nazw kroków. biome check na moich 3 plikach jest czysty, tsc --noEmit dla całego apps/web też. Formatowanie z biome jest OK. Nic nie commitowałem.
 > </cross-session-message>
 
+
+> na razie takie ustawienia, chyba te efekty [] nie dzialaja wiec usun. zaimplementuj do backendu czesc kodu odpowiedzialna za tts zgodnie z tym
+
+**AI:** Ze stroika usunąłem tagi. Na gałęzi r4/tts-elevenlabs (osobny worktree ../Sawa-tts) dodałem TTS do API: SpeechRequestSchema w shared, port SpeechSynthesizer, adapter ElevenLabs (Asia, Multilingual v2, ustawienia ze stroika, timeout 30 s), serwis z cache w pamięci, POST /v1/speech, ELEVENLABS_KEY w env i .env.example, testy. Typecheck, lint i testy przechodzą, prawdziwe wywołanie zwraca mp3. T-71 czeka na PR i akceptację R4.
+
+### 2026-10-17 13:52 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/app/layout.tsx                                 |   8 ++-
+>  apps/web/src/app/onboarding-test/page.tsx                   |   8 ---
+>  apps/web/src/features/demo/components/demo-app.tsx          | 214 +++++++++++++++++++++++++++++++++++++++++++-------------
+>  apps/web/src/features/demo/components/home-panel.tsx        |   2 +-
+>  apps/web/src/features/demo/components/map-screen.tsx        | 114 ------------------------------
+>  apps/web/src/features/demo/components/mock-map.tsx          |  94 -------------------------
+>  apps/web/src/features/demo/components/onboarding-screen.tsx | 116 ------------------------------
+>  apps/web/src/features/demo/components/route-screen.tsx      |  99 --------------------------
+>  apps/web/src/features/demo/components/route-sheet.tsx       |  40 +++++------
+>  docs/ai-log.md                                              |   4 ++
+>  docs/stan.md                                                |   1 +
+>  docs/todo.md                                                |  10 +--
+>  docs/ui/README.md                                           |   4 ++
+>  13 files changed, 208 insertions(+), 506 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/app/layout.tsx b/apps/web/src/app/layout.tsx
+> index 4c5d5ce..35a16b0 100644
+> --- a/apps/web/src/app/layout.tsx
+> +++ b/apps/web/src/app/layout.tsx
+> @@ -1,5 +1,7 @@
+>  import type { Metadata, Viewport } from "next";
+>  import { Fredoka, Plus_Jakarta_Sans } from "next/font/google";
+> +// CSS MapLibre przed naszym, żeby nasze reguły mapy go nadpisywały
+> +import "maplibre-gl/dist/maplibre-gl.css";
+>  import "./globals.css";
+>  
+>  const sans = Plus_Jakarta_Sans({
+> @@ -17,12 +19,16 @@ const logo = Fredoka({
+>  export const metadata: Metadata = {
+>    title: "Sawa",
+>    description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
+> +  // Po dodaniu do ekranu głównego działa jak aplikacja, bez paska przeglądarki
+> +  appleWebApp: { capable: true, title: "Sawa", statusBarStyle: "default" },
+>  };
+>  
+>  export const viewport: Viewport = {
+>    width: "device-width",
+>    initialScale: 1,
+> -  themeColor: "#17706F",
+> +  // Treść pod wcięciem i paskiem home; marginesy bierzemy z env(safe-area-inset-*)
+> +  viewportFit: "cover",
+> +  themeColor: "#EEF3F0",
+>  };
+>  
+>  export default function RootLayout({ children }: LayoutProps<"/">) {
+> diff --git a/apps/web/src/app/onboarding-test/page.tsx b/apps/web/src/app/onboarding-test/page.tsx
+> deleted file mode 100644
+> index 726f693..0000000
+> --- a/apps/web/src/app/onboarding-test/page.tsx
+> +++ /dev/null
+> @@ -1,8 +0,0 @@
+> -"use client";
+> -// TYMCZASOWE: podgląd onboardingu do testów, usunąć przed commitem.
+> -import { OnboardingFlow } from "@/features/demo/components/onboarding-flow";
+> -import { EMPTY_PROFILE } from "@/features/demo/lib/onboarding";
+> -
+> -export default function Page() {
+> -  return <OnboardingFlow initialProfile={EMPTY_PROFILE} onDone={(p) => console.log("[onb] done", JSON.stringify(p))} />;
+> -}
+> diff --git a/apps/web/src/features/demo/components/demo-app.tsx b/apps/web/src/features/demo/components/demo-app.tsx
+> index 6874df4..c528d62 100644
+> --- a/apps/web/src/features/demo/components/demo-app.tsx
+> +++ b/apps/web/src/features/demo/components/demo-app.tsx
+> @@ -1,59 +1,177 @@
+>  "use client";
+>  
+> -import { useState } from "react";
+> -import { buildMockRoute, type MockStop } from "../lib/mock-data";
+> -import { MapScreen } from "./map-screen";
+> -import { OnboardingScreen } from "./onboarding-screen";
+> -import { RouteScreen } from "./route-screen";
+> -import { StartScreen } from "./start-screen";
+> +import { AnimatePresence, MotionConfig, motion } from "motion/react";
+> +import { useCallback, useMemo, useState } from "react";
+> +import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
+> +import {
+> +  buildMockRoute,
+> +  HOME_PINS,
+> +  type MockStop,
+> +  ROUTE_LINE,
+> +  USER_LOCATION,
+> +} from "../lib/mock-data";
+> +import { EMPTY_PROFILE, type Profile } from "../lib/onboarding";
+> +import { HomePanel } from "./home-panel";
+> +import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
+> +import { RouteSheet } from "./route-sheet";
+> +import { type MapCamera, type MapPadding, SawaMap } from "./sawa-map";
+> +import { type Tab, TabBar } from "./tab-bar";
+> +import { TabPlaceholder } from "./tab-placeholder";
+> +import { TopBar } from "./top-bar";
+>  
+> -type Stage = "start" | "onboarding" | "map" | "route";
+> +type Stage = "onboarding" | "map" | "route";
+> +
+> +// Szerokość panelu (md: 360, lg: 400) i margines wokół niego, jak w route-sheet.tsx i home-panel.tsx
+> +const PANEL_PX = { tablet: 360, laptop: 400 };
+> +const DESKTOP_GAP_PX = 24;
+>  
+>  export function DemoApp() {
+> -  const [stage, setStage] = useState<Stage>("start");
+> -  const [interests, setInterests] = useState<string[]>([]);
+> +  const isDesktop = useIsDesktop();
+> +  const isWide = useIsWide();
+> +  const [stage, setStage] = useState<Stage>("onboarding");
+> +  const [onboardingStep, setOnboardingStep] = useState<OnboardingStep>("welcome");
+> +  const [profile, setProfile] = useState<Profile>(EMPTY_PROFILE);
+> +  const [tab, setTab] = useState<Tab>("map");
+>    const [durationMin, setDurationMin] = useState(90);
+>    const [route, setRoute] = useState<MockStop[]>([]);
+> +  const [activeIndex, setActiveIndex] = useState(0);
+> +  const [sheetCoverPx, setSheetCoverPx] = useState(360);
+>  
+> -  // Każdy ekran to osobne wejście, żeby przejścia były spójne na telefonie i desktopie.
+> -  switch (stage) {
+> -    case "start":
+> -      return <StartScreen onStart={() => setStage("onboarding")} />;
+> -
+> -    case "onboarding":
+> -      return (
+> -        <OnboardingScreen
+> -          initial={interests}
+> -          onBack={() => setStage("start")}
+> -          onDone={(picked) => {
+> -            setInterests(picked);
+> -            setStage("map");
+> -          }}
+> -        />
+> -      );
+> -
+> -    case "map":
+> -      return (
+> -        <MapScreen
+> -          interests={interests}
+> -          durationMin={durationMin}
+> -          onDurationChange={setDurationMin}
+> -          onEditInterests={() => setStage("onboarding")}
+> -          onGenerate={() => {
+> -            setRoute(buildMockRoute(durationMin, interests));
+> -            setStage("route");
+> +  const finishOnboarding = useCallback((next: Profile) => {
+> +    setProfile(next);
+> +    setStage("map");
+> +  }, []);
+> +
+> +  const editInterests = useCallback(() => {
+> +    setOnboardingStep("interests");
+> +    setStage("onboarding");
+> +  }, []);
+> +
+> +  // Mapa jest jedna pod wszystkimi ekranami. Ekrany zmieniają tylko kamerę i to, co na niej leży.
+> +  const isRoute = stage === "route" && route.length > 0;
+> +  const activeStop = route[activeIndex];
+> +
+> +  const padding: MapPadding = useMemo(() => {
+> +    if (isDesktop) {
+> +      return {
+> +        top: 96,
+> +        right: DESKTOP_GAP_PX,
+> +        bottom: DESKTOP_GAP_PX,
+> +        left: (isWide ? PANEL_PX.laptop : PANEL_PX.tablet) + DESKTOP_GAP_PX * 2,
+> +      };
+> +    }
+> +    return isRoute
+> +      ? { top: 88, right: 0, bottom: sheetCoverPx, left: 0 }
+> +      : { top: 120, right: 0, bottom: 430, left: 0 };
+> +  }, [isDesktop, isWide, isRoute, sheetCoverPx]);
+> +
+> +  const camera: MapCamera = useMemo(() => {
+> +    if (isRoute && activeStop) {
+> +      return { kind: "center", coord: activeStop.coord, zoom: 15.4 };
+> +    }
+> +    return { kind: "center", coord: USER_LOCATION, zoom: isDesktop ? 15.3 : 14.8 };
+> +  }, [isRoute, activeStop, isDesktop]);
+> +
+> +  const stops = useMemo(
+> +    () =>
+> +      isRoute
+> +        ? route.map((stop, index) => ({
+> +            id: stop.id,
+> +            coord: stop.coord,
+> +            label: String(index + 1),
+> +            isActive: index === activeIndex,
+> +          }))
+> +        : [],
+> +    [isRoute, route, activeIndex],
+> +  );
+> +
+> +  const pins = stage === "map" && tab === "map" ? HOME_PINS : [];
+> +
+> +  return (
+> +    <MotionConfig reducedMotion="user">
+> +      <div className="fixed inset-0 overflow-hidden bg-mapa">
+> +        <SawaMap
+> +          user={USER_LOCATION}
+> +          camera={camera}
+> +          padding={padding}
+> +          pins={pins}
+> +          stops={stops}
+> +          route={isRoute ? ROUTE_LINE : null}
+> +          onStopClick={(id) => {
+> +            const index = route.findIndex((stop) => stop.id === id);
+> +            if (index >= 0) setActiveIndex(index);
+>            }}
+>          />
+> -      );
+> -
+> -    case "route":
+> -      return (
+> -        <RouteScreen
+> -          key={route.map((stop) => stop.id).join(",") + durationMin}
+> -          durationMin={durationMin}
+> -          stops={route}
+> -          onBack={() => setStage("map")}
+> -        />
+> -      );
+> -  }
+> +
+> +        {/* Mgiełka pod paskiem statusu na telefonie */}
+> +        <div className="mgla pointer-events-none absolute inset-x-0 top-0 z-10 h-28 md:hidden" />
+> +
+> +        <AnimatePresence>
+> +          {stage !== "onboarding" && <TopBar key="top" hideLogoOnDesktop={isRoute} />}
+> +        </AnimatePresence>
+> +
+> +        <AnimatePresence mode="popLayout">
+> +          {stage === "map" && tab === "map" && (
+> +            <HomePanel
+> +              key="home"
+> +              interests={profile.interests}
+> +              durationMin={durationMin}
+> +              onDurationChange={setDurationMin}
+> +              onEditInterests={editInterests}
+> +              onGenerate={() => {
+> +                setRoute(buildMockRoute(durationMin, profile.interests));
+> +                setActiveIndex(0);
+> +                setStage("route");
+> +              }}
+> +            />
+> +          )}
+> +          {stage === "map" && tab !== "map" && (
+> +            <TabPlaceholder
+> +              key={tab}
+> +              tab={tab}
+> +              hasRoute={route.length > 0}
+> +              onOpenRoute={() => {
+> +                setTab("map");
+> +                setStage("route");
+> +              }}
+> +            />
+> +          )}
+> +          {isRoute && (
+> +            <RouteSheet
+> +              key="route"
+> +              durationMin={durationMin}
+> +              stops={route}
+> +              activeIndex={activeIndex}
+> +              onActiveChange={setActiveIndex}
+> +              onBack={() => setStage("map")}
+> +              isDesktop={isDesktop}
+> +              onCoverChange={setSheetCoverPx}
+> +            />
+> +          )}
+> +        </AnimatePresence>
+> +
+> +        <AnimatePresence>
+> +          {stage === "map" && <TabBar key="tabs" active={tab} onChange={setTab} />}
+> +        </AnimatePresence>
+> +
+> +        {/* Onboarding to warstwa nad mapą. Po wyjściu mapa „wyjeżdża” spod spodu. */}
+> +        <AnimatePresence>
+> +          {stage === "onboarding" && (
+> +            <motion.div
+> +              key="onboarding"
+> +              className="fixed inset-0 z-40"
+> +              exit={{ opacity: 0, scale: 1.02 }}
+> +              transition={SPRING}
+> +            >
+> +              <OnboardingFlow
+> +                initialStep={onboardingStep}
+> +                initialProfile={profile}
+> +                onDone={finishOnboarding}
+> +              />
+> +            </motion.div>
+> +          )}
+> +        </AnimatePresence>
+> +      </div>
+> +    </MotionConfig>
+> +  );
+>  }
+> diff --git a/apps/web/src/features/demo/components/home-panel.tsx b/apps/web/src/features/demo/components/home-panel.tsx
+> index a2ee2b1..c8f82d4 100644
+> --- a/apps/web/src/features/demo/components/home-panel.tsx
+> +++ b/apps/web/src/features/demo/components/home-panel.tsx
+> @@ -52,7 +52,7 @@ export function HomePanel({
+>        animate={{ opacity: 1, y: 0 }}
+>        exit={{ opacity: 0, y: 48 }}
+>        transition={SPRING}
+> -      className="absolute inset-x-3 bottom-[calc(max(1.25rem,env(safe-area-inset-bottom))+76px)] z-20 md:inset-x-auto md:bottom-6 md:left-6 md:w-[400px]"
+> +      className="absolute inset-x-3 bottom-[calc(max(1.25rem,env(safe-area-inset-bottom))+76px)] z-20 md:inset-x-auto md:bottom-6 md:left-6 md:w-[360px] lg:w-[400px]"
+>      >
+>        {/* Sawa i dymek nad kartą */}
+>        <div className="pointer-events-none relative h-[120px] md:h-[132px]">
+> diff --git a/apps/web/src/features/demo/components/map-screen.tsx b/apps/web/src/features/demo/components/map-screen.tsx
+> deleted file mode 100644
+> index 433c7c0..0000000
+> --- a/apps/web/src/features/demo/components/map-screen.tsx
+> +++ /dev/null
+> @@ -1,114 +0,0 @@
+> -import type { CSSProperties
+

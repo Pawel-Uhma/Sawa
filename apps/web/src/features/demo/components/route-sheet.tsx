@@ -120,7 +120,7 @@ function DesktopPanel({ children }: { children: ReactNode }) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -32 }}
       transition={SPRING}
-      className="karta absolute bottom-6 left-6 top-6 z-20 flex w-[400px] flex-col overflow-hidden rounded-[28px] xl:w-[420px]"
+      className="karta absolute bottom-6 left-6 top-6 z-20 flex w-[360px] flex-col overflow-hidden rounded-[28px] lg:w-[400px]"
     >
       <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-6 pb-6 pt-6">
         {children}
@@ -253,29 +253,29 @@ function SheetContent({
     <div className="flex flex-col gap-5">
       <header
         onPointerDown={onHeaderPointerDown}
-        className={`flex items-start justify-between gap-3 ${onHeaderPointerDown ? "touch-none" : ""}`}
+        className={onHeaderPointerDown ? "touch-none" : undefined}
       >
-        <div className="min-w-0">
-          {isDesktop && <Logo className="mb-4 block text-[28px]" />}
-          <h2 className="text-[22px] font-extrabold leading-tight tracking-[-0.02em] md:text-[26px]">
+        {isDesktop && <Logo className="mb-5 block text-[28px]" />}
+        <div className="flex items-start justify-between gap-3">
+          <h2 className="pt-1 text-[22px] font-extrabold leading-tight tracking-[-0.02em] md:text-[26px]">
             Twoja przejażdżka
           </h2>
-          <p className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm text-tekst-2">
-            <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>·
-            <span>{stops.length} opowieści</span>·
-            <span className="inline-flex items-center gap-1">
-              <TramIcon className="size-4" /> {lines.join(", ")}
-            </span>
-          </p>
+          <button
+            type="button"
+            onClick={onBack}
+            className="flex h-10 shrink-0 items-center gap-1 rounded-full bg-tlo-2 pl-2.5 pr-3.5 text-sm font-bold text-tekst transition-[transform,background-color] hover:bg-mieta-jasna active:scale-[0.96]"
+          >
+            <ChevronLeftIcon className="size-4" />
+            Zmień plan
+          </button>
         </div>
-        <button
-          type="button"
-          onClick={onBack}
-          className={`flex h-10 shrink-0 items-center gap-1 rounded-full bg-tlo-2 pl-2.5 pr-3.5 text-sm font-bold text-tekst transition-[transform,background-color] hover:bg-mieta-jasna active:scale-[0.96] ${isDesktop ? "mt-12" : ""}`}
-        >
-          <ChevronLeftIcon className="size-4" />
-          Zmień plan
-        </button>
+        <p className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm text-tekst-2">
+          <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>·
+          <span>{stops.length} opowieści</span>·
+          <span className="inline-flex items-center gap-1">
+            <TramIcon className="size-4" /> {lines.join(", ")}
+          </span>
+        </p>
       </header>
 
       {activeStop && (

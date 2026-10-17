@@ -21,6 +21,10 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 
 | Plik | Co pokazuje | Zadanie | Decyzja |
 |---|---|---|---|
+| [1351-trasa-panel-desktop](wyniki/1351-trasa-panel-desktop.png) | Trasa na desktopie: pływający panel z odtwarzaczem i osią przystanków, mapa z trasą omija panel | T-67 | |
+| [1351-ekran-glowny-a6-desktop](wyniki/1351-ekran-glowny-a6-desktop.png) | A6 na desktopie: karta i Sawa w lewym dolnym rogu, zakładki u góry pośrodku | T-67 | |
+| [1351-trasa-arkusz-mobile](wyniki/1351-trasa-arkusz-mobile.png) | Trasa na telefonie: arkusz z uchwytem (3 punkty zatrzymania, rzut), swipe między opowieściami | T-33, T-35 | |
+| [1351-ekran-glowny-a6-mobile](wyniki/1351-ekran-glowny-a6-mobile.png) | Wdrożony A6 na prawdziwej mapie (MapLibre + OpenFreeMap) | T-66 | |
 | [1347-onboarding-00-zestawienie-mobile](wyniki/1347-onboarding-00-zestawienie-mobile.jpg), [desktop](wyniki/1347-onboarding-00-zestawienie-desktop.jpg) | Nowy onboarding: powitanie z Sawą, znajomość Warszawy, zainteresowania z ikonami 3D i „podobne”, styl opowieści, „Układam Twoją Warszawę”. Opis i analiza: [onboarding.md](onboarding.md) | T-31 | do akceptacji Pawła |
 | [1249-…-a6-karta-z-sawa](propozycje/1249-ekran-glowny-a6-karta-z-sawa-mobile.png) | A6: połączenie A4 i A5. Pływająca karta z czasem, tematami i „Wyznacz trasę” nad paskiem zakładek (Mapa, Przejażdżki, Sawa); Sawa wychyla się zza karty i pyta w dymku | ekran główny | kandydat do wdrożenia |
 | [1218-ekran-glowny-a-wariacje-00-zestawienie.jpg](propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg) | 5 wariacji A obok siebie | ekran główny | Paweł: najlepsze A4 i A5, połączone w A6 |

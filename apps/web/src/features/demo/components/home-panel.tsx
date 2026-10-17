@@ -52,7 +52,7 @@ export function HomePanel({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 48 }}
       transition={SPRING}
-      className="absolute inset-x-3 bottom-[calc(max(1.25rem,env(safe-area-inset-bottom))+76px)] z-20 md:inset-x-auto md:bottom-6 md:left-6 md:w-[400px]"
+      className="absolute inset-x-3 bottom-[calc(max(1.25rem,env(safe-area-inset-bottom))+76px)] z-20 md:inset-x-auto md:bottom-6 md:left-6 md:w-[360px] lg:w-[400px]"
     >
       {/* Sawa i dymek nad kartą */}
       <div className="pointer-events-none relative h-[120px] md:h-[132px]">

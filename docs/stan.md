@@ -57,6 +57,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 ## Ostatnie decyzje
 
+- 17.10, 13:55: TTS w API gotowe na gałęzi `r4/tts-elevenlabs` (Pawel): `POST /v1/speech {text}` zwraca mp3, głos Asia, Multilingual v2, stabilność 0,3 / wierność 0,7 / ekspresja 0,9 / tempo 1,05. Liczby i daty LLM musi pisać słownie, bo cyfry TTS czyta źle. Tagi typu [sighs] nie działają w v2.
 - 17.10, 13:30: głos to ElevenLabs (ok. 0,50 zł/min, klucz w Railway), integracja R4. Użytkowników nie trzymamy w bazie. [Podsumowanie](spotkania/2026-10-17-1330-postep-i-podzial.md)
 
 - 17.10, wieczór (rozmowa z jury): problem to przyjezdni w Warszawie; konkurencja to aplikacja Warsaw Polish Guide, nie powielamy jej funkcji. [Podsumowanie](spotkania/2026-10-17-wieczor-jury-koncept.md)

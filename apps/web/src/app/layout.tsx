@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fredoka, Plus_Jakarta_Sans } from "next/font/google";
+// CSS MapLibre przed naszym, żeby nasze reguły mapy go nadpisywały
+import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 
 const sans = Plus_Jakarta_Sans({
@@ -17,12 +19,16 @@ const logo = Fredoka({
 export const metadata: Metadata = {
   title: "Sawa",
   description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
+  // Po dodaniu do ekranu głównego działa jak aplikacja, bez paska przeglądarki
+  appleWebApp: { capable: true, title: "Sawa", statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#17706F",
+  // Treść pod wcięciem i paskiem home; marginesy bierzemy z env(safe-area-inset-*)
+  viewportFit: "cover",
+  themeColor: "#EEF3F0",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
