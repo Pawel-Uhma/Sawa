@@ -11,6 +11,9 @@
 - 19:35 (Paweł, z agentem R3): **stany czekania wszędzie (T-131).** Wspólne klocki w `apps/web/src/components/waiting.tsx`; mapa, planowanie, opowieść, karta miejsca i przejażdżki mówią, co się dzieje, a przy długim czekaniu to przyznają. Typecheck, lint i testy zielone. Uwaga: lokalny web na porcie 3100 nie przechodzi CORS do API z Railway.
 
 - 19:30 (Paweł, z agentem R3): **mapa wraca do samych ikon podrodzaju.** Bez kolorowej obwódki tematu (T-119) i bez zielonych klastrów z liczbą (T-118), na prośbę Pawła. `placeTopic` zostaje dla chipów w karcie miejsca.
+
+- Jasiek (R2 z agentem, issue #85): migracja `places_subkind` wgrana na Supabase, seed puszczony ponownie (4511 miejsc), 35 podrodzajów, m.in. park 224, `null` 12. API na Railway wdrożone z `main` (46bd4e7, `railway up`), `/v1/places` zwraca `subkind`. **Uwaga R1:** Railway nie wdrażał automatycznie od 16:52, sprawdzić auto-deploy z GitHuba.
+
 - 19:20 (Szczepan, z agentem R1, plik R3 na prośbę użytkownika): **przystanki wsiadania na mapie (T-131, PR #84).** Pod kółkiem startu i przesiadki etykieta „Centrum 09” i „14:05” (lub „ok. 14:05”). Numer słupka z id przystanku (`stopPost()`), godzina w czasie warszawskim. Nie sprawdzone na żywej mapie. **Dla R3:** warstwa `route-boarding-label` w `route-layer.tsx`.
 
 - 19:20 (Antek, R3 z agentem): T-130 (issue #35, otwarte w „wieczornym” spotkaniu). GPS przesuwa zegar jazdy także po pierwszym miejscu: przy kolejnym punkcie trasy (`isAt`, 150 m, najwyżej 2 do przodu) `syncTo` (`ride-sync.ts`, `useGpsClockSync` w `DemoApp`). Przejścia między tematami w `story-player.ts`: wyciszenie, oddech 0,6 s, łagodne wejście (słychać tylko z `?voice=1`). **Dla R4:** zdanie-pomost do poprzedniego tematu w prompcie. **Nie sprawdzone** w jeździe.
