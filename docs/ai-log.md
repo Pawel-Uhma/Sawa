@@ -3136,3 +3136,30 @@
 **AI:** Utworzyłem główny `README.md`: opis Sawy, linki do dokumentacji, instalacja Node 24 (macOS, Windows, nvm) i pnpm 12.14.0 (npm lub Corepack), uruchomienie lokalne, tabela poleceń, struktura repo i typowe problemy.
 
 **AI:** Scaliłem origin/main (monorepo Szczepana) z lokalnymi zmianami. Konflikty w CLAUDE.md, stan.md, todo.md, zespol.md i ai-log.md rozwiązane bez kasowania wpisów. Mapbox czy MapLibre trafiło do otwartych decyzji w stan.md. Aplikacja uruchomiona lokalnie: web :3000, api :8787/health.
+
+### 2026-10-17 13:00 · Pawel
+
+> dobra idziemy w elevenlabs  - przygotuj mi artefakt do wyboru wszystkiego, powiedz co mam robic i gdzie
+
+
+### 2026-10-17 13:01 · Pawel
+
+> Na 3000 jest weddelia, napraw to
+
+
+### 2026-10-17 13:01 · Pawel
+
+> <task-notification>
+> <task-id>bf4tmcluf</task-id>
+> <tool-use-id>toolu_01F9dwqtAeBYmS1zGPZoeneF</tool-use-id>
+> <output-file>/private/tmp/claude-501/-Users-pawel-Desktop-Sawa/860b1a31-2044-4d31-92a0-c68b100e68c0/tasks/bf4tmcluf.output</output-file>
+> <status>failed</status>
+> <summary>Background command "npx -y pnpm@12.14.0 dev" failed with exit code 144</summary>
+> </task-notification>
+
+
+### 2026-10-17 · Pawel
+
+> Na 3000 jest weddelia, napraw to
+
+**AI:** Port 3000 zajmuje dev server Weddelii, więc Sawa web chodzi na :3001. Dopisałem localhost:3001 do CORS_ORIGINS w lokalnym apps/api/.env.local (poza gitem) i zrestartowałem web i api.
