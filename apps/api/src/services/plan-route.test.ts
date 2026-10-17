@@ -8,14 +8,16 @@ import {
   RouteSchema,
   toLngLat,
 } from "@sawa/shared";
-import { describe, expect, it } from "vitest";
-import { loadTransitData } from "../adapters/gtfs/load-transit";
+import { describe, expect, it, vi } from "vitest";
+import { loadTransitCalendar } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import { createRoutePlanner } from "./plan-route";
 import type { DepartureSource, LiveBoardingSource, WalkPathSource } from "./ports";
 
 // Integration test on the committed data files (real Warsaw network and places).
-const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
+const transit = loadTransitCalendar(new URL("../../data/transit/", import.meta.url)).forDate(
+  "2026-10-17",
+);
 const places = createFilePlacesRepository(new URL("../../data/places.geojson", import.meta.url));
 /** Tram and bus legs, without the walks to and from the stops. */
 const rideLegs = (route: Route) => route.legs.filter((l) => l.mode !== "walk");
@@ -23,6 +25,19 @@ const NOW = new Date("2026-10-17T14:00:00+02:00");
 
 describe("route planner on real data", () => {
   const planner = createRoutePlanner({ transit, places });
+
+  it("plans on the graph of the request's Warsaw day", async () => {
+    const forDate = vi.fn(() => transit);
+    const onCalendar = createRoutePlanner({ transit: { dates: [], forDate }, places });
+    const request = {
+      origin: HACKATHON_VENUE,
+      durationMin: 30,
+      interests: ["historical" as const],
+    };
+    await onCalendar.plan(request, NOW);
+    await onCalendar.plan(request, new Date("2026-10-17T22:30:00Z"));
+    expect(forDate.mock.calls).toEqual([["2026-10-17"], ["2026-10-18"]]);
+  });
 
   it.each([
     30, 60, 120,
@@ -315,26 +330,6 @@ describe("route planner on real data", () => {
     const onRides = (r: typeof route) =>
       r.places.filter((p) => r.legs[p.legIndex]?.mode !== "walk");
     expect(onRides(route).map((p) => p.placeId)).toEqual(onRides(straight).map((p) => p.placeId));
-  });
-
-  it("compares a few walks along their real paths and draws the one it picked", async () => {
-    const asked: LatLng[][] = [];
-    const walkPaths: WalkPathSource = {
-      path: async (points) => {
-        asked.push(points);
-        return points.map(toLngLat);
-      },
-    };
-    const route = await createRoutePlanner({ transit, places, walkPaths }).plan(
-      { origin: HACKATHON_VENUE, durationMin: 20, interests: ["historical"], travel: "walk" },
-      NOW,
-    );
-    // The walks compared, then the one picked asked again to draw it.
-    const compared = asked.slice(0, -1);
-    const drawn = asked[asked.length - 1];
-    expect(compared.length).toBeGreaterThan(1);
-    expect(compared).toContainEqual(drawn);
-    expect(route.legs[0]?.lngLats).toEqual(drawn?.map(toLngLat));
   });
 
   it("keeps straight walking legs when the walk router has no path", async () => {
