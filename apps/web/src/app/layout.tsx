@@ -21,8 +21,12 @@ const logo = Fredoka({
 });
 
 export const metadata: Metadata = {
+  // Absolutny adres grafiki podglądu linku (opengraph-image.png obok)
+  metadataBase: new URL("https://sawa-hackathon.vercel.app"),
   title: { default: "Sawa · Warszawa za oknem", template: "%s · Sawa" },
   description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
+  openGraph: { siteName: "Sawa", locale: "pl_PL", type: "website" },
+  twitter: { card: "summary_large_image" },
   // Po dodaniu do ekranu głównego działa jak aplikacja, bez paska przeglądarki
   appleWebApp: { capable: true, title: "Sawa", statusBarStyle: "default" },
   // Ikonka w karcie przeglądarki idzie za motywem systemu (iOS ekranu głównego sam przyciemnia apple-icon)
