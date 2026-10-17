@@ -115,8 +115,8 @@ Mapa ładuje się tylko w przeglądarce: `next/dynamic` z `ssr: false`, bo MapLi
 
 | Warstwa | Źródło | Wygląd | Interakcja |
 |---|---|---|---|
-| `places-circle` | `places` (GeoJSON z API, `promoteId: "id"`) | koło 6–8 px, kolor wg `kind` (9 typów → 5 kolorów, np. budynek/ulica, pomnik/tablica, mural, świątynia/cmentarz, miejsce/zdarzenie); większe przy wyższym `richness` | klik → `?p=<id>` i karta; kursor `pointer`; `feature-state: selected` = obwódka |
-| `places-cluster`, `places-cluster-count` | `places` (`cluster: true`, do zoomu 14, promień 44 px, od 10 miejsc w grupie) | ciemne koło z liczbą miejsc w grupie, większe przy większej grupie (T-118) | klik → `getClusterExpansionZoom` i `easeTo`, grupa się rozpada |
+| `places-circle` | `places` (GeoJSON z API, `promoteId: "id"`) | naklejka: glif podrodzaju (kształt = rodzaj miejsca) w kolorze **tematu** (`TOPIC_COLORS`, jak chipy; T-151, #102), obwódka w kolorze `ring` motywu; rysowana w przeglądarce na żądanie (`place-stickers.ts`, `styleimagemissing`); większa przy wyższym `richness`. Legenda kolor → temat: zwijany przycisk pod zoomem (`topic-legend.tsx`) | klik → `?p=<id>` i karta; kursor `pointer`; `feature-state: selected` = obwódka |
+| `places-cluster`, `places-cluster-count` | `places` (`cluster: true`, do zoomu 14, promień 44 px, od 10 miejsc w grupie) | szklane koło z liczbą miejsc w grupie, większe przy większej grupie (T-118; przywrócone w T-150, #101) | klik → `getClusterExpansionZoom` i `easeTo`, grupa się rozpada |
 | `places-label` | `places` | nazwa od zoomu 16, `text-optional`, żeby etykiety się nie nakładały | — |
 | `route-casing` + `route-line` | `route-legs` (z `route-to-geojson`) | linia 5 px z białą obwódką; kolor wg `mode` (tramwaj czerwony, autobus granatowy); przesiadka = przerwa i kropka | — |
 | `route-places` | `route-places` | koło z numerem 1..n (kolejność `etaSec`), nad zwykłymi miejscami | klik → ta sama karta |
@@ -148,7 +148,7 @@ Gdy jest trasa: miejsca spoza trasy bledną (`circle-opacity` 0,35), a mapa robi
 ## 9. Testy
 
 - `route-to-geojson.ts`: kolejność `[lng, lat]`, numeracja miejsc wg `etaSec`, pusta trasa. Testy Vitest, obowiązkowe (czysta logika).
-- `map-style.ts`: każdy `kind` z danych ma kolor (test na liście 9 typów).
+- `map-style.ts`: każdy `kind` i podrodzaj ma glif i podpis; kolor punktu to temat, a glif odcina się od obwódki min. 3:1 w obu motywach (`topic-colors.test.ts`).
 - `visible-places.ts`: bez zainteresowań, wszystkie miejsca; próg 0 przepuszcza wszystkie, próg 2 odcina ubogie.
 - Wygląd sprawdzamy ręcznie na telefonie (375 px) i w `/demo`, bez testów zrzutów.
 

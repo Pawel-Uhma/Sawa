@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 21:10 (Paweł, z agentem R3): **decyzja: kolor punktu = temat, klastry wracają (T-150 #101, T-151 #102).** Glif podrodzaju dalej mówi, co to za miejsce, ale ma kolor tematu jak chipy (`TOPIC_COLORS`); paleta grup rodzajów usunięta, kropka w karcie miejsca też w kolorze tematu. Zwijana legenda pod przyciskami zoomu. Przy oddaleniu szklane kółka z liczbą. Zrzuty 390 px w obu motywach w [ui/wyniki](ui/README.md).
 - 20:45 (Szczepan, z agentem R1): **punkty na trasie pieszej leżą przy narysowanej ścieżce.** Planer liczy miejsca przy prostej między punktami, a mapa rysuje ścieżkę OSRM (np. objazd torów przy Dw. Gdańskim), więc numery wypadały kwartał od trasy. `alongWalkPaths` (`build-route.ts`) zbiera miejsca odcinków pieszych ponownie wzdłuż prawdziwej ścieżki (promień widoczności + 10 m), czasy bez zmian. Część T-126; sam planer dalej wybiera kolejność po prostej.
 
 - 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`.
