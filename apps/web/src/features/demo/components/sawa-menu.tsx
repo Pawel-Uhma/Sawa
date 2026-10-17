@@ -23,13 +23,14 @@ import { createPortal } from "react-dom";
 import { ThemeSwitch } from "@/features/theme";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
-import { FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
+import { AUDIENCES, FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
 import type { StartMode } from "../lib/start-point";
 import {
   BubbleIcon,
   ChevronRightIcon,
   CompassIcon,
   InfoIcon,
+  ListenerIcon,
   LocateIcon,
   PinIcon,
   RestartIcon,
@@ -371,6 +372,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
 
   const familiarity = labelOf(FAMILIARITY, profile.familiarity);
   const style = labelOf(STORY_STYLES, profile.storyStyle);
+  const audience = labelOf(AUDIENCES, profile.audience);
   const interests = profile.interests.map((key) => labelOf(INTERESTS, key) ?? key);
 
   async function share() {
@@ -426,6 +428,12 @@ function MenuContent({ actions, run }: MenuContentProps) {
           label="Styl opowieści"
           value={style ?? "Nie wybrano"}
           onClick={() => run(() => actions.onEditProfile("style"))}
+        />
+        <Row
+          Icon={ListenerIcon}
+          label="Kto słucha"
+          value={audience ?? "Dorośli"}
+          onClick={() => run(() => actions.onEditProfile("audience"))}
         />
         <Row
           Icon={PinIcon}

@@ -5,10 +5,12 @@ import type { Place } from "./place";
 import {
   bandFor,
   factsStory,
+  isGentleForKids,
   parseStoryAnswer,
   pickFacts,
   placeFacts,
   storyCacheKey,
+  storyWords,
   WORDS_PER_SEC,
 } from "./story";
 
@@ -106,6 +108,28 @@ describe("pickFacts", () => {
 
   it("ids facts by their text", () => {
     expect(placeFacts(place)[0]?.id).toBe(factId("Kercelak był największym bazarem Warszawy."));
+  });
+});
+
+describe("storyWords", () => {
+  const band = bandFor(60);
+
+  it("gives a child a shorter story than an adult", () => {
+    const kids = storyWords(band, "deep", false, "kids");
+    expect(kids).toBeLessThan(storyWords(band, "deep", false, "adult"));
+    expect(storyWords(band, "deep", false)).toBe(band.words);
+  });
+
+  it("keeps trivia and reminders short for everyone", () => {
+    expect(storyWords(band, "trivia", false, "kids")).toBe(storyWords(band, "trivia", false));
+  });
+});
+
+describe("isGentleForKids", () => {
+  it("marks war and the ghetto, not the rest", () => {
+    expect(isGentleForKids({ interests: ["architecture", "war_uprising"] })).toBe(true);
+    expect(isGentleForKids({ interests: ["jewish_warsaw"] })).toBe(true);
+    expect(isGentleForKids({ interests: ["nature", "sport"] })).toBe(false);
   });
 });
 
