@@ -400,3 +400,9 @@
 > zrób osobny branch, opisz go, zrób commit, push i otwórz PR
 
 **AI:** Utworzyłem gałąź `r2/places-migration` z trzema commitami (migracje, seed z `.env.example`, dokumenty), wypchnąłem ją i otworzyłem PR #1 (https://github.com/Pawel-Uhma/Sawa/pull/1) z opisem: co, dlaczego, jak sprawdzić, otwarte decyzje.
+
+### 2026-10-17 12:20 · Szczpan
+
+> list roles and what they cover
+
+**AI:** Wypisałem 4 role (R1 dane i planer, R2 baza, historia i produkt z dawną R5, R3 frontend i mapa, R4 AI) z zakresem, plikami i punktami MVP według `zespol.md`, kart ról i planu MVP. Osoby nie są jeszcze przypisane. Bez zmian w plikach poza tym wpisem.
