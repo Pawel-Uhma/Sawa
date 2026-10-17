@@ -2,56 +2,67 @@
 
 import type { Leg } from "@sawa/shared";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { useEffect, useRef } from "react";
+import { type Ref, useEffect, useRef, useState } from "react";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { type MockStop, stopLineLabel } from "../lib/mock-data";
-import { ChevronLeftIcon, PauseIcon, PinIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
+import { ChevronLeftIcon, PauseIcon, PinIcon, PlayIcon } from "./icons";
 import { Journey, LineBadge } from "./line-badge";
 import { SawaMenuButton } from "./sawa-menu";
 
-/** Trzy propozycje ekranu gotowej trasy. Wybór w `?trasa=a|b|c`, do czasu decyzji zespołu. */
+/**
+ * Trzy propozycje ekranu gotowej trasy. Wybór w `?trasa=a|b|c`, do czasu decyzji zespołu.
+ *
+ * Założenie (T-106): to, o czym Sawa mówi, wybiera lokalizacja, a nie użytkownik. Sawa opowiada
+ * jednym ciągłym strumieniem i sama przechodzi od tematu do tematu, więc ekran nie ma przycisków
+ * „poprzednia/następna”. Jest pauza, a skok do przodu („Opowiedz teraz”) to wyjątek, nie nawigacja.
+ */
 export const ROUTE_VARIANTS = ["a", "b", "c"] as const;
 export type RouteVariant = (typeof ROUTE_VARIANTS)[number];
 
 export const ROUTE_VARIANT_LABELS: Record<RouteVariant, string> = {
-  a: "Odtwarzacz",
+  a: "Na żywo",
   b: "Rozkład",
-  c: "Pocztówki",
+  c: "Rozdziały",
 };
+
+/** Fragment strumienia Sawy przypisany do punktu trasy (temat, o którym wtedy mówiła). */
+export type TranscriptPart = { stopIndex: number; text: string };
 
 export type RouteViewProps = {
   durationMin: number;
   end: { label: string; reached: boolean } | null;
   legs: Leg[];
   stops: MockStop[];
+  /** Punkt, przy którym jest użytkownik i o którym Sawa teraz mówi. */
   activeIndex: number;
   onBack: () => void;
   isDesktop: boolean;
   isPlaying: boolean;
+  /** Ile bieżącego tematu już padło (0–100). */
   progress: number;
   storyText: string | null;
   storyState: "loading" | "ready" | "failed";
-  direction: number;
+  /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
+  transcript: TranscriptPart[];
   goTo: (index: number) => void;
   togglePlay: () => void;
 };
-
-function storyCopy(state: RouteViewProps["storyState"], text: string | null) {
-  if (state === "loading") return "Sawa przypomina sobie, co wie o tym miejscu…";
-  if (state === "failed") return "Tym razem Sawa nic nie powie. Jedziemy dalej.";
-  return text ?? "";
-}
-
-function stopKind(stop: MockStop) {
-  return stop.mode === "walk" ? "Opowieść po drodze" : "Opowieść z okna";
-}
 
 const CLOCK = new Intl.DateTimeFormat("pl-PL", { hour: "2-digit", minute: "2-digit" });
 
 function clock(iso: string) {
   const date = new Date(iso);
   return Number.isNaN(date.getTime()) ? "" : CLOCK.format(date);
+}
+
+/** Za ile następny temat. Dziś z `etaMin`, po T-106 z odległości do punktu. */
+function untilNext(stops: MockStop[], activeIndex: number) {
+  const now = stops[activeIndex];
+  const next = stops[activeIndex + 1];
+  if (!now || !next) return null;
+  const min = Math.max(1, next.etaMin - now.etaMin);
+  return { stop: next, label: `za ok. ${min} min` };
 }
 
 /* ------------------------------------------------------------------ */
@@ -89,25 +100,44 @@ function EndPill({ end }: { end: RouteViewProps["end"] }) {
   );
 }
 
+/** Pulsująca kropka „na żywo”; przy pauzie stoi i szarzeje. */
+function LiveDot({ on }: { on: boolean }) {
+  const reduce = useReducedMotion();
+  return (
+    <span className="relative flex size-2.5 shrink-0">
+      {on && !reduce && (
+        <motion.span
+          className="absolute inset-0 rounded-full bg-koral"
+          animate={{ scale: [1, 2.2], opacity: [0.5, 0] }}
+          transition={{ duration: 1.6, repeat: Number.POSITIVE_INFINITY, ease: "easeOut" }}
+        />
+      )}
+      <span
+        className={`relative size-2.5 rounded-full transition-colors ${on ? "bg-koral" : "bg-tekst-3"}`}
+      />
+    </span>
+  );
+}
+
 function PlayButton({
   isPlaying,
   onToggle,
-  size = "lg",
+  size = "md",
 }: {
   isPlaying: boolean;
   onToggle: () => void;
-  size?: "lg" | "sm";
+  size?: "lg" | "md";
 }) {
   const big = size === "lg";
   return (
     <motion.button
       type="button"
       onClick={onToggle}
-      aria-label={isPlaying ? "Pauza" : "Odtwarzaj"}
+      aria-label={isPlaying ? "Wstrzymaj Sawę" : "Wznów Sawę"}
       whileTap={{ scale: 0.92 }}
       transition={SPRING}
       className={`flex shrink-0 items-center justify-center rounded-full bg-glebia text-white transition-colors hover:bg-glebia-ciemna ${
-        big ? "size-16 shadow-[0_6px_16px_rgba(23,112,111,0.3)]" : "size-10"
+        big ? "size-14 shadow-[0_6px_16px_rgba(23,112,111,0.3)]" : "size-11"
       }`}
     >
       <AnimatePresence mode="popLayout" initial={false}>
@@ -119,9 +149,9 @@ function PlayButton({
           transition={{ type: "spring", bounce: 0, duration: 0.25 }}
         >
           {isPlaying ? (
-            <PauseIcon className={big ? "size-7" : "size-5"} />
+            <PauseIcon className={big ? "size-6" : "size-5"} />
           ) : (
-            <PlayIcon className={`${big ? "size-7" : "size-5"} translate-x-[1px]`} />
+            <PlayIcon className={`${big ? "size-6" : "size-5"} translate-x-[1px]`} />
           )}
         </motion.span>
       </AnimatePresence>
@@ -129,100 +159,103 @@ function PlayButton({
   );
 }
 
-function SkipButton({
-  dir,
-  disabled,
-  onClick,
+/**
+ * Tekst na żywo: wypowiedziane słowa pełnym kolorem, reszta jaśniej (jak napisy karaoke).
+ * Przy strumieniu tekst rośnie, a granica idzie za głosem.
+ */
+function LiveText({
+  text,
+  progress,
+  state,
+  className = "",
+  edgeRef,
 }: {
-  dir: "prev" | "next";
-  disabled: boolean;
-  onClick: () => void;
+  text: string | null;
+  progress: number;
+  state: RouteViewProps["storyState"];
+  className?: string;
+  /** Znacznik w miejscu, do którego doszedł głos (do przewijania za nim). */
+  edgeRef?: Ref<HTMLSpanElement>;
 }) {
-  const Icon = dir === "prev" ? SkipPrevIcon : SkipNextIcon;
+  if (state === "loading" || !text) {
+    return (
+      <p className={`animate-pulse text-tekst-3 ${className}`}>Sawa zbiera myśli o tym miejscu…</p>
+    );
+  }
+  if (state === "failed") {
+    return (
+      <p className={`text-tekst-3 ${className}`}>
+        Tu Sawa milczy. Odezwie się przy następnym miejscu.
+      </p>
+    );
+  }
+  const words = text.split(/(\s+)/);
+  const wordCount = words.filter((w) => w.trim()).length;
+  const spoken = Math.round((wordCount * progress) / 100);
+  let seen = 0;
+  let cut = words.length;
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].trim()) seen++;
+    if (seen > spoken) {
+      cut = i;
+      break;
+    }
+  }
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      disabled={disabled}
-      aria-label={dir === "prev" ? "Poprzednia opowieść" : "Następna opowieść"}
-      className="flex size-12 items-center justify-center rounded-full text-tekst transition-[transform,opacity,background-color] hover:bg-tlo-2 active:scale-[0.92] disabled:opacity-30"
-    >
-      <Icon className="size-6" />
-    </button>
+    <p aria-live="off" className={className}>
+      <span className="text-tekst transition-colors">{words.slice(0, cut).join("")}</span>
+      <span ref={edgeRef} />
+      <span className="text-tekst-3/70">{words.slice(cut).join("")}</span>
+    </p>
   );
 }
 
-const MAX_SEGMENTS = 12;
-
-/** Pasek postępu jak w relacjach: jeden odcinek na punkt, bieżący napełnia się z opowieścią. */
-function Segments({
-  total,
+/** Pasek „do następnego tematu”: napełnia się z bieżącą częścią opowieści. */
+function NextUp({
+  stops,
   activeIndex,
   progress,
+  end,
 }: {
-  total: number;
+  stops: MockStop[];
   activeIndex: number;
   progress: number;
+  end: RouteViewProps["end"];
 }) {
+  const next = untilNext(stops, activeIndex);
+  if (!next) {
+    return (
+      <div className="flex flex-col items-start gap-2">
+        <p className="text-sm text-tekst-2">To ostatni temat tej przejażdżki.</p>
+        <EndPill end={end} />
+      </div>
+    );
+  }
   return (
-    <div
-      role="progressbar"
-      aria-label="Postęp przejażdżki"
-      aria-valuemin={0}
-      aria-valuemax={total}
-      aria-valuenow={activeIndex + progress / 100}
-      className="flex gap-1"
-    >
-      {/* Przy długiej trasie odcinki zlałyby się w kropki: wtedy jeden ciągły pasek */}
-      {total > MAX_SEGMENTS && (
-        <span className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
-          <span
-            className="block h-full origin-left rounded-full bg-glebia"
-            style={{ transform: `scaleX(${(activeIndex + progress / 100) / total})` }}
+    <div className="min-w-0 flex-1">
+      <p className="truncate text-sm text-tekst-2">
+        Dalej <span className="font-bold text-tekst">{next.stop.name}</span>
+      </p>
+      <div className="mt-1.5 flex items-center gap-2">
+        <div className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
+          <div
+            className="h-full origin-left rounded-full bg-glebia"
+            style={{ transform: `scaleX(${progress / 100})` }}
           />
+        </div>
+        <span className="shrink-0 text-xs font-semibold tabular-nums text-tekst-3">
+          {next.label}
         </span>
-      )}
-      {total <= MAX_SEGMENTS &&
-        Array.from({ length: total }, (_, index) => {
-          const fill = index < activeIndex ? 1 : index === activeIndex ? progress / 100 : 0;
-          return (
-            // biome-ignore lint/suspicious/noArrayIndexKey: odcinki nie mają innej tożsamości niż pozycja
-            <span key={index} className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
-              <span
-                className="block h-full origin-left rounded-full bg-glebia"
-                style={{ transform: `scaleX(${fill})` }}
-              />
-            </span>
-          );
-        })}
+      </div>
     </div>
   );
 }
 
-/** Przewija poziomą listę tak, żeby aktywny element był w polu widzenia. */
-function useScrollActiveIntoView(
-  listRef: React.RefObject<HTMLElement | null>,
-  activeIndex: number,
-  align: "center" | "start" = "center",
-) {
-  const reduce = useReducedMotion();
-  useEffect(() => {
-    const list = listRef.current;
-    const item = list?.children[activeIndex] as HTMLElement | undefined;
-    if (!list || !item) return;
-    const left =
-      align === "center"
-        ? item.offsetLeft - (list.clientWidth - item.clientWidth) / 2
-        : item.offsetLeft - Number.parseFloat(getComputedStyle(list).paddingLeft || "0");
-    list.scrollTo({ left, behavior: reduce ? "auto" : "smooth" });
-  }, [activeIndex, listRef, align, reduce]);
-}
-
 /* ------------------------------------------------------------------ */
-/* A. Odtwarzacz: opowieść jest bohaterem, jak „Teraz odtwarzane”      */
+/* A. Na żywo: jeden ciągły zapis tego, co mówi Sawa, jak napisy radia */
 /* ------------------------------------------------------------------ */
 
-export function RouteViewPlayer({
+export function RouteViewLive({
   durationMin,
   end,
   legs,
@@ -234,23 +267,48 @@ export function RouteViewPlayer({
   progress,
   storyText,
   storyState,
-  direction,
-  goTo,
+  transcript,
   togglePlay,
 }: RouteViewProps) {
-  const stop = stops[activeIndex];
   const reduce = useReducedMotion();
-  const stripRef = useRef<HTMLOListElement>(null);
-  useScrollActiveIntoView(stripRef, activeIndex);
-  if (!stop) return null;
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const edgeRef = useRef<HTMLSpanElement>(null);
+  const [following, setFollowing] = useState(true);
+  const stop = stops[activeIndex];
+  const past = transcript.filter((part) => part.stopIndex < activeIndex);
+
+  // Zapis jedzie za głosem (granica wypowiedzianych słów na ok. 2/3 wysokości),
+  // dopóki użytkownik sam nie przewinie
+  // biome-ignore lint/correctness/useExhaustiveDependencies: przewijamy przy każdym nowym słowie
+  useEffect(() => {
+    const el = scrollRef.current;
+    const edge = edgeRef.current;
+    if (!el || !following) return;
+    const top = edge
+      ? edge.getBoundingClientRect().top -
+        el.getBoundingClientRect().top +
+        el.scrollTop -
+        el.clientHeight * 0.66
+      : el.scrollHeight;
+    if (Math.abs(el.scrollTop - top) < 4) return;
+    el.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
+  }, [following, progress, storyText, activeIndex, reduce]);
+
+  // Ręczne przewinięcie (palec, kółko) odpina zapis od głosu; nasze scrollTo tego nie robi
+  function stopFollowing() {
+    setFollowing(false);
+  }
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-4">
       <header className="flex items-center gap-3">
         <BackButton onBack={onBack} compact />
         <div className="min-w-0 flex-1">
-          <p className="etykieta">Twoja przejażdżka</p>
-          <p className="flex flex-wrap items-center gap-1.5 text-sm text-tekst-2">
+          <p className="etykieta flex items-center gap-2">
+            <LiveDot on={isPlaying} />
+            {isPlaying ? "Sawa opowiada" : "Wstrzymane"}
+          </p>
+          <p className="mt-0.5 flex flex-wrap items-center gap-1.5 text-sm text-tekst-2">
             <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>
             <Journey legs={legs} />
           </p>
@@ -258,107 +316,89 @@ export function RouteViewPlayer({
         {isDesktop && <SawaMenuButton variant="inline" />}
       </header>
 
-      <Segments total={stops.length} activeIndex={activeIndex} progress={progress} />
+      {stop && (
+        <div className="flex items-center gap-2">
+          <span className="etykieta">Teraz</span>
+          <AnimatePresence mode="popLayout" initial={false}>
+            <motion.span
+              key={stop.id}
+              initial={reduce ? { opacity: 0 } : { opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={reduce ? { opacity: 0 } : { opacity: 0, y: -8 }}
+              transition={SPRING}
+              className="inline-flex min-w-0 items-center gap-1.5 rounded-full bg-mieta-jasna py-1 pl-1 pr-3 text-sm font-bold text-glebia-ciemna"
+            >
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-glebia text-xs font-extrabold text-white">
+                {activeIndex + 1}
+              </span>
+              <span className="truncate">{stop.name}</span>
+            </motion.span>
+          </AnimatePresence>
+        </div>
+      )}
 
-      <AnimatePresence mode="popLayout" initial={false} custom={direction}>
-        <motion.article
-          key={stop.id}
-          custom={direction}
-          initial={reduce ? { opacity: 0 } : { opacity: 0, x: direction * 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={reduce ? { opacity: 0 } : { opacity: 0, x: direction * -40 }}
-          transition={SPRING}
-          aria-label={`Opowieść ${activeIndex + 1} z ${stops.length}: ${stop.name}`}
+      <div className="relative">
+        <div
+          ref={scrollRef}
+          onTouchMove={stopFollowing}
+          onWheel={stopFollowing}
+          className="h-[22dvh] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)] md:h-[40vh]"
         >
-          <p className="etykieta flex items-center gap-2">
-            <span className="tabular-nums">
-              {activeIndex + 1} / {stops.length}
-            </span>
-            <span aria-hidden="true">·</span>
-            {stopKind(stop)}
-          </p>
-          <h2 className="mt-1.5 text-[28px] font-extrabold leading-[1.08] tracking-[-0.025em] md:text-[30px]">
-            {stop.name}
-          </h2>
-          <p className="mt-2 flex items-center gap-2 text-sm text-tekst-3">
-            <LineBadge line={stop.line} mode={stop.mode ?? "tram"} />
-            po ok. {stop.etaMin} min
-          </p>
-          <p
-            aria-live="polite"
-            className={`mt-4 line-clamp-5 min-h-[5.5em] text-[17px] leading-[1.55] text-tekst-2 ${
-              storyState === "loading" ? "animate-pulse opacity-60" : ""
-            }`}
-          >
-            {storyCopy(storyState, storyText)}
-          </p>
-        </motion.article>
-      </AnimatePresence>
-
-      <div className="flex items-center justify-center gap-6">
-        <SkipButton dir="prev" disabled={activeIndex === 0} onClick={() => goTo(activeIndex - 1)} />
-        <PlayButton isPlaying={isPlaying} onToggle={togglePlay} />
-        <SkipButton
-          dir="next"
-          disabled={activeIndex >= stops.length - 1}
-          onClick={() => goTo(activeIndex + 1)}
-        />
+          <div className="pb-[40%] pt-6">
+            {past.map((part) => (
+              <section key={part.stopIndex} className="mb-4">
+                <p className="mb-1 text-xs font-bold text-tekst-3">
+                  {part.stopIndex + 1} · {stops[part.stopIndex]?.name}
+                </p>
+                <p className="text-[15px] leading-relaxed text-tekst-3">{part.text}</p>
+              </section>
+            ))}
+            {stop && (
+              <section>
+                {past.length > 0 && (
+                  <p className="mb-1 text-xs font-bold text-glebia">
+                    {activeIndex + 1} · {stop.name}
+                  </p>
+                )}
+                <LiveText
+                  text={storyText}
+                  progress={progress}
+                  state={storyState}
+                  edgeRef={edgeRef}
+                  className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"
+                />
+              </section>
+            )}
+          </div>
+        </div>
+        <AnimatePresence>
+          {!following && (
+            <motion.button
+              type="button"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 8 }}
+              transition={SPRING}
+              onClick={() => setFollowing(true)}
+              className="szklo absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full px-3.5 py-2 text-[13px] font-bold"
+            >
+              <LiveDot on={isPlaying} />
+              Wróć do Sawy
+            </motion.button>
+          )}
+        </AnimatePresence>
       </div>
 
-      <section aria-label="Punkty trasy" className="-mx-4 md:-mx-6">
-        <div className="mb-2 flex items-center justify-between px-4 md:px-6">
-          <p className="etykieta">Po drodze</p>
-          <EndPill end={end} />
-        </div>
-        <ol
-          ref={stripRef}
-          className="flex touch-pan-x snap-x gap-2 overflow-x-auto overscroll-x-contain px-4 pb-1 [scrollbar-width:none] md:px-6"
-        >
-          {stops.map((item, index) => {
-            const isActive = index === activeIndex;
-            return (
-              <li key={item.id} className="snap-center">
-                <button
-                  type="button"
-                  aria-current={isActive ? "step" : undefined}
-                  onClick={() => goTo(index)}
-                  className="relative flex h-11 max-w-[220px] items-center gap-2 rounded-full bg-tlo-2 pl-1.5 pr-3.5 text-left transition-transform active:scale-[0.96]"
-                >
-                  {isActive && (
-                    <motion.span
-                      layoutId="trasa-a-aktywny"
-                      transition={SPRING}
-                      className="absolute inset-0 rounded-full bg-glebia"
-                    />
-                  )}
-                  <span
-                    className={`relative flex size-8 shrink-0 items-center justify-center rounded-full text-[13px] font-extrabold ${
-                      isActive
-                        ? "bg-white text-glebia"
-                        : index < activeIndex
-                          ? "bg-mieta text-glebia-ciemna"
-                          : "bg-koral text-white"
-                    }`}
-                  >
-                    {index + 1}
-                  </span>
-                  <span
-                    className={`relative truncate text-sm font-bold ${isActive ? "text-white" : ""}`}
-                  >
-                    {item.name}
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
+      <div className="flex items-center gap-4">
+        <PlayButton isPlaying={isPlaying} onToggle={togglePlay} size="lg" />
+        <NextUp stops={stops} activeIndex={activeIndex} progress={progress} end={end} />
+      </div>
     </div>
   );
 }
 
 /* ------------------------------------------------------------------ */
-/* B. Rozkład: cała jazda jak plan podróży, opowieść rozwija się w nim */
+/* B. Rozkład: plan jazdy, po którym sam przesuwa się znacznik „Ty”    */
 /* ------------------------------------------------------------------ */
 
 type ItineraryRow =
@@ -367,7 +407,7 @@ type ItineraryRow =
 
 /** Odcinki i punkty w kolejności jazdy: punkt ląduje pod odcinkiem, w którego czasie wypada. */
 function buildItinerary(legs: Leg[], stops: MockStop[]): ItineraryRow[] {
-  // Kolejne odcinki tej samej linii łączymy w jeden (jak `journeyLegs`), sumując czas
+  // Kolejne odcinki tej samej linii łączymy w jeden (jak `journeyLegs`)
   const runs: { leg: Leg; startMin: number }[] = [];
   let cursor = 0;
   for (const leg of legs) {
@@ -406,12 +446,24 @@ export function RouteViewItinerary({
   progress,
   storyText,
   storyState,
+  transcript,
   goTo,
   togglePlay,
 }: RouteViewProps) {
   const reduce = useReducedMotion();
   const rows = buildItinerary(legs, stops);
   const departAt = legs[0]?.departAt;
+  // Punkt rozwinięty ręcznie: przeszły (przeczytaj, co mówiła) albo przyszły (opowiedz teraz)
+  const [peek, setPeek] = useState<number | null>(null);
+  const saidAt = (index: number) => transcript.find((p) => p.stopIndex === index)?.text;
+  const activeRef = useRef<HTMLLIElement>(null);
+
+  // Gdy lokalizacja przesunie temat, aktywny wiersz wraca w pole widzenia
+  // biome-ignore lint/correctness/useExhaustiveDependencies: reagujemy na zmianę tematu
+  useEffect(() => {
+    setPeek(null);
+    activeRef.current?.scrollIntoView({ block: "nearest", behavior: reduce ? "auto" : "smooth" });
+  }, [activeIndex, reduce]);
 
   return (
     <div className="flex flex-col gap-5">
@@ -423,8 +475,11 @@ export function RouteViewItinerary({
         )}
         <div className="flex items-start justify-between gap-3">
           <div>
-            <p className="etykieta">Twoja przejażdżka</p>
-            <h2 className="mt-0.5 text-[34px] font-extrabold leading-none tracking-[-0.03em] tabular-nums">
+            <p className="etykieta flex items-center gap-2">
+              <LiveDot on={isPlaying} />
+              Twoja przejażdżka
+            </p>
+            <h2 className="mt-1 text-[34px] font-extrabold leading-none tracking-[-0.03em] tabular-nums">
               {formatDuration(durationMin)}
             </h2>
           </div>
@@ -436,7 +491,7 @@ export function RouteViewItinerary({
               Start <span className="font-semibold text-tekst">{clock(departAt)}</span> ·{" "}
             </>
           ) : null}
-          {stops.length} opowieści po drodze
+          {activeIndex + 1} z {stops.length} miejsc
         </p>
         {end && (
           <div className="mt-2">
@@ -468,9 +523,6 @@ export function RouteViewItinerary({
                 <LineBadge line={leg.line} mode={leg.mode} />
                 <span className="min-w-0 flex-1 truncate text-[13px] text-tekst-2">
                   {leg.mode === "walk" ? "Spacer" : `kier. ${leg.headsign}`}
-                  {leg.fromStop?.name && leg.mode !== "walk" && (
-                    <span className="text-tekst-3"> · z {leg.fromStop.name}</span>
-                  )}
                 </span>
                 {time && (
                   <span className="shrink-0 text-xs font-semibold tabular-nums text-tekst-3">
@@ -484,8 +536,10 @@ export function RouteViewItinerary({
           const { stop, index } = row;
           const isActive = index === activeIndex;
           const isDone = index < activeIndex;
+          const isOpen = isActive || peek === index;
+          const said = saidAt(index);
           return (
-            <li key={stop.id} className="relative">
+            <li key={stop.id} ref={isActive ? activeRef : undefined} className="relative">
               <span
                 aria-hidden="true"
                 className="absolute bottom-0 left-[21px] top-0 w-1 rounded-full bg-tekst/10"
@@ -496,18 +550,24 @@ export function RouteViewItinerary({
                 className={`relative rounded-[22px] ${
                   isActive
                     ? "bg-white shadow-[0_1px_2px_rgba(16,43,42,0.06),0_10px_30px_rgba(16,43,42,0.10)]"
-                    : ""
+                    : isOpen
+                      ? "bg-tlo-2"
+                      : ""
                 }`}
               >
                 <button
                   type="button"
-                  aria-current={isActive ? "step" : undefined}
-                  aria-expanded={isActive}
-                  onClick={() => goTo(index)}
-                  className="flex w-full items-center gap-3 rounded-[22px] py-2.5 pl-2 pr-3 text-left transition-colors active:bg-tlo-2"
+                  aria-current={isActive ? "location" : undefined}
+                  aria-expanded={isOpen}
+                  onClick={() => {
+                    if (isActive) return;
+                    haptic();
+                    setPeek((current) => (current === index ? null : index));
+                  }}
+                  className="flex w-full items-center gap-3 rounded-[22px] py-2.5 pl-2 pr-3 text-left"
                 >
                   <span
-                    className={`flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-white text-[13px] font-extrabold transition-colors duration-300 ${
+                    className={`relative flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-white text-[13px] font-extrabold transition-colors duration-300 ${
                       isActive
                         ? "bg-glebia text-white"
                         : isDone
@@ -515,27 +575,38 @@ export function RouteViewItinerary({
                           : "bg-koral text-white"
                     }`}
                   >
+                    {/* Znacznik „Ty” przeskakuje sprężyną między punktami */}
+                    {isActive && (
+                      <motion.span
+                        layoutId="trasa-b-ty"
+                        transition={SPRING}
+                        className="absolute -inset-1.5 rounded-full border-2 border-glebia/40"
+                      />
+                    )}
                     {index + 1}
                   </span>
                   <span className="min-w-0 flex-1">
                     <span
-                      className={`block truncate font-bold ${isActive ? "text-[17px]" : "text-[15px]"}`}
+                      className={`block truncate font-bold ${isActive ? "text-[17px]" : "text-[15px]"} ${
+                        isDone && !isOpen ? "text-tekst-2" : ""
+                      }`}
                     >
                       {stop.name}
                     </span>
                     <span className="block text-xs text-tekst-3">
-                      {stopKind(stop)} · {stopLineLabel(stop)}
+                      {isActive
+                        ? "Sawa opowiada"
+                        : isDone
+                          ? "Opowiedziane"
+                          : `${stopLineLabel(stop)} · za ok. ${Math.max(1, stop.etaMin - (stops[activeIndex]?.etaMin ?? 0))} min`}
                     </span>
-                  </span>
-                  <span className="shrink-0 text-xs font-semibold tabular-nums text-tekst-3">
-                    +{stop.etaMin} min
                   </span>
                 </button>
 
                 <AnimatePresence initial={false}>
-                  {isActive && (
+                  {isOpen && (
                     <motion.div
-                      key="story"
+                      key="body"
                       initial={reduce ? { opacity: 0 } : { opacity: 0, height: 0 }}
                       animate={reduce ? { opacity: 1 } : { opacity: 1, height: "auto" }}
                       exit={reduce ? { opacity: 0 } : { opacity: 0, height: 0 }}
@@ -543,40 +614,42 @@ export function RouteViewItinerary({
                       className="overflow-hidden"
                     >
                       <div className="px-3 pb-3 pl-[52px]">
-                        <p
-                          aria-live="polite"
-                          className={`text-[15px] leading-relaxed text-tekst-2 ${
-                            storyState === "loading" ? "animate-pulse opacity-60" : ""
-                          }`}
-                        >
-                          {storyCopy(storyState, storyText)}
-                        </p>
-                        <div className="mt-3 flex items-center gap-3">
-                          <PlayButton isPlaying={isPlaying} onToggle={togglePlay} size="sm" />
-                          <div
-                            role="progressbar"
-                            aria-label="Postęp opowieści"
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                            aria-valuenow={Math.round(progress)}
-                            className="h-1.5 flex-1 overflow-hidden rounded-full bg-tlo-2"
-                          >
-                            <div
-                              className="h-full origin-left rounded-full bg-glebia"
-                              style={{ transform: `scaleX(${progress / 100})` }}
+                        {isActive ? (
+                          <>
+                            <LiveText
+                              text={storyText}
+                              progress={progress}
+                              state={storyState}
+                              className="line-clamp-6 text-[15px] leading-relaxed"
                             />
-                          </div>
-                          {index < stops.length - 1 && (
+                            <div className="mt-3 flex items-center gap-3">
+                              <PlayButton isPlaying={isPlaying} onToggle={togglePlay} />
+                              <NextUp
+                                stops={stops}
+                                activeIndex={activeIndex}
+                                progress={progress}
+                                end={null}
+                              />
+                            </div>
+                          </>
+                        ) : isDone ? (
+                          <p className="text-[14px] leading-relaxed text-tekst-2">
+                            {said ?? "Sawa była tu, zanim zaczęło się nagrywanie."}
+                          </p>
+                        ) : (
+                          <div className="flex items-center justify-between gap-3">
+                            <p className="text-[13px] text-tekst-2">
+                              Sawa zacznie sama, gdy tu dojedziesz.
+                            </p>
                             <button
                               type="button"
-                              onClick={() => goTo(index + 1)}
-                              aria-label="Następna opowieść"
-                              className="flex size-10 items-center justify-center rounded-full text-tekst transition-[transform,background-color] hover:bg-tlo-2 active:scale-[0.92]"
+                              onClick={() => goTo(index)}
+                              className="h-9 shrink-0 rounded-full bg-white px-3.5 text-[13px] font-bold text-glebia shadow-[0_1px_3px_rgba(16,43,42,0.12)] transition-transform active:scale-[0.96]"
                             >
-                              <SkipNextIcon className="size-5" />
+                              Opowiedz teraz
                             </button>
-                          )}
-                        </div>
+                          </div>
+                        )}
                       </div>
                     </motion.div>
                   )}
@@ -591,10 +664,10 @@ export function RouteViewItinerary({
 }
 
 /* ------------------------------------------------------------------ */
-/* C. Pocztówki: każdy punkt to duża karta, przewijana palcem w bok    */
+/* C. Rozdziały: karty jadą same za lokalizacją, w bok można podejrzeć */
 /* ------------------------------------------------------------------ */
 
-export function RouteViewPostcards({
+export function RouteViewChapters({
   durationMin,
   end,
   legs,
@@ -606,39 +679,40 @@ export function RouteViewPostcards({
   progress,
   storyText,
   storyState,
+  transcript,
   goTo,
   togglePlay,
 }: RouteViewProps) {
   const railRef = useRef<HTMLOListElement>(null);
-  // Przewijanie wywołane przez nas (zmiana punktu z zewnątrz) nie może z powrotem wybierać punktu
-  const programmatic = useRef(false);
-  const settleTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
-  const activeRef = useRef(activeIndex);
-  activeRef.current = activeIndex;
-  const goToRef = useRef(goTo);
-  goToRef.current = goTo;
   const reduce = useReducedMotion();
+  const [viewed, setViewed] = useState(activeIndex);
+  const settleTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const isLive = viewed === activeIndex;
+  const saidAt = (index: number) => transcript.find((p) => p.stopIndex === index)?.text;
 
-  // Punkt zmienił się z zewnątrz (koniec opowieści, mapa, klawiatura): dosuwamy kartę
-  useEffect(() => {
+  function scrollToCard(index: number, smooth = true) {
     const rail = railRef.current;
-    const card = rail?.children[activeIndex] as HTMLElement | undefined;
+    const card = rail?.children[index] as HTMLElement | undefined;
     if (!rail || !card) return;
     const left = card.offsetLeft - (rail.clientWidth - card.clientWidth) / 2;
-    if (Math.abs(rail.scrollLeft - left) < 2) return;
-    programmatic.current = true;
-    rail.scrollTo({ left, behavior: reduce ? "auto" : "smooth" });
-  }, [activeIndex, reduce]);
+    rail.scrollTo({ left, behavior: smooth && !reduce ? "smooth" : "auto" });
+  }
 
+  // Lokalizacja zmieniła temat: karta jedzie sama, ale tylko gdy użytkownik nie podgląda innej
+  // biome-ignore lint/correctness/useExhaustiveDependencies: reagujemy tylko na zmianę tematu
+  useEffect(() => {
+    if (viewed === activeIndex - 1 || viewed === activeIndex) {
+      setViewed(activeIndex);
+      scrollToCard(activeIndex);
+    }
+  }, [activeIndex]);
+
+  // Przewijanie palcem tylko zmienia oglądaną kartę; o tym, co mówi Sawa, decyduje lokalizacja
   function onScroll() {
     clearTimeout(settleTimer.current);
     settleTimer.current = setTimeout(() => {
       const rail = railRef.current;
       if (!rail) return;
-      if (programmatic.current) {
-        programmatic.current = false;
-        return;
-      }
       const center = rail.scrollLeft + rail.clientWidth / 2;
       let nearest = 0;
       let best = Number.POSITIVE_INFINITY;
@@ -650,14 +724,9 @@ export function RouteViewPostcards({
           nearest = index;
         }
       });
-      if (nearest !== activeRef.current) {
-        haptic();
-        goToRef.current(nearest);
-      }
-    }, 110);
+      setViewed(nearest);
+    }, 90);
   }
-
-  const next = stops[activeIndex + 1];
 
   return (
     <div className="flex flex-col gap-4">
@@ -674,105 +743,139 @@ export function RouteViewPostcards({
         <BackButton onBack={onBack} compact />
       </header>
 
-      <ol
-        ref={railRef}
-        onScroll={onScroll}
-        aria-label="Opowieści na trasie"
-        className="-mx-4 flex touch-pan-x snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain px-[7%] py-2 [scrollbar-width:none] md:-mx-6"
-      >
-        {stops.map((stop, index) => {
-          const isActive = index === activeIndex;
-          return (
-            <li
-              key={stop.id}
-              aria-current={isActive ? "step" : undefined}
-              className="w-[86%] shrink-0 snap-center snap-always"
-            >
-              <motion.article
-                animate={{ scale: isActive ? 1 : 0.94, opacity: isActive ? 1 : 0.55 }}
-                transition={SPRING}
-                aria-label={`Opowieść ${index + 1} z ${stops.length}: ${stop.name}`}
-                className="relative flex h-full min-h-[300px] flex-col overflow-hidden rounded-[28px] bg-white p-5 shadow-[0_1px_2px_rgba(16,43,42,0.06),0_14px_34px_rgba(16,43,42,0.12)]"
+      <div className="relative">
+        <ol
+          ref={railRef}
+          onScroll={onScroll}
+          aria-label="Rozdziały przejażdżki"
+          className="-mx-4 flex touch-pan-x snap-x snap-mandatory gap-3 overflow-x-auto overscroll-x-contain px-[7%] py-2 [scrollbar-width:none] md:-mx-6"
+        >
+          {stops.map((stop, index) => {
+            const isActive = index === activeIndex;
+            const isDone = index < activeIndex;
+            return (
+              <li
+                key={stop.id}
+                aria-current={isActive ? "location" : undefined}
+                className="w-[86%] shrink-0 snap-center snap-always"
               >
-                <span
-                  aria-hidden="true"
-                  className={`pointer-events-none absolute right-5 top-4 text-[44px] font-extrabold leading-none tracking-[-0.04em] tabular-nums ${
-                    index < activeIndex ? "text-mieta" : "text-koral/35"
-                  }`}
+                <motion.article
+                  animate={{
+                    scale: index === viewed ? 1 : 0.94,
+                    opacity: index === viewed ? 1 : 0.55,
+                  }}
+                  transition={SPRING}
+                  aria-label={`Rozdział ${index + 1} z ${stops.length}: ${stop.name}`}
+                  className="relative flex h-full min-h-[290px] flex-col overflow-hidden rounded-[28px] bg-white p-5 shadow-[0_1px_2px_rgba(16,43,42,0.06),0_14px_34px_rgba(16,43,42,0.12)]"
                 >
-                  {index + 1}
-                </span>
-                <p className="etykieta relative">{stopKind(stop)}</p>
-                <h3 className="relative mt-1 pr-14 text-[24px] font-extrabold leading-[1.1] tracking-[-0.02em]">
-                  {stop.name}
-                </h3>
-                <p className="relative mt-2 flex items-center gap-2 text-[13px] text-tekst-3">
-                  <LineBadge line={stop.line} mode={stop.mode ?? "tram"} />
-                  po ok. {stop.etaMin} min
-                </p>
+                  <p className="etykieta flex items-center gap-2">
+                    {isActive ? (
+                      <>
+                        <LiveDot on={isPlaying} /> Teraz
+                      </>
+                    ) : isDone ? (
+                      "Już było"
+                    ) : (
+                      `Za ok. ${Math.max(1, stop.etaMin - (stops[activeIndex]?.etaMin ?? 0))} min`
+                    )}
+                    <span className="ml-auto tabular-nums">
+                      {index + 1}/{stops.length}
+                    </span>
+                  </p>
+                  <h3 className="mt-1 text-[24px] font-extrabold leading-[1.1] tracking-[-0.02em]">
+                    {stop.name}
+                  </h3>
+                  <p className="mt-2 flex items-center gap-2 text-[13px] text-tekst-3">
+                    <LineBadge line={stop.line} mode={stop.mode ?? "tram"} />
+                  </p>
 
-                <p
-                  aria-live={isActive ? "polite" : undefined}
-                  className={`relative mt-4 line-clamp-6 flex-1 text-[15px] leading-relaxed text-tekst-2 ${
-                    isActive && storyState === "loading" ? "animate-pulse opacity-60" : ""
-                  }`}
-                >
-                  {isActive
-                    ? storyCopy(storyState, storyText)
-                    : index < activeIndex
-                      ? "Już opowiedziane. Przesuń, żeby posłuchać jeszcze raz."
-                      : "Sawa opowie, kiedy tu dojedziesz."}
-                </p>
-
-                <div className="relative mt-4 flex items-center gap-3">
-                  {isActive ? (
-                    <PlayButton isPlaying={isPlaying} onToggle={togglePlay} size="sm" />
-                  ) : (
-                    <button
-                      type="button"
-                      onClick={() => goTo(index)}
-                      className="h-10 rounded-full bg-tlo-2 px-4 text-sm font-bold text-tekst transition-transform active:scale-[0.96]"
-                    >
-                      Posłuchaj
-                    </button>
-                  )}
-                  <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-tlo-2">
-                    <div
-                      className="h-full origin-left rounded-full bg-glebia"
-                      style={{
-                        transform: `scaleX(${isActive ? progress / 100 : index < activeIndex ? 1 : 0})`,
-                      }}
-                    />
+                  <div className="mt-3 flex-1">
+                    {isActive ? (
+                      <LiveText
+                        text={storyText}
+                        progress={progress}
+                        state={storyState}
+                        className="line-clamp-6 text-[15px] leading-relaxed"
+                      />
+                    ) : isDone ? (
+                      <p className="line-clamp-6 text-[15px] leading-relaxed text-tekst-2">
+                        {saidAt(index) ?? "Sawa była tu, zanim zaczęło się nagrywanie."}
+                      </p>
+                    ) : (
+                      <p className="text-[15px] leading-relaxed text-tekst-3">
+                        Sawa zacznie sama, gdy tu dojedziesz.
+                      </p>
+                    )}
                   </div>
-                </div>
-              </motion.article>
-            </li>
-          );
-        })}
-      </ol>
 
-      <div className="flex items-center justify-center gap-1.5" aria-hidden="true">
-        {stops.map((stop, index) => (
-          <motion.span
-            key={stop.id}
-            animate={{ width: index === activeIndex ? 18 : 6 }}
-            transition={SPRING}
-            className={`h-1.5 rounded-full ${index === activeIndex ? "bg-glebia" : "bg-tekst/15"}`}
-          />
-        ))}
+                  <div className="mt-4 flex items-center gap-3">
+                    {isActive ? (
+                      <>
+                        <PlayButton isPlaying={isPlaying} onToggle={togglePlay} />
+                        <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-tlo-2">
+                          <div
+                            className="h-full origin-left rounded-full bg-glebia"
+                            style={{ transform: `scaleX(${progress / 100})` }}
+                          />
+                        </div>
+                      </>
+                    ) : isDone ? null : (
+                      <button
+                        type="button"
+                        onClick={() => goTo(index)}
+                        className="h-10 rounded-full bg-tlo-2 px-4 text-sm font-bold text-glebia transition-transform active:scale-[0.96]"
+                      >
+                        Opowiedz teraz
+                      </button>
+                    )}
+                  </div>
+                </motion.article>
+              </li>
+            );
+          })}
+        </ol>
+
+        <AnimatePresence>
+          {!isLive && (
+            <motion.button
+              type="button"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={SPRING}
+              onClick={() => {
+                haptic();
+                setViewed(activeIndex);
+                scrollToCard(activeIndex);
+              }}
+              className="szklo absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full px-3.5 py-2 text-[13px] font-bold"
+            >
+              <LiveDot on={isPlaying} />
+              Wróć do Sawy
+            </motion.button>
+          )}
+        </AnimatePresence>
       </div>
 
-      <div className="flex flex-col items-start gap-2">
-        {next ? (
-          <p className="text-sm text-tekst-2">
-            Dalej: <span className="font-bold text-tekst">{next.name}</span> · po ok. {next.etaMin}{" "}
-            min
-          </p>
-        ) : (
-          <p className="text-sm text-tekst-2">To ostatnia opowieść na tej trasie.</p>
-        )}
-        <EndPill end={end} />
+      <div className="flex items-center justify-center gap-1.5 pt-2" aria-hidden="true">
+        {stops.length <= 16 &&
+          stops.map((stop, index) => (
+            <motion.span
+              key={stop.id}
+              animate={{ width: index === activeIndex ? 18 : 6 }}
+              transition={SPRING}
+              className={`h-1.5 rounded-full ${
+                index === activeIndex
+                  ? "bg-glebia"
+                  : index < activeIndex
+                    ? "bg-mieta"
+                    : "bg-tekst/15"
+              }`}
+            />
+          ))}
       </div>
+
+      <EndPill end={end} />
     </div>
   );
 }

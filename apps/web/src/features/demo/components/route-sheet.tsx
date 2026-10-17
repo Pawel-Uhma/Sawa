@@ -11,9 +11,9 @@ import {
   ROUTE_VARIANTS,
   type RouteVariant,
   RouteVariantSwitch,
+  RouteViewChapters,
   RouteViewItinerary,
-  RouteViewPlayer,
-  RouteViewPostcards,
+  RouteViewLive,
   type RouteViewProps,
 } from "./route-variants";
 
@@ -38,14 +38,12 @@ type RouteSheetProps = {
 export function RouteSheet(props: RouteSheetProps) {
   const { stops, activeIndex, onActiveChange, player } = props;
   const { setIsPlaying, rewind } = player;
-  const [direction, setDirection] = useState(1);
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
 
   const goTo = useCallback(
     (index: number) => {
       if (index < 0 || index >= stops.length || index === activeIndex) return;
-      setDirection(index > activeIndex ? 1 : -1);
       rewind();
       setIsPlaying(true);
       onActiveChange(index);
@@ -53,7 +51,7 @@ export function RouteSheet(props: RouteSheetProps) {
     [activeIndex, stops.length, onActiveChange, setIsPlaying, rewind],
   );
 
-  // Po końcu opowieści Sawa przechodzi do następnego punktu
+  // Po końcu opowieści Sawa przechodzi do następnego punktu. Zastępstwo lokalizacji do czasu T-106.
   useEffect(() => {
     if (progress < 100) return;
     if (hasNext) goTo(activeIndex + 1);
@@ -71,21 +69,19 @@ export function RouteSheet(props: RouteSheetProps) {
     said[stop.id] && index <= activeIndex ? [{ stopIndex: index, text: said[stop.id] }] : [],
   );
 
-  // Klawiatura na desktopie: strzałki i spacja
+  // Klawiatura na desktopie: spacja wstrzymuje. Strzałek nie ma, bo temat wybiera lokalizacja.
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       const target = event.target as HTMLElement | null;
       if (target?.closest("input, textarea, button, [contenteditable]")) return;
-      if (event.key === "ArrowRight") goTo(activeIndex + 1);
-      else if (event.key === "ArrowLeft") goTo(activeIndex - 1);
-      else if (event.key === " ") {
+      if (event.key === " ") {
         event.preventDefault();
         togglePlay();
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [activeIndex, goTo, togglePlay]);
+  }, [togglePlay]);
 
   const content = (
     <SheetContent
@@ -95,7 +91,6 @@ export function RouteSheet(props: RouteSheetProps) {
       storyText={player.text}
       transcript={transcript}
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
-      direction={direction}
       goTo={goTo}
       togglePlay={togglePlay}
     />
@@ -264,7 +259,7 @@ function useRouteVariant() {
 function SheetContent(props: RouteViewProps) {
   const [variant, setVariant] = useRouteVariant();
   const View =
-    variant === "a" ? RouteViewPlayer : variant === "b" ? RouteViewItinerary : RouteViewPostcards;
+    variant === "a" ? RouteViewLive : variant === "b" ? RouteViewItinerary : RouteViewChapters;
   return (
     <div className="flex flex-col gap-4">
       <RouteVariantSwitch value={variant} onChange={setVariant} />
