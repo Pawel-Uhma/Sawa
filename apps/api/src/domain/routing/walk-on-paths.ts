@@ -11,8 +11,10 @@ import { type ScorePrefs, scorePlace } from "./score";
 import type { LngLat, PlacePoint } from "./types";
 import {
   DEFAULT_WALK_OPTIONS,
+  isLoop,
   RETRACE_M,
   RETRACE_STEP_M,
+  roundness,
   WALK_LARGE_VISIBLE_RADIUS_M,
   type Walk,
   type WalkOptions,
@@ -95,18 +97,25 @@ export type WalkOnPath = { walk: Walk; path?: LngLat[] };
 /**
  * Of walks planned on straight lines, the best one along its real path: the places the path
  * passes, its length at walking speed and the stretches walked back the same way, weighed like
- * `planWalk` does. Only walks that fit `maxBudgetShare` × budget count; when none does,
+ * `planWalk` does (a loop also by how round its path is). Only walks that fit `maxBudgetShare` × budget count; when none does,
  * the ones near the shortest (`NEAR_SHORTEST`). The walk gets the path's places and time. Undefined when no walk has a path.
  */
 export function pickWalkOnPaths(
   walks: WalkOnPath[],
-  input: PathScoring & { places: Iterable<PlacePoint>; budgetSec: number },
+  input: PathScoring & {
+    places: Iterable<PlacePoint>;
+    budgetSec: number;
+    origin?: LatLng;
+    end?: LatLng;
+  },
   options: Partial<WalkOptions> = {},
 ): Walk | undefined {
   const opts = { ...DEFAULT_WALK_OPTIONS, ...options };
   if (input.budgetSec <= 0) return undefined;
   const places = [...input.places];
   const maxSec = opts.maxBudgetShare * input.budgetSec;
+  const roundnessBonus =
+    input.origin && isLoop(input.origin, input.end) ? opts.loopRoundnessBonus : 0;
   const scored = walks.flatMap(({ walk, path }) => {
     if (!path || path.length < 2) return [];
     const cumDistM = cumulativeDistancesM(path);
@@ -122,7 +131,10 @@ export function pickWalkOnPaths(
     const objective =
       score -
       Math.abs(sec - input.budgetSec) / input.budgetSec -
-      (opts.backtrackPenalty * retracedSec) / input.budgetSec;
+      (opts.backtrackPenalty * retracedSec) / input.budgetSec +
+      (roundnessBonus > 0
+        ? roundnessBonus * roundness(path.map(([lng, lat]) => ({ lat, lng })))
+        : 0);
     return [{ walk: { ...walk, places: passed, elapsedSec: sec, score }, objective }];
   });
   const shortestSec = Math.min(...scored.map((s) => s.walk.elapsedSec));

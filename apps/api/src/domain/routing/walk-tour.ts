@@ -25,6 +25,11 @@ export type WalkOptions = {
   maxBudgetShare: number;
   /** Cost of walking back along the way already walked, per budget share (see beam search). */
   backtrackPenalty: number;
+  /**
+   * Value of a loop's shape (`roundness`, 0–1): a walk that comes back around, not out and
+   * back along the same or a parallel street. Loops only.
+   */
+  loopRoundnessBonus: number;
 };
 
 export const DEFAULT_WALK_OPTIONS: WalkOptions = {
@@ -35,6 +40,7 @@ export const DEFAULT_WALK_OPTIONS: WalkOptions = {
   maxCandidates: 40,
   maxBudgetShare: 1.1,
   backtrackPenalty: 2,
+  loopRoundnessBonus: 2,
 };
 
 export type Walk = {
@@ -94,6 +100,40 @@ export function retracedShare(waypoints: LatLng[], from: LatLng, to: LatLng): nu
     }
   }
   return near / samples;
+}
+
+/** An end this close to the origin makes the walk a loop. */
+export const LOOP_END_M = 50;
+
+/** Whether a walk from `origin` to `end` is a loop (it comes back to the start). */
+export function isLoop(origin: LatLng, end: LatLng | undefined): boolean {
+  return end !== undefined && haversineM(origin, end) <= LOOP_END_M;
+}
+
+/**
+ * How round the walk through `points` is, closed back to the first point: 4π·area / perimeter²
+ * (isoperimetric quotient), 1 for a circle, about 0.8 for a square, 0 for out and back along
+ * one line. A loop that comes back a street over (a "lollipop") encloses little and scores low,
+ * though no stretch of it is walked twice.
+ */
+export function roundness(points: LatLng[]): number {
+  const first = points[0];
+  if (!first || points.length < 3) return 0;
+  const kx = M_PER_DEG_LAT * Math.cos((first.lat * Math.PI) / 180);
+  const toXY = (p: LatLng) => ({
+    x: (p.lng - first.lng) * kx,
+    y: (p.lat - first.lat) * M_PER_DEG_LAT,
+  });
+  let twiceArea = 0;
+  let perimeterM = 0;
+  points.forEach((p, i) => {
+    const a = toXY(p);
+    const b = toXY(points[(i + 1) % points.length] as LatLng);
+    twiceArea += a.x * b.y - b.x * a.y;
+    perimeterM += Math.hypot(b.x - a.x, b.y - a.y);
+  });
+  if (perimeterM === 0) return 0;
+  return Math.min(1, (2 * Math.PI * Math.abs(twiceArea)) / perimeterM ** 2);
 }
 
 /** A turn back this close (degrees) to the way just walked goes back along the same street. */
@@ -298,10 +338,13 @@ export function planWalks(input: WalkInput, options: Partial<WalkOptions> = {}, 
   }
 
   const finish = (s: State) => (input.end ? walkTo(s, input.end, "end") : s);
+  // A loop's shape counts as if it were already closed back to the origin.
+  const roundnessBonus = isLoop(input.origin, input.end) ? opts.loopRoundnessBonus : 0;
   const objective = (s: State) =>
     s.score -
     Math.abs(s.elapsedSec - input.budgetSec) / input.budgetSec -
-    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec;
+    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec +
+    (roundnessBonus > 0 ? roundnessBonus * roundness(s.waypoints) : 0);
   const byObjective = (a: State, b: State) =>
     objective(b) - objective(a) || a.key.localeCompare(b.key);
 
