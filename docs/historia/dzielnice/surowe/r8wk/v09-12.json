@@ -1,0 +1,55 @@
+[
+  {
+    "id": "pomnik-1-armii-wp",
+    "nazwa": "Pomnik I Armii Wojska Polskiego",
+    "name_en": "Monument to the 1st Polish Army",
+    "typ": "pomnik",
+    "dzielnica": "Wesoła",
+    "adres_dzis": "Wspólna",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik w formie obelisku znajduje się przy ul. Wspólnej w dzielnicy Wesoła.",
+      "Upamiętnia pobyt w miejscowości Zielona stanowiska dowodzenia 1 Armii Wojska Polskiego, która prowadziła działania wojenne nad środkową Wisłą wraz z Armią Radziecką i przyniosła wolność Warszawie.",
+      "Na monumencie wyryte są nazwy wszystkich oddziałów, jakie wchodziły w skład I Armii Wojska Polskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Monument to the 1st Polish Army is an obelisk on ul. Wspólna in Wesoła. It commemorates the headquarters of the 1st Polish Army at Zielona, and the names of all its units are carved on it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pomnik I Armii Wojska Polskiego", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_I_Armii_Wojska_Polskiego"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych i numeru. Artykuł podaje tylko ulicę (przy ul. Wspólnej)."
+  },
+  {
+    "id": "rolkostrada-wesola",
+    "nazwa": "Rolkostrada Wesoła",
+    "name_en": "Rolkostrada Wesoła (Roller Route Wesoła)",
+    "typ": "sport",
+    "dzielnica": "Wesoła",
+    "adres_dzis": "1 Praskiego Pułku",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2015–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obiekt powstał z inicjatywy Towarzystwa Narciarskiego Biegówki – organizacji pożytku publicznego.",
+      "W warszawskim Budżecie Partycypacyjnym 2015 projekt RoLKoSTRADY zwyciężył w głosowaniu mieszkańców, dzięki czemu możliwe było zrealizowanie jej pierwszego odcinka.",
+      "Budowę bezpiecznej przestrzeni dla użytkowników „małych kółek” wsparli m.in. Warszawskie Stowarzyszenie Rolkarskie POLSKATER, Polski Związek Sportów Wrotkarskich i Stowarzyszenie Bieg Piastów.",
+      "RoLKoSTRADA powstała dzięki zaangażowaniu Urzędu Dzielnicy Wesoła i Lasów Państwowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rolkostrada Wesoła is a sports and recreation route in Wesoła for roller skating and skiing. Its first section was funded through the 2015 participatory budget, and it was built with the district office and the State Forests.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Rolkostrada Wesoła", "url": "https://warszawa.fandom.com/pl/wiki/Rolkostrada_Wesoła"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych i numeru. Obiekt zaczyna się przy ul. 1 Praskiego Pułku i biegnie wzdłuż ul. Niemcewicza."
+  }
+]
