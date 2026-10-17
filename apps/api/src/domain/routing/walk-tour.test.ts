@@ -1,7 +1,14 @@
 import { haversineM } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
-import { placesAlong, planWalk, retracedShare, toSegment, walkThrough } from "./walk-tour";
+import {
+  placesAlong,
+  planWalk,
+  retracedShare,
+  toSegment,
+  turnBackM,
+  walkThrough,
+} from "./walk-tour";
 
 const ORIGIN = { lat: 52.23, lng: 21.0 };
 // ~70 m per 0.001° of longitude here; walking 1.2 m/s × 1.3 detour ≈ 0.92 m/s.
@@ -138,5 +145,46 @@ describe("walking back the same way", () => {
     const walk = planWalk(loop);
     expect(walk?.waypoints.map((p) => p.lat)).toEqual([52.23, 52.2316, 52.23, 52.23]);
     expect(walk?.elapsedSec).toBeLessThanOrEqual(1.1 * 20 * 60);
+  });
+});
+
+describe("turning back along the street just walked", () => {
+  // ~680 m east of the origin
+  const east = { lat: 52.23, lng: 21.01 };
+
+  it("counts a sharp turn back as walking back, up to the shorter arm", () => {
+    const back = turnBackM(ORIGIN, east, { lat: 52.2302, lng: 21.0 });
+    expect(back).toBeCloseTo(haversineM(east, ORIGIN), -1);
+    expect(turnBackM(ORIGIN, east, { lat: 52.2301, lng: 21.008 })).toBeCloseTo(
+      haversineM(east, { lat: 52.2301, lng: 21.008 }),
+      -1,
+    );
+  });
+
+  it("does not count a turn to another street", () => {
+    expect(turnBackM(ORIGIN, east, { lat: 52.235, lng: 21.01 })).toBe(0);
+  });
+
+  it("credits places on the way out, not on the same street walked back", () => {
+    // ~950 m east and back at ~6° to a point ~100 m north of the origin: the places ~50–70 m
+    // north of the straight line out lie by the straight line back, but that way back is the
+    // same street on the map, so the walk only gets them by passing them on the way out.
+    const far = place("far", 21.014, 52.23, ["historical"]);
+    const walk = planWalk({
+      places: [
+        far,
+        place("mid-1", 21.007, 52.23045, ["historical"]),
+        place("mid-2", 21.0042, 52.23063, ["historical"]),
+      ],
+      origin: ORIGIN,
+      end: { lat: 52.2309, lng: 21.0 },
+      budgetSec: 40 * 60,
+      interests: new Set(["historical"]),
+    });
+    const eta = new Map(walk?.places.map((p) => [p.placeId, p.etaSec]));
+    expect(eta.get("far")).toBeDefined();
+    for (const id of ["mid-1", "mid-2"]) {
+      if (eta.has(id)) expect(eta.get(id)).toBeLessThan(eta.get("far") as number);
+    }
   });
 });

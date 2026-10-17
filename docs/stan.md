@@ -7,6 +7,8 @@
 ## Teraz
 
 - 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`. API już to obsługuje (`e3a1596`, `adapters/waw/api.ts`); zostaje ustawić `WAW_API_BASE_URL` + `WAW_PROXY_KEY` na Railway (klucz od Antka prywatnie).
+- Jasiek (R2 z agentem, issue #85): migracja `places_subkind` wgrana na Supabase, seed puszczony ponownie (4511 miejsc), 35 podrodzajów, m.in. park 224, `null` 12. API na Railway wdrożone z `main` (46bd4e7, `railway up`), `/v1/places` zwraca `subkind`. **Uwaga R1:** Railway nie wdrażał automatycznie od 16:52, sprawdzić auto-deploy z GitHuba.
+
 - 19:20 (Szczepan, z agentem R1, plik R3 na prośbę użytkownika): **przystanki wsiadania na mapie (T-131, PR #84).** Pod kółkiem startu i przesiadki etykieta „Centrum 09” i „14:05” (lub „ok. 14:05”). Numer słupka z id przystanku (`stopPost()`), godzina w czasie warszawskim. Nie sprawdzone na żywej mapie. **Dla R3:** warstwa `route-boarding-label` w `route-layer.tsx`.
 
 - 19:20 (Antek, R3 z agentem): T-130 (issue #35, otwarte w „wieczornym” spotkaniu). GPS przesuwa zegar jazdy także po pierwszym miejscu: przy kolejnym punkcie trasy (`isAt`, 150 m, najwyżej 2 do przodu) `syncTo` (`ride-sync.ts`, `useGpsClockSync` w `DemoApp`). Przejścia między tematami w `story-player.ts`: wyciszenie, oddech 0,6 s, łagodne wejście (słychać tylko z `?voice=1`). **Dla R4:** zdanie-pomost do poprzedniego tematu w prompcie. **Nie sprawdzone** w jeździe.
