@@ -96,6 +96,33 @@ export function retracedShare(waypoints: LatLng[], from: LatLng, to: LatLng): nu
   return near / samples;
 }
 
+/** A turn back this close (degrees) to the way just walked goes back along the same street. */
+const TURN_BACK_FULL_DEG = 25;
+/** From this angle on, the new way is a different street. */
+const TURN_BACK_NONE_DEG = 60;
+
+/**
+ * Metres of `at` → `to` walked back along `prev` → `at` when the walk turns sharply back.
+ * Straight lines of such a narrow V stay apart, so `retracedShare` misses it, but on the map
+ * both arms run along the same street (the walk goes to a place and back the same way).
+ */
+export function turnBackM(prev: LatLng, at: LatLng, to: LatLng): number {
+  const backM = haversineM(at, prev);
+  const nextM = haversineM(at, to);
+  if (backM === 0 || nextM === 0) return 0;
+  const kx = M_PER_DEG_LAT * Math.cos((at.lat * Math.PI) / 180);
+  const [bx, by] = [(prev.lng - at.lng) * kx, (prev.lat - at.lat) * M_PER_DEG_LAT];
+  const [nx, ny] = [(to.lng - at.lng) * kx, (to.lat - at.lat) * M_PER_DEG_LAT];
+  const cos = (bx * nx + by * ny) / (Math.hypot(bx, by) * Math.hypot(nx, ny));
+  const angle = (Math.acos(Math.max(-1, Math.min(1, cos))) * 180) / Math.PI;
+  if (angle >= TURN_BACK_NONE_DEG) return 0;
+  const share =
+    angle <= TURN_BACK_FULL_DEG
+      ? 1
+      : (TURN_BACK_NONE_DEG - angle) / (TURN_BACK_NONE_DEG - TURN_BACK_FULL_DEG);
+  return share * Math.min(backM, nextM);
+}
+
 /**
  * On foot only places right by the way count: the walker passes next to them, not across the
  * street or a block away (a ride sees farther, see `VISIBLE_RADIUS_M`).
@@ -221,9 +248,21 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
     )
     .slice(0, opts.maxCandidates);
 
-  /** `state` extended by walking straight to `to`, collecting places passed. */
+  /**
+   * `state` extended by walking straight to `to`, collecting places passed. The stretch that
+   * goes back the way already walked passes nothing new: after a sharp turn back the walker is
+   * on the same street, so places by the straight line there are skipped, and elsewhere the
+   * places' score drops with the share walked again.
+   */
   function walkTo(state: State, to: LatLng, key: string): State {
     const sec = secBetween(state.at, to);
+    const lengthM = haversineM(state.at, to);
+    const prev = state.waypoints[state.waypoints.length - 2];
+    const backM = prev && lengthM > 0 ? turnBackM(prev, state.at, to) : 0;
+    const againShare = Math.max(
+      retracedShare(state.waypoints, state.at, to),
+      lengthM > 0 ? backM / lengthM : 0,
+    );
     const gained = placesAlong(
       reachable,
       { from: state.at, to, startSec: state.elapsedSec, sec },
@@ -232,15 +271,16 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
         prefs: input.prefs,
         skip: state.visited,
       },
-    );
+    ).filter((g) => sec === 0 || ((g.etaSec - state.elapsedSec) / sec) * lengthM >= backM);
     const visited = new Set(state.visited);
     for (const g of gained) visited.add(g.placeId);
-    const retracedSec = state.retracedSec + sec * retracedShare(state.waypoints, state.at, to);
+    const retracedSec = state.retracedSec + sec * againShare;
+    const gainedScore = gained.reduce((sum, g) => sum + g.score, 0);
     return {
       waypoints: [...state.waypoints, to],
       places: [...state.places, ...gained],
       elapsedSec: state.elapsedSec + sec,
-      score: state.score + gained.reduce((sum, g) => sum + g.score, 0),
+      score: state.score + gainedScore * (1 - againShare),
       at: to,
       visited,
       key: `${state.key}|${key}`,
