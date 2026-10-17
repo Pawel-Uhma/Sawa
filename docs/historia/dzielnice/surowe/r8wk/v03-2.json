@@ -1,0 +1,178 @@
+[
+  {
+    "id": "ulica-belgijska",
+    "nazwa": "Ulica Belgijska",
+    "name_en": "Belgijska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Belgijska",
+    "adres_historyczny": "Flaemische Strasse (w okresie okupacji, 1943–1945)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Swoją nazwę, oficjalnie nadaną w 1919 roku, ulica zawdzięcza istniejącej niegdyś w tym rejonie fabryce filcu i kapeluszy, zwanej „Belgijką”, należącej do Belgijsko-Ruskiego Towarzystwa Akcyjnego Manufaktury.",
+      "Przy Belgijskiej 7 znajdowała się Fabryka Chemiczno-Farmaceutyczna „Adolf Gąsecki i Synowie”, znana m.in. z wyrobu popularnego środka przeciwbólowego zwanego Kogutkiem.",
+      "W okresie okupacji (od 30 lipca 1943 do 17 stycznia 1945) ulica nosiła nazwę Flaemische Strasse (Flamandzka)."
+    ],
+    "ciekawostki": [
+      "Przy Belgijskiej 11 znajduje się miejsce pamięci Powstania Warszawskiego z napisem: „Tu 3.8.1944 hitlerowcy rozstrzelali 23 Polaków”."
+    ],
+    "summary_en": "Belgijska is a short street in Stary Mokotów that ends in Morskie Oko Park. Its name comes from a felt and hat factory, nicknamed the „Belgijka”, that once stood nearby. During the occupation it was called Flaemische Strasse.",
+    "ludzie": [],
+    "dawne_nazwy": ["Flaemische Strasse (1943–1945)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Belgijska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Belgijska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-burgaska",
+    "nazwa": "Ulica Burgaska",
+    "name_en": "Burgaska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Burgaska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1975",
+    "istnieje": true,
+    "fakty": [
+      "Przed budową osiedla Stegny na ulicy były pola.",
+      "W 1973 roku zatwierdzono nazwę ulicy i jej przebieg, lecz dopiero ją wybudowano w 1975 roku.",
+      "Wraz z ulicą wybudowano również drogę pożarową, która jest ogólnodostępna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Burgaska is a local street in Stegny, Mokotów. Its name and route were approved in 1973, and the street was built in 1975 together with a fire road. The name comes from the Bulgarian city of Burgas.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Burgaska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Burgaska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-chocimska",
+    "nazwa": "Ulica Chocimska",
+    "name_en": "Chocimska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Chocimska",
+    "adres_historyczny": "Langnerowska (1875–1919), Eugeniusza Neumanna (w okupacji)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "ok. 1820",
+    "istnieje": true,
+    "fakty": [
+      "Ulica wytyczona została około 1820, początkowo tylko na krótkim odcinku między placem Unii Lubelskiej a Skolimowską.",
+      "W 1875 roku ulica nabrała bardziej współczesnego kształtu i otrzymała nazwę Langnerowska.",
+      "W granicach Warszawy znalazła się w 1916 roku.",
+      "Dzisiejsza nazwa ulicy, nadana w 1919 roku, upamiętnia miasto Chocim oraz zwycięskie bitwy nad Turkami.",
+      "W 1945 roku ulica przyjęła ponownie nazwę używaną do dzisiaj."
+    ],
+    "ciekawostki": [
+      "W kamienicy przy Chocimskiej 35 mieszkali m.in. Witold Gombrowicz, Witold Rowicki i Władysław Tatarkiewicz."
+    ],
+    "summary_en": "Chocimska is a 700-metre street in Górny Mokotów that runs from Willowa to Klonowa. It was laid out around 1820 and named in 1919 after the town of Chocim and the Polish victories over the Turks there.",
+    "ludzie": [
+      {"kto": "Witold Gombrowicz", "rola": "mieszkaniec kamienicy przy Chocimskiej 35", "wiki": null},
+      {"kto": "Witold Rowicki", "rola": "mieszkaniec kamienicy przy Chocimskiej 35", "wiki": null},
+      {"kto": "Władysław Tatarkiewicz", "rola": "mieszkaniec kamienicy przy Chocimskiej 35", "wiki": null}
+    ],
+    "dawne_nazwy": ["Langnerowska", "Eugeniusza Neumanna", "Drogi Kawaleryjskiej (Reiter Weg, w okupacji)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Chocimska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Chocimska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-cichy-potok",
+    "nazwa": "Ulica Cichy Potok",
+    "name_en": "Cichy Potok Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Cichy Potok",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 2013-2015",
+    "istnieje": true,
+    "fakty": [
+      "Teren pozostawał niezagospodarowany aż do 2013 roku, kiedy to znaczną część otoczenia zajął plac budowy osiedla Potoki Residence.",
+      "W latach 2013-2015 powstał zespół ośmiu budynków mieszkalnych w zabudowie wolnostojącej, bliźniaczej i szeregowej.",
+      "Nazwę ulicy zatwierdzono oficjalnie uchwałą Rady Miasta nr LXXXIX/2303/2014 z 28 sierpnia 2014 roku.",
+      "Osiedle Ogrody Potoki powstawało od 2014 roku i zakończono je pod koniec 2015 roku.",
+      "Ulica została początkowo pokryta betonowymi płytami, które mniej więcej w lutym 2015 roku zastąpiła nawierzchnia z kostki betonowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Cichy Potok is a short local street in Stegny that was built between 2013 and 2015 alongside the Potoki residential estates. Its name was officially approved by the city council in August 2014.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Cichy Potok", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Cichy_Potok"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też plan zagospodarowania (oznaczenie 43 KDD); pominięte jako nie-historia."
+  },
+  {
+    "id": "ulica-falata",
+    "nazwa": "Ulica Fałata",
+    "name_en": "Fałata Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Fałata",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "początek XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy: początek XX wieku.",
+      "Nazwa uliczki pochodzi od nazwiska polskiego malarza Juliana Fałata.",
+      "Przy ulicy stoją domy dwóch przedwojennych spółdzielni mieszkaniowych: spółdzielni Szare Domy oraz Urzędniczej Spółdzielni Mieszkaniowej (spółdzielni różowej).",
+      "W Urzędniczej Spółdzielni Mieszkaniowej (spółdzielni różowej) mieszkała m.in. Krystyna Krahelska."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fałata is a one-way street in Stary Mokotów, named after the painter Julian Fałat. Two prewar housing cooperatives stand on it, one of them the so-called „pink” cooperative, where Krystyna Krahelska lived.",
+    "ludzie": [
+      {"kto": "Julian Fałat", "rola": "polski malarz, patron ulicy", "wiki": null},
+      {"kto": "Krystyna Krahelska", "rola": "mieszkała w Urzędniczej Spółdzielni Mieszkaniowej przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Fałata", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Fałata"}],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie o Krahelskiej nie wskazuje wprost budynku; przypisano do spółdzielni różowej."
+  },
+  {
+    "id": "ulica-fosa",
+    "nazwa": "Ulica Fosa",
+    "name_en": "Fosa Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów, Ursynów",
+    "adres_dzis": "Fosa",
+    "adres_historyczny": "Kościelna, Fortowa",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "przed XV wiekiem",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała zapewne wraz ze wsią Służew jako droga prowadząca od traktu czerskiego do kościoła parafialnego, zwana była Kościelną albo Fortową.",
+      "W 1938 roku ulica znalazła się w granicach Warszawy.",
+      "Zabudowa ulicy nie uległa zniszczeniu podczas II wojny światowej.",
+      "W 1950 roku ulicy oficjalnie nadano nazwę Fosa, ze względu na powtarzanie się nazw.",
+      "W latach 70. XX wieku wiele zabudowań w północnej pierzei ulicy zostało wyburzonych w związku z budową ul. Dolina Służewiecka."
+    ],
+    "ciekawostki": [
+      "Przy ul. Fosa 20 znajdowała się siedziba Hufca ZHP Warszawa Mokotów, obecnie przeniesiona na ul. Chełmską 50."
+    ],
+    "summary_en": "Fosa is a 650-metre street in Stary Służew that runs from Wilanowska to Nowoursynowska. It existed before the 15th century as a road to the parish church, and in 1950 it was officially given the name Fosa.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kościelna", "Fortowa"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Fosa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Fosa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica przebiega przez Mokotów i Ursynów; rekord w dzielnicy z nagłówka."
+  }
+]
