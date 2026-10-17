@@ -53,7 +53,6 @@ import {
 } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { StreetLayer } from "./street-layer";
-import { TopicLegend } from "./topic-legend";
 import { UserLayer } from "./user-layer";
 
 const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
@@ -287,7 +286,6 @@ export function SawaMap({
               : null}
         </StatusPill>
       </div>
-      <TopicLegend hasZoomControls={hasZoomControls} />
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );

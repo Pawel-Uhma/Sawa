@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Szukaj B · gotowe przejażdżki</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+</head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="status"></div>
+  <div class="szukaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <div class="tekst">Szukaj miejsca albo celu</div><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg"></div>
+  <div class="chipy">
+    <div class="chip wybrany" data-i="historia">Historia</div>
+    <div class="chip" data-i="kamienica">Kamienice</div>
+    <div class="chip" data-i="pomnik">Pomniki</div>
+    <div class="chip" data-i="mural">Murale</div>
+  </div>
+  <div class="fab" style="bottom:366px" data-i="lok"></div>
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between"><h2>Przejażdżki stąd</h2><span style="font-size:14px;font-weight:700;color:var(--glebia)">Ułóż własną</span></div>
+    <div class="pod">Ułożone z Twoich tematów, ruszasz jednym dotknięciem</div>
+    <div class="karty">
+      <div class="kp"><div class="mini" style="background:#DDF2E9"><svg viewBox="0 0 214 92" style="position:absolute;inset:0"><path d="M20 70 C60 20 90 80 120 40 S180 20 196 30" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 70 C60 20 90 80 120 40 S180 20 196 30" fill="none" stroke="#17706F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="opis"><b>Wola fabryczna</b><span>1 h 15 min · 6 opowieści</span><div class="linie"><i>22</i><i class="bus">105</i></div></div></div>
+      <div class="kp"><div class="mini" style="background:#FDE3DD"><svg viewBox="0 0 214 92" style="position:absolute;inset:0"><path d="M18 30 C50 70 90 20 120 60 S170 80 196 50" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 30 C50 70 90 20 120 60 S170 80 196 50" fill="none" stroke="#F2755F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="opis"><b>Getto i Muranów</b><span>1 h 40 min · 8 opowieści</span><div class="linie"><i>17</i><i>33</i><i class="p">pieszo</i></div></div></div>
+    </div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { center: nad(JA, -120, 14.6), zoom: 14.6, miejsca: true, miejscaR: 5 });</script>
+</body></html>
