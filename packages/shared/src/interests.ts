@@ -26,13 +26,16 @@ export const PLACE_TAGS = [
 export type PlaceTag = (typeof PLACE_TAGS)[number];
 
 export const INTEREST_TAGS: Record<Interest, readonly PlaceTag[]> = {
-  historical: ["war_uprising", "jewish_warsaw", "people", "industry", "architecture", "religion"],
-  cultural: ["street_art", "everyday_life", "architecture", "religion"],
+  historical: ["war_uprising", "jewish_warsaw", "people", "industry", "architecture"],
+  cultural: ["street_art", "everyday_life", "religion"],
   sports: ["sport"],
   nature: ["nature"],
 };
 
-/** Categories a place belongs to, from its tags. */
+/** Categories a place belongs to: its detailed tags mapped, plus category names stored directly. */
 export function interestsOfTags(tags: readonly string[]): Interest[] {
-  return INTERESTS.filter((interest) => INTEREST_TAGS[interest].some((tag) => tags.includes(tag)));
+  return INTERESTS.filter(
+    (interest) =>
+      tags.includes(interest) || INTEREST_TAGS[interest].some((tag) => tags.includes(tag)),
+  );
 }
