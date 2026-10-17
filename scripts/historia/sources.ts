@@ -14,6 +14,9 @@ export const SOURCE_FILES = [
   // (docs/historia/dzielnice/README.md), deduplicated against the files above.
   new URL("../../docs/historia/dzielnice/sawa-dzielnice.geojson", import.meta.url),
   new URL("../../docs/historia/dzielnice/osm-dzielnice.geojson", import.meta.url),
+  // Same districts: warszawa1939.pl cards (CC BY-NC, Firecrawl) and Warszawikia (CC BY-SA).
+  new URL("../../docs/historia/dzielnice/warszawa1939-dzielnice.geojson", import.meta.url),
+  new URL("../../docs/historia/dzielnice/warszawikia-dzielnice.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {
