@@ -7,7 +7,7 @@ Każdy agent (Claude Code na laptopie) sam rozpoznaje, kim jest: hook `.claude/h
 | Osoba | Git user.name | Rola |
 |---|---|---|
 | Paweł | Pawel | _do ustalenia_ |
-| Antek | _wpisać_ | _do ustalenia_ |
+| Antek | antpop | R3 |
 | Szczepan | Szczpan | R1 |
 | Janek (Jasiek) | Jasiek | R2 |
 

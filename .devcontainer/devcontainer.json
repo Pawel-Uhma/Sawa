@@ -1,0 +1,30 @@
+{
+  "name": "sawa",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
+  "runArgs": ["--name", "sawa-dev"],
+  "workspaceFolder": "/workspaces/Sawa",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/Sawa,type=bind",
+  // Dependencies and build output stay in Docker volumes, not on the host disk.
+  "mounts": [
+    "source=sawa-nm-root,target=/workspaces/Sawa/node_modules,type=volume",
+    "source=sawa-nm-web,target=/workspaces/Sawa/apps/web/node_modules,type=volume",
+    "source=sawa-nm-api,target=/workspaces/Sawa/apps/api/node_modules,type=volume",
+    "source=sawa-nm-shared,target=/workspaces/Sawa/packages/shared/node_modules,type=volume",
+    "source=sawa-nm-scripts,target=/workspaces/Sawa/scripts/node_modules,type=volume",
+    "source=sawa-next,target=/workspaces/Sawa/apps/web/.next,type=volume"
+  ],
+  "containerEnv": {
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
+  "forwardPorts": [3000, 8787],
+  "portsAttributes": {
+    "3000": { "label": "web" },
+    "8787": { "label": "api" }
+  },
+  "postCreateCommand": "sudo chown node node_modules apps/*/node_modules packages/*/node_modules scripts/node_modules apps/web/.next && sudo corepack enable && pnpm install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["biomejs.biome"]
+    }
+  }
+}
