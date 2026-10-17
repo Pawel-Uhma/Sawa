@@ -14,7 +14,12 @@ echo "git user.name: $who"
 # Wiersz osoby: kolumna 3 tabeli „Osoby” to git user.name, kolumna 4 to kod roli
 role="$(awk -F'|' -v w="$who" '/^\|/ { g=$3; gsub(/^ +| +$/, "", g); if (g == w) { r=$4; gsub(/^ +| +$/, "", r); print r; exit } }' "$team" 2>/dev/null)"
 
+note="$role"
+# Kolumna może mieć dopisek, np. „R3 (mapa)”: kod roli to początek
+role="${role%%[!R0-9]*}"
+
 if [[ "$role" =~ ^R[1-5]$ ]]; then
+  [ "$note" != "$role" ] && echo "Zakres: $note"
   card="$(ls "$dir"/docs/role/"$role"-*.md 2>/dev/null | head -1)"
   echo "Twoja rola: $role. Karta: ${card#"$dir"/}"
   [ -n "$card" ] && sed -n '1,40p' "$card"
