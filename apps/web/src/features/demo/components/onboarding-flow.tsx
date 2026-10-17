@@ -3,9 +3,11 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { type Lang, LangSwitch, pick, useLang, useT } from "@/features/i18n";
 import { ThemeToggleButton } from "@/features/theme";
 import { haptic, SPRING } from "../lib/device";
 import {
+  AUDIENCES,
   type Choice,
   EMPTY_PROFILE,
   FAMILIARITY,
@@ -29,7 +31,8 @@ export type OnboardingStep =
   | "why"
   | "how"
   | "interests"
-  | "style";
+  | "style"
+  | "audience";
 
 // Rozmowa dla kogoś, kto widzi Sawę pierwszy raz: kim jest, kim jesteś Ty, co Ci da (zależy od
 // odpowiedzi o znajomości miasta), jak działa, a potem już tylko wybory do trasy.
@@ -41,6 +44,7 @@ const ORDER: OnboardingStep[] = [
   "how",
   "interests",
   "style",
+  "audience",
 ];
 /** Strony bez pytania. Przy edycji z menu albo po „Znam Sawę” ich nie powtarzamy. */
 const INTRO: OnboardingStep[] = ["legend", "why", "how"];
@@ -60,6 +64,7 @@ const POSE: Record<OnboardingStep, SawaPose> = {
   how: "mapa",
   interests: "mysli",
   style: "sekret",
+  audience: "radosc",
 };
 
 type OnboardingFlowProps = {
@@ -68,6 +73,8 @@ type OnboardingFlowProps = {
 
 export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
   const reduce = useReducedMotion();
+  const t = useT();
+  const lang = useLang();
   const [step, setStep] = useState<OnboardingStep>("welcome");
   const [dir, setDir] = useState(1);
   const [profile, setProfile] = useState<Profile>(EMPTY_PROFILE);
@@ -99,7 +106,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
     else onDone(current);
   }
 
-  function pickSingle(field: "familiarity" | "storyStyle", key: string) {
+  function pickSingle(field: "familiarity" | "storyStyle" | "audience", key: string) {
     haptic();
     const next = { ...profile, [field]: key };
     setProfile(next);
@@ -120,7 +127,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
     });
   }
 
-  const say = sawaLine(step, profile);
+  const say = sawaLine(step, profile, lang);
   const showChrome = paged.includes(step);
   const isIntro = INTRO.includes(step);
 
@@ -152,7 +159,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
               <button
                 type="button"
                 onClick={() => go(prevOf(step))}
-                aria-label="Wstecz"
+                aria-label={t("Wstecz", "Back")}
                 className="-ml-2 flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-powierzchnia active:scale-90 active:bg-powierzchnia"
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -173,6 +180,8 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
             ) : (
               <span className="flex-1" />
             )}
+            {/* Gość z zagranicy przełącza język na pierwszym ekranie, zanim cokolwiek przeczyta */}
+            {step === "welcome" && <LangSwitch className="w-40 shrink-0" />}
             {/* Motyw od pierwszego ekranu, zanim ktoś dojdzie do menu; „Auto” jest w menu Sawy */}
             <ThemeToggleButton className="-mr-2" />
           </header>
@@ -215,7 +224,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
               {step === "legend" && <Legend onNext={() => advance()} />}
               {step === "familiarity" && (
                 <SingleChoice
-                  title="Jak dobrze znasz Warszawę?"
+                  title={t("Jak dobrze znasz Warszawę?", "How well do you know Warsaw?")}
                   options={FAMILIARITY}
                   value={profile.familiarity}
                   onPick={(key) => pickSingle("familiarity", key)}
@@ -233,10 +242,19 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
               )}
               {step === "style" && (
                 <SingleChoice
-                  title="Jak mam opowiadać?"
+                  title={t("Jak mam opowiadać?", "How should I tell my stories?")}
                   options={STORY_STYLES}
                   value={profile.storyStyle}
                   onPick={(key) => pickSingle("storyStyle", key)}
+                  onSkip={() => advance()}
+                />
+              )}
+              {step === "audience" && (
+                <SingleChoice
+                  title={t("Kto będzie słuchał?", "Who will be listening?")}
+                  options={AUDIENCES}
+                  value={profile.audience}
+                  onPick={(key) => pickSingle("audience", key)}
                   onSkip={() => advance()}
                 />
               )}
@@ -249,26 +267,49 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
 }
 
 // Sawa komentuje to, co właśnie wybrałeś (dymek zmienia się razem ze stanem, nie tylko z krokiem).
-function sawaLine(step: OnboardingStep, profile: Profile): string {
+function sawaLine(step: OnboardingStep, profile: Profile, lang: Lang): string {
+  const t = <T,>(pl: T, en: T) => pick(lang, pl, en);
   switch (step) {
     case "welcome":
-      return "Cześć! Jestem Sawa, syrenka z herbu Warszawy.";
+      return t(
+        "Cześć! Jestem Sawa, syrenka z herbu Warszawy.",
+        "Hi! I'm Sawa, the mermaid from Warsaw's coat of arms.",
+      );
     case "legend":
-      return "Mam imię po syrenie z legendy o Warszawie.";
+      return t(
+        "Mam imię po syrenie z legendy o Warszawie.",
+        "I'm named after the mermaid from the legend of Warsaw.",
+      );
     case "familiarity":
-      return "A Ty? Powiedz, czy znamy się z Warszawą.";
+      return t(
+        "A Ty? Powiedz, czy znamy się z Warszawą.",
+        "And you? Tell me how well you know Warsaw.",
+      );
     case "why":
-      return WHY_LINE[profile.familiarity ?? ""] ?? "Pokażę Ci miasto, które mijasz codziennie.";
+      return (
+        t(WHY_LINE, WHY_LINE_EN)[profile.familiarity ?? ""] ??
+        t(
+          "Pokażę Ci miasto, które mijasz codziennie.",
+          "I'll show you the city you pass every day.",
+        )
+      );
     case "how":
-      return "To proste: trzy kroki i jedziemy.";
+      return t("To proste: trzy kroki i jedziemy.", "It's simple: three steps and off we go.");
     case "interests": {
       const last = profile.interests.at(-1);
-      if (!last) return "Co Cię ciekawi? Możesz wybrać kilka.";
-      if (profile.interests.length === INTERESTS.length) return "Wszystko po trochu? Da się!";
-      return INTEREST_LINE[last] ?? "Dobry wybór! Coś jeszcze?";
+      if (!last)
+        return t("Co Cię ciekawi? Możesz wybrać kilka.", "What interests you? Pick a few.");
+      if (profile.interests.length === INTERESTS.length)
+        return t("Wszystko po trochu? Da się!", "A bit of everything? Sure!");
+      return (
+        t(INTEREST_LINE, INTEREST_LINE_EN)[last] ??
+        t("Dobry wybór! Coś jeszcze?", "Good choice! Anything else?")
+      );
     }
     case "style":
-      return "I ostatnie: jak mam opowiadać?";
+      return t("Jak mam opowiadać?", "How should I tell my stories?");
+    case "audience":
+      return t("I ostatnie: kto jedzie ze mną?", "And finally: who's riding with me?");
   }
 }
 
@@ -279,6 +320,12 @@ const WHY_LINE: Record<string, string> = {
   local: "Mieszkasz tu? To pokażę Ci Twoje miasto od nowa.",
 };
 
+const WHY_LINE_EN: Record<string, string> = {
+  first_time: "Welcome to Warsaw! I'll be your guide.",
+  know_a_bit: "Know it a bit? I'll fill in the rest.",
+  local: "You live here? Then I'll show you your city anew.",
+};
+
 /** Sawa reaguje na ostatnio wybraną kategorię. Przy sporcie i przyrodzie mówi wprost, że krótko. */
 const INTEREST_LINE: Record<string, string> = {
   historical: "Historia to moja specjalność. Coś jeszcze?",
@@ -287,11 +334,19 @@ const INTEREST_LINE: Record<string, string> = {
   nature: "Parki i skwery! O nich opowiem krótko.",
 };
 
+const INTEREST_LINE_EN: Record<string, string> = {
+  historical: "History is my speciality. Anything else?",
+  cultural: "Murals, churches, old markets. Anything else?",
+  sports: "I only have short notes on pitches, but there are plenty on the way.",
+  nature: "Parks and squares! I'll keep those short.",
+};
+
 function Progress({ segments, index }: { segments: OnboardingStep[]; index: number }) {
+  const t = useT();
   return (
     <div
       role="progressbar"
-      aria-label="Postęp"
+      aria-label={t("Postęp", "Progress")}
       aria-valuemin={1}
       aria-valuemax={segments.length}
       aria-valuenow={index + 1}
@@ -312,22 +367,31 @@ function Progress({ segments, index }: { segments: OnboardingStep[]; index: numb
 }
 
 function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: () => void }) {
+  const t = useT();
   return (
     <div className="flex flex-1 flex-col gap-8 md:gap-10">
       <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-left">
         <h1 className="text-[32px] font-extrabold leading-[1.08] tracking-[-0.025em] md:text-[clamp(2.5rem,3.8vw,3.75rem)] md:leading-[1.04]">
-          Opowiem Ci o mieście za oknem tramwaju.
+          {t(
+            "Opowiem Ci o mieście za oknem tramwaju.",
+            "I'll tell you about the city outside your tram window.",
+          )}
         </h1>
         <p className="max-w-md text-[15px] leading-relaxed text-tekst-2 md:text-lg">
-          Powiedz, co Cię ciekawi i ile masz czasu. Ułożę przejazd komunikacją miejską i opowiem o
-          miejscach, które mijasz.
+          {t(
+            "Powiedz, co Cię ciekawi i ile masz czasu. Ułożę przejazd komunikacją miejską i opowiem o miejscach, które mijasz.",
+            "Tell me what interests you and how much time you have. I'll plan a ride on public transport and tell you about the places you pass.",
+          )}
         </p>
       </div>
 
-      <ul className="hidden gap-3 md:flex" aria-label="Co potrafi Sawa">
+      <ul className="hidden gap-3 md:flex" aria-label={t("Co potrafi Sawa", "What Sawa can do")}>
         {[
-          { icon: "tram", text: "Tramwaje i autobusy ZTM" },
-          { icon: "know_a_bit", text: "Historie miejsc z danych miasta" },
+          { icon: "tram", text: t("Tramwaje i autobusy ZTM", "ZTM trams and buses") },
+          {
+            icon: "know_a_bit",
+            text: t("Historie miejsc z danych miasta", "Stories of places from city data"),
+          },
         ].map((item) => (
           <li
             key={item.icon}
@@ -347,10 +411,13 @@ function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: (
 
       <div className="mt-auto flex flex-col gap-3 md:mt-0 md:flex-row md:items-center md:gap-5">
         <PrimaryButton onClick={onStart} className="md:w-auto md:px-12">
-          Poznajmy się
+          {t("Poznajmy się", "Let's get to know each other")}
         </PrimaryButton>
         <p className="text-center text-sm text-tekst-3 md:text-left">
-          ok. minuty · bez logowania i instalacji
+          {t(
+            "ok. minuty · bez logowania i instalacji",
+            "about a minute · no sign-up, nothing to install",
+          )}
         </p>
       </div>
       <button
@@ -358,7 +425,7 @@ function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: (
         onClick={onSkipIntro}
         className="-mt-4 mx-auto h-11 rounded-full px-4 text-sm font-semibold text-tekst-3 transition-colors hover:text-tekst-2 md:mx-0 md:-mt-6"
       >
-        Znam Sawę, przejdź do pytań
+        {t("Znam Sawę, przejdź do pytań", "I know Sawa, skip to the questions")}
       </button>
     </div>
   );
@@ -373,6 +440,7 @@ type SingleChoiceProps = {
 };
 
 function SingleChoice({ title, options, value, onPick, onSkip }: SingleChoiceProps) {
+  const t = useT();
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
       <Heading>{title}</Heading>
@@ -382,7 +450,7 @@ function SingleChoice({ title, options, value, onPick, onSkip }: SingleChoicePro
         onClick={onSkip}
         className="mx-auto mt-auto h-11 rounded-full px-4 text-sm font-semibold text-tekst-3 transition-colors hover:text-tekst-2 md:mx-0 md:mt-0"
       >
-        Pomiń
+        {t("Pomiń", "Skip")}
       </button>
     </div>
   );
@@ -395,10 +463,16 @@ type InterestsProps = {
 };
 
 function Interests({ picked, onToggle, onNext }: InterestsProps) {
+  const t = useT();
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
-      <Heading sub="Od tego zależy, które miejsca wybiorę i o czym opowiem.">
-        Co Cię ciekawi?
+      <Heading
+        sub={t(
+          "Od tego zależy, które miejsca wybiorę i o czym opowiem.",
+          "This decides which places I pick and what I talk about.",
+        )}
+      >
+        {t("Co Cię ciekawi?", "What interests you?")}
       </Heading>
 
       <InterestPicker picked={picked} onToggle={onToggle} />
@@ -409,7 +483,9 @@ function Interests({ picked, onToggle, onNext }: InterestsProps) {
           onClick={onNext}
           className="md:w-auto md:px-12"
         >
-          {picked.length === 0 ? "Wybierz co najmniej jedno" : "Dalej"}
+          {picked.length === 0
+            ? t("Wybierz co najmniej jedno", "Pick at least one")
+            : t("Dalej", "Next")}
         </PrimaryButton>
       </div>
     </div>

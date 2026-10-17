@@ -1,0 +1,329 @@
+[
+  {
+    "id": "wielka-synagoga-na-tlomackiem",
+    "nazwa": "Wielka Synagoga na Tłomackiem",
+    "name_en": "Great Synagogue on Tłomackie Street",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1878–nieistnieje",
+    "istnieje": false,
+    "fakty": [
+      "Plac przy Tłomackiem nabyto 5 maja 1872 r.",
+      "Konkurs na projekt ogłoszono 11 lipca 1872 r.; w drugiej turze zwyciężył „egipski” projekt Stanisława Adamczewskiego.",
+      "Projekt i realizację powierzono Leandrowi Marconiemu.",
+      "Kamień węgielny położono 14 maja 1876 roku.",
+      "Uroczyste otwarcie i poświęcenie synagogi odbyło się 26 września 1878 roku, w dniu żydowskiego Nowego Roku 5639.",
+      "Synagoga była następczynią i spadkobierczynią synagogi „niemieckiej” na Daniłowiczowskiej."
+    ],
+    "ciekawostki": [
+      "Komitet budowy reprezentował najzamożniejszą, najbardziej wyemancypowaną i zasymilowaną część warszawskiej społeczności żydowskiej."
+    ],
+    "summary_en": "The Great Synagogue on Tłomackie Street was built in 1878 to a design by Leandro Marconi, after a competition in which an Egyptian-style project by Stanisław Adamczewski won the second round. The article in the source has no current address and is cut off before its description of the building.",
+    "ludzie": [
+      {"kto": "Leandro Marconi", "rola": "architekt, autor projektu i realizacji", "wiki": null},
+      {"kto": "Stanisław Adamczewski", "rola": "autor zwycięskiego projektu w drugiej turze konkursu", "wiki": null},
+      {"kto": "Kazimierz Granzow", "rola": "dostarczył cegłę i wykonał prace murarskie", "wiki": null},
+      {"kto": "Józef Simmler", "rola": "malarz, właściciel posesji nr hip. 600 ef sprzedanej pod budowę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Wielka Synagoga na Tłomackiem w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89718-wielka-synagoga-na-tlomackiem-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak dzisiejszego adresu i numeru przedwojennego w tekście (podane tylko 'przy Tłomackiem'). Tekst w paczce urwany w opisie bryły. Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "synagoga-nowakowskiego",
+    "nazwa": "Synagoga Nowakowskiego",
+    "name_en": "Nowakowski Synagogue",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Graniczna",
+    "adres_historyczny": "ul. Graniczna",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1811–po 1824",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga przy ul. Granicznej (nr hip. 1077) funkcjonowała w latach 1811–po 1824.",
+      "Była drewniana i mieściła się na tylnym placu podwórzowym, przytykającym do Ogrodu Saskiego od strony ul. Granicznej.",
+      "Nazwę zawdzięczała nazwisku właściciela posesji, które znajdujemy w spisie z 1815 r.; podano tam, że bóżnica istniała wówczas od lat czterech.",
+      "Budowlę rozebrano zapewne po 1824 r., kiedy Żydów wyrugowano z terenów bezpośrednio sąsiadujących z Ogrodem Saskim."
+    ],
+    "ciekawostki": [
+      "Jakub Rotwand wspominał z dzieciństwa „wielką synagogę”, w stylu prowincjonalnych bóżnic, zwaną „synagogą Nowakowskiego”."
+    ],
+    "summary_en": "The Nowakowski Synagogue was a wooden house of prayer behind a courtyard on Graniczna Street, next to the Saxon Garden. It operated from about 1811 until after 1824, when Jews were removed from the area bordering the garden.",
+    "ludzie": [
+      {"kto": "Jakub Rotwand (1818–1913)", "rola": "autor wspomnień, długoletni sekretarz Gminy Żydowskiej w Warszawie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Synagoga Nowakowskiego"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Nowakowskiego w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89597-synagoga-nowakowskiego-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru ulicy i dzisiejszego adresu w tekście. Data rozbiórki tylko przybliżona ('zapewne po 1824')."
+  },
+  {
+    "id": "akcja-ak-przy-ulicy-bonifraterskiej-1943",
+    "nazwa": "Akcja AK przy ul. Bonifraterskiej (19 IV 1943)",
+    "name_en": "Home Army action on Bonifraterska Street (19 April 1943)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bonifraterska 12",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1943",
+    "istnieje": true,
+    "fakty": [
+      "19 kwietnia 1943 r. oddział AK pod dowództwem kpt. Józefa Pszennego „Chwacki” przeprowadził akcję wysadzenia fragmentu muru getta w rejonie ulic Sapieżyńskiej i Bonifraterskiej.",
+      "Celem akcji było stworzenie drogi ewakuacyjnej dla walczących z getta; akcja się nie powiodła.",
+      "W walce zginęło kilku Niemców i granatowych policjantów oraz dwóch żołnierzy AK.",
+      "Polegli żołnierze Oddziału Saperów Praskich AK: Eugeniusz Morawski pseud. Młódek i Józef Wilk pseud. Orlik.",
+      "Tablica przy wejściu do kościoła św. Jana Bożego przy ul. Bonifraterskiej 12 upamiętnia tę akcję."
+    ],
+    "ciekawostki": [
+      "Mina przeznaczona do wyłomu w murze wybuchła na jezdni Bonifraterskiej, kilka metrów od muru, tworząc w nim szeroki lej.",
+      "Z okna jednego domu powstańcy żydowscy, osłonięci materacem, ostrzeliwali Niemców."
+    ],
+    "summary_en": "On 19 April 1943 a Polish Home Army unit under Capt. Józef Pszenny tried to blow a breach in the ghetto wall near Sapieżyńska and Bonifraterska streets to create an escape route for the fighters. The attempt failed; a plaque at Bonifraterska 12 commemorates the two AK soldiers who died.",
+    "ludzie": [
+      {"kto": "Józef Pszenny „Chwacki”", "rola": "kapitan, dowódca oddziału AK", "wiki": null},
+      {"kto": "Eugeniusz Morawski „Młódek”", "rola": "żołnierz AK, poległ 19 IV 1943", "wiki": null},
+      {"kto": "Józef Wilk „Orlik”", "rola": "żołnierz AK, poległ 19 IV 1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Ulica Bonifraterska - miejsce akcji oddziału AK podczas powstania w getcie warszawskim", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52414-ulica-bonifraterska-miejsce-akcji-oddzialu-ak-podczas-powstania-w-getcie-warszawskim"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tablicy (ul. Bonifraterska 12), a nie dokładne miejsce wyłomu (rejon Sapieżyńskiej i Bonifraterskiej). Dzielnica z położenia ulicy, nie z tekstu. Brak współrzędnych."
+  },
+  {
+    "id": "szkola-powszechna-ha-szachar-nowolipie-31",
+    "nazwa": "Szkoła powszechna Ha-Szachar",
+    "name_en": "Ha-Szachar primary school",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowolipie 31",
+    "adres_historyczny": "ul. Nowolipie 31",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1937",
+    "istnieje": null,
+    "fakty": [
+      "W 1937 r. żydowska szkoła powszechna męska Ha-Szachar funkcjonowała przy ul. Nowolipie 31.",
+      "Szkoła miała siedem klas."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ha-Szachar boys' primary school for Jewish pupils was at 31 Nowolipie Street in 1937, with seven grades.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna Ha-Szachar w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139051-szkola-powszechna-ha-szachar-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko adres z 1937 r. (wpisany w oba pola). Brak dzisiejszego adresu w tekście."
+  },
+  {
+    "id": "szkola-religijna-dzika-27",
+    "nazwa": "Szkoła religijna przy ul. Dzikiej 27",
+    "name_en": "Religious school at 27 Dzika Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzika 27",
+    "adres_historyczny": "ul. Dzika 27",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Dzikiej 27 funkcjonowała jednoklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła miała 3 sale lekcyjne, 4 nauczycieli i 46 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In the 1930/1931 school year a one-class Jewish religious boys' school taught in Polish, Hebrew and Yiddish operated at 27 Dzika Street, with 46 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Dzikiej 27 w Warszawie I", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138895-szkola-religijna-przy-ul-dzikiej-27-w-warszawie-i"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko adres z 1930/31 r. (wpisany w oba pola). Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "gimnazjum-felicji-buki-cygielsztrajch",
+    "nazwa": "Gimnazjum Felicji Buki-Cygielsztrajch",
+    "name_en": "Felicja Buki-Cygielsztrajch Gymnasium",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Orlej 11",
+    "adres_historyczny": "ul. Orlej 11",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1917–1933",
+    "istnieje": false,
+    "fakty": [
+      "Gimnazjum założono w 1917 r.; było rzadkim przypadkiem placówki koedukacyjnej.",
+      "Siedziba znajdowała się przy ul. Orlej 11.",
+      "Placówka miała z początku niepełne prawa gimnazjum państwowego, które utraciła w 1928 roku.",
+      "W 1926 r. szkoła miała 9 „oddziałów” w systemie ośmioklasowym, z 87 uczniami i 176 uczennicami.",
+      "W roku szkolnym 1930/1931 miała łącznie 114 uczennic i uczniów w 8 „oddziałach”.",
+      "Szkoła została zlikwidowana w 1933 roku."
+    ],
+    "ciekawostki": [
+      "Zwracają uwagę niespotykane proporcje liczebności dużego personelu do stosunkowo niewielkiej liczby uczniów."
+    ],
+    "summary_en": "The Felicja Buki-Cygielsztrajch Gymnasium was a coeducational private school at 11 Orla Street, founded in 1917 and closed in 1933. It lost the rights of a state gymnasium in 1928.",
+    "ludzie": [
+      {"kto": "Felicja Buki-Cygielsztrajch (ur. 1885)", "rola": "właścicielka i dyrektorka szkoły", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Gimnazjum Koedukacyjne (1926)",
+      "Gimnazjum Realne Koedukacyjne Felicji Buki-Cygielsztrajch (do 1930)",
+      "Gimnazjum Koedukacyjnej Felicji Cygielsztrajch"
+    ],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Gimnazjum Felicji Buki-Cygielsztrajch w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138849-gimnazjum-felicji-buki-cygielsztrajch-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres nieznany z tekstu. Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "szkola-powszechna-mizrachi-krolewska-43",
+    "nazwa": "Szkoła powszechna Mizrachi",
+    "name_en": "Mizrachi primary school",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Królewska 43",
+    "adres_historyczny": "ul. Królewska 43",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "druga połowa lat 30. XX w.",
+    "istnieje": null,
+    "fakty": [
+      "Szkoła powszechna pod nazwą Mizrachi pojawia się w informatorach z drugiej połowy lat 30. XX wieku.",
+      "Znajdowała się przy ul. Królewskiej 43."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A primary school named Mizrachi was listed at 43 Królewska Street in directories from the second half of the 1930s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna Mizrachi w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138979-szkola-powszechna-mizrachi-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst nie podaje roku, tylko 'druga połowa lat 30.'. Dzisiejszy adres nieznany."
+  },
+  {
+    "id": "synagoga-hallego",
+    "nazwa": "Synagoga Hallego",
+    "name_en": "Halle Synagogue",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Rynkowa 5",
+    "adres_historyczny": "ul. Rynkowa 5",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1852(?)–1942(?)",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga mieściła się przy ul. Gnojnej, potem Rynkowej 5 (nr hip. 977).",
+      "Chaim Gerszon Halle został członkiem Dozoru Bóżniczego w wyniku wyborów w sierpniu 1840 roku.",
+      "Na wystawienie bóżnicy uzyskał upoważnienie Komisji Rządowej Spraw Wewnętrznych z dnia 27 lutego/10 marca 1840 r.",
+      "Bóżnicę otwarto uroczyście 25 września 1840 r., trzy dni przed żydowskim Nowym Rokiem.",
+      "Synagoga istniała jeszcze do II wojny światowej, jako bóżnica handlarzy ryb."
+    ],
+    "ciekawostki": [
+      "Bóżnica była potocznie nazywana „bóżnicą przed Żelazną Bramą”.",
+      "Pod nr 7 na Gnojnej znajdowała się słynna knajpa „Grubego Joska”."
+    ],
+    "summary_en": "The Halle Synagogue was built in 1840 by Chaim Gerszon Halle and other wealthy members of the Warsaw Jewish community, on Gnojna, later Rynkowa 5. It was still operating as a fish merchants' house of prayer until the Second World War.",
+    "ludzie": [
+      {"kto": "Chaim Gerszon Halle", "rola": "członek Dozoru Bóżniczego, fundator synagogi", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Gnojna"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Hallego w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89657-synagoga-hallego-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Nie wiadomo, który budynek na działce mieścił synagogę (tekst). Daty działalności z pytajnikami w tekście. Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "pomnik-szmula-zygielbojma",
+    "nazwa": "Pomnik Szmula Zygielbojma (skwer im. Szmula Zygielbojma)",
+    "name_en": "Szmul Zygielbojm Monument",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Lewartowskiego 6",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Skwer im. Szmula Zygielbojma znajduje się u zbiegu ulic Zamenhofa i Lewartowskiego.",
+      "22 lipca 1997 r., w 54. rocznicę samobójczej śmierci Szmula Zygielbojma, na skwerze odsłonięto pomnik wedle projektu Marka Moderaua.",
+      "Pomnik ma formę ściany z czarnego kamienia o wymiarach 7 x 4 m, z wyrytymi konturami osób, które można interpretować jako cienie Żydów zmarłych w wyniku Zagłady.",
+      "Na ścianie wyryto fragment pożegnalnego listu Szmula Zygielbojma: „Milczeć nie mogę i żyć nie mogę, gdy giną resztki ludu żydowskiego w Polsce”.",
+      "12 maja 1943 r. Szmul Zygielbojm popełnił samobójstwo na znak protestu wobec bierności świata wobec Zagłady Żydów."
+    ],
+    "ciekawostki": [
+      "Przed ścianą ulokowano popękaną granitową płytę o wymiarach 2 x 2 m i grubości ok. 30 cm, która może być symbolem śmierci Zygielbojma i narodu żydowskiego."
+    ],
+    "summary_en": "The Szmul Zygielbojm Monument, unveiled on 22 July 1997 on a small square at Zamenhof and Lewartowski streets, is a 7 by 4 metre black stone wall with the outlines of figures and a line from Zygielbojm's farewell letter. Zygielbojm, a Bund activist, died by suicide in London in May 1943 to protest the world's silence about the Holocaust.",
+    "ludzie": [
+      {"kto": "Szmul Zygielbojm", "rola": "działacz Bundu, patron skweru, popełnił samobójstwo 12 V 1943", "wiki": null},
+      {"kto": "Marek Moderau", "rola": "autor projektu pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Pomnik Szmula Zygielbojma (ul. Lewartowskiego 6)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52012-pomnik-szmula-zygielbojma-ul-lewartowskiego-6"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tytułu artykułu, nie z treści. Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "szkola-religijna-jesodej-ha-tora-nowolipki-9",
+    "nazwa": "Szkoła religijna Jesodej ha-Tora",
+    "name_en": "Yesodei HaTorah religious school",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowolipki 9",
+    "adres_historyczny": "ul. Nowolipki 9",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Nowolipki 9 funkcjonowała duża, siedmioklasowa męska szkoła religijna z językami nauczania polskim i jidysz.",
+      "Szkoła posiadała 10 sal lekcyjnych (wynajem, 389 m kw.), 23 nauczycieli oraz 298 uczniów."
+    ],
+    "ciekawostki": [
+      "Należała do największych tego typu szkół w Warszawie."
+    ],
+    "summary_en": "In the 1930/1931 school year the Yesodei HaTorah religious boys' school at 9 Nowolipki Street was one of the largest of its kind in Warsaw, with 298 pupils and 23 teachers.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna Jesodej ha-Tora w Warszawie I", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139054-szkola-religijna-jesodej-ha-tora-w-warszawie-i"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko adres z 1930/31 r. (wpisany w oba pola). Dzielnica z położenia ulicy, nie z tekstu."
+  }
+]

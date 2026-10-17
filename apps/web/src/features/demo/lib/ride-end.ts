@@ -16,6 +16,7 @@ export const DESTINATION_PRESETS: DestinationPreset[] = [
 ];
 
 export const CUSTOM_DESTINATION_NAME = "Punkt na mapie";
+export const CUSTOM_DESTINATION_NAME_EN = "Point on the map";
 
 /** Pola zapytania do planera dla wybranego końca trasy. */
 export function rideEndRequest(

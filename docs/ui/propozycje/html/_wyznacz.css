@@ -1,0 +1,40 @@
+/* Wspólne elementy makiet 1900-wyznacz-* (ekran wyznaczania trasy na telefonie) */
+.gora { position: absolute; top: 54px; left: 16px; right: 16px; display: flex; justify-content: space-between; align-items: center; z-index: 20; }
+.gora .logo { font-size: 24px; padding: 0 16px; height: 42px; border-radius: 21px; display: flex; align-items: center; }
+.gora .prof { width: 42px; height: 42px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 4px 12px rgba(16,43,42,.16); }
+
+.karta { position: absolute; left: 12px; right: 12px; bottom: 104px; z-index: 30; border-radius: 28px; padding: 10px 16px 16px;
+  background: rgba(255,255,255,.94); -webkit-backdrop-filter: blur(30px) saturate(180%); backdrop-filter: blur(30px) saturate(180%);
+  box-shadow: 0 10px 40px rgba(16,43,42,.16); }
+.uchwyt { width: 36px; height: 5px; border-radius: 3px; background: rgba(16,43,42,.16); margin: 0 auto 12px; }
+
+.naglowek { display: flex; align-items: center; gap: 10px; }
+.naglowek img { width: 40px; height: 40px; flex: none; }
+.naglowek h1 { font-size: 19px; line-height: 1.15; letter-spacing: -.02em; font-weight: 800; flex: 1; }
+.naglowek p { font-size: 12.5px; color: var(--tekst-2); font-weight: 500; }
+.duzy { font-size: 28px; font-weight: 800; letter-spacing: -.03em; color: var(--glebia); white-space: nowrap; }
+
+.podpis { font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--tekst-3); margin: 14px 2px 6px; }
+
+/* Przełącznik segmentowy (jak UISegmentedControl) */
+.seg { display: flex; padding: 3px; border-radius: 14px; background: rgba(16,43,42,.06); }
+.seg div { flex: 1; height: 38px; border-radius: 11px; display: flex; align-items: center; justify-content: center; gap: 7px;
+  font-size: 14.5px; font-weight: 700; color: var(--tekst-2); }
+.seg div.on { background: #fff; color: var(--tekst); box-shadow: 0 1px 3px rgba(16,43,42,.14), 0 0 0 .5px rgba(16,43,42,.06); }
+.seg div.on svg { color: var(--glebia); }
+.seg svg { width: 18px; height: 18px; }
+
+.presety { display: flex; gap: 6px; }
+.presety div { flex: 1; height: 40px; border-radius: 12px; background: rgba(16,43,42,.06); display: grid; place-items: center;
+  font-size: 14px; font-weight: 700; color: var(--tekst-2); font-variant-numeric: tabular-nums; }
+.presety div.on { background: var(--glebia); color: #fff; }
+
+.przycisk { height: 52px; margin-top: 14px; font-size: 16.5px; }
+.przycisk small { font-weight: 600; opacity: .75; font-size: 14px; }
+
+/* Pasek zakładek jak w aplikacji: Mapa, Sawa (awatar w środku), Przejażdżki */
+.zakladki { left: 16px; right: 16px; }
+.zakladki .srodek { position: relative; top: -14px; }
+.zakladki .srodek img { width: 58px; height: 58px; border: 3px solid #fff; box-shadow: 0 6px 16px rgba(16,43,42,.2); }
+
+.znak { position: absolute; z-index: 25; padding: 6px 12px; border-radius: 14px; font-size: 13px; font-weight: 700; white-space: nowrap; }

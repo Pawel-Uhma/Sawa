@@ -1,0 +1,110 @@
+[
+  {
+    "id": "szpital-dzieciecy-bersohnow-i-baumanow",
+    "nazwa": "Szpital Dziecięcy Bersohnów i Baumanów",
+    "name_en": "Bersohn and Bauman Children's Hospital",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Śliska 51 / Sienna 60",
+    "adres_historyczny": "Śliska 51 / Sienna 60 (podwójny adres)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1876–2015",
+    "istnieje": true,
+    "fakty": [
+      "Szpital wzniesiono w latach 1876–1878 na działce kupionej w 1873 r. przez małżeństwa Majera i Chai Bersohn oraz Salomona i Pauliny Bauman; gmach według projektu Artura Goebla stanął między Sienną a Śliską.",
+      "W 1906 r. pracę w szpitalu podjął dr Henryk Goldszmit, znany jako Janusz Korczak; pracował tu siedem lat, leczył dzieci i dorosłych.",
+      "W 1923 r. placówkę zamknięto; w 1930 r. ponownie otwarto pod kierownictwem dr Anny Braude-Heller, dzięki wsparciu Joint i gminy żydowskiej.",
+      "Jesienią 1940 r. szpital znalazł się w granicach warszawskiego getta.",
+      "10 sierpnia 1942 r. szpital z Siennej przeniesiono do filii na skrzyżowaniu Leszna i Żelaznej; 11 września 1942 r. personel i chorych wywieziono do obozu zagłady Treblinka II.",
+      "Dr Anna Braude-Heller zginęła w czasie powstania w getcie, 19 kwietnia 1943 r., w bunkrze szpitala przy ul. Gęsiej 6.",
+      "Na jednej ze ścian w 2001 r. wmurowano tablicę ku czci dr Anny Braude-Heller; 7 marca 2018 r. ogłoszono, że w gmachu znajdzie się Muzeum Getta Warszawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Bersohn and Bauman Children's Hospital was built in 1876–1878 between Sienna and Śliska streets. It was reopened in 1930 under Dr Anna Braude-Heller, was inside the ghetto from 1940, and the staff and patients were deported to Treblinka in 1942.",
+    "ludzie": [
+      {"kto": "Majer i Chaja Bersohn", "rola": "fundatorzy; w 1873 r. kupili działkę pod szpital", "wiki": null},
+      {"kto": "Salomon i Paulina Bauman", "rola": "fundatorzy; w 1873 r. kupili działkę pod szpital", "wiki": null},
+      {"kto": "Artur Goebel", "rola": "autor projektu gmachu szpitala", "wiki": null},
+      {"kto": "Janusz Korczak (Henryk Goldszmit)", "rola": "lekarz szpitala, pracował tu w latach 1906–1913", "wiki": null},
+      {"kto": "Anna Braude-Heller", "rola": "dyrektorka szpitala w latach 1930–1942; zginęła w czasie powstania w getcie w 1943 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["filia szpitala na rogu Leszna i Żelaznej (1942)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szpital Dziecięcy Bersohnów i Baumanów w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/113-zabytki-kultury-materialnej/30678-szpital-dzieciecy-bersohnow-i-baumanow-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica (Muranów) przypisana z adresu, nie z tekstu. Podwójny adres z tekstu, aktualność do sprawdzenia. Według tekstu budynek od 2015 r. pusty i wystawiony na sprzedaż. Brak współrzędnych."
+  },
+  {
+    "id": "synagoga-szpitalna-zielona-2064",
+    "nazwa": "Synagoga Szpitalna (Zielona 2064)",
+    "name_en": "Hospital Synagogue (2064 Zielona Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Zielona (nr hip. 2064)",
+    "adres_historyczny": "Zielona, nr hip. 2064",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1819–1832",
+    "istnieje": false,
+    "fakty": [
+      "W 1808 r. wynajęto dwupiętrowy dom przy Marszałkowskiej (nr hip. 1381) na szpital żydowski; w 1811 r. gmina nabyła go na własność, a w 1819 r. przystosowano go do funkcji szpitala i sali modlitwy.",
+      "Według spisu z 1815 r. w tej sali modlitwy mieściło się 60 osób.",
+      "Dekretem cara Aleksandra I z 1821 r. szpital musiał opuścić Marszałkowską do 4 października 1824 r.; budynek zajął Instytut Oftalmiczny.",
+      "Szpital przeniesiono na posesję przy Zielonej nr hip. 2064; była tam niewielka działka z niedokończonym, trzykondygnacyjnym budynkiem frontowym.",
+      "W kwietniu 1826 r. w budynku odbyło się dwudniowe żałobne nabożeństwo po Aleksandrze I, według relacji „Kuriera Warszawskiego” z 18 kwietnia 1826 r.",
+      "Szpital istniał na Zielonej bardzo krótko, do zajęcia terenu pod budowę Cytadeli w 1832 r."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Jewish hospital, with a prayer hall, was moved from Marszałkowska Street to a plot at Zielona 2064 after 1821. It hosted a memorial service for Tsar Alexander I in April 1826 and was closed in 1832, when the site was taken for the Citadel.",
+    "ludzie": [
+      {"kto": "Aleksander I", "rola": "car; po jego śmierci odbyło się żałobne nabożeństwo w synagodze szpitalnej w kwietniu 1826 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["szpital żydowski przy Marszałkowskiej (nr hip. 1381)", "Dom nr 2064 przy ulicy Zielonej (1826)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Szpitalna w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89661-synagoga-szpitalna-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł ma wiele adresów (Świętojerska hip. 1778, Nowolipie hip. 2426, Marszałkowska hip. 1381, Zielona hip. 2064); wpisano Zielonę, bo tu synagoga była najdłużej i opisana najdokładniej. Nagłówek podaje datę budowy 1894 r., tekst dotyczy lat 1799–1832; do sprawdzenia. Dzielnica przypisana z adresu, do sprawdzenia. Brak współrzędnych."
+  },
+  {
+    "id": "miejsce-ukrycia-archiwum-ringelbluma-nowolipki",
+    "nazwa": "Miejsce ukrycia Archiwum Ringelbluma (Nowolipki 68, dziś skwer)",
+    "name_en": "Hiding Place of the Ringelblum Archive (Nowolipki 68, now a square)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowolipki 28 i 30 (skwer)",
+    "adres_historyczny": "Nowolipki 68",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1942–dziś",
+    "istnieje": false,
+    "fakty": [
+      "W sierpniu 1942 i lutym 1943 r. działacze konspiracyjnej grupy Oneg Szabat ukryli w piwnicach budynku przy ul. Nowolipki 68 dokumenty Podziemnego Archiwum Getta Warszawskiego, tzw. Archiwum Ringelbluma.",
+      "Dokumenty ukryto w metalowych pojemnikach i bańkach na mleko.",
+      "Komitet UNESCO wpisał Archiwum Ringelbluma na listę „Pamięć Świata” w 1990 r.",
+      "Część zbiorów odkopano po wojnie: pierwszą – 18 września 1946 r., drugą – 1 grudnia 1950 r.",
+      "Trzeciej części, która miała być ukryta na terenie posesji przy ul. Świętojerskiej 34 (ob. teren ambasady Chin), nie odnaleziono.",
+      "Dom przy Nowolipkach 68 został zniszczony w czasie wojny; na jego miejscu jest skwer.",
+      "W 2010 r. Łukasz Mieszkowski i Michał Urbanek przygotowali projekt pomnika: zagłębionej w ziemi piwnicy z otwartym włazem, z którego wyłania się przezroczysta skrzynka z zatopionym dokumentem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ringelblum Archive, the secret documentation of the Warsaw Ghetto, was hidden in the cellars of 68 Nowolipki Street in 1942 and 1943. Parts were recovered from the ruins after the war, and a memorial was designed in 2010 for the square that replaced the house.",
+    "ludzie": [
+      {"kto": "Oneg Szabat (działacze konspiracyjnej grupy)", "rola": "ukryli archiwum getta w piwnicach budynku przy Nowolipkach 68", "wiki": null},
+      {"kto": "Jacek Leociak", "rola": "profesor; wraz z innymi instytucjami starał się o upamiętnienie miejsca ukrycia", "wiki": null},
+      {"kto": "Łukasz Mieszkowski", "rola": "autor projektu pomnika (2010)", "wiki": null},
+      {"kto": "Michał Urbanek", "rola": "autor projektu pomnika (2010)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Nowolipki 68 (dom zniszczony w czasie wojny)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Miejsce ukrycia Archiwum Ringelbluma (ul. Nowolipki 28 i 30)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52351-miejsce-ukrycia-archiwum-ringelbluma-ul-nowolipki-28-i-30"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tytuł artykułu podaje Nowolipki 28 i 30, a tekst miejsce ukrycia przy Nowolipkach 68; w adres_dzis wpisano obecny adres skweru z tekstu. Dzielnica przypisana z adresu. Brak współrzędnych."
+  }
+]

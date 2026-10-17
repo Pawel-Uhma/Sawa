@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
 import {
   LABEL_FONT,
+  LABEL_FONT_BOLD,
   type MapPalette,
   placeKindColorExpression,
   placeKindIconExpression,
@@ -18,6 +19,15 @@ const CLUSTER_MAX_ZOOM = 14;
 const CLUSTER_RADIUS_PX = 44;
 /** Smaller groups stay as separate dots: a "3" says less than the three places themselves. */
 const CLUSTER_MIN_POINTS = 10;
+const CLUSTER_RADIUS: ExpressionSpecification = [
+  "step",
+  ["get", "point_count"],
+  18,
+  50,
+  21,
+  200,
+  25,
+];
 const CLUSTERED: FilterSpecification = ["has", "point_count"];
 const UNCLUSTERED: FilterSpecification = ["!", CLUSTERED];
 
@@ -59,15 +69,28 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
       clusterRadius={CLUSTER_RADIUS_PX}
       clusterMinPoints={CLUSTER_MIN_POINTS}
     >
+      {/* Soft shadow under the glass circle, nudged down like a lifted card. */}
+      <Layer
+        id="places-cluster-shadow"
+        type="circle"
+        filter={CLUSTERED}
+        paint={{
+          "circle-color": palette.clusterShadow,
+          "circle-radius": CLUSTER_RADIUS,
+          "circle-blur": 0.6,
+          "circle-translate": [0, 2],
+          "circle-opacity": opacity,
+        }}
+      />
       <Layer
         id={PLACES_CLUSTER_LAYER_ID}
         type="circle"
         filter={CLUSTERED}
         paint={{
           "circle-color": palette.clusterFill,
-          "circle-radius": ["step", ["get", "point_count"], 16, 50, 20, 200, 25],
-          "circle-stroke-color": palette.casing,
-          "circle-stroke-width": 2,
+          "circle-radius": CLUSTER_RADIUS,
+          "circle-stroke-color": palette.clusterStroke,
+          "circle-stroke-width": 1.5,
           "circle-opacity": opacity,
           "circle-stroke-opacity": opacity,
         }}
@@ -78,8 +101,8 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
         filter={CLUSTERED}
         layout={{
           "text-field": ["get", "point_count_abbreviated"],
-          "text-font": LABEL_FONT,
-          "text-size": 12,
+          "text-font": LABEL_FONT_BOLD,
+          "text-size": 13,
           "text-allow-overlap": true,
         }}
         paint={{ "text-color": palette.clusterText, "text-opacity": opacity }}

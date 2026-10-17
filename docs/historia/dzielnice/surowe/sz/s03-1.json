@@ -1,0 +1,321 @@
+[
+  {
+    "id": "dom-modlitwy-chlodna-15",
+    "nazwa": "Dom modlitwy przy ul. Chłodnej 15",
+    "name_en": "Prayer house at 15 Chłodna Street",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Chłodna 15",
+    "adres_historyczny": "ul. Chłodna 15",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po I wojnie(?)–1942(?)",
+    "istnieje": false,
+    "fakty": [
+      "W 1899 r. mieszkaniec Warszawy Szlama Sendel Rajnfeld otrzymał pozwolenie na utrzymywanie pod numerem 15 przy ul. Chłodnej domu modlitwy dla Żydów (rozporządzenie oberpolicmajstra z 26 czerwca (8 lipca) 1899 r.).",
+      "Zabudowa niewielkiej narożnej działki powstała zapewne w całości w końcu lat siedemdziesiątych XIX wieku.",
+      "Spis z 1926 r. ujmuje modlitewnię, która była prawdopodobnie specjalnie zaadaptowaną salą z boazerią i piecem kaflowym.",
+      "W getcie pod tym adresem miała siedzibę Żydowska Służba Porządkowa, a także mieściła się szkoła jawna, jedna z dziewiętnastu uruchomionych po 5 września 1941 roku.",
+      "Od lutego 1942 r. w pobliżu kamienicy przebiegał drewniany most łączący tzw. duże i małe getto.",
+      "Zabudowa ulicy została niemal kompletnie zniszczona w czasie Powstania Warszawskiego."
+    ],
+    "ciekawostki": [
+      "Lampa orientalizująca ner tamid miała hebrajski napis, z którego odczytać można tylko fragmenty, m.in. „...w roku 1832...”."
+    ],
+    "summary_en": "A small prayer house for Jews on Chłodna Street, licensed in 1899 under the name of Szlama Sendel Rajnfeld. During the occupation a Jewish police service and an underground school operated in the building, which was destroyed in the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Szlama Sendel Rajnfeld", "rola": "mieszkaniec Warszawy, któremu wydano pozwolenie na dom modlitwy przy ul. Chłodnej 15", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Chłodnej 15 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89620-dom-modlitwy-przy-ul-chlodnej-15-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1899 r., więc wpisany w oba pola (dzisiejszy numer nieznany). Dzielnica nie pada w tekście, ustalona z lokalizacji ulicy (granica Woli i Muranowa). Do weryfikacji."
+  },
+  {
+    "id": "kino-femina-al-solidarnosci-115",
+    "nazwa": "Teatr Femina w getcie (dziś Kino Femina, Al. Solidarności 115)",
+    "name_en": "Femina Theatre in the ghetto (today Kino Femina)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Solidarności 115",
+    "adres_historyczny": "ul. Leszno 35",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1941–1942 (teatr w getcie); dziś kino",
+    "istnieje": true,
+    "fakty": [
+      "W okresie okupacji w budynku przy ul. Leszno 35 (obecnie Al. Solidarności 115) działał Teatr Femina, jedno z najpopularniejszych miejsc rozrywki w warszawskim getcie.",
+      "Właścicielem teatru był Niemiec, a dyrekcję i zespół tworzyli Żydzi. Dyrektorami byli kolejno Josef Hirszfeld, Symcha Ryba i Meir Winder; dyrektorem artystycznym Jerzy Jurandot, kierownikiem muzycznym Iwo Wesby.",
+      "Teatr otwarto pod koniec czerwca 1941 r. premierą rewii „Batalion humoru” w językach polskim i jidysz, z tekstami Jurandota.",
+      "W lipcu odbyła się premiera kolejnej rewii „Szafa gra”.",
+      "W marcu 1942 r. odbyła się premiera dramatu „Matura” w reżyserii Jonasza Turkowa, z Dianą Blumenfeld w roli głównej.",
+      "Ostatnim przedstawieniem w „Feminie” była operetka „Bajadera” w czerwcu 1942 roku.",
+      "Wielu artystów występujących w Feminie, m.in. Miriam-Marysia Ajzensztadt, zostało zamordowanych przez Niemców w getcie lub w obozach zagłady.",
+      "Tablica w holu kina upamiętnia pomordowanych aktorów i muzyków getta; ufundowała ją Fundacja Muzeum Umschlagplatz w 50. rocznicę teatru (20 VI 1941–20 VI 1991)."
+    ],
+    "ciekawostki": [
+      "Jonasz Turkow i Diana Blumenfeld, jego żona, przeżyli wojnę i wyemigrowali najpierw do Stanów Zjednoczonych, a potem do Izraela.",
+      "Jerzy Jurandot uniknął Zagłady i po wojnie był twórcą i kierownikiem Teatru Satyrycznego „Syrena”."
+    ],
+    "summary_en": "Femina was one of the most popular entertainment venues in the Warsaw Ghetto. From June 1941 to June 1942 its Jewish staff staged revues, operettas and drama in Polish and Yiddish. Many of its artists were murdered; a plaque in the cinema lobby commemorates them.",
+    "ludzie": [
+      {"kto": "Josef Hirszfeld", "rola": "dyrektor Teatru Femina", "wiki": null},
+      {"kto": "Symcha Ryba", "rola": "dyrektor Teatru Femina", "wiki": null},
+      {"kto": "Meir Winder", "rola": "dyrektor Teatru Femina", "wiki": null},
+      {"kto": "Jerzy Jurandot", "rola": "dyrektor artystyczny Teatru Femina, autor tekstów revii", "wiki": null},
+      {"kto": "Iwo Wesby", "rola": "kierownik muzyczny Teatru Femina", "wiki": null},
+      {"kto": "Jonasz Turkow", "rola": "reżyser dramatu „Matura”", "wiki": null},
+      {"kto": "Diana Blumenfeld", "rola": "śpiewaczka i aktorka Teatru Femina", "wiki": null},
+      {"kto": "Miriam-Marysia Ajzensztadt", "rola": "artystka Teatru Femina, zamordowana przez Niemców", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Leszno 35"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kino Femina w Warszawie (Al. Solidarności 115)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52304-kino-femina-w-warszawie-al-solidarnosci-115"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica (Muranów, w zakresie rundy: Śródmieście) ustalona z lokalizacji, nie z tekstu."
+  },
+  {
+    "id": "dom-modlitwy-chesed-wemes-leszno-66",
+    "nazwa": "Dom modlitwy Chesed W'emes (ul. Leszno 66)",
+    "name_en": "Chesed W'emes prayer house (66 Leszno Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Leszno 66",
+    "adres_historyczny": "ul. Leszno 66",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "około 1937–1942",
+    "istnieje": false,
+    "fakty": [
+      "Organizacja dobroczynna Chesed W'emes zajmowała się grzebaniem zmarłych, którzy nie mieli rodziny, i wystawianiem im nagrobków.",
+      "O domu modlitwy organizacji na Lesznie 66 wiadomo z faktu, że w 1937 r. otrzymała ona w darze piękne świeczniki (\"Nasz Przegląd Ilustrowany\" 1937, nr 17, s. 8).",
+      "Dom modlitwy datowany jest na około 1937 r.",
+      "W 1942 r. B. Engelking i J. Leociak w „Przewodniku po nieistniejącym mieście” określili go jako „miejsce spotkań towarzyskich”."
+    ],
+    "ciekawostki": [
+      "Nazwa organizacji zwykle brzmiała Chesed szel emes (łaska prawdy, przenośnie: ostatnia posługa)."
+    ],
+    "summary_en": "A prayer house of the Chesed W'emes charity, which buried poor dead and erected their gravestones. Dated to around 1937 from a donation of candlesticks, it was described in 1942 as a social meeting place.",
+    "ludzie": [],
+    "dawne_nazwy": ["Chesed szel emes"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom modlitwy Chesed W'emes w Warszawie (ul. Leszno 66)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89681-dom-modlitwy-chesed-wemes-w-warszawie-ul-leszno-66"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst podaje tylko adres przedwojenny, wpisany w oba pola. Dzielnica (Muranów) wg lokalizacji, nie z tekstu. Datowanie 1937 r. wynika z daty dowodu, a nie z dokumentu o budowie."
+  },
+  {
+    "id": "osiedle-ii-wawelbergow-ludwiki-1",
+    "nazwa": "Osiedle II Fundacji Tanich Mieszkań Wawelbergów (ul. Ludwiki 1)",
+    "name_en": "Wawelberg Foundation Housing Estate II (1 Ludwiki Street)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Ludwiki 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1927–1929 przy ul. Ludwiki 1 ze środków Fundacji Tanich Mieszkań im. Hipolita i Ludwiki małżonków Wawelbergów wzniesiono budynek mieszkalny dla niezamożnej inteligencji i urzędników.",
+      "Dwuskrzydłowy obiekt z szarej cegły łączy modernizm z elementami historyzmu i secesji.",
+      "W 1933 r. w budynku otwarto Wypożyczalnię nr 4 im. Hipolita Wawelberga, a fundacja ofiarowała lokal i jego utrzymanie.",
+      "Budynek wpisano do rejestru zabytków nieruchomych m.st. Warszawy pod numerem A-450 z 15.07.2005 r."
+    ],
+    "ciekawostki": [
+      "Nad wejściem umieszczono płaskorzeźbę Hipolita i Ludwiki Wawelbergów oraz napis: „Fundacya Tanich Mieszkań im. Hipolita i Ludwiki małż. Wawelbergów. Osiedle 2ie. 1929 r.”."
+    ],
+    "summary_en": "A 1927–1929 housing block in Wola built by the Wawelberg Foundation for low-income professionals and clerks. It housed a public library branch from 1933 and is a listed monument since 2005.",
+    "ludzie": [
+      {"kto": "Hipolit Wawelberg", "rola": "fundator (wraz z Ludwiką Wawelberg) Fundacji Tanich Mieszkań", "wiki": null},
+      {"kto": "Ludwika Wawelberg", "rola": "fundatorka (wraz z Hipolitem Wawelbergiem) Fundacji Tanich Mieszkań", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Osiedle II Fundacji Tanich Mieszkań Wawelbergów w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/113-zabytki-kultury-materialnej/28984-osiedle-ii-fundacji-tanich-mieszkan-wawelbergow-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica Wola podana w źródle (Spacerownik Wola robotniczo-socjalna)."
+  },
+  {
+    "id": "szkola-religijna-dzika-38",
+    "nazwa": "Szkoła religijna przy ul. Dzikiej 38",
+    "name_en": "Religious school at 38 Dzika Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzika 38",
+    "adres_historyczny": "ul. Dzika 38",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Dzikiej 38 funkcjonowała jednoklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła miała 1 salę lekcyjną, 2 nauczycieli i 28 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A one-class religious school for boys at 38 Dzika Street, with Polish, Hebrew and Yiddish as languages of instruction. In the 1930/31 school year it had 28 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Dzikiej 38 w Warszawie III", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138899-szkola-religijna-przy-ul-dzikiej-38-w-warszawie-iii"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy. Stan: null, bo tekst nie mówi, czy budynek istnieje."
+  },
+  {
+    "id": "oboz-glowna-biblioteka-judaistyczna-tlomackie-3-5",
+    "nazwa": "Główna Biblioteka Judaistyczna (ul. Tłomackie 3/5), obóz przejściowy",
+    "name_en": "Main Judaic Library (3/5 Tłomackie Street), transit camp",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tłomackie 3/5",
+    "adres_historyczny": "ul. Tłomackie 3/5",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1942–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od wiosny 1942 r. budynek Głównej Biblioteki Judaistycznej przy ul. Tłomackie 3/5 był wykorzystywany jako obóz przejściowy dla Żydów niemieckich, przesiedlonych do Generalnego Gubernatorstwa.",
+      "Działała tu konspiracyjna organizacja „Oneg Szabat” Emanuela Ringelbluma, zajmująca się dokumentowaniem Zagłady.",
+      "Po upadku powstania w getcie, podczas wysadzania Wielkiej Synagogi na Tłomackiem, Niemcy podpalili budynek Biblioteki.",
+      "Budynek ocalał; ślady pożaru są wciąż widoczne na podłodze w holu wejściowym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1942 the Main Judaic Library building on Tłomackie Street served as a transit camp for German Jews deported to the General Government. The underground Oneg Shabbat archive worked there, and the building survived a fire set during the destruction of the Great Synagogue. It now houses the Ringelblum Jewish Historical Institute.",
+    "ludzie": [
+      {"kto": "Emanuel Ringelblum", "rola": "inicjator konspiracyjnej organizacji „Oneg Szabat” działającej w budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Obóz w Głównej Bibliotece Judaistycznej w Warszawie (ul. Tłomackie 3/5)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52410-oboz-w-glownej-bibliotece-judaistycznej-w-warszawie-ul-tlomackie-35"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica (Śródmieście) wg lokalizacji ulicy. Tekst nie podaje współczesnej nazwy dzielnicy."
+  },
+  {
+    "id": "szkola-religijna-karmelicka-17",
+    "nazwa": "Szkoła religijna przy ul. Karmelickiej 17",
+    "name_en": "Religious school at 17 Karmelicka Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karmelicka 17",
+    "adres_historyczny": "ul. Karmelicka 17",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Karmelickiej 17 funkcjonowała dwuklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła posiadała 2 sale lekcyjne (łącznie 160 m kw., wynajęte), 4 nauczycieli i 40 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-class religious school for boys at 17 Karmelicka Street. In 1930/31 it rented two classrooms totalling 160 m2 and had 40 pupils and 4 teachers.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Karmelickiej 17 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138974-szkola-religijna-przy-ul-karmelickiej-17-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-religijna-franciszkanska-24",
+    "nazwa": "Szkoła religijna przy ul. Franciszkańskiej 24",
+    "name_en": "Religious school at 24 Franciszkańska Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Franciszkańska 24",
+    "adres_historyczny": "ul. Franciszkańska 24",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Franciszkańskiej 24 funkcjonowała jednoklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła posiadała salę lekcyjną o powierzchni 20 m kw. (wynajem), 2 nauczycieli na pełen etat i 40 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A one-class religious school for boys at 24 Franciszkańska Street. In 1930/31 it rented a 20 m2 classroom and had 40 pupils and two full-time teachers.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Franciszkańskiej 24 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138960-szkola-religijna-przy-ul-franciszkanskiej-24-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-religijna-panska-15",
+    "nazwa": "Szkoła religijna przy ul. Pańskiej 15",
+    "name_en": "Religious school at 15 Pańska Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Pańska 15",
+    "adres_historyczny": "ul. Pańska 15",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Pańskiej 15 funkcjonowała jednoklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła posiadała dwie wynajęte sale lekcyjne o łącznej powierzchni 38 m kw., dwóch nauczycieli i 12 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A one-class religious school for boys at 15 Pańska Street. In 1930/31 it rented two classrooms of 38 m2 in total and had 12 pupils and two teachers.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Pańskiej 15 w Warszawie I", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139082-szkola-religijna-przy-ul-panskiej-15-w-warszawie-i"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "gimnazjum-ewy-szlezyngerowej",
+    "nazwa": "Gimnazjum Ewy Szlezyngerowej",
+    "name_en": "Ewa Szlezynger Gymnasium",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bielańska 18",
+    "adres_historyczny": "ul. Bielańska 18",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1876–około 1939",
+    "istnieje": false,
+    "fakty": [
+      "Gimnazjum powstało w 1876 r.; do 1930 r. nosiło nazwę Gimnazjum Filologiczne Ewy Strauch-Szlezyngerowej.",
+      "Do 1936 r. siedziba szkoły mieściła się przy ul. Świętojerskiej 18, a potem przy ul. Bielańskiej 18.",
+      "Była to szkoła żeńska, humanistyczna, z polskim językiem wykładowym.",
+      "W 1926 r. szkoła miała 9 klas w systemie ośmioklasowym i 241 uczennic.",
+      "W roku szkolnym 1930/1931 było 9 klas z 222 uczennicami."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A private girls' humanistic gymnasium founded in 1876, first named after Ewa Strauch-Szlezynger. It was based at Świętojerska 18 until 1936 and then at Bielańska 18, and was liquidated around 1939.",
+    "ludzie": [
+      {"kto": "Maria Glikson", "rola": "dyrektorka gimnazjum (1918–1919)", "wiki": null},
+      {"kto": "Lucjan Komarnicki", "rola": "dyrektor gimnazjum (1921–1926)", "wiki": null},
+      {"kto": "Marian Odrzywolski", "rola": "dyrektor gimnazjum (od 1929 r.)", "wiki": null},
+      {"kto": "Ewa Szlezynger", "rola": "nauczycielka języka niemieckiego i francuskiego (ur. 1859), w personelu w 1926 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gimnazjum Filologiczne Ewy Strauch-Szlezyngerowej", "Gimnazjum Janiny Świąteckiej", "Prywatne Gimnazjum Janiny Świąteckiej"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Gimnazjum Ewy Szlezyngerowej w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138872-gimnazjum-ewy-szlezyngerowej-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adresy przedwojenne (Świętojerska 18 do 1936 r., potem Bielańska 18), więc Bielańska 18 wpisana w oba pola. Dzielnica wg lokalizacji ulic."
+  }
+]

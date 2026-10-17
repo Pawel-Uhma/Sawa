@@ -1,35 +1,54 @@
 import type { Leg } from "@sawa/shared";
+import { useLang, useT } from "@/features/i18n";
 import { departureLabel } from "../lib/departure";
-import { LineBadge } from "./line-badge";
+import { journeyLegs, LineBadge } from "./line-badge";
 
 /**
- * Odjazdy kolejnych przejazdów: godzina z rozkładu albo „ok.”, przy pierwszym opóźnienie na żywo (#44).
- * Odcinki pieszo nie mają godziny, więc ich tu nie ma.
+ * Dojazd jako jedna lista odcinków: każda linia pada raz, z przystankiem i godziną odjazdu
+ * (z rozkładu albo „ok.”, przy pierwszym opóźnienie na żywo, #44). Pieszo ma minuty i cel zamiast godziny.
  */
-export function Departures({ legs }: { legs: readonly Leg[] }) {
-  const rides = legs.filter((leg) => leg.mode !== "walk");
-  if (rides.length === 0) return null;
+export function Itinerary({ legs, duration }: { legs: readonly Leg[]; duration: string }) {
+  const lang = useLang();
+  const t = useT();
+  const steps = journeyLegs(legs);
+  if (steps.length === 0) return null;
 
   return (
-    <ul aria-label="Odjazdy" className="flex flex-col gap-1.5 text-[13px]">
-      {rides.map((leg) => {
-        const { time, delay, isLate } = departureLabel(leg);
-        return (
-          <li key={`${leg.line}-${leg.departAt}`} className="flex min-w-0 items-center gap-2">
-            <LineBadge line={leg.line} mode={leg.mode} />
-            <span className="min-w-0 flex-1 truncate text-tekst-2">{leg.fromStop.name}</span>
-            <span className="shrink-0 font-semibold tabular-nums text-tekst">{time}</span>
-            {delay && (
-              <span
-                className={`shrink-0 font-semibold tabular-nums ${isLate ? "text-koral" : "text-glebia"}`}
-              >
-                {delay}
+    <section aria-label={t("Dojazd", "Getting there")} className="rounded-2xl bg-tlo-2 px-3.5 py-3">
+      <div className="mb-2.5 flex items-baseline justify-between">
+        <h3 className="etykieta">{t("Dojazd", "Getting there")}</h3>
+        <span className="text-[13px] font-bold tabular-nums text-tekst">{duration}</span>
+      </div>
+      <ol className="flex flex-col gap-2 text-[13px]">
+        {steps.map((leg) => {
+          const walk = leg.mode === "walk";
+          const { time, delay, isLate } = departureLabel(leg, lang);
+          return (
+            <li
+              key={`${leg.mode}-${leg.line}-${leg.departAt}`}
+              className="flex min-w-0 items-center gap-2"
+            >
+              <LineBadge line={leg.line} mode={leg.mode} />
+              <span className="min-w-0 flex-1 truncate text-tekst-2">
+                {walk
+                  ? `${Math.max(1, Math.round(leg.durationMin))} min · ${leg.headsign || leg.toStop.name}`
+                  : leg.fromStop.name}
               </span>
-            )}
-          </li>
-        );
-      })}
-    </ul>
+              {!walk && (
+                <span className="shrink-0 font-semibold tabular-nums text-tekst">{time}</span>
+              )}
+              {!walk && delay && (
+                <span
+                  className={`shrink-0 font-semibold tabular-nums ${isLate ? "text-koral" : "text-glebia"}`}
+                >
+                  {delay}
+                </span>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </section>
   );
 }
 
