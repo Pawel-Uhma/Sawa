@@ -22,14 +22,12 @@
 - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
 - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
 - [ ] **T-62** Zasady pracy z repo: gałęzie, PR, kto merge'uje; zapisać w `CLAUDE.md` — `Wszyscy` — 13:00
-- [ ] **T-63** Decyzja: route handlery na Vercelu czy backend na Railway — `R1` + `R4` — 13:00
-- [ ] **T-64** Decyzja o domenie (własna czy subdomena Vercela) — `R5` — 15:00
 - [ ] **T-65** Znaleźć darmowe API do własnego stylu mapy, sprawdzić z MapLibre — `R3` — 13:00
 - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
 
 ## R1 · Dane i planer tras
 
-- [ ] **T-10** Proxy `app/api/waw/[zasob]` z cache w pamięci (TTL wg docs/05), jeden zbiór działa end to end — `R1` — 13:00
+- [ ] **T-10** Proxy `waw/[zasob]` w backendzie na Railway z cache w pamięci (TTL wg docs/05), jeden zbiór działa end to end — `R1` — 13:00
 - [ ] **T-11** Pozycje pojazdów ZTM i odjazdy z przystanku (endpointy z [api/](api/)) — `R1` — 15:00
 - [ ] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00
 - [ ] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00
@@ -55,7 +53,7 @@
 
 ## R4 · AI i głos
 
-- [ ] **T-40** `app/api/chat` z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
+- [ ] **T-40** Endpoint `chat` w backendzie na Railway z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
 - [ ] **T-41** Prompt Sawy: persona rówieśniczki, która mieszka w Warszawie rok, zasady „fakty ze źródłami, bez zmyślania” — `R4` — 20:00
 - [ ] **T-42** Opowieść „z okna”: tekst o punkcie na trasie z faktów z Supabase; długość zależna od czasu do punktu — `R4` — 22:00
 - [ ] **T-43** TTS: wybór (ElevenLabs czy open source), test polskiego na 3 tekstach — `R4` — 15:00
@@ -75,5 +73,8 @@
 - [ ] **T-61** Zamrożenie zmian w kodzie, tylko poprawki błędów — `Wszyscy` — niedziela 09:00
 
 ## Zrobione
+
+- [x] **T-63** Backend: Railway — decyzja 17.10, 11:40
+- [x] **T-64** Domena: darmowa subdomena Vercela — decyzja 17.10, 11:40
 
 - [x] **T-07** Zasady pracy i mózg zespołu — zrobione 17.10 ok. 11:30

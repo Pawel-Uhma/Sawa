@@ -997,3 +997,175 @@
 >  ## R1 · Dane i planer tras
 > new file: docs/spotkania/2026-10-17-1130-stack-repo-domena.md
 
+
+### 2026-10-17 11:35 · Pawel
+
+> idziemy z railway, zostawiamy darmowa domene vercel.
+
+**AI:** Zapisano decyzje zespołu: backend na Railway, domena to darmowa subdomena Vercela. Zmienione `05-plan-architektury.md`, `stan.md`, `todo.md` (T-63, T-64 zamknięte) i notatka ze spotkania 2.
+
+### 2026-10-17 11:36 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/05-plan-architektury.md                        | 10 ++++++----
+>  docs/ai-log.md                                      |  6 ++++++
+>  docs/spotkania/2026-10-17-1130-stack-repo-domena.md |  6 ++----
+>  docs/stan.md                                        |  6 +++---
+>  docs/todo.md                                        |  9 +++++----
+>  5 files changed, 22 insertions(+), 15 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/05-plan-architektury.md b/docs/05-plan-architektury.md
+> index 7f31510..ed1d12c 100644
+> --- a/docs/05-plan-architektury.md
+> +++ b/docs/05-plan-architektury.md
+> @@ -9,17 +9,17 @@
+>  | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
+>  | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
+>  | Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source. Chcemy własny styl (nie wygląd Google Maps); dostawca stylu do ustalenia (R3) |
+> -| Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache. Alternatywa: osobny backend na Railway (ktoś ma płatne konto), do decyzji R1 + R4 |
+> +| Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
+>  | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
+>  | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
+>  | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
+>  | Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
+> -| Deploy | Vercel | Link do działającej aplikacji na pitchu. Domena: własna (ok. 17 zł/rok) czy subdomena Vercela, do decyzji R5 |
+> +| Deploy | Frontend na Vercel, backend na Railway | Link na pitchu pod darmową subdomeną `*.vercel.app`, bez kupowania domeny (ustalone 17.10) |
+>  
+>  ## Przepływ danych
+>  
+>  ```
+> -przeglądarka ──► /api/<zasób> (Next.js, serwer) ──► dane.um.warszawa.pl/api/action/<endpoint>
+> +przeglądarka ──► /api/<zasób> (backend na Railway) ──► dane.um.warszawa.pl/api/action/<endpoint>
+>                       │                                   (nagłówek Authorization: token)
+>                       └── cache w pamięci, TTL = częstotliwość odświeżania zbioru
+>                           (pojazdy 10 s, parkingi 1 min, powietrze i pogoda 10 min, reszta 1 h)
+> @@ -29,6 +29,8 @@ przeglądarka ──► /api/chat ──► LLM (Bielik) z narzędziami: szukaj_
+>  
+>  ## Planowana struktura (tworzymy 17.10)
+>  
+> +> **Zmiana 17.10:** backend (proxy `waw`, `chat`) idzie jako osobny serwis na Railway, nie jako route handlery na Vercelu. Struktura poniżej jest do przepisania, gdy R1 + R4 wybiorą framework serwisu.
+> +
+>  ```
+>  app/
+>    page.tsx                 # mapa + panel planera
+> @@ -67,7 +69,7 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
+>  
+>  ## Otwarte pytania
+>  
+> -- [ ] Osobny backend na Railway czy wystarczą route handlery na Vercelu? (spotkanie 17.10, 11:30)
+> +- [x] Backend: Railway (17.10). Do ustalenia: framework serwisu i jak frontend go woła (CORS, URL w env)
+>  - [ ] Zasady pracy z repo: gałęzie, PR, kto merge'uje (może agent na GitHubie)
+>  - [ ] Darmowe API do własnego stylu mapy, zgodne z MapLibre
+>  
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 3769513..209d0b0 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -997,3 +997,9 @@
+>  >  ## R1 · Dane i planer tras
+>  > new file: docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+>  
+> +
+> +### 2026-10-17 11:35 · Pawel
+> +
+> +> idziemy z railway, zostawiamy darmowa domene vercel.
+> +
+> +**AI:** Zapisano decyzje zespołu: backend na Railway, domena to darmowa subdomena Vercela. Zmienione `05-plan-architektury.md`, `stan.md`, `todo.md` (T-63, T-64 zamknięte) i notatka ze spotkania 2.
+> diff --git a/docs/spotkania/2026-10-17-1130-stack-repo-domena.md b/docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+> index f0a6f76..20d3ced 100644
+> --- a/docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+> +++ b/docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+> @@ -6,12 +6,12 @@
+>  
+>  - **Stack potwierdzony:** Next.js + Supabase (baza) + Vercel (hosting). Next.js dobrze się łączy z Vercelem.
+>  - **Repo z dokumentacją wypchnięte** i wysłane na Discorda zespołu, razem z kluczem API do danych miasta (klucz każdy wkleja do `.env.local`, nie do repo).
+> +- **Backend na Railway** (rozstrzygnięte po spotkaniu): ktoś z zespołu ma płatne konto, ruch będzie mały.
+> +- **Domena: darmowa subdomena Vercela** (rozstrzygnięte po spotkaniu): nie kupujemy własnej.
+>  - **Rejestracja zespołu:** osoba odpowiedzialna dostała kartę od organizatorów, wpisała nazwę zespołu i się podpisała.
+>  
+>  ## Otwarte kwestie
+>  
+> -- **Osobny backend:** zostajemy przy route handlerach Next.js na Vercelu (plan w docs/05) / Railway (ktoś z zespołu ma płatne konto; ruch będzie mały). Rozstrzyga R1 + R4.
+> -- **Domena:** kupić własną (ok. 17 zł/rok) / użyć któreś z domen, które mają członkowie zespołu / zostać przy darmowej subdomenie Vercela. Rozstrzyga R5.
+>  - **Zasady pracy z repo:** krótki git flow (gałęzie, PR, kto merge'uje), żeby 5 osób i ich agenci nie wchodzili sobie w drogę i żeby kod dało się później rozwijać komercyjnie. Pomysł: merge przez agenta na GitHubie. Rozstrzyga zespół.
+>  - **Własny styl mapy:** ktoś zna darmowe API do customowych map (szerokie drogi, własne kolory, nie wygląd Google Maps); nazwa do ustalenia. Pasuje do MapLibre z własnym stylem. Rozstrzyga R3.
+>  - **LLM:** padło „Claude”; w planie jest Bielik z Claude jako zapasowym. Bez zmiany do decyzji R4 (T-01).
+> @@ -19,8 +19,6 @@
+>  ## Zadania
+>  
+>  - [ ] Spisać zasady pracy z repo (gałęzie, PR, merge) — zespół — 13:00
+> -- [ ] Decyzja o domenie — R5 — 15:00
+> -- [ ] Decyzja: route handlery czy Railway — R1 + R4 — 13:00
+>  - [ ] Znaleźć nazwę API do customowej mapy i sprawdzić, czy działa z MapLibre — R3 — 13:00
+>  
+>  ## Zmienione dokumenty
+> diff --git a/docs/stan.md b/docs/stan.md
+> index c8c1435..e7072bd 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -26,14 +26,14 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+>  | Google Places: klucz każdego czy tylko Wikipedia | R2 + zespół | [05-plan-architektury.md](05-plan-architektury.md) |
+>  | API Bielika: gdzie hostowane, limity; zapasowy LLM | R4 | [05-plan-architektury.md](05-plan-architektury.md) |
+>  | Rozpoznawanie powracającego użytkownika bez konta | zespół (dodatek, jeśli zostanie czas) | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+> -| Backend: route handlery na Vercelu czy Railway | R1 + R4 | [spotkania/2026-10-17-1130-stack-repo-domena.md](spotkania/2026-10-17-1130-stack-repo-domena.md) |
+> -| Domena: własna czy subdomena Vercela | R5 | jw. |
+> -| Zasady pracy z repo (gałęzie, PR, merge) | zespół | jw. |
+> +| Zasady pracy z repo (gałęzie, PR, merge) | zespół | [spotkania/2026-10-17-1130-stack-repo-domena.md](spotkania/2026-10-17-1130-stack-repo-domena.md) |
+>  | Własny styl mapy: który dostawca | R3 | jw. |
+>  | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
+>  
+>  ## Ostatnie decyzje
+>  
+> +- 17.10: backend na Railway; zostajemy przy darmowej subdomenie Vercela. [05-plan-architektury.md](05-plan-architektury.md)
+> +
+>  - 17.10, 11:30: stack Next.js + Supabase + Vercel potwierdzony; repo z dokumentacją i klucz API na Discordzie zespołu. [Podsumowanie](spotkania/2026-10-17-1130-stack-repo-domena.md)
+>  
+>  - 17.10: MVP to historia miejsc; podcast z okna w komunikacji; bez logowania; Supabase na koncie zespołu. [Podsumowanie](spotkania/2026-10-17-1100-mvp-sawy.md)
+> diff --git a/docs/todo.md b/docs/todo.md
+> index 9f3343e..b7b4df7 100644
+> --- a/docs/todo.md
+> +++ b/docs/todo.md
+> @@ -22,14 +22,12 @@
+>  - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
+>  - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
+>  - [ ] **T-62** Zasady pracy z repo: gałęzie, PR, kto merge'uje; zapisać w `CLAUDE.md` — `Wszyscy` — 13:00
+> -- [ ] **T-63** Decyzja: route handlery na Vercelu czy backend na Railway — `R1` + `R4` — 13:00
+> -- [ ] **T-64** Decyzja o domenie (własna czy subdomena Vercela) — `R5` — 15:00
+>  - [ ] **T-65** Znaleźć darmowe API do własnego stylu mapy, sprawdzić z MapLibre — `R3` — 13:00
+>  - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
+>  
+>  ## R1 · Dane i planer tras
+>  
+> -- [ ] **T-10** Proxy `app/api/waw/[zasob]` z cache w pamięci (TTL wg docs/05), jeden zbiór działa end to end — `R1` — 13:00
+> +- [ ] **T-10** Proxy `waw/[zasob]` w backendzie na Railway z cache w pamięci (TTL wg docs/05), jeden zbiór działa end to end — `R1` — 13:00
+>  - [ ] **T-11** Pozycje pojazdów ZTM i odjazdy z przystanku (endpointy z [api/](api/)) — `R1` — 15:00
+>  - [ ] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00
+>  - [ ] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00
+> @@ -55,7 +53,7 @@
+>  
+>  ## R4 · AI i głos
+>  
+> -- [ ] **T-40** `app/api/chat` z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
+> +- [ ] **T-40** Endpoint `chat` w backendzie na Railway z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
+>  - [ ] **T-41** Prompt Sawy: persona rówieśniczki, która mieszka w Warszawie rok, zasady „fakty ze źródłami, bez zmyślania” — `R4` — 20:00
+>  - [ ] **T-42** Opowieść „z okna”: tekst o punkcie na trasie z faktów z Supabase; długość zależna od czasu do punktu — `R4` — 22:00
+>  - [ ] **T-43** TTS: wybór (ElevenLabs czy open source), test polskiego na 3 tekstach — `R4` — 15:00
+> @@ -76,4 +74,7 @@
+>  
+>  ## Zrobione
+>  
+> +- [x] **T-63** Backend: Railway — decyzja 17.10, 11:40
+> +- [x] **T-64** Domena: darmowa subdomena Vercela — decyzja 17.10, 11:40
+> +
+>  - [x] **T-07** Zasady pracy i mózg zespołu — zrobione 17.10 ok. 11:30
+

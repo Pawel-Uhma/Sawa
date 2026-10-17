@@ -9,17 +9,17 @@
 | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
 | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
 | Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source. Chcemy własny styl (nie wygląd Google Maps); dostawca stylu do ustalenia (R3) |
-| Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache. Alternatywa: osobny backend na Railway (ktoś ma płatne konto), do decyzji R1 + R4 |
+| Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
 | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
 | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
 | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
 | Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
-| Deploy | Vercel | Link do działającej aplikacji na pitchu. Domena: własna (ok. 17 zł/rok) czy subdomena Vercela, do decyzji R5 |
+| Deploy | Frontend na Vercel, backend na Railway | Link na pitchu pod darmową subdomeną `*.vercel.app`, bez kupowania domeny (ustalone 17.10) |
 
 ## Przepływ danych
 
 ```
-przeglądarka ──► /api/<zasób> (Next.js, serwer) ──► dane.um.warszawa.pl/api/action/<endpoint>
+przeglądarka ──► /api/<zasób> (backend na Railway) ──► dane.um.warszawa.pl/api/action/<endpoint>
                      │                                   (nagłówek Authorization: token)
                      └── cache w pamięci, TTL = częstotliwość odświeżania zbioru
                          (pojazdy 10 s, parkingi 1 min, powietrze i pogoda 10 min, reszta 1 h)
@@ -28,6 +28,8 @@ przeglądarka ──► /api/chat ──► LLM (Bielik) z narzędziami: szukaj_
 ```
 
 ## Planowana struktura (tworzymy 17.10)
+
+> **Zmiana 17.10:** backend (proxy `waw`, `chat`) idzie jako osobny serwis na Railway, nie jako route handlery na Vercelu. Struktura poniżej jest do przepisania, gdy R1 + R4 wybiorą framework serwisu.
 
 ```
 app/
@@ -67,7 +69,7 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
 
 ## Otwarte pytania
 
-- [ ] Osobny backend na Railway czy wystarczą route handlery na Vercelu? (spotkanie 17.10, 11:30)
+- [x] Backend: Railway (17.10). Do ustalenia: framework serwisu i jak frontend go woła (CORS, URL w env)
 - [ ] Zasady pracy z repo: gałęzie, PR, kto merge'uje (może agent na GitHubie)
 - [ ] Darmowe API do własnego stylu mapy, zgodne z MapLibre
 
