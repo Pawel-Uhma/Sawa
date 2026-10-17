@@ -62,6 +62,14 @@ const PlaceDetailSchema = z.object({
   unverified_facts: z.array(z.object({ text: z.string(), reason: z.string() })),
   confidence: z.enum(["high", "medium", "low"]).nullable(),
   location_precision: z.enum(["exact", "approx"]).nullable(),
+  today_nearby: z.array(
+    z.object({
+      name: z.string(),
+      type: z.string().nullable(),
+      googleMapsUrl: z.string(),
+      placeId: z.string(),
+    }),
+  ),
   photos: z.array(
     z.object({
       url: z.string(),
@@ -118,6 +126,7 @@ export function toPlace(data: unknown): Place | null {
     unverifiedFacts: p.unverified_facts,
     confidence: p.confidence,
     locationPrecision: p.location_precision,
+    todayNearby: p.today_nearby,
     photos: p.photos.map(({ page_url, ...photo }) => ({ ...photo, pageUrl: page_url })),
   };
 }

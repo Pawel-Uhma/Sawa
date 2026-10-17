@@ -40,6 +40,7 @@
 - [x] **T-21** Załadować [historia/sawa-historia.geojson](historia/sawa-historia.geojson) do Supabase skryptem (nie ręcznie) — `R2` — 15:00 (Jasiek, 13:08: 326 miejsc i 351 zdjęć w bazie, `pnpm --filter @sawa/scripts seed:historia`)
 - [x] **T-22** Sprawdzić licencje zdjęć w [historia/zdjecia.json](historia/zdjecia.json), odfiltrować te bez licencji — `R2` — 17:00 (Jasiek, 12:55: na razie pomijamy licencje, użytek własny; wgrywamy wszystkie zdjęcia z polem licencji)
 - [x] **T-24** Port `PlacesRepository` + adapter Supabase (RPC, zod, timeout 5 s) + `fake` na 5 miejscach; trasy `/v1/places` czekają na kontrakt `Place`/`PlaceSummary` w `packages/shared` — `R2` — (Jasiek, 13:24)
+- [x] **T-26** `GET /v1/places?bbox=&interests=` (GeoJSON dla MapLibre) i `GET /v1/places/:id` (pełne miejsce dla opowieści), kontrakt w PR #6; na Railway potrzebne `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY` (R1), bez nich API daje 5 miejsc z fake — `R2` — (Jasiek, 13:38)
 - [ ] **T-25** Oznaczyć miejsca kategoriami, które wybiera użytkownik: `historical`, `cultural`, `sports`, `nature` (kolumna `places.interests`). Szczegóły w karcie [R2](role/R2-baza-i-historia.md#kategorie-zainteresowań-od-1710-1430). Najpierw `sports` i `nature`, bo dziś mają 0 miejsc. Po zmianie: seed i `pnpm --filter @sawa/scripts export:places` (plik dla planera) — `R2` — 17:00
 
 ## R3 · Frontend i mapa
@@ -76,10 +77,10 @@
 Zakres to tylko lista MVP z [10-prd.md](10-prd.md), zob. [12-plan-mvp.md](12-plan-mvp.md) §10.
 
 - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
-- [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
+- [x] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00 (Jasiek, 13:43: używamy danych Google pobranych 15–16.10, bez zapytań na żywo i bez klucza; warstwa `dzis` → `places.today_nearby`, `Place.todayNearby`)
 - [ ] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00
 - [ ] **T-14** Przewidywanie, co będzie za oknem za X s (pozycja + rozkład); przy korku dłuższa historia — `R1` — po 22:00
-- [ ] **T-23** Cache Google Places w Supabase (tylko jeśli T-06 = tak) — `R2` — 22:00
+- [x] **T-23** ~~Cache Google Places w Supabase~~ niepotrzebne: nie odpytujemy Google na żywo (T-06) — `R2` — (Jasiek, 13:43)
 - [ ] **T-34** Zakładka czatu z Sawą (UI, podpięcie do T-40) — `R3` — noc
 - [ ] **T-40** `POST /v1/chat` (SSE) z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
 - [ ] **T-43** TTS: wybór (ElevenLabs czy open source), test polskiego na 3 tekstach — `R4` — 15:00

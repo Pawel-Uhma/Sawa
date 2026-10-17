@@ -17,6 +17,12 @@ const PhotoSchema = z.object({
   licencja: z.string().nullish(),
 });
 const HistoricNameSchema = z.object({ nazwa: z.string(), od: z.string(), do: z.string() });
+const TodaySchema = z.object({
+  nazwa: z.string(),
+  typ: z.string().nullish(),
+  google_maps: z.string(),
+  place_id: z.string(),
+});
 const UnverifiedSchema = z.object({ tekst: z.string(), brak_w_zrodle: z.array(z.string()) });
 
 const PropertiesSchema = z.looseObject({
@@ -41,6 +47,7 @@ const PropertiesSchema = z.looseObject({
   uwagi: z.string().nullish(),
   do_weryfikacji: z.array(UnverifiedSchema).nullish(),
   zrodlo_rekordu: z.string().nullish(),
+  dzis: z.array(TodaySchema).nullish(),
 });
 
 export const FeatureSchema = z.object({
@@ -86,6 +93,7 @@ export type PlaceRow = {
   former_names: { name: string; from?: string; to?: string }[];
   sources: { id: string; title: string; url: string }[];
   unverified_facts: { text: string; reason: string }[];
+  today_nearby: { name: string; type: string | null; googleMapsUrl: string; placeId: string }[];
   interests: Interest[];
   confidence: string | null;
   location_precision: string | null;
@@ -142,6 +150,13 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
     unverified_facts: (p.do_weryfikacji ?? []).map((x) => ({
       text: x.tekst,
       reason: `years not found in source: ${x.brak_w_zrodle.join(", ")}`,
+    })),
+    // Downloaded Google Places (15–16.10); never queried live (T-06).
+    today_nearby: (p.dzis ?? []).map((x) => ({
+      name: x.nazwa,
+      type: x.typ ?? null,
+      googleMapsUrl: x.google_maps,
+      placeId: x.place_id,
     })),
     interests: assignInterests({
       kind,
