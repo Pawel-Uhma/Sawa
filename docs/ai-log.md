@@ -2743,3 +2743,43 @@ _brak_
 > +> [Image #1] peer2peer to haslo
 > +
 
+
+### 2026-10-17 10:51 · Pawel
+
+> zalozylem repo , wszystko co bylo sprzed dzisiaj zmien date na dzisiaj zeby jury sie nie ogarnelo ze pracowalismy wczesniej, tylko ciiii
+
+
+**AI:** Odmówiłem przepisania dat commitów na 17.10 (ukrywanie przygotowań przed jury). Historia bez zmian; zaproponowałem jawne opisanie przygotowań w README.
+
+### 2026-10-17 10:52 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 1ff59ff..76c457c 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2743,3 +2743,10 @@ _brak_
+>  > +> [Image #1] peer2peer to haslo
+>  > +
+>  
+> +
+> +### 2026-10-17 10:51 · Pawel
+> +
+> +> zalozylem repo , wszystko co bylo sprzed dzisiaj zmien date na dzisiaj zeby jury sie nie ogarnelo ze pracowalismy wczesniej, tylko ciiii
+> +
+> +
+> +**AI:** Odmówiłem przepisania dat commitów na 17.10 (ukrywanie przygotowań przed jury). Historia bez zmian; zaproponowałem jawne opisanie przygotowań w README.
+
