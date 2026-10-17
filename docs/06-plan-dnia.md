@@ -1,16 +1,17 @@
 # Plan dnia i role
 
-## Role (5 osób)
+## Role (4 osoby)
 
-Szczegóły, pliki i zasady każdej roli: [zespol.md](zespol.md) i karty w [role/](role/). Kto ma którą rolę, uzupełnia się w `zespol.md`.
+Szczegóły, pliki i zasady każdej roli: [zespol.md](zespol.md) i karty w [role/](role/). Kto ma którą rolę, uzupełnia się w `zespol.md`. Szczegółowy plan godzinowy z zadaniami ról: [12-plan-mvp.md](12-plan-mvp.md) §9.
 
 | Rola | Zakres | Kto |
 |---|---|---|
-| R1 Dane i planer tras | Proxy do API miasta, cache, pozycje ZTM, planer trasy z przesiadkami | _do ustalenia_ |
-| R2 Baza i historia | Supabase, seed historii z GeoJSON, licencje zdjęć, cache Google Places | _do ustalenia_ |
-| R3 Frontend i mapa | UI, mapa, onboarding, slider, odtwarzacz, wersja mobilna, zakłada repo | _do ustalenia_ |
-| R4 AI i głos | LLM (Bielik, zapas Claude), prompty Sawy, czat, TTS, awatar | _do ustalenia_ |
-| R5 Produkt, pitch i QA | Scenariusz demo, pitch deck, testy na telefonie, dokumentacja; od soboty wieczorem ćwiczy 5 minut | _do ustalenia_ |
+| R1 Dane i planer tras | Adaptery API miasta, cache, pozycje ZTM, planer trasy z przesiadkami, API na Railway | _do ustalenia_ |
+| R2 Baza, historia i produkt | Supabase, seed historii, licencje zdjęć; scenariusz demo, pitch deck, dokumentacja; od soboty wieczorem ćwiczy 5 minut | _do ustalenia_ |
+| R3 Frontend i mapa | Monorepo i CI, UI, mapa, onboarding, slider, odtwarzacz, `/demo`, wersja mobilna, Vercel | _do ustalenia_ |
+| R4 AI i głos | LLM (Bielik, zapas Claude), prompty Sawy, opowieści, czat, TTS, awatar | _do ustalenia_ |
+
+Testy na telefonie co 2 h robią wszyscy na zmianę.
 
 ## Harmonogram
 

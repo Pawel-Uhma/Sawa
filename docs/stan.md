@@ -1,11 +1,13 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 11:55 (Paweł, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 12:05 (Szczepan, z agentem)
 
 ## Teraz
 
 - Sobota 17.10, po 11:00: kod aplikacji wolno pisać.
 - Zrobione: mózg zespołu (mapa w `README.md`, `todo.md`, `zespol.md`, karty ról w `role/`), zasady pracy w `CLAUDE.md`.
+- Nowe: [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) (zasady kodu i współpracy) i [12-plan-mvp.md](12-plan-mvp.md) (stack, kontrakt API, harmonogram). Każdy czyta i zgłasza niezgodę z założeniami [Z] (T-64).
+- Szkielet monorepo gotowy (T-04): `pnpm install && pnpm dev`. Plan MVP przycięty do listy MVP z PRD, dodatki w `todo.md` w sekcji „Poza MVP”.
 - Najbliższe: wpisanie git user.name i ról do `zespol.md` (T-08), inicjalizacja repo aplikacji (T-04), zdjęcie decyzji o API Bielika i Supabase (T-01, T-02).
 
 ## Zablokowane
@@ -18,6 +20,10 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 | Pytanie | Kto rozstrzyga | Gdzie szukać kontekstu |
 |---|---|---|
+| Potwierdzenie stacku z planu MVP: Hono na Railway + monorepo pnpm, 4 role (R5 → R2) | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) §2, §11 |
+| Mapa: Mapbox (decyzja R3, T-65) czy MapLibre (plan MVP)? Konflikt po scaleniu 17.10 | R3 (Paweł) | [05-plan-architektury.md](05-plan-architektury.md), [12-plan-mvp.md](12-plan-mvp.md) |
+| Skąd kolejność przystanków linii (GTFS?) | R1, 13:30 | [12-plan-mvp.md](12-plan-mvp.md) §7, P1 |
+| Konta Vercel i Railway: zespołowe czy prywatne | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) P7 |
 | Przycisk „dalej” w opowieści: MVP czy później | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | Głos: ElevenLabs czy open source, jakość polskiego | R4 + zespół | [05-plan-architektury.md](05-plan-architektury.md) |
 | Toalety: brak zbioru w portalu, OSM czy rezygnacja | R1 | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
@@ -42,6 +48,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 - 17.10: projekt to Sawa (pomysł) i wyzwanie 1 „Warszawa 2076”. [README](README.md)
 
 - 17.10, 11:30: stack Next.js + Supabase + Vercel potwierdzony; repo z dokumentacją i klucz API na Discordzie zespołu. [Podsumowanie](spotkania/2026-10-17-1130-stack-repo-domena.md)
+- 17.10, 11:45: backend jako osobna usługa Hono (TypeScript) na Railway, monorepo pnpm, dokumenty po polsku, kod po angielsku, 4 role (R5 rozwiązana, zadania ma R2). Ustalone przez Szczepana, do potwierdzenia przez zespół. [12-plan-mvp.md](12-plan-mvp.md)
 
 - 17.10: MVP to historia miejsc; podcast z okna w komunikacji; bez logowania; Supabase na koncie zespołu. [Podsumowanie](spotkania/2026-10-17-1100-mvp-sawy.md)
 - 17.10: historia to punkt na mapie, format GeoJSON + Markdown, treść generuje LLM na żywo. [historia/README.md](historia/README.md)
