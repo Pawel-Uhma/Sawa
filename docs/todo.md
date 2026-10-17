@@ -107,6 +107,7 @@
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 - [x] **T-150** Mapa: punkty znów grupują się w klastry z liczbą przy oddaleniu (usunięte w `17d8870`/`578b21d`; jeśli celowo, powód do `stan.md`) ([#101](https://github.com/Pawel-Uhma/Sawa/issues/101)) — `R3` (Paweł) — (Paweł z agentem, 20:45–21:10: `cluster: true`, szklane kółko z liczbą, stuknięcie przybliża i rozbija grupę)
 - [x] **T-151** Mapa: jedno źródło koloru punktu, zgodne z chipami tematów, plus zwijana legenda kolor → kategoria ([#102](https://github.com/Pawel-Uhma/Sawa/issues/102)) — `R3` (Paweł) — (Paweł z agentem, 20:45–21:10: glif podrodzaju w kolorze tematu, rysowany w przeglądarce; legenda pod zoomem; paleta grup rodzajów usunięta)
+- [x] **T-152** Wyszukiwanie celu: stara odpowiedź bez ulicy przez cache ([#107](https://github.com/Pawel-Uhma/Sawa/issues/107)). Cache HTTP `private, max-age=60`, w web `staleTime` 5 min; adapter zwraca `partial`, gdy Autocomplete/Place Details padnie, i loguje `logger.warn` ze statusem Google; serwis nie cache'uje `partial`, TTL 1 h — `R3` — (Paweł z agentem, 20:55–21:05)
 
 ## R4 · AI i głos
 
