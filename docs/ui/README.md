@@ -21,6 +21,12 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 
 | Plik | Co pokazuje | Zadanie | Decyzja |
 |---|---|---|---|
+| [0110-petla-00-zestawienie](propozycje/0110-petla-00-zestawienie.jpg) | Runda 2 po uwadze Pawła (w 0100 pętla niewidoczna, czas niewygodny): 5 wariantów z pętlą jako głównym wyborem. HTML w `propozycje/html/0110-petla-*.html` | ekran główny | do wyboru Pawła |
+| [0110-…-f-kafle-linijka](propozycje/0110-petla-f-kafle-linijka-mobile.png) | F: dwa duże kafle „Pętla stąd” / „Do celu”, czas linijką przewijaną palcem pod igłą, szkic pętli na mapie | ekran główny | |
+| [0110-…-g-zasieg-na-mapie](propozycje/0110-petla-g-zasieg-na-mapie-mobile.png) | G: zasięg pętli jako okrąg na mapie, czas przeciąga się uchwytem na okręgu (rośnie zasięg i liczba miejsc), skróty czasu w arkuszu | ekran główny | |
+| [0110-…-h-tarcza](propozycje/0110-petla-h-tarcza-mobile.png) | H: tarcza jak minutnik, pętla to dosłownie okrąg; obrót uchwytu ustawia czas do 4 h | ekran główny | |
+| [0110-…-i-karty-dlugosci](propozycje/0110-petla-i-karty-dlugosci-mobile.png) | I: „Pętla stąd. Na jak długo?”: karty 45 min / 1 h 30 / 3 h z kształtem pętli i liczbą opowieści | ekran główny | |
+| [0110-…-j-przycisk-stepper](propozycje/0110-petla-j-przycisk-stepper-mobile.png) | J: osobny przycisk pętli obok wyszukiwarki (zamiast „trasy” w Google), dymek Sawy, czas przyciskami − / + z godziną powrotu i skrótami | ekran główny | |
 | [0100-szukaj-00-zestawienie](propozycje/0100-szukaj-00-zestawienie.jpg) | 5 propozycji ekranu głównego na telefon w stylu Google Maps: wyszukiwarka u góry zamiast formularza w karcie. HTML w `propozycje/html/0100-szukaj-*.html` | ekran główny | do wyboru Pawła |
 | [0100-…-a-chipy](propozycje/0100-szukaj-a-chipy-mobile.png) | A: „Dokąd jedziesz?” u góry, czas, sposób i koniec jako chipy z menu; pusty cel = pętla. Niski arkusz z podsumowaniem i „Ułóż pętlę” | ekran główny | |
 | [0100-…-b-przejazdzki](propozycje/0100-szukaj-b-przejazdzki-mobile.png) | B: wyszukiwarka + chipy tematów filtrują znaczniki; arkusz z gotowymi przejażdżkami (jedno dotknięcie), „Ułóż własną” obok | ekran główny | |

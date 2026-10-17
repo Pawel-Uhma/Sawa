@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Pętla I · karty długości</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet"><link href="_petla.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>.kp{width:150px}.kp.on{outline:3px solid var(--glebia);background:var(--mieta-jasna)}.kp .opis b{font-size:17px}
+  .kp.cel .mini{display:grid;place-items:center;color:var(--koral)} .kp.cel .mini svg{width:40px;height:40px}</style>
+</head><body><div class="telefon">
+  <div class="mapa" id="mapa"></div><div class="status"></div>
+  <div class="szukaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><div class="tekst">Szukaj miejsca</div><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg"></div>
+  <div class="chipy"><div class="chip wybrany" data-i="tramwaj">Komunikacją</div><div class="chip" data-i="pieszo">Pieszo</div></div>
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <h2>Pętla stąd. Na jak długo?</h2><div class="pod">Wracasz w to samo miejsce</div>
+    <div class="karty">
+      <div class="kp"><div class="mini" style="background:#F4F6F5"><svg viewBox="0 0 150 92" style="position:absolute;inset:0"><circle cx="75" cy="50" r="5" fill="#17706F"/><path d="M75 50 C40 40 50 20 75 25 S105 45 75 50" fill="none" stroke="#17706F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 7"/></svg></div><div class="opis"><b>45 min</b><span>3 opowieści</span></div></div>
+      <div class="kp on"><div class="mini" style="background:#DDF2E9"><svg viewBox="0 0 150 92" style="position:absolute;inset:0"><circle cx="75" cy="50" r="5" fill="#17706F"/><path d="M75 50 C20 60 25 10 70 12 S135 30 120 60 S95 80 75 50" fill="none" stroke="#17706F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 7"/></svg></div><div class="opis"><b>1 h 30</b><span>6 opowieści</span></div></div>
+      <div class="kp"><div class="mini" style="background:#F4F6F5"><svg viewBox="0 0 150 92" style="position:absolute;inset:0"><circle cx="75" cy="50" r="5" fill="#17706F"/><path d="M75 50 C5 85 5 5 60 6 S148 8 144 50 S110 90 75 50" fill="none" stroke="#17706F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 7"/></svg></div><div class="opis"><b>3 h</b><span>11 opowieści</span></div></div>
+    </div>
+    <div class="przycisk">Ułóż pętlę 1 h 30 <span data-i="strzalka" style="display:flex;width:20px"></span></div>
+  </div>
+  <div class="home"></div>
+</div><script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { trasa: 'wola', przerywana: true, dopasuj: { top: 180, bottom: 420, left: 60, right: 60 } });</script>
+</body></html>
