@@ -1,0 +1,79 @@
+/* Wspólne elementy makiet 0100-szukaj-* (ekran główny jak Google Maps: wyszukiwarka u góry) */
+.szukaj { position: absolute; top: 54px; left: 16px; right: 16px; z-index: 30; height: 52px; border-radius: 26px;
+  display: flex; align-items: center; gap: 10px; padding: 0 6px 0 16px; background: #fff;
+  box-shadow: 0 1px 2px rgba(16,43,42,.08), 0 6px 20px rgba(16,43,42,.14); }
+.szukaj > svg { width: 20px; height: 20px; color: var(--tekst-2); flex: none; }
+.szukaj .tekst { flex: 1; font-size: 16px; font-weight: 500; color: var(--tekst-3); white-space: nowrap; overflow: hidden; }
+.szukaj .tekst b { color: var(--tekst); font-weight: 700; }
+.szukaj .glos { width: 22px; height: 22px; color: var(--glebia); flex: none; }
+.szukaj img.awatar { width: 40px; height: 40px; flex: none; border: 2px solid var(--mieta-jasna); }
+.szukaj .logo { font-size: 20px; flex: none; }
+
+/* Pozioma lista chipów pod wyszukiwarką */
+.chipy { position: absolute; top: 116px; left: 0; right: 0; z-index: 30; display: flex; gap: 8px; padding: 0 16px; overflow: hidden; }
+.chipy .chip { background: #fff; color: var(--tekst); height: 36px; font-size: 14px; box-shadow: 0 1px 2px rgba(16,43,42,.08), 0 3px 10px rgba(16,43,42,.12); }
+.chipy .chip svg { width: 16px; height: 16px; color: var(--glebia); }
+.chipy .chip.wybrany { background: var(--glebia); color: #fff; }
+.chipy .chip.wybrany svg { color: #fff; }
+.chipy .chip .str { width: 12px; height: 12px; opacity: .6; margin-left: -2px; }
+
+/* Okrągłe przyciski mapy (lokalizacja, warstwy) */
+.fab { position: absolute; right: 16px; z-index: 30; width: 48px; height: 48px; border-radius: 50%; background: #fff;
+  display: grid; place-items: center; color: var(--glebia); box-shadow: 0 2px 10px rgba(16,43,42,.18); }
+.fab svg { width: 22px; height: 22px; }
+.fab.duzy { width: auto; height: 56px; border-radius: 18px; padding: 0 20px; gap: 8px; display: flex; align-items: center;
+  background: var(--glebia); color: #fff; font-weight: 700; font-size: 16px; box-shadow: 0 6px 18px rgba(23,112,111,.35); }
+
+/* Dolny arkusz przyklejony do krawędzi (jak w Google Maps) */
+.arkusz { position: absolute; left: 0; right: 0; bottom: 0; z-index: 35; background: #fff; border-radius: 24px 24px 0 0;
+  padding: 8px 16px 34px; box-shadow: 0 -4px 24px rgba(16,43,42,.12); }
+.arkusz .uchwyt { margin-bottom: 10px; }
+.arkusz h2 { font-size: 19px; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; }
+.arkusz .pod { font-size: 13px; color: var(--tekst-2); font-weight: 500; }
+
+.wiersz { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid var(--linia); }
+.wiersz:first-of-type { border-top: 0; }
+.wiersz .ik { width: 40px; height: 40px; border-radius: 12px; flex: none; display: grid; place-items: center; background: var(--tlo-2); color: var(--glebia); }
+.wiersz .ik svg { width: 20px; height: 20px; }
+.wiersz .ik img { width: 30px; height: 30px; }
+.wiersz .tresc { flex: 1; min-width: 0; }
+.wiersz .tresc b { display: block; font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wiersz .tresc span { display: block; font-size: 12.5px; color: var(--tekst-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wiersz .ile { font-size: 13px; font-weight: 700; color: var(--tekst-3); font-variant-numeric: tabular-nums; }
+
+/* Przyciski akcji pod nazwą (jak „Trasa / Start / Zapisz” w Google Maps) */
+.akcje { display: flex; gap: 8px; margin-top: 12px; overflow: hidden; }
+.akcje div { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 14px; border-radius: 19px; white-space: nowrap;
+  font-size: 14px; font-weight: 700; color: var(--glebia); background: var(--mieta-jasna); }
+.akcje div.glowna { background: var(--glebia); color: #fff; }
+.akcje svg { width: 17px; height: 17px; }
+
+/* Karta trasy (przejażdżka gotowa jednym dotknięciem) */
+.karty { display: flex; gap: 10px; margin: 12px -16px 0; padding: 0 16px; overflow: hidden; }
+.kp { flex: none; width: 214px; border-radius: 18px; overflow: hidden; background: var(--tlo-2); }
+.kp .mini { height: 92px; position: relative; }
+.kp .opis { padding: 10px 12px 12px; }
+.kp .opis b { display: block; font-size: 14.5px; font-weight: 800; letter-spacing: -.01em; }
+.kp .opis span { display: block; font-size: 12.5px; color: var(--tekst-2); margin-top: 2px; }
+.linie { display: flex; gap: 4px; margin-top: 7px; }
+.linie i { font-style: normal; font-size: 11px; font-weight: 800; padding: 2px 6px; border-radius: 5px; color: #fff; background: #C8102E; }
+.linie i.bus { background: #1F4E9A; }
+.linie i.p { background: var(--tekst-3); }
+
+/* Dymek Sawy */
+.dymek { position: relative; padding: 10px 14px; border-radius: 16px 16px 16px 4px; background: var(--mieta-jasna);
+  font-size: 14px; font-weight: 600; color: var(--glebia-ciemna); line-height: 1.35; }
+
+/* Zakładki na dole jak w Google Maps (Odkrywaj, Przejażdżki, Sawa) */
+.nawi { position: absolute; left: 0; right: 0; bottom: 0; z-index: 40; height: 84px; padding: 8px 12px 26px; background: #fff;
+  display: flex; justify-content: space-around; border-top: 1px solid var(--linia); }
+.nawi div { display: flex; flex-direction: column; align-items: center; gap: 3px; width: 90px; font-size: 11.5px; font-weight: 700; color: var(--tekst-3); }
+.nawi div svg { width: 24px; height: 24px; }
+.nawi div img { width: 26px; height: 26px; }
+.nawi div.aktywna { color: var(--glebia); }
+.nawi div.aktywna svg { background: var(--mieta-jasna); border-radius: 14px; width: 56px; padding: 0 16px; }
+
+.wybor { display: flex; gap: 6px; }
+.wybor div { flex: 1; height: 42px; border-radius: 12px; display: grid; place-items: center; font-size: 14px; font-weight: 700;
+  color: var(--tekst-2); background: var(--tlo-2); font-variant-numeric: tabular-nums; }
+.wybor div.on { background: var(--glebia); color: #fff; }
