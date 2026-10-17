@@ -1,0 +1,233 @@
+[
+  {
+    "id": "ulica-zgoda",
+    "nazwa": "Ulica Zgoda",
+    "name_en": "Zgoda Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zgoda",
+    "adres_historyczny": null,
+    "lat": 52.232769,
+    "lon": 21.0137614,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Zgoda leży w Śródmieściu Północnym; zaczyna się przy skrzyżowaniu z Chmielną jako przedłużenie Brackiej.",
+      "Ulica istniała już w XVIII wieku i razem z Bracką i Bagnem była częścią traktu Ujazdów–Grzybów.",
+      "Nazwa pochodzi od dawnej karczmy stojącej w tym miejscu; rok nadania nazwy jest sporny (Dylewski podaje ok. 1879, Szwankowski 1770), a w druku pojawia się już w 1834 roku.",
+      "Ulicę uregulowano około 1770 roku i poszerzono w 1858 roku; pierwszymi zabudowaniami były budynki Szpitala Dzieciątka Jezus.",
+      "Do 1885 roku przy ulicy znajdował się wiatrak holenderski.",
+      "Po przeniesieniu szpitala, po 1902 roku, powstały m.in. gmach wydawnictwa Gebethner i Wolff z 1906 roku oraz Dom pod Orłami z 1917 roku.",
+      "W 1950 roku ulica zyskała nowego patrona, Władysława Hibnera, działacza komunistycznego rozstrzelanego na stokach Cytadeli.",
+      "Historyczną nazwę przywrócono w 1990 roku."
+    ],
+    "ciekawostki": [
+      "Zgoda 7 (róg Złotej) to budynek Kasy Pożyczkowej Przemysłowców Warszawskich projektu Stefana Szyllera.",
+      "Zgoda 3 to zabytkowa kamienica z 1887 roku."
+    ],
+    "summary_en": "Zgoda is a street in Śródmieście Północne that continues Bracka from Chmielna. It takes its name from a former tavern, was regulated around 1770, and was called after Władysław Hibner from 1950 to 1990, when the historic name was restored.",
+    "ludzie": [
+      {"kto": "Władysław Hibner", "rola": "patron ulicy w latach 1950–1990; działacz komunistyczny rozstrzelany na stokach Cytadeli", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "projektant budynku Kasy Pożyczkowej Przemysłowców Warszawskich przy Zgodzie 7", "wiki": null}
+    ],
+    "dawne_nazwy": ["Władysława Hibnera (1950–1990)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Zgoda", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zgoda"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu. Rok nadania nazwy jest w źródle sporny."
+  },
+  {
+    "id": "ulica-zielna",
+    "nazwa": "Ulica Zielna",
+    "name_en": "Zielna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zielna",
+    "adres_historyczny": null,
+    "lat": 52.2377638,
+    "lon": 21.0055815,
+    "lokalizacja": "przyblizona",
+    "okres": "połowa XVIII wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Zielna, długa na nieco ponad 300 metrów, leży na Grzybowie w Śródmieściu Północnym i biegnie od Skweru B. Kontryma do ul. Królewskiej.",
+      "Ulica powstała w połowie XVIII wieku, wytyczona na pograniczu jurydyki Bielino, pośród jej ogrodów.",
+      "Podczas oficjalnego nadawania nazw w 1770 roku nazwę Zielona zniekształcono na Zielna.",
+      "Pierwotnie ulica biegła od Chmielnej do Królewskiej, co utrzymało się do II wojny światowej.",
+      "W 1939 roku część kamienic została zniszczona, a zachodnia pierzeja przejściowo weszła w skład getta.",
+      "Budowa Pałacu Kultury i Nauki pochłonęła resztki kamienic i dużą część ulicy, zamienioną w Plac Defilad; ulicę skrócono do niewielkiego odcinka.",
+      "W czerwcu 2010 roku zaczęto rozbierać budki handlowe przy parzystej stronie ulicy."
+    ],
+    "ciekawostki": [
+      "W latach 1929–1944 w kamienicy Zielna 25 mieściło się studio radiowe Polskiego Radia; wcześniej był tu ratusz jurydyki Bielino.",
+      "Pałac Janaszów-Czackich pod numerem 49 mieści dziś Zarząd PKZ Warszawa."
+    ],
+    "summary_en": "Zielna is a little over 300 m long street in Grzybów, Śródmieście Północne, running north from Skwer B. Kontryma to Królewska. Laid out in the mid-18th century as Zielona, it was shortened to a small stretch after the Palace of Culture and Science and Plac Defilad were built over its southern part.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zielona"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Zielna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zielna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-zimna",
+    "nazwa": "Ulica Zimna",
+    "name_en": "Zimna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zimna",
+    "adres_historyczny": null,
+    "lat": 52.2399956,
+    "lon": 20.9999462,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Zimna to niewielka uliczka w Śródmieściu Północnym, długa na 50 metrów.",
+      "Zaczyna się na skrzyżowaniu pl. Mirowskiego i ul. Ptasiej, a kończy się ślepo ok. 50 m na północ.",
+      "Dawniej ulica dochodziła do ul. Elektoralnej; dziś prowadzą tam jedynie ścieżki dla pieszych.",
+      "Ulica powstała w XVII wieku na terenie jurydyki Wielopole.",
+      "Od XIX wieku mieszkali tu głównie Żydzi, prowadzący kramy i sklepiki.",
+      "Podczas II wojny światowej przetrwały dwie kamienice, ale zamiast je wyremontować, rozebrano je.",
+      "Do ulicy przypisany jest tylko jeden budynek mieszkalny, oznaczony numerem 2."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zimna is a 50 m dead-end lane in Śródmieście Północne, starting at Plac Mirowski and Ptasia street. Formed in the 17th century on the Wielopole jurisdiction, it was home mainly to Jewish shopkeepers from the 19th century, and two tenements that survived the war were later demolished.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Zimna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zimna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-lazienkowska",
+    "nazwa": "Ulica Łazienkowska",
+    "name_en": "Łazienkowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Łazienkowska",
+    "adres_historyczny": null,
+    "lat": 52.2216202,
+    "lon": 21.0399546,
+    "lokalizacja": "przyblizona",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Ulica Łazienkowska, długa na 600 metrów, leży na Solcu i biegnie od ul. Rozbrat do ul. Czerniakowskiej.",
+      "Ulica została prawdopodobnie wyznaczona już w XIX wieku, gdy stanowiła północną granicę zespołu koszar kawalerii rosyjskiej.",
+      "Około 1930 roku na terenie koszar powstały stadion sportowy, korty tenisowe i baseny.",
+      "W 1949 roku na rogu z ul. Czerniakowską powstała pętla trolejbusowa, a w 1954 roku sztuczne lodowisko Torwar.",
+      "Do 2005 roku nazwę „Łazienkowska” nosił obecny zespół przystankowy Legia-Stadion.",
+      "Ulica zaczyna się na zachodzie skrzyżowaniem z ul. Rozbrat i ul. Myśliwiecką, gdzie tworzy rondo Sedlaczka."
+    ],
+    "ciekawostki": [
+      "Pod numerem 14 znajduje się kościół Matki Bożej Jasnogórskiej."
+    ],
+    "summary_en": "Łazienkowska runs through Solec from Rozbrat to Czerniakowska, about 600 m long. It was probably laid out in the 19th century as the northern edge of a Russian cavalry barracks, and later the area held a stadium, tennis courts, swimming pools and the Torwar ice rink (1954).",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Łazienkowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Łazienkowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu. Artykuł nie podaje daty powstania ulicy."
+  },
+  {
+    "id": "ulica-swietej-barbary",
+    "nazwa": "Ulica Świętej Barbary",
+    "name_en": "Świętej Barbary Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. św. Barbary",
+    "adres_historyczny": null,
+    "lat": 52.2269487,
+    "lon": 21.0079312,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Świętej Barbary, długa na 350 metrów, leży w Śródmieściu Południowym; biegnie od ul. Poznańskiej do ul. Nowogrodzkiej i jest jednokierunkowa w kierunku zachodnim.",
+      "W miejscu ulicy znajdował się pierwszy warszawski cmentarz poza miastem, tzw. Cmentarz Świętokrzyski, założony w 1781 roku.",
+      "W 1783 roku powstała kaplica św. Barbary; cmentarz zamknięto w 1836 roku.",
+      "Teren uporządkowano w 1881 roku i usunięto wszystkie szczątki.",
+      "W latach 1883–1886 wybudowano kościół parafialny św. Piotra i Pawła.",
+      "Uliczka z tego okresu była pierwotnie ślepa; połączono ją z Nowogrodzką w latach 60. XX wieku.",
+      "Patronką ulicy jest św. Barbara, męczennica z IV wieku, jedna z Czternastu Świętych Wspomożycieli."
+    ],
+    "ciekawostki": [
+      "Pod numerem 4 mieścił się dawny gmach Gimnazjum i Liceum im. M. Konopnickiej; dziś mieści się tam Centrum Usług Koncesjonowanych oraz Centrum Zarządzania Kadrami Poczty Polskiej."
+    ],
+    "summary_en": "Świętej Barbary is a one-way 350 m street in Śródmieście Południowe, running from Poznańska to Nowogrodzka. It runs over the site of Warsaw's first cemetery outside the city, opened in 1781, and is named after St. Barbara, patron of the nearby parish.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Świętej Barbary", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Świętej_Barbary"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-swietojanska",
+    "nazwa": "Ulica Świętojańska",
+    "name_en": "Świętojańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętojańska",
+    "adres_historyczny": null,
+    "lat": 52.2489779,
+    "lon": 21.0127012,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIII i XIV wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Świętojańska, długa na około 150 metrów, leży na Starym Mieście; biegnie od placu Zamkowego do Rynku Starego Miasta i jest całkowicie zamknięta dla ruchu.",
+      "Ulica powstała na przełomie XIII i XIV wieku wraz z założeniem Starej Warszawy, w oparciu o pierwotny szlak z Czerska do Zakroczymia.",
+      "Pierwotnie nazywała się Grodzka; nowa nazwa zaczęła się rozpowszechniać w XVII wieku (wcześniej ulica nosiła nazwę Jezuicka).",
+      "Ulicę zamieszkiwali głównie bogatsi mieszczanie, m.in. złotnicy.",
+      "Ulica została poważnie uszkodzona w II wojnie światowej, a odbudowano ją do stanu sprzed zniszczenia w latach 1947–1958.",
+      "Nazwa ulicy jest nierozerwalnie związana z leżącą przy niej katedrą św. Jana, której patron jest jednocześnie patronem ulicy.",
+      "Od ulicy odchodzą dwie wąskie uliczki bez nazwy prowadzące do ulicy Piwnej."
+    ],
+    "ciekawostki": [
+      "Przy kamienicy nr 11 stoi figura mieszczki warszawskiej.",
+      "Nad lewym parterowym oknem kamienicy nr 21 (Metrykantów Koronnych) zachowała się kamienna tablica libertacyjna."
+    ],
+    "summary_en": "Świętojańska is a short street of about 150 m on Stare Miasto, running from Plac Zamkowy to the Old Town Market. Laid out around 1300 with Old Warsaw and originally named Grodzka, it was renamed after St. John's Cathedral in the 17th century and rebuilt in 1947–1958.",
+    "ludzie": [],
+    "dawne_nazwy": ["Grodzka", "Jezuicka"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Świętojańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Świętojańska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-zurawia",
+    "nazwa": "Ulica Żurawia",
+    "name_en": "Żurawia Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Żurawia",
+    "adres_historyczny": null,
+    "lat": 52.2283248,
+    "lon": 21.0148317,
+    "lokalizacja": "przyblizona",
+    "okres": "połowa XVIII wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Żurawia, długa na 750 metrów, leży w Śródmieściu Południowym; zaczyna się przy północnej pierzei placu Trzech Krzyży, gdzie wpada na nią ul. Bracka, a kończy skrzyżowaniem z Poznańską.",
+      "Ulica powstała w połowie XVIII wieku jako Do Stawu; jej rozwój związany jest z budową dworca kolei Warszawsko-Wiedeńskiej w połowie XIX wieku.",
+      "Ulica była stopniowo zabudowywana kamienicami i w sporym stopniu zniszczona podczas II wojny światowej.",
+      "Do wojny znana była jako Żórawia; po wojnie duża jej część została przeznaczona na tzw. dzielnicę ministerstw.",
+      "Odcinek od Marszałkowskiej do Poznańskiej nosił w latach 1935–1949 nazwę ul. Żulińskiego.",
+      "Nazwa pochodzi od płynącej tędy niegdyś rzeczki Żurawki, wypływającej z rejonów bagiennych w pobliżu placu Starynkiewicza.",
+      "Ulica jest jednokierunkowa na całej długości, w kierunku wschodnim."
+    ],
+    "ciekawostki": [
+      "Tablica przy Żurawia 24 upamiętnia tajny sekretariat Rady Pomocy Żydom „Żegota” (1942–1944); według artykułu powinna odnosić się do sąsiedniego budynku Żurawia 24A.",
+      "W kamienicy Żurawia 45 w latach 1905–1907 mieszkał Mikolajus Konstantinas Čiurlionis, litewski artysta, malarz i kompozytor."
+    ],
+    "summary_en": "Żurawia is a 750 m one-way street in Śródmieście Południowe, running east from Plac Trzech Krzyży to Poznańska. First laid out in the mid-18th century as Do Stawu, it grew with the Warsaw–Vienna railway station and was partly reserved for government ministries after World War II.",
+    "ludzie": [
+      {"kto": "Mikolajus Konstantinas Čiurlionis", "rola": "mieszkał przy Żurawiej 45 w latach 1905–1907; artysta, malarz i kompozytor litewski", "wiki": null}
+    ],
+    "dawne_nazwy": ["Do Stawu", "Żórawia"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Żurawia", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żurawia"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu. Artykuł podaje kierunek jednokierunkowości jako wschodni."
+  }
+]

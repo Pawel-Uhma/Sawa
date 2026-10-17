@@ -1,0 +1,102 @@
+[
+  {
+    "id": "past-zielna-39",
+    "nazwa": "PAST (Cedergren)",
+    "name_en": "PAST building (formerly Cedergren)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Zielna 39",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wybudowano w latach 1907–1910 dla Towarzystwa Telefonicznego Cedergren wg projektu Bronisława Brochwicz-Rogoyskiego i szwedzkiego architekta Izaaka Classona.",
+      "Był to pierwszy w Warszawie wysokościowiec; był najwyższym budynkiem w Warszawie do wybudowania Prudentialu, a w chwili oddania – najwyższym w całym Imperium Rosyjskim.",
+      "W 1922 roku siedzibę przejęła Polska Akcyjna Spółka Telefoniczna, od której pochodzi skrót PAST.",
+      "Podczas powstania warszawskiego budynek przez pierwszą połowę sierpnia 1944 roku był w rękach Niemców; 20 sierpnia 1944 roku zdobył go batalion „Kiliński”.",
+      "Gmach odbudowano na przełomie lat 50. i 60. XX wieku; w 1965 roku wpisano go do rejestru zabytków (1 lipca 1965 roku, nr 757).",
+      "Budynek ma 51,5 metra wysokości; wybudowano go jako ośmiopiętrowy, a po wojnie wnętrza przekształcono w jedenaście pięter."
+    ],
+    "ciekawostki": [
+      "Na szczycie budynku umieszczono aluminiowy, pozłacany znak Polski Podziemnej (P-kotwica) o wysokości 6 metrów, wykonany przez byłego żołnierza AK Jacka Cydzika.",
+      "W 1934 roku budynek utracił palmę pierwszeństwa jako najwyższy w Warszawie – przegonił go Prudential."
+    ],
+    "summary_en": "Early modernist tower at Zielna 39, built in 1907–1910 for the Cedergren telephone company and known as PAST. It was the first skyscraper in Warsaw and was held by the Germans until it was stormed by the Kiliński battalion on 20 August 1944. It was restored after the war and listed as a historic monument in 1965.",
+    "ludzie": [
+      {"kto": "Bronisław Brochwicz-Rogoyski", "rola": "autor projektu gmachu (1907–1910)", "wiki": null},
+      {"kto": "Izaak Classon", "rola": "szwedzki architekt, współautor projektu", "wiki": null},
+      {"kto": "Jacek Cydzik", "rola": "były żołnierz AK, wykonał znak Polski Podziemnej na szczycie", "wiki": null},
+      {"kto": "Czesław Cywiński „Skowronek”", "rola": "płk, upamiętniony tablicą odsłoniętą w 2011 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Cedergren (do 1922 roku)", "Pasta"],
+    "zrodla": [{"tytul": "Warszawikia: PAST", "url": "https://warszawa.fandom.com/pl/wiki/PAST"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null. Okres: data oddania po budowie w 1910 roku."
+  },
+  {
+    "id": "pzu-tower",
+    "nazwa": "PZU Tower",
+    "name_en": "PZU Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "aleja Jana Pawła II 24",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę wieżowca prowadzono w latach 1997–2000.",
+      "Budynek ma 104 metry wysokości, 97 metrów do dachu i 28 kondygnacji nadziemnych.",
+      "Projektantami byli Tadeusz Spychała, Wojciech Popławski i Willibald Furst."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Office skyscraper at aleja Jana Pawła II 24 in Śródmieście, 104 m tall with 28 storeys above ground. Built in 1997–2000 to a design by Tadeusz Spychała, Wojciech Popławski and Willibald Furst.",
+    "ludzie": [
+      {"kto": "Tadeusz Spychała", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Wojciech Popławski", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Willibald Furst", "rola": "projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: PZU Tower", "url": "https://warszawa.fandom.com/pl/wiki/PZU_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu (infobox), lat/lon null."
+  },
+  {
+    "id": "cerkiew-zasniecia-najswietszej-bogurodzicy-miodowa-16",
+    "nazwa": "Cerkiew Zaśnięcia Najświętszej Bogurodzicy",
+    "name_en": "Church of the Dormition of the Mother of God (Ukrainian Greek Catholic)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Miodowa 16",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1782–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obecna cerkiew została zbudowana w latach 1782–1784 razem z klasztorem Zaśnięcia Najświętszej Bogurodzicy.",
+      "W okresie zaborów klasztor zlikwidowano, a cerkiew przekazano moskiewskim prawosławnym w 1875 roku.",
+      "Po odzyskaniu niepodległości w 1932 roku cerkiew przyjęła rolę parafialną.",
+      "Podczas II wojny światowej budynek bardzo ucierpiał; w latach 1946–1949 został dokładnie zrekonstruowany według projektu J. Grudzińskiego.",
+      "Cerkiew jest konkatedrą Archieparchii przemysko-warszawskiej."
+    ],
+    "ciekawostki": [
+      "Nazwę Kościół greckokatolicki wprowadziła cesarzowa Maria Teresa w 1774 roku, aby odróżnić tę wspólnotę od innych."
+    ],
+    "summary_en": "Ukrainian Greek Catholic church at Miodowa 16, built in 1782–1784 with its monastery. Taken over by Orthodox Muscovites in 1875, it became a parish church in 1932, was badly damaged in the Second World War and rebuilt in 1946–1949. It is now the co-cathedral of the Przemyśl-Warsaw Archeparchy.",
+    "ludzie": [
+      {"kto": "J. Grudziński", "rola": "autor projektu odbudowy (1946–1949)", "wiki": null},
+      {"kto": "Piotr Kuszka OSBM", "rola": "proboszcz parafii (wg artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": ["cerkiew Zaśnięcia Najświętszej Bogurodzicy (przekazana prawosławnym w 1875 roku)"],
+    "zrodla": [{"tytul": "Warszawikia: Parafia Zaśnięcia Najświętszej Bogurodzicy", "url": "https://warszawa.fandom.com/pl/wiki/Parafia_Zaśnięcia_Najświętszej_Bogurodzicy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy budynku cerkwi opisanego w artykule o parafii (sama parafia pominięta jako instytucja). Brak współrzędnych, lat/lon null."
+  }
+]

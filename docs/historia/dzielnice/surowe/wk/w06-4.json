@@ -1,0 +1,332 @@
+[
+  {
+    "id": "galeria-luksenburga",
+    "nazwa": "Galeria Luksenburga",
+    "name_en": "Luksenburg Gallery",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Senatorska 29",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1907–1944",
+    "istnieje": false,
+    "fakty": [
+      "Budowa galerii trwała w latach 1907–1909 według projektu Leona S. Drewsa oraz Czesława Przybylskiego.",
+      "Teren należał wcześniej do zakonu reformatów z pobliskiego kościoła św. Antoniego; na początku XX wieku nabył go żydowski kupiec Maksymilian Luksenburg.",
+      "W podziemiach działało wrotkowisko, a w 1912 roku ustąpiło ono miejsca Teatrowi Żydowskiemu.",
+      "Od 1914 roku działało kino Momus, a w galerii mieścił się także Hotel Grand z 700 pokojami w sumie.",
+      "W 1919 roku powstał kabaretowy teatrzyk „Qui Pro Quo”.",
+      "W styczniu 1925 roku otwarto kino Splendid w stylu art déco z egipskimi motywami; w latach 1930–1939 działało pod nazwą Sfinks.",
+      "Budynek galerii został zniszczony w 1944 roku."
+    ],
+    "ciekawostki": [
+      "Tablica przy skrzyżowaniu Canaletta z Senatorską upamiętnia aktorów Teatrzyku Qui Pro Quo, m.in. Eugeniusza Bodo, Adolfa Dymszę i Hankę Ordonównę.",
+      "Adres Senatorska 29 nosi położony po sąsiedzku budynek części klasztoru reformatów, na którym znajduje się kamień upamiętniający rozstrzelanie 15 osób 8 sierpnia 1944 roku."
+    ],
+    "summary_en": "A former shopping arcade, cinema and theatre complex on Senatorska Street, built in 1907-1909 and destroyed in 1944. It was home to the Splendid cinema and the Qui Pro Quo cabaret theatre.",
+    "ludzie": [
+      {"kto": "Maksymilian Luksenburg", "rola": "kupiec, nabywca terenu na początku XX wieku", "wiki": null},
+      {"kto": "Leon S. Drews", "rola": "projektant galerii", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "projektant galerii", "wiki": null},
+      {"kto": "Stanisław Jagmin", "rola": "autor mozaik wewnątrz", "wiki": null},
+      {"kto": "Fryderyk Jarosy", "rola": "konferansjer teatrzyku Qui Pro Quo", "wiki": null}
+    ],
+    "dawne_nazwy": ["Galeria Luxenburga", "Kino Splendid", "Kino Sfinks", "Teatrzyk Qui Pro Quo"],
+    "zrodla": [{"tytul": "Warszawikia: Galeria Luksenburga", "url": "https://warszawa.fandom.com/pl/wiki/Galeria_Luksenburga"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Adres z nagłówka (Senatorska 29); tekst podaje, że pod tym adresem jest sąsiedni budynek klasztorny."
+  },
+  {
+    "id": "gdanski-business-park",
+    "nazwa": "Gdański Business Park",
+    "name_en": "Gdański Business Park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Inflancka 4",
+    "adres_historyczny": "dawna zajezdnia autobusowa „Inflancka”",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2012–2016",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks biurowy zbudowano na terenie dawnej zajezdni autobusowej „Inflancka”.",
+      "Pierwszą fazę zaprojektowała pracownia E&L Architects (2014 rok), a drugi etap, ukończony w 2016 roku, projektowała pracownia Hermanowicz Rewski Architekci.",
+      "Na terenie biurowca znajduje się przedszkole z własnym placem zabaw.",
+      "Pierwszym właścicielem budynku był HB Reavis.",
+      "Pracuje tu prawie 10 000 osób.",
+      "Budynek ma 71 metrów wysokości i 10 000 m² powierzchni użytkowej."
+    ],
+    "ciekawostki": [
+      "Między budynkiem A a stacją metra Dworzec Gdański prowadzą schody skracające dojście."
+    ],
+    "summary_en": "An office complex on Inflancka Street in Muranów, built in 2012-2016 on the site of the former Inflancka bus depot. The second phase was completed in 2016.",
+    "ludzie": [
+      {"kto": "E&L Architects", "rola": "projektant pierwszej fazy (2014)", "wiki": null},
+      {"kto": "Hermanowicz Rewski Architekci", "rola": "projektant drugiego etapu (2016)", "wiki": null},
+      {"kto": "HB Reavis", "rola": "pierwszy właściciel budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zajezdnia autobusowa Inflancka"],
+    "zrodla": [{"tytul": "Warszawikia: Gdański Business Park", "url": "https://warszawa.fandom.com/pl/wiki/Gdański_Business_Park"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "gmach-banku-gospodarstwa-krajowego",
+    "nazwa": "Gmach Banku Gospodarstwa Krajowego",
+    "name_en": "Bank of National Economy Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 7",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1928–1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę rozpoczęto 21 maja 1928 roku, a gmach oddano do użytku 6 grudnia 1931 roku.",
+      "Projekt wybrany w konkursie (spośród 26 zgłoszonych) przygotował Rudolf Świerczyński.",
+      "Przed wybuchem II wojny światowej zrealizowano część zespołu przeznaczoną dla BGK; budynek miał siedem kondygnacji od strony Alej Jerozolimskich i pięć od strony Nowego Światu.",
+      "Elewacje obłożono płytami z andezytu z Małopolski, a wnętrza zdobią marmury, alabastr i stal nierdzewna.",
+      "Podczas powstania warszawskiego Niemcy zrabowali wyposażenie i zagrabili około 30 milionów złotych z rozbitego skarbca.",
+      "W latach 1957–2001 mieściła się tu siedziba Polskiej Agencji Prasowej.",
+      "W 1965 roku gmach wpisano do rejestru zabytków; w 2020 roku rozpoczęto modernizację wnętrz według projektu JEMS Architekci."
+    ],
+    "ciekawostki": [
+      "Płaskorzeźby na fasadzie wykonał Jan Szczepkowski."
+    ],
+    "summary_en": "A monumental modernist building at Aleje Jerozolimskie 7, designed by Rudolf Świerczyński and built in 1928-1931 for the Bank of National Economy. It housed the Polish Press Agency from 1957 to 2001 and is a listed monument.",
+    "ludzie": [
+      {"kto": "Rudolf Świerczyński", "rola": "autor projektu wybranego w konkursie", "wiki": null},
+      {"kto": "Jan Szczepkowski", "rola": "autor płaskorzeźb", "wiki": null},
+      {"kto": "Ludwik Tylbor", "rola": "projektant konstrukcji", "wiki": null},
+      {"kto": "Wojciech Jastrzębowski", "rola": "autor witraży i wystroju wnętrz", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Gmach Banku Gospodarstwa Krajowego", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Banku_Gospodarstwa_Krajowego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "gmach-centrali-pko-marszalkowska-134",
+    "nazwa": "Gmach Centrali PKO",
+    "name_en": "PKO Head Office Building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 134",
+    "adres_historyczny": "róg Marszałkowskiej 134 i Świętokrzyskiej 37",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1938–1944 (nieistniejący)",
+    "istnieje": false,
+    "fakty": [
+      "Budynek wzniesiono w latach 1938–1939 w miejscu dwupiętrowej kamienicy Stiagatowa, zburzonej w 1936 roku.",
+      "Projekt nowoczesnego, siedmiopiętrowego gmachu przygotowali Bolesław Szmidt i Józef Vogtman.",
+      "Gmach miał zostać połączony z istniejącym gmachem głównym PKO; prace przerwał wybuch II wojny światowej.",
+      "Budynek został zniszczony w 1944 roku; ruiny przetrwały do lat 60. XX wieku.",
+      "Podziemna część budynku służyła później jako toalety publiczne, a do 2012 roku działał w niej klub Underground.",
+      "Klub zakończył działalność 22 lipca 2012 roku; podziemia rozebrano w latach 2012–2013 i jest tam dziś jedno z wejść na stację metra Świętokrzyska."
+    ],
+    "ciekawostki": [
+      "Numer 134 przydzielono później Sezamowi (nowemu biurowcowi sąsiadującemu z placykiem przed restauracją McDonald's)."
+    ],
+    "summary_en": "The former PKO (Postal Savings Bank) head office at the corner of Marszałkowska and Świętokrzyska streets, built in 1938-1939 and destroyed in 1944. Its basement later housed a club and was demolished for a metro entrance in 2012-2013.",
+    "ludzie": [
+      {"kto": "Bolesław Szmidt", "rola": "projektant", "wiki": null},
+      {"kto": "Józef Vogtman", "rola": "projektant", "wiki": null},
+      {"kto": "Józef Orłowski", "rola": "autor wcześniejszej kamienicy Stiagatowa", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pocztowa Kasa Oszczędności (PKO), centrala", "Underground (klub)"],
+    "zrodla": [{"tytul": "Warszawikia: Gmach Centrali PKO", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Centrali_PKO"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje numery 134 i 37 przy róg Marszałkowskiej i Świętokrzyskiej; wpisano Marszałkowska 134."
+  },
+  {
+    "id": "gmach-glowny-politechniki-warszawskiej",
+    "nazwa": "Gmach Główny Politechniki Warszawskiej",
+    "name_en": "Main Building of the Warsaw University of Technology",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Plac Politechniki 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "8 czerwca 1898 roku car Mikołaj II wydał dekret o utworzeniu Warszawskiego Instytutu Politechnicznego.",
+      "Uczelnia rozpoczęła nauczanie jesienią 1898 roku w budynkach przetwórni tytoniu „Union” przy ul. Marszałkowskiej 81.",
+      "Miasto ofiarowało plac po II Wystawie Higienicznej o powierzchni około 70 tysięcy m² u zbiegu ulic Nowowiejskiej i Noakowskiego.",
+      "Zgromadzono łącznie kwotę 3,573 miliona rubli.",
+      "Projekt gmachu przygotowali Stanisław Szyller i Bronisław Brochwicz-Rogóyski, którzy działali jako firma „Szyller-Rogóyski”; projekty powstały w 72 dni.",
+      "Kamień węgielny pod budowę Gmachu Głównego wmurowano 8 września 1899 roku.",
+      "Gmach ma reprezentacyjną formę późnego historyzmu, czerpiącą z renesansu włoskiego i późnego baroku."
+    ],
+    "ciekawostki": [
+      "Architekci przed projektowaniem odbyli ponad trzytygodniową podróż po Europie, odwiedzając uczelnie techniczne m.in. w Wiedniu, Paryżu i Londynie; szkice powstawały w wagonach kolejowych.",
+      "Grupę rzeźbiarską na szczycie fasady zaprojektował Pius Weloński."
+    ],
+    "summary_en": "The main building of the Warsaw University of Technology on Plac Politechniki, designed by Stanisław Szyller and Bronisław Brochwicz-Rogóyski. The cornerstone was laid in 1899 after the institute was founded by decree in 1898.",
+    "ludzie": [
+      {"kto": "Stanisław Szyller", "rola": "projektant Gmachu Głównego", "wiki": null},
+      {"kto": "Bronisław Brochwicz-Rogóyski", "rola": "współprojektant zespołu architektonicznego", "wiki": null},
+      {"kto": "Pius Weloński", "rola": "autor grupy rzeźbiarskiej na szczycie fasady", "wiki": null},
+      {"kto": "Jan Gottlieb Bloch", "rola": "przemysłowiec, który przekazał budynki przetwórni tytoniu na pierwsze lata uczelni", "wiki": null},
+      {"kto": "Leopold Julian Kronenberg", "rola": "zabiegał o fundusze na budowę uczelni", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawski Instytut Politechniczny"],
+    "zrodla": [{"tytul": "Warszawikia: Gmach Główny Politechniki Warszawskiej", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Główny_Politechniki_Warszawskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z nagłówka. Sekcja „Wojna, odbudowa i okres powojenny” w paczce jest ucięta, więc rekord nie zawiera faktów z lat 1939–1945."
+  },
+  {
+    "id": "gmach-pocztowej-kasy-oszczednosci",
+    "nazwa": "Gmach Pocztowej Kasy Oszczędności",
+    "name_en": "Postal Savings Bank Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Świętokrzyska 31/33",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę według projektu Józefa Handzelewicza rozpoczęto w 1914 roku; przerwał ją wybuch I wojny światowej.",
+      "Budowę ukończono w latach 1921–1923 jako budynek Pocztowej Kasy Oszczędności; konstrukcję zaprojektował Stefan Bryła.",
+      "W latach 30. XX wieku budynek nadbudowano i rozbudowano o skrzydło w miejscu pałacyku nr 33 według projektu Zygmunta Tillingera.",
+      "Podczas powstania warszawskiego od 4 sierpnia mieściła się tu Komenda Okręgu Armii Krajowej, a po tygodniu przygotowań uruchomiono powstańczą radiostację „Błyskawica”.",
+      "Komenda musiała opuścić budynek 5 września 1944 roku.",
+      "W 1961 roku budynek przebudowano na Pocztę Główną; wnętrza zmodernizowano w latach 1995–1996.",
+      "Dziś mieści m.in. Pocztę Główną nr 1, jedną z dwóch działających całodobowo."
+    ],
+    "ciekawostki": [
+      "Na budynku, przy wejściu od strony narożnej, umieszczono tablicę upamiętniającą pracowników poczty i telekomunikacji, którzy w latach 1939–1945 oddali życie za wolność Ojczyzny."
+    ],
+    "summary_en": "The former Postal Savings Bank building at Świętokrzyska 31/33, begun in 1914 and completed in 1921-1923. During the Warsaw Uprising it housed the AK district command and the Błyskawica radio station. It has been the Main Post Office since 1961.",
+    "ludzie": [
+      {"kto": "Józef Handzelewicz", "rola": "autor projektu z 1914 roku", "wiki": null},
+      {"kto": "Stefan Bryła", "rola": "projektant konstrukcji", "wiki": null},
+      {"kto": "Zygmunt Tillinger", "rola": "projektant nadbudowy i skrzydła w latach 30.", "wiki": null},
+      {"kto": "Wacław Kłyszewski, Jerzy Mokrzyński, Eugeniusz Wierzbicki", "rola": "projektanci przebudowy na Pocztę Główną (1961)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Poczta Główna nr 1"],
+    "zrodla": [{"tytul": "Warszawikia: Gmach Pocztowej Kasy Oszczędności", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Pocztowej_Kasy_Oszczędności"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z nagłówka artykułu."
+  },
+  {
+    "id": "gmach-poczty-glownej-plac-powstancow-8",
+    "nazwa": "Gmach Poczty Głównej",
+    "name_en": "Main Post Office Building (Napoleon Square)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Plac Powstańców Warszawy 8",
+    "adres_historyczny": "plac Napoleona 8, róg Warecka 16",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1912–1944 (nieistniejący)",
+    "istnieje": false,
+    "fakty": [
+      "Gmach wzniesiono w latach 1912–1916, w okresie Królestwa Polskiego, według projektu Antoniego Jabłońskiego-Jesieńczyka.",
+      "Budowę prowadzono na posesji nr 8, na miejscu wcześniejszego jednokondygnacyjnego budynku pocztowego, na rogu ulicy Wareckiej (nr 16).",
+      "Po wycofaniu wojsk rosyjskich w sierpniu 1915 roku niemieckie władze usunęły z nieukończonego gmachu rosyjskie godło państwowe.",
+      "Rzeźbę czterech gigantów podtrzymujących globus nad wejściem usunięto w 1921 roku.",
+      "W 1935 roku obiekt rozbudowano wzdłuż ulicy Wareckiej o siedmioosiowe skrzydło.",
+      "W czasie powstania warszawskiego gmach był areną ciężkich walk; zdobyli go żołnierze Batalionu „Kiliński”, a w 1944 roku uległ poważnym zniszczeniom.",
+      "W latach 1946–1947 gmach rozebrano; w 1965 roku wzniesiono na jego miejscu zespół budynków Narodowego Banku Polskiego."
+    ],
+    "ciekawostki": [
+      "W dwudziestoleciu międzywojennym przed budynkiem działali bukiniści, których stoiska były charakterystycznym elementem placu."
+    ],
+    "summary_en": "The main post office of Warsaw from 1916 to 1944, built in 1912-1916 on Plac Napoleona, destroyed during the Warsaw Uprising and demolished in 1946-1947. The site is now occupied by the National Bank of Poland complex.",
+    "ludzie": [
+      {"kto": "Antoni Jabłoński-Jesieńczyk", "rola": "autor projektu", "wiki": null},
+      {"kto": "Bohdan Pniewski, Barbara Czerwińska", "rola": "projektanci zespołu NBP z 1965 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Plac Napoleona", "Plac Powstańców Warszawy (obecna nazwa placu)"],
+    "zrodla": [{"tytul": "Warszawikia: Gmach Poczty Głównej", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Poczty_Głównej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Adres dzisiejszy wyprowadzony z nagłówka („obecnie Plac Powstańców Warszawy”) i nr 8; numer dziś nieistniejącego gmachu, do weryfikacji."
+  },
+  {
+    "id": "gmach-sadow-wojskowych",
+    "nazwa": "Gmach Sądów Wojskowych",
+    "name_en": "Military Courts Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Królewska 4",
+    "adres_historyczny": "miejsce rozebranego fragmentu dawnych Kuźni Saskich",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach zbudowano w 1898 roku na miejscu rozebranego fragmentu dawnych Kuźni Saskich.",
+      "Początkowo był siedzibą rosyjskiego sztabu okręgowego.",
+      "W okresie międzywojennym mieściły się tu Najwyższy Sąd Wojskowy, Prokuratura przy NSW oraz Wojskowy Sąd Okręgowy Nr I.",
+      "Po 1927 roku zlikwidowano bogate zdobienia ryzalitu wejściowego i uproszczono dekorację elewacji.",
+      "Obiekt został zniszczony w czasie II wojny światowej, a po wojnie odbudowany ze zmianami w bryle.",
+      "Po przebudowie podcienia od strony ulicy Królewskiej powiązano z podcieniami sąsiedniego Domu Bez Kantów.",
+      "Obecnie mieści się w nim Dowództwo Garnizonu Warszawa."
+    ],
+    "ciekawostki": [
+      "Na budynku znajdują się tablice upamiętniające m.in. symboliczną matkę nieznanego żołnierza Jadwigę Zarugiewiczową, kryptologów, którzy złamali kod Enigmy, oraz kawalerów Orderu Virtuti Militari."
+    ],
+    "summary_en": "A building at Królewska 4, erected in 1898 as the seat of the Russian district staff and later used by the interwar military courts. It was rebuilt after the war and now houses the Warsaw Garrison Command.",
+    "ludzie": [
+      {"kto": "Zygmunt Stępiński", "rola": "architekt powojennej przebudowy", "wiki": null},
+      {"kto": "Jadwiga Zarugiewiczowa", "rola": "symboliczna matka nieznanego żołnierza (tablica)", "wiki": null},
+      {"kto": "Stanisław Szeptycki", "rola": "upamiętniony tablicą na budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kuźnie Saskie (teren)"],
+    "zrodla": [{"tytul": "Warszawikia: Gmach Sądów Wojskowych", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Sądów_Wojskowych"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z nagłówka artykułu."
+  },
+  {
+    "id": "gmach-towarzystwa-kredytowego-ziemskiego",
+    "nazwa": "Gmach Towarzystwa Kredytowego Ziemskiego",
+    "name_en": "Land Credit Society Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Kredytowa 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1853–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wcześniej stał tu tzw. Czerwony Pałac (Pałac Turecki), rozebrany w 1851 roku.",
+      "Gmach dla Towarzystwa Kredytowego Ziemskiego wzniesiono w latach 1853–1858 według projektu Józefa Góreckiego (konstrukcja) oraz Henryka Marconiego (elewacje i wnętrza).",
+      "Był to dwupiętrowy, neorenesansowy budynek na planie litery E; wnętrza przeznaczono w całości na biura, co czyniło go pierwszym biurowcem w Warszawie.",
+      "We wrześniu 1939 roku budynek zbombardowano, a powstanie warszawskie zniszczyło go w 80%.",
+      "Projekt odbudowy z 1959 roku przygotował Czesław Wenger; realizowano go w latach 1962–1971 z modyfikacjami.",
+      "Obiekt przeznaczono na Muzeum Kultury i Sztuki Ludowej, dziś Muzeum Etnograficzne; mieści także EtnoKino."
+    ],
+    "ciekawostki": [
+      "Od budynku i instytucji pochodzi nazwa ulicy Kredytowej.",
+      "Na budynku od strony ul. Kredytowej jest tablica upamiętniająca 15 żołnierzy powstania warszawskiego, którzy w sierpniu 1944 roku polegli w walce z Niemcami."
+    ],
+    "summary_en": "A neo-Renaissance office building at Kredytowa 1, built in 1853-1858 for the Land Credit Society. It was the first office-only building in Warsaw and is now home to the Ethnographic Museum.",
+    "ludzie": [
+      {"kto": "Józef Górecki", "rola": "projektant konstrukcji (1853–1858)", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projektant elewacji i wnętrz (1853–1858)", "wiki": null},
+      {"kto": "Karol Marconi", "rola": "dekoracja Sali Głównej", "wiki": null},
+      {"kto": "Czesław Wenger", "rola": "autor projektu odbudowy z 1959 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czerwony Pałac", "Pałac Turecki", "Muzeum Kultury i Sztuki Ludowej"],
+    "zrodla": [{"tytul": "Warszawikia: Gmach Towarzystwa Kredytowego Ziemskiego", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Towarzystwa_Kredytowego_Ziemskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Nagłówek podaje Kredytowa 1 i Mazowiecka 13; wpisano pierwszy."
+  }
+]
