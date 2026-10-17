@@ -1392,3 +1392,44 @@
 > new file: docs/ui/propozycje/html/_ui.js
 > new file: docs/ui/propozycje/html/a-arkusz-na-mapie.html
 
+
+### 2026-10-17 11:49 · Pawel
+
+> usun z repo i mozgu szumy i smieci ale najpierw pytaj sie mnie co mozesz usunac. widze w logach duzo dziwnych : najpierw sprawdzcie ptablice stefana i konrada itd .. halucynacje
+
+
+**AI:** Tylko przegląd, nic nie usunąłem ani nie zmieniłem w plikach. Sprawdziłem wzmianki o Stefanie i Konradzie: w repo nie ma tablic o takich nazwach; jedyna powiązana pozycja to tablica „Stanisław Conrad” (265 m), oznaczona w `docs/historia/README.md` jako „nie wiadomo, kim był”.
+
+### 2026-10-17 11:50 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 872a4e5..eb93d74 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1392,3 +1392,10 @@
+>  > new file: docs/ui/propozycje/html/_ui.js
+>  > new file: docs/ui/propozycje/html/a-arkusz-na-mapie.html
+>  
+> +
+> +### 2026-10-17 11:49 · Pawel
+> +
+> +> usun z repo i mozgu szumy i smieci ale najpierw pytaj sie mnie co mozesz usunac. widze w logach duzo dziwnych : najpierw sprawdzcie ptablice stefana i konrada itd .. halucynacje
+> +
+> +
+> +**AI:** Tylko przegląd, nic nie usunąłem ani nie zmieniłem w plikach. Sprawdziłem wzmianki o Stefanie i Konradzie: w repo nie ma tablic o takich nazwach; jedyna powiązana pozycja to tablica „Stanisław Conrad” (265 m), oznaczona w `docs/historia/README.md` jako „nie wiadomo, kim był”.
+> new file: docs/ui/propozycje/html/b-zasieg.html
+
