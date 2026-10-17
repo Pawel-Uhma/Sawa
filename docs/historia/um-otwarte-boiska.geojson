@@ -1,0 +1,1866 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9865698,
+     52.2368805
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-chlodna-36-46",
+    "nazwa": "Otwarte boiska, ul. Chłodna 36/46",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Chłodna 36/46, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół nr 7 im. Szczepana Bońkowskiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–20:00, sob.–niedz. 10:00–15:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-04",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9834959,
+     52.2407888
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-wolnosc-1-3",
+    "nazwa": "Otwarte boiska, ul. Wolność 1/3",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Wolność 1/3, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XXX Liceum Ogólnokształcące im. Jana Śniadeckiego) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do koszykówki, boiska uniwersalne/wielozadaniowe, skocznie, street workout.",
+     "Godziny otwarcia według miasta: pon.–pt. 16:00–20:00, sob.–niedz. 14:00–20:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-03-17",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.943766,
+     52.2348962
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-kajetana-garbinskiego-1",
+    "nazwa": "Otwarte boiska, ul. Kajetana Garbińskiego 1",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Kajetana Garbińskiego 1, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (LXXXVI Liceum Ogólnokształcące im. Batalionu \"Zośka\") jest bezpłatnie otwarty dla mieszkańców: boiska do siatkówki, boiska do koszykówki, boiska do piłki nożnej, bieżnie proste.",
+     "Godziny otwarcia według miasta: pon.–pt. 16:00–20:00, sob. -, niedz. 09:00–16:00.",
+     "Uwagi szkoły: w sobotę szkoła nie ma dozoru nad boiskami",
+     "Uwagi szkoły: w sobotę  szkoła nie ma dozoru nad boiskami"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-07",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9390321,
+     52.2421041
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-jana-brozka-15",
+    "nazwa": "Otwarte boiska, ul. Jana Brożka 15",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Jana Brożka 15, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 225 im. Józefa Gardeckiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, boiska do siatkówki, boiska do koszykówki, korty tenisowe, bieżnie proste, bieżnie okólne, skocznie, siłownia zewnętrzna.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–19:00, sob.–niedz. 08:00–19:00.",
+     "Uwagi szkoły: Zadaszenie halą pneumatyczną w okresie od października do kwietnia.",
+     "Uwagi szkoły: Skocznia składa się z rozbiegu i zbiornika z piaskiem."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-10-05",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9803419,
+     52.2441859
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-esperanto-5",
+    "nazwa": "Otwarte boiska, ul. Esperanto 5",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Esperanto 5, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 234 im. Juliana Tuwima) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–19:00, sob.–niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9346216,
+     52.2234185
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-kacpra-karlinskiego-6",
+    "nazwa": "Otwarte boiska, ul. Kacpra Karlińskiego 6",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Kacpra Karlińskiego 6, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 403 im. Powstańców Warszawy) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, bieżnie proste, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–19:00, sob. 09:00–17:30, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-08-10",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9386564,
+     52.2446602
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-ksiecia-janusza-45-47",
+    "nazwa": "Otwarte boiska, ul. Księcia Janusza 45/47",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Księcia Janusza 45/47, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Centrum Kształcenia Zawodowego i Ustawicznego nr 1) jest bezpłatnie otwarty dla mieszkańców: rzutnie, boiska do siatkówki, boiska do piłki nożnej, boiska do koszykówki, boiska do piłki ręcznej, skocznie, bieżnie proste.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–19:30, sob.–niedz. 11:00–19:00.",
+     "Uwagi szkoły: Boisko otwarte: od 1 kwietnia do 30 listopada"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-07",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9467615,
+     52.2421484
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-deotymy-25-33",
+    "nazwa": "Otwarte boiska, ul. Deotymy 25/33",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Deotymy 25/33, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 388 im. Jana Pawła II) jest bezpłatnie otwarty dla mieszkańców: bieżnie okólne, boiska do koszykówki, boiska do siatkówki, rzutnie, boiska do piłki ręcznej.",
+     "Godziny otwarcia według miasta: pon.–pt. 18:00–21:00, sob.–niedz. 10:00–21:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-08",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9475734,
+     52.2341316
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-elekcyjna-21-23",
+    "nazwa": "Otwarte boiska, ul. Elekcyjna 21/23",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Elekcyjna 21/23, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 236 z Oddziałami Integracyjnymi im. Ireny Sendlerowej) jest bezpłatnie otwarty dla mieszkańców: boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–19:30, sob.–niedz. 10:00–14:00.",
+     "Uwagi szkoły: nieczynne w święta państwowe"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-10-01",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.93634,
+     52.2353295
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-jana-olbrachta-48-56",
+    "nazwa": "Otwarte boiska, ul. Jana Olbrachta 48/56",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Jana Olbrachta 48/56, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 351 im. Bolesława Prusa) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, bieżnie proste, skocznie, boiska do piłki nożnej, bieżnie okólne.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–21:15, sob. 09:00–14:45, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9660982,
+     52.2380546
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-plocka-30",
+    "nazwa": "Otwarte boiska, ul. Płocka 30",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Płocka 30, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 63 im. Zawiszy Czarnego) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, bieżnie okólne, boiska do piłki nożnej, skocznie.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–19:00, sob.–niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-08",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9839098,
+     52.247334
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-smocza-19",
+    "nazwa": "Otwarte boiska, ul. Smocza 19",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Smocza 19, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół nr 127) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, skocznie, bieżnie okólne, boiska do siatkówki, bieżnie proste, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–20:00, sob. 09:00–20:00, niedz. 9:00–20:00.",
+     "Uwagi szkoły: -",
+     "Uwagi szkoły: brak"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-03-31",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9803361,
+     52.2482469
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-mila-26",
+    "nazwa": "Otwarte boiska, ul. Miła 26",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Miła 26, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XLV Liceum Ogólnokształcące im. Romualda Traugutta) jest bezpłatnie otwarty dla mieszkańców: boiska do siatkówki, bieżnie proste, boiska do piłki ręcznej, boiska do koszykówki, siłownia zewnętrzna.",
+     "Godziny otwarcia według miasta: pon.–czw. 17:00–20:00, pt. 10:00–20:00, sob.–niedz. 12:00–20:00.",
+     "Uwagi szkoły: Boisko szkolne XLV Liceum Ogólnokształcącego im. Romualda Traugutta w Warszawie udostępniane jest mieszkańcom po godzinach pracy szkoły od 01 kwietnia do 31 października"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9949641,
+     52.2350085
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-grzybowska-35",
+    "nazwa": "Otwarte boiska, ul. Grzybowska 35",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Grzybowska 35, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 25 im. Komisji Edukacji Narodowej) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, boiska do piłki nożnej, skocznie, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 18:00–20:00, sob.–niedz. -.",
+     "Uwagi szkoły: Boisko jest w remoncie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-09",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9762591,
+     52.2483685
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-okopowa-55a",
+    "nazwa": "Otwarte boiska, ul. Okopowa 55A",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Okopowa 55A, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół im. Michała Konarskiego) jest bezpłatnie otwarty dla mieszkańców: boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–czw. 15:30–17:00, pt. 15:00–17:00, sob.–niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-03-26",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.971142,
+     52.2282237
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-marcina-kasprzaka-19-21",
+    "nazwa": "Otwarte boiska, ul. Marcina Kasprzaka 19/21",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Marcina Kasprzaka 19/21, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół nr 36 im. Marcina Kasprzaka) jest bezpłatnie otwarty dla mieszkańców: boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–20:00, sob.–niedz. 09:00–15:00.",
+     "Uwagi szkoły: Chęć skorzystania z boiska proszę zgłosić u portiera - wejście główne do szkoły, dzwonek przy drzwiach. W dniach wolnych od zajęć  lekcyjnych godziny mogą ulec zmianie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9491869,
+     52.2459602
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-ozarowska-71",
+    "nazwa": "Otwarte boiska, ul. Ożarowska 71",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Ożarowska 71, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół nr 32 im. Krzysztofa Kamila Baczyńskiego) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do piłki nożnej, bieżnie okólne, boiska do koszykówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–20:00, sob.–niedz. -.",
+     "Uwagi szkoły: Bieżnia i boisko w  soboty i niedziele są nieczynne, nieodstępne dla użytkowników."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-15",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9401152,
+     52.2340264
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-redutowa-37",
+    "nazwa": "Otwarte boiska, ul. Redutowa 37",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Redutowa 37, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 238 im. Christo Botewa) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, boiska do piłki ręcznej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–20:00, sob.–niedz. 10:00–20:00.",
+     "Uwagi szkoły: Boisko bez nadzoru"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2024-09-05",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9623426,
+     52.2341085
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-syreny-5-7",
+    "nazwa": "Otwarte boiska, ul. Syreny 5/7",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Syreny 5/7, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 139 im. Ludwiki Wawrzyńskiej) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, bieżnie proste, boiska do piłki nożnej, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–20:00, sob. 9:00–19:00, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9864898,
+     52.2386142
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-ogrodowa-42-44",
+    "nazwa": "Otwarte boiska, ul. Ogrodowa 42/44",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Ogrodowa 42/44, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 221 z Oddziałami Integracyjnymi im. Barbary Bronisławy Czarnowskiej) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, bieżnie proste, boiska uniwersalne/wielozadaniowe, boiska do piłki ręcznej, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–19:00, sob. 8:00–16:00, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-03",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.989326,
+     52.2360878
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-zelazna-71",
+    "nazwa": "Otwarte boiska, ul. Żelazna 71",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Żelazna 71, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 221 z Oddziałami Integracyjnymi im. Barbary Bronisławy Czarnowskiej) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do siatkówki, boiska do koszykówki, skocznie.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–19:00, sob. 08:00–16:00, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-03",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.989326,
+     52.2360878
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-zelazna-71",
+    "nazwa": "Otwarte boiska, Żelazna 71",
+    "typ": "miejsce",
+    "adres_dzis": "Żelazna 71, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 221 z Oddziałami Integracyjnymi im. Barbary Bronisławy Czarnowskiej) jest bezpłatnie otwarty dla mieszkańców: boiska do piłki ręcznej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–19:00, sob. 08:00–16:00, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-03",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9533548,
+     52.2284671
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-grabowska-1",
+    "nazwa": "Otwarte boiska, ul. Grabowska 1",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Grabowska 1, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 132 im. Sándora Petőfiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, bieżnie okólne, boiska do siatkówki, skocznie, boiska do koszykówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 20:00–21:00, sob.–niedz. 09:00–21:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-08",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9503648,
+     52.2460422
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-ozarowska-69",
+    "nazwa": "Otwarte boiska, ul. Ożarowska 69",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Ożarowska 69, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 148 im. Hugona Kołłątaja) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, bieżnie proste, boiska do siatkówki, boiska do piłki ręcznej, skocznie, bieżnie okólne.",
+     "Godziny otwarcia według miasta: pon.–niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-06-25",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9717562,
+     52.2306626
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-rogalinska-2",
+    "nazwa": "Otwarte boiska, ul. Rogalińska 2",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Rogalińska 2, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (III Liceum Ogólnokształcące im. gen. Józefa Sowińskiego) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do siatkówki, boiska do piłki nożnej, boiska do koszykówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 16:00–19:00, sob.–niedz. 13:30–19:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-03-27",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9908509,
+     52.2403104
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-ogrodowa-16",
+    "nazwa": "Otwarte boiska, ul. Ogrodowa 16",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Ogrodowa 16, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół Stenotypii i Języków Obcych) jest bezpłatnie otwarty dla mieszkańców: boiska do siatkówki, boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. 18:00–19:30, sob.–niedz. 10:00–17:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-08",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.960478,
+     52.2406639
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-grenady-16",
+    "nazwa": "Otwarte boiska, ul. Grenady 16",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Grenady 16, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 386 im. Marszałka Józefa Piłsudskiego) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, bieżnie proste, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 16:00–19:00, sob. 08:00–19:00, niedz. 10:00–18:30.",
+     "Uwagi szkoły: niedziela niedostępne"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-10",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9912643,
+     52.2264149
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-platynowa-1",
+    "nazwa": "Otwarte boiska, ul. Platynowa 1",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Platynowa 1, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XL Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Stefana Żeromskiego) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do koszykówki, boiska do piłki ręcznej, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–niedz. -.",
+     "Uwagi szkoły: W związku generalnym remontem dachu od 6.07.2026 boisko ze względu bezpieczeństwa będzie nieczynne"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-07-16",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9793714,
+     52.245649
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-esperanto-7a",
+    "nazwa": "Otwarte boiska, ul. Esperanto 7A",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Esperanto 7A, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 222 im. Jana Brzechwy) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, skocznie, boiska do piłki nożnej, bieżnie proste, boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. 18:00–19:00, sob. 9:00–15:00, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-07",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9547021,
+     52.2481529
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-obozowa-60",
+    "nazwa": "Otwarte boiska, ul. Obozowa 60",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Obozowa 60, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XXIV Liceum Ogólnokształcące im. Cypriana Kamila Norwida) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, boiska do koszykówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 16:30–19:00, sob.–niedz. 12:00–19:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-03-27",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9620746,
+     52.2309298
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-ludwiki-6h",
+    "nazwa": "Otwarte boiska, ul. Ludwiki 6H",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Ludwiki 6H, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Wolskich Placówek Edukacji Kulturalnej) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–niedz. 09:00–21:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-07-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9474359,
+     52.2432295
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-deotymy-37",
+    "nazwa": "Otwarte boiska, ul. Deotymy 37",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Deotymy 37, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa Integracyjna nr 317 im. Edmunda Bojanowskiego) jest bezpłatnie otwarty dla mieszkańców: bieżnie okólne, boiska do siatkówki, bieżnie proste, boiska do piłki ręcznej.",
+     "Godziny otwarcia według miasta: pon.–sob. 16:00–20:00, niedz. 11:00–20:00.",
+     "Uwagi szkoły: otwarte do zmierzchu"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-03-31",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9773959,
+     52.2514749
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-spokojna-13",
+    "nazwa": "Otwarte boiska, ul. Spokojna 13",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Spokojna 13, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół Fototechnicznych) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do piłki nożnej, boiska do siatkówki, tenis stołowy, bieżnie okólne, boiska do koszykówki.",
+     "Godziny otwarcia według miasta: pon.–czw. 16:00–20:00, pt. 16:00–16:00, sob.–niedz. 10:00–20:00.",
+     "Uwagi szkoły: Bieżnia czynna do zmroku, godzina 20:00 jest godziną dla okresu jesiennego i wiosennego",
+     "Uwagi szkoły: Boisko czynne do zmroku, godzina 20:00 jest godziną dla okresu wczesno-jesiennego i wiosennego",
+     "Uwagi szkoły: Udostępniamy do zmroku, godzina 20:00 jest godziną dla okresu jesiennego i wiosennego",
+     "Uwagi szkoły: Bieżnia czynna do zmroku, godzina 20:00 jest godziną dla okresu wczesno-jesiennego i wiosennego"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-04",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9769614,
+     52.2364714
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-karolkowa-56",
+    "nazwa": "Otwarte boiska, ul. Karolkowa 56",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Karolkowa 56, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół Specjalnych nr 130) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–20:00, sob.–niedz. 09:00–20:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-04-22",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9739611,
+     52.2401226
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-zytnia-40",
+    "nazwa": "Otwarte boiska, ul. Żytnia 40",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Żytnia 40, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 166 im. Żwirki i Wigury) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do piłki nożnej, boiska do piłki ręcznej, boiska do koszykówki, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 8:00–16:00, sob. 10:00–17:00, niedz. 9:00–15:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-06-30",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9771666,
+     52.22815
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-marcina-kasprzaka-1-3",
+    "nazwa": "Otwarte boiska, ul. Marcina Kasprzaka 1/3",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Marcina Kasprzaka 1/3, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 387 im. Szarych Szeregów) jest bezpłatnie otwarty dla mieszkańców: siłownia zewnętrzna, boiska uniwersalne/wielozadaniowe, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–21:00, sob.–niedz. 07:00–21:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-03-30",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9917295,
+     52.2287942
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-miedziana-8",
+    "nazwa": "Otwarte boiska, ul. Miedziana 8",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Miedziana 8, Wola",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 26 im. Mirosława Biernackiego) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–20:00, sob. 09:00–17:00, niedz. 13:00–17:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-08",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0073181,
+     52.2420581
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-niecala-14",
+    "nazwa": "Otwarte boiska, ul. Niecała 14",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Niecała 14, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 75 im. Marii Konopnickiej) jest bezpłatnie otwarty dla mieszkańców: boiska do hokeja na trawie, skocznie, bieżnie proste, boiska do siatkówki, boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. 18:00–20:00, sob.–niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-03-22",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9914846,
+     52.2508252
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-mila-7",
+    "nazwa": "Otwarte boiska, ul. Miła 7",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Miła 7, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (LXXXI Liceum Ogólnokształcące im. Aleksandra Fredry) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, siłownia zewnętrzna, boiska do siatkówki, skocznie, bieżnie proste, bieżnie okólne.",
+     "Godziny otwarcia według miasta: pon.–pt. 16:00–18:00, sob. 11:00–15:00, niedz. -.",
+     "Uwagi szkoły: W niedzielę boisko jest niedostępne dla mieszkańców",
+     "Uwagi szkoły: W sezonie zimowym boisko czynne do zmierzchu, w niedziele boisko jest niedostępne"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-07-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0186592,
+     52.2151368
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-polna-5",
+    "nazwa": "Otwarte boiska, ul. Polna 5",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Polna 5, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XXVII Liceum Ogólnokształcące im. Tadeusza Czackiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, boiska do piłki nożnej, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 16:00–20:00, sob.–niedz. 08:00–20:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-09-27",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9981672,
+     52.2372829
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-aleja-jana-pawla-ii-26a",
+    "nazwa": "Otwarte boiska, Aleja Jana Pawła II 26A",
+    "typ": "miejsce",
+    "adres_dzis": "Aleja Jana Pawła II 26A, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 220 im. Stanisława Kopczyńskiego) jest bezpłatnie otwarty dla mieszkańców: skocznie, boiska do siatkówki, bieżnie proste, bieżnie okólne, boiska do koszykówki, boiska do piłki ręcznej.",
+     "Godziny otwarcia według miasta: pon.–niedz. 09:00–21:00.",
+     "Uwagi szkoły: -"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2025-07-01",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0129948,
+     52.2238363
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-poznanska-6-8",
+    "nazwa": "Otwarte boiska, ul. Poznańska 6/8",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Poznańska 6/8, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół Gastronomicznych im. prof. Eugeniusza Pijanowskiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon. 18:30–19:30, wt.–pt. 18:30–20:00, sob.–niedz. 10:00–16:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-03-28",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0114436,
+     52.2385814
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-plac-stanislawa-malachowskiego-1",
+    "nazwa": "Otwarte boiska, Plac Stanisława Małachowskiego 1",
+    "typ": "miejsce",
+    "adres_dzis": "Plac Stanisława Małachowskiego 1, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XI Liceum Ogólnokształcące im. Mikołaja Reja) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–śr. 16:00–18:00, czw.–pt. -, sob. 09:00–14:00, niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2025-06-27",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9972469,
+     52.2409644
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-elektoralna-12-14",
+    "nazwa": "Otwarte boiska, ul. Elektoralna 12/14",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Elektoralna 12/14, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół Specjalnych nr 85) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, boiska uniwersalne/wielozadaniowe, skocznie, bieżnie proste, bieżnie okólne, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–czw. 17:00–21:00, pt.–sob. -, niedz. 09:00–21:00.",
+     "Uwagi szkoły: Brak dostępności w dniach: 16-18.05.2025-lokal wyborczy,23-25.05.2025-Piknik Rodzinny SPS213,30.05-01.06.2025 -lokal wyborczy,06-09.06.2025-Piknik rodzinny ZSS85"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-05-18",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0118567,
+     52.2366903
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-swietokrzyska-18a",
+    "nazwa": "Otwarte boiska, ul. Świętokrzyska 18A",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Świętokrzyska 18A, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (CLVII Liceum Ogólnokształcące im. Marii Skłodowskiej-Curie) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–czw. 9:00–20:00, pt.–niedz. 9:00–18:00.",
+     "Uwagi szkoły: W wakacje sobota/niedziela nieczynne."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-07-09",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0012665,
+     52.2410992
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-elektoralna-5-7",
+    "nazwa": "Otwarte boiska, ul. Elektoralna 5/7",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Elektoralna 5/7, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XVII Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Andrzeja Frycza Modrzewskiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, boiska do siatkówki, bieżnie okólne, bieżnie proste, boiska do piłki ręcznej.",
+     "Godziny otwarcia według miasta: pon. 08:00–20:00, wt. 00:00–20:00, śr.–czw. 08:00–20:00, pt. 00:00–20:00, sob. 09:00–18:00, niedz. -.",
+     "Uwagi szkoły: Remont boiska."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-07-22",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9921946,
+     52.2468639
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-karmelicka-13",
+    "nazwa": "Otwarte boiska, ul. Karmelicka 13",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Karmelicka 13, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 210 im. Bohaterów Pawiaka) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–niedz. 17:00–22:00.",
+     "Uwagi szkoły: Boisko szkolne jest czynne od 17:00 do 22:00",
+     "Uwagi szkoły: Boisko szkolne jest otwarte od 17:30 do 21:30"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-10-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9868242,
+     52.251985
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-stawki-14",
+    "nazwa": "Otwarte boiska, ul. Stawki 14",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Stawki 14, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Zespół Szkół Poligraficznych im. Marszałka Józefa Piłsudskiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. 08:00–19:00, sob.–niedz. 08:00–20:00.",
+     "Uwagi szkoły: otwarte do zmierzchu"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2025-07-04",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0184324,
+     52.2321032
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-nowy-swiat-21a",
+    "nazwa": "Otwarte boiska, ul. Nowy Świat 21A",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Nowy Świat 21A, Śródmieście",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa z Oddziałami Integracyjnymi i Oddziałami Dwujęzycznymi nr 211 im. Janusza Korczaka) jest bezpłatnie otwarty dla mieszkańców: boiska do piłki nożnej, boiska do koszykówki, boiska do siatkówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:30–19:00, sob.–niedz. -.",
+     "Uwagi szkoły: sobota i niedziela niedostępne"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-05-29",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9959586,
+     52.2173133
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-wawelska-46",
+    "nazwa": "Otwarte boiska, ul. Wawelska 46",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Wawelska 46, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (VII Liceum Ogólnokształcące im. Juliusza Słowackiego) jest bezpłatnie otwarty dla mieszkańców: bieżnie proste, boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. -, sob. 12:00–18:00, niedz. -.",
+     "Uwagi szkoły: bieżnia dostępna dla mieszkańców w soboty od godz. 12.00 do 18.00",
+     "Uwagi szkoły: boisko dostępne dla mieszkańców w soboty od godz. 12.00 do 18.00"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-03-22",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.003087,
+     52.2196102
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-nowowiejska-37a",
+    "nazwa": "Otwarte boiska, ul. Nowowiejska 37A",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Nowowiejska 37A, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XIV Liceum Ogólnokształcące im. Stanisława Staszica) jest bezpłatnie otwarty dla mieszkańców: boiska do koszykówki, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–21:00, sob.–niedz. 09:00–21:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-03-22",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9959833,
+     52.2159338
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-wawelska-3",
+    "nazwa": "Otwarte boiska, ul. Wawelska 3",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Wawelska 3, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (III Ogród Jordanowski) jest bezpłatnie otwarty dla mieszkańców: tenis stołowy, boiska do siatkówki, boiska uniwersalne/wielozadaniowe, boiska do koszykówki, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–niedz. 10:00–20:00.",
+     "Uwagi szkoły: otwarte do zmierzchu"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-03-22",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9755517,
+     52.2196585
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-barska-32",
+    "nazwa": "Otwarte boiska, ul. Barska 32",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Barska 32, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (XLVIII Liceum Ogólnokształcące im. Edwarda Dembowskiego) jest bezpłatnie otwarty dla mieszkańców: boiska do siatkówki, boiska do piłki nożnej, boiska do koszykówki.",
+     "Godziny otwarcia według miasta: pon.–pt. 09:00–19:00, sob.–niedz. -.",
+     "Uwagi szkoły: możliwość korzystania z boiska tylko podczas obecności na terenie pracownika szkoły  brak możliwości skorzystania ze sprzętu i toalet szkolnych"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-07-02",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9927524,
+     52.2172112
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-mikolaja-reja-1",
+    "nazwa": "Otwarte boiska, ul. Mikołaja Reja 1",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Mikołaja Reja 1, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 23 im. Edwarda Szymańskiego) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe, bieżnie proste.",
+     "Godziny otwarcia według miasta: pon.–pt. 18:00–20:00, sob.–niedz. 09:00–20:00.",
+     "Uwagi szkoły: bieżnia wyłączona z użytkowania"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-09-03",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9739519,
+     52.2152883
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-bialobrzeska-27",
+    "nazwa": "Otwarte boiska, ul. Białobrzeska 27",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Białobrzeska 27, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa z Oddziałami Integracyjnymi nr 61 im. Juliana Przybosia) jest bezpłatnie otwarty dla mieszkańców: boiska uniwersalne/wielozadaniowe.",
+     "Godziny otwarcia według miasta: pon.–pt. -, sob. 12:15–20:00, niedz. 10:00–20:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-03-27",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9676813,
+     52.2117979
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-szczesliwicka-45-47",
+    "nazwa": "Otwarte boiska, ul. Szczęśliwicka 45/47",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Szczęśliwicka 45/47, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa Specjalna nr 177 im. Marii Konopnickiej) jest bezpłatnie otwarty dla mieszkańców: boiska do piłki nożnej, boiska do piłki ręcznej, boiska do koszykówki, bieżnie proste.",
+     "Godziny otwarcia według miasta: pon.–pt. 14:30–20:00, sob.–niedz. -."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2026-05-21",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9839966,
+     52.2216995
+    ]
+   },
+   "properties": {
+    "id": "um-boiska-ul-spiska-1",
+    "nazwa": "Otwarte boiska, ul. Spiska 1",
+    "typ": "miejsce",
+    "adres_dzis": "ul. Spiska 1, Ochota",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Teren sportowy szkoły (Szkoła Podstawowa nr 97 im. Polskich Noblistek) jest bezpłatnie otwarty dla mieszkańców: boiska do piłki ręcznej, boiska uniwersalne/wielozadaniowe, boiska do koszykówki, boiska do piłki nożnej.",
+     "Godziny otwarcia według miasta: pon.–pt. 17:00–21:00, sob.–niedz. 09:00–21:00.",
+     "Uwagi szkoły: w okresie jesienno-zimowym bieżnia dostępna w weekendy",
+     "Uwagi szkoły: w okresie jesienno-zimowym boisko dostępne w weekendy"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Miasto Stołeczne Warszawa, „Otwarte boiska” (CC BY), aktualizacja 2023-05-29",
+      "url": "https://dane.um.warszawa.pl/catalogue?category=Sport"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "um-otwarte-boiska",
+    "tagi": [
+     "sport"
+    ]
+   }
+  }
+ ]
+}
