@@ -140,7 +140,7 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 
 ## Ze spotkania ok. 20:00 ([podsumowanie](spotkania/2026-10-17-2000-proxy-dane-mentorzy.md))
 
-- [ ] **T-140** Wyszukiwanie celu znajduje też ulice i adresy (dziś Google Places zwraca tylko miejsca) — `R3`
+- [x] **T-140** Wyszukiwanie celu znajduje też ulice i adresy (dziś Google Places zwraca tylko miejsca) ([#97](https://github.com/Pawel-Uhma/Sawa/issues/97)). Równolegle z Text Search: Autocomplete (New) z typami adresu i ulicy + Place Details, adres pierwszy, pole `kind` w kontrakcie, pinezka w UI — `R3` — (Paweł z agentem, 20:25–20:40; do sprawdzenia na produkcji po deployu)
 - [ ] **T-141** Ciemny motyw: jaśniejsze ulice na mapie, syrenka czytelna na ciemnym tle — `R3` (Antek)
 - [ ] **T-142** Stany czekania (spinner, kółka) w czcionce i kolorach Sawy — `R3`
 - [ ] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł)

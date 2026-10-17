@@ -70,6 +70,7 @@ describe("toDestination", () => {
         name: "Łazienki Królewskie",
         address: "Agrykoli 1, 00-460 Warszawa",
         position: { lat: 52.215, lng: 21.035 },
+        kind: "place",
       },
     ]);
   });
