@@ -307,16 +307,20 @@ export function useRideMusic(active: boolean, speaking: boolean) {
   useEffect(() => {
     if (!active) return;
     const ctx = audioContext();
+    // Safari wstrzymuje też dźwięk sam (stan „interrupted”, np. po zmianie wyjścia), więc budzimy
+    // z każdego stanu poza „running”, także gdy przeglądarka zmieni stan
     const wake = () => {
-      if (ctx.state === "suspended") ctx.resume().catch(() => {});
+      if (ctx.state !== "running" && ctx.state !== "closed") ctx.resume().catch(() => {});
     };
     wake();
+    ctx.addEventListener("statechange", wake);
     const gestures = ["pointerdown", "touchend", "click"] as const;
     for (const type of gestures)
       window.addEventListener(type, wake, { capture: true, passive: true });
     session.current = startSession(ctx, () => speakingRef.current);
     return () => {
       for (const type of gestures) window.removeEventListener(type, wake, { capture: true });
+      ctx.removeEventListener("statechange", wake);
       session.current?.stop();
       session.current = null;
     };
@@ -325,9 +329,11 @@ export function useRideMusic(active: boolean, speaking: boolean) {
   useEffect(() => {
     const duck = session.current?.duck;
     if (!duck || !context) return;
+    if (context.state !== "running") context.resume().catch(() => {});
     const t = context.currentTime;
+    // Bez czytania `gain.value`: w Safari w trakcie przejścia bywa nieaktualne. Trwające przejście
+    // zostaje, nowe rusza od jego bieżącej wartości; zaplanowany powrót z poprzedniej przerwy znika.
     duck.gain.cancelScheduledValues(t);
-    duck.gain.setValueAtTime(duck.gain.value, t);
     if (speaking) duck.gain.setTargetAtTime(DUCKED_GAIN, t, DUCK_TIME_CONSTANT_SEC);
     else duck.gain.setTargetAtTime(1, t + RELEASE_HOLD_SEC, RELEASE_TIME_CONSTANT_SEC);
   }, [speaking]);

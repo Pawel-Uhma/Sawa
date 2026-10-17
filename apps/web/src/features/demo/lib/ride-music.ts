@@ -131,9 +131,10 @@ function createPulse() {
       events.push(
         {
           kind: "pad",
-          hz: [bass],
+          // Oktawa wyżej, bo głośnik telefonu sam basu prawie nie gra
+          hz: [bass, bass * 2],
           offsetSec: 0,
-          velocity: 0.15,
+          velocity: 0.1,
           durationSec,
           wave: "sine",
           cutoffHz: 300,
@@ -142,20 +143,20 @@ function createPulse() {
           kind: "pad",
           hz: chord.slice(0, 3).map(noteHz),
           offsetSec: 0,
-          velocity: 0.025,
+          velocity: 0.04,
           durationSec,
           wave: "sawtooth",
-          cutoffHz: 600,
+          cutoffHz: 900,
         },
       );
     }
-    const cutoffHz = 650 + 450 * Math.sin((2 * Math.PI * n * PULSE_STEP_SEC) / PULSE_SWEEP_SEC);
+    const cutoffHz = 950 + 450 * Math.sin((2 * Math.PI * n * PULSE_STEP_SEC) / PULSE_SWEEP_SEC);
     const hz = noteHz(at(chord, at(PULSE_PATTERN, n)));
     events.push({
       kind: "pluck",
       hz,
       offsetSec: 0,
-      velocity: n % 4 === 0 ? 0.06 : 0.035,
+      velocity: n % 4 === 0 ? 0.1 : 0.06,
       cutoffHz,
     });
     return events;
