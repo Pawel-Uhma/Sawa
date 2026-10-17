@@ -4,6 +4,7 @@
 
 ## Teraz
 
+- Jasiek (16:30, z agentem, za R1): pojazdy na żywo (T-99, PR #29, dla Pawła issue #30). `POST /v1/vehicles/track` zwraca pojazd użytkownika i po jednym przed i za nim z torem do płynnej animacji; prędkość z tego, jak odcinek przejechał poprzedni pojazd linii (korki). Zbiór miasta „Lokalizacja pojazdów” (T-95). **Dla R3 (Paweł):** ikony i animacja w T-100, instrukcja w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md). **Dla R1:** na Railway `WAW_TOKEN` (T-17), w dniu demo `VEHICLES_ALWAYS_ON=1`.
 - R1 (Szczepan, 18:30): T-70. `RoutePlace.windowSec` mieści się teraz w granicach stylu opowieści: co najmniej 30 / 45 / 90 s (także ostatnie miejsce), najwyżej 60 / 120 / 300 s; wcześniej bywało 0 s i 1854 s, a `POST /v1/stories` odrzuca `targetSec` > 600. Pierwsza opowieść po ok. 1 min (miejsca na dojściu do przystanku). **Dla R4 i R3:** `windowSec` można podawać wprost jako `targetSec`.
 - 16:33 (Antek, R3): akceptuję zmiany Pawła w `features/map`. Kolory trasy wg linii (`LINE_COLORS`, `lineIndexes`, przesiadki i dojścia) zostają: logika jest w czystych funkcjach z testami, a dla pasażera linia mówi więcej niż typ pojazdu. Eksporty `usePlace`, `useSelectedPlace`, `PLACE_KIND_LABELS`, `placeKindColor` z `index.ts` też zostają. Uwaga: mamy teraz dwie karty miejsca (`PlaceSheet` w mapie i `place-card` w demo); do ustalenia z Pawłem, czy `PlaceSheet` zostaje tylko na `/mapa`.
 

@@ -28,7 +28,7 @@ Testy na telefonie co 2 h robią wszyscy na zmianę.
 | 22:00 | Pizza | Minimalna wersja gotowa, pierwszy deploy |
 | noc | | LLM, dopracowanie UI, pierwsza wersja pitch decka |
 
-**Niedziela 18.10**
+**Niedziela 18.10** (przed pokazem: [przed-demo.md](przed-demo.md))
 
 | Godzina | Oficjalnie | My |
 |---|---|---|

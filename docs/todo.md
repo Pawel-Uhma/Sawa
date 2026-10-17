@@ -46,6 +46,7 @@
 - [x] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00 (Szczepan, 14:00: GTFS + beam search, podgląd `/debug/planner`, PR #4)
 - [~] **T-17** `WAW_TOKEN` w `apps/api/.env.local` i na Railway, sprawdzić odjazdy na żywo (format odpowiedzi API nie był testowany z tokenem) — `R1` — 17:00 (Szczepan, 15:40: lokalnie działa; API zwraca gołą tablicę wierszy, nie `{ result }`, poprawka parsera w PR; zostało: `WAW_TOKEN` na Railway)
 - [ ] **T-18** Przed demo: przebudować graf na niedzielę (`pnpm --filter @sawa/scripts transit --date 2026-10-18`) i zapisać trasę demo jako fixture do trybu offline — `R1` — niedziela 08:00
+- [x] **T-99** Pojazdy na żywo pod mapę: pojazd użytkownika + po jednym przed i za nim, tor do płynnej animacji, prędkość z przejazdu poprzednika tej samej linii; `POST /v1/vehicles/track`, kontrakt w `packages/shared/src/schemas/vehicles.ts`. Opis: [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R1` (zrobił Jasiek na prośbę użytkownika, gałąź `r1/live-vehicles`) — (Jasiek, 16:30; na Railway potrzebne `WAW_TOKEN` (T-17) i w dniu demo `VEHICLES_ALWAYS_ON=1`, wpisane w [przed-demo.md](przed-demo.md))
 
 ## R2 · Baza i historia
 
@@ -69,6 +70,7 @@
 - [x] **T-35** Wersja mobilna: 16 px marginesu, bez poziomego scrolla — `R3` — 22:00 (Paweł z agentem, 13:51: arkusz trasy z 3 punktami zatrzymania i rzutem, swipe opowieści, sprężyny motion, safe area, reduced motion; sprawdzone 390–1920 px bez poziomego scrolla)
 - [ ] **T-36** Podstrona demo: stała lokalizacja, symulowana jazda ok. 1,5 min — `R3` — niedziela 08:00
 - [ ] **T-78** Cel przejażdżki w UI: wybór punktu końcowego (stuknięcie w mapę albo karta miejsca) i `destination: { lat, lng }` w `planRoute` (`apps/web/src/features/demo/lib/api-data.ts`); przy `endsAtDestination: false` pokazać, że trasa nie kończy się przy celu. Bez `returnToStart` jednocześnie. API gotowe na Railway (PR #19) — `R3` — (zgłosił Szczepan, R1)
+- [ ] **T-100** Pojazdy na mapie trasy: hook `useLiveVehicles` (co 10 s), osobne ikony tramwaju i autobusu, płynny ruch przez `positionOnTrack` w `requestAnimationFrame`, wyróżniony pojazd `ride`. Gotowe przykłady kodu w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R3` (Paweł, issue #30) — po T-99 (PR #29)
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos
