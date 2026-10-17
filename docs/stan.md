@@ -15,6 +15,8 @@
 
 - 15:55 (Paweł, z agentem R3): ekran główny demo ma wybór końca trasy: „Przed siebie”, „Wracam tu” (`returnToStart`) i „Do celu” (`destination`: 4 gotowe cele albo stuknięcie w mapę). Cel to koralowa kropka na mapie, a arkusz trasy mówi, gdy planer nie dojechał (`endsAtDestination`/`endsAtStart` = false). `SawaMap` ma dwa nowe propsy: `destination` i `onMapClick`.
 - 15:42 (Paweł, z agentem R3): Sawa działa jako PWA. Na iPhonie w Safari wybierz „Udostępnij” i „Do ekranu początkowego”: aplikacja otwiera się pełnoekranowo z ikoną syrenki. Dodane `app/manifest.ts`, `app/apple-icon.png` i `public/icons/`.
+- R2 (Jasiek, 16:10): miejsca na całą Warszawę (T-73). W Supabase i w `places.geojson` jest 1347 miejsc (rano 485): 628 wokół 42 Warsaw, 459 w pasie Śródmieście–Żoliborz–Ochota–Mokotów–Praga, 260 w pozostałych dzielnicach. Źródła: 342 zabytki, kościoły, muzea i teatry z OSM z artykułem w Wikipedii (`fetch:osm-historia`; poza pasem tylko z długim wstępem, tryb `--fast`), parki i sport z OSM (371; poza pasem tylko parki od 5 ha, stadiony i ośrodki), „Otwarte boiska” z 18 dzielnic (308). Pomiar planera przy 1092 miejscach (start 42 Warsaw): najdłuższa luka bez opowieści przy 60 min w jedną stronę 28 → 20 min (ostatnia opowieść w 63., nie 31. minucie), przy 90 min 38 → 16 min, przy 120 min 39 → 22 min.
+- 16:10 (Jasiek): produkcja działa na `main` (`/health` 01ed0e3): `/v1/places` widzi bazę (1303 miejsc), opowieści z LLM i głos odpowiadają. Wcześniejsza blokada (Railway stał na 14:00, brak kluczy Supabase) zdjęta. Zadania z przeglądu stanu o 15:00 mają numery T-90–T-98 (T-76 zajął R1); T-90, T-91 i T-96 już zamknięte.
 - R1 (Szczepan, 15:00): planer bierze odjazdy z rozkładu ZTM dla każdego odcinka, także przesiadek. **Dla R3:** `Leg.realDeparture: true` = godzina z rozkładu; bez pola godzina jest szacowana (można pokazać „ok. 14:05”). Do sprawdzenia z prawdziwym tokenem (T-17).
 - R1 (Szczepan, 14:40): planer przyjmuje punkt końcowy: `destination: {lat, lng}` w `POST /v1/routes/plan` (nie razem z `returnToStart`), odpowiedź ma `endsAtDestination`. **Dla R3:** wybór celu na mapie wysyła `destination`; gdy `endsAtDestination` jest `false`, pokaż, że do celu nie udało się dojechać. Szczegóły: [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 7.
 
@@ -62,7 +64,6 @@
 
 ## Zablokowane
 
-- Pomiar R1 (14:40, 485 miejsc): trasa 60 min w jedną stronę z 42 Warsaw dalej ma ostatnie miejsce ok. 30. min (ostatnie okno 31 min). Pętla 60 min i trasa 90 min ze wszystkimi kategoriami mają miejsca do końca. Miejsca leżą tylko ok. 3 km od 42 Warsaw (lng 20,93–21,02, lat 52,21–52,26), więc potrzebne miejsca dalej od centrum Woli (R2, Jasiek).
 - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.
 
 ## Otwarte decyzje

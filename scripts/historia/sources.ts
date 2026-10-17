@@ -8,6 +8,8 @@ export const SOURCE_FILES = [
   new URL("../../docs/historia/osm-sport-przyroda.geojson", import.meta.url),
   // School sports grounds from the city dataset, written by `pnpm --filter @sawa/scripts fetch:boiska`.
   new URL("../../docs/historia/um-otwarte-boiska.geojson", import.meta.url),
+  // Monuments, churches, museums and theatres with a Wikipedia article, `fetch:osm-historia` (T-73).
+  new URL("../../docs/historia/osm-historia.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {
