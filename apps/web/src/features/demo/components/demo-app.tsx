@@ -7,6 +7,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
+import { shortestStopFor, useFastestRoute } from "../lib/fastest-route";
 import { forgetAll, useMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
@@ -72,6 +73,15 @@ export function DemoApp() {
   // O zgodę na lokalizację pytamy dopiero po onboardingu
   const start = useStartPoint(stage !== "onboarding");
   const origin = start.point;
+  const fastest = useFastestRoute(origin, profile, rideEnd, travel);
+  // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
+  const minDurationMin =
+    fastest.status === "ready" ? shortestStopFor(fastest.route.totalMin) : null;
+
+  // Nowy cel: suwak staje na najszybszej drodze, dłuższy czas to już trasa krajoznawcza
+  useEffect(() => {
+    if (minDurationMin !== null) setDurationMin(minDurationMin);
+  }, [minDurationMin]);
 
   const showRoute = useCallback((next: Route) => {
     setPlanned(next);
@@ -84,6 +94,11 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
+      // Na najkrótszym kroku to po prostu najszybsza droga, już pobrana
+      if (fastest.status === "ready" && durationMin === minDurationMin) {
+        showRoute(fastest.route);
+        return;
+      }
       showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
     } catch {
       setPlanError(
@@ -94,7 +109,17 @@ export function DemoApp() {
     } finally {
       setPlanning(false);
     }
-  }, [origin, start.status, durationMin, profile, rideEnd, travel, showRoute]);
+  }, [
+    origin,
+    start.status,
+    durationMin,
+    profile,
+    rideEnd,
+    travel,
+    fastest,
+    minDurationMin,
+    showRoute,
+  ]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);
@@ -297,6 +322,8 @@ export function DemoApp() {
                 interests={profile.interests}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                fastestMin={fastest.status === "ready" ? fastest.route.totalMin : null}
+                minDurationMin={minDurationMin}
                 travel={travel}
                 onTravelChange={setTravel}
                 rideEnd={rideEnd}
@@ -351,6 +378,7 @@ export function DemoApp() {
                 durationMin={durationMin}
                 end={planned ? routeEnd(planned, rideEnd) : null}
                 legs={planned?.legs ?? []}
+                attribution={planned?.attribution ?? []}
                 stops={route}
                 player={player}
                 activeIndex={activeIndex}

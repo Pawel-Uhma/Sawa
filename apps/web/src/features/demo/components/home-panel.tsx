@@ -24,6 +24,10 @@ type HomePanelProps = {
   interests: string[];
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
+  /** Najszybsza droga do celu (min), gdy wybrany jest cel. */
+  fastestMin: number | null;
+  /** Najkrótszy dozwolony krok suwaka: krok najszybszej drogi do celu. */
+  minDurationMin: number | null;
   travel: Travel;
   onTravelChange: (travel: Travel) => void;
   rideEnd: RideEnd;
@@ -60,6 +64,8 @@ export function HomePanel({
   interests,
   durationMin,
   onDurationChange,
+  fastestMin,
+  minDurationMin,
   travel,
   onTravelChange,
   rideEnd,
@@ -74,6 +80,7 @@ export function HomePanel({
 }: HomePanelProps) {
   const sawa = useAnimationControls();
   const lastStep = useRef(durationMin);
+  const minIndex = minDurationMin === null ? 0 : DURATION_STOPS_MIN.indexOf(minDurationMin);
 
   const labels = interests
     .map((key) => INTERESTS.find((item) => item.key === key)?.label)
@@ -118,23 +125,42 @@ export function HomePanel({
         </span>
       </div>
 
-      <input
-        type="range"
-        className="suwak mt-2"
-        aria-label="Czas przejażdżki"
-        aria-valuetext={formatDuration(durationMin)}
-        min={0}
-        max={DURATION_STOPS_MIN.length - 1}
-        step={1}
-        value={DURATION_STOPS_MIN.indexOf(durationMin)}
-        onChange={(event) => {
-          const value = DURATION_STOPS_MIN[Number(event.target.value)];
-          if (value !== lastStep.current) haptic(4);
-          lastStep.current = value;
-          onDurationChange(value);
-        }}
-        style={{ "--postep": thumbCenter(durationMin) } as CSSProperties}
-      />
+      {fastestMin !== null && (
+        <p className="-mt-1 text-[13px] text-tekst-2">
+          {durationMin === minDurationMin
+            ? `Najszybsza droga do celu, ${formatDuration(Math.round(fastestMin))}. Dłużej to trasa krajoznawcza.`
+            : `Krajoznawczo. Najszybciej dojedziesz w ${formatDuration(Math.round(fastestMin))}.`}
+        </p>
+      )}
+
+      <div className="relative">
+        <input
+          type="range"
+          className="suwak mt-2"
+          aria-label="Czas przejażdżki"
+          aria-valuetext={formatDuration(durationMin)}
+          min={0}
+          max={DURATION_STOPS_MIN.length - 1}
+          step={1}
+          value={DURATION_STOPS_MIN.indexOf(durationMin)}
+          onChange={(event) => {
+            // Krócej niż najszybsza droga do celu się nie da: gałka zatrzymuje się na jej kroku
+            const value = DURATION_STOPS_MIN[Math.max(Number(event.target.value), minIndex)];
+            if (value !== lastStep.current) haptic(4);
+            lastStep.current = value;
+            onDurationChange(value);
+          }}
+          style={{ "--postep": thumbCenter(durationMin) } as CSSProperties}
+        />
+        {minIndex > 0 && minDurationMin !== null && (
+          // Wyszarzony odcinek toru poniżej najszybszej drogi
+          <span
+            aria-hidden
+            className="pointer-events-none absolute top-[21px] left-0 h-1.5 rounded-l-full bg-powierzchnia/60"
+            style={{ width: thumbCenter(minDurationMin) }}
+          />
+        )}
+      </div>
       <div aria-hidden className="relative h-4 text-xs font-semibold text-tekst-3">
         {SCALE.map((value, index) => (
           <span
@@ -149,7 +175,9 @@ export function HomePanel({
             }
             className={`absolute top-0 whitespace-nowrap tabular-nums transition-colors duration-200 ${
               index === 0 || index === SCALE.length - 1 ? "" : "-translate-x-1/2"
-            } ${value === durationMin ? "text-glebia" : ""}`}
+            } ${value === durationMin ? "text-glebia" : ""} ${
+              minDurationMin !== null && value < minDurationMin ? "opacity-40" : ""
+            }`}
           >
             {formatDuration(value)}
           </span>
