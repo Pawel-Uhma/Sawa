@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { CollectedPlace } from "./beam-search";
-import { selectStoryPlaces } from "./select-stories";
+import { selectStoryPlaces, storyWindowSec } from "./select-stories";
 
 const p = (placeId: string, etaSec: number, score: number): CollectedPlace => ({
   placeId,
@@ -29,5 +29,13 @@ describe("selectStoryPlaces", () => {
 
   it("keeps everything when places are already far apart", () => {
     expect(selectStoryPlaces([p("a", 0, 1), p("b", 60, 1)], 45)).toHaveLength(2);
+  });
+});
+
+describe("storyWindowSec", () => {
+  it("gives the time until the next place within the style's bounds", () => {
+    expect(storyWindowSec(80, 45, 120)).toBe(80);
+    expect(storyWindowSec(0, 45, 120)).toBe(45);
+    expect(storyWindowSec(1854, 45, 120)).toBe(120);
   });
 });

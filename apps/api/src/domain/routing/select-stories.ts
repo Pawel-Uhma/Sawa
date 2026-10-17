@@ -11,6 +11,21 @@ export const STORY_GAP_SEC: Record<StoryStyle, number> = {
   deep: 90,
 };
 
+/** The longest a story may run per style, however long until the next place. */
+export const STORY_MAX_SEC: Record<StoryStyle, number> = {
+  trivia: 60,
+  fun: 120,
+  deep: 300,
+};
+
+/**
+ * How long Sawa may talk about a place: until the next one, at least `minSec` (also at the
+ * end of the route, while the user arrives) and at most `maxSec`.
+ */
+export function storyWindowSec(untilNextSec: number, minSec: number, maxSec: number): number {
+  return Math.round(Math.min(maxSec, Math.max(untilNextSec, minSec)));
+}
+
 /**
  * Picks the places Sawa talks about: best score first, each at least `minGapSec` from every
  * place already picked. Returned in ride order. Route choice still counts every place passed.

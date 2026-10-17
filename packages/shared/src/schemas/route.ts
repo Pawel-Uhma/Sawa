@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { InterestSchema } from "../interests";
 import { LatLngSchema } from "./common";
+import { MAX_STORY_SEC } from "./story";
 
 /** Rides under 30 min may be a walk (`Leg.mode` "walk"); see docs/12-plan-mvp.md §7. */
 export const MIN_DURATION_MIN = 5;
@@ -68,8 +69,11 @@ export const RoutePlaceSchema = z.object({
   position: LatLngSchema,
   /** Seconds from the start of the ride until the place is outside the window. */
   etaSec: z.number().nonnegative(),
-  /** Seconds until the next place; how long the story may last. */
-  windowSec: z.number().nonnegative(),
+  /**
+   * How long the story may last: seconds until the next place, at least the story style's
+   * minimum gap (also for the last place) and at most its maximum (≤ MAX_STORY_SEC).
+   */
+  windowSec: z.number().nonnegative().max(MAX_STORY_SEC),
   legIndex: z.number().int().nonnegative(),
   distanceM: z.number().nonnegative(),
 });

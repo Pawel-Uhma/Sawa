@@ -84,7 +84,7 @@ describe("route planner on real data", () => {
     expect(route.places.length).toBeGreaterThan(0);
   });
 
-  it("shows the walk to the first stop and keeps places on their ride legs", async () => {
+  it("shows the walk to the first stop and puts each place on the leg it is passed on", async () => {
     const route = await planner.plan(
       { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"] },
       NOW,
@@ -92,7 +92,37 @@ describe("route planner on real data", () => {
     expect(route.legs[0]?.mode).toBe("walk");
     expect(route.legs[0]?.fromStop.position).toEqual(HACKATHON_VENUE);
     expect(route.legs[0]?.toStop.id).toBe(route.legs[1]?.fromStop.id);
-    for (const p of route.places) expect(route.legs[p.legIndex]?.mode).not.toBe("walk");
+    const walkSec = (route.legs[0]?.durationMin ?? 0) * 60;
+    for (const p of route.places) {
+      // Places on the walk come before boarding; the rest are on ride legs.
+      expect(route.legs[p.legIndex]?.mode === "walk").toBe(p.etaSec <= walkSec + 1);
+    }
+  });
+
+  it("starts telling stories on the walk to the first stop", async () => {
+    const route = await planner.plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical", "cultural"] },
+      NOW,
+    );
+    expect(route.places[0]?.legIndex).toBe(0);
+    expect(route.places[0]?.etaSec).toBeLessThan(6 * 60);
+  });
+
+  it.each([
+    ["trivia", 30, 60],
+    ["fun", 45, 120],
+    ["deep", 90, 300],
+  ] as const)("keeps %s stories between %i and %i s", async (storyStyle, min, max) => {
+    for (const durationMin of [5, 30, 120]) {
+      const route = await planner.plan(
+        { origin: HACKATHON_VENUE, durationMin, interests: ["historical"], storyStyle },
+        NOW,
+      );
+      for (const p of route.places) {
+        expect(p.windowSec).toBeGreaterThanOrEqual(min);
+        expect(p.windowSec).toBeLessThanOrEqual(max);
+      }
+    }
   });
 
   it("walks from the last stop back to the start of a loop", async () => {
