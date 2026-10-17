@@ -6,7 +6,7 @@ import { useLang, useT } from "@/features/i18n";
 import { formatWhen } from "../lib/format";
 import type { PlaceMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
-import type { StoryPlayer } from "../lib/story-player";
+import { type StoryPlayer, spokenLength } from "../lib/story-player";
 import { useStoryWaitMessage } from "../lib/story-wait";
 import { FloatingCard, Grabber } from "./floating-card";
 import { CloseIcon, PauseIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
@@ -45,7 +45,9 @@ export function SawaTab({
   const hasPrev = activeIndex > 0;
   const hasNext = activeIndex < stops.length - 1;
   const words = useMemo(() => player.text?.split(/\s+/) ?? [], [player.text]);
-  const spoken = Math.floor((player.progress / 100) * words.length);
+  const spoken = player.text
+    ? player.text.slice(0, spokenLength(player.text, player.progress)).split(/\s+/).length
+    : 0;
   const told = useMemo(() => Object.entries(places).sort(([, a], [, b]) => b.at - a.at), [places]);
 
   const waitText = useStoryWaitMessage(Boolean(stop) && player.loading);
