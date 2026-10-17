@@ -1,7 +1,7 @@
 import type { PlaceSummaryFeature } from "@sawa/shared";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
-import { LABEL_FONT, placeKindColorExpression } from "../lib/map-style";
+import { LABEL_FONT, type MapPalette, placeKindColorExpression } from "../lib/map-style";
 
 export const PLACES_LAYER_ID = "places-circle";
 
@@ -10,11 +10,12 @@ type PlacesLayerProps = {
   selectedId: string | null;
   /** Fade regular places while a route is shown, so its places stand out. */
   isDimmed: boolean;
+  palette: MapPalette;
 };
 
-export function PlacesLayer({ places, selectedId, isDimmed }: PlacesLayerProps) {
+export function PlacesLayer({ places, selectedId, isDimmed, palette }: PlacesLayerProps) {
   const data = useMemo(() => ({ type: "FeatureCollection" as const, features: places }), [places]);
-  const opacity = isDimmed ? 0.35 : 0.9;
+  const opacity = isDimmed ? palette.dimmedOpacity : 0.9;
 
   return (
     <Source id="places" type="geojson" data={data}>
@@ -24,7 +25,7 @@ export function PlacesLayer({ places, selectedId, isDimmed }: PlacesLayerProps) 
         paint={{
           "circle-color": placeKindColorExpression(),
           "circle-radius": ["interpolate", ["linear"], ["get", "richness"], 1, 5, 10, 7, 40, 9],
-          "circle-stroke-color": "#ffffff",
+          "circle-stroke-color": palette.ring,
           "circle-stroke-width": 1.5,
           "circle-opacity": opacity,
           "circle-stroke-opacity": opacity,
@@ -37,7 +38,7 @@ export function PlacesLayer({ places, selectedId, isDimmed }: PlacesLayerProps) 
         paint={{
           "circle-radius": 12,
           "circle-opacity": 0,
-          "circle-stroke-color": "#18181b",
+          "circle-stroke-color": palette.selected,
           "circle-stroke-width": 3,
         }}
       />
@@ -54,7 +55,11 @@ export function PlacesLayer({ places, selectedId, isDimmed }: PlacesLayerProps) 
           "text-max-width": 10,
           "text-optional": true,
         }}
-        paint={{ "text-color": "#27272a", "text-halo-color": "#ffffff", "text-halo-width": 1.2 }}
+        paint={{
+          "text-color": palette.label,
+          "text-halo-color": palette.labelHalo,
+          "text-halo-width": 1.2,
+        }}
       />
     </Source>
   );
