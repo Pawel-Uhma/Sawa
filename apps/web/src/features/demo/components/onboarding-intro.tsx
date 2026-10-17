@@ -134,7 +134,7 @@ const HOW = [
   {
     icon: "/onboarding/know_a_bit.webp",
     title: "Mówisz, ile masz czasu",
-    text: "Od kilku minut do 4 godzin. Jedziesz przed siebie, wracasz w to samo miejsce albo do celu.",
+    text: "Od kilku minut do 4 godzin. Wracasz w to samo miejsce albo jedziesz do celu.",
   },
   {
     icon: "/onboarding/tram.webp",

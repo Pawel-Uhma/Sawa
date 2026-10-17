@@ -47,7 +47,6 @@ function thumbCenter(durationMin: number): string {
 }
 
 const END_OPTIONS: { type: RideEndType; label: string }[] = [
-  { type: "open", label: "Przed siebie" },
   { type: "loop", label: "Wracam tu" },
   { type: "destination", label: "Do celu" },
 ];

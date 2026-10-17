@@ -1,10 +1,7 @@
 import type { LatLng, PlanRouteRequest } from "@sawa/shared";
 
-/** Gdzie kończy się przejażdżka: gdziekolwiek, z powrotem na starcie albo przy wybranym celu. */
-export type RideEnd =
-  | { type: "open" }
-  | { type: "loop" }
-  | { type: "destination"; name: string; point: LatLng };
+/** Gdzie kończy się przejażdżka: z powrotem na starcie albo przy wybranym celu. */
+export type RideEnd = { type: "loop" } | { type: "destination"; name: string; point: LatLng };
 
 export type RideEndType = RideEnd["type"];
 
@@ -25,8 +22,6 @@ export function rideEndRequest(
   end: RideEnd,
 ): Pick<PlanRouteRequest, "returnToStart" | "destination"> {
   switch (end.type) {
-    case "open":
-      return { returnToStart: false };
     case "loop":
       return { returnToStart: true };
     case "destination":
