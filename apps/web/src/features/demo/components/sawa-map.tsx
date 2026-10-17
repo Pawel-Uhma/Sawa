@@ -42,10 +42,13 @@ type SawaMapProps = {
   onStopClick?: (id: string) => void;
 };
 
+type PaintProperty = Parameters<MapLibreMap["setPaintProperty"]>[1];
+type RouteData = Parameters<GeoJSONSource["setData"]>[0];
+
 function recolor(map: MapLibreMap) {
   for (const layer of map.getStyle().layers) {
     const { id, type } = layer;
-    const paint = (property: string, value: string) => {
+    const paint = (property: PaintProperty, value: string) => {
       try {
         map.setPaintProperty(id, property, value);
       } catch {
@@ -79,7 +82,7 @@ function recolor(map: MapLibreMap) {
   }
 }
 
-function routeData(route: LngLat[] | null | undefined): GeoJSON.Feature {
+function routeData(route: LngLat[] | null | undefined): RouteData {
   return {
     type: "Feature",
     properties: {},
@@ -115,7 +118,7 @@ export function SawaMap({
   route = null,
   onStopClick,
 }: SawaMapProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const markerClassRef = useRef<typeof Marker | null>(null);
   const [isReady, setIsReady] = useState(false);
@@ -180,12 +183,14 @@ export function SawaMap({
   }, []);
 
   // Trasa
+  // biome-ignore lint/correctness/useExhaustiveDependencies: isReady ponawia efekt po załadowaniu mapy
   useEffect(() => {
     const source = mapRef.current?.getSource("route") as GeoJSONSource | undefined;
     source?.setData(routeData(route));
   }, [route, isReady]);
 
   // Podpisane miejsca (ekran główny)
+  // biome-ignore lint/correctness/useExhaustiveDependencies: isReady ponawia efekt po załadowaniu mapy
   useEffect(() => {
     const map = mapRef.current;
     const MarkerClass = markerClassRef.current;
@@ -264,11 +269,10 @@ export function SawaMap({
   }, [cameraKey, paddingKey, isReady, reducedMotion]);
 
   return (
-    <div
+    <section
       ref={containerRef}
       className="absolute inset-0 bg-[#EEF3F0]"
       aria-label="Mapa Warszawy z trasą"
-      role="region"
     />
   );
 }

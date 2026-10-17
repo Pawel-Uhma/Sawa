@@ -5,12 +5,7 @@ import Image from "next/image";
 import { type CSSProperties, useRef } from "react";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
-import {
-  DURATION_MAX_MIN,
-  DURATION_MIN_MIN,
-  DURATION_STEP_MIN,
-  INTERESTS,
-} from "../lib/mock-data";
+import { DURATION_MAX_MIN, DURATION_MIN_MIN, DURATION_STEP_MIN, INTERESTS } from "../lib/mock-data";
 import { ArrowRightIcon } from "./icons";
 import { PrimaryButton } from "./primary-button";
 
