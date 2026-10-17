@@ -28,7 +28,7 @@ export function ChoiceList({ label, options, value, onPick }: ChoiceListProps) {
             onClick={() => onPick(option.key)}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", bounce: 0, duration: 0.2 }}
-            className={`flex min-h-[72px] items-center gap-4 rounded-3xl border-2 bg-white p-3 pr-4 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia md:min-h-20 md:p-4 ${
+            className={`flex min-h-[72px] items-center gap-4 rounded-3xl border-2 bg-powierzchnia p-3 pr-4 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia md:min-h-20 md:p-4 ${
               isOn ? "border-glebia bg-mieta-jasna" : "border-transparent"
             }`}
           >
@@ -75,7 +75,7 @@ export function InterestPicker({ picked, onToggle }: InterestPickerProps) {
               onClick={() => onToggle(item.key)}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", bounce: 0, duration: 0.2 }}
-              className={`flex h-full w-full flex-col items-start gap-2 rounded-3xl border-2 bg-white p-3 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia md:gap-3 md:p-4 ${
+              className={`flex h-full w-full flex-col items-start gap-2 rounded-3xl border-2 bg-powierzchnia p-3 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia md:gap-3 md:p-4 ${
                 isOn ? "border-glebia bg-mieta-jasna" : "border-transparent"
               }`}
             >

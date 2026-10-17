@@ -107,7 +107,7 @@ function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
         animate={{ opacity: 1, y: 0 }}
         exit={rise}
         transition={SPRING}
-        className="karta relative flex max-h-[85dvh] w-full max-w-md flex-col gap-5 rounded-[34px] bg-white! p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] outline-none md:p-6"
+        className="karta relative flex max-h-[85dvh] w-full max-w-md flex-col gap-5 rounded-[34px] bg-powierzchnia! p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] outline-none md:p-6"
       >
         <header className="flex items-start gap-3">
           <div className="min-w-0 flex-1">
