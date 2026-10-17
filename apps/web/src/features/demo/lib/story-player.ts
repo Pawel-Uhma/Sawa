@@ -8,8 +8,13 @@ import { getMemory, HEARD_AT_PROGRESS, rememberStory } from "./memory";
 import type { MockStop } from "./mock-data";
 import { etaSecOf } from "./ride-clock";
 
-/** Polish speech in ElevenLabs runs at about 2.5 words a second (same as the API). */
-const WORDS_PER_SEC = 2.5;
+/**
+ * Sawa's voice reads about 17 characters a second (measured with whisper on three stories, 17.10).
+ * Characters follow the voice closer than words: long words take longer to say.
+ */
+const CHARS_PER_SEC = 17.2;
+/** The highlight runs this far ahead, so a word lights up as Sawa starts it, not after it. */
+const LEAD_CHARS = 3;
 /** Without a next stop Sawa gets a medium story. */
 const LAST_STOP_SEC = 75;
 const MIN_TARGET_SEC = 20;
@@ -192,9 +197,34 @@ export function audioProgress(audio: HTMLAudioElement, live: LiveText): number {
   if (live.done && Number.isFinite(audio.duration) && audio.duration > 0) {
     return Math.min(100, (audio.currentTime / audio.duration) * 100);
   }
-  const words = live.text?.split(/\s+/).length ?? 0;
-  if (!words) return 0;
-  return Math.min(99, (audio.currentTime / (words / WORDS_PER_SEC)) * 100);
+  const chars = live.text?.length ?? 0;
+  if (!chars) return 0;
+  const guess = chars / CHARS_PER_SEC;
+  // Pobrany kawałek głosu nie jest dłuższy niż całość, więc przy gotowym tekście ogranicza zgadywanie.
+  const total = live.done ? Math.max(guess, bufferedEnd(audio)) : guess;
+  return Math.min(99, (audio.currentTime / total) * 100);
+}
+
+function bufferedEnd(audio: HTMLAudioElement): number {
+  const { buffered } = audio;
+  return buffered.length ? buffered.end(buffered.length - 1) : 0;
+}
+
+/** How long Sawa takes to read a text, for the timer when there is no voice. */
+export function speakingMs(text: string | null): number {
+  return text ? (text.length / CHARS_PER_SEC) * 1000 : 0;
+}
+
+/**
+ * Where the spoken part of `text` ends at `progress` (0–100): the end of the word Sawa is saying
+ * now, so the highlight shows the current word, not the last finished one.
+ */
+export function spokenLength(text: string, progress: number): number {
+  if (progress <= 0) return 0;
+  const at = Math.floor((progress / 100) * text.length) + LEAD_CHARS;
+  if (at >= text.length) return text.length;
+  const rest = text.slice(at).search(/\s/);
+  return rest < 0 ? text.length : at + rest;
 }
 
 /** Remembers a story once it was heard past `HEARD_AT_PROGRESS`, once per clip. */
@@ -365,8 +395,7 @@ export function useStoryPlayer(
     const audio = audioRef.current;
     // Without the voice the timer waits for the whole text, which says how long to wait.
     if (!hasVoice && !failed && !live.done) return;
-    const words = live.text ? live.text.split(/\s+/).length : 0;
-    const timerMs = words ? (words / WORDS_PER_SEC) * 1000 : FAILED_STORY_MS;
+    const timerMs = speakingMs(live.text) || FAILED_STORY_MS;
     let frame = 0;
     let last = performance.now();
     const tick = (now: number) => {

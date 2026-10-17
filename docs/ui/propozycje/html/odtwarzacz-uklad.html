@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odtwarzacz: układ</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fredoka:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root { --glebia: #17706f; --glebia-ciemna: #0f5554; --mieta: #8ed1b5; --mieta-jasna: #ddf2e9; --koral: #f2755f;
+    --tekst: #102b2a; --tekst-2: #4c6462; --tekst-3: #8a9c9a; --tlo-2: #f4f6f5; --pow: #fdfefd; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #e7ecea; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: var(--tekst); }
+  .siatka { display: grid; grid-template-columns: repeat(4, 390px); gap: 32px; padding: 32px; width: max-content; }
+  .opis h2 { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
+  .opis h2 span { color: var(--koral); margin-right: 6px; }
+  .opis > p { font-size: 12.5px; color: var(--tekst-2); line-height: 1.45; margin: 4px 0 14px; min-height: 72px; }
+  .tel { position: relative; width: 390px; height: 844px; border-radius: 28px; overflow: hidden; background: var(--pow);
+    box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 16px 40px rgba(16,43,42,.14); padding: 0 20px; display: flex; flex-direction: column; }
+  .logo { display: flex; align-items: center; gap: 10px; padding-top: 28px; }
+  .awatar { width: 44px; height: 44px; border-radius: 50%; background: radial-gradient(circle at 50% 40%, #f6d9c4 0 38%, #3d8f8c 39%); }
+  .logo b { font-family: Fredoka, sans-serif; font-size: 26px; color: var(--glebia); font-weight: 600; }
+  .logo b i { color: var(--koral); font-style: normal; }
+  .etyk { font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--tekst-3); display: flex; align-items: center; gap: 8px; }
+  .kropka { width: 8px; height: 8px; border-radius: 50%; background: var(--tekst-3); }
+  .wstecz { width: 20px; color: var(--tekst-2); font-size: 18px; }
+  h1 { font-size: 26px; font-weight: 800; line-height: 1.12; letter-spacing: -.03em; }
+  .adres { font-size: 13.5px; color: var(--tekst-2); margin-top: 4px; }
+  .dalej { font-size: 13.5px; color: var(--tekst-2); }
+  .dalej b { color: var(--tekst); font-weight: 600; }
+  .dalej s { text-decoration: none; color: var(--tekst-3); }
+  .suwak { position: relative; height: 4px; border-radius: 4px; background: #e4e9e8; }
+  .suwak::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 17%; border-radius: 4px; background: var(--glebia); }
+  .suwak .kciuk { position: absolute; left: 17%; top: 50%; width: 20px; height: 20px; margin: -10px; border-radius: 50%; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.25); }
+  .czasy { display: flex; justify-content: space-between; font-size: 11px; font-weight: 600; color: var(--tekst-3); margin-top: 8px; font-variant-numeric: tabular-nums; }
+  .play { width: 68px; height: 68px; border-radius: 50%; background: var(--glebia); display: grid; place-items: center; box-shadow: 0 8px 20px rgba(23,112,111,.3); flex: none; }
+  .play::after { content: ""; border-left: 20px solid #fff; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 5px; }
+  .play.maly { width: 52px; height: 52px; }
+  .play.maly::after { border-left-width: 16px; border-top-width: 10px; border-bottom-width: 10px; margin-left: 4px; }
+  .skok { font-size: 22px; color: var(--tekst); width: 44px; text-align: center; }
+  .ikona { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: var(--tekst-2); font-size: 15px; }
+  .ikona.mieta { background: var(--mieta-jasna); color: var(--glebia-ciemna); }
+  .pigulka { display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px 0 12px; border-radius: 99px; background: var(--mieta-jasna); color: var(--glebia-ciemna); font-size: 13px; font-weight: 700; }
+  .zapis { position: relative; flex: 1; overflow: hidden; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 24px, #000 calc(100% - 60px), transparent); }
+  .zapis .stary { font-size: 15px; line-height: 1.6; color: var(--tekst-3); }
+  .zapis .lbl { font-size: 12px; font-weight: 700; color: var(--tekst-3); margin-bottom: 4px; }
+  .zapis .lbl.akt { color: var(--glebia); }
+  .zywy { font-size: 19px; font-weight: 500; line-height: 1.5; letter-spacing: -.005em; color: #c2cdcb; }
+  .zywy em { font-style: normal; color: var(--tekst); }
+  .wroc { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,.92); box-shadow: 0 4px 16px rgba(16,43,42,.14); border-radius: 99px; padding: 9px 15px; font-size: 13px; font-weight: 700; display: flex; gap: 8px; align-items: center; white-space: nowrap; }
+  .zdj { width: 56px; height: 56px; border-radius: 14px; flex: none; background: linear-gradient(135deg, #c9b79c, #8d7a62 60%, #5f5242); box-shadow: inset 0 0 0 1px rgba(0,0,0,.06); }
+  .segm { display: flex; gap: 2px; height: 4px; }
+  .segm i { flex: 1; border-radius: 2px; background: #e4e9e8; }
+  .segm i.ok { background: var(--glebia); }
+  .segm i.teraz { background: linear-gradient(90deg, var(--glebia) 40%, #e4e9e8 40%); }
+  .dok { margin: 0 -20px; padding: 14px 20px 26px; border-top: 1px solid #edf1f0; background: rgba(253,254,253,.96); box-shadow: 0 -8px 24px rgba(16,43,42,.06); }
+  .row { display: flex; align-items: center; }
+</style></head><body>
+<div class="siatka">
+
+  <!-- 0: obecny -->
+  <div class="opis">
+    <h2><span>0</span>Obecny</h2>
+    <p>Sterowanie zajmuje ok. 60% ekranu. Nazwa miejsca jest dwa razy (nagłówek i etykieta nad zapisem), adres w nawiasie łamie tytuł, „Zatrzymaj” stoi osobno obok pauzy, a sam zapis zaczyna się w połowie ekranu.</p>
+    <div class="tel">
+      <div class="logo"><div class="awatar"></div><b>sawa<i>.</i></b></div>
+      <div class="row" style="gap:12px;margin-top:30px"><span class="wstecz">‹</span><span class="etyk"><span class="kropka"></span>Wstrzymane · 6 z 25</span></div>
+      <h1 style="margin-top:12px">Szpital Specjalistyczny św. Zofii (ul. Żelazna 90)</h1>
+      <p class="dalej" style="margin-top:8px">Dalej: <b>Ulica Smocza</b> <s>· za ok. 3 min</s></p>
+      <div style="margin-top:28px"><div class="suwak"><span class="kciuk"></span></div><div class="czasy"><span>12:15</span><span>−1:09:57</span></div></div>
+      <div class="row" style="justify-content:center;gap:40px;margin-top:20px"><span class="skok">⏮</span><span class="play"></span><span class="skok">⏭</span></div>
+      <div class="row" style="justify-content:space-between;margin-top:24px"><span class="pigulka">✦ Więcej o tym miejscu</span><span style="font-size:13px;font-weight:600;color:var(--tekst-2)">■ Zatrzymaj</span></div>
+      <div class="zapis" style="margin-top:20px">
+        <div style="padding-top:24px">
+          <p class="lbl akt">6 · Szpital Specjalistyczny św. Zofii (ul. Żelazna 90)</p>
+          <p class="zywy"><em>Sala operacyjna tego szpitala z początku dwudziestego</em> wieku miała elektryczne oświetlenie o mocy dorównującej temu, jakie zainstalowano w Filharmonii Warszawskiej. Placówka przy ulicy Żelaznej dziewięćdziesiąt powstała w dziewięćset dwunastym roku jako pierwsza wyłącznie położnicza w mieście…</p>
+        </div>
+        <span class="wroc"><span class="kropka"></span>Wróć do Sawy</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- A: zwarty -->
+  <div class="opis">
+    <h2><span>A</span>Zwarty, ta sama kolejność</h2>
+    <p>Najmniejsza zmiana. Adres schodzi pod nazwę, „Dalej” idzie do linii statusu, „Więcej” i „Zatrzymaj” stają się ikonami po bokach transportu (jak w Muzyce). Etykieta nad zapisem znika, bo nazwa jest wyżej. Zapis zyskuje ok. 140 px.</p>
+    <div class="tel">
+      <div class="logo"><div class="awatar"></div><b>sawa<i>.</i></b></div>
+      <div class="row" style="gap:12px;margin-top:22px;justify-content:space-between"><span class="row" style="gap:12px"><span class="wstecz">‹</span><span class="etyk"><span class="kropka"></span>Wstrzymane · 6 z 25</span></span></div>
+      <h1 style="margin-top:10px;font-size:24px">Szpital Specjalistyczny św.&nbsp;Zofii</h1>
+      <p class="adres">ul. Żelazna 90</p>
+      <div style="margin-top:20px"><div class="suwak"><span class="kciuk"></span></div><div class="czasy"><span>12:15</span><span>Dalej: <b style="color:var(--tekst-2)">Ulica Smocza</b> · 3 min</span><span>−1:09:57</span></div></div>
+      <div class="row" style="justify-content:space-between;margin-top:14px"><span class="ikona mieta">✦</span><span class="row" style="gap:22px"><span class="skok">⏮</span><span class="play"></span><span class="skok">⏭</span></span><span class="ikona">■</span></div>
+      <div class="zapis" style="margin-top:8px">
+        <div style="padding-top:22px">
+          <p class="zywy"><em>Sala operacyjna tego szpitala z początku dwudziestego</em> wieku miała elektryczne oświetlenie o mocy dorównującej temu, jakie zainstalowano w Filharmonii Warszawskiej. Placówka przy ulicy Żelaznej dziewięćdziesiąt powstała w dziewięćset dwunastym roku jako pierwsza wyłącznie położnicza w mieście z inicjatywy Stanisława Zaborowskiego…</p>
+        </div>
+        <span class="wroc"><span class="kropka"></span>Wróć do Sawy</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- B: napisy u góry, sterowanie w doku -->
+  <div class="opis">
+    <h2><span>B</span>Napisy na górze, sterowanie w doku</h2>
+    <p>Jak teksty w Muzyce: na górze nazwa i adres, zaraz pod nimi zapis na większość ekranu. Suwak, transport i „Więcej” w doku przy dolnej krawędzi, pod kciukiem. „Zatrzymaj” pod długim przytrzymaniem pauzy albo w menu.</p>
+    <div class="tel">
+      <div class="logo"><div class="awatar"></div><b>sawa<i>.</i></b></div>
+      <div class="row" style="gap:12px;margin-top:22px"><span class="wstecz">‹</span><span class="etyk"><span class="kropka"></span>Wstrzymane · 6 z 25</span></div>
+      <h1 style="margin-top:10px;font-size:24px">Szpital Specjalistyczny św.&nbsp;Zofii</h1>
+      <p class="adres">ul. Żelazna 90</p>
+      <div class="zapis" style="margin-top:6px">
+        <div style="padding-top:22px">
+          <p class="zywy" style="font-size:20px"><em>Sala operacyjna tego szpitala z początku dwudziestego</em> wieku miała elektryczne oświetlenie o mocy dorównującej temu, jakie zainstalowano w Filharmonii Warszawskiej. Placówka przy ulicy Żelaznej dziewięćdziesiąt powstała w dziewięćset dwunastym roku jako pierwsza wyłącznie położnicza w mieście z inicjatywy Stanisława Zaborowskiego, a jej sale…</p>
+        </div>
+        <span class="wroc"><span class="kropka"></span>Wróć do Sawy</span>
+      </div>
+      <div class="dok">
+        <p class="dalej" style="font-size:12.5px;margin-bottom:10px">Dalej: <b>Ulica Smocza</b> <s>· za ok. 3 min</s></p>
+        <div class="suwak"><span class="kciuk"></span></div><div class="czasy"><span>12:15</span><span>−1:09:57</span></div>
+        <div class="row" style="justify-content:space-between;margin-top:6px"><span class="ikona mieta">✦</span><span class="row" style="gap:26px"><span class="skok">⏮</span><span class="play"></span><span class="skok">⏭</span></span><span class="ikona">■</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C: karta miejsca ze zdjęciem -->
+  <div class="opis">
+    <h2><span>C</span>Karta miejsca ze zdjęciem</h2>
+    <p>Miniatura z Commons obok nazwy (zdjęcia już są w rekordach). Suwak dzielony na odcinki-miejsca, więc „6 z 25” widać bez liczenia. Mniejszy przycisk i jeden rząd akcji. „Więcej” jako pigułka pod tytułem, bo dotyczy miejsca, nie odtwarzania.</p>
+    <div class="tel">
+      <div class="logo"><div class="awatar"></div><b>sawa<i>.</i></b></div>
+      <div class="row" style="gap:12px;margin-top:22px"><span class="wstecz">‹</span><span class="etyk"><span class="kropka"></span>Wstrzymane · 6 z 25</span></div>
+      <div class="row" style="gap:14px;margin-top:12px;align-items:flex-start">
+        <span class="zdj"></span>
+        <div style="min-width:0"><h1 style="font-size:21px;line-height:1.15">Szpital Specjalistyczny św.&nbsp;Zofii</h1><p class="adres" style="margin-top:2px">ul. Żelazna 90 · <span style="color:var(--glebia);font-weight:700">✦ Więcej</span></p></div>
+      </div>
+      <div style="margin-top:20px"><div class="segm">
+        <i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="teraz"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div><div class="czasy"><span>12:15</span><span>−1:09:57</span></div></div>
+      <div class="row" style="justify-content:space-between;margin-top:10px">
+        <span class="dalej" style="font-size:12.5px;max-width:150px;line-height:1.3">Dalej: <b>Ulica Smocza</b><br><s>za ok. 3 min</s></span>
+        <span class="row" style="gap:8px"><span class="skok" style="font-size:19px">⏮</span><span class="play maly"></span><span class="skok" style="font-size:19px">⏭</span><span class="ikona" style="width:32px">■</span></span>
+      </div>
+      <div class="zapis" style="margin-top:8px">
+        <div style="padding-top:22px">
+          <p class="zywy"><em>Sala operacyjna tego szpitala z początku dwudziestego</em> wieku miała elektryczne oświetlenie o mocy dorównującej temu, jakie zainstalowano w Filharmonii Warszawskiej. Placówka przy ulicy Żelaznej dziewięćdziesiąt powstała w dziewięćset dwunastym roku jako pierwsza wyłącznie położnicza w mieście z inicjatywy Stanisława Zaborowskiego…</p>
+        </div>
+        <span class="wroc"><span class="kropka"></span>Wróć do Sawy</span>
+      </div>
+    </div>
+  </div>
+
+</div></body></html>
