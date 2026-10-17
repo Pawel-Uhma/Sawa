@@ -399,7 +399,8 @@ function MobileSheet({
         <motion.div
           ref={dockRef}
           style={{ y: dockY }}
-          className="absolute inset-x-0 bottom-0 border-t border-tekst/[0.06] bg-powierzchnia px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-8px_24px_rgba(16,43,42,0.06)]"
+          // Pas pod dokiem zakrywa treść, gdy sprężyna arkusza przestrzeli w górę
+          className="absolute inset-x-0 bottom-0 after:absolute after:inset-x-0 after:top-full after:h-16 after:bg-powierzchnia border-t border-tekst/[0.06] bg-powierzchnia px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-8px_24px_rgba(16,43,42,0.06)]"
         >
           {dock}
         </motion.div>
