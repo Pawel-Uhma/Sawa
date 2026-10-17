@@ -18,6 +18,7 @@ import {
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
+import { distanceTo, useGpsClockSync } from "../lib/ride-sync";
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
@@ -242,6 +243,10 @@ export function DemoApp() {
   // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
   const clock = useRideClock(route);
   const { syncTo } = clock;
+  // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
+  const position = start.status === "located" ? start.point : null;
+  useGpsClockSync(route, position, clock);
+  const nextDistanceM = distanceTo(route[activeIndex + 1], position);
   const pickStop = useCallback(
     (index: number) => {
       syncTo(index);
@@ -395,6 +400,7 @@ export function DemoApp() {
                 activeIndex={activeIndex}
                 onActiveChange={setActiveIndex}
                 clock={clock}
+                nextDistanceM={nextDistanceM}
                 onBack={() => setStage("map")}
                 isDesktop={isDesktop}
                 onCoverChange={setSheetCoverPx}

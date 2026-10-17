@@ -13,7 +13,7 @@ import { SawaMenuButton } from "./sawa-menu";
 
 /*
  * Ekran trasy na żywo (wybrany wariant A, propozycje w docs/ui/README.md).
- * O tym, o czym Sawa mówi, decyduje lokalizacja (T-106), a nie użytkownik. Sawa opowiada jednym
+ * O tym, o czym Sawa mówi, decyduje zegar jazdy przesuwany lokalizacją (T-121), a nie użytkownik. Sawa opowiada jednym
  * ciągłym strumieniem i sama przechodzi od tematu do tematu, więc nie ma przycisków
  * „poprzednia/następna”. Jest pauza, a skok do przodu („Opowiedz teraz”) to wyjątek.
  */
@@ -37,6 +37,8 @@ export type RouteLiveProps = {
   progress: number;
   /** Za ile sekund następny temat według zegara jazdy. */
   nextInSec: number | null;
+  /** Metry do następnego punktu, gdy znamy lokalizację. */
+  nextDistanceM: number | null;
   storyText: string | null;
   storyState: "loading" | "ready" | "failed";
   /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
@@ -44,10 +46,22 @@ export type RouteLiveProps = {
   togglePlay: () => void;
 };
 
-/** Za ile następny temat. Dziś z zegara jazdy, docelowo z odległości do punktu. */
-function untilNext(stops: MockStop[], activeIndex: number, nextInSec: number | null) {
+/** Metry po polsku: „350 m”, „1,2 km”. */
+function formatDistance(m: number) {
+  if (m < 1000) return `${Math.max(10, Math.round(m / 10) * 10)} m`;
+  return `${(m / 1000).toFixed(1).replace(".", ",")} km`;
+}
+
+/** Kiedy następny temat: z odległości do punktu, gdy znamy lokalizację, inaczej z zegara jazdy. */
+function untilNext(
+  stops: MockStop[],
+  activeIndex: number,
+  nextInSec: number | null,
+  distanceM: number | null,
+) {
   const next = stops[activeIndex + 1];
   if (!next) return null;
+  if (distanceM !== null) return { stop: next, label: `za ${formatDistance(distanceM)}` };
   if (nextInSec === null || nextInSec < 60) return { stop: next, label: "za chwilę" };
   return { stop: next, label: `za ok. ${Math.round(nextInSec / 60)} min` };
 }
@@ -203,15 +217,17 @@ function NextUp({
   activeIndex,
   progress,
   nextInSec,
+  nextDistanceM,
   end,
 }: {
   stops: MockStop[];
   activeIndex: number;
   progress: number;
   nextInSec: number | null;
+  nextDistanceM: number | null;
   end: RouteLiveProps["end"];
 }) {
-  const next = untilNext(stops, activeIndex, nextInSec);
+  const next = untilNext(stops, activeIndex, nextInSec, nextDistanceM);
   if (!next) {
     return (
       <div className="flex flex-col items-start gap-2">
@@ -256,6 +272,7 @@ export function RouteLive({
   isPlaying,
   progress,
   nextInSec,
+  nextDistanceM,
   storyText,
   storyState,
   transcript,
@@ -389,6 +406,7 @@ export function RouteLive({
           activeIndex={activeIndex}
           progress={progress}
           nextInSec={nextInSec}
+          nextDistanceM={nextDistanceM}
           end={end}
         />
       </div>

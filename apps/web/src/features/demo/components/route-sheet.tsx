@@ -25,6 +25,8 @@ type RouteSheetProps = {
   onActiveChange: (index: number) => void;
   /** Zegar jazdy: który punkt już powinien mieć opowieść i za ile następny. */
   clock: Pick<RideClock, "dueIndex" | "nextInSec">;
+  /** Metry do następnego punktu, gdy znamy lokalizację. */
+  nextDistanceM: number | null;
   onBack: () => void;
   isDesktop: boolean;
   /** Ile pikseli od dołu zasłania arkusz (telefon), żeby mapa wiedziała, gdzie jest jej widoczna część. */
@@ -38,8 +40,8 @@ export function RouteSheet(props: RouteSheetProps) {
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
 
-  // Po końcu opowieści Sawa czeka, aż zbliżysz się do następnego punktu (zegar jazdy, do czasu
-  // lokalizacji). Gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
+  // Po końcu opowieści Sawa czeka, aż zbliżysz się do następnego punktu (zegar jazdy, który
+  // lokalizacja przesuwa przy punktach). Gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
   const { dueIndex } = clock;
   useEffect(() => {
     if (progress < 100) return;

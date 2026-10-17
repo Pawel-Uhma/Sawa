@@ -16,6 +16,44 @@ const MIN_TARGET_SEC = 20;
 const MAX_TARGET_SEC = 600;
 /** When even the story text fails, the card waits this long and moves on. */
 const FAILED_STORY_MS = 6000;
+/** Przerwany temat cichnie zamiast urywać się w pół słowa. */
+const FADE_OUT_MS = 350;
+/** Nowy temat wchodzi łagodnie. */
+const FADE_IN_MS = 500;
+/** Oddech Sawy między tematami, gdy poprzedni skończył się sam. */
+const BREATH_MS = 600;
+
+/**
+ * Płynnie zmienia głośność. Na iOS `volume` jest tylko do odczytu, więc tam zostaje
+ * sama pauza o tej długości, bez wyciszenia. Nowe przejście przerywa poprzednie (`token`).
+ */
+function fadeVolume(
+  audio: HTMLAudioElement,
+  to: number,
+  ms: number,
+  token: { current: number },
+): Promise<void> {
+  const id = ++token.current;
+  const from = audio.volume;
+  const startedAt = performance.now();
+  return new Promise((resolve) => {
+    const tick = (now: number) => {
+      if (token.current !== id) return resolve();
+      const t = Math.min(1, (now - startedAt) / ms);
+      audio.volume = from + (to - from) * t;
+      if (t < 1) requestAnimationFrame(tick);
+      else resolve();
+    };
+    requestAnimationFrame(tick);
+  });
+}
+
+const wait = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
+
+/** Czy element gra właśnie ten klip (a nie poprzedni, który jeszcze cichnie). */
+function isLoaded(audio: HTMLAudioElement, clip: Clip | null): boolean {
+  return Boolean(clip?.audioUrl) && audio.getAttribute("src") === clip?.audioUrl;
+}
 
 /** One story: text for the card, mp3 when the voice answered, and what it told (for memory). */
 export type Clip = {
@@ -100,11 +138,18 @@ export function useStoryPlayer(
   const [progress, setProgress] = useState(0);
   // Id punktu, który jest teraz aktywny: spóźniona odpowiedź z innego punktu nie może nadpisać klipu.
   const activeId = useRef<string | undefined>(undefined);
+  // Efekty audio czytają bieżący stan bez ponownego uruchamiania przejścia.
+  const clipRef = useRef<Clip | null>(null);
+  clipRef.current = clip;
+  const isPlayingRef = useRef(isPlaying);
+  isPlayingRef.current = isPlaying;
+  const fadeToken = useRef(0);
 
   useEffect(() => {
     const audio = new Audio();
     audioRef.current = audio;
-    const onEnded = () => setProgress(100);
+    // Koniec starego klipu, który jeszcze cichł, nie kończy nowego tematu.
+    const onEnded = () => isLoaded(audio, clipRef.current) && setProgress(100);
     audio.addEventListener("ended", onEnded);
     const clips = cache.current;
     return () => {
@@ -171,20 +216,52 @@ export function useStoryPlayer(
     if (clip) load(activeIndex + 1)?.catch(() => {});
   }, [clip, activeIndex, load]);
 
+  // Zmiana tematu: stary klip cichnie (albo Sawa bierze oddech po jego końcu), nowy wchodzi łagodnie.
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio) return;
-    if (!clip?.audioUrl) {
-      audio.pause();
-      audio.removeAttribute("src");
-      return;
-    }
-    audio.src = clip.audioUrl;
+    if (!audio || isLoaded(audio, clip)) return;
+    let cancelled = false;
+    const hasSound = Boolean(audio.getAttribute("src"));
+    const before = !hasSound
+      ? Promise.resolve()
+      : audio.ended
+        ? wait(BREATH_MS)
+        : audio.paused
+          ? Promise.resolve()
+          : fadeVolume(audio, 0, FADE_OUT_MS, fadeToken);
+    before.then(() => {
+      if (cancelled) return;
+      if (!clip?.audioUrl) {
+        audio.pause();
+        audio.removeAttribute("src");
+        return;
+      }
+      fadeToken.current++;
+      audio.volume = 0;
+      audio.src = clip.audioUrl;
+      if (!isPlayingRef.current) {
+        audio.volume = 1;
+        return;
+      }
+      audio
+        .play()
+        .then(() => {
+          if (!cancelled) return fadeVolume(audio, 1, FADE_IN_MS, fadeToken);
+        })
+        .catch(() => {
+          audio.volume = 1;
+          setIsPlaying(false);
+        });
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [clip]);
 
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio || !clip?.audioUrl) return;
+    // Przed wczytaniem klipu gra nim efekt przejścia wyżej.
+    if (!audio || !isLoaded(audio, clip)) return;
     // The browser blocks sound before the first tap; the play button then starts it.
     if (isPlaying) audio.play().catch(() => setIsPlaying(false));
     else audio.pause();
@@ -202,7 +279,8 @@ export function useStoryPlayer(
       const delta = now - last;
       last = now;
       if (clip?.audioUrl && audio) {
-        if (audio.duration > 0)
+        // Cichnący poprzedni klip nie przesuwa paska nowego tematu.
+        if (isLoaded(audio, clip) && audio.duration > 0)
           setProgress(Math.min(100, (audio.currentTime / audio.duration) * 100));
       } else {
         setProgress((current) => Math.min(100, current + (delta / timerMs) * 100));
@@ -219,7 +297,9 @@ export function useStoryPlayer(
     const audio = audioRef.current;
     const restart = progress >= 100;
     if (restart) setProgress(0);
-    if (!isPlaying && audio && clip?.audioUrl) {
+    if (!isPlaying && audio && isLoaded(audio, clip)) {
+      fadeToken.current++;
+      audio.volume = 1;
       // Called inside the tap, so Safari lets the sound start.
       if (restart) audio.currentTime = 0;
       audio.play().catch(() => setIsPlaying(false));
