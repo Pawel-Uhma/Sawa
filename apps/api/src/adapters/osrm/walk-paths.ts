@@ -9,6 +9,8 @@ const SNAP_GAP_M = 2;
 
 type LngLat = [number, number];
 
+export type WalkRouterLogger = { warn(obj: object, msg: string): void };
+
 const ResponseSchema = z.object({
   code: z.literal("Ok"),
   routes: z
@@ -22,11 +24,8 @@ const ResponseSchema = z.object({
     .min(1),
 });
 
-/** The path of an OSRM `route` response, joined to the requested ends; exported for tests. */
-export function parseWalkPath(body: unknown, from: LatLng, to: LatLng): LngLat[] | undefined {
-  const parsed = ResponseSchema.safeParse(body);
-  if (!parsed.success) return undefined;
-  const line = parsed.data.routes[0]?.geometry.coordinates as LngLat[];
+/** A router's line (snapped to paths) joined to the requested ends when they are off it. */
+export function joinToEnds(line: LngLat[], from: LatLng, to: LatLng): LngLat[] {
   const [first, last] = [line[0] as LngLat, line[line.length - 1] as LngLat];
   const gap = (a: LatLng, [lng, lat]: LngLat) => haversineM(a, { lat, lng }) > SNAP_GAP_M;
   return [
@@ -36,11 +35,22 @@ export function parseWalkPath(body: unknown, from: LatLng, to: LatLng): LngLat[]
   ];
 }
 
+/** The path of an OSRM `route` response, joined to the requested ends; exported for tests. */
+export function parseWalkPath(body: unknown, from: LatLng, to: LatLng): LngLat[] | undefined {
+  const parsed = ResponseSchema.safeParse(body);
+  if (!parsed.success) return undefined;
+  return joinToEnds(parsed.data.routes[0]?.geometry.coordinates as LngLat[], from, to);
+}
+
 /**
  * Walking paths from an OSRM server (`/route/v1/…` with the foot profile). One request per
- * walk, through all its points. Any failure → undefined, so the caller keeps straight lines.
+ * walk, through all its points. Any failure → undefined (logged), so the caller tries another
+ * router or keeps straight lines.
  */
-export function createOsrmWalkPathSource(baseUrl: string): WalkPathSource {
+export function createOsrmWalkPathSource(
+  baseUrl: string,
+  logger?: WalkRouterLogger,
+): WalkPathSource {
   const cache = new Map<string, Promise<LngLat[] | undefined>>();
 
   return {
@@ -58,13 +68,47 @@ export function createOsrmWalkPathSource(baseUrl: string): WalkPathSource {
         headers: { "User-Agent": "sawa-api (Warsaw Open Data Hackathon)" },
         signal: AbortSignal.timeout(TIMEOUT_MS),
       })
-        .then(async (res) => (res.ok ? parseWalkPath(await res.json(), first, last) : undefined))
-        .catch(() => undefined);
+        .then(async (res) => {
+          if (res.ok) return parseWalkPath(await res.json(), first, last);
+          logger?.warn({ router: "osrm", status: res.status }, "walk path request failed");
+          return undefined;
+        })
+        .catch((err) => {
+          logger?.warn({ router: "osrm", err: String(err) }, "walk path request failed");
+          return undefined;
+        });
       // Failures are not cached, so the next plan asks again.
       path.then((p) => p || cache.delete(coords));
       cache.set(coords, path);
       if (cache.size > CACHE_SIZE) cache.delete(cache.keys().next().value as string);
       return path;
+    },
+  };
+}
+
+/** A router that failed is skipped this long, so plans do not wait for it to fail again. */
+const FAILED_SKIP_MS = 60_000;
+
+/**
+ * The first path any of `sources` finds, asked in order: the public routers block an IP that
+ * asks too often (shared cloud IPs too), so a second one keeps walks off straight lines. A
+ * source that failed is skipped for `FAILED_SKIP_MS` (asked anyway when all are skipped).
+ */
+export function firstWalkPath(
+  sources: WalkPathSource[],
+  clock: () => number = Date.now,
+): WalkPathSource {
+  const failedAt = sources.map(() => Number.NEGATIVE_INFINITY);
+  return {
+    async path(points) {
+      const now = clock();
+      const fresh = sources.filter((_, i) => now - (failedAt[i] as number) >= FAILED_SKIP_MS);
+      for (const source of fresh.length > 0 ? fresh : sources) {
+        const path = await source.path(points);
+        if (path) return path;
+        failedAt[sources.indexOf(source)] = clock();
+      }
+      return undefined;
     },
   };
 }

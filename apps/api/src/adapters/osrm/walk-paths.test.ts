@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { createOsrmWalkPathSource, parseWalkPath } from "./walk-paths";
+import { createOsrmWalkPathSource, firstWalkPath, parseWalkPath } from "./walk-paths";
 
 const from = { lat: 52.224, lng: 21.0049 };
 const to = { lat: 52.2297, lng: 21.0122 };
@@ -62,5 +62,43 @@ describe("createOsrmWalkPathSource", () => {
     expect(await source.path([from, to])).toBeUndefined();
     expect(await source.path([from, to])).toBeUndefined();
     expect(fetchMock).toHaveBeenCalledTimes(2);
+  });
+});
+
+describe("firstWalkPath", () => {
+  const line: [number, number][] = [
+    [21.0049, 52.224],
+    [21.0122, 52.2297],
+  ];
+  const failing = () => ({ path: vi.fn(async () => undefined) });
+  const working = () => ({ path: vi.fn(async () => line) });
+
+  it("asks the next router when the first finds no path", async () => {
+    const [osrm, valhalla] = [failing(), working()];
+    expect(await firstWalkPath([osrm, valhalla]).path([from, to])).toEqual(line);
+    expect(osrm.path).toHaveBeenCalledTimes(1);
+  });
+
+  it("skips a failed router for a minute, then tries it again", async () => {
+    let now = 0;
+    const [osrm, valhalla] = [failing(), working()];
+    const source = firstWalkPath([osrm, valhalla], () => now);
+    await source.path([from, to]);
+    now = 30_000;
+    await source.path([from, to]);
+    expect(osrm.path).toHaveBeenCalledTimes(1);
+    now = 61_000;
+    await source.path([from, to]);
+    expect(osrm.path).toHaveBeenCalledTimes(2);
+    expect(valhalla.path).toHaveBeenCalledTimes(3);
+  });
+
+  it("asks all routers when all failed recently", async () => {
+    const [osrm, valhalla] = [failing(), failing()];
+    const source = firstWalkPath([osrm, valhalla], () => 0);
+    expect(await source.path([from, to])).toBeUndefined();
+    expect(await source.path([from, to])).toBeUndefined();
+    expect(osrm.path).toHaveBeenCalledTimes(2);
+    expect(valhalla.path).toHaveBeenCalledTimes(2);
   });
 });
