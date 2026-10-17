@@ -9,7 +9,16 @@ import {
   placeKindIconExpression,
 } from "../lib/map-style";
 
+export const PLACES_SOURCE_ID = "places";
 export const PLACES_LAYER_ID = "places-circle";
+export const PLACES_CLUSTER_LAYER_ID = "places-cluster";
+
+/** Above this zoom places are never grouped; at street level every place has its own icon. */
+const CLUSTER_MAX_ZOOM = 15;
+const CLUSTER_RADIUS_PX = 44;
+
+const IS_CLUSTER: ExpressionSpecification = ["has", "point_count"];
+const IS_PLACE: ExpressionSpecification = ["!", ["has", "point_count"]];
 
 /** Icon scale (1 = 48 css px): grows with zoom, and richer places are a bit larger. */
 const ICON_SIZE: ExpressionSpecification = [
@@ -20,6 +29,17 @@ const ICON_SIZE: ExpressionSpecification = [
   ["interpolate", ["linear"], ["get", "richness"], 1, 0.36, 40, 0.48],
   16,
   ["interpolate", ["linear"], ["get", "richness"], 1, 0.56, 40, 0.72],
+];
+
+/** Bubble radius grows with the number of grouped places. */
+const CLUSTER_RADIUS: ExpressionSpecification = [
+  "step",
+  ["get", "point_count"],
+  14,
+  10,
+  17,
+  50,
+  21,
 ];
 
 type PlacesLayerProps = {
@@ -37,11 +57,45 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
   const opacity = isDimmed ? palette.dimmedOpacity : 0.9;
 
   return (
-    <Source id="places" type="geojson" data={data}>
+    <Source
+      id={PLACES_SOURCE_ID}
+      type="geojson"
+      data={data}
+      cluster
+      clusterMaxZoom={CLUSTER_MAX_ZOOM}
+      clusterRadius={CLUSTER_RADIUS_PX}
+    >
+      {/* Zoomed out, nearby places group into a bubble with their count instead of hiding. */}
+      <Layer
+        id={PLACES_CLUSTER_LAYER_ID}
+        type="circle"
+        filter={IS_CLUSTER}
+        paint={{
+          "circle-color": palette.clusterFill,
+          "circle-radius": CLUSTER_RADIUS,
+          "circle-stroke-color": palette.ring,
+          "circle-stroke-width": 2,
+          "circle-opacity": opacity,
+          "circle-stroke-opacity": opacity,
+        }}
+      />
+      <Layer
+        id="places-cluster-count"
+        type="symbol"
+        filter={IS_CLUSTER}
+        layout={{
+          "text-field": ["get", "point_count_abbreviated"],
+          "text-font": LABEL_FONT,
+          "text-size": 12,
+          "text-allow-overlap": true,
+        }}
+        paint={{ "text-color": palette.clusterText, "text-opacity": opacity }}
+      />
       {hasIcons ? (
         <Layer
           id={PLACES_LAYER_ID}
           type="symbol"
+          filter={IS_PLACE}
           layout={{
             "icon-image": placeKindIconExpression(),
             "icon-size": ICON_SIZE,
@@ -56,6 +110,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
         <Layer
           id={PLACES_LAYER_ID}
           type="circle"
+          filter={IS_PLACE}
           paint={{
             "circle-color": placeKindColorExpression(),
             "circle-radius": ["interpolate", ["linear"], ["get", "richness"], 1, 5, 10, 7, 40, 9],
@@ -69,7 +124,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
       <Layer
         id="places-selected"
         type="circle"
-        filter={["==", ["get", "id"], selectedId ?? ""]}
+        filter={["all", IS_PLACE, ["==", ["get", "id"], selectedId ?? ""]]}
         paint={{
           "circle-radius": 20,
           "circle-opacity": 0,
@@ -81,6 +136,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
         id="places-label"
         type="symbol"
         minzoom={16}
+        filter={IS_PLACE}
         layout={{
           "text-field": ["get", "name"],
           "text-font": LABEL_FONT,

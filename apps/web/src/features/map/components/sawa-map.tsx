@@ -2,7 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Interest, LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
-import type { Map as MapLibre } from "maplibre-gl";
+import type { GeoJSONSource, MapGeoJSONFeature, Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -14,6 +14,7 @@ import {
 import { useTheme } from "@/features/theme";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
+import { usePrefersReducedMotion } from "../hooks/use-prefers-reduced-motion";
 import { useSelectedPlace } from "../hooks/use-selected-place";
 import type { LngLatBounds } from "../lib/bounds";
 import {
@@ -32,11 +33,16 @@ import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
-import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
+import {
+  PLACES_CLUSTER_LAYER_ID,
+  PLACES_LAYER_ID,
+  PLACES_SOURCE_ID,
+  PlacesLayer,
+} from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { UserLayer } from "./user-layer";
 
-const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID];
+const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
 
 const CAMERA_DURATION_MS = 800;
 
@@ -92,6 +98,7 @@ export function SawaMap({
   const theme = useTheme();
   const palette = MAP_PALETTES[theme];
   const { selectedId, select } = useSelectedPlace();
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   const visiblePlaces = useMemo(
     () => selectVisiblePlaces(places.data, { interests, minRichness: MIN_PLACE_RICHNESS }),
@@ -139,6 +146,10 @@ export function SawaMap({
 
   function handleClick(event: MapLayerMouseEvent) {
     const feature = event.features?.[0];
+    if (feature?.layer.id === PLACES_CLUSTER_LAYER_ID) {
+      expandCluster(feature.properties?.cluster_id, feature.geometry);
+      return;
+    }
     const id = feature?.properties?.id;
     if (typeof id !== "string") {
       select(null);
@@ -150,6 +161,21 @@ export function SawaMap({
       return;
     }
     select(id);
+  }
+
+  /** Zooms in just far enough for the tapped group to split; any drag or pinch interrupts it. */
+  async function expandCluster(clusterId: unknown, geometry: MapGeoJSONFeature["geometry"]) {
+    const map = mapRef.current;
+    if (!map || typeof clusterId !== "number" || geometry.type !== "Point") return;
+    const source = map.getSource<GeoJSONSource>(PLACES_SOURCE_ID);
+    if (!source) return;
+    const zoom = await source.getClusterExpansionZoom(clusterId);
+    const [lng, lat] = geometry.coordinates;
+    map.easeTo({
+      center: [lng, lat],
+      zoom,
+      duration: prefersReducedMotion ? 0 : CAMERA_DURATION_MS,
+    });
   }
 
   return (
