@@ -57,13 +57,13 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(durationMin, profile.interests));
+      showRoute(await planRoute(durationMin, profile.interests, profile));
     } catch {
       setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
     } finally {
       setPlanning(false);
     }
-  }, [durationMin, profile.interests, showRoute]);
+  }, [durationMin, profile, showRoute]);
 
   // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
   useEffect(() => {
