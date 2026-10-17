@@ -10,6 +10,7 @@ import {
   PLACE_GROUP_COLORS,
   PLACE_ICON_KINDS,
   PLACE_SUBKIND_GROUPS,
+  paleColor,
   parsePlaceStickerId,
   placeKindColor,
   placeKindLabel,
@@ -129,5 +130,13 @@ describe("map style", () => {
     const lightness = (hex: string) => Number.parseInt(hex.slice(1, 3), 16);
     expect(lightness(roads.majorInner)).toBeGreaterThan(lightness(roads.minor));
     expect(lightness(roads.motorwayInner)).toBeGreaterThan(lightness(roads.majorInner));
+  });
+});
+
+describe("paleColor", () => {
+  it("mixes a colour with white", () => {
+    expect(paleColor("#d62828", 0)).toBe("#d62828");
+    expect(paleColor("#d62828", 1)).toBe("#ffffff");
+    expect(paleColor("#000000", 0.4)).toBe("#666666");
   });
 });

@@ -33,6 +33,8 @@ export type MapPalette = {
   walk: string;
   /** Whole street drawn under its icon when the street is hovered or selected. */
   street: string;
+  /** Whole park, square or garden drawn under its icon when it is selected. */
+  park: string;
   /** Group of places drawn as one circle with their count when zoomed out ("glass" style, 17.10). */
   clusterFill: string;
   clusterStroke: string;
@@ -70,6 +72,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     labelHalo: "#ffffff",
     walk: "#52525b",
     street: "#4f6d9a",
+    park: "#2f7a34",
     clusterFill: "rgba(255, 255, 255, 0.92)",
     clusterStroke: "rgba(23, 112, 111, 0.35)",
     clusterText: "#17706f",
@@ -101,6 +104,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
     street: "#8fa9d4",
+    park: "#93cf96",
     clusterFill: "rgba(23, 33, 32, 0.92)",
     clusterStroke: "rgba(142, 209, 181, 0.4)",
     clusterText: "#8ed1b5",
@@ -381,6 +385,20 @@ export const LINE_COLORS = ["#d62828", "#1d4ed8", "#7c3aed", "#e07a00", "#c2185b
 
 export function lineColor(lineIndex: number): string {
   return LINE_COLORS[lineIndex % LINE_COLORS.length];
+}
+
+/** How much white goes into the colour of the previous and next vehicle of the line. */
+export const PALE_SHARE = 0.4;
+
+/** `#rrggbb` mixed with white, `share` of it (0 = unchanged, 1 = white). */
+export function paleColor(hex: string, share = PALE_SHARE): string {
+  const channels = [1, 3, 5].map((i) => {
+    const v = Number.parseInt(hex.slice(i, i + 2), 16);
+    return Math.round(v + (255 - v) * share)
+      .toString(16)
+      .padStart(2, "0");
+  });
+  return `#${channels.join("")}`;
 }
 
 /**
