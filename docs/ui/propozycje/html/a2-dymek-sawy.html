@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>A2 · Dymek Sawy</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_a.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .sawa-na-mapie { position: absolute; left: 112px; top: 326px; z-index: 20; display: flex; align-items: flex-end; gap: 8px; }
+  .sawa-na-mapie img { width: 58px; height: 58px; border: 3px solid #fff; box-shadow: 0 6px 16px rgba(16,43,42,.22); flex: none; }
+  .dymek { position: absolute; left: 20px; right: 20px; top: 214px; z-index: 21; padding: 14px 16px; border-radius: 22px 22px 22px 22px;
+    font-size: 15.5px; line-height: 1.4; }
+  .dymek::after { content: ''; position: absolute; left: 110px; bottom: -9px; width: 18px; height: 18px; transform: rotate(45deg);
+    background: rgba(255,255,255,.86); border-right: 1px solid rgba(255,255,255,.7); border-bottom: 1px solid rgba(255,255,255,.7); }
+  .dymek b { color: var(--glebia); }
+  .dymek .kto { font-size: 12px; font-weight: 700; color: var(--tekst-3); margin-bottom: 2px; }
+
+  .arkusz { top: 528px; }
+  .arkusz h2 { font-size: 20px; font-weight: 800; letter-spacing: -.02em; }
+  .presety { display: flex; gap: 8px; margin-top: 14px; }
+  .presety span { flex: 1; height: 54px; border-radius: 16px; background: var(--tlo-2); display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 16px; letter-spacing: -.02em; }
+  .presety span small { font-size: 11px; font-weight: 600; color: var(--tekst-3); letter-spacing: 0; }
+  .presety span.on { background: var(--glebia); color: #fff; box-shadow: 0 6px 14px rgba(23,112,111,.28); }
+  .presety span.on small { color: rgba(255,255,255,.75); }
+  .tematy-linia { margin-top: 14px; display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--tekst-2); }
+  .tematy-linia b { color: var(--tekst); font-weight: 700; }
+  .tematy-linia em { margin-left: auto; font-style: normal; color: var(--glebia); font-weight: 700; }
+  .dol { margin-top: 16px; }
+</style></head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora">
+    <div class="logo szklo">sawa<i>.</i></div>
+    <div class="pill szklo pogoda">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4C6462" stroke-width="2" stroke-linecap="round"><path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7Z"/></svg>
+      12° <span>Wola</span>
+    </div>
+  </div>
+
+  <div class="dymek szklo"><div class="kto">Sawa</div>Hej! Stoisz tam, gdzie był <b>Kercelak</b>. Masz chwilę? Wsiądźmy w tramwaj, opowiem Ci, co mijamy.</div>
+  <div class="sawa-na-mapie"><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg"></div>
+
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <h2>Ile masz czasu?</h2>
+    <div class="presety">
+      <span>30<small>min</small></span><span>1 h<small>&nbsp;</small></span><span class="on">1,5 h<small>9 opowieści</small></span><span>2 h<small>&nbsp;</small></span><span>4 h+<small>&nbsp;</small></span>
+    </div>
+    <div class="tematy-linia">Tematy: <b>Powstanie ’44, Dawne kina, Bazary</b><em>Zmień</em></div>
+    <div class="dol">
+      <div class="przycisk">Wyznacz trasę <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+    </div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script>
+<script>sawaMapa('mapa', { zoom: 14.6, center: nad(JA, 50, 14.6) });</script>
+</body></html>

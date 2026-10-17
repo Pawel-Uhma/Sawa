@@ -1803,3 +1803,645 @@
 > new file: docs/ui/propozycje/html/d-odcinki.html
 > new file: docs/ui/propozycje/html/e-wieczor.html
 
+
+### 2026-10-17 11:59 · Pawel
+
+> idziemy z A ale daj 5 wariacji A
+
+
+### 2026-10-17 12:00 · Pawel
+
+> Przetworz: 
+> 
+> <pasted_content id="2214">
+> You: Dobra, to zaczynamy już, nie?
+> You:  Tak.
+> You:  Jak się dzielimy? Czyli ja się chcę z bazy danych, tak?
+> You:  No, powiedzmy.
+> You:  Nie chcesz?
+> You:  Nie, no mogę wziąć. Zobaczymy, co z tego wyjdzie.
+> You:  Dobra.
+> You:  W czym się czujecie najlepiej?
+> You:  W jakiejś łączenie API, coś, co steruje, jakieś takie łączenie backendu z API, coś w tym stylu.
+> You:  Okej.
+> You:  Coś takiego.
+> You:  Okej, backend?
+> You:  No, bardziej backend niż frontend, na pewno.
+> You:  Okej.
+> You:  W sumie to...
+> You:  Ale.
+> You:  Będą po prostu może taskami, możemy to robić.
+> You:  No, w sensie wydaje mi się, że jak zrobimy plan, to też łatwiej to będzie rozdzielić.
+> You:  No.
+> You:  Masz rację.
+> You:  Nie wiem, mogę robić jakieś rzeczy z WebScriptingiem.
+> You:  O, spoko, no dane.
+> You:  Ja mogę robić frontend, na przykład.
+> You:  Dobra.
+> You:  Myślę, że masz największe doświadczenie w frontendach.
+> You:  Możliwe.
+> You:  Masz jeszcze od tych stacków.
+> You:  Wiesz, jak to się nazywa?
+> You:  Co to ma być?
+> You:  Eee, nie, na razie nie. Może nic takiego ważnego.
+> You:  Może dane stashowe?
+> You:  Eee, wydaje mi się, że.
+> You:  Super te dane w tym stacku.
+> You:  Nie, ja to mam w tym.
+> You:  Ty masz w tym.
+> You:  A jak spoolowaliście repo, to macie dane te z Wikipedii?
+> You:  Tak.
+> You:  To będzie docs, bo to w docsach jest.
+> You:  Mam docs, no i mam regular.
+> You:  Historia?
+> You:  Historia, no.
+> You:  Są dane, dobra.
+> You:  Kercelak okopy JSON.
+> You:  Na jakim backforcie robicie?
+> You:  Medium.
+> You:  Ten Opus 55 jest taki dobry, że no.
+> You:  Ciekawe jak tam limity, zobaczymy.
+> You:  Bo dzisiaj w nocy się odnowiły.
+> You:  1% zużyte.
+> You:  Teraz się nie pyta.
+> You:  Może według docsów 0,5 i backend nie jest zdefiniowany jako że będziemy next w JS-ie?
+> You:  Czy chcemy to na railway?
+> You:  I jeżeli tak, to w jakich.
+> You:  A, backend. No i jak lubicie.
+> You:  Ja w sumie korzystam z Pythona i FastAPI, ale możemy coś w tym kontekście.
+> You:  Nie wiem, rekomenduję TypeScript i Chome.
+> You:  Chome?
+> You:  Chome.
+> You:  Weź to, co on rekomenduje, i tak on to będzie robił.
+> You:  To prawda.
+> You:  W sumie.
+> You:  Yolo.
+> You:  G1, tak?
+> You:  Polish docs English code, spoko.
+> You:  Eee, Polish docsing, no tak.
+> You:  Nie, ja dałeś mi write access.
+> You:  Na repo.
+> You:  No.
+> You:  A nie?
+> You:  A, może zaakceptować.
+> You:  To mam, dzięki.
+> You:  Bo w sumie robimy ją mobile native, ale z drugiej strony, jeżeli raczej na pewno będzie oglądać ją na laptopie.
+> You:  Więc musi działać i tu, i tu ładnie.
+> You:  Chociaż jak. No, w sumie tak.
+> You:  No.
+> You:  Chyba że damy na laptopie po prostu, jak wykrywa, że jest szeroki ekran, się okazuje zeskanuj kod QR na telefonie.
+> You:  Że pushujemy to, ale nie wiem, czy to będzie dobrze oceniane.
+> You:  Do zastanowienia.
+> You:  Możemy zrobić tak, żeby się dobrze wyświetlało na obu.
+> You:  Mhm.
+> You:  Na chyba lepiej by było.
+> You:  No, okej.
+> You:  To chyba nie problem.
+> You:  Zrobię sobie jednego agenta podstawy.
+> You:  Tak.
+> You:  Pod mobilną wersję stron, w drugą pod desktopową.
+> You:  W sumie najlepiej będzie, jak dodamy sobie hooka, żeby już nie myśleć o tym, jak agent kończy pracę od razu pushuje, i wtedy wszyscy będziemy najbardziej na bieżąco. Bo teraz się rozwarstwiliśmy, wszystkimi branchami, i już możesz coś zapisać do mózgu, później mój zapisze do mózgu, i tak dalej.
+> You:  Możemy zrobić hooka, który od razu robi resolve conflicts przy pushu.
+> You:  Spoko. No i właśnie tworzy tego te zasady, więc mogę to dodać do ich zasad, że od razu się to dodadzą wtedy.
+> You:  Dobra, no.
+> You:  Mhm, tego bym jeszcze, nie wiem, nie tworzył nowych branchy i kodu, żeby były jakieś jednolite zasady commitowania i potem udało się to merge'ować.
+> You:  Spoko, ja się wiesz co spuszczę.
+> You:  No właśnie.
+> You:  Właśnie nic.
+> You:  Ale spoko, cloud sobie z tym poradzi.
+> You:  Dobra, moje dwa commity rozespała 40.
+> You:  Crazy potencjał.
+> You:  I się zadawał w którejś z tych commitów, sam robił.
+> You:  Serio, ja nawet nie wiem, jak się commituje.
+> You:  W sumie mamy z tym repo.
+> You:  Nie, to jest chore naprawdę, chore.
+> You:  Ja samemu robię teraz projekty za pół miliona złotych, które to jest niesamowity progres. I to w rok.
+> You:  Jeszcze jak sobie przypomnę, jak rok temu się to robiło, to jeszcze czytałem kod rok temu, a teraz?
+> You:  Napisz jeszcze jakiś, znaczy mówisz cloudowi, żeby pisał jakieś testy do tego?
+> You:  No tak.
+> You:  Nie że tak. Jest robi też.
+> You:  Nie musisz mi mówić.
+> You:  Robi też pen testy, ma dostęp do mojego AWS-a, więc wszystkie cloud watche i tak dalej. Jeszcze nie miałem sytuacji, że coś się.
+> You:  Aczkolwiek miałem niefajną sytuację ostatnio, bo miałem defaultowo ustawione klucz na AWS-ie, na pracę, a tworzyłem tą galerię zdjęć ślubnych, i stworzyłem klucz tam, tylko Claude nie zrobił profile praca, ten, w sensie mój prywatny, więc zrobił klucz na AWS.
+> You:  Firmy, i ktoś przejął ten klucz, jakiś Hindus, Singapur i ten, z tej z mojej strony ślubnej, i próbował wywołać bedrock instancję i tak dalej, a tam wydaje mi się, że tam jest w chuj wysoko ustawiony limit, kosztów, więc gdybym, gdyby nie były dobrze ustawione te permissions na AWS-ie, to by zeszły dziesiątki tysięcy dolarów z tego konta.
+> You:  Na szczęście miał tylko dostęp do jednego mojego bucketu S3, ale gdybym miał na przykład administrator access, po ptokach by już było po mnie.
+> You:  Więc teraz dodałem do Claude MD bardzo szczegółową instrukcję, że ma nie robić tak.
+> You:  I ma rozpoznawać, który jest profil na AWS-ie.
+> You:  A co według mnie dodajecie klucze do repo?
+> You:  Eee, nie wiem, nie czytałem repo.
+> You:  Do sprawdzenia na miejscu w sobotę. Zrób zdjęcia.
+> You:  Tablica Stanisław Konrad, nie wiadomo kim był.
+> You:  To jest w naszym repo.
+> You:  Tak, czyli można tego commita zrobić.
+> You:  Musimy też dzisiaj sprawdzić, co stało na działce, ale ja solidarności 171.
+> You:  1944 rokiem.
+> You:  Koniecznie.
+> You:  Może nie robimy niczego innego, dopóki tego nie wyjaśnimy.
+> You:  Musimy zdjęcia zrobić koniecznie.
+> You:  Normalnie nie używam ultra think, ale tutaj są duże wymagania, więc będę używał.
+> You:  Działa ci to, że masz po prostu w MD napisane, że ma nie przypisywać autorstwa?
+> You:  Nie przypisywać autorstwa?
+> You:  W jaki sposób? W commitach, tak?
+> You:  Że co-author to Claude.
+> You:  A, żeby nie było tak? No, działa mi.
+> You:  Działa mi.
+> You:  Ile runlaps ma polski, jak coś?
+> You:  Mhm.
+> You:  Super.
+> You:  O, właśnie, głosem się trzeba będzie zająć później.
+> You:  A czy robimy to, że my też możemy do niej mówić, czy nie?
+> You:  Że na przykład ona coś mówi, a mikrofon? Chyba taki bonus, nie?
+> You:  No.
+> You:  Dałem wypisie, nie przyda.
+> You:  No bo ty chyba i też trochę taka ingerencja w prywatność.
+> You:  Before you commit, commit sudo. Ja się jakiś pushing the same shared files.
+> You:  Mhm.
+> You:  Niech coś nam zamówi.
+> You:  Albo wy nie jedliście śniadania?
+> You:  No.
+> You:  A ty, Jasiek?
+> You:  Nie, jadłem.
+> You:  No.
+> You:  No i co, Paweł mówi, że te same projekty za pół miliona robisz, to ty też same robisz, nie?
+> You:  No.
+> You:  Ale to za pół miliona to nie za 4 tysiące.
+> You:  No nie, no to jest chore, chore to jest w tym momencie.
+> You:  Ale dobrze, to w takim razie na jakim etapie teraz jesteśmy?
+> You:  Na jakimś pushing te zasady?
+> You:  Ja myślę, że potem na tego podstawie możemy pracować.
+> You:  Żeby ładnie to rozdzielać.
+> You:  Ale fajnie, że tu nie ma drużyny.
+> You:  Że nie przyszli, bo by było głośno, nie? I transkrypt by też ich wysłuchał.
+> You:  Eee, to był chyba map Tyler, ta, ta mapa.
+> You:  Tak mi się wydaje.
+> You:  Zobaczmy.
+> You:  Nie, nie, to nie był map Tyler.
+> You:  Ale map Tyler też jest ładny.
+> You:  Map Box to było.
+> You:  Spoko jest, no. I on jest za darmo.
+> You:  I nawet SpaceX z niego korzysta.
+> You:  Eee, czy ktoś już z was zrobił jakiś szkielet kodu? Czy na razie nie?
+> You:  Mhm.
+> You:  Dobra.
+> You:  To ja zrobię taki— Ale to jak pushniesz stack, nie?
+> You:  Nie.
+> You:  Ale tak jak se myślę, w sumie fajnie, jakbyś dorobił z tego tych zasad pracy.
+> You:  Że jednak każdy będzie rozpoznawał, kto jest kim. Że jak ty pushniesz— Tak, tak?
+> You:  No.
+> You:  Że jak pushniesz, to powiesz, że to jest twój commit.
+> You:  I okej, w logach, dobra.
+> You:  Tak działa Git.
+> You:  Nie, w sensie, że w kontekście będzie, nie?
+> You:  No.
+> You:  Chcemy mieć.
+> You:  Dobra, to zajmij się.
+> You:  Dobra, to zasady pracy i plan.
+> You:  Co, Paweł, robisz teraz z tego strukturę, czy—
+> You:  Eee, teraz, teraz UI robię.
+> You:  Dobra.
+> You:  Ale w sensie szkielet? Czy— A, możesz, możesz zrobić szkielet już.
+> You:  I monorepo, czy—
+> You:  Kod, tak.
+> You:  Okej.
+> You:  Nie płacz, Antek, wszystko będzie dobrze.
+> You:  To jest taki polirepo.
+> You:  Aha, no właśnie, tak. Ale wiesz, to się da zobaczyć, to się zobaczy.
+> You:  Dopiero przy pracy?
+> You:  Dobra.
+> You:  Poproszę o rewizję, rewizję układu głównego.
+> You:  UI?
+> You:  Pierwsza propozycja.
+> You:  Strasznie śniadaniem będziemy jeść gotowe.
+> You:  Śmieję się, śmieję się.
+> You:  To jest tak, że to już jest zrobione.
+> You:  Eee, czyli to, to co mówiłeś, Jasiek, że ze sliderem?
+> You:  No.
+> You:  I—
+> You:  Zajebiste, idealnie uchwycił.
+> You:  Nie, to, to jest dziwne moim zdaniem, to nie pasuje.
+> You:  Ale spoko, że są jakieś lokalizacje obok.
+> You:  Nie, spoko jest, ile masz dziś czasu.
+> You:  I możesz zapytać Savę, no właśnie nie wiem, czy to też—
+> You:  Tylko trochę mniejsze może, żeby większe była, a mapka.
+> You:  Mhm.
+> You:  Chociaż to i tak jest małe ikonki autobusów i tramwajów na tej mapie.
+> You:  Tak, o, fajne było w czasie rzeczywistym.
+> You:  No.
+> You:  Zapisz to.
+> You:  I żeby były smooth, jeszcze to się przemieszczały.
+> You:  Mhm.
+> You:  O, fajnie.
+> You:  To właśnie pokazuję miejsca z historią, na przykład.
+> You:  A, no.
+> You:  Ile masz czasu na przejażdżkę?
+> You:  Czasu.
+> You:  Fajne.
+> You:  Nie, to, ale to takie dwie przesiadki, bo to też może być.
+> You:  Nie wiem, czy to może być tak, że wy chcecie gdzieś pojechać, na przykład jedziecie i wiecie, że jedziecie w jakieś miejsce, gdzieś, i używacie z tego zamiast "jak dojadę" trochę.
+> You:  Czyli nie robimy tego.
+> You:  Mhm.
+> You:  Nie wiem.
+> You:  No.
+> You:  Żeby po prostu—
+> You:  No nie wiem, właśnie.
+> You:  Że nie, że skupiamy się stricte na tym, żeby was oprowadził, tak?
+> You:  No.
+> You:  Bez tego—
+> You:  Znaczy, nie no, że ty też jakby, że możesz gdzieś dojechać.
+> You:  Dojechać.
+> You:  Mhm, okej.
+> You:  Tylko pytanie, czy nie chcemy się skupić na jednej z tych opcji.
+> You:  Jako MVP.
+> You:  Mhm.
+> You:  I że druga—
+> You:  To jest też taka opcja, myślę, że—
+> You:  Że ona jest tutaj.
+> You:  Że fajne będzie powiedzieć, że Warszawa to są teraz zabiegani i żeby jakby skorzystali z tej podróży.
+> You:  Mhm.
+> You:  I wtedy właśnie, że bo jakby nikt specjalnie nie będzie tak wychodził, żeby sobie pozwiedzać, skoro i tak teraz tak nie zwiedza.
+> You:  Mhm.
+> You:  Więc prędzej jak gdzieś dojeżdża, to w międzyczasie coś sobie zwiedzi, o tak.
+> You:  Mhm.
+> You:  No, żeby ktoś też dojechać do pracy i nie włączy Savy, tylko "jak dojadę", nie?
+> You:  Tylko też w sumie do pracy zawsze jeździsz, mniej więcej tą samą drogą, nie?
+> You:  No dobra, no ale nie jedziesz tylko do pracy.
+> You:  To też nie zależy od człowieka, czy tam, prawda. No nie wiem.
+> You:  Może powroty z pracy wtedy, możesz robić sobie różnie.
+> You:  No, niby.
+> You:  I wtedy przy okazji coś sobie zwiedzisz.
+> You:  A, i możesz slider zrobić, zróbmy.
+> You:  No.
+> You:  Czy bezpośrednia droga, czy jakaś trochę dłuższa, ale bardziej widokowa.
+> You:  No to myślę, że w zależności od tego, czy jakiej godziny, ile masz czasu, nie? Bo jak masz 2 godziny, to możesz—
+> You:  Tak, a, no.
+> You:  W sumie.
+> You:  No.
+> You:  Że chcę zacząć w tym miejscu i skończyć w tym miejscu, nie?
+> You:  No.
+> You:  No.
+> You:  O, no, to spoko też.
+> You:  Tak, tak.
+> You:  No.
+> You:  I to też nie wprowadzałoby w UI zupełnie nowego trybu.
+> You:  Mhm.
+> You:  Tylko opcja, że mogę zakończyć w innym miejscu.
+> You:  Mhm.
+> You:  To zwiedzanie.
+> You:  Czyli robimy taki głupi mops, tak? Jak dojadę.
+> You:  Tylko że fancy.
+> You:  Mhm.
+> You:  Na Warszawę.
+> You:  Też, eee, na przykład ostatnio byłem na Solcu na spotkaniu godzinę przed.
+> You:  I no i autobusem już nie pojadę nigdzie, ale fajnie pieszo mógłbym sobie coś obejść i brakowało mi czegoś takiego, żeby on rozpoznawał, że możesz wziąć autobus, ale też możesz zrobić pieszą trasę gdzieś dookoła.
+> You:  Mhm.
+> You:  Mhm.
+> You:  Fajnie.
+> You:  Trzecia propozycja.
+> You:  Tak.
+> You:  Czyli pewnie czat bardziej.
+> You:  No, w sensie jakby to jest—
+> You:  No bo to samo pytanie, tylko w inny sposób.
+> You:  Tak, tak.
+> You:  Można dać odpowiedź.
+> You:  To jest jakby spoko pod tym kątem, że możesz sobie osoba dużo ustawiać jakby rzeczy tak, że po prostu mu powie, co chce?
+> You:  Mhm.
+> You:  I ten, no ale—
+> You:  Jako jedna, jedna z opcji komunikacji, tak? Ale, ale nie w MVP.
+> You:  No.
+> You:  Można dać ewentualnie na prezentacji, że coś takiego można byłoby wprowadzić, jakiegoś asystenta dodatkowego.
+> You:  Mhm.
+> You:  Ale tak, że chyba na razie na razie mi się jakby UI najbardziej podobał w tej pierwszej.
+> You:  W pierwszej, mhm.
+> You:  Eee, plus dać właśnie może te autobusy na mapkę. Chociaż to też nie jest jakieś niezbędne, bardziej niż auto znaczy, to będzie fajne, żeby pokazać, że korzystamy z tego API, ale na przykład fajniej na jakby były jakieś miejsca, które można zwiedzić w okolicy pokazane.
+> You:  Mhm.
+> You:  Coś w tym stylu.
+> You:  Mhm.
+> You:  Żeby też ktoś każdemu chce coś tam przejrzeć.
+> You:  O, a Pocato ostatnio.
+> You:  Tryb przejażdżki na 10 godzin na 2 godziny.
+> You:  Wola, której nie ma.
+> You:  55 minut.
+> You:  W sumie.
+> You:  Niezłe.
+> You:  To jest fajne, ale nie wiem, czy jako ten pierwszy ekran. Czy na przykład jak już ustalisz, eee, tutaj, ile chcesz, masz czasu.
+> You:  Mhm.
+> You:  No.
+> You:  To wtedy ci proponuję tę trasę.
+> You:  Tak, tak, tak. Mi się podoba to, ten to, jaki pierwszy, jako pierwszy ekran, bo jest takie proste.
+> You:  Tak, jakieś wariacje.
+> You:  Widzisz i wiesz, już co masz, no, kliknąć.
+> You:  Mhm.
+> You:  To jest fajne. Tylko nie wiem, to o co chodzi, że to są różne tematy, tak?
+> You:  Dawne kina, bazary.
+> You:  Mhm. A, jakieś tagi tak, że możesz sobie wybrać, co cię interesuje, zainteresowanie.
+> You:  Nie wiem, nie wiem, czy to do końca.
+> You:  Ale może trochę bardziej w stylu, że nie wiem, albo bardziej historyczne, albo bardziej obecne.
+> You:  Mhm.
+> You:  A niekoniecznie aż, aż tak tematyczne.
+> You:  Albo spędzanie wolnego czasu, no.
+> You:  Mhm. Aktywność.
+> You:  O, no, sport, tak to masz rację.
+> You:  Mhm.
+> You:  Eee, to jest to, ostatni.
+> You:  Dobry wieczór, już można.
+> You:  Czemu my nie mamy własnej firmy? To ja nie wiem.
+> You:  No to mi się nie podoba, ten czarny design, czarny ten, chyba niezbyt, nie?
+> You:  Nie, chyba nie.
+> You:  No.
+> You:  I to takie.
+> You:  Jeszcze jak jest mapka czarna, to jest takie rzeczywiście w nocy to było.
+> You:  Mhm.
+> You:  Mhm. To jest porównanie wszystkich.
+> You:  Nie, idziemy w pierwszy.
+> You:  Mhm.
+> You:  Idziemy w pierwszy, ewentualnie jakieś późniejszy ekran podobny do tego D.
+> You:  Kurde, ale dużo tu jest programistów, to może trzeba jakiegoś dark mode'a też dorzucić.
+> You:  Dark mode'a?
+> You:  No.
+> You:  A, drag mode.
+> You:  Drag mode, tak.
+> You:  Kiedyś drag queen.
+> You:  Drag queen, no, drag queen mode.
+> You:  Boli mnie to, że nie czytam tego kodu w ogóle.
+> You:  Spoko, to mija.
+> You:  Idę sobie dolać kawy. Idzie ktoś?
+> You:  Tak, ja też. W sumie.
+> You:  Ja jestem sobie, no, no.
+> You:  Tylko trzeba wyłączyć monitor, żeby jakiś tutaj gagatek na mnie.
+> You:  Włączyć ten.
+> You:  Którego nie używamy, to ci nie będzie.
+> </pasted_content id="2214">
+
+**AI:** Przetworzyłem transkrypt wieczornego spotkania (podział pracy, wybór ekranu A, tryb trasy, czat w MVP). Nowy plik `docs/spotkania/2026-10-17-wieczor-podzial-i-ui.md`; zaktualizowane `docs/stan.md` (decyzje i otwarte kwestie) oraz `docs/todo.md` (T-66–T-68). Pominąłem sprawy prywatne z transkryptu.
+
+### 2026-10-17 12:16 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md              | 370 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>  docs/stan.md                |   4 ++
+>  docs/todo.md                |   5 +-
+>  docs/ui/propozycje/.gitkeep |   0
+>  4 files changed, 378 insertions(+), 1 deletion(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 5606f6d..61ea5c7 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1803,3 +1803,373 @@
+>  > new file: docs/ui/propozycje/html/d-odcinki.html
+>  > new file: docs/ui/propozycje/html/e-wieczor.html
+>  
+> +
+> +### 2026-10-17 11:59 · Pawel
+> +
+> +> idziemy z A ale daj 5 wariacji A
+> +
+> +
+> +### 2026-10-17 12:00 · Pawel
+> +
+> +> Przetworz: 
+> +> 
+> +> <pasted_content id="2214">
+> +> You: Dobra, to zaczynamy już, nie?
+> +> You:  Tak.
+> +> You:  Jak się dzielimy? Czyli ja się chcę z bazy danych, tak?
+> +> You:  No, powiedzmy.
+> +> You:  Nie chcesz?
+> +> You:  Nie, no mogę wziąć. Zobaczymy, co z tego wyjdzie.
+> +> You:  Dobra.
+> +> You:  W czym się czujecie najlepiej?
+> +> You:  W jakiejś łączenie API, coś, co steruje, jakieś takie łączenie backendu z API, coś w tym stylu.
+> +> You:  Okej.
+> +> You:  Coś takiego.
+> +> You:  Okej, backend?
+> +> You:  No, bardziej backend niż frontend, na pewno.
+> +> You:  Okej.
+> +> You:  W sumie to...
+> +> You:  Ale.
+> +> You:  Będą po prostu może taskami, możemy to robić.
+> +> You:  No, w sensie wydaje mi się, że jak zrobimy plan, to też łatwiej to będzie rozdzielić.
+> +> You:  No.
+> +> You:  Masz rację.
+> +> You:  Nie wiem, mogę robić jakieś rzeczy z WebScriptingiem.
+> +> You:  O, spoko, no dane.
+> +> You:  Ja mogę robić frontend, na przykład.
+> +> You:  Dobra.
+> +> You:  Myślę, że masz największe doświadczenie w frontendach.
+> +> You:  Możliwe.
+> +> You:  Masz jeszcze od tych stacków.
+> +> You:  Wiesz, jak to się nazywa?
+> +> You:  Co to ma być?
+> +> You:  Eee, nie, na razie nie. Może nic takiego ważnego.
+> +> You:  Może dane stashowe?
+> +> You:  Eee, wydaje mi się, że.
+> +> You:  Super te dane w tym stacku.
+> +> You:  Nie, ja to mam w tym.
+> +> You:  Ty masz w tym.
+> +> You:  A jak spoolowaliście repo, to macie dane te z Wikipedii?
+> +> You:  Tak.
+> +> You:  To będzie docs, bo to w docsach jest.
+> +> You:  Mam docs, no i mam regular.
+> +> You:  Historia?
+> +> You:  Historia, no.
+> +> You:  Są dane, dobra.
+> +> You:  Kercelak okopy JSON.
+> +> You:  Na jakim backforcie robicie?
+> +> You:  Medium.
+> +> You:  Ten Opus 55 jest taki dobry, że no.
+> +> You:  Ciekawe jak tam limity, zobaczymy.
+> +> You:  Bo dzisiaj w nocy się odnowiły.
+> +> You:  1% zużyte.
+> +> You:  Teraz się nie pyta.
+> +> You:  Może według docsów 0,5 i backend nie jest zdefiniowany jako że będziemy next w JS-ie?
+> +> You:  Czy chcemy to na railway?
+> +> You:  I jeżeli tak, to w jakich.
+> +> You:  A, backend. No i jak lubicie.
+> +> You:  Ja w sumie korzystam z Pythona i FastAPI, ale możemy coś w tym kontekście.
+> +> You:  Nie wiem, rekomenduję TypeScript i Chome.
+> +> You:  Chome?
+> +> You:  Chome.
+> +> You:  Weź to, co on rekomenduje, i tak on to będzie robił.
+> +> You:  To prawda.
+> +> You:  W sumie.
+> +> You:  Yolo.
+> +> You:  G1, tak?
+> +> You:  Polish docs English code, spoko.
+> +> You:  Eee, Polish docsing, no tak.
+> +> You:  Nie, ja dałeś mi write access.
+> +> You:  Na repo.
+> +> You:  No.
+> +> You:  A nie?
+> +> You:  A, może zaakceptować.
+> +> You:  To mam, dzięki.
+> +> You:  Bo w sumie robimy ją mobile native, ale z drugiej strony, jeżeli raczej na pewno będzie oglądać ją na laptopie.
+> +> You:  Więc musi działać i tu, i tu ładnie.
+> +> You:  Chociaż jak. No, w sumie tak.
+> +> You:  No.
+> +> You:  Chyba że damy na laptopie po prostu, jak wykrywa, że jest szeroki ekran, się okazuje zeskanuj kod QR na telefonie.
+> +> You:  Że pushujemy to, ale nie wiem, czy to będzie dobrze oceniane.
+> +> You:  Do zastanowienia.
+> +> You:  Możemy zrobić tak, żeby się dobrze wyświetlało na obu.
+> +> You:  Mhm.
+> +> You:  Na chyba lepiej by było.
+> +> You:  No, okej.
+> +> You:  To chyba nie problem.
+> +> You:  Zrobię sobie jednego agenta podstawy.
+> +> You:  Tak.
+> +> You:  Pod mobilną wersję stron, w drugą pod desktopową.
+> +> You:  W sumie najlepiej będzie, jak dodamy sobie hooka, żeby już nie myśleć o tym, jak agent kończy pracę od razu pushuje, i wtedy wszyscy będziemy najbardziej na bieżąco. Bo teraz się rozwarstwiliśmy, wszystkimi branchami, i już możesz coś zapisać do mózgu, później mój zapisze do mózgu, i tak dalej.
+> +> You:  Możemy zrobić hooka, który od razu robi resolve conflicts przy pushu.
+> +> You:  Spoko. No i właśnie tworzy tego te zasady, więc mogę to dodać do ich zasad, że od razu się to dodadzą wtedy.
+> +> You:  Dobra, no.
+> +> You:  Mhm, tego bym jeszcze, nie wiem, nie tworzył nowych branchy i kodu, żeby były jakieś jednolite zasady commitowania i potem udało się to merge'ować.
+> +> You:  Spoko, ja się wiesz co spuszczę.
+> +> You:  No właśnie.
+> +> You:  Właśnie nic.
+> +> You:  Ale spoko, cloud sobie z tym poradzi.
+> +> You:  Dobra, moje dwa commity rozespała 40.
+> +> You:  Crazy potencjał.
+> +> You:  I się zadawał w którejś z tych commitów, sam robił.
+> +> You:  Serio, ja nawet nie wiem, jak się commituje.
+> +> You:  W sumie mamy z tym repo.
+> +> You:  Nie, to jest chore naprawdę, chore.
+> +> You:  Ja samemu robię teraz projekty za pół miliona złotych, które to jest niesamowity progres. I to w rok.
+> +> You:  Jeszcze jak sobie przypomnę, jak rok temu się to robiło, to jeszcze czytałem kod rok temu, a teraz?
+> +> You:  Napisz jeszcze jakiś, znaczy mówisz cloudowi, żeby pisał jakieś testy do tego?
+> +> You:  No tak.
+> +> You:  Nie że tak. Jest robi też.
+> +> You:  Nie musisz mi mówić.
+> +> You:  Robi też pen testy, ma dostęp do mojego AWS-a, więc wszystkie cloud watche i tak dalej. Jeszcze nie miałem sytuacji, że coś się.
+> +> You:  Aczkolwiek miałem niefajną sytuację ostatnio, bo miałem defaultowo ustawione klucz na AWS-ie, na pracę, a tworzyłem tą galerię zdjęć ślubnych, i stworzyłem klucz tam, tylko Claude nie zrobił profile praca, ten, w sensie mój prywatny, więc zrobił klucz na AWS.
+> +> You:  Firmy, i ktoś przejął ten klucz, jakiś Hindus, Singapur i ten, z tej z mojej strony ślubnej, i próbował wywołać bedrock instancję i tak dalej, a tam wydaje mi się, że tam jest w chuj wysoko ustawiony limit, kosztów, więc gdybym, gdyby nie były dobrze ustawione te permissions na AWS-ie, to by zeszły dziesiątki tysięcy dolarów z tego konta.
+> +> You:  Na szczęście miał tylko dostęp do jednego mojego bucketu S3, ale gdybym miał na przykład administrator access, po ptokach by już było po mnie.
+> +> You:  Więc teraz dodałem do Claude MD bardzo szczegółową instrukcję, że ma nie robić tak.
+> +> You:  I ma rozpoznawać, który jest profil na AWS-ie.
+> +> You:  A co według mnie dodajecie klucze do repo?
+> +> You:  Eee, nie wiem, nie czytałem repo.
+> +> You:  Do sprawdzenia na miejscu w sobotę. Zrób zdjęcia.
+> +> You:  Tablica Stanisław Konrad, nie wiadomo kim był.
+> +> You:  To jest w naszym repo.
+> +> You:  Tak, czyli można tego commita zrobić.
+> +> You:  Musimy też dzisiaj sprawdzić, co stało na działce, ale ja solidarności 171.
+> +> You:  1944 rokiem.
+> +> You:  Koniecznie.
+> +> You:  Może nie robimy niczego innego, dopóki tego nie wyjaśnimy.
+> +> You:  Musimy zdjęcia zrobić koniecznie.
+> +> You:  Normalnie nie używam ultra think, ale tutaj są duże wymagania, więc będę używał.
+> +> You:  Działa ci to, że masz po prostu w MD napisane, że ma nie przypisywać autorstwa?
+> +> You:  Nie przypisywać autorstwa?
+> +> You:  W jaki sposób? W commitach, tak?
+> +> You:  Że co-author to Claude.
+> +> You:  A, żeby nie było tak? No, działa mi.
+> +> You:  Działa mi.
+> +> You:  Ile runlaps ma polski, jak coś?
+> +> You:  Mhm.
+> +> You:  Super.
+> +> You:  O, właśnie, głosem się trzeba będzie zająć później.
+> +> You:  A czy robimy to, że my też możemy do niej mówić, czy nie?
+> +> You:  Że na przykład ona coś mówi, a mikrofon? Chyba taki bonus, nie?
+> +> You:  No.
+> +> You:  Dałem wypisie, nie przyda.
+> +> You:  No bo ty chyba i też trochę taka ingerencja w prywatność.
+> +> You:  Before you commit, commit sudo. Ja się jakiś pushing the same shared files.
+> +> You:  Mhm.
+> +> You:  Niech coś nam zamówi.
+> +> You:  Albo wy nie jedliście śniadania?
+> +> You:  No.
+> +> You:  A ty, Jasiek?
+> +> You:  Nie, jadłem.
+> +> You:  No.
+> +> You:  No i co, Paweł mówi, że te same projekty za pół miliona robisz, to ty też same robisz, nie?
+> +> You:  No.
+> +> You:  Ale to za pół miliona to nie za 4 tysiące.
+> +> You:  No nie, no to jest chore, chore to jest w tym momencie.
+> +> You:  Ale dobrze, to w takim razie na jakim etapie teraz jesteśmy?
+> +> You:  Na jakimś pushing te zasady?
+> +> You:  Ja myślę, że potem na tego podstawie możemy pracować.
+> +> You:  Żeby ładnie to rozdzielać.
+> +> You:  Ale fajnie, że tu nie ma drużyny.
+> +> You:  Że nie przyszli, bo by było głośno, nie? I transkrypt by też ich wysłuchał.
+> +> You:  Eee, to był chyba map Tyler, ta, ta mapa.
+> +> You:  Tak mi się wydaje.
+> +> You:  Zobaczmy.
+> +> You:  Nie, nie, to nie był map Tyler.
+> +> You:  Ale map Tyler też jest ładny.
+> +> You:  Map Box to było.
+> +> You:  Spoko jest, no. I on jest za darmo.
+> +> You:  I nawet SpaceX z niego korzysta.
+> +> You:  Eee, czy ktoś już z was zrobił jakiś szkielet kodu? Czy na razie nie?
+> +> You:  Mhm.
+> +> You:  Dobra.
+> +> You:  To ja zrobię taki— Ale to jak pushniesz stack, nie?
+> +> You:  Nie.
+> +> You:  Ale tak jak se myślę, w sumie fajnie, jakbyś dorobił z tego tych zasad pracy.
+> +> You:  Że jednak każdy będzie rozpoznawał, kto jest kim. Że jak ty pushniesz— Tak, tak?
+> +> You:  No.
+> +> You:  Że jak pushniesz, to powiesz, że to jest twój commit.
+> +> You:  I okej, w logach, dobra.
+> +> You:  Tak działa Git.
+> +> You:  Nie, w sensie, że w kontekście będzie, nie?
+> +> You:  No.
+> +> You:  Chcemy mieć.
+> +> You:  Dobra, to zajmij się.
+> +> You:  Dobra, to zasady pracy i plan.
+> +> You:  Co, Paweł, robisz teraz z tego strukturę, czy—
+> +> You:  Eee, teraz, teraz UI robię.
+> +> You:  Dobra.
+> +> You:  Ale w sensie szkielet? Czy— A, możesz, możesz zrobić szkielet już.
+> +> You:  I monorepo, czy—
+> +> You:  Kod, tak.
+> +> You:  Okej.
+> +> You:  Nie płacz, Antek, wszystko będzie dobrze.
+> +> You:  To jest taki polirepo.
+> +> You:  Aha, no właśnie, tak. Ale wiesz, to się da zobaczyć, to się zobaczy.
+> +> You:  Dopiero przy pracy?
+> +> You:  Dobra.
+> +> You:  Poproszę o rewizję, rewizję układu głównego.
+> +> You:  UI?
+> +> You:  Pierwsza propozycja.
+> +> You:  Strasznie śniadaniem będziemy jeść gotowe.
+> +> You:  Śmieję się, śmieję się.
+> +> You:  To jest tak, że to już jest zrobione.
+> +> You:  Eee, czyli to, to co mówiłeś, Jasiek, że ze sliderem?
+> +> You:  No.
+> +> You:  I—
+> +> You:  Zajebiste, idealnie uchwycił.
+> +> You:  Nie, to, to jest dziwne moim zdaniem, to nie pasuje.
+> +> You:  Ale spoko, że są jakieś lokalizacje obok.
+> +> You:  Nie, spoko jest, ile masz dziś czasu.
+> +> You:  I możesz zapytać Savę, no właśnie nie wiem, czy to też—
+> +> You:  Tylko trochę mniejsze może, żeby większe była, a mapka.
+> +> You:  Mhm.
+> +> You:  Chociaż to i tak jest małe ikonki autobusów i tramwajów na tej mapie.
+> +> You:  Tak, o, fajne było w czasie rzeczywistym.
+> +> You:  No.
+> +> You:  Zapisz to.
+> +> You:  I żeby były smooth, jeszcze to się przemieszczały.
+> +> You:  Mhm.
+> +> You:  O, fajnie.
+> +> You:  To właśnie pokazuję miejsca z historią, na przykład.
+> +> You:  A, no.
+> +> You:  Ile masz czasu na przejażdżkę?
+> +> You:  Czasu.
+> +> You:  Fajne.
+> +> You:  Nie, to, ale to takie dwie przesiadki, bo to też może być.
+> +> You:  Nie wiem, czy to może być tak, że wy chcecie gdzieś pojechać, na przykład jedziecie i wiecie, że jedziecie w jakieś miejsce, gdzieś, i używacie z tego zamiast "jak dojadę" trochę.
+> +> You:  Czyli nie robimy tego.
+> +> You:  Mhm.
+> +> You:  Nie wiem.
+> +> You:  No.
+> +> You:  Żeby po prostu—
+> +> You:  No nie wiem, właśnie.
+> +> You:  Że nie, że skupiamy się stricte na tym, żeby was oprowadził, tak?
+> +> You:  No.
+

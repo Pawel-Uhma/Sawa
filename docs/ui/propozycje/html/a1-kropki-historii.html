@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>A1 · Kropki historii</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_a.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .licznik { position: absolute; top: 110px; left: 16px; z-index: 20; height: 36px; border-radius: 18px;
+    padding: 0 14px 0 8px; display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 700; white-space: nowrap; }
+  .licznik b { width: 20px; height: 20px; border-radius: 50%; background: var(--koral); border: 3px solid #fff; box-shadow: 0 0 0 1px rgba(242,117,95,.4); }
+  .licznik span { color: var(--tekst-2); font-weight: 500; }
+  .zajawka { position: absolute; left: 16px; right: 16px; top: 352px; z-index: 20; border-radius: 18px; padding: 10px 12px;
+    display: flex; gap: 10px; align-items: center; }
+  .zajawka .ikona { width: 40px; height: 40px; border-radius: 12px; background: var(--koral); flex: none; display: grid; place-items: center; }
+  .zajawka strong { font-size: 14px; display: block; letter-spacing: -.01em; }
+  .zajawka span { font-size: 12.5px; color: var(--tekst-2); }
+  .zajawka em { margin-left: auto; font-style: normal; font-size: 12px; font-weight: 700; color: var(--glebia); white-space: nowrap; }
+</style></head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora">
+    <div class="logo szklo">sawa<i>.</i></div>
+    <div class="pill szklo pogoda">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4C6462" stroke-width="2" stroke-linecap="round"><path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7Z"/></svg>
+      12° <span>Wola</span>
+    </div>
+  </div>
+  <div class="licznik szklo"><b></b>326 historii <span>w promieniu 1 km</span></div>
+
+  <div class="zajawka szklo">
+    <div class="ikona"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16l-1.5 9h-13L4 10Z"/><path d="M8 10l4-6 4 6"/></svg></div>
+    <div><strong>Kercelak</strong><span>Bazar, na którym kupowało się wszystko</span></div>
+    <em>120 m</em>
+  </div>
+
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <div class="powitanie">
+      <img class="awatar" src="../../../pitch/img/ikona-sawa.jpg">
+      <div><h1>Ile masz dziś czasu?</h1>
+        <p>Ułożę przejazd tramwajem i autobusem i opowiem, co mijasz za oknem.</p></div>
+    </div>
+    <div class="czas"><span class="etykieta">Przejażdżka</span><strong>1 h 30 min</strong></div>
+    <div class="suwak"><div class="tor"><i></i></div><div class="galka"></div></div>
+    <div class="skala"><span>30 min</span><span>1 h</span><span>2 h</span><span>3 h</span><span>4 h+</span></div>
+    <div class="tematy">
+      <span class="chip wybrany">Powstanie ’44</span><span class="chip wybrany">Dawne kina</span><span class="chip wybrany">Bazary</span>
+      <span class="chip" style="width:34px;padding:0;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4C6462" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+    </div>
+    <div class="dol">
+      <div class="przycisk">Wyznacz trasę <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="nastepny">Najbliżej: <b>26</b> z przystanku Okopowa za 3 min</div>
+    </div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script>
+<script>sawaMapa('mapa', { zoom: 14, center: nad(JA, 150, 14), miejsca: true, miejscaR: 3.5 });</script>
+</body></html>

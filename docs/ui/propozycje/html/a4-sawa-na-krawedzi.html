@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>A4 · Sawa na krawędzi</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_a.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .arkusz { top: 452px; padding-top: 18px; }
+  .sawa { position: absolute; left: 6px; top: 300px; width: 150px; z-index: 25; filter: drop-shadow(0 10px 14px rgba(16,43,42,.22)); }
+  .dymek { position: absolute; left: 150px; right: 16px; top: 352px; z-index: 26; padding: 12px 15px; border-radius: 20px 20px 20px 6px;
+    font-size: 15px; line-height: 1.38; }
+  .dymek strong { display: block; font-size: 19px; letter-spacing: -.02em; font-weight: 800; }
+  .dymek span { color: var(--tekst-2); font-size: 13px; }
+  .czas { margin-top: 26px; }
+  .zapytaj { top: 300px; }
+</style></head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora">
+    <div class="logo szklo">sawa<i>.</i></div>
+    <div class="pill szklo pogoda">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4C6462" stroke-width="2" stroke-linecap="round"><path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7Z"/></svg>
+      12° <span>Wola</span>
+    </div>
+  </div>
+
+  <img class="sawa" src="../../../pitch/img/sawa-32.png">
+  <div class="dymek szklo"><strong>Ile masz dziś czasu?</strong><span>Ułożę przejazd i opowiem, co mijasz za oknem.</span></div>
+
+  <div class="arkusz">
+    <div class="czas"><span class="etykieta">Przejażdżka</span><strong>1 h 30 min</strong></div>
+    <div class="suwak"><div class="tor"><i></i></div><div class="galka"></div></div>
+    <div class="skala"><span>30 min</span><span>1 h</span><span>2 h</span><span>3 h</span><span>4 h+</span></div>
+    <div class="tematy">
+      <span class="chip wybrany">Powstanie ’44</span><span class="chip wybrany">Dawne kina</span><span class="chip wybrany">Bazary</span>
+      <span class="chip" style="width:34px;padding:0;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4C6462" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+    </div>
+    <div class="dol">
+      <div class="przycisk">Wyznacz trasę <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="nastepny">Najbliżej: <b>26</b> z przystanku Okopowa za 3 min</div>
+    </div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script>
+<script>
+  sawaMapa('mapa', { zoom: 14, center: nad(JA, 190, 14), pins: [
+    { c: [20.98019, 52.23702], n: 'Kercelak' }, { c: [20.97306, 52.23944], n: 'Cmentarz kalwiński' } ] });
+</script>
+</body></html>

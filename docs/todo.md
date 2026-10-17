@@ -1,6 +1,6 @@
 # Todo zespołu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 11:30
+**Ostatnia aktualizacja:** 17.10.2026, wieczór (podsumowanie w spotkania/2026-10-17-wieczor-podzial-i-ui.md)
 
 **Źródło prawdy dla zadań.** Każdy agent i każda osoba czyta tę listę przed pracą i aktualizuje ją po pracy.
 
@@ -43,6 +43,8 @@
 ## R3 · Frontend i mapa
 
 - [ ] **T-30** Mapa Mapbox z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00
+- [ ] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — po T-30
+- [ ] **T-67** Wersja desktopowa (ten sam UI na szerokim ekranie) — `R3` — po T-35
 - [ ] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — 17:00
 - [ ] **T-32** Slider czasu (30 min – 4 h) i przycisk „generuj” — `R3` — 17:00
 - [ ] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — 22:00
@@ -70,6 +72,7 @@
 
 ## Wszyscy · końcówka
 
+- [ ] **T-68** Sprawdzić repo pod kątem kluczy API i tokenów przed pierwszym pushem — `Wszyscy` — przed pushem
 - [ ] **T-61** Zamrożenie zmian w kodzie, tylko poprawki błędów — `Wszyscy` — niedziela 09:00
 
 ## Zrobione
