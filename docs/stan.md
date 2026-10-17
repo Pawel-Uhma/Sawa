@@ -2,6 +2,8 @@
 
 **Ostatnia aktualizacja:** 17.10.2026, ok. 19:40 (Szczepan, z agentem)
 
+- 16:45 (Paweł, z agentem R3): pojazdy na mapie (T-100, issue #30) w gałęzi `r3/pojazdy-na-zywo`: hook co 10 s, ikony tramwaju i autobusu z `public/icons/`, płynny ruch w `requestAnimationFrame`. Typecheck, lint i testy zielone; zmergowane do `main` (PR, typecheck, lint i testy zielone). Do sprawdzenia na mapie z `WAW_TOKEN`.
+
 ## Teraz
 
 - R1 (Szczepan, 19:40): czasy na żywo (T-108): odjazd z rozkładu ZTM dla każdego odcinka i opóźnienie pierwszego pojazdu z pozycji (`Leg.delaySec`); trasa z danymi miasta ma ich podpis (T-95); `/health` mówi, czy graf GTFS jest na dziś (w niedzielę rano przebudować, T-18). Słabe punkty planera (T-109): bez dobijania czasu czekaniem, przesiadki pieszo do 300 m. Odcinki po ulicach zostają z T-106 Jaśka. **Produkcja:** `WAW_TOKEN` jest, ale zapytania do API miasta z Railway padają (szczegóły w T-17). **Dla R3:** issues #43 (T-110) i #44 (T-111).
