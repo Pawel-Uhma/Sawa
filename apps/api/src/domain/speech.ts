@@ -1,4 +1,5 @@
 import { spellYears } from "./spoken-years";
+import { cleanForSpeech } from "./story";
 
 /** Synthesized speech ready to send to the client. */
 export type SpeechAudio = {
@@ -20,18 +21,27 @@ const FIRST_CHUNK_CHARS = 40;
 const NEXT_CHUNK_CHARS = 160;
 
 /**
+ * One piece of a story for TTS: `display` as the screen shows it (`cleanForSpeech`, so the
+ * pieces' words add up to the story's words), `spoken` as the voice gets it.
+ */
+export type SpeechChunk = { display: string; spoken: string };
+
+/**
  * Cuts text arriving in pieces into whole sentences for TTS: never mid-sentence, and only once a
  * chunk is long enough. `flush` returns what is left when the text ends.
  */
 export function createSentenceChunker() {
   let buffer = "";
   let first = true;
-  const clean = (text: string) => normalizeSpeechText(text.replace(/[*_#`]/g, ""));
+  const clean = (text: string): SpeechChunk | null => {
+    const display = cleanForSpeech(text);
+    return display ? { display, spoken: normalizeSpeechText(display) } : null;
+  };
 
   return {
-    push(text: string): string[] {
+    push(text: string): SpeechChunk[] {
       buffer += text;
-      const chunks: string[] = [];
+      const chunks: SpeechChunk[] = [];
       while (true) {
         const min = first ? FIRST_CHUNK_CHARS : NEXT_CHUNK_CHARS;
         const ends = /[.!?…]+["”»]?\s+/g;
@@ -51,10 +61,10 @@ export function createSentenceChunker() {
       }
       return chunks;
     },
-    flush(): string | null {
+    flush(): SpeechChunk | null {
       const rest = clean(buffer);
       buffer = "";
-      return rest || null;
+      return rest;
     },
   };
 }

@@ -137,7 +137,7 @@ export function spellYears(text: string): string {
       return day >= 1 && day <= 31 ? `${ordinalPl(day, "gen")} ${month}` : all;
     })
     .replace(
-      /(?:(?<!\p{L})(\p{L}+) )?\b(\d{3,4})\b(?=(?: (rok|roku|rokiem)\b)?)/gu,
+      /(?:(?<!\p{L})(\p{L}+) )?(?<!\p{N}[,.])\b(\d{3,4})\b(?=(?: (rok|roku|rokiem)\b)?)/gu,
       (
         all: string,
         prep: string | undefined,

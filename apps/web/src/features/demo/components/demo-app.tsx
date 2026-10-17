@@ -25,6 +25,7 @@ import { useGpsClockSync } from "../lib/ride-sync";
 import { screenCamera } from "../lib/screen-camera";
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
+import { claimVoice, ROUTE_VOICE } from "../lib/voice";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
@@ -352,6 +353,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const playStop = useCallback(
     (index: number) => {
       if (index < 0 || index >= route.length) return;
+      // Wybór punktu to „opowiadaj o trasie”, więc ucisza dygresję z karty miejsca.
+      claimVoice(ROUTE_VOICE);
       rewind();
       setHeld(false);
       setIsPlaying(true);

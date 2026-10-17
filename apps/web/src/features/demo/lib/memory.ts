@@ -72,6 +72,13 @@ export function heardCounts(memory: Memory): Record<string, number> {
   );
 }
 
+/** Opowiedziane miejsca od najnowszego (lista „co już opowiedziała”). */
+export function toldNewestFirst(memory: Memory): Array<PlaceMemory & { id: string }> {
+  return Object.entries(memory.places)
+    .map(([id, place]) => ({ id, ...place }))
+    .sort((a, b) => b.at - a.at);
+}
+
 function subscribe(listener: () => void) {
   listeners.add(listener);
   return () => listeners.delete(listener);

@@ -10,6 +10,7 @@ import type { MockStop } from "../lib/mock-data";
 import { backTarget } from "../lib/podcast";
 import { dueIndex as placeAt, type RideClock, storyStartSec } from "../lib/ride-clock";
 import type { StoryPlayer } from "../lib/story-player";
+import { claimVoice, ROUTE_VOICE } from "../lib/voice";
 import { RoutesIcon } from "./icons";
 import { PodcastDock, PodcastHeader, usePodcast } from "./podcast-controls";
 import { RouteLive } from "./route-live";
@@ -88,6 +89,7 @@ export function RouteSheet(props: RouteSheetProps) {
       seekTo(sec);
       const index = placeAt(stops, sec);
       if (index === activeIndex) return;
+      claimVoice(ROUTE_VOICE);
       rewind();
       setIsPlaying(true);
       onActiveChange(index);

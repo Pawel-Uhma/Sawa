@@ -7,6 +7,7 @@ import type { Listener } from "./api-data";
 import { getMemory, HEARD_AT_PROGRESS, rememberStory } from "./memory";
 import type { MockStop } from "./mock-data";
 import { etaSecOf } from "./ride-clock";
+import { claimVoice, isAside, ROUTE_VOICE, useVoiceOwner } from "./voice";
 
 /**
  * Sawa's voice reads about 17 characters a second (measured with whisper on three stories, 17.10).
@@ -253,6 +254,10 @@ export function useStoryPlayer(
   const [startFailed, setStartFailed] = useState(false);
   const [voiceFailed, setVoiceFailed] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
+  // Dygresja (opowieść z karty miejsca) ucisza trasę, ale nie zmienia zamiaru słuchania:
+  // po jej końcu trasa wraca sama.
+  const aside = isAside(useVoiceOwner());
+  const speaking = isPlaying && !aside;
   const [progress, setProgress] = useState(0);
   const live = useLiveText(clip);
   const failed = startFailed || live.failed;
@@ -262,8 +267,8 @@ export function useStoryPlayer(
   // Efekty audio czytają bieżący stan bez ponownego uruchamiania przejścia.
   const clipRef = useRef<Clip | null>(null);
   clipRef.current = clip;
-  const isPlayingRef = useRef(isPlaying);
-  isPlayingRef.current = isPlaying;
+  const speakingRef = useRef(speaking);
+  speakingRef.current = speaking;
   const fadeToken = useRef(0);
 
   useEffect(() => {
@@ -322,6 +327,7 @@ export function useStoryPlayer(
     const stop = stops[activeIndex];
     if (!stop || !clip || !live.told) return;
     rememberStory(live.told);
+    claimVoice(ROUTE_VOICE);
     cache.current.delete(clipKey(stop.id, listener, targetSecFor(stops, activeIndex)));
     setClip(null);
     setStartFailed(false);
@@ -361,7 +367,7 @@ export function useStoryPlayer(
       fadeToken.current++;
       audio.volume = 0;
       audio.src = clip.audioUrl;
-      if (!isPlayingRef.current) {
+      if (!speakingRef.current) {
         audio.volume = 1;
         return;
       }
@@ -384,14 +390,29 @@ export function useStoryPlayer(
     const audio = audioRef.current;
     // Przed wczytaniem klipu gra nim efekt przejścia wyżej.
     if (!audio || !hasVoice || !isLoaded(audio, clip)) return;
+    if (!speaking) {
+      // Dygresja wchodzi na wyciszaną trasę, pauza użytkownika zatrzymuje od razu.
+      if (!aside || audio.paused) audio.pause();
+      else
+        fadeVolume(audio, 0, FADE_OUT_MS, fadeToken).then(
+          () => !speakingRef.current && audio.pause(),
+        );
+      return;
+    }
     // The browser blocks sound before the first tap; the play button then starts it.
-    if (isPlaying) audio.play().catch(() => setIsPlaying(false));
-    else audio.pause();
-  }, [isPlaying, hasVoice, clip]);
+    // Po dygresji trasa wraca łagodnie, tam gdzie przerwała.
+    const fadeIn = audio.volume < 1;
+    audio
+      .play()
+      .then(() => {
+        if (fadeIn) return fadeVolume(audio, 1, FADE_IN_MS, fadeToken);
+      })
+      .catch(() => setIsPlaying(false));
+  }, [speaking, aside, hasVoice, clip]);
 
   // Progress in animation frames, so the bar moves smoothly
   useEffect(() => {
-    if (!isPlaying || (!clip && !failed)) return;
+    if (!speaking || (!clip && !failed)) return;
     const audio = audioRef.current;
     // Without the voice the timer waits for the whole text, which says how long to wait.
     if (!hasVoice && !failed && !live.done) return;
@@ -411,7 +432,7 @@ export function useStoryPlayer(
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [isPlaying, clip, failed, hasVoice, live]);
+  }, [speaking, clip, failed, hasVoice, live]);
 
   useRememberHeard(clip?.id, live.told, progress);
 
@@ -419,6 +440,18 @@ export function useStoryPlayer(
     const audio = audioRef.current;
     const restart = progress >= 100;
     if (restart) setProgress(0);
+    // W trakcie dygresji odtwarzanie znaczy „wróć do trasy”: dygresja cichnie, trasa gra dalej.
+    if (aside) {
+      claimVoice(ROUTE_VOICE);
+      if (audio && hasVoice && isLoaded(audio, clip)) {
+        fadeToken.current++;
+        audio.volume = 1;
+        if (restart) audio.currentTime = 0;
+        audio.play().catch(() => setIsPlaying(false));
+      }
+      setIsPlaying(true);
+      return;
+    }
     if (!isPlaying && audio && hasVoice && isLoaded(audio, clip)) {
       fadeToken.current++;
       audio.volume = 1;
@@ -427,13 +460,14 @@ export function useStoryPlayer(
       audio.play().catch(() => setIsPlaying(false));
     }
     setIsPlaying(!isPlaying);
-  }, [isPlaying, progress, hasVoice, clip]);
+  }, [isPlaying, aside, progress, hasVoice, clip]);
 
   /** Bieżąca opowieść od początku; `keepPlaying: false` to „stop” (pauza na początku). */
   const restart = useCallback(
     (keepPlaying: boolean) => {
       const audio = audioRef.current;
       setProgress(0);
+      if (keepPlaying) claimVoice(ROUTE_VOICE);
       if (audio && isLoaded(audio, clip)) {
         fadeToken.current++;
         audio.volume = 1;
@@ -450,7 +484,8 @@ export function useStoryPlayer(
     text: live.text,
     loading: !failed && live.text === null,
     failed,
-    isPlaying,
+    /** Czy Sawa mówi teraz o trasie; w trakcie dygresji `false`, choć trasa wróci sama. */
+    isPlaying: speaking,
     setIsPlaying,
     progress,
     /** Zeruje postęp w tym samym renderze co zmiana punktu, żeby koniec opowieści nie przeskoczył dwóch. */
