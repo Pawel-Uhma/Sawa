@@ -1675,3 +1675,131 @@
 > +- [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, mapbox-gl, pierwszy push — `R3` — 13:00
 >  - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity,
 
+
+**AI:** 5 makiet ekranu głównego (A: arkusz na mapie, B: zasięg historii, C: rozmowa z Sawą, D: trasy jak odcinki, E: wieczór) w HTML (`docs/ui/propozycje/html/`), zrzuty mobile 3x i zestawienie w `docs/ui/propozycje/`, dziennik w `docs/ui/README.md`. Marka z `awatar/README.md`, punkty z `historia/sawa-historia.geojson`. Wybór wariantu czeka na zespół.
+
+### 2026-10-17 11:54 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md                                                   |   2 ++
+>  docs/ui/README.md                                                |  10 ++++++++++
+>  docs/ui/propozycje/1150-ekran-glowny-00-zestawienie.jpg          | Bin 351676 -> 352227 bytes
+>  docs/ui/propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png | Bin 850227 -> 851055 bytes
+>  docs/ui/propozycje/html/_mapa.js                                 |   6 ++++--
+>  docs/ui/propozycje/html/a-arkusz-na-mapie.html                   |   5 +++--
+>  6 files changed, 19 insertions(+), 4 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 7c10ae4..46ef28e 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1675,3 +1675,5 @@
+>  > +- [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, mapbox-gl, pierwszy push — `R3` — 13:00
+>  >  - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity,
+>  
+> +
+> +**AI:** 5 makiet ekranu głównego (A: arkusz na mapie, B: zasięg historii, C: rozmowa z Sawą, D: trasy jak odcinki, E: wieczór) w HTML (`docs/ui/propozycje/html/`), zrzuty mobile 3x i zestawienie w `docs/ui/propozycje/`, dziennik w `docs/ui/README.md`. Marka z `awatar/README.md`, punkty z `historia/sawa-historia.geojson`. Wybór wariantu czeka na zespół.
+> diff --git a/docs/ui/README.md b/docs/ui/README.md
+> index 173443c..d88fe19 100644
+> --- a/docs/ui/README.md
+> +++ b/docs/ui/README.md
+> @@ -21,3 +21,13 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
+>  
+>  | Plik | Co pokazuje | Zadanie | Decyzja |
+>  |---|---|---|---|
+> +| [1150-ekran-glowny-00-zestawienie.jpg](propozycje/1150-ekran-glowny-00-zestawienie.jpg) | 5 propozycji ekranu głównego obok siebie | ekran główny | czeka na wybór |
+> +| [1150-…-a-arkusz-na-mapie](propozycje/1150-ekran-glowny-a-arkusz-na-mapie-mobile.png) | A: mapa na cały ekran, szklany arkusz z pytaniem Sawy, suwak 30 min–4 h+, tematy, „Wyznacz trasę”. Najbliżej Apple Maps, najbezpieczniejsza | ekran główny | |
+> +| [1150-…-b-zasieg-historii](propozycje/1150-ekran-glowny-b-zasieg-historii-mobile.png) | B: krąg zasięgu z 326 prawdziwymi punktami z `historia/`, linijka czasu przewijana palcem, statystyki trasy | ekran główny | |
+> +| [1150-…-c-rozmowa-z-sawa](propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png) | C: Sawa w całej postaci pyta w czacie, odpowiedzi jednym dotknięciem, mapa w dymku, mikrofon. Łączy ekran główny z zakładką czatu | ekran główny | |
+> +| [1150-…-d-przejazdzki-jak-odcinki](propozycje/1150-ekran-glowny-d-przejazdzki-jak-odcinki-mobile.png) | D: gotowe trasy jak odcinki podcastu (mapa trasy, linie ZTM, zajawka opowieści), przełącznik czasu, pasek zakładek | ekran główny | |
+> +| [1150-…-e-wieczor](propozycje/1150-ekran-glowny-e-wieczor-mobile.png) | E: tryb ciemny, mapa z punktami historii, wybór czasu kółkami jak w minutniku iOS, koralowe „Jedziemy” | ekran główny | |
+> +
+> +## Źródła makiet
+> +
+> +HTML makiet jest w `propozycje/html/` (otwórz w przeglądarce w widoku 390 × 844). Marka z [awatar/README.md](../awatar/README.md): Głębia `#17706F`, Mięta `#8ED1B5`, Koral `#F2755F`, Plus Jakarta Sans, logo „sawa.” we Fredoce. Mapa: OpenFreeMap przekolorowany na barwy Sawy. Trasy w D to przybliżenie po ulicach (OSRM), a nie prawdziwe linie ZTM. Numery linii i godziny odjazdów są przykładowe.
+> diff --git a/docs/ui/propozycje/1150-ekran-glowny-00-zestawienie.jpg b/docs/ui/propozycje/1150-ekran-glowny-00-zestawienie.jpg
+> index 347cc63..6a64ba0 100644
+> Binary files a/docs/ui/propozycje/1150-ekran-glowny-00-zestawienie.jpg and b/docs/ui/propozycje/1150-ekran-glowny-00-zestawienie.jpg differ
+> diff --git a/docs/ui/propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png b/docs/ui/propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png
+> index c4f5237..d4ab305 100644
+> Binary files a/docs/ui/propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png and b/docs/ui/propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png differ
+> diff --git a/docs/ui/propozycje/html/_mapa.js b/docs/ui/propozycje/html/_mapa.js
+> index 2cf51ed..15208f4 100644
+> --- a/docs/ui/propozycje/html/_mapa.js
+> +++ b/docs/ui/propozycje/html/_mapa.js
+> @@ -27,7 +27,7 @@ function przekoloruj(m, noc) {
+>      else if (id.includes('minor') || id.includes('path')) set('line-color', k.drogaMala);
+>      else if (id.startsWith('highway') || id.startsWith('tunnel')) set('line-color', k.droga);
+>      else if (id.startsWith('railway')) set('line-color', id.includes('dash') ? k.tlo : k.tory);
+> -    else if (id.startsWith('boundary')) m.setLayoutProperty(id, 'visibility', 'none');
+> +    else if (id.startsWith('boundary') || id.startsWith('label_city') || id.startsWith('label_country') || id === 'label_state') m.setLayoutProperty(id, 'visibility', 'none');
+>      else if (t === 'symbol') { set('text-color', k.tekst); set('text-halo-color', k.halo); }
+>    }
+>  }
+> @@ -39,7 +39,7 @@ function granice(c) {
+>  
+>  // Środek mapy przesunięty tak, żeby punkt wypadł dy pikseli nad środkiem ekranu
+>  function nad(punkt, dy, zoom) {
+> -  const mNaPx = 156543.03 * Math.cos(punkt[1] * Math.PI / 180) / Math.pow(2, zoom);
+> +  const mNaPx = 78271.52 * Math.cos(punkt[1] * Math.PI / 180) / Math.pow(2, zoom);
+>    return [punkt[0], punkt[1] - (dy * mNaPx) / 111200];
+>  }
+>  
+> @@ -60,6 +60,8 @@ function sawaMapa(el, o = {}) {
+>      ...(o.dopasuj ? { bounds: granice(SAWA[o.trasa]), fitBoundsOptions: { padding: o.dopasuj } } : {}), bearing: o.bearing || 0, pitch: o.pitch || 0,
+>      attributionControl: false, interactive: false, preserveDrawingBuffer: true, fadeDuration: 0,
+>    });
+> +  window.MAPY = (window.MAPY || 0) + 1;
+> +  m.once('load', () => m.once('idle', () => { window.GOTOWE = (window.GOTOWE || 0) + 1; }));
+>    m.on('load', () => {
+>      przekoloruj(m, o.noc);
+>      if (o.zasiegKm) {
+> diff --git a/docs/ui/propozycje/html/a-arkusz-na-mapie.html b/docs/ui/propozycje/html/a-arkusz-na-mapie.html
+> index 1585677..edd0ac6 100644
+> --- a/docs/ui/propozycje/html/a-arkusz-na-mapie.html
+> +++ b/docs/ui/propozycje/html/a-arkusz-na-mapie.html
+> @@ -40,6 +40,7 @@
+>  </style></head>
+>  <body><div class="telefon">
+>    <div class="mapa" id="mapa"></div>
+> +  <div class="mgla"></div>
+>    <div class="status"></div>
+>  
+>    <div class="gora">
+> @@ -70,7 +71,7 @@
+>        <span class="chip wybrany">Powstanie ’44</span>
+>        <span class="chip wybrany">Dawne kina</span>
+>        <span class="chip wybrany">Bazary</span>
+> -      <span class="chip">+ zmień</span>
+> +      <span class="chip" style="width:34px;padding:0;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4C6462" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+>      </div>
+>  
+>      <div class="dol">
+> @@ -84,7 +85,7 @@
+>  </div>
+>  <script src="_ui.js"></script>
+>  <script>
+> -  sawaMapa('mapa', { zoom: 14.8, center: nad(JA, 160, 14.8), pins: [
+> +  sawaMapa('mapa', { zoom: 14, center: nad(JA, 160, 14), pins: [
+>      { c: [20.98019, 52.23702], n: 'Kercelak' },
+>      { c: [20.97306, 52.23944], n: 'Cmentarz kalwiński' },
+>      { c: [20.97213, 52.23268], n: 'Zajezdnia Wola' },
+> new file: docs/ui/propozycje/1150-ekran-glowny-a-arkusz-na-mapie-mobile.png
+> new file: docs/ui/propozycje/1150-ekran-glowny-b-zasieg-historii-mobile.png
+> new file: docs/ui/propozycje/1150-ekran-glowny-d-przejazdzki-jak-odcinki-mobile.png
+> new file: docs/ui/propozycje/1150-ekran-glowny-e-wieczor-mobile.png
+> new file: docs/ui/propozycje/html/_dane.js
+> new file: docs/ui/propozycje/html/_wspolne.css
+> new file: docs/ui/propozycje/html/d-odcinki.html
+> new file: docs/ui/propozycje/html/e-wieczor.html
+

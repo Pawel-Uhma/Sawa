@@ -27,7 +27,7 @@ function przekoloruj(m, noc) {
     else if (id.includes('minor') || id.includes('path')) set('line-color', k.drogaMala);
     else if (id.startsWith('highway') || id.startsWith('tunnel')) set('line-color', k.droga);
     else if (id.startsWith('railway')) set('line-color', id.includes('dash') ? k.tlo : k.tory);
-    else if (id.startsWith('boundary')) m.setLayoutProperty(id, 'visibility', 'none');
+    else if (id.startsWith('boundary') || id.startsWith('label_city') || id.startsWith('label_country') || id === 'label_state') m.setLayoutProperty(id, 'visibility', 'none');
     else if (t === 'symbol') { set('text-color', k.tekst); set('text-halo-color', k.halo); }
   }
 }
@@ -39,7 +39,7 @@ function granice(c) {
 
 // Środek mapy przesunięty tak, żeby punkt wypadł dy pikseli nad środkiem ekranu
 function nad(punkt, dy, zoom) {
-  const mNaPx = 156543.03 * Math.cos(punkt[1] * Math.PI / 180) / Math.pow(2, zoom);
+  const mNaPx = 78271.52 * Math.cos(punkt[1] * Math.PI / 180) / Math.pow(2, zoom);
   return [punkt[0], punkt[1] - (dy * mNaPx) / 111200];
 }
 
@@ -60,6 +60,8 @@ function sawaMapa(el, o = {}) {
     ...(o.dopasuj ? { bounds: granice(SAWA[o.trasa]), fitBoundsOptions: { padding: o.dopasuj } } : {}), bearing: o.bearing || 0, pitch: o.pitch || 0,
     attributionControl: false, interactive: false, preserveDrawingBuffer: true, fadeDuration: 0,
   });
+  window.MAPY = (window.MAPY || 0) + 1;
+  m.once('load', () => m.once('idle', () => { window.GOTOWE = (window.GOTOWE || 0) + 1; }));
   m.on('load', () => {
     przekoloruj(m, o.noc);
     if (o.zasiegKm) {

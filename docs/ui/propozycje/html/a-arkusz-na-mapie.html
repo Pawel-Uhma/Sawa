@@ -40,6 +40,7 @@
 </style></head>
 <body><div class="telefon">
   <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
   <div class="status"></div>
 
   <div class="gora">
@@ -70,7 +71,7 @@
       <span class="chip wybrany">Powstanie ’44</span>
       <span class="chip wybrany">Dawne kina</span>
       <span class="chip wybrany">Bazary</span>
-      <span class="chip">+ zmień</span>
+      <span class="chip" style="width:34px;padding:0;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4C6462" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
     </div>
 
     <div class="dol">
@@ -84,7 +85,7 @@
 </div>
 <script src="_ui.js"></script>
 <script>
-  sawaMapa('mapa', { zoom: 14.8, center: nad(JA, 160, 14.8), pins: [
+  sawaMapa('mapa', { zoom: 14, center: nad(JA, 160, 14), pins: [
     { c: [20.98019, 52.23702], n: 'Kercelak' },
     { c: [20.97306, 52.23944], n: 'Cmentarz kalwiński' },
     { c: [20.97213, 52.23268], n: 'Zajezdnia Wola' },

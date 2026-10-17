@@ -21,3 +21,13 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 
 | Plik | Co pokazuje | Zadanie | Decyzja |
 |---|---|---|---|
+| [1150-ekran-glowny-00-zestawienie.jpg](propozycje/1150-ekran-glowny-00-zestawienie.jpg) | 5 propozycji ekranu głównego obok siebie | ekran główny | czeka na wybór |
+| [1150-…-a-arkusz-na-mapie](propozycje/1150-ekran-glowny-a-arkusz-na-mapie-mobile.png) | A: mapa na cały ekran, szklany arkusz z pytaniem Sawy, suwak 30 min–4 h+, tematy, „Wyznacz trasę”. Najbliżej Apple Maps, najbezpieczniejsza | ekran główny | |
+| [1150-…-b-zasieg-historii](propozycje/1150-ekran-glowny-b-zasieg-historii-mobile.png) | B: krąg zasięgu z 326 prawdziwymi punktami z `historia/`, linijka czasu przewijana palcem, statystyki trasy | ekran główny | |
+| [1150-…-c-rozmowa-z-sawa](propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png) | C: Sawa w całej postaci pyta w czacie, odpowiedzi jednym dotknięciem, mapa w dymku, mikrofon. Łączy ekran główny z zakładką czatu | ekran główny | |
+| [1150-…-d-przejazdzki-jak-odcinki](propozycje/1150-ekran-glowny-d-przejazdzki-jak-odcinki-mobile.png) | D: gotowe trasy jak odcinki podcastu (mapa trasy, linie ZTM, zajawka opowieści), przełącznik czasu, pasek zakładek | ekran główny | |
+| [1150-…-e-wieczor](propozycje/1150-ekran-glowny-e-wieczor-mobile.png) | E: tryb ciemny, mapa z punktami historii, wybór czasu kółkami jak w minutniku iOS, koralowe „Jedziemy” | ekran główny | |
+
+## Źródła makiet
+
+HTML makiet jest w `propozycje/html/` (otwórz w przeglądarce w widoku 390 × 844). Marka z [awatar/README.md](../awatar/README.md): Głębia `#17706F`, Mięta `#8ED1B5`, Koral `#F2755F`, Plus Jakarta Sans, logo „sawa.” we Fredoce. Mapa: OpenFreeMap przekolorowany na barwy Sawy. Trasy w D to przybliżenie po ulicach (OSRM), a nie prawdziwe linie ZTM. Numery linii i godziny odjazdów są przykładowe.

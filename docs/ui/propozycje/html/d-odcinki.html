@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>D · Trasy jak odcinki</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  body, .telefon { background: var(--tlo-2); }
+  .tresc { position: absolute; top: 47px; left: 0; right: 0; padding: 10px 20px 0; }
+  .naglowek { display: flex; justify-content: space-between; align-items: center; }
+  .naglowek .logo { font-size: 24px; }
+  .naglowek img { width: 38px; height: 38px; }
+  h1 { font-size: 32px; font-weight: 800; letter-spacing: -.035em; line-height: 1.1; margin-top: 14px; }
+  .pod { color: var(--tekst-2); font-size: 14px; margin-top: 4px; }
+
+  .segment { display: flex; background: rgba(16,43,42,.06); border-radius: 12px; padding: 3px; margin-top: 16px; }
+  .segment span { flex: 1; text-align: center; height: 34px; line-height: 34px; border-radius: 9px; font-size: 14px; font-weight: 600; color: var(--tekst-2); }
+  .segment span.on { background: #fff; color: var(--tekst); font-weight: 700; box-shadow: 0 1px 3px rgba(16,43,42,.12); }
+
+  .hero { position: relative; margin-top: 16px; height: 300px; border-radius: 24px; overflow: hidden; background: #fff;
+    box-shadow: 0 1px 2px rgba(16,43,42,.05), 0 10px 30px rgba(16,43,42,.10); }
+  .hero .mapa { bottom: 112px; }
+  .hero .opis { position: absolute; left: 0; right: 0; bottom: 0; height: 112px; padding: 14px 16px; background: #fff; }
+  .odznaka { position: absolute; top: 12px; left: 12px; z-index: 5; height: 28px; padding: 0 10px; border-radius: 14px; font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; gap: 6px; color: var(--glebia-ciemna); }
+  .hero h2 { font-size: 20px; font-weight: 800; letter-spacing: -.02em; }
+  .meta { font-size: 13px; color: var(--tekst-2); margin-top: 2px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .linia { display: inline-grid; place-items: center; min-width: 26px; height: 20px; padding: 0 4px; border-radius: 5px; color: #fff; font-size: 11.5px; font-weight: 800; }
+  .tram { background: #C8102E; } .bus { background: #1F2A44; }
+  .graj { position: absolute; right: 16px; top: -26px; width: 56px; height: 56px; border-radius: 50%; background: var(--koral); display: grid; place-items: center;
+    box-shadow: 0 6px 16px rgba(242,117,95,.4); border: 3px solid #fff; }
+  .zajawka { font-size: 13px; color: var(--tekst-2); margin-top: 6px; font-style: italic; }
+
+  .wiersz { display: flex; gap: 12px; margin-top: 14px; }
+  .mala { flex: 1; height: 168px; border-radius: 20px; overflow: hidden; background: #fff; position: relative; box-shadow: 0 1px 2px rgba(16,43,42,.05), 0 6px 18px rgba(16,43,42,.08); }
+  .mala .mapa { bottom: 66px; }
+  .mala .opis { position: absolute; left: 0; right: 0; bottom: 0; height: 66px; padding: 9px 12px; }
+  .mala h3 { font-size: 14.5px; font-weight: 800; letter-spacing: -.01em; line-height: 1.2; }
+  .mala .meta { font-size: 12px; }
+</style></head>
+<body><div class="telefon">
+  <div class="status"></div>
+  <div class="tresc">
+    <div class="naglowek"><div class="logo">sawa<i>.</i></div><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg"></div>
+    <h1>Trzy przejażdżki na dziś</h1>
+    <div class="pod">Ułożone z Twoich tematów, start spod 42 Warsaw</div>
+    <div class="segment"><span>30 min</span><span class="on">1 h</span><span>2 h</span><span>4 h+</span></div>
+
+    <div class="hero">
+      <div class="mapa" id="m1"></div>
+      <div class="odznaka szklo">● Odjazd za 3 min</div>
+      <div class="opis">
+        <div class="graj"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5Z"/></svg></div>
+        <h2>Wola, której nie ma</h2>
+        <div class="meta">55 min · <span class="linia tram">26</span>→<span class="linia bus">105</span> · 8 opowieści</div>
+        <div class="zajawka">„Tu, gdzie stoisz, w 1939 r. targowano wszystkim, od gwoździ po futra…”</div>
+      </div>
+    </div>
+
+    <div class="wiersz">
+      <div class="mala"><div class="mapa" id="m2"></div>
+        <div class="opis"><h3>Śródmieście tramwajem</h3><div class="meta">1 h 10 · 11 opowieści</div></div></div>
+      <div class="mala"><div class="mapa" id="m3"></div>
+        <div class="opis"><h3>Praga za oknem</h3><div class="meta">1 h 25 · 9 opowieści</div></div></div>
+    </div>
+  </div>
+
+  <div class="zakladki szklo">
+    <div class="aktywna"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V8l5-3 6 3 5-3v11l-5 3-6-3-5 3Z"/><path d="M9 5v11M15 8v11"/></svg>Przejażdżki</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 7 11 7 11Z"/></svg>Mapa</div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12Z"/></svg>Sawa</div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script>
+<script>
+  sawaMapa('m1', { trasa: 'wola', dopasuj: { top: 50, bottom: 30, left: 40, right: 40 }, gruboscTrasy: 5 });
+  sawaMapa('m2', { trasa: 'srodmiescie', dopasuj: 14, gruboscTrasy: 3.5 });
+  sawaMapa('m3', { trasa: 'praga', dopasuj: 14, gruboscTrasy: 3.5, kolorTrasy: '#F2755F' });
+</script>
+</body></html>
