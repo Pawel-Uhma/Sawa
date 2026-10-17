@@ -7,6 +7,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import type { PlaceTag } from "@sawa/shared";
 import { z } from "zod";
+import { AREA, fetchWithRetry, sleep, USER_AGENT } from "./historia/http";
 import {
   dedupeByName,
   mapOsmElement,
@@ -18,10 +19,8 @@ import {
 
 const HISTORIA_PATH = new URL("../docs/historia/sawa-historia.geojson", import.meta.url);
 const OUT_PATH = new URL("../docs/historia/osm-sport-przyroda.geojson", import.meta.url);
-// Curated places sit in 20.96–21.00, 52.227–52.245; routes run up to ~3 km further.
-const BBOX = "52.21,20.93,52.26,21.02"; // south,west,north,east
+const BBOX = `${AREA.south},${AREA.west},${AREA.north},${AREA.east}`;
 const OVERPASS = "https://overpass-api.de/api/interpreter";
-const USER_AGENT = "sawa-hackathon/1.0 (Warsaw Open Data Hackathon 2026)";
 
 const QUERY = `[out:json][timeout:60];
 (
@@ -114,18 +113,6 @@ async function wikiSummary(tag: string | undefined): Promise<WikiSummary | undef
       body.content_urls?.desktop?.page ??
       `https://pl.wikipedia.org/wiki/${encodeURIComponent(title)}`,
   };
-}
-
-const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
-/** Overpass and the Wikipedia REST API both rate-limit bursts (429) and time out under load (504). */
-async function fetchWithRetry(url: string, init: RequestInit): Promise<Response> {
-  let res = await fetch(url, init);
-  for (let attempt = 1; [429, 504].includes(res.status) && attempt <= 4; attempt++) {
-    await sleep(5000 * attempt);
-    res = await fetch(url, init);
-  }
-  return res;
 }
 
 main().catch((err) => {

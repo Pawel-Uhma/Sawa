@@ -25,6 +25,8 @@
 
 - R2 (Jasiek, 14:08): sport i przyroda mają miejsca (T-25): +102 z OSM (parki, skwery, obiekty sportowe), w bazie 428 miejsc (historia 242, kultura 113, sport 33, przyroda 75). `apps/api/data/places.geojson` odświeżony dla planera. Następne: zbiór miasta „Otwarte boiska” (T-27, potrzebny token).
 
+- R2 (Jasiek, 14:30): zbiór miasta „Otwarte boiska” w bazie (T-27): 57 szkolnych terenów sportowych z godzinami otwarcia, adresy geokodowane Nominatim. Razem 485 miejsc, sport 90, przyroda 75. `places.geojson` dla planera odświeżony.
+
 ## Zablokowane
 
 - Trasy dłuższe niż ok. 20 min były puste w drugiej połowie (miejsca tylko do 1 km od 42 Warsaw). Po odświeżeniu `places.geojson` przez R2 (14:08, 428 miejsc) do sprawdzenia, czy zasięg się poprawił. Sprawdza R1 (Szczepan), więcej miejsc dokłada R2 (Jasiek).
