@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Znaczniki miejsc</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  html, body { width: auto; height: auto; overflow: auto; background: #F4F6F5; }
+  .siatka { display: flex; gap: 24px; padding: 28px; width: max-content; }
+  .wariant { width: 390px; }
+  .naglowek { height: 92px; }
+  .naglowek h2 { font-size: 19px; font-weight: 800; letter-spacing: -.02em; }
+  .naglowek h2 span { color: var(--koral); margin-right: 6px; }
+  .naglowek p { font-size: 13px; color: var(--tekst-2); margin-top: 4px; line-height: 1.4; }
+  .ramka { position: relative; width: 390px; height: 600px; border-radius: 28px; overflow: hidden;
+    box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 12px 32px rgba(16,43,42,.12); background: #EEF3F0; }
+  .ramka .mapa { position: absolute; inset: 0; }
+  .lupa { position: absolute; right: 14px; bottom: 14px; width: 178px; height: 178px; border-radius: 50%; overflow: hidden;
+    border: 4px solid #fff; box-shadow: 0 10px 28px rgba(16,43,42,.22); background: #EEF3F0; }
+  .lupa .mapa { position: absolute; inset: 0; }
+  .lupa-podpis { position: absolute; right: 22px; bottom: 200px; font-size: 11.5px; font-weight: 700; color: var(--tekst-2);
+    background: rgba(255,255,255,.85); padding: 3px 9px; border-radius: 10px; }
+  .zoom { position: absolute; left: 14px; top: 14px; font-size: 11.5px; font-weight: 700; color: var(--tekst-2);
+    background: rgba(255,255,255,.85); padding: 3px 9px; border-radius: 10px; }
+  .legenda { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 14px; font-size: 12px; color: var(--tekst-2); }
+  .legenda div { display: flex; align-items: center; gap: 6px; }
+  .legenda img { width: 22px; height: 22px; object-fit: contain; }
+  .ja { width: 18px; height: 18px; border-radius: 50%; background: #2563eb; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(37,99,235,.18); }
+</style></head>
+<body>
+<div class="siatka" id="siatka"></div>
+<script>
+// Rodzaje i kolory jak w apps/web/src/features/map/lib/map-style.ts
+const RODZAJE = {
+  budynek:   { kolor: '#4f6d9a', nazwa: 'budynek',  g: 'M6 21V5.5L12 3l6 2.5V21 M9.5 8.5h1 M13.5 8.5h1 M9.5 12h1 M13.5 12h1 M10.5 21v-4h3v4' },
+  ulica:     { kolor: '#4f6d9a', nazwa: 'ulica',    g: 'M12 3v18 M5 6h11l3 2.5-3 2.5H5Z M9 21h6' },
+  pomnik:    { kolor: '#b5543c', nazwa: 'pomnik',   g: 'M7 21h10 M9 21v-3.5h6V21 M12 17.5V10 M12 4.2a1.8 1.8 0 1 0 0 .01 M9.5 10h5' },
+  tablica:   { kolor: '#b5543c', nazwa: 'tablica',  g: 'M4.5 5.5h15v11h-15Z M8 9.5h8 M8 12.5h5 M12 16.5V20' },
+  mural:     { kolor: '#d4902a', nazwa: 'mural',    g: 'M15 4l5 5-8.5 8.5-5-5Z M6.5 12.5 4 20l7.5-2.5' },
+  swiatynia: { kolor: '#3f7d5a', nazwa: 'świątynia',g: 'M12 2.5v4 M10 4.5h4 M6 21v-9l6-4.5 6 4.5v9 M10 21v-3.5a2 2 0 0 1 4 0V21' },
+  cmentarz:  { kolor: '#3f7d5a', nazwa: 'cmentarz', g: 'M7 21v-10a5 5 0 0 1 10 0v10 M5 21h14 M12 10v6 M9.8 12.2h4.4' },
+  miejsce:   { kolor: '#8e4585', nazwa: 'miejsce',  g: 'M12 3.5l2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z' },
+  zdarzenie: { kolor: '#8e4585', nazwa: 'zdarzenie',g: 'M6 21V4 M6 4.5h11l-2.2 4 2.2 4H6' },
+};
+const LEGENDA = ['budynek', 'pomnik', 'mural', 'swiatynia', 'miejsce'];
+
+// Bogactwo udawane z nazwy (w aplikacji przychodzi z /v1/places)
+const bogactwo = n => { let h = 0; for (const z of n) h = (h * 31 + z.charCodeAt(0)) >>> 0; return 1 + (h % 40); };
+
+const glif = (g, kolor, w, x, y, s) =>
+  `<g transform="translate(${x} ${y}) scale(${s})"><path d="${g}" fill="none" stroke="${kolor}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+
+// Każdy wariant rysuje ikonę rodzaju jako SVG (w css px); w aplikacji to byłyby PNG-i 2x albo SDF
+const WARIANTY = [
+  {
+    id: 'a', tytul: 'Kropka z glifem',
+    opis: 'Jak punkty w Mapach Apple: pełne kółko w kolorze rodzaju, biały glif i biała obwódka. Kolor mówi grupę, glif rodzaj.',
+    rozmiar: 26, kotwica: 'center',
+    svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+      <circle cx="13" cy="13" r="11.5" fill="${r.kolor}" stroke="#fff" stroke-width="2"/>
+      ${glif(r.g, '#fff', 2.6, 6.4, 6.4, .55)}</svg>`,
+    wielkosc: ['interpolate', ['linear'], ['zoom'], 14, ['interpolate', ['linear'], ['get', 'b'], 1, .62, 40, .8], 17, ['interpolate', ['linear'], ['get', 'b'], 1, .95, 40, 1.15]],
+  },
+  {
+    id: 'b', tytul: 'Kropki, które rosną',
+    opis: 'Z daleka to same kropki jak wcześniej (szybko czytelne, nic się nie zlewa). Od zoomu 16 kropka płynnie rośnie w kółko z glifem.',
+    rozmiar: 26, kotwica: 'center', kropkiDo: 16,
+    svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+      <circle cx="13" cy="13" r="11.5" fill="${r.kolor}" stroke="#fff" stroke-width="2"/>
+      ${glif(r.g, '#fff', 2.6, 6.4, 6.4, .55)}</svg>`,
+    wielkosc: ['interpolate', ['linear'], ['zoom'], 16, .55, 17.5, ['interpolate', ['linear'], ['get', 'b'], 1, 1, 40, 1.2]],
+  },
+  {
+    id: 'c', tytul: 'Pinezka',
+    opis: 'Mała kropla z glifem, wbita czubkiem w miejsce. Jasno pokazuje „to tu”, lepsza przy budynkach stojących gęsto przy ulicy.',
+    rozmiar: 30, kotwica: 'bottom',
+    svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 24 30">
+      <path d="M12 28.5c-1-2.8-3.4-5.2-6-7.6A10.2 10.2 0 1 1 18 20.9c-2.6 2.4-5 4.8-6 7.6Z" fill="${r.kolor}" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+      ${glif(r.g, '#fff', 2.6, 5.6, 4.6, .54)}</svg>`,
+    wielkosc: ['interpolate', ['linear'], ['zoom'], 14, ['interpolate', ['linear'], ['get', 'b'], 1, .62, 40, .8], 17, ['interpolate', ['linear'], ['get', 'b'], 1, .95, 40, 1.1]],
+  },
+  {
+    id: 'd', tytul: 'Plakietka',
+    opis: 'Biały zaokrąglony kwadracik z kolorowym glifem i cieniem, jak mała etykieta. Spokojna na jasnej mapie, kolor tylko w rysunku.',
+    rozmiar: 28, kotwica: 'center',
+    svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+      <defs><filter id="c" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#102B2A" flood-opacity=".28"/></filter></defs>
+      <rect x="3" y="3" width="22" height="22" rx="7" fill="#fff" filter="url(#c)"/>
+      <rect x="3" y="3" width="22" height="22" rx="7" fill="none" stroke="${r.kolor}" stroke-opacity=".35" stroke-width="1"/>
+      ${glif(r.g, r.kolor, 2.5, 7.4, 7.4, .55)}</svg>`,
+    wielkosc: ['interpolate', ['linear'], ['zoom'], 14, ['interpolate', ['linear'], ['get', 'b'], 1, .62, 40, .8], 17, ['interpolate', ['linear'], ['get', 'b'], 1, .95, 40, 1.1]],
+  },
+  {
+    id: 'e', tytul: 'Pierścień z podpisem',
+    opis: 'Bez obrazków: kolorowy pierścień, pełny środek przy bogatych miejscach. Z bliska obok pojawia się nazwa, więc rodzaj mówi tekst.',
+    rozmiar: 18, kotwica: 'center', podpisOd: 16.5,
+    svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+      <circle cx="9" cy="9" r="7" fill="#fff" stroke="${r.kolor}" stroke-width="3.4"/>
+      ${r.pelny ? `<circle cx="9" cy="9" r="2.6" fill="${r.kolor}"/>` : ''}</svg>`,
+    wielkosc: ['interpolate', ['linear'], ['zoom'], 14, .75, 17, 1.05],
+  },
+];
+
+const fc = {
+  type: 'FeatureCollection',
+  features: SAWA.miejsca.filter(p => RODZAJE[p.t]).map((p, i) => {
+    const b = bogactwo(p.n);
+    return { type: 'Feature', id: i, geometry: { type: 'Point', coordinates: p.c },
+      properties: { t: p.t, b, pelny: b > 18, n: p.n.replace(/\s*\(.*\)$/, '') } };
+  }),
+};
+
+function obraz(svg, px) {
+  return new Promise((ok, zle) => {
+    const img = new Image(px, px);
+    img.onload = () => ok(img); img.onerror = zle;
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  });
+}
+
+// SVG rysujemy w 2x, żeby na Retinie były ostre
+const w2x = svg => svg.replace(/width="(\d+)" height="(\d+)"/, (_, w, h) => `width="${w * 2}" height="${h * 2}"`);
+
+async function dodajIkony(m, w) {
+  for (const [t, r] of Object.entries(RODZAJE)) {
+    for (const pelny of [false, true]) {
+      const id = `${w.id}-${t}${pelny ? '-p' : ''}`;
+      if (m.hasImage(id)) continue;
+      const img = await obraz(w2x(w.svg({ ...r, pelny })));
+      if (!m.hasImage(id)) m.addImage(id, img, { pixelRatio: 2 });
+    }
+  }
+}
+
+function warstwy(m, w) {
+  m.addSource('miejsca', { type: 'geojson', data: fc });
+  const ikona = w.id === 'e'
+    ? ['concat', w.id + '-', ['get', 't'], ['case', ['get', 'pelny'], '-p', '']]
+    : ['concat', w.id + '-', ['get', 't']];
+  const kolor = ['match', ['get', 't'], ...Object.entries(RODZAJE).flatMap(([t, r]) => [t, r.kolor]), '#71717a'];
+  if (w.kropkiDo) {
+    m.addLayer({ id: 'kropki', type: 'circle', source: 'miejsca', maxzoom: w.kropkiDo, paint: {
+      'circle-color': kolor, 'circle-radius': ['interpolate', ['linear'], ['get', 'b'], 1, 4.5, 40, 7],
+      'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5, 'circle-opacity': .95 } });
+  }
+  m.addLayer({ id: 'ikony', type: 'symbol', source: 'miejsca', ...(w.kropkiDo ? { minzoom: w.kropkiDo } : {}), layout: {
+    'icon-image': ikona, 'icon-size': w.wielkosc, 'icon-anchor': w.kotwica,
+    'icon-padding': 1, 'symbol-sort-key': ['-', 0, ['get', 'b']],
+    ...(w.podpisOd ? {
+      'text-field': ['step', ['zoom'], '', w.podpisOd, ['get', 'n']], 'text-font': ['Noto Sans Regular'], 'text-size': 11.5,
+      'text-anchor': 'left', 'text-offset': [1, 0], 'text-max-width': 9, 'text-optional': true,
+    } : {}),
+  }, paint: w.podpisOd ? { 'text-color': '#27443F', 'text-halo-color': '#fff', 'text-halo-width': 1.4 } : {} });
+}
+
+const siatka = document.getElementById('siatka');
+const SRODEK = [20.9842, 52.2385];
+for (const w of WARIANTY) {
+  const kol = document.createElement('section');
+  kol.className = 'wariant';
+  kol.innerHTML = `
+    <div class="naglowek"><h2><span>${w.id.toUpperCase()}</span>${w.tytul}</h2><p>${w.opis}</p></div>
+    <div class="ramka">
+      <div class="mapa"></div><div class="zoom">zoom 15</div>
+      <div class="lupa-podpis">zbliżenie · zoom 17</div>
+      <div class="lupa"><div class="mapa"></div></div>
+    </div>
+    <div class="legenda"></div>`;
+  siatka.appendChild(kol);
+
+  for (const t of LEGENDA) {
+    const r = RODZAJE[t];
+    const d = document.createElement('div');
+    d.innerHTML = `<img src="data:image/svg+xml;charset=utf-8,${encodeURIComponent(w.svg({ ...r, pelny: true }))}">${r.nazwa}`;
+    kol.querySelector('.legenda').appendChild(d);
+  }
+
+  const [duza, mala] = kol.querySelectorAll('.mapa');
+  const opcje = { style: 'https://tiles.openfreemap.org/styles/positron', attributionControl: false, interactive: false, preserveDrawingBuffer: true, fadeDuration: 0 };
+  for (const [el, center, zoom] of [[duza, SRODEK, 15], [mala, [20.9772, 52.2357], 17.3]]) {
+    const m = new maplibregl.Map({ ...opcje, container: el, center, zoom });
+    window.MAPY = (window.MAPY || 0) + 1;
+    m.on('load', async () => {
+      przekoloruj(m, false);
+      await dodajIkony(m, w);
+      warstwy(m, w);
+      m.once('idle', () => { window.GOTOWE = (window.GOTOWE || 0) + 1; });
+    });
+    const ja = document.createElement('div'); ja.className = 'ja';
+    new maplibregl.Marker({ element: ja }).setLngLat(JA).addTo(m);
+  }
+}
+</script>
+</body></html>
