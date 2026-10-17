@@ -51,5 +51,9 @@ const EnvSchema = z.object({
 export type Env = z.infer<typeof EnvSchema>;
 
 export function loadEnv(source: NodeJS.ProcessEnv = process.env): Env {
-  return EnvSchema.parse(source);
+  // Railway holds the new Supabase secret key (sb_secret_…) under its dashboard name; it replaces service_role.
+  return EnvSchema.parse({
+    ...source,
+    SUPABASE_SERVICE_ROLE_KEY: source.SUPABASE_SERVICE_ROLE_KEY || source.SUPABASE_SECRET_KEY,
+  });
 }
