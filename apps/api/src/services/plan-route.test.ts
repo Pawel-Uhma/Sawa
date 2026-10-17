@@ -53,6 +53,31 @@ describe("route planner on real data", () => {
     expect(route.totalMin).toBeLessThanOrEqual(durationMin * 1.1);
   });
 
+  it("spaces stories by the chosen story style", async () => {
+    const plan = (storyStyle: "trivia" | "deep") =>
+      planner.plan(
+        { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], storyStyle },
+        NOW,
+      );
+    const [trivia, deep] = await Promise.all([plan("trivia"), plan("deep")]);
+    expect(deep.places.length).toBeLessThan(trivia.places.length);
+    const gaps = deep.places.slice(1).map((p, i) => p.etaSec - (deep.places[i]?.etaSec ?? 0));
+    expect(Math.min(...gaps)).toBeGreaterThanOrEqual(89);
+  });
+
+  it("narrates more places with a chosen tile than without it", async () => {
+    const all = await places.listInBBox({ minLng: 20, minLat: 52, maxLng: 22, maxLat: 53 });
+    const tagsOf = new Map(all.map((p) => [p.id, p.interests]));
+    const tagged = async (tags?: ["jewish_warsaw"]) => {
+      const route = await planner.plan(
+        { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], tags },
+        NOW,
+      );
+      return route.places.filter((p) => tagsOf.get(p.placeId)?.includes("jewish_warsaw")).length;
+    };
+    expect(await tagged(["jewish_warsaw"])).toBeGreaterThan(await tagged());
+  });
+
   it("plans a ride that ends at the Castle Square", async () => {
     const castleSquare = { lat: 52.2477, lng: 21.0137 };
     const route = RouteSchema.parse(

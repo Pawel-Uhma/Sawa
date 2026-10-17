@@ -4,6 +4,8 @@ import { applyDepartures } from "../domain/routing/apply-departures";
 import { DEFAULT_SEARCH_OPTIONS, planRide } from "../domain/routing/beam-search";
 import { buildRoute } from "../domain/routing/build-route";
 import { computePlaceHits } from "../domain/routing/place-hits";
+import { RICHNESS_EXPONENT } from "../domain/routing/score";
+import { STORY_GAP_SEC } from "../domain/routing/select-stories";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
 import { AppError } from "../lib/errors";
@@ -158,6 +160,10 @@ export function createRoutePlanner(deps: {
         origin: request.origin,
         budgetSec: request.durationMin * 60,
         interests: new Set(request.interests),
+        prefs: {
+          tags: request.tags && new Set(request.tags),
+          richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
+        },
         returnToStart: request.returnToStart,
         destination: request.destination,
       });
@@ -180,7 +186,8 @@ export function createRoutePlanner(deps: {
         ride = applyDepartures(ride, perLeg, DEFAULT_SEARCH_OPTIONS.transferSec);
       }
 
-      return buildRoute({ ride, network, placesById, now, attribution });
+      const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
+      return buildRoute({ ride, network, placesById, now, attribution, storyGapSec });
     },
   };
 }

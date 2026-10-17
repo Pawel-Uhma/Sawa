@@ -11,6 +11,8 @@ export type BuildRouteInput = {
   /** Time of the request; all offsets in the ride count from here. */
   now: Date;
   attribution: string[];
+  /** Shortest time between two narrated places (story style); default `MIN_STORY_GAP_SEC`. */
+  storyGapSec?: number;
 };
 
 const at = (now: Date, offsetSec: number) =>
@@ -32,6 +34,7 @@ export function buildRoute({
   placesById,
   now,
   attribution,
+  storyGapSec,
 }: BuildRouteInput): Route {
   const legs: Leg[] = ride.legs.map((leg) => {
     const pattern = network.patterns.get(leg.patternId) as Pattern;
@@ -51,7 +54,7 @@ export function buildRoute({
     };
   });
 
-  const sorted = selectStoryPlaces(ride.places);
+  const sorted = selectStoryPlaces(ride.places, storyGapSec);
   const places: RoutePlace[] = sorted.flatMap((p, i) => {
     const place = placesById.get(p.placeId);
     if (!place) return [];
