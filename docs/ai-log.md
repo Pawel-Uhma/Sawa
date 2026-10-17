@@ -341,3 +341,10 @@
 
 
 **AI:** Zacommitowałem pozostałe pliki (surowe dane historii, mapy PNG, dziennik) i wypchnąłem `main` do github.com/Pawel-Uhma/sawa z pełną historią (35 commitów).
+
+
+### 2026-10-17 11:33 · Jasiek
+
+> Konfiguracja połączenia z Supabase przez MCP (projekt arvrzfqtqlrasftvvkaq, odczyt i zapis, darmowy plan), potem commit configu.
+
+**AI:** Dodałem `.mcp.json` z serwerem MCP Supabase (`mcp.supabase.com`, `project_ref=arvrzfqtqlrasftvvkaq`, odczyt i zapis, funkcje database/docs/development/functions/storage/debugging, bez branching, bo jest płatny). Logowanie przez OAuth (`/mcp`), w pliku nie ma sekretów.
