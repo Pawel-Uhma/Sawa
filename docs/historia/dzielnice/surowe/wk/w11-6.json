@@ -1,0 +1,199 @@
+[
+  {
+    "id": "ulica-mysliwiecka",
+    "nazwa": "ulica Myśliwiecka",
+    "name_en": "Myśliwiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Myśliwiecka",
+    "adres_historyczny": "Zdrowa; Wiejska Dolna; Stadionowa (okupacja)",
+    "lat": 52.2232253,
+    "lon": 21.0318787,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica istniała już w XVIII wieku pod nazwą Zdrowa; pierwotnie była zjazdem z gościńca ujazdowskiego w kierunku Łazienek Królewskich.",
+      "Około 1820 roku wybrukowano południową część ulicy.",
+      "W połowie XIX wieku utarła się nazwa Myśliwiecka, w nawiązaniu do zniekształconej nazwy dawnej osady Myślewice.",
+      "Pod koniec XIX wieku przy ulicy powstał Park Agrykola, a w latach 20. XX wieku Kolonia Profesorska z kilkoma willami oraz gmach Gimnazjum im. Batorego.",
+      "Podczas okupacji ulica nosiła nazwę Stadionowa (niem. Stadionstrasse); zabudowania w północnej części zostały bardzo uszkodzone, a willa nr 18 całkowicie zniszczona.",
+      "5 stycznia 1946 roku uruchomiono wzdłuż ulicy linię trolejbusową; trolejbusy kursowały tędy do 1972 roku.",
+      "W latach 2012–2014 na rogu ul. Szwoleżerów wybudowano ambasadę Indii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Myśliwiecka is a 1-kilometre street on Solec and Ujazdów, running from Szwoleżerów to Górnośląska. It began as a road to the Łazienki Park in the 18th century under the name Zdrowa, and took its present name in the mid-19th century. Agrykola Park and the Batory Lyceum grew up along it, and many embassies are located here today.",
+    "ludzie": [
+      {"kto": "Stanisław Poniatowski", "rola": "właściciel pałacu „Ustronie”, przy którym przebiegała pierwotna droga", "wiki": null},
+      {"kto": "Zygmunt Kamiński", "rola": "właściciel willi nr 10", "wiki": null},
+      {"kto": "Rudolf Świerczyński", "rola": "właściciel willi nr 12", "wiki": null},
+      {"kto": "Kazimierz Tołłoczko", "rola": "właściciel willi nr 14, obecnie Ambasada Republiki Tunezji", "wiki": null},
+      {"kto": "Antoni Jawornicki", "rola": "właściciel willi nr 16", "wiki": null},
+      {"kto": "Oskar Sosnowski", "rola": "właściciel willi nr 18", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zdrowa", "Wiejska Dolna", "Stadionowa (okupacja)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Myśliwiecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Myśliwiecka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje dzielnice Solec i Ujazdów; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-stanislawa-noakowskiego",
+    "nazwa": "ulica Stanisława Noakowskiego",
+    "name_en": "Stanisław Noakowski Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Stanisława Noakowskiego",
+    "adres_historyczny": "Polna (część ulicy w XVIII wieku)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w XVIII wieku jako część ulicy Polnej, biegnącej wzdłuż Okopów Lubomirskiego, które do początku XX wieku wyznaczały granicę miasta.",
+      "Na przełomie XIX i XX wieku po zachodniej stronie, w miejscu dawnych wystaw higienicznych, powstał kampus Politechniki Warszawskiej, a po wschodniej wysokie kamienice.",
+      "Współczesną nazwę ulica uzyskała w 1930 roku.",
+      "Większość zabudowy przetrwała II wojnę światową, m.in. kamienice z podwórkami-studniami.",
+      "W 2012 roku ulicę wyremontowano, wybudowano nowe chodniki oraz ścieżkę rowerową.",
+      "Na kamienicy nr 12 znajduje się tablica upamiętniająca Szare Szeregi.",
+      "W kamienicy nr 16 mieszkał i został tu aresztowany przez niemieckich okupantów Janusz Kusociński."
+    ],
+    "ciekawostki": [
+      "Nie przetrwały kamienica Gawrońskich (nr 2) i kamienica Franciszka Braumana (nr 24)."
+    ],
+    "summary_en": "Stanisław Noakowski Street is a one-way street of nearly 400 metres in Śródmieście Południowe, from Plac Politechniki to Koszykowa. Created in the 18th century as part of Polna, it took its present name in 1930. Most of its tenements survived the war, and it hosts the main Warsaw University of Technology building at its start.",
+    "ludzie": [
+      {"kto": "Stanisław Noakowski", "rola": "architekt, malarz, rysownik, historyk sztuki; dziekan Wydziału Architektury Politechniki Warszawskiej w latach 1920–1923; patron ulicy", "wiki": null},
+      {"kto": "Janusz Kusociński", "rola": "mieszkał w kamienicy nr 16 i został tu aresztowany przez okupantów", "wiki": null}
+    ],
+    "dawne_nazwy": ["Polna (część ulicy w XVIII wieku)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Noakowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Noakowskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy. Nagłówek podaje Śródmieście Południowe; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-nowogrodzka",
+    "nazwa": "ulica Nowogrodzka",
+    "name_en": "Nowogrodzka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowogrodzka",
+    "adres_historyczny": null,
+    "lat": 52.2285294,
+    "lon": 21.0110587,
+    "lokalizacja": "przyblizona",
+    "okres": "II połowa XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Istnienie ulicy związane jest z jurydyką Nowogrodzka, istniejącą prawdopodobnie już w XV wieku.",
+      "Po likwidacji jurydyki w 1791 roku, w ustawie Prawa o miastach, ulica stała się częścią Warszawy.",
+      "Poważny rozwój nastąpił w połowie XIX wieku wraz z otwarciem dworca kolei Warszawsko-Wiedeńskiej.",
+      "Przebieg ulicy zakłóca ul. Chałubińskiego z wiaduktem wybudowanym tam do 1975 roku oraz ul. Marszałkowska, co uniemożliwia ciągły przejazd.",
+      "Gmach Głównego Urzędu Telekomunikacyjnego przy nr 45 powstał w latach 1928–1934.",
+      "Restauracja Bar Podlaski pod nr 15, dostępna tylko dla Niemców, stała się w czasie wojny celem zamachu z 23 października 1943 roku."
+    ],
+    "ciekawostki": [
+      "W gmachu „Romy” (nr 49) w pierwszych latach powojennych znajdowała się jedyna ocalała duża sala w Warszawie, dlatego odbył się tam m.in. I Zjazd PPR.",
+      "Na rogu Nowogrodzkiej i Poznańskiej kończyła się niegdyś Elektryczna Kolejka Dojazdowa (dziś WKD)."
+    ],
+    "summary_en": "Nowogrodzka is a roughly 2.2-kilometre street running west from Bracka across Śródmieście and Ochota to Koszykowa. It grew out of the Nowogrodzka estate, which joined Warsaw in 1791, and developed after the Warsaw-Vienna railway station opened in the mid-19th century. Its landmarks include the 1928–34 Central Telecommunications Office building at number 45.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "projektant biurowca na miejscu dawnego Pawilonu Chemii (nr 2)", "wiki": null},
+      {"kto": "ksiądz Boduen", "rola": "patron domu wychowawczego przy nr 75, dziś domu dziecka nr 15", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Nowogrodzka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Nowogrodzka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje dzielnice Śródmieście i Ochota; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-obozna",
+    "nazwa": "ulica Oboźna",
+    "name_en": "Oboźna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Oboźna",
+    "adres_historyczny": "Oboźnia Królewska",
+    "lat": 52.2391371,
+    "lon": 21.0207974,
+    "lokalizacja": "przyblizona",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w XV wieku i pierwotnie nazywała się Oboźnia Królewska.",
+      "Ulica, położona na skarpie wiślanej, łączy Krakowskie Przedmieście z Powiślem (z ulicami Browarną i Topiel).",
+      "Przed wojną przy Oboźnej mieścił się tor Warszawskiego Towarzystwa Cyklistów.",
+      "Dziś przy ulicy znajdują się budynki Uniwersytetu Warszawskiego, Klub Harenda i magazyny Teatru Polskiego.",
+      "Przy schodkach prowadzących do tzw. Parku Uniwersyteckiego stoi zabytkowa fontanna.",
+      "Ruch samochodowy jest dozwolony jedynie w kierunku zachodnim (pod górę)."
+    ],
+    "ciekawostki": [
+      "Między Sewerynów a Dynasy istnieje kontrapas dla rowerów."
+    ],
+    "summary_en": "Oboźna is a 350-metre street on the Vistula escarpment, linking Krakowskie Przedmieście with Powiśle. It was called Oboźnia Królewska in its early days, and today it is home to Warsaw University buildings and the Teatr Polski storage halls.",
+    "ludzie": [],
+    "dawne_nazwy": ["Oboźnia Królewska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Oboźna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Oboźna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje dzielnice Śródmieście Północne i Powiśle; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-ossolinskich",
+    "nazwa": "ulica Ossolińskich",
+    "name_en": "Ossolińskich Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Ossolińskich",
+    "adres_historyczny": "Czysta (w okresie zaboru rosyjskiego)",
+    "lat": 52.2420943,
+    "lon": 21.0134666,
+    "lokalizacja": "przyblizona",
+    "okres": "XX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica licząca około 125 metrów biegnie od Krakowskiego Przedmieścia do ul. Focha, między Hotelem Europejskim a Pałacem Potockich.",
+      "Nazwa ulicy wywodzi się od nieistniejącego pałacyku Jerzego Ossolińskiego, który znajdował się tutaj niegdyś.",
+      "W okresie zaboru rosyjskiego ulica nosiła nazwę Czysta.",
+      "W latach 1992–1999 kursowały tędy autobusy specjalnej linii Airport City.",
+      "Obecnie ulicą nie odbywa się ruch komunikacji miejskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ossolińskich is a short street of about 125 metres in Śródmieście, between Krakowskie Przedmieście and Focha. It takes its name from a palace of Jerzy Ossoliński that once stood here, and was called Czysta under Russian rule.",
+    "ludzie": [
+      {"kto": "Jerzy Ossoliński", "rola": "właściciel nieistniejącego pałacyku, od którego pochodzi nazwa ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czysta (w okresie zaboru rosyjskiego)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Ossolińskich", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Ossolińskich"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki. Okres z nagłówka: XX wiek."
+  },
+  {
+    "id": "ulica-parkingowa",
+    "nazwa": "ulica Parkingowa",
+    "name_en": "Parkingowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Parkingowa",
+    "adres_historyczny": null,
+    "lat": 52.2277876,
+    "lon": 21.0145623,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1961 roku i początkowo łączyła Wspólną i Żurawią.",
+      "W 1974 roku ulicę przedłużono do Nowogrodzkiej, a przy nowym odcinku stanął wielopoziomowy parking zaprojektowany przez Stena Samuelsona, szwedzkiego projektanta Hotelu Forum.",
+      "W 2012 roku parking ozdobiono ogromnym muralem.",
+      "Ulica przecina Żurawią i Nowogrodzką i kończy się ślepo przy hotelu Novotel."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Parkingowa is a 280-metre street in Śródmieście Południowe. Opened in 1961 between Wspólna and Żurawia, it was extended to Nowogrodzka in 1974 alongside a multi-storey car park designed by Sten Samuelson.",
+    "ludzie": [
+      {"kto": "Sten Samuelson", "rola": "szwedzki projektant wielopoziomowego parkingu przy ulicy (1974), projektant Hotelu Forum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Parkingowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Parkingowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje Śródmieście Południowe; rekord przypisany do Śródmieścia."
+  }
+]
