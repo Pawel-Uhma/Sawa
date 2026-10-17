@@ -1,0 +1,34 @@
+{
+  "places": [
+    {
+      "id": "ChIJhotpot-asia-deli",
+      "formattedAddress": "Marszałkowska 10/16, 00-590 Warszawa, Polska",
+      "location": { "latitude": 52.2167, "longitude": 21.0182 },
+      "displayName": { "text": "HOTPOT Asia Deli", "languageCode": "pl" }
+    },
+    {
+      "id": "ChIJbbp-kancelaria",
+      "formattedAddress": "Marszałkowska 10/16, 00-590 Warszawa, Polska",
+      "location": { "latitude": 52.2166, "longitude": 21.0184 },
+      "displayName": { "text": "BBP Kancelaria Adwokacka", "languageCode": "pl" }
+    },
+    {
+      "id": "ChIJpracownia-psychoterapii",
+      "formattedAddress": "Marszałkowska 10/16, 00-590 Warszawa, Polska",
+      "location": { "latitude": 52.2166, "longitude": 21.0183 },
+      "displayName": { "text": "Pracownia Psychoterapii", "languageCode": "pl" }
+    },
+    {
+      "id": "ChIJhm-hare-design",
+      "formattedAddress": "Marszałkowska 10/16, 00-590 Warszawa, Polska",
+      "location": { "latitude": 52.2165, "longitude": 21.0183 },
+      "displayName": { "text": "Hm & Hare Design", "languageCode": "pl" }
+    },
+    {
+      "id": "ChIJzabka-marszalkowska",
+      "formattedAddress": "Marszałkowska 10, 00-590 Warszawa, Polska",
+      "location": { "latitude": 52.2167, "longitude": 21.0185 },
+      "displayName": { "text": "Żabka", "languageCode": "pl" }
+    }
+  ]
+}
