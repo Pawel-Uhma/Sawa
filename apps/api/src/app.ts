@@ -1,13 +1,19 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
+import { createFakePlacesRepository } from "./adapters/supabase/fake-places-repository";
 import { AppError, toErrorBody } from "./lib/errors";
 import { createDebugRoutes } from "./routes/debug";
 import { healthRoutes } from "./routes/health";
+
+import { placeRoutes } from "./routes/places";
 import { createRouteRoutes } from "./routes/routes";
 import type { RoutePlanner } from "./services/plan-route";
+import type { PlacesRepository } from "./services/ports";
 
 export type AppServices = {
   routePlanner: RoutePlanner;
+  /** Defaults to the in-memory fake (tests, offline demo). */
+  places?: PlacesRepository;
 };
 
 export type AppConfig = {
@@ -40,7 +46,8 @@ export function createApp(config: AppConfig) {
     })
     .notFound((c) => c.json(toErrorBody("NOT_FOUND", "Route not found"), 404))
     .route("/", healthRoutes)
-    .route("/", createRouteRoutes(config.services.routePlanner));
+    .route("/", createRouteRoutes(config.services.routePlanner))
+    .route("/", placeRoutes(config.services.places ?? createFakePlacesRepository()));
 
   if (config.debugPages) app.route("/", createDebugRoutes());
   return app;

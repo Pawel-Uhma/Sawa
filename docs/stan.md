@@ -17,6 +17,8 @@
 
 - R1 (Szczepan, 14:00): planer działa na prawdziwych danych (GTFS + 326 miejsc z pliku), `POST /v1/routes/plan` i `GET /v1/routes/demo` w PR #4, podgląd na `http://localhost:8787/debug/planner` (`DEBUG_PAGES=1`). `Route.places` to już miejsca do opowieści, co najmniej 45 s od siebie (dla R4). Po ok. 20 min trasa wychodzi poza obszar z danymi.
 
+- R2 (Jasiek, 13:38): `GET /v1/places` i `GET /v1/places/:id` gotowe (kontrakt PR #6, trasy na nim). **R3:** mapa może brać `/v1/places?bbox=…`; **R4:** fakty i źródła z `/v1/places/:id` (`sources[].id` do cytowania, `unverifiedFacts` pomijać). **R1:** dodać `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY` na Railway.
+
 ## Zablokowane
 
 - Nic zgłoszonego. Dopisz tu blokadę od razu, z nazwiskiem osoby, która może ją odblokować.
@@ -35,13 +37,13 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 | Toalety: brak zbioru w portalu, OSM czy rezygnacja | R1 | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | Tryb „z wysiadaniem” (muzea): MVP czy po MVP | zespół | [10-prd.md](10-prd.md) |
 | Scraping muzeów i wystaw pod zainteresowania | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
-| Google Places: klucz każdego czy tylko Wikipedia | R2 + zespół | [05-plan-architektury.md](05-plan-architektury.md) |
 | API Bielika: gdzie hostowane, limity; zapasowy LLM | R4 | [05-plan-architektury.md](05-plan-architektury.md) |
 | Rozpoznawanie powracającego użytkownika bez konta | zespół (dodatek, jeśli zostanie czas) | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
 
 ## Ostatnie decyzje
 
+- 17.10, 13:43: Google Places tylko z danych pobranych 15–16.10 (warstwa `dzis`, 506 obiektów przy 224 miejscach, i 55 rekordów `g-*`), **bez zapytań na żywo i bez klucza**. W API jako `Place.todayNearby`; w UI podpis „Google Maps”. Warunki Google: treść max 30 dni, po hackathonie usunąć albo odświeżyć. Zdecydował Jasiek (R2). T-23 odpada.
 - 17.10, 13:31: bez dziennika AI. Hook `log-prompt.sh` usunięty, reguła `**AI:**` z `CLAUDE.md` wycofana, `ai-log.md` zostaje jako archiwum. Opis użycia AI na oddanie robi R2 (T-53). Zdecydował Jasiek (R2, właściciel T-53).
 - 17.10, 11:45: backend jako osobna usługa Hono (TypeScript) na Railway, monorepo pnpm, dokumenty po polsku, kod po angielsku, 4 role (R5 rozwiązana, zadania ma R2). Ustalone przez Szczepana, do potwierdzenia przez zespół. [12-plan-mvp.md](12-plan-mvp.md)
 

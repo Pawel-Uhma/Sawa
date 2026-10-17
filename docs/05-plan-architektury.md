@@ -71,7 +71,7 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
 
 - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
 - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token
-- [ ] Google Places: każdy zakłada własny klucz (1000 darmowych zapytań), cache w Supabase. Czy wystarczy Wikipedia?
+- [x] Google Places: tylko dane pobrane 15–16.10 (`places.today_nearby`), bez zapytań na żywo i bez klucza (17.10, 13:43, T-06).
 - [ ] Toalety: brak zbioru w portalu, sprawdzić OSM
 - [ ] Jak z rozkładu i pozycji pojazdów przewidzieć, jakie miejsca będą za oknem za X sekund
 - [ ] Które zbiory zwracają współrzędne (wydarzenia? zajęcia sportowe?). Sprawdzić w `docs/api/`

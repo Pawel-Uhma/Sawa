@@ -1,7 +1,13 @@
 import { serve } from "@hono/node-server";
+
 import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
+import {
+  createSupabaseClient,
+  createSupabasePlacesRepository,
+} from "./adapters/supabase/places-repository";
 import { createWawDepartureSource } from "./adapters/waw/departures";
+
 import { createApp } from "./app";
 import { loadEnv } from "./lib/env";
 import { createLogger } from "./lib/logger";
@@ -22,11 +28,23 @@ const routePlanner = createRoutePlanner({
   departures: createWawDepartureSource(env.WAW_TOKEN),
 });
 
+const placesRepository =
+  env.SUPABASE_URL && env.SUPABASE_SERVICE_ROLE_KEY
+    ? createSupabasePlacesRepository(
+        createSupabaseClient({
+          url: env.SUPABASE_URL,
+          serviceRoleKey: env.SUPABASE_SERVICE_ROLE_KEY,
+        }),
+      )
+    : undefined;
+if (!placesRepository)
+  logger.warn("SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set: serving fake places");
+
 const app = createApp({
   corsOrigins: env.CORS_ORIGINS,
   corsPreviewPattern: env.CORS_PREVIEW_PATTERN,
   debugPages: env.DEBUG_PAGES,
-  services: { routePlanner },
+  services: { routePlanner, places: placesRepository },
   onUnexpectedError: (err) => logger.error({ err }, "unhandled error"),
 });
 

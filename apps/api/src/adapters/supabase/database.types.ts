@@ -78,6 +78,7 @@ export type Database = {
           sources: Json;
           still_exists: boolean | null;
           summary_en: string | null;
+          today_nearby: Json;
           trivia: Json;
           unverified_facts: Json;
           updated_at: string;
@@ -106,6 +107,7 @@ export type Database = {
           sources?: Json;
           still_exists?: boolean | null;
           summary_en?: string | null;
+          today_nearby?: Json;
           trivia?: Json;
           unverified_facts?: Json;
           updated_at?: string;
@@ -134,6 +136,7 @@ export type Database = {
           sources?: Json;
           still_exists?: boolean | null;
           summary_en?: string | null;
+          today_nearby?: Json;
           trivia?: Json;
           unverified_facts?: Json;
           updated_at?: string;
