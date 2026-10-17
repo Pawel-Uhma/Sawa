@@ -1,28 +1,30 @@
 "use client";
 
+import { interestsOfTags, type Route } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
+import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import {
-  fetchPlacePins,
-  type PlacePin,
-  planRoute,
-  routeLine,
-  routeStops,
-  toPlannerInterests,
-} from "../lib/api-data";
+import type { MapCamera, MapPadding } from "@/features/map";
+import { planRoute, routeStops, toPlannerInterests } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
-import { type LngLat, type MockStop, USER_LOCATION } from "../lib/mock-data";
+import { type MockStop, USER_LOCATION } from "../lib/mock-data";
 import { EMPTY_PROFILE, type Profile } from "../lib/onboarding";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
 import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
-import { type MapCamera, type MapPadding, SawaMap } from "./sawa-map";
 import { type Tab, TabBar } from "./tab-bar";
 import { TabPlaceholder } from "./tab-placeholder";
 import { TopBar } from "./top-bar";
 
+// Mapa Antka (features/map). MapLibre potrzebuje window i WebGL, więc tylko w przeglądarce.
+const SawaMap = dynamic(() => import("@/features/map").then((mod) => mod.SawaMap), {
+  ssr: false,
+});
+
 type Stage = "onboarding" | "map" | "route";
+
+const USER = { lat: USER_LOCATION[1], lng: USER_LOCATION[0] };
 
 // Szerokość panelu (md: 360, lg: 400) i margines wokół niego, jak w route-sheet.tsx i home-panel.tsx
 const PANEL_PX = { tablet: 360, laptop: 400 };
@@ -37,40 +39,31 @@ export function DemoApp() {
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(90);
   const [route, setRoute] = useState<MockStop[]>([]);
-  const [line, setLine] = useState<LngLat[]>([]);
-  const [pins, setPins] = useState<PlacePin[]>([]);
+  const [planned, setPlanned] = useState<Route | null>(null);
   const [planning, setPlanning] = useState(false);
   const [planError, setPlanError] = useState<string | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [sheetCoverPx, setSheetCoverPx] = useState(360);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
 
-  // Miejsca z bazy na mapie ekranu głównego. Bez API mapa zostaje czysta, bez fałszywych pinów.
-  useEffect(() => {
-    let cancelled = false;
-    fetchPlacePins()
-      .then((list) => !cancelled && setPins(list))
-      .catch(() => !cancelled && setPins([]));
-    return () => {
-      cancelled = true;
-    };
+  const showRoute = useCallback((next: Route) => {
+    setPlanned(next);
+    setRoute(routeStops(next));
+    setActiveIndex(0);
+    setStage("route");
   }, []);
 
   const generateRoute = useCallback(async () => {
     setPlanning(true);
     setPlanError(null);
     try {
-      const planned = await planRoute(durationMin, profile.interests);
-      setRoute(routeStops(planned));
-      setLine(routeLine(planned));
-      setActiveIndex(0);
-      setStage("route");
+      showRoute(await planRoute(durationMin, profile.interests));
     } catch {
       setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
     } finally {
       setPlanning(false);
     }
-  }, [durationMin, profile.interests]);
+  }, [durationMin, profile.interests, showRoute]);
 
   // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
   useEffect(() => {
@@ -94,7 +87,7 @@ export function DemoApp() {
   }, []);
 
   // Mapa jest jedna pod wszystkimi ekranami. Ekrany zmieniają tylko kamerę i to, co na niej leży.
-  const isRoute = stage === "route" && route.length > 0;
+  const isRoute = stage === "route" && planned !== null && route.length > 0;
   const activeStop = route[activeIndex];
 
   const padding: MapPadding = useMemo(() => {
@@ -113,43 +106,35 @@ export function DemoApp() {
 
   const camera: MapCamera = useMemo(() => {
     if (isRoute && activeStop) {
-      return { kind: "center", coord: activeStop.coord, zoom: 15.4 };
+      const [lng, lat] = activeStop.coord;
+      return { type: "center", center: { lat, lng }, zoom: 15.4 };
     }
-    return { kind: "center", coord: USER_LOCATION, zoom: isDesktop ? 15.3 : 14.8 };
+    return { type: "center", center: USER, zoom: isDesktop ? 15.3 : 14.8 };
   }, [isRoute, activeStop, isDesktop]);
 
-  const stops = useMemo(
-    () =>
-      isRoute
-        ? route.map((stop, index) => ({
-            id: stop.id,
-            coord: stop.coord,
-            label: String(index + 1),
-            isActive: index === activeIndex,
-          }))
-        : [],
-    [isRoute, route, activeIndex],
-  );
-
   const storyInterests = useMemo(() => toPlannerInterests(profile.interests), [profile.interests]);
-
-  const showPins = stage === "map" && tab === "map" ? pins : [];
+  // Na mapie pusta lista znaczy „wszystkie miejsca”, więc bez zapasowej kategorii z planera.
+  const mapInterests = useMemo(() => interestsOfTags(profile.interests), [profile.interests]);
 
   return (
     <MotionConfig reducedMotion="user">
       <div className="fixed inset-0 overflow-hidden bg-mapa">
-        <SawaMap
-          user={USER_LOCATION}
-          camera={camera}
-          padding={padding}
-          pins={showPins}
-          stops={stops}
-          route={isRoute ? line : null}
-          onStopClick={(id) => {
-            const index = route.findIndex((stop) => stop.id === id);
-            if (index >= 0) setActiveIndex(index);
-          }}
-        />
+        <div className="absolute inset-0">
+          <SawaMap
+            interests={mapInterests}
+            route={isRoute ? (planned ?? undefined) : undefined}
+            camera={camera}
+            padding={padding}
+            user={USER}
+            activeStopId={isRoute ? activeStop?.id : undefined}
+            onStopClick={(id) => {
+              const index = route.findIndex((stop) => stop.id === id);
+              if (index >= 0) setActiveIndex(index);
+            }}
+            // Ekrany mają własne karty nad mapą; wbudowana karta miejsca wjechałaby pod nie
+            hasPlaceSheet={false}
+          />
+        </div>
 
         {/* Mgiełka pod paskiem statusu na telefonie */}
         <div className="mgla pointer-events-none absolute inset-x-0 top-0 z-10 h-28 md:hidden" />
@@ -184,16 +169,10 @@ export function DemoApp() {
                 setTab("map");
                 setStage("route");
               }}
-              onStart={(planned) => {
+              onStart={(preview) => {
                 setTab("map");
-                if (!planned) {
-                  generateRoute();
-                  return;
-                }
-                setRoute(routeStops(planned));
-                setLine(routeLine(planned));
-                setActiveIndex(0);
-                setStage("route");
+                if (preview) showRoute(preview);
+                else generateRoute();
               }}
             />
           )}

@@ -7190,3 +7190,11 @@
 > zrob Ekran przejazdczki
 
 **AI:** Zakładka Przejażdżki według makiety D (wybrana przez Pawła spośród: zakładka / ekran jazdy T-36): nowe `rides-panel.tsx` i `route-thumb.tsx` (miniatura trasy w SVG), zapowiedzi tras w `mock-data.ts`, wpięcie w `demo-app.tsx`, a `tab-placeholder.tsx` zostaje tylko dla Sawy. Podgląd trasy idzie z planera, zrzuty są w `docs/ui/wyniki/1446-*`, zadanie T-75.
+
+> czy pushnales zmiany antka jezeli chodzi o wyglad mapy? Widze ze mapa dalej jest w starej wersji
+
+**AI:** Nie. PR #16 Antka (`SawaMap` z kamerą i kropką użytkownika) czekał wtedy na merge, a ekrany demo i tak używały starej mapy z `features/demo`.
+
+> merguj mape antka, ma dzialac
+
+**AI:** PR #16 był już scalony, więc `main` wciągnięty do `r3/live`. `demo-app.tsx` przepięty na `SawaMap` z `@/features/map` (miejsca z API, trasa `Route`, aktywny przystanek, padding paneli), stara `features/demo/components/sawa-map.tsx` i `fetchPlacePins` usunięte. Sprawdzone z API na Railway na telefonie i desktopie, zrzuty w `docs/ui/wyniki/1454-mapa-antka-*`.

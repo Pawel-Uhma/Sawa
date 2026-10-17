@@ -21,6 +21,7 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 
 | Plik | Co pokazuje | Zadanie | Decyzja |
 |---|---|---|---|
+| [1454-mapa-antka-ekran-glowny-mobile](wyniki/1454-mapa-antka-ekran-glowny-mobile.png), [trasa mobile](wyniki/1454-mapa-antka-trasa-mobile.png), [trasa desktop](wyniki/1454-mapa-antka-trasa-desktop.png) | Ekrany demo na mapie Antka (`SawaMap` z `@/features/map`, PR #16): miejsca z `/v1/places` w kolorach rodzajów, kropka użytkownika, trasa z liniami i ponumerowanymi miejscami, aktywny przystanek | T-30 | |
 | [1446-przejazdzki-mobile](wyniki/1446-przejazdzki-mobile.png), [desktop](wyniki/1446-przejazdzki-desktop.png) | Zakładka Przejażdżki wg makiety D: przełącznik czasu (wspólny z suwakiem), karta „Wola, której nie ma” z miniaturą trasy z `POST /v1/routes/plan` (na zrzucie API lokalnie wyłączone, więc stan zastępczy), linie ZTM, liczba opowieści, „graj” startuje trasę; Śródmieście i Praga jako „Wkrótce” | T-75 | |
 | [1430-gesty-arkuszy-mobile](wyniki/1430-gesty-arkuszy-mobile.jpg) | Gesty: karta główna rozwinięta i ściągnięta pod pasek, arkusz trasy (środek, pełny), zwinięta karta zakładki. Arkusz zamyka się ściągnięciem w dół | T-33, T-35 | |
 | [1351-trasa-panel-desktop](wyniki/1351-trasa-panel-desktop.png) | Trasa na desktopie: pływający panel z odtwarzaczem i osią przystanków, mapa z trasą omija panel | T-67 | |

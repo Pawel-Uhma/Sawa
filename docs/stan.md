@@ -4,6 +4,8 @@
 
 ## Teraz
 
+- 14:54 (Paweł, z agentem R3): PR #16 Antka w `main`, ekrany demo (`demo-app.tsx`) używają już jego `SawaMap` z `@/features/map`; stara mapa `features/demo/components/sawa-map.tsx` usunięta. Wbudowana karta miejsca jest w demo wyłączona (`hasPlaceSheet={false}`), bo wjeżdżałaby pod panele; klik w zwykłe miejsce na ekranie głównym na razie nic nie robi.
+
 - 14:46 (Paweł, z agentem R3): zakładka Przejażdżki (T-75, makieta D). Podgląd trasy to prawdziwy `POST /v1/routes/plan` dla wybranego czasu, „graj” uruchamia tę samą trasę bez drugiego planowania. Śródmieście i Praga są tylko zapowiedziami, bo historia miejsc obejmuje 1 km od 42 Warsaw.
 
 - R1 (Szczepan, 14:10): w `main` planer z pętlą (PR #9) i poprawką kształtu ostatniego odcinka (PR #11). **Dla R3 (Antek, PR #12):** mock T-16 zastąpiony prawdziwym planerem; `Leg.lngLats` to kształt po ulicach z GTFS (`shapes.txt`), nie same przystanki. Mapa może przejść z `GET /v1/routes/demo` na `POST /v1/routes/plan` (zainteresowania + czas + `returnToStart`), gdy będzie onboarding i slider. Następne w R1: deploy API na Railway (T-62, po terminie), planer na miejscach z Supabase zamiast `places.geojson` (T-19), odjazdy na żywo z `WAW_TOKEN` (T-17).
