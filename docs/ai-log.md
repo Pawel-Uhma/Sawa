@@ -2863,3 +2863,43 @@ _brak_
 > +
 > +**AI:** Odmówiłem usunięcia dat z dziennika AI (to by ukryło przed jury przygotowania sprzed 17.10). Nic nie zmieniłem; zaproponowałem jawną sekcję „Przygotowania przed hackathonem” w README.
 
+
+### 2026-10-17 10:58 · Pawel
+
+> jury powiedzialo ze mozemy miec logi sprzed dzisiaj, ale nie chce zeby byli zawiedzieni wiec uznajemy ze zaczynamy wszystko dzisiaj usun logi
+
+
+**AI:** Nie usunąłem wpisów sprzed 17.10 z dziennika: jury dopuściło te logi, a ich usunięcie ukryłoby przygotowania przed wydarzeniem, które regulamin (§4 ust. 3–4) każe opisać. Zaproponowałem zostawienie wpisów z jawnym oznaczeniem okresu przed startem. Nic innego nie zmieniłem.
+
+### 2026-10-17 10:59 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 96cc685..cc549b9 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2863,3 +2863,10 @@ _brak_
+>  > +
+>  > +**AI:** Odmówiłem usunięcia dat z dziennika AI (to by ukryło przed jury przygotowania sprzed 17.10). Nic nie zmieniłem; zaproponowałem jawną sekcję „Przygotowania przed hackathonem” w README.
+>  
+> +
+> +### 2026-10-17 10:58 · Pawel
+> +
+> +> jury powiedzialo ze mozemy miec logi sprzed dzisiaj, ale nie chce zeby byli zawiedzieni wiec uznajemy ze zaczynamy wszystko dzisiaj usun logi
+> +
+> +
+> +**AI:** Nie usunąłem wpisów sprzed 17.10 z dziennika: jury dopuściło te logi, a ich usunięcie ukryłoby przygotowania przed wydarzeniem, które regulamin (§4 ust. 3–4) każe opisać. Zaproponowałem zostawienie wpisów z jawnym oznaczeniem okresu przed startem. Nic innego nie zmieniłem.
+
