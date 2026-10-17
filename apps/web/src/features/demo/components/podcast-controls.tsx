@@ -6,7 +6,7 @@ import { Spinner } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { haptic, SPRING } from "../lib/device";
 import type { MockStop } from "../lib/mock-data";
-import { formatClock, inMinutes } from "../lib/podcast";
+import { formatClock, inMinutes, splitName } from "../lib/podcast";
 import { dueIndex, storyStartSec } from "../lib/ride-clock";
 import {
   ChevronLeftIcon,
@@ -28,7 +28,7 @@ function thumbAt(fraction: number): string {
   return `calc(${THUMB_HALF_PX}px + (100% - ${2 * THUMB_HALF_PX}px) * ${fraction})`;
 }
 
-export type PodcastControlsProps = {
+export type PodcastProps = {
   stops: MockStop[];
   activeIndex: number;
   /** Czas jazdy (zegar jazdy) i długość całej przejażdżki, w sekundach. */
@@ -41,16 +41,9 @@ export type PodcastControlsProps = {
   held?: boolean;
   /** Opowieść o bieżącym miejscu jeszcze się ładuje (tekst albo głos). */
   loading: boolean;
-  onToggle: () => void;
-  onStop: () => void;
-  onBack: () => void;
-  onNext: () => void;
-  onMore: () => void;
-  /** Puszczenie suwaka: przejażdżka przeskakuje do tej sekundy. */
-  onSeek: (sec: number) => void;
-  /** Wyjście z trasy do planu. */
-  onLeave: () => void;
 };
+
+export type Podcast = ReturnType<typeof usePodcast>;
 
 /** Pulsująca kropka „na żywo”; przy pauzie stoi i szarzeje. */
 export function LiveDot({ on }: { on: boolean }) {
@@ -72,11 +65,10 @@ export function LiveDot({ on }: { on: boolean }) {
 }
 
 /**
- * Sterowanie opowieścią, ułożone jak „teraz odtwarzane” w Podcastach: status i numer miejsca,
- * duża nazwa, jedno zdanie o tym, co dalej, suwak całej przejażdżki, trzy przyciski transportu,
- * a pod nimi rzadsze akcje. Przeciąganie suwaka tylko pokazuje cel, przeskok następuje po puszczeniu.
+ * Wspólny stan nagłówka i doku. Przeciąganie suwaka tylko pokazuje cel (nazwa w nagłówku
+ * zmienia się już w trakcie), przeskok następuje po puszczeniu.
  */
-export function PodcastControls({
+export function usePodcast({
   stops,
   activeIndex,
   rideSec,
@@ -85,15 +77,7 @@ export function PodcastControls({
   waiting,
   held = false,
   loading,
-  onToggle,
-  onStop,
-  onBack,
-  onNext,
-  onMore,
-  onSeek,
-  onLeave,
-}: PodcastControlsProps) {
-  const reduce = useReducedMotion();
+}: PodcastProps) {
   const lang = useLang();
   const t = useT();
   const [dragSec, setDragSec] = useState<number | null>(null);
@@ -103,14 +87,6 @@ export function PodcastControls({
   const index = dragging ? dueIndex(stops, dragSec) : activeIndex;
   const stop = stops[index];
   const next = stops[index + 1];
-  const hasNext = activeIndex < stops.length - 1;
-
-  function commit() {
-    if (dragSec === null) return;
-    haptic();
-    onSeek(dragSec);
-    setDragSec(null);
-  }
 
   // Odtwarzanie włączone, a opowieści jeszcze nie ma: jak „buforowanie” w Podcastach
   const buffering = isPlaying && loading && !waiting && !dragging;
@@ -124,7 +100,7 @@ export function PodcastControls({
           ? t("Teraz", "Now")
           : t("Wstrzymane", "Paused");
 
-  // Jedno zdanie pod nazwą: przed pierwszym miejscem kiedy Sawa zacznie, potem co dalej
+  // Jedno zdanie nad suwakiem: przed pierwszym miejscem kiedy Sawa zacznie, potem co dalej
   const hint =
     waiting && !dragging && stop
       ? {
@@ -135,7 +111,7 @@ export function PodcastControls({
       : next
         ? {
             lead: t("Dalej", "Next"),
-            name: next.name,
+            name: splitName(next.name).title,
             when: inMinutes(storyStartSec(next) - sec, lang),
           }
         : {
@@ -143,6 +119,34 @@ export function PodcastControls({
             name: null,
             when: null,
           };
+
+  return {
+    stops,
+    index,
+    stop,
+    sec,
+    total,
+    dragSec,
+    setDragSec,
+    isPlaying,
+    waiting,
+    held,
+    buffering,
+    status,
+    hint,
+    hasNext: activeIndex < stops.length - 1,
+  };
+}
+
+/**
+ * Góra ekranu, jak „teraz odtwarzane” z tekstem w Muzyce: status i numer miejsca, duża nazwa,
+ * pod nią adres. Zapis opowieści idzie zaraz pod tym, sterowanie jest w doku na dole.
+ */
+export function PodcastHeader({ podcast, onLeave }: { podcast: Podcast; onLeave: () => void }) {
+  const reduce = useReducedMotion();
+  const t = useT();
+  const { stop, stops, index, status, buffering, isPlaying } = podcast;
+  const name = stop ? splitName(stop.name) : null;
 
   return (
     <div className="flex flex-col">
@@ -164,18 +168,61 @@ export function PodcastControls({
       </div>
 
       <AnimatePresence mode="popLayout" initial={false}>
-        <motion.h2
+        <motion.div
           key={stop?.id ?? "none"}
           initial={reduce ? { opacity: 0 } : { opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           exit={reduce ? { opacity: 0 } : { opacity: 0, y: -8 }}
           transition={SPRING}
-          className="mt-2 line-clamp-2 text-[26px] font-extrabold leading-[1.12] tracking-[-0.03em] text-tekst"
+          className="mt-1.5"
         >
-          {stop?.name ?? t("Trasa", "Route")}
-        </motion.h2>
+          <h2 className="line-clamp-2 text-[24px] font-extrabold leading-[1.15] tracking-[-0.03em] text-tekst">
+            {name?.title ?? t("Trasa", "Route")}
+          </h2>
+          {name?.sub && <p className="mt-1 truncate text-sm text-tekst-2">{name.sub}</p>}
+        </motion.div>
       </AnimatePresence>
-      <p className="mt-1.5 flex min-w-0 items-baseline gap-1.5 text-sm text-tekst-2">
+    </div>
+  );
+}
+
+export type PodcastDockProps = {
+  podcast: Podcast;
+  onToggle: () => void;
+  onStop: () => void;
+  onBack: () => void;
+  onNext: () => void;
+  onMore: () => void;
+  /** Puszczenie suwaka: przejażdżka przeskakuje do tej sekundy. */
+  onSeek: (sec: number) => void;
+};
+
+/**
+ * Dok przy dolnej krawędzi, pod kciukiem: co dalej, suwak całej przejażdżki i jeden rząd
+ * przycisków. Rzadsze akcje („Więcej”, stop) są ikonami po bokach transportu, jak w Muzyce.
+ */
+export function PodcastDock({
+  podcast,
+  onToggle,
+  onStop,
+  onBack,
+  onNext,
+  onMore,
+  onSeek,
+}: PodcastDockProps) {
+  const t = useT();
+  const { stops, stop, sec, total, dragSec, setDragSec, hint, buffering, isPlaying } = podcast;
+
+  function commit() {
+    if (dragSec === null) return;
+    haptic();
+    onSeek(dragSec);
+    setDragSec(null);
+  }
+
+  return (
+    <div className="flex flex-col">
+      <p className="flex min-w-0 items-baseline gap-1.5 text-[13px] text-tekst-2">
         <span className="min-w-0 truncate">
           {hint.lead}
           {hint.name && (
@@ -187,7 +234,7 @@ export function PodcastControls({
         {hint.when && <span className="shrink-0 tabular-nums text-tekst-3">· {hint.when}</span>}
       </p>
 
-      <div className="mt-4">
+      <div className="mt-2">
         <div className="relative">
           {stops.length <= MAX_DOTS &&
             stops.map((s) => (
@@ -222,66 +269,66 @@ export function PodcastControls({
         </div>
       </div>
 
-      <div className="mt-3 flex items-center justify-center gap-7">
-        <RoundButton label={t("Wstecz", "Back")} onClick={onBack}>
-          <SkipPrevIcon className="size-7" />
-        </RoundButton>
-        <motion.button
-          type="button"
-          onClick={() => {
-            haptic();
-            onToggle();
-          }}
-          aria-label={
-            isPlaying
-              ? t("Wstrzymaj Sawę", "Pause Sawa")
-              : waiting && !held
-                ? t("Opowiedz teraz", "Tell me now")
-                : t("Wznów Sawę", "Resume Sawa")
-          }
-          aria-busy={buffering}
-          whileTap={{ scale: 0.92 }}
-          transition={SPRING}
-          className="relative flex size-[68px] items-center justify-center rounded-full bg-glebia text-white shadow-[0_8px_20px_rgba(23,112,111,0.3)] transition-colors hover:bg-glebia-ciemna"
-        >
-          <BufferRing show={buffering} />
-          <AnimatePresence mode="popLayout" initial={false}>
-            <motion.span
-              key={isPlaying ? "pause" : "play"}
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.5, opacity: 0 }}
-              transition={{ type: "spring", bounce: 0, duration: 0.25 }}
-            >
-              {isPlaying ? (
-                <PauseIcon className="size-8" />
-              ) : (
-                <PlayIcon className="size-8 translate-x-[2px]" />
-              )}
-            </motion.span>
-          </AnimatePresence>
-        </motion.button>
-        <RoundButton
-          label={t("Następne miejsce", "Next place")}
-          onClick={onNext}
-          disabled={!hasNext}
-        >
-          <SkipNextIcon className="size-7" />
-        </RoundButton>
-      </div>
-
-      <div className="mt-4 flex items-center justify-between gap-3">
+      <div className="mt-1 flex items-center justify-between">
         <button
           type="button"
           onClick={() => {
             haptic(4);
             onMore();
           }}
-          className="flex h-9 items-center gap-1.5 rounded-full bg-mieta-jasna pl-3 pr-3.5 text-[13px] font-bold text-glebia-ciemna transition-transform active:scale-[0.96]"
+          aria-label={t("Więcej o tym miejscu", "More about this place")}
+          title={t("Więcej o tym miejscu", "More about this place")}
+          className="flex size-11 items-center justify-center rounded-full bg-mieta-jasna text-glebia-ciemna transition-transform active:scale-[0.92]"
         >
-          <SparkIcon className="size-4" />
-          {t("Więcej o tym miejscu", "More about this place")}
+          <SparkIcon className="size-5" />
         </button>
+        <div className="flex items-center gap-4">
+          <RoundButton label={t("Wstecz", "Back")} onClick={onBack}>
+            <SkipPrevIcon className="size-7" />
+          </RoundButton>
+          <motion.button
+            type="button"
+            onClick={() => {
+              haptic();
+              onToggle();
+            }}
+            aria-label={
+              isPlaying
+                ? t("Wstrzymaj Sawę", "Pause Sawa")
+                : podcast.waiting && !podcast.held
+                  ? t("Opowiedz teraz", "Tell me now")
+                  : t("Wznów Sawę", "Resume Sawa")
+            }
+            aria-busy={buffering}
+            whileTap={{ scale: 0.92 }}
+            transition={SPRING}
+            className="relative flex size-[68px] items-center justify-center rounded-full bg-glebia text-white shadow-[0_8px_20px_rgba(23,112,111,0.3)] transition-colors hover:bg-glebia-ciemna"
+          >
+            <BufferRing show={buffering} />
+            <AnimatePresence mode="popLayout" initial={false}>
+              <motion.span
+                key={isPlaying ? "pause" : "play"}
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.5, opacity: 0 }}
+                transition={{ type: "spring", bounce: 0, duration: 0.25 }}
+              >
+                {isPlaying ? (
+                  <PauseIcon className="size-8" />
+                ) : (
+                  <PlayIcon className="size-8 translate-x-[2px]" />
+                )}
+              </motion.span>
+            </AnimatePresence>
+          </motion.button>
+          <RoundButton
+            label={t("Następne miejsce", "Next place")}
+            onClick={onNext}
+            disabled={!podcast.hasNext}
+          >
+            <SkipNextIcon className="size-7" />
+          </RoundButton>
+        </div>
         <button
           type="button"
           onClick={() => {
@@ -292,10 +339,10 @@ export function PodcastControls({
             "Zatrzymaj i wróć na początek opowieści",
             "Stop and go back to the start of the story",
           )}
-          className="flex h-9 items-center gap-1.5 rounded-full px-3 text-[13px] font-semibold text-tekst-2 transition-[transform,background-color] hover:bg-tlo-2 active:scale-[0.96]"
+          title={t("Zatrzymaj", "Stop")}
+          className="flex size-11 items-center justify-center rounded-full text-tekst-2 transition-[transform,background-color] hover:bg-tlo-2 active:scale-[0.92]"
         >
           <StopIcon className="size-3.5" />
-          {t("Zatrzymaj", "Stop")}
         </button>
       </div>
     </div>
