@@ -24,6 +24,8 @@ export type WalkOptions = {
   /** Best-scoring reachable places considered as stops. */
   maxCandidates: number;
   maxBudgetShare: number;
+  /** Cost of walking back along the way already walked, per budget share (see beam search). */
+  backtrackPenalty: number;
 };
 
 export const DEFAULT_WALK_OPTIONS: WalkOptions = {
@@ -33,6 +35,7 @@ export const DEFAULT_WALK_OPTIONS: WalkOptions = {
   maxStops: 8,
   maxCandidates: 40,
   maxBudgetShare: 1.1,
+  backtrackPenalty: 2,
 };
 
 export type Walk = {
@@ -46,7 +49,13 @@ export type Walk = {
   lastPlaceId?: string;
 };
 
-type State = Walk & { at: LatLng; visited: ReadonlySet<string>; key: string };
+type State = Walk & {
+  at: LatLng;
+  visited: ReadonlySet<string>;
+  key: string;
+  /** Seconds walked along segments walked before (going back the same way). */
+  retracedSec: number;
+};
 
 const M_PER_DEG_LAT = 111_320;
 
@@ -58,6 +67,34 @@ export function toSegment(p: LatLng, a: LatLng, b: LatLng): { distanceM: number;
   const len2 = bx * bx + by * by;
   const t = len2 === 0 ? 0 : Math.max(0, Math.min(1, (px * bx + py * by) / len2));
   return { distanceM: Math.hypot(px - t * bx, py - t * by), t };
+}
+
+/** A walk this close to a segment walked before goes along it again. */
+const RETRACE_M = 30;
+/** Sample spacing along a new segment when checking it against the way so far. */
+const RETRACE_STEP_M = 20;
+
+/**
+ * Share (0–1) of the straight walk `from` → `to` that runs within `RETRACE_M` of the walk
+ * through `waypoints`. The first stretch is skipped: every turn starts next to the last segment.
+ */
+export function retracedShare(waypoints: LatLng[], from: LatLng, to: LatLng): number {
+  const lengthM = haversineM(from, to);
+  const samples = Math.floor(lengthM / RETRACE_STEP_M);
+  if (samples === 0 || waypoints.length < 2) return 0;
+  let near = 0;
+  for (let i = 1; i <= samples; i++) {
+    const t = i / samples;
+    if (t * lengthM < 2 * RETRACE_M) continue;
+    const p = { lat: from.lat + t * (to.lat - from.lat), lng: from.lng + t * (to.lng - from.lng) };
+    for (let k = 1; k < waypoints.length; k++) {
+      if (toSegment(p, waypoints[k - 1] as LatLng, waypoints[k] as LatLng).distanceM <= RETRACE_M) {
+        near++;
+        break;
+      }
+    }
+  }
+  return near / samples;
 }
 
 export type Segment = { from: LatLng; to: LatLng; startSec: number; sec: number };
@@ -119,6 +156,7 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
     );
     const visited = new Set(state.visited);
     for (const g of gained) visited.add(g.placeId);
+    const retracedSec = state.retracedSec + sec * retracedShare(state.waypoints, state.at, to);
     return {
       waypoints: [...state.waypoints, to],
       places: [...state.places, ...gained],
@@ -128,12 +166,15 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
       visited,
       key: `${state.key}|${key}`,
       lastPlaceId: key === "end" ? undefined : key,
+      retracedSec,
     };
   }
 
   const finish = (s: State) => (input.end ? walkTo(s, input.end, "end") : s);
   const objective = (s: State) =>
-    s.score - Math.abs(s.elapsedSec - input.budgetSec) / input.budgetSec;
+    s.score -
+    Math.abs(s.elapsedSec - input.budgetSec) / input.budgetSec -
+    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec;
   const byObjective = (a: State, b: State) =>
     objective(b) - objective(a) || a.key.localeCompare(b.key);
 
@@ -145,6 +186,7 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
     at: input.origin,
     visited: new Set(),
     key: "start",
+    retracedSec: 0,
   };
   const done: State[] = [finish(start)];
   let beam = [start];
