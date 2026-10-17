@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   isSawaSpeaking,
   type MusicEvent,
+  musicPlays,
   noteHz,
   parseMusicPreference,
   shouldSwitchTrack,
@@ -129,6 +130,25 @@ describe("isSawaSpeaking", () => {
     expect(isSawaSpeaking({ ...playing, loading: true })).toBe(false);
     expect(isSawaSpeaking({ ...playing, failed: true })).toBe(false);
     expect(isSawaSpeaking({ ...playing, progress: 100 })).toBe(false);
+  });
+});
+
+describe("musicPlays", () => {
+  const riding = { onRoute: true, held: false, waiting: false, isPlaying: true };
+
+  it("plays while Sawa tells stories and while she waits for the first place", () => {
+    expect(musicPlays(riding)).toBe(true);
+    expect(musicPlays({ ...riding, isPlaying: false, waiting: true })).toBe(true);
+  });
+
+  it("stops together with Sawa", () => {
+    expect(musicPlays({ ...riding, held: true, isPlaying: false })).toBe(false);
+    expect(musicPlays({ ...riding, isPlaying: false })).toBe(false);
+    expect(musicPlays({ ...riding, held: true, waiting: true, isPlaying: false })).toBe(false);
+  });
+
+  it("is silent off the route", () => {
+    expect(musicPlays({ ...riding, onRoute: false })).toBe(false);
   });
 });
 

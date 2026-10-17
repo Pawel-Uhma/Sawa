@@ -211,6 +211,16 @@ export function isSawaSpeaking({ isPlaying, loading, failed, progress }: SpeechS
   return isPlaying && !loading && !failed && progress < 100;
 }
 
+export type RideSound = { onRoute: boolean; held: boolean; waiting: boolean; isPlaying: boolean };
+
+/**
+ * Muzyka gra razem z Sawą: na trasie, póki Sawa opowiada albo czeka na pierwsze miejsce.
+ * Każda pauza Sawy (przycisk albo przeglądarka, która zablokowała głos) zatrzymuje też muzykę.
+ */
+export function musicPlays({ onRoute, held, waiting, isPlaying }: RideSound): boolean {
+  return onRoute && !held && (isPlaying || waiting);
+}
+
 /** localStorage: muzyka jest domyślnie włączona, zapisujemy tylko wyłączenie. */
 export const MUSIC_STORAGE_KEY = "sawa-music";
 
