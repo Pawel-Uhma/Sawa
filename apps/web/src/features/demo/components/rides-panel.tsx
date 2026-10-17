@@ -1,6 +1,6 @@
 "use client";
 
-import type { Route } from "@sawa/shared";
+import type { Leg, Route } from "@sawa/shared";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { planRoute, routeLine } from "../lib/api-data";
@@ -234,15 +234,15 @@ function UpcomingRide({ ride }: { ride: RidePreview }) {
   );
 }
 
-/** Numer linii ZTM w barwach pojazdu: tramwaj czerwony, autobus granatowy (jak w makiecie D). */
-function LineBadge({ line, mode }: { line: string; mode: "tram" | "bus" }) {
+/** Numer linii ZTM w barwach pojazdu: tramwaj czerwony, autobus granatowy (jak w makiecie D); pieszo szary. */
+function LineBadge({ line, mode }: { line: string; mode: Leg["mode"] }) {
   return (
     <span
       className={`inline-grid h-5 min-w-[26px] place-items-center rounded-[5px] px-1 text-[11.5px] font-extrabold text-white ${
-        mode === "tram" ? "bg-[#C8102E]" : "bg-[#1F2A44]"
+        mode === "tram" ? "bg-[#C8102E]" : mode === "walk" ? "bg-[#6b7280]" : "bg-[#1F2A44]"
       }`}
     >
-      {line}
+      {mode === "walk" ? "pieszo" : line}
     </span>
   );
 }

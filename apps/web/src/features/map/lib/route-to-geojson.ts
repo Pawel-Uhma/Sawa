@@ -44,11 +44,17 @@ export type RoutePlaceFeature = {
 
 export type FeatureCollection<F> = { type: "FeatureCollection"; features: F[] };
 
-/** For each leg, the index of the line it belongs to; a new line starts when `line` changes. */
+/**
+ * For each leg, the index of the line it belongs to; a new line starts when `line` changes.
+ * Walk legs belong to no line (-1) and don't break a line that continues after them.
+ */
 export function lineIndexes(route: Route): number[] {
   let index = -1;
-  return route.legs.map((leg, i) => {
-    if (i === 0 || leg.line !== route.legs[i - 1].line) index += 1;
+  let previous: string | undefined;
+  return route.legs.map((leg) => {
+    if (leg.mode === "walk") return -1;
+    if (leg.line !== previous) index += 1;
+    previous = leg.line;
     return index;
   });
 }
@@ -59,7 +65,7 @@ export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeat
     type: "FeatureCollection",
     features: route.legs
       .map((leg, legIndex) => ({ leg, legIndex }))
-      .filter(({ leg }) => leg.lngLats.length >= 2)
+      .filter(({ leg }) => leg.mode !== "walk" && leg.lngLats.length >= 2)
       .map(({ leg, legIndex }) => ({
         type: "Feature",
         geometry: { type: "LineString", coordinates: leg.lngLats },
@@ -81,7 +87,10 @@ export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBo
     type: "FeatureCollection",
     features: route.legs
       .map((leg, legIndex) => ({ leg, legIndex }))
-      .filter(({ legIndex }) => legIndex === 0 || lines[legIndex] !== lines[legIndex - 1])
+      .filter(
+        ({ legIndex }) =>
+          lines[legIndex] >= 0 && !lines.slice(0, legIndex).includes(lines[legIndex]),
+      )
       .map(({ leg, legIndex }) => ({
         type: "Feature",
         geometry: { type: "Point", coordinates: toLngLat(leg.fromStop.position) },
@@ -90,29 +99,51 @@ export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBo
           mode: leg.mode,
           color: lineColor(lines[legIndex]),
           stopName: leg.fromStop.name,
-          isTransfer: legIndex > 0,
+          isTransfer: lines[legIndex] > 0,
         },
       })),
   };
 }
 
-/** Walks at transfers where the next leg starts at a different stop than the previous one ended. */
+/**
+ * Walk legs, plus walks at transfers where the next leg starts at a different stop than the
+ * previous one ended.
+ */
 export function routeWalksToGeoJson(route: Route): FeatureCollection<RouteWalkFeature> {
+  const walkLegs: RouteWalkFeature[] = route.legs.flatMap((leg, legIndex) =>
+    leg.mode === "walk"
+      ? [
+          {
+            type: "Feature" as const,
+            geometry: {
+              type: "LineString" as const,
+              coordinates:
+                leg.lngLats.length >= 2
+                  ? leg.lngLats
+                  : [toLngLat(leg.fromStop.position), toLngLat(leg.toStop.position)],
+            },
+            properties: { legIndex },
+          },
+        ]
+      : [],
+  );
   return {
     type: "FeatureCollection",
-    features: route.legs.slice(1).flatMap((leg, i) => {
-      const previous = route.legs[i];
-      const from = previous.lngLats.at(-1) ?? toLngLat(previous.toStop.position);
-      const to = leg.lngLats[0] ?? toLngLat(leg.fromStop.position);
-      if (from[0] === to[0] && from[1] === to[1]) return [];
-      return [
-        {
-          type: "Feature" as const,
-          geometry: { type: "LineString" as const, coordinates: [from, to] },
-          properties: { legIndex: i + 1 },
-        },
-      ];
-    }),
+    features: walkLegs.concat(
+      route.legs.slice(1).flatMap((leg, i) => {
+        const previous = route.legs[i];
+        const from = previous.lngLats.at(-1) ?? toLngLat(previous.toStop.position);
+        const to = leg.lngLats[0] ?? toLngLat(leg.fromStop.position);
+        if (from[0] === to[0] && from[1] === to[1]) return [];
+        return [
+          {
+            type: "Feature" as const,
+            geometry: { type: "LineString" as const, coordinates: [from, to] },
+            properties: { legIndex: i + 1 },
+          },
+        ];
+      }),
+    ),
   };
 }
 

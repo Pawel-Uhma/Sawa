@@ -14,13 +14,38 @@ import {
   STORY_STYLES,
 } from "../lib/onboarding";
 import { Logo } from "./logo";
+import { Heading } from "./onboarding-heading";
+import { How, Legend, Why } from "./onboarding-intro";
 import { PrimaryButton } from "./primary-button";
 import { SAWA_POSES, SawaGuide, type SawaPose, sawaSrc } from "./sawa-guide";
 
-export type OnboardingStep = "welcome" | "familiarity" | "interests" | "style" | "building";
+export type OnboardingStep =
+  | "welcome"
+  | "legend"
+  | "why"
+  | "how"
+  | "familiarity"
+  | "interests"
+  | "style"
+  | "building";
 
-const ORDER: OnboardingStep[] = ["welcome", "familiarity", "interests", "style", "building"];
-const QUESTIONS: OnboardingStep[] = ["familiarity", "interests", "style"];
+// Wstęp (legend, why, how) tłumaczy, czym jest Sawa, komuś, kto widzi ją pierwszy raz. Potem 3 pytania.
+const ORDER: OnboardingStep[] = [
+  "welcome",
+  "legend",
+  "why",
+  "how",
+  "familiarity",
+  "interests",
+  "style",
+  "building",
+];
+const INTRO: OnboardingStep[] = ["legend", "why", "how"];
+/** Kroki z paskiem postępu i strzałką wstecz. */
+const PAGED: OnboardingStep[] = ORDER.slice(1, -1);
+// Przesunięcie albo rzut palcem, po którym wstęp przewija się na następną stronę.
+const SWIPE_PX = 64;
+const SWIPE_VELOCITY = 500;
 
 // Po jednym tapnięciu przy wyborze jednokrotnym przechodzimy dalej, ale z chwilą na zobaczenie zaznaczenia.
 const AUTO_ADVANCE_MS = 320;
@@ -28,7 +53,10 @@ const BUILD_LINE_MS = 650;
 
 const POSE: Record<OnboardingStep, SawaPose> = {
   welcome: "macha",
-  familiarity: "mapa",
+  legend: "sekret",
+  why: "mysli",
+  how: "mapa",
+  familiarity: "macha",
   interests: "mysli",
   style: "sekret",
   building: "radosc",
@@ -90,8 +118,14 @@ export function OnboardingFlow({
   }
 
   const say = sawaLine(step, profile);
-  const questionIndex = QUESTIONS.indexOf(step);
-  const showChrome = step !== "welcome" && step !== "building";
+  const showChrome = PAGED.includes(step);
+  const isIntro = INTRO.includes(step);
+
+  // Wstęp przewija się palcem jak strony w iOS; pytania nie, żeby gest nie mylił się z wyborem.
+  function onSwipe(offsetX: number, velocityX: number) {
+    if (offsetX < -SWIPE_PX || velocityX < -SWIPE_VELOCITY) go(nextOf(step));
+    else if (offsetX > SWIPE_PX || velocityX > SWIPE_VELOCITY) go(prevOf(step));
+  }
 
   // Wejście z kierunku kroku, wyjście w przeciwną stronę: wstecz cofa się tą samą drogą.
   const slide = {
@@ -131,7 +165,7 @@ export function OnboardingFlow({
             ) : (
               <Logo className="text-2xl md:text-3xl" />
             )}
-            {showChrome && <Progress index={questionIndex} total={QUESTIONS.length} />}
+            {showChrome && <Progress index={PAGED.indexOf(step)} />}
           </header>
 
           <div className={step === "welcome" ? "pt-6 md:pt-0" : ""}>
@@ -150,9 +184,19 @@ export function OnboardingFlow({
               animate="center"
               exit="exit"
               transition={SPRING}
+              drag={isIntro && !reduce ? "x" : false}
+              dragDirectionLock
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={(_, info) => onSwipe(info.offset.x, info.velocity.x)}
               className="flex flex-1 flex-col md:flex-none"
             >
-              {step === "welcome" && <Welcome onStart={() => go("familiarity")} />}
+              {step === "welcome" && (
+                <Welcome onStart={() => go("legend")} onSkipIntro={() => go("familiarity")} />
+              )}
+              {step === "legend" && <Legend onNext={() => go("why")} />}
+              {step === "why" && <Why onNext={() => go("how")} />}
+              {step === "how" && <How onNext={() => go("familiarity")} />}
               {step === "familiarity" && (
                 <SingleChoice
                   title="Jak dobrze znasz Warszawę?"
@@ -191,9 +235,15 @@ export function OnboardingFlow({
 function sawaLine(step: OnboardingStep, profile: Profile): string {
   switch (step) {
     case "welcome":
-      return "Cześć! Jestem Sawa, syrenka z herbu.";
+      return "Cześć! Jestem Sawa, syrenka z herbu Warszawy.";
+    case "legend":
+      return "Mam imię po syrenie z legendy o Warszawie.";
+    case "why":
+      return "Pokażę Ci miasto, które mijasz codziennie.";
+    case "how":
+      return "To proste: trzy kroki i jedziemy.";
     case "familiarity":
-      return "Najpierw powiedz, czy znamy się z Warszawą.";
+      return "Teraz o Tobie. Znasz Warszawę?";
     case "interests": {
       const last = profile.interests.at(-1);
       if (!last) return "Co Cię ciekawi? Możesz wybrać kilka.";
@@ -215,18 +265,22 @@ const INTEREST_LINE: Record<string, string> = {
   nature: "Parki i skwery! O nich opowiem krótko.",
 };
 
-function Progress({ index, total }: { index: number; total: number }) {
+function Progress({ index }: { index: number }) {
   return (
     <div
       role="progressbar"
       aria-label="Postęp"
       aria-valuemin={1}
-      aria-valuemax={total}
+      aria-valuemax={PAGED.length}
       aria-valuenow={index + 1}
       className="flex flex-1 gap-1.5"
     >
-      {QUESTIONS.slice(0, total).map((segment, i) => (
-        <div key={segment} className="h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10">
+      {PAGED.map((segment, i) => (
+        // Większa przerwa oddziela wstęp od pytań.
+        <div
+          key={segment}
+          className={`h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10 ${segment === "familiarity" ? "ml-2" : ""}`}
+        >
           <motion.div
             className="h-full origin-left rounded-full bg-glebia"
             initial={false}
@@ -239,25 +293,7 @@ function Progress({ index, total }: { index: number; total: number }) {
   );
 }
 
-function Heading({ children, sub }: { children: string; sub?: string }) {
-  const ref = useRef<HTMLHeadingElement>(null);
-  // Fokus na nagłówku nowego kroku: czytnik ekranu od razu czyta pytanie.
-  useEffect(() => ref.current?.focus({ preventScroll: true }), []);
-  return (
-    <div className="flex flex-col gap-2 md:gap-3">
-      <h1
-        ref={ref}
-        tabIndex={-1}
-        className="text-[28px] font-extrabold leading-[1.1] tracking-[-0.02em] outline-none md:text-5xl md:leading-[1.05] md:tracking-[-0.025em]"
-      >
-        {children}
-      </h1>
-      {sub && <p className="text-[15px] leading-relaxed text-tekst-2 md:text-lg">{sub}</p>}
-    </div>
-  );
-}
-
-function Welcome({ onStart }: { onStart: () => void }) {
+function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: () => void }) {
   return (
     <div className="flex flex-1 flex-col gap-8 md:gap-10">
       <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-left">
@@ -296,9 +332,16 @@ function Welcome({ onStart }: { onStart: () => void }) {
           Poznajmy się
         </PrimaryButton>
         <p className="text-center text-sm text-tekst-3 md:text-left">
-          3 pytania · ok. 15 sekund · bez logowania
+          ok. minuty · bez logowania i instalacji
         </p>
       </div>
+      <button
+        type="button"
+        onClick={onSkipIntro}
+        className="-mt-4 mx-auto h-11 rounded-full px-4 text-sm font-semibold text-tekst-3 transition-colors hover:text-tekst-2 md:mx-0 md:-mt-6"
+      >
+        Znam Sawę, przejdź do pytań
+      </button>
     </div>
   );
 }

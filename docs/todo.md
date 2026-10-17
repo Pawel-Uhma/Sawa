@@ -37,6 +37,7 @@
 - [x] **T-76** Odjazdy z rozkładu ZTM dla każdego odcinka trasy, także przesiadek, `Leg.realDeparture` w kontrakcie — `R1` — (Szczepan, 15:00, PR #19; z prawdziwym tokenem do sprawdzenia w T-17)
 - [x] **T-77** Odpowiedzi z onboardingu w planerze: znajomość miasta, styl opowieści; web wysyła je z `planRoute` — `R1` — (Szczepan, 16:30, PR #22; 17:20 bez kafelków `tags`, front ma tylko 4 kategorie)
 - [x] **T-78** Pamięć słuchacza (opowiedziane fakty i tło w telefonie, `heard` w planerze, `heardFacts`/`knownContexts` w opowieściach) i onboarding z 4 kategoriami — `R3` — (Paweł z agentem, 16:40; zmiana w `score.ts` R1 na polecenie Pawła, do akceptacji Szczepana)
+- [x] **T-79** Trasy od 5 min i odcinki piesze (`Leg.mode` `walk`, spacer poniżej 30 min, dojścia do i z przystanków) — `R1` — (Szczepan, 17:50, PR w toku)
 - [ ] **T-10** Adapter `apps/api/src/adapters/waw` (przystanki, linie, odjazdy) z cache w pamięci i fixtures z curl — `R1` — 15:00 (do przeglądu: mapa bierze miejsca z `/v1/places`, planer jedzie na GTFS, w MVP może zostać tylko odjazdy z T-17)
 - [x] **T-15** Skąd kolejność przystanków linii (GTFS / stare API / kształt z pozycji pojazdów), decyzja w `stan.md` (P1 w planie MVP) — `R1` — 13:30 (Szczepan, 13:15: GTFS z mkuran.pl, skompresowany do pliku w repo)
 - [x] **T-16** Mock `POST /v1/routes/plan` z fixture zgodnej z kontraktem, żeby R3 i R4 nie czekali — `R1` — 14:30 (Szczepan, 13:20, PR #2; od 14:00 zastąpiony prawdziwym planerem)
@@ -67,6 +68,7 @@
 - [x] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — (Paweł z agentem, 17.10 13:25: mock, tekst opowieści to placeholder, czeka na T-42; 14:50: odtwarzacz gra opowieść z API głosem ElevenLabs)
 - [x] **T-35** Wersja mobilna: 16 px marginesu, bez poziomego scrolla — `R3` — 22:00 (Paweł z agentem, 13:51: arkusz trasy z 3 punktami zatrzymania i rzutem, swipe opowieści, sprężyny motion, safe area, reduced motion; sprawdzone 390–1920 px bez poziomego scrolla)
 - [ ] **T-36** Podstrona demo: stała lokalizacja, symulowana jazda ok. 1,5 min — `R3` — niedziela 08:00
+- [ ] **T-78** Cel przejażdżki w UI: wybór punktu końcowego (stuknięcie w mapę albo karta miejsca) i `destination: { lat, lng }` w `planRoute` (`apps/web/src/features/demo/lib/api-data.ts`); przy `endsAtDestination: false` pokazać, że trasa nie kończy się przy celu. Bez `returnToStart` jednocześnie. API gotowe na Railway (PR #19) — `R3` — (zgłosił Szczepan, R1)
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos
