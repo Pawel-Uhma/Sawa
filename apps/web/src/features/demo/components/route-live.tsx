@@ -32,6 +32,8 @@ export type RouteLiveProps = {
   isPlaying: boolean;
   /** Ile bieżącego tematu już padło (0–100). */
   progress: number;
+  /** Za ile sekund następny temat według zegara jazdy. */
+  nextInSec: number | null;
   storyText: string | null;
   storyState: "loading" | "ready" | "failed";
   /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
@@ -39,13 +41,12 @@ export type RouteLiveProps = {
   togglePlay: () => void;
 };
 
-/** Za ile następny temat. Dziś z `etaMin`, po T-106 z odległości do punktu. */
-function untilNext(stops: MockStop[], activeIndex: number) {
-  const now = stops[activeIndex];
+/** Za ile następny temat. Dziś z zegara jazdy, docelowo z odległości do punktu. */
+function untilNext(stops: MockStop[], activeIndex: number, nextInSec: number | null) {
   const next = stops[activeIndex + 1];
-  if (!now || !next) return null;
-  const min = Math.max(1, next.etaMin - now.etaMin);
-  return { stop: next, label: `za ok. ${min} min` };
+  if (!next) return null;
+  if (nextInSec === null || nextInSec < 60) return { stop: next, label: "za chwilę" };
+  return { stop: next, label: `za ok. ${Math.round(nextInSec / 60)} min` };
 }
 
 /* ------------------------------------------------------------------ */
@@ -198,14 +199,16 @@ function NextUp({
   stops,
   activeIndex,
   progress,
+  nextInSec,
   end,
 }: {
   stops: MockStop[];
   activeIndex: number;
   progress: number;
+  nextInSec: number | null;
   end: RouteLiveProps["end"];
 }) {
-  const next = untilNext(stops, activeIndex);
+  const next = untilNext(stops, activeIndex, nextInSec);
   if (!next) {
     return (
       <div className="flex flex-col items-start gap-2">
@@ -248,6 +251,7 @@ export function RouteLive({
   isDesktop,
   isPlaying,
   progress,
+  nextInSec,
   storyText,
   storyState,
   transcript,
@@ -374,7 +378,13 @@ export function RouteLive({
 
       <div className="flex items-center gap-4">
         <PlayButton isPlaying={isPlaying} onToggle={togglePlay} size="lg" />
-        <NextUp stops={stops} activeIndex={activeIndex} progress={progress} end={end} />
+        <NextUp
+          stops={stops}
+          activeIndex={activeIndex}
+          progress={progress}
+          nextInSec={nextInSec}
+          end={end}
+        />
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
 import { forgetAll, useMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
+import { useRideClock } from "../lib/ride-clock";
 import {
   CUSTOM_DESTINATION_NAME,
   DESTINATION_PRESETS,
@@ -210,6 +211,16 @@ export function DemoApp() {
   // Odtwarzacz jest tu, a nie w arkuszu trasy: zakładka Sawa steruje tą samą opowieścią.
   const player = useStoryPlayer(route, activeIndex, listener);
   const { setIsPlaying, rewind } = player;
+  // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
+  const clock = useRideClock(route);
+  const { syncTo } = clock;
+  const pickStop = useCallback(
+    (index: number) => {
+      syncTo(index);
+      setActiveIndex(index);
+    },
+    [syncTo],
+  );
   // Sawa mówi na trasie; po wyjściu z niej pauza, a po wejściu wznowienie (jak wcześniej arkusz).
   useEffect(() => {
     setIsPlaying(isRoute);
@@ -219,9 +230,9 @@ export function DemoApp() {
       if (index < 0 || index >= route.length) return;
       rewind();
       setIsPlaying(true);
-      setActiveIndex(index);
+      pickStop(index);
     },
-    [route.length, rewind, setIsPlaying],
+    [route.length, rewind, setIsPlaying, pickStop],
   );
   const menu: SawaMenuActions = useMemo(
     () => ({
@@ -272,7 +283,7 @@ export function DemoApp() {
               activeStopId={isRoute ? activeStop?.id : undefined}
               onStopClick={(id) => {
                 const index = route.findIndex((stop) => stop.id === id);
-                if (index >= 0) setActiveIndex(index);
+                if (index >= 0) pickStop(index);
               }}
               // Ekrany mają własne karty nad mapą; wbudowana karta miejsca wjechałaby pod nie
               hasPlaceSheet={false}
@@ -351,6 +362,7 @@ export function DemoApp() {
                 player={player}
                 activeIndex={activeIndex}
                 onActiveChange={setActiveIndex}
+                clock={clock}
                 onBack={() => setStage("map")}
                 isDesktop={isDesktop}
                 onCoverChange={setSheetCoverPx}
