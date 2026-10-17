@@ -1,11 +1,13 @@
 "use client";
 
 import { useMemo } from "react";
+import { RollingText, SkeletonLines, Spinner } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { formatWhen } from "../lib/format";
 import type { PlaceMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import type { StoryPlayer } from "../lib/story-player";
+import { useStoryWaitMessage } from "../lib/story-wait";
 import { FloatingCard, Grabber } from "./floating-card";
 import { CloseIcon, PauseIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
 import { SawaHead } from "./logo";
@@ -46,10 +48,11 @@ export function SawaTab({
   const spoken = Math.floor((player.progress / 100) * words.length);
   const told = useMemo(() => Object.entries(places).sort(([, a], [, b]) => b.at - a.at), [places]);
 
+  const waitText = useStoryWaitMessage(Boolean(stop) && player.loading);
   const status = !stop
     ? t("Ułóż trasę, to coś opowiem", "Plan a route and I'll tell you something")
     : player.loading
-      ? t("Szykuje opowieść…", "Getting a story ready…")
+      ? t("Szykuję opowieść…", "Getting a story ready…")
       : player.failed
         ? t("Tym razem cisza", "Quiet this time")
         : player.isPlaying
@@ -69,7 +72,10 @@ export function SawaTab({
         <SawaHead className="size-14" />
         <div className="min-w-0 flex-1">
           <h2 className="text-[20px] font-extrabold leading-tight tracking-[-0.02em]">Sawa</h2>
-          <p className="mt-0.5 text-sm font-semibold text-glebia">{status}</p>
+          <p className="mt-0.5 flex items-center gap-1.5 text-sm font-semibold text-glebia">
+            {stop && player.loading && <Spinner className="size-3" />}
+            {status}
+          </p>
         </div>
         <button
           type="button"
@@ -98,23 +104,30 @@ export function SawaTab({
 
             {/* Transkrypcja: słowa już wypowiedziane są ciemniejsze, reszta jaśniejsza */}
             <p className="min-h-[72px] text-[15px] leading-relaxed text-tekst-3">
-              {player.text
-                ? words.map((word, index) => (
-                    <span
-                      // Słowa nie zmieniają się w trakcie opowieści, więc indeks jest kluczem
-                      // biome-ignore lint/suspicious/noArrayIndexKey: stała lista słów
-                      key={index}
-                      className={index < spoken ? "text-tekst" : undefined}
-                    >
-                      {word}{" "}
-                    </span>
-                  ))
-                : player.failed
-                  ? t("Tym razem Sawa nic nie powie.", "Sawa won't say anything this time.")
-                  : t(
-                      "Sawa przypomina sobie, co wie o tym miejscu…",
-                      "Sawa is recalling what she knows about this place…",
-                    )}
+              {player.text ? (
+                words.map((word, index) => (
+                  <span
+                    // Słowa nie zmieniają się w trakcie opowieści, więc indeks jest kluczem
+                    // biome-ignore lint/suspicious/noArrayIndexKey: stała lista słów
+                    key={index}
+                    className={index < spoken ? "text-tekst" : undefined}
+                  >
+                    {word}{" "}
+                  </span>
+                ))
+              ) : player.failed ? (
+                t("Tym razem Sawa nic nie powie.", "Sawa won't say anything this time.")
+              ) : (
+                <span aria-live="polite" className="flex flex-col gap-3 pt-1">
+                  <span className="flex min-w-0 items-center gap-2 text-[14px] font-semibold">
+                    <Spinner className="size-3.5 text-glebia" />
+                    <RollingText
+                      text={waitText ?? t("Sawa zbiera myśli…", "Sawa is gathering her thoughts…")}
+                    />
+                  </span>
+                  <SkeletonLines lines={3} />
+                </span>
+              )}
             </p>
 
             <div

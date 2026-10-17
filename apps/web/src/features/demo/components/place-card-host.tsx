@@ -86,7 +86,7 @@ export function PlaceCardHost({
               <CloseButton onClick={close} />
             </div>
           ) : (
-            <CardSkeleton />
+            <CardSkeleton onClose={close} />
           )}
         </PlaceCardShell>
       )}

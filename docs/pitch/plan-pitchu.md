@@ -91,6 +91,8 @@ Czas na kryteria: innowacyjność ok. 115 s (film i demo), dane ok. 70 s (demo i
 
 ## 6. Demo na żywo: ustawienia i zapasy
 
+**Wideo zapasowe (plan B) jest gotowe:** [wideo/sawa-demo.mp4](wideo/sawa-demo.mp4), ok. 87 s, Remotion ([tools/pitch-video](../../tools/pitch-video/README.md)). Na scenie `/demo` otwieramy z `?voice=1`, bez tego Sawa nie mówi.
+
 - **Plan A:** `/demo` na telefonie, z kopią obrazu na projektor. Stała lokalizacja w 42 Warsaw, symulowana jazda (T-36, T-102), opowieści i głos rozgrzane w cache (T-94).
 - **Plan B:** nagranie ekranu tego samego przebiegu 1:1, z dźwiękiem, gotowe na drugim laptopie. D przełącza bez słowa i nikt nie przeprasza.
 - **Plan C:** padają wifi, API i Railway. Wtedy demo skraca się do 20 s z nagrania, a film niesie dowód.
@@ -169,3 +171,6 @@ Uczymy się na pamięć 5 przejść, nie całego tekstu: 1) „To była Sawa”,
 - [ ] Sprawdzić: która jednostka miasta byłaby właścicielem pilotażu; nazwy zbiorów z dane.um.warszawa.pl na stopkę; źródło prognozy „co piąty w 2060” ([08-badania-trendy.md](../08-badania-trendy.md)) — `R2`
 - [ ] Śmieci w podpisach zdjęć w kartach miejsc z trasy demo — `R2`
 - [ ] Deck według §7 — `R2`
+- [ ] `/demo` na scenie: jazda w 90 s przeskakuje miejsca co kilka sekund i ucina opowieści, a odtwarzacz prosi o głos do wielu miejsc naraz (ElevenLabs 429). Następne miejsce dopiero po końcu opowieści (T-36) — `R3`
+- [ ] LLM źle zapisuje lata słownie („tysiąc dziewięćdziesiątego dziewiątego” zamiast 1939, „osiemst”), a przy profilu „pierwszy raz” każda opowieść zaczyna się tym samym wstępem o Powstaniu — `R4`
+- [ ] Kredyty ElevenLabs: nowy klucz na Railway od 17.10 wieczorem; sprawdzić zapas przed pokazem — `Paweł`

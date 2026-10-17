@@ -1,5 +1,6 @@
 import type { Place } from "@sawa/shared";
 import { useState } from "react";
+import { FadeImage, Skeleton, SkeletonLines } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { placeTagLabel } from "@/lib/interest-labels";
 import { usePlace } from "../hooks/use-place";
@@ -58,7 +59,7 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
             </p>
           )}
           <h2 className="mt-1 text-lg font-semibold leading-snug text-tekst">
-            {name ?? <span className="inline-block h-5 w-40 animate-pulse rounded bg-tlo-2" />}
+            {name ?? <Skeleton className="inline-block h-5 w-40" />}
           </h2>
           {detail.data && <PlaceMeta place={detail.data} />}
         </div>
@@ -119,12 +120,10 @@ function PlaceDetail({ place }: { place: Place }) {
     <div className="mt-4 space-y-4">
       {photo && (
         <figure>
-          {/* biome-ignore lint/performance/noImgElement: photos come from many archives (Commons, warszawa1939), next/image would need each domain configured */}
-          <img
+          <FadeImage
             src={photo.url}
             alt={photo.caption ?? place.name}
-            loading="lazy"
-            className="aspect-[4/3] w-full rounded-lg bg-tlo-2 object-cover"
+            className="aspect-[4/3] w-full rounded-lg"
           />
           <figcaption className="mt-1 text-xs text-tekst-2">
             {[photo.caption, photo.year, photo.author, photo.license].filter(Boolean).join(" · ")}
@@ -181,9 +180,8 @@ function PlaceDetail({ place }: { place: Place }) {
 function DetailSkeleton() {
   return (
     <div aria-hidden className="mt-4 space-y-2">
-      <div className="aspect-[4/3] w-full animate-pulse rounded-lg bg-tlo-2" />
-      <div className="h-3 w-full animate-pulse rounded bg-tlo-2" />
-      <div className="h-3 w-4/5 animate-pulse rounded bg-tlo-2" />
+      <Skeleton className="aspect-[4/3] w-full rounded-lg" />
+      <SkeletonLines lines={2} />
     </div>
   );
 }

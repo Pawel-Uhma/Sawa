@@ -3,10 +3,12 @@
 import type { Leg } from "@sawa/shared";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { type ReactNode, type Ref, useEffect, useRef, useState } from "react";
+import { RollingText, SkeletonLines, Spinner } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
+import { useStoryWaitMessage } from "../lib/story-wait";
 import { Attribution, Itinerary } from "./departures";
 import { PinIcon } from "./icons";
 import { LiveDot } from "./podcast-controls";
@@ -85,13 +87,7 @@ function LiveText({
   edgeRef?: Ref<HTMLSpanElement>;
 }) {
   const t = useT();
-  if (state === "loading" || !text) {
-    return (
-      <p className={`animate-pulse text-tekst-3 ${className}`}>
-        {t("Sawa zbiera myśli o tym miejscu…", "Sawa is gathering her thoughts about this place…")}
-      </p>
-    );
-  }
+  const waitText = useStoryWaitMessage(state === "loading");
   if (state === "failed") {
     return (
       <p className={`text-tekst-3 ${className}`}>
@@ -100,6 +96,20 @@ function LiveText({
           "Sawa is quiet here. She'll speak up at the next place.",
         )}
       </p>
+    );
+  }
+  if (state === "loading" || !text) {
+    // Szkielet akapitu w miejscu tekstu, nad nim to, co Sawa teraz robi
+    return (
+      <div aria-live="polite" className="flex flex-col gap-3">
+        <p className="flex min-w-0 items-center gap-2 text-[14px] font-semibold text-tekst-3">
+          <Spinner className="size-3.5 text-glebia" />
+          <RollingText
+            text={waitText ?? t("Sawa zbiera myśli…", "Sawa is gathering her thoughts…")}
+          />
+        </p>
+        <SkeletonLines lines={3} className="[&>span]:h-3.5" />
+      </div>
     );
   }
   const words = text.split(/(\s+)/);

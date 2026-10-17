@@ -434,3 +434,47 @@ input[type="range"].suwak.suwak-cienki::-moz-range-thumb {
     animation: none;
   }
 }
+
+/* Czekanie (components/waiting.tsx): spinner jak w iOS i szkielet z połyskiem */
+.spinner > span {
+  opacity: 0.15;
+  animation: spinner-kreska 1s linear infinite;
+}
+
+@keyframes spinner-kreska {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.15;
+  }
+}
+
+.szkielet {
+  --polysk: rgba(255, 255, 255, 0.55);
+  background: var(--tlo-2)
+    linear-gradient(100deg, transparent 30%, var(--polysk) 50%, transparent 70%) no-repeat;
+  background-size: 200% 100%;
+  animation: szkielet-polysk 1.6s ease-in-out infinite;
+}
+
+:root[data-theme="dark"] .motyw .szkielet {
+  --polysk: rgba(255, 255, 255, 0.06);
+}
+
+@keyframes szkielet-polysk {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: -50% 0;
+  }
+}
+
+/* Spinner zostaje (to nie ruch w przestrzeni, jak w iOS), połysk szkieletu staje */
+@media (prefers-reduced-motion: reduce) {
+  .szkielet {
+    animation: none;
+    background-image: none;
+  }
+}

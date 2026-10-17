@@ -10,6 +10,8 @@ const TILE_GC_TIME_MS = 30 * 60 * 1000;
 export type PlacesInView = {
   data: PlaceSummaryFeature[];
   isError: boolean;
+  /** Some tile in view is still loading (the places shown before stay meanwhile). */
+  isPending: boolean;
   refetch: () => void;
 };
 
@@ -43,7 +45,7 @@ export function usePlaces(bboxes: readonly string[]): PlacesInView {
     () => (isPending ? mergeTilePlaces([previous, current]) : current),
     [isPending, previous, current],
   );
-  return { data, isError, refetch };
+  return { data, isError, isPending, refetch };
 }
 
 // Module-level, so TanStack Query keeps the combined result stable between renders.
