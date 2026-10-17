@@ -81,7 +81,7 @@ Warstwy i zależności: [11-zasady-pracy-i-kodu.md §4](11-zasady-pracy-i-kodu.m
 
 ```ts
 type LatLng = { lat: number; lng: number };
-type Interest = string; // lista ok. 8 pozycji w packages/shared, do potwierdzenia przez R3 i R2 [Z]
+type Interest = "historical" | "cultural" | "sports" | "nature"; // wybór użytkownika; miejsca mają drobniejsze tagi, mapowanie INTEREST_TAGS w packages/shared
 type Leg = { line: string; mode: "tram" | "bus"; fromStopId: string; toStopId: string; departAt: string; durationMin: number; lngLats: [number, number][] };
 type RoutePlace = { placeId: string; name: string; position: LatLng; etaSec: number; windowSec: number };
 type Route = { id: string; legs: Leg[]; places: RoutePlace[]; totalMin: number };
@@ -200,7 +200,7 @@ Nie budujemy przed oddaniem MVP, nawet jeśli zostanie czas, bez decyzji zespoł
 | Z3 | Przeglądarka nie łączy się z Supabase; wszystko idzie przez API | R2 |
 | Z4 | Kolejność przystanków i kształty linii bierzemy z publicznego rozkładu statycznego Warszawy (GTFS), bo 19 zbiorów portalu tego nie daje | R1 |
 | Z5 | Trasy MVP i demo w promieniu ok. 1 km od 42 Warsaw (52.2359, 20.9789), bo tam mamy dane | zespół |
-| Z6 | Lista ok. 8 zainteresowań w `packages/shared` | R3 + R2 |
+| Z6 | Użytkownik wybiera 4 ogólne kategorie (`historical`, `cultural`, `sports`, `nature`, decyzja Szczepana 17.10). Miejsca zachowują 8 tagów z seedu R2; mapowanie `INTEREST_TAGS` w `packages/shared/src/interests.ts`. Dla `sports` i `nature` nie ma jeszcze miejsc | R3 + R2 |
 | Z7 | Opowieść jako tekst (głos jest w „Po MVP”) | — |
 | Z8 | Podglądy z Vercela łączą się z produkcyjnym API | R1 + R3 |
 | Z9 | Biome zamiast ESLint + Prettier; Zustand do stanu odtwarzacza; podkład OpenFreeMap | R3 |

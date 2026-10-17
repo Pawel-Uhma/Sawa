@@ -19,7 +19,7 @@ describe("route planner on real data", () => {
     const started = performance.now();
     const route = RouteSchema.parse(
       await planner.plan(
-        { origin: HACKATHON_VENUE, durationMin, interests: ["war_uprising", "people"] },
+        { origin: HACKATHON_VENUE, durationMin, interests: ["historical", "cultural"] },
         NOW,
       ),
     );
@@ -33,7 +33,7 @@ describe("route planner on real data", () => {
   it("answers NOT_FOUND far from any stop", async () => {
     await expect(
       planner.plan(
-        { origin: { lat: 52.9, lng: 22.5 }, durationMin: 60, interests: ["people"] },
+        { origin: { lat: 52.9, lng: 22.5 }, durationMin: 60, interests: ["historical"] },
         NOW,
       ),
     ).rejects.toMatchObject({ code: "NOT_FOUND" });
@@ -44,7 +44,11 @@ describe("route planner on real data", () => {
       nextDeparture: async (_stop, _line, after) => new Date(after.getTime() + 9 * 60_000),
     };
     const withReal = createRoutePlanner({ transit, places, departures });
-    const request = { origin: HACKATHON_VENUE, durationMin: 60, interests: ["people" as const] };
+    const request = {
+      origin: HACKATHON_VENUE,
+      durationMin: 60,
+      interests: ["historical" as const],
+    };
     const route = await withReal.plan(request, NOW);
     const first = route.legs[0];
     const departMin = (new Date(first?.departAt ?? "").getTime() - NOW.getTime()) / 60_000;
