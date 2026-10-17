@@ -6,6 +6,23 @@ const TIMEOUT_MS = 3_000;
 const CACHE_SIZE = 200;
 /** OSRM snaps points to the nearest path; farther than this the real point is added to the line. */
 const SNAP_GAP_M = 2;
+/**
+ * Requests at once: FOSSGIS answers 429 to a burst of ~8 and then blocks the IP for a while.
+ * Our own osrm-routed next to the API takes more (the planner compares walks in parallel).
+ */
+export const PUBLIC_MAX_IN_FLIGHT = 2;
+export const LOCAL_MAX_IN_FLIGHT = 8;
+
+/** The request limit for a router at `baseUrl`: higher on this machine, low for public servers. */
+export function defaultMaxInFlight(baseUrl: string): number {
+  try {
+    const { hostname } = new URL(baseUrl);
+    const local = ["127.0.0.1", "localhost", "[::1]"].includes(hostname);
+    return local ? LOCAL_MAX_IN_FLIGHT : PUBLIC_MAX_IN_FLIGHT;
+  } catch {
+    return PUBLIC_MAX_IN_FLIGHT;
+  }
+}
 
 type LngLat = [number, number];
 
@@ -50,8 +67,24 @@ export function parseWalkPath(body: unknown, from: LatLng, to: LatLng): LngLat[]
 export function createOsrmWalkPathSource(
   baseUrl: string,
   logger?: WalkRouterLogger,
+  { maxInFlight = defaultMaxInFlight(baseUrl) }: { maxInFlight?: number } = {},
 ): WalkPathSource {
   const cache = new Map<string, Promise<LngLat[] | undefined>>();
+  let inFlight = 0;
+  const waiting: (() => void)[] = [];
+
+  /** Runs `request` when fewer than `maxInFlight` are running; a finished one hands its slot on. */
+  async function limited<T>(request: () => Promise<T>): Promise<T> {
+    if (inFlight < maxInFlight) inFlight++;
+    else await new Promise<void>((resolve) => waiting.push(resolve));
+    try {
+      return await request();
+    } finally {
+      const next = waiting.shift();
+      if (next) next();
+      else inFlight--;
+    }
+  }
 
   return {
     path(points) {
@@ -62,21 +95,22 @@ export function createOsrmWalkPathSource(
       const hit = cache.get(coords);
       if (hit) return hit;
 
-      // FOSSGIS serves each profile under its own path; "driving" is just the API's name.
+      // FOSSGIS serves each profile under its own path and a local osrm-routed ignores the
+      // profile name, so "driving" is just the API's name.
       const url = `${baseUrl}/route/v1/driving/${coords}?overview=full&geometries=geojson&steps=false`;
-      const path = fetch(url, {
-        headers: { "User-Agent": "sawa-api (Warsaw Open Data Hackathon)" },
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      })
-        .then(async (res) => {
+      const path = limited(() =>
+        fetch(url, {
+          headers: { "User-Agent": "sawa-api (Warsaw Open Data Hackathon)" },
+          signal: AbortSignal.timeout(TIMEOUT_MS),
+        }).then(async (res) => {
           if (res.ok) return parseWalkPath(await res.json(), first, last);
           logger?.warn({ router: "osrm", status: res.status }, "walk path request failed");
           return undefined;
-        })
-        .catch((err) => {
-          logger?.warn({ router: "osrm", err: String(err) }, "walk path request failed");
-          return undefined;
-        });
+        }),
+      ).catch((err) => {
+        logger?.warn({ router: "osrm", err: String(err) }, "walk path request failed");
+        return undefined;
+      });
       // Failures are not cached, so the next plan asks again.
       path.then((p) => p || cache.delete(coords));
       cache.set(coords, path);

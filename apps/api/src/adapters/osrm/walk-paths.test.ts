@@ -1,5 +1,12 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { createOsrmWalkPathSource, firstWalkPath, parseWalkPath } from "./walk-paths";
+import {
+  createOsrmWalkPathSource,
+  defaultMaxInFlight,
+  firstWalkPath,
+  LOCAL_MAX_IN_FLIGHT,
+  PUBLIC_MAX_IN_FLIGHT,
+  parseWalkPath,
+} from "./walk-paths";
 
 const from = { lat: 52.224, lng: 21.0049 };
 const to = { lat: 52.2297, lng: 21.0122 };
@@ -34,6 +41,17 @@ describe("parseWalkPath", () => {
   });
 });
 
+describe("defaultMaxInFlight", () => {
+  it("is higher for a router on this machine", () => {
+    expect(defaultMaxInFlight("http://127.0.0.1:5000")).toBe(LOCAL_MAX_IN_FLIGHT);
+    expect(defaultMaxInFlight("http://localhost:5000")).toBe(LOCAL_MAX_IN_FLIGHT);
+    expect(defaultMaxInFlight("https://routing.openstreetmap.de/routed-foot")).toBe(
+      PUBLIC_MAX_IN_FLIGHT,
+    );
+    expect(defaultMaxInFlight("not a url")).toBe(PUBLIC_MAX_IN_FLIGHT);
+  });
+});
+
 describe("createOsrmWalkPathSource", () => {
   it("asks once per walk through all its points and caches the path", async () => {
     const fetchMock = vi.fn(async () =>
@@ -52,6 +70,47 @@ describe("createOsrmWalkPathSource", () => {
     expect(fetchMock).toHaveBeenCalledTimes(1);
     const [url] = fetchMock.mock.calls[0] as unknown as [string];
     expect(url).toContain("/routed-foot/route/v1/driving/21.004900,52.224000;21.012200,52.229700?");
+  });
+
+  /** The most requests in flight at once when `count` paths are asked for together. */
+  async function mostInFlight(baseUrl: string, count: number, options?: { maxInFlight?: number }) {
+    let inFlight = 0;
+    let most = 0;
+    const fetchMock = vi.fn(async () => {
+      inFlight++;
+      most = Math.max(most, inFlight);
+      await new Promise((resolve) => setTimeout(resolve, 5));
+      inFlight--;
+      return Response.json(
+        osrm([
+          [21.0049, 52.224],
+          [21.0122, 52.2297],
+        ]),
+      );
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    const source = createOsrmWalkPathSource(baseUrl, undefined, options);
+
+    const ends = Array.from({ length: count }, (_, i) => ({
+      lat: 52.2297,
+      lng: 21.0122 + i / 1000,
+    }));
+    const paths = await Promise.all(ends.map((end) => source.path([from, end])));
+    expect(paths.every(Boolean)).toBe(true);
+    expect(fetchMock).toHaveBeenCalledTimes(count);
+    return most;
+  }
+
+  it("keeps at most two requests in flight (the public server answers 429 to bursts)", async () => {
+    expect(await mostInFlight("https://osrm.test/routed-foot", 5)).toBe(2);
+  });
+
+  it("sends more at once to its own router next to the API", async () => {
+    expect(await mostInFlight("http://127.0.0.1:5000", 12)).toBe(LOCAL_MAX_IN_FLIGHT);
+  });
+
+  it("takes the limit from options", async () => {
+    expect(await mostInFlight("https://osrm.test/routed-foot", 6, { maxInFlight: 3 })).toBe(3);
   });
 
   it("returns undefined when the router fails, and asks again next time", async () => {
