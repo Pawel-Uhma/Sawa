@@ -50,6 +50,11 @@ Przegląd badań z lat 2020–2026, zrobiony 17.10.2026. Cel: sprawdzić, które
 - **Barometr 2025:** 74% mieszkańców widzi potrzebę programów zdrowia psychicznego dzieci.
 - **Luka:** nie znaleźliśmy badania samotności przeprowadzonego w samej Warszawie.
 
+### Do pitchu (17.10 wieczorem)
+- **Prognoza rezydentów do 2060 (GUS, cytowana w Diagnozie, s. 6 i 29):** Warszawa z 1,98 mln (2023) do 2,25 mln (2060), czyli ok. +14%. Polska z 37,6 mln do 32,9 mln, czyli −12,5%. Od 2020 r. Warszawa rośnie tylko dzięki dodatniemu saldu migracji.
+- **Prof. Maria Lewicka (UW), 2008:** badanie 301 mieszkańców Wrocławia i 200 Lwowa. Zainteresowanie przeszłością miasta wiąże się z silniejszym przywiązaniem do miejsca. Ten wniosek mamy ze streszczenia na Academia.edu, pełnego tekstu nie czytaliśmy.
+- **Eurozet, „Słuchacz podcastów w Polsce 2024”:** 8,4 mln Polaków słucha podcastów co tydzień (rok wcześniej 7 mln). Liczba z materiału na mmponline.pl, raportu nie czytaliśmy w całości.
+
 ## Co z tego wynika dla nas
 
 - **Trzy trendy mają oficjalną prognozę do 2060 r.:** starzenie (30% poprodukcyjnych), migracja (20% imigrantów i ich potomków) i upały. Te liczby najlepiej bronią perspektywy „za 50 lat” przed jury.
@@ -72,4 +77,6 @@ Przegląd badań z lat 2020–2026, zrobiony 17.10.2026. Cel: sprawdzić, które
 - [CBOS: samotność (2024)](https://www.cbos.pl/SPISKOM.POL/2024/K_115_24.PDF)
 - [GUS przez polskawliczbach.pl: Warszawa](https://www.polskawliczbach.pl/Warszawa)
 - [Urząd Statystyczny w Warszawie: ludność województwa 2024](https://warszawa.stat.gov.pl/files/gfx/warszawa/pl/defaultaktualnosci/1470/1/19/1/stan_i_ruch_naturalny_ludnosci_w_wojewodztwie_mazowieckim_w_2024_r..pdf)
+- [Lewicka 2008, Journal of Environmental Psychology 28(3), 209–231](https://www.academia.edu/104396569/Place_attachment_place_identity_and_place_memory_Restoring_the_forgotten_city_past)
+- [Eurozet: Słuchacz podcastów w Polsce 2024 (mmponline.pl)](https://mmponline.pl/szukaj/tagi/Polak%C3%B3w)
 - [ZDM: rozpłytowanie 2024](https://zdm.waw.pl/aktualnosci/tegoroczne-plany-rozplytowa/)

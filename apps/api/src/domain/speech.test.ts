@@ -34,3 +34,11 @@ describe("createSentenceChunker", () => {
     expect(chunker.flush()).toBeNull();
   });
 });
+
+describe("normalizeSpeechText with years", () => {
+  it("spells out years in digits for the voice", () => {
+    expect(normalizeSpeechText("W 1648 roku założyli tu jurydykę.")).toBe(
+      "W tysiąc sześćset czterdziestym ósmym roku założyli tu jurydykę.",
+    );
+  });
+});

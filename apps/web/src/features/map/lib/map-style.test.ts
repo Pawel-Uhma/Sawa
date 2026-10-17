@@ -6,17 +6,20 @@ import {
   FALLBACK_PLACE_ICON,
   MAP_ICONS,
   MAP_PALETTES,
-  mapIconId,
   mapIconUrl,
+  PLACE_GROUP_COLORS,
   PLACE_ICON_KINDS,
+  PLACE_SUBKIND_GROUPS,
+  parsePlaceStickerId,
   placeKindColor,
-  placeKindColorExpression,
-  placeKindIconExpression,
   placeKindLabel,
+  placeStickerColors,
+  placeStickerExpression,
+  placeStickerId,
   roadPaintOverrides,
-  UNKNOWN_KIND_COLOR,
   waterPaintOverrides,
 } from "./map-style";
+import PLACE_GLYPHS from "./place-glyphs.json";
 
 const PUBLIC_DIR = join(__dirname, "../../../../public");
 
@@ -34,36 +37,54 @@ const KINDS = [
 ];
 
 describe("map style", () => {
-  it("has a colour and a Polish label for every place kind and subkind", () => {
+  it("has a Polish label for every place kind and subkind", () => {
     for (const kind of [...KINDS, ...PLACE_SUBKINDS]) {
-      expect(placeKindColor(kind)).not.toBe(UNKNOWN_KIND_COLOR);
       expect(placeKindLabel(kind)).toBeTruthy();
     }
+    expect(placeKindLabel("ufo")).toBeUndefined();
   });
 
   it("prefers the subkind over the kind", () => {
     expect(placeKindLabel("building", "palace")).toBe("pałac");
-    expect(placeKindColor("site", "park")).not.toBe(placeKindColor("site"));
     expect(placeKindLabel("church", null)).toBe("świątynia");
   });
 
-  it("has an icon for every kind and subkind in the shared contract", () => {
+  it("has a glyph for every kind and subkind in the shared contract", () => {
     for (const kind of PLACE_KINDS) expect(PLACE_ICON_KINDS).toContain(kind);
     expect([...PLACE_ICON_KINDS].sort()).toEqual([...PLACE_SUBKINDS].sort());
+    expect(Object.keys(PLACE_GLYPHS).sort()).toEqual([...PLACE_SUBKINDS].sort());
     for (const name of MAP_ICONS) {
       expect(existsSync(join(PUBLIC_DIR, mapIconUrl(name)))).toBe(true);
     }
   });
 
-  it("falls back to the pin icon for an unknown kind", () => {
-    const expression = placeKindIconExpression();
-    expect(expression.at(-1)).toBe(mapIconId(FALLBACK_PLACE_ICON));
-    expect(expression).toContain(mapIconId("monument"));
-    expect(placeKindColorExpression().at(-1)).toBe(UNKNOWN_KIND_COLOR);
+  it("builds sticker ids from the subkind, with the pin for unknown kinds", () => {
+    const expression = placeStickerExpression("dark");
+    expect(expression[0]).toBe("concat");
+    expect(expression[1]).toBe("sawa-place-dark-");
+    expect(JSON.stringify(expression)).toContain(`"${FALLBACK_PLACE_ICON}"]`);
   });
 
-  it("falls back to grey for an unknown kind", () => {
-    expect(placeKindColor("ufo")).toBe(UNKNOWN_KIND_COLOR);
+  it("reads back every sticker id it makes and ignores other images", () => {
+    const sticker = { theme: "light", marker: "church" } as const;
+    expect(placeStickerId(sticker)).toBe("sawa-place-light-church");
+    expect(parsePlaceStickerId(placeStickerId(sticker))).toEqual(sticker);
+    expect(parsePlaceStickerId("sawa-stop")).toBeNull();
+    expect(parsePlaceStickerId("sawa-place-dark-ufo")).toBeNull();
+    expect(parsePlaceStickerId("sawa-place-sepia-site")).toBeNull();
+    expect(parsePlaceStickerId("sawa-place-dark-site-none")).toBeNull();
+  });
+
+  it("colours markers by the group of their kind, grey for unknown kinds", () => {
+    expect(placeKindColor("building", "palace")).toBe(PLACE_GROUP_COLORS.living);
+    expect(placeKindColor("church")).toBe(PLACE_GROUP_COLORS.sacred);
+    expect(placeKindColor("ufo")).toBe("#71717a");
+    for (const subkind of PLACE_SUBKINDS) {
+      expect(placeStickerColors(subkind)).toEqual({
+        fill: PLACE_GROUP_COLORS[PLACE_SUBKIND_GROUPS[subkind]],
+        outline: "#ffffff",
+      });
+    }
   });
 
   it("paints water fills, river lines and their labels with the theme's blues", () => {

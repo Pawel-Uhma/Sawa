@@ -1,6 +1,6 @@
 "use client";
 
-import type { Story } from "@sawa/shared";
+import type { Side, Story } from "@sawa/shared";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { api } from "@/lib/api";
 import type { Listener } from "./api-data";
@@ -115,11 +115,13 @@ export async function fetchClip(
   listener: Listener,
   targetSec: number,
   placeName?: string,
+  side?: Side,
 ): Promise<Clip> {
   const memory = getMemory();
   const json = {
     placeId,
     targetSec,
+    side,
     ...listener,
     heardFacts: memory.places[placeId]?.facts ?? [],
     knownContexts: memory.contexts,
@@ -261,7 +263,7 @@ export function useStoryPlayer(
       const key = clipKey(stop.id, listener, targetSec);
       let pending = cache.current.get(key);
       if (!pending) {
-        pending = fetchClip(stop.id, listener, targetSec, stop.name);
+        pending = fetchClip(stop.id, listener, targetSec, stop.name, stop.side);
         cache.current.set(key, pending);
         pending.catch(() => cache.current.delete(key));
       }

@@ -146,11 +146,12 @@ export function createFixedDestinationSearch(
       const typed = fold(query)
         .split(/[^\p{L}\p{N}]+/u)
         .filter(Boolean);
-      if (!typed.length) return [];
-      return indexed
+      if (!typed.length) return { results: [], partial: false };
+      const results = indexed
         .filter(({ words }) => typed.every((t) => words.some((w) => w.startsWith(t))))
         .slice(0, 5)
         .map((d) => d.destination);
+      return { results, partial: false };
     },
   };
 }

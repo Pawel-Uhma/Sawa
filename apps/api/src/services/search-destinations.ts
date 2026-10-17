@@ -4,32 +4,51 @@ import type { DestinationSearch } from "./ports";
 
 /** Each search costs; people retype the same few names, so answers are kept in memory. */
 const MAX_CACHED_QUERIES = 500;
+/** Like lines and departures (R1 cache rules): new places and fixes show up within the hour. */
+export const DESTINATION_CACHE_TTL_MS = 60 * 60 * 1000;
 
 export type DestinationService = {
   search(query: string): Promise<Destination[]>;
 };
 
-export function createDestinationService(source: DestinationSearch): DestinationService {
-  const cache = new Map<string, Promise<Destination[]>>();
+type Entry = { pending: Promise<Destination[]>; expiresAt: number };
+
+export function createDestinationService(
+  source: DestinationSearch,
+  opts: { now?: () => number } = {},
+): DestinationService {
+  const now = opts.now ?? Date.now;
+  const cache = new Map<string, Entry>();
+  const forget = (key: string, entry: Entry) => {
+    if (cache.get(key) === entry) cache.delete(key);
+  };
 
   return {
     search(query) {
       const key = query.trim().toLocaleLowerCase("pl").replace(/\s+/g, " ");
       const hit = cache.get(key);
-      if (hit) {
+      if (hit && hit.expiresAt > now()) {
         // Re-insert so the Map's insertion order works as least-recently-used.
         cache.delete(key);
         cache.set(key, hit);
-        return hit;
+        return hit.pending;
       }
-      const pending = source.search(key);
-      cache.set(key, pending);
-      pending.catch(() => cache.delete(key));
+      cache.delete(key);
+      const entry: Entry = {
+        pending: source.search(key).then(({ results, partial }) => {
+          // A partial answer (no street) would hide the street until the entry expires.
+          if (partial) forget(key, entry);
+          return results;
+        }),
+        expiresAt: now() + DESTINATION_CACHE_TTL_MS,
+      };
+      cache.set(key, entry);
+      entry.pending.catch(() => forget(key, entry));
       if (cache.size > MAX_CACHED_QUERIES) {
         const oldest = cache.keys().next().value;
         if (oldest !== undefined) cache.delete(oldest);
       }
-      return pending;
+      return entry.pending;
     },
   };
 }

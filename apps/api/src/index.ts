@@ -2,15 +2,16 @@ import { serve } from "@hono/node-server";
 import { createFixtureStore } from "./adapters/demo/fixture-store";
 import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthesizer";
 import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
-import { loadTransitData } from "./adapters/gtfs/load-transit";
+import { loadTransitCalendar } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
-import { createOsrmWalkPathSource } from "./adapters/osrm/walk-paths";
+import { createOsrmWalkPathSource, firstWalkPath } from "./adapters/osrm/walk-paths";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
 import { createCachedPlacesRepository } from "./adapters/supabase/cached-places-repository";
 import {
   createSupabaseClient,
   createSupabasePlacesRepository,
 } from "./adapters/supabase/places-repository";
+import { createValhallaWalkPathSource } from "./adapters/valhalla/walk-paths";
 import { createWawDepartureSource } from "./adapters/waw/departures";
 import { createWawVehiclePositionSource } from "./adapters/waw/vehicle-positions";
 import { createApp } from "./app";
@@ -43,16 +44,18 @@ const fixtures =
   demo === "off" ? undefined : createFixtureStore(new URL("../data/demo/", import.meta.url));
 if (fixtures) logger.info({ demo, ...fixtures.size() }, "demo mode: saved stories and voice");
 
-const transit = loadTransitData(new URL("../data/transit-graph.json.gz", import.meta.url));
+// One GTFS snapshot per day; the planner switches at midnight. Real times come from the
+// timetable and positions.
+const transit = loadTransitCalendar(new URL("../data/transit/", import.meta.url));
+const today = transit.forDate(warsawDate(new Date()));
 logger.info(
-  { serviceDate: transit.serviceDate, patterns: transit.network.patterns.size },
-  "transit graph loaded",
+  { dates: transit.dates, serviceDate: today.serviceDate, patterns: today.network.patterns.size },
+  "transit graphs found",
 );
-// The graph is a GTFS snapshot of one day; real times come from the timetable and positions.
-if (transit.serviceDate !== warsawDate(new Date())) {
+if (today.serviceDate !== warsawDate(new Date())) {
   logger.warn(
-    { serviceDate: transit.serviceDate },
-    "transit graph is for another day: rebuild it (pnpm --filter @sawa/scripts transit, T-18)",
+    { serviceDate: today.serviceDate },
+    "no transit graph for today: rebuild them (pnpm --filter @sawa/scripts transit, T-18)",
   );
 }
 
@@ -82,6 +85,21 @@ const vehicles = createVehicleTracker({
 });
 vehicles.start();
 
+// Walking paths: OSRM (on production our own osrm-routed in this container), then Valhalla when
+// OSRM fails (public, blocks busy IPs).
+const walkPathSources = [
+  ...(env.WALK_ROUTER_URL
+    ? [
+        createOsrmWalkPathSource(env.WALK_ROUTER_URL, logger, {
+          maxInFlight: env.WALK_ROUTER_MAX_IN_FLIGHT,
+        }),
+      ]
+    : []),
+  ...(env.WALK_ROUTER_FALLBACK_URL
+    ? [createValhallaWalkPathSource(env.WALK_ROUTER_FALLBACK_URL, logger)]
+    : []),
+];
+
 // The planner reads Supabase; the committed export is its fallback when Supabase fails.
 const placesFile = createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url));
 const livePlanner = createRoutePlanner({
@@ -90,7 +108,7 @@ const livePlanner = createRoutePlanner({
   fallbackPlaces: placesRepository ? placesFile : undefined,
   departures: createWawDepartureSource(env.WAW_TOKEN, wawApi),
   live: env.WAW_TOKEN ? createTrackerBoardingSource(vehicles) : undefined,
-  walkPaths: env.WALK_ROUTER_URL ? createOsrmWalkPathSource(env.WALK_ROUTER_URL) : undefined,
+  walkPaths: walkPathSources.length > 0 ? firstWalkPath(walkPathSources) : undefined,
   logger,
 });
 const routePlanner = demo === "off" ? livePlanner : createCachedRoutePlanner(livePlanner);
@@ -122,7 +140,12 @@ const speech = fixtures
 const destinations = fixtures
   ? createDestinationService(createFixedDestinationSearch())
   : env.GOOGLE_PLACES_API_KEY
-    ? createDestinationService(createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY))
+    ? createDestinationService(
+        createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY, {
+          // Shows whether the key has Autocomplete and Place Details enabled; the key is never logged.
+          onAddressError: (err) => logger.warn({ err }, "destination address lookup failed"),
+        }),
+      )
     : undefined;
 
 const llmFailed = new Set<string>();
@@ -136,7 +159,7 @@ const app = createApp({
   corsOrigins: env.CORS_ORIGINS,
   corsPreviewPattern: env.CORS_PREVIEW_PATTERN,
   debugPages: env.DEBUG_PAGES,
-  transitDate: transit.serviceDate,
+  transitDate: (now) => transit.forDate(warsawDate(now)).serviceDate,
   demoMode: demo,
   // Nothing in replay costs credits, and the whole room comes from the venue's one IP.
   storyRateLimit: demo === "replay" ? DEMO_STORY_RATE_LIMIT : undefined,
@@ -163,6 +186,7 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
       port,
       departures: Boolean(env.WAW_TOKEN),
       walkPaths: env.WALK_ROUTER_URL ?? null,
+      walkPathsFallback: env.WALK_ROUTER_FALLBACK_URL ?? null,
       llm: llm?.model ?? null,
       research: Boolean(research),
       speech: Boolean(speech),

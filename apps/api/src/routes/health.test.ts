@@ -17,4 +17,14 @@ describe("GET /health", () => {
     const body = HealthSchema.parse(await res.json());
     expect(body).toMatchObject({ ok: true, transitDate: "2026-10-17", transitIsToday: today });
   });
+
+  it("asks for the graph in use at the request time", async () => {
+    const transitDate = (now: Date) => warsawDate(now);
+    const res = await createHealthRoutes(
+      transitDate,
+      "off",
+      () => new Date("2026-10-18T09:00:00Z"),
+    ).request("/health");
+    expect(await res.json()).toMatchObject({ transitDate: "2026-10-18", transitIsToday: true });
+  });
 });

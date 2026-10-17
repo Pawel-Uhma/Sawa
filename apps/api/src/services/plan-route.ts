@@ -27,9 +27,11 @@ import type {
   DepartureSource,
   LiveBoardingSource,
   PlacesRepository,
+  TransitCalendar,
   TransitData,
   WalkPathSource,
 } from "./ports";
+import { transitOn } from "./transit-day";
 
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
@@ -87,8 +89,9 @@ function reachableBbox(points: LatLng[], durationMin: number): BBox {
   };
 }
 
-export function createRoutePlanner(deps: {
-  transit: TransitData;
+type PlannerDeps = {
+  /** One service day (tests) or the calendar of built days (production). */
+  transit: TransitData | TransitCalendar;
   /** Supabase in production; the file repository when Supabase is not configured. */
   places: PlacesSource;
   /** Used when `places` fails or times out (apps/api/data/places.geojson). */
@@ -101,7 +104,25 @@ export function createRoutePlanner(deps: {
   logger?: PlannerLogger;
   /** Milliseconds; for the cache TTL. */
   clock?: () => number;
-}): RoutePlanner {
+};
+
+/** Plans on the graph of the request's Warsaw day; the planner of the previous day is dropped. */
+export function createRoutePlanner(deps: PlannerDeps): RoutePlanner {
+  let current: { serviceDate: string; planner: RoutePlanner } | undefined;
+  return {
+    plan(request, now) {
+      const transit = transitOn(deps.transit, now);
+      if (current?.serviceDate !== transit.serviceDate)
+        current = {
+          serviceDate: transit.serviceDate,
+          planner: createDayPlanner({ ...deps, transit }),
+        };
+      return current.planner.plan(request, now);
+    },
+  };
+}
+
+function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePlanner {
   const { network, attribution } = deps.transit;
   const clock = deps.clock ?? Date.now;
   const cache = new Map<string, CacheEntry>();

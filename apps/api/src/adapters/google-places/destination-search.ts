@@ -40,7 +40,10 @@ type AddressPrediction = { placeId: string; name: string };
  * Places API (New), limited to Warsaw, answers in Polish. Text Search gives businesses and
  * landmarks; in parallel Autocomplete looks for the typed street or address, which goes first.
  */
-export function createGoogleDestinationSearch(apiKey: string): DestinationSearch {
+export function createGoogleDestinationSearch(
+  apiKey: string,
+  opts: { onAddressError?: (err: unknown) => void } = {},
+): DestinationSearch {
   const call = async (url: string, fieldMask: string | undefined, body?: unknown) => {
     let res: Response;
     try {
@@ -62,8 +65,13 @@ export function createGoogleDestinationSearch(apiKey: string): DestinationSearch
     }
     if (!res.ok) {
       // The body explains quota and permission errors; it never contains the key.
-      const detail = (await res.text()).slice(0, 300);
-      throw new AppError("UPSTREAM_ERROR", `Google Places answered ${res.status}: ${detail}`);
+      const text = await res.text();
+      const status = googleStatus(text);
+      const detail = text.slice(0, 300);
+      throw new AppError(
+        "UPSTREAM_ERROR",
+        `Google Places answered ${res.status}${status ? ` ${status}` : ""}: ${detail}`,
+      );
     }
     return res.json();
   };
@@ -99,13 +107,18 @@ export function createGoogleDestinationSearch(apiKey: string): DestinationSearch
   return {
     async search(query) {
       const [places, address] = await Promise.allSettled([searchPlaces(query), findAddress(query)]);
-      // A missing address is not an error: the user still gets the places.
+      // A failed address lookup is not an error for the user: they still get the places. The
+      // answer is marked partial so it is not cached, and the failure is reported.
       const found = address.status === "fulfilled" ? address.value : undefined;
+      if (address.status === "rejected") opts.onAddressError?.(address.reason);
       if (places.status === "rejected") {
-        if (found) return [found];
+        if (found) return { results: [found], partial: true };
         throw places.reason;
       }
-      return mergeDestinations(found, places.value);
+      return {
+        results: mergeDestinations(found, places.value),
+        partial: address.status === "rejected",
+      };
     },
   };
 }
@@ -171,6 +184,16 @@ export function mergeDestinations(
 ): Destination[] {
   if (!address) return places.slice(0, MAX_RESULTS);
   return [address, ...places.filter((place) => place.id !== address.id)].slice(0, MAX_RESULTS);
+}
+
+/** Google's error status ("PERMISSION_DENIED", "RESOURCE_EXHAUSTED") from an error body. */
+function googleStatus(body: string): string | undefined {
+  try {
+    const status = (JSON.parse(body) as { error?: { status?: unknown } }).error?.status;
+    return typeof status === "string" ? status : undefined;
+  } catch {
+    return undefined;
+  }
 }
 
 /** "Plac Defilad 1, 00-901 Warszawa, Polska" → "Plac Defilad 1, 00-901 Warszawa" */

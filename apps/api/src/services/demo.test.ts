@@ -121,15 +121,15 @@ describe("createFixedDestinationSearch", () => {
   const search = createFixedDestinationSearch();
 
   it("finds by the start of words, without Polish letters", async () => {
-    const names = (await search.search("lazienki")).map((d) => d.name);
+    const names = (await search.search("lazienki")).results.map((d) => d.name);
     expect(names).toEqual(["Łazienki Królewskie"]);
-    expect((await search.search("muzeum pow")).map((d) => d.name)).toEqual([
+    expect((await search.search("muzeum pow")).results.map((d) => d.name)).toEqual([
       "Muzeum Powstania Warszawskiego",
     ]);
   });
 
   it("answers nothing for an empty query", async () => {
-    expect(await search.search("  ")).toEqual([]);
+    expect((await search.search("  ")).results).toEqual([]);
   });
 });
 
