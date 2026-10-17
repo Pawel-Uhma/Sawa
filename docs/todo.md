@@ -18,11 +18,11 @@
 - [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git); klucz jest na Discordzie zespołu — `Wszyscy` — 11:30
 - [ ] **T-09** Konta: GitHub (repo), Vercel, dostęp do LLM — `Wszyscy` — 12:00
 - [ ] **T-02** Projekt Supabase na koncie zespołu (nie prywatnym); kto zakłada, do potwierdzenia — `R2` — 13:00
-- [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, maplibre, pierwszy push — `R3` — 13:00
+- [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, mapbox-gl, pierwszy push — `R3` — 13:00
 - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
 - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
 - [ ] **T-62** Zasady pracy z repo: gałęzie, PR, kto merge'uje; zapisać w `CLAUDE.md` — `Wszyscy` — 13:00
-- [x] **T-65** Dostawca stylu mapy: Mapbox (decyzja R3, 17.10). Sprawdzenie z MapLibre idzie do T-30 — `R3` — 13:00
+- [x] **T-65** Mapa: Mapbox (styl i renderer), decyzja R3, 17.10 — `R3` — 13:00
 - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
 
 ## R1 · Dane i planer tras
@@ -42,7 +42,7 @@
 
 ## R3 · Frontend i mapa
 
-- [ ] **T-30** Mapa MapLibre z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00
+- [ ] **T-30** Mapa Mapbox z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00
 - [ ] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — 17:00
 - [ ] **T-32** Slider czasu (30 min – 4 h) i przycisk „generuj” — `R3` — 17:00
 - [ ] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — 22:00

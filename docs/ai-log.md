@@ -1473,3 +1473,205 @@
 > +
 > +**AI:** Przejrzałem mózg pod kątem nieaktualnych wzmianek (`05-plan-architektury.md`, spotkania, `stan.md`, `todo.md`, pamięć agenta). Nic nie zmieniłem, czekam na Twoje decyzje.
 
+
+### 2026-10-17 11:53 · Pawel
+
+> usun maplibre daj mapbox, Tak idziemy z sawa i wyzwanie 1 - warszawa 2076 , itd. dodaj ai-log ktory bedzie logowal od teraz
+
+
+**AI:** Zamieniłem MapLibre na Mapbox w `CLAUDE.md`, `05-plan-architektury.md` (wiersz Mapa, `npm i mapbox-gl react-map-gl`, usunięte punkty o MapLibre i „pomysł D”), `todo.md` (T-04, T-30, T-65), `zespol.md`, `role/R3-frontend-i-mapa.md`, `historia/README.md`, `pitch/sawa-pitch.html` i spotkanie 11:30. W `stan.md` dopisałem decyzję: projekt to Sawa, wyzwanie 1 „Warszawa 2076”. Hook `log-prompt.sh` już loguje każdy prompt; sprawdziłem go testem. Nie ruszyłem prototypów w `docs/ui/propozycje/` (nadal używają MapLibre CDN) ani wpisów historycznych w logu.
+
+### 2026-10-17 11:53 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  CLAUDE.md                                           | 2 +-
+>  docs/05-plan-architektury.md                        | 6 ++----
+>  docs/ai-log.md                                      | 7 +++++++
+>  docs/historia/README.md                             | 4 ++--
+>  docs/pitch/sawa-pitch.html                          | 4 ++--
+>  docs/role/R3-frontend-i-mapa.md                     | 2 +-
+>  docs/spotkania/2026-10-17-1130-stack-repo-domena.md | 4 ++--
+>  docs/stan.md                                        | 5 +++--
+>  docs/todo.md                                        | 6 +++---
+>  docs/zespol.md                                      | 2 +-
+>  10 files changed, 24 insertions(+), 18 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/CLAUDE.md b/CLAUDE.md
+> index 2bd1e94..5eccd89 100644
+> --- a/CLAUDE.md
+> +++ b/CLAUDE.md
+> @@ -29,7 +29,7 @@ Jeśli prompt był tylko pytaniem i nic nie zmieniłeś, i tak dopisz linię `**
+>  
+>  ## Stack (od 17.10)
+>  
+> -Next.js (App Router) + TypeScript, Tailwind, mapa MapLibre. Szczegóły w `docs/05-plan-architektury.md`.
+> +Next.js (App Router) + TypeScript, Tailwind, mapa Mapbox. Szczegóły w `docs/05-plan-architektury.md`.
+>  
+>  ## Frontend
+>  
+> diff --git a/docs/05-plan-architektury.md b/docs/05-plan-architektury.md
+> index bd198fc..07a75bc 100644
+> --- a/docs/05-plan-architektury.md
+> +++ b/docs/05-plan-architektury.md
+> @@ -8,10 +8,9 @@
+>  |---|---|---|
+>  | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
+>  | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
+> -| Mapa | MapLibre GL (`react-map-gl`) + styl z Mapbox | Decyzja 17.10 (R3): własny styl (nie wygląd Google Maps) z Mapbox. Wymaga tokenu w `.env.local`, nigdy w repo. Wcześniej plan był na podkład OSM bez klucza |
+> +| Mapa | **Mapbox GL** (`react-map-gl`) z własnym stylem Mapbox | Decyzja 17.10 (R3): własny styl, nie wygląd Google Maps. Token Mapbox w `.env.local`, nigdy w repo |
+>  | Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
+>  | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
+> -| Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
+>  | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
+>  | Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
+>  | Deploy | Frontend na Vercel, backend na Railway | Link na pitchu pod darmową subdomeną `*.vercel.app`, bez kupowania domeny (ustalone 17.10) |
+> @@ -53,7 +52,7 @@ docs/                      # to, co jest teraz
+>  npx create-next-app@latest app --ts --tailwind --eslint --app --src-dir=false --import-alias "@/*"
+>  cd app
+>  npx shadcn@latest init
+> -npm i maplibre-gl react-map-gl
+> +npm i mapbox-gl react-map-gl
+>  git init && gh repo create <nazwa-zespolu> --public --source=. --push
+>  ```
+>  
+> @@ -71,7 +70,6 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
+>  
+>  - [x] Backend: Railway (17.10). Do ustalenia: framework serwisu i jak frontend go woła (CORS, URL w env)
+>  - [ ] Zasady pracy z repo: gałęzie, PR, kto merge'uje (może agent na GitHubie)
+> -- [ ] Darmowe API do własnego stylu mapy, zgodne z MapLibre
+>  
+>  - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
+>  - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 232aad6..e0f3fba 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1473,3 +1473,10 @@
+>  > +
+>  > +**AI:** Przejrzałem mózg pod kątem nieaktualnych wzmianek (`05-plan-architektury.md`, spotkania, `stan.md`, `todo.md`, pamięć agenta). Nic nie zmieniłem, czekam na Twoje decyzje.
+>  
+> +
+> +### 2026-10-17 11:53 · Pawel
+> +
+> +> usun maplibre daj mapbox, Tak idziemy z sawa i wyzwanie 1 - warszawa 2076 , itd. dodaj ai-log ktory bedzie logowal od teraz
+> +
+> +
+> +**AI:** Zamieniłem MapLibre na Mapbox w `CLAUDE.md`, `05-plan-architektury.md` (wiersz Mapa, `npm i mapbox-gl react-map-gl`, usunięte punkty o MapLibre i „pomysł D”), `todo.md` (T-04, T-30, T-65), `zespol.md`, `role/R3-frontend-i-mapa.md`, `historia/README.md`, `pitch/sawa-pitch.html` i spotkanie 11:30. W `stan.md` dopisałem decyzję: projekt to Sawa, wyzwanie 1 „Warszawa 2076”. Hook `log-prompt.sh` już loguje każdy prompt; sprawdziłem go testem. Nie ruszyłem prototypów w `docs/ui/propozycje/` (nadal używają MapLibre CDN) ani wpisów historycznych w logu.
+> diff --git a/docs/historia/README.md b/docs/historia/README.md
+> index 56758ac..f516acd 100644
+> --- a/docs/historia/README.md
+> +++ b/docs/historia/README.md
+> @@ -5,7 +5,7 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
+>  ## Ustalenia (17.10, Paweł)
+>  
+>  - Jednostka to **punkt na mapie** z krótką historią. Sawa odzywa się, gdy jesteś blisko.
+> -- Format: **GeoJSON + Markdown**. 17.10 ładujemy GeoJSON do MapLibre bez przepisywania.
+> +- Format: **GeoJSON + Markdown**. 17.10 ładujemy GeoJSON do Mapbox bez przepisywania.
+>  - Treść: **fakty i ciekawostki ze źródłami**. Kwestie Sawy generuje LLM na żywo 17.10. Gotowych tekstów jej głosem nie piszemy (§4 ust. 3 regulaminu).
+>  - Dodatki: linki do zdjęć archiwalnych z licencjami, streszczenie po angielsku, dawne nazwy ulic, ludzie związani z miejscem.
+>  
+> @@ -87,4 +87,4 @@ Zbliżenie na 400 m: [mapa-historia.png](mapa-historia.png) (stan po rundzie 2).
+>  
+>  ## Jak użyć
+>  
+> -GeoJSON wczytujemy jako źródło MapLibre. Gdy użytkownik jest w promieniu ok. 50 m od punktu, LLM dostaje `fakty`, `ciekawostki` i `ludzie` tego punktu i układa z nich wypowiedź Sawy. Do pitchu: wszystkie dane pochodzą z otwartych źródeł (Wikipedia CC BY-SA, OSM ODbL, Commons), więc trzeba je podpisać w aplikacji.
+> +GeoJSON wczytujemy jako źródło Mapbox. Gdy użytkownik jest w promieniu ok. 50 m od punktu, LLM dostaje `fakty`, `ciekawostki` i `ludzie` tego punktu i układa z nich wypowiedź Sawy. Do pitchu: wszystkie dane pochodzą z otwartych źródeł (Wikipedia CC BY-SA, OSM ODbL, Commons), więc trzeba je podpisać w aplikacji.
+> diff --git a/docs/pitch/sawa-pitch.html b/docs/pitch/sawa-pitch.html
+> index 9f5a347..2f16591 100644
+> --- a/docs/pitch/sawa-pitch.html
+> +++ b/docs/pitch/sawa-pitch.html
+> @@ -137,7 +137,7 @@
+>      <p class="lead" style="max-width:820px;">Syrenka, która oprowadza cię po Warszawie. Łączy historię miasta z tym, co dzieje się dziś wieczorem.</p>
+>    </div>
+>    <img src="img/sawa-32.png" alt="Sawa" style="width:860px; height:860px; object-fit:contain;">
+> -  <div class="foot"><span>Propozycja Pawła na spotkanie zespołu</span><span>Środa, 14.10.2026</span></div>
+> +  <div class="foot"><span>Propozycja Pawła na spotkanie zespołu</span><span>Sobota, 17.10.2026</span></div>
+>  </section>
+>  
+>  <!-- 2. Czym jest Sawa: legenda -->
+> @@ -287,7 +287,7 @@
+>      <img src="img/scena-laptop.png" alt="Sawa przy laptopie" style="width:340px; align-self:flex-end;">
+>    </div>
+>    <div class="spacer"></div>
+> -  <p style="font-size:26px;">Stack: Next.js, MapLibre, LLM Bielik (zapasowo Claude). O historii Sawa mówi tylko z naszej bazy punktów, zawsze ze źródłem.</p>
+> +  <p style="font-size:26px;">Stack: Next.js, Mapbox, LLM Bielik (zapasowo Claude). O historii Sawa mówi tylko z naszej bazy punktów, zawsze ze źródłem.</p>
+>    <div class="foot"><span>sawa</span><span>08</span></div>
+>  </section>
+>  
+> diff --git a/docs/role/R3-frontend-i-mapa.md b/docs/role/R3-frontend-i-mapa.md
+> index ec16ee1..322ae01 100644
+> --- a/docs/role/R3-frontend-i-mapa.md
+> +++ b/docs/role/R3-frontend-i-mapa.md
+> @@ -7,7 +7,7 @@
+>  **Przeczytaj przed pracą:** [05-plan-architektury.md](../05-plan-architektury.md) (stack i komendy startowe), [10-prd.md](../10-prd.md) (Główna ścieżka, MVP), [spotkania/2026-10-17-1100-mvp-sawy.md](../spotkania/2026-10-17-1100-mvp-sawy.md) (ścieżka w aplikacji: onboarding → slider → generuj → trasa → opowieść).
+>  
+>  **Zasady:**
+> -- Stack: Next.js App Router, TypeScript, Tailwind, shadcn/ui, MapLibre (`react-map-gl`), bez klucza API do mapy.
+> +- Stack: Next.js App Router, TypeScript, Tailwind, shadcn/ui, Mapbox GL (`react-map-gl`), token Mapbox tylko w `.env.local`, nigdy w repo.
+>  - Minimum na pitch: ekran startowy, slider, mapa, planowanie trasy, dane o miejscach i ZTM. Bez logowania.
+>  - Każdy ekran działa w widoku telefonu: 16 px marginesu, bez poziomego scrolla.
+>  - Pierwszy commit to czysta instalacja z generatora, potem małe commity.
+> diff --git a/docs/spotkania/2026-10-17-1130-stack-repo-domena.md b/docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+> index 20d3ced..73a7e48 100644
+> --- a/docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+> +++ b/docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+> @@ -13,13 +13,13 @@
+>  ## Otwarte kwestie
+>  
+>  - **Zasady pracy z repo:** krótki git flow (gałęzie, PR, kto merge'uje), żeby 5 osób i ich agenci nie wchodzili sobie w drogę i żeby kod dało się później rozwijać komercyjnie. Pomysł: merge przez agenta na GitHubie. Rozstrzyga zespół.
+> -- **Własny styl mapy:** ktoś zna darmowe API do customowych map (szerokie drogi, własne kolory, nie wygląd Google Maps); nazwa do ustalenia. Pasuje do MapLibre z własnym stylem. Rozstrzyga R3.
+> +- **Własny styl mapy:** ktoś zna darmowe API do customowych map (szerokie drogi, własne kolory, nie wygląd Google Maps); nazwa do ustalenia. Rozstrzygnięte 17.10: Mapbox (R3).
+>  - **LLM:** padło „Claude”; w planie jest Bielik z Claude jako zapasowym. Bez zmiany do decyzji R4 (T-01).
+>  
+>  ## Zadania
+>  
+>  - [ ] Spisać zasady pracy z repo (gałęzie, PR, merge) — zespół — 13:00
+> -- [ ] Znaleźć nazwę API do customowej mapy i sprawdzić, czy działa z MapLibre — R3 — 13:00
+> +- [x] Nazwa API do customowej mapy: Mapbox (R3, 17.10)
+>  
+>  ## Zmienione dokumenty
+>  
+> diff --git a/docs/stan.md b/docs/stan.md
+> index 9f6ea87..46890c8 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -1,6 +1,6 @@
+>  # Stan projektu
+>  
+> -**Ostatnia aktualizacja:** 17.10.2026, ok. 11:30 (Paweł, z agentem)
+> +**Ostatnia aktualizacja:** 17.10.2026, ok. 11:55 (Paweł, z agentem)
+>  
+>  ## Teraz
+>  
+> @@ -32,7 +32,8 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+>  ## Ostatnie decyzje
+>  
+>  - 17.10: backend na Railway; zostajemy przy darmowej subdomenie Vercela. [05-plan-architektury.md](05-plan-architektury.md)
+> -- 17.10: mapa na Mapbox (styl własny; R3). Renderer nadal MapLibre. Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
+> +- 17.10: mapa na Mapbox (styl własny; R3). Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
+> +- 17.10: projekt to Sawa (pomysł) i wyzwanie 1 „Warszawa 2076”. [README](README.md)
+>  
+>  - 17.10, 11:30: stack Next.js + Supabase + Vercel potwierdzony; repo z dokumentacją i klucz API na Discordzie zespołu. [Podsumowanie](spotkania/2026-10-17-1130-stack-repo-domena.md)
+>  
+> diff --git a/docs/todo.md b/docs/todo.md
+> index 0d9e9b3..459228d 100644
+> --- a/docs/todo.md
+> +++ b/docs/todo.md
+> @@ -18,11 +18,11 @@
+>  - [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git); klucz jest na Discordzie zespołu — `Wszyscy` — 11:30
+>  - [ ] **T-09** Konta: GitHub (repo), Vercel, dostęp do LLM — `Wszyscy` — 12:00
+>  - [ ] **T-02** Projekt Supabase na koncie zespołu (nie prywatnym); kto zakłada, do potwierdzenia — `R2` — 13:00
+> -- [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, maplibre, pierwszy push — `R3` — 13:00
+> +- [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, mapbox-gl, pierwszy push — `R3` — 13:00
+>  - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity,
+

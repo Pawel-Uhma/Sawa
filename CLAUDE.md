@@ -29,7 +29,7 @@ Jeśli prompt był tylko pytaniem i nic nie zmieniłeś, i tak dopisz linię `**
 
 ## Stack (od 17.10)
 
-Next.js (App Router) + TypeScript, Tailwind, mapa MapLibre. Szczegóły w `docs/05-plan-architektury.md`.
+Next.js (App Router) + TypeScript, Tailwind, mapa Mapbox. Szczegóły w `docs/05-plan-architektury.md`.
 
 ## Frontend
 

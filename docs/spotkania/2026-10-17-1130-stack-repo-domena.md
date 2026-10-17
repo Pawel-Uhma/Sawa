@@ -13,13 +13,13 @@
 ## Otwarte kwestie
 
 - **Zasady pracy z repo:** krótki git flow (gałęzie, PR, kto merge'uje), żeby 5 osób i ich agenci nie wchodzili sobie w drogę i żeby kod dało się później rozwijać komercyjnie. Pomysł: merge przez agenta na GitHubie. Rozstrzyga zespół.
-- **Własny styl mapy:** ktoś zna darmowe API do customowych map (szerokie drogi, własne kolory, nie wygląd Google Maps); nazwa do ustalenia. Pasuje do MapLibre z własnym stylem. Rozstrzyga R3.
+- **Własny styl mapy:** ktoś zna darmowe API do customowych map (szerokie drogi, własne kolory, nie wygląd Google Maps); nazwa do ustalenia. Rozstrzygnięte 17.10: Mapbox (R3).
 - **LLM:** padło „Claude”; w planie jest Bielik z Claude jako zapasowym. Bez zmiany do decyzji R4 (T-01).
 
 ## Zadania
 
 - [ ] Spisać zasady pracy z repo (gałęzie, PR, merge) — zespół — 13:00
-- [ ] Znaleźć nazwę API do customowej mapy i sprawdzić, czy działa z MapLibre — R3 — 13:00
+- [x] Nazwa API do customowej mapy: Mapbox (R3, 17.10)
 
 ## Zmienione dokumenty
 

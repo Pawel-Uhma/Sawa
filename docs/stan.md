@@ -1,6 +1,6 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 11:30 (Paweł, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 11:55 (Paweł, z agentem)
 
 ## Teraz
 
@@ -32,7 +32,8 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 ## Ostatnie decyzje
 
 - 17.10: backend na Railway; zostajemy przy darmowej subdomenie Vercela. [05-plan-architektury.md](05-plan-architektury.md)
-- 17.10: mapa na Mapbox (styl własny; R3). Renderer nadal MapLibre. Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
+- 17.10: mapa na Mapbox (styl własny; R3). Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
+- 17.10: projekt to Sawa (pomysł) i wyzwanie 1 „Warszawa 2076”. [README](README.md)
 
 - 17.10, 11:30: stack Next.js + Supabase + Vercel potwierdzony; repo z dokumentacją i klucz API na Discordzie zespołu. [Podsumowanie](spotkania/2026-10-17-1130-stack-repo-domena.md)
 

@@ -5,7 +5,7 @@ Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czy
 ## Ustalenia (17.10, Paweł)
 
 - Jednostka to **punkt na mapie** z krótką historią. Sawa odzywa się, gdy jesteś blisko.
-- Format: **GeoJSON + Markdown**. 17.10 ładujemy GeoJSON do MapLibre bez przepisywania.
+- Format: **GeoJSON + Markdown**. 17.10 ładujemy GeoJSON do Mapbox bez przepisywania.
 - Treść: **fakty i ciekawostki ze źródłami**. Kwestie Sawy generuje LLM na żywo 17.10. Gotowych tekstów jej głosem nie piszemy (§4 ust. 3 regulaminu).
 - Dodatki: linki do zdjęć archiwalnych z licencjami, streszczenie po angielsku, dawne nazwy ulic, ludzie związani z miejscem.
 
@@ -87,4 +87,4 @@ Zbliżenie na 400 m: [mapa-historia.png](mapa-historia.png) (stan po rundzie 2).
 
 ## Jak użyć
 
-GeoJSON wczytujemy jako źródło MapLibre. Gdy użytkownik jest w promieniu ok. 50 m od punktu, LLM dostaje `fakty`, `ciekawostki` i `ludzie` tego punktu i układa z nich wypowiedź Sawy. Do pitchu: wszystkie dane pochodzą z otwartych źródeł (Wikipedia CC BY-SA, OSM ODbL, Commons), więc trzeba je podpisać w aplikacji.
+GeoJSON wczytujemy jako źródło Mapbox. Gdy użytkownik jest w promieniu ok. 50 m od punktu, LLM dostaje `fakty`, `ciekawostki` i `ludzie` tego punktu i układa z nich wypowiedź Sawy. Do pitchu: wszystkie dane pochodzą z otwartych źródeł (Wikipedia CC BY-SA, OSM ODbL, Commons), więc trzeba je podpisać w aplikacji.

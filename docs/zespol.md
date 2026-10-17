@@ -20,7 +20,7 @@ Kolumna „Rola” to kod roli: `R1`, `R2`, `R3`, `R4` albo `R5`. Jedna osoba mo
 |---|---|---|---|
 | R1 | Dane i planer tras | [role/R1-dane-i-planer.md](role/R1-dane-i-planer.md) | Proxy do API miasta, cache, pozycje ZTM, planer trasy z przesiadkami |
 | R2 | Baza i historia | [role/R2-baza-i-historia.md](role/R2-baza-i-historia.md) | Supabase, seed historii z GeoJSON, licencje zdjęć, cache Google Places |
-| R3 | Frontend i mapa | [role/R3-frontend-i-mapa.md](role/R3-frontend-i-mapa.md) | UI, onboarding, mapa MapLibre, slider czasu, odtwarzacz opowieści, wersja mobilna |
+| R3 | Frontend i mapa | [role/R3-frontend-i-mapa.md](role/R3-frontend-i-mapa.md) | UI, onboarding, mapa Mapbox, slider czasu, odtwarzacz opowieści, wersja mobilna |
 | R4 | AI i głos | [role/R4-ai-i-glos.md](role/R4-ai-i-glos.md) | LLM (Bielik, zapas Claude), prompty Sawy, czat, TTS, awatar |
 | R5 | Produkt, pitch i QA | [role/R5-produkt-pitch-qa.md](role/R5-produkt-pitch-qa.md) | PRD, scenariusz demo, pitch deck, testy na telefonie, dziennik AI, oddanie |
 

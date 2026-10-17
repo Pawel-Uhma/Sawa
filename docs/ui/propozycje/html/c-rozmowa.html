@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>C · Rozmowa z Sawą</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  body, .telefon { background: linear-gradient(180deg, #E3F4EC 0%, #F6FBF9 46%, #FFFFFF 100%); }
+  .naglowek { position: absolute; top: 56px; left: 20px; right: 20px; display: flex; justify-content: space-between; align-items: center; }
+  .naglowek .logo { font-size: 28px; }
+  .naglowek .pill { background: rgba(255,255,255,.8); height: 36px; font-size: 13px; color: var(--tekst-2); }
+
+  .sawa { position: absolute; right: -6px; top: 92px; width: 168px; filter: drop-shadow(0 12px 18px rgba(16,43,42,.18)); }
+  .rozmowa { position: absolute; top: 112px; left: 16px; right: 16px; display: flex; flex-direction: column; gap: 8px; }
+  .dymek { background: #fff; border-radius: 22px 22px 22px 6px; padding: 12px 15px; font-size: 15.5px; line-height: 1.42;
+    box-shadow: 0 1px 2px rgba(16,43,42,.05), 0 6px 18px rgba(16,43,42,.07); max-width: 232px; }
+  .dymek.szeroki { max-width: 300px; }
+  .dymek b { color: var(--glebia); }
+  .kto { font-size: 12px; font-weight: 700; color: var(--tekst-3); margin: 0 0 2px 6px; }
+
+  .karta-mapy { position: relative; height: 150px; border-radius: 18px; overflow: hidden; margin-top: 10px; }
+  .karta-mapy .podpis { position: absolute; left: 8px; bottom: 8px; z-index: 5; height: 30px; border-radius: 15px; padding: 0 11px;
+    display: flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 700; }
+
+  .odpowiedzi { position: absolute; left: 16px; right: 16px; top: 588px; }
+  .odpowiedzi .etykieta { margin: 0 0 8px 4px; }
+  .rzad { display: flex; gap: 8px; flex-wrap: wrap; }
+  .szybka { height: 42px; padding: 0 16px; border-radius: 21px; display: inline-flex; align-items: center; font-weight: 700; font-size: 15px;
+    background: #fff; color: var(--glebia); border: 1.5px solid rgba(23,112,111,.25); }
+  .szybka.glowna { background: var(--glebia); color: #fff; border-color: var(--glebia); }
+
+  .pole { position: absolute; left: 16px; right: 16px; bottom: 34px; height: 56px; border-radius: 28px; background: #fff;
+    box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 8px 24px rgba(16,43,42,.10); display: flex; align-items: center; padding: 0 6px 0 20px; gap: 10px; }
+  .pole span { flex: 1; color: var(--tekst-3); font-size: 15.5px; }
+  .mikrofon { width: 44px; height: 44px; border-radius: 50%; background: var(--koral); display: grid; place-items: center; box-shadow: 0 4px 12px rgba(242,117,95,.35); }
+</style></head>
+<body><div class="telefon">
+  <div class="status"></div>
+  <div class="naglowek">
+    <div class="logo">sawa<i>.</i></div>
+  </div>
+  <img class="sawa" src="../../../pitch/img/sawa-32.png">
+
+  <div class="rozmowa">
+    <div class="kto" style="margin-top:4px">Sawa</div>
+    <div class="dymek">Cześć! Jestem Sawa, ta z herbu. Znam tu każdy róg.</div>
+    <div class="dymek">Stoisz tam, gdzie był <b>Kercelak</b>, największy bazar przedwojennej Warszawy.</div>
+    <div class="dymek szeroki">Ile masz czasu? Wsiądziemy w tramwaj, a ja opowiem, co mijasz za oknem.
+      <div class="karta-mapy"><div class="mapa" id="mapa"></div>
+        <div class="podpis szklo">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#17706F"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+          al. Solidarności, Wola</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="odpowiedzi">
+    <div class="etykieta">Odpowiedz jednym dotknięciem</div>
+    <div class="rzad">
+      <span class="szybka">30 min</span>
+      <span class="szybka glowna">Godzinę</span>
+      <span class="szybka">2 h</span>
+      <span class="szybka">Cały wieczór</span>
+      <span class="szybka">Sam wybiorę trasę</span>
+    </div>
+  </div>
+
+  <div class="pole">
+    <span>Napisz albo powiedz…</span>
+    <div class="mikrofon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script>
+<script>
+  sawaMapa('mapa', { zoom: 14.2, center: [20.9794, 52.2358], pins: [{ c: [20.98019, 52.23702], n: 'Kercelak' }] });
+</script>
+</body></html>

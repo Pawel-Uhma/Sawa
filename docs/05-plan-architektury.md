@@ -8,10 +8,9 @@
 |---|---|---|
 | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
 | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
-| Mapa | MapLibre GL (`react-map-gl`) + styl z Mapbox | Decyzja 17.10 (R3): własny styl (nie wygląd Google Maps) z Mapbox. Wymaga tokenu w `.env.local`, nigdy w repo. Wcześniej plan był na podkład OSM bez klucza |
+| Mapa | **Mapbox GL** (`react-map-gl`) z własnym stylem Mapbox | Decyzja 17.10 (R3): własny styl, nie wygląd Google Maps. Token Mapbox w `.env.local`, nigdy w repo |
 | Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
 | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
-| Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
 | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
 | Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
 | Deploy | Frontend na Vercel, backend na Railway | Link na pitchu pod darmową subdomeną `*.vercel.app`, bez kupowania domeny (ustalone 17.10) |
@@ -53,7 +52,7 @@ docs/                      # to, co jest teraz
 npx create-next-app@latest app --ts --tailwind --eslint --app --src-dir=false --import-alias "@/*"
 cd app
 npx shadcn@latest init
-npm i maplibre-gl react-map-gl
+npm i mapbox-gl react-map-gl
 git init && gh repo create <nazwa-zespolu> --public --source=. --push
 ```
 
@@ -71,7 +70,6 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
 
 - [x] Backend: Railway (17.10). Do ustalenia: framework serwisu i jak frontend go woła (CORS, URL w env)
 - [ ] Zasady pracy z repo: gałęzie, PR, kto merge'uje (może agent na GitHubie)
-- [ ] Darmowe API do własnego stylu mapy, zgodne z MapLibre
 
 - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
 - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token

@@ -7,7 +7,7 @@
 **Przeczytaj przed pracą:** [05-plan-architektury.md](../05-plan-architektury.md) (stack i komendy startowe), [10-prd.md](../10-prd.md) (Główna ścieżka, MVP), [spotkania/2026-10-17-1100-mvp-sawy.md](../spotkania/2026-10-17-1100-mvp-sawy.md) (ścieżka w aplikacji: onboarding → slider → generuj → trasa → opowieść).
 
 **Zasady:**
-- Stack: Next.js App Router, TypeScript, Tailwind, shadcn/ui, MapLibre (`react-map-gl`), bez klucza API do mapy.
+- Stack: Next.js App Router, TypeScript, Tailwind, shadcn/ui, Mapbox GL (`react-map-gl`), token Mapbox tylko w `.env.local`, nigdy w repo.
 - Minimum na pitch: ekran startowy, slider, mapa, planowanie trasy, dane o miejscach i ZTM. Bez logowania.
 - Każdy ekran działa w widoku telefonu: 16 px marginesu, bez poziomego scrolla.
 - Pierwszy commit to czysta instalacja z generatora, potem małe commity.
