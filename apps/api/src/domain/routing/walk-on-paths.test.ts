@@ -142,6 +142,34 @@ describe("pickWalkOnPaths", () => {
     expect(picked?.places.map((p) => p.placeId)).toEqual(["west-match"]);
   });
 
+  it("for a loop prefers the path that comes back around over a lollipop", () => {
+    // Out ~270 m and back a street over (~680 m, matches the time), or round a block (~570 m).
+    const lollipop: LngLat[] = [
+      east(21.0),
+      east(21.004),
+      [21.004, 52.2306],
+      [21.0, 52.2306],
+      east(21.0),
+    ];
+    const square: LngLat[] = [
+      east(21.0),
+      east(21.0021),
+      [21.0021, 52.23126],
+      [21.0, 52.23126],
+      east(21.0),
+    ];
+    const corner = { lat: 52.23126, lng: 21.0021 };
+    const walks = [
+      { walk: walk([ORIGIN, target.position, ORIGIN]), path: lollipop },
+      { walk: walk([ORIGIN, corner, ORIGIN]), path: square },
+    ];
+    const loopInput = { places: [], budgetSec: 565, interests, origin: ORIGIN, end: ORIGIN };
+    expect(pickWalkOnPaths(walks, loopInput)?.waypoints[1]).toEqual(corner);
+    expect(pickWalkOnPaths(walks, { ...loopInput, end: undefined })?.waypoints[1]).toEqual(
+      target.position,
+    );
+  });
+
   it("returns undefined without any path", () => {
     expect(pickWalkOnPaths([{ walk: straight }], input)).toBeUndefined();
   });
