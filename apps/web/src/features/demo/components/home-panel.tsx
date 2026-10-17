@@ -117,7 +117,7 @@ export function HomePanel({
             {t("Ile masz czasu?", "How much time do you have?")}
           </h2>
           <p className="truncate text-[12.5px] leading-snug text-tekst-2">
-            {t("Ułożę przejazd z opowieściami", "I'll plan a ride full of stories")}
+            {t("Opowiem, co mijasz", "I'll tell you what you pass")}
           </p>
         </div>
         <span className="relative h-9 shrink-0 overflow-hidden md:h-[42px]">
@@ -223,17 +223,12 @@ export function HomePanel({
       />
 
       <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-4 !h-12 md:!h-14">
-        {planning ? (
-          t("Układam trasę…", "Planning your route…")
-        ) : (
-          <>
-            {t("Wyznacz trasę", "Plan my route")}
-            <span className="font-semibold opacity-75">
-              · {rideEnd.type === "loop" ? t("pętla", "loop") : t("do celu", "one way")}{" "}
-              {formatDuration(shownMin)}
-            </span>
-          </>
-        )}
+        {/* Przycisk mówi, co wyjdzie: pętla albo droga do celu (czas jest w nagłówku) */}
+        {planning
+          ? t("Układam trasę…", "Planning your route…")
+          : rideEnd.type === "loop"
+            ? t("Wyznacz pętlę", "Plan a loop")
+            : t("Wyznacz trasę do celu", "Plan the way there")}
         <ArrowRightIcon className="size-5" />
       </PrimaryButton>
       {planError && (
