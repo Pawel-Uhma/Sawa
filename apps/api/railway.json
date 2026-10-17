@@ -1,0 +1,11 @@
+{
+  "$schema": "https://railway.com/railway.schema.json",
+  "deploy": {
+    "startCommand": "pnpm --filter @sawa/api start",
+    "healthcheckPath": "/health",
+    "restartPolicyType": "ON_FAILURE"
+  },
+  "build": {
+    "watchPatterns": ["apps/api/**", "packages/shared/**", "pnpm-lock.yaml"]
+  }
+}
