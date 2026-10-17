@@ -100,7 +100,9 @@ describe("spellNumbers", () => {
     expect(spellNumbers("Aż 30% mieszkańców, potem 1,5%.")).toBe(
       "Aż trzydzieści procent mieszkańców, potem półtora procent.",
     );
-    expect(spellNumbers("To 171, 173.")).toBe("To sto siedemdziesiąt jeden, sto siedemdziesiąt trzy.");
+    expect(spellNumbers("To 171, 173.")).toBe(
+      "To sto siedemdziesiąt jeden, sto siedemdziesiąt trzy.",
+    );
   });
 
   it("spells units after a number with the right form", () => {

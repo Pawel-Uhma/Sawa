@@ -100,14 +100,21 @@ describe("speakStream", () => {
     };
     /** Each sentence is 10 frames; its characters are said 0.01 s apart. */
     function timedSynthesizer() {
-      const streamWithTimes = vi.fn(async function* (text: string, _opts: { previousText: string }) {
+      const streamWithTimes = vi.fn(async function* (
+        text: string,
+        _opts: { previousText: string },
+      ) {
         const chars = [...text];
         yield { audio: new Uint8Array(), times: { chars, starts: chars.map((_, i) => i * 0.01) } };
         yield { audio: frames(10), times: null };
       });
       return { ...streamingSynthesizer(), streamWithTimes };
     }
-    async function run(service: ReturnType<typeof createSpeechService>, text: string, whole?: string) {
+    async function run(
+      service: ReturnType<typeof createSpeechService>,
+      text: string,
+      whole?: string,
+    ) {
       const times: number[] = [];
       for await (const _ of service.speakStream(pieces(text), {
         whole,

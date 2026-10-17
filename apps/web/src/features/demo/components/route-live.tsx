@@ -9,7 +9,7 @@ import { usePlace } from "@/features/map";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
-import { spokenLength } from "../lib/story-player";
+import { spokenCut } from "../lib/story-player";
 import { useStoryWaitMessage } from "../lib/story-wait";
 import { Attribution, Itinerary } from "./departures";
 import { PinIcon } from "./icons";
@@ -42,6 +42,8 @@ export type RouteLiveProps = {
   isPlaying: boolean;
   /** Ile bieżącego tematu już padło (0–100). */
   progress: number;
+  /** Ile słów `storyText` Sawa już zaczęła mówić (`StoryPlayer.spokenWords`). */
+  spokenWords: number;
   /** Za ile sekund pierwsze miejsce; do tego czasu Sawa milczy. Null, gdy już może mówić. */
   waitSec: number | null;
   storyText: string | null;
@@ -79,13 +81,13 @@ function EndPill({ end }: { end: RouteLiveProps["end"] }) {
  */
 function LiveText({
   text,
-  progress,
+  spokenWords,
   state,
   className = "",
   edgeRef,
 }: {
   text: string | null;
-  progress: number;
+  spokenWords: number;
   state: RouteLiveProps["storyState"];
   className?: string;
   /** Znacznik w miejscu, do którego doszedł głos (do przewijania za nim). */
@@ -117,7 +119,7 @@ function LiveText({
       </div>
     );
   }
-  const cut = spokenLength(text, progress);
+  const cut = spokenCut(text, spokenWords);
   return (
     <p aria-live="off" className={className}>
       <span className="text-tekst transition-colors">{text.slice(0, cut)}</span>
@@ -215,6 +217,7 @@ export function RouteLive({
   isDesktop,
   isPlaying,
   progress,
+  spokenWords,
   waitSec,
   storyText,
   storyState,
@@ -294,7 +297,7 @@ export function RouteLive({
                 ) : (
                   <LiveText
                     text={storyText}
-                    progress={progress}
+                    spokenWords={spokenWords}
                     state={storyState}
                     edgeRef={edgeRef}
                     className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"

@@ -170,6 +170,8 @@ export type LiveText = {
   failed: boolean;
   /** Sawa has nothing worth telling here and stays quiet (`Story.silent`). */
   silent?: boolean;
+  /** When each word starts in the voice (seconds), as far as the voice is made; API may not know. */
+  wordTimes?: number[];
 };
 
 const NO_TEXT: LiveText = { text: null, done: false, told: null, failed: false };
@@ -193,7 +195,7 @@ export function useLiveText(clip: Clip | null): LiveText {
       try {
         const res = await api.v1.stories.live[":id"].$get({ param: { id: clip.id } });
         if (!res.ok) throw new Error(`GET /v1/stories/live: ${res.status}`);
-        const { text, done, story } = await res.json();
+        const { text, done, story, wordTimes } = await res.json();
         if (cancelled) return;
         const told = story && {
           placeId: clip.placeId,
@@ -203,7 +205,14 @@ export function useLiveText(clip: Clip | null): LiveText {
           placeName: clip.placeName,
         };
         const silent = story?.silent;
-        setLive({ text: text || null, done, told, failed: done && !story && !text, silent });
+        setLive({
+          text: text || null,
+          done,
+          told,
+          failed: done && !story && !text,
+          silent,
+          wordTimes,
+        });
         if (!done) timer = setTimeout(poll, POLL_MS);
       } catch {
         if (!cancelled) setLive((l) => ({ ...l, done: true, failed: !l.text }));
@@ -256,6 +265,44 @@ export function spokenLength(text: string, progress: number): number {
   return rest < 0 ? text.length : at + rest;
 }
 
+/** The highlight runs this far ahead of the voice, so a word lights up as Sawa starts it. */
+const LEAD_SEC = 0.05;
+
+/**
+ * How many words of `text` Sawa has started saying. With the voice's word times (from the API)
+ * it is the last word whose start has passed; without them, or past their end, the guess from
+ * `progress` (characters per second), as in the timer without the voice.
+ */
+export function spokenWordCount(
+  text: string | null,
+  progress: number,
+  wordTimes: readonly number[] | undefined,
+  voiceSec: number | null,
+): number {
+  if (!text) return 0;
+  const guess = text.slice(0, spokenLength(text, progress)).split(/\s+/).length;
+  if (!wordTimes?.length || voiceSec === null) return guess;
+  const words = text.split(/\s+/).length;
+  let n = 0;
+  while (n < wordTimes.length && (wordTimes[n] as number) <= voiceSec + LEAD_SEC) n++;
+  // Times known past this moment: the voice is on word `n`.
+  if (n < wordTimes.length || wordTimes.length >= words) return Math.min(n, words);
+  return Math.min(words, Math.max(n, guess));
+}
+
+/** Where the first `words` words of `text` end, for cutting it into said and still to say. */
+export function spokenCut(text: string, words: number): number {
+  if (words <= 0) return 0;
+  const word = /\S+/g;
+  let end = 0;
+  for (let i = 0; i < words; i++) {
+    const m = word.exec(text);
+    if (!m) return text.length;
+    end = m.index + m[0].length;
+  }
+  return end;
+}
+
 /** Remembers a story once it was heard past `HEARD_AT_PROGRESS`, once per clip. */
 export function useRememberHeard(clipId: string | undefined, told: Told | null, progress: number) {
   const remembered = useRef(new Set<string>());
@@ -287,6 +334,8 @@ export function useStoryPlayer(
   const aside = isAside(useVoiceOwner());
   const speaking = isPlaying && !aside;
   const [progress, setProgress] = useState(0);
+  // Where the voice of this clip is (seconds); another clip's position does not count.
+  const [voiceAt, setVoiceAt] = useState<{ clipId: string; sec: number } | null>(null);
   const live = useLiveText(clip);
   const failed = startFailed || live.failed;
   const hasVoice = Boolean(clip?.audioUrl) && !voiceFailed;
@@ -460,7 +509,10 @@ export function useStoryPlayer(
       last = now;
       if (hasVoice && audio) {
         // Cichnący poprzedni klip nie przesuwa paska nowego tematu.
-        if (isLoaded(audio, clip) && !audio.ended) setProgress(audioProgress(audio, live));
+        if (isLoaded(audio, clip) && !audio.ended) {
+          setProgress(audioProgress(audio, live));
+          if (clip) setVoiceAt({ clipId: clip.id, sec: audio.currentTime });
+        }
       } else {
         setProgress((current) => Math.min(100, current + (delta / timerMs) * 100));
       }
@@ -516,8 +568,14 @@ export function useStoryPlayer(
     [clip],
   );
 
+  const voiceSec = hasVoice && clip && voiceAt?.clipId === clip.id ? voiceAt.sec : null;
+
   return {
     text: live.silent ? SILENT_TEXT : live.text,
+    /** Ile słów tekstu Sawa już zaczęła mówić (podświetlenie): z czasów głosu, bez nich zgadywane. */
+    spokenWords: live.silent
+      ? spokenWordCount(SILENT_TEXT, progress, undefined, null)
+      : spokenWordCount(live.text, progress, live.wordTimes, voiceSec),
     loading: !failed && live.text === null,
     failed,
     /** Czy Sawa mówi teraz o trasie; w trakcie dygresji `false`, choć trasa wróci sama. */

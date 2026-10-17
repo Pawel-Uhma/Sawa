@@ -1,12 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { MockStop } from "./mock-data";
-import {
-  clipKey,
-  spokenCut,
-  spokenLength,
-  spokenWordCount,
-  targetSecFor,
-} from "./story-player";
+import { clipKey, spokenCut, spokenLength, spokenWordCount, targetSecFor } from "./story-player";
 
 describe("clipKey", () => {
   const listener = { interests: ["historical" as const], storyStyle: "fun" as const };

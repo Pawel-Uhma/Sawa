@@ -88,7 +88,12 @@ export function createSpeechService(synthesizer: SpeechSynthesizer): SpeechServi
       const wordTimes: number[] = [];
 
       /** Times of one sentence's words; null when they cannot be placed in the clip. */
-      function timeWords(chunk: SpeechChunk, audio: Uint8Array[], chars: string[], starts: number[]) {
+      function timeWords(
+        chunk: SpeechChunk,
+        audio: Uint8Array[],
+        chars: string[],
+        starts: number[],
+      ) {
         const duration = mp3DurationSec(joinAudio(audio));
         const local = chars.length
           ? alignWordTimes(chunk.display, spokenWords({ chars, starts }))

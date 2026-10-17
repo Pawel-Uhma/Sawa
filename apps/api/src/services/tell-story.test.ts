@@ -265,8 +265,13 @@ describe("createStoryService", () => {
       });
 
       expect(llm.complete).not.toHaveBeenCalled();
-      expect(story.text).toMatch(/^O tym miejscu opowiedziałam ci już wszystko, co wiem\. Ale mogę/);
-      expect(story.suggestion).toEqual({ placeId: "okopy-lubomirskiego", name: "Okopy Lubomirskiego" });
+      expect(story.text).toMatch(
+        /^O tym miejscu opowiedziałam ci już wszystko, co wiem\. Ale mogę/,
+      );
+      expect(story.suggestion).toEqual({
+        placeId: "okopy-lubomirskiego",
+        name: "Okopy Lubomirskiego",
+      });
       expect(story.text).toContain("tuż obok: Okopy Lubomirskiego.");
       expect(story.factIds).toEqual([]);
 

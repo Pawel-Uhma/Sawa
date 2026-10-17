@@ -8,8 +8,7 @@ import {
 } from "./word-times";
 
 /** Spoken words starting one second apart. */
-const said = (text: string): SpokenWord[] =>
-  text.split(" ").map((word, i) => ({ word, start: i }));
+const said = (text: string): SpokenWord[] => text.split(" ").map((word, i) => ({ word, start: i }));
 
 describe("spokenWords", () => {
   it("starts each word on its first character", () => {

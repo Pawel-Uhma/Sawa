@@ -4,12 +4,12 @@ import type { Leg } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion, useTransform } from "motion/react";
 import { type ReactNode, type RefObject, useCallback, useEffect, useRef, useState } from "react";
 import { useT } from "@/features/i18n";
+import type { Listener } from "../lib/api-data";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { backTarget } from "../lib/podcast";
 import { dueIndex as placeAt, type RideClock, storyStartSec } from "../lib/ride-clock";
-import type { Listener } from "../lib/api-data";
 import type { StoryPlayer } from "../lib/story-player";
 import { claimVoice, ROUTE_VOICE } from "../lib/voice";
 import { RoutesIcon } from "./icons";
@@ -140,6 +140,7 @@ export function RouteSheet(props: RouteSheetProps) {
       {...props}
       isPlaying={player.isPlaying}
       progress={progress}
+      spokenWords={player.spokenWords}
       waitSec={clock.waitSec}
       storyText={player.text}
       transcript={transcript}

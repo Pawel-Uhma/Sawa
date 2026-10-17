@@ -125,7 +125,10 @@ describe("createElevenLabsSynthesizer", () => {
 
     it("moves times that start again from zero by the audio before them", async () => {
       const { pieces } = await read([
-        { audio_base64: b64(new Uint8Array([...frame(), ...frame()])), alignment: align("Tu ", 0, 0.3) },
+        {
+          audio_base64: b64(new Uint8Array([...frame(), ...frame()])),
+          alignment: align("Tu ", 0, 0.3),
+        },
         { audio_base64: b64(frame()), alignment: align("stoi", 0, 0.01) },
       ]);
       expect(pieces[1]?.times?.starts[0]).toBeCloseTo(2 * FRAME_SEC);
