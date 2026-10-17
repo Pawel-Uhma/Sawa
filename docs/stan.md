@@ -4,6 +4,8 @@
 
 ## Teraz
 
+- 18:00 (Paweł, z agentem): w Supabase +1630 miejsc z Woli, Bemowa, Bielan, Żoliborza i Śródmieścia (fakty z lokalnego zrzutu Wikipedii i tagów OSM, bez duplikatów względem dotychczasowych plików), razem 2989. Źródła: [historia/dzielnice/](historia/dzielnice/README.md), dopisane do `scripts/historia/sources.ts`. **R1:** planer zobaczy je po odświeżeniu cache (10 min), `apps/api/data/places.geojson` (fallback) nie jest odświeżony. **R2 (Jasiek):** seed załadowany przez `railway run` z kluczami serwisu `api`.
+
 - 16:30 (Paweł, z agentem R3): onboarding ma wstęp (czym jest Sawa, skąd imię, jak działa), [ui/onboarding.md](ui/onboarding.md).
 
 - 17:00 (Paweł, z agentem R3): **zakładka Sawa** (T-34) zamiast placeholdera: głowa Sawy na środku paska, świeci się, gdy mówi; podgląd opowieści z transkrypcją, sterowanie, „opowiedz więcej o tym miejscu”, lista „co już opowiedziała” z czasem. Odtwarzacz przeniesiony z arkusza trasy do `DemoApp`. Czat w wolnym tekście czeka na T-40 (R4). Kod nie jest jeszcze w commicie.
