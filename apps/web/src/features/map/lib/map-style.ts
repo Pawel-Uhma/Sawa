@@ -1,6 +1,5 @@
 import {
   HACKATHON_VENUE,
-  INTERESTS,
   type Interest,
   interestsOfTags,
   PLACE_SUBKINDS,
@@ -32,6 +31,8 @@ export type MapPalette = {
   label: string;
   labelHalo: string;
   walk: string;
+  /** Whole street drawn under its icon when the street is hovered or selected. */
+  street: string;
   /** Group of places drawn as one circle with their count when zoomed out ("glass" style, 17.10). */
   clusterFill: string;
   clusterStroke: string;
@@ -68,6 +69,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#27272a",
     labelHalo: "#ffffff",
     walk: "#52525b",
+    street: "#4f6d9a",
     clusterFill: "rgba(255, 255, 255, 0.92)",
     clusterStroke: "rgba(23, 112, 111, 0.35)",
     clusterText: "#17706f",
@@ -98,6 +100,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#d5dfdd",
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
+    street: "#8fa9d4",
     clusterFill: "rgba(23, 33, 32, 0.92)",
     clusterStroke: "rgba(142, 209, 181, 0.4)",
     clusterText: "#8ed1b5",
@@ -215,6 +218,60 @@ export const WARSAW_MAX_BOUNDS: [west: number, south: number, east: number, nort
  */
 export const MIN_PLACE_RICHNESS = 0;
 
+export const UNKNOWN_KIND_COLOR = "#71717a";
+
+/** Marker colour groups, same as `GRUPY` in docs/ui/ikony-mapy/znaczniki.mjs. */
+export const PLACE_GROUP_COLORS = {
+  living: "#4f6d9a",
+  institutions: "#2b7c8c",
+  culture: "#d4902a",
+  work: "#7a5a3c",
+  memory: "#b5543c",
+  sacred: "#8e4585",
+  nature: "#3f7d5a",
+  other: "#6b7280",
+} as const;
+export type PlaceGroup = keyof typeof PLACE_GROUP_COLORS;
+
+/** Group of each subkind (PLACE_SUBKINDS); the 9 kinds are subkinds too, for places without one. */
+export const PLACE_SUBKIND_GROUPS: Record<PlaceSubkind, PlaceGroup> = {
+  tenement: "living",
+  building: "living",
+  palace: "living",
+  manor: "living",
+  housing: "living",
+  street: "living",
+  school: "institutions",
+  university: "institutions",
+  hospital: "institutions",
+  office: "institutions",
+  trade: "institutions",
+  museum: "culture",
+  theatre: "culture",
+  cinema: "culture",
+  library: "culture",
+  mural: "culture",
+  factory: "work",
+  station: "work",
+  bridge: "work",
+  monument: "memory",
+  plaque: "memory",
+  fortress: "memory",
+  prison: "memory",
+  event: "memory",
+  church: "sacred",
+  chapel: "sacred",
+  orthodox: "sacred",
+  synagogue: "sacred",
+  cemetery: "sacred",
+  park: "nature",
+  garden: "nature",
+  water: "nature",
+  pitch: "nature",
+  stadium: "nature",
+  site: "other",
+};
+
 export const PLACE_SUBKIND_LABELS: Record<PlaceSubkind, string> = {
   tenement: "kamienica",
   building: "budynek",
@@ -294,7 +351,7 @@ export const PLACE_SUBKIND_LABELS_EN: Record<PlaceSubkind, string> = {
 /** Subkind when the place has one, otherwise its kind (every kind is also a subkind). */
 function markerOf(kind: string, subkind?: string | null): PlaceSubkind | undefined {
   const key = subkind ?? kind;
-  return key in PLACE_SUBKIND_LABELS ? (key as PlaceSubkind) : undefined;
+  return key in PLACE_SUBKIND_GROUPS ? (key as PlaceSubkind) : undefined;
 }
 
 /** Place label in the interface language; undefined for an unknown kind. */
@@ -343,66 +400,68 @@ export function mapIconUrl(name: string): string {
 
 /**
  * Place markers, "sticker" style picked 17.10 (T-125): one glyph shape per subkind tells what the place is,
- * its colour tells the topic (T-151, #102), the same colour as the topic chips.
+ * its colour the group of kinds (PLACE_GROUP_COLORS). Topic colours stay on the chips.
  * Glyph paths: place-glyphs.json; preview sheet: docs/ui/ikony-mapy/znaczniki.mjs.
  */
 export const PLACE_ICON_KINDS = PLACE_SUBKINDS;
 export const FALLBACK_PLACE_ICON: PlaceSubkind = "site";
-/** Value of the `topic` property for places whose tags map to no topic. */
-export const NO_TOPIC = "none";
 const PLACE_STICKER_PREFIX = "sawa-place";
 
-export type PlaceSticker = { theme: MapTheme; marker: PlaceSubkind; topic: Interest | null };
+export type PlaceSticker = { theme: MapTheme; marker: PlaceSubkind };
 
-export function placeStickerId({ theme, marker, topic }: PlaceSticker): string {
-  return `${PLACE_STICKER_PREFIX}-${theme}-${marker}-${topic ?? NO_TOPIC}`;
+export function placeStickerId({ theme, marker }: PlaceSticker): string {
+  return `${PLACE_STICKER_PREFIX}-${theme}-${marker}`;
 }
 
 /** Inverse of placeStickerId; null for any other image id (MapLibre asks for every missing image). */
 export function parsePlaceStickerId(id: string): PlaceSticker | null {
-  const [prefix, name, theme, marker, topic, ...rest] = id.split("-");
+  const [prefix, name, theme, marker, ...rest] = id.split("-");
   if (`${prefix}-${name}` !== PLACE_STICKER_PREFIX || rest.length > 0) return null;
   if (theme !== "light" && theme !== "dark") return null;
   if (!(PLACE_SUBKINDS as readonly string[]).includes(marker)) return null;
-  if (topic !== NO_TOPIC && !(INTERESTS as readonly string[]).includes(topic)) return null;
-  return {
-    theme,
-    marker: marker as PlaceSubkind,
-    topic: topic === NO_TOPIC ? null : (topic as Interest),
-  };
+  return { theme, marker: marker as PlaceSubkind };
 }
 
-/** Glyph in the topic colour, outlined in the map's ring colour (white on light, near-black on dark). */
-export function placeStickerColors(
-  theme: MapTheme,
-  topic: Interest | null,
-): { fill: string; outline: string } {
-  return {
-    fill: topic ? TOPIC_COLORS[theme][topic].color : NO_TOPIC_COLOR[theme],
-    outline: MAP_PALETTES[theme].ring,
-  };
+/** White outline in both themes, as on the sticker sheet. */
+const PLACE_STICKER_OUTLINE = "#ffffff";
+
+/** Glyph in its group colour with a white outline. */
+export function placeStickerColors(marker: PlaceSubkind): { fill: string; outline: string } {
+  return { fill: PLACE_GROUP_COLORS[PLACE_SUBKIND_GROUPS[marker]], outline: PLACE_STICKER_OUTLINE };
+}
+
+export function placeKindColor(kind: string, subkind?: string | null): string {
+  const marker = markerOf(kind, subkind);
+  return marker ? PLACE_GROUP_COLORS[PLACE_SUBKIND_GROUPS[marker]] : UNKNOWN_KIND_COLOR;
 }
 
 /** Feature property the marker follows: `subkind`, or `kind` for places the seed has not given one. */
 const MARKER: ExpressionSpecification = ["coalesce", ["get", "subkind"], ["get", "kind"]];
 
 /**
- * MapLibre expression: sticker id by subkind and the `topic` property that PlacesLayer adds.
- * Unknown kinds get the pin shape. The images are drawn on demand (`styleimagemissing`).
+ * MapLibre expression: sticker id by subkind, the pin shape for unknown kinds.
+ * The images are drawn on demand (`styleimagemissing`).
  */
 export function placeStickerExpression(theme: MapTheme): ExpressionSpecification {
   return [
     "concat",
     `${PLACE_STICKER_PREFIX}-${theme}-`,
     ["match", MARKER, [...PLACE_ICON_KINDS], MARKER, FALLBACK_PLACE_ICON],
-    "-",
-    ["coalesce", ["get", "topic"], NO_TOPIC],
   ] as unknown as ExpressionSpecification;
 }
 
+/** MapLibre `match` expression: dot colour by subkind group (same as placeKindColor). */
+export function placeKindColorExpression(): ExpressionSpecification {
+  const pairs = Object.entries(PLACE_GROUP_COLORS).flatMap(([group, color]) => [
+    PLACE_SUBKINDS.filter((subkind) => PLACE_SUBKIND_GROUPS[subkind] === group),
+    color,
+  ]);
+  return ["match", MARKER, ...pairs, UNKNOWN_KIND_COLOR] as unknown as ExpressionSpecification;
+}
+
 /**
- * Colours of a topic (Interest), the one legend shared by map markers and topic chips (T-119, #53; T-151, #102).
- * `color`: place marker glyph, chip border, check and label (AA text on `surface` and `tint`).
+ * Colours of a topic (Interest) on the topic chips and tags (T-119, #53).
+ * `color`: chip border, check and label (AA text on `surface` and `tint`).
  * `tint`: background of a picked chip. `onColor`: check mark drawn on `color`.
  * Stops and vehicles stay out of this palette.
  */
@@ -423,9 +482,6 @@ export const TOPIC_COLORS: Record<MapTheme, Record<Interest, TopicColors>> = {
   },
 };
 
-/** Places whose tags map to no topic (older seed). */
-export const NO_TOPIC_COLOR: Record<MapTheme, string> = { light: "#71717a", dark: "#a1a1aa" };
-
 /**
  * One topic for a place with several: the first one the user picked that the place has,
  * otherwise the first in INTERESTS order. Null when its tags map to no topic.
@@ -438,24 +494,4 @@ export function placeTopic(
   return (
     picked.find((key): key is Interest => topics.includes(key as Interest)) ?? topics[0] ?? null
   );
-}
-
-export function placeTopicColor(
-  tags: readonly string[],
-  picked: readonly string[],
-  theme: MapTheme,
-): string {
-  const topic = placeTopic(tags, picked);
-  return topic ? TOPIC_COLORS[theme][topic].color : NO_TOPIC_COLOR[theme];
-}
-
-/** MapLibre `match` expression: colour by the `topic` property that PlacesLayer adds to each place. */
-export function placeTopicColorExpression(theme: MapTheme): ExpressionSpecification {
-  const pairs = INTERESTS.flatMap((topic) => [topic, TOPIC_COLORS[theme][topic].color]);
-  return [
-    "match",
-    ["coalesce", ["get", "topic"], NO_TOPIC],
-    ...pairs,
-    NO_TOPIC_COLOR[theme],
-  ] as unknown as ExpressionSpecification;
 }

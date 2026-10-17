@@ -14,7 +14,7 @@ const GLYPHS: Record<string, string> = PLACE_GLYPHS;
 
 /**
  * Draws one place sticker for an image id from placeStickerId: the subkind glyph filled with its
- * topic colour over an outline in the map's ring colour, with a soft shadow. Null for other ids.
+ * group colour over a white outline, with a soft shadow. Null for other ids.
  */
 export function drawPlaceSticker(id: string): ImageData | null {
   const sticker = parsePlaceStickerId(id);
@@ -26,7 +26,7 @@ export function drawPlaceSticker(id: string): ImageData | null {
   const ctx = canvas.getContext("2d");
   if (!ctx) return null;
 
-  const { fill, outline } = placeStickerColors(sticker.theme, sticker.topic);
+  const { fill, outline } = placeStickerColors(sticker.marker);
   const unit = SIZE_PX / BOX;
   const glyph = new Path2D(path);
   ctx.scale(unit, unit);

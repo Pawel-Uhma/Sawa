@@ -39,6 +39,7 @@ import {
 import { registerPlaceStickers } from "../lib/place-stickers";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
+import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
@@ -50,6 +51,7 @@ import {
   PlacesLayer,
 } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
+import { StreetLayer } from "./street-layer";
 import { TopicLegend } from "./topic-legend";
 import { UserLayer } from "./user-layer";
 
@@ -76,11 +78,9 @@ export type SawaMapProps = {
   hasZoomControls?: boolean;
   /** Click on the map outside any place (e.g. to pick a destination). */
   onMapClick?: (point: LatLng) => void;
-  /** Topics the user picked, in their order; they decide the colour of places with several. */
+  /** Topics the user picked; unused while places are coloured by kind group, not topic. */
   interests?: readonly string[];
 };
-
-const NO_INTERESTS: readonly string[] = [];
 
 export function SawaMap({
   route,
@@ -93,7 +93,6 @@ export function SawaMap({
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
-  interests = NO_INTERESTS,
 }: SawaMapProps) {
   const t = useT();
   const mapRef = useRef<MapRef>(null);
@@ -101,6 +100,8 @@ export function SawaMap({
   // Layers mount only after the icons are in the style, so they keep their stacking order.
   const [icons, setIcons] = useState<"loading" | "ready" | "failed">("loading");
   const [cursor, setCursor] = useState<string>("grab");
+  // Street under the mouse; only on devices that hover, a tap would leave it lit.
+  const [hoveredStreet, setHoveredStreet] = useState<string | null>(null);
   const [view, setView] = useState<MapView | null>(null);
   const bboxes = useMemo(() => (view ? placeBBoxesInView(view.bounds, view.zoom) : []), [view]);
   const places = usePlaces(bboxes);
@@ -126,6 +127,11 @@ export function SawaMap({
     () => (hasPlaceSheet ? findPlace(selectedId, places.data, route) : null),
     [hasPlaceSheet, selectedId, places.data, route],
   );
+
+  const selectedStreet = useMemo(() => {
+    const summary = places.data.find((p) => p.properties.id === selectedId)?.properties;
+    return summary && isStreetPlace(summary) ? summary.name : null;
+  }, [selectedId, places.data]);
 
   const fullPadding = { ...DEFAULT_MAP_PADDING, ...padding };
   const isSheetOpen = Boolean(selected);
@@ -161,6 +167,12 @@ export function SawaMap({
     }
   }, [moveKey, isLoaded]);
 
+  function handleMouseMove(event: MapLayerMouseEvent) {
+    if (!window.matchMedia("(hover: hover)").matches) return;
+    const props = event.features?.[0]?.properties;
+    setHoveredStreet(props && isStreetPlace(props) ? (props.name as string) : null);
+  }
+
   function handleClick(event: MapLayerMouseEvent) {
     const feature = event.features?.[0];
     if (feature?.layer.id === PLACES_CLUSTER_LAYER_ID) {
@@ -191,7 +203,11 @@ export function SawaMap({
         interactiveLayerIds={INTERACTIVE_LAYERS}
         cursor={cursor}
         onMouseEnter={() => setCursor("pointer")}
-        onMouseLeave={() => setCursor("grab")}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => {
+          setCursor("grab");
+          setHoveredStreet(null);
+        }}
         onClick={handleClick}
         onLoad={(event) => {
           // Compact attribution starts expanded and covers the bottom of a phone screen;
@@ -202,7 +218,7 @@ export function SawaMap({
             ?.classList.remove("maplibregl-compact-show");
           setView(viewOf(event.target));
           setIsLoaded(true);
-          // Place markers are drawn on demand in their topic colour; the map lives as long as this listener.
+          // Place markers are drawn on demand; the map lives as long as this listener.
           registerPlaceStickers(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
@@ -217,13 +233,15 @@ export function SawaMap({
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
-            interests={interests}
             theme={theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
             hasIcons={icons === "ready"}
             palette={palette}
           />
+        )}
+        {icons !== "loading" && (
+          <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
         )}
         {icons !== "loading" && route && (
           <RouteLayer
@@ -268,14 +286,7 @@ export function SawaMap({
         </StatusPill>
       </div>
       <TopicLegend hasZoomControls={hasZoomControls} />
-      {selected && (
-        <PlaceSheet
-          key={selected.id}
-          place={selected}
-          interests={interests}
-          onClose={() => select(null)}
-        />
-      )}
+      {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );
 }

@@ -114,7 +114,7 @@ Czas na kryteria: innowacyjność ok. 115 s (film i demo), dane ok. 70 s (demo i
 
 ## 7. Deck (7 slajdów + film)
 
-**Deck gotowy (17.10, wieczór):** https://claude.ai/artifact/5oTGXQm6WCL3Q8ZTtWaG1j (wersja 2 z 17.10 wieczorem: 13 slajdów + 2 ukryte na pytania, klasyczna struktura pitchu i oferta dla miasta, zrzuty z aplikacji, tekst narratora w notatkach mówcy; pobieranie PPTX/PDF z menu decku). Scenariusz w notatkach decku zastępuje §4 tam, gdzie się różnią. Zasoby: [deck/](deck/).
+**Deck gotowy (17.10, wieczór):** https://claude.ai/artifact/5oTGXQm6WCL3Q8ZTtWaG1j (wersja 3 z 17.10 wieczorem: 13 slajdów + 2 ukryte na pytania, na slajdach tylko hasła, grafiki i duże zrzuty z aplikacji, bez slajdu o zespole; cały tekst do powiedzenia jest w notatkach mówcy; pobieranie PPTX/PDF z menu decku). Scenariusz w notatkach decku zastępuje §4 tam, gdzie się różnią. Zasoby: [deck/](deck/).
 
 1. Czerń (otwarcie dźwiękiem), potem szyba tramwaju (Ola)
 2. „co piąty” (2060) / „390 tys.” (dojeżdża do pracy; 600 tys. to wszyscy dodatkowi użytkownicy miasta razem z turystami): jedna liczba na slajd

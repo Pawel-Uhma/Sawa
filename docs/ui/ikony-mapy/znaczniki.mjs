@@ -1,8 +1,8 @@
 // Znaczniki miejsc, wariant I „Naklejka” (Paweł, 17.10, 18:05; docs/ui/propozycje/html/ikony-znaczniki-3.html):
 // pełny glif z obwódką i cieniem, bez tła, jeden kształt na podrodzaj (`places.subkind`, PLACE_SUBKINDS w packages/shared).
-// Od T-151 (#102) kolor glifu to kolor TEMATU miejsca, a aplikacja rysuje naklejki sama w przeglądarce
-// (apps/web/src/features/map/lib/place-stickers.ts) z tych samych ścieżek: apps/web/src/features/map/lib/place-glyphs.json.
-// Ten skrypt robi tylko podgląd kształtów: SVG w docs/ui/ikony-mapy/znaczniki/ i arkusz.html, glify w neutralnym kolorze.
+// Kolor glifu to kolor GRUPY rodzajów (PLACE_GROUP_COLORS w map-style.ts; 17.10, 21:30 Paweł wrócił z kolorów tematów).
+// Aplikacja rysuje naklejki sama w przeglądarce (apps/web/src/features/map/lib/place-stickers.ts) z tych samych ścieżek:
+// apps/web/src/features/map/lib/place-glyphs.json. Ten skrypt robi tylko podgląd: SVG w docs/ui/ikony-mapy/znaczniki/ i arkusz.html.
 // Uruchom z katalogu repo: node docs/ui/ikony-mapy/znaczniki.mjs
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -10,18 +10,17 @@ import { join } from "node:path";
 const SVG_DIR = "docs/ui/ikony-mapy/znaczniki";
 const GLIFY = JSON.parse(readFileSync("apps/web/src/features/map/lib/place-glyphs.json", "utf8"));
 const PX = 96;
-const TUSZ = "#1f2a29";
 
-// Grupy tylko porządkują arkusz; kolorów grup już nie ma (kolor = temat).
+// Kolory jak w apps/web/src/features/map/lib/map-style.ts (PLACE_GROUP_COLORS)
 const GRUPY = {
-  mieszkac: { nazwa: "Mieszkać" },
-  instytucje: { nazwa: "Instytucje" },
-  kultura: { nazwa: "Kultura" },
-  praca: { nazwa: "Praca i transport" },
-  pamiec: { nazwa: "Wojna i pamięć" },
-  sacrum: { nazwa: "Sacrum" },
-  natura: { nazwa: "Natura i ruch" },
-  inne: { nazwa: "Inne" },
+  mieszkac: { kolor: "#4f6d9a", nazwa: "Mieszkać" },
+  instytucje: { kolor: "#2b7c8c", nazwa: "Instytucje" },
+  kultura: { kolor: "#d4902a", nazwa: "Kultura" },
+  praca: { kolor: "#7a5a3c", nazwa: "Praca i transport" },
+  pamiec: { kolor: "#b5543c", nazwa: "Wojna i pamięć" },
+  sacrum: { kolor: "#8e4585", nazwa: "Sacrum" },
+  natura: { kolor: "#3f7d5a", nazwa: "Natura i ruch" },
+  inne: { kolor: "#6b7280", nazwa: "Inne" },
 };
 
 // Glify 24 × 24 (place-glyphs.json), fill-rule evenodd: zagnieżdżony kształt wycina otwór (okna, drzwi).
@@ -178,7 +177,7 @@ const svg = ({ kolor, g }) => `<svg xmlns="http://www.w3.org/2000/svg" width="${
 mkdirSync(SVG_DIR, { recursive: true });
 const kafle = [];
 for (const [rodzaj, { grupa, nazwa }] of Object.entries(ZNACZNIKI)) {
-  const kod = svg({ kolor: TUSZ, g: GLIFY[rodzaj] });
+  const kod = svg({ kolor: GRUPY[grupa].kolor, g: GLIFY[rodzaj] });
   writeFileSync(join(SVG_DIR, `${rodzaj}.svg`), kod);
   kafle.push({ grupa, nazwa, rodzaj, kod });
 }
@@ -188,9 +187,9 @@ const naArkusz = (k, i) =>
   k.kod.replace('width="96" height="96"', 'width="48" height="48"').replaceAll('"c"', `"c${i}"`).replace("url(#c)", `url(#c${i})`);
 const wiersze = (od) =>
   Object.entries(GRUPY)
-    .map(([klucz, { nazwa }]) => {
+    .map(([klucz, { kolor, nazwa }]) => {
       const w = kafle.filter((k) => k.grupa === klucz);
-      return `<section><h2>${nazwa}</h2><div class="r">${w
+      return `<section><h2 style="color:${kolor}">${nazwa}</h2><div class="r">${w
         .map((k) => `<figure>${naArkusz(k, od + kafle.indexOf(k))}<figcaption>${k.nazwa}<code>${k.rodzaj}</code></figcaption></figure>`)
         .join("")}</div></section>`;
     })
