@@ -6,8 +6,10 @@ import {
   LABEL_FONT,
   LABEL_FONT_BOLD,
   type MapPalette,
-  placeKindColorExpression,
+  type MapTheme,
   placeKindIconExpression,
+  placeTopic,
+  placeTopicColorExpression,
 } from "../lib/map-style";
 
 export const PLACES_SOURCE_ID = "places";
@@ -45,8 +47,27 @@ const ICON_SIZE: ExpressionSpecification = [
   ["interpolate", ["linear"], ["get", "richness"], 1, 0.85, 40, 0.95],
 ];
 
+/**
+ * Ring in the topic colour around each icon, sized to its glyph (icon scale x 48 px x RING_RATIO).
+ * The icon keeps its kind colour and shape, so colour is never the only cue.
+ */
+const RING_RATIO = 0.42;
+const ringRadius = (iconSize: number) => iconSize * 48 * RING_RATIO;
+const RING_RADIUS: ExpressionSpecification = [
+  "interpolate",
+  ["linear"],
+  ["zoom"],
+  12,
+  ["interpolate", ["linear"], ["get", "richness"], 1, ringRadius(0.6), 40, ringRadius(0.7)],
+  17,
+  ["interpolate", ["linear"], ["get", "richness"], 1, ringRadius(0.85), 40, ringRadius(0.95)],
+];
+
 type PlacesLayerProps = {
   places: PlaceSummaryFeature[];
+  /** Topics the user picked, in their order: a place with several topics takes the first of these. */
+  interests: readonly string[];
+  theme: MapTheme;
   selectedId: string | null;
   /** Fade regular places while a route is shown, so its places stand out. */
   isDimmed: boolean;
@@ -55,8 +76,29 @@ type PlacesLayerProps = {
   palette: MapPalette;
 };
 
-export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }: PlacesLayerProps) {
-  const data = useMemo(() => ({ type: "FeatureCollection" as const, features: places }), [places]);
+export function PlacesLayer({
+  places,
+  interests,
+  theme,
+  selectedId,
+  isDimmed,
+  hasIcons,
+  palette,
+}: PlacesLayerProps) {
+  const data = useMemo(
+    () => ({
+      type: "FeatureCollection" as const,
+      features: places.map((place) => ({
+        ...place,
+        properties: {
+          ...place.properties,
+          topic: placeTopic(place.properties.interests, interests),
+        },
+      })),
+    }),
+    [places, interests],
+  );
+  const topicColor = useMemo(() => placeTopicColorExpression(theme), [theme]);
   const opacity = isDimmed ? palette.dimmedOpacity : 0.9;
 
   return (
@@ -107,6 +149,21 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
         }}
         paint={{ "text-color": palette.clusterText, "text-opacity": opacity }}
       />
+      {hasIcons && (
+        <Layer
+          id="places-topic"
+          type="circle"
+          filter={UNCLUSTERED}
+          paint={{
+            "circle-radius": RING_RADIUS,
+            "circle-color": palette.ring,
+            "circle-stroke-color": topicColor,
+            "circle-stroke-width": 2.5,
+            "circle-opacity": opacity,
+            "circle-stroke-opacity": opacity,
+          }}
+        />
+      )}
       {hasIcons ? (
         <Layer
           id={PLACES_LAYER_ID}
@@ -128,7 +185,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
           type="circle"
           filter={UNCLUSTERED}
           paint={{
-            "circle-color": placeKindColorExpression(),
+            "circle-color": topicColor,
             "circle-radius": ["interpolate", ["linear"], ["get", "richness"], 1, 5, 10, 7, 40, 9],
             "circle-stroke-color": palette.ring,
             "circle-stroke-width": 1.5,

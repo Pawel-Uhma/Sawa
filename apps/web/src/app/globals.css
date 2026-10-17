@@ -118,6 +118,20 @@ button {
   }
 }
 
+/* Kolor tematu (T-119): te same barwy co obwódki miejsc na mapie. Wartości dla obu motywów są w
+   features/map/lib/map-style.ts (TOPIC_COLORS), element dostaje je przez topicStyle() i klasę temat. */
+.temat {
+  --temat: var(--temat-jasny);
+  --temat-tlo: var(--temat-tlo-jasny);
+  --temat-na: var(--temat-na-jasny);
+}
+
+:root[data-theme="dark"] .motyw .temat {
+  --temat: var(--temat-ciemny);
+  --temat-tlo: var(--temat-tlo-ciemny);
+  --temat-na: var(--temat-na-ciemny);
+}
+
 /* Gruby materiał: karty i panele (większa powierzchnia = mocniejsze rozmycie i cień) */
 @utility karta {
   background: var(--karta-tlo);

@@ -72,7 +72,11 @@ export type SawaMapProps = {
   hasZoomControls?: boolean;
   /** Click on the map outside any place (e.g. to pick a destination). */
   onMapClick?: (point: LatLng) => void;
+  /** Topics the user picked, in their order; they decide the ring colour of places with several. */
+  interests?: readonly string[];
 };
+
+const NO_INTERESTS: readonly string[] = [];
 
 export function SawaMap({
   route,
@@ -85,6 +89,7 @@ export function SawaMap({
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
+  interests = NO_INTERESTS,
 }: SawaMapProps) {
   const t = useT();
   const mapRef = useRef<MapRef>(null);
@@ -203,6 +208,8 @@ export function SawaMap({
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
+            interests={interests}
+            theme={theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
             hasIcons={icons === "ready"}

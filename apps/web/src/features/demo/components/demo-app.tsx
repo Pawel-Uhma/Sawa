@@ -383,6 +383,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                   : undefined
               }
               activeStopId={isRoute ? activeStop?.id : undefined}
+              interests={profile.interests}
               onStopClick={(id) => {
                 const index = route.findIndex((stop) => stop.id === id);
                 if (index >= 0) pickStop(index);

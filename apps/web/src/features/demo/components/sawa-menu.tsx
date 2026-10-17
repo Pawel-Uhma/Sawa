@@ -33,6 +33,7 @@ import {
   STORY_STYLES,
 } from "../lib/onboarding";
 import type { StartMode } from "../lib/start-point";
+import { topicStyle } from "../lib/topic-style";
 import {
   BubbleIcon,
   ChevronRightIcon,
@@ -392,7 +393,17 @@ function MenuContent({ actions, run }: MenuContentProps) {
   const familiarity = labelOf(FAMILIARITY, profile.familiarity, lang);
   const style = labelOf(STORY_STYLES, profile.storyStyle, lang);
   const audience = labelOf(AUDIENCES, profile.audience, lang);
-  const interests = profile.interests.map((key) => labelOf(INTERESTS, key, lang) ?? key);
+  // Nazwy w kolorach tematów: ta sama legenda co obwódki miejsc na mapie
+  const interests = profile.interests.flatMap((key, i) => {
+    const item = INTERESTS.find((interest) => interest.key === key);
+    if (!item) return [];
+    return [
+      <span key={key} className="temat font-semibold text-(--temat)" style={topicStyle(item.key)}>
+        {i > 0 && <span className="font-normal text-tekst-2">, </span>}
+        {t(item.label, item.en.label)}
+      </span>,
+    ];
+  });
 
   async function share() {
     haptic();
@@ -458,11 +469,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
         <Row
           Icon={SparkIcon}
           label={t("Zainteresowania", "Interests")}
-          value={
-            interests.length > 0
-              ? interests.join(", ")
-              : t("Wszystko po trochu", "A bit of everything")
-          }
+          value={interests.length > 0 ? interests : t("Wszystko po trochu", "A bit of everything")}
           onClick={() => run(() => actions.onEditProfile("interests"))}
         />
         <Row
@@ -631,7 +638,7 @@ function placesLabelEn(n: number) {
 type RowProps = {
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
   label: string;
-  value?: string;
+  value?: ReactNode;
   onClick: () => void;
   chevron?: boolean;
   /** Wiersz rozwijany: strzałka obraca się w dół, gdy treść jest widoczna. */
