@@ -1,11 +1,12 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 17:50 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 18:30 (Szczepan, z agentem)
 
 ## Teraz
 
 - 16:40 (Antek, R3): porządki w `todo.md`. T-30, T-30b, T-08 i T-71 zamknięte, usunięte duplikaty T-05, T-06, T-12 i T-40 (zostają w „Poza MVP”), T-65 i T-72 poprawione na MapLibre. Dalsze kroki mapy jako T-101 (`fitBounds` z kartą), T-102 („za oknem”, do T-36) i T-103 (test na telefonach). Uwaga: numery T-65, T-66 i T-78 występują po dwa razy (R1 i R3).
 - Jasiek (16:30, z agentem, za R1): pojazdy na żywo (T-99, PR #29, dla Pawła issue #30). `POST /v1/vehicles/track` zwraca pojazd użytkownika i po jednym przed i za nim z torem do płynnej animacji; prędkość z tego, jak odcinek przejechał poprzedni pojazd linii (korki). Zbiór miasta „Lokalizacja pojazdów” (T-95). **Dla R3 (Paweł):** ikony i animacja w T-100, instrukcja w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md). **Dla R1:** na Railway `WAW_TOKEN` (T-17), w dniu demo `VEHICLES_ALWAYS_ON=1`.
+- R1 (Szczepan, 18:30): T-70. `RoutePlace.windowSec` mieści się teraz w granicach stylu opowieści: co najmniej 30 / 45 / 90 s (także ostatnie miejsce), najwyżej 60 / 120 / 300 s; wcześniej bywało 0 s i 1854 s, a `POST /v1/stories` odrzuca `targetSec` > 600. Pierwsza opowieść po ok. 1 min (miejsca na dojściu do przystanku). **Dla R4 i R3:** `windowSec` można podawać wprost jako `targetSec`.
 - 16:33 (Antek, R3): akceptuję zmiany Pawła w `features/map`. Kolory trasy wg linii (`LINE_COLORS`, `lineIndexes`, przesiadki i dojścia) zostają: logika jest w czystych funkcjach z testami, a dla pasażera linia mówi więcej niż typ pojazdu. Eksporty `usePlace`, `useSelectedPlace`, `PLACE_KIND_LABELS`, `placeKindColor` z `index.ts` też zostają. Uwaga: mamy teraz dwie karty miejsca (`PlaceSheet` w mapie i `place-card` w demo); do ustalenia z Pawłem, czy `PlaceSheet` zostaje tylko na `/mapa`.
 
 - 16:40 (Paweł, z agentem R3): **pamięć Sawy i onboarding, który działa.** Zainteresowania to 4 kategorie z danych (historia, kultura, sport, przyroda). Opowieści biorą `familiarity`, `storyStyle`, `heardFacts`, `knownContexts` i mówią to, czego słuchacz jeszcze nie słyszał (pierwszy raz: raz na temat tło, np. Powstanie). Planer dostaje `heard` i omija miejsca opowiedziane do końca (po jednej trasie następna ma 1 wspólne miejsce na 10). Opis: [ui/onboarding.md](ui/onboarding.md), [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 9 i §8. **Dla R1 (Szczepan):** w `score.ts` doszedł `noveltyOf` (mnożnik pamięci), a do `PlacePoint` pole `richness`, do akceptacji. **Dla R2:** sport i przyroda potrzebują 2–3 faktów na miejsce, 64 miejsca nie mają tagu.

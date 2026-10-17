@@ -124,7 +124,7 @@ Zakres to tylko lista MVP z [10-prd.md](10-prd.md), zob. [12-plan-mvp.md](12-pla
 
 ## Ze spotkania 13:30
 
-- [ ] **T-70** Planer: limit miejsc na trasie albo minimalny czas na opowieść (30 min daje teraz 120 miejsc) — `R1` (14:45, Jasiek: na produkcji 30 min daje 9 miejsc, 120 min 15; do zamknięcia, jeśli R1 potwierdzi)
+- [x] **T-70** Planer: limit miejsc na trasie albo minimalny czas na opowieść (30 min daje teraz 120 miejsc) — `R1` — (Jasiek 14:45: na produkcji 30 min 9 miejsc, 120 min 15; Szczepan, 18:30: liczba miejsc już nie 120, ok. 2–5 na 10 min; naprawione okna: min. odstęp stylu także na końcu, maks. 60/120/300 s, opowieści na dojściu do przystanku; PR w toku)
 - [x] **T-71** Integracja ElevenLabs w API (`ELEVENLABS_KEY` w Railway) — `R4` → zrobił Pawel na własną prośbę (17.10, 13:55), gałąź `r4/tts-elevenlabs`: `POST /v1/speech` → mp3 głosem Asi, cache w pamięci. W `main` od 14:50
 - [ ] **T-72** Styl mapy (MapLibre) i kategorie punktów (budynek, ulica, pomnik…) z ikonami — `R3`
 - [x] **T-73** Scraping kolejnych miejsc (budynki → Wikipedia) prosto do Supabase — `R2` — (Jasiek z agentami, 15:50: 1092 miejsc; 16:30: 1347 miejsc na całą Warszawę, w tym 260 poza pasem Śródmieście–Praga; zabytki z OSM + Wikipedia w `docs/historia/osm-historia.geojson`, parki, sport i „Otwarte boiska” z 18 dzielnic; seed i `export:places` zrobione)

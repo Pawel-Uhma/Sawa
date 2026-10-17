@@ -1,14 +1,14 @@
 import type { LatLng, PlanRouteRequest, Route } from "@sawa/shared";
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
-import { DEFAULT_SEARCH_OPTIONS, planRide } from "../domain/routing/beam-search";
+import { DEFAULT_SEARCH_OPTIONS, planRide, type Ride } from "../domain/routing/beam-search";
 import { buildRoute, buildWalkRoute } from "../domain/routing/build-route";
 import { computePlaceHits } from "../domain/routing/place-hits";
 import { RICHNESS_EXPONENT } from "../domain/routing/score";
-import { STORY_GAP_SEC } from "../domain/routing/select-stories";
+import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
-import { planWalk } from "../domain/routing/walk-tour";
+import { placesAlong, planWalk } from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
 import type { DepartureSource, PlacesRepository, TransitData } from "./ports";
 
@@ -148,6 +148,13 @@ export function createRoutePlanner(deps: {
     return entry.prepared;
   }
 
+  /** Where the ride boards first (end of the walk from the origin). */
+  function rideStartStop(ride: Ride): LatLng | undefined {
+    const first = ride.legs[0];
+    const stop = first && network.patterns.get(first.patternId)?.stops[first.boardIndex];
+    return stop && network.stops.get(stop.stopId)?.position;
+  }
+
   return {
     async plan(request, now) {
       const { hitsByPattern, placesById } = await prepare(
@@ -163,6 +170,7 @@ export function createRoutePlanner(deps: {
         heard: request.heard && new Map(Object.entries(request.heard)),
       };
       const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
+      const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
       let ride = planRide({
         network,
         hitsByPattern,
@@ -213,6 +221,7 @@ export function createRoutePlanner(deps: {
             now,
             attribution,
             storyGapSec,
+            storyMaxSec,
             origin: request.origin,
             destination: request.destination,
           });
@@ -226,6 +235,14 @@ export function createRoutePlanner(deps: {
       const end = request.returnToStart
         ? ride.endsAtStart && request.origin
         : ride.endsAtDestination && request.destination;
+      const firstStop = rideStartStop(ride);
+      const walkInPlaces = firstStop
+        ? placesAlong(
+            placesById.values(),
+            { from: request.origin, to: firstStop, startSec: 0, sec: ride.walkSec },
+            { interests, prefs, skip: new Set(ride.places.map((p) => p.placeId)) },
+          )
+        : [];
       return buildRoute({
         ride,
         network,
@@ -233,8 +250,10 @@ export function createRoutePlanner(deps: {
         now,
         attribution,
         storyGapSec,
+        storyMaxSec,
         origin: request.origin,
         end: end || undefined,
+        walkInPlaces,
       });
     },
   };

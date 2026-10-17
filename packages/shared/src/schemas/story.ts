@@ -2,10 +2,8 @@ import { z } from "zod";
 import { InterestSchema } from "../interests";
 import { MAX_HEARD_FACTS } from "../memory";
 import { PlaceSourceSchema } from "./place";
-import { FAMILIARITY, STORY_STYLES } from "./route";
-
-/** A story never runs longer than the longest window the planner gives (docs/12-plan-mvp.md §8). */
-export const MAX_STORY_SEC = 600;
+// MAX_STORY_SEC lives in route.ts with the planner windows it bounds (one import direction).
+import { FAMILIARITY, MAX_STORY_SEC, STORY_STYLES } from "./route";
 
 /** POST /v1/stories body. `targetSec` is how long Sawa may talk before the next place. */
 export const StoryRequestSchema = z.object({
