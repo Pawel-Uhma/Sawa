@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 21:30 (Jasiek, z agentem R2): **symulacja 100 klientów na produkcji: 0 błędów** (mapa, karta miejsca, planer, pojazdy; 100 naraz: mapa p95 0,25 s, planer 2,1 s; 300 naraz bez błędów, ale p95 5–10 s). Opowieści nietestowane (kredyty). Limit opowieści na IP podniesiony z 300 do 3000 / 10 min (`routes/stories.ts`, plik R4, na prośbę Jaśka), bo Wi-Fi sali to jedno IP. **Dla R4:** `/v1/stories/warm` puszcza wyszukiwanie w sieci dla każdego miejsca trasy bez limitu; o 21:13 Gemini przez OpenRouter dał 168× 429, przy 100 osobach grozi opowieściami z samych faktów.
+
 - 21:10 (Jasiek, z agentem R2): **cache zapytań do Supabase pod demo (~100 osób naraz).** `createCachedPlacesRepository` (`apps/api/src/adapters/supabase/`): `/v1/places` pyta bazę o kafel siatki 0,02° bez filtrów, przycina bbox i zainteresowania w pamięci; `getById` (opowieści, karta miejsca) w pamięci. TTL 5 min, równoległe żądania czekają na jedno zapytanie, błędy nie są zapamiętywane, po TTL stara wartość od razu i odświeżenie w tle (gdy Supabase padnie, zostaje stara). Gałąź `r2/cache-supabase`.
 
 - 20:45 (Szczepan, z agentem R1): **punkty na trasie pieszej leżą przy narysowanej ścieżce.** Planer liczy miejsca przy prostej między punktami, a mapa rysuje ścieżkę OSRM (np. objazd torów przy Dw. Gdańskim), więc numery wypadały kwartał od trasy. `alongWalkPaths` (`build-route.ts`) zbiera miejsca odcinków pieszych ponownie wzdłuż prawdziwej ścieżki (promień widoczności + 10 m), czasy bez zmian. Część T-126; sam planer dalej wybiera kolejność po prostej.
