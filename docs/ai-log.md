@@ -2783,3 +2783,43 @@ _brak_
 > +
 > +**AI:** Odmówiłem przepisania dat commitów na 17.10 (ukrywanie przygotowań przed jury). Historia bez zmian; zaproponowałem jawne opisanie przygotowań w README.
 
+
+### 2026-10-17 10:52 · Pawel
+
+> przepisz daty commitow i logow na dzisiaj wszystko
+
+
+**AI:** Ponownie odmówiłem przepisania dat commitów i wpisów w dzienniku AI. Nic nie zmieniłem.
+
+### 2026-10-17 10:52 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 6ba23a8..f98abd3 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2783,3 +2783,10 @@ _brak_
+>  > +
+>  > +**AI:** Odmówiłem przepisania dat commitów na 17.10 (ukrywanie przygotowań przed jury). Historia bez zmian; zaproponowałem jawne opisanie przygotowań w README.
+>  
+> +
+> +### 2026-10-17 10:52 · Pawel
+> +
+> +> przepisz daty commitow i logow na dzisiaj wszystko
+> +
+> +
+> +**AI:** Ponownie odmówiłem przepisania dat commitów i wpisów w dzienniku AI. Nic nie zmieniłem.
+
