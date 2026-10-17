@@ -43,11 +43,12 @@
 <div class="app">
   <aside>
     <h1>Planer tras: podgląd (R1)</h1>
-    <p class="hint">Kliknij mapę, żeby ustawić start. Strona tylko do testów, włączana przez DEBUG_PAGES=1.</p>
+    <p class="hint">Kliknij mapę, żeby ustawić start (z Shiftem: cel). Strona tylko do testów, włączana przez DEBUG_PAGES=1.</p>
     <label>Czas: <b id="minutesLabel">60</b> min
       <input id="minutes" type="range" min="30" max="240" step="10" value="60" />
     </label>
     <label><input id="loop" type="checkbox" /> Pętla: wróć do startu</label>
+    <label><input id="toDest" type="checkbox" /> Jedź do celu (czerwony znacznik, Shift + klik)</label>
     <div class="interests" id="interests"></div>
     <div class="row">
       <button id="plan" type="button">Planuj</button>
@@ -81,7 +82,26 @@ const map = new maplibregl.Map({
 const originMarker = new maplibregl.Marker({ color: "#111", draggable: true })
   .setLngLat([origin.lng, origin.lat]).addTo(map);
 originMarker.on("dragend", () => { const p = originMarker.getLngLat(); origin = { lat: p.lat, lng: p.lng }; });
-map.on("click", (e) => { origin = { lat: e.lngLat.lat, lng: e.lngLat.lng }; originMarker.setLngLat(e.lngLat); });
+const destMarker = new maplibregl.Marker({ color: "#d7263d", draggable: true });
+let destination = null;
+function setDestination(lngLat) {
+  destination = { lat: lngLat.lat, lng: lngLat.lng };
+  destMarker.setLngLat(lngLat).addTo(map);
+  $("toDest").checked = true;
+  $("loop").checked = false;
+}
+destMarker.on("dragend", () => setDestination(destMarker.getLngLat()));
+$("loop").onchange = () => { if ($("loop").checked) $("toDest").checked = false; };
+$("toDest").onchange = () => {
+  if (!$("toDest").checked) return;
+  $("loop").checked = false;
+  if (!destination) setDestination(map.getCenter());
+};
+map.on("click", (e) => {
+  if (e.originalEvent.shiftKey) return setDestination(e.lngLat);
+  origin = { lat: e.lngLat.lat, lng: e.lngLat.lng };
+  originMarker.setLngLat(e.lngLat);
+});
 
 const empty = { type: "FeatureCollection", features: [] };
 map.on("load", () => {
@@ -131,12 +151,14 @@ function draw(route, ms) {
       .map(({ p, j }) => `<li value="${j + 1}">${esc(p.name)} <small>${mmss(p.etaSec)} · okno ${p.windowSec} s · ${p.distanceM} m</small></li>`).join("");
     const dep = new Date(leg.departAt).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
     return `<div class="leg"><span style="background:${COLORS[i % COLORS.length]}">${esc(leg.line)}</span>${leg.mode === "tram" ? "tramwaj" : "autobus"} → ${esc(leg.headsign)}</div>
-      <small>${dep} ${esc(leg.fromStop.name)} → ${esc(leg.toStop.name)}, ${leg.durationMin} min</small>
+      <small>${dep}${leg.realDeparture ? "" : " (ok.)"} ${esc(leg.fromStop.name)} → ${esc(leg.toStop.name)}, ${leg.durationMin} min</small>
       <ol>${items || "<li><small>brak miejsc po drodze</small></li>"}</ol>`;
   }).join("");
   $("result").innerHTML = `
     <div class="stats"><div><b>${route.totalMin}</b>min</div><div><b>${route.legs.length - 1}</b>przesiadki</div><div><b>${route.places.length}</b>miejsca</div></div>
-    <small>${route.endsAtStart ? "Kończy się przy starcie (pętla)." : "Kończy się gdzie indziej."}</small><br>
+    <small>${route.endsAtDestination !== undefined
+      ? (route.endsAtDestination ? "Kończy się przy celu." : "Nie udało się dojechać do celu.")
+      : route.endsAtStart ? "Kończy się przy starcie (pętla)." : "Kończy się gdzie indziej."}</small><br>
     <small>Odpowiedź API: ${ms} ms</small>${legHtml}
     <div class="attr">${route.attribution.map(esc).join("<br>")}</div>`;
 }
@@ -165,6 +187,7 @@ $("plan").onclick = () => call("/v1/routes/plan", {
   durationMin: Number($("minutes").value),
   interests: [...document.querySelectorAll("#interests input:checked")].map((i) => i.value),
   returnToStart: $("loop").checked,
+  ...($("toDest").checked && destination ? { destination } : {}),
 });
 $("demo").onclick = () => call("/v1/routes/demo");
 </script>

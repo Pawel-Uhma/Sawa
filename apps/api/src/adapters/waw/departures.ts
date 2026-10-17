@@ -38,35 +38,34 @@ export function parseDepartureTimes(body: unknown): string[] {
 }
 
 /**
- * Next real departure of a line from a platform (ZTM timetable on dane.um.warszawa.pl).
+ * Real departures of a line from a platform (ZTM timetable on dane.um.warszawa.pl).
  * GTFS stop id "100101" = busstopId "1001" + busstopNr "01". Any failure → undefined.
  */
 export function createWawDepartureSource(token: string | undefined): DepartureSource {
-  const cache = new Map<string, { at: number; times: string[] }>();
+  const cache = new Map<string, { at: number; times: Promise<string[]> }>();
 
-  async function times(stopId: string, line: string): Promise<string[]> {
+  // Shares the in-flight request, so parallel legs on one platform ask once.
+  function times(stopId: string, line: string): Promise<string[]> {
     const key = `${stopId}|${line}`;
     const hit = cache.get(key);
     if (hit && Date.now() - hit.at < CACHE_TTL_MS) return hit.times;
-    const res = await fetch(ENDPOINT, {
+    const list = fetch(ENDPOINT, {
       method: "POST",
       headers: { Authorization: token as string, "Content-Type": "application/json" },
       body: JSON.stringify({ busstopId: stopId.slice(0, 4), busstopNr: stopId.slice(4, 6), line }),
       signal: AbortSignal.timeout(TIMEOUT_MS),
-    });
-    const list = res.ok ? parseDepartureTimes(await res.json()) : [];
+    }).then(async (res) => (res.ok ? parseDepartureTimes(await res.json()) : []));
+    list.catch(() => cache.delete(key));
     cache.set(key, { at: Date.now(), times: list });
     return list;
   }
 
   return {
-    async nextDeparture(stopId, line, after) {
+    async departures(stopId, line, day) {
       if (!token || !/^\d{6}$/.test(stopId)) return undefined;
       try {
-        return (await times(stopId, line))
-          .map((t) => warsawTimeToDate(t, after))
-          .filter((d) => d.getTime() >= after.getTime())
-          .sort((a, b) => a.getTime() - b.getTime())[0];
+        const list = await times(stopId, line);
+        return list.length ? list.map((t) => warsawTimeToDate(t, day)) : undefined;
       } catch {
         return undefined;
       }

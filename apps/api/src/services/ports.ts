@@ -16,7 +16,8 @@ export interface PlacesRepository {
 
 /** Real departures from dane.um.warszawa.pl; undefined when unknown (no token, timeout, no data). */
 export interface DepartureSource {
-  nextDeparture(stopId: string, line: string, after: Date): Promise<Date | undefined>;
+  /** Departures of `line` from the platform on the Warsaw service day of `day`. */
+  departures(stopId: string, line: string, day: Date): Promise<Date[] | undefined>;
 }
 
 /** Tram and bus network for one service day (apps/api/data/transit-graph.json.gz). */

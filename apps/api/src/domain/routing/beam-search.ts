@@ -12,6 +12,8 @@ export type SearchInput = {
   interests: ReadonlySet<string>;
   /** Loop: the ride must end at a stop near the origin. */
   returnToStart?: boolean;
+  /** The ride must end at a stop near this point (ignored with `returnToStart`). */
+  destination?: LatLng;
 };
 
 export type SearchOptions = {
@@ -25,10 +27,10 @@ export type SearchOptions = {
   transferPenalty: number;
   minBudgetShare: number;
   maxBudgetShare: number;
-  /** Loops need one more leg to come back and may end a bit earlier. */
+  /** Rides with a fixed end (loop or destination) need one more leg and may end earlier. */
   loopMaxLegs: number;
   loopMinBudgetShare: number;
-  /** Loops keep at most one ride per end stop group, in a wider beam. */
+  /** Rides with a fixed end keep at most one ride per end stop group, in a wider beam. */
   loopBeamWidth: number;
 };
 
@@ -54,6 +56,8 @@ export type ChosenLeg = {
   alightIndex: number;
   boardElapsedSec: number;
   alightElapsedSec: number;
+  /** Boarding time comes from the ZTM timetable, not from the half-headway estimate. */
+  realDeparture?: boolean;
 };
 
 export type CollectedPlace = {
@@ -74,32 +78,36 @@ export type Ride = {
   score: number;
   /** The last stop is near the origin (a loop). */
   endsAtStart: boolean;
+  /** Only with a destination: the last stop is near it. */
+  endsAtDestination?: boolean;
 };
 
-type State = Omit<Ride, "endsAtStart"> & {
+type State = Omit<Ride, "endsAtStart" | "endsAtDestination"> & {
   stopId: string;
   visited: ReadonlySet<string>;
   key: string;
   finished: boolean;
-  /** Loops: time still needed to get back to the origin (0 otherwise). */
+  /** Fixed end: time still needed to reach the end point (0 otherwise). */
   backSec: number;
 };
 
 /** Per-search settings shared by every expansion. */
 type Context = {
   opts: SearchOptions;
-  loop: boolean;
+  /** The ride must end near a given point: the origin (loop) or the destination. */
+  fixedEnd: boolean;
   minSec: number;
   maxSec: number;
   groupOf: (stopId: string) => string | undefined;
   nearOrigin: (stopId: string) => boolean;
-  /** Loops: seconds back to the origin per stop group (see return-times.ts). */
-  returnTimes: Map<string, number>;
+  nearEnd: (stopId: string) => boolean;
+  /** Fixed end: seconds to the end point per stop group (see return-times.ts). */
+  endTimes: Map<string, number>;
 };
 
 const transfersOf = (s: State) => Math.max(0, s.legs.length - 1);
 
-/** Higher is better. For loops the expected total includes the time to get back. */
+/** Higher is better. With a fixed end the expected total includes the time to reach it. */
 function objective(s: State, budgetSec: number, opts: SearchOptions): number {
   const budgetMiss = Math.abs(s.elapsedSec + s.backSec - budgetSec) / budgetSec;
   return s.score - opts.transferPenalty * transfersOf(s) - budgetMiss;
@@ -113,46 +121,57 @@ function byObjective(budgetSec: number, opts: SearchOptions) {
     a.key.localeCompare(b.key);
 }
 
-function originStates(input: SearchInput, opts: SearchOptions): State[] {
-  return [...input.network.stops.values()]
-    .map((stop) => ({ stop, distanceM: haversineM(input.origin, stop.position) }))
+/** The closest stops within walking distance of `point`. */
+function stopsNear(network: Network, point: LatLng, opts: SearchOptions) {
+  return [...network.stops.values()]
+    .map((stop) => ({ stop, distanceM: haversineM(point, stop.position) }))
     .filter(({ distanceM }) => distanceM <= opts.originRadiusM)
     .sort((a, b) => a.distanceM - b.distanceM || a.stop.id.localeCompare(b.stop.id))
-    .slice(0, opts.maxOriginStops)
-    .map(({ stop, distanceM }) => {
-      const walkSec = distanceM / opts.walkSpeedMps;
-      return {
-        originStopId: stop.id,
-        walkSec,
-        legs: [],
-        places: [],
-        elapsedSec: walkSec,
-        score: 0,
-        stopId: stop.id,
-        visited: new Set<string>(),
-        key: stop.id,
-        finished: false,
-        backSec: 0,
-      };
-    });
+    .slice(0, opts.maxOriginStops);
+}
+
+function originStates(input: SearchInput, opts: SearchOptions): State[] {
+  return stopsNear(input.network, input.origin, opts).map(({ stop, distanceM }) => {
+    const walkSec = distanceM / opts.walkSpeedMps;
+    return {
+      originStopId: stop.id,
+      walkSec,
+      legs: [],
+      places: [],
+      elapsedSec: walkSec,
+      score: 0,
+      stopId: stop.id,
+      visited: new Set<string>(),
+      key: stop.id,
+      finished: false,
+      backSec: 0,
+    };
+  });
 }
 
 /**
- * Whether another leg can start at this stop group: a different line, or in a loop also
- * another variant of the same line (turning back the way you came).
+ * Whether another leg can start at this stop group: a different line, or with a fixed end
+ * also another variant of the same line (turning back the way you came).
  */
-function canTransferAt(network: Network, stopId: string, pattern: Pattern, loop: boolean): boolean {
+function canTransferAt(
+  network: Network,
+  stopId: string,
+  pattern: Pattern,
+  fixedEnd: boolean,
+): boolean {
   const groupId = network.stops.get(stopId)?.groupId;
   const visits = groupId ? network.visitsByGroup.get(groupId) : undefined;
   return (visits ?? []).some((v) =>
-    loop ? v.patternId !== pattern.id : network.patterns.get(v.patternId)?.line !== pattern.line,
+    fixedEnd
+      ? v.patternId !== pattern.id
+      : network.patterns.get(v.patternId)?.line !== pattern.line,
   );
 }
 
-function backFrom(ctx: Context, stopId: string): number {
+function timeToEnd(ctx: Context, stopId: string): number {
   const group = ctx.groupOf(stopId);
-  const sec = group === undefined ? undefined : ctx.returnTimes.get(group);
-  return sec ?? Number.POSITIVE_INFINITY; // unknown group or no way back
+  const sec = group === undefined ? undefined : ctx.endTimes.get(group);
+  return sec ?? Number.POSITIVE_INFINITY; // unknown group or no way to the end
 }
 
 /** Every ride that extends `state` by one leg and ends where it can finish or transfer. */
@@ -170,9 +189,9 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
   for (const visit of visits) {
     const pattern = network.patterns.get(visit.patternId) as Pattern;
     const board = pattern.stops[visit.index] as PatternStop;
-    // A loop may come back on a line it already used (the same tram the other way),
-    // but never rides the same variant twice; a normal ride uses each line once.
-    const used = ctx.loop ? usedPatterns.has(pattern.id) : usedLines.has(pattern.line);
+    // A ride with a fixed end may come back on a line it already used (the same tram the
+    // other way), but never rides the same variant twice; a free ride uses each line once.
+    const used = ctx.fixedEnd ? usedPatterns.has(pattern.id) : usedLines.has(pattern.line);
     if (used || visit.index === pattern.stops.length - 1) continue;
 
     const waitSec = pattern.headwaySec / 2 + (legIndex > 0 ? opts.transferSec : 0);
@@ -214,12 +233,12 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
         });
       }
 
-      const near = ctx.loop && ctx.nearOrigin(stop.stopId);
-      const backSec = ctx.loop && !near ? backFrom(ctx, stop.stopId) : 0;
-      if (alightElapsedSec + backSec > maxSec) continue; // a loop that cannot get back in time
+      const near = ctx.fixedEnd && ctx.nearEnd(stop.stopId);
+      const backSec = ctx.fixedEnd && !near ? timeToEnd(ctx, stop.stopId) : 0;
+      if (alightElapsedSec + backSec > maxSec) continue; // cannot reach the end in time
 
-      const finishes = alightElapsedSec >= minSec && (!ctx.loop || near);
-      const transfers = !isLastLeg && canTransferAt(network, stop.stopId, pattern, ctx.loop);
+      const finishes = alightElapsedSec >= minSec && (!ctx.fixedEnd || near);
+      const transfers = !isLastLeg && canTransferAt(network, stop.stopId, pattern, ctx.fixedEnd);
       const terminus = j === pattern.stops.length - 1;
       if (!finishes && !transfers && !terminus) continue;
 
@@ -254,14 +273,14 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
 
 /**
  * The best open states, diversified so the beam is not filled with near-copies:
- * normal rides keep a few per last variant, loops keep one per end stop group.
+ * free rides keep a few per last variant, rides with a fixed end one per end stop group.
  */
 function selectBeam(states: State[], cmp: (a: State, b: State) => number, ctx: Context): State[] {
-  const cap = ctx.loop ? 1 : ctx.opts.maxStatesPerPattern;
+  const cap = ctx.fixedEnd ? 1 : ctx.opts.maxStatesPerPattern;
   const perKey = new Map<string, number>();
   const beam: State[] = [];
   for (const s of [...states].sort(cmp)) {
-    const key = ctx.loop
+    const key = ctx.fixedEnd
       ? (ctx.groupOf(s.stopId) ?? s.stopId)
       : (s.legs[s.legs.length - 1]?.patternId ?? "");
     const n = perKey.get(key) ?? 0;
@@ -273,22 +292,29 @@ function selectBeam(states: State[], cmp: (a: State, b: State) => number, ctx: C
   return beam;
 }
 
-function toRide(s: State, ctx: Context): Ride {
+function toRide(s: State, ctx: Context, input: SearchInput): Ride {
   const { originStopId, walkSec, legs, places, elapsedSec, score } = s;
   const endsAtStart = legs.length > 0 && ctx.nearOrigin(s.stopId);
-  return { originStopId, walkSec, legs, places, elapsedSec, score, endsAtStart };
+  const ride: Ride = { originStopId, walkSec, legs, places, elapsedSec, score, endsAtStart };
+  if (input.destination && !input.returnToStart) {
+    ride.endsAtDestination = legs.length > 0 && ctx.nearEnd(s.stopId);
+  }
+  return ride;
 }
 
 /**
  * Beam search for a sightseeing ride on trams and buses: up to `maxLegs - 1` transfers,
  * total time within [minBudgetShare, maxBudgetShare] × budget, maximising place scores.
- * With `returnToStart` the ride must end near the origin (a loop); `endsAtStart` on the
- * result says whether that worked. Returns null only when no stop is near the origin.
+ * With `returnToStart` the ride must end near the origin (a loop), with `destination` near
+ * that point; `endsAtStart` / `endsAtDestination` on the result say whether that worked.
+ * A destination farther than the budget allows stretches the budget to the fastest ride
+ * there; one that no ride reaches is dropped. Returns null only when no stop is near the origin.
  */
 export function planRide(input: SearchInput, options: Partial<SearchOptions> = {}): Ride | null {
   const base = { ...DEFAULT_SEARCH_OPTIONS, ...options };
-  const loop = input.returnToStart === true;
-  const opts = loop
+  const end = input.returnToStart ? input.origin : input.destination;
+  const fixedEnd = end !== undefined;
+  const opts = fixedEnd
     ? {
         ...base,
         maxLegs: base.loopMaxLegs,
@@ -296,30 +322,50 @@ export function planRide(input: SearchInput, options: Partial<SearchOptions> = {
         beamWidth: base.loopBeamWidth,
       }
     : base;
-  const cmp = byObjective(input.budgetSec, opts);
 
   let beam = originStates(input, opts);
   if (beam.length === 0) return null;
 
-  const groupOf = (stopId: string) => input.network.stops.get(stopId)?.groupId;
+  const { network } = input;
+  const groupOf = (stopId: string) => network.stops.get(stopId)?.groupId;
   const originGroups = new Set(beam.map((s) => groupOf(s.stopId) ?? s.stopId));
+  const endGroups =
+    end === undefined || input.returnToStart
+      ? originGroups
+      : new Set(stopsNear(network, end, opts).map(({ stop }) => stop.groupId));
+  const near = (groups: ReadonlySet<string>, point: LatLng) => (stopId: string) => {
+    const stop = network.stops.get(stopId);
+    return (
+      !!stop && (groups.has(stop.groupId) || haversineM(stop.position, point) <= opts.originRadiusM)
+    );
+  };
+  const endTimes = fixedEnd
+    ? computeReturnTimes(network, endGroups, opts.transferSec)
+    : new Map<string, number>();
+
+  let budgetSec = input.budgetSec;
+  if (fixedEnd) {
+    // A loop's fastest ride is the walk to the stop, so only a destination can be out of reach.
+    const fastestSec = Math.min(
+      ...beam.map((s) => s.walkSec + (endTimes.get(groupOf(s.stopId) ?? "") ?? Infinity)),
+    );
+    if (!Number.isFinite(fastestSec)) {
+      const free = planRide({ ...input, returnToStart: false, destination: undefined }, options);
+      return free && { ...free, endsAtDestination: false };
+    }
+    budgetSec = Math.max(budgetSec, fastestSec);
+  }
+
+  const cmp = byObjective(budgetSec, opts);
   const ctx: Context = {
     opts,
-    loop,
-    minSec: opts.minBudgetShare * input.budgetSec,
-    maxSec: opts.maxBudgetShare * input.budgetSec,
+    fixedEnd,
+    minSec: opts.minBudgetShare * budgetSec,
+    maxSec: opts.maxBudgetShare * budgetSec,
     groupOf,
-    nearOrigin: (stopId) => {
-      const stop = input.network.stops.get(stopId);
-      return (
-        !!stop &&
-        (originGroups.has(stop.groupId) ||
-          haversineM(stop.position, input.origin) <= opts.originRadiusM)
-      );
-    },
-    returnTimes: loop
-      ? computeReturnTimes(input.network, originGroups, opts.transferSec)
-      : new Map(),
+    nearOrigin: near(originGroups, input.origin),
+    nearEnd: end ? near(endGroups, end) : () => false,
+    endTimes,
   };
 
   const finished: State[] = [];
@@ -334,20 +380,20 @@ export function planRide(input: SearchInput, options: Partial<SearchOptions> = {
   }
 
   const best = [...finished].sort(cmp)[0];
-  if (best) return toRide(best, ctx);
+  if (best) return toRide(best, ctx, input);
 
-  // Nothing fits the budget. A loop prefers the longest ride that still comes back;
+  // Nothing fits the budget. With a fixed end prefer the longest ride that still gets there;
   // otherwise the best ride over half the budget, else the longest one.
-  const backHome = loop ? partial.filter((s) => ctx.nearOrigin(s.stopId)) : [];
-  if (backHome.length > 0) {
-    const longest = [...backHome].sort(
+  const atEnd = fixedEnd ? partial.filter((s) => ctx.nearEnd(s.stopId)) : [];
+  if (atEnd.length > 0) {
+    const longest = [...atEnd].sort(
       (a, b) => b.elapsedSec - a.elapsedSec || b.score - a.score || a.key.localeCompare(b.key),
     )[0] as State;
-    return toRide(longest, ctx);
+    return toRide(longest, ctx, input);
   }
-  const halfway = partial.filter((s) => s.elapsedSec >= input.budgetSec / 2);
+  const halfway = partial.filter((s) => s.elapsedSec >= budgetSec / 2);
   const fallback = [...(halfway.length > 0 ? halfway : partial)].sort(
     (a, b) => b.score - a.score || b.elapsedSec - a.elapsedSec || a.key.localeCompare(b.key),
   )[0];
-  return fallback ? toRide(fallback, ctx) : null;
+  return fallback ? toRide(fallback, ctx, input) : null;
 }
