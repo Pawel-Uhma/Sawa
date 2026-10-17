@@ -285,8 +285,11 @@ function MobileSheet({
     controls: Math.max(Math.round(height * 0.35), height - controlsBottom),
   };
   const y = useMotionValue(height);
-  // Dok stoi na dole ekranu: arkusz zjeżdża o y, dok wraca o tyle samo (sam transform, bez układu)
-  const dockY = useTransform(y, (value) => -value);
+  // Dok stoi na dole ekranu: arkusz zjeżdża o y, dok wraca o tyle samo (sam transform, bez układu).
+  // Poniżej zwiniętego punktu zatrzymania jedzie już z arkuszem, więc chowa się razem z nim.
+  const lowestRef = useRef(detents.controls);
+  lowestRef.current = detents.controls;
+  const dockY = useTransform(y, (value) => -Math.min(value, lowestRef.current));
   const [detent, setDetent] = useState<keyof typeof detents>("controls");
   const [isHidden, setIsHidden] = useState(true);
   const sheetRef = useRef<HTMLElement>(null);

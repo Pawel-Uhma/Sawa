@@ -35,7 +35,7 @@ Wzorce, które się powtarzają:
 
 | Krok | Sawa (poza, dymek) | Pytanie | Co użytkownik robi |
 |---|---|---|---|
-| 0. Powitanie | macha, „Cześć! Jestem Sawa, syrenka z herbu Warszawy.” | „Opowiem Ci o mieście za oknem tramwaju.” | „Poznajmy się” albo „Znam Sawę, przejdź do pytań” |
+| 0. Powitanie | macha, „Cześć! Jestem Sawa, syrenka z herbu Warszawy.” | „Opowiem Ci o mieście, które mijasz.” | „Poznajmy się” albo „Znam Sawę, przejdź do pytań” |
 | 1. Imię | w sekrecie | Skąd moje imię? Wars + Sawa = Warszawa, legenda i herb | „Dalej” albo przesunięcie palcem |
 | 2. Znajomość | z mapą | Jak dobrze znasz Warszawę? Pierwszy raz / Trochę znam / Mieszkam tu | 1 tapnięcie, przejście samo; „Pomiń” |
 | 3. Co Ci da Sawa | radość, dymek odpowiada na wybór | Treść zależy od odpowiedzi z kroku 2 (`WHY` w `onboarding-intro.tsx`): pierwszy raz „Wsiadaj do tramwaju”, trochę znam „Reszta czeka za oknem”, mieszkam „Mieszkasz tu, ale znasz trzy miejsca?”, pominięte: wersja ogólna | „Jak to działa?” |

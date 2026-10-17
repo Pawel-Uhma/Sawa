@@ -63,8 +63,8 @@ export function Legend({ onNext }: IntroProps) {
 
       <motion.p {...rise(4)} className="text-[15px] leading-relaxed text-tekst-2 md:text-lg">
         {t(
-          "Według legendy rybak Wars i syrena Sawa dali miastu imię. Syrena obiecała też bronić miasta, dlatego w herbie Warszawy trzyma miecz i tarczę. Ja jestem tą samą syreną, tylko w telefonie.",
-          "Legend has it that Wars the fisherman and Sawa the mermaid gave the city its name. The mermaid also promised to defend the city, which is why she holds a sword and shield in the Warsaw coat of arms. I'm that same mermaid, just in your phone.",
+          "Ta sama syrena z herbu Warszawy, tylko w Twoim telefonie.",
+          "The same mermaid as in Warsaw's coat of arms, just in your phone.",
         )}
       </motion.p>
 
@@ -82,93 +82,76 @@ type WhyCopy = {
   sub?: string;
   /** Co już znasz (odhaczone) i czego jeszcze nie (koralowe, przerywane). */
   chips: { label: string; known: boolean }[];
-  problem: string;
   promise: string;
 };
 
 // Ten sam ekran „co Ci da Sawa”, ale mówi do osoby, którą właśnie poznała (odpowiedź o znajomości miasta).
+// Mało tekstu: jedno zdanie obietnicy, resztę mówią kafelki.
 const WHY_PL: Record<string, WhyCopy> = {
   first_time: {
-    title: "Pierwszy raz w Warszawie? Wsiadaj do tramwaju.",
-    sub: "Bez planu zwiedzania i bez przewodnika w ręku.",
+    title: "Pierwszy raz w Warszawie?",
+    sub: "Nie potrzebujesz planu zwiedzania.",
     chips: [
       { label: "Gdzie jestem?", known: false },
       { label: "Co tu się wydarzyło?", known: false },
       { label: "Co dalej?", known: false },
     ],
-    problem: "Z okna tramwaju łatwo zobaczyć miasto, ale trudno zrozumieć, co się właśnie mija.",
-    promise:
-      "Sawa opowiada o najważniejszych miejscach na trasie i o tym, co się w nich wydarzyło. Najpierw tło, potem szczegóły.",
+    promise: "Po drodze mijasz miejsca z wielką historią. Opowiem Ci o nich, kiedy je mijasz.",
   },
   know_a_bit: {
-    title: "Znasz kilka miejsc. Reszta czeka za oknem.",
-    sub: "Miejsca z przewodników to dopiero początek.",
+    title: "Znasz kilka miejsc. Pokażę Ci resztę.",
     chips: [
       { label: "Stare Miasto", known: true },
       { label: "Pałac Kultury", known: true },
       { label: "ulice pomiędzy?", known: false },
     ],
-    problem:
-      "Między znanymi miejscami jest całe miasto: kamienice, murale, ślady fabryk i ludzi, którzy tu żyli.",
-    promise:
-      "Sawa przeplata to, co znasz, z tym, o czym nikt Ci nie powiedział. Opowiada w drodze, więc niczego nie musisz szukać.",
+    promise: "Między znanymi miejscami są kamienice, bazary i ślady ludzi, którzy tu żyli.",
   },
   local: {
-    title: "Mieszkasz tu, ale znasz trzy miejsca?",
-    sub: "Warszawa rośnie dzięki ludziom, którzy przyjechali tu za pracą albo na studia.",
+    title: "Mieszkasz tu? Codziennie mijasz historię.",
     chips: [
       { label: "Dom", known: true },
       { label: "Praca", known: true },
       { label: "Siłownia", known: true },
       { label: "reszta miasta?", known: false },
     ],
-    problem:
-      "Codziennie jedziesz tramwajem obok kamienic, murali i miejsc, gdzie działa się historia. Nikt Ci o nich nie mówi, więc ich nie widzisz.",
     promise:
-      "Sawa zamienia zwykły przejazd w opowieść o mieście, w którym mieszkasz. Żeby było trochę bardziej Twoje.",
+      "Opowiem Ci o miejscach na Twojej codziennej trasie. Żeby to miasto było trochę bardziej Twoje.",
   },
 };
 
 const WHY_EN: Record<string, WhyCopy> = {
   first_time: {
-    title: "First time in Warsaw? Hop on a tram.",
-    sub: "No sightseeing plan, no guidebook in hand.",
+    title: "First time in Warsaw?",
+    sub: "You don't need a sightseeing plan.",
     chips: [
       { label: "Where am I?", known: false },
       { label: "What happened here?", known: false },
       { label: "What's next?", known: false },
     ],
-    problem:
-      "From a tram window it's easy to see the city, but hard to understand what you're passing.",
     promise:
-      "Sawa tells you about the key places on your route and what happened there. Background first, then the details.",
+      "On the way you pass places with a big history. I'll tell you about them as you go by.",
   },
   know_a_bit: {
-    title: "You know a few places. The rest is outside the window.",
-    sub: "The guidebook sights are just the beginning.",
+    title: "You know a few places. I'll show you the rest.",
     chips: [
       { label: "Old Town", known: true },
       { label: "Palace of Culture", known: true },
       { label: "the streets between?", known: false },
     ],
-    problem:
-      "Between the famous places lies a whole city: tenements, murals, traces of factories and of the people who lived here.",
     promise:
-      "Sawa mixes what you know with what nobody has told you. She talks on the way, so there's nothing to look for.",
+      "Between the famous places there are tenements, markets and traces of the people who lived here.",
   },
   local: {
-    title: "You live here, but know three places?",
-    sub: "Warsaw grows thanks to people who came here for work or to study.",
+    title: "You live here? You pass history every day.",
     chips: [
       { label: "Home", known: true },
       { label: "Work", known: true },
       { label: "Gym", known: true },
       { label: "the rest of the city?", known: false },
     ],
-    problem:
-      "Every day your tram passes tenements, murals and places where history happened. Nobody tells you about them, so you don't see them.",
     promise:
-      "Sawa turns an ordinary ride into a story about the city you live in. To make it a little more yours.",
+      "I'll tell you about the places on your everyday route. To make the city a little more yours.",
   },
 };
 
@@ -178,17 +161,13 @@ const WHY: Record<Lang, Record<string, WhyCopy>> = { pl: WHY_PL, en: WHY_EN };
 const WHY_DEFAULT_EN: WhyCopy = {
   title: "You pass history every day.",
   chips: [],
-  problem:
-    "Outside the tram window there are tenements, murals and places where history happened. Nobody talks about them, so they go unseen.",
-  promise: "Sawa turns an ordinary ride into a story about the city you're passing.",
+  promise: "I'll tell you about it on the way: on a tram, on a bus or on a walk.",
 };
 
 const WHY_DEFAULT_PL: WhyCopy = {
-  title: "Mijasz historię każdego dnia.",
+  title: "Codziennie mijasz historię.",
   chips: [],
-  problem:
-    "Za oknem tramwaju są kamienice, murale i miejsca, gdzie działa się historia. Nikt o nich nie mówi, więc ich nie widać.",
-  promise: "Sawa zamienia zwykły przejazd w opowieść o mieście, które mijasz.",
+  promise: "Opowiem Ci o niej po drodze: w tramwaju, w autobusie albo na spacerze.",
 };
 
 export function Why({ familiarity, onNext }: IntroProps & { familiarity: string | null }) {
@@ -233,15 +212,12 @@ export function Why({ familiarity, onNext }: IntroProps & { familiarity: string 
         </ul>
       )}
 
-      <motion.div
+      <motion.p
         {...rise(copy.chips.length)}
-        className="flex flex-col gap-3 rounded-3xl bg-powierzchnia p-4 md:p-5"
+        className="rounded-3xl bg-powierzchnia p-4 text-base font-semibold leading-relaxed text-glebia md:p-5 md:text-lg"
       >
-        <p className="text-[15px] leading-relaxed md:text-lg">{copy.problem}</p>
-        <p className="text-[15px] font-semibold leading-relaxed text-glebia md:text-lg">
-          {copy.promise}
-        </p>
-      </motion.div>
+        {copy.promise}
+      </motion.p>
 
       <div className="mt-auto md:mt-0">
         <PrimaryButton onClick={onNext} className="md:w-auto md:px-12">
@@ -256,17 +232,17 @@ const HOW_PL = [
   {
     icon: "/onboarding/know_a_bit.webp",
     title: "Mówisz, ile masz czasu",
-    text: "Od kilku minut do 4 godzin. Wracasz w to samo miejsce albo jedziesz do celu.",
+    text: "Od kilku minut do 4 godzin.",
   },
   {
     icon: "/onboarding/tram.webp",
-    title: "Układam przejazd",
-    text: "Tramwajami i autobusami z rozkładu ZTM, z przesiadkami. Nie musisz wysiadać.",
+    title: "Układam trasę",
+    text: "Tramwajem, autobusem albo pieszo.",
   },
   {
     icon: "/onboarding/sawa-sekret.webp",
-    title: "Opowiadam, co mijasz",
-    text: "Na głos, jak podcast. Każda historia trwa mniej więcej tyle, ile jazda do następnego miejsca.",
+    title: "Opowiadam po drodze",
+    text: "Jak podcast, o miejscach, które właśnie mijasz.",
   },
 ];
 
@@ -274,17 +250,17 @@ const HOW_EN: typeof HOW_PL = [
   {
     icon: "/onboarding/know_a_bit.webp",
     title: "You tell me how much time you have",
-    text: "From a few minutes to 4 hours. Come back to the same spot or ride to a destination.",
+    text: "From a few minutes to 4 hours.",
   },
   {
     icon: "/onboarding/tram.webp",
-    title: "I plan the ride",
-    text: "Trams and buses from the ZTM timetable, with changes. You don't have to get off.",
+    title: "I plan the route",
+    text: "By tram, by bus or on foot.",
   },
   {
     icon: "/onboarding/sawa-sekret.webp",
-    title: "I tell you about what you pass",
-    text: "Out loud, like a podcast. Each story lasts about as long as the ride to the next place.",
+    title: "I tell you stories on the way",
+    text: "Like a podcast, about the places you're passing.",
   },
 ];
 
@@ -318,8 +294,8 @@ export function How({ onNext }: IntroProps) {
 
       <motion.p {...rise(3)} className="text-sm leading-relaxed text-tekst-3">
         {t(
-          "Miejsca i fakty biorę z otwartych danych Warszawy (dane.um.warszawa.pl) i OpenStreetMap. Opowieść układa z nich model językowy, a czyta ją syntezator mowy.",
-          "I take places and facts from Warsaw's open data (dane.um.warszawa.pl) and OpenStreetMap. A language model turns them into a story, and a speech synthesiser reads it out.",
+          "Miejsca i fakty biorę z otwartych danych Warszawy i OpenStreetMap. Opowieść składa z nich AI.",
+          "I take places and facts from Warsaw's open data and OpenStreetMap. AI turns them into a story.",
         )}
       </motion.p>
 
