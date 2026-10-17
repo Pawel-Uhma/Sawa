@@ -362,3 +362,9 @@
 > make sure the plan only covers the mvp from the 10-prd, no extras
 
 **AI:** Przyciąłem `docs/12-plan-mvp.md` do listy MVP z `10-prd.md` (M1–M7; czat, pogoda, pojazdy na żywo, TTS, Wikipedia poza 1 km przeniesione do „Poza planem”), dopasowałem `11-zasady-pracy-i-kodu.md`, karty R1 i R4, a zadania spoza MVP w `todo.md` przeniosłem do sekcji „Poza MVP”. Zainstalowałem Node 24 i pnpm 12 i założyłem monorepo (T-04): `apps/web` (Next 16 z create-next-app, klient `hc`), `apps/api` (Hono: `/health`, CORS, obsługa błędów, env z zod, `railway.json`), `packages/shared` (zod, geo), Biome, Vitest, CI w GitHub Actions; lint, typecheck, 8 testów i build web przechodzą.
+
+### 2026-10-17 12:15 · Szczpan
+
+> add node and pnpm setup to the README
+
+**AI:** Utworzyłem główny `README.md`: opis Sawy, linki do dokumentacji, instalacja Node 24 (macOS, Windows, nvm) i pnpm 12.14.0 (npm lub Corepack), uruchomienie lokalne, tabela poleceń, struktura repo i typowe problemy.
