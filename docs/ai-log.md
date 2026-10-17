@@ -400,3 +400,9 @@
 > zrób osobny branch, opisz go, zrób commit, push i otwórz PR
 
 **AI:** Utworzyłem gałąź `r2/places-migration` z trzema commitami (migracje, seed z `.env.example`, dokumenty), wypchnąłem ją i otworzyłem PR #1 (https://github.com/Pawel-Uhma/Sawa/pull/1) z opisem: co, dlaczego, jak sprawdzić, otwarte decyzje.
+
+### 2026-10-17 · Jasiek
+
+> ok, czy możesz też już wgrać dane do db?
+
+**AI:** Sprawdziłem w bazie: dane są już wgrane od 13:08 (seed po wklejeniu klucza), 326 miejsc i 351 zdjęć. Nic nie zmieniałem.
