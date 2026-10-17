@@ -54,15 +54,23 @@ export function projectOnPolyline(
   return best;
 }
 
-/** Part of a polyline between two distances along it, with interpolated end points. */
+/**
+ * Part of a polyline between two distances along it, with interpolated end points.
+ * Distances outside the line are clamped to its ends: stop distances from GTFS can be
+ * a few metres longer than the simplified shape, and must not wrap to the start.
+ */
 export function slicePolyline(
   lngLats: LngLat[],
   cumDistM: number[],
   fromM: number,
   toM: number,
 ): LngLat[] {
-  const at = (m: number): LngLat => {
-    const i = Math.max(0, cumDistM.findIndex((d) => d >= m) - 1);
+  const totalM = cumDistM[cumDistM.length - 1] ?? 0;
+  const lastSegment = Math.max(0, lngLats.length - 2);
+  const at = (rawM: number): LngLat => {
+    const m = Math.min(totalM, Math.max(0, rawM));
+    const end = cumDistM.findIndex((d) => d >= m);
+    const i = end < 0 ? lastSegment : Math.min(lastSegment, Math.max(0, end - 1));
     const a = lngLats[i] as LngLat;
     const b = (lngLats[i + 1] ?? a) as LngLat;
     const segLen = (cumDistM[i + 1] ?? 0) - (cumDistM[i] as number);

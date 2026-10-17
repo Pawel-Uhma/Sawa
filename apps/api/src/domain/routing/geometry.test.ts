@@ -47,6 +47,18 @@ describe("slicePolyline", () => {
     expect(slice[1]).toEqual([21.005, 52.23]);
     expect(slice[2]?.[0]).toBeCloseTo(21.01, 6);
   });
+
+  // Regression: a leg ending at a line's last stop drew a straight line back to the start,
+  // because the stop's distance was a few metres past the end of the shape.
+  it("clamps an end distance past the line to its last point", () => {
+    const slice = slicePolyline(LINE, CUM, (CUM[1] as number) / 2, (CUM[2] as number) + 5);
+    expect(slice[slice.length - 1]).toEqual([21.01, 52.23]);
+  });
+
+  it("clamps a start distance before the line to its first point", () => {
+    const slice = slicePolyline(LINE, CUM, -5, CUM[1] as number);
+    expect(slice[0]).toEqual([21.0, 52.23]);
+  });
 });
 
 describe("bboxAround / isInBbox", () => {
