@@ -1,5 +1,7 @@
-// Builds apps/api/data/transit-graph.json.gz from the Warsaw GTFS (https://mkuran.pl/gtfs/).
-// Usage: pnpm --filter @sawa/scripts transit [--zip path/to/warsaw.zip] [--date 2026-10-18]
+// Builds apps/api/data/transit/YYYY-MM-DD.json.gz, one graph per service day, from the Warsaw
+// GTFS (https://mkuran.pl/gtfs/). The API picks the graph for today (T-18).
+// Usage: pnpm --filter @sawa/scripts transit [--zip path/to/warsaw.zip] [--date 2026-10-18] [--days 7]
+// Defaults: from today, 7 days; days the GTFS does not cover are skipped, older files removed.
 // License: ZTM Warszawa data usage terms + ODbL for shapes; attribution is kept in the output.
 
 import {
@@ -7,11 +9,13 @@ import {
   createWriteStream,
   existsSync,
   mkdirSync,
+  readdirSync,
+  rmSync,
   statSync,
   writeFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
-import { dirname, join, resolve } from "node:path";
+import { join, resolve } from "node:path";
 import { Readable } from "node:stream";
 import { pipeline } from "node:stream/promises";
 import { gzipSync } from "node:zlib";
@@ -31,7 +35,8 @@ import { lengthM, simplifyLine } from "./simplify";
 type LngLat = [number, number];
 
 const GTFS_URL = "https://mkuran.pl/gtfs/warsaw.zip";
-const OUT = resolve(import.meta.dirname, "../../apps/api/data/transit-graph.json.gz");
+const OUT_DIR = resolve(import.meta.dirname, "../../apps/api/data/transit");
+const DEFAULT_DAYS = 7;
 const SIMPLIFY_TOLERANCE_M = 5;
 const MODES: Record<string, "tram" | "bus"> = { "0": "tram", "3": "bus" };
 
@@ -84,11 +89,46 @@ function collect(rows: Record<string, string>[]) {
   return csvStream((row) => rows.push(row));
 }
 
+/** `date` plus `n` days, YYYY-MM-DD. */
+function addDays(date: string, n: number): string {
+  const d = new Date(`${date}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+class NoServiceError extends Error {}
+
 async function main() {
-  const date =
+  const start =
     arg("date") ??
     new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Warsaw" }).format(new Date());
+  const days = Number(arg("days") ?? DEFAULT_DAYS);
   const zip = await ensureZip();
+  mkdirSync(OUT_DIR, { recursive: true });
+
+  let built = 0;
+  for (let i = 0; i < days; i++) {
+    const date = addDays(start, i);
+    try {
+      await buildDay(zip, date);
+      built++;
+    } catch (err) {
+      if (!(err instanceof NoServiceError)) throw err;
+      console.warn(err.message);
+    }
+  }
+  if (built === 0) throw new Error(`No service from ${start} for ${days} days in this GTFS`);
+
+  for (const file of readdirSync(OUT_DIR)) {
+    const date = file.replace(/\.json\.gz$/, "");
+    if (/^\d{4}-\d{2}-\d{2}$/.test(date) && date < start) {
+      rmSync(join(OUT_DIR, file));
+      console.log(`removed ${file}`);
+    }
+  }
+}
+
+async function buildDay(zip: string, date: string) {
   console.log(`GTFS ${zip}, service date ${date}`);
 
   // Pass 1: small tables.
@@ -111,7 +151,7 @@ async function main() {
   const ymd = date.replaceAll("-", "");
   for (const c of calendar)
     if (c.date === ymd && c.exception_type === "1") services.add(c.service_id as string);
-  if (services.size === 0) throw new Error(`No service on ${date} in this GTFS`);
+  if (services.size === 0) throw new NoServiceError(`No service on ${date} in this GTFS, skipped`);
   for (const r of routes) {
     const mode = MODES[r.route_type as string];
     if (mode) routeInfo.set(r.route_id as string, { line: r.route_short_name as string, mode });
@@ -233,11 +273,11 @@ async function main() {
     patterns,
   });
 
-  mkdirSync(dirname(OUT), { recursive: true });
+  const out = join(OUT_DIR, `${date}.json.gz`);
   const gz = gzipSync(JSON.stringify(graph), { level: 9 });
-  writeFileSync(OUT, gz);
+  writeFileSync(out, gz);
   console.log(
-    `${patterns.length} patterns (${perLine.size} lines), ${graph.stops.length} stops → ${OUT} (${(gz.length / 1e6).toFixed(2)} MB)`,
+    `${patterns.length} patterns (${perLine.size} lines), ${graph.stops.length} stops → ${out} (${(gz.length / 1e6).toFixed(2)} MB)`,
   );
 }
 

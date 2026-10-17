@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 22:20 (Szczepan, z agentem R1): **graf transportu na każdy dzień sam (T-18).** Skrypt buduje 7 dni (`apps/api/data/transit/RRRR-MM-DD.json.gz`), API bierze graf na dzisiejszą datę i o północy przełącza się bez restartu. Niedziela ma 560 wariantów tras zamiast 575 w sobotę. Gałąź `r1/transit-multi-day`, do merge'u i ręcznego deployu przed północą (T-148). Plan do pitchu: [sciezka-krytyczna.md](sciezka-krytyczna.md).
 - 22:30 (Szczepan, z agentem R1): **produkcja rysowała spacery prostymi liniami przez budynki.** FOSSGIS OSRM przestał dawać ścieżki z IP Railway (lokalnie działał; najpewniej blokada po symulacji 100–300 klientów o 21:30, każdy spacer to zapytanie do FOSSGIS). Poprawka w gałęzi `r1/walk-path-fallback`: gdy OSRM zawiedzie, ścieżkę daje Valhalla (też FOSSGIS, inny serwer, bez klucza), router, który zawiódł, jest pomijany przez minutę, błędy idą do logów. Po merge'u deploy ręczny (T-148). Pewne rozwiązanie na demo: własny OSRM (do decyzji).
 - 21:50 (Jasiek, z agentem R2): **`computePlaceHits` blokował API na ~3 s** przy każdym nowym obszarze planera (4522 miejsc × 575 kursów), stąd długie ogony w symulacji. Indeks siatki: 0,16 s, wynik identyczny na danych z produkcji. Plik R1, PR do akceptacji Szczepana.
 - 21:35 (Paweł, z agentem R3): **kolor znacznika miejsca znów według grupy rodzaju, nie tematu (cofa część T-151).** 8 kolorów `PLACE_GROUP_COLORS` jak w arkuszu „Naklejka”, biała obwódka w obu motywach; kropka w karcie miejsca też. Legenda pokazuje grupy. Klastry zostają, chipy tematów mają swoje kolory dalej.

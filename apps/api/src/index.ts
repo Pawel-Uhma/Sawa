@@ -1,7 +1,7 @@
 import { serve } from "@hono/node-server";
 import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthesizer";
 import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
-import { loadTransitData } from "./adapters/gtfs/load-transit";
+import { loadTransitCalendar } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
 import { createOsrmWalkPathSource, firstWalkPath } from "./adapters/osrm/walk-paths";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
@@ -27,16 +27,18 @@ import { createVehicleTracker } from "./services/track-vehicles";
 const env = loadEnv();
 const logger = createLogger(env.LOG_LEVEL);
 
-const transit = loadTransitData(new URL("../data/transit-graph.json.gz", import.meta.url));
+// One GTFS snapshot per day; the planner switches at midnight. Real times come from the
+// timetable and positions.
+const transit = loadTransitCalendar(new URL("../data/transit/", import.meta.url));
+const today = transit.forDate(warsawDate(new Date()));
 logger.info(
-  { serviceDate: transit.serviceDate, patterns: transit.network.patterns.size },
-  "transit graph loaded",
+  { dates: transit.dates, serviceDate: today.serviceDate, patterns: today.network.patterns.size },
+  "transit graphs found",
 );
-// The graph is a GTFS snapshot of one day; real times come from the timetable and positions.
-if (transit.serviceDate !== warsawDate(new Date())) {
+if (today.serviceDate !== warsawDate(new Date())) {
   logger.warn(
-    { serviceDate: transit.serviceDate },
-    "transit graph is for another day: rebuild it (pnpm --filter @sawa/scripts transit, T-18)",
+    { serviceDate: today.serviceDate },
+    "no transit graph for today: rebuild them (pnpm --filter @sawa/scripts transit, T-18)",
   );
 }
 
@@ -116,7 +118,7 @@ const app = createApp({
   corsOrigins: env.CORS_ORIGINS,
   corsPreviewPattern: env.CORS_PREVIEW_PATTERN,
   debugPages: env.DEBUG_PAGES,
-  transitDate: transit.serviceDate,
+  transitDate: (now) => transit.forDate(warsawDate(now)).serviceDate,
   services: {
     routePlanner,
     places: placesRepository,
