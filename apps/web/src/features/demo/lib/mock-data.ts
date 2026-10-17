@@ -191,6 +191,9 @@ export const ROUTE_LINE: LngLat[] = [
 export type MockStop = MockPlace & {
   // Minuty od startu trasy do tego punktu.
   etaMin: number;
+  // Z planera: sekundy od startu do punktu i ile Sawa może o nim mówić (`RoutePlace.windowSec`).
+  etaSec?: number;
+  windowSec?: number;
   // Odcinek, na którym jest punkt; "walk" to spacer (wtedy `line` jest pusty).
   mode?: "tram" | "bus" | "walk";
 };

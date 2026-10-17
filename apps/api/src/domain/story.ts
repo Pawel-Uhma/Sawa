@@ -4,18 +4,29 @@ import type { Place, PlaceSource } from "./place";
 /** Polish speech in ElevenLabs runs at about 2.5 words a second (docs/12-plan-mvp.md §8). */
 export const WORDS_PER_SEC = 2.5;
 
-export type StoryBand = { id: "short" | "medium" | "long"; upToSec: number; words: number };
+/**
+ * Share of the window Sawa fills with speech: the rest is a breath before the next place, and
+ * room for a voice slower than `WORDS_PER_SEC`. The story may end early, never run over.
+ */
+export const SPEECH_FILL = 0.85;
 
-/** Three lengths, so nearby `targetSec` values share one cached story. */
-export const STORY_BANDS: readonly StoryBand[] = [
-  { id: "short", upToSec: 30, words: 60 },
-  { id: "medium", upToSec: 75, words: 140 },
-  { id: "long", upToSec: Number.POSITIVE_INFINITY, words: 230 },
-];
+/** A story length: `sec` of the window it fills, `words` the model may use. */
+export type StoryBand = { id: string; sec: number; words: number };
 
+/** Windows are rounded down to these steps, so nearby `targetSec` values share one cached story. */
+const BAND_STEP_SEC = 20;
+const LONG_BAND_STEP_SEC = 30;
+const LONG_BAND_FROM_SEC = 120;
+const MIN_BAND_SEC = 20;
+
+/**
+ * The length that fits the time until the next place (`targetSec`): so Sawa talks about this
+ * place while passing it and starts the next story as the next place comes up.
+ */
 export function bandFor(targetSec: number): StoryBand {
-  const long = STORY_BANDS[STORY_BANDS.length - 1] as StoryBand;
-  return STORY_BANDS.find((b) => targetSec <= b.upToSec) ?? long;
+  const step = targetSec < LONG_BAND_FROM_SEC ? BAND_STEP_SEC : LONG_BAND_STEP_SEC;
+  const sec = Math.max(MIN_BAND_SEC, Math.floor(targetSec / step) * step);
+  return { id: `${sec}s`, sec, words: Math.round(sec * WORDS_PER_SEC * SPEECH_FILL) };
 }
 
 /** `placeId + sorted interests + band` (docs/12-plan-mvp.md §6), plus what makes the text differ. */

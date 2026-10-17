@@ -76,7 +76,7 @@ describe("createStoryService", () => {
     const again = await service.tell({
       placeId,
       interests: ["historical", "cultural"],
-      targetSec: 60,
+      targetSec: 55,
     });
     expect(again.cached).toBe(true);
     expect(llm.complete).toHaveBeenCalledTimes(1);
