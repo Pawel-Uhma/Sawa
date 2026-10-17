@@ -17,32 +17,15 @@ const PLACES = [
 const ids = (places: PlaceSummaryFeature[]) => places.map((p) => p.properties.id);
 
 describe("selectVisiblePlaces", () => {
-  it("shows every place when no category is selected", () => {
-    expect(ids(selectVisiblePlaces(PLACES, { interests: [], minRichness: 0 }))).toEqual([
+  it("shows every place regardless of its categories", () => {
+    expect(ids(selectVisiblePlaces(PLACES, { minRichness: 0 }))).toEqual([
       "kercelak",
       "mural",
       "bare",
     ]);
   });
 
-  it("maps place tags to categories and keeps places in any selected one", () => {
-    expect(ids(selectVisiblePlaces(PLACES, { interests: ["historical"], minRichness: 0 }))).toEqual(
-      ["kercelak"],
-    );
-    expect(ids(selectVisiblePlaces(PLACES, { interests: ["cultural"], minRichness: 0 }))).toEqual([
-      "kercelak",
-      "mural",
-    ]);
-  });
-
-  it("drops places without tags while a filter is active", () => {
-    const visible = selectVisiblePlaces(PLACES, { interests: ["nature"], minRichness: 0 });
-    expect(visible).toEqual([]);
-  });
-
   it("hides places below the richness threshold", () => {
-    expect(ids(selectVisiblePlaces(PLACES, { interests: [], minRichness: 2 }))).toEqual([
-      "kercelak",
-    ]);
+    expect(ids(selectVisiblePlaces(PLACES, { minRichness: 2 }))).toEqual(["kercelak"]);
   });
 });

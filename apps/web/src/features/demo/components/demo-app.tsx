@@ -1,6 +1,6 @@
 "use client";
 
-import { interestsOfTags, type Route, type Travel } from "@sawa/shared";
+import type { Route, Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -223,9 +223,6 @@ export function DemoApp() {
     },
     [route.length, rewind, setIsPlaying],
   );
-  // Na mapie pusta lista znaczy „wszystkie miejsca”, więc bez zapasowej kategorii z planera.
-  const mapInterests = useMemo(() => interestsOfTags(profile.interests), [profile.interests]);
-
   const menu: SawaMenuActions = useMemo(
     () => ({
       profile,
@@ -261,7 +258,6 @@ export function DemoApp() {
         <div className="fixed inset-0 overflow-hidden bg-mapa">
           <div className="absolute inset-0">
             <SawaMap
-              interests={mapInterests}
               route={isRoute ? (planned ?? undefined) : undefined}
               camera={camera}
               padding={padding}
