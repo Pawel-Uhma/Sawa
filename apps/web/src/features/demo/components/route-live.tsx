@@ -284,6 +284,7 @@ export function RouteLive({
 
   return (
     <div className="flex flex-col gap-4">
+      {isDesktop && <SawaMenuButton variant="inline" />}
       <header className="flex items-center gap-3">
         <BackButton onBack={onBack} compact />
         <div className="min-w-0 flex-1">
@@ -296,7 +297,6 @@ export function RouteLive({
             <Journey legs={legs} />
           </p>
         </div>
-        {isDesktop && <SawaMenuButton variant="inline" />}
       </header>
 
       {stop && (

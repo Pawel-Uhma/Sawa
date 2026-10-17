@@ -19,6 +19,7 @@ import {
   type MapPadding,
   resolveCamera,
 } from "../lib/camera";
+import { loadMapIcons } from "../lib/map-icons";
 import { BASEMAP_STYLE_URL, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
@@ -70,6 +71,8 @@ export function SawaMap({
 }: SawaMapProps) {
   const mapRef = useRef<MapRef>(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  // Layers mount only after the icons are in the style, so they keep their stacking order.
+  const [icons, setIcons] = useState<"loading" | "ready" | "failed">("loading");
   const [cursor, setCursor] = useState<string>("grab");
   const places = usePlaces();
   const { selectedId, select } = useSelectedPlace();
@@ -143,14 +146,29 @@ export function SawaMap({
             .querySelector(".maplibregl-ctrl-attrib")
             ?.classList.remove("maplibregl-compact-show");
           setIsLoaded(true);
+          loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         attributionControl={false}
         style={{ width: "100%", height: "100%" }}
       >
         {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
         <AttributionControl compact customAttribution={route?.attribution} />
-        <PlacesLayer places={visiblePlaces} selectedId={selectedId} isDimmed={Boolean(route)} />
-        {route && <RouteLayer route={route} selectedId={selectedId} activeId={activeStopId} />}
+        {icons !== "loading" && (
+          <PlacesLayer
+            places={visiblePlaces}
+            selectedId={selectedId}
+            isDimmed={Boolean(route)}
+            hasIcons={icons === "ready"}
+          />
+        )}
+        {icons !== "loading" && route && (
+          <RouteLayer
+            route={route}
+            selectedId={selectedId}
+            activeId={activeStopId}
+            hasIcons={icons === "ready"}
+          />
+        )}
         {destination && <DestinationLayer position={destination} />}
         {user && <UserLayer position={user} />}
       </MapLibreMap>

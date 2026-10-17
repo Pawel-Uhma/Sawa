@@ -2,20 +2,12 @@
 
 import type { Leg } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
-import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import type { StoryPlayer } from "../lib/story-player";
-import {
-  ROUTE_VARIANTS,
-  type RouteVariant,
-  RouteVariantSwitch,
-  RouteViewChapters,
-  RouteViewItinerary,
-  RouteViewLive,
-  type RouteViewProps,
-} from "./route-variants";
+import { RouteLive } from "./route-live";
 
 type RouteSheetProps = {
   durationMin: number;
@@ -41,22 +33,17 @@ export function RouteSheet(props: RouteSheetProps) {
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
 
-  const goTo = useCallback(
-    (index: number) => {
-      if (index < 0 || index >= stops.length || index === activeIndex) return;
-      rewind();
-      setIsPlaying(true);
-      onActiveChange(index);
-    },
-    [activeIndex, stops.length, onActiveChange, setIsPlaying, rewind],
-  );
-
   // Po końcu opowieści Sawa przechodzi do następnego punktu. Zastępstwo lokalizacji do czasu T-106.
   useEffect(() => {
     if (progress < 100) return;
-    if (hasNext) goTo(activeIndex + 1);
-    else setIsPlaying(false);
-  }, [progress, hasNext, activeIndex, goTo, setIsPlaying]);
+    if (!hasNext) {
+      setIsPlaying(false);
+      return;
+    }
+    rewind();
+    setIsPlaying(true);
+    onActiveChange(activeIndex + 1);
+  }, [progress, hasNext, activeIndex, onActiveChange, setIsPlaying, rewind]);
 
   // Wszystko, co Sawa powiedziała w tej jeździe, jako jeden ciągły tekst z podziałem na tematy.
   // Docelowo (T-106) to jeden strumień z pomostami od Sawy; dziś składamy go z kolejnych opowieści.
@@ -84,14 +71,13 @@ export function RouteSheet(props: RouteSheetProps) {
   }, [togglePlay]);
 
   const content = (
-    <SheetContent
+    <RouteLive
       {...props}
       isPlaying={player.isPlaying}
       progress={progress}
       storyText={player.text}
       transcript={transcript}
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
-      goTo={goTo}
       togglePlay={togglePlay}
     />
   );
@@ -113,6 +99,7 @@ function DesktopPanel({ children }: { children: ReactNode }) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -32 }}
       transition={SPRING}
+      style={{ ["--trasa-widoczne" as string]: "calc(100dvh - 70px)" }}
       className="karta absolute bottom-6 left-6 top-6 z-20 flex w-[360px] flex-col overflow-hidden rounded-[28px] lg:w-[400px]"
     >
       <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-6 pb-6 pt-6">
@@ -208,7 +195,8 @@ function MobileSheet({
       aria-label="Trasa"
       exit={reduce ? { opacity: 0 } : { y: height }}
       transition={SPRING}
-      style={{ y }}
+      // Widoczna część arkusza przy bieżącym punkcie zatrzymania: zapis Sawy dopasowuje do niej wysokość
+      style={{ y, ["--trasa-widoczne" as string]: `${height - detents[detent]}px` }}
       className={`karta absolute inset-x-0 top-0 z-20 flex h-dvh flex-col rounded-t-[28px] border-b-0 ${
         isFull ? "" : "touch-none"
       }`}
@@ -237,33 +225,5 @@ function MobileSheet({
         {children}
       </div>
     </motion.section>
-  );
-}
-
-/** Propozycja z `?trasa=a|b|c`; zmiana zapisuje się w adresie, żeby link pokazywał ten sam wariant. */
-function useRouteVariant() {
-  const [variant, setVariant] = useState<RouteVariant>(() => {
-    if (typeof window === "undefined") return "a";
-    const fromUrl = new URLSearchParams(window.location.search).get("trasa");
-    return ROUTE_VARIANTS.find((v) => v === fromUrl) ?? "a";
-  });
-  const change = useCallback((next: RouteVariant) => {
-    setVariant(next);
-    const url = new URL(window.location.href);
-    url.searchParams.set("trasa", next);
-    window.history.replaceState(window.history.state, "", url);
-  }, []);
-  return [variant, change] as const;
-}
-
-function SheetContent(props: RouteViewProps) {
-  const [variant, setVariant] = useRouteVariant();
-  const View =
-    variant === "a" ? RouteViewLive : variant === "b" ? RouteViewItinerary : RouteViewChapters;
-  return (
-    <div className="flex flex-col gap-4">
-      <RouteVariantSwitch value={variant} onChange={setVariant} />
-      <View {...props} />
-    </div>
   );
 }

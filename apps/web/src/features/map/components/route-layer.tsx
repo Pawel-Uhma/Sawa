@@ -2,7 +2,7 @@ import type { Route } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
-import { ACTIVE_STOP_COLOR, LABEL_FONT, WALK_COLOR } from "../lib/map-style";
+import { ACTIVE_STOP_COLOR, LABEL_FONT, mapIconId, WALK_COLOR } from "../lib/map-style";
 import {
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
@@ -17,9 +17,11 @@ type RouteLayerProps = {
   selectedId: string | null;
   /** Place the story is about right now; drawn larger and in the accent colour. */
   activeId?: string;
+  /** Icons registered in the style; draws a stop icon inside the boarding ring. */
+  hasIcons: boolean;
 };
 
-export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
+export function RouteLayer({ route, selectedId, activeId, hasIcons }: RouteLayerProps) {
   const isActive: ExpressionSpecification = ["==", ["get", "id"], activeId ?? ""];
   const legs = useMemo(() => routeLegsToGeoJson(route), [route]);
   const places = useMemo(() => routePlacesToGeoJson(route), [route]);
@@ -59,12 +61,26 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
           id="route-boarding-circle"
           type="circle"
           paint={{
-            "circle-radius": ["case", ["get", "isTransfer"], 7, 6],
+            "circle-radius": hasIcons
+              ? ["case", ["get", "isTransfer"], 15, 14]
+              : ["case", ["get", "isTransfer"], 7, 6],
             "circle-color": "#ffffff",
             "circle-stroke-color": ["get", "color"],
             "circle-stroke-width": ["case", ["get", "isTransfer"], 4, 3],
           }}
         />
+        {hasIcons && (
+          <Layer
+            id="route-boarding-icon"
+            type="symbol"
+            layout={{
+              "icon-image": mapIconId("stop"),
+              "icon-size": 0.48,
+              "icon-allow-overlap": true,
+              "icon-ignore-placement": true,
+            }}
+          />
+        )}
         <Layer
           id="route-boarding-line"
           type="symbol"
@@ -73,7 +89,7 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
             "text-font": LABEL_FONT,
             "text-size": 12,
             "text-anchor": "bottom",
-            "text-offset": [0, -1],
+            "text-offset": hasIcons ? [0, -1.7] : [0, -1],
             "text-allow-overlap": true,
           }}
           paint={{

@@ -84,6 +84,45 @@ export function lineColor(lineIndex: number): string {
   return LINE_COLORS[lineIndex % LINE_COLORS.length];
 }
 
+/**
+ * Map icons in `public/map-icons/`, flat style picked 17.10 (docs/ui/ikony-mapy/).
+ * 96 px PNGs registered with pixelRatio 2, so icon-size 1 is 48 css px.
+ */
+export const PLACE_ICON_KINDS = [
+  "building",
+  "monument",
+  "plaque",
+  "street",
+  "site",
+  "mural",
+  "event",
+  "church",
+  "cemetery",
+] as const;
+export const MAP_ICONS = [...PLACE_ICON_KINDS, "stop", "tram", "bus"] as const;
+export const MAP_ICON_PIXEL_RATIO = 2;
+export const FALLBACK_PLACE_ICON = "site";
+
+export function mapIconId(name: string): string {
+  return `sawa-${name}`;
+}
+
+export function mapIconUrl(name: string): string {
+  return `/map-icons/${name}.png`;
+}
+
+/** MapLibre `match` expression: icon id by place kind, pin for kinds without their own icon. */
+export function placeKindIconExpression(): ExpressionSpecification {
+  const pairs = PLACE_ICON_KINDS.flatMap((kind) => [kind, mapIconId(kind)]);
+  // The spread tuple is not assignable to the fixed-arity `match` type.
+  return [
+    "match",
+    ["get", "kind"],
+    ...pairs,
+    mapIconId(FALLBACK_PLACE_ICON),
+  ] as unknown as ExpressionSpecification;
+}
+
 export function placeKindColor(kind: string): string {
   return PLACE_KIND_COLORS[kind] ?? UNKNOWN_KIND_COLOR;
 }
