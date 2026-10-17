@@ -29,10 +29,10 @@ import {
 import { loadMapIcons } from "../lib/map-icons";
 import {
   BASEMAP_STYLE_URLS,
+  basemapPaintOverrides,
   MAP_PALETTES,
   MIN_PLACE_RICHNESS,
   START_VIEW,
-  waterPaintOverrides,
 } from "../lib/map-style";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
@@ -107,8 +107,8 @@ export function SawaMap({
   );
   const theme = useTheme();
   const palette = MAP_PALETTES[theme];
-  const waterOverrides = useMemo(() => waterPaintOverrides(palette), [palette]);
-  useBasemapOverrides(mapRef, isLoaded, waterOverrides);
+  const basemapOverrides = useMemo(() => basemapPaintOverrides(palette), [palette]);
+  useBasemapOverrides(mapRef, isLoaded, basemapOverrides);
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
