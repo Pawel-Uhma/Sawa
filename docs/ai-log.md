@@ -3163,3 +3163,49 @@
 > Na 3000 jest weddelia, napraw to
 
 **AI:** Port 3000 zajmuje dev server Weddelii, więc Sawa web chodzi na :3001. Dopisałem localhost:3001 do CORS_ORIGINS w lokalnym apps/api/.env.local (poza gitem) i zrestartowałem web i api.
+
+### 2026-10-17 · Pawel
+
+> nie robilem nigdy nic z AI audio - przeprowadz mnie poprzez rozwiazania dostepne - ma miec plynny jezyk polski, nie musi miec customowego glosu, moze byc lokalnie lub po api , podaj koszty po api
+
+**AI:** Porównanie TTS z polskim: ElevenLabs, Gemini TTS, OpenAI, Azure, Google Chirp, a lokalnie Piper, XTTS i Web Speech, z kosztem za minutę audio. Bez zmian w plikach.
+
+> dobra idziemy w elevenlabs - przygotuj mi artefakt do wyboru wszystkiego, powiedz co mam robic i gdzie
+
+**AI:** Pawel wybrał ElevenLabs. Zrobiłem prywatny artefakt „Głos Sawy w ElevenLabs” z 8 krokami (konto, plan Starter, głos z Voice Library, klucz z ograniczeniami w apps/api/.env.local i Railway), wyborem modelu, głosu, ustawień i formatu, kalkulatorem kredytów i konfiguracją do skopiowania dla R4 (T-43).
+
+### 2026-10-17 13:03 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 10 ++++++++++
+>  1 file changed, 10 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index fc2009a..37eead7 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -3163,3 +3163,13 @@
+>  > Na 3000 jest weddelia, napraw to
+>  
+>  **AI:** Port 3000 zajmuje dev server Weddelii, więc Sawa web chodzi na :3001. Dopisałem localhost:3001 do CORS_ORIGINS w lokalnym apps/api/.env.local (poza gitem) i zrestartowałem web i api.
+> +
+> +### 2026-10-17 · Pawel
+> +
+> +> nie robilem nigdy nic z AI audio - przeprowadz mnie poprzez rozwiazania dostepne - ma miec plynny jezyk polski, nie musi miec customowego glosu, moze byc lokalnie lub po api , podaj koszty po api
+> +
+> +**AI:** Porównanie TTS z polskim: ElevenLabs, Gemini TTS, OpenAI, Azure, Google Chirp, a lokalnie Piper, XTTS i Web Speech, z kosztem za minutę audio. Bez zmian w plikach.
+> +
+> +> dobra idziemy w elevenlabs - przygotuj mi artefakt do wyboru wszystkiego, powiedz co mam robic i gdzie
+> +
+> +**AI:** Pawel wybrał ElevenLabs. Zrobiłem prywatny artefakt „Głos Sawy w ElevenLabs” z 8 krokami (konto, plan Starter, głos z Voice Library, klucz z ograniczeniami w apps/api/.env.local i Railway), wyborem modelu, głosu, ustawień i formatu, kalkulatorem kredytów i konfiguracją do skopiowania dla R4 (T-43).
+
