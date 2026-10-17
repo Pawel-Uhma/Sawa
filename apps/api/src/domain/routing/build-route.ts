@@ -239,6 +239,25 @@ export function buildWalkRoute({
 /** Walking paths run along street centrelines; places on the pavement are a few metres farther. */
 const PATH_SLACK_M = 10;
 
+/** Score of the places right by `path` (as `alongWalkPaths` collects them), each once. */
+export function scoreAlongPath(
+  path: LngLat[],
+  places: Iterable<PlacePoint>,
+  interests: ReadonlySet<string>,
+  prefs?: ScorePrefs,
+): number {
+  const cumDistM = cumulativeDistancesM(path);
+  const bbox = bboxAround(path, WALK_LARGE_VISIBLE_RADIUS_M + PATH_SLACK_M);
+  let score = 0;
+  for (const place of places) {
+    if (!isInBbox(place.position, bbox)) continue;
+    const { distanceM } = projectOnPolyline(place.position, path, cumDistM);
+    if (distanceM > walkVisibleRadiusM(place) + PATH_SLACK_M) continue;
+    score += scorePlace(place, distanceM, interests, prefs);
+  }
+  return score;
+}
+
 export type AlongPathsInput = {
   placesById: Map<string, PlacePoint>;
   interests: ReadonlySet<string>;

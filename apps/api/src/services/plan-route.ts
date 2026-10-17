@@ -13,15 +13,31 @@ import {
   alongWalkPaths,
   buildRoute,
   buildWalkRoute,
+  scoreAlongPath,
 } from "../domain/routing/build-route";
 import { DEFAULT_FASTEST_OPTIONS, planFastest } from "../domain/routing/fastest";
+import { cumulativeDistancesM } from "../domain/routing/geometry";
 import { computePlaceHits } from "../domain/routing/place-hits";
 import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
 import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
 import { shiftRide } from "../domain/routing/shift-ride";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
-import { placesAlong, planWalk } from "../domain/routing/walk-tour";
+import {
+  DEFAULT_WALK_OPTIONS,
+  isLoop,
+  LOOP_TIME_SLACK,
+  loopObjective,
+  placesAlong,
+  planSquareLoop,
+  planSquareLoops,
+  planWalk,
+  polylineM,
+  resizeLoop,
+  squareness,
+  type Walk,
+  type WalkInput,
+} from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
 import type {
   DepartureSource,
@@ -48,6 +64,15 @@ const CACHE_SIZE = 20;
 const PLACES_TTL_MS = 10 * 60_000;
 /** After a failed fetch (fallback in use) Supabase is retried sooner. */
 const RETRY_TTL_MS = 60_000;
+/** A loop walk's measured detour factor is kept within these (a bad path should not shrink it). */
+const LOOP_DETOUR_MIN = 1;
+const LOOP_DETOUR_MAX = 2;
+/** A loop walk's real path this close (share) to the budget is not planned again. */
+const LOOP_PATH_SLACK = LOOP_TIME_SLACK;
+/** Most times a loop walk is planned again with the detour measured on its path. */
+const LOOP_REPLANS = 2;
+/** Different loops measured on real paths at first (requests to the walk router at once). */
+const LOOP_CANDIDATES = 3;
 /** A tram covers ~15 km/h on average; a ride rarely gets farther than this from the origin. */
 const reachKm = (durationMin: number) => Math.min(20, Math.max(4, durationMin * 0.15));
 
@@ -303,6 +328,71 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
     return alongWalkPaths(route, paths, along);
   }
 
+  /**
+   * A walk; a loop is chosen on real paths. The `LOOP_CANDIDATES` best squares are measured on
+   * the paths drawn through them. When none is within `LOOP_PATH_SLACK` of the budget, the
+   * closest has its bare corners moved (the places at its corners stay), or, with none, the
+   * square is planned again with the detour measured. Of the loops measured within the slack,
+   * the best by places along its real path and shape is taken (`loopObjective`; else the one
+   * closest to the budget), with times as long as its path.
+   */
+  async function walkFor(input: WalkInput): Promise<Walk | null> {
+    const source = deps.walkPaths;
+    if (!isLoop(input.origin, input.end) || !source) return planWalk(input);
+    type Measured = { walk: Walk; pathSec: number; pathM: number; score: number };
+    const measure = async (walk: Walk): Promise<Measured | undefined> => {
+      if (walk.waypoints.length <= 2) return undefined;
+      const path = await source.path(walk.waypoints);
+      if (!path) return undefined;
+      const pathM = cumulativeDistancesM(path).at(-1) ?? 0;
+      const pathSec = pathM / DEFAULT_WALK_OPTIONS.walkSpeedMps;
+      const score = scoreAlongPath(path, input.places, input.interests, input.prefs);
+      return { walk, pathSec, pathM, score };
+    };
+    const off = (m: Measured) => Math.abs(m.pathSec / input.budgetSec - 1);
+    const closest = (all: Measured[]) =>
+      all.reduce<Measured | undefined>((a, b) => (!a || off(b) < off(a) ? b : a), undefined);
+
+    const first = planSquareLoops(input, {}, LOOP_CANDIDATES);
+    const measured = (await Promise.all(first.map(measure))).filter(
+      (m): m is Measured => m !== undefined,
+    );
+    for (let i = 0; i < LOOP_REPLANS && !measured.some((m) => off(m) <= LOOP_PATH_SLACK); i++) {
+      const near = closest(measured);
+      if (!near) break;
+      const { walk } = near;
+      const straightM = polylineM(walk.waypoints);
+      const detour = Math.min(LOOP_DETOUR_MAX, Math.max(LOOP_DETOUR_MIN, near.pathM / straightM));
+      const next =
+        resizeLoop(
+          input,
+          walk,
+          polylineM(walk.corners ?? walk.waypoints) / (near.pathSec / input.budgetSec),
+        ) ?? planSquareLoop(input, { detourFactor: detour });
+      const m = await measure(next);
+      if (!m) break;
+      measured.push(m);
+    }
+
+    const value = (m: Measured) =>
+      loopObjective(m.score, squareness((m.walk.corners ?? m.walk.waypoints).slice(0, -1)), off(m));
+    const fitting = measured.filter((m) => off(m) <= LOOP_PATH_SLACK);
+    const best = fitting.length
+      ? fitting.reduce((a, b) => (value(b) > value(a) ? b : a))
+      : closest(measured);
+    // Times along the walk as long as the path drawn.
+    return best ? withDetour(best.walk, best.pathSec / best.walk.elapsedSec) : (first[0] ?? null);
+  }
+
+  /** `walk` with its times stretched by `k` (a path longer than estimated). */
+  function withDetour(walk: Walk, k: number): Walk {
+    return {
+      ...walk,
+      elapsedSec: walk.elapsedSec * k,
+      places: walk.places.map((p) => ({ ...p, etaSec: p.etaSec * k })),
+    };
+  }
+
   /** Plans with straight walking legs, then `drawn` puts them on real paths. */
   async function planRoute(request: PlanRouteRequest, now: Date): Promise<Route> {
     const { hitsByPattern, placesById } = await prepare(
@@ -332,7 +422,7 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
           : request.destination
             ? (haversineM(request.origin, request.destination) * walkDetourFactor) / walkSpeedMps
             : 0;
-      const walk = planWalk({
+      const walk = await walkFor({
         places: [...placesById.values()],
         origin: request.origin,
         end: request.returnToStart ? request.origin : request.destination,
@@ -416,7 +506,7 @@ function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePl
     // past places competes with the ride (a ride counts only if it fits the time).
     // Picked "transit" skips this; no pick (auto) walks only under WALK_UNDER_MIN.
     if (request.travel === undefined && request.durationMin < WALK_UNDER_MIN) {
-      const walk = planWalk({
+      const walk = await walkFor({
         places: [...placesById.values()],
         origin: request.origin,
         end: request.returnToStart ? request.origin : request.destination,

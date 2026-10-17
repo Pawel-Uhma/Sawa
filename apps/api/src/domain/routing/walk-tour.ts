@@ -25,11 +25,8 @@ export type WalkOptions = {
   maxBudgetShare: number;
   /** Cost of walking back along the way already walked, per budget share (see beam search). */
   backtrackPenalty: number;
-  /**
-   * Value of a loop's shape (`roundness`, 0–1): a walk that comes back around, not out and
-   * back along the same or a parallel street. Loops only.
-   */
-  loopRoundnessBonus: number;
+  /** Turns of a loop's square tried (see `planSquareLoop`). */
+  squareDirections: number;
 };
 
 export const DEFAULT_WALK_OPTIONS: WalkOptions = {
@@ -40,7 +37,7 @@ export const DEFAULT_WALK_OPTIONS: WalkOptions = {
   maxCandidates: 40,
   maxBudgetShare: 1.1,
   backtrackPenalty: 2,
-  loopRoundnessBonus: 2,
+  squareDirections: 16,
 };
 
 export type Walk = {
@@ -52,6 +49,8 @@ export type Walk = {
   score: number;
   /** The place the walk ends at, when it has no fixed end. */
   lastPlaceId?: string;
+  /** A loop's square: origin, three corners, origin (`waypoints` adds the places it bends through). */
+  corners?: LatLng[];
 };
 
 type State = Walk & {
@@ -108,32 +107,6 @@ export const LOOP_END_M = 50;
 /** Whether a walk from `origin` to `end` is a loop (it comes back to the start). */
 export function isLoop(origin: LatLng, end: LatLng | undefined): boolean {
   return end !== undefined && haversineM(origin, end) <= LOOP_END_M;
-}
-
-/**
- * How round the walk through `points` is, closed back to the first point: 4π·area / perimeter²
- * (isoperimetric quotient), 1 for a circle, about 0.8 for a square, 0 for out and back along
- * one line. A loop that comes back a street over (a "lollipop") encloses little and scores low,
- * though no stretch of it is walked twice.
- */
-export function roundness(points: LatLng[]): number {
-  const first = points[0];
-  if (!first || points.length < 3) return 0;
-  const kx = M_PER_DEG_LAT * Math.cos((first.lat * Math.PI) / 180);
-  const toXY = (p: LatLng) => ({
-    x: (p.lng - first.lng) * kx,
-    y: (p.lat - first.lat) * M_PER_DEG_LAT,
-  });
-  let twiceArea = 0;
-  let perimeterM = 0;
-  points.forEach((p, i) => {
-    const a = toXY(p);
-    const b = toXY(points[(i + 1) % points.length] as LatLng);
-    twiceArea += a.x * b.y - b.x * a.y;
-    perimeterM += Math.hypot(b.x - a.x, b.y - a.y);
-  });
-  if (perimeterM === 0) return 0;
-  return Math.min(1, (2 * Math.PI * Math.abs(twiceArea)) / perimeterM ** 2);
 }
 
 /** A turn back this close (degrees) to the way just walked goes back along the same street. */
@@ -263,12 +236,272 @@ export function walkThrough(
 }
 
 /**
- * A short sightseeing walk: beam search over places near the origin, walking straight from
+ * A short sightseeing walk. A loop (`end` at the origin) is a square, see `planSquareLoop`;
+ * other walks go from place to place, see `planBeamWalk`.
+ */
+export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): Walk | null {
+  return isLoop(input.origin, input.end)
+    ? planSquareLoop(input, options)
+    : planBeamWalk(input, options);
+}
+
+/** A loop's square is not drawn smaller than this (shorter walks stay at the start). */
+const MIN_SQUARE_SIDE_M = 20;
+/** A place this far (share of the side) from a corner of the square may stand in for it. */
+const CORNER_REACH = 0.4;
+/** Best places tried at each corner (the bare corner is tried too). */
+const CORNER_PLACES = 3;
+/**
+ * Sizes of the square tried, as shares of the side that fits the budget: smaller squares leave
+ * time for bending through places by the sides.
+ */
+const SQUARE_SCALES = [1, 0.85, 0.7];
+/**
+ * Loops whose time is off the budget by more than this share are not taken. Loose: the shape
+ * and the places matter more than the exact time.
+ */
+export const LOOP_TIME_SLACK = 0.25;
+/** Cost of a loop's time off the budget, per budget share. */
+const LOOP_TIME_PENALTY = 1;
+/** Value of a loop's squareness (0–1), of its corners without the bends through places. */
+const LOOP_SHAPE_BONUS = 4;
+/** Loops less square than this go back too close to the way out. */
+const MIN_SQUARENESS = 0.7;
+
+/**
+ * How good a loop is: the places it passes, then its shape (`squareness` of its corners), with
+ * a little for its time off the budget (share).
+ */
+export function loopObjective(score: number, shape: number, offBudget: number): number {
+  return score + LOOP_SHAPE_BONUS * shape - LOOP_TIME_PENALTY * offBudget;
+}
+
+/** Length in metres of the walk through `points`. */
+export function polylineM(points: LatLng[]): number {
+  return points.reduce(
+    (sum, p, i) => (i === 0 ? 0 : sum + haversineM(points[i - 1] as LatLng, p)),
+    0,
+  );
+}
+
+/**
+ * How close the closed walk through `points` is to a square: 4π·area / perimeter²
+ * (isoperimetric quotient) over a square's π/4, capped at 1. Zero for out and back along one
+ * line, low for a loop back along the parallel street.
+ */
+export function squareness(points: LatLng[]): number {
+  const first = points[0];
+  if (!first || points.length < 3) return 0;
+  const kx = M_PER_DEG_LAT * Math.cos((first.lat * Math.PI) / 180);
+  let twiceArea = 0;
+  for (let i = 0; i < points.length; i++) {
+    const a = points[i] as LatLng;
+    const b = points[(i + 1) % points.length] as LatLng;
+    twiceArea +=
+      (a.lng - first.lng) * kx * (b.lat - first.lat) * M_PER_DEG_LAT -
+      (b.lng - first.lng) * kx * (a.lat - first.lat) * M_PER_DEG_LAT;
+  }
+  const perimeterM = polylineM([...points, first]);
+  if (perimeterM === 0) return 0;
+  return Math.min(1, (2 * Math.PI * Math.abs(twiceArea)) / perimeterM ** 2 / (Math.PI / 4));
+}
+
+/**
+ * A loop as a square of places: the walk goes from the origin through three interesting places
+ * standing near the other corners of a square and back, so it comes back around and never along
+ * the way out. The square's side fits the budget (four sides × detour factor at walking speed;
+ * `SQUARE_SCALES` also tries smaller ones). For each of `squareDirections` turns, the best
+ * places near each corner (or the bare corner, where there is none) are combined, each side is
+ * bent through the most interesting places near it (`loopThrough`), and the loop taken has the
+ * best places passed, its time within `LOOP_TIME_SLACK` of the budget and corners close to a
+ * square. On real paths the places are collected again along the path drawn.
+ */
+export function planSquareLoop(input: WalkInput, options: Partial<WalkOptions> = {}): Walk {
+  return planSquareLoops(input, options, 1)[0] as Walk;
+}
+
+/** Loops this close (share of the side) at every corner count as the same loop. */
+const SAME_LOOP_SHARE = 0.3;
+
+/**
+ * The `count` best loops of `planSquareLoop`, best first, each with a corner away from those of
+ * the better ones (`SAME_LOOP_SHARE`); at least one.
+ */
+export function planSquareLoops(
+  input: WalkInput,
+  options: Partial<WalkOptions>,
+  count: number,
+): Walk[] {
+  const opts = { ...DEFAULT_WALK_OPTIONS, ...options };
+  const { origin, budgetSec } = input;
+  const secPerM = opts.detourFactor / opts.walkSpeedMps;
+  const fullSideM = budgetSec / secPerM / 4;
+  if (fullSideM < MIN_SQUARE_SIDE_M) {
+    return [{ waypoints: [origin, origin], places: [], elapsedSec: 0, score: 0 }];
+  }
+  const kx = M_PER_DEG_LAT * Math.cos((origin.lat * Math.PI) / 180);
+  const offset = (p: LatLng, eastM: number, northM: number): LatLng => ({
+    lat: p.lat + northM / M_PER_DEG_LAT,
+    lng: p.lng + eastM / kx,
+  });
+  // The farthest corner is √2 × side away, its places up to `CORNER_REACH` × side farther.
+  const nearby = input.places.filter(
+    (p) => haversineM(origin, p.position) <= 2 * fullSideM + WALK_DETOUR_M,
+  );
+  const value = (p: PlacePoint) => scorePlace(p, 0, input.interests, input.prefs);
+
+  /** The three corners after the origin: first side `angle` from east, then left turns. */
+  const corners = (angle: number, sideM = fullSideM): LatLng[] => {
+    const [ux, uy] = [Math.cos(angle) * sideM, Math.sin(angle) * sideM];
+    const c1 = offset(origin, ux, uy);
+    return [c1, offset(c1, -uy, ux), offset(origin, -uy, ux)];
+  };
+  /** The best places that may stand in for `corner`, then the bare corner. */
+  const standIns = (corner: LatLng, sideM: number): LatLng[] =>
+    nearby
+      .filter((p) => haversineM(corner, p.position) <= CORNER_REACH * sideM)
+      .sort((a, b) => value(b) - value(a) || a.id.localeCompare(b.id))
+      .slice(0, CORNER_PLACES)
+      .map((p) => p.position)
+      .concat([corner]);
+  const found: { walk: Walk; objective: number }[] = [];
+  for (const scale of SQUARE_SCALES) {
+    const sideM = scale * fullSideM;
+    for (let i = 0; i < opts.squareDirections; i++) {
+      const angle = (2 * Math.PI * i) / opts.squareDirections;
+      const [c1, c2, c3] = corners(angle, sideM).map((c) => standIns(c, sideM)) as [
+        LatLng[],
+        LatLng[],
+        LatLng[],
+      ];
+      for (const p1 of c1) {
+        for (const p2 of c2) {
+          for (const p3 of c3) {
+            const square = [origin, p1, p2, p3, origin];
+            const shape = squareness(square.slice(0, 4));
+            if (shape < MIN_SQUARENESS) continue;
+            // Bending through places only makes it longer.
+            if (polylineM(square) * secPerM > (1 + LOOP_TIME_SLACK) * budgetSec) continue;
+            const walk = loopThrough(input, square, opts, nearby);
+            const off = Math.abs(walk.elapsedSec - budgetSec) / budgetSec;
+            if (off > LOOP_TIME_SLACK) continue;
+            const objective = loopObjective(walk.score, shape, off);
+            found.push({ walk, objective });
+          }
+        }
+      }
+    }
+  }
+  found.sort((a, b) => b.objective - a.objective);
+  const picked: Walk[] = [];
+  const sameAs = (a: Walk, b: Walk) =>
+    (a.corners ?? []).every(
+      (c, i) => haversineM(c, (b.corners ?? [])[i] as LatLng) <= SAME_LOOP_SHARE * fullSideM,
+    );
+  for (const { walk } of found) {
+    if (picked.length >= count) break;
+    if (!picked.some((p) => sameAs(p, walk))) picked.push(walk);
+  }
+  // The bare square always fits; kept for safety against rounding.
+  return picked.length > 0
+    ? picked
+    : [loopThrough(input, [origin, ...corners(0), origin], opts, nearby)];
+}
+
+/** Places in the box around `a`–`b` padded by `WALK_DETOUR_M` (all a walk between them can pass). */
+function placesByBox(places: PlacePoint[], a: LatLng, b: LatLng): PlacePoint[] {
+  const padLat = WALK_DETOUR_M / M_PER_DEG_LAT;
+  const padLng = padLat / Math.cos((a.lat * Math.PI) / 180);
+  const [minLat, maxLat] = [Math.min(a.lat, b.lat) - padLat, Math.max(a.lat, b.lat) + padLat];
+  const [minLng, maxLng] = [Math.min(a.lng, b.lng) - padLng, Math.max(a.lng, b.lng) + padLng];
+  return places.filter(
+    ({ position: p }) => p.lat >= minLat && p.lat <= maxLat && p.lng >= minLng && p.lng <= maxLng,
+  );
+}
+
+/**
+ * A loop round `corners` (origin, three corners, origin), each side bent through the most
+ * interesting places near it (see `walkThrough`), with the places passed in walking order.
+ */
+function loopThrough(
+  input: WalkInput,
+  corners: LatLng[],
+  opts: WalkOptions,
+  places: PlacePoint[] = input.places,
+): Walk {
+  const secPerM = opts.detourFactor / opts.walkSpeedMps;
+  const skip = new Set<string>();
+  const waypoints: LatLng[] = [corners[0] as LatLng];
+  const passed: CollectedPlace[] = [];
+  let sec = 0;
+  for (let i = 1; i < corners.length; i++) {
+    const [from, to] = [corners[i - 1] as LatLng, corners[i] as LatLng];
+    const side = walkThrough(placesByBox(places, from, to), from, to, secPerM, {
+      interests: input.interests,
+      prefs: input.prefs,
+      skip,
+    });
+    for (const g of side.places.sort((a, b) => a.etaSec - b.etaSec)) {
+      skip.add(g.placeId);
+      passed.push({ ...g, etaSec: sec + g.etaSec });
+    }
+    waypoints.push(...side.waypoints.slice(1));
+    sec += side.sec;
+  }
+  const score = passed.reduce((sum, p) => sum + p.score, 0);
+  return { waypoints, corners, places: passed, elapsedSec: sec, score };
+}
+
+/** Steps of the search for how far bare corners move (see `resizeLoop`). */
+const RESIZE_STEPS = 20;
+/** A resized loop off the length asked by more than this share is not taken. */
+const RESIZE_SLACK = 0.03;
+
+/**
+ * `loop` with its bare corners (those with no place) moved towards or away from the origin so
+ * its straight length is about `lengthM`; the places at its corners stay. Undefined when it has
+ * no bare corner to move, or moving them (to half or twice as far) does not get there.
+ */
+export function resizeLoop(
+  input: WalkInput,
+  loop: Walk,
+  lengthM: number,
+  options: Partial<WalkOptions> = {},
+): Walk | undefined {
+  const opts = { ...DEFAULT_WALK_OPTIONS, ...options };
+  const { origin } = input;
+  const atPlace = new Set(input.places.map((p) => `${p.position.lat},${p.position.lng}`));
+  const inner = (loop.corners ?? loop.waypoints).slice(1, -1);
+  const isBare = inner.map((w) => !atPlace.has(`${w.lat},${w.lng}`));
+  if (!isBare.some(Boolean)) return undefined;
+  const scaled = (k: number) => [
+    origin,
+    ...inner.map((w, i) =>
+      isBare[i]
+        ? { lat: origin.lat + k * (w.lat - origin.lat), lng: origin.lng + k * (w.lng - origin.lng) }
+        : w,
+    ),
+    origin,
+  ];
+  // The length grows with k: bisect between half and twice the loop.
+  let [lo, hi] = [0.5, 2];
+  for (let i = 0; i < RESIZE_STEPS; i++) {
+    const k = (lo + hi) / 2;
+    if (polylineM(scaled(k)) < lengthM) lo = k;
+    else hi = k;
+  }
+  const corners = scaled((lo + hi) / 2);
+  if (Math.abs(polylineM(corners) / lengthM - 1) > RESIZE_SLACK) return undefined;
+  return loopThrough(input, corners, opts);
+}
+
+/**
+ * A walk from place to place: beam search over places near the origin, walking straight from
  * one to the next (× detour factor). Places right by each segment count, scored like
  * on a ride. With `end` the walk finishes there; the result fits `maxBudgetShare` × budget.
  * Returns null when not even the walk to the end fits.
  */
-export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): Walk | null {
+export function planBeamWalk(input: WalkInput, options: Partial<WalkOptions> = {}): Walk | null {
   const opts = { ...DEFAULT_WALK_OPTIONS, ...options };
   const maxSec = opts.maxBudgetShare * input.budgetSec;
   const secBetween = (a: LatLng, b: LatLng) =>
@@ -330,13 +563,10 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
   }
 
   const finish = (s: State) => (input.end ? walkTo(s, input.end, "end") : s);
-  // A loop's shape counts as if it were already closed back to the origin.
-  const roundnessBonus = isLoop(input.origin, input.end) ? opts.loopRoundnessBonus : 0;
   const objective = (s: State) =>
     s.score -
     Math.abs(s.elapsedSec - input.budgetSec) / input.budgetSec -
-    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec +
-    (roundnessBonus > 0 ? roundnessBonus * roundness(s.waypoints) : 0);
+    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec;
   const byObjective = (a: State, b: State) =>
     objective(b) - objective(a) || a.key.localeCompare(b.key);
 
