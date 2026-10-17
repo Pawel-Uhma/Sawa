@@ -54,6 +54,31 @@ describe("createOsrmWalkPathSource", () => {
     expect(url).toContain("/routed-foot/route/v1/driving/21.004900,52.224000;21.012200,52.229700?");
   });
 
+  it("keeps at most two requests in flight (the public server answers 429 to bursts)", async () => {
+    let inFlight = 0;
+    let most = 0;
+    const fetchMock = vi.fn(async () => {
+      inFlight++;
+      most = Math.max(most, inFlight);
+      await new Promise((resolve) => setTimeout(resolve, 5));
+      inFlight--;
+      return Response.json(
+        osrm([
+          [21.0049, 52.224],
+          [21.0122, 52.2297],
+        ]),
+      );
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    const source = createOsrmWalkPathSource("https://osrm.test/routed-foot");
+
+    const ends = [0, 1, 2, 3, 4].map((i) => ({ lat: 52.2297, lng: 21.0122 + i / 1000 }));
+    const paths = await Promise.all(ends.map((end) => source.path([from, end])));
+    expect(paths.every(Boolean)).toBe(true);
+    expect(fetchMock).toHaveBeenCalledTimes(5);
+    expect(most).toBe(2);
+  });
+
   it("returns undefined when the router fails, and asks again next time", async () => {
     const fetchMock = vi.fn(async () => new Response("busy", { status: 503 }));
     vi.stubGlobal("fetch", fetchMock);

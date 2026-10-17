@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 21:40 (Szczepan, z agentem R1): **spacer wybierany po prawdziwych ścieżkach (T-126).** Planer daje 4 warianty, każdy dostaje ścieżkę z OSRM, wygrywa ten, który mija najwięcej, mieści się w czasie i nie wraca tą samą ulicą. **Uwaga dla wszystkich:** FOSSGIS (`routing.openstreetmap.de`) blokuje IP po serii ok. 10 zapytań naraz; IP sali jest teraz zablokowane (lokalnie spacery wychodzą prostymi liniami), produkcja działa. Adapter puszcza najwyżej 2 zapytania naraz. Nie sprawdzone na żywym OSRM.
+
 - 20:45 (Szczepan, z agentem R1): **punkty na trasie pieszej leżą przy narysowanej ścieżce.** Planer liczy miejsca przy prostej między punktami, a mapa rysuje ścieżkę OSRM (np. objazd torów przy Dw. Gdańskim), więc numery wypadały kwartał od trasy. `alongWalkPaths` (`build-route.ts`) zbiera miejsca odcinków pieszych ponownie wzdłuż prawdziwej ścieżki (promień widoczności + 10 m), czasy bez zmian. Część T-126; sam planer dalej wybiera kolejność po prostej.
 
 - 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`.

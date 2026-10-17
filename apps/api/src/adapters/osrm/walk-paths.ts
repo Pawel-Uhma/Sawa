@@ -6,6 +6,8 @@ const TIMEOUT_MS = 3_000;
 const CACHE_SIZE = 200;
 /** OSRM snaps points to the nearest path; farther than this the real point is added to the line. */
 const SNAP_GAP_M = 2;
+/** FOSSGIS answers 429 to more than ~8 requests at once; the planner compares walks in parallel. */
+const MAX_IN_FLIGHT = 2;
 
 type LngLat = [number, number];
 
@@ -42,6 +44,21 @@ export function parseWalkPath(body: unknown, from: LatLng, to: LatLng): LngLat[]
  */
 export function createOsrmWalkPathSource(baseUrl: string): WalkPathSource {
   const cache = new Map<string, Promise<LngLat[] | undefined>>();
+  let inFlight = 0;
+  const waiting: (() => void)[] = [];
+
+  /** Runs `request` when fewer than `MAX_IN_FLIGHT` are running; a finished one hands its slot on. */
+  async function limited<T>(request: () => Promise<T>): Promise<T> {
+    if (inFlight < MAX_IN_FLIGHT) inFlight++;
+    else await new Promise<void>((resolve) => waiting.push(resolve));
+    try {
+      return await request();
+    } finally {
+      const next = waiting.shift();
+      if (next) next();
+      else inFlight--;
+    }
+  }
 
   return {
     path(points) {
@@ -54,12 +71,12 @@ export function createOsrmWalkPathSource(baseUrl: string): WalkPathSource {
 
       // FOSSGIS serves each profile under its own path; "driving" is just the API's name.
       const url = `${baseUrl}/route/v1/driving/${coords}?overview=full&geometries=geojson&steps=false`;
-      const path = fetch(url, {
-        headers: { "User-Agent": "sawa-api (Warsaw Open Data Hackathon)" },
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      })
-        .then(async (res) => (res.ok ? parseWalkPath(await res.json(), first, last) : undefined))
-        .catch(() => undefined);
+      const path = limited(() =>
+        fetch(url, {
+          headers: { "User-Agent": "sawa-api (Warsaw Open Data Hackathon)" },
+          signal: AbortSignal.timeout(TIMEOUT_MS),
+        }).then(async (res) => (res.ok ? parseWalkPath(await res.json(), first, last) : undefined)),
+      ).catch(() => undefined);
       // Failures are not cached, so the next plan asks again.
       path.then((p) => p || cache.delete(coords));
       cache.set(coords, path);
