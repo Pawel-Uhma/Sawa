@@ -1,11 +1,11 @@
 # Historia okolicy 42 Warsaw (promień 1 km)
 
-Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czyste (Wola), 52.2359, 20.9789**. Zebrane 15–16.10.2026 w trzech rundach. Rundy 1–2 (do 400 m): agenci AI Haiku szukali w sieci. Runda 3 (do 1 km): skrypty pobrały wszystko, co ma współrzędne (Wikipedia, Wikidata, OSM, Commons, warszawa1939.pl, Google Places), a 9 agentów Haiku wyciągało fakty wyłącznie z pobranych tekstów. Całość scalona i sprawdzona automatycznie.
+Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czyste (Wola), 52.2359, 20.9789**. Zebrane 17.10.2026 w trzech rundach. Rundy 1–2 (do 400 m): agenci AI Haiku szukali w sieci. Runda 3 (do 1 km): skrypty pobrały wszystko, co ma współrzędne (Wikipedia, Wikidata, OSM, Commons, warszawa1939.pl, Google Places), a 9 agentów Haiku wyciągało fakty wyłącznie z pobranych tekstów. Całość scalona i sprawdzona automatycznie.
 
-## Ustalenia (15.10, Paweł)
+## Ustalenia (17.10, Paweł)
 
 - Jednostka to **punkt na mapie** z krótką historią. Sawa odzywa się, gdy jesteś blisko.
-- Format: **GeoJSON + Markdown**. 17.10 ładujemy GeoJSON do MapLibre bez przepisywania.
+- Format: **GeoJSON + Markdown**. 17.10 ładujemy GeoJSON do Mapbox bez przepisywania.
 - Treść: **fakty i ciekawostki ze źródłami**. Kwestie Sawy generuje LLM na żywo 17.10. Gotowych tekstów jej głosem nie piszemy (§4 ust. 3 regulaminu).
 - Dodatki: linki do zdjęć archiwalnych z licencjami, streszczenie po angielsku, dawne nazwy ulic, ludzie związani z miejscem.
 
@@ -73,19 +73,19 @@ Zbliżenie na 400 m: [mapa-historia.png](mapa-historia.png) (stan po rundzie 2).
 - **warszawa1939.pl: CC BY-NC.** Na hackathonie (niekomercyjnie) wolno, z podpisem. Przy komercjalizacji trzeba to zmienić.
 - **Google Places:** warunki Google pozwalają trzymać treści najwyżej 30 dni (bezterminowo tylko `place_id`). Po hackathonie dane z Google odświeżamy przez API albo usuwamy.
 
-## Runda 2 (16.10): co zadziałało, a co nie
+## Runda 2 (17.10): co zadziałało, a co nie
 
 - Najwięcej dało bezpośrednie pobranie kart z warszawa1939.pl: Rogatki Wolskie Kubickiego, kino Kometa, kamienica Machleida, szkoła przy Karolkowej z 1925 r., fabryka Philipsa, kamienica Węgiełka, przedwojenne zdjęcia.
 - Agenci Haiku przeszukujący blogi i prasę dali mało (2–16 rekordów na agenta): Warszawikia blokuje boty (HTTP 402), wiele artykułów to PDF-y, a Nominatim i Overpass zaczęły odrzucać zapytania przy kilku agentach naraz.
 - Odrzucone jako leżące poza 400 m mimo przypisania im przez agentów współrzędnych ulicy: Sąd na Lesznie, Leszno 13, brama i kładka przy Żelaznej, Koszary Mirowskie, kino „Czary”, przedwojenne Leszno 81–84 i 100. Pełna lista w `surowe/scalenie-log.txt`.
 
-## Runda 3 (16.10): promień 1 km
+## Runda 3 (17.10): promień 1 km
 
 - Źródła pobrane skryptami: 181 artykułów pl.wikipedii i 37 en z geotagiem w promieniu 1 km, 496 obiektów Wikidaty, 914 obiektów OSM (278 historycznych w pasie 400–1000 m), 3368 zdjęć z Commons (194 sprzed 1970), 112 kart warszawa1939.pl (34 w promieniu), 3011 miejsc z Google Places.
 - Agenci przetwarzali tylko lokalne teksty, bez internetu. Odrzucili 68 artykułów o firmach i urzędach, które mają tu tylko biuro.
 - Rekordy `osm-*` i `g-*` są automatyczne: mają nazwę i napis z tablicy, ale bez kontekstu. Rekordy `w1939-*` mają opis budynku z warszawa1939.pl i zdjęcia sprzed wojny. Położenie przedwojennych adresów przy Lesznie jest interpolowane (inna numeracja niż dziś).
 - Nowe mocne miejsca w pasie 400–1000 m: Gęsiówka, Archiwum Ringelbluma, Kładka Pamięci, Kamienica pod Zegarem, kościół św. Karola Boromeusza, Pałacyk Michla, Kolonia Wawelberga, Szpital Wolski, cmentarze ewangelickie, synagoga Icchaka Altera, Norblin, Browary Warszawskie, Fabryka Kamlera, Pałacyk Bogusławskiego.
 
-## Na 17.10
+## Jak użyć
 
-GeoJSON wczytujemy jako źródło MapLibre. Gdy użytkownik jest w promieniu ok. 50 m od punktu, LLM dostaje `fakty`, `ciekawostki` i `ludzie` tego punktu i układa z nich wypowiedź Sawy. Do pitchu: wszystkie dane pochodzą z otwartych źródeł (Wikipedia CC BY-SA, OSM ODbL, Commons), więc trzeba je podpisać w aplikacji.
+GeoJSON wczytujemy jako źródło Mapbox. Gdy użytkownik jest w promieniu ok. 50 m od punktu, LLM dostaje `fakty`, `ciekawostki` i `ludzie` tego punktu i układa z nich wypowiedź Sawy. Do pitchu: wszystkie dane pochodzą z otwartych źródeł (Wikipedia CC BY-SA, OSM ODbL, Commons), więc trzeba je podpisać w aplikacji.

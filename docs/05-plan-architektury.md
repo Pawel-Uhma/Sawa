@@ -10,18 +10,17 @@
 |---|---|---|
 | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
 | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
-| Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source |
-| Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache |
+| Mapa | **Mapbox GL** (`react-map-gl`) z własnym stylem Mapbox | Decyzja 17.10 (R3): własny styl, nie wygląd Google Maps. Token Mapbox w `.env.local`, nigdy w repo |
+| Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
 | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
-| Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
 | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
-| Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
-| Deploy | Vercel | Link do działającej aplikacji na pitchu |
+| Głos | ElevenLabs (ok. 0,50 zł za minutę audio, ok. 10 min miesięcznie za darmo, są polskie głosy); klucz `ELEVENLABS_KEY` w Railway | Wybrany 17.10; wystarczy na demo |
+| Deploy | Frontend na Vercel, backend na Railway | Link na pitchu pod darmową subdomeną `*.vercel.app`, bez kupowania domeny (ustalone 17.10) |
 
 ## Przepływ danych
 
 ```
-przeglądarka ──► /api/<zasób> (Next.js, serwer) ──► dane.um.warszawa.pl/api/action/<endpoint>
+przeglądarka ──► /api/<zasób> (backend na Railway) ──► dane.um.warszawa.pl/api/action/<endpoint>
                      │                                   (nagłówek Authorization: token)
                      └── cache w pamięci, TTL = częstotliwość odświeżania zbioru
                          (pojazdy 10 s, parkingi 1 min, powietrze i pogoda 10 min, reszta 1 h)
@@ -30,6 +29,8 @@ przeglądarka ──► /api/chat ──► LLM (Bielik) z narzędziami: szukaj_
 ```
 
 ## Planowana struktura (tworzymy 17.10)
+
+> **Zmiana 17.10:** backend (proxy `waw`, `chat`) idzie jako osobny serwis na Railway, nie jako route handlery na Vercelu. Struktura poniżej jest do przepisania, gdy R1 + R4 wybiorą framework serwisu.
 
 ```
 app/
@@ -53,7 +54,7 @@ docs/                      # to, co jest teraz
 npx create-next-app@latest app --ts --tailwind --eslint --app --src-dir=false --import-alias "@/*"
 cd app
 npx shadcn@latest init
-npm i maplibre-gl react-map-gl
+npm i mapbox-gl react-map-gl
 git init && gh repo create <nazwa-zespolu> --public --source=. --push
 ```
 
@@ -68,6 +69,9 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
 5. Deploy, zamrożenie zmian o 9:00, potem już tylko pitch
 
 ## Otwarte pytania
+
+- [x] Backend: Railway (17.10). Do ustalenia: framework serwisu i jak frontend go woła (CORS, URL w env)
+- [ ] Zasady pracy z repo: gałęzie, PR, kto merge'uje (może agent na GitHubie)
 
 - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
 - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token

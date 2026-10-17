@@ -1,0 +1,78 @@
+# Onboarding Sawy: analiza i projekt (R3, 17.10)
+
+Cel z PRD: kilka sekund, bo onboarding przejdą widzowie na sali. Po nim od razu mapa.
+
+## Co robią najlepsze onboardingi
+
+| Aplikacja | Co działa | Co bierzemy |
+|---|---|---|
+| Duolingo | Maskotka prowadzi rozmowę w dymku; pytania o cel i poziom przed kontem; jedno pytanie na ekran; pasek postępu | Sawa mówi w dymku i komentuje wybory; pytanie o znajomość miasta; pasek 3 kroków |
+| TikTok, Pinterest | Wybór zainteresowań z kafelków, po wyborze pojawiają się podobne | Kafelki z ikonami, etykieta „podobne” na kafelkach zamiast osobnej sekcji |
+| Spotify | Wybór artystów: duże cele dotykowe, natychmiastowa reakcja | Kafelek reaguje przy naciśnięciu (scale 0.95), ikona „podskakuje” po zaznaczeniu |
+| Headspace, Calm | Jedno spokojne pytanie, potem ekran „przygotowuję dla Ciebie” | Ekran „Układam Twoją Warszawę” z odhaczanymi liniami |
+| Revolut, Monzo | Fintechowa maskotka i materiały 3D, mało tekstu, duży przycisk na dole | Glossy 3D Sawa i ikony w tym samym stylu (obraz 32) |
+| Airbnb, Finch | Wartość przed rejestracją, personalizacja widoczna od razu | Bez logowania; na ekranie budowania widać, co wybrałeś |
+
+Wzorce, które się powtarzają:
+
+1. **Wartość przed wysiłkiem.** Pierwszy ekran mówi, co dostaniesz, i podaje koszt („3 pytania, ok. 15 sekund”).
+2. **Jedno pytanie na ekran, tapnięcia zamiast pisania.** Wybór jednokrotny przechodzi dalej sam po 320 ms.
+3. **Postać, która reaguje.** Dymek zmienia się po każdym wyborze („Dobry wybór! Może jeszcze architektura?”), więc odpowiedź ma widoczny skutek.
+4. **Personalizacja na końcu jest widoczna.** Ekran budowania powtarza wybory, zanim pokaże mapę (efekt „wykonanej pracy”).
+5. **Zawsze wyjście.** Wstecz na każdym pytaniu, „Pomiń” przy pytaniach opcjonalnych.
+
+## Porównanie z poprzednią wersją
+
+| Było | Jest |
+|---|---|
+| Ekran startowy z logo i jednym zdaniem | Powitanie z machającą Sawą, obietnica wartości i koszt w czasie |
+| Tylko wybór zainteresowań z tekstowych pigułek | 3 pytania: znajomość miasta, zainteresowania (ikony 3D), styl opowieści |
+| „Podobne” w osobnym pudełku pod listą | Koralowa etykieta „podobne” na kafelkach i podpowiedź w dymku Sawy |
+| Przejście od razu na mapę | Ekran „Układam Twoją Warszawę” (ok. 2,5 s, można pominąć) |
+| Animacje CSS (`.wejdz`) | Sprężyny `motion`, kierunkowe przejścia, przerywalne |
+
+## Przepływ
+
+| Krok | Sawa (poza, dymek) | Pytanie | Co użytkownik robi |
+|---|---|---|---|
+| 0. Powitanie | macha, „Cześć! Jestem Sawa, syrenka z herbu.” | „Opowiem Ci o mieście za oknem tramwaju.” | „Poznajmy się” |
+| 1. Znajomość | z mapą | Jak dobrze znasz Warszawę? Pierwszy raz / Trochę znam / Mieszkam tu | 1 tapnięcie, przejście samo; „Pomiń” |
+| 2. Zainteresowania | myśli, dymek podpowiada podobne | Co Cię ciekawi? 8 kafelków z ikonami, do 3 | 1–3 tapnięcia, „Dalej · 2 z 3” |
+| 3. Styl | mówi w sekrecie | Jak mam opowiadać? Krótko i z humorem / Z detalami / Same ciekawostki | 1 tapnięcie; „Pomiń” |
+| 4. Budowanie | radość | Układam Twoją Warszawę: 3 linie odhaczają się po kolei | czeka ok. 2,5 s albo „Pokaż mapę” |
+
+Nic się nie wpisuje z klawiatury. Minimum to 4 tapnięcia (powitanie, znajomość, jedno zainteresowanie i „Dalej”, styl).
+
+## Ruch (apple-design)
+
+- Wszystkie przejścia to sprężyny bez odbicia (`SPRING` z `lib/device.ts`: bounce 0, 0.45 s). Przerywalne: szybkie klikanie „Wstecz” i „Dalej” nie blokuje UI (`AnimatePresence mode="popLayout"`).
+- Kierunek: dalej wjeżdża z prawej, wstecz wraca tą samą drogą w lewo.
+- Sawa przy przejściu z powitania na pytania zmniejsza się i przesuwa w róg (`layout`), poza zmienia się przenikaniem ze skalą 0.92 → 1.
+- Dymek rośnie od ogonka (origin przy Sawie), bo to ona mówi.
+- Reakcja na naciśnięciu, nie na puszczeniu (`whileTap` scale 0.95–0.97); zaznaczenie to sprężynujący znaczek i lekki obrót ikony; wibracja 8 ms (Android).
+- Pasek postępu: segmenty wypełniają się sprężyną `scaleX`.
+- `prefers-reduced-motion`: same przenikania, bez przesunięć i skali; spinner stoi. `prefers-reduced-transparency`: tło bez rozmycia.
+- Fokus przechodzi na nagłówek nowego kroku (czytnik ekranu czyta pytanie), dymek ma `aria-live`.
+
+## Układ
+
+- Telefon: Sawa i dymek u góry, pytanie pod nimi, przycisk przy kciuku (przy zainteresowaniach przyklejony do dołu). 16 px marginesu.
+- Desktop (od `md`): dwie kolumny, po lewej duża Sawa z dymkiem, po prawej pytanie. Ten sam komponent, inne klasy.
+- Komponent to pełnoekranowa warstwa `fixed` z matowym szkłem nad mapą, więc mapa prześwituje i po onboardingu „wyjeżdża” spod spodu.
+
+## Grafiki (fal.ai, 17.10)
+
+Wszystkie w `apps/web/public/onboarding/` jako WebP z przezroczystym tłem (wycięte przez `fal-ai/birefnet/v2`).
+
+| Plik | Model | Prompt (skrót) |
+|---|---|---|
+| `sawa-macha`, `sawa-mapa`, `sawa-mysli`, `sawa-sekret`, `sawa-radosc` | `google/nano-banana-2.1/edit`, obraz 32 jako referencja | „Using this exact character (…) new pose: [macha / trzyma mapę / myśli z palcem przy brodzie / słuchawki i sekret / radość z rękami w górze]. Full body, pure white background.” |
+| 8 ikon zainteresowań (`war_uprising.webp` …) | `google/nano-banana-2.1/edit`, materiał i paleta z obrazu 32 | siatka 8 ikon: tarcza z mieczem, kamienica, koło zębate z kominem, kopuła, menora, kawa z rogalikiem, spray, popiersie z laurem |
+| `tram`, `first_time`, `know_a_bit`, `local` | jw. | tramwaj, walizka, mapa z pinezką, dom z kluczem |
+
+Koszt: 7 generacji nano-banana-2.1 (ok. 0,05–0,10 $ każda, szacunek) i 7 wycięć tła, razem ok. 0,40–0,80 $.
+
+## Otwarte
+
+- Pytania o znajomość miasta i styl opowieści zbieramy w `Profile` (`lib/onboarding.ts`), ale planer (R1) i prompty (R4) ich jeszcze nie czytają. Do decyzji R1 + R4: czy wchodzą do kontraktu `POST /v1/routes/plan`.
+- Lista 8 zainteresowań nadal czeka na potwierdzenie R3 + R2 (`stan.md`).

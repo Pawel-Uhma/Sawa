@@ -1,0 +1,112 @@
+/* Wspólne tokeny i elementy makiet Sawy (marka z docs/awatar/README.md) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fredoka:wght@600&display=block');
+
+:root {
+  --glebia: #17706F;
+  --glebia-ciemna: #0F5554;
+  --mieta: #8ED1B5;
+  --mieta-jasna: #DDF2E9;
+  --koral: #F2755F;
+  --tekst: #102B2A;
+  --tekst-2: #4C6462;
+  --tekst-3: #8A9C9A;
+  --tlo: #FFFFFF;
+  --tlo-2: #F4F6F5;
+  --noc: #0C2423;
+  --linia: rgba(16, 43, 42, .08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 390px; height: 844px; overflow: hidden; background: var(--tlo); }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: var(--tekst);
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.telefon { position: relative; width: 390px; height: 844px; overflow: hidden; }
+.mapa { position: absolute; inset: 0; }
+.maplibregl-ctrl-attrib, .maplibregl-ctrl-logo { display: none !important; }
+
+/* Pasek statusu i wskaźnik home */
+.status {
+  position: absolute; top: 0; left: 0; right: 0; height: 47px; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 30px 0 34px; font-weight: 600; font-size: 16px; letter-spacing: -.01em;
+}
+.status .ikony { display: flex; gap: 6px; align-items: center; }
+.status.jasny { color: #fff; }
+.home {
+  position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+  width: 134px; height: 5px; border-radius: 3px; background: var(--tekst); z-index: 60;
+}
+.home.jasny { background: rgba(255, 255, 255, .85); }
+
+.logo { font-family: 'Fredoka', sans-serif; font-weight: 600; color: var(--glebia); letter-spacing: -.01em; line-height: 1; }
+.logo i { font-style: normal; color: var(--koral); }
+
+/* Materiał: szkło na mapie */
+.szklo {
+  background: rgba(255, 255, 255, .74);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, .7);
+  box-shadow: 0 1px 2px rgba(16, 43, 42, .06), 0 8px 24px rgba(16, 43, 42, .10);
+}
+.szklo-ciemne {
+  background: rgba(12, 36, 35, .62);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.pill { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 14px; border-radius: 20px; font-weight: 600; font-size: 14px; }
+
+.przycisk {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  height: 56px; border-radius: 18px; width: 100%;
+  background: var(--glebia); color: #fff; font-weight: 700; font-size: 17px; letter-spacing: -.01em;
+  box-shadow: 0 6px 16px rgba(23, 112, 111, .28);
+}
+.przycisk.koral { background: var(--koral); box-shadow: 0 6px 18px rgba(242, 117, 95, .35); }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 13px;
+  border-radius: 17px; font-size: 13.5px; font-weight: 600; white-space: nowrap;
+  background: var(--tlo-2); color: var(--tekst-2);
+}
+.chip.wybrany { background: var(--mieta-jasna); color: var(--glebia-ciemna); }
+
+.etykieta { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--tekst-3); }
+
+/* Kropka lokalizacji */
+.ja { width: 22px; height: 22px; border-radius: 50%; background: var(--glebia); border: 4px solid #fff;
+  box-shadow: 0 0 0 10px rgba(23, 112, 111, .18), 0 2px 6px rgba(0, 0, 0, .25); }
+.ja.noc { background: var(--mieta); border-color: var(--noc); box-shadow: 0 0 0 12px rgba(142, 209, 181, .18), 0 0 24px rgba(142, 209, 181, .5); }
+
+/* Pinezka miejsca z podpisem */
+.pin { display: flex; align-items: center; gap: 6px; padding: 4px 10px 4px 4px; border-radius: 16px;
+  background: #fff; box-shadow: 0 4px 12px rgba(16, 43, 42, .16); font-size: 12.5px; font-weight: 700; white-space: nowrap; }
+.pin b { width: 22px; height: 22px; border-radius: 50%; background: var(--koral); display: grid; place-items: center; color: #fff; font-size: 11px; }
+
+.awatar { border-radius: 50%; object-fit: cover; background: var(--mieta-jasna); }
+
+/* Dolny pasek kart */
+.zakladki {
+  position: absolute; left: 20px; right: 20px; bottom: 28px; height: 64px; border-radius: 32px; z-index: 40;
+  display: flex; justify-content: space-around; align-items: center; padding: 0 8px;
+}
+.zakladki div { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11px; font-weight: 600; color: var(--tekst-3); width: 92px; }
+.zakladki div.aktywna { color: var(--glebia); }
+.zakladki svg { width: 24px; height: 24px; }
+
+/* Mgiełka pod paskiem statusu, gdy pod spodem jest mapa */
+.mgla { position: absolute; top: 0; left: 0; right: 0; height: 120px; z-index: 10; pointer-events: none;
+  background: linear-gradient(rgba(238, 243, 240, .95) 30%, rgba(238, 243, 240, 0)); }
+.mgla.noc { background: linear-gradient(rgba(12, 36, 35, .95) 30%, rgba(12, 36, 35, 0)); }
+
+/* Numerowany punkt opowieści na trasie */
+.nr { width: 26px; height: 26px; border-radius: 50%; background: var(--koral); color: #fff; border: 2.5px solid #fff;
+  display: grid; place-items: center; font-size: 12px; font-weight: 800; box-shadow: 0 3px 8px rgba(16,43,42,.25); }

@@ -29,6 +29,10 @@ Monorepo pnpm: `apps/web` (Next.js App Router, Tailwind, shadcn/ui, MapLibre →
 
 Przed PR: `pnpm typecheck && pnpm lint && pnpm test`. Nie commitujesz ani nie pushujesz bez polecenia człowieka.
 
+## Frontend
+
+Frontend (R3 i każdy UI) projektujemy inspirowany skillem `apple-design`: płynny, fizyczny ruch, przerywalne przejścia, czytelna typografia i restraint, z uwzględnieniem reduced motion.
+
 ## Styl
 
 Dokumentację piszesz po polsku, zwięźle. Commity bez przypisywania autorstwa Claude.

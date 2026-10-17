@@ -52,6 +52,7 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 | [02-analiza-wyzwan.md](02-analiza-wyzwan.md) | Porównanie trzech wyzwań |
 | [pitch/](pitch/) | Pitch deck i materiały wizualne |
 | [awatar/](awatar/) | Szkice awatara Sawy (do dyskusji, nie elementy projektu) |
+| [ui/](ui/README.md) | Zrzuty ekranu: propozycje UI/UX i wyniki pracy frontendu (R3) |
 
 **Dane i historia**
 

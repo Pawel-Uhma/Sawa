@@ -1,0 +1,32 @@
+/* Wspólny szkielet wariantu A (arkusz na mapie) */
+  .gora { position: absolute; top: 54px; left: 16px; right: 16px; display: flex; justify-content: space-between; z-index: 20; }
+  .gora .logo { font-size: 26px; padding: 0 16px; height: 44px; border-radius: 22px; display: flex; align-items: center; }
+  .pogoda { height: 44px; border-radius: 22px; }
+  .pogoda span { color: var(--tekst-2); font-weight: 500; }
+
+  .zapytaj { position: absolute; right: 16px; top: 368px; z-index: 20; height: 44px; padding: 0 16px 0 6px; border-radius: 22px;
+    display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; }
+  .zapytaj img { width: 32px; height: 32px; }
+
+  .arkusz { position: absolute; left: 0; right: 0; bottom: 0; top: 424px; z-index: 30; border-radius: 28px 28px 0 0;
+    background: rgba(255, 255, 255, .9); -webkit-backdrop-filter: blur(30px) saturate(180%); backdrop-filter: blur(30px) saturate(180%);
+    box-shadow: 0 -10px 40px rgba(16, 43, 42, .14); padding: 10px 20px 0; }
+  .uchwyt { width: 36px; height: 5px; border-radius: 3px; background: rgba(16, 43, 42, .18); margin: 0 auto 16px; }
+  .powitanie { display: flex; gap: 12px; align-items: center; }
+  .powitanie img { width: 48px; height: 48px; flex: none; }
+  .powitanie h1 { font-size: 22px; line-height: 1.15; letter-spacing: -.02em; font-weight: 800; }
+  .powitanie p { font-size: 13.5px; color: var(--tekst-2); margin-top: 2px; line-height: 1.35; }
+
+  .czas { margin-top: 20px; display: flex; justify-content: space-between; align-items: baseline; }
+  .czas strong { font-size: 30px; letter-spacing: -.03em; font-weight: 800; color: var(--glebia); }
+  .suwak { position: relative; height: 32px; margin-top: 6px; }
+  .tor { position: absolute; top: 13px; left: 0; right: 0; height: 6px; border-radius: 3px; background: var(--tlo-2); }
+  .tor i { position: absolute; left: 0; top: 0; bottom: 0; width: 34%; border-radius: 3px; background: var(--glebia); }
+  .galka { position: absolute; top: 2px; left: calc(34% - 14px); width: 28px; height: 28px; border-radius: 50%; background: #fff;
+    box-shadow: 0 0 0 .5px rgba(0,0,0,.06), 0 3px 8px rgba(0,0,0,.18); }
+  .skala { display: flex; justify-content: space-between; font-size: 12px; color: var(--tekst-3); font-weight: 600; }
+
+  .tematy { margin-top: 18px; display: flex; gap: 8px; flex-wrap: nowrap; overflow: hidden; }
+  .dol { margin-top: 18px; }
+  .nastepny { margin-top: 10px; text-align: center; font-size: 12.5px; color: var(--tekst-2); font-weight: 500; }
+  .nastepny b { display: inline-grid; place-items: center; min-width: 26px; height: 20px; border-radius: 5px; background: #C8102E; color: #fff; font-size: 12px; margin: 0 2px; }
