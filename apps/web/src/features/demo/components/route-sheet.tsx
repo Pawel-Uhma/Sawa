@@ -60,6 +60,17 @@ export function RouteSheet(props: RouteSheetProps) {
     else setIsPlaying(false);
   }, [progress, hasNext, activeIndex, goTo, setIsPlaying]);
 
+  // Wszystko, co Sawa powiedziała w tej jeździe, jako jeden ciągły tekst z podziałem na tematy.
+  // Docelowo (T-106) to jeden strumień z pomostami od Sawy; dziś składamy go z kolejnych opowieści.
+  const [said, setSaid] = useState<Record<string, string>>({});
+  const activeId = stops[activeIndex]?.id;
+  useEffect(() => {
+    if (activeId && player.text) setSaid((prev) => ({ ...prev, [activeId]: player.text ?? "" }));
+  }, [activeId, player.text]);
+  const transcript = stops.flatMap((stop, index) =>
+    said[stop.id] && index <= activeIndex ? [{ stopIndex: index, text: said[stop.id] }] : [],
+  );
+
   // Klawiatura na desktopie: strzałki i spacja
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -82,6 +93,7 @@ export function RouteSheet(props: RouteSheetProps) {
       isPlaying={player.isPlaying}
       progress={progress}
       storyText={player.text}
+      transcript={transcript}
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
       direction={direction}
       goTo={goTo}
