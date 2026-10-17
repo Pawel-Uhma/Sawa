@@ -66,6 +66,7 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 | Plik | Co jest w środku |
 |---|---|
 | [12-plan-mvp.md](12-plan-mvp.md) | **Plan MVP:** stack, architektura, kontrakt API, model danych, planer, harmonogram z zadaniami ról, założenia, pytania |
+| [13-plan-bazy.md](13-plan-bazy.md) | Plan bazy miejsc: analiza GeoJSON, schemat Supabase, RPC, seed, zainteresowania, licencje zdjęć |
 | [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) | **Zasady:** git i PR, kto jest właścicielem czego, warstwy abstrakcji, nazewnictwo, testy, dobre praktyki, praca z agentami |
 | [05-plan-architektury.md](05-plan-architektury.md) | Pierwszy plan architektury (częściowo nieaktualny, zob. 12), TTL cache |
 | [01-regulamin.md](01-regulamin.md) | Zasady konkursu, punktacja, co oddajemy |
