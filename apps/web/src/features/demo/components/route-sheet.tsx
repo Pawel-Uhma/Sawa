@@ -4,14 +4,18 @@ import type { Leg } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
-import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import type { StoryPlayer } from "../lib/story-player";
-import { ChevronLeftIcon, PinIcon } from "./icons";
-import { Journey } from "./line-badge";
-import { SawaMenuButton } from "./sawa-menu";
-import { StoryCard } from "./story-card";
+import {
+  ROUTE_VARIANTS,
+  type RouteVariant,
+  RouteVariantSwitch,
+  RouteViewItinerary,
+  RouteViewPlayer,
+  RouteViewPostcards,
+  type RouteViewProps,
+} from "./route-variants";
 
 type RouteSheetProps = {
   durationMin: number;
@@ -229,141 +233,30 @@ function MobileSheet({
   );
 }
 
-type SheetContentProps = RouteSheetProps & {
-  isPlaying: boolean;
-  progress: number;
-  storyText: string | null;
-  storyState: "loading" | "ready" | "failed";
-  direction: number;
-  goTo: (index: number) => void;
-  togglePlay: () => void;
-};
+/** Propozycja z `?trasa=a|b|c`; zmiana zapisuje się w adresie, żeby link pokazywał ten sam wariant. */
+function useRouteVariant() {
+  const [variant, setVariant] = useState<RouteVariant>(() => {
+    if (typeof window === "undefined") return "a";
+    const fromUrl = new URLSearchParams(window.location.search).get("trasa");
+    return ROUTE_VARIANTS.find((v) => v === fromUrl) ?? "a";
+  });
+  const change = useCallback((next: RouteVariant) => {
+    setVariant(next);
+    const url = new URL(window.location.href);
+    url.searchParams.set("trasa", next);
+    window.history.replaceState(window.history.state, "", url);
+  }, []);
+  return [variant, change] as const;
+}
 
-function SheetContent({
-  durationMin,
-  end,
-  legs,
-  stops,
-  activeIndex,
-  onBack,
-  isDesktop,
-  isPlaying,
-  progress,
-  storyText,
-  storyState,
-  direction,
-  goTo,
-  togglePlay,
-}: SheetContentProps) {
-  const activeStop = stops[activeIndex];
-
+function SheetContent(props: RouteViewProps) {
+  const [variant, setVariant] = useRouteVariant();
+  const View =
+    variant === "a" ? RouteViewPlayer : variant === "b" ? RouteViewItinerary : RouteViewPostcards;
   return (
-    <div className="flex flex-col gap-5">
-      <header>
-        {isDesktop && (
-          <div className="mb-4">
-            <SawaMenuButton variant="inline" />
-          </div>
-        )}
-        <div className="flex items-start justify-between gap-3">
-          <h2 className="pt-1 text-[22px] font-extrabold leading-tight tracking-[-0.02em] md:text-[26px]">
-            Twoja przejażdżka
-          </h2>
-          <button
-            type="button"
-            onClick={onBack}
-            className="flex h-10 shrink-0 items-center gap-1 rounded-full bg-tlo-2 pl-2.5 pr-3.5 text-sm font-bold text-tekst transition-[transform,background-color] hover:bg-mieta-jasna active:scale-[0.96]"
-          >
-            <ChevronLeftIcon className="size-4" />
-            Zmień plan
-          </button>
-        </div>
-        <p className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm text-tekst-2">
-          <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>·
-          <span>{stops.length} opowieści</span>·
-          <span className="inline-flex flex-wrap items-center gap-1.5">
-            <Journey legs={legs} />
-          </span>
-        </p>
-        {end && (
-          <p
-            role={end.reached ? undefined : "status"}
-            className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[13px] font-semibold ${
-              end.reached ? "bg-mieta-jasna text-glebia" : "bg-koral/15 text-tekst"
-            }`}
-          >
-            <PinIcon className="size-4 shrink-0" />
-            {end.label}
-          </p>
-        )}
-      </header>
-
-      {activeStop && (
-        <StoryCard
-          stop={activeStop}
-          index={activeIndex}
-          total={stops.length}
-          direction={direction}
-          isPlaying={isPlaying}
-          progress={progress}
-          text={storyText}
-          state={storyState}
-          onPrev={() => goTo(activeIndex - 1)}
-          onNext={() => goTo(activeIndex + 1)}
-          onTogglePlay={togglePlay}
-        />
-      )}
-
-      <section aria-label="Punkty trasy">
-        <p className="etykieta mb-2">Po drodze</p>
-        <ol className="relative">
-          {/* Linia osi czasu */}
-          <span
-            aria-hidden="true"
-            className="absolute bottom-6 left-[27px] top-6 w-0.5 rounded-full bg-tekst/10"
-          />
-          {stops.map((stop, index) => {
-            const isActive = index === activeIndex;
-            const isDone = index < activeIndex;
-            return (
-              <li key={stop.id} className="relative">
-                <button
-                  type="button"
-                  aria-current={isActive ? "step" : undefined}
-                  onClick={() => goTo(index)}
-                  className="relative flex w-full items-center gap-3 rounded-2xl px-3 py-2.5 text-left transition-colors duration-200 hover:bg-tlo-2 active:bg-tlo-2"
-                >
-                  {isActive && (
-                    <motion.span
-                      layoutId="punkt-aktywny"
-                      transition={SPRING}
-                      className="absolute inset-0 rounded-2xl bg-mieta-jasna"
-                    />
-                  )}
-                  <span
-                    className={`relative flex size-8 shrink-0 items-center justify-center rounded-full border-2 border-white text-[13px] font-extrabold transition-colors duration-300 ${
-                      isActive
-                        ? "bg-glebia text-white"
-                        : isDone
-                          ? "bg-mieta text-glebia-ciemna"
-                          : "bg-koral text-white"
-                    }`}
-                  >
-                    {index + 1}
-                  </span>
-                  <span className="relative min-w-0 flex-1">
-                    <span className="block truncate text-[15px] font-bold">{stop.name}</span>
-                    <span className="block text-xs text-tekst-3">
-                      {stop.mode === "walk" ? "pieszo" : `linia ${stop.line}`} · po ok.{" "}
-                      {stop.etaMin} min
-                    </span>
-                  </span>
-                </button>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
+    <div className="flex flex-col gap-4">
+      <RouteVariantSwitch value={variant} onChange={setVariant} />
+      <View {...props} />
     </div>
   );
 }
