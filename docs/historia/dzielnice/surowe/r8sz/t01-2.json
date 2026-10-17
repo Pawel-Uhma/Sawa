@@ -1,0 +1,41 @@
+[
+  {
+    "id": "synagoga-gmach-wychowawczy-gminy-starozakonnych-jagiellonska-28",
+    "nazwa": "Synagoga w Gmachu Wychowawczym Gminy Starozakonnych",
+    "name_en": "Synagogue in the Warsaw Jewish Community Educational Building",
+    "typ": "swiatynia",
+    "dzielnica": "Praga",
+    "adres_dzis": "ul. Jagiellońska 28",
+    "adres_historyczny": "nr hip. 181/182",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1914–1940?",
+    "istnieje": true,
+    "fakty": [
+      "Synagoga przy ul. Jagiellońskiej 28 (nr hip. 181/182) funkcjonowała w latach 1914–1940?.",
+      "Synagoga powstała jako część Gmachu Wychowawczego Warszawskiej Gminy Starozakonnych im. Michała Bergsona, wzniesionego w latach 1911–1914 według projektu Henryka Stifelmana i Stanisława Weissa.",
+      "Budynek miał pomieścić przytułek dzienny dla 100 dzieci, ochronkę dla 150 dzieci oraz szkołę na 550 dziewcząt i chłopców.",
+      "Stary dom modlitwy, dawny bejt ha-midrasz, istniał w tym miejscu od 1838 roku.",
+      "Gmach po wybuchu wojny objęły władze wojskowe, a do Gminy przeszedł dopiero na wiosnę 1917 r.",
+      "W latach okupacji hitlerowskiej budynek pełnił funkcję szpitala oraz różne funkcje administracyjne.",
+      "Wiosną 1945 r. budynek objął Centralny Komitet Żydów w Polsce; w pomieszczeniu dawnej synagogi od 1947 r. działał teatr.",
+      "W 1950 r. budynek przejęły władze Pragi Północ; po paru latach w miejsce teatru żydowskiego ulokowano teatr dla dzieci „Baj”, który funkcjonuje tam do dzisiaj."
+    ],
+    "ciekawostki": [
+      "Koszt budowy całego kompleksu wyniósł 160 tysięcy rubli, czyli około połowy sumy wydanej niecałe 40 lat wcześniej na Wielką Synagogę na Tłomackiem."
+    ],
+    "summary_en": "Prayer room in the educational complex of the Warsaw Jewish Community at Jagiellońska 28 in Praga, built in 1911–1914 to designs by Henryk Stifelman and Stanisław Weiss. The interior has lost its original decoration; after the war the prayer room housed a theatre, and the building later became home to the children's theatre Baj.",
+    "ludzie": [
+      {"kto": "Henryk Stifelman", "rola": "autor projektu Gmachu Wychowawczego (1911–1914)", "wiki": null},
+      {"kto": "Stanisław Weiss", "rola": "autor projektu Gmachu Wychowawczego (1911–1914)", "wiki": null},
+      {"kto": "Michał Bergson", "rola": "patron Gmachu Wychowawczego Warszawskiej Gminy Starozakonnych", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gmach Wychowawczy Warsz. Gminy Starozakonnych im. Michała Bergsona", "nr hip. 181/182"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga w Gmachu Wychowawczym Gminy Starozakonnych na Pradze w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89759-synagoga-w-gmachu-wychowawczym-gminy-starozakonnych-na-pradze-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w tekście. Pominięto synagogę w Pustelniku: artykuł podaje, że osada leżała poza granicą Warszawy, a budowy nie potwierdzono."
+  }
+]
