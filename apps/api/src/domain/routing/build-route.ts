@@ -1,5 +1,4 @@
 import {
-  fromLngLat,
   haversineM,
   type LatLng,
   type Leg,
@@ -9,7 +8,13 @@ import {
   toLngLat,
 } from "@sawa/shared";
 import type { CollectedPlace, Ride } from "./beam-search";
-import { cumulativeDistancesM, slicePolyline } from "./geometry";
+import {
+  bboxAround,
+  cumulativeDistancesM,
+  isInBbox,
+  projectOnPolyline,
+  slicePolyline,
+} from "./geometry";
 import { type ScorePrefs, scorePlace } from "./score";
 import {
   MIN_STORY_GAP_SEC,
@@ -18,8 +23,7 @@ import {
   storyWindowSec,
 } from "./select-stories";
 import type { LngLat, Network, Pattern, PatternStop, PlacePoint } from "./types";
-import { placesAlongPath } from "./walk-on-paths";
-import type { Walk } from "./walk-tour";
+import { WALK_LARGE_VISIBLE_RADIUS_M, type Walk, walkVisibleRadiusM } from "./walk-tour";
 
 /** Shorter walks to or from a stop are not shown as a leg. */
 const MIN_WALK_LEG_M = 30;
@@ -232,6 +236,9 @@ export function buildWalkRoute({
   };
 }
 
+/** Walking paths run along street centrelines; places on the pavement are a few metres farther. */
+const PATH_SLACK_M = 10;
+
 export type AlongPathsInput = {
   placesById: Map<string, PlacePoint>;
   interests: ReadonlySet<string>;
@@ -266,20 +273,27 @@ export function alongWalkPaths(
   const legs = route.legs.map((leg, legIndex) => {
     const path = paths[legIndex];
     if (!path) return leg;
-    const passed = placesAlongPath(
-      placesById.values(),
-      path,
-      {
-        startSec: (new Date(leg.departAt).getTime() - now.getTime()) / 1000,
-        sec: leg.durationMin * 60,
+    const walkedTo = new Set(leg.lngLats.slice(1, -1).map(([lng, lat]) => `${lng},${lat}`));
+    const cumDistM = cumulativeDistancesM(path);
+    const totalM = cumDistM[cumDistM.length - 1] ?? 0;
+    const startSec = (new Date(leg.departAt).getTime() - now.getTime()) / 1000;
+    const sec = leg.durationMin * 60;
+    const bbox = bboxAround(path, WALK_LARGE_VISIBLE_RADIUS_M + PATH_SLACK_M);
+    for (const place of placesById.values()) {
+      if (taken.has(place.id)) continue;
+      const isWaypoint = walkedTo.has(`${place.position.lng},${place.position.lat}`);
+      if (!isWaypoint && !isInBbox(place.position, bbox)) continue;
+      const { distanceM, alongM } = projectOnPolyline(place.position, path, cumDistM);
+      if (!isWaypoint && distanceM > walkVisibleRadiusM(place) + PATH_SLACK_M) continue;
+      taken.add(place.id);
+      kept.push({
+        placeId: place.id,
+        etaSec: startSec + (totalM > 0 ? alongM / totalM : 0) * sec,
+        distanceM,
         legIndex,
-        walkedTo: leg.lngLats.slice(1, -1).map(fromLngLat),
-        skip: taken,
-      },
-      { interests, prefs },
-    );
-    for (const p of passed) taken.add(p.placeId);
-    kept.push(...passed);
+        score: scorePlace(place, distanceM, interests, prefs),
+      });
+    }
     return { ...leg, lngLats: path };
   });
 

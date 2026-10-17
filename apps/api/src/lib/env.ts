@@ -91,6 +91,11 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v === "1"),
+  /**
+   * Pitch mode (services/demo.ts): `record` saves real stories and voice to data/demo/,
+   * `replay` serves only those, with no LLM, ElevenLabs or Google Places calls.
+   */
+  DEMO_MODE: z.enum(["off", "record", "replay"]).default("off"),
   DEBUG_PAGES: z
     .enum(["0", "1"])
     .default("0")
