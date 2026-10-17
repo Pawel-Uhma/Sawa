@@ -1,16 +1,10 @@
 "use client";
 
-import {
-  animate,
-  motion,
-  type PanInfo,
-  useDragControls,
-  useMotionValue,
-  useTransform,
-} from "motion/react";
-import { type PointerEvent, type ReactNode, useCallback, useEffect, useState } from "react";
+import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
+import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { formatDuration } from "../lib/format";
+import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { ChevronLeftIcon, TramIcon } from "./icons";
 import { Logo } from "./logo";
@@ -93,7 +87,7 @@ export function RouteSheet(props: RouteSheetProps) {
     return () => window.removeEventListener("keydown", onKey);
   }, [activeIndex, goTo, togglePlay]);
 
-  const content = (onHeaderPointerDown?: (event: PointerEvent) => void) => (
+  const content = (
     <SheetContent
       {...props}
       isPlaying={isPlaying}
@@ -101,14 +95,15 @@ export function RouteSheet(props: RouteSheetProps) {
       direction={direction}
       goTo={goTo}
       togglePlay={togglePlay}
-      onHeaderPointerDown={onHeaderPointerDown}
     />
   );
 
   return props.isDesktop ? (
-    <DesktopPanel>{content()}</DesktopPanel>
+    <DesktopPanel>{content}</DesktopPanel>
   ) : (
-    <MobileSheet onCoverChange={props.onCoverChange}>{content}</MobileSheet>
+    <MobileSheet onCoverChange={props.onCoverChange} onDismiss={props.onBack}>
+      {content}
+    </MobileSheet>
   );
 }
 
@@ -141,14 +136,17 @@ function useViewportHeight() {
   return height;
 }
 
-/** Arkusz z trzema punktami zatrzymania. Ciągnie się za uchwyt i nagłówek, rzut wybiera punkt z rozpędu. */
+/** Arkusz z trzema punktami zatrzymania. Ciągnie się za każde miejsce, rzut wybiera punkt z rozpędu, ściągnięcie w dół zamyka. */
 function MobileSheet({
   children,
   onCoverChange,
+  onDismiss,
 }: {
-  children: (startDrag: (event: PointerEvent) => void) => ReactNode;
+  children: ReactNode;
   onCoverChange: (px: number) => void;
+  onDismiss: () => void;
 }) {
+  const reduce = useReducedMotion();
   const height = useViewportHeight();
   const detents = {
     full: 64,
@@ -156,69 +154,90 @@ function MobileSheet({
     peek: Math.max(Math.round(height * 0.42) + 40, height - 330),
   };
   const y = useMotionValue(height);
-  const visibleHeight = useTransform(y, (value) => Math.max(0, height - value));
-  const controls = useDragControls();
   const [detent, setDetent] = useState<keyof typeof detents>("mid");
+  const sheetRef = useRef<HTMLElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const base = useRef(0);
+  const isFull = detent === "full";
 
   // Wjazd i zmiana rozmiaru okna: sprężyna do bieżącego punktu zatrzymania
   // biome-ignore lint/correctness/useExhaustiveDependencies: reagujemy na rozmiar okna i punkt zatrzymania
   useEffect(() => {
     const target = detents[detent];
-    const animation = animate(y, target, SPRING);
+    const animation = animate(y, target, reduce ? { duration: 0 } : SPRING);
     onCoverChange(height - target);
     return () => animation.stop();
   }, [height, detent]);
 
-  function startDrag(event: PointerEvent) {
-    controls.start(event);
-  }
+  // Poza pełnym rozmiarem treść się nie przewija, tylko ciągnie arkusz. Wracamy wtedy na górę listy.
+  useEffect(() => {
+    if (!isFull) scrollRef.current?.scrollTo({ top: 0 });
+  }, [isFull]);
 
-  function handleDragEnd(_: unknown, info: PanInfo) {
-    // Cel wybieramy z miejsca, w które arkusz by doleciał, a nie z miejsca puszczenia
-    const landing = y.get() + project(info.velocity.y);
-    const nearest = (Object.keys(detents) as (keyof typeof detents)[]).reduce((best, key) =>
-      Math.abs(detents[key] - landing) < Math.abs(detents[best] - landing) ? key : best,
-    );
-    if (nearest !== detent) haptic();
-    setDetent(nearest);
-    animate(y, detents[nearest], { ...SPRING_FLICK, velocity: info.velocity.y });
-    onCoverChange(height - detents[nearest]);
-  }
+  useVerticalDrag(sheetRef, {
+    // W pełnym rozmiarze arkusz przejmuje gest tylko, gdy lista jest na górze i palec idzie w dół (jak w iOS).
+    shouldStart: (dy) => !isFull || (dy > 0 && (scrollRef.current?.scrollTop ?? 0) <= 0),
+    onStart: () => {
+      y.stop();
+      base.current = y.get();
+    },
+    onMove: (dy) => {
+      const raw = base.current + dy;
+      // W górę opór za pełnym rozmiarem, w dół 1:1, bo tam arkusz się zamyka
+      y.set(raw < detents.full ? detents.full - rubberband(detents.full - raw, height) : raw);
+    },
+    onEnd: (velocity) => {
+      // Cel wybieramy z miejsca, w które arkusz by doleciał, a nie z miejsca puszczenia
+      const landing = y.get() + project(velocity);
+      if (landing > detents.peek + (height - detents.peek) * 0.5 && velocity >= 0) {
+        haptic();
+        onDismiss();
+        return;
+      }
+      const nearest = (Object.keys(detents) as (keyof typeof detents)[]).reduce((best, key) =>
+        Math.abs(detents[key] - landing) < Math.abs(detents[best] - landing) ? key : best,
+      );
+      if (nearest !== detent) haptic();
+      setDetent(nearest);
+      animate(y, detents[nearest], reduce ? { duration: 0 } : { ...SPRING_FLICK, velocity });
+      onCoverChange(height - detents[nearest]);
+    },
+  });
 
   return (
     <motion.section
+      ref={sheetRef}
       aria-label="Trasa"
-      drag="y"
-      dragControls={controls}
-      dragListener={false}
-      dragConstraints={{ top: detents.full, bottom: detents.peek }}
-      dragElastic={0.12}
-      dragMomentum={false}
-      onDragEnd={handleDragEnd}
-      exit={{ y: height }}
+      exit={reduce ? { opacity: 0 } : { y: height }}
       transition={SPRING}
       style={{ y }}
-      className="karta absolute inset-x-0 top-0 z-20 h-dvh rounded-t-[28px] border-b-0"
+      className={`karta absolute inset-x-0 top-0 z-20 flex h-dvh flex-col rounded-t-[28px] border-b-0 ${
+        isFull ? "" : "touch-none"
+      }`}
     >
-      <div
-        onPointerDown={startDrag}
-        className="flex cursor-grab touch-none justify-center pb-2 pt-2.5 active:cursor-grabbing"
-      >
+      <div className="flex shrink-0 cursor-grab justify-center pb-2 pt-2.5 active:cursor-grabbing">
         <button
           type="button"
-          aria-label="Rozwiń lub zwiń trasę"
-          onClick={() => setDetent((current) => (current === "full" ? "mid" : "full"))}
+          aria-label={isFull ? "Zwiń trasę" : "Rozwiń trasę"}
+          onClick={() => {
+            haptic();
+            setDetent((current) => (current === "full" ? "mid" : "full"));
+          }}
           className="flex h-6 w-16 items-center justify-center"
         >
           <span className="h-[5px] w-9 rounded-full bg-tekst/20" />
         </button>
       </div>
-      <motion.div
-        style={{ height: visibleHeight }}
-        className="overflow-y-auto overscroll-contain px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))]"
+      {/* Stała wysokość (widoczna część przy pełnym rozmiarze): arkusz jedzie transformem, bez przeliczania układu w każdej klatce */}
+      <div
+        ref={scrollRef}
+        style={{ height: height - detents.full - 34 }}
+        className={`overscroll-contain px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] ${
+          isFull ? "touch-pan-y overflow-y-auto" : "overflow-hidden"
+        }`}
       >
-        {children(startDrag)}
-      </motion.div>
+        {children}
+      </div>
     </motion.section>
   );
 }
@@ -229,8 +248,6 @@ type SheetContentProps = RouteSheetProps & {
   direction: number;
   goTo: (index: number) => void;
   togglePlay: () => void;
-  // Telefon: nagłówek też ciągnie arkusz
-  onHeaderPointerDown?: (event: PointerEvent) => void;
 };
 
 function SheetContent({
@@ -244,17 +261,13 @@ function SheetContent({
   direction,
   goTo,
   togglePlay,
-  onHeaderPointerDown,
 }: SheetContentProps) {
   const activeStop = stops[activeIndex];
   const lines = [...new Set(stops.map((stop) => stop.line))];
 
   return (
     <div className="flex flex-col gap-5">
-      <header
-        onPointerDown={onHeaderPointerDown}
-        className={onHeaderPointerDown ? "touch-none" : undefined}
-      >
+      <header>
         {isDesktop && <Logo className="mb-5 block text-[28px]" />}
         <div className="flex items-start justify-between gap-3">
           <h2 className="pt-1 text-[22px] font-extrabold leading-tight tracking-[-0.02em] md:text-[26px]">

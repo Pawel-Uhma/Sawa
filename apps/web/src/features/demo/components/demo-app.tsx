@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
 import {
   buildMockRoute,
@@ -36,6 +36,18 @@ export function DemoApp() {
   const [route, setRoute] = useState<MockStop[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [sheetCoverPx, setSheetCoverPx] = useState(360);
+  const [panelCollapsed, setPanelCollapsed] = useState(false);
+
+  // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
+  useEffect(() => {
+    const block = (event: Event) => event.preventDefault();
+    document.addEventListener("gesturestart", block);
+    document.addEventListener("gesturechange", block);
+    return () => {
+      document.removeEventListener("gesturestart", block);
+      document.removeEventListener("gesturechange", block);
+    };
+  }, []);
 
   const finishOnboarding = useCallback((next: Profile) => {
     setProfile(next);
@@ -62,8 +74,8 @@ export function DemoApp() {
     }
     return isRoute
       ? { top: 88, right: 0, bottom: sheetCoverPx, left: 0 }
-      : { top: 120, right: 0, bottom: 430, left: 0 };
-  }, [isDesktop, isWide, isRoute, sheetCoverPx]);
+      : { top: 120, right: 0, bottom: panelCollapsed ? 200 : 430, left: 0 };
+  }, [isDesktop, isWide, isRoute, sheetCoverPx, panelCollapsed]);
 
   const camera: MapCamera = useMemo(() => {
     if (isRoute && activeStop) {
@@ -110,7 +122,7 @@ export function DemoApp() {
           {stage !== "onboarding" && <TopBar key="top" hideLogoOnDesktop={isRoute} />}
         </AnimatePresence>
 
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence>
           {stage === "map" && tab === "map" && (
             <HomePanel
               key="home"
@@ -118,6 +130,8 @@ export function DemoApp() {
               durationMin={durationMin}
               onDurationChange={setDurationMin}
               onEditInterests={editInterests}
+              collapsed={panelCollapsed}
+              onCollapsedChange={setPanelCollapsed}
               onGenerate={() => {
                 setRoute(buildMockRoute(durationMin, profile.interests));
                 setActiveIndex(0);
@@ -130,6 +144,8 @@ export function DemoApp() {
               key={tab}
               tab={tab}
               hasRoute={route.length > 0}
+              collapsed={panelCollapsed}
+              onCollapsedChange={setPanelCollapsed}
               onOpenRoute={() => {
                 setTab("map");
                 setStage("route");

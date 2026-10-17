@@ -103,7 +103,7 @@ export function OnboardingFlow({
 
   return (
     // Pełnoekranowa warstwa nad mapą: mapa prześwituje przez matowe szkło, więc onboarding i mapa to jedna przestrzeń.
-    <div className="fixed inset-0 z-40 overflow-y-auto bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
+    <div className="fixed inset-0 z-40 touch-pan-y overflow-y-auto overscroll-contain bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_45%_at_20%_15%,rgba(142,209,181,0.35),transparent_70%),radial-gradient(50%_40%_at_90%_90%,rgba(242,117,95,0.10),transparent_70%)]"

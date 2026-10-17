@@ -26,6 +26,9 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  // Interfejs nie powiększa się palcami; tekst i tak ma co najmniej 11 px, a duże czcionki z systemu działają
+  maximumScale: 1,
+  userScalable: false,
   // Treść pod wcięciem i paskiem home; marginesy bierzemy z env(safe-area-inset-*)
   viewportFit: "cover",
   themeColor: "#EEF3F0",

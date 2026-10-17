@@ -21,6 +21,8 @@
 
 - 13:51 (Paweł, R3): na https://sawa-hackathon.vercel.app działa mock: onboarding sawa-72, ekran główny A6 i trasa z gestami na prawdziwej mapie (MapLibre + OpenFreeMap, bez tokenu). Dane wciąż mockowe (`lib/mock-data.ts`), podpięcie API to T-30/T-10. Zmiany na gałęzi `r3/demo-mock` (część już w commitach, reszta w drzewie roboczym), jeszcze nie w `main`.
 
+- 14:30 (Paweł, R3): gesty jak w iOS. Arkusz trasy ciągnie się za treść i zamyka ściągnięciem w dół, karty ekranu głównego chowają się pod pasek zakładek, strona nie powiększa się i nie odbija. Przetestowane dotykiem w emulacji iPhone; do sprawdzenia na prawdziwym telefonie.
+
 ## Zablokowane
 
 - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.

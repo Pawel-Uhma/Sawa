@@ -65,6 +65,7 @@ export function StoryCard({
           exit="exit"
           transition={SPRING_FLICK}
           drag="x"
+          dragDirectionLock
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={{ left: hasNext ? 0.9 : 0.15, right: hasPrev ? 0.9 : 0.15 }}
           dragTransition={{ bounceStiffness: 500, bounceDamping: 40 }}
