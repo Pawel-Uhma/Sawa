@@ -38,3 +38,21 @@ export const StorySchema = z.object({
   recap: z.boolean(),
 });
 export type Story = z.infer<typeof StorySchema>;
+
+/** POST /v1/stories/warm body: places of a planned route, researched before the ride starts. */
+export const StoryWarmRequestSchema = z.object({
+  placeIds: z.array(z.string().min(1)).min(1).max(40),
+});
+export type StoryWarmRequest = z.infer<typeof StoryWarmRequestSchema>;
+
+/**
+ * GET /v1/stories/live/:id: the story while Sawa is still writing it. `text` grows until `done`;
+ * then `story` holds what it told (for the listener's memory). The voice streams from `…/audio`.
+ */
+export const LiveStorySchema = z.object({
+  id: z.string(),
+  text: z.string(),
+  done: z.boolean(),
+  story: StorySchema.nullable(),
+});
+export type LiveStory = z.infer<typeof LiveStorySchema>;

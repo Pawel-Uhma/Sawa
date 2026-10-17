@@ -28,17 +28,18 @@ export function reachedIndex(stops: readonly MockStop[], position: LatLng, from:
  * Lokalizacja przesuwa zegar jazdy dalej niż pierwsze miejsce (to obsługuje `DemoApp`, gdy
  * Sawa czeka): przy kolejnym punkcie trasy zegar staje na „jestem tutaj”, więc tramwaj
  * spóźniony albo szybszy od rozkładu nie rozjeżdża się z opowieścią. Bez lokalizacji
- * (`position` null) zostaje sam zegar. Zegar idzie tylko do przodu.
+ * (`position` null) zostaje sam zegar. Zegar idzie tylko do przodu i stoi, gdy użytkownik
+ * zatrzymał Sawę (`held`): po wznowieniu dogania lokalizację.
  */
 export function useGpsClockSync(
   stops: readonly MockStop[],
   position: LatLng | null,
-  clock: Pick<RideClock, "dueIndex" | "syncTo">,
+  clock: Pick<RideClock, "dueIndex" | "held" | "syncTo">,
 ) {
-  const { dueIndex, syncTo } = clock;
+  const { dueIndex, held, syncTo } = clock;
   useEffect(() => {
-    if (!position) return;
+    if (!position || held) return;
     const index = reachedIndex(stops, position, dueIndex);
     if (index > dueIndex) syncTo(index);
-  }, [stops, position, dueIndex, syncTo]);
+  }, [stops, position, dueIndex, held, syncTo]);
 }

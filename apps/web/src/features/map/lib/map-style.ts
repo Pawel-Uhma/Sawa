@@ -202,6 +202,14 @@ export const START_VIEW = {
 };
 
 /**
+ * Warsaw's city limits (lng 20.85–21.27, lat 52.10–52.37) plus a small margin.
+ * The camera can't pan or zoom out past them, so the map never shows the rest of Poland.
+ */
+export const WARSAW_MAX_BOUNDS: [west: number, south: number, east: number, north: number] = [
+  20.75, 52.05, 21.37, 52.42,
+];
+
+/**
  * Places with fewer facts + trivia than this are hidden from the map.
  * 0 shows everything (decision 17.10, docs/14-plan-mapy.md §6); raise to 2 to hide sparse records.
  */

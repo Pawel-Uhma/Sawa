@@ -17,6 +17,7 @@ import { createLogger } from "./lib/logger";
 import { warsawDate } from "./routes/health";
 import { createTrackerBoardingSource } from "./services/live-boarding";
 import { createRoutePlanner } from "./services/plan-route";
+import { createPlaceResearch } from "./services/research-place";
 import { createDestinationService } from "./services/search-destinations";
 import { createSpeechService } from "./services/speak";
 import { createVehicleTracker } from "./services/track-vehicles";
@@ -76,6 +77,15 @@ const llm = env.OPENROUTER_KEY
   ? createOpenRouterProvider({ apiKey: env.OPENROUTER_KEY, model: env.OPENROUTER_MODEL })
   : undefined;
 
+// One web search per place for stories beyond the seed (T-41); STORY_RESEARCH=0 turns it off.
+const research =
+  llm && env.STORY_RESEARCH
+    ? createPlaceResearch({
+        llm,
+        onError: (err, placeId) => logger.warn({ err, placeId }, "research failed, seed only"),
+      })
+    : undefined;
+
 const speech = env.ELEVENLABS_KEY
   ? createSpeechService(createElevenLabsSynthesizer({ apiKey: env.ELEVENLABS_KEY }))
   : undefined;
@@ -93,6 +103,7 @@ const app = createApp({
     routePlanner,
     places: placesRepository,
     llm,
+    research,
     speech,
     destinations,
     vehicles,
@@ -108,6 +119,7 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
       departures: Boolean(env.WAW_TOKEN),
       walkPaths: env.WALK_ROUTER_URL ?? null,
       llm: llm?.model ?? null,
+      research: Boolean(research),
       speech: Boolean(speech),
       destinations: Boolean(destinations),
     },

@@ -526,16 +526,16 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
                       });
                       setText("");
                     }}
-                    className="flex w-full items-center gap-2.5 px-3 py-2.5 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
+                    className="flex w-full items-center gap-2.5 px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
                   >
-                    <PinIcon className="size-4 shrink-0 text-tekst-3" />
+                    {result.kind === "address" && (
+                      <PinIcon className="size-[18px] shrink-0 text-glebia" />
+                    )}
                     <span className="flex min-w-0 flex-col">
-                      <span className="truncate text-[14px] font-bold leading-5 text-tekst">
+                      <span className="truncate text-[14px] font-bold text-tekst">
                         {result.name}
                       </span>
-                      <span className="truncate text-xs leading-4 text-tekst-3">
-                        {result.address}
-                      </span>
+                      <span className="truncate text-xs text-tekst-3">{result.address}</span>
                     </span>
                   </button>
                 </li>

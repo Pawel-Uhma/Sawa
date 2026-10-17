@@ -52,16 +52,33 @@ export type TransitData = {
 
 export type LlmRequest = { system: string; user: string; maxTokens: number };
 
+/** A web page the model read while answering. */
+export type WebCitation = { url: string; title: string };
+
 /** Chat model behind Sawa's words. Answers JSON text; throws AppError on upstream failure. */
 export interface LlmProvider {
   /** Model id, logged next to every story. */
   readonly model: string;
   complete(request: LlmRequest): Promise<string>;
+  /**
+   * Same, but the model first searches the web with the user prompt as the query.
+   * `citations` are the pages it got; missing when the provider cannot search.
+   */
+  completeWithWeb?(
+    request: LlmRequest & { maxResults: number },
+  ): Promise<{ content: string; citations: WebCitation[] }>;
+  /** Same as `complete`, yielding the answer in pieces as the model writes it. */
+  stream?(request: LlmRequest): AsyncIterable<string>;
 }
 
 /** Text-to-speech provider (ElevenLabs). Throws AppError on upstream failure or timeout. */
 export interface SpeechSynthesizer {
   synthesize(text: string): Promise<SpeechAudio>;
+  /**
+   * mp3 bytes as they are made. `previousText` is what was already read, so a story said in
+   * several pieces keeps one tone.
+   */
+  stream?(text: string, opts: { previousText: string }): AsyncIterable<Uint8Array>;
 }
 
 /** Finds a ride destination by name (Google Places). Throws AppError on upstream failure or timeout. */
