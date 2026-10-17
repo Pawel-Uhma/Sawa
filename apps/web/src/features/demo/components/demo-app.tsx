@@ -5,24 +5,26 @@ import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { MapCamera, MapPadding } from "@/features/map";
-import { planRoute, routeStops, toPlannerInterests } from "../lib/api-data";
+import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
+import { forgetAll, useMemory } from "../lib/memory";
 import { type MockStop, USER_LOCATION } from "../lib/mock-data";
-import { EMPTY_PROFILE, type Profile } from "../lib/onboarding";
+import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
 import {
   CUSTOM_DESTINATION_NAME,
   DESTINATION_PRESETS,
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
+import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
 import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
 import { type ProfileStep, type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
+import { SawaTab } from "./sawa-tab";
 import { type Tab, TabBar } from "./tab-bar";
-import { TabPlaceholder } from "./tab-placeholder";
 import { TopBar } from "./top-bar";
 
 // Mapa Antka (features/map). MapLibre potrzebuje window i WebGL, więc tylko w przeglądarce.
@@ -77,7 +79,7 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(durationMin, profile.interests, rideEnd, profile));
+      showRoute(await planRoute(durationMin, profile, rideEnd));
     } catch {
       setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
     } finally {
@@ -106,8 +108,21 @@ export function DemoApp() {
     };
   }, []);
 
+  // Kto już przeszedł onboarding na tym urządzeniu, wraca od razu na mapę.
+  // Do sprawdzenia localStorage onboarding się nie pokazuje, żeby nie mignął.
+  const [restored, setRestored] = useState(false);
+  useEffect(() => {
+    const saved = loadProfile();
+    if (saved) {
+      setProfile(saved);
+      setStage("map");
+    }
+    setRestored(true);
+  }, []);
+
   const finishOnboarding = useCallback((next: Profile) => {
     setProfile(next);
+    saveProfile(next);
     setStage("map");
   }, []);
 
@@ -119,6 +134,8 @@ export function DemoApp() {
   const editInterests = useCallback(() => editProfile("interests"), [editProfile]);
 
   const restart = useCallback(() => {
+    saveProfile(null);
+    forgetAll();
     setProfile(EMPTY_PROFILE);
     setRoute([]);
     setPlanned(null);
@@ -173,7 +190,24 @@ export function DemoApp() {
     return { type: "center", center: USER, zoom: isDesktop ? 15.3 : 14.8 };
   }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace]);
 
-  const storyInterests = useMemo(() => toPlannerInterests(profile.interests), [profile.interests]);
+  const listener = useMemo(() => listenerOf(profile), [profile]);
+  const memory = useMemory();
+  // Odtwarzacz jest tu, a nie w arkuszu trasy: zakładka Sawa steruje tą samą opowieścią.
+  const player = useStoryPlayer(route, activeIndex, listener);
+  const { setIsPlaying, rewind } = player;
+  // Sawa mówi na trasie; po wyjściu z niej pauza, a po wejściu wznowienie (jak wcześniej arkusz).
+  useEffect(() => {
+    setIsPlaying(isRoute);
+  }, [isRoute, setIsPlaying]);
+  const playStop = useCallback(
+    (index: number) => {
+      if (index < 0 || index >= route.length) return;
+      rewind();
+      setIsPlaying(true);
+      setActiveIndex(index);
+    },
+    [route.length, rewind, setIsPlaying],
+  );
   // Na mapie pusta lista znaczy „wszystkie miejsca”, więc bez zapasowej kategorii z planera.
   const mapInterests = useMemo(() => interestsOfTags(profile.interests), [profile.interests]);
 
@@ -187,8 +221,10 @@ export function DemoApp() {
         setStage("route");
       },
       onRestart: restart,
+      rememberedPlaces: Object.keys(memory.places).length,
+      onForget: forgetAll,
     }),
-    [profile, editProfile, planned, route.length, restart],
+    [profile, editProfile, planned, route.length, restart, memory],
   );
 
   return (
@@ -247,7 +283,7 @@ export function DemoApp() {
             {stage === "map" && tab === "rides" && (
               <RidesPanel
                 key="rides"
-                interests={profile.interests}
+                profile={profile}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
                 lastRoute={route}
@@ -263,10 +299,16 @@ export function DemoApp() {
               />
             )}
             {stage === "map" && tab === "sawa" && (
-              <TabPlaceholder
+              <SawaTab
                 key="sawa"
                 collapsed={panelCollapsed}
                 onCollapsedChange={setPanelCollapsed}
+                stops={route}
+                activeIndex={activeIndex}
+                player={player}
+                places={memory.places}
+                onPrev={() => playStop(activeIndex - 1)}
+                onNext={() => playStop(activeIndex + 1)}
               />
             )}
             {isRoute && (
@@ -275,7 +317,7 @@ export function DemoApp() {
                 durationMin={durationMin}
                 end={planned ? routeEnd(planned, rideEnd) : null}
                 stops={route}
-                interests={storyInterests}
+                player={player}
                 activeIndex={activeIndex}
                 onActiveChange={setActiveIndex}
                 onBack={() => setStage("map")}
@@ -288,19 +330,26 @@ export function DemoApp() {
           {stage !== "onboarding" && (
             <PlaceCardHost
               isActive={isHome}
-              interests={storyInterests}
+              listener={listener}
               onSelectionChange={setSelectedPlace}
               onCoverChange={setPlaceCoverPx}
             />
           )}
 
           <AnimatePresence>
-            {stage === "map" && <TabBar key="tabs" active={tab} onChange={setTab} />}
+            {stage === "map" && (
+              <TabBar
+                key="tabs"
+                active={tab}
+                onChange={setTab}
+                speaking={player.isPlaying && player.text !== null}
+              />
+            )}
           </AnimatePresence>
 
           {/* Onboarding to warstwa nad mapą. Po wyjściu mapa „wyjeżdża” spod spodu. */}
           <AnimatePresence>
-            {stage === "onboarding" && (
+            {stage === "onboarding" && restored && (
               <motion.div
                 key="onboarding"
                 className="fixed inset-0 z-40"

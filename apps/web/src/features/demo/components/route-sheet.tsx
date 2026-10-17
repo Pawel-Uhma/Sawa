@@ -1,13 +1,12 @@
 "use client";
 
-import type { Interest } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
-import { useStoryPlayer } from "../lib/story-player";
+import type { StoryPlayer } from "../lib/story-player";
 import { ChevronLeftIcon, PinIcon, TramIcon } from "./icons";
 import { SawaMenuButton } from "./sawa-menu";
 import { StoryCard } from "./story-card";
@@ -17,8 +16,8 @@ type RouteSheetProps = {
   /** Koniec trasy (pętla albo cel); null przy trasie „przed siebie”. */
   end: { label: string; reached: boolean } | null;
   stops: MockStop[];
-  /** Kategorie z onboardingu: Sawa opowiada pod nie. */
-  interests: Interest[];
+  /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
+  player: StoryPlayer;
   activeIndex: number;
   onActiveChange: (index: number) => void;
   onBack: () => void;
@@ -29,8 +28,8 @@ type RouteSheetProps = {
 
 /** Trasa: arkusz z punktami zatrzymania na telefonie, pływający panel na desktopie. */
 export function RouteSheet(props: RouteSheetProps) {
-  const { stops, activeIndex, onActiveChange } = props;
-  const { setIsPlaying, rewind, ...player } = useStoryPlayer(stops, activeIndex, props.interests);
+  const { stops, activeIndex, onActiveChange, player } = props;
+  const { setIsPlaying, rewind } = player;
   const [direction, setDirection] = useState(1);
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;

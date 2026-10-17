@@ -1,8 +1,8 @@
 "use client";
 
-import type { Interest } from "@sawa/shared";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { type Clip, fetchClip } from "./story-player";
+import type { Listener } from "./api-data";
+import { type Clip, fetchClip, useRememberHeard } from "./story-player";
 
 /** Poza trasą nikt nie wyznacza okna, więc Sawa mówi krótko: jak zajawka. */
 export const PLACE_STORY_SEC = 45;
@@ -14,7 +14,7 @@ export type PlaceStoryState = "idle" | "loading" | "playing" | "paused" | "faile
  * Opowieść Sawy o jednym miejscu z karty: ładuje się dopiero po dotknięciu „Posłuchaj”.
  * Postęp z dźwięku; bez głosu z długości tekstu (jak w odtwarzaczu trasy).
  */
-export function usePlaceStory(placeId: string, interests: Interest[]) {
+export function usePlaceStory(placeId: string, listener: Listener) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [clip, setClip] = useState<Clip | null>(null);
   const [state, setState] = useState<PlaceStoryState>("idle");
@@ -75,6 +75,8 @@ export function usePlaceStory(placeId: string, interests: Interest[]) {
       .catch(() => setState("paused"));
   }, []);
 
+  useRememberHeard(clip, progress);
+
   const toggle = useCallback(() => {
     const audio = audioRef.current;
     if (state === "loading") return;
@@ -92,13 +94,13 @@ export function usePlaceStory(placeId: string, interests: Interest[]) {
       return;
     }
     setState("loading");
-    fetchClip(placeId, interests, PLACE_STORY_SEC)
+    fetchClip(placeId, listener, PLACE_STORY_SEC)
       .then((next) => {
         setClip(next);
         start(next);
       })
       .catch(() => setState("failed"));
-  }, [state, clip, progress, placeId, interests, start]);
+  }, [state, clip, progress, placeId, listener, start]);
 
   return { state, text: clip?.text ?? null, progress, toggle };
 }

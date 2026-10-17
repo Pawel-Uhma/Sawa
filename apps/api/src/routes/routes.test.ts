@@ -25,16 +25,12 @@ describe("POST /v1/routes/plan", () => {
   });
 
   it.each([
-    ["a too short ride", { origin: HACKATHON_VENUE, durationMin: 10, interests: ["historical"] }],
+    ["a too short ride", { origin: HACKATHON_VENUE, durationMin: 4, interests: ["historical"] }],
     ["an unknown interest", { origin: HACKATHON_VENUE, durationMin: 60, interests: ["pizza"] }],
     ["no interests", { origin: HACKATHON_VENUE, durationMin: 60, interests: [] }],
     [
       "an unknown story style",
       { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], storyStyle: "rap" },
-    ],
-    [
-      "a category instead of a tile in tags",
-      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], tags: ["historical"] },
     ],
     [
       "a destination together with a loop",

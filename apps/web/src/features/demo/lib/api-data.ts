@@ -1,48 +1,66 @@
 import {
   FAMILIARITY,
+  type Familiarity,
   type Interest,
   interestsOfTags,
-  PLACE_TAGS,
   type Route,
   STORY_STYLES,
+  type StoryStyle,
 } from "@sawa/shared";
 import { api } from "@/lib/api";
+import { getMemory, heardCounts } from "./memory";
 import type { LngLat, MockStop } from "./mock-data";
 import { USER_LOCATION } from "./mock-data";
+import type { Profile } from "./onboarding";
 import { type RideEnd, rideEndRequest } from "./ride-end";
 
 /**
- * Onboarding stores detailed tags (e.g. `jewish_warsaw`); the planner takes broad categories.
- * Every onboarding tag maps to one category, so an empty choice falls back to `historical`.
+ * Onboarding picks broad categories (`historical`, …); older detailed tags (e.g. `jewish_warsaw`)
+ * still map to their category. An empty choice falls back to `historical`.
  */
 export function toPlannerInterests(tags: readonly string[]): Interest[] {
   const interests = interestsOfTags(tags);
   return interests.length > 0 ? interests : ["historical"];
 }
 
-/** The other onboarding answers the planner uses (`Profile` in `lib/onboarding.ts`). */
-export type PlanPrefs = { familiarity?: string | null; storyStyle?: string | null };
-
 const oneOf = <T extends string>(values: readonly T[], value: string | null | undefined) =>
   values.find((v) => v === value);
 
-/** Plans a ride from the demo start with `POST /v1/routes/plan`. */
+/** Who listens: what the planner and the stories read from the onboarding answers. */
+export type Listener = {
+  interests: Interest[];
+  familiarity?: Familiarity;
+  storyStyle?: StoryStyle;
+};
+
+export function listenerOf(profile: Profile): Listener {
+  return {
+    interests: toPlannerInterests(profile.interests),
+    familiarity: oneOf(FAMILIARITY, profile.familiarity),
+    storyStyle: oneOf(STORY_STYLES, profile.storyStyle),
+  };
+}
+
+/**
+ * Plans a ride from the demo start with `POST /v1/routes/plan`. Sends what Sawa already told
+ * (lib/memory.ts), so places told in full give way to new ones.
+ */
 export async function planRoute(
   durationMin: number,
-  tags: readonly string[],
+  profile: Profile,
   end: RideEnd = { type: "open" },
-  prefs: PlanPrefs = {},
 ): Promise<Route> {
-  const placeTags = PLACE_TAGS.filter((t) => tags.includes(t));
+  const { interests, familiarity, storyStyle } = listenerOf(profile);
+  const heard = heardCounts(getMemory());
   const res = await api.v1.routes.plan.$post({
     json: {
       origin: { lat: USER_LOCATION[1], lng: USER_LOCATION[0] },
       durationMin,
-      interests: toPlannerInterests(tags),
+      interests,
       ...rideEndRequest(end),
-      tags: placeTags.length > 0 ? placeTags : undefined,
-      familiarity: oneOf(FAMILIARITY, prefs.familiarity),
-      storyStyle: oneOf(STORY_STYLES, prefs.storyStyle),
+      familiarity,
+      storyStyle,
+      heard: Object.keys(heard).length > 0 ? heard : undefined,
     },
   });
   if (!res.ok) throw new Error(`POST /v1/routes/plan: ${res.status}`);

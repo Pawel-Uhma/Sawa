@@ -22,13 +22,13 @@ import {
 import { createPortal } from "react-dom";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
-import { INTERESTS } from "../lib/mock-data";
-import { FAMILIARITY, type Profile, STORY_STYLES } from "../lib/onboarding";
+import { FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
 import {
   BubbleIcon,
   ChevronRightIcon,
   CompassIcon,
   InfoIcon,
+  PinIcon,
   RestartIcon,
   RoutesIcon,
   ShareIcon,
@@ -46,6 +46,9 @@ export type SawaMenuActions = {
   lastRouteStops: number | null;
   onOpenLastRoute: () => void;
   onRestart: () => void;
+  /** Ile miejsc Sawa już opowiedziała temu słuchaczowi (lib/memory.ts). */
+  rememberedPlaces: number;
+  onForget: () => void;
 };
 
 const SawaMenuContext = createContext<SawaMenuActions | null>(null);
@@ -337,7 +340,28 @@ function MenuContent({ actions, run }: MenuContentProps) {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const copiedTimer = useRef<number | undefined>(undefined);
-  useEffect(() => () => window.clearTimeout(copiedTimer.current), []);
+  // Zapomnienie jest nieodwracalne, więc pierwsze stuknięcie tylko pyta (bez okna dialogowego).
+  const [confirmForget, setConfirmForget] = useState(false);
+  const forgetTimer = useRef<number | undefined>(undefined);
+  useEffect(
+    () => () => {
+      window.clearTimeout(copiedTimer.current);
+      window.clearTimeout(forgetTimer.current);
+    },
+    [],
+  );
+
+  function forget() {
+    haptic();
+    window.clearTimeout(forgetTimer.current);
+    if (!confirmForget) {
+      setConfirmForget(true);
+      forgetTimer.current = window.setTimeout(() => setConfirmForget(false), 3000);
+      return;
+    }
+    setConfirmForget(false);
+    actions.onForget();
+  }
 
   const familiarity = labelOf(FAMILIARITY, profile.familiarity);
   const style = labelOf(STORY_STYLES, profile.storyStyle);
@@ -396,6 +420,19 @@ function MenuContent({ actions, run }: MenuContentProps) {
           label="Styl opowieści"
           value={style ?? "Nie wybrano"}
           onClick={() => run(() => actions.onEditProfile("style"))}
+        />
+        <Row
+          Icon={PinIcon}
+          label="Co już Ci opowiedziałam"
+          value={
+            actions.rememberedPlaces === 0
+              ? "Jeszcze nic. Zapamiętam, co usłyszysz"
+              : confirmForget
+                ? "Stuknij jeszcze raz, żeby zapomnieć"
+                : `${placesLabel(actions.rememberedPlaces)} · stuknij, żeby zapomnieć`
+          }
+          onClick={actions.rememberedPlaces === 0 ? () => {} : forget}
+          chevron={false}
         />
       </Group>
 
@@ -467,6 +504,14 @@ function Group({ title, children }: { title?: string; children: ReactNode }) {
       </div>
     </section>
   );
+}
+
+function placesLabel(n: number) {
+  const tens = n % 100;
+  const ones = n % 10;
+  if (n === 1) return "1 miejsce";
+  if (ones >= 2 && ones <= 4 && (tens < 12 || tens > 14)) return `${n} miejsca`;
+  return `${n} miejsc`;
 }
 
 type RowProps = {

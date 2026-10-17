@@ -1,9 +1,10 @@
 "use client";
 
-import type { Interest, LatLng } from "@sawa/shared";
+import type { LatLng } from "@sawa/shared";
 import { AnimatePresence } from "motion/react";
 import { useCallback, useEffect } from "react";
 import { usePlace, useSelectedPlace } from "@/features/map";
+import type { Listener } from "../lib/api-data";
 import { CardSkeleton, CloseButton, PlaceCardShell } from "./place-card";
 import { PlaceDetails } from "./place-details";
 
@@ -12,7 +13,7 @@ export type PlaceSelection = { id: string; position: LatLng | null };
 type PlaceCardHostProps = {
   /** Karta pokazuje się tylko na ekranie głównym; na trasie i w innych zakładkach miejsce czeka w URL-u. */
   isActive: boolean;
-  interests: Interest[];
+  listener: Listener;
   onSelectionChange: (selection: PlaceSelection | null) => void;
   onCoverChange: (px: number) => void;
 };
@@ -20,7 +21,7 @@ type PlaceCardHostProps = {
 /** Miejsce wybrane na mapie (`?p=` z mapy Antka) i jego karta. */
 export function PlaceCardHost({
   isActive,
-  interests,
+  listener,
   onSelectionChange,
   onCoverChange,
 }: PlaceCardHostProps) {
@@ -48,7 +49,7 @@ export function PlaceCardHost({
           className="rounded-[32px]"
         >
           {place ? (
-            <PlaceDetails place={place} interests={interests} onClose={close} />
+            <PlaceDetails place={place} listener={listener} onClose={close} />
           ) : detail.isError || (detail.isSuccess && !place) ? (
             <div className="flex items-start gap-3 p-5 pt-6">
               <p className="flex-1 text-[15px] text-tekst-2">

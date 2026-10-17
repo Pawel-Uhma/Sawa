@@ -2,9 +2,6 @@ import type { Familiarity } from "@sawa/shared";
 import { VISIBLE_RADIUS_M } from "./place-hits";
 import type { PlacePoint } from "./types";
 
-/** A place with one of the chosen onboarding tiles beats one matching only the category. */
-const TAG_MATCH_BONUS = 1.5;
-
 /**
  * How much richness counts (exponent on the weight): first-timers get the places with the
  * most to tell, locals get lesser-known ones a fairer chance.
@@ -16,10 +13,25 @@ export const RICHNESS_EXPONENT: Record<Familiarity, number> = {
 };
 
 export type ScorePrefs = {
-  /** Chosen onboarding tiles (place tags). */
-  tags?: ReadonlySet<string>;
   richnessExponent?: number;
+  /** Place id → facts the listener already heard there (`PlanRouteRequest.heard`). */
+  heard?: ReadonlyMap<string, number>;
 };
+
+/**
+ * Value left in a place told in full. Low, so the next ride takes places with something new,
+ * which over time are the less obvious ones; not zero, so a ride can still pass it.
+ */
+export const HEARD_FLOOR = 0.15;
+
+/** 1 for a new place, falling with what was told there, `HEARD_FLOOR` when nothing is left. */
+export function noveltyOf(place: PlacePoint, heard: ReadonlyMap<string, number> | undefined) {
+  const told = heard?.get(place.id) ?? 0;
+  if (told === 0) return 1;
+  const total = Math.max(place.richness ?? told, 1);
+  const left = Math.max(0, total - told) / total;
+  return HEARD_FLOOR + (1 - HEARD_FLOOR) * left;
+}
 
 /** Extra value for each matching interest beyond the first. */
 const EXTRA_MATCH_BONUS = 0.5;
@@ -30,8 +42,9 @@ const EXTRA_MATCH_BONUS = 0.5;
 const NON_MATCH_FACTOR = 0.2;
 
 /**
- * Value of passing a place: matching the chosen interests matters most (a chosen tile more),
- * then richness; places farther from the line count less (half at the edge of visibility).
+ * Value of passing a place: matching the chosen interests matters most,
+ * then richness; places farther from the line count less (half at the edge of visibility),
+ * and so do places where the listener heard most of what Sawa knows.
  */
 export function scorePlace(
   place: PlacePoint,
@@ -41,9 +54,9 @@ export function scorePlace(
 ): number {
   const matches = place.interests.filter((i) => interests.has(i)).length;
   const relevance = matches > 0 ? 1 + EXTRA_MATCH_BONUS * (matches - 1) : NON_MATCH_FACTOR;
-  const tagged = place.tags?.some((t) => prefs.tags?.has(t)) ? TAG_MATCH_BONUS : 1;
   const proximity = 1 - Math.min(distanceM, VISIBLE_RADIUS_M) / (2 * VISIBLE_RADIUS_M);
-  return place.weight ** (prefs.richnessExponent ?? 1) * relevance * tagged * proximity;
+  const novelty = noveltyOf(place, prefs.heard);
+  return place.weight ** (prefs.richnessExponent ?? 1) * relevance * proximity * novelty;
 }
 
 /** Richness (facts + trivia) to a weight with diminishing returns. */

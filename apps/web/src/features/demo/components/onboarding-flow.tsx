@@ -4,12 +4,12 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { haptic, SPRING } from "../lib/device";
-import { INTERESTS, SIMILAR_INTERESTS } from "../lib/mock-data";
+import { getMemory } from "../lib/memory";
 import {
   type Choice,
   FAMILIARITY,
+  INTERESTS,
   interestIcon,
-  MAX_INTERESTS,
   type Profile,
   STORY_STYLES,
 } from "../lib/onboarding";
@@ -80,7 +80,6 @@ export function OnboardingFlow({
     haptic();
     setProfile((current) => {
       const has = current.interests.includes(key);
-      if (!has && current.interests.length >= MAX_INTERESTS) return current;
       return {
         ...current,
         interests: has
@@ -197,12 +196,9 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
       return "Najpierw powiedz, czy znamy się z Warszawą.";
     case "interests": {
       const last = profile.interests.at(-1);
-      if (!last) return "Co Cię ciekawi? Wybierz do trzech.";
-      if (profile.interests.length >= MAX_INTERESTS) return "Komplet! Mam już pomysł na trasę.";
-      const tip = (SIMILAR_INTERESTS[last] ?? []).find((key) => !profile.interests.includes(key));
-      return tip
-        ? `Dobry wybór! Może jeszcze ${labelOf(tip).toLowerCase()}?`
-        : "Dobry wybór! Coś jeszcze?";
+      if (!last) return "Co Cię ciekawi? Możesz wybrać kilka.";
+      if (profile.interests.length === INTERESTS.length) return "Wszystko po trochu? Da się!";
+      return INTEREST_LINE[last] ?? "Dobry wybór! Coś jeszcze?";
     }
     case "style":
       return "I ostatnie: jak mam opowiadać?";
@@ -210,6 +206,14 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
       return "Mam to! Układam Twoją Warszawę.";
   }
 }
+
+/** Sawa reaguje na ostatnio wybraną kategorię. Przy sporcie i przyrodzie mówi wprost, że krótko. */
+const INTEREST_LINE: Record<string, string> = {
+  historical: "Historia to moja specjalność. Coś jeszcze?",
+  cultural: "Murale, świątynie, dawne bazary. Coś jeszcze?",
+  sports: "Boiska mam opisane krótko, ale po drodze ich nie brakuje.",
+  nature: "Parki i skwery! O nich opowiem krótko.",
+};
 
 function Progress({ index, total }: { index: number; total: number }) {
   return (
@@ -401,97 +405,90 @@ type InterestsProps = {
 };
 
 function Interests({ picked, onToggle, onNext }: InterestsProps) {
-  const isFull = picked.length >= MAX_INTERESTS;
-  const last = picked.at(-1);
-  // „Podobne” jak przy pierwszym uruchomieniu TikToka: podpowiedź pojawia się na kafelkach, nie w osobnej sekcji.
-  const similar = new Set(
-    last ? (SIMILAR_INTERESTS[last] ?? []).filter((key) => !picked.includes(key)) : [],
-  );
-
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
-      <Heading sub="Od tego zależy, o czym opowiem po drodze.">Co Cię ciekawi?</Heading>
+      <Heading sub="Od tego zależy, które miejsca wybiorę i o czym opowiem.">
+        Co Cię ciekawi?
+      </Heading>
 
       <ul className="grid grid-cols-2 gap-2.5 md:gap-3" aria-label="Zainteresowania">
         {INTERESTS.map((item) => {
           const isOn = picked.includes(item.key);
-          const isDisabled = !isOn && isFull;
-          const isSimilar = similar.has(item.key) && !isFull;
           return (
             <li key={item.key}>
               <motion.button
                 type="button"
                 aria-pressed={isOn}
-                disabled={isDisabled}
                 onClick={() => onToggle(item.key)}
-                whileTap={isDisabled ? undefined : { scale: 0.95 }}
+                whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", bounce: 0, duration: 0.2 }}
-                className={`relative flex h-full min-h-[68px] w-full items-center gap-2.5 rounded-3xl border-2 bg-white p-2.5 pr-3 text-left transition-[border-color,background-color,opacity,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia disabled:opacity-40 disabled:hover:shadow-none md:min-h-20 md:gap-3 md:p-3 ${
-                  isOn
-                    ? "border-glebia bg-mieta-jasna"
-                    : isSimilar
-                      ? "border-koral/50"
-                      : "border-transparent"
+                className={`flex h-full w-full flex-col items-start gap-2 rounded-3xl border-2 bg-white p-3 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia md:gap-3 md:p-4 ${
+                  isOn ? "border-glebia bg-mieta-jasna" : "border-transparent"
                 }`}
               >
-                <motion.span
-                  className="block shrink-0"
-                  animate={{ scale: isOn ? 1.08 : 1, rotate: isOn ? -4 : 0 }}
-                  transition={SPRING}
-                >
-                  <Image
-                    src={interestIcon(item.key)}
-                    alt=""
-                    width={64}
-                    height={64}
-                    className="size-11 md:size-14"
-                  />
-                </motion.span>
-                <span className="text-sm font-bold leading-tight md:text-base">{item.label}</span>
-
-                <AnimatePresence>
-                  {isSimilar && (
-                    <motion.span
-                      initial={{ opacity: 0, scale: 0.6 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.6 }}
-                      transition={SPRING}
-                      className="absolute -top-2 right-3 rounded-full bg-koral px-2 py-0.5 text-[11px] font-bold text-white"
-                    >
-                      podobne
-                    </motion.span>
-                  )}
-                </AnimatePresence>
+                <span className="flex w-full items-start justify-between">
+                  <motion.span
+                    className="block"
+                    animate={{ scale: isOn ? 1.08 : 1, rotate: isOn ? -4 : 0 }}
+                    transition={SPRING}
+                  >
+                    <Image
+                      src={interestIcon(item.key)}
+                      alt=""
+                      width={64}
+                      height={64}
+                      className="size-14 md:size-16"
+                    />
+                  </motion.span>
+                  <Check on={isOn} />
+                </span>
+                <span className="flex flex-col gap-0.5">
+                  <span className="text-base font-bold leading-tight md:text-lg">{item.label}</span>
+                  <span className="text-[13px] leading-snug text-tekst-2 md:text-sm">
+                    {item.hint}
+                  </span>
+                </span>
               </motion.button>
             </li>
           );
         })}
       </ul>
 
-      {/* Na telefonie przycisk przyklejony do dołu, żeby był pod kciukiem także przy długiej liście. */}
-      <div className="sticky bottom-0 -mx-4 mt-auto bg-gradient-to-t from-[#eef3f0] via-[#eef3f0] to-transparent px-4 pb-1 pt-6 md:static md:mx-0 md:bg-none md:p-0">
+      <div className="mt-auto md:mt-0">
         <PrimaryButton
           disabled={picked.length === 0}
           onClick={onNext}
           className="md:w-auto md:px-12"
         >
-          {picked.length === 0
-            ? "Wybierz co najmniej jedno"
-            : `Dalej · ${picked.length} z ${MAX_INTERESTS}`}
+          {picked.length === 0 ? "Wybierz co najmniej jedno" : "Dalej"}
         </PrimaryButton>
       </div>
     </div>
   );
 }
 
+/** Co znajomość miasta zmienia w trasie (planer R1: waga bogactwa miejsca, tło w opowieściach). */
+const FAMILIARITY_LINE: Record<string, string> = {
+  first_time: "Zaczynam od najważniejszych miejsc i tła",
+  know_a_bit: "Mieszam znane miejsca z mniej znanymi",
+  local: "Szukam mniej oczywistych miejsc",
+};
+
 function Building({ profile, onDone }: { profile: Profile; onDone: () => void }) {
   const [shown, setShown] = useState(0);
   const style = STORY_STYLES.find((item) => item.key === profile.storyStyle);
+  // Pamięć czytamy raz: ekran trwa 2–3 s, a w tym czasie nic jej nie zmienia.
+  const [remembered] = useState(() => Object.keys(getMemory().places).length);
   const lines = [
     profile.interests.length
       ? `Szukam miejsc: ${profile.interests.map((key) => labelOf(key).toLowerCase()).join(", ")}`
       : "Szukam miejsc z historią na Twojej trasie",
-    style ? `Opowiadam: ${style.label.toLowerCase()}` : "Dobieram długość opowieści",
+    FAMILIARITY_LINE[profile.familiarity ?? "know_a_bit"] ?? FAMILIARITY_LINE.know_a_bit,
+    remembered > 0
+      ? "Pomijam to, co już Ci opowiedziałam"
+      : style
+        ? `Opowiadam: ${style.label.toLowerCase()}`
+        : "Dobieram długość opowieści",
     "Sprawdzam tramwaje i autobusy",
   ];
 

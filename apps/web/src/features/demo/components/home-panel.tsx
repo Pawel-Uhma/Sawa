@@ -11,7 +11,8 @@ import Image from "next/image";
 import { type CSSProperties, useRef } from "react";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
-import { DURATION_MAX_MIN, DURATION_MIN_MIN, DURATION_STEP_MIN, INTERESTS } from "../lib/mock-data";
+import { DURATION_STOPS_MIN } from "../lib/mock-data";
+import { INTERESTS } from "../lib/onboarding";
 import {
   CUSTOM_DESTINATION_NAME,
   DESTINATION_PRESETS,
@@ -38,7 +39,7 @@ type HomePanelProps = {
 };
 
 /** Podpisy pod suwakiem w miejscach ich wartości (suwak jest liniowy, więc 1 h nie leży w 1/4). */
-const SCALE = [30, 60, 120, 180, 240];
+const SCALE = [5, 30, 60, 120, 180, 240];
 
 /** Środek gałki suwaka (30 px) dla danej wartości: tor zaczyna się i kończy pół gałki od krawędzi. */
 function thumbCenter(durationMin: number): string {
@@ -117,12 +118,12 @@ export function HomePanel({
         className="suwak mt-2"
         aria-label="Czas przejażdżki"
         aria-valuetext={formatDuration(durationMin)}
-        min={DURATION_MIN_MIN}
-        max={DURATION_MAX_MIN}
-        step={DURATION_STEP_MIN}
-        value={durationMin}
+        min={0}
+        max={DURATION_STOPS_MIN.length - 1}
+        step={1}
+        value={DURATION_STOPS_MIN.indexOf(durationMin)}
         onChange={(event) => {
-          const value = Number(event.target.value);
+          const value = DURATION_STOPS_MIN[Number(event.target.value)];
           if (value !== lastStep.current) haptic(4);
           lastStep.current = value;
           onDurationChange(value);

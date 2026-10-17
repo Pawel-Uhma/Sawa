@@ -1,8 +1,9 @@
 "use client";
 
-import type { Interest, Place } from "@sawa/shared";
+import type { Place } from "@sawa/shared";
 import { useState } from "react";
 import { placeTagLabel } from "@/lib/interest-labels";
+import type { Listener } from "../lib/api-data";
 import { usePlaceStory } from "../lib/place-story";
 import {
   CloseButton,
@@ -17,11 +18,11 @@ import {
 
 const FACTS_PREVIEW = 3;
 
-type PlaceDetailsProps = { place: Place; interests: Interest[]; onClose: () => void };
+type PlaceDetailsProps = { place: Place; listener: Listener; onClose: () => void };
 
 /** Treść karty miejsca, jak arkusz w Mapach Apple: nagłówek, główna akcja, pasek zdjęć, a niżej wszystko, co wiemy o miejscu. */
-export function PlaceDetails({ place, interests, onClose }: PlaceDetailsProps) {
-  const story = usePlaceStory(place.id, interests);
+export function PlaceDetails({ place, listener, onClose }: PlaceDetailsProps) {
+  const story = usePlaceStory(place.id, listener);
   const [showAll, setShowAll] = useState(false);
   const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW)).map(cleanFact);
   const { title, aside } = splitName(place.name);

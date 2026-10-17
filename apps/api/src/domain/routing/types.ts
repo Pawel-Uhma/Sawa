@@ -39,9 +39,9 @@ export type PlacePoint = {
   name: string;
   position: LatLng;
   interests: string[];
-  /** Detailed place tags (onboarding tiles); missing in hand-made fixtures. */
-  tags?: string[];
   weight: number;
+  /** Facts + trivia; with `ScorePrefs.heard` tells how much is left to tell. */
+  richness?: number;
 };
 
 /** A place visible from a pattern, at a time offset from the pattern's first stop. */
