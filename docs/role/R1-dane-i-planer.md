@@ -2,7 +2,7 @@
 
 **Cel:** dane z dane.um.warszawa.pl podane do aplikacji szybko i stabilnie, plus planer, który z rozkładu i pozycji pojazdów układa trasę z przesiadkami.
 
-**Twoje pliki (po 17.10):** `lib/waw-client.ts`, `app/api/waw/[zasob]/route.ts`, `lib/planner/` (logika trasy), `lib/types.ts` (typy odpowiedzi miasta).
+**Twoje pliki (po 17.10):** w `apps/api/src/`: `adapters/waw/`, `adapters/gtfs/`, `domain/routing/`, `services/plan-route.ts`, `services/transit.ts`, `routes/transit.ts`, `routes/routes.ts`; schematy tras i transportu w `packages/shared`. Deploy API na Railway. Szczegóły: [11-zasady-pracy-i-kodu.md](../11-zasady-pracy-i-kodu.md) §3–4, plan: [12-plan-mvp.md](../12-plan-mvp.md) §7.
 
 **Przeczytaj przed pracą:** [03-dane.md](../03-dane.md) i [api/](../api/) (co naprawdę zwracają endpointy), [05-plan-architektury.md](../05-plan-architektury.md) (przepływ danych, TTL cache), [10-prd.md](../10-prd.md) (sekcje Główna ścieżka i Dane).
 

@@ -348,3 +348,9 @@
 > Konfiguracja połączenia z Supabase przez MCP (projekt arvrzfqtqlrasftvvkaq, odczyt i zapis, darmowy plan), potem commit configu.
 
 **AI:** Dodałem `.mcp.json` z serwerem MCP Supabase (`mcp.supabase.com`, `project_ref=arvrzfqtqlrasftvvkaq`, odczyt i zapis, funkcje database/docs/development/functions/storage/debugging, bez branching, bo jest płatny). Logowanie przez OAuth (`/mcp`), w pliku nie ma sekretów.
+
+### 2026-10-17 11:40 · Szczpan
+
+> create a rule list for collaborating on this repository for a hackathon. 4 people will be working on this (all claude subscriptions). create a plan for mvp implementation based on the docs folder. define the tech stack, ask questions if unsure, mark assumptions. supabase for data, nextjs, vercel, backend on railway. also define rules for abstraction layers, tests, good practices, naming conventions, maintainability of the code.
+
+**AI:** Po 4 pytaniach (wybrano: backend TypeScript + Hono na Railway, monorepo pnpm, dokumenty po polsku i kod po angielsku, R5 włączona do R2) napisałem `docs/11-zasady-pracy-i-kodu.md` (git, PR, obszary ról, warstwy abstrakcji, nazewnictwo, testy, dobre praktyki, praca z agentami) i `docs/12-plan-mvp.md` (stack, architektura, kontrakt API, model danych Supabase, algorytm planera, tryb offline, harmonogram M0–M4 z zadaniami ról, założenia [Z], pytania otwarte). Dopasowałem do 4 osób i nowego stacku `CLAUDE.md`, `README.md`, `zespol.md`, `06-plan-dnia.md`, `05-plan-architektury.md` (oznaczony jako częściowo nieaktualny), karty ról, `todo.md` (nowe T-15, T-16, T-45, T-62–T-64, zadania R5 → R2) i `stan.md`. Nic nie commitowałem.

@@ -1,5 +1,7 @@
 # Plan architektury
 
+> **17.10, 11:45: częściowo nieaktualne.** Backend przeniesiony z route handlers Next.js do osobnej usługi Hono na Railway, kod w monorepo pnpm (`apps/web`, `apps/api`, `packages/shared`). Aktualny stack, struktura i komendy startowe: [12-plan-mvp.md](12-plan-mvp.md). Zasady kodu: [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md). Ten plik zostaje dla TTL cache i otwartych pytań.
+>
 > **Ten plik to plan, nie kod.** Zgodnie z regulaminem (§4 ust. 3) cały kod powstaje od 17.10, 11:00. Komendy poniżej odpalamy dopiero wtedy.
 
 ## Stack

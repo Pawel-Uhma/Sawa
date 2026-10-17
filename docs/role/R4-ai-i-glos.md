@@ -2,7 +2,7 @@
 
 **Cel:** Sawa mówi. Model językowy (Bielik, zapasowo Claude) pisze opowieść o miejscu, które właśnie mijasz, a TTS ją odczytuje. Czat to druga droga do Sawy.
 
-**Twoje pliki (po 17.10):** `app/api/chat/route.ts`, `lib/prompts/` (prompt Sawy i szablony opowieści), integracja TTS, awatar (wg [awatar/](../awatar/)).
+**Twoje pliki (po 17.10):** w `apps/api/src/`: `adapters/llm/`, `adapters/tts/`, `prompts/` (prompt Sawy), `services/story.ts`, `services/chat.ts`, `routes/stories.ts`, `routes/chat.ts`; `scripts/prewarm-stories.ts`; awatar (wg [awatar/](../awatar/)). Szczegóły: [11-zasady-pracy-i-kodu.md](../11-zasady-pracy-i-kodu.md) §3–4, plan: [12-plan-mvp.md](../12-plan-mvp.md) §8.
 
 **Przeczytaj przed pracą:** [awatar/README.md](../awatar/README.md) (persona i styl), [10-prd.md](../10-prd.md) (Rozwiązanie, Główna ścieżka), [05-plan-architektury.md](../05-plan-architektury.md) (LLM, Głos), [historia/README.md](../historia/README.md).
 

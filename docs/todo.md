@@ -1,6 +1,6 @@
 # Todo zespołu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 11:30
+**Ostatnia aktualizacja:** 17.10.2026, ok. 11:50
 
 **Źródło prawdy dla zadań.** Każdy agent i każda osoba czyta tę listę przed pracą i aktualizuje ją po pracy.
 
@@ -9,7 +9,7 @@
 - `- [ ]` do zrobienia
 - `- [~]` w toku: dopisz kto i od kiedy, np. `(Antek, od 12:10)`
 - `- [x]` zrobione: dopisz godzinę, np. `(Janek, 13:05)`
-- Tag roli na końcu linii (`R1`–`R5`, `Wszyscy`): kto odpowiada. Pełna lista ról w [zespol.md](zespol.md).
+- Tag roli na końcu linii (`R1`–`R4`, `Wszyscy`; dawne zadania R5 ma R2): kto odpowiada. Pełna lista ról w [zespol.md](zespol.md).
 - Terminy to plan z [06-plan-dnia.md](06-plan-dnia.md). Zadanie po terminie oznacz w `stan.md` jako zablokowane.
 
 ## Start i wspólne (sobota 17.10)
@@ -18,14 +18,19 @@
 - [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git) — `Wszyscy` — 11:30
 - [ ] **T-09** Konta: GitHub (repo), Vercel, dostęp do LLM — `Wszyscy` — 12:00
 - [ ] **T-02** Projekt Supabase na koncie zespołu (nie prywatnym); kto zakłada, do potwierdzenia — `R2` — 13:00
-- [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, maplibre, pierwszy push — `R3` — 13:00
+- [ ] **T-04** Monorepo wg [12-plan-mvp.md](12-plan-mvp.md) §4 i §13: pnpm, `apps/web`, `apps/api` (Hono, `/health`), `packages/shared`, Biome, Vitest, CI w GitHub Actions; pierwszy push — `R3` — 12:30
+- [ ] **T-62** Projekt Railway dla `apps/api`, deploy `/health`, zmienne env, CORS dla Vercela — `R1` — 13:30
+- [ ] **T-63** Kontrakt v0 w `packages/shared` (§5 planu MVP): `Place`, `Route`, `Story` i reszta, zatwierdzony na synchronizacji — `Wszyscy` — 13:30
+- [ ] **T-64** Każdy czyta [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) i zgłasza w `stan.md` niezgodę z założeniami [Z] z [12-plan-mvp.md](12-plan-mvp.md) §11 — `Wszyscy` — 12:30
 - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
 - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
 - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
 
 ## R1 · Dane i planer tras
 
-- [ ] **T-10** Proxy `app/api/waw/[zasob]` z cache w pamięci (TTL wg docs/05), jeden zbiór działa end to end — `R1` — 13:00
+- [ ] **T-10** Adapter `apps/api/src/adapters/waw` z cache w pamięci (TTL wg docs/05) i fixtures z curl; `/v1/weather` i `/v1/transit/stops/near` działają end to end — `R1` — 15:00
+- [ ] **T-15** Skąd kolejność przystanków linii (GTFS / stare API / kształt z pozycji pojazdów), decyzja w `stan.md` (P1 w planie MVP) — `R1` — 13:30
+- [ ] **T-16** Mock `POST /v1/routes/plan` z fixture zgodnej z kontraktem, żeby R3 i R4 nie czekali — `R1` — 14:30
 - [ ] **T-11** Pozycje pojazdów ZTM i odjazdy z przystanku (endpointy z [api/](api/)) — `R1` — 15:00
 - [ ] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00
 - [ ] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00
@@ -51,20 +56,21 @@
 
 ## R4 · AI i głos
 
-- [ ] **T-40** `app/api/chat` z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
+- [ ] **T-45** Port `LlmProvider` z implementacjami `bielik`, `claude`, `fake` i `POST /v1/stories` z `story_cache` — `R4` — 17:00
+- [ ] **T-40** `POST /v1/chat` (SSE) z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
 - [ ] **T-41** Prompt Sawy: persona rówieśniczki, która mieszka w Warszawie rok, zasady „fakty ze źródłami, bez zmyślania” — `R4` — 20:00
 - [ ] **T-42** Opowieść „z okna”: tekst o punkcie na trasie z faktów z Supabase; długość zależna od czasu do punktu — `R4` — 22:00
 - [ ] **T-43** TTS: wybór (ElevenLabs czy open source), test polskiego na 3 tekstach — `R4` — 15:00
 - [ ] **T-44** Awatar Sawy wygenerowany od zera po 11:00 wg [awatar/](awatar/) — `R4` — 15:00
 
-## R5 · Produkt, pitch i QA
+## R2 · Produkt, pitch i QA (dawna R5)
 
-- [ ] **T-50** Scenariusz demo 1,5 min (ścieżka z [10-prd.md](10-prd.md)) i tekst pitcha 5 min — `R5` — 15:00
-- [ ] **T-51** Zaktualizować pitch deck w [pitch/](pitch/) pod MVP — `R5` — 22:00
-- [ ] **T-52** Test na telefonie co 2 h: wszystkie ścieżki z PRD, zgłoszenia w tym pliku — `R5` — od 17:00
-- [ ] **T-55** Nagranie wideo demo jako zapas — `R5` — 22:00
-- [ ] **T-53** Dziennik AI i dokumentacja na oddanie (`ai-log.md`, `README.md`, regulamin §4 ust. 4) — `R5` — niedziela 10:30
-- [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R5` — niedziela 10:30
+- [ ] **T-50** Scenariusz demo 1,5 min (ścieżka z [10-prd.md](10-prd.md)) i tekst pitcha 5 min — `R2` — 15:00
+- [ ] **T-51** Zaktualizować pitch deck w [pitch/](pitch/) pod MVP — `R2` — 22:00
+- [ ] **T-52** Test na telefonie co 2 h: wszystkie ścieżki z PRD, zgłoszenia w tym pliku (robią wszyscy na zmianę, R2 pilnuje) — `R2` — od 17:00
+- [ ] **T-55** Nagranie wideo demo jako zapas — `R2` — 22:00
+- [ ] **T-53** Dziennik AI i dokumentacja na oddanie (`ai-log.md`, `README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30
+- [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R2` — niedziela 10:30
 
 ## Wszyscy · końcówka
 

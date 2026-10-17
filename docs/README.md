@@ -2,12 +2,12 @@
 
 **Kiedy:** 17–18 października 2026, start pracy w sobotę o 11:00, koniec w niedzielę o 11:00
 **Gdzie:** 42 Warsaw, al. Solidarności 171B
-**Zespół:** 5 osób, każda z własnym agentem Claude Code. Kto jest kim: [zespol.md](zespol.md)
+**Zespół:** 4 osoby, każda z własnym agentem Claude Code. Kto jest kim: [zespol.md](zespol.md)
 
 ## Jesteś agentem? Czytaj w tej kolejności
 
 1. [stan.md](stan.md): co się dzieje teraz, co zablokowane, które decyzje są otwarte
-2. [todo.md](todo.md): zadania z tagami ról (R1–R5)
+2. [todo.md](todo.md): zadania z tagami ról (R1–R4)
 3. [zespol.md](zespol.md): znajdź swój wiersz po `git config user.name`, to da Ci rolę
 4. [role/](role/): karta Twojej roli (zakres, pliki, zasady, kto na kogo czeka)
 5. Resztę dokumentów bierz wg potrzeby (tabela niżej)
@@ -21,7 +21,9 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 | Wyzwanie | **1. „Warszawa 2076”** (17.10): zanikająca tożsamość i przynależność do miasta |
 | Pomysł | **Sawa**: planuje przejazd komunikacją miejską i opowiada o mijanych miejscach jak podcast. [PRD](10-prd.md), dane historyczne okolicy w [historia/](historia/README.md) |
 | Baza | Supabase (konto zespołu, 17.10) |
-| Stack | Next.js + TypeScript, szczegóły w [05-plan-architektury.md](05-plan-architektury.md) |
+| Stack | Monorepo pnpm: Next.js na Vercel, API Hono na Railway, Supabase. [12-plan-mvp.md](12-plan-mvp.md) |
+| Zasady kodu | [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md): git, obszary ról, warstwy, nazewnictwo, testy |
+| Zespół | 4 osoby, role R1–R4 (R5 rozwiązana, zadania ma R2) |
 | Kod przed wydarzeniem | **Nie piszemy** (regulamin §4 ust. 3). Od 17.10, 11:00 wolno |
 
 ## Mapa dokumentów
@@ -63,7 +65,9 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 
 | Plik | Co jest w środku |
 |---|---|
-| [05-plan-architektury.md](05-plan-architektury.md) | Stack, struktura repo, przepływ danych, otwarte pytania techniczne |
+| [12-plan-mvp.md](12-plan-mvp.md) | **Plan MVP:** stack, architektura, kontrakt API, model danych, planer, harmonogram z zadaniami ról, założenia, pytania |
+| [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) | **Zasady:** git i PR, kto jest właścicielem czego, warstwy abstrakcji, nazewnictwo, testy, dobre praktyki, praca z agentami |
+| [05-plan-architektury.md](05-plan-architektury.md) | Pierwszy plan architektury (częściowo nieaktualny, zob. 12), TTL cache |
 | [01-regulamin.md](01-regulamin.md) | Zasady konkursu, punktacja, co oddajemy |
 
 ## Gdzie co zapisać
