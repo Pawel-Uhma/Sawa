@@ -59,6 +59,8 @@
 
 ## R3 · Frontend i mapa
 
+- [ ] **T-123** Tryb dla dzieci: przełącznik w onboardingu, pole `audience` w kontrakcie, prostsza opowieść Sawy (dalej tylko z faktów), delikatnie o miejscach wojennych; pomysły dodatkowe w issue ([#65](https://github.com/Pawel-Uhma/Sawa/issues/65)) — `R3` (Paweł; prompt to obszar R4)
+
 - [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-30** Mapa MapLibre z jednym zbiorem punktów (miejsca z `/v1/places`, nie z T-10) — `R3` — 13:00 (Antek, 16:40; plan w [14-plan-mapy.md](14-plan-mapy.md); `/mapa` z kartą miejsca i trasą PR #12, API `SawaMap` dla ekranów PR #16, miejsca z kafelków widoku na całą Warszawę PR #27)
