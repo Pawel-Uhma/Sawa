@@ -31,6 +31,10 @@ Jeśli prompt był tylko pytaniem i nic nie zmieniłeś, i tak dopisz linię `**
 
 Next.js (App Router) + TypeScript, Tailwind, mapa MapLibre. Szczegóły w `docs/05-plan-architektury.md`.
 
+## Frontend
+
+Frontend (R3 i każdy UI) projektujemy inspirowany skillem `apple-design`: płynny, fizyczny ruch, przerywalne przejścia, czytelna typografia i restraint, z uwzględnieniem reduced motion.
+
 ## Styl
 
 Dokumentację piszesz po polsku, zwięźle. Commity bez przypisywania autorstwa Claude.

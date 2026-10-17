@@ -341,3 +341,183 @@
 
 
 **AI:** Zacommitowałem pozostałe pliki (surowe dane historii, mapy PNG, dziennik) i wypchnąłem `main` do github.com/Pawel-Uhma/sawa z pełną historią (35 commitów).
+
+### 2026-10-17 11:30 · Pawel
+
+> dodaj linijke do claude.md zeby frontend byl robiony inspirowany skillem apple-design
+
+
+**AI:** Dodałem do `CLAUDE.md` sekcję „Frontend”: UI projektujemy inspirowany skillem `apple-design` (fizyczny ruch, przerywalne przejścia, typografia, restraint, reduced motion).
+
+### 2026-10-17 11:30 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  CLAUDE.md               |  4 ++++
+>  docs/ai-log.md          |  7 +++++++
+>  docs/awatar/README.md   | 28 ++++++++++++++--------------
+>  docs/historia/README.md |  4 ++--
+>  4 files changed, 27 insertions(+), 16 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/CLAUDE.md b/CLAUDE.md
+> index 560f292..2bd1e94 100644
+> --- a/CLAUDE.md
+> +++ b/CLAUDE.md
+> @@ -31,6 +31,10 @@ Jeśli prompt był tylko pytaniem i nic nie zmieniłeś, i tak dopisz linię `**
+>  
+>  Next.js (App Router) + TypeScript, Tailwind, mapa MapLibre. Szczegóły w `docs/05-plan-architektury.md`.
+>  
+> +## Frontend
+> +
+> +Frontend (R3 i każdy UI) projektujemy inspirowany skillem `apple-design`: płynny, fizyczny ruch, przerywalne przejścia, czytelna typografia i restraint, z uwzględnieniem reduced motion.
+> +
+>  ## Styl
+>  
+>  Dokumentację piszesz po polsku, zwięźle. Commity bez przypisywania autorstwa Claude.
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 940306f..b80bf78 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -341,3 +341,10 @@
+>  
+>  
+>  **AI:** Zacommitowałem pozostałe pliki (surowe dane historii, mapy PNG, dziennik) i wypchnąłem `main` do github.com/Pawel-Uhma/sawa z pełną historią (35 commitów).
+> +
+> +### 2026-10-17 11:30 · Pawel
+> +
+> +> dodaj linijke do claude.md zeby frontend byl robiony inspirowany skillem apple-design
+> +
+> +
+> +**AI:** Dodałem do `CLAUDE.md` sekcję „Frontend”: UI projektujemy inspirowany skillem `apple-design` (fizyczny ruch, przerywalne przejścia, typografia, restraint, reduced motion).
+> diff --git a/docs/awatar/README.md b/docs/awatar/README.md
+> index 23e817d..0c12470 100644
+> --- a/docs/awatar/README.md
+> +++ b/docs/awatar/README.md
+> @@ -2,7 +2,7 @@
+>  
+>  > **Szkice do dyskusji, nie elementy projektu.** Regulamin (§4 ust. 3) zabrania używania „innych elementów przygotowanych przed wydarzeniem”. Tu ustalamy styl i prompt. Właściwy awatar generujemy od zera 17.10 po 11:00.
+>  
+> -## Założenia (13.10, Paweł)
+> +## Założenia (17.10), Paweł)
+>  
+>  - Styl: 3D, słodki, ale nie dziecinny, w klimacie fintechowej maskotki. Ma to być awatar 3D, nie rysunek.
+>  - Charakter: **rówieśniczka**, młoda, z humorem, mówi jak znajoma z miasta.
+> @@ -37,7 +37,7 @@ Zestawienie: [szkice/00-zestawienie.jpg](szkice/00-zestawienie.jpg)
+>  9. Glossy 3D app-icon style avatar of a cute young mermaid named Sawa: only her head and shoulders inside a rounded square tile, winking, teal hair with tiny bubbles, gold sword-shaped hairpin. Smooth glossy 3D materials, soft shadows, vibrant but tasteful palette of deep blue, coral and gold, like a premium fintech app icon or sticker. Plain background, no text.
+>  10. Cute stylized 3D character of Sawa, a young Warsaw mermaid in her twenties, sitting on the stone edge of the Vistula boulevard at golden hour, tail dipped in the water, looking at the viewer with a friendly grin, phone in hand. Blurred Warsaw skyline with the Palace of Culture and Science in soft bokeh behind her. Polished animated-film 3D render, warm light, soft materials, premium app mascot feel.
+>  
+> -## Runda 2: cała postać, mniej ludzka (13.10)
+> +## Runda 2: cała postać, mniej ludzka (17.10))
+>  
+>  Feedback Pawła po rundzie 1: najbliżej były 01, 04 i 06, ale żaden nie pasuje. Sawa ma być widoczna w całości i mniej ludzka. Wzór to puchata maskotka w stylu Meta: prosta bryła, oczy z kropek, rumieńce, macha.
+>  
+> @@ -53,7 +53,7 @@ Zestawienie: [szkice/00-zestawienie-runda2.jpg](szkice/00-zestawienie-runda2.jpg
+>  
+>  Wspólne elementy promptu w rundzie 2: *full-body, entire character visible from head to tail; non-human mermaid creature, rounded blob body, chubby tail with fin, stubby arms; no hair, no human face: two tiny black dot eyes, small smile, pink blush; premium tech mascot.* Pełne prompty są w historii zadań na fal.ai (request ID w logu sesji).
+>  
+> -## Runda 3: testy promptów na `google/nano-banana-2-lite` (13.10)
+> +## Runda 3: testy promptów na `google/nano-banana-2-lite` (17.10))
+>  
+>  Feedback po rundzie 2: kierunek 12 (glossy), ale Sawa ma wyglądać jak człowiek, czyli jak prawdziwa syrena, bez bluzy. Ma być cute i glossy w stylu fintech, a nie bezosobowa przytulanka jak 15. Tło białe, liczy się tylko postać. Prompty testujemy na tanim modelu, a dobry prompt potem puszczamy na mocniejszych.
+>  
+> @@ -65,7 +65,7 @@ Zestawienie: [szkice/00-zestawienie-runda3.jpg](szkice/00-zestawienie-runda3.jpg
+>  19. **Minimal, telefon** ([19](szkice/19-lite-minimal-telefon.png)): Minimal premium 3D mascot of a mermaid named Sawa, designed like a modern fintech brand character. Full body visible. Human girl face with simple clean features: almond eyes with highlights, small nose, soft smile. Sleek dark teal hair, bare shoulders, a simple top of two gold shell shapes, a smooth glossy mint tail with subtle scale texture and a coral fin. Sitting on her own curled tail, relaxed and friendly, holding a small phone. Few colors, smooth gradients, glossy finish, soft global illumination. Pure white background, no props, no text.
+>  20. **Piegi, różowe końcówki** ([20](szkice/20-lite-piegi-rozowe-konce.png)): Full-body 3D character sheet pose of Sawa, a young Warsaw mermaid, cute and glossy, looking straight at the viewer and waving hello. Expressive human face with big shiny eyes, freckles and a warm grin, wavy shoulder-length teal hair with pink tips. Scale crop top, long glossy tail shimmering from mint to coral, elegant tail fin. Stylized animated-film proportions, smooth polished materials like a high-end app mascot, soft rim light. Isolated on a pure white background, the character only.
+>  
+> -## Runda 4: 5 wariacji wyglądu na bazie 18 (13.10)
+> +## Runda 4: 5 wariacji wyglądu na bazie 18 (17.10))
+>  
+>  Paweł: 18 najlepszy. Szkielet promptu zostaje bez zmian, zmieniają się tylko włosy, kolory i dodatki. Doszło „No legs, no feet.”.
+>  
+> @@ -81,13 +81,13 @@ Zestawienie: [szkice/00-zestawienie-runda4.jpg](szkice/00-zestawienie-runda4.jpg
+>  | 24 | Czarny bob z turkusowymi końcówkami, złote kółka | Granatowa ze złotą tarczą | Srebrno-niebieski | [24](szkice/24-lite-czarny-bob-tarcza.png) |
+>  | 25 | Platynowy blond z różowymi pasmami | Turkusowa | Czerwień → złoto (barwy Warszawy) | [25](szkice/25-lite-blond-czerwien-zloto.png) |
+>  
+> -## Runda 5: rysy i wyraz twarzy (13.10)
+> +## Runda 5: rysy i wyraz twarzy (17.10))
+>  
+>  Paweł: 18 zostaje, ale twarz ma pokazywać charakter „w środku”, a nie zadziorność. Test z blond włosami: [26](szkice/26-lite-blond-charakter.png).
+>  
+>  Zmieniony fragment promptu: *Her face shows a warm, curious, clever personality rather than sass: bright attentive eyes with sparkling highlights and a gentle knowing look, softly raised brows, a sincere open smile with a hint of mischief, slight dimples, soft rounded nose, natural expressive features, like a friend who knows every secret corner of the city and can't wait to show you. Messy golden blonde hair…*
+>  
+> -## Runda 6: wygląd 18, pięć charakterów (13.10)
+> +## Runda 6: wygląd 18, pięć charakterów (17.10))
+>  
+>  Wygląd 18 bez zmian (turkusowe włosy, spinka-miecz, koralowy top, miętowy ogon z jedną płetwą). Zmieniają się tylko rysy i wyraz twarzy. W promptach 18 zamiast miny wchodzi „Inner character: …” z opisem twarzy.
+>  
+> @@ -101,7 +101,7 @@ Zestawienie: [szkice/00-zestawienie-runda6.jpg](szkice/00-zestawienie-runda6.jpg
+>  | 30 | Spokojna stara dusza | Dłuższa twarz, kości policzkowe, spokojne spojrzenie, półuśmiech | [30](szkice/30-lite-stara-dusza.png) |
+>  | 31 | Dowcipna kumpela | Okrągła twarz, oczy zmrużone od śmiechu, krzywy uśmiech, dołeczek | [31](szkice/31-lite-dowcipna-kumpela.png) |
+>  
+> -## Runda 7: prompt 31 na mocniejszych modelach (13.10)
+> +## Runda 7: prompt 31 na mocniejszych modelach (17.10))
+>  
+>  Paweł wybrał 31 (dowcipna kumpela). Ten sam prompt puszczony na 3 modelach, limit 0,30 $ za obraz.
+>  
+> @@ -113,7 +113,7 @@ Zestawienie: [szkice/00-zestawienie-runda7.jpg](szkice/00-zestawienie-runda7.jpg
+>  | 33 | `openai/gpt-image-2` (quality medium) | [33](szkice/33-31-gpt-image-2-medium.png) |
+>  | 34 | `bytedance/seedream/v5/pro/text-to-image` | [34](szkice/34-31-seedream-5-pro.jpg) |
+>  
+> -## Koszt eksploracji (do 13.10)
+> +## Koszt eksploracji (do 17.10)
+>  
+>  Cennik fal.ai podaje części modeli w „units”, więc dokładną kwotę widać tylko w panelu fal.ai (Usage). Szacunek:
+>  
+> @@ -129,25 +129,25 @@ Cennik fal.ai podaje części modeli w „units”, więc dokładną kwotę wida
+>  | ideogram 4.5, krea 2, grok 2, qwen 3 | 4 | ok. 0,01–0,08 $ (szacunek) | 0,05–0,30 $ |
+>  | **Razem** | **25** | | **ok. 0,90–1,70 $** |
+>  
+> -## Wybór (13.10)
+> +## Wybór (17.10))
+>  
+>  Na razie **32**: prompt 31 na `google/nano-banana-2.1`.
+>  
+>  Marka wyprowadzona z 32:
+>  - Paleta: Głębia `#17706F` (primary, turkus włosów), Mięta `#8ED1B5` (secondary, ogon), Koral `#F2755F` (akcent, top). Neutralne: tekst `#102B2A`, tło `#FFFFFF` / `#F4F6F5`, ciemne tło `#0C2423`.
+> -- Fonty: **Plus Jakarta Sans** (baza: nagłówki, tekst, UI) i **Fredoka** (playful: logo, hasła, dymki Sawy). Inter odpadł 13.10.
+> -- Logo: 5 propozycji (Fredoka z falą, Baloo 2 z mieczykiem, Shrikhand naklejka, Gluten tańczące litery, Bagel Fat One plakietka z buzią) w [logo-propozycje.png](logo-propozycje.png). Wybór na środę.
+> +- Fonty: **Plus Jakarta Sans** (baza: nagłówki, tekst, UI) i **Fredoka** (playful: logo, hasła, dymki Sawy). Inter odpadł 17.10.
+> +- Logo: 5 propozycji (Fredoka z falą, Baloo 2 z mieczykiem, Shrikhand naklejka, Gluten tańczące litery, Bagel Fat One plakietka z buzią) w [logo-propozycje.png](logo-propozycje.png). Wybór zespołu.
+>  
+>  Prezentacja dla zespołu: [../pitch/sawa-pitch.pdf](../pitch/sawa-pitch.pdf) (źródło: `sawa-pitch.html`).
+>  
+> -## Logo, ikona, makieta sklepu (13.10)
+> +## Logo, ikona, makieta sklepu (17.10))
+>  
+>  - Logo: napis **„sawa.”** we Fredoce 600, kolor Głębia, kropka w kolorze Koral (Paweł wybrał wersję z okładki).
+>  - Fredoka **tylko w logo**. Paweł widzi w niej problem z polskimi znakami, więc reszta (nagłówki, tekst, UI) jest w Plus Jakarta Sans.
+>  - Ikona aplikacji: **duże zbliżenie na głowę z obrazu 32 na jasnym tle**, [ikona/ikona-32-zoom.png](ikona/ikona-32-zoom.png) (wycinek 279,56–745,522 z oryginału 1024 px). Odrzucona wersja z miętowym tłem: [ikona/35a-glowa-mieta.png](ikona/35a-glowa-mieta.png) (wariant b: [35b](ikona/35b-glowa-mieta.png)). Wygenerowane przez `google/nano-banana-2.1/edit` z obrazem 32 jako referencją. Prompt: *Using this exact character, create an app icon: only her head and shoulders, centered and filling most of the frame, same face, same messy teal hair, same gold sword hairclip, same cheerful lopsided smile and freckles, same glossy vinyl toy material. Plain solid mint green background (#8ED1B5), soft studio light, no text, no border, square composition suitable for a rounded app icon.*
+>  - Podglądy: [logo-i-ikona.png](logo-i-ikona.png), [makieta-sklep.png](makieta-sklep.png).
+>  
+> -## Sceny z Sawą do prezentacji (13.10, `google/nano-banana-2-lite`)
+> +## Sceny z Sawą do prezentacji (17.10), `google/nano-banana-2-lite`)
+>  
+>  Lite nie przyjmuje obrazka referencyjnego, więc wygląd trzyma sam opis postaci z promptu 31 (turkusowe włosy, spinka-miecz, koralowy top, miętowy ogon, piegi, krzywy uśmiech). Pliki są w [sceny/](sceny/).
+>  
+> @@ -159,7 +159,7 @@ Lite nie przyjmuje obrazka referencyjnego, więc wygląd trzyma sam opis postaci
+>  | 39 | Hackathonowa noc: laptop, kubek, budzik | 8, zakres na 24 h |
+>  | 40 | Lista z odhaczonymi punktami, kciuk w górę | 20, decyzje |
+>  
+> -### Sceny tematyczne, runda 2 (13.10)
+> +### Sceny tematyczne, runda 2 (17.10))
+>  
+>  Każdy temat w prezentacji ma swoją Sawę. Model `google/nano-banana-2-lite`, pliki w [sceny/](sceny/):
+>  
+> diff --git a/docs/historia/README.md b/docs/historia/README.md
+> index e03c160..aab8d88 100644
+> --- a/docs/historia/README.md
+> +++ b/docs/historia/README.md
+> @@ -1,8 +1,8 @@
+>  # Historia okolicy 42 Warsaw (promień 1 km)
+>  
+> -Dane dla Sawy w trybie „co tu było?”. Środek: **al. Solidarności 171, Czyste (
+
