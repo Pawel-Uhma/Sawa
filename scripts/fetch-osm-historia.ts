@@ -3,6 +3,8 @@
 // docs/historia/osm-historia.geojson for the seed and the planner export (T-73).
 // The file is committed, so the seed stays repeatable offline. Usage:
 //   pnpm --filter @sawa/scripts fetch:osm-historia
+//   pnpm --filter @sawa/scripts fetch:osm-historia --fast  # keep the current file, add new places
+//                                                           # with a long lead only (minutes, not 30+)
 
 import { readFile, writeFile } from "node:fs/promises";
 import { z } from "zod";
@@ -42,6 +44,9 @@ out center tags;`;
 
 type Candidate = { el: OsmElement; cls: Classified; title: string };
 
+/** Skips the one-article-at-a-time fetch of short leads, which Wikipedia throttles hard. */
+const FAST = process.argv.includes("--fast");
+
 async function main() {
   const elements = await overpass();
   const candidates: Candidate[] = [];
@@ -51,7 +56,10 @@ async function main() {
     if (cls && title) candidates.push({ el, cls, title });
   }
 
+  const previous = FAST ? await previousFeatures() : [];
+  const known = new Set(previous.flatMap((f) => f.properties.zrodla.map((s) => s.url)));
   const articles = await wikiArticles([...new Set(candidates.map((c) => c.title))]);
+  console.log(`${articles.size} articles fetched`);
   const curated = await curatedPlaces();
   const drop = { noArticle: 0, short: 0, far: 0, curatedArticle: 0 };
   const withArticle: (Candidate & { wiki: WikiArticle })[] = [];
@@ -63,6 +71,7 @@ async function main() {
     else if (wiki.coordinates && distanceM(wiki.coordinates, pos) > MAX_ARTICLE_DISTANCE_M)
       drop.far++;
     else if (curated.titles.has(wiki.title) || curated.titles.has(c.title)) drop.curatedArticle++;
+    else if (known.has(wiki.url)) continue;
     // Redirects can point several tags at one article, so group by the resolved title.
     else withArticle.push({ ...c, wiki, title: wiki.title });
   }
@@ -72,14 +81,14 @@ async function main() {
     name: c.el.tags.name ?? nameFromTitle(c.wiki.title),
     ...position(c.el),
   }));
-  const kept = dedupeByName([...curated.places, ...unique]).filter(
+  const kept = dedupeByName([...curated.places, ...previous.map(asNamed), ...unique]).filter(
     (x): x is (typeof unique)[number] => "el" in x,
   );
 
-  const features = kept
-    .map(({ el, cls, wiki }) => mapHistoriaElement(el, cls, wiki))
-    .filter((f) => f !== null)
-    .sort((a, b) => a.properties.id.localeCompare(b.properties.id));
+  const features = [
+    ...previous,
+    ...kept.map(({ el, cls, wiki }) => mapHistoriaElement(el, cls, wiki)).filter((f) => f !== null),
+  ].sort((a, b) => a.properties.id.localeCompare(b.properties.id));
 
   await writeFile(
     OUT_PATH,
@@ -184,6 +193,7 @@ async function wikiArticles(titles: string[]): Promise<Map<string, WikiArticle>>
     await sleep(1000);
   }
 
+  if (FAST) return out;
   // Many Polish leads are one line ("Teatr Ateneum – teatr w Warszawie."), so take the
   // first sentences of the whole article instead. TextExtracts gives those one page at a time.
   const short = [...out.entries()].filter(([, a]) => a.extract.length < MIN_EXTRACT);
@@ -238,6 +248,26 @@ async function curatedPlaces() {
     lat: f.geometry.coordinates[1],
   }));
   return { titles, places };
+}
+
+type PreviousFeature = NonNullable<ReturnType<typeof mapHistoriaElement>>;
+
+/** The committed file, kept as is in --fast mode. */
+async function previousFeatures(): Promise<PreviousFeature[]> {
+  try {
+    return (JSON.parse(await readFile(OUT_PATH, "utf8")) as { features: PreviousFeature[] })
+      .features;
+  } catch {
+    return [];
+  }
+}
+
+function asNamed(f: PreviousFeature) {
+  return {
+    name: f.properties.nazwa,
+    lng: f.geometry.coordinates[0],
+    lat: f.geometry.coordinates[1],
+  };
 }
 
 function position(el: OsmElement) {

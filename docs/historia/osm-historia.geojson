@@ -80,6 +80,43 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.1381069,
+     52.2296568
+    ]
+   },
+   "properties": {
+    "id": "osm-node-10724545982",
+    "nazwa": "Józef Piłsudski",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Pomnik Józefa Piłsudskiego − monument znajdujący się przed budynkiem dawnej „Murowanki” w Warszawie w Wawrze.",
+     "Jest poświęcony pamięci marszałka oraz poległych w obronie ojczyzny w latach 1918–1920, czyli podczas wojny polsko-bolszewickiej.",
+     "W OpenStreetMap oznaczone jako miejsce pamięci."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pomnik Józefa Piłsudskiego w Wawrze",
+      "url": "https://pl.wikipedia.org/wiki/Pomnik_J%C3%B3zefa_Pi%C5%82sudskiego_w_Wawrze"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/10724545982"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0164312,
      52.2110293
     ]
@@ -265,6 +302,49 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.2650795,
+     52.2463148
+    ]
+   },
+   "properties": {
+    "id": "osm-node-1149893659",
+    "nazwa": "Lekcja historii",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Ławeczka Józefa Piłsudskiego w Sulejówku – pomnik odsłonięty 10 czerwca 2010 w pobliżu willi „Milusin”, w której Józef Piłsudski mieszkał w latach 1923–1926.",
+     "Autorem rzeźby jest krakowski rzeźbiarz Karol Badyna.",
+     "Pomnik przedstawia Józefa Piłsudskiego z córkami.",
+     "Józef Piłsudski w galowym mundurze zajmuje fotel, wspierając się na szabli, a jego młodsza córka Jadwiga siedzi na ławce, trzymając model samolotu.",
+     "Starsza córka Wanda stoi obok trzymając lalkę.",
+     "Na poręczy fotela zawieszona jest wojskowa maciejówka.",
+     "Autor zatytułował pomnik „Lekcja historii”.",
+     "Pomnik odlany z brązu stoi na granitowym cokole.",
+     "W OpenStreetMap oznaczone jako miejsce pamięci; data powstania: 2010-06-10."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ławeczka Józefa Piłsudskiego w Sulejówku",
+      "url": "https://pl.wikipedia.org/wiki/%C5%81aweczka_J%C3%B3zefa_Pi%C5%82sudskiego_w_Sulej%C3%B3wku"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/1149893659"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0231444,
      52.2250684
     ]
@@ -289,6 +369,44 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/node/11777561530"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.887432,
+     52.1975377
+    ]
+   },
+   "properties": {
+    "id": "osm-node-12121570308",
+    "nazwa": "Pamięci ofiar katastrofy kolejowej z 20 sierpnia 1990 roku",
+    "typ": "tablica",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Katastrofa kolejowa w Ursusie – katastrofa kolejowa, do której doszło 20 sierpnia 1990 w Warszawie, na ówczesnym osiedlu Ursus w dzielnicy Ochota.",
+     "O godz. 6:20 na linii kolejowej nr 1 pociąg dalekobieżny relacji Praha hlavní nádraží – Warszawa Wschodnia najechał na pociąg osobowy relacji Szklarska Poręba Górna – Warszawa Wschodnia.",
+     "W wyniku zderzenia zginęło 16 osób, a 64 zostały ranne.",
+     "W OpenStreetMap oznaczone jako tablica pamiątkowa; data powstania: 2024-08-20."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Katastrofa kolejowa w Ursusie",
+      "url": "https://pl.wikipedia.org/wiki/Katastrofa_kolejowa_w_Ursusie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/12121570308"
      }
     ],
     "pewnosc": "wysoka",
@@ -371,6 +489,81 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0703976,
+     52.1410917
+    ]
+   },
+   "properties": {
+    "id": "osm-node-1250588907",
+    "nazwa": "Mieszko I",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Dąb Mieszko I – dąb szypułkowy, pomnik przyrody, jedno z najstarszych drzew w Polsce (ok. 600 lat).",
+     "Najstarszy oraz drugi (po Upartym Mazurze) pod względem wielkości dąb szypułkowy na Mazowszu.",
+     "Drzewo rośnie w warszawskiej dzielnicy Ursynów, przy odcinku ul. Nowoursynowskiej przebiegającym przy Lesie Natolińskim.",
+     "W OpenStreetMap oznaczone jako atrakcja turystyczna; data powstania: ~C14."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Dąb Mieszko I",
+      "url": "https://pl.wikipedia.org/wiki/D%C4%85b_Mieszko_I"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/1250588907"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.092125,
+     52.260883
+    ]
+   },
+   "properties": {
+    "id": "osm-node-12666422443",
+    "nazwa": "Główna Biblioteka Pracy i Zabezpieczenia Społecznego",
+    "typ": "budynek",
+    "adres_dzis": "Zabraniecka 8L",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Główna Biblioteka Pracy i Zabezpieczenia Społecznego (GBPiZS) – biblioteka naukowa w Warszawie, będąca samodzielną jednostką organizacyjną nadzorowaną przez Ministra Rodziny, Pracy i Polityki Społecznej.",
+     "W skład GBPiZS wchodzą Dział Zbiorów Pracy i Zabezpieczenia Społecznego oraz Dział Zbiorów dla Niewidomych.",
+     "Biblioteka ma siedzibę przy ul. Zabranickiej 8L w dzielnicy Targówek.",
+     "Dział Zbiorów dla Niewidomych znajduje się przy ul. Konwiktorskiej 7 w dzielnicy Śródmieście.",
+     "W OpenStreetMap oznaczone jako biblioteka."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Główna Biblioteka Pracy i Zabezpieczenia Społecznego",
+      "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3wna_Biblioteka_Pracy_i_Zabezpieczenia_Spo%C5%82ecznego"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/12666422443"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "cultural"
     ]
    }
   },
@@ -609,6 +802,45 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     20.9334591,
+     52.16206
+    ]
+   },
+   "properties": {
+    "id": "osm-node-13702080641",
+    "nazwa": "Gurudwara Sri Guru Singh Sabha",
+    "typ": "swiatynia",
+    "adres_dzis": "Na Skraju 56",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Związek wyznaniowy Singh Sabha Gurudwara w Rzeczpospolitej Polskiej – pierwszy i jedyny zarejestrowany w Polsce sikhijski związek wyznaniowy.",
+     "MSWiA dokonało rejestracji związku na liście kościołów i innych związków wyznaniowych pod pozycją nr 166 w dniu 20 grudnia 2007.",
+     "Pierwszym Naczelnym Przełożonym związku został Jawahar Jyoti Singh.",
+     "Siedziba władz i pierwsza gurudwara w Polsce znajduje się w Warszawie przy ul. Na Skraju 56.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Związek wyznaniowy Singh Saba Gurudwara w Rzeczpospolitej Polskiej",
+      "url": "https://pl.wikipedia.org/wiki/Zwi%C4%85zek_wyznaniowy_Singh_Saba_Gurudwara_w_Rzeczpospolitej_Polskiej"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/13702080641"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      20.9786154,
      52.2691494
     ]
@@ -826,6 +1058,44 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0720506,
+     52.1587239
+    ]
+   },
+   "properties": {
+    "id": "osm-node-1977123519",
+    "nazwa": "Panteon Wielkich Polaków",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Panteon Wielkich Polaków – dolna część Świątyni Opatrzności Bożej w Warszawie, przeznaczona na miejsce pochówku i upamiętnienia najbardziej zasłużonych polskich patriotów oraz ludzi kultury i nauki.",
+     "Znajduje się tu m.in. replika watykańskiego grobu papieża Jana Pawła II.",
+     "Kryptę Zasłużonych Polaków można zwiedzać.",
+     "W OpenStreetMap oznaczone jako pomnik."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Panteon Wielkich Polaków",
+      "url": "https://pl.wikipedia.org/wiki/Panteon_Wielkich_Polak%C3%B3w"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/1977123519"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
     ]
    }
   },
@@ -1062,6 +1332,45 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.2350118,
+     52.3286631
+    ]
+   },
+   "properties": {
+    "id": "osm-node-2517497633",
+    "nazwa": "Głaz Edmunda",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Głaz Edmunda – głaz narzutowy o obwodzie 800 cm i wysokości 1,3 m., znajdujący się na terenie rezerwatu przyrody Grabicz.",
+     "Nazwę głaz zawdzięcza leśnikowi Edmundowi Nurkiewiczowi, który znalazł go w 1951 roku podczas zalesiania okolic Wołomina (około 60 m na południe od obecnego ujęcia wody dla miasta).",
+     "Stamtąd głaz został przetransportowany w pobliże leśniczówki w Kobyłce .",
+     "Głaz jest pomnikiem przyrody, amfibolitem .",
+     "W OpenStreetMap oznaczone jako miejsce historyczne; w rejestrze zabytków."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Głaz Edmunda",
+      "url": "https://pl.wikipedia.org/wiki/G%C5%82az_Edmunda"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/2517497633"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
     ]
    }
   },
@@ -1336,6 +1645,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.0718394,
+     52.1585582
+    ]
+   },
+   "properties": {
+    "id": "osm-node-2975521950",
+    "nazwa": "Muzeum Jana Pawła II i Prymasa Wyszyńskiego",
+    "typ": "budynek",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Muzeum Jana Pawła II i Prymasa Wyszyńskiego w Warszawie – państwowa instytucja kultury współprowadzona przez Ministerstwo Kultury i Dziedzictwa Narodowego oraz archidiecezję warszawską.",
+     "Zostało powołane 15 kwietnia 2016 w wyniku przekształcenia z instytucji prowadzonej przez Archidiecezje Warszawską, powołanej 18 maja 2010 roku na mocy dekretu arcybiskupa warszawskiego, kardynała Kazimierza Nycza.",
+     "Muzeum zlokalizowane jest na warszawskim Wilanowie, pod kopułą Świątyni Opatrzności Bożej.",
+     "Jest nowym miejscem na kulturalnej mapie Warszawy.",
+     "Ekspozycja główna znajduje się w pierścieniu okalającym kopułę Świątyni na wysokości 26 metrów i zajmuje około 2000 metrów kwadratowych powierzchni.",
+     "Uroczyste otwarcie Muzeum Jana Pawła II i Prymasa Wyszyńskiego z udziałem Prezydenta RP Andrzeja Dudy miało miejsce 16 października 2019.",
+     "W OpenStreetMap oznaczone jako muzeum."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Muzeum Jana Pawła II i Prymasa Wyszyńskiego",
+      "url": "https://pl.wikipedia.org/wiki/Muzeum_Jana_Paw%C5%82a_II_i_Prymasa_Wyszy%C5%84skiego"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/2975521950"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0262487,
      52.2282068
     ]
@@ -1440,6 +1790,43 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1553103,
+     52.2548383
+    ]
+   },
+   "properties": {
+    "id": "osm-node-3022438789",
+    "nazwa": "Pomnik Więźniów Obozu NKWD",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Pomnik Więźniów Obozu NKWD w Rembertowie – monument znajdujący się na terenie nieistniejących Zakładów Amunicyjnych „Pocisk” w warszawskim Rembertowie, przy skrzyżowaniu ul. Marsa i ul. Płatnerskiej.",
+     "Upamiętnia więźniów znajdującego się tam w latach 1944–1945 Obozu Specjalnego NKWD numer 10.",
+     "W OpenStreetMap oznaczone jako miejsce pamięci."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pomnik Więźniów Obozu NKWD w Rembertowie",
+      "url": "https://pl.wikipedia.org/wiki/Pomnik_Wi%C4%99%C5%BAni%C3%B3w_Obozu_NKWD_w_Rembertowie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/3022438789"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
     ]
    }
   },
@@ -1621,6 +2008,44 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/node/315798649"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1212482,
+     52.2519405
+    ]
+   },
+   "properties": {
+    "id": "osm-node-3159245305",
+    "nazwa": "Pomnik Poległych w Bitwie pod Grochowem",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Pomnik Poległych w Bitwie pod Grochowem – pomnik, a zarazem wspólna mogiła uczestników bitwy o Olszynkę Grochowską z 25 lutego 1831 roku.",
+     "Znajduje się w Warszawie w dzielnicy Praga-Południe – u zbiegu ulic Szerokiej i Traczy (na skraju rezerwatu przyrody Olszynka Grochowska).",
+     "Wytyczona wzdłuż ul. Traczy aleja Chwały znajduje się w dzielnicy Rembertów.",
+     "W OpenStreetMap oznaczone jako miejsce pamięci."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pomnik Poległych w Bitwie pod Grochowem",
+      "url": "https://pl.wikipedia.org/wiki/Pomnik_Poleg%C5%82ych_w_Bitwie_pod_Grochowem"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/3159245305"
      }
     ],
     "pewnosc": "wysoka",
@@ -2129,6 +2554,42 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     20.8634308,
+     52.3201874
+    ]
+   },
+   "properties": {
+    "id": "osm-node-3812035068",
+    "nazwa": "Atomowa Kwatera Dowodzenia",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Atomowa Kwatera Dowodzenia – nieczynny obiekt wojskowy, zlokalizowany w Puszczy Kampinoskiej na terenie Kampinoskiego Parku Narodowego.",
+     "Znajduje się w Laskach, w rejonie Dąbrowy Leśnej, w sąsiedztwie wydmy Łuże.",
+     "Ten niedokończony obiekt miał służyć jako stanowisko dowodzenia na wypadek wojny atomowej.",
+     "W OpenStreetMap oznaczone jako atrakcja turystyczna."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Atomowa Kwatera Dowodzenia",
+      "url": "https://pl.wikipedia.org/wiki/Atomowa_Kwatera_Dowodzenia"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/3812035068"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": []
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0003801,
      52.2471598
     ]
@@ -2336,6 +2797,119 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/node/4576647066"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1032308,
+     52.2981822
+    ]
+   },
+   "properties": {
+    "id": "osm-node-4664074018",
+    "nazwa": "Pomnik Prymasa Tysiąclecia",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Pomnik Prymasa Tysiąclecia w Ząbkach – trzymetrowy pomnik odsłonięty 3 listopada 2001 roku na pamiątkę setnej rocznicy urodzin i dwudziestej rocznicy śmierci ks. kard. Stefana Wyszyńskiego.",
+     "Twórcą posągu był prof. Czesław Dźwigaj, profesor Akademii Sztuk Pięknych w Krakowie.",
+     "Honorowym przewodniczącym komitetu budowy pomnika był ks. bp Kazimierz Romaniuk.",
+     "Posąg ten stoi kościołem Miłosierdzia Bożego w Ząbkach.",
+     "Pomysłodawcą wybudowania monumentu i przewodniczącym Społecznego Komitetu Budowy Pomnika był Ryszard Walczak.",
+     "W OpenStreetMap oznaczone jako miejsce pamięci; data powstania: 2001-11-03."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pomnik Prymasa Tysiąclecia w Ząbkach",
+      "url": "https://pl.wikipedia.org/wiki/Pomnik_Prymasa_Tysi%C4%85clecia_w_Z%C4%85bkach"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/4664074018"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.2115969,
+     52.1620737
+    ]
+   },
+   "properties": {
+    "id": "osm-node-4783536270",
+    "nazwa": "Pomnik ku czci ofiar Zagłady",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Getto w Falenicy (getto falenickie) – getto dla ludności żydowskiej, utworzone przez Niemców w Falenicy.",
+     "Ogółem przeszło przez nie 7500 osób, około 1500 zmarło z głodu i chorób, około 300 zamordowano w getcie i miejscowym obozie pracy, większość pozostałych zginęła w obozie zagłady w Treblince.",
+     "W OpenStreetMap oznaczone jako miejsce pamięci; data powstania: 1992."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Getto w Falenicy",
+      "url": "https://pl.wikipedia.org/wiki/Getto_w_Falenicy"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/4783536270"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1910827,
+     52.2373149
+    ]
+   },
+   "properties": {
+    "id": "osm-node-4852464256",
+    "nazwa": "Kamień Piłsudskiego",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Kamień Piłsudskiego w Wesołej – granitowy głaz narzutowy znajdujący się na grzbiecie długiej grzędy wydmowej zwanej Górami Milowymi położonej w lesie na południe od osiedla Zielona w Wesołej, ustawiony na kształt menhira, upamiętniający pierwsze (i jedyne) jawne wobec niemieckiego okupanta ćwiczenia polowe Polskiej Organizacji Wojskowej, które odbyły się tu 29 kwietnia 1917 roku.",
+     "W OpenStreetMap oznaczone jako miejsce pamięci."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kamień Piłsudskiego w Wesołej",
+      "url": "https://pl.wikipedia.org/wiki/Kamie%C5%84_Pi%C5%82sudskiego_w_Weso%C5%82ej"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/4852464256"
      }
     ],
     "pewnosc": "wysoka",
@@ -2641,6 +3215,42 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.2693107,
+     52.1094318
+    ]
+   },
+   "properties": {
+    "id": "osm-node-5939672687",
+    "nazwa": "Obelisk Józefa Piłsudskiego",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Obelisk Józefa Piłsudskiego w Otwocku – pomnik w kształcie obelisku upamiętniający wizytę Józefa Piłsudskiego w Otwocku, znajdujący się na północno-zachodnim narożniku skrzyżowania ulic Tadeusza Kościuszki i Fryderyka Chopina (w pobliżu posesji przy ul. Kościuszki 18).",
+     "W OpenStreetMap oznaczone jako miejsce pamięci."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Obelisk Józefa Piłsudskiego w Otwocku",
+      "url": "https://pl.wikipedia.org/wiki/Obelisk_J%C3%B3zefa_Pi%C5%82sudskiego_w_Otwocku"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/5939672687"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
     ]
    }
   },
@@ -3130,6 +3740,45 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0115308,
+     52.1411536
+    ]
+   },
+   "properties": {
+    "id": "osm-node-7898923717",
+    "nazwa": "Muzeum Ośrodka Misyjnego Salezjanów",
+    "typ": "budynek",
+    "adres_dzis": "Korowodu 20",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Salezjańskie Muzeum Misyjne – muzeum mieszczące się w Salezjańskim Ośrodku Misyjnym przy ul. Korowodu 20 w Warszawie.",
+     "W placówce zgromadzono ok. 3000 eksponatów z całego świata.",
+     "Stanowi drugie, co do wielkości zbiorów muzeum misyjne w Polsce.",
+     "Celem jego utworzenia było przybliżenie zwiedzającym tematyki misji, ukazanie kultury i zwyczajów ludów ewangelizowanych oraz warunków pracy misjonarzy i misjonarek.",
+     "W OpenStreetMap oznaczone jako muzeum."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Salezjańskie Muzeum Misyjne w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Salezja%C5%84skie_Muzeum_Misyjne_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/7898923717"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "cultural"
     ]
    }
   },
@@ -3763,6 +4412,42 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     20.9157356,
+     52.14731
+    ]
+   },
+   "properties": {
+    "id": "osm-node-9997992050",
+    "nazwa": "Figura Boga Ojca",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Figura Boga Ojca w Falentach – barokowa figura Boga Ojca pierwotnie znajdująca się na szczycie fasady warszawskiego kościoła brygidek od około 1692 r., a współcześnie od 1828 r. na polu bitwy pod Raszynem jako pomnik bitwy pod Raszynem (1809).",
+     "W OpenStreetMap oznaczone jako rzeźba; data powstania: late C17."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Figura Boga Ojca w Falentach",
+      "url": "https://pl.wikipedia.org/wiki/Figura_Boga_Ojca_w_Falentach"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/9997992050"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0183765,
      52.2376104
     ]
@@ -3868,6 +4553,45 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/relation/12160344"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.8677166,
+     52.254288
+    ]
+   },
+   "properties": {
+    "id": "osm-relation-12316027",
+    "nazwa": "Fundamenty wieży nr 9 Transatlantyckiej Centrali Radiotelegraficznej Bemowo",
+    "typ": "budynek",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Transatlantycka Centrala Radiotelegraficzna (zwyczajowo Radiostacja Babice) – funkcjonująca w latach 1923−1945 radiostacja dużej mocy, składająca się z trzech zespołów urządzeń radiotelegraficznych:",
+     "Stacji Nadawczej – instalacji w Starych Babicach i w Warszawie, współcześnie na styku gminy Stare Babice oraz warszawskich dzielnic Bemowo (obszary MSI Fort Radiowo i Las Bemowski) i Bielany (Radiowo);",
+     "Stacji Odbiorczej – instalacji w Grodzisku Mazowieckim;",
+     "Centralnego Biura Operacyjnego – zarządzania czynnościami nadawania i odbioru w Warszawie.",
+     "W OpenStreetMap oznaczone jako ruiny."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Transatlantycka Centrala Radiotelegraficzna",
+      "url": "https://pl.wikipedia.org/wiki/Transatlantycka_Centrala_Radiotelegraficzna"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/12316027"
      }
     ],
     "pewnosc": "wysoka",
@@ -4545,6 +5269,125 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     20.8760399,
+     52.3547975
+    ]
+   },
+   "properties": {
+    "id": "osm-way-109881640",
+    "nazwa": "Cmentarz komunalny w Kiełpinie",
+    "typ": "cmentarz",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Cmentarzu w Kiełpinie Poduchownym – cmentarz położony we wsi Kiełpin Poduchowny k.",
+     "Łomianek, w gminie Łomianki, w powiecie warszawskim zachodnim, w województwie mazowieckim.",
+     "Cmentarz składa się z części parafialnej tzw. starej oraz nowej części komunalnej.",
+     "W OpenStreetMap oznaczone jako cmentarz."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cmentarz w Kiełpinie (gmina Łomianki)",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Kie%C5%82pinie_(gmina_%C5%81omianki)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/109881640"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1076276,
+     52.2465383
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1102640824",
+    "nazwa": "Kolonia Praussa",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kolonia Praussa, także osiedle Posłów i Senatorów PPS – osiedle na warszawskim Grochowie znajdujące się w kwartale ulic: Szaserów, Chłopickiego, Boremlowskiej i Żółkiewskiego.",
+     "Wewnętrzne ulice znajdujące się na terenie kolonii to Byczyńska, Płowce i Lubieszowska.",
+     "W 2018 układ urbanistyczny i zespół budowlany kolonii został wpisany do rejestru zabytków.",
+     "W OpenStreetMap oznaczone jako miejsce historyczne; w rejestrze zabytków."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kolonia Praussa",
+      "url": "https://pl.wikipedia.org/wiki/Kolonia_Praussa"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1102640824"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1974455,
+     52.1621046
+    ]
+   },
+   "properties": {
+    "id": "osm-way-115561347",
+    "nazwa": "Wu Bong Sah",
+    "typ": "swiatynia",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Szkoła Zen Kwan Um w Polsce – związek wyznaniowy reprezentujący tradycję koreańskiego buddyzmu sŏn (jap. zen).",
+     "Założycielem i duchowym patronem szkoły jest Dae Soen Sa Nim Seung Sahn (1927–2004), 78. patriarcha koreańskiej tradycji chogye.",
+     "Działalność związku datuje się od pierwszej wizyty Seung Sahna DSSN w Polsce w 1978 roku, natomiast formalna rejestracja nastąpiła w 1982 roku (pod nazwą Stowarzyszenie Buddyjskie Zen „Chogie” w Polsce, która następnie została zamieniona na Szkoła Zen Kwan Um).",
+     "Związek jest częścią ogólnoświatowej Szkoły Zen Kwan Um, zrzeszającej obecnie około 70 ośrodków medytacyjnych w 17 krajach świata.",
+     "W Polsce Szkoła Zen Kwan Um prowadzi pięć ośrodków i siedem grup medytacyjnych.",
+     "Nauczycielem prowadzącym Świątyni Głównej Wubongsa jest mistrz zen Joeng Hye (Andrzej Piotrowski).",
+     "Szkoła jest członkiem Polskiej Unii Buddyjskiej pod patronatem J. Ś. Dalajlamy.",
+     "Wśród proponowanych przez nią aktywności i form praktyki znajdują się: codzienne poranne i wieczorne sesje medytacji oraz śpiewów, praktyka konganów, intensywne odosobnienia od 3 dni do 3 miesięcy, trening rezydencki, odosobnienia solo oraz pobyt gościnny Templestay.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Szkoła Zen Kwan Um w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Szko%C5%82a_Zen_Kwan_Um_w_Polsce"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/115561347"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      20.9907961,
      52.2464615
     ]
@@ -4578,6 +5421,43 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.8940343,
+     52.2468815
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1210861700",
+    "nazwa": "Fort III Twierdzy Warszawa „Blizne”",
+    "typ": "budynek",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Fort III („Blizne”) – jeden z fortów pierścienia zewnętrznego Twierdzy Warszawa, wybudowany w latach 80.",
+     "XIX wieku. Poprzednim w kolejności jest wysunięty przed linię fort IIA „Babice”, zaś następnym fort IV „Chrzanów”.",
+     "W OpenStreetMap oznaczone jako fort; w rejestrze zabytków."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Fort III Twierdzy Warszawa",
+      "url": "https://pl.wikipedia.org/wiki/Fort_III_Twierdzy_Warszawa"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1210861700"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
     ]
    }
   },
@@ -4648,6 +5528,45 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/way/122633471"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9197784,
+     52.1395551
+    ]
+   },
+   "properties": {
+    "id": "osm-way-124771239",
+    "nazwa": "Pałac w Falentach",
+    "typ": "budynek",
+    "adres_dzis": "Aleja Hrabska 3",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Pałac w Falentach – pałac z I połowy XVII wieku, znajdujący się w Falentach, w gminie Raszyn.",
+     "Wybudowany został około 1620 roku przez Zygmunta Opackiego, starostę piaseczyńskiego.",
+     "Pałac jest otoczony parkiem krajobrazowym i stawami.",
+     "Obecny kształt pałacu został mu nadany podczas przebudowy ukończonej w 1857 roku.",
+     "W OpenStreetMap oznaczone jako dwór."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pałac w Falentach",
+      "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_w_Falentach"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/124771239"
      }
     ],
     "pewnosc": "wysoka",
@@ -4805,6 +5724,90 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.2611599,
+     52.169987
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1305276920",
+    "nazwa": "Dawny Cmentarz Żydowski",
+    "typ": "cmentarz",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Cmentarz żydowski w Aleksandrowie – cmentarz żydowski znajdujący się w Aleksandrowie, pomiędzy ulicą Podkowy w Warszawie i ulicą Sosnową w Emowie.",
+     "Założony ok. 1935. Pierwotnie zajmował powierzchnię 2,7 ha.",
+     "Był miejscem pochówku Żydów z Falenicy i okolic.",
+     "Został zniszczony podczas działań wojennych w latach 1944−1945.",
+     "Przetrwały tylko gruzy będące prawdopodobnie fragmentami nagrobków.",
+     "W sierpniu 2020 z inicjatywy Zbigniewa Nizińskiego z Fundacji \"Pamięć, Która Trwa\" na terenie cmentarza została ustawiona stela wykonana z czarnego granitu.",
+     "W OpenStreetMap oznaczone jako cmentarz; data powstania: 1935."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cmentarz żydowski w Warszawie (Aleksandrów)",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_%C5%BCydowski_w_Warszawie_(Aleksandr%C3%B3w)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1305276920"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1374091,
+     52.3614707
+    ]
+   },
+   "properties": {
+    "id": "osm-way-132043532",
+    "nazwa": "Kościół pw. Świętego Andrzeja Boboli",
+    "typ": "swiatynia",
+    "adres_dzis": "Aleja Marszałka Józefa Piłsudskiego 248/252",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół świętego Andrzeja Boboli w Markach – rzymskokatolicki kościół parafialny należący do zgromadzenia michalitów.",
+     "Należy do dekanatu kobyłkowskiego diecezji warszawsko-praskiej.",
+     "Mieści się na mareckim osiedlu Struga.",
+     "Świątynia została zbudowana w latach 1928-1931 według projektu architekta Feliksa Michalskiego.",
+     "Jest to pierwszy kościół pod wezwaniem tego świętego w Polsce.",
+     "Jej budowniczym był ksiądz Antoni Poławski, który był przekonany, że św. Andrzej Bobola ocalił okolice Warszawy przed najazdem bolszewików w 1920 roku.",
+     "Na mocy testamentu księdza Poławskiego, świątynia została przekazana zgromadzeniu michalitów.",
+     "Podczas II wojny światowej budowla została uszkodzona.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół św. Andrzeja Boboli w Markach",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Andrzeja_Boboli_w_Markach"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/132043532"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
     ]
    }
   },
@@ -5805,6 +6808,130 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.1501542,
+     52.3110683
+    ]
+   },
+   "properties": {
+    "id": "osm-way-175146250",
+    "nazwa": "Kościół pw. Matki Bożej Częstochowskiej",
+    "typ": "swiatynia",
+    "adres_dzis": "Jagiellońska 10",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Matki Bożej Częstochowskiej w Zielonce – rzymskokatolicki kościół parafialny należący do dekanatu zielonkowskiego diecezji warszawsko-praskiej.",
+     "Komitet Budowy kościoła został powołany w dniu 12 grudnia 1936 roku.",
+     "W dniu 3 maja 1937 roku został poświęcony kamień węgielny.",
+     "Plac pod świątynię został ofiarowany przez rodzinę Kulczyckich.",
+     "Kościół został zaprojektowany przez Stanisława Borylskiego i Stanisława Kwiecińskiego.",
+     "W dniu 29 czerwca 1938 roku zostały poświęcone: prezbiterium, zakrystia i kaplica przez kardynała Aleksandra Kakowskiego.",
+     "W dniu 6 listopada 1939 roku została erygowana parafia Matki Bożej Częstochowskiej w Zielonce przez arcybiskupa Stanisława Galla.",
+     "W czasie II wojny światowej budowa świątyni została wstrzymana, a kościół uległ częściowemu zniszczeniu.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Matki Bożej Częstochowskiej w Zielonce",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Bo%C5%BCej_Cz%C4%99stochowskiej_w_Zielonce"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/175146250"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1351675,
+     52.1963716
+    ]
+   },
+   "properties": {
+    "id": "osm-way-176980268",
+    "nazwa": "Kościół pw. Wniebowzięcia Najświętszej Marii Panny",
+    "typ": "swiatynia",
+    "adres_dzis": "Trakt Lubelski 157",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Wniebowzięcia Najświętszej Maryi Panny w Warszawie – zabytkowy rzymskokatolicki kościół parafialny znajdujący się w warszawskiej dzielnicy Wawer, na osiedlu Zerzeń przy ul. Trakt Lubelski 157.",
+     "Należy do dekanatu anińskiego diecezji warszawsko-praskiej.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Wniebowzięcia Najświętszej Maryi Panny w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Wniebowzi%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/176980268"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical",
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0439075,
+     52.3154091
+    ]
+   },
+   "properties": {
+    "id": "osm-way-185989958",
+    "nazwa": "Cmentarz Ewangelicki w Brzezinach",
+    "typ": "cmentarz",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Cmentarz ewangelicki w Brzezinach lub cmentarz ewangelicko-augsburski w Brzezinach – cmentarz ewangelicki położony na terenie warszawskiej dzielnicy Białołęka przy ul. Kamykowej.",
+     "Powierzchnia cmentarza to ok. 1,5 ha.",
+     "Cmentarz powstał jako miejsce spoczynku osadników niemieckich zamieszkujących tę część Białołęki.",
+     "Do wybuchu II wojny światowej należał do ewangelickiej parafii w Nowym Dworze Mazowieckim.",
+     "Niemieccy osadnicy zamieszkiwali te tereny do 1941, kiedy to zostali przesiedleni przez władze okupacyjne, najprawdopodobniej na Pomorze, co wiązało się z zamknięciem nekropolii.",
+     "Od 2012 cmentarz ujęty jest w gminnej ewidencji zabytków.",
+     "W 2024 roku diecezja warszawska Kościoła Ewangelicko-Augsburskiego podpisała mowę przedwstępną sprzedaży nieruchomości z jednym z deweloperów, który na swój koszt miał przeprowadzić ekshumacje szczątków osób pochowanych na cmentarzu, przenieść je do wspólnego grobu na cmentarzu w Żyrardowie, a w miejscu nekropolii zbudować osiedle domów jednorodzinnych.",
+     "Po protestach mieszkańców, w marcu tego samego roku Mazowiecki Wojewódzki Konserwator Zabytków wszczął procedurę wpisu cmentarza do rejestru zabytków, a w sierpniu wpisał go do rejestru.",
+     "W OpenStreetMap oznaczone jako cmentarz."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cmentarz ewangelicki w Brzezinach (Warszawa)",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_ewangelicki_w_Brzezinach_(Warszawa)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/185989958"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      20.9931255,
      52.2493631
     ]
@@ -6291,6 +7418,79 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/way/200944688"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9371561,
+     52.3085966
+    ]
+   },
+   "properties": {
+    "id": "osm-way-209307079",
+    "nazwa": "Pałac Brühla na Młocinach",
+    "typ": "budynek",
+    "adres_dzis": "Wygon 1",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Pałac Brühla na Młocinach (Zespół pałacowo-parkowy Młociny) – zabytkowy pałac w Bielanach, w Warszawie, przy ul. Muzealnej 1.",
+     "Jedna z rezydencji Henryka von Brühla, a później jego syna Alojzego Fryderyka von Brühla, znajdująca się w dzielnicy",
+     "W OpenStreetMap oznaczone jako dwór."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pałac Brühla na Młocinach",
+      "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Br%C3%BChla_na_M%C5%82ocinach"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/209307079"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.2707285,
+     52.0993742
+    ]
+   },
+   "properties": {
+    "id": "osm-way-209491814",
+    "nazwa": "Liceum Ogólnokształcące nr I im. Konstantego Ildefonsa Gałczyńskiego",
+    "typ": "budynek",
+    "adres_dzis": "Generała Józefa Filipowicza 9",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Liceum Ogólnokształcące nr I im. Konstantego Ildefonsa Gałczyńskiego w Otwocku – liceum ogólnokształcące znajdujące się w Otwocku, które wraz z Liceum Ogólnokształcącym dla Dorosłych wchodzi w skład Zespołu Szkół Ogólnokształcących.",
+     "W OpenStreetMap oznaczone jako zabytkowy budynek; data powstania: 1927..1933."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Liceum Ogólnokształcące nr I im. Konstantego Ildefonsa Gałczyńskiego w Otwocku",
+      "url": "https://pl.wikipedia.org/wiki/Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_nr_I_im._Konstantego_Ildefonsa_Ga%C5%82czy%C5%84skiego_w_Otwocku"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/209491814"
      }
     ],
     "pewnosc": "wysoka",
@@ -7259,6 +8459,49 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.234838,
+     52.1483146
+    ]
+   },
+   "properties": {
+    "id": "osm-way-258881007",
+    "nazwa": "Kościół pw. Świętego Jana Chrzciciela",
+    "typ": "swiatynia",
+    "adres_dzis": "Dobra 28",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół św. Jana Chrzciciela – kościół rzymskokatolicki przy ulicy Jana Kasprowicza 2 w Józefowie–Michalinie.",
+     "W 1994 roku powstała trzecia parafia na terenie Józefowa.",
+     "Dnia 17 lipca 1994 ks. biskup ordynariusz warszawsko-praski Kazimierz Romaniuk poświęcił krzyż i plac pod budowę kaplicy, kościoła i domu parafialnego.",
+     "Parafię erygował bp Kazimierz Romaniuk 24 czerwca 1996 roku.",
+     "W 1998 roku rozpoczęto budowę kościoła.",
+     "Pierwszym proboszczem tej parafii został ks. kanonik Jan Murziak.",
+     "Kościół zbudowano według projektu architekta Romana Abramczuka.",
+     "Kierownictwo techniczne przy budowie sprawował Antoni Stanisławek.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół św. Jana Chrzciciela w Józefowie-Michalinie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jana_Chrzciciela_w_J%C3%B3zefowie-Michalinie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/258881007"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0089794,
      52.2265541
     ]
@@ -7282,6 +8525,79 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/way/25911097"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1130497,
+     52.2416698
+    ]
+   },
+   "properties": {
+    "id": "osm-way-26129862",
+    "nazwa": "Dworek Grochowski",
+    "typ": "budynek",
+    "adres_dzis": "Grochowska 64",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Dworek Grochowski, także pałacyk Wierzbickich – neorenesansowy budynek znajdujący się przy ulicy Grochowskiej 64 w dzielnicy Praga-Południe w Warszawie.",
+     "Dworek znajduje się na skraju parku im. płk. Jana Szypowskiego „Leśnika”.",
+     "W OpenStreetMap oznaczone jako zabytkowy budynek."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Dworek Grochowski",
+      "url": "https://pl.wikipedia.org/wiki/Dworek_Grochowski"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/26129862"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0836688,
+     52.2457026
+    ]
+   },
+   "properties": {
+    "id": "osm-way-26172431",
+    "nazwa": "Piekarnia Rajcherta",
+    "typ": "budynek",
+    "adres_dzis": "Grochowska 224",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Piekarnia Teodora Reicherta (Rajcherta) – budynek wzniesiony w latach 1918–1927 w stylu eklektyzmu, znajdujący się w warszawskiej dzielnicy Praga-Południe przy ul. Grochowskiej 224 (róg ul. Wiatracznej).",
+     "W OpenStreetMap oznaczone jako zabytkowy budynek."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Piekarnia Teodora Reicherta w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Piekarnia_Teodora_Reicherta_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/26172431"
      }
     ],
     "pewnosc": "wysoka",
@@ -7377,6 +8693,44 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.0659601,
+     52.3208095
+    ]
+   },
+   "properties": {
+    "id": "osm-way-265593707",
+    "nazwa": "Kościół pw. Świętego Michała Archanioła",
+    "typ": "swiatynia",
+    "adres_dzis": "Głębocka 119",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół św. Michała Archanioła w Warszawie – zabytkowa barokowa świątynia z początku XVIII wieku znajdująca się przy ul. Głębockiej 119 w warszawskiej dzielnicy Białołęka.",
+     "Modrzewiowa budowla ze stromym dwuspadowym dachem krytym gontem, z niewielką wieżyczką zwieńczoną krzyżem, stoi w pobliżu zabytkowego cmentarza z XVI wieku na terenie Grodziska.",
+     "W OpenStreetMap oznaczone jako świątynia; w rejestrze zabytków."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół św. Michała Archanioła w Warszawie (Białołęka)",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Micha%C5%82a_Archanio%C5%82a_w_Warszawie_(Bia%C5%82o%C5%82%C4%99ka)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/265593707"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical",
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      20.9464572,
      52.2279425
     ]
@@ -7412,6 +8766,86 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "historical",
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0853189,
+     52.2296085
+    ]
+   },
+   "properties": {
+    "id": "osm-way-27645429",
+    "nazwa": "Kościół pw. Świętych Apostołów Jana i Pawła",
+    "typ": "swiatynia",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Świętych Apostołów Jana i Pawła – kościół rzymskokatolicki znajdujący się przy ulicy Kapelanów Armii Krajowej 2 w Warszawie, na osiedlu Gocław-Lotnisko, pod wezwaniem św. Apostołów Jana i Pawła.",
+     "W 2006 r. na przykościelnym placu odsłonięto pomnik Jana Pawła II.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Świętych Apostołów Jana i Pawła w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Awi%C4%99tych_Aposto%C5%82%C3%B3w_Jana_i_Paw%C5%82a_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/27645429"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.2264125,
+     52.1384163
+    ]
+   },
+   "properties": {
+    "id": "osm-way-27780295",
+    "nazwa": "Kościół pw. Matki Boskiej Częstochowskiej",
+    "typ": "swiatynia",
+    "adres_dzis": "Piotra Skargi 24",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Matki Bożej Częstochowskiej – rzymskokatolicki kościół w stylu gotyku nadwiślańskiego, przy ul. Piotra Skargi 24 w Józefowie.",
+     "Kościół jest wpisany do rejestru zabytków.",
+     "W 1925 roku został wyposażony w organy i drewnianą ambonę.",
+     "Od 1 października 1947 do 1982 roku proboszczem był ks. Wincenty Malinowski.",
+     "W tym okresie dał się poznać mieszkańcom jako dobry gospodarz i organizator życia religijnego.",
+     "W parafii powstała biblioteka w dużej mierze z ksiąg ofiarowanych przez proboszcza.",
+     "W latach 1982–1994 proboszczem parafii był ks. Zbigniew Gaszkowski.",
+     "W 1984 roku rozpoczęto rozbudowę kościoła i budowę obiektu administracyjno-katechetycznego według koncepcji inż. F. Dzierżanowskiego.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Matki Bożej Częstochowskiej w Józefowie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Bo%C5%BCej_Cz%C4%99stochowskiej_w_J%C3%B3zefowie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/27780295"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
      "religion"
     ]
    }
@@ -7836,6 +9270,85 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.8689665,
+     52.1997231
+    ]
+   },
+   "properties": {
+    "id": "osm-way-29115585",
+    "nazwa": "Cmentarz w Gołąbkach",
+    "typ": "cmentarz",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Cmentarz w Gołąbkach – rzymskokatolicki cmentarz w Gołąbkach, w warszawskiej dzielnicy Ursus.",
+     "Cmentarz znajduje się przy ulicach Elżbiety Rakuszanki i Orłów Piastowskich.",
+     "Zarządza nim piastowska Parafia Matki Bożej Częstochowskiej.",
+     "Nekropolia miała pierwotnie kształt zbliżony do kwadratu, lecz z czasem zaczęła rozciągać się na wschód.",
+     "Ma główną bramę od strony ul. Rakuszanki i dwie furtki.",
+     "W OpenStreetMap oznaczone jako cmentarz; w rejestrze zabytków."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cmentarz w Gołąbkach",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Go%C5%82%C4%85bkach"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/29115585"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1032325,
+     52.2444786
+    ]
+   },
+   "properties": {
+    "id": "osm-way-29219714",
+    "nazwa": "Kościół pw. Najczystszego Serca Maryi",
+    "typ": "swiatynia",
+    "adres_dzis": "Józefa Chłopickiego 3/5",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Najczystszego Serca Maryi w Warszawie – rzymskokatolicki kościół parafialny należący do parafii pod tym samym wezwaniem (dekanat grochowski diecezji warszawsko-praskiej).",
+     "Znajduje się w warszawskiej dzielnicy Praga-Południe, na terenie Grochowa tuż obok placu Piotra Szembeka.",
+     "Jest to kościół-pomnik ku czci pamięci o poległych w bitwie o Olszynkę Grochowską.",
+     "Został on konsekrowany przez kardynała Stefana Wyszyńskiego 30 października 1949.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Najczystszego Serca Maryi w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Najczystszego_Serca_Maryi_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/29219714"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
     ]
    }
   },
@@ -8688,6 +10201,43 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.0875532,
+     52.1655677
+    ]
+   },
+   "properties": {
+    "id": "osm-way-313004871",
+    "nazwa": "Mauzoleum Potockich",
+    "typ": "pomnik",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Mauzoleum Potockich w Wilanowie, właśc.",
+     "Mauzoleum Stanisława Kostki i Aleksandry Potockich – symboliczny nagrobek wystawiony w 1836 Stanisławowi Kostce Potockiemu i jego żonie Aleksandrze z Lubomirskich Potockiej przez ich syna Aleksandra w pobliżu pałacu w Wilanowie.",
+     "W OpenStreetMap oznaczone jako pomnik."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Mauzoleum Potockich w Wilanowie",
+      "url": "https://pl.wikipedia.org/wiki/Mauzoleum_Potockich_w_Wilanowie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/313004871"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0121189,
      52.252103
     ]
@@ -9501,6 +11051,43 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.2674781,
+     52.2471436
+    ]
+   },
+   "properties": {
+    "id": "osm-way-355803408",
+    "nazwa": "Muzeum Józefa Piłsudskiego w Sulejówku",
+    "typ": "budynek",
+    "adres_dzis": "Oleandrów 5",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Muzeum Józefa Piłsudskiego w Sulejówku – muzeum biograficzne w Sulejówku, współprowadzone przez Fundację Rodziny Józefa Piłsudskiego i Ministerstwo Kultury i Dziedzictwa Narodowego.",
+     "Siedziba Muzeum znajduje się w nowym budynku głównym przy Alei Józefa Piłsudskiego 29.",
+     "W OpenStreetMap oznaczone jako muzeum."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Muzeum Józefa Piłsudskiego w Sulejówku",
+      "url": "https://pl.wikipedia.org/wiki/Muzeum_J%C3%B3zefa_Pi%C5%82sudskiego_w_Sulej%C3%B3wku"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/355803408"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0031761,
      52.2288194
     ]
@@ -9606,6 +11193,45 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "historical",
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0454223,
+     52.363359
+    ]
+   },
+   "properties": {
+    "id": "osm-way-401557317",
+    "nazwa": "Kościół pw. Chrystusa Najwyższego Kapłana",
+    "typ": "swiatynia",
+    "adres_dzis": "Kobiałka 49",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Ośrodek Duszpasterski Chrystusa Najwyższego Kapłana – rzymskokatolicki ośrodek duszpasterski), należąca do dekanatu bródnowskiego, diecezji warszawsko-praskiej, metropolii warszawskiej, Kościoła katolickiego, w Warszawie, osiedle Kobiałka.",
+     "Obsługiwany przez księży diecezjalnych.",
+     "Ośrodek został erygowany w 2009 roku.",
+     "Obecny kościół parafialny to kaplica znajdująca się za Zespołem Szkół nr 43 w Warszawie (droga odchodząca od ul. Kobiałka w stronę miejscowości Stanisławów Pierwszy).",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ośrodek duszpasterski Chrystusa Najwyższego Kapłana w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/O%C5%9Brodek_duszpasterski_Chrystusa_Najwy%C5%BCszego_Kap%C5%82ana_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/401557317"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
      "religion"
     ]
    }
@@ -9844,6 +11470,125 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.1352628,
+     52.0953222
+    ]
+   },
+   "properties": {
+    "id": "osm-way-438089989",
+    "nazwa": "Kościół pw. Świętego Józefa Oblubieńca Najświętszej Maryi Panny",
+    "typ": "swiatynia",
+    "adres_dzis": "Anny Walentynowicz 1",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Świętego Józefa Oblubieńca Najświętszej Maryi Panny w Jeziornie Fabrycznej-Mirkowie – rzymskokatolicki kościół parafialny należący do dekanatu konstancińskiego archidiecezji warszawskiej.",
+     "Znajduje się w Konstancinie-Jeziornie, na osiedlu Mirków.",
+     "W OpenStreetMap oznaczone jako świątynia; data powstania: 1907..1909."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Świętego Józefa Oblubieńca Najświętszej Maryi Panny w Jeziornie Fabrycznej-Mirkowie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Awi%C4%99tego_J%C3%B3zefa_Oblubie%C5%84ca_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Jeziornie_Fabrycznej-Mirkowie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/438089989"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical",
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0042236,
+     52.1493423
+    ]
+   },
+   "properties": {
+    "id": "osm-way-486614562",
+    "nazwa": "Cmentarz Parafialny w Grabowie",
+    "typ": "cmentarz",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Cmentarz w Grabowie – rzymskokatolicki cmentarz parafialny znajdujący się przy ul. Poloneza w Warszawie, w dzielnicy Ursynów, należący do parafii św. Zofii Barat.",
+     "Cmentarz został wyświęcony przez kardynała Józefa Glempa 27 czerwca 1995, razem z nową plebanią.",
+     "Nekropolia na powierzchnię 1 ha.",
+     "W OpenStreetMap oznaczone jako cmentarz."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cmentarz w Grabowie (Warszawa)",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Grabowie_(Warszawa)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/486614562"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1959439,
+     52.1469487
+    ]
+   },
+   "properties": {
+    "id": "osm-way-488889604",
+    "nazwa": "Kościół parafialny pw. św. Maksymiliana Kolbego",
+    "typ": "swiatynia",
+    "adres_dzis": "Księdza Wincentego Malinowskiego 34",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół św. Maksymiliana Marii Kolbego – kościół rzymskokatolicki w Józefowie-Błotach.",
+     "Z inicjatywy proboszcza parafii w Józefowie księdza prałata Wincentego Malinowskiego, podjęto w 1981 roku budowę kościoła na terenie Józefów – kolonia Błota.",
+     "Projekt budowy kościoła opracował inż. Waldemar Siwek, a nadzór nad budową prowadził inż. Jan Zdunek.",
+     "W tym czasie zbudowano też dom parafialny.",
+     "Parafia zlokalizowana na kolonii Błota początkowo liczyła 1360 osób.",
+     "Później, dzięki dołączeniu części mieszkańców Falenicy, liczba mieszkańców parafii wzrosła do 1860 osób.",
+     "Całością prac związanych z budową kościoła i organizowaniem parafii kierował ks. Władysław Walczewski.",
+     "On też został pierwszym proboszczem parafii.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół św. Maksymiliana Marii Kolbego w Józefowie-Błotach",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Maksymiliana_Marii_Kolbego_w_J%C3%B3zefowie-B%C5%82otach"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/488889604"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0286418,
      52.2418508
     ]
@@ -9909,6 +11654,43 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/way/5080251"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.138243,
+     52.229771
+    ]
+   },
+   "properties": {
+    "id": "osm-way-564553244",
+    "nazwa": "Murowanka",
+    "typ": "budynek",
+    "adres_dzis": "Płowiecka 77",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Murowanka – zwyczajowa nazwa zbudowanego w 1903 roku z czerwonej cegły małego, parterowego budynku pierwszej szkoły w Wawrze, w którym zajęcia odbywały się do 1948 roku.",
+     "Od 2019 został siedzibą Fundacji na rzecz Wielkich Historii.",
+     "W OpenStreetMap oznaczone jako zabytkowy budynek."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Murowanka (szkoła w Wawrze)",
+      "url": "https://pl.wikipedia.org/wiki/Murowanka_(szko%C5%82a_w_Wawrze)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/564553244"
      }
     ],
     "pewnosc": "wysoka",
@@ -10001,6 +11783,47 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.0721121,
+     52.1585912
+    ]
+   },
+   "properties": {
+    "id": "osm-way-62343341",
+    "nazwa": "Świątynia Opatrzności Bożej",
+    "typ": "swiatynia",
+    "adres_dzis": "Prymasa Augusta Hlonda 1",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Świątynia Opatrzności Bożej – kościół znajdujący się w warszawskiej dzielnicy Wilanów, u zbiegu ulicy ks. Prymasa Augusta Hlonda i alei Rzeczypospolitej.",
+     "Świątynia jest częścią kompleksu Centrum Opatrzności Bożej, w skład którego wchodzą również Muzeum Jana Pawła II i Prymasa Wyszyńskiego i Panteon Wielkich Polaków.",
+     "Budowla jest realizacją Deklaracji Sejmu Czteroletniego z 5 maja 1791 roku jako wotum dziękczynne.",
+     "Centrum Opatrzności Bożej to instytucja kultury powołana przez kard. Kazimierza Nycza – arcybiskupa metropolitę warszawskiego.",
+     "Jednym z działań podjętych przez Centrum jest organizacja Dnia Dziękczynienia.",
+     "Idea tego dnia jest związana z kontynuacją historycznej inicjatywy Sejmu Czteroletniego z roku 1792.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Świątynia Opatrzności Bożej w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/%C5%9Awi%C4%85tynia_Opatrzno%C5%9Bci_Bo%C5%BCej_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/62343341"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      20.9847837,
      52.2255992
     ]
@@ -10031,6 +11854,47 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "cultural"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.8980773,
+     52.2626067
+    ]
+   },
+   "properties": {
+    "id": "osm-way-723975932",
+    "nazwa": "Cmentarz Bemowski",
+    "typ": "cmentarz",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Cmentarz Bemowski – zamknięty dla celów grzebalnych cmentarz rzymskokatolicki położony na osiedlu Boernerowo w dzielnicy Bemowo w Warszawie.",
+     "Powstał równocześnie z kaplicą Matki Boskiej Miłosierdzia-Ostrobramskiej.",
+     "Znajduje się w jej bezpośrednim otoczeniu u zbiegu ul. Kaliskiego i Kutrzeby.",
+     "Ostatnich pochówków dokonano w latach powojennych.",
+     "Ze względu na niewielkie rozmiary cmentarz został wkrótce zamknięty.",
+     "Zachowało się dwanaście nagrobków z czasów powojennych.",
+     "W OpenStreetMap oznaczone jako cmentarz."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cmentarz Bemowski",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_Bemowski"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/723975932"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
     ]
    }
   },
@@ -10117,6 +11981,87 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0406506,
+     52.1665256
+    ]
+   },
+   "properties": {
+    "id": "osm-way-762512702",
+    "nazwa": "Fort VIII Twierdzy Warszawa \"Służew\"",
+    "typ": "budynek",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Fort VIII („Służew”) – jeden z fortów pierścienia zewnętrznego Twierdzy Warszawa znajdujący się przy ul. Nowoursynowskiej w Warszawie, w dzielnicy Ursynów, w rejonie dawnej wsi Służew.",
+     "Poprzednim w kolejności jest fort VII „Zbarż”, zaś następnym fort IX „Czerniaków”.",
+     "W OpenStreetMap oznaczone jako fort."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Fort VIII Twierdzy Warszawa",
+      "url": "https://pl.wikipedia.org/wiki/Fort_VIII_Twierdzy_Warszawa"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/762512702"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9159285,
+     52.1504889
+    ]
+   },
+   "properties": {
+    "id": "osm-way-781554956",
+    "nazwa": "Kościół pw. Świętego Szczepana i Świętej Anny",
+    "typ": "swiatynia",
+    "adres_dzis": "Aleja Krakowska 3",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół św. Szczepana i św. Anny – rzymskokatolicki barokowo-klasycystyczny kościół parafialny w Raszynie w gminie Raszyn.",
+     "Jest cennym zabytkiem XVII-wiecznej architektury.",
+     "Ufundowany przez Zygmunta Opackiego, właściciela Raszyna i Falent.",
+     "Powstał w 1654 roku, następnie w roku 1655 został konsekrowany.",
+     "Świątynia przetrwała zawieruchy dziejowe, m.in. potop szwedzki.",
+     "Józef Łukaszewicz taką zamieszcza wzmiankę o kościele (pisownia oryginalna):W roku 1603 wizytował ten kościół Wawrzyniec Goślicki, ówczesny biskup poznański.",
+     "Raszyn należał wówczas do Jana Tarnowskiego herbu Rolicz, który arcybiskupem gnieźnieńskim umarł.",
+     "Kościół był drewniany, pod tytułem ś.",
+     "W OpenStreetMap oznaczone jako świątynia; w rejestrze zabytków."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół św. Szczepana i św. Anny w Raszynie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Szczepana_i_%C5%9Bw._Anny_w_Raszynie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/781554956"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical",
+     "religion"
     ]
    }
   },
@@ -10237,6 +12182,43 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     20.8918413,
+     52.2203317
+    ]
+   },
+   "properties": {
+    "id": "osm-way-801639026",
+    "nazwa": "Fort IV Twierdzy Warszawa \"Chrzanów\"",
+    "typ": "budynek",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Fort IV („Chrzanów”) – jeden z fortów pierścienia zewnętrznego Twierdzy Warszawa, wybudowany w latach osiemdziesiątych XIX wieku.",
+     "Poprzednim w kolejności jest fort III „Blizne”, zaś następnym fort V „Włochy”.",
+     "W OpenStreetMap oznaczone jako fort."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Fort IV Twierdzy Warszawa",
+      "url": "https://pl.wikipedia.org/wiki/Fort_IV_Twierdzy_Warszawa"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/801639026"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.0661045,
      52.1825941
     ]
@@ -10303,6 +12285,49 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0900113,
+     52.1651017
+    ]
+   },
+   "properties": {
+    "id": "osm-way-8106732",
+    "nazwa": "Pałac w Wilanowie",
+    "typ": "budynek",
+    "adres_dzis": "Stanisława Kostki Potockiego 10/16",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Pałac w Wilanowie – barokowy pałac królewski znajdujący się w Warszawie, w dzielnicy Wilanów.",
+     "Został wzniesiony w latach 1681–1696 dla króla Jana III Sobieskiego i Marii Kazimiery według projektu Augustyna Wincentego Locciego; skrzydła boczne dobudowano w latach 1723–1729.",
+     "Siedziba Muzeum Pałacu Króla Jana III w Wilanowie oraz Muzeum Plakatu w Wilanowie.",
+     "Pałac wraz z otaczającym parkiem oraz zabudowaniami zachował niezmienioną formę architektoniczną, walory historyczne i artystyczne.",
+     "W 1994 wilanowski zespół pałacowy wraz z Morysinem został uznany za pomnik historii.",
+     "Jest on miejscem wydarzeń kulturalnych, koncertów i spotkań.",
+     "Obok pałacu znajduje się ogród.",
+     "W OpenStreetMap oznaczone jako muzeum; w rejestrze zabytków, data powstania: 1679."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pałac w Wilanowie",
+      "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_w_Wilanowie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/8106732"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical",
+     "cultural"
     ]
    }
   },
@@ -10415,6 +12440,119 @@
      {
       "tytul": "OpenStreetMap (ODbL)",
       "url": "https://www.openstreetmap.org/way/858325685"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical",
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9407452,
+     52.3194073
+    ]
+   },
+   "properties": {
+    "id": "osm-way-89020735",
+    "nazwa": "Kościół pw. Świętego Jakuba Apostoła",
+    "typ": "swiatynia",
+    "adres_dzis": "Józefa Mehoffera 4",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół św. Jakuba – zabytkowy kościół parafialny przy ul. Mehoffera 4 w Warszawie, w diecezji warszawsko-praskiej, w dekanacie tarchomińskim.",
+     "Jest siedzibą parafii św. Jakuba Apostoła.",
+     "Świątynia jest wybitnym przykładem gotyku mazowieckiego.",
+     "W OpenStreetMap oznaczone jako świątynia; w rejestrze zabytków."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół św. Jakuba w Warszawie (Tarchomin)",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jakuba_w_Warszawie_(Tarchomin)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/89020735"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "historical",
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0175675,
+     52.1045091
+    ]
+   },
+   "properties": {
+    "id": "osm-way-895991472",
+    "nazwa": "Cerkiew św. Sofii Mądrości Bożej",
+    "typ": "swiatynia",
+    "adres_dzis": "Puławska 568",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Cerkiew pod wezwaniem św. Sofii Mądrości Bożej – prawosławna cerkiew parafialna znajdująca się w Warszawie, w dekanacie Warszawa diecezji warszawsko-bielskiej Polskiego Autokefalicznego Kościoła Prawosławnego.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cerkiew św. Sofii Mądrości Bożej w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Sofii_M%C4%85dro%C5%9Bci_Bo%C5%BCej_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/895991472"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0171523,
+     52.1253493
+    ]
+   },
+   "properties": {
+    "id": "osm-way-895997746",
+    "nazwa": "Kościół pw św. Piotra i Pawła",
+    "typ": "swiatynia",
+    "adres_dzis": "Puławska 434",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Świętych Apostołów Piotra i Pawła w Warszawie – rzymskokatolicki kościół parafialny należący do parafii pod tym samym wezwaniem (dekanat ursynowski archidiecezji warszawskiej).",
+     "Znajduje się w warszawskiej dzielnicy Ursynów, na osiedlu Pyry przy ulicy Puławskiej 434.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Świętych Apostołów Piotra i Pawła w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Awi%C4%99tych_Aposto%C5%82%C3%B3w_Piotra_i_Paw%C5%82a_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/895997746"
      }
     ],
     "pewnosc": "wysoka",
@@ -10616,6 +12754,44 @@
     "zrodlo_rekordu": "osm",
     "tagi": [
      "historical"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.03029,
+     52.1576708
+    ]
+   },
+   "properties": {
+    "id": "osm-way-949228006",
+    "nazwa": "Kościół Wniebowstąpienia Pańskiego",
+    "typ": "swiatynia",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Kościół Wniebowstąpienia Pańskiego – kościół rzymskokatolicki znajdujący się w dzielnicy Ursynów w Warszawie.",
+     "W kościele znajduje się obraz Matki Boskiej Ursynowskiej Wytrwale Szukającej koronowany koronami prymasowskimi przez kardynała Józefa Glempa.",
+     "W kościele znajdują się także relikwie: świętego papieża Jana Pawła II, arcybiskupa warszawskiego św. Zygmunta Szczęsnego Felińskiego, św. o. Pio, św. siostry Faustyny, bł. ks. Jerzego Popiełuszki oraz bł. ks. Antoniego Rewery.",
+     "W OpenStreetMap oznaczone jako świątynia."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kościół Wniebowstąpienia Pańskiego w Warszawie (Ursynów)",
+      "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Wniebowst%C4%85pienia_Pa%C5%84skiego_w_Warszawie_(Ursyn%C3%B3w)"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/949228006"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "religion"
     ]
    }
   },
