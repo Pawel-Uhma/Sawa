@@ -1,0 +1,232 @@
+[
+  {
+    "id": "lvi-liceum-pilecki",
+    "nazwa": "LVI Liceum Ogólnokształcące im. Rotmistrza Witolda Pileckiego",
+    "name_en": "LVI Witold Pilecki Secondary School",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": "ul. Dzieci Warszawy 42",
+    "adres_historyczny": "ul. Sosnkowskiego 10 (wcześniej ul. Wawelska 7)",
+    "lat": 52.19617694,
+    "lon": 20.89903,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W listopadzie 1944 r. grupka nauczycieli na czele z Józefem Chmielem, Edmundem Pokrzywą i Stanisławem Rutkowskim utworzyła tajne gimnazjum i liceum na terenie dzisiejszego Ursusa.",
+      "24 marca 1945 r. szkoła zaczęła działać oficjalnie i przeniosła się do budynku szkoły powszechnej przy ul. Bohaterów Warszawy (dawniej Piłsudskiego).",
+      "24 listopada 1946 r. liceum przeniesiono do budynku przy ul. Regulskiej 22 (dawniej Regulska 8).",
+      "Kamień węgielny nowego budynku przy ul. Sosnkowskiego 10 wmurowano 31 marca 1954 r.; część dla liceum oddano do użytku 21 stycznia 1956 r.",
+      "6 kwietnia 1963 r. z inicjatywy komitetu rodzicielskiego liceum nadano imię Leona Kruczkowskiego oraz sztandar.",
+      "W 2007 roku szkoła została przeniesiona do budynku po dawnym zespole szkół imienia Wilhelma Piecka, przy ulicy Dzieci Warszawy 42.",
+      "1 września 2018 szkoła zmieniła nazwę na LVI Liceum Ogólnokształcące im. Rotmistrza Witolda Pileckiego.",
+      "Od 1986 r. funkcję dyrektora liceum pełniła Jolanta Purzycka. Była pierwszym dyrektorem, absolwentem szkoły."
+    ],
+    "ciekawostki": [
+      "Wśród absolwentów jest Janusz Komender, lekarz i minister zdrowia w latach 1987–1988."
+    ],
+    "summary_en": "A general secondary school in Ursus, Warsaw. It began as a secret school in 1944, moved into its current building at Dzieci Warszawy 42 in 2007, and took the name of Witold Pilecki in 2018.",
+    "ludzie": [
+      {"kto": "Józef Chmiel", "rola": "pierwszy dyrektor szkoły, jeden z założycieli tajnego gimnazjum w 1944 roku", "wiki": null},
+      {"kto": "Edmund Pokrzywa", "rola": "nauczyciel, jeden z założycieli tajnego gimnazjum w 1944 roku", "wiki": null},
+      {"kto": "Stanisław Rutkowski", "rola": "nauczyciel, udostępnił prywatne mieszkanie przy ul. Sowińskiego 38 na tajne lekcje", "wiki": null},
+      {"kto": "Leon Kruczkowski", "rola": "patron szkoły od 1963 roku", "wiki": null},
+      {"kto": "Jolanta Purzycka", "rola": "dyrektor liceum od 1986 roku, absolwentka szkoły", "wiki": null}
+    ],
+    "dawne_nazwy": ["LVI Liceum Ogólnokształcące im. Leona Kruczkowskiego (do 31 sierpnia 2018)", "Liceum Ogólnokształcące nr 56"],
+    "zrodla": [{"tytul": "Wikipedia: LVI Liceum Ogólnokształcące im. Rotmistrza Witolda Pileckiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/LVI_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_im._Rotmistrza_Witolda_Pileckiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "osiedle-niedzwiadek",
+    "nazwa": "Osiedle Niedźwiadek",
+    "name_en": "Niedźwiadek housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1967,
+    "lon": 20.8708,
+    "lokalizacja": "przyblizona",
+    "okres": "1968–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prace nad nowym osiedlem mieszkaniowym dla pracowników Zakładów Mechanicznych Ursus zaczęły się w I połowie lat 60.",
+      "9 stycznia 1965 roku Stowarzyszenie Architektów Polskich rozstrzygnęło konkurs na projekt koncepcyjny osiedla; zwyciężyła praca arch. Stefana Putowskiego.",
+      "Budowa osiedla rozpoczęła się w 1968 roku; jako pierwsze powstały bloki przy przedłużonej ul. Sienkiewcza (ob. Wojciechowskiego).",
+      "W 1973 roku na osiedle przeniesiono z Czechowic Szkołę Podstawową nr 1.",
+      "Budowę Niedźwiadka zakończono w 1978 roku; na osiedlu o powierzchni 60 ha zamieszkało 18,5 tys. osób w 83 budynkach mieszkalnych.",
+      "W latach 80. powstał kościół parafialny Matki Bożej Fatimskiej, wybudowany jako trzeci kościół w Ursusie, a pierwszy na osiedlu Niedźwiadek.",
+      "Przystanek osobowy, który pierwotnie miał obsługiwać dwa osiedla, otwarto w styczniu 2014 roku.",
+      "Osiedla Ursus-Zachód nigdy nie wybudowano."
+    ],
+    "ciekawostki": [
+      "Osią północ-południe osiedla uczyniono ulicę Wołodyjowskiego (ob. Keniga), która w projekcie Putowskiego miała przechodzić tunelem pod liniami kolejowymi."
+    ],
+    "summary_en": "Niedźwiadek is the largest housing estate in the Ursus district of Warsaw. Built for workers of the Ursus Mechanical Works between 1968 and 1978, it housed about 18,500 people in 83 buildings.",
+    "ludzie": [
+      {"kto": "Stefan Putowski", "rola": "architekt, autor zwycięskiej koncepcji osiedla w konkursie z 1965 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Osiedle Niedźwiadek", "Spółdzielcze Osiedle Mieszkaniowe „Niedźwiadek”"],
+    "zrodla": [{"tytul": "Wikipedia: Niedźwiadek (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Nied%C5%BAwiadek_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "skorosze-warszawa",
+    "nazwa": "Skorosze",
+    "name_en": "Skorosze (Ursus)",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.189028,
+    "lon": 20.899772,
+    "lokalizacja": "przyblizona",
+    "okres": "1528–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1528 Skorosze liczyły około 33,6 ha.",
+      "W XV wieku wieś posiadała własny młyn.",
+      "W 1827 roku Skorosze miały 10 chałup, 141 mieszkańców i szkołę początkową.",
+      "W 1916, kiedy utworzono gminę Skorosze, wieś zyskała na znaczeniu.",
+      "W 1937 roku siedziba gminy została przeniesiona do Czechowic.",
+      "W latach 1932–1933 inżynier Lucjusz Burdzyński zbudował we wsi cegielnię, w której później mieściła się fabryka kosmetyków Spółdzielni Pracy „Kamelia”, a później zakład produkcyjny spółki Oriflame.",
+      "1 lipca 1952 r. z osiedli: Czechowice, Skorosze, Szamoty, Gołąbki i Grabkowo utworzono nowe miasto Czechowice, któremu 27 kwietnia 1954 r. zmieniono nazwę na Ursus.",
+      "W 1992 r. Rada Warszawy podjęła uchwałę o odrolnieniu wszystkich gruntów w stolicy, co wpłynęło na rozwój budownictwa na dawnej wsi Skorosze."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Skorosze is an area in the Ursus district of Warsaw, once a village and the seat of a rural commune until 1937. It was merged into the town of Czechowice (later Ursus) in 1952 and has been built up since the 1990s.",
+    "ludzie": [
+      {"kto": "Lucjusz Burdzyński", "rola": "inżynier, zbudował we wsi cegielnię w latach 1932–1933", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Skorosze (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Skorosze_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje 27 kwietnia 1954 jako datę zmiany nazwy Czechowic na Ursus; artykuły Ursus i Gołąbki podają 8 maja 1954."
+  },
+  {
+    "id": "stadion-osir-ursus",
+    "nazwa": "Stadion OSiR Ursus im. Krzysztofa Nowaka",
+    "name_en": "Krzysztof Nowak OSiR Ursus Stadium",
+    "typ": "sport",
+    "dzielnica": "Ursus",
+    "adres_dzis": "ul. Sosnkowskiego 3",
+    "adres_historyczny": null,
+    "lat": 52.185833,
+    "lon": 20.889444,
+    "lokalizacja": "dokladna",
+    "okres": "1965–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stadion powstał w latach 1963–65 jako część kompleksu sportowego; w momencie otwarcia w 1965 roku nadano mu nazwę Stadion XX-lecia PRL.",
+      "Koszt budowy kompleksu oszacowano na 7,5 mln złotych, z czego 5 mln to prace wykonane w czynie społecznym przez pracowników ZM Ursus i okolicznych mieszkańców.",
+      "Do 2000 r. korzystał z niego RKS Ursus Warszawa, od 2000 r. klub piłkarski KS Ursus Warszawa.",
+      "W 1995 roku przeprowadzono remont obiektu, a trybunę wschodnią przebudowano; ma 1032 miejsca siedzące.",
+      "Uchwała Rady Miasta nr XXVIII/543/2004 z dnia 15.04.2004 utworzyła Zakład Budżetowy „Ośrodek Sportu i Rekreacji m.st. Warszawy w Dzielnicy Ursus”.",
+      "Od maja 2025 roku stadion nosi imię wychowanka RKS URSUS Krzysztofa Nowaka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A football and athletics stadium at Sosnkowskiego 3 in Ursus, opened in 1965 as the Stadion XX-lecia PRL. Built largely through volunteer labour by Ursus Mechanical Works employees and residents, it was renamed in 2025 after Krzysztof Nowak.",
+    "ludzie": [
+      {"kto": "Krzysztof Nowak", "rola": "wychowanek RKS Ursus, patron stadionu od maja 2025 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stadion XX-lecia PRL"],
+    "zrodla": [{"tytul": "Wikipedia: Stadion OSiR Ursus im. Krzysztofa Nowaka", "url": "https://pl.wikipedia.org/wiki/Stadion_OSiR_Ursus_im._Krzysztofa_Nowaka"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "szamoty-warszawa",
+    "nazwa": "Szamoty",
+    "name_en": "Szamoty (Ursus)",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.203053,
+    "lon": 20.885267,
+    "lokalizacja": "przyblizona",
+    "okres": "1479–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza wzmianka dotycząca wsi Szamoty pochodzi z 1479 roku.",
+      "Za początek końca wsi uważa się rok 1921, gdy dyrekcja zakładów zakupiła od Leona i Antoniego Trębskich oraz Jankowskich około 2 hektarów ziemi pod budowę fabryki Zakładów Mechanicznych Ursus.",
+      "20 października 1932 roku połączono linie kolejowe warszawsko-kaliską i warszawsko-wiedeńską; trzykilometrowy odcinek torów przeciął wschodnią część pól wsi Szamoty.",
+      "W 1952 fabryka rozwijająca się w kierunku północnym przekroczyła Bazaltowy Trakt.",
+      "Szamoty były w latach 1952–1954 częścią Czechowic, w latach 1954–1977 częścią miasta Ursus, a od 1977 w granicach Warszawy.",
+      "Po likwidacji zakładów Ursus i rozbiórce znajdujących się na ich terenie nieruchomości, po 2020 na Szamotach zrealizowano szereg inwestycji mieszkaniowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Szamoty is a former village in the Ursus district of Warsaw, first mentioned in 1479. Its land was gradually taken over by the Ursus Mechanical Works, which began building there in 1921.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wojszcze", "Wojszczyce", "Bożejki", "Szwaby"],
+    "zrodla": [{"tytul": "Wikipedia: Szamoty (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Szamoty_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bohaterow-warszawy-ursus",
+    "nazwa": "Ulica Bohaterów Warszawy",
+    "name_en": "Bohaterów Warszawy Street",
+    "typ": "ulica",
+    "dzielnica": "Ursus",
+    "adres_dzis": "ul. Bohaterów Warszawy",
+    "adres_historyczny": null,
+    "lat": 52.1944,
+    "lon": 20.8889,
+    "lokalizacja": "przyblizona",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Bohaterów Warszawy jest jedną z ulic warszawskiego Ursusa o długości ok. 1,1 km.",
+      "Ulica została wybudowana w 1927 roku.",
+      "Do 1949 roku ulica nosiła imię Józefa Piłsudskiego, a w latach 1949–1957 Józefa Stalina.",
+      "Po 1957 nazwę zmieniono na obecną: Bohaterów Warszawy.",
+      "Przy ulicy zachowało się kilka budynków wybudowanych w okresie dwudziestolecia międzywojennego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bohaterów Warszawy Street is about 1.1 km long in Ursus, Warsaw. Built in 1927, it was named after Józef Piłsudski, then after Józef Stalin, and has its present name since 1957.",
+    "ludzie": [],
+    "dawne_nazwy": ["ulica Józefa Piłsudskiego", "ulica Józefa Stalina"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Bohaterów Warszawy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bohater%C3%B3w_Warszawy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ursus-warszawa",
+    "nazwa": "Ursus",
+    "name_en": "Ursus (Warsaw district)",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.19517,
+    "lon": 20.88419,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na terenie dzisiejszego Ursusa od XIV wieku istniały trzy wsie: Czechowice, Skorosze i Szamoty, w późniejszym okresie również Gołąbki.",
+      "W 1923 r. na terenie Szamot oddano do użytku fabrykę Zakładów Mechanicznych „Ursus”.",
+      "1 lipca 1952 roku Czechowice, Skorosze, Szamoty, Gołąbki i Grabkowo zostały połączone w jedno miasto Czechowice, któremu z dniem 8 maja 1954 roku zmieniono nazwę na Ursus.",
+      "W 1945 r., w trakcie wycofywania się wojsk niemieckich z terenów Czechowic próbowano wysadzić zakłady mechaniczne, jednak nie udało się to dzięki akcji polskich partyzantów.",
+      "25 czerwca 1976 r. w Zakładach Mechanicznych Ursus rozpoczęły się strajki w proteście przeciwko podwyżkom cen żywności.",
+      "1 sierpnia 1977 r. Ursus został przyłączony do Warszawy i stał się częścią dzielnicy Ochota.",
+      "1 stycznia 1993 roku Ursus został wyłączony z Ochoty jako ósma dzielnica warszawska.",
+      "20 sierpnia 1990 miała miejsce katastrofa kolejowa w Ursusie; w jej wyniku poniosło śmierć 16 osób, a 64 zostały ranne."
+    ],
+    "ciekawostki": [
+      "W Ursusie znajdują się trzy parki: Czechowicki, Hassów i Achera."
+    ],
+    "summary_en": "Ursus is one of Warsaw's 18 districts, formed from the villages of Czechowice, Skorosze, Szamoty, Gołąbki and Grabkowo. It grew around the Ursus Mechanical Works, founded in 1923 in Szamoty, and became a Warsaw district in 1993.",
+    "ludzie": [
+      {"kto": "Władysław Hass", "rola": "pierwszy wójt gminy Skorosze, od 1916 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czechowice (1952–1954)"],
+    "zrodla": [{"tytul": "Wikipedia: Ursus (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Ursus_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ogólny dla dzielnicy; współrzędne z nagłówka WSPÓŁRZĘDNE to środek dzielnicy."
+  }
+]

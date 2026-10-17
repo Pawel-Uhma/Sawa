@@ -1,0 +1,85 @@
+[
+  {
+    "id": "warszawa-plady-przystanek",
+    "nazwa": "Przystanek Warszawa Płudy",
+    "name_en": "Warszawa Płudy railway halt",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "ul. Czołowa",
+    "adres_historyczny": null,
+    "lat": 52.335, "lon": 20.985278,
+    "lokalizacja": "dokladna",
+    "okres": "2010–dziś (modernizacja 2010–2012)",
+    "istnieje": true,
+    "fakty": [
+      "W latach 2010–2012 trwała modernizacja linii kolejowej E 65 na odcinku Warszawa–Gdynia.",
+      "W wyniku modernizacji zlikwidowano przejazd kolejowo-drogowy łączący osiedla Białołęka Dworska i Płudy oraz budynek nastawni na skrzyżowaniu ul. Klasyków i ul. Czołowej.",
+      "13 września 2012 roku oficjalnie oddano do użytku 400-metrowy wiadukt drogowy w ciągu ul. Klasyków; ukończono go w czerwcu 2012 roku, a termin planowano na koniec 2011."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warszawa Płudy railway halt on the E65 Warsaw–Gdynia line. Level crossing and signal box were removed during the 2010–2012 modernisation, and a 400-metre road viaduct on ul. Klasyków opened in September 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Płudy", "url": "https://pl.wikipedia.org/wiki/Warszawa_P%C5%82udy"}],
+    "pewnosc": "srednia",
+    "uwagi": "Adres: przy ul. Czołowej (wg artykułu). Współrzędne z nagłówka."
+  },
+  {
+    "id": "wisniewo-osiedle",
+    "nazwa": "Wiśniewo",
+    "name_en": "Wiśniewo",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.3239, "lon": 20.9789,
+    "lokalizacja": "przyblizona",
+    "okres": "od 1917 (szkoła) – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa osiedla pochodzi prawdopodobnie od nazwiska hrabiów Wiśniewskich, którzy na tym terenie posiadali swoją posiadłość.",
+      "W czasie okupacji oraz po wojnie na terenie Wiśniewa działała biblioteka państwa Zawadzkich, z której można było wypożyczać książki o treściach patriotycznych.",
+      "W lipcu 2011 roku deweloper budujący osiedle domków szeregowych – spółka BMI Sp. z o.o. – zburzył zabytkowy dworek Srebrna Góra i do dziś go nie odbudował.",
+      "W 2012 roku deweloper przedstawił projekt budowy centrum handlowego częściowo na terenie Parku Wiśniewo; projekt wzbudził protesty mieszkańców i do dziś nie doczekał się realizacji.",
+      "Początki Szkoły Podstawowej nr 257 im. Mariana Falskiego sięgają 1917 roku, kiedy założono tzw. Ochronę Rady Miejskiej Opiekuńczej z dwoma oddziałami szkolnymi i 25 uczniami.",
+      "W 1919 szkołę przejęła gmina Jabłonna i przeniesiono ją do budynku przy ulicy Modlińskiej; otrzymała nazwę Szkoły Powszechnej w Henrykowie."
+    ],
+    "ciekawostki": [
+      "Na terenie Parku Wiśniewo znajdują się lęgowiska ptaków chronionych (m.in. dzięcioł czarny, dzięcioł zielony) oraz stare drzewostany o charakterze pomnikowym."
+    ],
+    "summary_en": "Wiśniewo is a residential estate in north-eastern Białołęka, east of Modlińska Street. Its name may come from the Wiśniewski counts; the Srebrna Góra manor in Wiśniewo Park was demolished in July 2011.",
+    "ludzie": [
+      {"kto": "Zawadzcy", "rola": "państwo prowadzący bibliotekę na terenie Wiśniewa w czasie okupacji i po wojnie", "wiki": null},
+      {"kto": "Marian Falski", "rola": "patron Szkoły Podstawowej nr 257 (nadanie imienia 1976)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wiśniewo (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wi%C5%9Bniewo_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł opisuje też Park Wiśniewo i Dwór Srebrna Góra (osobny rekord)."
+  },
+  {
+    "id": "dwor-srebrna-gora-wisniewo",
+    "nazwa": "Dwór Srebrna Góra (Wiśniewo)",
+    "name_en": "Srebrna Góra Manor (Wiśniewo)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.3239, "lon": 20.9789,
+    "lokalizacja": "przyblizona",
+    "okres": "do lipca 2011",
+    "istnieje": false,
+    "fakty": [
+      "Na terenie Parku Wiśniewo znajdował się majątek ziemski Srebrna Góra.",
+      "Zawierucha wojenna i częste zmiany właścicieli doprowadziły do zniszczenia budowli; fragmenty budynku wraz z otaczającym go drzewostanem zostały wpisane do ewidencji zabytków.",
+      "W lipcu 2011 roku deweloper budujący osiedle domków szeregowych – spółka BMI Sp. z o.o. – zburzył zabytkowy dworek i do dziś go nie odbudował."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Srebrna Góra, a manor estate in what is now Park Wiśniewo in Białołęka. War damage and frequent changes of owners wrecked the buildings; the surviving manor house was demolished by a developer in July 2011.",
+    "ludzie": [],
+    "dawne_nazwy": ["Majątek Srebrna Góra"],
+    "zrodla": [{"tytul": "Wikipedia: Wiśniewo (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wi%C5%9Bniewo_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Położenie w Parku Wiśniewo; współrzędne Wiśniewa (przybliżone). Tylko ten jeden artykuł jako źródło."
+  }
+]

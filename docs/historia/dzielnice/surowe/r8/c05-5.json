@@ -1,0 +1,271 @@
+[
+  {
+    "id": "westfield-mokotow",
+    "nazwa": "Westfield Mokotów (dawniej Galeria Mokotów)",
+    "name_en": "Westfield Mokotów shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Wołoska 12",
+    "adres_historyczny": null,
+    "lat": 52.17972222,
+    "lon": 21.00388889,
+    "lokalizacja": "dokladna",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Centrum zostało wybudowane na terenie po dawnej Fabryce Półprzewodników „Tewa” przez Globe Trade Centre SA (GTC) pod nazwą Galeria Mokotów.",
+      "Zostało oddane do użytku we wrześniu 2000.",
+      "W czerwcu 2003 roku GTC i Rodamco Europe sfinalizowały umowę, w wyniku której Rodamco Europe objęło zarządzanie i 50% udziałów w centrum.",
+      "W wyniku dwukrotnej rozbudowy (2002 i 2006) jej powierzchnia handlowa zwiększyła się do 62,5 tys. m².",
+      "29 września 2022 roku centrum zmieniło nazwę z Galerii Mokotów na Westfield Mokotów."
+    ],
+    "ciekawostki": [
+      "Na dachu budynku znajduje się pasieka."
+    ],
+    "summary_en": "Westfield Mokotów at Wołoska 12 was opened in September 2000 as Galeria Mokotów on the site of the former Tewa semiconductor factory. It was renamed Westfield Mokotów in 2022.",
+    "ludzie": [],
+    "dawne_nazwy": ["Galeria Mokotów", "Fabryka Półprzewodników „Tewa” (teren przed budową)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Westfield Mokotów", "url": "https://pl.wikipedia.org/wiki/Westfield_Mokot%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka."
+  },
+  {
+    "id": "wierzbno-warszawa",
+    "nazwa": "Wierzbno",
+    "name_en": "Wierzbno",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1944,
+    "lon": 21.0144,
+    "lokalizacja": "przyblizona",
+    "okres": "dawna wieś – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wierzbno to dawna wieś, obecnie obszar MSI w dzielnicy Mokotów.",
+      "Dawniej na terenie obecnego Wierzbna znajdowała się Grójecka Kolej Dojazdowa, stacje Odyńca/Mokotów oraz Wierzbno (Królikarnia), zlikwidowane w 1937 roku.",
+      "Pętla trolejbusowa wzdłuż ulic Odyńca, Krasickiego oraz Ursynowskiej została zlikwidowana 1 sierpnia 1970.",
+      "Dworzec autobusowy PKS Mokotów przy ul. Ursynowskiej został zlikwidowany pod koniec lat 90."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wierzbno is a former village and now an MSI area in central-western Mokotów, bounded by Racławicka and Dolna to the north and Woronicza and Wołoska to the south. Its Grójec narrow-gauge railway stations closed in 1937 and its trolleybus loop in 1970.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wierzbno (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wierzbno_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Obszar MSI."
+  },
+  {
+    "id": "wierzbno-stacja-metra",
+    "nazwa": "Wierzbno (stacja metra)",
+    "name_en": "Wierzbno metro station",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.189722222,
+    "lon": 21.016666666,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa stacji została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983.",
+      "Jej budowa rozpoczęła się w 1986.",
+      "Stacja jest jednokondygnacyjna, łukowa, bez słupów; peron-wyspa ma szerokość 10 m i długość 120 m.",
+      "Stacja przystosowana jest do pełnienia, w razie konieczności, funkcji schronu dla ludności cywilnej."
+    ],
+    "ciekawostki": [
+      "Stacja jest utrzymana w kolorach szarym i żółtym."
+    ],
+    "summary_en": "Wierzbno is a curved, pillarless single-level station on metro line M1 at the junction of Woronicza, Aleja Niepodległości and Naruszewicza streets. It was named in 1983 and its construction began in 1986.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wierzbno (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Wierzbno_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wilanowska-stacja-metra",
+    "nazwa": "Wilanowska (stacja metra)",
+    "name_en": "Wilanowska metro station",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.181388888,
+    "lon": 21.023055555,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa stacji została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983.",
+      "7 kwietnia 1995 roku na stacji odbyło się uroczyste uruchomienie pierwszego odcinka metra.",
+      "Pierwszą polską linię metra otwierali: premier RP Józef Oleksy, prezydent Warszawy Marcin Święcicki i Jan Józef Podoski.",
+      "Stacja jest dwukondygnacyjna – galerie boczne znajdują się nad torami metra.",
+      "Peron-wyspa ma szerokość 11 m i długość 142,5 m; jest najdłuższym peronem w warszawskim metrze."
+    ],
+    "ciekawostki": [
+      "Stacji poświęcona jest piosenka „Stacja Wilanowska” zespołu Elektryczne Gitary, będąca coverem „Waterloo Sunset” The Kinks."
+    ],
+    "summary_en": "Wilanowska is a two-level station on metro line M1 near Aleja Wilanowska, with the longest platform on the Warsaw metro (142.5 m). It was opened as part of the first metro section on 7 April 1995.",
+    "ludzie": [
+      {"kto": "Józef Oleksy", "rola": "premier RP, uczestnik otwarcia pierwszego odcinka metra (1995)", "wiki": null},
+      {"kto": "Marcin Święcicki", "rola": "prezydent Warszawy, uczestnik otwarcia pierwszego odcinka metra (1995)", "wiki": null},
+      {"kto": "Jan Józef Podoski", "rola": "uczestnik otwarcia pierwszego odcinka metra (1995)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wilanowska (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Wilanowska_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wilanowek",
+    "nazwa": "Wilanówek",
+    "name_en": "Wilanówek",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.173333333,
+    "lon": 21.058888888,
+    "lokalizacja": "przyblizona",
+    "okres": "1980–1993",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało wybudowane w latach 1980–1993 na powierzchni 6,5 ha.",
+      "Autorami projektu architektonicznego byli Anna Fedorowska, Ryszard Fedorowski, Marcin Przyłubski i Andrzej Szkop.",
+      "Inwestorem osiedla była Spółdzielnia Budowlano-Mieszkaniowa „Związkowiec”, powstała z inicjatywy Komisji Porozumiewawczej Branżowych Związków Zawodowych.",
+      "Pierwotny plan zakładał budowę 130 mieszkań o powierzchni 60–75 m² i 120 domów.",
+      "Osiedle zamieszkiwali m.in. Mariusz Walter, Lew Rywin i Grzegorz Żemek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wilanówek is a housing estate in Mokotów built in 1980–1993 on 6.5 ha by the Związkowiec housing cooperative. Its architects planned mid-rise blocks with pitched roofs and houses that echo historic Warsaw.",
+    "ludzie": [
+      {"kto": "Anna Fedorowska", "rola": "architektka projektu osiedla", "wiki": null},
+      {"kto": "Ryszard Fedorowski", "rola": "architekt projektu osiedla", "wiki": null},
+      {"kto": "Marcin Przyłubski", "rola": "architekt projektu osiedla", "wiki": null},
+      {"kto": "Andrzej Szkop", "rola": "architekt projektu osiedla", "wiki": null},
+      {"kto": "Mariusz Walter", "rola": "mieszkaniec osiedla", "wiki": null},
+      {"kto": "Lew Rywin", "rola": "mieszkaniec osiedla", "wiki": null},
+      {"kto": "Grzegorz Żemek", "rola": "mieszkaniec osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wilanówek", "url": "https://pl.wikipedia.org/wiki/Wilan%C3%B3wek"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI Stegny. Współrzędne z nagłówka."
+  },
+  {
+    "id": "dom-wilanowski",
+    "nazwa": "Dom Wilanowski",
+    "name_en": "Dom Wilanowski",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Cypryjska 2a",
+    "adres_historyczny": null,
+    "lat": 52.173333333,
+    "lon": 21.058888888,
+    "lokalizacja": "przyblizona",
+    "okres": "1993–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W centralnej części osiedla Wilanówek zaplanowano miejsce na „dom społeczny”; Spółdzielnia Budowlano-Mieszkaniowa „Związkowiec” sprzedała jednak działkę o powierzchni ok. 490 m² trzem osobom prywatnym.",
+      "Luksusowy apartamentowiec „Dom Wilanowski” zaprojektował Zbigniew Garbowski.",
+      "Budynek powstawał w latach 1993–1994 pod adresem ul. Cypryjska 2a.",
+      "Budynek został ujęty w książce Aleksandry Stępień-Dąbrowskiej „Jakby luksusowo. Przewodnik po architekturze Warszawy lat 90.”."
+    ],
+    "ciekawostki": [
+      "W budynku mieszkał australijsko-polski miliarder Abraham Goldberg, który ukrywał się w Polsce przed australijskim wymiarem sprawiedliwości."
+    ],
+    "summary_en": "Dom Wilanowski at Cypryjska 2a is a luxury apartment block built in 1993–1994 on a plot sold by the Związkowiec cooperative. It was designed by Zbigniew Garbowski and is listed in a guide to 1990s Warsaw architecture.",
+    "ludzie": [
+      {"kto": "Zbigniew Garbowski", "rola": "architekt apartamentowca", "wiki": null},
+      {"kto": "Abraham Goldberg", "rola": "australijsko-polski miliarder, mieszkał w budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wilanówek", "url": "https://pl.wikipedia.org/wiki/Wilan%C3%B3wek"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dodatkowy z artykułu o osiedlu. Współrzędne to środek osiedla, nie budynku."
+  },
+  {
+    "id": "wilanowka-rzeka",
+    "nazwa": "Wilanówka (rzeka)",
+    "name_en": "Wilanówka river",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.193888888,
+    "lon": 21.103333333,
+    "lokalizacja": "przyblizona",
+    "okres": "do lat 50. XX w. – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wilanówka do lat 50. XX w. była dolnym odcinkiem rzeki Jeziorki, kiedy postanowiono o sztucznym skróceniu jej biegu w rejonie Obórek.",
+      "Jeziorka została skierowana bezpośrednio do Wisły.",
+      "Obecnie Wilanówka jest w istocie zanikającym i zarastającym ciekiem wodnym.",
+      "Długość rzeki wynosi 16,5 km, w tym 9,961 km na terenie Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Wilanówka is a small left-bank tributary of the Vistula that was once the lower course of the Jeziorka. It was cut off by a man-made diversion in the 1950s and is now a shrinking, overgrown stream.",
+    "ludzie": [],
+    "dawne_nazwy": ["dolny odcinek Jeziorki (do lat 50. XX w.)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wilanówka", "url": "https://pl.wikipedia.org/wiki/Wilan%C3%B3wka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Rzeka, nie budynek; wpis dla kontekstu dzielnicy."
+  },
+  {
+    "id": "willa-arpada-chowanczaka",
+    "nazwa": "Willa Arpada Chowańczaka",
+    "name_en": "Arpad Chowańczak Villa",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Morskie Oko 5",
+    "adres_historyczny": null,
+    "lat": 52.203302,
+    "lon": 21.02456,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa została zbudowana w 1928 r. na zlecenie polskiego potentata przemysłu kuśnierskiego Andrzeja „Arpada” Chowańczaka.",
+      "W czasie II wojny światowej willa Chowańczaków była ważnym ośrodkiem konspiracyjnym ze względu na zaangażowanie Jana Daniela Chowańczaka, syna Arpada, w działalność podziemną.",
+      "W willi byli między innymi ukrywani przedwojenni pracownicy firmy pochodzenia żydowskiego, w tym rodzina Biegunów.",
+      "Podczas powstania warszawskiego, w nocy z 5 na 6 sierpnia 1944 r., willę zajęli żołnierze 3. Plutonu podporucznika Tomasza Kępińskiego ps. „Krzywosąd”.",
+      "Budynek w rejestrze zabytków umieściła w 2010 r. Barbara Jezierska – nowy wojewódzki konserwator zabytków.",
+      "Pod koniec 2012 r. willa zyskała nowego właściciela – spółkę AP Projekty z Konstancina-Jeziorny, należącą do Andrzeja Piliszka."
+    ],
+    "ciekawostki": [
+      "Willa jest przykładem tzw. redukcyjnego klasycyzmu, trzeciego obok stylu dworkowego i modernizmu kierunku w międzywojennej architekturze."
+    ],
+    "summary_en": "The Arpad Chowańczak Villa at Morskie Oko 5 was built in 1928 for a fur-industry magnate and was a conspiratorial base during the war. It was placed on the heritage register in 2010 after a long dispute over demolition.",
+    "ludzie": [
+      {"kto": "Andrzej „Arpad” Chowańczak", "rola": "polski potentat przemysłu kuśnierskiego, zleceniodawca willi", "wiki": null},
+      {"kto": "Jan Daniel Chowańczak", "rola": "syn Arpada, zaangażowany w działalność podziemną w czasie wojny", "wiki": null},
+      {"kto": "Tomasz Kępiński", "rola": "podporucznik, dowódca 3. Plutonu „Krzywosąd” (sierpień 1944)", "wiki": null},
+      {"kto": "Barbara Jezierska", "rola": "wojewódzka konserwator zabytków, która wpisała willę do rejestru (2010)", "wiki": null},
+      {"kto": "Andrzej Piliszek", "rola": "szef firmy Myoni, który kupił willę pod koniec 2012", "wiki": null},
+      {"kto": "Waldemar Baraniewski", "rola": "historyk sztuki, który ocenił wartość artystyczną willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Arpada Chowańczaka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Arpada_Chowa%C5%84czaka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście nazwisko nowego właściciela raz pisane jako Piliszek, raz jako Pliszak; w rekordzie użyto Piliszek (pierwsza wzmianka)."
+  }
+]

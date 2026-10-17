@@ -669,13 +669,13 @@
   },
   {
     "id": "apartamentowiec-walecznych-62",
-    "nazwa": "Apartamentowiec (ul. Walecznych 62)",
+    "nazwa": "Villa Daglezja (ul. Walecznych 62)",
     "name_en": "Apartment building (62 Walecznych Street)",
     "typ": "budynek",
     "dzielnica": "Praga-Południe",
     "adres_dzis": "ul. Walecznych 62",
     "adres_historyczny": null,
-    "lat": 52.2351, "lon": 21.0566,
+    "lat": 52.235980555, "lon": 21.060394444,
     "lokalizacja": "przyblizona",
     "okres": "2007–2008–dziś",
     "istnieje": true,
@@ -693,6 +693,6 @@
     "dawne_nazwy": [],
     "zrodla": [{"tytul": "Wikipedia: Ulica Walecznych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Walecznych_w_Warszawie"}],
     "pewnosc": "wysoka",
-    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+    "uwagi": "Ten sam obiekt jest w artykule „Villa Daglezja” (WSPÓŁRZĘDNE tego artykułu użyte). Pierwsze dwa fakty pochodzą z artykułu o ulicy Walecznych."
   }
 ]

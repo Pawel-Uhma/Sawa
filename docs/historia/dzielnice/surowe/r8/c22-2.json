@@ -1,0 +1,433 @@
+[
+  {
+    "id": "staw-pod-palacem-sggw",
+    "nazwa": "Staw pod pałacem SGGW",
+    "name_en": "Pond below the SGGW Palace",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.165,
+    "lon": 21.051666666,
+    "lokalizacja": "dokladna",
+    "okres": "dziś (przebudowa 2016)",
+    "istnieje": true,
+    "fakty": [
+      "W 2016 roku zakończyła się przebudowa terenu skarpy pod pałacem; objęła ona m.in. staw, który został odkrzaczony i powiększony.",
+      "Przed przebudową powierzchnia stawu wynosiła 0,0216 ha, a po niej około 0,146 ha.",
+      "Teren stawu został po przebudowie ogrodzony i oddzielony od reszty rezerwatu.",
+      "Od kwietnia 2025 zabytkowy ogród tarasowy SGGW, na którego terenie znajduje się staw, został udostępniony przez uczelnię zwiedzającym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small pond below the palace of the Warsaw University of Life Sciences (SGGW), on the Warsaw Escarpment in Wilanów. It was enlarged during the 2016 reconstruction of the slope, and the historic terraced garden has been open to visitors since April 2025.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw pod pałacem SGGW", "url": "https://pl.wikipedia.org/wiki/Staw_pod_pa%C5%82acem_SGGW"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "synagoga-beit-warszawa",
+    "nazwa": "Synagoga Beit Warszawa",
+    "name_en": "Beit Warszawa Synagogue",
+    "typ": "swiatynia",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Stępińska 9",
+    "adres_historyczny": null,
+    "lat": 52.17527778,
+    "lon": 21.07694444,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Synagoga została założona w 2003 roku z inicjatywy Towarzystwa Kultury Żydowskiej Beit Warszawa.",
+      "Synagoga jest jedną z sześciu czynnych synagog w Warszawie i jedną z trzech tradycji reformowanej w mieście.",
+      "Jeden z dwóch zwojów Tory znajdujących się w szafie został podarowany w 2002 roku przez społeczność żydowską z Missisipi.",
+      "Nabożeństwa odbywają się regularnie we wszystkie szabaty oraz święta w duchu postępowego nurtu judaizmu."
+    ],
+    "ciekawostki": [
+      "W synagodze prowadzone są kursy przygotowawcze do konwersji na judaizm.",
+      "Na drzwiczkach drewnianego Aron ha-kodesz namalowana jest menora, symbol organizacji Friends of Jewish Renewal in Poland."
+    ],
+    "summary_en": "Beit Warszawa is a progressive (Reform) synagogue at Stępińska 9, founded in 2003 on the initiative of the Jewish Culture Society Beit Warszawa. It holds regular services on Shabbat and holidays.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Synagoga Beit Warszawa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Beit_Warszawa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Według nagłówka współrzędne leżą w dzielnicy Wilanów."
+  },
+  {
+    "id": "szpital-medicover",
+    "nazwa": "Szpital Medicover",
+    "name_en": "Medicover Hospital",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "al. Rzeczypospolitej 5",
+    "adres_historyczny": null,
+    "lat": 52.1551,
+    "lon": 21.0786,
+    "lokalizacja": "dokladna",
+    "okres": "2009–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szpital rozpoczął działalność w lipcu 2009.",
+      "Wartość inwestycji wyniosła 40 mln euro.",
+      "Budynek zajmuje powierzchnię 16 tys. m².",
+      "Od stycznia 2011 roku Szpital Medicover współpracuje z Narodowym Funduszem Zdrowia.",
+      "W 2014 roku po raz pierwszy szpital wziął udział w rankingu na „Bezpieczny Szpital 2014”, gdzie znalazł się na 60. miejscu.",
+      "W 2014 roku szpital otrzymał tytuł Najlepszego Międzynarodowego Szpitala w Polsce przyznawany przez IHC.",
+      "Do 29 lipca 2014 szpital posiadał certyfikat Systemu Zarządzania Jakością (ISO 9001:2008)."
+    ],
+    "ciekawostki": [
+      "Według artykułu Szpital Medicover jest największym prywatnym szpitalem w Polsce."
+    ],
+    "summary_en": "Medicover Hospital is a multispecialty private hospital at al. Rzeczypospolitej 5 in Wilanów. Opened in July 2009 with a 40 million euro investment, it covers 16,000 m² and has been working with the National Health Fund since 2011.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szpital Medicover", "url": "https://pl.wikipedia.org/wiki/Szpital_Medicover"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord budynku, bo szpital ma własny obiekt; pominięto listę usług i kategorie certyfikatów bez dat."
+  },
+  {
+    "id": "ulica-wal-zawadowski",
+    "nazwa": "ul. Wał Zawadowski",
+    "name_en": "Wał Zawadowski Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Wał Zawadowski",
+    "adres_historyczny": null,
+    "lat": 52.178928,
+    "lon": 21.114434,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica w większej części leży na terenie przyłączonym do Warszawy w roku 1951.",
+      "Formalnie jako ulica uzyskała nazwę w roku 1960.",
+      "Ulica biegnie wzdłuż wiślanego wału przeciwpowodziowego i na większości długości jest drogą gruntową.",
+      "Numeracja ulicy jest kontynuacją numerów posesji ulicy Włóki; ostatni numer Włóki to 75, a Wał Zawadowski rozpoczyna się od numeru 77."
+    ],
+    "ciekawostki": [
+      "Odcinek Wału Zawadowskiego na terenie Zawad, nazywany roboczo Czerniakowska-bis, ma być częścią drogi ekspresowej łączącej Trasę Siekierkowską z planowaną Południową Obwodnicą Warszawy."
+    ],
+    "summary_en": "Wał Zawadowski runs along the Vistula flood embankment across the Wilanów and Mokotów districts. Named officially in 1960, it is mostly an unpaved local road.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wał Zawadowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wa%C5%82_Zawadowski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka leżą w środku odcinka ulicy."
+  },
+  {
+    "id": "ulica-wiertnicza",
+    "nazwa": "ul. Wiertnicza",
+    "name_en": "Wiertnicza Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Wiertnicza",
+    "adres_historyczny": null,
+    "lat": 52.1725,
+    "lon": 21.0806,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1891 Henryk Huss, inżynier, i Wiktor Magnus, specjalista od parcelacji, założyli spółkę w celu budowy kolejki do Wilanowa.",
+      "5 maja 1892 oddano do użytku odcinek konnej kolei wąskotorowej między Czerniakowem a Wilanowem, przebiegający wzdłuż północnego odcinka późniejszej ulicy Wiertniczej.",
+      "1 września 1894 kolej konna została zastąpiona na tej trasie przez lokomotywy parowe.",
+      "15 maja 1937 oddano do użytku podmiejską linię tramwajową wzdłuż późniejszej ulicy Wiertniczej.",
+      "20 lipca 1957 oddano do użytku odbudowaną linię tramwajową od Cmentarza w Wilanowie do ulicy Powsińskiej.",
+      "W 1972 podjęto decyzję o włączeniu północnego odcinka ulicy w skład nowej trasy nazwanej Wisłostradą.",
+      "Uchwałą Rady m.st. Warszawy z dnia 10 marca 1997 południowemu odcinkowi ulicy od ulicy Zygmunta Vogla do ulicy Kolegiackiej nadano nazwę ulica Stanisława Kostki Potockiego.",
+      "Ulica została nazwana Wiertniczą uchwałą Rady Narodowej m.st. Warszawy z dnia 12 kwietnia 1954 roku."
+    ],
+    "ciekawostki": [
+      "Uroczystość otwarcia linii kolei konnej odbyła się na moście przez rów, przy figurze św. Jana Nepomucena, od której pochodzi nazwa przystanku „Święty Jan”."
+    ],
+    "summary_en": "Wiertnicza runs through Mokotów and Wilanów between Sadyba and Powsin. Its history includes the 1892 horse-drawn narrow-gauge railway to Wilanów, a 1937 tram line and the 1974 Wisłostrada road works.",
+    "ludzie": [
+      {"kto": "Henryk Huss", "rola": "inżynier, współzałożyciel spółki budującej kolejkę do Wilanowa (1891)", "wiki": null},
+      {"kto": "Wiktor Magnus", "rola": "specjalista od parcelacji, współzałożyciel spółki budującej kolejkę do Wilanowa (1891)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica 1 Maja (1951–1954)", "część drogi od ul. Zygmunta Vogla do Kolegiackiej: ul. Stanisława Kostki Potockiego (od 1997)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wiertnicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wiertnicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek ulicy; artykuł opisuje ulicę także w dzielnicy Mokotów, a nagłówek podaje Wilanów. Część faktów przybliżona do odcinka."
+  },
+  {
+    "id": "kuznia-krolewska-wilanow",
+    "nazwa": "Kuźnia Królewska w Wilanowie",
+    "name_en": "Royal Forge in Wilanów",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Stanisława Kostki Potockiego 24",
+    "adres_historyczny": "Wiertnicza 1",
+    "lat": 52.1725,
+    "lon": 21.0806,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie królewska kuźnia w Wilanowie najprawdopodobniej zlokalizowana była w drewnianym budyneczku.",
+      "W XVIII wieku kuźnię wymurowano; budynek ma plan prostokąta i wysoki czterospadowy dach.",
+      "Obecnie w budynku znajduje się restauracja „Kuźnia”."
+    ],
+    "ciekawostki": [
+      "W starszych opracowaniach budynek pojawia się jako Wiertnicza 1, a inne obiekty kompleksu pałacowego mają adresy Wiertnicza 1 lub 2 z kolejnymi literami."
+    ],
+    "summary_en": "The Royal Forge (Kuźnia Królewska) in Wilanów, first a wooden building and rebuilt in brick in the 18th century, now houses the Kuźnia restaurant.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wiertnicza 1"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wiertnicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wiertnicza_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne to środek ulicy Wiertniczej z nagłówka artykułu o ulicy, nie dokładna pozycja budynku. Dane z sekcji „Ważniejsze obiekty”."
+  },
+  {
+    "id": "wiertnicza-27",
+    "nazwa": "Budynek przy ul. Wiertniczej 27",
+    "name_en": "Building at Wiertnicza 27",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Wiertnicza 27",
+    "adres_historyczny": null,
+    "lat": 52.1725,
+    "lon": 21.0806,
+    "lokalizacja": "przyblizona",
+    "okres": "1850–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek neorenesansowy, mieszczący dawniej zajazd, wzniesiono według projektu Franciszka Marii Lanciego w 1850 roku.",
+      "Budynek, kilkakrotnie przebudowywany, został odbudowany w 1969 roku i przeznaczony na lokal użytkowy.",
+      "W akcji odwetowej „Wilanów” w dniu 26.IX.1943 r. żołnierze Kedywu Komendy Głównej AK zdobyli wartownię żandarmerii hitlerowskiej znajdującą się w tym miejscu.",
+      "Na budynku wmurowana jest tablica z piaskowca upamiętniająca tę akcję."
+    ],
+    "ciekawostki": [
+      "Obecnie w budynku mieszczą się Centrum Kultury Wilanów oraz restauracja „Wilanów”."
+    ],
+    "summary_en": "A neo-Renaissance building at Wiertnicza 27, designed by Franciszek Maria Lanci in 1850 as a coaching inn. In September 1943 the Home Army Kedyw seized a German gendarmerie guardhouse on the site.",
+    "ludzie": [
+      {"kto": "Franciszek Maria Lanci", "rola": "autor projektu budynku z 1850 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wiertnicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wiertnicza_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne to środek ulicy z nagłówka. Zdanie o przebudowie w tekście jest niejasne, przepisano je wprost."
+  },
+  {
+    "id": "cmentarz-w-wilanowie",
+    "nazwa": "Cmentarz w Wilanowie",
+    "name_en": "Wilanów Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Wiertnicza / ul. Wilanowska",
+    "adres_historyczny": null,
+    "lat": 52.1725,
+    "lon": 21.0806,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś (tablica z 1998)",
+    "istnieje": true,
+    "fakty": [
+      "W dniach 15–21 sierpnia 1944 roku przez kordon wojsk niemieckich w Kabatach, Ursynowie i Wilanowie przebijały się z Lasów Chojnowskich oddziały Armii Krajowej.",
+      "W nocnym boju 18/19 sierpnia w grupie odsieczy „Grzymała” żołnierze AK przedarli się na Sadybę.",
+      "Wśród poległych w walce zginęli dowódca odsieczy ppłk Mieczysław Sokołowski „Grzymała” i cichociemny kpt. Julian Kozłowski „Cichy” z Sadyby.",
+      "Tablica z czarnego granitu na głazie narzutowym została ufundowana przez władze i społeczeństwo Wilanowa 27 września 1998 r."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wilanów Cemetery at Wiertnicza and Wilanowska streets has a granite plaque commemorating the August 1944 Home Army breakthrough to Sadyba, in which Mieczysław Sokołowski „Grzymała” and Julian Kozłowski „Cichy” fell.",
+    "ludzie": [
+      {"kto": "Mieczysław Sokołowski „Grzymała”", "rola": "dowódca odsieczy AK, poległ w sierpniu 1944 r.", "wiki": null},
+      {"kto": "Julian Kozłowski „Cichy”", "rola": "cichociemny, poległ w sierpniu 1944 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wiertnicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wiertnicza_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Opis tablicy pochodzi z sekcji „Ważniejsze obiekty” artykułu o ulicy; adres to skrzyżowanie wg tekstu."
+  },
+  {
+    "id": "tablica-wiertnicza-31",
+    "nazwa": "Tablica przy dawnej stacji Wilanowskiej Kolei Wąskotorowej",
+    "name_en": "Plaque at the former Wilanów narrow-gauge railway station",
+    "typ": "tablica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Wiertnicza 31",
+    "adres_historyczny": null,
+    "lat": 52.1725,
+    "lon": 21.0806,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś (dawna stacja kolei wąskotorowej)",
+    "istnieje": true,
+    "fakty": [
+      "Wiertnicza 31 to dawna stacja Wilanowskiej Kolei Wąskotorowej.",
+      "W styczniu 1945 roku 14 pułk Ludowego Wojska Polskiego dokonał natarcia na wojska hitlerowskie i uniemożliwił im wysadzenie w powietrze Belwederu.",
+      "Przy budynku stoi wolnostojąca tablica na podmurówce z piaskowca z tym upamiętnieniem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A sandstone plaque by the former narrow-gauge railway station at Wiertnicza 31 commemorates a January 1945 attack by the 14th Infantry Regiment of the Polish People's Army that prevented the Germans from blowing up the Belweder.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wiertnicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wiertnicza_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie podaje daty budowy tej stacji; rok 1892 w artykule dotyczy otwarcia odcinka kolei konnej."
+  },
+  {
+    "id": "warszawa-wilanow-dworzec",
+    "nazwa": "Dworzec Warszawa Wilanów",
+    "name_en": "Warszawa Wilanów railway station building",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.167194,
+    "lon": 21.085,
+    "lokalizacja": "dokladna",
+    "okres": "lata 20. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 20. XX wieku według projektu Konstantego Jakimowicza.",
+      "Pierwotnie mieścił kasy biletowe, poczekalnię, pomieszczenia i mieszkania dla kolejarzy.",
+      "W marcu 1979 w budynku otwarto urząd pocztowy.",
+      "W 2012 budynek dawnego dworca został wpisany do gminnej ewidencji zabytków, a w 2021 również do rejestru zabytków.",
+      "Do 2016 budynek użytkowała Poczta Polska.",
+      "W 2024 Dzielnica Wilanów przygotowała przetarg na prace modernizacyjne."
+    ],
+    "ciekawostki": [
+      "W przyszłości pod uwagę brane jest ustawienie przed budynkiem dwuosiowego wagonu kolei wąskotorowej, którym dysponuje dzielnica."
+    ],
+    "summary_en": "The historic station building of the defunct Wilanów line, designed by Konstanty Jakimowicz in the 1920s. Listed as a monument in 2012 (municipal register) and 2021 (national register).",
+    "ludzie": [
+      {"kto": "Konstanty Jakimowicz", "rola": "autor projektu dworca z lat 20. XX w.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Wilanów", "url": "https://pl.wikipedia.org/wiki/Warszawa_Wilan%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres nie jest podany w artykule; jest przystanek na nieistniejącej linii kolei wilanowskiej."
+  },
+  {
+    "id": "wilanow-dzielnica",
+    "nazwa": "Wilanów",
+    "name_en": "Wilanów",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.166666666,
+    "lon": 21.083333333,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie nazwa miejscowości brzmiała Milanowo lub Milanów; w 1350 r. pojawia się jako Mylynow.",
+      "W 1338 roku wieś Milanowo, do tej pory własność opactwa benedyktynów w Płocku, stała się własnością księcia czerskiego i sochaczewskiego Trojdena.",
+      "W 1677 roku dwór w Milanowie został odkupiony przez Jana III Sobieskiego za pośrednictwem Marka Matczyńskiego.",
+      "W 1720 roku teren wraz z pałacem kupiła Elżbieta Helena Sieniawska.",
+      "W latach 1730–1733 Wilanów dzierżawił August II Mocny.",
+      "W 1892 roku, zgodnie z testamentem Aleksandry z Potockich, nieruchomość została przekazana Ksaweremu Branickiemu.",
+      "Wilanów pozostawał w posiadaniu Branickich od 1892 roku do końca II wojny światowej.",
+      "W 1945 roku zespół pałacowo-ogrodowy przeszedł na własność państwa, stając się oddziałem Muzeum Narodowego w Warszawie.",
+      "15 maja 1951 Wilanów został włączony do granic Warszawy."
+    ],
+    "ciekawostki": [
+      "Nazwa Wilanów wywodzi się prawdopodobnie od zlatynizowanej nazwy rezydencji Villa Nova z XVII wieku."
+    ],
+    "summary_en": "Wilanów is a district of Warsaw on the left bank of the Vistula, home to the 17th-century royal palace built by Jan III Sobieski. It became part of Warsaw in 1951 and includes eight MSI areas.",
+    "ludzie": [
+      {"kto": "Jan III Sobieski", "rola": "odkupił dwór w Milanowie w 1677 r.", "wiki": null},
+      {"kto": "Elżbieta Helena Sieniawska", "rola": "kupiła teren wraz z pałacem w 1720 r.", "wiki": null},
+      {"kto": "Ksawery Branicki", "rola": "otrzymał nieruchomość w 1892 r. zgodnie z testamentem Aleksandry z Potockich", "wiki": null}
+    ],
+    "dawne_nazwy": ["Milanowo", "Milanów", "Villa Nova"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wilanów", "url": "https://pl.wikipedia.org/wiki/Wilan%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord całej dzielnicy, wpisany ze względu na historię osady; współrzędne z nagłówka to środek dzielnicy."
+  },
+  {
+    "id": "zatoka-czerwonych-swin",
+    "nazwa": "Zatoka czerwonych świń",
+    "name_en": "Zatoka czerwonych świń (Red Pigs Bay) housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "kwartał ulic al. Wilanowska, Lentza, Królowej Marysieńki i Kosiarzy",
+    "adres_historyczny": null,
+    "lat": 52.1702,
+    "lon": 21.0733,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 80. XX wieku na zlecenie Urzędu Rady Ministrów na terenie wywłaszczonym pod szpital w 1975 r.",
+      "Zamieszkiwali na nim politycy Polskiej Zjednoczonej Partii Robotniczej, a następnie Sojuszu Lewicy Demokratycznej.",
+      "W 2006 r. z inicjatywy ABW prokuratura wszczęła śledztwo w sprawie lokali przy ul. Wiktorii Wiedeńskiej i ul. Marconich, które w latach 1996–1998 zostały wykupione od miasta stołecznego Warszawy po cenach znacznie odbiegających od rynkowych.",
+      "W 2008 r. zapadła decyzja o umorzeniu śledztwa: w przypadku 41 mieszkań z braku dowodów, a w przypadku 4 z powodu przedawnienia karalności.",
+      "W 2024 Polski Holding Nieruchomości przedstawił koncepcję wyburzenia 23 budynków osiedla; w 2025 spółka zapowiedziała plan, który wykorzysta istniejącą zabudowę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An unofficial name for a Wilanów Wysoki estate built in the 1980s on land expropriated for a hospital in 1975. Its residents included PZPR and SLD politicians, and in 2024 demolition of 23 buildings was proposed.",
+    "ludzie": [
+      {"kto": "Józef Oleksy", "rola": "polityk, mieszkaniec osiedla", "wiki": null},
+      {"kto": "Jerzy Szmajdziński", "rola": "polityk, mieszkaniec osiedla", "wiki": null},
+      {"kto": "Janusz Zemke", "rola": "polityk, mieszkaniec osiedla", "wiki": null},
+      {"kto": "Aleksander Kwaśniewski", "rola": "polityk, mieszkaniec osiedla; wymieniony w sprawie wykupu lokali", "wiki": null},
+      {"kto": "Leszek Miller", "rola": "polityk, mieszkaniec osiedla; wymieniony w sprawie wykupu lokali", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zatoka czerwonych świń", "url": "https://pl.wikipedia.org/wiki/Zatoka_czerwonych_%C5%9Bwi%C5%84"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Według tekstu sprawa śledztwa zakończyła się umorzeniem; fakty przepisane wprost, bez oceny."
+  },
+  {
+    "id": "zawady-osiedle",
+    "nazwa": "Zawady",
+    "name_en": "Zawady",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1715,
+    "lon": 21.1137,
+    "lokalizacja": "przyblizona",
+    "okres": "XIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osada założona nad Wisłą była wzmiankowana jako wieś kościelna w XIII wieku.",
+      "W 1528 roku Zawady liczyły sobie 8 łanów.",
+      "W 1580 jako wieś duchowna Zawady znajdowały się w powiecie warszawskim ziemi warszawskiej województwa mazowieckiego.",
+      "W XVII wieku Zawady zostały włączone do dóbr wilanowskich.",
+      "W 1827 roku liczyły 44 domy i 451 mieszkańców, w 1905 roku 35 domów i 409 mieszkańców, a w 1921 roku 49 domów i 447 mieszkańców.",
+      "W marcu 1947 roku Zawady zostały zalane przez Wilanówkę.",
+      "W 1951 roku wieś została włączona do Warszawy; od 1960 roku w dzielnicy Mokotów, od 2002 roku ponownie w dzielnicy Wilanów.",
+      "W 2005 przy ul. Sytej 190/192 uruchomiono Oczyszczalnię Ścieków „Południe”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zawady is a former village that is now a settlement and MSI area in Wilanów. Mentioned as a church village in the 13th century, it was part of the Wilanów estates from the 17th century, was flooded by the Wilanówka in 1947 and was incorporated into Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zawady (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Zawady_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane o mieszkańcach z 2024 r. (ok. 6 tys.) pominięte, bo to nie fakt historyczny o miejscu w rozumieniu schematu."
+  }
+]

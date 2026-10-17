@@ -1,0 +1,206 @@
+[
+  {
+    "id": "reduta-wawelska",
+    "nazwa": "Reduta Wawelska",
+    "name_en": "Wawelska Redoubt",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.21671,
+    "lon": 20.98668,
+    "lokalizacja": "przyblizona",
+    "okres": "II poł. lat 20. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Reduta Wawelska – ośrodek polskiego oporu, który funkcjonował podczas powstania warszawskiego, od 1 do 11 sierpnia 1944 roku, w zespole domów mieszkalnych położonym między ulicami Wawelską, Pługa, Mianowskiego i Uniwersytecką na Ochocie.",
+      "1 sierpnia 1944 roku, w godzinie „W”, oddziały II rejonu obwodu IV „Ochota” Armii Krajowej zaatakowały obsadzone przez Niemców budynki w rejonie ul. Wawelskiej, jednak zostały odparte przez liczniejsze i lepiej uzbrojone załogi nieprzyjaciela.",
+      "Przez następnych dziesięć dni żołnierze AK skutecznie odpierali natarcia Niemców i ich ukraińskich kolaborantów, a od 5 sierpnia również Rosjan z Brygady Szturmowej SS RONA.",
+      "Po południu 11 sierpnia, wobec braku nadziei na pomoc z zewnątrz oraz fizycznego i psychicznego wyczerpania żołnierzy, obrońcy Reduty Wawelskiej ewakuowali się kanałami.",
+      "Po ich odejściu ronowcy zajęli niebronione domy, dopuszczając się licznych zbrodni na jeńcach i ludności cywilnej.",
+      "W II połowie lat 20. XX wieku w warszawskiej dzielnicy Ochota, na terenie Kolonii Lubeckiego, wzniesiono Dom Spółdzielni Pracowników Ministerstwa Kolei Żelaznych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A cluster of four- and five-storey housing blocks between Wawelska, Pługa, Mianowskiego and Uniwersytecka streets in Ochota, built in the late 1920s for railway cooperatives. It was the strongest Home Army stronghold in the district during the Warsaw Uprising, holding out from 1 to 11 August 1944 before the defenders escaped through the sewers.",
+    "ludzie": [
+      {"kto": "Jerzy Gołembiewski ps. „Stach”", "rola": "ppor., dowódca zgrupowania AK w reducie", "wiki": null},
+      {"kto": "Stanisław Wanat ps. „Jastrzębiec”", "rola": "kpt., dowódca II rejonu obwodu „Ochota”", "wiki": null},
+      {"kto": "Jadwiga Lange", "rola": "dr, kierowniczka punktu sanitarnego w reducie", "wiki": null},
+      {"kto": "Julia Zielińska ps. „Julia”", "rola": "koordynowała pracę plutonów sanitarnych", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Reduta Wawelska", "url": "https://pl.wikipedia.org/wiki/Reduta_Wawelska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zespół kilku domów; adres nie podany jako jeden. W artykule: Wawelska 60, Mianowskiego 13 i 15, Wawelska 62, Pługa, Uniwersytecka 1."
+  },
+  {
+    "id": "reduta-nr-54",
+    "nazwa": "Reduta nr 54 (Reduta Ordona)",
+    "name_en": "Redoubt No. 54 (Ordon Redoubt)",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Na Bateryjce",
+    "adres_historyczny": null,
+    "lat": 52.215,
+    "lon": 20.9594,
+    "lokalizacja": "dokladna",
+    "okres": "1831–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Reduta nr 54 wchodziła w skład pasa fortyfikacji z okresu powstania listopadowego z 1831 r.",
+      "6 września 1831 reduta została zaatakowana przez Rosjan pod dowództwem generała Jafimowa.",
+      "Dowódcą reduty był mjr Ignacy Dobrzelewski.",
+      "Obsada reduty składała się z 2 kompanii 1 psp (1 DP), 6 dział, 1 hakownicy, 43 artylerzystów.",
+      "Reduta nr 54 posiadała tylko 1/3 przewidzianej obsady. Była to jedna z przyczyn jej szybkiego upadku.",
+      "W 2016 została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": ["Tradycja umiejscawiała redutę bliżej Woli, przy ul. Mszczonowskiej, bo tam znajdowała się nieobsadzona reduta nr 55."],
+    "summary_en": "Redoubt No. 54, popularly known as the Ordon Redoubt, was part of the 1831 November Uprising defences on Warsaw's western approaches, now at the Zesłańców Syberyjskich roundabout in Ochota. It was overrun by Russian troops on 6 September 1831 and blown up. Archaeological work began in 2010 and the site was entered in the heritage register in 2016.",
+    "ludzie": [
+      {"kto": "Adam Mickiewicz", "rola": "autor wiersza „Reduta Ordona”", "wiki": null},
+      {"kto": "Stefan Garczyński", "rola": "naoczny świadek wydarzenia, na podstawie jego opowiadania powstał wiersz", "wiki": null},
+      {"kto": "Julian Konstanty Ordon", "rola": "ppor., dowódca artylerii reduty", "wiki": null},
+      {"kto": "Ignacy Dobrzelewski", "rola": "mjr, dowódca reduty", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Reduta nr 54", "url": "https://pl.wikipedia.org/wiki/Reduta_nr_54"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł: 28 października 2010 rozpoczęto badania archeologiczne; w 2013 wykryto pochówki żołnierskie."
+  },
+  {
+    "id": "rogatki-jerozolimskie",
+    "nazwa": "Rogatki Jerozolimskie",
+    "name_en": "Jerozolimskie Toll Gates",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": "plac Zawiszy, u zbiegu Al. Jerozolimskich, ul. Towarowej i ul. Grójeckiej",
+    "lat": 52.224974,
+    "lon": 20.988961,
+    "lokalizacja": "dokladna",
+    "okres": "1818–1942",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1816–1823 w Warszawie wzniesiono nowe pawilony rogatkowe zaprojektowane przez Jakuba Kubickiego.",
+      "Nowe Rogatki Jerozolimskie wzniesiono w 1818 na planie koła.",
+      "W 1823 doprowadzono tam od strony wschodniej nową szeroką arterię – Nową Drogę Jerozolimską (obecne Al. Jerozolimskie).",
+      "W czasie obrony Warszawy we wrześniu 1831 rogatki były miejscem zaciętych walk z nacierającymi wojskami rosyjskimi.",
+      "W 1833 na placu znajdującym się przy rogatkach stracono Artura Zawiszę.",
+      "Pawilony rogatkowe zostały rozebrane na polecenie Niemców w czasie okupacji; prace rozbiórkowe rozpoczęły się w kwietniu 1942 i trwały trzy tygodnie."
+    ],
+    "ciekawostki": ["Przystanek tramwajowy w kierunku śródmieścia, który znajdował się na wysepce przy jednym z pawilonów, został przesunięty na róg placu Zawiszy i ul. Grójeckiej."],
+    "summary_en": "Two classicist toll pavilions on the square now known as Plac Artura Zawiszy, where Warsaw's Jerozolimskie road began. Built to designs by Jakub Kubicki around 1818, they were battle sites in 1831 and were demolished by the German occupiers in April–May 1942.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "architekt pawilonów rogatkowych", "wiki": null},
+      {"kto": "Artur Zawisza", "rola": "stracony na placu przy rogatkach (1833)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowe Rogatki Jerozolimskie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rogatki Jerozolimskie", "url": "https://pl.wikipedia.org/wiki/Rogatki_Jerozolimskie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok 1942 (rozbiórka); data 1818 to budowa nowych pawilonów."
+  },
+  {
+    "id": "rondo-zeslancow-syberyjskich",
+    "nazwa": "Rondo Zesłańców Syberyjskich",
+    "name_en": "Siberian Exiles Roundabout",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.216361111,
+    "lon": 20.960638888,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Skrzyżowanie pierwotnie wybudowano jako jednopoziomowe rondo, jednak ze względu na gwałtowny wzrost ruchu samochodowego, zostało ono przebudowane w 2003 roku.",
+      "Po przebudowie rondo stało się trzypoziomowym węzłem drogowym.",
+      "Pod rondem wykonano tunel do bezkolizyjnego skrętu w lewo dla pojazdów nadjeżdżających od strony Pruszkowa (maksymalna wysokość pojazdów wynosi tylko 3 metry).",
+      "Obecnie, wbrew swojej nazwie, rondo Zesłańców Syberyjskich nie jest skrzyżowaniem o ruchu okrężnym.",
+      "Nazwa upamiętnia Polaków zesłanych na Syberię w XIX i XX wieku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-level road junction on Aleje Jerozolimskie in Ochota, rebuilt in 2003 from a single-level roundabout to ease traffic. Despite its name it is no longer a roundabout in the legal sense, and it is named after Poles exiled to Siberia in the 19th and 20th centuries.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo Zesłańców Syberyjskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_Zes%C5%82a%C5%84c%C3%B3w_Syberyjskich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje daty pierwotnego ronda; okres to data przebudowy."
+  },
+  {
+    "id": "stadion-rks-skra",
+    "nazwa": "Stadion RKS Skra",
+    "name_en": "RKS Skra Stadium",
+    "typ": "sport",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Wawelska 5",
+    "adres_historyczny": null,
+    "lat": 52.215,
+    "lon": 20.993056,
+    "lokalizacja": "dokladna",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1934 roku zbudowano m.in. budynek klubowy, stadion piłkarski oraz rozpoczęto budowę stadionu lekkoatletycznego o pojemności 50 tys. widzów, która została przerwana ze względu na agresję Niemiec na Polskę 1 września 1939 roku.",
+      "W 1946 roku teren został przejęty przez klub sportowy Skra Warszawa.",
+      "Stadion oddany do użytku w 1953 roku zbudowano w kształcie podkowy z torem żużlowym otoczony trybunami z miejscami dla 35 000 widzów.",
+      "W 1969 roku została tutaj położona pierwsza w Polsce powierzchnia tartanowa.",
+      "W 2012 roku stadion został ujęty w gminnej ewidencji zabytków.",
+      "W październiku 2019 Powiatowy Inspektor Nadzoru Budowlanego wydał decyzję nakładającą na RKS Skra obowiązek zamknięcia całej nieruchomości z rygorem natychmiastowej wykonalności.",
+      "Teren RKS Skra w 2021 przejęło miasto stołeczne Warszawa."
+    ],
+    "ciekawostki": ["Od połowy lat 90. do roku 2005 działała tam dyskoteka gejowska Paradise."],
+    "summary_en": "The athletics and speedway stadium of Skra Warsaw at ul. Wawelska 5 in Ochota. Begun in 1934 for the Warszawianka club, it was rebuilt in 1948–1953 and had the first tartan track in Poland in 1969. The stadium was closed in 2019 for safety reasons and taken over by the city in 2021.",
+    "ludzie": [
+      {"kto": "Mikołaj Kokozow", "rola": "autor projektu przebudowy stadionu (1948–1953)", "wiki": null},
+      {"kto": "Jerzy Wasilewski", "rola": "autor projektu przebudowy stadionu (1948–1953)", "wiki": null}
+    ],
+    "dawne_nazwy": ["teren przydzielony w 1930 Klubowi Sportowemu Warszawianka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stadion RKS Skra", "url": "https://pl.wikipedia.org/wiki/Stadion_RKS_Skra"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stara-ochota",
+    "nazwa": "Stara Ochota",
+    "name_en": "Stara Ochota",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.216649,
+    "lon": 20.977181,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa Ochota pojawia się w XVIII w., była to wieś należąca do gminy Czyste i parafii Wielka Wola.",
+      "W 1845 ukończona została linia kolejowa Warszawa-Skierniewice oddzielająca Ochotę od Woli i Czystego.",
+      "W 1880 roku Ochota liczyła 802 mieszkańców.",
+      "W 1910 rozpoczęto budowę kościoła Niepokalanego Poczęcia Najświętszej Maryi Panny przy pl. Narutowicza (ukończony w 1927), a w 1916 Ochotę przyłączono do Warszawy.",
+      "W 1950 rozpoczęto budowę osiedla Ochota I pomiędzy ulicami Kopińską, Bitwy Warszawskiej 1920 i Grójecką projektu J. Malinowskiej.",
+      "W 1963 została zakończona też przebudowa pl. Zawiszy, co umożliwiło przebicie Al. Jerozolimskich dalej w kierunku Dworca Zachodniego i Pruszkowa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The old village of Ochota along the Grójec–Kraków road, which gave its name to the later district. Its population was 802 in 1880, it was annexed to Warsaw in 1916, and the 1845 railway line cut it off from Wola.",
+    "ludzie": [
+      {"kto": "J. Malinowska", "rola": "projektantka osiedla Ochota I (od 1950)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ochota (wieś, gmina Czyste)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stara Ochota", "url": "https://pl.wikipedia.org/wiki/Stara_Ochota"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar (osiedle MSI), bez adresu w artykule."
+  }
+]

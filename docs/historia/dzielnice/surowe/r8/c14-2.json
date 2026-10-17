@@ -1,0 +1,183 @@
+[
+  {
+    "id": "praga-polnoc",
+    "nazwa": "Praga-Północ",
+    "name_en": "Praga-Północ",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.263333333,
+    "lon": 21.028333333,
+    "lokalizacja": "przyblizona",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "10 lutego 1648 roku król Władysław IV Waza nadał Pradze prawa miejskie.",
+      "Odrębność administracyjna historycznej Pragi zakończyła się w 1791 roku; po około 143 latach od otrzymania praw miejskich przestała być samodzielnym miastem.",
+      "4 listopada 1794 roku wojska rosyjskie dowodzone przez Aleksandra Suworowa zdobyły prawobrzeżną część Warszawy, a po przełamaniu polskiej obrony doszło do masowych zabójstw ludności cywilnej.",
+      "W 1862 roku uruchomiono Kolej Warszawsko-Petersburską, której warszawski dworzec znajdował się na Pradze.",
+      "W 1864 roku oddano stały most Kierbedzia.",
+      "W latach 1887–1904 wzniesiono monumentalny kościół św. Michała Archanioła i św. Floriana.",
+      "W 1889 roku do miasta przyłączono m.in. Nową Pragę, Szmulowiznę i Kamionek.",
+      "W 1928 roku przy ul. Ratuszowej otwarto Miejski Ogród Zoologiczny."
+    ],
+    "ciekawostki": [
+      "Nazwa dzielnicy pisana jest z dywizem (łącznikiem)."
+    ],
+    "summary_en": "Praga-Północ is the historic core of Praga on the right bank of the Vistula. It received city rights in 1648, was joined to Warsaw in 1794 and grew into an industrial and working-class district after the railways arrived in the 19th century.",
+    "ludzie": [
+      {"kto": "Władysław IV Waza", "rola": "król, który nadał Pradze prawa miejskie", "wiki": null},
+      {"kto": "Aleksander Suworow", "rola": "dowódca wojsk rosyjskich, które zdobyły Pragę w 1794", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Praga-Północ", "url": "https://pl.wikipedia.org/wiki/Praga-P%C3%B3%C5%82noc"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł obejmuje dzielnicę jako całość; współrzędne to środek dzielnicy. Historia podana tylko do części artykułu w paczce."
+  },
+  {
+    "id": "rogatka-brodnowska",
+    "nazwa": "Rogatka Bródnowska",
+    "name_en": "Bródno Toll Gate",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. 11 listopada 68",
+    "adres_historyczny": null,
+    "lat": 52.267033333,
+    "lon": 21.038069444,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1918–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rogatka Bródnowska znajduje się przy ul. 11 listopada 68, przy wiadukcie z linią kolejową nr 9.",
+      "Budynek powstał według projektu Wiktora Junosza-Piotrowskiego.",
+      "Podczas II wojny światowej budynek był siedzibą radzieckiego Wojskowego Trybunału Wojennego i radzieckiej prokuratury.",
+      "Po zajęciu prawobrzeżnej Warszawy w 1944 roku przez Armię Czerwoną NKWD zorganizowało w budynku Wojskowy Trybunał Wojenny.",
+      "Skazanych przed egzekucjami przetrzymywano w piwnicach budynku przy ul. Strzeleckiej 8.",
+      "W 2010 roku budynek został wpisany do rejestru zabytków.",
+      "Tablicę pamiątkową, będącą upamiętnieniem zbrodni, odsłonięto w 2013 roku."
+    ],
+    "ciekawostki": [
+      "Rogatka stała się stałym punktem społecznych obchodów Dnia Żołnierzy Wyklętych – 1 marca."
+    ],
+    "summary_en": "The Bródno Toll Gate is a historic pavilion on ul. 11 listopada in Praga-Północ, built as a toll and guard house on the road to Bródno. During and after the Second World War it housed Soviet military court and prosecutor offices, and it is now a memorial site.",
+    "ludzie": [
+      {"kto": "Wiktor Junosza-Piotrowski", "rola": "autor projektu budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rogatka Bródnowska", "url": "https://pl.wikipedia.org/wiki/Rogatka_Br%C3%B3dnowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres początkowy oszacowany z tekstu: w czasie I wojny światowej Niemcy zorganizowali tu mieszkania. Budynek niezamieszkany, sąsiednia kamienica nr 66 związana z tą samą historią."
+  },
+  {
+    "id": "rondo-stefana-starzynskiego",
+    "nazwa": "Rondo Stefana Starzyńskiego",
+    "name_en": "Stefan Starzyński Roundabout",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "u zbiegu ul. Jagiellońskiej, ul. Starzyńskiego i mostu Gdańskiego",
+    "adres_historyczny": null,
+    "lat": 52.2636,
+    "lon": 21.0214,
+    "lokalizacja": "dokladna",
+    "okres": "2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 2005–2007 wybudowano dwie estakady w ciągu ulicy Starzyńskiego i mostu Gdańskiego.",
+      "Wiadukt w kierunku Bródna został otwarty 8 listopada 2006 roku, cztery dni przed wyborami samorządowymi.",
+      "Drugi wiadukt został oddany latem 2007 roku.",
+      "Pierwotny projekt zakładał oddanie obu wiaduktów w 2007 roku, jednak ówczesny komisarz miasta Kazimierz Marcinkiewicz podjął decyzję o dopłacie wykonawcy około 2 mln zł za szybsze dokończenie prac.",
+      "Od końca września 2011 roku obowiązuje nowa organizacja ruchu, a rondo ma formę bliską rondu turbinowemu.",
+      "Nazwa upamiętnia Stefana Starzyńskiego, jednego z najbardziej zasłużonych prezydentów Warszawy."
+    ],
+    "ciekawostki": [
+      "Rondo nie ma sygnalizacji świetlnej, a tramwaje jadą zarówno przez wyspę centralną, jak i po obrzeżach ronda."
+    ],
+    "summary_en": "The Stefan Starzyński Roundabout in Praga-Północ is named after Warsaw's wartime mayor. Its two viaducts were built in 2005–2007 to separate east-west traffic, and the layout was changed to a turbine-style roundabout in 2011.",
+    "ludzie": [
+      {"kto": "Stefan Starzyński", "rola": "patron ronda, prezydent Warszawy", "wiki": null},
+      {"kto": "Kazimierz Marcinkiewicz", "rola": "ówczesny komisarz miasta, który zdecydował o dopłacie do szybszej budowy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo Stefana Starzyńskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_Stefana_Starzy%C5%84skiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres opisany przez ulice wlotowe, bez numeru."
+  },
+  {
+    "id": "rzeznia-praska",
+    "nazwa": "Rzeźnia praska",
+    "name_en": "Praga Slaughterhouse",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.249354,
+    "lon": 21.032044,
+    "lokalizacja": "dokladna",
+    "okres": "lata 20. XX w.–rozebrana",
+    "istnieje": false,
+    "fakty": [
+      "Na początku lat 20. XX wieku Zarząd Miejski zainteresował się tym terenem, chcąc uporządkować przemysł i handel spożywczy w Warszawie.",
+      "Nowo powstały zakład przejął funkcje zamkniętej w 1926 roku rzeźni miejskiej na Solcu.",
+      "W 1937 dyrektorem rzeźni został Stanisław Sobota pochodzący spod Prudnika.",
+      "1 sierpnia 1944 obiekt opanowali powstańcy warszawscy.",
+      "5 października 1944 uruchomiono pierwszą studnię artezyjską i nawodniono praską sieć wodociągową.",
+      "Arkady pozostałe po rzeźni zostały rozebrane w związku z budową budynków mieszkalnych w kompleksie Port Praski."
+    ],
+    "ciekawostki": [
+      "W XIX wieku w tym rejonie odbywały się targi bydła i świń."
+    ],
+    "summary_en": "The Praga municipal slaughterhouse stood between Okrzei, Sierakowskiego and Wrzesińska streets. It was closed because of nuisance to its surroundings, and its last remnants, the arcades, were demolished for the Port Praski housing complex.",
+    "ludzie": [
+      {"kto": "Stanisław Sobota", "rola": "dyrektor rzeźni od 1937", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rzeźnia praska", "url": "https://pl.wikipedia.org/wiki/Rze%C5%BAnia_praska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres podany jako rejon ulic Okrzei, Sierakowskiego i Wrzesińskiej; okres końcowy nieokreślony w tekście."
+  },
+  {
+    "id": "stadion-narodowy-stacja-metra",
+    "nazwa": "Stacja metra Stadion Narodowy",
+    "name_en": "Stadion Narodowy metro station",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "pod ul. Sokolą, w pobliżu skrzyżowania z ul. Zamoyskiego",
+    "adres_historyczny": null,
+    "lat": 52.245833,
+    "lon": 21.043333,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pozwolenie na budowę stacji wydano pod koniec maja 2011, a właściwe prace budowlane rozpoczęto w czerwcu 2011.",
+      "Wykonawcą stacji zostało 28 października 2009 konsorcjum AGP Metro Polska.",
+      "19 lipca 2011 podczas robót odkryto skrzynie z pociskami artyleryjskimi kalibru 105 mm, których było 130.",
+      "7 marca 2013 Rada m.st. Warszawy zmieniła nazwę stacji na C14 Stadion Narodowy.",
+      "27 lutego 2015 wydano pozwolenie na użytkowanie stacji, a 8 marca 2015 stacja została uruchomiona.",
+      "W pierwotnych planach II linii metra stacja nosiła nazwę Praga Centrum."
+    ],
+    "ciekawostki": [
+      "W sierpniu 2011 zasypano fragment środkowego basenu Portu Praskiego, a na terenie stacji odkryto minę przeciwpiechotną."
+    ],
+    "summary_en": "Stadion Narodowy is a metro station on Line M2 in Praga-Północ, near the Port Praski and the Warszawa Stadion railway stop. Construction began in 2011 and the station opened on 8 March 2015.",
+    "ludzie": [
+      {"kto": "Andrzej Chołdzyński", "rola": "projektant generalny centralnego odcinka II linii, z którym współpracowali inni architekci", "wiki": null},
+      {"kto": "Wojciech Fangor", "rola": "autor opracowania graficznego", "wiki": null}
+    ],
+    "dawne_nazwy": ["Praga Centrum", "Stadion (C14)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stadion Narodowy (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Stadion_Narodowy_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł przerwany w paczce w 2014 r.; fakty z jego dostępnej części."
+  }
+]

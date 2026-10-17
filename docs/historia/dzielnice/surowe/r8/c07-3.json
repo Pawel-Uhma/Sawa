@@ -1,0 +1,200 @@
+[
+  {
+    "id": "krajowa-szkola-administracji-publicznej",
+    "nazwa": "Krajowa Szkoła Administracji Publicznej (gmach na Filtrach)",
+    "name_en": "National School of Public Administration (building in Filtry)",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2166,
+    "lon": 20.9898,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szkoła mieści się w modernistycznym gmachu zaprojektowanym przez Romualda Gutta. Gmach był wznoszony etapami w latach 1928–1933; początkowo miał trzy kondygnacje, a czwartą dobudowano w latach 1949–1950.",
+      "W latach 1928–1939 budynek był siedzibą Szkoły Nauk Politycznych, przekształconej w kwietniu 1939 w Akademię Nauk Politycznych.",
+      "W latach 1950–1961 działała tu Szkoła Główna Służby Zagranicznej, kształcąca kadry w zakresie prawa dyplomatycznego i konsularnego oraz handlu zagranicznego.",
+      "Od 1961 do 1990 budynek służył różnym instytucjom szkoleniowym, m.in. Ośrodkowi i Instytutowi Doskonalenia Kadr Kierowniczych Administracji Państwowej czy Instytutowi Administracji i Zarządzania.",
+      "Krajowa Szkoła Administracji Publicznej została utworzona przez rząd Tadeusza Mazowieckiego w maju 1990."
+    ],
+    "ciekawostki": [
+      "Księgozbiór biblioteki szkoły obejmuje około 25 tysięcy publikacji z zakresu administracji publicznej i prawa administracyjnego."
+    ],
+    "summary_en": "A modernist building on the Filtry site in Ochota, designed by Romuald Gutt and built in 1928–1933 for the School of Political Sciences. It later housed the Foreign Service School and training institutions before the National School of Public Administration moved in after 1990.",
+    "ludzie": [
+      {"kto": "Romuald Gutt", "rola": "architekt gmachu", "wiki": null},
+      {"kto": "Tadeusz Mazowiecki", "rola": "premier, rząd którego utworzył szkołę w 1990", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szkoła Nauk Politycznych (1928–1939)", "Akademia Nauk Politycznych (od kwietnia 1939)", "Szkoła Główna Służby Zagranicznej (1950–1961)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Krajowa Szkoła Administracji Publicznej im. Prezydenta Rzeczypospolitej Polskiej Lecha Kaczyńskiego", "url": "https://pl.wikipedia.org/wiki/Krajowa_Szko%C5%82a_Administracji_Publicznej_im._Prezydenta_Rzeczypospolitej_Polskiej_Lecha_Kaczy%C5%84skiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko położenie na Filtrach (Ochota), bez numeru adresowego."
+  },
+  {
+    "id": "krag-megalityczny-pole-mokotowskie",
+    "nazwa": "Krąg megalityczny w Warszawie",
+    "name_en": "Megalithic Circle in Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.213105555,
+    "lon": 21.003991666,
+    "lokalizacja": "dokladna",
+    "okres": "1999–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Krąg tworzy zespół trzynastu głazów narzutowych, głównie granitów szarych i różowych oraz rapakiwi, granitognejsów i gnejsów.",
+      "Głazy pochodzą ze starych, prekambryjskich masywów krystalicznych Skandynawii.",
+      "Krąg ustawiono z inicjatywy dra Przemysława Wielowiejskiego i czasopisma „Archeologia Żywa”.",
+      "Za pomnik przyrody uznano je w 2000, rok po ich ustawieniu w tym miejscu w formie kręgu.",
+      "Krąg nie pełni żadnych funkcji astronomicznych ani kultowych."
+    ],
+    "ciekawostki": [
+      "Zespół głazów uznano za najważniejszy pod względem bogactwa gatunkowego porostów obiekt Pola Mokotowskiego; występują tu rzadkie w okolicach Warszawy żełuczka izidiowa i żełuczka brunka."
+    ],
+    "summary_en": "A ring of thirteen glacial erratic boulders from Scandinavia, placed next to the National Library on Pole Mokotowskie. Set up in 1999, it was declared a nature monument in 2000, and it has no astronomical or ritual function.",
+    "ludzie": [
+      {"kto": "Przemysław Wielowiejski", "rola": "inicjator ustawienia kręgu (z czasopismem „Archeologia Żywa”)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Krąg megalityczny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kr%C4%85g_megalityczny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok 1999 pośrednio (rok przed uznaniem za pomnik przyrody w 2000)."
+  },
+  {
+    "id": "lotnisko-mokotowskie",
+    "nazwa": "Lotnisko mokotowskie",
+    "name_en": "Mokotów Airfield",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.210833,
+    "lon": 21.0,
+    "lokalizacja": "przyblizona",
+    "okres": "1910–ok. 1947",
+    "istnieje": false,
+    "fakty": [
+      "Lotnisko urządzone w 1910 na Polu Mokotowskim było pierwszym w Warszawie.",
+      "W maju 1910 powstało tam Warszawskie Towarzystwo Lotnicze Awiata założone przez księcia Stanisława Lubomirskiego.",
+      "W sierpniu 1915 lotnisko zostało zajęte przez Niemców, którzy później zbudowali tam m.in. 21 hangarów.",
+      "Od 1920 z lotniska odbywały się regularne loty pasażerskie, a w 1929 powstał polski przewoźnik Polskie Linie Lotnicze LOT.",
+      "W kwietniu 1934 przeniesiono pasażerski ruch lotniczy z lotniska mokotowskiego na Okęcie.",
+      "Lotnisko zostało ostatecznie zlikwidowane po 1947."
+    ],
+    "ciekawostki": [
+      "Podczas przewrotu majowego w 1926 o lotnisko toczyły się walki między oddziałami wiernymi rządowi Wincentego Witosa a oddziałami Józefa Piłsudskiego."
+    ],
+    "summary_en": "Warsaw's first airfield, opened in 1910 on Pole Mokotowskie. It hosted the first Polish aeroplane flights and regular passenger services from 1920, and passenger traffic moved to Okęcie in 1934. Most of the site is now the Pole Mokotowskie park.",
+    "ludzie": [
+      {"kto": "Stanisław Lubomirski", "rola": "książę, założyciel Warszawskiego Towarzystwa Lotniczego Awiata (1910)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lotnisko mokotowskie", "url": "https://pl.wikipedia.org/wiki/Lotnisko_mokotowskie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawny obiekt, dziś w większości park Pole Mokotowskie; w tekście jest obelisk upamiętniający lotnisko."
+  },
+  {
+    "id": "ladowisko-banacha",
+    "nazwa": "Lądowisko Banacha",
+    "name_en": "Banacha Helipad",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Banacha 1a",
+    "adres_historyczny": null,
+    "lat": 52.2086,
+    "lon": 20.9825,
+    "lokalizacja": "dokladna",
+    "okres": "przed 2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Lądowisko sanitarne przy ul. Banacha 1a jest przeznaczone do startów i lądowań śmigłowców sanitarnych i ratowniczych w dzień i w nocy, o dopuszczalnej masie startowej do 5700 kg.",
+      "Zarządzającym lądowiskiem jest Centralny Szpital Kliniczny UCK WUM w Warszawie.",
+      "W 2011 roku lądowisko zostało wpisane do ewidencji lądowisk Urzędu Lotnictwa Cywilnego pod numerem 94.",
+      "Koszt jego budowy wyniósł 1,175 mln zł."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A medical helipad at ul. Banacha 1a, run by the Central Clinical Hospital of the Medical University of Warsaw. It was registered with the Civil Aviation Office in 2011 and cost 1.175 million zloty to build.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lądowisko Banacha", "url": "https://pl.wikipedia.org/wiki/L%C4%85dowisko_Banacha"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst nie podaje roku budowy, tylko koszt i rok wpisu do ewidencji (2011)."
+  },
+  {
+    "id": "ladowisko-banacha-szpital-pediatryczny",
+    "nazwa": "Lądowisko Banacha-Szpital Pediatryczny",
+    "name_en": "Banacha-Paediatric Hospital Helipad",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Księcia Trojdena (na dachu budynku)",
+    "adres_historyczny": null,
+    "lat": 52.2058,
+    "lon": 20.9817,
+    "lokalizacja": "dokladna",
+    "okres": "2014–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Lądowisko sanitarne położone przy ul. Księcia Trojdena na dachu budynku jest przeznaczone do startów i lądowań śmigłowców sanitarnych i ratowniczych w dzień i w nocy, o dopuszczalnej masie startowej do 5700 kg.",
+      "Zarządzającym lądowiskiem jest Szpital Pediatryczny Warszawskiego Uniwersytetu Medycznego.",
+      "W 2014 roku lądowisko zostało wpisane do ewidencji lądowisk Urzędu Lotnictwa Cywilnego pod numerem 302."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A rooftop medical helipad on Księcia Trojdena street, run by the Paediatric Hospital of the Medical University of Warsaw. It was registered with the Civil Aviation Office in 2014 under number 302.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lądowisko Banacha-Szpital Pediatryczny", "url": "https://pl.wikipedia.org/wiki/L%C4%85dowisko_Banacha-Szpital_Pediatryczny"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst nie podaje numeru budynku przy ul. Księcia Trojdena."
+  },
+  {
+    "id": "maria-jawor-wawelska-15",
+    "nazwa": "Jawor „Maria”",
+    "name_en": "Maria Sycamore",
+    "typ": "pomnik",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Wawelska 15",
+    "adres_historyczny": null,
+    "lat": 52.215361111,
+    "lon": 20.983738888,
+    "lokalizacja": "dokladna",
+    "okres": "koniec XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Uważa się, że jawor został zasadzony przez Marię Skłodowską-Curie 29 maja 1932 roku, w dniu otwarcia Instytutu Radowego.",
+      "Według analiz zdjęć z uroczystości Skłodowska-Curie i prezydent Ignacy Mościcki zasadzili obok siebie dwa graby, a jawor już rósł w okolicy; prawdopodobnie wykiełkował pod koniec XIX w.",
+      "Jawor rośnie przy budynku Narodowego Instytutu Onkologii im. Marii Skłodowskiej-Curie przy ul. Wawelskiej 15.",
+      "W 2012 r. jawor został uznany za pomnik przyrody; ma 19 m wysokości i 232 cm obwodu.",
+      "Uchwała z 30 sierpnia 2012 r. powołująca pomnik weszła w życie 10 października tego samego roku."
+    ],
+    "ciekawostki": [
+      "Oprócz jawora Maria Skłodowska-Curie zasadziła dwa głogi, jeden poświęcony Marie Mattingly Meloney, drugi prezydentowej Michalinie Mościckiej."
+    ],
+    "summary_en": "A sycamore maple beside the Maria Skłodowska-Curie National Institute of Oncology at Wawelska 15, traditionally linked to the opening of the Radium Institute on 29 May 1932. It was declared a nature monument in 2012.",
+    "ludzie": [
+      {"kto": "Maria Skłodowska-Curie", "rola": "według tradycji zasadziła jawor w dniu otwarcia Instytutu Radowego (1932)", "wiki": null},
+      {"kto": "Ignacy Mościcki", "rola": "prezydent, uczestnik uroczystości otwarcia Instytutu Radowego", "wiki": null},
+      {"kto": "Bronisława Skłodowska-Dłuska", "rola": "nadzorowała budowę Instytutu Radowego", "wiki": null},
+      {"kto": "Ludwika Nitschowa", "rola": "autorka pomnika Marii Skłodowskiej-Curie w parku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Maria (jawor)", "url": "https://pl.wikipedia.org/wiki/Maria_%28jawor%29"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst sam wskazuje, że przypisanie sadzenia Skłodowskiej-Curie jest niepewne (analiza zdjęć)."
+  }
+]

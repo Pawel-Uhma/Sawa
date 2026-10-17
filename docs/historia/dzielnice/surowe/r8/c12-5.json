@@ -1,0 +1,90 @@
+[
+  {
+    "id": "xix-lo-zbaraska-1",
+    "nazwa": "Gmach XIX Liceum Ogólnokształcącego (ul. Zbaraska 1)",
+    "name_en": "XIX Secondary School building (1 Zbaraska Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Zbaraska 1",
+    "adres_historyczny": null,
+    "lat": 52.243885, "lon": 21.071334,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dokument powołujący liceum został podpisany 10 listopada 1944 roku; założycielką i pierwszą dyrektorką była Jadwiga Jaroszowa.",
+      "Szkoła mieściła się początkowo w mieszkaniach prywatnych, w dwóch salach na ul. Żółkiewskiego i w kilku salach ocalałych ze szkoły na ul. Kordeckiego.",
+      "W 1952 roku szkołę przekształcono w „jedenastolatkę”, odbierając jej imię; po czterech latach imię Powstańców Warszawy przywrócono.",
+      "W 1965 roku szkoła otrzymała własny budynek; gmach powstał jako szkoła-pomnik Tysiąclecia Państwa Polskiego.",
+      "Po przełomie 1989 roku dyrektorka Maria Kalinowska zainicjowała przekształcenie liceum w szkołę autorską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The XIX Secondary School at 1 Zbaraska Street was founded on 10 November 1944 by Jadwiga Jaroszowa and first met in flats and rooms salvaged from other schools. Its own building from 1965 was built as a school-monument to the Millennium of the Polish State.",
+    "ludzie": [
+      {"kto": "Jadwiga Jaroszowa", "rola": "założycielka i pierwsza dyrektorka liceum", "wiki": null},
+      {"kto": "Maria Kalinowska", "rola": "dyrektorka, zainicjowała przekształcenie w szkołę autorską", "wiki": null}
+    ],
+    "dawne_nazwy": ["VI Miejskie Gimnazjum i Liceum im. Powstańców Warszawy"],
+    "zrodla": [{"tytul": "Wikipedia: XIX Liceum Ogólnokształcące im. Powstańców Warszawy w Warszawie", "url": "https://pl.wikipedia.org/wiki/XIX_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_im._Powsta%C5%84c%C3%B3w_Warszawy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord budynku szkoły; w tekście ulica Zbaraska 1. Tekst nie podaje, kto był patronem przed 1952 roku poza nazwą."
+  },
+  {
+    "id": "metalik-lubelska-16",
+    "nazwa": "Zabudowania Fabryki Wyrobów Metalowych „Metalik” (ul. Lubelska 16)",
+    "name_en": "Metalik Metal Products Factory buildings (16 Lubelska Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Lubelska 16",
+    "adres_historyczny": null,
+    "lat": 52.248972, "lon": 21.053444,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hala fabryczna od strony ul. Berka Joselewicza powstała ok. 1904 roku; najpierw działała tam fabryka Józefa Rosenthala, głównie zawiasów.",
+      "Od 1910 roku Paweł Moszkowski produkował tam białą blachę.",
+      "W 1919 roku zakład kupiła rodzina Lejzerowiczów, która otworzyła garbarnię zatrudniającą 30 osób.",
+      "Wojnę przetrwał jeden budynek, który w 1947 roku przekształcono w warsztat samochodowy i magazyn; funkcję warsztatu pełni do dziś.",
+      "W styczniu 1997 roku obiekt został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Former metal goods factory 'Metalik' at 16 Lubelska Street, built around 1904 by Józef Rosenthal. From 1919 the Lejzerowicz family ran a tannery here. The building is a listed monument since January 1997.",
+    "ludzie": [
+      {"kto": "Józef Rosenthal", "rola": "pierwszy właściciel fabryki", "wiki": null},
+      {"kto": "Paweł Moszkowski", "rola": "producent białej blachy od 1910", "wiki": null},
+      {"kto": "Lejzerowiczowie (rodzina)", "rola": "właściciele garbarni od 1919", "wiki": null}
+    ],
+    "dawne_nazwy": ["Fabryka Wyrobów Metalowych „Metalik”", "Garbarnia Braci Lejzerowicz"],
+    "zrodla": [{"tytul": "Wikipedia: Zabudowania Fabryki Wyrobów Metalowych „Metalik” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zabudowania_Fabryki_Wyrob%C3%B3w_Metalowych_%E2%80%9EMetalik%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (dokładne)."
+  },
+  {
+    "id": "zaklady-amunicyjne-pocisk-minska-25",
+    "nazwa": "Zakłady Amunicyjne „Pocisk” (ul. Mińska 25)",
+    "name_en": "'Pocisk' Ammunition Works (25 Mińska Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Mińska 25",
+    "adres_historyczny": null,
+    "lat": 52.248913, "lon": 21.0599,
+    "lokalizacja": "dokladna",
+    "okres": "1919–1951",
+    "istnieje": null,
+    "fakty": [
+      "W 1919 roku w Warszawie utworzono spółkę Zakłady Amunicyjne „Pocisk”, produkującą amunicję karabinową; zakłady przy ul. Mińskiej 25.",
+      "Pełny rozruch fabryki nastąpił w 1923 roku.",
+      "W 1927 roku zakłady zatrudniały ok. 4230 pracowników; w latach wielkiego kryzysu (1929–1934) załogę zredukowano o ponad tysiąc osób.",
+      "We wrześniu 1939 roku w wyniku niemieckich bombardowań zniszczeniu uległo kilka budynków, w tym narzędziownia.",
+      "W 2010 roku pięć budynków dawnych zakładów, w tym budynek administracyjny z bramą wjazdową, wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Pocisk ammunition works at 25 Mińska Street, founded in 1919 and fully running from 1923, employed about 4,230 people in 1927. The site was bombed in 1939 and taken over by the Warsaw Motorcycle Factory in 1951. Five of its buildings were listed in 2010.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zakłady Amunicyjne „Pocisk” S-ka Akc."],
+    "zrodla": [{"tytul": "Wikipedia: Zakłady Amunicyjne „Pocisk”", "url": "https://pl.wikipedia.org/wiki/Zak%C5%82ady_Amunicyjne_%E2%80%9EPocisk%E2%80%9D"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też zakłady w Rembertowie (osobny obiekt, pominięty). Tekst nie podaje, czy budynki z 2010 istnieją w całości. Współrzędne z nagłówka artykułu. Zob. też rekord Soho Factory."
+  }
+]

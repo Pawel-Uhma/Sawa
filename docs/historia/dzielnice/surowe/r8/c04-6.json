@@ -1,0 +1,129 @@
+[
+  {
+    "id": "staw-sluzewiecki",
+    "nazwa": "Staw Służewiecki",
+    "name_en": "Służewiecki Pond",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Park nad Stawem Służewieckim, rejon ul. Puławskiej, Rzymowskiego i Tarniny",
+    "adres_historyczny": null,
+    "lat": 52.168810333,
+    "lon": 21.015137,
+    "lokalizacja": "dokladna",
+    "okres": "2013–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw przeszedł rekultywację w latach 2013–2015 w ramach projektu „Przywrócenie funkcji retencyjnej zbiornika retencyjnego Staw Służewiecki”, który kosztował 5,8 mln zł.",
+      "Przed rekultywacją zbiornik był praktycznie całkowicie osuszony w wyniku obniżenia się wód gruntowych.",
+      "W 2004 roku na terenie stawu i w jego okolicach stwierdzono kaczkę krzyżówkę, trzciniaka, trzcinniczka i gila.",
+      "Po zakończeniu rekultywacji wokół stawu stworzono Park nad Stawem Służewieckim.",
+      "W kwietniu 2018 roku zakończono budowę minielektrowni wodnej o mocy ok. 3 kW."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Retention pond of about 2.4 ha in the Służewiec valley in Mokotów, through which the Potok Służewiecki flows. It was dried out by falling groundwater and restored in 2013–2015 at a cost of 5.8 million PLN.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw Służewiecki", "url": "https://pl.wikipedia.org/wiki/Staw_S%C5%82u%C5%BCewiecki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Pochodzenie stawu nie pada w artykule; historia dotyczy głównie rekultywacji."
+  },
+  {
+    "id": "staw-pod-krolikarnia",
+    "nazwa": "Staw pod Królikarnią",
+    "name_en": "Pond below Królikarnia",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "park Arkadia, u podnóża skarpy, w pobliżu ul. Ludwika Idzikowskiego i ul. Piaseczyńskiej",
+    "adres_historyczny": null,
+    "lat": 52.189166666,
+    "lon": 21.031111111,
+    "lokalizacja": "dokladna",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pochodzenie stawu jest sztuczne: to zalana glinianka powstała po eksploatacji iłów plioceńskich, stanowiących surowiec dla cegielni.",
+      "W XVIII wieku okoliczne tereny służyły jako miejsce polowań na króliki, stąd nazwa terenu.",
+      "W 1786 roku powstał pałac Królikarnia, a stawy stały się częścią osi widokowej ogrodu.",
+      "Układ otaczającego parku ustalono w wyniku prac renowacyjnych przeprowadzonych w latach 1967–1969 według projektu Longina Majdeckiego i Gerarda Ciołka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Small artificial pond in the Arkadia park below the Królikarnia palace and the Warsaw escarpment. It began as a clay pit, became part of the palace's garden view in 1786, and its park layout was restored in 1967–1969.",
+    "ludzie": [
+      {"kto": "Longin Majdecki", "rola": "autor projektu renowacji parku Arkadia (1967–1969)", "wiki": null},
+      {"kto": "Gerard Ciołek", "rola": "autor projektu renowacji parku Arkadia (1967–1969)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw pod Królikarnią", "url": "https://pl.wikipedia.org/wiki/Staw_pod_Kr%C3%B3likarni%C4%85"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje staw razem z sąsiednim, mniejszym stawem; rekord dotyczy większego."
+  },
+  {
+    "id": "staw-pod-warszawianka",
+    "nazwa": "Staw pod Warszawianką",
+    "name_en": "Pond below Warszawianka",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "u podnóża skarpy, w pobliżu ul. Dolnej",
+    "adres_historyczny": null,
+    "lat": 52.199166666,
+    "lon": 21.028055555,
+    "lokalizacja": "dokladna",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw nazywany jest też Glinianką Bazylianów; w XVIII wieku w pobliżu ul. Dolnej powstała cegielnia należąca do zakonu bazylianów.",
+      "Staw jest bezodpływowy i zasilany stale wodami podziemnymi; jego powierzchnia wynosi 0,3599 ha.",
+      "W 2021 roku rozpoczęto oczyszczanie stawu i porządkowanie okolicznego terenu w ramach projektu z budżetu obywatelskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Small pond at the foot of the Warsaw escarpment in Mokotów, also called Glinianka Bazylianów after the Basilian brick works of the 18th century. It was cleaned up in 2021 through a citizens' budget project.",
+    "ludzie": [],
+    "dawne_nazwy": ["Staw pod Skarpą", "Glinianka Bazylianów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw pod Warszawianką", "url": "https://pl.wikipedia.org/wiki/Staw_pod_Warszawiank%C4%85"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stegny",
+    "nazwa": "Stegny",
+    "name_en": "Stegny housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "między ul. Sobieskiego, ul. Idzikowskiego i al. Wilanowską",
+    "adres_historyczny": null,
+    "lat": 52.177641666,
+    "lon": 21.047994444,
+    "lokalizacja": "przyblizona",
+    "okres": "1971–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt osiedla otrzymał w 1970 roku nagrodę Ministra Budownictwa.",
+      "Budowę osiedla rozpoczęto w 1971 roku; Stegny były pierwszym osiedlem w Warszawie z budynków zmontowanych z prefabrykowanych elementów wielkowymiarowych z Fabryki Domów na Służewcu.",
+      "Montaż pierwszego budynku z elementów z Fabryki Domów na Służewcu rozpoczęto w październiku 1971 roku.",
+      "Osiedle zaplanowano na 8057 mieszkań o łącznej powierzchni użytkowej 368 385 m².",
+      "W styczniu 1975 roku w bloku przy ul. Marsylskiej 3 oddano do użytku milionowe mieszkanie spółdzielcze wybudowane w Polsce Ludowej; upamiętniono to tablicą na budynku.",
+      "W czerwcu 2025 roku oddano do użytku odcinek linii tramwajowej od ul. Sobieskiego do pętli na ul. św. Bonifacego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Large housing estate in Mokotów between Sobieskiego, Idzikowskiego and Aleja Wilanowska streets, planned for 8,057 flats. Begun in 1971, it was the first Warsaw estate built from large prefabricated elements made at the Fabryka Domów in Służewiec.",
+    "ludzie": [
+      {"kto": "Jadwiga Grębecka", "rola": "projektantka architektury osiedla", "wiki": null},
+      {"kto": "Jan Szpakowicz", "rola": "projektant architektury osiedla", "wiki": null},
+      {"kto": "Romuald Welder", "rola": "projektant architektury osiedla", "wiki": null},
+      {"kto": "S. Hauler", "rola": "projekt konstrukcji", "wiki": null},
+      {"kto": "M. Wilbik", "rola": "projekt konstrukcji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stegny (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Stegny_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedla i MSI, nie pojedynczy obiekt."
+  }
+]

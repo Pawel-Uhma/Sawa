@@ -1,0 +1,388 @@
+[
+  {
+    "id": "ulica-filipiny-plaskowickiej",
+    "nazwa": "Ulica Filipiny Płaskowickiej",
+    "name_en": "Filipiny Płaskowickiej Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Filipiny Płaskowickiej",
+    "adres_historyczny": null,
+    "lat": 52.145277777,
+    "lon": 21.051388888,
+    "lokalizacja": "przyblizona",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Patronem ulicy jest działaczka oświatowa Filipina Płaskowicka (1840–1881). Nazwa została nadana w 1975 roku decyzją Rady Narodowej m.st. Warszawy.",
+      "Wcześniej ulica nosiła roboczą nazwę Niebieskich Migdałów.",
+      "Długość ulicy wynosi około 3,36 km. Częściowo przebiega wzdłuż tunelu pod Ursynowem będącego częścią Południowej Obwodnicy Warszawy (droga ekspresowa S2).",
+      "20 grudnia 2021 otwarto brakujący odcinek ulicy Branickiego, łącząc ją z ulicą Płaskowickiej."
+    ],
+    "ciekawostki": [
+      "Przy ulicy znajduje się skwer kpt. Zygmunta Pawlaczyka, a planuje się utworzenie wzdłuż jej biegu parku linearnego położonego nad tunelem."
+    ],
+    "summary_en": "A street in Ursynów about 3.36 km long, named in 1975 after the educator Filipina Płaskowicka. It runs partly along the S2 expressway tunnel.",
+    "ludzie": [
+      {"kto": "Filipina Płaskowicka", "rola": "patronka ulicy, działaczka oświatowa (1840–1881)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Niebieskich Migdałów (robocza)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Filipiny Płaskowickiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Filipiny_P%C5%82askowickiej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-indiry-gandhi",
+    "nazwa": "Ulica Indiry Gandhi",
+    "name_en": "Indira Gandhi Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Indiry Gandhi",
+    "adres_historyczny": null,
+    "lat": 52.1486,
+    "lon": 21.0434,
+    "lokalizacja": "przyblizona",
+    "okres": "1985–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy upamiętniającą premier Indii Indirę Gandhi nadano w styczniu 1985, wcześniej była odcinkiem ulicy Nugat.",
+      "W 2010 roku powstała społeczna inicjatywa przekształcenia ulicy z okolicą w centrum Ursynowa z placem, nowymi domami i parkiem i amfiteatrem.",
+      "W 2018 ulica została poszerzona i przedłużona na kończącym się wcześniej ślepo odcinku od ulicy Pileckiego do ulicy Płaskowickiej."
+    ],
+    "ciekawostki": [
+      "Ulica została krótko opisana w piosence Pezeta Na tym osiedlu z albumu Muzyka rozrywkowa."
+    ],
+    "summary_en": "A street in Ursynów named in January 1985 after Indira Gandhi, previously part of ul. Nugat. It was widened and extended to ul. Płaskowickiej in 2018.",
+    "ludzie": [
+      {"kto": "Indira Gandhi", "rola": "patronka ulicy, premier Indii", "wiki": null}
+    ],
+    "dawne_nazwy": ["odcinek ulicy Nugat"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Indiry Gandhi w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Indiry_Gandhi_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-jana-ciszewskiego",
+    "nazwa": "Ulica Jana Ciszewskiego",
+    "name_en": "Jana Ciszewskiego Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Jana Ciszewskiego",
+    "adres_historyczny": null,
+    "lat": 52.153611111,
+    "lon": 21.038611111,
+    "lokalizacja": "przyblizona",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszą oficjalną nazwę ulicy Rada Narodowa m.st. Warszawy nadała w 1975 roku. Patronem został działacz robotniczy Józef Feliks Ciszewski.",
+      "Najpóźniej w 1980 roku przebieg ulicy przedłużono na wschód do Nowoursynowskiej.",
+      "W 2017 roku Rada m.st. Warszawy zdecydowała o zmianie patrona na dziennikarza i sprawozdawcę sportowego Jana Ciszewskiego.",
+      "W 2018 roku przedłużono ulicę do skrzyżowania z ulicą Zbigniewa Stanisława Kiedacza.",
+      "Jej długość wynosi około 1,89 km."
+    ],
+    "ciekawostki": [
+      "Zmiana patrona w 2017 roku była związana z wejściem w życie ustawy o zakazie propagowania komunizmu lub innego ustroju totalitarnego przez nazwy budowli, obiektów i urządzeń użyteczności publicznej; nazwę zaproponował Instytut Pamięci Narodowej."
+    ],
+    "summary_en": "A street in Ursynów, about 1.89 km long. Named in 1975 after Józef Feliks Ciszewski; in 2017 the patron was changed to the sports journalist Jan Ciszewski.",
+    "ludzie": [
+      {"kto": "Józef Feliks Ciszewski", "rola": "pierwszy patron ulicy, działacz robotniczy", "wiki": null},
+      {"kto": "Jan Ciszewski", "rola": "patron ulicy od 2017 roku, dziennikarz i sprawozdawca sportowy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Poleczki-Bis (robocza)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana Ciszewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Ciszewskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-jana-rosola",
+    "nazwa": "Ulica Jana Rosoła",
+    "name_en": "Jana Rosoła Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Jana Rosoła",
+    "adres_historyczny": null,
+    "lat": 52.146055555,
+    "lon": 21.062583333,
+    "lokalizacja": "przyblizona",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica biegnie od skrzyżowania z al. Jana Rodowicza „Anody” i ul. Jana Ciszewskiego do ul. Wąwozowej, gdzie przechodzi w ul. Relaksową.",
+      "Ulica nosi imię działacza socjalistycznego Jana Rosoła. Nazwę nadano w marcu 1975.",
+      "Na posesjach nr 19 i 22 rosną dęby szypułkowe, będące pomnikami przyrody."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Ursynów named in March 1975 after the socialist activist Jan Rosoł. It has a bike path along its whole length.",
+    "ludzie": [
+      {"kto": "Jan Rosoł", "rola": "patron ulicy, działacz socjalistyczny", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana Rosoła w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Roso%C5%82a_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-karczunkowska",
+    "nazwa": "Ulica Karczunkowska",
+    "name_en": "Karczunkowska Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Karczunkowska",
+    "adres_historyczny": null,
+    "lat": 52.11115,
+    "lon": 20.98863,
+    "lokalizacja": "przyblizona",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przebieg drogi w miejscu późniejszej ulicy zaznaczony został na mapach z 1911 roku (Karte des Westlichen Russlands).",
+      "Teren ten został włączony w 1951 roku w granice Warszawy.",
+      "Długość ulicy wynosi około 2,35 km. Na swoim biegu przecina linie kolejowe nr 8 i nr 937, na których zlokalizowano przystanek Warszawa Jeziorki.",
+      "Wiadukt nad torami wybudowano w latach 2017–2019. W listopadzie 2022 roku otwarto w pobliżu przystanku parking „Parkuj i Jedź”."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy pochodzi od byłej miejscowości Karczunek, do której prowadziła droga. Etymologia nazwy jest też powiązana z karczowaniem."
+    ],
+    "summary_en": "A street of about 2.35 km in Ursynów, named after the former village of Karczunek. Its route appears on 1911 maps, and the railway overpass was built in 2017–2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["Karczunek (dawna miejscowość, od której pochodzi nazwa)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Karczunkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Karczunkowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-kazimierza-jezewskiego",
+    "nazwa": "Ulica Kazimierza Jeżewskiego",
+    "name_en": "Kazimierz Jeżewski Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Kazimierza Jeżewskiego",
+    "adres_historyczny": null,
+    "lat": 52.135833333,
+    "lon": 21.067222222,
+    "lokalizacja": "przyblizona",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano w 1977 roku.",
+      "Jej patronem jest polski pedagog i działacz oświatowy, twórca Gniazd Sierocych (pierwowzoru rodzinnych domów dziecka) – Kazimierz Jeżewski.",
+      "Sama ulica jest dwukierunkowa, o czym zdecydowano w głosowaniu mieszkańców w 2016 roku.",
+      "Historyczny (wzniesiony w 1864 roku) krzyż powstania styczniowego stoi po północno-wschodniej stronie ulicy, a krzyż z 1909 roku znajduje się na skrzyżowaniu Rosoła i Jeżewskiego."
+    ],
+    "ciekawostki": [
+      "Pomnik pielgrzymki rycerza Andrzeja Ciołka do Santiago de Compostela w 1404 stoi przy parku Przy Bażantarni, zakończonym przy al. KEN."
+    ],
+    "summary_en": "A street in Ursynów named in 1977 after Kazimierz Jeżewski, creator of the Gniazda Sierocze. Along it stand a January Uprising cross from 1864 and a cross from 1909.",
+    "ludzie": [
+      {"kto": "Kazimierz Jeżewski", "rola": "patron ulicy, pedagog i działacz oświatowy, twórca Gniazd Sierocych", "wiki": null},
+      {"kto": "Andrzej Ciołek", "rola": "rycerz, właściciel Kabat, pielgrzym do Santiago de Compostela w 1404", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kazimierza Jeżewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kazimierza_Je%C5%BCewskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-nowoursynowska",
+    "nazwa": "Ulica Nowoursynowska",
+    "name_en": "Nowoursynowska Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Nowoursynowska",
+    "adres_historyczny": null,
+    "lat": 52.154694444,
+    "lon": 21.055944444,
+    "lokalizacja": "przyblizona",
+    "okres": "średniowiecze (szlak) – dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1948 roku ulicą pojechał pierwszy na tym terenie autobus miejski linii nr 104, łączącej Dworzec Południowy z Wolicą.",
+      "W latach 1960–2020 ulica prowadziła do południowej granicy Lasu Kabackiego (częściowo jako droga leśna).",
+      "W 2020 roku rada miasta zmieniła nazwę tego południowego odcinka na Trakt Leśny.",
+      "Przy ulicy, w jej południowej części, rośnie dąb Mieszko I, najstarszy w województwie mazowieckim."
+    ],
+    "ciekawostki": [
+      "Ulica stanowi pozostałość dawnego szlaku handlowego z Warszawy przez Służew w kierunku przeprawy na rzece Jeziorce; szlak był częścią średniowiecznego szlaku z Francji na Ruś Kijowską."
+    ],
+    "summary_en": "A street in Ursynów and Mokotów that follows a former trade route from Warsaw through Służew. The first city bus line ran here in 1948, and the oak Mieszko I, the oldest in Masovia, grows at its southern end.",
+    "ludzie": [],
+    "dawne_nazwy": ["Trakt Leśny (południowy odcinek od 2020)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowoursynowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowoursynowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny. Datowanie szlaku z artykułu: średniowiecze."
+  },
+  {
+    "id": "ulica-przy-bazantarni",
+    "nazwa": "Ulica Przy Bażantarni",
+    "name_en": "Przy Bażantarni Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Przy Bażantarni",
+    "adres_historyczny": null,
+    "lat": 52.1367,
+    "lon": 21.0616,
+    "lokalizacja": "przyblizona",
+    "okres": "za czasów Jana III Sobieskiego – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od Bażantarni, która jest już obiektem nieistniejącym, a powstała za czasów króla Jana III Sobieskiego.",
+      "W latach 1780–1782 August Czartoryski zbudował w miejscu Bażantarni klasycystyczny pałac według projektu Szymona Bogumiła Zuga.",
+      "W XIX wieku zmieniono nazwę z Bażantarni na Natolin dla upamiętnienia Natalii Potockiej.",
+      "Park Przy Bażantarni (między ulicami Przy Bażantarni i Jeżewskiego) założono w latach 2008−2011.",
+      "Boisko wybudowane w ramach programu Orlik 2012 otwarto 12 grudnia 2008; koszt trwającej 1,5 miesiąca budowy wyniósł 2 mln zł."
+    ],
+    "ciekawostki": [
+      "Na boisku Orlika 2 marca 2010 roku zagrały ze sobą delegacje Polski i Węgier, na czele z premierami Donaldem Tuskiem i Gordonem Bajnaim."
+    ],
+    "summary_en": "A street in Ursynów named after the former pheasant reserve Bażantarnia. The classicist Natolin palace was built here in 1780–1782 for August Czartoryski.",
+    "ludzie": [
+      {"kto": "August Czartoryski", "rola": "inicjator budowy pałacu w Natolinie (1780–1782)", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu pałacu w Natolinie", "wiki": null},
+      {"kto": "Natalia Potocka", "rola": "patronka zmiany nazwy Bażantarni na Natolin w XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bażantarnia", "Natolin (od XIX wieku)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Przy Bażantarni w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Przy_Ba%C5%BCantarni_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy."
+  },
+  {
+    "id": "palac-w-natolinie",
+    "nazwa": "Pałac w Natolinie",
+    "name_en": "Natolin Palace",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Przy Bażantarni",
+    "adres_historyczny": "Bażantarnia",
+    "lat": 52.1367,
+    "lon": 21.0616,
+    "lokalizacja": "przyblizona",
+    "okres": "1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1780–1782 August Czartoryski zbudował w miejscu Bażantarni klasycystyczny pałac według projektu Szymona Bogumiła Zuga.",
+      "Pałac wielokrotnie przebudowywano, a w XIX wieku zmieniono nazwę z Bażantarni na Natolin dla upamiętnienia Natalii Potockiej.",
+      "Bażantarnia powstała za czasów króla Jana III Sobieskiego i miała służyć jako uatrakcyjnienie polowań (wraz z powstałym również zwierzyńcem)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A classicist palace built in 1780–1782 for August Czartoryski on the site of the former Bażantarnia, designed by Szymon Bogumił Zug. It was renamed Natolin in the 19th century.",
+    "ludzie": [
+      {"kto": "August Czartoryski", "rola": "fundator pałacu", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "projektant pałacu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bażantarnia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Przy Bażantarni w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Przy_Ba%C5%BCantarni_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Wpis z artykułu o ulicy; współrzędne ulicy, nie pałacu. Istnienie dzisiejsze wynika ze wzmianki w innym artykule w paczce, nie z tego tekstu."
+  },
+  {
+    "id": "ulica-stryjenskich",
+    "nazwa": "Ulica Stryjeńskich",
+    "name_en": "Stryjeńskich Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Stryjeńskich",
+    "adres_historyczny": null,
+    "lat": 52.136565,
+    "lon": 21.050243,
+    "lokalizacja": "przyblizona",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano 5 grudnia 1977.",
+      "Upamiętnia plastyków: Zofię, Karola, Aleksandra i Tadeusza Stryjeńskich.",
+      "Jej długość wynosi 1,45 km."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1.45 km street in Ursynów, named on 5 December 1977 after the artists Zofia, Karol, Aleksander and Tadeusz Stryjeński.",
+    "ludzie": [
+      {"kto": "Zofia Stryjeńska", "rola": "patronka ulicy, plastyczka", "wiki": null},
+      {"kto": "Karol Stryjeński", "rola": "patron ulicy, plastyk", "wiki": null},
+      {"kto": "Aleksander Stryjeński", "rola": "patron ulicy, plastyk", "wiki": null},
+      {"kto": "Tadeusz Stryjeński", "rola": "patron ulicy, plastyk", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Stryjeńskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Stryje%C5%84skich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-wilhelma-konrada-roentgena",
+    "nazwa": "Ulica Wilhelma Konrada Roentgena",
+    "name_en": "Wilhelm Konrad Roentgen Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Wilhelma Konrada Roentgena",
+    "adres_historyczny": null,
+    "lat": 52.146111111,
+    "lon": 21.027777777,
+    "lokalizacja": "przyblizona",
+    "okres": "1995–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wydzielona z ulicy Ciszewskiego uchwałą Rady m.st. Warszawy z dnia 19 października 1995 w sprawie nadania nazwy ulicy na odcinku od ul. Pileckiego do Makolągwy.",
+      "Jej długość wynosi 0,94 km.",
+      "W 2020 roku rondu na skrzyżowaniu z ulicą Płaskowickiej nadano nazwę Wielkiej Orkiestry Świątecznej Pomocy."
+    ],
+    "ciekawostki": [
+      "Przy ulicy pod numerem 5 mieści się Narodowy Instytut Onkologii im. Marii Skłodowskiej-Curie – Państwowy Instytut Badawczy."
+    ],
+    "summary_en": "A 0.94 km street in Ursynów, separated from ul. Ciszewskiego by a city council resolution of 19 October 1995. It is named after the German physicist Wilhelm Conrad Röntgen.",
+    "ludzie": [],
+    "dawne_nazwy": ["Poleczki-Bis (robocza, przed wydzieleniem)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wilhelma Konrada Roentgena w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wilhelma_Konrada_Roentgena_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-wawozowa",
+    "nazwa": "Ulica Wąwozowa",
+    "name_en": "Wąwozowa Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Wąwozowa",
+    "adres_historyczny": null,
+    "lat": 52.13125,
+    "lon": 21.065694444,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1980–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa została nadana w 1978 roku decyzją Rady Narodowej m.st. Warszawy.",
+      "Sama ulica istnieje już od początku lat 80. XX wieku (brak jej na mapie z roku 1979, istnieje natomiast na mapach z 1982 roku).",
+      "Nawierzchnię asfaltową ulica uzyskała dopiero w latach 1995–1996, po intensywnej rozbudowie osiedla Kabaty."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi prawdopodobnie od licznych wąwozów przecinających niedaleką, prostopadłą do ulicy skarpę warszawską."
+    ],
+    "summary_en": "A street in Ursynów named in 1978 after the ravines of the nearby Warsaw escarpment. It existed from the early 1980s and received its asphalt surface in 1995–1996.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wąwozowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_W%C4%85wozowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  }
+]

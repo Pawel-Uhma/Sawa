@@ -1,0 +1,263 @@
+[
+  {
+    "id": "aleja-kasztanowa",
+    "nazwa": "Aleja Kasztanowa",
+    "name_en": "Kasztanowa Avenue",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Aleja Kasztanowa",
+    "adres_historyczny": null,
+    "lat": 52.1358,
+    "lon": 21.0672,
+    "lokalizacja": "przyblizona",
+    "okres": "1815 (wg legendy)–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Według legendy aleja powstała w 1815 roku.",
+      "Drogę prowadzącą z Góry Kalwarii do Wilanowa obsadzono wtedy kasztanowcami, aby zapewnić bezpieczeństwo Aleksandrowi I.",
+      "Aleja po raz pierwszy pojawiała się na mapach w 1875 roku.",
+      "W XIX wieku istniała tu cegielnia, dostarczająca cegły dla budowy pałacu Krasińskich i pałacu w Natolinie.",
+      "Przy alei postawiono w 1864 roku drewniany, ok. trzymetrowy krzyż upamiętniający powstanie styczniowe.",
+      "W 2000 roku przy skrzyżowaniu z aleją KEN odsłonięto pomnik pielgrzymki właściciela Kabat, rycerza Andrzeja Ciołka, do Santiago de Compostela w 1404 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kasztanowa Avenue is a tree-lined promenade in Ursynów, named after the chestnut trees planted along the road to Wilanów. According to a legend the avenue dates from 1815, and a monument to the pilgrim Andrzej Ciołek was unveiled there in 2000.",
+    "ludzie": [
+      {
+        "kto": "Aleksander I",
+        "rola": "car, dla którego bezpieczeństwa obsadzono drogę kasztanowcami (wg legendy)",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Ciołek",
+        "rola": "rycerz, właściciel Kabat, pielgrzym do Santiago de Compostela w 1404 roku",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Aleja Kasztanowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Aleja_Kasztanowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Data 1815 pochodzi z legendy podanej w artykule."
+  },
+  {
+    "id": "aleja-komisji-edukacji-narodowej",
+    "nazwa": "Aleja Komisji Edukacji Narodowej",
+    "name_en": "Commission of National Education Avenue",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Aleja Komisji Edukacji Narodowej",
+    "adres_historyczny": null,
+    "lat": 52.148333,
+    "lon": 21.0475,
+    "lokalizacja": "przyblizona",
+    "okres": "1973–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Uchwałą z 15 maja 1973 roku, w ramach miejskiej koncepcji ogólnej ciągów komunikacyjnych, nadano nazwę aleja Komisji Edukacji Narodowej ulicy funkcjonującej pod roboczą nazwą Nowo-Bukowińska.",
+      "W latach 1976–1996 ulica istniała w pełnym przekroju jedynie na odcinku od Doliny Służewieckiej do ulicy Bartoka.",
+      "Od 1983 roku do końca lat 80. XX wieku pozostała część wytyczonego odcinka była zajęta pod odkrywkową budowę I linii warszawskiego metra.",
+      "1996 – oddano do ruchu odcinek ul. Herbsta–ul. Ciszewskiego.",
+      "2012 – oddano do ruchu odcinek ul. Wałbrzyska–Dolina Służewiecka, od razu w przekroju dwujezdniowym.",
+      "Po oddaniu do użytku wzdłuż alei powstało wiele nowych budynków mieszkalnych i użytkowych, w tym budynek urzędu dzielnicy Ursynów i Multikino Ursynów."
+    ],
+    "ciekawostki": [
+      "Pod aleją przebiega linia metra na odcinku od stacji Kabaty do stacji Ursynów.",
+      "Nazwa ulicy upamiętnia Komisję Edukacji Narodowej, pierwsze w Europie ministerstwo oświaty publicznej."
+    ],
+    "summary_en": "Commission of National Education Avenue is a major road in Ursynów, Warsaw. Named in 1973 under its working name Nowo-Bukowińska, it was built in sections from 1976 and opened gradually after the first metro line was constructed beneath it.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Nowo-Bukowińska (robocza nazwa)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Aleja Komisji Edukacji Narodowej w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Aleja_Komisji_Edukacji_Narodowej_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "arena-ursynow",
+    "nazwa": "Arena Ursynów",
+    "name_en": "Arena Ursynów",
+    "typ": "sport",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. rtm. Witolda Pileckiego 122",
+    "adres_historyczny": null,
+    "lat": 52.1431,
+    "lon": 21.0395,
+    "lokalizacja": "dokladna",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Operatorem hali jest Ursynowskie Centrum Sportu i Rekreacji (UCSiR).",
+      "Corocznie na przełomie września i października w hali rozgrywany jest Memoriał Zdzisława Ambroziaka.",
+      "W hali grał m.in. amerykański zespół Sum 41.",
+      "Hala ma pełnowymiarową arenę z płytą boiska o wymiarach 49 m x 38 m i wysokości 13 m oraz widownię na 2000 widzów."
+    ],
+    "ciekawostki": [
+      "Hala była też miejscem eliminacji do FIFA Interactive World Cup."
+    ],
+    "summary_en": "Arena Ursynów is a multi-purpose sports and event hall at ul. rtm. Witolda Pileckiego 122 in Ursynów, run by the Ursynów Sports and Recreation Centre. It hosts national and international sports events as well as concerts.",
+    "ludzie": [
+      {
+        "kto": "Zdzisław Ambroziak",
+        "rola": "patron corocznego Memoriału, który odbywa się w hali",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Arena Ursynów",
+        "url": "https://pl.wikipedia.org/wiki/Arena_Ursyn%C3%B3w"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie podaje daty budowy hali; okres ogólny."
+  },
+  {
+    "id": "areszt-sledczy-warszawa-sluzewiec",
+    "nazwa": "Areszt Śledczy w Warszawie-Służewcu",
+    "name_en": "Warsaw-Służewiec Remand Prison",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Kłobucka 5",
+    "adres_historyczny": null,
+    "lat": 52.1601,
+    "lon": 20.9906,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1944–1956 jednostka funkcjonowała jako Ośrodek Pracy Służewiec.",
+      "Od 1957 roku funkcjonowała jako więzienie karno-śledcze I klasy, zdolne pomieścić do 1000 więźniów.",
+      "Od 1964 r. Zakład Karny w Warszawie Służewcu podlegał Centralnemu Więzieniu nr 1 w Warszawie.",
+      "W 1975 r. jednostka ponownie stała się ośrodkiem pracy, a na początku lat 80. ponownie została przekształcona w zakład karny.",
+      "Od sierpnia 1996 r. obiekt funkcjonował jako Areszt Śledczy z oddziałami półotwartymi i terapeutycznymi.",
+      "Od 2005 r. rozpoczęła się przebudowa i modernizacja budynków aresztu; stare pawilony zastąpiono nowoczesnymi budynkami piętrowymi.",
+      "W maju 2012 r. został otwarty piąty nowo wybudowany pawilon mieszkalny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warsaw-Służewiec Remand Prison at Kłobucka 5 in Ursynów. Founded in 1944 as a labour centre, it became a prison in 1957 and was rebuilt from 2005. It holds up to 1080 inmates.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Ośrodek Pracy Służewiec",
+      "Zakład Karny w Warszawie Służewcu"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Areszt Śledczy w Warszawie-Służewcu",
+        "url": "https://pl.wikipedia.org/wiki/Areszt_%C5%9Aledczy_w_Warszawie-S%C5%82u%C5%BCewcu"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "biurowiec-rodan-systems",
+    "nazwa": "Biurowiec Rodan Systems",
+    "name_en": "Rodan Systems office building",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Puławska 465",
+    "adres_historyczny": null,
+    "lat": 52.137222,
+    "lon": 21.018611,
+    "lokalizacja": "dokladna",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1997–1998 z przeznaczeniem na siedzibę inwestora, spółki Rodan Systems działającej w branży informatycznej.",
+      "Projekt, wraz z wnętrzami, powstał w 1997 roku w pracowni architektonicznej Staniszkis-Architekt; głównymi architektami byli Magdalena Staniszkis, Piotr Mrugalski, Magdalena Jarczewska i Przemysław Sacewicz.",
+      "Budynek otrzymał nagrodę I stopnia Ministra Spraw Wewnętrznych i Administracji za 1999 rok.",
+      "Zdjęcie budynku znalazło się na okładce katalogu 230 budynków z lat 1989–2001, wydanego w 2002 roku przez Martę Leśniakowską.",
+      "W 2006 roku został zaliczony do 20 najbardziej przełomowych „ikon polskiej architektury” wybudowanych po 1989 roku.",
+      "Ostatecznie na sąsiedniej działce, pod adresem ul. Puławska 457, w 2015 roku powstał budynek biurowy Kampus Digital Knowledge Village."
+    ],
+    "ciekawostki": [
+      "Konrad Kucza-Kuczyński uznał, że autorom projektu należą się gratulacje."
+    ],
+    "summary_en": "A three-storey office building at Puławska 465 in Ursynów, designed in 1997 and built in 1997–1998 for the IT company Rodan Systems. It is known for its small square windows and for a 1999 national architecture award.",
+    "ludzie": [
+      {
+        "kto": "Magdalena Staniszkis",
+        "rola": "główna architektka projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Piotr Mrugalski",
+        "rola": "główny architekt projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Magdalena Jarczewska",
+        "rola": "główna architektka projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Przemysław Sacewicz",
+        "rola": "główny architekt projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Marta Leśniakowska",
+        "rola": "wybrała budynek do katalogu 230 budynków z lat 1989–2001",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Rodan 2 (robocza nazwa projektu sąsiedniego budynku)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Biurowiec Rodan Systems",
+        "url": "https://pl.wikipedia.org/wiki/Biurowiec_Rodan_Systems"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cezamat-laboratorium-centralne",
+    "nazwa": "Centrum Zaawansowanych Materiałów i Technologii Cezamat",
+    "name_en": "CEZAMAT Centre of Advanced Materials and Technologies",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Poleczki 19",
+    "adres_historyczny": null,
+    "lat": 52.1542,
+    "lon": 21.0083,
+    "lokalizacja": "dokladna",
+    "okres": "2007–dziś",
+    "istnieje": true,
+    "fakty": [
+      "19 grudnia 2007 Uchwała Senatu w sprawie wyrażenia zgody na podpisanie przez Rektora PW umowy z Ministerstwem Nauki i Szkolnictwa Wyższego, dotyczącej przygotowania projektu indywidualnego Cezamat.",
+      "19 grudnia 2008 podpisano umowę Konsorcjum Cezamat (8 jednostek naukowych).",
+      "W maju 2009 roku wydano decyzję lokalizacyjną.",
+      "17 września 2009 roku podpisano umowę o dofinansowanie z Ministerstwem Nauki i Szkolnictwa Wyższego.",
+      "1 lipca 2010 roku odbyło się pierwsze posiedzenie Rady Konsorcjum Cezamat.",
+      "10 września 2014 wmurowano kamień węgielny pod budowę Laboratorium Centralnego CEZAMAT.",
+      "6 czerwca 2016 uzyskano pozwolenie na użytkowanie, a 31 października 2016 zakończono odbiory końcowe i budowę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "CEZAMAT is a research centre in Ursynów run by a consortium of nine Warsaw science institutions. Its Central Laboratory at Poleczki 19 (19,561 m²) was built in 2014–2016 with funding from the Innovative Economy programme.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Centrum Zaawansowanych Materiałów i Technologii Cezamat",
+        "url": "https://pl.wikipedia.org/wiki/Centrum_Zaawansowanych_Materia%C5%82%C3%B3w_i_Technologii_Cezamat"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Daty budowy z końcowej części artykułu (kalendarium). Rekord dotyczy budynku Laboratorium Centralnego, nie konsorcjum."
+  }
+]

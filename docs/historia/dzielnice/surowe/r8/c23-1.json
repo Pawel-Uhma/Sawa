@@ -1,0 +1,139 @@
+[
+  {
+    "id": "opacz-wielka",
+    "nazwa": "Opacz Wielka",
+    "name_en": "Opacz Wielka",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.179192, "lon": 20.92516,
+    "lokalizacja": "przyblizona",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "XV-XVI w. – pierwsze wzmianki o wsi Opacz, własność Opackich herbu Prus, licząca 6 łanów.",
+      "XVIII w. – własność adiutanta królewskiego gen. Arnolda Byszewskiego.",
+      "pocz. XIX w. – własność Kajetana Dominika Kalinowskiego, ekonomisty i prawnika, wiceministra skarbu w Królestwie Polskim.",
+      "XIX w. – wydzielenie ze wsi Opacz osady Salomea (najpewniej na cześć Salomei ze Zwolińskich Kalinowskiej, żony Kajetana Dominika).",
+      "6 marca 1944 – 6 podchorążych z 3 kompanii rejonu ożarowskiego VII obwodu AK „Obroża” podczas ćwiczeń w terenie zostało schwytanych przez miejscowych volksdeutschów, a następnie zamordowanych przez żandarmów.",
+      "maj 1944 – odwet oddziału bojowego Kedywu Okręgu Warszawskiego AK, w wyniku czego wykonano wyrok na 4 osobach winnych śmierci podchorążych, a na 2 następnych kilka tygodni później."
+    ],
+    "ciekawostki": [
+      "Na pograniczu osiedli Opacz i Załuski powstały centra handlowe. Bliskość lotniska na Okęciu nadal ogranicza wznoszenie tu wysokich budynków."
+    ],
+    "summary_en": "Opacz Wielka is a former village, now a housing estate and MSI area in the Włochy district of Warsaw. It is first mentioned in the 15th–16th century as property of the Opacki family. In spring 1944 six Home Army cadets were captured and murdered, and the Home Army carried out a retaliatory execution in May 1944.",
+    "ludzie": [
+      {"kto": "Arnold Byszewski", "rola": "adiutant królewski, właściciel w XVIII w. (gen. Arnold Byszewski)", "wiki": null},
+      {"kto": "Kajetan Dominik Kalinowski", "rola": "ekonomista i prawnik, wiceminister skarbu w Królestwie Polskim, właściciel na początku XIX w.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Opacz"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Opacz Wielka", "url": "https://pl.wikipedia.org/wiki/Opacz_Wielka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla). Gdy artykuł nie podaje roku, rekord używa daty z tekstu."
+  },
+  {
+    "id": "opacz-parcela",
+    "nazwa": "Opacz-Parcela",
+    "name_en": "Opacz-Parcela",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.171271, "lon": 20.926392,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od 1867 obszar ten należał do gminy Skorosze powiatu warszawskiego w guberni warszawskiej.",
+      "20 października 1933 Opacz-Parcela weszła w skład nowo utworzonej gromady Opacz w gminie Skorosze.",
+      "1 kwietnia 1939 część gromady Opacz (odpowiadającą Opaczy-Parceli) włączono do nowo utworzonej gminy Okęcie.",
+      "Podczas II wojny światowej Opacz-Parcela znalazła się w Generalnym Gubernatorstwie, w dystrykcie warszawskim, gdzie już stanowiła odrębną gromadę w gminie Okęcie, która w 1943 roku liczyła 408 mieszkańców.",
+      "15 maja 1951 Opacz-Parcelę, wraz z całym obszarem gminy Okęcie, włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Opacz-Parcela is a former village, today part of the city in the Włochy district of Warsaw, south of Opacz Wielka. Its administrative history includes the Skorosze commune, the Opacz rural community and the Okęcie commune. It was incorporated into Warsaw on 15 May 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["parcela Opacz"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Opacz-Parcela", "url": "https://pl.wikipedia.org/wiki/Opacz-Parcela"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar wsi; współrzędne z nagłówka WSPÓŁRZĘDNE, przybliżone."
+  },
+  {
+    "id": "osiedle-wieza",
+    "nazwa": "Osiedle Wieża",
+    "name_en": "Wieża Housing Estate",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Lechicka 1–15, ul. Radarowa 9–17",
+    "adres_historyczny": null,
+    "lat": 52.190555555, "lon": 20.9675,
+    "lokalizacja": "przyblizona",
+    "okres": "1997–2000",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało wybudowane w latach 1997–2000 według projektu pracowni Projekt Sp. z o.o. (późniejsze Studio Architekt – Juliusz Marcinowski).",
+      "Projekt powstał w 1997.",
+      "Wybudowano łącznie ponad 300 mieszkań i lokali usługowych na terenie o powierzchni ok. 34 tys. m².",
+      "Inwestorem była powstała w 1995 roku spółdzielnia pracowników Przedsiębiorstwa Państwowego „Porty Lotnicze” o nazwie Spółdzielnia Budowlano-Mieszkaniowa „Radarowa”.",
+      "Generalnym wykonawcą było przedsiębiorstwo Exbud Warszawa S.A.",
+      "Przez pewien czas mieścił się tu warszawski oddział Urzędu Dozoru Technicznego."
+    ],
+    "ciekawostki": [
+      "Osiedle zostało ujęte w książce Aleksandry Stępień-Dąbrowskiej „Jakby luksusowo. Przewodnik po architekturze Warszawy lat 90.”, nominowanej do Nagrody Architektonicznej Prezydenta m.st. Warszawy 2022, wśród 94 wyselekcjonowanych i opisanych obiektów.",
+      "Autorka architekturę nazwała wrażeniową a osiedle określiła jako współczesną wariację na temat Kolonii Profesorskiej."
+    ],
+    "summary_en": "Osiedle Wieża, also called Osiedle Radarowa, is a housing estate in the Włochy district of Warsaw, between Radarowa and Lechicka streets. It was built in 1997–2000 by the Radarowa housing cooperative formed by Polish airport employees, with Exbud Warszawa S.A. as general contractor. The estate's tallest tower sits at the corner of Radarowa and Lechicka streets.",
+    "ludzie": [
+      {"kto": "Juliusz Marcinowski", "rola": "główny architekt osiedla", "wiki": null},
+      {"kto": "Dorota Krawczak", "rola": "główna architektka osiedla", "wiki": null},
+      {"kto": "Katarzyna Pawłowska", "rola": "główna architektka osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": ["Osiedle Radarowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Osiedle Wieża", "url": "https://pl.wikipedia.org/wiki/Osiedle_Wie%C5%BCa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla)."
+  },
+  {
+    "id": "paluch-warszawa",
+    "nazwa": "Paluch",
+    "name_en": "Paluch",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.153788888, "lon": 20.971011111,
+    "lokalizacja": "przyblizona",
+    "okres": "1652–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1652 – wieś Okęcie kupuje proboszcz drohicki i archidiakon pułtuski Paweł Petrykowski i wtedy na terenach położonych pomiędzy Okęciem a Gorzkiewkami powstaje folwark Paluchy.",
+      "XVIII wiek – majątek nabywa adiutant królewski, generał Arnold Anastazy Byszewski.",
+      "22 stycznia 1925 – Rada Miejska, na wniosek Magistratu, podejmuje decyzję o wykupieniu z rąk dotychczasowych właścicieli majątków Okęcie, Paluch oraz Służewiec pod budowę lotniska i obiektów sportowych.",
+      "1936 – przeniesienie na teren Palucha siedziby PZL z budynków w obrębie lotniska Okęcie, powstaje tam Wytwórnia płatowców, która zajmowała teren o powierzchni 16 ha i zatrudniała ok. 3000 pracowników.",
+      "lata 30. – na Paluchu powstaje osiedle dla pracowników PZL Okęcie, Wytwórni Silników Lotniczych nr 1, Warsztatów Remontowych Cywilnego Portu Lotniczego oraz Warsztatów Remontowych Parku 1 Pułku Lotniczego.",
+      "1951 – włączenie Palucha do Warszawy.",
+      "lata 70. – przeniesione na Paluch warszawskiego schroniska dla zwierząt, noszące nazwę Schronisko dla Bezdomnych Zwierząt „Na Paluchu”."
+    ],
+    "ciekawostki": [
+      "W Wytwórni płatowców produkowano samoloty P-7, P-11, P-24, PZL-37 Łoś i PZL-23 Karaś, a zbudowano tu prototypy PZL-49 Miś, PZL-46 Sum, PZL-50 „Jastrząb”, „Sokół” i „Lampart”."
+    ],
+    "summary_en": "Paluch is a former estate and today a housing estate and MSI area in the Włochy district of Warsaw. A folwark was founded there in 1652, and in 1936 the PZL aircraft plant moved to Paluch, where it built several aircraft types. Paluch was incorporated into Warsaw in 1951, and the city's animal shelter was later moved there.",
+    "ludzie": [
+      {"kto": "Paweł Petrykowski", "rola": "proboszcz drohicki i archidiakon pułtuski, kupił wieś Okęcie w 1652", "wiki": null},
+      {"kto": "Arnold Anastazy Byszewski", "rola": "adiutant królewski, generał, właściciel majątku w XVIII w.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Paluchy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Paluch (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Paluch_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek obszaru MSI)."
+  }
+]

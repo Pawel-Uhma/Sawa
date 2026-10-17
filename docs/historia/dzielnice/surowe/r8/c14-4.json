@@ -1,0 +1,322 @@
+[
+  {
+    "id": "ulica-antoniego-mackiewicza",
+    "nazwa": "ul. Antoniego Mackiewicza",
+    "name_en": "Antoni Mackiewicz Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Antoniego Mackiewicza",
+    "adres_historyczny": null,
+    "lat": 52.2496,
+    "lon": 21.0449,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przebieg ulicy ustalono w 1933 roku jako drogę dojazdową do nowo wytyczonych parceli należących do Józefa Holtorffa.",
+      "Nazwa ulicy funkcjonuje od 1 stycznia 1938 roku i upamiętnia powstańca styczniowego Antoniego Mackiewicza.",
+      "Ulica zyskała zabudowę tylko lewej, nieparzystej pierzei, z powodu przebiegu wzdłuż nasypu Kolei Warszawsko-Terespolskiej i kolei średnicowej.",
+      "Z czterech wystawionych budynków wyróżnia się kamienica pod nr 1, zbudowana w latach 1936–1937."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short dead-end street in Praga-Północ, laid out in 1933 along the railway embankment and named after a January Uprising insurgent in 1938.",
+    "ludzie": [
+      {"kto": "Antoni Mackiewicz", "rola": "powstaniec styczniowy, patron ulicy", "wiki": null},
+      {"kto": "Józef Holtorff", "rola": "właściciel parceli wzdłuż ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Antoniego Mackiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Antoniego_Mackiewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy (przybliżone)."
+  },
+  {
+    "id": "kamienica-antoniego-mackiewicza-1",
+    "nazwa": "Kamienica przy ul. Antoniego Mackiewicza 1",
+    "name_en": "Tenement at Antoni Mackiewicz Street 1",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Antoniego Mackiewicza 1",
+    "adres_historyczny": null,
+    "lat": 52.2496,
+    "lon": 21.0449,
+    "lokalizacja": "przyblizona",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę zbudowano w latach 1936–1937 dla Józefa Holtorffa i Henryka Bieleckiego według projektu Bolesława Szmidta.",
+      "Kamienica jest rzadkim na terenie dzielnicy przykładem późnego funkcjonalizmu.",
+      "Jej dynamiczna fasada ma zaokrąglony prawy narożnik, ponad którym znajduje się taras z balustradą z poziomych, grubych prętów przeciętych elementem w kształcie litery V."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1936–1937 tenement at Antoni Mackiewicz Street 1, designed by Bolesław Szmidt, one of the few late-functionalist buildings in the district.",
+    "ludzie": [
+      {"kto": "Bolesław Szmidt", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Józef Holtorff", "rola": "inwestor, dla którego zbudowano kamienicę", "wiki": null},
+      {"kto": "Henryk Bielecki", "rola": "inwestor, dla którego zbudowano kamienicę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Antoniego Mackiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Antoniego_Mackiewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone); z artykułu o ulicy."
+  },
+  {
+    "id": "ulica-bialostocka",
+    "nazwa": "ul. Białostocka",
+    "name_en": "Białostocka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Białostocka",
+    "adres_historyczny": null,
+    "lat": 52.256305555,
+    "lon": 21.043527777,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1889 roku ulica Białostocka została włączona do Warszawy i uregulowana.",
+      "Z racji równoległego położenia do torów kolei warszawsko-petersburskiej nosiła w okresie Królestwa Polskiego nazwę Objazdowa.",
+      "W latach 50. XX wieku w parterowym budynku przy ulicy urządzono dworzec z kasami PKP i PKS.",
+      "W latach 1982–1986 powstały 3 bloki mieszkalne przy ul. Białostockiej (nr 7, 9 i 11).",
+      "W 2002 ukończono budowę centrum handlowego mieszczącego stację Warszawa Wileńska."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Białostocka Street in Praga-Północ began as a rural road from Targówek and was incorporated into Warsaw in 1889. Its railway station and shopping centre link it to the Warszawa Wileńska stop.",
+    "ludzie": [],
+    "dawne_nazwy": ["Objazdowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Białostocka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bia%C5%82ostocka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-blaszana",
+    "nazwa": "ul. Blaszana",
+    "name_en": "Blaszana Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Blaszana",
+    "adres_historyczny": null,
+    "lat": 52.2499,
+    "lon": 21.0271,
+    "lokalizacja": "przyblizona",
+    "okres": "pierwsza poł. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w pierwszej połowie XIX wieku jako przesmyk w zabudowie wiodący ku Olszowej.",
+      "Pod obecną nazwą pojawiła się po raz pierwszy na planie z 1873 roku, a pierwsza, drewniana zabudowa powstała około 20 lat wcześniej.",
+      "Przed rokiem 1939 cała zabudowa ulicy składała się z jednej kamienicy wzniesionej w latach 1936–1937 oraz zabudowań magazynowych.",
+      "W latach 70. XX wieku budowa wysokościowców osiedla Panieńska zredukowała ulicę do roli ślepego zaułka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Blaszana Street in Praga-Północ is a short dead end off Panieńska. It was reduced to a cul-de-sac by the high-rise estate built in the 1970s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Blaszana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Blaszana_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-brzeska",
+    "nazwa": "ul. Brzeska",
+    "name_en": "Brzeska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Brzeska",
+    "adres_historyczny": null,
+    "lat": 52.2531,
+    "lon": 21.0413,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1870–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona po roku 1870, gdy odnotowano wykup gruntu przez magistrat; po raz pierwszy pojawia się na planie z roku 1873.",
+      "W 1882 roku na posesji między ulicami Targową, Ząbkowską i Brzeską otwarto bazar Różyckiego.",
+      "W czasie obrony Warszawy we wrześniu 1939 roku na ulicy wzniesiono barykadę.",
+      "W 2009 założenie urbanistyczne ulicy na odcinku między ulicami Ząbkowską i Kijowską zostało wpisane do rejestru zabytków.",
+      "W 2022 deweloper rozebrał zabytkowe relikty młyna parowego Schutza i Parzyńskiego (nr 8), by wkomponować je w nowy budynek mieszkalny."
+    ],
+    "ciekawostki": [
+      "Ulica jest uważana za centrum tzw. północnopraskiego trójkąta bermudzkiego, czyli najniebezpieczniejszej części dzielnicy."
+    ],
+    "summary_en": "Brzeska Street runs through old Praga near the Terespol railway station and the Różycki Bazaar. Many of its 19th- and early 20th-century tenements survive, and its urban layout was listed as a monument in 2009.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Brzeska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Brzeska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone). Ważniejsze budynki przy ulicy są w osobnych rekordach."
+  },
+  {
+    "id": "gmach-szkoly-technicznej-brzeska-12",
+    "nazwa": "Gmach Szkoły Technicznej Kolei Warszawsko-Terespolskiej (ul. Brzeska 12)",
+    "name_en": "Former Warsaw-Terespol Railway Technical School Building",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Brzeska 12",
+    "adres_historyczny": null,
+    "lat": 52.2531,
+    "lon": 21.0413,
+    "lokalizacja": "przyblizona",
+    "okres": "1872–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach został wzniesiony w latach 1872–1873 według projektu Anzelma Krysińskiego.",
+      "Od 1900 roku był siedzibą Szpitala Kolei Skarbowych Nadwiślańskich.",
+      "W 1910 na posesji szpitala, od strony ul. Markowskiej, wzniesiono neogotycką kaplicę Najświętszego Serca Pana Jezusa, ufundowaną przez siostry kanoniczki.",
+      "W okresie międzywojennym placówka działała pod zarządem PKP jako Szpital Kolejowy i miała ok. 100 łóżek.",
+      "W 2009 zlikwidowano Szpital Kolejowy im. dr M. Okońskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The former Warsaw-Terespol railway technical school building at Brzeska 12, built in 1872–1873, later housed a railway hospital that was closed in 2009.",
+    "ludzie": [
+      {"kto": "Anzelm Krysiński", "rola": "projektant gmachu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital Kolejowy im. dr M. Okońskiego"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Brzeska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Brzeska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Z artykułu o ulicy; artykuł nie opisuje stanu budynku po 2009 roku."
+  },
+  {
+    "id": "centrala-past-brzeska-24",
+    "nazwa": "Budynek centrali telefonicznej PAST (ul. Brzeska 24)",
+    "name_en": "PAST telephone exchange building (Brzeska 24)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Brzeska 24",
+    "adres_historyczny": null,
+    "lat": 52.2531,
+    "lon": 21.0413,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pod nr 24 wzniesiono budynek automatycznej centrali telefonicznej, jeden z sześciu tego typu obiektów w Warszawie należących do Polskiej Akcyjnej Spółki Telefonicznej (PAST).",
+      "W pierwszym dniu powstania warszawskiego budynek został na krótko opanowany przez żołnierzy Obwodu VI Praga Armii Krajowej.",
+      "W ceglanej ścianie budynku zachowały się ślady kul niemieckiego ostrzału.",
+      "Wydarzenia z 1 sierpnia 1944 upamiętnia napis i „kotwica” Polski Walczącej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A telephone exchange at Brzeska 24 built for the PAST company, briefly seized by the Home Army on the first day of the Warsaw Uprising. Shot marks and a plaque commemorate the fighting.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Brzeska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Brzeska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Data budowy przybliżona: artykuł podaje ramę 1905–1914 dla kamienic przy ulicy, bez daty dla tego budynku."
+  },
+  {
+    "id": "ulica-brodnowska",
+    "nazwa": "ul. Bródnowska",
+    "name_en": "Bródnowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Bródnowska",
+    "adres_historyczny": null,
+    "lat": 52.2638,
+    "lon": 21.039,
+    "lokalizacja": "przyblizona",
+    "okres": "1865–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1865 roku w związku z parcelacją terenu Nowej Pragi, zwanej ówcześnie Konopacczyzną, od nazwiska właściciela Ksawerego Konopackiego.",
+      "Nazwa ulicy pochodzi od pobliskiej wsi Bródno; do lat 30. XX wieku pisano ją jako Brudnowska.",
+      "W 1880 roku ulicę uregulowano, a w 1889 roku wraz z całą Nową Pragą przyłączono ją do Warszawy.",
+      "W 1900 pod nr 8 wzniesiono dużą synagogę.",
+      "Okres intensywnej zabudowy ulicy nastąpił po roku 1930; powstały wtedy kamienice czynszowe należące przeważnie do Żydów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bródnowska Street in Nowa Praga was laid out in 1865 on the land of Ksawery Konopacki and named after the village of Bródno. It was incorporated into Warsaw in 1889.",
+    "ludzie": [
+      {"kto": "Ksawery Konopacki", "rola": "właściciel terenu parcelowanego w 1865", "wiki": null}
+    ],
+    "dawne_nazwy": ["Brudnowska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bródnowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Br%C3%B3dnowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-czynszowa",
+    "nazwa": "ul. Czynszowa",
+    "name_en": "Czynszowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Czynszowa",
+    "adres_historyczny": null,
+    "lat": 52.260666666,
+    "lon": 21.042277777,
+    "lokalizacja": "przyblizona",
+    "okres": "1865–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1865 roku w związku z parcelacją terenu Nowej Pragi przez Ksawerego Konopackiego.",
+      "Około 1895 roku posesje przy ulicy nabył Antoni Kochański; po odkupieniu jego nieruchomości przez Władysława Pachulskiego i Andrzeja Domańskiego wzniesiono na miejscu dawnej zabudowy kamienice czynszowe.",
+      "Posesje przy południowym odcinku ulicy nabył w 1896 roku Leopold Daab; jego rodzina z czasem wykupiła całą pierzeję.",
+      "Około roku 1910 ulicami Stalową i Czynszową poprowadzono linię tramwaju elektrycznego.",
+      "Zabudowa ulicy przetrwała okres II wojny światowej."
+    ],
+    "ciekawostki": [
+      "Południowy odcinek ulicy pełni funkcję pętli tramwajowej."
+    ],
+    "summary_en": "Czynszowa Street in Nowa Praga was laid out in 1865 by Ksawery Konopacki. Its tenements were built by private landlords, and the street survived the Second World War with its historic development intact.",
+    "ludzie": [
+      {"kto": "Ksawery Konopacki", "rola": "parcelował teren Nowej Pragi w 1865", "wiki": null},
+      {"kto": "Antoni Kochański", "rola": "nabywca posesji ok. 1895", "wiki": null},
+      {"kto": "Leopold Daab", "rola": "nabywca posesji przy południowym odcinku w 1896", "wiki": null},
+      {"kto": "Władysław Pachulski", "rola": "współkupiec nieruchomości, budowniczy kamienic", "wiki": null},
+      {"kto": "Andrzej Domański", "rola": "współkupiec nieruchomości, budowniczy kamienic", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Czynszowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Czynszowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-florianska",
+    "nazwa": "ul. Floriańska",
+    "name_en": "Floriańska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Floriańska",
+    "adres_historyczny": null,
+    "lat": 52.2518,
+    "lon": 21.0342,
+    "lokalizacja": "przyblizona",
+    "okres": "1863–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Floriańska, do 1916 Konstantynowska, została wytyczona w 1863 roku jako jedna z czterech ulic odchodzących promieniście od pl. Weteranów 1863 r.",
+      "Nazwę zmieniono w październiku 1916; nawiązywała do wezwania kościoła.",
+      "Zakład dla Wdów po Poległych Żołnierzach i Oficerach przy ul. Floriańskiej 2 zbudowano z inicjatywy rosyjskiego Czerwonego Krzyża.",
+      "W 1930 pod nr 10 powstał gmach mieszczący Wydział Wojskowy Zarządu Miasta.",
+      "W 1944 wycofujący się Niemcy wysadzili w powietrze kościół św. św. Michała Archanioła i Floriana."
+    ],
+    "ciekawostki": [
+      "Bliskość kościoła i Szpitala Praskiego przyciągnęła na ulicę cztery zakłady pogrzebowe."
+    ],
+    "summary_en": "Floriańska Street in Praga-Północ was laid out in 1863 from Plac Weteranów 1863 and renamed in 1916 after the St Michael and St Florian church nearby.",
+    "ludzie": [
+      {"kto": "Józef Pius Dziekoński", "rola": "projektant kościoła św. św. Michała Archanioła i Floriana", "wiki": null}
+    ],
+    "dawne_nazwy": ["Konstantynowska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Floriańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Floria%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł podaje, że w 1944 Niemcy wysadzili kościół św. św. Michała Archanioła i Floriana, podczas gdy inne artykuły w paczce opisują bazylikę tego wezwania jako istniejącą. Do weryfikacji przed użyciem."
+  }
+]

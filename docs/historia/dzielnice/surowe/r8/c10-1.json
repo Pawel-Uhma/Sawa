@@ -21,9 +21,22 @@
     ],
     "ciekawostki": [],
     "summary_en": "A brick building on Grochowska Street in Praga-Południe, built in 1924 for the Dzwon cigarette tube factory of Hilary Jeżewski. The factory employed 40 people and produced about 7 million cigarette tubes a week. The building has been on the municipal register of monuments since 2006.",
-    "ludzie": [{"kto": "Hilary Jeżewski", "rola": "założyciel wytwórni gilz „Dzwon”", "wiki": null}],
-    "dawne_nazwy": ["Fabryka gilz „Dzwon”"],
-    "zrodla": [{"tytul": "Wikipedia: Fabryka gilz Dzwon Hilarego Jeżewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Fabryka_gilz_Dzwon_Hilarego_Je%C5%BCewskiego_w_Warszawie"}],
+    "ludzie": [
+      {
+        "kto": "Hilary Jeżewski",
+        "rola": "założyciel wytwórni gilz „Dzwon”",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Fabryka gilz „Dzwon”"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Fabryka gilz Dzwon Hilarego Jeżewskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Fabryka_gilz_Dzwon_Hilarego_Je%C5%BCewskiego_w_Warszawie"
+      }
+    ],
     "pewnosc": "wysoka",
     "uwagi": "Artykuł nie podaje, że Jeżewski jest autorem budynku; nazwisko przepisane z tytułu."
   },
@@ -38,7 +51,7 @@
     "lat": 52.2354,
     "lon": 21.0957,
     "lokalizacja": "przyblizona",
-    "okres": "1880–1936",
+    "okres": "1880s–1930s",
     "istnieje": false,
     "fakty": [
       "Fort XI był jednym z fortów pierścienia zewnętrznego Twierdzy Warszawa, wybudowanym w latach 80. XIX wieku.",
@@ -51,8 +64,17 @@
     ],
     "summary_en": "Fort XI was a fort of the outer ring of the Warsaw Fortress, built in the 1880s in the Grochów area. After the fortress was liquidated, its fortifications were blown up in 1913 and the traces of the fort were erased in the 1930s; it no longer exists.",
     "ludzie": [],
-    "dawne_nazwy": ["Grochów", "Grochów Duży", "Górki Grochowskie (tereny pofortowe)"],
-    "zrodla": [{"tytul": "Wikipedia: Fort XI Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_XI_Twierdzy_Warszawa"}],
+    "dawne_nazwy": [
+      "Grochów",
+      "Grochów Duży",
+      "Górki Grochowskie (tereny pofortowe)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Fort XI Twierdzy Warszawa",
+        "url": "https://pl.wikipedia.org/wiki/Fort_XI_Twierdzy_Warszawa"
+      }
+    ],
     "pewnosc": "wysoka",
     "uwagi": "Brak dzisiejszego adresu w artykule. Współrzędne z nagłówka dotyczą obiektu nieistniejącego, więc lokalizacja przyblizona."
   },
@@ -77,10 +99,18 @@
       "Jedynymi reliktami fortu są niewielkie pagórki na terenie osiedla."
     ],
     "ciekawostki": [],
-    "summary_en": "Fort XIA was a earthen fort of the outer ring of the Warsaw Fortress, built in the 1890s in the Grochów II area. It was blown up after 1909 and its site was built over with the Osiedle Młodych estate from 1957. Only small hills remain.",
+    "summary_en": "Fort XIA was an earthen fort of the outer ring of the Warsaw Fortress, built in the 1890s in the Grochów II area. It was blown up after 1909 and its site was built over with the Osiedle Młodych estate from 1957. Only small hills remain.",
     "ludzie": [],
-    "dawne_nazwy": ["Grochów Mały", "Grochów II"],
-    "zrodla": [{"tytul": "Wikipedia: Fort XIA Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_XIA_Twierdzy_Warszawa"}],
+    "dawne_nazwy": [
+      "Grochów Mały",
+      "Grochów II"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Fort XIA Twierdzy Warszawa",
+        "url": "https://pl.wikipedia.org/wiki/Fort_XIA_Twierdzy_Warszawa"
+      }
+    ],
     "pewnosc": "wysoka",
     "uwagi": "Artykuł podaje okolicę obecnej ul. Szaserów (kwadrat ulic Garwolińskiej, Szklanych Domów i Wspólnej Drogi), bez numeru, więc adres_dzis pusty. Obiekt nieistniejący, lokalizacja przyblizona."
   }

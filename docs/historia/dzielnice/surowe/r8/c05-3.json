@@ -1,0 +1,296 @@
+[
+  {
+    "id": "ulica-domaniewska",
+    "nazwa": "Ulica Domaniewska",
+    "name_en": "Domaniewska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Domaniewska",
+    "adres_historyczny": null,
+    "lat": 52.1833,
+    "lon": 21.0070446,
+    "lokalizacja": "przyblizona",
+    "okres": "1972–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1972–1977 pomiędzy ulicą, aleją Niepodległości, aleją Wilanowską i terenami przemysłowymi wzniesiono osiedle mieszkaniowe Domaniewska, rozdzielone na dwa zespoły ulicą Modzelewskiego.",
+      "W latach 90. rozpoczął się proces zmiany funkcji tej części miasta z przemysłowej w usługową.",
+      "Ulica jest jedną z ulic łączących ul. Puławską i al. Niepodległości z mokotowskim kompleksem biurowym."
+    ],
+    "ciekawostki": [
+      "Kompleks biurowy, przy którego ulicach leży Domaniewska, w związku z kłopotami komunikacyjnymi zyskał żartobliwą nazwę Mordoru."
+    ],
+    "summary_en": "Domaniewska Street runs through the Służewiec and Ksawerów office district in Mokotów. It was built alongside a 1972–1977 housing estate, and in the 1990s the area changed from industrial to service use.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Domaniewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Domaniewska_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy). Krótki artykuł; zdania o budynkach (Ambasada Kuby nr 34, Komenda PSP nr 40) bez dat, pominięte."
+  },
+  {
+    "id": "ulica-grazyny",
+    "nazwa": "Ulica Grażyny",
+    "name_en": "Grażyna Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Grażyny",
+    "adres_historyczny": null,
+    "lat": 52.2041,
+    "lon": 21.0224,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Grażyny została wytyczona około 1900 podczas parcelowania gruntów przedmieścia Mokotów.",
+      "Pierwszą zabudowę stanowił zespół budynków Związku Spółdzielni Spożywców „Społem”, wzniesiony w 1912 pod numerem 13.",
+      "Krótko przed 1918 ulicę wybrukowano polnym kamieniem.",
+      "W 1930 powstała sąsiednia willa pod numerem 11.",
+      "Kompleks budynków „Społem” dwukrotnie (w 1930 i 1938) rozbudowano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grażyna Street in Mokotów was laid out around 1900 during the parcelling of the Mokotów suburb. Its first building was a cooperative complex of the Społem consumers' association from 1912.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grażyny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Gra%C5%BCyny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-humanska",
+    "nazwa": "Ulica Humańska",
+    "name_en": "Humańska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Humańska",
+    "adres_historyczny": null,
+    "lat": 52.2083,
+    "lon": 21.0248,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1908–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około 1908, jako ulica leżąca na obrzeżu Kolonii Welonin przyłączonej do Warszawy w tym okresie.",
+      "Ok. 1930 ulicę skrócono do linii ulicy Słonecznej.",
+      "W 1928 pod numerem 9 powstał dom Spółdzielni Mieszkaniowej „Słoneczna”.",
+      "Przeciwną stronę ulicy zajęły wybudowane około 1935 szeregowe domy jednorodzinne; jeden z nich zaprojektował Marcin Weinfeld.",
+      "Zabudowa ulicy w całości ocalała podczas II wojny światowej."
+    ],
+    "ciekawostki": [
+      "Ulica stanowi interesującą enklawę architektury lat 30. XX wieku na Mokotowie."
+    ],
+    "summary_en": "Humańska Street in Mokotów dates from around 1908 and was shortened to Słoneczna around 1930. Its 1930s terraced houses survived the war intact, and one of them was designed by Marcin Weinfeld.",
+    "ludzie": [
+      {"kto": "Marcin Weinfeld", "rola": "projektant jednego z szeregowych domów z ok. 1935", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Humańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Huma%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-jana-pawla-woronicza",
+    "nazwa": "Ulica Jana Pawła Woronicza",
+    "name_en": "Jan Paweł Woronicz Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana Pawła Woronicza",
+    "adres_historyczny": null,
+    "lat": 52.189,
+    "lon": 21.002222222,
+    "lokalizacja": "przyblizona",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1921 roku ulicy nadano imię Jana Pawła Woronicza.",
+      "W czasie powstania warszawskiego na ulicy toczyły się ciężkie walki o budynek szkoły powszechnej pod numerem 8; zdobyty przez powstańców 2 sierpnia, został utracony 25 września 1944 roku.",
+      "W lipcu 1969 przy ulicy otwarto Centrum Radia i Telewizji, zajmujące obszar ok. 16 ha.",
+      "W marcu 2020 roku otwarto przedłużenie ulicy – odcinek od ul. Etiudy Rewolucyjnej do ul. Żwirki i Wigury."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Jan Paweł Woronicz Street in Mokotów was named in 1921. The Radio and Television Centre opened on it in 1969, and the street was extended to Żwirki i Wigury in 2020.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana Pawła Woronicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Paw%C5%82a_Woronicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-jana-sebastiana-bacha",
+    "nazwa": "Ulica Jana Sebastiana Bacha",
+    "name_en": "Johann Sebastian Bach Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana Sebastiana Bacha",
+    "adres_historyczny": null,
+    "lat": 52.168658,
+    "lon": 21.027494,
+    "lokalizacja": "przyblizona",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia ulicy zaczęła się w roku 1975 wraz z budową nowego osiedla Służew nad Dolinką, gdy pierwsze bloki przy niej (pod numerami 34, 30, 26) zaczęli zasiedlać mieszkańcy.",
+      "Ulica jest główną ulicą osiedla Służew nad Dolinką i otacza większość osiedla od wschodu, południa i zachodu.",
+      "Środkowy odcinek ulicy przylega do parku Dolinka Służewska."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Johann Sebastian Bach Street is the main street of the Służew nad Dolinką estate in Mokotów. Its first blocks were occupied in 1975, and the street runs along the Dolinka Służewska park.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana Sebastiana Bacha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Sebastiana_Bacha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-ludwika-narbutta",
+    "nazwa": "Ulica Ludwika Narbutta",
+    "name_en": "Ludwik Narbutt Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Ludwika Narbutta",
+    "adres_historyczny": "ulica Narbutta (od 1916 nazwa, zmiana weszła w życie w 1928)",
+    "lat": 52.20525,
+    "lon": 21.010417,
+    "lokalizacja": "przyblizona",
+    "okres": "1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1897 roku duży teren między obecnymi ulicami Rakowiecką, Puławską, św. Andrzeja Boboli, Ligocką i Melsztyńską stał się własnością Georga (Jerzego) von Narbuta; w latach 1897–1898 został on rozparcelowany.",
+      "W 1916 roku ulica wraz z całą gminą Mokotów została włączona do Warszawy; w tym samym roku nadano jej nazwę upamiętniającą Ludwika Narbutta, ale zmiana weszła w życie dopiero w 1928 roku.",
+      "1 lutego 1925 w budynku pod numerem 29 przedsiębiorstwo uruchomiło pierwszą w Polsce radiową stację nadawczą.",
+      "W latach 1924–1925 na rogu ulic Narbutta i Wiśniowej powstał zespół biurowo-produkcyjny Polskiego Towarzystwa Radiotechnicznego.",
+      "W 1938 roku ulica została wyasfaltowana.",
+      "1 sierpnia 1944 trzy kompanie batalionu „Bałtyk” ze zgrupowania Pułku „Baszta” zaatakowały gmach Szkoły Rękodzielniczej, w której stacjonował batalion SS liczący ok. 300–400 żołnierzy; natarcie się załamało.",
+      "W czasie II wojny światowej zabudowa ulicy została zniszczona w ok. 50 procentach."
+    ],
+    "ciekawostki": [
+      "W 1949 roku na skwerze oddano do użytku budynek kina Stolica (obecnie kino Iluzjon).",
+      "14 sierpnia 1944 powstańcy bronili reduty zorganizowanej w dwóch oficynach budynku nr 27a (tzw. drugi Alkazar)."
+    ],
+    "summary_en": "Ludwik Narbutt Street was laid out in 1897–1898 as the main street of the Mokotów town plan. In 1925 the first Polish radio transmitter started operating from number 29, and the street was heavily damaged in the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Georg (Jerzy) von Narbut", "rola": "właściciel terenu, który w 1897 został rozparcelowany", "wiki": null},
+      {"kto": "Ludwik Narbutt", "rola": "polski ziemianin i powstaniec styczniowy, patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Narbutta (Narbutowska)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Ludwika Narbutta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ludwika_Narbutta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy). Tekst podaje „Georga (Jerzego) von Narbuta” jako właściciela; nazwa Narbutt w rekordzie to patron ulicy."
+  },
+  {
+    "id": "ulica-marynarska",
+    "nazwa": "Ulica Marynarska",
+    "name_en": "Marynarska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Marynarska",
+    "adres_historyczny": null,
+    "lat": 52.18,
+    "lon": 20.994027777,
+    "lokalizacja": "przyblizona",
+    "okres": "1950–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana uchwałą Rady Narodowej m.st. Warszawy z dnia 23 marca 1950.",
+      "W latach 2009–2013 trwały prace drogowe przy budowie węzła Marynarska, będącego połączeniem odcinka drogi S79 od ul. Marynarskiej do węzła Warszawa Lotnisko.",
+      "Do końca 2013 r. ulicą przebiegała droga krajowa nr 7; po zmianie przebiegu DK7 ulica straciła kategorię drogi krajowej.",
+      "W wyniku zakończonej w maju 2019 r. przebudowy, prowadzonej przez Stołeczny Zarząd Rozbudowy Miasta, ulica ma dwie jezdnie po trzy pasy ruchu w każdą stronę."
+    ],
+    "ciekawostki": [
+      "Wzdłuż ulicy biegną tory tramwajowe do pętli Służewiec."
+    ],
+    "summary_en": "Marynarska Street in Mokotów was named in 1950 and ran as national road DK7 until 2013. A rebuild completed in May 2019 gave it two three-lane carriageways.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Marynarska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Marynarska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-powsinska",
+    "nazwa": "Ulica Powsińska",
+    "name_en": "Powsińska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Powsińska",
+    "adres_historyczny": null,
+    "lat": 52.186666666,
+    "lon": 21.064166666,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1883 ciągłość drogi została przerwana z powodu rozpoczęcia przez Rosjan budowy otoczonego fosą Fortu IX Twierdzy Warszawa znajdującego się na jej osi.",
+      "5 maja 1892 oddano do użytku odcinek konnej kolei wąskotorowej pomiędzy Czerniakowem a Wilanowem, przebiegający wzdłuż późniejszej ulicy Powsińskiej.",
+      "8 kwietnia 1916 generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające z mocą wsteczną od 1 kwietnia 1916 wieś Czerniaków do Warszawy.",
+      "W 1935 ulica została przebita na wprost przez teren fortu czerniakowskiego.",
+      "W latach 1967–1971 pomiędzy ulicami Powsińską, Gołkowską i Woziwody wybudowano osiedle mieszkaniowe Powsińska złożone z 5-kondygnacyjnych budynków, zaprojektowane przez Jadwigę Grębecką.",
+      "19 lipca 1974 oddano do użytku przebudowaną ulicę Powsińską, poszerzoną do dwóch jezdni o trzech pasach ruchu w każdym kierunku."
+    ],
+    "ciekawostki": [
+      "Na północnym odcinku ulica jeszcze we wczesnych latach 70. XX wieku była wybrukowana kocimi łbami.",
+      "W 1891 Henryk Huss, inżynier i Wiktor Magnus, specjalista od parcelacji, założyli spółkę w celu budowy kolejki do Wilanowa."
+    ],
+    "summary_en": "Powsińska Street in Mokotów is part of Wisłostrada and the main street of Sadyba. It began as a field road in the 19th century, got a horse railway in 1892, and was widened to a dual carriageway in 1974.",
+    "ludzie": [
+      {"kto": "Henryk Huss", "rola": "inżynier, współzałożyciel spółki budującej kolejkę do Wilanowa (1891)", "wiki": null},
+      {"kto": "Wiktor Magnus", "rola": "specjalista od parcelacji, współzałożyciel spółki (1891)", "wiki": null},
+      {"kto": "Hans Hartwig von Beseler", "rola": "generał-gubernator, wydał rozporządzenie o włączeniu Czerniakowa do Warszawy (1916)", "wiki": null},
+      {"kto": "Jadwiga Grębecka", "rola": "projektantka osiedla Powsińska (1967–1971)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Powsińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Powsi%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-raclawicka",
+    "nazwa": "Ulica Racławicka",
+    "name_en": "Racławicka Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Racławicka",
+    "adres_historyczny": "Szosa Fortowa lub Droga Fortowa (po 1880)",
+    "lat": 52.1966,
+    "lon": 20.9941,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W czasie budowy fortów i wałów pierścienia wewnętrznego Twierdzy Warszawa po 1880 roku wytyczono drogę łączącą te umocnienia z dawnym traktem lubelskim.",
+      "W 1922 roku drogę nazwano ul. Racławicką; jej pierwotna trasa jest niemal niezmieniona do dziś.",
+      "Na terenie dawnego Fortu M mieściły się, od 1961 r. do końca lat 80., Zakłady Radiowe i Telewizyjne „ZARAT”.",
+      "28 grudnia 1946 po raz pierwszy ulicą wytyczono trasę autobusu miejskiego o oznaczeniu „R”.",
+      "W 2006 r. ulicę na odcinku od ul. Wołoskiej do ul. Żwirki i Wigury poważnie poszerzono i przebudowano.",
+      "W latach 50. XX wieku przy ulicy powstał stadion Warszawskiego Klubu Sportowego „Gwardia”, zamknięty w 2012 przez nadzór budowlany."
+    ],
+    "ciekawostki": [
+      "Rondo u zbiegu ul. Racławickiej, Wołoskiej i Odyńca nazwano 2 lutego 2017 rondem Roberta Schumana."
+    ],
+    "summary_en": "Racławicka Street in Mokotów and Ochota began as a fort road built after 1880 and was named in 1922. Its Gwardia stadium, built in the 1950s, closed in 2012 and was later taken over by security services.",
+    "ludzie": [
+      {"kto": "Robert Schuman", "rola": "patron ronda u zbiegu z Wołoską i Odyńca (2017)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szosa Fortowa", "Droga Fortowa", "Rolna (okupacja)", "Ackerstrasse (okupacja)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Racławicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Rac%C5%82awicka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy). Ulica leży w dzielnicach Mokotów i Ochota."
+  }
+]

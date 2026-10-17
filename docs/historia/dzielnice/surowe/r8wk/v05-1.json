@@ -1,0 +1,127 @@
+[
+  {
+    "id": "teatr-powszechny",
+    "nazwa": "Teatr Powszechny im. Zygmunta Hübnera",
+    "name_en": "Powszechny Theatre",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Zamoyskiego 20",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Powszechny uruchomiono 23 listopada 1944 r. w dawnym budynku kina.",
+      "Powstał z inicjatywy Jana Mrozińskiego jako Teatr Popularny.",
+      "W 1945 r. dyrekcję teatru objął Eugeniusz Poreda.",
+      "W 1975 r. dyrektorem teatru został Zygmunt Hübner, który skoncentrował wokół sceny najlepszych ówcześnie aktorów: Mariusza Benoit, Janusza Gajosa, czy Krystynę Jandę.",
+      "W 1989 r. zmarł Zygmunt Hübner, a dyrektorem artystycznym Teatru Powszechnego został Andrzej Wajda.",
+      "Umowę na modernizację teatru podpisano 18 sierpnia 2009; łączny koszt inwestycji zamknął się w kwocie 26,5 do 28,3 mln złotych.",
+      "Nowy sezon artystyczny w odremontowanym budynku zainaugurowano 24 września 2010 roku spektaklem Kamień i popioły."
+    ],
+    "ciekawostki": [
+      "Do przetargu na modernizację zgłosiło się osiem firm, jednak przygotowany przez nie kosztorys opiewał na 25 mln złotych, a nie zakładane wcześniej 10 bądź 15 mln zł."
+    ],
+    "summary_en": "Powszechny Theatre at Zamoyskiego 20 in Praga-Południe is the largest and best-known theatre on the Praga side of Warsaw. It opened on 23 November 1944 in a former cinema building and reopened after a modernisation in 2010.",
+    "ludzie": [
+      {"kto": "Jan Mroziński", "rola": "inicjator powstania teatru", "wiki": null},
+      {"kto": "Eugeniusz Poreda", "rola": "dyrektor teatru od 1945 r.", "wiki": null},
+      {"kto": "Zygmunt Hübner", "rola": "dyrektor teatru od 1975 r.", "wiki": null},
+      {"kto": "Andrzej Wajda", "rola": "dyrektor artystyczny teatru od 1989 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Popularny"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Teatr Powszechny", "url": "https://warszawa.fandom.com/pl/wiki/Teatr_Powszechny"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-algierska",
+    "nazwa": "Ulica Algierska",
+    "name_en": "Algierska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Algierska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1984–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została nazwana i wytyczona w 1984 roku na cześć stolicy Algierskiej Republiki Ludowo-Demokratycznej – Algieru.",
+      "Ulica Algierska zaczyna się od ulicy Marokańskiej, biegnie łukiem i kończy się znów skrzyżowaniem z Marokańską.",
+      "Zabudowana jest wyłącznie domami jednorodzinnymi z lat 80. i 90. XX wieku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Algierska is a street in the south-eastern part of Saska Kępa in Praga-Południe. It was named and laid out in 1984 after Algiers, and it is lined only with single-family houses from the 1980s and 1990s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Algierska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Algierska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-alzacka",
+    "nazwa": "Ulica Alzacka",
+    "name_en": "Alzacka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Alzacka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica na Saskiej Kępie upamiętnia jedną z francuskich prowincji, Alzację.",
+      "Ulica rozpoczyna się od Ateńskiej, styka z Drezdeńską i Złoczowską, by zakończyć swój bieg na skrzyżowaniu z Lotaryńską.",
+      "Ulica jest jednokierunkowa w stronę ul. Ateńskiej.",
+      "Dwa skrajne segmenty o numerach 3 i 5 zostały rozbudowane i przerobione na eleganckie apartamentowce górujące nad okolicą."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Alzacka is a short one-way street on Saska Kępa in Praga-Południe, named after the French province of Alsace. It is lined mainly with single-family houses, with two end segments rebuilt as elegant apartment blocks.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Alzacka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Alzacka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-angorska",
+    "nazwa": "Ulica Angorska",
+    "name_en": "Angorska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Angorska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Angorska biegnie od Saskiej do Międzynarodowej.",
+      "Nazwa pochodzi od dawnej nazwy stolicy Turcji, Ankary, która przez stulecia nazywała się Angora (1361-1930).",
+      "Ulica została wytyczona w okresie międzywojennym, a zabudowana w czasach PRL-u.",
+      "Angorska jest przedłużeniem ulicy Dąbrówki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Angorska is a street on Saska Kępa in Praga-Południe, running from Saska to Międzynarodowa. It was laid out between the wars and built up in the PRL era, and its name refers to the old name of Ankara.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Angorska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Angorska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

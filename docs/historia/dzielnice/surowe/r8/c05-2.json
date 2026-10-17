@@ -1,0 +1,216 @@
+[
+  {
+    "id": "ulica-antoniego-malczewskiego",
+    "nazwa": "Ulica Antoniego Malczewskiego",
+    "name_en": "Antoni Malczewski Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Antoniego Malczewskiego",
+    "adres_historyczny": null,
+    "lat": 52.19271,
+    "lon": 21.01189,
+    "lokalizacja": "przyblizona",
+    "okres": "1920s–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Patronem ulicy od 1926 roku jest poeta Antoni Malczewski.",
+      "W czasie powstania warszawskiego, od 4 do 26 sierpnia 1944 roku, w domu nr 15/17 mieściła się komenda pułku „Baszta” pod dowództwem Stanisława Kamińskiego.",
+      "2 września 1944 roku niemieckie samoloty zbombardowały dom nr 3/5, w którym zorganizowano punkt sanitarny. Zginęło około 150 osób, w tym kierownik punktu Piotr Słonimski.",
+      "W 1957 roku przy skrzyżowaniu z al. Niepodległości został oddany do użytku gmach Polskiego Radia wzniesiony według projektu Bohdana Pniewskiego.",
+      "W 1975 roku przy ulicy powstał pawilon gastronomiczny „Baltazar”, wyróżniony w konkursie Mister Warszawy 1973.",
+      "W 2012 roku do gminnej ewidencji zabytków m.st. Warszawy wpisano budynki pod kilkunastoma adresami; dom przy ul. Malczewskiego 20 znajduje się także w rejestrze zabytków (nr A−851 z dn. 23 maja 2006 roku)."
+    ],
+    "ciekawostki": [
+      "Fragment ulicy na zachód od al. Niepodległości nosił do 1961 roku imię Jacka Malczewskiego."
+    ],
+    "summary_en": "Antoni Malczewski Street in Mokotów runs from Puławska to Joliot-Curie and was laid out in the 1920s as a villa street. During the Warsaw Uprising a regiment command and a first-aid post were on it, and in 1944 a bomb hit the post, killing about 150 people.",
+    "ludzie": [
+      {"kto": "Stanisław Kamiński", "rola": "dowódca pułku „Baszta” w domu nr 15/17 (sierpień 1944)", "wiki": null},
+      {"kto": "Piotr Słonimski", "rola": "kierownik punktu sanitarnego w domu nr 3/5, zginął 2 września 1944", "wiki": null},
+      {"kto": "Antoni Malczewski", "rola": "poeta, patron ulicy od 1926", "wiki": null}
+    ],
+    "dawne_nazwy": ["Jacka Malczewskiego (fragment do 1961)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Antoniego Malczewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Antoniego_Malczewskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy). Dzisiejszy adres to nazwa ulicy bez numeru."
+  },
+  {
+    "id": "ulica-artura-grottgera",
+    "nazwa": "Ulica Artura Grottgera",
+    "name_en": "Artur Grottger Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Artura Grottgera",
+    "adres_historyczny": null,
+    "lat": 52.2054,
+    "lon": 21.0304,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej z dnia 27 września 1926.",
+      "Ulica została wytyczona przez Spółkę Terenową Budowy Tanich Mieszkań jako wewnętrzna uliczka obudowana domami osiedla; od 1926 wznoszono domy, mieszczące mieszkania wykupywane przez członków spółdzielni.",
+      "W latach 1936–1937 miasto przy zachodnim krańcu ulicy pod nr 22 zbudowało gmach zespołu szkół powszechnych nr 31 i 33.",
+      "14 listopada 1943 w budynku nr 12 Gestapo aresztowało Małgorzatę Fornalską i Pawła Findera, co upamiętniono w 1971 tablicą odsłoniętą na jego frontowej ścianie.",
+      "Domy spółdzielcze przy ulicy licznie zamieszkiwali przedstawiciele wolnych zawodów – lekarze, literaci i adwokaci."
+    ],
+    "ciekawostki": [
+      "Tablica upamiętniająca aresztowanie została po 1989 zasłonięta metalową pokrywą."
+    ],
+    "summary_en": "Artur Grottger Street in the Sielce estate of Mokotów was laid out by a housing cooperative in 1926 and ends at the foot of the Warsaw escarpment. Its cooperative houses were home to doctors, writers and lawyers, including Kornel Makuszyński.",
+    "ludzie": [
+      {"kto": "Kornel Makuszyński", "rola": "pisarz, mieszkał przy ulicy w latach 1935–1944", "wiki": null},
+      {"kto": "Jerzy Bohdan Rychliński", "rola": "pisarz, mieszkał przy ulicy", "wiki": null},
+      {"kto": "Stanisław Helsztyński", "rola": "pisarz, mieszkał przy ulicy", "wiki": null},
+      {"kto": "Małgorzata Fornalska", "rola": "aresztowana przez Gestapo w budynku nr 12 w 1943", "wiki": null},
+      {"kto": "Paweł Finder", "rola": "aresztowany przez Gestapo w budynku nr 12 w 1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Artura Grottgera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Artura_Grottgera_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "grottgera-12-gestapo",
+    "nazwa": "Kamienica przy ul. Artura Grottgera 12",
+    "name_en": "Building at 12 Artur Grottger Street",
+    "typ": "zdarzenie",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Artura Grottgera 12",
+    "adres_historyczny": null,
+    "lat": 52.2054,
+    "lon": 21.0304,
+    "lokalizacja": "przyblizona",
+    "okres": "1943–dziś",
+    "istnieje": true,
+    "fakty": [
+      "14 listopada 1943 w budynku nr 12 Gestapo aresztowało Małgorzatę Fornalską i Pawła Findera.",
+      "Upamiętnienie tego aresztowania to tablica z 1971 roku, odsłonięta na frontowej ścianie budynku."
+    ],
+    "ciekawostki": [
+      "Po 1989 tablica została zasłonięta metalową pokrywą."
+    ],
+    "summary_en": "On 14 November 1943 the Gestapo arrested Małgorzata Fornalska and Paweł Finder in the building at 12 Artur Grottger Street. A plaque commemorating the arrest was unveiled on the front wall in 1971.",
+    "ludzie": [
+      {"kto": "Małgorzata Fornalska", "rola": "aresztowana przez Gestapo 14 listopada 1943", "wiki": null},
+      {"kto": "Paweł Finder", "rola": "aresztowany przez Gestapo 14 listopada 1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Artura Grottgera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Artura_Grottgera_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dodatkowy z artykułu o ulicy. Współrzędne to środek ulicy, nie budynku."
+  },
+  {
+    "id": "ulica-belgijska",
+    "nazwa": "Ulica Belgijska",
+    "name_en": "Belgijska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Belgijska",
+    "adres_historyczny": null,
+    "lat": 52.2027,
+    "lon": 21.0251,
+    "lokalizacja": "przyblizona",
+    "okres": "1895–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w roku 1895 podczas parcelacji terenów należących niegdyś do Izabeli Lubomirskiej.",
+      "Nazwa ulicy pochodzi od Belgijskiego Towarzystwa Akcyjnego Ruskiej Manufaktury, do którego należała fabryka filcu i kapeluszy przy ulicy.",
+      "W 1916 ulica znalazła się w granicach administracyjnych Warszawy.",
+      "Od roku 1895 pod numerem 7 działała fabryka należąca do spółki Mokotowska Fabryka Chemiczno-Farmaceutyczna Adolf Gąsecki i synowie.",
+      "W latach 1936–1937 zabudowania fabryczne zostały rozbudowane o kamienicę, którą zaprojektował Teodor Bursche.",
+      "3 sierpnia 1944 Niemcy dokonali na ulicy masakry ludności cywilnej, mordując tam kilkadziesiąt osób; upamiętnia ją tablica Tchorka pod nr 11.",
+      "Po wojnie przy ulicy zamieszkało kilkunastu reżyserów i operatorów z Wytwórni Filmowej „Czołówka”."
+    ],
+    "ciekawostki": [
+      "Fabryka pod nr 7 wytwarzała znany środek przeciwbólowy zwany kogutkiem."
+    ],
+    "summary_en": "Belgijska Street in Mokotów was laid out in 1895 on former Izabela Lubomirska land and named after a Belgian company that owned a felt and hat factory there. It was the scene of a massacre of civilians on 3 August 1944.",
+    "ludzie": [
+      {"kto": "Teodor Bursche", "rola": "projektant kamienicy przy fabryce (1936–1937)", "wiki": null},
+      {"kto": "Izabela Lubomirska", "rola": "właścicielka terenów parcelowanych pod ulicę w 1895", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Belgijska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Belgijska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-chelmska",
+    "nazwa": "Ulica Chełmska",
+    "name_en": "Chełmska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Chełmska",
+    "adres_historyczny": "Droga Książęca (do 1916)",
+    "lat": 52.2022,
+    "lon": 21.0428,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Do 1916 roku ulica nazywana była Drogą Książęcą.",
+      "W 1820 folwark Sielce przeszedł na własność wielkiego księcia Konstantego, który najprawdopodobniej wybudował w nim pałac będący jego letnią rezydencją.",
+      "16 maja 1891 oddano do użytku biegnący wzdłuż ulicy odcinek Kolei Konnej Wilanowskiej.",
+      "W 1900 roku na terenie dzisiejszej WFDiF rozpoczęto budowę Przytułku Maryjnego i cerkwi Narodzenia Chrystusa Pana według projektu Władimira Pokrowskiego.",
+      "W 1916 roku zmieniono nazwę ulicy z Książęcej na Chełmską.",
+      "Kościół św. Kazimierza został wzniesiony w okresie 1933–1939 dla Księży Zmartwychwstańców.",
+      "W 1944 zniszczeniu uległy gmachy szkolne oraz kaplica."
+    ],
+    "ciekawostki": [
+      "Przy bramie wjazdowej do Wytwórni Filmów Dokumentalnych i Fabularnych znajduje się tablica Tchorka."
+    ],
+    "summary_en": "Chełmska Street in Mokotów began as the road from the Sielce farm to Mokotów and was renamed in 1916. Its Grand Duke Konstanty palace, the Orthodox church of the Nativity and the St Casimir church built in 1933–1939 are among its landmarks.",
+    "ludzie": [
+      {"kto": "Konstanty", "rola": "wielki książę, w 1820 właściciel folwarku Sielce", "wiki": null},
+      {"kto": "Władimir Pokrowski", "rola": "projektant cerkwi Narodzenia Chrystusa Pana i przytułku (od 1900)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Książęca"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Chełmska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Che%C5%82mska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-dolna",
+    "nazwa": "Ulica Dolna",
+    "name_en": "Dolna Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Dolna",
+    "adres_historyczny": null,
+    "lat": 52.2006,
+    "lon": 21.0295,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wystawione w roku 1862 u zbiegu z ul. Puławską zabudowania Instytutu Moralnie Zaniedbanych Dzieci, potem Pogotowia Opieki dla Dzieci, były najwcześniej wzniesionymi przy Dolnej obiektami.",
+      "Ulica pojawiła się na mapach w roku 1808.",
+      "W 1916 ulica razem z tą częścią Mokotowa została włączona do miasta.",
+      "We wrześniu 1939 zniszczeniu uległa część hali fabryki Synthesa, odbudowanej w latach 1940–1941.",
+      "W latach 1963–1967 przy ulicy powstały bloki mieszkalne nowych osiedli: Dolna-Piaseczyńska, Dolna-Sobieskiego i Dolna-Belwederska.",
+      "Ocalał gmach Instytutu Higieny Psychicznej pod nr 42."
+    ],
+    "ciekawostki": [
+      "Obudowa źródła w formie morskiego potwora, wykonana z brązu, została umieszczona w murze oporowym po roku 1930."
+    ],
+    "summary_en": "Dolna Street in Mokotów runs from Sobieski, Chełmska and Belwederska to Puławska, following a ravine along a stream. It was regulated and named at the turn of the 20th century, and its factories and houses were badly damaged in 1939 and 1944.",
+    "ludzie": [],
+    "dawne_nazwy": ["Książęca (odcinek przy Chełmskiej)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dolna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dolna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  }
+]

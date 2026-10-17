@@ -1,0 +1,186 @@
+[
+  {
+    "id": "skarpa-pulawska",
+    "nazwa": "Skarpa Puławska",
+    "name_en": "Skarpa Puławska housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Żywnego 12, 16, 18, 21a, 23; ul. Puławska 109b, 111; ul. Bielawska 1",
+    "adres_historyczny": null,
+    "lat": 52.192777777,
+    "lon": 21.025833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1965–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zbudowano w latach 1965–1971 w miejscu wyburzonych domów dla kuracjuszy zakładu hydropatycznego Ludwika Sauvana, założonego w 1840 roku.",
+      "Składa się z ośmiu trzynastokondygnacyjnych budynków wielorodzinnych typu korytarzowego, zaplanowanych dla ok. 4–5 tys. mieszkańców.",
+      "Budynki wzniesiono w technologii wielkopłytowej WUF (Warszawska Uniwersalna Forma), wcześniej przetestowanej na eksperymentalnym Osiedlu Prototypów na Służewcu.",
+      "W momencie powstania były to najwyższe budynki z wielkiej płyty w Polsce.",
+      "Za tę realizację projektanci otrzymali w 1967 roku nagrodę Ministra Budownictwa III stopnia.",
+      "Inwestorem była Międzyzakładowa Spółdzielnia Mieszkaniowa „Starówka”, a generalnym wykonawcą przedsiębiorstwo PBM-Mokotów."
+    ],
+    "ciekawostki": [
+      "Elewacje miały fakturę z grubego żwiru; dzięki płytom z powłoką zewnętrzną nie trzeba ich było tynkować ani malować."
+    ],
+    "summary_en": "Large-panel housing estate between Puławska, Bielawska and Żywnego streets in Mokotów, built in 1965–1971 on the site of a 19th-century hydropathic spa. Its eight 13-storey blocks were the tallest large-panel buildings in Poland when completed.",
+    "ludzie": [
+      {"kto": "Ludwik Sauvan", "rola": "założyciel zakładu hydropatycznego (1840), którego domy dla kuracjuszy wyburzono pod osiedle", "wiki": null},
+      {"kto": "Andrzej Bielobradek", "rola": "projektant osiedla i bloków (zespół architektów)", "wiki": null},
+      {"kto": "Tadeusz Stefański", "rola": "generalny projektant osiedla (wg jednych źródeł)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Osiedle Bielawska-Żywnego"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Skarpa Puławska", "url": "https://pl.wikipedia.org/wiki/Skarpa_Pu%C5%82awska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Generalny projektant wg różnych źródeł: J. Kulesza lub Tadeusz Stefański; artykuł podaje obie wersje."
+  },
+  {
+    "id": "osiedle-skocznia",
+    "nazwa": "Osiedle Skocznia",
+    "name_en": "Skocznia housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Cieszyńska 1A, 2, 2A, 4, 5; ul. Bukowińska 26 i 26A",
+    "adres_historyczny": null,
+    "lat": 52.182777777,
+    "lon": 21.027222222,
+    "lokalizacja": "przyblizona",
+    "okres": "1968–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zbudowano w latach 1968–1975 na terenie dawnych Szopów Niemieckich, w rejonie ulic Cieszyńskiej i Czerniowieckiej.",
+      "Nazwa pochodzi od skoczni narciarskiej wzniesionej pod koniec lat 50. XX wieku w sąsiedztwie.",
+      "Głównym architektem osiedla był Tadeusz Mrówczyński.",
+      "Osiedle składa się z siedmiu bloków: trzech 18-kondygnacyjnych punktowców w technologii monolitycznej metodą ślizgu oraz czterech 11-kondygnacyjnych budynków w technologii wielkopłytowej „J”.",
+      "Osiedle ma 1020 mieszkań, zaplanowanych dla ponad 3 tys. mieszkańców.",
+      "Budynek szkolny, siedziba Szkoły Podstawowej nr 33, oddano do użytku w 1971 roku.",
+      "Osiedle miało służyć pracownikom Ministerstwa Obrony Narodowej."
+    ],
+    "ciekawostki": [
+      "Według Lecha Chmielewskiego, autora „Przewodnika warszawskiego” (1987), wysokie budynki widziane od wschodu po zmroku to „bez wątpienia jeden z ładniejszych widoków nowoczesnej warszawskiej architektury”."
+    ],
+    "summary_en": "Housing estate on the Warsaw escarpment in Mokotów, built in 1968–1975 with 1,020 flats in seven blocks. Its name comes from a nearby ski jump, and it was planned for Ministry of National Defence employees.",
+    "ludzie": [
+      {"kto": "Tadeusz Mrówczyński", "rola": "główny architekt osiedla", "wiki": null},
+      {"kto": "Lech Chmielewski", "rola": "autor „Przewodnika warszawskiego” (1987), cytowany w artykule", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szopy Niemieckie (wieś na terenie osiedla)", "Puławska-Skocznia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Skocznia (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Skocznia_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "skocznia-narciarska-czerniowiecka",
+    "nazwa": "Skocznia narciarska w Warszawie (Mokotów)",
+    "name_en": "Warsaw ski jump (Mokotów)",
+    "typ": "sport",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Czerniowiecka",
+    "adres_historyczny": null,
+    "lat": 52.1849,
+    "lon": 21.0279,
+    "lokalizacja": "dokladna",
+    "okres": "1959–ok. 2011",
+    "istnieje": false,
+    "fakty": [
+      "Budowę skoczni rozpoczęto w 1955 roku w związku z organizacją V Światowego Festiwalu Młodzieży i Studentów; projektantami byli Jerzy Kodelski, Jeremi Strachocki i Mieczysław Strzelecki.",
+      "Problemy natury geologicznej znacznie opóźniły prace; obiekt oddano do użytku we wrześniu 1959 roku, a na otwarcie rozegrano dwudniowy konkurs z udziałem ówczesnej polskiej kadry.",
+      "W latach 70. zeskok pokryto sprowadzonym z NRD igelitem, jako pierwszej skoczni w Polsce.",
+      "W 1975 roku rozpoczęto modernizację, która trwała aż do 1980 roku.",
+      "W maju 1989 roku obiekt po raz ostatni gościł zawody w skokach narciarskich.",
+      "Skocznię rozebrano na przełomie 2010 i 2011 roku, decyzją powiatowego inspektora nadzoru budowlanego."
+    ],
+    "ciekawostki": [
+      "Była to największa skocznia narciarska, jaka kiedykolwiek funkcjonowała w Warszawie; obiekty w Lesie Bielańskim i na Agrykoli były mniejsze."
+    ],
+    "summary_en": "Ski jump on Czerniowiecka street in Mokotów, built from 1955 and opened in September 1959. It hosted national training and competitions until 1989 and was dismantled around 2010–2011.",
+    "ludzie": [
+      {"kto": "Jerzy Kodelski", "rola": "projektant skoczni", "wiki": null},
+      {"kto": "Jeremi Strachocki", "rola": "projektant skoczni", "wiki": null},
+      {"kto": "Mieczysław Strzelecki", "rola": "projektant skoczni", "wiki": null},
+      {"kto": "Czesław Cywiński", "rola": "odpowiadał za konstrukcję skoczni", "wiki": null}
+    ],
+    "dawne_nazwy": ["Skarpa (potocznie)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Skocznia narciarska w Warszawie (Mokotów)", "url": "https://pl.wikipedia.org/wiki/Skocznia_narciarska_w_Warszawie_%28Mokot%C3%B3w%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt zlikwidowany; w rekordzie zapisany jako nieistniejący."
+  },
+  {
+    "id": "spolecznosc-chrzescijanska-pulawska",
+    "nazwa": "Społeczność Chrześcijańska „Puławska” w Warszawie",
+    "name_en": "Christian Community \"Puławska\" building, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Puławska (numer nie pada w artykule)",
+    "adres_historyczny": null,
+    "lat": 52.1945,
+    "lon": 21.0237,
+    "lokalizacja": "dokladna",
+    "okres": "1947–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1947 roku zakupiono zniszczoną w 80% kamienicę przy ul. Puławskiej, dzięki środkom przekazanym przez Konstantego Jaroszewicza ze Stanów Zjednoczonych.",
+      "18 kwietnia 1948 roku oficjalnie otwarto centralę Zjednoczenia Kościołów Chrystusowych oraz nową kaplicę o powierzchni ok. 60 m² na I piętrze budynku.",
+      "W dniach 13–15 sierpnia 1948 roku zorganizowano tu XII Ogólnopolski Zjazd Zjednoczenia Kościołów Chrystusowych.",
+      "19 września 1950 roku w ramach Akcji „B” kaplicę wraz z kancelarią zamknięto i opieczętowano, a zborowi odebrano prawo do odbudowy kamienicy.",
+      "W 1967 roku otwarto nową, docelową kaplicę na parterze budynku zborowego od strony ul. Malczewskiego.",
+      "W 1986 roku odzyskano dla Kościoła prawo własności nieruchomości przy ul. Puławskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Church of Christ congregation's Warsaw centre in a tenement on ul. Puławska, bought and rebuilt from 1947. Its chapel was sealed in 1950 and reopened in 1967 on the Malczewskiego side.",
+    "ludzie": [
+      {"kto": "Konstanty Jaroszewicz", "rola": "fundator zakupu kamienicy (środki z USA)", "wiki": null},
+      {"kto": "Aleksander Jurkowski", "rola": "kierownik prac odbudowy kamienicy (1947)", "wiki": null},
+      {"kto": "Jerzy Sacewicz", "rola": "pastor przełożony zboru", "wiki": null},
+      {"kto": "Bronisław Hury", "rola": "administrator zboru; odzyskał własność nieruchomości w 1986 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["II Zbór Zjednoczonego Kościoła Ewangelicznego w Warszawie (1953)", "Chrześcijańska Społeczność w Warszawie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Społeczność Chrześcijańska „Puławska” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Spo%C5%82eczno%C5%9B%C4%87_Chrze%C5%9Bcija%C5%84ska_%E2%80%9EPu%C5%82awska%E2%80%9D_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Numer budynku nie pada w artykule; rekord opisuje budynek zboru przy ul. Puławskiej."
+  },
+  {
+    "id": "stadion-gwardii-warszawa",
+    "nazwa": "Stadion Gwardii Warszawa",
+    "name_en": "Gwardia Warszawa Stadium",
+    "typ": "sport",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Racławicka 132",
+    "adres_historyczny": null,
+    "lat": 52.199051,
+    "lon": 20.991883,
+    "lokalizacja": "dokladna",
+    "okres": "lata 50. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stadion powstał w latach 50. XX wieku, a w 1955 roku został przekazany w użytkowanie Gwardii Warszawa.",
+      "W 1971 roku stadion oddano w zarząd Ministerstwu Spraw Wewnętrznych, a od 2007 roku zarządzała nim Komenda Główna Policji.",
+      "W dniach 27–29 lipca 1989 roku obiekt był areną IX Międzynarodowych Zawodów Straży Pożarnych oraz VII Międzynarodowych Zawodów Młodzieżowych Drużyn Pożarniczych.",
+      "W 1993 roku bieżnię wokół boiska zaadaptowano na tor żużlowy o długości 383 m.",
+      "W 2012 roku stadion zamknięto z powodu złego stanu technicznego, a od tego roku nie jest wykorzystywany w żaden sposób.",
+      "W 2017 roku przylegającą trzyhektarową działkę MSWiA przekazało agencji Frontex pod budowę jej nowej siedziby.",
+      "W 2024 roku pięciohektarową działkę ze stadionem przejęła Agencja Wywiadu."
+    ],
+    "ciekawostki": [
+      "Na stadionie grali m.in. Aerosmith (1994), Metallica (1999) i Iron Maiden (2008)."
+    ],
+    "summary_en": "Closed football and speedway stadium at ul. Racławicka 132 in Mokotów, built in the 1950s for Gwardia Warszawa. It has been closed since 2012 and the site was later handed to Frontex and state security services.",
+    "ludzie": [
+      {"kto": "Władysław Gollob", "rola": "zorganizował turniej sylwestrowy na torze żużlowym na przełomie 1999 i 2000 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stadion Gwardii Warszawa", "url": "https://pl.wikipedia.org/wiki/Stadion_Gwardii_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Stadion nieczynny. Artykuł nie podaje dokładnej daty turnieju Golloba poza „pod koniec 1999 roku”."
+  }
+]
