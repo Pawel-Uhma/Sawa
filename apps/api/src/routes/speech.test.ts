@@ -10,7 +10,12 @@ const appWith = (
   speech = createSpeechService({
     synthesize: async () => ({ audio: FAKE_MP3, contentType: "audio/mpeg" }),
   }),
-) => createApp({ corsOrigins: [], services: { routePlanner: createFakeRoutePlanner(), speech } });
+) =>
+  createApp({
+    corsOrigins: [],
+    debugPages: true,
+    services: { routePlanner: createFakeRoutePlanner(), speech },
+  });
 
 const speak = (app: ReturnType<typeof appWith>, body: unknown) =>
   app.request("/v1/speech", {
@@ -20,6 +25,19 @@ const speak = (app: ReturnType<typeof appWith>, body: unknown) =>
   });
 
 describe("POST /v1/speech", () => {
+  it("is not mounted outside debug pages", async () => {
+    const app = createApp({
+      corsOrigins: [],
+      services: { routePlanner: createFakeRoutePlanner() },
+    });
+    const res = await app.request("/v1/speech", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ text: "Cześć" }),
+    });
+    expect(res.status).toBe(404);
+  });
+
   it("returns mp3 audio", async () => {
     const res = await speak(appWith(), { text: "Cześć, jestem Sawa." });
     expect(res.status).toBe(200);
