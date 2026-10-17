@@ -18,10 +18,6 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
-  DEBUG_PAGES: z
-    .enum(["0", "1"])
-    .default("0")
-    .transform((v) => v === "1"),
   // Empty values (copied from .env.example) mean "not set": the API then serves fake places.
   SUPABASE_URL: z
     .string()
@@ -31,6 +27,25 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((s) => s || undefined),
+  /** OpenRouter key for Sawa's stories; without it a story is the place's facts read plainly. */
+  OPENROUTER_KEY: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
+  /** OpenRouter model id; defaults to DEFAULT_OPENROUTER_MODEL (Gemini Flash Lite). */
+  OPENROUTER_MODEL: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
+  /** ElevenLabs API key (Text to Speech permission); without it POST /v1/speech answers 502. */
+  ELEVENLABS_KEY: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
+  DEBUG_PAGES: z
+    .enum(["0", "1"])
+    .default("0")
+    .transform((v) => v === "1"),
 });
 
 export type Env = z.infer<typeof EnvSchema>;

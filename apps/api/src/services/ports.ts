@@ -1,6 +1,7 @@
 import type { LatLng } from "@sawa/shared";
 import type { BBox, Place, PlaceAlongLine, PlaceSummary } from "../domain/place";
 import type { Network } from "../domain/routing/types";
+import type { SpeechAudio } from "../domain/speech";
 
 /** Interfaces services depend on; adapters implement them (docs/11-zasady-pracy-i-kodu.md §4). */
 
@@ -24,3 +25,17 @@ export type TransitData = {
   serviceDate: string;
   attribution: string[];
 };
+
+export type LlmRequest = { system: string; user: string; maxTokens: number };
+
+/** Chat model behind Sawa's words. Answers JSON text; throws AppError on upstream failure. */
+export interface LlmProvider {
+  /** Model id, logged next to every story. */
+  readonly model: string;
+  complete(request: LlmRequest): Promise<string>;
+}
+
+/** Text-to-speech provider (ElevenLabs). Throws AppError on upstream failure or timeout. */
+export interface SpeechSynthesizer {
+  synthesize(text: string): Promise<SpeechAudio>;
+}

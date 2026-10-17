@@ -4,16 +4,24 @@ import { createFakePlacesRepository } from "./adapters/supabase/fake-places-repo
 import { AppError, toErrorBody } from "./lib/errors";
 import { createDebugRoutes } from "./routes/debug";
 import { healthRoutes } from "./routes/health";
-
 import { placeRoutes } from "./routes/places";
 import { createRouteRoutes } from "./routes/routes";
+import { createSpeechRoutes } from "./routes/speech";
+import { createStoryRoutes } from "./routes/stories";
 import type { RoutePlanner } from "./services/plan-route";
-import type { PlacesRepository } from "./services/ports";
+import type { LlmProvider, PlacesRepository } from "./services/ports";
+import { createDisabledSpeechService, type SpeechService } from "./services/speak";
+import { createStoryService } from "./services/tell-story";
 
 export type AppServices = {
   routePlanner: RoutePlanner;
   /** Defaults to the in-memory fake (tests, offline demo). */
   places?: PlacesRepository;
+  /** Missing → stories are the place's facts read plainly. */
+  llm?: LlmProvider;
+  /** Missing → POST /v1/speech and /v1/stories/audio answer UPSTREAM_ERROR. */
+  speech?: SpeechService;
+  onLlmError?: (err: unknown, placeId: string) => void;
 };
 
 export type AppConfig = {
@@ -27,6 +35,13 @@ export type AppConfig = {
 
 /** Mounts routes on services built by the caller (index.ts wires the real adapters). */
 export function createApp(config: AppConfig) {
+  const { services } = config;
+  const stories = createStoryService({
+    places: services.places ?? createFakePlacesRepository(),
+    llm: services.llm,
+    onLlmError: services.onLlmError,
+  });
+  const speech = services.speech ?? createDisabledSpeechService();
   const previewPattern = config.corsPreviewPattern ? new RegExp(config.corsPreviewPattern) : null;
 
   const app = new Hono()
@@ -46,8 +61,10 @@ export function createApp(config: AppConfig) {
     })
     .notFound((c) => c.json(toErrorBody("NOT_FOUND", "Route not found"), 404))
     .route("/", healthRoutes)
-    .route("/", createRouteRoutes(config.services.routePlanner))
-    .route("/", placeRoutes(config.services.places ?? createFakePlacesRepository()));
+    .route("/", createRouteRoutes(services.routePlanner))
+    .route("/", placeRoutes(services.places ?? createFakePlacesRepository()))
+    .route("/", createSpeechRoutes(speech))
+    .route("/", createStoryRoutes(stories, speech));
 
   if (config.debugPages) app.route("/", createDebugRoutes());
   return app;

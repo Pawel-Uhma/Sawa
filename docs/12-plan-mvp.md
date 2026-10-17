@@ -35,7 +35,7 @@ Zbiory z dane.um.warszawa.pl w MVP: przystanki, linie na przystanku, odjazdy lin
 | Backend | **Hono na Node**, `@hono/zod-validator`, klient `hc` w web | Typy kontraktu przechodzą do web bez generowania kodu |
 | Kontrakt | **zod** w `packages/shared` | Jedno źródło prawdy dla API i web |
 | Baza | **Supabase** (Postgres + PostGIS), projekt `arvrzfqtqlrasftvvkaq` | Ustalone 17.10; PostGIS do „miejsca przy trasie” |
-| LLM | Port `LlmProvider`: Bielik (główny), Claude (zapas), `fake` (testy i demo offline) | Bielik to plus u jury |
+| LLM | Port `LlmProvider`: teraz OpenRouter z `google/gemini-3.5-flash-lite` (tani, szybki; model zmienia `OPENROUTER_MODEL`), Bielik do dodania; bez klucza opowieść z faktów miejsca | Bielik to plus u jury |
 | Lint, testy, CI | Biome, Vitest, GitHub Actions | Szybkie, jedna konfiguracja |
 | Hosting | Vercel (web), **Railway** (api), Supabase; regiony UE **[Z]** | |
 
@@ -78,6 +78,7 @@ Warstwy i zależności: [11-zasady-pracy-i-kodu.md §4](11-zasady-pracy-i-kodu.m
 | `POST /v1/routes/plan` | `{ origin: {lat,lng}, durationMin, interests[] }` | `Route` | M4 | R1 |
 | `GET /v1/routes/demo` | — | stała `Route` | M6 | R1 |
 | `POST /v1/stories` | `{ placeId, interests[], targetSec }` | `Story { text, sources[], cached }` | M5 | R4 |
+| `POST /v1/stories/audio` | jak wyżej | `audio/mpeg`: ta sama opowieść głosem Sawy (ElevenLabs) | M5 | R4 |
 
 ```ts
 type LatLng = { lat: number; lng: number };
