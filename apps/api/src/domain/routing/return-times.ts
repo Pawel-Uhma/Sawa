@@ -41,7 +41,7 @@ export function computeReturnTimes(
 }
 
 /** Small binary heap keyed by cost. */
-class MinQueue {
+export class MinQueue {
   private items: [string, number][] = [];
 
   push(key: string, cost: number) {

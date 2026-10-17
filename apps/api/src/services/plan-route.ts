@@ -1,16 +1,17 @@
-import type { LatLng, PlanRouteRequest, Route } from "@sawa/shared";
+import { fromLngLat, type LatLng, type PlanRouteRequest, type Route } from "@sawa/shared";
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
-import { DEFAULT_SEARCH_OPTIONS, planRide } from "../domain/routing/beam-search";
+import { DEFAULT_SEARCH_OPTIONS, planRide, type Ride } from "../domain/routing/beam-search";
 import { buildRoute, buildWalkRoute } from "../domain/routing/build-route";
+import { planFastest } from "../domain/routing/fastest";
 import { computePlaceHits } from "../domain/routing/place-hits";
-import { RICHNESS_EXPONENT } from "../domain/routing/score";
-import { STORY_GAP_SEC } from "../domain/routing/select-stories";
+import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
+import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
-import { planWalk } from "../domain/routing/walk-tour";
+import { placesAlong, planWalk } from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
-import type { DepartureSource, PlacesRepository, TransitData } from "./ports";
+import type { DepartureSource, PlacesRepository, TransitData, WalkPathSource } from "./ports";
 
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
@@ -69,6 +70,8 @@ export function createRoutePlanner(deps: {
   /** Used when `places` fails or times out (apps/api/data/places.geojson). */
   fallbackPlaces?: PlacesSource;
   departures?: DepartureSource;
+  /** Walking legs follow streets and footways; without it (or when it fails) straight lines. */
+  walkPaths?: WalkPathSource;
   logger?: PlannerLogger;
   /** Milliseconds; for the cache TTL. */
   clock?: () => number;
@@ -148,94 +151,186 @@ export function createRoutePlanner(deps: {
     return entry.prepared;
   }
 
-  return {
-    async plan(request, now) {
-      const { hitsByPattern, placesById } = await prepare(
-        reachableBbox(
-          request.destination ? [request.origin, request.destination] : [request.origin],
-          request.durationMin,
-        ),
-      );
-      const budgetSec = request.durationMin * 60;
-      const interests = new Set(request.interests);
-      const prefs = {
-        richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
-        heard: request.heard && new Map(Object.entries(request.heard)),
-      };
-      const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
-      let ride = planRide({
+  /** Where the ride boards first (end of the walk from the origin). */
+  function rideStartStop(ride: Ride): LatLng | undefined {
+    const first = ride.legs[0];
+    const stop = first && network.patterns.get(first.patternId)?.stops[first.boardIndex];
+    return stop && network.stops.get(stop.stopId)?.position;
+  }
+
+  /** Places passed on the walk from the origin to the first stop (stories before boarding). */
+  function walkInPlacesOf(
+    ride: Ride,
+    origin: LatLng,
+    interests: ReadonlySet<string>,
+    prefs: ScorePrefs,
+    placesById: Map<string, PlacePoint>,
+  ) {
+    const firstStop = rideStartStop(ride);
+    return firstStop
+      ? placesAlong(
+          placesById.values(),
+          { from: origin, to: firstStop, startSec: 0, sec: ride.walkSec },
+          { interests, prefs, skip: new Set(ride.places.map((p) => p.placeId)) },
+        )
+      : [];
+  }
+
+  /** Puts each leg on a real departure from the ZTM timetable, when there is a source. */
+  async function withDepartures(ride: Ride, now: Date): Promise<Ride> {
+    const source = deps.departures;
+    if (!source) return ride;
+    // All legs at once; applyDepartures then picks the right one for each in order.
+    const perLeg = await Promise.all(
+      ride.legs.map(async (leg) => {
+        const pattern = network.patterns.get(leg.patternId);
+        const stop = pattern?.stops[leg.boardIndex];
+        if (!pattern || !stop) return undefined;
+        const times = await source.departures(stop.stopId, pattern.line, now);
+        return times?.map((d) => (d.getTime() - now.getTime()) / 1000);
+      }),
+    );
+    return applyDepartures(ride, perLeg, DEFAULT_SEARCH_OPTIONS.transferSec);
+  }
+
+  /**
+   * Walking legs drawn along real paths. Only the shape changes: times stay the planner's
+   * (straight line × detour factor), so place ETAs and story windows still match.
+   */
+  async function withWalkPaths(route: Route): Promise<Route> {
+    const source = deps.walkPaths;
+    if (!source) return route;
+    const legs = await Promise.all(
+      route.legs.map(async (leg) => {
+        if (leg.mode !== "walk" || leg.lngLats.length < 2) return leg;
+        const path = await source.path(leg.lngLats.map(fromLngLat));
+        return path ? { ...leg, lngLats: path } : leg;
+      }),
+    );
+    return { ...route, legs };
+  }
+
+  /** Plans with straight walking legs; `plan` then draws them along paths. */
+  async function planStraight(request: PlanRouteRequest, now: Date): Promise<Route> {
+    const { hitsByPattern, placesById } = await prepare(
+      reachableBbox(
+        request.destination ? [request.origin, request.destination] : [request.origin],
+        request.durationMin ?? 0,
+      ),
+    );
+    const interests = new Set(request.interests);
+    const prefs = {
+      richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
+      heard: request.heard && new Map(Object.entries(request.heard)),
+    };
+    const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
+    const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
+    const story = { attribution, storyGapSec, storyMaxSec, now, placesById };
+
+    /**
+     * The fastest way to the destination as a route: a walk when that is quicker, or
+     * undefined for a walk with `rideOnly`.
+     */
+    const fastestRoute = async (destination: LatLng, rideOnly = false) => {
+      const fastest = planFastest({
         network,
         hitsByPattern,
         placesById,
         origin: request.origin,
+        destination,
+        interests,
+        prefs,
+      });
+      if (fastest.kind === "walk") {
+        if (rideOnly) return undefined;
+        return buildWalkRoute({
+          ...story,
+          walk: fastest.walk,
+          origin: request.origin,
+          destination,
+        });
+      }
+      const ride = await withDepartures(fastest.ride, now);
+      return buildRoute({
+        ...story,
+        ride,
+        network,
+        origin: request.origin,
+        end: destination,
+        walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
+      });
+    };
+
+    // No duration with a destination: the fastest way there.
+    if (request.durationMin === undefined) {
+      return (await fastestRoute(request.destination as LatLng)) as Route;
+    }
+
+    const budgetSec = request.durationMin * 60;
+    const planned = planRide({
+      network,
+      hitsByPattern,
+      placesById,
+      origin: request.origin,
+      budgetSec,
+      interests,
+      prefs,
+      returnToStart: request.returnToStart,
+      destination: request.destination,
+    });
+
+    const ride = planned && (await withDepartures(planned, now));
+
+    // Short rides: walking to a stop and waiting can take the whole time, so a walk
+    // past places competes with the ride (a ride counts only if it fits the time).
+    if (request.durationMin < WALK_UNDER_MIN) {
+      const walk = planWalk({
+        places: [...placesById.values()],
+        origin: request.origin,
+        end: request.returnToStart ? request.origin : request.destination,
         budgetSec,
         interests,
         prefs,
-        returnToStart: request.returnToStart,
-        destination: request.destination,
       });
-
-      if (ride && deps.departures) {
-        const source = deps.departures;
-        const planned = ride;
-        // All legs at once; applyDepartures then picks the right one for each in order.
-        const perLeg = await Promise.all(
-          planned.legs.map(async (leg) => {
-            const pattern = network.patterns.get(leg.patternId);
-            const stop = pattern?.stops[leg.boardIndex];
-            if (!pattern || !stop) return undefined;
-            const times = await source.departures(stop.stopId, pattern.line, now);
-            return times?.map((d) => (d.getTime() - now.getTime()) / 1000);
-          }),
-        );
-        ride = applyDepartures(planned, perLeg, DEFAULT_SEARCH_OPTIONS.transferSec);
-      }
-
-      // Short rides: walking to a stop and waiting can take the whole time, so a walk
-      // past places competes with the ride (a ride counts only if it fits the time).
-      if (request.durationMin < WALK_UNDER_MIN) {
-        const walk = planWalk({
-          places: [...placesById.values()],
+      const rideFits =
+        !!ride &&
+        ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&
+        ride.endsAtDestination !== false;
+      if (walk && (!ride || !rideFits || walk.score > ride.score)) {
+        return buildWalkRoute({
+          ...story,
+          walk,
           origin: request.origin,
-          end: request.returnToStart ? request.origin : request.destination,
-          budgetSec,
-          interests,
-          prefs,
+          destination: request.destination,
         });
-        const rideFits =
-          !!ride &&
-          ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&
-          ride.endsAtDestination !== false;
-        if (walk && (!ride || !rideFits || walk.score > ride.score)) {
-          return buildWalkRoute({
-            walk,
-            placesById,
-            now,
-            attribution,
-            storyGapSec,
-            origin: request.origin,
-            destination: request.destination,
-          });
-        }
       }
-      if (!ride) {
-        throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
-      }
+    }
+    if (!ride) {
+      throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
+    }
+    // A sightseeing ride that cannot reach the destination: rather the fastest ride there.
+    if (request.destination && ride.endsAtDestination === false) {
+      const fastest = await fastestRoute(request.destination, true);
+      if (fastest) return fastest;
+    }
 
-      // Walking legs to the first stop and from the last one to where the user ends.
-      const end = request.returnToStart
-        ? ride.endsAtStart && request.origin
-        : ride.endsAtDestination && request.destination;
-      return buildRoute({
-        ride,
-        network,
-        placesById,
-        now,
-        attribution,
-        storyGapSec,
-        origin: request.origin,
-        end: end || undefined,
-      });
+    // Walking legs to the first stop and from the last one to where the user ends.
+    const end = request.returnToStart
+      ? ride.endsAtStart && request.origin
+      : ride.endsAtDestination && request.destination;
+    return buildRoute({
+      ...story,
+      ride,
+      network,
+      origin: request.origin,
+      end: end || undefined,
+      walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
+    });
+  }
+
+  return {
+    async plan(request, now) {
+      return withWalkPaths(await planStraight(request, now));
     },
   };
 }

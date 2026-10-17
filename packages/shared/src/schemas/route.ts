@@ -7,6 +7,9 @@ import { LatLngSchema } from "./common";
 export const MIN_DURATION_MIN = 5;
 export const MAX_DURATION_MIN = 240;
 
+/** A story never runs longer than the longest window the planner gives (docs/12-plan-mvp.md §8). */
+export const MAX_STORY_SEC = 600;
+
 /** Onboarding answers (keys as in apps/web `lib/onboarding.ts`). */
 export const FAMILIARITY = ["first_time", "know_a_bit", "local"] as const;
 export type Familiarity = (typeof FAMILIARITY)[number];
@@ -16,7 +19,11 @@ export type StoryStyle = (typeof STORY_STYLES)[number];
 export const PlanRouteRequestSchema = z
   .object({
     origin: LatLngSchema,
-    durationMin: z.number().int().min(MIN_DURATION_MIN).max(MAX_DURATION_MIN),
+    /**
+     * How long the ride should take. Left out with a `destination`: the fastest way there
+     * (the client can show it first and use its `totalMin` as the shortest choice).
+     */
+    durationMin: z.number().int().min(MIN_DURATION_MIN).max(MAX_DURATION_MIN).optional(),
     interests: z.array(InterestSchema).min(1).max(5),
     /** Loop: the ride ends at a stop near the origin. */
     returnToStart: z.boolean().default(false),
@@ -38,6 +45,10 @@ export const PlanRouteRequestSchema = z
   .refine((r) => !(r.returnToStart && r.destination), {
     message: "Podaj destination albo returnToStart, nie oba",
     path: ["destination"],
+  })
+  .refine((r) => r.durationMin !== undefined || r.destination !== undefined, {
+    message: "Podaj durationMin albo destination (najszybsza trasa do celu)",
+    path: ["durationMin"],
   });
 /** What a client sends; `returnToStart` and `destination` may be left out. */
 export type PlanRouteRequest = z.input<typeof PlanRouteRequestSchema>;
@@ -52,7 +63,10 @@ export type Stop = z.infer<typeof StopSchema>;
 export const LegSchema = z.object({
   /** Empty for a walk. */
   line: z.string(),
-  /** "walk": on foot, straight segments (to the first stop, from the last one, or a whole walk). */
+  /**
+   * "walk": on foot (to the first stop, from the last one, or a whole walk), along streets and
+   * footways; straight segments when the walking router is unavailable.
+   */
   mode: z.enum(["tram", "bus", "walk"]),
   /** Direction of the line, or where a walk ends. */
   headsign: z.string(),
@@ -66,7 +80,7 @@ export const LegSchema = z.object({
    */
   realDeparture: z.boolean().optional(),
   durationMin: z.number().nonnegative(),
-  /** Shape of the ride, [lng, lat] pairs for MapLibre. */
+  /** Shape of the ride or walk, [lng, lat] pairs for MapLibre. */
   lngLats: z.array(z.tuple([z.number(), z.number()])),
 });
 export type Leg = z.infer<typeof LegSchema>;
@@ -77,8 +91,11 @@ export const RoutePlaceSchema = z.object({
   position: LatLngSchema,
   /** Seconds from the start of the ride until the place is outside the window. */
   etaSec: z.number().nonnegative(),
-  /** Seconds until the next place; how long the story may last. */
-  windowSec: z.number().nonnegative(),
+  /**
+   * How long the story may last: seconds until the next place, at least the story style's
+   * minimum gap (also for the last place) and at most its maximum (≤ MAX_STORY_SEC).
+   */
+  windowSec: z.number().nonnegative().max(MAX_STORY_SEC),
   legIndex: z.number().int().nonnegative(),
   distanceM: z.number().nonnegative(),
 });
