@@ -9,6 +9,7 @@
 - Nowe: [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) (zasady kodu i współpracy) i [12-plan-mvp.md](12-plan-mvp.md) (stack, kontrakt API, harmonogram). Każdy czyta i zgłasza niezgodę z założeniami [Z] (T-64).
 - Szkielet monorepo gotowy (T-04): `pnpm install && pnpm dev`. Plan MVP przycięty do listy MVP z PRD, dodatki w `todo.md` w sekcji „Poza MVP”.
 - Najbliższe: wpisanie git user.name i ról do `zespol.md` (T-08), inicjalizacja repo aplikacji (T-04), zdjęcie decyzji o API Bielika i Supabase (T-01, T-02).
+- Plan bazy miejsc w [13-plan-bazy.md](13-plan-bazy.md) (Jasiek, 13:00): baza Supabase pusta, PostGIS do włączenia; 13:10: schemat i RPC w Supabase (T-20), 13:08: dane załadowane (326 miejsc, 351 zdjęć, T-21). R3 i R4 mogą czytać przez RPC `places_in_bbox`, `place_detail`, R1 przez `places_near_line` (Jasiek).
 
 ## Zablokowane
 
@@ -20,6 +21,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 | Pytanie | Kto rozstrzyga | Gdzie szukać kontekstu |
 |---|---|---|
+| Lista zainteresowań (8 kluczy) i reguły przypisania w seedzie | R3 + R2 | [13-plan-bazy.md §5](13-plan-bazy.md) |
 | Potwierdzenie stacku z planu MVP: Hono na Railway + monorepo pnpm, 4 role (R5 → R2) | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) §2, §11 |
 | Mapa: Mapbox (decyzja R3, T-65) czy MapLibre (plan MVP)? Konflikt po scaleniu 17.10 | R3 (Paweł) | [05-plan-architektury.md](05-plan-architektury.md), [12-plan-mvp.md](12-plan-mvp.md) |
 | Skąd kolejność przystanków linii (GTFS?) | R1, 13:30 | [12-plan-mvp.md](12-plan-mvp.md) §7, P1 |
