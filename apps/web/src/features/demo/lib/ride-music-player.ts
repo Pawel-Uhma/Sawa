@@ -201,7 +201,7 @@ function crackle(ctx: AudioContext, to: AudioNode): AudioBufferSourceNode {
   const data = buffer.getChannelData(0);
   for (let i = 0; i < data.length; i++) {
     data[i] =
-      Math.random() < 0.0004 ? (Math.random() * 2 - 1) * 0.6 : (Math.random() * 2 - 1) * 0.02;
+      Math.random() < 0.00025 ? (Math.random() * 2 - 1) * 0.5 : (Math.random() * 2 - 1) * 0.01;
   }
   const source = ctx.createBufferSource();
   source.buffer = buffer;
@@ -210,7 +210,8 @@ function crackle(ctx: AudioContext, to: AudioNode): AudioBufferSourceNode {
   highpass.type = "highpass";
   highpass.frequency.value = 1200;
   const amp = ctx.createGain();
-  amp.gain.value = 0.25;
+  // Ledwo słyszalny: klimat płyty, nie szum, który zagłusza pianino
+  amp.gain.value = 0.08;
   source.connect(highpass).connect(amp).connect(to);
   source.start();
   return source;
