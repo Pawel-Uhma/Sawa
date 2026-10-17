@@ -1169,3 +1169,86 @@
 > +
 >  - [x] **T-07** Zasady pracy i mózg zespołu — zrobione 17.10 ok. 11:30
 
+
+### 2026-10-17 11:39 · Pawel
+
+> Ja (pawel) bede sie narazie zajmowal frontendem - lubie jak w mozgu jest folder do ktorego agent zapisuje screeny propzycji UI UX i wyniki pracy.
+
+
+**AI:** Paweł wpisany jako R3 (frontend i mapa) w `docs/zespol.md`. Utworzony folder `docs/ui/` (`propozycje/`, `wyniki/`, dziennik zrzutów w `README.md`), dodany do mapy w `docs/README.md` i do zasad w karcie R3.
+
+### 2026-10-17 11:40 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/README.md                  | 1 +
+>  docs/ai-log.md                  | 7 +++++++
+>  docs/role/R3-frontend-i-mapa.md | 1 +
+>  docs/zespol.md                  | 2 +-
+>  4 files changed, 10 insertions(+), 1 deletion(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/README.md b/docs/README.md
+> index c284357..c3d2a72 100644
+> --- a/docs/README.md
+> +++ b/docs/README.md
+> @@ -50,6 +50,7 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
+>  | [02-analiza-wyzwan.md](02-analiza-wyzwan.md) | Porównanie trzech wyzwań |
+>  | [pitch/](pitch/) | Pitch deck i materiały wizualne |
+>  | [awatar/](awatar/) | Szkice awatara Sawy (do dyskusji, nie elementy projektu) |
+> +| [ui/](ui/README.md) | Zrzuty ekranu: propozycje UI/UX i wyniki pracy frontendu (R3) |
+>  
+>  **Dane i historia**
+>  
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index b23a4be..bef31a0 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1169,3 +1169,10 @@
+>  > +
+>  >  - [x] **T-07** Zasady pracy i mózg zespołu — zrobione 17.10 ok. 11:30
+>  
+> +
+> +### 2026-10-17 11:39 · Pawel
+> +
+> +> Ja (pawel) bede sie narazie zajmowal frontendem - lubie jak w mozgu jest folder do ktorego agent zapisuje screeny propzycji UI UX i wyniki pracy.
+> +
+> +
+> +**AI:** Paweł wpisany jako R3 (frontend i mapa) w `docs/zespol.md`. Utworzony folder `docs/ui/` (`propozycje/`, `wyniki/`, dziennik zrzutów w `README.md`), dodany do mapy w `docs/README.md` i do zasad w karcie R3.
+> diff --git a/docs/role/R3-frontend-i-mapa.md b/docs/role/R3-frontend-i-mapa.md
+> index 7851ad9..ec16ee1 100644
+> --- a/docs/role/R3-frontend-i-mapa.md
+> +++ b/docs/role/R3-frontend-i-mapa.md
+> @@ -11,6 +11,7 @@
+>  - Minimum na pitch: ekran startowy, slider, mapa, planowanie trasy, dane o miejscach i ZTM. Bez logowania.
+>  - Każdy ekran działa w widoku telefonu: 16 px marginesu, bez poziomego scrolla.
+>  - Pierwszy commit to czysta instalacja z generatora, potem małe commity.
+> +- Zrzuty ekranu: propozycje UI/UX do [ui/propozycje/](../ui/propozycje/), stan po skończonym zadaniu do [ui/wyniki/](../ui/wyniki/), każdy z linią w dzienniku [ui/README.md](../ui/README.md).
+>  
+>  **Zadania:** tag `R3` w [todo.md](../todo.md). Zakładasz repo (T-04) jako pierwszy, bo od niego zależy reszta.
+>  
+> diff --git a/docs/zespol.md b/docs/zespol.md
+> index 75f8384..a3be49e 100644
+> --- a/docs/zespol.md
+> +++ b/docs/zespol.md
+> @@ -6,7 +6,7 @@ Każdy agent (Claude Code na laptopie) sam rozpoznaje, kim jest: hook `.claude/h
+>  
+>  | Osoba | Git user.name | Rola |
+>  |---|---|---|
+> -| Paweł | Pawel | _do ustalenia_ |
+> +| Paweł | Pawel | R3 |
+>  | Antek | _wpisać_ | _do ustalenia_ |
+>  | Szczepan | _wpisać_ | _do ustalenia_ |
+>  | Janek | _wpisać_ | _do ustalenia_ |
+> new file: docs/ui/README.md
+> new file: docs/ui/propozycje/.gitkeep
+> new file: docs/ui/wyniki/.gitkeep
+

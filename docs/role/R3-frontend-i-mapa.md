@@ -11,6 +11,7 @@
 - Minimum na pitch: ekran startowy, slider, mapa, planowanie trasy, dane o miejscach i ZTM. Bez logowania.
 - Każdy ekran działa w widoku telefonu: 16 px marginesu, bez poziomego scrolla.
 - Pierwszy commit to czysta instalacja z generatora, potem małe commity.
+- Zrzuty ekranu: propozycje UI/UX do [ui/propozycje/](../ui/propozycje/), stan po skończonym zadaniu do [ui/wyniki/](../ui/wyniki/), każdy z linią w dzienniku [ui/README.md](../ui/README.md).
 
 **Zadania:** tag `R3` w [todo.md](../todo.md). Zakładasz repo (T-04) jako pierwszy, bo od niego zależy reszta.
 
