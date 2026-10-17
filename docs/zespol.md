@@ -7,8 +7,8 @@ Każdy agent (Claude Code na laptopie) sam rozpoznaje, kim jest: hook `.claude/h
 | Osoba | Git user.name | Rola |
 |---|---|---|
 | Paweł | Pawel | R3 |
-| Antek | _wpisać_ | _do ustalenia_ |
-| Szczepan | _wpisać_ | _do ustalenia_ |
+| Antek | _wpisać_ | R4 |
+| Szczepan | _wpisać_ | R1 |
 | Janek (Jasiek) | Jasiek | R2 |
 
 Kolumna „Rola” to kod roli: `R1`, `R2`, `R3` albo `R4`. Zespół ma 4 osoby, więc R5 jest rozwiązana, a jej zadania przejmuje R2 ([12-plan-mvp.md](12-plan-mvp.md) §11). Jedna osoba może mieć jedną rolę główną. Podział to propozycja z [06-plan-dnia.md](06-plan-dnia.md), zespół może ją zmienić na spotkaniu (zmieniaj wtedy tę tabelę i karty w `role/`).

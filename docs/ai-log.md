@@ -3995,3 +3995,435 @@
 >  | Tryb „z wysiadaniem” (muzea): MVP czy po MVP | zespół | [10-prd.md](10-prd.md) |
 >  | Scraping muzeów i wystaw pod zainteresowania | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 
+
+### 2026-10-17 13:26 · Pawel
+
+> przanalizuj jakie sa najlepsze i najladniejsze onboardingi aplikacji ktore przyciagaja najwiecej uzytkownikow, porownaj z Sawa - jakie powinien miec kroki , jakie pytania , co wpisywac, jakie animacje - wszystko ma wygladac profesjonalnie w stylu sawy. Uzyj fal.ai do generowania grafik i syrenny na ten onboarding oraz innych ikon jezeli potrzebne , wszystko ma dzialac plynnie na telefonie i desktopie z animacjami /apple-design
+
+
+### 2026-10-17 13:27 · Pawel
+
+> UI masz tutaj : [Image #1] w tym stylu ma byc reszta mocka i aplikacji
+
+
+### 2026-10-17 13:27 · Pawel
+
+> ma dzialac mobile native obsugiwac gesty i transitions oraz animacje
+
+
+### 2026-10-17 13:29 · Pawel
+
+> ustaw artefakt tak zeby juz dzialal i mial proste slidery i do wyboru glosy, przygotuj pare kwestii zebym mogl go dotsroic
+
+
+### 2026-10-17 13:30 · Pawel
+
+> przetworz spotkanie: (transkrypt rozmowy zespołu ok. 13:30, nie zapisujemy go; podsumowanie w spotkania/2026-10-17-1330-postep-i-podzial.md)
+
+**AI:** Podsumowanie spotkania w `docs/spotkania/2026-10-17-1330-postep-i-podzial.md`; zaktualizowane `stan.md` (otwarte decyzje: PR czy push na main, dziennik AI, kto prezentuje, limit miejsc w planerze) i `todo.md` (T-70–T-74). Transkrypt usunięty z dziennika.
+
+### 2026-10-17 13:31 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/app/globals.css | 219 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----------
+>  docs/05-plan-architektury.md |   2 +-
+>  docs/ai-log.md               |  26 +++++++++++
+>  docs/stan.md                 |   9 +++-
+>  docs/todo.md                 |  10 +++-
+>  docs/zespol.md               |   4 +-
+>  6 files changed, 238 insertions(+), 32 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/app/globals.css b/apps/web/src/app/globals.css
+> index 811eb31..99d4df1 100644
+> --- a/apps/web/src/app/globals.css
+> +++ b/apps/web/src/app/globals.css
+> @@ -11,6 +11,7 @@
+>    --color-tekst-2: #4c6462;
+>    --color-tekst-3: #8a9c9a;
+>    --color-tlo-2: #f4f6f5;
+> +  --color-mapa: #eef3f0;
+>    --font-sans: var(--font-plus);
+>    --font-logo: var(--font-fredoka);
+>  }
+> @@ -19,76 +20,213 @@
+>    --background: #eef3f0;
+>  }
+>  
+> +html,
+> +body {
+> +  height: 100%;
+> +  overscroll-behavior: none;
+> +}
+> +
+>  body {
+>    background: var(--background);
+>    color: var(--color-tekst);
+>    font-family: var(--font-plus), system-ui, sans-serif;
+>    -webkit-font-smoothing: antialiased;
+> +  -webkit-tap-highlight-color: transparent;
+> +}
+> +
+> +button {
+> +  cursor: pointer;
+> +  -webkit-user-select: none;
+> +  user-select: none;
+> +  touch-action: manipulation;
+>  }
+>  
+> -/* Szklana karta: półprzezroczysta, z rozmyciem tła */
+> -.szklo {
+> -  background: rgba(255, 255, 255, 0.92);
+> -  backdrop-filter: blur(18px) saturate(1.4);
+> -  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+> -  border: 1px solid rgba(255, 255, 255, 0.85);
+> +/* Materiał: szkło na mapie (makiety, docs/ui/propozycje/html/_wspolne.css) */
+> +@utility szklo {
+> +  background: rgba(255, 255, 255, 0.74);
+> +  backdrop-filter: blur(24px) saturate(1.8);
+> +  -webkit-backdrop-filter: blur(24px) saturate(1.8);
+> +  border: 1px solid rgba(255, 255, 255, 0.7);
+> +  box-shadow:
+> +    0 1px 2px rgba(16, 43, 42, 0.06),
+> +    0 8px 24px rgba(16, 43, 42, 0.1);
+> +
+> +  @media (prefers-reduced-transparency: reduce) {
+> +    background: #fff;
+> +    backdrop-filter: none;
+> +    -webkit-backdrop-filter: none;
+> +  }
+> +}
+> +
+> +/* Gruby materiał: karty i panele (większa powierzchnia = mocniejsze rozmycie i cień) */
+> +@utility karta {
+> +  background: rgba(255, 255, 255, 0.94);
+> +  backdrop-filter: blur(30px) saturate(1.8);
+> +  -webkit-backdrop-filter: blur(30px) saturate(1.8);
+> +  border: 1px solid rgba(255, 255, 255, 0.8);
+>    box-shadow:
+>      0 2px 4px rgba(16, 43, 42, 0.06),
+> -    0 18px 40px rgba(16, 43, 42, 0.16);
+> +    0 18px 40px rgba(16, 43, 42, 0.18);
+> +
+> +  @media (prefers-reduced-transparency: reduce) {
+> +    background: #fff;
+> +    backdrop-filter: none;
+> +    -webkit-backdrop-filter: none;
+> +  }
+>  }
+>  
+> -/* Wejście ekranu: krótkie, fizyczne przesunięcie w górę */
+> -@keyframes wejdz {
+> +@utility etykieta {
+> +  font-size: 12px;
+> +  font-weight: 700;
+> +  letter-spacing: 0.06em;
+> +  text-transform: uppercase;
+> +  color: var(--color-tekst-3);
+> +}
+> +
+> +/* Mgiełka pod paskiem statusu, gdy pod spodem jest mapa */
+> +.mgla {
+> +  background: linear-gradient(rgba(238, 243, 240, 0.95) 30%, rgba(238, 243, 240, 0));
+> +}
+> +
+> +/* --- Mapa --- */
+> +
+> +.maplibregl-map {
+> +  font-family: inherit;
+> +}
+> +
+> +.maplibregl-ctrl-top-right {
+> +  top: calc(env(safe-area-inset-top) + 72px);
+> +}
+> +
+> +.maplibregl-ctrl-attrib.maplibregl-compact {
+> +  background: rgba(255, 255, 255, 0.7);
+> +}
+> +
+> +@keyframes wskocz {
+>    from {
+>      opacity: 0;
+> -    transform: translateY(12px);
+> +    transform: scale(0.6);
+>    }
+>    to {
+>      opacity: 1;
+> -    transform: translateY(0);
+> +    transform: scale(1);
+>    }
+>  }
+>  
+> -.wejdz {
+> -  animation: wejdz 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+> +@keyframes puls {
+> +  0% {
+> +    box-shadow:
+> +      0 0 0 0 rgba(23, 112, 111, 0.35),
+> +      0 2px 6px rgba(0, 0, 0, 0.25);
+> +  }
+> +  100% {
+> +    box-shadow:
+> +      0 0 0 18px rgba(23, 112, 111, 0),
+> +      0 2px 6px rgba(0, 0, 0, 0.25);
+> +  }
+> +}
+> +
+> +/* Kropka lokalizacji */
+> +.mapa-ja {
+> +  width: 22px;
+> +  height: 22px;
+> +  border-radius: 50%;
+> +  background: var(--color-glebia);
+> +  border: 4px solid #fff;
+> +  box-shadow:
+> +    0 0 0 10px rgba(23, 112, 111, 0.18),
+> +    0 2px 6px rgba(0, 0, 0, 0.25);
+> +  animation: puls 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+> +}
+> +
+> +/* Podpisane miejsce */
+> +.mapa-pin {
+> +  display: flex;
+> +  align-items: center;
+> +  gap: 6px;
+> +  padding: 4px 12px 4px 4px;
+> +  border-radius: 16px;
+> +  background: #fff;
+> +  box-shadow: 0 4px 12px rgba(16, 43, 42, 0.16);
+> +  font-size: 13px;
+> +  font-weight: 700;
+> +  white-space: nowrap;
+> +  transform-origin: 15px 50%;
+> +  animation: wskocz 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+> +}
+> +
+> +.mapa-pin b {
+> +  width: 22px;
+> +  height: 22px;
+> +  border-radius: 50%;
+> +  background: var(--color-koral);
+> +}
+> +
+> +/* Numerowany punkt opowieści */
+> +.mapa-nr {
+> +  display: grid;
+> +  place-items: center;
+> +  width: 28px;
+> +  height: 28px;
+> +  border-radius: 50%;
+> +  background: var(--color-koral);
+> +  color: #fff;
+> +  border: 2.5px solid #fff;
+> +  font-size: 12px;
+> +  font-weight: 800;
+> +  box-shadow: 0 3px 8px rgba(16, 43, 42, 0.25);
+> +  cursor: pointer;
+> +  animation: wskocz 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+> +  transition:
+> +    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+> +    background-color 200ms ease;
+> +}
+> +
+> +.mapa-nr.aktywny {
+> +  background: var(--color-glebia);
+> +  transform: scale(1.3);
+>  }
+>  
+> -/* Suwak czasu w barwach Sawy */
+> +/* --- Suwak czasu --- */
+> +
+>  input[type="range"].suwak {
+>    -webkit-appearance: none;
+>    appearance: none;
+>    width: 100%;
+> -  height: 28px;
+> +  height: 32px;
+>    background: transparent;
+>    cursor: pointer;
+> +  touch-action: pan-y;
+>  }
+>  
+>  input[type="range"].suwak::-webkit-slider-runnable-track {
+>    height: 6px;
+>    border-radius: 999px;
+> -  background: linear-gradient(to right, #17706f var(--postep, 0%), #dde5e2 var(--postep, 0%));
+> +  background: linear-gradient(to right, #17706f var(--postep, 0%), #f0f3f2 var(--postep, 0%));
+>  }
+>  
+>  input[type="range"].suwak::-webkit-slider-thumb {
+>    -webkit-appearance: none;
+> -  width: 28px;
+> -  height: 28px;
+> -  margin-top: -11px;
+> +  width: 30px;
+> +  height: 30px;
+> +  margin-top: -12px;
+>    border-radius: 999px;
+>    background: #fff;
+>    border: 0;
+> -  box-shadow: 0 2px 8px rgba(16, 43, 42, 0.25);
+> -  transition: transform 160ms ease;
+> +  box-shadow:
+> +    0 0 0 0.5px rgba(0, 0, 0, 0.06),
+> +    0 3px 8px rgba(0, 0, 0, 0.18);
+> +  transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1);
+>  }
+>  
+>  input[type="range"].suwak:active::-webkit-slider-thumb {
+> -  transform: scale(1.12);
+> +  transform: scale(1.15);
+>  }
+>  
+>  input[type="range"].suwak::-moz-range-track {
+>    height: 6px;
+>    border-radius: 999px;
+> -  background: #dde5e2;
+> +  background: #f0f3f2;
+>  }
+>  
+>  input[type="range"].suwak::-moz-range-progress {
+> @@ -98,12 +236,14 @@ input[type="range"].suwak::-moz-range-progress {
+>  }
+>  
+>  input[type="range"].suwak::-moz-range-thumb {
+> -  width: 28px;
+> -  height: 28px;
+> +  width: 30px;
+> +  height: 30px;
+>    border: 0;
+>    border-radius: 999px;
+>    background: #fff;
+> -  box-shadow: 0 2px 8px rgba(16, 43, 42, 0.25);
+> +  box-shadow:
+> +    0 0 0 0.5px rgba(0, 0, 0, 0.06),
+> +    0 3px 8px rgba(0, 0, 0, 0.18);
+>  }
+>  
+>  input[type="range"].suwak:focus-visible {
+> @@ -113,11 +253,36 @@ input[type="range"].suwak:focus-visible {
+>  }
+>  
+>  @media (prefers-reduced-motion: reduce) {
+> -  .wejdz {
+> +  .mapa-ja,
+> +  .mapa-pin,
+> +  .mapa-nr {
+>      animation: none;
+>    }
+>  
+> +  .mapa-nr,
+>    input[type="range"].suwak::-webkit-slider-thumb {
+>      transition: none;
+>    }
+>  }
+> +
+> +/* Wejście ekranu: krótkie, fizyczne przesunięcie w górę (używane też w onboardingu) */
+> +@keyframes wejdz {
+> +  from {
+> +    opacity: 0;
+> +    transform: translateY(12px);
+> +  }
+> +  to {
+> +    opacity: 1;
+> +    transform: translateY(0);
+> +  }
+> +}
+> +
+> +.wejdz {
+> +  animation: wejdz 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+> +}
+> +
+> +@media (prefers-reduced-motion: reduce) {
+> +  .wejdz {
+> +    animation: none;
+> +  }
+> +}
+> diff --git a/docs/05-plan-architektury.md b/docs/05-plan-architektury.md
+> index 2cb0b5c..6299655 100644
+> --- a/docs/05-plan-architektury.md
+> +++ b/docs/05-plan-architektury.md
+> @@ -14,7 +14,7 @@
+>  | Backend | **Railway** (osobny serwis, płatne konto członka zespołu) | Proxy do API miasta, token tylko na serwerze, cache, LLM; bez limitów czasu funkcji Vercela, może pytać API co 10 s. Ustalone 17.10 |
+>  | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
+>  | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
+> -| Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
+> +| Głos | ElevenLabs (ok. 0,50 zł za minutę audio, ok. 10 min miesięcznie za darmo, są polskie głosy); klucz `ELEVENLABS_KEY` w Railway | Wybrany 17.10; wystarczy na demo |
+>  | Deploy | Frontend na Vercel, backend na Railway | Link na pitchu pod darmową subdomeną `*.vercel.app`, bez kupowania domeny (ustalone 17.10) |
+>  
+>  ## Przepływ danych
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 4052466..ffbaf3a 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -3995,3 +3995,29 @@
+>  >  | Tryb „z wysiadaniem” (muzea): MVP czy po MVP | zespół | [10-prd.md](10-prd.md) |
+>  >  | Scraping muzeów i wystaw pod zainteresowania | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+>  
+> +
+> +### 2026-10-17 13:26 · Pawel
+> +
+> +> przanalizuj jakie sa najlepsze i najladniejsze onboardingi aplikacji ktore przyciagaja najwiecej uzytkownikow, porownaj z Sawa - jakie powinien miec kroki , jakie pytania , co wpisywac, jakie animacje - wszystko ma wygladac profesjonalnie w stylu sawy. Uzyj fal.ai do generowania grafik i syrenny na ten onboarding oraz innych ikon jezeli potrzebne , wszystko ma dzialac plynnie na telefonie i desktopie z animacjami /apple-design
+> +
+> +
+> +### 2026-10-17 13:27 · Pawel
+> +
+> +> UI masz tutaj : [Image #1] w tym stylu ma byc reszta mocka i aplikacji
+> +
+> +
+> +### 2026-10-17 13:27 · Pawel
+> +
+> +> ma dzialac mobile native obsugiwac gesty i transitions oraz animacje
+> +
+> +
+> +### 2026-10-17 13:29 · Pawel
+> +
+> +> ustaw artefakt tak zeby juz dzialal i mial proste slidery i do wyboru glosy, przygotuj pare kwestii zebym mogl go dotsroic
+> +
+> +
+> +### 2026-10-17 13:30 · Pawel
+> +
+> +> przetworz spotkanie: (transkrypt rozmowy zespołu ok. 13:30, nie zapisujemy go; podsumowanie w spotkania/2026-10-17-1330-postep-i-podzial.md)
+> +
+> +**AI:** Podsumowanie spotkania w `docs/spotkania/2026-10-17-1330-postep-i-podzial.md`; zaktualizowane `stan.md` (otwarte decyzje: PR czy push na main, dziennik AI, kto prezentuje, limit miejsc w planerze) i `todo.md` (T-70–T-74). Transkrypt usunięty z dziennika.
+> diff --git a/docs/stan.md b/docs/stan.md
+> index f994b80..56796e7 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -15,6 +15,8 @@
+>  
+>  - 13:25 (Paweł, z agentem R3): demo mock w `apps/web` (start → onboarding → mapa z suwakiem → trasa z odtwarzaczem), bez API i bez tokena Mapbox, branch `r3/demo-mock`. Do sprawdzenia na telefonie.
+>  
+> +- 13:30 (spotkanie): podział Szczepan R1 planer, Jasiek R2 baza, Paweł R3, Antek R4 głos. Scraping kolejnych miejsc czeka na stabilny schemat bazy. Bazę zmienia tylko agent Jaśka. [Podsumowanie](spotkania/2026-10-17-1330-postep-i-podzial.md)
+> +
+>  ## Zablokowane
+>  
+>  - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.
+> @@ -32,7 +34,10 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+>  | Skąd kolejność przystanków linii (GTFS?) | R1, 13:30 | [12-plan-mvp.md](12-plan-mvp.md) §7, P1 |
+>  | Konta Vercel i Railway: zespołowe czy prywatne | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) P7 |
+>  | Przycisk „dalej” w opowieści: MVP czy później | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+> -| Głos: Pawel wybrał ElevenLabs, klucz jest już w Railway (serwis api) jako `ELEVENLABS_KEY`, potwierdzenie i integracja po stronie R4 | R4 + zespół | [05-
+
+
+### 2026-10-17 13:31 · Pawel
+
+> <cross-session-message from="uds:/tmp/cc-socks/60179.sock" from-name="sawa-9b" from-mode="prompting">
+> Zgoda: start i onboarding są Twoje. Swoje zmiany w start-screen.tsx i onboarding-screen.tsx cofnąłem (git checkout), więcej ich nie ruszam.
+> 
+> Ja (sesja R3, desktop i gesty na prośbę Pawła) przebudowuję resztę na wzór makiety A6: jedna prawdziwa mapa MapLibre/OpenFreeMap pod wszystkimi ekranami (components/sawa-map.tsx), ekran główny A6 (karta, Sawa z dymkiem, pasek zakładek), arkusz trasy z gestami (motion), desktop jako pływający panel. Moje pliki: sawa-map.tsx, home-panel.tsx, route-sheet.tsx, story-card.tsx, tab-bar.tsx, top-bar.tsx, icons.tsx, lib/device.ts, lib/mock-data.ts (przepisany: prawdziwe współrzędne, INTERESTS i SIMILAR_INTERESTS bez zmian), globals.css, primary-button.tsx. Usunę mock-map.tsx, map-screen.tsx, route-screen.tsx i story-player.tsx.
+> 
+> demo-app.tsx też przepisuję: mapa jest stałym tłem, a ekrany to warstwy nad nią. Proponuję taki kontrakt: renderuję `<OnboardingFlow onDone={(interests: string[]) => ...} />` jako pełnoekranową warstwę nad mapą (bez własnego tła na całą stronę albo z półprzezroczystym, jak wolisz), kiedy stage === "onboarding". Na start (stage "start") też Twój komponent, czyli OnboardingFlow zaczyna od powitania. Jeśli potrzebujesz innych propsów (np. initialInterests przy „Zmień” tematy albo onClose), napisz, a dopasuję. Podepnę go sam w demo-app.tsx, kiedy dasz znać, że plik jest gotowy, żebyśmy nie edytowali demo-app.tsx naraz.
+> 
+> W globals.css zostawiam klasę .wejdz i tokeny kolorów. Dochodzą utility `szklo`, `karta`, `etykieta`. Pakiety motion i maplibre-gl są już w apps/web/package.json.
+> </cross-session-message>
+

@@ -88,8 +88,16 @@ Zakres to tylko lista MVP z [10-prd.md](10-prd.md), zob. [12-plan-mvp.md](12-pla
 - [ ] **T-23** Cache Google Places w Supabase (tylko jeśli T-06 = tak) — `R2` — 22:00
 - [ ] **T-34** Zakładka czatu z Sawą (UI, podpięcie do T-40) — `R3` — noc
 - [ ] **T-40** `POST /v1/chat` (SSE) z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
-- [ ] **T-43** TTS: wybór (ElevenLabs czy open source), test polskiego na 3 tekstach — `R4` — 15:00
+- [x] **T-43** TTS: wybrany ElevenLabs (17.10, 13:30), test polskiego w ramach T-71 — `R4`
 - [ ] **T-44** Awatar Sawy wygenerowany od zera po 11:00 wg [awatar/](awatar/) — `R4` — 15:00
+
+## Ze spotkania 13:30
+
+- [ ] **T-70** Planer: limit miejsc na trasie albo minimalny czas na opowieść (30 min daje teraz 120 miejsc) — `R1`
+- [ ] **T-71** Integracja ElevenLabs w API (`ELEVENLABS_KEY` w Railway) — `R4`
+- [ ] **T-72** Styl mapy Mapbox i kategorie punktów (budynek, ulica, pomnik…) z ikonami — `R3`
+- [ ] **T-73** Scraping kolejnych miejsc (budynki → Wikipedia) prosto do Supabase, dopiero po ustabilizowaniu schematu; najpierw Żoliborz i Śródmieście — `R2`
+- [ ] **T-74** Opisać w `docs/` repo przydatne na hackathon (link na Discordzie zespołu) — `Wszyscy` (kto znalazł)
 
 ## Zrobione
 
