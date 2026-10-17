@@ -58,8 +58,8 @@
 
 ## R3 · Frontend i mapa
 
-- [ ] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3`
-- [ ] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3`
+- [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
+- [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-30** Mapa MapLibre z jednym zbiorem punktów (miejsca z `/v1/places`, nie z T-10) — `R3` — 13:00 (Antek, 16:40; plan w [14-plan-mapy.md](14-plan-mapy.md); `/mapa` z kartą miejsca i trasą PR #12, API `SawaMap` dla ekranów PR #16, miejsca z kafelków widoku na całą Warszawę PR #27)
 - [x] **T-105** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; ekrany demo zostają jasne, dopóki nie przejdą na tokeny)
 - [x] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap; 14:54: demo na `SawaMap` Antka, piny z `/v1/places`, trasa z `POST /v1/routes/plan`, zob. `stan.md`)
