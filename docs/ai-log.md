@@ -4523,3 +4523,39 @@
 > new file: apps/web/src/features/demo/components/tab-bar.tsx
 > new file: apps/web/src/features/demo/components/top-bar.tsx
 
+
+> (uruchomienie stroika: brak ELEVENLABS_KEY)
+
+**AI:** Klucz był w głównym .env.local, więc stroik czyta teraz też ten plik. Uruchomiłem go w tle: klucz działa, ale nie ma uprawnień voices_read i user_read, które Pawel musi dodać w ElevenLabs.
+
+### 2026-10-17 13:34 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 4 ++++
+>  1 file changed, 4 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index f8fba12..ba34966 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -4523,3 +4523,7 @@
+>  > new file: apps/web/src/features/demo/components/tab-bar.tsx
+>  > new file: apps/web/src/features/demo/components/top-bar.tsx
+>  
+> +
+> +> (uruchomienie stroika: brak ELEVENLABS_KEY)
+> +
+> +**AI:** Klucz był w głównym .env.local, więc stroik czyta teraz też ten plik. Uruchomiłem go w tle: klucz działa, ale nie ma uprawnień voices_read i user_read, które Pawel musi dodać w ElevenLabs.
+> new file: apps/web/src/features/demo/components/route-sheet.tsx
+> new file: apps/web/src/features/demo/components/story-card.tsx
+
