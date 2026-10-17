@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Fredoka, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 // CSS MapLibre przed naszym, żeby nasze reguły mapy go nadpisywały
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
+import { THEME_INIT_SCRIPT } from "@/features/theme";
 import { Providers } from "./providers";
 
 const sans = Plus_Jakarta_Sans({
@@ -22,6 +24,13 @@ export const metadata: Metadata = {
   description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
   // Po dodaniu do ekranu głównego działa jak aplikacja, bez paska przeglądarki
   appleWebApp: { capable: true, title: "Sawa", statusBarStyle: "default" },
+  // Ikonka w karcie przeglądarki idzie za motywem systemu (iOS ekranu głównego sam przyciemnia apple-icon)
+  icons: {
+    icon: [
+      { url: "/icons/icon-192.png", media: "(prefers-color-scheme: light)" },
+      { url: "/icons/icon-192-dark.png", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 export const viewport: Viewport = {
@@ -37,8 +46,17 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pl" className={`${sans.variable} ${logo.variable} h-full antialiased`}>
+    // data-theme ustawia skrypt przed Reactem, więc atrybut różni się od HTML z serwera
+    <html
+      lang="pl"
+      className={`${sans.variable} ${logo.variable} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="min-h-full">
+        {/* Motyw przed pierwszym malowaniem, bez mignięcia jasnej mapy (features/theme) */}
+        <Script id="theme-init" strategy="beforeInteractive">
+          {THEME_INIT_SCRIPT}
+        </Script>
         <Providers>{children}</Providers>
       </body>
     </html>

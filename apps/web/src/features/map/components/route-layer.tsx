@@ -2,7 +2,7 @@ import type { Route } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
-import { ACTIVE_STOP_COLOR, LABEL_FONT, WALK_COLOR } from "../lib/map-style";
+import { ACTIVE_STOP_COLOR, LABEL_FONT, type MapPalette } from "../lib/map-style";
 import {
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
@@ -17,9 +17,10 @@ type RouteLayerProps = {
   selectedId: string | null;
   /** Place the story is about right now; drawn larger and in the accent colour. */
   activeId?: string;
+  palette: MapPalette;
 };
 
-export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
+export function RouteLayer({ route, selectedId, activeId, palette }: RouteLayerProps) {
   const isActive: ExpressionSpecification = ["==", ["get", "id"], activeId ?? ""];
   const legs = useMemo(() => routeLegsToGeoJson(route), [route]);
   const places = useMemo(() => routePlacesToGeoJson(route), [route]);
@@ -33,7 +34,7 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
           id="route-walk"
           type="line"
           layout={{ "line-cap": "round", "line-join": "round" }}
-          paint={{ "line-color": WALK_COLOR, "line-width": 3, "line-dasharray": [0.1, 2] }}
+          paint={{ "line-color": palette.walk, "line-width": 3, "line-dasharray": [0.1, 2] }}
         />
       </Source>
       <Source id="route-legs" type="geojson" data={legs}>
@@ -41,7 +42,7 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
           id="route-casing"
           type="line"
           layout={{ "line-cap": "round", "line-join": "round" }}
-          paint={{ "line-color": "#ffffff", "line-width": 9 }}
+          paint={{ "line-color": palette.casing, "line-width": 9 }}
         />
         <Layer
           id="route-line"
@@ -60,7 +61,7 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
           type="circle"
           paint={{
             "circle-radius": ["case", ["get", "isTransfer"], 7, 6],
-            "circle-color": "#ffffff",
+            "circle-color": palette.boardingFill,
             "circle-stroke-color": ["get", "color"],
             "circle-stroke-width": ["case", ["get", "isTransfer"], 4, 3],
           }}
@@ -89,8 +90,8 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
           type="circle"
           paint={{
             "circle-radius": ["case", isActive, 14, 11],
-            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, "#18181b"],
-            "circle-stroke-color": "#ffffff",
+            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, palette.stopFill],
+            "circle-stroke-color": palette.ring,
             "circle-stroke-width": 2,
           }}
         />
@@ -101,7 +102,7 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
           paint={{
             "circle-radius": 15,
             "circle-opacity": 0,
-            "circle-stroke-color": "#18181b",
+            "circle-stroke-color": palette.selected,
             "circle-stroke-width": 3,
           }}
         />
@@ -115,7 +116,7 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
             "text-allow-overlap": true,
             "text-ignore-placement": true,
           }}
-          paint={{ "text-color": "#ffffff" }}
+          paint={{ "text-color": ["case", isActive, "#ffffff", palette.stopText] }}
         />
       </Source>
     </>

@@ -2,22 +2,64 @@
 
 /* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
 @theme inline {
-  --color-glebia: #17706f;
-  --color-glebia-ciemna: #0f5554;
-  --color-mieta: #8ed1b5;
-  --color-mieta-jasna: #ddf2e9;
-  --color-koral: #f2755f;
-  --color-tekst: #102b2a;
-  --color-tekst-2: #4c6462;
-  --color-tekst-3: #8a9c9a;
-  --color-tlo-2: #f4f6f5;
-  --color-mapa: #eef3f0;
+  --color-glebia: var(--glebia);
+  --color-glebia-ciemna: var(--glebia-ciemna);
+  --color-mieta: var(--mieta);
+  --color-mieta-jasna: var(--mieta-jasna);
+  --color-koral: var(--koral);
+  --color-tekst: var(--tekst);
+  --color-tekst-2: var(--tekst-2);
+  --color-tekst-3: var(--tekst-3);
+  --color-tlo-2: var(--tlo-2);
+  --color-mapa: var(--mapa);
+  --color-powierzchnia: var(--powierzchnia);
   --font-sans: var(--font-plus);
   --font-logo: var(--font-fredoka);
 }
 
 :root {
-  --background: #eef3f0;
+  --glebia: #17706f;
+  --glebia-ciemna: #0f5554;
+  --mieta: #8ed1b5;
+  --mieta-jasna: #ddf2e9;
+  --koral: #f2755f;
+  --tekst: #102b2a;
+  --tekst-2: #4c6462;
+  --tekst-3: #8a9c9a;
+  --tlo-2: #f4f6f5;
+  --mapa: #eef3f0;
+  /* Karty i arkusze: zamiast bg-white, żeby ciemny motyw działał */
+  --powierzchnia: #ffffff;
+  /* Materiały szkła (utility szklo i karta) */
+  --szklo-tlo: rgba(255, 255, 255, 0.84);
+  --karta-tlo: rgba(255, 255, 255, 0.94);
+  --szklo-krawedz: rgba(255, 255, 255, 0.7);
+  --cien: rgba(16, 43, 42, 0.1);
+  --background: var(--mapa);
+}
+
+/* Ciemny motyw: <html data-theme="dark"> ustawia features/theme (wybór Jasny / Ciemny / Auto, Auto idzie
+   za systemem). Tokeny ciemnieją na razie tylko wewnątrz .motyw (mapa). Ekrany demo mają jeszcze wpisane
+   jasne tła (bg-white, hexy), a tekst z tokenów, więc w ciemnym motywie byłyby nieczytelne.
+   Gdy przejdą na tokeny, klasa .motyw trafia na <body>.
+   Głębia jaśnieje, żeby linki i przyciski miały kontrast na ciemnym tle. */
+:root[data-theme="dark"] {
+  .motyw {
+    color-scheme: dark;
+    --glebia: #1f8a87;
+    --glebia-ciemna: #17706f;
+    --mieta-jasna: #17352f;
+    --tekst: #e6efed;
+    --tekst-2: #a6b9b7;
+    --tekst-3: #728886;
+    --tlo-2: #1c2726;
+    --mapa: #0e1615;
+    --powierzchnia: #172120;
+    --szklo-tlo: rgba(23, 33, 32, 0.8);
+    --karta-tlo: rgba(23, 33, 32, 0.94);
+    --szklo-krawedz: rgba(255, 255, 255, 0.08);
+    --cien: rgba(0, 0, 0, 0.4);
+  }
 }
 
 /* Aplikacja na cały ekran: strona się nie przewija, nie odbija i nie powiększa (szczypanie i podwójne tapnięcie).
@@ -61,16 +103,16 @@ button {
 
 /* Materiał: szkło na mapie (makiety, docs/ui/propozycje/html/_wspolne.css) */
 @utility szklo {
-  background: rgba(255, 255, 255, 0.84);
+  background: var(--szklo-tlo);
   backdrop-filter: blur(24px) saturate(1.8);
   -webkit-backdrop-filter: blur(24px) saturate(1.8);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--szklo-krawedz);
   box-shadow:
     0 1px 2px rgba(16, 43, 42, 0.06),
-    0 8px 24px rgba(16, 43, 42, 0.1);
+    0 8px 24px var(--cien);
 
   @media (prefers-reduced-transparency: reduce) {
-    background: #fff;
+    background: var(--powierzchnia);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
@@ -78,16 +120,16 @@ button {
 
 /* Gruby materiał: karty i panele (większa powierzchnia = mocniejsze rozmycie i cień) */
 @utility karta {
-  background: rgba(255, 255, 255, 0.94);
+  background: var(--karta-tlo);
   backdrop-filter: blur(30px) saturate(1.8);
   -webkit-backdrop-filter: blur(30px) saturate(1.8);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--szklo-krawedz);
   box-shadow:
     0 2px 4px rgba(16, 43, 42, 0.06),
-    0 18px 40px rgba(16, 43, 42, 0.18);
+    0 18px 40px var(--cien);
 
   @media (prefers-reduced-transparency: reduce) {
-    background: #fff;
+    background: var(--powierzchnia);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
@@ -103,7 +145,10 @@ button {
 
 /* Mgiełka pod paskiem statusu, gdy pod spodem jest mapa */
 .mgla {
-  background: linear-gradient(rgba(238, 243, 240, 0.95) 30%, rgba(238, 243, 240, 0));
+  background: linear-gradient(
+    color-mix(in srgb, var(--mapa) 95%, transparent) 30%,
+    color-mix(in srgb, var(--mapa) 0%, transparent)
+  );
 }
 
 /* --- Mapa --- */
@@ -125,7 +170,34 @@ button {
 }
 
 .maplibregl-ctrl-attrib.maplibregl-compact {
-  background: rgba(255, 255, 255, 0.7);
+  background: color-mix(in srgb, var(--powierzchnia) 70%, transparent);
+}
+
+/* Kontrolki MapLibre (zoom, atrybucja) w ciemnym motywie */
+:root[data-theme="dark"] {
+  /* Mgiełka leży zawsze na mapie, a mapa jest już ciemna (poza .motyw, więc kolor wprost) */
+  .mgla {
+    background: linear-gradient(rgba(14, 22, 21, 0.95) 30%, rgba(14, 22, 21, 0));
+  }
+
+  .maplibregl-ctrl-group,
+  .maplibregl-ctrl-attrib.maplibregl-compact {
+    background: var(--powierzchnia);
+    color: var(--tekst);
+  }
+
+  .maplibregl-ctrl-group button + button {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .maplibregl-ctrl button .maplibregl-ctrl-icon,
+  .maplibregl-ctrl-attrib-button {
+    filter: invert(1);
+  }
+
+  .maplibregl-ctrl-attrib a {
+    color: var(--tekst-2);
+  }
 }
 
 @keyframes wskocz {
@@ -172,7 +244,7 @@ button {
   gap: 6px;
   padding: 4px 12px 4px 4px;
   border-radius: 16px;
-  background: #fff;
+  background: var(--powierzchnia);
   box-shadow: 0 4px 12px rgba(16, 43, 42, 0.16);
   font-size: 13px;
   font-weight: 700;
@@ -228,7 +300,11 @@ input[type="range"].suwak {
 input[type="range"].suwak::-webkit-slider-runnable-track {
   height: 6px;
   border-radius: 999px;
-  background: linear-gradient(to right, #17706f var(--postep, 0%), #f0f3f2 var(--postep, 0%));
+  background: linear-gradient(
+    to right,
+    var(--glebia) var(--postep, 0%),
+    var(--tlo-2) var(--postep, 0%)
+  );
 }
 
 input[type="range"].suwak::-webkit-slider-thumb {
@@ -252,13 +328,13 @@ input[type="range"].suwak:active::-webkit-slider-thumb {
 input[type="range"].suwak::-moz-range-track {
   height: 6px;
   border-radius: 999px;
-  background: #f0f3f2;
+  background: var(--tlo-2);
 }
 
 input[type="range"].suwak::-moz-range-progress {
   height: 6px;
   border-radius: 999px;
-  background: #17706f;
+  background: var(--glebia);
 }
 
 input[type="range"].suwak::-moz-range-thumb {
@@ -273,7 +349,7 @@ input[type="range"].suwak::-moz-range-thumb {
 }
 
 input[type="range"].suwak:focus-visible {
-  outline: 2px solid #17706f;
+  outline: 2px solid var(--glebia);
   outline-offset: 4px;
   border-radius: 999px;
 }
