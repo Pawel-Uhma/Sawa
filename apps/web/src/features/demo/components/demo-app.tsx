@@ -434,7 +434,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 player={ridePlayer}
                 activeIndex={activeIndex}
                 onActiveChange={setActiveIndex}
+                onPlayStop={playStop}
                 clock={clock}
+                totalSec={(planned?.totalMin ?? 0) * 60}
                 onBack={() => setStage("map")}
                 isDesktop={isDesktop}
                 onCoverChange={setSheetCoverPx}
