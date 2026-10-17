@@ -1,0 +1,332 @@
+[
+  {
+    "id": "szpital-grochowski",
+    "nazwa": "Szpital Grochowski im. dr. med. Rafała Masztaka",
+    "name_en": "Grochowski Hospital (dr Rafał Masztak)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grenadierów 51/59",
+    "adres_historyczny": null,
+    "lat": 52.242528,
+    "lon": 21.07815,
+    "lokalizacja": "dokladna",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 60. XX wieku powstała poradnia i oddział chirurgii onkologicznej w szpitalu.",
+      "Ich inicjatorami byli m.in. dr Borczewski, dr Gajowniczek, dr Podolski, dr Kułakowski i doc. Żurakowski.",
+      "W 1974 ordynatorem jednego z oddziałów chorób wewnętrznych został Leszek Ceremużyński, który przekształcił go w placówkę dydaktyczną Akademii Medycznej w Warszawie.",
+      "W 1980 Ośrodek Naukowo-Dydaktyczny AM w Szpitalu Grochowskim stał się II Kliniką Kardiologii Centrum Medycznego Kształcenia Podyplomowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A hospital on Grenadierów Street that grew out of an oncology surgery unit and clinic set up in the 1960s. In 1974 one of its wards became a teaching unit of the Medical Academy in Warsaw.",
+    "ludzie": [
+      {"kto": "Leszek Ceremużyński", "rola": "ordynator, który przekształcił oddział w placówkę dydaktyczną AM", "wiki": null},
+      {"kto": "Borczewski, Gajowniczek, Podolski, Kułakowski, Żurakowski", "rola": "inicjatorzy poradni i oddziału chirurgii onkologicznej (lata 60.)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szpital Grochowski", "url": "https://pl.wikipedia.org/wiki/Szpital_Grochowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też, że szpital działa jako spółka z o.o. należąca do miasta; to pominięto jako dane o organizacji."
+  },
+  {
+    "id": "sad-okregowy-warszawa-praga",
+    "nazwa": "Sąd Okręgowy Warszawa-Praga w Warszawie",
+    "name_en": "Warszawa-Praga District Court",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Poligonowa 3",
+    "adres_historyczny": null,
+    "lat": 52.2344078,
+    "lon": 21.0842881,
+    "lokalizacja": "dokladna",
+    "okres": "2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1 maja 2005 roku rozpoczął działalność Sąd Okręgowy Warszawa-Praga w Warszawie.",
+      "1 stycznia 2006 roku zniesiono Sąd Rejonowy dla Warszawy Pragi, a w jego miejsce utworzono Sąd Rejonowy dla Warszawy Pragi-Północ i Sąd Rejonowy dla Warszawy Pragi-Południe.",
+      "1 grudnia 2019 roku siedziba Sądu Okręgowego Warszawa-Praga znajduje się w nowym budynku przy ul. Poligonowej 3."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The regional court for the right bank of Warsaw, opened on 1 May 2005. Its seat moved to a new building at Poligonowa 3 in December 2019.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Sąd Okręgowy Warszawa-Praga w Warszawie", "url": "https://pl.wikipedia.org/wiki/S%C4%85d_Okr%C4%99gowy_Warszawa-Praga_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "tancerka-rzezba",
+    "nazwa": "Tancerka (rzeźba w Warszawie)",
+    "name_en": "The Dancer (sculpture)",
+    "typ": "pomnik",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "park Skaryszewski, ogród różany",
+    "adres_historyczny": null,
+    "lat": 52.244031,
+    "lon": 21.050529,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rzeźba autorstwa Stanisława Jackowskiego znajduje się w parku Skaryszewskim.",
+      "Rzeźba została odlana w pracowni ludwisarskiej Braci Łopieńskich.",
+      "Została ustawiona w 1927 roku w ogrodzie różanym w parku Skaryszewskim.",
+      "Odsłonięcia rzeźby w 1927 roku dokonał prezydent miasta Zygmunt Słomiński."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A sculpture by Stanisław Jackowski in the rose garden of Skaryszewski Park, cast by the Łopieński brothers and unveiled in 1927 by Warsaw mayor Zygmunt Słomiński.",
+    "ludzie": [
+      {"kto": "Stanisław Jackowski", "rola": "autor rzeźby", "wiki": null},
+      {"kto": "Zygmunt Słomiński", "rola": "prezydent miasta, dokonał odsłonięcia w 1927", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Tancerka (rzeźba w Warszawie)", "url": "https://pl.wikipedia.org/wiki/Tancerka_%28rze%C5%BAba_w_Warszawie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie opisuje losów rzeźby w czasie wojny."
+  },
+  {
+    "id": "teatr-powszechny",
+    "nazwa": "Teatr Powszechny im. Zygmunta Hübnera",
+    "name_en": "Powszechny Theatre (Zygmunt Hübner)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Jana Zamoyskiego 20 (Kamionek)",
+    "adres_historyczny": "Kino Bomba i Kino Popularne (budynek przed wojną, u zbiegu al. Zielenieckiej i ul. Zamoyskiego)",
+    "lat": 52.247042,
+    "lon": 21.048498,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przed II wojną światową u zbiegu alei Zielenieckiej i ul. Jana Zamoyskiego znajdowało się Kino Bomba, działające od 1920.",
+      "Działalność teatralna została zapoczątkowana w 1944, z inicjatywy Jana Mrozińskiego, a instytucja otrzymała nazwę Teatr Popularny.",
+      "10 lutego 1945 odbył się tam pierwszy spektakl – Moralność pani Dulskiej.",
+      "We wrześniu 1945 miejsce przemianowano na Teatr Powszechny.",
+      "1 marca 1970 teatr został zamknięty dla gruntownego remontu i wznowił działalność w 1975.",
+      "W 1975 dyrektorem teatru został Zygmunt Hübner, reżyser i aktor; w 1989 roku zmarł."
+    ],
+    "ciekawostki": [
+      "Jednym z ważnych spektakli Hübnera był Lot nad kukułczym gniazdem (1977) w jego reżyserii."
+    ],
+    "summary_en": "A theatre founded in 1944 on Jana Zamoyskiego Street in Kamionek, on the site of a pre-war cinema. It was renamed after director Zygmunt Hübner, who led it from 1975 until his death in 1989.",
+    "ludzie": [
+      {"kto": "Jan Mroziński", "rola": "inicjator działalności teatralnej w 1944 r., dyrektor", "wiki": null},
+      {"kto": "Zygmunt Hübner", "rola": "reżyser i aktor, dyrektor teatru 1975–1989, patron", "wiki": null},
+      {"kto": "Irena Babel", "rola": "kierownik artystyczny od sezonu 1956/1957 (wraz z Tadeuszem Kaźmierskim)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Popularny", "Kino Bomba", "Kino Popularne"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Powszechny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Powszechny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W 1944 r. instytucja nosiła nazwę Teatr Popularny; nazwę Teatr Powszechny przyjęto we wrześniu 1945."
+  },
+  {
+    "id": "tor-kolarski-nowe-dynasy",
+    "nazwa": "Tor kolarski Nowe Dynasy",
+    "name_en": "Nowe Dynasy Cycling Velodrome",
+    "typ": "sport",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Podskarbińska 11",
+    "adres_historyczny": null,
+    "lat": 52.250997,
+    "lon": 21.072603,
+    "lokalizacja": "dokladna",
+    "okres": "1972–dziś (nieczynny)",
+    "istnieje": true,
+    "fakty": [
+      "Tor zbudowany z inicjatywy społecznej według projektu Janusza Kalbarczyka, sfinansowany przez Polskie Zakłady Optyczne (PZO), został oddany do użytku 6 maja 1972 r.",
+      "W latach 1972–1973, 1977–1978 i 1985 na torze rozegrano Mistrzostwa Polski.",
+      "W 1974 wykonano ekspertyzę nawierzchni, która wykazała nieodpowiednią jakość betonu i zalecała wymianę nawierzchni; II Mistrzostwa Europy Juniorów odbyły się na wyremontowanym torze 3–6 lipca 1974 roku.",
+      "Po roku 1985 tor uznano za obiekt nienadający się na imprezy, a zawody o Puchar Prasy przeniesiono do Łodzi.",
+      "W 2018 roku teren nieczynnego toru wraz ze stadionem wrócił do m.st. Warszawy po sporze sądowym."
+    ],
+    "ciekawostki": [
+      "Obiekt miał być najnowszym z ośmiu wówczas w Polsce torów pokrytym dachem."
+    ],
+    "summary_en": "A disused cycling track built in 1972 by PZO's sports club at Podskarbińska Street. It hosted national and European championships before being abandoned after 1985; the site returned to the city in 2018.",
+    "ludzie": [
+      {"kto": "Janusz Kalbarczyk", "rola": "autor projektu toru", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Tor kolarski Nowe Dynasy", "url": "https://pl.wikipedia.org/wiki/Tor_kolarski_Nowe_Dynasy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt nieczynny; w artykule nie ma informacji o rozbiórce, stąd istnieje: true."
+  },
+  {
+    "id": "ulica-alfreda-nobla",
+    "nazwa": "Ulica Alfreda Nobla",
+    "name_en": "Alfred Nobel Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Alfreda Nobla (od ul. Zwycięzców do ul. Walecznych)",
+    "adres_historyczny": null,
+    "lat": 52.2337,
+    "lon": 21.0587,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Najstarsze zachowane domy przy ul. Nobla pochodzą z lat 30. XX wieku.",
+      "Jeszcze przed wybuchem II wojny światowej rozpoczęła się budowa murowanego kościoła w pobliżu przeniesionego z Żoliborza drewnianego kościółka pw. Andrzeja Boboli, który spłonął we wrześniu 1939.",
+      "W 1938 erygowano samodzielną parafię pw. Matki Bożej Nieustającej Pomocy.",
+      "W czasie obrony Warszawy ulica była jednym z miejsc, w których toczyły się walki.",
+      "Największą grupę mieszkańców ulicy stanowili po wojnie rzeźbiarze z domów Spółdzielni „Kolektyw”."
+    ],
+    "ciekawostki": [
+      "W domu Józefa Trenarowskiego kręcono sceny Jeziora osobliwości Jana Batorego, a w pracowni Adama Romana – ujęcia do Człowieka z marmuru Andrzeja Wajdy."
+    ],
+    "summary_en": "A short street on Saska Kępa named after the Swedish inventor Alfred Nobel by a 1926 council resolution, in contrast to the post-WWI geopolitical names of neighbouring streets. It became a hub for artists after the war.",
+    "ludzie": [
+      {"kto": "Zofia Palowa, Wanda Gosławska, Kazimierz Kamler, Władysław Zych", "rola": "ceramicy, architekt wnętrz i twórca szkła mieszkający na ulicy po wojnie", "wiki": null},
+      {"kto": "Józef Trenarowski, Adam Roman", "rola": "rzeźbiarze mieszkający na ulicy; ich pracownie wykorzystano w filmach", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Alfreda Nobla w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Alfreda_Nobla_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "kosciol-sw-andrzeja-boboli-ul-nobla-16",
+    "nazwa": "Kościół św. Andrzeja Boboli (ul. Nobla 16)",
+    "name_en": "St. Andrew Bobola Church (Nobla 16)",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Nobla 16",
+    "adres_historyczny": null,
+    "lat": 52.2337,
+    "lon": 21.0587,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1938–1939 zaczęto wznosić kościół według projektu Piotra Marii Lubińskiego i Henryka Wąsowicza.",
+      "Ostatecznie świątynię zbudowano według projektu Józefa Łowińskiego i Jana Bogusławskiego z lat 1948–1949.",
+      "Parafię pw. Matki Bożej Nieustającej Pomocy erygowano w 1938 roku; świątynia zachowała pierwotne wezwanie św. Andrzeja Boboli.",
+      "Obiekt jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Wnętrze kościoła zdobią malowidła ścienne Marii i Jerzego Ostrowskich oraz rzeźby Tadeusza Świerczka.",
+      "Pod tym samym adresem działa przedszkole Ecole Française privée Antoine de Saint-Exupéry."
+    ],
+    "summary_en": "A church on Nobla Street, begun in 1938 to a design by Piotr Lubiński and Henryk Wąsowicz and completed in 1948-1949 to a design by Józef Łowiński and Jan Bogusławski. It is a listed monument and replaced a wooden church that burned in September 1939.",
+    "ludzie": [
+      {"kto": "Piotr Maria Lubiński, Henryk Wąsowicz", "rola": "projektanci z lat 1938–1939", "wiki": null},
+      {"kto": "Józef Łowiński, Jan Bogusławski", "rola": "projektanci zrealizowanej świątyni (1948–1949)", "wiki": null},
+      {"kto": "Maria i Jerzy Ostrowscy", "rola": "autorzy malowideł ściennych", "wiki": null},
+      {"kto": "Tadeusz Świerczek", "rola": "autor rzeźb w kościele", "wiki": null}
+    ],
+    "dawne_nazwy": ["drewniany kościółek pw. Andrzeja Boboli (przeniesiony z Żoliborza, spłonął we wrześniu 1939)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Alfreda Nobla w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Alfreda_Nobla_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord wyciągnięty z artykułu o ulicy; lokalizacja to środek odcinka ulicy."
+  },
+  {
+    "id": "ulica-bliska",
+    "nazwa": "Ulica Bliska w Warszawie",
+    "name_en": "Bliska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Bliska (od ul. Grochowskiej do ul. Lubelskiej)",
+    "adres_historyczny": null,
+    "lat": 52.2483,
+    "lon": 21.0578,
+    "lokalizacja": "przyblizona",
+    "okres": "1889–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest jedną z dawnych dróg wsi Kamionek; zachowała swój kręty, nieregularny przebieg.",
+      "Nazwa pochodzi od ścieżki polnej, którą kolejarze skracali sobie drogę do Dworca Terespolskiego.",
+      "Do Warszawy przyłączona została wraz z Kamionkiem w 1889; po 1890 przekształcona w ulicę.",
+      "W czasie II wojny światowej jej zabudowa w większości ocalała.",
+      "W okresie powojennym ulicę przecięto na dwie części zespołem wysokich bloków mieszkalnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A winding former village road in Kamionek, named after a footpath used by railway workers. Most of its buildings survived the Second World War, but a block of high-rises later cut the street in two.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bliska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bliska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "ulica-chodakowska",
+    "nazwa": "Ulica Chodakowska w Warszawie",
+    "name_en": "Chodakowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Chodakowska",
+    "adres_historyczny": null,
+    "lat": 52.2523,
+    "lon": 21.0659,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wydzielona około 1960 z ulicy Terespolskiej.",
+      "Przed 1939 w tym rejonie miasta ulokowały się liczne zakłady przemysłowe, między innymi Fabryka Samochodów Osobowych i Półciężarowych Państwowych Zakładów Inżynierii, zatrudniająca ponad trzy tysiące osób.",
+      "W tym rejonie działały też Zakłady Amunicyjne Pocisk Sp. Akc., gdzie pracowało półtora tysiąca ludzi.",
+      "Zakłady przemysłowe zostały zniszczone podczas bombardowań w 1939."
+    ],
+    "ciekawostki": [
+      "Do dziś przetrwał budynek mieszkalny należący do przedsiębiorstwa Zakładów Amunicyjnych „Pocisk”."
+    ],
+    "summary_en": "A street in Praga-Południe split from Terespolska Street around 1960, in an area of pre-war factories. The factories were destroyed in the 1939 bombing.",
+    "ludzie": [],
+    "dawne_nazwy": ["Terespolska (ulica, z której wydzielono)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Chodakowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Chodakowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "ulica-drewnicka",
+    "nazwa": "Ulica Drewnicka w Warszawie",
+    "name_en": "Drewnicka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Drewnicka (od ul. Rybnej do ul. Gocławskiej)",
+    "adres_historyczny": null,
+    "lat": 52.2482,
+    "lon": 21.0648,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około roku 1928 w związku z rozbudową Fabryki Aparatów Elektrycznych Kazimierza Szpotańskiego, działającej od roku 1921 przy ul. Gocławskiej.",
+      "Całą nieparzystą stronę ulicy wypełniła jedna z hal zakładów Szpotańskiego.",
+      "Krótko przed rokiem 1938 wybudowano gmach Biblioteki XX-lecia, ufundowany przez Kazimierza Szpotańskiego z okazji dwudziestolecia jego firmy.",
+      "W okresie powojennym ulicę rozdzielono na dwa odcinki, włączając jej fragment do terenu Zakładów Wytwórczych Aparatury Wysokiego Napięcia ZWAR."
+    ],
+    "ciekawostki": [
+      "Firma Kazimierza Szpotańskiego działała od 1918 roku, początkowo w prywatnym mieszkaniu na nieistniejącej dziś ulicy Mirowskiej."
+    ],
+    "summary_en": "A street built around 1928 to serve Kazimierz Szpotański's electrical apparatus factory. A library building funded by Szpotański was completed shortly before 1938.",
+    "ludzie": [
+      {"kto": "Kazimierz Szpotański", "rola": "właściciel fabryki aparatów elektrycznych, ufundował bibliotekę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Drewnicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Drewnicka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  }
+]

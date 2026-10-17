@@ -1,0 +1,74 @@
+[
+  {
+    "id": "zespol-budynkow-v-oddzialu-strazy-ogniowej",
+    "nazwa": "Zespół budynków V Oddziału Straży Ogniowej",
+    "name_en": "Buildings of the 5th Fire Brigade Division",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Marcinkowskiego 2",
+    "adres_historyczny": "ul. Sprzeczna 2",
+    "lat": 52.2483,
+    "lon": 21.04037,
+    "lokalizacja": "dokladna",
+    "okres": "1836/1878–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od 1836 praski V Oddział Warszawskiej Straży Ogniowej wykorzystywał drewniane zabudowania przy ul. Petersburskiej (współcześnie ul. Jagiellońska).",
+      "Nowa, murowana siedziba została wzniesiona przy ul. Sprzecznej 2 w 1878 według projektu Józefa Orłowskiego.",
+      "Kamień węgielny pod budowę położył prezydent miasta i inicjator przedsięwzięcia Sokrat Starynkiewicz.",
+      "W 2006 obiekt został wpisany do rejestru zabytków.",
+      "W latach 2008–2018 zespół został zrewitalizowany; odbudowano 30-metrową wieżę obserwacyjną (tzw. czatownię), rozebraną w 1954.",
+      "W 2018 w zespole otwarto Centrum Edukacji i Historii Warszawskiej Straży Pożarnej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The former 5th Fire Brigade Division complex at Marcinkowskiego 2 in Praga-Północ, built in 1878 on Sprzeczna Street to a design by Józef Orłowski. Listed as a monument in 2006, it was restored in 2008–2018 and houses the Warsaw Fire Service history centre since 2018.",
+    "ludzie": [
+      {"kto": "Józef Orłowski", "rola": "autor projektu murowanej siedziby z 1878", "wiki": null},
+      {"kto": "Sokrat Starynkiewicz", "rola": "prezydent miasta; położył kamień węgielny pod budowę", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Sprzeczna"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zespół budynków V Oddziału Straży Ogniowej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zesp%C3%B3%C5%82_budynk%C3%B3w_V_Oddzia%C5%82u_Stra%C5%BCy_Ogniowej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres 1836 dotyczy wcześniejszej siedziby przy ul. Petersburskiej, nie samego zespołu."
+  },
+  {
+    "id": "zydowski-dom-modlitwy-targowa-50-52",
+    "nazwa": "Żydowski dom modlitwy (ul. Targowa 50/52)",
+    "name_en": "Jewish prayer house at Targowa 50/52",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 50/52",
+    "adres_historyczny": null,
+    "lat": 52.252,
+    "lon": 21.039,
+    "lokalizacja": "dokladna",
+    "okres": "2. poł. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w drugiej połowie XIX wieku jako oficyna kamienic Rothblitów i Sokołowskiego.",
+      "W 1934 roku w jej wnętrzu wykonano nowe polichromie.",
+      "W marcu 1996 roku varsavianiści Janusz Sujecki i Jarosław Zieliński przypadkiem natknęli się na fragmenty malowideł ściennych.",
+      "W 2001 roku zespół domów przy ul. Targowej 50 wraz z oficyną został wpisany do rejestru zabytków (nr rej.: 6-A z 19.01.2001).",
+      "18 stycznia 2002 roku pomieszczenia modlitewni zostały wynajęte przez gminę Warszawa-Centrum Fundacji Cmentarza Żydowskiego „Gęsia”.",
+      "1 czerwca 2005 roku Fundacja „Gęsia” na wniosek konserwatora zabytków Ryszarda Głowacza przerwała renowację budynku.",
+      "Po otwarciu Muzeum Warszawskiej Pragi sale dawnego domu modlitwy stały się częścią wystawy stałej."
+    ],
+    "ciekawostki": [
+      "W jego wnętrzu znajdują się jedne z dwóch zachowanych malowideł synagogalnych na Mazowszu; inskrypcja z chronogramem 5694 oznacza rok 1934."
+    ],
+    "summary_en": "A former synagogue prayer house in the rear wing of the Targowa 50/52 tenements, now part of the Warsaw Praga Museum. Its wall paintings, rediscovered in 1996, are among the few surviving in the Mazovia region, and the Gęsia Foundation began restoration in 2002.",
+    "ludzie": [
+      {"kto": "Janusz Sujecki", "rola": "varsavianista; w 1996 odkrył malowidła ścienne", "wiki": null},
+      {"kto": "Jarosław Zieliński", "rola": "z Towarzystwa Opieki nad Zabytkami; w 1996 odkrył malowidła ścienne", "wiki": null},
+      {"kto": "Ryszard Głowacz", "rola": "konserwator zabytków; na jego wniosek w 2005 przerwano renowację", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Żydowski dom modlitwy w Warszawie (ul. Targowa 50/52)", "url": "https://pl.wikipedia.org/wiki/%C5%BBydowski_dom_modlitwy_w_Warszawie_%28ul._Targowa_50/52%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

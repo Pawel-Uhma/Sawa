@@ -1,0 +1,300 @@
+[
+  {
+    "id": "dzielnica-wiedzy",
+    "nazwa": "Dzielnica Wiedzy (Dzielnica Nauki)",
+    "name_en": "Knowledge District (Science District)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "okolice ul. Rakowieckiej, Wawelskiej, Pasteura i Grójeckiej",
+    "adres_historyczny": null,
+    "lat": 52.207867, "lon": 20.999968,
+    "lokalizacja": "przyblizona",
+    "okres": "1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jednym z pierwszych zaplanowanych (1920) budynków Dzielnicy Nauki był gmach Instytutu Geologicznego przy ul. Rakowieckiej 4.",
+      "Pierwsze projekty przygotowane przez zespół Tadeusza Zielińskiego powstały w 1923 roku.",
+      "Plany Dzielnicy Wiedzy opracowali Manuel Sanchez Arcas i Stanisław Płoski; miała sięgać od ul. Grójeckiej do Puławskiej, a jej obszar miał wynieść 50 hektarów.",
+      "Zrealizowaną inwestycją planowanej Dzielnicy Wiedzy był gmach główny Szkoły Głównej Planowania i Statystyki, ukończony w 1956 roku; Jan Witkiewicz częściowo zmodyfikował swój przedwojenny projekt, otrzymując Nagrodę Państwową.",
+      "Kampus Ochota, zespół budynków kilkunastu jednostek naukowych, powstał między ulicami Wawelską a księcia Trojdena oraz Grójecką a Żwirki i Wigury na przełomie XX i XXI wieku."
+    ],
+    "ciekawostki": [
+      "Kampus Ochota w 2017 roku tworzyły m.in. Wydział Biologii, Wydział Chemii, Wydział Fizyki, Wydział Matematyki, Informatyki i Mechaniki oraz domy studenckie nr 1 Muchomorek i nr 2 Żwirek."
+    ],
+    "summary_en": "A planned science district in south-western Warsaw, first conceived in 1916–1920 and partly built. Only some of its buildings were realised, including the Main Building of the School of Planning and Statistics, finished in 1956. Later academic buildings form the Ochota Campus.",
+    "ludzie": [
+      {"kto": "Tadeusz Tołwiński", "rola": "kierownik Koła Architektów, autor planu rozwoju Warszawy z 1916", "wiki": null},
+      {"kto": "Tadeusz Zieliński", "rola": "autor pierwszych projektów (1923) gmachu WSH", "wiki": null},
+      {"kto": "Manuel Sanchez Arcas", "rola": "autor planów Dzielnicy Wiedzy (po wojnie)", "wiki": null},
+      {"kto": "Stanisław Płoski", "rola": "autor planów Dzielnicy Wiedzy (po wojnie)", "wiki": null},
+      {"kto": "Jan Witkiewicz", "rola": "autor projektu gmachu SGPiS (ukończonego w 1956)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dzielnica Nauki", "Dzielnica Piłsudskiego (plan z okresu międzywojennego)"],
+    "zrodla": [{"tytul": "Wikipedia: Dzielnica Wiedzy", "url": "https://pl.wikipedia.org/wiki/Dzielnica_Wiedzy"}],
+    "pewnosc": "średnia",
+    "uwagi": "Większość planów nie została zrealizowana. Dzielnica i współrzędne z nagłówka."
+  },
+  {
+    "id": "dzwon-pokoju",
+    "nazwa": "Dzwon Pokoju w Warszawie",
+    "name_en": "Peace Bell in Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana Sebastiana Bacha 15 (park przy Służewskim Domu Kultury)",
+    "adres_historyczny": "ul. Bukowińska 55",
+    "lat": 52.168353156, "lon": 21.023614129,
+    "lokalizacja": "dokladna",
+    "okres": "1989–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dzwon został podarowany w 1989 roku miastu stołecznemu Warszawa przez japońskie miasta Hiroszimę i Nagasaki.",
+      "Pierwotnie znajdował się przy ul. Bukowińskiej 55, w drewnianej dzwonnicy; został odsłonięty 2 września 1989 roku.",
+      "W grudniu 2002 roku dzwon skradziono i nie udało się go odnaleźć.",
+      "Koszty wykonania repliki dzwonu i jego transportu do Warszawy pokryła dzielnica Mokotów.",
+      "Odsłonięcie repliki w nowej lokalizacji, przy ul. Jana Sebastiana Bacha 15, odbyło się 20 września 2015 roku w trakcie Festiwalu Kultury Japońskiej."
+    ],
+    "ciekawostki": [
+      "Dzwon odlano w Japonii z monet zebranych w wielu krajach; był jedną z 50 identycznych kopii dzwonu w Hiroszimie.",
+      "Zwyczajem było bicie w dzwon dwa razy w roku: w Międzynarodowy Dzień Pokoju (trzeci wtorek września) oraz w rocznicę wybuchu II wojny światowej (1 września)."
+    ],
+    "summary_en": "A replica of the Hiroshima peace bell, given to Warsaw in 1989 by Hiroshima and Nagasaki. The original was stolen in 2002 and never recovered. Mokotów district paid for a replica, unveiled in a new location in 2015.",
+    "ludzie": [],
+    "dawne_nazwy": ["Dzwon Pokoju przy ul. Bukowińskiej 55"],
+    "zrodla": [{"tytul": "Wikipedia: Dzwon Pokoju w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dzwon_Pokoju_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł: w 2015 eksponowany przy Bacha 15; w tekście określony jako replika."
+  },
+  {
+    "id": "egzekucja-przy-ul-dworkowej",
+    "nazwa": "Egzekucja przy ul. Dworkowej (masakra jeńców, 27.09.1944)",
+    "name_en": "Execution on Dworkowa Street (27 Sept 1944)",
+    "typ": "zdarzenie",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Dworkowa (przy dawnej komendzie żandarmerii)",
+    "adres_historyczny": null,
+    "lat": 52.205461, "lon": 21.024174,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "istnieje": true,
+    "fakty": [
+      "27 września 1944 roku niemieccy policjanci wymordowali dziesiątki obrońców Mokotowa, którzy omyłkowo wyszli z kanałów w pobliżu komendy żandarmerii przy ul. Dworkowej.",
+      "Według Marka Gettera w dwóch egzekucjach przy ul. Dworkowej Niemcy zamordowali tego dnia około 140 wziętych do niewoli żołnierzy AK.",
+      "Udało się ustalić nazwiska zaledwie pięciu ofiar masakry.",
+      "Ocalało zaledwie 40 osób – w większości kobiety – które Niemcy wywieźli później do obozu koncentracyjnego Stutthof.",
+      "Żołnierzy AK zamordowanych przy ul. Dworkowej upamiętnia Pomnik żołnierzy „Baszty” znajdujący się naprzeciwko dawnej siedziby żandarmerii.",
+      "Tragiczny przebieg ewakuacji Mokotowa, w tym sceny nawiązujące do egzekucji przy ul. Dworkowej, ukazano w filmie Andrzeja Wajdy „Kanał” (1957)."
+    ],
+    "ciekawostki": [
+      "Od włazu kanałowego do pomnika prowadzą namalowane ślady stóp."
+    ],
+    "summary_en": "On 27 September 1944, during the last days of the Warsaw Uprising, German police executed about 140 Home Army soldiers who had come up from the sewers on Dworkowa Street in Mokotów. The 'Baszta' regiment memorial marks the site.",
+    "ludzie": [
+      {"kto": "Józef Rokicki „Karol”", "rola": "podpułkownik AK, dowodził obroną Mokotowa", "wiki": null},
+      {"kto": "Antoni Chruściel „Monter”", "rola": "pułkownik, dowódca Okręgu Warszawskiego AK", "wiki": null},
+      {"kto": "Marek Getter", "rola": "autor cytowany w artykule (liczba ofiar ok. 140)", "wiki": null},
+      {"kto": "Andrzej Wajda", "rola": "reżyser filmu „Kanał” (1957)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Egzekucja przy ulicy Dworkowej", "url": "https://pl.wikipedia.org/wiki/Egzekucja_przy_ulicy_Dworkowej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Typ: zdarzenie przypisane do miejsca. Współrzędne z nagłówka."
+  },
+  {
+    "id": "eko-park-cameratta",
+    "nazwa": "Eko-Park Cameratta",
+    "name_en": "Eko-Park Cameratta",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.205805555, "lon": 20.995055555,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół 3-piętrowych budynków mieszkalnych wielorodzinnych powstał w latach 2003–2004 według projektu pracowni Bulanda Mucha Architekci.",
+      "Zespół wchodzi w skład osiedla Eko-Park.",
+      "Nominacja do Nagrody Roku SARP 2005.",
+      "Finalista konkursu „Życie w Architekturze” w 2012 roku, organizowanego przez czasopismo Architektura-Murator.",
+      "Nominacja do Nagrody Architektonicznej Prezydenta m.st. Warszawy 2016 w kategorii Architektura mieszkaniowa – zespół 2001–2014."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small residential complex of three-storey apartment blocks in Mokotów, built in 2003–2004 by Bulanda Mucha Architekci as part of the Eko-Park estate. It was nominated for several architecture awards.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Eko-Park Cameratta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Eko-Park_Cameratta_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł głównie o nagrodach; historia ograniczona. Adres nieznany, współrzędne z nagłówka."
+  },
+  {
+    "id": "elektrocieplownia-siekierki",
+    "nazwa": "Elektrociepłownia Siekierki",
+    "name_en": "Siekierki Combined Heat and Power Plant",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Augustówka 30",
+    "adres_historyczny": null,
+    "lat": 52.189722, "lon": 21.089444,
+    "lokalizacja": "dokladna",
+    "okres": "1958–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt elektrociepłowni zatwierdzono w 1954 roku, a lokalizację na Augustówce w 1956 roku zatwierdził ówczesny premier Józef Cyrankiewicz.",
+      "Pierwsze prace budowlane zaczęły się w 1958 roku; pierwsza turbina o mocy 50 MW została podłączona 4 grudnia 1961.",
+      "W latach 1974–1978 uruchomiono cztery bloki ciepłownicze, a moc całkowita „Siekierek” przekroczyła 600 MW.",
+      "24 kwietnia 1976 roku pękła turbina generatora nr 4, a wyciekający z turbiny olej zapalił się.",
+      "W nocy sylwestrowej 1978 roku temperatura spadła z +8 do -15°C, a zamarznięty węgiel słabej jakości nie mógł być rozmrażany; 1 stycznia 1979 roku moc elektrociepłowni spadła do 14 MW.",
+      "Akumulator ciepła, zbudowany w latach 2008–marzec 2009, ma wysokość 47 metrów i pojemność 30,4 tys. m³."
+    ],
+    "ciekawostki": [
+      "Pierwszy komin o wysokości 120 metrów rozpoczął pracę w 1961 roku, po podłączeniu pierwszej turbiny."
+    ],
+    "summary_en": "Warsaw's Siekierki combined heat and power plant at Augustówka 30, commissioned in 1961 and at the time the largest in Poland. It was hit by a 1978 New Year's Eve coal freeze that cut output to 14 MW, and it has a 30,400 m³ heat accumulator built in 2008–2009.",
+    "ludzie": [
+      {"kto": "Józef Cyrankiewicz", "rola": "premier, zatwierdził lokalizację na Augustówce w 1956", "wiki": null}
+    ],
+    "dawne_nazwy": ["EC Siekierki"],
+    "zrodla": [{"tytul": "Wikipedia: Elektrociepłownia Siekierki", "url": "https://pl.wikipedia.org/wiki/Elektrociep%C5%82ownia_Siekierki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że elektrociepłownia przy Augustówce ma ok. 2068 MW mocy cieplnej i 620 MW elektrycznej (stan z artykułu)."
+  },
+  {
+    "id": "fort-m-twierdzy-warszawa",
+    "nazwa": "Fort M Twierdzy Warszawa (fort Mokotów)",
+    "name_en": "Fort M of the Warsaw Fortress (Mokotów Fort)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Racławicka 99",
+    "adres_historyczny": null,
+    "lat": 52.194653, "lon": 20.996267,
+    "lokalizacja": "dokladna",
+    "okres": "lata 80. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort M wzniesiono w latach 80. XIX wieku jako fort pierścienia wewnętrznego Twierdzy Warszawa, w pobliżu wsi Mokotów.",
+      "Po modernizacji twierdzy w latach 1889–1892 fort przeznaczono na cele magazynowe.",
+      "W okresie międzywojennym w forcie mieściły się stacje nadawcze Polskiego Radia; w grudniu 1926 roku zakończono tam montaż radiostacji Warszawa II o mocy 12 kW.",
+      "25 września 1939 roku niemiecka 10. Dywizja Piechoty zaatakowała fort, broniony przez kompanię IV batalionu 21 Pułku Piechoty „Dzieci Warszawy”.",
+      "Od 1961 r. do końca lat 80. XX w. w forcie mieściły się Zakłady Radiowe i Telewizyjne „Zarat”.",
+      "Fort wpisano do rejestru zabytków jako fort „Mokotów I” (nr rej. 808 z 12.03.1975)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1880s inner-ring fort of the Warsaw Fortress at Racławicka 99 in Mokotów. It housed Polish Radio transmitters between the wars, was attacked in September 1939 and was used later by the Zarat radio and TV plant.",
+    "ludzie": [],
+    "dawne_nazwy": ["Fort „Mokotów I”"],
+    "zrodla": [{"tytul": "Wikipedia: Fort M Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_M_Twierdzy_Warszawa"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fort-m-cze-twierdzy-warszawa",
+    "nazwa": "Fort M-Cze Twierdzy Warszawa (punkt oporu)",
+    "name_en": "Fort M-Cze of the Warsaw Fortress",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1975, "lon": 21.0222,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XIX w.–lata 20. XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Punkt oporu M-Cze był jednym z sześciu standardowych punktów oporu pierścienia wewnętrznego Twierdzy Warszawa, wzniesionych w ramach jej pierwszej modernizacji w latach 1889–1892.",
+      "Po 1909 roku w ramach likwidacji twierdzy fort został rozbrojony.",
+      "W latach 20. XX w., podczas rozbudowy Mokotowa, drogę wokół fortu zwaną „Na bateryjce” przemianowano na ulicę Czeczota, a fort zabudowano.",
+      "Fragment wału, którego fort był częścią, wyrównano i urządzono park Dreszera."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former resistance point of the inner ring of the Warsaw Fortress, built in the 1890s and disarmed after 1909. In the 1920s it was built over and its rampart became Dreszer Park.",
+    "ludzie": [],
+    "dawne_nazwy": ["Na bateryjce (droga wokół fortu)"],
+    "zrodla": [{"tytul": "Wikipedia: Fort M-Cze Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_M-Cze_Twierdzy_Warszawa"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie podaje adresu; współrzędne z nagłówka, przybliżone."
+  },
+  {
+    "id": "fort-viia-twierdzy-warszawa",
+    "nazwa": "Fort VIIA „Służewiec” Twierdzy Warszawa",
+    "name_en": "Fort VIIA \"Służewiec\" of the Warsaw Fortress",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "al. Lotników 1",
+    "adres_historyczny": null,
+    "lat": 52.172917, "lon": 21.015694,
+    "lokalizacja": "dokladna",
+    "okres": "lata 90. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort VIIA („Służewiec”) jest punktem oporu zewnętrznego pierścienia Twierdzy Warszawa, wybudowanym w latach 90. XIX w.",
+      "Zadaniem punktu była obrona drogi w kierunku Puław, czyli dzisiejszej ulicy Puławskiej.",
+      "Po 1909, w ramach likwidacji twierdzy, wysadzono wszystkie schrony bojowe; zachowano betonowy schron magazynowy.",
+      "W okresie powojennym nieruchomość stała się własnością Wytwórni Filmowej „Czołówka”, która umieściła tam swoje archiwa.",
+      "Fort wpisano do rejestru zabytków (nr rej. 1478 z 27.01.1992)."
+    ],
+    "ciekawostki": [
+      "Na północ od fortu w latach 70. XX w. wybudowano osiedle Służew Fort."
+    ],
+    "summary_en": "A late 19th-century outer-ring fort of the Warsaw Fortress in Służewiec, built with concrete bunkers. After 1909 most bunkers were blown up. After the war it became the property of the film studio Czołówka. It is a registered monument.",
+    "ludzie": [],
+    "dawne_nazwy": ["Fort VII-A „Służewiec”"],
+    "zrodla": [{"tytul": "Wikipedia: Fort VIIA Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_VIIA_Twierdzy_Warszawa"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fort-x-twierdzy-warszawa",
+    "nazwa": "Fort X Twierdzy Warszawa („Augustówka”, „Siekierki”)",
+    "name_en": "Fort X of the Warsaw Fortress (Augustówka)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2075, "lon": 21.08694444,
+    "lokalizacja": "dokladna",
+    "okres": "lata 80. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort X wybudowano w latach 80. XIX wieku jako jeden z fortów pierścienia zewnętrznego Twierdzy Warszawa.",
+      "Ze względu na położenie na terenie podmokłym, blisko brzegów Wisły, fort nie otrzymał ceglanych ani betonowych schronów; była to ziemna, dwuwałowa bateria otoczona mokrą fosą.",
+      "W 1913 roku w ramach likwidacji twierdzy część elementów fortu zniszczono.",
+      "W 1939 roku w oparciu o fort broniły się wojska polskie, a w 1944 niemieckie.",
+      "Po wojnie na jego terenie urządzono strzelnicę wojskową."
+    ],
+    "ciekawostki": [
+      "Pozostałości fortu można obejrzeć z Trasy Siekierkowskiej, w czasie budowy której teren umocnienia został uporządkowany."
+    ],
+    "summary_en": "A late 19th-century outer-ring fort of the Warsaw Fortress by the Vistula, on the Augustówka and Siekierki site. It was an earthwork battery surrounded by a wet moat, with no bunkers. It saw action in 1939 and 1944 and its remains can be seen from the Siekierki Tunnel road.",
+    "ludzie": [],
+    "dawne_nazwy": ["Augustówka", "Siekierki (fort)"],
+    "zrodla": [{"tytul": "Wikipedia: Fort X Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_X_Twierdzy_Warszawa"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fosa-wolicka",
+    "nazwa": "Fosa Wolicka",
+    "name_en": "Wolicka Moat",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "wzdłuż ul. Wolickiej (między Jeziorkiem Czerniakowskim a Łachą Siekierkowską)",
+    "adres_historyczny": null,
+    "lat": 52.201016666, "lon": 21.072288888,
+    "lokalizacja": "dokladna",
+    "okres": "1891–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fosa Wolicka to zbiornik wodny położony wzdłuż ul. Wolickiej, pomiędzy Jeziorkiem Czerniakowskim a Łachą Siekierkowską.",
+      "Fosa była elementem systemu carskiej Twierdzy Warszawa z okresu zaboru rosyjskiego, razem z Wałem Międzyfortowym.",
+      "Wał między Jeziorkiem Czerniakowskim a fortem X „Augustówka” powstał w 1891 roku.",
+      "Fosa, długa na 600 metrów, została odtworzona w ramach budowy Trasy Siekierkowskiej.",
+      "Fosa jest wykorzystywana jako zbiornik retencyjny; odprowadzane są do niej wody deszczowe z odwodnienia Trasy Siekierkowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A moat along Wolicka Street in Mokotów, part of the tsarist-era Warsaw Fortress system. It was restored during construction of the Siekierki Tunnel road and now serves as a rainwater retention basin.",
+    "ludzie": [],
+    "dawne_nazwy": ["Fosa fortu X (system wodny Siekierek)"],
+    "zrodla": [{"tytul": "Wikipedia: Fosa Wolicka", "url": "https://pl.wikipedia.org/wiki/Fosa_Wolicka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł ma uciętą sekcję wstępu w źródle; fakty pochodzą z pełnego tekstu w paczce."
+  }
+]
