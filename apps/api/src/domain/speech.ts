@@ -1,4 +1,4 @@
-import { spellYears } from "./spoken-years";
+import { spellNumbers } from "./spoken-numbers";
 import { cleanForSpeech } from "./story";
 
 /** Synthesized speech ready to send to the client. */
@@ -9,11 +9,11 @@ export type SpeechAudio = {
 
 /**
  * Text as it goes to TTS and as the cache key: same words with different spacing are one clip.
- * Line breaks become spaces because ElevenLabs reads a newline as a long pause, and years in
- * digits become words because it reads digits badly.
+ * Line breaks become spaces because ElevenLabs reads a newline as a long pause, and numbers in
+ * digits (years, house numbers, amounts) become words because it reads digits badly.
  */
 export function normalizeSpeechText(text: string): string {
-  return spellYears(text.replace(/\s+/g, " ").trim());
+  return spellNumbers(text.replace(/\s+/g, " ").trim());
 }
 
 /** The first chunk is short so the voice starts soon; later ones are longer for steadier prosody. */

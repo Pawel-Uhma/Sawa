@@ -1,6 +1,6 @@
 "use client";
 
-import type { Side, Story } from "@sawa/shared";
+import { MAX_HEARD_PLACES, type Side, type Story } from "@sawa/shared";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { api } from "@/lib/api";
 import type { Listener } from "./api-data";
@@ -20,6 +20,9 @@ const LEAD_CHARS = 3;
 const LAST_STOP_SEC = 75;
 const MIN_TARGET_SEC = 20;
 const MAX_TARGET_SEC = 600;
+/** Sawa stays quiet at a dull place: the card says so this long, then the topic ends. */
+const SILENT_MS = 1500;
+const SILENT_TEXT = "Tu jedziemy dalej.";
 /** When even the story text fails, the card waits this long and moves on. */
 const FAILED_STORY_MS = 6000;
 /** Przerwany temat cichnie zamiast urywać się w pół słowa. */
@@ -61,8 +64,13 @@ function isLoaded(audio: HTMLAudioElement, clip: Clip | null): boolean {
   return Boolean(clip?.audioUrl) && audio.getAttribute("src") === clip?.audioUrl;
 }
 
-/** What a story told, for the listener's memory. */
-export type Told = Pick<Story, "placeId" | "factIds" | "contextIds"> & { placeName?: string };
+/**
+ * What a story told, for the listener's memory. `suggestion`: nothing new was left here, Sawa
+ * offers the place next door instead.
+ */
+export type Told = Pick<Story, "placeId" | "factIds" | "contextIds" | "suggestion"> & {
+  placeName?: string;
+};
 
 /**
  * One story being told: the voice streams from `audioUrl` while the API still writes the text,
@@ -75,6 +83,8 @@ export type Clip = {
   placeName?: string;
   text?: string;
   told?: Told;
+  /** Nothing worth telling here (`Story.silent`): no voice, the topic ends at once. */
+  silent?: boolean;
 };
 
 /**
@@ -120,8 +130,11 @@ export async function fetchClip(
   targetSec: number,
   placeName?: string,
   side?: Side,
+  /** „Więcej o tym miejscu”: gdy nic nowego nie zostało, Sawa poleca miejsce obok. */
+  { more = false }: { more?: boolean } = {},
 ): Promise<Clip> {
   const memory = getMemory();
+  const heardAt = memory.places[placeId]?.at;
   const json = {
     placeId,
     targetSec,
@@ -129,13 +142,18 @@ export async function fetchClip(
     ...listener,
     heardFacts: memory.places[placeId]?.facts ?? [],
     knownContexts: memory.contexts,
+    // Sawa mówi „tydzień temu opowiadałam ci…”, a nie „pamiętasz…”.
+    heardAgoSec:
+      heardAt === undefined ? undefined : Math.max(0, Math.floor((Date.now() - heardAt) / 1000)),
+    ...(more && { more, heardPlaceIds: Object.keys(memory.places).slice(-MAX_HEARD_PLACES) }),
   };
   if (!voiceOn()) {
     const res = await api.v1.stories.$post({ json });
     if (!res.ok) throw new Error(`POST /v1/stories: ${res.status}`);
-    const { text, factIds, contextIds } = await res.json();
-    const told = { placeId, factIds, contextIds, placeName };
-    return { id: `${placeId}:${Date.now()}`, audioUrl: null, placeId, placeName, text, told };
+    const { text, factIds, contextIds, suggestion, silent } = await res.json();
+    const told = { placeId, factIds, contextIds, suggestion, placeName };
+    const id = `${placeId}:${Date.now()}`;
+    return { id, audioUrl: null, placeId, placeName, text, told, silent };
   }
   const res = await api.v1.stories.live.$post({ json });
   if (!res.ok) throw new Error(`POST /v1/stories/live: ${res.status}`);
@@ -145,7 +163,14 @@ export async function fetchClip(
 }
 
 /** The text of a clip as Sawa writes it; `told` once it is finished. */
-export type LiveText = { text: string | null; done: boolean; told: Told | null; failed: boolean };
+export type LiveText = {
+  text: string | null;
+  done: boolean;
+  told: Told | null;
+  failed: boolean;
+  /** Sawa has nothing worth telling here and stays quiet (`Story.silent`). */
+  silent?: boolean;
+};
 
 const NO_TEXT: LiveText = { text: null, done: false, told: null, failed: false };
 /** The text grows a sentence or two a second; this keeps the card close behind the voice. */
@@ -158,7 +183,8 @@ export function useLiveText(clip: Clip | null): LiveText {
     setLive(NO_TEXT);
     if (!clip) return;
     if (clip.text !== undefined) {
-      setLive({ text: clip.text, done: true, told: clip.told ?? null, failed: !clip.text });
+      const { text, told, silent } = clip;
+      setLive({ text, done: true, told: told ?? null, failed: !text, silent });
       return;
     }
     let cancelled = false;
@@ -173,9 +199,11 @@ export function useLiveText(clip: Clip | null): LiveText {
           placeId: clip.placeId,
           factIds: story.factIds,
           contextIds: story.contextIds,
+          suggestion: story.suggestion,
           placeName: clip.placeName,
         };
-        setLive({ text: text || null, done, told, failed: done && !story && !text });
+        const silent = story?.silent;
+        setLive({ text: text || null, done, told, failed: done && !story && !text, silent });
         if (!done) timer = setTimeout(poll, POLL_MS);
       } catch {
         if (!cancelled) setLive((l) => ({ ...l, done: true, failed: !l.text }));
@@ -289,14 +317,14 @@ export function useStoryPlayer(
   }, []);
 
   const load = useCallback(
-    (index: number) => {
+    (index: number, more = false) => {
       const stop = stops[index];
       if (!stop) return null;
       const targetSec = targetSecFor(stops, index);
       const key = clipKey(stop.id, listener, targetSec);
       let pending = cache.current.get(key);
       if (!pending) {
-        pending = fetchClip(stop.id, listener, targetSec, stop.name, stop.side);
+        pending = fetchClip(stop.id, listener, targetSec, stop.name, stop.side, { more });
         cache.current.set(key, pending);
         pending.catch(() => cache.current.delete(key));
       }
@@ -321,7 +349,8 @@ export function useStoryPlayer(
 
   /**
    * „Więcej o tym miejscu”: uznaje obecną opowieść za znaną i prosi o nową o tym samym miejscu.
-   * Pamięć idzie do zapytania, więc Sawa nie powtórzy faktów.
+   * Pamięć idzie do zapytania, więc Sawa nie powtórzy faktów. Gdy nic nowego nie zostało, Sawa
+   * mówi to i poleca miejsce obok (`suggestion`).
    */
   const more = useCallback(() => {
     const stop = stops[activeIndex];
@@ -333,7 +362,7 @@ export function useStoryPlayer(
     setStartFailed(false);
     setProgress(0);
     setIsPlaying(true);
-    load(activeIndex)
+    load(activeIndex, true)
       ?.then((next) => activeId.current === stop.id && setClip(next))
       .catch(() => activeId.current === stop.id && setStartFailed(true));
   }, [stops, activeIndex, clip, live.told, load, listener]);
@@ -410,9 +439,16 @@ export function useStoryPlayer(
       .catch(() => setIsPlaying(false));
   }, [speaking, aside, hasVoice, clip]);
 
+  // Nic ciekawego w tym miejscu: Sawa milczy, temat kończy się po krótkiej pauzie.
+  useEffect(() => {
+    if (!speaking || !live.silent) return;
+    const timer = setTimeout(() => setProgress(100), SILENT_MS);
+    return () => clearTimeout(timer);
+  }, [speaking, live.silent]);
+
   // Progress in animation frames, so the bar moves smoothly
   useEffect(() => {
-    if (!speaking || (!clip && !failed)) return;
+    if (!speaking || (!clip && !failed) || live.silent) return;
     const audio = audioRef.current;
     // Without the voice the timer waits for the whole text, which says how long to wait.
     if (!hasVoice && !failed && !live.done) return;
@@ -481,7 +517,7 @@ export function useStoryPlayer(
   );
 
   return {
-    text: live.text,
+    text: live.silent ? SILENT_TEXT : live.text,
     loading: !failed && live.text === null,
     failed,
     /** Czy Sawa mówi teraz o trasie; w trakcie dygresji `false`, choć trasa wróci sama. */
@@ -493,6 +529,8 @@ export function useStoryPlayer(
     toggle,
     restart,
     more,
+    /** Po „Więcej”, gdy o tym miejscu nic nowego nie zostało: miejsce obok, o którym Sawa opowie. */
+    suggestion: live.told?.suggestion ?? null,
   };
 }
 

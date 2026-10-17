@@ -60,6 +60,11 @@ const PlaceCardHost = dynamic(() => import("./place-card-host").then((mod) => mo
 
 type Stage = "onboarding" | "map" | "route";
 
+// Lista „co już opowiedziałam” zaznacza miejsce w URL-u (`?p=`), więc też tylko w przeglądarce.
+const ToldModal = dynamic(() => import("./told-modal").then((mod) => mod.ToldModal), {
+  ssr: false,
+});
+
 // Szerokość panelu (md: 360, lg: 400) i margines wokół niego, jak w route-sheet.tsx i home-panel.tsx
 const PANEL_PX = { tablet: 360, laptop: 400 };
 const DESKTOP_GAP_PX = 24;
@@ -82,6 +87,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const [profile, setProfile] = useState<Profile>(isStage ? DEMO_PROFILE : EMPTY_PROFILE);
   // Edycja jednego pola profilu idzie przez modal, nigdy przez onboarding.
   const [editing, setEditing] = useState<ProfileStep | null>(null);
+  const [toldOpen, setToldOpen] = useState(false);
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(isStage ? DEMO_DURATION_MIN : 90);
   const [endType, setEndType] = useState<RideEndType>("loop");
@@ -382,7 +388,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       },
       onRestart: restart,
       rememberedPlaces: Object.keys(memory.places).length,
-      onForget: forgetAll,
+      onOpenTold: () => setToldOpen(true),
       startMode: start.mode,
       startLabel: startLabel(start.status, lang),
       onStartModeChange: start.setMode,
@@ -573,6 +579,14 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
             profile={profile}
             onSave={saveEditing}
             onClose={closeEditing}
+          />
+          <ToldModal
+            open={toldOpen}
+            onClose={() => setToldOpen(false)}
+            onShowPlace={() => {
+              setStage("map");
+              setTab("map");
+            }}
           />
         </div>
       </SawaMenuProvider>
