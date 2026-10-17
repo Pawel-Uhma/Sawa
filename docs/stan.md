@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 22:13 (Paweł, z agentem R3): **jeden ruch kamery przy pierwszym kliknięciu miejsca (T-154, #117).** Przyczyna: bez pozycji (szczegóły jeszcze się ładują) kamera wracała na start, a potem jechała do miejsca. Teraz czeka (`{ type: "stay" }`) i jedzie raz.
+
 - 21:30 (Jasiek, z agentem R2): **symulacja 100 klientów na produkcji: 0 błędów** (mapa, karta miejsca, planer, pojazdy; 100 naraz: mapa p95 0,25 s, planer 2,1 s; 300 naraz bez błędów, ale p95 5–10 s). Opowieści nietestowane (kredyty). Limit opowieści na IP podniesiony z 300 do 3000 / 10 min (`routes/stories.ts`, plik R4, na prośbę Jaśka), bo Wi-Fi sali to jedno IP. **Dla R4:** `/v1/stories/warm` puszcza wyszukiwanie w sieci dla każdego miejsca trasy bez limitu; o 21:13 Gemini przez OpenRouter dał 168× 429, przy 100 osobach grozi opowieściami z samych faktów.
 
 - 21:10 (Jasiek, z agentem R2): **cache zapytań do Supabase pod demo (~100 osób naraz).** `createCachedPlacesRepository` (`apps/api/src/adapters/supabase/`): `/v1/places` pyta bazę o kafel siatki 0,02° bez filtrów, przycina bbox i zainteresowania w pamięci; `getById` (opowieści, karta miejsca) w pamięci. TTL 5 min, równoległe żądania czekają na jedno zapytanie, błędy nie są zapamiętywane, po TTL stara wartość od razu i odświeżenie w tle (gdy Supabase padnie, zostaje stara). Gałąź `r2/cache-supabase`.
