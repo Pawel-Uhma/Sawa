@@ -1,11 +1,12 @@
 "use client";
 
-import type { Route, Travel } from "@sawa/shared";
+import { HACKATHON_VENUE, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
+import { useDemoDrive } from "../lib/demo-drive";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
 import { shortestStopFor, useFastestRoute } from "../lib/fastest-route";
 import { forgetAll, useMemory } from "../lib/memory";
@@ -47,15 +48,24 @@ type Stage = "onboarding" | "map" | "route";
 const PANEL_PX = { tablet: 360, laptop: 400 };
 const DESKTOP_GAP_PX = 24;
 
-export function DemoApp() {
+// Podstrona /demo na scenę: bez onboardingu, start zawsze spod 42 Warsaw, trasa układa się sama.
+const DEMO_PROFILE: Profile = {
+  familiarity: "first_time",
+  interests: ["historical"],
+  storyStyle: "fun",
+};
+const DEMO_DURATION_MIN = 90;
+
+export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
+  const isStage = scenario === "stage";
   const isDesktop = useIsDesktop();
   const isWide = useIsWide();
-  const [stage, setStage] = useState<Stage>("onboarding");
-  const [profile, setProfile] = useState<Profile>(EMPTY_PROFILE);
+  const [stage, setStage] = useState<Stage>(isStage ? "map" : "onboarding");
+  const [profile, setProfile] = useState<Profile>(isStage ? DEMO_PROFILE : EMPTY_PROFILE);
   // Edycja jednego pola profilu idzie przez modal, nigdy przez onboarding.
   const [editing, setEditing] = useState<ProfileStep | null>(null);
   const [tab, setTab] = useState<Tab>("map");
-  const [durationMin, setDurationMin] = useState(90);
+  const [durationMin, setDurationMin] = useState(isStage ? DEMO_DURATION_MIN : 90);
   const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "loop" });
   const [travel, setTravel] = useState<Travel>("transit");
   // Ostatni wybrany cel wraca po przełączeniu „Wracam tu” → „Do celu”
@@ -72,8 +82,9 @@ export function DemoApp() {
   const [selectedPlace, setSelectedPlace] = useState<PlaceSelection | null>(null);
   const [placeCoverPx, setPlaceCoverPx] = useState(360);
   // O zgodę na lokalizację pytamy dopiero po onboardingu
-  const start = useStartPoint(stage !== "onboarding");
-  const origin = start.point;
+  // Na scenie nie pytamy o lokalizację: stała pozycja pod 42 Warsaw
+  const start = useStartPoint(!isStage && stage !== "onboarding");
+  const origin = isStage ? HACKATHON_VENUE : start.point;
   const fastest = useFastestRoute(origin, profile, rideEnd, travel);
   // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
   const minDurationMin =
@@ -150,13 +161,21 @@ export function DemoApp() {
   // Do sprawdzenia localStorage onboarding się nie pokazuje, żeby nie mignął.
   const [restored, setRestored] = useState(false);
   useEffect(() => {
-    const saved = loadProfile();
+    const saved = isStage ? null : loadProfile();
     if (saved) {
       setProfile(saved);
       setStage("map");
     }
     setRestored(true);
-  }, []);
+  }, [isStage]);
+
+  // Na scenie trasa układa się sama raz, zaraz po wejściu (bez zapisu profilu w przeglądarce).
+  const autoPlanned = useRef(false);
+  useEffect(() => {
+    if (!isStage || autoPlanned.current) return;
+    autoPlanned.current = true;
+    generateRoute();
+  }, [isStage, generateRoute]);
 
   const finishOnboarding = useCallback((next: Profile) => {
     setProfile(next);
@@ -165,8 +184,6 @@ export function DemoApp() {
   }, []);
 
   const editProfile = useCallback((step: ProfileStep) => setEditing(step), []);
-
-  const editInterests = useCallback(() => setEditing("interests"), []);
 
   const closeEditing = useCallback(() => setEditing(null), []);
 
@@ -249,6 +266,8 @@ export function DemoApp() {
     },
     [syncTo],
   );
+  // Na scenie autobus jedzie sam: aktywny punkt idzie po trasie w ok. 1,5 min (T-36)
+  useDemoDrive(isStage && isRoute, route, pickStop);
   // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
   // (zegar jazdy albo GPS). Po wyjściu z trasy pauza, a po wejściu wznowienie.
   const waiting = clock.waitSec !== null;
@@ -317,7 +336,9 @@ export function DemoApp() {
         <div className="fixed inset-0 overflow-hidden bg-mapa">
           <div className="absolute inset-0">
             <SawaMap
-              route={isRoute ? (planned ?? undefined) : undefined}
+              route={
+                isRoute ? (planned ?? undefined) : isHome ? (fastestRoute ?? undefined) : undefined
+              }
               camera={camera}
               padding={padding}
               user={origin}
@@ -349,7 +370,6 @@ export function DemoApp() {
             {isHome && !isPlaceOpen && (
               <HomePanel
                 key="home"
-                interests={profile.interests}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
                 fastestMin={fastestRoute?.totalMin ?? null}
@@ -360,7 +380,6 @@ export function DemoApp() {
                 rideEnd={rideEnd}
                 onRideEndTypeChange={changeRideEndType}
                 onRideEndChange={changeRideEnd}
-                onEditInterests={editInterests}
                 collapsed={panelCollapsed}
                 onCollapsedChange={setPanelCollapsed}
                 onGenerate={generateRoute}

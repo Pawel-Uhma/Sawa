@@ -21,15 +21,18 @@ const CLUSTER_MIN_POINTS = 10;
 const CLUSTERED: FilterSpecification = ["has", "point_count"];
 const UNCLUSTERED: FilterSpecification = ["!", CLUSTERED];
 
-/** Icon scale (1 = 48 css px): grows with zoom, and richer places are a bit larger. */
+/**
+ * Icon scale (1 = 48 css px): grows with zoom, and richer places are a bit larger.
+ * Large enough to tell the five shapes apart at zoom 15 (about 36 css px).
+ */
 const ICON_SIZE: ExpressionSpecification = [
   "interpolate",
   ["linear"],
   ["zoom"],
   12,
-  ["interpolate", ["linear"], ["get", "richness"], 1, 0.36, 40, 0.48],
-  16,
-  ["interpolate", ["linear"], ["get", "richness"], 1, 0.56, 40, 0.72],
+  ["interpolate", ["linear"], ["get", "richness"], 1, 0.6, 40, 0.7],
+  17,
+  ["interpolate", ["linear"], ["get", "richness"], 1, 0.85, 40, 0.95],
 ];
 
 type PlacesLayerProps = {

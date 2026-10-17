@@ -1,5 +1,7 @@
 # Ikony mapy
 
+**Od 17.10, 18:05 miejsca mają znaczniki „Naklejka”** (wariant I z [dziennika UI](../README.md)): pełny glif w kolorze grupy z białą obwódką i cieniem, 5 kształtów (kamienica, obelisk, kropla farby, krzyż, gwiazda). Ilustracje niżej były za drobne na mapie. SVG są w `znaczniki/`, a PNG 96 px do `apps/web/public/map-icons/` generuje `node docs/ui/ikony-mapy/znaczniki.mjs` (render w Chrome headless). Przystanek, tramwaj i autobus zostają z zestawu poniżej.
+
 Styl „płaski kontrast” (wariant 3 z rundy naklejek) wybrał Paweł 17.10 około 16:00. Generator: fal `flux-2-pro`, 768×768, paleta: Głębia `#17706F`, mięta `#8ED1B5`, koral `#F2755F`. Galeria zestawu: https://claude.ai/artifact/LzTXCk53xHXhSTbTMbG7w8
 
 Tramwaj (`10`) wygenerowany jeszcze raz o 17:05 z pantografem i szynami, bo pierwsza wersja wyglądała jak przód autobusu.

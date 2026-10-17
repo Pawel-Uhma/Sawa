@@ -1,0 +1,315 @@
+[
+  {
+    "id": "palac-sobanskich",
+    "nazwa": "Pałac Sobańskich",
+    "name_en": "Sobański Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 13",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1853–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono jako renesansową willę w 1853 roku według projektu Juliana Ankiewicza dla Anieli Bławackiej; niektóre źródła podają, że pałac wzniesiono dopiero w 1876 roku przez rodzinę Sobańskich.",
+      "W 1876 roku architekt Leandro Marconi przebudował willę na pałacyk i umieścił przed nią Dawida, kopię rzeźby Donatella.",
+      "W 1912 roku wejście do budynku ozdobiły popiersia królów: Kazimierza Wielkiego i Władysława Jagiełły.",
+      "Za pałacem znajdował się rozległy ogród, zlikwidowany w okresie międzywojennym.",
+      "Pałac został zburzony podczas powstania warszawskiego, po wojnie odbudowany; mieściła się w nim siedziba Frontu Jedności Narodu (1952-1983), później Patriotycznego Ruchu Odrodzenia Narodowego (do 1989).",
+      "Po przemianach gospodarczych pałac najpierw stał się siedzibą Komitetu Obywatelskiego „Solidarność”, a potem Klubu Polskiej Rady Biznesu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Tuscan Renaissance-style palace at Aleje Ujazdowskie 13, first built as a villa in 1853 and turned into a palace by Leandro Marconi in 1876. Destroyed in the 1944 uprising and rebuilt after the war, it now houses the Polish Business Council club.",
+    "ludzie": [
+      {"kto": "Julian Ankiewicz", "rola": "projektant willi z 1853 roku", "wiki": null},
+      {"kto": "Aniela Bławacka", "rola": "adresatka pierwotnego projektu willi (wg źródła)", "wiki": null},
+      {"kto": "Leandro Marconi", "rola": "architekt przebudowy w 1876 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Sobańskich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Sobańskich"}],
+    "pewnosc": "średnia",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Źródła różnią się co do daty wzniesienia (1853 czy 1876)."
+  },
+  {
+    "id": "palac-staszica",
+    "nazwa": "Pałac Staszica",
+    "name_en": "Staszic Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 72/74",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na miejscu wcześniejszych budowli, kaplicy grobowej carów rosyjskich i kościoła dominikanów wykupionego przez Stanisława Staszica w 1818 roku, wzniesiono budynek dla Towarzystwa Przyjaciół Nauk.",
+      "Budynek według projektu Antonio Corazziego powstał w latach 1820-1823 w stylu klasycystycznym.",
+      "11 maja 1830 roku Julian Ursyn Niemcewicz odsłonił przed pałacem pomnik Mikołaja Kopernika dłuta Bertela Thorvaldsena.",
+      "Po powstaniu listopadowym Towarzystwo rozwiązano, a budynek przeznaczono na Dyrekcję Loterii, która mieściła się tu do 1862 roku.",
+      "W latach 1857-1862 mieściła się tu Akademia Medyko-Chirurgiczna; później umieszczono tu rosyjskie gimnazjum męskie, tzw. „ruskie”.",
+      "Przebudowę w latach 1892-1893, w stylu rusko-bizantyjskim, wykonał Władimir Pokrowskij; umieszczono tu cerkiew św. Tatiany Rzymianki.",
+      "Po odzyskaniu niepodległości Marian Lalewicz przywrócił budynkowi formę corazziańską, choć nie była to pełna rekonstrukcja.",
+      "Gmach zrównano z ziemią w 1944 roku w wyniku powstania warszawskiego i akcji Brennkommando.",
+      "Odbudowany w latach 1946-1950 według projektu Piotra Biegańskiego, z przywróceniem oryginalnej formy.",
+      "Po wojnie mieściło się tu najpierw Towarzystwo Naukowe Warszawskie, a potem Polska Akademia Nauk, której siedzibą pałac jest do dziś."
+    ],
+    "ciekawostki": [
+      "Fragmenty klipu do piosenki Sokoła, Pono i Franka Kimono „W aucie” zostały zrealizowane przed wejściem do pałacu od strony Pomnika Kopernika."
+    ],
+    "summary_en": "A classicist palace at Nowy Świat 72/74, built in 1820-1823 by Antonio Corazzi for the Warsaw Society of Friends of Learning, founded by Stanisław Staszic. Destroyed in 1944 and rebuilt in 1946-1950, it is today the seat of the Polish Academy of Sciences.",
+    "ludzie": [
+      {"kto": "Stanisław Staszic", "rola": "wykupił teren i zainicjował budowę siedziby towarzystwa", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "projektant budynku (1820-1823)", "wiki": null},
+      {"kto": "Julian Ursyn Niemcewicz", "rola": "odsłonił pomnik Mikołaja Kopernika w 1830 roku", "wiki": null},
+      {"kto": "Bertel Thorvaldsen", "rola": "autor pomnika Mikołaja Kopernika", "wiki": null},
+      {"kto": "Władimir Pokrowskij", "rola": "autor przebudowy w latach 1892-1893", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "przywrócenie corazziańskiej formy po 1918 roku", "wiki": null},
+      {"kto": "Piotr Biegański", "rola": "projekt odbudowy w latach 1946-1950", "wiki": null}
+    ],
+    "dawne_nazwy": ["Towarzystwo Przyjaciół Nauk (siedziba)"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Staszica", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Staszica"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-tyszkiewiczow-potockich",
+    "nazwa": "Pałac Tyszkiewiczów-Potockich",
+    "name_en": "Tyszkiewicz-Potocki Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 32",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1785–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał w stylu klasycystycznym w dwóch etapach w latach 1785-1792 z inicjatywy marszałka wielkiego litewskiego Ludwika Tyszkiewicza.",
+      "Pierwotnie projektował go Stanisław Zawadzki; inwestor, niezadowolony z prostego wyglądu, odsunął go i w 1786 roku nakazał dokończyć budowę Janowi Chrystianowi Kamsetzerowi.",
+      "W 1820 roku pałac stał się wyłączną własnością Anny z Tyszkiewiczów; w latach 1821-1822 powstała nowa oficyna.",
+      "W 1840 roku pałac od matki zakupił August Potocki; w latach 40. XIX wieku przebudowano wnętrza, a oranżerię zaprojektował Henryk Marconi.",
+      "W 1923 roku pałac sprzedano Bankowi Gospodarstwa Krajowego, a od 1933 roku mieściła się tu Polska Akademia Literatury.",
+      "Pałac został spalony podczas II wojny światowej (uszkodzenia wyniosły około 50%); odbudowano go w latach 1948-1956 według projektu Jana Dąbrowskiego i przekazano Uniwersytetowi Warszawskiemu.",
+      "W latach 2014-2015 budynek odremontowano i zmodernizowano."
+    ],
+    "ciekawostki": [
+      "Wewnątrz zachowały się częściowo autentyczne wnętrza, m.in. Sala Bilardowa, Łazienka projektu Henryka Marconiego i Sala Stołowa.",
+      "Klatka schodowa wiodąca z piwnicy na drugie piętro ma zamurowane wejścia."
+    ],
+    "summary_en": "A classicist palace at Krakowskie Przedmieście 32, built in 1785-1792 for Ludwik Tyszkiewicz and later owned by the Potocki family. Burned in 1939-1945, it was rebuilt in 1948-1956 and now belongs to the University of Warsaw campus.",
+    "ludzie": [
+      {"kto": "Ludwik Tyszkiewicz", "rola": "marszałek wielki litewski, inwestor budowy", "wiki": null},
+      {"kto": "Stanisław Zawadzki", "rola": "pierwotny projektant, odsunięty od budowy", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "dokończył budowę według swojego projektu (od 1786)", "wiki": null},
+      {"kto": "August Potocki", "rola": "właściciel od 1840 roku", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projekt oranżerii w latach 40. XIX w.", "wiki": null},
+      {"kto": "Jan Dąbrowski", "rola": "projekt odbudowy w latach 1948-1956", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Tyszkiewiczów-Potockich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Tyszkiewiczów-Potockich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-wesslow",
+    "nazwa": "Pałac Wesslów",
+    "name_en": "Wessel Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "poł. XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał w połowie XVIII wieku dla generała Franciszka Jana Załuskiego, starosty grójeckiego.",
+      "W 1761 roku Załuski odsprzedał go podskarbiemu koronnemu Teodorowi Wesslowi, który w 1764 roku sprzedał go biskupowi kujawskiemu Antoniemu Ostrowskiemu.",
+      "W 1780 roku budynek na użytek poczty kupił Franciszek Ignacy Przebendowski; poczta mieściła się tu do 1874 roku.",
+      "W 1882 roku, przy poszerzaniu ulicy Trębackiej, wyburzono sąsiednią narożną kamienicę i przebudowano pałac według projektu Aleksandra Woydego i Władysława Marconiego; projekt zakładał dobudowę jednego piętra i ścięcie narożnika.",
+      "Od 1887 roku mieściła się tu przez jakiś czas redakcja Kuriera Codziennego i Tygodnika Ilustrowanego.",
+      "Pałac został zniszczony w czasie II wojny światowej; w latach 1947-1948 odbudowano go według planów sprzed 1882 roku, a odbudową kierował Jan Bieńkowski.",
+      "Obecnie w pałacu mieści się Prokuratura Apelacyjna i Instytut Wymiaru Sprawiedliwości."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A late-baroque palace at Krakowskie Przedmieście 25, built in the mid-18th century and once home to the Saxon Post Office. Destroyed in the Second World War, it was rebuilt in 1947-1948 and now houses a prosecutors' office.",
+    "ludzie": [
+      {"kto": "Franciszek Jan Załuski", "rola": "generał, starosta grójecki; pierwszy inwestor", "wiki": null},
+      {"kto": "Teodor Wessel", "rola": "podskarbi koronny, właściciel w 1761 roku", "wiki": null},
+      {"kto": "Antoni Ostrowski", "rola": "biskup kujawski, właściciel od 1764 roku", "wiki": null},
+      {"kto": "Aleksander Woydego", "rola": "architekt przebudowy z 1882 roku", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "architekt przebudowy z 1882 roku", "wiki": null},
+      {"kto": "Jan Bieńkowski", "rola": "kierownik odbudowy w latach 1947-1948", "wiki": null}
+    ],
+    "dawne_nazwy": ["Poczta Saska", "Pałac Ostrowskich"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Wesslów", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Wesslów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palacyk-cukrownikow",
+    "nazwa": "Pałacyk Cukrowników",
+    "name_en": "Sugar Producers' Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Mokotowska 25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1877 roku na posesji wydzielonej z majątku Józefa Kaczyńskiego wybudowano parterowy dworek dla Kazimiery z Kaczyńskich Ćwierczakiewiczowej.",
+      "W 1907 roku dworek przejął Mieczysław Kaczyński, który wraz z Wacławem Cywińskim założył tu drukarnię, zakład litograficzny i wytwórnię toreb.",
+      "W 1910 roku budynek wynajęto na siedzibę zarządu spółek akcyjnych lubelskich cukrowni; w 1922 roku zarząd cukrowni zakupił budynek, a przebudowę zakończono w 1926 roku.",
+      "W 1935 roku pałacyk zakupił Mieczysław Broniewski, specjalista od cukrownictwa, który zaadaptował go na rodzinną rezydencję według projektu Antoniego Jawornickiego.",
+      "Podczas II wojny światowej budynek zajęło gestapo; nie uległ zniszczeniu, ponieważ rejon znalazł się w tzw. dzielnicy niemieckiej.",
+      "Po wojnie mieścił m.in. Klub Inteligencji Pracującej Związku Walki Młodych, Centralny Ośrodek Szkolenia Partyjnego PZPR, Międzynarodowe Centrum Matematyczne im. Stefana Banacha oraz Instytut Matematyczny PAN.",
+      "W 2000 roku budynek odzyskali spadkobiercy dawnego właściciela, którzy odsprzedali go Instytutowi Adama Mickiewicza; instytut otwarto w budynku w 2005 roku.",
+      "13 października 2010 roku na fasadzie odsłonięto tablicę upamiętniającą twórców Instytutu: Bronisława Geremka i Andrzeja Zakrzewskiego."
+    ],
+    "ciekawostki": [
+      "Podczas otwarcia w 2005 roku witający przedstawiciela niemieckiego ministra kultury Waldemar Dąbrowski powiedział, że pałacyk przetrwał wojnę dzięki temu, że mieszkali w nim gestapowcy."
+    ],
+    "summary_en": "A small palace at Mokotowska 25, built in 1877 as a cottage and remodelled in the 1920s for a sugar company. It was spared in the war because it stood in the German zone, and since 2005 it has housed the Adam Mickiewicz Institute.",
+    "ludzie": [
+      {"kto": "Kazimiera Ćwierczakiewiczowa", "rola": "pierwsza właścicielka dworku (1877)", "wiki": null},
+      {"kto": "Mieczysław Kaczyński", "rola": "właściciel od 1907 roku; założył tu drukarnię z Wacławem Cywińskim", "wiki": null},
+      {"kto": "Tadeusz Zieliński starszy", "rola": "adaptacja budynku około 1915 roku", "wiki": null},
+      {"kto": "Mieczysław Broniewski", "rola": "właściciel od 1935 roku; specjalista od cukrownictwa", "wiki": null},
+      {"kto": "Antoni Jawornicki", "rola": "projekt adaptacji na rodzinną rezydencję (1935)", "wiki": null},
+      {"kto": "Bronisław Geremek", "rola": "współtwórca Instytutu, upamiętniony tablicą w 2010 roku", "wiki": null},
+      {"kto": "Andrzej Zakrzewski", "rola": "współtwórca Instytutu, upamiętniony tablicą w 2010 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałacyk Cukrowników", "url": "https://warszawa.fandom.com/pl/wiki/Pałacyk_Cukrowników"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Pełna nazwa: Pałacyk Zarządu Spółek Cukrowni Lubelskich."
+  },
+  {
+    "id": "palacyk-wilhelma-ellisa-raua",
+    "nazwa": "Pałacyk Wilhelma Ellisa Raua",
+    "name_en": "Wilhelm Ellis Rau Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 27",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1865 roku przemysłowiec Wilhelm Rau wynajął architekta Leandro Marconiego, aby zaprojektował dla niego pałacyk.",
+      "Pałac powstał w latach 1866-1868 na tej samej posesji.",
+      "Na początku XX wieku jego właścicielką została Maria Branicka.",
+      "W okresie międzywojennym wynajmowało go Ministerstwo Spraw Zagranicznych jako siedzibę wiceministra Jana Szembeka.",
+      "Figury Architektury i Rzeźby w narożach ryzalitów wykonał Marconi, a figury Malarstwa i Mechaniki – Andrzej Pruszyński.",
+      "Pałac spłonął w 1944 roku; odbudowano go w latach 1945-1948 bez kilku rzeźb z elewacji.",
+      "W 2013 roku budynek został odrestaurowany."
+    ],
+    "ciekawostki": [
+      "Fontannę i medaliony w bocznej elewacji wykonał Ludwik Kucharzewski; w dekorowaniu pałacu brał udział także malarz Jan Strzałecki."
+    ],
+    "summary_en": "A neo-Renaissance palacyk at Aleje Ujazdowskie 27, corner of Piękna Street, designed by Leandro Marconi in 1866-1868 for the industrialist Wilhelm Ellis Rau. It burned in 1944 and was rebuilt in 1945-1948; it now houses the Swiss Embassy.",
+    "ludzie": [
+      {"kto": "Wilhelm Ellis Rau", "rola": "przemysłowiec, zleceniodawca pałacyku", "wiki": null},
+      {"kto": "Leandro Marconi", "rola": "architekt pałacyku (1866-1868)", "wiki": null},
+      {"kto": "Maria Branicka", "rola": "właścicielka na początku XX wieku", "wiki": null},
+      {"kto": "Jan Szembek", "rola": "wiceminister spraw zagranicznych, najemca w okresie międzywojennym", "wiki": null},
+      {"kto": "Andrzej Pruszyński", "rola": "autor figur Malarstwa i Mechaniki", "wiki": null},
+      {"kto": "Ludwik Kucharzewski", "rola": "autor fontanny i medalionów", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałacyk Wilhelma Ellisa Raua", "url": "https://warszawa.fandom.com/pl/wiki/Pałacyk_Wilhelma_Ellisa_Raua"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "plac-pieciu-rogow",
+    "nazwa": "Plac Pięciu Rogów",
+    "name_en": "Five Corners Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2324179,
+    "lon": 21.0152503,
+    "lokalizacja": "dokladna",
+    "okres": "2010–2022",
+    "istnieje": true,
+    "fakty": [
+      "Nieoficjalna nazwa placu u zbiegu ulic Chmielnej, Kruczej, Brackiej, Szpitalnej i Zgody; skrzyżowanie tak nazywano już w okresie przedwojennym, od boków kamienic.",
+      "Ideę współczesnego placu stworzyli ok. 2010 roku Robert Mandżunowski i architekt Andrzej Michalik z pracowni PRC Architekci.",
+      "W 2012 roku Gazeta Stołeczna przedstawiła pierwszy artykuł z wypowiedziami pomysłodawców; w 2014 roku do idei powrócił wiceprezydent miasta Michał Olszewski.",
+      "W maju 2016 roku odbyły się konsultacje społeczne; 21 czerwca 2016 roku rozpisano konkurs architektoniczno-urbanistyczny.",
+      "Do rozpoczęcia prac w marcu 2021 roku było to zwykłe skrzyżowanie z dwoma przejściami dla pieszych bez sygnalizacji.",
+      "Realizacja trwała od marca 2021 roku do lipca 2022 roku.",
+      "25 sierpnia 2022 roku rada miasta uchwaliła nadanie placowi imienia Poli Negri; 28 września 2022 roku decyzję unieważnił wojewoda mazowiecki, a sądy administracyjne potwierdziły to rozstrzygnięcie.",
+      "W 2023 roku na placu zainstalowano rzeźbę akustyczną „Pisklę. Drozd śpiewak” autorstwa Joanny Rajkowskiej."
+    ],
+    "ciekawostki": [
+      "Na początku grudnia 2024 roku na placu powstała iluminacja inspirowana latami 50. i 60. XX wieku, z elementami PRL-u, m.in. telefonem z tarczą i uliczną saturatorem."
+    ],
+    "summary_en": "An unofficial name for the junction of Chmielna, Krucza, Bracka, Szpitalna and Zgody streets in central Warsaw. Designed around 2010 and rebuilt in 2021-2022 as a pedestrian-friendly urban square; a 2022 council decision to name it after Pola Negri was annulled by the voivode.",
+    "ludzie": [
+      {"kto": "Robert Mandżunowski", "rola": "inwestor, pomysłodawca placu (ok. 2010)", "wiki": null},
+      {"kto": "Andrzej Michalik", "rola": "architekt z pracowni PRC Architekci, współtwórca idei", "wiki": null},
+      {"kto": "Michał Olszewski", "rola": "wiceprezydent miasta, który powrócił do idei w 2014 roku", "wiki": null},
+      {"kto": "Kacper Ludwiczak", "rola": "architekt, który otrzymał pierwszą nagrodę w konkursie w 2016 roku", "wiki": null},
+      {"kto": "Joanna Rajkowska", "rola": "autorka rzeźby akustycznej „Pisklę. Drozd śpiewak” (2023)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Plac Pięciu Rogów", "url": "https://warszawa.fandom.com/pl/wiki/Plac_Pięciu_Rogów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru adresowego w artykule; rekord ma współrzędne z nagłówka, adres_dzis zostawiony pusty. W źródle „architektowi 10 listopada” (nazwa pracowni niejasna)."
+  },
+  {
+    "id": "plac-zelaznej-bramy",
+    "nazwa": "Plac Żelaznej Bramy",
+    "name_en": "Żelazna Brama Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Żelaznej Bramy 10",
+    "adres_historyczny": "plac Wielopole",
+    "lat": 52.2400456,
+    "lon": 21.0028233,
+    "lokalizacja": "dokladna",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVII wieku tereny nadał król Jan II Kazimierz staroście warszawskiemu Janowi Wielopolskiemu; w 1693 roku utworzono tu jurydykę Wielopole.",
+      "Nazwa placu pochodzi od Żelaznej Bramy, która oddzielała Wielopole od Ogrodu Saskiego i Osi Saskiej.",
+      "W 1841 roku wzniesiono halę targową Gościnny Dwór według projektu Jakuba Gaya; została zniszczona w 1939 roku.",
+      "Od drugiej połowy XIX wieku plac był największym targowiskiem miasta; ok. 1881 roku poprowadzono przez niego linię tramwaju konnego, a w 1909 roku tramwaju elektrycznego.",
+      "W latach 1899-1902 po zachodniej stronie placu wybudowano Hale Mirowskie.",
+      "W 1935 roku doprowadzono ulicę Marszałkowską.",
+      "W czasie II wojny światowej południowo-zachodnim skrajem placu przebiegała granica getta warszawskiego.",
+      "W 1944 roku zabudowa placu została całkowicie zniszczona; w latach 60. rozpoczęto budowę osiedla Za Żelazną Bramą.",
+      "W 1970 roku pałac Lubomirskich obrócono o 78 stopni, aby zamknąć perspektywę Osi Saskiej.",
+      "W 2010 roku w miejscu pomnika z 1985 roku ustawiono pomnik Tadeusza Kościuszki, będący repliką monumentu autorstwa Antoniego Popiela."
+    ],
+    "ciekawostki": [
+      "Plac pierwotnie nazywano Targowicą Wielopolską.",
+      "W południowej części placu znajduje się pomnik upamiętniający granice getta warszawskiego."
+    ],
+    "summary_en": "A square in central Warsaw named after the iron gate that once separated the Wielopole jurisdiction from the Saxon Garden. It was a major market in the 19th century, bordered the Warsaw Ghetto in 1940-1944, and was largely rebuilt after 1945.",
+    "ludzie": [
+      {"kto": "Jan II Kazimierz", "rola": "król, który nadał tereny staroście Janowi Wielopolskiemu", "wiki": null},
+      {"kto": "Jan Wielopolski", "rola": "starosta warszawski, właściciel terenów w XVII wieku", "wiki": null},
+      {"kto": "Jakub Gay", "rola": "projektant hali Gościnny Dwór (1841)", "wiki": null},
+      {"kto": "Antoni Popiel", "rola": "autor monumentu Kościuszki, którego replikę ustawiono w 2010 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Wielopole", "Targowica Wielopolska"],
+    "zrodla": [{"tytul": "Warszawikia: Plac Żelaznej Bramy", "url": "https://warszawa.fandom.com/pl/wiki/Plac_Żelaznej_Bramy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka; adres 'plac Żelaznej Bramy 10' z infoboksu artykułu (zgodny z artykułem o Pałacu Lubomirskich)."
+  }
+]

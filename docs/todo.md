@@ -87,9 +87,10 @@
 - [ ] **T-102** Pozycja „za oknem”: znacznik jedzie wzdłuż `Leg.lngLats` w czasie odtwarzania (krok 8 w [14-plan-mapy.md](14-plan-mapy.md) §10, M2 planu MVP); potrzebne do T-36 — `R3` (Antek) — niedziela 08:00
 - [ ] **T-103** Mapa na 2 prawdziwych telefonach: karta miejsca z przeciąganiem, 16 px marginesu, bez poziomego scrolla (krok 7 w [14-plan-mapy.md](14-plan-mapy.md) §10) — `R3` (Antek)
 - [x] **T-118** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42) — (Antek z agentem, 17:42)
+- [x] **T-125** Znaczniki miejsc na mapie od nowa (było T-119, numer zajęty): ilustracje były za drobne, zostaje wariant I „Naklejka” (pełny glif w kolorze grupy z białą obwódką, 5 kształtów, ok. 36 px przy zoomie 15) — `R3` (Paweł z agentem, 17:50 → 18:08)
 - [ ] **T-115** Ekrany demo na tokeny kolorów (`bg-powierzchnia`, `bg-tlo-2`) zamiast `bg-white` i hexów, potem klasa `.motyw` na `<body>`, żeby ciemny motyw działał wszędzie (dziś w trybie jazdy syrenka ma ciemne pachy na jasnym tle) — `R3` (Paweł)
 - [ ] **T-116** Usunąć „Przed siebie” z wyboru końca trasy (wywozi w przypadkowe miejsce); zostają „Wracam tu” i „Do celu” — `R3` (Paweł)
-- [ ] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`
+- [x] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`; zrobione razem z T-110 (suwak nie schodzi poniżej najszybszej trasy, Paweł, 17.10 18:02)
 - [ ] **T-112** Śledzenie lokalizacji na żywo: z pozycji użytkownika wybierać opowieść (`activeIndex` do ekranu „Na żywo”) — `R3` (Antek)
 - [ ] **T-119** Kolory według tematu (historia, kultura, sport, przyroda): kółko pod ikoną miejsca na mapie, chipy tematów w tych samych kolorach jako legenda; reguła dla miejsca z kilkoma tematami, kontrast AA w obu motywach ([#53](https://github.com/Pawel-Uhma/Sawa/issues/53)) — `R3`
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
@@ -108,7 +109,7 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-51** Zaktualizować pitch deck w [pitch/](pitch/) pod MVP — `R2` — 22:00
 - [ ] **T-52** Test na telefonie co 2 h: wszystkie ścieżki z PRD, zgłoszenia w tym pliku (robią wszyscy na zmianę, R2 pilnuje) — `R2` — od 17:00
 - [ ] **T-55** Nagranie wideo demo jako zapas — `R2` — 22:00
-- [ ] **T-114** Pitch pod „Warszawa 2076” według uwag mentorów (spotkanie 19:30): kto jest odbiorcą, co miasto zyska za 50 lat, dowód, że dane miasta dają wartość; sprawdzić źródło liczby „20% warszawiaków spoza Warszawy”; z gotową prezentacją do Bartka (Play) — `R2` (z T-50)
+- [ ] **T-114** Pitch pod „Warszawa 2076” według uwag mentorów (spotkanie 19:30): kto jest odbiorcą, co miasto zyska za 50 lat, dowód, że dane miasta dają wartość; sprawdzić źródło liczby „20% warszawiaków spoza Warszawy”; z gotową prezentacją do Bartka (Play) — `R2` (z T-50). Plan: [pitch/plan-pitchu.md](pitch/plan-pitchu.md) (Paweł, 17.10 w nocy), zadania w §10
 - [ ] **T-53** Opis zakresu użycia AI (z historii git, PR-ów i archiwum `ai-log.md`) i dokumentacja na oddanie (`README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30
 - [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R2` — niedziela 10:30
 

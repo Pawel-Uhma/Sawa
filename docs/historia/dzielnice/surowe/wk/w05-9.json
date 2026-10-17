@@ -1,0 +1,33 @@
+[
+  {
+    "id": "zajezdnia-tramwajowa-slodowiec",
+    "nazwa": "Zajezdnia tramwajowa Słodowiec",
+    "name_en": "Słodowiec tram depot",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Włościańska 52",
+    "adres_historyczny": "Słowackiego 45a (adres według monografii „Warszawskie Tramwaje Elektryczne 1908–2008”)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1946–1963",
+    "istnieje": false,
+    "fakty": [
+      "Zajezdnia tramwajowa Słodowiec była tymczasową zajezdnią działającą od grudnia 1946 roku do początku lat 60. na terenie CWS przy ul. Włościańskiej 52.",
+      "Według monografii „Warszawskie Tramwaje Elektryczne 1908–2008” nazwa zajezdni brzmiała Żoliborz, a rozpoczęła ona działalność 15 marca 1946 roku.",
+      "Odcinek linii od zniszczonego wiaduktu w ciągu ul. Mickiewicza nad linią obwodową na Bielany odbudowano wraz z przekuciem na normalną szerokość 1435 mm w 1946 roku.",
+      "Pojedynczy tor tramwajowy biegł od pętli Potocka (obecnie Metro Marymont) śladem ul. Włościańskiej.",
+      "Zajezdnia działała do otwarcia zajezdni R-4 Żoliborz, co nastąpiło w niedzielę 30 czerwca 1963 roku.",
+      "Według danych z czerwca 1949 roku zajezdnia miała 8 stanowisk krytych i 22 odkryte, razem 30 miejsc."
+    ],
+    "ciekawostki": [
+      "Na terenie zajezdni nie było pętli ani trójkąta do zawracania składów, bo wszystkie eksploatowane wagony były dwukierunkowe."
+    ],
+    "summary_en": "The Słodowiec tram depot was a temporary depot on the grounds of the CWS at Włościańska 52 in Żoliborz. It operated from late 1946 until the new R-4 Żoliborz depot opened on 30 June 1963, and held 30 vehicles according to 1949 data.",
+    "ludzie": [],
+    "dawne_nazwy": ["Żoliborz (wg monografii WTE)"],
+    "zrodla": [{"tytul": "Warszawikia: Zajezdnia tramwajowa Słodowiec", "url": "https://warszawa.fandom.com/pl/wiki/Zajezdnia_tramwajowa_Słodowiec"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, do geokodowania. Istnieje: false (nieistniejąca zajezdnia). Tekst podaje dwa adresy: Włościańska 52 (teren CWS) i Słowackiego 45a (wg monografii). Rozbieżność w dacie rozpoczęcia: grudzień 1946 (lead) i 15 marca 1946 (monografia)."
+  }
+]

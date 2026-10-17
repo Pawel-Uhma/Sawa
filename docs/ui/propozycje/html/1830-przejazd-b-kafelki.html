@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Przejażdżka B · kafelki</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --glebia:#17706F; --mieta:#8ED1B5; --mieta-j:#E4F4EC; --koral:#F2755F; --tekst:#102B2A; --tekst-2:#4F6867; --tekst-3:#8A9B9A; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#D9E6E2; font-family:"Plus Jakarta Sans", system-ui, sans-serif; color:var(--tekst); }
+  .tel { width:390px; height:844px; margin:0 auto; position:relative; overflow:hidden; background:
+    repeating-linear-gradient(0deg, #E9EFEC 0 2px, transparent 2px 46px),
+    repeating-linear-gradient(90deg, #E9EFEC 0 2px, transparent 2px 62px), #F3F7F5; }
+  .sheet { position:absolute; left:0; right:0; bottom:0; background:#fff; border-radius:28px 28px 0 0; padding:12px 18px 22px; box-shadow:0 -12px 40px rgba(16,43,42,.16); }
+  .grab { width:40px; height:5px; border-radius:3px; background:#D4DEDC; margin:0 auto 14px; }
+  .head { display:flex; align-items:center; gap:12px; }
+  .head img { width:54px; height:auto; flex:none; }
+  .head h1 { margin:0; font-size:22px; line-height:1.1; letter-spacing:-.02em; }
+  .head p { margin:3px 0 0; font-size:13px; color:var(--tekst-2); }
+
+  .time { margin-top:18px; background:var(--mieta-j); border-radius:22px; padding:14px 14px 16px; }
+  .time-top { display:flex; align-items:center; justify-content:space-between; }
+  .time-top .et { font-size:11px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; color:var(--glebia); }
+  .big { white-space:nowrap; font-size:36px; font-weight:800; letter-spacing:-.03em; color:var(--glebia); line-height:1; font-variant-numeric:tabular-nums; }
+  .stepper { display:flex; gap:8px; margin-top:10px; }
+  .stepper button { width:48px; height:48px; border-radius:16px; border:0; background:#fff; color:var(--glebia); font:700 24px/1 system-ui; font-family:inherit; box-shadow:0 2px 6px rgba(16,43,42,.08); cursor:pointer; }
+  .stepper .presets { flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  .stepper .presets button { width:auto; font-size:14px; font-weight:700; color:var(--tekst-2); }
+  .stepper .presets button.on { background:var(--glebia); color:#fff; }
+
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; }
+  .tile { border:2px solid transparent; background:#F1F5F4; border-radius:22px; padding:14px; text-align:left; font-family:inherit; color:var(--tekst); cursor:pointer; transition:border-color .2s, background .2s, transform .15s; }
+  .tile:active { transform:scale(.97); }
+  .tile.on { border-color:var(--glebia); background:#fff; box-shadow:0 6px 16px rgba(23,112,111,.15); }
+  .tile .ico { width:44px; height:44px; border-radius:14px; display:grid; place-items:center; background:var(--mieta-j); color:var(--glebia); margin-bottom:10px; }
+  .tile.on .ico { background:var(--glebia); color:#fff; }
+  .tile b { display:block; font-size:17px; letter-spacing:-.01em; }
+  .tile small { display:block; font-size:12px; color:var(--tekst-2); margin-top:3px; line-height:1.35; }
+  .tile.wide { grid-column:span 2; display:flex; align-items:center; gap:12px; padding:12px 14px; }
+  .tile.wide .ico { margin:0; flex:none; }
+
+  .go { margin-top:14px; width:100%; height:58px; border:0; border-radius:20px; background:var(--koral); color:#fff; font-family:inherit; font-size:17px; font-weight:800; box-shadow:0 10px 22px rgba(242,117,95,.35); cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; }
+  .go:active { transform:scale(.98); }
+  .foot { text-align:center; margin:10px 0 0; font-size:12px; color:var(--tekst-3); }
+</style>
+</head>
+<body>
+<div class="tel">
+  <section class="sheet" aria-label="Plan przejazdu">
+    <div class="grab"></div>
+    <div class="head">
+      <img src="../../../../apps/web/public/sawa-32.png" alt="" onerror="this.style.display='none'">
+      <div>
+        <h1>Ile masz dziś czasu?</h1>
+        <p>Ułożę przejazd i opowiem, co mijasz za oknem.</p>
+      </div>
+    </div>
+
+    <div class="time">
+      <div class="time-top">
+        <span class="et">Czas</span>
+        <span class="big" id="big">1 h 30</span>
+      </div>
+      <div class="stepper">
+        <button type="button" id="minus" aria-label="Krócej">−</button>
+        <div class="presets" id="presets">
+          <button type="button" data-v="30">30 min</button>
+          <button type="button" data-v="90" class="on">1 h 30</button>
+          <button type="button" data-v="180">3 h</button>
+        </div>
+        <button type="button" id="plus" aria-label="Dłużej">+</button>
+      </div>
+    </div>
+
+    <div class="grid" data-group="travel">
+      <button type="button" class="tile on" data-v="walk">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="13" cy="4" r="2"/><path d="M7 21l3-7 3 2v5M6 13l3-4 3 1 2 4M16 8l-2 4"/></svg></span>
+        <b>Pieszo</b><small>Spacer po okolicy, bez biletu</small>
+      </button>
+      <button type="button" class="tile" data-v="transit">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 19l-2 2M15 19l2 2M9 14h.01M15 14h.01"/></svg></span>
+        <b>Komunikacją</b><small>Tramwaj i autobus, dalej</small>
+      </button>
+    </div>
+
+    <div class="grid" data-group="end">
+      <button type="button" class="tile on" data-v="loop">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4"/></svg></span>
+        <b>Wracam tu</b><small>Pętla i powrót pod dom</small>
+      </button>
+      <button type="button" class="tile" data-v="dest">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h12M13 6l6 6-6 6"/></svg></span>
+        <b>Do celu</b><small>Jedziesz w jedną stronę</small>
+      </button>
+    </div>
+
+    <button type="button" class="go" id="go">Ułóż trasę →</button>
+    <p class="foot" id="foot">1 h 30 min · pieszo · pętla</p>
+  </section>
+</div>
+<script>
+  const values = [5, 15, 30, 45, 60, 90, 120, 150, 180, 240];
+  let idx = 5;
+  const state = { time: 90, travel: "walk", end: "loop" };
+  const fmt = (m) => m < 60 ? `${m} min` : (m % 60 ? `${Math.floor(m / 60)} h ${m % 60}` : `${m / 60} h`);
+  const big = document.getElementById("big");
+  const foot = document.getElementById("foot");
+  const labels = { walk: "pieszo", transit: "komunikacją", loop: "pętla", dest: "do celu" };
+  function render() {
+    big.textContent = fmt(state.time).replace(" min", "");
+    document.querySelectorAll("#presets button").forEach((b) => b.classList.toggle("on", Number(b.dataset.v) === state.time));
+    foot.textContent = `${fmt(state.time)} · ${labels[state.travel]} · ${labels[state.end]}`;
+  }
+  document.getElementById("minus").onclick = () => { idx = Math.max(0, idx - 1); state.time = values[idx]; render(); };
+  document.getElementById("plus").onclick = () => { idx = Math.min(values.length - 1, idx + 1); state.time = values[idx]; render(); };
+  document.querySelectorAll("#presets button").forEach((b) => b.onclick = () => { state.time = Number(b.dataset.v); idx = values.indexOf(state.time); render(); });
+  document.querySelectorAll(".grid").forEach((grid) => grid.querySelectorAll(".tile").forEach((tile) => tile.onclick = () => {
+    grid.querySelectorAll(".tile").forEach((t) => t.classList.toggle("on", t === tile));
+    state[grid.dataset.group] = tile.dataset.v;
+    render();
+  }));
+  render();
+</script>
+</body>
+</html>

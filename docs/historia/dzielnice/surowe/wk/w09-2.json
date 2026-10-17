@@ -1,0 +1,405 @@
+[
+  {
+    "id": "palac-kazimierzowski",
+    "nazwa": "Pałac Kazimierzowski",
+    "name_en": "Kazimierz Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 26/28",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac ma początki w latach 20. XVII wieku, kiedy na dobrach królewskich powstał dworek dla żony króla Zygmunta III Wazy, Konstancji.",
+      "W latach 1637-1641 powstała w tym miejscu willa podmiejska Villa Regia, zaprojektowana przez Giovanniego Trevano dla króla Władysława IV Wazy.",
+      "Po odbudowie do około 1660 roku pałac stał się ulubioną siedzibą króla Jana Kazimierza, od czego wzięła się jego nazwa.",
+      "Tutaj 10 maja 1667 roku zmarła Ludwika Maria Gonzaga, po czym król Jan Kazimierz abdykował.",
+      "W 1695 roku budynek został zniszczony przez pożar.",
+      "W 1765 lub 1766 roku pałac nabył król Stanisław August Poniatowski, by ulokować w nim Szkołę Rycerską; przebudował go Dominik Merlini.",
+      "W 1816 roku budynek stał się siedzibą Królewskiego Uniwersytetu Warszawskiego.",
+      "W 1824 roku pałac gruntownie przebudowano w stylu klasycystycznym.",
+      "Budynek został uszkodzony podczas II wojny światowej, zarówno w 1939 roku, gdy był szpitalem wojskowym, jak i w 1944 roku; zniszczenia oszacowano na 50%.",
+      "Pałac odbudowano w latach 1945-1954 według projektu Piotra Biegańskiego; w 2006 roku został odnowiony.",
+      "Od strony skarpy wiślanej zachowano elewację barokową, stworzoną podczas przebudowy Szpilowskiego z 1824 roku."
+    ],
+    "ciekawostki": [
+      "Armata z 1920 roku, upamiętniająca udział studentów w wojnach o niepodległość w latach 1918-1920, ustawiona została 15 sierpnia 1990 roku.",
+      "Przejście na tyły pałacu prowadzi przez furtkę w zabytkowej kracie grodzącej, przeniesionej tu z Pałacu Prymasowskiego."
+    ],
+    "summary_en": "A classicist palace at Krakowskie Przedmieście 26/28 on the campus of the University of Warsaw. It grew out of a 1630s royal villa and was damaged in both 1939 and 1944, with about half destroyed. Rebuilt in 1945-1954, it now houses the university rector's seat and the university history museum.",
+    "ludzie": [
+      {"kto": "Zygmunt III Waza / Konstancja", "rola": "król i jego żona; dworek dla Konstancji w latach 20. XVII w.", "wiki": null},
+      {"kto": "Giovanni Trevano", "rola": "architekt Villa Regia (1637-1641)", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "przebudowa pałacu na Szkołę Rycerską", "wiki": null},
+      {"kto": "Piotr Biegański", "rola": "projekt odbudowy w latach 1945-1954", "wiki": null}
+    ],
+    "dawne_nazwy": ["Villa Regia"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Kazimierzowski", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Kazimierzowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-komisji-rzadowej-przychodow-i-skarbu",
+    "nazwa": "Pałac Komisji Rządowej Przychodów i Skarbu",
+    "name_en": "Palace of the Government Commission for Revenue and Treasury",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Bankowy 3/5",
+    "adres_historyczny": "ul. Rymarska 5 (przed zmianą numeru na 3/5 w okresie międzywojennym)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1650–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Barokowy pałac wzniesiono w latach 1650–1654 dla Bogusława Leszczyńskiego.",
+      "W latach 1823–1825 przebudowano go w stylu klasycystycznym dla Komisji Rządowej Przychodów i Skarbu; autorem przebudowy był Antonio Corrazi.",
+      "W latach 1829–1831 w gmachu pracował Juliusz Słowacki, pełniąc funkcję aplikanta Komisji Rządowej.",
+      "Po adaptacji w latach 1919–1921 przez Mariana Lalewicza pałac stał się siedzibą Ministerstwa Skarbu.",
+      "We wrześniu 1939 roku pałac został zniszczony przez niemieckie bombardowania; odbudowano go w latach 1950–1954.",
+      "9 kwietnia 2016 roku na dziedzińcu odsłonięto głaz z tablicą upamiętniającą Lecha Kaczyńskiego; upamiętnienie wywołało kontrowersje.",
+      "Obecnie pałac jest siedzibą Prezydenta m.st. Warszawy oraz Urzędu Miasta."
+    ],
+    "ciekawostki": [
+      "Pamiątką po pobycie Słowackiego są popiersie oraz tablica na półpiętrze korpusu głównego.",
+      "W tympanonie umieszczono płaskorzeźbę Pawła Malińskiego przedstawiającą Minerwę, Merkurego, Jazona oraz alegoryczne postacie Wisły i Bugu."
+    ],
+    "summary_en": "A baroque palace from 1650-1654, remodelled in classicist style in 1823-1825 for the Government Commission for Revenue and Treasury. Juliusz Słowacki worked here in 1829-1831. Bombed in 1939 and rebuilt in 1950-1954, it now houses the seat of the Mayor of Warsaw.",
+    "ludzie": [
+      {"kto": "Bogusław Leszczyński", "rola": "inwestor budowy pałacu (1650-1654)", "wiki": null},
+      {"kto": "Antonio Corrazi", "rola": "autor przebudowy w latach 1823-1825", "wiki": null},
+      {"kto": "Juliusz Słowacki", "rola": "aplikant Komisji Rządowej w latach 1829-1831", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "adaptacja pałacu w latach 1919-1921", "wiki": null},
+      {"kto": "Lech Kaczyński", "rola": "upamiętniony głazem z tablicą w 2016 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Leszczyńskich"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Komisji Rządowej Przychodów i Skarbu", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Komisji_Rządowej_Przychodów_i_Skarbu"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Pałac Ministra Skarbu ma wspólny adres."
+  },
+  {
+    "id": "palac-kossakowskich",
+    "nazwa": "Pałac Kossakowskich",
+    "name_en": "Kossakowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 19",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1775–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy budynek w tym miejscu powstał około 1775 roku na posesji kupca bławatnego Izaaka Olliera, od Augusta Sułkowskiego; zaprojektował go Efraim Szreger jako budynek klasycystyczny.",
+      "W 1848 roku właścicielem został Władysław Pusłowski; w latach 1849-1851 przebudowano pałac w stylu neorenesansowym według projektu Henryka Marconiego.",
+      "W 1853 roku pałac zakupiła Aleksandra Kossakowska, a jej mąż Stanisław Kossakowski zebrał tu kolekcję broni, malarstwa i książek.",
+      "W 1858 roku wnętrza gruntownie przebudowano według projektu Franciszka Marii Lanciego.",
+      "W latach 90. XIX wieku na ostatnim piętrze mieszkał malarz Władysław Podkowiński.",
+      "W 1912 roku zlikwidowano ogród na tyłach pałacu, a w jego miejscu wybudowano tzw. Palais de Glace.",
+      "W 1930 roku budynek sprzedano Warszawskiemu Towarzystwu Ubezpieczeń.",
+      "Pałac doszczętnie zniszczono w 1944 roku; zrekonstruowano go w latach 1946-1950 według projektu Mieczysława Kuzmy.",
+      "Rzeźby zdobiące gzyms drugiego piętra odtworzono dopiero w 1971 roku."
+    ],
+    "ciekawostki": [
+      "Pałac nosi też nazwę pałac Olejów, bo nazwisko Ollier często przekręcano jako Olej."
+    ],
+    "summary_en": "A neo-Renaissance palace at Nowy Świat 19, first built around 1775 for the cloth merchant Izaak Ollier. Destroyed in 1944, it was rebuilt in 1946-1950 and now houses restaurants and cafés.",
+    "ludzie": [
+      {"kto": "Izaak Ollier", "rola": "kupiec bławatny, pierwszy właściciel posesji", "wiki": null},
+      {"kto": "Efraim Szreger", "rola": "projektant pierwszego budynku", "wiki": null},
+      {"kto": "Władysław Pusłowski", "rola": "właściciel od 1848 roku; przebudowa w latach 1849-1851", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projektant przebudowy w latach 1849-1851", "wiki": null},
+      {"kto": "Władysław Podkowiński", "rola": "malarz; mieszkał na ostatnim piętrze w latach 90. XIX w.", "wiki": null},
+      {"kto": "Mieczysław Kuzma", "rola": "projektant rekonstrukcji w latach 1946-1950", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Olejów"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Kossakowskich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Kossakowskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Artykuł podaje datę pierwszego budynku jako ok. 1775 (w nawiasie: wg Wikipedii 1780-1784)."
+  },
+  {
+    "id": "palac-lubomirskich",
+    "nazwa": "Pałac Lubomirskich",
+    "name_en": "Lubomirski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Żelaznej Bramy 10",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1712–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przed 1712 rokiem wzniesiono na północnej części jurydyki Wielopole rezydencję magnacką, która w 1730 roku należała do architekta Jana Zygmunta Deybla.",
+      "W 1790 roku nieruchomość zakupił Aleksander Lubomirski; w latach 1791–1793 pałac przebudowano w stylu klasycystycznym według projektu Jakuba Hempla.",
+      "W 1816 roku pałac sprzedano generałowi Izydorowi Krasińskiemu.",
+      "W 1834 roku pałac przeszedł w ręce finansisty Abrahama Simona Cohena; przez kolejne dekady był wielokrotnie adaptowany do celów handlowych i mieszkalnych.",
+      "Około 1872 roku na piętrze pałacu urządzono synagogę, działającą do 1940 roku.",
+      "We wrześniu 1939 roku, podczas obrony Warszawy, pałac uległ poważnym uszkodzeniom.",
+      "Odbudowę przeprowadzono w latach 1947–1950 pod kierunkiem Tadeusza Żurowskiego, według klasycystycznego projektu Jakuba Hempla.",
+      "W dniach 30 marca – 18 maja 1970 roku pałac przesunięto i obrócono o 74 stopnie (według innych źródeł o 78), aby zamknąć perspektywę głównej alei Ogrodu Saskiego.",
+      "W 1985 roku przed pałacem wzniesiono pomnik „utrwalaczy”, który usunięto w 1991 roku.",
+      "W 2010 roku w tym miejscu odsłonięto pomnik Tadeusza Kościuszki, będący repliką monumentu z Waszyngtonu z 1910 roku."
+    ],
+    "ciekawostki": [
+      "W ostatniej dekadzie XVIII wieku w pałacu mieszkała m.in. Rozalia Lubomirska, żona Aleksandra Lubomirskiego, która zginęła na gilotynie w czasie rewolucji francuskiej.",
+      "Przed budynkiem stoją cztery kamienne lwy autorstwa Jana Biernackiego, pochodzące pierwotnie sprzed gmachu Ministerstwa Spraw Wojskowych przy ul. 6 Sierpnia."
+    ],
+    "summary_en": "A palace at plac Żelaznej Bramy 10 with a history from the early 18th century. Remodelled in classicist style in 1791-1793 and damaged in 1939, it was rebuilt in 1947-1950 and moved and rotated by 74 degrees in 1970 to close the view along the Saxon Garden axis.",
+    "ludzie": [
+      {"kto": "Jan Zygmunt Deybel", "rola": "architekt, właściciel rezydencji przed 1730 rokiem", "wiki": null},
+      {"kto": "Aleksander Lubomirski", "rola": "właściciel od 1790 roku", "wiki": null},
+      {"kto": "Jakub Hempel", "rola": "projekt przebudowy w latach 1791–1793 i odbudowy", "wiki": null},
+      {"kto": "Izydor Krasiński", "rola": "generał; nabył pałac w 1816 roku", "wiki": null},
+      {"kto": "Abraham Simon Cohen", "rola": "finansista; właściciel od 1834 roku", "wiki": null},
+      {"kto": "Tadeusz Żurowski", "rola": "kierownik odbudowy w latach 1947–1950", "wiki": null},
+      {"kto": "Aleksander Mostowski", "rola": "opracował operację przesunięcia pałacu w 1970 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Lubomirskich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Lubomirskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-ministra-skarbu",
+    "nazwa": "Pałac Ministra Skarbu",
+    "name_en": "Minister of Treasury Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Bankowy 3/5",
+    "adres_historyczny": "ul. Rymarska 3 (przed zmianą numeru na 3/5 w okresie międzywojennym)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wzniesiono w latach 1825–1830 według projektu Antonio Corazziego w miejscu przebudowy barokowego pałacu Ogińskich, jako rezydencję ministra skarbu Franciszka Ksawerego Druckiego-Lubeckiego.",
+      "Od lat 70. XIX wieku do 1915 roku mieściło się tu rosyjskie I Gimnazjum Żeńskie.",
+      "We wrześniu 1918 roku rozpoczęto adaptację gmachu na potrzeby Rady Stanu, jednak prace przerwano, gdy instytucję rozwiązano miesiąc później.",
+      "W okresie międzywojennym, po adaptacji w latach 1920–1921 przez Mariana Lalewicza, pałac stał się siedzibą Ministerstwa Skarbu.",
+      "We wrześniu 1939 roku pałac został zbombardowany i spalony; odbudowano go w latach 1950–1954 pod kierunkiem Piotra Biegańskiego.",
+      "W 1951 roku przed pałacem odsłonięto pomnik Feliksa Dzierżyńskiego, rozebrany w 1989 roku.",
+      "W 2001 roku w pobliżu dawnej lokalizacji tego pomnika odsłonięto pomnik Juliusza Słowackiego."
+    ],
+    "ciekawostki": [
+      "Obiekt jest trzypiętrowy i jedenastoosiowy, a jego charakterystyczną cechą są wielkie tarasy, rzadko spotykane w warszawskiej architekturze.",
+      "Na pierwszym piętrze, w Sali im. Stefana Starzyńskiego, odbywają się obrady Sejmiku Województwa Mazowieckiego."
+    ],
+    "summary_en": "A three-storey palace at plac Bankowy 3/5, built in 1825-1830 by Antonio Corazzi as a residence for the treasury minister Franciszek Ksawery Drucki-Lubecki. It was bombed in 1939 and rebuilt in 1950-1954; today it is joined to the Government Commission palace and houses regional government offices.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "projektant pałacu (1825-1830)", "wiki": null},
+      {"kto": "Franciszek Ksawery Drucki-Lubecki", "rola": "minister skarbu, dla którego wzniesiono rezydencję", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "adaptacja w latach 1920–1921", "wiki": null},
+      {"kto": "Piotr Biegański", "rola": "kierownik odbudowy w latach 1950–1954", "wiki": null},
+      {"kto": "Zbigniew Dunajewski", "rola": "autor pomnika Feliksa Dzierżyńskiego z 1951 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Dyrektorów", "pałac Ogińskich"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Ministra Skarbu", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Ministra_Skarbu"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Pałac jest połączony z sąsiednim pałacem Komisji Rządowej Przychodów i Skarbu i ma z nim wspólny adres."
+  },
+  {
+    "id": "palac-potockich",
+    "nazwa": "Pałac Potockich",
+    "name_en": "Potocki Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 15",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1731–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia pałacu rozpoczęła się w 1731 roku, gdy August Aleksander Czartoryski poślubił Zofię Sieniawską i został współwłaścicielem dworu Denhoffów.",
+      "W 1760 roku dwór przekształcono przez rodzinę Czartoryskich w pałac w stylu późnobarokowym; w pracach uczestniczył architekt Szymon Bogumił Zug.",
+      "W 1799 roku pałac przeszedł w ręce Aleksandry, córki Lubomirskiej, żony Stanisława Kostki Potockiego, a budynek przebudowano w stylu klasycystycznym.",
+      "W latach 1915–1918 rezydował tam hrabia Bogdan Hutten-Czapski.",
+      "W 1945 roku pałac został znacjonalizowany i przekazany na siedzibę Ministerstwa Kultury i Sztuki.",
+      "Po zniszczeniach wojennych zrekonstruowano go w latach 1948–1950 według projektu Jana Zachwatowicza.",
+      "W 2014 roku wyremontowano bramy wjazdowe na dziedziniec pałacu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A palace complex at Krakowskie Przedmieście 15, begun in 1731 as a Denhoff manor and turned into a late-baroque palace by the Czartoryski family in 1760. Rebuilt in 1948-1950 after the war, it was taken over by the Ministry of Culture and Art after nationalisation.",
+    "ludzie": [
+      {"kto": "August Aleksander Czartoryski", "rola": "współwłaściciel dworu Denhoffów od 1731 roku", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "architekt przebudowy w stylu późnobarokowym (1760)", "wiki": null},
+      {"kto": "Bogdan Hutten-Czapski", "rola": "hrabia, rezydował w pałacu w latach 1915–1918", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "projektant odbudowy w latach 1948–1950", "wiki": null}
+    ],
+    "dawne_nazwy": ["dwór Denhoffów"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Potockich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Potockich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-prezydencki",
+    "nazwa": "Pałac Prezydencki",
+    "name_en": "Presidential Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 46/48",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1643–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy pałac w tym miejscu powstał w 1643 roku z inicjatywy hetmana wielkiego koronnego Stanisława Koniecpolskiego; zaprojektował go Konstanty Tencalla.",
+      "W 1659 roku pałac nabył hetman polny Jerzy Sebastian Lubomirski, a w 1674 roku przeszedł w ręce Radziwiłłów z linii nieświeskiej.",
+      "W 1768 roku pałac został wynajęty Franciszkowi Ryksowi i zaadaptowany na teatr; w 1774 roku wystawiono tu pierwszą polską operę „Nędza uszczęśliwiona” Michała Kamińskiego.",
+      "W 1818 roku pałac odkupił Rząd Królestwa Polskiego na siedzibę namiestnika; w latach 1818–1819 przebudowano go według projektu Chrystiana Piotra Aignera.",
+      "W 1821 roku przed pałacem ustawiono kamienne lwy, dzieło Camillo Laudiniego.",
+      "Pałac został uszkodzony w pożarze 6 marca 1852 roku i odbudowany w poprzedniej formie do 1856 roku.",
+      "Podczas II wojny światowej Niemcy przejęli pałac na luksusowy hotel z kasynem, Deutsches Haus, dlatego nie został uszkodzony.",
+      "W 1919–1921 pałac odremontowano według projektu Mariana Lalewicza na siedzibę Prezesa Rady Ministrów.",
+      "W 1955 roku odbyła się tu uroczystość podpisania Układu Warszawskiego; w 1989 roku odbyły się tu obrady Okrągłego Stołu.",
+      "W 1990 roku rozpoczęto remont na siedzibę Prezydenta RP; pierwszym jej lokatorem w 1994 roku został Lech Wałęsa.",
+      "Po katastrofie smoleńskiej 10 kwietnia 2010 roku pałac stał się miejscem uczczenia pamięci Lecha Kaczyńskiego; w latach 2010-2018 pod pałacem odbywały się miesięcznice smoleńskie."
+    ],
+    "ciekawostki": [
+      "Dnia 4 lutego 1944 roku w pałacu Namiestnikowskim doszło do pośmiertnych zaślubin zabitego kilka dni wcześniej Franza Kutsche."
+    ],
+    "summary_en": "The presidential palace at Krakowskie Przedmieście 46/48, first built in 1643 for Stanisław Koniecpolski. It was a theatre in the 1770s, the governor's seat in the 1820s, the Council of Ministers' seat in the interwar period, and has been the president's residence since 1994.",
+    "ludzie": [
+      {"kto": "Stanisław Koniecpolski", "rola": "hetman wielki koronny; inicjator pierwszego pałacu (1643)", "wiki": null},
+      {"kto": "Konstanty Tencalla", "rola": "architekt pierwszego pałacu", "wiki": null},
+      {"kto": "Karol Stanisław Radziwiłł", "rola": "właściciel od 1762 roku", "wiki": null},
+      {"kto": "Józef Zajączek", "rola": "pierwszy namiestnik, który zamieszkał w pałacu", "wiki": null},
+      {"kto": "Fryderyk Chopin", "rola": "zagrał tu pierwszy publiczny koncert (wg źródła: 24 lutego 1818)", "wiki": null},
+      {"kto": "Lech Wałęsa", "rola": "pierwszy prezydent RP, który zamieszkał w pałacu (1994)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Namiestnikowski", "Pałac Radziwiłłów", "Pałac Lubomirskich", "Pałac Koniecpolskich"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Prezydencki", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Prezydencki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Data pierwszego koncertu Chopina podana w źródle jako 1818 (do weryfikacji). Ciekawostka urwana w źródle przy nazwisku („Franza Kutsche”)."
+  },
+  {
+    "id": "palac-prymasowski",
+    "nazwa": "Pałac Prymasowski",
+    "name_en": "Primate's Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Senatorska 13/15",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał z inicjatywy biskupa płockiego Wojciecha Baranowskiego; gdy został prymasem, w 1610 roku przekazał go kapitule gnieźnieńskiej.",
+      "W latach 1777–1783 Antoni Kazimierz Ostrowski podjął generalną przebudowę pałacu; architektem był Efraim Szreger, a ukończył ją Michał Jerzy Poniatowski w stylu klasycystycznym.",
+      "Po trzecim rozbiorze pałac mieścił m.in. Kamerę Warszawską i Komisję Rządową Wojny.",
+      "W okresie międzywojennym, po remoncie, stał się siedzibą Ministerstwa Rolnictwa i Reform Rolnych.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku pałac został spalony; powojenne szacunki wykazały zniszczenia na około 60%.",
+      "Odbudowano go w latach 1949–1950 na siedzibę Centralnego Zarządu Muzeów i Ochrony Zabytków.",
+      "W 1965 roku w Sali Kolumnowej wystawiono trumnę z ciałem Marii Dąbrowskiej.",
+      "W 1976 roku na skwerze przed pałacem odsłonięto pomnik Stanisława Staszica; po 2007 roku przeniesiono go na teren kampusu SGGW na Ursynowie.",
+      "W kwietniu 2016 roku spółka ZPR Media otworzyła w pałacu butikowy hotel Bellotto."
+    ],
+    "ciekawostki": [
+      "Na skwerze przed pałacem znajduje się wiąz szypułkowy uznany za pomnik przyrody."
+    ],
+    "summary_en": "A palace at Senatorska 13/15 dating from the 16th century, rebuilt in classicist style in the 1770s-1780s. Burned in 1939 and rebuilt in 1949-1950, it later became a boutique hotel.",
+    "ludzie": [
+      {"kto": "Wojciech Baranowski", "rola": "biskup płocki, inicjator pałacu", "wiki": null},
+      {"kto": "Antoni Kazimierz Ostrowski", "rola": "inwestor generalnej przebudowy w latach 1777–1783", "wiki": null},
+      {"kto": "Efraim Szreger", "rola": "architekt przebudowy z lat 1777–1783", "wiki": null},
+      {"kto": "Michał Jerzy Poniatowski", "rola": "ukończył przebudowę w stylu klasycystycznym", "wiki": null},
+      {"kto": "Maria Dąbrowska", "rola": "pisarka; jej trumnę wystawiono w pałacu w 1965 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Prymasowski", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Prymasowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-przebendowskich",
+    "nazwa": "Pałac Przebendowskich",
+    "name_en": "Przebendowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "aleja Solidarności 62",
+    "adres_historyczny": "Bielańska 14",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1727–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wzniesiono prawdopodobnie w latach 1727–1729 dla podskarbiego wielkiego koronnego Jana Jerzego Przebendowskiego; projektant jest nieznany.",
+      "W 1768 roku pałac przeszedł na własność rodziny Kossowskich; w latach 1783–1789 nieznacznie przebudowano go według projektu Szymona Bogumiła Zuga.",
+      "W 1831 roku właścicielem został Jakub Piotrowski.",
+      "W 1863 roku pałac zakupił Jan K. Zawisza i zlecił jego przebudowę według projektu Wojciecha Bobińskiego.",
+      "W 1912 roku dziedziczka pałacu odsprzedała go rodzinie Radziwiłłów.",
+      "Podczas powstania warszawskiego pałac osłaniał Bank Polski; 23 sierpnia powstańcy zdobyli budynek.",
+      "Budynek został zniszczony w około 70%.",
+      "Odbudowano go w latach 1948–1949 w barokowych formach według projektu Bruno Zborowskiego; był gotowy 1 lipca 1949 roku.",
+      "Od 1990 roku wewnątrz znajduje się Muzeum Niepodległości (w latach 1954–1990 Muzeum Lenina).",
+      "W lutym 2015 roku do pałacu powróciły cztery marmurowe rzeźby „Cztery Pory Roku”, które zdobiły pałac do 1944 roku."
+    ],
+    "ciekawostki": [
+      "W latach 1760–1762 Kossowscy wynajmowali pałac hiszpańskiemu dyplomacie, hrabiemu d'Aranda, który organizował bale i przyjęcia trwające często do białego rana.",
+      "Pałac znajduje się pomiędzy jezdniami alei Solidarności, ale adresowo jest przyporządkowany do pierzei północnej."
+    ],
+    "summary_en": "A baroque palace at aleja Solidarności 62, built around 1727-1729 for the grand treasurer Jan Jerzy Przebendowski and rebuilt in 1948-1949 after the 1944 uprising. It now houses the Museum of Independence.",
+    "ludzie": [
+      {"kto": "Jan Jerzy Przebendowski", "rola": "podskarbi wielki koronny, inwestor budowy", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "projekt przebudowy w latach 1783–1789", "wiki": null},
+      {"kto": "Jan K. Zawisza", "rola": "nabywca pałacu w 1863 roku", "wiki": null},
+      {"kto": "Wojciech Bobiński", "rola": "projekt przebudowy po 1863 roku", "wiki": null},
+      {"kto": "Bruno Zborowski", "rola": "projekt odbudowy w latach 1948–1949", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "dzięki jego wstawiennictwu pałac zachowano po wojnie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Radziwiłłów", "Pałac Zawiszów"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Przebendowskich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Przebendowskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-sapiehow",
+    "nazwa": "Pałac Sapiehów",
+    "name_en": "Sapieha Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Zakroczymska 6",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1731–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał w latach 1731–1746 w stylu baroku według projektu Jana Zygmunta Deybla dla kanclerza wielkiego litewskiego Jana Fryderyka Sapiehy.",
+      "Pałac zakupiono w 1818 roku przez rząd Królestwa Polskiego, a do 1820 roku przebudowano go na Koszary Sapieżyńskie według projektu Wilhelma Henryka Mintera.",
+      "Podczas powstania listopadowego pałac pełnił funkcję koszar 4. batalionu piechoty, tzw. Czwartaków; 29 listopada 1830 roku Czwartacy przyszli z pomocą szturmującym Arsenał.",
+      "Pałac został zniszczony w 1944 roku przez Niemców.",
+      "Po wojnie budynek odbudowano w latach 1950–1955 wg zachowanych projektów Deybla pod okiem Marii Zachwatowiczowej; przekazano go na potrzeby szkolnictwa.",
+      "Dziś mieszczą się tu szkoły specjalne: Specjalne Gimnazjum nr 153, Specjalna Szkoła Podstawowa nr 196 oraz Przedszkole Specjalne nr 343, tworzące razem Ośrodek Szkolno-Wychowawczy dla Dzieci Słabo Słyszących nr 15 im. Ottona Lipkowskiego."
+    ],
+    "ciekawostki": [
+      "Po wojnie mieściło się tu m.in. Liceum Pedagogiczne nr 6."
+    ],
+    "summary_en": "A baroque palace at Zakroczymska 6 in the Nowe Miasto district, built in 1731-1746 by Jan Zygmunt Deybel for Jan Fryderyk Sapieha. Turned into barracks in 1818-1820, destroyed in 1944 and rebuilt in 1950-1955, it now houses a school complex for hard-of-hearing children.",
+    "ludzie": [
+      {"kto": "Jan Zygmunt Deybel", "rola": "architekt pałacu (1731–1746)", "wiki": null},
+      {"kto": "Jan Fryderyk Sapieha", "rola": "kanclerz wielki litewski, inwestor budowy", "wiki": null},
+      {"kto": "Wilhelm Henryk Minter", "rola": "projekt przebudowy na koszary (do 1820)", "wiki": null},
+      {"kto": "Ludwik Bogusławski", "rola": "dowódca Czwartaków w powstaniu listopadowym", "wiki": null},
+      {"kto": "Maria Zachwatowiczowa", "rola": "nadzór nad odbudową w latach 1950–1955", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koszary Sapieżyńskie"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Sapiehów", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Sapiehów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  }
+]

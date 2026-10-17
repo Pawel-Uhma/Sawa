@@ -1,0 +1,143 @@
+[
+  {
+    "id": "zydowski-dom-sierot",
+    "nazwa": "Żydowski Dom Sierot",
+    "name_en": "Jewish Orphans' Home (Janusz Korczak)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Jaktorowska 6",
+    "adres_historyczny": "Krochmalna 92",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Żydowski dom dziecka prowadzony przez Janusza Korczaka w latach 1913-1942 miał główny budynek przy ul. Krochmalnej 92 (dziś ul. Jaktorowska 6).",
+      "Działkę przy ul. Krochmalnej 92 kupiono 12 maja 1910 roku za 24 tysiące rubli.",
+      "Kamień węgielny położono 14 czerwca 1911 roku; budynek wybudowano w latach 1911-1912 według projektu architekta Henryka Stifelmana.",
+      "Pierwsze dzieci wprowadziły się 7 października 1912 roku, a oficjalne otwarcie miało miejsce 27 lutego 1913 roku.",
+      "Podczas okupacji, w związku z powstaniem getta, placówka 21 października 1941 roku została przeniesiona do gmachu między ulicami Sienną (nr 16) a Śliską (nr 9).",
+      "6 sierpnia 1942 roku dr Janusz Korczak wyprowadził podopiecznych w kierunku Umschlagplatzu; wszyscy zostali zawiezieni do Treblinki.",
+      "Po wojnie, 11 listopada 1958 roku, otwarto uroczyście Dom Dziecka nr 2 im. Janusza Korczaka.",
+      "W 1979 roku na dziedzińcu przednim budynku odsłonięto pomnik Janusza Korczaka wykonany przez Ksawerego Dunikowskiego."
+    ],
+    "ciekawostki": [
+      "Na dwupiętrowym budynku znajdują się cztery tablice pamiątkowe, a na sąsiedniej posesji rośnie pomnik przyrody „Dąb Janusza Korczaka”."
+    ],
+    "summary_en": "Janusz Korczak's Jewish orphanage occupied this two-storey building at ul. Krochmalna 92 (today Jaktorowska 6) from 1912 until the German occupation forced the children out. Today the building houses the Dom Dziecka nr 2 named after Korczak and the Korczakianum documentation centre of the Warsaw Museum.",
+    "ludzie": [
+      {"kto": "Janusz Korczak", "rola": "dyrektor placówki", "wiki": null},
+      {"kto": "Stefania Wilczyńska", "rola": "naczelna wychowawczyni", "wiki": null},
+      {"kto": "Henryk Stifelman", "rola": "architekt projektu gmachu", "wiki": null},
+      {"kto": "Izaak Eliasberg", "rola": "powołał komisję budowlaną", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Krochmalna 92"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Żydowski Dom Sierot", "url": "https://warszawa.fandom.com/pl/wiki/Żydowski_Dom_Sierot"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "dwor-w-chrzanowie",
+    "nazwa": "Dwór w Chrzanowie",
+    "name_en": "Chrzanów Manor House",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Szeligowska 32",
+    "adres_historyczny": "Szeligowska 32",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1872–2013",
+    "istnieje": false,
+    "fakty": [
+      "Dwór stał przy ul. Szeligowskiej 32 w Chrzanowie; jego istnienie dowodzi mapa z 1872 roku.",
+      "W latach 80. XX wieku w dworze odnaleziono ciała mieszkańców rodziny Szczecińskich; według śledztwa właściciel zastrzelił żonę Aldonę i dwoje dzieci, Eryka i Patrycję, a następnie popełnił samobójstwo.",
+      "Po tych wydarzeniach budynek pozostawał niezamieszkany, a o domu krążyła plotka, że jest przeklęty i nawiedzony.",
+      "W 2012 roku dwór wraz z gruntem kupił deweloper.",
+      "5 stycznia 2013 roku budynek uległ pożarowi i spłonął w połowie.",
+      "Dwór został rozebrany, a na jego miejscu postawiono parking nowego osiedla firmy Robyg; adres Szeligowska 32 nosi obecnie jeden z nowych budynków."
+    ],
+    "ciekawostki": [
+      "Mieszkańcy twierdzili, że zbrodnia była efektem nakrycia włamywaczy podczas kradzieży, a milicja nie umiała wykryć sprawców."
+    ],
+    "summary_en": "A manor house in Chrzanów (Bemowo) at ul. Szeligowska 32, known for a 1980s family killing and the 'haunted house' legend. It was bought by a developer in 2012, partly burned in January 2013 and demolished; a residential building now stands at the address.",
+    "ludzie": [
+      {"kto": "Maciej Bartosiak", "rola": "mieszkaniec Chrzanowa związany ze sprawą dworu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dwór w Chrzanowie", "url": "https://warszawa.fandom.com/pl/wiki/Dwór_w_Chrzanowie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł zaznacza, że nie ma pewności, czy to ten sam budynek co na mapie z 1872 roku. Brak współrzędnych; adres z tekstu."
+  },
+  {
+    "id": "kapliczka-pyciow-na-gorcach",
+    "nazwa": "Kapliczka Pyciów na Górcach",
+    "name_en": "Pyć Wayside Shrine in Górce",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Dywizjonu 303 129",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1916–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kapliczka z kamienia z figurą Matki Bożej stoi przy ul. Dywizjonu 303 nr 129 na Górcach.",
+      "Ufundowali ją małżonkowie Jan i Marcyanna Pyć we wrześniu 1916 roku, w trakcie wymarszu z Warszawy wojsk rosyjskich.",
+      "Pod figurką znajduje się inskrypcja z odpustem 300 dni (Pius IX) oraz słowami „O Maryo, ulituj się nad niedostatkami i nędzami naszemi”.",
+      "Kapliczka przetrwała obie wojny światowe i do dziś stoi zadbana na osiedlu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small stone wayside shrine with a figure of the Virgin Mary at ul. Dywizjonu 303 129 in Górce, Bemowo. It was founded in September 1916 by the Pyć couple, survived both world wars and is one of the few remaining traces of old Górce.",
+    "ludzie": [
+      {"kto": "Jan Pyć", "rola": "fundator kapliczki wraz z żoną", "wiki": null},
+      {"kto": "Marcyanna Pyć", "rola": "fundatorka kapliczki wraz z mężem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kapliczka Pyciów na Górcach", "url": "https://warszawa.fandom.com/pl/wiki/Kapliczka_Pyciów_na_Górcach"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych; adres z tekstu."
+  },
+  {
+    "id": "pomnik-floriana-grabczynskiego",
+    "nazwa": "Pomnik Floriana Grabczyńskiego",
+    "name_en": "Florian Grabczyński Monument",
+    "typ": "pomnik",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Kaliskiego 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Niewielkie brązowe popiersie gen. Floriana Grabczyńskiego stoi na dwumetrowym kamiennym cokole przed głównym budynkiem WAT przy ul. Kaliskiego 2.",
+      "Gen. bryg. inż. Florian Grabczyński był jednym z twórców WAT i od czerwca 1951 roku jej pierwszym rektorem-komendantem.",
+      "Kilka miesięcy po otwarciu uczelni generał został bezpodstawnie aresztowany za rzekome szpiegostwo i skazany na karę śmierci, której jednak nie wykonano.",
+      "Po dwóch latach pobytu w więzieniu został zwolniony, a w 1956 roku w pełni zrehabilitowany.",
+      "Pomnik odsłonięto 1 czerwca 2001 roku podczas uroczystości 50-lecia uczelni; popiersie odsłonił ówczesny minister obrony narodowej Bronisław Komorowski wraz z Markiem Dukaczewskim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A bronze bust of Gen. Florian Grabczyński, co-founder and first rector-commandant of the Military University of Technology (WAT), stands on a stone plinth in front of the main WAT building at ul. Kaliskiego 2 in Bemowo. It was unveiled on 1 June 2001.",
+    "ludzie": [
+      {"kto": "Florian Grabczyński", "rola": "gen. bryg. inż., współtwórca i pierwszy rektor-komendant WAT", "wiki": null},
+      {"kto": "Bronisław Komorowski", "rola": "ówczesny minister obrony narodowej, odsłonił popiersie", "wiki": null},
+      {"kto": "Marek Dukaczewski", "rola": "minister w kancelarii prezydenta RP, odsłonił popiersie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Floriana Grabczyńskiego", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Floriana_Grabczyńskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych; adres z tekstu."
+  }
+]

@@ -15,14 +15,12 @@ import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
 import { DURATION_STOPS_MIN } from "../lib/mock-data";
-import { INTERESTS } from "../lib/onboarding";
 import { DESTINATION_PRESETS, type RideEnd, type RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
-import { ArrowRightIcon, PinIcon } from "./icons";
+import { ArrowRightIcon, ForwardIcon, LoopIcon, PinIcon, TramIcon, WalkIcon } from "./icons";
 import { PrimaryButton } from "./primary-button";
 
 type HomePanelProps = {
-  interests: string[];
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
   /** Najszybsza droga do celu (min), gdy wybrany jest cel. */
@@ -36,7 +34,6 @@ type HomePanelProps = {
   rideEnd: RideEnd;
   onRideEndTypeChange: (type: RideEndType) => void;
   onRideEndChange: (end: RideEnd) => void;
-  onEditInterests: () => void;
   onGenerate: () => void;
   planning: boolean;
   planError: string | null;
@@ -52,19 +49,18 @@ function thumbCenter(durationMin: number): string {
   return `calc(15px + (100% - 30px) * ${sliderPercent(durationMin) / 100})`;
 }
 
-const TRAVEL_OPTIONS: { type: Travel; label: string }[] = [
-  { type: "walk", label: "Pieszo" },
-  { type: "transit", label: "Komunikacją" },
+const TRAVEL_OPTIONS: ChoiceOption<Travel>[] = [
+  { type: "walk", label: "Pieszo", hint: "spacerem po okolicy", icon: <WalkIcon /> },
+  { type: "transit", label: "Komunikacją", hint: "tramwaj i autobus", icon: <TramIcon /> },
 ];
 
-const END_OPTIONS: { type: RideEndType; label: string }[] = [
-  { type: "loop", label: "Wracam tu" },
-  { type: "destination", label: "Do celu" },
+const END_OPTIONS: ChoiceOption<RideEndType>[] = [
+  { type: "loop", label: "Wracam tu", hint: "pętla do startu", icon: <LoopIcon /> },
+  { type: "destination", label: "Do celu", hint: "w jedną stronę", icon: <ForwardIcon /> },
 ];
 
-/** Ekran główny A6: pływająca karta nad paskiem zakładek, Sawa wychyla się zza karty i pyta w dymku. */
+/** Ekran główny: czas na suwaku, sposób i koniec trasy jako kafelki z podpisem, co znaczą. */
 export function HomePanel({
-  interests,
   durationMin,
   onDurationChange,
   fastestMin,
@@ -75,7 +71,6 @@ export function HomePanel({
   rideEnd,
   onRideEndTypeChange,
   onRideEndChange,
-  onEditInterests,
   onGenerate,
   planning,
   planError,
@@ -89,11 +84,6 @@ export function HomePanel({
   // Na najkrótszym kroku nagłówek pokazuje prawdziwy czas najszybszej drogi, nie zaokrąglony krok
   const shownMin =
     isFastest && fastestMin !== null ? Math.max(1, Math.round(fastestMin)) : durationMin;
-
-  const labels = interests
-    .map((key) => INTERESTS.find((item) => item.key === key)?.label)
-    .filter(Boolean)
-    .join(", ");
 
   // Dotknięcie Sawy: krótkie, sprężyste przechylenie (reakcja, nie dekoracja)
   function poke() {
@@ -111,13 +101,13 @@ export function HomePanel({
       collapsed={collapsed}
       onCollapsedChange={onCollapsedChange}
       peekPx={64}
-      className="rounded-[32px] px-[18px] pb-[18px] pt-5 md:px-6 md:pb-6 md:pt-6"
+      className="rounded-[28px] px-4 pb-4 pt-3.5 md:rounded-[32px] md:px-6 md:pb-6 md:pt-6"
       above={(progress) => <SawaAbove progress={progress} onPoke={poke} sawa={sawa} />}
     >
       <Grabber />
       <div className="flex items-baseline justify-between">
         <span className="etykieta">Przejażdżka</span>
-        <span className="relative h-[42px] overflow-hidden">
+        <span className="relative h-9 overflow-hidden md:h-[42px]">
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.strong
               key={shownMin}
@@ -125,7 +115,7 @@ export function HomePanel({
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -18, opacity: 0 }}
               transition={{ type: "spring", bounce: 0, duration: 0.3 }}
-              className="block text-[34px] font-extrabold leading-[42px] tracking-[-0.03em] text-glebia tabular-nums"
+              className="block text-[28px] font-extrabold leading-9 tracking-[-0.03em] text-glebia tabular-nums md:text-[34px] md:leading-[42px]"
             >
               {formatDuration(shownMin)}
             </motion.strong>
@@ -148,7 +138,7 @@ export function HomePanel({
       <div className="relative">
         <input
           type="range"
-          className="suwak mt-2"
+          className="suwak mt-1.5"
           aria-label="Czas przejażdżki"
           aria-valuetext={formatDuration(durationMin)}
           min={0}
@@ -173,7 +163,7 @@ export function HomePanel({
           />
         )}
       </div>
-      <div aria-hidden className="relative h-4 text-xs font-semibold text-tekst-3">
+      <div aria-hidden className="relative h-3.5 text-[11px] font-semibold text-tekst-3">
         {SCALE.map((value, index) => (
           <span
             key={value}
@@ -196,7 +186,14 @@ export function HomePanel({
         ))}
       </div>
 
-      <TravelPicker travel={travel} onChange={onTravelChange} />
+      <ChoiceGroup
+        label="Jak jedziesz"
+        options={TRAVEL_OPTIONS}
+        value={travel}
+        layoutId="kafelek-sposob"
+        onChange={onTravelChange}
+        className="mt-3"
+      />
 
       <RideEndPicker
         rideEnd={rideEnd}
@@ -204,19 +201,7 @@ export function HomePanel({
         onChange={onRideEndChange}
       />
 
-      <div className="mt-3 flex items-center gap-1.5 text-[13px] text-tekst-2">
-        <span className="shrink-0">Tematy:</span>
-        <b className="min-w-0 truncate font-bold text-tekst">{labels || "wszystkie"}</b>
-        <button
-          type="button"
-          onClick={onEditInterests}
-          className="-mr-2 ml-auto shrink-0 rounded-full px-2 py-1.5 font-bold text-glebia transition-[opacity,background-color] hover:bg-mieta-jasna active:opacity-60"
-        >
-          Zmień
-        </button>
-      </div>
-
-      <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-4">
+      <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-3 !h-12 md:!h-14">
         {planning ? "Układam trasę…" : "Wyznacz trasę"}
         <ArrowRightIcon className="size-5" />
       </PrimaryButton>
@@ -229,23 +214,37 @@ export function HomePanel({
   );
 }
 
-type TravelPickerProps = {
-  travel: Travel;
-  onChange: (travel: Travel) => void;
+type ChoiceOption<T extends string> = {
+  type: T;
+  label: string;
+  hint: string;
+  icon: ReactNode;
 };
 
-/** Pieszo albo komunikacją: przełącznik segmentowy jak koniec trasy. */
-function TravelPicker({ travel, onChange }: TravelPickerProps) {
+type ChoiceGroupProps<T extends string> = {
+  label: string;
+  options: ChoiceOption<T>[];
+  value: T;
+  layoutId: string;
+  onChange: (type: T) => void;
+  className?: string;
+};
+
+/** Dwa kafelki w rzędzie: ikona, nazwa i jedno zdanie o tym, co wybór znaczy. Zaznaczony jest biały z obwódką. */
+function ChoiceGroup<T extends string>({
+  label,
+  options,
+  value,
+  layoutId,
+  onChange,
+  className = "",
+}: ChoiceGroupProps<T>) {
   return (
-    <div
-      role="radiogroup"
-      aria-label="Jak jedziesz"
-      className="mt-4 flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
-    >
-      {TRAVEL_OPTIONS.map((option) => {
-        const isActive = option.type === travel;
+    <div role="radiogroup" aria-label={label} className={`grid grid-cols-2 gap-2 ${className}`}>
+      {options.map((option) => {
+        const isActive = option.type === value;
         return (
-          // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
+          // biome-ignore lint/a11y/useSemanticElements: kafelkowy przełącznik, nie lista radio
           <button
             key={option.type}
             type="button"
@@ -256,18 +255,30 @@ function TravelPicker({ travel, onChange }: TravelPickerProps) {
               haptic(4);
               onChange(option.type);
             }}
-            className={`relative h-[34px] flex-1 rounded-[11px] text-[13px] font-semibold transition-colors duration-200 active:scale-[0.97] ${
-              isActive ? "text-tekst" : "text-tekst-2"
-            }`}
+            className="relative flex min-w-0 items-center gap-2.5 rounded-[16px] bg-tekst/[0.05] px-2.5 py-2 text-left transition-colors duration-200 active:scale-[0.97] md:gap-3 md:px-3 md:py-3"
           >
             {isActive && (
               <motion.span
-                layoutId="segment-sposob"
+                layoutId={layoutId}
                 transition={SPRING}
-                className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
+                className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12),0_0_0_1.5px_rgba(23,112,111,0.4)]"
               />
             )}
-            <span className="relative">{option.label}</span>
+            <span
+              className={`relative grid size-9 shrink-0 place-items-center rounded-[12px] transition-colors duration-200 md:size-12 md:rounded-[14px] [&>svg]:size-[18px] md:[&>svg]:size-6 ${
+                isActive ? "bg-glebia text-white" : "bg-mieta-jasna text-glebia"
+              }`}
+            >
+              {option.icon}
+            </span>
+            <span className="relative min-w-0">
+              <span className="block truncate text-[15px] font-bold leading-tight tracking-[-0.01em] text-tekst md:text-[16px]">
+                {option.label}
+              </span>
+              <span className="block truncate text-[12px] leading-tight text-tekst-2 md:text-[13px]">
+                {option.hint}
+              </span>
+            </span>
           </button>
         );
       })}
@@ -281,49 +292,21 @@ type RideEndPickerProps = {
   onChange: (end: RideEnd) => void;
 };
 
-/** Koniec trasy: przełącznik segmentowy, a przy „Do celu” cele do stuknięcia i podpowiedź o mapie. */
+/** Koniec trasy: kafelki, a przy „Do celu” cele do stuknięcia i podpowiedź o mapie. */
 function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) {
   const destination = rideEnd.type === "destination" ? rideEnd : null;
   const isCustom =
     destination !== null && !DESTINATION_PRESETS.some((preset) => preset.name === destination.name);
 
   return (
-    <div className="mt-4">
-      <div
-        role="radiogroup"
-        aria-label="Gdzie kończysz"
-        className="flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
-      >
-        {END_OPTIONS.map((option) => {
-          const isActive = option.type === rideEnd.type;
-          return (
-            // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
-            <button
-              key={option.type}
-              type="button"
-              role="radio"
-              aria-checked={isActive}
-              onClick={() => {
-                if (isActive) return;
-                haptic(4);
-                onTypeChange(option.type);
-              }}
-              className={`relative h-[34px] flex-1 rounded-[11px] text-[13px] font-semibold transition-colors duration-200 active:scale-[0.97] ${
-                isActive ? "text-tekst" : "text-tekst-2"
-              }`}
-            >
-              {isActive && (
-                <motion.span
-                  layoutId="segment-konca"
-                  transition={SPRING}
-                  className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
-                />
-              )}
-              <span className="relative">{option.label}</span>
-            </button>
-          );
-        })}
-      </div>
+    <div className="mt-2">
+      <ChoiceGroup
+        label="Gdzie kończysz"
+        options={END_OPTIONS}
+        value={rideEnd.type}
+        layoutId="kafelek-koniec"
+        onChange={onTypeChange}
+      />
 
       <AnimatePresence initial={false}>
         {destination && (
@@ -336,7 +319,7 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
             className="overflow-hidden"
           >
             <DestinationSearch onPick={onChange} />
-            <div className="-mx-[18px] flex gap-2 overflow-x-auto px-[18px] pt-2.5 [scrollbar-width:none] md:-mx-6 md:px-6">
+            <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pt-2.5 [scrollbar-width:none] md:-mx-6 md:px-6">
               {isCustom && (
                 <span className="flex h-8 max-w-[220px] shrink-0 items-center rounded-full bg-glebia px-3 text-[13px] font-semibold text-white">
                   <span className="truncate">{destination.name}</span>

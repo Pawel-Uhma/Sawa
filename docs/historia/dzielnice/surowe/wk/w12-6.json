@@ -1,0 +1,284 @@
+[
+  {
+    "id": "zamek-krolewski",
+    "nazwa": "Zamek Królewski",
+    "name_en": "Royal Castle in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Zamkowy 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zamek Królewski to barokowy „zamek” na Starym Mieście, przy placu Zamkowym 1; był siedzibą władz I Rzeczypospolitej w latach 1596–1795, a w latach 1926–1939 prezydenta Ignacego Mościckiego.",
+      "Pod koniec XIII wieku za panowania księcia Konrada II zbudowano gród drewniano-ziemny zwany Dworem Mniejszym; w 1350 roku postawiono pierwszy obiekt murowany, Wieżę Wielką.",
+      "Pomiędzy 1407 a 1410 rokiem Janusz I Starszy wybudował piętrowy gotycki zamek zwany Dworem Większym.",
+      "Od 1526 roku zamek stał się rezydencją królewską, a po przeniesieniu funkcji stołecznych do Warszawy także siedzibą Sejmu i Senatu.",
+      "W 1622 roku Zygmunt III Waza znacznie rozbudował zamek, zamykając budowlę i tworząc pięcioboczny dziedziniec.",
+      "3 maja 1791 roku Sejm Czteroletni uchwalił na zamku konstytucję.",
+      "17 września 1939 roku zamek został poważnie uszkodzony w ostrzale artyleryjskim; około 11:15 zatrzymał się zegar na płonącej Wieży Zygmuntowskiej.",
+      "Zamek wysadzono po powstaniu warszawskim, w 1944 roku; odbudowę, a właściwie budowę od podstaw, rozpoczęto w 1971 roku, a ukończono w 1981 roku."
+    ],
+    "ciekawostki": [
+      "Codziennie o 11:15 z Wieży Zegarowej gra się Hejnał Zamku Królewskiego, skomponowany przez Zbigniewa Bagińskiego na motywach „Warszawianki”; od 2008 roku jest oficjalnym hejnałem Warszawy.",
+      "Według artykułu około 2% materiałów użytych w odbudowie pochodzi ze starego zamku."
+    ],
+    "summary_en": "The Royal Castle at Plac Zamkowy 1 in the Old Town was the seat of the Commonwealth's authorities from 1596 to 1795. Destroyed by the Germans in 1944, it was rebuilt from scratch between 1971 and 1981.",
+    "ludzie": [
+      {"kto": "Janusz I Starszy", "rola": "książę, który wybudował gotycki Dwór Większy (1407–1410)", "wiki": null},
+      {"kto": "Zygmunt III Waza", "rola": "król, który w 1622 roku rozbudował zamek i ukształtował dziedziniec", "wiki": null},
+      {"kto": "Kazimierz Brokl", "rola": "kustosz zbiorów zamkowych; zginął podczas akcji ratowania dóbr we wrześniu 1939 roku", "wiki": null},
+      {"kto": "Ignacy Mościcki", "rola": "prezydent II RP; zamek był jego siedzibą w latach 1926–1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dwór Mniejszy", "Dwór Większy"],
+    "zrodla": [{"tytul": "Warszawikia: Zamek Królewski", "url": "https://warszawa.fandom.com/pl/wiki/Zamek_Królewski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu (w tekście: plac Zamkowy 1, zapisano w mianowniku). Artykuł wymienia też Dwór Mniejszy i Dwór Większy jako dawne określenia zamku."
+  },
+  {
+    "id": "zamek-ujazdowski",
+    "nazwa": "Zamek Ujazdowski",
+    "name_en": "Ujazdów Castle",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jazdów 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1619–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zamek Ujazdowski, przy ul. Jazdów 2 na Ujazdowie, mieści dziś Centrum Sztuki Współczesnej, kino „U-jazdowski” oraz Muzeum Zamku i Szpitala Wojskowego na Ujazdowie.",
+      "W latach 1619–1624 z polecenia króla Zygmunta III Wazy wzniesiono murowany zamek; projekt najpewniej wykonał Mateo Castelli, a realizacją zajął się Giovanni Trevano.",
+      "Wszelkie prace na terenie zamku zakończono za panowania Władysława IV, w 1637 roku.",
+      "W 1764 roku zamek zakupił Stanisław August Poniatowski, który dokonał jego przebudowy w latach 1766–1771.",
+      "21 maja 1784 roku król przekazał zamek Regimentowi Gwardii Pieszej Litewskiej.",
+      "Od 1 kwietnia 1818 roku w zamku działał Szpital Główny Wojskowy, zwany potem „Szpitalem Ujazdowskim”.",
+      "Odbudowę zamku rozpoczęto w 1973 roku, a w 1981 roku stał się on siedzibą Centrum Sztuki Współczesnej."
+    ],
+    "ciekawostki": [
+      "Kamienne ławy przy drodze do zamku z „truizmami o przetrwaniu” zaprojektowała amerykańska artystka Jenny Holzer.",
+      "Podczas powstania warszawskiego mieścił się tu szpital polowy, wyrzucony 6 sierpnia; w wyniku działań wojennych zamek został zniszczony."
+    ],
+    "summary_en": "Ujazdów Castle at Jazdów 2 was built in 1619–1624 for King Sigismund III Vasa and later rebuilt for Stanisław August Poniatowski. Heavily damaged in the war, it was reconstructed from 1973 and has housed the Centre for Contemporary Art since 1981.",
+    "ludzie": [
+      {"kto": "Zygmunt III Waza", "rola": "król, który zlecił budowę murowanego zamku (1619–1624)", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król, który zakupił zamek w 1764 roku i przebudował go", "wiki": null},
+      {"kto": "Jenny Holzer", "rola": "artystka, autorka kamiennych ław z „truizmami o przetrwaniu”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Zamek Ujazdowski", "url": "https://warszawa.fandom.com/pl/wiki/Zamek_Ujazdowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu."
+  },
+  {
+    "id": "zbor-stoleczny-kosciola-zielonoswiatkowego",
+    "nazwa": "Zbór stołeczny Kościoła Zielonoświątkowego",
+    "name_en": "Warsaw Pentecostal Church congregation",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Sienna 68/70",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1985–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Siedziba zboru stołecznego Kościoła Zielonoświątkowego w RP mieści się przy ul. Siennej 68/70.",
+      "Oficjalne zezwolenie władz państwowych na budowę zboru otrzymano w styczniu 1982 roku.",
+      "W grudniu 1984 roku przydzielono działkę w obrębie ulic Siennej, Śliskiej i Twardej, a w czerwcu 1985 roku rozpoczęto budowę.",
+      "Oficjalne otwarcie zboru i pierwsze odprawione w nim nabożeństwo nastąpiły 29 września 1989 roku.",
+      "Oprócz sali modlitewnej w budynku znajduje się siedziba Prezydium Rady Naczelnej Kościoła Zielonoświątkowego w RP, dom studenta, redakcja miesięcznika „Chrześcijanin” i wydawnictwo Agape.",
+      "Zbór liczy ponad 500 członków."
+    ],
+    "ciekawostki": [
+      "Nabożeństwa odbywają się w każdą niedzielę o 10:00 i 12:00 oraz w piątki o 18:00."
+    ],
+    "summary_en": "The Warsaw central congregation of the Pentecostal Church in Poland is based at Sienna 68/70. Its construction began in 1985 after permission was granted in 1982, and the church opened in September 1989.",
+    "ludzie": [
+      {"kto": "Arkadiusz Kuczyński", "rola": "obecny pastor zboru", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Zbór stołeczny Kościoła Zielonoświątkowego", "url": "https://warszawa.fandom.com/pl/wiki/Zbór_stołeczny_Kościoła_Zielonoświątkowego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu. Artykuł opisuje głównie wyznanie; do rekordu wzięto fakty o budynku zboru."
+  },
+  {
+    "id": "zebra-tower",
+    "nazwa": "Zebra Tower",
+    "name_en": "Zebra Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2008–2010",
+    "istnieje": true,
+    "fakty": [
+      "Zebra Tower to biurowy wysokościowiec w Śródmieściu Południowym, przy ul. Mokotowskiej 1, na rogu z al. Armii Ludowej i ul. Waryńskiego.",
+      "W tym miejscu stały dwie kamienice na rogu ul. Mokotowskiej i ul. Polnej, o adresach Polna 32 i Mokotowska 1; odbudowano je z obniżeniem do jednego piętra, a rozebrano w latach 70. XX wieku w związku z budową Trasy Łazienkowskiej.",
+      "W latach 90. XX wieku powstała tu wentylatornia metra.",
+      "Budowa wieżowca rozpoczęła się w sierpniu 2008 roku; projektowali go Martin Tröthan i Piotr Bujnowski dla firmy Rondo Office Project, należącej do austriackiego dewelopera S+B Gruppe.",
+      "Kamień węgielny wmurowano w październiku 2009 roku, a budowę, prowadzoną przez Bilfinger Berger Budownictwo S.A., zakończono w grudniu 2010 roku.",
+      "Budynek ma szesnaście pięter i 60 metrów wysokości, 16 000 m² powierzchni do wynajęcia oraz dwie kondygnacje podziemne z 124 miejscami parkingowymi.",
+      "Wentylatornia I linii metra została przebudowana i wkomponowana w budynek."
+    ],
+    "ciekawostki": [
+      "Od strony ul. Mokotowskiej ażurowa konstrukcja ma wizualnie odtwarzać pierzeję tej ulicy.",
+      "Budynek o obłych elewacjach obłożono złotymi panelami."
+    ],
+    "summary_en": "Zebra Tower is a 60 m, sixteen-storey office block at Mokotowska 1, on the corner of Aleja Armii Ludowej and Waryńskiego. Built in 2008–2010 on the site of two pre-war tenements, it incorporates a metro ventilation shaft.",
+    "ludzie": [
+      {"kto": "Martin Tröthan", "rola": "architekt; projektant wieżowca", "wiki": null},
+      {"kto": "Piotr Bujnowski", "rola": "architekt; projektant wieżowca", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Zebra Tower", "url": "https://warszawa.fandom.com/pl/wiki/Zebra_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu."
+  },
+  {
+    "id": "zespol-klasztorny-sakramentek",
+    "nazwa": "Zespół klasztorny sakramentek",
+    "name_en": "Sacramentine convent complex",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Nowego Miasta 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1684–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół klasztorny sakramentek to kompleks budynków klasztornych przy Rynku Nowego Miasta 2.",
+      "W 1687 roku Maria Kazimiera sprowadziła z Francji sakramentki, które osadzono w pałacu wzniesionym w 1684 roku według projektu Tylmana z Gameren dla Adama i Małgorzaty Kotowskich.",
+      "W 1688 roku pałac przebudowano na klasztor.",
+      "Kościół św. Kazimierza z lat 1688–1692 wzniesiono na planie krzyża greckiego z ośmioboczną kopułą; kapliczka ogrodowa pochodzi z około 1780 roku.",
+      "Uroczyste przeniesienie wspólnoty do nowej siedziby odbyło się 27 czerwca 1688 roku z udziałem króla Jana III Sobieskiego i Marii Kazimiery.",
+      "31 sierpnia 1944 roku w wyniku bombardowania niemieckiego lotnictwa kościół i klasztor zostały całkowicie zniszczone.",
+      "Odbudowę rozpoczęto po wojnie, a w 1952 roku świątynię ponownie oddano do użytku."
+    ],
+    "ciekawostki": [
+      "W 1974 roku kardynał Stefan Wyszyński poświęcił w kościele pomnik upamiętniający ofiary bombardowania; co roku 31 sierpnia odprawiana jest Msza święta w ich intencji."
+    ],
+    "summary_en": "The Sacramentine convent complex at Rynek Nowego Miasta 2 grew out of a 1684 palace designed by Tylman van Gameren. Founded in 1687–1688 by Maria Kazimiera, it was destroyed by a German bombing on 31 August 1944 and its church reopened in 1952.",
+    "ludzie": [
+      {"kto": "Maria Kazimiera", "rola": "królowa, która sprowadziła sakramentki z Francji i doprowadziła do powstania klasztoru", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "autor projektu pałacu z 1684 roku", "wiki": null},
+      {"kto": "Jan III Sobieski", "rola": "król; uczestniczył w przeniesieniu wspólnoty do nowej siedziby w 1688 roku", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał; poświęcił pomnik ofiar bombardowania w 1974 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Zespół klasztorny sakramentek", "url": "https://warszawa.fandom.com/pl/wiki/Zespół_klasztorny_Sakramentek"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu."
+  },
+  {
+    "id": "zlota-44",
+    "nazwa": "Złota 44",
+    "name_en": "Złota 44 (Libeskind's Sail)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Złota 44",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2007–2017",
+    "istnieje": true,
+    "fakty": [
+      "Złota 44, zwany też Szklanym Żaglem lub Żaglem Libeskinda, to wieżowiec z apartamentami przy ul. Złotej 44 w Śródmieściu.",
+      "Wcześniej stał tu dom handlowy „City Center”, kupiony przez firmę Orco w 2004 roku i rozebrany w 2007 roku, z zachowaniem części fundamentów.",
+      "Pozwolenie na budowę inwestor uzyskał 5 grudnia 2007 roku; w marcu 2009 roku budowę wstrzymano na 17. kondygnacji.",
+      "Pełną wysokość 192 metrów budynek osiągnął 29 października 2012 roku.",
+      "W sierpniu 2014 roku nowym właścicielem została firma BBI Development, która pieniądze na transakcję uzyskała od amerykańskiego funduszu Amstar.",
+      "Budowa została zakończona w marcu 2017 roku.",
+      "Budynek ma 192,0 m wysokości całkowitej i 54 kondygnacje nadziemne."
+    ],
+    "ciekawostki": [
+      "Na szczycie urządzono piętro pokazowe z trzema apartamentami zaprojektowanymi przez angielskiego projektanta wnętrz Jonathana Clarke’a.",
+      "Nowy właściciel zapowiadał, że na ósmym piętrze znajdzie się przedszkole, a także basen, sauna, bar, sala kinowa i sala konferencyjna dostępne tylko dla mieszkańców."
+    ],
+    "summary_en": "Złota 44, nicknamed the Glass Sail or Libeskind's Sail, is a 192 m, 54-storey apartment tower at Złota 44 designed by Daniel Libeskind. Begun in 2007 on the site of the City Center store, it stalled during the financial crisis and was completed in March 2017.",
+    "ludzie": [
+      {"kto": "Daniel Libeskind", "rola": "architekt; autor projektu wieżowca", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szklany Żagiel", "Żagiel Libeskinda"],
+    "zrodla": [{"tytul": "Warszawikia: Złota 44", "url": "https://warszawa.fandom.com/pl/wiki/Złota_44"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z infoboksu."
+  },
+  {
+    "id": "zlote-tarasy",
+    "nazwa": "Złote Tarasy",
+    "name_en": "Złote Tarasy shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Złota 59",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Złote Tarasy to centrum handlowo-biurowe przy ul. Złotej 59, w bezpośrednim sąsiedztwie Dworca Centralnego.",
+      "Przygotowania do budowy rozpoczęły się w 1996 roku, a budowę rozpoczęto w 2002 roku; centrum otwarto 7 lutego 2007 roku.",
+      "Wartość inwestycji wyniosła około 1,5 miliarda złotych i była to największa taka inwestycja w Polsce.",
+      "3 września 2007 roku otwarto kino Multikino.",
+      "W 2012 roku Złote Tarasy sprzedano funduszowi zarządzanemu przez AXA Real Estate i CBRE Property Fund Central Europe LP za 475 mln euro.",
+      "Budynek ma całkowitą powierzchnię 225 tys. m², z czego 65 tys. m² zajęło Multikino, galerie handlowe i centra restauracyjne, a 55 tys. m² biura.",
+      "Pod ziemią znajduje się parking na 1700 aut."
+    ],
+    "ciekawostki": [
+      "Centralna część kompleksu przykryta jest szklanym dachem o powierzchni 10 250 m², złożonym z 4780 szklanych trójkątów i ważącym 1400 ton.",
+      "Złote Tarasy zdobyły w 2007 roku nagrodę Global RLI Awards w kategorii centrum handlowe roku."
+    ],
+    "summary_en": "Złote Tarasy is a mixed retail and office complex at Złota 59, next to Warsaw Central station. Built in 2002–2006 and opened on 7 February 2007, it was then the largest such investment in Poland, and it was sold in 2012 for 475 million euros.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Złote Tarasy", "url": "https://warszawa.fandom.com/pl/wiki/Złote_Tarasy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z infoboksu."
+  },
+  {
+    "id": "lawaczka-jana-nowaka-jezioranskiego",
+    "nazwa": "Ławeczka Jana Nowaka-Jeziorańskiego",
+    "name_en": "Jan Nowak-Jeziorański bench monument",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Czerniakowska 178a",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ławeczka Jana Nowaka-Jeziorańskiego to pomnik przy ul. Czerniakowskiej 178a na Powiślu.",
+      "19 października 2006 roku przed Biblioteką i Centrum Informacji im. Jana Nowaka Jeziorańskiego pomnik odsłonili Władysław Bartoszewski i prezydent Warszawy Kazimierz Marcinkiewicz.",
+      "W uroczystości uczestniczyli m.in. ambasador USA Victor Ashe, minister Kancelarii Prezydenta Elżbieta Jakubiak oraz Zofia Bartoszewska.",
+      "Autorem plenerowej rzeźby wykonanej w brązie jest Wojciech Gryniewicz."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A bronze bench monument to Jan Nowak-Jeziorański stands at Czerniakowska 178a on Powiśle, next to the library named after him. It was unveiled on 19 October 2006 by Władysław Bartoszewski and Warsaw mayor Kazimierz Marcinkiewicz.",
+    "ludzie": [
+      {"kto": "Jan Nowak-Jeziorański", "rola": "patron pomnika i biblioteki", "wiki": null},
+      {"kto": "Władysław Bartoszewski", "rola": "odsłonił pomnik w 2006 roku", "wiki": null},
+      {"kto": "Kazimierz Marcinkiewicz", "rola": "prezydent Warszawy; odsłonił pomnik w 2006 roku", "wiki": null},
+      {"kto": "Wojciech Gryniewicz", "rola": "autor rzeźby", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ławeczka Jana Nowaka-Jeziorańskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ławeczka_Jana_Nowaka-Jeziorańskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z pierwszego zdania artykułu. Artykuł nazywa to miejsce Powiślem; adres podany jak w tekście."
+  }
+]

@@ -43,6 +43,19 @@ export function clipKey(stopId: string, listener: Listener, targetSec: number): 
   return JSON.stringify([stopId, targetSec, listener]);
 }
 
+/**
+ * The voice (ElevenLabs) is off by default because it burns credits. `?voice=1` in the URL turns it on.
+ * Without it the story text still shows and runs on a timer.
+ */
+export function voiceOn(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    return new URLSearchParams(window.location.search).get("voice") === "1";
+  } catch {
+    return false;
+  }
+}
+
 /** Asks for a story with what Sawa already told this listener, so it tells something new. */
 export async function fetchClip(
   placeId: string,
@@ -63,6 +76,7 @@ export async function fetchClip(
   const { text, factIds, contextIds } = await res.json();
   const told = { placeId, factIds, contextIds, placeName };
   // Without the voice the card still shows the text and runs on a timer.
+  if (!voiceOn()) return { text, audioUrl: null, told };
   try {
     // The same body hits the API's story cache, so the voice reads exactly this text.
     const audio = await api.v1.stories.audio.$post({ json });

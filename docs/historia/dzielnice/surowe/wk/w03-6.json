@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ulica-kolczana",
+    "nazwa": "Ulica Kołczana",
+    "name_en": "Kołczana Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Kołczana",
+    "adres_historyczny": "ul. Radlińska",
+    "lat": 52.2446106,
+    "lon": 20.9212606,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 30. XX wieku w wyniku parcelacji dawnego majątku Górce; nadano jej wówczas nazwę Radlińska.",
+      "Obecną nazwę nadano Obwieszczeniem Przewodniczącego Prezydium Rady Narodowej m.st. Warszawy z 23 maja 1960 roku; odnosi się ona do kołczana, elementu oporządzenia jeździeckiego.",
+      "Jest jedną z ulic osiedla Górce Nowe; krzyżuje się tylko z ul. Szlifierską, ul. Strońską i ul. Wieśniaczą.",
+      "Jest najkrótszą ulicą na Bemowie, ma ok. 15 metrów długości i jeden budynek, pod adresem 17A, wybudowany przed 1939 rokiem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The shortest street in Bemowo, about 15 metres long, in the Górce Nowe estate. It was named Radlińska in the 1930s and renamed in 1960 after the quiver, a piece of riding equipment.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Radlińska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Kołczana", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kołczana"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  }
+]

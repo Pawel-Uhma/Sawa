@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ulica-krzysztofa-kamila-baczynskiego",
+    "nazwa": "ulica Krzysztofa Kamila Baczyńskiego",
+    "name_en": "Krzysztof Kamil Baczyński Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krzysztofa Kamila Baczyńskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica w Śródmieściu Północnym biegnie od ul. Górskiego do ul. Wareckiej i jest jednokierunkowa w kierunku północnym.",
+      "Ma długość 130 m; powstała w 1960 roku.",
+      "Tylko jeden z okolicznych budynków, oznaczony nr 1, jest przypisany do jej numeracji.",
+      "Patronem jest Krzysztof Kamil Baczyński, poeta, żołnierz Armii Krajowej, jeden z przedstawicieli pokolenia kolumbów.",
+      "Baczyński zginął podczas powstania warszawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 130 m one-way street in Śródmieście Północne, running from Górskiego to Warecka streets. It is named after the poet and Home Army soldier Krzysztof Kamil Baczyński, who died during the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Krzysztof Kamil Baczyński", "rola": "patron ulicy, poeta, żołnierz AK, zginął w powstaniu warszawskim", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Krzysztofa Kamila Baczyńskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Baczyńskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE: brak, więc lat/lon null. W treści artykułu jest znacznik <place lat=\"52.23492130\" lon=\"21.01611610\" /> (nieużyty, bo nagłówek ich nie podaje). Artykuł kończy się na tym wpisie w pliku paczki."
+  }
+]

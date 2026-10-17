@@ -1,0 +1,216 @@
+[
+  {
+    "id": "ulica-smolna",
+    "nazwa": "Ulica Smolna",
+    "name_en": "Smolna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Smolna",
+    "adres_historyczny": null,
+    "lat": 52.2325959,
+    "lon": 21.0221084,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Smolna to jednokierunkowa ulica w Śródmieściu Północnym, biegnąca bez przecznic od Alej Jerozolimskich do Nowego Światu.",
+      "Ulica była pierwotnie drogą narolną, schodzącą od Nowego Światu w dół skarpy wiślanej; została wytyczona i uporządkowana staraniem Komisji Brukowej w II połowie XVIII wieku.",
+      "W 1771 roku oficjalnie nadano jej nazwę Smolna.",
+      "Na początku XIX wieku w miejscu dawnego dworu powstała kamienica projektu Antonio Corazziego.",
+      "W 1817 roku powstała Rządowa Fabryka Dywanów i Kobierców, a w 1826 roku Rządowa Fabryka Machin Żelaznych.",
+      "W 1858 roku opracowano plan regulacji ulicy, która została wybrukowana.",
+      "W latach 1863–1864, podczas powstania styczniowego, w kamienicy nr 3 przy Dolnej Smolnej ukrywał się Romuald Traugutt, tutaj też został aresztowany.",
+      "Po II wojnie światowej Dolna Smolna przestała właściwie istnieć; zabudowania rozebrano około 1950 roku, a w jej miejscu wytyczono alejkę Centralnego Parku Kultury."
+    ],
+    "ciekawostki": [
+      "Ze względu na skarpę mieszkańcy mówili o Dolnej i Górnej Smolnej; podział ten oficjalnie usankcjonowano około 1870 roku.",
+      "Przy ulicy mieszkali m.in. Stefania Sempołowska (nr 7), Tadeusz Boy-Żeleński (nr 11), Roman Dmowski (nr 14) i Helena Skłodowska-Szalayowa (nr 23)."
+    ],
+    "summary_en": "Smolna is a one-way street in Śródmieście Północne that runs without side streets from Aleje Jerozolimskie to Nowy Świat. Its name was officially given in 1771; the street was split by the Vistula escarpment into Lower and Upper Smolna, and the lower part was largely erased after World War II.",
+    "ludzie": [
+      {"kto": "Romuald Traugutt", "rola": "ukrywał się i został aresztowany w kamienicy nr 3 przy Dolnej Smolnej (1863–1864)", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "projektant kamienicy, która powstała w miejscu dworu na początku XIX wieku", "wiki": null},
+      {"kto": "Roman Dmowski", "rola": "mieszkał przy ul. Smolnej 14", "wiki": null},
+      {"kto": "Tadeusz Boy-Żeleński", "rola": "mieszkał przy ul. Smolnej 11", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dolna Smolna", "Górna Smolna", "Wysoka Smolna"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Smolna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Smolna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-szeroki-dunaj",
+    "nazwa": "Ulica Szeroki Dunaj",
+    "name_en": "Szeroki Dunaj Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Szeroki Dunaj",
+    "adres_historyczny": null,
+    "lat": 52.249866,
+    "lon": 21.0101182,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIII i XIV wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica-placyk Szeroki Dunaj biegnie na Starym Mieście od ulicy Wąski Dunaj do murów miejskich.",
+      "Placyk z źródełkiem był od 1631 roku targowiskiem ryb solonych.",
+      "W XVII wieku przebito przez mury Bramę Rzeźniczą do znajdujących się poza murami jatek.",
+      "Na początku XIX wieku handlowano tu warzywami i kwiatami, aż do lat 20. XX wieku, gdy cały handel ze Starego Miasta przeniesiono do Hali Świętojerskiej.",
+      "Część kamienic rozebrano w latach 1937–1938 w ramach odsłaniania murów miejskich.",
+      "Zabudowę zniszczoną podczas II wojny światowej odbudowano z dość dużą dowolnością w latach 1955–1963.",
+      "W 2013 roku nawierzchnię ulicy odremontowano."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od potoku Dunaj, który wypływał tu ze źródeł i spływał przez mury wąwozem ulicy Mostowej ku Wiśle; dziś przypomina o nim XIX-wieczna studnia.",
+      "Przy północnej pierzei odbudowano tylko jedną kamienicę, która do dziś jest przejściem do Bramy Rzeźniczej, jedynej istniejącej w pasie murów."
+    ],
+    "summary_en": "Szeroki Dunaj is a short square-like street in the Old Town part of Śródmieście, running from Wąski Dunaj to the city walls. It takes its name from a stream that once rose here, became a fish market in 1631, and kept a vegetable and flower market until the 1920s.",
+    "ludzie": [
+      {"kto": "Jan Kiliński", "rola": "mieszkał w kamienicy nr 5; na budynku jest tablica upamiętniająca", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dunaj"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Szeroki Dunaj", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Szeroki_Dunaj"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że przed rozdzieleniem nazw zwane były jednym imieniem Dunaj (wraz z Wąskim Dunajem)."
+  },
+  {
+    "id": "ulica-szpitalna",
+    "nazwa": "Ulica Szpitalna",
+    "name_en": "Szpitalna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Szpitalna",
+    "adres_historyczny": null,
+    "lat": 52.2330054,
+    "lon": 21.0148752,
+    "lokalizacja": "przyblizona",
+    "okres": "1770 rok",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Szpitalna leży w Śródmieściu Północnym; jest przedłużeniem ul. Brackiej, biegnie od skrzyżowania z ul. Chmielną do ul. Brokla i jest jednokierunkowa w kierunku północnym.",
+      "Nazwę urzędowo zatwierdzono w 1770 roku, od gmachu Szpitala Dzieciątka Jezus wybudowanego w latach 1754–1757.",
+      "W 1781 roku na południe od szpitala istniał szpitalny cmentarz, który z czasem zamieniono w ogrody.",
+      "W latach 1823–1826 część ulicy wchłonął nowo powstały Plac Dzieciątka Jezus, obecnie Plac Powstańców Warszawy.",
+      "W 1883 roku zbudowano ul. Hortensji (ob. ul. Górskiego), co zwiększyło znaczenie Szpitalnej; rozparcelowano też tereny szpitala Dzieciątka Jezus.",
+      "Kamienica Grossglicka pochodzi z 1890 roku, a Kamienica Wedla z 1893 roku, w której przez długi czas działała fabryka słodyczy.",
+      "W okresie międzywojennym na ulicy położono asfalt i puszczono linię autobusową.",
+      "W 1946 roku wytyczono tędy linię trolejbusową; w 1965 roku ulica jako założenie urbanistyczne została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W okresie międzywojennym Szpitalna była jedną z ruchliwszych ulic Warszawy.",
+      "Przy ulicy 5 mieści się zabytkowa kamienica, siedziba AZS-u Warszawa."
+    ],
+    "summary_en": "Szpitalna runs northward from Chmielna/Bracka to Brokla and extends Bracka street. Its official name dates from 1770, taken from the Child Jesus Hospital built in 1754–1757, and it was entered in the heritage register in 1965.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Szpitalna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Szpitalna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-tamka",
+    "nazwa": "Ulica Tamka",
+    "name_en": "Tamka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tamka",
+    "adres_historyczny": null,
+    "lat": 52.2365185,
+    "lon": 21.020919,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Tamka, długa na około 775 metrów, jest najważniejszym zorientowanym na osi wschód–zachód ciągiem komunikacyjnym Powiśla.",
+      "Ulica stanowi fragment tzw. Trasy Świętokrzyskiej.",
+      "Nazwa pochodzi od tamy, która istniała na płynącej niegdyś w miejscu ulicy rzeczce.",
+      "Ulica zaczyna się rondem na skrzyżowaniu z ul. Wybrzeże Kościuszkowskie, a kończy skrzyżowaniem z ul. Kopernika; jej przedłużeniem na wschód jest Most Świętokrzyski.",
+      "W 2013 roku wzdłuż ulicy wytyczono pasy dla rowerów.",
+      "Założenie urbanistyczne ulicy Tamka zostało wpisane do rejestru zabytków.",
+      "We wrześniu 2009 roku na kamienicy nr 45 odkryto znak białego krzyża, oznaczenie punktu sanitarnego z czasów Powstania Warszawskiego."
+    ],
+    "ciekawostki": [
+      "Tamka 3 to gmach Związku Piłki Ręcznej w Polsce i centrala Alfa Laval.",
+      "Na Tamce 4a stoi kościół św. Teresy od Dzieciątka Jezus, a na nr 41 Zamek Ostrogskich."
+    ],
+    "summary_en": "Tamka is a roughly 775 m east–west street in Powiśle, part of the Trasa Świętokrzyska route, running from a roundabout at Wybrzeże Kościuszkowskie to Kopernika street. It is named after a dam on a stream that once flowed there, and its urban layout is listed as a historic monument.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Tamka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tamka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje w treści 775 m, a w nagłówku 800 m; w rekordzie przyjęto 775 m z opisu."
+  },
+  {
+    "id": "ulica-trebacka",
+    "nazwa": "Ulica Trębacka",
+    "name_en": "Trębacka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Trębacka",
+    "adres_historyczny": null,
+    "lat": 52.2432631,
+    "lon": 21.0122813,
+    "lokalizacja": "przyblizona",
+    "okres": "XX wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Trębacka ma około 175 metrów długości i leży w Śródmieściu Północnym.",
+      "Ulica zaczyna się przy Krakowskim Przedmieściu, przecina ul. Kozią i biegnie na zachód w stronę placu Piłsudskiego, a kończy skrzyżowaniem z ul. Moliera i Focha.",
+      "Nazwa pochodzi od trąbek wozów pocztowych wyjeżdżających spod gmachu dawnej Poczty Saskiej (Pałac Wesslów) na rogu z ul. Kozią.",
+      "20 czerwca 1908 roku na Trębacką wjechał pierwszy wóz tramwaju elektrycznego linii nr 5; do lipca 1908 roku jeździło tu pięć linii tramwajowych.",
+      "W maju 1946 roku przeprowadzono ulicą sieć trolejbusową, którą zlikwidowano w 1949 roku.",
+      "W 1991 roku na Trębacką przyjechał autobus linii 106; w 2007 roku ulica została wyłączona z ruchu autobusowego.",
+      "W lutym 2015 roku zdecydowano, że na rogu ul. Focha, w miejscu pętli autobusowej, ustawiony zostanie pomnik katastrofy smoleńskiej."
+    ],
+    "ciekawostki": [
+      "Na początku XX wieku Trębacka była ważną osią komunikacyjną, choć dziś wydaje się małą lokalną uliczką.",
+      "Pierwotnie jezdnia miała nawierzchnię z drewnianej kostki brukowej."
+    ],
+    "summary_en": "Trębacka is a short street of about 175 m in Śródmieście Północne, running west from Krakowskie Przedmieście to Plac Piłsudskiego. Named after the horns of postal carriages from the former Saxon Post Office, it carried five tram lines by 1908 and has been closed to buses since 2007.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Trębacka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Trębacka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-warecka",
+    "nazwa": "Ulica Warecka",
+    "name_en": "Warecka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Warecka",
+    "adres_historyczny": null,
+    "lat": 52.2352043,
+    "lon": 21.0164142,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Warecka leży w Śródmieściu Północnym; zaczyna się ślepo przy Nowym Świecie i kończy wpadając w Plac Powstańców Warszawy. Jest jednokierunkowa w kierunku zachodnim.",
+      "Ulica funkcjonowała już w XVI wieku jako droga przez jurydykę szpitala Świętego Ducha; formalnie ulicą stała się pod koniec XVII wieku.",
+      "Nazwa pochodzi od dworku „Wareckie”, który w XVIII wieku nabył Józef Pułaski, starosta warecki.",
+      "Ogrody Pułaskiego dotrwały do 1875 roku.",
+      "W połowie XIX wieku przy placu Wareckim ulokowano pocztę konną; później stanął tu okazały gmach Poczty Głównej.",
+      "Zabudowę ulicy zniszczono podczas powstania warszawskiego, a budynki odbudowano w latach 50. XX wieku w stylu socrealistycznym.",
+      "W latach 1948–1955 na miejscu Poczty Głównej powstał gmach Narodowego Banku Polskiego, którego jednym z projektantów był Bohdan Pniewski.",
+      "W latach 1958–1961 po drugiej stronie ulicy wybudowano hotel robotniczy „Dom Chłopa”."
+    ],
+    "ciekawostki": [
+      "W kamienicy nr 11 w latach 1973–2002 mieszkał Edward Dziewoński, aktor i satyryk, twórca kabaretu „Dudek”.",
+      "W przedwojennym domu przy Wareckiej 9 sprzedawano towary importowane z Persji, m.in. perskie dywany.",
+      "W domu przy Wareckiej 9 miał swoją kancelarię aktor Eugeniusz Bodo."
+    ],
+    "summary_en": "Warecka is a one-way street in Śródmieście Północne, running from a dead end at Nowy Świat to Plac Powstańców Warszawy. Named after the manor house Wareckie bought by starost Józef Pułaski in the 18th century, it was rebuilt in socialist-realist style after World War II, and the National Bank of Poland building stands where the main post office once was.",
+    "ludzie": [
+      {"kto": "Józef Pułaski", "rola": "starosta warecki; w XVIII wieku nabył dworek „Wareckie”, od którego ulica wzięła nazwę", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "jeden z projektantów gmachu Narodowego Banku Polskiego (1948–1955)", "wiki": null},
+      {"kto": "Edward Dziewoński", "rola": "mieszkał w kamienicy nr 11 (1973–2002); aktor, satyryk, twórca kabaretu „Dudek”", "wiki": null},
+      {"kto": "Eugeniusz Bodo", "rola": "miał kancelarię w domu przy Wareckiej 9", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Warecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Warecka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka z nagłówka artykułu."
+  }
+]

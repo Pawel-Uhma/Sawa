@@ -1,0 +1,149 @@
+[
+  {
+    "id": "ulica-afrodyty",
+    "nazwa": "Ulica Afrodyty",
+    "name_en": "Afrodyty Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Afrodyty",
+    "adres_historyczny": null,
+    "lat": 52.24909,
+    "lon": 20.9080359,
+    "lokalizacja": "przyblizona",
+    "okres": "1988–1989",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1988 lub 1989 roku na terenach przyległych do Wojskowej Akademii Technicznej, zagospodarowanych pod zabudowę jednorodzinną i niską pod koniec lat 80. XX wieku.",
+      "Nazwę ulicy nadano 26 maja 1988 roku; upamiętnia ona Afrodytę, jedną z bogiń starożytnej mitologii greckiej.",
+      "Ulica jest wąska, ma jedną jezdnię z jednym pasem ruchu w dwóch kierunkach i krzyżuje się tylko z ul. Prometeusza.",
+      "Jest jedną z ulic wspólnoty mieszkaniowej „Akropol”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A narrow street in the Bemowo-Lotnisko estate, built in 1988-1989 next to the Military University of Technology. It is named after Aphrodite, the Greek goddess, and is one of the streets of the Akropol housing community.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Afrodyty", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Afrodyty"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-akantu",
+    "nazwa": "Ulica Akantu",
+    "name_en": "Akantu Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Akantu",
+    "adres_historyczny": "ul. Wolności",
+    "lat": 52.2617964,
+    "lon": 20.9028996,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała między lipcem a listopadem 1933 roku jako jedna z ulic nowo powstającego Osiedla Łączności Babice; nazwano ją wtedy Ulica Wolności.",
+      "Zaraz po wybudowaniu osiedla, na niewielkim skwerku przy ul. Wolności, umieszczono kamień upamiętniający budowniczych ulic osiedla Boernerowo.",
+      "W maju 1950 roku funkcjonariusze Milicji Obywatelskiej i pomagający im cywile skuli napis i zakopali głaz w ziemi.",
+      "Kamień odnaleziono przypadkowo w 2002 roku przy budowie nowego budynku szkoły i ustawiono nieopodal miejsca, w którym stał pierwotnie.",
+      "Obecną nazwę nadano Obwieszczeniem Przewodniczącego Prezydium Rady Narodowej m.st. Warszawy z 23 maja 1960 roku; odnosi się ona do kwiatu akantu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Boernerowo, built in 1933 as Ulica Wolności. It is known for the granite stone honouring the builders of the estate's streets, which was buried by the militia in 1950 and found by chance in 2002.",
+    "ludzie": [],
+    "dawne_nazwy": ["Ulica Wolności"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Akantu", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Akantu"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-andyjska",
+    "nazwa": "Ulica Andyjska",
+    "name_en": "Andyjska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Andyjska",
+    "adres_historyczny": null,
+    "lat": 52.254385,
+    "lon": 20.910204,
+    "lokalizacja": "przyblizona",
+    "okres": "1980–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1980 roku, kiedy zredukowano obszar lotniska Warszawa-Babice pod budowę pięciu osiedli mieszkaniowych.",
+      "Nazwę nadano Uchwałą nr 60 Rady Narodowej m.st. Warszawy z 22 lutego 1980 roku; nawiązuje ona do Andów, łańcucha górskiego w Ameryce Południowej.",
+      "Przy ulicy znajduje się głównie wiele domów jednorodzinnych; od strony południowej krzyżuje się z ul. Apenińską."
+    ],
+    "ciekawostki": [
+      "Przy nr. 2 znajduje się nieczynna piekarnia „Dragan”."
+    ],
+    "summary_en": "A small residential street in the Bemowo-Lotnisko estate, created in 1980 when part of the Warsaw-Babice airport area was released for housing. It is named after the Andes.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Andyjska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Andyjska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-apeninska",
+    "nazwa": "Ulica Apenińska",
+    "name_en": "Apenińska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Apenińska",
+    "adres_historyczny": null,
+    "lat": 52.2541842,
+    "lon": 20.9109204,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1980–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około 1980 roku, kiedy zredukowano obszar lotniska Warszawa-Babice pod budowę osiedla Bemowo III.",
+      "Nazwę nadano Uchwałą nr 60 Rady Narodowej m.st. Warszawy z 22 lutego 1980 roku; nawiązuje ona do łańcucha górskiego we Włoszech, Apeninów.",
+      "Ulica skupia sześć wspólnot mieszkaniowych: Apenińska 1, 2, 4, 3/7, 9 i 11; w latach 2010-2012 powstały przy niej dwa nowe budynki, nr 1a i 3a.",
+      "Krzyżuje się z ul. Andyjską i ul. Radiową, ma też łącznik z ul. Pirenejską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street of the Bemowo III estate, built around 1980 on former airport land at the Warsaw-Babice site. It takes its name from the Apennine Mountains and holds six housing communities.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Apenińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Apenińska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-apollina",
+    "nazwa": "Ulica Apollina",
+    "name_en": "Apollina Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Apollina",
+    "adres_historyczny": null,
+    "lat": 52.2516057,
+    "lon": 20.9114864,
+    "lokalizacja": "przyblizona",
+    "okres": "1990–1991",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1990 lub 1991 roku na terenach przyległych do Wojskowej Akademii Technicznej.",
+      "Nazwę ulicy nadano 26 maja 1988 roku; upamiętnia ona Apollo, jednego z bogów starożytnej mitologii greckiej.",
+      "Jest jedną z ulic wspólnoty mieszkaniowej „Akropol”; wzdłuż niej znajdują się domy jednorodzinne.",
+      "Ulica krzyżuje się z ul. Hery i ul. Zeusa, a na większości odcinków obowiązuje ruch jednokierunkowy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A narrow one-way street of the Akropol housing community in Bemowo-Lotnisko, built in 1990-1991 near the Military University of Technology. Its name refers to Apollo, the Greek god.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Apollina", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Apollina"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  }
+]
