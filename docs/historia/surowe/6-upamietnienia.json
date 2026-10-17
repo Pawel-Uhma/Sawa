@@ -1,0 +1,568 @@
+[
+  {
+    "id": "tablica-tchorka-karolkowa-solidarnosci",
+    "nazwa": "Tablica Tchorka przy Karolkowej i al. Solidarności",
+    "name_en": "Tchorek memorial plaque at Karolkowa St. and Solidarności Ave.",
+    "typ": "tablica",
+    "adres_dzis": "ok. rogu ul. Karolkowej i al. Solidarności (dokładny numer nieustalony)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "fakty": [
+      "Napis w OSM: „Miejsce uświęcone krwią Polaków poległych za wolność ojczyzny. Tu 6 sierpnia 1944 w masowej egzekucji hitlerowcy rozstrzelali wielu Polaków”.",
+      "Tablica należy do serii tablic upamiętniających rzeź Woli; autorem projektu wg OSM i Wikidata jest Karol Tchorek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stone plaque by Karol Tchorek at the corner of Karolkowa Street and Solidarności Avenue, commemorating a mass execution of Poles on 6 August 1944, during the Warsaw Uprising (Wola massacre).",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablic (wg OSM artist_name i Wikidata Q8865537)",
+        "wiki": "https://www.wikidata.org/wiki/Q8865537"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Place_of_National_Memory_at_the_corner_of_Karolkowa_Street_and_Solidarności_Avenue_in_Warsaw.JPG",
+        "opis": "Tablica na rogu Karolkowej i al. Solidarności (kategoria Commons z OSM)",
+        "rok": null,
+        "zrodla": "Wikimedia Commons",
+        "licencja": "do sprawdzenia na stronie pliku"
+      }
+    ],
+    "zrodla": [
+      {
+        "tytul": "OSM node 1774816928 (tagi, napis)",
+        "url": "https://www.openstreetmap.org/node/1774816928"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "Wikidata Q15103929",
+        "url": "https://www.wikidata.org/wiki/Q15103929"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Napis z OSM (tag inscription), nie zweryfikowany na tablicy. Data odsłonięcia nieustalona. Adres z nazwy pliku Commons, bez numeru.",
+    "lat": 52.2356238,
+    "lon": 20.9770151,
+    "odleglosc_m": 132
+  },
+  {
+    "id": "tablica-tchorka-towarowa-kotlarska",
+    "nazwa": "Tablica Tchorka na rogu Towarowej i Kotlarskiej",
+    "name_en": "Tchorek memorial plaque at Towarowa and Kotlarska streets",
+    "typ": "tablica",
+    "adres_dzis": "róg ul. Towarowej i ul. Kotlarskiej",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "fakty": [
+      "Napis w OSM: „Miejsce uświęcone krwią Polaków poległych za wolność ojczyzny. W dniach 5–6 VIII 1944 r. hitlerowcy rozstrzelali w tym miejscu 120 osób”.",
+      "Autor wg OSM i Wikidata: Karol Tchorek (Q8865537)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stone stele by Karol Tchorek at the corner of Towarowa and Kotlarska streets, marking the execution of 120 people on 5–6 August 1944.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablic (wg OSM artist_name i Wikidata Q8865537)",
+        "wiki": "https://www.wikidata.org/wiki/Q8865537"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/File:Place_of_National_Memory_on_Towarowa_Street_at_corner_with_Kotlarska_Street_in_Warsaw_-_03.jpg",
+        "opis": "Tablica na rogu Towarowej i Kotlarskiej (kategoria Commons z OSM)",
+        "rok": null,
+        "zrodla": "Wikimedia Commons",
+        "licencja": "do sprawdzenia na stronie pliku"
+      }
+    ],
+    "zrodla": [
+      {
+        "tytul": "OSM node 8725627998 (tagi, napis)",
+        "url": "https://www.openstreetmap.org/node/8725627998"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Napis z OSM. Data odsłonięcia nieustalona. Lista Tchorka na pl.wiki (streszczenie z WebFetch) nie podała rozpoznawalnie tej pozycji.",
+    "lat": 52.2349248,
+    "lon": 20.98154,
+    "odleglosc_m": 210
+  },
+  {
+    "id": "tablica-tchorka-osm-4210588540",
+    "nazwa": "Tablica Tchorka (OSM 4210588540)",
+    "name_en": "Tchorek memorial plaque (OSM record without inscription)",
+    "typ": "pomnik",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "fakty": [
+      "W OSM oznaczona jako „tablica Tchorka” (tag description); bez tagu inscription, napis niezweryfikowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Memorial plaque in the Tchorek series, recorded in OpenStreetMap with coordinates but without the inscription text.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablic (wg OSM artist_name i Wikidata Q8865537)",
+        "wiki": "https://www.wikidata.org/wiki/Q8865537"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 4210588540",
+        "url": "https://www.openstreetmap.org/node/4210588540"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak napisu i daty w źródłach (tylko OSM). Przypisanie do serii Tchorka wynika z opisu w OSM. Wymaga sprawdzenia na miejscu.",
+    "lat": 52.2357021,
+    "lon": 20.9800598,
+    "odleglosc_m": 82
+  },
+  {
+    "id": "tablica-tchorka-osm-10018666669",
+    "nazwa": "Tablica Tchorka (OSM 10018666669)",
+    "name_en": "Tchorek memorial plaque (OSM record without inscription)",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "fakty": [
+      "W OSM oznaczona jako „tablica Tchorka” (tag description); bez tagu inscription, napis niezweryfikowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Memorial plaque in the Tchorek series, recorded in OpenStreetMap with coordinates but without the inscription text.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablic (wg OSM artist_name i Wikidata Q8865537)",
+        "wiki": "https://www.wikidata.org/wiki/Q8865537"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 10018666669",
+        "url": "https://www.openstreetmap.org/node/10018666669"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak napisu i daty w źródłach (tylko OSM). Przypisanie do serii Tchorka wynika z opisu w OSM. Wymaga sprawdzenia na miejscu.",
+    "lat": 52.2363181,
+    "lon": 20.9766699,
+    "odleglosc_m": 159
+  },
+  {
+    "id": "tablica-tchorka-osm-9959578421",
+    "nazwa": "Tablica Tchorka (OSM 9959578421)",
+    "name_en": "Tchorek memorial plaque (OSM record without inscription)",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "fakty": [
+      "W OSM oznaczona jako „tablica Tchorka” (tag description); bez tagu inscription, napis niezweryfikowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Memorial plaque in the Tchorek series, recorded in OpenStreetMap with coordinates but without the inscription text.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablic (wg OSM artist_name i Wikidata Q8865537)",
+        "wiki": "https://www.wikidata.org/wiki/Q8865537"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 9959578421",
+        "url": "https://www.openstreetmap.org/node/9959578421"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak napisu i daty w źródłach (tylko OSM). Przypisanie do serii Tchorka wynika z opisu w OSM. Wymaga sprawdzenia na miejscu. Materiał wg OSM: kamień.",
+    "lat": 52.2342465,
+    "lon": 20.9767417,
+    "odleglosc_m": 235
+  },
+  {
+    "id": "tablica-tchorka-osm-12115365780",
+    "nazwa": "Tablica Tchorka (OSM 12115365780)",
+    "name_en": "Tchorek memorial plaque (OSM record without inscription)",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "fakty": [
+      "W OSM oznaczona jako „tablica Tchorka” (tag description); bez tagu inscription, napis niezweryfikowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Memorial plaque in the Tchorek series, recorded in OpenStreetMap with coordinates but without the inscription text.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablic (wg OSM artist_name i Wikidata Q8865537)",
+        "wiki": "https://www.wikidata.org/wiki/Q8865537"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 12115365780",
+        "url": "https://www.openstreetmap.org/node/12115365780"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak napisu i daty w źródłach (tylko OSM). Przypisanie do serii Tchorka wynika z opisu w OSM. Wymaga sprawdzenia na miejscu. Materiał wg OSM: kamień.",
+    "lat": 52.2348286,
+    "lon": 20.9745815,
+    "odleglosc_m": 317
+  },
+  {
+    "id": "tablica-nauczyciele-uczniowie-konspiracja",
+    "nazwa": "Tablica nauczycieli i uczniów konspiracji i powstania",
+    "name_en": "Plaque to teachers and pupils of the underground and the Uprising",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1939–1945",
+    "fakty": [
+      "Napis z OSM (description): „Nauczycieli i uczniów uczestników konspiracji wojskowej i powstania Warszawskiego”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Plaque commemorating teachers and pupils who took part in military underground and the Warsaw Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 10018666670",
+        "url": "https://www.openstreetmap.org/node/10018666670"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst z OSM, nieweryfikowany. Nie wiadomo, czy tablica jest przy szkole (adres nieustalony). Data odsłonięcia nieustalona.",
+    "lat": 52.236322,
+    "lon": 20.9766683,
+    "odleglosc_m": 159
+  },
+  {
+    "id": "pomnik-janusz-korczak-popiersie",
+    "nazwa": "Popiersie Janusza Korczaka",
+    "name_en": "Janusz Korczak bust",
+    "typ": "pomnik",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "XX w.",
+    "fakty": [
+      "Popiersie upamiętniające Janusza Korczaka (Q152441, pisarz, lekarz i pedagog, 1878–1942), autor rzeźby wg OSM: Xawery Dunikowski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bust of Janusz Korczak by Xawery Dunikowski, located within 200 m of the former Dom Sierot.",
+    "ludzie": [
+      {
+        "kto": "Janusz Korczak",
+        "rola": "patron pomnika",
+        "wiki": "https://www.wikidata.org/wiki/Q152441"
+      },
+      {
+        "kto": "Xawery Dunikowski",
+        "rola": "autor rzeźby (wg OSM)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 411331104",
+        "url": "https://www.openstreetmap.org/node/411331104"
+      },
+      {
+        "tytul": "Wikidata Q152441",
+        "url": "https://www.wikidata.org/wiki/Q152441"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Data odsłonięcia i dokładny adres nieustalone. Dom Sierot opisany przez innego agenta.",
+    "lat": 52.2344213,
+    "lon": 20.9780264,
+    "odleglosc_m": 175
+  },
+  {
+    "id": "tablica-janusz-korczak",
+    "nazwa": "Tablica Janusza Korczaka",
+    "name_en": "Janusz Korczak memorial plaque",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "XX w.",
+    "fakty": [
+      "Tablica z nazwiskiem Janusza Korczaka (OSM: name)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Memorial plaque for Janusz Korczak near the former Dom Sierot.",
+    "ludzie": [
+      {
+        "kto": "Janusz Korczak",
+        "rola": "patron tablicy",
+        "wiki": "https://www.wikidata.org/wiki/Q152441"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 11203460011",
+        "url": "https://www.openstreetmap.org/node/11203460011"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Treść poza nazwiskiem nieznana. Data i autor nieustalone.",
+    "lat": 52.2346356,
+    "lon": 20.9781899,
+    "odleglosc_m": 149
+  },
+  {
+    "id": "kamien-galczynski",
+    "nazwa": "Kamień z nazwiskiem Konstantego Ildefonsa Gałczyńskiego",
+    "name_en": "Konstanty Ildefons Gałczyński memorial stone",
+    "typ": "pomnik",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "XX w.",
+    "fakty": [
+      "Kamień pamiątkowy z nazwiskiem poety Konstantego Ildefonsa Gałczyńskiego (Q680950, polski poeta)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Memorial stone bearing the name of poet Konstanty Ildefons Gałczyński.",
+    "ludzie": [
+      {
+        "kto": "Konstanty Ildefons Gałczyński",
+        "rola": "patron kamienia",
+        "wiki": "https://www.wikidata.org/wiki/Q680950"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 5277858410",
+        "url": "https://www.openstreetmap.org/node/5277858410"
+      },
+      {
+        "tytul": "Wikidata Q680950",
+        "url": "https://www.wikidata.org/wiki/Q680950"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Związek kamienia z miejscem (np. dawne miejsce pracy lub pobytu poety) nieustalony w źródłach. Data nieustalona.",
+    "lat": 52.2334875,
+    "lon": 20.9826938,
+    "odleglosc_m": 372
+  },
+  {
+    "id": "tablica-zdobycie-elektrowni-tramwajowej",
+    "nazwa": "Tablica „Zdobycie Elektrowni Tramwajowej”",
+    "name_en": "Plaque commemorating the seizure of the tram power station",
+    "typ": "tablica",
+    "adres_dzis": "przy Elektrowni Tramwajów Miejskich (Przyokopowa), adres nieustalony",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "fakty": [
+      "Tablica w OSM nosi nazwę „Zdobycie Elektrowni Tramwajowej”, co wskazuje na epizod z Powstania Warszawskiego 1944 r. (Elektrownia Tramwajów Miejskich, Q9252514)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Plaque marking the seizure of the tram power station, an episode of the 1944 Warsaw Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 10759425107",
+        "url": "https://www.openstreetmap.org/node/10759425107"
+      },
+      {
+        "tytul": "Wikidata Q9252514",
+        "url": "https://www.wikidata.org/wiki/Q9252514"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Pełny napis, data i autor nieustalone. Tytuł z nazwy w OSM. Wymaga sprawdzenia źródła (np. 1944.pl) przed użyciem w aplikacji.",
+    "lat": 52.2326972,
+    "lon": 20.9805977,
+    "odleglosc_m": 374
+  },
+  {
+    "id": "tablica-stanislaw-conrad",
+    "nazwa": "Tablica Stanisława Conrada",
+    "name_en": "Stanisław Conrad memorial plaque",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "nieustalony",
+    "fakty": [
+      "Tablica z nazwiskiem Stanisława Conrada (OSM: name), metalowa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Metal memorial plaque bearing the name of Stanisław Conrad.",
+    "ludzie": [
+      {
+        "kto": "Stanisław Conrad",
+        "rola": "patron tablicy (nieustalona tożsamość)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 10871244506",
+        "url": "https://www.openstreetmap.org/node/10871244506"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Nie ustalono, kim jest Stanisław Conrad ani czego dotyczy tablica. Data i autor nieznane.",
+    "lat": 52.2337382,
+    "lon": 20.9804218,
+    "odleglosc_m": 262
+  },
+  {
+    "id": "tablica-lech-kaczynski",
+    "nazwa": "Tablica „Prezydentowi RP Lechowi Kaczyńskiemu”",
+    "name_en": "Plaque to President Lech Kaczyński",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2010–",
+    "fakty": [
+      "Tablica w OSM z napisem „Prezydentowi RP Lechowi Kaczyńskiemu”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Plaque dedicated to President Lech Kaczyński.",
+    "ludzie": [
+      {
+        "kto": "Lech Kaczyński",
+        "rola": "patron tablicy",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 11208765675",
+        "url": "https://www.openstreetmap.org/node/11208765675"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Data odsłonięcia i okoliczności nieustalone. Powód umieszczenia tablicy w tym miejscu nieznany.",
+    "lat": 52.2325512,
+    "lon": 20.9807008,
+    "odleglosc_m": 392
+  },
+  {
+    "id": "tablica-pracownicy-szpitala-lazarza",
+    "nazwa": "Tablica pracowników Szpitala św. Łazarza",
+    "name_en": "Plaque to staff of St. Lazarus Hospital",
+    "typ": "tablica",
+    "adres_dzis": "nieustalony (współrzędne z OSM)",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "nieustalony",
+    "fakty": [
+      "Tablica z nazwą „Pracowników Szpitala św. Łazarza” (OSM: name), kamienna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stone plaque to staff of St. Lazarus Hospital.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OSM node 12451067280",
+        "url": "https://www.openstreetmap.org/node/12451067280"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Treść i okoliczności nieustalone. Szpital św. Łazarza (Wola) nie był w tym zakresie sprawdzany. Data nieustalona.",
+    "lat": 52.23752,
+    "lon": 20.975109,
+    "odleglosc_m": 315
+  },
+  {
+    "id": "pomnik-krzyz-wenecja",
+    "nazwa": "Krzyż pamiątkowy w dawnym ogrodzie zabaw Wenecja",
+    "name_en": "Memorial cross in the former Wenecja playground",
+    "typ": "pomnik",
+    "adres_dzis": "dawny ogród zabaw „Wenecja”, adres nieustalony",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "nieustalony",
+    "fakty": [
+      "Krzyż pamiątkowy w dawnym ogrodzie zabaw Wenecja (Wikidata Q140185585, typ: krzyż pamiątkowy)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Memorial cross in the former Wenecja playground in Wola.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "ogród zabaw Wenecja (dawna nazwa, wg nazwy obiektu)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikidata Q140185585",
+        "url": "https://www.wikidata.org/wiki/Q140185585"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Upamiętniany wydarzenie/osoba i data nieustalone. Dane tylko z Wikidata (współrzędne i typ), bez treści.",
+    "lat": 52.235568,
+    "lon": 20.973978,
+    "odleglosc_m": 337
+  }
+]

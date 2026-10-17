@@ -1,0 +1,579 @@
+{
+  "rekordy": [
+    {
+      "id": "walicow",
+      "nazwa": "ulica Waliców",
+      "name_en": "Waliców Street",
+      "typ": "ulica",
+      "adres_dzis": "ul. Waliców (od ul. Pereca do ul. Chłodnej)",
+      "adres_historyczny": null,
+      "lat": 52.23561,
+      "lon": 20.99211,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 900,
+      "okres": "1767–dziś",
+      "fakty": [
+        "Ulica Waliców w dzielnicy Wola biegnie od ul. Pereca do ul. Chłodnej; przecinają ją Grzybowska i Krochmalna.",
+        "Nazwę ulicy nadano urzędowo w 1770 r.; pochodzi od posiadłości Waliców, założonej przez wojewodę rawskiego Bazylego Walickiego.",
+        "Walicki objął w 1763 r. w dzierżawę wieczystą część gruntów starostwa warszawskiego; w 1767 r. geometra Deutsch wytyczył pierwsze działki i ulice, a w 1784 r. parcele otrzymały numerację.",
+        "W 1763 r. przy Walicowie działały już 2 browary (Anny Raubach i Henryka Grodke); w ciągu kolejnych 20 lat w najbliższym sąsiedztwie działało 10 browarów i cegielnia.",
+        "W 1854 r. na parceli między ulicami Żelazną, Grzybowską, Waliców i Ceglaną powstał duży browar Junga; po śmierci Hermana Junga zakład zlikwidowano, a w 1919 r. przedsiębiorstwo weszło w skład firmy Haberbusch i Schiele Zjednoczone Browary Warszawskie S.A.",
+        "Od 1890 r. posesja przy Walicowie należała do Banku Handlowego; od 1897 r. działała tu wytwórnia lemoniady i wody sodowej A. Domańskiego.",
+        "W 1905–1906 r. na rogu Prostej i Walicowa stanął gmach Szkoły Handlowej Zgromadzenia Kupców m. Warszawy według projektu Edwarda Goldberga; w 1961 r. ostatecznie wyburzono jego pozostałości.",
+        "W listopadzie 1940 r. niemal cała ulica znalazła się w granicach getta warszawskiego; w sierpniu 1942 r. obszar na południe od Chłodnej włączono do części aryjskiej.",
+        "W czasie powstania warszawskiego na początku walk operowały tu oddziały Gustawa Billewicza „Sosny” i Zgrupowanie „Chrobry II”; początkowy fragment ulicy od strony Ceglanej pozostał po stronie polskiej aż do kapitulacji 3 października 1944 r.",
+        "Po wojnie większość zabudowy została zniszczona; w 2020 r., przy budowie kompleksu Mennica Legacy Tower, wybudowano przedłużenie ulicy do Prostej."
+      ],
+      "ciekawostki": [
+        "Na rogu Waliców i Grzybowskiej stał dom Wołowskich, jedyna pamiątka po domu rodzinnym pianistki Marii Szymanowskiej; dom spłonął w 1944 r., a ślad po dachu i stropach widać na ścianie kamienicy przy Grzybowskiej 46.",
+        "Przy Waliców 14 mieszkali Menachem Kipnis i Władysław Szlengel; przy Waliców 6 mieszkała Helena Szereszewska.",
+        "Po upadku powstania w ruinach i piwnicach w okolicy ukrywało się wielu robinsonów; grupa 10 osób przebywała od 7 października 1944 do 18 stycznia 1945 r. w głębokich pomieszczeniach pod Szkołą Zgromadzenia Kupców."
+      ],
+      "summary_en": "Waliców is a street in Wola, Warsaw, running from Pereca to Chłodna. It was laid out in the 1760s on the estate of Bazyli Walicki, was partly inside the Warsaw Ghetto in 1940–1942, and was fought over during the 1944 Uprising.",
+      "ludzie": [
+        {"kto": "Menachem Kipnis", "rola": "mieszkaniec Waliców 14; dziennikarz, znawca muzyki żydowskiej", "wiki": "https://pl.wikipedia.org/wiki/Ulica_Walic%C3%B3w_w_Warszawie"},
+        {"kto": "Władysław Szlengel", "rola": "mieszkaniec Waliców 14; poeta getta warszawskiego, zginął w powstaniu w getcie", "wiki": "https://pl.wikipedia.org/wiki/Ulica_Walic%C3%B3w_w_Warszawie"},
+        {"kto": "Helena Szereszewska", "rola": "mieszkanka Waliców 6; pisarka, autorka wspomnień o getcie „Krzyż i mezuza”", "wiki": "https://pl.wikipedia.org/wiki/Ulica_Walic%C3%B3w_w_Warszawie"},
+        {"kto": "Maria Szymanowska", "rola": "pianistka; dom rodzinny Wołowskich na rogu Waliców i Grzybowskiej", "wiki": "https://pl.wikipedia.org/wiki/Ulica_Walic%C3%B3w_w_Warszawie"}
+      ],
+      "dawne_nazwy": ["Walicow (nazwa z XVIII w., ulica wytyczona w 1767 r.)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Ulica_Walic%C3%B3w_w_Warszawie_w_Warszawie_2023.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Ulica Waliców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Walic%C3%B3w_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Współrzędne z artykułu to ogólny punkt przy ulicy, nie konkretny numer. Artykuł opisuje też Waliców 25 (kaplica baptystów, 1961), który jest osobnym rekordem zbor-baptystow-walicow-25. Fakty o dworcu PKS przy Żytniej są w rekordzie dworzec-pks-zytnia-15-17, nie tutaj."
+    },
+    {
+      "id": "kosciol-karola-boromeusza-chlodna-21",
+      "nazwa": "Kościół św. Karola Boromeusza (Chłodna 21, Mirów)",
+      "name_en": "St. Charles Borromeo Church (Chłodna 21, Mirów)",
+      "typ": "swiatynia",
+      "adres_dzis": "ul. Chłodna 21",
+      "adres_historyczny": "plac Pod Lwem, u zbiegu ul. Chłodnej i Elektoralnej",
+      "lat": 52.23829,
+      "lon": 20.99258,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 968,
+      "okres": "1841–dziś",
+      "fakty": [
+        "Kościół św. Karola Boromeusza przy ul. Chłodnej 21 na warszawskim Mirowie wybudowano w latach 1841–1849 w stylu neorenesansowym według projektu Henryka Marconiego.",
+        "Fundatorką była Klementyna Sanguszko-Małachowska, właścicielka dóbr lubartowskich, która przeznaczyła na ten cel 200 000 złp; kamień węgielny położono 18 sierpnia 1841 r.",
+        "Po śmierci fundatorki w Paryżu 26 grudnia 1841 r. prace chwilowo przerwano; rząd przeznaczył potem na budowę 150 000 złp, a w październiku 1847 r. kolejne 117 738 gr.",
+        "Pierwszy proboszcz, ks. Tomasz Chmielewski, zmarł w lipcu 1844 r. w trakcie budowy; ks. Jakub Szarkiewicz zmarł 30 września 1846 r., również w czasie budowy.",
+        "Parafia była czwartą z kolei parafią rzymskokatolicką w Warszawie; jej pierwszą siedzibą był kościół św. Andrzeja na placu Teatralnym. Parafia św. Andrzeja Apostoła na Mirowie została erygowana w 1774 r.",
+        "Kościół restaurowano w latach 1854, 1870 i 1886.",
+        "We wrześniu 1939 r. przy kościele powstał prowizoryczny cmentarz; groby zaczęto usuwać na rozkaz władz niemieckich w listopadzie 1939 r.",
+        "Po klęsce powstania warszawskiego Niemcy wysadzili prezbiterium i kaplice boczne; kościół odbudowano, a prace zakończono w 1956 r.",
+        "W 1890 r. przed głównym wejściem ustawiono odlaną w brązie figurę Matki Boskiej Łaskawej według projektu Andrzeja Pruszyńskiego, z fundacji Salomei Lentzkiej.",
+        "W 1965 r. świątynię wpisano do rejestru zabytków."
+      ],
+      "ciekawostki": [
+        "Świątynię wzorowano na rzymskiej bazylice Santa Maria Maggiore i bazylice św. Pawła za Murami, a wnętrze na kościele Notre-Dame-de-Lorette w Paryżu.",
+        "W prezbiterium zawieszono XVII-wieczny obraz „Męczeństwo św. Andrzeja” autorstwa śląskiego artysty Michaela Willmanna.",
+        "W XIX w. ul. Chłodna była główną zachodnią arterią wylotową Warszawy, a kościół stał przy niej jako jedna z jej dominant."
+      ],
+      "summary_en": "St. Charles Borromeo church at Chłodna 21 in Mirów was built in 1841–1849 to a design by Henryk Marconi, funded by Klementyna Sanguszko-Małachowska. The Germans blew up part of it after the 1944 Uprising, and it was rebuilt by 1956.",
+      "ludzie": [
+        {"kto": "Klementyna Sanguszko-Małachowska", "rola": "fundatorka kościoła, przeznaczyła 200 000 złp", "wiki": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Karola_Boromeusza_w_Warszawie_(Wola)"},
+        {"kto": "Henryk Marconi", "rola": "autor projektu", "wiki": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Karola_Boromeusza_w_Warszawie_(Wola)"},
+        {"kto": "ks. Tomasz Chmielewski", "rola": "pierwszy proboszcz; zmarł w trakcie budowy (lipiec 1844)", "wiki": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Karola_Boromeusza_w_Warszawie_(Wola)"},
+        {"kto": "ks. Jakub Szarkiewicz", "rola": "administrator parafii, profesor; zmarł w trakcie budowy (30 wrz 1846)", "wiki": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Karola_Boromeusza_w_Warszawie_(Wola)"}
+      ],
+      "dawne_nazwy": ["plac Pod Lwem (teren budowy, w XIX w.)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/8/89/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Karola_Boromeusza_w_Warszawie_2021a.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Kościół św. Karola Boromeusza w Warszawie (Wola)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Karola_Boromeusza_w_Warszawie_(Wola)"},
+        {"tytul": "Wikipedia: Parafia św. Andrzeja Apostoła w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._Andrzeja_Aposto%C5%82a_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono dwa artykuły: o kościele i o parafii św. Andrzeja Apostoła na Mirowie (ten drugi podaje tylko erygowanie w 1774 r. i że kościół parafialny wybudowano w XIX w.). Współrzędne z artykułu o kościele."
+    },
+    {
+      "id": "browary-warszawskie-grzybowska-58-70",
+      "nazwa": "Browary Warszawskie (Grzybowska 58/70)",
+      "name_en": "Warsaw Breweries (Browary Warszawskie), Grzybowska 58/70",
+      "typ": "miejsce",
+      "adres_dzis": "okolice ul. Grzybowskiej 58/70, między ul. Krochmalną a Chłodną; kompleks Browary Warszawskie",
+      "adres_historyczny": "ul. Grzybowska 58/70",
+      "lat": 52.23511,
+      "lon": 20.98703,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 560,
+      "okres": "1846–2004 (browar); od 2014 kompleks",
+      "fakty": [
+        "Browary Warszawskie działały w latach 1948–2004 na bazie upaństwowionych browarów Haberbusch i Schiele; siedziba znajdowała się przy ul. Grzybowskiej 58/70, a browar produkował m.in. piwo Królewskie.",
+        "W 1846 r. dawni pracownicy browaru Jana G. Schöffera przy ul. Krochmalnej, Haberbusch, Schiele i Klawe, zakupili jego licencję i założyli browar pod nową firmą „Haberbusch i Schiele”.",
+        "W 1945 r. w piwnicach zniszczonego browaru Haberbusch i Schiele znajdowało się kilka tysięcy hl piwa, które sprzedano w marcu i kwietniu tego roku.",
+        "Po wojnie zdecydowano początkowo, że zakładu nie odbuduje się w dawnym miejscu, ale w 1949 r. rozpoczęto odbudowę, a produkcję wznowiono w lipcu 1954 r.",
+        "W 1965 r. zakład wyprodukował 330 tys. hl piwa i zatrudniał ok. 350 osób.",
+        "19 lipca 1972 r. z linii produkcyjnej w warszawskim browarze zjechały pierwsze w Polsce butelki licencyjnie produkowanej Coca-Coli; pierwszego dnia sprzedano 5 760 butelek.",
+        "W marcu 2001 r. udziały przedsiębiorstwa przejął za zgodą MSWiA inwestor strategiczny, po negocjacjach z koncernem austriackim Brau Union AG.",
+        "15 czerwca 2004 r. wspólnicy Brau Union Polska zdecydowali o zakończeniu produkcji w browarze warszawskim i przeniesieniu jej do zakładu w Warce; zakład opuszczono do 15 lipca 2004 r., a stacja uzdatniania wody pracowała do 29 grudnia 2004 r.",
+        "W wyniku likwidacji zakładu przestało istnieć 250 miejsc pracy w Warszawie.",
+        "W 2007 r. teren był już praktycznie pusty; ostatnie zabudowania (warzelnia, stacja uzdatniania wody, laboratorium i ciąg podziemnych korytarzy) stały między ul. Krochmalną a Chłodną.",
+        "W 2014 r. nieruchomość kupiła spółka Echo Investment i powstał kompleks Browary Warszawskie, łączący biura, mieszkania i strefę gastronomiczną."
+      ],
+      "ciekawostki": [
+        "Browar warzył m.in. piwa „Specjal”, „Królewskie” (Kongresowe) i „Porter”; Specjal i Porter stały się później markami koncernu Heineken.",
+        "Jednym z powodów likwidacji produkcji były problemy z produkcją w centrum dużego miasta oraz straty finansowe spółki (w latach 2000–2003 wyniosły 100 mln zł)."
+      ],
+      "summary_en": "The Warsaw Breweries (Browary Warszawskie) operated at Grzybowska 58/70 from 1948 to 2004, descended from the Haberbusch and Schiele brewery of 1846. After production ended in 2004 the site was cleared, and from 2014 it was redeveloped into a mixed-use complex.",
+      "ludzie": [],
+      "dawne_nazwy": [
+        "Haberbusch i Schiele (1846; w 1919 r. Zjednoczone Browary Warszawskie S.A.)",
+        "Browary Warszawskie S.A. (1992)",
+        "Browary Warszawskie „Królewskie” S.A. (1997)"
+      ],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Warzelniaa_Warszawskie_Zak%C5%82ady_Piwowarskie_lata_70..jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Browary Warszawskie", "url": "https://pl.wikipedia.org/wiki/Browary_Warszawskie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Adres i współrzędne z artykułu (Grzybowska 58/70); tekst mówi też, że zabudowa przy likwidacji stała między Krochmalną a Chłodną, więc punkt jest przybliżony. Wzmianka o 1919 r. w artykule o Walicowie (ta sama firma Haberbusch i Schiele)."
+    },
+    {
+      "id": "szpital-wolski-plocka-26",
+      "nazwa": "Szpital Wolski (dziś Instytut Gruźlicy i Chorób Płuc, Płocka 26)",
+      "name_en": "Wola Hospital (today Institute of Tuberculosis and Lung Diseases), Płocka 26",
+      "typ": "budynek",
+      "adres_dzis": "ul. Płocka 26",
+      "adres_historyczny": "ul. Okopowa 2/4 (Szpital Wolski do 1935 r.)",
+      "lat": 52.23603,
+      "lon": 20.96569,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 899,
+      "okres": "koniec XIX w.–dziś",
+      "fakty": [
+        "Pod koniec XIX w. obiekt przy ul. Okopowej 2/4, ufundowany przez Stanisława Staszica, przekształcono w Szpital Wolski; pracowali tu m.in. bakteriolog Odo Bujwid i Edmund Biernacki.",
+        "W 1935 r. szpital objął nową siedzibę przy ul. Płockiej 26 (projekt Henryka Stifelmana i Maurycego Grodzieńskiego z lat 1927–1933); wyspecjalizował się wtedy w leczeniu gruźlicy i chorób płuc.",
+        "Podczas II wojny światowej działał tu Wydział Medyczny podziemnego Uniwersytetu Warszawskiego i Uniwersytetu Ziem Zachodnich; personel brał udział w działalności antyniemieckiej.",
+        "W 1941 r. podczas pozorowanej operacji dokonano zamiany więzionego przez gestapo Stanisława Miedzy-Tomaszewskiego na zwłoki innego mężczyzny, co stanowiło finałowy etap akcji odbicia go z Pawiaka.",
+        "30 marca 1943 r. w wyniku obrażeń odniesionych w czasie przesłuchań prowadzonych przez Gestapo w szpitalu zmarł Jan Bytnar „Rudy”.",
+        "Podczas rzezi Woli 5 sierpnia 1944 r. w szpitalu zastrzeleni zostali dyrektor dr Józef Marian Piasecki, pediatra prof. Janusz Zeyland oraz ks. kapelan Kazimierz Ciecierski; personel i chorych rozstrzelano przy ul. Górczewskiej.",
+        "Kilka dni później szpital wznowił działalność pod kierownictwem dr. Zbigniewa Woźniewskiego; personel niósł pomoc wypędzanym mieszkańcom do połowy października 1944 r., a dr Woźniewski z podwładnymi opuścił Warszawę 28 października 1944 r.",
+        "Między sierpniem a październikiem 1944 r. dr Janina Misiewicz zorganizowała trzy pozawarszawskie filie szpitala: w Podkowie Leśnej, Olszance w Puszczy Mariańskiej i Pszczelinie pod Brwinowem.",
+        "W marcu 1948 r. Szpital Wolski przekształcono w Polski Instytut Przeciwgruźliczy; w 1986 r. zmieniono nazwę na Instytut Gruźlicy i Chorób Płuc.",
+        "Od 1993 r. instytut jest ośrodkiem referencyjnym Światowej Organizacji Zdrowia w dziedzinie gruźlicy.",
+        "W budynku Instytutu znajduje się kaplica Matki Boskiej Częstochowskiej."
+      ],
+      "ciekawostki": [
+        "Edmund Biernacki odkrył zróżnicowaną szybkość opadania krwinek, co pozwoliło opracować test znany jako odczyn Biernackiego; Odo Bujwid prowadził tu badania nad szczepionką przeciw wściekliznie.",
+        "Akcja odbicia Stanisława Miedzy-Tomaszewskiego z Pawiaka zakończyła się zamianą więźnia na zwłoki podczas pozorowanej operacji."
+      ],
+      "summary_en": "Wola Hospital was founded in the late 19th century at Okopowa 2/4 and moved to Płocka 26 in 1935. During the war its staff took part in anti-German activity, and on 5 August 1944 the director and other staff were shot in the Wola massacre. The site is now the Institute of Tuberculosis and Lung Diseases.",
+      "ludzie": [
+        {"kto": "Odo Bujwid", "rola": "bakteriolog, prowadził badania nad szczepionką przeciw wściekliznie", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"},
+        {"kto": "Edmund Biernacki", "rola": "lekarz, odkrywca zróżnicowanej szybkości opadania krwinek", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"},
+        {"kto": "Jan Bytnar „Rudy”", "rola": "zmarł w szpitalu 30 marca 1943 r. po obrażeniach z przesłuchań Gestapo", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"},
+        {"kto": "dr Józef Marian Piasecki", "rola": "dyrektor szpitala, zastrzelony 5 sierpnia 1944 r.", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"},
+        {"kto": "prof. Janusz Zeyland", "rola": "pediatra, zastrzelony w szpitalu 5 sierpnia 1944 r.", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"},
+        {"kto": "ks. Kazimierz Ciecierski", "rola": "kapelan, zastrzelony w szpitalu 5 sierpnia 1944 r.", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"},
+        {"kto": "dr Zbigniew Woźniewski", "rola": "kierował szpitalem po powstaniu, wznowił działalność w sierpniu 1944 r.", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"},
+        {"kto": "dr Janina Misiewicz", "rola": "ordynator oddziału wewnętrznego; zorganizowała filie szpitala w 1944 r.", "wiki": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"}
+      ],
+      "dawne_nazwy": [
+        "Szpital Wolski (ul. Okopowa 2/4, koniec XIX w.–1935)",
+        "Polski Instytut Przeciwgruźliczy (1948)",
+        "Instytut Gruźlicy (od 1951)"
+      ],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc_w_dawny_Szpital_Wolski_Warszawie_2024.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Instytut Gruźlicy i Chorób Płuc", "url": "https://pl.wikipedia.org/wiki/Instytut_Gru%C5%BAlicy_i_Chor%C3%B3b_P%C5%82uc"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Współrzędne z artykułu o instytucie (Płocka 26); Okopowa 2/4 to przedwojenny adres historyczny. Artykuł wspomina też Pietraszewicza „Lota” ciężko rannego 4 lutego 1944 r., ale nie precyzuje, czy w szpitalu, więc pominięto go w faktach. Rzeź Woli w tym artykule jest tylko opisana w kontekście szpitala."
+    },
+    {
+      "id": "the-warsaw-hub",
+      "nazwa": "The Warsaw Hub (dawniej Sienna Towers)",
+      "name_en": "The Warsaw Hub (formerly Sienna Towers)",
+      "typ": "budynek",
+      "adres_dzis": "rondo Daszyńskiego, rejon ul. Towarowej i Prostej",
+      "adres_historyczny": "Sienna Towers (nazwa projektu); w tym rejonie najbardziej zachodni odcinek ul. Siennej",
+      "lat": 52.22905,
+      "lon": 20.98451,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 852,
+      "okres": "2015/2016–2020; sprzedany Google w 2022",
+      "fakty": [
+        "The Warsaw Hub, wcześniej Sienna Towers, to zespół budynków przy rondzie Daszyńskiego w rejonie ulic Towarowej i Prostej; na starszych planach miasta w tym miejscu leżał najbardziej na zachód wysunięty odcinek ulicy Siennej.",
+        "Budowę rozpoczęto w grudniu 2015 r. (wg pl.wikipedia) lub w pierwszym kwartale 2016 r. (wg en.wikipedia), a zakończono w czerwcu 2020 r. (wg pl.wikipedia) lub w połowie 2020 r. (wg en.wikipedia).",
+        "Kompleks tworzą trzy wieże: dwie o wysokości 130 m i jedna 85 m (en.wikipedia podaje 86 m), połączone wspólnym podium; powierzchnia biurowa to ok. 75 000 m², całkowita ok. 113 000 m².",
+        "Projekt wieżowca przygotowało biuro architektoniczne AMC – Andrzej M. Chołdzyński; budynek ma bezpośrednie podziemne połączenie ze stacją metra Rondo Daszyńskiego.",
+        "Inwestorem był belgijski deweloper Ghelamco; koszt budowy wyniósł 1 mld zł.",
+        "7 czerwca 2019 r. na budowie wybuchł pożar, który objął kondygnacje 27–32 jednej z wież; w akcji uczestniczyło 130 strażaków, nikt nie został ranny. Kontrola nie wykazała uszkodzenia konstrukcji.",
+        "W lipcu 2020 r. budynek uzyskał pozwolenie na użytkowanie.",
+        "W marcu 2022 r. kompleks kupił Google za 583 mln euro.",
+        "Od zachodu sąsiaduje z budowanym wieżowcem Skyliner o wysokości 195 m."
+      ],
+      "ciekawostki": [
+        "Pod kompleksem jest 6 poziomów podziemnych, w tym 5 poziomów parkingu na ok. 1000 miejsc."
+      ],
+      "summary_en": "The Warsaw Hub, formerly Sienna Towers, is a complex of three towers at Warsaw's Daszyński roundabout, built by Ghelamco between 2016 and 2020 at a cost of about 1 billion zloty. Google bought it in 2022 for around 583 million euros.",
+      "ludzie": [
+        {"kto": "Andrzej M. Chołdzyński (biuro AMC)", "rola": "autor projektu wieżowca", "wiki": "https://pl.wikipedia.org/wiki/The_Warsaw_Hub"}
+      ],
+      "dawne_nazwy": ["Sienna Towers"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/e/e0/The_warsaw_hub_sierpie%C5%84_2020.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: The Warsaw Hub", "url": "https://pl.wikipedia.org/wiki/The_Warsaw_Hub"},
+        {"tytul": "Wikipedia (en): The Warsaw Hub", "url": "https://en.wikipedia.org/wiki/The_Warsaw_Hub"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono dwa artykuły (pl i en) o tym samym kompleksie; współrzędne identyczne. Rozbieżności: początek budowy (grudzień 2015 vs I kw. 2016), wysokość trzeciej wieży (85 vs 86 m); inwestora podaje tylko en. Ten sam rekord powstał z dwóch różnych wpisów paczki."
+    },
+    {
+      "id": "polfa-karolkowa-22-24",
+      "nazwa": "Polfa Warszawa (Karolkowa 22/24)",
+      "name_en": "Polfa Warsaw pharmaceutical plant (Karolkowa 22/24)",
+      "typ": "miejsce",
+      "adres_dzis": "ul. Karolkowa 22/24 (plan: osiedle mieszkaniowe Noho One)",
+      "adres_historyczny": null,
+      "lat": 52.22833,
+      "lon": 20.97889,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 841,
+      "okres": "po 1945 – 2024",
+      "fakty": [
+        "Polfa Warszawa (Warszawskie Zakłady Farmaceutyczne „Polfa” S.A.) z siedzibą przy ul. Karolkowej 22/24 została zlikwidowana w 2024 r.",
+        "Przedsiębiorstwo powstało na bazie znacjonalizowanego po II wojnie światowej Towarzystwa Przemysłu Chemiczno-Farmaceutycznego „d. Magister Klawe”.",
+        "Od 2003 r. działało jako jednoosobowa spółka Skarbu Państwa w ramach Polskiego Holdingu Farmaceutycznego.",
+        "W kwietniu 2012 r. zakończyła się prywatyzacja: wartość 100% akcji wyniosła 957 mln zł, a Polpharma SA kupiła pakiet 85,14%.",
+        "Urząd Ochrony Konkurencji i Konsumentów wydał 26 marca 2012 r. zgodę warunkową, zakładającą wyzbycie się przez Polpharmę praw do wybranych leków (m.in. Polocard/Acard, Cipronex/Proxacin).",
+        "1 marca 2024 r. warszawska spółka połączyła się z Zakładami Farmaceutycznymi „Polpharma” S.A., które wstąpiły we wszystkie jej prawa i obowiązki.",
+        "W 2024 r. rozpoczęła się rozbiórka budynków; w ich miejscu zaplanowano osiedle mieszkaniowe spółki Noho One.",
+        "Portfolio obejmowało ponad 140 preparatów, m.in. Acard, Allertec WZF, Laremid i krople na katar Xylometazolin."
+      ],
+      "ciekawostki": [
+        "W grupie kapitałowej Polfy były dwie spółki z o.o.: Sanfarm i Ipochem."
+      ],
+      "summary_en": "Polfa Warszawa, a state pharmaceutical company descended from the nationalised Magister Klawe works, operated at Karolkowa 22/24 until its liquidation in 2024. Its buildings were demolished that year to make way for a housing estate.",
+      "ludzie": [],
+      "dawne_nazwy": ["Towarzystwo Przemysłu Chemiczno-Farmaceutycznego „d. Magister Klawe” (po nacjonalizacji)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/7/74/Polfa_Warszawa_2023.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Polfa Warszawa", "url": "https://pl.wikipedia.org/wiki/Polfa_Warszawa"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł nie podaje daty nacjonalizacji ani powstania zakładu. Rekord dotyczy miejsca (zakład i jego zabudowa), a nie tylko spółki. Współrzędne z artykułu."
+    },
+    {
+      "id": "zytnia",
+      "nazwa": "ulica Żytnia",
+      "name_en": "Żytnia Street",
+      "typ": "ulica",
+      "adres_dzis": "ul. Żytnia (od Okopowej do ul. Syreny; odcinek od Sokołowskiej do Syreny jednokierunkowy)",
+      "adres_historyczny": null,
+      "lat": 52.23914,
+      "lon": 20.97167,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 610,
+      "okres": "1770–dziś",
+      "fakty": [
+        "Żytnia w dzielnicy Wola jest dawną drogą narolną, biegnącą między polami Starej Warszawy a polami należącymi do sióstr brygidek z Nowolipia.",
+        "W 1770 r. przecięto ją okopem Lubomirskiego, a jej wschodnią część w obrębie wałów uregulowano i nadano nazwę pochodzącą od sąsiednich pól obsianych żytem.",
+        "W 1792 r. na działce przy Żytniej, na rogu Młynarskiej, założono cmentarz ewangelicko-reformowany.",
+        "Po 1875 r. ulicę uregulowano od Okopowej do Młynarskiej.",
+        "W okresie międzywojennym przedłużono ją ok. 1928 r. od Młynarskiej do Tyszkiewicza, a ok. 1938 r. do ulicy Płockiej.",
+        "W czasie powstania warszawskiego ulica była miejscem zaciętych walk zgrupowania „Parasol”; została upamiętniona w piosence powstańczej „Pałacyk Michla”.",
+        "Większość zabudowy ulicy została zniszczona w 1944 r.",
+        "Do 1979 r. przy Żytniej 15/17 działał Centralny Dworzec Autobusowy PKS, zastąpiony w styczniu 1980 r. przez Dworzec Zachodni PKS.",
+        "Po 1956 r. ulicę przedłużono do ul. Sokołowskiej; od 2020 r. odcinek od Sokołowskiej do Syreny jest jednokierunkowy w związku z rozszerzeniem strefy płatnego parkowania."
+      ],
+      "ciekawostki": [
+        "Pałacyk Bogusławskiego (ul. Żelazna 97, wejście od Żytniej) jest siedzibą Zgromadzenia Sióstr Franciszkanek Rodziny Maryi i ma kaplicę Matki Bożej Częstochowskiej.",
+        "Przy ulicy działają trzy żeńskie zgromadzenia zakonne, a na rogu Żytniej i skweru kard. Wyszyńskiego 9 mieści się Krajowa Rada Radiofonii i Telewizji."
+      ],
+      "summary_en": "Żytnia is a street in Wola, Warsaw, that started as a farm track and was regulated in the 19th century. It was heavily damaged in 1944, when the Parasol battalion fought there, and it was extended west in the 1920s–1950s.",
+      "ludzie": [],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/b/be/Ulica_%C5%BBytnia_przy_M%C5%82ynarskiej.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Ulica Żytnia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%BBytnia_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istnieje osobny rekord dworzec-pks-zytnia-15-17 (Centralny Dworzec Autobusowy PKS), który ma te same informacje o dworcu; nie scalano ich. Współrzędne z artykułu (punkt przy ulicy)."
+    },
+    {
+      "id": "zbor-baptystow-walicow-25",
+      "nazwa": "I Zbór Kościoła Chrześcijan Baptystów (Waliców 25)",
+      "name_en": "First Congregation of the Baptist Church in Warsaw (Waliców 25)",
+      "typ": "swiatynia",
+      "adres_dzis": "ul. Waliców 25",
+      "adres_historyczny": "Nowolipie 54 (1871); Chłodna 12 (sala, 1884); Żelazna 54 (pierwsza kaplica, 1908)",
+      "lat": 52.23729,
+      "lon": 20.99099,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 837,
+      "okres": "1871–dziś",
+      "fakty": [
+        "Zbór ma początki w 1871 r., gdy Józef Herb zaczął organizować zebrania baptystów w swoim mieszkaniu przy ul. Nowolipie 54.",
+        "Do końca 1874 r. zbór w Warszawie liczył 56 członków, a na nabożeństwa przychodziło ok. 100 osób.",
+        "W 1884 r. wynajęto salę przy ul. Chłodnej 12 na potrzeby zboru.",
+        "W 1908 r. poświęcono pierwszą kaplicę zboru, zbudowaną przy ul. Żelaznej 54.",
+        "9 września 1961 r. oddano do użytku budynek przy ul. Waliców 25, zaprojektowany na 300 osób, gdy zbór liczył 130 członków; następnego dnia ochrzczono 26 osób.",
+        "W 1978 r. podczas wizyty w Polsce Billy Graham głosił kazanie w zborze.",
+        "W latach 80. XX w. filie w Kielcach i Żyrardowie stały się samodzielnymi zborami.",
+        "W 2015 r. zbór wystąpił z ruchu ekumenicznego.",
+        "W 2024 r. filia w Nowym Dworze Mazowieckim stała się samodzielnym zborem; w tym samym roku rozpoczęto rozbudowę budynku, planowaną na 2026 r."
+      ],
+      "ciekawostki": [
+        "Chór zboru obchodził 100-lecie w 2019 r."
+      ],
+      "summary_en": "The First Congregation of the Baptist Church in Warsaw traces its roots to 1871 meetings in an apartment on Nowolipie. Its chapel at Waliców 25 opened in 1961, and Billy Graham preached there in 1978.",
+      "ludzie": [
+        {"kto": "Józef Herb", "rola": "organizował zebrania baptystów w swoim mieszkaniu (1871)", "wiki": "https://en.wikipedia.org/wiki/First_Congregation_of_the_Baptist_Church_in_Warsaw"},
+        {"kto": "Billy Graham", "rola": "głosił kazanie w zborze w 1978 r.", "wiki": "https://en.wikipedia.org/wiki/First_Congregation_of_the_Baptist_Church_in_Warsaw"}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/7/79/I_Zb%C3%B3r_Ko%C5%9Bcio%C5%82a_Chrze%C5%9Bcijan_Baptyst%C3%B3w_w_Warszawie_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia (en): First Congregation of the Baptist Church in Warsaw", "url": "https://en.wikipedia.org/wiki/First_Congregation_of_the_Baptist_Church_in_Warsaw"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Źródło angielskie. Adres Waliców 25 i otwarcie kaplicy 9 września 1961 r. potwierdza też artykuł o ul. Waliców (rekord walicow). Polskie wpisy o tym zborze (pl_1010248) nie były w tej paczce."
+    },
+    {
+      "id": "kamienica-pod-zegarem-chlodna-20",
+      "nazwa": "Kamienica pod Zegarem (Chłodna 20)",
+      "name_en": "Kamienica pod Zegarem (Clock House), Chłodna 20",
+      "typ": "budynek",
+      "adres_dzis": "ul. Chłodna 20",
+      "adres_historyczny": null,
+      "lat": 52.237786,
+      "lon": 20.990558,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 821,
+      "okres": "1912–dziś",
+      "fakty": [
+        "Kamienica przy ul. Chłodnej 20, właściwie kamienica Zygmunta Lewina, została wzniesiona w latach 1912–1913 według projektu Józefa Czerwińskiego i Wacława Heppena.",
+        "Zaprojektowano ją w układzie dwupodwórzowym zamkniętym, ze stropami konstrukcji stalowo-ceglanej; na frontonie umieszczono zegar, od którego pochodzi nazwa.",
+        "Podczas II wojny światowej kamienica znalazła się na terenie getta warszawskiego; w styczniu 1942 r. wybudowano w pobliżu drewnianą kładkę łączącą małe i duże getto.",
+        "Od 13 grudnia 1941 r. do swojego samobójstwa 23 lipca 1942 r. w mieszkaniu na pierwszym piętrze mieszkał prezes Judenratu Adam Czerniaków; popełnił je w siedzibie Gminy Żydowskiej przy ul. Grzybowskiej 26/28.",
+        "Według niektórych źródeł 22 lipca 1942 r. w kamienicy zamordowany przez SS został Franciszek Paweł Raszeja.",
+        "Kamienica została uszkodzona podczas powstania warszawskiego; po wojnie rozebrano ostatnią kondygnację oraz spalone w 1944 r. półokrągłe zwieńczenie.",
+        "W latach 1945–1965 budynkiem zarządzała spółdzielnia mieszkaniowa założona przez lokatorów, następnie przeszedł pod zarząd miejski.",
+        "W 2005 r. kamienicę wraz z oficynami wpisano do rejestru zabytków."
+      ],
+      "ciekawostki": [
+        "W drugim podwórzu zachowała się żeliwna obudowa ujęcia wody z głową lwa."
+      ],
+      "summary_en": "Kamienica pod Zegarem at Chłodna 20 was built in 1912–1913 and is named after the clock on its facade. It stood in the Warsaw Ghetto, where Judenrat chairman Adam Czerniaków lived from December 1941 until his suicide in July 1942.",
+      "ludzie": [
+        {"kto": "Adam Czerniaków", "rola": "prezes Judenratu; mieszkał tu od 13 grudnia 1941 r. do samobójstwa 23 lipca 1942 r.", "wiki": "https://pl.wikipedia.org/wiki/Kamienica_pod_Zegarem_w_Warszawie"},
+        {"kto": "Zygmunt Lewin", "rola": "właściciel, od którego pochodzi pełna nazwa kamienicy", "wiki": "https://pl.wikipedia.org/wiki/Kamienica_pod_Zegarem_w_Warszawie"},
+        {"kto": "Józef Czerwiński i Wacław Heppen", "rola": "autorzy projektu (1912–1913)", "wiki": "https://pl.wikipedia.org/wiki/Kamienica_pod_Zegarem_w_Warszawie"},
+        {"kto": "Franciszek Paweł Raszeja", "rola": "według niektórych źródeł zamordowany przez SS w kamienicy 22 lipca 1942 r.", "wiki": "https://pl.wikipedia.org/wiki/Kamienica_pod_Zegarem_w_Warszawie"}
+      ],
+      "dawne_nazwy": ["kamienica Zygmunta Lewina (pełna nazwa)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Kamienica_pod_Zegarem_w_Warszawie_2023.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Kamienica pod Zegarem w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_pod_Zegarem_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Zdanie o Raszejach w artykule podane z zastrzeżeniem „według niektórych źródeł”. Artykuł podaje link do bloga mieszkańców kamienicy (nie czytany)."
+    },
+    {
+      "id": "g-pomnik-meczenstwa-mieszkancow-woli",
+      "nazwa": "Pomnik Męczeństwa Mieszkańców Woli (Pomnik Ofiar Rzezi Woli)",
+      "name_en": "Monument to the Victims of the Wola Massacre",
+      "typ": "pomnik",
+      "adres_dzis": "skwer Pamięci, u zbiegu al. Solidarności i ul. Leszno",
+      "adres_historyczny": null,
+      "lat": 52.238694,
+      "lon": 20.983514,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 441,
+      "okres": "2004–dziś (upamiętnia rzeź Woli, 1944)",
+      "fakty": [
+        "Pomnik ofiar Rzezi Woli został odsłonięty 27 listopada 2004 r. w ramach obchodów 60. rocznicy powstania warszawskiego.",
+        "Autorem jest rzeźbiarz Ryszard Stryjecki, przy współpracy architekta Olafa Chmielewskiego i rzeźbiarza Mieczysława Syposza; powstał z inicjatywy komitetu kierowanego przez Bogdana Bartniczaka, Lechosława Olejnickiego i Krzysztofa Tadeusza Zwolińskiego.",
+        "Pomnik wykonano z fińskiego granitu.",
+        "Na zwieńczeniu napisy: od zachodu „Mieszkańcy Woli zamordowani w 1944 roku podczas Powstania Warszawskiego”, od wschodu „Pamięci 50 tysięcy mieszkańców Woli zamordowanych przez Niemców podczas Powstania Warszawskiego 1944 r.”.",
+        "Od strony zachodniej na polerowanej powierzchni wykuto listę domów, z których pochodzili zamordowani, wraz z ich liczbą.",
+        "Od strony wschodniej wykuto dziesięć nieregularnych wgłębień przypominających sylwetki rozstrzeliwanych; obie strony łączą przekute na wylot otwory.",
+        "W 2008 r. skwer u zbiegu ul. Leszno i al. Solidarności nazwano skwerem Pamięci."
+      ],
+      "ciekawostki": [],
+      "summary_en": "The Monument to the Victims of the Wola Massacre, unveiled on 27 November 2004, stands on a small square at the junction of Solidarności Avenue and Leszno Street. It is made of Finnish granite and lists the houses from which the murdered residents came.",
+      "ludzie": [
+        {"kto": "Ryszard Stryjecki", "rola": "autor pomnika (rzeźbiarz)", "wiki": "https://pl.wikipedia.org/wiki/Pomnik_Ofiar_Rzezi_Woli"},
+        {"kto": "Olaf Chmielewski", "rola": "architekt, współpraca przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Pomnik_Ofiar_Rzezi_Woli"},
+        {"kto": "Mieczysław Syposz", "rola": "rzeźbiarz, współpraca przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Pomnik_Ofiar_Rzezi_Woli"},
+        {"kto": "Bogdan Bartniczak, Lechosław Olejnicki, Krzysztof Tadeusz Zwoliński", "rola": "komitet inicjatywy", "wiki": "https://pl.wikipedia.org/wiki/Pomnik_Ofiar_Rzezi_Woli"}
+      ],
+      "dawne_nazwy": ["skwer Pamięci (od 2008 r.)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/99/Pomnik_Ofiar_Rzezi_Woli_2015.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Pomnik Ofiar Rzezi Woli", "url": "https://pl.wikipedia.org/wiki/Pomnik_Ofiar_Rzezi_Woli"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord g-pomnik-meczenstwa-mieszkancow-woli (Pomnik Męczeństwa Mieszkańców Woli) prawdopodobnie dotyczy tego samego pomnika: te same współrzędne i ten sam skwer. Sprawdzić przed scaleniem. Scalono z tym rekordem; artykuł pl_631177 (Rzeź Woli) nie był częścią tej paczki."
+    },
+    {
+      "id": "al-solidarnosci-171-adres-hackathonu",
+      "nazwa": "Spark (al. Solidarności 171 i 173)",
+      "name_en": "Spark office complex (al. Solidarności 171 and 173)",
+      "typ": "budynek",
+      "adres_dzis": "al. Solidarności 171 i 173",
+      "adres_historyczny": null,
+      "lat": 52.23598,
+      "lon": 20.97974,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 57,
+      "okres": "budowa I etapu (artykuł nie podaje dat)",
+      "fakty": [
+        "Spark to zespół budynków biurowych przy al. Solidarności 171 i 173 w dzielnicy Wola; inwestycję zrealizowano na tzw. Serku Wolskim.",
+        "Projekt architektoniczny opracowała pracownia Kuryłowicz & Associates, projekt konstrukcji i instalacji – Buro Happold, a generalnym wykonawcą budynku była firma Skanska S.A.; komercjalizacją zajmuje się Skanska Property Poland.",
+        "Kompleks ma docelowo składać się z trzech obiektów: dwóch zrealizowanych, mniejszych budynków B i C (9 kondygnacji naziemnych, w kształcie litery H) oraz wieżowca o wysokości 130 m.",
+        "Całkowita powierzchnia biurowa to 70 000 m²; powierzchnia najmu I etapu to ok. 12 300 m², a I etap dostarczy 86 miejsc parkingowych.",
+        "W trakcie budowy I etapu odkryto zabytkowe przedmioty: butelkę z browaru Haberbusch und Schiele, 3 grosze z okresu Księstwa Warszawskiego oraz zabawki i maszynę do szycia w pozostałościach XIX- i XX-wiecznej zabudowy."
+      ],
+      "ciekawostki": [],
+      "summary_en": "Spark is an office complex at al. Solidarności 171 and 173 in Wola, built by Skanska on the so-called Serek Wolski. During the first stage's construction, workers found 19th- and early 20th-century objects, including a bottle from the Haberbusch und Schiele brewery.",
+      "ludzie": [],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Spark_od_strony_ulicy_Wolskiej_2024.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Spark (biurowiec)", "url": "https://pl.wikipedia.org/wiki/Spark_(biurowiec)"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono z istniejącym rekordem al-solidarnosci-171-adres-hackathonu: budynek ma adresy 171 i 173. Współrzędne z artykułu. Artykuł nie podaje daty budowy ani oddania; butelka Haberbusch und Schiele pasuje do rekordu browary-warszawskie-grzybowska-58-70."
+    },
+    {
+      "id": "generation-park-rondo-daszynskiego-4",
+      "nazwa": "Generation Park (rondo Daszyńskiego 4)",
+      "name_en": "Generation Park, Warsaw",
+      "typ": "budynek",
+      "adres_dzis": "rondo Daszyńskiego 4 (budynek Y); ul. Prosta 36 (X); ul. Towarowa 28 (Z)",
+      "adres_historyczny": "dawna siedziba RSW „Prasa-Książka-Ruch”, później IPN (miejsce budynku Y)",
+      "lat": 52.23116,
+      "lon": 20.98496,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 669,
+      "okres": "dawna siedziba RSW i IPN; dziś trzy budynki biurowe",
+      "fakty": [
+        "Generation Park to kompleks trzech budynków biurowych przy rondzie Daszyńskiego, między ulicami Towarową, Prostą, Wronią i Łucką, w dzielnicy Wola.",
+        "Budynki mają adresy: ul. Prosta 36 (budynek X), rondo Daszyńskiego 4 (budynek Y) i ul. Towarowa 28 (budynek Z); deweloperem jest spółka Skanska Property Poland.",
+        "Wieżowiec Y o wysokości 140 m buduje się w miejscu dawnej siedziby RSW „Prasa-Książka-Ruch”, a później IPN.",
+        "Jest to pierwszy wieżowiec spółki Skanska w Polsce; w 2021 r. otrzymał nagrodę Prime Property 2021 w kategorii Zielony budynek.",
+        "W czerwcu 2022 r. budynek został w całości wynajęty przez Grupę PZU na siedzibę jej centrali.",
+        "Całkowita powierzchnia użytkowa inwestycji to ok. 80 000 m² biurowej oraz 20 000 m² usługowej i handlowej.",
+        "Projekt architektoniczny powstał w pracowni JEMS Architekci."
+      ],
+      "ciekawostki": [
+        "Inwestycja realizowana jest etapami, a kolejne fazy nazwano od kolejnych generacji (stąd nazwa Generation Park)."
+      ],
+      "summary_en": "Generation Park is a three-building office complex around Warsaw's Daszyński roundabout, developed by Skanska Property Poland. The 140 m tower Y stands where the RSW Prasa-Książka-Ruch headquarters and later the IPN were located.",
+      "ludzie": [],
+      "dawne_nazwy": ["siedziba RSW „Prasa-Książka-Ruch”", "siedziba IPN"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/8/87/Generation_Park_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Generation Park", "url": "https://pl.wikipedia.org/wiki/Generation_Park"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł nie podaje roku oddania ani daty budowy. Adres rondo Daszyńskiego 4 dotyczy budynku Y. Współrzędne z artykułu."
+    },
+    {
+      "id": "kolmex-biurowiec",
+      "nazwa": "Kolmex (biurowiec, ul. Grzybowska 80–82)",
+      "name_en": "Kolmex office building (Grzybowska 80–82)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Grzybowska 80–82",
+      "adres_historyczny": null,
+      "lat": 52.233851,
+      "lon": 20.982891,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 354,
+      "okres": "1992–dziś",
+      "fakty": [
+        "Kolmex (Centrala Eksportu i Importu Taboru Kolejowego i Urządzeń dla Kolejnictwa) powstał w 1964 r. z siedzibą w kompleksie Dyrekcji Okręgowej Kolei Państwowych przy ul. Targowej 74; od 1965 r. używa skróconej nazwy.",
+        "Firma przeniosła siedzibę do budynku CHZ Metalexport przy ul. Mokotowskiej 49, a w 1992 r. do nowo wybudowanej własnej siedziby przy ul. Grzybowskiej 80–82.",
+        "W 1983 r. przekształcono ją w spółkę z o.o., a w 1995 r. w spółkę akcyjną.",
+        "W 1998 r. Ministerstwo Skarbu Państwa podjęło decyzję o prywatyzacji; w 2017 r. wydano postanowienie o postawieniu firmy w stan upadłości, którego jeszcze nie zakończono.",
+        "Istnieją plany zburzenia dotychczasowego biurowca i wybudowania na jego miejscu wysokościowca."
+      ],
+      "ciekawostki": [],
+      "summary_en": "The Kolmex office building at Grzybowska 80–82 was built as the company's own headquarters in 1992. Plans exist to demolish it and erect a skyscraper on the site.",
+      "ludzie": [],
+      "dawne_nazwy": [
+        "Centrala Eksportu i Importu Taboru Kolejowego i Urządzeń dla Kolejnictwa (1964)",
+        "PHZ Kolmex"
+      ],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/6/69/Biurowiec_Kolmex_ulica_Grzybowska_w_Warszawie.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Kolmex", "url": "https://pl.wikipedia.org/wiki/Kolmex"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord kolmex-biurowiec. Artykuł dotyczy głównie firmy; fakty o budynku to tylko zdania o siedzibie od 1992 r. i planach wyburzenia. Pełny artykuł Kolmex (biurowiec) (pl_3125526) nie był w tej paczce i warto go dopisać do tego samego rekordu. Współrzędne z artykułu."
+    },
+    {
+      "id": "city-gate-ogrodowa-58",
+      "nazwa": "City Gate (dawniej Skwer Wolski), ul. Ogrodowa 58",
+      "name_en": "City Gate (formerly Skwer Wolski), 58 Ogrodowa Street",
+      "typ": "budynek",
+      "adres_dzis": "ul. Ogrodowa 58",
+      "adres_historyczny": null,
+      "lat": 52.2425,
+      "lon": 20.982933,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 783,
+      "okres": "1997–2000",
+      "fakty": [
+        "City Gate, dawniej Skwer Wolski, to wieżowiec biurowy przy ul. Ogrodowej 58 w dzielnicy Wola.",
+        "Budynek zaprojektowali architekci Adam Tyliszczak i Roman Abramczuk; wznoszono go w latach 1997 – listopad 2000.",
+        "Inwestorem był Echo Investment.",
+        "Budynek składa się z części 14-kondygnacyjnej i 7-kondygnacyjnej oraz dwóch poziomów podziemnych z garażem na 230 miejsc.",
+        "Całkowita powierzchnia to 26 205 m², w tym 19 000 m² powierzchni biurowej i 1350 m² sklepów i usług."
+      ],
+      "ciekawostki": [],
+      "summary_en": "City Gate, formerly Skwer Wolski, is an office skyscraper at 58 Ogrodowa Street in Wola. Designed by Adam Tyliszczak and Roman Abramczuk, it was built in 1997–2000 by Echo Investment.",
+      "ludzie": [],
+      "dawne_nazwy": ["Skwer Wolski"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/9f/City_Gate_Warszawa_r%C3%B3g_Okopowej_i_Solidarno%C5%9Bci.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia (en): City Gate (Warsaw)", "url": "https://en.wikipedia.org/wiki/City_Gate_(Warsaw)"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Źródło angielskie. Współrzędne z en.wikipedia (52.2425, 20.98293). Polski artykuł City Gate (Warszawa) (pl_3340564, nie w tej paczce) podaje 52.2374, 20.98238, czyli inne miejsce; lokalizacja do sprawdzenia, stąd przybliżona. Nazwa pliku zdjęcia wskazuje róg Okopowej i Solidarności."
+    }
+  ],
+  "pominiete": [
+    {"title": "Telewizja Republika", "powod": "stacja telewizyjna (firma); artykuł mówi o jej siedzibach przy Farbiarskiej 73, Dzielnej 60 i placu Bankowym 2, nie o tym miejscu; brak historii tego miejsca."},
+    {"title": "Zabójstwo dokonane przez Kajetana Poznańskiego", "powod": "zdarzenie kryminalne z 2016 r. w prywatnych mieszkaniach (Skierniewicka 13, Potocka 60); artykuł nie wiąże go z historią tego miejsca."},
+    {"title": "Agencja Rynku Rolnego", "powod": "agencja państwowa; artykuł opisuje działalność i prezesów, a wzmianka o siedzibie przy Karolkowej 30 nie zawiera historii budynku."},
+    {"title": "Fundacja Archeologia Fotografii", "powod": "fundacja zajmująca się archiwami fotografów; artykuł nie mówi nic o historii miejsca."},
+    {"title": "Polsko-Niemiecka Izba Przemysłowo-Handlowa", "powod": "izba gospodarcza (organizacja); biuro w Concept Tower przy Grzybowskiej 87 bez historii miejsca."},
+    {"title": "Open Finance", "powod": "firma pośrednictwa finansowego; artykuł o działalności i upadłości, bez historii miejsca."},
+    {"title": "Noble Securities", "powod": "dom maklerski; artykuł o działalności i historii spółki, bez historii miejsca."}
+  ]
+}

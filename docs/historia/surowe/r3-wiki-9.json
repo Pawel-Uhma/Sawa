@@ -20,7 +20,7 @@
         "Po 1831 roku przy ulicy powstały trzy browary: Fryderyka Brzezińskiego pod nr 51, Karola Sommera pod nr 45/47 oraz (ok. 1850) Jana Szymanowskiego, u zbiegu z Żelazną.",
         "W latach 1899–1902 w miejscu rozebranych wschodnich pawilonów Koszar Mirowskich wzniesiono Hale Mirowskie, które odcięły Chłodną od wschodniej części Osi Saskiej.",
         "Od 1908 roku ulicą kursowały tramwaje elektryczne. Ostatni przejazd tramwajów nastąpił w listopadzie 1948 roku, przy likwidacji ostatniej w lewobrzeżnej Warszawie linii szerokotorowej.",
-        "Pod koniec 1939 roku, na rozkaz władz niemieckich, usuwano groby prowizorycznego cmentarza założonego we wrześniu 1939 przy kościele św. Karola Boromeusza.",
+        "W listopadzie 1939 roku, na rozkaz władz niemieckich, zaczęto usuwać groby prowizorycznego cmentarza założonego we wrześniu 1939 przy kościele św. Karola Boromeusza.",
         "W listopadzie 1940 roku odcinek ulicy między Wronią a Żelazną znalazł się w obrębie getta. Chłodna stanowiła granicę między małym i dużym gettem. W grudniu 1941 granicę przesunięto na środek ulicy Żelaznej.",
         "26 stycznia 1942 nad Chłodną, przy Żelaznej, oddano drewniany most dla ruchu pieszego łączący małe i duże getto. Most rozebrano w sierpniu 1942 roku.",
         "W 1942 roku Niemcy rozebrali pawilony rogatek Wolskich. 3 sierpnia 1944 roku posterunek niemieckiej żandarmerii (Nordwache) w kamienicy Ignacego Partowicza, na skrzyżowaniu z Żelazną, zdobył batalion „Chrobry I”.",
@@ -37,22 +37,51 @@
       ],
       "summary_en": "Chłodna is a street in Wola that grew from a rural road into a 19th-century commercial street with breweries and a famous cinema. It became a boundary of the Warsaw Ghetto, was a site of fighting during the 1944 Uprising, and was largely rebuilt after the war.",
       "ludzie": [
-        {"kto": "Fryderyk Chopin", "rola": "opuścił Warszawę ulicą Chłodną 2 listopada 1830 roku"},
-        {"kto": "Stanisław Jachowicz", "rola": "bajkopisarz, mieszkał przy Chłodnej 7 aż do śmierci w 1857 roku"},
-        {"kto": "Karol Drymmer", "rola": "botanik, mieszkał przy Chłodnej 18 do śmierci"},
-        {"kto": "Adam Czerniaków", "rola": "prezes warszawskiego Judenratu, mieszkał przy Chłodnej 20 od 13 grudnia 1941 roku do swojej śmierci 23 lipca 1942 roku"},
-        {"kto": "Jerzy Popiełuszko", "rola": "ksiądz, mieszkał przy Chłodnej 15 do śmierci w 1984 roku"},
-        {"kto": "Miron Białoszewski", "rola": "poeta, mieszkał przy Chłodnej 40 w czasie powstania warszawskiego"}
+        {
+          "kto": "Fryderyk Chopin",
+          "rola": "opuścił Warszawę ulicą Chłodną 2 listopada 1830 roku"
+        },
+        {
+          "kto": "Stanisław Jachowicz",
+          "rola": "bajkopisarz, mieszkał przy Chłodnej 7 aż do śmierci w 1857 roku"
+        },
+        {
+          "kto": "Karol Drymmer",
+          "rola": "botanik, mieszkał przy Chłodnej 18 do śmierci"
+        },
+        {
+          "kto": "Adam Czerniaków",
+          "rola": "prezes warszawskiego Judenratu, mieszkał przy Chłodnej 20 od 13 grudnia 1941 roku do swojej śmierci 23 lipca 1942 roku"
+        },
+        {
+          "kto": "Jerzy Popiełuszko",
+          "rola": "ksiądz, mieszkał przy Chłodnej 15 do śmierci w 1984 roku"
+        },
+        {
+          "kto": "Miron Białoszewski",
+          "rola": "poeta, mieszkał przy Chłodnej 40 w czasie powstania warszawskiego"
+        }
       ],
-      "dawne_nazwy": ["droga narolna do wsi Wola", "aleja Wolska (do XIX wieku)"],
+      "dawne_nazwy": [
+        "droga narolna do wsi Wola",
+        "aleja Wolska (do XIX wieku)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ulica_Ch%C5%82odna_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ulica_Ch%C5%82odna_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Ulica Chłodna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
-      "uwagi": "Rekord scala się z istniejącym id „chlodna”. Współrzędne z artykułu (ogólne dla ulicy). Artykuł wymienia też browar Brzezińskiego, kino Kometa, kamienice Chłodnej 20 i 40 oraz Dom Kereta, ale bez osobnych szczegółów; kino „Kometa” (Chłodna 47) podano bez roku powstania. Adres Chłodnej 92/Jaktorowskiej itd. poza tym rekordem."
+      "uwagi": "Rekord scala się z istniejącym id „chlodna”. Współrzędne z artykułu (ogólne dla ulicy). Artykuł wymienia też browar Brzezińskiego, kino Kometa, kamienice Chłodnej 20 i 40 oraz Dom Kereta, ale bez osobnych szczegółów; kino „Kometa” (Chłodna 47) podano bez roku powstania."
     },
     {
       "id": "karolkowa",
@@ -87,18 +116,43 @@
       ],
       "summary_en": "Karolkowa is a Wola street named after banker Karol Schultz, lined in the 19th and early 20th centuries with factories, charitable institutions and the Redemptorist church. Its buildings were burned and destroyed during the 1944 Uprising, and the area was rebuilt after the war.",
       "ludzie": [
-        {"kto": "Karol Schultz", "rola": "bankier, który w XVIII wieku zakupił grunty po zachodniej stronie ulicy; od niego pochodzi pierwotna nazwa"},
-        {"kto": "bracia Henneberg", "rola": "właściciele fabryki platerów przy ulicy"},
-        {"kto": "Stefan Szyller", "rola": "architekt klasztoru redemptorystów (1924–1926)"},
-        {"kto": "Stanisław Marzyński", "rola": "projektant kościoła św. Klemensa Hofbauera"},
-        {"kto": "Konstanty Jakimowicz i Tadeusz Szanior", "rola": "projektanci gmachu szkoły pod nr 56"}
+        {
+          "kto": "Karol Schultz",
+          "rola": "bankier, który w XVIII wieku zakupił grunty po zachodniej stronie ulicy; od niego pochodzi pierwotna nazwa"
+        },
+        {
+          "kto": "bracia Henneberg",
+          "rola": "właściciele fabryki platerów przy ulicy"
+        },
+        {
+          "kto": "Stefan Szyller",
+          "rola": "architekt klasztoru redemptorystów (1924–1926)"
+        },
+        {
+          "kto": "Stanisław Marzyński",
+          "rola": "projektant kościoła św. Klemensa Hofbauera"
+        },
+        {
+          "kto": "Konstanty Jakimowicz i Tadeusz Szanior",
+          "rola": "projektanci gmachu szkoły pod nr 56"
+        }
       ],
-      "dawne_nazwy": ["Karolowa (od Karola Schultza)"],
+      "dawne_nazwy": [
+        "Karolowa (od Karola Schultza)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulica_Karolkowa_przy_ul._Kasprzaka_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ulica_Karolkowa_przy_ul._Kasprzaka_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Ulica Karolkowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Rekord scala się z istniejącym id „karolkowa”. Współrzędne z artykułu (ogólne dla ulicy). Artykuł nie podaje numeracji dzisiejszej dla wielu zakładów; kamienica nr 59 wyburzona w 1969 roku. Przytułek i Dom Sierot Ewangelicki nie mają współrzędnych w tekście."
@@ -128,20 +182,39 @@
       ],
       "ciekawostki": [
         "Na rogu z ul. Karolkową rośnie Dąb doktora Korczaka, pomnik przyrody: dąb węgierski o wysokości 22 m i obwodzie pnia 440 cm.",
-        "W dawnym sierocińcu przy Jaktorowskiej 6 działa Ośrodek Dokumentacji i Badań Korczakianum, oddział Muzeum Warszawy (nr 6)."
+        "Na liście ważniejszych obiektów ulicy podano Ośrodek Dokumentacji i Badań Korczakianum (oddział Muzeum Warszawy, nr 6)."
       ],
       "summary_en": "Jaktorowska was called Krochmalna until 1970. It was home to the orphanage run by Janusz Korczak and Stefania Wilczyńska from 1911–1912, which survived the war and was rebuilt after it. Much of the street burned in August 1944.",
       "ludzie": [
-        {"kto": "Janusz Korczak", "rola": "prowadził wspólnie z Stefanią Wilczyńską sierociniec Towarzystwa „Pomoc dla Sierot” przy Krochmalnej 92"},
-        {"kto": "Stefania Wilczyńska", "rola": "prowadziła wspólnie z Januszem Korczakiem sierociniec przy Krochmalnej 92"},
-        {"kto": "Henryk Stifelman", "rola": "autor projektu gmachu sierocińca (1911–1912)"}
+        {
+          "kto": "Janusz Korczak",
+          "rola": "prowadził wspólnie z Stefanią Wilczyńską sierociniec Towarzystwa „Pomoc dla Sierot” przy Krochmalnej 92"
+        },
+        {
+          "kto": "Stefania Wilczyńska",
+          "rola": "prowadziła wspólnie z Januszem Korczakiem sierociniec przy Krochmalnej 92"
+        },
+        {
+          "kto": "Henryk Stifelman",
+          "rola": "autor projektu gmachu sierocińca (1911–1912)"
+        }
       ],
-      "dawne_nazwy": ["Krochmalna (do 1916 i w odcinku od Towarowej do Karolkowej do 1970)", "Krochmalna (od 1916 zachodni odcinek przemianowany na Jaktorowską)"],
+      "dawne_nazwy": [
+        "Krochmalna (do 1970 odcinek od Towarowej do Karolkowej; do 1916 zachodni odcinek)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ulica_Jaktorowska_w_Warszawie_2024.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ulica_Jaktorowska_w_Warszawie_2024.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Ulica Jaktorowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Ulica Jaktorowska w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Rekord scala się z istniejącym id „jaktorowska”. Fakty o sierocińcu (Krochmalna 92 = Jaktorowska 6) są też w rekordzie istniejącym „dom-sierot-jaktorowska-6”; przy scalaniu można je tam przenieść. Współrzędne z artykułu (ogólne dla ulicy). Wpis 1916 r. i wpis 1970 r. opisują różne odcinki, stąd dwie pozycje w dawnych nazwach."
@@ -167,22 +240,39 @@
         "W latach 1949–1960 zbudowano osiedle mieszkaniowe Mirów, zaprojektowane przez Tadeusza Kossaka z zespołem. Położone jest między ulicami al. „Solidarności”, Orlą, Elektoralną, Chłodną i Żelazną."
       ],
       "ciekawostki": [
-        "Kościół św. Karola Boromeusza na placu Pod Lwem, zbudowany w latach 1841–1849, to jeden z akcentów wysokościowych tej okolicy; Niemcy wysadzili jego absydę po upadku powstania warszawskiego."
+        "Na obszarze MSI Mirów leżą m.in. osiedla Miedziana, Pańska, Za Żelazną Bramą, Srebrna, Złota oraz Varso."
       ],
       "summary_en": "Mirów is a Wola estate built in 1949–1960 to a design by Tadeusz Kossak. The area takes its name from the 18th-century Guards cavalry barracks of Wilhelm Mier, was largely in the Warsaw Ghetto from 1940 to 1942 and was largely destroyed in World War II.",
       "ludzie": [
-        {"kto": "Wilhelm Mier", "rola": "dowódca regimentu Gwardii Konnej Koronnej, twórca koszar (1730–1732)"},
-        {"kto": "Tadeusz Kossak", "rola": "projektant osiedla Mirów (1949–1960)"}
+        {
+          "kto": "Wilhelm Mier",
+          "rola": "dowódca regimentu Gwardii Konnej Koronnej, twórca koszar (1730–1732)"
+        },
+        {
+          "kto": "Tadeusz Kossak",
+          "rola": "projektant osiedla Mirów (1949–1960)"
+        }
       ],
-      "dawne_nazwy": ["jurydyka Wielopole (dawny obszar)", "al. Juliana Marchlewskiego (dziś al. Jana Pawła II)"],
+      "dawne_nazwy": [
+        "jurydyka Wielopole (dawny obszar)",
+        "al. Juliana Marchlewskiego (dziś al. Jana Pawła II)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/31/Mir%C3%B3w_Skrzy%C5%BCowalie_ulic_Krochmalnej_i_Walic%C3%B3w_2020.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/31/Mir%C3%B3w_Skrzy%C5%BCowalie_ulic_Krochmalnej_i_Walic%C3%B3w_2020.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Mirów (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Mir%C3%B3w_(Warszawa)"}
+        {
+          "tytul": "Wikipedia: Mirów (Warszawa)",
+          "url": "https://pl.wikipedia.org/wiki/Mir%C3%B3w_(Warszawa)"
+        }
       ],
       "pewnosc": "wysoka",
-      "uwagi": "Rekord scala się z istniejącym id „osiedle-mirow”. Współrzędne z artykułu (ogólne dla obszaru). Artykuł nie podaje dat dla Koszar Mirowskich poza 1730–1732."
+      "uwagi": "Rekord scala się z istniejącym id „osiedle-mirow”. Współrzędne z artykułu (ogólne dla obszaru)."
     },
     {
       "id": "rondo-daszynskiego",
@@ -209,14 +299,28 @@
       ],
       "summary_en": "The Rondo Ignacego Daszyński was a 1963 junction in Wola, named in 1986 after the interwar politician. Before the 1950s the area was a railway siding and warehouse complex known as 'Siberia', and after 2010 it became one of Warsaw's densest office districts.",
       "ludzie": [
-        {"kto": "Ignacy Daszyński", "rola": "patron ronda, nazwa nadana w październiku 1986 roku"}
+        {
+          "kto": "Ignacy Daszyński",
+          "rola": "patron ronda, nazwa nadana w październiku 1986 roku"
+        }
       ],
-      "dawne_nazwy": ["skrzyżowanie ulic Towarowej i Prostej (do 1986)", "„Syberia” (kompleks bocznic i magazynów, zwyczajowa nazwa)"],
+      "dawne_nazwy": [
+        "skrzyżowanie ulic Towarowej i Prostej (do 1986)",
+        "„Syberia” (kompleks bocznic i magazynów, zwyczajowa nazwa)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/90/Rondo_Daszynskiego_Warsaw_2022_aerial.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/90/Rondo_Daszynskiego_Warsaw_2022_aerial.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Rondo Ignacego Daszyńskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_Ignacego_Daszy%C5%84skiego_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Rondo Ignacego Daszyńskiego w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Rondo_Ignacego_Daszy%C5%84skiego_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Współrzędne z artykułu (przybliżone). Nazwisko patrona podane w tytule i w tekście jako Ignacy Daszyński; artykuł nie opisuje jego roli poza nazwą ronda."
@@ -253,15 +357,31 @@
       ],
       "summary_en": "Rondo Daszyński is a metro station on the M2 line in Wola, opened on 8 March 2015 as part of the central section. Construction began in August 2010 and was delayed in late 2014 by a power-supply fire.",
       "ludzie": [
-        {"kto": "Andrzej Chołdzyński", "rola": "projektant generalny centralnego odcinka II linii metra"},
-        {"kto": "Wojciech Fangor", "rola": "autor opracowania graficznego projektu"}
+        {
+          "kto": "Andrzej Chołdzyński",
+          "rola": "projektant generalny centralnego odcinka II linii metra"
+        },
+        {
+          "kto": "Wojciech Fangor",
+          "rola": "autor opracowania graficznego projektu"
+        }
       ],
-      "dawne_nazwy": ["stacja S7 (oznaczenie w projekcie z 2008 roku)"],
+      "dawne_nazwy": [
+        "stacja S7 (oznaczenie w projekcie z 2008 roku)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/b/b3/C09_W_34.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/b/b3/C09_W_34.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Rondo Daszyńskiego (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Rondo_Daszy%C5%84skiego_(stacja_metra)"}
+        {
+          "tytul": "Wikipedia: Rondo Daszyńskiego (stacja metra)",
+          "url": "https://pl.wikipedia.org/wiki/Rondo_Daszy%C5%84skiego_(stacja_metra)"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Współrzędne z artykułu zaokrąglone do 52.23 (przybliżone). Artykuł podaje „5 lutego 2015” jako datę pozwolenia na użytkowanie, a w opisie odbiorów „4 lutego” (WINB zakończył odbiory), co jest zgodne z tekstem. Typ: stacja podziemna, zaklasyfikowana jako budynek."
@@ -294,22 +414,48 @@
       ],
       "summary_en": "A bronze monument on ul. Prosta in Wola marks the 10 May 1943 evacuation of Jewish fighters from the Warsaw Ghetto through the sewers to the Aryan side. It was unveiled on 13 May 2010.",
       "ludzie": [
-        {"kto": "Zygmunt Frydrych", "rola": "członek ŻOB, przedostał się na stronę aryjską 1 maja 1943 roku"},
-        {"kto": "Symcha Ratajzer-Rotem „Kazik”", "rola": "organizator ewakuacji kanałami w maju 1943 roku"},
-        {"kto": "Władysław Gaik „Krzaczek”", "rola": "członek Gwardii Ludowej, pomógł w zorganizowaniu akcji i wynajął ciężarówkę"},
-        {"kto": "Marek Edelman", "rola": "wśród ewakuowanych powstańców"},
-        {"kto": "Cywia Lubetkin", "rola": "wśród ewakuowanych powstańców"},
-        {"kto": "Wacław Śledziewski, Czesław Wojciechowski", "rola": "kanalarze, upamiętnieni tablicą z 2013 roku"}
+        {
+          "kto": "Zygmunt Frydrych",
+          "rola": "przedostał się na stronę aryjską 1 maja 1943 roku na polecenie dowództwa ŻOB"
+        },
+        {
+          "kto": "Symcha Ratajzer-Rotem „Kazik”",
+          "rola": "organizator ewakuacji kanałami w maju 1943 roku"
+        },
+        {
+          "kto": "Władysław Gaik „Krzaczek”",
+          "rola": "członek Gwardii Ludowej, pomógł w zorganizowaniu akcji i wynajął ciężarówkę"
+        },
+        {
+          "kto": "Marek Edelman",
+          "rola": "wśród ewakuowanych powstańców"
+        },
+        {
+          "kto": "Cywia Lubetkin",
+          "rola": "wśród ewakuowanych powstańców"
+        },
+        {
+          "kto": "Wacław Śledziewski, Czesław Wojciechowski",
+          "rola": "kanalarze, upamiętnieni tablicą z 2013 roku"
+        }
       ],
       "dawne_nazwy": [],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Pomnik_ewakuacji_bojownik%C3%B3w_getta_warszawskiego_03.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Pomnik_ewakuacji_bojownik%C3%B3w_getta_warszawskiego_03.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Pomnik Ewakuacji Bojowników Getta Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Pomnik_Ewakuacji_Bojownik%C3%B3w_Getta_Warszawskiego"}
+        {
+          "tytul": "Wikipedia: Pomnik Ewakuacji Bojowników Getta Warszawskiego",
+          "url": "https://pl.wikipedia.org/wiki/Pomnik_Ewakuacji_Bojownik%C3%B3w_Getta_Warszawskiego"
+        }
       ],
       "pewnosc": "wysoka",
-      "uwagi": "Relacje różnią się co do miejsca włazu: według Ratajzera ok. 100 m od ul. Żelaznej na ul. Prostej, według Marka Edelmana ciężarówka zatrzymała się na zbiegu ulic Łuckiej, Prostej i Wroniej. Artykuł podaje wersję wydarzeń z opracowań źródłowych (Lubetkin, Rotem)."
+      "uwagi": "Relacje różnią się co do miejsca włazu: według Ratajzera ok. 100 m od ul. Żelaznej na ul. Prostej, według Marka Edelmana ciężarówka zatrzymała się na zbiegu ulic Łuckiej, Prostej i Wroniej. W bibliografii artykułu wymienieni są Cywia Lubetkin i Symcha Rotem."
     },
     {
       "id": "teatr-scena-prezentacje-zelazna-51-53",
@@ -327,10 +473,10 @@
         "Scena Prezentacje, nieistniejący już miejski teatr w Warszawie, został założony w 1978 roku. Miał dwie sceny: główną, mieszczącą się w dawnej czyszczarni, oraz mały teatr „szopa” w osobnym budynku wybudowanym specjalnie dla teatru.",
         "Teatr znajdował się na terenie dawnej fabryki Norblina na rogu ul. Żelaznej i Prostej (Żelazna 51/53). Założycielem i dyrektorem był Romuald Szejd.",
         "29 października 1979 roku nastąpiła inauguracja działalności Sceny. Siedzibą był wtedy Społeczny Dom Kultury na Żoliborzu (ul. Próchnika 8A). Pierwszym przedstawieniem było „Heloiza i Abelard”.",
-        "Na początku 1982 roku teatr wystawiał spektakle w „Buffo” przy ul. Konopnickiej 6. Nowy adres Sceny Prezentacje obowiązywał od 13 października 1982 roku.",
+        "W 1982 roku, przed przeprowadzką, Scena znalazła tymczasowy przytułek w „Buffo” przy ul. Konopnickiej 6. Nowy adres obowiązywał od 13 października 1982 roku.",
         "W latach 1983–1984 przeprowadzono remont i adaptację pomieszczeń dawnej czyszczarni w zabytkowym kompleksie fabrycznym Zakładów Norblina. Autorem projektu był Marcin Stajewski, a remont nadzorowały Pracownie Konserwacji Zabytków.",
         "Hala teatru została wynajęta przez Stołeczną Estradę na cztery lata; zabytkowy obiekt przy ul. Żelaznej 51/53 administrował Muzeum Techniki.",
-        "17 stycznia 1984 roku teatr zaczął działać w budynku przy Żelaznej, nazywanym „Prezentacje u Norblina”.",
+        "W styczniu 1984 roku w artykule pojawia się hasło „Prezentacje u Norblina”, nawiązujące do nowej siedziby przy Żelaznej.",
         "29 października 1989 roku obchodzono jubileusz 10-lecia teatru. 18 lipca 1995 roku otwarto nową scenę „Szopa”.",
         "W 1996 roku przeprowadzono ogólną renowację teatru. W październiku 1999 roku obchodzono XX-lecie Teatru Scena Prezentacje."
       ],
@@ -340,18 +486,43 @@
       ],
       "summary_en": "Scena Prezentacje was a municipal theatre founded in 1978 by Romuald Szejd. From 1984 it operated in a converted hall of the former Norblin factory at Żelazna 51/53, and it celebrated its 20th anniversary in 1999.",
       "ludzie": [
-        {"kto": "Romuald Szejd", "rola": "założyciel i dyrektor teatru"},
-        {"kto": "Marcin Stajewski", "rola": "autor projektu adaptacji dawnej czyszczarni (1983)"},
-        {"kto": "Jonasz Kofta, Marek Grechuta", "rola": "wystąpili w cyklu inauguracyjnym z 1979 roku"},
-        {"kto": "Catherine Sauvage", "rola": "piosenkarka, gość Sceny w lutym 1981 roku"},
-        {"kto": "Cora Vaucaire", "rola": "gościła na Scenie w 1983 i 1987 roku"}
+        {
+          "kto": "Romuald Szejd",
+          "rola": "założyciel i dyrektor teatru"
+        },
+        {
+          "kto": "Marcin Stajewski",
+          "rola": "autor projektu adaptacji dawnej czyszczarni (1983)"
+        },
+        {
+          "kto": "Jonasz Kofta, Marek Grechuta",
+          "rola": "wystąpili w cyklu inauguracyjnym z 1979 roku"
+        },
+        {
+          "kto": "Catherine Sauvage",
+          "rola": "piosenkarka, gość Sceny w lutym 1981 roku"
+        },
+        {
+          "kto": "Cora Vaucaire",
+          "rola": "gościła na Scenie w 1983 i 1987 roku"
+        }
       ],
-      "dawne_nazwy": ["Konopnicka 6 (Buffo, 1982)"],
+      "dawne_nazwy": [
+        "Konopnicka 6 (Buffo, 1982)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/4/41/Teatr_scena_prezentacje.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/4/41/Teatr_scena_prezentacje.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Teatr Scena Prezentacje w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Scena_Prezentacje_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Teatr Scena Prezentacje w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Teatr_Scena_Prezentacje_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Artykuł nie podaje daty zamknięcia teatru; tytuł i opis mówią o nim jako o nieistniejącym. Współrzędne z artykułu. Dane o historii sceny pochodzą z kronik teatralnych przytoczonych w artykule. Miejsce także w rekordzie „muzeum-przemyslu-zelazna-51-53” (ten sam budynek)."
@@ -380,12 +551,22 @@
       ],
       "summary_en": "The Museum of Industry, a branch of the Museum of Technology, operated from 1982 to 2008 in the former Norblin factory at Żelazna 51/53. It showed motor vehicle history and the factory's own heritage before closing in June 2008.",
       "ludzie": [],
-      "dawne_nazwy": ["zakłady Norblina (fabryka przy Żelaznej 51/53)"],
+      "dawne_nazwy": [
+        "zakłady Norblina (fabryka przy Żelaznej 51/53)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fabryka_Norblina_luty_2014.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fabryka_Norblina_luty_2014.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Muzeum Przemysłu w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Przemys%C5%82u_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Muzeum Przemysłu w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Muzeum_Przemys%C5%82u_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Artykuł krótki; nie podaje, kto zajął budynek po 2008 roku. Ten sam kompleks Norblina co rekord teatru „teatr-scena-prezentacje-zelazna-51-53”."
@@ -415,20 +596,37 @@
       ],
       "ciekawostki": [
         "Kamienica była wielokrotnie podpalana i przez lata była pustostanem zagrażającym katastrofą budowlaną.",
-        "Przez wiele lat kamienica była jednym z ostatnich ocalałych przedwojennych domów przy Dzikim Zachodzie."
+        "W 2011 roku zarządca (ZGN) wystąpił o wykreślenie kamienicy z rejestru zabytków, ale ministerstwo ten wniosek oddaliło."
       ],
       "summary_en": "A 1877–1878 brick tenement on Łucka 8 that survived the war as one of the last buildings of the postwar 'Wild West' area. It was largely demolished in December 2024 despite conservator orders and an attempted re-registration.",
       "ludzie": [
-        {"kto": "Ajzyk Abram Włodawer", "rola": "żydowski kupiec, inwestor i pierwszy właściciel kamienicy"},
-        {"kto": "Józefa Koch", "rola": "właścicielka kamienicy tuż po jej budowie"},
-        {"kto": "JM Invest", "rola": "spółka, która kupiła kamienicę w 2016 roku i ją wyburzyła w 2024 roku"}
+        {
+          "kto": "Ajzyk Abram Włodawer",
+          "rola": "żydowski kupiec, inwestor i pierwszy właściciel kamienicy"
+        },
+        {
+          "kto": "Józefa Koch",
+          "rola": "właścicielka kamienicy tuż po jej budowie"
+        },
+        {
+          "kto": "JM Invest",
+          "rola": "spółka, która kupiła kamienicę w 2016 roku i ją wyburzyła w 2024 roku"
+        }
       ],
       "dawne_nazwy": [],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Kamienica_przy_ul._%C5%81uckiej_8_w_Warszawie_2020.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Kamienica_przy_ul._%C5%81uckiej_8_w_Warszawie_2020.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Kamienica Abrama Włodawera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Abrama_W%C5%82odawera_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Kamienica Abrama Włodawera w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Kamienica_Abrama_W%C5%82odawera_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Artykuł nie podaje, kiedy dokładnie zostało wykreślone z rejestru, tylko miesiąc. Współrzędne z artykułu. Artykuł podaje jako lata istnienia 1878–2024, a datę budowy 1877–1878; w rekordzie zachowano 1877–2024."
@@ -462,19 +660,45 @@
       ],
       "summary_en": "The Bogusławski Palace on Żelazna 97 was rebuilt in 1807 and became a school and orphanage run by the Franciscan Sisters of the Family of Mary. During 1940–1943 it bordered the ghetto, and the sisters helped children escape to the Aryan side.",
       "ludzie": [
-        {"kto": "Wojciech Bogusławski", "rola": "fundator przebudowy pałacu w 1807 roku"},
-        {"kto": "Alessandro di Cagliostro (Giuseppe Balsamo)", "rola": "miał wystąpić w pałacyku w czerwcu 1780 roku"},
-        {"kto": "Karol Henryk Gall", "rola": "architekt, który kupił i przebudował pałac w 1825 roku"},
-        {"kto": "ks. Julian Feliński i abp Zygmunt Szczęsny Feliński", "rola": "założyciele szkoły i sierocińca w pałacyku; Zgromadzenie Sióstr Franciszkanek Rodziny Maryi"},
-        {"kto": "Andrzej Pruszyński", "rola": "autor rzeźby Matki Boskiej na dziedzińcu (1863)"},
-        {"kto": "Beata Trylińska", "rola": "autorka odbudowy w stylu klasycystycznym po 1945 roku"}
+        {
+          "kto": "Wojciech Bogusławski",
+          "rola": "fundator przebudowy pałacu w 1807 roku"
+        },
+        {
+          "kto": "Alessandro di Cagliostro (Giuseppe Balsamo)",
+          "rola": "miał wystąpić w pałacyku w czerwcu 1780 roku"
+        },
+        {
+          "kto": "Karol Henryk Gall",
+          "rola": "architekt, który kupił i przebudował pałac w 1825 roku"
+        },
+        {
+          "kto": "ks. Julian Feliński i abp Zygmunt Szczęsny Feliński",
+          "rola": "założyciele szkoły i sierocińca w pałacyku; Zgromadzenie Sióstr Franciszkanek Rodziny Maryi"
+        },
+        {
+          "kto": "Andrzej Pruszyński",
+          "rola": "autor rzeźby Matki Boskiej na dziedzińcu (1863)"
+        },
+        {
+          "kto": "Beata Trylińska",
+          "rola": "autorka odbudowy w stylu klasycystycznym po 1945 roku"
+        }
       ],
       "dawne_nazwy": [],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pa%C5%82ac_Bogus%C5%82awskiego_w_Warszawie_2022.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pa%C5%82ac_Bogus%C5%82awskiego_w_Warszawie_2022.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Pałac Bogusławskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Bogus%C5%82awskiego_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Pałac Bogusławskiego w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Bogus%C5%82awskiego_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Informacja o Cagliostro podana w artykule ze słowem „źródła podają”, więc oznaczona jako niepewna. Jeśli będzie cytowana, lepiej napisać „według źródeł”. Dziś siedziba domu generalnego Zgromadzenia Sióstr Franciszkanek Rodziny Maryi."
@@ -505,20 +729,43 @@
       ],
       "summary_en": "The Wojciech Gerson State Art High School began in 1945 at Myśliwiecka 8, moved to the Łazienki Royal Park in 1957, and settled at Smocza 6 in 1977. Its founder was removed in 1968 after the March events.",
       "ludzie": [
-        {"kto": "Antoni Mączak", "rola": "założyciel i pierwszy dyrektor szkoły, usunięty w 1968 roku"},
-        {"kto": "Włodzimierz Tiunin", "rola": "wicedyrektor, usunięty w 1968 roku; wykładowca"},
-        {"kto": "Jacek Kuroń", "rola": "nauczyciel w szkole"},
-        {"kto": "Maciej Piekarski, Andrzej Rudziński", "rola": "nauczyciele w szkole"}
+        {
+          "kto": "Antoni Mączak",
+          "rola": "założyciel i pierwszy dyrektor szkoły, usunięty w 1968 roku"
+        },
+        {
+          "kto": "Włodzimierz Tiunin",
+          "rola": "wicedyrektor, usunięty w 1968 roku; nauczyciel w szkole"
+        },
+        {
+          "kto": "Jacek Kuroń",
+          "rola": "nauczyciel w szkole"
+        },
+        {
+          "kto": "Maciej Piekarski, Andrzej Rudziński",
+          "rola": "nauczyciele w szkole"
+        }
       ],
-      "dawne_nazwy": ["Państwowe Liceum Artystyczne (1945)", "Zespół Państwowych Szkół Plastycznych im. Wojciecha Gersona (do 2019)"],
+      "dawne_nazwy": [
+        "Państwowe Liceum Artystyczne (1945)",
+        "Zespół Państwowych Szkół Plastycznych im. Wojciecha Gersona (do 2019)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Pa%C5%84stwowe_Liceum_Sztuk_Plastycznych_im._Wojciecha_Gersona_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Pa%C5%84stwowe_Liceum_Sztuk_Plastycznych_im._Wojciecha_Gersona_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Państwowe Liceum Sztuk Plastycznych im. Wojciecha Gersona w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%84stwowe_Liceum_Sztuk_Plastycznych_im._Wojciecha_Gersona_w_Warszawie"}
+        {
+          "tytul": "Wikipedia: Państwowe Liceum Sztuk Plastycznych im. Wojciecha Gersona w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Pa%C5%84stwowe_Liceum_Sztuk_Plastycznych_im._Wojciecha_Gersona_w_Warszawie"
+        }
       ],
       "pewnosc": "wysoka",
-      "uwagi": "Artykuł wymienia Smoczą 6 jako obecny adres; współrzędne z artykułu. Szkoła leży w dzielnicy Śródmieście, poza Wolą, ale w promieniu 1 km od al. Solidarności 171."
+      "uwagi": "Artykuł wymienia Smoczą 6 jako obecny adres; współrzędne z artykułu. Adres z 1977 roku wskazuje na ul. Smoczą; w pliku nie ma informacji o położeniu względem al. Solidarności poza współrzędnymi."
     },
     {
       "id": "prosta-tower",
@@ -545,14 +792,25 @@
       ],
       "summary_en": "Prosta Tower is a 19-storey office block in Wola, built 2007–2011 by Marvipol and Warbud. It was designed as a residential tower but was converted to offices after the 2008 financial crisis, and it is joined to the Łucka City residential tower.",
       "ludzie": [
-        {"kto": "Stefan Kuryłowicz", "rola": "kierownik Autorskiej Pracowni Architektury, autor projektu"}
+        {
+          "kto": "Stefan Kuryłowicz",
+          "rola": "kierownik Autorskiej Pracowni Architektury, autor projektu"
+        }
       ],
       "dawne_nazwy": [],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Prosta_Tower_w_Warszawie_2018.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Prosta_Tower_w_Warszawie_2018.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Prosta Tower", "url": "https://pl.wikipedia.org/wiki/Prosta_Tower"}
+        {
+          "tytul": "Wikipedia: Prosta Tower",
+          "url": "https://pl.wikipedia.org/wiki/Prosta_Tower"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Artykuł nie podaje numeru porządkowego ulicy. Współrzędne z artykułu."
@@ -583,15 +841,31 @@
       ],
       "summary_en": "The Bridge is a planned 174 m office tower by UNStudio at the Towarowa and Grzybowska junction, designed to incorporate a 1958 former Bellona publishing building that Ghelamco renovated in 2016. It was still under construction when the source was written.",
       "ludzie": [
-        {"kto": "Ghelamco", "rola": "firma, która wyremontowała zabytkowy budynek Bellony w 2016 roku"},
-        {"kto": "UNStudio", "rola": "holenderskie biuro projektujące wieżowiec"}
+        {
+          "kto": "Ghelamco",
+          "rola": "firma, która wyremontowała zabytkowy budynek Bellony w 2016 roku"
+        },
+        {
+          "kto": "UNStudio",
+          "rola": "holenderskie biuro projektujące wieżowiec"
+        }
       ],
-      "dawne_nazwy": ["Bellona Tower"],
+      "dawne_nazwy": [
+        "Bellona Tower"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/93/The_Bridge_under_construction%2C_Warsaw_2025_%283%29.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/93/The_Bridge_under_construction%2C_Warsaw_2025_%283%29.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: The Bridge (wieżowiec)", "url": "https://pl.wikipedia.org/wiki/The_Bridge_(wie%C5%BCowiec)"}
+        {
+          "tytul": "Wikipedia: The Bridge (wieżowiec)",
+          "url": "https://pl.wikipedia.org/wiki/The_Bridge_(wie%C5%BCowiec)"
+        }
       ],
       "pewnosc": "srednia",
       "uwagi": "Artykuł opisuje plany i etap inwestycji (wniosek 2019/2020); nie podaje daty ukończenia. Liczba kondygnacji (43) i wysokość (174 m) pochodzą z tekstu. Współrzędne z artykułu."
@@ -619,16 +893,35 @@
       ],
       "summary_en": "Pekao Tower on Grzybowska in Wola was designed in 1991 for Bank Pekao and completed in 1993. It was sold by the bank in December 2025, and the new owner applied in February 2026 to demolish it.",
       "ludzie": [
-        {"kto": "Miljenko Dumenčić", "rola": "projektant wieżowca dla Banku Pekao"},
-        {"kto": "Marian Kanton", "rola": "patron budynku (Gmach im. dr. Mariana Kantona)"},
-        {"kto": "Echo Investment", "rola": "spółka, która w grudniu 2025 roku kupiła budynek"}
+        {
+          "kto": "Miljenko Dumenčić",
+          "rola": "projektant wieżowca dla Banku Pekao"
+        },
+        {
+          "kto": "Marian Kanton",
+          "rola": "patron budynku (Gmach im. dr. Mariana Kantona)"
+        },
+        {
+          "kto": "Echo Investment",
+          "rola": "spółka, która w grudniu 2025 roku kupiła budynek"
+        }
       ],
-      "dawne_nazwy": ["Gmach im. dr. Mariana Kantona"],
+      "dawne_nazwy": [
+        "Gmach im. dr. Mariana Kantona"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/b/b1/PKO_SA_Centrala_ul._Grzybowska.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/b/b1/PKO_SA_Centrala_ul._Grzybowska.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Pekao Tower", "url": "https://pl.wikipedia.org/wiki/Pekao_Tower"}
+        {
+          "tytul": "Wikipedia: Pekao Tower",
+          "url": "https://pl.wikipedia.org/wiki/Pekao_Tower"
+        }
       ],
       "pewnosc": "wysoka",
       "uwagi": "Krótki artykuł. Plik ilustracji w Wikipedii opisany jest jako „PKO SA Centrala ul. Grzybowska”, więc przed użyciem sprawdzić, czy to właściwy budynek. Współrzędne z artykułu."
@@ -654,37 +947,92 @@
         "W 2024 roku muzeum otrzymało nagrodę Prix Versailles (UNESCO) w kategorii Muzea."
       ],
       "ciekawostki": [
-        "Budynek muzeum w Cytadeli został wybrany spośród muzeów na świecie do nagrody Prix Versailles w 2024 roku."
+        "Gmach zwyciężył w kategorii Muzea konkursu Prix Versailles; razem z nim wybrano sześć innych muzeów z całego świata."
       ],
       "summary_en": "The Museum of Polish History moved into its new building in the Warsaw Citadel in September 2023, after a five-year construction that began in October 2018. The building won the Prix Versailles in 2024.",
       "ludzie": [
-        {"kto": "Kazimierz Michał Ujazdowski", "rola": "minister kultury, który podpisał statut muzeum w 2006 roku"},
-        {"kto": "Bogdan Zdrojewski", "rola": "minister kultury, który przesunął otwarcie ekspozycji na 2018 rok"},
-        {"kto": "Mateusz Morawiecki, Piotr Gliński", "rola": "premier i minister kultury obecni na inauguracji budowy w 2018 roku"},
-        {"kto": "WXCA", "rola": "pracownia architektoniczna, która wygrała konkurs na projekt budynku"},
-        {"kto": "Paczowski et Fritsch Architectes, Bohdan Paczkowski", "rola": "autorzy zwycięskiej koncepcji z 2009 roku (pierwotna lokalizacja)"}
+        {
+          "kto": "Kazimierz Michał Ujazdowski",
+          "rola": "minister kultury, który podpisał statut muzeum w 2006 roku"
+        },
+        {
+          "kto": "Bogdan Zdrojewski",
+          "rola": "minister kultury, który przesunął otwarcie ekspozycji na 2018 rok"
+        },
+        {
+          "kto": "Mateusz Morawiecki, Piotr Gliński",
+          "rola": "premier i minister kultury obecni na inauguracji budowy w 2018 roku"
+        },
+        {
+          "kto": "WXCA",
+          "rola": "pracownia architektoniczna, która wygrała konkurs na projekt budynku"
+        },
+        {
+          "kto": "Paczowski et Fritsch Architectes, Bohdan Paczkowski",
+          "rola": "autorzy zwycięskiej koncepcji z 2009 roku (pierwotna lokalizacja)"
+        }
       ],
-      "dawne_nazwy": ["plan lokalizacji przy Trasie Łazienkowskiej (przed wyborem Cytadeli)"],
+      "dawne_nazwy": [
+        "plan lokalizacji przy Trasie Łazienkowskiej (przed wyborem Cytadeli)"
+      ],
       "zdjecia": [
-        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/36/Muzeum_Historii_Polski%2C_under_construction%2C_Warsaw%2C_2023%2C_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/36/Muzeum_Historii_Polski%2C_under_construction%2C_Warsaw%2C_2023%2C_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
       ],
       "zrodla": [
-        {"tytul": "Wikipedia: Museum of Polish History", "url": "https://en.wikipedia.org/wiki/Museum_of_Polish_History"}
+        {
+          "tytul": "Wikipedia: Museum of Polish History",
+          "url": "https://en.wikipedia.org/wiki/Museum_of_Polish_History"
+        }
       ],
       "pewnosc": "srednia",
       "uwagi": "Rekord ma charakter budynku (gmachu w Cytadeli), ale źródło to artykuł o instytucji muzealnej; większość faktów dotyczy muzeum, nie miejsca. Współrzędne w pliku są zaokrąglone (52.23, 20.979), więc to tylko przybliżenie. Artykuł po angielsku; fakty przetłumaczone na polski. Mało związane z al. Solidarności poza samym promieniem 1 km."
     }
   ],
   "pominiete": [
-    {"title": "Agencja Rezerw Materiałowych", "powod": "agencja rządowa; tekst opisuje organizację, prezesów i podstawę prawną, a adres (JM Tower) jest tylko siedzibą, bez historii budynku"},
-    {"title": "Krajowa Rada Radiofonii i Telewizji", "powod": "organ państwowy; tekst o składzie, zadaniach i członkach, bez historii miejsca (siedziba przy skwerze kard. Wyszyńskiego 9 bez opisu)"},
-    {"title": "Fundacja „Dzieło Nowego Tysiąclecia”", "powod": "fundacja; siedziba w budynku Sekretariatu KEP bez historii budynku"},
-    {"title": "Polska Telefonia Komórkowa Centertel", "powod": "firma telekomunikacyjna; historia operatora, bez historii miejsca"},
-    {"title": "IDS-BUD", "powod": "spółka budowlana; lista projektów i nagród, bez historii miejsca w promieniu"},
-    {"title": "Krajowy Zarząd Gospodarki Wodnej", "powod": "urząd administracji rządowej; historia instytucji i kierownictwa, bez historii miejsca"},
-    {"title": "GATX Rail Poland", "powod": "firma transportowa; działalność spółki, bez historii miejsca"},
-    {"title": "Towarowa Towers (artykuł pl)", "powod": "nowy kompleks mieszkalny; tekst to dane inwestycji (daty budowy 2021–2024), architektura i nagrody, bez historii miejsca"},
-    {"title": "Towarowa Towers (artykuł en)", "powod": "to samo miejsce co pl (duplikat); nowy kompleks mieszkalny bez historii miejsca"},
-    {"title": "JM Tower", "powod": "biurowiec i hotel; tekst to parametry techniczne i daty budowy (koniec 2011), bez historii miejsca"}
+    {
+      "title": "Agencja Rezerw Materiałowych",
+      "powod": "agencja rządowa; tekst opisuje organizację, prezesów i podstawę prawną, a adres (JM Tower) jest tylko siedzibą, bez historii budynku"
+    },
+    {
+      "title": "Krajowa Rada Radiofonii i Telewizji",
+      "powod": "organ państwowy; tekst o składzie, zadaniach i członkach, bez historii miejsca (siedziba przy skwerze kard. Wyszyńskiego 9 bez opisu)"
+    },
+    {
+      "title": "Fundacja „Dzieło Nowego Tysiąclecia”",
+      "powod": "fundacja; siedziba w budynku Sekretariatu KEP bez historii budynku"
+    },
+    {
+      "title": "Polska Telefonia Komórkowa Centertel",
+      "powod": "firma telekomunikacyjna; historia operatora, bez historii miejsca"
+    },
+    {
+      "title": "IDS-BUD",
+      "powod": "spółka budowlana; lista projektów i nagród, bez historii miejsca w promieniu"
+    },
+    {
+      "title": "Krajowy Zarząd Gospodarki Wodnej",
+      "powod": "urząd administracji rządowej; historia instytucji i kierownictwa, bez historii miejsca"
+    },
+    {
+      "title": "GATX Rail Poland",
+      "powod": "firma transportowa; działalność spółki, bez historii miejsca"
+    },
+    {
+      "title": "Towarowa Towers (artykuł pl)",
+      "powod": "nowy kompleks mieszkalny; tekst to dane inwestycji (daty budowy 2021–2024), architektura i nagrody, bez historii miejsca"
+    },
+    {
+      "title": "Towarowa Towers (artykuł en)",
+      "powod": "to samo miejsce co pl (duplikat); nowy kompleks mieszkalny bez historii miejsca"
+    },
+    {
+      "title": "JM Tower",
+      "powod": "biurowiec i hotel; tekst to parametry techniczne i daty budowy (koniec 2011), bez historii miejsca"
+    }
   ]
 }

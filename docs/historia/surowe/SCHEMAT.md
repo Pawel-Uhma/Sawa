@@ -34,3 +34,13 @@ Zasady:
 - Nie piszesz kwestii Sawy ani narracji, tylko fakty i ciekawostki.
 - Zdjęcia tylko jako linki do stron plików (Commons, NAC/szukajwarchiwach, Polona, fotopolska.eu) z licencją, bez pobierania.
 - Plik musi być poprawnym JSON (sprawdź `python3 -m json.tool plik.json`).
+
+## Runda 2 (16.10): głębiej, adres po adresie
+
+- Cel: **20–40 rekordów na agenta**. Każdy adres, budynek, dawny budynek, fabryka, kino, szkoła, zdarzenie albo anegdota to osobny rekord.
+- Najpierw przeczytaj, co już jest: `docs/historia/sawa-historia.geojson` (pole `properties.id` i `nazwa`). Nie powtarzaj tego. Jeśli masz nowe fakty o istniejącym miejscu, dodaj rekord z **tym samym `id`** (scalimy).
+- Źródła poza Wikipedią są mile widziane, a nawet preferowane: warszawa1939.pl (przedwojenne adresy), warszawa.fandom.com (Warszawikia), 1944.pl (biogramy powstańców z adresami), sztetl.org.pl, zabytek.pl, fotopolska.eu, polska-org.pl, encyklopedia Warszawy, Muzeum Woli, Muzeum Warszawy, culture.pl, blogi varsavianistyczne, artykuły prasowe (Stołeczna, naszemiasto, tustolica, hush-warsaw, wawalove i podobne).
+- **WebFetch zwraca streszczenie strony.** W poleceniu WebFetch proś o dosłowne cytaty zdań z datami, nazwiskami i liczbami. Do faktu wpisuj tylko to, co strona mówi wprost.
+- Wikipedię pobieraj przez API z nagłówkiem User-Agent: `curl -s -A "sawa-hackathon-research/1.0 (paweluhma136@gmail.com)" "https://pl.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&format=json&redirects=1&titles=..."`, z odstępem 1 s między zapytaniami. Część artykułów jest już pobrana w `/private/tmp/claude-501/-Users-pawel-Desktop-Sawa/1089f8db-b1b1-439e-a7ab-fefb0eed88e9/scratchpad/merge/wikicache/`.
+- Współrzędne adresów: najpierw `docs/historia/surowe/osm-400m.json`, potem Nominatim (`https://nominatim.openstreetmap.org/search?street=<nr ulica>&city=Warszawa&format=json`, z User-Agent, maks. 1 zapytanie na sekundę). **Uwaga:** numeracja przedwojenna często różni się od dzisiejszej (np. Krochmalna 92 to dziś Jaktorowska 6). Przedwojenny adres zapisz w `adres_historyczny`, a współrzędne ustal dla dzisiejszego miejsca; jeśli się nie da, wpisz `lokalizacja: przyblizona` i wyjaśnij w `uwagi`.
+- Rekord bez potwierdzonego źródła nie wchodzi. Rekordy spoza 400 m pomijasz.

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "warsaw-trade-tower",
+    "nazwa": "Warsaw Trade Tower (dawniej browar Brzezińskiego przy Chłodnej 51)",
+    "name_en": "Warsaw Trade Tower (formerly Brzeziński brewery site)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Chłodna 51",
+    "adres_historyczny": "ul. Chłodna 51/53 (browar Fryderyka Brzezińskiego)",
+    "lat": 52.2354009,
+    "lon": 20.9824735,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 250,
+    "okres": "1997–dziś",
+    "fakty": [
+      "Wieżowiec powstał w latach 1997–1999 kosztem 120 mln USD z inicjatywy koreańskiego koncernu Daewoo (rp.pl, artykuł z okazji 25-lecia budynku).",
+      "W 2003 r. budynek kupił fundusz Apollo Rida za 380 mln zł (rp.pl).",
+      "W 2006 r. budynek trafił do Akron Group za 150 mln euro, a w 2019 r. przejęła go rumuńska firma Globalworth za ok. 130 mln euro (rp.pl).",
+      "Budynek ma 208 m wysokości z iglicą i oferuje ok. 45 tys. m² powierzchni najmu (rp.pl).",
+      "Rp.pl opisuje Warsaw Trade Tower jako pierwszy wieżowiec biurowy zbudowany na warszawskiej Woli."
+    ],
+    "ciekawostki": [
+      "Według magazynu Eurobuild CEE, po zakupie przez Apollo Rida w budynku o powierzchni 33 tys. m² ok. 20 tys. m² stało puste, a jesienią 2002 r. najemcy zajmowali ok. 9 tys. m² (eurobuildcee.com, artykuł „Apollo's view from the Tower”).",
+      "Apollo Rida nie zmieniła nazwy budynku (eurobuildcee.com, artykuł „Apollo's view from the Tower”)."
+    ],
+    "summary_en": "The Warsaw Trade Tower, a 208 m office tower built in 1997–1999 by Daewoo, stands at Chłodna 51 in Wola. Ownership passed to Apollo Rida in 2003 for 380 million PLN, then to Akron Group and Globalworth.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "browar Fryderyka Brzezińskiego (data zakończenia działalności nieustalona)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Rzeczpospolita (rp.pl): Biurowiec Warsaw Trade Tower ma 25 lat",
+        "url": "https://www.rp.pl/nieruchomosci/art40590821-biurowiec-warsaw-trade-tower-ma-25-lat"
+      },
+      {
+        "tytul": "Eurobuild CEE: Apollo's view from the Tower",
+        "url": "https://eurobuildcee.com/en/magazine/2089-apollos-view-from-the-tower"
+      },
+      {
+        "tytul": "Wikipedia pl: Warsaw Trade Tower",
+        "url": "https://pl.wikipedia.org/wiki/Warsaw_Trade_Tower"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Sprzeczność: Wikipedia EN (fetch) podaje sprzedaż Daewoo funduszowi Apollo-Rida w 2002 r., rp.pl podaje 2003 r. Zapisane za rp.pl, do sprawdzenia. Kwoty z rp.pl (380 mln zł, 150 i 130 mln euro) nie potwierdzone w drugim źródle. Eurobuild nie podaje daty artykułu ani ceny zakupu. Wpis z rekordu wysokiej pewności (Wikipedia) zachowany w istniejącym pliku; ten rekord uzupełnia go o fakty finansowe i ciekawostki."
+  },
+  {
+    "id": "kercelak",
+    "nazwa": "Kercelak (plac Kercelego, rondo Kercelak)",
+    "name_en": "Kercelak market square",
+    "typ": "miejsce",
+    "adres_dzis": "rondo Kercelak (ul. Okopowa / al. Solidarności)",
+    "adres_historyczny": "plac Kercelego",
+    "lat": 52.2370217,
+    "lon": 20.9801911,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 153,
+    "okres": "1867–1947",
+    "fakty": [
+      "Według Wikipedii w okresie okupacji na targowisku Kercelak sprzedawano m.in. wszy odzieżowe, które kupowali niemieccy żołnierze (Wikipedia pl: Kercelak, https://pl.wikipedia.org/wiki/Kercelak)."
+    ],
+    "ciekawostki": [
+      "Według Wikipedii pl „rondo Kercelak” (nadane w 2001 r.) nie odnosi się do ronda, bo planowanego ronda nigdy nie zrealizowano (https://pl.wikipedia.org/wiki/Kercelak). Potwierdzenie w drugim źródle nieustalone."
+    ],
+    "summary_en": "Kercelak was a large open-air market in Wola, set up in 1867 on land given to the city by Józef Kerceli. The Wikipedia entry notes that clothing lice were among the goods sold during the occupation. The market was closed in 1947 for the W-Z route.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia pl: Kercelak (cytaty sprawdzone przez fetch)",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      },
+      {
+        "tytul": "Fotopolska.eu: Kercelak (cytat o nazwisku Kercelego i 1,5 ha)",
+        "url": "https://fotopolska.eu/kercelak"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Nowe wpisy pochodzą z Wikipedii, nie z blogów i prasy. Próby dotarcia do tustolica.pl (brak wyników) i do artykułu NCK (strona PDF nieczytelna dla narzędzia) nie dały tekstu do cytowania. Wpis o rondzie i wszach wymaga potwierdzenia w drugim źródle. Sprzeczność: Wikipedia podaje zamknięcie w 1947 r., a według niektórych źródeł handel trwał do 1949 r."
+  }
+]

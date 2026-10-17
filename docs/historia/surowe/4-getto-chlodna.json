@@ -1,0 +1,451 @@
+[
+  {
+    "id": "dom-sierot-jaktorowska-6",
+    "nazwa": "Dom Sierot Janusza Korczaka (dawny Krochmalna 92)",
+    "name_en": "Janusz Korczak's Orphanage building (former Krochmalna 92)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Jaktorowska 6",
+    "adres_historyczny": "ul. Krochmalna 92",
+    "lat": 52.23472,
+    "lon": 20.978,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 145,
+    "okres": "1911–1942",
+    "fakty": [
+      "Siedziba Domu Sierot znajdowała się przy ulicy Krochmalnej 92, obecnie Jaktorowska 6 (pl.wikipedia, hasło Janusz Korczak; hasło Ulica Jaktorowska w Warszawie).",
+      "Budynek wzniesiono w latach 1911–1912 według projektu Henryka Stifelmana; zbudowało go Towarzystwo „Pomoc dla Sierot” (pl.wikipedia, Ulica Jaktorowska w Warszawie).",
+      "Dom Sierot prowadzili Janusz Korczak i Stefania Wilczyńska od 1912 do 1942 r. Przebywało w nim ponad 100 żydowskich sierot i półsierot (pl.wikipedia, Janusz Korczak; Ulica Jaktorowska w Warszawie).",
+      "We wrześniu 1939 r. bomba zniszczyła poddasze budynku (pl.wikipedia, Ulica Jaktorowska w Warszawie).",
+      "Jesienią 1940 r. (wg części źródeł w listopadzie 1940 r.) dom przeniesiono do getta na ul. Chłodną 33 (patrz rekord dom-sierot-chlodna-33). Rekord dotyczy budynku przy Krochmalnej/Jaktorowskiej.",
+      "W sierpniu 1944 r. większość ulicy spłonęła, ale budynek przetrwał i był użyty jako koszary (pl.wikipedia, Ulica Jaktorowska w Warszawie).",
+      "Dziś pod adresem Jaktorowska 6 mieści się Korczakianum, oddział Muzeum Warszawy (pl.wikipedia, Ulica Jaktorowska w Warszawie)."
+    ],
+    "ciekawostki": [
+      "Obok budynku, na rogu z ul. Karolkowej, rośnie „Dąb doktora Korczaka”, pomnik przyrody: dąb węgierski o wysokości ok. 22 m i obwodzie pnia 440 cm (pl.wikipedia, Ulica Jaktorowska w Warszawie). Uwaga: dąb rośnie w innym miejscu niż sam budynek, nie sprawdzałem jego położenia na mapie."
+    ],
+    "summary_en": "Janusz Korczak and Stefania Wilczyńska ran the Orphanage from 1912 to 1942 in a building at Krochmalna 92, now Jaktorowska 6. In autumn 1940 the home moved into the ghetto. The building survived the 1944 burning of the street and houses the Korczakianum today.",
+    "ludzie": [
+      {
+        "kto": "Janusz Korczak",
+        "rola": "współzałożyciel i kierownik Domu Sierot",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      },
+      {
+        "kto": "Stefania Wilczyńska",
+        "rola": "współzałożycielka i współkierowniczka Domu Sierot",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      }
+    ],
+    "dawne_nazwy": [
+      "ul. Krochmalna 92 (do ok. 1940 r.)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Janusz Korczak",
+        "url": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      },
+      {
+        "tytul": "Wikipedia PL: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia PL: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres Krochmalna 92 = Jaktorowska 6 potwierdzony w trzech artykułach Wikipedii. Położenie z OSM (budynek public, historic=yes, 4 kondygnacje). Daty przeprowadzki do getta różnią się między źródłami (wrzesień–listopad 1940). Teksty pobrano przez streszczenie narzędziem WebFetch, nie przez API (API Wikipedii zwróciło błąd 429); przed użyciem w aplikacji sprawdzić cytaty na stronach. Tablica Korczaka z 2012 r. jest przy wejściu do Teatru Lalka (nie przy tym budynku)."
+  },
+  {
+    "id": "janusz-korczak-popiersie-jaktorowska",
+    "nazwa": "Pomnik Janusza Korczaka przed dawnym Domem Sierot",
+    "name_en": "Janusz Korczak monument in front of the former Orphanage",
+    "typ": "pomnik",
+    "adres_dzis": "ul. Jaktorowska 6 (przed budynkiem)",
+    "adres_historyczny": null,
+    "lat": 52.23442,
+    "lon": 20.97803,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 175,
+    "okres": "1960 (rzeźba głowy), 1979 (pomnik)",
+    "fakty": [
+      "Głowa Janusza Korczaka na pomniku jest wzorowana na brązowym popiersiu Xawerego Dunikowskiego z 1960 r. (wysokość 35 cm, waga 13 kg, odlew z brązu) (korczak.ckc.uw.edu.pl, rekord 6).",
+      "Pomnik ustawiono przed byłym Domem Sierot przy Jaktorowskiej 6 w 1979 r. (korczak.ckc.uw.edu.pl, rekord 6).",
+      "Pomnik i jego pierwowzór to dwa różne obiekty. Pomnik Korczaka w Parku Świętokrzyskim (odsłonięty 1 czerwca 2006 r.) jest osobnym dziełem (en.wikipedia, Janusz Korczak Monument, Warsaw)."
+    ],
+    "ciekawostki": [
+      "Według jednego z opisów przy budynku stoi popiersie Korczaka na terenie przed frontem budynku (wyszukiwarka, przewodniki warszawskie). Opis nie podaje autorstwa całości pomnika ani czy obecny pomnik to ten z 1979 r."
+    ],
+    "summary_en": "A bronze head of Janusz Korczak, modelled on a 1960 bust by Xawery Dunikowski, stands in front of the former Orphanage at Jaktorowska 6. The monument was erected there in 1979. A separate Korczak monument from 2006 is in Świętokrzyski Park.",
+    "ludzie": [
+      {
+        "kto": "Xawery Dunikowski",
+        "rola": "autor brązowego popiersia Korczaka z 1960 r. użytego jako wzór",
+        "wiki": "https://korczak.ckc.uw.edu.pl/items/show/6"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Korczak CKC UW: rekord 6 (rzeźba głowy Korczaka, Dunikowski)",
+        "url": "https://korczak.ckc.uw.edu.pl/items/show/6"
+      },
+      {
+        "tytul": "Wikipedia EN: Janusz Korczak Monument, Warsaw",
+        "url": "https://en.wikipedia.org/wiki/Janusz_Korczak_Monument,_Warsaw"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z OSM (node Janusz Korczak, memorial=bust, autor artist_name Xawery Dunikowski). Źródło opisu to rekord Muzeum Niepodległości / Korczak CKC; nie widziałem samego pomnika ani tabliczki autorskiej. W OSM jest też osobny węzeł „Janusz Korczak” (memorial=plaque) ok. 149 m od centrum (52.23464, 20.97819), nie zweryfikowałem jego treści ani daty. Kwestia: streszczenie strony z 1979 r. mówi o pomniku, nie o samym popiersiu."
+  },
+  {
+    "id": "dom-sierot-chlodna-33",
+    "nazwa": "Dom Sierot w getcie (Chłodna 33)",
+    "name_en": "Orphanage in the ghetto at Chłodna 33",
+    "typ": "budynek",
+    "adres_dzis": "ul. Chłodna 35/37 (wg źródeł: dawna Chłodna 33)",
+    "adres_historyczny": "ul. Chłodna 33",
+    "lat": 52.23566,
+    "lon": 20.98107,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 150,
+    "okres": "1940–1941",
+    "fakty": [
+      "Jesienią (wg części źródeł w listopadzie) 1940 r. Dom Sierot przeniesiono z Krochmalnej 92 do getta na ulicę Chłodną 33 (pl.wikipedia, Janusz Korczak).",
+      "Budynek zajmowała wcześniej Państwowa Szkoła Handlowa im. J. i M. Roeslerów (pl.wikipedia, Janusz Korczak).",
+      "Podczas tej przeprowadzki Korczak został aresztowany za brak opaski z gwiazdą, przetrzymywany na Pawiaku kilka tygodni i zwolniony w grudniu 1940 r. (pl.wikipedia, Janusz Korczak).",
+      "W październiku 1941 r. dom po raz ostatni się przeniósł, do budynku przy ul. Siennej 16, po zamknięciu obszaru na zachód od Żelaznej (pl.wikipedia, Janusz Korczak; Ulica Jaktorowska w Warszawie)."
+    ],
+    "ciekawostki": [
+      "W 2025 r. zespół z UKSW (projekt archeologiczny) opublikował zdjęcia pozostałości piwnicy w dawnym Domu Sierot przy ul. Chłodnej (dzieje.pl, podpis zdjęcia; wyniki znalezisk: butelki po mleku i fragmenty skórzanych butów wg wyszukiwarki)."
+    ],
+    "summary_en": "In autumn 1940 the Orphanage moved from Krochmalna 92 into the ghetto at Chłodna 33, a former commercial school building. Korczak was arrested during the move and held in Pawiak. In October 1941 the home moved again, to Sienna 16.",
+    "ludzie": [
+      {
+        "kto": "Janusz Korczak",
+        "rola": "kierował Domem Sierot w getcie",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      },
+      {
+        "kto": "Stefania Wilczyńska",
+        "rola": "współkierowniczka Domu Sierot",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      }
+    ],
+    "dawne_nazwy": [
+      "ul. Chłodna 33 (dziś Chłodna 35/37 wg wyszukiwarki)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Janusz Korczak",
+        "url": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      },
+      {
+        "tytul": "Dzieje.pl: pozostałości piwnicy w dawnym Domu Sierot przy ul. Chłodnej",
+        "url": "https://dzieje.pl/node/166411"
+      },
+      {
+        "tytul": "USHMM / Holocaust Chronology: Chłodna 33 (fcit.coedu.usf.edu)",
+        "url": "https://fcit.coedu.usf.edu/HOLOCAUST/KORCZAK/photos/chronolo/chlodna3.htm"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak numeru Chłodna 33 w OSM w promieniu 400 m, współrzędne to środek odcinka Chłodnej, więc położenie jest przybliżone. Daty przeprowadzki różnią się (koniec października–listopad 1940). Adres dzisiejszy (35/37) pochodzi z wyników wyszukiwania, nie z artykułu. Dom Sierot w getcie to inny budynek niż Krochmalna 92."
+  },
+  {
+    "id": "getto-ulica-chlodna",
+    "nazwa": "Ulica Chłodna jako granica getta",
+    "name_en": "Chłodna Street as the ghetto's internal boundary",
+    "typ": "ulica",
+    "adres_dzis": "ul. Chłodna (odcinek Żelazna–Leszno)",
+    "adres_historyczny": null,
+    "lat": 52.23566,
+    "lon": 20.98107,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 150,
+    "okres": "1940–1943",
+    "fakty": [
+      "Ulica Chłodna dzieliła getto na tzw. małe getto, na południu, i duże getto, na północy. W małym getcie warunki mieszkaniowe były lepsze (pl.wikipedia, Getto warszawskie).",
+      "Jedynym połączeniem między obiema częściami getta był wąski przesmyk na skrzyżowaniu Chłodnej i Żelaznej, gdzie ruch regulowała naprzemiennie otwierana brama. Pilnowali jej policjanci żydowscy, niemieccy i SS (pl.wikipedia, Getto warszawskie).",
+      "Od listopada 1940 r. odcinek Chłodnej między Wronią a Żelazną znajdował się w granicach getta (pl.wikipedia, Ulica Chłodna w Warszawie).",
+      "W grudniu 1941 r. granica getta przesunęła się na środek Żelaznej (pl.wikipedia, Ulica Chłodna w Warszawie)."
+    ],
+    "ciekawostki": [
+      "Drewniana kładka nad Chłodną, zbudowana 26 stycznia 1942 r. między kamienicami nr 23 i 26 i rozebrana w sierpniu 1942 r., była największą z czterech pieszych kładek w getcie. Leży poza promieniem 400 m, więc nie wchodzi do tego rekordu (pl.wikipedia, Ulica Chłodna w Warszawie; pl.wikipedia, Getto warszawskie).",
+      "Kładka Pamięci, dwie pary stalowych masztów połączonych linami, odsłonięto 1 października 2011 r. (pl.wikipedia, Ulica Chłodna w Warszawie)."
+    ],
+    "summary_en": "Chłodna was the internal dividing line of the Warsaw Ghetto, separating the smaller southern ghetto from the larger northern one. The only link between the two parts was a gate at the Chłodna–Żelazna crossing. A wooden footbridge over the street, built in 1942, lies outside the 400 m radius.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      },
+      {
+        "tytul": "Wikipedia PL: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Sprzeczność między źródłami: hasło Getto warszawskie podaje, że w grudniu 1941 r. z getta wyłączono odcinek Chłodnej między Wronią a Żelazną, a hasło Ulica Chłodna pisze, że w tym samym czasie do getta włączono zabudowę przy Chłodnej od Żelaznej do Waliców (nieparzyste) i Białej (parzyste). Nie rozstrzygnąłem tego. Mur i bramy w tym odcinku: w listopadzie 1940 działało 22 bramy, w kwietniu 1941 już 14 (pl.wikipedia, Getto warszawskie). Współrzędne to środek odcinka Chłodnej z OSM, nie konkretny punkt."
+  },
+  {
+    "id": "getto-ulica-wronia",
+    "nazwa": "Ulica Wronia w getcie",
+    "name_en": "Wronia Street in the ghetto",
+    "typ": "ulica",
+    "adres_dzis": "ul. Wronia (odcinek Leszno–Grzybowska)",
+    "adres_historyczny": null,
+    "lat": 52.23611,
+    "lon": 20.98458,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 387,
+    "okres": "1940–1941",
+    "fakty": [
+      "Od listopada 1940 do grudnia 1941 r. granica getta biegła za wschodnią, parzystą stroną Wroniej, między Lesznem a Grzybowską (pl.wikipedia, Ulica Wronia w Warszawie).",
+      "W listopadzie 1941 r. zlikwidowano bramę do getta na rogu ulic Chłodnej i Wroniej (pl.wikipedia, Ulica Wronia w Warszawie).",
+      "Ulicę nazwano w 1770 r. Plac przy wschodniej stronie, dziś plac Kazimierza Wielkiego, istniał od ok. 1868 r. jako plac Kaliksta Witkowskiego (pl.wikipedia, Ulica Wronia w Warszawie).",
+      "4 września 1939 r. niemiecki nalot zniszczył dwa domy; w gruzach zginęło ok. 30 osób (pl.wikipedia, Ulica Wronia w Warszawie)."
+    ],
+    "ciekawostki": [
+      "Północny odcinek Wroniej od Żytniej do Leszna został w 1983 r. nazwany skwerem kard. Stefana Wyszyńskiego (pl.wikipedia, Ulica Wronia w Warszawie)."
+    ],
+    "summary_en": "Wronia was the eastern edge of the ghetto from November 1940 to December 1941. A gate at its corner with Chłodna was closed in November 1941. The street name dates from 1770.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "plac Kaliksta Witkowskiego (ok. 1868–1921, dziś plac Kazimierza Wielkiego)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Ulica Wronia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Sama Wronia 45 (tablica Tchorka, OSM ok. 132 m od centrum, 52.23562, 20.97702) to upamiętnienie egzekucji z 6 VIII 1944 r. (rzeź Woli), nie getta. W artykule o Wroniej nie ma informacji o kamienicach 45A, 47, 57 i 57A (OSM: budynki apartments, bez tagu historic). Współrzędne to środek odcinka ulicy z OSM."
+  },
+  {
+    "id": "brama-getta-chlodna-wronia",
+    "nazwa": "Brama getta na rogu Chłodnej i Wroniej",
+    "name_en": "Ghetto gate at Chłodna and Wronia",
+    "typ": "miejsce",
+    "adres_dzis": "skrzyżowanie ul. Chłodnej i ul. Wroniej",
+    "adres_historyczny": null,
+    "lat": 52.2361,
+    "lon": 20.9844,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 375,
+    "okres": "1940–1941",
+    "fakty": [
+      "W listopadzie 1940 r. na granicach getta działało 22 bramy, w kwietniu 1941 r. już tylko 14 (pl.wikipedia, Getto warszawskie).",
+      "W listopadzie 1941 r. zlikwidowano bramę do getta na rogu ulic Chłodnej i Wroniej (pl.wikipedia, Ulica Wronia w Warszawie)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "One of the Warsaw Ghetto's gates stood at the corner of Chłodna and Wronia. It was closed in November 1941, when the number of gates was being reduced.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      },
+      {
+        "tytul": "Wikipedia PL: Ulica Wronia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dokładny punkt bramy nie jest podany w źródłach. Współrzędne to przybliżenie na skrzyżowaniu. Nie znalazłem tablicy ani pozostałości bramy w OSM."
+  },
+  {
+    "id": "getto-ulica-krochmalna",
+    "nazwa": "Ulica Krochmalna (Isaac Bashevis Singer)",
+    "name_en": "Krochmalna Street (Isaac Bashevis Singer's childhood street)",
+    "typ": "ulica",
+    "adres_dzis": "ul. Krochmalna (odcinek Żelazna–Wronia), wcześniej Kotlarska",
+    "adres_historyczny": null,
+    "lat": 52.23503,
+    "lon": 20.98325,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 312,
+    "okres": "1770–1944",
+    "fakty": [
+      "Nazwę Krochmalna nadano w 1770 r., gdy przy ulicy działała wytwórnia krochmalu. Wcześniej ulica nazywała się Lawendową lub Lawendowską (pl.wikipedia, Ulica Krochmalna w Warszawie).",
+      "Listopad 1940: wschodni odcinek ulicy, do Wroniej, znalazł się w granicach getta (pl.wikipedia, Ulica Krochmalna w Warszawie).",
+      "Sierpień 1942: ulicę wyłączono z getta razem z tzw. małym gettem podczas wielkiej akcji deportacyjnej do Treblinki (pl.wikipedia, Ulica Krochmalna w Warszawie).",
+      "Luty 1942: w kamienicach nr 13 i 18 udokumentowano dwa z czterech przypadków kanibalizmu w dzielnicy zamkniętej (pl.wikipedia, Ulica Krochmalna w Warszawie).",
+      "W 1944 r. Niemcy zniszczyli zabudowę ulicy, z wyjątkiem kilku domów (pl.wikipedia, Ulica Krochmalna w Warszawie).",
+      "W 1908 r. rodzina Isaaca Bashevisa Singera zamieszkała pod Krochmalną 10; około 1914 r. przeniosła się do kamienicy nr 12 (pl.wikipedia, Ulica Krochmalna w Warszawie; wyszukiwarka, publikacja Dzieci Holocaustu)."
+    ],
+    "ciekawostki": [
+      "Tablicę upamiętniającą Isaaca Bashevisa Singera odsłonięto 28 sierpnia 2018 r. w ramach Festiwalu „Warszawa Singera” (dzieje.pl, node 95041). Źródła podają różnie numer: Krochmalna 1 albo 10.",
+      "Krochmalna 92 (dawny Dom Sierot) leży przy tej samej ulicy, po drugiej stronie osiedla; jest to osobny rekord."
+    ],
+    "summary_en": "Krochmalna was on the eastern edge of the ghetto from 1940, and the Germans cleared the street in August 1942. Isaac Bashevis Singer's family lived at number 10 and later number 12 in the early 20th century. A plaque to him was unveiled in 2018.",
+    "ludzie": [
+      {
+        "kto": "Isaac Bashevis Singer",
+        "rola": "dzieciństwo w rodzinie na Krochmalnej 10, potem nr 12",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [
+      "Lawendowa / Lawendowska (przed 1770)",
+      "Kotlarska (odcinek Wronia–Towarowa, 1970–2023)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      },
+      {
+        "tytul": "Dzieje.pl: odsłonięcie tablicy I. B. Singera",
+        "url": "https://dzieje.pl/node/95041"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Krochmalna 10 (dom Singera) nie była w OSM w promieniu 400 m i nie znam jej współrzędnych. Trzeba sprawdzić, czy wchodzi w zakres. Numer tablicy (1 czy 10) jest sprzeczny w źródłach. Daty przeprowadzki też (1908 vs ok. 1914). Kanibalizm z 1942 r. to fakt opisany w haśle; przy publikacji w aplikacji warto to przemyśleć. Współrzędne: środek odcinka Krochmalnej z OSM."
+  },
+  {
+    "id": "getto-ulica-ogrodowa",
+    "nazwa": "Ulica Ogrodowa i gmach Sądu Grodzkiego",
+    "name_en": "Ogrodowa Street and the District Court building",
+    "typ": "ulica",
+    "adres_dzis": "ul. Ogrodowa (odcinek Żelazna–Okopowa)",
+    "adres_historyczny": null,
+    "lat": 52.23716,
+    "lon": 20.98243,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 278,
+    "okres": "1770–1944",
+    "fakty": [
+      "Nazwę nadano w 1770 r. od licznych ogrodów. Ostatnie ogrody zniknęły na przełomie XIX i XX w. (pl.wikipedia, Ulica Ogrodowa w Warszawie).",
+      "Gmach Sądu Grodzkiego zbudowano w latach 1935–1939 według projektu Bohdana Pniewskiego. Podczas getta był enklawą: Żydzi mieli wejście od strony Leszna, a Polacy od Ogrodowej, przez ul. Białą, wyłączoną z getta (pl.wikipedia, Ulica Ogrodowa w Warszawie).",
+      "Listopad 1940: ulica znalazła się w granicach getta, poza kilkoma odcinkami. Grudzień 1941: odcinek między Wronią a Żelazną wyłączono z getta. Sierpień 1942: pozostałą część włączono do części „aryjskiej” (pl.wikipedia, Ulica Ogrodowa w Warszawie).",
+      "Wiosną–wrzesień 1942 r. pod numerem 17 mieściła się siedziba Żydowskiej Służby Porządkowej (pl.wikipedia, Ulica Ogrodowa w Warszawie).",
+      "Kamienica nr 65 została wybudowana przez właściciela przedsiębiorstwa Węgiełek naprzeciw magazynów nr 62; na zdjęciu z lat 30. widać tu wcześniej drewniane domy nr 65, 67 i 69 (pl.wikipedia, Ulica Ogrodowa w Warszawie)."
+    ],
+    "ciekawostki": [
+      "W sierpniu 1944 r. Niemcy opanowali rejon ulicy, podpalili budynki, a część mieszkańców wymordowali (pl.wikipedia, Ulica Ogrodowa w Warszawie)."
+    ],
+    "summary_en": "Ogrodowa took its name from the gardens there in 1770. The District Court building, designed by Bohdan Pniewski (1935–1939), sat inside the ghetto with separate entrances for Jews and non-Jews. The street was cleared in August 1942.",
+    "ludzie": [
+      {
+        "kto": "Bohdan Pniewski",
+        "rola": "projektant gmachu Sądu Grodzkiego (1935–1939)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Nie ustaliłem numeru gmachu Sądu Grodzkiego. Hasło Ulica Leszno mówi o gmachu przy nr 53/55 Leszna, ale nie łączy go z Ogrodową. Ogrodowa 56: hasło wspomina tylko fragment bruku przed budynkiem, bez daty i opisu kamienicy, więc rekordu nie tworzę. Ogrodowa 65 (OSM apartments, 6 kondygnacji) nie ma w OSM tagu historic. Współrzędne: środek odcinka z OSM."
+  },
+  {
+    "id": "getto-ulica-leszno",
+    "nazwa": "Ulica Leszno (odcinek przy getcie)",
+    "name_en": "Leszno Street (section by the ghetto)",
+    "typ": "ulica",
+    "adres_dzis": "ul. Leszno (odcinek Okopowa–Żelazna)",
+    "adres_historyczny": "Gerichtstraße (nazwa w okupacji)",
+    "lat": 52.23779,
+    "lon": 20.97583,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 296,
+    "okres": "1648–1949",
+    "fakty": [
+      "Nazwa pochodzi od jurydyki Leszno, założonej 8 stycznia 1648 r. przez Bogusława i Jana Leszczyńskich. Ulica powstała w miejscu dawnego traktu z Warszawy do Błonia (pl.wikipedia, Ulica Leszno w Warszawie).",
+      "Listopad 1940: odcinek ulicy do Żelaznej znalazł się w obrębie getta warszawskiego (pl.wikipedia, Ulica Leszno w Warszawie).",
+      "W czasie okupacji ulica nosiła niemiecką nazwę Gerichtstraße, od gmachu sądu przy numerach 53/55 (pl.wikipedia, Ulica Leszno w Warszawie).",
+      "Przed wojną przy ulicy działało kilkanaście kin w latach 30. XX w.; ulicę nazywano „Marszałkowską gettową” od tłumu i lokali rozrywkowych (1943.pl, spacer varsavianistyczny „Dawna ulica Leszno”).",
+      "Kino Femina przy Lesznie 35 zaprojektował w 1936 r. Juliusz Żórawski dla Dawida Bachracha. Działało do 2014 r. (nowehoryzonty.pl, „Kino FEMINA. Historia pewnego miejsca”)."
+    ],
+    "ciekawostki": [
+      "Po wojnie wschodni i centralny odcinek Leszna włączono do trasy W-Z i nazwano aleją Świerczewskiego; zachodni odcinek zachował nazwę (pl.wikipedia, Ulica Leszno w Warszawie)."
+    ],
+    "summary_en": "Leszno got its name from a 1648 estate. Its eastern section was inside the ghetto from November 1940. Before the war it was a busy street with many cinemas, and the Femina cinema (1936) at No. 35 is the best-documented one.",
+    "ludzie": [
+      {
+        "kto": "Juliusz Żórawski",
+        "rola": "architekt kina Femina (1936)",
+        "wiki": "https://www.nowehoryzonty.pl/pliki/wgrane/image/16nh/Kino_FEMINA_Historia_pewnego_miejsca.pdf"
+      }
+    ],
+    "dawne_nazwy": [
+      "Gerichtstraße (1939–1945)",
+      "al. Świerczewskiego (po 1949, odcinek wschodni i centralny)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Ulica Leszno w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Leszno_w_Warszawie"
+      },
+      {
+        "tytul": "1943.pl: spacer varsavianistyczny „Dawna ulica Leszno”",
+        "url": "https://1943.pl/wp-content/uploads/pdf/fotorelacja-spacer-varsavianistyczny-dawna-ulica-leszno_pl.pdf"
+      },
+      {
+        "tytul": "Kino FEMINA. Historia pewnego miejsca (Ł. Wireta)",
+        "url": "https://www.nowehoryzonty.pl/pliki/wgrane/image/16nh/Kino_FEMINA_Historia_pewnego_miejsca.pdf"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Handel przed wojną: nie znalazłem konkretnych źródeł o sklepach, więc tego nie opisuję. Leszno 7, 11 (OSM apartments) i 24–26A (OSM historic=yes, kindergarten, ok. 332 m) nie mają opisu w źródłach, nie stworzyłem dla nich rekordów. Femina (Leszno 35) jest prawdopodobnie poza promieniem 400 m, nie zweryfikowałem tego. Współrzędne: środek odcinka z OSM."
+  },
+  {
+    "id": "ulica-jaktorowska",
+    "nazwa": "Ulica Jaktorowska (dawna Krochmalna)",
+    "name_en": "Jaktorowska Street (formerly Krochmalna)",
+    "typ": "ulica",
+    "adres_dzis": "ul. Jaktorowska",
+    "adres_historyczny": "ul. Krochmalna (część zachodnia)",
+    "lat": 52.2343,
+    "lon": 20.9789,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 178,
+    "okres": "1768–1970",
+    "fakty": [
+      "Ulicę wytyczono po 1768 r. na miejscu dawnej drogi narolnej. Pierwotnie nazywała się Krochmalną, od fabryki krochmalu przy nr 3 (pl.wikipedia, Ulica Jaktorowska w Warszawie).",
+      "Część zachodnia otrzymała nazwę Jaktorowska w 1916 r. (pl.wikipedia, Ulica Jaktorowska w Warszawie). Według innego hasła zmianę nazwy zarządzono uchwałą Miejskiej Rady Narodowej z 14 maja 1970 r. (pl.wikipedia, Ulica Krochmalna w Warszawie).",
+      "W sierpniu 1944 r. na Krochmalnej 90 (dziś Jaktorowska 4) Niemcy i kolaboranci z RONA rozstrzelali ok. 30 osób i spalili ciała (pl.wikipedia, Ulica Jaktorowska w Warszawie).",
+      "Przed 1858 r. przy ulicy stał browar, zburzony pod budowę pałacu Biernackich. W 1924–1926 redemptoryści zbudowali klasztor przy skrzyżowaniu z Karolkowej (pl.wikipedia, Ulica Jaktorowska w Warszawie)."
+    ],
+    "ciekawostki": [
+      "Dąb węgierski na rogu z Karolkową, nazywany „Dębem doktora Korczaka”, jest pomnikiem przyrody. Ma ok. 22 m wysokości i obwód pnia 440 cm (pl.wikipedia, Ulica Jaktorowska w Warszawie)."
+    ],
+    "summary_en": "Jaktorowska was originally part of Krochmalna and was renamed in 1916 or 1970 (sources differ). The street was the site of the Orphanage at Krochmalna 92, now number 6. In August 1944 about 30 people were shot at number 4.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Krochmalna (część zachodnia, do 1916 lub 1970 r.)",
+      "Lawendowska (przed 1770)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia PL: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia PL: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Sprzeczność co do daty zmiany nazwy: 1916 (hasło Jaktorowska) vs 14 maja 1970 (hasło Krochmalna). Współrzędne: środek odcinka z OSM (highway=residential). Krochmalna/Jaktorowska 6 to osobny rekord."
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "philips-fabryka-lampek-przyokopowa",
+    "nazwa": "Polsko-Holenderska Fabryka Lampek Elektrycznych (Philips) między Karolkową, Grzybowską a Przyokopową",
+    "name_en": "Polish-Dutch electric lamp factory of Philips, between Karolkowa, Grzybowska and Przyokopowa streets",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "dawna działka między ul. Karolkową, Grzybowską i Przyokopową (Wola)",
+    "adres_historyczny": null,
+    "lat": 52.2337671,
+    "lon": 20.9804238,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 259,
+    "okres": "1923–1944 (fabryka); po 1945 Zakłady Wytwórcze Lamp Elektrycznych im. Róży Luksemburg",
+    "fakty": [
+      "W 1923 na działce między ulicami Karolkową, Grzybowską i Przyokopową Polsko-Holenderska Fabryka Lampek Elektrycznych należąca do koncernu Philips rozpoczęła produkcję m.in. żarówek; w kolejnych latach zakład został rozbudowany. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie; Wikipedia, Ulica Grzybowska w Warszawie.",
+      "Po kapitulacji powstania warszawskiego Niemcy wywieźli sprzęt z fabryki Philipsa, a zabudowania wysadzili w powietrze. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie; Wikipedia, Ulica Grzybowska w Warszawie.",
+      "Po wojnie w miejscu zniszczonej fabryki wzniesiono nowe hale dla państwowych Zakładów Wytwórczych Lamp Elektrycznych im. Róży Luksemburg. Źródło: Wikipedia, Ulica Przyokopowa w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1923 the Polish-Dutch lamp factory of the Philips concern started making light bulbs on a plot between Karolkowa, Grzybowska and Przyokopowa streets. After the 1944 uprising the Germans removed its equipment and blew up the buildings; after the war new halls were built there for the state lamp works named after Róża Luksemburg.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Zakłady Wytwórcze Lamp Elektrycznych im. Róży Luksemburg (po 1945)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Przyokopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Przyokopowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Grzybowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Grzybowska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Numery budynków fabryki nieustalone. Współrzędne to węzeł OSM Przyokopowa 45 (52.2337671, 20.9804238), użyty jako przybliżenie działki. Rok 1923 podaje Wikipedia; w wynikach wyszukiwania pojawia się też 1922 (niezweryfikowane). Nie znaleziono źródła o dokładnych zabudowaniach z lat 1923–1939."
+  },
+  {
+    "id": "grzybowska-96-inwestycja-art-deco",
+    "nazwa": "Grzybowska 96 (inwestycja Art Deco, dziś)",
+    "name_en": "Grzybowska 96 (Art Deco residential development, today)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Grzybowska 96",
+    "adres_historyczny": null,
+    "lat": 52.2329379,
+    "lon": 20.9793146,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 331,
+    "okres": "plan oddania 3 kw. 2028",
+    "fakty": [
+      "Na adresie ul. Grzybowska 96 deweloper Terra Casa S.A. realizuje inwestycję z 9 kondygnacjami naziemnymi, 1 podziemną i 77 mieszkaniami; planowane oddanie w 3 kw. 2028 r. Źródło: rynekpierwotny.pl, oferta „Art Deco Grzybowska”, data publikacji 16.09.2026 (materiał reklamowy dewelopera)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A new nine-storey residential building at Grzybowska 96, developed by Terra Casa S.A. and planned for completion in 2028. Its design refers to Chicago-style Art Deco; the source is a developer advertisement.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "rynekpierwotny.pl: Art Deco Grzybowska, Warszawa Czyste (oferta dewelopera)",
+        "url": "https://rynekpierwotny.pl/oferty/terra-casa-sa/art-deco-grzybowska-warszawa-czyste-19884/1300848/"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Nie jest to zabytek ani budynek przedwojenny; strona nie podaje związku z historią miejsca. Źródło to ogłoszenie dewelopera, więc dane mogą się zmienić. Współrzędne z OSM (węzeł Grzybowska 96). Nie znaleziono żadnej kamienicy art deco z przedwojennego okresu pod tym numerem."
+  },
+  {
+    "id": "towarowa-36-hotel-moxy",
+    "nazwa": "Towarowa 36 (hotel Moxy Warsaw City)",
+    "name_en": "Towarowa 36 (Moxy Warsaw City hotel)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Towarowa 36",
+    "adres_historyczny": null,
+    "lat": 52.2343806,
+    "lon": 20.982163,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 279,
+    "okres": "2025–dziś",
+    "fakty": [
+      "Budynek przy Towarowej 36 oznaczony w OSM jako hotel Moxy Warsaw City; w OSM data rozpoczęcia działalności to 29.04.2025. Źródło: OpenStreetMap, way 1312753929."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Towarowa 36 now houses the Moxy Warsaw City hotel, which according to OpenStreetMap opened in April 2025.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OpenStreetMap: way 1312753929 (Towarowa 36)",
+        "url": "https://www.openstreetmap.org/way/1312753929"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Jedyne źródło to OSM; nie ustalono historii budynku przed 2025 r. Ten sam numer w OSM ma także inne elementy (np. Towarowa 36A, biuro) — nieweryfikowane."
+  }
+]

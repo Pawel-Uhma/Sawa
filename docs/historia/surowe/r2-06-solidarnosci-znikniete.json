@@ -1,0 +1,486 @@
+[
+  {
+    "id": "rogatki-wolskie",
+    "nazwa": "Rogatki Wolskie (pawilony przy Wolskiej 1 i 2)",
+    "name_en": "Wolska toll gate pavilions (Rogatki Wolskie)",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "skrzyżowanie ul. Wolskiej, Chłodnej, Towarowej i Okopowej (rejon ronda Kercelak)",
+    "adres_historyczny": "Wolska 1 i Wolska 2 (pawilony rogatkowe)",
+    "lat": 52.2368,
+    "lon": 20.9812,
+    "lokalizacja": "przyblizona",
+    "okres": "1818–1942",
+    "fakty": [
+      "Murowane pawilony rogatkowe na Woli zaprojektował Jakub Kubicki; wzniesiono je w 1818 r., wcześniej stały tu drewniane budynki z 1816 r. Pawilony były przypisane do numeracji ul. Wolskiej (południowy – nr 1, północny – nr 2). (Wikipedia pl: Rogatki Wolskie)",
+      "Pobierano tu opłaty od osób wjeżdżających do miasta (rogatkowe) oraz od bydła pędzonego przez rogatki (kopytkowe). (Wikipedia pl: Rogatki Wolskie)",
+      "W listopadzie 1806 r. weszły tędy do miasta wojska francuskie, a Joachimowi Muratowi wręczono klucze do miasta. (Wikipedia pl: Rogatki Wolskie)",
+      "2 listopada 1830 r. dyliżans pocztowy zatrzymał się przy rogatkach do kontroli dokumentów i bagażu; wsiadł do niego Fryderyk Chopin, który opuścił wtedy Warszawę na zawsze. Żegnali go uczniowie Konserwatorium. (Wikipedia pl: Rogatki Wolskie)",
+      "W 1867 r. na północ od rogatek powstało targowisko Kercelak. (Wikipedia pl: Rogatki Wolskie)",
+      "Pawilony rozebrano na polecenie Niemców we wrześniu–październiku 1942 r., uzasadniając to koniecznością poszerzenia jezdni. (Wikipedia pl: Rogatki Wolskie; Wikipedia pl: Ulica Chłodna w Warszawie)",
+      "Według SARP rogatki na skrzyżowaniu Towarowej, Wolskiej i Chłodnej były najważniejszym z wylotów na zachód; dawny przeciąg między rogatkami dał nazwę ul. Chłodnej. (SARP, H. Radziejowska, „Wola – ulice”)"
+    ],
+    "ciekawostki": [
+      "Rogatki stały przy jednym z najstarszych szlaków miasta, biegnącym od Bramy Krakowskiej ulicami Senatorską, Elektoralną, Chłodną i Wolską. (Wikipedia pl: Rogatki Wolskie)"
+    ],
+    "summary_en": "The Wolska toll gate pavilions stood where Wolska, Chłodna, Towarowa and Okopowa streets meet, close to today's Kercelak roundabout. Designed by Jakub Kubicki and built in 1818, they collected city entry fees until the Germans demolished them in 1942.",
+    "ludzie": [
+      {
+        "kto": "Jakub Kubicki",
+        "rola": "projektant pawilonów rogatkowych (1818)",
+        "wiki": "https://pl.wikipedia.org/wiki/Jakub_Kubicki"
+      },
+      {
+        "kto": "Fryderyk Chopin",
+        "rola": "wyjechał z Warszawy dyliżansem zatrzymanym przy rogatkach (2.11.1830)",
+        "wiki": "https://pl.wikipedia.org/wiki/Fryderyk_Chopin"
+      }
+    ],
+    "dawne_nazwy": [
+      "Rogatki Wolskie (do 1942)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Rogatki Wolskie",
+        "url": "https://pl.wikipedia.org/wiki/Rogatki_Wolskie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      },
+      {
+        "tytul": "SARP: H. Radziejowska, Wola – ulice (PDF)",
+        "url": "https://sarp.warszawa.pl/wordpress/wp-content/uploads/2015/10/H.-Radziejowska_Wola_ulice.pdf"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne przybliżone: punkt na skrzyżowaniu wg opisu hasła („zbieg ulic Wolskiej, Chłodnej, Towarowej i Okopowej”), bez planu z 1939 r. Pawilony nie są w OSM jako osobny obiekt. Hasło Wikipedii wymienia też Chopina przy rogatkach jako moment wyjazdu, nie jako punkt odjazdu dyliżansu.",
+    "odleglosc_m": 186
+  },
+  {
+    "id": "ogrod-rembaczewskiego",
+    "nazwa": "Ogród Rembaczewskiego (dawny ogród rozrywkowy na Lesznie)",
+    "name_en": "Rembaczewski's Garden (former pleasure garden on Leszno)",
+    "typ": "miejsce",
+    "adres_dzis": "okolice ul. Okopowej, Leszna i Żytniej (przez dawny ogród przechodzi dziś wschodnia nitka ul. Okopowej)",
+    "adres_historyczny": "działki Leszno 695 i 696 (wg Wikipedii)",
+    "lat": 52.2386,
+    "lon": 20.9775,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1830–1944 (ogród i zabudowa); potem osiedla i PKS",
+    "fakty": [
+      "Ogród rozrywkowy na zachodnich peryferiach Warszawy prowadził w latach 30. i 40. XIX w. restaurator Feliks Rembaczewski. Wstęp był płatny; działała mała kolejka szynowa, a w niektóre dni grały zespoły muzyczne lub kilkudziesięcioosobowe orkiestry. (Wikipedia pl: Ogród Rembaczewskiego)",
+      "Działki leżały między ulicami Leszno a Żytnią; od zachodu graniczyły z zadrzewioną drogą po wewnętrznej stronie wału Okopów Lubomirskiego. (Wikipedia pl: Ogród Rembaczewskiego)",
+      "W 1852 r. teren kupił Stanisław Brüner, a w 1858 r. firma Sławiński i Ska postawiła tu ośmiozłożeniowy młyn parowy o mocy 70 KM z piekarnią, magazynami i bocznicą kolejową. (Wikipedia pl: Ogród Rembaczewskiego)",
+      "W okresie międzywojennym największym zakładem w okolicy były zakłady maszynowe Paschalskiego. (Wikipedia pl: Ogród Rembaczewskiego)",
+      "Po Powstaniu Warszawskim Niemcy zniszczyli cały kwartał w ramach akcji burzenia miasta. (Wikipedia pl: Ogród Rembaczewskiego)",
+      "W latach 50. XX w. na wschodnich krańcach dawnego ogrodu ulokowano dworzec autobusowy PKS (Centralny Dworzec Autobusowy na Lesznie, między Lesznem a Żytnią). W latach 60. na zachodnich krańcach zbudowano dwa duże bloki mieszkalne. (Wikipedia pl: Ogród Rembaczewskiego; Wikipedia pl: Kercelak)",
+      "W początku lat 80. przez środek dawnego ogrodu poprowadzono wschodnią nitkę ul. Okopowej. (Wikipedia pl: Ogród Rembaczewskiego)"
+    ],
+    "ciekawostki": [
+      "Nazwa ogrodu była w prasie używana jako punkt odniesienia także w latach 60. i 70. XX w., a w latach 90. XIX w. przewodnik pisał, że „dziś pozostały po nim tylko piękne drzewa na kilku posesyjach”. (Wikipedia pl: Ogród Rembaczewskiego)"
+    ],
+    "summary_en": "Rembaczewski's Garden was a paid pleasure garden on the western edge of Warsaw, between Leszno and Żytnia streets, in the 1830s and 1840s. Later it became a mill and industrial district; the Germans destroyed the whole block after the 1944 Uprising, and Okopowa Street now runs through the site.",
+    "ludzie": [
+      {
+        "kto": "Feliks Rembaczewski",
+        "rola": "restaurator, prowadził ogród (zm. ok. 1840–1841)",
+        "wiki": "https://pl.wikipedia.org/wiki/Feliks_Rembaczewski"
+      }
+    ],
+    "dawne_nazwy": [
+      "ogród Rembaczewskiego"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ogród Rembaczewskiego",
+        "url": "https://pl.wikipedia.org/wiki/Og%C3%B3d_Rembaczewskiego"
+      },
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dokładny kształt działki jest wg hasła niejasny (według różnych map 100–150 m szerokości). Współrzędne przybliżone, środek między Lesznem a Żytnią. Hasło wspomina w 1866 r. właściciela „Józefa Kercelli” – nie ustalono, czy to ta sama osoba co patron placu Kercelego (Kercelak).",
+    "odleglosc_m": 315
+  },
+  {
+    "id": "fabryka-philips-karolkowa",
+    "nazwa": "Fabryka lampek elektrycznych Philipsa (Karolkowa / Przyokopowa / Grzybowska)",
+    "name_en": "Philips light-bulb factory (Karolkowa / Przyokopowa)",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "kwartał między ulicami Karolkową, Przyokopową i Grzybowską",
+    "adres_historyczny": "Karolkowa 32/44 (działka między Karolkową, Grzybowską i Przyokopową)",
+    "lat": 52.2335,
+    "lon": 20.9785,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–1944",
+    "fakty": [
+      "W 1923 r. na działce między ulicami Karolkową, Grzybowską i Przyokopową (Karolkowa 32/44) rozpoczęła produkcję m.in. żarówek Polsko-Holenderska Fabryka Lampek Elektrycznych, należąca do koncernu Philips. Zakład był potem rozbudowywany. (Wikipedia pl: Ulica Karolkowa w Warszawie; Wikipedia pl: Ulica Przyokopowa w Warszawie)",
+      "Po powstaniu warszawskim Niemcy wywieźli sprzęt z fabryki Philipsa, a zabudowania wysadzili w powietrze. (Wikipedia pl: Ulica Karolkowa w Warszawie; Wikipedia pl: Ulica Przyokopowa w Warszawie)",
+      "Po wojnie w miejscu zniszczonej fabryki wzniesiono nowe hale dla państwowych Zakładów Wytwórczych Lamp Elektrycznych im. Róży Luksemburg. (Wikipedia pl: Ulica Przyokopowa w Warszawie)",
+      "Według hasła „Karolkowa” po wojnie odbudowano też niektóre zakłady, w tym Polskie Zakłady Philips. (Wikipedia pl: Ulica Karolkowa w Warszawie)"
+    ],
+    "ciekawostki": [
+      "Ulica Przyokopowa została po wojnie przerwana zabudowaniami Warszawskich Zakładów Farmaceutycznych Polfa i składa się z dwóch niepołączonych odcinków. (Wikipedia pl: Ulica Przyokopowa w Warszawie)"
+    ],
+    "summary_en": "Philips opened a light-bulb factory on a city block between Karolkowa, Grzybowska and Przyokopowa streets in 1923. After the 1944 Uprising the Germans blew up its buildings; the site later housed a state lamp works named after Róża Luksemburg.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Polsko-Holenderska Fabryka Lampek Elektrycznych (Philips)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Przyokopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Przyokopowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Sprzeczność między hasłami: „Karolkowa” pisze o odbudowie Polskich Zakładów Philips po wojnie, „Przyokopowa” o nowych halach ZWLE w miejscu zniszczonej fabryki. Nie ustalono, czy fabryka wróciła do Philipsa. Współrzędne przybliżone (środek kwartału wg położenia ulic i punktów OSM).",
+    "odleglosc_m": 268
+  },
+  {
+    "id": "karolkowa-59-kamienica-1844",
+    "nazwa": "Kamienica Karolkowa 59 (narożnik z Wolską, 1844)",
+    "name_en": "Karolkowa 59 corner tenement (1844, demolished 1969)",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "róg ul. Karolkowej i ul. Wolskiej",
+    "adres_historyczny": "Karolkowa 59",
+    "lat": 52.235,
+    "lon": 20.9765,
+    "lokalizacja": "przyblizona",
+    "okres": "1844–1969",
+    "fakty": [
+      "Kamienica nr 59 przy Karolkowej, u zbiegu z ul. Wolską, wzniesiona w 1844 r., została wyburzona w 1969 r. Według hasła była wtedy w niemal idealnym stanie. (Wikipedia pl: Ulica Karolkowa w Warszawie)"
+    ],
+    "ciekawostki": [
+      "Na narożniku z Wolską mieścił się przytułek dla starozakonnych, z oddziałami dla starców i sierot (data w haśle nie podana). Przeciwległy narożnik (Wolska 19) zajmował przed 1850 r. niewielki budynek, zastąpiony oficyną. (Wikipedia pl: Ulica Karolkowa w Warszawie)"
+    ],
+    "summary_en": "A corner tenement at Karolkowa and Wolska streets, built in 1844, was demolished in 1969 while still in nearly perfect condition, according to the Karolkowa street article on Polish Wikipedia.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło jedno (hasło Wikipedii, bez zdjęcia i bez cytowanego źródła dla 1969). Współrzędne przybliżone, obok Wolska 19/25 (OSM). Do sprawdzenia w księdze adresowej lub w archiwum Konserwatora.",
+    "odleglosc_m": 192
+  },
+  {
+    "id": "dziki-zachod-chlodna",
+    "nazwa": "Okolice Chłodnej i Ogrodowej po 1945 („Dziki Zachód”)",
+    "name_en": "Chłodna and Ogrodowa area after 1945 ('Wild West')",
+    "typ": "miejsce",
+    "adres_dzis": "rejon ul. Chłodnej, Ogrodowej i Okopowej (dziś osiedle Mirów i Okopowa)",
+    "adres_historyczny": null,
+    "lat": 52.2368,
+    "lon": 20.98,
+    "lokalizacja": "przyblizona",
+    "okres": "1945–1949",
+    "fakty": [
+      "Po wojnie fragment miasta przy ul. Chłodnej nazywano „Dzikim Zachodem”. (Wikipedia pl: Ulica Chłodna w Warszawie)",
+      "W 1946 r., zgodnie z decyzjami Biura Odbudowy Stolicy, rozebrano większość wypalonych budynków przy Chłodnej, w tym nadające się do remontu, a nawet zachowane obiekty zabytkowe. (Wikipedia pl: Ulica Chłodna w Warszawie)",
+      "Po wojnie fragment przy ul. Ogrodowej również nazywano „Dzikim Zachodem”. Większość uszkodzonych XIX-wiecznych kamienic rozebrano, a relikty zabudowy przemysłowej wyburzono. (Wikipedia pl: Ulica Ogrodowa w Warszawie)",
+      "Na miejscu dawnej zabudowy przy Ogrodowej powstały pięciopiętrowe budynki osiedla Mirów (1949–1960, projekt Tadeusza Kossaka). (Wikipedia pl: Ulica Ogrodowa w Warszawie)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "After 1945 the streets around Chłodna and Ogrodowa were nicknamed the 'Wild West'. In 1946 the Warsaw Reconstruction Office demolished most of the burnt buildings there, including some that could have been repaired, and the Mirów housing estate was built in their place.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "„Dziki Zachód” to określenie nieformalne (z dwóch haseł Wikipedii). Obszar opisany ogólnie, bez numerów domów; współrzędne przybliżone.",
+    "odleglosc_m": 125
+  },
+  {
+    "id": "zniszczenie-okopowa-towarowa-1944",
+    "nazwa": "Zniszczenie zabudowy przy Okopowej, Towarowej i Walicowa (sierpień 1944)",
+    "name_en": "Destruction of buildings on Okopowa, Towarowa and Walicow (August 1944)",
+    "typ": "zdarzenie",
+    "adres_dzis": "rejon ul. Okopowej, Towarowej i Waliców",
+    "adres_historyczny": null,
+    "lat": 52.2345,
+    "lon": 20.981,
+    "lokalizacja": "przyblizona",
+    "okres": "sierpień 1944",
+    "fakty": [
+      "W czasie Rzezi Woli całkowitemu zniszczeniu uległa zabudowa w rejonie ulic Okopowej, Towarowej i Walicowa. (Wikipedia pl: Ulica Chłodna w Warszawie)",
+      "6 sierpnia 1944 r. toczyły się ciężkie walki o barykadę na Chłodnej; ulicą nacierały główne siły niemieckie, przebijające się w kierunku Ogrodu Saskiego i pałacu Brühla. (Wikipedia pl: Ulica Chłodna w Warszawie)",
+      "Po wojnie, na miejscu dawnego Kercelaka, budowa drugich jezdni ulic Okopowej i Towarowej zatarła topografię dawnego placu. (Wikipedia pl: Kercelak)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "In the August 1944 massacres in Wola, the buildings around Okopowa, Towarowa and Walicow streets were almost completely destroyed. Postwar construction of second carriageways later erased the old Kercelak square layout.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Hasło podaje zniszczenie ogólnie, bez liczby budynków. Współrzędne przybliżone (środek trójkąta ulic).",
+    "odleglosc_m": 211
+  },
+  {
+    "id": "trasa-w-z",
+    "nazwa": "Trasa W-Z (przebicie przez Wolę i Leszno, 1947–1949)",
+    "name_en": "East-West Route (Trasa W-Z), built 1947–1949",
+    "typ": "zdarzenie",
+    "adres_dzis": "al. „Solidarności” (od ul. Radzymińskiej do ul. Młynarskiej)",
+    "adres_historyczny": "przebita przez ul. Leszno (Wronia – pl. Bankowy), Zygmuntowską, Wolską i Kercelak",
+    "lat": 52.2361114,
+    "lon": 20.9779286,
+    "lokalizacja": "przyblizona",
+    "okres": "1947–1949",
+    "fakty": [
+      "Trasa W-Z powstawała w latach 1947–1949. Była to pierwsza większa inwestycja komunikacyjna po wojnie w Warszawie; oddano ją 22 lipca 1949 r. (Wikipedia pl: Trasa W-Z w Warszawie)",
+      "Trasę poprowadzono ze wschodu na zachód od ul. Radzymińskiej do zbiegu ulic Wolskiej i Młynarskiej. W jej skład weszły przebudowane ulice: Leszno (odcinek od ul. Wroniej do pl. Bankowego) i Zygmuntowska. (Wikipedia pl: Trasa W-Z w Warszawie)",
+      "Budowa połączyła ul. Wolską z dawną ulicą Leszno na wysokości ul. Młynarskiej. (SARP, H. Radziejowska, „Wola – ulice”)",
+      "Przez Kercelak przeprowadzono Trasę W-Z, a targowisko zlikwidowano w 1947 r. (Wikipedia pl: Kercelak)",
+      "W 1948 r. trasa przecięła ul. Wronią; w tym czasie al. gen. Karola Świerczewskiego, dziś al. „Solidarności”. (Wikipedia pl: Ulica Wronia w Warszawie)"
+    ],
+    "ciekawostki": [
+      "Według SARP główna droga jurydyki Leszno była poprzedniczką Trasy W-Z, dzisiejszej alei „Solidarności”. (SARP, H. Radziejowska, „Wola – ulice”)"
+    ],
+    "summary_en": "The East-West Route (Trasa W-Z) was built in 1947–1949 across the Leszno and Zygmuntowska streets and the Kercelak market, and opened on 22 July 1949. Its western section is today's Solidarity Avenue.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "al. gen. Karola Świerczewskiego (od 1948 wg Wikipedii; od 1991 al. „Solidarności”)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Trasa W-Z w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Trasa_W-Z_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Wronia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+      },
+      {
+        "tytul": "SARP: H. Radziejowska, Wola – ulice (PDF)",
+        "url": "https://sarp.warszawa.pl/wordpress/wp-content/uploads/2015/10/H.-Radziejowska_Wola_ulice.pdf"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Daty zmiany nazwy alei są w hasłach różne: „Aleja Solidarności” podaje 1948 (Świerczewski), hasło Trasy W-Z 1949, a fotopolska – Zygmuntowska do 1954. Współrzędne to punkt z rekordu aleja-solidarnosci (przybliżony przebieg).",
+    "odleglosc_m": 70
+  },
+  {
+    "id": "leszno",
+    "nazwa": "Leszno (jurydyka Leszno)",
+    "name_en": "Leszno (Leszno jurisdiction)",
+    "typ": "ulica",
+    "adres_dzis": "ul. Leszno (odcinek przy al. „Solidarności”, w większości przebudowany w ramach Trasy W-Z)",
+    "adres_historyczny": "Leszno (główna ulica jurydyki Leszno, od Żelaznej do pl. Bankowego)",
+    "lat": 52.2380995,
+    "lon": 20.9786879,
+    "lokalizacja": "przyblizona",
+    "okres": "1648–1949 (dawny przebieg); dziś ul. Leszno",
+    "fakty": [
+      "Jurydykę Leszno założył 8 stycznia 1648 r. podskarbi wielki koronny Bogusław Leszczyński wraz ze stryjem Janem Leszczyńskim. Główną ulicą był Leszno, który ciągnął się od obecnej ul. Żelaznej do placu Bankowego (wg hasła: do gen. Andersa). (Wikipedia pl: Leszno (jurydyka))",
+      "Leszczyńscy znieśli stary trakt w kierunku Sochaczewa, będący przedłużeniem ul. Długiej, i wytyczyli nową ulicę ok. 90 m na południe – późniejszą ulicę Leszno. (Wikipedia pl: Leszno (jurydyka))",
+      "Ratusz jurydyki znajdował się przy ul. Leszno 29. (Wikipedia pl: Leszno (jurydyka))",
+      "W 1949 r. część dawnej ul. Leszno weszła w przebieg Trasy W-Z. (Wikipedia pl: Trasa W-Z w Warszawie)"
+    ],
+    "ciekawostki": [
+      "Jurydyka była zamożna, zamieszkana głównie przez ludność ewangelicką pochodzącą z Leszna; w latach 1682–1732 powstał tu klasztor karmelitów trzewiczkowych. (Wikipedia pl: Leszno (jurydyka))"
+    ],
+    "summary_en": "Leszno was the main street of the Leszno jurisdiction, a private town founded in 1648 by the Leszczyński family. Its eastern stretch was rebuilt into the East-West Route in 1947–1949, which took over the old road alignment.",
+    "ludzie": [
+      {
+        "kto": "Bogusław Leszczyński",
+        "rola": "założyciel jurydyki Leszno (1648)",
+        "wiki": "https://pl.wikipedia.org/wiki/Bogus%C5%82aw_Leszczy%C5%84ski"
+      }
+    ],
+    "dawne_nazwy": [
+      "Leszno (ul. Leszno w jurydyce, do 1949 w przebiegu)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Leszno (jurydyka)",
+        "url": "https://pl.wikipedia.org/wiki/Leszno_(jurydyka)"
+      },
+      {
+        "tytul": "Wikipedia: Trasa W-Z w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Trasa_W-Z_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica Rymarska (dziś nieistniejąca), przy której stała siedziba Leszczyńskich (późniejszy pałac Komisji Rządowej Przychodów i Skarbu), leży poza 400 m – pominięta. Współrzędne przybliżone (środek odcinka przy Solidarności).",
+    "odleglosc_m": 245
+  },
+  {
+    "id": "osiedle-czyste",
+    "nazwa": "Czyste (dawna wieś i osada, dziś obszar MSI na Woli)",
+    "name_en": "Czyste (former village, now a Warsaw Wola district area)",
+    "typ": "miejsce",
+    "adres_dzis": "obszar MSI Czyste (między al. „Solidarności”, ul. Wolską, Towarową i linią kolejową)",
+    "adres_historyczny": "wieś Czyste (gmina Czyste)",
+    "lat": 52.2352,
+    "lon": 20.9795,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w. – 1916 (włączenie do Warszawy)",
+    "fakty": [
+      "Folwark Czyste istniał już w XVIII w. na terenach należących do Karola Schultza. (Fotopolska: Wola – Czyste)",
+      "W 1827 r. wieś Czyste liczyła 16 domostw i 223 mieszkańców. (Wikipedia pl: Czyste (Warszawa))",
+      "Pod koniec XIX w. miejscowość liczyła ok. 8 tys. mieszkańców; powstał tu szpital dla wyznania mojżeszowego i gazownia miejska. (Fotopolska: Wola – Czyste)",
+      "Od 1 kwietnia 1916 r. gmina Czyste została włączona w granice Warszawy na mocy rozporządzenia gen.-gub. Hansa Hartwiga von Beseler z 8 kwietnia 1916 r. (Wikipedia pl: Czyste (Warszawa))",
+      "W 1927 r. przez osadę wzdłuż ul. Szczęśliwickiej przejechały wagoniki Elektrycznej Kolei Dojazdowej. (Fotopolska: Wola – Czyste)"
+    ],
+    "ciekawostki": [
+      "W latach 30. XX w. nazwa „Ochota” zyskała większe znaczenie niż „Czyste”. (Fotopolska: Wola – Czyste)"
+    ],
+    "summary_en": "Czyste was a village and later a suburb that joined Warsaw in 1916. Its old farm dated back to the 18th century, and its Jewish hospital bordered the Kercelak market.",
+    "ludzie": [
+      {
+        "kto": "Karol Schultz",
+        "rola": "właściciel terenów na Woli, z których powstał m.in. folwark Czyste (XVIII w.)",
+        "wiki": "https://pl.wikipedia.org/wiki/Karol_Schultz"
+      }
+    ],
+    "dawne_nazwy": [
+      "Czyste (wieś, gmina)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Czyste (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Czyste_(Warszawa)"
+      },
+      {
+        "tytul": "Fotopolska: Wola – Czyste",
+        "url": "https://fotopolska.eu/Warszawa/d2526,Wola_-_Czyste.html"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Granice MSI są dzisiejsze, nie przedwojenne. Szpital na Czystem (wg hasła Kercelak sąsiadował z targowiskiem od zachodu) – nie ustalono jego losów, nie utworzono osobnego rekordu. Współrzędne z rekordu osiedle-czyste.",
+    "odleglosc_m": 88
+  },
+  {
+    "id": "osiedle-mirow",
+    "nazwa": "Mirów (przedwojenna dzielnica i osiedle z lat 1949–1960)",
+    "name_en": "Mirów (prewar quarter and 1949–1960 housing estate)",
+    "typ": "miejsce",
+    "adres_dzis": "osiedle Mirów (między al. „Solidarności”, Orlą, Elektoralną, Chłodną i Żelazną)",
+    "adres_historyczny": "jurydyka Wielopole (Mirów)",
+    "lat": 52.2372,
+    "lon": 20.984,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939 – dziś",
+    "fakty": [
+      "Przed 1939 r. obszar Mirowa był w dużym stopniu zamieszkały przez ludność żydowską. Od listopada 1940 r. do sierpnia 1942 r. w większości znajdował się w granicach getta. (Wikipedia pl: Mirów (Warszawa))",
+      "Większość zabudowy została zniszczona w czasie II wojny światowej. W latach 50. XX w. przez Mirów przebito al. Juliana Marchlewskiego (dziś al. Jana Pawła II). (Wikipedia pl: Mirów (Warszawa))",
+      "W latach 1949–1960 zbudowano osiedle Mirów wg projektu Tadeusza Kossaka z zespołem, położone między al. „Solidarności”, Orlą, Elektoralną, Chłodną i Żelazną. (Wikipedia pl: Mirów (Warszawa))"
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od Wilhelma Miera, dowódcy Regimentu Gwardii Konnej Koronnej, i od Koszar Mirowskich (1730–1732). (Wikipedia pl: Mirów (Warszawa))"
+    ],
+    "summary_en": "Mirów was a largely Jewish quarter before 1939 that lay mostly inside the Warsaw ghetto. Most of it was destroyed in the war, and in 1949–1960 it was rebuilt as a housing estate designed by Tadeusz Kossak.",
+    "ludzie": [
+      {
+        "kto": "Tadeusz Kossak",
+        "rola": "projektant osiedla Mirów (1949–1960)",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Kossak"
+      }
+    ],
+    "dawne_nazwy": [
+      "Wielopole (jurydyka)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Mirów (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Mir%C3%B3w_(Warszawa)"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne przybliżone (wschodnia część osiedla przy Chłodnej). Hasło nie podaje liczby ani nazw przedwojennych ulic Mirowa (np. Dzika, Stawki, Gęsta – nie potwierdzono).",
+    "odleglosc_m": 376
+  },
+  {
+    "id": "koszary-mirowskie",
+    "nazwa": "Koszary Mirowskie (Koszary Gwardii Konnej Koronnej)",
+    "name_en": "Mirowskie Barracks (Crown Horse Guards barracks)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Chłodna (przy Chłodnej 52 wg położenia OSM; obiekt użytkowany przez PSP)",
+    "adres_historyczny": "Koszary Gwardii Konnej Koronnej, zwane Koszarami Mirowskimi lub Wielopolskimi",
+    "lat": 52.2366,
+    "lon": 20.9841,
+    "lokalizacja": "przyblizona",
+    "okres": "1730–dziś",
+    "fakty": [
+      "Koszary wzniesiono w latach 1730–1732 na terenie jurydyki Wielopole wg projektu Joachima Daniela Jaucha, jako element oprawy Osi Saskiej. Nazwa pochodzi od Wilhelma Miera. (Wikipedia pl: Koszary Mirowskie)",
+      "W 1851 r., po przebudowie Józefa Lessla, w zachodnich budynkach koszar umieszczono IV Oddział Warszawskiej Straży Ogniowej i wzniesiono wieżę obserwacyjną (czatownię). (Wikipedia pl: Koszary Mirowskie)",
+      "W 1898 r. rozebrano dwie pary budynków od strony wschodniej, a na ich miejscu w latach 1899–1902 wzniesiono Hale Mirowskie. (Wikipedia pl: Koszary Mirowskie; Wikipedia pl: Ulica Chłodna w Warszawie)",
+      "W 1944 r., w czasie i po powstaniu warszawskim, budynki koszar zostały spalone. Po wojnie rozebrano budynek południowy; północny odbudowano w latach 1948–1950 wg projektu Władysława Netto, a wieżę obserwacyjną rozebrano. (Wikipedia pl: Koszary Mirowskie)",
+      "Obiekt jest nadal użytkowany przez Państwową Straż Pożarną (Jednostka Ratowniczo-Gaśnicza nr 4). (Wikipedia pl: Koszary Mirowskie)"
+    ],
+    "ciekawostki": [
+      "Do nazwy koszar nawiązują nazwy hal Mirowskich i parku Mirowskiego. (Wikipedia pl: Koszary Mirowskie)"
+    ],
+    "summary_en": "The Mirów barracks were built in 1730–1732 for the Crown Horse Guards and became part of the Saxon Axis. Part of the complex was demolished in 1898 for the Mirów Market Hall; the rest burned in 1944, and only the north building survives, used by the fire service.",
+    "ludzie": [
+      {
+        "kto": "Joachim Daniel Jauch",
+        "rola": "projektant koszar (1730–1732)",
+        "wiki": "https://pl.wikipedia.org/wiki/Joachim_Daniel_Jauch"
+      },
+      {
+        "kto": "Władysław Netto",
+        "rola": "projektant odbudowy północnego budynku (1948–1950)",
+        "wiki": "https://pl.wikipedia.org/wiki/W%C5%82adys%C5%82aw_Netto"
+      }
+    ],
+    "dawne_nazwy": [
+      "Koszary Wielopolskie"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Koszary Mirowskie",
+        "url": "https://pl.wikipedia.org/wiki/Koszary_Mirowskie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne przybliżone: wg położenia Chłodnej 52 w OSM, nie potwierdzone na planie. Odległość bliska granicy 400 m. Miejsca rozbiórek z 1898 r. (wschodnie pary) i obecnego budynku PSP nie zostały zweryfikowane na mapie.",
+    "odleglosc_m": 363
+  }
+]

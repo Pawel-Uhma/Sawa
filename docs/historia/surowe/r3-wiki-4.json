@@ -1,0 +1,700 @@
+{
+  "rekordy": [
+    {
+      "id": "elektrownia-tramwajowa-muzeum-powstania",
+      "nazwa": "Elektrownia Tramwajowa (dziś Muzeum Powstania Warszawskiego)",
+      "name_en": "Tram power station (today Warsaw Rising Museum)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Grzybowska 79 (główne wejście od ul. Przyokopowej)",
+      "adres_historyczny": "ul. Przyokopowa 28",
+      "lat": 52.232222,
+      "lon": 20.980833,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 429,
+      "okres": "1904–1908 (elektrownia); od 2004 Muzeum Powstania Warszawskiego",
+      "fakty": [
+        "Elektrownię Tramwajową wzniesiono w latach 1904–1908. W 1917 dobudowano kotłownię, a rozbudowa gmachu głównego trwała do 1923 roku.",
+        "Działania wojenne we wrześniu 1939 roku poważnie uszkodziły budynek elektrowni.",
+        "1 sierpnia 1944 grupa żołnierzy „Kedywu” odparła ataki oddziałów niemieckiej żandarmerii i Wehrmachtu. Pracownicy elektrowni trwali na posterunku do 6 sierpnia, kiedy wkroczyli Niemcy i rozstrzelali załogę.",
+        "Po upadku powstania Niemcy zbombardowali teren elektrowni, a ocalałe mury wysadzili.",
+        "Po wojnie uznano, że elektrownia powinna zostać przekształcona w ciepłownię, i tak się stało. W latach 70. ceglaną fasadę pokrywał szary tynk, tzw. baranek.",
+        "W 2004 roku, dzięki pracy konserwatorów zaangażowanych przez Muzeum, budynek odzyskał dawny wygląd.",
+        "Decyzją prezydenta Warszawy Lecha Kaczyńskiego budynki przekazano na siedzibę Muzeum Powstania Warszawskiego. Muzeum otwarto 31 lipca 2004 roku, dzień przed 60. rocznicą wybuchu powstania.",
+        "Na antresoli muzeum znajduje się przeszklona winda, w której odtwarzana jest piosenka Krystyny Krahelskiej „Hej, chłopcy, bagnet na broń”."
+      ],
+      "ciekawostki": [
+        "Bogusław Kornecki opracował metodę czyszczenia ceglanych murów z cementowego tynku przez podgrzewanie go palnikiem. W 2006 roku odebrał za nią złoty medal na 34. Międzynarodowej Wystawie Wynalazczości w Genewie.",
+        "W dawnej hali kotłów elektrowni, Sali pod Liberatorem, stoi replika samolotu Consolidated B-24 Liberator w skali 1:1."
+      ],
+      "summary_en": "The tram power station on Przyokopowa was built in 1904–1908. It was damaged in 1939 and blown up by the Germans after the 1944 Uprising. Since 2004 it has housed the Warsaw Rising Museum.",
+      "ludzie": [
+        {"kto": "Lech Kaczyński", "rola": "prezydent Warszawy, który przekazał budynki na siedzibę muzeum", "wiki": null},
+        {"kto": "Jan Ołdakowski", "rola": "dyrektor muzeum od jego powstania w 2004 roku", "wiki": null},
+        {"kto": "Bogusław Kornecki", "rola": "wynalazca metody czyszczenia ceglanych murów przy konserwacji budynku", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Muzeum_Powstania_Warszawskiego_2023.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Muzeum Powstania Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Powstania_Warszawskiego"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord elektrownia-tramwajowa-muzeum-powstania (scalić). Artykuł o MPW podaje 1904–1908 dla budowy elektrowni, a artykuł o ul. Przyokopowej 1905–1909. Przyjęto daty z artykułu o MPW. Schron Ringstand 58c i tablica Lecha Kaczyńskiego mają osobne rekordy."
+    },
+    {
+      "id": "norblin-zelazna-51",
+      "nazwa": "Fabryka Norblin, Bracia Buch i T. Werner (ul. Żelazna 51)",
+      "name_en": "Norblin, Bracia Buch & T. Werner metal factory (Żelazna 51)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Żelazna / ul. Prosta (kompleks Fabryka Norblina)",
+      "adres_historyczny": "ul. Żelazna 51 (w 1893 r.; wcześniej i później także Żelazna 49/53)",
+      "lat": 52.232058,
+      "lon": 20.990594,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 903,
+      "okres": "1820–1982 (zakład); 2017–2021 (kompleks Fabryka Norblina)",
+      "fakty": [
+        "W 1820 roku Aleksander Jan Konstanty Norblin wraz z V. Zierem założył zakład brązowniczy „Norblin i Spółka”. W 1834 roku przeniesiono go na ul. Chłodną.",
+        "W 1886 roku Ludwik Norblin przeniósł zakłady z ul. Chłodnej na tereny przy ul. Żelaznej.",
+        "W 1893 roku powstało Towarzystwo Akcyjne Fabryk Metalowych pod firmą „Norblin, Bracia Buch i T. Werner” z siedzibą przy ul. Żelaznej 51. Kapitał zakładowy wynosił 1,5 mln rubli.",
+        "W 1893 roku zatrudniano 400 robotników, a wartość produkcji szacowano na 1,2 mln rubli.",
+        "W 1905 roku komitet rewolucyjny w fabryce domagał się m.in. zniesienia pracy akordowej.",
+        "W 1914 roku zatrudnienie wynosiło 600 osób.",
+        "Fabryka ucierpiała podczas obrony Warszawy we wrześniu 1939 roku oraz w 1944 roku po powstaniu warszawskim.",
+        "Prowizorycznie odbudowana fabryka wznowiła produkcję w 1946 roku. W 1948 roku została znacjonalizowana i działała jako Walcownia Metali „Warszawa”.",
+        "W 1982 roku na terenie dawnego zakładu rozpoczęły działalność Muzeum Przemysłu i Muzeum Drukarstwa. W tym roku zorganizowano wystawę „Warszawa walczy − 63 dni Powstania Warszawskiego”.",
+        "W 1991 roku przedsiębiorstwo zmieniło nazwę na Norblin S.A. Na początku XXI wieku zbankrutowało, a teren przy ul. Żelaznej został sprzedany.",
+        "Budowa kompleksu Fabryka Norblina rozpoczęła się w 2017 roku, a zakończyła we wrześniu 2021 roku. Odrestaurowano 10 pofabrycznych budynków wpisanych do rejestru zabytków."
+      ],
+      "ciekawostki": [
+        "W zakładzie wykonano statuę Mikołaja Kopernika przed Polską Akademią Nauk, wg projektu Bertela Thorvaldsena.",
+        "W 1896 roku norblinowskie wyroby platerowane wyróżniono najwyższym rosyjskim odznaczeniem: prawem wybijania herbu cesarskiego, dwugłowego orła.",
+        "W maju 2010 roku we wnętrzach fabryki kręcono ujęcia do teledysku „Uprising” zespołu Sabaton."
+      ],
+      "summary_en": "Norblin, Bracia Buch & T. Werner was a Warsaw metal works founded in 1820. It was damaged in 1939 and 1944, nationalised in 1948 and sold after bankruptcy in the early 2000s. The 2017–2021 redevelopment restored 10 listed buildings.",
+      "ludzie": [
+        {"kto": "Ludwik Norblin (1836–1914)", "rola": "współzałożyciel spółki z 1893 roku, właściciel większości akcji", "wiki": null},
+        {"kto": "Teodor Werner", "rola": "wspólnik, złotnik, współwłaściciel spółki z 1893 roku", "wiki": null},
+        {"kto": "Stanisław Ignacy Norblin (1859–1920)", "rola": "pierwszy dyrektor naczelny spółki z 1893 roku", "wiki": null},
+        {"kto": "Stefan Przanowski", "rola": "kierował fabryką w II Rzeczypospolitej", "wiki": null}
+      ],
+      "dawne_nazwy": [
+        "Towarzystwo Akcyjne Fabryk Metalowych „Norblin, Bracia Buch i T. Werner” (od 1893)",
+        "Walcownia Metali „Warszawa” (po 1948)",
+        "Norblin S.A. (od 1991)"
+      ],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fabryka_Norblin%2C_Bracia_Buch_i_T._Werner_1890.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Norblin, Bracia Buch i T. Werner", "url": "https://pl.wikipedia.org/wiki/Norblin,_Bracia_Buch_i_T._Werner"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł nie podaje dzisiejszego numeru porządkowego budynków. Współrzędne z pliku artykułu. Teren kompleksu leży przy poszerzonej ul. Prostej (2014)."
+    },
+    {
+      "id": "zaklady-radiowe-kasprzaka",
+      "nazwa": "Zakłady Radiowe im. Marcina Kasprzaka (ul. Kasprzaka 18/20)",
+      "name_en": "Marcin Kasprzak Radio Works (Kasprzaka 18/20)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Marcina Kasprzaka 18/20",
+      "adres_historyczny": null,
+      "lat": 52.229278,
+      "lon": 20.972083,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 870,
+      "okres": "1949–1999",
+      "fakty": [
+        "Zakład powstał w latach 1949–1951 między ulicami: Marcina Kasprzaka, Karolkową i Skierniewicką.",
+        "W lipcu 1951 roku przedsiębiorstwo rozpoczęło produkcję radioodbiorników. Początkowo produkowano na licencji szwedzkiej odbiornik Aga oraz odbiornik Syrena.",
+        "W 1957 roku ZRK jako pierwszy zakład w Polsce uruchomił produkcję odbiorników turystycznych (lampowa Szarotka).",
+        "W 1958 roku ruszyła produkcja magnetofonów (Melodia), a w 1959 roku odbiorników samochodowych (Żerań).",
+        "W zespole budynków fabryki, zaprojektowanych przez J. Krupskiego, znajdowało się m.in. kino „Mazowsze”, hotel robotniczy, biblioteka, sala klubowa i żłobek.",
+        "Pod koniec lat 80. XX wieku do produkcji wszedł pierwszy polski walkman PS101 Kajtek.",
+        "25 lipca 1994 roku sąd gospodarczy w Warszawie ogłosił upadłość Zakładów Kasprzaka. Postępowanie upadłościowe zakończono postanowieniem z 7 października 1999 roku.",
+        "Syndyk sprzedał na rzecz Kredyt Banku prawo użytkowania wieczystego gruntu przy zbiegu ulic Karolkowej i Kasprzaka oraz prawo własności budynków na tym gruncie.",
+        "Zakład został zlikwidowany pod koniec lat 90. XX wieku; przebudowane budynki pełnią funkcje biurowe."
+      ],
+      "ciekawostki": [
+        "ZRK były pionierem w produkcji krajowych materiałów ferrytowych. Z ich inicjatywy powstały Zakłady Materiałów Magnetycznych Polfer."
+      ],
+      "summary_en": "The Marcin Kasprzak Radio Works was a state electronics plant on Kasprzaka Street in Wola, operating 1949–1999. It made radios, tape recorders and VCRs, and went bankrupt in 1994.",
+      "ludzie": [
+        {"kto": "J. Krupski", "rola": "projektant zespołu budynków fabryki", "wiki": null},
+        {"kto": "Marek Łotocki", "rola": "ostatni dyrektor naczelny ZRK", "wiki": null},
+        {"kto": "Tomasz Palaszek", "rola": "syndyk masy upadłościowej ZRK", "wiki": null}
+      ],
+      "dawne_nazwy": ["Przedsiębiorstwo Państwowe Zakłady Radiowe im. Marcina Kasprzaka (ZRK)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Zak%C5%82ady_Radiowe_im%2C_Kasprzaka_ok._1975.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Zakłady Radiowe im. Marcina Kasprzaka", "url": "https://pl.wikipedia.org/wiki/Zak%C5%82ady_Radiowe_im._Marcina_Kasprzaka"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł podaje, że syndyk sprzedał działkę za 17,5 mln PLN (zapis w starych złotych w tekście jest niespójny, więc nie wpisano kwoty)."
+    },
+    {
+      "id": "gesiowka",
+      "nazwa": "Gęsiówka (dawne więzienie i obóz, ul. Gęsia / Anielewicza)",
+      "name_en": "Gęsiówka (former prison and camp, Gęsia Street)",
+      "typ": "nieistniejacy-budynek",
+      "adres_dzis": "ul. Anielewicza (tablica na budynku nr 34)",
+      "adres_historyczny": "ul. Gęsia",
+      "lat": 52.244639,
+      "lon": 20.978939,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 971,
+      "okres": "1939–1956 (więzienie i obóz); zburzone w latach 60. XX wieku",
+      "fakty": [
+        "Przed II wojną światową Gęsiówka była wojskowym więzieniem Wojska Polskiego przy ul. Gęsiej (dziś Anielewicza), w pobliżu skrzyżowania z ul. Okopową i cmentarza żydowskiego na Okopowej.",
+        "Od 1939 roku, po okupacji niemieckiej, była obozem reedukacyjnym niemieckiej policji bezpieczeństwa (Arbeitserziehungslager der Sicherheitspolizei Warschau).",
+        "W 1943 roku przekształcono ją w obóz koncentracyjny, głównie dla Żydów z innych krajów niż Polska, zwłaszcza z Grecji i Węgier.",
+        "Przez obóz przeszło szacunkowo 8000–9000 więźniów; 4000–5000 z nich zginęło w obozie, podczas marszu śmierci, w powstaniu i w ukryciu po nim.",
+        "5 sierpnia 1944 roku, na początku powstania warszawskiego, batalion „Zośka” Grupy Radosław zaatakował obóz, który Niemcy likwidowali. W półtoragodzinnej walce zginęła lub dostała się do niewoli większość strażników SD.",
+        "Z niewoli wyzwolono 348 zdolnych do pracy więźniów żydowskich.",
+        "W styczniu 1945 roku NKWD używało Gęsiówki do więzienia członków Armii Krajowej. Polska służba bezpieczeństwa przejęła administrację obiektu jeszcze w tym samym roku i prowadziła go jako więzienie i obóz pracy do 1956 roku.",
+        "Gęsiówkę zburzono w latach 60. XX wieku. Jedynym widocznym śladem jest tablica na ścianie budynku przy ul. Anielewicza 34, upamiętniająca wyzwolenie obozu w 1944 roku.",
+        "Pomnik odsłonięto w 1994 roku, w 50. rocznicę powstania warszawskiego. Napisy są po polsku, hebrajsku i angielsku.",
+        "Teren dawnej Gęsiówki zajmuje obecnie Muzeum Historii Żydów Polskich POLIN."
+      ],
+      "ciekawostki": [
+        "Czołg Panther „Magda”, jeden z dwóch zdobytych przez powstańców 2 sierpnia 1944 roku, wsparł atak na obóz ogniem z armaty.",
+        "Batalion „Zośka” stracił w powstaniu 70% swoich członków."
+      ],
+      "summary_en": "Gęsiówka was a Polish military prison on Gęsia Street, turned into a Nazi concentration camp in 1943. Zośka battalion freed 348 prisoners on 5 August 1944. Later it was a Stalinist prison until 1956. It was demolished in the 1960s; the site is now the POLIN Museum.",
+      "ludzie": [
+        {"kto": "Ryszard Białous", "rola": "prowadził atak batalionu „Zośka” na obóz 5 sierpnia 1944", "wiki": null},
+        {"kto": "Eugeniusz Stasiecki", "rola": "prowadził atak batalionu „Zośka” na obóz 5 sierpnia 1944", "wiki": null},
+        {"kto": "Wacław Micuta", "rola": "dowódca plutonu pancernego batalionu „Zośka”; w 1994 roku mówił podczas odsłonięcia tablicy", "wiki": null}
+      ],
+      "dawne_nazwy": ["ul. Gęsia (dziś Anielewicza)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Jewish_prisones_of_KZGesiowka_liberated_by_Polish_Soldiers_of_Home_Army_Warsaw1944.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Gęsiówka", "url": "https://en.wikipedia.org/wiki/G%C4%99si%C3%B3wka"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł angielskojęzyczny. Lokalizacja przybliżona: obiekt zburzono, a współrzędne z artykułu wskazują teren przy ul. Anielewicza. Tablica przy Anielewicza 34."
+    },
+    {
+      "id": "kercelak",
+      "nazwa": "Kercelak (plac Kercelego, rondo Kercelak)",
+      "name_en": "Kercelak market square",
+      "typ": "miejsce",
+      "adres_dzis": "rondo Kercelak (skrzyżowanie ul. Okopowej i al. Solidarności)",
+      "adres_historyczny": "plac Kercelego",
+      "lat": 52.237278,
+      "lon": 20.980028,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 171,
+      "okres": "1867–1947 (targowisko)",
+      "fakty": [
+        "Targowisko na placu Kercelego powstało w 1867 roku. Pierwotnie miało powierzchnię 1,5 ha i handlowano na nim paszą.",
+        "Nazwa pochodzi od Józefa Kercelego, właściciela kilku nieruchomości w tym rejonie Woli, który ofiarował teren miastu pod targ.",
+        "W 1926 roku na placu ukończono budowę niewielkiej hali targowej w kształcie litery „L”.",
+        "Targowisko ucierpiało w obronie Warszawy we wrześniu 1939 roku. W październiku 1939 roku działało na nim 113 punktów sprzedaży.",
+        "2 września 1942 roku podczas jednego z radzieckich nalotów na Warszawę spłonęło ok. 1000 straganów i kramów. Mimo zakazu budowy drewnianych obiektów Kercelak szybko odbudowano.",
+        "W maju 1942 roku na targowisku zatrzymano i przewieziono do obozu przy ul. Skaryszewskiej ok. 3 tys. osób. Wczesną wiosną 1944 roku zabrano ok. tysiąca handlujących i kupujących.",
+        "Podczas powstania 5 sierpnia 1944 roku oddziały gen. Heinza Reinefartha i Oskara Dirlewangera wyparły Polaków z placu. 5 października 1944 roku na placu złożyli broń żołnierze zgrupowania „Chrobry II”.",
+        "Targowisko zlikwidowano w 1947 roku (według niektórych źródeł handel odbywał się tam jeszcze w 1949). Przez Kercelak przeprowadzono wtedy Trasę W-Z.",
+        "W listopadzie 2001 roku Rada m.st. Warszawy nadała nazwę rondo Kercelak skrzyżowaniu ul. Okopowej i al. Solidarności. Planowane rondo o średnicy 80 m nie zostało zrealizowane."
+      ],
+      "ciekawostki": [
+        "Kercelak słynął z bogatego asortymentu i „z okazji”. Kupić na nim można było także przedmioty niewiadomego pochodzenia, głównie z kradzieży.",
+        "Na handlujących okupy wymuszał gang Łukasza Siemiątkowskiego ps. „Tata Tasiemka”. Działały tam też lotne szulernie, grające w trzy karty.",
+        "Wszy odzieżowe kupowali niemieccy żołnierze, bo zawszenie oznaczało przymusową dwutygodniową kwarantannę i opóźnienie powrotu na front.",
+        "Byli z nim związani niektórzy bohaterowie felietonów Stefana Wiecheckiego „Wiecha”."
+      ],
+      "summary_en": "Kercelak was a large market on Plac Kercelego in Wola, open 1867–1947 and famous for its wide range of goods and black-market trade. It was burned in 1942, fought over in 1944 and liquidated in 1947. The junction of Okopowa and Solidarności has been called Rondo Kercelak since 2001.",
+      "ludzie": [
+        {"kto": "Józef Kercelego", "rola": "właściciel nieruchomości, który ofiarował teren miastu pod targ", "wiki": null},
+        {"kto": "Łukasz Siemiątkowski „Tata Tasiemka”", "rola": "szef gangu wymuszającego okupy od handlujących", "wiki": null},
+        {"kto": "Stefan Wiechecki „Wiech”", "rola": "felietonista; niektórzy jego bohaterowie byli związani z Kercelakiem", "wiki": null},
+        {"kto": "Heinz Reinefarth", "rola": "generał; jego oddziały wyparły Polaków z placu 5 sierpnia 1944 roku", "wiki": null},
+        {"kto": "Oskar Dirlewanger", "rola": "dowódca oddziałów, które wyparły Polaków z placu 5 sierpnia 1944 roku", "wiki": null}
+      ],
+      "dawne_nazwy": ["plac Kercelego"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Targowisko_na_placu_Kercelego_w_Warszawie.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Kercelak", "url": "https://pl.wikipedia.org/wiki/Kercelak"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord kercelak (scalić). Fakty o hali targowej z 1926 roku są w tym rekordzie, nie w osobnym. Artykuł podaje, że targowisko zlikwidowano w 1947 roku, a według niektórych źródeł handel trwał do 1949."
+    },
+    {
+      "id": "wronia",
+      "nazwa": "Wronia",
+      "name_en": "Wronia Street",
+      "typ": "ulica",
+      "adres_dzis": "ul. Wronia (dzielnica Wola)",
+      "adres_historyczny": null,
+      "lat": 52.23199,
+      "lon": 20.986083,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 654,
+      "okres": "przed 1770 – dziś",
+      "fakty": [
+        "Ulicę przeprowadzono przed 1770 rokiem; pierwotnie biegła od ul. Pańskiej do ul. Leszno. Nazwę Wronia nadano w 1770 roku.",
+        "W 1846 roku w zakupionych zabudowaniach browaru Schaeffera przy ul. Krochmalnej rozpoczęła działalność spółka Konstantego Schielego, Jana Henryka Klawe i Błażeja Haberbuscha (od 1866 roku pod firmą Haberbusch i Schiele).",
+        "W 1864 roku ulicę wybrukowano.",
+        "W latach 1880–1904 przy ulicy powstały kamienice i niewielkie fabryki. Mieszkali tam głównie robotnicy zatrudnieni w przemyśle na Woli.",
+        "Ulica była terenem akcji bojowych podczas rewolucji 1905 roku.",
+        "W wyniku nalotu Luftwaffe 4 września 1939 roku pod gruzami dwóch zburzonych domów zginęło ok. 30 osób.",
+        "Od listopada 1940 do grudnia 1941 roku na tyłach posesji po parzystej stronie ulicy biegła granica warszawskiego getta. W listopadzie 1941 roku zlikwidowano bramę do getta na rogu ulic Chłodnej i Wroniej.",
+        "Podczas powstania warszawskiego skrzyżowania ulicy z Chłodną, Grzybowską, Łucką, Prostą i Pańską zamknięto barykadami. Najcięższe walki toczyły się 6 sierpnia 1944 roku o barykadę przy Chłodnej.",
+        "W 1948 roku ulicę przecięła trasa W-Z. W latach 1948–1950 powstał tu kompleks Domu Słowa Polskiego.",
+        "W 1983 roku północny odcinek od ul. Żytniej do ul. Leszno przemianowano na skwer kard. Stefana Wyszyńskiego."
+      ],
+      "ciekawostki": [
+        "Po wojnie ten fragment miasta nazywano Dzikim Zachodem. Na początku lat 90. XX wieku przy ulicy stało jeszcze kilka zrujnowanych kamienic i puste place."
+      ],
+      "summary_en": "Wronia is a street in Wola, laid out before 1770 and named in 1770. It was a workers' district, part of the Warsaw Ghetto boundary in 1940–41 and a Uprising battleground in 1944. Its northern stretch is now Skwer Kard. Stefan Wyszyński.",
+      "ludzie": [
+        {"kto": "Konstanty Schiele", "rola": "współzałożyciel spółki z 1846 roku (Haberbusch i Schiele)", "wiki": null},
+        {"kto": "Jan Henryk Klawe", "rola": "współzałożyciel spółki z 1846 roku", "wiki": null},
+        {"kto": "Błażej Haberbusch", "rola": "współzałożyciel spółki z 1846 roku", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [],
+      "zrodla": [
+        {"tytul": "Wikipedia: Ulica Wronia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord wronia (scalić). Artykuł wymienia jako ważniejsze obiekty tablicę Tchorka (nr 45) i Hilton Warsaw City, bez szczegółów. Nie ma ilustracji w pliku."
+    },
+    {
+      "id": "warsaw-trade-tower",
+      "nazwa": "Warsaw Trade Tower (dawniej browar Brzezińskiego przy Chłodnej 51)",
+      "name_en": "Warsaw Trade Tower",
+      "typ": "budynek",
+      "adres_dzis": "ul. Chłodna 51",
+      "adres_historyczny": null,
+      "lat": 52.235278,
+      "lon": 20.9825,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 254,
+      "okres": "1997–1999 (budowa); dziś",
+      "fakty": [
+        "Biurowiec przy ul. Chłodnej 51 zbudowano w latach 1997–1999 przez koreański koncern Daewoo.",
+        "Projekt wykonali Wojciech Hermanowicz, Piotr Majewski i Andrzej Wyszyński.",
+        "W 2002 roku Daewoo sprzedał obiekt amerykańskiej spółce Apollo-Rida. Obecnym właścicielem i zarządcą jest spółka Globalworth.",
+        "Wieżowiec ma 208 m wysokości i 42 kondygnacje naziemne (2 handlowe, 35 biurowych i 5 technicznych). Był najwyższym biurowcem w Warszawie do oddania Varso Tower.",
+        "Fundament sięga 11 m pod ziemię i opiera się na 156 palach.",
+        "W latach 2015–2016 wieżowiec przeszedł gruntowną modernizację: przebudowano lobby, powstała wspólna jadalnia dla najemców, przestrzeń konferencyjno-eventowa na 35. piętrze i strefa relaksu.",
+        "W tym samym czasie obiekt uzyskał certyfikat BREEAM In-Use z oceną 63,1% (poziom Very Good) w kategorii Asset Performance.",
+        "W 2017 roku sokoły wędrowne Franek i Giga przeniosły się z Pałacu Kultury i Nauki na poziom techniczny Warsaw Trade Tower i doczekały się tam trojga młodych.",
+        "Od 2024 roku Warsaw Trade Tower jest szóstym pod względem wysokości budynkiem w Polsce."
+      ],
+      "ciekawostki": [
+        "Iglica WTT to metalowy maszt z anteną przekaźnikową, zaczynający się na wysokości 32. piętra i mający 85 m długości."
+      ],
+      "summary_en": "Warsaw Trade Tower, 208 m tall, stands at Chłodna 51. It was built in 1997–1999 by Daewoo, was Warsaw's tallest office building before Varso Tower, and was modernised in 2015–2016.",
+      "ludzie": [
+        {"kto": "Wojciech Hermanowicz", "rola": "współautor projektu wieżowca", "wiki": null},
+        {"kto": "Piotr Majewski", "rola": "współautor projektu wieżowca", "wiki": null},
+        {"kto": "Andrzej Wyszyński", "rola": "współautor projektu wieżowca", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/56/La_%22Warsaw_Trade_Tower%22.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Warsaw Trade Tower", "url": "https://pl.wikipedia.org/wiki/Warsaw_Trade_Tower"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord warsaw-trade-tower (scalić). Artykuł nie wspomina o browarze Brzezińskiego, więc ten fakt nie pochodzi z tego źródła."
+    },
+    {
+      "id": "kaplica-halpertow",
+      "nazwa": "Kaplica Halpertów (cmentarz ewangelicko-augsburski)",
+      "name_en": "Halpert Chapel (Evangelical-Augsburg Cemetery)",
+      "typ": "swiatynia",
+      "adres_dzis": "ul. Młynarska 54/56/58 (cmentarz ewangelicko-augsburski)",
+      "adres_historyczny": null,
+      "lat": 52.241745,
+      "lon": 20.970815,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 851,
+      "okres": "1833–1835 (budowa); dziś",
+      "fakty": [
+        "Klasycystyczną kaplicę wzniesiono w latach 1833–1835 z fundacji Marii ze Słuckich Halpertowej po śmierci męża Salomona (1832). Miała być kaplicą mauzoleum rodziny.",
+        "Budynek zaprojektował Adolf Schuch, a dekorację rzeźbiarską wykonał Tadeusz Czajkowski.",
+        "Uroczystą konsekrację odbyto 27 marca 1835 roku. Uświetniła ją kantata Józefa Elsnera do słów Henryka Bogumiła Spiessa.",
+        "Nad gzymsem umieszczono napis KAPLICA HALPERTÓW 1834. Na tympanonie tylnej ściany jest trójkąt z okiem opatrzności i sentencja SIT TRANSIT GLORIA MUNDI.",
+        "Oprócz Salomona Halperta w podziemiach kaplicy pochowano m.in. Borysa Halperta i jego siostrę Zofię.",
+        "W latach 60. XIX wieku budynek powiększono od wschodu według projektu Jana Heuricha ojca. Od 1834 roku Heurich pełnił też funkcję cmentarnej kaplicy przedpogrzebowej.",
+        "W czasie II wojny światowej kaplicę spalono. Odbudowano ją bez zmian w wyglądzie zewnętrznym.",
+        "W 1975 roku otrzymała współczesny wystrój wnętrza, w tym gipsową rzeźbę Chrystusa, będącą kopią rzeźby Stanisława Lewandowskiego z 1931 roku.",
+        "Cmentarz ewangelicko-augsburski wpisano do rejestru zabytków w 1965 roku (nr 311). Od 2012 roku kaplica jest ujęta w gminnej ewidencji zabytków (WOL20651)."
+      ],
+      "ciekawostki": [
+        "Kaplica stoi w najstarszej, południowo-zachodniej części nekropolii, frontem do ul. Młynarskiej."
+      ],
+      "summary_en": "The classicist Halpert Chapel was built in 1833–1835 on the Evangelical-Augsburg cemetery at Młynarska Street as a family mausoleum. It was burned in WWII, rebuilt unchanged on the outside and listed as a monument in 1965.",
+      "ludzie": [
+        {"kto": "Maria ze Słuckich Halpertowa", "rola": "fundatorka kaplicy", "wiki": null},
+        {"kto": "Salomon Halpert", "rola": "zmarły w 1832 roku, członek rodziny, pochowany w kaplicy", "wiki": null},
+        {"kto": "Adolf Schuch", "rola": "architekt kaplicy", "wiki": null},
+        {"kto": "Tadeusz Czajkowski", "rola": "autor dekoracji rzeźbiarskiej", "wiki": null},
+        {"kto": "Jan Heurich ojciec", "rola": "autor projektu rozbudowy w latach 60. XIX wieku", "wiki": null},
+        {"kto": "Stanisław Lewandowski", "rola": "autor rzeźby, której kopia stoi w kaplicy", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Kaplica_Halpert%C3%B3w_w_Warszawie_2022.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Kaplica Halpertów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kaplica_Halpert%C3%B3w_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł nie podaje dokładnego adresu poza ul. Młynarską 54/56/58. Rozbudowa z lat 60. XIX w. i funkcja kaplicy przedpogrzebowej od 1834 roku wg artykułu."
+    },
+    {
+      "id": "muzeum-nurkowania",
+      "nazwa": "Muzeum Nurkowania",
+      "name_en": "Museum of Diving",
+      "typ": "miejsce",
+      "adres_dzis": "ul. Grzybowska 88",
+      "adres_historyczny": null,
+      "lat": 52.233056,
+      "lon": 20.981111,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 350,
+      "okres": "1930–1931 (budynek); od 2006 (muzeum)",
+      "fakty": [
+        "Muzeum powstało z inicjatywy Kariny Kowalskiej z Warszawskiego Klubu Płetwonurków.",
+        "Mieści się w siedzibie Klubu, w piwnicy przedwojennego budynku dawnego Laboratorium chemiczno-farmaceutycznego „Asmidar”, wzniesionego w latach 1930–1931.",
+        "Muzeum otwarto 27 lutego 2006 roku. Otwarcie zainaugurowało obchody 50-lecia Warszawskiego Klubu Płetwonurków.",
+        "W 2008 roku brytyjskie Stowarzyszenie Miłośników Historii Nurkowania (The Historical Diving Society) przyznało muzeum nagrodę The Nautiek Award.",
+        "Muzeum gromadzi ok. 800 eksponatów. Większość to dary i przedmioty z prywatnych kolekcji członków i sympatyków Klubu.",
+        "Najstarszym eksponatem jest hełm nurka klasycznego z 1895 roku.",
+        "Wśród zbiorów jest m.in. polski skafander Foka z bezprzewodową łącznością podwodną z lat 70. XX wieku.",
+        "Jest to jedyna tego typu placówka w Polsce i jedna z nielicznych w Europie."
+      ],
+      "ciekawostki": [
+        "Kusza należąca do Leonida Teligi, którą żeglarz zabrał w samotny rejs dookoła świata na jachcie Opty.",
+        "W zbiorach są kości z kręgosłupa wieloryba oraz ząb megalodona."
+      ],
+      "summary_en": "The Museum of Diving, the only museum of its kind in Poland, is in the cellar of a 1930–31 building on Grzybowska Street, the former Asmidar pharmaceutical lab. It opened in 2006 and holds about 800 items.",
+      "ludzie": [
+        {"kto": "Karina Kowalska", "rola": "inicjatorka powstania muzeum", "wiki": null},
+        {"kto": "Leonid Teliga", "rola": "żeglarz, którego kusza jest w zbiorach muzeum", "wiki": null}
+      ],
+      "dawne_nazwy": ["Laboratorium chemiczno-farmaceutyczne „Asmidar” (budynek z lat 1930–1931)"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Museum_of_Diving_in_Warsaw_01.JPG?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Muzeum Nurkowania", "url": "https://pl.wikipedia.org/wiki/Muzeum_Nurkowania"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord muzeum-nurkowania (scalić). Nazwisko w artykule jest w dopełniaczu (Leonida Teligi), w rekordzie w mianowniku."
+    },
+    {
+      "id": "przyokopowa",
+      "nazwa": "Przyokopowa",
+      "name_en": "Przyokopowa Street",
+      "typ": "ulica",
+      "adres_dzis": "ul. Przyokopowa (dzielnica Wola)",
+      "adres_historyczny": null,
+      "lat": 52.230083,
+      "lon": 20.979472,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 648,
+      "okres": "XVIII w. – dziś",
+      "fakty": [
+        "W XVIII wieku była to droga od rogatek Wolskich do Szczęśliwic i Rakowca. Pierwotnie nazywała się Przy Okopach, bo biegła po zachodniej stronie Okopów Lubomirskiego.",
+        "Obecna nazwa jest poświadczona w 1808 roku.",
+        "W 1844 roku ulicę przecięły tory Kolei Warszawsko-Wiedeńskiej. Ok. 1885 roku powstała tu stacja towarowa.",
+        "W latach 1905–1909 przy ulicy wzniesiono Elektrownię Tramwajową (od 2004 roku siedziba Muzeum Powstania Warszawskiego).",
+        "W 1923 roku na działce między ulicami Karolkową, Grzybowską i Przyokopową Polsko-Holenderska Fabryka Lampek Elektrycznych należąca do koncernu Philips rozpoczęła produkcję m.in. żarówek.",
+        "W czasie powstania warszawskiego ulicę przegrodzono dwiema barykadami. Po kapitulacji Niemcy wywieźli sprzęt z fabryki Philipsa, a zabudowania wysadzili w powietrze.",
+        "Po wojnie w miejscu zniszczonej fabryki wzniesiono nowe hale Zakładów Wytwórczych Lamp Elektrycznych im. Róży Luksemburg.",
+        "Po 1945 roku bieg ulicy przerwały zabudowania Warszawskich Zakładów Farmaceutycznych Polfa. Ulica składa się z dwóch niepołączonych odcinków.",
+        "Od 2020 roku odcinek od ul. Hrubieszowskiej do ul. Grzybowskiej jest jednokierunkowy."
+      ],
+      "ciekawostki": [],
+      "summary_en": "Przyokopowa is a street in Wola along the former Okopy Lubomirskiego. It was home to the tram power station (now the Warsaw Rising Museum), a Philips lamp factory from 1923, and was largely destroyed in 1944.",
+      "ludzie": [],
+      "dawne_nazwy": ["Przy Okopach"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/8/80/Ulica_Przyokopowa_w_Warszawie_2016.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Ulica Przyokopowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Przyokopowa_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord przyokopowa (scalić). Daty budowy Elektrowni Tramwajowej: ten artykuł 1905–1909, artykuł o MPW 1904–1908. Fabryka Philipsa: patrz też rekord fabryka-philips-karolkowa."
+    },
+    {
+      "id": "palacyk-michlera",
+      "nazwa": "Pałacyk Michlera (ul. Wolska 40)",
+      "name_en": "Michler's Palace (Wolska 40)",
+      "typ": "nieistniejacy-budynek",
+      "adres_dzis": "ul. Wolska 40 (w pobliżu dawnego położenia; pomnik z 2007)",
+      "adres_historyczny": null,
+      "lat": 52.234556,
+      "lon": 20.970472,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 593,
+      "okres": "koniec XIX w. – 1944",
+      "fakty": [
+        "Pałacyk Michlera (Pałacyk Michla) był kamienicą w stylu eklektycznym przy ul. Wolskiej 40 na Woli. Zbudowano ją pod koniec XIX wieku.",
+        "Nazwa „pałacyk” była potoczna. Budynek wyróżniał się wysoką jakością i dekoracyjnością wśród zwykłej zabudowy.",
+        "Należał do Karola Michlera, kupca, młynarza i przedsiębiorcy. W pobliżu prowadził małą fabrykę makaronu i pieczywa, którą po 1939 roku przejęła niemiecka okupacja.",
+        "4 i 5 sierpnia 1944 roku wokół budynku toczyły się zacięte walki z udziałem batalionu „Parasol”.",
+        "Józef Szczepański, poeta i powstaniec z batalionu „Parasol”, napisał pieśń „Pałacyk Michla”. 4 sierpnia wykonał ją w pobliżu budynku.",
+        "Pieśń wykonał dla powstańców popularny piosenkarz Mieczysław Fogg. Stała się najbardziej znaną piosenką Szczepańskiego.",
+        "Następnego dnia Niemcy zdobyli budynek. Uszkodzony w walkach został wkrótce zburzony.",
+        "W 2007 roku odsłonięto pomnik upamiętniający budynek i walki o niego, w pobliżu dawnego położenia na ul. Wolskiej."
+      ],
+      "ciekawostki": [
+        "Melodia pieśni „Pałacyk Michla” opierała się na wcześniejszej, przedwojennej piosence słowackiego kompozytora Jana Šťastnego."
+      ],
+      "summary_en": "Michler's Palace was a late-19th-century townhouse at Wolska 40, destroyed in the 1944 Uprising. The song 'Pałacyk Michla' by Józef Szczepański was written about the fighting there; a monument was unveiled in 2007.",
+      "ludzie": [
+        {"kto": "Karol Michler", "rola": "właściciel budynku, kupiec, młynarz i przedsiębiorca", "wiki": null},
+        {"kto": "Józef Szczepański", "rola": "poeta i powstaniec z batalionu „Parasol”, autor pieśni „Pałacyk Michla”", "wiki": null},
+        {"kto": "Mieczysław Fogg", "rola": "piosenkarz, który wykonał pieśń dla powstańców", "wiki": null}
+      ],
+      "dawne_nazwy": ["Pałacyk Michla"],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/8/88/POL_Warsaw_bat_parasol_wola3.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Michler's Palace", "url": "https://en.wikipedia.org/wiki/Michler%27s_Palace"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł angielskojęzyczny. Współrzędne z pliku artykułu, budynek zburzono, więc mogą być przybliżone. Artykuł nie podaje dokładnej daty budowy."
+    },
+    {
+      "id": "crown-point",
+      "nazwa": "Crown Point (biurowiec, ul. Prosta 70)",
+      "name_en": "Crown Point office building (Prosta 70)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Prosta 70 (rondo Daszyńskiego, zbieg z ul. Przyokopową i Hrubieszowską)",
+      "adres_historyczny": null,
+      "lat": 52.229931,
+      "lon": 20.979981,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 667,
+      "okres": "2004 – dziś",
+      "fakty": [
+        "Crown Point to jeden z trzech biurowców przy rondzie Daszyńskiego, obok Crown Tower i Crown Square.",
+        "Architektem budynku jest Ludwik Konior. Projekt powstał przy współpracy z polskim biurem Atelier 2 Architekci.",
+        "1 czerwca 2004 roku firma ubezpieczeniowa Commercial Union Polska przeniosła tu swoją główną siedzibę.",
+        "Budynek ma długą bryłę z zaokrąglonym narożnikiem i eliptyczny drewniany dach, pokryty cienką blachą, nad tarasem na ostatniej kondygnacji.",
+        "Piętra 1–6 przeznaczono wyłącznie na biura. Na siódmym piętrze znajduje się antresola i duży taras z widokiem na centrum miasta.",
+        "Główna elewacja jest przeszklona w systemie Pilkington Planar z tzw. żyletkami wykonanymi ze szkła. Mniejsza część elewacji pokryta jest piaskowcem."
+      ],
+      "ciekawostki": [
+        "Bryła budynku przypomina budynek Centrum Jasna przy ul. Jasnej 14/16, także ukończony w 2004 roku."
+      ],
+      "summary_en": "Crown Point is a 2004 office building at Prosta 70 by the Daszyński roundabout in Wola, designed by Ludwik Konior. Commercial Union moved its headquarters there in June 2004.",
+      "ludzie": [
+        {"kto": "Ludwik Konior", "rola": "architekt budynku", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/4/46/Crown_Point_in_Warsaw.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Crown Point (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Crown_Point_(Warszawa)"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Krótki artykuł; brak danych o inwestorze i kosztach. Wpis dodany, bo opisuje architekturę i datę zmiany siedziby firmy w tym budynku."
+    },
+    {
+      "id": "warsaw-unit",
+      "nazwa": "Warsaw Unit (wieżowiec, rondo Daszyńskiego 1)",
+      "name_en": "Warsaw Unit tower (Daszyński Roundabout 1)",
+      "typ": "budynek",
+      "adres_dzis": "rondo Daszyńskiego 1",
+      "adres_historyczny": "ul. Pańska 112 (kamienica zburzona pod budowę)",
+      "lat": 52.23026,
+      "lon": 20.985977,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 790,
+      "okres": "2017–2021 (budowa); dziś",
+      "fakty": [
+        "Biurowiec jest inwestycją spółki Ghelamco. Zaprojektowała go Projekt Polsko-Belgijska Pracownia Architektury.",
+        "Powstał w miejscu zburzonej kamienicy przy ul. Pańskiej 112, na wąskiej działce przy rondzie Daszyńskiego, między ulicami Prostą, Pańską i Wronią.",
+        "Budowa rozpoczęła się w kwietniu 2017 roku i zakończyła w maju 2021 roku.",
+        "Budynek ma 46 kondygnacji, 14 wind, 57 000 m² powierzchni biurowej i 456 miejsc parkingowych.",
+        "W części Warsaw Unit zastosowano elewację typu Dragon Skin („smocza skóra”): fasadę kinetyczną z kilku tysięcy ruchomych płytek, które reagują na podmuchy wiatru. W Polsce zastosowano ją po raz pierwszy.",
+        "Na ostatniej kondygnacji znajduje się taras otoczony szklaną ścianą.",
+        "W 2021 roku relokowano centralę Warty do nowej siedziby w wieżowcu Warsaw Unit."
+      ],
+      "ciekawostki": [
+        "Płytki elewacji tworzą na fasadzie niepowtarzalne obrazy, bo poruszają się od wiatru."
+      ],
+      "summary_en": "Warsaw Unit is a 46-storey office tower on the Daszyński Roundabout, built by Ghelamco in 2017–2021 on the site of a demolished tenement at Pańska 112. Its facade uses kinetic tiles that move in the wind.",
+      "ludzie": [],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/97/Unit_PBPA.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Warsaw Unit", "url": "https://pl.wikipedia.org/wiki/Warsaw_Unit"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Nowy rekord (brak istniejącego). Artykuł nie podaje daty zburzenia kamienicy przy Pańskiej 112."
+    },
+    {
+      "id": "stacja-metra-rondo-daszynskiego",
+      "nazwa": "Stacja metra Rondo Daszyńskiego (linia M2)",
+      "name_en": "Rondo Daszyński metro station (Line M2)",
+      "typ": "miejsce",
+      "adres_dzis": "przy rondzie Daszyńskiego, linia M2",
+      "adres_historyczny": null,
+      "lat": 52.230139,
+      "lon": 20.983333,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 708,
+      "okres": "2015 – dziś",
+      "fakty": [
+        "Stacja w pełni otwarto dla pasażerów 8 marca 2015 roku jako zachodni koniec pierwszego odcinka linii M2, między Rondem Daszyńskiego a Dworcem Wileńskim.",
+        "Zaprojektował ją polski architekt Andrzej M. Chołdzyński. Wykonawcą budowy była firma Metroprojekt.",
+        "Murale na stacji wykonał Wojciech Fangor, artysta Polskiej Szkoły Plakatu.",
+        "Budowę utrudniały niekorzystne warunki hydrologiczne.",
+        "Stacja leży tuż na zachód od ronda Daszyńskiego, nazwanego imieniem Ignacego Daszyńskiego."
+      ],
+      "ciekawostki": [],
+      "summary_en": "Rondo Daszyński is a metro station on the central part of Line M2. It fully opened on 8 March 2015 as the western terminus of the first section. It was designed by Andrzej M. Chołdzyński and has murals by Wojciech Fangor.",
+      "ludzie": [
+        {"kto": "Andrzej M. Chołdzyński", "rola": "architekt stacji", "wiki": null},
+        {"kto": "Wojciech Fangor", "rola": "autor murali na stacji", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/b/b3/C09_W_34.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Rondo Daszyńskiego metro station", "url": "https://en.wikipedia.org/wiki/Rondo_Daszy%C5%84skiego_metro_station"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł angielskojęzyczny i krótki. Nie podaje liczby pasażerów ani innych szczegółów."
+    },
+    {
+      "id": "pomnik-marcina-kasprzaka",
+      "nazwa": "Pomnik Marcina Kasprzaka (ul. Kasprzaka 18/20)",
+      "name_en": "Marcin Kasprzak monument (Kasprzaka 18/20)",
+      "typ": "pomnik",
+      "adres_dzis": "ul. Marcina Kasprzaka 18/20, przed dawnymi Zakładami Radiowymi",
+      "adres_historyczny": null,
+      "lat": 52.229278,
+      "lon": 20.97275,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 847,
+      "okres": "1975 – dziś",
+      "fakty": [
+        "Pomnik upamiętnia działacza ruchu socjalistycznego Marcina Kasprzaka (1860–1905).",
+        "Stoi przy ul. Marcina Kasprzaka 18/20, przed budynkiem dawnych Zakładów Radiowych jego imienia.",
+        "Autorem pomnika jest Edmund Matuszek.",
+        "Pomnik odsłonięto w 1975 roku.",
+        "Ma formę wykonanego z brązu popiersia umieszczonego na granitowym cokole z napisem „Marcin Kasprzak 1860–1905”."
+      ],
+      "ciekawostki": [
+        "Artykuł wymienia inny pomnik Marcina Kasprzaka, w Czołowie."
+      ],
+      "summary_en": "A bronze bust of socialist activist Marcin Kasprzak (1860–1905) on a granite plinth, by Edmund Matuszek, unveiled in 1975 in front of the former Kasprzak Radio Works on Kasprzaka Street.",
+      "ludzie": [
+        {"kto": "Marcin Kasprzak (1860–1905)", "rola": "działacz ruchu socjalistycznego, patron pomnika i zakładów", "wiki": null},
+        {"kto": "Edmund Matuszek", "rola": "autor pomnika", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Pomnik_Marcina_Kasprzaka_w_Warszawie_2021.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Pomnik Marcina Kasprzaka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_Marcina_Kasprzaka_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł podaje jako źródło zewnętrzne warszawskie-mozaiki.pl (2018). Pomnik jest przy tym samym adresie co zakłady (rekord zaklady-radiowe-kasprzaka)."
+    },
+    {
+      "id": "wolska-27-29-palacyk-biernackich",
+      "nazwa": "Pałacyk Biernackich (ul. Wolska 27/29) z tablicą Tchorka",
+      "name_en": "Biernacki Palace (Wolska 27/29)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Wolska 27/29",
+      "adres_historyczny": null,
+      "lat": 52.234722,
+      "lon": 20.974722,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 313,
+      "okres": "1860 – dziś",
+      "fakty": [
+        "Pałacyk wzniesiono w 1860 roku według projektu architekta Józefa Orłowskiego dla Adama Biernackiego, w miejscu ogrodu należącego do Karola Schultza.",
+        "Jest to dwukondygnacyjna budowla na planie prostokąta, w stylu klasycystycznym, z dwiema oficynami.",
+        "Od 1941 roku pałacyk należy do karmelitanek bosych, przybyłych do Warszawy ze Lwowa.",
+        "Na ścianie budynku znajduje się tablica pamiątkowa Tchorka, upamiętniająca 3200 ofiar Rzezi Woli."
+      ],
+      "ciekawostki": [],
+      "summary_en": "Biernacki Palace at Wolska 27/29 is a two-storey classicist house built in 1860 by Józef Orłowski for Adam Biernacki. Since 1941 it has belonged to the Discalced Carmelite nuns from Lwów. A memorial plaque commemorates 3,200 victims of the Wola massacre.",
+      "ludzie": [
+        {"kto": "Józef Orłowski", "rola": "architekt pałacyku", "wiki": null},
+        {"kto": "Adam Biernacki", "rola": "inwestor, dla którego wzniesiono pałacyk", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Warszawa-palacyk_Biernackich.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Pałacyk Biernackich", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_Biernackich"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Istniejący rekord wolska-27-29-palacyk-biernackich (scalić). Klasztor karmelitanek: osobny rekord klasztor-karmelitanek-bosych-wolska-27-29."
+    },
+    {
+      "id": "synagoga-icchaka-altera",
+      "nazwa": "Synagoga Icchaka Altera (ul. Żelazna 57)",
+      "name_en": "Icchak Alter Synagogue (Żelazna 57)",
+      "typ": "swiatynia",
+      "adres_dzis": "ul. Żelazna 57 (zamknięty dziedziniec kompleksu, niewidoczny z ulicy)",
+      "adres_historyczny": "ul. Żelazna 57 (nr hip. 1145 b)",
+      "lat": 52.233547,
+      "lon": 20.990958,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 861,
+      "okres": "1864–1940 (synagoga); pozostałości dziś",
+      "fakty": [
+        "Synagogę założono w 1864 roku w budynku Żydowskiego Domu Studiów Religijnych i Modlitwy przy ul. Żelaznej 57.",
+        "W tym budynku działała również jesziwa oraz cheder, założone przez cadyka z Góry Kalwarii, Icchaka Meira Altera, prawdopodobnie ok. 1859 roku.",
+        "Podczas II wojny światowej Niemcy zdewastowali synagogę, a następnie urządzili w niej magazyn drewna.",
+        "Po 1946 roku w budynku byłej synagogi funkcjonował warsztat mechaniczny.",
+        "Fragment budynku, w którym znajdowała się synagoga, został zabezpieczony i nakryty szklanym dachem. Obiekt leży na zamkniętym dziedzińcu kompleksu mieszkalno-biurowego pod nr 57 i nie jest widoczny z ulicy.",
+        "W 1993 roku obiekt wpisano do rejestru zabytków."
+      ],
+      "ciekawostki": [],
+      "summary_en": "The Icchak Alter synagogue operated at Żelazna 57 from 1864 until 1940. It was damaged by the Germans during WWII. Its preserved fragment now sits under a glass roof in a closed courtyard and has been a listed monument since 1993.",
+      "ludzie": [
+        {"kto": "Icchak Meir Alter", "rola": "cadyk z Góry Kalwarii, który założył jesziwę i cheder w budynku", "wiki": null}
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {"url_pliku": "https://upload.wikimedia.org/wikipedia/commons/6/68/Synagoga_Icchaka_Altera_w_Warszawie_01.jpg?utm_source=pl.wikipedia.org&utm_campaign=api&utm_content=original", "opis": "ilustracja artykułu", "zrodlo": "Wikipedia/Commons", "licencja": "sprawdzić na Commons"}
+      ],
+      "zrodla": [
+        {"tytul": "Wikipedia: Synagoga Icchaka Altera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Icchaka_Altera_w_Warszawie"}
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł źródłowy podaje jako źródło wirtualny sztetl (sztetl.org.pl). Lokalizacja: w zamkniętym dziedzińcu, współrzędne z pliku artykułu."
+    }
+  ],
+  "pominiete": [
+    {"title": "Ruch (przedsiębiorstwo)", "powod": "firma dystrybucji prasy; artykuł nie opisuje historii żadnego miejsca w promieniu 1 km"},
+    {"title": "Klub Miłośników Komunikacji Miejskiej w Warszawie", "powod": "stowarzyszenie; siedziba przy ul. Grochowskiej, poza promieniem; brak historii miejsca w okolicy"},
+    {"title": "Federacja Bibliotek Kościelnych „Fides”", "powod": "organizacja bibliotek kościelnych; artykuł nie wiąże jej z miejscem na Woli"},
+    {"title": "People Can Fly", "powod": "producent gier; artykuł nie wiąże firmy z miejscem na Woli"},
+    {"title": "Open Life", "powod": "zakład ubezpieczeń; artykuł nie opisuje historii miejsca"},
+    {"title": "Towarzystwo Ubezpieczeń i Reasekuracji „Warta”", "powod": "firma ubezpieczeniowa; historia firmy bez historii miejsca (fakt o przeprowadzce centrali zapisany w rekordzie warsaw-unit)"},
+    {"title": "Egmont Polska", "powod": "wydawnictwo; artykuł nie opisuje historii miejsca"},
+    {"title": "W Investments", "powod": "spółka giełdowa (dawniej Internet Group); artykuł nie opisuje historii miejsca"}
+  ]
+}

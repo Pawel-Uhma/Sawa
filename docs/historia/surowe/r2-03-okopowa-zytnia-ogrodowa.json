@@ -1,0 +1,402 @@
+[
+  {
+    "id": "kercelak",
+    "nazwa": "Kercelak (plac Kercelego, rondo Kercelak)",
+    "name_en": "Kercelak market square",
+    "typ": "miejsce",
+    "adres_dzis": "rondo Kercelak (ul. Okopowa / al. Solidarności)",
+    "adres_historyczny": "plac Kercelego",
+    "lat": 52.236939,
+    "lon": 20.980008,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–1947",
+    "fakty": [
+      "W sierpniu 1942 r. na Kercelaku działało 1550 straganów (Wikipedia pl: Kercelak).",
+      "2 września 1942 r. podczas jednego z radzieckich nalotów na Warszawę spłonęło ok. 1000 straganów i kramów; targowisko odbudowano mimo zakazu z lipca 1941 r. (Wikipedia pl: Kercelak).",
+      "W maju 1942 r. na targowisku zatrzymano i przewieziono do obozu przy ul. Skaryszewskiej ok. 3 tys. osób; wczesną wiosną 1944 r. zabrano ok. tysiąca handlujących i kupujących (Wikipedia pl: Kercelak).",
+      "Do 2 sierpnia 1944 r. wyloty wszystkich ulic prowadzących na plac zamknięto barykadami; 5 sierpnia 1944 r. oddziały gen. Heinza Reinefartha i Oskara Dirlewangera wyparły Polaków z placu (Wikipedia pl: Kercelak).",
+      "5 października 1944 r. na placu złożyli broń żołnierze zgrupowania „Chrobry II”, jednego z ostatnich oddziałów wychodzących do niewoli po kapitulacji powstania (Wikipedia pl: Kercelak).",
+      "Targowisko zlikwidowano w 1947 r. (według niektórych źródeł handel odbywał się tu jeszcze w 1949 r.); przez plac przeprowadzono Trasę W-Z (Wikipedia pl: Kercelak).",
+      "Przy północnej granicy placu, między ul. Leszno a Żytnią, powstał Centralny Dworzec Autobusowy PKS (Wikipedia pl: Kercelak)."
+    ],
+    "ciekawostki": [
+      "W okupacji na Kercelaku kupowano wszy odzieżowe dla niemieckich żołnierzy, bo zawszenie oznaczało przymusową dwutygodniową kwarantannę i opóźnienie powrotu na front (Wikipedia pl: Kercelak).",
+      "Nazwa rondo Kercelak nadana przez Radę m.st. Warszawy w listopadzie 2001 r. nie odnosi się do ronda: planowanego ronda o średnicy 80 m nie zrealizowano (Wikipedia pl: Kercelak)."
+    ],
+    "summary_en": "Kercelak was a huge open-air market on Okopowa street from 1867 to 1947, named after landowner Józef Kercely. Its stalls were burned in 1942 and fighting in 1944 ended its trade. The name survives in the Okopowa / Solidarności roundabout.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "plac Kercelego (do 1947)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord o id „kercelak” z rundy 2: fakty do scalenia z istniejącym rekordem. Współrzędne: węzeł OSM „Rondo Kercelak” (96584836), nie środek placu. Artykuł Wikipedii podaje nalot z 2.09.1942 jako „radziecki” (ten opis pochodzi z jednego źródła, w artykule oznaczonego jako „według artykułu”), więc przypisanie do nalotu traktować ostrożnie.",
+    "odleglosc_m": 138
+  },
+  {
+    "id": "dworzec-pks-zytnia-15-17",
+    "nazwa": "Centralny Dworzec Autobusowy PKS (Żytnia 15/17)",
+    "name_en": "Central PKS bus station (Żytnia 15/17)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Żytnia 15/17 (numeracja wg Wikipedii; obecny adres nieustalony)",
+    "adres_historyczny": "ul. Żytnia 15/17",
+    "lat": 52.239152,
+    "lon": 20.980951,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1947–1979",
+    "fakty": [
+      "Po wojnie do 1979 r. przy ul. Żytniej 15/17 działał Centralny Dworzec Autobusowy PKS; w styczniu 1980 r. zastąpił go otwarty Dworzec Zachodni PKS (Wikipedia pl: Ulica Żytnia w Warszawie).",
+      "Dworzec powstał między ul. Leszno a Żytnią, przy północnej granicy zlikwidowanego targowiska Kercelak (Wikipedia pl: Kercelak)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Central PKS intercity bus station stood at Żytnia 15/17 on the northern edge of the former Kercelak market. It operated after the war until 1979, when the Western PKS station replaced it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Żytnia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%BBytnia_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne: budynek Żytnia 15C z OSM (506175194), 388 m od centrum, tylko jako przybliżenie tego miejsca; czy to ten sam teren, nie potwierdzono. Data początku działania dworca nie jest podana w źródłach (okres „po 1947” wynika z kolejności w artykule o Kercelaku). Stan obecny budynku nieustalony.",
+    "odleglosc_m": 388
+  },
+  {
+    "id": "zytnia",
+    "nazwa": "Żytnia",
+    "name_en": "Żytnia Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Żytnia (Wola, od Okopowej do Sokołowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.239152,
+    "lon": 20.980951,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "fakty": [
+      "W 1944 r. większość zabudowy ulicy została zniszczona (Wikipedia pl: Ulica Żytnia w Warszawie).",
+      "W powstaniu warszawskim ulica była miejscem zaciętych walk obronnych zgrupowania „Parasol” (Wikipedia pl: Ulica Żytnia w Warszawie).",
+      "Ulicę upamiętniono w tekście powstańczej piosenki „Pałacyk Michla” (Wikipedia pl: Ulica Żytnia w Warszawie).",
+      "Po 1956 r. ulicę przedłużono do Sokołowskiej (Wikipedia pl: Ulica Żytnia w Warszawie)."
+    ],
+    "ciekawostki": [
+      "Pod nr 1 działa Sanktuarium św. Faustyny, a pod nr 3/5 Zgromadzenie Sióstr Matki Bożej Miłosierdzia (Wikipedia pl: Ulica Żytnia w Warszawie).",
+      "Od 2020 r., w związku z rozszerzeniem strefy płatnego parkowania, odcinek od Sokołowskiej do Syreny jest jednokierunkowy (Wikipedia pl: Ulica Żytnia w Warszawie)."
+    ],
+    "summary_en": "Żytnia (Rye Street) got its name in 1770 from nearby rye fields. Most of its buildings were destroyed in 1944, when the Parasol group fought here. The Central PKS bus station stood on it until 1979.",
+    "ludzie": [
+      {
+        "kto": "Janina Iwańska",
+        "rola": "urodzona w 1930 r.; przed powstaniem mieszkała z rodzicami na ul. Żytniej na Woli (opis z wyników wyszukiwania w archiwum Instytutu Pileckiego, pełnej relacji nie czytano)",
+        "wiki": "https://www.archiwum.instytutpileckiego.pl/dlibra/publication/48163/edition/44504"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Żytnia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%BBytnia_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord o id „zytnia” z rundy 2: nowe fakty do scalenia. Współrzędne przybliżone (budynek Żytnia 15C z OSM). Osiedle „Żytnia”: nie znaleziono źródła o historii osiedla (wyniki to ogłoszenia; dane o blokach z lat 1950–60 z serwisów ogłoszeniowych, bez potwierdzenia) — nie wpisano. Sanktuarium św. Faustyny (Żytnia 1) jest poza 400 m (parafia w OSM 534 m od centrum), więc tylko w ciekawostce. Dane o cmentarzu ewangelicko-reformowanym (Żytnia 42/44) pominięto: brak współrzędnych w 400 m.",
+    "odleglosc_m": 388
+  },
+  {
+    "id": "okopowa-5",
+    "nazwa": "Okopowa 5 (dawne schronisko dla eksmitowanych)",
+    "name_en": "Okopowa 5 (former shelter for evicted tenants)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Okopowa 5",
+    "adres_historyczny": null,
+    "lat": 52.236647,
+    "lon": 20.978083,
+    "lokalizacja": "dokladna",
+    "okres": "1919–1939",
+    "fakty": [
+      "Po I wojnie światowej przy ul. Okopowej pod nr 5 działało schronisko dla bezdomnych, eksmitowanych za niepłacenie czynszu (Wikipedia pl: Ulica Okopowa w Warszawie)."
+    ],
+    "ciekawostki": [
+      "Drugie schronisko przy Okopowej, pod nr 59, przyjmowało osoby agresywne i zdemoralizowane, usunięte z innych schronisk i noclegowni (Wikipedia pl: Ulica Okopowa w Warszawie)."
+    ],
+    "summary_en": "After World War I, number 5 Okopowa housed a shelter for the homeless evicted for unpaid rent.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Okopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Okopowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne: budynek Okopowa 5 z OSM (218718863). Wikipedia nie podaje, czy numeracja z lat 20. jest taka sama jak dziś. Okopowa 59 (schronisko) nie ma w OSM budynku w 400 m, więc bez rekordu. Warszawa1939.pl i Warszawikia nie udostępniły stron w tej rundzie.",
+    "odleglosc_m": 100
+  },
+  {
+    "id": "okopowa-7-7a",
+    "nazwa": "Okopowa 7 i 7A",
+    "name_en": "Okopowa 7 and 7A",
+    "typ": "budynek",
+    "adres_dzis": "ul. Okopowa 7 i 7A (Przedszkole nr 133 pod 7A)",
+    "adres_historyczny": null,
+    "lat": 52.237092,
+    "lon": 20.977808,
+    "lokalizacja": "dokladna",
+    "okres": "1949–dziś (wg serwisu ogłoszeń)",
+    "fakty": [
+      "Serwis sonarhome.pl (dane o cenach mieszkań, źródło wtórne) podaje dla Okopowej 7 rok budowy 1949 i 3 kondygnacje.",
+      "Ten sam serwis podaje dla Okopowej 7A rok budowy 1959, 5 kondygnacji i status zabytku; status nie został potwierdzony w innych źródłach."
+    ],
+    "ciekawostki": [
+      "Pod adresem Okopowa 7A działa Przedszkole nr 133 (dane OSM)."
+    ],
+    "summary_en": "Okopowa 7 and 7A are postwar apartment buildings on Okopowa, with a kindergarten at 7A. Only a property listing site gives their build dates.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "sonarhome.pl: ul. Okopowa 7, Warszawa",
+        "url": "https://sonarhome.pl/ceny-mieszkan/warszawa/wola/ul-okopowa/7"
+      },
+      {
+        "tytul": "sonarhome.pl: ul. Okopowa 7A, Warszawa",
+        "url": "https://sonarhome.pl/ceny-mieszkan/warszawa/wola/ul-okopowa/7a"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Brak wpisu o numerach 7 i 7A w Wikipedii i w warszawa1939.pl (strona ulicy zwróciła 404). Daty z jednego serwisu ogłoszeniowego; trzeba sprawdzić w rejestrze zabytków (status 7A) i w archiwum budowlanym. Budynek 7 w OSM ma tag historic=yes, co nie oznacza wpisu do rejestru.",
+    "odleglosc_m": 152
+  },
+  {
+    "id": "ogrodowa-56-bruk",
+    "nazwa": "Ogrodowa 56 (odcinek bruku przy kamienicy)",
+    "name_en": "Ogrodowa 56 (historic cobblestones)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Ogrodowa 56",
+    "adres_historyczny": null,
+    "lat": 52.237623,
+    "lon": 20.983603,
+    "lokalizacja": "dokladna",
+    "okres": "dziś",
+    "fakty": [
+      "Przed budynkiem nr 56 na ul. Ogrodowej zachowano fragment oryginalnego bruku z kamieni polnych; na dalszym, zachodnim odcinku ulicy pas bruku ujęto z obu stron kostką (Wikipedia pl: Ulica Ogrodowa w Warszawie)."
+    ],
+    "ciekawostki": [
+      "Ogrodowa została wybrukowana pod koniec XVIII w.; w 1784 r. stało przy niej 57 domów i dworków drewnianych, pięć murowanych i dwa browary (Wikipedia pl: Ulica Ogrodowa w Warszawie)."
+    ],
+    "summary_en": "Number 56 Ogrodowa keeps a piece of original fieldstone paving in front of the building.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne: budynek Ogrodowa 56 z OSM (2049440, tag historic=yes). Historia samej kamienicy (rok budowy, losy w 1944) nieustalona w źródłach. Ogrodowa 58 (City Gate) i 67 (mural) mają osobne rekordy lub wzmianki w uwagach.",
+    "odleglosc_m": 373
+  },
+  {
+    "id": "ogrodowa-65-kamienica-wegielka",
+    "nazwa": "Ogrodowa 65 (kamienica Węgiełka)",
+    "name_en": "Ogrodowa 65 (Węgiełek tenement)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Ogrodowa 65",
+    "adres_historyczny": null,
+    "lat": 52.236843,
+    "lon": 20.982106,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "fakty": [
+      "Właściciel przedsiębiorstwa przewozowo-spedycyjnego Węgiełek i S-ka wybudował pod nr 65 kamienicę z oficynami; naprzeciw, pod nr 62, miał magazyny i stajnie firmy (Wikipedia pl: Ulica Ogrodowa w Warszawie).",
+      "Według ogłoszenia dewelopera kamienicę zainicjował Władysław Węgiełek, a projektował Stanisław Józef Barylski; budynek powstał w 1938 r. (rynekpierwotny.pl).",
+      "Pod koniec 2016 r. zakończono kompleksową rewitalizację kamienicy, z nadbudową dodatkowego piętra; odtworzono m.in. bramę, balustrady, przeszklenia i ceglaną elewację (rynekpierwotny.pl)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Number 65 Ogrodowa is a tenement built for the Węgiełek moving company and kept in use to this day.",
+    "ludzie": [
+      {
+        "kto": "Władysław Węgiełek",
+        "rola": "właściciel firmy przewozowo-spedycyjnej, inicjator kamienicy pod nr 65 (wg rynekpierwotny.pl i Wikipedii)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      },
+      {
+        "tytul": "rynekpierwotny.pl: kamienica Ogrodowa 65 (oferta dewelopera)",
+        "url": "https://rynekpierwotny.pl/oferty/realco-property-investment-and-development-sp-z-oo/kamienica-ogrodowa-65-warszawa-wola-mirow-7534/"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rok budowy niezgodny: 1938 (rynekpierwotny.pl) i 1939 (inne ogłoszenie na tej samej stronie). Wikipedia nie podaje roku. Losy budynku w 1944 r. nieustalone (ogólnie: 7.08.1944 Niemcy wymordowali część mieszkańców ulicy i podpalili budynki, bez wskazania nr 65). Magazyny Węgiełka pod nr 62 nie są w OSM w 400 m. Źródło rewitalizacji to strona dewelopera, nie niezależne.",
+    "odleglosc_m": 242
+  },
+  {
+    "id": "ogrodowa-67-mural-lityn",
+    "nazwa": "Ogrodowa 67 (mural Jana Lityńskiego)",
+    "name_en": "Ogrodowa 67 (Jan Lityński mural)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Ogrodowa 67",
+    "adres_historyczny": null,
+    "lat": 52.236727,
+    "lon": 20.981767,
+    "lokalizacja": "dokladna",
+    "okres": "2021–dziś",
+    "fakty": [
+      "We wrześniu 2021 r. na ścianie domu nr 67 odsłonięto mural autorstwa Bruno Neuhamera poświęcony Janowi Lityńskiemu (Wikipedia pl: Ulica Ogrodowa w Warszawie)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 2021 mural by Bruno Neuhamer honouring Jan Lityński covers a wall of number 67 Ogrodowa.",
+    "ludzie": [
+      {
+        "kto": "Jan Lityński",
+        "rola": "patron muralu na ścianie domu Ogrodowa 67 (2021)",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Lity%C5%84ski"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Biogram Jana Lityńskiego nie został sprawdzony w tej rundzie (tylko link). Nr 67 ma w OSM kilka obiektów; współrzędne to budynek mieszkalny (947207786).",
+    "odleglosc_m": 216
+  },
+  {
+    "id": "gmach-sadu-grodzkiego-ogrodowa",
+    "nazwa": "Gmach Sądu Grodzkiego (sądy przy Ogrodowej i Lesznie)",
+    "name_en": "Municipal Court building (Ogrodowa / Leszno)",
+    "typ": "budynek",
+    "adres_dzis": "kwartał Leszno – Ogrodowa – Biała (adres nieustalony)",
+    "adres_historyczny": null,
+    "lat": 52.23716,
+    "lon": 20.982426,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–1944",
+    "fakty": [
+      "W latach 1935–1939 na działce między ulicami Leszno i Ogrodową wzniesiono monumentalny gmach Sądu Grodzkiego według projektu Bogdana Pniewskiego; mieściły się tu też Sąd Okręgowy i Sąd Pracy (Wikipedia pl: Ulica Ogrodowa w Warszawie).",
+      "Przez cały czas istnienia getta gmach sądów był enklawą w dzielnicy zamkniętej: Żydzi mieli dostęp od strony Leszna, a mieszkańcy „aryjskiej” części miasta od strony Ogrodowej (Wikipedia pl: Ulica Ogrodowa w Warszawie).",
+      "W pierwszych dniach powstania oddział „Leśnik” zajął gmach Sądu Grodzkiego (Wikipedia pl: Ulica Ogrodowa w Warszawie).",
+      "7 sierpnia 1944 r. Niemcy zmusili powstańców dowodzonych przez Gustawa Billewicza ps. „Sosna” do wycofania się z gmachu sądów; wymordowali część mieszkańców i podpalili budynki przy ulicy (Wikipedia pl: Ulica Ogrodowa w Warszawie)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Municipal Court building, designed by Bogdan Pniewski and finished in 1939, sat between Leszno and Ogrodowa. It was a gap in the ghetto wall during the occupation and was lost to the Germans on 7 August 1944.",
+    "ludzie": [
+      {
+        "kto": "Bogdan Pniewski",
+        "rola": "architekt gmachu Sądu Grodzkiego",
+        "wiki": "https://pl.wikipedia.org/wiki/Bogdan_Pniewski"
+      },
+      {
+        "kto": "Gustaw Billewicz",
+        "rola": "ps. „Sosna”, dowodził powstańcami broniącymi gmachu sądów w sierpniu 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Gustaw_Billewicz"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne przybliżone: punkt na osi ulicy Ogrodowej (węzeł OSM 96584858), nie budynek sądu, którego nie ma w wyciągu OSM. Do uzupełnienia. Żydowska Służba Porządkowa przy Ogrodowej 17 (1942) i fabryka Leszczyńskiego przy Ogrodowej 32 nie są w OSM w 400 m: pominięte.",
+    "odleglosc_m": 278
+  },
+  {
+    "id": "zaklady-farmaceutyczne-unia-chlodna-56-60",
+    "nazwa": "Zakłady Farmaceutyczne „Unia” (siedziba Chłodna 56/60)",
+    "name_en": "Unia pharmaceutical works (Chłodna 56/60)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Chłodna 56/60 (siedziba wg KRS)",
+    "adres_historyczny": null,
+    "lat": 52.236128,
+    "lon": 20.983221,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "fakty": [
+      "Zakłady Farmaceutyczne „Unia” Spółdzielnia Pracy mają zarejestrowaną siedzibę przy ul. Chłodnej 56/60; wpis w KRS z 18.09.2002 r. (KRS 0000131447, krs-pobierz.pl).",
+      "Według strony trungtamthuoc.com (jedyne źródło historii) spółdzielnia farmaceutów powstała po zebraniu założycielskim w marcu 1937 r. w Warszawie i zaczęła działać 28 stycznia 1938 r. jako pośrednik między producentami leków a właścicielami aptek będącymi członkami.",
+      "Ta sama strona podaje, że w czasie powstania warszawskiego zniszczono siedzibę główną, a organizacja przetrwała dzięki oddziałom w Częstochowie i Lublinie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Unia began in 1938 as a Warsaw cooperative of pharmacists that bought drugs from manufacturers. Its registered office is at Chłodna 56/60; the link between its prewar site and this address is not confirmed.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "KRS: Zakłady Farmaceutyczne Unia SP (krs-pobierz.pl)",
+        "url": "https://krs-pobierz.pl/zaklady-farmaceutyczne-unia-spoldzielnia-pracy-i102521"
+      },
+      {
+        "tytul": "Zakłady Farmaceutyczne 'UNIA' (trungtamthuoc.com)",
+        "url": "https://trungtamthuoc.com/thuong-hieu/zakady-farmaceutyczne-unia"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Historia z jednego, słabego źródła (strona handlowa, tłumaczona). Nie znaleziono powiązania przedwojennej siedziby z Chłodną 56/60; nie wiadomo, czy zakład produkował tam przed 1939 r. Nie znaleziono żadnych danych o Unii przy Ogrodowej. Ponieważ w Warszawie działa Polfa przy Karolkowej (inny podmiot), tego nie mieszać. Nazwę warto potwierdzić w źródłach zakładowych lub w Muzeum Farmacji.",
+    "odleglosc_m": 295
+  },
+  {
+    "id": "skwer-hanki-bielickiej",
+    "nazwa": "Skwer Hanki Bielickiej",
+    "name_en": "Hanka Bielicka Square",
+    "typ": "miejsce",
+    "adres_dzis": "skwer Hanki Bielickiej (Wola, dokładna ulica nieustalona)",
+    "adres_historyczny": null,
+    "lat": 52.237725,
+    "lon": 20.979607,
+    "lokalizacja": "przyblizona",
+    "okres": "nieustalony",
+    "fakty": [],
+    "ciekawostki": [],
+    "summary_en": "A small square named Hanka Bielicka Square appears in OpenStreetMap near Okopowa in Wola. No source found so far explains when or why it got the name.",
+    "ludzie": [
+      {
+        "kto": "Hanka Bielicka",
+        "rola": "aktorka (1915–2006); od 1968 r. mieszkała przy ul. Śniadeckich 18 w Warszawie, poza Wolą (Wikipedia pl)",
+        "wiki": "https://pl.wikipedia.org/wiki/Hanka_Bielicka"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OpenStreetMap: obiekt „Skwer Hanki Bielickiej” (1136176426)",
+        "url": "https://www.openstreetmap.org/#map=18/52.237725/20.979607"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Nazwa występuje tylko w OSM. Nie znaleziono uchwały Rady m.st. Warszawy ani daty nadania. Trop: uchwała nr XXIII/918/2025 RMSW z 10.07.2025 r. dotyczy nadania nazwy obiektowi miejskiemu w dzielnicy Wola (wzmianka w komentarzu do zmian OSM, treści nie sprawdzono; nie wiadomo, czy to ta nazwa). Związku Hanki Bielickiej z Wolą nie znaleziono; w Wikipedii nie ma skweru ani ulicy jej imienia. Do sprawdzenia w BIP m.st. Warszawy.",
+    "odleglosc_m": 209
+  }
+]

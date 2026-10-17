@@ -1,0 +1,562 @@
+[
+  {
+    "id": "tablica-tchorka-karolkowa-solidarnosci",
+    "nazwa": "Tablica Tchorka na rogu Karolkowej i al. Solidarności",
+    "name_en": "Tchorek memorial plaque at the corner of Karolkowa Street and Solidarity Avenue",
+    "typ": "tablica",
+    "adres_dzis": "ul. Karolkowa róg al. „Solidarności” (wolno stojąca)",
+    "adres_historyczny": null,
+    "lat": 52.23562,
+    "lon": 20.97702,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 132,
+    "okres": "1944 (upamiętnienie), tablica powojenna",
+    "fakty": [
+      "Tablica projektu Karola Tchorka upamiętnia masową egzekucję, która odbyła się na tym miejscu 6 sierpnia 1944 r. Napis: „Tu w dniu 6 sierpnia 1944 w masowej egzekucji hitlerowcy rozstrzelali wielu Polaków”.",
+      "Tablica jest wolno stojąca. W pobliżu Szpitala św. Łazarza policjanci z grupy Reinefartha rozstrzelali 6 sierpnia 1944 r. nieznaną liczbę mieszkańców Woli.",
+      "Po wojnie zinwentaryzowano miejsca straceń na Woli, oznaczając je w większości przypadków piaskowcowymi tablicami projektu Karola Tchorka."
+    ],
+    "ciekawostki": [
+      "Projekt Karola Tchorka zwyciężył w konkursie z 1948/1949 r., do którego zgłoszono 34 prace."
+    ],
+    "summary_en": "A stone plaque designed by sculptor Karol Tchorek marks a mass execution of Poles on 6 August 1944 at the corner of Karolkowa Street and Solidarity Avenue. The inscription names no victims.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "rzeźbiarz, autor projektu tablic pamiątkowych (pierwsza nagroda w konkursie)",
+        "wiki": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (lista tablic, wiersz Karolkowa róg al. Solidarności)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      },
+      {
+        "tytul": "OpenStreetMap: węzeł 1774816928 (tablica, współrzędne i napis)",
+        "url": "https://www.openstreetmap.org/node/1774816928"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data i napis zgodne z listą Wikipedii i tagami OSM. Dokładny wiersz listy Wikipedii podaje 6 VIII 1944."
+  },
+  {
+    "id": "tablica-tchorka-towarowa-kotlarska",
+    "nazwa": "Tablica Tchorka przy Towarowej 30 (róg Kotlarskiej)",
+    "name_en": "Tchorek plaque at Towarowa 30, corner of Kotlarska Street",
+    "typ": "tablica",
+    "adres_dzis": "ul. Towarowa 30 róg ul. Kotlarskiej",
+    "adres_historyczny": null,
+    "lat": 52.23492,
+    "lon": 20.98154,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 210,
+    "okres": "1944",
+    "fakty": [
+      "Napis tablicy: „W dniach 5–6 VIII 1944 r. hitlerowcy rozstrzelali w tym miejscu 120 osób”.",
+      "Wg opisu na Wikipedii tablica upamiętnia także egzekucję ok. 6 sierpnia 1944 r. na podwórzu domu Krochmalna 90 (obecnie Jaktorowska 4), w której zamordowano co najmniej 34 osoby."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Tchorek stone plaque on Towarowa Street at the corner of Kotlarska Street commemorates 120 people shot there on 5-6 August 1944, during the Wola massacre.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (wiersz Towarowa 30 róg Kotlarskiej)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap: węzeł 8725627998 (tablica, napis w tagu inscription)",
+        "url": "https://www.openstreetmap.org/node/8725627998"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Napis z OSM (120 osób, 5–6 VIII 1944) jest zgodny z listą Wikipedii. Adres z OSM nie ma numeru, współrzędne z węzła OSM."
+  },
+  {
+    "id": "kosciol-klemensa-hofbauera-karolkowa-49",
+    "nazwa": "Kościół św. Klemensa Hofbauera i klasztor redemptorystów (Karolkowa 49)",
+    "name_en": "St. Clement Hofbauer church and Redemptorist monastery, Karolkowa 49",
+    "typ": "budynek",
+    "adres_dzis": "ul. Karolkowa 49",
+    "adres_historyczny": null,
+    "lat": 52.23429,
+    "lon": 20.97658,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 239,
+    "okres": "1924–1933 (budowa), 1944, po 1945",
+    "fakty": [
+      "Redemptoryści przybyli do Warszawy w 1917 r. Klasztor przy Karolkowej zbudowano w latach 1924–1926 wg projektu Stefana Szyllera. Kamień węgielny pod kościół położono 28 sierpnia 1931 r., a konsekrację przeprowadzono 26 października 1933 r.",
+      "W nocy 5/6 sierpnia 1944 r. Niemcy zajęli klasztor i kościół. Zakonników wyprowadzono i rozstrzelano rano 6 sierpnia w składzie fabryki Kirchmayera i Marczewskiego przy ul. Wolskiej 79/81, a nie w samym klasztorze.",
+      "Według Wikipedii zginęło 30 redemptorystów: 15 ojców, 9 braci koadiutorów, 5 kleryków i 1 kleryk nowicjusz.",
+      "Tablica Tchorka na fasadzie kościoła (lata 50.) głosi: „Tu w dniu 6 sierpnia 1944 r. hitlerowcy rozstrzelali około 30 księży rzymskokatolickich”. Wikipedia zaznacza, że napis jest nieścisły: egzekucja odbyła się przy Wolskiej, a ofiary były zakonnikami.",
+      "Podczas powstania kościół został zbombardowany. Żelbetowa konstrukcja uchroniła wnętrze przed pożarem. Skrzydło klasztoru pozostawało w ruinie do 1969 r.",
+      "W 2000 r. dziedziniec przy kościele przekształcono w „Plac Męczenników Warszawskiej Woli” (krzyż i tablice upamiętniające mieszkańców zamordowanych w sierpniu 1944 r.)."
+    ],
+    "ciekawostki": [
+      "Parcelę pod klasztor podarowały siostry Biernackie (wg Wikipedii, ul. Karolkowa)."
+    ],
+    "summary_en": "The Redemptorist church and monastery on Karolkowa Street were built between 1924 and 1933. During the Wola massacre, the Germans seized the monastery on the night of 5-6 August 1944 and shot about 30 of its friars, brothers and seminarians. A square in front of the church now commemorates the victims.",
+    "ludzie": [
+      {
+        "kto": "Jan Igielski",
+        "rola": "redemptorysta, ocalały (w chwili wybuchu powstania w sierocińcu w Czarnej); w styczniu 1945 r. odnalazł szczątki w składzie",
+        "wiki": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"
+      },
+      {
+        "kto": "Edmund Górski",
+        "rola": "redemptorysta; według Wikipedii był chory, jego częściowo spalone zwłoki znaleziono w klasztornej piwnicy kilka miesięcy później",
+        "wiki": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kościół św. Klemensa Hofbauera w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kościół_św._Klemensa_Hofbauera_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: 30 redemptorystów zamordowanych w powstaniu warszawskim",
+        "url": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      },
+      {
+        "tytul": "OpenStreetMap: obrys kościoła (way 35071436)",
+        "url": "https://www.openstreetmap.org/way/35071436"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Liczba zabitych redemptorystów: Wikipedia (Karolkowa) podaje 24 ojców, Wikipedia (Kościół i artykuł o 30 redemptorystach) podaje 30. Tablica mówi o ok. 30 księżach. Miejsce egzekucji: skład przy Wolskiej 79/81, nie klasztor. Współrzędne z obrysu kościoła w OSM."
+  },
+  {
+    "id": "tablica-tchorka-karolkowa-56-szpital-lazarza",
+    "nazwa": "Tablica Tchorka na ścianie budynku przy Karolkowej 56 (ofiary Szpitala św. Łazarza)",
+    "name_en": "Tchorek plaque on the wall at Karolkowa 56, victims of St. Lazarus Hospital",
+    "typ": "tablica",
+    "adres_dzis": "ul. Karolkowa 56",
+    "adres_historyczny": "ul. Karolkowa 53 (tablica do 2015 r.)",
+    "lat": 52.23632,
+    "lon": 20.97667,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 159,
+    "okres": "1944, tablica powojenna",
+    "fakty": [
+      "Napis tablicy (na ścianie gmachu Zespołu Szkół Specjalnych nr 101): „Tu 5 i 10 sierpnia 1944 r. w licznych egzekucjach hitlerowcy zamordowali i spalili około 1400 mieszkańców Woli w tym wiele młodzieży szkolnej”.",
+      "Opis tablicy na Wikipedii: 5 sierpnia 1944 r. na terenie Szpitala św. Łazarza zamordowano ok. 1200 osób (pacjentów, personelu i mieszkańców szukających schronienia), w tym 11 harcerek z drużyny im. Emilii Plater oraz co najmniej 7 benedyktynek.",
+      "Do 2015 r. tablica znajdowała się na ścianie domu przy ul. Karolkowej 53."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Tchorek plaque on the wall of the building at Karolkowa 56 commemorates the massacre at St. Lazarus Hospital on 5 August 1944, when about 1,200 people were killed. Until 2015 it hung at number 53.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (wiersz Karolkowa 56)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      },
+      {
+        "tytul": "OpenStreetMap: węzeł 10018666669 (tablica Tchorka)",
+        "url": "https://www.openstreetmap.org/node/10018666669"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Napis z 1400 mieszkańcami i opis o Szpitalu Łazarza są w jednym wierszu listy Wikipedii, więc nie wiadomo na pewno, która treść jest na samej tablicy (napis wg Wikipedii to 1400). Liczba ofiar Szpitala Łazarza (ok. 1200) jest szacunkowa. Węzeł OSM stoi ok. 12 m od obrysu nr 56 i ok. 10 m od nr 53A."
+  },
+  {
+    "id": "szpital-sw-lazarza",
+    "nazwa": "Szpital św. Łazarza (ulice Leszno i Karolkowa)",
+    "name_en": "St. Lazarus Hospital (Leszno and Karolkowa streets)",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "rejon ul. Leszno i Karolkowej (budynek przy Lesznie 15 rozebrany w 2007 r.)",
+    "adres_historyczny": "ul. Leszno 127 / ul. Wolska 18 (wg Wikipedii)",
+    "lat": 52.23640,
+    "lon": 20.97670,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 159,
+    "okres": "1941–2007",
+    "fakty": [
+      "Przed 1941 r. szpital mieścił się przy ul. Książęcej 2 na Powiślu. W 1941 r. Niemcy przejęli ten gmach i szpital przeniesiono do kompleksu przy ulicach Leszno i Karolkowej, dawniej należącego do Głównego Domu Schronienia Sierot i Starców Starozakonnych.",
+      "Ok. 3 sierpnia 1944 r. do szpitala dołączył patrol sanitarny Obwodu AK „Wola”, w tym harcerki z drużyny im. Emilii Plater.",
+      "5 sierpnia 1944 r. ok. 16:00–20:00 Niemcy opanowali pawilony przy Karolkowej i Lesznie i mordowali pacjentów oraz personel. Ok. 23:00 szpital podpalono; masakra trwała do późnej nocy.",
+      "Szacunkowo zginęło ok. 1200 osób, w tym ok. 50 członków personelu (co najmniej 7 benedyktynek, 11 sanitariuszek, farmaceuta Ignacy Giedroyc) i ok. 40 rannych żołnierzy AK.",
+      "Niewielką grupę lekarzy i pielęgniarek Niemcy oszczędzili i skierowali do pracy w Szpitalu św. Stanisława.",
+      "Po wojnie szpital wznowił działalność w 1948 r. przy Lesznie. W 1963 r. przemianowano go na Stołeczny Szpital Dermatologiczny. W 2007 r. przeniesiono go na prawy brzeg Wisły, a budynek przy Lesznie 15 rozebrano."
+    ],
+    "ciekawostki": [
+      "Szpital św. Stanisława przy Wolskiej 37 uniknął masakry 5 sierpnia 1944 r. dzięki interwencji dr. Pawła Kubicy, który powołał się na konwencje Czerwonego Krzyża (wg Wikipedii)."
+    ],
+    "summary_en": "St. Lazarus Hospital moved to the Leszno and Karolkowa complex in 1941. On 5 August 1944 German troops set it on fire and killed about 1,200 people, including staff, nuns and Scouts. The hospital reopened in 1948 and moved across the Vistula in 2007.",
+    "ludzie": [
+      {
+        "kto": "Ignacy Giedroyc",
+        "rola": "farmaceuta szpitala, zginął 5 sierpnia 1944 r. (ojciec Jerzego Giedroycia)",
+        "wiki": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      }
+    ],
+    "dawne_nazwy": [
+      "Szpital przy ul. Książęcej 2 (przed 1941 r.)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Liczba harcerek: 11 na tablicy (wg Wikipedii, tablice), 14 w opisie patrolu w artykule o szpitalach. Adres: Leszno 127/Wolska 18 (Szpitale na Woli) wobec Leszno 15 (rozbiórka 2007). Współrzędne przybliżone, wg miejsca tablicy. W OSM jest węzeł 'Pracowników Szpitala św. Łazarza' (52.23752, 20.97511, ok. 315 m); treść tej tablicy nie jest potwierdzona, więc nie wpisano jej faktów."
+  },
+  {
+    "id": "wolska-27-29-palacyk-biernackich",
+    "nazwa": "Pałacyk Biernackich (ul. Wolska 27/29) z tablicą Tchorka",
+    "name_en": "Biernacki Palace (Wolska 27/29) with Tchorek plaque",
+    "typ": "budynek",
+    "adres_dzis": "ul. Wolska 27/29",
+    "adres_historyczny": null,
+    "lat": 52.23483,
+    "lon": 20.97458,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 317,
+    "okres": "po 1858 (budowa), 1944",
+    "fakty": [
+      "Napis tablicy Tchorka na ścianie pałacyku Biernackich: „W sierpniu 1944 roku przy ul. Wolskiej pod nr. 29 oraz pod nr. 4/6/8 hitlerowcy wymordowali około 3200 osób”.",
+      "Opis tablicy na Wikipedii: w pobliżu pałacyku rozstrzelano co najmniej 600 osób, a masowe egzekucje miały też miejsce na sąsiednich posesjach.",
+      "Pałacyk powstał po rozebraniu browaru, który istniał do 1858 r. (wg artykułu o ul. Jaktorowskiej). Ogród Biernackich sięgał ul. Krochmalnej.",
+      "Według relacji świadków, sprzecznych ze sobą, ciała redemptorystów o. Henryka Kotyńskiego i o. Tadeusza Dolińskiego znaleziono w ogrodzie pałacyku, albo zostały tam spalone, albo znaleziono je w kościele 7 sierpnia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Tchorek plaque on the wall of the Biernacki Palace at Wolska 27/29 commemorates mass executions in August 1944 and gives about 3,200 victims for Wolska Street. Witness accounts about the palace garden, where some Redemptorist friars died, differ.",
+    "ludzie": [
+      {
+        "kto": "o. Henryk Kotyński i o. Tadeusz Doliński",
+        "rola": "redemptoryści; według sprzecznych relacji ich ciała znaleziono lub spalono w ogrodzie pałacyku",
+        "wiki": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (wiersz Wolska 27/29)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: 30 redemptorystów zamordowanych w powstaniu warszawskim",
+        "url": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"
+      },
+      {
+        "tytul": "OpenStreetMap: węzeł 12115365780 (tablica)",
+        "url": "https://www.openstreetmap.org/node/12115365780"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Liczby: napis 3200 (nr 29 oraz 4/6/8), opis 600 przy pałacyku. Wikipedia Rzeź Woli nie podaje żadnej z tych liczb. Pałacyk i klasztor Karmelitanek mają w OSM ten sam adres 27/29; wiki podaje go dla pałacyku. Współrzędne węzła OSM przyjęto jako przybliżone. Data budowy pałacyku nieustalona."
+  },
+  {
+    "id": "klasztor-karmelitanek-bosych-wolska-27-29",
+    "nazwa": "Klasztor Karmelitanek Bosych (ul. Wolska 27/29)",
+    "name_en": "Discalced Carmelite convent, Wolska 27/29",
+    "typ": "budynek",
+    "adres_dzis": "ul. Wolska 27/29",
+    "adres_historyczny": null,
+    "lat": 52.23479,
+    "lon": 20.97482,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 304,
+    "okres": "1944",
+    "fakty": [
+      "5 sierpnia 1944 r. wieczorem Niemcy zdobyli klasztor karmelitanek.",
+      "Według Wikipedii życie zakonnic oraz ukrywających się w klasztorze kobiet i dzieci ocaliły: znajomość języka niemieckiego przez jedną z sióstr i interwencja niemieckiego oficera. Siostry wcześniej nie wpuściły powstańców na teren klasztoru.",
+      "5 sierpnia i w następnych dniach na terenie klasztornego ogrodu rozstrzelano nawet do 600 mężczyzn, kobiet i dzieci (wg Wikipedii)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Discalced Carmelite convent at Wolska 27/29 was taken by German forces on the evening of 5 August 1944. According to Wikipedia, a German-speaking nun and an intervention by a German officer saved the nuns and the women and children hiding there. Up to 600 people were shot in the garden.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      },
+      {
+        "tytul": "OpenStreetMap: obrys klasztoru (way 259039201)",
+        "url": "https://www.openstreetmap.org/way/259039201"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Kaplica karmelitanek bosych jako osobny obiekt nie została potwierdzona w źródłach (brak artykułu w zebranych wynikach). Liczba 600 pochodzi z jednego zdania Wikipedii. Obiekt w OSM ma tag historic=yes i operator Karmelitanki Bose."
+  },
+  {
+    "id": "ulica-karolkowa",
+    "nazwa": "ul. Karolkowa",
+    "name_en": "Karolkowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Karolkowa (Wola)",
+    "adres_historyczny": "Karolowa (nazwa pierwotna, od Karola Schultza)",
+    "lat": 52.23572,
+    "lon": 20.97672,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 150,
+    "okres": "XVIII w. – dziś",
+    "fakty": [
+      "Ulica powstała w XVIII w. jako trakt do Szczęśliwic i Rakowca. Pierwotnie nosiła nazwę Karolowa od bankiera Karola Schultza, który po 1780 r. zakupił grunty po zachodniej stronie drogi (wg Wikipedii).",
+      "W 1923 r. pod nr 32/44 Polsko-Holenderska Fabryka Lampek Elektrycznych (koncern Philips) rozpoczęła produkcję.",
+      "W latach 1924–1926 redemptoryści wznieśli klasztor pod nr 49. Pod nr 56 w latach 1924–25 powstał gmach miejskiej szkoły powszechnej.",
+      "W czasie powstania warszawskiego Niemcy wymordowali mieszkańców ulicy i spalili całą zabudowę. Po powstaniu wysadzili zabudowania fabryki Philipsa."
+    ],
+    "ciekawostki": [
+      "U zbiegu z ul. Wolską mieścił się przytułek dla starozakonnych, z oddziałami dla starców i sierot (wg Wikipedii)."
+    ],
+    "summary_en": "Karolkowa Street was laid out in the 18th century and was first named Karolowa after banker Karol Schultz. Its buildings include the Redemptorist church and monastery and a municipal school from 1924-25. The Germans burned the street during the Warsaw Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Karolowa"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap: odcinek ulicy (way 1491071957)",
+        "url": "https://www.openstreetmap.org/way/1491071957"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Liczba redemptorystów zabitych w 1944 r. różni się między artykułami Wikipedii (24 i 30), szczegóły w rekordzie kościoła. Współrzędne przyjęto dla odcinka przy Solidarności."
+  },
+  {
+    "id": "ulica-wolska",
+    "nazwa": "ul. Wolska (główna ulica Woli)",
+    "name_en": "Wolska Street (main street of Wola)",
+    "typ": "ulica",
+    "adres_dzis": "ul. Wolska (odcinek przy al. Solidarności i Karolkowej)",
+    "adres_historyczny": "Litzmannstadtstrasse (1940–1945, nazwa okupacyjna)",
+    "lat": 52.23517,
+    "lon": 20.97656,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 179,
+    "okres": "1771 – dziś",
+    "fakty": [
+      "Nazwa ulicy została nadana oficjalnie w 1771 r. od wsi Wielka Wola, do której prowadziła jako trakt ze Starej Warszawy.",
+      "We wrześniu 1939 r. ulicę przegrodzono barykadą; 9 września niemiecki atak został zatrzymany, a Niemcy wycofali się z Woli wieczorem.",
+      "W maju 1940 r. okupacyjne władze zmieniły nazwę na Litzmannstadtstrasse.",
+      "W dniach rzezi Woli (od 5 sierpnia 1944 r.) egzekucje odbywały się przy wielu numerach ulicy, m.in. przy nr 27/29 (pałacyk Biernackich), 43/45 (fabryka Franaszka) i 55 (fabryka Ursus).",
+      "W 1908 r. ulicą po raz pierwszy pojechały tramwaje elektryczne."
+    ],
+    "ciekawostki": [
+      "Ulica jest granicą między obszarami MSI Ulrychów i Odolany a Czyste i Młynów (wg Wikipedii)."
+    ],
+    "summary_en": "Wolska Street is the main street of Wola. Named in 1771, it got electric trams in 1908. During the Wola massacre in August 1944 Germans shot civilians at many addresses along it, including the Biernacki Palace and the Ursus factory at No. 55.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Litzmannstadtstrasse (1940–1945)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wolska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wolska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Liczby ofiar przy numerach pochodzą z napisów tablic i opisów Wikipedii i bywają sprzeczne (np. Wolska 55: napis 7000, opis 6000). Współrzędne z budynku przy Wolskiej 19/25 (OSM), przybliżone dla całej ulicy."
+  },
+  {
+    "id": "aleja-solidarnosci",
+    "nazwa": "al. „Solidarności” (odcinek zachodni, nr 100–173)",
+    "name_en": "Solidarity Avenue (western section, nos. 100-173)",
+    "typ": "ulica",
+    "adres_dzis": "al. „Solidarności” 100–173 (Wola)",
+    "adres_historyczny": "al. gen. Karola Świerczewskiego (1948–1991); odcinek zachodni: ul. Leszno",
+    "lat": 52.23605,
+    "lon": 20.97869,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 22,
+    "okres": "XVIII w. – dziś (obecna nazwa od 1991 r.)",
+    "fakty": [
+      "Nazwa Aleja „Solidarności” obowiązuje od października 1991 r.; upamiętnia NSZZ „Solidarność”.",
+      "W latach 1947–1949 ulice tworzące aleję połączono w Trasę W-Z, a w listopadzie 1948 r. cały ciąg nazwano aleją gen. Karola Świerczewskiego.",
+      "Jurydykę Leszno założono 8 stycznia 1648 r. Ulica Leszno biegła od placu Bankowego do rogatek Wolskich.",
+      "W 1949 r. wschodnia i środkowa część ulicy Leszno weszła w skład Trasy W-Z i otrzymała nazwę al. Świerczewskiego. Zachodni odcinek od alei do ul. Młynarskiej zachował nazwę Leszno.",
+      "Tablica Tchorka przy al. „Solidarności” 83/89 (na fragmencie muru) upamiętnia egzekucję z 26 października 1943 r., w której rozstrzelano 30 Polaków."
+    ],
+    "ciekawostki": [
+      "W 1992 r. Komisja ds. Nazewnictwa Ulic proponowała przywrócenie historycznych nazw odcinków (np. Stare Leszno, Nowe Tłomackie), ale Rada Miasta odrzuciła propozycje w głosowaniu."
+    ],
+    "summary_en": "Solidarity Avenue is a main east-west road in Warsaw. Its western section follows the old Leszno and Wolska streets. The avenue was named after the Solidarity trade union in October 1991.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "al. gen. Karola Świerczewskiego (1948–1991)",
+      "ul. Leszno (zachodni odcinek)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Aleja „Solidarności” w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Aleja_„Solidarności”_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Leszno w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Leszno_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wikipedia nie opisuje odrębnie numerów 100–173. Współrzędne z budynku al. Solidarności 171 (OSM), przybliżone dla odcinka."
+  },
+  {
+    "id": "al-solidarnosci-171-adres-hackathonu",
+    "nazwa": "al. „Solidarności” 171 (adres hackathonu, budynek biurowy)",
+    "name_en": "Solidarity Avenue 171, office building (hackathon venue)",
+    "typ": "budynek",
+    "adres_dzis": "al. „Solidarności” 171 / 171B",
+    "adres_historyczny": null,
+    "lat": 52.23590,
+    "lon": 20.97903,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 9,
+    "okres": "nieustalone (obecny budynek)",
+    "fakty": [
+      "Budynek z adresem al. „Solidarności” 171 ma w OSM 10 kondygnacji i charakter biurowy (building=office; źródło adresu: GUGiK, ref B210120).",
+      "W sąsiedztwie, na tej samej ulicy, w OSM są pod adresami 169 i 173 budynki biurowe i punkty usługowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The hackathon venue is an office building at Solidarity Avenue 171, a ten-storey block in the west of Wola. The historical sources I found do not say what stood on this plot before 1944.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OpenStreetMap: budynek al. Solidarności 171 (way 691189037)",
+        "url": "https://www.openstreetmap.org/way/691189037"
+      },
+      {
+        "tytul": "Wikipedia: Aleja „Solidarności” w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Aleja_„Solidarności”_w_Warszawie"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Nie ustalono, co stało na działce przed 1944 r. Jeden artykuł (Ochrona Zabytków, 1983) opisuje zakład Norblin na działce dawnej podmiejskiej rezydencji w XIX w., ale nie wiadomo, czy obejmowała ona nr 171. Niepotwierdzone. Do sprawdzenia: Stołeczny Konserwator Zabytków, Archiwum Akt Nowych, księgi adresowe Warszawy."
+  },
+  {
+    "id": "osiedle-czyste",
+    "nazwa": "Czyste (osiedle i obszar MSI na Woli)",
+    "name_en": "Czyste (district and information area in Wola)",
+    "typ": "miejsce",
+    "adres_dzis": "obszar MSI Czyste, między al. Solidarności, ul. Wolską, ul. Towarową i linią kolejową",
+    "adres_historyczny": null,
+    "lat": 52.23520,
+    "lon": 20.97950,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 90,
+    "okres": "1827 – dziś",
+    "fakty": [
+      "W 1827 r. wieś Czyste liczyła 16 domostw i 223 mieszkańców.",
+      "8 kwietnia 1916 r. generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające m.in. gminę Czyste do Warszawy (od 1 kwietnia 1916 r.).",
+      "Obszar MSI Czyste leży między linią Warszawa Zachodnia – Warszawa Gdańska, al. „Solidarności” i ul. Wolską, ul. Towarową oraz linią średnicową.",
+      "Kościół św. Klemensa Hofbauera stoi na osiedlu Czyste."
+    ],
+    "ciekawostki": [
+      "W XIX w. gmina Czyste obejmowała też części dzisiejszej Woli (Koło, Wielka Wola Warszawska) i fragmenty Ochoty (wg Wikipedii)."
+    ],
+    "summary_en": "Czyste is a district of Wola, south of Wolska Street and Solidarity Avenue. It was a village with 223 residents in 1827 and became part of Warsaw in 1916.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "gmina Czyste (do 1916)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Czyste (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Czyste_(Warszawa)"
+      },
+      {
+        "tytul": "Wikipedia: Kościół św. Klemensa Hofbauera w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kościół_św._Klemensa_Hofbauera_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar bez dokładnych granic. Współrzędne przybliżone, środek obszaru przy Wolskiej i Towarowej."
+  },
+  {
+    "id": "szkola-karolkowa-56",
+    "nazwa": "Budynek przy ul. Karolkowej 56 (szkoła; OSM: SP nr 147)",
+    "name_en": "Building at Karolkowa 56 (school; tagged in OSM as Primary School No. 147)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Karolkowa 56",
+    "adres_historyczny": "miejska szkoła powszechna (1924–25)",
+    "lat": 52.23649,
+    "lon": 20.97696,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 148,
+    "okres": "1924 – dziś",
+    "fakty": [
+      "W latach 1924–25 pod nr 56 powstał gmach miejskiej szkoły powszechnej wg projektu Konstantego Jakimowicza i Tadeusza Szaniora.",
+      "Na ścianie gmachu Zespołu Szkół Specjalnych nr 101 wisi tablica Tchorka upamiętniająca egzekucje z 5 i 10 sierpnia 1944 r. (wg napisu około 1400 mieszkańców Woli).",
+      "W OSM obiekt ma nazwę „Szkoła Podstawowa nr 147” i budynek historic=yes."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The building at Karolkowa 56 was built in 1924-25 as a municipal primary school. It carries a Tchorek plaque for the August 1944 executions and is tagged in OpenStreetMap as Primary School No. 147.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (wiersz Karolkowa 56)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap: obiekt Karolkowa 56, nazwa Szkoła Podstawowa nr 147 (way 421279228)",
+        "url": "https://www.openstreetmap.org/way/421279228"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Nazwa szkoły niepewna: OSM podaje Szkołę Podstawową nr 147, a napis tablicy (Wikipedia) wskazuje Zespół Szkół Specjalnych nr 101. Nie znaleziono w sieci potwierdzenia SP 147 przy Karolkowej 56. Skwer Gwary Warszawskiej: w sieci nie znaleziono informacji."
+  }
+]

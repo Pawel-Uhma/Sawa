@@ -1,0 +1,973 @@
+{
+  "rekordy": [
+    {
+      "id": "iii-lo-sowinskiego",
+      "nazwa": "III Liceum Ogólnokształcące im. gen. Józefa Sowińskiego (ul. Rogalińska 2)",
+      "name_en": "III General Józef Sowiński High School, Warsaw",
+      "typ": "budynek",
+      "adres_dzis": "ul. Rogalińska 2",
+      "adres_historyczny": "ul. Młynarska i ul. Kalinki (dawne adresy szkoły)",
+      "lat": 52.230613,
+      "lon": 20.971856,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 758,
+      "okres": "1914–dziś (szkoła od 1923)",
+      "fakty": [
+        "Budowę gmachu według projektu Mikołaja Tołwińskiego i jego syna Tadeusza Tołwińskiego rozpoczęto w 1914 roku.",
+        "W 1923 roku gimnazjum przeniosło się do nowo wybudowanego gmachu, co jest uznawane za początek istnienia szkoły.",
+        "20 grudnia 1925 roku gmach poświęcił proboszcz parafii św. Stanisława na Woli, ks. prałat Seweryn Popławski; na uroczystość przybył prezydent Warszawy Władysław Jabłoński.",
+        "11 czerwca 1928 roku szkoła otrzymała imię gen. Józefa Sowińskiego.",
+        "W 1937 roku młodzież szkolna, rodzice i nauczyciele ufundowali ręczny karabin maszynowy dla 21 Pułku Piechoty „Dzieci Warszawy”.",
+        "W czasie oblężenia Warszawy na szkołę spadła bomba, która zburzyła narożnik z dużą aulą; z okien wypadły szyby w całym budynku.",
+        "W marcu 1942 roku gmach został zajęty przez Niemców, a szkoła Chemiczna przeniesiona na ul. Chłodną 37.",
+        "5 sierpnia 1944 roku szkoła została zdobyta przez brygadę SS Dirlewangera; broniący się tu żołnierze batalionu „Chrobry I” wycofali się ku ul. Karolkowej.",
+        "28 marca 1945 roku szkoła wznowiła działalność; zgłosiło się 164 osoby.",
+        "W 1965 roku szkoła przyjęła obecnie obowiązującą nazwę: III Liceum Ogólnokształcące im. gen. Józefa Sowińskiego.",
+        "W 1966 roku Szkoła Podstawowa przeniosła się przy ul. Syreny i od tego czasu gmach zajmuje tylko III Liceum.",
+        "W 1990 roku budynek szkoły został wpisany do rejestru zabytków."
+      ],
+      "ciekawostki": [
+        "Przed wojną prasa warszawska nazywała gmach „pałacem nauki” ze względu na monumentalną architekturę.",
+        "Na dachu szkoły znajdowało się obserwatorium astronomiczne.",
+        "Z powodu uczęszczania dzieci pracowników Tramwajów Warszawskich szkołę nazywano „gimnazjum tramwajarskim”.",
+        "W budynku kręcono m.in. filmy Ferdydurke (1991), Łukasz (1974), Panna Nikt (1996), Kryminalni (2004) i Lejdis (2008)."
+      ],
+      "summary_en": "The III General Sowiński High School at ul. Rogalińska 2 occupies a building begun in 1914 and opened as a gymnasium in 1923. It was damaged during the 1939 siege, taken over by the Germans in March 1942 and captured by SS Dirlewanger's brigade on 5 August 1944.",
+      "ludzie": [
+        {
+          "kto": "Emanuel Łoziński",
+          "rola": "dyrektor szkoły (1923–1940, ponownie 1945–1949)"
+        },
+        {
+          "kto": "Feliks Różycki",
+          "rola": "nauczyciel, aresztowany w 1939, komendant Ochotniczego Hufca Pracy, dyrektor kursów w latach 1941–1944"
+        },
+        {
+          "kto": "Kazimierz Zarankiewicz",
+          "rola": "nauczyciel matematyki w okresie międzywojennym"
+        },
+        {
+          "kto": "Bohdan Suchodolski",
+          "rola": "polonista w okresie międzywojennym, uczył też na tajnych kompletach"
+        }
+      ],
+      "dawne_nazwy": [
+        "I Gimnazjum Męskie (od 1921)",
+        "I Miejskie Gimnazjum i Liceum Męskie im. Generała Józefa Sowińskiego (od 1933)",
+        "Państwowa koedukacyjna szkoła stopnia licealnego im. gen. Sowińskiego (od 1948)",
+        "Liceum Ogólnokształcące im. gen. Sowińskiego (od 1958)"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/55/Iii_lo.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: III Liceum Ogólnokształcące im. gen. Józefa Sowińskiego w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/III_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_im._gen._J%C3%B3zefa_Sowi%C5%84skiego_w_Warszawie"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł podaje, że przedwojenne plany przedłużenia ulicy Młynarskiej miały wyjaśniać adres przy Młynarskiej."
+    },
+    {
+      "id": "gesiowka",
+      "nazwa": "Gęsiówka (KL Warschau, Areszt Centralny, więzienie na Muranowie)",
+      "name_en": "Gęsiówka (Gęsia Street prison and camp complex)",
+      "typ": "miejsce",
+      "adres_dzis": "zbieg ul. Gęsiej i ul. Zamenhofa (dziś skwer, osiedle i Muzeum Historii Żydów Polskich)",
+      "adres_historyczny": "Koszary Wołyńskie, zbieg ul. Gęsiej i ul. Zamenhofa",
+      "lat": 52.244639,
+      "lon": 20.978939,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 971,
+      "okres": "1875–1956",
+      "fakty": [
+        "Koszary artyleryjskie przy zbiegu ulic Gęsiej i Zamenhofa, wybudowane w czasach stanisławowskich, przekształcono w 1875 roku przez władze carskie w więzienie wojskowe.",
+        "W latach 1920–1939 mieściło się tu Wojskowe Więzienie Śledcze.",
+        "W czerwcu 1941 roku zorganizowano na terenie koszar tzw. Areszt Centralny dla Dzielnicy Żydowskiej; trafiały tu przede wszystkim osoby oskarżone o szmugiel lub nielegalne przebywanie po „aryjskiej stronie”.",
+        "17 listopada i 15 grudnia 1941 roku rozstrzelano tu odpowiednio osiem i piętnaście osób, wśród nich kobiety; były to pierwsze masowe egzekucje w getcie warszawskim.",
+        "10 marca 1942 roku liczba więźniów Aresztu Centralnego sięgnęła 1283, a w lipcu 1942 roku około 1800; pod koniec maja 1942 roku blisko 1/3 osadzonych stanowili nieletni poniżej 15. roku życia.",
+        "Więźniowie Aresztu Centralnego byli jednymi z pierwszych przeznaczonych do wywózki do Treblinki; pierwszy transport odszedł z Umschlagplatzu 23 lipca 1942 roku.",
+        "Jesienią 1942 roku Niemcy zorganizowali tu wychowawczy obóz pracy policji bezpieczeństwa (AEL); przebywało w nim jednocześnie od 300 do 400 więźniów.",
+        "19 lipca 1943 roku przybyła pierwsza grupa więźniów do KL Warschau, obozu koncentracyjnego utworzonego na terenie byłego getta na decyzję Himmlera.",
+        "Pierwszy transport więźniów żydowskich trafił na Gęsią 31 sierpnia 1943 roku z obozu Auschwitz-Birkenau.",
+        "Według IPN liczba ofiar KL Warschau wynosi ok. 20 tys. osób, w tym ok. 10 tys. Polaków; minimalna liczba więźniów, którzy przeszli przez obóz, szacowana jest na 7250.",
+        "5 sierpnia 1944 roku, w piątym dniu powstania warszawskiego, obóz został zdobyty przez żołnierzy Batalionu „Zośka”; powstańcy uwolnili tego dnia 348 Żydów, w tym 24 kobiety.",
+        "19 listopada 1949 roku w miejscu dawnego obozu utworzono Centralne Więzienie – Ośrodek Pracy (Warszawa II Gęsiówka); obóz zlikwidowano w 1956 roku."
+      ],
+      "ciekawostki": [
+        "Mieszkańcy Warszawy z czasem zaczęli nazywać KL Warschau „Gęsiówką”, tak jak wcześniejsze więzienne obiekty w rejonie ul. Gęsiej.",
+        "W 1943–1944 ruiny i obóz służyły Niemcom także jako miejsce masowych egzekucji polskich więźniów politycznych i warszawiaków z łapanek."
+      ],
+      "summary_en": "Gęsiówka was the name of a prison and camp complex on Gęsia Street, in today's Muranów. It housed the Jewish Central Arrest of the Warsaw Ghetto (1941–1943), the KL Warschau concentration camp (1943–1944) and, after the war, a communist-era prison. Today the site holds a square, housing and the Museum of the History of Polish Jews.",
+      "ludzie": [
+        {
+          "kto": "Marek Nowakowski",
+          "rola": "więzień Gęsiówki w latach 1952–1954"
+        }
+      ],
+      "dawne_nazwy": [
+        "Koszary Wołyńskie (do 1939)",
+        "Areszt Centralny dla Dzielnicy Żydowskiej (1941–1943)",
+        "KL Warschau (1943–1944)",
+        "Centralne Więzienie Warszawa II Gęsiówka (1949–1956)"
+      ],
+      "zdjecia": [],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Gęsiówka (więzienie)",
+          "url": "https://pl.wikipedia.org/wiki/G%C4%99si%C3%B3wka_(wi%C4%99zienie)"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł podaje różne szacunki liczby ofiar (IPN ok. 20 tys.; Bogusław Kopka ok. 1800 ofiar z okresu stalinowskiego) i różne daty likwidacji Aresztu Centralnego (1943; 19 kwietnia 1943 wg Wirtualnego Sztetl)."
+    },
+    {
+      "id": "zelazna",
+      "nazwa": "ul. Żelazna",
+      "name_en": "Żelazna Street",
+      "typ": "ulica",
+      "adres_dzis": "ul. Żelazna (Ochota i Wola)",
+      "adres_historyczny": null,
+      "lat": 52.234667,
+      "lon": 20.990806,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 822,
+      "okres": "XVII w.–dziś",
+      "fakty": [
+        "Północna część ulicy była w połowie XVII wieku drogą łączącą jurydykę Leszno z Nowolipiem; w 1725 roku wytyczono odcinek między Chłodną a Lesznem.",
+        "W 1770 roku ulica została przedłużona na południe do zbiegu ulic Twardej i Złotej i otrzymała urzędową nazwę Żelazna; nazwa pochodzi od karczmy „Żelaznej” na rogu Siennej i Twardej.",
+        "W 1810 roku u zbiegu ulic Żelaznej i Żytniej (dziś Żelazna 97) powstał pałacyk Wojciecha Bogusławskiego.",
+        "W 1845 roku ulicę przecięły tory kolei Warszawsko-Wiedeńskiej.",
+        "W 1902 roku na rogu Żelaznej i Alej Jerozolimskich wybudowano Dworzec Kaliski, zaprojektowany przez Józefa Hussa; w 1908 roku ulicą poprowadzono linię tramwaju elektrycznego.",
+        "W latach 1918–1927 w mieszkaniu nr 63 w kamienicy przy ul. Żelaznej 89 mieścił się konspiracyjny lokal Komitetu Centralnego Komunistycznej Partii Polski; przypomina o tym tablica z 1978 roku.",
+        "W 1931 roku pod nr 24 wzniesiono podstację elektryczną, jeden z sześciu tego rodzaju obiektów w przedwojennej Warszawie.",
+        "W listopadzie 1940 roku odcinek między Grzybowską a Lesznem znalazł się w granicach getta; w sierpniu 1942 roku, po likwidacji tzw. małego getta, ulicę do Leszna włączono do części aryjskiej miasta.",
+        "W latach 1942–1943 w zachowanym budynku przy Żelaznej 103 mieściła się jednostka SD-Befehlstelle, która kierowała wielką akcją deportacyjną do Treblinki (zob. rekord befehlstelle-zelazna-103).",
+        "Po wojnie teren nazywano Dzikim Zachodem; w latach 1949–1960 zbudowano osiedle Mirów według projektu Tadeusza Kossaka.",
+        "W 1969 roku oddano do użytku budynek Stacji Sanitarno-Epidemiologicznej.",
+        "Od lat 90. stopniowo wyburzano dawne domy, a w ich miejsce powstają nowe budynki i całe pierzeje."
+      ],
+      "ciekawostki": [
+        "Leopold Tyrmand wspomniał ulicę w powieści „Zły”; w narożnej kamienicy nr 64 działał popularny bar Warszawskich Zakładów Gastronomicznych „Słodycz”.",
+        "Władysław Broniewski, mieszkający czasowo na Woli, napisał wiersz „Kalambury” (z tomu „Troska i pieśń”, 1932), który odnosi się do przedwojennej ulicy."
+      ],
+      "summary_en": "Żelazna Street runs through Ochota and Wola and takes its name from the Żelazna tavern, where capitulation talks were held in 1831. It was partly inside the Warsaw Ghetto, the site of the SS command post at no. 103, and after the war became part of the Dziki Zachód area before the Mirów estate was built.",
+      "ludzie": [
+        {
+          "kto": "Adolf Warski",
+          "rola": "uczestnik narad w lokalu KC KPP przy Żelaznej 89 (1918–1927)"
+        },
+        {
+          "kto": "Maria Koszutska",
+          "rola": "uczestniczka narad w lokalu KC KPP przy Żelaznej 89"
+        },
+        {
+          "kto": "Julian Leszczyński",
+          "rola": "uczestnik narad w lokalu KC KPP przy Żelaznej 89"
+        },
+        {
+          "kto": "Małgorzata Fornalska",
+          "rola": "uczestniczka narad w lokalu KC KPP przy Żelaznej 89"
+        },
+        {
+          "kto": "Tadeusz Kossak",
+          "rola": "autor projektu osiedla Mirów"
+        },
+        {
+          "kto": "Adam Czerniaków",
+          "rola": "przewodniczący Judenratu, który w dzienniku zanotował opróżnienie domu przy Żelaznej 103"
+        }
+      ],
+      "dawne_nazwy": [
+        "ul. Lindleya (odcinek na południe od Alej Jerozolimskich, od 1933)"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ulica_%C5%BBelazna_przy_ulicy_Ogrodowej_w_Warszawie_2023.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Ulica Żelazna w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%BBelazna_w_Warszawie"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł o ulicy bez współrzędnych poszczególnych adresów; współrzędne to punkt artykułu. Adresy Żelazna 89, 103 i 63 są opisane w tym rekordzie i w rekordzie Befehlstelle. W artykule o Żelaznej wymienione są jako nieistniejące: Dworzec Kaliski i Mennica Polska przy Waliców 11 (zob. uwagi w rekordzie gabinet-numizmatyczny-mennicy-polskiej)."
+    },
+    {
+      "id": "befehlstelle-zelazna-103",
+      "nazwa": "Befehlstelle – Żelazna 103 (dowództwo SS w getcie)",
+      "name_en": "Befehlstelle, Żelazna 103 (SS command post in the Warsaw Ghetto)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Żelazna 103",
+      "adres_historyczny": null,
+      "lat": 52.241606,
+      "lon": 20.985341,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 771,
+      "okres": "1942–1943",
+      "fakty": [
+        "Pod koniec lat 30. przy północnym końcu ul. Żelaznej zbudowano na działce rodziny Serkowskich trzy czteropiętrowe kamienice modernistyczne, nr 99, 101 i 103.",
+        "22 lipca 1942 roku SS z Operacji Reinhardt, pod dowództwem SS-Hauptsturmführera Hermanna Höfle, zajęło kamienicę nr 103; mieszkańcom dano 15 minut na opuszczenie domu.",
+        "Adam Czerniaków zanotował w dzienniku, że dom opróżniono „dla potrzeb niemieckich oficerów” prowadzących przesiedlenie, a meble zajęto.",
+        "Z tego budynku Höfle i jego podwładni kierowali deportacjami warszawskich Żydów do obozu zagłady w Treblince.",
+        "Po Grossaktion w getcie pozostało około 60 tys. Żydów; na Żelaznej 103 miał siedzibę Sonderkommando der Sicherheitspolizei-Umsiedlung pod dowództwem SS-Untersturmführera Karla Georga Brandta.",
+        "Budynek służył także jako areszt tymczasowy; gdy piwnice nr 103 się przepełniły, więzienie rozszerzono na piwnicę nr 101 – tzw. „ciemnicę”.",
+        "Egzekucje odbywały się na podwórzu nr 101 lub, według części źródeł, nr 103; ofiary pochowano na cmentarzu żydowskim przy Okopowej.",
+        "19 kwietnia 1943 roku Niemcy uwięzili w Befehlstelle przewodniczącego Judenratu Marka Lichtenbauma i pozostałych członków rady; cztery dni później wywieziono ich na Umschlagplatz, gdzie zostali straceni.",
+        "Tego samego dnia grupa ŻZW pod dowództwem Natana Szulca próbowała odbić więźniów; atak się nie powiódł.",
+        "W sierpniu 1944 roku budynek był jednym z głównych punktów niemieckiego oporu w ruinach getta; ostrzelano go z zdobytego przez powstańców czołgu Panther.",
+        "Budynek przetrwał wojnę i nadal jest mieszkalny; w latach 50. zawieszono na nim tablicę projektu Karola Tchorka."
+      ],
+      "ciekawostki": [
+        "Wśród Żydów pracujących w Befehlstelle byli m.in. funkcjonariusze Żydowskiej Policji Porządkowej, stenograf, fryzjer oraz kilkunastu kierowców riksz.",
+        "Jeden z byłych policjantów żydowskich wspominał, że pracowników było 40–50, a z rodzinami ok. 100 osób; mieszkali w sąsiednich kamienicach nr 99 i 101."
+      ],
+      "summary_en": "Żelazna 103 was a tenement in the Warsaw Ghetto that the SS took over in July 1942 as a command post for the Grossaktion deportations to Treblinka. It also served as a prison and execution site, was attacked by the ŻZW in April 1943 and was shelled by insurgents in August 1944. The building survived the war and is still residential.",
+      "ludzie": [
+        {
+          "kto": "Hermann Höfle",
+          "rola": "SS-Hauptsturmführer, kierował deportacjami z Żelaznej 103"
+        },
+        {
+          "kto": "Karl Georg Brandt",
+          "rola": "SS-Untersturmführer, dowódca komanda z siedzibą przy Żelaznej 103"
+        },
+        {
+          "kto": "Adam Czerniaków",
+          "rola": "przewodniczący Judenratu; odnotował w dzienniku opróżnienie domu"
+        },
+        {
+          "kto": "Marek Lichtenbaum",
+          "rola": "przewodniczący Judenratu, uwięziony w Befehlstelle 19 kwietnia 1943"
+        },
+        {
+          "kto": "Natan Szulc",
+          "rola": "dowódca grupy ŻZW, która próbowała odbić więźniów"
+        },
+        {
+          "kto": "Moses Meisler",
+          "rola": "naczelnik więzienia, funkcjonariusz Żydowskiej Policji Porządkowej"
+        },
+        {
+          "kto": "Marceli Czapliński",
+          "rola": "oficer łącznikowy z żydowskimi instytucjami w getcie"
+        }
+      ],
+      "dawne_nazwy": [
+        "Befehlstelle (dowództwo SS, 1942–1943)"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/56/Tablica_pami%C4%85tkowa_ul._%C5%BBelazna_103.JPG",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Befehlstelle",
+          "url": "https://en.wikipedia.org/wiki/Befehlstelle"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Liczba Żydów pracujących w Befehlstelle różni się między źródłami (kilkunastu w monografii; 40–50 wg wspomnień jednego z policjantów). Tablica pamiątkowa ma nieprecyzyjny napis (o torturach w lochach Gestapo). Artykuł angielski, fakty przepisane po polsku."
+    },
+    {
+      "id": "fabryka-philips-karolkowa",
+      "nazwa": "Fabryka lamp Philips / Zakłady Wytwórcze Lamp Elektrycznych (ul. Karolkowa 36–44)",
+      "name_en": "Philips lamp factory / Zakłady Wytwórcze Lamp Elektrycznych, Karolkowa",
+      "typ": "nieistniejacy-budynek",
+      "adres_dzis": "ul. Karolkowa 36–44 (teren zlikwidowanego zakładu)",
+      "adres_historyczny": "ul. Karolkowa 36–44 (Polskie Zakłady Philips S.A., 1928)",
+      "lat": 52.231833,
+      "lon": 20.978111,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 455,
+      "okres": "1922–2011",
+      "fakty": [
+        "W 1922 roku Polsko-Holenderska Fabryka Lampek Elektrycznych, założona przez koncern N.V. Philips, rozpoczęła przy ul. Karolkowej 36 budowę pierwszej hali produkcyjnej.",
+        "W 1923 roku uruchomiono produkcję żarówek przy ul. Karolkowej.",
+        "W 1928 roku zmieniono nazwę na Polskie Zakłady Philips S.A., Warszawa, ul. Karolkowa 36–44.",
+        "W 1938 roku roczna produkcja wynosiła 4 000 000 sztuk żarówek; w asortymencie były też radioodbiorniki i termosy.",
+        "W latach 1939–1944 zajęta przez Niemców fabryka produkowała m.in. aparaty nadawczo-odbiorcze do okrętów podwodnych, czołgów i samolotów.",
+        "W 1944 roku fabrykę zajęli powstańcy; po klęsce powstania maszyny i urządzenia zdemontowano i wywieziono do Niemiec i Austrii, a budynki spalono.",
+        "9 grudnia 1948 roku z połączenia z Państwową Fabryką Lamp Radiowych z Dzierżoniowa powstało przedsiębiorstwo państwowe Zakłady Wytwórcze Lamp Elektrycznych z siedzibą przy ul. Karolkowej.",
+        "22 lipca 1949 roku uruchomiono produkcję lamp elektronowych, świetlówek, skrętek i elektrod.",
+        "W 1964 roku produkcję żarówek przekazano do fabryk w Pabianicach, Katowicach i Pile; zakład warszawski został jedną z jednostek Zakładów Wytwórczych Lamp Elektrycznych.",
+        "W 1991 roku zakład w Warszawie został sprywatyzowany, a w tym samym roku rozbity na cztery spółki.",
+        "W 1994 roku budynek i teren nabył Universal SA; prace modernizacyjne przerwano z powodu – według oficjalnych danych – zbyt dużego stężenia rtęci.",
+        "W 2011 roku budynek został wyburzony."
+      ],
+      "ciekawostki": [
+        "Zakłady były jednymi z pierwszych przedsiębiorstw w Warszawie, które wprowadziły gimnastykę w czasie pracy.",
+        "Po opuszczeniu obiektu część hal wynajmowano m.in. miłośnikom paintballa jako pole walki."
+      ],
+      "summary_en": "The Philips lamp factory on Karolkowa Street, founded in 1922, became the state Zakłady Wytwórcze Lamp Elektrycznych after the war. Seized by insurgents in 1944, its machines were removed to Germany and Austria after the uprising. It was privatised in 1991, left derelict after 1994 and demolished in 2011.",
+      "ludzie": [],
+      "dawne_nazwy": [
+        "Polsko-Holenderska Fabryka Lampek Elektrycznych (1922–1928)",
+        "Polskie Zakłady Philips S.A. (1928–1948)",
+        "Zakłady Wytwórcze Lamp Elektrycznych im. Róży Luksemburg (od 1948)"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Zak%C5%82ady_Wytw%C3%B3rcze_Lamp_Elektrycznych_im._R%C3%B3%C5%BCy_Luksemburg_operacja_nanoszenia_luminoforu.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Zakłady Wytwórcze Lamp Elektrycznych im. Róży Luksemburg",
+          "url": "https://pl.wikipedia.org/wiki/Zak%C5%82ady_Wytw%C3%B3rcze_Lamp_Elektrycznych_im._R%C3%B3%C5%BCy_Luksemburg"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono z istniejącym id fabryka-philips-karolkowa (ten sam zakład). Dane o 1944 i wywozie maszyn z artykułu; daty budowy hal w 1922–1953 wg artykułu."
+    },
+    {
+      "id": "elektrownia-tramwajowa-muzeum-powstania",
+      "nazwa": "Elektrownia Tramwajowa (dziś Muzeum Powstania Warszawskiego)",
+      "name_en": "Tramway Power Station (today Warsaw Rising Museum)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Przyokopowa 28",
+      "adres_historyczny": null,
+      "lat": 52.232892,
+      "lon": 20.981033,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 364,
+      "okres": "1905–dziś",
+      "fakty": [
+        "Neoromański budynek elektrowni tramwajowej wzniesiono w latach 1905–1909 przy ul. Przyokopowej 28.",
+        "Lokalizację wybrano ze względu na bliskość stacji towarowej Kolei Warszawsko-Wiedeńskiej, skąd miał być dostarczany węgiel kamienny.",
+        "7 lutego 1908 roku elektrownia została uruchomiona; 26 marca 1908 roku na ulice miasta wyjechał pierwszy tramwaj elektryczny.",
+        "13 kwietnia 1917 roku wybuchł kocioł; zginął jeden pracownik, a elektrownia ruszyła ponownie po sześciu tygodniach.",
+        "Podczas obrony Warszawy we wrześniu 1939 roku elektrownia została uszkodzona, co zatrzymało komunikację tramwajową w mieście 8 września.",
+        "Do 1939 roku łączna moc elektrowni wzrosła do 10 500 kW.",
+        "6 sierpnia 1944 roku, w czasie powstania warszawskiego, elektrownia została zbombardowana przez Niemców, a po upadku powstania mury wysadzono.",
+        "W 1945 roku zdecydowano o odbudowie elektrowni jako ciepłowni; budynek przekazano Stołecznemu Przedsiębiorstwu Energetyki Cieplnej.",
+        "W 2003 roku władze miasta zdecydowały o ulokowaniu tu Muzeum Powstania Warszawskiego, które działa tu od 2004 roku.",
+        "W lutym 2005 roku oddano do użytku kaplicę muzealną, nadając jej tytuł błogosławionego Józefa Stanka, kapelana poległego w powstaniu.",
+        "Grób pracownika elektrowni Piotra Lędziakowskiego, który zginął w wybuchu kotła, znajduje się na Powązkach (kwatera 220)."
+      ],
+      "ciekawostki": [
+        "Na pomniku Piotra Lędziakowskiego na Powązkach są fragmenty kratownic z hali elektrowni, a zawieszone między słupkami łańcuchy zrobiono z fragmentów łańcuchów napędowych.",
+        "Z tyłu budynku powstała 35-metrowa wieża z Znakiem Polski Walczącej.",
+        "W latach 70. budynek zeszpecono szarym tynkiem „barankiem”; po przebudowie pod spodem odsłonięto klinkierową cegłę."
+      ],
+      "summary_en": "Built in 1905–1909, the neo-Romanesque tramway power station at Przyokopowa 28 supplied Warsaw's first electric trams in 1908. It was heavily damaged in 1939 and bombed in 1944, and has housed the Warsaw Rising Museum since 2004.",
+      "ludzie": [
+        {
+          "kto": "Józef Stanek",
+          "rola": "błogosławiony, kapelan poległy w powstaniu; patron kaplicy muzealnej"
+        },
+        {
+          "kto": "Piotr Lędziakowski",
+          "rola": "pracownik elektrowni, zginął w wybuchu kotła w 1917 roku"
+        },
+        {
+          "kto": "Józef kardynał Glemp",
+          "rola": "zezwolił na budowę kaplicy dekretem z 24 czerwca 2004 roku"
+        }
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Elektrownia_tramwajowa_w_Warszawie_1908.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Elektrownia Tramwajowa w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Elektrownia_Tramwajowa_w_Warszawie"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono z istniejącym id elektrownia-tramwajowa-muzeum-powstania."
+    },
+    {
+      "id": "warsaw-spire",
+      "nazwa": "Warsaw Spire (kompleks biurowy, plac Europejski 1, 2, 6)",
+      "name_en": "Warsaw Spire",
+      "typ": "budynek",
+      "adres_dzis": "plac Europejski 1, 2, 6",
+      "adres_historyczny": "w miejscu wyburzonych budynków Wojskowych Zakładów Graficznych",
+      "lat": 52.23316,
+      "lon": 20.98476,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 502,
+      "okres": "2011–2016 (budowa i otwarcie); 2019 zmiana właściciela",
+      "fakty": [
+        "Prace budowlane rozpoczęto w połowie 2011 roku od ścian szczelinowych ograniczających bryłę budynku na pięciu kondygnacjach podziemnych.",
+        "Ściany szczelinowe sięgają 55 metrów poniżej poziomu terenu i według projektu są najgłębszymi wykonanymi dotąd w Polsce.",
+        "Pierwszym właścicielem była belgijska firma Ghelamco.",
+        "Kompleks oddano do użytku 12 maja 2016 roku; wieżowiec ma 180 m, a z iglicami 220 m.",
+        "W styczniu 2016 roku wieżowiec po montażu iglic (24 elementy) osiągnął wysokość 220 metrów.",
+        "W kwietniu 2014 roku Rada Warszawy, na wniosek Ghelamco, nadała placowi nazwę plac Europejski.",
+        "W grudniu 2011 roku Warsaw Spire zwyciężył w konkursie Eurobuild Awards 2011 w kategorii „Wybitny Projekt Architektoniczny Roku w Polsce”.",
+        "3 lipca 2014 roku doszło do pożaru na dachu jednego z niższych budynków kompleksu; nikt nie ucierpiał.",
+        "Między sierpniem 2017 a majem 2018 roku kilkakrotnie interweniowała straż pożarna przy samozapłonach motocykli i motorowerów zaparkowanych przed budynkiem.",
+        "W 2019 roku nieruchomość przejęła austriacka spółka Immofinanz za 386 mln euro.",
+        "Wewnątrz kompleksu posadzono 140 drzew i ok. 14 tys. innych roślin; powstały też jeziorko i 120-metrowy kaskadowy strumień."
+      ],
+      "ciekawostki": [
+        "Lustrzany daszek nad wejściem skupiał promienie słoneczne i podpalał zaparkowane jednoślady; po interwencji władz właściciel okleił go folią przyciemniającą i pożary ustały.",
+        "Podziemny parking ma ponad 1000 miejsc parkingowych."
+      ],
+      "summary_en": "Warsaw Spire is an office complex at Plac Europejski, 180 m tall (220 m with spires), built in 2011–2016 on the site of the demolished Military Graphic Works. Developed by Ghelamco, it was sold to Immofinanz in 2019 for €386 million.",
+      "ludzie": [],
+      "dawne_nazwy": [
+        "Wojskowe Zakłady Graficzne (teren zabudowy wyburzonej przed budową)"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Warsaw_Spire_2019.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Warsaw Spire",
+          "url": "https://pl.wikipedia.org/wiki/Warsaw_Spire"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł dotyczy głównie inwestycji; historia miejsca ogranicza się do wyburzonych budynków Wojskowych Zakładów Graficznych i działki z budynkiem wydawnictwa Bellona."
+    },
+    {
+      "id": "kladka-pamieci",
+      "nazwa": "Kładka Pamięci (ul. Chłodna przy Żelaznej)",
+      "name_en": "Memorial Footbridge (Chłodna Street)",
+      "typ": "pomnik",
+      "adres_dzis": "ul. Chłodna, skrzyżowanie z ul. Żelazną",
+      "adres_historyczny": "most nad ul. Chłodną między kamienicami Chłodna 23 i 26 (getto warszawskie, 1942)",
+      "lat": 52.237703,
+      "lon": 20.989075,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 721,
+      "okres": "1942 (most); 2011 (pomnik)",
+      "fakty": [
+        "Drewniany most nad ul. Chłodną zbudowano w getcie na wysokości drugiego piętra, między kamienicami Chłodna 23 i 26.",
+        "Most zaprojektowała niemiecka firma Schmied i Muentzermann; oddano go do użytku 26 stycznia 1942 roku.",
+        "Był największą z czterech takich konstrukcji w dzielnicy zamkniętej; ułatwiał przemieszczanie się między małym a dużym gettem przez ruchliwe skrzyżowanie z Żelazną.",
+        "Most został rozebrany w sierpniu 1942 roku, po zmniejszeniu obszaru getta w czasie wielkiej akcji deportacyjnej.",
+        "Ruch na skrzyżowaniu regulowali polscy i żydowscy policjanci za pomocą specjalnej bramy.",
+        "Pomnik powstał w ramach rewitalizacji wschodniego odcinka ulicy Chłodnej w latach 2010–2011; instalację uruchomiono 1 października 2011 roku.",
+        "Projektantem instalacji jest Tomasz Lec; składa się z dwóch par ponad dziesięciometrowych słupów obłożonych brązem krzemowym oraz czterech światłowodów o długości 27 metrów.",
+        "Po północnej stronie Chłodnej w dwóch słupach zamontowano cztery stereoskopy z trójwymiarowymi zdjęciami mostu oraz dźwiękami tramwajów i śpiewu kantora."
+      ],
+      "ciekawostki": [
+        "Most nazywano „mostem westchnień”, bo mieszkańcy getta mogli z niego zobaczyć niedostępną dla nich część miasta.",
+        "Kładka jest trzecim upamiętnieniem tego mostu na skrzyżowaniu – po muralu z kwietnia 2007 roku i pomniku granic getta z listopada 2008 roku."
+      ],
+      "summary_en": "The Memorial Footbridge on Chłodna Street commemorates a wooden bridge that spanned the street inside the Warsaw Ghetto from January to August 1942. The 2011 installation of bronze-clad columns and light-fibre lines recalls its outline.",
+      "ludzie": [
+        {
+          "kto": "Tomasz Lec",
+          "rola": "projektant instalacji pomnika"
+        }
+      ],
+      "dawne_nazwy": [
+        "most w getcie warszawskim nad ul. Chłodną (1942)"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Ghetto_Footbridge_commemoration_Chlodna_Street_in_Warsaw_at_night.JPG",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Kładka Pamięci",
+          "url": "https://pl.wikipedia.org/wiki/K%C5%82adka_Pami%C4%99ci"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł nie podaje adresu pomnika poza skrzyżowaniem z Żelazną. Źródłem historycznym jest też Żydowski Instytut Historyczny (przywołany w artykule)."
+    },
+    {
+      "id": "cmentarz-ewangelicko-reformowany",
+      "nazwa": "Cmentarz ewangelicko-reformowany (Wola)",
+      "name_en": "Evangelical Reformed Cemetery, Warsaw",
+      "typ": "cmentarz",
+      "adres_dzis": "dzielnica Wola (adres nie podany w artykule)",
+      "adres_historyczny": null,
+      "lat": 52.239444,
+      "lon": 20.973056,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 560,
+      "okres": "1792–dziś",
+      "fakty": [
+        "Cmentarz założono w 1792 roku w dzielnicy Wola; jest to historyczny cmentarz kalwiński.",
+        "Na terenie cmentarza toczyły się walki podczas powstania kościuszkowskiego (1794), powstania listopadowego (1830–1831) i powstania warszawskiego (1944).",
+        "Ogrodzenie, pomniki i architektura zostały zniszczone w 1944 roku i odbudowane w drugiej połowie XX wieku.",
+        "Kaplica Kronenbergów została wpisana do rejestru zabytków.",
+        "Pomnik ofiar okupacji hitlerowskiej wykonano z gruzu zniszczonych nagrobków.",
+        "Cmentarz jest utrzymywany przez Polski Kościół Ewangelicko-Reformowany, ale przyjmuje pochówki także z innych wyznań protestanckich oraz anglikanów.",
+        "Pochowani tu są m.in. Katarzyna Sowińska (1776–1860), żona gen. Józefa Sowińskiego, oraz Stefan Żeromski (1864–1925) i Jeremi Przybora (1915–2004)."
+      ],
+      "ciekawostki": [
+        "Salomon Musonius (1724–1790), pierwszy proboszcz parafii ewangelicko-reformowanej w Warszawie, spoczywa na tym cmentarzu.",
+        "Anna German (1936–1982), polska piosenkarka pochodzenia niemiecko-holenderskiego, również tu została pochowana."
+      ],
+      "summary_en": "The Evangelical Reformed Cemetery in Wola was founded in 1792. It saw fighting in three uprisings, its fence, monuments and architecture were destroyed in 1944 and later rebuilt, and the Kronenberg Chapel is a listed monument.",
+      "ludzie": [
+        {
+          "kto": "Salomon Musonius",
+          "rola": "pierwszy proboszcz parafii ewangelicko-reformowanej w Warszawie (1724–1790)"
+        },
+        {
+          "kto": "Katarzyna Sowińska",
+          "rola": "żona gen. Józefa Sowińskiego (1776–1860)"
+        },
+        {
+          "kto": "Ludwik Wincenty Norblin",
+          "rola": "przedsiębiorca (1836–1914)"
+        },
+        {
+          "kto": "Lucyna Ćwierczakiewiczowa",
+          "rola": "pisarka, autorka książek kucharskich (1829–1901)"
+        },
+        {
+          "kto": "Stanisław Kronenberg",
+          "rola": "finansista (1846–1894)"
+        },
+        {
+          "kto": "Józef Simmler",
+          "rola": "malarz (1823–1868)"
+        },
+        {
+          "kto": "Stefan Żeromski",
+          "rola": "pisarz (1864–1925)"
+        },
+        {
+          "kto": "Jan Baudouin de Courtenay",
+          "rola": "językoznawca (1845–1929)"
+        },
+        {
+          "kto": "Jeremi Przybora",
+          "rola": "poeta, pisarz, aktor i piosenkarz (1915–2004)"
+        },
+        {
+          "kto": "Anna German",
+          "rola": "piosenkarka (1936–1982)"
+        }
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/0/09/Cmentarz_ewangelicko-reformowany_w_Warszawie_09.JPG",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Evangelical Reformed Cemetery, Warsaw",
+          "url": "https://en.wikipedia.org/wiki/Evangelical_Reformed_Cemetery,_Warsaw"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł angielski; fakty przepisane po polsku. Nie podano adresu cmentarza."
+    },
+    {
+      "id": "kolonia-wawelberga",
+      "nazwa": "Kolonia Wawelberga (osiedle tanich mieszkań robotniczych)",
+      "name_en": "Wawelberg Colony (workers' housing estate)",
+      "typ": "budynek",
+      "adres_dzis": "ul. Górczewska 15 i 15A; ul. Wawelberga 3",
+      "adres_historyczny": null,
+      "lat": 52.236579,
+      "lon": 20.968148,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 736,
+      "okres": "1898–dziś",
+      "fakty": [
+        "Zespół budynków zbudowano w latach 1898–1900 z darowizny Hipolita i Ludwiki Wawelbergów w wysokości 300 tys. rubli, z okazji 50-lecia Domu Bankowego Hipolit Wawelberg.",
+        "Projektantem był Edward Goldberg; koszt budowy wyniósł 558 tys. rubli.",
+        "Kolonia była jedną z pierwszych tanich osiedli robotniczych w Polsce.",
+        "Składała się z trzech czteropiętrowych budynków mieszkalnych z 355 mieszkaniami, w większości jednoizbowymi, a także szkoły, pralni, domu dziecka i kąpieliska.",
+        "Według pierwotnych planów dochody z czynszów miały finansować kolejne budynki, ale były wydatkowane na utrzymanie kolonii i więcej budynków mieszkalnych już nie powstało.",
+        "W domu przy ul. Górczewskiej 15 powołano 10 marca 1942 roku Wolski Komitet PPR; upamiętnia to tablica na budynku.",
+        "Na frontowej ścianie od ul. Górczewskiej jest tablica Tchorka upamiętniająca dwie egzekucje uliczne, w grudniu 1943 roku i w styczniu 1944 roku.",
+        "Od 1973 roku w domu przy Górczewskiej 15 działa cukiernia znana z pączków, założona w 1925 roku przez Władysława Zagoździńskiego."
+      ],
+      "ciekawostki": [
+        "Mimo darowizny na kolejne budynki z czynszów nie powstał już żaden nowy dom.",
+        "W bramie budynku przy Górczewskiej 15 znajduje się tablica upamiętniająca Hipolita i Ludwikę Wawelbergów."
+      ],
+      "summary_en": "The Wawelberg Colony in Wola, built in 1898–1900 with a donation from banker Hipolit Wawelberg and his wife Ludwika, was one of the first cheap workers' housing estates in Poland. Its buildings carry plaques to the Wawelbergs and to the 1942 PPR committee in Wola, and a pastry shop has operated there since 1973.",
+      "ludzie": [
+        {
+          "kto": "Hipolit Wawelberg",
+          "rola": "bankier i filantrop, darczyńca kolonii"
+        },
+        {
+          "kto": "Ludwika Wawelberg",
+          "rola": "współdarczyńca kolonii"
+        },
+        {
+          "kto": "Edward Goldberg",
+          "rola": "projektant zespołu"
+        },
+        {
+          "kto": "Władysław Zagoździński",
+          "rola": "założyciel cukierni przy Górczewskiej 15 (1925)"
+        }
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Dom_przy_ulicy_Wawelberga_3_w_Warszawie_2026.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Kolonia Wawelberga",
+          "url": "https://pl.wikipedia.org/wiki/Kolonia_Wawelberga"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł nie opisuje historii zespołu po 1942 roku poza cukiernią i tablicami. Zdjęcie w artykule pochodzi z 2026 roku (według nazwy pliku)."
+    },
+    {
+      "id": "osiedle-czyste",
+      "nazwa": "Czyste (osiedle i obszar MSI na Woli)",
+      "name_en": "Czyste (estate and MSI area in Wola)",
+      "typ": "miejsce",
+      "adres_dzis": "obszar MSI Czyste na południu Woli: między torami kolejowymi, al. Solidarności i ul. Wolską, ul. Towarową i linią kolejową Warszawa Zachodnia – Warszawa Centralna",
+      "adres_historyczny": null,
+      "lat": 52.228333,
+      "lon": 20.9725,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 947,
+      "okres": "XIX w.–dziś (włączona do Warszawy w 1916)",
+      "fakty": [
+        "W 1827 roku wieś Czyste liczyła 16 domostw i 223 mieszkańców.",
+        "W czasach Królestwa Polskiego gmina Czyste obejmowała nie tylko wieś Czyste, ale też część dzisiejszej Woli (Koło, Wielką Wolę Warszawską i znaczną część Młynowa) oraz spore fragmenty Ochoty.",
+        "8 kwietnia 1916 roku generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające od 1 kwietnia 1916 roku m.in. gminę Czyste do Warszawy."
+      ],
+      "ciekawostki": [],
+      "summary_en": "Czyste is a district area (MSI) in southern Wola, named after a village that became part of Warsaw in 1916. Its historical rural commune covered much of present-day Wola and parts of Ochota.",
+      "ludzie": [],
+      "dawne_nazwy": [
+        "gmina Czyste (Królestwo Polskie)",
+        "wieś Czyste"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Warszawa_Czyste_Muzeum_Gazownictwa.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Czyste (Warszawa)",
+          "url": "https://pl.wikipedia.org/wiki/Czyste_(Warszawa)"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono z istniejącym id osiedle-czyste. Artykuł opisuje głównie obszar administracyjny (MSI) i historię gminy; niewiele o samym osiedlu."
+    },
+    {
+      "id": "gabinet-numizmatyczny-mennicy-polskiej",
+      "nazwa": "Gabinet Numizmatyczny Mennicy Polskiej (ul. Waliców 11)",
+      "name_en": "Numismatic Cabinet of the Mint of Poland (Waliców 11)",
+      "typ": "miejsce",
+      "adres_dzis": "ul. Waliców 11 (biurowiec Aurum)",
+      "adres_historyczny": null,
+      "lat": 52.234136,
+      "lon": 20.992589,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 952,
+      "okres": "1924/1928–2017",
+      "fakty": [
+        "Gabinet Numizmatyczny został utworzony w 1928 roku (według innych źródeł w 1924 roku).",
+        "Placówka zgromadziła ponad 70 tys. eksponatów, głównie monet obiegowych i kolekcjonerskich, orderów i medali, a także narzędzi mennicznych i książek.",
+        "Wśród zbiorów były przedmioty wytwarzane przez Mennicę Polską od czasów Stanisława Augusta Poniatowskiego i założonej przez niego w 1766 roku Mennicy Warszawskiej.",
+        "Większość zbiorów została utracona podczas II wojny światowej.",
+        "Zbiory prezentowano w jednym z pomieszczeń na wysokim parterze biurowca Aurum przy ul. Waliców 11, należącego do Mennicy Polskiej.",
+        "W kwietniu 2017 roku gabinet zamknięto do odwołania."
+      ],
+      "ciekawostki": [],
+      "summary_en": "The Numismatic Cabinet of the Mint of Poland, opened in 1928 (or 1924), held over 70,000 items in the Aurum office building at Waliców 11 in Wola. Most of its collection was lost in the Second World War, and it closed in April 2017.",
+      "ludzie": [],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Gabinet_Numizmatyczny_Mennicy_Polskiej_02.JPG",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Gabinet Numizmatyczny Mennicy Polskiej",
+          "url": "https://pl.wikipedia.org/wiki/Gabinet_Numizmatyczny_Mennicy_Polskiej"
+        }
+      ],
+      "pewnosc": "srednia",
+      "uwagi": "Daty powstania różnią się w źródłach (1924 vs 1928). W artykule o ul. Żelaznej Mennica Polska przy Waliców 11 (róg Żelaznej) figuruje jako nieistniejący obiekt, a tu jako działający biurowiec Aurum; wymaga weryfikacji. Artykuł nie podaje, kiedy powstał budynek Aurum."
+    },
+    {
+      "id": "siedmiogrodzka",
+      "nazwa": "ul. Siedmiogrodzka",
+      "name_en": "Siedmiogrodzka Street",
+      "typ": "ulica",
+      "adres_dzis": "ul. Siedmiogrodzka (Wola), od Karolkowej do Skierniewickiej",
+      "adres_historyczny": null,
+      "lat": 52.23175,
+      "lon": 20.973556,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 587,
+      "okres": "lata 30. XX w.–dziś",
+      "fakty": [
+        "Ulica powstała w latach 30. XX wieku przez wydłużenie ul. Grzybowskiej w kierunku zachodnim, do Skierniewickiej; odcinek między Karolkową a Skierniewicką nazwano Siedmiogrodzką.",
+        "27 lutego 1958 roku poprowadzono tędy pierwszą regularną komunikację miejską – autobus linii „105”.",
+        "Całą północną pierzeję ulicy zajmuje Zajezdnia Tramwajowa Wola.",
+        "Przy ul. Siedmiogrodzkiej 5 znajduje się tablica pamiątkowa Tchorka; pod nr 20 mieści się siedziba Tramwajów Warszawskich.",
+        "Nazwa nawiązuje do Siedmiogrodu, historycznej krainy w centralnej Rumunii."
+      ],
+      "ciekawostki": [
+        "Przy ulicy znajduje się III Liceum Ogólnokształcące im. gen. Józefa Sowińskiego (zob. rekord iii-lo-sowinskiego)."
+      ],
+      "summary_en": "Siedmiogrodzka Street in Wola runs west from Karolkowa Street to Skierniewicka. It was formed in the 1930s as an extension of Grzybowska Street, got its first regular bus line in 1958, and has the Wola tram depot along its north side.",
+      "ludzie": [],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Ulica_Siedmiogrodzka_w_Warszawie_2017.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Ulica Siedmiogrodzka w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Ulica_Siedmiogrodzka_w_Warszawie"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono z istniejącym id siedmiogrodzka."
+    },
+    {
+      "id": "dzialdowska",
+      "nazwa": "ul. Działdowska",
+      "name_en": "Działdowska Street",
+      "typ": "ulica",
+      "adres_dzis": "ul. Działdowska (Wola), przy ul. Wolskiej",
+      "adres_historyczny": null,
+      "lat": 52.235417,
+      "lon": 20.967139,
+      "lokalizacja": "przyblizona",
+      "odleglosc_m": 802,
+      "okres": "1927–dziś",
+      "fakty": [
+        "Ulicę wytyczono w latach 1927–1928 wraz z budową gmachu Zakładu Ubezpieczeń Społecznych pod nr 1.",
+        "Neobarokowy gmach na rogu z ul. Wolską otrzymał bogatą dekorację rzeźbiarską oraz nowoczesne wyposażenie, m.in. kryty basen.",
+        "Od 1946 roku budynek był siedzibą szpitala pediatrycznego, a później Samodzielnego Publicznego Dziecięcego Szpitala Klinicznego.",
+        "W latach 1935–1939 ulicę zabudowano kamienicami i oficynami.",
+        "Zabudowa ulicy w większości przetrwała II wojnę światową.",
+        "Nazwa pochodzi od miasta Działdowo."
+      ],
+      "ciekawostki": [],
+      "summary_en": "Działdowska Street in Wola was laid out in 1927–1928 together with the Social Insurance Institution (ZUS) building at no. 1, a neo-Baroque edifice that later housed a children's hospital. Most of its 1935–1939 tenements survived the war.",
+      "ludzie": [],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ulica_Dzia%C5%82dowska_przy_ulicy_Wolskiej_w_Warszawie_2026.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Ulica Działdowska w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Ulica_Dzia%C5%82dowska_w_Warszawie"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł krótki; poza budynkiem nr 1 nie podaje szczegółów poszczególnych kamienic."
+    },
+    {
+      "id": "prosta-tower",
+      "nazwa": "Prosta Tower (biurowiec)",
+      "name_en": "Prosta Tower",
+      "typ": "budynek",
+      "adres_dzis": "Wola, przylega od północy do Łucka City (adres nie podany w artykule)",
+      "adres_historyczny": null,
+      "lat": 52.231111,
+      "lon": 20.988056,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 819,
+      "okres": "2006–2011",
+      "fakty": [
+        "Pozwolenia na budowę uzyskano w 2006 roku; budowę rozpoczęto w 2007 roku, a zakończono we wrześniu 2011 roku.",
+        "Budynek ma 19 kondygnacji nadziemnych i pięć podziemnych, w których mieści się parking.",
+        "Projektantem był Stefan Kuryłowicz.",
+        "Pierwotnie miał być budynkiem mieszkalnym; inwestor Marvipol zmienił przeznaczenie na biurowe z powodu kryzysu finansowego z 2008 roku.",
+        "Ażurowa elewacja, która powstała w wyniku tej zmiany, ogranicza nasłonecznienie wnętrz o ok. 40%."
+      ],
+      "ciekawostki": [
+        "Budynek przylega od północy do Łucka City, będącego w Polsce układem parowym (pairing), rzadko spotykanym gdzie indziej."
+      ],
+      "summary_en": "Prosta Tower is a 19-storey office building in Wola, built in 2007–2011 by Marvipol. It was designed as housing but turned into offices during the 2008 financial crisis, which gave it its openwork facade.",
+      "ludzie": [
+        {
+          "kto": "Stefan Kuryłowicz",
+          "rola": "projektant budynku"
+        }
+      ],
+      "dawne_nazwy": [],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/55/POL_Warszawa_Prosta_Tower_01.jpg",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Prosta Tower",
+          "url": "https://en.wikipedia.org/wiki/Prosta_Tower"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Artykuł angielski i krótki. Uwzględniony, bo podaje historię budynku (zmiana przeznaczenia), w przeciwieństwie do Prime Corporate Center (pominięty)."
+    },
+    {
+      "id": "pomnik-wspolnego-meczenstwa-zydow-i-polakow",
+      "nazwa": "Pomnik Wspólnego Męczeństwa Żydów i Polaków (ul. Gibalskiego 21)",
+      "name_en": "Monument of Jews and Poles Common Martyrdom",
+      "typ": "pomnik",
+      "adres_dzis": "ul. Gibalskiego 21 (przy cmentarzu żydowskim na Okopowej)",
+      "adres_historyczny": "dawny stadion SKRA, teren masowych egzekucji w czasie okupacji",
+      "lat": 52.243528,
+      "lon": 20.974306,
+      "lokalizacja": "dokladna",
+      "odleglosc_m": 904,
+      "okres": "1929–1939 (stadion); 1940–1943 (egzekucje); 1989 (pomnik)",
+      "fakty": [
+        "W latach 1929–1939 na tym terenie było boisko Sportowego Klubu Robotniczo-Akademickiego SKRA.",
+        "Po zajęciu Warszawy przez Niemców zakazano uprawiania sportu; gdy powstało getto, stadion stał się miejscem masowej eksterminacji Żydów i Polaków.",
+        "W latach 1940–1943 Niemcy rozstrzelali i pogrzebali na terenie stadionu ponad siedem tysięcy osób.",
+        "Pochowano tu także ciała 140 Polaków i Żydów rozstrzelanych 27 marca 1943 roku na Pawiaku w odwecie za akcję pod Arsenałem.",
+        "Bezpośrednio po wojnie ekshumowano stąd ciała zabitych działaczy lewicowych oraz 6588 ciał zidentyfikowanych jako żydowskie, które złożono na cmentarzu Powstańców przy ul. Wolskiej.",
+        "We wrześniu 1988 roku przy wykopach pod wieżowiec przy ul. Gibalskiego odkryto ludzkie szczątki; prace wstrzymano.",
+        "13 grudnia 1988 roku szczątki złożono w betonowych niszach-katakumbach z zachowaniem obrzędów judaistycznych i rzymskokatolickich; uczestniczyło w tym 21 rabinów i biskup Henryk Muszyński.",
+        "We wrześniu 1989 roku stanął pomnik w obecnej formie."
+      ],
+      "ciekawostki": [
+        "To jedyny tego rodzaju pomnik na świecie – zarazem cmentarz-mauzoleum – wzniesiony na zbiorowej mogile Żydów i Polaków.",
+        "W uroczyste dni na szczycie obelisku płonie gazowy płomień."
+      ],
+      "summary_en": "The Monument of Jews and Poles Common Martyrdom in Warsaw, at Gibalskiego 21 beside the Jewish cemetery on Okopowa, stands on the site of the former SKRA sports ground where Germans executed and buried over 7,000 Jews and Poles in 1940–1943. It was unveiled in 1989.",
+      "ludzie": [
+        {
+          "kto": "Tadeusz Szumielewicz",
+          "rola": "autor koncepcji pomnika"
+        },
+        {
+          "kto": "Marek Martens",
+          "rola": "autor koncepcji pomnika"
+        },
+        {
+          "kto": "Henryk Muszyński",
+          "rola": "biskup, delegat Episkopatu ds. kontaktów z judaizmem; uczestnik uroczystości pochówku w 1988 roku"
+        },
+        {
+          "kto": "Andrzej Nowakowski",
+          "rola": "artysta, autor medalu wybitego przez Mennicę Państwową z okazji odsłonięcia pomnika"
+        }
+      ],
+      "dawne_nazwy": [
+        "stadion SKRA (1929–1939)"
+      ],
+      "zdjecia": [
+        {
+          "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Monument_of_Jews_and_Poles_Common_Martyrdom_in_Warsaw_06.JPG",
+          "opis": "ilustracja artykułu",
+          "zrodlo": "Wikipedia/Commons",
+          "licencja": "sprawdzić na Commons"
+        }
+      ],
+      "zrodla": [
+        {
+          "tytul": "Wikipedia: Pomnik Wspólnego Męczeństwa Żydów i Polaków w Warszawie",
+          "url": "https://pl.wikipedia.org/wiki/Pomnik_Wsp%C3%B3lnego_M%C4%99cze%C5%84stwa_%C5%BByd%C3%B3w_i_Polak%C3%B3w_w_Warszawie"
+        },
+        {
+          "tytul": "Wikipedia (en): Monument of Jews and Poles Common Martyrdom, Warsaw",
+          "url": "https://en.wikipedia.org/wiki/Monument_of_Jews_and_Poles_Common_Martyrdom,_Warsaw"
+        }
+      ],
+      "pewnosc": "wysoka",
+      "uwagi": "Scalono dwa artykuły (pl i en) o tym samym miejscu. Liczba ofiar: „ponad siedem tysięcy” (pl) i „siedem tysięcy” (en)."
+    }
+  ],
+  "pominiete": [
+    {
+      "title": "Łukasiewicz – ITECH Instytut Innowacji i Technologii",
+      "powod": "instytut badawczo-analityczny (think tank); artykuł opisuje organizację, nie historię miejsca"
+    },
+    {
+      "title": "Pogrom warszawski w 1881",
+      "powod": "zdarzenie w innych częściach miasta (kościół św. Krzyża, Krakowskie Przedmieście, Praga, Nalewki); tekst nie wiąże go z tym miejscem, a współrzędne w pliku nie odpowiadają miejscu zdarzenia"
+    },
+    {
+      "title": "Galeria Stereo",
+      "powod": "galeria sztuki; artykuł o wystawach i artystach, bez historii miejsca"
+    },
+    {
+      "title": "Krajowy Ośrodek Wsparcia Rolnictwa",
+      "powod": "agencja państwowa; siedziba przy Karolkowej 30 bez historii budynku"
+    },
+    {
+      "title": "Impexmetal",
+      "powod": "spółka akcyjna; artykuł o historii firmy, siedziba przy Łuckiej 7/9 bez historii miejsca"
+    },
+    {
+      "title": "Prime Corporate Center",
+      "powod": "biurowiec; artykuł to dane inwestycyjne, najemcy i sprzedaże, bez historii miejsca przed budową"
+    },
+    {
+      "title": "Stowarzyszenie Twórców Form Złotniczych",
+      "powod": "stowarzyszenie; brak związku z miejscem"
+    },
+    {
+      "title": "Bonus Systems Polska",
+      "powod": "spółka; artykuł o działalności firmy, bez związku z miejscem"
+    }
+  ]
+}

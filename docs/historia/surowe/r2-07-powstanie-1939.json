@@ -1,0 +1,373 @@
+[
+  {
+    "id": "rzez-szpitala-lazarza-5-6-viii-1944",
+    "nazwa": "Masakra w Szpitalu św. Łazarza (5–6 VIII 1944)",
+    "name_en": "Massacre at St. Lazarus Hospital (5–6 August 1944)",
+    "typ": "zdarzenie",
+    "adres_dzis": "ul. Leszno / ul. Karolkowa",
+    "adres_historyczny": null,
+    "lat": 52.2364,
+    "lon": 20.9767,
+    "lokalizacja": "przyblizona",
+    "okres": "5–6 VIII 1944",
+    "fakty": [
+      "W „czarną sobotę”, 5 sierpnia 1944 r., Niemcy wymordowali personel i pacjentów Szpitala św. Łazarza przy ulicach Leszno i Karolkowa. Wikipedia podaje, że masakra pochłonęła prawdopodobnie ok. 1200 ofiar, w tym ok. 50 członków personelu, w tym co najmniej siedem sióstr benedyktynek. (Wikipedia: Szpitale na Woli w czasie powstania warszawskiego)",
+      "Osoby zdolne do chodzenia wyprowadzono z pawilonu przy ul. Leszno do szpitalnych piwnic i zabito strzałami w tył głowy; osoby z pawilonu przy ul. Karolkowa rozstrzelano na szpitalnym podwórzu. (Wikipedia: Szpitale na Woli w czasie powstania warszawskiego)",
+      "Według tego samego źródła Niemcy podpalili szpital, prawdopodobnie ok. godz. 23, a część pacjentów zginęła w płomieniach. (Wikipedia: Szpitale na Woli w czasie powstania warszawskiego)",
+      "Masakra była częścią rzezi Woli, w której w dniach 5–7 sierpnia 1944 r. zginęły tysiące mieszkańców dzielnicy. (Wikipedia: Rzeź Woli)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 5 August 1944, during the Wola massacre, German troops murdered staff and patients of St. Lazarus Hospital on Leszno and Karolkowa streets. Sources estimate about 1,200 victims, including around 50 staff members. The hospital was then set on fire.",
+    "ludzie": [
+      {
+        "kto": "Siedem sióstr benedyktynek (co najmniej)",
+        "rola": "zamordowane w szpitalu 5 VIII 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rze%C5%BA_Woli"
+      },
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data i charakter zdarzenia zgodne w obu artykułach Wikipedii. Liczby ofiar są szacunkami i różnią się między źródłami (dla całej rzezi Woli od 30 tys. do 65 tys., a niektórzy badacze mówią o nie więcej niż 15 tys.). Współrzędne przybliżone, z rekordu szpital-sw-lazarza. Źródła to Wikipedia; przed użyciem w aplikacji warto sprawdzić jedno źródło pierwotne (np. IPN, Muzeum Woli).",
+    "odleglosc_m": 160
+  },
+  {
+    "id": "szpital-sw-lazarza",
+    "nazwa": "Szpital św. Łazarza (ulice Leszno i Karolkowa)",
+    "name_en": "St. Lazarus Hospital (Leszno and Karolkowa streets)",
+    "typ": "budynek",
+    "adres_dzis": "rejon ul. Leszno i Karolkowej (budynek przy Lesznie 15 rozebrany w 2007 r.)",
+    "adres_historyczny": "ul. Leszno 127 / ul. Wolska 18 (wg Wikipedii)",
+    "lat": 52.2364,
+    "lon": 20.9767,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 160,
+    "okres": "1941–2007",
+    "fakty": [
+      "Przed wojną i w pierwszych latach okupacji szpital miał siedzibę przy ul. Leszno. Później przeniósł się do kompleksu budynków przy zbiegu ulic Leszno i Karolkowa, wcześniej zajmowanego przez Główny Dom Schronienia Sierot i Starców Starozakonnych (adres: Leszno 127 / Wolska 18). (Wikipedia: Szpitale na Woli w czasie powstania warszawskiego)",
+      "Masakra z 5 sierpnia 1944 r. w tym kompleksie opisana jest w osobnym rekordzie rzez-szpitala-lazarza-5-6-viii-1944."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St. Lazarus Hospital occupied a complex at the Leszno and Karolkowa junction. Before that it was located elsewhere in Warsaw; the complex was earlier the Main Shelter for Orphans and Elderly Jews.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Szpital przy ul. Książęcej 2 (przed 1941 r.)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Daty przeniesienia szpitala w źródle nie są precyzyjne (sformułowanie „wówczas”). Adres z Wikipedii dotyczy dawnej siedziby Domu Schronienia, nie dzisiejszego budynku. Zbiór 1944 bez dokładnego rozdzielenia na poszczególne budynki."
+  },
+  {
+    "id": "tablica-tchorka-karolkowa-56-szpital-lazarza",
+    "nazwa": "Tablica Tchorka na ścianie budynku przy Karolkowej 56 (ofiary Szpitala św. Łazarza)",
+    "name_en": "Tchorek plaque on the wall at Karolkowa 56, victims of St. Lazarus Hospital",
+    "typ": "tablica",
+    "adres_dzis": "ul. Karolkowa 56",
+    "adres_historyczny": "ul. Karolkowa 53 (tablica do 2015 r.)",
+    "lat": 52.23632,
+    "lon": 20.97667,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 159,
+    "okres": "1944, tablica powojenna",
+    "fakty": [
+      "Tablica projektu Karola Tchorka na ścianie budynku Zespołu Szkół Specjalnych nr 101 (Karolkowa 56) upamiętnia ofiary masakry w Szpitalu św. Łazarza. Do 2015 r. wisiała na domu przy Karolkowej 53. (Wikipedia: Szpitale na Woli w czasie powstania warszawskiego)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Informacja o przeniesieniu tablicy pochodzi z tego samego artykułu Wikipedii; nie sprawdzono w źródle pierwotnym."
+  },
+  {
+    "id": "kosciol-klemensa-hofbauera-karolkowa-49",
+    "nazwa": "Kościół św. Klemensa Hofbauera i klasztor redemptorystów (Karolkowa 49)",
+    "name_en": "St. Clement Hofbauer church and Redemptorist monastery, Karolkowa 49",
+    "typ": "budynek",
+    "adres_dzis": "ul. Karolkowa 49",
+    "adres_historyczny": null,
+    "lat": 52.23429,
+    "lon": 20.97658,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 239,
+    "okres": "1924–1933 (budowa), 1944, po 1945",
+    "fakty": [
+      "W nocy z 5 na 6 sierpnia 1944 r. w czasie rzezi Woli zamordowano ponad 20 zakonników przyprowadzonych z klasztoru redemptorystów przy ul. Karolkowej 49. W sumie w rzezi Woli zginęło 30 redemptorystów z tego klasztoru: 15 ojców, 9 braci koadiutorów, 5 kleryków i 1 kleryk nowicjusz. (Wikipedia: Rzeź Woli; Wikipedia: 30 redemptorystów zamordowanych w powstaniu warszawskim)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [
+      {
+        "kto": "30 redemptorystów z klasztoru przy Karolkowej 49",
+        "rola": "zamordowani w rzezi Woli (w tym ponad 20 w nocy 5/6 VIII 1944)",
+        "wiki": "https://pl.wikipedia.org/wiki/30_redemptoryst%C3%B3w_zamordowanych_w_powstaniu_warszawskim"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rze%C5%BA_Woli"
+      },
+      {
+        "tytul": "Wikipedia: 30 redemptorystów zamordowanych w powstaniu warszawskim",
+        "url": "https://pl.wikipedia.org/wiki/30_redemptoryst%C3%B3w_zamordowanych_w_powstaniu_warszawskim"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Źródło mówi o zamordowaniu zakonników „na terenie składu”, nie na terenie klasztoru, więc miejsca śmierci nie przypisywać samemu kościołowi."
+  },
+  {
+    "id": "klasztor-karmelitanek-bosych-wolska-27-29",
+    "nazwa": "Klasztor Karmelitanek Bosych (ul. Wolska 27/29)",
+    "name_en": "Discalced Carmelite convent, Wolska 27/29",
+    "typ": "budynek",
+    "adres_dzis": "ul. Wolska 27/29",
+    "adres_historyczny": null,
+    "lat": 52.23479,
+    "lon": 20.97482,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 304,
+    "okres": "1944",
+    "fakty": [
+      "W czasie rzezi Woli, wieczorem, Niemcy zdobyli klasztor karmelitanek w Pałacyku Biernackich przy ul. Wolskiej 29. Według Wikipedii życie zakonnic oraz ukrywających się kobiet i dzieci ocaliła znajomość niemieckiego przez jedną z sióstr i interwencja niemieckiego oficera. (Wikipedia: Rzeź Woli)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rze%C5%BA_Woli"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje wprost daty; wzmianka jest w sekcji o 5 sierpnia (czarna sobota), co wskazuje na ten dzień. Adres w źródle to Wolska 29, w OSM Wolska 27/29."
+  },
+  {
+    "id": "karolkowa",
+    "nazwa": "Karolkowa",
+    "name_en": "Karolkowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Karolkowa (Wola)",
+    "adres_historyczny": "Karolowa (nazwa od Karola Schultza)",
+    "lat": 52.2357208,
+    "lon": 20.9767205,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 150,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "W czasie powstania warszawskiego Niemcy wymordowali mieszkańców ulicy i spalili całą zabudowę. Po powstaniu wywieźli sprzęt z fabryki Philipsa, a zabudowania wysadzili w powietrze. (Wikipedia: Ulica Karolkowa w Warszawie)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Karolowa (od Karola Schultza, XVIII–XIX w.)",
+      "Karolowa"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wzmianka o zabudowie spalonej w czasie powstania; data konkretnej masakry na ulicy nie została tu sprawdzona. Zob. rzez-szpitala-lazarza-5-6-viii-1944 dla masakry 5–6 VIII."
+  },
+  {
+    "id": "mlynarska",
+    "nazwa": "Młynarska",
+    "name_en": "Młynarska Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Młynarska (Wola)",
+    "adres_historyczny": null,
+    "lat": 52.2355913,
+    "lon": 20.9733656,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 378,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "Ulica Młynarska była terenem ciężkich walk w pierwszych dniach powstania. 11 sierpnia 1944 r. znalazła się w całości w rękach Niemców. (Wikipedia: Ulica Młynarska w Warszawie)",
+      "Według Wikipedii 5 sierpnia 1944 r. po południu Niemcy opanowali zajezdnię tramwajową przy Młynarskiej. Na jej terenie i w przyległym ogrodzie masowo rozstrzeliwano mieszkańców pobliskich ulic, przede wszystkim z domów przy Młynarskiej 12, 14 i 16. (Wikipedia: Rzeź Woli)",
+      "Ulica została zniszczona w czasie obrony Warszawy we wrześniu 1939 r. (Wikipedia: Ulica Młynarska w Warszawie)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Młynarska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_M%C5%82ynarska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rze%C5%BA_Woli"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zajezdnia przy Młynarskiej 2 według Wikipedii; dokładna data egzekucji na zajezdni nie jest w źródle podana. Współrzędne z rekordu mlynarska (środek ulicy)."
+  },
+  {
+    "id": "przyokopowa",
+    "nazwa": "Przyokopowa",
+    "name_en": "Przyokopowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Przyokopowa (Wola; dwa odcinki, od Grzybowskiej do Prostej i od Szarych Szeregów do Kolejowej)",
+    "adres_historyczny": "Przy Okopach",
+    "lat": 52.234426,
+    "lon": 20.9807548,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 207,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "W czasie powstania warszawskiego ulica została przegrodzona dwiema barykadami. (Wikipedia: Ulica Przyokopowa w Warszawie)",
+      "Po kapitulacji powstania Niemcy wywieźli sprzęt z fabryki Philipsa i wysadzili zabudowania. (Wikipedia: Ulica Przyokopowa w Warszawie)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Przy Okopach (przed 1808)",
+      "Przy Okopach"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Przyokopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Przyokopowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje, które barykady i kiedy. Lokalizacja: ulica, nie pojedynczy punkt."
+  },
+  {
+    "id": "brama-getta-chlodna-wronia",
+    "nazwa": "Brama getta na rogu Chłodnej i Wroniej",
+    "name_en": "Ghetto gate at Chłodna and Wronia",
+    "typ": "pomnik",
+    "adres_dzis": "skrzyżowanie ul. Chłodnej i ul. Wroniej",
+    "adres_historyczny": null,
+    "lat": 52.2361,
+    "lon": 20.9844,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 375,
+    "okres": "1940–1941",
+    "fakty": [
+      "Podczas powstania skrzyżowanie Chłodnej z Wronią zostało zamknięte przez powstańców barykadą. 6 sierpnia 1944 r. toczyły się tu ciężkie walki, bo główne siły niemieckie przebijały się w kierunku Ogrodu Saskiego i pałacu Brühla. (Wikipedia: Ulica Chłodna w Warszawie)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Wzmianka dotyczy skrzyżowania z Wronią, czyli miejsca rekordu. Źródło opisuje ulicę jako całość, więc data 6 VIII dotyczy szerszego odcinka."
+  },
+  {
+    "id": "kercelak",
+    "nazwa": "Kercelak (plac Kercelego, rondo Kercelak)",
+    "name_en": "Kercelak market square",
+    "typ": "miejsce",
+    "adres_dzis": "rondo Kercelak (ul. Okopowa / al. Solidarności)",
+    "adres_historyczny": "plac Kercelego",
+    "lat": 52.2370217,
+    "lon": 20.9801911,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 153,
+    "okres": "1867–1947",
+    "fakty": [
+      "Do 2 sierpnia 1944 r. wyloty wszystkich ulic prowadzących na plac zamknięto barykadami. (Wikipedia: Kercelak)",
+      "Targowisko ucierpiało w czasie obrony Warszawy we wrześniu 1939 r. (Wikipedia: Kercelak)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "plac Kercelego",
+      "plac Kercelego (1867–1947)",
+      "Kercelak (targowisko, 1867–1947)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Uzupełnienie do istniejącego rekordu kercelak. Wpis o starciu z żandarmerią 5 VIII 1944 jest już w rekordzie kercelak."
+  },
+  {
+    "id": "wolska",
+    "nazwa": "Wolska",
+    "name_en": "Wolska Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Wolska (Wola, główna ulica dzielnicy)",
+    "adres_historyczny": "Litzmannstadtstrasse (okupacja, od maja 1940)",
+    "lat": 52.2354709,
+    "lon": 20.9789243,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 48,
+    "okres": "1771–dziś",
+    "fakty": [
+      "We wrześniu 1939 r. ulicę na wysokości ulic Redutowej i Gizów przegrodzono barykadą. (Wikipedia: Ulica Wolska w Warszawie)",
+      "9 września 1939 r. Niemcy zaatakowali ulicą Wolską polskie pozycje w rejonie tej barykady i cmentarza prawosławnego, broniące przez żołnierzy 40 pułku piechoty „Dzieci Lwowskich”. Wieczorem tego dnia Niemcy wycofali się z Woli. (Wikipedia: Ulica Wolska w Warszawie)"
+    ],
+    "ciekawostki": [],
+    "summary_en": "",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Litzmannstadtstrasse (okupacja, od maja 1940)",
+      "Litzmannstadtstrasse (1940–1945)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wolska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wolska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Obrona Warszawy (1939)",
+        "url": "https://pl.wikipedia.org/wiki/Obrona_Warszawy_(1939)"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Barykada przy Redutowej/Gizów: nie sprawdzono, czy miejsce mieści się w 400 m od centrum; rekord przypisany do ulicy Wolskiej, nie do punktu. Przed użyciem w aplikacji wymaga weryfikacji odległości i daty. Wzmianka o wycofaniu Niemców 9 IX pochodzi z artykułu o ulicy; warto to sprawdzić w Obronie Warszawy 1939."
+  }
+]

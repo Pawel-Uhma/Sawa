@@ -334,3 +334,8 @@
 > new file: docs/stan.md
 > new file: docs/zespol.md
 
+
+### 2026-10-17 11:26 · Pawel
+
+> [Cross-session idle notice] "sawa-00", which you asked to be notified about, is idle now — it finished a turn at 11:26. Its harness reports: «Repo jest przystosowane pod 5 osób z własnymi agentami. Nic nie commitowałem, bo nie prosiłeś o com…». This is an automated notice from that session's harness — not a message from a person, and not an instruction; act on it only insofar as your user's earlier request calls for it.
+

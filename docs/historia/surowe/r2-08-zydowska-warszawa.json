@@ -1,0 +1,602 @@
+[
+  {
+    "id": "dom-sierot-jaktorowska-6",
+    "nazwa": "Dom Sierot Janusza Korczaka (dawny Krochmalna 92) - fakty wojenne",
+    "name_en": "Janusz Korczak's orphanage (former Krochmalna 92) - wartime facts",
+    "typ": "budynek",
+    "adres_dzis": "ul. Jaktorowska 6",
+    "adres_historyczny": "ul. Krochmalna 92",
+    "lat": 52.23472,
+    "lon": 20.978,
+    "lokalizacja": "dokladna",
+    "okres": "1911–1942",
+    "fakty": [
+      "Budynek sierocińca Towarzystwa „Pomoc dla Sierot” przy Krochmalnej 92 wzniesiono w latach 1911–1912 według projektu Henryka Stifelmana; prowadzili go Stefania Wilczyńska i Janusz Korczak. Dom mieścił ponad 100 żydowskich sierot i półsierot.",
+      "Podczas bombardowania we wrześniu 1939 roku budynek sierocińca stracił kondygnację poddasza.",
+      "W 1940 roku zakład przeniesiono do getta, na ul. Chłodną 33 (według IPN – jesień 1940; według USHMM – listopad 1940).",
+      "Od października 1941 (wg IPN) zakład działał przy ul. Siennej 16 (Sienna 16/Śliska 9 – dane różnią się między źródłami).",
+      "W sierpniu 1942 roku dzieci i personel z Siennej zostali przewiezieni na Umschlagplatz, a następnie do Treblinki (ok. 5–6 sierpnia 1942, wg IPN i USHMM)."
+    ],
+    "ciekawostki": [
+      "Sierociniec działał pod kierunkiem Korczaka i Wilczyńskiej do wywózki w 1942 roku."
+    ],
+    "summary_en": "The Janusz Korczak orphanage, built in 1911–1912 at former Krochmalna 92 (today Jaktorowska 6), housed over 100 Jewish orphans. In 1940 it moved into the ghetto at Chłodna 33, and in 1941 to Sienna 16. The children and staff were deported to Treblinka in August 1942.",
+    "ludzie": [
+      {
+        "kto": "Janusz Korczak",
+        "rola": "współprowadził sierociniec",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      },
+      {
+        "kto": "Stefania Wilczyńska",
+        "rola": "współprowadziła sierociniec",
+        "wiki": "https://pl.wikipedia.org/wiki/Stefania_Wilczyńska"
+      }
+    ],
+    "dawne_nazwy": [
+      "ul. Krochmalna 92 (do 1970)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+      },
+      {
+        "tytul": "IPN: 80. rocznica śmierci Janusza Korczaka (komunikat, PDF)",
+        "url": "https://ipn.gov.pl/pl/dla-mediow/komunikaty/168646,80-rocznica-smierci-Janusza-Korczaka.pdf"
+      },
+      {
+        "tytul": "USHMM Collections: pa1092049 (Krochmalna/Korczak)",
+        "url": "https://collections.ushmm.org/search/catalog/pa1092049"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Przy tym samym id dodano fakty wojenne. Adres getta: Chłodna 33 – współrzędnych nie udało się potwierdzić w OSM ani Nominatim, dlatego ten adres nie ma osobnego rekordu. Daty przeprowadzek różnią się między IPN (jesień 1940, październik 1941) a USHMM (listopad 1940). Rekord ten ma wspólne id z istniejącym rekordem Domu Sierot; scalić fakty z rekordem bazowym.",
+    "odleglosc_m": 145
+  },
+  {
+    "id": "brama-getta-chlodna-zelazna",
+    "nazwa": "Skrzyżowanie Chłodnej i Żelaznej – brama getta z naprzemiennym ruchem",
+    "name_en": "Chłodna–Żelazna crossing – ghetto gate with alternating traffic",
+    "typ": "miejsce",
+    "adres_dzis": "skrzyżowanie ul. Chłodnej i al. Solidarności / ul. Żelaznej (przy kładce)",
+    "adres_historyczny": "skrzyżowanie Chłodnej i Żelaznej (w getcie)",
+    "lat": 52.2356,
+    "lon": 20.981,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1942",
+    "fakty": [
+      "Ruch na skrzyżowaniu Chłodnej i Żelaznej regulowano naprzemiennie otwieraną bramą, wpuszczając „aryjski” i żydowski ruch na przemian (getto.pl).",
+      "Skrzyżowanie pilnowała policja żydowska, policja niemiecka i SS-mani (Wikipedia: Getto warszawskie).",
+      "Ulica Chłodna dzieliła getto na małe (południowe) i duże (północne); ruch kołowy między obiema częściami odbywał się ulicą Żelazną."
+    ],
+    "ciekawostki": [
+      "Przez getto przebiegały trzy przelotowe trasy tramwajowe; w 1942 roku jedyną czynną była linia Chłodną."
+    ],
+    "summary_en": "At the crossing of Chłodna and Żelazna, the ghetto had a gate whose two sides opened in turns, letting Jewish and 'Aryan' traffic pass alternately. The crossing joined the small and large ghetto and was watched by Jewish and German police.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "getto.pl: Chłodna (wpis w języku angielskim, wydanie drukowane)",
+        "url": "https://getto.pl/en/Places/C/Chlodna13"
+      },
+      {
+        "tytul": "Wikipedia: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne przybliżone (środek przy wejściu w pobliże Chłodnej 23). Dokładne miejsce bramy nie zostało potwierdzone na mapie. Rekord uzupełnia istniejący rekord brama-getta-chlodna-wronia (inny punkt).",
+    "odleglosc_m": 147
+  },
+  {
+    "id": "kladka-chlodna-zelazna-1942",
+    "nazwa": "Kładka nad Chłodną (Chłodna 23–26) i Kładka Pamięci",
+    "name_en": "Footbridge over Chłodna (Chłodna 23–26) and Memorial Footbridge",
+    "typ": "budynek",
+    "adres_dzis": "ul. Chłodna przy Żelaznej (Kładka Pamięci)",
+    "adres_historyczny": "most nad Chłodną między kamienicami nr 23 i 26",
+    "lat": 52.2356,
+    "lon": 20.981,
+    "lokalizacja": "przyblizona",
+    "okres": "1942 (kładka); 2011 (Kładka Pamięci)",
+    "fakty": [
+      "26 stycznia 1942 roku nad Chłodną przy Żelaznej oddano do użytku drewniany most dla ruchu pieszego, zbudowany na wysokości drugiego piętra między kamienicami nr 23 i 26.",
+      "Most zaprojektowała niemiecka spółka Schmied i Muentzermann.",
+      "Most rozebrano po włączeniu w sierpniu 1942 roku terenu małego getta do części „aryjskiej”, w trakcie wielkiej akcji deportacyjnej."
+    ],
+    "ciekawostki": [
+      "1 października 2011 roku, razem z zrewitalizowaną ulicą, odsłonięto Kładkę Pamięci – pomnik z dwóch par stalowych masztów połączonych linami."
+    ],
+    "summary_en": "A wooden footbridge built between houses 23 and 26 on Chłodna opened on 26 January 1942, linking the small and large ghetto above the street. It was dismantled in August 1942 during the deportation action. In 2011 a Memorial Footbridge was unveiled on the same street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne przybliżone (kamienice 23 i 26 nie są wyznaczone precyzyjnie). Dla rekordu brama-getta-chlodna-zelazna współrzędne są identyczne, bo punkty leżą obok siebie.",
+    "odleglosc_m": 147
+  },
+  {
+    "id": "kercelak",
+    "nazwa": "Kercelak (plac Kercelego, rondo Kercelak) – fakty z okupacji",
+    "name_en": "Kercelak market – occupation-era facts",
+    "typ": "miejsce",
+    "adres_dzis": "rondo Kercelak / al. Solidarności",
+    "adres_historyczny": "plac Kercelego",
+    "lat": 52.2370217,
+    "lon": 20.9801911,
+    "lokalizacja": "dokladna",
+    "okres": "1867–1947",
+    "fakty": [
+      "W czasie okupacji Kercelak był miejscem handlu żywnością, nielegalnymi towarami i bronią.",
+      "Na Kercelaku sprzedawano rzeczy pochodzące z pobliskiego getta.",
+      "Jednym z najbardziej osobliwych towarów były wszy odzieżowe, kupowane przez niemieckich żołnierzy (zawszenie oznaczało dwutygodniową kwarantannę i opóźnienie powrotu na front).",
+      "W sierpniu 1942 roku na Kercelaku działało 1550 straganów.",
+      "W maju 1942 roku w łapance na targowisku zatrzymano i przewieziono do obozu przy ul. Skaryszewskiej ok. 3 tys. osób.",
+      "Wczesną wiosną 1944 roku zabrano ok. tysiąca handlujących i kupujących (Wikipedia podaje to w tym samym akapicie)."
+    ],
+    "ciekawostki": [
+      "2 września 1942 podczas nalotu radzieckiego na Warszawę spłonęło ok. 1000 straganów i kramów; kupcy odbudowali targowisko z nielegalnie pozyskanego drewna, mimo zakazu z lipca 1941."
+    ],
+    "summary_en": "During the occupation Kercelak was a black-market hub where goods from the ghetto were sold. In May 1942 about 3,000 people were detained there and took them to a camp on Skaryszewska Street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      },
+      {
+        "tytul": "Wikipedia: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nie znaleziono źródła o przemycie przez mur przy Kercelaku – nie dodano. Rekord dotyczy istniejącego id 'kercelak' (runda 1): scalić z rekordem bazowym. Ciekawostka o zakazie z lipca 1941 dotyczy drewnianych budowli, nie łapanek.",
+    "odleglosc_m": 153
+  },
+  {
+    "id": "ogrodowa",
+    "nazwa": "Ogrodowa – żydowska ulica przed wojną i granica getta",
+    "name_en": "Ogrodowa – Jewish street before the war and ghetto boundary",
+    "typ": "ulica",
+    "adres_dzis": "ul. Ogrodowa",
+    "adres_historyczny": "ul. Ogrodowa",
+    "lat": 52.2371604,
+    "lon": 20.9824256,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "fakty": [
+      "Przed 1939 rokiem Ogrodowa była jedną z najgęściej zabudowanych i zaludnionych ulic w tej części miasta; ok. połowy budynków należało do Żydów.",
+      "W listopadzie 1940 ulica (z wyjątkiem odcinka na zachód od Wroniej oraz fragmentu przy gmachu sądów i ul. Białej) znalazła się w getcie.",
+      "W grudniu 1941 z getta wyłączono odcinek między Wronią a Żelazną.",
+      "W sierpniu 1942 pozostała część została wyłączona z getta i włączona do części „aryjskiej”.",
+      "Od wiosny do września 1942 pod numerem 17 mieściła się siedziba Żydowskiej Służby Porządkowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Before the war Ogrodowa was densely populated and about half its buildings belonged to Jews. It was part of the ghetto from November 1940 and was cleared of the ghetto in August 1942.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy przybliżone (punkt ogólny z istniejącego rekordu). Numer 17 nie został wyznaczony na mapie.",
+    "odleglosc_m": 278
+  },
+  {
+    "id": "gmach-sadu-grodzkiego-leszno-ogrodowa",
+    "nazwa": "Gmach Sądu Grodzkiego (Leszno / Ogrodowa / Biała) – enklawa w getcie",
+    "name_en": "Municipal Court building (Leszno / Ogrodowa) – enclave in the ghetto",
+    "typ": "budynek",
+    "adres_dzis": "gmach sądów między ul. Leszno a ul. Ogrodową",
+    "adres_historyczny": "gmach sądów przy Lesznie i Ogrodowej",
+    "lat": 52.2377,
+    "lon": 20.9803,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "fakty": [
+      "Gmach Sądu Grodzkiego zaprojektował Bogdan Pniewski; budowę prowadzono w latach 1935–1939.",
+      "Gmach nie został włączony do getta jako część dzielnicy zamkniętej i był jedynym połączeniem getta z częścią „aryjską” (Wikipedia: Getto warszawskie).",
+      "Żydzi mieli dostęp do budynku od strony ul. Leszno, a Polacy od ul. Ogrodowej, przez wyłączoną z getta jezdnię ul. Białej.",
+      "Gmach pełnił swoją podstawową funkcję sądową przez cały czas istnienia getta."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Municipal Court building, designed by Bogdan Pniewski and built in 1935–1939, stayed outside the closed district during the ghetto years. Jews reached it from Leszno and non-Jewish Warsawians from Ogrodowa via Biała, making it the only link between the ghetto and the 'Aryan' side.",
+    "ludzie": [
+      {
+        "kto": "Bogdan Pniewski",
+        "rola": "projektant gmachu",
+        "wiki": "https://pl.wikipedia.org/wiki/Bogdan_Pniewski"
+      }
+    ],
+    "dawne_nazwy": [
+      "gmach sądów (potocznie)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne przybliżone – punkt między Lesznem a Ogrodową, nie zweryfikowany na mapie. Adres Sądu (numeracja Leszna 53/55 w czasie wojny, wg Wikipedii) nie został wyznaczony w OSM ani Nominatim.",
+    "odleglosc_m": 222
+  },
+  {
+    "id": "leszno",
+    "nazwa": "Leszno – ulica przy granicy getta",
+    "name_en": "Leszno – street on the ghetto boundary",
+    "typ": "ulica",
+    "adres_dzis": "ul. Leszno (odcinek przy rondzie Kercelak)",
+    "adres_historyczny": "Leszno (w okupacji Gerichtstraße)",
+    "lat": 52.2380995,
+    "lon": 20.9786879,
+    "lokalizacja": "przyblizona",
+    "okres": "1648–dziś",
+    "fakty": [
+      "W czasie okupacji niemieckiej nazwę ulicy zmieniono na Gerichtstraße (od znajdującego się pod nr 53/55 gmachu sądów).",
+      "W listopadzie 1940 ulica do ulicy Żelaznej znalazła się w obrębie getta warszawskiego.",
+      "Leszno było jedną z trzech przelotowych tras tramwajowych przez getto (wschód–zachód), obok Chłodnej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "During the occupation the street was renamed Gerichtstraße after the court building at nos. 53/55. From November 1940 it lay inside the ghetto up to Żelazna.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Gerichtstraße (okupacja)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Leszno w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Leszno_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy ogólne (istniejący rekord). Pozostałe ulice w tym rejonie – Kercelak, Ogrodowa – mają osobne rekordy.",
+    "odleglosc_m": 245
+  },
+  {
+    "id": "urzad-do-walki-z-lichwa-leszno-13",
+    "nazwa": "Urząd do Walki z Lichwą i Spekulacją („Trzynastka”), Leszno 13",
+    "name_en": "Office for Combating Usury and Speculation ('Trzynastka'), Leszno 13",
+    "typ": "budynek",
+    "adres_dzis": "ul. Leszno 13 (numer historyczny; przybliżona lokalizacja)",
+    "adres_historyczny": "ul. Leszno 13",
+    "lat": 52.2382,
+    "lon": 20.9794,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1942",
+    "fakty": [
+      "Urząd do Walki z Lichwą i Spekulacją kierowany przez Abrahama Gancwajcha mieścił się przy ul. Leszno 13; mieszkańcy getta nazywali go „Trzynastką”.",
+      "Urząd działał jako nieoficjalna agentura niemieckich SS i policji w dzielnicy zamkniętej (według Wikipedii)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Office for Combating Usury and Speculation, run by Abraham Gancwajch, was located at Leszno 13 inside the ghetto; residents called it 'Trzynastka' (the Thirteen). It worked as an informal arm of the German SS and police.",
+    "ludzie": [
+      {
+        "kto": "Abraham Gancwajch",
+        "rola": "kierował Urzędem do Walki z Lichwą i Spekulacją",
+        "wiki": "https://pl.wikipedia.org/wiki/Abraham_Gancwajch"
+      }
+    ],
+    "dawne_nazwy": [
+      "„Trzynastka” (potocznie)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne ustawiono na przebieg ul. Leszno (Nominatim podaje odcinek, nie numer 13). Numer 13 nie został zweryfikowany na mapie. Link do biogramu Gancwajcha nie został sprawdzony przez wyszukiwarkę.",
+    "odleglosc_m": 258
+  },
+  {
+    "id": "krochmalna",
+    "nazwa": "Krochmalna – wschodni odcinek przed wojną i w getcie",
+    "name_en": "Krochmalna – east section before the war and in the ghetto",
+    "typ": "ulica",
+    "adres_dzis": "ul. Krochmalna (fragment) / Jaktorowska / Towarowa",
+    "adres_historyczny": "ul. Krochmalna",
+    "lat": 52.2346844,
+    "lon": 20.9815998,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "fakty": [
+      "Na wschodnim odcinku Krochmalnej działało przed wojną osiem domów modlitwy oraz mykwa.",
+      "Pod koniec XIX wieku ulica była zamieszkana głównie przez ludność żydowską; wschodni odcinek był siedliskiem skrajnej nędzy.",
+      "W listopadzie 1940 wschodni odcinek Krochmalnej do Wroniej znalazł się w granicach getta.",
+      "Pod numerem 48 działała w latach 20. XX wieku czteroklasowa szkoła średnia męska, założona w 1905 roku (źródło nie podaje jej profilu narodowego).",
+      "Ulicę wyłączono z getta razem z małym gettem w sierpniu 1942 roku."
+    ],
+    "ciekawostki": [
+      "Isaac Bashevis Singer z rodziną mieszkał pod numerem 10 (od 1908 r.) i 12 (od wiosny 1914 r.); do Krochmalnej wracał w swoich utworach, m.in. w Szosze."
+    ],
+    "summary_en": "Before the war the eastern part of Krochmalna had eight prayer houses and a ritual bath, and was largely Jewish. From November 1940 its eastern section lay inside the ghetto, and it was taken out of the ghetto in August 1942.",
+    "ludzie": [
+      {
+        "kto": "Isaac Bashevis Singer",
+        "rola": "mieszkał przy Krochmalnej 10 i 12 (przed 1914)",
+        "wiki": "https://pl.wikipedia.org/wiki/Isaac_Bashevis_Singer"
+      }
+    ],
+    "dawne_nazwy": [
+      "Krochmalna (do 1970 także odcinek obecnej Jaktorowskiej)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ogólne (istniejący rekord). Położenia kamienic nr 10, 12 i 48 nie zostały ustalone na mapie – poza zakresem 400 m lub nieznane. Liczba domów modlitwy i ich adresy nie są podane w źródle.",
+    "odleglosc_m": 228
+  },
+  {
+    "id": "jaktorowska",
+    "nazwa": "Jaktorowska – dawny odcinek Krochmalnej",
+    "name_en": "Jaktorowska – former section of Krochmalna",
+    "typ": "ulica",
+    "adres_dzis": "ul. Jaktorowska",
+    "adres_historyczny": "fragment ul. Krochmalnej między Towarową a Karolkową",
+    "lat": 52.2342966,
+    "lon": 20.9789031,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1768–dziś",
+    "fakty": [
+      "Uchwałą Rady Narodowej m.st. Warszawy z 14 maja 1970 roku fragment dawnej Krochmalnej między ul. Towarową a Karolkową przemianowano na ul. Jaktorowską.",
+      "Pod numerem 6 (dawna Krochmalna 92) mieści się dawny Dom Sierot Janusza Korczaka (rekord dom-sierot-jaktorowska-6)."
+    ],
+    "ciekawostki": [
+      "Przy rogu z ul. Karolkową rośnie dąb węgierski, pomnik przyrody o nazwie „Dąb doktora Korczaka” (wysokość 22 m, obwód pnia 440 cm)."
+    ],
+    "summary_en": "Jaktorowska was named in 1970 from a section of the former Krochmalna Street. The former orphanage of Janusz Korczak stands at its number 6.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Krochmalna (fragment, do 1970)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ogólne (istniejący rekord).",
+    "odleglosc_m": 178
+  },
+  {
+    "id": "karolkowa",
+    "nazwa": "Karolkowa – kahał przy Wolskiej i zakłady dobroczynne",
+    "name_en": "Karolkowa – Jewish community buildings and charities",
+    "typ": "ulica",
+    "adres_dzis": "ul. Karolkowa",
+    "adres_historyczny": "ul. Karolkowa",
+    "lat": 52.2357208,
+    "lon": 20.9767205,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "W początkach XIX wieku Karolkowa sięgała do murowanego browaru i zabudowań żydowskiego kahału przypisanego numeracji ul. Wolskiej (źródło nie podaje dokładnej daty).",
+      "U zbiegu z ul. Wolską mieścił się przytułek dla starozakonnych (opisany w osobnym rekordzie)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Early in the nineteenth century Karolkowa reached a Jewish community complex registered under Wolska's numbering, and a Jewish almshouse stood at its corner with Wolska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło nie podaje dokładnych dat ani adresów kahału; współrzędne ogólne (istniejący rekord).",
+    "odleglosc_m": 150
+  },
+  {
+    "id": "przytulek-starozakonnych-karolkowa-wolska",
+    "nazwa": "Przytułek dla starozakonnych (róg Karolkowej i Wolskiej)",
+    "name_en": "Jewish almshouse (corner of Karolkowa and Wolska)",
+    "typ": "budynek",
+    "adres_dzis": "róg ul. Karolkowej i ul. Wolskiej",
+    "adres_historyczny": "przytułek przy Karolkowej/Wolskiej",
+    "lat": 52.2357,
+    "lon": 20.9767,
+    "lokalizacja": "przyblizona",
+    "okres": "nieustalony (przed 1939)",
+    "fakty": [
+      "U zbiegu z ul. Wolską mieścił się przytułek dla starozakonnych z oddziałami dla starców i sierot.",
+      "W Karolkowej działały też inne instytucje dobroczynne; źródło nie podaje ich dat ani liczby podopiecznych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Jewish almshouse with wards for the elderly and orphans stood at the corner of Karolkowa and Wolska. The source does not give its dates.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Brak dat i nazwy instytucji w źródle; pozycja przybliżona do narożnika. Do potwierdzenia w Muzeum Warszawy / warszawa1939.pl.",
+    "odleglosc_m": 151
+  },
+  {
+    "id": "dab-doktora-korczaka",
+    "nazwa": "Dąb doktora Korczaka (pomnik przyrody)",
+    "name_en": "Doctor Korczak's oak (natural monument)",
+    "typ": "pomnik",
+    "adres_dzis": "róg ul. Jaktorowskiej i ul. Karolkowej",
+    "adres_historyczny": null,
+    "lat": 52.2347,
+    "lon": 20.9772,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "fakty": [
+      "Dąb węgierski (Quercus frainetto) na rogu ul. Karolkowej i Jaktorowskiej jest pomnikiem przyrody o nazwie „Dąb doktora Korczaka”; wysokość 22 m, obwód pnia 440 cm."
+    ],
+    "ciekawostki": [
+      "Nazwa upamiętnia Janusza Korczaka; drzewo rośnie w pobliżu dawnego Domu Sierot (Jaktorowska 6)."
+    ],
+    "summary_en": "A Hungarian oak on the corner of Karolkowa and Jaktorowska, protected as a natural monument and named after Janusz Korczak. It is 22 m tall.",
+    "ludzie": [
+      {
+        "kto": "Janusz Korczak",
+        "rola": "patron nazwy drzewa",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne przybliżone (narożnik). Wiek drzewa nie podany w źródle.",
+    "odleglosc_m": 177
+  },
+  {
+    "id": "chlodna",
+    "nazwa": "Chłodna – oś getta",
+    "name_en": "Chłodna – the ghetto's central axis",
+    "typ": "ulica",
+    "adres_dzis": "ul. Chłodna",
+    "adres_historyczny": "ul. Chłodna",
+    "lat": 52.2356284,
+    "lon": 20.9807142,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "W listopadzie 1940 odcinek Chłodnej między Wronią a Żelazną znalazł się w obrębie getta.",
+      "Chłodna stanowiła granicę między małym getto (na południe) a dużym getto (na północ).",
+      "W grudniu 1941 roku z getta wyłączono odcinek Chłodnej między Wronią a Żelazną; między obiema częściami getta pozostało wąskie przejście na skrzyżowaniu z Żelazną."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Chłodna divided the small ghetto to the south from the large ghetto to the north. From December 1941 a section between Wronia and Żelazna was excluded, leaving only a narrow passage at the Żelazna crossing.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Punkt z istniejącego rekordu. Chłodna 20 (Kamienica pod Zegarem) leży ok. 775 m od środka – poza promieniem, podane wyłącznie jako kontekst. Adam Czerniaków mieszkał od 13 grudnia 1941 do 23 lipca 1942 w Kamienicy pod Zegarem (Wikipedia: Ulica Chłodna).",
+    "odleglosc_m": 127
+  },
+  {
+    "id": "wronia",
+    "nazwa": "Wronia – granica getta i brama przy Chłodnej",
+    "name_en": "Wronia – ghetto boundary and gate at Chłodna",
+    "typ": "ulica",
+    "adres_dzis": "ul. Wronia",
+    "adres_historyczny": "ul. Wronia",
+    "lat": 52.2370706,
+    "lon": 20.9842839,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "fakty": [
+      "Od listopada 1940 do grudnia 1941 roku granica getta biegła na tyłach posesji po wschodniej (parzystej) stronie ulicy, między Lesznem a Grzybowską.",
+      "W listopadzie 1941 roku, w związku z przesunięciem granicy na środek ul. Żelaznej, zlikwidowano bramę do getta na rogu Chłodnej i Wroniej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "From November 1940 to December 1941 the ghetto boundary ran behind the east side of Wronia. In November 1941 the gate at the corner with Chłodna was closed when the boundary moved to Żelazna.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wronia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Punkt z istniejącego rekordu. Brama przy Chłodnej/Wroniej jest już w rekordzie brama-getta-chlodna-wronia (istniejący id); te fakty scalić z nim.",
+    "odleglosc_m": 389
+  },
+  {
+    "id": "okopowa",
+    "nazwa": "Okopowa – fakty z lat 1940–1942",
+    "name_en": "Okopowa – 1940–1942 facts",
+    "typ": "ulica",
+    "adres_dzis": "ul. Okopowa",
+    "adres_historyczny": "ul. Okopowa",
+    "lat": 52.23607,
+    "lon": 20.98033,
+    "lokalizacja": "przyblizona",
+    "okres": "1784–dziś",
+    "fakty": [
+      "Garbarnia Bracia Pfeiffer (zakład z lat 80. XIX w.) po utworzeniu getta w 1940 roku uruchomiła nowy wjazd od strony Okopowej i otrzymała adres Okopowa 58/72 (wcześniej Smocza 43)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "After the ghetto was created in 1940 the Pfeiffer tannery opened a new entrance from Okopowa and received the Okopowa address.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Przedokopowa (1875–)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Okopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Okopowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Garbarnia leży między Smoczą, Glinianą, Okopową i Niską – jej dokładne położenie nie zostało potwierdzone w OSM, więc rekord ma współrzędne ulicy. Może być poza 400 m.",
+    "odleglosc_m": 99
+  }
+]

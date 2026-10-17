@@ -1,0 +1,1261 @@
+[
+  {
+    "id": "aleja-solidarnosci",
+    "nazwa": "Aleja „Solidarności”",
+    "name_en": "Solidarity Avenue (Aleja Solidarności)",
+    "typ": "ulica",
+    "adres_dzis": "al. „Solidarności” (Targówek, Praga-Północ, Śródmieście, Wola)",
+    "adres_historyczny": "Aleksandrowska/Aleksandryjska (odcinek praski), Zygmuntowska (1916–1948), Leszno, Wolska, Tłomackie, Nowy Zjazd; od 1948 al. gen. Karola Świerczewskiego",
+    "lat": 52.2361114,
+    "lon": 20.9779286,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 70,
+    "okres": "1862–dziś",
+    "fakty": [
+      "Pierwszy odcinek współczesnej alei wytyczono w 1862 po stronie praskiej jako ul. Aleksandrowską, na cześć cara Aleksandra II, łącząc ją z wiaduktem Pancera.",
+      "Po stronie warszawskiej początkowy fragment był osią jurydyki Leszno i nosił nazwę ul. Leszno, biegnącej od placu Bankowego do rogatek Wolskich.",
+      "W październiku 1916 odcinek praski przemianowano na Zygmuntowską; w okupacji nosiła oficjalnie nazwę Sigismundstrasse.",
+      "W latach 1947–1949 połączono dawne ulice w Trasę W-Z z tunelem w rejonie Starego Miasta; w listopadzie 1948 cały ciąg nazwano aleją gen. Karola Świerczewskiego.",
+      "W latach 1949–1960 między ulicami Orlą, Świerczewskiego, Żelazną, Chłodną i Elektoralną zbudowano osiedle Mirów według projektu Tadeusza Kossaka.",
+      "W marcu 1957 w pobliżu zachodniego wylotu tunelu Trasy W-Z odsłonięto pomnik Karola Świerczewskiego.",
+      "W 1962 poszerzono odcinek dawnej ulicy Leszno.",
+      "W latach 1985–2000 aleja była częścią drogi krajowej nr 18.",
+      "W październiku 1991 nazwę zmieniono na aleję „Solidarności”, upamiętniającą NSZZ „Solidarność”; stąd nazwa jest pisana w cudzysłowie.",
+      "W 1992 miejska Komisja ds. Nazewnictwa Ulic zaproponowała częściowo historyczne nazwy odcinków (Nowe Tłomackie, Stare Leszno, Zygmuntowska); Rada Miasta odrzuciła propozycje w głosowaniu.",
+      "W lipcu 2017 przystanki przy tunelu Trasy W-Z przebudowano na tzw. przystanki wiedeńskie."
+    ],
+    "ciekawostki": [
+      "Przed budową Trasy W-Z ruch między dworcem Petersburskim a Wiedeńskim miała przejąć kolej (ostatecznie zrezygnowano z niej ze względu na nachylenie skarpy wiślanej); ruch przejęła kolej konna (tramwaj konny) jadąca Aleksandrowską, Nowym Zjazdem, Krakowskim Przedmieściem, Królewską i Marszałkowską.",
+      "Na prawie całej długości na środku ulicy jest torowisko tramwajowe; między placem Bankowym a Jagiellońską aleja jest jednojezdniowa, a jeden pas zajmują tory, po których ruch samochodów jest zakazany.",
+      "Aleja kończy się przy skrzyżowaniu z ul. Młynarską (wg Wikipedii)."
+    ],
+    "summary_en": "Solidarity Avenue is part of the east-west Trasa W-Z road built in 1947–1949 by joining several older streets, among them Leszno, Wolska and Zygmuntowska. It was named Świerczewski Avenue in 1948 and renamed after the Solidarity trade union in October 1991.",
+    "ludzie": [
+      {
+        "kto": "Karol Świerczewski",
+        "rola": "patron alei w latach 1948–1991; pomnik przy wylocie tunelu Trasy W-Z (1957)",
+        "wiki": "https://pl.wikipedia.org/wiki/Karol_%C5%9Awierczewski"
+      },
+      {
+        "kto": "Tadeusz Kossak",
+        "rola": "projektant osiedla Mirów (1949–1960) między ulicami al. Świerczewskiego, Żelazną, Chłodną i Elektoralną",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Kossak"
+      }
+    ],
+    "dawne_nazwy": [
+      "Aleksandrowska / Aleksandryjska (odcinek praski, 1862–1916)",
+      "Zygmuntowska (1916–1948; w okupacji Sigismundstrasse)",
+      "Leszno (odcinek warszawski, do 1948)",
+      "Wolska (do 1948)",
+      "Tłomackie, Nowy Zjazd (do 1948)",
+      "al. gen. Karola Świerczewskiego (1948–1991)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Aleksandrowska / Aleksandryjska (odcinek praski)",
+        "od": "1862",
+        "do": "1916"
+      },
+      {
+        "nazwa": "Zygmuntowska",
+        "od": "1916",
+        "do": "1948"
+      },
+      {
+        "nazwa": "Sigismundstrasse (nazwa okupacyjna)",
+        "od": "1939",
+        "do": "1945"
+      },
+      {
+        "nazwa": "Leszno (odcinek warszawski)",
+        "od": "1648 (jurydyka Leszno)",
+        "do": "1948"
+      },
+      {
+        "nazwa": "Wolska",
+        "od": "1771",
+        "do": "1948"
+      },
+      {
+        "nazwa": "Tłomackie",
+        "od": "nieustalone",
+        "do": "1948"
+      },
+      {
+        "nazwa": "Nowy Zjazd",
+        "od": "nieustalone",
+        "do": "1948"
+      },
+      {
+        "nazwa": "al. gen. Karola Świerczewskiego",
+        "od": "1948 (listopad)",
+        "do": "1991 (październik)"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Aleja „Solidarności” w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Aleja_%E2%80%9ESolidarno%C5%9Bci%E2%80%9D_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Jedno główne źródło (Wikipedia). Daty nazw 1916/1948/1991 podane wprost; daty 'nieustalone' oznaczają brak danych. Lista 'Ważniejszych obiektów' z Wikipedii pominięta jako niedatowana. Punkt OSM to środek odcinka (way) najbliższego środka, 70 m."
+  },
+  {
+    "id": "chlodna",
+    "nazwa": "Chłodna",
+    "name_en": "Chłodna Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Chłodna (Wola)",
+    "adres_historyczny": "aleja Wolska (w okresie Osi Saskiej, nazwa podana w źródle bez daty zmiany)",
+    "lat": 52.2356284,
+    "lon": 20.9807142,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 127,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "Dawna droga narolna z placu Mirowskiego do wsi Wola; po 1713 włączona w zaprojektowaną przez Matthäusa Pöppelmanna Oś Saską.",
+      "W 1770 okopy Lubomirskiego przecięły ulicę przy obecnej Towarowej; wtedy ulica nosiła nazwę aleja Wolska.",
+      "Przy początkowym odcinku stały Koszary Gwardii Konnej Koronnej, zwane Koszarami Mirowskimi od nazwiska pierwszego dowódcy Wilhelma Miera.",
+      "W latach 1816–1818 wzniesiono klasycystyczne pawilony rogatek Wolskich wg projektu Jakuba Kubickiego.",
+      "Ok. 1820 na trójkątnym placyku w widłach Elektoralnej i Chłodnej powstał plac targowy „Pod Lwem”.",
+      "2 listopada 1830 ulicą wyjechał z Warszawy Fryderyk Chopin; przy rogatkach przyjaciele i uczniowie Konserwatorium odśpiewali mu kantatę.",
+      "Przed 1830 powstało przy ulicy kilka obiektów wysokiej klasy architektonicznej; najwspanialszy pod nr 11 dla Jana Bogumiła Leńskiego.",
+      "Przy ulicy działały trzy browary przed 1850: Fryderyka Brzezińskiego (nr 51), Karola Sommera (nr 45/47) oraz Jana Szymanowskiego (u zbiegu z Żelazną).",
+      "Kościół św. Karola Boromeusza wybudowano w latach 1841–1849 przy placu Pod Lwem; okrągła czatownia straży ogniowej działała od 1851 w Koszarach Mirowskich.",
+      "W latach 1899–1902 w miejscu wschodnich pawilonów Koszar Mirowskich wzniesiono Hale Mirowskie, które odcięły Chłodną od wschodniej części Osi Saskiej.",
+      "Od 1908 kursowały tędy tramwaje elektryczne.",
+      "Przed wojną pod nr 47 powstał kinoteatr „Kometa” na 1500 miejsc.",
+      "We wrześniu 1939 przy kościele św. Karola Boromeusza powstał prowizoryczny cmentarz, a w listopadzie 1939 Niemcy nakazali usunięcie grobów.",
+      "W listopadzie 1940 odcinek między Wroniej a Żelazną znalazł się w obrębie getta; Chłodna była granicą między małym a dużym gettem.",
+      "W grudniu 1941 granicę getta przesunięto na środek Żelaznej, a do getta włączono kamienice przy Chłodnej od Żelaznej do Waliców (strona nieparzysta) i Białej (strona parzysta).",
+      "26 stycznia 1942 oddano nad Chłodną przy Żelaznej drewnianą kładkę dla pieszych między kamienicami nr 23 i 26; rozebrano ją w sierpniu 1942.",
+      "W 1942 Niemcy rozebrali pawilony rogatek Wolskich; w kamienicy Ignacego Partowicza przy Żelaznej urządzono posterunek żandarmerii „Nordwache”.",
+      "3 sierpnia 1944 placówkę Nordwache zdobyli żołnierze batalionu „Chrobry I”.",
+      "6 sierpnia 1944 toczyły się ciężkie walki o barykadę przy skrzyżowaniu z Wronią, którą nacierały główne siły niemieckie; w Rzezi Woli zamordowano setki mieszkańców ulicy i okolic.",
+      "Po 1946 rozebrano większość wypalonych budynków, także część nadających się do remontu.",
+      "W listopadzie 1948 po likwidacji ostatniej w lewobrzeżnej Warszawie szerokotorowej linii ulicą po raz ostatni pojechały tramwaje.",
+      "W 1965 założenie urbanistyczne ulicy wpisano do rejestru zabytków.",
+      "W latach 2010–2011 przeprowadzono remont odcinka Żelazna–Elektoralna z zachowaniem kostki granitowej i szyn; 1 października 2011 odsłonięto Kładkę Pamięci upamiętniającą kładkę z 1942."
+    ],
+    "ciekawostki": [
+      "Tory tramwajowe z pierwszego okresu budowy sieci mają historyczną szerokość 1525 mm i zachowały się w jezdni.",
+      "Ulica zagrała w filmie Romana Polańskiego „Pianista”, ale zdjęcia nakręcono przy ul. Stalowej, a drewniany most zbudowano przy skrzyżowaniu z ul. Konopacką.",
+      "Pod nr 20 stoi kamienica pod Zegarem (1912–1913, architekci Józef Napoleon Czerwiński i Wacław Heppen); w mieszkaniu na 1. piętrze od 13 grudnia 1941 do samobójstwa 23 lipca 1942 mieszkał Adam Czerniaków, prezes Judenratu.",
+      "Pod nr 15 (na 13. piętrze) mieszkał do śmierci w 1984 ks. Jerzy Popiełuszko; pod nr 40 w czasie powstania mieszkał Miron Białoszewski."
+    ],
+    "summary_en": "Chłodna is one of the oldest roads leaving Warsaw westward, incorporated into the Saxon Axis after 1713. Fryderyk Chopin left Warsaw along it in November 1830, and it was a ghetto border street and a site of fighting in 1944.",
+    "ludzie": [
+      {
+        "kto": "Fryderyk Chopin",
+        "rola": "opuścił Warszawę ulicą 2 listopada 1830",
+        "wiki": "https://pl.wikipedia.org/wiki/Fryderyk_Chopin"
+      },
+      {
+        "kto": "Adam Czerniaków",
+        "rola": "prezes Judenratu, mieszkał pod nr 20 (1941–1942)",
+        "wiki": "https://pl.wikipedia.org/wiki/Adam_Czerniak%C3%B3w"
+      },
+      {
+        "kto": "Jerzy Popiełuszko",
+        "rola": "mieszkał pod nr 15 do śmierci w 1984",
+        "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Popie%C5%82uszko"
+      },
+      {
+        "kto": "Miron Białoszewski",
+        "rola": "mieszkał pod nr 40 w czasie powstania warszawskiego",
+        "wiki": "https://pl.wikipedia.org/wiki/Miron_Bia%C5%82oszewski"
+      },
+      {
+        "kto": "Stanisław Jachowicz",
+        "rola": "bajkopisarz, mieszkał pod nr 7, zmarł 1857",
+        "wiki": null
+      },
+      {
+        "kto": "Karol Drymmer",
+        "rola": "botanik, mieszkał pod nr 18",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Bogumił Leński",
+        "rola": "właściciel kamienicy pod nr 11",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "aleja Wolska (w okresie Osi Saskiej, w 1770)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "aleja Wolska",
+        "od": "po 1713",
+        "do": "nieustalone (co najmniej 1770)"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Wszystko z jednego artykułu Wikipedii (rozbudowanego, z odwołaniami do Zielińskiego i Nadolskiego). Punkt OSM to środek odcinka 1304604043 (127 m). Daty kamienicy Czerniakowa i Popiełuszki są z artykułu, nie zweryfikowane w innym źródle. Linki do biogramów osób to tytuły artykułów wpisane przy składaniu, niesprawdzone. Kinoteatr „Kometa”: artykuł nie podaje dokładnego roku, tylko okres przed wojną."
+  },
+  {
+    "id": "grzybowska",
+    "nazwa": "Grzybowska",
+    "name_en": "Grzybowska Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Grzybowska (Śródmieście i Wola)",
+    "adres_historyczny": null,
+    "lat": 52.2328339,
+    "lon": 20.9794804,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 343,
+    "okres": "XVII w.–dziś (nazwa oficjalna 1770)",
+    "fakty": [
+      "Dawna droga narolna folwarku książęcego, później starościńskiego; nazwa nadana oficjalnie w 1770 pochodzi od jurydyki Grzybów.",
+      "Od 1693 jurydyka Wielopole: dawna droga między placem Grzybowskim a Ciepłą stała się granicą obu jurydyk.",
+      "W 1770 ulica została w większości uregulowana; jedynie najstarszy odcinek zachował chaotyczny bieg do lat 60. XX w.",
+      "Przed 1784 przy ulicy działało 11 browarów.",
+      "W 1819 na 39 posesjach tylko 10 miało zabudowę murowaną.",
+      "W latach 1832–1838 powstało dziewięć kamienic oraz pałac Jana Jakuba Gaya, wzorowany na berlińskiej Bauakademie, z nowatorskim zastosowaniem żeliwa.",
+      "W 1871 pod nr 19 powstało Towarzystwo Akcyjne Zakładów Wyrobów Metalowych „Konrad, Jarnuszkiewicz i S-ka”; w 1914 zatrudniało ok. 600 osób.",
+      "W 1882 u zbiegu z Ciepłą wzniesiono koszary rosyjskiego 2. dywizjonu żandarmerii polowej.",
+      "W 1892 frontowy budynek Zarządu Warszawskiej Gminy Starozakonnych (nr 26/28) projektował Władysław Marconi; w 1901 powstały oficyny żydowskiej szkoły religijnej.",
+      "W 1908 u zbiegu z Przyokopową wybudowano gmach Elektrowni Tramwajowej, który od 2004 mieści Muzeum Powstania Warszawskiego.",
+      "Odcinek od Skierniewickiej na wschód (późniejsza Siedmiogrodzka) przeprowadzono po 1908; połączono go z Grzybowską dopiero ok. 1935.",
+      "W 1923 na działce między Karolkową, Grzybowską i Przyokopową Polsko-Holenderska Fabryka Lampek Elektrycznych (Philips) rozpoczęła produkcję żarówek.",
+      "Przed wojną przy ulicy działał browar Haberbusch i Schiele; filia browaru Kijoka działała przy Żelaznej.",
+      "We wrześniu 1939 spłonęła zabudowa w rejonie placu Grzybowskiego oraz browar Kazimirusa przy Ciepłej.",
+      "Od listopada 1940 wschodni odcinek od Granicznej do Żelaznej znalazł się w getcie; na krótkim odcinku między Żelazną a Waliców biegł mur dzielnicy zamkniętej.",
+      "W sierpniu 1942 ulica została włączona do aryjskiej części miasta wraz z małym gettem.",
+      "23 lipca 1942 w budynku Zarządu Gminy Starozakonnych (nr 26/28), wtedy siedzibie Judenratu, popełnił samobójstwo Adam Czerniaków.",
+      "Podczas powstania rejon ulicy broniło Zgrupowanie „Chrobry II”; główną ostoją był browar Haberbusch i Schiele.",
+      "Po powstaniu zabudowa została wypalona, a Niemcy wysadzili zabudowania fabryki Philipsa.",
+      "W 1965–1967 przy ulicy wybudowano bloki osiedla Za Żelazną Bramą.",
+      "W 1974 rozebrano secesyjną kamienicę nr 24.",
+      "W 1993 na miejscu fabryki Konrad, Jarnuszkiewicz i S-ka wybudowano Hotel Mercure „Fryderyk Chopin”, rozebrany w 2012–2013.",
+      "W 2025 w związku z przebudową ulicy zburzono przedwojenną kamienicę nr 46."
+    ],
+    "ciekawostki": [
+      "Przed wojną ulicę wybrukowano kocimi łbami, a oświetlały ją gazowe latarnie, zachowane do lat 60. XX w.",
+      "Przed wojną w dawnym pałacyku Gaya działał salon obuwia czeskiej firmy Bata.",
+      "Na podwórzu secesyjnej kamienicy (prawdopodobnie tej, której rozbiórka w 1974 dotyczyła nr 24) stał przed wojną posąg Kazimierza Wielkiego, wykopany w 1823 pod Piasecznem; po wojnie przeniesiono go do Muzeum Warszawy.",
+      "Pod nr 88 w dawnym laboratorium Asmidar mieści się m.in. Muzeum Nurkowania; pod nr 79 Muzeum Powstania Warszawskiego."
+    ],
+    "summary_en": "Grzybowska was a western road out of Warsaw, regulated in 1770, with breweries and factories before the war. It was a ghetto border street, a Warsaw Uprising battle area and was rebuilt with postwar housing estates.",
+    "ludzie": [
+      {
+        "kto": "Adam Czerniaków",
+        "rola": "prezes Judenratu, popełnił samobójstwo w budynku nr 26/28 (23.07.1942)",
+        "wiki": "https://pl.wikipedia.org/wiki/Adam_Czerniak%C3%B3w"
+      },
+      {
+        "kto": "Jan Jakub Gay",
+        "rola": "właściciel pałacu z lat 1832–1838",
+        "wiki": null
+      },
+      {
+        "kto": "Herman Jung",
+        "rola": "właściciel browaru w XIX w.",
+        "wiki": null
+      },
+      {
+        "kto": "Władysław Marconi",
+        "rola": "projektant gmachu Zarządu Gminy Starozakonnych (1892)",
+        "wiki": null
+      },
+      {
+        "kto": "Konrad, Jarnuszkiewicz i S-ka",
+        "rola": "firma metalowa przy ul. nr 19 (1871)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Siedmiogrodzka (część zachodnia, od ok. 1908/1930s)"
+    ],
+    "nazwy_historyczne": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Grzybowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Grzybowska_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii (wiele odniesień do Zielińskiego, Atlasu dawnej architektury). Punkt OSM: środek odcinka 30097367 (343 m). Obecny adres Muzeum Powstania (Grzybowska 79) i Muzeum Nurkowania (nr 88) z listy obiektów Wikipedii, nie z OSM. Data połączenia Grzybowskiej i Siedmiogrodzkiej: artykuły podają różnie (po 1908 vs. lata 30.), patrz rekord Siedmiogrodzkiej. Linki do biogramów niesprawdzone. Artykuł nie podaje dat nadania nazwy poza 1770; okres podany szacunkowo od XVII w. (droga narolna)."
+  },
+  {
+    "id": "jaktorowska",
+    "nazwa": "Jaktorowska",
+    "name_en": "Jaktorowska Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Jaktorowska (Wola)",
+    "adres_historyczny": "Krochmalna (do 1970)",
+    "lat": 52.2342966,
+    "lon": 20.9789031,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 178,
+    "okres": "po 1768–dziś",
+    "fakty": [
+      "Ulica powstała po 1768 na miejscu dawnej drogi narolnej; pierwotnie nosiła nazwę Krochmalnej, od fabryczki krochmalu pod nr 3.",
+      "Okopy Lubomirskiego przecięły ulicę; oba odcinki zachowały dawną nazwę.",
+      "Pod koniec XVIII w. za dzisiejszym kościołem św. Klemensa Hofbauera stał duży murowany browar, istniejący do 1858.",
+      "W 1908 przy ślepym końcu Krochmalnej wybudowano remizę tramwajową przy ul. Młynarskiej (wg artykułu o Jaktorowskiej).",
+      "W latach 1911–1912 pod nr 92 (dziś Jaktorowska 6) wzniesiono według projektu Henryka Stifelmana gmach sierocińca Towarzystwa „Pomoc dla Sierot”, prowadzonego przez Stefanię Wilczyńską i Janusza Korczaka; mieszkało tam ponad 100 żydowskich sierot i półsierot.",
+      "We wrześniu 1939 bombardowanie zniszczyło poddasze sierocińca.",
+      "W 1940 zakład przeniesiono do getta na ul. Chłodną 33, a następnie do gmachu na ul. Siennej 16.",
+      "W sierpniu 1944 oddziały niemieckie wraz z rosyjskimi kolaborantami z SS RONA rozstrzelały na posesji Krochmalna 90 (dziś Jaktorowska 4) 30 osób, których szczątki spalono.",
+      "W okresie powojennym rozebrano uszkodzone obiekty; gmach sierocińca Korczaka ocalał i został odbudowany po 1945.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 14 maja 1970 fragment Krochmalnej między Towarową a Karolkową przemianowano na Jaktorowską."
+    ],
+    "ciekawostki": [
+      "Przy rogu z Karolkową rośnie pomnik przyrody – dąb węgierski „Dąb doktora Korczaka” (wysokość 22 m, obwód pnia 440 cm).",
+      "W budynku sierocińca mieści się dziś Ośrodek Dokumentacji i Badań „Korczakianum” (oddział Muzeum Warszawy, nr 6)."
+    ],
+    "summary_en": "Jaktorowska was originally part of Krochmalna, a long street that in 1970 was split and renamed. The Orphans' House that Janusz Korczak and Stefania Wilczyńska ran at No. 92 (today No. 6) was built in 1911–1912 and survived the war.",
+    "ludzie": [
+      {
+        "kto": "Janusz Korczak",
+        "rola": "prowadził wspólnie z Wilczyńską sierociniec Towarzystwa „Pomoc dla Sierot” (nr 92, 1911–1912)",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      },
+      {
+        "kto": "Stefania Wilczyńska",
+        "rola": "prowadziła wspólnie z Korczakiem sierociniec",
+        "wiki": "https://pl.wikipedia.org/wiki/Stefania_Wilczy%C5%84ska"
+      },
+      {
+        "kto": "Henryk Stifelman",
+        "rola": "projektant gmachu sierocińca",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Krochmalna (do 1970)",
+      "Jaktorowska (zachodni odcinek przy Młynarskiej, nazwa z 1916; dziś nieistniejący)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Krochmalna",
+        "od": "po 1768",
+        "do": "1970"
+      },
+      {
+        "nazwa": "Jaktorowska (zachodni odcinek przy Młynarskiej)",
+        "od": "1916",
+        "do": "nieustalone (nieistniejący fragment)"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Jaktorowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jaktorowska_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuły Wikipedii o Jaktorowskiej i Krochmalnej. Artykuły opisują różnie, który odcinek i kiedy dostał nazwę Jaktorowska: artykuł o Jaktorowskiej mówi o 1916 (zachodni odcinek przy Młynarskiej) i o 1970 (Towarowa–Karolkowa); artykuł o Krochmalnej mówi, że zachodni odcinek dostał tę nazwę po wojnie. Podano obie wersje, do weryfikacji. Punkt OSM: środek odcinka 96583698 (178 m). Dane o sierocińcu (1911–1912, nr 92) zgodne w obu artykułach."
+  },
+  {
+    "id": "karolkowa",
+    "nazwa": "Karolkowa",
+    "name_en": "Karolkowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Karolkowa (Wola)",
+    "adres_historyczny": "Karolowa (nazwa od Karola Schultza)",
+    "lat": 52.2357208,
+    "lon": 20.9767205,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 150,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "Ulica powstała w XVIII w. jako trakt do Szczęśliwic i Rakowca; wyznaczała granicę między miastem a wsią Wola Wielka.",
+      "Po 1780 grunty po zachodniej stronie kupił bankier Karol Schultz; od jego imienia pochodzi pierwotna nazwa Karolowa.",
+      "Rezydencja Schultza z pałacykiem i ogrodem (prawdopodobnie projekt Szymona Bogumiła Zuga) stała w kwartale dzisiejszych ulic Kasprzaka, Karolkowej, Szarych Szeregów i Przyokopowej.",
+      "Przy skrzyżowaniu z Kasprzaka stało sześć wolnostojących domów tzw. Kolonii Schultza; około 1850 zastąpiono je nowymi obiektami.",
+      "W 1827 ulicę przedłużono do ulicy Gęsiej przy murze cmentarza żydowskiego.",
+      "W 1856 w murowanym budynku przy ulicy zaczęła działać fabryczka platerów Henneberga i Czajkowskiego; przed I wojną zatrudniała 200 osób.",
+      "W 1878 u zbiegu z Leszno (nr 72/76) powstała odlewnia i wytwórnia maszyn rolniczych braci Geislerów; w 1911 spółka otrzymała nazwę „Bracia Geisler, Okolski i Patschke” S.A.",
+      "W 1879 działała tu Warszawska Fabryka Taśm Gumowych „Paweł Szpigiel i S-ka” (nr 22/24).",
+      "W 1882 na terenie parafii ewangelicko-augsburskiej, ciągnącym się od Żytniej do muru cmentarza, powstały Dom Starców i Dom Sierot; w 1910–1911 powstał gmach Zakładu Umysłowo Niedorozwiniętych i Upośledzonych.",
+      "W 1923 pod nr 32/44 zaczęła działać Polsko-Holenderska Fabryka Lampek Elektrycznych (Philips).",
+      "W latach 1924–1926 wzniesiono klasztor redemptorystów (projekt Stefana Szyllera), a do 1933 kościół św. Klemensa Hofbauera (projekt Stanisława Marzyńskiego).",
+      "W 1924–1925 pod nr 56 powstał gmach miejskiej szkoły powszechnej; w 1936–1937 szkoła modernistyczna u zbiegu z Kasprzaka.",
+      "W powstaniu Niemcy wymordowali mieszkańców i spalili całą zabudowę; zginęło 24 ojców redemptorystów.",
+      "W latach 1949–1951 między Kasprzaka, Karolkową i Skierniewicką zbudowano Zakłady Radiowe im. Marcina Kasprzaka.",
+      "W 1969 wyburzono kamienicę nr 59 z 1844, najstarszy ocalały po wojnie budynek na Woli."
+    ],
+    "ciekawostki": [
+      "Kościół św. Klemensa Hofbauera uważany jest za najbardziej nowatorski obiekt sakralny z okresu dwudziestolecia w Warszawie (żelbetowa konstrukcja, bliska konstruktywizmowi francuskiemu, wg artykułu).",
+      "Przy Karolkowej przed wojną było wyjątkowo mało sklepów; zabudowa mieszkaniowa składała się głównie z luźnych obiektów przy skrzyżowaniach."
+    ],
+    "summary_en": "Karolkowa takes its earlier name Karolowa from the banker Karol Schultz, who owned the land west of the street after 1780. It was lined with factories, schools and the Redemptorist church of St Clement Hofbauer, which was badly damaged in 1944.",
+    "ludzie": [
+      {
+        "kto": "Karol Schultz",
+        "rola": "bankier, właściciel gruntów i rezydencji z początku XIX w.",
+        "wiki": "https://pl.wikipedia.org/wiki/Karol_Schultz"
+      },
+      {
+        "kto": "Stefan Szyller",
+        "rola": "projektant klasztoru redemptorystów (1924–1926)",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Marzyński",
+        "rola": "projektant kościoła św. Klemensa Hofbauera (do 1933)",
+        "wiki": null
+      },
+      {
+        "kto": "Redemptoryści",
+        "rola": "zakon, którego klasztor i kościół przy Karolkowej; 24 ojców zginęło w powstaniu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Karolowa (od Karola Schultza, XVIII–XIX w.)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Karolowa",
+        "od": "po 1780",
+        "do": "nieustalone (zmiana na Karolkowa)"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii, bez zdjęć. Dokładna data zmiany Karolowa→Karolkowa nieustalona. Artykuł podaje różne liczby pracowników w fabryce Henneberga. Punkt OSM: środek odcinka 1491071957 (150 m)."
+  },
+  {
+    "id": "krochmalna",
+    "nazwa": "Krochmalna",
+    "name_en": "Krochmalna Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Krochmalna (Wola, od Żelaznej do Towarowej; nazwę przywrócono w 2019 i 2023)",
+    "adres_historyczny": "Lawendowa / Lawendowska (przed 1770)",
+    "lat": 52.2346844,
+    "lon": 20.9815998,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 228,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "Dawna droga narolna; nazywana Lawendową lub Lawendowską, prawdopodobnie od licznych ogrodów.",
+      "Zaczynała się przy ul. Gnojnej (po 1918 Rynkowa) przy placu Żelaznej Bramy i biegła na zachód do okolic Towarowej.",
+      "Obecną nazwę nadano w 1770, od działającej tu wytwórni krochmalu; w tym samym roku ulicę przecięto Okopem Lubomirskiego.",
+      "Pod koniec XVIII w. przy ulicy było ok. 40 domów i 4 browary.",
+      "W 1846 Błażej Haberbusch i Jan Henryk Klawe kupili stary browar Ludwika Suchockiego, co dało początek spółce Haberbusch i Schiele.",
+      "Po rozbudowie w latach 1880–1890 browar Haberbusch i Schiele był największym producentem piwa w Królestwie Polskim.",
+      "W 1908 w kamienicy nr 10 zamieszkała rodzina Isaaca Bashevisa Singera (w 1914 przeprowadzili się do nr 12).",
+      "Pod koniec XIX w. ulicę zamieszkiwała głównie ludność żydowska; na wschodnim odcinku działało osiem domów modlitwy i mykwa.",
+      "W latach 1911–1912 pod nr 92 wzniesiono gmach Domu Sierot Korczaka i Wilczyńskiej.",
+      "W okresie międzywojennym ulica była jedną z najbardziej zaniedbanych w śródmieściu; w nr 56 mieścił się VII komisariat Policji Państwowej.",
+      "W listopadzie 1940 wschodni odcinek do Wroniej znalazł się w getcie; w lutym 1942 w kamienicach nr 13 i 18 doszło do dwóch z czterech udokumentowanych przypadków kanibalizmu w dzielnicy zamkniętej.",
+      "Podczas powstania skrzyżowania z Żelazną i Wronią zamknięto barykadami.",
+      "W 1944 zabudowę zniszczono z wyjątkiem kilku domów przy Żelaznej i odcinka między Karolkową a Towarową.",
+      "W 1970 ulica została skrócona do 480 m (z przedwojennych 1740 m); fragment Towarowa–Karolkowa przemianowano na Jaktorowską, a odcinek Wronia–Towarowa na Kotlarską.",
+      "W latach 2017–2019 na terenie dawnego browaru wzniesiono zabudowę i odtworzono ulicę w przedwojennym przebiegu; nazwę Krochmalna przywrócono w 2019 (Żelazna–Wronia) i w 2023 (dawna Kotlarska).",
+      "Po zmianach długość ulicy wzrosła z 480 do 1130 m."
+    ],
+    "ciekawostki": [
+      "W powieści Leopolda Tyrmanda „Zły” (1955) na ulicy był warsztat inżyniera Alberta Wilgi, a w kamienicy na rogu z Żelazną bar „Słodycz”.",
+      "W powieści „Kariera Nikodema Dyzmy” Tadeusza Dołęgi-Mostowicza (1932) na tej ulicy dokonano zabójstwa Józefa Boczka.",
+      "W 2018 pod nr 1 (róg Ciepłej) odsłonięto tablicę upamiętniającą Isaaca Bashevisa Singera."
+    ],
+    "summary_en": "Krochmalna is a street named in 1770 after a starch works. Before the war it was one of the poorest streets in central Warsaw, home to Isaac Bashevis Singer's family and Korczak's orphanage. Its length was cut from 1740 m to 480 m in 1970 and partly restored after 2017.",
+    "ludzie": [
+      {
+        "kto": "Isaac Bashevis Singer",
+        "rola": "mieszkał pod nr 10 (od 1908) i nr 12 (od 1914); tablica w 2018",
+        "wiki": "https://pl.wikipedia.org/wiki/Isaac_Bashevis_Singer"
+      },
+      {
+        "kto": "Janusz Korczak",
+        "rola": "Dom Sierot pod nr 92 (1911–1912)",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Korczak"
+      },
+      {
+        "kto": "Stefania Wilczyńska",
+        "rola": "współzałożycielka Domu Sierot pod nr 92",
+        "wiki": "https://pl.wikipedia.org/wiki/Stefania_Wilczy%C5%84ska"
+      },
+      {
+        "kto": "Błażej Haberbusch",
+        "rola": "współwłaściciel browaru (1846), spółka Haberbusch i Schiele",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Henryk Klawe",
+        "rola": "współwłaściciel browaru (1846)",
+        "wiki": null
+      },
+      {
+        "kto": "Leopold Tyrmand",
+        "rola": "pisarz; „Zły” (1955) akcja na ulicy",
+        "wiki": "https://pl.wikipedia.org/wiki/Leopold_Tyrmand"
+      },
+      {
+        "kto": "Tadeusz Dołęga-Mostowicz",
+        "rola": "pisarz; „Kariera Nikodema Dyzmy” (1932) akcja na ulicy",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Lawendowa / Lawendowska (przed 1770)",
+      "Jaktorowska (odcinek Towarowa–Karolkowa, od 1970)",
+      "Kotlarska (odcinek Wronia–Towarowa, 1970–2023)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Lawendowa / Lawendowska",
+        "od": "nieustalone",
+        "do": "1770"
+      },
+      {
+        "nazwa": "Krochmalna",
+        "od": "1770",
+        "do": "1970 (odcinek Towarowa–Karolkowa przemianowany w 1970 na Jaktorowską)"
+      },
+      {
+        "nazwa": "Kotlarska (odcinek Wronia–Towarowa)",
+        "od": "1970",
+        "do": "2023"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Krochmalna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Krochmalna_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii. Punkt OSM to środek odcinka 1153581259 (typ 'service', 228 m). Zapis o Haberbuschu w artykule z 1846 wspomina, że spółka miała siedzibę przy Wroniej i Krochmalnej. Dane o 1908 i nr 10 są z artykułu, nie sprawdzone w innym źródle. Rozbieżność: artykuł Jaktorowskiej podaje, że nazwa 'Jaktorowska' dotyczy odcinka od Towarowej do Karolkowej (1970); 'Krochmalna' zachodniej części przy Młynarskiej to osobna sprawa (patrz rekord Jaktorowskiej)."
+  },
+  {
+    "id": "leszno",
+    "nazwa": "Leszno",
+    "name_en": "Leszno Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Leszno (Wola; zachodni odcinek od al. „Solidarności” do Młynarskiej)",
+    "adres_historyczny": "Leszno (ta sama nazwa; wschodnia część weszła w Trasę W-Z w 1949)",
+    "lat": 52.2380995,
+    "lon": 20.9786879,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 245,
+    "okres": "1648–dziś",
+    "fakty": [
+      "Ulica powstała w miejscu dawnego traktu z Warszawy do Błonia; nazwa pochodzi od jurydyki Leszno założonej 8 stycznia 1648 przez podskarbiego wielkiego koronnego Bogusława Leszczyńskiego i stryja, kanclerza Jana Leszczyńskiego.",
+      "Ulica była osią osadniczą jurydyki; osiedlała się tu głównie ludność wyznania ewangelickiego, przybyła z Leszna.",
+      "Od 1897 pod nr 58 mieściła się centrala warszawskiego pogotowia ratunkowego.",
+      "We wrześniu 1939 zabudowa ucierpiała podczas obrony Warszawy.",
+      "W okupacji nazwę zmieniono na Gerichtstraße (od budynku sądów pod nr 53/55).",
+      "W listopadzie 1940 ulica do Żelaznej znalazła się w obrębie getta warszawskiego.",
+      "W 1949 wschodnia i środkowa część ulicy weszły w skład Trasy W-Z i otrzymały nazwę al. Świerczewskiego (dziś al. „Solidarności”); historyczną nazwę zachował zachodni odcinek od al. „Solidarności” do Młynarskiej.",
+      "W latach 60. XX w. ulicę przebudowano na dwujezdniową: od Okopowej do Karolkowej nową jezdnię dobudowano po północnej stronie, dalej po południowej."
+    ],
+    "ciekawostki": [
+      "Przed wojną handel spożywczy na Kercelaku koncentrował się w rejonie ulicy Leszno (wg artykułu o Kercelaku).",
+      "Na ulicy stoi pomnik Ofiar Rzezi Woli.",
+      "Obiekty nieistniejące z artykułu: Kercelak, Kino W-Z, klub muzyczny Fugazi, Ogród Rembaczewskiego."
+    ],
+    "summary_en": "Leszno gave its name to a 1648 estate (jurydyka) on the western side of Warsaw and was the main axis of its settlement. In 1949 its eastern part became Trasa W-Z; the western section kept the old name.",
+    "ludzie": [
+      {
+        "kto": "Bogusław Leszczyński",
+        "rola": "podskarbi wielki koronny, założyciel jurydyki Leszno (1648)",
+        "wiki": "https://pl.wikipedia.org/wiki/Bogus%C5%82aw_Leszczy%C5%84ski"
+      },
+      {
+        "kto": "Jan Leszczyński",
+        "rola": "kanclerz wielki koronny, współzałożyciel jurydyki Leszno (1648)",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Leszczy%C5%84ski"
+      }
+    ],
+    "dawne_nazwy": [
+      "Gerichtstraße (okupacja niemiecka)",
+      "al. Świerczewskiego (odcinek od 1949, obecnie al. „Solidarności”)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Leszno (jurydyka i ulica)",
+        "od": "1648",
+        "do": "dziś (zachodni odcinek)"
+      },
+      {
+        "nazwa": "Gerichtstraße",
+        "od": "1939 (okupacja)",
+        "do": "1945 (koniec okupacji)"
+      },
+      {
+        "nazwa": "al. gen. Karola Świerczewskiego (wschodnia i środkowa część)",
+        "od": "1949",
+        "do": "1991"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Leszno w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Leszno_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł o Lesznie jest krótki. Daty okupacyjne 1939–1945 przyjęte szacunkowo (artykuł podaje tylko 'okupacja niemiecka'). Punkt OSM: środek odcinka 1169432279 (245 m). Obecny przebieg 'Leszna' (tylko zachodni odcinek) z artykułu Aleja Solidarności i Leszna; OSM ma ways z nazwą 'Leszno' także we wschodniej części, co może być w konflikcie z artykułem (sprawdzić na mapie)."
+  },
+  {
+    "id": "mlynarska",
+    "nazwa": "Młynarska",
+    "name_en": "Młynarska Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Młynarska (Wola)",
+    "adres_historyczny": null,
+    "lat": 52.2355913,
+    "lon": 20.9733656,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 378,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "Dawna droga narolna wsi Wielka Wola; w połowie XVIII w. odcinek drogi biegnącej z Rakowca do Powązek.",
+      "Nazwa pochodzi od kilkunastu młynów-wiatraków znajdujących się w okolicy; pojawiła się w dokumentach po raz pierwszy w 1784.",
+      "W 1792 przy ulicy założono cmentarz ewangelicko-augsburski (wg artykułu o Karolkowej: działający przy Młynarskiej od 1792).",
+      "W 1908 przy ulicy uruchomiono zajezdnię tramwajową „Wola”.",
+      "2 grudnia 1928 oddano linię tramwajową wzdłuż ulicy między Wolską a Górczewską; 6 listopada 1929 ruch na tym odcinku ustał po budowie torowiska na Lesznie.",
+      "14 grudnia 1931 ruch tramwajowy powrócił, gdy oddano linię między Górczewską a Obozową.",
+      "We wrześniu 1939 zabudowa ucierpiała w obronie Warszawy.",
+      "W pierwszych dniach powstania ulica była terenem ciężkich walk; 11 sierpnia 1944 w całości znalazła się w rękach Niemców.",
+      "Po wojnie ulicę poszerzono; 15 kwietnia 1946 przywrócono ruch tramwajowy po przebudowie torowiska na rozstaw 1435 mm, a 3 czerwca 1947 odcinek Wolska–Górczewska z pętlą na Staszica.",
+      "W 1987 w okolicy ulicy doszło do katastrofy tramwajowej, w której zginęło 7 osób.",
+      "W latach 1979–2025 pod skrzyżowaniem z Wolską działało przejście podziemne."
+    ],
+    "ciekawostki": [
+      "Na północnym odcinku, między Sołtyka a Obozową, zachowała się historyczna nawierzchnia z polnych kamieni, wpisana do gminnej ewidencji zabytków (ID WOL34637).",
+      "Przy ulicy stoi budynek PDT Wola (Młynarska 8/12), a na jej terenie są cmentarze ewangelicko-reformowany, ewangelicko-augsburski i Muzułmański Cmentarz Kaukaski (wg artykułu)."
+    ],
+    "summary_en": "Młynarska was named after a dozen windmills in the area, first recorded in 1784. It has a tram depot from 1908, tram lines from 1928 and 1931, and historic cobbles on its northern section.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "nazwy_historyczne": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Młynarska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_M%C5%82ynarska_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "OSM nie ma w osm-400m.json odcinka ulicy o nazwie 'Młynarska' (brak way z nazwą). Punkt to adres z OSM: Młynarska 8/12 (węzeł 4584575636 lub 13089638155), 378 m od środka, stąd lokalizacja 'przyblizona'. Ulica w rzeczywistości przebiega dalej na zachód; punkt warto zweryfikować. Data 1792 cmentarza pochodzi z artykułu Karolkowej."
+  },
+  {
+    "id": "ogrodowa",
+    "nazwa": "Ogrodowa",
+    "name_en": "Ogrodowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Ogrodowa (Wola, od al. Jana Pawła II do Okopowej)",
+    "adres_historyczny": null,
+    "lat": 52.2371604,
+    "lon": 20.9824256,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 278,
+    "okres": "1770–dziś",
+    "fakty": [
+      "Dawna droga narolna włóki Klucznikowskiej, wytyczona po 1765; nazwa nadana w 1770 pochodzi od licznych tutejszych ogrodów.",
+      "Ulica zaczynała się przy ul. Solnej (dziś al. Jana Pawła II) i biegła na zachód do wału miejskiego (ul. Okopowa).",
+      "W 1784 przy ulicy stało 57 domów i dworków drewnianych, pięć murowanych i dwa browary.",
+      "Pod koniec XVIII w. ulica została wybrukowana.",
+      "W 1806 na obszernej posesji na rogu z Białą powstała garbarnia Jana Temlera (w 1858 przeniesiona na Okopową).",
+      "W 1842 pożar zniszczył zabudowę 16 posesji.",
+      "W 1867 przy wylocie ulicy na Okopową powstało wielkie targowisko Kercelak.",
+      "W 1896 w przebudowanej kamienicy nr 17 zaczął działać prywatny zakład leczniczy Marii Szlenkierowej, początek filantropijnej działalności rodziny Szlenkierów.",
+      "W 1910 pod nr 32 zbudowano kompleks fabryczno-biurowy Fabryki Chemicznej M. Leszczyński i S-ka.",
+      "W latach 1935–1939 na działce między Lesznem a Ogrodową wzniesiono monumentalny gmach Sądu Grodzkiego (projekt Bogdana Pniewskiego).",
+      "Przed 1939 Ogrodowa była jedną z najgęściej zabudowanych i zaludnionych ulic tej części miasta; około połowy budynków należało do Żydów.",
+      "W listopadzie 1940 ulica znalazła się w obrębie getta, z wyjątkiem odcinka na zachód od Wroniej i fragmentu przy gmachu sądów oraz Białej.",
+      "W pierwszych dniach powstania na wschodnim odcinku (Solna–Żelazna) zbudowano pięć barykad; powstańcy z oddziału „Leśnik” zajęli gmach Sądu Grodzkiego.",
+      "7 sierpnia 1944 Niemcy opanowali rejon ulicy, wymordowali część mieszkańców i podpalili budynki.",
+      "Po wojnie większość uszkodzonych XIX-wiecznych kamienic rozebrano; przy ulicy powstały budynki osiedla Mirów (1949–1960).",
+      "We wrześniu 2021 na ścianie domu nr 67 odsłonięto mural Bruno Neuhamera poświęcony Janowi Lityńskiemu."
+    ],
+    "ciekawostki": [
+      "Przed budynkiem nr 56 zachowano fragment oryginalnego bruku z kamieni polnych, a na zachodnim odcinku pas bruku z kostki po obu stronach.",
+      "Gmach Sądu Grodzkiego pełnił funkcję sądu także w czasie getta; był enklawą w dzielnicy zamkniętej i miał wejście od strony ul. Leszno dla Żydów, a od strony Ogrodowej dla mieszkańców „aryjskiej” części Warszawy."
+    ],
+    "summary_en": "Ogrodowa was named in 1770 after the gardens along it. Before the war it was one of the most densely populated streets in this part of the city, and in 1944 it was a site of barricades and massacres. The Court of First Instance building (1935–1939) still stands on it.",
+    "ludzie": [
+      {
+        "kto": "Jan Temler",
+        "rola": "właściciel garbarni (1806)",
+        "wiki": null
+      },
+      {
+        "kto": "Maria Szlenkierowa",
+        "rola": "założycielka zakładu leczniczego (1896)",
+        "wiki": null
+      },
+      {
+        "kto": "Bogdan Pniewski",
+        "rola": "projektant gmachu Sądu Grodzkiego",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Lityński",
+        "rola": "bohater muralu z 2021 na ścianie domu nr 67",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Lity%C5%84ski"
+      }
+    ],
+    "dawne_nazwy": [],
+    "nazwy_historyczne": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii. Punkt OSM: środek odcinka 96584858 (278 m). Artykuł nie podaje zmian nazwy poza nazwą z 1770. Kamienica Szlenkierów: nr 17 z artykułu."
+  },
+  {
+    "id": "okopowa",
+    "nazwa": "Okopowa",
+    "name_en": "Okopowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Okopowa (Wola)",
+    "adres_historyczny": "Przedokopowa (od 1875)",
+    "lat": 52.2360685,
+    "lon": 20.9803337,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 99,
+    "okres": "1770/1784–dziś",
+    "fakty": [
+      "Ulica powstała jako droga wewnętrzna przy okopach Lubomirskiego (okopy z 1770); jej początki sięgają 1784.",
+      "W 1770 nazwę „Okopowa” nadano najpierw obecnej ul. Klonowej (wg artykułu).",
+      "W 1871 na terenie między Smoczą, Glinianą, Okopową i Niską rozpoczęto budowę garbarni Bracia Pfeiffer, działającej od lat 80. XIX w.",
+      "W 1875 na miejscu wału i fosy Okopów wytyczono szeroką ulicę o nazwie Przedokopowa; obecna nazwa utrwaliła się później.",
+      "Po I wojnie przy ulicy działały dwa schroniska dla bezdomnych: pod nr 5 dla eksmitowanych za długi, pod nr 59 dla agresywnych i zdemoralizowanych.",
+      "W 1926 pod nr 43 zakończono budowę stadionu Skry Warszawa; pierwsze mecze rozegrano na początku sezonu 1927.",
+      "We wrześniu 1939 zabudowa ucierpiała podczas obrony Warszawy.",
+      "W czasie okupacji część zniszczonego stadionu Skry zajęto jako cmentarz ofiar pobliskiego getta; po 1945 stadionu nie odbudowano, a klub przeniósł się w okolice Wawelskiej i Żwirki i Wigury.",
+      "W latach 1949–1967 w rejonie północnej części ulicy zbudowano osiedle Muranów Zachodni.",
+      "W 1959 ulicę przebudowano: nowa nawierzchnia i jarzeniowe oświetlenie.",
+      "Wzdłuż ulicy od Chłodnej i Wolskiej do Leszna ciągnęło się targowisko Kercelak (od 1867); w 2001 skrzyżowanie z al. „Solidarności” nazwano rondem Kercelak."
+    ],
+    "ciekawostki": [
+      "Obecna nazwa „Okopowa” była pierwotnie nadana ulicy Klonowej (1770), zanim przeszła na dzisiejszą ulicę.",
+      "Przy Okopowej jest Cmentarz Powązkowski oraz żydowski cmentarz (nr 49/51), a na murze cmentarza pomnik granic getta.",
+      "Obiekty nieistniejące z artykułu: rogatki Wolskie, Ogród Rembaczewskiego, synagoga cmentarna, nieistniejący obiekt „KL Warschau”, Hotel Czarny Kot."
+    ],
+    "summary_en": "Okopowa runs along the old Lubomirski trenches (1770), known in 1875 as Przedokopowa. It borders the Powązki and Jewish cemeteries and the former Kercelak market, and was rebuilt after the war as part of Muranów Zachodni.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Przedokopowa (od 1875)",
+      "Klonowa (nazwa Okopowa nadana w 1770 najpierw tej ulicy)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Przedokopowa",
+        "od": "1875",
+        "do": "nieustalone (nazwa utrwaliła się później)"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Okopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Okopowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii (krótki). Punkt OSM: środek odcinka 1169302295 (99 m). Dwie rzeczy z artykułu wymagają sprawdzenia: 1770 'Okopowa' dla Klonowej (wiki mówi, że pierwszą ulicą z taką nazwą była Klonowa) i 'KL Warschau' jako obiekt nieistniejący, bez szczegółów."
+  },
+  {
+    "id": "przyokopowa",
+    "nazwa": "Przyokopowa",
+    "name_en": "Przyokopowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Przyokopowa (Wola; dwa odcinki, od Grzybowskiej do Prostej i od Szarych Szeregów do Kolejowej)",
+    "adres_historyczny": "Przy Okopach",
+    "lat": 52.234426,
+    "lon": 20.9807548,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 207,
+    "okres": "XVIII w.–dziś",
+    "fakty": [
+      "W XVIII w. droga prowadząca od rogatek Wolskich do Szczęśliwic i Rakowca; u zbiegu z Karolkową znajdowały się zabudowania wsi Czyste.",
+      "Pierwotnie nazywana „Przy Okopach”, bo biegła po zachodniej stronie okopów Lubomirskiego; obecna nazwa poświadczona w 1808.",
+      "W 1844 ulicę przecięły tory Kolei Warszawsko-Wiedeńskiej; ok. 1885 powstała tam stacja towarowa.",
+      "W końcu XIX w. przy ulicy znajdowały się liczne składy i magazyny; mieszkali tu głównie kolejarze i robotnicy.",
+      "W latach 1905–1909 przy ulicy wzniesiono Elektrownię Tramwajową (od 2004 siedziba Muzeum Powstania Warszawskiego).",
+      "W 1923 na działce między Karolkową, Grzybowską i Przyokopową rozpoczęła produkcję Polsko-Holenderska Fabryka Lampek Elektrycznych (Philips).",
+      "W czasie II wojny zabudowa została prawie całkowicie zniszczona; w czasie powstania przegrodzono ulicę dwiema barykadami.",
+      "Po kapitulacji powstania Niemcy wywieźli sprzęt z fabryki Philipsa i wysadzili zabudowania.",
+      "Po 1945 bieg ulicy przerwały zabudowania Warszawskich Zakładów Farmaceutycznych Polfa; od tego czasu ulica składa się z dwóch odcinków.",
+      "Od 2020 na odcinku od Hrubieszowskiej do Grzybowskiej ulica jest jednokierunkowa (w związku z rozszerzeniem strefy płatnego parkowania)."
+    ],
+    "ciekawostki": [
+      "Ulica jest przerwana na całej długości przez teren dawnej Polfy, więc dwa jej odcinki nie łączą się ze sobą.",
+      "Elektrownia Tramwajowa przy Przyokopowej, obecnie Muzeum Powstania Warszawskiego, została wybudowana w latach 1905–1909 (artykuł o ulicy) lub w 1908 (artykuł o Grzybowskiej)."
+    ],
+    "summary_en": "Przyokopowa, once called Przy Okopach, runs along the former Lubomirski trenches. It was home to the tram power station that now houses the Warsaw Uprising Museum, and was severed in two by the Polfa pharmaceutical plant after 1945.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Przy Okopach (przed 1808)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Przy Okopach",
+        "od": "XVIII w. (nieustalone)",
+        "do": "1808 (poświadczona nazwa obecna)"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Przyokopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Przyokopowa_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii. Punkt OSM: środek odcinka 1040349449 (207 m). Daty elektrowni rozbieżne w źródłach (1905–1909 vs 1908), oba podane."
+  },
+  {
+    "id": "rondo-kercelak",
+    "nazwa": "Rondo Kercelak (dawny plac Kercelego i targowisko Kercelak)",
+    "name_en": "Kercelak Roundabout (former Kercelak market square)",
+    "typ": "ulica",
+    "adres_dzis": "rondo Kercelak – skrzyżowanie ul. Okopowej i al. „Solidarności”",
+    "adres_historyczny": "plac Kercelego (targowisko Kercelak, 1867–1947)",
+    "lat": 52.2369386,
+    "lon": 20.9800077,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 138,
+    "okres": "1867–1947 (plac i targowisko); od 2001 nazwa skrzyżowania",
+    "fakty": [
+      "Plac nosił nazwisko Józefa Kercelego, właściciela kilku nieruchomości w tym rejonie Woli, który ofiarował teren miastu pod targ paszy; przed uporządkowaniem były tu okopy i fosy z wodą.",
+      "W 1867 założono targowisko o powierzchni 1,5 ha, początkowo na paszę; później przeniesiono tu stragany z placu Grzybowskiego w związku z budową kościoła Wszystkich Świętych.",
+      "Od skrótowców charakterystycznych dla Warszawy targowisko zaczęto nazywać Kercelakiem.",
+      "Targowisko ciągnęło się od zbiegu Chłodnej, Wolskiej i Towarowej wzdłuż Okopowej do Leszna; od zachodu graniczyło z kompleksem żydowskiego Szpitala na Czystem.",
+      "W 1926 na placu ukończono niewielką halę targową w kształcie litery L.",
+      "W październiku 1939 na placu działało 113 punktów sprzedaży; w sierpniu 1942 – 1550 straganów.",
+      "2 września 1942 podczas radzieckiego nalotu spłonęło ok. 1000 straganów; targowisko odbudowano z nielegalnie pozyskanego drewna.",
+      "W maju 1942 na targowisku zatrzymano i wywieziono do obozu przy ul. Skaryszewskiej ok. 3 tys. osób; wczesną wiosną 1944 zabrano ok. tysiąca handlujących i kupujących.",
+      "W czasie powstania przed godziną „W” doszło do potyczki z plutonem żandarmerii z posterunku Nordwache; do 2 sierpnia wyloty ulic na plac zamknięto barykadami.",
+      "5 sierpnia 1944 oddziały Reinefartha i Dirlewangera wyparły Polaków z placu; 5 października na placu złożyli broń żołnierze zgrupowania „Chrobry II”.",
+      "Targowisko zlikwidowano w 1947 (wg niektórych źródeł handel trwał tu jeszcze w 1949); przez plac przeprowadzono Trasę W-Z.",
+      "W listopadzie 2001 Rada m.st. Warszawy nadała nazwę rondo Kercelak skrzyżowaniu Okopowej z al. „Solidarności”; planowane rondo o średnicy 80 m nie zostało zrealizowane."
+    ],
+    "ciekawostki": [
+      "Kercelak słynął z przedmiotów o niewiadomym pochodzeniu i z handlu pochodzącego z kradzieży; działały tu lotne szulernie grające w trzy karty.",
+      "W czasie okupacji sprzedawano tu wszy odzieżowe, które kupowali niemieccy żołnierze, by uniknąć frontu (zawszenie oznaczało kwarantannę).",
+      "Kercelak był częścią folkloru zachodniej Warszawy; pojawiał się w felietonach Stefana Wiechecki „Wiecha”.",
+      "Nazwa „rondo Kercelak” nie oznacza dziś ronda – planowane rondo nie powstało."
+    ],
+    "summary_en": "Kercelak was a large open-air market on a square named after the landowner Józef Kercelego, active from 1867 to 1947 and closed during the Trasa W-Z works. The intersection of Okopowa and Solidarity Avenue was named Kercelak Roundabout in 2001, although no roundabout was built.",
+    "ludzie": [
+      {
+        "kto": "Józef Kercelego",
+        "rola": "właściciel nieruchomości, który ofiarował plac miastu (XIX w.)",
+        "wiki": null
+      },
+      {
+        "kto": "Łukasz Siemiątkowski („Tata Tasiemka”)",
+        "rola": "szef gangu, który wymuszał okupy od handlujących na Kercelaku",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Wiechecki („Wiech”)",
+        "rola": "felietonista, którego bohaterowie byli związani z Kercelakiem",
+        "wiki": "https://pl.wikipedia.org/wiki/Wiech"
+      }
+    ],
+    "dawne_nazwy": [
+      "plac Kercelego (1867–1947)",
+      "Kercelak (targowisko, 1867–1947)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "plac Kercelego (targowisko Kercelak)",
+        "od": "1867",
+        "do": "1947"
+      },
+      {
+        "nazwa": "rondo Kercelak",
+        "od": "2001 (listopad)",
+        "do": "dziś"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord 'rondo Kercelak' jest opisany jako ulica zgodnie z przydziałem, ale to skrzyżowanie i nieistniejący plac; typ 'ulica' jest tu umowny. Punkt OSM: środek ronda (way 96584836, 138 m). Liczby handlujących i straganów podają różne lata (1939, 1942, 1944). Rok 1947 jako koniec targowiska i 1949 wg 'niektórych źródeł' – oba w artykule."
+  },
+  {
+    "id": "siedmiogrodzka",
+    "nazwa": "Siedmiogrodzka",
+    "name_en": "Siedmiogrodzka Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Siedmiogrodzka (Wola, od Karolkowej do Skierniewickiej)",
+    "adres_historyczny": null,
+    "lat": 52.2325025,
+    "lon": 20.9774439,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 391,
+    "okres": "lata 30. XX w.–dziś",
+    "fakty": [
+      "Ulica powstała w latach 30. XX w. jako przedłużenie ulicy Grzybowskiej w kierunku zachodnim, doprowadzone do Skierniewickiej.",
+      "Odcinek między Karolkową a Skierniewicką nazwano Siedmiogrodzką, bo cegielnia przy Karolkowej nie pozwalała na połączenie obu części Grzybowskiej.",
+      "Z Grzybowską połączono ją dopiero ok. 1935 wąskim przejazdem przez teren cegielni.",
+      "27 lutego 1958 ulicą poprowadzono pierwszą regularną komunikację miejską – autobus linii 105.",
+      "Całą północną pierzeję ulicy zajmuje Zajezdnia Tramwajowa Wola."
+    ],
+    "ciekawostki": [
+      "Nazwa nawiązuje do Siedmiogrodu, krainy historycznej na Wyżynie Siedmiogrodzkiej w centralnej Rumunii.",
+      "Pod nr 5 jest tablica pamiątkowa Tchorka; pod nr 20 siedziba Tramwajów Warszawskich; w pobliżu III LO im. gen. Józefa Sowińskiego."
+    ],
+    "summary_en": "Siedmiogrodzka (Transylvania Street) was built in the 1930s as the western extension of Grzybowska, but was given its own name because a brickworks blocked the link. The northern side of the street is the Wola tram depot.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "nazwy_historyczne": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Siedmiogrodzka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Siedmiogrodzka_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Ulica Grzybowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Grzybowska_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rozbieżność dat: artykuł o Siedmiogrodzkiej mówi 'lata 30. XX w.', a artykuł o Grzybowskiej mówi, że odcinek przeprowadzono po 1908, nazwę nadano wtedy, a połączono ok. 1935. Podano oba. Punkt OSM: węzeł na odcinku 419477615 (391 m, blisko granicy 400 m)."
+  },
+  {
+    "id": "towarowa",
+    "nazwa": "Towarowa",
+    "name_en": "Towarowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Towarowa (od placu Zawiszy do Wolskiej i Chłodnej)",
+    "adres_historyczny": null,
+    "lat": 52.2347492,
+    "lon": 20.9810274,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 193,
+    "okres": "1770 (okopy) – dziś; nazwa od 1890",
+    "fakty": [
+      "Dawna droga biegnąca wzdłuż usypanych w 1770 okopów Lubomirskiego; uregulowana w 1825, w 1875 poprowadzona jako ulica w miejscu zniwelowanego okopu.",
+      "Nazwę nadano w 1890 od pobliskiej stacji towarowej Kolei Warszawsko-Wiedeńskiej.",
+      "Do lat 50. XX w. wzdłuż ulicy, między dworcem towarowym (późniejszym Dworcem Głównym) a Grzybowską, ciągnęły się bocznice kolejowe i magazyny, nazywane „Syberią”.",
+      "Pod koniec XIX w. przy Srebrnej działała fabryka metalurgiczna Bormann i Szwede; przy Krochmalnej i Grzybowskiej skupiały się domy publiczne, przeniesione z rejonu Freta po interwencji arcybiskupa Wincentego Popiela.",
+      "W 1930 nad wykopem linii średnicowej zbudowano wiadukt, poszerzony w latach 1962–1963.",
+      "W 1939 i 1944 zabudowa została w dużej części zniszczona; w 1944 zniszczono zabudowę rejonu ulic Okopowej, Towarowej i Walicowa.",
+      "W 1945 jedną z hal stacji towarowej przebudowano na dworzec pasażerski – Dworzec Główny.",
+      "W 1950 między Towarową, Pańską, Srebrną i Miedzianą uruchomiono Dom Słowa Polskiego; między Towarową, Grzybowską, Wronią i Łucką powstały Wojskowe Zakłady Graficzne.",
+      "W latach 1963–1967 przy ulicy powstało osiedle Okopowa-Towarowa.",
+      "Od grudnia 1985 do lipca 2000 ulica była częścią drogi krajowej nr 2 i trasy europejskiej E30."
+    ],
+    "ciekawostki": [
+      "Konstanty Ildefons Gałczyński napisał w 1929 wiersz „Ulica Towarowa”; kamień pamiątkowy stoi w miejscu niezachowanej kamienicy nr 54, w której poeta mieszkał w 1905–1914 i 1918–1931.",
+      "W listach obiektów z artykułu są Muzeum Nurkowania i Muzeum Powstania Warszawskiego."
+    ],
+    "summary_en": "Towarowa is a three-lane artery named in 1890 after the Warsaw-Vienna railway's goods station. It was rebuilt after 1945 and became the home of the Główny station and several office complexes today.",
+    "ludzie": [
+      {
+        "kto": "Konstanty Ildefons Gałczyński",
+        "rola": "poeta; wiersz „Ulica Towarowa” (1929); mieszkał pod nr 54",
+        "wiki": "https://pl.wikipedia.org/wiki/Konstanty_Ildefons_Ga%C5%82czy%C5%84ski"
+      },
+      {
+        "kto": "Wincenty Popiel",
+        "rola": "arcybiskup, który doprowadził do przeniesienia domów publicznych z Freta",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "ulica wzdłuż okopów Lubomirskiego (do 1890)"
+    ],
+    "nazwy_historyczne": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Towarowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Towarowa_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii. Punkt OSM: środek odcinka 448943006 (193 m). Artykuł wymienia Muzeum Nurkowania w listach obiektów, nie podaje numeru. W artykule nie ma dokładnego roku 'Syberii' poza 'do lat 50.'"
+  },
+  {
+    "id": "wolska",
+    "nazwa": "Wolska",
+    "name_en": "Wolska Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Wolska (Wola, główna ulica dzielnicy)",
+    "adres_historyczny": "Litzmannstadtstrasse (okupacja, od maja 1940)",
+    "lat": 52.2354709,
+    "lon": 20.9789243,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 48,
+    "okres": "1771–dziś",
+    "fakty": [
+      "Nazwa nadana oficjalnie w 1771 pochodzi od wsi Wielka Wola, do której prowadziła jako trakt wychodzący ze Starej Warszawy na zachód.",
+      "Ok. 1820 jako pierwsza w tej części miasta otrzymała nawierzchnię z bruku na swoim wschodnim odcinku.",
+      "W 1908 po raz pierwszy ulicą pojechały tramwaje elektryczne.",
+      "W okresie międzywojennym w domu nr 147 mieścił się XIX komisariat Policji Państwowej.",
+      "We wrześniu 1939 ulicę na wysokości Redutowej i Gizów przegrodzono barykadą z dwóch wozów tramwajowych; 9 września atak niemieckich czołgów zatrzymano dzięki podpaleniu ok. 100 beczek terpentyny z Fabryki Przetworów Chemicznych „Dobrolin”.",
+      "W maju 1940 okupacyjne władze zmieniły nazwę ulicy na Litzmannstadtstrasse.",
+      "W latach 1952–1986 ulica leżała w ciągu drogi państwowej nr 17, a od 1962 do połowy lat 80. część międzynarodowych dróg E8 i E12; w latach 1986–2013 była fragmentem drogi krajowej nr 2 i trasy E30.",
+      "15 października 1975 oddano wielopoziomowy węzeł u zbiegu z Kasprzaka i Redutową (wolski węzeł komunikacyjny).",
+      "5 lutego 2024 oddano przebudowany węzeł, w którym wszystkie jezdnie krzyżujących się ulic znalazły się na poziomie ziemi.",
+      "W latach 1979–2025 pod skrzyżowaniem z Młynarską funkcjonowało przejście podziemne."
+    ],
+    "ciekawostki": [
+      "Ulica jest granicą administracyjną między obszarami MSI Ulrychów/Odolany a Czyste/Młynów w dzielnicy Wola.",
+      "W artykule wymieniono m.in. Cerkiew św. Jana Klimaka, Cmentarz Powstańców Warszawy, park Powstańców Warszawy, Kompleks biurowy Spark i Pałacyk Biernackich (nr 27/29).",
+      "Nieistniejące obiekty z artykułu: Pałacyk Michlera, Rogatki Wolskie, Fabryka Przetworów Chemicznych „Dobrolin”."
+    ],
+    "summary_en": "Wolska is the main street of Wola, named in 1771 after the village of Wielka Wola. In September 1939 a barricade of tram cars and burning turpentine stopped a German tank attack, and in 1940 the occupiers renamed it Litzmannstadtstrasse.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Litzmannstadtstrasse (okupacja, od maja 1940)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "Wolska",
+        "od": "1771",
+        "do": "dziś"
+      },
+      {
+        "nazwa": "Litzmannstadtstrasse",
+        "od": "1940 (maj)",
+        "do": "1945 (koniec okupacji)"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wolska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wolska_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii. Punkt OSM: środek odcinka 1076614208 (48 m, najbliżej środka z całej listy). Koniec okupacji 1945 przyjęty ogólnie (artykuł podaje tylko maj 1940)."
+  },
+  {
+    "id": "wronia",
+    "nazwa": "Wronia",
+    "name_en": "Wronia Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Wronia (Wola, od Żytniej do Leszna i dalej na południe)",
+    "adres_historyczny": "skwer kard. Stefana Wyszyńskiego (północny odcinek od 1983)",
+    "lat": 52.2370706,
+    "lon": 20.9842839,
+    "lokalizacja": "dokladna",
+    "odleglosc_m": 389,
+    "okres": "1770–dziś",
+    "fakty": [
+      "Ulica została przeprowadzona przed 1770 rokiem; pierwotnie biegła od ul. Pańskiej do ul. Leszno.",
+      "Nazwę Wronia nadano w 1770 – była to jedna z przyrodniczych nazw nadanych wtedy warszawskim ulicom.",
+      "W XVIII w. biegła wśród pól, glinianek i ogrodów; pierwsze murowane budynki powstały na początku XIX w. po stronie nieparzystej.",
+      "W 1846 w zakupionych zabudowaniach browaru Schaeffera przy Krochmalnej rozpoczęła działalność spółka Konstantego Schielego, Jana Henryka Klawego i Błażeja Haberbuscha (od 1866 Haberbusch i Schiele).",
+      "W 1864 ulicę wybrukowano; ok. 1868 po wschodniej stronie na osi Siennej utworzono plac Kaliksta Witkowskiego z targowiskiem (w 1921 plac Kazimierza Wielkiego).",
+      "Ok. 1875 ulicę przedłużono na południe do Srebrnej, a ok. 1880 na północ do Żytniej.",
+      "W latach 1880–1904 przy ulicy powstały kamienice i niewielkie fabryki; w 1905 była terenem akcji bojowych rewolucji.",
+      "4 września 1939 nalot Luftwaffe zabił ok. 30 osób, które zginęły pod gruzami dwóch zburzonych domów.",
+      "Od listopada 1940 do grudnia 1941 granica getta biegła na tyłach posesji po parzystej stronie ulicy; w listopadzie 1941 zlikwidowano bramę do getta na rogu Chłodnej.",
+      "W czasie powstania skrzyżowania z Chłodną, Grzybowską, Łucką, Prostą i Pańską zamknięto barykadami; najcięższe walki toczyły się 6 sierpnia 1944 o barykadę przy Chłodnej.",
+      "W 1948 ulicę przecięła trasa W-Z (aleja gen. Karola Świerczewskiego, od 1991 aleja „Solidarności”).",
+      "W 1983 północny odcinek od Żytniej do Leszna przemianowano na skwer kard. Stefana Wyszyńskiego."
+    ],
+    "ciekawostki": [
+      "Pod nr 45 jest tablica pamiątkowa Tchorka; przy ulicy stoją Hilton Warsaw City, Generation Park i Warsaw Unit.",
+      "Nazwa Haberbusch i Schiele figuruje na liście nieistniejących obiektów przy Wroniej."
+    ],
+    "summary_en": "Wronia, named in 1770 as one of the nature-themed names given to Warsaw streets then, ran from Pańska to Leszno. It was a German-occupied ghetto boundary street and a battle site in 1944. The Trasa W-Z cut across it in 1948, and the northern section was renamed after Cardinal Wyszyński in 1983.",
+    "ludzie": [
+      {
+        "kto": "Konstanty Schiele",
+        "rola": "współzałożyciel spółki Haberbusch i Schiele (1846)",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Henryk Klawe",
+        "rola": "współzałożyciel spółki Haberbusch i Schiele (1846)",
+        "wiki": null
+      },
+      {
+        "kto": "Błażej Haberbusch",
+        "rola": "współzałożyciel spółki Haberbusch i Schiele (1846)",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Wyszyński",
+        "rola": "kardynał, patron skweru od 1983",
+        "wiki": "https://pl.wikipedia.org/wiki/Stefan_Wyszy%C5%84ski"
+      }
+    ],
+    "dawne_nazwy": [
+      "skwer kard. Stefana Wyszyńskiego (północny odcinek, od 1983)"
+    ],
+    "nazwy_historyczne": [
+      {
+        "nazwa": "skwer kard. Stefana Wyszyńskiego (północny odcinek)",
+        "od": "1983",
+        "do": "dziś"
+      }
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wronia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii. Punkt OSM: węzeł 1 way 19851812 (389 m, najbliższy punkt na odcinku, nie środek). Artykuł podaje 'nazwę Wronia nadano w 1770' i 'przemianowano w 1983 na skwer' – to nie jest zmiana nazwy ulicy, tylko odcinka. Dla nazwisk założycieli browaru: w artykule z 1846 podano Konstantego Schielego, Jana Henryka Klawego i Błażeja Haberbuscha."
+  },
+  {
+    "id": "zytnia",
+    "nazwa": "Żytnia",
+    "name_en": "Żytnia Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Żytnia (Wola, od Okopowej do Sokołowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.2391523,
+    "lon": 20.9809507,
+    "lokalizacja": "przyblizona",
+    "odleglosc_m": 388,
+    "okres": "1770–dziś",
+    "fakty": [
+      "Dawna droga narolna między polami Starej Warszawy a polami należącymi do brygidek z Nowolipia.",
+      "W 1770 przecięta okopem Lubomirskiego; wschodnia część w obrębie wałów została uregulowana i stała się ulicą.",
+      "Nazwa nadana w 1770 pochodzi od sąsiednich pól obsianych żytem.",
+      "W 1792 na działce przy Żytniej, na rogu z Młynarską, założono cmentarz ewangelicko-reformowany.",
+      "Po 1875 ulicę uregulowano od Okopowej do Młynarskiej.",
+      "Ok. 1928 przedłużono ją od Młynarskiej do Tyszkiewicza, a ok. 1938 do ulicy Płockiej.",
+      "W powstaniu warszawskim ulica była miejscem zaciętych walk zgrupowania „Parasol”; została upamiętniona w piosence powstańczej „Pałacyk Michla”.",
+      "W 1944 większość zabudowy została zniszczona.",
+      "Do 1979 przy ul. Żytniej 15/17 działał Centralny Dworzec Autobusowy PKS, zastąpiony w styczniu 1980 przez Dworzec Zachodni PKS.",
+      "Po 1956 ulicę przedłużono do Sokołowskiej.",
+      "Od 2020 na odcinku od Sokołowskiej do Syreny ulica jest jednokierunkowa (strefa płatnego parkowania)."
+    ],
+    "ciekawostki": [
+      "Przy ulicy działają trzy żeńskie zgromadzenia zakonne: Franciszkanki Rodziny Maryi, Siostry Matki Bożej Miłosierdzia oraz Uczennice Boskiego Mistrza.",
+      "Pod nr 1 jest Sanktuarium św. Faustyny; w pobliżu (skwer kard. Wyszyńskiego 9) siedzibą KRRiT i Katolicka Agencja Informacyjna.",
+      "Pałacyk Bogusławskiego (ul. Żelazna 97, wejście od Żytniej) mieści zgromadzenie Franciszkanek i kaplicę Matki Bożej Częstochowskiej."
+    ],
+    "summary_en": "Żytnia (Rye Street) was named in 1770 after the rye fields nearby. The PKS coach station was on it until 1979, and most of the buildings were destroyed in 1944.",
+    "ludzie": [
+      {
+        "kto": "św. Faustyna Kowalska",
+        "rola": "patronka sanktuarium pod nr 1",
+        "wiki": "https://pl.wikipedia.org/wiki/Faustyna_Kowalska"
+      }
+    ],
+    "dawne_nazwy": [],
+    "nazwy_historyczne": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Żytnia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%BBytnia_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap (Overpass, dane z osm-400m.json; ODbL) – współrzędne i odległość",
+        "url": "https://www.openstreetmap.org"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Źródło: artykuł Wikipedii. OSM w osm-400m.json nie ma way z nazwą 'Żytnia'; punkt to adres Żytnia 15C (węzeł 388 m), stąd 'przyblizona'. Data 1928 vs. 1938 przedłużenia – dwie różne daty dla dwóch odcinków, podane obie. Wzmianka o 'Pałacyku Michla' (piosenka) jest w artykule jako kulturowa."
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "id": "szkola-karolkowa-56",
+    "nazwa": "Budynek szkoły przy ul. Karolkowej 56",
+    "name_en": "School building at 56 Karolkowa Street",
+    "typ": "budynek",
+    "adres_dzis": "ul. Karolkowa 56",
+    "adres_historyczny": null,
+    "lat": 52.23649,
+    "lon": 20.97696,
+    "lokalizacja": "dokladna",
+    "okres": "1924–dziś",
+    "fakty": [
+      "W latach 1924–25 pod nr 56 powstał gmach miejskiej szkoły powszechnej, projektowany przez Konstantego Jakimowicza i Tadeusza Szaniora.",
+      "Przy ścianie budynku zawieszono tablicę projektu Karola Tchorka upamiętniającą ofiary masakry w Szpitalu św. Łazarza (do 2015 r. tablica była na Karolkowej 53)."
+    ],
+    "ciekawostki": [
+      "W okolicy, u zbiegu z ul. Kasprzaka, powstała w latach 1936–37 kolejna szkoła, już modernistyczna, na terenie dawnej posiadłości Karola Schultza."
+    ],
+    "summary_en": "A municipal primary school building from 1924–25, designed by Konstanty Jakimowicz and Tadeusz Szanior. A memorial plaque for the 1944 Saint Lazarus Hospital massacre has hung on its wall since 2015.",
+    "ludzie": [
+      {
+        "kto": "Konstanty Jakimowicz",
+        "rola": "współautor projektu gmachu szkoły (1924–25)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "kto": "Tadeusz Szanior",
+        "rola": "współautor projektu gmachu szkoły (1924–25)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap / Nominatim: Karolkowa 56 (Szkoła Podstawowa nr 147)",
+        "url": "https://nominatim.openstreetmap.org/"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obecna szkoła: wiki (Tablice Tchorka) podaje Zespół Szkół Specjalnych nr 101, a Nominatim/OSM Szkoła Podstawowa nr 147. Nie rozstrzygnięto, która nazwa jest aktualna. Wiki (Tablice Tchorka) wspomina też granitową płytę z 1993 r. przy chodniku, poświęconą harcerkom z patrolu sanitarnego Obwodu AK „Wola”. Współrzędne z istniejącego wpisu geojson.",
+    "odleglosc_m": 148
+  },
+  {
+    "id": "tablica-tchorka-karolkowa-56-szpital-lazarza",
+    "nazwa": "Tablica Tchorka na ścianie budynku przy Karolkowej 56 (ofiary Szpitala św. Łazarza)",
+    "name_en": "Tchorek plaque on the wall at 56 Karolkowa (Saint Lazarus Hospital victims)",
+    "typ": "tablica",
+    "adres_dzis": "ul. Karolkowa 56",
+    "adres_historyczny": "ul. Karolkowa 53 (tablica do 2015 r.)",
+    "lat": 52.23632,
+    "lon": 20.97667,
+    "lokalizacja": "przyblizona",
+    "okres": "1944, tablica powojenna",
+    "fakty": [
+      "Tablica projektu Karola Tchorka upamiętnia ofiary masakry w Szpitalu św. Łazarza w 1944 r.",
+      "Do 2015 r. tablica znajdowała się na ścianie domu przy ul. Karolkowej 53; obecnie jest na ścianie budynku przy Karolkowej 56.",
+      "W 1993 r. przy pobliskim chodniku odsłonięto dodatkowo granitową płytę poświęconą zamordowanym harcerkom z patrolu sanitarnego Obwodu AK „Wola”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A plaque designed by Karol Tchorek commemorates the victims of the 1944 massacre at Saint Lazarus Hospital. It was moved from number 53 to number 56 in 2015.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor projektu tablicy",
+        "wiki": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dokładne miejsce tablicy na ścianie nie potwierdzone zdjęciem; współrzędne jak dla budynku szkoły. Wpis OSM 1774816928 („Karolkowa / Solidarności”) to inna tablica Tchorka, na rogu.",
+    "odleglosc_m": 159
+  },
+  {
+    "id": "karolkowa-53",
+    "nazwa": "Karolkowa 53",
+    "name_en": "53 Karolkowa Street",
+    "typ": "budynek",
+    "adres_dzis": "ul. Karolkowa 53",
+    "adres_historyczny": null,
+    "lat": 52.2362918,
+    "lon": 20.9763268,
+    "lokalizacja": "dokladna",
+    "okres": "dziś (tablica Tchorka 2015 r. przeniesiona)",
+    "fakty": [
+      "Do 2015 r. na ścianie domu przy ul. Karolkowej 53 wisiała tablica Karola Tchorka upamiętniająca ofiary masakry w Szpitalu św. Łazarza z 1944 r.; została przeniesiona na nr 56."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Number 53 on Karolkowa Street. Until 2015 it held the Tchorek plaque for the Saint Lazarus Hospital victims, which was then moved to number 56.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap: węzeł adresowy 11286464178",
+        "url": "https://www.openstreetmap.org/node/11286464178"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak innych potwierdzonych faktów o tym numerze. Współrzędne to węzeł adresowy z OSM (bez nazwy). Nie wiadomo, co stoi pod nr 53 dziś.",
+    "odleglosc_m": 181
+  },
+  {
+    "id": "kosciol-klemensa-hofbauera-karolkowa-49",
+    "nazwa": "Kościół św. Klemensa Hofbauera i klasztor redemptorystów (Karolkowa 49)",
+    "name_en": "Church of St. Clement Hofbauer and Redemptorist monastery (49 Karolkowa)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Karolkowa 49",
+    "adres_historyczny": null,
+    "lat": 52.23429,
+    "lon": 20.97658,
+    "lokalizacja": "dokladna",
+    "okres": "1917–dziś",
+    "fakty": [
+      "Redemptoryści przybyli do Warszawy w 1917 r. i użytkowali kościół św. Stanisława przy ul. Bema; parcelę przy Karolkowej podarowały im siostry Biernackie.",
+      "W latach 1924–26 wzniesiono klasztor wg projektu Stefana Szyllera; kościół św. Klemensa Hofbauera zbudowano do 1933 r. wg projektu Stanisława Marzyńskiego.",
+      "W sierpniu 1944 r. Niemcy zamordowali 24 ojców redemptorystów (wg wiki Karolkowa); w nocy z 5 na 6 sierpnia zamordowano ponad 20 zakonników przyprowadzonych z klasztoru na skład maszyn Kirchmajera i Marczewskiego przy Wolskiej 79/81 (wg wiki Rzeź Woli).",
+      "Podczas powstania spłonął dach kościoła i skrzydło klasztoru; ruina pozostawała do 1969 r."
+    ],
+    "ciekawostki": [
+      "Według wiki Karolkowa kościół, z żelbetowymi formami wnętrza, bliskimi konstruktywizmowi francuskiemu, to najbardziej nowatorski obiekt sakralny międzywojennej Warszawy."
+    ],
+    "summary_en": "Redemptorist church and monastery built 1924–33 by the Biernacki donation; 24 Redemptorist fathers were killed in August 1944 and the roof and monastery wing burned.",
+    "ludzie": [
+      {
+        "kto": "Stefan Szyller",
+        "rola": "projektant klasztoru redemptorystów (1924–26)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "kto": "Stanisław Marzyński",
+        "rola": "projektant kościoła św. Klemensa Hofbauera (do 1933)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      },
+      {
+        "tytul": "Wikipedia: Kościół św. Klemensa Hofbauera w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kościół_św._Klemensa_Hofbauera_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Liczba zamordowanych redemptorystów różni się w źródłach: 24 (wiki Karolkowa) i ponad 20 (wiki Rzeź Woli). Wiki Karolkowa podaje też, że kościół nie został otynkowany do wybuchu wojny. Współrzędne z istniejącego wpisu geojson.",
+    "odleglosc_m": 239
+  },
+  {
+    "id": "szpital-sw-lazarza",
+    "nazwa": "Szpital św. Łazarza (ulice Leszno i Karolkowa)",
+    "name_en": "Saint Lazarus Hospital (Leszno and Karolkowa streets)",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "rejon ul. Leszno i Karolkowej (budynek przy Lesznie 15 rozebrany)",
+    "adres_historyczny": "ul. Leszno 127 / ul. Wolska 18 (wg wiki)",
+    "lat": 52.2364,
+    "lon": 20.9767,
+    "lokalizacja": "przyblizona",
+    "okres": "1941–2007",
+    "fakty": [
+      "Przed wojną szpital św. Łazarza mieścił się przy ul. Książęcej 2 na Powiślu; w 1941 r. władze niemieckie przejęły tam gmach, a szpital przeniósł się do kompleksu przy zbiegu Leszna i Karolkowej.",
+      "Kompleks przy Lesznie i Karolkowej wcześniej zajmował Główny Dom Schronienia Sierot i Starców Starozakonnych (adres: Leszno 127 / Wolska 18).",
+      "5 sierpnia 1944 r. Niemcy wdarli się do szpitala, zdobyli pawilony przy Karolkowej i Lesznie, zamordowali pacjentów i personel, a następnie podpalili budynki; ofiar oszacowano na ok. 1200.",
+      "Wśród zamordowanych było ok. 50 członków personelu, w tym co najmniej siedem sióstr benedyktynek i jedenaście sanitariuszek z patrolu sanitarnego Obwodu AK „Wola”.",
+      "W 1948 r. szpital wznowił działalność w odbudowanym budynku przy ul. Leszno; w 1963 r. nazwano go Stołecznym Szpitalem Dermatologicznym.",
+      "W 2007 r. szpital przeniósł się na prawy brzeg Wisły, a budynek przy ul. Leszno 15 rozebrano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Saint Lazarus Hospital moved to Leszno and Karolkowa in 1941. On 5 August 1944 its staff and patients were murdered and the buildings burned; the hospital reopened on Leszno in 1948.",
+    "ludzie": [
+      {
+        "kto": "Ignacy Giedroyc",
+        "rola": "farmaceuta szpitala, zamordowany 5 VIII 1944 r. (ojciec Jerzego Giedroycia)",
+        "wiki": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      }
+    ],
+    "dawne_nazwy": [
+      "Szpital św. Łazarza (przy ul. Książęcej 2 przed 1941 r.)",
+      "Stołeczny Szpital Dermatologiczny (1963)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Liczba ofiar (ok. 1200) to szacunek wiki („prawdopodobnie”). Data rozbiórki budynku przy Lesznie 15: wiki podaje 2007 r. w jednym miejscu i 2009 r. w innym. Współrzędne z istniejącego wpisu, przybliżone (rejon skrzyżowania).",
+    "odleglosc_m": 160
+  },
+  {
+    "id": "leszno",
+    "nazwa": "Leszno (ulica)",
+    "name_en": "Leszno Street",
+    "typ": "ulica",
+    "adres_dzis": "al. „Solidarności” (odcinek zachodni: ul. Leszno do ul. Młynarskiej)",
+    "adres_historyczny": "ul. Leszno",
+    "lat": 52.2380995,
+    "lon": 20.9786879,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w. – dziś",
+    "fakty": [
+      "W okupacji nazwa ulicy brzmiała Gerichtstraße, od budynku sądów pod nr 53/55.",
+      "W listopadzie 1940 r. ulica do ul. Żelaznej znalazła się w obrębie getta warszawskiego.",
+      "W 1949 r. wschodnia i środkowa część ulicy weszła w skład Trasy W-Z i otrzymała nazwę al. Świerczewskiego; zachodni odcinek zachował historyczną nazwę.",
+      "W latach 60. XX w. ulicę przebudowano na dwujezdniową."
+    ],
+    "ciekawostki": [
+      "Od 1897 r. pod nr 58 mieściła się centrala warszawskiego pogotowia ratunkowego (wiki Leszno)."
+    ],
+    "summary_en": "Historic Leszno Street, later part of Aleja Solidarności. In occupation it was Gerichtstrasse and fell within the ghetto boundary.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Leszno (do 1949 r. na odcinku wschodnim i środkowym)",
+      "Gerichtstraße (okupacja)",
+      "al. gen. Karola Świerczewskiego (1949–1991, odcinek wschodni i środkowy)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Leszno w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Leszno_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Numeracja przedwojenna z różnych źródeł: 15, 30, 53/55, 58, 72/76, 127, 136. Nie udało się ustalić pełnej koncordancji numerów Leszna (przed wojną i dziś) w promieniu 400 m. Wiki nie podaje, która strona ulicy miała nieparzyste numery.",
+    "odleglosc_m": 245
+  },
+  {
+    "id": "karolkowa",
+    "nazwa": "Karolkowa",
+    "name_en": "Karolkowa Street",
+    "typ": "ulica",
+    "adres_dzis": "ul. Karolkowa (Wola)",
+    "adres_historyczny": "Karolowa (nazwa pierwotna, od Karola Schultza)",
+    "lat": 52.2357208,
+    "lon": 20.9767205,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w. – dziś",
+    "fakty": [
+      "Ulica powstała w XVIII w. jako część traktu do Szczęśliwic i Rakowca; nazwa pochodzi od bankiera Karola Schultza, który po 1780 r. kupił grunty po zachodniej stronie.",
+      "Od 1923 r. pod nr 32/44 działała Polsko-Holenderska Fabryka Lampek Elektrycznych (koncern Philips); po powstaniu Niemcy wywieźli sprzęt i wysadzili zabudowania.",
+      "W 1924–25 pod nr 56 powstał gmach miejskiej szkoły powszechnej.",
+      "Podczas powstania Niemcy wymordowali mieszkańców ulicy i spalili całą zabudowę (wiki Karolkowa)."
+    ],
+    "ciekawostki": [
+      "Przy Karolkowej w okresie międzywojennym było wyjątkowo mało sklepów; zabudowa mieszkaniowa do 1928 r. składała się z luźnych obiektów."
+    ],
+    "summary_en": "Karolkowa was named after banker Karol Schultz. Its interwar factories and institutions included a Philips lamp factory, a school and a Redemptorist church; the street was burned in August 1944.",
+    "ludzie": [
+      {
+        "kto": "Karol Schultz",
+        "rola": "bankier, od którego pochodzi pierwotna nazwa ulicy (Karolowa)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [
+      "Karolowa (XVIII–XIX w.)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wiki podaje fabrykę Geislerów „pod nr. 72/76” przy zbiegu z Lesznem, bez wskazania ulicy. Wiki podaje też „Henneberg i Czajkowski” od 1856 r. (zakład platerów, ok. 200 pracowników przed I wojną) bez numeru domu.",
+    "odleglosc_m": 150
+  },
+  {
+    "id": "karol-i-maria-leszno-136",
+    "nazwa": "Szpital Dziecięcy im. Karola i Marii (Leszno 136)",
+    "name_en": "Karol and Maria Children's Hospital (136 Leszno)",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "rejon ul. Leszno, Młynarskiej, Karolkowej i Żytnia (nie odbudowano)",
+    "adres_historyczny": "ul. Leszno 136",
+    "lat": 52.2363181,
+    "lon": 20.9766699,
+    "lokalizacja": "przyblizona",
+    "okres": "do 1944 (data założenia nieustalona)",
+    "fakty": [
+      "Szpital dziecięcy im. Karola i Marii mieścił się w dziewięciu pawilonach w kwartale ulic Leszno, Młynarska, Karolkowa i Żytnia (adres: Leszno 136); dysponował 150 łóżkami dziecięcymi.",
+      "5 sierpnia 1944 r. ok. godz. 15–16 do szpitala wtargnęły oddziały niemieckie i żołnierze jednego z batalionów azerbejdżańskich; szpital został spalony.",
+      "Szpitalny kompleks przy Lesznie nie został nigdy odbudowany; w 1947 r. szpital wznowił działalność w budynku przy ul. Działdowskiej."
+    ],
+    "ciekawostki": [
+      "20 października 1944 r. personel szpitala został wywieziony pociągiem do Włodzimierzowa koło Piotrkowa Trybunalskiego, gdzie działała placówka medyczna do 20 października 1945 r."
+    ],
+    "summary_en": "Karol and Maria Children's Hospital occupied nine pavilions between Leszno, Młynarska, Karolkowa and Żytnia streets. It was burned on 5 August 1944 and never rebuilt on that site.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Szpital Karola i Marii (Leszno 136)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      },
+      {
+        "tytul": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dokładnego położenia pawilonów nie ustalono. Współrzędne to punkt tablicy Tchorka przy Lesznie 30 (OSM 10018666669), przybliżone. Data założenia szpitala nie podana w znalezionych źródłach; pole okres podaje tylko koniec działalności w tym miejscu.",
+    "odleglosc_m": 159
+  },
+  {
+    "id": "tablica-tchorka-leszno-30",
+    "nazwa": "Tablica Tchorka na zrekonstruowanym murze przy Lesznie 30",
+    "name_en": "Tchorek plaque on reconstructed wall at 30 Leszno",
+    "typ": "tablica",
+    "adres_dzis": "ul. Leszno 30",
+    "adres_historyczny": null,
+    "lat": 52.2363181,
+    "lon": 20.9766699,
+    "lokalizacja": "przyblizona",
+    "okres": "1968–dziś",
+    "fakty": [
+      "Tablica projektu Karola Tchorka, zainstalowana w 1968 r. na zrekonstruowanym fragmencie muru, upamiętnia ofiary masakry w Szpitalu Karola i Marii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Karol Tchorek plaque from 1968 on a rebuilt wall fragment at 30 Leszno commemorates the victims of the Karol and Maria Hospital massacre.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablicy",
+        "wiki": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      }
+    ],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "tytul": "OpenStreetMap: węzeł 10018666669 (tablica Tchorka)",
+        "url": "https://www.openstreetmap.org/node/10018666669"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Przypisanie punktu OSM 10018666669 do tablicy z Leszna 30 jest dopasowaniem po opisie („tablica Tchorka”), bez potwierdzenia adresu w OSM. Sprawdzić na miejscu.",
+    "odleglosc_m": 159
+  },
+  {
+    "id": "leszno-15",
+    "nazwa": "Leszno 15 (budynek Szpitala św. Łazarza i Stołecznego Szpitala Dermatologicznego)",
+    "name_en": "15 Leszno (Saint Lazarus Hospital building, later dermatology hospital)",
+    "typ": "nieistniejacy-budynek",
+    "adres_dzis": "ul. Leszno 15 (dziś sklep Biedronka, adres z OSM)",
+    "adres_historyczny": "ul. Leszno 15",
+    "lat": 52.2375305,
+    "lon": 20.9754098,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939 – 2007/2009",
+    "fakty": [
+      "Budynek przy ul. Leszno 15 należał do Szpitala św. Łazarza, a później Stołecznego Szpitala Dermatologicznego; znajdowała się tu tablica pracowników Szpitala św. Łazarza poległych w czasie II wojny światowej.",
+      "Budynek rozebrano na zlecenie Gminy Wyznaniowej Żydowskiej w związku z odzyskaniem nieruchomości; teren sprzedano pod zabudowę mieszkaniowo-usługową."
+    ],
+    "ciekawostki": [
+      "Przypis w wiki (Szpitale na Woli) wymienia przy Lesznie 15 „Dom Przytułku Sierot i Ubogich” wg sztetl.org.pl."
+    ],
+    "summary_en": "Leszno 15 housed the Saint Lazarus Hospital and later a dermatology hospital; the building was demolished after the hospital moved to Vistula's right bank.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Dom Przytułku Sierot i Ubogich (wg przypisu wiki, przed wojną)"
+    ],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Szpitale na Woli w czasie powstania warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Szpitale_na_Woli_w_czasie_powstania_warszawskiego"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Data rozbiórki: wiki podaje 2007 r. (w jednym miejscu) i 2009 r. (w innym). Punkt OSM (Biedronka, Leszno 15) to obecny sklep; nie potwierdzono, że stoi na miejscu dawnego budynku. Informacja o Domu Przytułku Sierot i Ubogich pochodzi z przypisu wiki i nie została sprawdzona u źródła.",
+    "odleglosc_m": 299
+  },
+  {
+    "id": "przedszkole-134-leszno-24-26a",
+    "nazwa": "Przedszkole nr 134 (ul. Leszno 24/26A)",
+    "name_en": "Kindergarten No. 134 (24/26A Leszno)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Leszno 24/26A",
+    "adres_historyczny": null,
+    "lat": 52.2382688,
+    "lon": 20.9779575,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "fakty": [
+      "Według katalogu przedszkoli (jakiwniosek.pl) Przedszkole nr 134 w Woli mieści się przy ul. Leszno 24/26A, 01-192."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kindergarten No. 134 is listed at 24/26A Leszno Street in Wola. No history was found.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "jakiwniosek.pl: wyszukiwarka przedszkoli, Wola",
+        "url": "https://jakiwniosek.pl/instytucje/przedszkole/wola"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Jedno źródło (katalog). Współrzędne: przybliżone na podstawie węzła Leszno 22 z OSM. Brak informacji o historii budynku. Nie znaleziono potwierdzenia adresu przy Żytnia.",
+    "odleglosc_m": 271
+  },
+  {
+    "id": "przedszkole-133-okopowa-7a",
+    "nazwa": "Przedszkole nr 133 (ul. Okopowa 7A)",
+    "name_en": "Kindergarten No. 133 (7A Okopowa)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Okopowa 7A",
+    "adres_historyczny": null,
+    "lat": 52.2365596,
+    "lon": 20.9807429,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "fakty": [
+      "Według katalogu przedszkoli (jakiwniosek.pl) Przedszkole nr 133 w Woli mieści się przy ul. Okopowa 7A, 01-063."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kindergarten No. 133 is listed at 7A Okopowa Street, not Karolkowa. No history was found.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "jakiwniosek.pl: wyszukiwarka przedszkoli, Wola",
+        "url": "https://jakiwniosek.pl/instytucje/przedszkole/wola"
+      }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Jedno źródło (katalog). Adres przy Karolkowej z zadania nie został potwierdzony: katalog podaje Okopowa 7A. Współrzędne: węzeł Okopowa 6 z OSM, przybliżone.",
+    "odleglosc_m": 145
+  },
+  {
+    "id": "szkola-w-kontakcie-karolkowa-62",
+    "nazwa": "Niepubliczna Szkoła Podstawowa „W kontakcie” (ul. Karolkowa 62)",
+    "name_en": "„W kontakcie” Private Primary School for Children with Autism (62 Karolkowa)",
+    "typ": "budynek",
+    "adres_dzis": "ul. Karolkowa 62",
+    "adres_historyczny": null,
+    "lat": 52.2380862,
+    "lon": 20.9759247,
+    "lokalizacja": "dokladna",
+    "okres": "dziś",
+    "fakty": [
+      "Niepubliczna Specjalna Szkoła Podstawowa dla Dzieci z Autyzmem „W kontakcie” działa przy ul. Karolkowej 62 (wg OSM, operator: fundacja „W kontakcie”)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A private special primary school for children with autism, run by a foundation, operates at 62 Karolkowa Street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zdjecia": [],
+    "zrodla": [
+      {
+        "tytul": "OpenStreetMap: węzeł 9563096195",
+        "url": "https://www.openstreetmap.org/node/9563096195"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko dane bieżące z OSM. Nie znaleziono historii budynku przy Karolkowej 62 w znalezionych źródłach.",
+    "odleglosc_m": 316
+  }
+]
