@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 21:10 (Jasiek, z agentem R2): **cache zapytań do Supabase pod demo (~100 osób naraz).** `createCachedPlacesRepository` (`apps/api/src/adapters/supabase/`): `/v1/places` pyta bazę o kafel siatki 0,02° bez filtrów, przycina bbox i zainteresowania w pamięci; `getById` (opowieści, karta miejsca) w pamięci. TTL 5 min, równoległe żądania czekają na jedno zapytanie, błędy nie są zapamiętywane, po TTL stara wartość od razu i odświeżenie w tle (gdy Supabase padnie, zostaje stara). Gałąź `r2/cache-supabase`.
+
 - 20:45 (Szczepan, z agentem R1): **punkty na trasie pieszej leżą przy narysowanej ścieżce.** Planer liczy miejsca przy prostej między punktami, a mapa rysuje ścieżkę OSRM (np. objazd torów przy Dw. Gdańskim), więc numery wypadały kwartał od trasy. `alongWalkPaths` (`build-route.ts`) zbiera miejsca odcinków pieszych ponownie wzdłuż prawdziwej ścieżki (promień widoczności + 10 m), czasy bez zmian. Część T-126; sam planer dalej wybiera kolejność po prostej.
 
 - 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`.
