@@ -7012,3 +7012,112 @@
 > +>  
 > +> -  funct
 
+
+### 2026-10-17 14:22 · Pawel
+
+> 
+> 
+> <pasted_content id="6de2">
+> Hej Paweł, moja mapa weszła już na main (PR #12). To MapLibre z podkładem OpenFreeMap, więc nie potrzeba tokenu Mapboxa. Działa na /mapa:
+> 
+> miejsca z GET /v1/places, w kolorach według typu
+> po kliknięciu karta miejsca z /v1/places/:id (fakty, zdjęcie, źródła), adres ?p=<id>
+> filtr kategorii z onboardingu, adres ?i=historical,cultural
+> trasa z planera Szczepana: linia, ponumerowane miejsca, mapa sama się przybliża do trasy
+> Widziałem twoje r3/demo-mock. Zamiast MockMap w map-screen.tsx i route-screen.tsx możesz wstawić:
+> 
+> 
+> import dynamic from "next/dynamic";
+> const SawaMap = dynamic(() => import("@/features/map").then((m) => m.SawaMap), { ssr: false });
+> 
+> <SawaMap interests={interests} route={route} />
+> // interests: Interest[] z onboardingu (pusta lista = wszystkie miejsca)
+> // route?: Route z /v1/routes/plan albo /v1/routes/demo
+> ssr: false jest konieczne, bo MapLibre potrzebuje przeglądarki. Mapa wypełnia rodzica, więc daj mu wysokość, np. h-dvh.
+> 
+> Trzy sprawy:
+> 
+> Rola: obaj mamy R3. Proponuję, że ja biorę mapę (features/map, warstwy, karta miejsca, później pozycja „za oknem” w odtwarzaczu), a ty ekrany (start, onboarding, trasa, odtwarzacz, /demo). Pasuje?
+> Konflikty: twoja gałąź zmienia page.tsx, layout.tsx i globals.css, które ruszałem w #12 (doszły providers dla TanStack Query i link do /mapa). Przy rebase zostaw <Providers> w layout.tsx, bez tego mapa nie pobierze danych. Link do /mapa możesz wyrzucić, jeśli start prowadzi do demo.
+> Pomoc: jeśli chcesz, podepnę SawaMap pod twoje ekrany na osobnej gałęzi z r3/demo-mock i wrzucę ci PR do review.
+> </pasted_content id="6de2">
+
+
+### 2026-10-17 14:23 · Pawel
+
+> przetworz: 
+> 
+> (wklejony transkrypt rozmowy zespołu, nie przechowujemy go)
+
+
+**AI:** Porównanie r3/demo-mock z main po PR #12: konflikty tylko w page.tsx (zostaje DemoApp), docs i pnpm-lock; layout.tsx i globals.css scalają się same. SawaMap z main (interests, route) nie zastąpi wprost mapy demo, bo demo potrzebuje kamery, paddingu, pozycji użytkownika i aktywnego przystanku. Przygotowana odpowiedź do drugiej osoby z R3, nic w kodzie nie zmienione.
+
+**AI:** Transkrypt rozmowy z 14:30 (praca i wizyta mentora) przetworzony na `docs/spotkania/2026-10-17-1430-mentor-i-postep.md`: ustalenia (bez landing page, animacje ładowania, pogoda tylko w planerze, Google Places bez zapytań na żywo, boiska → sport), uwagi mentora i otwarte kwestie. Transkrypt usunięty z dziennika.
+
+### 2026-10-17 14:25 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 41 +++++++++++++++++++++++++++++++++++++++++
+>  1 file changed, 41 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 6da8e3b..99c845f 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -7012,3 +7012,44 @@
+>  > +>  
+>  > +> -  funct
+>  
+> +
+> +### 2026-10-17 14:22 · Pawel
+> +
+> +> 
+> +> 
+> +> <pasted_content id="6de2">
+> +> Hej Paweł, moja mapa weszła już na main (PR #12). To MapLibre z podkładem OpenFreeMap, więc nie potrzeba tokenu Mapboxa. Działa na /mapa:
+> +> 
+> +> miejsca z GET /v1/places, w kolorach według typu
+> +> po kliknięciu karta miejsca z /v1/places/:id (fakty, zdjęcie, źródła), adres ?p=<id>
+> +> filtr kategorii z onboardingu, adres ?i=historical,cultural
+> +> trasa z planera Szczepana: linia, ponumerowane miejsca, mapa sama się przybliża do trasy
+> +> Widziałem twoje r3/demo-mock. Zamiast MockMap w map-screen.tsx i route-screen.tsx możesz wstawić:
+> +> 
+> +> 
+> +> import dynamic from "next/dynamic";
+> +> const SawaMap = dynamic(() => import("@/features/map").then((m) => m.SawaMap), { ssr: false });
+> +> 
+> +> <SawaMap interests={interests} route={route} />
+> +> // interests: Interest[] z onboardingu (pusta lista = wszystkie miejsca)
+> +> // route?: Route z /v1/routes/plan albo /v1/routes/demo
+> +> ssr: false jest konieczne, bo MapLibre potrzebuje przeglądarki. Mapa wypełnia rodzica, więc daj mu wysokość, np. h-dvh.
+> +> 
+> +> Trzy sprawy:
+> +> 
+> +> Rola: obaj mamy R3. Proponuję, że ja biorę mapę (features/map, warstwy, karta miejsca, później pozycja „za oknem” w odtwarzaczu), a ty ekrany (start, onboarding, trasa, odtwarzacz, /demo). Pasuje?
+> +> Konflikty: twoja gałąź zmienia page.tsx, layout.tsx i globals.css, które ruszałem w #12 (doszły providers dla TanStack Query i link do /mapa). Przy rebase zostaw <Providers> w layout.tsx, bez tego mapa nie pobierze danych. Link do /mapa możesz wyrzucić, jeśli start prowadzi do demo.
+> +> Pomoc: jeśli chcesz, podepnę SawaMap pod twoje ekrany na osobnej gałęzi z r3/demo-mock i wrzucę ci PR do review.
+> +> </pasted_content id="6de2">
+> +
+> +
+> +### 2026-10-17 14:23 · Pawel
+> +
+> +> przetworz: 
+> +> 
+> +> (wklejony transkrypt rozmowy zespołu, nie przechowujemy go)
+> +
+> +
+> +**AI:** Porównanie r3/demo-mock z main po PR #12: konflikty tylko w page.tsx (zostaje DemoApp), docs i pnpm-lock; layout.tsx i globals.css scalają się same. SawaMap z main (interests, route) nie zastąpi wprost mapy demo, bo demo potrzebuje kamery, paddingu, pozycji użytkownika i aktywnego przystanku. Przygotowana odpowiedź do drugiej osoby z R3, nic w kodzie nie zmienione.
+> +
+> +**AI:** Transkrypt rozmowy z 14:30 (praca i wizyta mentora) przetworzony na `docs/spotkania/2026-10-17-1430-mentor-i-postep.md`: ustalenia (bez landing page, animacje ładowania, pogoda tylko w planerze, Google Places bez zapytań na żywo, boiska → sport), uwagi mentora i otwarte kwestie. Transkrypt usunięty z dziennika.
+> new file: docs/spotkania/2026-10-17-1430-mentor-i-postep.md
+
