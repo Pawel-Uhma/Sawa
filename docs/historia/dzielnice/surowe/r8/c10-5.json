@@ -1,0 +1,536 @@
+[
+  {
+    "id": "lotnisko-goclaw",
+    "nazwa": "Lotnisko Gocław",
+    "name_en": "Gocław Airfield",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2333,
+    "lon": 21.1,
+    "lokalizacja": "przyblizona",
+    "okres": "1934–1976",
+    "istnieje": false,
+    "fakty": [
+      "W 1934 zapadła decyzja o likwidacji pierwszego w Warszawie lotniska mokotowskiego, a w jego miejsce miały powstać m.in. lotnisko na Gocławiu.",
+      "Do 1939 roku jedynie zniwelowano teren, wytyczono pole wzlotów oraz wybudowano przepompownię.",
+      "W czasie kampanii wrześniowej lotnisko zostało zbombardowane przez lotnictwo niemieckie (Luftwaffe).",
+      "Po wojnie teren lotniska został odbudowany i przeznaczony na lotnisko sportowe Aeroklubu Warszawskiego.",
+      "W 1971 roku zapadła decyzja o likwidacji lotniska i zabudowie jego terenu przez osiedla mieszkaniowe.",
+      "Ostatecznie w 1976 roku lotnisko przestało pełnić swoje funkcje, a aeroklub przeniósł się na lotnisko Warszawa-Babice."
+    ],
+    "ciekawostki": [
+      "Z dawnej zabudowy pozostały trzy hangary przy ul. Wał Miedzeszyński 646, w których działają m.in. park trampolin, klub muzyczny i studia telewizyjne."
+    ],
+    "summary_en": "Gocław Airfield was a planned communication airport of the 1930s that was never fully built. It later served as a sports airfield of the Warsaw Aero Club until it was closed in 1976 and the area was built over with housing estates.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Lotnisko sportowe Aeroklubu Warszawskiego"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Lotnisko Gocław",
+        "url": "https://pl.wikipedia.org/wiki/Lotnisko_Goc%C5%82aw"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu, obiekt nieistniejący. Fakt o hangarach dotyczy dzisiejszego stanu, zapisany jako ciekawostka."
+  },
+  {
+    "id": "ladowisko-szaserow",
+    "nazwa": "Lądowisko Szaserów",
+    "name_en": "Szaserów Heliport",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Szaserów 128",
+    "adres_historyczny": null,
+    "lat": 52.2506,
+    "lon": 21.0914,
+    "lokalizacja": "dokladna",
+    "okres": "2012–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Lądowisko Szaserów to lądowisko sanitarne przy ul. Szaserów 128, przeznaczone do startów i lądowań śmigłowców sanitarnych i ratowniczych w dzień i w nocy.",
+      "Dopuszczalna masa startowa śmigłowców to do 12 000 kg.",
+      "Zarządzającym lądowiskiem jest Wojskowy Instytut Medyczny w Warszawie.",
+      "W 2012 roku lądowisko wpisano do ewidencji lądowisk Urzędu Lotnictwa Cywilnego pod numerem 147."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Szaserów Heliport at ul. Szaserów 128 is a medical landing site for ambulance and rescue helicopters, managed by the Military Institute of Medicine. It was entered into the Civil Aviation Office register in 2012 under number 147.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Lądowisko Szaserów",
+        "url": "https://pl.wikipedia.org/wiki/L%C4%85dowisko_Szaser%C3%B3w"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie ma historii sprzed 2012 r.; rekord zawiera tylko podane daty. Można pominąć, jeśli zasada wymaga historii."
+  },
+  {
+    "id": "most-srednicowy",
+    "nazwa": "Most średnicowy",
+    "name_en": "Średnicowy Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2388,
+    "lon": 21.0375,
+    "lokalizacja": "dokladna",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Most średnicowy, kolejowy most na Wiśle, zbudowano w latach 1921–1931 w celu połączenia Dworca Głównego z Dworcem Wschodnim.",
+      "Budowę rozpoczęto w 1921 roku; przedłużała się ponad 10 lat z powodu trudności finansowych, a realizowało ją Polskie Towarzystwo Budowlane.",
+      "Most został wysadzony przez Niemców podczas powstania warszawskiego i walk na Pradze w godzinach popołudniowych 13 września 1944 roku.",
+      "W latach 1945–1949 most odbudowano w całkowicie zmienionej formie według projektu Franciszka Szelągowskiego, na obniżonych o 5 m filarach.",
+      "Odbudowany most otwarto 23 czerwca 1949 roku.",
+      "Bliźniaczy most wybudowano w latach 60. XX w., niedługo przed rozpoczęciem budowy Dworca Centralnego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Średnicowy Bridge is a rail bridge over the Vistula linking Warsaw Główna and Warszawa Wschodnia. It was built in 1921–1931, blown up in September 1944, rebuilt in 1945–1949 on lower piers and doubled in the 1960s.",
+    "ludzie": [
+      {
+        "kto": "Aleksander Pstrokoński",
+        "rola": "zaprojektował przeprawę",
+        "wiki": null
+      },
+      {
+        "kto": "Franciszek Szelągowski",
+        "rola": "autor projektu odbudowy (1945–1949)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Most średnicowy w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Most_%C5%9Brednicowy_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "muzeum-fabryka-czekolady-wedel",
+    "nazwa": "Muzeum Fabryka Czekolady E. Wedel",
+    "name_en": "E. Wedel Chocolate Factory Museum",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "al. Emila Wedla 5",
+    "adres_historyczny": null,
+    "lat": 52.246111111,
+    "lon": 21.051111111,
+    "lokalizacja": "dokladna",
+    "okres": "lata 60. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało otwarte 4 września 2024 roku w Międzynarodowy Dzień Czekolady.",
+      "Budynek z lat 60. XX wieku był częścią kompleksu produkcyjnego firmy Wedel; przez lata składowano w nim ziarno kakaowe w 42 silosach.",
+      "W okresie prywatyzacji w latach 90. ulokowano w nim nowe maszyny, a użytkowanie kontynuowano do 2008 roku.",
+      "Budynek, o powierzchni ponad 8 tysięcy m², ma 6 kondygnacji nadziemnych i jedną podziemną.",
+      "W grudniu 2023 dyrektorem inicjatywy Lotte Wedel mającej na celu powstanie muzeum został Robert Zydel."
+    ],
+    "ciekawostki": [
+      "Okna budynku są umieszczone w kratownicy elewacji i skierowane na Jeziorko Kamionkowskie, a w części wystawy stoi makieta Kamionka wykonana z czekolady."
+    ],
+    "summary_en": "The E. Wedel Chocolate Factory Museum at al. Emila Wedla 5 opened on 4 September 2024 in a 1960s building of the Wedel plant, where cocoa beans were stored in 42 silos. The building has over 8,000 m² and six floors above ground.",
+    "ludzie": [
+      {
+        "kto": "Robert Zydel",
+        "rola": "dyrektor inicjatywy Lotte Wedel i muzeum (od grudnia 2023)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Muzeum Fabryka Czekolady E.Wedel",
+        "url": "https://pl.wikipedia.org/wiki/Muzeum_Fabryka_Czekolady_E.Wedel"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Muzeum w zrewitalizowanym budynku fabryki; pozycja z nagłówka artykułu."
+  },
+  {
+    "id": "na-kosku",
+    "nazwa": "Na Kosku",
+    "name_en": "Na Kosku (Swan Pond)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.243333333,
+    "lon": 21.053055555,
+    "lokalizacja": "dokladna",
+    "okres": "1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw powstał jako część urządzanego od 1905 roku parku Skaryszewskiego, według projektu Franciszka Szaniora.",
+      "Miał na celu osuszenie występującego tu wcześniej terenu podmokłego; ziemia z wykopów posłużyła do usypania wzniesień w parku.",
+      "Nad brzegiem stawu znajduje się rzeźba „Kąpiąca się” Olgi Niewskiej, odsłonięta w 1929 roku.",
+      "Park Skaryszewski został wpisany do rejestru zabytków 13 grudnia 1973 roku pod numerem 875."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Na Kosku, also called Swan Pond (Staw Łabędziowy), is an artificial pond in Skaryszewski Park, created from 1905 to drain a marshy area. The sculpture Bathing Woman by Olga Niewska stands on its shore.",
+    "ludzie": [
+      {
+        "kto": "Franciszek Szanior",
+        "rola": "autor projektu parku Skaryszewskiego, w którym powstał staw",
+        "wiki": null
+      },
+      {
+        "kto": "Olga Niewska",
+        "rola": "autorka rzeźby „Kąpiąca się”",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Staw Łabędziowy",
+      "Staw na Kosku"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Na Kosku",
+        "url": "https://pl.wikipedia.org/wiki/Na_Kosku"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "olszynka-grochowska",
+    "nazwa": "Olszynka Grochowska",
+    "name_en": "Olszynka Grochowska",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.25014,
+    "lon": 21.10574,
+    "lokalizacja": "przyblizona",
+    "okres": "1831–dziś",
+    "istnieje": true,
+    "fakty": [
+      "25 lutego 1831 roku w lasku Olszynka Grochowska stoczono największą bitwę powstania listopadowego.",
+      "W lipcu 1916 roku w miejscu bitwy ustawiono drewniany krzyż, a w 1936 roku przy krzyżu umieszczono tablicę pamiątkową.",
+      "Historyczny teren o powierzchni 33 ha zakupił przed II wojną światową Zarząd Miejski m.st. Warszawy.",
+      "Od 14 do 27 września 1939 roku stolicy bronił tam 21 Pułk Piechoty „Dzieci Warszawy”.",
+      "W 1983 roku utworzono na terenie Olszynki rezerwat przyrody o powierzchni 59,45 ha."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Olszynka Grochowska is the site of the largest battle of the November Uprising, fought on 25 February 1831. The area was defended in September 1939 and became a nature reserve in 1983.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Olszynka Grochowska (lasek)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Olszynka Grochowska",
+        "url": "https://pl.wikipedia.org/wiki/Olszynka_Grochowska"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI i rezerwat, współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "osiedle-miedzynarodowa",
+    "nazwa": "Osiedle Międzynarodowa",
+    "name_en": "Międzynarodowa Estate",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Międzynarodowa 50A",
+    "adres_historyczny": null,
+    "lat": 52.236111111,
+    "lon": 21.065277777,
+    "lokalizacja": "dokladna",
+    "okres": "do 1971–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano do 1971 roku według projektu Adama Stefanowskiego.",
+      "Składa się z dziewiętnastu punktowych bloków w technologii wielkoblokowej „Ż”, mieszczących 2250 mieszkań zaplanowanych dla ok. 8300 osób.",
+      "Pierwotnie osiedle znajdowało się w zasobach Robotniczej Spółdzielni Mieszkaniowej „Osiedle Młodych”; od 1999 roku 16 budynkami zarządza Spółdzielnia Mieszkaniowa „Międzynarodowa”.",
+      "Budynek „Międzynarodowa Residence” przy ul. Międzynarodowej 50A wybudowano w latach 2003–2004.",
+      "W latach 2017–2018 wzniesiono obiekt mieszkalny przy ul. Zwycięzców 63A."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Międzynarodowa is a housing estate in Saska Kępa area of Praga-Południe, finished by 1971 to a design by Adam Stefanowski. It has 19 point blocks and 2,250 flats.",
+    "ludzie": [
+      {
+        "kto": "Adam Stefanowski",
+        "rola": "autor projektu osiedla",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Osiedle Międzynarodowa",
+        "url": "https://pl.wikipedia.org/wiki/Osiedle_Mi%C4%99dzynarodowa"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle, współrzędne z nagłówka. Nazwisko projektanta w tekście: „Adama Stefanowskiego”."
+  },
+  {
+    "id": "osiedle-ostrobramska",
+    "nazwa": "Osiedle Ostrobramska",
+    "name_en": "Ostrobramska Estate",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2355,
+    "lon": 21.109278,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Część osiedla znajduje się w miejscu, w którym w latach 1919–1942 działało ok. 30-hektarowe żydowskie gospodarstwo rolne, tzw. kibuc na Grochowie.",
+      "Osiedle wybudowano w latach 70. XX w. w systemie konstrukcyjnym „Żerań”.",
+      "Na osiedlu znajduje się kościół pw. Narodzenia Pańskiego przy Sanktuarium Matki Boskiej Ostrobramskiej (ul. Ostrobramska 72).",
+      "Osiedle ozdabiają wapienne figury wykonane przez studentów ASP w latach 70. XX wieku, odrestaurowane w latach 2016–2017."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ostrobramska is a 1970s estate in Grochów built in the Żerań system. Part of it covers a 1919–1942 Jewish farm, the so-called kibbutz in Grochów. Its limestone figures by ASP students were restored in 2016–2017.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Osiedle Ostrobramska",
+        "url": "https://pl.wikipedia.org/wiki/Osiedle_Ostrobramska"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle, współrzędne z nagłówka. Adres ul. Ostrobramska 72 z tekstu dotyczy Sanktuarium Matki Boskiej Ostrobramskiej, nie osiedla."
+  },
+  {
+    "id": "osiedle-tor-podskarbinska",
+    "nazwa": "Osiedle TOR Podskarbińska",
+    "name_en": "TOR Podskarbińska Estate",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Podskarbińska 7",
+    "adres_historyczny": null,
+    "lat": 52.249166666,
+    "lon": 21.073055555,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 1935–1938 dla Towarzystwa Osiedli Robotniczych, powstałego w 1934 roku.",
+      "Pierwotna działka, przekazana inwestorowi przez Zarząd Miejski w 1937 roku, miała powierzchnię 26 779 m² i była warta 535 580 zł.",
+      "Łącznie powstało 605 mieszkań; pierwotnie były to mieszkania jedno- i półtoraizbowe o powierzchni 19,5–37 m².",
+      "W jednym z mieszkań przy ul. Podskarbińskiej 7 mieściła się w 1945 roku siedziba oddziału Polskiej Partii Socjalistycznej.",
+      "Poszczególne budynki wraz z łącznikami wpisano od 24 lipca 2012 roku do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [
+      "Osiedle wybrała do katalogu 299 obiektów z lat 1918–1939 Marta Leśniakowska, która określiła architekturę jako funkcjonalistyczną z elementami awangardy."
+    ],
+    "summary_en": "TOR Podskarbińska is a 1935–1938 workers' estate of the Towarzystwo Osiedli Robotniczych, with 605 small flats. It is a listed architectural ensemble in Warsaw's municipal register.",
+    "ludzie": [
+      {
+        "kto": "Natalia Hiszpańska",
+        "rola": "autorka projektu architektonicznego (wg różnych źródeł)",
+        "wiki": null
+      },
+      {
+        "kto": "Lucyna Nowak-Markowicz",
+        "rola": "autorka projektu architektonicznego (wg różnych źródeł)",
+        "wiki": null
+      },
+      {
+        "kto": "Roman Piotrowski",
+        "rola": "autor projektu architektonicznego (wg różnych źródeł)",
+        "wiki": null
+      },
+      {
+        "kto": "Mirosław Szabuniewicz",
+        "rola": "autor projektu architektonicznego (wg różnych źródeł)",
+        "wiki": null
+      },
+      {
+        "kto": "Marta Leśniakowska",
+        "rola": "wybrała osiedle do katalogu architektury 1918–1939",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Osiedle TOR Grochów",
+      "Osiedle Towarzystwa Osiedli Robotniczych (TOR)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Osiedle TOR Podskarbińska",
+        "url": "https://pl.wikipedia.org/wiki/Osiedle_TOR_Podskarbi%C5%84ska"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle składa się z 10 budynków, adresy: ul. Kobielska 96–100, ul. Podskarbińska 7 i 7A–7B, ul. Stanisławowska 3–9; w rekordzie podany pierwszy z nich. Autorzy projektu wg artykułu niepewni."
+  },
+  {
+    "id": "zajezdnia-ostrobramska",
+    "nazwa": "Zajezdnia autobusowa Ostrobramska",
+    "name_en": "Ostrobramska Bus Depot",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Ostrobramska 38",
+    "adres_historyczny": null,
+    "lat": 52.2341,
+    "lon": 21.116,
+    "lokalizacja": "dokladna",
+    "okres": "1969–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zajezdnia „Ostrobramska” została oddana do użytku w lipcu 1969 roku.",
+      "W styczniu 2015 roku do zajezdni dotarło 10 pierwszych osiemnastometrowych Solbusów Solcity SM18 zasilanych skroplonym gazem LNG.",
+      "Na przełomie 2019 i 2020 roku zbudowano dla elektrycznych autobusów 50 stanowisk do ładowania.",
+      "W 2020 roku dostarczono 50 elektrycznych autobusów Solaris Urbino 18 IV FL Electric.",
+      "14 lipca 2021 roku zajezdnia posiadała 382 autobusy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ostrobramska bus depot, operated by Miejskie Zakłady Autobusowe, opened in July 1969. It received its first Solbus LNG buses in 2015 and 50 electric Solaris buses in 2020, with charging points built in 2019–2020.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Oddział Przewozów R-3 „Ostrobramska”"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ostrobramska (zajezdnia autobusowa)",
+        "url": "https://pl.wikipedia.org/wiki/Ostrobramska_%28zajezdnia_autobusowa%29"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Większość faktów dotyczy taboru, nie budynku; zapisane jako historia zajezdni. Można pominąć, jeśli zasada wymaga zabytku lub historii budynku."
+  },
+  {
+    "id": "park-paderewskiego-przystanek",
+    "nazwa": "Przystanek Park Paderewskiego",
+    "name_en": "Park Paderewskiego railway halt",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2475,
+    "lon": 21.046388888,
+    "lokalizacja": "przyblizona",
+    "okres": "XX wiek (do likwidacji linii)",
+    "istnieje": false,
+    "fakty": [
+      "Przystanek znajdował się w pobliżu dzisiejszego skrzyżowania alei Zielenieckiej z ul. Zamoyskiego, na nieistniejącej linii Kolei Jabłonowskiej.",
+      "Początkowo nazywał się Rogatka Moskiewska, potem Kamionek, następnie Park Skaryszewski, a potem Park Paderewskiego.",
+      "W czasie II wojny światowej został przemianowany na Ostpark, a następnie ponownie na Park Paderewskiego i Park Skaryszewski.",
+      "Po spaleniu w 1915 roku drewnianego budynku z kasą biletową i poczekalnią przystanek został czasowo przeniesiony do budynku rogatek Grochowskich.",
+      "W latach 20. XX wieku przeniesiono przystanek z powrotem na dawne miejsce, zmieniając nazwę z Kamionka na Park Skaryszewski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Park Paderewskiego railway halt was a stop on the defunct Jabłonowska railway near today's junction of Aleja Zieleniecka and Zamoyskiego street. It changed its name several times, including Ostpark during the war.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Rogatka Moskiewska",
+      "Kamionek",
+      "Park Skaryszewski",
+      "Ostpark"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Park Paderewskiego (przystanek kolejowy)",
+        "url": "https://pl.wikipedia.org/wiki/Park_Paderewskiego_%28przystanek_kolejowy%29"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Przystanek nieistniejący; daty z artykułu bez roku początku. Współrzędne z nagłówka."
+  },
+  {
+    "id": "park-znicza",
+    "nazwa": "Park Znicza",
+    "name_en": "Znicz Park",
+    "typ": "park",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2375,
+    "lon": 21.0961,
+    "lokalizacja": "dokladna",
+    "okres": "lata 50. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park powstał w latach 50. w rejonie północnej krawędzi obszaru pozostałego po forcie XI (Grochów Duży) twierdzy Warszawa, którego ślady zatarto w latach 30.",
+      "Park utworzono w kwartale ulic: Znicza, Filomatów, Zagójska (obecnie Bełżecka) i Łukiska.",
+      "W okresie od sierpnia 2007 do jesieni 2008 przeprowadzono rewitalizację parku; usunięto część starych topoli, wprowadzono nowe nasadzenia i ustawiono nowe latarnie.",
+      "W 2018 roku obelisk upamiętniający poległych za Ojczyznę i ofiary barbarzyństwa niemieckiego w latach 1939–1945 przeszedł renowację.",
+      "Nie wiadomo, kto i w jakich okolicznościach zaprojektował park."
+    ],
+    "ciekawostki": [
+      "Ozdobą parku jest fontanna-wodotrysk w kształcie talerza o 20 dyszach, będąca zegarem wodnym."
+    ],
+    "summary_en": "Znicz Park on Grochów was created in the 1950s on the edge of the former Fort XI site, in a block of streets named after Wilno (Znicza, Filomatów, Zagójska, Łukiska). It was revitalised in 2007–2008.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Park Znicza w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Park_Znicza_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "pawilon-stadionu-dziesieciolecia",
+    "nazwa": "Pawilon sportowo-administracyjny Stadionu Dziesięciolecia",
+    "name_en": "Stadium of the Decade administration and sports pavilion",
+    "typ": "sport",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.241472,
+    "lon": 21.043854,
+    "lokalizacja": "dokladna",
+    "okres": "1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pawilon powstał w II połowie lat 50. XX wieku na błoniach nieistniejącego już Stadionu Dziesięciolecia.",
+      "Zaprojektowali go trzej architekci z warszawskiej Grupy 55: Marian Bogusz, Zbigniew Dłubak i Andrzej Zaborowski.",
+      "Przez cały okres funkcjonowania stadionu mieścił szatnie gości i gospodarzy; na pierwszym piętrze znajdowały się szatnie Reprezentacji Polskiej.",
+      "W 1983 roku, po zamknięciu Stadionu Dziesięciolecia, pawilon wykorzystywał Centralny Ośrodek Sportu.",
+      "W 2008 roku pawilon wraz ze stadionem przejęło Narodowe Centrum Sportu.",
+      "W 2011 roku pawilon przeszedł generalny remont; w 2012 roku został wpisany do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [
+      "Pawilon okala unikatowy ceramiczny fryz przedstawiający różne dyscypliny sportu, nawiązujący do stylu Picassa."
+    ],
+    "summary_en": "The sports and administration pavilion of the former Stadium of the Decade was built in the late 1950s by architects of the Grupa 55. It has been a listed building since 2012 and now houses offices of the Stadium National operator.",
+    "ludzie": [
+      {
+        "kto": "Marian Bogusz",
+        "rola": "architekt pawilonu (Grupa 55)",
+        "wiki": null
+      },
+      {
+        "kto": "Zbigniew Dłubak",
+        "rola": "architekt pawilonu (Grupa 55)",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Zaborowski",
+        "rola": "architekt pawilonu (Grupa 55)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Budynek Szatni Stadionu Dziesięciolecia"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Pawilon sportowo-administracyjny Stadionu Dziesięciolecia",
+        "url": "https://pl.wikipedia.org/wiki/Pawilon_sportowo-administracyjny_Stadionu_Dziesi%C4%99ciolecia"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok 1955 to przybliżenie: artykuł podaje „II połowę lat 50. XX wieku”."
+  }
+]
