@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { ThemeToggleButton } from "@/features/theme";
 import { haptic, SPRING } from "../lib/device";
 import {
   type Choice,
@@ -152,7 +153,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
                 type="button"
                 onClick={() => go(prevOf(step))}
                 aria-label="Wstecz"
-                className="-ml-2 flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-powierzchnia active:scale-90 active:bg-white"
+                className="-ml-2 flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-powierzchnia active:scale-90 active:bg-powierzchnia"
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
@@ -167,7 +168,13 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
             ) : (
               <Logo className="text-2xl md:text-3xl" />
             )}
-            {showChrome && <Progress segments={paged} index={paged.indexOf(step)} />}
+            {showChrome ? (
+              <Progress segments={paged} index={paged.indexOf(step)} />
+            ) : (
+              <span className="flex-1" />
+            )}
+            {/* Motyw od pierwszego ekranu, zanim ktoś dojdzie do menu; „Auto” jest w menu Sawy */}
+            <ThemeToggleButton className="-mr-2" />
           </header>
 
           <div className={step === "welcome" ? "pt-6 md:pt-0" : ""}>
