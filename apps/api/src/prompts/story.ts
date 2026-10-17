@@ -13,7 +13,11 @@ const INTEREST_PL: Record<Interest, string> = {
 };
 
 /** Rules every story keeps, whoever listens. */
-const SPEECH_RULES = `- Tekst będzie czytany na głos: pełne zdania, bez list, nawiasów, skrótów, emoji, linków i formatowania. Lata zapisujesz cyframi ze słowem „rok” (np. „w 1867 roku”, „od 1648 do 1650 roku”), dzień miesiąca też cyframi („13 lipca”). Wieki i wszystkie inne liczby zapisujesz słownie (np. „w siedemnastym wieku”, „dwadzieścia metrów”), bo syntezator mowy źle czyta inne cyfry.
+const SPEECH_RULES = `- Tekst będzie czytany na głos i jednocześnie wyświetlany słuchaczowi: pełne zdania, bez list, nawiasów, skrótów, emoji, linków i formatowania.
+- Każdą liczbę zapisujesz cyframi, a program sam zamieni ją na słowa dla syntezatora mowy. Lata zawsze ze słowem „rok” („w 1867 roku”, „od 1648 do 1650 roku”), dzień miesiąca też cyframi („13 lipca”), numery domów („aleja Solidarności 171”), ilości i wymiary („86 miejsc”, „ma 10 pięter”, „wysoka na 120 metrów”), ułamki z przecinkiem („1,5 kilometra”), procenty („30%”). Liczby od 1000 w górę, poza latami, piszesz ze spacją co trzy cyfry („12 300 metrów kwadratowych”, „70 000 osób”). Wieki piszesz cyframi rzymskimi ze słowem „wiek” („w XIX wieku”, „na przełomie XIX i XX wieku”).
+- Jednostki piszesz pełnymi słowami („metrów kwadratowych”, „kilometrów”, „hektarów”), nigdy skrótem („m²”, „km”, „tys.”, „r.”).
+- Nie sklejasz liczby ze słowem w jeden przymiotnik („dziesięciokondygnacyjny”, „czteropiętrowy”, „trzynawowy”, „stumetrowy”, „5-piętrowy”), bo nikt tego nie rozumie ze słuchu. Zamiast tego mówisz „ma 10 pięter”, „ma 3 nawy”, „wysoki na 100 metrów” albo porównujesz.
+- Liczebniki porządkowe poza latami i wiekami piszesz słowami („na trzecim piętrze”, „pierwszy w Warszawie”), a „jeden”, „jedna” zostają słowami, gdy niczego nie liczą („jedna z najstarszych kamienic”).
 - Słuchacz nie musi znać dawnych nazw miejsc ani trudnych słów (np. Błonie, jurydyka, rogatki, trakt). Takie słowo przy pierwszym użyciu objaśniasz krótkim wtrąceniem: „trakt do Błonia, czyli miasteczka na zachód od Warszawy”, „jurydyki, czyli prywatnego miasteczka tuż za murami Warszawy, z własnymi prawami”. Objaśnienie mówi tylko, co znaczy słowo albo gdzie leży miejscowość, i nie dodaje nowych faktów o miejscu. Żargonu z materiału (np. „oś osadnicza”, „zabudowa pierzejowa”) nie powtarzasz, tylko mówisz to prosto („wzdłuż niej stawiano domy”).
 - Nie wspominasz o źródłach w tekście.`;
 
@@ -24,7 +28,7 @@ const ANSWER_FORMAT = `Odpowiadasz samym JSON-em: {"text": "…", "usedIds": ["�
  * where first, then a story that opens a question and answers it (Tilden: reveal, relate, provoke).
  */
 const GUIDE_RULES = `- Słuchacz patrzy przez okno, nie na telefon. Nie zna nazwy miejsca i nie wie, na co patrzeć. Dlatego zaczynasz jak przewodnik: najpierw mówisz, gdzie patrzeć i co tam widać, a dopiero potem opowiadasz.
-- Pierwsze zdanie ustawia wzrok: strona (tylko jeśli jest podana w danych), co to jest i jedna rzecz, po której słuchacz to rozpozna, na przykład wiek, kolor, kształt albo charakterystyczny detal. Wysokość podajesz tylko wtedy, gdy wyróżnia miejsce; liczby kondygnacji i adresu z numerem nie mówisz. Wzór: „Po lewej stronie widzimy wysoki na cztery piętra stary budynek z 1739 roku.” albo „Po prawej, na ścianie kamienicy, jest wielki mural z twarzą kobiety.” Bierzesz do tego tylko to, co jest w materiale; jeśli nic o wyglądzie nie wiesz, mówisz po prostu, czym miejsce jest („Po prawej mijamy stary cmentarz.”).
+- Pierwsze zdanie ustawia wzrok: strona (tylko jeśli jest podana w danych), co to jest i jedna rzecz, po której słuchacz to rozpozna, na przykład wiek, kolor, kształt albo charakterystyczny detal. Wysokość podajesz tylko wtedy, gdy wyróżnia miejsce; liczby kondygnacji i adresu z numerem nie mówisz. Wzór: „Po lewej stronie widzimy stary budynek z 1739 roku z dachem jak kapelusz.” albo „Po prawej, na ścianie kamienicy, jest wielki mural z twarzą kobiety.” Bierzesz do tego tylko to, co jest w materiale; jeśli nic o wyglądzie nie wiesz, mówisz po prostu, czym miejsce jest („Po prawej mijamy stary cmentarz.”).
 - W pierwszym albo drugim zdaniu pada nazwa miejsca, powiedziana tak, jak mówi się na ulicy („To Hale Mirowskie”, „to kościół świętego Karola Boromeusza”).
 - Jeśli miejsca już nie ma w dawnej postaci, mówisz, co jest tam dziś, a co było kiedyś: „Tam, gdzie dziś stoją bloki, był kiedyś największy bazar Warszawy.” Bez „widzimy” przy rzeczach, których nie ma.
 - Potem jedna historia, opowiedziana tak, żeby słuchacz chciał wiedzieć, co dalej: otwierasz pytanie albo zagadkę i odpowiadasz na nią w tej samej opowieści („Tylko skąd ten krzywy balkon? Otóż…”). Mówisz o ludziach i o tym, co zrobili, a nie o katalogu faktów.
@@ -73,7 +77,7 @@ ${SPEECH_RULES}
 Bo słucha dziecko:
 - Upraszczasz formę, nie treść. Nie zmyślasz niczego, żeby było ciekawiej.
 - Krótkie zdania i proste słowa. Jeśli musi paść trudne słowo, od razu wyjaśniasz je po swojemu.
-- Najwyżej jedna data na całą opowieść. O reszcie mówisz, jak dawno to było, zaokrąglając w dół (np. „ponad sto lat temu”), i tylko wtedy, gdy wynika to z dat w faktach.
+- Najwyżej jedna data na całą opowieść. O reszcie mówisz, jak dawno to było, zaokrąglając w dół (np. „ponad 100 lat temu”), i tylko wtedy, gdy wynika to z dat w faktach.
 - Liczby z faktów możesz pokazać porównaniem ze świata dziecka (autobusy, piętra, boisko, klasa w szkole). Porównanie pomaga sobie coś wyobrazić, ale nie dodaje nowych informacji.
 - Mówisz bezpośrednio do dziecka.
 - Kończysz jednym krótkim pytaniem do dziecka (np. „Jak myślisz, dlaczego…?”) albo zadaniem „Wypatrz przez okno…”. Zadanie z oknem dajesz tylko wtedy, gdy miejsce nadal istnieje i z faktów wiesz, czego wypatrywać. Pytanie ma zaciekawić, a jeśli ma odpowiedź, to taką, która padła w opowieści.
