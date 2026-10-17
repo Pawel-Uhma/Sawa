@@ -66,9 +66,16 @@ const vehicles = createVehicleTracker({
 });
 vehicles.start();
 
-// Walking paths: OSRM, then Valhalla when OSRM fails (both public, both block busy IPs).
+// Walking paths: OSRM (on production our own osrm-routed in this container), then Valhalla when
+// OSRM fails (public, blocks busy IPs).
 const walkPathSources = [
-  ...(env.WALK_ROUTER_URL ? [createOsrmWalkPathSource(env.WALK_ROUTER_URL, logger)] : []),
+  ...(env.WALK_ROUTER_URL
+    ? [
+        createOsrmWalkPathSource(env.WALK_ROUTER_URL, logger, {
+          maxInFlight: env.WALK_ROUTER_MAX_IN_FLIGHT,
+        }),
+      ]
+    : []),
   ...(env.WALK_ROUTER_FALLBACK_URL
     ? [createValhallaWalkPathSource(env.WALK_ROUTER_FALLBACK_URL, logger)]
     : []),
