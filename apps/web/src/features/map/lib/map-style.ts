@@ -24,6 +24,9 @@ export type MapPalette = {
   label: string;
   labelHalo: string;
   walk: string;
+  /** Group of places drawn as one circle with their count when zoomed out. */
+  clusterFill: string;
+  clusterText: string;
   /** Opacity of regular places while a route is shown; dark needs more to stay visible. */
   dimmedOpacity: number;
 };
@@ -39,6 +42,8 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#27272a",
     labelHalo: "#ffffff",
     walk: "#52525b",
+    clusterFill: "#3f3f46",
+    clusterText: "#ffffff",
     dimmedOpacity: 0.35,
   },
   dark: {
@@ -52,6 +57,8 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#d5dfdd",
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
+    clusterFill: "#2c3d3b",
+    clusterText: "#e6efed",
     dimmedOpacity: 0.6,
   },
 };

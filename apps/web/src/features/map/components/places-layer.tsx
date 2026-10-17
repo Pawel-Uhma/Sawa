@@ -1,5 +1,5 @@
 import type { PlaceSummaryFeature } from "@sawa/shared";
-import type { ExpressionSpecification } from "maplibre-gl";
+import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
 import {
@@ -9,7 +9,17 @@ import {
   placeKindIconExpression,
 } from "../lib/map-style";
 
+export const PLACES_SOURCE_ID = "places";
 export const PLACES_LAYER_ID = "places-circle";
+export const PLACES_CLUSTER_LAYER_ID = "places-cluster";
+
+/** From this zoom up every place is its own dot; below it nearby places merge into a count. */
+const CLUSTER_MAX_ZOOM = 14;
+const CLUSTER_RADIUS_PX = 44;
+/** Smaller groups stay as separate dots: a "3" says less than the three places themselves. */
+const CLUSTER_MIN_POINTS = 10;
+const CLUSTERED: FilterSpecification = ["has", "point_count"];
+const UNCLUSTERED: FilterSpecification = ["!", CLUSTERED];
 
 /** Icon scale (1 = 48 css px): grows with zoom, and richer places are a bit larger. */
 const ICON_SIZE: ExpressionSpecification = [
@@ -37,11 +47,45 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
   const opacity = isDimmed ? palette.dimmedOpacity : 0.9;
 
   return (
-    <Source id="places" type="geojson" data={data}>
+    <Source
+      id={PLACES_SOURCE_ID}
+      type="geojson"
+      data={data}
+      cluster
+      clusterMaxZoom={CLUSTER_MAX_ZOOM}
+      clusterRadius={CLUSTER_RADIUS_PX}
+      clusterMinPoints={CLUSTER_MIN_POINTS}
+    >
+      <Layer
+        id={PLACES_CLUSTER_LAYER_ID}
+        type="circle"
+        filter={CLUSTERED}
+        paint={{
+          "circle-color": palette.clusterFill,
+          "circle-radius": ["step", ["get", "point_count"], 16, 50, 20, 200, 25],
+          "circle-stroke-color": palette.casing,
+          "circle-stroke-width": 2,
+          "circle-opacity": opacity,
+          "circle-stroke-opacity": opacity,
+        }}
+      />
+      <Layer
+        id="places-cluster-count"
+        type="symbol"
+        filter={CLUSTERED}
+        layout={{
+          "text-field": ["get", "point_count_abbreviated"],
+          "text-font": LABEL_FONT,
+          "text-size": 12,
+          "text-allow-overlap": true,
+        }}
+        paint={{ "text-color": palette.clusterText, "text-opacity": opacity }}
+      />
       {hasIcons ? (
         <Layer
           id={PLACES_LAYER_ID}
           type="symbol"
+          filter={UNCLUSTERED}
           layout={{
             "icon-image": placeKindIconExpression(),
             "icon-size": ICON_SIZE,
@@ -56,6 +100,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
         <Layer
           id={PLACES_LAYER_ID}
           type="circle"
+          filter={UNCLUSTERED}
           paint={{
             "circle-color": placeKindColorExpression(),
             "circle-radius": ["interpolate", ["linear"], ["get", "richness"], 1, 5, 10, 7, 40, 9],

@@ -2,9 +2,11 @@ import type { PlaceSummaryFeature } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import type { LngLatBounds } from "./bounds";
 import {
+  CITY_BBOX,
   MAX_PLACE_TILES,
   MIN_PLACES_ZOOM,
   mergeTilePlaces,
+  placeBBoxesInView,
   tileBBoxParam,
   tilesInView,
 } from "./place-tiles";
@@ -53,6 +55,16 @@ describe("tilesInView", () => {
     );
     expect(tiles).toHaveLength(MAX_PLACE_TILES);
     expect(tiles[0]).toEqual({ x: 525, y: 2090 });
+  });
+});
+
+describe("placeBBoxesInView", () => {
+  it("asks for the whole city once when zoomed out", () => {
+    expect(placeBBoxesInView(VENUE_VIEW, MIN_PLACES_ZOOM - 0.1)).toEqual([CITY_BBOX]);
+  });
+
+  it("asks per tile when zoomed in", () => {
+    expect(placeBBoxesInView(VENUE_VIEW, 15)).toEqual([tileBBoxParam({ x: 524, y: 2089 })]);
   });
 });
 

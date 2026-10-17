@@ -2,7 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Interest, LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
-import type { Map as MapLibre } from "maplibre-gl";
+import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -26,17 +26,22 @@ import {
 } from "../lib/camera";
 import { loadMapIcons } from "../lib/map-icons";
 import { BASEMAP_STYLE_URLS, MAP_PALETTES, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
-import { MIN_PLACES_ZOOM, tilesInView } from "../lib/place-tiles";
+import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
-import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
+import {
+  PLACES_CLUSTER_LAYER_ID,
+  PLACES_LAYER_ID,
+  PLACES_SOURCE_ID,
+  PlacesLayer,
+} from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { UserLayer } from "./user-layer";
 
-const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID];
+const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
 
 const CAMERA_DURATION_MS = 800;
 
@@ -82,8 +87,8 @@ export function SawaMap({
   const [icons, setIcons] = useState<"loading" | "ready" | "failed">("loading");
   const [cursor, setCursor] = useState<string>("grab");
   const [view, setView] = useState<MapView | null>(null);
-  const tiles = useMemo(() => (view ? tilesInView(view.bounds, view.zoom) : []), [view]);
-  const places = usePlaces(tiles);
+  const bboxes = useMemo(() => (view ? placeBBoxesInView(view.bounds, view.zoom) : []), [view]);
+  const places = usePlaces(bboxes);
   const vehicles = useLiveVehicles(route);
   const attribution = useMemo(
     () => [...(route?.attribution ?? []), ...(vehicles.data?.attribution ?? [])],
@@ -139,6 +144,11 @@ export function SawaMap({
 
   function handleClick(event: MapLayerMouseEvent) {
     const feature = event.features?.[0];
+    if (feature?.layer.id === PLACES_CLUSTER_LAYER_ID) {
+      const center = feature.geometry.type === "Point" ? feature.geometry.coordinates : null;
+      expandCluster(event.target, feature.properties?.cluster_id, center ?? event.lngLat.toArray());
+      return;
+    }
     const id = feature?.properties?.id;
     if (typeof id !== "string") {
       select(null);
@@ -210,17 +220,23 @@ export function SawaMap({
           </button>
         </p>
       )}
-      {view && view.zoom < MIN_PLACES_ZOOM && (
-        <p className="pointer-events-none absolute top-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-powierzchnia/90 px-3 py-1.5 text-sm whitespace-nowrap text-tekst-2 shadow">
-          Przybliż mapę, żeby zobaczyć miejsca
-        </p>
-      )}
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );
 }
 
 type MapView = { bounds: LngLatBounds; zoom: number };
+
+/**
+ * Zooms in on a cluster just far enough for it to split.
+ * MapLibre skips the animation itself under reduced motion.
+ */
+async function expandCluster(map: MapLibre, clusterId: unknown, center: number[]) {
+  const source = map.getSource<GeoJSONSource>(PLACES_SOURCE_ID);
+  if (typeof clusterId !== "number" || !source || center.length < 2) return;
+  const zoom = await source.getClusterExpansionZoom(clusterId);
+  map.easeTo({ center: [center[0], center[1]], zoom, duration: CAMERA_DURATION_MS });
+}
 
 function viewOf(map: MapLibre): MapView {
   const bounds = map.getBounds();
