@@ -1,6 +1,6 @@
 "use client";
 
-import type { Place, PlacePhoto } from "@sawa/shared";
+import type { Place } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useEffect, useLayoutEffect, useRef } from "react";
 import { PLACE_KIND_LABELS, placeKindColor } from "@/features/map";
@@ -189,10 +189,6 @@ export function splitName(name: string): { title: string; aside: string | null }
 /** Fakty z bazy mają na końcu źródło w nawiasie („(Wikipedia pl: Kercelak)”); w karcie źródła są osobno. */
 export function cleanFact(fact: string): string {
   return fact.replace(/\s*\([^()]*\)\s*$/, "");
-}
-
-export function photoCredit(photo: PlacePhoto): string {
-  return [photo.year, photo.author, photo.license].filter(Boolean).join(" · ");
 }
 
 export function Sources({ place }: { place: Place }) {

@@ -35,12 +35,11 @@ import {
   SparkIcon,
 } from "./icons";
 import { Logo, SawaHead } from "./logo";
-import type { OnboardingStep } from "./onboarding-flow";
-
-export type ProfileStep = Extract<OnboardingStep, "familiarity" | "interests" | "style">;
+import type { ProfileStep } from "./profile-modal";
 
 export type SawaMenuActions = {
   profile: Profile;
+  /** Otwiera modal edycji jednego pola (nie onboarding). */
   onEditProfile: (step: ProfileStep) => void;
   /** Liczba opowieści w ostatniej trasie; null, gdy jeszcze żadnej nie było. */
   lastRouteStops: number | null;

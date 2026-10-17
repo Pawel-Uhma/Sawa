@@ -12,7 +12,6 @@ import {
   cleanFact,
   KindLine,
   ListenButton,
-  photoCredit,
   Sources,
   splitName,
   TodayNearby,
@@ -88,9 +87,6 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
                   draggable={false}
                   className="aspect-[4/3] w-full rounded-2xl bg-tlo-2 object-cover"
                 />
-                <figcaption className="mt-1 line-clamp-1 text-[11px] text-tekst-3">
-                  {photoCredit(photo)}
-                </figcaption>
               </figure>
             </li>
           ))}

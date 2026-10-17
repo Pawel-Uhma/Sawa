@@ -152,6 +152,8 @@ function SkipButton({
   );
 }
 
+const MAX_SEGMENTS = 12;
+
 /** Pasek postępu jak w relacjach: jeden odcinek na punkt, bieżący napełnia się z opowieścią. */
 function Segments({
   total,
@@ -171,18 +173,28 @@ function Segments({
       aria-valuenow={activeIndex + progress / 100}
       className="flex gap-1"
     >
-      {Array.from({ length: total }, (_, index) => {
-        const fill = index < activeIndex ? 1 : index === activeIndex ? progress / 100 : 0;
-        return (
-          // biome-ignore lint/suspicious/noArrayIndexKey: odcinki nie mają innej tożsamości niż pozycja
-          <span key={index} className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
-            <span
-              className="block h-full origin-left rounded-full bg-glebia"
-              style={{ transform: `scaleX(${fill})` }}
-            />
-          </span>
-        );
-      })}
+      {/* Przy długiej trasie odcinki zlałyby się w kropki: wtedy jeden ciągły pasek */}
+      {total > MAX_SEGMENTS && (
+        <span className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
+          <span
+            className="block h-full origin-left rounded-full bg-glebia"
+            style={{ transform: `scaleX(${(activeIndex + progress / 100) / total})` }}
+          />
+        </span>
+      )}
+      {total <= MAX_SEGMENTS &&
+        Array.from({ length: total }, (_, index) => {
+          const fill = index < activeIndex ? 1 : index === activeIndex ? progress / 100 : 0;
+          return (
+            // biome-ignore lint/suspicious/noArrayIndexKey: odcinki nie mają innej tożsamości niż pozycja
+            <span key={index} className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
+              <span
+                className="block h-full origin-left rounded-full bg-glebia"
+                style={{ transform: `scaleX(${fill})` }}
+              />
+            </span>
+          );
+        })}
     </div>
   );
 }
@@ -684,14 +696,14 @@ export function RouteViewPostcards({
               >
                 <span
                   aria-hidden="true"
-                  className={`pointer-events-none absolute -right-3 -top-8 text-[140px] font-extrabold leading-none tracking-[-0.06em] ${
-                    index < activeIndex ? "text-mieta/40" : "text-koral/15"
+                  className={`pointer-events-none absolute right-5 top-4 text-[44px] font-extrabold leading-none tracking-[-0.04em] tabular-nums ${
+                    index < activeIndex ? "text-mieta" : "text-koral/35"
                   }`}
                 >
                   {index + 1}
                 </span>
                 <p className="etykieta relative">{stopKind(stop)}</p>
-                <h3 className="relative mt-1 pr-10 text-[24px] font-extrabold leading-[1.1] tracking-[-0.02em]">
+                <h3 className="relative mt-1 pr-14 text-[24px] font-extrabold leading-[1.1] tracking-[-0.02em]">
                   {stop.name}
                 </h3>
                 <p className="relative mt-2 flex items-center gap-2 text-[13px] text-tekst-3">

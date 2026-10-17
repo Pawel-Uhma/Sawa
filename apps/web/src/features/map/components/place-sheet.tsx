@@ -111,7 +111,7 @@ function PlaceDetail({ place }: { place: Place }) {
             className="aspect-[4/3] w-full rounded-lg bg-zinc-100 object-cover"
           />
           <figcaption className="mt-1 text-xs text-zinc-500">
-            {[photo.caption, photo.year, photo.author, photo.license].filter(Boolean).join(" · ")}
+            {[photo.caption, photo.year].filter(Boolean).join(" · ")}
           </figcaption>
         </figure>
       )}

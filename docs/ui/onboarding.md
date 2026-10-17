@@ -45,7 +45,7 @@ Wzorce, które się powtarzają:
 
 Nic się nie wpisuje z klawiatury. Po stylu od razu mapa: udawany ekran „Układam Twoją Warszawę” usunięty (17.10, wieczór), bo trasę i tak liczy planer dopiero po „Wyznacz trasę”.
 
-**Wstęp (17.10, wieczór):** aplikacja nie ma landing page'a, a jury zobaczy ją pierwszy raz, więc onboarding to rozmowa: kim jest Sawa, kim jesteś Ty, co Ci da, jak działa, a dopiero potem wybory do trasy. Ekran „co Ci da” mówi do konkretnej osoby, dlatego stoi po pytaniu o znajomość miasta. Kod w `components/onboarding-intro.tsx`. Strony bez pytań przewija się też palcem (`drag="x"`, próg 64 px albo rzut; bez przy reduced motion). „Znam Sawę, przejdź do pytań” na powitaniu i edycja z menu pomijają strony bez pytań. Teksty o legendzie z [pitch](../pitch/sawa-pitch.html), problem z [PRD](../10-prd.md).
+**Wstęp (17.10, wieczór):** aplikacja nie ma landing page'a, a jury zobaczy ją pierwszy raz, więc onboarding to rozmowa: kim jest Sawa, kim jesteś Ty, co Ci da, jak działa, a dopiero potem wybory do trasy. Ekran „co Ci da” mówi do konkretnej osoby, dlatego stoi po pytaniu o znajomość miasta. Kod w `components/onboarding-intro.tsx`. Strony bez pytań przewija się też palcem (`drag="x"`, próg 64 px albo rzut; bez przy reduced motion). „Znam Sawę, przejdź do pytań” na powitaniu pomija strony bez pytań. Onboarding idzie tylko przy pierwszym wejściu (albo po „Zacznij od nowa”). Zmiana zainteresowań, znajomości miasta i stylu idzie przez modal (`components/profile-modal.tsx`) z menu i z panelu tras (przycisk „Zmień”): zapisuje jedno pole i zostawia resztę profilu bez zmian. Wybory są we wspólnym `components/profile-choices.tsx`. Teksty o legendzie z [pitch](../pitch/sawa-pitch.html), problem z [PRD](../10-prd.md).
 
 ## Ruch (apple-design)
 
