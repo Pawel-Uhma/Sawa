@@ -2,6 +2,7 @@ export * from "./geo";
 export * from "./interests";
 export * from "./memory";
 export * from "./schemas/common";
+export * from "./schemas/destination";
 export * from "./schemas/place";
 export * from "./schemas/route";
 export * from "./schemas/speech";

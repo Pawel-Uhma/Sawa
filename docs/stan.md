@@ -4,6 +4,7 @@
 
 ## Teraz
 
+- 16:40 (Paweł, z agentem R3): **odcinki piesze i cel w UI.** Arkusz trasy i Przejażdżki pokazują przebieg znaczkami (pieszo → 22 → 10), punkty na spacerze mają „pieszo” i „Opowieść po drodze”. Cel (T-78): pole „Dokąd jedziesz?” szuka w Google Places (nowy `GET /v1/destinations`, Warszawa, klucz `GOOGLE_PLACES_API_KEY` tylko w API), do tego gotowe cele, stuknięcie w mapę i „Jedź tutaj” w karcie miejsca. To zmienia decyzję T-06 (bez Google na żywo) tylko dla wyszukiwania celu, na prośbę Pawła. **Do zrobienia:** `GOOGLE_PLACES_API_KEY` na Railway, bez niego wyszukiwanie odpowiada 502.
 - 18:00 (Paweł, z agentem): w Supabase +1630 miejsc z Woli, Bemowa, Bielan, Żoliborza i Śródmieścia (fakty z lokalnego zrzutu Wikipedii i tagów OSM, bez duplikatów względem dotychczasowych plików), razem 2989. Źródła: [historia/dzielnice/](historia/dzielnice/README.md), dopisane do `scripts/historia/sources.ts`. **R1:** planer zobaczy je po odświeżeniu cache (10 min), `apps/api/data/places.geojson` (fallback) nie jest odświeżony. **R2 (Jasiek):** seed załadowany przez `railway run` z kluczami serwisu `api`.
 
 - 16:30 (Paweł, z agentem R3): onboarding ma wstęp (czym jest Sawa, skąd imię, jak działa), [ui/onboarding.md](ui/onboarding.md).
