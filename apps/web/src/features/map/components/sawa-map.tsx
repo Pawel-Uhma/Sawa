@@ -11,6 +11,7 @@ import {
   type MapRef,
   NavigationControl,
 } from "react-map-gl/maplibre";
+import { useT } from "@/features/i18n";
 import { useTheme } from "@/features/theme";
 import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
@@ -85,6 +86,7 @@ export function SawaMap({
   hasZoomControls = true,
   onMapClick,
 }: SawaMapProps) {
+  const t = useT();
   const mapRef = useRef<MapRef>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   // Layers mount only after the icons are in the style, so they keep their stacking order.
@@ -191,6 +193,8 @@ export function SawaMap({
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
+        // The map stays flat. Two-finger pitch also hijacks a pinch that starts mid-pan and blocks the zoom.
+        touchPitch={false}
         attributionControl={false}
         style={{ width: "100%", height: "100%" }}
       >
@@ -220,9 +224,9 @@ export function SawaMap({
       </MapLibreMap>
       {places.isError && (
         <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-powierzchnia px-3 py-2 text-sm text-koral shadow">
-          Nie udało się pobrać miejsc.{" "}
+          {t("Nie udało się pobrać miejsc.", "Couldn't load the places.")}{" "}
           <button type="button" className="font-medium underline" onClick={() => places.refetch()}>
-            Spróbuj ponownie
+            {t("Spróbuj ponownie", "Try again")}
           </button>
         </p>
       )}
@@ -271,6 +275,7 @@ function findPlace(
     id,
     name: summary?.name ?? onRoute?.properties.name,
     kind: summary?.kind,
+    subkind: summary?.subkind,
     tags: summary?.interests,
     order: onRoute?.properties.order,
   };

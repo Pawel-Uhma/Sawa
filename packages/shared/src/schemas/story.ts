@@ -3,7 +3,7 @@ import { InterestSchema } from "../interests";
 import { MAX_HEARD_FACTS } from "../memory";
 import { PlaceSourceSchema } from "./place";
 // MAX_STORY_SEC lives in route.ts with the planner windows it bounds (one import direction).
-import { FAMILIARITY, MAX_STORY_SEC, STORY_STYLES } from "./route";
+import { AUDIENCES, FAMILIARITY, MAX_STORY_SEC, STORY_STYLES } from "./route";
 
 /** POST /v1/stories body. `targetSec` is how long Sawa may talk before the next place. */
 export const StoryRequestSchema = z.object({
@@ -13,6 +13,8 @@ export const StoryRequestSchema = z.object({
   /** Onboarding answers: the tone of the story, and whether background gets explained. */
   storyStyle: z.enum(STORY_STYLES).optional(),
   familiarity: z.enum(FAMILIARITY).optional(),
+  /** "kids": simpler words, shorter, a question at the end; war told gently. Missing: "adult". */
+  audience: z.enum(AUDIENCES).optional(),
   /** `factId`s of this place the listener already heard; Sawa tells the others first. */
   heardFacts: z.array(z.string().max(16)).max(MAX_HEARD_FACTS).default([]),
   /** Background stories already explained (`Story.contextIds`), never explained again. */

@@ -1,0 +1,159 @@
+[
+  {
+    "id": "plac-konfederacji",
+    "nazwa": "Plac Konfederacji",
+    "name_en": "Konfederacji Square",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "plac Konfederacji",
+    "adres_historyczny": null,
+    "lat": 52.2796661,
+    "lon": 20.9473643,
+    "lokalizacja": "dokladna",
+    "okres": "koniec lat 20. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac wytyczono wraz z budową całego osiedla Zdobycz Robotnicza pod koniec lat 20. XX wieku.",
+      "Otacza go niska, piętrowa zabudowa w stylu dworkowym, z wysokimi dachami pokrytymi czerwoną dachówką. Projekt przygotował Janusz Dzierżawski.",
+      "Spółdzielnia budująca osiedle zbankrutowała i zdążyła postawić tylko dwadzieścia siedem domów.",
+      "W 1981 roku południową pierzeję placu uzupełnił kościół św. Zygmunta projektu Zbigniewa Pawelskiego.",
+      "Zespół domków oraz kościół są wpisane na listę zabytków.",
+      "Na placu znajduje się kamień upamiętniający żołnierzy 77. pułku piechoty."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Konfederacji Square is the central square of the Zdobycz Robotnicza estate in Stare Bielany, laid out in the late 1920s. The surrounding Dzierżawski-designed houses and the St. Zygmunt church, completed in 1981, are listed monuments.",
+    "ludzie": [
+      {"kto": "Janusz Dzierżawski", "rola": "projektant zabudowy osiedla", "wiki": null},
+      {"kto": "Zbigniew Pawelski", "rola": "projektant kościoła św. Zygmunta", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Plac Konfederacji", "url": "https://warszawa.fandom.com/pl/wiki/Plac_Konfederacji"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rezydencja-kaskada",
+    "nazwa": "Rezydencja Kaskada",
+    "name_en": "Rezydencja Kaskada",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Kolektorska 26",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2012–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na miejscu trzech posesji (domy nr 26, 28 i 30) rozebrano zabudowania w 2012 roku w związku z przygotowaniami do nowej inwestycji.",
+      "Dom nr 30 był jednopiętrowym budynkiem przedwojennym, który nie został zniszczony podczas II wojny światowej. Domy nr 26 i 28 powstały po wojnie.",
+      "W latach 2010–2012 opracowano projekt budynku mieszkalnego w zabudowie szeregowej „Rezydencja Kaskada” (robocza nazwa „Kolektorska Residence”). Projekt przygotowali Konrad Tanasiewicz, Robert Muszyński i Andrzej Sowiński z pracowni ArchiCo-Projekt.",
+      "Prace ziemne rozpoczęto w drugiej połowie 2013 roku. Według planów inwestycja miała się zakończyć na początku 2015 roku, ale w 2014 roku prace były praktycznie wstrzymane.",
+      "Ukończenie planowano na pierwszy kwartał 2016 roku; termin nie został dotrzymany, a inwestycję ukończono w maju 2017 roku.",
+      "Od ukończenia budynek stoi pusty."
+    ],
+    "ciekawostki": [
+      "Na terenie posesji rośnie pomnik przyrody: dąb szypułkowy o wysokości 30 m i obwodzie pnia 265 cm."
+    ],
+    "summary_en": "Rezydencja Kaskada is a row-type residential building at Kolektorska 26 in Marymont-Kaskada. Three older properties were demolished in 2012, and the project was completed in May 2017 after repeated delays, but the building has stood empty since.",
+    "ludzie": [
+      {"kto": "Konrad Tanasiewicz", "rola": "projektant (ArchiCo-Projekt)", "wiki": null},
+      {"kto": "Robert Muszyński", "rola": "projektant (ArchiCo-Projekt)", "wiki": null},
+      {"kto": "Andrzej Sowiński", "rola": "projektant (ArchiCo-Projekt)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kolektorska Residence (robocza nazwa)"],
+    "zrodla": [{"tytul": "Warszawikia: Rezydencja Kaskada", "url": "https://warszawa.fandom.com/pl/wiki/Rezydencja_Kaskada"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykul mowi o domach nr 26, 28 i 30; adres podany to pierwszy z nich."
+  },
+  {
+    "id": "ulica-barcicka",
+    "nazwa": "Ulica Barcicka",
+    "name_en": "Barcicka Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Barcicka",
+    "adres_historyczny": null,
+    "lat": 52.2808572,
+    "lon": 20.9534843,
+    "lokalizacja": "przyblizona",
+    "okres": "około 1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ma około 850 metrów długości i biegnie na Starych Bielanach od ul. Podczaszyńskiego do ul. Kasprowicza przy Lasku Lindego.",
+      "Powstała około 1930 roku.",
+      "Przecina kolejno ulice Lubomelską, Babicką, aleję Zjednoczenia, Grębałowską oraz Twardowską.",
+      "Na listę zabytków wpisano domy funkcjonalistyczne z lat 1933–1939 (m.in. nr 1, 6, 9, 10, 11, 12, 14, 15, 16, 19, 23, 31, 43, 59, 63, 69, 71, 73) oraz modernistyczne z lat 1935–1939 (m.in. nr 2, 7, 8, 17a, 18, 20, 24, 27, 28, 32, 35, 36, 39, 44, 46, 47, 48, 50, 51).",
+      "Domy nr 43 i 71 wzniosła Spółdzielnia Związku Zawodowego Kolejarzy PKP „Związkowiec”, podobnie jak domy nr 44, 46, 48 i 50."
+    ],
+    "ciekawostki": [
+      "Na domu przy ul. Barcicka 1 zachowały się ślady po kulach z okresu II wojny światowej."
+    ],
+    "summary_en": "Barcicka is an approximately 850 m street in Stare Bielany, running from Podczaszyńskiego to Kasprowicza near Las Lindego. Many of its houses from 1933–1939 are listed monuments, several of them built by a railway workers' cooperative.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Barcicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Barcicka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wspolrzedne to srodek odcinka z naglowka."
+  },
+  {
+    "id": "ulica-ceglowska",
+    "nazwa": "Ulica Cegłowska",
+    "name_en": "Cegłowska Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Cegłowska",
+    "adres_historyczny": null,
+    "lat": 52.2844771,
+    "lon": 20.9538098,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1930 roku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ma około 750 metrów długości i biegnie na Starych Bielanach między Szpitalem Bielańskim a ulicą Podczaszyńskiego.",
+      "Powstała około 1930 roku. Jest jednokierunkowa, z ruchem skierowanym na północ.",
+      "Domy pod numerami 52–64 (parzystymi) zaprojektował w latach 30. XX wieku Romuald Miller. Łączą nowoczesną architekturę z elementami monumentalnymi, takimi jak wysokie filary podtrzymujące cienkie, płaskie dachy.",
+      "Przy ul. Cegłowskiej 80 mieści się Szpital Bielański wraz ze Specjalną Szkołą Podstawową nr 346.",
+      "Domy nr 8 i 10 wybudowano w latach 1935–1936 według projektu K. Lamparskiego; są funkcjonalistyczne."
+    ],
+    "ciekawostki": [
+      "Wzdłuż ulicy znajdują się gazowe latarnie, jedne z ostatnich w Warszawie."
+    ],
+    "summary_en": "Cegłowska is a roughly 750 m one-way street in Stare Bielany, running between the Bielany Hospital and Podczaszyńskiego. It has many functionalist and modernist houses from the 1930s, including a row of designs by Romuald Miller, and still has gas street lamps.",
+    "ludzie": [
+      {"kto": "Romuald Miller", "rola": "projektant domów pod nr 52–64", "wiki": null},
+      {"kto": "Jan Zabłocki", "rola": "projektant drewnianego domku z wystawy Tani Dom Własny (1932)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Cegłowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Cegłowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wspolrzedne to srodek odcinka z naglowka."
+  },
+  {
+    "id": "dom-ceglowska-35",
+    "nazwa": "Drewniany domek przy Cegłowskiej 35",
+    "name_en": "Wooden house at Cegłowska 35",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Cegłowska 35",
+    "adres_historyczny": null,
+    "lat": 52.2844771,
+    "lon": 20.9538098,
+    "lokalizacja": "przyblizona",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przy ul. Cegłowskiej 35 mieści się drewniany domek, pozostałość po odbywających się w 1932 roku targach Tani Dom Własny.",
+      "Projekt wykonał Jan Zabłocki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A wooden house at Cegłowska 35 in Stare Bielany, a surviving piece of the 1932 Tani Dom Własny (Cheap Own House) fair, designed by Jan Zabłocki.",
+    "ludzie": [
+      {"kto": "Jan Zabłocki", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Cegłowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Cegłowska"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul o ulicy podaje tez, ze drewniany dom z wystawy 1932 stoi pod Cegłowska 37 (przebudowany). Adres 35 jest z sekcji Ważne miejsca; do sprawdzenia."
+  }
+]

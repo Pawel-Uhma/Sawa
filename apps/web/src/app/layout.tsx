@@ -4,6 +4,7 @@ import Script from "next/script";
 // CSS MapLibre przed naszym, żeby nasze reguły mapy go nadpisywały
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
+import { LANG_INIT_SCRIPT } from "@/features/i18n";
 import { THEME_INIT_SCRIPT } from "@/features/theme";
 import { Providers } from "./providers";
 
@@ -60,6 +61,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {/* Motyw przed pierwszym malowaniem, bez mignięcia jasnej mapy (features/theme) */}
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
+        </Script>
+        <Script id="lang-init" strategy="beforeInteractive">
+          {LANG_INIT_SCRIPT}
         </Script>
         <Providers>{children}</Providers>
       </body>

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { MockStop } from "./mock-data";
-import { APPROACH_M, distanceTo, reachedIndex } from "./ride-sync";
+import { ARRIVE_M } from "./ride-clock";
+import { reachedIndex } from "./ride-sync";
 
 // Punkty co ok. 1 km na wschód wzdłuż jednej szerokości geograficznej.
 const stop = (id: string, lng: number): MockStop => ({
@@ -28,7 +29,7 @@ describe("reachedIndex", () => {
   });
 
   it("counts a stop just inside the radius", () => {
-    const deg = (APPROACH_M - 20) / (111_320 * Math.cos((52.23 * Math.PI) / 180));
+    const deg = (ARRIVE_M - 20) / (111_320 * Math.cos((52.23 * Math.PI) / 180));
     expect(reachedIndex(stops, at(21.015 - deg), 0)).toBe(1);
   });
 
@@ -37,15 +38,5 @@ describe("reachedIndex", () => {
     expect(reachedIndex(loop, at(21.0), 0)).toBe(-1);
     expect(reachedIndex(stops, at(21.045), 0)).toBe(-1);
     expect(reachedIndex(stops, at(21.045), 1)).toBe(3);
-  });
-});
-
-describe("distanceTo", () => {
-  it("measures metres to the stop, null without a location", () => {
-    const m = distanceTo(stops[1], at(21.0));
-    expect(m).toBeGreaterThan(900);
-    expect(m).toBeLessThan(1100);
-    expect(distanceTo(stops[1], null)).toBeNull();
-    expect(distanceTo(undefined, at(21.0))).toBeNull();
   });
 });

@@ -1,0 +1,176 @@
+[
+  {
+    "id": "cosmopolitan",
+    "nazwa": "Cosmopolitan",
+    "name_en": "Cosmopolitan residential tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Twarda 2/4",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2010–2014",
+    "istnieje": true,
+    "fakty": [
+      "W miejscu budynku stał powojenny, jednopiętrowy budynek administracyjny, rozebrany około 2009 roku.",
+      "Kamień węgielny wmurowano 13 października 2011 roku w obecności prezydent Hanny Gronkiewicz-Waltz.",
+      "Wiechę na szczycie zawieszono 23 stycznia 2013 roku.",
+      "27 listopada 2013 roku na budowie pękła szyba w oknie na 23. piętrze, która spadła na taras niżej.",
+      "Pozwolenie na użytkowanie wydano w połowie grudnia 2013 roku, a pierwsze mieszkania miały zostać oddane w pierwszym kwartale 2014 roku.",
+      "Wieża mieszkalna ma 160 metrów wysokości i 44 kondygnacje; w środku znajduje się 252 apartamenty."
+    ],
+    "ciekawostki": [
+      "Wieżowiec powstał według projektu Helmuta Jahna, a na jego podium znajduje się szklany dach nad wewnętrznym placykiem."
+    ],
+    "summary_en": "A 44-storey residential tower on Twarda Street in Grzybów, built in 2010-2013 on the site of a post-war administrative building. It contains 252 apartments and was designed by Helmut Jahn.",
+    "ludzie": [
+      {"kto": "Helmut Jahn", "rola": "projektant", "wiki": null},
+      {"kto": "Hanna Gronkiewicz-Waltz", "rola": "prezydent Warszawy obecna przy wmurowaniu kamienia węgielnego (2011)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hines Tower", "Twarda Tower"],
+    "zrodla": [{"tytul": "Warszawikia: Cosmopolitan", "url": "https://warszawa.fandom.com/pl/wiki/Cosmopolitan"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z nagłówka artykułu. Okres do 2014 wg zapowiedzi pierwszych mieszkań w tekście."
+  },
+  {
+    "id": "dawna-elektrownia-tramwajow-miejskich",
+    "nazwa": "Dawna Elektrownia Tramwajów Miejskich",
+    "name_en": "Former Municipal Tram Power Station",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Grzybowska 79",
+    "adres_historyczny": "ul. Przyokopowa (elektrownia tramwajowa 1905–1908)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Neoromański budynek elektrowni wzniesiono w latach 1905–1908.",
+      "Elektrownia uruchomiona została 7 lutego 1908 roku; 26 marca 1908 roku na ulice miasta wyjechał pierwszy tramwaj elektryczny.",
+      "13 kwietnia 1917 roku wybuchł kocioł, w wyniku czego zginął jeden z pracowników.",
+      "6 sierpnia 1944 roku, w czasie powstania warszawskiego, elektrownię zbombardowali Niemcy; po upadku powstania mury wysadzono.",
+      "W 1945 roku zdecydowano o odbudowie elektrowni jako ciepłowni.",
+      "W 2003 roku władze miasta zdecydowały o ulokowaniu tu Muzeum Powstania Warszawskiego; od 2004 roku jest jego siedzibą.",
+      "W lutym 2005 roku oddano do użytku kaplicę muzealną pod wezwaniem bł. Józefa Stanka."
+    ],
+    "ciekawostki": [
+      "Grób pracownika Piotra Lędziakowskiego, który zginął w wyniku wybuchu kotła, znajduje się na Cmentarzu Powązkowskim; jego pomnik zawiera fragmenty kratownic z hali elektrowni.",
+      "W latach 70. XX wieku ceglaną fasadę pokryto szarym tynkiem, tzw. baranek; w 2004 roku odsłonięto klinkierową cegłę."
+    ],
+    "summary_en": "A historic neo-Romanesque tram power station on Grzybowska Street, built in 1905-1908, bombed in 1944 and converted in 2004 into the seat of the Warsaw Rising Museum.",
+    "ludzie": [
+      {"kto": "Wojciech Obtułowicz", "rola": "architekt przebudowy z 2004 roku", "wiki": null},
+      {"kto": "Mirosław Nizio, Jarosław Kłaput, Dariusz Kunowski", "rola": "zespół autorski ekspozycji", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "prymas Polski, który pozwolił na budowę kaplicy muzealnej (dekret z 24 czerwca 2004)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Elektrownia Tramwajów Miejskich"],
+    "zrodla": [{"tytul": "Warszawikia: Dawna Elektrownia Tramwajów Miejskich", "url": "https://warszawa.fandom.com/pl/wiki/Dawna_Elektrownia_Tramwajów_Miejskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Adres z nagłówka (Grzybowska 79); tekst historyczny wskazuje pierwotną lokalizację przy ul. Przyokopowej."
+  },
+  {
+    "id": "dom-bez-kantow",
+    "nazwa": "Dom Bez Kantów",
+    "name_en": "House Without Corners",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Królewska 2",
+    "adres_historyczny": "w miejscu dawnych Kuźni Saskich",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1932–1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek dla Funduszu Kwaterunku Wojskowego wzniesiono w latach 1932–1935 w miejscu dawnych Kuźni Saskich.",
+      "Projekt architektoniczny wykonał Czesław Przybylski, a konstrukcję zaprojektował Stefan Bryła.",
+      "Budynek bez większych zniszczeń przetrwał II wojnę światową, choć nosi ślady kul.",
+      "W 2008 roku budynek został wyremontowany.",
+      "Do dziś na budynku zachowały się haki podwieszające dawną trakcję tramwajową nad ulicą Królewską.",
+      "W budynku od grudnia 2012 roku działa Kino za Rogiem."
+    ],
+    "ciekawostki": [
+      "Według legendy Józef Piłsudski żądał, aby gmach wybudowano „bez kantów”, mając na myśli machlojki finansowe; architekci źle zrozumieli intencje i zaokrąglili narożniki.",
+      "Charakterystyczny chodnik pod arkadami powstał w związku z planami poszerzenia ulicy Królewskiej."
+    ],
+    "summary_en": "A monumental modernist building at Królewska 2 and Krakowskie Przedmieście 11, built in 1932-1935 for the Military Housing Fund. Its name comes from its rounded corners.",
+    "ludzie": [
+      {"kto": "Czesław Przybylski", "rola": "projektant architektoniczny", "wiki": null},
+      {"kto": "Stefan Bryła", "rola": "projektant konstrukcji", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "według legendy zażądał budowy „bez kantów”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Funduszu Kwaterunku Wojskowego", "Kuźnie Saskie"],
+    "zrodla": [{"tytul": "Warszawikia: Dom Bez Kantów", "url": "https://warszawa.fandom.com/pl/wiki/Dom_Bez_Kantów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce. Nagłówek podaje dwa adresy: Królewska 2 (róg) i Krakowskie Przedmieście 11; wpisano pierwszy."
+  },
+  {
+    "id": "figura-sw-jana-nepomucena-senatorska-40",
+    "nazwa": "Figura św. Jana Nepomucena na Senatorskiej",
+    "name_en": "Statue of St. John of Nepomuk on Senatorska",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Senatorska 40",
+    "adres_historyczny": "przed bramą pałacu Mniszchów",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1733–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Figura pochodzi z 1733 roku i jest dziełem Giovanniego Liverottiego.",
+      "Ufundowali ją marszałek wielki koronny Józef Wandalin Mniszech i jego żona Konstancja z Tarłów.",
+      "Początkowo figura stała przed bramą do pałacu Mniszchów, w pobliżu dawnych wałów zygmuntowskich.",
+      "W 2004 roku figurę wyremontowano; podczas prac odkryto ołowianą tabliczkę fundacyjną, która pozwoliła skorygować datę z 1731 na 1733 rok.",
+      "Autorstwo podane na inskrypcji cokołu (Giovanni Cieverotti) różni się od ustaleń z tabliczki."
+    ],
+    "ciekawostki": [
+      "Jan Nepomucen był patronem wyruszających w podróż, więc żegnał wędrowców wychodzących wzdłuż Senatorskiej z Warszawy."
+    ],
+    "summary_en": "A statue of St. John of Nepomuk from 1733 in front of the building at Senatorska 40, originally placed at the gate of the Mniszech palace. A lead plaque found during the 2004 restoration confirmed the date and the sculptor.",
+    "ludzie": [
+      {"kto": "Giovanni Liverotti", "rola": "autor figury (wg tabliczki fundacyjnej)", "wiki": null},
+      {"kto": "Józef Wandalin Mniszech", "rola": "fundator figury", "wiki": null},
+      {"kto": "Konstancja z Tarłów", "rola": "fundatorka figury wraz z mężem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Figura św. Jana Nepomucena na Senatorskiej", "url": "https://warszawa.fandom.com/pl/wiki/Figura_św._Jana_Nepomucena_na_Senatorskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "focus-filtrowa",
+    "nazwa": "Focus Filtrowa",
+    "name_en": "Focus Filtrowa office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Armii Ludowej 26",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1997–2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biurowiec zaprojektowano w latach 1997–1998 w pracowni APA Kuryłowicz&Associates; głównym projektantem był Stefan Kuryłowicz.",
+      "Budynek oddano do użytku w 2001 roku.",
+      "Ma dwanaście kondygnacji nadziemnych, trzy podziemne, 49 metrów wysokości i 31 868 metrów kwadratowych powierzchni biurowej.",
+      "Fasada południowa ma dwuwarstwową ścianę kurtynową, za którą znajduje się czterokondygnacyjny ogród zimowy z widokiem na Pole Mokotowskie.",
+      "Wejście od strony ul. Filtrowej (nr 1)."
+    ],
+    "ciekawostki": [
+      "W filmie „Tylko mnie kochaj” w tym biurowcu mieści się biuro architektoniczne.",
+      "W odcinku serialu TVP „Bulionerzy” (2004) budynek przedstawiał siedzibę Bulionów Polskich."
+    ],
+    "summary_en": "A cube-shaped office building at Armii Ludowej 26, designed in 1997-1998 by Stefan Kuryłowicz's studio and opened in 2001. It has 31,868 m² of office space and a winter garden facing Pole Mokotowskie.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "główny projektant (APA Kuryłowicz&Associates)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Focus Filtrowa", "url": "https://warszawa.fandom.com/pl/wiki/Focus_Filtrowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  }
+]

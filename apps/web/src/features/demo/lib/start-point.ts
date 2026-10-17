@@ -1,5 +1,6 @@
 import { HACKATHON_VENUE, haversineM, type LatLng } from "@sawa/shared";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { type Lang, pick } from "@/features/i18n";
 
 /** Skąd rusza przejażdżka: z miejsca, gdzie jest telefon, albo spod 42 Warsaw (pokaz). */
 export type StartMode = "gps" | "venue";
@@ -52,20 +53,32 @@ export function resolveStart(
 }
 
 /** Podpis startu w menu i w zakładce Przejażdżki. */
-export function startLabel(status: StartStatus): string {
+export function startLabel(status: StartStatus, lang: Lang = "pl"): string {
   switch (status) {
     case "venue":
-      return "42 Warsaw (pokaz)";
+      return pick(lang, "42 Warsaw (pokaz)", "42 Warsaw (demo)");
     case "locating":
-      return "Szukam Cię… na razie 42 Warsaw";
+      return pick(lang, "Szukam Cię… na razie 42 Warsaw", "Finding you… 42 Warsaw for now");
     case "located":
-      return "Twoja lokalizacja";
+      return pick(lang, "Twoja lokalizacja", "Your location");
     case "denied":
-      return "Brak zgody na lokalizację, startuję spod 42 Warsaw";
+      return pick(
+        lang,
+        "Brak zgody na lokalizację, startuję spod 42 Warsaw",
+        "No location permission, starting from 42 Warsaw",
+      );
     case "unavailable":
-      return "Nie widzę lokalizacji, startuję spod 42 Warsaw";
+      return pick(
+        lang,
+        "Nie widzę lokalizacji, startuję spod 42 Warsaw",
+        "Can't see your location, starting from 42 Warsaw",
+      );
     case "outside":
-      return "Jesteś poza Warszawą, startuję spod 42 Warsaw";
+      return pick(
+        lang,
+        "Jesteś poza Warszawą, startuję spod 42 Warsaw",
+        "You're outside Warsaw, starting from 42 Warsaw",
+      );
   }
 }
 

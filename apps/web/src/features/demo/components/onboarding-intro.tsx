@@ -5,6 +5,7 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
+import { type Lang, useLang, useT } from "@/features/i18n";
 import { SPRING } from "../lib/device";
 import { Heading } from "./onboarding-heading";
 import { PrimaryButton } from "./primary-button";
@@ -23,16 +24,19 @@ function useRise() {
 
 export function Legend({ onNext }: IntroProps) {
   const rise = useRise();
+  const t = useT();
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
-      <Heading>Skąd moje imię?</Heading>
+      <Heading>{t("Skąd moje imię?", "Where does my name come from?")}</Heading>
 
       <div className="flex flex-col items-center gap-3 md:items-start">
-        <p className="sr-only">Wars plus Sawa to Warszawa.</p>
+        <p className="sr-only">
+          {t("Wars plus Sawa to Warszawa.", "Wars plus Sawa makes Warszawa.")}
+        </p>
         <div aria-hidden="true" className="flex w-full items-center gap-2.5 md:gap-3">
           <motion.div {...rise(0)} className="flex-1 rounded-3xl bg-powierzchnia p-4 md:p-5">
             <p className="text-2xl font-extrabold tracking-[-0.02em] md:text-3xl">Wars</p>
-            <p className="text-sm text-tekst-2">rybak</p>
+            <p className="text-sm text-tekst-2">{t("rybak", "a fisherman")}</p>
           </motion.div>
           <motion.span {...rise(1)} className="text-2xl font-extrabold text-tekst-3">
             +
@@ -44,7 +48,7 @@ export function Legend({ onNext }: IntroProps) {
             <p className="text-2xl font-extrabold tracking-[-0.02em] text-glebia md:text-3xl">
               Sawa
             </p>
-            <p className="text-sm text-tekst-2">syrena, czyli ja</p>
+            <p className="text-sm text-tekst-2">{t("syrena, czyli ja", "a mermaid, that's me")}</p>
           </motion.div>
         </div>
         <motion.p
@@ -58,14 +62,15 @@ export function Legend({ onNext }: IntroProps) {
       </div>
 
       <motion.p {...rise(4)} className="text-[15px] leading-relaxed text-tekst-2 md:text-lg">
-        Według legendy rybak Wars i syrena Sawa dali miastu imię. Syrena obiecała też bronić miasta,
-        dlatego w herbie Warszawy trzyma miecz i tarczę. Ja jestem tą samą syreną, tylko w
-        telefonie.
+        {t(
+          "Według legendy rybak Wars i syrena Sawa dali miastu imię. Syrena obiecała też bronić miasta, dlatego w herbie Warszawy trzyma miecz i tarczę. Ja jestem tą samą syreną, tylko w telefonie.",
+          "Legend has it that Wars the fisherman and Sawa the mermaid gave the city its name. The mermaid also promised to defend the city, which is why she holds a sword and shield in the Warsaw coat of arms. I'm that same mermaid, just in your phone.",
+        )}
       </motion.p>
 
       <div className="mt-auto md:mt-0">
         <PrimaryButton onClick={onNext} className="md:w-auto md:px-12">
-          Dalej
+          {t("Dalej", "Next")}
         </PrimaryButton>
       </div>
     </div>
@@ -82,7 +87,7 @@ type WhyCopy = {
 };
 
 // Ten sam ekran „co Ci da Sawa”, ale mówi do osoby, którą właśnie poznała (odpowiedź o znajomości miasta).
-const WHY: Record<string, WhyCopy> = {
+const WHY_PL: Record<string, WhyCopy> = {
   first_time: {
     title: "Pierwszy raz w Warszawie? Wsiadaj do tramwaju.",
     sub: "Bez planu zwiedzania i bez przewodnika w ręku.",
@@ -124,8 +129,61 @@ const WHY: Record<string, WhyCopy> = {
   },
 };
 
+const WHY_EN: Record<string, WhyCopy> = {
+  first_time: {
+    title: "First time in Warsaw? Hop on a tram.",
+    sub: "No sightseeing plan, no guidebook in hand.",
+    chips: [
+      { label: "Where am I?", known: false },
+      { label: "What happened here?", known: false },
+      { label: "What's next?", known: false },
+    ],
+    problem:
+      "From a tram window it's easy to see the city, but hard to understand what you're passing.",
+    promise:
+      "Sawa tells you about the key places on your route and what happened there. Background first, then the details.",
+  },
+  know_a_bit: {
+    title: "You know a few places. The rest is outside the window.",
+    sub: "The guidebook sights are just the beginning.",
+    chips: [
+      { label: "Old Town", known: true },
+      { label: "Palace of Culture", known: true },
+      { label: "the streets between?", known: false },
+    ],
+    problem:
+      "Between the famous places lies a whole city: tenements, murals, traces of factories and of the people who lived here.",
+    promise:
+      "Sawa mixes what you know with what nobody has told you. She talks on the way, so there's nothing to look for.",
+  },
+  local: {
+    title: "You live here, but know three places?",
+    sub: "Warsaw grows thanks to people who came here for work or to study.",
+    chips: [
+      { label: "Home", known: true },
+      { label: "Work", known: true },
+      { label: "Gym", known: true },
+      { label: "the rest of the city?", known: false },
+    ],
+    problem:
+      "Every day your tram passes tenements, murals and places where history happened. Nobody tells you about them, so you don't see them.",
+    promise:
+      "Sawa turns an ordinary ride into a story about the city you live in. To make it a little more yours.",
+  },
+};
+
+const WHY: Record<Lang, Record<string, WhyCopy>> = { pl: WHY_PL, en: WHY_EN };
+
 /** Gdy ktoś pominął pytanie o znajomość miasta. */
-const WHY_DEFAULT: WhyCopy = {
+const WHY_DEFAULT_EN: WhyCopy = {
+  title: "You pass history every day.",
+  chips: [],
+  problem:
+    "Outside the tram window there are tenements, murals and places where history happened. Nobody talks about them, so they go unseen.",
+  promise: "Sawa turns an ordinary ride into a story about the city you're passing.",
+};
+
+const WHY_DEFAULT_PL: WhyCopy = {
   title: "Mijasz historię każdego dnia.",
   chips: [],
   problem:
@@ -135,13 +193,18 @@ const WHY_DEFAULT: WhyCopy = {
 
 export function Why({ familiarity, onNext }: IntroProps & { familiarity: string | null }) {
   const rise = useRise();
-  const copy = WHY[familiarity ?? ""] ?? WHY_DEFAULT;
+  const t = useT();
+  const lang = useLang();
+  const copy = WHY[lang][familiarity ?? ""] ?? t(WHY_DEFAULT_PL, WHY_DEFAULT_EN);
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
       <Heading sub={copy.sub}>{copy.title}</Heading>
 
       {copy.chips.length > 0 && (
-        <ul className="flex flex-wrap gap-2" aria-label="Co znasz, a czego jeszcze nie">
+        <ul
+          className="flex flex-wrap gap-2"
+          aria-label={t("Co znasz, a czego jeszcze nie", "What you know and what you don't yet")}
+        >
           {copy.chips.map((chip, i) => (
             <motion.li
               key={chip.label}
@@ -182,14 +245,14 @@ export function Why({ familiarity, onNext }: IntroProps & { familiarity: string 
 
       <div className="mt-auto md:mt-0">
         <PrimaryButton onClick={onNext} className="md:w-auto md:px-12">
-          Jak to działa?
+          {t("Jak to działa?", "How does it work?")}
         </PrimaryButton>
       </div>
     </div>
   );
 }
 
-const HOW = [
+const HOW_PL = [
   {
     icon: "/onboarding/know_a_bit.webp",
     title: "Mówisz, ile masz czasu",
@@ -207,14 +270,33 @@ const HOW = [
   },
 ];
 
+const HOW_EN: typeof HOW_PL = [
+  {
+    icon: "/onboarding/know_a_bit.webp",
+    title: "You tell me how much time you have",
+    text: "From a few minutes to 4 hours. Come back to the same spot or ride to a destination.",
+  },
+  {
+    icon: "/onboarding/tram.webp",
+    title: "I plan the ride",
+    text: "Trams and buses from the ZTM timetable, with changes. You don't have to get off.",
+  },
+  {
+    icon: "/onboarding/sawa-sekret.webp",
+    title: "I tell you about what you pass",
+    text: "Out loud, like a podcast. Each story lasts about as long as the ride to the next place.",
+  },
+];
+
 export function How({ onNext }: IntroProps) {
   const rise = useRise();
+  const t = useT();
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
-      <Heading>Jak to działa</Heading>
+      <Heading>{t("Jak to działa", "How it works")}</Heading>
 
       <ol className="flex flex-col gap-2.5 md:gap-3">
-        {HOW.map((item, i) => (
+        {t(HOW_PL, HOW_EN).map((item, i) => (
           <motion.li
             key={item.title}
             {...rise(i)}
@@ -235,16 +317,18 @@ export function How({ onNext }: IntroProps) {
       </ol>
 
       <motion.p {...rise(3)} className="text-sm leading-relaxed text-tekst-3">
-        Miejsca i fakty biorę z otwartych danych Warszawy (dane.um.warszawa.pl) i OpenStreetMap.
-        Opowieść układa z nich model językowy, a czyta ją syntezator mowy.
+        {t(
+          "Miejsca i fakty biorę z otwartych danych Warszawy (dane.um.warszawa.pl) i OpenStreetMap. Opowieść układa z nich model językowy, a czyta ją syntezator mowy.",
+          "I take places and facts from Warsaw's open data (dane.um.warszawa.pl) and OpenStreetMap. A language model turns them into a story, and a speech synthesiser reads it out.",
+        )}
       </motion.p>
 
       <div className="mt-auto flex flex-col gap-3 md:mt-0 md:flex-row md:items-center md:gap-5">
         <PrimaryButton onClick={onNext} className="md:w-auto md:shrink-0 md:px-10">
-          Wybierzmy, o czym opowiem
+          {t("Wybierzmy, o czym opowiem", "Let's pick what I'll talk about")}
         </PrimaryButton>
         <p className="text-center text-sm text-tekst-3 md:whitespace-nowrap md:text-left">
-          jeszcze 2 pytania
+          {t("jeszcze 2 pytania", "2 more questions")}
         </p>
       </div>
     </div>

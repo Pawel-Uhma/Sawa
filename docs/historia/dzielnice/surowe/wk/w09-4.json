@@ -1,0 +1,43 @@
+[
+  {
+    "id": "pomnik-jozefa-poniatowskiego",
+    "nazwa": "Pomnik Józefa Poniatowskiego",
+    "name_en": "Józef Poniatowski Monument",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 46/48",
+    "adres_historyczny": "plac Saski (1923–1944)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1815–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomysł ustawienia pomnika Józefowi Poniatowskiemu narodził się w 1815 roku, kiedy zawiązał się komitet organizacyjny budowy pomnika.",
+      "Realizację powierzono Bertelowi Thorvaldsenowi, który w tym samym czasie realizował pomnik Mikołaja Kopernika.",
+      "W 1832 roku pomnik odlano w brązie w zakładzie Norblinów; cokół zaprojektował Józef Bojemski, a wykonał Adolf Szuch.",
+      "Po upadku powstania listopadowego car Mikołaj I nie wydał zgody na ustawienie pomnika przed pałacem Namiestnikowskim; odlew złożono dopiero w 1840 roku.",
+      "W 1842 roku pomnik przewieziono na dziedziniec pałacu Iwana Paskiewicza w Homlu.",
+      "Pomnik powrócił do Polski w 1922 roku; ustawiono go na placu Saskim i oficjalnie odsłonięto 3 maja 1923 roku.",
+      "Pomnik przetrwał do 1944 roku, kiedy 16 grudnia z rozkazu Ericha von dem Bacha został wysadzony w powietrze.",
+      "Nowy pomnik wykonał w latach 1948-1951 Paul Lauritz Rasmussen na podstawie zachowanego w Muzeum Thorvaldsena w Kopenhadze oryginalnego odlewu, będącego duńskim darem dla Warszawy.",
+      "W 1952 roku pomnik ustawiono przed Starą Pomarańczarnią w Łazienkach Królewskich; w 1965 roku przeniesiono go w pierwotnie przeznaczone miejsce przed pałacem Namiestnikowskim na Trakcie Królewskim."
+    ],
+    "ciekawostki": [
+      "Resztki przedwojennego pomnika odnaleziono w 1945 roku na terenie zakładów Lilpopa; dziś są eksponowane w Parku Wolności Muzeum Powstania Warszawskiego."
+    ],
+    "summary_en": "An equestrian monument to Prince Józef Poniatowski, designed by Bertel Thorvaldsen and first unveiled on plac Saski in 1923. It was blown up by the Germans in December 1944 and replaced by a Danish-made copy in 1965 at its original spot in front of the Namiestnikowski Palace, now the Presidential Palace.",
+    "ludzie": [
+      {"kto": "Bertel Thorvaldsen", "rola": "autor pomnika (realizacja z lat 20. XIX w.)", "wiki": null},
+      {"kto": "Józef Bojemski", "rola": "projektant cokołu (1832), wg źródła w innym miejscu jako Aleksander Bojemski", "wiki": null},
+      {"kto": "Adolf Szuch", "rola": "wykonawca cokołu", "wiki": null},
+      {"kto": "Iwan Paskiewicz", "rola": "przewiózł odlew do swojego pałacu w Homlu (1842)", "wiki": null},
+      {"kto": "Paul Lauritz Rasmussen", "rola": "autor kopii pomnika (1948-1951)", "wiki": null},
+      {"kto": "Erich von dem Bach", "rola": "wydał rozkaz wysadzenia pomnika w 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pomnik Józefa Poniatowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Józefa_Poniatowskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu (przed pałacem Prezydenckim, Krakowskie Przedmieście 46/48). Artykuł podaje autora cokołu raz jako Józef, raz jako Aleksander Bojemski - wpisano obie formy zgodnie ze źródłem."
+  }
+]

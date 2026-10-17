@@ -1,0 +1,496 @@
+[
+  {
+    "id": "szkola-religijna-pawia-51",
+    "nazwa": "Szkoła religijna przy ul. Pawiej 51",
+    "name_en": "Religious school at 51 Pawia Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Pawia 51",
+    "adres_historyczny": "ul. Pawia 51",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Pawiej 51 funkcjonowała trzyklasowa męska szkoła religijna z językami nauczania polskim i jidysz.",
+      "Szkoła wynajmowała 2 sale lekcyjne (68 m kw.), miała 5 nauczycieli i 74 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-grade boys' religious school with Polish and Yiddish as languages of instruction operated at 51 Pawia Street in the 1930/31 school year. It rented two classrooms, had five teachers and 74 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Pawiej 51 w Warszawie",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139094-szkola-religijna-przy-ul-pawiej-51-w-warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/31 r., więc wpisany też w adres_dzis (reguła). Dzielnica spoza tekstu (ogólna wiedza o ulicy), do sprawdzenia."
+  },
+  {
+    "id": "wiezienie-pawiak",
+    "nazwa": "Więzienie Pawiak",
+    "name_en": "Pawiak Prison",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzielna 24/26",
+    "adres_historyczny": "ul. Dzielna 24/26",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1830–po 1939",
+    "istnieje": null,
+    "fakty": [
+      "W dniu 6 lipca 1829 r. został zatwierdzony plan budowy autorstwa Henryka Marconiego, a dwa miesiące później rząd zakupił plac w obrębie ulic: Dzielnej, Ostrożnej i Pawiej.",
+      "Prace budowlane rozpoczęły się w 1830 r. i trwały z przerwami do 1834 roku. Pierwsi więźniowie zostali osadzeni rok później.",
+      "Pod koniec XIX w. zaanektowano pobliski gmach sądu, który nazwano „Serbią” (służył jako szpital podczas wojny serbskiej w latach 1877–1878); przystosowano go do więzienia około 250 kobiet.",
+      "Pierwszych więźniów Niemcy osadzili na Pawiaku już w pierwszych dniach października 1939 roku.",
+      "Jesienią 1940 r. Niemcy wysiedlili mieszkańców kilku pobliskich kamienic przy ul. Dzielnej.",
+      "Od 1942 roku, w wyniku zarządzenia Głównego Urzędu Bezpieczeństwa Rzeszy, więźniowie-Żydzi przekazani zostali do wyłącznej dyspozycji tzw. referatu żydowskiego w wydziale gestapo.",
+      "Po stłumieniu powstania w getcie (16 maja 1943 r.) Żydów ukrywających się po tzw. aryjskiej stronie wyłapywano i osadzano na Pawiaku jako anonimowych więźniów, w celach śmierci na oddziale VIII; egzekucje odbywały się niemal codziennie w ruinach getta."
+    ],
+    "ciekawostki": [
+      "Od nazwy ulicy Pawiej więzienie zaczęto określać jako „Pawiak”.",
+      "Cele dla Żydów przeznaczone na oddziale VIII miały nieotynkowane ściany i były pozbawione wszelkich sprzętów; służyły kiedyś jako pomieszczenia do przechowywania ziemniaków."
+    ],
+    "summary_en": "Pawiak was a prison built on Dzielna Street between 1830 and 1834 and named after Pawia Street. During the German occupation it held many Polish and Jewish prisoners, and Jewish inmates were handed over to a Gestapo unit from 1942. Mass executions took place there and in the ruins of the ghetto.",
+    "ludzie": [
+      {
+        "kto": "Henryk Marconi",
+        "rola": "autor planu budowy więzienia (zatwierdzonego w 1829 r.)",
+        "wiki": null
+      },
+      {
+        "kto": "Róża Luksemburg",
+        "rola": "więźniarka Pawiaka przed 1939 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Feliks Kon",
+        "rola": "więzień Pawiaka przed 1939 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Maksymilian Henryk Horwitz",
+        "rola": "więzień Pawiaka przed 1939 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Bronisław Grosser",
+        "rola": "więzień Pawiaka przed 1939 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Alfred Lampe",
+        "rola": "więzień Pawiaka przed 1939 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Paweł Finder",
+        "rola": "więzień Pawiaka przed 1939 r. (właśc. Pinkus Finder)",
+        "wiki": null
+      },
+      {
+        "kto": "Janusz Korczak",
+        "rola": "więzień Pawiaka w czasie okupacji",
+        "wiki": null
+      },
+      {
+        "kto": "Emanuel Ringelblum",
+        "rola": "więzień Pawiaka w czasie okupacji",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Więzienie Pawiak",
+      "„Pawiak”",
+      "„Serbia” (budynek dla kobiet)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Więzienie Pawiak (ul. Dzielna 24/26)",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52152-wiezienie-pawiak-ul-dzielna-2426"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres tylko z tytułu artykułu, wpisany w obu polach. Tekst nie mówi, czy budynek istnieje (istnieje: null). Dzielnica spoza tekstu (ogólna wiedza o ulicy Dzielnej), do sprawdzenia. Oba zdania o Żydach w tekście są cytatami z R. Domańskiej, zapisane jako fakty z przypisanym źródłem cytatu."
+  },
+  {
+    "id": "szkola-dla-nauczycieli-religii-mojzeszowej-geska-9",
+    "nazwa": "Szkoła Dla Nauczycieli Religii Mojżeszowej, ul. Gęsia 9",
+    "name_en": "Teachers' school of the Mosaic religion at 9 Gęsia Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Gęsia 9",
+    "adres_historyczny": "ul. Gęsia 9",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1937",
+    "istnieje": null,
+    "fakty": [
+      "W 1937 r. przy ul. Gęsiej 9 funkcjonowała szkoła religijna pod nazwą Dla Nauczycieli Religii Mojżeszowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1937 a religious school named for training teachers of the Mosaic religion operated at 9 Gęsia Street.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "ul. Gęsia"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Szkoła Dla Nauczycieli Religii Mojżeszowej w Warszawie",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139064-szkola-dla-nauczycieli-religii-mojzeszowej-w-warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1937 r. (ul. Gęsia), wpisany w obu polach. Dzielnica spoza tekstu (ogólna wiedza o ulicy), do sprawdzenia. Wpis z księgi adresowej (rok + adres)."
+  },
+  {
+    "id": "szkola-religijna-dzika-46-i",
+    "nazwa": "Szkoła religijna przy ul. Dzikiej 46 w Warszawie I",
+    "name_en": "Religious school at 46 Dzika Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzika 46",
+    "adres_historyczny": "ul. Dzika 46",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Dzikiej 46 funkcjonowała czteroklasowa męska szkoła religijna z językami nauczania polskim i hebrajskim.",
+      "Szkoła miała 4 sale lekcyjne, 4 nauczycieli i 79 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A four-grade boys' religious school with Polish and Hebrew instruction operated at 46 Dzika Street in 1930/31, with four classrooms, four teachers and 79 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Dzikiej 46 w Warszawie I",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138903-szkola-religijna-przy-ul-dzikiej-46-w-warszawie-i"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/31 r., wpisany w obu polach. Dzielnica spoza tekstu (ogólna wiedza o ulicy), do sprawdzenia."
+  },
+  {
+    "id": "szkola-powszechna-mila-51",
+    "nazwa": "Szkoła powszechna przy ul. Miłej 51",
+    "name_en": "Elementary school at 51 Miła Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miła 51",
+    "adres_historyczny": "ul. Miła 51",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Miłej 51 funkcjonowała ośmioklasowa żeńska szkoła powszechna z językiem nauczania jidysz oraz polskim jako nauczanym.",
+      "Szkoła wynajmowała 4 sale lekcyjne o łącznej powierzchni 238 m kw., miała 12 nauczycieli (w tym 2 na pełen etat) i 371 uczennic."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An eight-grade girls' elementary school with Yiddish as the language of instruction operated at 51 Miła Street in 1930/31. It rented four classrooms and had 371 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Szkoła powszechna przy ul. Miłej 51 w Warszawie",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138996-szkola-powszechna-przy-ul-milej-51-w-warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/31 r., wpisany w obu polach. Dzielnica spoza tekstu (ogólna wiedza o ulicy), do sprawdzenia."
+  },
+  {
+    "id": "szkola-religijna-krochmalna-7-i",
+    "nazwa": "Szkoła religijna przy ul. Krochmalnej 7 w Warszawie I",
+    "name_en": "Religious school at 7 Krochmalna Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krochmalna 7",
+    "adres_historyczny": "ul. Krochmalna 7",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Krochmalnej 7 funkcjonowała dwuklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła wynajmowała 2 sale lekcyjne (93 m kw.), miała 4 nauczycieli i 50 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-grade boys' religious school with Polish, Hebrew and Yiddish instruction operated at 7 Krochmalna Street in 1930/31, with 50 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Krochmalnej 7 w Warszawie I",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138980-szkola-religijna-przy-ul-krochmalnej-7-w-warszawie-i"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/31 r., wpisany w obu polach. Dzielnica spoza tekstu (ogólna wiedza o ulicy), do sprawdzenia."
+  },
+  {
+    "id": "gimnazjum-perly-zaksowej",
+    "nazwa": "Gimnazjum i Liceum Perły Zaksowej",
+    "name_en": "Perła Zaksowa Gymnasium and Lyceum",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Krasińskich 10",
+    "adres_historyczny": "pl. Krasińskich 10 (od 1936)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1891–około 1939",
+    "istnieje": false,
+    "fakty": [
+      "Szkoła założona w 1891 r. nosiła urzędowy nr 162.",
+      "W 1921 r. szkoła osiągnęła formę ośmioletniego gimnazjum.",
+      "Mieściła się przy ul. Miodowej 15 (1918–1922), Miodowej 21 (1923–1936), a na koniec przy pl. Krasińskich 10 (od 1936).",
+      "Dyrektorami byli Perła Zaksowa (do 1920) oraz Marian Tadeusz Lubecki (od 1921).",
+      "W 1926 r. było w niej 9 klas i 170 uczennic.",
+      "W roku szkolnym 1930/1931 miała 9 klas z 229 uczennicami, w tym 2 klasy przygotowawcze, 3 klasy ogólne niższe i pięć klas wyższych humanistycznych."
+    ],
+    "ciekawostki": [
+      "Szkoła miała charakter ośmioletniego, humanistycznego gimnazjum żeńskiego z polskim językiem wykładowym, mającego niepełne prawa gimnazjum państwowego."
+    ],
+    "summary_en": "A girls' humanistic gymnasium founded in 1891 with Polish as the language of instruction. It moved between several addresses on Miodowa Street and then to Krasiński Square from 1936, and was liquidated around 1939.",
+    "ludzie": [
+      {
+        "kto": "Perła Zaksowa",
+        "rola": "dyrektor szkoły (do 1920)",
+        "wiki": null
+      },
+      {
+        "kto": "Marian Tadeusz Lubecki",
+        "rola": "dyrektor szkoły (od 1921)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Szkoła nr 162 (urzędowy numer)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Gimnazjum i Liceum Perły Zaksowej w Warszawie",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138874-gimnazjum-i-liceum-perly-zaksowej-w-warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres nie jest w tekście: w adres_dzis wpisany ostatni adres szkoły z tekstu (reguła dla przedwojennych). Data likwidacji: około 1939 (stąd istnieje: false). Dzielnica spoza tekstu (ogólna wiedza o Miodowej i pl. Krasińskich), do sprawdzenia."
+  },
+  {
+    "id": "dom-modlitwy-kaylera",
+    "nazwa": "Dom modlitwy Kaylera",
+    "name_en": "Kayler's prayer house",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Olszowa 10 lub 12",
+    "adres_historyczny": "nr hip. 418",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1826–ostatnia ćwierć XIX w.",
+    "istnieje": false,
+    "fakty": [
+      "Dom modlitwy istniejący w obrębie nieruchomości pod nr hip. 418 został odnotowany w 1826 r.",
+      "Utrzymującym i przełożonym domu modlitwy był Chaim Hersz Kayler.",
+      "Dom modlitwy, mieszczący się zapewne w drewnianym obiekcie, miał tylko jedno pomieszczenie, przeznaczone dla 31 wiernych.",
+      "W ostatniej ćwierci XIX w. teren został zabudowany kamienicą Władysława Wendy (1875–1877), a następnie obiektami Wytwórni Mydła i Perfum Kwiecińskiego (1900)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A one-room wooden prayer house for 31 worshippers was recorded in 1826 at the property with mortgage number 418, led by Chaim Hersz Kayler. The site was built over in the late 19th century.",
+    "ludzie": [
+      {
+        "kto": "Chaim Hersz Kayler",
+        "rola": "utrzymujący i przełożony domu modlitwy",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "nieruchomość nr hip. 418"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Dom modlitwy Kaylera w Warszawie",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89712-dom-modlitwy-kaylera-w-warszawie"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Adres z tekstu: 'obecnie Olszowa 10 lub Olszowa 12' (zapis z książki z ok. 2007 r.), zapisany w adres_dzis. Dzielnica spoza tekstu (ogólna wiedza o ulicy Olszowej), niepewna, do sprawdzenia. Obiekt nie istnieje (Istnieje: Nie)."
+  },
+  {
+    "id": "pomnik-bohaterow-getta",
+    "nazwa": "Pomnik Bohaterów Getta",
+    "name_en": "Warsaw Ghetto Uprising Monument",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zamenhofa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1948–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy pomnik ku czci bohaterów getta warszawskiego odsłonięto w kwietniu 1946 roku; był bardzo skromny.",
+      "W lipcu 1946 r. powstała Komisja Budowy Pomnika w składzie: Adolf Berman, Icchak Cukierman i Bernard Falk.",
+      "Prace przygotowawcze rozpoczęto w 1947 r.; odsłonięto go 19 kwietnia 1948 r., podczas obchodów piątej rocznicy wybuchu powstania w getcie.",
+      "Dekorację rzeźbiarską zlecono Natanowi Rappaportowi, a za kształt architektoniczny odpowiadał inż. Leon Marek Suzin.",
+      "Pomnik ma 11 metrów wysokości i jest obłożony płytami z labradorytu z kamieniołomów w Hunnebostrand w Szwecji.",
+      "Kamień został zamówiony przez ministra gospodarki III Rzeszy Alberta Speera w 1942 r. jako materiał pod przyszłe pomniki zwycięstwa Hitlera.",
+      "Pomnik stoi w pobliżu miejsca pierwszego starcia bojówek żydowskich z hitlerowcami podczas powstania w getcie w 1943 r."
+    ],
+    "ciekawostki": [
+      "Odlewem rzeźby zajął się paryski warsztat Eugene’a Didiera.",
+      "Wewnątrz rzeźby stoi postać przywódcy powstania Mordechaja Anielewicza z granatem w lewej ręce."
+    ],
+    "summary_en": "The Warsaw Ghetto Uprising Monument on Zamenhof Street was unveiled on 19 April 1948, on the fifth anniversary of the uprising. It is 11 metres high and is faced with Swedish labradorite originally ordered by Albert Speer.",
+    "ludzie": [
+      {
+        "kto": "Adolf Berman",
+        "rola": "członek Komisji Budowy Pomnika (1946)",
+        "wiki": null
+      },
+      {
+        "kto": "Icchak Cukierman",
+        "rola": "członek Komisji Budowy Pomnika (1946)",
+        "wiki": null
+      },
+      {
+        "kto": "Bernard Falk",
+        "rola": "członek Komisji Budowy Pomnika (1946)",
+        "wiki": null
+      },
+      {
+        "kto": "Natan Rappaport",
+        "rola": "autor dekoracji rzeźbiarskiej pomnika",
+        "wiki": null
+      },
+      {
+        "kto": "Leon Marek Suzin",
+        "rola": "inżynier odpowiedzialny za kształt architektoniczny pomnika",
+        "wiki": null
+      },
+      {
+        "kto": "Albert Speer",
+        "rola": "minister gospodarki III Rzeszy, który zamówił kamień w 1942 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Mordechaj Anielewicz",
+        "rola": "przywódca powstania w getcie (postać na rzeźbie)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "ul. Zamenhofa"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Pomnik Bohaterów Getta w Warszawie (ul. Zamenhofa)",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52110-pomnik-bohaterow-getta-w-warszawie-ul-zamenhofa"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst nie podaje numeru; położenie: plac między ulicami Anielewicza (d. Gęsią), Karmelicką, Lewartowskiego (d. Wołyńską) i Zamenhofa. Dzielnica spoza tekstu (ogólna wiedza o miejscu), do sprawdzenia."
+  },
+  {
+    "id": "dom-modlitwy-zelaznej-bramy-10",
+    "nazwa": "Synagoga Jakuba Weissa w pałacu Lubomirskich (pl. Żelaznej Bramy 10)",
+    "name_en": "Jakub Weiss's synagogue in the Lubomirski Palace (10 Żelaznej Brama Square)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Żelaznej Bramy 10",
+    "adres_historyczny": "pl. Żelaznej Bramy 10 (nr hip. 957)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1872–ok. 1940",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga na Placu Żelaznej Bramy 10 (nr hip. 957) funkcjonowała według tekstu w latach 1872–1940(?).",
+      "Po zwolnieniu w 1872 r. Jakub Weiss zapewne założył własny dom modlitwy w pałacu Lubomirskich, w tzw. sali wiedeńskiej.",
+      "Sala mogła pomieścić kilkaset osób, a pod kolumnami portyku na tarasie pierwszego piętra odbywały się śluby.",
+      "W 1881 r. J. Weiss opublikował w Wiedniu zbiór utworów muzycznych „Ocar szirej jeszurun”.",
+      "Jakub Weiss przybył do Warszawy z Poznańskiego i w 1839 r. założył na Krochmalnej bejt ha-midrasz oraz Stowarzyszenie Talmudyczne Szas."
+    ],
+    "ciekawostki": [
+      "W 1877 r. w święta rosz-haszanowe kantor z Bukaresztu, p. Kopfer, intonował modły z przybranym chórem, a dyrektor opery Quatrini przez dwie godziny przysłuchiwał się modlitwie Musaf."
+    ],
+    "summary_en": "Jakub Weiss, a cantor and composer, ran a prayer house in a hall of the Lubomirski Palace on Żelazna Brama Square from around 1872. The space could hold several hundred people and was used for weddings.",
+    "ludzie": [
+      {
+        "kto": "Jakub Weiss",
+        "rola": "kantor, kompozytor i założyciel domu modlitwy (1816–1891)",
+        "wiki": null
+      },
+      {
+        "kto": "Kopfer",
+        "rola": "kantor z Bukaresztu, intonował modły w 1877 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Quatrini",
+        "rola": "dyrektor opery, uczestnik modlitwy w 1877 r.",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "sala wiedeńska w pałacu Lubomirskich"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Dom modlitwy przy Placu Żelaznej Bramy 10 w Warszawie",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89630-dom-modlitwy-przy-placu-zelaznej-bramy-10-w-warszawie"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Typ w nagłówku artykułu: mykwa, w tekście: synagoga/dom modlitwy. Adres z tytułu artykułu, wpisany w obu polach (przedwojenny, bo obiekt nie istnieje). Dzielnica spoza tekstu (ogólna wiedza o placu Żelaznej Bramy), do sprawdzenia."
+  },
+  {
+    "id": "szkola-religijna-mekler-mila-11",
+    "nazwa": "Szkoła religijna Meklera, ul. Miła 11",
+    "name_en": "Mekler's religious school at 11 Miła Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miła 11",
+    "adres_historyczny": "ul. Miła 11",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931–1937",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Miłej 11 funkcjonowała dwuklasowa męska szkoła religijna z językami nauczania polskim i hebrajskim, należąca do B. Meklera.",
+      "Szkoła wynajmowała 2 sale lekcyjne (82 m kw.), miała 4 nauczycieli (2 na pełen etat) i 40 uczniów.",
+      "W 1937 r. wyróżniano ją na tle innych szkół religijnych jako czteroklasową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-grade boys' religious school belonging to B. Mekler operated at 11 Miła Street in 1930/31, with 40 pupils. It was described as four-grade in 1937.",
+    "ludzie": [
+      {
+        "kto": "B. Mekler",
+        "rola": "właściciel szkoły religijnej przy ul. Miłej 11",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wirtualny Sztetl: Szkoła religijna Meklera w Warszawie",
+        "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138989-szkola-religijna-meklera-w-warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje adres z 1930/31 r., wpisany w obu polach. Dzielnica spoza tekstu (ogólna wiedza o ulicy Miłej), do sprawdzenia."
+  }
+]

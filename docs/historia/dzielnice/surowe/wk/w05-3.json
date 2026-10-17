@@ -1,0 +1,119 @@
+[
+  {
+    "id": "ulica-forteczna",
+    "nazwa": "Ulica Forteczna",
+    "name_en": "Forteczna Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Forteczna",
+    "adres_historyczny": null,
+    "lat": 52.2693358,
+    "lon": 20.9924385,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Forteczna ma 295 metrów długości i łączy ulice Kaniowską i Czarnieckiego.",
+      "Krzyżuje się jedynie z ulicą Śmiałą, tworząc plac Słoneczny.",
+      "Nazwa ulicy ma związek z sąsiedztwem Cytadeli.",
+      "Dom (segment) pod numerem 12 jest, wraz z ogrodem, wpisany do rejestru zabytków.",
+      "Przy Fortecznej 5 mieści się siedziba Stowarzyszenia Żoliborzan."
+    ],
+    "ciekawostki": [
+      "Przy Fortecznej 7 mieszkał Władysław Bortnowski, generał dywizji Wojska Polskiego.",
+      "W piwnicy domu przy Fortecznej 4 w latach 1940–1944 działała tajna radiostacja ZWZ-AK pod nazwą „Łódź Podwodna”."
+    ],
+    "summary_en": "Forteczna is a 295-metre street in Żoliborz, named after its proximity to the Citadel. It meets Śmiała street at the Słoneczny Square. The house at No. 4 held a secret ZWZ-AK radio station, „Łódź Podwodna”, from 1940 to 1944.",
+    "ludzie": [
+      {"kto": "Władysław Bortnowski", "rola": "generał dywizji Wojska Polskiego, mieszkał przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Forteczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Forteczna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "forteczna-4-radiostacja-lodz-podwodna",
+    "nazwa": "Radiostacja „Łódź Podwodna” przy ul. Fortecznej 4",
+    "name_en": "„Łódź Podwodna” secret radio station at Forteczna 4",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Forteczna 4",
+    "adres_historyczny": null,
+    "lat": 52.2693358,
+    "lon": 20.9924385,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1944",
+    "istnieje": true,
+    "fakty": [
+      "W piwnicy domu przy Fortecznej 4 w latach 1940–1944 działała tajna radiostacja ZWZ-AK pod nazwą „Łódź Podwodna”.",
+      "Radiostacją dowodził Stanisław Rodowicz.",
+      "W 1941 roku dom przeszukali Niemcy, ale nie odnaleźli radiostacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In the cellar of the house at Forteczna 4 the ZWZ-AK secret radio station „Łódź Podwodna” operated from 1940 to 1944. It was commanded by Stanisław Rodowicz. Germans searched the house in 1941 but did not find it.",
+    "ludzie": [
+      {"kto": "Stanisław Rodowicz", "rola": "dowódca radiostacji „Łódź Podwodna”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Forteczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Forteczna"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne ulicy (środek odcinka), nie budynku."
+  },
+  {
+    "id": "kosciol-sw-stanislawa-kostki-hozjusza-2",
+    "nazwa": "Kościół św. Stanisława Kostki",
+    "name_en": "St. Stanislaus Kostka Church",
+    "typ": "swiatynia",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Hozjusza 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1930 roku rozpoczęto budowę kościoła św. Stanisława Kostki na fragmencie terenu przy ulicy Hozjusza.",
+      "Około 1938 roku zabudowę przy ulicy uzupełniła plebania parafii św. Stanisława Kostki.",
+      "Przy ul. Hozjusza 2 znajdują się kościół, Dom Pielgrzyma Animus oraz Muzeum Sługi Bożego Księdza Jerzego Popiełuszki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St. Stanislaus Kostka Church at Hozjusza 2 in Stary Żoliborz was begun in 1930. The parish rectory followed around 1938. The complex also houses the Pilgrim House Animus and a museum dedicated to Father Jerzy Popiełuszko.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Hozjusza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Hozjusza"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w artykule o ulicy; adres z tekstu, do geokodowania. Rekord wydzielony z artykułu o ulicy."
+  },
+  {
+    "id": "ulica-kaniowska",
+    "nazwa": "Ulica Kaniowska",
+    "name_en": "Kaniowska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Kaniowska",
+    "adres_historyczny": null,
+    "lat": 52.2672739,
+    "lon": 20.9950324,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Kaniowska ma ponad 700 metrów długości i łączy ulice Mierosławskiego i Krasińskiego.",
+      "Krzyżuje się kolejno z ulicami Hauke-Bosaka i Forteczną, zamykając od północy teren wałów Cytadeli.",
+      "Nazwa pochodzi od Kaniowa, 25-tysięcznego miasta na Ukrainie, w obwodzie czerkaskim, nad Zbiornikiem Kaniowskim na Dnieprze.",
+      "Podczas I wojny światowej rozegrała się tam Bitwa pod Kaniowem."
+    ],
+    "ciekawostki": [
+      "Kaniowska 1 to zabytkowa willa, wybudowana w latach 20. XX wieku przez Kazimierza Tołłoczkę dla generała Józefa Hallera.",
+      "Kaniowska 21 to budynek wybudowany w 1973 roku przez architekta i szermierza Wojciecha Zabłockiego, przypominający swym wyglądem obiekt sportowy."
+    ],
+    "summary_en": "Kaniowska is a street of over 700 metres in Żoliborz, running from Mierosławskiego to Krasińskiego and closing the Citadel ramparts on the north. Its name comes from the Ukrainian town of Kaniv, where the Battle of Kaniv took place in World War I.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Kaniowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kaniowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  }
+]

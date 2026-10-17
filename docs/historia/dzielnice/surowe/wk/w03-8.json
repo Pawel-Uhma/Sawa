@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ulica-natalii",
+    "nazwa": "Ulica Natalii",
+    "name_en": "Natalii Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Natalii",
+    "adres_historyczny": null,
+    "lat": 52.2634231,
+    "lon": 20.8966143,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała pomiędzy lipcem a listopadem 1933 roku jako jedna z ulic nowo powstającego Osiedla Łączności Babice.",
+      "Początkowo stanowiła część ul. Telefonicznej; na mocy Uchwały nr 28 Rady Narodowej Miasta Stołecznego Warszawy z 24 listopada 1961 roku stała się odrębną ulicą.",
+      "Nazwa odnosi się do żeńskiego imienia Natalia.",
+      "Krzyżuje się z ul. Grotowską, ul. Bawełnianą, ul. Telefoniczną oraz ul. Kutrzeby; znajdują się przy niej domy jednorodzinne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential street of Boernerowo in Bemowo, built in 1933 as part of the Babice Communications Estate. It became a separate street in 1961 and is named after the female name Natalia.",
+    "ludzie": [],
+    "dawne_nazwy": ["część ul. Telefonicznej"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Natalii", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Natalii"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-olawska",
+    "nazwa": "Ulica Oławska",
+    "name_en": "Oławska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Oławska",
+    "adres_historyczny": null,
+    "lat": 52.2611519,
+    "lon": 20.9268647,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 80. XX wieku, kiedy zredukowano obszar lotniska Warszawa-Babice pod budowę pięciu osiedli mieszkaniowych.",
+      "Nazwę nadano Uchwałą nr 60 Rady Narodowej Miasta Stołecznego Warszawy z 22 lutego 1980 roku; odnosi się ona do miasta Oława na Dolnym Śląsku.",
+      "Jest jedną z ulic osiedla Bemowo IV, przy której mieszczą się trzy budynki, w tym miejscowa pływalnia „Pingwin”.",
+      "Od południa krzyżuje się z ul. Wolfkego, a od północy z ul. Piastów Śląskich."
+    ],
+    "ciekawostki": [
+      "Od ulicy odchodzą wejścia do rodzinnych ogródków działkowych „Bemowo” i „Lotnisko”."
+    ],
+    "summary_en": "A street of the Bemowo IV estate in Bemowo-Lotnisko, laid out in the 1980s when the Warsaw-Babice airport area was released for housing. It is named after the city of Oława in Lower Silesia and is home to the Pingwin swimming pool.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Oławska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Oławska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-podmiejska",
+    "nazwa": "Ulica Podmiejska",
+    "name_en": "Podmiejska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Podmiejska",
+    "adres_historyczny": null,
+    "lat": 52.2644983,
+    "lon": 20.9127887,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 90. XX wieku; nazwę nadano 26 stycznia 1993 roku.",
+      "Swoją nazwę zyskała ze względu na położenie na krańcu osiedla.",
+      "Jest jedną z ulic rejonu Bemowo-Lotnisko; krzyżuje się z ul. Ligonia i ul. Stellera, a przy niej znajdują się domy jednorodzinne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street on the edge of the Bemowo-Lotnisko estate, built in the 1990s. Its name, meaning 'suburban', refers to its position at the edge of the estate.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Podmiejska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Podmiejska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  }
+]

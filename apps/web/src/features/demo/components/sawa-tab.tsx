@@ -1,12 +1,13 @@
 "use client";
 
 import { useMemo } from "react";
+import { useLang, useT } from "@/features/i18n";
 import { formatWhen } from "../lib/format";
 import type { PlaceMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import type { StoryPlayer } from "../lib/story-player";
 import { FloatingCard, Grabber } from "./floating-card";
-import { PauseIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
+import { CloseIcon, PauseIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
 import { SawaHead } from "./logo";
 
 type SawaTabProps = {
@@ -20,6 +21,8 @@ type SawaTabProps = {
   places: Record<string, PlaceMemory>;
   onPrev: () => void;
   onNext: () => void;
+  /** Powrót na mapę (nie ma już paska zakładek). */
+  onClose: () => void;
 };
 
 /** Podgląd podcastu: co Sawa mówi teraz, sterowanie i lista miejsc, o których już opowiedziała. */
@@ -32,7 +35,10 @@ export function SawaTab({
   places,
   onPrev,
   onNext,
+  onClose,
 }: SawaTabProps) {
+  const t = useT();
+  const lang = useLang();
   const stop = stops[activeIndex];
   const hasPrev = activeIndex > 0;
   const hasNext = activeIndex < stops.length - 1;
@@ -41,14 +47,14 @@ export function SawaTab({
   const told = useMemo(() => Object.entries(places).sort(([, a], [, b]) => b.at - a.at), [places]);
 
   const status = !stop
-    ? "Ułóż trasę, to coś opowiem"
+    ? t("Ułóż trasę, to coś opowiem", "Plan a route and I'll tell you something")
     : player.loading
-      ? "Szykuje opowieść…"
+      ? t("Szykuje opowieść…", "Getting a story ready…")
       : player.failed
-        ? "Tym razem cisza"
+        ? t("Tym razem cisza", "Quiet this time")
         : player.isPlaying
-          ? "Opowiada"
-          : "Wstrzymana";
+          ? t("Opowiada", "Telling a story")
+          : t("Wstrzymana", "Paused");
 
   return (
     <FloatingCard
@@ -61,18 +67,29 @@ export function SawaTab({
       <Grabber />
       <div className="flex items-center gap-3">
         <SawaHead className="size-14" />
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <h2 className="text-[20px] font-extrabold leading-tight tracking-[-0.02em]">Sawa</h2>
           <p className="mt-0.5 text-sm font-semibold text-glebia">{status}</p>
         </div>
+        <button
+          type="button"
+          aria-label={t("Wróć do mapy", "Back to the map")}
+          onClick={onClose}
+          className="grid size-9 shrink-0 place-items-center self-start rounded-full bg-tekst/[0.06] text-tekst-2 transition-transform duration-100 active:scale-[0.92]"
+        >
+          <CloseIcon className="size-[18px]" />
+        </button>
       </div>
 
       <div className="flex max-h-[55vh] flex-col gap-5 overflow-y-auto overscroll-contain md:max-h-[70vh]">
         {stop && (
-          <section aria-label="Teraz opowiada" className="flex flex-col gap-3">
+          <section aria-label={t("Teraz opowiada", "Now telling")} className="flex flex-col gap-3">
             <div>
               <p className="etykieta">
-                Punkt {activeIndex + 1} z {stops.length} · po ok. {stop.etaMin} min
+                {t(
+                  `Punkt ${activeIndex + 1} z ${stops.length} · po ok. ${stop.etaMin} min`,
+                  `Stop ${activeIndex + 1} of ${stops.length} · after about ${stop.etaMin} min`,
+                )}
               </p>
               <h3 className="text-[17px] font-extrabold leading-snug tracking-[-0.01em]">
                 {stop.name}
@@ -93,13 +110,16 @@ export function SawaTab({
                     </span>
                   ))
                 : player.failed
-                  ? "Tym razem Sawa nic nie powie."
-                  : "Sawa przypomina sobie, co wie o tym miejscu…"}
+                  ? t("Tym razem Sawa nic nie powie.", "Sawa won't say anything this time.")
+                  : t(
+                      "Sawa przypomina sobie, co wie o tym miejscu…",
+                      "Sawa is recalling what she knows about this place…",
+                    )}
             </p>
 
             <div
               role="progressbar"
-              aria-label="Postęp opowieści"
+              aria-label={t("Postęp opowieści", "Story progress")}
               aria-valuemin={0}
               aria-valuemax={100}
               aria-valuenow={Math.round(player.progress)}
@@ -116,7 +136,7 @@ export function SawaTab({
                 type="button"
                 onClick={onPrev}
                 disabled={!hasPrev}
-                aria-label="Poprzedni punkt"
+                aria-label={t("Poprzedni punkt", "Previous stop")}
                 className="flex size-12 items-center justify-center rounded-full text-tekst transition-[transform,opacity,background-color] hover:bg-tlo-2 active:scale-[0.92] disabled:opacity-30"
               >
                 <SkipPrevIcon className="size-6" />
@@ -124,7 +144,7 @@ export function SawaTab({
               <button
                 type="button"
                 onClick={player.toggle}
-                aria-label={player.isPlaying ? "Pauza" : "Odtwarzaj"}
+                aria-label={player.isPlaying ? t("Pauza", "Pause") : t("Odtwarzaj", "Play")}
                 className="flex size-16 items-center justify-center rounded-full bg-glebia text-white shadow-[0_6px_16px_rgba(23,112,111,0.3)] transition-[transform,background-color] hover:bg-glebia-ciemna active:scale-[0.92]"
               >
                 {player.isPlaying ? (
@@ -137,7 +157,7 @@ export function SawaTab({
                 type="button"
                 onClick={onNext}
                 disabled={!hasNext}
-                aria-label="Następny punkt"
+                aria-label={t("Następny punkt", "Next stop")}
                 className="flex size-12 items-center justify-center rounded-full text-tekst transition-[transform,opacity,background-color] hover:bg-tlo-2 active:scale-[0.92] disabled:opacity-30"
               >
                 <SkipNextIcon className="size-6" />
@@ -150,16 +170,22 @@ export function SawaTab({
               disabled={!player.text}
               className="h-11 rounded-full bg-mieta-jasna text-sm font-bold text-glebia-ciemna transition-[transform,opacity] hover:bg-mieta active:scale-[0.97] disabled:opacity-40"
             >
-              Opowiedz więcej o tym miejscu
+              {t("Opowiedz więcej o tym miejscu", "Tell me more about this place")}
             </button>
           </section>
         )}
 
-        <section aria-label="Co już opowiedziała" className="flex flex-col gap-2">
-          <p className="etykieta">Co już opowiedziała</p>
+        <section
+          aria-label={t("Co już opowiedziała", "What she's told you")}
+          className="flex flex-col gap-2"
+        >
+          <p className="etykieta">{t("Co już opowiedziała", "What she's told you")}</p>
           {told.length === 0 ? (
             <p className="text-sm leading-snug text-tekst-2">
-              Po pierwszej opowieści zobaczysz tu miejsca, o których mówiła, i kiedy.
+              {t(
+                "Po pierwszej opowieści zobaczysz tu miejsca, o których mówiła, i kiedy.",
+                "After the first story you'll see here the places she talked about, and when.",
+              )}
             </p>
           ) : (
             <ul className="flex flex-col">
@@ -169,13 +195,13 @@ export function SawaTab({
                   className="flex items-center justify-between gap-3 border-t border-tlo-2 py-2.5 text-sm"
                 >
                   <span className="min-w-0 truncate font-semibold">
-                    {place.name ?? "Miejsce z trasy"}
+                    {place.name ?? t("Miejsce z trasy", "A place on the route")}
                   </span>
                   <time
                     dateTime={new Date(place.at).toISOString()}
                     className="shrink-0 text-tekst-3 tabular-nums"
                   >
-                    {formatWhen(place.at)}
+                    {formatWhen(place.at, Date.now(), lang)}
                   </time>
                 </li>
               ))}

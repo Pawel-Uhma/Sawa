@@ -1,0 +1,70 @@
+[
+  {
+    "id": "zabudowania-warszawskiej-fabryki-mebli-stylowych",
+    "nazwa": "Zabudowania Warszawskiej Fabryki Mebli Stylowych",
+    "name_en": "Buildings of the Warsaw Stylish Furniture Factory",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Dzielna 72",
+    "adres_historyczny": "Dzielna 72; Pawia 67",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1910–2010",
+    "istnieje": false,
+    "fakty": [
+      "Fabryka mebli Szczerbińskiego powstała w 1901 roku; w 1905 roku zakupiła posesje nr 64–72 przy ul. Dzielnej i zaczęła tu przenosić produkcję.",
+      "W 1914 roku zakład zatrudniał 400 pracowników; posiadał własną tkalnię, oddział projektowy i rzeźbiarzy.",
+      "Podczas powstania warszawskiego, w dniach 1–6 sierpnia 1944 roku, mieściła się tu Kwatera Główna Armii Krajowej oraz Delegatury Rządu na Kraj.",
+      "6 sierpnia kwatera ewakuowała się do szkoły przy Barokowej 5; w wyniku walk zabudowania uległy częściowemu zniszczeniu.",
+      "W 1945 roku budynki przekształcono dla zakładów Zelmed; w 1985 roku budynek został opuszczony.",
+      "Pod koniec kwietnia 2010 roku właściciel terenu rozpoczął wyburzanie; 4 maja wstrzymano prace, fasadę wpisano do rejestru zabytków 10 maja, a 17 maja rozebrano pozostałości do poziomu parteru.",
+      "W miejscu budynku powstała inwestycja Kamienica Muranów; budowę prowadzono w latach 2014–2016."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The former Warsaw Stylish Furniture Factory buildings at 72 Dzielna Street, with a plot also at Pawia 67 in Wola. The site was the headquarters of the Home Army and the Delegation of the Government in the Warsaw Uprising's first days. The buildings were demolished in May 2010, despite protests, and replaced by the Kamienica Muranów development.",
+    "ludzie": [
+      {"kto": "Tadeusz Komorowski „Bór”", "rola": "generał, przywódca AK; stacjonował tu w sierpniu 1944 roku", "wiki": null},
+      {"kto": "Jan Stanisław Jankowski", "rola": "stacjonował tu podczas powstania warszawskiego (sierpień 1944)", "wiki": null},
+      {"kto": "Kazimierz Pużak", "rola": "stacjonował tu podczas powstania warszawskiego (sierpień 1944)", "wiki": null},
+      {"kto": "Barbara Jezierska", "rola": "wojewódzka konserwator zabytków; wydała nakaz wstrzymania prac w 2010 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Fabryka Mebli Szczerbińskiego", "Fabryka Leopolda Kamlera", "Zakład Aparatury Medyczno-Leczniczej Zelmed"],
+    "zrodla": [{"tytul": "Warszawikia: Zabudowania Warszawskiej Fabryki Mebli Stylowych", "url": "https://warszawa.fandom.com/pl/wiki/Zabudowania_Warszawskiej_Fabryki_Mebli_Stylowych"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z tekstu artykułu. Źródło podaje dwie wersje daty budowy budynku administracyjnego: ok. 1910 i 1933."
+  },
+  {
+    "id": "lucka-city",
+    "nazwa": "Łucka City",
+    "name_en": "Łucka City",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Łucka 15",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2000–2004",
+    "istnieje": true,
+    "fakty": [
+      "Łucka City to wieżowiec mieszkalny na Woli, przy ul. Łuckiej 15; ma 127 m wysokości, 106 m do dachu i 30 kondygnacji nadziemnych.",
+      "Budowę rozpoczęła w 2000 roku firma J.W. Construction Holding S.A.; ukończono ją w listopadzie 2004 roku.",
+      "Po ukończeniu był najwyższym budynkiem mieszkalnym w Polsce; tę pozycję utrzymał do lutego 2009 roku, gdy oddano wyższy o ponad 20 metrów Sea Towers w Gdyni.",
+      "W latach 2007–2011 przy południowej ścianie szczytowej wybudowano biurowiec Prosta Tower projektu Stefana Kuryłowicza.",
+      "W budynku znajduje się 342 mieszkania o powierzchni od 37 do 243 m²; kolejne pięć pięter zajmują biura i sklepy.",
+      "Budynek ma sześć szybkobieżnych wind, monitoring, basen i fitness club."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Łucka City, a 127 m residential tower at 15 Łucka Street in Wola, built by J.W. Construction Holding in 2000–2004. It was Poland's tallest residential building until 2009 and has 342 flats.",
+    "ludzie": [
+      {"kto": "Maria Berko-Haas", "rola": "projektantka budynku", "wiki": null},
+      {"kto": "Marek Sędzierski", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Stefan Kuryłowicz", "rola": "projektant biurowca Prosta Tower przy południowej ścianie wieżowca", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Łucka City", "url": "https://warszawa.fandom.com/pl/wiki/Łucka_City"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle; adres z tekstu artykułu."
+  }
+]

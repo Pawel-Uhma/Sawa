@@ -1,9 +1,16 @@
 // Anti-corruption layer: GeoJSON from docs/historia (Polish keys) → rows of public.places
 // and public.place_photos. Pure functions, no IO.
 
-import { INTERESTS, type Interest, PLACE_TAGS, type PlaceTag } from "@sawa/shared";
+import {
+  INTERESTS,
+  type Interest,
+  PLACE_TAGS,
+  type PlaceSubkind,
+  type PlaceTag,
+} from "@sawa/shared";
 import { z } from "zod";
 import { assignInterests } from "./interests";
+import { assignSubkind } from "./subkind";
 
 /** Stored in places.interests: detailed tags, plus category names a source gives directly (a museum is `cultural`). */
 const STORED_TAGS = [...PLACE_TAGS, ...INTERESTS] as const;
@@ -88,6 +95,7 @@ export type PlaceRow = {
   name: string;
   name_en: string | null;
   kind: string;
+  subkind: PlaceSubkind;
   geom: string; // EWKT
   address_today: string | null;
   address_historic: string | null;
@@ -129,6 +137,15 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
   if (!kind) throw new Error(`Unknown typ "${p.typ}" in ${p.id}`);
 
   const trivia = p.ciekawostki ?? [];
+  const interests = withTags(
+    assignInterests({
+      kind,
+      name: p.nazwa,
+      text: [p.nazwa, ...p.fakty, ...trivia].join(" "),
+      hasPeople: (p.ludzie ?? []).length > 0,
+    }),
+    p.tagi ?? [],
+  );
   const people = (p.ludzie ?? []).map((x) => ({
     name: x.kto,
     role: x.rola,
@@ -140,6 +157,7 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
     name: p.nazwa,
     name_en: p.name_en ?? null,
     kind,
+    subkind: assignSubkind({ kind, name: p.nazwa, tags: interests }),
     geom: `SRID=4326;POINT(${lng} ${lat})`,
     address_today: p.adres_dzis ?? null,
     address_historic: p.adres_historyczny ?? null,
@@ -165,15 +183,7 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
       googleMapsUrl: x.google_maps,
       placeId: x.place_id,
     })),
-    interests: withTags(
-      assignInterests({
-        kind,
-        name: p.nazwa,
-        text: [p.nazwa, ...p.fakty, ...trivia].join(" "),
-        hasPeople: people.length > 0,
-      }),
-      p.tagi ?? [],
-    ),
+    interests,
     confidence: (p.pewnosc && CONFIDENCE[p.pewnosc]) ?? null,
     location_precision: (p.lokalizacja && PRECISION[p.lokalizacja]) ?? null,
     origin: p.zrodlo_rekordu ?? "curated",

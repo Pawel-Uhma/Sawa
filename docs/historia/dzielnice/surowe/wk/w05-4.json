@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ulica-kokarda",
+    "nazwa": "Ulica Kokarda",
+    "name_en": "Kokarda Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Kokarda",
+    "adres_historyczny": null,
+    "lat": 52.2609171,
+    "lon": 20.9915806,
+    "lokalizacja": "przyblizona",
+    "okres": "2000–2011",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Kokarda biegnie bez przecznic od ul. Zajączka do ul. Rydygiera i ma 130 metrów długości.",
+      "Nazwę ulica otrzymała 31 stycznia 1969 roku, przed jej zbudowaniem; znajdowała się w planach już w latach 50. XX wieku.",
+      "Do końca XX wieku na terenie zajmowanym dziś przez ulicę znajdowały się zakłady przemysłowe.",
+      "Pierwszy, 80-metrowy odcinek od ul. Zajączka, kończący się ślepo, zrealizowano w latach 2000–2001 wraz z budową Żoliborz Plaza (Zajączka 9/9a).",
+      "Kolejny odcinek powstał w 2011 roku przy budowie budynku mieszkalnego firmy Skanska (Zajączka 9b), tworząc dzisiejszy kształt ulicy."
+    ],
+    "ciekawostki": [
+      "Często za część ulicy Kokarda uważa się przedłużenie ul. Rydygiera na południe i na wschód wzdłuż torów; w rzeczywistości jest to część ul. Rydygiera."
+    ],
+    "summary_en": "Kokarda is a 130-metre street in Żoliborz running from Zajączka to Rydygiera streets. It received its name in 1969 but was built only in 2000–2011, on the site of former industrial plants.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Kokarda", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kokarda"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres z infoboksu (2000–2011). Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-krechowiecka",
+    "nazwa": "Ulica Krechowiecka",
+    "name_en": "Krechowiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Krechowiecka",
+    "adres_historyczny": null,
+    "lat": 52.2700887,
+    "lon": 20.9795083,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Krechowiecka ma ponad 270 metrów długości i jest ciągiem pieszo-rowerowym na Żoliborzu.",
+      "Biegnie od skrzyżowania ul. Sierpeckiej z Sarmatów, przecina ul. Słowackiego i kończy się na pl. Lelewela.",
+      "W latach 1953–1961 ulica nosiła nazwę Malarska, a w latach 1961–1991 nazwę Stanisława Skrypija.",
+      "Nazwa pochodzi od wsi Krechowce niedaleko Stanisławowa, gdzie 24 lipca 1917 roku 1. pułk ułanów Legionów Pułaskiego stoczył bitwę z oddziałami niemieckimi."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Krechowiecka is a pedestrian and bicycle path of over 270 metres in Żoliborz, running from Sierpecka and Sarmatów to Plac Lelewela. It is named after the village of Krechowce, where Pułaski's Legion cavalry fought on 24 July 1917.",
+    "ludzie": [],
+    "dawne_nazwy": ["Malarska (1953–1961)", "Stanisława Skrypija (1961–1991)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Krechowiecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Krechowiecka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "sawa-pitch-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture": "node capture.mjs",
+    "studio": "remotion studio",
+    "render": "remotion render SawaDemo out/sawa-demo.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.536",
+    "@remotion/google-fonts": "^4.0.536",
+    "@remotion/media-utils": "^4.0.536",
+    "@types/react": "^18.3.31",
+    "playwright": "^1.49.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.536",
+    "typescript": "^7.0.2"
+  }
+}

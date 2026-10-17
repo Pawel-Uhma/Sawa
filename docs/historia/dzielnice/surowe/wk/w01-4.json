@@ -1,0 +1,204 @@
+[
+  {
+    "id": "palacyk-boguslawskiego",
+    "nazwa": "Pałacyk Bogusławskiego",
+    "name_en": "Bogusławski Palace",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Żelazna 97",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1791–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1791 roku Wojciech Bogusławski kupił plac pod budowę pałacu, która zakończyła się w 1807 roku.",
+      "Budowla stała między dwiema parterowymi oficynami; jedna mieściła mieszkania, druga wozownie i stajnie.",
+      "W 1825 roku budynek kupił architekt Karol Henryk Gall; od 1862 roku właścicielem był ks. Julian Feliński, który założył tu ochronkę prowadzoną przez Zgromadzenie Sióstr Franciszkanek Rodziny Marii.",
+      "W 1863 roku na dziedzińcu postawiono rzeźbę Matki Boskiej wykonaną przez Andrzeja Pruszyńskiego.",
+      "Podczas okupacji przy pałacyku przebiegał mur getta; siostry zakonne niosły przez niego stałą pomoc żydowskim dzieciom.",
+      "W czasie powstania warszawskiego oddziały niemieckie dokonały dużych zniszczeń; po wojnie pałacyk odbudowano w stylu klasycystycznym.",
+      "W 2007 roku na dziedzińcu odsłonięto pomnik założyciela zgromadzenia, Zygmunta Szczęsnego Felińskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Bogusławski Palace at Żelazna 97 in Wola was built between 1791 and 1807 for Wojciech Bogusławski. It later housed a nursery run by the Sisters of the Family of Mary, helped Jewish children from behind the ghetto wall, and was rebuilt in classicist style after the war.",
+    "ludzie": [
+      {"kto": "Wojciech Bogusławski", "rola": "inwestor, który kupił plac i zlecił budowę pałacu (1791)", "wiki": null},
+      {"kto": "Karol Henryk Gall", "rola": "architekt, właściciel od 1825 roku", "wiki": null},
+      {"kto": "Julian Feliński", "rola": "ksiądz, właściciel od 1862 roku, założyciel ochronki", "wiki": null},
+      {"kto": "Andrzej Pruszyński", "rola": "autor rzeźby Matki Boskiej na dziedzińcu (1863)", "wiki": null},
+      {"kto": "Zygmunt Szczęsny Feliński", "rola": "założyciel Zgromadzenia Sióstr Franciszkanek Rodziny Marii", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pałacyk Bogusławskiego", "url": "https://warszawa.fandom.com/pl/wiki/Pałacyk_Bogusławskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ulicy Żelaznej 97”). Artykuł przypuszcza, że architektem mógł być Bonawentura Solari (nieustalone)."
+  },
+  {
+    "id": "pekao-tower",
+    "nazwa": "Pekao Tower",
+    "name_en": "Pekao Tower",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Grzybowska 53",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1991–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec powstał w latach 1991–1993 według projektu chorwackiego architekta Miljenko Dumencicia.",
+      "Był pierwszym nowoczesnym budynkiem biurowym i wieżowcem w tej okolicy.",
+      "Ma 85 metrów wysokości całkowitej, 80 metrów do dachu i 20 kondygnacji nadziemnych.",
+      "Na dachu umieszczono charakterystyczne logo banku z żubrem, a na elewacji napis z nazwą banku.",
+      "Budynek jest główną siedzibą banku PEKAO S.A."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Pekao Tower at Grzybowska 53 in Wola, designed by Croatian architect Miljenko Dumencić, was built in 1991–1993. At 85 metres it was one of the first modern office towers in the area and is the headquarters of Bank Pekao.",
+    "ludzie": [
+      {"kto": "Miljenko Dumencić", "rola": "chorwacki architekt, autor projektu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pekao Tower", "url": "https://warszawa.fandom.com/pl/wiki/Pekao_Tower"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („adres: ul. Grzybowska 53”, w opisie: Grzybowskiej 53/57)."
+  },
+  {
+    "id": "kosciol-sw-karola-boromeusza",
+    "nazwa": "Kościół św. Karola Boromeusza",
+    "name_en": "Church of St. Charles Borromeo",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "Chłodna 21",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1841–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na miejscu dawnego Placu pod Lwem w 1841 roku rozpoczęto budowę kościoła.",
+      "Do 1849 roku powstał tu kościół św. Karola Boromeusza w stylu neorenesansowym, według projektu Henryka Marconiego.",
+      "Wraz z ukończeniem kościoła przestano nazywać to miejsce placem pod Lwem.",
+      "Kościół jest kościołem parafialnym parafii św. Andrzeja Apostoła."
+    ],
+    "ciekawostki": [
+      "Nazwa placu pochodziła od herbu Łada z lwem, widniejącego na kamienicy Bazylego Walickiego, wojewody rawskiego, na rogu ulic Chłodnej i Żelaznej."
+    ],
+    "summary_en": "The neo-Renaissance Church of St. Charles Borromeo at Chłodna 21 was built from 1841 to 1849 on the site of the former Plac pod Lwem, to a design by Henryk Marconi. It is the parish church of St. Andrew the Apostle.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "autor projektu kościoła", "wiki": null}
+    ],
+    "dawne_nazwy": ["Plac pod Lwem"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Plac pod Lwem", "url": "https://warszawa.fandom.com/pl/wiki/Plac_pod_Lwem"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord powstał z artykułu Plac pod Lwem (budowa kościoła, projekt). Adres Chłodna 21 pochodzi z artykułów Mirów i Parafia św. Andrzeja Apostoła w tej samej paczce. Brak współrzędnych; lat/lon null."
+  },
+  {
+    "id": "pomnik-hugona-kollataja",
+    "nazwa": "Pomnik Hugona Kołłątaja",
+    "name_en": "Monument to Hugo Kołłątaj",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "Ożarowska 69",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1967–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik stoi przed Szkołą Podstawową nr 148 im. Hugona Kołłątaja przy ul. Ożarowskiej 69 na Kole.",
+      "Szkole nadano imię 4 września 1965 roku.",
+      "W 1967 roku komitet rodzicielski ufundował szkole pomnik-popiersie patrona; autorem popiersia jest rzeźbiarz Ferdynand Jarocha.",
+      "Uroczyste odsłonięcie pomnika nastąpiło 11 listopada 1970 roku.",
+      "Przez wiele lat pomnik stał na otoczonym budynkami szkolnym boisku i był słabo widoczny; obecnie przeniesiono go przed główne wejście do szkoły.",
+      "Popiersie stoi na dwustopniowej podstawie o wysokości ponad czterech metrów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The monument to Hugo Kołłątaj stands in front of Primary School No. 148 at Ożarowska 69 in Koło. The bust by Ferdynand Jarocha was unveiled in 1970 and later moved from the school playground to the main entrance.",
+    "ludzie": [
+      {"kto": "Hugo Kołłątaj", "rola": "patron szkoły, ksiądz, reformator oświaty i twórca Konstytucji 3 Maja", "wiki": null},
+      {"kto": "Ferdynand Jarocha", "rola": "rzeźbiarz, autor popiersia", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Hugona Kołłątaja", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Hugona_Kołłątaja"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (SP 148, ul. Ożarowska 69)."
+  },
+  {
+    "id": "pomnik-krystiana-ulricha",
+    "nazwa": "Pomnik Krystiana Ulricha",
+    "name_en": "Monument to Krystian Ulrich",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "Górczewska 124",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1876–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik znajduje się w Parku Ulricha przed centrum handlowym Wola Park, przy ul. Górczewskiej 124.",
+      "Ma formę obelisku z popiersiem Jana Krystiana Ulricha, inicjatora przeniesienia gospodarstwa ogrodniczego Ulrichów do Górców-Ulrychowa.",
+      "Pomnik ustawiono w 1876 roku.",
+      "W 2003 roku z fundacji Mennicy Państwowej w Gliwickich Zakładach Urządzeń Technicznych odlano nowy pomnik; oryginał trafił do Muzeum Woli."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Krystian Ulrich monument in Ulrich Park at Górczewska 124 in Wola is an obelisk with a bust of Jan Krystian Ulrich, who initiated the move of the Ulrich family's nursery to Ulrychów. It was erected in 1876 and recast in 2003.",
+    "ludzie": [
+      {"kto": "Jan Krystian Ulrich", "rola": "inicjator przeniesienia gospodarstwa ogrodniczego Ulrichów do Ulrychowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Krystiana Ulricha", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Krystiana_Ulricha"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (ul. Górczewska 124)."
+  },
+  {
+    "id": "pomnik-marcina-kasprzaka",
+    "nazwa": "Pomnik Marcina Kasprzaka",
+    "name_en": "Monument to Marcin Kasprzak",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "Kasprzaka 18/20",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik stoi przy ul. Kasprzaka, na terenie dawnych zabudowań Warszawskich Zakładów Radiowych im. M. Kasprzaka (nr 18/20), które dziś są biurowcami.",
+      "Składa się z brązowego popiersia i granitowego cokołu; całość ma około 5 metrów wysokości, a napis brzmi „Marcin Kasprzak 1860 – 1905”.",
+      "Pomnik wzniesiono z inicjatywy załogi zakładów; w 1974 roku powołano Społeczny Komitet Budowy Pomnika.",
+      "W kwietniu 1975 roku komitet zatwierdził projekt rzeźbiarza Edmunda Matuszka; popiersie odlano w Warszawskich Zakładach Mechanicznych im. Marcelego Nowotki.",
+      "Odsłonięcie nastąpiło 25 listopada 1975 roku, przed wejściem do zakładu przy ul. Kasprzaka.",
+      "Do końca lat 90. XX wieku popiersie było dobrze widoczne z ulicy; po przekształceniu zakładów w biurowce pomnik stracił na znaczeniu i nie rzuca się w oczy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The monument to Marcin Kasprzak on Kasprzaka Street in Wola is a bronze bust on a granite plinth, unveiled in 1975 by the workers of the Warsaw Radio Works named after him. It is now largely overshadowed by the office buildings that replaced the factory.",
+    "ludzie": [
+      {"kto": "Marcin Kasprzak", "rola": "rewolucjonista i działacz ruchu robotniczego (1860–1905), patron zakładów", "wiki": null},
+      {"kto": "Edmund Matuszek", "rola": "rzeźbiarz, autor projektu pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Marcina Kasprzaka", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Marcina_Kasprzaka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu: pomnik przy ul. Kasprzaka, na terenie dawnych zakładów (nr 18/20)."
+  }
+]

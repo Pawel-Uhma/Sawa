@@ -1,4 +1,5 @@
 import type { Leg } from "@sawa/shared";
+import { type Lang, pick } from "@/features/i18n";
 
 // Rozkład ZTM jest w czasie warszawskim, niezależnie od strefy telefonu
 const CLOCK = new Intl.DateTimeFormat("pl-PL", {
@@ -16,18 +17,21 @@ export type DepartureLabel = {
 };
 
 /** Godzina odjazdu odcinka komunikacją, jak w #44. `departAt` już uwzględnia `delaySec`. */
-export function departureLabel(leg: Pick<Leg, "departAt" | "realDeparture" | "delaySec">) {
+export function departureLabel(
+  leg: Pick<Leg, "departAt" | "realDeparture" | "delaySec">,
+  lang: Lang = "pl",
+) {
   const clock = CLOCK.format(new Date(leg.departAt));
   return {
-    time: leg.realDeparture ? clock : `ok. ${clock}`,
-    delay: delayLabel(leg.delaySec),
+    time: leg.realDeparture ? clock : `${pick(lang, "ok.", "approx.")} ${clock}`,
+    delay: delayLabel(leg.delaySec, lang),
     isLate: (leg.delaySec ?? 0) >= 60,
   } satisfies DepartureLabel;
 }
 
-function delayLabel(delaySec: number | undefined): string | null {
+function delayLabel(delaySec: number | undefined, lang: Lang): string | null {
   if (delaySec === undefined) return null;
   const min = Math.round(delaySec / 60);
-  if (min === 0) return "na czas";
-  return min > 0 ? `+${min} min` : `${-min} min wcześniej`;
+  if (min === 0) return pick(lang, "na czas", "on time");
+  return min > 0 ? `+${min} min` : `${-min} ${pick(lang, "min wcześniej", "min early")}`;
 }

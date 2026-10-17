@@ -1,0 +1,690 @@
+[
+  {
+    "id": "kamienica-prazmowskich",
+    "nazwa": "Kamienica Prażmowskich",
+    "name_en": "Prażmowski tenement house (Dom Literatury)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 87",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1660–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona około 1660 roku dla Joachima Pastoriusa, lekarza i historiografa królewskiego.",
+      "W 1666 roku nieruchomość przeszła na własność Mikołaja Prażmowskiego, kanclerza wielkiego koronnego oraz prymasa Polski, od którego kamienica wzięła nazwę.",
+      "W 1754 roku przeprowadzono gruntowną przebudowę według projektu Jakuba Fontany, nadając budynkowi formę rokokowego pałacyku.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku budynek został spalony.",
+      "Odbudowę przeprowadzono w latach 1948–1949 według projektu Zygmunta Stępińskiego, przywracając wygląd z końca XVIII wieku; w latach 2002–2003 obiekt poddano kompleksowej restauracji.",
+      "Obecnie kamienica jest połączona z sąsiednią kamienicą Johna i stanowi siedzibę Domu Literatury."
+    ],
+    "ciekawostki": [
+      "Nad wejściem znajduje się jedna z dwóch zachowanych i odtworzonych po II wojnie światowej w Warszawie tablic libertacyjnych."
+    ],
+    "summary_en": "A rococo-classicist building at Krakowskie Przedmieście 87, first built around 1660 for physician Joachim Pastorius and named after Mikołaj Prażmowski. It was burned in 1939, rebuilt in 1948–1949, and now houses the House of Literature.",
+    "ludzie": [
+      {"kto": "Joachim Pastorius", "rola": "lekarz i historiograf królewski, pierwszy inwestor", "wiki": null},
+      {"kto": "Mikołaj Prażmowski", "rola": "kanclerz wielki koronny i prymas Polski, właściciel od 1666 roku", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projektant przebudowy w 1754 roku", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projektant odbudowy w 1948–1949 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Pastoriusa", "Kamienica Leszczyńskich", "Kamienica Rautenstrauchów", "Kamienica Dobrycza"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Prażmowskich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Prażmowskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z lidu artykułu. Artykuł znajdował się w paczce przy granicy rozdziału, zapisany w części 4."
+  },
+  {
+    "id": "kamienica-prochnickich",
+    "nazwa": "Kamienica Próchnickich",
+    "name_en": "Próchnicki tenement house (Koszykowa 70)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Koszykowa 70",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w latach 1913–14 według projektu Mariana Kontkiewicza.",
+      "Przetrwała II wojnę światową, ale dziś jest pozbawiona ostatniego piętra oraz zdobień, które usunięto podczas remontu w latach 60.",
+      "W latach 1922–23 mieszkał w niej marszałek Józef Piłsudski; tablica pamiątkowa została odsłonięta 12 maja 2006 roku.",
+      "W okresie okupacji mieszkał i działał tu Norbert Barlicki, działacz i przywódca PPS, zamordowany 27 września 1941 roku w obozie koncentracyjnym w Oświęcimiu.",
+      "Tablicę upamiętniającą Barlickiego wmurowano w ścianę kamienicy w 1957 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1913–14 tenement at the corner of Koszykowa 70 and Emilii Plater, designed by Marian Kontkiewicz. Józef Piłsudski lived here in 1922–23, and PPS leader Norbert Barlicki lived and worked here during the occupation.",
+    "ludzie": [
+      {"kto": "Marian Kontkiewicz", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "marszałek, mieszkaniec w latach 1922–23", "wiki": null},
+      {"kto": "Norbert Barlicki", "rola": "działacz i przywódca PPS, mieszkaniec w okupacji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Próchnickich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Próchnickich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (róg Emilii Plater)."
+  },
+  {
+    "id": "kamienica-rodryga-mroczkowskiego",
+    "nazwa": "Kamienica Rodryga Mroczkowskiego",
+    "name_en": "Mroczkowski tenement house (Krakowiacy i Górale)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Mokotowska 57",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została zbudowana w latach 1900–1904 według projektu Zygmunta Binduchowskiego dla Rodryga Mroczkowskiego.",
+      "Jest trzypiętrowa, dziesięcioosiowa, z bogatą eklektyczną dekoracją; cztery figury atlantów w strojach Krakowiaków i Górali dźwigają dwukondygnacyjne loggie balkonowe.",
+      "W czasie powstania warszawskiego mieścił się tu szpital polowy; kamienica nie została zniszczona podczas II wojny światowej.",
+      "30 stycznia 2013 roku anarchiści z grupy 15w08 zdewastowali czerwoną farbą witryny sklepu, niszcząc także elewację i figury atlantów.",
+      "W planach jest generalny remont wraz z nadbudową o dwie kondygnacje; projekt opracowała pracownia Anny Rostkowskiej."
+    ],
+    "ciekawostki": [
+      "Kamienica znana jest też pod nazwą „Krakowiacy i Górale”."
+    ],
+    "summary_en": "An eclectic three-storey building at Mokotowska 57, built in 1900–1904 to a design by Zygmunt Binduchowski. Its four atlas figures in Kraków and highland costume give it the nickname 'Krakowiacy and Górale'.",
+    "ludzie": [
+      {"kto": "Zygmunt Binduchowski", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Rodryg Mroczkowski", "rola": "inwestor", "wiki": null},
+      {"kto": "Anna Rostkowska", "rola": "pracownia projektu planowanej nadbudowy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Krakowiacy i Górale"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Rodryga Mroczkowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Rodryga_Mroczkowskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-rotbarda",
+    "nazwa": "Kamienica Rotbarda",
+    "name_en": "Rotbard tenement house (Marszałkowska 19)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 19",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w latach 1909–1913 według projektu Henryka Stifelmana i Stanisława Weissa jako jedna z dwóch symetrycznych kamienic u wylotu planowanej ulicy Oleandrów.",
+      "Druga z nich, pod numerem 21, nie dotrwała do naszych czasów.",
+      "Kamienica została mocno uszkodzona podczas II wojny światowej i odbudowana z licznymi zmianami w zewnętrznym wystroju.",
+      "Po odbudowie obniżono ją do pięciu pięter z szóstą, cofniętą kondygnacją, a skrzydło od strony ul. Oleandrów do trzech kondygnacji.",
+      "W budynku mieści się Dom Kultury Śródmieście."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An early-modernist corner building at Marszałkowska 19 and Oleandrów, designed in 1909–1913 by Henryk Stifelman and Stanisław Weiss. Badly damaged in the war, it was rebuilt with socialist-realist touches and now houses a culture centre.",
+    "ludzie": [
+      {"kto": "Henryk Stifelman", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Stanisław Weiss", "rola": "projektant kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Rotbarda Marszałkowska 19", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Rotbarda_Marszałkowska_19"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (na rogu z Oleandrów)."
+  },
+  {
+    "id": "kamienica-smolna-3",
+    "nazwa": "Kamienica Smolna 3",
+    "name_en": "Smolna 3 tenement house (Traugutt arrest; demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Dolna Smolna 3",
+    "adres_historyczny": "Smolna 3",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1828–lata 50. XX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica powstała około 1828 roku na parceli Jana Alfonsa Jasińskiego, sięgającej wówczas aż do Nowego Światu.",
+      "Przez pewien czas w oficynie mieszkał Romuald Traugutt (pod pseudonimem „Michał Czarnecki”), przywódca powstania styczniowego.",
+      "Traugutt został tu aresztowany w godzinę po północy 11 kwietnia 1864 roku; wydarzenie upamiętnia kamień pamiątkowy na terenie Muzeum Wojska Polskiego.",
+      "W 1866 roku budynek wynajęła Warszawska Szkoła Weterynarii, której uczniem był Stefan Żeromski.",
+      "W 1902 roku kamienicę przebudowano według projektu inż. Paszkiewicza oraz Edwarda Świecimskiego, nadbudowując dwa piętra.",
+      "Kamienica została zniszczona podczas II wojny światowej; ruiny rozebrano w latach 50. XX wieku w związku z organizacją Centralnego Parku Kultury."
+    ],
+    "ciekawostki": [
+      "Dziś na tym terenie znajduje się Park im. Rydza-Śmigłego, u podnóża Muzeum Wojska Polskiego."
+    ],
+    "summary_en": "A house at Dolna Smolna 3 in Solec, built around 1828. Romuald Traugutt was arrested here in April 1864, and the ruins were cleared in the 1950s to make room for the Central Park of Culture.",
+    "ludzie": [
+      {"kto": "Romuald Traugutt", "rola": "przywódca powstania styczniowego, aresztowany w tym budynku", "wiki": null},
+      {"kto": "Jan Alfons Jasiński", "rola": "właściciel parceli (ok. 1828)", "wiki": null},
+      {"kto": "Stefan Żeromski", "rola": "uczeń Warszawskiej Szkoły Weterynarii w tym budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Smolna 3", "Dolna Smolna 3"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Smolna 3", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Smolna_3"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku. Kamienicy już nie ma; okres końcowy podano z tekstu („w latach 50.”)."
+  },
+  {
+    "id": "kamienica-smolna-36",
+    "nazwa": "Kamienica Smolna 36",
+    "name_en": "Smolna 36 tenement house (Kamienica Branickich)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Smolna 36",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1901–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w latach 1901–1903 według projektu Bronisława Brochwicz-Rogóyskiego w miejscu rozparcelowanych ogrodów pałacu Branickich.",
+      "Pierwotnie była trzypiętrowa i symetryczna względem sąsiedniej kamienicy nr 38.",
+      "Podczas II wojny światowej została wypalona i znacznie uszkodzona; zawalone ostatnie piętro nie zostało odbudowane, bo od lat 60. planowano przedłużenie ul. Kopernika do pl. Trzech Krzyży.",
+      "W kamienicy mieszkała pisarka Jadwiga Waydel-Dmochowska, autorka pamiętników warszawskich z przełomu XIX i XX wieku.",
+      "W 1950 roku przeniesiono tu przedwojenną pracownię rzeźbiarza Karola Tchorka; dzięki staraniom rodziny obiekt wpisano do rejestru zabytków jako pracownię rzeźbiarską K. Tchorka.",
+      "Obecnie działa tu Bocheńska Grota Solna oraz klub Minus Club & Lounge Club."
+    ],
+    "ciekawostki": [
+      "Kamienica nazywana bywa Kamienicą Branickich."
+    ],
+    "summary_en": "A tenement at Smolna 36, built in 1901–1903 on former Branicki palace gardens. Its top floor was lost in the war and never rebuilt, and it houses the studio of sculptor Karol Tchorek.",
+    "ludzie": [
+      {"kto": "Bronisław Brochwicz-Rogóyski", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Jadwiga Waydel-Dmochowska", "rola": "pisarka, mieszkanka kamienicy", "wiki": null},
+      {"kto": "Karol Tchorek", "rola": "rzeźbiarz, pracownia w oficynie (mieszkanie 10a)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Branickich"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Smolna 36", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Smolna_36"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-stanislawa-zamoyskiego",
+    "nazwa": "Kamienica Stanisława Zamoyskiego",
+    "name_en": "Stanisław Zamoyski tenement house (Hotel Mazowiecki)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Mazowiecka 10",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1862–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w latach 1862–1863 według projektu Henryka Marconiego dla hrabiego Stanisława Zamoyskiego, prezesa spółki Żeglugi Parowej.",
+      "Była pierwszym tak wysokim budynkiem przy ul. Mazowieckiej i jednym z ostatnich dzieł Marconiego.",
+      "W kamienicy mieścił się zakład fotograficzny „Phot. Art. L. Kowalski”.",
+      "W czasie okupacji niemieckiej wprowadziła się tu aktorka Hanka Ordonówna, a potem aktor Igo Sym, volksdeutsch.",
+      "Igo Sym został skazany przez polskie podziemie na karę śmierci, wykonaną w jego mieszkaniu w tej kamienicy 7 marca 1941 roku.",
+      "Podczas powstania warszawskiego kamienica została mocno zniszczona; w 1946 roku ruiny rozebrano do parteru i odbudowano w uproszczonym kształcie jako Hotel Garnizonowy nr 1."
+    ],
+    "ciekawostki": [
+      "Juliusz Wiktor Gomulicki, varsavianista, często odwiedzał kamienicę za młodu, gdy chodził tu na prywatne korepetycje."
+    ],
+    "summary_en": "A neo-Renaissance tenement at Mazowiecka 10, built in 1862–1863 by Henryk Marconi for Count Stanisław Zamoyski. After the war it was rebuilt as a garrison hotel, and it is now the Hotel Mazowiecki.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant kamienicy (1862–1863)", "wiki": null},
+      {"kto": "Stanisław Zamoyski", "rola": "hrabia, prezes spółki Żeglugi Parowej, inwestor", "wiki": null},
+      {"kto": "Hanka Ordonówna", "rola": "aktorka, mieszkanka w okupacji", "wiki": null},
+      {"kto": "Igo Sym", "rola": "aktor volksdeutsch, skazany na śmierć przez podziemie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Garnizonowy nr 1"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Stanisława Zamoyskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Stanisława_Zamoyskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-szymborskich",
+    "nazwa": "Kamienica Szymborskich",
+    "name_en": "Szymborski tenement house (Mokotowska 39)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Mokotowska 39",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1882–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie stał tu eklektyczny pałacyk wybudowany w 1882 roku przez przedsiębiorcę budowlanego Apolinarego Szymborskiego.",
+      "W 1902 roku powstała pięciokondygnacyjna kamienica zaprojektowana przez Juliana Dzierżanowskiego, w stylu mieszanki secesji i eklektyzmu.",
+      "Inwestorami kamienicy byli Apolinary oraz Cecylia Szymborscy.",
+      "W 1914 roku obiekt przeszedł w ręce Stanisława Kopcia, który pozostał jego właścicielem do 1956 roku.",
+      "W latach 50. XX wieku przeprowadzono remont, usuwając wystrój elewacji frontowej; wkrótce potem budynek odebrano właścicielowi i przekazano na mieszkania komunalne.",
+      "W 1994 roku w parterze otwarto salon „Fukier Decoration”, zaprojektowany przez pracownię Bogusławski-Jankowski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-storey tenement at Mokotowska 39 with an Art Nouveau-Eclectic front, built in 1902 by Julian Dzierżanowski on the site of an 1882 palace of Apolinary Szymborski.",
+    "ludzie": [
+      {"kto": "Apolinary Szymborski", "rola": "przedsiębiorca budowlany, inwestor pałacyku i kamienicy", "wiki": null},
+      {"kto": "Cecylia Szymborska", "rola": "inwestorka kamienicy", "wiki": null},
+      {"kto": "Julian Dzierżanowski", "rola": "projektant kamienicy (1902)", "wiki": null},
+      {"kto": "Stanisław Kopeć", "rola": "właściciel 1914–1956", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Szymborskich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Szymborskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje, że budynek jest trzypiętrowy z poddaszem, a we wstępie pięciokondygnacyjny w 1902 roku; zapisano opis z historii."
+  },
+  {
+    "id": "kamienica-towarzystwa-kredytowego-miejskiego",
+    "nazwa": "Kamienica Towarzystwa Kredytowego Miejskiego",
+    "name_en": "Municipal Credit Society building (Bank Pekao)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Tadeusza Czackiego 21/23/25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1878–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek na potrzeby Towarzystwa Kredytowego Miejskiego, utworzonego w 1870 roku, powstał w latach 1878–1880 według projektu Józefa Ankiewicza.",
+      "W latach 1883–1894 został rozbudowany i przedłużony według projektu Juliana Ankiewicza; uważano go za jeden z najpiękniejszych budynków w ówczesnej Warszawie.",
+      "Około 1910 roku Towarzystwo wykupiło kamienice nr 21 i 23, wyburzyło je i w latach 1911–1913 wzniosło nowe skrzydła według projektu Władysława Marconiego.",
+      "Budynek został uszkodzony w 1944 roku i odremontowany w latach 1949–1954 według projektu Zbigniewa Karpińskiego oraz Tadeusza Zielińskiego, bez odtworzenia rzeźb w parterze.",
+      "Na głównym ryzalicie znajduje się rzeźbiony tympanon przedstawiający Dobrobyt z 1912 roku, z napisem „Bank Polska Kasa Opieki SA”.",
+      "Obecnie budynek należy do Banku Pekao S.A.; w 2012 roku rozpoczął się remont elewacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A historicist building at Tadeusza Czackiego 21/23/25, built in 1878–1880 for the Municipal Credit Society and extended in the 1880s and 1910s. It is now owned by Bank Pekao S.A.",
+    "ludzie": [
+      {"kto": "Józef Ankiewicz", "rola": "projektant budynku (1878–1880)", "wiki": null},
+      {"kto": "Julian Ankiewicz", "rola": "projektant rozbudowy (1883–1894)", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "projektant nowych skrzydeł (1911–1913)", "wiki": null},
+      {"kto": "Zbigniew Karpiński", "rola": "projektant odbudowy (1949–1954)", "wiki": null},
+      {"kto": "Tadeusz Zieliński", "rola": "projektant odbudowy (1949–1954)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Towarzystwo Kredytowe Miejskie"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Towarzystwa Kredytowego Miejskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Towarzystwa_Kredytowego_Miejskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-ubezpieczalni-spolecznej",
+    "nazwa": "Kamienica Ubezpieczalni Społecznej",
+    "name_en": "Social Insurance Office building (Kasa Chorych)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Mariańska 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1924–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1924–1925 według projektu Henryka Juliana Gaya w stylu modernistycznym, z detalem rzeźbiarskim Zygmunta Otto; wzniosła go firma Bracia Horn i Rupiewicz s-ka.",
+      "W budynku znalazła się Kasa Chorych m.st. Warszawy i apteka; w latach 30. XX wieku pracował w niej Janusz Korczak.",
+      "Podczas okupacji budynek znalazł się w granicach getta i mieścił Żydowską Szkołę Pielęgniarek prowadzoną przez Lubę Blum-Bielicką.",
+      "Podczas powstania warszawskiego znajdował się tu szpital powstańczy; od ran zmarł w nim 4 sierpnia Zygmunt Hempel „Łukasz”.",
+      "W 1975 roku kamienicę uratowano wpisem do rejestru zabytków, choć groziło jej wyburzenie w związku z planami budowy Zachodniego Centrum Warszawy.",
+      "Dziś mieści się tu Niepubliczny Zakład Opieki Zdrowotnej Przychodnia Specjalistyczna Falck."
+    ],
+    "ciekawostki": [
+      "Na budynku umieszczona jest tablica upamiętniająca Lubę Blum-Bielicką, która prowadziła tu w latach 1940–1942 Żydowską Szkołę Pielęgniarek."
+    ],
+    "summary_en": "A modernist corner building at Mariańska 1, built in 1924–1925 for the Warsaw Sickness Fund by Henryk Julian Gay. It housed a Jewish nursing school in the occupation and is now a private clinic.",
+    "ludzie": [
+      {"kto": "Henryk Julian Gay", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Zygmunt Otto", "rola": "autor detalu rzeźbiarskiego", "wiki": null},
+      {"kto": "Janusz Korczak", "rola": "pracował w Kasie Chorych w latach 30.", "wiki": null},
+      {"kto": "Luba Blum-Bielicka", "rola": "prowadziła Żydowską Szkołę Pielęgniarek w latach 1940–1942", "wiki": null},
+      {"kto": "Zygmunt Hempel", "rola": "pseudonim „Łukasz”, zmarł od ran w szpitalu powstańczym", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Kasy Chorych"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Ubezpieczalni Społecznej", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Ubezpieczalni_Społecznej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-wawrzynca-watrobowicza",
+    "nazwa": "Kamienica Wawrzyńca Wątrobowicza",
+    "name_en": "Wawrzyniec Wątrobowicz tenement house, Freta 30",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Freta 30",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1750–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w połowie XVIII wieku, najprawdopodobniej na zamówienie Wawrzyńca Wątrobowicza.",
+      "Jest jednopiętrowa, późnobarokowa i stanowi jedyny na ulicy Freta przykład architektury dworkowej.",
+      "Do czasów wojny słynęła ze wspaniałych, okutych barokowych okiennic.",
+      "Po II wojnie światowej kamienicę odbudowano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A one-storey late-baroque manor-style house at Freta 30 in Nowe Miasto, built in the mid-18th century. It is the only manor-style building on Freta and was rebuilt after the war.",
+    "ludzie": [
+      {"kto": "Wawrzyniec Wątrobowicz", "rola": "prawdopodobny zleceniodawca kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Wawrzyńca Wątrobowicza", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Wawrzyńca_Wątrobowicza"}],
+    "pewnosc": "średnia",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Dokładna data budowy w tekście to „połowa XVIII wieku”."
+  },
+  {
+    "id": "kamienica-wincentego-bednarskiego",
+    "nazwa": "Kamienica Wincentego Bednarskiego",
+    "name_en": "Wincenty Bednarski tenement house (Bednarska 21)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Bednarska 21",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1827–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wybudowano w 1827 roku według projektu Adolfa Szucha jako dwupiętrowy, późnoklasycystyczny budynek z parą kolumn jońskich wielkiego porządku na osi.",
+      "Oficynami szczelnie obudowano podwórko; był to jeden z pierwszych przykładów takiego zamkniętego układu w historii miasta.",
+      "W okresie międzywojennym mieściły się tu składy rzeźniczy oraz zegarmistrzowski.",
+      "Kamienica została kompletnie spalona w 1944 roku; odbudowano ją w latach 1949–1951 w ramach Kolonii Mariensztat, bez oficyn.",
+      "Decyzją z 1 lipca 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A late-classicist tenement at Bednarska 21, built in 1827 to a design by Adolf Szuch with a closed courtyard of wings. It was burned in 1944 and rebuilt in 1949–1951 as part of the Mariensztat colony.",
+    "ludzie": [
+      {"kto": "Adolf Szuch", "rola": "projektant kamienicy (1827)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Wincentego Bednarskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Wincentego_Bednarskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-witolda-lanciego",
+    "nazwa": "Kamienica Witolda Lanciego",
+    "name_en": "Witold Lancia tenement house (IKP offices; demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 11/19",
+    "adres_historyczny": "Aleje Jerozolimskie 9 (przedwojenna numeracja)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–1944",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica powstała w 1877 roku jako trzypiętrowa, zaprojektowana przez Witolda Lanciego; z czasem rozbudowano ją o oficyny w podwórku.",
+      "Na parterze działało biuro i sklep przedsiębiorstwa „Towarzystwo Akcyjne Zakładów Elektrotechnicznych inżynier Kazimierz Patzer” (IKP).",
+      "Kamienicę spalono w sierpniu 1944 roku podczas powstania warszawskiego; mieszkańcy ocaleli dzięki zapobiegliwości Kazimierza Patzera.",
+      "Dawni właściciele częściowo odbudowali lokal, ale w wyniku nacjonalizacji został im odebrany; kamienicę wkrótce rozebrano."
+    ],
+    "ciekawostki": [
+      "W latach 90. XX wieku w miejscu biur IKP mieścił się sklep Benetton, potem salon Era, obecnie Ambra."
+    ],
+    "summary_en": "A three-storey 1877 building on Aleje Jerozolimskie, designed by Witold Lancia. It burned during the Warsaw Uprising and was demolished after nationalisation; a postwar block now stands on the site.",
+    "ludzie": [
+      {"kto": "Witold Lancia", "rola": "projektant kamienicy (1877)", "wiki": null},
+      {"kto": "Kazimierz Patzer", "rola": "inżynier, założyciel firmy IKP, ocalił mieszkańców w 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Aleje Jerozolimskie 9"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Witolda Lanciego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Witolda_Lanciego"}],
+    "pewnosc": "średnia",
+    "uwagi": "Brak współrzędnych w nagłówku. Adres dzisiejszy z tekstu („blok nr 11/19”); adres historyczny Aleje Jerozolimskie 9 wg przedwojennej numeracji."
+  },
+  {
+    "id": "kamienica-wladyslawa-lawrynowicza",
+    "nazwa": "Kamienica Władysława Ławrynowicza",
+    "name_en": "Władysław Ławrynowicz tenement house (Kamienica Portera)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 22",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1895–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona w 1895 roku według projektu Józefa Piusa Dziekońskiego.",
+      "Jej fasada, inspirowana architekturą pałaców weneckich, w szczególności Palazzo Ca d'Oro, ma charakter neogotycki.",
+      "Całość wykonano z cegły z Zakładów K. Granzowa w Kawęczynie.",
+      "Kamienica przetrwała II wojnę światową bez większych zniszczeń; w 1993 roku została odrestaurowana.",
+      "Dziś jest siedzibą Polskiego Towarzystwa Lekarskiego i Naczelnej Izby Pielęgniarek i Położnych."
+    ],
+    "ciekawostki": [
+      "Sklepione krzyżowo przejście na podwórze zagradza ręcznie kuta krata z zachowanym podpisem zakładu, w którym została wykonana."
+    ],
+    "summary_en": "A neo-Gothic brick building at Aleje Ujazdowskie 22, designed in 1895 by Józef Pius Dziekoński with Venetian-palace inspiration. It survived the war largely intact and is now the seat of the Polish Medical Society.",
+    "ludzie": [
+      {"kto": "Józef Pius Dziekoński", "rola": "projektant kamienicy (1895)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Portera"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Władysława Ławrynowicza", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Władysława_Ławrynowicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-zambonich",
+    "nazwa": "Kamienica braci Zambonich",
+    "name_en": "Zamboni brothers tenement house (Marszałkowska 127; demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 127",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1893–1945",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica wybudowana w latach 1893–1894 według projektu Józefa Piusa Dziekońskiego dla cukiernika Jakuba Zamboniego była neogotycka.",
+      "Pod jej budowę wyburzono wcześniejszy dworek „Pod Filarkami” Antoniego Małachowskiego.",
+      "W 1904 roku do kamienicy przeniosły się zakłady cegielniane Granzowa z Kawęczyna.",
+      "W kamienicy działało wiele cukierni, m.in. Lourse’a, a po 1918 roku Jana Liedtke.",
+      "Kamienica została zniszczona podczas II wojny światowej i nie została odbudowana."
+    ],
+    "ciekawostki": [
+      "Dziś w jej miejscu znajduje się blaszany budynek KDT."
+    ],
+    "summary_en": "A neo-Gothic building at Marszałkowska 127, opposite ul. Moniuszki, built in 1893–1894 for the confectioner Jakub Zamboni. It was destroyed in the Second World War and not rebuilt.",
+    "ludzie": [
+      {"kto": "Józef Pius Dziekoński", "rola": "projektant kamienicy (1893–1894)", "wiki": null},
+      {"kto": "Jakub Zamboni", "rola": "cukiernik, inwestor kamienicy", "wiki": null},
+      {"kto": "Antoni Małachowski", "rola": "właściciel wcześniejszego dworku „Pod Filarkami”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dworek „Pod Filarkami”"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica braci Zambonich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Zambonich"}],
+    "pewnosc": "średnia",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł nie podaje roku zniszczenia; okres końcowy 1945 to przybliżenie (koniec wojny)."
+  },
+  {
+    "id": "kamienica-zielna-37",
+    "nazwa": "Kamienica Cedergrena",
+    "name_en": "Cedergren building, Zielna 37",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Zielna 37",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wybudowana w 1904 roku według projektu Izaaka Gustafa Classona i Bronisława Brochwicz-Rogóyskiego dla Towarzystwa Telefonicznego „Cedergren”, które w 1900 roku wygrało przetarg na obsługę warszawskiej sieci telefonicznej.",
+      "Sześciopiętrowy gmach mieścił na ostatnim piętrze centralę telefoniczną.",
+      "W 1907 roku Towarzystwo zbudowało obok nowy gmach, gotowy do 1910 roku; oba budynki przejęła w 1922 roku Polska Akcyjna Spółka Telefoniczna.",
+      "Budynek znacznie ucierpiał podczas powstania warszawskiego i został odbudowany bez ostatniej kondygnacji; w 2005 roku ją odtworzono.",
+      "Dziś mieszczą się tu Centrum Konferencyjne Zielna, Instytut Austriacki oraz John Bull Pub."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A six-storey telephone-company building at Zielna 37, built in 1904 for the Cedergren company, which ran Warsaw's telephone network. Damaged in 1944, it regained its top floor in 2005 and now houses a conference centre and the Austrian Institute.",
+    "ludzie": [
+      {"kto": "Izaak Gustaf Classon", "rola": "projektant kamienicy (1904)", "wiki": null},
+      {"kto": "Bronisław Brochwicz-Rogóyski", "rola": "projektant kamienicy (1904)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Cedergrena"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Zielna 37", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Zielna_37"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-zofii-kiersnowskiej",
+    "nazwa": "Kamienica Zofii Kiersnowskiej",
+    "name_en": "Zofia Kiersnowska tenement house (Bracka 18)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Bracka 18",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała pod koniec XIX wieku według projektu Edwarda Lilpopa; w 1900 roku została nadbudowana według projektu Teofila Wiśniewskiego.",
+      "W latach 1910–1915 mieściło się tu gimnazjum im. Stanisława Kostki, a w okresie międzywojennym gimnazjum Ludwika Lorentza.",
+      "Kamienica została nieznacznie uszkodzona i częściowo wypalona podczas powstania warszawskiego; utraciła jedynie hełm wieńczący środkowy ryzalit.",
+      "W podwórzu tablica upamiętnia członków spółdzielni pracy „Spólnota”, którzy w latach 1939–1945 oddali życie w walce z Niemcami; na tablicy umieszczono 40 nazwisk."
+    ],
+    "ciekawostki": [
+      "Historii w gimnazjum Lorentza uczył syn właściciela, Stanisław Lorentz."
+    ],
+    "summary_en": "A five-storey eclectic tenement at Bracka 18, built at the end of the 19th century to a design by Edward Lilpop and raised in 1900. It survived the Warsaw Uprising with its façade largely intact.",
+    "ludzie": [
+      {"kto": "Edward Lilpop", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Teofil Wiśniewski", "rola": "projektant nadbudowy (1900)", "wiki": null},
+      {"kto": "Stanisław Lorentz", "rola": "nauczyciel historii w gimnazjum Ludwika Lorentza, syn właściciela", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Zofii Kiersnowskiej", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Zofii_Kiersnowskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Rok budowy w tekście to „koniec XIX wieku”."
+  },
+  {
+    "id": "kamienica-zwiazku-emerytow-banku-polskiego",
+    "nazwa": "Kamienica Związku Emerytów Banku Polskiego",
+    "name_en": "Robinson building, Marszałkowska 18",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 18",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pięciopiętrowa kamienica powstała w latach 1935–1936 według projektu Lucjana Korngolda.",
+      "Pierwotnym inwestorem była rodzina Robinsonów, jednak jeszcze przed ukończeniem przeszła na własność Związku Emerytów Banku Polskiego.",
+      "Nie została uszkodzona podczas II wojny światowej; zachował się pierwotny plan zabudowy z jednym podwórkiem otwartym na południe.",
+      "8 grudnia 1945 roku w sali Ośrodka Wychowawczo-Artystycznego w tym budynku odbyła się inauguracja teatru Guliwer.",
+      "W 2009 roku kamienicę wpisano do rejestru zabytków jako „Kamienica Robinsonów”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A five-storey stone-faced building at Marszałkowska 18, designed by Lucjan Korngold in 1935–1936. It came through the war undamaged, hosted the opening of the Guliwer theatre in 1945, and was listed in 2009.",
+    "ludzie": [
+      {"kto": "Lucjan Korngold", "rola": "architekt kamienicy", "wiki": null},
+      {"kto": "Robinsonowie", "rola": "pierwotni inwestorzy kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Robinsonów"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Związku Emerytów Banku Polskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Związku_Emerytów_Banku_Polskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-pod-gigantami",
+    "nazwa": "Kamienica pod Gigantami",
+    "name_en": "House under the Giants (Kamienica Strzałeckiego)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 24",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wzniesiona w latach 1904–1907 według projektu Władysława Marconiego.",
+      "Nazwę zawdzięcza supraportze z posągami gigantów.",
+      "Oryginalny wystrój wnętrz z polichromiami i osiemnastowiecznymi parkietami zaprojektował właściciel, Antoni Strzałecki.",
+      "Obecnie mieści się tu siedziba Klubu Lekarza; parter zajmuje Restauracja Pod Gigantami."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An early-modernist building at Aleje Ujazdowskie 24, built in 1904–1907 to a design by Władysław Marconi. It is named after the giant figures over its doorway and is now home to a doctors' club and a restaurant.",
+    "ludzie": [
+      {"kto": "Władysław Marconi", "rola": "projektant kamienicy (1904–1907)", "wiki": null},
+      {"kto": "Antoni Strzałecki", "rola": "właściciel, zaprojektował wnętrza", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Strzałeckiego"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica pod Gigantami", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_pod_Gigantami"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-pod-madonna",
+    "nazwa": "Kamienica pod Madonną",
+    "name_en": "House under the Madonna, Freta 14",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Freta 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1785–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała około 1785 roku ze scalenia dwóch mniejszych domów.",
+      "Została wypalona podczas powstania warszawskiego, zachowała jednak oryginalną fasadę z dekoracyjnymi drzwiami, na których uwieczniono rok remontu: 1753.",
+      "Medalion z 1753 roku przedstawiał Najświętszą Marię Pannę i nadawał kamienicy nazwę.",
+      "Po wojnie uszkodzony medalion odkuto ponownie, ale zamiast Matki Boskiej pojawiła się kobieta z książką, przypuszczalnie alegoria Wiedzy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Nowe Miasto building at Freta 14, formed around 1785 by merging two smaller houses. Its name comes from a Madonna medallion that was replaced by a woman with a book after the war.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica pod Madonną", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_pod_Madonną"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-pod-niedzwiedziem",
+    "nazwa": "Kamienica pod Niedźwiedziem",
+    "name_en": "House under the Bear (Kamienica Icka Ajzensztadta)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Mokotowska 8",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projektantem kamienicy był Leon Wolski; wzniesiono ją w 1904 roku dla Icka Ajzensztadta.",
+      "Pod koniec 1912 roku właścicielem został ks. Władysław Lubomirski, a około 1922 roku Wacław i Irena Kleinadlowie.",
+      "We wrześniu 1939 roku dom został uszkodzony bombą, co spowodowało zawalenie górnego piętra w zakresie dwóch końcowych osi, szybko odbudowane podczas okupacji.",
+      "Po wojnie usunięto większość dekoracji fasady, m.in. rzeźbę niedźwiedzia; budynek odebrano właścicielom i przekazano na mieszkania komunalne.",
+      "W latach 2013–2014 firma Real-Invest przebudowała kamienicę na apartamenty „Triforium Ancient”."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od nieistniejącej rzeźby niedźwiedzia na fasadzie; na ścianie szczytowej zachowały się płaskorzeźbione niedźwiedzie trzymające kartusz."
+    ],
+    "summary_en": "A five-storey tenement at Mokotowska 8, built in 1904 to a design by Leon Wolski for Icek Ajzensztadt. It was damaged in 1939, lost much of its decoration after the war, and was converted into apartments in 2013–2014.",
+    "ludzie": [
+      {"kto": "Leon Wolski", "rola": "projektant kamienicy (1904)", "wiki": null},
+      {"kto": "Icek Ajzensztadt", "rola": "inwestor kamienicy (1904)", "wiki": null},
+      {"kto": "Władysław Lubomirski", "rola": "ksiądz, właściciel od końca 1912 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Icka Ajzensztadta"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica pod Niedźwiedziem", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_pod_Niedźwiedziem"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  }
+]

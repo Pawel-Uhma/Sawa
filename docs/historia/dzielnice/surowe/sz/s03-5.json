@@ -1,0 +1,85 @@
+[
+  {
+    "id": "szkola-religijna-rusaka-milej-15",
+    "nazwa": "Szkoła religijna J. Rusaka (ul. Miła 15)",
+    "name_en": "J. Rusak's religious school (15 Miła Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miła 15",
+    "adres_historyczny": "ul. Miła 15",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Miłej 15 funkcjonowała dwuklasowa męska szkoła religijna z językami nauczania polskim i hebrajskim, należąca do J. Rusaka.",
+      "Szkoła posiadała 2 wynajęte sale lekcyjne (82 m kw.), 3 nauczycieli (w tym 1 na pełen etat) i 35 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-class religious school for boys at 15 Miła Street, owned by J. Rusak. In 1930/31 it had 35 pupils, 3 teachers and two rented rooms of 82 m2.",
+    "ludzie": [
+      {"kto": "J. Rusak", "rola": "właściciel szkoły religijnej przy ul. Miłej 15", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna Rusaka w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138991-szkola-religijna-rusaka-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica (Muranów) wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-religijna-panska-95",
+    "nazwa": "Szkoła religijna przy ul. Pańskiej 95",
+    "name_en": "Religious school at 95 Pańska Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Pańska 95",
+    "adres_historyczny": "ul. Pańska 95",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Pańskiej 95 funkcjonowała dwuklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła posiadała 3 wynajęte sale lekcyjne (63 m kw.), 2 nauczycieli i 40 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-class religious school for boys at 95 Pańska Street. In 1930/31 it had 40 pupils and 2 teachers in three rented rooms of 63 m2.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Pańskiej 95 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139090-szkola-religijna-przy-ul-panskiej-95-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-religijna-panska-64",
+    "nazwa": "Szkoła religijna przy ul. Pańskiej 64",
+    "name_en": "Religious school at 64 Pańska Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Pańska 64",
+    "adres_historyczny": "ul. Pańska 64",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Pańskiej 64 funkcjonowała trzyklasowa męska szkoła religijna z językami nauczania polskim i jidysz.",
+      "Szkoła posiadała 3 sale lekcyjne (126 m kw.), 4 nauczycieli i 67 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-class religious school for boys at 64 Pańska Street, teaching in Polish and Yiddish. In 1930/31 it had 67 pupils and 4 teachers in three classrooms of 126 m2.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Pańskiej 64 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139087-szkola-religijna-przy-ul-panskiej-64-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  }
+]

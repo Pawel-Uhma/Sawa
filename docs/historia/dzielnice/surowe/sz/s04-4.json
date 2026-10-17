@@ -1,0 +1,395 @@
+[
+  {
+    "id": "cmentarz-zydowski-okopowa-49-51",
+    "nazwa": "Cmentarz żydowski przy ul. Okopowej 49/51",
+    "name_en": "Jewish cemetery at Okopowa 49/51",
+    "typ": "cmentarz",
+    "dzielnica": "Wola",
+    "adres_dzis": "Okopowa 49/51",
+    "adres_historyczny": "Okopowa 49/51 (przed wojną zwany cmentarzem przy ul. Gęsiej)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1806–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został założony z inicjatywy warszawskiej gminy żydowskiej w 1806 r.; jest trzecią żydowską nekropolią Warszawy, po cmentarzu z XV w. przy Starym Mieście i kirkucie praskim na Bródnie z 1780 r.",
+      "Pierwszy pochówek odbył się pod koniec 1806 r.; najstarszy zachowany nagrobek należy do Sary, córki Eliezera, zmarłej 8 września 1807 r.",
+      "W latach 1877–1878 wzniesiono okazały budynek według projektu Adolfa Schimmelpfenniga, z synagogą w centralnej części i oddzielnymi domami pogrzebowymi dla mężczyzn i kobiet w bocznych.",
+      "W czasie II wojny światowej cmentarz stał się miejscem pochówku tysięcy osób zmarłych lub zabitych w getcie warszawskim.",
+      "Niemcy wysadzili w powietrze dom przedpogrzebowy z synagogą; w sierpniu 1944 r. na terenie cmentarza toczyły się walki powstańców z Niemcami.",
+      "Od 5 lutego 2001 r. cmentarz należy do Gminy Wyznaniowej Żydowskiej w Warszawie; zajmuje ok. 33,5 ha i według szacunków pochowano na nim ok. 250 tys. osób, w tym ok. 100 tys. zmarłych i zamordowanych w getcie.",
+      "Od 1 grudnia 1973 r. cmentarz jest w rejestrze zabytków pod nr 874; w 2014 r. został uznany za pomnik historii."
+    ],
+    "ciekawostki": [
+      "Schron wykopany w grobie ocalił życie jednej z żydowskich rodzin podczas wojny; do dziś zachował się."
+    ],
+    "summary_en": "The Okopowa Jewish cemetery, opened in 1806, is the third Jewish necropolis in Warsaw and one of the largest in the world, with about 250,000 burials. It was a mass grave during the Holocaust and was recognised as a historic monument in 2014.",
+    "ludzie": [
+      {"kto": "Adolf Schimmelpfennig", "rola": "autor projektu budynku z synagogą (1877–1878)", "wiki": null},
+      {"kto": "Bolesław Szenicer", "rola": "dozorca, który prowadził prace porządkowe na cmentarzu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Cmentarz przy ul. Gęsiej (przed wojną)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Cmentarz żydowski w Warszawie (ul. Okopowa 49/51)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/114-cmentarze/37926-cmentarz-zydowski-w-warszawie-ul-okopowa-4951"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst mówi o wysadzeniu domu przedpogrzebowego przez Niemców; osobny artykuł o domu przedpogrzebowym podaje zniszczenie w 1944 r. Dzielnica wg ulicy. Tekst w paczce urwany przy opisie bram (wejście przy ul. Okopowej)."
+  },
+  {
+    "id": "gimnazjum-heleny-halpern-nowolipie-3",
+    "nazwa": "Gimnazjum Heleny Halpern, ul. Nowolipie 3",
+    "name_en": "Helena Halpern Gymnasium at Nowolipie 3",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowolipie 3",
+    "adres_historyczny": "Nowolipie 3",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1892–około 1929",
+    "istnieje": false,
+    "fakty": [
+      "Placówka powstała w 1892 r. jako szkoła początkowa; w 1922 r. przekształciła się w siedmioklasowe gimnazjum.",
+      "W 1926 r. miała charakter siedmioklasowego gimnazjum humanistycznego z językiem polskim; liczyła osiem „oddziałów” ze 109 uczennicami.",
+      "Dyrektorką była właścicielka szkoły Helena Halpern (ur. 1868).",
+      "Siedziba szkoły znajdowała się przy ul. Nowolipie 3.",
+      "Szkoła prawdopodobnie przestała istnieć około 1929 r."
+    ],
+    "ciekawostki": [
+      "W gronie nauczycieli w 1926 r. była Czesława Sunderland, znana też jako Celina Sunderland, „muza Leśmiana”."
+    ],
+    "summary_en": "Founded in 1892 as a primary school, the Helena Halpern school became a seven-grade gymnasium in 1922. It was based at Nowolipie 3 and probably closed around 1929.",
+    "ludzie": [
+      {"kto": "Helena Halpern", "rola": "właścicielka i dyrektorka szkoły (ur. 1868)", "wiki": null},
+      {"kto": "Czesława Sunderland (Celina Sunderland)", "rola": "nauczycielka rysunków w 1926 r., „muza Leśmiana”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Gimnazjum Heleny Halpern w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138818-gimnazjum-heleny-halpern-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst podaje „ul. Nowolipie 3” (pisownia z artykułu, prawdopodobnie Nowolipki 3); adres dzisiejszy wpisany ten sam, do weryfikacji. Źródło w tekście: Spis nauczycieli... 1926, s. 266."
+  },
+  {
+    "id": "synagoga-projekt-franciszkanska-6-8",
+    "nazwa": "Synagoga przy ul. Franciszkańskiej 6/8 (projekt)",
+    "name_en": "Synagogue project at Franciszkańska 6/8",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Franciszkańska 6/8",
+    "adres_historyczny": "Franciszkańska 6 (nr hip. 1809 a) i Franciszkańska 8 (nr hip. 1809 b)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1839(?) – projekt",
+    "istnieje": false,
+    "fakty": [
+      "Projekt synagogi na Franciszkańskiej (nr hip. 1809 a i 1809 b) powstał po 1839 r.(?).",
+      "Projekt wiązał się prawdopodobnie z funkcjonowaniem Szkoły Rabinów, przeniesionej w 1839 r. na Nalewki pod nr hip. 2257 ab; synagoga szkolna była przeznaczona tylko dla mężczyzn.",
+      "Właściciel sąsiedniej posesji Szoel Kaftal prawdopodobnie zaoferował szkole swój obszerny dziedziniec.",
+      "Projekt zamówił prawdopodobnie u Henryka Marconiego pełniący obowiązki dyrektora Szkoły Rabinów Antoni Eisenbaum.",
+      "Synagogę zaplanowano jako trójnawową halę o wymiarach ok. 14 x 20 m, z bimą pośrodku i galeriami dla kobiet; całość miała mieć wspólny kopertowy dach.",
+      "Według tekstu projekt nie został zrealizowany."
+    ],
+    "ciekawostki": [
+      "Marconi miał ubrać synagogę w orientalny kostium, konsekwentnie wewnątrz i zewnątrz."
+    ],
+    "summary_en": "A synagogue was designed for Franciszkańska 6/8 after 1839, probably for the Rabbinical School's congregation, with plans by Henryk Marconi. According to the source the project was never carried out.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "autor projektu synagogi", "wiki": null},
+      {"kto": "Antoni Eisenbaum", "rola": "pełniący obowiązki dyrektora Szkoły Rabinów w Warszawie", "wiki": null},
+      {"kto": "Szoel Kaftal", "rola": "właściciel posesji nr hip. 1809 przy Franciszkańskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga przy ul. Franciszkańskiej 6/8 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89607-synagoga-przy-ul-franciszkanskiej-68-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Obiekt niezrealizowany (projekt). Fragment książki Eleonory Bergman. Dzielnica wg ulicy, do weryfikacji."
+  },
+  {
+    "id": "zlota-62-mur-getta",
+    "nazwa": "Fragment muru getta, podwórze kamienicy ul. Złota 62",
+    "name_en": "Ghetto wall fragment at Złota 62",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Złota 62",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1945 (mur); wpis 1989",
+    "istnieje": true,
+    "fakty": [
+      "Od kwietnia 1940 r. Niemcy nakazali odgrodzić teren dawnej dzielnicy żydowskiej murem jako obszar zagrożony epidemią.",
+      "Przedwojenna ściana na podwórzu kamienicy przy ul. Złotej 62 służyła w czasie wojny jako część muru getta.",
+      "Dzięki staraniom Mieczysława Jędruszczaka miejsce wpisano do rejestru zabytków w 1989 r., a na murze umieszczono tablice pamiątkowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A pre-war wall in the courtyard at Złota 62 was used as part of the Warsaw Ghetto wall. It was entered in the monuments register in 1989 and is marked with commemorative plaques.",
+    "ludzie": [
+      {"kto": "Mieczysław Jędruszczak", "rola": "inicjator wpisu miejsca do rejestru zabytków (1989)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Relikty getta warszawskiego", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52073-relikty-getta-warszawskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica wg ulicy, do weryfikacji. Pierwsze zdanie dotyczy całego getta, nie tylko tego miejsca."
+  },
+  {
+    "id": "sienna-55-mur-getta",
+    "nazwa": "Fragment muru getta, podwórze posesji ul. Sienna 55",
+    "name_en": "Ghetto wall fragment at Sienna 55",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Sienna 55",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1945 (mur)",
+    "istnieje": true,
+    "fakty": [
+      "Od kwietnia 1940 r. Niemcy nakazali odgrodzić teren dawnej dzielnicy żydowskiej murem jako obszar zagrożony epidemią.",
+      "Na podwórzu posesji przy ul. Siennej 55 zachował się fragment oryginalnego muru getta, wzniesionego podczas II wojny światowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An original fragment of the Warsaw Ghetto wall, built during the Second World War, survives in the courtyard of Sienna 55.",
+    "ludzie": [
+      {"kto": "Mieczysław Jędruszczak", "rola": "zabiegał o upamiętnienie muru (tekst urwany, zdanie niedokończone w paczce)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Relikty getta warszawskiego", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52073-relikty-getta-warszawskiego"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord niepełny: tekst w paczce urwany w połowie zdania o staraniach Mieczysława Jędruszczaka. Dzielnica wg ulicy, do weryfikacji. Ma mało faktów (2)."
+  },
+  {
+    "id": "stawki-5-7",
+    "nazwa": "Budynek przy ul. Stawki 5/7",
+    "name_en": "Building at Stawki 5/7",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Stawki 5/7",
+    "adres_historyczny": "Stawki 5/7",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1945",
+    "istnieje": null,
+    "fakty": [
+      "W czasie II wojny światowej przy Stawkach 5/7 mieściła się komenda SS.",
+      "W latach 1942–1943 komenda oddziału SS z tego budynku nadzorowała Umschlagplatz, na który codziennie spędzano tysiące mieszkańców getta, aby wywieźć ich do Treblinki (cytat z tablicy Traktu Pamięci).",
+      "W czasie powstania w getcie Niemcy podpalali budynki po południowej stronie ul. Niskiej, a niektórzy ukrywający się Żydzi wyskakiwali z okien.",
+      "W 1945 r. na terenie getta szczątkowego widoczne były budynki przy Stawkach pod nr 5/7 i 10.",
+      "Na parkanie od strony ul. Niskiej, przy budynku Stawki 5/7, zachował się ślad po kuli, który prawdopodobnie pochodzi z czasu powstania w getcie."
+    ],
+    "ciekawostki": [
+      "Ślad po kuli jest widoczny w parkanie; według tekstu udokumentowano na zdjęciach z raportu gen. Stroopa skoki z okien płonących budynków."
+    ],
+    "summary_en": "During the Second World War the SS had a command post at Stawki 5/7. A bullet mark survives in the fence on Niska Street, probably from the Ghetto Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Relikty getta warszawskiego", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52073-relikty-getta-warszawskiego"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Ślad po kuli: tekst mówi „jest bardzo prawdopodobne”. Dzielnica wg ulicy, do weryfikacji."
+  },
+  {
+    "id": "szkola-powszechna-tarbut-nr-2-nowolipki-22",
+    "nazwa": "Szkoła powszechna Tarbut nr 2, ul. Nowolipki 22",
+    "name_en": "Tarbut primary school no. 2 at Nowolipki 22",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowolipki 22",
+    "adres_historyczny": "Nowolipki 22",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1939",
+    "istnieje": null,
+    "fakty": [
+      "W 1939 r. przy ul. Nowolipki 22 funkcjonowała szkoła powszechna stowarzyszenia Tarbut, nosząca nr 2."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1939 a Tarbut primary school, no. 2, operated at Nowolipki 22.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna Tarbut w Warszawie V", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139073-szkola-powszechna-tarbut-w-warszawie-v"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wpis jednozdaniowy z książki telefonicznej (Książka Telefoniczna PAST Warszawa 1939, s. 393); rekord z jednym faktem, bo rok i adres są podane. Adres dzisiejszy wpisany ten sam, do weryfikacji. Dzielnica wg ulicy."
+  },
+  {
+    "id": "szkola-religijna-pawiej-32",
+    "nazwa": "Szkoła religijna przy ul. Pawiej 32",
+    "name_en": "Religious school at Pawia 32",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Pawia 32",
+    "adres_historyczny": "Pawia 32",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Pawiej 32 funkcjonowała trzyklasowa męska szkoła religijna z językami nauczania polskim i jidysz.",
+      "Szkoła wynajmowała 3 sale lekcyjne o powierzchni 72 m kw., zatrudniała 5 nauczycieli i liczyła 55 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1930/1931 a three-grade men's religious school with Polish and Yiddish instruction operated at Pawia 32, with 55 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Pawiej 32 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139093-szkola-religijna-przy-ul-pawiej-32-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/1931; adres dzisiejszy wpisany ten sam, do weryfikacji. Dzielnica wg ulicy. Źródło w tekście: Szkoły w Rzeczpospolitej... 1933, s. 44."
+  },
+  {
+    "id": "bunkier-zob-mila-18",
+    "nazwa": "Bunkier Żydowskiej Organizacji Bojowej, ul. Miła 18",
+    "name_en": "Jewish Combat Organization bunker at Miła 18",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Miła 18",
+    "adres_historyczny": "Miła 18",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1943 (kopiec 1946, pomnik 2006)",
+    "istnieje": null,
+    "fakty": [
+      "W podziemiach kamienicy przy ul. Miłej 18 grupa szmuglerów pod kierunkiem Mojżesza Kulasa i Srula Isera urządziła schron na towary przemycane z tzw. strony aryjskiej do getta.",
+      "Schron miał kilka dużych pomieszczeń, zamaskowane włazy, wentylację, wodę i elektryczność oraz sześć wyjść.",
+      "27 kwietnia 1943 r. do schronu trafiło dowództwo ŻOB, m.in. Mordechaj Anielewicz, Jehuda Wengrower, Arie Wilner, Michał Rozenfeld i Cywia Lubetkin; w podziemiach przebywało łącznie ponad 300 osób.",
+      "W wyniku zdrady 8 maja 1943 r. kryjówkę otoczyło wojsko niemieckie; Niemcy wrzucili granaty i wpuścili gaz, a osaczeni bojownicy popełnili samobójstwo.",
+      "Ok. 15 osobom udało się uciec przez jedyne nieodkryte wyjście, m.in. Michałowi Rozenfeldowi, Tosi Altman, Jehudzie Wengrowerowi, Pninie Zalcman i Menachemowi Bigelmanowi.",
+      "W 1946 r. na kopcu z gruzów w miejscu bunkra ustawiono obelisk; w 2006 r. u podnóża kopca ustawiono pomnik-ostrosłup zaprojektowany przez Hannę Szmalenberg, wykonany przez Marka Moderaua.",
+      "Według napisu na obelisku z 1946 r. w tym miejscu 8 maja 1943 r. poległ Mordechaj Anielewicz wraz ze sztabem ŻOB."
+    ],
+    "ciekawostki": [
+      "Według inskrypcji z 2006 r. bunkier przy Miłej 18 był największy w getcie; zginęło w nim ponad stu bojowców."
+    ],
+    "summary_en": "The bunker at Miła 18, a smugglers' shelter, became the headquarters of the Jewish Combat Organization on 27 April 1943. It was surrounded on 8 May 1943, and the fighters inside took their own lives; a mound and monuments mark the site.",
+    "ludzie": [
+      {"kto": "Mojżesz Kulas", "rola": "przewodnik grupy szmuglerów, która urządziła schron", "wiki": null},
+      {"kto": "Srul Iser", "rola": "przewodnik grupy szmuglerów, która urządziła schron", "wiki": null},
+      {"kto": "Mordechaj Anielewicz", "rola": "komendant ŻOB, zginął w bunkrze 8.05.1943", "wiki": null},
+      {"kto": "Jehuda Wengrower", "rola": "bojownik ŻOB w bunkrze, uciekł", "wiki": null},
+      {"kto": "Arie Wilner", "rola": "bojownik ŻOB w bunkrze", "wiki": null},
+      {"kto": "Michał Rozenfeld", "rola": "bojownik ŻOB w bunkrze, uciekł", "wiki": null},
+      {"kto": "Cywia Lubetkin", "rola": "uczestniczka, dowództwo ŻOB w bunkrze", "wiki": null},
+      {"kto": "Hanna Szmalenberg", "rola": "projektantka pomnika-ostrosłupa (2006)", "wiki": null},
+      {"kto": "Marek Moderau", "rola": "rzeźbiarz, wykonawca pomnika (2006)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Bunkier Żydowskiej Organizacji Bojowej w Warszawie (ul. Miła 2)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52425-bunkier-zydowskiej-organizacji-bojowej-w-warszawie-ul-mila-2"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tytuł w Sztetlu podaje Miła 2, a treść artykułu i inskrypcje podają Miła 18; wpisano Miła 18. Dzielnica wg ulicy, do weryfikacji."
+  },
+  {
+    "id": "gimnazjum-magnusa-krynskiego-miodowa-5",
+    "nazwa": "Gimnazjum i Liceum im. Magnusa Kryńskiego, ul. Miodowa 5",
+    "name_en": "Magnus Kryński Gymnasium and Lyceum at Miodowa 5",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Miodowa 5",
+    "adres_historyczny": "Miodowa 5 (przed 1923 r. Miodowa 1)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1908–1939",
+    "istnieje": false,
+    "fakty": [
+      "Gimnazjum zostało założone w 1908 r. i istniało do 1939 r.; w tekście podano też likwidację około 1942 r.",
+      "Siedziba szkoły mieściła się przy ul. Miodowej 5, a przed 1923 r. przy ul. Miodowej 1.",
+      "W 1926 r. gimnazjum utrzymywał Szymon Kryński, a dyrektorem był inż. Michał Kryński; miało charakter matematyczno-przyrodniczy, ośmioklasowy, z dwiema klasami wstępnymi.",
+      "W 1926 r. szkoła liczyła 290 uczniów w 10 klasach; od 1931 r. miała pełne prawa gimnazjum państwowego.",
+      "W roku szkolnym 1930/1931 miała 326 uczniów w 10 „oddziałach”.",
+      "Szkoła organizowała tajne komplety w getcie warszawskim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Magnus Kryński Gymnasium, founded in 1908, was based at Miodowa 5 and had 326 pupils in 1930/1931. It operated until 1939, with secret classes in the ghetto according to the source.",
+    "ludzie": [
+      {"kto": "Michał Kryński", "rola": "dyrektor (inż.) w 1926 r.", "wiki": null},
+      {"kto": "Szymon Kryński", "rola": "utrzymywał gimnazjum (1924–1933)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szkoła Realna Męska Szymona Kryńskiego (1918–1924)", "Gimnazjum Męskie im. Magnusa Kryńskiego (1924–1933, 1933–1937)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Gimnazjum i Liceum im. Magnusa Kryńskiego w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138781-gimnazjum-i-liceum-im-magnusa-krynskiego-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst sprzeczny: „istniało do 1939” i „data likwidacji około 1942”; okres wpisany jak w tekście. Źródło w tekście: Spis nauczycieli... 1926, s. 251."
+  },
+  {
+    "id": "dom-sierot-sliska-9-sienna-16",
+    "nazwa": "Dom Sierot Janusza Korczaka, Śliska 9 / Sienna 16",
+    "name_en": "Janusz Korczak's Orphanage, Śliska 9 / Sienna 16",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Śliska 9 / Sienna 16",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "październik 1941–sierpień 1942",
+    "istnieje": false,
+    "fakty": [
+      "W październiku 1941 r. Dom Sierot prowadzony przez Janusza Korczaka został przeniesiony z ul. Chłodnej 33 do budynku Towarzystwa Wzajemnej Pomocy Pracowników Handlowych i Przemysłowych m. Warszawy (podwójny adres: Śliska 9/Sienna 16).",
+      "Gmach ze względu na konstrukcję i układ pomieszczeń nie nadawał się na sierociniec dla 200 dzieci.",
+      "Dzieci chodziły na spacery na ulicę Bagno, do ogrodu parafii pw. Wszystkich Świętych, aby zobaczyć rzadkie w getcie drzewa.",
+      "22 lipca 1942 r. rozpoczęła się likwidacja tzw. małego getta; 6 sierpnia Janusz Korczak i Stefania Wilczyńska z wychowankami wyruszyli pieszo do bocznicy kolejowej przy ulicy Stawki, skąd wywieziono ich do Treblinki.",
+      "Budynek przetrwał powstanie warszawskie; po wojnie, podobnie jak pobliskie kamienice, został rozebrany podczas budowy Pałacu Kultury i Nauki.",
+      "5 sierpnia 2012 r., w 70. rocznicę likwidacji Domu Sierot, przy wejściu do Teatru Lalka umieszczono tablicę pamiątkową zaprojektowaną przez Zbigniewa Wilma."
+    ],
+    "ciekawostki": [],
+    "summary_en": "From October 1941 Janusz Korczak's orphanage was housed at Śliska 9 / Sienna 16. The children were deported to Treblinka in August 1942. The building was demolished after the war during the construction of the Palace of Culture and Science.",
+    "ludzie": [
+      {"kto": "Janusz Korczak", "rola": "kierownik Domu Sierot", "wiki": null},
+      {"kto": "Stefania Wilczyńska", "rola": "wychowawczyni w Domu Sierot, wyruszyła z dziećmi do Treblinki", "wiki": null},
+      {"kto": "Zbigniew Wilma", "rola": "projektant tablicy pamiątkowej z 2012 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Chłodna 33 (wcześniejsza siedziba Domu Sierot)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Tablica pamiątkowa w miejscu trzeciej siedziby Domu Sierot (Pl. Defilad 1)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52202-tablica-pamiatkowa-w-miejscu-trzeciej-siedziby-domu-sierot-pl-defilad-1"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tablica jest przy wejściu do Teatru Lalka (wg tytułu artykułu Pl. Defilad 1). Dzielnica wg ulicy. Źródło w tekście: Olczak-Ronikier J., Korczak. Próba biografii, Warszawa 2011, s. 365–432. Patrz też rekord pomnika Korczaka w Parku Świętokrzyskim (dawne Śliska 9/Sienna 16)."
+  },
+  {
+    "id": "szkola-religijna-karmelicka-16",
+    "nazwa": "Szkoła religijna przy ul. Karmelickiej 16",
+    "name_en": "Religious school at Karmelicka 16",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Karmelicka 16",
+    "adres_historyczny": "Karmelicka 16",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Karmelickiej 16 funkcjonowała dwuklasowa męska szkoła religijna z językami nauczania polskim i jidysz.",
+      "Szkoła wynajmowała 2 sale lekcyjne o łącznej powierzchni 62 m kw., zatrudniała 4 nauczycieli i liczyła 65 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1930/1931 a two-grade men's religious school with Polish and Yiddish instruction operated at Karmelicka 16, with 65 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Karmelickiej 16 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138973-szkola-religijna-przy-ul-karmelickiej-16-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/1931; adres dzisiejszy wpisany ten sam, do weryfikacji. Dzielnica wg ulicy, do sprawdzenia (ulica graniczna Muranów/Wola). Źródło w tekście: Szkoły w Rzeczpospolitej... 1933, s. 43."
+  }
+]

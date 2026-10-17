@@ -1,7 +1,7 @@
 import { haversineM } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
-import { planWalk, retracedShare, toSegment } from "./walk-tour";
+import { placesAlong, planWalk, retracedShare, toSegment, walkThrough } from "./walk-tour";
 
 const ORIGIN = { lat: 52.23, lng: 21.0 };
 // ~70 m per 0.001° of longitude here; walking 1.2 m/s × 1.3 detour ≈ 0.92 m/s.
@@ -27,6 +27,54 @@ describe("toSegment", () => {
     const { distanceM, t } = toSegment({ lat: 52.2301, lng: 21.001 }, a, b);
     expect(distanceM).toBeCloseTo(11.1, 0);
     expect(t).toBeCloseTo(0.5, 2);
+  });
+});
+
+describe("placesAlong", () => {
+  it("counts only places right by the walk, not ones a block away", () => {
+    const segment = { from: ORIGIN, to: { lat: 52.23, lng: 21.004 }, startSec: 0, sec: 300 };
+    const places = [
+      place("by-the-way", 21.002, 52.2301, ["historical"]), // ~11 m north of the walk
+      place("across-the-street", 21.002, 52.2303, ["historical"]), // ~33 m north
+    ];
+    const ids = placesAlong(places, segment, { interests: new Set(["historical"]) }).map(
+      (p) => p.placeId,
+    );
+    expect(ids).toEqual(["by-the-way"]);
+  });
+
+  it("counts a building farther off: its point is the middle, the walker passes the facade", () => {
+    const segment = { from: ORIGIN, to: { lat: 52.23, lng: 21.004 }, startSec: 0, sec: 300 };
+    const places = [
+      { ...place("palace", 21.002, 52.2304, ["historical"]), kind: "building" as const }, // ~45 m
+      { ...place("plaque", 21.002, 52.2304, ["historical"]), kind: "plaque" as const },
+      { ...place("far-church", 21.002, 52.2306, ["historical"]), kind: "church" as const }, // ~67 m
+    ];
+    const ids = placesAlong(places, segment, { interests: new Set(["historical"]) }).map(
+      (p) => p.placeId,
+    );
+    expect(ids).toEqual(["palace"]);
+  });
+});
+
+describe("walkThrough", () => {
+  const to = { lat: 52.23, lng: 21.008 }; // ~550 m east
+  const scoring = { interests: new Set(["historical"]) };
+
+  it("bends the walk to pass right by a place near it", () => {
+    const near = place("near", 21.004, 52.2304, ["historical"]); // ~45 m north
+    const walk = walkThrough([near], ORIGIN, to, 1, scoring);
+    expect(walk.waypoints).toEqual([ORIGIN, near.position, to]);
+    expect(walk.places.map((p) => p.placeId)).toEqual(["near"]);
+    expect(walk.sec).toBeGreaterThan(haversineM(ORIGIN, to));
+    expect(walk.sec).toBeLessThan(1.2 * haversineM(ORIGIN, to));
+  });
+
+  it("keeps the straight way when the place is too far off it", () => {
+    const off = place("off", 21.004, 52.2315, ["historical"]); // ~170 m north
+    const walk = walkThrough([off], ORIGIN, to, 1, scoring);
+    expect(walk.waypoints).toEqual([ORIGIN, to]);
+    expect(walk.places).toEqual([]);
   });
 });
 

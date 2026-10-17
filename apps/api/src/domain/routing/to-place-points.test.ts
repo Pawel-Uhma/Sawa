@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { toPlacePoints } from "./to-place-points";
 
 describe("toPlacePoints", () => {
-  it("maps tags to broad interests and richness to a weight", () => {
+  it("maps tags to broad interests and richness to a weight, keeps the kind", () => {
     expect(
       toPlacePoints([
         {
@@ -18,6 +18,7 @@ describe("toPlacePoints", () => {
       {
         id: "kercelak",
         name: "Kercelak",
+        kind: "site",
         position: { lat: 52.237, lng: 20.9802 },
         interests: ["historical", "cultural"],
         weight: 3,

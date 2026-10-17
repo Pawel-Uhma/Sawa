@@ -1,0 +1,198 @@
+[
+  {
+    "id": "kosciol-najswietszego-zbawiciela",
+    "nazwa": "Kościół Najświętszego Zbawiciela",
+    "name_en": "Church of the Most Holy Saviour",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Zbawiciela 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1901–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień węgielny pod świątynię wmurowano 12 października 1901 roku; poświęcił go arcybiskup warszawski Wincenty Popiel.",
+      "W 1900 roku rozpisano konkurs na projekt kościoła; zwycięski projekt Stefana Szyllera uznano za zbyt ciężki, przysadzisty i kosztowny, dlatego zrealizowano projekt Józefa Piusa Dziekońskiego, Ludwika Panczakiewicza i Władysława Żychlewicza.",
+      "Prace ukończono w 1927 roku, a konsekracji kościoła dokonał arcybiskup Stanisław Gall.",
+      "W wyniku bombardowań 1939 roku zawaliła się sygnaturka, zniszczona została lewa wieża oraz dach.",
+      "W przeddzień ucieczki Niemców z Warszawy w 1944 roku zdetonowano materiały wybuchowe w dolnym kościele; runęły sklepienia, hełm drugiej wieży i kościół dolny.",
+      "W 1955 roku przyszło pozwolenie na odbudowę świątyni w pełnym kształcie; prace zakończono w 1958 roku.",
+      "W 2006 roku kościół parafialny został mianowany Sanktuarium Matki Zbawiciela."
+    ],
+    "ciekawostki": [
+      "W 1999 roku Jan Paweł II koronował obraz Matki Bożej w kaplicy Matki Zbawiciela na placu Piłsudskiego.",
+      "W latach 30. XX wieku do świątyni trafił fragment mozaiki znad głównego wejścia do dawnego soboru Aleksandra Newskiego, który stał na placu Saskim."
+    ],
+    "summary_en": "Parish church of the Most Holy Saviour at plac Zbawiciela 1 in southern Śródmieście. Built from 1901 to 1927 to a design by Józef Pius Dziekoński and his partners, it was badly damaged in 1939 and 1944 and rebuilt in its full form by 1958. It has been a Marian sanctuary since 2006.",
+    "ludzie": [
+      {"kto": "bp Wincenty Chrościak-Popiel", "rola": "inicjator budowy, wraz z ks. Jakubem Siemiec dokonał zakupu placu", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "zwycięzca konkursu na projekt (projekt odrzucony)", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "autor realizowanego projektu wraz z Ludwikiem Panczakiewiczem i Władysławem Żychlewiczem", "wiki": null},
+      {"kto": "Wiesław Konowicz", "rola": "autor projektu odbudowy po wojnie", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "koronował obraz Matki Bożej Częstochowskiej w kaplicy Matki Zbawiciela (1999)", "wiki": null}
+    ],
+    "dawne_nazwy": ["placyk zwany „rondo”", "Czerwona Karczma (wcześniejsze miejsce na tym terenie)"],
+    "zrodla": [{"tytul": "Warszawikia: Kościół Najświętszego Zbawiciela", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Najświętszego_Zbawiciela"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null."
+  },
+  {
+    "id": "kosciol-nawiedzenia-najswietszej-maryi-panny",
+    "nazwa": "Kościół Nawiedzenia Najświętszej Maryi Panny",
+    "name_en": "Church of the Visitation of the Blessed Virgin Mary",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Przyrynek 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1409–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę kościoła rozpoczęto w 1409 roku z inicjatywy księcia mazowieckiego Janusza Starszego i jego żony Anny Danuty.",
+      "Świątynię konsekrował w 1411 roku biskup Wojciech Jastrzębiec.",
+      "Pod koniec XV wieku, dzięki funduszom księcia Bolesława V warszawskiego i zakroczymskiego, kościół rozbudowano do formy trójnawowej bazyliki.",
+      "W 1656 roku, podczas potopu szwedzkiego, kościół został spalony.",
+      "W 1944 roku, podczas powstania warszawskiego, kościół w znacznym stopniu zburzono.",
+      "Odbudowę prowadzono w latach 1947–1957 według projektu Beaty Trylińskiej i Haliny Kosmólskiej.",
+      "W 1965 roku kościół wraz z dzwonnicą, plebanią i organistówką wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Według tradycji kościół wzniesiono w miejscu dawnej pogańskiej świątyni.",
+      "W czasie stanu wojennego kościół pełnił ważną rolę jako miejsce działalności Duszpasterstwa Środowisk Twórczych."
+    ],
+    "summary_en": "Roman Catholic church of the Visitation of the Blessed Virgin Mary at Przyrynek 2, on the Warsaw escarpment. Begun in 1409 on the initiative of Duke Janusz I the Elder, it was burned in 1656 and largely destroyed in 1944; rebuilt in 1947–1957 and listed as a historic monument in 1965.",
+    "ludzie": [
+      {"kto": "Janusz Starszy", "rola": "książę mazowiecki, inicjator budowy", "wiki": null},
+      {"kto": "Anna Danuta", "rola": "żona Janusza Starszego, współinicjatorka budowy", "wiki": null},
+      {"kto": "Wojciech Jastrzębiec", "rola": "biskup, konsekrował świątynię w 1411 roku", "wiki": null},
+      {"kto": "Beata Trylińska", "rola": "autorka projektu odbudowy (1947–1957)", "wiki": null},
+      {"kto": "Halina Kosmólska", "rola": "autorka projektu odbudowy (1947–1957)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kościół Nawiedzenia Najświętszej Maryi Panny", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Nawiedzenia_Najświętszej_Maryi_Panny"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null."
+  },
+  {
+    "id": "kosciol-wniebowziecia-najswietszej-maryi-panny-i-sw-jozefa-oblubienca",
+    "nazwa": "Kościół Wniebowzięcia Najświętszej Maryi Panny i św. Józefa Oblubieńca",
+    "name_en": "Church of the Assumption of the Blessed Virgin Mary and St. Joseph (Discalced Carmelites)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 52/54",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1643–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Karmelici Bosi, którzy przybyli do Warszawy w 1634 roku, rozpoczęli budowę barokowego kościoła w 1643 roku.",
+      "W projektowaniu kościoła brali udział Konstanty Tencalla, Szymon Józef Bellotti oraz Tylman z Gameren.",
+      "Fasadę ufundował Karol Stanisław Radziwiłł „Panie Kochanku”; budowa trwała w latach 1762–1779 pod kierunkiem Efraima Szregera i była pierwszą w Warszawie kamienną klasycystyczną fasadą.",
+      "Klasztor karmelicki skasowano zaraz po powstaniu styczniowym, a budynek przejęło seminarium duchowne.",
+      "W 1925 roku seminarium dobudowało w północnej części neoklasycystyczną bibliotekę wg projektu Konstantego Jakimowicza.",
+      "Kościół nie został zniszczony podczas II wojny światowej i do czasu odbudowy katedry św. Jana zastępował ją tymczasowo jako prokatedra.",
+      "W 2010 roku przeprowadzono prace konserwatorskie, a w latach 2014–2015 wyremontowano elewacje kościoła i zespołu klasztornego."
+    ],
+    "ciekawostki": [
+      "Ze względu na kształt kuli na szczycie fasady utarło się w Warszawie powiedzenie: spuchnąć jak karmelicka bania.",
+      "Kościół nazywany jest także kościołem seminaryjnym albo kościołem Karmelitów Bosych."
+    ],
+    "summary_en": "Baroque Discalced Carmelite church at Krakowskie Przedmieście 52/54, today under the care of the Higher Metropolitan Seminary. Its first stone classicist façade, built in 1762–1779, was funded by Karol Stanisław Radziwiłł „Panie Kochanku”. The church survived the Second World War intact and temporarily served as the pro-cathedral.",
+    "ludzie": [
+      {"kto": "Konstanty Tencalla", "rola": "architekt zaangażowany w projektowanie kościoła", "wiki": null},
+      {"kto": "Szymon Józef Bellotti", "rola": "architekt zaangażowany w projektowanie kościoła", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "architekt zaangażowany w projektowanie kościoła", "wiki": null},
+      {"kto": "Efraim Szreger", "rola": "architekt fasady (1762–1779)", "wiki": null},
+      {"kto": "Karol Stanisław Radziwiłł „Panie Kochanku”", "rola": "fundator fasady", "wiki": null},
+      {"kto": "Konstanty Jakimowicz", "rola": "projektant neoklasycystycznej biblioteki seminaryjnej (1925)", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół Karmelitów Bosych"],
+    "zrodla": [{"tytul": "Warszawikia: Kościół Wniebowzięcia Najświętszej Maryi Panny i św. Józefa Oblubieńca", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Wniebowzięcia_Najświętszej_Maryi_Panny_i_św._Józefa_Oblubieńca"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null."
+  },
+  {
+    "id": "kosciol-wszystkich-swietych",
+    "nazwa": "Kościół Wszystkich Świętych",
+    "name_en": "Church of All Saints (Grzybów)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Grzybowski 3/5",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1856–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia kościoła zaczyna się 7 lipca 1856 roku, gdy hrabina Gabriela z Gutakowskich Zabiełło przekazała plac po pałacu przy pl. Grzybowskim oraz 12 tysięcy rubli.",
+      "Projekt, wzorowany na kościele św. Justyny w Padwie, przygotował Henryk Marconi.",
+      "Budowę rozpoczęto uroczyście 8 czerwca 1861 roku; w 1865 roku erygowano parafię.",
+      "Kościół poświęcono 31 października 1883 roku, choć nie był jeszcze gotowy; budowę zakończono w 1893 roku.",
+      "13 listopada 1904 roku carska policja rozbiła przed kościołem demonstrację, raniąc i zabijając wielu protestujących.",
+      "W czasie okupacji kościół znalazł się w granicach getta; proboszcz Marceli Godlewski przyczynił się do uratowania mieszkańców getta, a w plebanii ukrywał się m.in. prof. Ludwik Hirszfeld.",
+      "Kościół został odbudowany do 1979 roku pod kierownictwem Beaty Trylińskiej i Stanisława Marzyńskiego; zniszczenia w czasie powstania określono na 65%."
+    ],
+    "ciekawostki": [
+      "Osiem obrazów Michaela Willmanna przywieziono do Warszawy w 1945 roku z klasztoru cysterskiego w Lubiążu.",
+      "16 czerwca 1987 roku kościół odwiedził Jan Paweł II, który błogosławił zebranych przed świątynią."
+    ],
+    "summary_en": "Neo-Renaissance church at plac Grzybowski 3/5 in Grzybów, Śródmieście, and the largest church in Warsaw (75 m long, 54 m to the towers). Designed by Henryk Marconi, it was begun in 1861, consecrated in 1883 before completion, and badly damaged in the 1944 Uprising before being rebuilt by 1979.",
+    "ludzie": [
+      {"kto": "Gabriela z Gutakowskich Zabiełło", "rola": "fundatorka placu i darowizny na budowę (1856)", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "autor projektu świątyni", "wiki": null},
+      {"kto": "Marceli Godlewski", "rola": "proboszcz; pomagał w ratowaniu mieszkańców getta", "wiki": null},
+      {"kto": "Ludwik Hirszfeld", "rola": "ukrywał się w plebanii w czasie okupacji", "wiki": null},
+      {"kto": "Beata Trylińska", "rola": "kierowała odbudową do 1979 roku", "wiki": null},
+      {"kto": "Stanisław Marzyński", "rola": "kierował odbudową do 1979 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kościół Wszystkich Świętych", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Wszystkich_Świętych"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null."
+  },
+  {
+    "id": "kosciol-sw-alberta-i-sw-andrzeja-apostola",
+    "nazwa": "Kościół św. Brata Alberta i św. Andrzeja Apostoła",
+    "name_en": "Church of St. Albert and St. Andrew the Apostle",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Senatorska 18B",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVII wieku jezuici wybudowali niewielki kościół pw. Świętego Krzyża; w XVIII wieku na jego miejscu wzniesiono kościół pw. św. Andrzeja.",
+      "Po kasacie zakonu jezuitów, w 1773 roku, kaplica stała się kościołem parafii św. Andrzeja.",
+      "W 1817 r. kościół został podarowany Pannom Kanoniczkom w zamian za odebrany im Marywil, na miejscu którego kilka lat później rozpoczęto budowę Teatru Wielkiego.",
+      "Podczas powstania warszawskiego w kościele zorganizowano szpital powstańczy.",
+      "Po wojnie nabożeństwa w uszkodzonym budynku odprawiano aż do 1953 roku, kiedy władze zadecydowały o rozbiórce świątyni.",
+      "13 czerwca 1999 roku nowy kościół poświęcił Jan Paweł II podczas wizyty w Warszawie; konsekracji dokonał 25 września kard. Józef Glemp.",
+      "W marcu 2008 r. pożar zniszczył wiele dzieł sztuki, m.in. obraz Chrystusa w Ogrójcu pędzla Sebastiano del Piombo."
+    ],
+    "ciekawostki": [
+      "W 2004 roku tympanon kościoła został wzbogacony o płaskorzeźbę Ducha Świętego autorstwa prof. Gustawa Zemły.",
+      "Od końca 2017 roku w kościele odprawiane są również msze święte trydenckie."
+    ],
+    "summary_en": "Roman Catholic church at Senatorska 18B, opposite plac Teatralny. Built by the Jesuits in the 17th century and later taken over by the Canonesses, it was demolished in 1953 and partly rebuilt in 1999 on the north side of plac Teatralny, when John Paul II consecrated it. A fire in 2008 destroyed much of its interior art.",
+    "ludzie": [
+      {"kto": "Chrystian Piotr Aigner", "rola": "autor klasycznej fasady z lat 1817–21, do której nawiązano przy odbudowie", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "poświęcił nowy kościół 13 czerwca 1999 roku", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "konsekrował kościół 25 września 1999 roku", "wiki": null},
+      {"kto": "Gustaw Zemła", "rola": "autor płaskorzeźby Ducha Świętego na tympanonie (2004)", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół pw. Świętego Krzyża (jezuicki)", "kościół pw. św. Andrzeja"],
+    "zrodla": [{"tytul": "Warszawikia: Kościół św. Alberta i św. Andrzeja Apostoła", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_św._Alberta_i_św._Andrzeja_Apostoła"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null. Artykuł podaje rok 1999 jako datę poświęcenia (13 czerwca) i konsekracji (25 września)."
+  }
+]

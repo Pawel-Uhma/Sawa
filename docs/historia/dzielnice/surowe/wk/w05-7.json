@@ -1,0 +1,113 @@
+[
+  {
+    "id": "ulica-sierpecka",
+    "nazwa": "Ulica Sierpecka",
+    "name_en": "Sierpecka Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Sierpecka",
+    "adres_historyczny": null,
+    "lat": 52.2698532,
+    "lon": 20.9784276,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Sierpecka ma ponad 200 metrów długości i biegnie od skrzyżowania z ul. Suzina do ul. Poczobutta-Odlanickiego.",
+      "W swoim biegu krzyżuje się jedynie z ulicami Sarmatów i Krechowiecką.",
+      "Nazwa pochodzi od Sierpca, dziewiętnastotysięcznego miasta w województwie mazowieckim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Sierpecka is a just over 200-metre east-west street in Żoliborz, running from Suzina to Poczobutta-Odlanicki. It is named after the Mazovian town of Sierpc.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Sierpecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Sierpecka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-skazancow",
+    "nazwa": "Ulica Skazańców",
+    "name_en": "Skazańców Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Skazańców",
+    "adres_historyczny": null,
+    "lat": 52.2616931,
+    "lon": 21.0036536,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XIX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Skazańców ma 580 metrów długości i leży na terenie Cytadeli.",
+      "Pierwsza część, na obszarze Cytadeli udostępnionym dla zwiedzających, biegnie od X pawilonu do Bramy Straceń i krzyżuje się z ulicą Trojaka.",
+      "Druga część, na terenie wojskowym, ciągnie się od Bramy Straceń, przez skrzyżowania z ulicami Cudnowską i Levittoux, do skrzyżowania z ulicą Ściegiennego.",
+      "W okresie działalności Twierdzy Warszawy pierwszą częścią ulicy prowadzono skazańców na miejsce egzekucji na stokach Cytadeli; stąd nazwa."
+    ],
+    "ciekawostki": [
+      "W okolicy ulicy znajduje się ekspozycja luf armatnich, używanych przez wojska carskie w XIX wieku."
+    ],
+    "summary_en": "Skazańców runs 580 metres through the Warsaw Citadel. Its name comes from the road along which condemned prisoners were led to execution on the Citadel slopes during the Warsaw Fortress period. Its first part is open to visitors and ends at the Gate of Executions.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Skazańców", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Skazańców"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka. Okres z infoboksu."
+  },
+  {
+    "id": "ulica-skotnicka",
+    "nazwa": "Ulica Skotnicka",
+    "name_en": "Skotnicka Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Skotnicka",
+    "adres_historyczny": null,
+    "lat": 52.2763732,
+    "lon": 20.9792574,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Skotnicka ma około 40 metrów długości; biegnie na południe od ul. Lutosławskiego i kończy się ślepo.",
+      "Nazwa pochodzi od miejscowości Skotniki; w Polsce jest kilkanaście osad o tej nazwie.",
+      "Po przyłączeniu tych terenów do Warszawy w 1916 roku nadano ulicy nazwę Skotnicka.",
+      "W 1934 roku ulicę wybrukowano na części jej długości.",
+      "Zabudowa ulicy została niemal całkowicie zniszczona w czasie II wojny światowej; dom nr 15 przetrwał do około 2005 roku i został rozebrany pod budowę nowego domu jednorodzinnego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Skotnicka is a short dead-end street of about 40 metres in Marymont-Potok, Żoliborz. It was named in the interwar period after the village of Skotniki. Most of its buildings were destroyed in World War II, and the last surviving house, No. 15, was demolished around 2005.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Skotnicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Skotnicka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres z infoboksu (XIX wiek). Tekst wskazuje, że ulica istniała jako polna ścieżka w XIX wieku, a zabudowę uzyskała w okresie międzywojennym. Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-smoszewska",
+    "nazwa": "Ulica Smoszewska",
+    "name_en": "Smoszewska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Smoszewska",
+    "adres_historyczny": null,
+    "lat": 52.2801457,
+    "lon": 20.9841159,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIX i XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Smoszewska ma około 100 metrów długości i biegnie ślepo od ul. Tylżyckiej na południe.",
+      "Ulica została włączona w granice miasta w 1916 roku, a najpóźniej w 1921 roku otrzymała nazwę Smoszewska, odwołującą się do miejscowości Smoszewo na Mazowszu.",
+      "Przed nazwą Smoszewska nosiła nazwę Środkowa.",
+      "Pod koniec lat 70. XX wieku zlikwidowano niemal całą zabudowę dawnej osady Potok; przy ul. Smoszewskiej zachowały się dwa budynki, nr 7 i nr 9.",
+      "Kamienica nr 9, jedyna z dawnej zabudowy, nie została wyburzona i jest obecnie siedzibą administracji osiedla Potok."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Smoszewska is an internal estate road of about 100 metres in Marymont-Potok, named after the village of Smoszewo. It was originally called Środkowa. Most of the old Potok settlement was demolished in the late 1970s, and only the tenement at No. 9 survives.",
+    "ludzie": [],
+    "dawne_nazwy": ["Środkowa"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Smoszewska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Smoszewska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka. Tekst zawiera też: budynek nr 7 został z czasem wyburzony."
+  }
+]
