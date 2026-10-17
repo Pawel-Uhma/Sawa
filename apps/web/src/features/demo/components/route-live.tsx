@@ -47,8 +47,8 @@ export type RouteLiveProps = {
   storyState: "loading" | "ready" | "failed";
   /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
   transcript: TranscriptPart[];
-  /** Sterowanie opowieścią (`PodcastControls`), na samej górze arkusza. */
-  controls: ReactNode;
+  /** Nagłówek z nazwą miejsca (`PodcastHeader`), na samej górze arkusza; sterowanie jest w doku. */
+  header: ReactNode;
 };
 
 /* ------------------------------------------------------------------ */
@@ -216,7 +216,7 @@ export function RouteLive({
   storyText,
   storyState,
   transcript,
-  controls,
+  header,
 }: RouteLiveProps) {
   const t = useT();
   const waiting = waitSec !== null;
@@ -262,14 +262,15 @@ export function RouteLive({
   return (
     <div className="flex flex-col gap-4">
       {isDesktop && <SawaMenuButton variant="inline" />}
-      {controls}
+      {header}
+      {/* Zapis wypełnia miejsce między nagłówkiem a dokiem (wysokości mierzy arkusz) */}
       <div className="relative">
         <div
           ref={scrollRef}
           onTouchMove={stopFollowing}
           onWheel={stopFollowing}
           onScroll={resumeAtEdge}
-          className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-400px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
+          className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-var(--trasa-glowa,150px)-var(--trasa-dok,190px)-16px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
         >
           <div className="pb-[40%] pt-6">
             {past.map((part) => (
@@ -282,11 +283,7 @@ export function RouteLive({
             ))}
             {stop && (
               <section>
-                {past.length > 0 && (
-                  <p className="mb-1 text-xs font-bold text-glebia">
-                    {activeIndex + 1} · {stop.name}
-                  </p>
-                )}
+                {/* Bez etykiety: nazwa bieżącego miejsca jest w nagłówku tuż nad zapisem */}
                 {waiting ? (
                   <PlacePreview placeId={stop.id} />
                 ) : (

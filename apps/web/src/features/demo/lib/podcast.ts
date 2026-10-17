@@ -26,3 +26,12 @@ export function inMinutes(sec: number, lang: Lang = "pl"): string {
 export function backTarget(activeIndex: number, progress: number): number {
   return progress < RESTART_PROGRESS && activeIndex > 0 ? activeIndex - 1 : activeIndex;
 }
+
+/**
+ * Nazwa miejsca bez adresu w nawiasie na końcu, np. „Szpital św. Zofii (ul. Żelazna 90)”:
+ * tytuł zostaje krótki, a adres idzie pod niego osobną linią.
+ */
+export function splitName(name: string): { title: string; sub: string | null } {
+  const match = /^(.+?)\s*\(([^()]+)\)\s*$/.exec(name);
+  return match ? { title: match[1], sub: match[2] } : { title: name, sub: null };
+}

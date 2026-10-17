@@ -1,7 +1,7 @@
 "use client";
 
 import type { Leg } from "@sawa/shared";
-import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
+import { animate, motion, useMotionValue, useReducedMotion, useTransform } from "motion/react";
 import { type ReactNode, type RefObject, useCallback, useEffect, useRef, useState } from "react";
 import { useT } from "@/features/i18n";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
@@ -11,7 +11,7 @@ import { backTarget } from "../lib/podcast";
 import { dueIndex as placeAt, type RideClock, storyStartSec } from "../lib/ride-clock";
 import type { StoryPlayer } from "../lib/story-player";
 import { RoutesIcon } from "./icons";
-import { PodcastControls } from "./podcast-controls";
+import { PodcastDock, PodcastHeader, usePodcast } from "./podcast-controls";
 import { RouteLive } from "./route-live";
 
 type RouteSheetProps = {
@@ -116,7 +116,18 @@ export function RouteSheet(props: RouteSheetProps) {
   // Suwak obejmuje całą jazdę, a co najmniej start ostatniej opowieści
   const last = stops[stops.length - 1];
   const totalSec = Math.max(props.totalSec, last ? storyStartSec(last) + 60 : 0);
-  const controlsRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
+  const dockRef = useRef<HTMLDivElement>(null);
+  const podcast = usePodcast({
+    stops,
+    activeIndex,
+    rideSec: clock.rideSec,
+    totalSec,
+    isPlaying: player.isPlaying,
+    waiting: clock.waitSec !== null,
+    held: clock.held,
+    loading: player.loading,
+  });
 
   const content = (
     <RouteLive
@@ -127,41 +138,81 @@ export function RouteSheet(props: RouteSheetProps) {
       storyText={player.text}
       transcript={transcript}
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
-      controls={
-        <div ref={controlsRef} className="pb-[env(safe-area-inset-bottom)]">
-          <PodcastControls
-            stops={stops}
-            activeIndex={activeIndex}
-            rideSec={clock.rideSec}
-            totalSec={totalSec}
-            isPlaying={player.isPlaying}
-            waiting={clock.waitSec !== null}
-            held={clock.held}
-            loading={player.loading}
-            onToggle={togglePlay}
-            onStop={() => restart(false)}
-            onBack={goBack}
-            onNext={goNext}
-            onMore={more}
-            onSeek={seek}
-            onLeave={props.onBack}
-          />
+      header={
+        <div ref={headerRef}>
+          <PodcastHeader podcast={podcast} onLeave={props.onBack} />
         </div>
       }
     />
   );
+  const dock = (
+    <PodcastDock
+      podcast={podcast}
+      onToggle={togglePlay}
+      onStop={() => restart(false)}
+      onBack={goBack}
+      onNext={goNext}
+      onMore={more}
+      onSeek={seek}
+    />
+  );
 
   return props.isDesktop ? (
-    <DesktopPanel>{content}</DesktopPanel>
+    <DesktopPanel headerRef={headerRef} dockRef={dockRef} dock={dock}>
+      {content}
+    </DesktopPanel>
   ) : (
-    <MobileSheet onCoverChange={props.onCoverChange} controlsRef={controlsRef}>
+    <MobileSheet
+      onCoverChange={props.onCoverChange}
+      headerRef={headerRef}
+      dockRef={dockRef}
+      dock={dock}
+    >
       {content}
     </MobileSheet>
   );
 }
 
-function DesktopPanel({ children }: { children: ReactNode }) {
+/**
+ * Dół nagłówka od góry arkusza i wysokość doku (px), mierzone, bo zależą od czcionek i długości
+ * nazw. Zapis opowieści bierze z nich wysokość (`--trasa-glowa`, `--trasa-dok`).
+ */
+function useChrome(
+  headerRef: RefObject<HTMLDivElement | null>,
+  dockRef: RefObject<HTMLDivElement | null>,
+) {
+  const [chrome, setChrome] = useState({ headerBottom: 150, dockHeight: 190 });
+  useEffect(() => {
+    const header = headerRef.current;
+    const dock = dockRef.current;
+    if (!header || !dock) return;
+    const update = () =>
+      setChrome({
+        headerBottom: header.offsetTop + header.offsetHeight,
+        dockHeight: dock.offsetHeight,
+      });
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(header);
+    observer.observe(dock);
+    return () => observer.disconnect();
+  }, [headerRef, dockRef]);
+  return chrome;
+}
+
+function DesktopPanel({
+  children,
+  dock,
+  headerRef,
+  dockRef,
+}: {
+  children: ReactNode;
+  dock: ReactNode;
+  headerRef: RefObject<HTMLDivElement | null>;
+  dockRef: RefObject<HTMLDivElement | null>;
+}) {
   const t = useT();
+  const { headerBottom, dockHeight } = useChrome(headerRef, dockRef);
   return (
     <motion.section
       aria-label={t("Trasa", "Route")}
@@ -169,11 +220,18 @@ function DesktopPanel({ children }: { children: ReactNode }) {
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -32 }}
       transition={SPRING}
-      style={{ ["--trasa-widoczne" as string]: "calc(100dvh - 100px)" }}
+      style={{
+        ["--trasa-widoczne" as string]: "calc(100dvh - 48px)",
+        ["--trasa-glowa" as string]: `${headerBottom}px`,
+        ["--trasa-dok" as string]: `${dockHeight}px`,
+      }}
       className="karta absolute bottom-6 left-6 top-6 z-20 flex w-[360px] flex-col overflow-hidden rounded-[28px] lg:w-[400px]"
     >
       <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-6 pb-6 pt-6">
         {children}
+      </div>
+      <div ref={dockRef} className="shrink-0 border-t border-tekst/[0.06] px-6 pb-5 pt-3">
+        {dock}
       </div>
     </motion.section>
   );
@@ -193,43 +251,42 @@ function useViewportHeight() {
 
 /** Ile pikseli od dołu zajmuje przycisk „Trasa”, gdy arkusz jest schowany (mapa ma wtedy wolny cały ekran). */
 const HIDDEN_COVER_PX = 96;
-// Odstęp pod sterowaniem w zwiniętym arkuszu; pasek domowy iPhone'a dokłada safe area w samym sterowaniu
+// Odstęp między nagłówkiem a dokiem w zwiniętym arkuszu
 const CONTROLS_GAP_PX = 8;
 
 /**
- * Arkusz z dwoma punktami zatrzymania: zwinięty pokazuje tylko sterowanie opowieścią (reszta
- * ekranu to mapa), rozwinięty także zapis Sawy. Schowany zostaje tylko przycisk w prawym dolnym rogu.
- * Ciągnie się za każde miejsce, rzut wybiera punkt z rozpędu, ściągnięcie w dół chowa arkusz.
+ * Arkusz z dwoma punktami zatrzymania: zwinięty pokazuje nagłówek i dok (reszta ekranu to mapa),
+ * rozwinięty także zapis Sawy między nimi. Dok jest przypięty do dolnej krawędzi ekranu, więc
+ * przy przeciąganiu arkusza zostaje pod kciukiem, a zapis wyłania się nad nim (jak tekst w Muzyce).
+ * Schowany zostaje tylko przycisk w prawym dolnym rogu. Rzut wybiera punkt z rozpędu,
+ * ściągnięcie w dół chowa arkusz.
  */
 function MobileSheet({
   children,
+  dock,
   onCoverChange,
-  controlsRef,
+  headerRef,
+  dockRef,
 }: {
   children: ReactNode;
+  dock: ReactNode;
   onCoverChange: (px: number) => void;
-  /** Sterowanie na górze treści: zwinięty arkusz kończy się tuż pod nim. */
-  controlsRef: RefObject<HTMLDivElement | null>;
+  /** Nagłówek na górze treści: zwinięty arkusz kończy się tuż pod nim, plus dok. */
+  headerRef: RefObject<HTMLDivElement | null>;
+  dockRef: RefObject<HTMLDivElement | null>;
 }) {
   const t = useT();
   const reduce = useReducedMotion();
   const height = useViewportHeight();
-  // Dół sterowania od góry arkusza (px); mierzony, bo zależy od czcionek i długości nazw
-  const [controlsBottom, setControlsBottom] = useState(300);
-  useEffect(() => {
-    const el = controlsRef.current;
-    if (!el) return;
-    const update = () => setControlsBottom(el.offsetTop + el.offsetHeight);
-    update();
-    const observer = new ResizeObserver(update);
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [controlsRef]);
+  const { headerBottom, dockHeight } = useChrome(headerRef, dockRef);
+  const controlsBottom = headerBottom + CONTROLS_GAP_PX + dockHeight;
   const detents = {
     full: 64,
-    controls: Math.max(Math.round(height * 0.35), height - controlsBottom - CONTROLS_GAP_PX),
+    controls: Math.max(Math.round(height * 0.35), height - controlsBottom),
   };
   const y = useMotionValue(height);
+  // Dok stoi na dole ekranu: arkusz zjeżdża o y, dok wraca o tyle samo (sam transform, bez układu)
+  const dockY = useTransform(y, (value) => -value);
   const [detent, setDetent] = useState<keyof typeof detents>("controls");
   const [isHidden, setIsHidden] = useState(true);
   const sheetRef = useRef<HTMLElement>(null);
@@ -298,8 +355,13 @@ function MobileSheet({
         inert={isHidden}
         exit={reduce ? { opacity: 0 } : { y: height }}
         transition={SPRING}
-        // Widoczna część arkusza przy punkcie zatrzymania: zapis Sawy dopasowuje do niej wysokość
-        style={{ y, ["--trasa-widoczne" as string]: `${height - detents[detent]}px` }}
+        // Zapis Sawy ma od razu wysokość z pełnego arkusza, więc przy wyciąganiu tylko się odsłania
+        style={{
+          y,
+          ["--trasa-widoczne" as string]: `${height - detents.full}px`,
+          ["--trasa-glowa" as string]: `${headerBottom}px`,
+          ["--trasa-dok" as string]: `${dockHeight}px`,
+        }}
         className={`karta absolute inset-x-0 top-0 z-20 flex h-dvh flex-col rounded-t-[28px] border-b-0 ${
           isFull ? "" : "touch-none"
         }`}
@@ -324,13 +386,20 @@ function MobileSheet({
         {/* Stała wysokość (widoczna część przy pełnym rozmiarze): arkusz jedzie transformem, bez przeliczania układu w każdej klatce */}
         <div
           ref={scrollRef}
-          style={{ height: height - detents.full - 34 }}
-          className={`overscroll-contain px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] ${
+          style={{ height: height - detents.full - 34, paddingBottom: dockHeight + 24 }}
+          className={`overscroll-contain px-4 ${
             isFull ? "touch-pan-y overflow-y-auto" : "overflow-hidden"
           }`}
         >
           {children}
         </div>
+        <motion.div
+          ref={dockRef}
+          style={{ y: dockY }}
+          className="absolute inset-x-0 bottom-0 border-t border-tekst/[0.06] bg-powierzchnia px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-8px_24px_rgba(16,43,42,0.06)]"
+        >
+          {dock}
+        </motion.div>
       </motion.section>
 
       <motion.button

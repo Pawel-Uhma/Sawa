@@ -1,0 +1,17 @@
+/* Wspólne elementy makiet 2300-czas-* (nagłówek karty wyznaczania: ucięte „Ile masz czasu?”) */
+.karta { bottom: 28px; padding-top: 18px; }
+.suwak { position: relative; height: 28px; margin: 6px 4px 0; }
+.suwak .tor { position: absolute; left: 0; right: 0; top: 12px; height: 5px; border-radius: 3px; background: rgba(16,43,42,.07); }
+.suwak .pelny { position: absolute; left: 0; top: 12px; height: 5px; border-radius: 3px; background: var(--glebia); width: var(--p); }
+.suwak .kciuk { position: absolute; top: 0; left: var(--p); width: 30px; height: 30px; margin-left: -15px; border-radius: 50%;
+  background: #fff; box-shadow: 0 2px 8px rgba(16,43,42,.22), 0 0 0 .5px rgba(16,43,42,.08); }
+.podzialki { position: relative; height: 18px; margin: 6px 4px 0; font-size: 12px; font-weight: 600; color: var(--tekst-3); font-variant-numeric: tabular-nums; }
+.podzialki span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.podzialki span:first-child { transform: none; }
+.podzialki span:last-child { transform: translateX(-100%); }
+.pole { display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 14px; margin-top: 10px; border-radius: 14px;
+  background: rgba(16,43,42,.05); color: var(--tekst-3); font-size: 15px; font-weight: 500; }
+.pole svg { width: 18px; height: 18px; }
+.przycisk.wyl { background: #A9C3C2; box-shadow: none; }
+.wartosc { font-size: 44px; font-weight: 800; letter-spacing: -.04em; line-height: 1; color: var(--glebia); font-variant-numeric: tabular-nums; }
+.wartosc small { font-size: 15px; font-weight: 600; letter-spacing: 0; color: var(--tekst-3); margin-left: 6px; }
