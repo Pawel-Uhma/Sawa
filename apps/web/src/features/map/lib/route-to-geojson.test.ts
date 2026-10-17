@@ -55,6 +55,7 @@ const ROUTE: Route = {
     },
   ],
   totalMin: 13,
+  endsAtStart: false,
   attribution: [],
 };
 

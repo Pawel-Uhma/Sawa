@@ -1,20 +1,27 @@
-import { type PlaceSummaryFeature, PlaceSummaryFeatureSchema } from "@sawa/shared";
+import { PlacesResponseSchema } from "@sawa/shared";
 import { useQuery } from "@tanstack/react-query";
-import placesSample from "../__fixtures__/api-places-sample.json";
+import { API_TIMEOUT_MS, api } from "@/lib/api";
+import { PLACES_BBOX } from "../lib/map-style";
 
-/** Features that fail validation are skipped, not fatal (contract: validated one by one). */
-function parsePlaces(collection: { features: unknown[] }): PlaceSummaryFeature[] {
-  return collection.features.flatMap((feature) => {
-    const parsed = PlaceSummaryFeatureSchema.safeParse(feature);
-    return parsed.success ? [parsed.data] : [];
-  });
-}
+const BBOX_PARAM = [
+  PLACES_BBOX.minLng,
+  PLACES_BBOX.minLat,
+  PLACES_BBOX.maxLng,
+  PLACES_BBOX.maxLat,
+].join(",");
 
+/** All places of the data area at once; interests are filtered in the browser (14-plan-mapy §6). */
 export function usePlaces() {
   return useQuery({
-    queryKey: ["places"],
-    // TODO(T-30): switch to api.v1.places.$get() once R2 mounts GET /v1/places.
-    queryFn: async () => parsePlaces(placesSample),
+    queryKey: ["places", BBOX_PARAM],
+    queryFn: async () => {
+      const res = await api.v1.places.$get(
+        { query: { bbox: BBOX_PARAM } },
+        { init: { signal: AbortSignal.timeout(API_TIMEOUT_MS) } },
+      );
+      if (!res.ok) throw new Error(`GET /v1/places: ${res.status}`);
+      return PlacesResponseSchema.parse(await res.json()).features;
+    },
     staleTime: Number.POSITIVE_INFINITY,
   });
 }

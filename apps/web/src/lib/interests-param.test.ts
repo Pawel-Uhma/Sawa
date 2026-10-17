@@ -7,10 +7,10 @@ describe("parseInterestsParam", () => {
     expect(parseInterestsParam("")).toEqual([]);
   });
 
-  it("keeps known keys and drops unknown ones and duplicates", () => {
-    expect(parseInterestsParam("architecture, ufo,war_uprising,architecture")).toEqual([
-      "architecture",
-      "war_uprising",
+  it("keeps known categories and drops unknown keys and duplicates", () => {
+    expect(parseInterestsParam("cultural, ufo,historical,cultural")).toEqual([
+      "cultural",
+      "historical",
     ]);
   });
 });

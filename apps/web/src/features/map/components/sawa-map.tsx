@@ -1,7 +1,7 @@
 "use client";
 
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { PlaceSummaryFeature, Route } from "@sawa/shared";
+import type { Interest, PlaceSummaryFeature, Route } from "@sawa/shared";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -25,8 +25,8 @@ const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID];
 const ROUTE_PADDING = { top: 48, right: 32, bottom: 200, left: 32 };
 
 export type SawaMapProps = {
-  /** User interests from onboarding; empty = all places. */
-  interests: readonly string[];
+  /** Categories from onboarding; empty = all places. */
+  interests: readonly Interest[];
   route?: Route;
 };
 
@@ -86,7 +86,7 @@ export function SawaMap({ interests, route }: SawaMapProps) {
           </button>
         </p>
       )}
-      {selected && <PlaceSheet place={selected} onClose={() => select(null)} />}
+      {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );
 }
@@ -101,9 +101,10 @@ function findPlace(
   const summary = places.find((p) => p.properties.id === id)?.properties;
   if (!summary && !onRoute) return null;
   return {
+    id,
     name: summary?.name ?? onRoute?.properties.name ?? id,
     kind: summary?.kind,
-    interests: summary?.interests,
+    tags: summary?.interests,
     order: onRoute?.properties.order,
   };
 }
