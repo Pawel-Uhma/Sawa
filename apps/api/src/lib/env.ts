@@ -42,6 +42,14 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /**
+   * OSRM server with the foot profile for walking paths (default: FOSSGIS, OpenStreetMap data,
+   * no key); empty = straight walking lines.
+   */
+  WALK_ROUTER_URL: z
+    .string()
+    .default("https://routing.openstreetmap.de/routed-foot")
+    .transform((v) => v || undefined),
   /** "1": poll ZTM vehicle positions all the time, not only while someone tracks a ride. */
   VEHICLES_ALWAYS_ON: z
     .string()

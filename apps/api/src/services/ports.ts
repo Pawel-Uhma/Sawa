@@ -29,14 +29,18 @@ export interface LiveBoardingSource {
   boardAtMs(leg: TrackLeg): Promise<number | undefined>;
 }
 
-/** Walking path along streets between two points; undefined when unknown (no route, timeout). */
-export interface WalkPathSource {
-  path(from: LatLng, to: LatLng): Promise<LatLng[] | undefined>;
-}
-
 /** Live tram and bus positions (ZTM, refreshed every 10 s). Throws AppError when ZTM fails. */
 export interface VehiclePositionSource {
   positions(): Promise<VehicleReport[]>;
+}
+
+/** Walking paths along streets and footways (OSRM foot profile). */
+export interface WalkPathSource {
+  /**
+   * The path through `points` in order, as [lng, lat] pairs starting and ending at the first
+   * and last point; undefined when unknown (router down, timeout, no path).
+   */
+  path(points: LatLng[]): Promise<[number, number][] | undefined>;
 }
 
 /** Tram and bus network for one service day (apps/api/data/transit-graph.json.gz). */

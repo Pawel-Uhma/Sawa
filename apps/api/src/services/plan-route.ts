@@ -1,5 +1,4 @@
-import { fromLngLat, type LatLng, type PlanRouteRequest, type Route, toLngLat } from "@sawa/shared";
-import { FOOT_ROUTING_ATTRIBUTION } from "../adapters/osm/foot-routing";
+import { fromLngLat, type LatLng, type PlanRouteRequest, type Route } from "@sawa/shared";
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
 import { DEFAULT_SEARCH_OPTIONS, planRide, type Ride } from "../domain/routing/beam-search";
@@ -86,7 +85,7 @@ export function createRoutePlanner(deps: {
   departures?: DepartureSource;
   /** Live delay of the first vehicle to board, from ZTM positions. */
   live?: LiveBoardingSource;
-  /** Street paths for walking legs (drawn straight without it). */
+  /** Walking legs follow streets and footways; without it (or when it fails) straight lines. */
   walkPaths?: WalkPathSource;
   logger?: PlannerLogger;
   /** Milliseconds; for the cache TTL. */
@@ -192,7 +191,6 @@ export function createRoutePlanner(deps: {
       : [];
   }
 
-  /** Puts each leg on a real departure from the ZTM timetable, when there is a source. */
   /**
    * Real times for the ride: each leg on a departure from the ZTM timetable, then the first
    * vehicle's live delay from its position (the GTFS graph is a snapshot of one day with
@@ -256,7 +254,25 @@ export function createRoutePlanner(deps: {
       : route;
   }
 
-  async function planRoute(request: PlanRouteRequest, now: Date): Promise<Route> {
+  /**
+   * Walking legs drawn along real paths. Only the shape changes: times stay the planner's
+   * (straight line × detour factor), so place ETAs and story windows still match.
+   */
+  async function withWalkPaths(route: Route): Promise<Route> {
+    const source = deps.walkPaths;
+    if (!source) return route;
+    const legs = await Promise.all(
+      route.legs.map(async (leg) => {
+        if (leg.mode !== "walk" || leg.lngLats.length < 2) return leg;
+        const path = await source.path(leg.lngLats.map(fromLngLat));
+        return path ? { ...leg, lngLats: path } : leg;
+      }),
+    );
+    return { ...route, legs };
+  }
+
+  /** Plans with straight walking legs; `plan` then draws them along paths. */
+  async function planStraight(request: PlanRouteRequest, now: Date): Promise<Route> {
     const { hitsByPattern, placesById } = await prepare(
       reachableBbox(
         request.destination ? [request.origin, request.destination] : [request.origin],
@@ -377,35 +393,9 @@ export function createRoutePlanner(deps: {
     );
   }
 
-  /** Walking legs along streets instead of straight lines, where the router answers. */
-  async function withStreetWalks(route: Route): Promise<Route> {
-    const source = deps.walkPaths;
-    if (!source || !route.legs.some((l) => l.mode === "walk")) return route;
-    let routed = false;
-    const legs = await Promise.all(
-      route.legs.map(async (leg) => {
-        if (leg.mode !== "walk" || leg.lngLats.length < 2) return leg;
-        const segments = await Promise.all(
-          leg.lngLats.slice(1).map(async (to, i) => {
-            const from = leg.lngLats[i] as [number, number];
-            const path = await source.path(fromLngLat(from), fromLngLat(to));
-            if (path) routed = true;
-            return path ? path.map(toLngLat) : [from, to];
-          }),
-        );
-        // Consecutive segments share their joint point.
-        const lngLats = segments.flatMap((s, i) => (i === 0 ? s : s.slice(1)));
-        return { ...leg, lngLats };
-      }),
-    );
-    return routed
-      ? { ...route, legs, attribution: [...route.attribution, FOOT_ROUTING_ATTRIBUTION] }
-      : route;
-  }
-
   return {
     async plan(request, now) {
-      return withStreetWalks(await planRoute(request, now));
+      return withWalkPaths(await planStraight(request, now));
     },
   };
 }
