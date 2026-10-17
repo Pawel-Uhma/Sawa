@@ -84,11 +84,13 @@ export function startLabel(status: StartStatus, lang: Lang = "pl"): string {
 
 /**
  * Start przejażdżki. Lokalizację śledzi dopiero, gdy `enabled` (po onboardingu),
- * żeby przeglądarka nie pytała o zgodę na pierwszym ekranie.
+ * żeby przeglądarka nie pytała o zgodę na pierwszym ekranie. `position` to każdy odczyt
+ * GPS (kropka na mapie, zegar jazdy), `point` rusza się dopiero o `MIN_START_MOVE_M`.
  */
 export function useStartPoint(enabled: boolean) {
   const [mode, setModeState] = useState<StartMode>("gps");
   const [fix, setFix] = useState<LatLng | null>(null);
+  const [position, setPosition] = useState<LatLng | null>(null);
   const [error, setError] = useState<GeoError | null>(null);
 
   useEffect(() => setModeState(loadStartMode()), []);
@@ -102,6 +104,7 @@ export function useStartPoint(enabled: boolean) {
     const id = navigator.geolocation.watchPosition(
       ({ coords }) => {
         const next = { lat: coords.latitude, lng: coords.longitude };
+        setPosition(next);
         setFix((current) =>
           current && haversineM(current, next) < MIN_START_MOVE_M ? current : next,
         );
@@ -119,5 +122,7 @@ export function useStartPoint(enabled: boolean) {
   }, []);
 
   const start = useMemo(() => resolveStart(mode, fix, error), [mode, fix, error]);
-  return { ...start, mode, setMode };
+  // Poza trasą (start spod 42 Warsaw, brak zgody, poza Warszawą) nie udajemy, że wiemy, gdzie jest telefon
+  const live = start.status === "located" ? position : null;
+  return { ...start, position: live, mode, setMode };
 }
