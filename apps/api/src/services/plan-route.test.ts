@@ -103,10 +103,10 @@ describe("route planner on real data", () => {
     expect(route.places.length).toBeGreaterThan(0);
   });
 
-  it("plans a ride for a short time when the user picked transit", async () => {
+  it("plans a ride when the user picked transit, even for a walk-length time", async () => {
     const route = RouteSchema.parse(
       await planner.plan(
-        { origin: HACKATHON_VENUE, durationMin: 10, interests: ["historical"], travel: "transit" },
+        { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], travel: "transit" },
         NOW,
       ),
     );

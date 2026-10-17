@@ -12,6 +12,9 @@ export const FAMILIARITY = ["first_time", "know_a_bit", "local"] as const;
 export type Familiarity = (typeof FAMILIARITY)[number];
 export const STORY_STYLES = ["fun", "deep", "trivia"] as const;
 export type StoryStyle = (typeof STORY_STYLES)[number];
+/** "walk": spacer po miejscach; "transit": przejażdżka tramwajem i autobusem. */
+export const TRAVEL = ["walk", "transit"] as const;
+export type Travel = (typeof TRAVEL)[number];
 
 export const PlanRouteRequestSchema = z
   .object({
@@ -26,6 +29,11 @@ export const PlanRouteRequestSchema = z
     familiarity: z.enum(FAMILIARITY).optional(),
     /** How Sawa tells stories: sets the shortest time between two places. */
     storyStyle: z.enum(STORY_STYLES).optional(),
+    /**
+     * Walk or transit, as the user picked. Without it the planner walks only under 30 min and
+     * takes a walk when it scores better than a ride.
+     */
+    travel: z.enum(TRAVEL).optional(),
     /**
      * What the listener already heard: place id → number of its facts told (apps/web memory).
      * Places told in full count much less, so with time rides go to less obvious places.

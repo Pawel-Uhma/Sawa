@@ -1,6 +1,6 @@
 "use client";
 
-import type { Route } from "@sawa/shared";
+import type { Route, Travel } from "@sawa/shared";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { planRoute, routeLine } from "../lib/api-data";
@@ -19,6 +19,8 @@ type RidesPanelProps = {
   onDurationChange: (durationMin: number) => void;
   /** Koniec trasy wybrany na ekranie głównym; podgląd planuje z nim, żeby start pokazał to samo. */
   rideEnd: RideEnd;
+  /** Pieszo albo komunikacją, wybrane na ekranie głównym; podgląd planuje tak samo. */
+  travel: Travel;
   /** Trasa wyznaczona wcześniej w tej sesji (pusta, jeśli jeszcze żadnej nie było). */
   lastRoute: MockStop[];
   onOpenLastRoute: () => void;
@@ -34,6 +36,7 @@ export function RidesPanel({
   durationMin,
   onDurationChange,
   rideEnd,
+  travel,
   lastRoute,
   onOpenLastRoute,
   onStart,
@@ -44,7 +47,7 @@ export function RidesPanel({
   useEffect(() => {
     let cancelled = false;
     setFailed(false);
-    planRoute(durationMin, profile, rideEnd)
+    planRoute(durationMin, profile, rideEnd, travel)
       .then((route) => !cancelled && setPreview(route))
       .catch(() => {
         if (cancelled) return;
@@ -54,7 +57,7 @@ export function RidesPanel({
     return () => {
       cancelled = true;
     };
-  }, [durationMin, profile, rideEnd]);
+  }, [durationMin, profile, rideEnd, travel]);
   const nearest = SEGMENTS.reduce((best, value) =>
     Math.abs(value - durationMin) < Math.abs(best - durationMin) ? value : best,
   );

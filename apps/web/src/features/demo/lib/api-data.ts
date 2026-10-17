@@ -6,6 +6,7 @@ import {
   type Route,
   STORY_STYLES,
   type StoryStyle,
+  type Travel,
 } from "@sawa/shared";
 import { api } from "@/lib/api";
 import { getMemory, heardCounts } from "./memory";
@@ -49,6 +50,7 @@ export async function planRoute(
   durationMin: number,
   profile: Profile,
   end: RideEnd = { type: "open" },
+  travel: Travel = "transit",
 ): Promise<Route> {
   const { interests, familiarity, storyStyle } = listenerOf(profile);
   const heard = heardCounts(getMemory());
@@ -58,6 +60,7 @@ export async function planRoute(
       durationMin,
       interests,
       ...rideEndRequest(end),
+      travel,
       familiarity,
       storyStyle,
       heard: Object.keys(heard).length > 0 ? heard : undefined,

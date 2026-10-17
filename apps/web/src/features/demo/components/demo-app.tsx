@@ -1,6 +1,6 @@
 "use client";
 
-import { interestsOfTags, type Route } from "@sawa/shared";
+import { interestsOfTags, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -56,6 +56,7 @@ export function DemoApp() {
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(90);
   const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "open" });
+  const [travel, setTravel] = useState<Travel>("transit");
   // Ostatni wybrany cel wraca po przełączeniu „Przed siebie” → „Do celu”
   const [lastDestination, setLastDestination] = useState<Extract<RideEnd, { type: "destination" }>>(
     { type: "destination", ...DESTINATION_PRESETS[0] },
@@ -81,13 +82,13 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(durationMin, profile, rideEnd));
+      showRoute(await planRoute(durationMin, profile, rideEnd, travel));
     } catch {
       setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
     } finally {
       setPlanning(false);
     }
-  }, [durationMin, profile, rideEnd, showRoute]);
+  }, [durationMin, profile, rideEnd, travel, showRoute]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);
@@ -277,6 +278,8 @@ export function DemoApp() {
                 interests={profile.interests}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                travel={travel}
+                onTravelChange={setTravel}
                 rideEnd={rideEnd}
                 onRideEndTypeChange={changeRideEndType}
                 onRideEndChange={changeRideEnd}
@@ -295,6 +298,7 @@ export function DemoApp() {
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
                 rideEnd={rideEnd}
+                travel={travel}
                 lastRoute={route}
                 onOpenLastRoute={() => {
                   setTab("map");

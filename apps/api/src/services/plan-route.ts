@@ -163,6 +163,29 @@ export function createRoutePlanner(deps: {
         heard: request.heard && new Map(Object.entries(request.heard)),
       };
       const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
+      const walkOnly = request.travel === "walk";
+      const walkRequest = {
+        places: [...placesById.values()],
+        origin: request.origin,
+        end: request.returnToStart ? request.origin : request.destination,
+        budgetSec,
+        interests,
+        prefs,
+      };
+      // The user picked a walk: no ride is planned at all.
+      if (walkOnly) {
+        const walk = planWalk(walkRequest);
+        if (!walk) throw new AppError("NOT_FOUND", "Nie udało się ułożyć spaceru z tych miejsc");
+        return buildWalkRoute({
+          walk,
+          placesById,
+          now,
+          attribution,
+          storyGapSec,
+          origin: request.origin,
+          destination: request.destination,
+        });
+      }
       let ride = planRide({
         network,
         hitsByPattern,
@@ -193,15 +216,9 @@ export function createRoutePlanner(deps: {
 
       // Short rides: walking to a stop and waiting can take the whole time, so a walk
       // past places competes with the ride (a ride counts only if it fits the time).
-      if (request.durationMin < WALK_UNDER_MIN) {
-        const walk = planWalk({
-          places: [...placesById.values()],
-          origin: request.origin,
-          end: request.returnToStart ? request.origin : request.destination,
-          budgetSec,
-          interests,
-          prefs,
-        });
+      // Picked "transit" skips this; no pick (auto) walks only under WALK_UNDER_MIN.
+      if (request.travel === undefined && request.durationMin < WALK_UNDER_MIN) {
+        const walk = planWalk(walkRequest);
         const rideFits =
           !!ride &&
           ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&

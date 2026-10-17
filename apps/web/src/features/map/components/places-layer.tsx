@@ -39,9 +39,9 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons }: PlacesLa
           layout={{
             "icon-image": placeKindIconExpression(),
             "icon-size": ICON_SIZE,
-            "icon-allow-overlap": true,
-            "icon-ignore-placement": true,
-            "symbol-sort-key": ["get", "richness"],
+            // Overlapping icons hide each other; richer places are placed first and win.
+            "icon-padding": 1,
+            "symbol-sort-key": ["-", 0, ["get", "richness"]],
           }}
           paint={{ "icon-opacity": opacity }}
         />

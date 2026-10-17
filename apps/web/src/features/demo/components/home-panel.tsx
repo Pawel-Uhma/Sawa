@@ -1,5 +1,6 @@
 "use client";
 
+import type { Travel } from "@sawa/shared";
 import {
   AnimatePresence,
   type MotionValue,
@@ -23,6 +24,8 @@ type HomePanelProps = {
   interests: string[];
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
+  travel: Travel;
+  onTravelChange: (travel: Travel) => void;
   rideEnd: RideEnd;
   onRideEndTypeChange: (type: RideEndType) => void;
   onRideEndChange: (end: RideEnd) => void;
@@ -42,6 +45,11 @@ function thumbCenter(durationMin: number): string {
   return `calc(15px + (100% - 30px) * ${sliderPercent(durationMin) / 100})`;
 }
 
+const TRAVEL_OPTIONS: { type: Travel; label: string }[] = [
+  { type: "walk", label: "Pieszo" },
+  { type: "transit", label: "Komunikacją" },
+];
+
 const END_OPTIONS: { type: RideEndType; label: string }[] = [
   { type: "open", label: "Przed siebie" },
   { type: "loop", label: "Wracam tu" },
@@ -53,6 +61,8 @@ export function HomePanel({
   interests,
   durationMin,
   onDurationChange,
+  travel,
+  onTravelChange,
   rideEnd,
   onRideEndTypeChange,
   onRideEndChange,
@@ -147,6 +157,8 @@ export function HomePanel({
         ))}
       </div>
 
+      <TravelPicker travel={travel} onChange={onTravelChange} />
+
       <RideEndPicker
         rideEnd={rideEnd}
         onTypeChange={onRideEndTypeChange}
@@ -175,6 +187,52 @@ export function HomePanel({
         </p>
       )}
     </FloatingCard>
+  );
+}
+
+type TravelPickerProps = {
+  travel: Travel;
+  onChange: (travel: Travel) => void;
+};
+
+/** Pieszo albo komunikacją: przełącznik segmentowy jak koniec trasy. */
+function TravelPicker({ travel, onChange }: TravelPickerProps) {
+  return (
+    <div
+      role="radiogroup"
+      aria-label="Jak jedziesz"
+      className="mt-4 flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
+    >
+      {TRAVEL_OPTIONS.map((option) => {
+        const isActive = option.type === travel;
+        return (
+          // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
+          <button
+            key={option.type}
+            type="button"
+            role="radio"
+            aria-checked={isActive}
+            onClick={() => {
+              if (isActive) return;
+              haptic(4);
+              onChange(option.type);
+            }}
+            className={`relative h-[34px] flex-1 rounded-[11px] text-[13px] font-semibold transition-colors duration-200 active:scale-[0.97] ${
+              isActive ? "text-tekst" : "text-tekst-2"
+            }`}
+          >
+            {isActive && (
+              <motion.span
+                layoutId="segment-sposob"
+                transition={SPRING}
+                className="absolute inset-0 rounded-[inherit] bg-white shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
+              />
+            )}
+            <span className="relative">{option.label}</span>
+          </button>
+        );
+      })}
+    </div>
   );
 }
 
