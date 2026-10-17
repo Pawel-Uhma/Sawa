@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planer tras: podgląd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/4.7.1/maplibre-gl.min.js"></script>
+  <style>
+    :root { --bg: #fff; --fg: #1d2327; --muted: #6b7280; --line: #e5e7eb; --err: #b91c1c; --accent: #17706f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 14px/1.4 system-ui, sans-serif; color: var(--fg); background: var(--bg); }
+    .app { display: grid; grid-template-columns: 360px 1fr; height: 100vh; }
+    aside { overflow-y: auto; padding: 16px; border-right: 1px solid var(--line); }
+    #map { height: 100%; }
+    h1 { font-size: 16px; margin: 0 0 4px; }
+    .hint { color: var(--muted); font-size: 12px; margin: 0 0 12px; }
+    label { display: block; }
+    .interests { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 8px; margin: 8px 0 12px; }
+    .row { display: flex; gap: 8px; margin: 12px 0; }
+    button { flex: 1; padding: 8px; border: 0; border-radius: 6px; background: var(--accent); color: #fff; font: inherit; cursor: pointer; }
+    button.secondary { background: #e5e7eb; color: var(--fg); }
+    button:disabled { opacity: .5; }
+    input[type=range] { width: 100%; }
+    .error { color: var(--err); background: #fef2f2; border: 1px solid #fecaca; padding: 8px; border-radius: 6px; white-space: pre-wrap; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; text-align: center; }
+    .stats div { background: #f3f4f6; border-radius: 6px; padding: 6px; }
+    .stats b { display: block; font-size: 18px; }
+    .leg { margin: 12px 0 4px; font-weight: 600; }
+    .leg span { display: inline-block; min-width: 32px; padding: 0 6px; border-radius: 4px; color: #fff; text-align: center; margin-right: 6px; }
+    ol { margin: 0; padding-left: 28px; }
+    li { margin: 2px 0; }
+    li small { color: var(--muted); }
+    .attr { color: var(--muted); font-size: 11px; margin-top: 16px; }
+    @media (max-width: 720px) {
+      .app { grid-template-columns: 1fr; grid-template-rows: 55vh auto; height: auto; }
+      #map { height: 55vh; order: -1; }
+      aside { border: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <h1>Planer tras: podgląd (R1)</h1>
+    <p class="hint">Kliknij mapę, żeby ustawić start. Strona tylko do testów, włączana przez DEBUG_PAGES=1.</p>
+    <label>Czas: <b id="minutesLabel">60</b> min
+      <input id="minutes" type="range" min="30" max="240" step="10" value="60" />
+    </label>
+    <div class="interests" id="interests"></div>
+    <div class="row">
+      <button id="plan" type="button">Planuj</button>
+      <button id="demo" type="button" class="secondary">Trasa demo</button>
+    </div>
+    <div id="error" class="error" hidden></div>
+    <div id="result"></div>
+  </aside>
+  <div id="map"></div>
+</div>
+<script>
+/*__CONFIG__*/
+const LABELS = {
+  war_uprising: "wojna i Powstanie", architecture: "architektura", industry: "przemysł",
+  religion: "religia", jewish_warsaw: "żydowska Warszawa", everyday_life: "codzienność",
+  street_art: "street art", people: "ludzie",
+};
+const COLORS = ["#d7263d", "#1b6ca8", "#2a9d5c"];
+const $ = (id) => document.getElementById(id);
+let origin = { ...window.SAWA.venue };
+
+window.SAWA.interests.forEach((key, i) => {
+  const label = document.createElement("label");
+  label.innerHTML = `<input type="checkbox" value="${key}" ${i < 3 ? "checked" : ""}> ${LABELS[key] ?? key}`;
+  $("interests").append(label);
+});
+$("minutes").oninput = (e) => { $("minutesLabel").textContent = e.target.value; };
+
+const map = new maplibregl.Map({
+  container: "map",
+  style: "https://tiles.openfreemap.org/styles/positron",
+  center: [origin.lng, origin.lat],
+  zoom: 13,
+});
+const originMarker = new maplibregl.Marker({ color: "#111", draggable: true })
+  .setLngLat([origin.lng, origin.lat]).addTo(map);
+originMarker.on("dragend", () => { const p = originMarker.getLngLat(); origin = { lat: p.lat, lng: p.lng }; });
+map.on("click", (e) => { origin = { lat: e.lngLat.lat, lng: e.lngLat.lng }; originMarker.setLngLat(e.lngLat); });
+
+const empty = { type: "FeatureCollection", features: [] };
+map.on("load", () => {
+  map.addSource("legs", { type: "geojson", data: empty });
+  map.addSource("stops", { type: "geojson", data: empty });
+  map.addSource("places", { type: "geojson", data: empty });
+  map.addLayer({ id: "legs", type: "line", source: "legs",
+    paint: { "line-color": ["get", "color"], "line-width": 5, "line-opacity": 0.85 },
+    layout: { "line-cap": "round", "line-join": "round" } });
+  map.addLayer({ id: "legs-label", type: "symbol", source: "legs",
+    layout: { "symbol-placement": "line", "text-field": ["get", "line"], "text-size": 13, "symbol-spacing": 250, "text-font": ["Noto Sans Bold"] },
+    paint: { "text-color": "#fff", "text-halo-color": ["get", "color"], "text-halo-width": 3 } });
+  map.addLayer({ id: "stops", type: "circle", source: "stops",
+    paint: { "circle-radius": 6, "circle-color": "#fff", "circle-stroke-color": "#111", "circle-stroke-width": 2 } });
+  map.addLayer({ id: "places", type: "circle", source: "places",
+    paint: { "circle-radius": 9, "circle-color": "#f59e0b", "circle-stroke-color": "#fff", "circle-stroke-width": 1.5 } });
+  map.addLayer({ id: "places-label", type: "symbol", source: "places",
+    layout: { "text-field": ["to-string", ["get", "n"]], "text-size": 11, "text-font": ["Noto Sans Bold"], "text-allow-overlap": true } });
+  map.on("click", "places", (e) => {
+    const p = e.features[0].properties;
+    new maplibregl.Popup().setLngLat(e.lngLat).setHTML(`<b>${p.n}. ${p.name}</b><br>${p.eta}, ${p.distanceM} m od linii`).addTo(map);
+  });
+});
+
+const mmss = (sec) => `${Math.floor(sec / 60)}:${String(Math.round(sec % 60)).padStart(2, "0")}`;
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
+function draw(route, ms) {
+  const legs = route.legs.map((leg, i) => ({ type: "Feature",
+    properties: { color: COLORS[i % COLORS.length], line: leg.line },
+    geometry: { type: "LineString", coordinates: leg.lngLats } }));
+  const stops = route.legs.flatMap((leg) => [leg.fromStop, leg.toStop]).map((s) => ({ type: "Feature",
+    properties: { name: s.name }, geometry: { type: "Point", coordinates: [s.position.lng, s.position.lat] } }));
+  const places = route.places.map((p, i) => ({ type: "Feature",
+    properties: { n: i + 1, name: p.name, eta: mmss(p.etaSec), distanceM: p.distanceM },
+    geometry: { type: "Point", coordinates: [p.position.lng, p.position.lat] } }));
+  map.getSource("legs").setData({ type: "FeatureCollection", features: legs });
+  map.getSource("stops").setData({ type: "FeatureCollection", features: stops });
+  map.getSource("places").setData({ type: "FeatureCollection", features: places });
+
+  const bounds = new maplibregl.LngLatBounds();
+  for (const leg of route.legs) for (const c of leg.lngLats) bounds.extend(c);
+  if (!bounds.isEmpty()) map.fitBounds(bounds, { padding: 40, maxZoom: 15 });
+
+  const legHtml = route.legs.map((leg, i) => {
+    const items = route.places.map((p, j) => ({ p, j })).filter(({ p }) => p.legIndex === i)
+      .map(({ p, j }) => `<li value="${j + 1}">${esc(p.name)} <small>${mmss(p.etaSec)} · okno ${p.windowSec} s · ${p.distanceM} m</small></li>`).join("");
+    const dep = new Date(leg.departAt).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+    return `<div class="leg"><span style="background:${COLORS[i % COLORS.length]}">${esc(leg.line)}</span>${leg.mode === "tram" ? "tramwaj" : "autobus"} → ${esc(leg.headsign)}</div>
+      <small>${dep} ${esc(leg.fromStop.name)} → ${esc(leg.toStop.name)}, ${leg.durationMin} min</small>
+      <ol>${items || "<li><small>brak miejsc po drodze</small></li>"}</ol>`;
+  }).join("");
+  $("result").innerHTML = `
+    <div class="stats"><div><b>${route.totalMin}</b>min</div><div><b>${route.legs.length - 1}</b>przesiadki</div><div><b>${route.places.length}</b>miejsca</div></div>
+    <small>Odpowiedź API: ${ms} ms</small>${legHtml}
+    <div class="attr">${route.attribution.map(esc).join("<br>")}</div>`;
+}
+
+async function call(path, body) {
+  $("error").hidden = true;
+  $("plan").disabled = $("demo").disabled = true;
+  const started = performance.now();
+  try {
+    const res = await fetch(path, body
+      ? { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) }
+      : undefined);
+    const json = await res.json();
+    if (!res.ok) throw new Error(`${res.status} ${json.error?.code ?? ""}\n${json.error?.message ?? JSON.stringify(json)}`);
+    draw(json, Math.round(performance.now() - started));
+  } catch (err) {
+    $("error").textContent = err.message;
+    $("error").hidden = false;
+  } finally {
+    $("plan").disabled = $("demo").disabled = false;
+  }
+}
+
+$("plan").onclick = () => call("/v1/routes/plan", {
+  origin,
+  durationMin: Number($("minutes").value),
+  interests: [...document.querySelectorAll("#interests input:checked")].map((i) => i.value),
+});
+$("demo").onclick = () => call("/v1/routes/demo");
+</script>
+</body>
+</html>

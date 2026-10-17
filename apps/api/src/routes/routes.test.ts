@@ -1,8 +1,9 @@
 import { ApiErrorSchema, HACKATHON_VENUE, RouteSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { createApp } from "../app";
+import { createFakeRoutePlanner } from "../services/fake-route-planner";
 
-const app = createApp({ corsOrigins: [] });
+const app = createApp({ corsOrigins: [], services: { routePlanner: createFakeRoutePlanner() } });
 
 const plan = (body: unknown) =>
   app.request("/v1/routes/plan", {
