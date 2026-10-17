@@ -84,7 +84,7 @@ export function LiveVehiclesLayer({ data }: LiveVehiclesLayerProps) {
         type="symbol"
         layout={{
           "icon-image": ["match", ["get", "mode"], "tram", "vehicle-tram", "vehicle-bus"],
-          "icon-size": ["case", ["==", ["get", "role"], "ride"], 1, 0.75],
+          "icon-size": ["case", ["==", ["get", "role"], "ride"], 0.55, 0.42],
           "icon-rotate": ["get", "bearingDeg"],
           "icon-rotation-alignment": "map",
           "icon-allow-overlap": true,
