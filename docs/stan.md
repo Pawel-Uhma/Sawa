@@ -6,7 +6,9 @@
 
 ## Teraz
 
-- 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`. API już to obsługuje (`e3a1596`, `adapters/waw/api.ts`); zostaje ustawić `WAW_API_BASE_URL` + `WAW_PROXY_KEY` na Railway (klucz od Antka prywatnie).
+- 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`.
+- 20:15 (Jasiek, z agentem): **pojazdy i odjazdy na żywo działają na produkcji (#63, T-145).** API woła `dane.um.warszawa.pl` przez proxy Antka (`WAW_API_BASE_URL`, `WAW_PROXY_KEY` na Railway, PR #86). `/v1/vehicles/track`: `stale: false` i pojazdy; trasa: `realDeparture: true`. Prod na `9eb3753`. **Uwaga (T-148):** Railway sam nie wdrożył merge'ów od 18:52, deploy był ręczny (`railway redeploy --from-source`). **Dla R1:** produkcja i lokalna instancja różnią się dla odcinka 127 odjeżdżającego za 34 min (prod bez pojazdu, lokalnie dwa); to prognoza z dłuższej historii, nie proxy.
+
 - 17.10, ok. 20:00 (rozmowa przy stole, [podsumowanie](spotkania/2026-10-17-2000-proxy-dane-mentorzy.md)): repo bez licencji (decydują organizatorzy); ekran trasy wariant B z suwakiem, rzadsze podziałki; większe zadania jako issues dla agenta z pętlą; PR-ów Pawła nie mergujemy hurtem. Proxy z home labu (#63) czeka na test. Głos źle czyta lata (T-144). Nowe zadania T-140–T-147. Otwarte: tryb dziecięcy robiony na Haiku do przejrzenia, parki na mapie, domyślny motyw.
 
 - 19:35 (Paweł, z agentem R3): **stany czekania wszędzie (T-131).** Wspólne klocki w `apps/web/src/components/waiting.tsx`; mapa, planowanie, opowieść, karta miejsca i przejażdżki mówią, co się dzieje, a przy długim czekaniu to przyznają. Typecheck, lint i testy zielone. Uwaga: lokalny web na porcie 3100 nie przechodzi CORS do API z Railway.
