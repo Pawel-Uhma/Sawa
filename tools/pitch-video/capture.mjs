@@ -35,13 +35,19 @@ const stories = [];
 mkdirSync("audio-cache", { recursive: true });
 await context.route(/railway\.app/, async (route) => {
   const path = new URL(route.request().url()).pathname;
-  const cacheFile = `audio-cache/${createHash("sha1").update(route.request().postData() ?? "").digest("hex")}.mp3`;
+  const cacheFile = `audio-cache/${createHash("sha1")
+    .update(route.request().postData() ?? "")
+    .digest("hex")}.mp3`;
   if (path === "/v1/stories/audio" && existsSync(cacheFile)) {
     const body = readFileSync(cacheFile);
     const file = `clip-${String(clips.length).padStart(2, "0")}.mp3`;
     writeFileSync(join(OUT, file), body);
     clips.push({ file, bytes: body.length, fetchedAt: Date.now() - t0 });
-    return route.fulfill({ status: 200, body, headers: { "content-type": "audio/mpeg", "access-control-allow-origin": "*" } });
+    return route.fulfill({
+      status: 200,
+      body,
+      headers: { "content-type": "audio/mpeg", "access-control-allow-origin": "*" },
+    });
   }
   const res = await route.fetch();
   const body = await res.body();
@@ -104,7 +110,12 @@ cdp.on("Page.screencastFrame", async ({ data, sessionId }) => {
   frames.push({ file, at: Date.now() - t0 });
   await cdp.send("Page.screencastFrameAck", { sessionId }).catch(() => {});
 });
-await cdp.send("Page.startScreencast", { format: "jpeg", quality: 92, maxWidth: VIEWPORT.width * 2, maxHeight: VIEWPORT.height * 2 });
+await cdp.send("Page.startScreencast", {
+  format: "jpeg",
+  quality: 92,
+  maxWidth: VIEWPORT.width * 2,
+  maxHeight: VIEWPORT.height * 2,
+});
 await page.goto(APP_URL);
 // Badż Next.js w trybie dev nie idzie na film.
 await page.addStyleTag({ content: "nextjs-portal{display:none!important}" });
@@ -113,7 +124,6 @@ await page.waitForTimeout(RECORD_MS);
 const plays = await page.evaluate(() => window.__plays);
 await context.close();
 await browser.close();
-
 
 const timeline = plays
   .filter((p) => p.at)
@@ -148,7 +158,24 @@ const list = frames.map((f, i) => {
 });
 writeFileSync(join(OUT, "frames.txt"), `${list.join("\n")}\nfile 'frames/${frames.at(-1).file}'\n`);
 // Pierwsza klatka przychodzi po starcie, więc wideo przesuwamy o jej czas (tpad), żeby t=0 było t0.
-execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", join(OUT, "frames.txt"),
-  "-vf", `tpad=start_duration=${frames[0].at / 1000}:start_mode=clone,fps=30,scale=786:1704:flags=lanczos,format=yuv420p`,
-  "-c:v", "libx264", "-crf", "16", "-preset", "slow", join(OUT, "screen.mp4")]);
+execFileSync("ffmpeg", [
+  "-y",
+  "-loglevel",
+  "error",
+  "-f",
+  "concat",
+  "-safe",
+  "0",
+  "-i",
+  join(OUT, "frames.txt"),
+  "-vf",
+  `tpad=start_duration=${frames[0].at / 1000}:start_mode=clone,fps=30,scale=786:1704:flags=lanczos,format=yuv420p`,
+  "-c:v",
+  "libx264",
+  "-crf",
+  "16",
+  "-preset",
+  "slow",
+  join(OUT, "screen.mp4"),
+]);
 rmSync(join(OUT, "frames"), { recursive: true });
