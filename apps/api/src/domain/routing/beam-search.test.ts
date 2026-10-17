@@ -15,6 +15,17 @@ describe("planRide", () => {
     expect(ride?.elapsedSec).toBeLessThanOrEqual(1.1 * 30 * 60);
   });
 
+  it.each([
+    [["architecture"], 30],
+    [["war_uprising"], 60],
+    [["architecture", "war_uprising"], 90],
+  ])("never rides a leg shorter than 3 minutes (%s, %i min)", (interests, budgetMin) => {
+    const ride = planRide(searchInput(PLACES, interests, budgetMin));
+    for (const leg of ride?.legs ?? []) {
+      expect(leg.alightElapsedSec - leg.boardElapsedSec).toBeGreaterThanOrEqual(180);
+    }
+  });
+
   it("uses at most two transfers", () => {
     const ride = planRide(searchInput(PLACES, ["war_uprising"], 60));
     expect(ride?.legs.length).toBeGreaterThan(0);

@@ -70,6 +70,16 @@ describe("route planner on real data", () => {
     const end = route.legs[route.legs.length - 1]?.toStop.position;
     expect(end && haversineM(end, castleSquare)).toBeLessThanOrEqual(600);
     expect(route.totalMin).toBeLessThanOrEqual(60 * 1.1);
+    const lines = route.legs.map((l) => l.line);
+    expect(new Set(lines).size).toBe(lines.length);
+  });
+
+  it.each([30, 60, 90])("rides at least 3 minutes on every leg (%i min)", async (durationMin) => {
+    const route = await planner.plan(
+      { origin: { lat: 52.2297, lng: 20.9719 }, durationMin, interests: ["historical"] },
+      NOW,
+    );
+    for (const leg of route.legs) expect(leg.durationMin).toBeGreaterThanOrEqual(3);
   });
 
   it("moves every leg to a real departure", async () => {
