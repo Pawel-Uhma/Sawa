@@ -1,0 +1,261 @@
+[
+  {
+    "id": "pawiak",
+    "nazwa": "Pawiak",
+    "name_en": "Pawiak Prison",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Dzielna 24/26",
+    "adres_historyczny": "plac pomiędzy ul. Dzielną a ul. Pawią",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1830–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół budynków więzienia powstał w latach 1830-1835 na półtorahektarowym placu pomiędzy Dzielną a Pawią.",
+      "W 1835 roku więzienie przeniesiono tutaj z dawnej Baszty Mostowej przy ul. Boleść.",
+      "Po 1863 roku Pawiak był więzieniem politycznym; osadzono tu m.in. Romualda Traugutta i Ludwika Waryńskiego.",
+      "Od 3 października 1939 roku więzienie działało pod okupacją niemiecką; w marcu 1940 roku stało się więzieniem śledczym Policji Bezpieczeństwa i Służby Bezpieczeństwa Dystryktu Warszawskiego, ze szczególnym uwzględnieniem gestapo.",
+      "W latach 1939-1944 na Pawiaku osadzono około 100 tysięcy mężczyzn i 20 tysięcy kobiet.",
+      "Spośród wszystkich więzionych rozstrzelano 37 tysięcy osób, a 60 tysięcy wywieziono do obozów koncentracyjnych.",
+      "Dnia 11 lutego 1944 roku gestapo dokonało masowej egzekucji więźniów, wieszając ich na ulicy Leszno naprzeciw sądów.",
+      "Więzienie zostało wysadzone przez Niemców 21 sierpnia 1944 roku podczas powstania warszawskiego.",
+      "Muzeum w zrekonstruowanych zabudowaniach otwarto 28 listopada 1965 roku; od 1990 roku jest oddziałem Muzeum Niepodległości.",
+      "W 2001 roku zabudowania wpisano na listę zabytków."
+    ],
+    "ciekawostki": [
+      "Jedna z uliczek biegnących wzdłuż muru więzienia otrzymała nazwę Więzienna.",
+      "26 kwietnia 1906 roku z Pawiaka uciekło 10 ludzi skazanych wcześniej na śmierć, a akcji przewodniczył Jan Tomasz „Jur” Gorzechowski."
+    ],
+    "summary_en": "Pawiak was a prison complex built in 1830-1835 on Dzielna Street, used by the tsarist, German and Gestapo authorities. The Germans blew it up during the Warsaw Uprising in August 1944. Since 1965 a museum has occupied the reconstructed part of the site, now a branch of the Museum of Independence.",
+    "ludzie": [
+      {"kto": "Jan Bytnar \"Rudy\"", "rola": "więzień Pawiaka", "wiki": null},
+      {"kto": "Romuald Traugutt", "rola": "więzień polityczny", "wiki": null},
+      {"kto": "Ludwik Waryński", "rola": "więzień polityczny; napisał tu utwór „Mazur Kajdaniarski”", "wiki": null},
+      {"kto": "Emanuel Ringelblum", "rola": "więzień Pawiaka", "wiki": null}
+    ],
+    "dawne_nazwy": ["Główne Więzienie Inkwizycyjne Guberni Warszawskiej"],
+    "zrodla": [{"tytul": "Warszawikia: Pawiak", "url": "https://warszawa.fandom.com/pl/wiki/Pawiak"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Dzielnica z nagłówka DZIELNICE (w rzeczywistości położenie przy Dzielnej to Muranów)."
+  },
+  {
+    "id": "palac-belina-brzozowskich",
+    "nazwa": "Pałac Belina-Brzozowskich",
+    "name_en": "Belina-Brzozowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Bracka 20",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1882–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał w 1882 roku według projektu Bronisława Brodzic-Żochowskiego dla rodziny Belina-Brzozowskich.",
+      "Dwupiętrowy pałac w stylu francuskiego neorenesansu stoi na tyłach kamienicy Jaroszyńskiego z lat 40. XIX wieku.",
+      "Przed wejściem stoi domek stróża (kordegarda) z 1881 roku, projektu Bronisława Brodzic-Żochowskiego.",
+      "10 września 1944 roku Niemcy zajęli pałac, a jego mieszkańców wypędzili lub wymordowali.",
+      "15 września 1944 roku powstańcy odbili pałac; pożar na strychu zniszczył ukryty obraz Jana Matejki „Zamojski pod Byczyną”.",
+      "Gmach odbudowano w latach 1948-1952 ze zmianą wnętrz.",
+      "W 1965 roku pałac został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Położony w ciemnym podwórku pałac stał się tłem dla powieści „Sława i chwała” Jarosława Iwaszkiewicza z 1956 roku."
+    ],
+    "summary_en": "A neo-Renaissance palace from 1882 hidden in the courtyard of the Jaroszyński tenement at Bracka 20. Badly damaged in the 1944 fighting, it was rebuilt in 1948-1952 and listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "Bronisław Brodzic-Żochowski", "rola": "projektant pałacu i domku stróża", "wiki": null},
+      {"kto": "Zbigniew Blichewicz \"Szczerba\"", "rola": "ppor., powstaniec; relacjonował odbicie pałacu we wrześniu 1944", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Belina-Brzozowskich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Belina-Brzozowskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-blanka",
+    "nazwa": "Pałac Blanka",
+    "name_en": "Blank Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Senatorska 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1762–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac Blanka został zbudowany w latach 1762-1764 przez Szymona Bogumiła Zuga, najlepszego w ówczesnym czasie architekta warszawskiego.",
+      "W 1777 roku właścicielem budynku został francuski bankier Piotr Blank, który przekształcił wnętrza i elewację w stylu klasycystycznym oraz dobudował bramę wjazdową.",
+      "Od 1916 roku w pałacu znajdowała się komenda Milicji Miejskiej, a po odzyskaniu niepodległości Komenda Policji Państwowej.",
+      "W okresie międzywojennym pałac był budynkiem reprezentacyjnym dla prezydenta Starzyńskiego.",
+      "Od 1940 do 1944 roku pałac był siedzibą Stadthauptmannschaft Warschau.",
+      "Pałac Blanka był pierwszym budynkiem odbudowanym po zniszczeniach wojennych w Warszawie, gdzie siedzibę otrzymał Wojewódzki Konserwator Zabytków.",
+      "Dziś w pałacu mieści się Ministerstwo Sportu i Turystyki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An 18th-century baroque palace at Senatorska 14, built in 1762-1764 by Szymon Bogumił Zug. Its owner Piotr Blank remodelled it in the classicist style; today it houses the Ministry of Sport and Tourism.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "architekt budowy pałacu (1762-1764)", "wiki": null},
+      {"kto": "Piotr Blank", "rola": "francuski bankier, właściciel od 1777 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Blanka", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Blanka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-czapskich",
+    "nazwa": "Pałac Czapskich",
+    "name_en": "Czapski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 5",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę pałacu rozpoczęto w latach 80. XVII wieku, prawdopodobnie według projektu Tylmana z Gameren, dla Michała Kazimierza Radziwiłła.",
+      "Adam Sieniawski wyposażył i przebudował pałac w latach 1713-1721.",
+      "Od 1733 roku pałac należał do Czapskich, którzy przebudowali go w latach 1752-1765, nadając mu późnobarokowy wygląd.",
+      "W 1810 roku pałac przejęli Krasińscy.",
+      "W latach 1829-1830 w lewej oficynie na drugim piętrze mieszkał wraz z rodziną Fryderyk Chopin.",
+      "Budynki zostały wypalone w 1939 roku, a oficyny uszkodzone w czasie powstania warszawskiego.",
+      "Całość odbudowano w latach 1949-1956 na potrzeby Akademii Sztuk Pięknych według projektu Stanisława Brukalskiego.",
+      "W 2004 roku pałac odrestaurowano i nadano mu ciemnoczerwoną barwę."
+    ],
+    "ciekawostki": [
+      "Neogotycka pompa podwórzowa z ok. 1850 roku, w postaci kolumny z kranem zakończonym głową smoka, stoi na dziedzińcu przy bramie wejściowej.",
+      "Pomnik konny kondotiera ustawiony obok pałacu jest kopią podobizny Bartolomea Colleoniego z 1494 roku."
+    ],
+    "summary_en": "A baroque palace at Krakowskie Przedmieście 5, begun in the 1680s and later remodelled by the Czapski and Krasiński families. Chopin lived in one of its wings in 1829-1830. Destroyed in 1939 and rebuilt in 1949-1956, it now houses the Academy of Fine Arts.",
+    "ludzie": [
+      {"kto": "Tylman z Gameren", "rola": "prawdopodobny projektant budowy z lat 80. XVII w.", "wiki": null},
+      {"kto": "Fryderyk Chopin", "rola": "mieszkaniec pałacu w latach 1829-1830", "wiki": null},
+      {"kto": "Zygmunt Krasiński", "rola": "pisarz; mieszkał w pałacu do 1859 roku", "wiki": null},
+      {"kto": "Zygmunt Vogel", "rola": "malarz; w latach 1808-1826 miał tu pracownię", "wiki": null},
+      {"kto": "Stanisław Brukalski", "rola": "projektant odbudowy w latach 1949-1956", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Raczyńskich", "Pałac Krasińskich"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Czapskich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Czapskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-jablonowskich",
+    "nazwa": "Pałac Jabłonowskich",
+    "name_en": "Jabłonowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Senatorska 14/16",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1773–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac został zbudowany w latach 1773–1785 dla Antoniego Jabłonowskiego według projektu Jakuba Fontany i Dominika Merliniego.",
+      "W latach 1817–1819 pałac przebudowano na ratusz miejski według projektu Fryderyka Alberta Lessla i Józefa Grzegorza Lessla.",
+      "Około 1823 roku na dachu dodano belwederek, czyli podstawę pod telegraf optyczny.",
+      "W roku 1863, w czasie powstania styczniowego, pałac uległ pożarowi.",
+      "Odbudowa w stylu neorenesansowym odbyła się w latach 1864–1868 według projektu Józefa Orłowskiego; wieża była czatownią Warszawskiej Straży Ogniowej.",
+      "W latach 1819–1944 pałac pełnił funkcję siedziby Prezydenta Warszawy i Urzędu Miasta.",
+      "We wrześniu 1939 roku z ratusza cywilną obroną Warszawy dowodził Stefan Starzyński.",
+      "W 1952 roku rozebrano wypalone ruiny pałacu, a w 1964 roku w tym miejscu odsłonięto pomnik Bohaterów Warszawy „Nike”.",
+      "W latach 1995–1997 budynek pałacu został zrekonstruowany na siedziby Banku Rozwoju Eksportu i Citibanku."
+    ],
+    "ciekawostki": [
+      "W 1917 roku, w setną rocznicę śmierci Tadeusza Kościuszki, na fasadzie pałacu odsłonięto tablicę pamiątkową."
+    ],
+    "summary_en": "An 18th-century palace at Senatorska 14/16 that served as Warsaw's city hall from 1819 to 1944. Destroyed in 1939-1944 and its ruins demolished in 1952, it was reconstructed in 1995-1997 with its historic clock tower.",
+    "ludzie": [
+      {"kto": "Antoni Jabłonowski", "rola": "inwestor budowy pałacu (1773–1785)", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Józef Orłowski", "rola": "projektant odbudowy w latach 1864–1868", "wiki": null},
+      {"kto": "Stefan Starzyński", "rola": "prezydent Warszawy; dowodził cywilną obroną Warszawy z ratusza we wrześniu 1939", "wiki": null},
+      {"kto": "Julian Kulski", "rola": "upamiętniony tablicą odsłoniętą w 2017 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["ratusz miejski (1819–1944)"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Jabłonowskich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Jabłonowskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  },
+  {
+    "id": "palac-karasia",
+    "nazwa": "Pałac Karasia",
+    "name_en": "Karaś Palace (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 2",
+    "adres_historyczny": "przy ul. Krakowskie Przedmieście, na południe od Pałacu Kazimierzowskiego",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1769–1914",
+    "istnieje": false,
+    "fakty": [
+      "Pałac Karasia powstał w latach 1769–1772 na południe od Pałacu Kazimierzowskiego, na działce zwanej Olborszczyzną, podarowanej Kazimierzowi Karasiowi przez króla Stanisława Augusta.",
+      "Projekt rezydencji, w stylu późnego baroku i wczesnego klasycyzmu, opracował Jakub Fontana.",
+      "W 1772 roku połowę rezydencji przekazano Królewskiemu Korpusowi Paziów.",
+      "W 1823 roku swoją pracownię otworzył tu rzeźbiarz Ludwik Kauffmann.",
+      "W 1830 roku przed budynkiem odsłonięto pomnik Mikołaja Kopernika.",
+      "W 1905 roku pałac zakupił inwestor Władysław Taubenhaus z zamiarem rozbiórki; po protestach prasy skrócono budynek o jedną oś, aby poszerzyć ulicę Oboźną.",
+      "Budynek rozebrano w latach 1913–1914.",
+      "Po 1946 roku, na mocy Dekretu Bieruta, działka stała się własnością miasta; przez lata pełniła funkcję parkingu."
+    ],
+    "ciekawostki": [
+      "Według przekazów, w 1794 roku w czasie insurekcji kościuszkowskiej pałac służył jako kwatera Tadeusza Kościuszki.",
+      "W narożniku przez wiele lat działał szynk „Pod Karasiem”."
+    ],
+    "summary_en": "A late-baroque palace on Krakowskie Przedmieście, designed by Jakub Fontana and built in 1769-1772. It was demolished in 1913-1914 and the plot has stayed unbuilt since, used for years as a car park.",
+    "ludzie": [
+      {"kto": "Kazimierz Karaś", "rola": "pierwszy właściciel, któremu król Stanisław August podarował działkę", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Ludwik Kauffmann", "rola": "rzeźbiarz; pracownia w budynku od 1823 roku", "wiki": null},
+      {"kto": "Władysław Taubenhaus", "rola": "inwestor, który kupił pałac w 1905 roku z zamiarem rozbiórki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Olborszczyzna (nazwa działki)"],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Karasia", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Karasia"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt nieistniejący. Brak współrzędnych w artykule; adres z tekstu. Artykuł opisuje też plany z 2010 roku, bez realizacji."
+  },
+  {
+    "id": "palac-karnickich",
+    "nazwa": "Pałac Karnickich",
+    "name_en": "Karnicki Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 39",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Neorenesansowy pałac zaprojektował Józef Huss dla rodziny rosyjskiego senatora Jana Karnickiego.",
+      "Wzniesiono go w latach 1877-78; ma dwa piętra i zwieńczenie w postaci attyki.",
+      "W czasie II wojny światowej i powstania warszawskiego budynek nie uległ żadnym istotnym zmianom lub uszkodzeniom.",
+      "Obecnie mieści siedzibę Niemieckiego Instytutu Historycznego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A neo-Renaissance palace built in 1877-78 at Aleje Ujazdowskie 39 for the family of Russian senator Jan Karnicki. It came through the war largely intact and now houses the German Historical Institute.",
+    "ludzie": [
+      {"kto": "Józef Huss", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Jan Karnicki", "rola": "rosyjski senator, dla którego rodziny wzniesiono pałac", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pałac Karnickich", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Karnickich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu."
+  }
+]

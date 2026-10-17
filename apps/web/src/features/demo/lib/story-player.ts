@@ -6,6 +6,7 @@ import { api } from "@/lib/api";
 import type { Listener } from "./api-data";
 import { getMemory, HEARD_AT_PROGRESS, rememberStory } from "./memory";
 import type { MockStop } from "./mock-data";
+import { etaSecOf } from "./ride-clock";
 
 /** Polish speech in ElevenLabs runs at about 2.5 words a second (same as the API). */
 const WORDS_PER_SEC = 2.5;
@@ -23,11 +24,14 @@ export type Clip = {
   told: Pick<Story, "placeId" | "factIds" | "contextIds"> & { placeName?: string };
 };
 
-/** Sawa may talk until the next stop. */
-function targetSecFor(stops: readonly MockStop[], index: number): number {
+/**
+ * Sawa may talk until the next stop: the planner's window (it knows the story style's limits),
+ * else the time between the two stops.
+ */
+export function targetSecFor(stops: readonly MockStop[], index: number): number {
   const stop = stops[index];
   const next = stops[index + 1];
-  const sec = stop && next ? (next.etaMin - stop.etaMin) * 60 : LAST_STOP_SEC;
+  const sec = stop?.windowSec ?? (stop && next ? etaSecOf(next) - etaSecOf(stop) : LAST_STOP_SEC);
   return Math.min(MAX_TARGET_SEC, Math.max(MIN_TARGET_SEC, Math.round(sec)));
 }
 
@@ -37,6 +41,19 @@ function targetSecFor(stops: readonly MockStop[], index: number): number {
  */
 export function clipKey(stopId: string, listener: Listener, targetSec: number): string {
   return JSON.stringify([stopId, targetSec, listener]);
+}
+
+/**
+ * The voice (ElevenLabs) is off by default because it burns credits. `?voice=1` in the URL turns it on.
+ * Without it the story text still shows and runs on a timer.
+ */
+export function voiceOn(): boolean {
+  if (typeof window === "undefined") return false;
+  try {
+    return new URLSearchParams(window.location.search).get("voice") === "1";
+  } catch {
+    return false;
+  }
 }
 
 /** Asks for a story with what Sawa already told this listener, so it tells something new. */
@@ -59,6 +76,7 @@ export async function fetchClip(
   const { text, factIds, contextIds } = await res.json();
   const told = { placeId, factIds, contextIds, placeName };
   // Without the voice the card still shows the text and runs on a timer.
+  if (!voiceOn()) return { text, audioUrl: null, told };
   try {
     // The same body hits the API's story cache, so the voice reads exactly this text.
     const audio = await api.v1.stories.audio.$post({ json });

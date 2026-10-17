@@ -6,6 +6,7 @@ import { type ReactNode, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
+import type { RideClock } from "../lib/ride-clock";
 import type { StoryPlayer } from "../lib/story-player";
 import { RouteLive } from "./route-live";
 
@@ -15,11 +16,15 @@ type RouteSheetProps = {
   end: { label: string; reached: boolean } | null;
   /** Odcinki trasy z planera: tramwaje, autobusy i spacery. */
   legs: Leg[];
+  /** Podpis źródeł danych trasy. */
+  attribution: string[];
   stops: MockStop[];
   /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
   player: StoryPlayer;
   activeIndex: number;
   onActiveChange: (index: number) => void;
+  /** Zegar jazdy: który punkt już powinien mieć opowieść i za ile następny. */
+  clock: Pick<RideClock, "dueIndex" | "nextInSec" | "waitSec">;
   onBack: () => void;
   isDesktop: boolean;
   /** Ile pikseli od dołu zasłania arkusz (telefon), żeby mapa wiedziała, gdzie jest jej widoczna część. */
@@ -28,22 +33,25 @@ type RouteSheetProps = {
 
 /** Trasa: arkusz z punktami zatrzymania na telefonie, pływający panel na desktopie. */
 export function RouteSheet(props: RouteSheetProps) {
-  const { stops, activeIndex, onActiveChange, player } = props;
+  const { stops, activeIndex, onActiveChange, player, clock } = props;
   const { setIsPlaying, rewind } = player;
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
 
-  // Po końcu opowieści Sawa przechodzi do następnego punktu. Zastępstwo lokalizacji do czasu T-106.
+  // Po końcu opowieści Sawa czeka, aż zbliżysz się do następnego punktu (zegar jazdy, do czasu
+  // lokalizacji). Gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
+  const { dueIndex } = clock;
   useEffect(() => {
     if (progress < 100) return;
     if (!hasNext) {
       setIsPlaying(false);
       return;
     }
+    if (dueIndex <= activeIndex) return;
     rewind();
     setIsPlaying(true);
-    onActiveChange(activeIndex + 1);
-  }, [progress, hasNext, activeIndex, onActiveChange, setIsPlaying, rewind]);
+    onActiveChange(dueIndex);
+  }, [progress, hasNext, activeIndex, dueIndex, onActiveChange, setIsPlaying, rewind]);
 
   // Wszystko, co Sawa powiedziała w tej jeździe, jako jeden ciągły tekst z podziałem na tematy.
   // Docelowo (T-106) to jeden strumień z pomostami od Sawy; dziś składamy go z kolejnych opowieści.
@@ -75,6 +83,8 @@ export function RouteSheet(props: RouteSheetProps) {
       {...props}
       isPlaying={player.isPlaying}
       progress={progress}
+      nextInSec={clock.nextInSec}
+      waitSec={clock.waitSec}
       storyText={player.text}
       transcript={transcript}
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}

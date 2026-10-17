@@ -6,6 +6,7 @@ import { type Ref, useEffect, useRef, useState } from "react";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
+import { Attribution, Departures } from "./departures";
 import { ChevronLeftIcon, PauseIcon, PinIcon, PlayIcon } from "./icons";
 import { Journey } from "./line-badge";
 import { SawaMenuButton } from "./sawa-menu";
@@ -24,6 +25,8 @@ export type RouteLiveProps = {
   durationMin: number;
   end: { label: string; reached: boolean } | null;
   legs: Leg[];
+  /** Podpis źródeł danych trasy (`Route.attribution`). */
+  attribution: string[];
   stops: MockStop[];
   /** Punkt, przy którym jest użytkownik i o którym Sawa teraz mówi. */
   activeIndex: number;
@@ -32,6 +35,10 @@ export type RouteLiveProps = {
   isPlaying: boolean;
   /** Ile bieżącego tematu już padło (0–100). */
   progress: number;
+  /** Za ile sekund następny temat według zegara jazdy. */
+  nextInSec: number | null;
+  /** Za ile sekund pierwsze miejsce; do tego czasu Sawa milczy. Null, gdy już może mówić. */
+  waitSec: number | null;
   storyText: string | null;
   storyState: "loading" | "ready" | "failed";
   /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
@@ -39,13 +46,28 @@ export type RouteLiveProps = {
   togglePlay: () => void;
 };
 
-/** Za ile następny temat. Dziś z `etaMin`, po T-106 z odległości do punktu. */
-function untilNext(stops: MockStop[], activeIndex: number) {
-  const now = stops[activeIndex];
+/** „za chwilę” albo „za ok. N min”. */
+function inLabel(sec: number | null): string {
+  return sec === null || sec < 60 ? "za chwilę" : `za ok. ${Math.round(sec / 60)} min`;
+}
+
+/**
+ * Za ile następny temat. Dziś z zegara jazdy, docelowo z odległości do punktu.
+ * Przed pierwszym miejscem „następny” to ono samo.
+ */
+function untilNext(
+  stops: MockStop[],
+  activeIndex: number,
+  nextInSec: number | null,
+  waitSec: number | null,
+) {
+  if (waitSec !== null) {
+    const first = stops[activeIndex];
+    return first ? { stop: first, label: inLabel(waitSec), first: true } : null;
+  }
   const next = stops[activeIndex + 1];
-  if (!now || !next) return null;
-  const min = Math.max(1, next.etaMin - now.etaMin);
-  return { stop: next, label: `za ok. ${min} min` };
+  if (!next) return null;
+  return { stop: next, label: inLabel(nextInSec), first: false };
 }
 
 /* ------------------------------------------------------------------ */
@@ -198,14 +220,18 @@ function NextUp({
   stops,
   activeIndex,
   progress,
+  nextInSec,
+  waitSec,
   end,
 }: {
   stops: MockStop[];
   activeIndex: number;
   progress: number;
+  nextInSec: number | null;
+  waitSec: number | null;
   end: RouteLiveProps["end"];
 }) {
-  const next = untilNext(stops, activeIndex);
+  const next = untilNext(stops, activeIndex, nextInSec, waitSec);
   if (!next) {
     return (
       <div className="flex flex-col items-start gap-2">
@@ -217,7 +243,8 @@ function NextUp({
   return (
     <div className="min-w-0 flex-1">
       <p className="truncate text-sm text-tekst-2">
-        Dalej <span className="font-bold text-tekst">{next.stop.name}</span>
+        {next.first ? "Najpierw" : "Dalej"}{" "}
+        <span className="font-bold text-tekst">{next.stop.name}</span>
       </p>
       <div className="mt-1.5 flex items-center gap-2">
         <div className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
@@ -242,17 +269,21 @@ export function RouteLive({
   durationMin,
   end,
   legs,
+  attribution,
   stops,
   activeIndex,
   onBack,
   isDesktop,
   isPlaying,
   progress,
+  nextInSec,
+  waitSec,
   storyText,
   storyState,
   transcript,
   togglePlay,
 }: RouteLiveProps) {
+  const waiting = waitSec !== null;
   const reduce = useReducedMotion();
   const scrollRef = useRef<HTMLDivElement>(null);
   const edgeRef = useRef<HTMLSpanElement>(null);
@@ -290,7 +321,11 @@ export function RouteLive({
         <div className="min-w-0 flex-1">
           <p className="etykieta flex items-center gap-2">
             <LiveDot on={isPlaying} />
-            {isPlaying ? "Sawa opowiada" : "Wstrzymane"}
+            {isPlaying
+              ? "Sawa opowiada"
+              : waiting
+                ? "Sawa czeka na pierwsze miejsce"
+                : "Wstrzymane"}
           </p>
           <p className="mt-0.5 flex flex-wrap items-center gap-1.5 text-sm text-tekst-2">
             <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>
@@ -299,9 +334,11 @@ export function RouteLive({
         </div>
       </header>
 
+      <Departures legs={legs} />
+
       {stop && (
         <div className="flex items-center gap-2">
-          <span className="etykieta">Teraz</span>
+          <span className="etykieta">{waiting ? "Najpierw" : "Teraz"}</span>
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.span
               key={stop.id}
@@ -343,13 +380,20 @@ export function RouteLive({
                     {activeIndex + 1} · {stop.name}
                   </p>
                 )}
-                <LiveText
-                  text={storyText}
-                  progress={progress}
-                  state={storyState}
-                  edgeRef={edgeRef}
-                  className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"
-                />
+                {waiting ? (
+                  <p className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em] text-tekst-3">
+                    Sawa odezwie się, gdy dojedziesz do miejsca {stop.name}. Chcesz wcześniej?
+                    Stuknij odtwarzanie.
+                  </p>
+                ) : (
+                  <LiveText
+                    text={storyText}
+                    progress={progress}
+                    state={storyState}
+                    edgeRef={edgeRef}
+                    className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"
+                  />
+                )}
               </section>
             )}
           </div>
@@ -374,8 +418,17 @@ export function RouteLive({
 
       <div className="flex items-center gap-4">
         <PlayButton isPlaying={isPlaying} onToggle={togglePlay} size="lg" />
-        <NextUp stops={stops} activeIndex={activeIndex} progress={progress} end={end} />
+        <NextUp
+          stops={stops}
+          activeIndex={activeIndex}
+          progress={progress}
+          nextInSec={nextInSec}
+          waitSec={waitSec}
+          end={end}
+        />
       </div>
+
+      <Attribution lines={attribution} />
     </div>
   );
 }

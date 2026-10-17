@@ -42,11 +42,12 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 
 **Playground:** `/mapa/playground` (`features/map-playground`). Każdy prop ma kontrolkę, nakładka pokazuje obszar `padding`, dziennik zbiera `onStopClick`, a na dole jest gotowy JSX do skopiowania. Trasa demo albo prawdziwy planer (`POST /v1/routes/plan`).
 
-## Ciemny motyw (17.10, 17:05, T-105)
+## Ciemny motyw (17.10, 17:05, T-119; 17:52 T-120)
 
 - Wybór Jasny / Ciemny / Auto w `features/theme` (menu Sawy, grupa „Wygląd”). Wynik trafia do `<html data-theme>`, skrypt w `app/layout.tsx` ustawia go przed pierwszym malowaniem.
 - Mapa bierze motyw z `useTheme()`: podkład `BASEMAP_STYLE_URLS[theme]` (OpenFreeMap `positron` / `dark`) i kolory własnych warstw z `MAP_PALETTES[theme]` (obwódki, numery miejsc trasy, podpisy, dojścia, krycie przygaszonych miejsc). Kolory linii trasy zostają te same, w ciemnym motywie mają jasną obwódkę.
-- Tokeny z `globals.css` ciemnieją wewnątrz `.motyw` (kontener `SawaMap`), więc ciemne są karta miejsca, podpowiedzi i kontrolki MapLibre.
+- Tokeny z `globals.css` ciemnieją wewnątrz `.motyw`. Od T-120 ta klasa jest na `<body>`, więc ciemna jest cała aplikacja, nie tylko mapa.
+- Woda: podkłady rysują rzeki na szaro, więc `useBasemapOverrides` po każdym załadowaniu stylu przemalowuje warstwy `water`, `waterway` i podpisy wody na niebiesko (`waterPaintOverrides`, kolory `water` i `waterLabel` w `MapPalette`).
 - Ciemny styl OpenFreeMap loguje „Image wood-pattern could not be loaded” (brak obrazka w sprite). To ostrzeżenie, mapa działa.
 
 ## 3. Przepływ danych

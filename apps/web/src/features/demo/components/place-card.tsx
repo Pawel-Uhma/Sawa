@@ -164,18 +164,25 @@ export function ListenButton({ state, progress, onToggle }: ListenButtonProps) {
       whileTap={{ scale: 0.97 }}
       transition={SPRING}
       aria-label={label}
-      className="relative flex h-14 w-full items-center justify-center gap-2.5 overflow-hidden rounded-[18px] bg-glebia text-[17px] font-bold tracking-[-0.01em] text-white shadow-[0_6px_16px_rgba(23,112,111,0.28)] transition-colors hover:bg-glebia-ciemna"
+      className="relative flex h-14 w-full items-center justify-center gap-2.5 overflow-hidden rounded-[18px] bg-glebia px-4 text-[16px] font-bold tracking-[-0.01em] text-white shadow-[0_6px_16px_rgba(23,112,111,0.28)] transition-colors hover:bg-glebia-ciemna"
     >
       <span
         aria-hidden="true"
         className="absolute inset-y-0 left-0 w-full origin-left bg-white/15"
         style={{ transform: `scaleX(${state === "idle" ? 0 : progress / 100})` }}
       />
-      <span className={`relative ${state === "loading" ? "animate-pulse" : ""}`}>
+      <span className={`relative shrink-0 ${state === "loading" ? "animate-pulse" : ""}`}>
         {isPlaying ? <PauseIcon className="size-5" /> : <PlayIcon className="size-5" />}
       </span>
-      <span className="relative">{label}</span>
-      {state === "idle" && <span className="relative font-semibold text-white/70">ok. 45 s</span>}
+      {/* Etykieta w jednej linii, czas pod nią: w wąskiej karcie obok „Jedź tutaj” nic się nie łamie. */}
+      <span className="relative flex min-w-0 flex-col items-start leading-tight">
+        <span className="max-w-full truncate whitespace-nowrap">{label}</span>
+        {state === "idle" && (
+          <span className="whitespace-nowrap text-[12px] font-semibold text-white/70">
+            ok. 45 s
+          </span>
+        )}
+      </span>
     </motion.button>
   );
 }

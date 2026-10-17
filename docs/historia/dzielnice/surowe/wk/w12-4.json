@@ -1,0 +1,35 @@
+[
+  {
+    "id": "warsaw-presidential-hotel",
+    "nazwa": "Warsaw Presidential Hotel",
+    "name_en": "Warsaw Presidential Hotel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 65/79",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1987–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Warsaw Presidential Hotel, dawniej Hotel Marriott, to pięciogwiazdkowy hotel w Alejach Jerozolimskich 65/79, w wieżowcu Centrum LIM.",
+      "Hotel zajmuje górną połowę 41-piętrowego Centrum LIM i działa w nim od 1987 roku.",
+      "W 2010 roku przedłużono umowę najmu do 2045 roku.",
+      "W 2023 roku spółka LIM Center złożyła doniesienie do warszawskiej prokuratury przeciwko spółce Luxury Hotels International Management Company, należącej do grupy Marriott; postępowanie wszczęte na wniosek LIM Center zostało zawieszone.",
+      "6 sierpnia 2024 roku sieć Marriott International odebrała spółce LIM Center prawo do korzystania z marki i usunęła hotel z systemu rezerwacyjnego.",
+      "9 sierpnia 2024 roku spółka LIM Center ogłosiła nową nazwę hotelu: Warsaw Presidential Hotel.",
+      "Hotel ma 523 pokoje, w tym 95 apartamentów, oraz sale konferencyjne o łącznej powierzchni 2600 m²."
+    ],
+    "ciekawostki": [
+      "Hotel sąsiaduje z Dworcem Centralnym, Pałacem Kultury i Nauki oraz stacją metra Centrum.",
+      "Nowa nazwa nawiązuje do prestiżowych gości hotelu, w tym prezydentów Stanów Zjednoczonych."
+    ],
+    "summary_en": "Warsaw Presidential Hotel, formerly the Marriott, occupies the upper half of the 41-storey LIM Center at Aleje Jerozolimskie 65/79, near Warsaw Central station and the Palace of Culture and Science. It has operated there since 1987; in August 2024 Marriott withdrew the brand and the hotel was renamed.",
+    "ludzie": [],
+    "dawne_nazwy": ["Hotel Marriott"],
+    "zrodla": [{"tytul": "Warszawikia: Warsaw Presidential Hotel", "url": "https://warszawa.fandom.com/pl/wiki/Warsaw_Presidential_Hotel"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w źródle (WSPÓŁRZĘDNE: brak); adres z tekstu artykułu. Artykuł opisuje też spór sądowy między spółkami; w rekordzie podano go neutralnie."
+  }
+]

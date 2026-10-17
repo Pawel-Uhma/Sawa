@@ -1,7 +1,7 @@
 import { haversineM } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
-import { planWalk, toSegment } from "./walk-tour";
+import { placesAlong, planWalk, retracedShare, toSegment, walkThrough } from "./walk-tour";
 
 const ORIGIN = { lat: 52.23, lng: 21.0 };
 // ~70 m per 0.001° of longitude here; walking 1.2 m/s × 1.3 detour ≈ 0.92 m/s.
@@ -27,6 +27,41 @@ describe("toSegment", () => {
     const { distanceM, t } = toSegment({ lat: 52.2301, lng: 21.001 }, a, b);
     expect(distanceM).toBeCloseTo(11.1, 0);
     expect(t).toBeCloseTo(0.5, 2);
+  });
+});
+
+describe("placesAlong", () => {
+  it("counts only places right by the walk, not ones a block away", () => {
+    const segment = { from: ORIGIN, to: { lat: 52.23, lng: 21.004 }, startSec: 0, sec: 300 };
+    const places = [
+      place("by-the-way", 21.002, 52.2301, ["historical"]), // ~11 m north of the walk
+      place("across-the-street", 21.002, 52.2303, ["historical"]), // ~33 m north
+    ];
+    const ids = placesAlong(places, segment, { interests: new Set(["historical"]) }).map(
+      (p) => p.placeId,
+    );
+    expect(ids).toEqual(["by-the-way"]);
+  });
+});
+
+describe("walkThrough", () => {
+  const to = { lat: 52.23, lng: 21.008 }; // ~550 m east
+  const scoring = { interests: new Set(["historical"]) };
+
+  it("bends the walk to pass right by a place near it", () => {
+    const near = place("near", 21.004, 52.2304, ["historical"]); // ~45 m north
+    const walk = walkThrough([near], ORIGIN, to, 1, scoring);
+    expect(walk.waypoints).toEqual([ORIGIN, near.position, to]);
+    expect(walk.places.map((p) => p.placeId)).toEqual(["near"]);
+    expect(walk.sec).toBeGreaterThan(haversineM(ORIGIN, to));
+    expect(walk.sec).toBeLessThan(1.2 * haversineM(ORIGIN, to));
+  });
+
+  it("keeps the straight way when the place is too far off it", () => {
+    const off = place("off", 21.004, 52.2315, ["historical"]); // ~170 m north
+    const walk = walkThrough([off], ORIGIN, to, 1, scoring);
+    expect(walk.waypoints).toEqual([ORIGIN, to]);
+    expect(walk.places).toEqual([]);
   });
 });
 
@@ -58,5 +93,37 @@ describe("planWalk", () => {
 
   it("returns null when even the walk to the end does not fit", () => {
     expect(planWalk(input(5, { lat: 52.23, lng: 21.05 }))).toBeNull();
+  });
+});
+
+describe("walking back the same way", () => {
+  const east = { lat: 52.23, lng: 21.008 };
+
+  it("measures how much of a segment goes along the walk so far", () => {
+    expect(retracedShare([ORIGIN, east], east, ORIGIN)).toBeGreaterThan(0.8);
+    expect(retracedShare([ORIGIN, east], east, { lat: 52.235, lng: 21.008 })).toBe(0);
+  });
+
+  // ~550 m east and back fits 20 min; the detour past a minor place ~180 m north takes longer.
+  const loop = {
+    places: [
+      place("east", 21.008, 52.23, ["historical"]),
+      place("detour", 21.004, 52.2316, ["cultural"], 0.1),
+    ],
+    origin: ORIGIN,
+    end: ORIGIN,
+    budgetSec: 20 * 60,
+    interests: new Set(["historical"]),
+  };
+
+  it("goes out and back when nothing penalises it", () => {
+    const walk = planWalk(loop, { backtrackPenalty: 0 });
+    expect(walk?.waypoints).toHaveLength(3);
+  });
+
+  it("comes back another way when one fits the time", () => {
+    const walk = planWalk(loop);
+    expect(walk?.waypoints.map((p) => p.lat)).toEqual([52.23, 52.2316, 52.23, 52.23]);
+    expect(walk?.elapsedSec).toBeLessThanOrEqual(1.1 * 20 * 60);
   });
 });

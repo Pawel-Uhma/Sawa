@@ -56,7 +56,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null, adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Siedziba_Satander_Polska.jpg/1280px-Siedziba_Satander_Polska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Siedziba_Satander_Polska.jpg",
+      "opis": "Siedziba Santander Bank Polska S.A. przy al. Jana Pawła II 17 w Warszawie",
+      "autor": "Darpaw",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2020",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -156,7 +167,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (kościół św. Augustyna, Nowolipki 18).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Augustyna_04.jpg/1280px-Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Augustyna_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Augustyna_04.jpg",
+      "opis": "Saint Augustinus church in Warsaw",
+      "autor": "Аимаина хикари",
+      "licencja": "CC0",
+      "rok": "2018",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -227,6 +249,17 @@
       "brak_w_zrodle": [
        "1944"
       ]
+     }
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/2025_Warszawa_Dom_Mody_Klif%2C_Enel-Med%2C_2.jpg/1280px-2025_Warszawa_Dom_Mody_Klif%2C_Enel-Med%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2025_Warszawa_Dom_Mody_Klif,_Enel-Med,_2.jpg",
+      "opis": "Dom Mody Klif w Warszawie, Enel-Med.",
+      "autor": "Cybularny",
+      "licencja": "CC0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
      }
     ]
    }
@@ -339,7 +372,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord tablicy, bo sama Gęsiówka ma w tekście tylko adres skrzyżowania (u zbiegu Gęsiej i Zamenhofa), bez numeru. Brak współrzędnych w nagłówku; lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Anielewicza_Street_in_Warsaw_-_place_of_remembrance.jpg/1280px-Anielewicza_Street_in_Warsaw_-_place_of_remembrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Anielewicza_Street_in_Warsaw_-_place_of_remembrance.jpg",
+      "opis": "Płyta upamiętniająca  uwolnienie 5 sierpnia 1944 r 348 więźniów obozu koncentracyjnego \"Gęsiówka\" przez Harcerski Batalion AK \"Zośka\" Zgrupowania Radosław",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -450,7 +494,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Artykuł podaje Mirów jako lokalizację; w paczce nagłówek DZIELNICE: Wola.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Mir%C3%B3w%2C_Warsaw%2C_Poland_-_panoramio_-_Roman_Eugeniusz_%2845%29.jpg/1280px-Mir%C3%B3w%2C_Warsaw%2C_Poland_-_panoramio_-_Roman_Eugeniusz_%2845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Mir%C3%B3w,_Warsaw,_Poland_-_panoramio_-_Roman_Eugeniusz_(45).jpg",
+      "opis": "Mirów, Warsaw, Poland",
+      "autor": "Roman Eugeniusz",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -544,7 +599,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Ciepłej 3”). Artykuł podaje Mirów; w paczce nagłówek DZIELNICE: Wola.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Mural%2C_ul._Ciep%C5%82a_3%2C_Warszawa_%282%29.jpg/1280px-Mural%2C_ul._Ciep%C5%82a_3%2C_Warszawa_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Mural,_ul._Ciep%C5%82a_3,_Warszawa_(2).jpg",
+      "opis": "Mural, ul. Ciepła 3, Warszawa.",
+      "autor": "Qkiel",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -595,7 +661,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Twardej 28”). Stan obecny opisany w artykule niejednoznacznie (większość zburzona, część stoi).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ul._Twarda_28%2C_Warszawa_%282%29.jpg/1280px-Ul._Twarda_28%2C_Warszawa_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ul._Twarda_28,_Warszawa_(2).jpg",
+      "opis": "Ul. Twarda 28, Warszawa.",
+      "autor": "Qkiel",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -755,7 +832,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Śliskiej 52”). Artykuł podaje Mirów; w paczce nagłówek DZIELNICE: Wola.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Varsovia%2C_Polonia_-_panoramio_%2850%29.jpg/1280px-Varsovia%2C_Polonia_-_panoramio_%2850%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Varsovia,_Polonia_-_panoramio_(50).jpg",
+      "opis": "Varsovia, Polonia",
+      "autor": "Nelson Pérez",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "11 M",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -809,7 +897,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ulicy Bema 81”).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ul._Bema_81%2C_Warszawa_%286%29.jpg/1280px-Ul._Bema_81%2C_Warszawa_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ul._Bema_81,_Warszawa_(6).jpg",
+      "opis": "Ul. Bema 81, Warszawa.",
+      "autor": "Qkiel",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -943,7 +1042,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Złotej 65a”). Autorstwo projektu podane z zastrzeżeniem („najprawdopodobniej”).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Z%C5%82ota_65b.jpg/1280px-Z%C5%82ota_65b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Z%C5%82ota_65b.jpg",
+      "opis": "Oficyna kamienicy przy ul. Złotej 65b w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -1219,7 +1329,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (pomnik przed biurowcem Prosta Center, ul. Prosta 51).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Monument_to_Evacuation_of_the_Warsaw_Ghetto_Fighters%2C_2.jpg/1280px-Monument_to_Evacuation_of_the_Warsaw_Ghetto_Fighters%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Monument_to_Evacuation_of_the_Warsaw_Ghetto_Fighters,_2.jpg",
+      "opis": "Monument to Evacuation of the Warsaw Ghetto Fighters",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2026",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -1622,7 +1743,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Wieżowiec nie został zrealizowany. Brak współrzędnych w źródle; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ch_jupiter_office_media.jpg/1280px-Ch_jupiter_office_media.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ch_jupiter_office_media.jpg",
+      "opis": "Jupiter Centrum w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -1988,7 +2120,8 @@
     "ciekawostki": [
      "W 1846 roku Błażej Haberbush i Jan Henryk Klawe zakupili stary browar Ludwika Suchockiego; po rozbudowie w latach 1880–1890 stał się on największym producentem piwa w Królestwie Polskim.",
      "Pod numerem 10 w 1908 roku zamieszkała rodzina Isaaca Bashevisa Singera, późniejszego laureata Nagrody Nobla w dziedzinie literatury.",
-     "W latach 1911–1912 pod nr 92 wzniesiono budynek Domu Sierot, założonego przez Janusza Korczaka i Stefanię Wilczyńską."
+     "W latach 1911–1912 pod nr 92 wzniesiono budynek Domu Sierot, założonego przez Janusza Korczaka i Stefanię Wilczyńską.",
+     "Patron ulicy: Krochmal. Krochmal – rodzaj płynu powstałego po zmieszaniu skrobi roślinnej z wodą."
     ],
     "summary_en": "Krochmalna Street in the Mirów estate of Wola, about 1100 m long after the 2019–2023 changes. Its name dates from 1770 and comes from a starch works. The street was split in 1940 by the ghetto boundary and heavily damaged in 1944. Isaac Bashevis Singer's family lived at No. 10 in 1908.",
     "ludzie": [
@@ -2031,6 +2164,10 @@
      {
       "tytul": "Warszawikia: Ulica Krochmalna",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Krochmalna"
+     },
+     {
+      "tytul": "Wikipedia: Krochmal",
+      "url": "https://pl.wikipedia.org/wiki/Krochmal"
      }
     ],
     "pewnosc": "wysoka",
@@ -2297,7 +2434,8 @@
      "Ulica ma 350 m długości; biegnie od pobliża ul. Górczewskiej do drogi wewnętrznej centrum handlowego Wola Park."
     ],
     "ciekawostki": [
-     "Wysoka numeracja budynków wynika z tego, że południowa część ulicy (z numerami do 20) uległa likwidacji w latach 70. XX wieku."
+     "Wysoka numeracja budynków wynika z tego, że południowa część ulicy (z numerami do 20) uległa likwidacji w latach 70. XX wieku.",
+     "Patron ulicy: Ulrychów. Ulrychów – część miasta i obszar Miejskiego Systemu Informacji w dzielnicy Wola w Warszawie."
     ],
     "summary_en": "Ulrychowska Street on the Koło estate in Wola, 350 m long, running from near Górczewska Street to a dead end by the Wola Park shopping centre. Its name refers to the Ulrychów district and the former Ulrych works. Its southern part was cleared in the 1970s.",
     "ludzie": [],
@@ -2306,6 +2444,10 @@
      {
       "tytul": "Warszawikia: Ulica Ulrychowska",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Ulrychowska"
+     },
+     {
+      "tytul": "Wikipedia: Ulrychów",
+      "url": "https://pl.wikipedia.org/wiki/Ulrychów_(Warszawa)"
      }
     ],
     "pewnosc": "wysoka",
@@ -2386,7 +2528,8 @@
      "Przy ul. Żelaznej 90 mieści się Szpital Specjalistyczny Ginekologiczno-Położniczy św. Zofii."
     ],
     "ciekawostki": [
-     "Na chodniku na wysokości ul. Żelaznej 75 odtworzono zarys półokrągłego, betonowego bunkra Nordwachy, przylegającego do narożnego budynku przy ul. Chłodnej 25, o który toczyły się ciężkie walki w powstaniu warszawskim."
+     "Na chodniku na wysokości ul. Żelaznej 75 odtworzono zarys półokrągłego, betonowego bunkra Nordwachy, przylegającego do narożnego budynku przy ul. Chłodnej 25, o który toczyły się ciężkie walki w powstaniu warszawskim.",
+     "Patron ulicy: żelazo. Żelazo – pierwiastek chemiczny o liczbie atomowej 26, metal z VIII grupy pobocznej układu okresowego, należący do grupy metali przejściowych."
     ],
     "summary_en": "Żelazna Street in Wola, 1950 m long, running from pl. Starynkiewicza to Nowolipki Street. Its name comes from an 18th-century tavern near today's Twarda Street. During the occupation the street was inside the Warsaw ghetto, and the two parts of the ghetto were joined by a wooden footbridge over Chłodna Street.",
     "ludzie": [],
@@ -2395,6 +2538,10 @@
      {
       "tytul": "Warszawikia: Ulica Żelazna",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żelazna"
+     },
+     {
+      "tytul": "Wikipedia: żelazo",
+      "url": "https://pl.wikipedia.org/wiki/Żelazo"
      }
     ],
     "pewnosc": "wysoka",
@@ -2904,7 +3051,11 @@
      "Do remontu na przełomie lat 2023 i 2024 była to bita droga wyłożona betonowymi płytami; po pracach ulica zyskała nawierzchnię asfaltową.",
      "Nazwa została nadana mimo stwierdzenia radnych dzielnicy Bemowo, że kobiety, na cześć których ją nadano, zasługują na upamiętnienie każda z osobna."
     ],
-    "ciekawostki": [],
+    "ciekawostki": [
+     "Patron ulicy: Anna Leska (1910–1998). Anna Leska, właśc. Anna Leska-Daab – polska pilotka (posiadała uprawnienia do pilotowania szybowców, balonów, samolotów), pierwsza kobieta i jedna z trzech Polek w brytyjskiej pomocniczej służbie rozprowadzającej samoloty Air Transport Auxiliary.",
+     "Patron ulicy: Stefania Wojtulanis-Karpińska (1912–2005). Stefania Cecylia Wojtulanis-Karpińska, ps. „Barbara” – kapitan pilot Polskich Sił Powietrznych, pilot sportowy.",
+     "Patron ulicy: Jadwiga Piłsudska (1920–2014). Jadwiga Piłsudska po mężu Jaraczewska – polska architekt, córka Aleksandry Szczerbińskiej i Józefa Piłsudskiego, porucznik pilot Wojska Polskiego."
+    ],
     "summary_en": "A short street in the Górce district of Bemowo, named in 2021 after three Polish women pilots: Anna Leska, Stefania Wojtulanis-Karpińska and Jadwiga Piłsudska. Until 2021 it was the northern part of ul. Marynin.",
     "ludzie": [
      {
@@ -2930,6 +3081,18 @@
      {
       "tytul": "Warszawikia: Ulica Trzech Lotniczek Polskich",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Trzech_Lotniczek_Polskich"
+     },
+     {
+      "tytul": "Wikipedia: Anna Leska",
+      "url": "https://pl.wikipedia.org/wiki/Anna_Leska"
+     },
+     {
+      "tytul": "Wikipedia: Stefania Wojtulanis-Karpińska",
+      "url": "https://pl.wikipedia.org/wiki/Stefania_Wojtulanis-Karpińska"
+     },
+     {
+      "tytul": "Wikipedia: Jadwiga Piłsudska",
+      "url": "https://pl.wikipedia.org/wiki/Jadwiga_Piłsudska"
      }
     ],
     "pewnosc": "wysoka",
@@ -3193,7 +3356,9 @@
      "Pod koniec 2011 roku na rogu ul. Pirenejskiej i ul. Żołnierzy Wyklętych powstało miejsce pamięci poświęcone Żołnierzom Wyklętym.",
      "Patronem ulicy są Żołnierze Wyklęci, walczący w podziemiu antykomunistycznym i niepodległościowym w latach 1944-1963, związani wcześniej najczęściej z Armią Krajową."
     ],
-    "ciekawostki": [],
+    "ciekawostki": [
+     "Patron ulicy: żołnierze wyklęci. Żołnierze wyklęci, żołnierze niezłomni, polskie powojenne podziemie niepodległościowe i antykomunistyczne – antykomunistyczny, niepodległościowy ruch partyzancki, stawiający opór sowietyzacji Polski i podporządkowaniu jej ZSRR toczący walkę ze służbami bezpieczeństwa ZSRR i podporządkowanymi im służbami w Polsce."
+    ],
     "summary_en": "A 750-metre street of the Bemowo-Lotnisko estate, built in the 1980s on the former Babice airfield. Its 2009 renaming was contested and the street was shortened and then extended again in 2009-2010.",
     "ludzie": [],
     "dawne_nazwy": [
@@ -3203,6 +3368,10 @@
      {
       "tytul": "Warszawikia: Ulica Żołnierzy Wyklętych",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żołnierzy_Wyklętych"
+     },
+     {
+      "tytul": "Wikipedia: żołnierze wyklęci",
+      "url": "https://pl.wikipedia.org/wiki/Żołnierze_wyklęci"
      }
     ],
     "pewnosc": "wysoka",
@@ -4602,7 +4771,8 @@
      "W 2017 roku na terenach zielonych po stronie nieparzystej rozpoczęto budowę kompleksu apartamentowców Sabbia."
     ],
     "ciekawostki": [
-     "Na terenie dawnej posesji nr 25 rosną 2 pomniki przyrody: dęby szypułkowe o wysokości 20 m i obwodach pnia 340 i 290 cm."
+     "Na terenie dawnej posesji nr 25 rosną 2 pomniki przyrody: dęby szypułkowe o wysokości 20 m i obwodach pnia 340 i 290 cm.",
+     "Patron ulicy: Słowianie. Słowianie – grupa etnolingwistyczna w obrębie ludów indoeuropejskich posługujących się językami słowiańskimi."
     ],
     "summary_en": "Aleja Słowiańska is a local dead-end street of about 300 m in Marymont-Kaskada, Bielany. It was probably laid out in the 1920s. The wide boulevard planned in the 1930s was never built, and most of the old buildings on its odd side were demolished around 2000.",
     "ludzie": [],
@@ -4611,6 +4781,10 @@
      {
       "tytul": "Warszawikia: Aleja Słowiańska",
       "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Słowiańska"
+     },
+     {
+      "tytul": "Wikipedia: Słowianie",
+      "url": "https://pl.wikipedia.org/wiki/Słowianie"
      }
     ],
     "pewnosc": "wysoka",
@@ -4959,7 +5133,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Artykul mowi o domach nr 26, 28 i 30; adres podany to pierwszy z nich.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Pomnikowy_d%C4%85b_kolektorska.jpg/1280px-Pomnikowy_d%C4%85b_kolektorska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowy_d%C4%85b_kolektorska.jpg",
+      "opis": "Dąb szypułkowy na granicy działek Kolektorska 24b i 26. Warszawa. Pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -5443,7 +5628,8 @@
      "Przy ul. Marii Kazimiery 1 znajduje się urząd pocztowy nr 104. Zachowało się kilka przedwojennych kamienic i domów: nr 3, 17, 21, 33, 76, 84 i 86."
     ],
     "ciekawostki": [
-     "Maria Kazimiera jest też patronką jednej z ulic w Wilanowie, która nosi nazwę „Królowej Marysieńki”."
+     "Maria Kazimiera jest też patronką jednej z ulic w Wilanowie, która nosi nazwę „Królowej Marysieńki”.",
+     "Patron ulicy: Maria Kazimiera d'Arquien (1641–1716). Jakub Ludwik SobieskiTeresa Teofila SobieskaAdelajda Ludwika SobieskaMaria Teresa SobieskaTeresa Kunegunda SobieskaAleksander Benedykt SobieskiKonstanty Władysław SobieskiJan Sobieski"
     ],
     "summary_en": "Maria Kazimiera Street runs for about 750 m across Marymont in Bielany and Żoliborz, named after Maria Kazimiera Sobieska. Its tram line opened in 1924, and much of the street was destroyed during the Warsaw Uprising and later shortened.",
     "ludzie": [
@@ -5458,6 +5644,10 @@
      {
       "tytul": "Warszawikia: Ulica Marii Kazimiery",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Marii_Kazimiery"
+     },
+     {
+      "tytul": "Wikipedia: Maria Kazimiera d'Arquien",
+      "url": "https://pl.wikipedia.org/wiki/Maria_Kazimiera_d’Arquien"
      }
     ],
     "pewnosc": "wysoka",
@@ -5823,7 +6013,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Wspolrzedne brak; adres z tytulu artykulu i tekstu. Budynek wyburzony, rekord historyczny.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Rozbi%C3%B3rka_oryginalnej_budowli_z_czas%C3%B3w_PRL-u_-_panoramio.jpg/1280px-Rozbi%C3%B3rka_oryginalnej_budowli_z_czas%C3%B3w_PRL-u_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Rozbi%C3%B3rka_oryginalnej_budowli_z_czas%C3%B3w_PRL-u_-_panoramio.jpg",
+      "opis": "Rozbiórka oryginalnej budowli z czasów PRL-u",
+      "autor": "geo573",
+      "licencja": "CC BY 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -6032,7 +6233,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Wspolrzedne brak; adres z tytulu/tekstu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/34-36_Mickiewicza_Str_01.JPG/1280px-34-36_Mickiewicza_Str_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:34-36_Mickiewicza_Str_01.JPG",
+      "opis": "Luxurious house built between World War I and II, designed by the architect Juliusz Żórawski. 34/36 Mickiewicza Street, Warsaw, Żoliborz district.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -6176,7 +6388,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Artykul nazywa szkole raz Zespolem Szkol Ekonomicznych, raz Elektronicznych i Licealnych; wpisano wg naglowka tekstu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/2025_Warszawa_Kino_Elektronik%2C_1.jpg/1280px-2025_Warszawa_Kino_Elektronik%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2025_Warszawa_Kino_Elektronik,_1.jpg",
+      "opis": "Kino Elektronik przy ulicy Zajączka 7 w Warszawie.",
+      "autor": "Cybularny",
+      "licencja": "CC0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -6536,7 +6759,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": null,
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/6_S%C5%82oneczny_Square_in_Warsaw.jpg/1280px-6_S%C5%82oneczny_Square_in_Warsaw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:6_S%C5%82oneczny_Square_in_Warsaw.jpg",
+      "opis": "Monumental house complex (segment) from 1920 at 6 Słoneczny Square in Warsaw, Żoliborz district.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -6587,6 +6821,17 @@
     "zrodlo_rekordu": "warszawikia-dzielnice",
     "tagi": [
      "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Pomnik_27_Wo%C5%82y%C5%84skiej_Dywizji_Piechoty_AK_w_Warszawie_01.jpg/1280px-Pomnik_27_Wo%C5%82y%C5%84skiej_Dywizji_Piechoty_AK_w_Warszawie_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnik_27_Wo%C5%82y%C5%84skiej_Dywizji_Piechoty_AK_w_Warszawie_01.jpg",
+      "opis": "27th Wolhynian AK Infantry Division Monument in Warsaw",
+      "autor": "Szczebrzeszynski",
+      "licencja": "CC0",
+      "rok": "2011",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
     ]
    }
   },
@@ -6631,7 +6876,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, do geokodowania. Rekord dotyczy budynku, nie uczelni.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/SGSP_w_Warszawie.jpg/1280px-SGSP_w_Warszawie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:SGSP_w_Warszawie.jpg",
+      "opis": "Szkoła Główna Służby Pożarniczej w Warszawie. Ul. Słowackiego 52/54.",
+      "autor": "Damian Kisielewski",
+      "licencja": "CC BY 3.0",
+      "rok": "2009",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -6814,7 +7070,8 @@
     ],
     "ciekawostki": [
      "Nazwa upamiętnia szarżę pod Rokitną, jedną z bitew I wojny światowej.",
-     "Zmiana nazwy w 2004 roku wzbudziła pewne kontrowersje."
+     "Zmiana nazwy w 2004 roku wzbudziła pewne kontrowersje.",
+     "Patron ulicy: Szarża pod Rokitną. Szarża pod Rokitną – szarża ułanów 2 szwadronu II Brygady Legionów Polskich podczas I wojny światowej w dniu 13 czerwca 1915."
     ],
     "summary_en": "Bitwy pod Rokitną Street links Aleja Wojska Polskiego with ulica gen. Zajączka in Stary Żoliborz. Built in the 1930s, it was called Rokitny, then renamed after poet Lucjan Szenwald in 1953, and given its current name in 2004. The name commemorates a cavalry charge at Rokitna in World War I.",
     "ludzie": [
@@ -6832,6 +7089,10 @@
      {
       "tytul": "Warszawikia: Ulica Bitwy pod Rokitną",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bitwy_pod_Rokitną"
+     },
+     {
+      "tytul": "Wikipedia: Szarża pod Rokitną",
+      "url": "https://pl.wikipedia.org/wiki/Szarża_pod_Rokitną"
      }
     ],
     "pewnosc": "wysoka",
@@ -6963,7 +7224,9 @@
      "W latach 70. XX wieku ścieżka poprowadziła do odbudowanego Zamku Ujazdowskiego wzdłuż wybudowanej wówczas Trasy Łazienkowskiej.",
      "Nazwę alei nadano w 1999 roku, by upamiętnić Szpital Ujazdowski, który istniał tutaj niegdyś."
     ],
-    "ciekawostki": [],
+    "ciekawostki": [
+     "Patron ulicy: Szpital Ujazdowski w Warszawie. Szpital Ujazdowski w Warszawie – najstarszy i największy szpital wojskowy w Polsce, utworzony ok."
+    ],
     "summary_en": "Aleja Szpitala Ujazdowskiego is a pedestrian path in Ujazdów, about 300 metres long, running along the Łazienkowska Route to Zamek Ujazdowski. It was laid out after the war on the site of the old pavilions of the Ujazdów Hospital and named in 1999.",
     "ludzie": [],
     "dawne_nazwy": [],
@@ -6971,6 +7234,10 @@
      {
       "tytul": "Warszawikia: Aleja Szpitala Ujazdowskiego",
       "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Szpitala_Ujazdowskiego"
+     },
+     {
+      "tytul": "Wikipedia: Szpital Ujazdowski w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Szpital_Ujazdowski_w_Warszawie"
      }
     ],
     "pewnosc": "wysoka",
@@ -7026,7 +7293,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w artykule o alei; adres z tekstu, do geokodowania. Rekord wydzielony z artykułu o alei.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bundesarchiv_Bild_121-0286%2C_Warschau%2C_Stabsgeb%C3%A4ude_der_Kdo._der_Schutzpolizei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_121-0286,_Warschau,_Stabsgeb%C3%A4ude_der_Kdo._der_Schutzpolizei.jpg",
+      "opis": "For documentary purposes the German Federal Archive often retained the original image captions, which may be erroneous, biased, obsolete or politically extreme. Kdo. d. Sch. Pol. Warschau, Stabsgebäud",
+      "autor": "UnknownUnknown",
+      "licencja": "CC BY-SA 3.0 de",
+      "rok": "Nove",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -7080,7 +7358,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w artykule o alei; adres z tekstu, do geokodowania. Rekord wydzielony z artykułu o alei.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Ministerstwo_Edukacji_Narodowej%2C_Korytarz_I_pi%C4%99tro_4.jpg/1280px-Ministerstwo_Edukacji_Narodowej%2C_Korytarz_I_pi%C4%99tro_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ministerstwo_Edukacji_Narodowej,_Korytarz_I_pi%C4%99tro_4.jpg",
+      "opis": "Gmach Ministerstwa Edukacji Narodowej w al. Jana. Ch. Szucha 25 w Warszawie",
+      "autor": "Tomasz Bladyniec",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2020",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -7229,7 +7518,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w artykule o ulicy; adres z tekstu, do geokodowania. Rekord wydzielony z artykułu o ulicy.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tablica_stanis%C5%82aw_skrypij.jpg/1280px-Tablica_stanis%C5%82aw_skrypij.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Tablica_stanis%C5%82aw_skrypij.jpg",
+      "opis": "Ulica Cieszkowskiego 1/3 w Warszawie. Tablica mówiąca, że w domu tym mieszkał Stanisław Skrypij.",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2013",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -7758,7 +8058,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w artykule o ulicy; adres z tekstu, do geokodowania. Rekord wydzielony z artykułu o ulicy.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/A.b.wahl.1962.jpg/1280px-A.b.wahl.1962.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:A.b.wahl.1962.jpg",
+      "opis": "Black and white photography of Alicja and Bożena Wahl from the exhibition catalog in 1962",
+      "autor": "nieznany/ unknown",
+      "licencja": "Public domain",
+      "rok": "1962",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -8184,7 +8495,8 @@
      "Nazwa pochodzi od Tucholi, miasta powiatowego w województwie kujawsko-pomorskim, położonego na skraju Borów Tucholskich."
     ],
     "ciekawostki": [
-     "Przy ulicy, pod numerem 24, znajduje się zabytkowa willa z ogrodem."
+     "Przy ulicy, pod numerem 24, znajduje się zabytkowa willa z ogrodem.",
+     "Patron ulicy: Tuchola. Tuchola – miasto w województwie kujawsko-pomorskim, siedziba władz gminy miejsko-wiejskiej Tuchola i powiatu tucholskiego."
     ],
     "summary_en": "Tucholska is a street of over 500 metres in Stary Żoliborz, running from Dziennikarska to Bohomolca and continuing as Bytomska. It is named after the town of Tuchola in Kuyavian-Pomeranian Voivodeship.",
     "ludzie": [],
@@ -8193,6 +8505,10 @@
      {
       "tytul": "Warszawikia: Ulica Tucholska",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tucholska"
+     },
+     {
+      "tytul": "Wikipedia: Tuchola",
+      "url": "https://pl.wikipedia.org/wiki/Tuchola"
      }
     ],
     "pewnosc": "wysoka",
@@ -8337,7 +8653,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, do geokodowania. Istnieje: false (nieistniejąca zajezdnia). Tekst podaje dwa adresy: Włościańska 52 (teren CWS) i Słowackiego 45a (wg monografii). Rozbieżność w dacie rozpoczęcia: grudzień 1946 (lead) i 15 marca 1946 (monografia).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Budynki_z_kominami_mza_warszawa_wloscianska.jpg/1280px-Budynki_z_kominami_mza_warszawa_wloscianska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Budynki_z_kominami_mza_warszawa_wloscianska.jpg",
+      "opis": "Kompleks budynków warsztatowych i biurowych przy siedzibie Miejskich Zakładów Autobusowych w Warszawie, ul. Włościańska 52",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2019",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -8406,7 +8733,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Krakowskie_Przedmie%C5%9Bcie_szpital_%C5%9Bw_Rocha_P3288955_%28Nemo5576%29.jpg/1280px-Krakowskie_Przedmie%C5%9Bcie_szpital_%C5%9Bw_Rocha_P3288955_%28Nemo5576%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Krakowskie_Przedmie%C5%9Bcie_szpital_%C5%9Bw_Rocha_P3288955_(Nemo5576).jpg",
+      "opis": "Krakowskie Przedmieście 24.\nSzpital św. Rocha",
+      "autor": "Tomasz \"Nemo5576\" Górny",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2010",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -8537,7 +8875,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/2_Bole%C5%9B%C4%87_Street_in_Warsaw_-_Stara_Prochownia.jpg/1280px-2_Bole%C5%9B%C4%87_Street_in_Warsaw_-_Stara_Prochownia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2_Bole%C5%9B%C4%87_Street_in_Warsaw_-_Stara_Prochownia.jpg",
+      "opis": "Former prison from 1769-1778 built as an addition to much older bridge bastille which currently has the same address as the prison. 2 Boleść Street (formerly 2 Rybaki Street), Warsaw, Śródmieście dist",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -8607,6 +8956,17 @@
       "brak_w_zrodle": [
        "1861"
       ]
+     }
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Ulica_Kanonia_w_Warszawie.jpg/1280px-Ulica_Kanonia_w_Warszawie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ulica_Kanonia_w_Warszawie.jpg",
+      "opis": "Ulica Kanonia w Warszawie",
+      "autor": "This photo was taken by Arkadiusz ZarzeckiAutorem zdjęcia jest Arkadiusz Zarzecki",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2015",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
      }
     ]
    }
@@ -8684,7 +9044,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu. Dane o pochowanych i mszach pogrzebowych wzięte wprost z artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Varsovia_%28Polonia%29_Warszawa_%28Polska%29._45.jpg/1280px-Varsovia_%28Polonia%29_Warszawa_%28Polska%29._45.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Varsovia_(Polonia)_Warszawa_(Polska)._45.jpg",
+      "opis": "Bazylika Świętego Krzyża w Warszawie.",
+      "autor": "Txemai Argazki",
+      "licencja": "CC0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -8856,7 +9227,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne brak w paczce. Adres z nagłówka (Grzybowska 79); tekst historyczny wskazuje pierwotną lokalizację przy ul. Przyokopowej.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Warszawa%2C_Muzeum_Powstania_Warszawskiego_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Muzeum_Powstania_Warszawskiego_-_panoramio.jpg",
+      "opis": "Warszawa, Muzeum Powstania Warszawskiego",
+      "autor": "Wojtek S.",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -8970,7 +9352,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/2026_Warszawa_Gda%C5%84ski_Business_Center%2C_1.jpg/1280px-2026_Warszawa_Gda%C5%84ski_Business_Center%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2026_Warszawa_Gda%C5%84ski_Business_Center,_1.jpg",
+      "opis": "Kompleks biurowy Gdański Business Center w Warszawie.",
+      "autor": "Cybularny",
+      "licencja": "CC0",
+      "rok": "2026",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9098,7 +9491,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne brak w paczce; adres z nagłówka artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Warsaw_2023_103_Tyszkiewicz_Palace_Facade.jpg/1280px-Warsaw_2023_103_Tyszkiewicz_Palace_Facade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw_2023_103_Tyszkiewicz_Palace_Facade.jpg",
+      "opis": "Façade of Tyszkiewicz Palace (University of Warsaw Museum) on \"Krakowski\" in Warsaw (Warszawa).\nWarsaw is the capital and largest city of Poland. The metropolis stands on the River Vistula in east-cen",
+      "autor": "Scotch Mist",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9169,7 +9573,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne brak w paczce. Nagłówek podaje Kredytowa 1 i Mazowiecka 13; wpisano pierwszy.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Diwali_2017_in_Warsaw.jpg/1280px-Diwali_2017_in_Warsaw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Diwali_2017_in_Warsaw.jpg",
+      "opis": "Diwali 2017 in Warsaw",
+      "autor": "Oo91",
+      "licencja": "CC BY 3.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9361,7 +9776,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (infobox i opis).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Warszawa_Parada_R%C3%B3wno%C5%9Bci_2025_25.jpg/1280px-Warszawa_Parada_R%C3%B3wno%C5%9Bci_2025_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_Parada_R%C3%B3wno%C5%9Bci_2025_25.jpg",
+      "opis": "Parada Równości w Warszawie w 2025 roku",
+      "autor": "Zala",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9415,7 +9841,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku. Adres z tekstu artykułu (al. Jana Pawła II 22); hotel już nie istnieje, na jego miejscu stoi Q22.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Film_production_at_Q22_building_in_Warsaw%2C_1.jpg/1280px-Film_production_at_Q22_building_in_Warsaw%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Film_production_at_Q22_building_in_Warsaw,_1.jpg",
+      "opis": "Film production at Q22 building in Warsaw",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9578,7 +10015,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z infoboksu. Artykuł podaje wysokość 135 m w infoboksie i 138 m w tekście; zapisano infobox.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Intraco_Palace_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Intraco_Palace_-_panoramio.jpg",
+      "opis": "Intraco Palace",
+      "autor": "aeneas",
+      "licencja": "CC BY 3.0",
+      "rok": "10 M",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9644,7 +10092,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (w tekście „ul. Kopernika 30”).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Hostel_Warszawa_w_Warszawie.jpg/1280px-Hostel_Warszawa_w_Warszawie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Hostel_Warszawa_w_Warszawie.jpg",
+      "opis": "30 Kopernika Street in Warsaw. Kitchen in \"Warszawa\" hostel",
+      "autor": "Аимаина хикари",
+      "licencja": "CC0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9699,7 +10158,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Kamienica nie istnieje.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Elektoralna_16_22.jpg/1280px-Elektoralna_16_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Elektoralna_16_22.jpg",
+      "opis": "Osiedle Mirów w Warszawie, blok przy Elektoralnej 16/22",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9769,7 +10239,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku. Adres główny z tytułu/tekstu: plac Małachowskiego 2; alternatywny z tekstu: Mazowiecka 20.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Ulica_Czackiego_w_kierunku_ulicy_%C5%9Awi%C4%99tokrzyskiej_-_panoramio.jpg/1280px-Ulica_Czackiego_w_kierunku_ulicy_%C5%9Awi%C4%99tokrzyskiej_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ulica_Czackiego_w_kierunku_ulicy_%C5%9Awi%C4%99tokrzyskiej_-_panoramio.jpg",
+      "opis": "Ulica Czackiego w kierunku ulicy Świętokrzyskiej",
+      "autor": "Rafał Klisowski",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9820,6 +10301,17 @@
       "brak_w_zrodle": [
        "1945"
       ]
+     }
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Door_at_44_Nowogrodzka_Street_in_Warsaw%2C_Warsaw%2C_Poland%2C_2019.jpg/1280px-Door_at_44_Nowogrodzka_Street_in_Warsaw%2C_Warsaw%2C_Poland%2C_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Door_at_44_Nowogrodzka_Street_in_Warsaw,_Warsaw,_Poland,_2019.jpg",
+      "opis": "Door at 44 Nowogrodzka Street in Warsaw, Warsaw, Poland, 2019",
+      "autor": "Kgbo",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2019",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
      }
     ]
    }
@@ -9880,7 +10372,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Część północno-zachodnia budynku została wyłączona z eksploatacji.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Plac_konstytucji_4_r%C3%B3g.jpg/1280px-Plac_konstytucji_4_r%C3%B3g.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Plac_konstytucji_4_r%C3%B3g.jpg",
+      "opis": "Blok przy pl. Konstytucji 4 w Warszawie, przelot ulicy Koszykowej",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2024",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -9947,7 +10450,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (w tekście „Al. Jerozolimskich 51”). Artykuł nazywa budynek secesyjnym, a w opisie elewacji podaje styl neobarokowy; zapisano opis elewacji.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Warszawa_-_Kamienica_Wilhelma_Rakmana.jpg/1280px-Warszawa_-_Kamienica_Wilhelma_Rakmana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Kamienica_Wilhelma_Rakmana.jpg",
+      "opis": "Śródmieście Południowe. Aleje Jerozolimskie House Wilhelm Rakman. Arch. Ludwik Panczakiewicz 1905-06",
+      "autor": "Fred Romero from Paris, France",
+      "licencja": "CC BY 2.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10000,7 +10514,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł umieszcza ją na Nowym Mieście, a nagłówek DZIELNICE podaje Śródmieście (zapisano nagłówek).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/4_Zakroczymska_Street_in_Warsaw.jpg/1280px-4_Zakroczymska_Street_in_Warsaw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:4_Zakroczymska_Street_in_Warsaw.jpg",
+      "opis": "Tenement from the half of the 18th century at 4 Zakroczymska Street in Warsaw, Śródmieście district. During the World War II it was destroyed and rebuilt afterwards, in 1952.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10066,7 +10591,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje Jakuba Fryderyka Hoffmanna jako właściciela, a w tytule wpisano Jakuba Hoffmana.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/37%2C_Nowy_%C5%9Awiat_Street_in_Warsaw_-_02.jpg/1280px-37%2C_Nowy_%C5%9Awiat_Street_in_Warsaw_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:37,_Nowy_%C5%9Awiat_Street_in_Warsaw_-_02.jpg",
+      "opis": "Kamienica z poł. XIX, odbudowana w 1950 r., przy ul. Nowy Świat 37 w Warszawie",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10126,6 +10662,17 @@
        "1829"
       ]
      }
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Vlaams_Huis_Warschau.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Vlaams_Huis_Warschau.jpg",
+      "opis": "Vlaamse Vertegenwoordiging in Warschau",
+      "autor": "Vlaamse Vertegenwoordiging in Warschau",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
     ]
    }
   },
@@ -10182,7 +10729,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Ul._Marsza%C5%82kowska_41%2C_Warszawa_%281%29.jpg/1280px-Ul._Marsza%C5%82kowska_41%2C_Warszawa_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ul._Marsza%C5%82kowska_41,_Warszawa_(1).jpg",
+      "opis": "Ul. Marszałkowska, Warszawa.",
+      "autor": "Qkiel",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10387,7 +10945,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/41%2C_Nowy_%C5%9Awiat_Street_in_Warsaw_-_01.jpg/1280px-41%2C_Nowy_%C5%9Awiat_Street_in_Warsaw_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:41,_Nowy_%C5%9Awiat_Street_in_Warsaw_-_01.jpg",
+      "opis": "Kamienica przy ul Nowy Świat 41 w Warszawie",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10501,7 +11070,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (na rogu ul. Sowiej).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Ulica_Bednarska_-_widok_od_strony_Furma%C5%84skiej_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Ulica_Bednarska_-_widok_od_strony_Furma%C5%84skiej_-_panoramio.jpg",
+      "opis": "Ulica Bednarska - widok od strony Furmańskiej",
+      "autor": "Tadeusz Dąbrowski",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10672,7 +11252,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Marsz_4_czerwca_Warszawa_15.jpg/1280px-Marsz_4_czerwca_Warszawa_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Marsz_4_czerwca_Warszawa_15.jpg",
+      "opis": "4th of June 2023 march in Warsaw to protect freedom and democracy in Poland",
+      "autor": "Masti",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10804,7 +11395,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje Stanisława jako przedostatniego księcia mazowieckiego; nazwisko zapisano jako w tekście.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Warszawa%2CPolska%2CUE.Warsaw%2CPoland%2CEU._-_panoramio_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa,Polska,UE.Warsaw,Poland,EU._-_panoramio_(9).jpg",
+      "opis": "Warszawa,Polska,UE.Warsaw,Poland,EU.",
+      "autor": "Roman Eugeniusz",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -10922,7 +11524,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Warsaw_1944_by_Ba%C5%82uk_-_26242.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw_1944_by_Ba%C5%82uk_-_26242.jpg",
+      "opis": "Month before WarsawUprising: Tramway number 16 at Nowy Świat. In the back townhouse at Nowy Świat 1 street, and behind it to the left St. Alexander's Church.",
+      "autor": "Stefan Bałuk",
+      "licencja": "Public domain",
+      "rok": "July",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11017,7 +11630,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Nowe_Miasto_w_Warszawie_%E2%80%93_ul._Freta_38_%E2%80%93_01.jpg/1280px-Nowe_Miasto_w_Warszawie_%E2%80%93_ul._Freta_38_%E2%80%93_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Nowe_Miasto_w_Warszawie_%E2%80%93_ul._Freta_38_%E2%80%93_01.jpg",
+      "opis": "Kamienica Freta 38 zbudowana została w XVIII wieku, po zniszczeniach wojennych została odbudowana po 1945.",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2011",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11068,7 +11692,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Institute_of_National_Remembrance_-_Marsza%C5%82kowska_street.jpg/1280px-Institute_of_National_Remembrance_-_Marsza%C5%82kowska_street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Institute_of_National_Remembrance_-_Marsza%C5%82kowska_street.jpg",
+      "opis": "PL, Warszawa, Instytut Pamięci Narodowej, budynek przy ul. Marszałkowskiej 21/25",
+      "autor": "Daniel Koć (Kocio)",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2007",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11310,7 +11945,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Smolna_23_under_construction_9-2025_%282%29.jpg/1280px-Smolna_23_under_construction_9-2025_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Smolna_23_under_construction_9-2025_(2).jpg",
+      "opis": "Smolna 23 under construction 9-2025",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11378,7 +12024,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Ulica_Mazowiecka_-_panoramio_-_Tadeusz_D%C4%85browski.jpg/1280px-Ulica_Mazowiecka_-_panoramio_-_Tadeusz_D%C4%85browski.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ulica_Mazowiecka_-_panoramio_-_Tadeusz_D%C4%85browski.jpg",
+      "opis": "Ulica Mazowiecka",
+      "autor": "Tadeusz Dąbrowski",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11442,7 +12099,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje, że budynek jest trzypiętrowy z poddaszem, a we wstępie pięciokondygnacyjny w 1902 roku; zapisano opis z historii.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Mokotowska_35_koszykowa_24.jpg/1280px-Mokotowska_35_koszykowa_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Mokotowska_35_koszykowa_24.jpg",
+      "opis": "Kamienica przy ul. Koszykowej 24 w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2024",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11513,7 +12181,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/8_%C5%9Bmietnik.JPG/1280px-8_%C5%9Bmietnik.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:8_%C5%9Bmietnik.JPG",
+      "opis": "śmietnik na ścieżce rowerowej - ul. Czackiego, Warszawa",
+      "autor": "Michal X",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2014",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11586,7 +12265,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/58/POL_Warsaw_%C5%BBydowska_Szko%C5%82a_Piel%C4%99gniarek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:POL_Warsaw_%C5%BBydowska_Szko%C5%82a_Piel%C4%99gniarek.jpg",
+      "opis": "pl:Żydowska Szkoła Pielęgniarek",
+      "autor": "Hiuppo",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2007",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11681,7 +12371,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Ulica_Bednarska_-_panoramio.jpg/1280px-Ulica_Bednarska_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ulica_Bednarska_-_panoramio.jpg",
+      "opis": "Ulica Bednarska",
+      "autor": "Tadeusz Dąbrowski",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11737,7 +12438,18 @@
     ],
     "pewnosc": "średnia",
     "uwagi": "Brak współrzędnych w nagłówku. Adres dzisiejszy z tekstu („blok nr 11/19”); adres historyczny Aleje Jerozolimskie 9 wg przedwojennej numeracji.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/8/84/AK_DYSK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:AK_DYSK.jpg",
+      "opis": "Odznaka oddziału AK \"Dysk\" (pochodzi z tablicy pamiatkowej umieszczonej w kościele św. Jacka w Warszawie)",
+      "autor": "Pior",
+      "licencja": "Public domain",
+      "rok": "4.05",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11789,7 +12501,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/31/Warsaw_Uprising_-_Mokot%C3%B3w_to_%C5%9Ar%C3%B3dmie%C5%9Bcie_by_Sewers_%281944%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw_Uprising_-_Mokot%C3%B3w_to_%C5%9Ar%C3%B3dmie%C5%9Bcie_by_Sewers_(1944).jpg",
+      "opis": "Warsaw Uprising: insurgent from \"Szwoleżer's\" unit, part of \"Baszta\" Regiment from z Mokotów district, after dozen hour trip trough sewers to Śródmieście district, is coming out on corner of Wilcza St",
+      "autor": "Sylwester Braun",
+      "licencja": "Public domain",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11906,7 +12629,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/55/PAST_Mortko_Zielinski_1944.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:PAST_Mortko_Zielinski_1944.jpg",
+      "opis": "Warsaw Uprising: Insurgents from \"Kiliński\" battalion after securing \"PAST\" building, at Zielona Street on August 20, 1944: standing with machine gun Edward Mortko \"Tumry\", next on the right - Bernard",
+      "autor": "Unknown authorUnknown author",
+      "licencja": "Public domain",
+      "rok": "20 A",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -11947,7 +12681,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Warsaw_New_Town%2C_Warsaw%2C_Poland_-_panoramio_%286%29.jpg/1280px-Warsaw_New_Town%2C_Warsaw%2C_Poland_-_panoramio_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw_New_Town,_Warsaw,_Poland_-_panoramio_(6).jpg",
+      "opis": "Warsaw New Town, Warsaw, Poland",
+      "autor": "Ben Bender",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "22 J",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12005,7 +12750,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Warsaw%2C_the_Holy_Spirit_church.jpg/1280px-Warsaw%2C_the_Holy_Spirit_church.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw,_the_Holy_Spirit_church.jpg",
+      "opis": "Warsaw, the Holy Spirit church",
+      "autor": "Dguendel",
+      "licencja": "CC BY 3.0",
+      "rok": "1990",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12059,7 +12815,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Warszawa%2C_Freta_10.jpg/1280px-Warszawa%2C_Freta_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa,_Freta_10.jpg",
+      "opis": "Warszawa, ul. Freta przy Rynku Nowego Miasta",
+      "autor": "Krzysztof Dudzik-Górnicki (User:ToSter)",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2010",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12109,7 +12876,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (ul. Siennej 45).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Warszawa_-_Kamienica_pod_%C5%BBaglowcem.jpg/1280px-Warszawa_-_Kamienica_pod_%C5%BBaglowcem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_Kamienica_pod_%C5%BBaglowcem.jpg",
+      "opis": "Sienna Pre-World War II building. Arch. Józef Napoleon Czerwiński Beg. of 20th century. During the Warsaw Uprising, the Grouping Army \"Chrobry II\" headquarters was located there. Blu mural painted in ",
+      "autor": "Fred Romero from Paris, France",
+      "licencja": "CC BY 2.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12237,7 +13015,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/PL_Warsaw_Dziedziniec_Dziekanki.JPG/1280px-PL_Warsaw_Dziedziniec_Dziekanki.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:PL_Warsaw_Dziedziniec_Dziekanki.JPG",
+      "opis": "DziedziniecDziekanki",
+      "autor": "Happa",
+      "licencja": "CC BY 3.0",
+      "rok": "2015",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12308,7 +13097,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Ko%C5%9Bci%C3%B3%C5%82_pw._Stygmat%C3%B3w_%C5%9Bw._Franciszka_Serafickiego_Warszawa_%C5%9Ar%C3%B3dmie%C5%9Bcie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Ko%C5%9Bci%C3%B3%C5%82_pw._Stygmat%C3%B3w_%C5%9Bw._Franciszka_Serafickiego_Warszawa_%C5%9Ar%C3%B3dmie%C5%9Bcie.jpg",
+      "opis": "Zakroczymska 1, 00-225 Warszawa",
+      "autor": "MazowieckiPielgrzym",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2013",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12374,7 +13174,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Warszawa%2C_kosciol_sw._Jacka%2C_wnetrze_1.jpg/1280px-Warszawa%2C_kosciol_sw._Jacka%2C_wnetrze_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa,_kosciol_sw._Jacka,_wnetrze_1.jpg",
+      "opis": "Warszawa, kościół św. Jacka przy ul. Freta",
+      "autor": "Krzysztof Dudzik-Górnicki (User:ToSter)",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2010",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12451,7 +13262,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/5%2C_Brzozowa_Street_in_Warsaw_-_05.jpg/1280px-5%2C_Brzozowa_Street_in_Warsaw_-_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:5,_Brzozowa_Street_in_Warsaw_-_05.jpg",
+      "opis": "Kamienica zabytkowa z XV w. z późniejszymi zmianami w XVIII w. Po zniszczeniach wojennych odbudowana w 1960. Położona jest u zbiegu ulic Celnej i Brzozowej 5. Widok Kamienicy od strony ulicy Celnej, w",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12559,7 +13381,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu (ul. Polna 40, mieszkanie m 31), lat/lon null. Godziny otwarcia z artykułu mogą być nieaktualne.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Maria_d%C4%85browska_tablica_polna_40.JPG/1280px-Maria_d%C4%85browska_tablica_polna_40.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Maria_d%C4%85browska_tablica_polna_40.JPG",
+      "opis": "Tablica upamiętniająca mieszkanie Marii Dąbrowskiej, ul. Polna 40 w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2014",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12621,7 +13454,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Warsaw_New_Town%2C_Warsaw%2C_Poland_-_panoramio_%287%29.jpg/1280px-Warsaw_New_Town%2C_Warsaw%2C_Poland_-_panoramio_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw_New_Town,_Warsaw,_Poland_-_panoramio_(7).jpg",
+      "opis": "Warsaw New Town, Warsaw, Poland",
+      "autor": "Ben Bender",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "22 J",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12679,7 +13523,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "W artykule są dwa różne numery: infobox podaje ul. Bonifraterska 17, a tekst ul. Bonifraterska 20. Zapisano 17 z infoboxu. Brak współrzędnych, lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/b/b3/PL_Warsaw_North_Gate_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:PL_Warsaw_North_Gate_building.jpg",
+      "opis": "Budynek North Gate, stan na 14.09.2006",
+      "autor": "Hubert Śmietanka",
+      "licencja": "CC BY-SA 2.5",
+      "rok": "2006",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12749,7 +13604,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null. Okres: data oddania po budowie w 1910 roku.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/5/55/PAST_Mortko_Zielinski_1944.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:PAST_Mortko_Zielinski_1944.jpg",
+      "opis": "Warsaw Uprising: Insurgents from \"Kiliński\" battalion after securing \"PAST\" building, at Zielona Street on August 20, 1944: standing with machine gun Edward Mortko \"Tumry\", next on the right - Bernard",
+      "autor": "Unknown authorUnknown author",
+      "licencja": "Public domain",
+      "rok": "20 A",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12806,7 +13672,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord dotyczy budynku cerkwi opisanego w artykule o parafii (sama parafia pominięta jako instytucja). Brak współrzędnych, lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Aleksander_Jablonowski_i_Marcin_Osadowski.jpg/1280px-Aleksander_Jablonowski_i_Marcin_Osadowski.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Aleksander_Jablonowski_i_Marcin_Osadowski.jpg",
+      "opis": "Aleksander Jabłonowski - właśc. Wojciech Olszański - i redaktor Marcin Osadowski w trakcie nagrywania relacji na żywo z V międzynarodowego marszu wolności w Warszawie.",
+      "autor": "Tomasz Molina",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12926,7 +13803,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu. Dzielnica z nagłówka DZIELNICE (w rzeczywistości położenie przy Dzielnej to Muranów).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Muzeum_wi%C4%99zienia_%22Pawiak%22_-_10U.jpg/1280px-Muzeum_wi%C4%99zienia_%22Pawiak%22_-_10U.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Muzeum_wi%C4%99zienia_%22Pawiak%22_-_10U.jpg",
+      "opis": "Muzeum więzienia \"Pawiak\" - tablica pamięci",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -13049,7 +13937,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Warszawaoe1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawaoe1.jpg",
+      "opis": "Warszawaoe1.jpg",
+      "autor": null,
+      "licencja": "Public domain",
+      "rok": null,
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -13123,7 +14022,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Krakowskie_Przedmie%C5%9Bcie_szpital_%C5%9Bw_Rocha_P3288955_%28Nemo5576%29.jpg/1280px-Krakowskie_Przedmie%C5%9Bcie_szpital_%C5%9Bw_Rocha_P3288955_%28Nemo5576%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Krakowskie_Przedmie%C5%9Bcie_szpital_%C5%9Bw_Rocha_P3288955_(Nemo5576).jpg",
+      "opis": "Krakowskie Przedmieście 24.\nSzpital św. Rocha",
+      "autor": "Tomasz \"Nemo5576\" Górny",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2010",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -13282,6 +14192,17 @@
        "1948"
       ]
      }
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Pi%C4%99kna_1b_i_3.jpg/1280px-Pi%C4%99kna_1b_i_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pi%C4%99kna_1b_i_3.jpg",
+      "opis": "Kamienica przy ul. Pięknej 1B w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2024",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
     ]
    }
   },
@@ -13361,7 +14282,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z tekstu (przed pałacem Prezydenckim, Krakowskie Przedmieście 46/48). Artykuł podaje autora cokołu raz jako Józef, raz jako Aleksander Bojemski - wpisano obie formy zgodnie ze źródłem.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Poland-00741_-_Palace_Prezydencki_%2831071435322%29.jpg/1280px-Poland-00741_-_Palace_Prezydencki_%2831071435322%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Poland-00741_-_Palace_Prezydencki_(31071435322).jpg",
+      "opis": "Palace Prezydencki - Presidental Palace of the Republic of Poland. The statue of Prince Józef Poniatowski is in front of the palace.",
+      "autor": "Dennis G. Jarvis",
+      "licencja": "CC BY-SA 2.0",
+      "rok": "2016",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -13433,7 +14365,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Adres wg miejsca ustawienia na terenie Ambasady Niemiec (ul. Jazdów 12). Brak współrzędnych w artykule.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/German_embassy%2C_Warszaw%2C_Poland.jpg/1280px-German_embassy%2C_Warszaw%2C_Poland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:German_embassy,_Warszaw,_Poland.jpg",
+      "opis": "Deutsche Botschaft in Warschau, Polen",
+      "autor": "Lukas Plewnia",
+      "licencja": "CC BY-SA 2.0",
+      "rok": "2013",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -13805,7 +14748,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule; adres z sekcji 'adres' infoboksu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/%C5%9Awi%C4%99tokrzyska_14-18%2C_Warsaw%2C_September_2025.jpg/1280px-%C5%9Awi%C4%99tokrzyska_14-18%2C_Warsaw%2C_September_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:%C5%9Awi%C4%99tokrzyska_14-18,_Warsaw,_September_2025.jpg",
+      "opis": "Świętokrzyska 14-18, Warsaw, September 2025",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -13911,7 +14865,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędnych brak w artykule. Artykuł podaje, że nazwa Q22 pochodzi od quartz (kwarc) i numeru 22 z adresu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Film_production_at_Q22_building_in_Warsaw%2C_1.jpg/1280px-Film_production_at_Q22_building_in_Warsaw%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Film_production_at_Q22_building_in_Warsaw,_1.jpg",
+      "opis": "Film production at Q22 building in Warsaw",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -13957,7 +14922,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Artykuł w jednym miejscu lokalizuje kamienicę przy placu Zbawiciela, a w intro podaje ul. Mokotowską 19; adres_dzis wg intro. Brak współrzędnych w artykule.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Marsza%C5%82kowska_43_balkon.jpg/1280px-Marsza%C5%82kowska_43_balkon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Marsza%C5%82kowska_43_balkon.jpg",
+      "opis": "This image was uploaded as part of Wiki Loves Monuments 2013.",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -14185,7 +15161,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Adres wg intro artykułu (róg Alei Jerozolimskich). Brak współrzędnych w artykule.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Rotunda_PKO_in_Warsaw_%28demolition%29.jpg/1280px-Rotunda_PKO_in_Warsaw_%28demolition%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Rotunda_PKO_in_Warsaw_(demolition).jpg",
+      "opis": "Demolition of the PKO Rotunda in Warsaw, 2017",
+      "autor": "Grzegorz Gigol",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -14294,6 +15281,17 @@
     "zrodlo_rekordu": "warszawikia-dzielnice",
     "tagi": [
      "sport"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Piotr_Zeszutek_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Piotr_Zeszutek_2014.jpg",
+      "opis": "Polish rugby union player Piotr Zeszutek.",
+      "autor": "Diego Molero from Rennes, Francia",
+      "licencja": "CC BY 2.0",
+      "rok": "2014",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
     ]
    }
   },
@@ -14403,7 +15401,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w artykule. Artykuł przypisuje biurowcowi adres Skorupki 5 (ul. Skorupki 3 to dawna kamienica, na której miejscu wybudowano biurowiec).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Squat%2C_ehemalige_Tuberkulose-Klinik%2C_Skorupki_6%2C_Warschau%2C_2.jpg/1280px-Squat%2C_ehemalige_Tuberkulose-Klinik%2C_Skorupki_6%2C_Warschau%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Squat,_ehemalige_Tuberkulose-Klinik,_Skorupki_6,_Warschau,_2.jpg",
+      "opis": "Squat, ehemalige Tuberkulose-Klinik, Skorupki 6, Warschau",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2020",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -14554,7 +15563,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord wydzielony z artykułu „Tablice libertacyjne” (ogólny opis wspólny dla dwóch tablic). Brak współrzędnych w artykule.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Poland-00756_-_St._John_The_Baptist_Church_%2831101183261%29.jpg/1280px-Poland-00756_-_St._John_The_Baptist_Church_%2831101183261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Poland-00756_-_St._John_The_Baptist_Church_(31101183261).jpg",
+      "opis": "St. John The Baptist Church, originally built in the 14th century. The last king of Poland, Stanisław August Poniatowski, was crowned and eventually buried here, and in 1791 he also declared the Const",
+      "autor": "Dennis G. Jarvis",
+      "licencja": "CC BY-SA 2.0",
+      "rok": "2016",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -14737,7 +15757,8 @@
      "Przy ulicy znajdują się trzy obiekty: blok mieszkalny pod nr 2, zespół domów TKM pod nr 4/6 z przedszkolem nr 25 oraz skwer Mieczysława Fogga."
     ],
     "ciekawostki": [
-     "Skwer Mieczysława Fogga leży w miejscu planowanego dawniej placu Konstytucji Kwietniowej."
+     "Skwer Mieczysława Fogga leży w miejscu planowanego dawniej placu Konstytucji Kwietniowej.",
+     "Patron ulicy: Tadeusz Boy-Żeleński (1874–1941). Tadeusz Kamil Marcjan Żeleński, pseudonim „Boy”, znany jako Tadeusz Boy-Żeleński – polski tłumacz, krytyk literacki i teatralny, poeta-satyryk, kronikarz, eseista i działacz społeczny, z wykształcenia lekarz."
     ],
     "summary_en": "Tadeusz Boy-Żeleński Street is a roughly 200-metre street between Plac Unii Lubelskiej and Waryńskiego, on the border of Śródmieście and Mokotów. It was built in the early 1960s on the line of a street planned in the 1930s. Its only older buildings are the prewar Towarzystwo Kredytowego Miejskiego houses.",
     "ludzie": [
@@ -14757,6 +15778,10 @@
      {
       "tytul": "Warszawikia: Ulica Tadeusza Boya-Żeleńskiego",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Boya-Żeleńskiego"
+     },
+     {
+      "tytul": "Wikipedia: Tadeusz Boy-Żeleński",
+      "url": "https://pl.wikipedia.org/wiki/Tadeusz_Boy-Żeleński"
      }
     ],
     "pewnosc": "wysoka",
@@ -14841,7 +15866,8 @@
      "Ulica ma prawie 350 metrów długości i łączy zjazd z wiaduktu przy Andersa z ulicą Słomińskiego."
     ],
     "ciekawostki": [
-     "W pobliżu znajdują się Skwer Batalionu AK „Czata 49”, wieżowiec Intraco, stacja metra Dworzec Gdański oraz stacja kolejowa Warszawa Gdańska."
+     "W pobliżu znajdują się Skwer Batalionu AK „Czata 49”, wieżowiec Intraco, stacja metra Dworzec Gdański oraz stacja kolejowa Warszawa Gdańska.",
+     "Patron ulicy: Maciej Aleksy Dawidowski (1920–1943). Maciej Aleksy Dawidowski, ps. „Alek”, „Glizda”, „Kopernicki”, „Koziorożec” – polski instruktor harcerski, podharcmistrz, członek Szarych Szeregów i Grup Szturmowych, kawaler Orderu Virtuti Militari, jeden z bohaterów książki Aleksandra Kamińskiego Kamienie na szaniec."
     ],
     "summary_en": "Alek Dawidowski Street is a roughly 350-metre ramp linking the Anders viaduct with Słomińska in Muranów. It was built in 1957 and went unnamed for fifty years before being named in 2007 after Maciej Aleksy „Alek” Dawidowski, a Home Army officer who died of wounds in 1943.",
     "ludzie": [
@@ -14856,6 +15882,10 @@
      {
       "tytul": "Warszawikia: Ulica Dawidowskiego",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Dawidowskiego"
+     },
+     {
+      "tytul": "Wikipedia: Maciej Aleksy Dawidowski",
+      "url": "https://pl.wikipedia.org/wiki/Maciej_Aleksy_Dawidowski"
      }
     ],
     "pewnosc": "wysoka",
@@ -14993,7 +16023,8 @@
      "Ulica biegnie od ul. Kopernika przy placu Juliusza Osterwy do skrzyżowania z ul. Oboźną i przecina pasaż Arnolda Szyfmana."
     ],
     "ciekawostki": [
-     "Kazimierz Karaś był marszałkiem dworu Stanisława Augusta Poniatowskiego i właścicielem znajdującego się niegdyś obok pałacu Karasia."
+     "Kazimierz Karaś był marszałkiem dworu Stanisława Augusta Poniatowskiego i właścicielem znajdującego się niegdyś obok pałacu Karasia.",
+     "Patron ulicy: Kazimierz Karaś (1711–1775). Kazimierz Karaś herbu Dąbrowa – generał major wojsk koronnych, kasztelan wiski, marszałek prywatny króla Stanisława Augusta Poniatowskiego, asesor Komisji Skarbu Jego Królewskiej Mości w 1768 roku, kawaler Orderu Orła Białego."
     ],
     "summary_en": "Kazimierz Karaś Street is a 100-metre street in Śródmieście Północne, running from Kopernika to Oboźna. It was laid out around 1911 on the grounds of the Karaś palace, first named after Juliusz Słowacki, and renamed in the 1930s after its present patron. The Polish Theatre stands on the street.",
     "ludzie": [
@@ -15020,6 +16051,10 @@
      {
       "tytul": "Warszawikia: Ulica Karasia",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Karasia"
+     },
+     {
+      "tytul": "Wikipedia: Kazimierz Karaś",
+      "url": "https://pl.wikipedia.org/wiki/Kazimierz_Karaś"
      }
     ],
     "pewnosc": "wysoka",
@@ -15054,7 +16089,8 @@
      "W dawnym kinie Domu Kultury Radzieckiej działała meksykańska restauracja; w jej miejscu w latach 2012–2014 powstał biurowiec."
     ],
     "ciekawostki": [
-     "Najbardziej rozpoznawalnym obiektem na ulicy była właśnie meksykańska restauracja w dawnym kinie Domu Kultury Radzieckiej."
+     "Najbardziej rozpoznawalnym obiektem na ulicy była właśnie meksykańska restauracja w dawnym kinie Domu Kultury Radzieckiej.",
+     "Patron ulicy: Aleksander Krywult (1845–1903). Jan Kornel Krywult, Michalina Steinauer (ur. 1875), Kazimierz Krywult (ur."
     ],
     "summary_en": "Aleksander Krywult Street is a short one-way street of about 90 metres in Śródmieście Północne. It was formed in the 1960s as an unnamed link between Foksal and Szczygla, and received its present name in 1998.",
     "ludzie": [
@@ -15069,6 +16105,10 @@
      {
       "tytul": "Warszawikia: Ulica Krywulta",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Krywulta"
+     },
+     {
+      "tytul": "Wikipedia: Aleksander Krywult",
+      "url": "https://pl.wikipedia.org/wiki/Aleksander_Krywult"
      }
     ],
     "pewnosc": "wysoka",
@@ -15526,7 +16566,9 @@
      "Podczas II wojny światowej przetrwały dwie kamienice, ale zamiast je wyremontować, rozebrano je.",
      "Do ulicy przypisany jest tylko jeden budynek mieszkalny, oznaczony numerem 2."
     ],
-    "ciekawostki": [],
+    "ciekawostki": [
+     "Patron ulicy: zimno. Chłód – pojęcie odnoszące się do stanu o niskiej temperaturze (to znaczy takiego w którym brak jest ciepła)."
+    ],
     "summary_en": "Zimna is a 50 m dead-end lane in Śródmieście Północne, starting at Plac Mirowski and Ptasia street. Formed in the 17th century on the Wielopole jurisdiction, it was home mainly to Jewish shopkeepers from the 19th century, and two tenements that survived the war were later demolished.",
     "ludzie": [],
     "dawne_nazwy": [],
@@ -15534,6 +16576,10 @@
      {
       "tytul": "Warszawikia: Ulica Zimna",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zimna"
+     },
+     {
+      "tytul": "Wikipedia: zimno",
+      "url": "https://pl.wikipedia.org/wiki/Chłód"
      }
     ],
     "pewnosc": "wysoka",
@@ -15571,7 +16617,8 @@
      "Patronką ulicy jest św. Barbara, męczennica z IV wieku, jedna z Czternastu Świętych Wspomożycieli."
     ],
     "ciekawostki": [
-     "Pod numerem 4 mieścił się dawny gmach Gimnazjum i Liceum im. M. Konopnickiej; dziś mieści się tam Centrum Usług Koncesjonowanych oraz Centrum Zarządzania Kadrami Poczty Polskiej."
+     "Pod numerem 4 mieścił się dawny gmach Gimnazjum i Liceum im. M. Konopnickiej; dziś mieści się tam Centrum Usług Koncesjonowanych oraz Centrum Zarządzania Kadrami Poczty Polskiej.",
+     "Patron ulicy: Barbara z Nikomedii (0273–0306). anioł z gałązką palmową, dwa miecze u jej stóp, gałąź palmowa, krzyż, pawie pióro, miecz, kielich z hostią, wieża"
     ],
     "summary_en": "Świętej Barbary is a one-way 350 m street in Śródmieście Południowe, running from Poznańska to Nowogrodzka. It runs over the site of Warsaw's first cemetery outside the city, opened in 1781, and is named after St. Barbara, patron of the nearby parish.",
     "ludzie": [],
@@ -15580,6 +16627,10 @@
      {
       "tytul": "Warszawikia: Ulica Świętej Barbary",
       "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Świętej_Barbary"
+     },
+     {
+      "tytul": "Wikipedia: Barbara z Nikomedii",
+      "url": "https://pl.wikipedia.org/wiki/Barbara_z_Nikomedii"
      }
     ],
     "pewnosc": "wysoka",
@@ -15680,7 +16731,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w źródle (WSPÓŁRZĘDNE: brak); adres z nagłówka artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Pa%C5%82ac_Kultury_i_Nauki_%28PKiN%29.jpg/1280px-Pa%C5%82ac_Kultury_i_Nauki_%28PKiN%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pa%C5%82ac_Kultury_i_Nauki_(PKiN).jpg",
+      "opis": "Śródmieście, Pałac Kultury i Nauki",
+      "autor": "Maria0811",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2018",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -15728,7 +16790,18 @@
     ],
     "pewnosc": "średnia",
     "uwagi": "Brak współrzędnych w źródle; adres z infoboksu. Artykuł nie podaje dat planu. Projektant oznaczony w źródle znakiem zapytania.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Palace_%2837140342880%29.jpg/1280px-Palace_%2837140342880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Palace_(37140342880).jpg",
+      "opis": "Poland",
+      "autor": "Twisted Realm from Gdansk, Poland",
+      "licencja": "CC BY 2.0",
+      "rok": "2014",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -15808,6 +16881,17 @@
        "1949"
       ]
      }
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/PL.ZIPOP.1393.PP.1465011.3047_a.jpg/1280px-PL.ZIPOP.1393.PP.1465011.3047_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:PL.ZIPOP.1393.PP.1465011.3047_a.jpg",
+      "opis": "Głazy narzutowe między budynkami Muzeum Ziemi PAN w Warszawie przy alei Na Skarpie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2019",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
     ]
    }
   },
@@ -15858,7 +16942,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Willa_przybylskiego.jpg/1280px-Willa_przybylskiego.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Willa_przybylskiego.jpg",
+      "opis": "Willa Czesława Przybylskiego przy ul. Górnośląskiej 43 w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -15968,7 +17063,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/12_My%C5%9Bliwiecka_Street_in_Warsaw_-_villa_designed_by_professor_Rudolf_%C5%9Awierczy%C5%84ski_01.JPG/1280px-12_My%C5%9Bliwiecka_Street_in_Warsaw_-_villa_designed_by_professor_Rudolf_%C5%9Awierczy%C5%84ski_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:12_My%C5%9Bliwiecka_Street_in_Warsaw_-_villa_designed_by_professor_Rudolf_%C5%9Awierczy%C5%84ski_01.JPG",
+      "opis": "Villa built in 1923, designed by the architect professor Rudolf Świerczyński, who was also the first owner  of the house. 12 Myśliwiecka Street, Warsaw, Śródmieście district.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -16020,7 +17126,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w źródle. W tekście adres zapisany jako ul. Brackiej 9; podano w mianowniku. Artykuł pod koniec nazywa obiekt Domem Mody vitkAc.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Vinotheka_13.jpg/1280px-Vinotheka_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Vinotheka_13.jpg",
+      "opis": "Restauracja Concept 13 przy ulicy Brackiej 9 w Warszawie.",
+      "autor": "tm-md",
+      "licencja": "CC BY-SA 2.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -16071,7 +17188,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu. Artykuł opisuje głównie wyznanie; do rekordu wzięto fakty o budynku zboru.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Warszawa_-_ulica_Twarda_-_panoramio.jpg/1280px-Warszawa_-_ulica_Twarda_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_-_ulica_Twarda_-_panoramio.jpg",
+      "opis": "Warszawa - ulica Twarda",
+      "autor": "geo573",
+      "licencja": "CC BY 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -16129,7 +17257,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Warszawa_biurowiec_przy_rondzie_Jazdy_Polskiej.jpg/1280px-Warszawa_biurowiec_przy_rondzie_Jazdy_Polskiej.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_biurowiec_przy_rondzie_Jazdy_Polskiej.jpg",
+      "opis": "Office building at Jazdy Polskiej rondabout.",
+      "autor": "Marcin Białek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2009",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -16196,7 +17335,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w źródle; adres z treści artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/5%2C_Brzozowa_Street_in_Warsaw_-_05.jpg/1280px-5%2C_Brzozowa_Street_in_Warsaw_-_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:5,_Brzozowa_Street_in_Warsaw_-_05.jpg",
+      "opis": "Kamienica zabytkowa z XV w. z późniejszymi zmianami w XVIII w. Po zniszczeniach wojennych odbudowana w 1960. Położona jest u zbiegu ulic Celnej i Brzozowej 5. Widok Kamienicy od strony ulicy Celnej, w",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   }
  ]

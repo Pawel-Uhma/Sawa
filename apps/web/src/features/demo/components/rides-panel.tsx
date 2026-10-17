@@ -109,7 +109,7 @@ export function RidesPanel({
                   <motion.span
                     layoutId="segment-czasu"
                     transition={SPRING}
-                    className="absolute inset-0 rounded-[inherit] bg-white shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
+                    className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
                   />
                 )}
                 <span className="relative">{value === 240 ? "4 h+" : formatDuration(value)}</span>
@@ -167,7 +167,7 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
   const places = route?.places ?? [];
 
   return (
-    <article className="relative mt-4 overflow-hidden rounded-[24px] bg-white shadow-[0_1px_2px_rgba(16,43,42,0.05),0_10px_30px_rgba(16,43,42,0.10)]">
+    <article className="relative mt-4 overflow-hidden rounded-[24px] bg-powierzchnia shadow-[0_1px_2px_rgba(16,43,42,0.05),0_10px_30px_rgba(16,43,42,0.10)]">
       <div className="relative aspect-[5/3] w-full bg-mapa">
         {route ? (
           <RouteThumb
@@ -197,7 +197,7 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
           }}
           whileTap={{ scale: 0.92 }}
           transition={SPRING}
-          className="absolute -top-7 right-4 grid size-14 place-items-center rounded-full border-[3px] border-white bg-koral text-white shadow-[0_6px_16px_rgba(242,117,95,0.4)]"
+          className="absolute -top-7 right-4 grid size-14 place-items-center rounded-full border-[3px] border-powierzchnia bg-koral text-white shadow-[0_6px_16px_rgba(242,117,95,0.4)]"
         >
           <PlayIcon className="ml-0.5 size-[22px]" />
         </motion.button>
@@ -240,7 +240,7 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
 
 function UpcomingRide({ ride }: { ride: RidePreview }) {
   return (
-    <article className="overflow-hidden rounded-[20px] bg-white shadow-[0_1px_2px_rgba(16,43,42,0.05),0_6px_18px_rgba(16,43,42,0.08)]">
+    <article className="overflow-hidden rounded-[20px] bg-powierzchnia shadow-[0_1px_2px_rgba(16,43,42,0.05),0_6px_18px_rgba(16,43,42,0.08)]">
       <RouteThumb
         line={ride.line}
         strokeWidth={6}

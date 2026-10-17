@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { ThemeToggleButton } from "@/features/theme";
 import { haptic, SPRING } from "../lib/device";
 import {
   type Choice,
@@ -138,7 +139,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
 
   return (
     // Pełnoekranowa warstwa nad mapą: mapa prześwituje przez matowe szkło, więc onboarding i mapa to jedna przestrzeń.
-    <div className="fixed inset-0 z-40 touch-pan-y overflow-y-auto overscroll-contain bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
+    <div className="fixed inset-0 z-40 touch-pan-y overflow-y-auto overscroll-contain bg-mapa/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-mapa">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_45%_at_20%_15%,rgba(142,209,181,0.35),transparent_70%),radial-gradient(50%_40%_at_90%_90%,rgba(242,117,95,0.10),transparent_70%)]"
@@ -152,7 +153,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
                 type="button"
                 onClick={() => go(prevOf(step))}
                 aria-label="Wstecz"
-                className="-ml-2 flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-white active:scale-90 active:bg-white"
+                className="-ml-2 flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-powierzchnia active:scale-90 active:bg-powierzchnia"
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path
@@ -167,7 +168,13 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
             ) : (
               <Logo className="text-2xl md:text-3xl" />
             )}
-            {showChrome && <Progress segments={paged} index={paged.indexOf(step)} />}
+            {showChrome ? (
+              <Progress segments={paged} index={paged.indexOf(step)} />
+            ) : (
+              <span className="flex-1" />
+            )}
+            {/* Motyw od pierwszego ekranu, zanim ktoś dojdzie do menu; „Auto” jest w menu Sawy */}
+            <ThemeToggleButton className="-mr-2" />
           </header>
 
           <div className={step === "welcome" ? "pt-6 md:pt-0" : ""}>
@@ -324,7 +331,7 @@ function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: (
         ].map((item) => (
           <li
             key={item.icon}
-            className="flex items-center gap-2.5 rounded-2xl bg-white/70 py-2 pl-2 pr-4 text-sm font-semibold text-tekst-2"
+            className="flex items-center gap-2.5 rounded-2xl bg-powierzchnia/70 py-2 pl-2 pr-4 text-sm font-semibold text-tekst-2"
           >
             <Image
               src={`/onboarding/${item.icon}.webp`}

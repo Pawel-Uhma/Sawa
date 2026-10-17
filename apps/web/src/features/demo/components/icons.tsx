@@ -167,3 +167,28 @@ export function TramIcon(props: IconProps) {
     </svg>
   );
 }
+
+export function WalkIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <circle cx="13" cy="4" r="2" />
+      <path d="M7 21l3-7 3 2v5M6 13l3-4 3 1 2 4M16 8l-2 4" />
+    </svg>
+  );
+}
+
+export function LoopIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4" />
+    </svg>
+  );
+}
+
+export function ForwardIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M5 12h12M13 6l6 6-6 6" />
+    </svg>
+  );
+}

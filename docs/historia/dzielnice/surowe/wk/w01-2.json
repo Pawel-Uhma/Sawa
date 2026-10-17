@@ -1,0 +1,212 @@
+[
+  {
+    "id": "cmentarz-mariawicki",
+    "nazwa": "Cmentarz mariawicki",
+    "name_en": "Mariavite Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wola",
+    "adres_dzis": "Wolska 186",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz wyznawców mariawityzmu założono w 1912 roku; ma około 0,6 hektara i leży przy ul. Wolskiej 186, na terenie parafii Matki Boskiej Nieustającej Pomocy.",
+      "Gdy powstał Kościół Starokatolicki Mariawitów, zmarłych chowano początkowo głównie na Bródnie; z czasem mariawitom podarowano plac na miejsce pochówków.",
+      "Po wojnie teren cmentarza znacznie okrojono, a na jego części urządzono zajezdnię tramwajową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Mariavite Cemetery at Wolska 186 in Wola was founded in 1912 on about 0.6 hectares. After the war part of its area was taken over for a tram depot.",
+    "ludzie": [
+      {"kto": "Józef Graczyk", "rola": "płk dr, pułkownik Wojska Polskiego (1928–2003), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Jan Maria Bernard Kukla", "rola": "kapłan mariawicki, proboszcz parafii w Warszawie, Mińsku Mazowieckim, Strykowie i Łowiczu, działacz społeczny (1906–1967)", "wiki": null},
+      {"kto": "Mieczysław Maria Konrad Kołak", "rola": "kapłan mariawicki, proboszcz parafii w Cegłowie i Gniazdowie (1908–2002)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Cmentarz mariawicki", "url": "https://warszawa.fandom.com/pl/wiki/Cmentarz_mariawicki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Wolskiej 186”)."
+  },
+  {
+    "id": "cud-na-nowolipkach",
+    "nazwa": "Cud na Nowolipkach",
+    "name_en": "Miracle on Nowolipki Street",
+    "typ": "zdarzenie",
+    "dzielnica": "Wola",
+    "adres_dzis": "Nowolipki 18",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1959",
+    "istnieje": true,
+    "fakty": [
+      "7 października 1959 roku, według relacji świadków, na tle pozłacanej kuli wieży kościoła św. Augustyna na Nowolipkach 18 widziano Matkę Boską.",
+      "9 października postać ukazała się ponownie i pojawiała się przez kolejnych 20 dni, a pod kościołem gromadziły się tłumy wiernych.",
+      "Milicja i funkcjonariusze służb bezpieczeństwa legitymowali ludzi, a niektórzy zostali aresztowani; wokół świątyni od godziny 22 wprowadzono godzinę milicyjną.",
+      "Na początku listopada 1959 roku cuda ustały. Kuria metropolitarna stwierdziła, że domniemany cud jest zjawiskiem naturalnym.",
+      "Władze nakazały przemalować kulę na czarno, a zjawisko było ośmieszane w prasie. Do dziś nie potwierdzono, czy był to cud, czy zjawisko naturalne."
+    ],
+    "ciekawostki": [
+      "Wizerunek Matki Boskiej nazwano później Muranowską."
+    ],
+    "summary_en": "In October 1959 witnesses reported an image of the Virgin Mary on the gilded dome of St. Augustine's church on Nowolipki Street in Warsaw. Crowds gathered for about three weeks, the authorities had the dome painted black, and the event has never been confirmed as a miracle.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Cud na Nowolipkach", "url": "https://warszawa.fandom.com/pl/wiki/Cud_na_Nowolipkach"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (kościół św. Augustyna, Nowolipki 18)."
+  },
+  {
+    "id": "fabryka-garbarska-bracia-pfeiffer",
+    "nazwa": "Fabryka Garbarska Bracia Pfeiffer",
+    "name_en": "Pfeiffer Brothers Tannery",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Okopowa 58/72",
+    "adres_historyczny": "Smocza 43",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1750–koniec lat 90. XX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Początki fabryki sięgają 1750 roku, kiedy Walter Pfeiffer, Niemiec z pochodzenia, założył warsztat na Lesznie 48.",
+      "W 1854 roku Stanisław Fryderyk Pfeiffer przekształcił niewielki zakład w duży; w latach 70. XIX wieku wykupił teren przy ul. Smoczej.",
+      "W latach 80. XIX wieku synowie Stanisława F. Pfeiffera przekształcili fabrykę w spółkę „Bracia Pfeiffer”; zatrudniała wówczas 480 robotników.",
+      "W 1904 roku powstało przedsiębiorstwo Połączone Fabryki Garbarskie „Bracia Pfeiffer, Szlenkier i Temler”.",
+      "Podczas II wojny światowej fabryka znalazła się na skraju getta, a jej ówczesny właściciel Józef Pfeiffer ułatwiał Żydom ucieczkę z getta.",
+      "Podczas powstania w getcie warszawskim w 1943 roku fabryka została składem broni Żydowskiej Organizacji Bojowej.",
+      "11 sierpnia 1944 roku Niemcy zajęli fabrykę i zorganizowali tu punkt zborny dla zatrzymywanych mieszkańców; większość z nich rozstrzeliwano na terenie Miejskich Zakładów Opałowych przy ul. Okopowej 59.",
+      "W latach 60. XX wieku pod budowę osiedla przy ul. Esperanto rozebrano dom mieszkalny Pfeiffrów, a pozostałe budynki wyburzono pod koniec lat 90. XX wieku; w ich miejscu wzniesiono centrum handlowe Klif."
+    ],
+    "ciekawostki": [
+      "Na ul. Esperanto, w chodniku między budynkami nr 18a i 20, zachowało się przyłącze gazowe fabryki z oznaczeniami Gazowni Miejskiej m.st. Warszawy (GM)."
+    ],
+    "summary_en": "The Pfeiffer Brothers tannery on Muranów began in 1750 on Leszno Street and grew into a large works on Smocza and Okopowa streets. It was used by the Warsaw Ghetto Uprising fighters as a weapons depot, and was demolished in the late 1990s to make way for the Klif shopping centre.",
+    "ludzie": [
+      {"kto": "Walter Pfeiffer", "rola": "założyciel warsztatu (1750)", "wiki": null},
+      {"kto": "Stanisław Fryderyk Pfeiffer", "rola": "zarządzający fabryką, który przekształcił ją w duży zakład (1854)", "wiki": null},
+      {"kto": "Józef Pfeiffer", "rola": "właściciel fabryki w czasie II wojny światowej, ułatwiał Żydom ucieczkę z getta", "wiki": null}
+    ],
+    "dawne_nazwy": ["Smocza 43 (przed zmianą adresu)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Fabryka Garbarska Bracia Pfeiffer", "url": "https://warszawa.fandom.com/pl/wiki/Fabryka_Garbarska_Bracia_Pfeiffer"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Obiekt nieistniejący. Brak współrzędnych w nagłówku. Adres_dzis to późniejszy adres zakładu z tekstu („potem ul. Okopowa 58/72”), a nie aktualny adres; tekst nie podaje adresu dzisiejszego centrum Klif."
+  },
+  {
+    "id": "fabryka-norblina",
+    "nazwa": "Fabryka Norblina",
+    "name_en": "Norblin Factory",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Żelazna 49/51/53",
+    "adres_historyczny": "Chłodna 5 (1834–1882), Żelazna 49/53 (1882–1948)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1834–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zakład Platerniczy Norblinów działał w latach 1834–1882 przy ul. Chłodnej 5, a następnie w latach 1882–1948 przy ul. Żelaznej 49/53 jako fabryka metali kolorowych spółki „Norblin, B-cia Buch i T. Werner”.",
+      "W 1948 roku spółkę znacjonalizowano i przekształcono w Walcownię Metali „Warszawa”.",
+      "W latach 1982–2008 funkcjonowało tu Muzeum Przemysłu, któremu zabrano teren, przekazując go upadłej spółce Norblin SA.",
+      "W marcu 2012 roku zaprezentowano projekt kompleksu biurowo-handlowego wkomponowanego w 11 zabytkowych budynków; pozwolenie na budowę wydano w sierpniu 2014 roku.",
+      "W lutym 2014 roku rozebrano część zabudowań przy drodze poszerzanej wówczas ul. Prostej.",
+      "Rewitalizację prowadzono w latach 2014–2021; odnowiono 10 pofabrycznych budynków wpisanych do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Od listopada 2010 roku w każdą sobotę na terenie fabryki organizowany jest pierwszy targ ekologiczny w Warszawie – BioBazar."
+    ],
+    "summary_en": "The Norblin Factory complex at Żelazna 49/51/53 in Wola was a metal works from 1882 to 1948 and later housed the Museum of Industry. After 2014 its historic buildings were restored into an office, retail and cultural complex.",
+    "ludzie": [
+      {"kto": "PRC Architekci", "rola": "pracownia, która przygotowała projekt kompleksu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zakład Platerniczy Norblinów", "Walcownia Metali „Warszawa”"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Fabryka Norblina", "url": "https://warszawa.fandom.com/pl/wiki/Fabryka_Norblina"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (ulice Prosta 22/24/26, Żelazna 49/51/53, Łucka 1/3/5 – wybrano Żelazną, główne wejście)."
+  },
+  {
+    "id": "tablica-gesiowki-anielewicza-34",
+    "nazwa": "Tablica pamiątkowa Gęsiówki (ul. Anielewicza 34)",
+    "name_en": "Memorial plaque of Gęsiówka (Anielewicza 34)",
+    "typ": "tablica",
+    "dzielnica": "Wola",
+    "adres_dzis": "Anielewicza 34",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pamięć o zdobyciu i istnieniu Gęsiówki podtrzymuje tablica pamiątkowa wmurowana w fasadę bloku przy ul. Anielewicza 34.",
+      "Gęsiówka – więzienie w budynku Koszar Wołyńskich na Muranowie, u zbiegu Gęsiej i Zamenhofa, działające od końca XIX wieku do 1963 roku.",
+      "W 1943 roku, na rozkaz Heinricha Himmlera, zabudowania Gęsiówki stały się siedzibą obozu koncentracyjnego KL Warschau.",
+      "Przed wybuchem powstania warszawskiego Niemcy ewakuowali KL Warschau, jednak w obozie pozostało 348 więźniów.",
+      "5 sierpnia 1944 roku więźniów wyzwolili powstańcy z batalionu „Zośka” dowodzeni przez Ryszarda Białousa „Jerzego”; pomógł zdobyczny pojazd pancerny „Magda”."
+    ],
+    "ciekawostki": [
+      "W 1945 roku Gęsiówkę przejął NKWD jako obóz jeniecki; obóz istniał do 1949 roku, a więzienie działało dalej do 1963 roku."
+    ],
+    "summary_en": "A memorial plaque on the facade of the block at Anielewicza 34 in Muranów commemorates the Gęsiówka prison and the camp KL Warschau, liberated by Zośka battalion fighters on 5 August 1944.",
+    "ludzie": [
+      {"kto": "Janusz Korczak", "rola": "osadzony w Gęsiówce w 1940 roku", "wiki": null},
+      {"kto": "Ryszard Białous „Jerzy”", "rola": "dowódca batalionu „Zośka”, który uwolnił więźniów 5 sierpnia 1944", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koszary Wołyńskie"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Gęsiówka", "url": "https://warszawa.fandom.com/pl/wiki/Gęsiówka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord tablicy, bo sama Gęsiówka ma w tekście tylko adres skrzyżowania (u zbiegu Gęsiej i Zamenhofa), bez numeru. Brak współrzędnych w nagłówku; lat/lon null."
+  },
+  {
+    "id": "hotel-hilton-warszawa",
+    "nazwa": "Hotel Hilton",
+    "name_en": "Hilton Warsaw Hotel",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Grzybowska 63",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2004–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel Hilton powstał w latach 2004–2007 według projektu pracowni Kazimierski i Ryba; był pierwszym w Polsce hotelem sieci Hilton.",
+      "Kamień węgielny wmurowano 19 października 2004 roku, wiechę zawieszono 21 lipca 2005 roku, a hotel oficjalnie otwarto 19 marca 2007 roku.",
+      "Budowa kosztowała 53 mln euro; prace budowlane wykonywała firma Budimex Dromex S.A.",
+      "Budynek ma 94 metry wysokości i 28 kondygnacji nadziemnych; mieści 314 pokojów i apartamentów, centrum konferencyjne, kasyno i basen oraz podziemny parking na 350 samochodów.",
+      "Podczas Euro 2012 w hotelu mieszkali sędziowie z ramienia UEFA."
+    ],
+    "ciekawostki": [
+      "W hotelu nakręcono teledysk szwedzkiego piosenkarza Danny'ego i polskiej piosenkarki Sashy Strunin do piosenki „Emely”.",
+      "W hotelowym atrium wiszą światłowodowe żyrandole zaprojektowane przez brytyjską artystkę Sharon Marston."
+    ],
+    "summary_en": "The Hilton Warsaw Hotel at Grzybowska 63 in Wola is a 94-metre, 28-storey hotel. Built in 2004–2007 to a design by Kazimierski i Ryba, it was the first Hilton hotel in Poland.",
+    "ludzie": [
+      {"kto": "Kazimierski i Ryba", "rola": "biuro projektów, autor projektu hotelu", "wiki": null},
+      {"kto": "Ara Design", "rola": "brytyjskie studio architektoniczne, autor wnętrz", "wiki": null},
+      {"kto": "Sharon Marston", "rola": "brytyjska artystka, autorka żyrandoli w atrium", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Hotel Hilton", "url": "https://warszawa.fandom.com/pl/wiki/Hotel_Hilton"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („adres: ul. Grzybowska 63”)."
+  }
+]

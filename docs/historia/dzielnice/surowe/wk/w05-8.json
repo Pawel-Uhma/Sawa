@@ -1,0 +1,114 @@
+[
+  {
+    "id": "ulica-trojaka",
+    "nazwa": "Ulica Trojaka",
+    "name_en": "Trojaka Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Trojaka",
+    "adres_historyczny": null,
+    "lat": 52.2662187,
+    "lon": 21.00078,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XIX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Trojaka ma 115 metrów długości i leży na terenie Cytadeli.",
+      "Odchodzi na wschód od ulicy Czujnej i kończy się skrzyżowaniem z ulicą Skazańców.",
+      "W okolicy ulicy znajdują się fundamenty budynku wartowni X pawilonu Cytadeli."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Trojaka is a 115-metre street inside the Warsaw Citadel, running east from Czujna to Skazańców. Near it lie the foundations of the guardhouse of the X Pavilion.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Trojaka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Trojaka"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z artykułu, środek odcinka. Artykuł krótki, mało faktów."
+  },
+  {
+    "id": "ulica-tucholska",
+    "nazwa": "Ulica Tucholska",
+    "name_en": "Tucholska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Tucholska",
+    "adres_historyczny": null,
+    "lat": 52.2704081,
+    "lon": 20.9890341,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Tucholska ma ponad 500 metrów długości; odchodzi od ul. Dziennikarskiej i biegnie do skrzyżowania z ul. Bohomolca.",
+      "Jej przedłużeniem w kierunku północnym jest ul. Bytomska.",
+      "Krzyżuje się kolejno z ulicami Karpińskiego, Kniaźnina i Sułkowskiego.",
+      "Nazwa pochodzi od Tucholi, miasta powiatowego w województwie kujawsko-pomorskim, położonego na skraju Borów Tucholskich."
+    ],
+    "ciekawostki": [
+      "Przy ulicy, pod numerem 24, znajduje się zabytkowa willa z ogrodem."
+    ],
+    "summary_en": "Tucholska is a street of over 500 metres in Stary Żoliborz, running from Dziennikarska to Bohomolca and continuing as Bytomska. It is named after the town of Tuchola in Kuyavian-Pomeranian Voivodeship.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Tucholska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tucholska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-urzednicza",
+    "nazwa": "Ulica Urzędnicza",
+    "name_en": "Urzędnicza Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Urzędnicza",
+    "adres_historyczny": null,
+    "lat": 52.2721525,
+    "lon": 20.9762985,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Urzędnicza ma prawie 150 metrów długości i tworzy łuk między ulicami Potocką i Słowackiego.",
+      "Jedyną jej przecznicą jest ulica Siemiradzkiego.",
+      "Ulica zamyka od wschodu teren głównego budynku Szkoły Głównej Służby Pożarniczej, a nad nią przebiega kładka łącząca dwa kompleksy budynków uczelni."
+    ],
+    "ciekawostki": [
+      "Kładka nad ulicą łączy dwa kompleksy budynków Szkoły Głównej Służby Pożarniczej."
+    ],
+    "summary_en": "Urzędnicza is a curved street of almost 150 metres in Żoliborz, between Potocka and Słowackiego streets. It runs along the eastern edge of the Main School of Fire Service campus, which a footbridge links across the street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Urzędnicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Urzędnicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-zolkowskich",
+    "nazwa": "Ulica Żółkowskich",
+    "name_en": "Żółkowskich Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Żółkowskich",
+    "adres_historyczny": null,
+    "lat": 52.272161,
+    "lon": 20.9826665,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Żółkowskich ma ponad 90 metrów długości i łączy plac Lelewela z ul. Mickiewicza.",
+      "Nie posiada żadnych przecznic.",
+      "Patronami ulicy są Fortunat Alojzy i Alojzy Gonzaga Żółkowscy, aktorzy, śpiewacy i komicy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Żółkowskich is a short street of about 90 metres in Żoliborz, linking Plac Lelewela with Mickiewicza street. It is named after the actors and comedians Fortunat Alojzy and Alojzy Gonzaga Żółkowski.",
+    "ludzie": [
+      {"kto": "Fortunat Alojzy Żółkowski", "rola": "aktor, śpiewak i komik; patron ulicy", "wiki": null},
+      {"kto": "Alojzy Gonzaga Żółkowski", "rola": "aktor, śpiewak i komik; patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Żółkowskich", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żółkowskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  }
+]

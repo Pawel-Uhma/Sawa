@@ -77,7 +77,7 @@ export function StoryCard({
           onDragEnd={handleDragEnd}
           aria-roledescription="opowieść"
           aria-label={`Opowieść ${index + 1} z ${total}: ${stop.name}`}
-          className="cursor-grab touch-pan-y rounded-3xl bg-white p-4 shadow-[0_1px_2px_rgba(16,43,42,0.06),0_10px_30px_rgba(16,43,42,0.10)] active:cursor-grabbing md:p-5"
+          className="cursor-grab touch-pan-y rounded-3xl bg-powierzchnia p-4 shadow-[0_1px_2px_rgba(16,43,42,0.06),0_10px_30px_rgba(16,43,42,0.10)] active:cursor-grabbing md:p-5"
         >
           <div className="flex items-start gap-3">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-koral text-[15px] font-extrabold text-white shadow-[0_3px_8px_rgba(242,117,95,0.35)]">

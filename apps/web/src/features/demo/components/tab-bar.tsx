@@ -58,7 +58,7 @@ export function TabBar({ active, onChange, speaking }: TabBarProps) {
               <motion.span
                 layoutId="zakladka-tlo"
                 transition={SPRING}
-                className="absolute inset-0 rounded-[inherit] bg-white/80 shadow-[0_1px_3px_rgba(16,43,42,0.08)]"
+                className="absolute inset-0 rounded-[inherit] bg-powierzchnia/80 shadow-[0_1px_3px_rgba(16,43,42,0.08)]"
               />
             )}
             <Icon className="relative size-6 md:size-5" />
@@ -110,7 +110,7 @@ function SawaTabButton({
           transition={glowTransition}
           className="absolute inset-0 rounded-full bg-mieta blur-md"
         />
-        <SawaHead className="relative size-full ring-[3px] ring-white" />
+        <SawaHead className="relative size-full ring-[3px] ring-powierzchnia" />
       </span>
       <span className="relative">Sawa</span>
     </button>

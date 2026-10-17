@@ -1,0 +1,228 @@
+[
+  {
+    "id": "ulica-przeskok",
+    "nazwa": "ulica Przeskok",
+    "name_en": "Przeskok Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Przeskok",
+    "adres_historyczny": "Władysława Kniewskiego (północna część, okres PRL)",
+    "lat": 52.2331493,
+    "lon": 21.0141913,
+    "lokalizacja": "przyblizona",
+    "okres": "połowa XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Uliczkę przeprowadzono w połowie XVIII wieku, a nazwę zatwierdzono w 1770 roku.",
+      "Stanowiła skrót między ul. Szpitalną a Jasną, stąd pochodzi jej nazwa.",
+      "W okresie PRL-u północna część ulicy nosiła nazwę Władysława Kniewskiego.",
+      "Do 2013 roku przy ul. Przeskok 2 stał pawilon handlowy; obecnie powstaje tam nowy budynek.",
+      "Przy ulicy znajduje się gmach Naczelnego Sądu Administracyjnego, przypisany do ul. Boudena."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Przeskok is a 120-metre shortcut in Śródmieście Północne, linking Szpitalna with Jasna. It was laid out in the mid-18th century and named in 1770. Its northern part was called after Władysław Kniewski during the People's Republic.",
+    "ludzie": [
+      {"kto": "Władysław Kniewski", "rola": "patron północnej części ulicy w okresie PRL", "wiki": null}
+    ],
+    "dawne_nazwy": ["Władysława Kniewskiego (północna część, okres PRL)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Przeskok", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Przeskok"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy."
+  },
+  {
+    "id": "ulica-przyrynek",
+    "nazwa": "ulica Przyrynek",
+    "name_en": "Przyrynek Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Przyrynek",
+    "adres_historyczny": "Morgowska",
+    "lat": 52.2547211,
+    "lon": 21.0081638,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początkowo ulica łączyła Rynek Nowego Miasta z ul. Rybaki, przechodząc przez ogrody mieszczańskie zwane Morgami.",
+      "Niegdyś nazywana Morgowską, obecną nazwę nosi od początku XVIII wieku.",
+      "Od 1791 roku była wybrukowana, a od 1851 roku skrócona po wybudowaniu przez Rosjan Cytadeli.",
+      "W czasie powstania warszawskiego uliczka była ważnym szlakiem łączącym Starówkę z budynkiem Państwowej Wytwórni Papierów Wartościowych.",
+      "Po wycofaniu się powstańców Niemcy wymordowali pensjonariuszy domu starców mieszczącego się pod numerem 4.",
+      "Po wojnie ulica została praktycznie całkowicie zniszczona; jedynym ocalałym zabytkiem jest Kościół Nawiedzenia NMP."
+    ],
+    "ciekawostki": [
+      "Od Przyrynku odchodzi Samborska, uważana za najkrótszą ulicę w Polsce."
+    ],
+    "summary_en": "Przyrynek is a short street in Nowe Miasto, between Kościelna and Wójtowska. Named Morgowska at first, it took its present name in the early 18th century. It was almost entirely destroyed in 1944, and the Church of the Visitation of the Virgin Mary is its only surviving historic monument.",
+    "ludzie": [],
+    "dawne_nazwy": ["Morgowska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Przyrynek", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Przyrynek"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje okres powstania „bd.”; rekord używa początku XVIII wieku z treści artykułu. Nagłówek podaje Nowe Miasto."
+  },
+  {
+    "id": "ulica-prozna",
+    "nazwa": "ulica Próżna",
+    "name_en": "Próżna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Próżna",
+    "adres_historyczny": null,
+    "lat": 52.2364669,
+    "lon": 21.0050841,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1853–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica, długa na około 160 metrów, jest jednokierunkowa i ciągnie się od Zielnej do placu Grzybowskiego.",
+      "Jest jedyną obustronnie ocalałą ulicą z warszawskiego getta.",
+      "Od 2004 roku corocznie na Próżnej i placu Grzybowskim odbywa się Festiwal Kultury Żydowskiej – Warszawa Singera.",
+      "Początkowo właściciel kamienic nr 7 i 9, austriacka firma Warimpex, planował hotel Le Palais z 79 pokojami; w 2010 roku wystąpiono o pozwolenie na przebudowę na biurowiec.",
+      "Renowację kamienic rozpoczęto w marcu 2011 roku, a w listopadzie 2012 roku odsłonięto odremontowane fasady.",
+      "Od marca do czerwca 2014 roku ulicę gruntownie wyremontowano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Próżna is a one-way street of about 160 metres in Śródmieście Północne, running from Zielna to Plac Grzybowski. It is the only street of the former Warsaw Ghetto that survived on both sides, and a Jewish culture festival is held here every year.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Próżna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Próżna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru w adresie ulicy; rekord ma adres samej ulicy. Nagłówek podaje Śródmieście Północne."
+  },
+  {
+    "id": "ulica-pulawska",
+    "nazwa": "ulica Puławska",
+    "name_en": "Puławska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Puławska",
+    "adres_historyczny": "Trakt Nowoaleksandryjski (nazwa traktu); Feldherrnallee (okupacja)",
+    "lat": 52.2126706,
+    "lon": 21.0207747,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica wzięła początek w XIX wieku w związku z powstaniem puławskiego traktu rządowego, drogi o znaczeniu strategicznym dla rządu carskiego, wiodącej do Puław.",
+      "Budowa traktu zakończyła się w 1825 roku; wjazd do miasta pilnowały rogatki mokotowskie, wybudowane w latach 1816–1818.",
+      "W 1892 roku przy pl. Unii Lubelskiej powstała stacja kolejki wilanowskiej, a w 1898 roku piaseczyńskiej.",
+      "Od 1917 roku ulica nosi nazwę Puławska, ponieważ wiedzie do Puław.",
+      "6 czerwca 1962 roku na ul. Puławskiej 2 otwarto pierwszy w Warszawie duży sklep samoobsługowy Supersam; zamknięto go 10 kwietnia 2006 roku.",
+      "Ulica została poszerzona w latach 1971–1975; do 1995 roku kursowały nią ostatnie warszawskie trolejbusy.",
+      "Remont odcinka między Dolną a Domaniewską rozpoczął się pod koniec sierpnia 2007 roku, a zakończył 25 kwietnia 2008 roku."
+    ],
+    "ciekawostki": [
+      "W okresie okupacji ulica nosiła nazwę Feldherrnallee, czyli Aleja Dowódców (1941–1945).",
+      "W kamienicy pod nr 83 przez pewien czas ukrywał się Władysław Szpilman; na domu nr 10 tablica upamiętnia Melchiora Wańkowicza."
+    ],
+    "summary_en": "Puławska is the second-longest street in Warsaw, about 12.2 kilometres, crossing Śródmieście, Mokotów and Ursynów. It began in the 19th century as the Russian government road to Puławy, and it was named Puławska in 1917. The first Supersam store in Warsaw opened at number 2 in 1962.",
+    "ludzie": [
+      {"kto": "Władysław Szpilman", "rola": "przez pewien czas ukrywał się w domu nr 83", "wiki": null},
+      {"kto": "Melchior Wańkowicz", "rola": "mieszkał w domu nr 10 (tablica pamiątkowa)", "wiki": null},
+      {"kto": "Jan Wedel", "rola": "właściciel kamienicy nr 28 (w artykule: kamienica Jana Wedla)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Trakt Nowoaleksandryjski", "Feldherrnallee (okupacja)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Puławska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Puławska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje też dzielnice Mokotów i Ursynów; rekord przypisany do Śródmieścia zgodnie z nagłówkiem. Tekst artykułu urywa się w liście obiektów na pozycji „ul. P”."
+  },
+  {
+    "id": "ulica-samborska",
+    "nazwa": "ulica Samborska",
+    "name_en": "Samborska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Samborska",
+    "adres_historyczny": null,
+    "lat": 52.255071,
+    "lon": 21.0083042,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica istnieje od około 1770 roku; nazwa pochodzi od rodziny Samborskich, właścicieli okolicznych terenów.",
+      "Biegła początkowo od ul. Przyrynek do ul. Rybaki; z czasem została skrócona do ślepego zaułka.",
+      "Zabudowa uległa niemal całkowitemu zniszczeniu podczas II wojny światowej.",
+      "W 2009 roku pojawił się pomysł rewitalizacji uliczki; prace zakończono 23 kwietnia 2010 roku, ułożono nowy chodnik i postawiono tablice informujące o historii.",
+      "Ulica ma 22 metry długości i 2,7 metra szerokości; uważana jest za najkrótszą w Warszawie (obok 25-metrowej ul. Bacciarellego) i w Polsce."
+    ],
+    "ciekawostki": [
+      "Według podania Fryderyk Chopin wpadł na pomysł walca podczas spaceru tą ulicą; powstał z tego Walc Minutowy Des-Dur."
+    ],
+    "summary_en": "Samborska is a dead-end lane of 22 metres in Nowe Miasto, branching from Przyrynek. It is named after the Samborski family, who owned the land here, and is considered one of the shortest streets in Poland.",
+    "ludzie": [
+      {"kto": "Samborscy", "rola": "warszawscy mieszczanie, właściciele okolicznych gruntów od XVII wieku; patron nazwy ulicy", "wiki": null},
+      {"kto": "Fryderyk Chopin", "rola": "według podania autor pomysłu Walca Minutowego Des-Dur podczas spaceru ulicą", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Samborska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Samborska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje Nowe Miasto. Anegdota o Chopinie podana w artykule jako „podobno”."
+  },
+  {
+    "id": "ulica-sapiezynska",
+    "nazwa": "ulica Sapieżyńska",
+    "name_en": "Sapieżyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Sapieżyńska",
+    "adres_historyczny": "Czarna (odcinek od Franciszkańskiej, do lat 20. XX wieku)",
+    "lat": 52.2534272,
+    "lon": 21.0046816,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała najpewniej w XVIII wieku jako droga gospodarcza pałacu Sapiehów przy ul. Zakroczymskiej.",
+      "Początkowo nosiła nazwę Czarna, poświadczoną w 1770 roku; nazwę motywowano rodzajem podłoża.",
+      "Na początku XX wieku ulica zyskała drugą nazwę, Sapieżyńska, nawiązującą do pałacu Sapiehów i Koszar Sapieżyńskich.",
+      "W 1912 roku przez jedną z posesji wytyczono poprzeczną ul. Mławską.",
+      "W latach 30. XX wieku przy ulicy wybudowano zakłady montażowe Fiata (nr 6).",
+      "Od 23 sierpnia 1944 roku toczyły się zacięte walki o zakłady Fiata, zajęte dopiero 31 sierpnia.",
+      "W 1991 roku wybudowano nowe budynki domu opieki (nr 3) dla zakonu bonifratrów."
+    ],
+    "ciekawostki": [
+      "Zakłady Fiata (nr 6) stały w miejscu, gdzie dziś są trzy budynki mieszkalne, w tym jeden o adresie Sapieżyńska 1."
+    ],
+    "summary_en": "Sapieżyńska runs about 500 metres in Nowe Miasto, from Franciszkańska to Wałowa. It was an estate road of the Sapieha palace and was named after the Sapieha barracks. Most of its buildings were destroyed in August 1944, when fighting for the Fiat assembly plant lasted until 31 August.",
+    "ludzie": [
+      {"kto": "Sapiehowie", "rola": "właściciele pałacu przy ul. Zakroczymskiej, od którego pochodzi nazwa ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czarna (odcinek od Franciszkańskiej, do lat 20. XX wieku)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Sapieżyńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Sapieżyńska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje Nowe Miasto; rekord przypisany do Śródmieścia. Artykuł podaje dawne nazwy Czarna i Sapieżyńska."
+  },
+  {
+    "id": "ulica-skorupki",
+    "nazwa": "ulica ks. Ignacego Skorupki",
+    "name_en": "Ignacy Skorupka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Skorupki",
+    "adres_historyczny": "Sadowa",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona pod koniec XIX wieku na rozparcelowanych terenach dawnego pałacu Klemensa Bernaux i początkowo nazywała się Sadowa, od licznych sadów.",
+      "Szybko została zabudowana kamienicami.",
+      "12 października 1920 roku ulica otrzymała za patrona ks. Ignacego Skorupkę, kapelana Wojska Polskiego, który poległ w bitwie warszawskiej w 1920 roku.",
+      "Podczas II wojny światowej cała zabudowa ulicy została zniszczona.",
+      "26 marca 1949 roku przywrócono pierwotną nazwę ulicy; do patrona powrócono dopiero 14 sierpnia 1989 roku.",
+      "Ulica jest ślepa i nie ma przecznic; biegnie od ul. Marszałkowskiej do ul. Hożej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Skorupki is a dead-end street of about 200 metres in Śródmieście Południowe, running from Marszałkowska to Hoża. It was called Sadowa when laid out at the end of the 19th century, was named after the priest Ignacy Skorupka in 1920, and reverted to its old name from 1949 to 1989.",
+    "ludzie": [
+      {"kto": "Ignacy Skorupka", "rola": "ksiądz, kapelan Wojska Polskiego, poległ w bitwie warszawskiej w 1920 roku; patron ulicy", "wiki": null},
+      {"kto": "Klemens Bernaux", "rola": "właściciel dawnego pałacu, którego tereny rozparcelowano pod ulicę", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sadowa"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica ks. Ignacego Jana Skorupki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Skorupki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; rekord ma adres samej ulicy bez numeru. Artykuł podaje dzielnice Śródmieście Południowe i Śródmieście."
+  }
+]

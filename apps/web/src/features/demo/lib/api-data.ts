@@ -44,8 +44,8 @@ export function listenerOf(profile: Profile): Listener {
 
 /**
  * Plans a ride from `origin` (lib/start-point.ts) with `POST /v1/routes/plan`. Sends what Sawa
- * already told (lib/memory.ts), so places told in full give way to new ones. Bez `durationMin`
- * przy celu planer zwraca najszybszą drogę do niego (T-104).
+ * already told (lib/memory.ts), so places told in full give way to new ones. Without `durationMin`
+ * (only with a destination) the planner returns the fastest way there.
  */
 export async function planRoute(
   origin: LatLng,
@@ -89,5 +89,7 @@ export function routeStops(route: Route): MockStop[] {
     coord: [place.position.lng, place.position.lat],
     along: place.etaSec / totalSec,
     etaMin: Math.round(place.etaSec / 60),
+    etaSec: place.etaSec,
+    windowSec: place.windowSec,
   }));
 }

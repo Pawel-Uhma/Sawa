@@ -15,7 +15,7 @@ export const ORIGIN_FAR_AWAY = { lat: 52.4, lng: 21.3 };
 const SEC_PER_STOP = 90;
 const STOPS_PER_LINE = 20;
 
-function line(
+export function line(
   id: string,
   mode: Pattern["mode"],
   positionAt: (i: number) => LngLat,
@@ -67,7 +67,7 @@ export function syntheticNetwork(): Network {
 }
 
 /** The same line the other way: opposite platforms (same stop groups), pattern id `<line>-1`. */
-function reversed({ pattern, stops }: ReturnType<typeof line>): ReturnType<typeof line> {
+export function reversed({ pattern, stops }: ReturnType<typeof line>): ReturnType<typeof line> {
   const back = [...stops].reverse().map((s) => ({ ...s, id: `${s.id}r` }));
   const lngLats = [...pattern.lngLats].reverse();
   const cum = cumulativeDistancesM(lngLats);
