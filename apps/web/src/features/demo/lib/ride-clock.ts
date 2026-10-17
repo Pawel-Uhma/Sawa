@@ -31,7 +31,8 @@ export function dueIndex(stops: readonly MockStop[], rideSec: number): number {
  * tram, also while Sawa is paused. `syncTo` moves it to a place the user picked by hand.
  */
 export function useRideClock(stops: readonly MockStop[]) {
-  const startedAt = useRef(Date.now());
+  // Set in the effect: Date.now() during render breaks the prerender with cacheComponents.
+  const startedAt = useRef(0);
   const [rideSec, setRideSec] = useState(0);
 
   useEffect(() => {
