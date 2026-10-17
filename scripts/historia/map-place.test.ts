@@ -30,6 +30,14 @@ describe("mapPlace", () => {
           { tytul: "OSM", url: "https://www.openstreetmap.org/node/1" },
         ],
         pewnosc: "wysoka",
+        dzis: [
+          {
+            nazwa: "Rondo",
+            typ: null,
+            google_maps: "https://maps.google.com/?cid=1",
+            place_id: "ChIJ1",
+          },
+        ],
         lokalizacja: "przyblizona",
       }),
       NOW,
@@ -42,6 +50,14 @@ describe("mapPlace", () => {
       confidence: "high",
       location_precision: "approx",
       origin: "curated",
+      today_nearby: [
+        {
+          name: "Rondo",
+          type: null,
+          googleMapsUrl: "https://maps.google.com/?cid=1",
+          placeId: "ChIJ1",
+        },
+      ],
       sources: [
         { id: "s1", title: "Wikipedia: Kercelak" },
         { id: "s2", title: "OSM" },

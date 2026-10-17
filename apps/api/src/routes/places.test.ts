@@ -45,6 +45,14 @@ describe("GET /v1/places/:id", () => {
     expect(place.sources[0]?.id).toBe("s1");
   });
 
+  it("includes what stands there today from the downloaded Google data", async () => {
+    const place = PlaceSchema.parse(
+      await (await app.request("/v1/places/dom-sierot-jaktorowska-6")).json(),
+    );
+    expect(place.todayNearby.length).toBeGreaterThan(0);
+    expect(place.todayNearby[0]?.googleMapsUrl).toMatch(/^https:\/\/maps\.google\.com/);
+  });
+
   it("returns NOT_FOUND for an unknown id", async () => {
     const res = await app.request("/v1/places/nope");
     expect(res.status).toBe(404);

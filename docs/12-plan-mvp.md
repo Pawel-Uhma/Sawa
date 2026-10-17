@@ -183,7 +183,7 @@ Nie budujemy przed oddaniem MVP, nawet jeśli zostanie czas, bez decyzji zespoł
 
 - wszystko z sekcji „Po MVP” w PRD: przycisk „dalej”, głos (TTS), tryb „z wysiadaniem”, muzea i wystawy, rozpoznawanie powracającego użytkownika, wydarzenia i łączenie ludzi,
 - czat z Sawą, podpowiedzi pogodowe, dłuższa historia przy korku, śledzenie pojazdu na żywo (ścieżka główna PRD, ale nie lista MVP),
-- miejsca spoza 1 km (Wikipedia dla całej Warszawy), Google Places, toalety.
+- miejsca spoza 1 km (Wikipedia dla całej Warszawy), zapytania do Google Places na żywo (pobrane dane są w bazie, T-06), toalety.
 
 ## 11. Założenia
 

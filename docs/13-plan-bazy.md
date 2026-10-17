@@ -10,6 +10,7 @@
 - **13:08: dane w bazie**, 326 miejsc i 351 zdjęć; drugie uruchomienie nie dubluje. Test: `places_near_line` wzdłuż al. Solidarności (150 m) zwraca 108 miejsc.
 - **13:24: adapter w API.** Port `PlacesRepository` w `apps/api/src/services/ports.ts` (`listInBBox`, `getById`, `listNearLine`), typy domenowe w `domain/place.ts`, adapter `adapters/supabase/places-repository.ts` (walidacja zod odpowiedzi RPC, timeout 5 s, błędy jako `UPSTREAM_ERROR`/`UPSTREAM_TIMEOUT`), `fake-places-repository.ts` na 5 prawdziwych miejscach z `__fixtures__/`. Typy bazy: `database.types.ts` (regenerować po migracji). Niepodpięte w `app.ts`, bo trasy `/v1/places` czekają na kontrakt w `packages/shared`.
 - **13:38: trasy HTTP.** `GET /v1/places?bbox=minLng,minLat,maxLng,maxLat&interests=a,b` → `FeatureCollection` (`PlacesResponseSchema`), `GET /v1/places/:id` → `Place` (`PlaceSchema`), `Cache-Control: max-age=300`. Repozytorium wybiera `apps/api/src/index.ts`: Supabase, gdy są `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY`, inaczej fake (5 miejsc).
+- **13:43: Google.** Migracja `20261017140000_places_today_nearby.sql` (kolumna `today_nearby`), seed ją wypełnia, `GET /v1/places/:id` zwraca `todayNearby` (`name`, `type`, `googleMapsUrl`, `placeId`).
 - Uruchomienie: w głównym `.env.local` (nie w git) `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY`, potem `pnpm --filter @sawa/scripts seed:historia`. Rozwija [12-plan-mvp.md §6](12-plan-mvp.md#6-model-danych-supabase). Zadania: T-20 (schemat), T-21 (seed), T-22 (licencje zdjęć). **[Z]** = założenie do potwierdzenia.
 
 ## 1. Co mamy
@@ -126,7 +127,7 @@ Kroki (czyste funkcje mapujące w osobnym pliku z testem Vitest na 3 przykładow
 4. **`geom`** jako `SRID=4326;POINT(lng lat)` (EWKT, supabase-js przyjmie tekst).
 5. **`interests`** regułami (§5).
 6. **`richness`** = `fakty.length + ciekawostki.length`.
-7. **Pomijamy `dzis`** (Google, limit 30 dni, nie dla LLM). Zostaje tylko w `raw`; jeśli T-06 = tak, osobny cache (T-23).
+7. **`dzis` → `today_nearby`** (Google Places pobrane 15–16.10, bez zapytań na żywo, T-06). Nie dla LLM, tylko do pokazania „co tu jest dziś”. Warunki Google: max 30 dni.
 8. **Zdjęcia** → `place_photos` z normalizacją licencji (§6). Odrzucone zdjęcia do `scripts/out/photos-rejected.json` (nie w git), liczby w logu.
 9. Na końcu raport: ile miejsc, ile zdjęć przyjętych i odrzuconych, rozkład `interests`, miejsca bez zainteresowań.
 

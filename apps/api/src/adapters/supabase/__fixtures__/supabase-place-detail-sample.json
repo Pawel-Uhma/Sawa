@@ -152,7 +152,7 @@
     "interests": ["war_uprising", "religion", "jewish_warsaw", "everyday_life", "people"],
     "confidence": "medium",
     "summary_en": "Kercelak was a large open-air market on the site of today's Kercelak roundabout in Wola, named after Józef Kercelego who gave the land to the city. Founded in 1867, it became notorious for its black-market trade and was destroyed during the 1944 Uprising; it was closed in 1947.",
-    "updated_at": "2026-10-17T11:08:00.829+00:00",
+    "updated_at": "2026-10-17T11:43:12.263+00:00",
     "former_names": [
       {
         "name": "plac Kercelego"
@@ -178,6 +178,7 @@
       }
     ],
     "still_exists": true,
+    "today_nearby": [],
     "address_today": "rondo Kercelak (ul. Okopowa / al. Solidarności)",
     "address_historic": "plac Kercelego",
     "unverified_facts": [],
@@ -255,13 +256,14 @@
     "interests": ["war_uprising", "architecture", "people"],
     "confidence": "high",
     "summary_en": "In 1770 Marshal Stanisław Lubomirski ordered earthworks around Warsaw to guard against plague. They were rebuilt in 1825 as a customs barrier and abolished in 1875, after which the streets Okopowa and Towarowa were laid along their line.",
-    "updated_at": "2026-10-17T11:08:00.829+00:00",
+    "updated_at": "2026-10-17T11:43:12.263+00:00",
     "former_names": [
       {
         "name": "Okopy Lubomirskiego (1770–1875)"
       }
     ],
     "still_exists": true,
+    "today_nearby": [],
     "address_today": "przebieg dzisiejszej ul. Okopowej i Towarowej (przybliżony)",
     "address_historic": "Okopy Lubomirskiego",
     "unverified_facts": [],
@@ -473,7 +475,7 @@
     ],
     "confidence": "high",
     "summary_en": "Janusz Korczak and Stefania Wilczyńska ran the Orphanage from 1912 to 1942 in a building at Krochmalna 92, now Jaktorowska 6. In autumn 1940 the home moved into the ghetto. The building survived the 1944 burning of the street and houses the Korczakianum today.",
-    "updated_at": "2026-10-17T11:08:00.829+00:00",
+    "updated_at": "2026-10-17T11:43:12.263+00:00",
     "former_names": [
       {
         "name": "ul. Krochmalna 92 (do ok. 1940 r.)"
@@ -495,6 +497,26 @@
       }
     ],
     "still_exists": true,
+    "today_nearby": [
+      {
+        "name": "Dom Sierot",
+        "type": "Obiekt historyczny",
+        "placeId": "ChIJA4RXeqzNHkcR4vwZUXesBq0",
+        "googleMapsUrl": "https://maps.google.com/?cid=12467842246883540194&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "name": "Dom Dziecka nr 2 im. Janusza Korczaka",
+        "type": "Stowarzyszenie lub organizacja",
+        "placeId": "ChIJR9ThkYLMHkcRGEaeBfOOtu8",
+        "googleMapsUrl": "https://maps.google.com/?cid=17273150595248571928&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+      },
+      {
+        "name": "Korczakianum, pracownia naukowa Muzeum Warszawy",
+        "type": "Muzeum",
+        "placeId": "ChIJJcHhkYLMHkcRJm1BiBU3tIk",
+        "googleMapsUrl": "https://maps.google.com/?cid=9922616444623875366&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      }
+    ],
     "address_today": "ul. Jaktorowska 6",
     "address_historic": "ul. Krochmalna 92",
     "unverified_facts": [
@@ -572,7 +594,7 @@
     "interests": ["war_uprising", "architecture", "religion", "people"],
     "confidence": "medium",
     "summary_en": "St. Lazarus Hospital moved to the Leszno and Karolkowa complex in 1941. On 5 August 1944 German troops set it on fire and killed about 1,200 people, including staff, nuns and Scouts. The hospital reopened in 1948 and moved across the Vistula in 2007.",
-    "updated_at": "2026-10-17T11:08:00.829+00:00",
+    "updated_at": "2026-10-17T11:43:12.263+00:00",
     "former_names": [
       {
         "name": "Szpital przy ul. Książęcej 2 (przed 1941 r.)"
@@ -585,6 +607,20 @@
       }
     ],
     "still_exists": true,
+    "today_nearby": [
+      {
+        "name": "Kokodo Kyu Shin Kai. Szkoła tradycyjnego Ju Jutsu. Sakura Dojo",
+        "type": "Szkoła sportowa",
+        "placeId": "ChIJ8WUfkH3LHkcRpAtAU2XPrz0",
+        "googleMapsUrl": "https://maps.google.com/?cid=4444999391333321636&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "name": "Szkoła Podstawowa Specjalna nr 147",
+        "type": "Szkoła",
+        "placeId": "ChIJ8WUfkH3LHkcRFWUq5YU2e5c",
+        "googleMapsUrl": "https://maps.google.com/?cid=10915378070565840149&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      }
+    ],
     "address_today": "rejon ul. Leszno i Karolkowej (budynek przy Lesznie 15 rozebrany w 2007 r.)",
     "address_historic": "ul. Leszno 127 / ul. Wolska 18 (wg Wikipedii)",
     "unverified_facts": [],
@@ -617,9 +653,17 @@
     "interests": ["street_art"],
     "confidence": "medium",
     "summary_en": "Present-day landmark listed in Google Maps as \"Mural \"Wolska\" Tytusa Brzozowskiego\". Historical background still to be researched.",
-    "updated_at": "2026-10-17T11:08:00.829+00:00",
+    "updated_at": "2026-10-17T11:43:12.263+00:00",
     "former_names": [],
     "still_exists": true,
+    "today_nearby": [
+      {
+        "name": "Mural \"Wolska\" Tytusa Brzozowskiego",
+        "type": "Obiekt kultury",
+        "placeId": "ChIJLZKLHKPNHkcRwg-A1nSrBSk",
+        "googleMapsUrl": "https://maps.google.com/?cid=2955957248741871554&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      }
+    ],
     "address_today": "Al. Solidarności 173, 00-140 Warszawa, Polska",
     "address_historic": null,
     "unverified_facts": [],
