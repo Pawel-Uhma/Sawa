@@ -1,11 +1,12 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 19:40 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 20:00 (Szczepan, z agentem)
 
 - 16:45 (Paweł, z agentem R3): pojazdy na mapie (T-100, issue #30) w gałęzi `r3/pojazdy-na-zywo`: hook co 10 s, ikony tramwaju i autobusu z `public/icons/`, płynny ruch w `requestAnimationFrame`. Typecheck, lint i testy zielone; zmergowane do `main` (PR, typecheck, lint i testy zielone). Do sprawdzenia na mapie z `WAW_TOKEN`.
 
 ## Teraz
 
+- R1 (Szczepan, 20:00): usunięta opcja „Przed siebie” z wyboru końca trasy (decyzja Szczepana). Zostają „Wracam tu” (domyślnie) i „Do celu”; `RideEnd` nie ma już typu `open`, `planRoute` bez końca planuje pętlę (także polecane przejazdy w `rides-panel.tsx`). **Dla R3:** zmiana w Waszych plikach `features/demo` (`ride-end.ts`, `home-panel.tsx`, `demo-app.tsx`, `api-data.ts`, `onboarding-intro.tsx`, `route-sheet.tsx`).
 - R1 (Szczepan, 19:40): czasy na żywo (T-108): odjazd z rozkładu ZTM dla każdego odcinka i opóźnienie pierwszego pojazdu z pozycji (`Leg.delaySec`); trasa z danymi miasta ma ich podpis (T-95); `/health` mówi, czy graf GTFS jest na dziś (w niedzielę rano przebudować, T-18). Słabe punkty planera (T-109): bez dobijania czasu czekaniem, przesiadki pieszo do 300 m. Odcinki po ulicach zostają z T-106 Jaśka. **Produkcja:** `WAW_TOKEN` jest, ale zapytania do API miasta z Railway padają (szczegóły w T-17). **Dla R3:** issues #43 (T-110) i #44 (T-111).
 - 17:05 (Antek, R3): ciemny motyw (T-105). W menu Sawy grupa „Wygląd”: Jasny / Ciemny / Auto (`features/theme`, wybór w localStorage, Auto idzie za systemem). Ciemne są mapa (podkład OpenFreeMap `dark`, warstwy, kontrolki), karta miejsca i mgiełka. **Dla Pawła:** dopisałem jedną grupę w `sawa-menu.tsx`; tokeny w `globals.css` mają już wersję ciemną, ale działa ona tylko wewnątrz klasy `.motyw`, bo ekrany demo mają wpisane `bg-white` i hexy (tekst z tokenów zrobiłby się jasny na jasnym). Po przejściu ekranów na tokeny (`bg-powierzchnia`, `bg-tlo-2`) klasa `.motyw` idzie na `<body>` i ciemne jest wszystko. `sawa-32.png` poprawiona: białe pola pod pachami są przezroczyste. Ciemna ikonka: `icons/icon-*-dark.png`, favicon idzie za motywem systemu.
 

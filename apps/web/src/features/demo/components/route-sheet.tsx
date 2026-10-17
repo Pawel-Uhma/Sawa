@@ -13,7 +13,7 @@ import { StoryCard } from "./story-card";
 
 type RouteSheetProps = {
   durationMin: number;
-  /** Koniec trasy (pętla albo cel); null przy trasie „przed siebie”. */
+  /** Koniec trasy (pętla albo cel); null, gdy trasy jeszcze nie ma. */
   end: { label: string; reached: boolean } | null;
   stops: MockStop[];
   /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
