@@ -78,6 +78,14 @@ const EnvSchema = z.object({
     .string()
     .default("https://valhalla1.openstreetmap.de")
     .transform((v) => v || undefined),
+  /**
+   * Walking path requests at once; default 8 for a router on 127.0.0.1/localhost (own
+   * osrm-routed in the container), 2 for public servers (FOSSGIS blocks bursts).
+   */
+  WALK_ROUTER_MAX_IN_FLIGHT: z.preprocess(
+    (v) => (v === "" ? undefined : v),
+    z.coerce.number().int().min(1).max(64).optional(),
+  ),
   /** "1": poll ZTM vehicle positions all the time, not only while someone tracks a ride. */
   VEHICLES_ALWAYS_ON: z
     .string()

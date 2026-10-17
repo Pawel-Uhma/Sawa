@@ -22,6 +22,8 @@ function cameraLiteral(camera: MapCamera): string {
   switch (camera.type) {
     case "route":
       return `{ type: "route" }`;
+    case "stay":
+      return `{ type: "stay" }`;
     case "center": {
       const zoom = camera.zoom === undefined ? "" : `, zoom: ${camera.zoom}`;
       return `{ type: "center", center: ${latLng(camera.center)}${zoom} }`;
