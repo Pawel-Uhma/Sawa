@@ -2,9 +2,6 @@ import type { Familiarity } from "@sawa/shared";
 import { VISIBLE_RADIUS_M } from "./place-hits";
 import type { PlacePoint } from "./types";
 
-/** A place with one of the chosen onboarding tiles beats one matching only the category. */
-const TAG_MATCH_BONUS = 1.5;
-
 /**
  * How much richness counts (exponent on the weight): first-timers get the places with the
  * most to tell, locals get lesser-known ones a fairer chance.
@@ -16,8 +13,6 @@ export const RICHNESS_EXPONENT: Record<Familiarity, number> = {
 };
 
 export type ScorePrefs = {
-  /** Chosen onboarding tiles (place tags). */
-  tags?: ReadonlySet<string>;
   richnessExponent?: number;
 };
 
@@ -41,9 +36,8 @@ export function scorePlace(
 ): number {
   const matches = place.interests.filter((i) => interests.has(i)).length;
   const relevance = matches > 0 ? 1 + EXTRA_MATCH_BONUS * (matches - 1) : NON_MATCH_FACTOR;
-  const tagged = place.tags?.some((t) => prefs.tags?.has(t)) ? TAG_MATCH_BONUS : 1;
   const proximity = 1 - Math.min(distanceM, VISIBLE_RADIUS_M) / (2 * VISIBLE_RADIUS_M);
-  return place.weight ** (prefs.richnessExponent ?? 1) * relevance * tagged * proximity;
+  return place.weight ** (prefs.richnessExponent ?? 1) * relevance * proximity;
 }
 
 /** Richness (facts + trivia) to a weight with diminishing returns. */

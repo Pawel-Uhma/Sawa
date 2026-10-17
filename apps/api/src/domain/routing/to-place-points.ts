@@ -10,7 +10,6 @@ export function toPlacePoints(places: PlaceSummary[]): PlacePoint[] {
     name,
     position,
     interests: interestsOfTags(interests),
-    tags: interests,
     weight: weightFromRichness(richness),
   }));
 }

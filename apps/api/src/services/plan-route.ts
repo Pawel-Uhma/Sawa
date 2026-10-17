@@ -161,7 +161,6 @@ export function createRoutePlanner(deps: {
         budgetSec: request.durationMin * 60,
         interests: new Set(request.interests),
         prefs: {
-          tags: request.tags && new Set(request.tags),
           richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
         },
         returnToStart: request.returnToStart,

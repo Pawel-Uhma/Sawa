@@ -2,7 +2,6 @@ import {
   FAMILIARITY,
   type Interest,
   interestsOfTags,
-  PLACE_TAGS,
   type Route,
   STORY_STYLES,
 } from "@sawa/shared";
@@ -11,8 +10,8 @@ import type { LngLat, MockStop } from "./mock-data";
 import { USER_LOCATION } from "./mock-data";
 
 /**
- * Onboarding stores detailed tags (e.g. `jewish_warsaw`); the planner takes broad categories.
- * Every onboarding tag maps to one category, so an empty choice falls back to `historical`.
+ * Onboarding picks broad categories (`historical`, …); older detailed tags (e.g. `jewish_warsaw`)
+ * still map to their category. An empty choice falls back to `historical`.
  */
 export function toPlannerInterests(tags: readonly string[]): Interest[] {
   const interests = interestsOfTags(tags);
@@ -31,14 +30,12 @@ export async function planRoute(
   tags: readonly string[],
   prefs: PlanPrefs = {},
 ): Promise<Route> {
-  const placeTags = PLACE_TAGS.filter((t) => tags.includes(t));
   const res = await api.v1.routes.plan.$post({
     json: {
       origin: { lat: USER_LOCATION[1], lng: USER_LOCATION[0] },
       durationMin,
       interests: toPlannerInterests(tags),
       returnToStart: false,
-      tags: placeTags.length > 0 ? placeTags : undefined,
       familiarity: oneOf(FAMILIARITY, prefs.familiarity),
       storyStyle: oneOf(STORY_STYLES, prefs.storyStyle),
     },
