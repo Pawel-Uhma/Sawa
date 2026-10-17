@@ -78,10 +78,13 @@ export function DemoApp() {
   const minDurationMin =
     fastest.status === "ready" ? shortestStopFor(fastest.route.totalMin) : null;
 
-  // Nowy cel: suwak staje na najszybszej drodze, dłuższy czas to już trasa krajoznawcza
+  const fastestRoute = fastest.status === "ready" ? fastest.route : null;
+
+  // Każdy nowy cel (i zmiana startu albo sposobu jazdy): suwak sam staje na najszybszej drodze.
+  // Użytkownik może go potem przesunąć dalej, dłuższy czas to trasa krajoznawcza.
   useEffect(() => {
-    if (minDurationMin !== null) setDurationMin(minDurationMin);
-  }, [minDurationMin]);
+    if (fastestRoute) setDurationMin(shortestStopFor(fastestRoute.totalMin));
+  }, [fastestRoute]);
 
   const showRoute = useCallback((next: Route) => {
     setPlanned(next);
@@ -322,7 +325,8 @@ export function DemoApp() {
                 interests={profile.interests}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
-                fastestMin={fastest.status === "ready" ? fastest.route.totalMin : null}
+                fastestMin={fastestRoute?.totalMin ?? null}
+                isFindingFastest={fastest.status === "loading"}
                 minDurationMin={minDurationMin}
                 travel={travel}
                 onTravelChange={setTravel}
