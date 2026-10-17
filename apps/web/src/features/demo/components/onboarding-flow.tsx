@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { ThemeToggleButton } from "@/features/theme";
 import { haptic, SPRING } from "../lib/device";
 import {
+  AUDIENCES,
   type Choice,
   EMPTY_PROFILE,
   FAMILIARITY,
@@ -29,7 +30,8 @@ export type OnboardingStep =
   | "why"
   | "how"
   | "interests"
-  | "style";
+  | "style"
+  | "audience";
 
 // Rozmowa dla kogoś, kto widzi Sawę pierwszy raz: kim jest, kim jesteś Ty, co Ci da (zależy od
 // odpowiedzi o znajomości miasta), jak działa, a potem już tylko wybory do trasy.
@@ -41,6 +43,7 @@ const ORDER: OnboardingStep[] = [
   "how",
   "interests",
   "style",
+  "audience",
 ];
 /** Strony bez pytania. Przy edycji z menu albo po „Znam Sawę” ich nie powtarzamy. */
 const INTRO: OnboardingStep[] = ["legend", "why", "how"];
@@ -60,6 +63,7 @@ const POSE: Record<OnboardingStep, SawaPose> = {
   how: "mapa",
   interests: "mysli",
   style: "sekret",
+  audience: "radosc",
 };
 
 type OnboardingFlowProps = {
@@ -99,7 +103,7 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
     else onDone(current);
   }
 
-  function pickSingle(field: "familiarity" | "storyStyle", key: string) {
+  function pickSingle(field: "familiarity" | "storyStyle" | "audience", key: string) {
     haptic();
     const next = { ...profile, [field]: key };
     setProfile(next);
@@ -240,6 +244,15 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
                   onSkip={() => advance()}
                 />
               )}
+              {step === "audience" && (
+                <SingleChoice
+                  title="Kto będzie słuchał?"
+                  options={AUDIENCES}
+                  value={profile.audience}
+                  onPick={(key) => pickSingle("audience", key)}
+                  onSkip={() => advance()}
+                />
+              )}
             </motion.section>
           </AnimatePresence>
         </div>
@@ -268,7 +281,9 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
       return INTEREST_LINE[last] ?? "Dobry wybór! Coś jeszcze?";
     }
     case "style":
-      return "I ostatnie: jak mam opowiadać?";
+      return "Jak mam opowiadać?";
+    case "audience":
+      return "I ostatnie: kto jedzie ze mną?";
   }
 }
 

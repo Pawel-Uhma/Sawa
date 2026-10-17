@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 18:45 (Paweł, z agentem R3, prompt R4 w porozumieniu z #65): **tryb dla dzieci** (T-123), gałąź `r3/kids-mode`. Onboarding ma ostatni krok „Kto będzie słuchał?”, menu Sawy wiersz „Kto słucha”, profil pole `audience`. API: `audience` w `POST /v1/stories` i `POST /v1/routes/plan`, dla `kids` osobny `KIDS_STORY_SYSTEM_PROMPT` (`apps/api/src/prompts/story.ts`), opowieść o 30% krótsza, osobny wpis w cache. Miejsca `war_uprising` i `jewish_warsaw` dziecku: delikatnie, bez szczegółów przemocy i bez pomijania (propozycja z #65, do zmiany przez zespół); bez LLM tylko nazwa miejsca, bez faktów. Nie sprawdzone na żywym LLM (lokalnie brak `OPENROUTER_KEY`). **Dla R1:** planer dostaje `audience`, ale go nie używa (pomysł: przyroda i boiska dla dzieci).
 - 17.10 (Paweł, z agentem R3): **głos wyłączony domyślnie** (kredyty ElevenLabs). Opowieść leci tekstem na timerze, a mowa działa dopiero pod adresem z `?voice=1` (`voiceOn()` w `features/demo/lib/story-player.ts`, `fetchClip` pomija audio). Dotyczy też „Posłuchaj” w karcie miejsca. API `/v1/stories/audio` bez zmian.
 
 - R1 (Szczepan, 18:11, plik R3 na prośbę użytkownika): T-121. Po wyznaczeniu trasy Sawa milczy do pierwszego miejsca: `useRideClock` zwraca `waitSec` (do `storyStartSec` pierwszego punktu), GPS w promieniu `ARRIVE_M` = 150 m przestawia zegar na to miejsce, stuknięcie w odtwarzanie startuje od razu. Ekran trasy pokazuje „Sawa czeka na pierwsze miejsce” i „Najpierw X · za ok. N min”. **Na pokaz spod 42 Warsaw:** stuknąć odtwarzanie, bo bez ruchu Sawa czeka do czasu z rozkładu. **Dla Pawła/Antka:** zmiany w `demo-app.tsx`, `route-live.tsx`, `ride-clock.ts`.
@@ -109,6 +110,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 | Pytanie | Kto rozstrzyga | Gdzie szukać kontekstu |
 |---|---|---|
+| Tryb dla dzieci: wojna i getto opowiadane dziecku delikatnie (wdrożone, T-123) czy pomijane | zespół | [#65](https://github.com/Pawel-Uhma/Sawa/issues/65), `KIDS_STORY_SYSTEM_PROMPT` w `apps/api/src/prompts/story.ts` |
 | Kto robi opowieści (R4: T-45, T-41, T-42) | zespół | [role/R4-ai-i-glos.md](role/R4-ai-i-glos.md) |
 | Potwierdzenie stacku z planu MVP: Hono na Railway + monorepo pnpm, 4 role (R5 → R2) | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) §2, §11 |
 | Konta Vercel i Railway: zespołowe czy prywatne | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) P7 |

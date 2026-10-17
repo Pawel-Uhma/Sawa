@@ -1,4 +1,6 @@
 import {
+  AUDIENCES,
+  type Audience,
   FAMILIARITY,
   type Familiarity,
   type Interest,
@@ -32,6 +34,7 @@ export type Listener = {
   interests: Interest[];
   familiarity?: Familiarity;
   storyStyle?: StoryStyle;
+  audience?: Audience;
 };
 
 export function listenerOf(profile: Profile): Listener {
@@ -39,6 +42,7 @@ export function listenerOf(profile: Profile): Listener {
     interests: toPlannerInterests(profile.interests),
     familiarity: oneOf(FAMILIARITY, profile.familiarity),
     storyStyle: oneOf(STORY_STYLES, profile.storyStyle),
+    audience: oneOf(AUDIENCES, profile.audience),
   };
 }
 
@@ -54,7 +58,7 @@ export async function planRoute(
   end: RideEnd = { type: "loop" },
   travel: Travel = "transit",
 ): Promise<Route> {
-  const { interests, familiarity, storyStyle } = listenerOf(profile);
+  const { interests, familiarity, storyStyle, audience } = listenerOf(profile);
   const heard = heardCounts(getMemory());
   const res = await api.v1.routes.plan.$post({
     json: {
@@ -65,6 +69,7 @@ export async function planRoute(
       travel,
       familiarity,
       storyStyle,
+      audience,
       heard: Object.keys(heard).length > 0 ? heard : undefined,
     },
   });

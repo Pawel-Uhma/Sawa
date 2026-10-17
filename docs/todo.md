@@ -59,7 +59,6 @@
 
 ## R3 · Frontend i mapa
 
-- [ ] **T-123** Tryb dla dzieci: przełącznik w onboardingu, pole `audience` w kontrakcie, prostsza opowieść Sawy (dalej tylko z faktów), delikatnie o miejscach wojennych; pomysły dodatkowe w issue ([#65](https://github.com/Pawel-Uhma/Sawa/issues/65)) — `R3` (Paweł; prompt to obszar R4)
 
 - [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
@@ -67,6 +66,7 @@
 - [x] **T-119** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; numer zmieniony z T-105, który był zajęty)
 - [x] **T-121** Sawa nie mówi od razu po wyznaczeniu trasy: czeka na pierwsze miejsce (zegar jazdy albo GPS w promieniu 150 m), stuknięcie w odtwarzanie startuje od razu — `R3` — (Szczepan na prośbę użytkownika, 18:11, gałąź `r3/wait-for-first-place`)
 - [x] **T-120** Ekrany demo na tokenach zamiast `bg-white` i hexów, ciemny motyw w całej aplikacji (`.motyw` na `<body>`); rzeki i woda na mapie na niebiesko w obu motywach — `R3` — (Antek, 17:52, gałąź `r3/demo-tokens`)
+- [x] **T-123** Tryb dla dzieci ([#65](https://github.com/Pawel-Uhma/Sawa/issues/65)): krok „Kto będzie słuchał?” w onboardingu i „Kto słucha” w menu, `audience: "adult" | "kids"` w kontrakcie opowieści i trasy, osobny prompt dla dzieci (prościej, krócej o 30%, pytanie albo „Wypatrz przez okno” na koniec, wojna delikatnie) — `R3` + `R4` — (Paweł z agentem, 18:20–18:45, gałąź `r3/kids-mode`; planer jeszcze nie używa `audience`, wolniejszy głos dla dzieci to następny krok)
 - [x] **T-122** Przełącznik jasny / ciemny już w onboardingu: słońce / księżyc w prawym górnym rogu nagłówka (`ThemeToggleButton` z `features/theme`), „Auto” zostaje w menu Sawy — `R3` — (Antek, 18:13, gałąź `r3/onboarding-theme`)
 - [x] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap; 14:54: demo na `SawaMap` Antka, piny z `/v1/places`, trasa z `POST /v1/routes/plan`, zob. `stan.md`)
 - [x] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — (Paweł z agentem, 17.10 13:25: mock bez API, mapa szkicowa zamiast Mapbox; 13:51: wariant A6 z makiety, Sawa z dymkiem, pasek zakładek, prawdziwa mapa)
