@@ -1,0 +1,379 @@
+[
+  {
+    "id": "latoszki",
+    "nazwa": "Latoszki",
+    "name_en": "Latoszki",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1316,
+    "lon": 21.1281,
+    "lokalizacja": "przyblizona",
+    "okres": "1678–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osada istniała już w 1678 roku i od początku miała związek z liczną rodziną Latoszków, od których prawdopodobnie przyjęła swą nazwę.",
+      "W 1827 roku miejscowość liczyła 5 domów i 43 mieszkańców, w 1905 roku 8 domów i 83 mieszkańców, a w 1921 roku 10 domów i 65 mieszkańców.",
+      "W 1951 roku Latoszki zostały włączone do Warszawy.",
+      "Początkowo znajdowały się w dzielnicy Wilanów, od 1960 roku w dzielnicy Mokotów, od 1994 roku w gminie Warszawa-Wilanów, od 2002 roku ponownie w dzielnicy Wilanów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Latoszki is a former village first recorded in 1678 and named after the local Latoszek family. It joined Warsaw in 1951 and today is a housing estate in the Wilanów district.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Latoszki", "url": "https://pl.wikipedia.org/wiki/Latoszki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Przyjęto nazwę wsi wg tekstu („prawdopodobnie”)."
+  },
+  {
+    "id": "lisy-warszawa",
+    "nazwa": "Lisy",
+    "name_en": "Lisy",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1297,
+    "lon": 21.1264,
+    "lokalizacja": "przyblizona",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Lisy wzmiankowane są już w źródłach z XV wieku i należały do rodu Ciołków.",
+      "Wieś szlachecka w 1580 znajdowała się w powiecie warszawskim ziemi warszawskiej województwa mazowieckiego.",
+      "W 1684 roku część wsi kupił Jan III Sobieski i przyłączył ją do dóbr wilanowskich.",
+      "W 1723 roku druga część wsi została zakupiona przez Elżbietę Sieniawską i przyłączona do Wilanowa.",
+      "W 1864 wieś uwłaszczono i przyłączono do gminy Wilanów.",
+      "W 1951 roku Lisy zostały włączone do Warszawy."
+    ],
+    "ciekawostki": [
+      "Jezioro Lisowskie jest zbiornikiem wodnym powstałym ze spiętrzenia wód kanałów irygacyjnych na terenie Wilanowa."
+    ],
+    "summary_en": "Lisy is a former noble village near Powsin, recorded in the 15th century and owned by the Ciołek family. Parts of it were bought for the Wilanów estate in 1684 and 1723, and it became part of Warsaw in 1951.",
+    "ludzie": [
+      {"kto": "Jan III Sobieski", "rola": "kupił część wsi w 1684 i przyłączył do dóbr wilanowskich", "wiki": null},
+      {"kto": "Elżbieta Sieniawska", "rola": "kupiła drugą część wsi w 1723 i przyłączyła do Wilanowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Lisy (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Lisy_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "meczet-wilanow",
+    "nazwa": "Meczet w Warszawie (Wilanów)",
+    "name_en": "Mosque in Warsaw (Wilanów)",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Wiertnicza 103",
+    "adres_historyczny": null,
+    "lat": 52.1744,
+    "lon": 21.0781,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomysł budowy meczetu w Warszawie istniał jeszcze przed wybuchem II wojny światowej; inicjatorami byli polscy Tatarzy.",
+      "Zwycięski projekt z 1936 Stanisława Kolendy i Tadeusza Miazka przewidywał budynek z cebulastą kopułą, otoczony czterema 20-metrowymi minaretami.",
+      "Główna sala modlitewna miała pomieścić 350 mężczyzn, a galeria była zaplanowana dla 100 kobiet.",
+      "Meczet w Wilanowie nie jest typowym muzułmańskim domem modlitwy, lecz adaptowaną w 1993 roku willą.",
+      "W budynku mieszczą się siedziby islamskich instytucji kulturalnych oraz biura Muzułmańskiej Gminy Wyznaniowej w Warszawie."
+    ],
+    "ciekawostki": [
+      "Drugi stołeczny meczet znajduje się w Ośrodku Kultury Muzułmańskiej, w dzielnicy Ochota.",
+      "Obiekt w Wilanowie nie ma minaretu."
+    ],
+    "summary_en": "The mosque in Wilanów is a former villa adapted in 1993 and has no minaret. Before WWII Polish Tatars initiated a mosque project; the 1936 winning design by Stanisław Kolenda and Tadeusz Miazek envisaged a domed building with four 20-metre minarets.",
+    "ludzie": [
+      {"kto": "Stanisław Kolenda", "rola": "autor zwycięskiego projektu meczetu z 1936 (wspólnie z Tadeuszem Miazkiem)", "wiki": null},
+      {"kto": "Tadeusz Miazek", "rola": "autor zwycięskiego projektu meczetu z 1936 (wspólnie ze Stanisławem Kolendą)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Meczet w Warszawie (Wilanów)", "url": "https://pl.wikipedia.org/wiki/Meczet_w_Warszawie_%28Wilan%C3%B3w%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie mówi wprost, czy projekt z 1936 został zrealizowany; obiekt to adaptowana willa, bez minaretu."
+  },
+  {
+    "id": "media-business-centre",
+    "nazwa": "Media Business Centre",
+    "name_en": "Media Business Centre",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Wiertnicza 166",
+    "adres_historyczny": null,
+    "lat": 52.1793,
+    "lon": 21.0729,
+    "lokalizacja": "dokladna",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został zaprojektowany przez APA Markowski; ma powierzchnię ok. 31 400 m², siedem kondygnacji nadziemnych i dwie podziemne.",
+      "Budynek zdobył nagrodę „Najbardziej inteligentny budynek roku 2003”.",
+      "Był dawną siedzibą Grupy ITI Holdings w Polsce.",
+      "Stanowi główną siedzibę polskiego oddziału Warner Bros. Discovery.",
+      "W budynku znajdują się dwa newsroomy: górny, na pierwszym piętrze, to miejsce powstawania Faktów TVN i większości programów TVN24; dolny, na parterze, służy redakcji TVN24 BiS."
+    ],
+    "ciekawostki": [
+      "W budynku powstają wszystkie serwisy pogodowe TVN Meteo."
+    ],
+    "summary_en": "Media Business Centre is an office building on ul. Wiertnicza in Wilanów, designed by APA Markowski. It was the former headquarters of ITI Holdings and is now home to the Polish branch of Warner Bros. Discovery.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Media Business Centre", "url": "https://pl.wikipedia.org/wiki/Media_Business_Centre"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku budowy."
+  },
+  {
+    "id": "miasteczko-wilanow",
+    "nazwa": "Miasteczko Wilanów",
+    "name_en": "Miasteczko Wilanów",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.160239,
+    "lon": 21.072233,
+    "lokalizacja": "przyblizona",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle ma powierzchnię 169 ha i jest ograniczone ulicami Przyczółkową, aleją Wilanowską i Południową Obwodnicą Warszawy.",
+      "W 2002 roku firma Prokom Investments przejęła teren pod budowę osiedla od Szkoły Głównej Gospodarstwa Wiejskiego.",
+      "Koncepcję tego osiedla stworzył Guy C. Perry, architekt i urbanista pochodzenia francusko-amerykańskiego.",
+      "Do końca 2006 roku oddano do użytku 856 mieszkań, a w samym 2007 przybyło dodatkowych 1500.",
+      "W 2008 roku projekt otrzymał nagrodę urbanistycznej „Doskonałości Roku” od organizacji ISOCARP.",
+      "W 2010 roku, 14 października, Miasteczko Wilanów jako pierwszy projekt w Polsce zdobyło „Nagrodę za Doskonałość” – ULI Global Award for Excellence 2010.",
+      "29 października 2024 r. oddano do użytku trasę tramwajową w ciągu al. Rzeczypospolitej."
+    ],
+    "ciekawostki": [
+      "Osiedle było planowane jako samowystarczalna dzielnica, z ograniczeniem wysokości budynków do 20 m w planach miejscowych."
+    ],
+    "summary_en": "Miasteczko Wilanów is a 169-hectare mixed-use housing estate built from 2002 on former Warsaw School of Life Sciences land. It won the ULI Global Award for Excellence in 2010.",
+    "ludzie": [
+      {"kto": "Guy C. Perry", "rola": "architekt i urbanista, autor koncepcji osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Miasteczko Wilanów", "url": "https://pl.wikipedia.org/wiki/Miasteczko_Wilan%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje „Szkoła Główna Gospodarstwa Wiejskiego” jako poprzedniego właściciela terenu. Ciekawostka o ograniczeniu wysokości pochodzi z miejscowych planów wg artykułu."
+  },
+  {
+    "id": "most-na-zaporze",
+    "nazwa": "Most na zaporze",
+    "name_en": "Most na zaporze (planned bridge)",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1847,
+    "lon": 21.1108,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX w.–dziś (projekt)",
+    "istnieje": false,
+    "fakty": [
+      "Nazwa „most na zaporze” wywodzi się z planowanego w latach 80. XX wieku stopnia wodnego na Wiśle, na którym miała powstać przeprawa drogowa.",
+      "Pomysł mostu na zaporze odświeżył w 1997 roku zarząd Wawra.",
+      "W 2007 roku powstało studium wykonalności, w którym zapisano most podwieszany ze 115-metrowym pylonem.",
+      "W 2016 roku rady dzielnic Wawer i Wilanów przyjęły wspólną uchwałę wzywającą władze miasta do budowy mostu do roku 2021.",
+      "14 stycznia 2026 roku Rada Dzielnicy Wawer podtrzymała chęć realizacji Mostu na Zaporze jako uzupełniającej przeprawy przez Wisłę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Most na zaporze is a bridge that has been proposed across the Vistula since the 1980s, first linked to a planned weir. It has been repeatedly supported by the Wawer and Wilanów district councils but has not been built.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Most na zaporze", "url": "https://pl.wikipedia.org/wiki/Most_na_zaporze"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Projekt, nie istniejący obiekt. Władze miasta według artykułu kwestionowały trasę mostową (dwa zakręty pod 90°)."
+  },
+  {
+    "id": "muzeum-plakatu-w-wilanowie",
+    "nazwa": "Muzeum Plakatu w Wilanowie",
+    "name_en": "Poster Museum in Wilanów",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Stanisława Kostki Potockiego 10/16",
+    "adres_historyczny": null,
+    "lat": 52.16430556,
+    "lon": 21.08817778,
+    "lokalizacja": "dokladna",
+    "okres": "1848–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum znajduje się na terenie zespołu pałacowo-ogrodowego w Wilanowie, w miejscu dawnej ujeżdżalni pałacowej, dzieła architekta Franciszka Marii Lanciego (1848).",
+      "Muzeum, będące oddziałem Muzeum Narodowego w Warszawie, zostało otwarte 4 czerwca 1968.",
+      "Było to pierwsze muzeum plakatu na świecie.",
+      "W swych zbiorach posiada około 62 000 prac, w tym kolekcje plakatu polskiego oraz plakatu obcego z całego świata od końca XIX wieku do współczesności.",
+      "Muzeum było organizatorem Międzynarodowego Biennale Plakatu, organizowanego co dwa lata.",
+      "W 2018 roku z okazji 50-lecia Muzeum zorganizowano wystawę „+ - 1968”."
+    ],
+    "ciekawostki": [
+      "Na wystawie „+ - 1968” pokazano prace m.in. Andy'ego Warhola, Roya Lichtensteina, Roberta Indiany i Franka Stelli."
+    ],
+    "summary_en": "The Poster Museum in Wilanów is on the grounds of the palace and garden complex, in the former palace riding hall designed by Franciszek Maria Lanci in 1848. Opened on 4 June 1968, it was the first poster museum in the world.",
+    "ludzie": [
+      {"kto": "Franciszek Maria Lanci", "rola": "architekt ujeżdżalni pałacowej (1848)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ujeżdżalnia pałacowa"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Plakatu w Wilanowie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Plakatu_w_Wilanowie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord budynku (siedziby muzeum). Pominąłem opis zbiorów w rubryce faktów poza liczbą prac."
+  },
+  {
+    "id": "nadwilanowka",
+    "nazwa": "Nadwilanówka",
+    "name_en": "Nadwilanówka",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.181111111,
+    "lon": 21.1,
+    "lokalizacja": "przyblizona",
+    "okres": "1819–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Kępa Nadwilanówka, podobnie jak sąsiednie Kępa Nadwiślańska i Kępa Zawadowska, została założona w 1819 roku przez Stanisława Potockiego na prawie olęderskim.",
+      "Była zamieszkiwana przez Niemców zajmujących się hodowlą zbóż i ziemniaków.",
+      "Nadwilanówkę zaznaczono na mapie z 1911 roku; na mapie z 1924 roku zaznaczona jest już tylko Kępa Nadwiślańska.",
+      "W dniu 14 maja 1951 rozporządzeniem Rady Ministrów miejscowość została włączona w granice administracyjne Warszawy.",
+      "W XVIII wieku była to kępa wiślana."
+    ],
+    "ciekawostki": [
+      "Na terenie Nadwilanówki znajduje się jeden z wodowskazów Wisły dla Warszawy, o rzędnej 76,81 m n.p.m."
+    ],
+    "summary_en": "Nadwilanówka, formerly Kępa Nadwilanówka, is a former Olędrzy (Dutch-law) settlement founded in 1819 by Stanisław Potocki on the Vistula floodplain. It became part of Warsaw by decree of 14 May 1951.",
+    "ludzie": [
+      {"kto": "Stanisław Potocki", "rola": "założyciel osady w 1819 roku na prawie olęderskim", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kępa Nadwilanówka", "Kępa Nadwilanowska"],
+    "zrodla": [{"tytul": "Wikipedia: Nadwilanówka", "url": "https://pl.wikipedia.org/wiki/Nadwilan%C3%B3wka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł przywołuje też Kępę Nadwiślańską (bez osobnego rekordu)."
+  },
+  {
+    "id": "ostoja-wilanow",
+    "nazwa": "Ostoja Wilanów",
+    "name_en": "Ostoja Wilanów",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Hlonda (numery parzyste 2–10L)",
+    "adres_historyczny": null,
+    "lat": 52.161388888,
+    "lon": 21.0675,
+    "lokalizacja": "przyblizona",
+    "okres": "2005–2017",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle składa się z 33 budynków o 5 kondygnacjach, posadowionych na działce o powierzchni ok. 17,4 ha.",
+      "Budowę zrealizowano w dziesięciu etapach w latach 2005–2017.",
+      "Powstało 1929 mieszkań oraz 38 lokali usługowych; powierzchnia użytkowa mieszkań wynosi łącznie ok. 167 tys. m².",
+      "Deweloperem osiedla była Fadesa Polnord Polska Sp. z o.o., wspólne przedsięwzięcie spółek hiszpańskiej Martinsa-Fadesa oraz polskiej Polnord S.A.",
+      "Osiedle uzyskało drugie miejsce w konkursie „Najlepszy Projekt Mieszkaniowy 2012–2015” Polskiego Związku Firm Deweloperskich w kategorii „Zabudowa zgodna z zasadą zrównoważonego rozwoju”."
+    ],
+    "ciekawostki": [
+      "W centralnej części osiedla znajduje się staw o długości ok. 300 m, zaprojektowany jako oś kompozycyjna."
+    ],
+    "summary_en": "Ostoja Wilanów is a housing estate of 1,929 flats in 33 five-storey buildings, built in ten stages between 2005 and 2017 on Hlonda Street within the Miasteczko Wilanów area.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "architekt, zespół pracowni Kuryłowicz & Associates, autor projektu osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ostoja Wilanów", "url": "https://pl.wikipedia.org/wiki/Ostoja_Wilan%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu: „przy ulicy Hlonda (numery parzyste wraz z oznaczeniami literowymi od 2 do 10L)”."
+  },
+  {
+    "id": "polsko-niemiecka-szkola-wbs-ledochowskiej",
+    "nazwa": "Polsko-Niemiecka Szkoła Spotkań i Dialogu im. Willy'ego Brandta (kampus)",
+    "name_en": "Polish-German School of Encounter and Dialogue Willy Brandt (campus)",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. św. Urszuli Ledóchowskiej 3",
+    "adres_historyczny": null,
+    "lat": 52.15764,
+    "lon": 21.06916,
+    "lokalizacja": "dokladna",
+    "okres": "1978–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szkoła została założona w 1978 jako Szkoła Niemiecka w Warszawie przy Ambasadzie RFN.",
+      "Od 1 września 2005 podstawą prawną jej działalności jest umowa międzyrządowa pomiędzy RP a RFN.",
+      "W latach 2008–2011 Liceum WBS było przy ul. Kolegiackiej 1a.",
+      "W 2015 rząd RFN wybudował kosztem 18 920 000 euro kompleks oświatowy (proj. Staab Architekten GmbH z Berlina) przy ul. św. Urszuli Ledóchowskiej 3, w pobliżu gmachu Świątyni Opatrzności.",
+      "Wcześniej główny kampus szkoły mieścił się w wilii Jana Bystronia z 1939 przy ul. Zawrat 4 (1990–1991)."
+    ],
+    "ciekawostki": [
+      "Szkoła jest jedyną w Polsce oferującą kształcenie zgodnie z niemieckim systemem szkolnictwa ogólnego."
+    ],
+    "summary_en": "The Polish-German school in Wilanów, founded in 1978 as the German school at the West German embassy, moved to a campus on ul. Ledóchowskiej 3 built by the German government in 2015 at a cost of 18.92 million euro.",
+    "ludzie": [],
+    "dawne_nazwy": ["Szkoła Niemiecka w Warszawie"],
+    "zrodla": [{"tytul": "Wikipedia: Polsko-Niemiecka Szkoła Spotkań i Dialogu im. Willy'ego Brandta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Polsko-Niemiecka_Szko%C5%82a_Spotka%C5%84_i_Dialogu_im._Willy%E2%80%99ego_Brandta_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord budynku kampusu, nie całej instytucji. Artykuł podaje też przedszkole przy ul. Prymasa Augusta Hlonda 3 (2018) i wcześniejsze adresy."
+  },
+  {
+    "id": "pomnik-jana-iii-sobieskiego-wilanow",
+    "nazwa": "Pomnik Jana III Sobieskiego (Wilanów)",
+    "name_en": "Monument to Jan III Sobieski (Wilanów)",
+    "typ": "pomnik",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "skrzyżowanie ulic Oś Królewska i Sarmackiej",
+    "adres_historyczny": null,
+    "lat": 52.164834,
+    "lon": 21.074,
+    "lokalizacja": "dokladna",
+    "okres": "1999–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik został wykonany w 1999 roku przez Edwarda Jelińskiego i odsłonięty 9 września 2001 roku na skrzyżowaniu ulic Klimczyka i Przyczółkowej.",
+      "Pomnik jest dedykowany królowi Janowi III Sobieskiemu, władcy Rzeczpospolitej Obojga Narodów od 1674 do 1696.",
+      "Pomysł zaproponował artysta Tadeusz Dębski, który rozpoczął zbieranie funduszy na jego budowę w 1996 roku.",
+      "Zwycięski projekt Edwarda Jelińskiego został wybrany w internetowym głosowaniu, w którym udział wzięło ok. czterech tysięcy mieszkańców dzielnicy.",
+      "Pomnik przeniesiono na skrzyżowanie ulic Oś Królewska i Sarmackiej w 2013 roku.",
+      "Nieopodal umieszczono rzeźbę Dębskiego: mosiężną 9-metrową buławę upamiętniającą zwycięstwo Sobieskiego pod Chocimiem i Wiedniem."
+    ],
+    "ciekawostki": [
+      "Posąg z brązu przedstawia króla siedzącego na tronie wraz z żoną Marią Kazimierą, stojącą po jego prawej, oraz dwoma psami u stóp."
+    ],
+    "summary_en": "The Jan III Sobieski monument in Wilanów was made in 1999 by Edward Jeliński, chosen in an online vote, and unveiled in 2001. It was moved to its current site at Oś Królewska and Sarmacka in 2013.",
+    "ludzie": [
+      {"kto": "Edward Jeliński", "rola": "autor pomnika (1999)", "wiki": null},
+      {"kto": "Tadeusz Dębski", "rola": "artysta, który zaproponował pomnik i zbierał fundusze od 1996; autor buławy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik Jana III Sobieskiego w Warszawie (Wilanów)", "url": "https://pl.wikipedia.org/wiki/Pomnik_Jana_III_Sobieskiego_w_Warszawie_%28Wilan%C3%B3w%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka dotyczą obecnej lokalizacji (od 2013). Artykuł nie podaje numeru adresowego."
+  },
+  {
+    "id": "pomnik-konny-jana-iii-sobieskiego-palac-wilanow",
+    "nazwa": "Pomnik konny Jana III Sobieskiego w pałacu w Wilanowie",
+    "name_en": "Equestrian statue of Jan III Sobieski in Wilanów Palace",
+    "typ": "pomnik",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "pałac w Wilanowie (przejście z Sali Białej do galerii południowej)",
+    "adres_historyczny": null,
+    "lat": 52.165,
+    "lon": 21.089444,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1693–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik konny z białego gipsu (z dodatkiem słomy, gałęzi i metalu) znajduje się w przejściu z Sali Białej do galerii południowej pałacu w Wilanowie.",
+      "Pomnik został wykonany przez anonimowego rzeźbiarza około 1693 roku.",
+      "Przedstawia króla Polski i wielkiego księcia litewskiego Jana III Sobieskiego upozowanego na rzymskiego imperatora, w antycznej zbroi karacenowej i szyszaku.",
+      "Król siedzi na wspiętym koniu, pod którym leżą powalone postacie tureckich żołnierzy, co symbolizuje zwycięstwo pod Wiedniem."
+    ],
+    "ciekawostki": [
+      "Król trzyma w prawej dłoni regiment."
+    ],
+    "summary_en": "An equestrian statue of Jan III Sobieski, made around 1693 by an unknown sculptor from white gypsum, stands in a passage of Wilanów Palace. It shows the king as a Roman emperor above fallen Turkish soldiers, symbolising the victory at Vienna.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik konny Jana III Sobieskiego w pałacu w Wilanowie", "url": "https://pl.wikipedia.org/wiki/Pomnik_konny_Jana_III_Sobieskiego_w_pa%C5%82acu_w_Wilanowie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt wewnątrz pałacu; adres to opis położenia, bez numeru."
+  }
+]

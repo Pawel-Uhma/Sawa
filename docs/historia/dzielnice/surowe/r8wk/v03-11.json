@@ -1,0 +1,167 @@
+[
+  {
+    "id": "willa-arpada-chowanczaka",
+    "nazwa": "Willa Arpada Chowańczaka",
+    "name_en": "Arpad Chowańczak Villa",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Morskie Oko 5",
+    "adres_historyczny": "Puławska 61",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w 1928 roku dla warszawskiego „króla futer” Arpada Chowańczaka.",
+      "Podczas powstania warszawskiego miejsce to zostało zdobyte 6 sierpnia przez 3. Pluton I Pułku Szwoleżerów pod dowództwem por. Aleksandra Tyszkiewicza „Górala”, a potem bohatersko bronione, dzięki czemu gmach nigdy nie został zdobyty.",
+      "Willa stanowiła punkt konspiracji przed powstaniem; ówczesny właściciel Jan Daniel Chowańczak z własnych środków skupował dla powstańców broń.",
+      "W 2005 roku stołeczny konserwator zabytków wszczął postępowanie o wpisanie willi na listę obiektów zabytkowych w celu uniemożliwienia właścicielowi terenu rozbiórki budowli.",
+      "15 kwietnia 2009, podczas pożaru, zniszczeniu uległ dach oraz poddasze willi.",
+      "W styczniu 2012 roku dotychczasowy właściciel wystawił willę na sprzedaż, którą w listopadzie nabyła spółka Andrzeja Piliszka."
+    ],
+    "ciekawostki": [
+      "Młoda kobieta, Hanka, która znalazła w willi schronienie, została zastrzelona w ogrodzie podczas zbierania róż dla powstańca, w którym się zakochała."
+    ],
+    "summary_en": "The Arpad Chowańczak Villa at Morskie Oko 5 (formerly Puławska 61) in Górny Mokotów was built in 1928 for a Warsaw fur merchant. It was defended during the 1944 Uprising, then fell into neglect and changed owners in 2012.",
+    "ludzie": [
+      {"kto": "Arpad Chowańczak", "rola": "warszawski „król futer”, inwestor willi z 1928 roku", "wiki": null},
+      {"kto": "Jan Daniel Chowańczak", "rola": "ówczesny właściciel, kupował broń dla powstańców", "wiki": null},
+      {"kto": "Aleksander Tyszkiewicz „Góral”", "rola": "por., dowódca 3. Plutonu I Pułku Szwoleżerów, który zdobył willę 6 sierpnia 1944", "wiki": null},
+      {"kto": "Andrzej Piliszek", "rola": "właściciel spółki, która nabyła willę w listopadzie 2012 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Willa Arpada Chowańczaka", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Arpada_Chowańczaka"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-malinowskich",
+    "nazwa": "Willa Malinowskich",
+    "name_en": "Malinowski Villa (Dom pod Skarabeuszami)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Puławska 101",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1932–1934",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1932-1934 i został zaprojektowany przez Adolfa Ihnatowicza-Łubiańskiego dla inżyniera Władysława Malinowskiego, który był w latach 1919-20 wiceprezydentem Warszawy.",
+      "W 1944 roku w domu mieścił się szpital powstańczy.",
+      "Budynek przetrwał wojnę, aczkolwiek ucierpiały mocno elewacje – obecnie egipskie motywy „Sów i skarabeusza” przetrwały tylko na fasadzie.",
+      "W 2008 roku właścicielem willi został Andrzej Pogorzelski, willa miała zostać odremontowana w latach 2010-2012, jednak renowacja nie rozpoczęła się.",
+      "W 2011 roku willa została wpisana do rejestru zabytków wraz z otoczeniem; decyzja o wpisie została później uchylona."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Malinowski Villa at Puławska 101 in Mokotów was built in 1932–1934 for engineer Władysław Malinowski, a former deputy mayor of Warsaw. It is nicknamed Dom pod Skarabeuszami after its Egyptian-style decoration, and it served as an Uprising field hospital in 1944.",
+    "ludzie": [
+      {"kto": "Władysław Malinowski", "rola": "inżynier, w latach 1919-20 wiceprezydent Warszawy, inwestor willi", "wiki": null},
+      {"kto": "Adolf Ihnatowicz-Łubiański", "rola": "architekt, autor projektu willi", "wiki": null},
+      {"kto": "Andrzej Pogorzelski", "rola": "właściciel willi od 2008 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom pod Skarabeuszami (nazwa potoczna)"],
+    "zrodla": [{"tytul": "Warszawikia: Willa Malinowskich", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Malinowskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zajezdnia-autobusowa-lazienkowska",
+    "nazwa": "Zajezdnia autobusowa Łazienkowska",
+    "name_en": "Łazienkowska bus depot",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Łazienkowska 8",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1920–1975",
+    "istnieje": false,
+    "fakty": [
+      "Zajezdnia autobusowa przy ul. Łazienkowskiej 8 istniała w latach 1920-1975.",
+      "Pierwszym właścicielem zajezdni, od 1920 roku, były Miejskie Zakłady Zaopatrzenia Warszawy.",
+      "W 1930 roku zajezdnia przeszła w ręce TiAM (Tramwaje i Autobusy Miejskie).",
+      "21 września 1939 roku niemieckie pociski padły na zajezdnię autobusową przy ulicy Łazienkowskiej 8.",
+      "Podczas Powstania Warszawskiego część zajezdni spłonęła.",
+      "2 listopada 1945 roku zajezdnia ponownie odżyła, tym razem wspomagając ruch trolejbusów.",
+      "Na początku lat 70. nadszedł kres zajezdni w związku z budową Trasy Łazienkowskiej."
+    ],
+    "ciekawostki": [
+      "Obecnie na terenie zajezdni leży lodowisko COS Torwar."
+    ],
+    "summary_en": "The Łazienkowska bus depot at Łazienkowska 8 in Mokotów operated from 1920 to 1975. It was hit by shells in September 1939, partly burned during the Uprising, and closed when the Łazienkowska Route was built. The Torwar ice rink now stands on the site.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Zajezdnia autobusowa Łazienkowska", "url": "https://warszawa.fandom.com/pl/wiki/Zajezdnia_autobusowa_Łazienkowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zajezdnia-tramwajowa-mokotow",
+    "nazwa": "Zajezdnia tramwajowa Mokotów",
+    "name_en": "Mokotów tram depot",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Woronicza 27",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze plany budowy zajezdni tramwajowej na Mokotowie pojawiły się przed II wojną światową; ostatecznie zbudowano ją w latach 1949–1955.",
+      "Otwarcie zajezdni nastąpiło 10 września 1955 roku.",
+      "W 1956 roku do zajezdni trafił jeden z dwóch pierwszych w Polsce wagonów szybkobieżnych – Tatra T1.",
+      "1 stycznia 1967 roku zakład otrzymał oznaczenie „R-3”.",
+      "10 maja 1999 roku do zajezdni dostarczono wagony niskopodłogowe 116Na/1.",
+      "W 2019 roku w budynku administracyjnym zajezdni otwarto Izbę Tradycji Tramwajów Warszawskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Mokotów tram depot at Woronicza 27 was built in 1949–1955 and opened on 10 September 1955. In 2019 a tram tradition room opened in its administrative building.",
+    "ludzie": [
+      {"kto": "Wincenty Brodecki", "rola": "pierwszy kierownik zajezdni (1955–1956)", "wiki": null}
+    ],
+    "dawne_nazwy": ["R-3 (oznaczenie od 1967 roku)"],
+    "zrodla": [{"tytul": "Warszawikia: Zajezdnia tramwajowa Mokotów", "url": "https://warszawa.fandom.com/pl/wiki/Zajezdnia_tramwajowa_Mokotów"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zolta-karczma",
+    "nazwa": "Żółta Karczma",
+    "name_en": "Żółta Karczma (Yellow Inn)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Al. Wilanowska 204",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy budynek karczmy powstał w tym miejscu już w 1770 roku.",
+      "Obecna willa została wybudowana w pobliżu wsi Potok w latach 1852-1858 według projektu Franciszka Marii Lanciego, w nawiązaniu do toskańskich willi renesansowych.",
+      "W 1971 roku budynek wpisano do rejestru zabytków.",
+      "W latach 1978-1985 przeprowadzono kapitalny remont według projektu Haliny Kossuth z przeznaczeniem na Muzeum Historii Ruchu Spółdzielczego.",
+      "Nazwę „Żółta Karczma” wymyślił w latach 30. XX wieku Konstanty Ildefons Gałczyński, a w baszcie willi mieszkał jego przyjaciel, Japończyk Umeda, opiekujący się hodowlą psów myśliwskich."
+    ],
+    "ciekawostki": [
+      "Nazwa „Żółta Karczma” przypisywana jest także budynkowi karczmy przy ul. Wolskiej 129 (róg ul. Elekcyjnej), przy której Fryderyk Chopin pożegnał przyjaciół i na zawsze opuścił Warszawę."
+    ],
+    "summary_en": "Żółta Karczma at Al. Wilanowska 204 is a historic villa in Mokotów that began as an inn in 1770. The current villa was built in 1852–1858 and now houses the Museum of the History of the Polish Peasant Movement.",
+    "ludzie": [
+      {"kto": "Franciszek Maria Lanci", "rola": "autor projektu willi (1852-1858)", "wiki": null},
+      {"kto": "Halina Kossuth", "rola": "autorka projektu remontu 1978-1985", "wiki": null},
+      {"kto": "Konstanty Ildefons Gałczyński", "rola": "wymyślił nazwę „Żółta Karczma” w latach 30. XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stara Wieża (nazwa popularniejsza)"],
+    "zrodla": [{"tytul": "Warszawikia: Żółta Karczma", "url": "https://warszawa.fandom.com/pl/wiki/Żółta_Karczma"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]
