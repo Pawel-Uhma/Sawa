@@ -25,24 +25,80 @@
     "ciekawostki": [],
     "summary_en": "Built as the Ministry of Religious Denominations and Public Enlightenment, this building on al. Szucha 25 became the seat of the German Security Police and the Gestapo in occupied Warsaw. Prisoners were interrogated and tortured here. Today a branch of the Pawiak Prison Museum is housed in the former Gestapo building.",
     "ludzie": [
-      {"kto": "Paul Otto Geibel", "rola": "dowódca oddziałów, które po odparciu powstańczego ataku na siedzibę Gestapo rozprawiły się z mieszkańcami Śródmieścia Południowego", "wiki": "https://pl.wikipedia.org/wiki/Paul_Otto_Geibel"},
-      {"kto": "Jan Bytnar „Rudy”", "rola": "przewieziony do siedziby Gestapo; uwolniony w akcji pod Arsenałem", "wiki": "https://pl.wikipedia.org/wiki/Jan_Bytnar"},
-      {"kto": "Kazimierz Cetnarowicz", "rola": "poddany brutalnemu śledztwu i torturom w siedzibie Gestapo", "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Cetnarowicz"},
-      {"kto": "Mieczysław Ferszt", "rola": "aresztowany 23 lutego 1943 i osadzony w siedzibie Gestapo", "wiki": "https://pl.wikipedia.org/wiki/Mieczysław_Ferszt"},
-      {"kto": "Władysław Klimowicz", "rola": "więzień; otruł się w czasie śledztwa", "wiki": "https://pl.wikipedia.org/wiki/Władysław_Klimowicz"},
-      {"kto": "Abrasza Blum", "rola": "przesłuchiwany przez Gestapo, najprawdopodobniej tu zamordowany", "wiki": "https://pl.wikipedia.org/wiki/Abrasza_Blum"},
-      {"kto": "Halina Sadkowska", "rola": "więziona w siedzibie Gestapo, potem na Pawiaku", "wiki": "https://pl.wikipedia.org/wiki/Halina_Sadkowska"},
-      {"kto": "Hubert Lenk", "rola": "według pierwszej z relacji zakatowany przez Niemców podczas śledztwa, prawdopodobnie w siedzibie Gestapo", "wiki": "https://pl.wikipedia.org/wiki/Hubert_Lenk"},
-      {"kto": "Jerzy Zborowski", "rola": "wyniesiony na noszach z Czerniakowa w rejon siedziby Gestapo; tam widziany po raz ostatni", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Zborowski"}
+      {
+        "kto": "Paul Otto Geibel",
+        "rola": "dowódca oddziałów, które po odparciu powstańczego ataku na siedzibę Gestapo rozprawiły się z mieszkańcami Śródmieścia Południowego",
+        "wiki": "https://pl.wikipedia.org/wiki/Paul_Otto_Geibel"
+      },
+      {
+        "kto": "Jan Bytnar „Rudy”",
+        "rola": "przewieziony do siedziby Gestapo; uwolniony w akcji pod Arsenałem",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Bytnar"
+      },
+      {
+        "kto": "Kazimierz Cetnarowicz",
+        "rola": "poddany brutalnemu śledztwu i torturom w siedzibie Gestapo",
+        "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Cetnarowicz"
+      },
+      {
+        "kto": "Mieczysław Ferszt",
+        "rola": "aresztowany 23 lutego 1943 i osadzony w siedzibie Gestapo",
+        "wiki": "https://pl.wikipedia.org/wiki/Mieczysław_Ferszt"
+      },
+      {
+        "kto": "Władysław Klimowicz",
+        "rola": "więzień; otruł się w czasie śledztwa",
+        "wiki": "https://pl.wikipedia.org/wiki/Władysław_Klimowicz"
+      },
+      {
+        "kto": "Abrasza Blum",
+        "rola": "przesłuchiwany przez Gestapo, najprawdopodobniej tu zamordowany",
+        "wiki": "https://pl.wikipedia.org/wiki/Abrasza_Blum"
+      },
+      {
+        "kto": "Halina Sadkowska",
+        "rola": "więziona w siedzibie Gestapo, potem na Pawiaku",
+        "wiki": "https://pl.wikipedia.org/wiki/Halina_Sadkowska"
+      },
+      {
+        "kto": "Hubert Lenk",
+        "rola": "według pierwszej z relacji zakatowany przez Niemców podczas śledztwa, prawdopodobnie w siedzibie Gestapo",
+        "wiki": "https://pl.wikipedia.org/wiki/Hubert_Lenk"
+      },
+      {
+        "kto": "Jerzy Zborowski",
+        "rola": "wyniesiony na noszach z Czerniakowa w rejon siedziby Gestapo; tam widziany po raz ostatni",
+        "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Zborowski"
+      }
     ],
-    "dawne_nazwy": ["Ministerstwo Wyznań Religijnych i Oświecenia Publicznego (MWRiOP)"],
+    "dawne_nazwy": [
+      "Ministerstwo Wyznań Religijnych i Oświecenia Publicznego (MWRiOP)"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Dzielnica policyjna w Warszawie (1939–1945)", "url": "https://pl.wikipedia.org/wiki/Dzielnica_policyjna_w_Warszawie_(1939–1945)"},
-      {"tytul": "Wikipedia: Ministerstwo Wyznań Religijnych i Oświecenia Publicznego", "url": "https://pl.wikipedia.org/wiki/Ministerstwo_Wyznań_Religijnych_i_Oświecenia_Publicznego"},
-      {"tytul": "Wikipedia: Ministerstwo Edukacji Narodowej (2006–2020)", "url": "https://pl.wikipedia.org/wiki/Ministerstwo_Edukacji_Narodowej_(2006–2020)"},
-      {"tytul": "Wikipedia: Akcja pod Arsenałem", "url": "https://pl.wikipedia.org/wiki/Akcja_pod_Arsenałem"},
-      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 1 sierpnia", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_1_sierpnia"},
-      {"tytul": "Wikipedia: Einsatzgruppe IV", "url": "https://pl.wikipedia.org/wiki/Einsatzgruppe_IV"}
+      {
+        "tytul": "Wikipedia: Dzielnica policyjna w Warszawie (1939–1945)",
+        "url": "https://pl.wikipedia.org/wiki/Dzielnica_policyjna_w_Warszawie_(1939–1945)"
+      },
+      {
+        "tytul": "Wikipedia: Ministerstwo Wyznań Religijnych i Oświecenia Publicznego",
+        "url": "https://pl.wikipedia.org/wiki/Ministerstwo_Wyznań_Religijnych_i_Oświecenia_Publicznego"
+      },
+      {
+        "tytul": "Wikipedia: Ministerstwo Edukacji Narodowej (2006–2020)",
+        "url": "https://pl.wikipedia.org/wiki/Ministerstwo_Edukacji_Narodowej_(2006–2020)"
+      },
+      {
+        "tytul": "Wikipedia: Akcja pod Arsenałem",
+        "url": "https://pl.wikipedia.org/wiki/Akcja_pod_Arsenałem"
+      },
+      {
+        "tytul": "Wikipedia: Kalendarium powstania warszawskiego – 1 sierpnia",
+        "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_1_sierpnia"
+      },
+      {
+        "tytul": "Wikipedia: Einsatzgruppe IV",
+        "url": "https://pl.wikipedia.org/wiki/Einsatzgruppe_IV"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Zdania o Józefie Wolskim (sama bibliografia) i o Zygmuncie Kaczyńskim (ucięte) pominięte. Data akcji pod Arsenałem nie padła w zdaniach."
@@ -73,23 +129,74 @@
     "ciekawostki": [],
     "summary_en": "The Cedergren telephone company complex at Zielna 37/39 was renamed PAST after the Polish Joint-Stock Telephone Company took it over. It was stormed by insurgents of the Kiliński battalion on 20 August 1944 during the Warsaw Uprising.",
     "ludzie": [
-      {"kto": "Roman Rozmiłowski", "rola": "dowodził II plutonem; w szturmie na PAST-ę 20 sierpnia 1944; ciężko ranny w gmachu, zmarł 3 września 1944", "wiki": "https://pl.wikipedia.org/wiki/Roman_Rozmiłowski"},
-      {"kto": "Bolesław Kontrym", "rola": "dowodził szturmem na budynek PAST-y 4 sierpnia 1944", "wiki": "https://pl.wikipedia.org/wiki/Bolesław_Kontrym"},
-      {"kto": "Henryk Leliwa-Roycewicz", "rola": "batalion zdobył 20 sierpnia 1944 budynek PAST-y", "wiki": "https://pl.wikipedia.org/wiki/Henryk_Leliwa-Roycewicz"},
-      {"kto": "Włodzimierz Radajewski", "rola": "uczestnik zdobycia PAST-y", "wiki": "https://pl.wikipedia.org/wiki/Włodzimierz_Radajewski"},
-      {"kto": "Bożenna Rażniewska", "rola": "uczestniczka akcji zdobywania PAST-y", "wiki": "https://pl.wikipedia.org/wiki/Bożenna_Rażniewska"},
-      {"kto": "Torsten Vingqvist", "rola": "pracował w siedzibie przedsiębiorstwa przy ul. Zielnej 37 do końca życia", "wiki": "https://pl.wikipedia.org/wiki/Torsten_Vingqvist"}
+      {
+        "kto": "Roman Rozmiłowski",
+        "rola": "dowodził II plutonem; w szturmie na PAST-ę 20 sierpnia 1944; ciężko ranny w gmachu, zmarł 3 września 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Roman_Rozmiłowski"
+      },
+      {
+        "kto": "Bolesław Kontrym",
+        "rola": "dowodził szturmem na budynek PAST-y 4 sierpnia 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Bolesław_Kontrym"
+      },
+      {
+        "kto": "Henryk Leliwa-Roycewicz",
+        "rola": "batalion zdobył 20 sierpnia 1944 budynek PAST-y",
+        "wiki": "https://pl.wikipedia.org/wiki/Henryk_Leliwa-Roycewicz"
+      },
+      {
+        "kto": "Włodzimierz Radajewski",
+        "rola": "uczestnik zdobycia PAST-y",
+        "wiki": "https://pl.wikipedia.org/wiki/Włodzimierz_Radajewski"
+      },
+      {
+        "kto": "Bożenna Rażniewska",
+        "rola": "uczestniczka akcji zdobywania PAST-y",
+        "wiki": "https://pl.wikipedia.org/wiki/Bożenna_Rażniewska"
+      },
+      {
+        "kto": "Torsten Vingqvist",
+        "rola": "pracował w siedzibie przedsiębiorstwa przy ul. Zielnej 37 do końca życia",
+        "wiki": "https://pl.wikipedia.org/wiki/Torsten_Vingqvist"
+      }
     ],
-    "dawne_nazwy": ["Cedergren (Towarzystwo Akcyjne Telefonów Cedergren)", "PAST (Polska Akcyjna Spółka Telefoniczna)"],
+    "dawne_nazwy": [
+      "Cedergren (Towarzystwo Akcyjne Telefonów Cedergren)",
+      "PAST (Polska Akcyjna Spółka Telefoniczna)"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Polska Akcyjna Spółka Telefoniczna", "url": "https://pl.wikipedia.org/wiki/Polska_Akcyjna_Spółka_Telefoniczna"},
-      {"tytul": "Wikipedia: Towarzystwo Akcyjne Telefonów Cedergren", "url": "https://pl.wikipedia.org/wiki/Towarzystwo_Akcyjne_Telefonów_Cedergren"},
-      {"tytul": "Wikipedia: Ericsson", "url": "https://pl.wikipedia.org/wiki/Ericsson"},
-      {"tytul": "Wikipedia: Ambasada Szwecji w Polsce", "url": "https://pl.wikipedia.org/wiki/Ambasada_Szwecji_w_Polsce"},
-      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 20 sierpnia", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_20_sierpnia"},
-      {"tytul": "Wikipedia: Roman Rozmiłowski", "url": "https://pl.wikipedia.org/wiki/Roman_Rozmiłowski"},
-      {"tytul": "Wikipedia: Torsten Vingqvist", "url": "https://pl.wikipedia.org/wiki/Torsten_Vingqvist"},
-      {"tytul": "Wikipedia: Europejska Sieć Pamięć i Solidarność", "url": "https://pl.wikipedia.org/wiki/Europejska_Sieć_Pamięć_i_Solidarność"}
+      {
+        "tytul": "Wikipedia: Polska Akcyjna Spółka Telefoniczna",
+        "url": "https://pl.wikipedia.org/wiki/Polska_Akcyjna_Spółka_Telefoniczna"
+      },
+      {
+        "tytul": "Wikipedia: Towarzystwo Akcyjne Telefonów Cedergren",
+        "url": "https://pl.wikipedia.org/wiki/Towarzystwo_Akcyjne_Telefonów_Cedergren"
+      },
+      {
+        "tytul": "Wikipedia: Ericsson",
+        "url": "https://pl.wikipedia.org/wiki/Ericsson"
+      },
+      {
+        "tytul": "Wikipedia: Ambasada Szwecji w Polsce",
+        "url": "https://pl.wikipedia.org/wiki/Ambasada_Szwecji_w_Polsce"
+      },
+      {
+        "tytul": "Wikipedia: Kalendarium powstania warszawskiego – 20 sierpnia",
+        "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_20_sierpnia"
+      },
+      {
+        "tytul": "Wikipedia: Roman Rozmiłowski",
+        "url": "https://pl.wikipedia.org/wiki/Roman_Rozmiłowski"
+      },
+      {
+        "tytul": "Wikipedia: Torsten Vingqvist",
+        "url": "https://pl.wikipedia.org/wiki/Torsten_Vingqvist"
+      },
+      {
+        "tytul": "Wikipedia: Europejska Sieć Pamięć i Solidarność",
+        "url": "https://pl.wikipedia.org/wiki/Europejska_Sieć_Pamięć_i_Solidarność"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Zdanie o niemieckim czołgu na Marszałkowskiej pominięte (niejasny podmiot). Zdania o Stefanie Meissnerze pominięte (ucięte). Rekord dotyczy adresu Zielna 37; osobny rekord dla Zielnej 39."
@@ -115,22 +222,72 @@
     "ciekawostki": [],
     "summary_en": "A memorial on ul. Prosta 51 in Wola commemorating the evacuation of Warsaw Ghetto fighters. Plaques at the monument carry the names of fighters, including Symcha Rotem, who took part in its unveiling on 13 May 2010.",
     "ludzie": [
-      {"kto": "Dow Szniper", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Dow_Szniper"},
-      {"kto": "Chaim Frymer", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Chaim_Frymer"},
-      {"kto": "Chana Kryształ-Fryszdorf", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Chana_Kryształ-Fryszdorf"},
-      {"kto": "Symcha Rotem", "rola": "uczestniczył w odsłonięciu pomnika 13 maja 2010; upamiętniony na tablicach", "wiki": "https://pl.wikipedia.org/wiki/Symcha_Rotem"},
-      {"kto": "Janek Szwarcfuks", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Janek_Szwarcfuks"},
-      {"kto": "Menachem Bigelman", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Menachem_Bigelman"},
-      {"kto": "Michał Rozenfeld", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Michał_Rozenfeld"},
-      {"kto": "Masza Glajtman-Putermilch", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Masza_Glajtman-Putermilch"},
-      {"kto": "Adek Jankielewicz", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Adek_Jankielewicz"},
-      {"kto": "Bronka Manulak", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Bronka_Manulak"},
-      {"kto": "Izrael Kanał", "rola": "nazwisko na tablicy przy pomniku", "wiki": "https://pl.wikipedia.org/wiki/Izrael_Kanał"}
+      {
+        "kto": "Dow Szniper",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Dow_Szniper"
+      },
+      {
+        "kto": "Chaim Frymer",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Chaim_Frymer"
+      },
+      {
+        "kto": "Chana Kryształ-Fryszdorf",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Chana_Kryształ-Fryszdorf"
+      },
+      {
+        "kto": "Symcha Rotem",
+        "rola": "uczestniczył w odsłonięciu pomnika 13 maja 2010; upamiętniony na tablicach",
+        "wiki": "https://pl.wikipedia.org/wiki/Symcha_Rotem"
+      },
+      {
+        "kto": "Janek Szwarcfuks",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Janek_Szwarcfuks"
+      },
+      {
+        "kto": "Menachem Bigelman",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Menachem_Bigelman"
+      },
+      {
+        "kto": "Michał Rozenfeld",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Michał_Rozenfeld"
+      },
+      {
+        "kto": "Masza Glajtman-Putermilch",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Masza_Glajtman-Putermilch"
+      },
+      {
+        "kto": "Adek Jankielewicz",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Adek_Jankielewicz"
+      },
+      {
+        "kto": "Bronka Manulak",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Bronka_Manulak"
+      },
+      {
+        "kto": "Izrael Kanał",
+        "rola": "nazwisko na tablicy przy pomniku",
+        "wiki": "https://pl.wikipedia.org/wiki/Izrael_Kanał"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Pomnik Ewakuacji Bojowników Getta Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Pomnik_Ewakuacji_Bojowników_Getta_Warszawskiego"},
-      {"tytul": "Wikipedia: Symcha Rotem", "url": "https://pl.wikipedia.org/wiki/Symcha_Rotem"}
+      {
+        "tytul": "Wikipedia: Pomnik Ewakuacji Bojowników Getta Warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Pomnik_Ewakuacji_Bojowników_Getta_Warszawskiego"
+      },
+      {
+        "tytul": "Wikipedia: Symcha Rotem",
+        "url": "https://pl.wikipedia.org/wiki/Symcha_Rotem"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord z nazwiskami na tablicach; pełne listy nie wynikają z paczki, wymieniono tylko nazwiska z przytoczonych zdań. Rok 2010 dotyczy odsłonięcia."
@@ -159,20 +316,57 @@
     "ciekawostki": [],
     "summary_en": "A school building on Spokojna 13 in Wola, fought over by insurgents in August 1944 during the Warsaw Uprising. Konrad Okolski's platoon held it for a long time before withdrawing on 11 August 1944. Today it houses the Zespół Szkół Fototechnicznych.",
     "ludzie": [
-      {"kto": "Anna Zakrzewska", "rola": "łączniczka; przekazała powstańcom rozkaz opuszczenia szkoły", "wiki": "https://pl.wikipedia.org/wiki/Anna_Zakrzewska"},
-      {"kto": "Konrad Okolski", "rola": "dowodził plutonem, który bronił budynku szkoły; tablica jego pamięci na ścianie budynku", "wiki": "https://pl.wikipedia.org/wiki/Konrad_Okolski_(powstaniec)"},
-      {"kto": "Jan Rodowicz", "rola": "dowódca plutonu „Felek”; ciężko ranny w lewe płuco podczas natarcia na szkołę 9 sierpnia 1944", "wiki": "https://pl.wikipedia.org/wiki/Jan_Rodowicz"},
-      {"kto": "Tadeusz Sobieraj", "rola": "absolwent Technikum Fototechnicznego w Zespole Szkół Fototechnicznych przy ul. Spokojnej 13", "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Sobieraj"}
+      {
+        "kto": "Anna Zakrzewska",
+        "rola": "łączniczka; przekazała powstańcom rozkaz opuszczenia szkoły",
+        "wiki": "https://pl.wikipedia.org/wiki/Anna_Zakrzewska"
+      },
+      {
+        "kto": "Konrad Okolski",
+        "rola": "dowodził plutonem, który bronił budynku szkoły; tablica jego pamięci na ścianie budynku",
+        "wiki": "https://pl.wikipedia.org/wiki/Konrad_Okolski_(powstaniec)"
+      },
+      {
+        "kto": "Jan Rodowicz",
+        "rola": "dowódca plutonu „Felek”; ciężko ranny w lewe płuco podczas natarcia na szkołę 9 sierpnia 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Rodowicz"
+      },
+      {
+        "kto": "Tadeusz Sobieraj",
+        "rola": "absolwent Technikum Fototechnicznego w Zespole Szkół Fototechnicznych przy ul. Spokojnej 13",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Sobieraj"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Obrona cmentarzy wolskich (1944)", "url": "https://pl.wikipedia.org/wiki/Obrona_cmentarzy_wolskich_(1944)"},
-      {"tytul": "Wikipedia: Konrad Okolski (powstaniec)", "url": "https://pl.wikipedia.org/wiki/Konrad_Okolski_(powstaniec)"},
-      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 9 sierpnia", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_9_sierpnia"},
-      {"tytul": "Wikipedia: Jan Rodowicz", "url": "https://pl.wikipedia.org/wiki/Jan_Rodowicz"},
-      {"tytul": "Wikipedia: Anna Zakrzewska", "url": "https://pl.wikipedia.org/wiki/Anna_Zakrzewska"},
-      {"tytul": "Wikipedia: Zgrupowanie „Żyrafa”", "url": "https://pl.wikipedia.org/wiki/Zgrupowanie_„Żyrafa”"},
-      {"tytul": "Wikipedia: Tadeusz Sobieraj", "url": "https://pl.wikipedia.org/wiki/Tadeusz_Sobieraj"}
+      {
+        "tytul": "Wikipedia: Obrona cmentarzy wolskich (1944)",
+        "url": "https://pl.wikipedia.org/wiki/Obrona_cmentarzy_wolskich_(1944)"
+      },
+      {
+        "tytul": "Wikipedia: Konrad Okolski (powstaniec)",
+        "url": "https://pl.wikipedia.org/wiki/Konrad_Okolski_(powstaniec)"
+      },
+      {
+        "tytul": "Wikipedia: Kalendarium powstania warszawskiego – 9 sierpnia",
+        "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_9_sierpnia"
+      },
+      {
+        "tytul": "Wikipedia: Jan Rodowicz",
+        "url": "https://pl.wikipedia.org/wiki/Jan_Rodowicz"
+      },
+      {
+        "tytul": "Wikipedia: Anna Zakrzewska",
+        "url": "https://pl.wikipedia.org/wiki/Anna_Zakrzewska"
+      },
+      {
+        "tytul": "Wikipedia: Zgrupowanie „Żyrafa”",
+        "url": "https://pl.wikipedia.org/wiki/Zgrupowanie_„Żyrafa”"
+      },
+      {
+        "tytul": "Wikipedia: Tadeusz Sobieraj",
+        "url": "https://pl.wikipedia.org/wiki/Tadeusz_Sobieraj"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Zdanie o Zgrupowaniu „Żyrafa” (wsparcie oddziałów wolskich) pominięte jako ogólne. Zdanie o Annie Zakrzewskiej ucięte; podano tylko fakt przekazania rozkazu."
@@ -201,21 +395,64 @@
     "ciekawostki": [],
     "summary_en": "A building at Śniadeckich 8 (formerly Kaliksta 8) built for the Warsaw Scientific Society. It housed the neurobiology lab of Edward Flatau from 1911 and later the team that built the XYZ computer. Today it hosts the Mathematics Institute of the Polish Academy of Sciences.",
     "ludzie": [
-      {"kto": "Edward Flatau", "rola": "neurobiolog; pracował w pracowni neurobiologicznej w gmachu TNW", "wiki": "https://pl.wikipedia.org/wiki/Edward_Flatau"},
-      {"kto": "Piotr Jacek Flatau", "rola": "ufundował tablicę upamiętniającą Edwarda Flataua (2021)", "wiki": "https://pl.wikipedia.org/wiki/Piotr_Jacek_Flatau"},
-      {"kto": "Janusz Regulski", "rola": "uczył się w Szkole Handlowej Rontalera", "wiki": "https://pl.wikipedia.org/wiki/Janusz_Regulski"},
-      {"kto": "Wojciech Mencel", "rola": "uczył się w Liceum Męskim przy ul. Śniadeckich 8; pochowany początkowo w podwórzu budynku", "wiki": "https://pl.wikipedia.org/wiki/Wojciech_Mencel"},
-      {"kto": "Jerzy Brabander", "rola": "ukończył III Gimnazjum i Liceum Miejskie przy ul. Śniadeckich 8", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Brabander"}
+      {
+        "kto": "Edward Flatau",
+        "rola": "neurobiolog; pracował w pracowni neurobiologicznej w gmachu TNW",
+        "wiki": "https://pl.wikipedia.org/wiki/Edward_Flatau"
+      },
+      {
+        "kto": "Piotr Jacek Flatau",
+        "rola": "ufundował tablicę upamiętniającą Edwarda Flataua (2021)",
+        "wiki": "https://pl.wikipedia.org/wiki/Piotr_Jacek_Flatau"
+      },
+      {
+        "kto": "Janusz Regulski",
+        "rola": "uczył się w Szkole Handlowej Rontalera",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Regulski"
+      },
+      {
+        "kto": "Wojciech Mencel",
+        "rola": "uczył się w Liceum Męskim przy ul. Śniadeckich 8; pochowany początkowo w podwórzu budynku",
+        "wiki": "https://pl.wikipedia.org/wiki/Wojciech_Mencel"
+      },
+      {
+        "kto": "Jerzy Brabander",
+        "rola": "ukończył III Gimnazjum i Liceum Miejskie przy ul. Śniadeckich 8",
+        "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Brabander"
+      }
     ],
-    "dawne_nazwy": ["Kaliksta 8"],
+    "dawne_nazwy": [
+      "Kaliksta 8"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Towarzystwo Naukowe Warszawskie", "url": "https://pl.wikipedia.org/wiki/Towarzystwo_Naukowe_Warszawskie"},
-      {"tytul": "Wikipedia: Edward Flatau", "url": "https://pl.wikipedia.org/wiki/Edward_Flatau"},
-      {"tytul": "Wikipedia: Piotr Jacek Flatau", "url": "https://pl.wikipedia.org/wiki/Piotr_Jacek_Flatau"},
-      {"tytul": "Wikipedia: Janusz Regulski", "url": "https://pl.wikipedia.org/wiki/Janusz_Regulski"},
-      {"tytul": "Wikipedia: Wojciech Mencel", "url": "https://pl.wikipedia.org/wiki/Wojciech_Mencel"},
-      {"tytul": "Wikipedia: Jerzy Brabander", "url": "https://pl.wikipedia.org/wiki/Jerzy_Brabander"},
-      {"tytul": "Wikipedia: XYZ (komputer)", "url": "https://pl.wikipedia.org/wiki/XYZ_(komputer)"}
+      {
+        "tytul": "Wikipedia: Towarzystwo Naukowe Warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Towarzystwo_Naukowe_Warszawskie"
+      },
+      {
+        "tytul": "Wikipedia: Edward Flatau",
+        "url": "https://pl.wikipedia.org/wiki/Edward_Flatau"
+      },
+      {
+        "tytul": "Wikipedia: Piotr Jacek Flatau",
+        "url": "https://pl.wikipedia.org/wiki/Piotr_Jacek_Flatau"
+      },
+      {
+        "tytul": "Wikipedia: Janusz Regulski",
+        "url": "https://pl.wikipedia.org/wiki/Janusz_Regulski"
+      },
+      {
+        "tytul": "Wikipedia: Wojciech Mencel",
+        "url": "https://pl.wikipedia.org/wiki/Wojciech_Mencel"
+      },
+      {
+        "tytul": "Wikipedia: Jerzy Brabander",
+        "url": "https://pl.wikipedia.org/wiki/Jerzy_Brabander"
+      },
+      {
+        "tytul": "Wikipedia: XYZ (komputer)",
+        "url": "https://pl.wikipedia.org/wiki/XYZ_(komputer)"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Zdanie o pochówku Mencla w podwórzu jest w paczce urwane; przytoczono je tak, jak stoi w tekście. Adres historyczny „Kaliksta 8” podany w zdaniu o 1911 roku."
@@ -231,7 +468,7 @@
     "lat": 52.2394469,
     "lon": 20.9733007,
     "lokalizacja": "dokladna",
-    "okres": "1944–dziś",
+    "okres": "brak daty w paczce–dziś",
     "istnieje": true,
     "fakty": [
       "Płyta nagrobna na terenie cmentarza upamiętnia 60 żołnierzy Batalionu „Parasol” poległych, zamordowanych i zaginionych w sierpniu 1944 podczas walk w obronie Woli.",
@@ -245,23 +482,74 @@
     "ciekawostki": [],
     "summary_en": "The Evangelical-Reformed cemetery on Żytnia 42 in Wola. A tombstone here commemorates 60 soldiers of the Parasol Battalion who died, were murdered or went missing in August 1944 during the fighting for Wola. Several notable people are buried here.",
     "ludzie": [
-      {"kto": "Katarzyna Rostropowicz-Denisiewicz", "rola": "pochowana (kwatera K1-2-37)", "wiki": "https://pl.wikipedia.org/wiki/Katarzyna_Rostropowicz-Denisiewicz"},
-      {"kto": "Wanda Zieleńczyk", "rola": "grób symboliczny (kwatera 15-3-4)", "wiki": "https://pl.wikipedia.org/wiki/Wanda_Zieleńczyk"},
-      {"kto": "Janusz Kosiński", "rola": "pochowany (kwatera N-1-19)", "wiki": "https://pl.wikipedia.org/wiki/Janusz_Kosiński"},
-      {"kto": "Krzysztof Dąbrowski", "rola": "pochowany (kwatera 1/2/7)", "wiki": "https://pl.wikipedia.org/wiki/Krzysztof_Dąbrowski"},
-      {"kto": "Jan Turlejski", "rola": "grób symboliczny (kwatera 15-3-4)", "wiki": "https://pl.wikipedia.org/wiki/Jan_Turlejski"},
-      {"kto": "Maria Zoll-Czarnecka", "rola": "pochowana 17 marca 2016 w grobie rodzinnym (kwatera 2-5-8)", "wiki": "https://pl.wikipedia.org/wiki/Maria_Zoll-Czarnecka"},
-      {"kto": "Edward Żółtowski (pułkownik)", "rola": "pochowany (kwatera 9-5-3)", "wiki": "https://pl.wikipedia.org/wiki/Edward_Żółtowski_(pułkownik)"},
-      {"kto": "Seweryn Ludkiewicz", "rola": "pochowany (kwatera W/4/11)", "wiki": "https://pl.wikipedia.org/wiki/Seweryn_Ludkiewicz"},
-      {"kto": "Maria Turlejska", "rola": "pochowana (kwatera 15-3-4)", "wiki": "https://pl.wikipedia.org/wiki/Maria_Turlejska"}
+      {
+        "kto": "Katarzyna Rostropowicz-Denisiewicz",
+        "rola": "pochowana (kwatera K1-2-37)",
+        "wiki": "https://pl.wikipedia.org/wiki/Katarzyna_Rostropowicz-Denisiewicz"
+      },
+      {
+        "kto": "Wanda Zieleńczyk",
+        "rola": "grób symboliczny (kwatera 15-3-4)",
+        "wiki": "https://pl.wikipedia.org/wiki/Wanda_Zieleńczyk"
+      },
+      {
+        "kto": "Janusz Kosiński",
+        "rola": "pochowany (kwatera N-1-19)",
+        "wiki": "https://pl.wikipedia.org/wiki/Janusz_Kosiński"
+      },
+      {
+        "kto": "Krzysztof Dąbrowski",
+        "rola": "pochowany (kwatera 1/2/7)",
+        "wiki": "https://pl.wikipedia.org/wiki/Krzysztof_Dąbrowski"
+      },
+      {
+        "kto": "Jan Turlejski",
+        "rola": "grób symboliczny (kwatera 15-3-4)",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Turlejski"
+      },
+      {
+        "kto": "Maria Zoll-Czarnecka",
+        "rola": "pochowana 17 marca 2016 w grobie rodzinnym (kwatera 2-5-8)",
+        "wiki": "https://pl.wikipedia.org/wiki/Maria_Zoll-Czarnecka"
+      },
+      {
+        "kto": "Edward Żółtowski (pułkownik)",
+        "rola": "pochowany (kwatera 9-5-3)",
+        "wiki": "https://pl.wikipedia.org/wiki/Edward_Żółtowski_(pułkownik)"
+      },
+      {
+        "kto": "Seweryn Ludkiewicz",
+        "rola": "pochowany (kwatera W/4/11)",
+        "wiki": "https://pl.wikipedia.org/wiki/Seweryn_Ludkiewicz"
+      },
+      {
+        "kto": "Maria Turlejska",
+        "rola": "pochowana (kwatera 15-3-4)",
+        "wiki": "https://pl.wikipedia.org/wiki/Maria_Turlejska"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Obrona cmentarzy wolskich (1944)", "url": "https://pl.wikipedia.org/wiki/Obrona_cmentarzy_wolskich_(1944)"},
-      {"tytul": "Wikipedia: Katarzyna Rostropowicz-Denisiewicz", "url": "https://pl.wikipedia.org/wiki/Katarzyna_Rostropowicz-Denisiewicz"},
-      {"tytul": "Wikipedia: Wanda Zieleńczyk", "url": "https://pl.wikipedia.org/wiki/Wanda_Zieleńczyk"},
-      {"tytul": "Wikipedia: Maria Zoll-Czarnecka", "url": "https://pl.wikipedia.org/wiki/Maria_Zoll-Czarnecka"},
-      {"tytul": "Wikipedia: Maria Turlejska", "url": "https://pl.wikipedia.org/wiki/Maria_Turlejska"}
+      {
+        "tytul": "Wikipedia: Obrona cmentarzy wolskich (1944)",
+        "url": "https://pl.wikipedia.org/wiki/Obrona_cmentarzy_wolskich_(1944)"
+      },
+      {
+        "tytul": "Wikipedia: Katarzyna Rostropowicz-Denisiewicz",
+        "url": "https://pl.wikipedia.org/wiki/Katarzyna_Rostropowicz-Denisiewicz"
+      },
+      {
+        "tytul": "Wikipedia: Wanda Zieleńczyk",
+        "url": "https://pl.wikipedia.org/wiki/Wanda_Zieleńczyk"
+      },
+      {
+        "tytul": "Wikipedia: Maria Zoll-Czarnecka",
+        "url": "https://pl.wikipedia.org/wiki/Maria_Zoll-Czarnecka"
+      },
+      {
+        "tytul": "Wikipedia: Maria Turlejska",
+        "url": "https://pl.wikipedia.org/wiki/Maria_Turlejska"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord dotyczy samego cmentarza; lista grobów z paczki (9 osób) wpisana w ludzie. Kwatery podane jak w zdaniach."
@@ -277,7 +565,7 @@
     "lat": 52.2344885,
     "lon": 20.9765803,
     "lokalizacja": "dokladna",
-    "okres": "1944–dziś",
+    "okres": "brak daty w paczce–dziś",
     "istnieje": true,
     "fakty": [
       "W pierwszych dniach powstania warszawskiego, 6 sierpnia 1944, Niemcy rozstrzelali redemptorystów z klasztoru przy ul. Karolkowej 49.",
@@ -291,10 +579,22 @@
     "ludzie": [],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: 30 redemptorystów zamordowanych w powstaniu warszawskim", "url": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"},
-      {"tytul": "Wikipedia: Plac Męczenników Warszawskiej Woli w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Męczenników_Warszawskiej_Woli_w_Warszawie"},
-      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 6 sierpnia", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_6_sierpnia"},
-      {"tytul": "Wikipedia: III Batalion OW PPS im. Stefana Okrzei", "url": "https://pl.wikipedia.org/wiki/III_Batalion_OW_PPS_im._Stefana_Okrzei"}
+      {
+        "tytul": "Wikipedia: 30 redemptorystów zamordowanych w powstaniu warszawskim",
+        "url": "https://pl.wikipedia.org/wiki/30_redemptorystów_zamordowanych_w_powstaniu_warszawskim"
+      },
+      {
+        "tytul": "Wikipedia: Plac Męczenników Warszawskiej Woli w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Plac_Męczenników_Warszawskiej_Woli_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Kalendarium powstania warszawskiego – 6 sierpnia",
+        "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_6_sierpnia"
+      },
+      {
+        "tytul": "Wikipedia: III Batalion OW PPS im. Stefana Okrzei",
+        "url": "https://pl.wikipedia.org/wiki/III_Batalion_OW_PPS_im._Stefana_Okrzei"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Zdanie o Bernardzie Alojzym Łubieńskim (relikwie/sarkofag przy głównym wejściu kościoła od 15.10.1991) pominięte: podmiot zdania jest w paczce niejasny. Zdanie o szpitalach na Woli (placyk przy kościele) pominięte, bo niejasne."
@@ -318,29 +618,76 @@
       "2 września 1944 zginęła Maria Swierczewska w szpitalu powstańczym przy ul. Miodowej 23.",
       "2 września 1944 został zamordowany przez żołnierzy niemieckich w szpitalu powstańczym przy ul. Miodowej 23 na Starym Mieście Józef Kłosiński.",
       "2 września 1944 zginęła Hanna Bińkowska w zbombardowanym przez lotnictwo niemieckie szpitalu polowym przy ul. Miodowej 23.",
-      "Zofia Maternowska pracowała później jako szpital przy ul. Miodowej 23 (zdanie urwane: „a później szpitalem przy ul. Miodowej 23”)."
+      "Zofia Maternowska po Krzywym Kole 4 pracowała później w szpitalu przy ul. Miodowej 23."
     ],
     "ciekawostki": [
       "Podczas II wojny światowej Kazimierz Szubert pracował jako barman i kelner w restauracji „Gospoda Włóczęgów” przy ul. Miodowej 23 w Warszawie."
     ],
     "summary_en": "An insurgent field hospital in Old Town Warsaw during the 1944 uprising. Several people died here on 2 September 1944, including Maria Swierczewska and Józef Kłosiński, who was murdered by German soldiers. The building was also a restaurant before the war.",
     "ludzie": [
-      {"kto": "Maria Więckowska", "rola": "zmarła w szpitalu powstańczym", "wiki": "https://pl.wikipedia.org/wiki/Maria_Więckowska"},
-      {"kto": "Maria Swierczewska", "rola": "zginęła 2 września 1944 w szpitalu powstańczym", "wiki": "https://pl.wikipedia.org/wiki/Maria_Swierczewska"},
-      {"kto": "Józef Kłosiński", "rola": "zamordowany 2 września 1944 przez żołnierzy niemieckich w szpitalu", "wiki": "https://pl.wikipedia.org/wiki/Józef_Kłosiński"},
-      {"kto": "Hanna Bińkowska", "rola": "zginęła 2 września 1944 w zbombardowanym szpitalu polowym", "wiki": "https://pl.wikipedia.org/wiki/Hanna_Bińkowska"},
-      {"kto": "Zofia Maternowska", "rola": "pracowała w tym szpitalu (wcześniej przy Krzywym Kole 4)", "wiki": "https://pl.wikipedia.org/wiki/Zofia_Maternowska"},
-      {"kto": "Kazimierz Szubert", "rola": "barman i kelner w restauracji „Gospoda Włóczęgów” przy ul. Miodowej 23", "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Szubert"}
+      {
+        "kto": "Maria Więckowska",
+        "rola": "zmarła w szpitalu powstańczym",
+        "wiki": "https://pl.wikipedia.org/wiki/Maria_Więckowska"
+      },
+      {
+        "kto": "Maria Swierczewska",
+        "rola": "zginęła 2 września 1944 w szpitalu powstańczym",
+        "wiki": "https://pl.wikipedia.org/wiki/Maria_Swierczewska"
+      },
+      {
+        "kto": "Józef Kłosiński",
+        "rola": "zamordowany 2 września 1944 przez żołnierzy niemieckich w szpitalu",
+        "wiki": "https://pl.wikipedia.org/wiki/Józef_Kłosiński"
+      },
+      {
+        "kto": "Hanna Bińkowska",
+        "rola": "zginęła 2 września 1944 w zbombardowanym szpitalu polowym",
+        "wiki": "https://pl.wikipedia.org/wiki/Hanna_Bińkowska"
+      },
+      {
+        "kto": "Zofia Maternowska",
+        "rola": "pracowała w tym szpitalu (wcześniej przy Krzywym Kole 4)",
+        "wiki": "https://pl.wikipedia.org/wiki/Zofia_Maternowska"
+      },
+      {
+        "kto": "Kazimierz Szubert",
+        "rola": "barman i kelner w restauracji „Gospoda Włóczęgów” przy ul. Miodowej 23",
+        "wiki": "https://pl.wikipedia.org/wiki/Kazimierz_Szubert"
+      }
     ],
-    "dawne_nazwy": ["Gospoda Włóczęgów (restauracja w czasie wojny)"],
+    "dawne_nazwy": [
+      "Gospoda Włóczęgów (restauracja w czasie wojny)"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Likwidacja powstańczych szpitali na warszawskiej Starówce", "url": "https://pl.wikipedia.org/wiki/Likwidacja_powstańczych_szpitali_na_warszawskiej_Starówce"},
-      {"tytul": "Wikipedia: Maria Więckowska", "url": "https://pl.wikipedia.org/wiki/Maria_Więckowska"},
-      {"tytul": "Wikipedia: Maria Swierczewska", "url": "https://pl.wikipedia.org/wiki/Maria_Swierczewska"},
-      {"tytul": "Wikipedia: Józef Kłosiński", "url": "https://pl.wikipedia.org/wiki/Józef_Kłosiński"},
-      {"tytul": "Wikipedia: Hanna Bińkowska", "url": "https://pl.wikipedia.org/wiki/Hanna_Bińkowska"},
-      {"tytul": "Wikipedia: Zofia Maternowska", "url": "https://pl.wikipedia.org/wiki/Zofia_Maternowska"},
-      {"tytul": "Wikipedia: Kazimierz Szubert", "url": "https://pl.wikipedia.org/wiki/Kazimierz_Szubert"}
+      {
+        "tytul": "Wikipedia: Likwidacja powstańczych szpitali na warszawskiej Starówce",
+        "url": "https://pl.wikipedia.org/wiki/Likwidacja_powstańczych_szpitali_na_warszawskiej_Starówce"
+      },
+      {
+        "tytul": "Wikipedia: Maria Więckowska",
+        "url": "https://pl.wikipedia.org/wiki/Maria_Więckowska"
+      },
+      {
+        "tytul": "Wikipedia: Maria Swierczewska",
+        "url": "https://pl.wikipedia.org/wiki/Maria_Swierczewska"
+      },
+      {
+        "tytul": "Wikipedia: Józef Kłosiński",
+        "url": "https://pl.wikipedia.org/wiki/Józef_Kłosiński"
+      },
+      {
+        "tytul": "Wikipedia: Hanna Bińkowska",
+        "url": "https://pl.wikipedia.org/wiki/Hanna_Bińkowska"
+      },
+      {
+        "tytul": "Wikipedia: Zofia Maternowska",
+        "url": "https://pl.wikipedia.org/wiki/Zofia_Maternowska"
+      },
+      {
+        "tytul": "Wikipedia: Kazimierz Szubert",
+        "url": "https://pl.wikipedia.org/wiki/Kazimierz_Szubert"
+      }
     ],
     "pewnosc": "srednia",
     "uwagi": "Dwa zdania o szpitalu przy Miodowej 23 (liczby rannych) są urwane i pominięte. Fakt o Zofii Maternowskiej ma urwane zdanie, więc podano go ostrożnie. Istnienie budynku dziś nieznane z paczki."
@@ -356,7 +703,7 @@
     "lat": 52.2231104,
     "lon": 21.0062725,
     "lokalizacja": "dokladna",
-    "okres": "1930–1945",
+    "okres": "1936–1945",
     "istnieje": null,
     "fakty": [
       "W latach 1936–1944 Jadwiga Romanowska była dyrektorką Warszawskiej Szkoły Pielęgniarstwa przy ul. Koszykowej 78.",
@@ -369,18 +716,51 @@
     "ciekawostki": [],
     "summary_en": "The former Warsaw School of Nursing on Koszykowa 78. Run by Jadwiga Romanowska in 1936-1944, it was turned into a hospital during the Warsaw Uprising. After the war, the Polish Army took over the building and a military hospital opened there on 10 November 1945.",
     "ludzie": [
-      {"kto": "Jadwiga Romanowska", "rola": "dyrektorka Warszawskiej Szkoły Pielęgniarstwa w latach 1936–1944", "wiki": "https://pl.wikipedia.org/wiki/Jadwiga_Romanowska"},
-      {"kto": "Maria Kraińska", "rola": "absolwentka Warszawskiej Szkoły Pielęgniarstwa podczas wojny", "wiki": "https://pl.wikipedia.org/wiki/Maria_Kraińska"},
-      {"kto": "Florentyna Luboińska", "rola": "prowadziła szkolenia sanitariuszek po kapitulacji Warszawy", "wiki": "https://pl.wikipedia.org/wiki/Florentyna_Luboińska"},
-      {"kto": "Wanda Stefania Lankajtes", "rola": "pracowała w szkole pielęgniarskiej, przekształconej w czasie powstania w szpital", "wiki": "https://pl.wikipedia.org/wiki/Wanda_Stefania_Lankajtes"}
+      {
+        "kto": "Jadwiga Romanowska",
+        "rola": "dyrektorka Warszawskiej Szkoły Pielęgniarstwa w latach 1936–1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Jadwiga_Romanowska"
+      },
+      {
+        "kto": "Maria Kraińska",
+        "rola": "absolwentka Warszawskiej Szkoły Pielęgniarstwa podczas wojny",
+        "wiki": "https://pl.wikipedia.org/wiki/Maria_Kraińska"
+      },
+      {
+        "kto": "Florentyna Luboińska",
+        "rola": "prowadziła szkolenia sanitariuszek po kapitulacji Warszawy",
+        "wiki": "https://pl.wikipedia.org/wiki/Florentyna_Luboińska"
+      },
+      {
+        "kto": "Wanda Stefania Lankajtes",
+        "rola": "pracowała w szkole pielęgniarskiej, przekształconej w czasie powstania w szpital",
+        "wiki": "https://pl.wikipedia.org/wiki/Wanda_Stefania_Lankajtes"
+      }
     ],
-    "dawne_nazwy": ["Warszawska Szkoła Pielęgniarstwa Fundacji Rockefellera"],
+    "dawne_nazwy": [
+      "Warszawska Szkoła Pielęgniarstwa Fundacji Rockefellera"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Wojskowy Instytut Medyczny", "url": "https://pl.wikipedia.org/wiki/Wojskowy_Instytut_Medyczny"},
-      {"tytul": "Wikipedia: Jadwiga Romanowska", "url": "https://pl.wikipedia.org/wiki/Jadwiga_Romanowska"},
-      {"tytul": "Wikipedia: Maria Kraińska", "url": "https://pl.wikipedia.org/wiki/Maria_Kraińska"},
-      {"tytul": "Wikipedia: Florentyna Luboińska", "url": "https://pl.wikipedia.org/wiki/Florentyna_Luboińska"},
-      {"tytul": "Wikipedia: Wanda Stefania Lankajtes", "url": "https://pl.wikipedia.org/wiki/Wanda_Stefania_Lankajtes"}
+      {
+        "tytul": "Wikipedia: Wojskowy Instytut Medyczny",
+        "url": "https://pl.wikipedia.org/wiki/Wojskowy_Instytut_Medyczny"
+      },
+      {
+        "tytul": "Wikipedia: Jadwiga Romanowska",
+        "url": "https://pl.wikipedia.org/wiki/Jadwiga_Romanowska"
+      },
+      {
+        "tytul": "Wikipedia: Maria Kraińska",
+        "url": "https://pl.wikipedia.org/wiki/Maria_Kraińska"
+      },
+      {
+        "tytul": "Wikipedia: Florentyna Luboińska",
+        "url": "https://pl.wikipedia.org/wiki/Florentyna_Luboińska"
+      },
+      {
+        "tytul": "Wikipedia: Wanda Stefania Lankajtes",
+        "url": "https://pl.wikipedia.org/wiki/Wanda_Stefania_Lankajtes"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Zdania o Danucie Szymańskiej i Janinie Bauer-Gellert (urwane przy „Jana Zaorskiego przy ul. Koszykowej 78”) pominięte. Komendant szpitala MON urwany w zdaniu. Dziś budynek: brak danych w paczce."
@@ -408,16 +788,40 @@
     "ciekawostki": [],
     "summary_en": "A school building on Żurawia 49. It housed a private Polish-language gymnasium founded in 1905 by Tadeusz Sierzputowski, later run by Marian Rychłowski. The First Gymnasium of the ZNP later used the building, and the poet Lucjan Szenwald was a pupil here.",
     "ludzie": [
-      {"kto": "Tadeusz Sierzputowski", "rola": "założył w 1905 r. trzyklasową szkołę przy ul. Żurawiej 49", "wiki": null},
-      {"kto": "Marian Rychłowski", "rola": "odkupił szkołę w 1907 r. i był jej dyrektorem (z przerwą) 1909–1919", "wiki": "https://pl.wikipedia.org/wiki/Marian_Rychłowski"},
-      {"kto": "Lucjan Szenwald", "rola": "uczeń I Gimnazjum przy ul. Żurawiej 49", "wiki": "https://pl.wikipedia.org/wiki/Lucjan_Szenwald"}
+      {
+        "kto": "Tadeusz Sierzputowski",
+        "rola": "założył w 1905 r. trzyklasową szkołę przy ul. Żurawiej 49",
+        "wiki": null
+      },
+      {
+        "kto": "Marian Rychłowski",
+        "rola": "odkupił szkołę w 1907 r. i był jej dyrektorem (z przerwą) 1909–1919",
+        "wiki": "https://pl.wikipedia.org/wiki/Marian_Rychłowski"
+      },
+      {
+        "kto": "Lucjan Szenwald",
+        "rola": "uczeń I Gimnazjum przy ul. Żurawiej 49",
+        "wiki": "https://pl.wikipedia.org/wiki/Lucjan_Szenwald"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: VI Liceum Ogólnokształcące im. Tadeusza Reytana w Warszawie", "url": "https://pl.wikipedia.org/wiki/VI_Liceum_Ogólnokształcące_im._Tadeusza_Reytana_w_Warszawie"},
-      {"tytul": "Wikipedia: Marian Rychłowski", "url": "https://pl.wikipedia.org/wiki/Marian_Rychłowski"},
-      {"tytul": "Wikipedia: XXXV Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Bolesława Prusa w Warszawie", "url": "https://pl.wikipedia.org/wiki/XXXV_Liceum_Ogólnokształcące_z_Oddziałami_Dwujęzycznymi_im._Bolesława_Prusa_w_Warszawie"},
-      {"tytul": "Wikipedia: Lucjan Szenwald", "url": "https://pl.wikipedia.org/wiki/Lucjan_Szenwald"}
+      {
+        "tytul": "Wikipedia: VI Liceum Ogólnokształcące im. Tadeusza Reytana w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/VI_Liceum_Ogólnokształcące_im._Tadeusza_Reytana_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Marian Rychłowski",
+        "url": "https://pl.wikipedia.org/wiki/Marian_Rychłowski"
+      },
+      {
+        "tytul": "Wikipedia: XXXV Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Bolesława Prusa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/XXXV_Liceum_Ogólnokształcące_z_Oddziałami_Dwujęzycznymi_im._Bolesława_Prusa_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Lucjan Szenwald",
+        "url": "https://pl.wikipedia.org/wiki/Lucjan_Szenwald"
+      }
     ],
     "pewnosc": "srednia",
     "uwagi": "Zdanie o przeniesieniu szkoły (1 sierpnia r.) urwane, pominięte. Okres szkolny przed 1909 r. wynika z paczki; dalsze losy budynku nieznane."
@@ -447,21 +851,63 @@
     "ciekawostki": [],
     "summary_en": "The Professors' House at Brzozowa 12, home to professors of Warsaw University, served as an insurgent stronghold in 1944. Before that it was a meeting place for the syndicalists and a base for the underground Baszta courier point.",
     "ludzie": [
-      {"kto": "Kazimierz Zakrzewski", "rola": "gospodarz profesorskiego mieszkania, w którym odbyło się spotkanie 9 X 1939", "wiki": null},
-      {"kto": "Włodzimierz Piramowicz", "rola": "gospodarz mieszkania, w którym działał punkt „Baszta”", "wiki": null},
-      {"kto": "Arnold Andrunik", "rola": "zamieszkał w mieszkaniu Piramowicza; aresztowany 26 czerwca 1942", "wiki": "https://pl.wikipedia.org/wiki/Arnold_Andrunik"},
-      {"kto": "Adam Krokiewicz", "rola": "mieszkał w Domu Profesorów do 1944", "wiki": "https://pl.wikipedia.org/wiki/Adam_Krokiewicz"},
-      {"kto": "Stanisław Komornicki", "rola": "brał udział w walkach o Dom Profesorów", "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Komornicki"},
-      {"kto": "Tadeusz Kotarbiński", "rola": "mieszkał w domu stowarzyszenia przy ul. Brzozowej 12", "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Kotarbiński"}
+      {
+        "kto": "Kazimierz Zakrzewski",
+        "rola": "gospodarz profesorskiego mieszkania, w którym odbyło się spotkanie 9 X 1939",
+        "wiki": null
+      },
+      {
+        "kto": "Włodzimierz Piramowicz",
+        "rola": "gospodarz mieszkania, w którym działał punkt „Baszta”",
+        "wiki": null
+      },
+      {
+        "kto": "Arnold Andrunik",
+        "rola": "zamieszkał w mieszkaniu Piramowicza; aresztowany 26 czerwca 1942",
+        "wiki": "https://pl.wikipedia.org/wiki/Arnold_Andrunik"
+      },
+      {
+        "kto": "Adam Krokiewicz",
+        "rola": "mieszkał w Domu Profesorów do 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Adam_Krokiewicz"
+      },
+      {
+        "kto": "Stanisław Komornicki",
+        "rola": "brał udział w walkach o Dom Profesorów",
+        "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Komornicki"
+      },
+      {
+        "kto": "Tadeusz Kotarbiński",
+        "rola": "mieszkał w domu stowarzyszenia przy ul. Brzozowej 12",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Kotarbiński"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: 104 Kompania Syndykalistów", "url": "https://pl.wikipedia.org/wiki/104_Kompania_Syndykalistów"},
-      {"tytul": "Wikipedia: Arnold Andrunik", "url": "https://pl.wikipedia.org/wiki/Arnold_Andrunik"},
-      {"tytul": "Wikipedia: Związek Syndykalistów Polskich", "url": "https://pl.wikipedia.org/wiki/Związek_Syndykalistów_Polskich"},
-      {"tytul": "Wikipedia: Adam Krokiewicz", "url": "https://pl.wikipedia.org/wiki/Adam_Krokiewicz"},
-      {"tytul": "Wikipedia: Stanisław Komornicki", "url": "https://pl.wikipedia.org/wiki/Stanisław_Komornicki"},
-      {"tytul": "Wikipedia: Tadeusz Kotarbiński", "url": "https://pl.wikipedia.org/wiki/Tadeusz_Kotarbiński"}
+      {
+        "tytul": "Wikipedia: 104 Kompania Syndykalistów",
+        "url": "https://pl.wikipedia.org/wiki/104_Kompania_Syndykalistów"
+      },
+      {
+        "tytul": "Wikipedia: Arnold Andrunik",
+        "url": "https://pl.wikipedia.org/wiki/Arnold_Andrunik"
+      },
+      {
+        "tytul": "Wikipedia: Związek Syndykalistów Polskich",
+        "url": "https://pl.wikipedia.org/wiki/Związek_Syndykalistów_Polskich"
+      },
+      {
+        "tytul": "Wikipedia: Adam Krokiewicz",
+        "url": "https://pl.wikipedia.org/wiki/Adam_Krokiewicz"
+      },
+      {
+        "tytul": "Wikipedia: Stanisław Komornicki",
+        "url": "https://pl.wikipedia.org/wiki/Stanisław_Komornicki"
+      },
+      {
+        "tytul": "Wikipedia: Tadeusz Kotarbiński",
+        "url": "https://pl.wikipedia.org/wiki/Tadeusz_Kotarbiński"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Adres w paczce podany jako Brzozowa 12 na Kazimierzu i na Starym Mieście, zdania opisują ten sam budynek. Kazimierz Zakrzewski i Włodzimierz Piramowicz bez artykułów, więc wiki null."

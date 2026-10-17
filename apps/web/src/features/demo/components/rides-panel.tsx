@@ -3,13 +3,14 @@
 import type { LatLng, Route, Travel } from "@sawa/shared";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { useT } from "@/features/i18n";
 import { planRoute, routeLine } from "../lib/api-data";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { type MockStop, type RidePreview, UPCOMING_RIDES } from "../lib/mock-data";
 import type { Profile } from "../lib/onboarding";
 import type { RideEnd } from "../lib/ride-end";
-import { ArrowRightIcon, PinIcon, PlayIcon, TramIcon } from "./icons";
+import { ArrowRightIcon, CloseIcon, PinIcon, PlayIcon, TramIcon } from "./icons";
 import { Journey } from "./line-badge";
 import { KORAL, RouteThumb } from "./route-thumb";
 
@@ -27,11 +28,15 @@ type RidesPanelProps = {
   /** Trasa wyznaczona wcześniej w tej sesji (pusta, jeśli jeszcze żadnej nie było). */
   lastRoute: MockStop[];
   onOpenLastRoute: () => void;
+  /** Powrót na mapę (nie ma już paska zakładek). */
+  onClose: () => void;
   /** Start przejażdżki. Dostaje trasę z podglądu, żeby nie planować jej drugi raz; null, gdy podglądu nie ma. */
   onStart: (planned: Route | null) => void;
 };
 
 const SEGMENTS = [30, 60, 120, 240];
+
+const storiesEn = (count: number) => `${count} ${count === 1 ? "story" : "stories"}`;
 
 /** Zakładka Przejażdżki (makieta D): gotowe trasy jak odcinki podcastu, przełącznik czasu, ostatnia trasa. */
 export function RidesPanel({
@@ -44,8 +49,10 @@ export function RidesPanel({
   travel,
   lastRoute,
   onOpenLastRoute,
+  onClose,
   onStart,
 }: RidesPanelProps) {
+  const t = useT();
   // Podgląd to prawdziwa trasa z planera dla wybranego czasu, więc po starcie widać dokładnie to samo.
   const [preview, setPreview] = useState<Route | null>(null);
   const [failed, setFailed] = useState(false);
@@ -69,23 +76,36 @@ export function RidesPanel({
 
   return (
     <motion.section
-      aria-label="Przejażdżki"
+      aria-label={t("Przejażdżki", "Rides")}
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 24 }}
       transition={SPRING}
       className="absolute inset-0 z-[15] bg-tlo-2 md:inset-auto md:top-24 md:bottom-6 md:left-6 md:w-[360px] md:overflow-hidden md:rounded-[32px] md:bg-transparent lg:w-[400px]"
     >
+      <button
+        type="button"
+        aria-label={t("Wróć do mapy", "Back to the map")}
+        onClick={onClose}
+        className="szklo absolute right-4 top-[max(1rem,env(safe-area-inset-top))] z-10 grid size-12 place-items-center rounded-full text-tekst transition-transform duration-100 active:scale-[0.94] md:top-4 md:size-10"
+      >
+        <CloseIcon className="size-5" />
+      </button>
       {/* Na telefonie treść gaśnie pod logo i pogodą, zamiast przewijać się pod nimi */}
-      <div className="h-full overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent_calc(max(1rem,env(safe-area-inset-top))+40px),black_calc(max(1rem,env(safe-area-inset-top))+64px))] md:[mask-image:none] px-4 pb-[calc(max(1.25rem,env(safe-area-inset-bottom))+96px)] pt-[calc(max(1rem,env(safe-area-inset-top))+64px)] md:karta md:rounded-[32px] md:p-6">
+      <div className="h-full overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent_calc(max(1rem,env(safe-area-inset-top))+40px),black_calc(max(1rem,env(safe-area-inset-top))+64px))] md:[mask-image:none] px-4 pb-[calc(max(1.25rem,env(safe-area-inset-bottom))+24px)] pt-[calc(max(1rem,env(safe-area-inset-top))+64px)] md:karta md:rounded-[32px] md:p-6">
         <h1 className="text-[30px] font-extrabold leading-[1.1] tracking-[-0.035em] md:text-[26px]">
-          Przejażdżki na dziś
+          {t("Przejażdżki na dziś", "Today's rides")}
         </h1>
-        <p className="mt-1 text-sm text-tekst-2">Ułożone z Twoich tematów. Start: {originLabel}</p>
+        <p className="mt-1 text-sm text-tekst-2">
+          {t(
+            `Ułożone z Twoich tematów. Start: ${originLabel}`,
+            `Built from your topics. Start: ${originLabel}`,
+          )}
+        </p>
 
         <div
           role="radiogroup"
-          aria-label="Czas przejażdżki"
+          aria-label={t("Czas przejażdżki", "Ride length")}
           className="mt-4 flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
         >
           {SEGMENTS.map((value) => {
@@ -128,9 +148,12 @@ export function RidesPanel({
               <ArrowRightIcon className="size-5" />
             </span>
             <span className="min-w-0">
-              <span className="block text-[15px] font-bold">Wróć do swojej trasy</span>
+              <span className="block text-[15px] font-bold">
+                {t("Wróć do swojej trasy", "Back to your route")}
+              </span>
               <span className="block truncate text-[13px] text-tekst-2">
-                {lastRoute.length} opowieści · {lastRoute[0].name}
+                {t(`${lastRoute.length} opowieści`, storiesEn(lastRoute.length))} ·{" "}
+                {lastRoute[0].name}
               </span>
             </span>
           </button>
@@ -143,7 +166,7 @@ export function RidesPanel({
           onStart={() => onStart(preview)}
         />
 
-        <h2 className="etykieta mt-6">Wkrótce</h2>
+        <h2 className="etykieta mt-6">{t("Wkrótce", "Coming soon")}</h2>
         <div className="mt-2 grid grid-cols-2 gap-3">
           {UPCOMING_RIDES.map((ride) => (
             <UpcomingRide key={ride.id} ride={ride} />
@@ -164,6 +187,7 @@ type FeaturedRideProps = {
 };
 
 function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps) {
+  const t = useT();
   const places = route?.places ?? [];
 
   return (
@@ -190,7 +214,7 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
       <div className="relative px-4 pb-4 pt-3.5">
         <motion.button
           type="button"
-          aria-label="Ruszaj: Wola, której nie ma"
+          aria-label={t("Ruszaj: Wola, której nie ma", "Go: the Wola that's gone")}
           onClick={() => {
             haptic();
             onStart();
@@ -202,7 +226,9 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
           <PlayIcon className="ml-0.5 size-[22px]" />
         </motion.button>
 
-        <h3 className="pr-16 text-[20px] font-extrabold tracking-[-0.02em]">Wola, której nie ma</h3>
+        <h3 className="pr-16 text-[20px] font-extrabold tracking-[-0.02em]">
+          {t("Wola, której nie ma", "The Wola that's gone")}
+        </h3>
         {route ? (
           <>
             <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[13px] text-tekst-2">
@@ -210,7 +236,9 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
               <span aria-hidden="true">·</span>
               <Journey legs={route.legs} />
               <span aria-hidden="true">·</span>
-              <span className="tabular-nums">{places.length} opowieści</span>
+              <span className="tabular-nums">
+                {t(`${places.length} opowieści`, storiesEn(places.length))}
+              </span>
             </div>
             {destination && (
               <p
@@ -220,17 +248,22 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
               >
                 <PinIcon className="size-4 shrink-0" />
                 {route.endsAtDestination
-                  ? `Do celu: ${destination}`
-                  : `Do celu (${destination}) nie zdążę w tym czasie`}
+                  ? t(`Do celu: ${destination}`, `To: ${destination}`)
+                  : t(
+                      `Do celu (${destination}) nie zdążę w tym czasie`,
+                      `I can't reach ${destination} in this time`,
+                    )}
               </p>
             )}
             <p className="mt-2 line-clamp-2 text-[13px] leading-snug text-tekst-2">
-              Po drodze: {places.map((place) => place.name).join(", ")}
+              {t("Po drodze", "On the way")}: {places.map((place) => place.name).join(", ")}
             </p>
           </>
         ) : (
           <p className="mt-1 text-[13px] text-tekst-2">
-            {failed ? "Trasę ułożę, gdy ruszysz." : "Układam trasę…"}
+            {failed
+              ? t("Trasę ułożę, gdy ruszysz.", "I'll plan the route when you set off.")
+              : t("Układam trasę…", "Planning the route…")}
           </p>
         )}
       </div>
@@ -239,6 +272,7 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
 }
 
 function UpcomingRide({ ride }: { ride: RidePreview }) {
+  const t = useT();
   return (
     <article className="overflow-hidden rounded-[20px] bg-powierzchnia shadow-[0_1px_2px_rgba(16,43,42,0.05),0_6px_18px_rgba(16,43,42,0.08)]">
       <RouteThumb
@@ -249,9 +283,11 @@ function UpcomingRide({ ride }: { ride: RidePreview }) {
       />
       <div className="px-3 pb-3 pt-2">
         <h3 className="text-[14.5px] font-extrabold leading-tight tracking-[-0.01em]">
-          {ride.title}
+          {t(ride.title, ride.titleEn)}
         </h3>
-        <p className="mt-0.5 text-xs text-tekst-2">ok. {formatDuration(ride.durationMin)}</p>
+        <p className="mt-0.5 text-xs text-tekst-2">
+          {t("ok.", "approx.")} {formatDuration(ride.durationMin)}
+        </p>
       </div>
     </article>
   );

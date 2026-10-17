@@ -1,5 +1,6 @@
 import { HACKATHON_VENUE } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
+import type { Lang } from "@/features/i18n";
 
 export type MapTheme = "light" | "dark";
 
@@ -24,9 +25,11 @@ export type MapPalette = {
   label: string;
   labelHalo: string;
   walk: string;
-  /** Group of places drawn as one circle with their count when zoomed out. */
+  /** Group of places drawn as one circle with their count when zoomed out ("glass" style, 17.10). */
   clusterFill: string;
+  clusterStroke: string;
   clusterText: string;
+  clusterShadow: string;
   /** Opacity of regular places while a route is shown; dark needs more to stay visible. */
   dimmedOpacity: number;
   /** Rivers and lakes; the basemaps draw them grey, we repaint them blue. */
@@ -45,8 +48,10 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#27272a",
     labelHalo: "#ffffff",
     walk: "#52525b",
-    clusterFill: "#3f3f46",
-    clusterText: "#ffffff",
+    clusterFill: "rgba(255, 255, 255, 0.92)",
+    clusterStroke: "rgba(23, 112, 111, 0.35)",
+    clusterText: "#17706f",
+    clusterShadow: "rgba(16, 43, 42, 0.22)",
     dimmedOpacity: 0.35,
     water: "#b4d7ec",
     waterLabel: "#3d6e94",
@@ -62,8 +67,10 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#d5dfdd",
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
-    clusterFill: "#2c3d3b",
-    clusterText: "#e6efed",
+    clusterFill: "rgba(23, 33, 32, 0.92)",
+    clusterStroke: "rgba(142, 209, 181, 0.4)",
+    clusterText: "#8ed1b5",
+    clusterShadow: "rgba(0, 0, 0, 0.5)",
     dimmedOpacity: 0.6,
     water: "#1f4a6b",
     waterLabel: "#7fa8cb",
@@ -105,6 +112,7 @@ export function waterPaintOverrides(palette: MapPalette): PaintOverride[] {
 
 /** Fonts available in the OpenFreeMap glyph server. */
 export const LABEL_FONT = ["Noto Sans Regular"];
+export const LABEL_FONT_BOLD = ["Noto Sans Bold"];
 
 export const START_VIEW = {
   longitude: HACKATHON_VENUE.lng,
@@ -149,6 +157,23 @@ export const PLACE_KIND_LABELS: Record<string, string> = {
   site: "miejsce",
   event: "wydarzenie",
 };
+
+export const PLACE_KIND_LABELS_EN: Record<string, string> = {
+  building: "building",
+  street: "street",
+  monument: "monument",
+  plaque: "plaque",
+  mural: "mural",
+  church: "church",
+  cemetery: "cemetery",
+  site: "site",
+  event: "event",
+};
+
+/** Place kind label in the interface language; undefined for an unknown kind. */
+export function placeKindLabel(kind: string, lang: Lang = "pl"): string | undefined {
+  return (lang === "en" ? PLACE_KIND_LABELS_EN : PLACE_KIND_LABELS)[kind];
+}
 
 /** User position dot. */
 export const USER_COLOR = "#2563eb";

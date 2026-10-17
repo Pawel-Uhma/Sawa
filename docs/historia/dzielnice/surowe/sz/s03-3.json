@@ -1,0 +1,255 @@
+[
+  {
+    "id": "dom-modlitwy-milej-32",
+    "nazwa": "Dom modlitwy przy ul. Miłej 32",
+    "name_en": "Prayer house at 32 Miła Street",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miła 32",
+    "adres_historyczny": "ul. Miła 32",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po I wojnie(?)–1943(?)",
+    "istnieje": false,
+    "fakty": [
+      "Dom modlitwy przy ul. Miłej 32 (nr hip. 2313 abn) został wymieniony tylko w spisie z 1926 r.",
+      "W 1940 r. pomieszczono tu przesiedleńców z Raciąża, Sierpca i Bieżunia.",
+      "Na zdjęciu wykonanym wówczas nie widać elementów wskazujących na poprzednią funkcję sali."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A prayer house at 32 Miła Street, recorded only in the 1926 directory. In 1940 it housed deportees from Raciąż, Sierpc and Bieżuń.",
+    "ludzie": [],
+    "dawne_nazwy": ["nr hip. 2313 abn"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Miłej 32 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89558-dom-modlitwy-przy-ul-milej-32-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst podaje tylko adres przedwojenny, wpisany w oba pola. Dzielnica (Muranów) wg lokalizacji ulicy."
+  },
+  {
+    "id": "synagoga-polska-nalewki-28-30",
+    "nazwa": "Synagoga „Polska” na Nalewkach",
+    "name_en": "\"Polish\" Synagogue on Nalewki Street",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nalewki 28/30, 39",
+    "adres_historyczny": "ul. Nalewki 28/30, 39 (nr hip. 2257, 2250)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1852–1942(?)",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga „polska” na Nalewkach 28/30, 39 została otwarta 10 marca 1852 r.; tekst podaje okres istnienia 1852–1942(?), a w jednym miejscu także 1857.",
+      "Po przeniesieniu Szkoły Rabinów w 1845 r. do gmachu przy Gęsiej kilku jej wychowanków, którym nie odpowiadały kazania po niemiecku, utworzyło własne zgromadzenie.",
+      "Przez kilka lat nabożeństwa odbywały się w prywatnych mieszkaniach; potem wynajęto dwupokojowy lokal w oficynie pod nr hip. 2257.",
+      "Po siedmiu latach lokal okazał się za mały; komitet zawarł z właścicielami nowo budowanego domu pod nr 2250 przy Nalewkach kontrakt najmu na 10 lat i zamówił oddzielny budynek synagogi.",
+      "26 sierpnia 1858 r. w budynku odbył się ślub córki członka komitetu budowy – pierwsza ceremonia ślubna w synagodze w Warszawie.",
+      "Kazania po polsku wygłaszał Izaak Kramsztyk, stały kaznodzieja do 1863 r., kiedy został zesłany w głąb Rosji.",
+      "W 1860 r. Hilary Nussbaum wystąpił o dotację dla synagogi w wysokości 2000 rs rocznie; należało do niej około 100 wiernych (rodzin)."
+    ],
+    "ciekawostki": [
+      "Młodzież polska wyznania mojżeszowego zapraszała na nabożeństwo za pomyślność Ojczyzny 9 października 1861 r. do synagogi na Nalewkach pod nr 2250."
+    ],
+    "summary_en": "The Polish-language reformist 'Polish Synagogue', opened on Nalewki Street on 10 March 1852 by a group of graduates of the Rabbinical School. Its Polish sermons were given by Izaak Kramsztyk until 1863, and it had about 100 member families.",
+    "ludzie": [
+      {"kto": "Zelig Natanson", "rola": "założyciel synagogi, w którego domu wynajęto pierwszy lokal", "wiki": null},
+      {"kto": "Izaak Kramsztyk", "rola": "stały kaznodzieja synagogi, wygłaszający kazania po polsku do 1863 r.", "wiki": null},
+      {"kto": "Hilary Nussbaum", "rola": "wnioskodawca dotacji dla synagogi (1860 r.)", "wiki": null},
+      {"kto": "Szmuel (Samuel) Peltyn", "rola": "członek zarządu synagogi (1875 r.)", "wiki": null},
+      {"kto": "Jakub Rozental", "rola": "członek zarządu synagogi (1875 r.), naczelny lekarz Szpitala Starozakonnych", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nalewki 2250", "Nalewki 2257"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Polska w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89650-synagoga-polska-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w jednym miejscu podaje 1857 jako rok (prawdopodobnie błąd, niepewne). Dzielnica (Śródmieście) wg lokalizacji ulicy. Adresy: Nalewki 28/30 i 39 z tekstu, dzisiejsze numery nieznane."
+  },
+  {
+    "id": "synagoga-mlawerow-nalewki-15",
+    "nazwa": "Synagoga Mławerów (ul. Nalewki 15)",
+    "name_en": "Mławer Synagogue (15 Nalewki Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nalewki 15",
+    "adres_historyczny": "ul. Nalewki 15 (nr hip. 2241)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1841–1942(?)",
+    "istnieje": false,
+    "fakty": [
+      "Synagogę Mławerów przy ul. Nalewki 15 (nr hip. 2241) wystawił Herszel, dawny mieszkaniec Mławy; posesja pozostawała w posiadaniu rodziny zapewne aż do II wojny światowej.",
+      "Posesja ciągnęła się od Nalewek do Dzikiej (nr pol. 12) i miała trzy podwórza; synagoga znajdowała się w drugim, zwanym „podwórzem mławskim”, otwartym przez cały dzień.",
+      "Od 1841 r. działało tu Stowarzyszenie Stolarzy „Chaj adam”, a od 1853 r. Stowarzyszenie „Chukej chaim”, zajmujące się nauczaniem Tory wśród rzemieślników i subiektów.",
+      "W 1866 r. poświęcono tu nową synagogę Stowarzyszonych Subiektów Handlowych; subiekci korzystali z niej do 1876 r.",
+      "W podwórzu odbywały się m.in. wesela."
+    ],
+    "ciekawostki": [
+      "Według Abrahama Teitelbauma w tym samym podwórzu funkcjonowała jeszcze jedna bóżnica i bejt ha-midrasz, choć na zachowanym zdjęciu podwórza nie widać ani synagogi, ani domu studiów."
+    ],
+    "summary_en": "The Mławer Synagogue stood in the middle courtyard of a multi-yard property at 15 Nalewki Street, built by Herszel of Mława. From 1841 associations of craftsmen and clerks met here, and the courtyard was open all day.",
+    "ludzie": [
+      {"kto": "Herszel", "rola": "wystawca synagogi, dawny mieszkaniec Mławy", "wiki": null},
+      {"kto": "Josef Chaim Pragier", "rola": "rabin nauczający w synagodze (według Szackiego)", "wiki": null},
+      {"kto": "Abraham Teitelbaum", "rola": "autor wspomnień o podwórzu, wspominający tu synagogę i bejt ha-midrasz", "wiki": null}
+    ],
+    "dawne_nazwy": ["podwórze mławskie"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Mławerów w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89667-synagoga-mlawerow-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres przedwojenny, wpisany w oba pola. Dzielnica (Śródmieście) wg lokalizacji ulicy. Tekst wspomina też Zielną 25 (siedziba Subiektów, kamień węgielny 1912), ale to inny adres; nie wpisano osobno."
+  },
+  {
+    "id": "szkola-powszechna-tarbut-nowolipki-68",
+    "nazwa": "Szkoła powszechna Tarbut II (ul. Nowolipki 68)",
+    "name_en": "Tarbut elementary school II (68 Nowolipki Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowolipki 68",
+    "adres_historyczny": "ul. Nowolipki 68",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Nowolipki 68 funkcjonowała siedmioklasowa żeńska szkoła powszechna stowarzyszenia Tarbut z językiem nauczania jidysz; polski był jednym z przedmiotów.",
+      "Szkoła posiadała pięć sal lekcyjnych (wynajem, 271 m kw.), 12 nauczycieli i 251 uczennic."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A seven-grade girls' elementary school of the Tarbut association at 68 Nowolipki Street, teaching in Yiddish. In 1930/31 it had 251 pupils and 12 teachers.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna Tarbut w Warszawie II", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139071-szkola-powszechna-tarbut-w-warszawie-ii"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "gimnazjum-jehudyjah-dluga-55",
+    "nazwa": "Gimnazjum i Liceum Jehudyjah (ul. Długa 55)",
+    "name_en": "Jehudyjah Gymnasium and Lyceum (55 Długa Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa 55",
+    "adres_historyczny": "ul. Długa 55",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1893–około 1939",
+    "istnieje": false,
+    "fakty": [
+      "Szkoła „Jehudyjah” powstała w 1893 r. jako szkoła początkowa, potem rozwinięto ją do gimnazjum neohumanistycznego, a następnie humanistycznego.",
+      "Nosiła nazwy: Gimnazjum Żeńskie Komitetu Opiekuńczego „Jehudyjah” (do 1937) oraz Prywatne Gimnazjum i Liceum „Jehudyjah” (od 1937); w okresie międzywojennym miała nr 149.",
+      "Siedziba znajdowała się przy ul. Długiej 55.",
+      "W 1926 r. właścicielami placówki byli M. Klumel, Leon Lewite i B. Reis-Cukierman, a dyrektorką była Stefania Szwajger.",
+      "W 1926 r. szkoła była ośmioklasowa, humanistyczna, z językiem polskim jako wykładowym; liczyła 10 oddziałów z łącznie 160 uczennicami.",
+      "W roku szkolnym 1930/1931 opłata za jedną uczennicę wynosiła 480–1000 zł rocznie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Jehudyjah girls' gymnasium and lyceum, founded in 1893 and based at 55 Długa Street. It was headed by Stefania Szwajger and had 160 pupils in 1926; it was wound up around 1939.",
+    "ludzie": [
+      {"kto": "Stefania Szwajger", "rola": "dyrektorka gimnazjum (1926)", "wiki": null},
+      {"kto": "M. Klumel", "rola": "współwłaściciel placówki (1926)", "wiki": null},
+      {"kto": "Leon Lewite", "rola": "współwłaściciel placówki (1926)", "wiki": null},
+      {"kto": "B. Reis-Cukierman", "rola": "współwłaściciel placówki (1926)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gimnazjum Żeńskie Komitetu Opiekuńczego „Jehudyjah”"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Gimnazjum i Liceum Jehudyjah w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138839-gimnazjum-i-liceum-jehudyjah-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica (Śródmieście) wg lokalizacji ulicy."
+  },
+  {
+    "id": "synagoga-chewra-szas-twarda-22",
+    "nazwa": "Synagoga Chewra Szas (ul. Twarda 22)",
+    "name_en": "Chewra Shas Synagogue (22 Twarda Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Twarda 22 (?)",
+    "adres_historyczny": "ul. Twarda 22 (?) (nr hip. 1096)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1846(?)–1942(?)",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga mieściła się przy ul. Twardej 22 (?), nr hip. 1096, i funkcjonowała w latach 1846(?)–1942(?).",
+      "Stowarzyszenie Chewra Szas, czyli stowarzyszenie studiów talmudycznych, działało w Warszawie od 1846 r.",
+      "Bóżnica przy Twardej 22 istniała już w 1851 r.; wystawiła wtedy dziesięciu elektorów na wybory Dozoru Bóżniczego.",
+      "Synagoga występuje w spisach z 1869 i 1926 r.",
+      "Przypuszczalnie to ta bóżnica, której założycielem był chasyd Dawid Maliniak, fabrykant win z Grzybowa, mieszkający na tej posesji przynajmniej w 1854 r."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Chewra Shas synagogue, linked to a talmudic study society, stood at 22 Twarda Street. It sent electors to the Jewish community board in 1851 and appears in directories from 1869 and 1926.",
+    "ludzie": [
+      {"kto": "Dawid Maliniak", "rola": "przypuszczalny założyciel synagogi, fabrykant win z Grzybowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Chewra Szas w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89589-synagoga-chewra-szas-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Numer 22 podany z zapytaniem w tekście. Tekst podaje tylko adres przedwojenny, wpisany w oba pola. Przypisanie do Dawida Maliniaka jest przypuszczeniem autora. Dzielnica (Śródmieście) wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-powszechna-karmelicka-29",
+    "nazwa": "Prywatna szkoła powszechna przy ul. Karmelickiej 29",
+    "name_en": "Private elementary school at 29 Karmelicka Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karmelicka 29",
+    "adres_historyczny": "ul. Karmelicka 29",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Karmelickiej 29 funkcjonowała prywatna siedmioklasowa żeńska szkoła powszechna z językiem nauczania jidysz; polski miał status przedmiotu.",
+      "Szkoła posiadała 4 wynajęte sale lekcyjne (195 m kw.), 15 nauczycieli i 286 uczennic."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A private seven-grade girls' elementary school at 29 Karmelicka Street, teaching in Yiddish. In 1930/31 it had 286 pupils and 15 teachers.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna przy ul. Karmelickiej 29 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138975-szkola-powszechna-przy-ul-karmelickiej-29-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica wg lokalizacji ulicy."
+  },
+  {
+    "id": "szkola-religijna-krochmalna-25",
+    "nazwa": "Szkoła religijna przy ul. Krochmalnej 25",
+    "name_en": "Religious school at 25 Krochmalna Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krochmalna 25",
+    "adres_historyczny": "ul. Krochmalna 25",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Krochmalnej 25 funkcjonowała dwuklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła posiadała 3 wynajęte sale lekcyjne (70 m kw.), 3 nauczycieli i 60 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-class religious school for boys at 25 Krochmalna Street. In 1930/31 it had 60 pupils, 3 teachers and three rented rooms of 70 m2.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Krochmalnej 25 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138982-szkola-religijna-przy-ul-krochmalnej-25-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dane z „Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931” (Warszawa 1933). Dzisiejszy adres nieznany z tekstu; przedwojenny w obu polach. Dzielnica ustalona z lokalizacji ulicy (Muranów/Śródmieście Północne), niepewna."
+  }
+]

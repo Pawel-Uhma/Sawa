@@ -2,6 +2,7 @@
 
 import type { Place } from "@sawa/shared";
 import { useState } from "react";
+import { useLang, useT } from "@/features/i18n";
 import { placeTagLabel } from "@/lib/interest-labels";
 import type { Listener } from "../lib/api-data";
 import { haptic } from "../lib/device";
@@ -29,6 +30,8 @@ type PlaceDetailsProps = {
 
 /** Treść karty miejsca, jak arkusz w Mapach Apple: nagłówek, główna akcja, pasek zdjęć, a niżej wszystko, co wiemy o miejscu. */
 export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetailsProps) {
+  const t = useT();
+  const lang = useLang();
   const story = usePlaceStory(place.id, listener);
   const [showAll, setShowAll] = useState(false);
   const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW)).map(cleanFact);
@@ -63,7 +66,7 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
               className="flex h-14 shrink-0 items-center gap-1.5 rounded-[18px] bg-mieta-jasna px-4 text-[15px] font-bold text-glebia transition-transform active:scale-[0.96]"
             >
               <PinIcon className="size-[18px]" />
-              Jedź tutaj
+              {t("Jedź tutaj", "Ride here")}
             </button>
           )}
         </div>
@@ -100,7 +103,7 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
               key={tag}
               className="rounded-full bg-mieta-jasna px-2.5 py-1 text-xs font-bold text-glebia-ciemna"
             >
-              {placeTagLabel(tag)}
+              {placeTagLabel(tag, lang)}
             </li>
           ))}
         </ul>
@@ -108,7 +111,7 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
 
       {facts.length > 0 && (
         <div className="mt-5">
-          <h3 className="etykieta">Co tu się działo</h3>
+          <h3 className="etykieta">{t("Co tu się działo", "What happened here")}</h3>
           <ul className="mt-2 space-y-2.5">
             {facts.map((fact) => (
               <li key={fact} className="flex gap-2.5 text-[15px] leading-relaxed text-tekst">
@@ -126,7 +129,9 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
               onClick={() => setShowAll((isShown) => !isShown)}
               className="-ml-2 mt-2 rounded-full px-2 py-1.5 text-[14px] font-bold text-glebia hover:bg-mieta-jasna"
             >
-              {showAll ? "Pokaż mniej" : `Wszystkie fakty (${place.facts.length})`}
+              {showAll
+                ? t("Pokaż mniej", "Show less")
+                : t(`Wszystkie fakty (${place.facts.length})`, `All facts (${place.facts.length})`)}
             </button>
           )}
         </div>

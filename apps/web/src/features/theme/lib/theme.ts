@@ -10,6 +10,12 @@ export const THEME_PREFERENCE_LABELS: Record<ThemePreference, string> = {
   system: "Auto",
 };
 
+export const THEME_PREFERENCE_LABELS_EN: Record<ThemePreference, string> = {
+  light: "Light",
+  dark: "Dark",
+  system: "Auto",
+};
+
 /** localStorage key; the inline script in app/layout.tsx reads the same one before first paint. */
 export const THEME_STORAGE_KEY = "sawa-theme";
 

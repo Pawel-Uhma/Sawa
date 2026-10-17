@@ -10,7 +10,7 @@
     "lat": 52.2406908,
     "lon": 20.9981503,
     "lokalizacja": "dokladna",
-    "okres": "1930–dziś",
+    "okres": "brak daty w paczce–dziś",
     "istnieje": true,
     "fakty": [
       "Kino Anatol znajdowało się przy ul. Elektoralnej 12; obecnie w budynku jest siedziba Mazowieckiego Centrum Kultury i Sztuki.",
@@ -22,19 +22,45 @@
     "ciekawostki": [],
     "summary_en": "A building at Elektoralna 12 that housed the Anatol cinema and today the Mazovian Centre for Culture and Art. The Warsaw Culture Centre was based here before the merger that created the institute.",
     "ludzie": [
-      {"kto": "Anna Kotarbińska", "rola": "uczęszczała na zajęcia szkoły odbywające się w mieszkaniu Edwarda Jagusiaka przy ul. Elektoralnej 12", "wiki": "https://pl.wikipedia.org/wiki/Anna_Kotarbińska"},
-      {"kto": "Edward Jagusiak", "rola": "właściciel mieszkania, w którym odbywały się zajęcia szkoły", "wiki": null},
-      {"kto": "Tadeusz Milewski (lekarz)", "rola": "kierownik laboratorium przy ul. Elektoralnej 12", "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Milewski_(lekarz)"}
+      {
+        "kto": "Anna Kotarbińska",
+        "rola": "uczęszczała na zajęcia szkoły odbywające się w mieszkaniu Edwarda Jagusiaka przy ul. Elektoralnej 12",
+        "wiki": "https://pl.wikipedia.org/wiki/Anna_Kotarbińska"
+      },
+      {
+        "kto": "Edward Jagusiak",
+        "rola": "właściciel mieszkania, w którym odbywały się zajęcia szkoły",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Milewski (lekarz)",
+        "rola": "kierownik laboratorium przy ul. Elektoralnej 12",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Milewski_(lekarz)"
+      }
     ],
-    "dawne_nazwy": ["Kino Anatol"],
+    "dawne_nazwy": [
+      "Kino Anatol"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Mazowiecki Instytut Kultury", "url": "https://pl.wikipedia.org/wiki/Mazowiecki_Instytut_Kultury"},
-      {"tytul": "Wikipedia: Kina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kina_w_Warszawie"},
-      {"tytul": "Wikipedia: Anna Kotarbińska", "url": "https://pl.wikipedia.org/wiki/Anna_Kotarbińska"},
-      {"tytul": "Wikipedia: Tadeusz Milewski (lekarz)", "url": "https://pl.wikipedia.org/wiki/Tadeusz_Milewski_(lekarz)"}
+      {
+        "tytul": "Wikipedia: Mazowiecki Instytut Kultury",
+        "url": "https://pl.wikipedia.org/wiki/Mazowiecki_Instytut_Kultury"
+      },
+      {
+        "tytul": "Wikipedia: Kina w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kina_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Anna Kotarbińska",
+        "url": "https://pl.wikipedia.org/wiki/Anna_Kotarbińska"
+      },
+      {
+        "tytul": "Wikipedia: Tadeusz Milewski (lekarz)",
+        "url": "https://pl.wikipedia.org/wiki/Tadeusz_Milewski_(lekarz)"
+      }
     ],
     "pewnosc": "srednia",
-    "uwagi": "Datę 1930 w okresie wpisano na podstawie tytułu kina, bez daty w zdaniach: sprawdzić. Zdanie o Jerzym Prokopiuku (urwane) pominięte. Zdanie o laboratorium Milewskiego ma urwaną nazwę instytucji („Ducha”)."
+    "uwagi": "Zdanie o Jerzym Prokopiuku (urwane) pominięte. Zdanie o laboratorium Milewskiego ma urwaną nazwę instytucji („Ducha”)."
   },
   {
     "id": "gmach-szkoly-mazowieckiej-klonowa-16",
@@ -47,7 +73,7 @@
     "lat": 52.2127516,
     "lon": 21.0231036,
     "lokalizacja": "dokladna",
-    "okres": "1912–1940",
+    "okres": "1912–1939",
     "istnieje": null,
     "fakty": [
       "W 1912 roku szkoła Towarzystwa Szkoły Mazowieckiej została przeniesiona do budynku powstałego dla niej przy ul. Klonowej 16; jego architektem był Henryk Gay.",
@@ -61,26 +87,78 @@
     "ciekawostki": [],
     "summary_en": "A school building on Klonowa 16 built in 1912 for the Mazovian School Society, designed by Henryk Gay. Several later notable people, among them an actor and architects, attended the school here.",
     "ludzie": [
-      {"kto": "Henryk Gay", "rola": "architekt budynku z 1912 r.", "wiki": "https://pl.wikipedia.org/wiki/Henryk_Gay"},
-      {"kto": "Stanisław Żaryn (architekt)", "rola": "uczeń Szkoły Ziemi Mazowieckiej", "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Żaryn_(architekt)"},
-      {"kto": "Stefan Mirowski", "rola": "uczeń Gimnazjum TSM przy ul. Klonowej 16 (z bratem Tadeuszem)", "wiki": "https://pl.wikipedia.org/wiki/Stefan_Mirowski"},
-      {"kto": "Jan Świderski (aktor)", "rola": "uczeń Prywatnej Szkoły Powszechnej TSM", "wiki": "https://pl.wikipedia.org/wiki/Jan_Świderski_(aktor)"},
-      {"kto": "Tadeusz Zawadzki (harcmistrz)", "rola": "uczeń Prywatnej Szkoły Powszechnej TSM", "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"},
-      {"kto": "Stanisław Jankowski (architekt)", "rola": "absolwent prywatnego Gimnazjum TSM", "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Jankowski_(architekt)"},
-      {"kto": "Jacek Karpiński", "rola": "uczeń Prywatnego Męskiego Gimnazjum i Liceum TSM w 1939 r.", "wiki": "https://pl.wikipedia.org/wiki/Jacek_Karpiński"}
+      {
+        "kto": "Henryk Gay",
+        "rola": "architekt budynku z 1912 r.",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Żaryn (architekt)",
+        "rola": "uczeń Szkoły Ziemi Mazowieckiej",
+        "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Żaryn_(architekt)"
+      },
+      {
+        "kto": "Stefan Mirowski",
+        "rola": "uczeń Gimnazjum TSM przy ul. Klonowej 16 (z bratem Tadeuszem)",
+        "wiki": "https://pl.wikipedia.org/wiki/Stefan_Mirowski"
+      },
+      {
+        "kto": "Jan Świderski (aktor)",
+        "rola": "uczeń Prywatnej Szkoły Powszechnej TSM",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Świderski_(aktor)"
+      },
+      {
+        "kto": "Tadeusz Zawadzki (harcmistrz)",
+        "rola": "uczeń Prywatnej Szkoły Powszechnej TSM",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"
+      },
+      {
+        "kto": "Stanisław Jankowski (architekt)",
+        "rola": "absolwent prywatnego Gimnazjum TSM",
+        "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Jankowski_(architekt)"
+      },
+      {
+        "kto": "Jacek Karpiński",
+        "rola": "uczeń Prywatnego Męskiego Gimnazjum i Liceum TSM w 1939 r.",
+        "wiki": "https://pl.wikipedia.org/wiki/Jacek_Karpiński"
+      }
     ],
-    "dawne_nazwy": ["Szkoła Ziemi Mazowieckiej", "Towarzystwo Szkoły Mazowieckiej"],
+    "dawne_nazwy": [
+      "Szkoła Ziemi Mazowieckiej",
+      "Towarzystwo Szkoły Mazowieckiej"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Gimnazjum i Liceum Towarzystwa Szkoły Mazowieckiej", "url": "https://pl.wikipedia.org/wiki/Gimnazjum_i_Liceum_Towarzystwa_Szkoły_Mazowieckiej"},
-      {"tytul": "Wikipedia: Stanisław Żaryn (architekt)", "url": "https://pl.wikipedia.org/wiki/Stanisław_Żaryn_(architekt)"},
-      {"tytul": "Wikipedia: Stefan Mirowski", "url": "https://pl.wikipedia.org/wiki/Stefan_Mirowski"},
-      {"tytul": "Wikipedia: Jan Świderski (aktor)", "url": "https://pl.wikipedia.org/wiki/Jan_Świderski_(aktor)"},
-      {"tytul": "Wikipedia: Tadeusz Zawadzki (harcmistrz)", "url": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"},
-      {"tytul": "Wikipedia: Stanisław Jankowski (architekt)", "url": "https://pl.wikipedia.org/wiki/Stanisław_Jankowski_(architekt)"},
-      {"tytul": "Wikipedia: Jacek Karpiński", "url": "https://pl.wikipedia.org/wiki/Jacek_Karpiński"}
+      {
+        "tytul": "Wikipedia: Gimnazjum i Liceum Towarzystwa Szkoły Mazowieckiej",
+        "url": "https://pl.wikipedia.org/wiki/Gimnazjum_i_Liceum_Towarzystwa_Szkoły_Mazowieckiej"
+      },
+      {
+        "tytul": "Wikipedia: Stanisław Żaryn (architekt)",
+        "url": "https://pl.wikipedia.org/wiki/Stanisław_Żaryn_(architekt)"
+      },
+      {
+        "tytul": "Wikipedia: Stefan Mirowski",
+        "url": "https://pl.wikipedia.org/wiki/Stefan_Mirowski"
+      },
+      {
+        "tytul": "Wikipedia: Jan Świderski (aktor)",
+        "url": "https://pl.wikipedia.org/wiki/Jan_Świderski_(aktor)"
+      },
+      {
+        "tytul": "Wikipedia: Tadeusz Zawadzki (harcmistrz)",
+        "url": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"
+      },
+      {
+        "tytul": "Wikipedia: Stanisław Jankowski (architekt)",
+        "url": "https://pl.wikipedia.org/wiki/Stanisław_Jankowski_(architekt)"
+      },
+      {
+        "tytul": "Wikipedia: Jacek Karpiński",
+        "url": "https://pl.wikipedia.org/wiki/Jacek_Karpiński"
+      }
     ],
     "pewnosc": "wysoka",
-    "uwagi": "Okres „1912–1940” złożony z dat z paczki (1912 przeprowadzka; 1939 ostatnia data szkoły). Henryk Gay bez wpisu osobnego w paczce: wiki z tytułu zdania jest domyślne, sprawdzić."
+    "uwagi": "Henryk Gay nie ma w paczce osobnego artykułu (wiki null). Okres 1912–1939 z dat zdań (1912 przeprowadzka; 1939 ostatnia data szkoły)."
   },
   {
     "id": "kamienica-walicow-14",
@@ -93,7 +171,7 @@
     "lat": 52.2342754,
     "lon": 20.9933714,
     "lokalizacja": "dokladna",
-    "okres": "1930–dziś",
+    "okres": "przed 1939–dziś",
     "istnieje": true,
     "fakty": [
       "Rafał Nadolny odmówił wpisania przedwojennej kamienicy przy ul. Waliców 14 do rejestru zabytków, argumentując, że obiekt nie posiada szczególnych wartości.",
@@ -104,20 +182,47 @@
     "ciekawostki": [],
     "summary_en": "A pre-war tenement house on Waliców 14 in Wola, where poet Władysław Szlengel lived. The house was given murals by Włodzimierz Fruczek, and in 2017 and 2018 concerts were held in front of it.",
     "ludzie": [
-      {"kto": "Rafał Nadolny", "rola": "odmówił wpisania kamienicy do rejestru zabytków", "wiki": "https://pl.wikipedia.org/wiki/Rafał_Nadolny"},
-      {"kto": "Włodzimierz Fruczek", "rola": "autor muralu na ślepej ścianie kamienicy", "wiki": "https://pl.wikipedia.org/wiki/Włodzimierz_Fruczek"},
-      {"kto": "Władysław Szlengel", "rola": "mieszkał w tym budynku", "wiki": null}
+      {
+        "kto": "Rafał Nadolny",
+        "rola": "odmówił wpisania kamienicy do rejestru zabytków",
+        "wiki": "https://pl.wikipedia.org/wiki/Rafał_Nadolny"
+      },
+      {
+        "kto": "Włodzimierz Fruczek",
+        "rola": "autor muralu na ślepej ścianie kamienicy",
+        "wiki": "https://pl.wikipedia.org/wiki/Włodzimierz_Fruczek"
+      },
+      {
+        "kto": "Władysław Szlengel",
+        "rola": "mieszkał w tym budynku",
+        "wiki": null
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Włodzimierz Fruczek", "url": "https://pl.wikipedia.org/wiki/Włodzimierz_Fruczek"},
-      {"tytul": "Wikipedia: Rafał Nadolny", "url": "https://pl.wikipedia.org/wiki/Rafał_Nadolny"},
-      {"tytul": "Wikipedia: Dzieła Władysława Szlengla", "url": "https://pl.wikipedia.org/wiki/Dzieła_Władysława_Szlengla"},
-      {"tytul": "Wikipedia: Menachem Kipnis", "url": "https://pl.wikipedia.org/wiki/Menachem_Kipnis"},
-      {"tytul": "Wikipedia: Henryk Wars", "url": "https://pl.wikipedia.org/wiki/Henryk_Wars"}
+      {
+        "tytul": "Wikipedia: Włodzimierz Fruczek",
+        "url": "https://pl.wikipedia.org/wiki/Włodzimierz_Fruczek"
+      },
+      {
+        "tytul": "Wikipedia: Rafał Nadolny",
+        "url": "https://pl.wikipedia.org/wiki/Rafał_Nadolny"
+      },
+      {
+        "tytul": "Wikipedia: Dzieła Władysława Szlengla",
+        "url": "https://pl.wikipedia.org/wiki/Dzieła_Władysława_Szlengla"
+      },
+      {
+        "tytul": "Wikipedia: Menachem Kipnis",
+        "url": "https://pl.wikipedia.org/wiki/Menachem_Kipnis"
+      },
+      {
+        "tytul": "Wikipedia: Henryk Wars",
+        "url": "https://pl.wikipedia.org/wiki/Henryk_Wars"
+      }
     ],
     "pewnosc": "wysoka",
-    "uwagi": "Zdanie „Kamienica przy Waliców 14 do uratowania” to opinia, pominięte. Zdania o Menachemie Kipnisie i Henryku Warsie (mieszkali w kamienicy) urwane; Wars bez daty („i 30”), Kipnis bez treści, więc Wars zostaje w ludziach tylko jako fakt pomocniczy. Nazwa „Kamienica” własna."
+    "uwagi": "Zdanie „Kamienica przy Waliców 14 do uratowania” to opinia, pominięte. Zdania o Menachemie Kipnisie i Henryku Warsie są urwane, pominięte."
   },
   {
     "id": "budynek-past-zielna-39",
@@ -130,7 +235,7 @@
     "lat": 52.2362879,
     "lon": 21.0064185,
     "lokalizacja": "dokladna",
-    "okres": "1910–dziś",
+    "okres": "brak daty w paczce–dziś",
     "istnieje": true,
     "fakty": [
       "Część biur Domu Spotkań z Historią mieści się w historycznym budynku PAST-y przy ul. Zielnej 39.",
@@ -143,23 +248,64 @@
     "ciekawostki": [],
     "summary_en": "The former Cedergren telephone exchange complex at Zielna 39, later the PAST building. Designed by Bronisław Brochwicz-Rogoyski and Izaak Gustaw Clason as the first skyscraper in Warsaw. Stanisław Gąssowski fell in an attack on its main gate on 4 August 1944.",
     "ludzie": [
-      {"kto": "Bronisław Brochwicz-Rogoyski", "rola": "projektant (z Izaakiem Gustawem Clasonem) budynku centrali Cedergrena przy Zielnej 39", "wiki": "https://pl.wikipedia.org/wiki/Bronisław_Brochwicz-Rogoyski"},
-      {"kto": "Izaak Gustaw Clason", "rola": "współprojektant budynku centrali Cedergrena", "wiki": null},
-      {"kto": "Stanisław Gąssowski", "rola": "żołnierz kompanii Zgrupowania Bartkiewicz, odznaczony Krzyżem Walecznych; poległ 4 sierpnia 1944", "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Gąssowski"},
-      {"kto": "Henryk Leliwa-Roycewicz", "rola": "upamiętniony tablicą na budynku PAST-y (2016)", "wiki": "https://pl.wikipedia.org/wiki/Henryk_Leliwa-Roycewicz"},
-      {"kto": "Wacław Lipiński (1896–1949)", "rola": "upamiętniony tablicą na budynku PAST-y (maj 2024, z inicjatywy IPN)", "wiki": "https://pl.wikipedia.org/wiki/Wacław_Lipiński_(1896–1949)"}
+      {
+        "kto": "Bronisław Brochwicz-Rogoyski",
+        "rola": "projektant (z Izaakiem Gustawem Clasonem) budynku centrali Cedergrena przy Zielnej 39",
+        "wiki": "https://pl.wikipedia.org/wiki/Bronisław_Brochwicz-Rogoyski"
+      },
+      {
+        "kto": "Izaak Gustaw Clason",
+        "rola": "współprojektant budynku centrali Cedergrena",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Gąssowski",
+        "rola": "żołnierz kompanii Zgrupowania Bartkiewicz, odznaczony Krzyżem Walecznych; poległ 4 sierpnia 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Gąssowski"
+      },
+      {
+        "kto": "Henryk Leliwa-Roycewicz",
+        "rola": "upamiętniony tablicą na budynku PAST-y (2016)",
+        "wiki": "https://pl.wikipedia.org/wiki/Henryk_Leliwa-Roycewicz"
+      },
+      {
+        "kto": "Wacław Lipiński (1896–1949)",
+        "rola": "upamiętniony tablicą na budynku PAST-y (maj 2024, z inicjatywy IPN)",
+        "wiki": "https://pl.wikipedia.org/wiki/Wacław_Lipiński_(1896–1949)"
+      }
     ],
-    "dawne_nazwy": ["Cedergren", "PAST"],
+    "dawne_nazwy": [
+      "Cedergren",
+      "PAST"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Dom Spotkań z Historią", "url": "https://pl.wikipedia.org/wiki/Dom_Spotkań_z_Historią"},
-      {"tytul": "Wikipedia: Ericsson", "url": "https://pl.wikipedia.org/wiki/Ericsson"},
-      {"tytul": "Wikipedia: Bronisław Brochwicz-Rogoyski", "url": "https://pl.wikipedia.org/wiki/Bronisław_Brochwicz-Rogoyski"},
-      {"tytul": "Wikipedia: Stanisław Gąssowski", "url": "https://pl.wikipedia.org/wiki/Stanisław_Gąssowski"},
-      {"tytul": "Wikipedia: Henryk Leliwa-Roycewicz", "url": "https://pl.wikipedia.org/wiki/Henryk_Leliwa-Roycewicz"},
-      {"tytul": "Wikipedia: Wacław Lipiński (1896–1949)", "url": "https://pl.wikipedia.org/wiki/Wacław_Lipiński_(1896–1949)"}
+      {
+        "tytul": "Wikipedia: Dom Spotkań z Historią",
+        "url": "https://pl.wikipedia.org/wiki/Dom_Spotkań_z_Historią"
+      },
+      {
+        "tytul": "Wikipedia: Ericsson",
+        "url": "https://pl.wikipedia.org/wiki/Ericsson"
+      },
+      {
+        "tytul": "Wikipedia: Bronisław Brochwicz-Rogoyski",
+        "url": "https://pl.wikipedia.org/wiki/Bronisław_Brochwicz-Rogoyski"
+      },
+      {
+        "tytul": "Wikipedia: Stanisław Gąssowski",
+        "url": "https://pl.wikipedia.org/wiki/Stanisław_Gąssowski"
+      },
+      {
+        "tytul": "Wikipedia: Henryk Leliwa-Roycewicz",
+        "url": "https://pl.wikipedia.org/wiki/Henryk_Leliwa-Roycewicz"
+      },
+      {
+        "tytul": "Wikipedia: Wacław Lipiński (1896–1949)",
+        "url": "https://pl.wikipedia.org/wiki/Wacław_Lipiński_(1896–1949)"
+      }
     ],
     "pewnosc": "srednia",
-    "uwagi": "Zdanie o podziale budynku na dwóch najwyższych piętrach (Dom Spotkań z Historią, nazwa urwana) pominięte. Okres „1910” nieznany z paczki: sprawdzić, data początku to 1910 z tytułu hasła Ericssona? Brak potwierdzenia: lepiej wpisać „dziś”. Adres historyczny „Zielna 37/39”."
+    "uwagi": "Brak daty początku w zdaniach. Adres historyczny „Zielna 37/39”. Zdanie o podziale budynku (nazwa urwana) pominięte."
   },
   {
     "id": "blok-policyjny-nowolipki-10",
@@ -172,7 +318,7 @@
     "lat": 52.2455407,
     "lon": 20.9930167,
     "lokalizacja": "dokladna",
-    "okres": "1940–1943",
+    "okres": "1942",
     "istnieje": null,
     "fakty": [
       "21 sierpnia 1942 Izrael Kanał dokonał zamachu na Józefa Szeryńskiego w jego mieszkaniu przy ul. Nowolipki 10.",
@@ -185,21 +331,54 @@
     "ciekawostki": [],
     "summary_en": "A building on Nowolipki 10 in the Warsaw Ghetto, used as a police block. Józef Szeryński lived and died here; he committed suicide in his flat during the January 1943 action. Izrael Kanał shot him here on 21 August 1942. The Nowoczesna café and the Jewish District bank were also here.",
     "ludzie": [
-      {"kto": "Izrael Kanał", "rola": "dokonał zamachu na Józefa Szeryńskiego w jego mieszkaniu 21 sierpnia 1942", "wiki": "https://pl.wikipedia.org/wiki/Izrael_Kanał"},
-      {"kto": "Józef Szeryński", "rola": "mieszkał w bloku policyjnym; popełnił samobójstwo w swoim mieszkaniu podczas akcji styczniowej", "wiki": "https://pl.wikipedia.org/wiki/Józef_Szeryński"},
-      {"kto": "Artur Gold", "rola": "występował w kawiarni „Nowoczesna”", "wiki": "https://pl.wikipedia.org/wiki/Artur_Gold"},
-      {"kto": "Władysław Szpilman", "rola": "rozpoczął karierę pianisty w kawiarni „Nowoczesna”", "wiki": "https://pl.wikipedia.org/wiki/Władysław_Szpilman"}
+      {
+        "kto": "Izrael Kanał",
+        "rola": "dokonał zamachu na Józefa Szeryńskiego w jego mieszkaniu 21 sierpnia 1942",
+        "wiki": "https://pl.wikipedia.org/wiki/Izrael_Kanał"
+      },
+      {
+        "kto": "Józef Szeryński",
+        "rola": "mieszkał w bloku policyjnym; popełnił samobójstwo w swoim mieszkaniu podczas akcji styczniowej",
+        "wiki": "https://pl.wikipedia.org/wiki/Józef_Szeryński"
+      },
+      {
+        "kto": "Artur Gold",
+        "rola": "występował w kawiarni „Nowoczesna”",
+        "wiki": "https://pl.wikipedia.org/wiki/Artur_Gold"
+      },
+      {
+        "kto": "Władysław Szpilman",
+        "rola": "rozpoczął karierę pianisty w kawiarni „Nowoczesna”",
+        "wiki": "https://pl.wikipedia.org/wiki/Władysław_Szpilman"
+      }
     ],
-    "dawne_nazwy": ["Biuro Rozrachunku Bankowego (pierwotnie bank w getcie)"],
+    "dawne_nazwy": [
+      "Biuro Rozrachunku Bankowego (pierwotnie bank w getcie)"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Izrael Kanał", "url": "https://pl.wikipedia.org/wiki/Izrael_Kanał"},
-      {"tytul": "Wikipedia: Józef Szeryński", "url": "https://pl.wikipedia.org/wiki/Józef_Szeryński"},
-      {"tytul": "Wikipedia: Artur Gold", "url": "https://pl.wikipedia.org/wiki/Artur_Gold"},
-      {"tytul": "Wikipedia: Władysław Szpilman", "url": "https://pl.wikipedia.org/wiki/Władysław_Szpilman"},
-      {"tytul": "Wikipedia: Judenrat w Warszawie", "url": "https://pl.wikipedia.org/wiki/Judenrat_w_Warszawie"}
+      {
+        "tytul": "Wikipedia: Izrael Kanał",
+        "url": "https://pl.wikipedia.org/wiki/Izrael_Kanał"
+      },
+      {
+        "tytul": "Wikipedia: Józef Szeryński",
+        "url": "https://pl.wikipedia.org/wiki/Józef_Szeryński"
+      },
+      {
+        "tytul": "Wikipedia: Artur Gold",
+        "url": "https://pl.wikipedia.org/wiki/Artur_Gold"
+      },
+      {
+        "tytul": "Wikipedia: Władysław Szpilman",
+        "url": "https://pl.wikipedia.org/wiki/Władysław_Szpilman"
+      },
+      {
+        "tytul": "Wikipedia: Judenrat w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Judenrat_w_Warszawie"
+      }
     ],
     "pewnosc": "wysoka",
-    "uwagi": "Okres 1940–1943 nie pada w paczce: pozostawiono rok 1942/1943 z dat zdań, sprawdzić. Nazwa „Blok policyjny” z tekstu. Adres z paczki, nie wiadomo z paczki, czy budynek stoi."
+    "uwagi": "Okres z dat zdań (bank w lutym 1942; zamach 21 VIII 1942). Data akcji styczniowej nie pada w paczce."
   },
   {
     "id": "rotunda-dynasy-obozna-1",
@@ -224,18 +403,51 @@
     "ciekawostki": [],
     "summary_en": "The Dynasy rotunda at Oboźna 1/3. It began as a cycling club track leased by the Warsaw Cyclists' Society in 1891, and from 1913 housed the Jewish Theatre founded by Ester Rachel Kamińska and her husband.",
     "ludzie": [
-      {"kto": "Ester Rachel Kamińska", "rola": "założycielka teatru wędrownego (1900) i stałego teatru w rotundzie (1913)", "wiki": "https://pl.wikipedia.org/wiki/Ester_Rachel_Kamińska"},
-      {"kto": "Ida Kamińska", "rola": "zadebiutowała na scenie Teatru Żydowskiego w 1916", "wiki": "https://pl.wikipedia.org/wiki/Ida_Kamińska"},
-      {"kto": "Jerzy Leopold Stiasny", "rola": "mieszkał przy Oboźnej 1 w czasie okupacji pod nazwiskiem Jerzy Krygier", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Leopold_Stiasny"},
-      {"kto": "Tekla Rapacka", "rola": "zamieszkała z córką przy ul. Oboźnej 1 po śmierci męża", "wiki": "https://pl.wikipedia.org/wiki/Tekla_Rapacka"}
+      {
+        "kto": "Ester Rachel Kamińska",
+        "rola": "założycielka teatru wędrownego (1900) i stałego teatru w rotundzie (1913)",
+        "wiki": "https://pl.wikipedia.org/wiki/Ester_Rachel_Kamińska"
+      },
+      {
+        "kto": "Ida Kamińska",
+        "rola": "zadebiutowała na scenie Teatru Żydowskiego w 1916",
+        "wiki": "https://pl.wikipedia.org/wiki/Ida_Kamińska"
+      },
+      {
+        "kto": "Jerzy Leopold Stiasny",
+        "rola": "mieszkał przy Oboźnej 1 w czasie okupacji pod nazwiskiem Jerzy Krygier",
+        "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Leopold_Stiasny"
+      },
+      {
+        "kto": "Tekla Rapacka",
+        "rola": "zamieszkała z córką przy ul. Oboźnej 1 po śmierci męża",
+        "wiki": "https://pl.wikipedia.org/wiki/Tekla_Rapacka"
+      }
     ],
-    "dawne_nazwy": ["Dynasy"],
+    "dawne_nazwy": [
+      "Dynasy"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Ester Rachel Kamińska", "url": "https://pl.wikipedia.org/wiki/Ester_Rachel_Kamińska"},
-      {"tytul": "Wikipedia: Ida Kamińska", "url": "https://pl.wikipedia.org/wiki/Ida_Kamińska"},
-      {"tytul": "Wikipedia: Warszawskie Towarzystwo Cyklistów", "url": "https://pl.wikipedia.org/wiki/Warszawskie_Towarzystwo_Cyklistów"},
-      {"tytul": "Wikipedia: Jerzy Leopold Stiasny", "url": "https://pl.wikipedia.org/wiki/Jerzy_Leopold_Stiasny"},
-      {"tytul": "Wikipedia: Tekla Rapacka", "url": "https://pl.wikipedia.org/wiki/Tekla_Rapacka"}
+      {
+        "tytul": "Wikipedia: Ester Rachel Kamińska",
+        "url": "https://pl.wikipedia.org/wiki/Ester_Rachel_Kamińska"
+      },
+      {
+        "tytul": "Wikipedia: Ida Kamińska",
+        "url": "https://pl.wikipedia.org/wiki/Ida_Kamińska"
+      },
+      {
+        "tytul": "Wikipedia: Warszawskie Towarzystwo Cyklistów",
+        "url": "https://pl.wikipedia.org/wiki/Warszawskie_Towarzystwo_Cyklistów"
+      },
+      {
+        "tytul": "Wikipedia: Jerzy Leopold Stiasny",
+        "url": "https://pl.wikipedia.org/wiki/Jerzy_Leopold_Stiasny"
+      },
+      {
+        "tytul": "Wikipedia: Tekla Rapacka",
+        "url": "https://pl.wikipedia.org/wiki/Tekla_Rapacka"
+      }
     ],
     "pewnosc": "srednia",
     "uwagi": "Zdanie o Tekli Rapackiej mówi o „jej domu” (córki), co wpisano jako córkę Idy Kamińskiej tylko domyślnie: sprawdzić. Istnienie rotundy dziś nieznane z paczki."
@@ -264,21 +476,63 @@
     "ciekawostki": [],
     "summary_en": "A house at Okrąg 2 in Czerniaków, where fierce fighting took place in mid-September 1944. Several insurgents were killed here, and Alicja Gołod-Gołębiowska gave first aid to the wounded in its cellar.",
     "ludzie": [
-      {"kto": "Zbigniew Ocepski", "rola": "poległ 16 września 1944 przy ul. Okrąg 2", "wiki": "https://pl.wikipedia.org/wiki/Zbigniew_Ocepski"},
-      {"kto": "Alicja Gołod-Gołębiowska", "rola": "udzielała pomocy rannym w piwnicy domu, 16 września 1944", "wiki": "https://pl.wikipedia.org/wiki/Alicja_Gołod-Gołębiowska"},
-      {"kto": "Jan Kozubek", "rola": "poległ 14 września 1944 przy ul. Okrąg 2", "wiki": "https://pl.wikipedia.org/wiki/Jan_Kozubek"},
-      {"kto": "Eugeniusz Romański", "rola": "poległ 16 września 1944 w rejonie ul. Okrąg 2", "wiki": "https://pl.wikipedia.org/wiki/Eugeniusz_Romański"},
-      {"kto": "Eugeniusz Weiss", "rola": "poległ najprawdopodobniej 18 września 1944 przy ul. Okrąg 2", "wiki": "https://pl.wikipedia.org/wiki/Eugeniusz_Weiss"},
-      {"kto": "Jan Kurdwanowski", "rola": "walczył o dom przy ul. Okrąg 2 po przejściu kanałami na Czerniaków", "wiki": "https://pl.wikipedia.org/wiki/Jan_Kurdwanowski"}
+      {
+        "kto": "Zbigniew Ocepski",
+        "rola": "poległ 16 września 1944 przy ul. Okrąg 2",
+        "wiki": "https://pl.wikipedia.org/wiki/Zbigniew_Ocepski"
+      },
+      {
+        "kto": "Alicja Gołod-Gołębiowska",
+        "rola": "udzielała pomocy rannym w piwnicy domu, 16 września 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Alicja_Gołod-Gołębiowska"
+      },
+      {
+        "kto": "Jan Kozubek",
+        "rola": "poległ 14 września 1944 przy ul. Okrąg 2",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Kozubek"
+      },
+      {
+        "kto": "Eugeniusz Romański",
+        "rola": "poległ 16 września 1944 w rejonie ul. Okrąg 2",
+        "wiki": "https://pl.wikipedia.org/wiki/Eugeniusz_Romański"
+      },
+      {
+        "kto": "Eugeniusz Weiss",
+        "rola": "poległ najprawdopodobniej 18 września 1944 przy ul. Okrąg 2",
+        "wiki": "https://pl.wikipedia.org/wiki/Eugeniusz_Weiss"
+      },
+      {
+        "kto": "Jan Kurdwanowski",
+        "rola": "walczył o dom przy ul. Okrąg 2 po przejściu kanałami na Czerniaków",
+        "wiki": "https://pl.wikipedia.org/wiki/Jan_Kurdwanowski"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Zbigniew Ocepski", "url": "https://pl.wikipedia.org/wiki/Zbigniew_Ocepski"},
-      {"tytul": "Wikipedia: Alicja Gołod-Gołębiowska", "url": "https://pl.wikipedia.org/wiki/Alicja_Gołod-Gołębiowska"},
-      {"tytul": "Wikipedia: Jan Kozubek", "url": "https://pl.wikipedia.org/wiki/Jan_Kozubek"},
-      {"tytul": "Wikipedia: Eugeniusz Romański", "url": "https://pl.wikipedia.org/wiki/Eugeniusz_Romański"},
-      {"tytul": "Wikipedia: Eugeniusz Weiss", "url": "https://pl.wikipedia.org/wiki/Eugeniusz_Weiss"},
-      {"tytul": "Wikipedia: Jan Kurdwanowski", "url": "https://pl.wikipedia.org/wiki/Jan_Kurdwanowski"}
+      {
+        "tytul": "Wikipedia: Zbigniew Ocepski",
+        "url": "https://pl.wikipedia.org/wiki/Zbigniew_Ocepski"
+      },
+      {
+        "tytul": "Wikipedia: Alicja Gołod-Gołębiowska",
+        "url": "https://pl.wikipedia.org/wiki/Alicja_Gołod-Gołębiowska"
+      },
+      {
+        "tytul": "Wikipedia: Jan Kozubek",
+        "url": "https://pl.wikipedia.org/wiki/Jan_Kozubek"
+      },
+      {
+        "tytul": "Wikipedia: Eugeniusz Romański",
+        "url": "https://pl.wikipedia.org/wiki/Eugeniusz_Romański"
+      },
+      {
+        "tytul": "Wikipedia: Eugeniusz Weiss",
+        "url": "https://pl.wikipedia.org/wiki/Eugeniusz_Weiss"
+      },
+      {
+        "tytul": "Wikipedia: Jan Kurdwanowski",
+        "url": "https://pl.wikipedia.org/wiki/Jan_Kurdwanowski"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord dotyczy domu, nie konkretnego budynku z nazwą. Okres 1944 wynika z dat zdań. Stan obiektu dziś nieznany z paczki."
@@ -294,7 +548,7 @@
     "lat": 52.2313293,
     "lon": 21.0074971,
     "lokalizacja": "dokladna",
-    "okres": "1955–dziś",
+    "okres": "brak daty w paczce–dziś",
     "istnieje": true,
     "fakty": [
       "W Pałacu Kultury i Nauki przy placu Defilad 1 miała siedzibę Centralna Komisja do Spraw Stopni i Tytułów.",
@@ -308,14 +562,29 @@
     "ludzie": [],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Centralna Komisja do Spraw Stopni i Tytułów", "url": "https://pl.wikipedia.org/wiki/Centralna_Komisja_do_Spraw_Stopni_i_Tytułów"},
-      {"tytul": "Wikipedia: Scena Na Woli im. Tadeusza Łomnickiego", "url": "https://pl.wikipedia.org/wiki/Scena_Na_Woli_im._Tadeusza_Łomnickiego"},
-      {"tytul": "Wikipedia: Teatr Dramatyczny im. Gustawa Holoubka", "url": "https://pl.wikipedia.org/wiki/Teatr_Dramatyczny_im._Gustawa_Holoubka"},
-      {"tytul": "Wikipedia: Kina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kina_w_Warszawie"},
-      {"tytul": "Wikipedia: Pomniki granic getta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomniki_granic_getta_w_Warszawie"}
+      {
+        "tytul": "Wikipedia: Centralna Komisja do Spraw Stopni i Tytułów",
+        "url": "https://pl.wikipedia.org/wiki/Centralna_Komisja_do_Spraw_Stopni_i_Tytułów"
+      },
+      {
+        "tytul": "Wikipedia: Scena Na Woli im. Tadeusza Łomnickiego",
+        "url": "https://pl.wikipedia.org/wiki/Scena_Na_Woli_im._Tadeusza_Łomnickiego"
+      },
+      {
+        "tytul": "Wikipedia: Teatr Dramatyczny im. Gustawa Holoubka",
+        "url": "https://pl.wikipedia.org/wiki/Teatr_Dramatyczny_im._Gustawa_Holoubka"
+      },
+      {
+        "tytul": "Wikipedia: Kina w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kina_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Pomniki granic getta w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Pomniki_granic_getta_w_Warszawie"
+      }
     ],
     "pewnosc": "srednia",
-    "uwagi": "Okres 1955 (oddanie PKiN) spoza paczki, wpisano jako dzisiejszy okres z pominięciem daty początku: sprawdzić. Zdanie o granicy getta w jednym miejscu jest wieloznaczne (granica getta a PKiN), przepisano wprost. Rok 1955 nie pada w tekście."
+    "uwagi": "Rok oddania budynku nie pada w paczce; okres bez daty początku. Zdanie o granicy getta jest wieloznaczne, przepisano wprost."
   },
   {
     "id": "gmach-szkoly-chrzanowskiego-smolna-30",
@@ -339,19 +608,54 @@
     "ciekawostki": [],
     "summary_en": "A school building on Smolna 30 built in 1905 in the Art Nouveau style for the private school of General Paweł Chrzanowski, designed by Zenon Chrzanowski. Later it housed several state secondary schools.",
     "ludzie": [
-      {"kto": "Zenon Chrzanowski", "rola": "architekt gmachu z 1905 r.", "wiki": "https://pl.wikipedia.org/wiki/Zenon_Chrzanowski"},
-      {"kto": "Paweł Chrzanowski", "rola": "generał, założyciel prywatnej szkoły w budynku", "wiki": "https://pl.wikipedia.org/wiki/Paweł_Chrzanowski"},
-      {"kto": "Andrzej Kłossowski", "rola": "uczeń Liceum Ogólnokształcącego przy ul. Smolnej 30", "wiki": "https://pl.wikipedia.org/wiki/Andrzej_Kłossowski"},
-      {"kto": "Jerzy Łojek", "rola": "uczeń gimnazjum im. Wojciecha Górskiego przy ul. Smolnej 30; matura 1951", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Łojek"},
-      {"kto": "Zenon Paruszewski", "rola": "nauczyciel wychowania fizycznego w Państwowej Szkole Ogólnokształcącej (1952–1955)", "wiki": "https://pl.wikipedia.org/wiki/Zenon_Paruszewski"}
+      {
+        "kto": "Zenon Chrzanowski",
+        "rola": "architekt gmachu z 1905 r.",
+        "wiki": "https://pl.wikipedia.org/wiki/Zenon_Chrzanowski"
+      },
+      {
+        "kto": "Paweł Chrzanowski",
+        "rola": "generał, założyciel prywatnej szkoły w budynku",
+        "wiki": "https://pl.wikipedia.org/wiki/Paweł_Chrzanowski"
+      },
+      {
+        "kto": "Andrzej Kłossowski",
+        "rola": "uczeń Liceum Ogólnokształcącego przy ul. Smolnej 30",
+        "wiki": "https://pl.wikipedia.org/wiki/Andrzej_Kłossowski"
+      },
+      {
+        "kto": "Jerzy Łojek",
+        "rola": "uczeń gimnazjum im. Wojciecha Górskiego przy ul. Smolnej 30; matura 1951",
+        "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Łojek"
+      },
+      {
+        "kto": "Zenon Paruszewski",
+        "rola": "nauczyciel wychowania fizycznego w Państwowej Szkole Ogólnokształcącej (1952–1955)",
+        "wiki": "https://pl.wikipedia.org/wiki/Zenon_Paruszewski"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Zenon Chrzanowski", "url": "https://pl.wikipedia.org/wiki/Zenon_Chrzanowski"},
-      {"tytul": "Wikipedia: Wolna Szkoła Wojskowa", "url": "https://pl.wikipedia.org/wiki/Wolna_Szkoła_Wojskowa"},
-      {"tytul": "Wikipedia: Andrzej Kłossowski", "url": "https://pl.wikipedia.org/wiki/Andrzej_Kłossowski"},
-      {"tytul": "Wikipedia: Jerzy Łojek", "url": "https://pl.wikipedia.org/wiki/Jerzy_Łojek"},
-      {"tytul": "Wikipedia: Zenon Paruszewski", "url": "https://pl.wikipedia.org/wiki/Zenon_Paruszewski"}
+      {
+        "tytul": "Wikipedia: Zenon Chrzanowski",
+        "url": "https://pl.wikipedia.org/wiki/Zenon_Chrzanowski"
+      },
+      {
+        "tytul": "Wikipedia: Wolna Szkoła Wojskowa",
+        "url": "https://pl.wikipedia.org/wiki/Wolna_Szkoła_Wojskowa"
+      },
+      {
+        "tytul": "Wikipedia: Andrzej Kłossowski",
+        "url": "https://pl.wikipedia.org/wiki/Andrzej_Kłossowski"
+      },
+      {
+        "tytul": "Wikipedia: Jerzy Łojek",
+        "url": "https://pl.wikipedia.org/wiki/Jerzy_Łojek"
+      },
+      {
+        "tytul": "Wikipedia: Zenon Paruszewski",
+        "url": "https://pl.wikipedia.org/wiki/Zenon_Paruszewski"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Nazwa liceum Kłossowskiego urwana w tekście („im. …”). Zdanie o Wolnej Szkole Wojskowej (ucięte) pominięte. Rok 1905 jako data gmachu jest z paczki."
@@ -367,7 +671,7 @@
     "lat": 52.2212242,
     "lon": 21.0106033,
     "lokalizacja": "dokladna",
-    "okres": "1910–dziś",
+    "okres": "1910–1911 (wykaz prac E. Ebera)",
     "istnieje": true,
     "fakty": [
       "27 września 1939 roku w mieszkaniu Stanisława Borowieckiego przy ul. Noakowskiego 12 grono członków Naczelnej Rady Harcerskiej powołało Szare Szeregi.",
@@ -379,19 +683,54 @@
     "ciekawostki": [],
     "summary_en": "A tenement house on Noakowskiego 12 where the Szare Szeregi (Grey Ranks) scouting organisation was founded on 27 September 1939. A plaque on the facade commemorates this since 1989.",
     "ludzie": [
-      {"kto": "Stanisław Borowiecki", "rola": "Szef Głównej Kwatery Męskiej; w jego mieszkaniu powołano Szare Szeregi", "wiki": null},
-      {"kto": "Stefan Rassalski", "rola": "przeniósł się na ul. Noakowskiego 12 po wycofaniu się powstańców z Politechniki", "wiki": "https://pl.wikipedia.org/wiki/Stefan_Rassalski"},
-      {"kto": "Ludwik Borawski", "rola": "mieszkał w domu przy ul. Noakowskiego 12 w czasie wojny", "wiki": "https://pl.wikipedia.org/wiki/Ludwik_Borawski"},
-      {"kto": "Zofia Bratkowska-Szklarska", "rola": "mieszkała przy ul. Noakowskiego 12 (zdanie urwane)", "wiki": "https://pl.wikipedia.org/wiki/Zofia_Bratkowska-Szklarska"},
-      {"kto": "Edward Eber", "rola": "architekt; kamienice przy ul. Noakowskiego 12 i 16 (1910–1911)", "wiki": "https://pl.wikipedia.org/wiki/Edward_Eber"}
+      {
+        "kto": "Stanisław Borowiecki",
+        "rola": "Szef Głównej Kwatery Męskiej; w jego mieszkaniu powołano Szare Szeregi",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Rassalski",
+        "rola": "przeniósł się na ul. Noakowskiego 12 po wycofaniu się powstańców z Politechniki",
+        "wiki": "https://pl.wikipedia.org/wiki/Stefan_Rassalski"
+      },
+      {
+        "kto": "Ludwik Borawski",
+        "rola": "mieszkał w domu przy ul. Noakowskiego 12 w czasie wojny",
+        "wiki": "https://pl.wikipedia.org/wiki/Ludwik_Borawski"
+      },
+      {
+        "kto": "Zofia Bratkowska-Szklarska",
+        "rola": "mieszkała przy ul. Noakowskiego 12 (zdanie urwane)",
+        "wiki": "https://pl.wikipedia.org/wiki/Zofia_Bratkowska-Szklarska"
+      },
+      {
+        "kto": "Edward Eber",
+        "rola": "architekt; kamienice przy ul. Noakowskiego 12 i 16 (1910–1911)",
+        "wiki": "https://pl.wikipedia.org/wiki/Edward_Eber"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Szare Szeregi", "url": "https://pl.wikipedia.org/wiki/Szare_Szeregi"},
-      {"tytul": "Wikipedia: Stefan Rassalski", "url": "https://pl.wikipedia.org/wiki/Stefan_Rassalski"},
-      {"tytul": "Wikipedia: Ludwik Borawski", "url": "https://pl.wikipedia.org/wiki/Ludwik_Borawski"},
-      {"tytul": "Wikipedia: Zofia Bratkowska-Szklarska", "url": "https://pl.wikipedia.org/wiki/Zofia_Bratkowska-Szklarska"},
-      {"tytul": "Wikipedia: Edward Eber", "url": "https://pl.wikipedia.org/wiki/Edward_Eber"}
+      {
+        "tytul": "Wikipedia: Szare Szeregi",
+        "url": "https://pl.wikipedia.org/wiki/Szare_Szeregi"
+      },
+      {
+        "tytul": "Wikipedia: Stefan Rassalski",
+        "url": "https://pl.wikipedia.org/wiki/Stefan_Rassalski"
+      },
+      {
+        "tytul": "Wikipedia: Ludwik Borawski",
+        "url": "https://pl.wikipedia.org/wiki/Ludwik_Borawski"
+      },
+      {
+        "tytul": "Wikipedia: Zofia Bratkowska-Szklarska",
+        "url": "https://pl.wikipedia.org/wiki/Zofia_Bratkowska-Szklarska"
+      },
+      {
+        "tytul": "Wikipedia: Edward Eber",
+        "url": "https://pl.wikipedia.org/wiki/Edward_Eber"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Okres „1910” to data z wykazu prac Ebera, a nie historia budynku: sprawdzić. Zdanie o Zofii Bratkowskiej-Szklarskiej urwane („m.”)."
@@ -419,16 +758,41 @@
     "ciekawostki": [],
     "summary_en": "A building on Noakowskiego 20 used during the occupation and the Warsaw Uprising. The AK radio station Wanda 02 transmitted from here and from Wilcza 27, and dentist Irena Konopacka-Semadeni ran a private practice in her flat.",
     "ludzie": [
-      {"kto": "Anatol Makarenko", "rola": "cichociemny; dowódca plutonu radio KO AK i radiostacji „Wanda 02”", "wiki": "https://pl.wikipedia.org/wiki/Anatol_Makarenko"},
-      {"kto": "Władysław Śmietanko", "rola": "radiotelegrafista radiostacji „Wanda 02”, pracował w budynkach przy Wilczej 27 i Noakowskiego 20", "wiki": "https://pl.wikipedia.org/wiki/Władysław_Śmietanko"},
-      {"kto": "Irena Konopacka-Semadeni", "rola": "prowadziła prywatną praktykę dentystyczną w mieszkaniu przy Noakowskiego 20", "wiki": null},
-      {"kto": "Tadeusz Semadeni", "rola": "mieszkał w czasie okupacji przy ul. Noakowskiego 20", "wiki": null}
+      {
+        "kto": "Anatol Makarenko",
+        "rola": "cichociemny; dowódca plutonu radio KO AK i radiostacji „Wanda 02”",
+        "wiki": "https://pl.wikipedia.org/wiki/Anatol_Makarenko"
+      },
+      {
+        "kto": "Władysław Śmietanko",
+        "rola": "radiotelegrafista radiostacji „Wanda 02”, pracował w budynkach przy Wilczej 27 i Noakowskiego 20",
+        "wiki": "https://pl.wikipedia.org/wiki/Władysław_Śmietanko"
+      },
+      {
+        "kto": "Irena Konopacka-Semadeni",
+        "rola": "prowadziła prywatną praktykę dentystyczną w mieszkaniu przy Noakowskiego 20",
+        "wiki": "https://pl.wikipedia.org/wiki/Irena_Konopacka-Semadeni"
+      },
+      {
+        "kto": "Tadeusz Semadeni",
+        "rola": "mieszkał w czasie okupacji przy ul. Noakowskiego 20",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Semadeni"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Anatol Makarenko", "url": "https://pl.wikipedia.org/wiki/Anatol_Makarenko"},
-      {"tytul": "Wikipedia: Władysław Śmietanko", "url": "https://pl.wikipedia.org/wiki/Władysław_Śmietanko"},
-      {"tytul": "Wikipedia: Cichociemni w powstaniu warszawskim", "url": "https://pl.wikipedia.org/wiki/Cichociemni_w_powstaniu_warszawskim"}
+      {
+        "tytul": "Wikipedia: Anatol Makarenko",
+        "url": "https://pl.wikipedia.org/wiki/Anatol_Makarenko"
+      },
+      {
+        "tytul": "Wikipedia: Władysław Śmietanko",
+        "url": "https://pl.wikipedia.org/wiki/Władysław_Śmietanko"
+      },
+      {
+        "tytul": "Wikipedia: Cichociemni w powstaniu warszawskim",
+        "url": "https://pl.wikipedia.org/wiki/Cichociemni_w_powstaniu_warszawskim"
+      }
     ],
     "pewnosc": "srednia",
     "uwagi": "Zdanie o Tadeuszu Semadenim urwane („m.”). Daty 1940–1944 z dat zdań (praktyka do wybuchu powstania). Stan budynku nieznany."
@@ -455,18 +819,51 @@
     "ciekawostki": [],
     "summary_en": "A building on Śniadeckich 17 that served as a field hospital during the Warsaw Uprising and earlier housed the underground Catholic Liceum Przyszłość. Eugeniusz Truszczyński, a liaison of the Golski armoured battalion, died here on 27 September 1944.",
     "ludzie": [
-      {"kto": "Wacław Auleytner", "rola": "uczeń Liceum Katolickiego TOW „Przyszłość”; nielegalna matura 1940", "wiki": "https://pl.wikipedia.org/wiki/Wacław_Auleytner"},
-      {"kto": "Krystyna Marynowska-Sianożęcka", "rola": "sanitariuszka w szpitalu polowym przy ul. Śniadeckich 17", "wiki": "https://pl.wikipedia.org/wiki/Krystyna_Marynowska-Sianożęcka"},
-      {"kto": "Eugeniusz Truszczyński", "rola": "łącznik 3 batalionu pancernego „Golski”; zmarł z ran 27 września 1944", "wiki": "https://pl.wikipedia.org/wiki/Eugeniusz_Truszczyński"},
-      {"kto": "Czesław Trojanowski", "rola": "uczestnik zdobycia szpitala", "wiki": "https://pl.wikipedia.org/wiki/Czesław_Trojanowski"}
+      {
+        "kto": "Wacław Auleytner",
+        "rola": "uczeń Liceum Katolickiego TOW „Przyszłość”; nielegalna matura 1940",
+        "wiki": "https://pl.wikipedia.org/wiki/Wacław_Auleytner"
+      },
+      {
+        "kto": "Krystyna Marynowska-Sianożęcka",
+        "rola": "sanitariuszka w szpitalu polowym przy ul. Śniadeckich 17",
+        "wiki": "https://pl.wikipedia.org/wiki/Krystyna_Marynowska-Sianożęcka"
+      },
+      {
+        "kto": "Eugeniusz Truszczyński",
+        "rola": "łącznik 3 batalionu pancernego „Golski”; zmarł z ran 27 września 1944",
+        "wiki": null
+      },
+      {
+        "kto": "Czesław Trojanowski",
+        "rola": "uczestnik zdobycia szpitala",
+        "wiki": "https://pl.wikipedia.org/wiki/Czesław_Trojanowski"
+      }
     ],
-    "dawne_nazwy": ["Liceum Katolickie TOW „Przyszłość”"],
+    "dawne_nazwy": [
+      "Liceum Katolickie TOW „Przyszłość”"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 27 września", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_27_września"},
-      {"tytul": "Wikipedia: Batalion „Golski”", "url": "https://pl.wikipedia.org/wiki/Batalion_„Golski”"},
-      {"tytul": "Wikipedia: Wacław Auleytner", "url": "https://pl.wikipedia.org/wiki/Wacław_Auleytner"},
-      {"tytul": "Wikipedia: Krystyna Marynowska-Sianożęcka", "url": "https://pl.wikipedia.org/wiki/Krystyna_Marynowska-Sianożęcka"},
-      {"tytul": "Wikipedia: Czesław Trojanowski", "url": "https://pl.wikipedia.org/wiki/Czesław_Trojanowski"}
+      {
+        "tytul": "Wikipedia: Kalendarium powstania warszawskiego – 27 września",
+        "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_27_września"
+      },
+      {
+        "tytul": "Wikipedia: Batalion „Golski”",
+        "url": "https://pl.wikipedia.org/wiki/Batalion_„Golski”"
+      },
+      {
+        "tytul": "Wikipedia: Wacław Auleytner",
+        "url": "https://pl.wikipedia.org/wiki/Wacław_Auleytner"
+      },
+      {
+        "tytul": "Wikipedia: Krystyna Marynowska-Sianożęcka",
+        "url": "https://pl.wikipedia.org/wiki/Krystyna_Marynowska-Sianożęcka"
+      },
+      {
+        "tytul": "Wikipedia: Czesław Trojanowski",
+        "url": "https://pl.wikipedia.org/wiki/Czesław_Trojanowski"
+      }
     ],
     "pewnosc": "srednia",
     "uwagi": "Zdanie o Batalionie „Golski” (szpitale przy Śniadeckich 17 oraz ul. …) urwane, pominięte. Nazwa obiektu wyprowadzona z opisów szpitala i liceum."
@@ -482,7 +879,7 @@
     "lat": 52.2427711,
     "lon": 21.0177288,
     "lokalizacja": "dokladna",
-    "okres": "1900–dziś",
+    "okres": "1927–dziś (daty z zdań)",
     "istnieje": true,
     "fakty": [
       "Ignacy Paderewski własnym kosztem wybudował przy ul. Karowej 18 specjalny budynek wystawienniczy w stylu wczesnego renesansu florenckiego, zaprojektowany przez Karola Kozłowskiego, dla obrazu „Golgota” Jana Styki.",
@@ -494,19 +891,44 @@
     "ciekawostki": [],
     "summary_en": "Built by Ignacy Paderewski at his own cost to display Jan Styka's painting Golgotha, this building on Karowa 18 later hosted the Ali Baba cabaret and a theatre. Today it houses the Sociology Faculty of the University of Warsaw and a plaque commemorating the Round Table talks.",
     "ludzie": [
-      {"kto": "Ignacy Paderewski", "rola": "ufundował budynek wystawienniczy dla obrazu „Golgota”", "wiki": "https://pl.wikipedia.org/wiki/Ignacy_Jan_Paderewski"},
-      {"kto": "Karol Kozłowski", "rola": "zaprojektował budynek wystawienniczy", "wiki": null}
+      {
+        "kto": "Ignacy Paderewski",
+        "rola": "ufundował budynek wystawienniczy dla obrazu „Golgota”",
+        "wiki": null
+      },
+      {
+        "kto": "Karol Kozłowski",
+        "rola": "zaprojektował budynek wystawienniczy",
+        "wiki": null
+      }
     ],
-    "dawne_nazwy": ["Panorama"],
+    "dawne_nazwy": [
+      "Panorama"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Golgota (obraz Jana Styki)", "url": "https://pl.wikipedia.org/wiki/Golgota_(obraz_Jana_Styki)"},
-      {"tytul": "Wikipedia: Ali Baba (kabaret)", "url": "https://pl.wikipedia.org/wiki/Ali_Baba_(kabaret)"},
-      {"tytul": "Wikipedia: Morskie Oko (teatr)", "url": "https://pl.wikipedia.org/wiki/Morskie_Oko_(teatr)"},
-      {"tytul": "Wikipedia: Okrągły Stół (Polska)", "url": "https://pl.wikipedia.org/wiki/Okrągły_Stół_(Polska)"},
-      {"tytul": "Wikipedia: Wydział Socjologii Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Wydział_Socjologii_Uniwersytetu_Warszawskiego"}
+      {
+        "tytul": "Wikipedia: Golgota (obraz Jana Styki)",
+        "url": "https://pl.wikipedia.org/wiki/Golgota_(obraz_Jana_Styki)"
+      },
+      {
+        "tytul": "Wikipedia: Ali Baba (kabaret)",
+        "url": "https://pl.wikipedia.org/wiki/Ali_Baba_(kabaret)"
+      },
+      {
+        "tytul": "Wikipedia: Morskie Oko (teatr)",
+        "url": "https://pl.wikipedia.org/wiki/Morskie_Oko_(teatr)"
+      },
+      {
+        "tytul": "Wikipedia: Okrągły Stół (Polska)",
+        "url": "https://pl.wikipedia.org/wiki/Okrągły_Stół_(Polska)"
+      },
+      {
+        "tytul": "Wikipedia: Wydział Socjologii Uniwersytetu Warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Wydział_Socjologii_Uniwersytetu_Warszawskiego"
+      }
     ],
     "pewnosc": "srednia",
-    "uwagi": "Rok 1900 w okresie to przybliżenie: w paczce nie ma daty budowy, sprawdzić. Teatr w zdaniu nazwany „Perskie Oko” (w tytule hasła „Morskie Oko”), przepisano jak w zdaniu. Adres Karowa 18 jest dzisiejszy."
+    "uwagi": "Data budowy pawilonu nie pada w paczce. Teatr w zdaniu nazwany „Perskie Oko”, przepisano jak w zdaniu. Adres Karowa 18 jest dzisiejszy."
   },
   {
     "id": "dom-profesorow-politechniki-koszykowa-75",
@@ -519,7 +941,7 @@
     "lat": 52.2214612,
     "lon": 21.0072401,
     "lokalizacja": "dokladna",
-    "okres": "1944–dziś",
+    "okres": "brak daty w paczce–dziś",
     "istnieje": true,
     "fakty": [
       "19 sierpnia 1944 roku, podczas szturmu generalnego na teren Politechniki, Roman Trechciński został rozstrzelany przez Niemców przed swoim domem na ul. Koszykowej 75.",
@@ -530,15 +952,36 @@
     "ciekawostki": [],
     "summary_en": "The Professors' House of the Warsaw University of Technology on Koszykowa 75, part of the university complex. Roman Trechciński was executed by the Germans in front of it on 19 August 1944 during the assault on the campus. A plaque for Anna Smoleńska was unveiled here in 1998.",
     "ludzie": [
-      {"kto": "Roman Trechciński", "rola": "rozstrzelany przez Niemców przed domem na ul. Koszykowej 75 podczas szturmu na Politechnikę, 19 sierpnia 1944", "wiki": "https://pl.wikipedia.org/wiki/Roman_Trechciński"},
-      {"kto": "Anna Smoleńska", "rola": "tablica pamiątkowa na bocznej ścianie Domu Profesorów (1998)", "wiki": "https://pl.wikipedia.org/wiki/Anna_Smoleńska"},
-      {"kto": "Tadeusz Zawadzki (harcmistrz)", "rola": "mieszkał z rodzicami i siostrą w Domu Profesorów", "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"}
+      {
+        "kto": "Roman Trechciński",
+        "rola": "rozstrzelany przez Niemców przed domem na ul. Koszykowej 75 podczas szturmu na Politechnikę, 19 sierpnia 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Roman_Trechciński"
+      },
+      {
+        "kto": "Anna Smoleńska",
+        "rola": "tablica pamiątkowa na bocznej ścianie Domu Profesorów (1998)",
+        "wiki": "https://pl.wikipedia.org/wiki/Anna_Smoleńska"
+      },
+      {
+        "kto": "Tadeusz Zawadzki (harcmistrz)",
+        "rola": "mieszkał z rodzicami i siostrą w Domu Profesorów",
+        "wiki": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Anna Smoleńska", "url": "https://pl.wikipedia.org/wiki/Anna_Smoleńska"},
-      {"tytul": "Wikipedia: Roman Trechciński", "url": "https://pl.wikipedia.org/wiki/Roman_Trechciński"},
-      {"tytul": "Wikipedia: Tadeusz Zawadzki (harcmistrz)", "url": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"}
+      {
+        "tytul": "Wikipedia: Anna Smoleńska",
+        "url": "https://pl.wikipedia.org/wiki/Anna_Smoleńska"
+      },
+      {
+        "tytul": "Wikipedia: Roman Trechciński",
+        "url": "https://pl.wikipedia.org/wiki/Roman_Trechciński"
+      },
+      {
+        "tytul": "Wikipedia: Tadeusz Zawadzki (harcmistrz)",
+        "url": "https://pl.wikipedia.org/wiki/Tadeusz_Zawadzki_(harcmistrz)"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Zdanie o tym, że Roman Trechciński zginął „w czasie powstania” zawiera datę 19 sierpnia 1944 (szturm generalny). Okres 1944 wynika z tej daty."
@@ -554,7 +997,7 @@
     "lat": 52.2299602,
     "lon": 21.0231138,
     "lokalizacja": "dokladna",
-    "okres": "1900–dziś",
+    "okres": "brak daty w paczce–dziś",
     "istnieje": true,
     "fakty": [
       "Gimnazjum, późniejsze VI Liceum im. Tadeusza Reytana, mieściło się na ulicy Książęcej 4.",
@@ -567,11 +1010,17 @@
     "ludzie": [],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: VI Liceum Ogólnokształcące im. Tadeusza Reytana w Warszawie", "url": "https://pl.wikipedia.org/wiki/VI_Liceum_Ogólnokształcące_im._Tadeusza_Reytana_w_Warszawie"},
-      {"tytul": "Wikipedia: Towarowa Giełda Energii", "url": "https://pl.wikipedia.org/wiki/Towarowa_Giełda_Energii"}
+      {
+        "tytul": "Wikipedia: VI Liceum Ogólnokształcące im. Tadeusza Reytana w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/VI_Liceum_Ogólnokształcące_im._Tadeusza_Reytana_w_Warszawie"
+      },
+      {
+        "tytul": "Wikipedia: Towarowa Giełda Energii",
+        "url": "https://pl.wikipedia.org/wiki/Towarowa_Giełda_Energii"
+      }
     ],
     "pewnosc": "srednia",
-    "uwagi": "Rekord jest uboższy: paczka podaje głównie adres szkoły. Dawny wątek „w starej siedzibie” urwany. Rok 1900 orientacyjny, sprawdzić."
+    "uwagi": "Paczka podaje głównie adres szkoły. Dawny wątek „w starej siedzibie” urwany. Data początku nie pada w zdaniach."
   },
   {
     "id": "dom-miodowa-24",
@@ -595,16 +1044,40 @@
     "ciekawostki": [],
     "summary_en": "A house at Miodowa 24 in Old Town where an insurgent first-aid post operated. German forces drove out the staff and killed ten seriously wounded with grenades during the liquidation of the hospitals. Olgierd Ostkiewicz-Rudnicki was killed here on 13 August 1944.",
     "ludzie": [
-      {"kto": "Adina Blady-Szwajger", "rola": "pracowała w punkcie opatrunkowym (zdanie urwane)", "wiki": "https://pl.wikipedia.org/wiki/Adina_Blady-Szwajger"},
-      {"kto": "Olgierd Ostkiewicz-Rudnicki", "rola": "zginął 13 sierpnia 1944 w czasie bombardowania przy ul. Miodowej 24", "wiki": "https://pl.wikipedia.org/wiki/Olgierd_Ostkiewicz-Rudnicki"},
-      {"kto": "Irena Nelkenowa", "rola": "przebywała w domu przy Miodowej 24 w czasie powstania", "wiki": "https://pl.wikipedia.org/wiki/Irena_Nelkenowa"}
+      {
+        "kto": "Adina Blady-Szwajger",
+        "rola": "pracowała w punkcie opatrunkowym (zdanie urwane)",
+        "wiki": "https://pl.wikipedia.org/wiki/Adina_Blady-Szwajger"
+      },
+      {
+        "kto": "Olgierd Ostkiewicz-Rudnicki",
+        "rola": "zginął 13 sierpnia 1944 w czasie bombardowania przy ul. Miodowej 24",
+        "wiki": "https://pl.wikipedia.org/wiki/Olgierd_Ostkiewicz-Rudnicki"
+      },
+      {
+        "kto": "Irena Nelkenowa",
+        "rola": "przebywała w domu przy Miodowej 24 w czasie powstania",
+        "wiki": "https://pl.wikipedia.org/wiki/Irena_Nelkenowa"
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Likwidacja powstańczych szpitali na warszawskiej Starówce", "url": "https://pl.wikipedia.org/wiki/Likwidacja_powstańczych_szpitali_na_warszawskiej_Starówce"},
-      {"tytul": "Wikipedia: Olgierd Ostkiewicz-Rudnicki", "url": "https://pl.wikipedia.org/wiki/Olgierd_Ostkiewicz-Rudnicki"},
-      {"tytul": "Wikipedia: Irena Nelkenowa", "url": "https://pl.wikipedia.org/wiki/Irena_Nelkenowa"},
-      {"tytul": "Wikipedia: Adina Blady-Szwajger", "url": "https://pl.wikipedia.org/wiki/Adina_Blady-Szwajger"}
+      {
+        "tytul": "Wikipedia: Likwidacja powstańczych szpitali na warszawskiej Starówce",
+        "url": "https://pl.wikipedia.org/wiki/Likwidacja_powstańczych_szpitali_na_warszawskiej_Starówce"
+      },
+      {
+        "tytul": "Wikipedia: Olgierd Ostkiewicz-Rudnicki",
+        "url": "https://pl.wikipedia.org/wiki/Olgierd_Ostkiewicz-Rudnicki"
+      },
+      {
+        "tytul": "Wikipedia: Irena Nelkenowa",
+        "url": "https://pl.wikipedia.org/wiki/Irena_Nelkenowa"
+      },
+      {
+        "tytul": "Wikipedia: Adina Blady-Szwajger",
+        "url": "https://pl.wikipedia.org/wiki/Adina_Blady-Szwajger"
+      }
     ],
     "pewnosc": "srednia",
     "uwagi": "Fragment o Adinie Blady-Szwajger urwany, podano tylko adres. Zdanie o Romualdzie Langem (Collegium Nobilium) pominięte: niejasna rola. Adres Miodowa 23 i 24 to sąsiednie rekordy."
@@ -620,7 +1093,7 @@
     "lat": 52.2364618,
     "lon": 21.0042371,
     "lokalizacja": "dokladna",
-    "okres": "1930–1944",
+    "okres": "przed 1939–1944",
     "istnieje": null,
     "fakty": [
       "Do Majera Wolanowskiego należała jedna z najbardziej znanych warszawskich kamienic przy ul. Próżnej 14, na rogu Placu Grzybowskiego.",
@@ -630,18 +1103,39 @@
     "ciekawostki": [],
     "summary_en": "A well-known tenement house at Próżna 14, at the corner of Plac Grzybowski, owned by Majer Wolanowski. During the occupation Guta Kawenoki found shelter here on the Aryan side with the caretaker Ignacy Jabłoński. In the uprising the house was the seat of the 9th company headquarters.",
     "ludzie": [
-      {"kto": "Majer Wolanowski", "rola": "właściciel kamienicy przy ul. Próżnej 14", "wiki": "https://pl.wikipedia.org/wiki/Majer_Wolanowski"},
-      {"kto": "Guta Kawenoki", "rola": "ukrywała się u dozorcy budynku przy Próżnej 14", "wiki": "https://pl.wikipedia.org/wiki/Guta_Kawenoki"},
-      {"kto": "Ignacy Jabłoński", "rola": "dozorca budynku przy ul. Próżnej 14", "wiki": null}
+      {
+        "kto": "Majer Wolanowski",
+        "rola": "właściciel kamienicy przy ul. Próżnej 14",
+        "wiki": "https://pl.wikipedia.org/wiki/Majer_Wolanowski"
+      },
+      {
+        "kto": "Guta Kawenoki",
+        "rola": "ukrywała się u dozorcy budynku przy Próżnej 14",
+        "wiki": "https://pl.wikipedia.org/wiki/Guta_Kawenoki"
+      },
+      {
+        "kto": "Ignacy Jabłoński",
+        "rola": "dozorca budynku przy ul. Próżnej 14",
+        "wiki": null
+      }
     ],
     "dawne_nazwy": [],
     "zrodla": [
-      {"tytul": "Wikipedia: Majer Wolanowski", "url": "https://pl.wikipedia.org/wiki/Majer_Wolanowski"},
-      {"tytul": "Wikipedia: Guta Kawenoki", "url": "https://pl.wikipedia.org/wiki/Guta_Kawenoki"},
-      {"tytul": "Wikipedia: Cichociemni w powstaniu warszawskim", "url": "https://pl.wikipedia.org/wiki/Cichociemni_w_powstaniu_warszawskim"}
+      {
+        "tytul": "Wikipedia: Majer Wolanowski",
+        "url": "https://pl.wikipedia.org/wiki/Majer_Wolanowski"
+      },
+      {
+        "tytul": "Wikipedia: Guta Kawenoki",
+        "url": "https://pl.wikipedia.org/wiki/Guta_Kawenoki"
+      },
+      {
+        "tytul": "Wikipedia: Cichociemni w powstaniu warszawskim",
+        "url": "https://pl.wikipedia.org/wiki/Cichociemni_w_powstaniu_warszawskim"
+      }
     ],
     "pewnosc": "srednia",
-    "uwagi": "Okres 1930–1944 orientacyjny, bez dat w zdaniach: sprawdzić. Zdanie o Guta Kawenoki zaczyna się od urwanego fragmentu. Dane z odkrywcawarszawy pominięto jako źródło cytowane."
+    "uwagi": "Okres przybliżony z dat zdań (okupacja, powstanie); brak dat w zdaniach. Zdanie o Guta Kawenoki zaczyna się od urwanego fragmentu. Dane z odkrywcawarszawy pominięto jako źródło cytowane."
   },
   {
     "id": "pwpw-sanguszki-1",
@@ -666,17 +1160,46 @@
     "ciekawostki": [],
     "summary_en": "The Polish Security Printing Works on Romana Sanguszki 1 in Śródmieście. Taken by insurgents on 2 August 1944 during the Warsaw Uprising and held for 27 days. Today it remains the seat of the PWPW.",
     "ludzie": [
-      {"kto": "Czesław Lech", "rola": "uczestnik zdobywania gmachu PWPW 2 sierpnia 1944", "wiki": "https://pl.wikipedia.org/wiki/Czesław_Lech"},
-      {"kto": "Jerzy Szypowski", "rola": "uczestnik zdobycia i obrony gmachu PWPW (27 dni)", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Szypowski"},
-      {"kto": "Jerzy Bartnik", "rola": "żołnierz AK; uczestnik obrony PWPW", "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Bartnik_(żołnierz_AK)"}
+      {
+        "kto": "Czesław Lech",
+        "rola": "uczestnik zdobywania gmachu PWPW 2 sierpnia 1944",
+        "wiki": "https://pl.wikipedia.org/wiki/Czesław_Lech"
+      },
+      {
+        "kto": "Jerzy Szypowski",
+        "rola": "uczestnik zdobycia i obrony gmachu PWPW (27 dni)",
+        "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Szypowski"
+      },
+      {
+        "kto": "Jerzy Bartnik",
+        "rola": "żołnierz AK; uczestnik obrony PWPW",
+        "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Bartnik_(żołnierz_AK)"
+      }
     ],
-    "dawne_nazwy": ["Państwowa Wytwórnia Papierów Wartościowych"],
+    "dawne_nazwy": [
+      "Państwowa Wytwórnia Papierów Wartościowych"
+    ],
     "zrodla": [
-      {"tytul": "Wikipedia: Polska Wytwórnia Papierów Wartościowych", "url": "https://pl.wikipedia.org/wiki/Polska_Wytwórnia_Papierów_Wartościowych"},
-      {"tytul": "Wikipedia: Kalendarium powstania warszawskiego – 2 sierpnia", "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_2_sierpnia"},
-      {"tytul": "Wikipedia: Czesław Lech", "url": "https://pl.wikipedia.org/wiki/Czesław_Lech"},
-      {"tytul": "Wikipedia: Jerzy Szypowski", "url": "https://pl.wikipedia.org/wiki/Jerzy_Szypowski"},
-      {"tytul": "Wikipedia: Jerzy Bartnik (żołnierz AK)", "url": "https://pl.wikipedia.org/wiki/Jerzy_Bartnik_(żołnierz_AK)"}
+      {
+        "tytul": "Wikipedia: Polska Wytwórnia Papierów Wartościowych",
+        "url": "https://pl.wikipedia.org/wiki/Polska_Wytwórnia_Papierów_Wartościowych"
+      },
+      {
+        "tytul": "Wikipedia: Kalendarium powstania warszawskiego – 2 sierpnia",
+        "url": "https://pl.wikipedia.org/wiki/Kalendarium_powstania_warszawskiego_–_2_sierpnia"
+      },
+      {
+        "tytul": "Wikipedia: Czesław Lech",
+        "url": "https://pl.wikipedia.org/wiki/Czesław_Lech"
+      },
+      {
+        "tytul": "Wikipedia: Jerzy Szypowski",
+        "url": "https://pl.wikipedia.org/wiki/Jerzy_Szypowski"
+      },
+      {
+        "tytul": "Wikipedia: Jerzy Bartnik (żołnierz AK)",
+        "url": "https://pl.wikipedia.org/wiki/Jerzy_Bartnik_(żołnierz_AK)"
+      }
     ],
     "pewnosc": "wysoka",
     "uwagi": "Pominięto rekordy Koszykowej 18 (siedziba ambasady Czech, same zdania o siedzibie) i Krucza 36 (same siedziby ministerstw i firm). Adres w bloku: Romana Sanguszki 1."

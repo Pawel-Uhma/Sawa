@@ -3,19 +3,21 @@
 import type { Leg } from "@sawa/shared";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { type ReactNode, type Ref, useEffect, useRef, useState } from "react";
+import { useT } from "@/features/i18n";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
-import { Attribution, Departures } from "./departures";
-import { ChevronLeftIcon, PinIcon } from "./icons";
-import { Journey } from "./line-badge";
+import { Attribution, Itinerary } from "./departures";
+import { PinIcon } from "./icons";
+import { LiveDot } from "./podcast-controls";
 import { SawaMenuButton } from "./sawa-menu";
 
 /*
  * Ekran trasy na żywo (wybrany wariant A, propozycje w docs/ui/README.md).
  * Sawa sama przechodzi od tematu do tematu z zegarem jazdy, ale słuchacz może ją prowadzić:
  * sterowanie (stop, wstecz, odtwarzanie, dalej, suwak przejażdżki) jest na górze arkusza,
- * więc zwinięty arkusz pokazuje tylko je, a rozwinięty także zapis tego, co Sawa mówi.
+ * więc zwinięty arkusz pokazuje tylko je, a rozwinięty także zapis tego, co Sawa mówi,
+ * i dojazd (jedna lista odcinków, bez powtarzania linii).
  */
 
 /** Fragment strumienia Sawy przypisany do punktu trasy (temat, o którym wtedy mówiła). */
@@ -49,22 +51,6 @@ export type RouteLiveProps = {
 /* Wspólne klocki                                                      */
 /* ------------------------------------------------------------------ */
 
-function BackButton({ onBack, compact }: { onBack: () => void; compact?: boolean }) {
-  return (
-    <button
-      type="button"
-      onClick={onBack}
-      aria-label={compact ? "Zmień plan" : undefined}
-      className={`flex h-10 shrink-0 items-center gap-1 rounded-full bg-tlo-2 text-sm font-bold text-tekst transition-[transform,background-color] hover:bg-mieta-jasna active:scale-[0.96] ${
-        compact ? "w-10 justify-center" : "pl-2.5 pr-3.5"
-      }`}
-    >
-      <ChevronLeftIcon className="size-4" />
-      {!compact && "Zmień plan"}
-    </button>
-  );
-}
-
 function EndPill({ end }: { end: RouteLiveProps["end"] }) {
   if (!end) return null;
   return (
@@ -77,25 +63,6 @@ function EndPill({ end }: { end: RouteLiveProps["end"] }) {
       <PinIcon className="size-4 shrink-0" />
       {end.label}
     </p>
-  );
-}
-
-/** Pulsująca kropka „na żywo”; przy pauzie stoi i szarzeje. */
-function LiveDot({ on }: { on: boolean }) {
-  const reduce = useReducedMotion();
-  return (
-    <span className="relative flex size-2.5 shrink-0">
-      {on && !reduce && (
-        <motion.span
-          className="absolute inset-0 rounded-full bg-koral"
-          animate={{ scale: [1, 2.2], opacity: [0.5, 0] }}
-          transition={{ duration: 1.6, repeat: Number.POSITIVE_INFINITY, ease: "easeOut" }}
-        />
-      )}
-      <span
-        className={`relative size-2.5 rounded-full transition-colors ${on ? "bg-koral" : "bg-tekst-3"}`}
-      />
-    </span>
   );
 }
 
@@ -117,15 +84,21 @@ function LiveText({
   /** Znacznik w miejscu, do którego doszedł głos (do przewijania za nim). */
   edgeRef?: Ref<HTMLSpanElement>;
 }) {
+  const t = useT();
   if (state === "loading" || !text) {
     return (
-      <p className={`animate-pulse text-tekst-3 ${className}`}>Sawa zbiera myśli o tym miejscu…</p>
+      <p className={`animate-pulse text-tekst-3 ${className}`}>
+        {t("Sawa zbiera myśli o tym miejscu…", "Sawa is gathering her thoughts about this place…")}
+      </p>
     );
   }
   if (state === "failed") {
     return (
       <p className={`text-tekst-3 ${className}`}>
-        Tu Sawa milczy. Odezwie się przy następnym miejscu.
+        {t(
+          "Tu Sawa milczy. Odezwie się przy następnym miejscu.",
+          "Sawa is quiet here. She'll speak up at the next place.",
+        )}
       </p>
     );
   }
@@ -161,7 +134,6 @@ export function RouteLive({
   attribution,
   stops,
   activeIndex,
-  onBack,
   isDesktop,
   isPlaying,
   progress,
@@ -171,6 +143,7 @@ export function RouteLive({
   transcript,
   controls,
 }: RouteLiveProps) {
+  const t = useT();
   const waiting = waitSec !== null;
   const reduce = useReducedMotion();
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -205,32 +178,12 @@ export function RouteLive({
     <div className="flex flex-col gap-4">
       {isDesktop && <SawaMenuButton variant="inline" />}
       {controls}
-      <header className="flex items-center gap-3">
-        <BackButton onBack={onBack} compact />
-        <div className="min-w-0 flex-1">
-          <p className="etykieta flex items-center gap-2">
-            <LiveDot on={isPlaying} />
-            {isPlaying
-              ? "Sawa opowiada"
-              : waiting
-                ? "Sawa czeka na pierwsze miejsce"
-                : "Wstrzymane"}
-          </p>
-          <p className="mt-0.5 flex flex-wrap items-center gap-1.5 text-sm text-tekst-2">
-            <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>
-            <Journey legs={legs} />
-          </p>
-        </div>
-      </header>
-
-      <Departures legs={legs} />
-
       <div className="relative">
         <div
           ref={scrollRef}
           onTouchMove={stopFollowing}
           onWheel={stopFollowing}
-          className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-430px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
+          className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-400px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
         >
           <div className="pb-[40%] pt-6">
             {past.map((part) => (
@@ -249,9 +202,11 @@ export function RouteLive({
                   </p>
                 )}
                 {waiting ? (
-                  <p className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em] text-tekst-3">
-                    Sawa odezwie się, gdy dojedziesz do miejsca {stop.name}. Chcesz wcześniej?
-                    Stuknij odtwarzanie.
+                  <p className="text-[15px] leading-relaxed text-tekst-3">
+                    {t(
+                      "Tu pojawi się to, co mówi Sawa. Nie chcesz czekać? Stuknij odtwarzanie.",
+                      "What Sawa says will appear here. Don't want to wait? Tap play.",
+                    )}
                   </p>
                 ) : (
                   <LiveText
@@ -278,13 +233,15 @@ export function RouteLive({
               className="szklo absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full px-3.5 py-2 text-[13px] font-bold"
             >
               <LiveDot on={isPlaying} />
-              Wróć do Sawy
+              {t("Wróć do Sawy", "Back to Sawa")}
             </motion.button>
           )}
         </AnimatePresence>
       </div>
 
       {activeIndex === stops.length - 1 && <EndPill end={end} />}
+
+      <Itinerary legs={legs} duration={formatDuration(durationMin)} />
 
       <Attribution lines={attribution} />
     </div>

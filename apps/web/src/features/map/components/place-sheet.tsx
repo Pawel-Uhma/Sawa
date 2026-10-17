@@ -1,8 +1,9 @@
 import type { Place } from "@sawa/shared";
 import { useState } from "react";
+import { useLang, useT } from "@/features/i18n";
 import { placeTagLabel } from "@/lib/interest-labels";
 import { usePlace } from "../hooks/use-place";
-import { PLACE_KIND_LABELS, placeKindColor } from "../lib/map-style";
+import { placeKindColor, placeKindLabel } from "../lib/map-style";
 
 const FACTS_PREVIEW = 3;
 
@@ -23,16 +24,21 @@ type PlaceSheetProps = {
 
 /** Bottom sheet on phones, side panel from md up. Summary shows at once, details load after. */
 export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
+  const t = useT();
+  const lang = useLang();
   const detail = usePlace(place.id);
   const kind = detail.data?.kind ?? place.kind;
   const tags = detail.data?.interests ?? place.tags ?? [];
-  const kindLabel = kind ? PLACE_KIND_LABELS[kind] : undefined;
+  const kindLabel = kind ? placeKindLabel(kind, lang) : undefined;
   const name = detail.data?.name ?? place.name;
-  const eyebrow = [kindLabel, place.order && `${place.order}. na trasie`].filter(Boolean);
+  const eyebrow = [
+    kindLabel,
+    place.order && t(`${place.order}. na trasie`, `stop ${place.order} on the route`),
+  ].filter(Boolean);
 
   return (
     <section
-      aria-label={name ?? "Miejsce"}
+      aria-label={name ?? t("Miejsce", "Place")}
       className="absolute inset-x-0 bottom-0 z-10 max-h-[50dvh] overflow-y-auto rounded-t-2xl bg-powierzchnia p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-[0_-4px_24px_rgba(0,0,0,0.12)] md:inset-x-auto md:top-4 md:bottom-auto md:left-4 md:max-h-[calc(100dvh-2rem)] md:w-[380px] md:rounded-2xl"
     >
       <div className="flex items-start justify-between gap-3">
@@ -57,7 +63,7 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
         <button
           type="button"
           onClick={onClose}
-          aria-label="Zamknij"
+          aria-label={t("Zamknij", "Close")}
           className="-mt-1 -mr-1 shrink-0 rounded-full p-2 text-tekst-2 hover:bg-tlo-2 hover:text-tekst"
         >
           <svg aria-hidden="true" viewBox="0 0 20 20" className="size-5" fill="currentColor">
@@ -70,7 +76,7 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
         <ul className="mt-3 flex flex-wrap gap-1.5">
           {tags.map((tag) => (
             <li key={tag} className="rounded-full bg-tlo-2 px-2.5 py-1 text-xs text-tekst-2">
-              {placeTagLabel(tag)}
+              {placeTagLabel(tag, lang)}
             </li>
           ))}
         </ul>
@@ -79,13 +85,17 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
       {detail.isPending && <DetailSkeleton />}
       {detail.isError && (
         <p className="mt-4 text-sm text-tekst-2">
-          Nie udało się pobrać szczegółów.{" "}
+          {t("Nie udało się pobrać szczegółów.", "Couldn't load the details.")}{" "}
           <button type="button" className="font-medium underline" onClick={() => detail.refetch()}>
-            Spróbuj ponownie
+            {t("Spróbuj ponownie", "Try again")}
           </button>
         </p>
       )}
-      {detail.data === null && <p className="mt-4 text-sm text-tekst-2">Nie ma takiego miejsca.</p>}
+      {detail.data === null && (
+        <p className="mt-4 text-sm text-tekst-2">
+          {t("Nie ma takiego miejsca.", "There's no such place.")}
+        </p>
+      )}
       {detail.data && <PlaceDetail key={detail.data.id} place={detail.data} />}
     </section>
   );
@@ -98,6 +108,7 @@ function PlaceMeta({ place }: { place: Place }) {
 }
 
 function PlaceDetail({ place }: { place: Place }) {
+  const t = useT();
   const [showAllFacts, setShowAllFacts] = useState(false);
   const photo = place.photos[0];
   const facts = showAllFacts ? place.facts : place.facts.slice(0, FACTS_PREVIEW);
@@ -132,7 +143,9 @@ function PlaceDetail({ place }: { place: Place }) {
               onClick={() => setShowAllFacts((isShown) => !isShown)}
               className="mt-2 text-sm font-medium text-tekst underline"
             >
-              {showAllFacts ? "Pokaż mniej" : `Pokaż wszystkie (${place.facts.length})`}
+              {showAllFacts
+                ? t("Pokaż mniej", "Show less")
+                : t(`Pokaż wszystkie (${place.facts.length})`, `Show all (${place.facts.length})`)}
             </button>
           )}
         </div>
@@ -140,7 +153,9 @@ function PlaceDetail({ place }: { place: Place }) {
 
       {place.sources.length > 0 && (
         <div>
-          <h3 className="text-xs font-medium uppercase tracking-wide text-tekst-2">Źródła</h3>
+          <h3 className="text-xs font-medium uppercase tracking-wide text-tekst-2">
+            {t("Źródła", "Sources")}
+          </h3>
           <ul className="mt-1 space-y-1 text-sm">
             {place.sources.map((source) => (
               <li key={source.id}>

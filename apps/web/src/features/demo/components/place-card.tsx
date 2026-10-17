@@ -3,7 +3,8 @@
 import type { Place } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useEffect, useLayoutEffect, useRef } from "react";
-import { PLACE_KIND_LABELS, placeKindColor } from "@/features/map";
+import { useLang, useT } from "@/features/i18n";
+import { placeKindColor, placeKindLabel } from "@/features/map";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { PlaceStoryState } from "../lib/place-story";
@@ -80,7 +81,7 @@ export function PlaceCardShell({
   });
 
   return (
-    <div className="pointer-events-none absolute inset-x-0 top-0 bottom-[calc(max(1.25rem,env(safe-area-inset-bottom))+64px)] z-20 md:bottom-0">
+    <div className="pointer-events-none absolute inset-x-0 top-0 bottom-[env(safe-area-inset-bottom)] z-20 md:bottom-0">
       <motion.section
         aria-label={label}
         initial={reduce ? { opacity: 0 } : { opacity: 0, y: 56, scale: 0.98 }}
@@ -111,11 +112,12 @@ export function PlaceCardShell({
 }
 
 export function CloseButton({ onClick }: { onClick: () => void }) {
+  const t = useT();
   return (
     <button
       type="button"
       onClick={onClick}
-      aria-label="Zamknij"
+      aria-label={t("Zamknij", "Close")}
       className="flex size-9 shrink-0 items-center justify-center rounded-full bg-tlo-2 text-tekst-2 transition-[transform,background-color] hover:bg-mieta-jasna hover:text-tekst active:scale-[0.92]"
     >
       <svg aria-hidden="true" viewBox="0 0 20 20" className="size-4" fill="currentColor">
@@ -127,7 +129,8 @@ export function CloseButton({ onClick }: { onClick: () => void }) {
 
 /** Rodzaj miejsca w jego kolorze z mapy i okres, np. „miejsce · 1867–1947”. */
 export function KindLine({ place, className = "" }: { place: Place; className?: string }) {
-  const parts = [PLACE_KIND_LABELS[place.kind], place.period].filter(Boolean);
+  const lang = useLang();
+  const parts = [placeKindLabel(place.kind, lang), place.period].filter(Boolean);
   return (
     <p className={`etykieta flex items-center gap-2 ${className}`}>
       <span
@@ -148,13 +151,14 @@ type ListenButtonProps = {
 
 /** „Posłuchaj Sawy”: tło przycisku wypełnia się w miarę opowieści, jak pasek postępu. */
 export function ListenButton({ state, progress, onToggle }: ListenButtonProps) {
+  const t = useT();
   const isPlaying = state === "playing";
   const label = {
-    idle: "Posłuchaj Sawy",
-    loading: "Sawa sobie przypomina…",
-    playing: "Pauza",
-    paused: progress >= 100 ? "Jeszcze raz" : "Słuchaj dalej",
-    failed: "Spróbuj jeszcze raz",
+    idle: t("Posłuchaj Sawy", "Listen to Sawa"),
+    loading: t("Sawa sobie przypomina…", "Sawa is remembering…"),
+    playing: t("Pauza", "Pause"),
+    paused: progress >= 100 ? t("Jeszcze raz", "Play again") : t("Słuchaj dalej", "Keep listening"),
+    failed: t("Spróbuj jeszcze raz", "Try again"),
   }[state];
 
   return (
@@ -179,7 +183,7 @@ export function ListenButton({ state, progress, onToggle }: ListenButtonProps) {
         <span className="max-w-full truncate whitespace-nowrap">{label}</span>
         {state === "idle" && (
           <span className="whitespace-nowrap text-[12px] font-semibold text-white/70">
-            ok. 45 s
+            {t("ok. 45 s", "about 45 s")}
           </span>
         )}
       </span>
@@ -199,10 +203,11 @@ export function cleanFact(fact: string): string {
 }
 
 export function Sources({ place }: { place: Place }) {
+  const t = useT();
   if (place.sources.length === 0) return null;
   return (
     <div>
-      <h3 className="etykieta">Źródła</h3>
+      <h3 className="etykieta">{t("Źródła", "Sources")}</h3>
       <ul className="mt-1.5 space-y-1 text-[13px]">
         {place.sources.map((source) => (
           <li key={source.id}>
@@ -222,10 +227,11 @@ export function Sources({ place }: { place: Place }) {
 }
 
 export function TodayNearby({ place }: { place: Place }) {
+  const t = useT();
   if (place.todayNearby.length === 0) return null;
   return (
     <div>
-      <h3 className="etykieta">Dziś w tym miejscu</h3>
+      <h3 className="etykieta">{t("Dziś w tym miejscu", "Here today")}</h3>
       <ul className="mt-1.5 divide-y divide-tlo-2">
         {place.todayNearby.slice(0, 4).map((item) => (
           <li key={item.placeId}>
@@ -241,7 +247,7 @@ export function TodayNearby({ place }: { place: Place }) {
           </li>
         ))}
       </ul>
-      <p className="mt-1 text-[11px] text-tekst-3">Dane: Google Maps</p>
+      <p className="mt-1 text-[11px] text-tekst-3">{t("Dane: Google Maps", "Data: Google Maps")}</p>
     </div>
   );
 }

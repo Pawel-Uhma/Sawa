@@ -60,6 +60,8 @@
 ## R3 · Frontend i mapa
 
 - [ ] **T-123** Tryb dla dzieci: przełącznik w onboardingu, pole `audience` w kontrakcie, prostsza opowieść Sawy (dalej tylko z faktów), delikatnie o miejscach wojennych; pomysły dodatkowe w issue ([#65](https://github.com/Pawel-Uhma/Sawa/issues/65)) — `R3` (Paweł; prompt to obszar R4)
+- [x] **T-128** Interfejs po angielsku: przełącznik Polski / English w menu i na ekranie powitalnym, `features/i18n` (`useT`, `pick`), wybór w localStorage — `R3` (Paweł, 17.10, 19:10)
+- [ ] **T-129** Opowieści i głos po angielsku: pole `lang` w `StoryRequest` (kontrakt), prompt i TTS w języku interfejsu; web wyśle `useLang()` po dodaniu pola — `R4` (prompt) + `R3`
 
 - [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
@@ -109,7 +111,9 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-50** Scenariusz demo 1,5 min (ścieżka z [10-prd.md](10-prd.md)) i tekst pitcha 5 min — `R2` — 15:00
 - [ ] **T-51** Zaktualizować pitch deck w [pitch/](pitch/) pod MVP — `R2` — 22:00
 - [ ] **T-52** Test na telefonie co 2 h: wszystkie ścieżki z PRD, zgłoszenia w tym pliku (robią wszyscy na zmianę, R2 pilnuje) — `R2` — od 17:00
-- [ ] **T-55** Nagranie wideo demo jako zapas — `R2` — 22:00
+- [ ] **T-55** Nagranie wideo demo jako zapas: nagrywamy ludzi używających aplikacji, nie sam ekran; montaż po działającym deployu — `R2` — dziś w nocy albo jutro rano (spotkanie 17.10 wieczór)
+- [ ] **T-126** Trasa pieszo: zahaczać o punkty (nie linia prosta do nich w przecznicy) i nie wracać tą samą drogą — `R1` (Szczepan, do potwierdzenia) — przed testem na telefonie
+- [ ] **T-127** Sub-kind miejsc w bazie (np. budynki, instytucje), każdy typ z własną ikoną; wpływ na schemat i ikony — `R2` (Jasiek, do potwierdzenia) — przed zamrożeniem
 - [ ] **T-114** Pitch pod „Warszawa 2076” według uwag mentorów (spotkanie 19:30): kto jest odbiorcą, co miasto zyska za 50 lat, dowód, że dane miasta dają wartość; sprawdzić źródło liczby „20% warszawiaków spoza Warszawy”; z gotową prezentacją do Bartka (Play) — `R2` (z T-50). Plan: [pitch/plan-pitchu.md](pitch/plan-pitchu.md) (Paweł, 17.10 w nocy), zadania w §10
 - [ ] **T-53** Opis zakresu użycia AI (z historii git, PR-ów i archiwum `ai-log.md`) i dokumentacja na oddanie (`README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30
 - [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R2` — niedziela 10:30

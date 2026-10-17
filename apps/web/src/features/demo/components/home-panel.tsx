@@ -1,16 +1,9 @@
 "use client";
 
 import type { Travel } from "@sawa/shared";
-import {
-  AnimatePresence,
-  type MotionValue,
-  motion,
-  useAnimationControls,
-  useReducedMotion,
-  useTransform,
-} from "motion/react";
-import Image from "next/image";
+import { AnimatePresence, motion, useAnimationControls, useReducedMotion } from "motion/react";
 import { type CSSProperties, type ReactNode, useLayoutEffect, useRef, useState } from "react";
+import { useT } from "@/features/i18n";
 import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
@@ -18,6 +11,7 @@ import { DURATION_STOPS_MIN } from "../lib/mock-data";
 import type { RideEnd, RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import { ArrowRightIcon, ForwardIcon, LoopIcon, PinIcon, TramIcon, WalkIcon } from "./icons";
+import { SawaHead } from "./logo";
 import { PrimaryButton } from "./primary-button";
 
 type HomePanelProps = {
@@ -50,16 +44,19 @@ function thumbCenter(durationMin: number): string {
 }
 
 const TRAVEL_OPTIONS: ChoiceOption<Travel>[] = [
-  { type: "walk", label: "Pieszo", hint: "spacerem po okolicy", icon: <WalkIcon /> },
-  { type: "transit", label: "Komunikacją", hint: "tramwaj i autobus", icon: <TramIcon /> },
+  { type: "walk", label: "Pieszo", en: { label: "On foot" }, icon: <WalkIcon /> },
+  { type: "transit", label: "Komunikacją", en: { label: "Transit" }, icon: <TramIcon /> },
 ];
 
 const END_OPTIONS: ChoiceOption<RideEndType>[] = [
-  { type: "loop", label: "Wracam tu", hint: "pętla do startu", icon: <LoopIcon /> },
-  { type: "destination", label: "Do celu", hint: "w jedną stronę", icon: <ForwardIcon /> },
+  { type: "loop", label: "Wracam tu", en: { label: "Back here" }, icon: <LoopIcon /> },
+  { type: "destination", label: "Do celu", en: { label: "To a place" }, icon: <ForwardIcon /> },
 ];
 
-/** Ekran główny: czas na suwaku, sposób i koniec trasy jako kafelki z podpisem, co znaczą. */
+/**
+ * Ekran główny: Sawa pyta o czas (suwak), pod spodem dwa podpisane przełączniki, jak jedziesz
+ * i gdzie kończysz. Przycisk powtarza wybór, żeby było jasne, co się wyznaczy.
+ */
 export function HomePanel({
   durationMin,
   onDurationChange,
@@ -78,6 +75,7 @@ export function HomePanel({
   onCollapsedChange,
 }: HomePanelProps) {
   const sawa = useAnimationControls();
+  const t = useT();
   const lastStep = useRef(durationMin);
   const minIndex = minDurationMin === null ? 0 : DURATION_STOPS_MIN.indexOf(minDurationMin);
   const isFastest = fastestMin !== null && durationMin === minDurationMin;
@@ -97,17 +95,32 @@ export function HomePanel({
 
   return (
     <FloatingCard
-      label="Plan przejazdu"
+      label={t("Plan przejazdu", "Ride plan")}
       collapsed={collapsed}
       onCollapsedChange={onCollapsedChange}
       peekPx={64}
-      className="rounded-[28px] px-4 pb-4 pt-3.5 md:rounded-[32px] md:px-6 md:pb-6 md:pt-6"
-      above={(progress) => <SawaAbove progress={progress} onPoke={poke} sawa={sawa} />}
+      className="rounded-[28px] px-4 pb-4 pt-5 md:rounded-[32px] md:px-6 md:pb-6 md:pt-6"
     >
       <Grabber />
-      <div className="flex items-baseline justify-between">
-        <span className="etykieta">Przejażdżka</span>
-        <span className="relative h-9 overflow-hidden md:h-[42px]">
+      <div className="flex items-center gap-2.5">
+        <motion.button
+          type="button"
+          aria-label="Sawa"
+          onClick={poke}
+          animate={sawa}
+          className="size-10 shrink-0 origin-bottom md:size-11"
+        >
+          <SawaHead className="size-full" />
+        </motion.button>
+        <div className="min-w-0 flex-1">
+          <h2 className="truncate text-[18px] font-extrabold leading-tight tracking-[-0.02em] md:text-[20px]">
+            {t("Ile masz czasu?", "How much time do you have?")}
+          </h2>
+          <p className="truncate text-[12.5px] leading-snug text-tekst-2">
+            {t("Ułożę przejazd z opowieściami", "I'll plan a ride full of stories")}
+          </p>
+        </div>
+        <span className="relative h-9 shrink-0 overflow-hidden md:h-[42px]">
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.strong
               key={shownMin}
@@ -124,13 +137,21 @@ export function HomePanel({
       </div>
 
       {isFindingFastest ? (
-        <p className="-mt-1 text-[13px] text-tekst-2">Szukam najszybszej drogi do celu…</p>
+        <p className="mt-2 text-[13px] text-tekst-2">
+          {t("Szukam najszybszej drogi do celu…", "Finding the fastest way there…")}
+        </p>
       ) : (
         fastestMin !== null && (
-          <p className="-mt-1 text-[13px] text-tekst-2">
+          <p className="mt-2 text-[13px] text-tekst-2">
             {isFastest
-              ? "Najszybsza droga do celu. Przesuń, żeby pojechać dłużej i krajoznawczo."
-              : `Krajoznawczo. Najszybciej dojedziesz w ${formatDuration(Math.round(fastestMin))}.`}
+              ? t(
+                  "Najszybsza droga do celu. Przesuń, żeby pojechać dłużej i krajoznawczo.",
+                  "The fastest way there. Slide to take a longer, scenic ride.",
+                )
+              : t(
+                  `Krajoznawczo. Najszybciej dojedziesz w ${formatDuration(Math.round(fastestMin))}.`,
+                  `Scenic. The fastest way takes ${formatDuration(Math.round(fastestMin))}.`,
+                )}
           </p>
         )
       )}
@@ -138,8 +159,8 @@ export function HomePanel({
       <div className="relative">
         <input
           type="range"
-          className="suwak mt-1.5"
-          aria-label="Czas przejażdżki"
+          className="suwak mt-2.5"
+          aria-label={t("Czas przejażdżki", "Ride length")}
           aria-valuetext={formatDuration(durationMin)}
           min={0}
           max={DURATION_STOPS_MIN.length - 1}
@@ -187,7 +208,7 @@ export function HomePanel({
       </div>
 
       <ChoiceGroup
-        label="Jak jedziesz"
+        label={t("Jak jedziesz", "How you travel")}
         options={TRAVEL_OPTIONS}
         value={travel}
         layoutId="kafelek-sposob"
@@ -201,8 +222,18 @@ export function HomePanel({
         onChange={onRideEndChange}
       />
 
-      <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-3 !h-12 md:!h-14">
-        {planning ? "Układam trasę…" : "Wyznacz trasę"}
+      <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-4 !h-12 md:!h-14">
+        {planning ? (
+          t("Układam trasę…", "Planning your route…")
+        ) : (
+          <>
+            {t("Wyznacz trasę", "Plan my route")}
+            <span className="font-semibold opacity-75">
+              · {rideEnd.type === "loop" ? t("pętla", "loop") : t("do celu", "one way")}{" "}
+              {formatDuration(shownMin)}
+            </span>
+          </>
+        )}
         <ArrowRightIcon className="size-5" />
       </PrimaryButton>
       {planError && (
@@ -217,7 +248,7 @@ export function HomePanel({
 type ChoiceOption<T extends string> = {
   type: T;
   label: string;
-  hint: string;
+  en: { label: string };
   icon: ReactNode;
 };
 
@@ -230,7 +261,10 @@ type ChoiceGroupProps<T extends string> = {
   className?: string;
 };
 
-/** Dwa kafelki w rzędzie: ikona, nazwa i jedno zdanie o tym, co wybór znaczy. Zaznaczony jest biały z obwódką. */
+/**
+ * Podpisane pytanie i przełącznik segmentowy (jak w iOS): dwie opcje w jednym torze, zaznaczona
+ * jest białą płytką, która przesuwa się sprężyną. Podpis mówi, że to osobne pytanie.
+ */
 function ChoiceGroup<T extends string>({
   label,
   options,
@@ -239,49 +273,54 @@ function ChoiceGroup<T extends string>({
   onChange,
   className = "",
 }: ChoiceGroupProps<T>) {
+  const t = useT();
   return (
-    <div role="radiogroup" aria-label={label} className={`grid grid-cols-2 gap-2 ${className}`}>
-      {options.map((option) => {
-        const isActive = option.type === value;
-        return (
-          // biome-ignore lint/a11y/useSemanticElements: kafelkowy przełącznik, nie lista radio
-          <button
-            key={option.type}
-            type="button"
-            role="radio"
-            aria-checked={isActive}
-            onClick={() => {
-              if (isActive) return;
-              haptic(4);
-              onChange(option.type);
-            }}
-            className="relative flex min-w-0 items-center gap-2.5 rounded-[16px] bg-tekst/[0.05] px-2.5 py-2 text-left transition-colors duration-200 active:scale-[0.97] md:gap-3 md:px-3 md:py-3"
-          >
-            {isActive && (
-              <motion.span
-                layoutId={layoutId}
-                transition={SPRING}
-                className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12),0_0_0_1.5px_rgba(23,112,111,0.4)]"
-              />
-            )}
-            <span
-              className={`relative grid size-9 shrink-0 place-items-center rounded-[12px] transition-colors duration-200 md:size-12 md:rounded-[14px] [&>svg]:size-[18px] md:[&>svg]:size-6 ${
-                isActive ? "bg-glebia text-white" : "bg-mieta-jasna text-glebia"
+    <div className={className}>
+      <p aria-hidden className="etykieta mb-1.5 px-0.5">
+        {label}
+      </p>
+      <div
+        role="radiogroup"
+        aria-label={label}
+        className="flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
+      >
+        {options.map((option) => {
+          const isActive = option.type === value;
+          return (
+            // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
+            <button
+              key={option.type}
+              type="button"
+              role="radio"
+              aria-checked={isActive}
+              onClick={() => {
+                if (isActive) return;
+                haptic(4);
+                onChange(option.type);
+              }}
+              className={`relative flex h-10 min-w-0 flex-1 items-center justify-center gap-2 rounded-[11px] text-[15px] font-bold tracking-[-0.01em] transition-colors duration-200 active:scale-[0.97] md:h-11 ${
+                isActive ? "text-tekst" : "text-tekst-2"
               }`}
             >
-              {option.icon}
-            </span>
-            <span className="relative min-w-0">
-              <span className="block truncate text-[15px] font-bold leading-tight tracking-[-0.01em] text-tekst md:text-[16px]">
-                {option.label}
+              {isActive && (
+                <motion.span
+                  layoutId={layoutId}
+                  transition={SPRING}
+                  className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.14),0_0_0_0.5px_rgba(16,43,42,0.06)]"
+                />
+              )}
+              <span
+                className={`relative transition-colors duration-200 [&>svg]:size-[18px] ${
+                  isActive ? "text-glebia" : ""
+                }`}
+              >
+                {option.icon}
               </span>
-              <span className="block truncate text-[12px] leading-tight text-tekst-2 md:text-[13px]">
-                {option.hint}
-              </span>
-            </span>
-          </button>
-        );
-      })}
+              <span className="relative truncate">{t(option.label, option.en.label)}</span>
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -292,14 +331,15 @@ type RideEndPickerProps = {
   onChange: (end: RideEnd) => void;
 };
 
-/** Koniec trasy: kafelki, a przy „Do celu” pole wyszukiwania i podpowiedź o mapie. */
+/** Koniec trasy: przełącznik, a przy „Do celu” pole wyszukiwania i podpowiedź o mapie. */
 function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) {
   const destination = rideEnd.type === "destination" ? rideEnd : null;
+  const t = useT();
 
   return (
-    <div className="mt-2">
+    <div className="mt-3">
       <ChoiceGroup
-        label="Gdzie kończysz"
+        label={t("Gdzie kończysz", "Where you finish")}
         options={END_OPTIONS}
         value={rideEnd.type}
         layoutId="kafelek-koniec"
@@ -320,10 +360,13 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
             <p className="mt-2 flex min-w-0 items-center gap-1.5 text-[13px] text-tekst-2">
               <PinIcon className="size-4 shrink-0 text-glebia" />
               <span className="truncate">
-                Cel: <span className="font-semibold text-tekst">{destination.name}</span>
+                {t("Cel", "Destination")}:{" "}
+                <span className="font-semibold text-tekst">{destination.name}</span>
               </span>
             </p>
-            <p className="mt-1.5 text-xs text-tekst-3">Albo stuknij w mapę, żeby wybrać punkt.</p>
+            <p className="mt-1.5 text-xs text-tekst-3">
+              {t("Albo stuknij w mapę, żeby wybrać punkt.", "Or tap the map to pick a point.")}
+            </p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -334,6 +377,7 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
 /** Pole „Dokąd jedziesz?”: miejsce z Google Places po nazwie, wynik od razu staje się celem. */
 function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
   const [text, setText] = useState("");
+  const t = useT();
   const { results, isSearching, isError, hasQuery } = useDestinationSearch(text);
 
   return (
@@ -344,8 +388,8 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
           type="search"
           value={text}
           onChange={(event) => setText(event.target.value)}
-          placeholder="Dokąd jedziesz?"
-          aria-label="Dokąd jedziesz"
+          placeholder={t("Dokąd jedziesz?", "Where are you going?")}
+          aria-label={t("Dokąd jedziesz", "Where are you going")}
           enterKeyHint="search"
           autoComplete="off"
           className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
@@ -355,7 +399,7 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
         {hasQuery && (
           <AutoHeight key="wyniki">
             <ul
-              aria-label="Wyniki"
+              aria-label={t("Wyniki", "Results")}
               className="mt-1.5 overflow-hidden rounded-[14px] bg-powierzchnia"
             >
               {results.map((result) => (
@@ -377,10 +421,16 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
               {results.length === 0 && (
                 <li className="px-3 py-2 text-[13px] text-tekst-3">
                   {isSearching
-                    ? "Szukam…"
+                    ? t("Szukam…", "Searching…")
                     : isError
-                      ? "Nie udało się wyszukać. Wybierz cel na mapie."
-                      : "Nie znalazłam takiego miejsca w Warszawie."}
+                      ? t(
+                          "Nie udało się wyszukać. Wybierz cel na mapie.",
+                          "Search failed. Pick a destination on the map.",
+                        )
+                      : t(
+                          "Nie znalazłam takiego miejsca w Warszawie.",
+                          "I couldn't find that place in Warsaw.",
+                        )}
                 </li>
               )}
             </ul>
@@ -421,62 +471,6 @@ function AutoHeight({ children }: { children: ReactNode }) {
       className="overflow-hidden"
     >
       <div ref={innerRef}>{children}</div>
-    </motion.div>
-  );
-}
-
-type SawaAboveProps = {
-  progress: MotionValue<number>;
-  onPoke: () => void;
-  sawa: ReturnType<typeof useAnimationControls>;
-};
-
-/** Sawa i dymek nad kartą. Przy zwijaniu karty znikają szybciej niż karta jedzie w dół. */
-function SawaAbove({ progress, onPoke, sawa }: SawaAboveProps) {
-  const opacity = useTransform(progress, [0, 0.5], [1, 0]);
-  const scale = useTransform(progress, [0, 0.5], [1, 0.9]);
-
-  return (
-    <motion.div
-      style={{ opacity, scale }}
-      className="pointer-events-none relative h-[120px] origin-bottom md:h-[132px]"
-    >
-      <motion.button
-        type="button"
-        aria-label="Sawa"
-        onClick={onPoke}
-        initial={{ y: 70, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ...SPRING, delay: 0.12 }}
-        className="pointer-events-auto absolute -bottom-[34px] left-1 w-[124px] origin-bottom md:w-[136px]"
-      >
-        <motion.div animate={sawa} className="origin-bottom">
-          <Image
-            src="/sawa-32.png"
-            alt=""
-            width={568}
-            height={862}
-            priority
-            draggable={false}
-            className="h-auto w-full drop-shadow-[0_10px_14px_rgba(16,43,42,0.22)]"
-          />
-        </motion.div>
-      </motion.button>
-
-      <motion.div
-        initial={{ opacity: 0, scale: 0.85 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ ...SPRING, delay: 0.24 }}
-        style={{ transformOrigin: "0% 100%" }}
-        className="szklo absolute bottom-6 left-[130px] right-1 rounded-[20px_20px_20px_6px] px-4 py-3 md:left-[142px]"
-      >
-        <p className="text-[19px] font-extrabold leading-tight tracking-[-0.02em]">
-          Ile masz dziś czasu?
-        </p>
-        <p className="mt-0.5 text-[13px] leading-snug text-tekst-2">
-          Ułożę przejazd i opowiem, co mijasz za oknem.
-        </p>
-      </motion.div>
     </motion.div>
   );
 }

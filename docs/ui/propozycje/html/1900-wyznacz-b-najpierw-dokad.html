@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Wyznacz B · najpierw dokąd</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .pole { display: flex; align-items: center; gap: 10px; height: 50px; padding: 0 12px 0 14px; border-radius: 16px; background: #fff;
+    box-shadow: 0 0 0 2px var(--glebia); font-size: 16px; font-weight: 700; }
+  .pole > svg { width: 20px; height: 20px; color: var(--koral); flex: none; }
+  .pole span { flex: 1; }
+  .pole i { width: 24px; height: 24px; border-radius: 50%; background: rgba(16,43,42,.08); display: grid; place-items: center; color: var(--tekst-2); }
+  .pole i svg { width: 14px; height: 14px; }
+  .alt { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 13.5px; font-weight: 700; color: var(--glebia); }
+  .alt svg { width: 16px; height: 16px; }
+  .info { margin-top: 12px; padding: 10px 12px; border-radius: 14px; background: var(--mieta-jasna); font-size: 13px; color: var(--glebia-ciemna); line-height: 1.4; }
+  .info b { font-weight: 800; }
+  .presety div.najszybciej { flex: 1.35; font-size: 12.5px; flex-direction: column; line-height: 1.1; display: flex; justify-content: center; align-items: center; }
+  .presety div.najszybciej small { font-size: 10px; font-weight: 600; opacity: .7; }
+  .rzad { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
+  .rzad .seg { flex: 1; }
+  .cel { position: absolute; z-index: 5; display: flex; align-items: center; gap: 6px; padding: 4px 10px 4px 4px; border-radius: 16px; background: #fff;
+    box-shadow: 0 4px 12px rgba(16,43,42,.16); font-size: 12.5px; font-weight: 800; }
+  .cel b { width: 22px; height: 22px; border-radius: 50%; background: var(--koral); }
+</style></head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora"><div class="logo szklo">sawa<i>.</i></div></div>
+
+  <div class="karta">
+    <div class="uchwyt"></div>
+    <div class="podpis" style="margin-top:0">Dokąd jedziesz?</div>
+    <div class="pole" data-ikona="pin"><span>Stare Miasto</span><i data-ikona="x"></i></div>
+    <div class="alt" data-ikona="petla">Albo pętla i powrót tutaj</div>
+
+    <div class="info">Najszybciej dojedziesz w <b>22 min</b> (tramwaj 20). Masz więcej czasu? Sawa pojedzie naokoło, przez ciekawsze miejsca.</div>
+
+    <div class="podpis">Ile masz czasu</div>
+    <div class="presety">
+      <div class="najszybciej">22 min<small>najszybciej</small></div><div>45 min</div><div class="on">1 h</div><div>1,5 h</div><div>2 h</div>
+    </div>
+
+    <div class="rzad">
+      <div class="seg"><div data-ikona="pieszo">Pieszo</div><div class="on" data-ikona="tramwaj">Komunikacją</div></div>
+    </div>
+
+    <div class="przycisk">Jedź do Starego Miasta <small>· 1 h</small></div>
+  </div>
+
+  <div class="zakladki szklo"></div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script><script src="_wyznacz.js"></script>
+<script>
+  const CEL = [21.0128, 52.2497];
+  const m = sawaMapa('mapa', { zoom: 13 });
+  m.fitBounds([JA, CEL], { padding: { top: 130, bottom: 580, left: 70, right: 120 }, duration: 0 });
+  m.on('load', () => {
+    m.addSource('linia', { type: 'geojson', data: { type: 'Feature', geometry: { type: 'LineString', coordinates: [JA, [20.993, 52.2465], [21.0035, 52.2508], CEL] } } });
+    m.addLayer({ id: 'linia', type: 'line', source: 'linia', layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#17706F', 'line-width': 4, 'line-dasharray': [1, 1.6] } });
+  });
+  const d = document.createElement('div'); d.className = 'cel'; d.innerHTML = '<b></b>Stare Miasto';
+  new maplibregl.Marker({ element: d, anchor: 'left', offset: [-15, 0] }).setLngLat(CEL).addTo(m);
+</script>
+</body></html>

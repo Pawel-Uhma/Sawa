@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useT } from "@/features/i18n";
 import { setThemePreference, useTheme } from "../hooks/use-theme";
 
 const ICON_SPRING = { type: "spring", bounce: 0.3, duration: 0.45 } as const;
@@ -10,6 +11,7 @@ const ICON_SPRING = { type: "spring", bounce: 0.3, duration: 0.45 } as const;
  * "Auto" (follow the system) stays in the full ThemeSwitch in the Sawa menu.
  */
 export function ThemeToggleButton({ className = "" }: { className?: string }) {
+  const t = useT();
   const theme = useTheme();
   const isReducedMotion = useReducedMotion();
   const isDark = theme === "dark";
@@ -19,7 +21,11 @@ export function ThemeToggleButton({ className = "" }: { className?: string }) {
     <button
       type="button"
       onClick={() => setThemePreference(isDark ? "light" : "dark")}
-      aria-label={isDark ? "Włącz jasny motyw" : "Włącz ciemny motyw"}
+      aria-label={
+        isDark
+          ? t("Włącz jasny motyw", "Switch to light theme")
+          : t("Włącz ciemny motyw", "Switch to dark theme")
+      }
       className={`relative flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-powierzchnia active:scale-90 active:bg-powierzchnia ${className}`}
     >
       <AnimatePresence initial={false} mode="popLayout">

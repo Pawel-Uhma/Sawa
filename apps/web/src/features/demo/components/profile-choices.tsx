@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
+import { useT } from "@/features/i18n";
 import { SPRING } from "../lib/device";
 import { type Choice, INTERESTS, interestIcon } from "../lib/onboarding";
 
@@ -15,6 +16,7 @@ type ChoiceListProps = {
 };
 
 export function ChoiceList({ label, options, value, onPick }: ChoiceListProps) {
+  const t = useT();
   return (
     <div role="radiogroup" aria-label={label} className="flex flex-col gap-3">
       {options.map((option) => {
@@ -46,8 +48,10 @@ export function ChoiceList({ label, options, value, onPick }: ChoiceListProps) {
               />
             </motion.span>
             <span className="flex min-w-0 flex-1 flex-col">
-              <span className="text-base font-bold md:text-lg">{option.label}</span>
-              <span className="text-sm text-tekst-2">{option.hint}</span>
+              <span className="text-base font-bold md:text-lg">
+                {t(option.label, option.en.label)}
+              </span>
+              <span className="text-sm text-tekst-2">{t(option.hint, option.en.hint)}</span>
             </span>
             <Check on={isOn} />
           </motion.button>
@@ -63,8 +67,12 @@ type InterestPickerProps = {
 };
 
 export function InterestPicker({ picked, onToggle }: InterestPickerProps) {
+  const t = useT();
   return (
-    <ul className="grid grid-cols-2 gap-2.5 md:gap-3" aria-label="Zainteresowania">
+    <ul
+      className="grid grid-cols-2 gap-2.5 md:gap-3"
+      aria-label={t("Zainteresowania", "Interests")}
+    >
       {INTERESTS.map((item) => {
         const isOn = picked.includes(item.key);
         return (
@@ -96,9 +104,11 @@ export function InterestPicker({ picked, onToggle }: InterestPickerProps) {
                 <Check on={isOn} />
               </span>
               <span className="flex flex-col gap-0.5">
-                <span className="text-base font-bold leading-tight md:text-lg">{item.label}</span>
+                <span className="text-base font-bold leading-tight md:text-lg">
+                  {t(item.label, item.en.label)}
+                </span>
                 <span className="text-[13px] leading-snug text-tekst-2 md:text-sm">
-                  {item.hint}
+                  {t(item.hint, item.en.hint)}
                 </span>
               </span>
             </motion.button>

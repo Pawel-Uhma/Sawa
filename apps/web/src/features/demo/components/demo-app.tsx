@@ -4,6 +4,7 @@ import { HACKATHON_VENUE, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { type Lang, pick, useLang } from "@/features/i18n";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { useDemoDrive } from "../lib/demo-drive";
@@ -15,6 +16,7 @@ import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/on
 import { isAt, useRideClock } from "../lib/ride-clock";
 import {
   CUSTOM_DESTINATION_NAME,
+  CUSTOM_DESTINATION_NAME_EN,
   DESTINATION_PRESETS,
   type RideEnd,
   type RideEndType,
@@ -28,9 +30,13 @@ import { ProfileModal, type ProfileStep } from "./profile-modal";
 import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
 import { type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
+import { SawaSpeaking } from "./sawa-speaking";
 import { SawaTab } from "./sawa-tab";
-import { type Tab, TabBar } from "./tab-bar";
 import { TopBar } from "./top-bar";
+
+// Ekrany nad mapą. Paska zakładek nie ma: Przejażdżki i Sawa są w menu pod logo,
+// a gdy Sawa mówi poza trasą, do jej ekranu prowadzi pigułka w rogu (SawaSpeaking).
+type Tab = "map" | "rides" | "sawa";
 
 // Mapa Antka (features/map). MapLibre potrzebuje window i WebGL, więc tylko w przeglądarce.
 const SawaMap = dynamic(() => import("@/features/map").then((mod) => mod.SawaMap), {
@@ -58,6 +64,7 @@ const DEMO_DURATION_MIN = 90;
 
 export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const isStage = scenario === "stage";
+  const lang = useLang();
   const isDesktop = useIsDesktop();
   const isWide = useIsWide();
   const [stage, setStage] = useState<Stage>(isStage ? "map" : "onboarding");
@@ -118,13 +125,22 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     } catch {
       setPlanError(
         start.status === "located"
-          ? "Nie udało się ułożyć trasy stąd. Może w pobliżu nie ma przystanku? Spróbuj startu spod 42 Warsaw w menu Sawy."
-          : "Nie udało się ułożyć trasy. Spróbuj jeszcze raz.",
+          ? pick(
+              lang,
+              "Nie udało się ułożyć trasy stąd. Może w pobliżu nie ma przystanku? Spróbuj startu spod 42 Warsaw w menu Sawy.",
+              "Couldn't plan a route from here. Maybe there's no stop nearby? Try starting from 42 Warsaw in the Sawa menu.",
+            )
+          : pick(
+              lang,
+              "Nie udało się ułożyć trasy. Spróbuj jeszcze raz.",
+              "Couldn't plan a route. Please try again.",
+            ),
       );
     } finally {
       setPlanning(false);
     }
   }, [
+    lang,
     origin,
     start.status,
     durationMin,
@@ -224,7 +240,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     }
     if (isPlaceOpen) return { top: isRoute ? 88 : 120, right: 0, bottom: placeCoverPx, left: 0 };
     if (isRoute) return { top: 88, right: 0, bottom: sheetCoverPx, left: 0 };
-    return { top: 120, right: 0, bottom: panelCollapsed ? 200 : destination ? 560 : 480, left: 0 };
+    return { top: 88, right: 0, bottom: panelCollapsed ? 96 : destination ? 470 : 380, left: 0 };
   }, [
     isDesktop,
     isWide,
@@ -311,11 +327,20 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
         setTab("map");
         setStage("route");
       },
+      onOpenRides: () => {
+        setStage("map");
+        setTab("rides");
+      },
+      onOpenSawa: () => {
+        setStage("map");
+        setPanelCollapsed(false);
+        setTab("sawa");
+      },
       onRestart: restart,
       rememberedPlaces: Object.keys(memory.places).length,
       onForget: forgetAll,
       startMode: start.mode,
-      startLabel: startLabel(start.status),
+      startLabel: startLabel(start.status, lang),
       onStartModeChange: start.setMode,
     }),
     [
@@ -328,6 +353,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       start.mode,
       start.status,
       start.setMode,
+      lang,
     ],
   );
 
@@ -347,7 +373,11 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               onMapClick={
                 isHome && destination
                   ? (point) =>
-                      changeRideEnd({ type: "destination", name: CUSTOM_DESTINATION_NAME, point })
+                      changeRideEnd({
+                        type: "destination",
+                        name: pick(lang, CUSTOM_DESTINATION_NAME, CUSTOM_DESTINATION_NAME_EN),
+                        point,
+                      })
                   : undefined
               }
               activeStopId={isRoute ? activeStop?.id : undefined}
@@ -393,12 +423,13 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 key="rides"
                 profile={profile}
                 origin={origin}
-                originLabel={startLabel(start.status)}
+                originLabel={startLabel(start.status, lang)}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
                 rideEnd={rideEnd}
                 travel={travel}
                 lastRoute={route}
+                onClose={() => setTab("map")}
                 onOpenLastRoute={() => {
                   setTab("map");
                   setStage("route");
@@ -421,13 +452,14 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 places={memory.places}
                 onPrev={() => playStop(activeIndex - 1)}
                 onNext={() => playStop(activeIndex + 1)}
+                onClose={() => setTab("map")}
               />
             )}
             {isRoute && (
               <RouteSheet
                 key="route"
                 durationMin={durationMin}
-                end={planned ? routeEnd(planned, rideEnd) : null}
+                end={planned ? routeEnd(planned, rideEnd, lang) : null}
                 legs={planned?.legs ?? []}
                 attribution={planned?.attribution ?? []}
                 stops={route}
@@ -461,12 +493,14 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
           )}
 
           <AnimatePresence>
-            {stage === "map" && (
-              <TabBar
-                key="tabs"
-                active={tab}
-                onChange={setTab}
-                speaking={player.isPlaying && player.text !== null}
+            {stage === "map" && tab !== "sawa" && player.isPlaying && player.text !== null && (
+              <SawaSpeaking
+                key="mowi"
+                place={activeStop?.name ?? null}
+                onOpen={() => {
+                  setPanelCollapsed(false);
+                  setTab("sawa");
+                }}
               />
             )}
           </AnimatePresence>
@@ -499,15 +533,29 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
 }
 
 /** Podpis końca trasy w arkuszu; gdy planer nie dojechał do celu albo nie zamknął pętli, mówi to wprost. */
-function routeEnd(route: Route, end: RideEnd): { label: string; reached: boolean } {
+function routeEnd(route: Route, end: RideEnd, lang: Lang): { label: string; reached: boolean } {
   switch (end.type) {
     case "loop":
       return route.endsAtStart
-        ? { label: "Wracasz na start", reached: true }
-        : { label: "Nie udało się wrócić na start w tym czasie", reached: false };
+        ? { label: pick(lang, "Wracasz na start", "Back to the start"), reached: true }
+        : {
+            label: pick(
+              lang,
+              "Nie udało się wrócić na start w tym czasie",
+              "Couldn't get back to the start in this time",
+            ),
+            reached: false,
+          };
     case "destination":
       return route.endsAtDestination
-        ? { label: `Do celu: ${end.name}`, reached: true }
-        : { label: `Nie udało się dojechać do celu (${end.name}) w tym czasie`, reached: false };
+        ? { label: pick(lang, `Do celu: ${end.name}`, `To: ${end.name}`), reached: true }
+        : {
+            label: pick(
+              lang,
+              `Nie udało się dojechać do celu (${end.name}) w tym czasie`,
+              `Couldn't reach ${end.name} in this time`,
+            ),
+            reached: false,
+          };
   }
 }
