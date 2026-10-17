@@ -36,6 +36,8 @@ export type SearchOptions = {
   loopBeamWidth: number;
   /** Shortest ride on one leg: shorter legs only add waiting to fill the budget. */
   minLegRideSec: number;
+  /** Transfers may walk this far to another stop group (straight line). */
+  walkTransferM: number;
 };
 
 export const DEFAULT_SEARCH_OPTIONS: SearchOptions = {
@@ -53,6 +55,7 @@ export const DEFAULT_SEARCH_OPTIONS: SearchOptions = {
   loopMinBudgetShare: 0.8,
   loopBeamWidth: 24,
   minLegRideSec: 180,
+  walkTransferM: 300,
 };
 
 export type ChosenLeg = {
@@ -63,6 +66,10 @@ export type ChosenLeg = {
   alightElapsedSec: number;
   /** Boarding time comes from the ZTM timetable, not from the half-headway estimate. */
   realDeparture?: boolean;
+  /** Live delay of the vehicle to board (seconds, from its position), already in the times. */
+  delaySec?: number;
+  /** Walk from the previous leg's stop to another stop group before boarding (transfer). */
+  walkBeforeSec?: number;
 };
 
 export type CollectedPlace = {
@@ -110,6 +117,8 @@ type Context = {
   nearEnd: (stopId: string) => boolean;
   /** Seconds on foot from a stop to the end point (0 without one). */
   walkToEnd: (stopId: string) => number;
+  /** Other stop groups within walking distance for a transfer, with the walk in seconds. */
+  nearbyGroups: (groupId: string) => NearbyGroup[];
   /** Fixed end: seconds to the end point per stop group (see return-times.ts). */
   endTimes: Map<string, number>;
 };
@@ -162,12 +171,81 @@ function originStates(input: SearchInput, opts: SearchOptions): State[] {
  * Whether another leg can start at this stop group: a different line, or in a loop also
  * another variant of the same line (turning back the way you came).
  */
-function canTransferAt(network: Network, stopId: string, pattern: Pattern, loop: boolean): boolean {
-  const groupId = network.stops.get(stopId)?.groupId;
-  const visits = groupId ? network.visitsByGroup.get(groupId) : undefined;
-  return (visits ?? []).some((v) =>
-    loop ? v.patternId !== pattern.id : network.patterns.get(v.patternId)?.line !== pattern.line,
+function canTransferAt(
+  network: Network,
+  groupIds: string[],
+  pattern: Pattern,
+  loop: boolean,
+): boolean {
+  return groupIds.some((groupId) =>
+    (network.visitsByGroup.get(groupId) ?? []).some((v) =>
+      loop ? v.patternId !== pattern.id : network.patterns.get(v.patternId)?.line !== pattern.line,
+    ),
   );
+}
+
+type NearbyGroup = { groupId: string; walkSec: number };
+
+const groupsCache = new WeakMap<Pattern, ReadonlySet<string>>();
+
+/** Stop groups a pattern calls at. */
+function groupsOf(network: Network, pattern: Pattern): ReadonlySet<string> {
+  let groups = groupsCache.get(pattern);
+  if (!groups) {
+    groups = new Set(pattern.stops.flatMap((s) => network.stops.get(s.stopId)?.groupId ?? []));
+    groupsCache.set(pattern, groups);
+  }
+  return groups;
+}
+
+/**
+ * Stop groups worth walking to after riding `pattern`: near `groupId` but not served by the
+ * pattern itself (there the rider would simply stay on).
+ */
+function walkTransfers(ctx: Context, network: Network, groupId: string, pattern: Pattern) {
+  const served = groupsOf(network, pattern);
+  return ctx.nearbyGroups(groupId).filter((n) => !served.has(n.groupId));
+}
+/** Per network and radius: computed once, the network never changes. */
+const nearbyCache = new WeakMap<Network, Map<string, Map<string, NearbyGroup[]>>>();
+
+/** Stop groups within `radiusM` of each group (by its first platform), cached per network. */
+function nearbyGroupsOf(network: Network, radiusM: number, walkSpeedMps: number) {
+  const key = `${radiusM}:${walkSpeedMps}`;
+  const byKey = nearbyCache.get(network) ?? new Map<string, Map<string, NearbyGroup[]>>();
+  nearbyCache.set(network, byKey);
+  const cached = byKey.get(key);
+  if (cached) return cached;
+  const positions = new Map<string, LatLng>();
+  for (const stop of network.stops.values()) {
+    if (!positions.has(stop.groupId)) positions.set(stop.groupId, stop.position);
+  }
+  // Grid cells about `radiusM` wide, so only neighbouring cells are compared.
+  const cellDeg = radiusM / 111_320;
+  const cellOf = (p: LatLng) => [Math.floor(p.lat / cellDeg), Math.floor(p.lng / (cellDeg * 1.6))];
+  const cells = new Map<string, string[]>();
+  for (const [groupId, p] of positions) {
+    const key = cellOf(p).join(",");
+    cells.set(key, [...(cells.get(key) ?? []), groupId]);
+  }
+  const result = new Map<string, NearbyGroup[]>();
+  for (const [groupId, p] of positions) {
+    const [cy, cx] = cellOf(p) as [number, number];
+    const near: NearbyGroup[] = [];
+    for (let dy = -1; dy <= 1; dy++) {
+      for (let dx = -1; dx <= 1; dx++) {
+        for (const other of cells.get(`${cy + dy},${cx + dx}`) ?? []) {
+          if (other === groupId) continue;
+          const distanceM = haversineM(p, positions.get(other) as LatLng);
+          if (distanceM <= radiusM)
+            near.push({ groupId: other, walkSec: distanceM / walkSpeedMps });
+        }
+      }
+    }
+    result.set(groupId, near);
+  }
+  byKey.set(key, result);
+  return result;
 }
 
 /**
@@ -196,10 +274,21 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
   const { network } = input;
   const { opts, minSec, maxSec } = ctx;
   const groupId = ctx.groupOf(state.stopId);
-  const visits = (groupId && network.visitsByGroup.get(groupId)) || [];
   const isLastLeg = state.legs.length + 1 >= opts.maxLegs;
   const legIndex = state.legs.length;
   const children: State[] = [];
+  // Board here, or after a transfer also at a stop group a short walk away.
+  const lastLeg = state.legs[legIndex - 1];
+  const lastPattern = lastLeg && network.patterns.get(lastLeg.patternId);
+  const boardings = groupId
+    ? [
+        { groupId, walkSec: 0 },
+        ...(lastPattern ? walkTransfers(ctx, network, groupId, lastPattern) : []),
+      ]
+    : [];
+  const visits = boardings.flatMap(({ groupId: g, walkSec }) =>
+    (network.visitsByGroup.get(g) ?? []).map((visit) => ({ ...visit, walkSec })),
+  );
 
   for (const visit of visits) {
     const pattern = network.patterns.get(visit.patternId) as Pattern;
@@ -214,7 +303,7 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
       : sameLine.length > 0;
     if (used || visit.index === pattern.stops.length - 1) continue;
 
-    const waitSec = pattern.headwaySec / 2 + (legIndex > 0 ? opts.transferSec : 0);
+    const waitSec = pattern.headwaySec / 2 + (legIndex > 0 ? opts.transferSec + visit.walkSec : 0);
     const boardElapsedSec = state.elapsedSec + waitSec;
     const hits = input.hitsByPattern.get(pattern.id) ?? [];
     let hitIndex = hits.findIndex((h) => h.atSec > board.atSec);
@@ -263,8 +352,21 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
           : timeToEnd(ctx, stop.stopId);
       if (alightElapsedSec + backSec > maxSec) continue; // cannot reach the end in time
 
+      // On a free ride, a transfer that waits longer than it rides only fills the time. Loops
+      // and rides to a destination may need short legs to get there (or out and back).
+      if (!ctx.fixedEnd && legIndex > 0 && stop.atSec - board.atSec < waitSec) continue;
+
       const finishes = alightElapsedSec + backSec >= minSec && (!ctx.fixedEnd || near);
-      const transfers = !isLastLeg && canTransferAt(network, stop.stopId, pattern, ctx.loop);
+      const alightGroup = ctx.groupOf(stop.stopId);
+      const transfers =
+        !isLastLeg &&
+        !!alightGroup &&
+        canTransferAt(
+          network,
+          [alightGroup, ...walkTransfers(ctx, network, alightGroup, pattern).map((n) => n.groupId)],
+          pattern,
+          ctx.loop,
+        );
       const terminus = j === pattern.stops.length - 1;
       if (!finishes && !transfers && !terminus) continue;
 
@@ -279,6 +381,7 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
             patternId: pattern.id,
             boardIndex: visit.index,
             alightIndex: j,
+            ...(visit.walkSec > 0 ? { walkBeforeSec: visit.walkSec } : {}),
             boardElapsedSec,
             alightElapsedSec,
           },
@@ -299,16 +402,22 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
 
 /**
  * The best open states, diversified so the beam is not filled with near-copies:
- * free rides keep a few per last variant, rides with a fixed end one per end stop group.
+ * free rides keep a few per last variant (one per stop it ends at), rides with a fixed end
+ * one per end stop group.
  */
 function selectBeam(states: State[], cmp: (a: State, b: State) => number, ctx: Context): State[] {
   const cap = ctx.fixedEnd ? 1 : ctx.opts.maxStatesPerPattern;
+  const groupOf = (s: State) => ctx.groupOf(s.stopId) ?? s.stopId;
+  const patternOf = (s: State) => s.legs[s.legs.length - 1]?.patternId ?? "";
+  // Near-copies (the same variant to the same stop, boarded elsewhere): keep the one with more
+  // places, then the one that gets there first and so has more time left.
+  const candidates = ctx.fixedEnd
+    ? states
+    : bestPerEnd(states, (s) => `${patternOf(s)}>${groupOf(s)}`);
   const perKey = new Map<string, number>();
   const beam: State[] = [];
-  for (const s of [...states].sort(cmp)) {
-    const key = ctx.fixedEnd
-      ? (ctx.groupOf(s.stopId) ?? s.stopId)
-      : (s.legs[s.legs.length - 1]?.patternId ?? "");
+  for (const s of [...candidates].sort(cmp)) {
+    const key = ctx.fixedEnd ? groupOf(s) : patternOf(s);
     const n = perKey.get(key) ?? 0;
     if (n >= cap) continue;
     perKey.set(key, n + 1);
@@ -316,6 +425,21 @@ function selectBeam(states: State[], cmp: (a: State, b: State) => number, ctx: C
     if (beam.length >= ctx.opts.beamWidth) break;
   }
   return beam;
+}
+
+function bestPerEnd(states: State[], endOf: (s: State) => string): State[] {
+  const best = new Map<string, State>();
+  for (const s of states) {
+    const key = endOf(s);
+    const b = best.get(key);
+    const better =
+      !b ||
+      s.score > b.score ||
+      (s.score === b.score && s.elapsedSec < b.elapsedSec) ||
+      (s.score === b.score && s.elapsedSec === b.elapsedSec && s.key < b.key);
+    if (better) best.set(key, s);
+  }
+  return [...best.values()];
 }
 
 function toRide(s: State, ctx: Context, input: SearchInput): Ride {
@@ -392,6 +516,8 @@ export function planRide(input: SearchInput, options: Partial<SearchOptions> = {
     groupOf,
     nearOrigin: near(originGroups, input.origin),
     nearEnd: end ? near(endGroups, end) : () => false,
+    nearbyGroups: (g) =>
+      nearbyGroupsOf(network, opts.walkTransferM, opts.walkSpeedMps).get(g) ?? [],
     walkToEnd: (stopId) => {
       const stop = network.stops.get(stopId);
       return end && stop ? haversineM(stop.position, end) / opts.walkSpeedMps : 0;

@@ -17,7 +17,9 @@ export function applyDepartures(
     const prev = out.legs[i - 1];
     const leg = out.legs[i];
     if (!leg) break;
-    const atStopSec = prev ? prev.alightElapsedSec + transferSec : out.walkSec;
+    const atStopSec = prev
+      ? prev.alightElapsedSec + transferSec + (leg.walkBeforeSec ?? 0)
+      : out.walkSec;
     const real = departuresSec[i]
       ?.filter((s) => s >= atStopSec)
       .reduce((a, b) => Math.min(a, b), Number.POSITIVE_INFINITY);

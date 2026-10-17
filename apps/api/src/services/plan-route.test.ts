@@ -12,7 +12,7 @@ import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import { createRoutePlanner } from "./plan-route";
-import type { DepartureSource, WalkPathSource } from "./ports";
+import type { DepartureSource, LiveBoardingSource, WalkPathSource } from "./ports";
 
 // Integration test on the committed data files (real Warsaw network and places).
 const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
@@ -121,7 +121,8 @@ describe("route planner on real data", () => {
     const walkSec = (route.legs[0]?.durationMin ?? 0) * 60;
     for (const p of route.places) {
       // Places on the walk come before boarding; the rest are on ride legs.
-      expect(route.legs[p.legIndex]?.mode === "walk").toBe(p.etaSec <= walkSec + 1);
+      // `durationMin` is rounded to 0.1 min (6 s).
+      expect(route.legs[p.legIndex]?.mode === "walk").toBe(p.etaSec <= walkSec + 6);
     }
   });
 
@@ -284,5 +285,53 @@ describe("route planner on real data", () => {
     };
     const route = await createRoutePlanner({ transit, places, walkPaths }).plan(request, NOW);
     expect(route).toEqual(await planner.plan(request, NOW));
+  });
+
+  it.each([
+    30, 60, 90,
+  ])("never transfers to ride shorter than the wait on a free %i-minute ride", async (durationMin) => {
+    const route = await planner.plan(
+      { origin: { lat: 52.2297, lng: 20.9719 }, durationMin, interests: ["historical"] },
+      NOW,
+    );
+    // Half the headway is at least 1 min; with the 2-min transfer that is over 3 min.
+    for (const leg of rideLegs(route).slice(1)) expect(leg.durationMin).toBeGreaterThan(3);
+  });
+
+  describe("live delay of the first vehicle", () => {
+    const REQUEST = {
+      origin: HACKATHON_VENUE,
+      durationMin: 60,
+      interests: ["historical" as const],
+    };
+    /** The vehicle reaches the boarding stop `sec` after the planned departure. */
+    const late = (sec: number): LiveBoardingSource => ({
+      boardAtMs: async (leg) => Date.parse(leg.departAt) + sec * 1000,
+    });
+    const firstRide = (route: Route) => rideLegs(route)[0];
+
+    it("moves the ride by the delay and credits the city's data", async () => {
+      const onTime = await createRoutePlanner({ transit, places }).plan(REQUEST, NOW);
+      const delayed = await createRoutePlanner({ transit, places, live: late(240) }).plan(
+        REQUEST,
+        NOW,
+      );
+      expect(firstRide(delayed)?.delaySec).toBe(240);
+      const shiftMs =
+        Date.parse(firstRide(delayed)?.departAt ?? "") -
+        Date.parse(firstRide(onTime)?.departAt ?? "");
+      expect(shiftMs).toBe(240_000);
+      expect(delayed.attribution.some((a) => a.includes("dane.um.warszawa.pl"))).toBe(true);
+    });
+
+    it.each([
+      ["no live estimate", { boardAtMs: async () => undefined }],
+      ["a delay too large to trust", late(45 * 60)],
+      ["a difference within the noise", late(10)],
+      ["a vehicle gone before the rider gets there", late(-30 * 60)],
+    ] as const)("keeps the timetable for %s", async (_, live) => {
+      const route = await createRoutePlanner({ transit, places, live }).plan(REQUEST, NOW);
+      expect(firstRide(route)?.delaySec).toBeUndefined();
+    });
   });
 });

@@ -1,11 +1,12 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 19:10 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 19:40 (Szczepan, z agentem)
 
 - 16:45 (Paweł, z agentem R3): pojazdy na mapie (T-100, issue #30) w gałęzi `r3/pojazdy-na-zywo`: hook co 10 s, ikony tramwaju i autobusu z `public/icons/`, płynny ruch w `requestAnimationFrame`. Typecheck, lint i testy zielone; zmergowane do `main` (PR, typecheck, lint i testy zielone). Do sprawdzenia na mapie z `WAW_TOKEN`.
 
 ## Teraz
 
+- R1 (Szczepan, 19:40): czasy na żywo (T-108): odjazd z rozkładu ZTM dla każdego odcinka i opóźnienie pierwszego pojazdu z pozycji (`Leg.delaySec`); trasa z danymi miasta ma ich podpis (T-95); `/health` mówi, czy graf GTFS jest na dziś (w niedzielę rano przebudować, T-18). Słabe punkty planera (T-109): bez dobijania czasu czekaniem, przesiadki pieszo do 300 m. Odcinki po ulicach zostają z T-106 Jaśka. **Produkcja:** `WAW_TOKEN` jest, ale zapytania do API miasta z Railway padają (szczegóły w T-17). **Dla R3:** issues #43 (T-110) i #44 (T-111).
 - 17:05 (Antek, R3): ciemny motyw (T-105). W menu Sawy grupa „Wygląd”: Jasny / Ciemny / Auto (`features/theme`, wybór w localStorage, Auto idzie za systemem). Ciemne są mapa (podkład OpenFreeMap `dark`, warstwy, kontrolki), karta miejsca i mgiełka. **Dla Pawła:** dopisałem jedną grupę w `sawa-menu.tsx`; tokeny w `globals.css` mają już wersję ciemną, ale działa ona tylko wewnątrz klasy `.motyw`, bo ekrany demo mają wpisane `bg-white` i hexy (tekst z tokenów zrobiłby się jasny na jasnym). Po przejściu ekranów na tokeny (`bg-powierzchnia`, `bg-tlo-2`) klasa `.motyw` idzie na `<body>` i ciemne jest wszystko. `sawa-32.png` poprawiona: białe pola pod pachami są przezroczyste. Ciemna ikonka: `icons/icon-*-dark.png`, favicon idzie za motywem systemu.
 
 - Jasiek (16:57, R2 z agentem, za zgodą R1): T-106. Odcinki `walk` idą po ulicach i chodnikach: planer liczy jak dotąd (prosto × 1,3), a potem `Leg.lngLats` każdego odcinka pieszego bierze z OSRM (profil pieszy, `WALK_ROUTER_URL`, domyślnie FOSSGIS, bez klucza, timeout 3 s, przy awarii proste odcinki). Czasy i `etaSec` bez zmian. **Dla R3:** mapa rysuje to bez zmian w kodzie; w T-102 interpoluj po długości łamanej, nie po indeksie punktu.
@@ -93,7 +94,6 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 | Dziennik AI: wyłączyć hook i na koniec opisać użycie AI (§4 ust. 4), czy zostawić | zespół, R2 (T-53) | [spotkania/2026-10-17-1330-postep-i-podzial.md](spotkania/2026-10-17-1330-postep-i-podzial.md) |
 | Planer: ile miejsc na trasę (30 min daje teraz 120) | R1 | [spotkania/2026-10-17-1330-postep-i-podzial.md](spotkania/2026-10-17-1330-postep-i-podzial.md) |
 | Kto prezentuje, jeśli Ala nie dojedzie (zdalnie przez FaceTime?) | zespół | [spotkania/2026-10-17-1330-postep-i-podzial.md](spotkania/2026-10-17-1330-postep-i-podzial.md) |
-| Toalety: brak zbioru w portalu, OSM czy rezygnacja | R1 | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | Tryb „z wysiadaniem” (muzea): MVP czy po MVP | zespół | [10-prd.md](10-prd.md) |
 | Scraping muzeów i wystaw pod zainteresowania | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | API Bielika: gdzie hostowane, limity; zapasowy LLM | R4 | [05-plan-architektury.md](05-plan-architektury.md) |
@@ -107,6 +107,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 ## Ostatnie decyzje
 
+- 17.10, 19:40: toalety (T-05) poza MVP: brak zbioru w portalu. Kalendarz i pogoda (T-12) poza MVP, R1 nie robi. Rozstrzygnął Szczepan (R1).
 - 17.10, 16:54: najkrótsza przejażdżka to 5 min (`MIN_DURATION_MIN`, wcześniej 30). Krótkie trasy mogą być samym spacerem (T-79). Nowość miejsca (`heard`, `HEARD_FLOOR` w `score.ts`) od Pawła zaakceptowana. Zdecydował Szczepan (R1).
 - 17.10, 13:37: zainteresowania to 4 ogólne kategorie `historical`, `cultural`, `sports`, `nature` (`packages/shared/src/interests.ts`, PR #7); szczegółowe tagi zostają w danych. Zastępuje listę 8 kluczy z [13-plan-bazy.md §5](13-plan-bazy.md). Zdecydował Szczepan (R1).
 
