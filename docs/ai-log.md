@@ -231,3 +231,106 @@
 > -
 > -**AI:** Wybrany awatar to 32. Z niego paleta (Głębia #17706F, Mięta #8ED1B5, Koral #F2755F) i fo
 
+
+**AI:** Przystosowałem repo do pracy 5 osób z agentami: mapa w `docs/README.md`, `docs/stan.md`, `docs/todo.md` (zadania z tagami R1–R5), `docs/zespol.md` (git user.name → rola), karty ról w `docs/role/` (R1–R5). Dodałem hook `SessionStart` (`.claude/hooks/session-start.sh`), który podaje agentowi rolę i jego zadania, oraz sekcję „Praca zespołowa” w `CLAUDE.md`. Zaktualizowałem tabelę ról w `docs/06-plan-dnia.md`. Role nie są jeszcze przypisane do osób (decyzja zespołu, wpisy „do ustalenia”).
+
+### 2026-10-17 11:26 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  .claude/settings.json | 11 +++++++++++
+>  CLAUDE.md             | 11 ++++++++++-
+>  docs/06-plan-dnia.md  | 13 ++++++++-----
+>  docs/ai-log.md        |  2 ++
+>  4 files changed, 31 insertions(+), 6 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/.claude/settings.json b/.claude/settings.json
+> index 5c72ba2..f099d19 100644
+> --- a/.claude/settings.json
+> +++ b/.claude/settings.json
+> @@ -1,5 +1,16 @@
+>  {
+>    "hooks": {
+> +    "SessionStart": [
+> +      {
+> +        "hooks": [
+> +          {
+> +            "type": "command",
+> +            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/session-start.sh 2>/dev/null || true",
+> +            "timeout": 10
+> +          }
+> +        ]
+> +      }
+> +    ],
+>      "UserPromptSubmit": [
+>        {
+>          "hooks": [
+> diff --git a/CLAUDE.md b/CLAUDE.md
+> index badf863..560f292 100644
+> --- a/CLAUDE.md
+> +++ b/CLAUDE.md
+> @@ -1,6 +1,15 @@
+>  # Warsaw Open Data Hackathon 2026
+>  
+> -Repozytorium zespołu (4 osoby) na hackathon 17–18.10.2026 w 42 Warsaw. Dokumentacja jest w `docs/`, zacznij od `docs/README.md`.
+> +Repozytorium zespołu (5 osób, każda z własnym agentem) na hackathon 17–18.10.2026 w 42 Warsaw. Dokumentacja jest w `docs/`, zacznij od `docs/README.md`.
+> +
+> +## Praca zespołowa: jak agent się odnajduje
+> +
+> +- **Start sesji:** hook `.claude/hooks/session-start.sh` podaje Ci rolę według `git config user.name` (wiersz w `docs/zespol.md`), kartę roli z `docs/role/` i otwarte zadania z `docs/todo.md`. Jeśli roli nie ma, zapytaj użytkownika, jaka jest jego rola, i zaproponuj wpis w `docs/zespol.md`.
+> +- **Mapa:** `docs/README.md` mówi, gdzie co leży. `docs/stan.md` to teraz, zablokowane i otwarte decyzje. `docs/todo.md` to zadania.
+> +- **Zadania:** pracujesz nad zadaniami swojej roli (tag `R1`–`R5`). Zanim zaczniesz, zmień `[ ]` na `[~]` i dopisz, kto i od kiedy. Po skończeniu zmień na `[x]` i dopisz godzinę. Zadanie z cudzej roli bierz tylko, gdy właściciel je oddał w `todo.md` albo użytkownik to zlecił. Wtedy zmień tag i zapisz to.
+> +- **Aktualizacja mózgu:** po każdej istotnej zmianie uaktualnij `todo.md` (statusy), `stan.md` (1–3 linie: co zrobione, co zablokowane) i dokument tematyczny, jeśli zmieniła się wiedza. `todo.md` jest źródłem prawdy dla całego zespołu, więc nie zostawiaj go nieaktualnego.
+> +- **Git:** `git pull` przed pracą, małe commity. Nie edytujesz plików innej roli bez zgody właściciela (karta roli mówi, czego nie ruszać). Pliki wspólne (`CLAUDE.md`, `docs/README.md`, `docs/stan.md`, `docs/todo.md`, `docs/zespol.md`) edytuj krótko i zawsze po `git pull`. Konflikt w `todo.md`: scal, nie kasuj cudzych linii.
+> +- **Decyzje:** nie wymyślasz decyzji zespołu. Otwarte kwestie trafiają do `stan.md`, z tabelą „Otwarte decyzje” i wskazaniem, kto rozstrzyga.
+>  
+>  ## Zasady, których pilnujesz
+>  
+> diff --git a/docs/06-plan-dnia.md b/docs/06-plan-dnia.md
+> index c86e2f0..e9b87f3 100644
+> --- a/docs/06-plan-dnia.md
+> +++ b/docs/06-plan-dnia.md
+> @@ -1,13 +1,16 @@
+>  # Plan dnia i role
+>  
+> -## Role (4 osoby)
+> +## Role (5 osób)
+> +
+> +Szczegóły, pliki i zasady każdej roli: [zespol.md](zespol.md) i karty w [role/](role/). Kto ma którą rolę, uzupełnia się w `zespol.md`.
+>  
+>  | Rola | Zakres | Kto |
+>  |---|---|---|
+> -| Dane i backend | Proxy do API miasta, cache, typy, ewentualnie zbieranie danych | _?_ |
+> -| Frontend i mapa | UI, mapa, karty planów, wersja mobilna | _?_ |
+> -| AI i logika | Planer, integracja z LLM, prompty | _?_ |
+> -| Produkt i pitch | Scenariusz demo, pitch deck, dokumentacja, testy; od soboty wieczorem ćwiczy 5 minut | _?_ |
+> +| R1 Dane i planer tras | Proxy do API miasta, cache, pozycje ZTM, planer trasy z przesiadkami | _do ustalenia_ |
+> +| R2 Baza i historia | Supabase, seed historii z GeoJSON, licencje zdjęć, cache Google Places | _do ustalenia_ |
+> +| R3 Frontend i mapa | UI, mapa, onboarding, slider, odtwarzacz, wersja mobilna, zakłada repo | _do ustalenia_ |
+> +| R4 AI i głos | LLM (Bielik, zapas Claude), prompty Sawy, czat, TTS, awatar | _do ustalenia_ |
+> +| R5 Produkt, pitch i QA | Scenariusz demo, pitch deck, testy na telefonie, dokumentacja; od soboty wieczorem ćwiczy 5 minut | _do ustalenia_ |
+>  
+>  ## Harmonogram
+>  
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 020c375..3251558 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -231,3 +231,5 @@
+>  > -
+>  > -**AI:** Wybrany awatar to 32. Z niego paleta (Głębia #17706F, Mięta #8ED1B5, Koral #F2755F) i fo
+>  
+> +
+> +**AI:** Przystosowałem repo do pracy 5 osób z agentami: mapa w `docs/README.md`, `docs/stan.md`, `docs/todo.md` (zadania z tagami R1–R5), `docs/zespol.md` (git user.name → rola), karty ról w `docs/role/` (R1–R5). Dodałem hook `SessionStart` (`.claude/hooks/session-start.sh`), który podaje agentowi rolę i jego zadania, oraz sekcję „Praca zespołowa” w `CLAUDE.md`. Zaktualizowałem tabelę ról w `docs/06-plan-dnia.md`. Role nie są jeszcze przypisane do osób (decyzja zespołu, wpisy „do ustalenia”).
+> new file: docs/stan.md
+> new file: docs/zespol.md
+

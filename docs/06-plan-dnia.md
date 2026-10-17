@@ -1,13 +1,16 @@
 # Plan dnia i role
 
-## Role (4 osoby)
+## Role (5 osób)
+
+Szczegóły, pliki i zasady każdej roli: [zespol.md](zespol.md) i karty w [role/](role/). Kto ma którą rolę, uzupełnia się w `zespol.md`.
 
 | Rola | Zakres | Kto |
 |---|---|---|
-| Dane i backend | Proxy do API miasta, cache, typy, ewentualnie zbieranie danych | _?_ |
-| Frontend i mapa | UI, mapa, karty planów, wersja mobilna | _?_ |
-| AI i logika | Planer, integracja z LLM, prompty | _?_ |
-| Produkt i pitch | Scenariusz demo, pitch deck, dokumentacja, testy; od soboty wieczorem ćwiczy 5 minut | _?_ |
+| R1 Dane i planer tras | Proxy do API miasta, cache, pozycje ZTM, planer trasy z przesiadkami | _do ustalenia_ |
+| R2 Baza i historia | Supabase, seed historii z GeoJSON, licencje zdjęć, cache Google Places | _do ustalenia_ |
+| R3 Frontend i mapa | UI, mapa, onboarding, slider, odtwarzacz, wersja mobilna, zakłada repo | _do ustalenia_ |
+| R4 AI i głos | LLM (Bielik, zapas Claude), prompty Sawy, czat, TTS, awatar | _do ustalenia_ |
+| R5 Produkt, pitch i QA | Scenariusz demo, pitch deck, testy na telefonie, dokumentacja; od soboty wieczorem ćwiczy 5 minut | _do ustalenia_ |
 
 ## Harmonogram
 
