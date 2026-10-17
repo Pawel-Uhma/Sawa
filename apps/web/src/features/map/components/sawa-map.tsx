@@ -12,7 +12,13 @@ import {
 } from "react-map-gl/maplibre";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
-import { cameraMoveKey, type MapCamera, type MapPadding, resolveCamera } from "../lib/camera";
+import {
+  cameraMoveKey,
+  DEFAULT_MAP_PADDING,
+  type MapCamera,
+  type MapPadding,
+  resolveCamera,
+} from "../lib/camera";
 import { BASEMAP_STYLE_URL, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
@@ -22,9 +28,6 @@ import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { UserLayer } from "./user-layer";
 
 const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID];
-
-/** Leaves room for the place card on phones when no padding is given. */
-const DEFAULT_PADDING: MapPadding = { top: 48, right: 32, bottom: 200, left: 32 };
 
 const CAMERA_DURATION_MS = 800;
 
@@ -69,7 +72,7 @@ export function SawaMap({
     [places.data, interests],
   );
 
-  const fullPadding = { ...DEFAULT_PADDING, ...padding };
+  const fullPadding = { ...DEFAULT_MAP_PADDING, ...padding };
   const move = resolveCamera(camera, route);
   const moveKey = cameraMoveKey(move, fullPadding);
 

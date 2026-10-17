@@ -1,2 +1,2 @@
 export { SawaMap, type SawaMapProps } from "./components/sawa-map";
-export type { MapCamera, MapPadding } from "./lib/camera";
+export { DEFAULT_MAP_PADDING, type MapCamera, type MapPadding } from "./lib/camera";
