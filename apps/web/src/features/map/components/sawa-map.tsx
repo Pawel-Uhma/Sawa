@@ -262,6 +262,7 @@ function findPlace(
     id,
     name: summary?.name ?? onRoute?.properties.name,
     kind: summary?.kind,
+    subkind: summary?.subkind,
     tags: summary?.interests,
     order: onRoute?.properties.order,
   };

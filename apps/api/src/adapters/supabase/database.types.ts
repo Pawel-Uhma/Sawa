@@ -77,6 +77,7 @@ export type Database = {
           richness: number;
           sources: Json;
           still_exists: boolean | null;
+          subkind: string | null;
           summary_en: string | null;
           today_nearby: Json;
           trivia: Json;
@@ -106,6 +107,7 @@ export type Database = {
           richness?: number;
           sources?: Json;
           still_exists?: boolean | null;
+          subkind?: string | null;
           summary_en?: string | null;
           today_nearby?: Json;
           trivia?: Json;
@@ -135,6 +137,7 @@ export type Database = {
           richness?: number;
           sources?: Json;
           still_exists?: boolean | null;
+          subkind?: string | null;
           summary_en?: string | null;
           today_nearby?: Json;
           trivia?: Json;
@@ -206,6 +209,7 @@ export type Database = {
           lng: number;
           name: string;
           richness: number;
+          subkind: string | null;
         }[];
       };
     };

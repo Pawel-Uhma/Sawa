@@ -3,7 +3,7 @@
 import type { Place } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useEffect, useLayoutEffect, useRef } from "react";
-import { PLACE_KIND_LABELS, placeKindColor } from "@/features/map";
+import { placeKindColor, placeKindLabel } from "@/features/map";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { PlaceStoryState } from "../lib/place-story";
@@ -127,13 +127,13 @@ export function CloseButton({ onClick }: { onClick: () => void }) {
 
 /** Rodzaj miejsca w jego kolorze z mapy i okres, np. „miejsce · 1867–1947”. */
 export function KindLine({ place, className = "" }: { place: Place; className?: string }) {
-  const parts = [PLACE_KIND_LABELS[place.kind], place.period].filter(Boolean);
+  const parts = [placeKindLabel(place.kind, place.subkind), place.period].filter(Boolean);
   return (
     <p className={`etykieta flex items-center gap-2 ${className}`}>
       <span
         aria-hidden="true"
         className="inline-block size-2.5 shrink-0 rounded-full"
-        style={{ backgroundColor: placeKindColor(place.kind) }}
+        style={{ backgroundColor: placeKindColor(place.kind, place.subkind) }}
       />
       <span className="truncate">{parts.join(" · ")}</span>
     </p>

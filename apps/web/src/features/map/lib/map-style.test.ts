@@ -1,6 +1,6 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
-import { PLACE_KINDS } from "@sawa/shared";
+import { PLACE_KINDS, PLACE_SUBKINDS } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import {
   FALLBACK_PLACE_ICON,
@@ -8,9 +8,10 @@ import {
   mapIconId,
   mapIconUrl,
   PLACE_ICON_KINDS,
-  PLACE_KIND_LABELS,
   placeKindColor,
+  placeKindColorExpression,
   placeKindIconExpression,
+  placeKindLabel,
   UNKNOWN_KIND_COLOR,
 } from "./map-style";
 
@@ -30,15 +31,22 @@ const KINDS = [
 ];
 
 describe("map style", () => {
-  it("has a colour and a Polish label for every place kind", () => {
-    for (const kind of KINDS) {
+  it("has a colour and a Polish label for every place kind and subkind", () => {
+    for (const kind of [...KINDS, ...PLACE_SUBKINDS]) {
       expect(placeKindColor(kind)).not.toBe(UNKNOWN_KIND_COLOR);
-      expect(PLACE_KIND_LABELS[kind]).toBeTruthy();
+      expect(placeKindLabel(kind)).toBeTruthy();
     }
   });
 
-  it("has an icon for every kind in the shared contract", () => {
-    expect([...PLACE_ICON_KINDS].sort()).toEqual([...PLACE_KINDS].sort());
+  it("prefers the subkind over the kind", () => {
+    expect(placeKindLabel("building", "palace")).toBe("pałac");
+    expect(placeKindColor("site", "park")).not.toBe(placeKindColor("site"));
+    expect(placeKindLabel("church", null)).toBe("świątynia");
+  });
+
+  it("has an icon for every kind and subkind in the shared contract", () => {
+    for (const kind of PLACE_KINDS) expect(PLACE_ICON_KINDS).toContain(kind);
+    expect([...PLACE_ICON_KINDS].sort()).toEqual([...PLACE_SUBKINDS].sort());
     for (const name of MAP_ICONS) {
       expect(existsSync(join(PUBLIC_DIR, mapIconUrl(name)))).toBe(true);
     }
@@ -48,6 +56,7 @@ describe("map style", () => {
     const expression = placeKindIconExpression();
     expect(expression.at(-1)).toBe(mapIconId(FALLBACK_PLACE_ICON));
     expect(expression).toContain(mapIconId("monument"));
+    expect(placeKindColorExpression().at(-1)).toBe(UNKNOWN_KIND_COLOR);
   });
 
   it("falls back to grey for an unknown kind", () => {

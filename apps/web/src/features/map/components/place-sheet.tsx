@@ -2,7 +2,7 @@ import type { Place } from "@sawa/shared";
 import { useState } from "react";
 import { placeTagLabel } from "@/lib/interest-labels";
 import { usePlace } from "../hooks/use-place";
-import { PLACE_KIND_LABELS, placeKindColor } from "../lib/map-style";
+import { placeKindColor, placeKindLabel } from "../lib/map-style";
 
 const FACTS_PREVIEW = 3;
 
@@ -11,6 +11,7 @@ export type PlaceSheetPlace = {
   /** Unknown until the detail loads when the place is not among the places in view. */
   name?: string;
   kind?: string;
+  subkind?: string | null;
   tags?: string[];
   /** Position on the route, when the place is one of its stops for a story. */
   order?: number;
@@ -25,8 +26,9 @@ type PlaceSheetProps = {
 export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
   const detail = usePlace(place.id);
   const kind = detail.data?.kind ?? place.kind;
+  const subkind = detail.data?.subkind ?? place.subkind;
   const tags = detail.data?.interests ?? place.tags ?? [];
-  const kindLabel = kind ? PLACE_KIND_LABELS[kind] : undefined;
+  const kindLabel = kind ? placeKindLabel(kind, subkind) : undefined;
   const name = detail.data?.name ?? place.name;
   const eyebrow = [kindLabel, place.order && `${place.order}. na trasie`].filter(Boolean);
 
@@ -43,7 +45,7 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
                 <span
                   aria-hidden
                   className="inline-block size-2.5 rounded-full"
-                  style={{ backgroundColor: placeKindColor(kind) }}
+                  style={{ backgroundColor: placeKindColor(kind, subkind) }}
                 />
               )}
               {eyebrow.join(" · ")}
