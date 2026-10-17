@@ -1,12 +1,13 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 11:50 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 12:05 (Szczepan, z agentem)
 
 ## Teraz
 
 - Sobota 17.10, po 11:00: kod aplikacji wolno pisać.
 - Zrobione: mózg zespołu (mapa w `README.md`, `todo.md`, `zespol.md`, karty ról w `role/`), zasady pracy w `CLAUDE.md`.
 - Nowe: [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) (zasady kodu i współpracy) i [12-plan-mvp.md](12-plan-mvp.md) (stack, kontrakt API, harmonogram). Każdy czyta i zgłasza niezgodę z założeniami [Z] (T-64).
+- Szkielet monorepo gotowy (T-04): `pnpm install && pnpm dev`. Plan MVP przycięty do listy MVP z PRD, dodatki w `todo.md` w sekcji „Poza MVP”.
 - Najbliższe: wpisanie git user.name i ról do `zespol.md` (T-08), inicjalizacja repo aplikacji (T-04), zdjęcie decyzji o API Bielika i Supabase (T-01, T-02).
 
 ## Zablokowane
