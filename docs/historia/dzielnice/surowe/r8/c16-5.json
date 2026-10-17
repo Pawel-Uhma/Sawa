@@ -1,0 +1,258 @@
+[
+  {
+    "id": "nowe-brodno",
+    "nazwa": "Nowe Bródno",
+    "name_en": "Nowe Bródno",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.287,
+    "lon": 21.023,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osada Nowe Bródno powstała na piaszczystych polach na zachód od Starego Bródna, po wybudowaniu w 1877 Kolei Nadwiślańskiej i uruchomieniu stacji Praga.",
+      "8 kwietnia 1916 generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające do Warszawy (od 1 kwietnia 1916) m.in. Nowe Bródno, położone w tamtym czasie w gminie Bródno.",
+      "28 września 1924 roku uruchomiono tu linię tramwajową 21.",
+      "Podczas II wojny światowej wiele budynków na Nowym Bródnie uległo zniszczeniu.",
+      "W 1961 rozpisano konkurs architektoniczny na projekt nowej dzielnicy na 60 tys. mieszkańców. Wygrał go zespół w składzie: Jerzy Stanisławski, Janina Szulecka, Tadeusz Szulecki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Nowe Bródno began as a railway settlement in the 1870s, after the Warsaw–Petersburg railway and Praga station opened. It was incorporated into Warsaw in 1916 and was largely rebuilt with housing estates from the 1960s onward.",
+    "ludzie": [
+      {"kto": "Hans Hartwig von Beseler", "rola": "generał-gubernator; 8 kwietnia 1916 wydał rozporządzenie włączające Nowe Bródno do Warszawy", "wiki": null},
+      {"kto": "Jerzy Stanisławski", "rola": "członek zespołu, który wygrał konkurs architektoniczny na nowe osiedle (1961)", "wiki": null},
+      {"kto": "Janina Szulecka", "rola": "członkini zespołu, który wygrał konkurs architektoniczny na nowe osiedle (1961)", "wiki": null},
+      {"kto": "Tadeusz Szulecki", "rola": "członek zespołu, który wygrał konkurs architektoniczny na nowe osiedle (1961)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowe Bródno (kolejowa osada)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowe Bródno", "url": "https://pl.wikipedia.org/wiki/Nowe_Br%C3%B3dno"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje „Kolej Nadwiślańską” w 1877 r.; w artykule o Bródnie pada rok 1875 (otwarcie stacji Praga)."
+  },
+  {
+    "id": "pozarowa-zajezdnia-autobusowa",
+    "nazwa": "Zajezdnia autobusowa Pożarowa",
+    "name_en": "Pożarowa bus depot",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Staniewicka",
+    "lat": 52.274876,
+    "lon": 21.026638,
+    "lokalizacja": "dokladna",
+    "okres": "1972–1995",
+    "istnieje": false,
+    "fakty": [
+      "Pożarowa była zajezdnią autobusową należącą do Miejskich Zakładów Autobusowych w Warszawie, działającą w latach 1972–1995 przy ul. Staniewickiej; jej oznaczenie to „R-8”.",
+      "Uruchomiona w 1972 roku zajezdnia była drugą po zajezdni Ostrobramska bazą autobusową działającą na praskim brzegu Wisły.",
+      "W 1976 roku na Pożarową dostarczono pierwsze w Warszawie autobusy typu Jelcz PR110U.",
+      "Ostatnie egzemplarze wycofano z eksploatacji w 1987 roku; od tej pory, do chwili likwidacji zajezdni, używano jedynie autobusów Ikarus.",
+      "Zajezdnia została zlikwidowana w 1995 roku w ramach planu ograniczania kosztów, wraz z zajezdnią Piaseczno; tabor przeniesiono do zajezdni Stalowa, a nieruchomość sprzedano spółce Zasada Group."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Warsaw bus depot run by the municipal bus company from 1972 to 1995 on Staniewicka Street, serving routes in Praga-Północ. It was closed in 1995 to cut costs and its site was sold to a private company.",
+    "ludzie": [],
+    "dawne_nazwy": ["zajezdnia R-8"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pożarowa (zajezdnia autobusowa)", "url": "https://pl.wikipedia.org/wiki/Po%C5%BCarowa_%28zajezdnia_autobusowa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Nie mylić z ul. Pożarową, gdzie działa największa warszawska stacja rozrządowa."
+  },
+  {
+    "id": "rondo-zaba",
+    "nazwa": "Rondo Żaba",
+    "name_en": "Żaba Roundabout",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "rondo na styku ul. Odrowąża, św. Wincentego, 11 Listopada, Praskiej i Stefana Starzyńskiego",
+    "adres_historyczny": "węzeł Żaba",
+    "lat": 52.268888888,
+    "lon": 21.0375,
+    "lokalizacja": "dokladna",
+    "okres": "1999–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie było to skrzyżowanie, jedno z najbardziej skomplikowanych w Warszawie, nazywane zwyczajowo węzłem Żaba.",
+      "W latach 1999−2000 węzeł został przebudowany: powstało rondo, tunel pod torami kolejowymi (linia nr 9) oraz wiadukt łączący ul. Szwedzką i ul. Starzyńskiego.",
+      "Nazwa „Żaba”, zwyczajowa, stała się oficjalna w 2002 roku.",
+      "W 2012 roku radni z Komisji ds. Nazewnictwa Miejskiego odrzucili wniosek o zmianę nazwy ronda na rondo ppor. Jana Wójcika „Znicza”, a w 2024 roku wniosek o zmianę na rondo Praskie.",
+      "W 2014 przy rondzie ustawiono kamień upamiętniający Jana Wójcika ps. „Znicz” i innych żołnierzy AK poległych w powstaniu warszawskim."
+    ],
+    "ciekawostki": [
+      "Najprawdopodobniej nazwa pochodzi od kształtu układu ulic, który z lotu ptaka przypomina spłaszczoną żabę."
+    ],
+    "summary_en": "A roundabout in Targówek built in 1999–2000 on the site of one of Warsaw's most complicated junctions, nicknamed Żaba (Frog). The nickname became official in 2002, and attempts to rename the roundabout were rejected in 2012 and 2024.",
+    "ludzie": [
+      {"kto": "Jan Wójcik „Znicz”", "rola": "podporucznik AK; kamień upamiętniający ustawiono przy rondzie w 2014 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["węzeł Żaba"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo Żaba w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_%C5%BBaba_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "targowek",
+    "nazwa": "Targówek",
+    "name_en": "Targówek",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.282222222,
+    "lon": 21.064166666,
+    "lokalizacja": "przyblizona",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1740 – nadanie nazwy Targówek przez właściciela, marszałka Lubomirskiego.",
+      "4 listopada 1794 – Bródno i Targówek spalone podczas rzezi Pragi.",
+      "21 listopada 1884 – konsekracja cmentarza Bródnowskiego.",
+      "8 kwietnia 1916 (efektywnie od 1 kwietnia 1916) – włączenie terenów Targówka w granice Warszawy.",
+      "1951 – do tego roku miejscowość była siedzibą gminy Bródno; włączono wtedy teren osiedla Zacisze w granice Warszawy.",
+      "15 września 2019 – otwarcie stacji metra Targówek Mieszkaniowy i Trocka.",
+      "28 września 2022 − otwarcie stacji metra Zacisze, Kondratowicza i Bródno."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Targówek is a district of Warsaw on the right bank of the Vistula. It developed from a 15th-century village and was incorporated into Warsaw in 1916, becoming an independent district in 1994.",
+    "ludzie": [],
+    "dawne_nazwy": ["Targowe Małe", "Targowe Minor"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Targówek", "url": "https://pl.wikipedia.org/wiki/Targ%C3%B3wek"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o całej dzielnicy; współrzędne z nagłówka to środek dzielnicy."
+  },
+  {
+    "id": "g-city-targowek",
+    "nazwa": "G City Targówek (dawniej Atrium Targówek)",
+    "name_en": "G City Targówek shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Głębocka 15",
+    "adres_historyczny": null,
+    "lat": 52.30333333,
+    "lon": 21.05722222,
+    "lokalizacja": "dokladna",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W trakcie budowy obiekt nosił nazwę Centrum Handlowe Steen&Strom.",
+      "Budowa rozpoczęła się na przełomie maja i czerwca 1997, a generalnym wykonawcą była firma Z. Marciniak SA.",
+      "W listopadzie 2001 roku centrum zostało powiększone o drugą fazę, wzbogacając ofertę do 135 sklepów oraz o kompleks kinowy.",
+      "Cały proces kosztował ponad 30 mln dolarów amerykańskich, a projekt architektoniczny stworzyła pracownia Kuryłowicz & Associates.",
+      "W 2013 roku, w związku z przejęciem przez Atrium Real Estate, centrum zmieniło nazwę na Atrium Targówek.",
+      "Od 2022 właścicielem i zarządcą obiektu jest spółka G City Europe; rebranding zaowocował nową nazwą G City Targówek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A shopping centre on Głębocka Street, built from 1997 under the working name Steen&Strom and later renamed Atrium Targówek and then G City Targówek. The second phase in 2001 added a cinema complex.",
+    "ludzie": [],
+    "dawne_nazwy": ["Centrum Handlowe Steen&Strom", "Atrium Targówek"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Targówek (centrum handlowe)", "url": "https://pl.wikipedia.org/wiki/Targ%C3%B3wek_%28centrum_handlowe%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "targowek-fabryczny",
+    "nazwa": "Targówek Fabryczny",
+    "name_en": "Targówek Fabryczny",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.265333,
+    "lon": 21.067572,
+    "lokalizacja": "przyblizona",
+    "okres": "II poł. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obszar zawdzięcza swoją nazwę licznym fabrykom, które powstawały tam w II połowie XIX wieku.",
+      "W 1919 przy ul. Księcia Ziemowita – głównej ulicy Targówka Fabrycznego – wzniesiono drewniany kościół Zmartwychwstania Pańskiego zaprojektowany przez Stefana Szyllera w stylu zakopiańskim.",
+      "W okresie PRL Targówek Fabryczny był terenem przeznaczonym głównie pod zabudowę przemysłową; wyburzono znaczną część domów i wysiedlono mieszkańców, m.in. przy ul. Księcia Ziemowita.",
+      "W 1994 przy ul. Zabranieckiej uruchomiono zakład produkcyjny amerykańskiego koncernu Procter & Gamble, w którym wytwarzane są pieluszki Pampers."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Targówek Fabryczny is a former industrial district in the south of Targówek, named after the factories built there in the late 19th century. Much of its housing was demolished in the communist era, and a Procter & Gamble plant opened there in 1994.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "projektant drewnianego kościoła Zmartwychwstania Pańskiego (1919)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Targówek Fabryczny", "url": "https://pl.wikipedia.org/wiki/Targ%C3%B3wek_Fabryczny"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI; współrzędne z nagłówka to przybliżony środek."
+  },
+  {
+    "id": "targowek-mieszkaniowy",
+    "nazwa": "Targówek Mieszkaniowy",
+    "name_en": "Targówek Mieszkaniowy",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.271767,
+    "lon": 21.051306,
+    "lokalizacja": "przyblizona",
+    "okres": "1580–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze zapisy na temat Targówka (pod postacią Targowe Małe) pochodzą z 1580 roku, kiedy to ta wieś szlachecka liczyła ok. 59 ha.",
+      "Królowa Anna Jagiellonka nadała mieszkańcom Targówka przywilej wyrębu drzew w lasach bródnowskich.",
+      "W 1884 roku w sąsiedztwie Targówka został założony cmentarz Bródnowski, który osiągnął dziś obszar 135 hektarów.",
+      "Osiedle Targówek Mieszkaniowy, składające się z 6 mniejszych osiedli, zostało zrealizowane w latach 1974−1979 według projektu Małgorzaty Handzelewicz-Wacławek, Zbigniewa Wacławka i Jana Kalinowskiego.",
+      "Do 1994 roku Targówek był jednym z osiedli w dzielnicy Praga-Północ; w wyniku reformy administracyjnej w 1994 roku wydzielono z niej nową dzielnicę Targówek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Targówek Mieszkaniowy is a MSI area in Targówek named after the village of Targówek, first recorded in 1580. Its housing estate was built in 1974–1979 on a new street layout that replaced the old grid.",
+    "ludzie": [
+      {"kto": "Małgorzata Handzelewicz-Wacławek", "rola": "architektka; współautorka projektu osiedla Targówek Mieszkaniowy (1974–1979)", "wiki": null},
+      {"kto": "Zbigniew Wacławek", "rola": "architekt; współautor projektu osiedla Targówek Mieszkaniowy (1974–1979)", "wiki": null},
+      {"kto": "Jan Kalinowski", "rola": "architekt; współautor projektu osiedla Targówek Mieszkaniowy (1974–1979)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Targowe Małe"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Targówek Mieszkaniowy", "url": "https://pl.wikipedia.org/wiki/Targ%C3%B3wek_Mieszkaniowy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI. Część faktów dotyczy całego Targówka, nie tylko tego obszaru."
+  },
+  {
+    "id": "stacja-metra-targowek-mieszkaniowy",
+    "nazwa": "Stacja metra Targówek Mieszkaniowy",
+    "name_en": "Targówek Mieszkaniowy metro station",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "w pobliżu skrzyżowania ul. Pratulińskiej z ul. Ossowskiego",
+    "adres_historyczny": null,
+    "lat": 52.269138888,
+    "lon": 21.051083333,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "29 października 2015 wybrano wykonawcę obiektu, 8 marca 2016 stacja otrzymała pozwolenie na budowę, a 11 marca 2016 podpisano umowę na jej realizację.",
+      "Stacja została otwarta 15 września 2019.",
+      "Stacja oznaczona jako C17 nosiła roboczą nazwę Targówek.",
+      "13 grudnia 2018 Rada m.st. Warszawy podjęła uchwałę, na mocy której stacja otrzymała nazwę Targówek Mieszkaniowy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A metro station on Line M2 in Targówek, opened on 15 September 2019. It was built under the working name Targówek and renamed Targówek Mieszkaniowy by a city council resolution in December 2018.",
+    "ludzie": [],
+    "dawne_nazwy": ["Targówek (nazwa robocza)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Targówek Mieszkaniowy (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Targ%C3%B3wek_Mieszkaniowy_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

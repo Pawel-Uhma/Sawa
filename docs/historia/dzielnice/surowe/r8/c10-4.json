@@ -1,0 +1,573 @@
+[
+  {
+    "id": "kanal-kaweczynski",
+    "nazwa": "Kanał Kawęczyński",
+    "name_en": "Kawęczyński Canal",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2461,
+    "lon": 21.1209,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W Kronice Warszawy z maja 1928 r. napisano, że ukończono już półtora kilometra kanału, licząc od Kanału Kamionkowsko-Wawerskiego.",
+      "Roboty miały być kontynuowane, jak tylko Dyrekcja kolejowa wykona przepust żelbetonowy pod linią kolejową Warszawa-Dęblin.",
+      "Długość kanału miała wynosić 3 km."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Kawęczyński Canal runs from Kawęczyn in Rembertów to Kanał Nowa Ulga near Ostrobramska. In May 1928 its first 1.5 km was complete, with the work waiting for a railway culvert under the Warsaw-Dęblin line.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kanał Kawęczyński",
+        "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Kaw%C4%99czy%C5%84ski"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł zawiera tylko stan z 1928 r.; kanał przebiega głównie poza Praga-Południe (Rembertów, Wawer). Współrzędne z nagłówka."
+  },
+  {
+    "id": "kanal-wystawowy",
+    "nazwa": "Kanał Wystawowy",
+    "name_en": "Wystawowy Canal",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2377,
+    "lon": 21.066,
+    "lokalizacja": "przyblizona",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa kanału pochodzi od Powszechnej Wystawy Krajowej w Poznaniu w 1929 roku.",
+      "Sam kanał powstał między 1934 a 1938 rokiem.",
+      "W 2014 roku projekt „Kanał Wystawowy” zajął 2. miejsce w głosowaniu mieszkańców, ale nie został skierowany do realizacji.",
+      "W 2015 roku ten sam projekt zajął 1. miejsce i znalazł się w gronie projektów wybranych do realizacji.",
+      "W 2024 roku zrealizowano projekt „Wygodnie rowerem wzdłuż Kanału Wystawowego”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Wystawowy Canal links Gocławskie Lake with Kamionkowskie Lake. Its name comes from the 1929 Poznań exhibition, and it was built in 1934–1938.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Kanał Kamionkowski (dolny bieg, na mapie 1:10 000)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kanał Wystawowy",
+        "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Wystawowy"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "kino-1-maj",
+    "nazwa": "Kino 1 Maj",
+    "name_en": "1 Maj Cinema",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Podskarbińska 4",
+    "lat": 52.249304,
+    "lon": 21.074913,
+    "lokalizacja": "dokladna",
+    "okres": "1949–dziś (budynek)",
+    "istnieje": true,
+    "fakty": [
+      "Kino 1 Maj zostało otwarte 1 maja 1949 roku.",
+      "Było jednym z czterech pierwszych kin powstałych w Warszawie po II wojnie światowej (pozostałe to: W-Z, Stolica i Ochota).",
+      "Zaprojektował je Mieczysław Piprek, który nadał im formę wolnostojących parterowych pawilonów.",
+      "W latach 1995−2002 znajdowało się tam studio oraz siedziba stacji telewizyjnej Polonia 1.",
+      "Następnie budynek zaadaptowano na supermarket sieci MarcPol, a od 2017 roku znajduje się tam sklep sieci Biedronka."
+    ],
+    "ciekawostki": [
+      "Kino miało rząd filarów od frontu, a dwa z czterech pierwszych kin miały falujące dachy."
+    ],
+    "summary_en": "The 1 Maj cinema at Podskarbińska 4 opened on 1 May 1949 as one of the first four postwar cinemas in Warsaw. It was designed by Mieczysław Piprek and later housed the Polonia 1 TV studio, a MarcPol supermarket and, since 2017, a Biedronka store.",
+    "ludzie": [
+      {
+        "kto": "Mieczysław Piprek",
+        "rola": "projektant kina",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Kino 1 Maj"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kino 1 Maj w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kino_1_Maj_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Kino już nie istnieje; budynek jest zaadaptowany na sklep. Adres z artykułu to adres historyczny; dzisiejszy adres nieobecny w tekście."
+  },
+  {
+    "id": "konferencja-onz-zmiany-klimatu-warszawa-2013",
+    "nazwa": "Konferencja ONZ w sprawie Zmian Klimatu, Warszawa 2013",
+    "name_en": "UN Climate Change Conference, Warsaw 2013",
+    "typ": "zdarzenie",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Stadion Narodowy, Warszawa",
+    "adres_historyczny": null,
+    "lat": 52.239444,
+    "lon": 21.045556,
+    "lokalizacja": "dokladna",
+    "okres": "11–22 listopada 2013",
+    "istnieje": false,
+    "fakty": [
+      "Konferencja odbywała się od 11 do 22 listopada 2013 na Stadionie Narodowym w Warszawie.",
+      "Organizował ją Sekretariat Ramowej Konwencji Narodów Zjednoczonych ds. zmian klimatu, a gospodarzem był rząd Polski.",
+      "Koszty organizacji szczytu pokrył Narodowy Fundusz Ochrony Środowiska i Gospodarki Wodnej.",
+      "21 listopada organizacje ekologiczne, m.in. Greenpeace i World Wide Fund for Nature, opuściły szczyt w ramach protestu.",
+      "W ramach konferencji odbywała się XIX Konferencja stron Ramowej konwencji Narodów Zjednoczonych w sprawie zmian klimatu (COP 19)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The UN Climate Change Conference in Warsaw took place from 11 to 22 November 2013 at the National Stadium. It was known as COP 19, and environmental groups including Greenpeace and WWF walked out on 21 November.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Konferencja Narodów Zjednoczonych w sprawie Zmian Klimatu, Warszawa 2013",
+        "url": "https://pl.wikipedia.org/wiki/Konferencja_Narod%C3%B3w_Zjednoczonych_w_sprawie_Zmian_Klimatu%2C_Warszawa_2013"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie w Stadionie Narodowym (adres_dzis wg tekstu: obiekt, bez ulicy). Typ zdarzenie; istnieje false, bo wydarzenie jednorazowe."
+  },
+  {
+    "id": "kozia-gorka-warszawa",
+    "nazwa": "Kozia Górka",
+    "name_en": "Kozia Górka",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.256301,
+    "lon": 21.09477,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kozia Górka była wsią powstałą w XIX w., przedzieloną zbudowaną w 1866–1867 kolejową linią terespolską.",
+      "W okresie międzywojennym na Koziej Górce zbudowano stację towarową Warszawa Wschodnia Towarowa.",
+      "W Areszcie Śledczym Warszawa-Grochów na Koziej Górce byli przetrzymywani członkowie opozycji demokratycznej.",
+      "15 maja 1951 w związku ze zniesieniem gminy Bródno gromadę Kozia Górka włączono do Warszawy.",
+      "Na Koziej Górce planowano zbudowanie stacji postojowej Kozia Górka, która miała obsługiwać III linię warszawskiego metra."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kozia Górka is an area divided by the Terespol railway line into a southern Grochów part (joined to Warsaw in 1916) and a northern Kawęczyn part (joined in 1951). It has a freight station built between the wars and a remand prison used against the democratic opposition.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Kozia Górka Grochowska",
+      "Kozia Górka Kawęczyńska"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kozia Górka (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Kozia_G%C3%B3rka_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar na pograniczu Praga-Południe i Targówek. Fakt o stacji metra to plan, nie zrealizowana stacja; zapisany jako planowany."
+  },
+  {
+    "id": "osiedle-dudziarska",
+    "nazwa": "Osiedle Dudziarska",
+    "name_en": "Dudziarska Estate",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.256301,
+    "lon": 21.09477,
+    "lokalizacja": "przyblizona",
+    "okres": "1994–2024",
+    "istnieje": false,
+    "fakty": [
+      "W 1994 roku w części wschodniej Koziej Górki wybudowano osiedle Dudziarska, w którym zamieszkali ludzie z wyrokami eksmisyjnymi oraz osoby potrzebujące mieszkań kwaterunkowych.",
+      "Na całym osiedlu w trzech budynkach znajdowało się 211 lokali, z czego w 2016 zasiedlonych było 145.",
+      "14 listopada 2007 roku uruchomiono linię autobusową łączącą osiedle Dudziarska z Grochowem.",
+      "W 2010 roku artyści z kolektywu Zmiana Organizacji Ruchu namalowali na ślepych ścianach budynków murale wzorowane na Czarnym kwadracie na białym tle Kazimierza Malewicza.",
+      "W 2015 osiedle uznano za nieudany eksperyment społeczny i podjęto decyzję o jego wygaszeniu do końca 2017.",
+      "Ostatni mieszkańcy zostali wykwaterowani pod koniec 2019 roku, a 28 sierpnia 2024 roku władze dzielnicy podjęły uchwałę o planowanej rozbiórce budynków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Dudziarska was a 1994 housing estate in eastern Kozia Górka for people with eviction orders and municipal tenants, isolated by railway lines. It was phased out in 2015–2019, and in 2024 the district council decided to demolish its buildings.",
+    "ludzie": [
+      {
+        "kto": "Kazimierz Malewicz",
+        "rola": "autor obrazu Czarny kwadrat na białym tle, wzorzec dla murali z 2010 r.",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kozia Górka (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Kozia_G%C3%B3rka_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle w artykule o Koziej Górce, bez numerów budynków i bez własnych współrzędnych; lat/lon z nagłówka artykułu. Artykuł nie podaje, że Malewicz jest wzorcem bezpośrednio; zdanie mówi o murali wzorowanych na obrazie."
+  },
+  {
+    "id": "kozia-gorka-staw",
+    "nazwa": "Staw Kozia Górka",
+    "name_en": "Kozia Górka Pond",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.255833333,
+    "lon": 21.109722222,
+    "lokalizacja": "dokladna",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw powstał w latach 1939–1940 jako zbiornik na wodę do chłodzenia zbiorników paliwowych dla niemieckich budowlano-remontowych jednostek wojskowych.",
+      "Wykopany został przez jeńców wojennych.",
+      "W 2015 roku z inicjatywy teatru Akt urządzono na brzegu zbiornika plażę.",
+      "Według danych na 2024 rok planuje się utworzenie użytku ekologicznego obejmującego staw."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kozia Górka Pond is an artificial pond near Dudziarska street, dug in 1939–1940 by prisoners of war to cool fuel tanks for German military units. A beach was set up on its shore in 2015.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Jezioro Bałki",
+      "Benzynówka",
+      "Baustelle (Bałsztele)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kozia Górka (staw)",
+        "url": "https://pl.wikipedia.org/wiki/Kozia_G%C3%B3rka_%28staw%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu o stawie."
+  },
+  {
+    "id": "kosciol-chrystusa-krola-pokoju",
+    "nazwa": "Kościół Chrystusa Króla Pokoju",
+    "name_en": "Church of Christ the King of Peace",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Skaryszewska",
+    "adres_historyczny": null,
+    "lat": 52.249166666,
+    "lon": 21.049333333,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na miejscu obecnej świątyni istniała kapliczka z czasów zaboru rosyjskiego, należąca do mariawitów.",
+      "W 1927 roku księża pallotyni odkupili kapliczkę, nadali jej tytuł Chrystusa Króla Pokoju i wznowili kult; poświęcił ją biskup Stanisław Gall 30 kwietnia tego samego roku.",
+      "Podczas obrony miasta we wrześniu 1939 roku kaplica została doszczętnie zniszczona.",
+      "W 1985 roku wzniesiono obecną świątynię według projektu inżyniera Janusza Maliszewskiego.",
+      "22 stycznia 1989 roku ją konsekrował kardynał Józef Glemp.",
+      "14 stycznia 2007 roku zapaliła się dekoracja bożonarodzeniowa w kościele; ogień całkowicie spalił obraz Chrystusa Króla."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Church of Christ the King of Peace on Skaryszewska street belongs to the Pallottine parish. It began as a Russian-era chapel of the Mariavites, was destroyed in September 1939, and the present church was built in 1985 and consecrated in 1989.",
+    "ludzie": [
+      {
+        "kto": "Stanisław Gall",
+        "rola": "biskup, poświęcił kaplicę w 1927 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Janusz Maliszewski",
+        "rola": "inżynier, projektant obecnej świątyni",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Glemp",
+        "rola": "kardynał, konsekrował świątynię w 1989 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Adam Styka",
+        "rola": "autor obrazu Chrystusa Króla w ołtarzu (1942)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Kapliczka mariawitów"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kościół Chrystusa Króla Pokoju w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Chrystusa_Kr%C3%B3la_Pokoju_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu: „przy ulicy Skaryszewskiej” bez numeru."
+  },
+  {
+    "id": "kosciol-matki-bozej-krolowej-polskich-meczennikow",
+    "nazwa": "Kościół Matki Bożej Królowej Polskich Męczenników",
+    "name_en": "Church of Our Lady, Queen of Polish Martyrs",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "al. Stanów Zjednoczonych",
+    "adres_historyczny": null,
+    "lat": 52.2398,
+    "lon": 21.081,
+    "lokalizacja": "dokladna",
+    "okres": "1987–dziś",
+    "istnieje": true,
+    "fakty": [
+      "14 stycznia 1987 roku mieszkańcy osiedla Kinowa otrzymali dekret Wydziału Architektury o „wskazaniu lokalizacyjnym”, a 10 czerwca 1987 rozpoczęła się budowa prowizorycznej kaplicy.",
+      "15 marca 1988 roku dekretem prymasa Polski erygowano parafię; pierwszym proboszczem został ks. Krzysztof Jackowski.",
+      "4 maja 1994 roku rozpoczęła się budowa budynku sakralnego według projektu Jerzego Kumelowskiego.",
+      "31 grudnia 2000 roku nastąpiło otwarcie budynku dla czynności liturgicznych.",
+      "30 grudnia 2001 roku ordynariusz diecezji warszawsko-praskiej bp Kazimierz Romaniuk ogłosił kościół parafialny Sanktuarium Matki Bożej Królowej Polskich Męczenników."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The church on Aleja Stanów Zjednoczonych was started in 1987 as a temporary chapel for the Kinowa estate. Its building, designed by Jerzy Kumelowski, opened for worship in December 2000 and was made a shrine in 2001.",
+    "ludzie": [
+      {
+        "kto": "Krzysztof Jackowski",
+        "rola": "pierwszy proboszcz parafii, a później proboszcz",
+        "wiki": null
+      },
+      {
+        "kto": "Jerzy Kumelowski",
+        "rola": "autor projektu budynku sakralnego",
+        "wiki": null
+      },
+      {
+        "kto": "Kazimierz Romaniuk",
+        "rola": "ordynariusz diecezji warszawsko-praskiej, ogłosił sanktuarium",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kościół Matki Bożej Królowej Polskich Męczenników w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Bo%C5%BCej_Kr%C3%B3lowej_Polskich_M%C4%99czennik%C3%B3w_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z nagłówka artykułu („przy al. Stanów Zjednoczonych”) bez numeru. W tekście: ordynariusz bp Kazimierz Romaniuk."
+  },
+  {
+    "id": "kosciol-nawrocenia-sw-pawla-apostola",
+    "nazwa": "Kościół Nawrócenia św. Pawła Apostoła",
+    "name_en": "Church of the Conversion of St. Paul the Apostle",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2474,
+    "lon": 21.0897,
+    "lokalizacja": "dokladna",
+    "okres": "1976–1985",
+    "istnieje": true,
+    "fakty": [
+      "Zgodę na budowę świątyni władze wydały 5 kwietnia 1976 r.",
+      "Kamień węgielny pod budowę wmurował 27 maja 1978 r. kard. Stefan Wyszyński.",
+      "Ks. prałat Jan Flaziński doprowadził budowę do końca, a kościół poświęcił 25 stycznia 1985 r. kard. Józef Glemp.",
+      "Autorami projektu kościoła są Konrad Kucza-Kuczyński i Andrzej Miklaszewski.",
+      "Na chórze są 26-głosowe organy zbudowane przez A. Nagalskiego w latach 1994−1995."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of the Conversion of St. Paul the Apostle was built after permission was granted in 1976. Its cornerstone was laid in 1978 by Cardinal Stefan Wyszyński, and the church was consecrated in 1985 by Cardinal Józef Glemp.",
+    "ludzie": [
+      {
+        "kto": "Stefan Wyszyński",
+        "rola": "kardynał, wmurował kamień węgielny w 1978 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Glemp",
+        "rola": "kardynał, poświęcił kościół w 1985 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Flaziński",
+        "rola": "proboszcz, doprowadził budowę do końca",
+        "wiki": null
+      },
+      {
+        "kto": "Konrad Kucza-Kuczyński",
+        "rola": "współautor projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Miklaszewski",
+        "rola": "współautor projektu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kościół Nawrócenia św. Pawła Apostoła w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Nawr%C3%B3cenia_%C5%9Bw._Paw%C5%82a_Aposto%C5%82a_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres kościoła nie podany w artykule. Współrzędne z nagłówka."
+  },
+  {
+    "id": "kosciol-sw-patryka",
+    "nazwa": "Kościół św. Patryka",
+    "name_en": "St. Patrick's Church",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Rechniewskiego 14",
+    "adres_historyczny": null,
+    "lat": 52.2268,
+    "lon": 21.1054,
+    "lokalizacja": "dokladna",
+    "okres": "1990–2002",
+    "istnieje": true,
+    "fakty": [
+      "8 marca 1990 roku postawiono krzyż na nowym placu kościelnym na osiedlu Gocław-Lotnisko.",
+      "29 września 1990 roku kardynał Józef Glemp poświęcił nową, drewnianą kaplicę, którą parafia dostała w darze od księży pallotynów z Ożarowa Mazowieckiego.",
+      "2 lutego 1991 roku wydano dekret erygujący parafię.",
+      "16 kwietnia 2000 roku odbyło się uroczyste wejście do nowego kościoła.",
+      "Konsekracja kościoła miała miejsce 29 czerwca 2002 r."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St. Patrick's Church at Rechniewskiego 14 on the Gocław-Lotnisko estate was founded from a 1988 mission by Fr. Wojciech Zdziebłowski. The parish was erected in 1991 and the church consecrated in 2002.",
+    "ludzie": [
+      {
+        "kto": "Wojciech Zdziebłowski",
+        "rola": "ksiądz, wikariusz, budowniczy nowej parafii",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Glemp",
+        "rola": "kardynał, poświęcił kaplicę w 1990 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Marian Duś",
+        "rola": "sufragan archidiecezji warszawskiej, poświęcił krzyż w 1990 roku",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kościół św. Patryka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Patryka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z artykułu. Sufragan Marian Duś poświęcił krzyż, plac i altankę w kwietniu 1990 r. (tekst: 'Miesiąc później'), zapisane jako rok 1990."
+  },
+  {
+    "id": "kapiaca-sie-rzezba",
+    "nazwa": "Kąpiąca się",
+    "name_en": "Bathing Woman (sculpture)",
+    "typ": "pomnik",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2429536,
+    "lon": 21.0524313,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rzeźba została ustawiona na niewielkim wzniesieniu południowego brzegu Stawu Łabędziowego.",
+      "Odlew z brązu o wysokości 178 cm i wadze prawie 500 kg powstał na podstawie gipsowego odlewu wystawionego w listopadzie 1928 roku w Salonie Związku Zawodowego Polskich Artystów Plastyków; rzeźba otrzymała wtedy nagrodę miasta stołecznego Warszawy.",
+      "Rzeźbę odlano w brązie w Firmie Bracia Łopieńscy w Warszawie.",
+      "Została odsłonięta 28 września 1929 roku o godz. 12:00 przez prezydenta Warszawy Zygmunta Słomińskiego.",
+      "30 stycznia 1997 roku podczas nieudanej próby kradzieży rzeźba została uszkodzona."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bathing Woman is a bronze sculpture by Olga Niewska, unveiled on 28 September 1929 on the south bank of Swan Pond. It was damaged in an attempted theft in 1997.",
+    "ludzie": [
+      {
+        "kto": "Olga Niewska",
+        "rola": "autorka rzeźby",
+        "wiki": null
+      },
+      {
+        "kto": "Zygmunt Słomiński",
+        "rola": "prezydent Warszawy, odsłonił rzeźbę w 1929 roku",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kąpiąca się (rzeźba)",
+        "url": "https://pl.wikipedia.org/wiki/K%C4%85pi%C4%85ca_si%C4%99_%28rze%C5%BAba%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu; brak numeru adresu."
+  },
+  {
+    "id": "kepa-goclawska",
+    "nazwa": "Kępa Gocławska",
+    "name_en": "Kępa Gocławska",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.227194,
+    "lon": 21.068177,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1780 r. Kępę Gocławską kupił król Stanisław August Poniatowski; następnie stała się własnością bratanka króla, księcia Stanisława Poniatowskiego (1754–1833).",
+      "Teren był prawie niezasiedlony z powodu częstych wylewów Wisły (m.in. w 1909 r.); w 1912 r. mieszkało tam 25 osób.",
+      "8 kwietnia 1916 generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające do Warszawy (od 1 kwietnia 1916) m.in. Kępę Gocławską.",
+      "W latach 1969–1974 powstało tam osiedle Kępa Gocławska według projektu A. Stefańskiego, o powierzchni ok. 14 ha, z budynkami 5–11-piętrowymi.",
+      "Pojęcie „Chamowa”, wyrażające dezaprobatę mieszkańców wobec blokowisk, utrwalił w swojej twórczości mieszkający na Kępie Gocławskiej Miron Białoszewski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kępa Gocławska is an area in Praga-Południe near Gocław. Bought by King Stanisław August Poniatowski in 1780, it was joined to Warsaw in 1916 and received a housing estate in 1969–1974.",
+    "ludzie": [
+      {
+        "kto": "Stanisław August Poniatowski",
+        "rola": "kupił Kępę Gocławską w 1780 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Poniatowski",
+        "rola": "bratanek króla, właściciel po 1780 roku (1754–1833)",
+        "wiki": null
+      },
+      {
+        "kto": "Hans Hartwig von Beseler",
+        "rola": "generał-gubernator, włączył teren do Warszawy w 1916 r.",
+        "wiki": null
+      },
+      {
+        "kto": "A. Stefański",
+        "rola": "autor projektu osiedla z lat 1969–1974",
+        "wiki": null
+      },
+      {
+        "kto": "Miron Białoszewski",
+        "rola": "mieszkał na Kępie Gocławskiej, pisarz",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kępa Gocławska",
+        "url": "https://pl.wikipedia.org/wiki/K%C4%99pa_Goc%C5%82awska"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar, współrzędne z nagłówka artykułu o Kępie Gocławskiej (część dzielnicy, nie wiślany taras)."
+  }
+]
