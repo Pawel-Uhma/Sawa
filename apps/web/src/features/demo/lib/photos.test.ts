@@ -1,6 +1,6 @@
 import type { PlacePhoto } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
-import { photoCredit, showablePhotos, thumbnailUrl } from "./photos";
+import { photoCaption, photoCredit, showablePhotos, thumbnailUrl } from "./photos";
 
 const photo = (over: Partial<PlacePhoto>): PlacePhoto => ({
   url: "https://example.org/a.jpg",
@@ -35,6 +35,15 @@ describe("showablePhotos", () => {
       url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Targ.jpg/1280px-Targ.jpg",
     });
     expect(showablePhotos([first, again, thumb])).toEqual([first]);
+  });
+});
+
+describe("photoCaption", () => {
+  it("drops the import note in square brackets", () => {
+    expect(
+      photoCaption(photo({ caption: "Market in Kercelego Square [lokalizacja: przyblizona]" })),
+    ).toBe("Market in Kercelego Square");
+    expect(photoCaption(photo({ caption: "[tylko notatka]" }))).toBeNull();
   });
 });
 
