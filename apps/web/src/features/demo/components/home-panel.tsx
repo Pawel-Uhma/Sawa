@@ -97,7 +97,10 @@ export function HomePanel({
     },
     { afterSec: 3, text: t("Wybieram miejsca z historią…", "Picking places with stories…") },
     { afterSec: 7, text: t("Układam kolejność przystanków…", "Putting the stops in order…") },
-    { afterSec: 14, text: t("Jeszcze chwila, to dłuższa trasa…", "Almost there, it's a long one…") },
+    {
+      afterSec: 14,
+      text: t("Jeszcze chwila, to dłuższa trasa…", "Almost there, it's a long one…"),
+    },
   ]);
   const showLocating = useDelayed(locating, 600);
 
@@ -162,7 +165,7 @@ export function HomePanel({
       </div>
 
       {isFindingFastest ? (
-        <p role="status" className="mt-2 flex items-center gap-1.5 text-[13px] text-tekst-2">
+        <p aria-live="polite" className="mt-2 flex items-center gap-1.5 text-[13px] text-tekst-2">
           <Spinner className="size-3.5 text-glebia" />
           {t("Szukam najszybszej drogi do celu…", "Finding the fastest way there…")}
         </p>
@@ -270,7 +273,7 @@ export function HomePanel({
           </>
         )}
       </PrimaryButton>
-      <span role="status" className="sr-only">
+      <span aria-live="polite" className="sr-only">
         {planning ? t("Układam trasę", "Planning your route") : ""}
       </span>
       {planError && (
@@ -459,7 +462,10 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
                 </li>
               ))}
               {results.length === 0 && (
-                <li role="status" className="flex items-center gap-2 px-3 py-2 text-[13px] text-tekst-3">
+                <li
+                  aria-live="polite"
+                  className="flex items-center gap-2 px-3 py-2 text-[13px] text-tekst-3"
+                >
                   {isSearching && <Spinner className="size-3.5" />}
                   {isSearching
                     ? t("Szukam w Warszawie…", "Searching Warsaw…")

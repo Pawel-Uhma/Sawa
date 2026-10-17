@@ -264,7 +264,7 @@ function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps
             </p>
           </>
         ) : (
-          <div role="status" className="mt-1.5 text-[13px] text-tekst-2">
+          <div aria-live="polite" className="mt-1.5 text-[13px] text-tekst-2">
             {failed ? (
               t("Trasę ułożę, gdy ruszysz.", "I'll plan the route when you set off.")
             ) : (
