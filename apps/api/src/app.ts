@@ -3,6 +3,7 @@ import { cors } from "hono/cors";
 import { createFakePlacesRepository } from "./adapters/supabase/fake-places-repository";
 import { AppError, toErrorBody } from "./lib/errors";
 import { createDebugRoutes } from "./routes/debug";
+import { createDestinationRoutes } from "./routes/destinations";
 import { healthRoutes } from "./routes/health";
 import { placeRoutes } from "./routes/places";
 import { createRouteRoutes } from "./routes/routes";
@@ -10,6 +11,10 @@ import { createSpeechRoutes } from "./routes/speech";
 import { createStoryRoutes } from "./routes/stories";
 import type { RoutePlanner } from "./services/plan-route";
 import type { LlmProvider, PlacesRepository } from "./services/ports";
+import {
+  createDisabledDestinationService,
+  type DestinationService,
+} from "./services/search-destinations";
 import { createDisabledSpeechService, type SpeechService } from "./services/speak";
 import { createStoryService } from "./services/tell-story";
 
@@ -21,6 +26,8 @@ export type AppServices = {
   llm?: LlmProvider;
   /** Missing → POST /v1/speech and /v1/stories/audio answer UPSTREAM_ERROR. */
   speech?: SpeechService;
+  /** Missing → GET /v1/destinations answers UPSTREAM_ERROR. */
+  destinations?: DestinationService;
   onLlmError?: (err: unknown, placeId: string) => void;
 };
 
@@ -64,7 +71,11 @@ export function createApp(config: AppConfig) {
     .route("/", createRouteRoutes(services.routePlanner))
     .route("/", placeRoutes(services.places ?? createFakePlacesRepository()))
     .route("/", createSpeechRoutes(speech))
-    .route("/", createStoryRoutes(stories, speech));
+    .route("/", createStoryRoutes(stories, speech))
+    .route(
+      "/",
+      createDestinationRoutes(services.destinations ?? createDisabledDestinationService()),
+    );
 
   if (config.debugPages) app.route("/", createDebugRoutes());
   return app;

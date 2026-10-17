@@ -1,5 +1,6 @@
 import { serve } from "@hono/node-server";
 import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthesizer";
+import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
@@ -12,6 +13,7 @@ import { createApp } from "./app";
 import { loadEnv } from "./lib/env";
 import { createLogger } from "./lib/logger";
 import { createRoutePlanner } from "./services/plan-route";
+import { createDestinationService } from "./services/search-destinations";
 import { createSpeechService } from "./services/speak";
 
 const env = loadEnv();
@@ -55,6 +57,10 @@ const speech = env.ELEVENLABS_KEY
   ? createSpeechService(createElevenLabsSynthesizer({ apiKey: env.ELEVENLABS_KEY }))
   : undefined;
 
+const destinations = env.GOOGLE_PLACES_API_KEY
+  ? createDestinationService(createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY))
+  : undefined;
+
 const app = createApp({
   corsOrigins: env.CORS_ORIGINS,
   corsPreviewPattern: env.CORS_PREVIEW_PATTERN,
@@ -64,6 +70,7 @@ const app = createApp({
     places: placesRepository,
     llm,
     speech,
+    destinations,
     onLlmError: (err, placeId) => logger.warn({ err, placeId }, "llm failed, story from facts"),
   },
   onUnexpectedError: (err) => logger.error({ err }, "unhandled error"),
@@ -71,7 +78,13 @@ const app = createApp({
 
 serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
   logger.info(
-    { port, departures: Boolean(env.WAW_TOKEN), llm: llm?.model ?? null, speech: Boolean(speech) },
+    {
+      port,
+      departures: Boolean(env.WAW_TOKEN),
+      llm: llm?.model ?? null,
+      speech: Boolean(speech),
+      destinations: Boolean(destinations),
+    },
     "api listening",
   );
 });

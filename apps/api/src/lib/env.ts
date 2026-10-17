@@ -42,6 +42,11 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /** Google Places API (New) key for finding a ride destination by name; without it GET /v1/destinations answers 502. */
+  GOOGLE_PLACES_API_KEY: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
   DEBUG_PAGES: z
     .enum(["0", "1"])
     .default("0")
