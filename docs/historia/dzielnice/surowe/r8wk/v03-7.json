@@ -1,0 +1,175 @@
+[
+  {
+    "id": "ulica-tenisowa",
+    "nazwa": "Ulica Tenisowa",
+    "name_en": "Tenisowa Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Tenisowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "okres II wojny światowej",
+    "istnieje": true,
+    "fakty": [
+      "Dnia 7 września 1944 roku nastąpił ostrzał artyleryjski Mokotowa, niemieckie pociski najintensywniej upadały w rejonach ulic Odyńca, Racławickiej, Ursynowskiej, Tenisowej i Misyjnej.",
+      "Dnia 15 września w wyniku bombardowania okolic zginął przy ul. Tenisowej Edward Loth, specjalista do spraw ortopedii i rehabilitacji.",
+      "Następnego dnia w wyniku ostrzału kamienicy nr 8 poległ Jerzy Bohuszewicz, 23-letni sportowiec i wychowanek AZS Warszawa; w czasie powstania był sanitariuszem w pułku Baszta.",
+      "25 września czwarty pluton OS V został przeniesiony do obrony ul. Tenisowej, dwa dni później dzielnica skapitulowała.",
+      "Na mapach miejskich z Trasbusa ulica po raz pierwszy pojawia się w 1947 roku, a jej przebieg jest podobny do dzisiejszego."
+    ],
+    "ciekawostki": [
+      "Na budynku nr 8 znajdują się ślady kul po ostrzałach."
+    ],
+    "summary_en": "Tenisowa is a 110-metre street in Wierzbno, Mokotów, a branch of Racławicka. It was shelled during the 1944 Uprising, and two residents, Edward Loth and Jerzy Bohuszewicz, were killed nearby in September 1944.",
+    "ludzie": [
+      {"kto": "Edward Loth", "rola": "specjalista do spraw ortopedii i rehabilitacji, zginął przy ul. Tenisowej w wyniku bombardowania", "wiki": null},
+      {"kto": "Jerzy Bohuszewicz", "rola": "23-letni sportowiec, wychowanek AZS Warszawa, sanitariusz w pułku Baszta, poległ po ostrzale kamienicy nr 8", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Tenisowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tenisowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-ursynowska",
+    "nazwa": "Ulica Ursynowska",
+    "name_en": "Ursynowska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Ursynowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 30. XX w.",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy: lata 30. XX w.",
+      "Na rogu Puławskiej i Ursynowskiej znajdował się do końca lat 90. XX wieku dworzec PKS. Potem wybudowano w tym miejscu stację benzynową i biurowiec Statoil.",
+      "Nazwa ulicy pochodzi od Ursynowa, który został nazwany tak na cześć imienia Juliana Ursyna Niemcewicza, polskiego dramaturga, pisarza i działacza społecznego.",
+      "Do 1 kwietnia 2011 roku pobliski zespół przystankowy Park Dreszera nosił nazwę ulicy – nazwa została zmieniona, ponieważ wprowadzała w błąd niezorientowanych pasażerów."
+    ],
+    "ciekawostki": [
+      "W książce Aleksandra Kamińskiego Kamienie na szaniec znajduje się informacja, że w mieszkaniu na Ursynowskiej zmarł po akcji pod Arsenałem Janek „Rudy” Bytnar; w rzeczywistości został przeniesiony na Kazimierzowską 15, a później odwieziony do szpitala wolskiego przy ul. Płockiej, gdzie zmarł.",
+      "W filmie Krzyk pod adresem Ursynowska 6 mieszkał Marek (Krzysztof Pieczyński) zakochany w „Prerełce” (Dorota Stalińska)."
+    ],
+    "summary_en": "Ursynowska runs from Puławska to Aleja Niepodległości in Wierzbno, Mokotów, and was laid out in the 1930s. It is named after Ursyn Niemcewicz, and a PKS bus station stood at its corner with Puławska until the late 1990s.",
+    "ludzie": [
+      {"kto": "Julian Ursyn Niemcewicz", "rola": "polski dramaturg, pisarz i działacz społeczny, patron, od którego pochodzi nazwa Ursynowa", "wiki": null},
+      {"kto": "Janek „Rudy” Bytnar", "rola": "legenda Szarych Szeregów, zmarł w szpitalu wolskim po akcji pod Arsenałem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Ursynowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Ursynowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-wal-zawadowski",
+    "nazwa": "Ulica Wał Zawadowski",
+    "name_en": "Wał Zawadowski Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów, Wilanów",
+    "adres_dzis": "Wał Zawadowski",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1960",
+    "istnieje": true,
+    "fakty": [
+      "W przeważającej części ulica leży na terenie przyłączonym do Warszawy w roku 1951.",
+      "Formalnie jako ulica uzyskała nazwę w roku 1960.",
+      "W latach 2011-2012 wał przeciwpowodziowy został wzmocniony, a w 2014 roku wdrożono nową organizację ruchu z pasami dla pieszych i rowerzystów po bokach oraz jedną jezdnią dla samochodów."
+    ],
+    "ciekawostki": [
+      "Numeracja Wału Zawadowskiego jest kontynuacją numerów posesji ulicy Włóki: ostatni numer Włóki to 75, a Wał Zawadowski rozpoczyna się od numeru 77."
+    ],
+    "summary_en": "Wał Zawadowski is a long street along the Vistula flood embankment, running through Wilanów and Mokotów. It was named in 1960, and a 2014 traffic reorganisation added lanes for pedestrians and cyclists.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Wał Zawadowski", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Wał_Zawadowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też planowaną drogę ekspresową (pominięto jako nie-historia)."
+  },
+  {
+    "id": "ulica-walbrzyska",
+    "nazwa": "Ulica Wałbrzyska",
+    "name_en": "Wałbrzyska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Wałbrzyska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała przed latami 30. XX wieku jako przedłużenie Al. Lotników i pod taką nazwą została zaprezentowana na mapach w 1936 roku.",
+      "Na planach z lat pięćdziesiątych została przedstawiona pod nazwą „Wałbrzyska”.",
+      "W 1995 roku, pod skrzyżowaniem z ul. Rolną i Al. Harcerzy Rzeczypospolitej, otwarto stację metra Służew."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wałbrzyska is a 1,100-metre street on the Służew estate in Mokotów, running from Puławska to Nowoursynowska. It began before the 1930s as an extension of Aleja Lotników, and the Służew metro station opened on it in 1995.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Wałbrzyska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Wałbrzyska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-wydminska",
+    "nazwa": "Ulica Wydmińska",
+    "name_en": "Wydmińska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Wydmińska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "początek lat 60. XX w.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica wytyczona w pierwszej połowie lat 60. XX wieku w ramach budowy osiedla mieszkaniowego (tzw. osiedla prototypów) dla Służewca Przemysłowego.",
+      "Przez wiele lat była tylko krótkim podjazdem do zaplecza baru „Janosik” u zbiegu ulic Orzyckiej i Wydmińskiej.",
+      "Jedyny blok mieszkalny leżący przy ulicy (nr 4) został zbudowany dopiero na początku XXI wieku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wydmińska is a short dead-end street on the Służew estate in Mokotów, laid out in the early 1960s as part of the prototype housing estate. Its name comes from Lake Wydmińskie near Giżycko.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Wydmińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Wydmińska"}],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie o przedłużeniu przy ul. Orzyckiej 8 jest w tekście niejasne i pominięto je."
+  },
+  {
+    "id": "ulica-zelwerowicza",
+    "nazwa": "Ulica Aleksandra Zelwerowicza",
+    "name_en": "Zelwerowicza Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Zelwerowicza",
+    "adres_historyczny": "Kosowska",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 20. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 20. XX wieku wraz z osiedlem Sadyba i początkowo nazywała się Kosowska, od uzdrowiskowej miejscowości Kosów.",
+      "Ulica została zabudowana domami jednorodzinnymi dopiero po wojnie.",
+      "W latach 60. XX wieku ulica zmieniła nazwę na Aleksandra Zelwerowicza, gdyż Kosów nie należał już wówczas do Polski.",
+      "Jedyny zachowany do dzisiaj przedwojenny dom nosi adres Zelwerowicza 15."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zelwerowicza is a street in Sadyba, Mokotów, built in the 1920s with the Sadyba estate under the name Kosowska. It was renamed in the 1960s, and its only surviving prewar house is at no. 15.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kosowska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Zelwerowicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zelwerowicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

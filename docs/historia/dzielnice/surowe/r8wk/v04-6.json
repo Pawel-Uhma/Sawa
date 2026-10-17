@@ -1,0 +1,37 @@
+[
+  {
+    "id": "rogatki-grochowskie",
+    "nazwa": "Rogatki Grochowskie",
+    "name_en": "Grochów toll houses",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Zamoyskiego 55",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1823–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rogatki Grochowskie, dawniej Rogatki Moskiewskie, to dwa klasycystyczne budynki zbudowane w 1823 roku u zbiegu ulic Grochowskiej, Lubelskiej i Zamoyskiego.",
+      "Projektantem rogatek był Jakub Kubicki.",
+      "Rogatki grochowskie do 1889 roku stanowiły granicę Warszawy.",
+      "W 1961 roku, w związku z budową północnej jezdni ul. Grochowskiej, rogatkę od strony Dworca Wschodniego przesunięto o ok. 10,5 m na północ.",
+      "18 czerwca 2001 roku pawilon południowy został przesunięty o 8,7 metra w kierunku Zakładów Wedla.",
+      "W 1998 roku odbył się generalny remont budynku północnego, a w 2002 roku budynku południowego."
+    ],
+    "ciekawostki": [
+      "W pawilonie południowym działa otworzony w 2009 roku „Czekoladowy sklep” i pijalnia czekolady Wedla."
+    ],
+    "summary_en": "The Grochów toll houses, built in 1823 on Trakt Brzeski, stand at the junction of Grochowska, Lubelska and Zamoyskiego. Designed by Jakub Kubicki, they marked the edge of Warsaw until 1889 and were moved and restored in the 1960s-2000s.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "projektant rogatek", "wiki": null}
+    ],
+    "dawne_nazwy": ["Rogatki Moskiewskie"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Rogatki grochowskie", "url": "https://warszawa.fandom.com/pl/wiki/Rogatki_grochowskie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Północny pawilon pod adresem Zamoyskiego 55, południowy pod Zamoyskiego 36."
+  }
+]

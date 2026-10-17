@@ -1,0 +1,34 @@
+[
+  {
+    "id": "pomnik-pomordowanych-mieszkancow-wawra",
+    "nazwa": "Pomnik Pomordowanych Mieszkańców Wawra",
+    "name_en": "Monument to the Murdered Residents of Wawer",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": "27 Grudnia",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik upamiętnia miejsce publicznej egzekucji 107 mieszkańców Wawra i Anina w nocy z 26 na 27 grudnia 1939 roku.",
+      "Pomnik projektu Ewy Śliwińskiej postawiono w 1944 roku.",
+      "Cały teren pomnika zajmuje obszar ok. 70x80 metrów.",
+      "Na cokołach dwóch monumentów – mężczyzny oraz anioła – wymieniono imiona i nazwiska wszystkich ofiar.",
+      "W tylnej części pomnika znajduje się 96 krzyży i 11 macew."
+    ],
+    "ciekawostki": [
+      "Przy pomniku stoi znicz z napisem „Poległym a Niezwyciężonym”."
+    ],
+    "summary_en": "The Monument to the Murdered Residents of Wawer is a memorial cemetery on ulica 27 Grudnia, marking the place of the public execution of 107 residents of Wawer and Anin on the night of 26–27 December 1939. Designed by Ewa Śliwińska, it was erected in 1944.",
+    "ludzie": [
+      {"kto": "Ewa Śliwińska", "rola": "autorka projektu pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Pomnik Pomordowanych Mieszkańców Wawra", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Pomordowanych_Mieszkańców_Wawra"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych i numeru. Artykuł podaje tylko ulicę (przy ulicy 27 grudnia)."
+  }
+]

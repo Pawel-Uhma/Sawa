@@ -1,0 +1,162 @@
+[
+  {
+    "id": "przejscie-czerniakowska-chelmska",
+    "nazwa": "Przejście na Czerniakowskiej przy Chełmskiej",
+    "name_en": "Pedestrian crossing on Czerniakowska at Chełmska",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Czerniakowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Mieszkańcy domagali się powstania przejścia od 2002 roku.",
+      "Prace nad przejściem rozpoczęto 10 lipca 2017 roku, a zakończono 4 września 2017 roku.",
+      "Wykonawcą była firma AWE.",
+      "Naziemne przejście dla pieszych stanowi alternatywę dla istniejącej w pobliżu kładki i jest częścią Zintegrowanego Systemu Zarządzania Ruchem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A ground-level pedestrian crossing on Czerniakowska Street near its junction with Chełmska Street, Mokotów. Residents had asked for it since 2002, and it was built in the summer of 2017 as an alternative to a nearby footbridge.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Przejście na Czerniakowskiej przy Chełmskiej", "url": "https://warszawa.fandom.com/pl/wiki/Przejście_na_Czerniakowskiej_przy_Chełmskiej"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Adres z opisu: ul. Czerniakowska w pobliżu skrzyżowania z ul. Chełmską, bez numeru."
+  },
+  {
+    "id": "skocznia-narciarska-skarpa",
+    "nazwa": "Skocznia narciarska (Skarpa)",
+    "name_en": "Skarpa ski jump",
+    "typ": "sport",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Czerniowiecka 3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę skoczni rozpoczęto w 1955 roku; projektantem był inż. Jeremi Strachocki.",
+      "Obiekt oddano do użytku w 1959 roku; Skarpa była pierwszą skocznią igelitową w Polsce.",
+      "W latach 80. praktycznie zaprzestano użytkowania skoczni, a ostatnie zawody odbyły się w 1989 roku.",
+      "W połowie lat 90. zdemontowano górną połowę rozbiegu, z pozostawieniem wieży startowej.",
+      "W grudniu 2010 roku rozebrano wieżę startową ze względu na fatalny stan konstrukcji.",
+      "19 kwietnia 2005 roku artysta Cezary Bodzianowski zorganizował na skoczni happening."
+    ],
+    "ciekawostki": [
+      "Zeskok znajdował się na zboczu Skarpy wiślanej, stąd nazwa obiektu.",
+      "Oficjalny rekord skoczni wynosił 40,5 m i należał do Antoniego Łaciaka."
+    ],
+    "summary_en": "The Skarpa ski jump at Czerniowiecka 3 on Mokotów was built in 1955–1959 and was the first plastic-mat ski jump in Poland. It was abandoned after 1989, and its tower was dismantled in 2010; a ruin remains.",
+    "ludzie": [
+      {"kto": "Jeremi Strachocki", "rola": "projektant skoczni", "wiki": null},
+      {"kto": "Antoni Łaciak", "rola": "rekordzista skoczni (40,5 m)", "wiki": null},
+      {"kto": "Cezary Bodzianowski", "rola": "artysta, autor happeningu w 2005 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Skarpa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Skocznia narciarska", "url": "https://warszawa.fandom.com/pl/wiki/Skocznia_narciarska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lead artykułu nazywa obiekt nieistniejącym, ale sekcja Dojazd mówi o ruinie skoczni, więc istnieje = true. Nagłówek WSPÓŁRZĘDNE ma „brak”."
+  },
+  {
+    "id": "sky-office-center",
+    "nazwa": "Sky Office Center",
+    "name_en": "Sky Office Center",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Rzymowskiego 31",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2012–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek biurowy powstał na działce u zbiegu ul. Modzelewskiego z ul. Rzymowskiego od czerwca 2012 roku do września 2013 roku.",
+      "Projektantem był Marcin Gozdalik z pracowni JiMstudio, a inwestorem firma Sky Office Center, należąca do spółki 5th Avenue Holding.",
+      "Oficjalne otwarcie biurowca miało miejsce 19 października 2013 roku.",
+      "Budynek ma sześć kondygnacji nadziemnych (21 metrów wysokości) i dwie kondygnacje garażu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Sky Office Center is a five-storey Class A office building at 31 Rzymowskiego Street on Służewiec. Built between June 2012 and September 2013 to a design by Marcin Gozdalik, it was officially opened on 19 October 2013.",
+    "ludzie": [
+      {"kto": "Marcin Gozdalik", "rola": "projektant budynku (pracownia JiMstudio)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Sky Office Center", "url": "https://warszawa.fandom.com/pl/wiki/Sky_Office_Center"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null. Lead mówi o pięciu kondygnacjach, a dalszy tekst o sześciu nadziemnych."
+  },
+  {
+    "id": "spoldzielnia-pracy-orion",
+    "nazwa": "Spółdzielnia Pracy „Orion”",
+    "name_en": "Orion Workers' Cooperative Building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Mangalia 4",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1987–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Późnomodernistyczny biurowiec wzniesiono w latach 1987-1990 na trójkątnej działce u zbiegu ulic Mangalii i Sikorskiego.",
+      "Budynek powstał jako siedziba firmy odzieżowej Polcotex i został oddany do użytku na początku 1990 roku.",
+      "Biurowiec ma sześć kondygnacji naziemnych oraz suterynę, a wyposażono go w dwie windy osobowe i jedną towarową.",
+      "Dawniej był tu także centralny magazyn amerykańskiej korporacji Amway."
+    ],
+    "ciekawostki": [
+      "Obecnie w biurowcu mieszczą się m.in. siłownia, sklep narciarski oraz Akademia Dziennikarstwa i Realizacji Dźwięku."
+    ],
+    "summary_en": "The Orion office building at 4 Mangalia Street in Stegny was built in 1987–1990 as the headquarters of the Polcotex clothing firm. It has a heavy grey facade and a stepped form, and today houses a gym, a ski shop and a university.",
+    "ludzie": [],
+    "dawne_nazwy": ["siedziba Polcotex"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Spółdzielnia Pracy „Orion”", "url": "https://warszawa.fandom.com/pl/wiki/Spółdzielnia_Pracy_„Orion”"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null."
+  },
+  {
+    "id": "szkielet-sobieskiego-sikorskiego",
+    "nazwa": "Szkielet u zbiegu Sobieskiego i Sikorskiego",
+    "name_en": "Unfinished building (szkieletor) at Sobieskiego and Sikorskiego",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Sobieskiego 87",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pozwolenie na budowę wydano w 2000 roku; planowano tu najpierw hotel, potem biurowiec.",
+      "Po 2004 roku teren nabyła krakowska spółka hotelowa, a roboty rozpoczęła w 2007 roku.",
+      "Prace wstrzymano w marcu 2008 roku, gdy budynek osiągnął pełną wysokość ośmiu pięter.",
+      "Od tego czasu działka przechodziła z rąk do rąk; wcześniej nigdy nie ukończono budynku."
+    ],
+    "ciekawostki": [
+      "Na tzw. szkieletorze wywieszane są reklamy, również w czasie pandemii."
+    ],
+    "summary_en": "The unfinished building at 87 Sobieskiego Street, known as the szkieletor, was permitted in 2000 as a hotel and later office building. Work stopped in March 2008 when it reached eight storeys, and it has remained unfinished since.",
+    "ludzie": [],
+    "dawne_nazwy": ["szkieletor"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Szkielet u zbiegu Sobieskiego i Sikorskiego", "url": "https://warszawa.fandom.com/pl/wiki/Szkielet_u_zbiegu_Sobieskiego_i_Sikorskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że obecnie inna firma planuje przebudowę budynku na użytek prywatno-publiczny. Nagłówek WSPÓŁRZĘDNE ma „brak”."
+  }
+]

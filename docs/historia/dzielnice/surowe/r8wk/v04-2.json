@@ -1,0 +1,190 @@
+[
+  {
+    "id": "ulica-pawinskiego",
+    "nazwa": "Pawińskiego",
+    "name_en": "Pawińskiego Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Pawińskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Adolfa Pawińskiego jest długa na ponad kilometr i stanowi jedną z głównych osi MSI Rakowiec w relacji północ-południe.",
+      "Ulica zaczyna się przy skrzyżowaniu z ul. Korotyńskiego, a kończy na skrzyżowaniu z ul. Banacha.",
+      "Nazwa została nadana w 1960 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Pawińskiego is a street over a kilometre long in the Rakowiec housing estate in Ochota, running north to south from Korotyńskiego to Banacha. It was named in 1960 after the historian and archivist Adolf Pawiński.",
+    "ludzie": [
+      {"kto": "Adolf Pawiński", "rola": "patron ulicy, historyk i archiwista", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Pawińskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Pawińskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru w adresie; współrzędne nieznane."
+  },
+  {
+    "id": "ulica-sadurka",
+    "nazwa": "Sadurka",
+    "name_en": "Sadurka Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Sadurka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 50. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica w dzisiejszym kształcie powstała w latach 50. XX wieku i wówczas uzyskała nazwę Nowosolipsowska.",
+      "Ulica należała do gminy Okęcie i została wraz z nią włączona do miasta w 1951 roku.",
+      "Na początku 2011 roku rada miasta opublikowała listę ulic bez formalnie nadanych nazw, wśród nich Nowosolipsowska; ulica pozostała bez oficjalnej nazwy do 2015 roku.",
+      "Ostatecznie 9 lipca 2015 roku rada miasta nadała ulicy uchwałą XIV/311/2015 oficjalną nazwę Sadurka."
+    ],
+    "ciekawostki": [
+      "Nazwa nawiązuje do Sadurki, potoku, który dawniej przepływał przez okolice ulicy i dziś istnieje jako Potok Służewiecki."
+    ],
+    "summary_en": "Sadurka is a short street in Szczęśliwice, Ochota, built in the 1950s under the design name Nowosolipsowska. It stayed without an official name until 9 July 2015, when the city council named it after the old Sadurka stream.",
+    "ludzie": [],
+    "dawne_nazwy": ["Nowosolipsowska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Sadurka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Sadurka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru w adresie; współrzędne nieznane."
+  },
+  {
+    "id": "ulica-tarczynska",
+    "nazwa": "Tarczyńska",
+    "name_en": "Tarczyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Tarczyńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona pod koniec XIX wieku i wkrótce zabudowała się pierwszymi kamienicami.",
+      "W 1927 roku wzdłuż ulicy przeprowadzono linię Elektrycznej Kolei Dojazdowej.",
+      "Zabudowa została w dużym stopniu zniszczona podczas II wojny światowej, a kilkanaście budynków zachowało się w dobrym stanie i zostało odremontowanych.",
+      "W 1963 roku zlikwidowano biegnącą wzdłuż ulicy linię Elektrycznej Kolei Dojazdowej.",
+      "W latach 90. XX wieku zabudowę dopełnił Hotel Jan III Sobieski (1992) oraz blok nr 5/9 (1994), a w 2006 roku skrzydła biurowca Salzburg Center."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy nawiązuje do Tarczyna, miasteczka w powiecie piaseczyńskim województwa mazowieckiego."
+    ],
+    "summary_en": "Tarczyńska is a 400 m street in Stara Ochota, running from Raszyńska to Niemcewicza. It was laid out at the end of the 19th century, and an Elektryczna Kolej Dojazdowa line ran along it from 1927 to 1963.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Tarczyńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tarczyńska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru w adresie; współrzędne nieznane."
+  },
+  {
+    "id": "ulica-wawelska",
+    "nazwa": "Wawelska",
+    "name_en": "Wawelska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Wawelska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona po 1880 roku.",
+      "W latach 20. XX wieku postawiono wzdłuż niej wielkie gmachy, w tym Instytut Radiowy (dzisiaj Centrum Onkologii im. Marii Skłodowskiej-Curie).",
+      "W czasie Powstania Warszawskiego Niemcy opanowali ostatni punkt na Ochocie przy Wawelskiej 60.",
+      "W latach 1948-1951 wybudowano siedzibę GUS przy ul. Wawelskiej.",
+      "Wybudowanie trasy Łazienkowskiej, do której była włączona ul. Wawelska, zmieniło oblicze ulicy i uczyniło z niej główną arterię Ochoty."
+    ],
+    "ciekawostki": [
+      "Nazwa prawdopodobnie nawiązuje do wzgórza i zamku w Krakowie, czyli Wawelu."
+    ],
+    "summary_en": "Wawelska is one of the main streets of Ochota, about 1,620 m long, running from Al. Niepodległości to Grójecka. It was laid out after 1880 and became a main artery after the Łazienkowska route was built.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Wawelska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Wawelska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru w adresie; współrzędne nieznane."
+  },
+  {
+    "id": "ulica-wlochowska",
+    "nazwa": "Włochowska",
+    "name_en": "Włochowska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Włochowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała zapewne w połowie XIX wieku, co pokazuje mapa okolic Warszawy Kiriczenki z 1874 roku.",
+      "W 1916 roku ulica znalazła się w granicach Warszawy i wtedy nadano jej nazwę Włochowska.",
+      "W latach 70. XX wieku, w związku z budową Alej Jerozolimskich, ulicę odcięto od ul. Na Bateryjce i ul. Beresteckiej.",
+      "W 2010 roku, w związku z przebudową linii kolei radomskiej, zlikwidowano przejazd do ul. Chylońskiej."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy nawiązuje do tego, że biegnie ona w kierunku dzielnicy Włochy."
+    ],
+    "summary_en": "Włochowska is a 1,200 m street in Ochota, running from Aleje Jerozolimskie towards Mszczonowska. It probably dates from the mid-19th century and was named in 1916, when it became part of Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Włochowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Włochowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru w adresie; współrzędne nieznane."
+  },
+  {
+    "id": "ulica-wlodarzewska",
+    "nazwa": "Włodarzewska",
+    "name_en": "Włodarzewska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota, Włochy",
+    "adres_dzis": "Włodarzewska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 20. XX wieku i nosiła wtedy nazwę Solipsowska.",
+      "Nazwa Włodarzewska została nadana w 1951 roku, wraz z włączeniem całej ulicy i wsi Solipse do Warszawy.",
+      "Do 1934 roku nazwę Włodarzewskiej nosiła dzisiejsza aleja Niepodległości.",
+      "Od 1 września 2008 roku komunikację na ulicy zapewnia jednokierunkowa linia autobusowa 208.",
+      "W 2015 roku kolejny fragment do ul. Popularnej uzyskał nazwę „Wiktoryn”, a ulica została skrócona z 2,3 km do 1,7 km."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od słowa „włodarz”, oznaczającego zarządcę dóbr książęcych bądź dóbr innych możnowładców."
+    ],
+    "summary_en": "Włodarzewska is a street on the Szczęśliwice border of Ochota and Włochy, running from Grójecka to Zadumana. It was built in the 1920s as Solipsowska and renamed Włodarzewska in 1951, when Solipse was incorporated into Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": ["Solipsowska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Włodarzewska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Włodarzewska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru w adresie; współrzędne nieznane. Dzielnica z nagłówka: Ochota, Włochy."
+  }
+]

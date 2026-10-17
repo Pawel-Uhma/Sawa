@@ -1,0 +1,101 @@
+[
+  {
+    "id": "willa-boleslawa-pietrusinskiego-tykocinska-15",
+    "nazwa": "Willa Bolesława Pietrusińskiego",
+    "name_en": "Bolesław Pietrusiński Villa",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Tykocińska 15",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwupiętrowa willa w stylu neobarokowym została wybudowana w 1930 roku przez architekta Bolesława Pietrusińskiego jako dom własny; mieściło się w niej mieszkanie oraz pracownia architekta.",
+      "Po wojnie w budynku krótko urzędował komitet Polskiej Partii Robotniczej, potem mieściło się tutaj przedszkole oraz urząd ZUS.",
+      "Budynek został zachowany w latach 70. XX wieku, kiedy wokół budowano osiedle Targówek Mieszkaniowy.",
+      "W 2012 roku opuszczony od kilku lat budynek od spadkobierców byłych właścicieli zakupiła spółka Grudnik Nieruchomości, która go odremontowała.",
+      "Na początku 2014 roku spółka wystawiła willę na sprzedaż za sumę 5 mln złotych oraz przeznaczyła cały obiekt pod wynajem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-storey neo-Baroque villa at Tykocińska 15 in Targówek Mieszkaniowy, built in 1930 by the architect Bolesław Pietrusiński as his own home. It was kept when the housing estate was built in the 1970s and was renovated in 2012.",
+    "ludzie": [
+      {"kto": "Bolesław Pietrusiński", "rola": "architekt, zbudował willę jako dom własny (1930)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Bolesława Pietrusińskiego", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Bolesława_Pietrusińskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Drugi rekord tej willi (pierwszy, z artykułu o ulicy Tykocińskiej, to id willa-boleslawa-pietrusinskiego w v07-5.json). Brak współrzędnych."
+  },
+  {
+    "id": "zajezdnia-autobusowa-pozarowa",
+    "nazwa": "Zajezdnia autobusowa Pożarowa (R-8)",
+    "name_en": "Pożarowa bus depot (R-8)",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Staniewicka 3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1972–1995",
+    "istnieje": false,
+    "fakty": [
+      "Zajezdnię R-8 oddano 4 lutego 1972 roku; była to szósta zajezdnia autobusowa w Warszawie, a druga po praskiej stronie Wisły.",
+      "Pożarowa przejęła obsługę linii autobusowych na Pradze Północ oraz na Targówku.",
+      "W ramach programu oszczędnościowego w 1993 roku rozpoczęto likwidację zakładu; wszystkie autobusy przerzucono do pobliskiego zakładu R-13 Stalowa.",
+      "Ostatnim dniem funkcjonowania zakładu był 31 sierpnia 1995 roku.",
+      "W 2006 roku na terenie dawnej zajezdni wyburzono hale warsztatowe."
+    ],
+    "ciekawostki": [
+      "Ostatni pojedynczy „Ogórek” opuścił Pożarową w połowie 1980 roku, a przegubowiec już w grudniu 1977 roku."
+    ],
+    "summary_en": "The Pożarowa bus depot (R-8), run by the Warsaw municipal bus company at Staniewicka 3 in Targówek. It opened in 1972 and closed in August 1995. Its workshop halls were demolished in 2006.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Zajezdnia autobusowa Pożarowa", "url": "https://warszawa.fandom.com/pl/wiki/Zajezdnia_autobusowa_Pożarowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu („ul. Staniewickiej 3”). Teren zajezdni został sprzedany spółce Zasada Group. Brak współrzędnych."
+  },
+  {
+    "id": "ulica-bohaterow-warszawy",
+    "nazwa": "Ulica Bohaterów Warszawy",
+    "name_en": "Bohaterów Warszawy Street",
+    "typ": "ulica",
+    "dzielnica": "Ursus",
+    "adres_dzis": "Bohaterów Warszawy",
+    "adres_historyczny": "Józefa Piłsudskiego",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała ok. 1927 roku.",
+      "Do 1945 roku ulica nosiła imię Józefa Piłsudskiego, a w latach 1945-1957 imię Józefa Stalina.",
+      "Po 1957 roku nazwę zmieniono na obecną: Bohaterów Warszawy.",
+      "Przy ulicy zachowało się kilka budynków powstałych w okresie międzywojennym, m.in. nr 14, 16, 18, 23, 24, 25, 31, 37, 43, 45 i 47."
+    ],
+    "ciekawostki": [
+      "Dom nr 47 wzniesiony został przez Józefa Pieńkosa w 1938 roku i pierwotnie nosił adres Centralna 1."
+    ],
+    "summary_en": "A street in Skorosze, Ursus, running from Tomcia Palucha street to the railway near Warszawa Ursus station. Named after Józef Piłsudski until 1945 and after Józef Stalin from 1945 to 1957, it has kept its current name since then.",
+    "ludzie": [
+      {"kto": "Józef Piłsudski", "rola": "patron ulicy do 1945 roku", "wiki": null},
+      {"kto": "Józef Stalin", "rola": "patron ulicy w latach 1945-1957", "wiki": null},
+      {"kto": "Józef Pieńkos", "rola": "wzniósł domy nr 18 (1936-1938) i nr 47 (1938)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Józefa Piłsudskiego", "Józefa Stalina"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Bohaterów Warszawy", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bohaterów_Warszawy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy. Dom nr 41 rozebrany w 2014 roku."
+  }
+]

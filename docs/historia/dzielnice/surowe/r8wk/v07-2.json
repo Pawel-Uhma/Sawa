@@ -1,0 +1,293 @@
+[
+  {
+    "id": "budynek-radzyminska-94",
+    "nazwa": "Budynek przy ul. Radzymińskiej 94",
+    "name_en": "Building at 94 Radzymińska Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Radzymińska 94",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "czwarta ćwierć XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wybudowany w czwartej ćwierci XIX wieku, prawdopodobnie jako dom kolejowy przy linii kolei petersburskiej.",
+      "Budynek wchodził w skład zabudowań bocznicy kolejowej i nie został zniszczony podczas II wojny światowej.",
+      "Ostatnich mieszkańców wykwaterowano w 2008 roku; opuszczony i zaniedbany dom zamienił się w melinę.",
+      "W kwietniu 2013 roku budynek został wynajęty na skup złomu, otoczony metalowym płotem.",
+      "Pod koniec 2014 roku obiekt ponownie został opuszczony.",
+      "Budynek jest wpisany do gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A single-storey brick former railway house by the Petersburg railway line, built in the last quarter of the 19th century. It stood empty and neglected after 2008, was rented to a scrapyard in 2013 and was abandoned again at the end of 2014. It is listed in the municipal register of monuments.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Budynek Radzymińska 94", "url": "https://warszawa.fandom.com/pl/wiki/Budynek_Radzymińska_94"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule."
+  },
+  {
+    "id": "dom-siedzibna-31",
+    "nazwa": "Dom przy Siedzibnej 31",
+    "name_en": "House at 31 Siedzibna Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Siedzibna 31",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom przy Siedzibnej 31 znajduje się już na mapie z 1936 roku.",
+      "Dom został zbudowany przez Stefana Sztajera, ostatniego naczelnika Ochotniczej Straży Pożarnej na Bródnie.",
+      "Ochotnicza Straż Pożarna na Bródnie funkcjonowała do czasów okupacji niemieckiej w budynku przy ul. Kiejstuta 9, istniejącym do 1944 roku.",
+      "16 lutego 2010 roku w budynku doszło do zatrucia czadem czteroosobowej rodziny.",
+      "Budynek znajduje się w wykazie nieruchomości zabudowanych objętych działaniem dekretu Bieruta, które objęte są roszczeniami dawnych właścicieli lub ich następców prawnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-storey brick house on Bródno, built by Stefan Sztajer, the last chief of the local volunteer fire brigade. It appears on a 1936 map and is one of the surviving pre-war buildings on the street.",
+    "ludzie": [
+      {"kto": "Stefan Sztajer", "rola": "ostatni naczelnik Ochotniczej Straży Pożarnej na Bródnie, budowniczy domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dom Siedzibna 31", "url": "https://warszawa.fandom.com/pl/wiki/Dom_Siedzibna_31"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule. W źródle literówka („zatrucia się zatrucia się”), w fakcie poprawiona."
+  },
+  {
+    "id": "dom-siedzibna-43",
+    "nazwa": "Dom przy Siedzibnej 43",
+    "name_en": "House at 43 Siedzibna Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Siedzibna 43",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom przy Siedzibnej 43 powstał na długo przed wybuchem II wojny światowej i był typowym drewnianym domem strefy przedmiejskiej.",
+      "Drewniana zabudowa na Bródnie stanowiła wówczas nawet 80%.",
+      "Dom przetrwał II wojnę światową niezniszczony i nie został zburzony w związku z budową osiedla Bródno.",
+      "Piętrowy, w pełni drewniany dom jest jednym z ostatnich na Bródnie (obok domu przy Julianowskiej 27) przykładem drewnianego budownictwa z I połowy XX wieku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-storey wooden house at 43 Siedzibna Street on Bródno, one of the last examples of the wooden suburban architecture of the area. It survived the war and the construction of the Bródno estate, and its owners want to keep it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dom Siedzibna 43", "url": "https://warszawa.fandom.com/pl/wiki/Dom_Siedzibna_43"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule."
+  },
+  {
+    "id": "dom-ksiezniej-anny-1",
+    "nazwa": "Dom przy Księżnej Anny 1",
+    "name_en": "House at 1 Księżnej Anny Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Księżnej Anny 1",
+    "adres_historyczny": "Podskarbińska",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1903–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał najprawdopodobniej w latach 1903-1907 i mógł służyć jako dom mieszkalny pracowników kolei; pod taką nazwą figuruje w wojewódzkiej ewidencji zabytków.",
+      "Obiekt nosił wówczas adres od ul. Podskarbińskiej, ponieważ ul. Księżnej Anny tworzyła z nią wtedy jeden ciąg (tzw. „szosę wojenną”).",
+      "Istnieją przesłanki, że budynek był tzw. rogatką terespolską, czyli budynkiem przy dawnej granicy miasta, w którym pobierano opłaty celne i drogowe.",
+      "W Kurierze Warszawskim z 27 czerwca 1894 roku znalazła się informacja o powstaniu ośmiu rogatek, w tym „terespolskiej, urządzonej wkrótce na szosie wojennej przy wiadukcie kolejowym”.",
+      "Właścicielem budynku jest Oddział Gospodarowania Nieruchomościami Polskich Kolei Państwowych, jednak obiekt jest obecnie użytkowany przez dwóch lokatorów indywidualnych."
+    ],
+    "ciekawostki": [
+      "Budynek zbudowany jest z ceramicznej cegły pełnej łączonej zaprawą wapienną i ma trzy kominy ceglane."
+    ],
+    "summary_en": "A brick building at the start of Księżnej Anny Street in Utrata, probably built in 1903–1907 as housing for railway workers and listed in the voivodeship register. Some evidence suggests it was a Terespol tollgate on the old city boundary.",
+    "ludzie": [],
+    "dawne_nazwy": ["Podskarbińska (adres przed nazwą Księżnej Anny)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dom przy Księżnej Anny 1", "url": "https://warszawa.fandom.com/pl/wiki/Dom_przy_Księżnej_Anny_1"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Funkcja rogatki to przypuszczenie autora artykułu, nie ustalony fakt. Brak współrzędnych w artykule."
+  },
+  {
+    "id": "kosciol-chrystusa-krola",
+    "nazwa": "Kościół Chrystusa Króla",
+    "name_en": "Christ the King Church",
+    "typ": "swiatynia",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Tykocińska 27/35",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia powstała jako wotum dziękczynne za zwycięską bitwę warszawską 1920 roku.",
+      "Plac pod budowę świątyni dla Targówka został podarowany w 1931 roku, a w październiku 1931 roku poświęcono go.",
+      "Na przełomie stycznia i lutego 1932 roku dekretem abpa Aleksandra Kakowskiego przy kościele erygowano parafię.",
+      "Budowę rozpoczęto 28 października 1934 roku poświęceniem kamienia węgielnego; prace przerwał w 1939 roku wybuch II wojny światowej.",
+      "Po wojnie budowę zakończono w latach 1946–1954 według zmienionego projektu Władysława Koziejowskiego.",
+      "5 sierpnia 2011 roku w kościele wybuchł pożar; płomienie ogarnęły znaczną część dachu, a sygnaturka zawaliła się do wnętrza świątyni."
+    ],
+    "ciekawostki": [
+      "Komunistyczna władza zakazała wyłożenia 45-metrowej wieży od strony ulicy Tykocińskiej tabliczkami z nazwiskami poległych w 1920 roku."
+    ],
+    "summary_en": "A modernist church at 27/35 Tykocińska Street in Targówek Mieszkaniowy, built as a thanksgiving for the victory of the Battle of Warsaw in 1920. Construction began in 1934 and was completed after the war to a changed design. A fire in 2011 destroyed part of the roof, which was rebuilt.",
+    "ludzie": [
+      {"kto": "Stefan Colonna-Walewski", "rola": "architekt, autor modernistycznego projektu kościoła", "wiki": null},
+      {"kto": "Władysław Koziejowski", "rola": "autor zmienionego projektu, według którego budowę zakończono po wojnie", "wiki": null},
+      {"kto": "Aleksander Kakowski", "rola": "arcybiskup, dekretem erygował przy kościele parafię", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kościół Chrystusa Króla", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Chrystusa_Króla"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; numer z nagłówka tytułu (27/35)."
+  },
+  {
+    "id": "kosciol-zmartwychwstania-panskiego",
+    "nazwa": "Kościół Zmartwychwstania Pańskiego",
+    "name_en": "Church of the Resurrection of the Lord",
+    "typ": "swiatynia",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Księcia Ziemowita 39",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół powstał w 1919 roku według projektu Stefana Szyllera w formie przypominającej kształtem zakopiański dworek.",
+      "Materiały na budowę dostarczyli inicjatorzy budowy, kolejarze, ze zburzonego podczas wojny Dworca Petersburskiego.",
+      "Kościół konsekrowano 8 września 1919 roku; dokonał tego nuncjusz papieski Achilles Ratti, późniejszy papież Pius XI.",
+      "25 października 1919 roku przy świątyni erygowano parafię Zmartwychwstania Pańskiego.",
+      "Kościół był świadkiem niemieckiej łapanki z 25 sierpnia 1944 roku, kiedy wyprowadzono z dzielnicy około 4 tysiące mężczyzn.",
+      "W 2012 roku kościół, wraz z dzwonnicą i plebanią, został gruntownie wyremontowany, a 8 września został rekonsekrowany przez nuncjusza apostolskiego abpa Celestino Maggiore."
+    ],
+    "ciekawostki": [
+      "Stelaż drewnianej dzwonnicy wykonany jest z rozebranej kolei petersburskiej; na szynach widoczne są rosyjskie sygnatury."
+    ],
+    "summary_en": "A parish church in Targówek Przemysłowy, designed by Stefan Szyller in 1919 in the form of a Zakopane-style manor house. It was consecrated the same year by the papal nuncio Achilles Ratti, later Pope Pius XI, and thoroughly renovated in 2012.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "autor projektu kościoła", "wiki": null},
+      {"kto": "Achilles Ratti", "rola": "nuncjusz papieski, konsekrował kościół w 1919 roku (późniejszy papież Pius XI)", "wiki": null},
+      {"kto": "Celestino Maggiore", "rola": "nuncjusz apostolski, rekonsekrował kościół w 2012 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kościół Zmartwychwstania Pańskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Zmartwychwstania_Pańskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule."
+  },
+  {
+    "id": "obwodnica-targowka",
+    "nazwa": "Obwodnica Targówka",
+    "name_en": "Targówek Bypass",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Gorzykowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XX wieku–2016",
+    "istnieje": true,
+    "fakty": [
+      "Obwodnica Targówka to potoczne określenie ciągu ulic Ossowskiego, Handlowej, Myszkowskiej, Barkocińskiej, Pratulińskiej i Gorzykowskiej na Targówku Mieszkaniowym.",
+      "Ulica powstała w wyniku przebudowy układu ulic na Targówku w latach 90. XX wieku.",
+      "6 grudnia 2014 roku rozpoczęła się budowa mini-ronda na skrzyżowaniu ulic Gorzykowskiej i Myszkowskiej.",
+      "Rondo istniało do końca kwietnia 2016 roku, a w związku ze zmianą organizacji ruchu, wynikającą z rozbudowy II linii metra, zostało zlikwidowane.",
+      "W ramach tej zmiany został również namalowany buspas w kierunku centrum."
+    ],
+    "ciekawostki": [
+      "Mieszkańcy proponowali, by rondo nosiło imię Józefa Balcerka, mieszkańca ul. Mokrej z serialu „Alternatywy 4”, jednak rondo pozostało bez nazwy."
+    ],
+    "summary_en": "Targówek's bypass is a name for a group of streets in Targówek Mieszkaniowy, rebuilt in the 1990s. A mini-roundabout at Gorzykowska and Myszkowska streets was built in December 2014 and removed in April 2016 when the second metro line changed traffic arrangements.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Obwodnica Targówka", "url": "https://warszawa.fandom.com/pl/wiki/Obwodnica_Targówka"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje jednego adresu. W adres_dzis wpisano Gorzykowską, na której leżało rondo. Brak współrzędnych."
+  },
+  {
+    "id": "ogrody-dzialkowe-raj",
+    "nazwa": "Rodzinny Ogród Działkowy „Raj”",
+    "name_en": "Raj Family Allotment Garden",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Janowiecka 20",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rodzinny Ogród Działkowy „RAJ” powstał w 1970 roku na terenach leżących od kilkudziesięciu lat ugorem.",
+      "Dzięki determinacji działkowców porośnięty krzakami nieużytek zamieniono w teren zadbany i dobrze zagospodarowany.",
+      "Dom Działkowca powstał w 1976 roku.",
+      "Obecnie na terenie ogrodu znajduje się 463 działki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rodzinny Ogród Działkowy „RAJ” is an allotment garden in the Elsnerów area of Targówek, founded in 1970 on long-abandoned wasteland. It has 463 plots and a clubhouse built in 1976.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ogrody Działkowe Raj", "url": "https://warszawa.fandom.com/pl/wiki/Ogrody_Działkowe_Raj"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z sekcji „Dojazd” (Janowiecka 20)."
+  },
+  {
+    "id": "pozar-kosciola-chrystusa-krola-2011",
+    "nazwa": "Pożar Kościoła Chrystusa Króla",
+    "name_en": "Fire at Christ the King Church (2011)",
+    "typ": "zdarzenie",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Tykocińska 27/35",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "5 sierpnia 2011",
+    "istnieje": true,
+    "fakty": [
+      "Pożar wybuchł 5 sierpnia 2011 roku w remontowanej świątyni około godziny 10; przyczyną zaprószenia ognia były najpewniej prowadzone na dachu prace dekarskie.",
+      "Do walki z ogniem stanęło przynajmniej 12 jednostek straży pożarnej, w tym jednostka wysokościowa.",
+      "W momencie wybuchu pożaru w środku było siedem osób: pięciu pracowników oraz dwóch wiernych; nikomu nic się nie stało.",
+      "Pożar udało się opanować po około dwóch godzinach; spłonęła przynajmniej połowa dachu i zawaliła się sygnaturka.",
+      "7 sierpnia odbyła się normalnie niedzielna msza święta; jedyną zmianą było przesunięcie ołtarza głównego bliżej środka kościoła."
+    ],
+    "ciekawostki": [
+      "Wnętrza świątyni nie ucierpiały, nic nie stało się także zabytkowym obrazom Michaela Willmanna."
+    ],
+    "summary_en": "A fire broke out in the Christ the King Church on 5 August 2011 during roof repairs. Firefighters from at least 12 units put it out after about two hours. Half the roof and the spire burned, but no one was hurt.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pożar w Kościele Chrystusa Króla", "url": "https://warszawa.fandom.com/pl/wiki/Pożar_w_Kościele_Chrystusa_Króla"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie opisane osobno; pokrywa się z rekordem kościoła Chrystusa Króla."
+  }
+]

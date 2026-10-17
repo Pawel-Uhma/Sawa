@@ -1,0 +1,245 @@
+[
+  {
+    "id": "ulica-sadowelska",
+    "nazwa": "Ulica Sądowelska (nieistniejąca)",
+    "name_en": "Sądowelska Street (no longer exists)",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Rembielińska 3/5",
+    "adres_historyczny": "Sądowelska",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–lata 70. XX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Ulica pojawiła się na planach regulacyjnych Bródna w latach 30. XX wieku i w ciągu kilku lat została zabudowana licznymi domami.",
+      "Zabudowa ulicy niezniszczona przetrwała II wojnę światową i kolejnych kilkanaście lat; została całkowicie wyburzona dopiero na przełomie lat 60. i 70. XX wieku.",
+      "W miejscu ulicy powstał blok osiedla Bródno przy ul. Rembielińskiej 3/5.",
+      "Najdłużej istniejącym reliktem ulicy był dom przy Julianowskiej 38, wyburzony około 2002 roku.",
+      "Tabliczkę z nazwą „Sądowelska” udało się uratować; znajduje się w zbiorach Towarzystwa Przyjaciół Warszawy."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy wiązała się z miejscowością Sądowel, gdzie w 1281 roku miał mieć miejsce domniemany zjazd śląskich Piastów."
+    ],
+    "summary_en": "Sądowelska was a street in Bródno that ran from Budowlana to Julianowska. It was built up in the 1930s, survived the war, and was demolished at the turn of the 1960s and 1970s to make way for a Bródno estate block. No remnants remain.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Sądowelska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Sądowelska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres_dzis to dzisiejszy adres bloku, który zastąpił ulicę. Artykuł w infoboksie podaje dzielnicę XXV Bródno (Praga Północ), w nagłówku Targówek."
+  },
+  {
+    "id": "ulica-tykocinska",
+    "nazwa": "Ulica Tykocińska",
+    "name_en": "Tykocińska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Tykocińska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Tykocińska została wyznaczona i nazwana mniej więcej na początku lat 20. XX wieku na terenie dawnego folwarku Pracówka Pinkusa Pracowitego.",
+      "W latach 30. jedną z posesji zakupił za 900 dolarów Bolesław Pietrusiński i wybudował sobie willę; wkrótce powstał też szereg kamienic oraz rozpoczęto budowę kościoła Chrystusa Króla.",
+      "Dopiero kiedy w 1972 roku rozpoczęto budowę osiedla Targówek Mieszkaniowy, zmianie uległ układ ulic w okolicy, a Tykocińska została znacznie skrócona i umieszczona na uboczu.",
+      "Fragment ulicy włączono w bieg nowej ulicy Ossowskiego, fragment przemianowano na Gościeradowską, a fragment zlikwidowano."
+    ],
+    "ciekawostki": [
+      "Jerzy Kasprzycki nazwał ją nawet „Marszałkowską tej dzielnicy”.",
+      "Ulica długo pokryta była czerwoną kostką klinkierową i oświetlana gazowymi latarniami.",
+      "Nazwa ulicy nawiązuje do miasteczka Tykocin na Podlasiu."
+    ],
+    "summary_en": "A short street in Targówek Mieszkaniowy, laid out around 1920 on the former Pracówka farm. In the 1930s it was one of the most important streets in Targówek; in 1972 it was shortened when the housing estate was built around it.",
+    "ludzie": [
+      {"kto": "Bolesław Pietrusiński", "rola": "kupił posesję przy ulicy i wybudował tu willę w latach 30. XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Tykocińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tykocińska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje jednego numeru; adres to sama nazwa ulicy. Obiekty przy ulicy: nr 15 (willa), 32/34 (osobny rekord), 27/35 (kościół Chrystusa Króla)."
+  },
+  {
+    "id": "willa-boleslawa-pietrusinskiego",
+    "nazwa": "Willa Bolesława Pietrusińskiego",
+    "name_en": "Bolesław Pietrusiński Villa",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Tykocińska 15",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 30. XX wieku Bolesław Pietrusiński zakupił za 900 dolarów jedną z posesji przy ulicy Tykocińskiej i wybudował sobie willę.",
+      "W 1972 roku, gdy rozpoczęto budowę osiedla Targówek Mieszkaniowy, zachowano zabytkowe zabudowania, w tym willę Pietrusińskiego, którą wkomponowano w układ osiedla."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A pre-war villa at Tykocińska 15 in Targówek, built in the 1930s by Bolesław Pietrusiński. It was kept as a historic building when the Targówek Mieszkaniowy estate was built around it.",
+    "ludzie": [
+      {"kto": "Bolesław Pietrusiński", "rola": "kupił posesję i wybudował willę w latach 30. XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Tykocińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tykocińska"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord z artykułu o ulicy Tykocińskiej (oficjalny adres z listy obiektów: ul. Tykocińska 15). Brak współrzędnych."
+  },
+  {
+    "id": "dom-tykocinska-32-34",
+    "nazwa": "Budynek przy ul. Tykocińskiej 32/34 (ośrodek zdrowia)",
+    "name_en": "Building at 32/34 Tykocińska Street (health centre)",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Tykocińska 32/34",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom nr 32/34 przy Tykocińskiej powstał w 1914 roku.",
+      "Podczas powstania warszawskiego działał w tym budynku punkt sanitarny II rejonu XXVII obwodu Armii Krajowej, prowadzony przez Andrzeja Kawalskiego „Atoma”.",
+      "Na budynku umieszczona jest tablica upamiętniająca ten punkt sanitarny; dziś mieści się tu ośrodek zdrowia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A house at 32/34 Tykocińska Street in Targówek, built in 1914. During the Warsaw Uprising it housed an Armia Krajowa first-aid post run by Andrzej Kawalski „Atom”, commemorated by a plaque. It now houses a health centre.",
+    "ludzie": [
+      {"kto": "Andrzej Kawalski „Atom”", "rola": "prowadził punkt sanitarny AK w tym budynku podczas powstania warszawskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Tykocińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Tykocińska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych. Rok 1914 dotyczy domu nr 32/34 (podany w artykule)."
+  },
+  {
+    "id": "ulica-unicka",
+    "nazwa": "Ulica Unicka",
+    "name_en": "Unicka Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Unicka",
+    "adres_historyczny": "Pratulińska (fragment)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2021–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Do 4 czerwca 2021 roku ulica była częścią ul. Pratulińskiej.",
+      "Ulica powstała w 2021 roku.",
+      "Jej nazwa nawiązuje do tragicznych wydarzeń w Pratulinie z 26 stycznia 1874 roku, podczas których zastrzelonych zostało trzynastu unitów przez wojsko rosyjskie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A roughly 650-metre street in Targówek Mieszkaniowy, split off from Pratulińska Street in June 2021 and named after the 1874 Pratulin massacre of Uniates.",
+    "ludzie": [],
+    "dawne_nazwy": ["Pratulińska (fragment)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Unicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Unicka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-warszawski-swit",
+    "nazwa": "Ulica Warszawski Świt",
+    "name_en": "Warszawski Świt Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Warszawski Świt",
+    "adres_historyczny": "Poborzańska (przedłużenie)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2022–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica dawniej była przedłużeniem Poborzańskiej.",
+      "Kiedy wybudowano Osiedle Świt, zdecydowano się na zmianę nazwy ulicy na obecną.",
+      "Nazwa ulicy oraz osiedla pochodzi od leżącego w pobliżu Domu Kultury Świt."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street on the Bródno estate in Targówek that once continued Poborzańska Street. It was renamed when the Świt housing estate was built, after the nearby Świt Cultural Centre.",
+    "ludzie": [],
+    "dawne_nazwy": ["Poborzańska (przedłużenie)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Warszawski Świt", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Warszawski_Świt"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy. Infobox podaje rok powstania 2022, a treść mówi o wcześniejszym przedłużeniu Poborzańskiej."
+  },
+  {
+    "id": "ulica-zamkowa",
+    "nazwa": "Ulica Zamkowa",
+    "name_en": "Zamkowa Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Zamkowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2010–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa ulicy rozpoczęła się w 2010 roku wraz z budową pierwszych bloków osiedla Wilno.",
+      "Ulica otrzymała nazwę 20 października 2011 roku, nawiązując do zamku wileńskiego.",
+      "W 2012 roku otwarto dla ruchu pierwszy odcinek ulicy do ul. Miłosiernej; fragmenty do placu Ostrej Bramy były gotowe w 2013 roku.",
+      "W latach 2013-2014 ul. Zamkową kursowały autobusy linii 170."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The main north-south street of the Wilno estate in Elsnerów, Targówek. Built from 2010, it was named in October 2011 after the castle in Vilnius and was fully open by 2013.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Zamkowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zamkowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-lakocinska",
+    "nazwa": "Ulica Łąkocińska",
+    "name_en": "Łąkocińska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Łąkocińska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica pojawiła się na planach regulacyjnych Bródna dopiero w latach 30. XX wieku.",
+      "Zabudowa ulicy, głównie z II połowy lat 30. XX wieku, nie uległa większym zniszczeniom podczas II wojny światowej.",
+      "Ulicy nigdy nie doprowadzono do Julianowskiej; dopiero w latach 70. XX wieku od południa dotarła ulica Budowlana (dziś Matki Teresy z Kalkuty).",
+      "Około 2003 roku rozebrano zachowany dom nr 8.",
+      "Nazwa ulicy nawiązuje zapewne od miejscowości Łąkocin bądź Łąkociny."
+    ],
+    "ciekawostki": [
+      "Ulica zachowała charakter przedmiejskiej uliczki Bródna, z częściowo zachowanym dawnym brukiem z kamienia polnego."
+    ],
+    "summary_en": "A short street on Bródno, Targówek, planned in the 1930s and built up mostly in the late 1930s. Its planned route to Julianowska was never completed, and it kept its pre-war character after the Bródno estate was built.",
+    "ludzie": [],
+    "dawne_nazwy": ["Łękocińska (dawna forma oboczna)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Łąkocińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Łąkocińska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy. Przedwojenne domy przy nr 3, 5, 6, 10, 11, 16, 18."
+  }
+]

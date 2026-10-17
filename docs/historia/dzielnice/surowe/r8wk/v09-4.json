@@ -1,0 +1,64 @@
+[
+  {
+    "id": "ciszewskiego",
+    "nazwa": "Ulica Ciszewskiego",
+    "name_en": "Ciszewskiego Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Ciszewskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Ciszewskiego znajduje się na Ursynowie od lat 70. XX wieku.",
+      "Do 19 września 2017 ulica upamiętniała Józefa Feliksa Ciszewskiego – inżyniera, publicystę, członka Polskiej Partii Komunistycznej i komunistycznej Partii Związku Radzieckiego.",
+      "Odpowiednią uchwałę podjęto 31 sierpnia.",
+      "19 września 2017 roku nowym patronem ulicy został komentator i dziennikarz Jan Ciszewski.",
+      "Radny Ursynowa Paweł Lenarczyk z Otwartego Ursynowa opowiedział się przeciwko dekomunizacji ul. Ciszewskiego oraz ul. Związku Walki Młodych (ZWM)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ciszewskiego is a street in Ursynów that has existed since the 1970s. Until September 2017 it honoured Józef Feliks Ciszewski, a communist-era engineer and publicist, and then its patron was changed to sports commentator and journalist Jan Ciszewski during the decommunisation of street names.",
+    "ludzie": [
+      {"kto": "Józef Feliks Ciszewski", "rola": "patron ulicy do 19 września 2017, inżynier, publicysta, członek Polskiej Partii Komunistycznej", "wiki": null},
+      {"kto": "Jan Ciszewski", "rola": "patron ulicy od 19 września 2017, komentator i dziennikarz", "wiki": null},
+      {"kto": "Paweł Lenarczyk", "rola": "radny Ursynowa z Otwartego Ursynowa, przeciwnik dekomunizacji ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Zmiana patrona ulicy Ciszewskiego", "url": "https://warszawa.fandom.com/pl/wiki/Zmiana_patrona_ulicy_Ciszewskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje zmianę patrona ulicy, a nie jej nazwy."
+  },
+  {
+    "id": "zabi-dolek",
+    "nazwa": "Żabi Dołek",
+    "name_en": "Żabi Dołek (Frog Hollow)",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Belgradzka 8",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Żabi Dołek to potoczna nazwa terenu na skrzyżowaniu ulic Belgradzkiej i Lanciego.",
+      "Projekt osiedla Natolin zakładał w tym miejscu budowę ciągu handlowego, który nie został zrealizowany, z wyjątkiem pawilonu przy Belgradzkiej 6 (wieloletni Globi).",
+      "W latach 90. na tym terenie znajdowała się przerwana budowa, otoczona niskim wałem ziemnym i płotem.",
+      "Pod koniec lat 90. rozpoczęła się budowa trzech bloków mieszkalnych i dołek zniknął, nazwa jednak pozostała.",
+      "Teren był przedmiotem kontrowersji przy podziale spółdzielni budowlano-mieszkaniowej „Natolin” i utworzeniu spółdzielni mieszkaniowej „Przy Metrze”, która utraciła go w niejasnych okolicznościach na rzecz SBM „Natolin”."
+    ],
+    "ciekawostki": [
+      "Nazwa nie jest oficjalna, można ją jednak spotkać w Internecie, w mediach, na forach czy blogach."
+    ],
+    "summary_en": "Żabi Dołek is an informal name for a site at the junction of Belgradzka and Lanciego streets in Natolin, Ursynów. An unfinished building site once filled with water gave it the name, and three residential blocks now stand there.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Żabi Dołek", "url": "https://warszawa.fandom.com/pl/wiki/Żabi_Dołek"}],
+    "pewnosc": "srednia",
+    "uwagi": "Na miejscu dołka stoją bloki pod adresami Belgradzka 8, 10 i 12; podano pierwszy z nich. Sam dołek zniknął, nazwa pozostała."
+  }
+]

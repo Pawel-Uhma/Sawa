@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ulica-krowia",
+    "nazwa": "ulica Krowia",
+    "name_en": "Krowia Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Krowia",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 70. XIX wieku i prawdopodobnie stanowiła dojazd do mięsnych targów oraz rzeźni miejskiej.",
+      "Po południowej stronie w 1899 roku powstał budynek szlachtuzu, gdzie dokonywano uboju bydła.",
+      "Północną stronę zajmuje dawna fabryka wyrobów metalowych Ogórkiewicza i Zagórnego (nr 6), która w 2012 roku została rozebrana, a następnie ma być odtworzona do 2014 jako podstawa apartamentowca."
+    ],
+    "ciekawostki": [
+      "Obecnie inwestor pobliskiego apartamentowca prowadzi starania, aby zmienić nazwę ulicy na Václava Havla."
+    ],
+    "summary_en": "A short 125 m street in Stara Praga, laid out in the 1870s and probably serving the meat market and municipal slaughterhouse. The slaughterhouse of 1899 is gone, and the former Ogórkiewicz and Zagórny factory at no. 6 became the base of an apartment block.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Krowia", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Krowia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  },
+  {
+    "id": "ulica-klopotowskiego",
+    "nazwa": "ulica Kłopotowskiego",
+    "name_en": "Kłopotowski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Kłopotowskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Powstanie ulicy szacowane jest na drugą połowę XVIII wieku.",
+      "Około 1820 roku została poszerzona i przedłużona do ul. Targowej, a w latach 1824-1825 stanęła przy niej klasycystyczna Komora Wodna.",
+      "Znaczenie ulicy utrzymywało się aż do oddania do użytku w 1864 roku mostu Kierbedzia.",
+      "W 1949 roku jej patronem został lewicowy działacz Karol Wójcik.",
+      "W 1991 roku patronem ulicy został ks. Ignacy Kłopotowski."
+    ],
+    "ciekawostki": [
+      "W marcu 2009 roku przy wejściu do Domu Generalnego Sióstr Loretanek (nr 18) otwarto drugie w Warszawie Okno Życia."
+    ],
+    "summary_en": "A roughly 600 m street in Stara Praga, formerly Brukowa and Szeroka, later named after Karol Wójcik. Since 1991 it has been named after the priest Ignacy Kłopotowski, founder of the Sisters of Loreto.",
+    "ludzie": [
+      {"kto": "ks. Ignacy Kłopotowski", "rola": "patron ulicy od 1991 roku; polski prezbiter katolicki, założyciel Zgromadzenia Sióstr Matki Bożej Loretańskiej", "wiki": null},
+      {"kto": "Karol Wójcik", "rola": "lewicowy działacz, patron ulicy od 1949 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Brukowa", "Szeroka", "Wójcika"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Kłopotowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kłopotowskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  },
+  {
+    "id": "ulica-okrzei",
+    "nazwa": "ulica Stefana Okrzei",
+    "name_en": "Stefan Okrzeja Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Okrzei",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia ulicy sięga XVI wieku, kiedy to wraz z Ząbkowską stanowiła granicę pomiędzy wydzielonymi jurydyką praską oraz Skaryszewem.",
+      "W 1948 ulica otrzymała nowego patrona – Stefana Okrzeję.",
+      "Po II wojnie światowej na ulicy stanął m.in. Powszechny Dom Towarowy oraz Kino Praha.",
+      "Dnia 17 stycznia 1985 r. u zbiegu Okrzei i Wybrzeża Szczecińskiego odsłonięto Pomnik Kościuszkowców.",
+      "W 1997 roku próbowano zmienić patrona ulicy na kardynała Aleksandra Kakowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Formerly Brukowana and Brukowa, this Stara Praga street was one of the first in Praga to have a cobbled surface. It was renamed in 1948 after Stefan Okrzeja, a Polish Socialist Party activist executed at the Citadel.",
+    "ludzie": [
+      {"kto": "Stefan Okrzeja", "rola": "patron ulicy od 1948 roku; działacz niepodległościowy, członek PPS, stracony na stokach Cytadeli", "wiki": null}
+    ],
+    "dawne_nazwy": ["Brukowana", "Brukowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Okrzei", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Okrzei"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  },
+  {
+    "id": "ulica-lochowska",
+    "nazwa": "ulica Łochowska",
+    "name_en": "Łochowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Łochowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1890–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Łochowska powstała jako jedna z ostatnich na Szmulowiźnie, bo przeprowadzono ją dopiero około 1890 roku.",
+      "W latach 1911-1914 Łochowską wydłużono do okolic dzisiejszej Grajewskiej, a po jej wytyczeniu, dopiero około 1929 roku powstał ostatni odcinek, do torów kolejowych.",
+      "W 1909 roku u zbiegu z Siedlecką powstała kamienica Jana Klatczyńskiego, na jej fasadzie umieszczono zegar, a nad oknami drugiej kondygnacji niszę z popiersiem Adama Mickiewicza.",
+      "Lata 70. XX wieku były bardzo złe dla Łochowskiej – przerwano jej bieg zabudowując ją grupą mieszkalnych bloków z wielkiej płyty, a równocześnie wyburzono kilka kamienic, usunięto gazowe latarnie i bruk."
+    ],
+    "ciekawostki": [
+      "Z racji skojarzeń z gmachem hotelu okoliczna ludność nazywała kamienicę Jana Klatczyńskiego Bristolem."
+    ],
+    "summary_en": "A street in Szmulowizna built around 1890 and extended in 1911-1914 and around 1929. In the 1970s a row of prefabricated blocks cut through it, and it is named after the town of Łochów.",
+    "ludzie": [
+      {"kto": "Jan Klatczyński", "rola": "właściciel kamienicy z 1909 roku przy zbiegu z Siedlecką", "wiki": null},
+      {"kto": "Franciszek Karwowski", "rola": "przedsiębiorca budowlany, kupił i zabudował wiele parcel w okolicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Łochowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Łochowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  },
+  {
+    "id": "ulica-swietych-cyryla-i-metodego",
+    "nazwa": "ulica Świętych Cyryla i Metodego",
+    "name_en": "Saints Cyril and Methodius Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Świętych Cyryla i Metodego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1868–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około roku 1868.",
+      "Nazwę zawdzięcza sąsiedztwu cerkwi św. Marii Magdaleny – święci Cyryl i Metody są bowiem jednymi z najważniejszych świętych czczonych w obrządku prawosławnym.",
+      "Przy południowej stronie, na rogu Jagiellońskiej, znajduje się plebania cerkwi św. Marii Magdaleny z 1871 roku, obecnie również siedziba metropolity.",
+      "Cyryla i Metodego 4 – Centrum Kultury Prawosławnej, d. budynek VI Komendy Rejonowej Policji."
+    ],
+    "ciekawostki": [
+      "Z czasów działalności komisariatu pochodzi popularne wśród przedstawicieli praskiego półświatka powiedzenie „Cyryl jak Cyryl, ale te metody…”."
+    ],
+    "summary_en": "A street of about 150 m in Nowa Praga, created around 1868 and named after the Orthodox saints Cyril and Methodius because of the nearby church of St. Mary Magdalene. It was once home to a police precinct, now the Orthodox cultural centre at no. 4.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. św. Cyryla i Metodego"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica św. Cyryla i Metodego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Świętych_Cyryla_i_Metodego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  }
+]

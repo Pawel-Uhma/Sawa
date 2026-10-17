@@ -1,0 +1,268 @@
+[
+  {
+    "id": "cmentarz-na-okeciu",
+    "nazwa": "Cmentarz na Okęciu",
+    "name_en": "Okęcie Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Leonidasa",
+    "adres_historyczny": null,
+    "lat": 52.1836,
+    "lon": 20.9489,
+    "lokalizacja": "dokladna",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz utworzono jesienią 1939 przy forcie Okęcie jako miejsce pochówku żołnierzy Wojska Polskiego, którzy polegli podczas obrony Warszawy w kampanii wrześniowej.",
+      "W 1944 chowano tutaj także powstańców warszawskich.",
+      "Cmentarz został zamknięty dla pochówków w 1956; przeprowadzono wtedy ekshumacje, a szczątki przeniesiono na cmentarz Wojskowy na Powązkach.",
+      "W latach 90. cmentarz stał się własnością parafii św. Franciszka z Asyżu na Okęciu i został ponownie otwarty dla pochówków.",
+      "11 listopada 1994 r. w miejscu po ekshumowanych żołnierzach postawiono i poświęcono pomnik upamiętniający 7. Pułk Piechoty AK „Garłuch”, żołnierzy WP oraz ludność cywilną zamordowaną podczas II wojny światowej.",
+      "W 2023 r. pomnik został poddany renowacji."
+    ],
+    "ciekawostki": [
+      "Jest to jeden z najmniejszych cmentarzy warszawskich; zajmuje powierzchnię 0,3 ha."
+    ],
+    "summary_en": "Okęcie Cemetery, at ul. Leonidasa, was created in autumn 1939 next to Fort Okęcie for soldiers killed in the defence of Warsaw. Closed in 1956, it was reopened as a parish cemetery in the 1990s; a monument to the 7th Home Army Infantry Regiment was unveiled in 1994.",
+    "ludzie": [
+      {"kto": "Marian A. Pukacki", "rola": "dowódca V kompanii 56 p, poległ w obronie Warszawy 25.09.1939 r.", "wiki": null},
+      {"kto": "Wojtek Wiśniewski", "rola": "żołnierz AK, poległ 17.09.1944 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz na Okęciu", "url": "https://pl.wikipedia.org/wiki/Cmentarz_na_Ok%C4%99ciu"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że pomnik został zbudowany ze środków zebranych przez fundację „Nie zapomnij o nas” i inicjatywy Kancelarii Prezesa Rady Ministrów; pominięto to jako szczegół finansowy."
+  },
+  {
+    "id": "cmentarz-na-solipsach",
+    "nazwa": "Cmentarz na Solipsach",
+    "name_en": "Solipsy Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Stare Włochy (osiedle), cmentarz na Solipsach",
+    "adres_historyczny": null,
+    "lat": 52.1942,
+    "lon": 20.9136,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz był początkowo terenem wojskowym; jesienią 1944 zaczęto wykorzystywać go jako teren grzebalny.",
+      "W tym czasie chowano na nim głównie wojskowe i cywilne ofiary powstania warszawskiego.",
+      "Formalnie cmentarz został oddany do użytku późną jesienią 1944 w wyniku starań miejscowego proboszcza Bronisława Piórkowskiego.",
+      "Nekropolia jest otoczona betonowym murem i ma kształt nieregularnego prostokąta.",
+      "Na cmentarzu znajduje się również wydzielona kwatera zakonnic ze Zgromadzenia Sióstr Misjonarek Apostolstwa Katolickiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Solipsy Cemetery, also called the Ursus cemetery, is a Roman Catholic cemetery in Stare Włochy. Opened in late autumn 1944 at the initiative of parish priest Bronisław Piórkowski, it took many Warsaw Uprising victims.",
+    "ludzie": [
+      {"kto": "Bronisław Piórkowski", "rola": "miejscowy proboszcz, który starał się o formalne otwarcie cmentarza w 1944 r.", "wiki": null},
+      {"kto": "Jerzy Góral", "rola": "prawnik, minister kultury i sztuki (1944–2009)", "wiki": null},
+      {"kto": "Andrzej Koć", "rola": "profesor Politechniki Warszawskiej (1945–2003)", "wiki": null},
+      {"kto": "Marian Wakalski", "rola": "profesor Politechniki Warszawskiej, dyrektor Zakładów „Ursus”", "wiki": null}
+    ],
+    "dawne_nazwy": ["cmentarz w Ursusie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz na Solipsach", "url": "https://pl.wikipedia.org/wiki/Cmentarz_na_Solipsach"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lista pochowanych w artykule jest długa; w rekordzie wybrano osoby o ustalonych rolach. Dla Jerzego Górala i Andrzeja Koćia dane z nawiasu to lata życia."
+  },
+  {
+    "id": "cmentarz-we-wlochach",
+    "nazwa": "Cmentarz we Włochach",
+    "name_en": "Włochy Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Na Krańcu 1",
+    "adres_historyczny": null,
+    "lat": 52.1972,
+    "lon": 20.9161,
+    "lokalizacja": "dokladna",
+    "okres": "1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz powstał w tym samym czasie co tutejsza parafia, czyli w 1937 roku.",
+      "Inicjatorem jego powstania był miejscowy proboszcz Julian Chrościcki.",
+      "Cmentarz ma dwie bramy, przy ul. Fasolowej i ul. Dojazdowej, oraz kaplicę pogrzebową i ołtarz polowy.",
+      "Na cmentarzu znajduje się symboliczna mogiła poległych i pomordowanych za wolność ojczyzny oraz groby żołnierzy Armii Krajowej i Gwardii Ludowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Roman Catholic cemetery at ul. Na Krańcu 1 in Stare Włochy was founded in 1937 with the parish, on the initiative of parish priest Julian Chrościcki. It holds graves of actors, professors and Home Army soldiers.",
+    "ludzie": [
+      {"kto": "Julian Chrościcki", "rola": "miejscowy proboszcz, inicjator powstania cmentarza", "wiki": null},
+      {"kto": "Leon Józefowski", "rola": "kawaler Orderu Virtuti Militari (1899–1964), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Marian Rychłowski", "rola": "nauczyciel, założyciel i dyrektor stołecznych liceów M. Rychłowskiego i Tadeusza Reytana (1869–1940), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Antoni Sikorski", "rola": "podpułkownik piechoty WP, działacz niepodległościowy (1893–1987), pochowany na cmentarzu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz we Włochach", "url": "https://pl.wikipedia.org/wiki/Cmentarz_we_W%C5%82ochach"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lista pochowanych w artykule (m.in.) jest selektywna; wybrano osoby z opisanymi rolami."
+  },
+  {
+    "id": "droga-s79-ulica-pilotow",
+    "nazwa": "Droga ekspresowa S79 (ul. Pilotów)",
+    "name_en": "S79 expressway (Pilotów Street section)",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Pilotów (odcinek między al. Legionów Piłsudskiego a ul. Sasanki)",
+    "adres_historyczny": null,
+    "lat": 52.1525,
+    "lon": 20.9878,
+    "lokalizacja": "przyblizona",
+    "okres": "2009–dziś",
+    "istnieje": true,
+    "fakty": [
+      "10 sierpnia 2009 r. GDDKiA podpisała z konsorcjum TEERAG-ASDAG POLSKA Sp. z o.o./Intop Tarnobrzeg Sp. z o.o. umowę na budowę drogi S2 od węzła Lotnisko do węzła Puławska wraz z łącznikiem lotniskowym do węzła Marynarska S79.",
+      "Prace budowlane rozpoczęto 16 września 2009 r.",
+      "Łączny koszt budowy trasy S79 wraz z fragmentem trasy S2 zaplanowano na 1,123 mld zł.",
+      "Odcinek Węzeł Marynarska – Węzeł MPL Okęcie (2 km) oddano do ruchu 14 czerwca 2013 roku.",
+      "Część od Węzła MPL Okęcie do Węzła Warszawa Lotnisko (3 km) wybudowano 6 września 2013 roku.",
+      "Odcinek Węzeł Warszawa Lotnisko – Węzeł Puławska (ok. 2,5 km) oddano 18 września 2013 roku.",
+      "W październiku 2019 odcinek drogi między aleją Legionów Piłsudskiego a ulicą Sasanki otrzymał nazwę ulica Pilotów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The S79 expressway links ul. Marynarska with the Southern Warsaw Bypass (S2), connecting Chopin Airport with the bypass. Built from 2009, its sections opened in June and September 2013; part of it was named ul. Pilotów in 2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["ulica Pilotów (część S79, od 2019)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Droga ekspresowa S79 (Polska)", "url": "https://pl.wikipedia.org/wiki/Droga_ekspresowa_S79_%28Polska%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy drogi; współrzędne z nagłówka to środek trasy. Artykuł podaje też plany włączenia do przyszłej Trasy N-S."
+  },
+  {
+    "id": "glinianka-podwojna",
+    "nazwa": "Glinianka Podwójna (Staw Cegielniany)",
+    "name_en": "Glinianka Podwójna (Brickworks Pond)",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Cegielniana",
+    "adres_historyczny": null,
+    "lat": 52.20849,
+    "lon": 20.923792,
+    "lokalizacja": "dokladna",
+    "okres": "1842–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza cegielnia na terenie Włoch powstała w 1842 r.",
+      "Głównym inicjatorem rozwoju cegielni na tym terenie był Andrzej Koelichen (1791–1861), właściciel majątku włochowskiego.",
+      "Po 1930 r. nad stawem wybudowano willę z ogrodem dla czeskiego przemysłowca Franciszka Hawliczki, założyciela i właściciela fabryki świec i mydła „Polo”.",
+      "Fabryka „Polo” działała także po wojnie i zatrudniała w 1945 r. ok. 40 osób.",
+      "Fabrykę znacjonalizowano w 1950 r., a przyjęła nazwę „Wytwórnia Pomocy Naukowych”."
+    ],
+    "ciekawostki": [
+      "Nazwa Glinianka Podwójna wiąże się z tym, że w przeszłości w tym miejscu były dwa stawy; drugi znajdował się po przeciwnej stronie ul. Cegielnianej."
+    ],
+    "summary_en": "Glinianka Podwójna is a small clay-pit pond in Stare Włochy, created by flooding a brickworks clay pit. It was next to Hawliczka's villa built after 1930 and the Polo candle and soap factory.",
+    "ludzie": [
+      {"kto": "Andrzej Koelichen", "rola": "właściciel majątku włochowskiego (1791–1861), główny inicjator rozwoju cegielni", "wiki": null},
+      {"kto": "Franciszek Hawliczka", "rola": "czeski przemysłowiec, założyciel i właściciel fabryki „Polo”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Staw Cegielniany"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Glinianka Podwójna", "url": "https://pl.wikipedia.org/wiki/Glinianka_Podw%C3%B3jna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres ul. Cegielniana z opisu położenia; artykuł wspomina też ul. Drukarzy."
+  },
+  {
+    "id": "glinianki-fajansowe",
+    "nazwa": "Glinianki Fajansowe",
+    "name_en": "Fajansowe clay-pit ponds",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "w pobliżu ul. Fajansowej i ul. Rakowskiej",
+    "adres_historyczny": null,
+    "lat": 52.19679,
+    "lon": 20.95204,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stawy powstały sztucznie i są lub były pozostałością istniejącej tu wcześniej cegielni, wzmiankowanej po raz pierwszy w latach 70. XIX w.",
+      "Na zdjęciach lotniczych z 1945 roku widać kilkanaście zbiorników wodnych.",
+      "Według stanu na 2012 rok dwa stawy miały łącznie 0,5200 ha."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Fajansowe clay-pit ponds in Włochy (MSI Raków) are artificial pits left by a brickworks first mentioned in the 1870s. Aerial photos from 1945 show a dozen water bodies, while today the number is disputed.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Glinianki Fajansowe", "url": "https://pl.wikipedia.org/wiki/Glinianki_Fajansowe"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Źródła różnie podają liczbę stawów; rekord oparty na danych tekstu."
+  },
+  {
+    "id": "glinianki-zaluskie",
+    "nazwa": "Glinianki Załuskie",
+    "name_en": "Załuskie clay-pit ponds",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "w rejonie ul. Emaliowej",
+    "adres_historyczny": null,
+    "lat": 52.168962,
+    "lon": 20.924328,
+    "lokalizacja": "dokladna",
+    "okres": "XIX–XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stawy są gliniankami, powstały w wyniku zalania wodą wyrobiska iłów.",
+      "Pierwsza cegielnia na terenie Włoch powstała w 1842 r.",
+      "Większy z istniejących akwenów, położony na północ od ul. Emaliowej, został częściowo zasypany w wyniku budowy południowej obwodnicy Warszawy (lata 2010–2013).",
+      "W przeszłości był jeszcze trzeci zbiornik, który został zasypany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Załuskie clay-pit ponds in Włochy, near ul. Emaliowa and the S2 bypass. The larger pond was partly filled in during construction of the southern bypass in 2010–2013.",
+    "ludzie": [
+      {"kto": "Andrzej Koelichen", "rola": "właściciel majątku włochowskiego (1791–1861), główny inicjator rozwoju cegielni na tym terenie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Glinianki Załuskie", "url": "https://pl.wikipedia.org/wiki/Glinianki_Za%C5%82uskie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Akapit o cegielni z 1842 r. dotyczy całych Włoch, nie tylko tego obiektu."
+  },
+  {
+    "id": "gorzkiewki-osiedle",
+    "nazwa": "Gorzkiewki",
+    "name_en": "Gorzkiewki",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.160158,
+    "lon": 20.977447,
+    "lokalizacja": "przyblizona",
+    "okres": "XIII–XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1451 – lokacja na prawie chełmińskim wsi Gorzkiewki przez księcia mazowieckiego Bolesława IV.",
+      "1528 – wieś staje się własnością Babickich.",
+      "1886 – władze carskie wzniosły Fort VII Zbarż na polach między Gorzkiewkami a Zbarżem, co zahamowało rozwój wsi.",
+      "1933 – rozpoczęto budowę linii kolejowej łączącej Warszawę z Radomiem przez Czachówek i Warkę; uruchomiono ją rok później.",
+      "1938 – do Warszawy przyłączono tereny na wschód od radomskiej linii kolejowej.",
+      "1951 – do Warszawy przyłączono tereny na zachód od radomskiej linii kolejowej.",
+      "Zgodnie z decyzją Rady m.st. Warszawy z dnia 26 marca 2015 urzędowo zniesiono nazwy ulic Barometrycznej i Skawińskiej, przy których dawniej była zabudowa mieszkaniowa Gorzkiewek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Gorzkiewki is a former village, now part of the Paluch estate in Włochy. Chartered in 1451, it was cut by the Warsaw–Radom railway built in 1933–1934, and was joined to Warsaw in 1938 and 1951.",
+    "ludzie": [
+      {"kto": "Bolesław IV", "rola": "książę mazowiecki, który w 1451 r. nadał wsi lokację na prawie chełmińskim", "wiki": null},
+      {"kto": "Gotard Rakowski", "rola": "rycerz, od którego potomków zaczyna się założenie wsi (XIII–XIV w.)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gorzkiewki", "url": "https://pl.wikipedia.org/wiki/Gorzkiewki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje też późniejsze zniesienie nazw ulic Winiarskiej i Gorzkiewki (2022); pominięte, bo to nie fakt o miejscu."
+  }
+]

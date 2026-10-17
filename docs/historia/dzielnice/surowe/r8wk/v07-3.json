@@ -1,0 +1,290 @@
+[
+  {
+    "id": "stacja-techniczno-postojowa-targowek-w4",
+    "nazwa": "Stacja Techniczno-Postojowa Targówek (roboczo W-4)",
+    "name_en": "Targówek Metro Depot Station (W-4), never completed",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Mieszka I 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1950–2006",
+    "istnieje": true,
+    "fakty": [
+      "Założenie budowy metra głębokiego zostało przyjęte w 1950 roku.",
+      "W listopadzie 1952 roku w tym miejscu rozpoczęto budowę dwutorowego odcinka naziemnego o długości 40 metrów oraz drążenie tuneli w kierunku stacji.",
+      "W 1954 roku przerwano wszelkie prace poza odcinkiem doświadczalnym, gdzie do 1958 roku wybudowano około 1100 metrów tuneli.",
+      "Prace na terenie stacji postojowej na Targówku wstrzymano w 1956 roku, wobec czego inwestycja zakończyła się całkowitą klęską.",
+      "Wybudowane odcinki zalano wodą i częściowo zamurowano, a wychodzące na powierzchnię tunele przy ulicy Mieszka I przeznaczono na Centralne Piwnice Win Importowanych.",
+      "Piwnice przestały funkcjonować w 2006 roku.",
+      "5 czerwca 2010 roku można było zobaczyć pozostałości tuneli w ramach wydarzenia Uwalnianie Przestrzeni, powiązanego z festiwalem Wyłącz System."
+    ],
+    "ciekawostki": [
+      "Według artykułu w razie wojny nuklearnej tunele metra głębokiego miałyby służyć jako schrony."
+    ],
+    "summary_en": "An unfinished deep-metro depot station at Mieszka I 1 in Targówek Przemysłowy, begun in the early 1950s. Work stopped in 1956 and the tunnels were flooded; the surface tunnels later served as wine cellars until 2006.",
+    "ludzie": [],
+    "dawne_nazwy": ["Centralne Piwnice Win Importowanych (funkcja po 1956)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Stacja Techniczno-Postojowa Targówek", "url": "https://warszawa.fandom.com/pl/wiki/Stacja_Techniczno-Postojowa_Targówek"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule. Obiekt niedostępny dla zwiedzających."
+  },
+  {
+    "id": "teatr-rampa",
+    "nazwa": "Teatr Rampa",
+    "name_en": "Rampa Theatre",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Kołowa 20",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "wczesne lata 50. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek, w którym mieści się teatr „Rampa”, powstał we wczesnych latach pięćdziesiątych.",
+      "Historię Teatru Rampa zapoczątkował Marian Jonkajtys, który kierował teatrem w latach 1975–1982.",
+      "Po Jonkajtysie kierowanie Teatrem Rampa przejął Jan Krzyżanowski (1981–1987).",
+      "W 1986 roku w teatrze rozpoczęła się jego przebudowa.",
+      "Od sezonu 1987/88 Teatr objął Andrzej Strzelecki; polska wersja musicalu „Złe zachowanie” stała się hitem.",
+      "W roku 1996 konkurs na stanowisko dyrektora naczelnego wygrał Andrzej Maciejewski – dyrektor Muzeum Paderewskiego.",
+      "W sezonie 1997/98 zmianę dyrektora artystycznego: został nim Krzysztof Miklaszewski."
+    ],
+    "ciekawostki": [
+      "Według miejskiej legendy budynek początkowo miał służyć jako jedna z węzłowych stacji metra, ale nie znajduje to potwierdzenia w dokumentacji."
+    ],
+    "summary_en": "Rampa Theatre at Kołowa 20 in Targówek, housed in a building from the early 1950s. Its directors over the decades included Marian Jonkajtys, Jan Krzyżanowski, Andrzej Strzelecki and Andrzej Maciejewski, and the theatre's musicals were popular.",
+    "ludzie": [
+      {"kto": "Marian Jonkajtys", "rola": "kierował teatrem w latach 1975–1982, zapoczątkował jego historię", "wiki": null},
+      {"kto": "Jan Krzyżanowski", "rola": "kierował teatrem (1981–1987), animator kultury", "wiki": null},
+      {"kto": "Andrzej Strzelecki", "rola": "objął teatr od sezonu 1987/88, reżyser i aktor", "wiki": null},
+      {"kto": "Andrzej Maciejewski", "rola": "dyrektor naczelny po konkursie z 1996 roku, dyrektor Muzeum Paderewskiego", "wiki": null},
+      {"kto": "Krzysztof Miklaszewski", "rola": "dyrektor artystyczny od sezonu 1997/98", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Teatr Rampa", "url": "https://warszawa.fandom.com/pl/wiki/Teatr_Rampa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule. Daty Jonkajtysa (1975–1982) i Krzyżanowskiego (1981–1987) nakładają się w źródle, przepisano jak w tekście."
+  },
+  {
+    "id": "ulica-20-dywizji-piechoty-wp",
+    "nazwa": "Ulica 20 Dywizji Piechoty WP",
+    "name_en": "20 Infantry Division Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "20 Dywizji Piechoty WP",
+    "adres_historyczny": "Świętego Wincentego",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica istniała już przed 2000 rokiem i nosiła nazwę Świętego Wincentego.",
+      "28 sierpnia 2000 roku zmieniono nazwę ulicy na obecną.",
+      "Ulica swoją nazwę zawdzięcza 20 Dywizji Piechoty WP – wielkiej jednostce piechoty Wojska Polskiego II RP.",
+      "Ulica biegnie od ul. Kondratowicza na południe i kończy się na ulicy Bolivara."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in the Bródno district of Targówek, about 150 m long, near Kondratowicza metro station. It was renamed in August 2000 after the 20th Infantry Division of the Polish Army of the Second Republic.",
+    "ludzie": [],
+    "dawne_nazwy": ["Świętego Wincentego"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica 20 Dywizji Piechoty WP", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_20_Dywizji_Piechoty_WP"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-agnieszki",
+    "nazwa": "Ulica Agnieszki",
+    "name_en": "Agnieszki Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Agnieszki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1993–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1993 roku w obszarze MSI Zacisze.",
+      "Nazwa pochodzi od imienia Agnieszka, pochodzenia greckiego, oznaczającego tyle co „czysta, cnotliwa, nieskalana”.",
+      "Ulica zaczyna się przy ulicy Penelopy i kończy się jako ślepa uliczka obok osiedla domków jednorodzinnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short dead-end street in the Zacisze area of Targówek, created in 1993 and named after the given name Agnieszka.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Agnieszki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Agnieszki"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł krótki: tylko data powstania i nazwa. Adres to sama nazwa ulicy (numery 1-9 w infoboksie)."
+  },
+  {
+    "id": "ulica-czarna-droga",
+    "nazwa": "Ulica Czarna Droga",
+    "name_en": "Czarna Droga Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Czarna Droga",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1839–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała najprawdopodobniej w 1839 roku jako droga dojazdowa do folwarku i dworku Zacisze.",
+      "Po odebraniu Zygmuntowi Jórskiemu i jego żonie terenu folwarku Czarna Droga biegła od ulicy Piłsudskiego (ob. Radzymińska) do ulicy Warszawskiej (ob. Codzienna), a ostatnie 100 metrów ulicy zostało zabudowane.",
+      "W 1965 roku odcinek Czarnej Drogi od Śmiesznej do Codziennej przejęła ul. Blokowa.",
+      "W 1967 przy przebudowie ulicy Generalskiej zlikwidowano wjazd w nią z Czarnej Drogi, skracając ją do Bogumińskiej.",
+      "W latach 2014-2018 ulicę przebudowano, dając jej asfalt w miejsce żwiru i chodniki."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy pochodzi od żwiru, którym wysypana była droga, gdy prowadziła do folwarku."
+    ],
+    "summary_en": "A street in the Zacisze estate of Targówek, most likely laid out in 1839 as an access road to the Zacisze manor farm. It was shortened in 1965 and 1967 and rebuilt with asphalt and pavements in 2014–2018.",
+    "ludzie": [
+      {"kto": "Zygmunt Jórski", "rola": "dawny posiadacz terenu folwarku Zacisze, któremu go odebrano", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Czarna Droga", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Czarna_Droga"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-gajkowicza",
+    "nazwa": "Ulica Aleksandra Gajkowicza",
+    "name_en": "Aleksander Gajkowicz Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Gajkowicza",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na początku lat 70. XX wieku wraz z budową osiedla Targówek Mieszkaniowy, na miejscu dawnej niskiej zabudowy Targówka.",
+      "Ulica otrzymała nazwę 30 grudnia 1975 roku.",
+      "Nazwa ulicy nawiązuje do twórcy nowoczesnego drogownictwa w Polsce, Aleksandra Gajkowicza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Targówek Mieszkaniowy, built in the early 1970s with the housing estate and named on 30 December 1975 after Aleksander Gajkowicz, a pioneer of modern road engineering in Poland.",
+    "ludzie": [
+      {"kto": "Aleksander Gajkowicz", "rola": "twórca nowoczesnego drogownictwa w Polsce, patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Gajkowicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Gajkowicza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-generalska",
+    "nazwa": "Ulica Generalska",
+    "name_en": "Generalska Street (no longer exists)",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Radzymińska",
+    "adres_historyczny": "Generalska",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–1992",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1951-1992 istniała ulica Generalska w ówczesnej dzielnicy Praga Północ; biegła od ul. Trockiej do granicy Warszawy z Ząbkami.",
+      "Po wojnie nazwę ulicy zmieniono na Karola Świerczewskiego.",
+      "W 1974 roku zlikwidowano kolej marecką, a zastąpiły ją autobusy PKS.",
+      "W 1992 roku ulicę włączono w bieg ulicy Radzymińskiej ze zmianą numerów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Generalska was a street from Trocka Street towards the city boundary with Ząbki, named in 1951 and merged into Radzymińska Street in 1992. Its name survives only on the continuation of Radzymińska in Ząbki.",
+    "ludzie": [],
+    "dawne_nazwy": ["Szosa", "Trakt Marszałka Piłsudskiego", "Karola Świerczewskiego"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Generalska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Generalska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica z nagłówka (Targówek); sam artykuł podaje Pragę Północ. Adres dzisiejszy to ulica, w którą wcielono dawną Generalską."
+  },
+  {
+    "id": "ulica-klukowska",
+    "nazwa": "Ulica Klukowska",
+    "name_en": "Klukowska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Klukowska",
+    "adres_historyczny": "Wodna",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga istniała już z pewnością w XIX wieku jako połączenie skośnego traktu Utrata–Elsnerów z drogą do szosy radzymińskiej.",
+      "W 1951 roku ulica znalazła się w granicach Warszawy i początkowo otrzymała nazwę Wodna.",
+      "Około 1962 roku uzyskała nazwę Stanisława Olczaka, a kilka lat później obecną nazwę Klukowska.",
+      "W 2010 roku w zachodniej części ulicy rozpoczęła się budowa osiedla Wilno.",
+      "W latach 2013-2014 ul. Klukowską kursowały autobusy linii 170."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A local street in Elsnerów, Targówek, known in the 19th century as a link between the Utrata–Elsnerów road and the Radzymin road. It was renamed several times after the area joined Warsaw in 1951 and gained new housing from 2010.",
+    "ludzie": [
+      {"kto": "Stanisław Olczak", "rola": "patron ulicy w okolicy 1962 roku (jako nazwa Stanisława Olczaka)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wodna", "Stanisława Olczaka"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Klukowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Klukowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-kowalskiego",
+    "nazwa": "Ulica Kowalskiego",
+    "name_en": "Kowalskiego Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Kowalskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1978–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w drugiej połowie lat siedemdziesiątych XX wieku na odcinku od ul. Malborskiej do ul. Kondratowicza; w 1983 roku powstał drugi odcinek.",
+      "Nazwa została nadana przez władze PRL-owskie i początkowo upamiętniała Aleksandra Kowalskiego, działacza komunistycznego oraz członka Komunistycznej Partii Polski.",
+      "Po 1989 roku ulica została przeznaczona do dekomunizacji, a nazwę zmieniono uchwałą z 27 listopada 2008 roku.",
+      "Nowym patronem został Aleksander Kowalski, hokeista, żołnierz Wojska Polskiego i ofiara zbrodni katyńskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street on the Podgrodzie part of Bródno, built in 1978–1983. Its patron was changed in 2008 from a communist activist of the same name to a hockey player and soldier murdered at Katyń.",
+    "ludzie": [
+      {"kto": "Aleksander Kowalski (działacz komunistyczny)", "rola": "pierwszy patron ulicy, działacz KPP", "wiki": null},
+      {"kto": "Aleksander Kowalski (hokeista)", "rola": "patron ulicy od 2008 roku, hokeista, żołnierz WP, ofiara zbrodni katyńskiej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Aleksander Kowalski (działacz komunistyczny) – pierwszy patron"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Kowalskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kowalskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy. Według artykułu radni SLD chcieli przywrócenia dawnej nazwy."
+  }
+]
