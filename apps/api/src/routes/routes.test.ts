@@ -32,6 +32,7 @@ describe("POST /v1/routes/plan", () => {
       "an unknown story style",
       { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], storyStyle: "rap" },
     ],
+    ["no duration and no destination", { origin: HACKATHON_VENUE, interests: ["historical"] }],
     [
       "a destination together with a loop",
       {

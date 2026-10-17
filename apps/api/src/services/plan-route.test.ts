@@ -152,6 +152,35 @@ describe("route planner on real data", () => {
     expect(last?.toStop.position).toEqual(HACKATHON_VENUE);
   });
 
+  it("plans the fastest way to the Castle Square without a duration", async () => {
+    const castleSquare = { lat: 52.2477, lng: 21.0137 };
+    const plan = (durationMin?: number) =>
+      planner.plan(
+        {
+          origin: HACKATHON_VENUE,
+          interests: ["historical"],
+          destination: castleSquare,
+          durationMin,
+        },
+        NOW,
+      );
+    const fastest = RouteSchema.parse(await plan());
+    const scenic = await plan(60);
+    expect(fastest.endsAtDestination).toBe(true);
+    expect(fastest.legs[fastest.legs.length - 1]?.toStop.position).toEqual(castleSquare);
+    expect(fastest.totalMin).toBeLessThan(scenic.totalMin);
+    expect(fastest.totalMin).toBeLessThan(30);
+  });
+
+  it("takes the fastest ride when a timed ride cannot reach the destination", async () => {
+    const wilanow = { lat: 52.1652, lng: 21.0907 };
+    const route = await planner.plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], destination: wilanow },
+      NOW,
+    );
+    expect(route.endsAtDestination).toBe(true);
+  });
+
   it("plans a ride that ends at the Castle Square", async () => {
     const castleSquare = { lat: 52.2477, lng: 21.0137 };
     const route = RouteSchema.parse(
