@@ -1,5 +1,5 @@
 import type { LatLng, PlanRouteRequest, Route } from "@sawa/shared";
-import type { BBox } from "../domain/place";
+import type { BBox, PlaceSummary } from "../domain/place";
 import { planRide } from "../domain/routing/beam-search";
 import { buildRoute } from "../domain/routing/build-route";
 import { computePlaceHits } from "../domain/routing/place-hits";
@@ -12,6 +12,10 @@ import type { DepartureSource, PlacesRepository, TransitData } from "./ports";
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
 const CACHE_SIZE = 20;
+/** Places come from Supabase; refetched this often so new places reach routes without a restart. */
+const PLACES_TTL_MS = 10 * 60_000;
+/** After a failed fetch (fallback in use) Supabase is retried sooner. */
+const RETRY_TTL_MS = 60_000;
 /** A tram covers ~15 km/h on average; a ride rarely gets farther than this from the origin. */
 const reachKm = (durationMin: number) => Math.min(20, Math.max(4, durationMin * 0.15));
 
@@ -19,7 +23,22 @@ export type RoutePlanner = {
   plan(request: PlanRouteRequest, now: Date): Promise<Route>;
 };
 
-type Prepared = { hitsByPattern: Map<string, PlaceHit[]>; placesById: Map<string, PlacePoint> };
+type PlacesSource = Pick<PlacesRepository, "listInBBox">;
+
+type Prepared = {
+  hitsByPattern: Map<string, PlaceHit[]>;
+  placesById: Map<string, PlacePoint>;
+  /** Identifies the place set, so an unchanged refetch keeps the computed hits. */
+  fingerprint: string;
+};
+
+type CacheEntry = { prepared: Promise<Prepared>; expiresAt: number; isRefreshing: boolean };
+
+/** Structural subset of pino, so the service does not depend on the logger library. */
+export type PlannerLogger = {
+  info(obj: object, msg: string): void;
+  warn(obj: object, msg: string): void;
+};
 
 function reachableBbox(origin: LatLng, durationMin: number): BBox {
   const km = reachKm(durationMin);
@@ -37,28 +56,88 @@ function reachableBbox(origin: LatLng, durationMin: number): BBox {
 
 export function createRoutePlanner(deps: {
   transit: TransitData;
-  places: Pick<PlacesRepository, "listInBBox">;
+  /** Supabase in production; the file repository when Supabase is not configured. */
+  places: PlacesSource;
+  /** Used when `places` fails or times out (apps/api/data/places.geojson). */
+  fallbackPlaces?: PlacesSource;
   departures?: DepartureSource;
+  logger?: PlannerLogger;
+  /** Milliseconds; for the cache TTL. */
+  clock?: () => number;
 }): RoutePlanner {
   const { network, attribution } = deps.transit;
-  const cache = new Map<string, Promise<Prepared>>();
+  const clock = deps.clock ?? Date.now;
+  const cache = new Map<string, CacheEntry>();
 
-  async function prepare(bbox: BBox): Promise<Prepared> {
-    const key = `${bbox.minLng},${bbox.minLat},${bbox.maxLng},${bbox.maxLat}`;
-    let prepared = cache.get(key);
-    if (!prepared) {
-      prepared = deps.places.listInBBox(bbox).then((summaries) => {
-        const places = toPlacePoints(summaries);
-        return {
-          hitsByPattern: computePlaceHits(network, places),
-          placesById: new Map(places.map((p) => [p.id, p])),
-        };
-      });
-      prepared.catch(() => cache.delete(key));
-      cache.set(key, prepared);
-      if (cache.size > CACHE_SIZE) cache.delete(cache.keys().next().value as string);
+  async function fetchPlaces(
+    bbox: BBox,
+  ): Promise<{ summaries: PlaceSummary[]; isFallback: boolean }> {
+    try {
+      return { summaries: await deps.places.listInBBox(bbox), isFallback: false };
+    } catch (err) {
+      if (!deps.fallbackPlaces) throw err;
+      deps.logger?.warn({ err, bbox }, "places source failed, planner uses the fallback file");
+      return { summaries: await deps.fallbackPlaces.listInBBox(bbox), isFallback: true };
     }
-    return prepared;
+  }
+
+  async function load(bbox: BBox, previous?: Prepared) {
+    const { summaries, isFallback } = await fetchPlaces(bbox);
+    const fingerprint = fingerprintOf(summaries);
+    if (previous?.fingerprint === fingerprint) return { prepared: previous, isFallback };
+    const places = toPlacePoints(summaries);
+    const prepared: Prepared = {
+      hitsByPattern: computePlaceHits(network, places),
+      placesById: new Map(places.map((p) => [p.id, p])),
+      fingerprint,
+    };
+    deps.logger?.info({ bbox, places: places.length, isFallback }, "planner places loaded");
+    return { prepared, isFallback };
+  }
+
+  const ttl = (isFallback: boolean) => clock() + (isFallback ? RETRY_TTL_MS : PLACES_TTL_MS);
+
+  /** Stale entries keep serving while one background refetch runs, so a plan never waits on it. */
+  function refresh(entry: CacheEntry, bbox: BBox) {
+    entry.isRefreshing = true;
+    entry.prepared
+      .then((previous) => load(bbox, previous))
+      .then(({ prepared, isFallback }) => {
+        entry.prepared = Promise.resolve(prepared);
+        entry.expiresAt = ttl(isFallback);
+      })
+      .catch((err) => {
+        deps.logger?.warn({ err, bbox }, "planner places refresh failed, keeping the old ones");
+        entry.expiresAt = ttl(true);
+      })
+      .finally(() => {
+        entry.isRefreshing = false;
+      });
+  }
+
+  function prepare(bbox: BBox): Promise<Prepared> {
+    const key = `${bbox.minLng},${bbox.minLat},${bbox.maxLng},${bbox.maxLat}`;
+    const cached = cache.get(key);
+    if (cached) {
+      if (clock() >= cached.expiresAt && !cached.isRefreshing) refresh(cached, bbox);
+      return cached.prepared;
+    }
+
+    const loading = load(bbox);
+    const entry: CacheEntry = {
+      prepared: loading.then((r) => r.prepared),
+      expiresAt: Number.POSITIVE_INFINITY,
+      isRefreshing: false,
+    };
+    loading.then(
+      ({ isFallback }) => {
+        entry.expiresAt = ttl(isFallback);
+      },
+      () => cache.delete(key),
+    );
+    cache.set(key, entry);
+    if (cache.size > CACHE_SIZE) cache.delete(cache.keys().next().value as string);
+    return entry.prepared;
   }
 
   return {
@@ -100,4 +179,13 @@ export function createRoutePlanner(deps: {
       return buildRoute({ ride, network, placesById, now, attribution });
     },
   };
+}
+
+function fingerprintOf(places: PlaceSummary[]): string {
+  return places
+    .map(
+      (p) => `${p.id}@${p.position.lat},${p.position.lng}:${p.richness}:${p.interests.join("|")}`,
+    )
+    .sort()
+    .join(";");
 }
