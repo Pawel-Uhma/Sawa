@@ -1,0 +1,131 @@
+[
+  {
+    "id": "g-pomnik-polakow-poleglych-za-wolnosc-ojczyzny-1944",
+    "name": "Pomnik Polaków Poległych za Wolność Ojczyzny 1944",
+    "kind": "monument",
+    "interests": ["war_uprising"],
+    "richness": 1,
+    "lat": 52.2355137,
+    "lng": 20.9767889,
+    "distance_m": 25.25303352,
+    "fraction": 0
+  },
+  {
+    "id": "przytulek-starozakonnych-karolkowa-wolska",
+    "name": "Przytułek dla starozakonnych (róg Karolkowej i Wolskiej)",
+    "kind": "building",
+    "interests": ["architecture", "religion"],
+    "richness": 2,
+    "lat": 52.2357,
+    "lng": 20.9767,
+    "distance_m": 20.49502137,
+    "fraction": 0
+  },
+  {
+    "id": "tablica-tchorka-karolkowa-solidarnosci",
+    "name": "Tablica Tchorka na rogu Karolkowej i al. Solidarności",
+    "kind": "plaque",
+    "interests": ["war_uprising", "architecture", "people"],
+    "richness": 6,
+    "lat": 52.23562,
+    "lng": 20.97702,
+    "distance_m": 9.00599566,
+    "fraction": 0
+  },
+  {
+    "id": "karolkowa",
+    "name": "Karolkowa",
+    "kind": "street",
+    "interests": [
+      "war_uprising",
+      "architecture",
+      "industry",
+      "religion",
+      "jewish_warsaw",
+      "everyday_life",
+      "people"
+    ],
+    "richness": 45,
+    "lat": 52.2357208,
+    "lng": 20.9767205,
+    "distance_m": 19.23428023,
+    "fraction": 0
+  },
+  {
+    "id": "g-mural-wolska-tytusa-brzozowskiego",
+    "name": "Mural \"Wolska\" Tytusa Brzozowskiego",
+    "kind": "mural",
+    "interests": ["street_art"],
+    "richness": 1,
+    "lat": 52.2355894,
+    "lng": 20.9777324,
+    "distance_m": 37.62519041,
+    "fraction": 0.197747126436629
+  },
+  {
+    "id": "aleja-solidarnosci",
+    "name": "Aleja „Solidarności”",
+    "kind": "street",
+    "interests": ["war_uprising", "architecture", "industry", "people"],
+    "richness": 20,
+    "lat": 52.2361114,
+    "lng": 20.9779286,
+    "distance_m": 3.72408129,
+    "fraction": 0.314126436780454
+  },
+  {
+    "id": "trasa-w-z",
+    "name": "Trasa W-Z (przebicie przez Wolę i Leszno, 1947–1949)",
+    "kind": "event",
+    "interests": ["war_uprising", "religion", "everyday_life"],
+    "richness": 6,
+    "lat": 52.2361114,
+    "lng": 20.9779286,
+    "distance_m": 3.72408129,
+    "fraction": 0.314126436780454
+  },
+  {
+    "id": "kercelak-hala-targowa",
+    "name": "Hala targowa na placu Kercelego",
+    "kind": "building",
+    "interests": ["architecture", "everyday_life"],
+    "richness": 1,
+    "lat": 52.2372,
+    "lng": 20.9797,
+    "distance_m": 39.17076313,
+    "fraction": 0.948275862069275
+  },
+  {
+    "id": "dziki-zachod-chlodna",
+    "name": "Okolice Chłodnej i Ogrodowej po 1945 („Dziki Zachód”)",
+    "kind": "site",
+    "interests": ["war_uprising", "architecture", "industry"],
+    "richness": 4,
+    "lat": 52.2368,
+    "lng": 20.98,
+    "distance_m": 9.32321086,
+    "fraction": 0.988505747127073
+  },
+  {
+    "id": "okopy-lubomirskiego",
+    "name": "Okopy Lubomirskiego (wał miejski z 1770 r.)",
+    "kind": "site",
+    "interests": ["war_uprising", "architecture", "people"],
+    "richness": 8,
+    "lat": 52.2366799,
+    "lng": 20.9801386,
+    "distance_m": 25.68888949,
+    "fraction": 1
+  },
+  {
+    "id": "kercelak",
+    "name": "Kercelak (plac Kercelego, rondo Kercelak)",
+    "kind": "site",
+    "interests": ["war_uprising", "religion", "jewish_warsaw", "everyday_life", "people"],
+    "richness": 64,
+    "lat": 52.2370217,
+    "lng": 20.9801911,
+    "distance_m": 18.8098875,
+    "fraction": 1
+  }
+]
