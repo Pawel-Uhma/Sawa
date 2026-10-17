@@ -1,6 +1,6 @@
 import { serve } from "@hono/node-server";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
-import { createFilePlacesSource } from "./adapters/places/file-source";
+import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
 import { createWawDepartureSource } from "./adapters/waw/departures";
 import { createApp } from "./app";
 import { loadEnv } from "./lib/env";
@@ -18,9 +18,8 @@ logger.info(
 
 const routePlanner = createRoutePlanner({
   transit,
-  places: createFilePlacesSource(new URL("../data/places.geojson", import.meta.url)),
+  places: createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url)),
   departures: createWawDepartureSource(env.WAW_TOKEN),
-  onSkippedPlaces: (count) => logger.warn({ count }, "invalid place features skipped"),
 });
 
 const app = createApp({

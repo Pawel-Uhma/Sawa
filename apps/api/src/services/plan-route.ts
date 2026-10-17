@@ -1,13 +1,13 @@
 import type { LatLng, PlanRouteRequest, Route } from "@sawa/shared";
+import type { BBox } from "../domain/place";
 import { planRide } from "../domain/routing/beam-search";
 import { buildRoute } from "../domain/routing/build-route";
-import type { Bbox } from "../domain/routing/geometry";
-import { parsePlaces } from "../domain/routing/parse-places";
 import { computePlaceHits } from "../domain/routing/place-hits";
 import { shiftRide } from "../domain/routing/shift-ride";
+import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
 import { AppError } from "../lib/errors";
-import type { DepartureSource, PlacesSource, TransitData } from "./ports";
+import type { DepartureSource, PlacesRepository, TransitData } from "./ports";
 
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
@@ -21,7 +21,7 @@ export type RoutePlanner = {
 
 type Prepared = { hitsByPattern: Map<string, PlaceHit[]>; placesById: Map<string, PlacePoint> };
 
-function reachableBbox(origin: LatLng, durationMin: number): Bbox {
+function reachableBbox(origin: LatLng, durationMin: number): BBox {
   const km = reachKm(durationMin);
   const dLat = (km * 1000) / M_PER_DEG_LAT;
   const dLng = dLat / Math.cos((origin.lat * Math.PI) / 180);
@@ -37,20 +37,18 @@ function reachableBbox(origin: LatLng, durationMin: number): Bbox {
 
 export function createRoutePlanner(deps: {
   transit: TransitData;
-  places: PlacesSource;
+  places: Pick<PlacesRepository, "listInBBox">;
   departures?: DepartureSource;
-  onSkippedPlaces?: (count: number) => void;
 }): RoutePlanner {
   const { network, attribution } = deps.transit;
   const cache = new Map<string, Promise<Prepared>>();
 
-  async function prepare(bbox: Bbox): Promise<Prepared> {
+  async function prepare(bbox: BBox): Promise<Prepared> {
     const key = `${bbox.minLng},${bbox.minLat},${bbox.maxLng},${bbox.maxLat}`;
     let prepared = cache.get(key);
     if (!prepared) {
-      prepared = deps.places.getPlacesInBbox(bbox).then((geojson) => {
-        const { places, skipped } = parsePlaces(geojson);
-        if (skipped > 0) deps.onSkippedPlaces?.(skipped);
+      prepared = deps.places.listInBBox(bbox).then((summaries) => {
+        const places = toPlacePoints(summaries);
         return {
           hitsByPattern: computePlaceHits(network, places),
           placesById: new Map(places.map((p) => [p.id, p])),

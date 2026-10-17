@@ -1,13 +1,13 @@
 import { HACKATHON_VENUE, RouteSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
-import { createFilePlacesSource } from "../adapters/places/file-source";
+import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import { createRoutePlanner } from "./plan-route";
 import type { DepartureSource } from "./ports";
 
 // Integration test on the committed data files (real Warsaw network and places).
 const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
-const places = createFilePlacesSource(new URL("../../data/places.geojson", import.meta.url));
+const places = createFilePlacesRepository(new URL("../../data/places.geojson", import.meta.url));
 const NOW = new Date("2026-10-17T14:00:00+02:00");
 
 describe("route planner on real data", () => {

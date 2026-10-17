@@ -113,7 +113,7 @@ Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiada
 
 **Dane:**
 - Sieć: GTFS Warszawy z [mkuran.pl/gtfs](https://mkuran.pl/gtfs/) (licencja ZTM + ODbL dla kształtów, podpis w `Route.attribution`). Skrypt `pnpm --filter @sawa/scripts transit` buduje `apps/api/data/transit-graph.json.gz` (ok. 0,4 MB: 575 wariantów tras tramwajów i autobusów z ruchem w dzień, 6384 przystanki, mediana czasów przejazdu, częstotliwość 10–20). Metro i kolej pominięte, bo pod ziemią nic nie widać. Plik jest na jeden dzień (domyślnie dziś); przed niedzielnym demo przebudować z `--date 2026-10-18`.
-- Miejsca: GeoJSON w formacie RPC `places_in_bbox` (`id, name, kind, interests, richness`). Teraz z pliku `apps/api/data/places.geojson` (`pnpm --filter @sawa/scripts export:places`, mapper R2), potem z Supabase przez ten sam port `PlacesSource`.
+- Miejsca: GeoJSON w formacie RPC `places_in_bbox` (`id, name, kind, interests, richness`). Teraz z pliku `apps/api/data/places.geojson` (`pnpm --filter @sawa/scripts export:places`, mapper R2), potem z Supabase: ten sam port `PlacesRepository.listInBBox` (R2), tylko inny adapter.
 - Odjazdy na żywo: `get_ztm_odjazdy_linii_z_przystanku` dla pierwszego odcinka (wymaga `WAW_TOKEN`); bez tokenu czekanie = połowa częstotliwości.
 
 **Algorytm:**

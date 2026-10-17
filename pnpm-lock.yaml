@@ -190,6 +190,9 @@ importers:
       '@sawa/shared':
         specifier: workspace:*
         version: link:../../packages/shared
+      '@supabase/supabase-js':
+        specifier: ^2.118.0
+        version: 2.118.0
       hono:
         specifier: ^4.13.13
         version: 4.13.13
