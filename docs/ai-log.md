@@ -1433,3 +1433,43 @@
 > +**AI:** Tylko przegląd, nic nie usunąłem ani nie zmieniłem w plikach. Sprawdziłem wzmianki o Stefanie i Konradzie: w repo nie ma tablic o takich nazwach; jedyna powiązana pozycja to tablica „Stanisław Conrad” (265 m), oznaczona w `docs/historia/README.md` jako „nie wiadomo, kim był”.
 > new file: docs/ui/propozycje/html/b-zasieg.html
 
+
+### 2026-10-17 11:51 · Pawel
+
+> chodzi mi bardziej o usuwanie szumu i smieci z kontekstu a nie pliki. rzeczy ktore byly krotko wspomniane a juz nie sa aktualne itd, pytaj o takie rzeczy
+
+
+**AI:** Przejrzałem mózg pod kątem nieaktualnych wzmianek (`05-plan-architektury.md`, spotkania, `stan.md`, `todo.md`, pamięć agenta). Nic nie zmieniłem, czekam na Twoje decyzje.
+
+### 2026-10-17 11:52 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 7 +++++++
+>  1 file changed, 7 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 12acb46..8cb91eb 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -1433,3 +1433,10 @@
+>  > +**AI:** Tylko przegląd, nic nie usunąłem ani nie zmieniłem w plikach. Sprawdziłem wzmianki o Stefanie i Konradzie: w repo nie ma tablic o takich nazwach; jedyna powiązana pozycja to tablica „Stanisław Conrad” (265 m), oznaczona w `docs/historia/README.md` jako „nie wiadomo, kim był”.
+>  > new file: docs/ui/propozycje/html/b-zasieg.html
+>  
+> +
+> +### 2026-10-17 11:51 · Pawel
+> +
+> +> chodzi mi bardziej o usuwanie szumu i smieci z kontekstu a nie pliki. rzeczy ktore byly krotko wspomniane a juz nie sa aktualne itd, pytaj o takie rzeczy
+> +
+> +
+> +**AI:** Przejrzałem mózg pod kątem nieaktualnych wzmianek (`05-plan-architektury.md`, spotkania, `stan.md`, `todo.md`, pamięć agenta). Nic nie zmieniłem, czekam na Twoje decyzje.
+
