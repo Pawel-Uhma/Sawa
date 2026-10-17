@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 21:05 (Paweł, z agentem R3): **wyszukiwanie celu nie trzyma starej odpowiedzi bez ulicy (T-152, #107).** Cache HTTP 60 s zamiast 1 h, cache serwera z TTL 1 h i bez wyników `partial` (padło Autocomplete), błąd Google w logu (`destination address lookup failed`). **Po merge trzeba ręcznie wdrożyć API na Railway** (auto-deploy nie działa, T-148).
 - 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`.
 - 20:15 (Jasiek, z agentem): **pojazdy i odjazdy na żywo działają na produkcji (#63, T-145).** API woła `dane.um.warszawa.pl` przez proxy Antka (`WAW_API_BASE_URL`, `WAW_PROXY_KEY` na Railway, PR #86). `/v1/vehicles/track`: `stale: false` i pojazdy; trasa: `realDeparture: true`. Prod na `9eb3753`. **Uwaga (T-148):** Railway sam nie wdrożył merge'ów od 18:52, deploy był ręczny (`railway redeploy --from-source`). **Dla R1:** produkcja i lokalna instancja różnią się dla odcinka 127 odjeżdżającego za 34 min (prod bez pojazdu, lokalnie dwa); to prognoza z dłuższej historii, nie proxy.
 - 20:11 (Paweł, z agentem R3): **stop i pauza zatrzymują zegar jazdy także przed pierwszym miejscem (#93, T-148).** Stan `held` w `useRideClock`, wznowienie od tego samego miejsca, GPS nie przesuwa zegara przy zatrzymanej Sawie.
