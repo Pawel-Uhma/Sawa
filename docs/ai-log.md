@@ -412,3 +412,9 @@
 > usuń gałąź, wpis wrzuć do następnego PR
 
 **AI:** Usunąłem z GitHuba gałąź `r2/places-migration`, którą odtworzyłem pushem po merge'u PR #1. Wpis do dziennika przeniosłem na nową lokalną gałąź `r2/places-repository` (od `origin/main`), na której powstanie adapter `PlacesRepository`.
+
+### 2026-10-17 · Jasiek
+
+> tak, zacznij adapter
+
+**AI:** Na gałęzi `r2/places-repository` dodałem port `PlacesRepository` (`apps/api/src/services/ports.ts`), typy domenowe (`domain/place.ts`), adapter Supabase z parserami zod i timeoutem 5 s, wersję `fake` oraz typy bazy i 3 fixture'y z prawdziwych odpowiedzi RPC w `adapters/supabase/`; 10 nowych testów, sprawdzenie na żywej bazie (326 / 108 / Kercelak 49 faktów). Trasy `/v1/places` i podpięcie w `app.ts` zostawiłem na PR po uzgodnieniu kontraktu w `packages/shared`. Zaktualizowałem `todo.md` (T-24), `stan.md`, `13-plan-bazy.md`.
