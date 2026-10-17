@@ -9,6 +9,7 @@ import { usePlace } from "@/features/map";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
+import { spokenLength } from "../lib/story-player";
 import { useStoryWaitMessage } from "../lib/story-wait";
 import { Attribution, Itinerary } from "./departures";
 import { PinIcon } from "./icons";
@@ -113,23 +114,12 @@ function LiveText({
       </div>
     );
   }
-  const words = text.split(/(\s+)/);
-  const wordCount = words.filter((w) => w.trim()).length;
-  const spoken = Math.round((wordCount * progress) / 100);
-  let seen = 0;
-  let cut = words.length;
-  for (let i = 0; i < words.length; i++) {
-    if (words[i].trim()) seen++;
-    if (seen > spoken) {
-      cut = i;
-      break;
-    }
-  }
+  const cut = spokenLength(text, progress);
   return (
     <p aria-live="off" className={className}>
-      <span className="text-tekst transition-colors">{words.slice(0, cut).join("")}</span>
+      <span className="text-tekst transition-colors">{text.slice(0, cut)}</span>
       <span ref={edgeRef} />
-      <span className="text-tekst-3/70">{words.slice(cut).join("")}</span>
+      <span className="text-tekst-3/70">{text.slice(cut)}</span>
     </p>
   );
 }
@@ -204,6 +194,14 @@ function PlaceFacts({ place }: { place: Place }) {
 /* Ekran: jeden ciągły zapis tego, co mówi Sawa, jak napisy w radiu   */
 /* ------------------------------------------------------------------ */
 
+/** Wysokość zapisu (od góry), na której trzymamy granicę wypowiedzianych słów. */
+const FOLLOW_AT = 0.66;
+
+/** Odległość granicy słów od górnej krawędzi widocznego zapisu. */
+function edgeOffset(el: HTMLElement, edge: HTMLElement) {
+  return edge.getBoundingClientRect().top - el.getBoundingClientRect().top;
+}
+
 export function RouteLive({
   durationMin,
   end,
@@ -240,10 +238,7 @@ export function RouteLive({
     const top = waiting
       ? 0
       : edge
-        ? edge.getBoundingClientRect().top -
-          el.getBoundingClientRect().top +
-          el.scrollTop -
-          el.clientHeight * 0.66
+        ? edgeOffset(el, edge) + el.scrollTop - el.clientHeight * FOLLOW_AT
         : el.scrollHeight;
     if (Math.abs(el.scrollTop - top) < 4) return;
     el.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
@@ -252,6 +247,16 @@ export function RouteLive({
   // Ręczne przewinięcie (palec, kółko) odpina zapis od głosu; nasze scrollTo tego nie robi
   function stopFollowing() {
     setFollowing(false);
+  }
+
+  // Przewinięcie z powrotem do głosu (granica na swojej wysokości albo sam dół) przypina zapis znowu
+  function resumeAtEdge() {
+    const el = scrollRef.current;
+    const edge = edgeRef.current;
+    if (following || !el) return;
+    const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 2;
+    const atEdge = edge && edgeOffset(el, edge) <= el.clientHeight * FOLLOW_AT - 8;
+    if (atBottom || atEdge) setFollowing(true);
   }
 
   return (
@@ -263,6 +268,7 @@ export function RouteLive({
           ref={scrollRef}
           onTouchMove={stopFollowing}
           onWheel={stopFollowing}
+          onScroll={resumeAtEdge}
           className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-400px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
         >
           <div className="pb-[40%] pt-6">

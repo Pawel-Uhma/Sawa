@@ -24,6 +24,7 @@ export const SOURCE_FILES = [
   new URL("../../docs/historia/dzielnice/wikipedia-pozostale-dzielnice.geojson", import.meta.url),
   new URL("../../docs/historia/dzielnice/warszawikia-pozostale-dzielnice.geojson", import.meta.url),
   new URL("../../docs/historia/dzielnice/sztetl-pozostale-dzielnice.geojson", import.meta.url),
+  new URL("../../docs/historia/dzielnice/osm-pozostale-dzielnice.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {

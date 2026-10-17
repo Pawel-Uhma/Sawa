@@ -5568,7 +5568,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord z artykułu o instytucji, bo podaje siedzibę z datą. Artykuł nie mówi wprost, czy budynek istnieje dziś; adres to adres z tekstu, nie potwierdzony jako dzisiejszy. ",
-    "zrodlo_rekordu": "wikipedia-dzielnice"
+    "zrodlo_rekordu": "wikipedia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/British_School_Warsaw%2C_6.jpg/1280px-British_School_Warsaw%2C_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:British_School_Warsaw,_6.jpg",
+      "opis": "British School Warsaw",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2020",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -6637,7 +6648,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord budynku przy al. Niepodległości 52, nie samej instytucji; współrzędne z nagłówka artykułu.",
-    "zrodlo_rekordu": "wikipedia-dzielnice"
+    "zrodlo_rekordu": "wikipedia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/7/73/LIIILOb_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:LIIILOb_03.jpg",
+      "opis": "LIII St. Augustine High School in Warsaw, Poland",
+      "autor": "Unknown authorUnknown author",
+      "licencja": "Public domain",
+      "rok": "1975",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -12917,7 +12939,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Tekst nie mówi, czy schron się zachował, dlatego pole „istnieje” ma wartość null.",
-    "zrodlo_rekordu": "wikipedia-dzielnice"
+    "zrodlo_rekordu": "wikipedia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Skwer_wolskich_marzec_2023_grusza.jpg/1280px-Skwer_wolskich_marzec_2023_grusza.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Skwer_wolskich_marzec_2023_grusza.jpg",
+      "opis": "pomnikowa grusza rosnąca na skwerze Rodziny Wolskich w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -15227,7 +15260,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Tekst nie podaje numeru budynku przy ul. Księcia Trojdena.",
-    "zrodlo_rekordu": "wikipedia-dzielnice"
+    "zrodlo_rekordu": "wikipedia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Basen_olimpijski_wum.jpg/1280px-Basen_olimpijski_wum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Basen_olimpijski_wum.jpg",
+      "opis": "Basen Centrum Sportowo-Rehabilitacyjnego Warszawskiego Uniwersytetu Medycznego",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -38524,7 +38568,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Współrzędne z nagłówka. Pomnik stał w Olszynce Grochowskiej; dzielnica wg nagłówka to Rembertów.",
-    "zrodlo_rekordu": "wikipedia-dzielnice"
+    "zrodlo_rekordu": "wikipedia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Pomnik_poleglych_w_Bitwie_pod_Olszynk%C4%85_Grochowsk%C4%85_-_panoramio.jpg/1280px-Pomnik_poleglych_w_Bitwie_pod_Olszynk%C4%85_Grochowsk%C4%85_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnik_poleglych_w_Bitwie_pod_Olszynk%C4%85_Grochowsk%C4%85_-_panoramio.jpg",
+      "opis": "Pomnik poleglych w Bitwie pod Olszynką Grochowską",
+      "autor": "Jacek Lodowski",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "8 Ma",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
