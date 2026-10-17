@@ -42,3 +42,7 @@ curl --location --request POST 'https://dane.um.warszawa.pl/api/action/get_be_ot
   },...
 ]
 ```
+
+## Jak używamy (R2, 17.10)
+
+`pnpm --filter @sawa/scripts fetch:boiska` pobiera zbiór, łączy wiersze w jedną szkołę, geokoduje adres (Nominatim) i zapisuje szkoły z obszaru tras do [`docs/historia/um-otwarte-boiska.geojson`](../historia/um-otwarte-boiska.geojson). Seed wgrywa je do `places` z tagiem `sport`; Sawa może powiedzieć, co jest otwarte i w jakich godzinach. Odpowiedź nie ma współrzędnych, a pole `Uwagi` bywa `null`.

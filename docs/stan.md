@@ -37,10 +37,14 @@
 
 - 14:30 (Paweł, R3): gesty jak w iOS. Arkusz trasy ciągnie się za treść i zamyka ściągnięciem w dół, karty ekranu głównego chowają się pod pasek zakładek, strona nie powiększa się i nie odbija. Przetestowane dotykiem w emulacji iPhone; do sprawdzenia na prawdziwym telefonie.
 
+- R2 (Jasiek, 14:30): zbiór miasta „Otwarte boiska” w bazie (T-27): 57 szkolnych terenów sportowych z godzinami otwarcia, adresy geokodowane Nominatim. Razem 485 miejsc, sport 90, przyroda 75. `places.geojson` dla planera odświeżony.
+- R1 (Szczepan, 14:40): planer czyta miejsca z Supabase (`listInBBox`, cache 10 min, odświeżanie w tle), przy błędzie lub braku kluczy z `places.geojson` (T-19, PR #17). Na Railway sprawdzić w logach `planner places loaded` z `isFallback: false`.
+
+- 14:50 (Paweł, R3): w `main` całość na live: demo z onboardingiem, trasa z `POST /v1/routes/plan`, piny z `/v1/places`, odtwarzacz opowieści (`POST /v1/stories` + `POST /v1/speech`, głos ElevenLabs, następny punkt ładowany z wyprzedzeniem), panel przejażdżek. Mapa Antka pod `/mapa`. API opowieści i TTS (OpenRouter, ElevenLabs) z gałęzi `r4/stories-llm`.
+
 ## Zablokowane
 
-- Trasy dłuższe niż ok. 20 min były puste w drugiej połowie (miejsca tylko do 1 km od 42 Warsaw). Po odświeżeniu `places.geojson` przez R2 (14:08, 428 miejsc) do sprawdzenia, czy zasięg się poprawił. Sprawdza R1 (Szczepan), więcej miejsc dokłada R2 (Jasiek).
-- Front na Vercelu nie ma API, dopóki nie ma deployu na Railway (T-62). Odblokowuje R1 (Szczepan).
+- Pomiar R1 (14:40, 485 miejsc): trasa 60 min w jedną stronę z 42 Warsaw dalej ma ostatnie miejsce ok. 30. min (ostatnie okno 31 min). Pętla 60 min i trasa 90 min ze wszystkimi kategoriami mają miejsca do końca. Miejsca leżą tylko ok. 3 km od 42 Warsaw (lng 20,93–21,02, lat 52,21–52,26), więc potrzebne miejsca dalej od centrum Woli (R2, Jasiek).
 - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.
 
 ## Otwarte decyzje

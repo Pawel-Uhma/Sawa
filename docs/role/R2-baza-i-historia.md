@@ -20,7 +20,7 @@ Użytkownik wybiera 4 kategorie: `historical`, `cultural`, `sports`, `nature` (`
 - **Szczegółowe tagi (jak teraz):** mapowanie `INTEREST_TAGS`: historia ← `war_uprising`, `jewish_warsaw`, `people`, `industry`, `architecture`; kultura ← `street_art`, `everyday_life`, `religion`; sport ← `sport`; przyroda ← `nature`.
 - **Nazwa kategorii wprost:** `historical`, `cultural`, `sports`, `nature` w `places.interests`.
 
-Stan 17.10, 14:08 (po T-25): historia 242, kultura 113, sport 33, przyroda 75. Kultura liczona po obecnym `INTEREST_TAGS` (`architecture` należy do historii), stąd mniej niż wcześniejsze 207; sport i przyroda dopasowują tylko nazwę miejsca (`scripts/historia/interests.ts`). Plan, który zrealizowano:
+Stan 17.10, 14:30 (po T-25 i T-27): historia 242, kultura 113, sport 90 (33 z OSM, 57 ze zbioru „Otwarte boiska”), przyroda 75. Kultura liczona po obecnym `INTEREST_TAGS` (`architecture` należy do historii), stąd mniej niż wcześniejsze 207; sport i przyroda dopasowują tylko nazwę miejsca (`scripts/historia/interests.ts`). Plan, który zrealizowano:
 1. W `scripts/historia/interests.ts` dodać reguły `sport` (np. `boisk|stadion|sport|basen|hala sportow|klub`) i `nature` (np. `park|ogród|skwer|zieleń|drzew|dąb|staw`) i importować listę tagów z `@sawa/shared` (`PLACE_TAGS`) zamiast własnej.
 2. Nowe miejsca dla sportu i przyrody: zbiory miasta „Otwarte boiska” i „Zajęcia sportowe” (`docs/api/`; zbiór miasta to też plus w ocenie), parki i skwery z OSM (`leisure=park`, `leisure=garden`) w okolicy tras.
 3. Po zmianach: seed do Supabase i `pnpm --filter @sawa/scripts export:places`, żeby planer (plik `apps/api/data/places.geojson`) widział nowe tagi, dopóki nie czyta z bazy.

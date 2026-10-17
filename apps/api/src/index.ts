@@ -23,12 +23,6 @@ logger.info(
   "transit graph loaded",
 );
 
-const routePlanner = createRoutePlanner({
-  transit,
-  places: createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url)),
-  departures: createWawDepartureSource(env.WAW_TOKEN),
-});
-
 const placesRepository =
   env.SUPABASE_URL && env.SUPABASE_SERVICE_ROLE_KEY
     ? createSupabasePlacesRepository(
@@ -39,7 +33,19 @@ const placesRepository =
       )
     : undefined;
 if (!placesRepository)
-  logger.warn("SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set: serving fake places");
+  logger.warn(
+    "SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set: /v1/places serves fake places, the planner uses places.geojson",
+  );
+
+// The planner reads Supabase; the committed export is its fallback when Supabase fails.
+const placesFile = createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url));
+const routePlanner = createRoutePlanner({
+  transit,
+  places: placesRepository ?? placesFile,
+  fallbackPlaces: placesRepository ? placesFile : undefined,
+  departures: createWawDepartureSource(env.WAW_TOKEN),
+  logger,
+});
 
 const llm = env.OPENROUTER_KEY
   ? createOpenRouterProvider({ apiKey: env.OPENROUTER_KEY, model: env.OPENROUTER_MODEL })

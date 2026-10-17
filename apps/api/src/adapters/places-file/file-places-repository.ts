@@ -4,8 +4,8 @@ import { toPlaceSummaries } from "../supabase/place-mappers";
 
 /**
  * Places from a GeoJSON file in the `places_in_bbox` format (apps/api/data/places.geojson,
- * written by `pnpm --filter @sawa/scripts export:places`). Only `listInBBox`: enough for the
- * route planner until it reads Supabase through the full repository.
+ * written by `pnpm --filter @sawa/scripts export:places`). Only `listInBBox`: the route planner
+ * falls back to it when Supabase is not configured or fails.
  */
 export function createFilePlacesRepository(
   path: string | URL,
