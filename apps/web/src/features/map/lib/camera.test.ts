@@ -1,6 +1,12 @@
 import type { Route } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
-import { cameraMoveKey, resolveCamera, SINGLE_POINT_ZOOM } from "./camera";
+import {
+  cameraMoveKey,
+  DEFAULT_MAP_PADDING,
+  paddingWithSheet,
+  resolveCamera,
+  SINGLE_POINT_ZOOM,
+} from "./camera";
 
 const stop = (id: string, lat: number, lng: number) => ({ id, name: id, position: { lat, lng } });
 
@@ -86,5 +92,26 @@ describe("cameraMoveKey", () => {
   it("changes with the padding", () => {
     const move = resolveCamera(undefined, ROUTE);
     expect(cameraMoveKey(move, PADDING)).not.toBe(cameraMoveKey(move, { ...PADDING, bottom: 300 }));
+  });
+});
+
+describe("paddingWithSheet", () => {
+  it("keeps the left panel clear on a wide screen", () => {
+    expect(paddingWithSheet(DEFAULT_MAP_PADDING, { width: 1280, height: 800 })).toEqual({
+      ...DEFAULT_MAP_PADDING,
+      left: 412,
+    });
+  });
+
+  it("keeps half the height clear on a phone", () => {
+    expect(paddingWithSheet(DEFAULT_MAP_PADDING, { width: 375, height: 812 })).toEqual({
+      ...DEFAULT_MAP_PADDING,
+      bottom: 406,
+    });
+  });
+
+  it("keeps a larger padding from the screen", () => {
+    const padding = { ...DEFAULT_MAP_PADDING, bottom: 500 };
+    expect(paddingWithSheet(padding, { width: 375, height: 812 })).toEqual(padding);
   });
 });

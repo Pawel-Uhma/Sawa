@@ -22,7 +22,8 @@ Podkład: **OpenFreeMap**, styl `https://tiles.openfreemap.org/styles/positron` 
 - Zainteresowania w `?i=` to kategorie (`historical`, `cultural`, `sports`, `nature`). Miejsca mają tagi, filtr mapuje je przez `interestsOfTags` z `packages/shared`.
 - Trasa: `useDemoRoute` w `features/planner` woła `GET /v1/routes/demo` (planer R1). Brak API → mapa bez trasy i komunikat.
 - Sprawdzone zrzutami w headless Chromium (375 px i desktop).
-- Do zrobienia: `fitBounds` nie uwzględnia otwartej karty (trasa bywa pod nią), ostrzeżenie „Expected number, found null” w konsoli (prawdopodobnie styl podkładu).
+- Otwarta karta miejsca doliczana jest do paddingu kamery (`paddingWithSheet`: 412 px z lewej od 768 px, niżej pół wysokości z dołu); otwarcie i zamknięcie karty dopasowuje widok od nowa (T-101).
+- Do zrobienia: ostrzeżenie „Expected number, found null” w konsoli (prawdopodobnie styl podkładu).
 
 ## API `SawaMap` dla ekranów (17.10, uzgodnione z Pawłem)
 
