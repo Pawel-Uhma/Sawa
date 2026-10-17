@@ -9,6 +9,7 @@
 - **Licencje pomijamy** (decyzja Jaśka 17.10: użytek własny). Wgrywamy wszystkie zdjęcia, pole `license` zostaje z tekstem z danych. §6 nieaktualny do czasu publikacji.
 - **13:08: dane w bazie**, 326 miejsc i 351 zdjęć; drugie uruchomienie nie dubluje. Test: `places_near_line` wzdłuż al. Solidarności (150 m) zwraca 108 miejsc.
 - **13:24: adapter w API.** Port `PlacesRepository` w `apps/api/src/services/ports.ts` (`listInBBox`, `getById`, `listNearLine`), typy domenowe w `domain/place.ts`, adapter `adapters/supabase/places-repository.ts` (walidacja zod odpowiedzi RPC, timeout 5 s, błędy jako `UPSTREAM_ERROR`/`UPSTREAM_TIMEOUT`), `fake-places-repository.ts` na 5 prawdziwych miejscach z `__fixtures__/`. Typy bazy: `database.types.ts` (regenerować po migracji). Niepodpięte w `app.ts`, bo trasy `/v1/places` czekają na kontrakt w `packages/shared`.
+- **13:38: trasy HTTP.** `GET /v1/places?bbox=minLng,minLat,maxLng,maxLat&interests=a,b` → `FeatureCollection` (`PlacesResponseSchema`), `GET /v1/places/:id` → `Place` (`PlaceSchema`), `Cache-Control: max-age=300`. Repozytorium wybiera `apps/api/src/index.ts`: Supabase, gdy są `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY`, inaczej fake (5 miejsc).
 - Uruchomienie: w głównym `.env.local` (nie w git) `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY`, potem `pnpm --filter @sawa/scripts seed:historia`. Rozwija [12-plan-mvp.md §6](12-plan-mvp.md#6-model-danych-supabase). Zadania: T-20 (schemat), T-21 (seed), T-22 (licencje zdjęć). **[Z]** = założenie do potwierdzenia.
 
 ## 1. Co mamy

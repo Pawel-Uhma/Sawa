@@ -1,13 +1,18 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
+import { createFakePlacesRepository } from "./adapters/supabase/fake-places-repository";
 import { AppError, toErrorBody } from "./lib/errors";
 import { healthRoutes } from "./routes/health";
+import { placeRoutes } from "./routes/places";
 import { routeRoutes } from "./routes/routes";
+import type { PlacesRepository } from "./services/ports";
 
 export type AppConfig = {
   corsOrigins: string[];
   corsPreviewPattern?: string;
   onUnexpectedError?: (err: unknown) => void;
+  /** Defaults to the in-memory fake (tests, offline demo). */
+  placesRepository?: PlacesRepository;
 };
 
 /** Composition root: wires adapters into services and mounts routes. */
@@ -31,7 +36,8 @@ export function createApp(config: AppConfig) {
     })
     .notFound((c) => c.json(toErrorBody("NOT_FOUND", "Route not found"), 404))
     .route("/", healthRoutes)
-    .route("/", routeRoutes);
+    .route("/", routeRoutes)
+    .route("/", placeRoutes(config.placesRepository ?? createFakePlacesRepository()));
 }
 
 /** Used by apps/web for the typed `hc` client. */

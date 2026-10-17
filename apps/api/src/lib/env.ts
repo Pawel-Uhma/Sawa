@@ -13,6 +13,15 @@ const EnvSchema = z.object({
     ),
   CORS_PREVIEW_PATTERN: z.string().optional(),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
+  // Empty values (copied from .env.example) mean "not set": the API then serves fake places.
+  SUPABASE_URL: z
+    .string()
+    .optional()
+    .transform((s) => s || undefined),
+  SUPABASE_SERVICE_ROLE_KEY: z
+    .string()
+    .optional()
+    .transform((s) => s || undefined),
 });
 
 export type Env = z.infer<typeof EnvSchema>;

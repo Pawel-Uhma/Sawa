@@ -1,17 +1,8 @@
-import type { LatLng } from "@sawa/shared";
+import type { LatLng, PlaceKind } from "@sawa/shared";
 
-export const PLACE_KINDS = [
-  "building",
-  "monument",
-  "plaque",
-  "street",
-  "site",
-  "mural",
-  "event",
-  "church",
-  "cemetery",
-] as const;
-export type PlaceKind = (typeof PLACE_KINDS)[number];
+/** The full place is the contract type (packages/shared); the API returns it unchanged. */
+export type { Place, PlaceKind, PlacePhoto, PlaceSource } from "@sawa/shared";
+export { PLACE_KINDS } from "@sawa/shared";
 
 export type BBox = { minLng: number; minLat: number; maxLng: number; maxLat: number };
 
@@ -31,36 +22,4 @@ export type PlaceAlongLine = PlaceSummary & {
   distanceM: number;
   /** Position along the line: 0 = start, 1 = end. */
   fraction: number;
-};
-
-export type PlaceSource = { id: string; title: string; url: string };
-export type PlacePerson = { name: string; role: string; wikiUrl?: string };
-export type PlaceFormerName = { name: string; from?: string; to?: string };
-export type PlacePhoto = {
-  url: string;
-  pageUrl: string | null;
-  caption: string | null;
-  year: string | null;
-  author: string | null;
-  source: string | null;
-  license: string | null;
-};
-
-/** Everything the story needs: facts with source ids the LLM may cite. */
-export type Place = PlaceSummary & {
-  nameEn: string | null;
-  summaryEn: string | null;
-  addressToday: string | null;
-  addressHistoric: string | null;
-  period: string | null;
-  stillExists: boolean | null;
-  facts: string[];
-  trivia: string[];
-  people: PlacePerson[];
-  formerNames: PlaceFormerName[];
-  sources: PlaceSource[];
-  unverifiedFacts: { text: string; reason: string }[];
-  confidence: "high" | "medium" | "low" | null;
-  locationPrecision: "exact" | "approx" | null;
-  photos: PlacePhoto[];
 };

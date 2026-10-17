@@ -13,6 +13,8 @@
 
 - R1 (Szczepan, 13:15): kolejność przystanków i kształty linii z GTFS mkuran.pl (licencja ZTM + ODbL, wymagany podpis), skompresowane do `apps/api/data/`. Planer dopasowuje miejsca do tras **w pamięci API**, wejście to GeoJSON w formacie RPC `places_in_bbox` (teraz z pliku `apps/api/data/places.geojson`, potem z Supabase). **Dla R2 (Jasiek):** RPC `places_near_line` nie będzie używane przez planer; lista `INTERESTS` przenosi się do `packages/shared/src/interests.ts` (te same klucze), `scripts/historia/interests.ts` może ją stamtąd importować; dodaję `scripts/export-places-geojson.ts`, które używa Twojego `mapPlace`.
 
+- R2 (Jasiek, 13:38): `GET /v1/places` i `GET /v1/places/:id` gotowe (kontrakt PR #6, trasy na nim). **R3:** mapa może brać `/v1/places?bbox=…`; **R4:** fakty i źródła z `/v1/places/:id` (`sources[].id` do cytowania, `unverifiedFacts` pomijać). **R1:** dodać `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY` na Railway.
+
 ## Zablokowane
 
 - Nic zgłoszonego. Dopisz tu blokadę od razu, z nazwiskiem osoby, która może ją odblokować.
