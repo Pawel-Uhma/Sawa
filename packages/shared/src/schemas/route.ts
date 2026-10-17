@@ -19,7 +19,11 @@ export type StoryStyle = (typeof STORY_STYLES)[number];
 export const PlanRouteRequestSchema = z
   .object({
     origin: LatLngSchema,
-    durationMin: z.number().int().min(MIN_DURATION_MIN).max(MAX_DURATION_MIN),
+    /**
+     * How long the ride should take. Left out with a `destination`: the fastest way there
+     * (the client can show it first and use its `totalMin` as the shortest choice).
+     */
+    durationMin: z.number().int().min(MIN_DURATION_MIN).max(MAX_DURATION_MIN).optional(),
     interests: z.array(InterestSchema).min(1).max(5),
     /** Loop: the ride ends at a stop near the origin. */
     returnToStart: z.boolean().default(false),
@@ -41,6 +45,10 @@ export const PlanRouteRequestSchema = z
   .refine((r) => !(r.returnToStart && r.destination), {
     message: "Podaj destination albo returnToStart, nie oba",
     path: ["destination"],
+  })
+  .refine((r) => r.durationMin !== undefined || r.destination !== undefined, {
+    message: "Podaj durationMin albo destination (najszybsza trasa do celu)",
+    path: ["durationMin"],
   });
 /** What a client sends; `returnToStart` and `destination` may be left out. */
 export type PlanRouteRequest = z.input<typeof PlanRouteRequestSchema>;
