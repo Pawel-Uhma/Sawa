@@ -58,7 +58,33 @@ export function syntheticNetwork(): Network {
     (i) => [21.012, 52.221 + i * 0.003],
     (i) => (i === 3 ? "X" : `B${i}`),
   );
-  return createNetwork([...a.stops, ...b.stops], [a.pattern, b.pattern]);
+  const aBack = reversed(a);
+  const bBack = reversed(b);
+  return createNetwork(
+    [...a.stops, ...b.stops, ...aBack.stops, ...bBack.stops],
+    [a.pattern, b.pattern, aBack.pattern, bBack.pattern],
+  );
+}
+
+/** The same line the other way: opposite platforms (same stop groups), pattern id `<line>-1`. */
+function reversed({ pattern, stops }: ReturnType<typeof line>): ReturnType<typeof line> {
+  const back = [...stops].reverse().map((s) => ({ ...s, id: `${s.id}r` }));
+  const lngLats = [...pattern.lngLats].reverse();
+  const cum = cumulativeDistancesM(lngLats);
+  return {
+    stops: back,
+    pattern: {
+      ...pattern,
+      id: `${pattern.line}-1`,
+      headsign: `${pattern.line} start`,
+      lngLats,
+      stops: back.map((s, i) => ({
+        stopId: s.id,
+        atSec: i * SEC_PER_STOP,
+        alongM: cum[i] as number,
+      })),
+    },
+  };
 }
 
 export const place = (

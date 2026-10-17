@@ -47,6 +47,7 @@
     <label>Czas: <b id="minutesLabel">60</b> min
       <input id="minutes" type="range" min="30" max="240" step="10" value="60" />
     </label>
+    <label><input id="loop" type="checkbox" /> Pętla: wróć do startu</label>
     <div class="interests" id="interests"></div>
     <div class="row">
       <button id="plan" type="button">Planuj</button>
@@ -135,6 +136,7 @@ function draw(route, ms) {
   }).join("");
   $("result").innerHTML = `
     <div class="stats"><div><b>${route.totalMin}</b>min</div><div><b>${route.legs.length - 1}</b>przesiadki</div><div><b>${route.places.length}</b>miejsca</div></div>
+    <small>${route.endsAtStart ? "Kończy się przy starcie (pętla)." : "Kończy się gdzie indziej."}</small><br>
     <small>Odpowiedź API: ${ms} ms</small>${legHtml}
     <div class="attr">${route.attribution.map(esc).join("<br>")}</div>`;
 }
@@ -162,6 +164,7 @@ $("plan").onclick = () => call("/v1/routes/plan", {
   origin,
   durationMin: Number($("minutes").value),
   interests: [...document.querySelectorAll("#interests input:checked")].map((i) => i.value),
+  returnToStart: $("loop").checked,
 });
 $("demo").onclick = () => call("/v1/routes/demo");
 </script>

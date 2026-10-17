@@ -8,6 +8,7 @@ export const DEMO_REQUEST: PlanRouteRequest = {
   origin: HACKATHON_VENUE,
   durationMin: 60,
   interests: ["historical", "cultural"],
+  returnToStart: false,
 };
 
 export function createRouteRoutes(planner: RoutePlanner, clock: () => Date = () => new Date()) {

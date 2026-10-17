@@ -122,6 +122,7 @@ Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiada
 3. Beam search (szerokość 8, maks. 2 per wariant): start z przystanków do 500 m (dojście 1,2 m/s), czekanie połowa częstotliwości, przesiadka +120 s w obrębie zespołu przystanków, maks. 2 przesiadki, czas trasy 90–110% budżetu.
 4. Z trasy wybierane są miejsca do opowieści: najlepsze punktowo, co najmniej 45 s od siebie (`select-stories.ts`). `windowSec` = czas do następnego miejsca.
 5. Wynik: `Route` z kontraktu (`packages/shared/src/schemas/route.ts`), ok. 0,2 s na zapytanie.
+6. **Pętla** (`returnToStart: true` w zapytaniu): trasa kończy się na przystanku do 500 m od startu. Do 3 przesiadek, można wrócić tą samą linią w drugą stronę, czas 80–110% budżetu. Czas powrotu z każdego zespołu przystanków liczy odwrócony Dijkstra (`return-times.ts`), więc wyszukiwanie od razu odrzuca trasy, z których nie da się zdążyć wrócić. Odpowiedź ma `endsAtStart` (false, gdy pętli nie udało się znaleźć). Ok. 0,3 s.
 
 **Ograniczenie danych:** miejsca są tylko do 1 km od 42 Warsaw, więc po ok. 20 min jazdy nie ma już o czym opowiadać (ostatnie okno jest długie). Rozwiązuje to więcej miejsc w Supabase.
 
