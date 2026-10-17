@@ -52,7 +52,7 @@ Wersja 1, 17.10.2026, w nocy. Paweł z agentem: research taktyk z artykułów, p
 |---|---|---|---|
 | 0:00–0:08 | czerń | S (nagranie z apki): szum tramwaju, dzwonek, potem Sawa: „Spójrz w prawo. Tam, gdzie dziś jest rondo, stał największy bazar przedwojennej Warszawy, a…” (urwane) | prezentacja |
 | 0:08–0:35 | zdjęcie: szyba tramwaju, za nią Wola | N: „To była Sawa. **Sawa mówi Ci, co jest za oknem.** Zrobiliśmy ją dla Oli. Ola przyjechała z Kielc za pracą 14 miesięcy temu. Codziennie jedzie tramwajem do biura i mija kilkadziesiąt miejsc, w których wydarzyła się historia tego miasta. Nie zna żadnego. **Za oknem jest historia. Sawa ją opowiada.**” | realia |
-| 0:35–0:55 | dwa slajdy, na każdym jedna liczba: „co piąty” i „600 tys.” | N: „Takich jak Ola jest coraz więcej. Według prognozy miasta w 2060 roku co piąty mieszkaniec będzie imigrantem albo dzieckiem imigranta. Codziennie 600 tysięcy ludzi dojeżdża tu spoza Warszawy. Diagnoza miasta pisze wprost o potrzebie »szeroko zakrojonych działań integracyjnych«. Pokażemy jedno takie działanie. Dzieje się samo, w tramwaju.” | realia, 2076 |
+| 0:35–0:55 | dwa slajdy, na każdym jedna liczba: „co piąty” i „390 tys.” | N: „Takich jak Ola jest coraz więcej. Według prognozy miasta w 2060 roku co piąty mieszkaniec będzie imigrantem albo dzieckiem imigranta. Codziennie 390 tysięcy osób dojeżdża tu do pracy spoza Warszawy. Diagnoza miasta pisze wprost o potrzebie »szeroko zakrojonych działań integracyjnych«. Pokażemy jedno takie działanie. Dzieje się samo, w tramwaju.” | realia, 2076 |
 | 0:55–1:40 | **film, 45 s** (scenariusz w §5) | bez słów na żywo | innowacyjność |
 | 1:40–2:50 | ekran telefonu na czarnym tle, ok. 85% wysokości (mirroring, bez ramki) | **Demo na żywo, `/demo`, start w 42 Warsaw.** D: profil „pierwszy raz w Warszawie” i „historia” (3 dotknięcia, 10 s), cel np. Plac Zamkowy. Suwak 15 → 45 min: najszybsza trasa wydłuża się na oczach jury w trasę krajoznawczą do tego samego celu. „Generuj”, potem tryb „Na żywo”: na mapie płynie tramwaj, a S opowiada o Kercelaku i słowa transkryptu ciemnieją w rytm głosu. D (jedyne dwa zdania): „Trasę policzył przed chwilą rozkład ZTM.” Potem: „Kercelak był 150 metrów od tej sali.” **3 s ciszy.** N: „Jutro Sawa tego nie powtórzy. Opowie Oli następny kawałek miasta.” | innowacyjność, dane |
 | 2:50–3:25 | ciemna mapa Woli, warstwy wchodzą na kliknięcie: przystanki ZTM → rozkład → pojazdy na żywo (nagrany ruch) → 3700 miejsc → linia trasy | N: „Osobno każdy z tych zbiorów jest nudny. Pozycje pojazdów i przystanki z danych miasta mówią, gdzie jesteś. Rozkład mówi, kiedy dojedziesz. Prawie cztery tysiące miejsc z historią mówi, co tam się wydarzyło. Razem Sawa wie, **co i kiedy** będzie za oknem, i dobiera długość opowieści do czasu dojazdu do następnego miejsca, także w korku.” Nazwy zbiorów małym drukiem w stopce slajdu. | dane |
@@ -114,8 +114,10 @@ Czas na kryteria: innowacyjność ok. 115 s (film i demo), dane ok. 70 s (demo i
 
 ## 7. Deck (7 slajdów + film)
 
+**Deck gotowy (17.10, wieczór):** https://claude.ai/artifact/5oTGXQm6WCL3Q8ZTtWaG1j (11 slajdów + 2 ukryte na pytania, tekst narratora w notatkach mówcy; pobieranie PPTX/PDF z menu decku). Zasoby: [deck/](deck/).
+
 1. Czerń (otwarcie dźwiękiem), potem szyba tramwaju (Ola)
-2. „co piąty” (2060) / „600 tys.”: jedna liczba na slajd
+2. „co piąty” (2060) / „390 tys.” (dojeżdża do pracy; 600 tys. to wszyscy dodatkowi użytkownicy miasta razem z turystami): jedna liczba na slajd
 3. Film
 4. Ekran telefonu na czerni (demo)
 5. Mapa z warstwami danych, źródła w stopce
