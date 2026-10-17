@@ -23,7 +23,8 @@ import {
 import { pickAroundBoarding } from "../domain/vehicles/select";
 import { knotsToTrack } from "../domain/vehicles/track";
 import type { VehicleHistory, VehicleOnPattern } from "../domain/vehicles/types";
-import type { TransitData, VehiclePositionSource } from "./ports";
+import type { TransitCalendar, TransitData, VehiclePositionSource } from "./ports";
+import { transitOn } from "./transit-day";
 
 const POLL_MS = VEHICLES_REFRESH_SEC * 1000;
 /** Longer than the leader gap in predict.ts, so a leader's whole stretch is still known. */
@@ -159,7 +160,8 @@ function trackLeg(
 export function createVehicleTracker(deps: {
   /** Missing (no WAW_TOKEN) → responses with `live: false`. */
   source?: VehiclePositionSource;
-  transit: TransitData;
+  /** One service day (tests) or the calendar of built days (production). */
+  transit: TransitData | TransitCalendar;
   clock?: () => number;
   logger?: TrackerLogger;
   alwaysOn?: boolean;
@@ -194,9 +196,9 @@ export function createVehicleTracker(deps: {
     return inFlight;
   }
 
-  function legContext(leg: TrackLeg): LegContext | undefined {
-    const key = `${leg.line}|${leg.fromStopId}|${leg.toStopId}`;
-    if (!legs.has(key)) legs.set(key, findLeg(deps.transit.network, leg));
+  function legContext(transit: TransitData, leg: TrackLeg): LegContext | undefined {
+    const key = `${transit.serviceDate}|${leg.line}|${leg.fromStopId}|${leg.toStopId}`;
+    if (!legs.has(key)) legs.set(key, findLeg(transit.network, leg));
     return legs.get(key);
   }
 
@@ -205,9 +207,10 @@ export function createVehicleTracker(deps: {
       warmUntilMs = clock() + WARM_MS;
       if (clock() - lastAttemptMs >= POLL_MS) await refresh();
       const nowMs = clock();
+      const transit = transitOn(deps.transit, new Date(nowMs));
       const out: LegVehicles[] = request.legs.map((leg, i) => {
         const legIndex = leg.legIndex ?? i;
-        const ctx = legContext(leg);
+        const ctx = legContext(transit, leg);
         if (!ctx) return { legIndex, line: leg.line, unknownLeg: true, vehicles: [] };
         return { legIndex, line: leg.line, vehicles: trackLeg(histories, ctx, leg, nowMs) };
       });
@@ -217,7 +220,7 @@ export function createVehicleTracker(deps: {
         stale,
         refreshSec: VEHICLES_REFRESH_SEC,
         legs: out,
-        attribution: [VEHICLES_ATTRIBUTION, ...deps.transit.attribution],
+        attribution: [VEHICLES_ATTRIBUTION, ...transit.attribution],
       };
     },
     start() {

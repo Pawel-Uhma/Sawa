@@ -1,6 +1,6 @@
 import { HACKATHON_VENUE, type PlanRouteRequest } from "@sawa/shared";
 import { describe, expect, it, vi } from "vitest";
-import { loadTransitData } from "../adapters/gtfs/load-transit";
+import { loadTransitCalendar } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import type { PlaceSummary } from "../domain/place";
 import { AppError } from "../lib/errors";
@@ -8,7 +8,9 @@ import { createRoutePlanner } from "./plan-route";
 import type { PlacesRepository } from "./ports";
 
 // Where the planner gets places from: the repository, its cache and the file fallback.
-const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
+const transit = loadTransitCalendar(new URL("../../data/transit/", import.meta.url)).forDate(
+  "2026-10-17",
+);
 const file = createFilePlacesRepository(new URL("../../data/places.geojson", import.meta.url));
 const NOW = new Date("2026-10-17T14:00:00+02:00");
 const REQUEST: PlanRouteRequest = {

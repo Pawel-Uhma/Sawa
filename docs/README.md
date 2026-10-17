@@ -70,6 +70,7 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 | [12-plan-mvp.md](12-plan-mvp.md) | **Plan MVP:** stack, architektura, kontrakt API, model danych, planer, harmonogram z zadaniami ról, założenia, pytania |
 | [13-plan-bazy.md](13-plan-bazy.md) | Plan bazy miejsc: analiza GeoJSON, schemat Supabase, RPC, seed, zainteresowania, licencje zdjęć |
 | [14-plan-mapy.md](14-plan-mapy.md) | Plan mapy (R3): MapLibre, miejsca z bazy przez API, karta miejsca, warstwa trasy z planera, kolejność pracy |
+| [16-tryb-demo.md](16-tryb-demo.md) | Tryb demo na pitch (`DEMO_MODE`): opowieści i głos z plików, bez LLM, ElevenLabs i Google, nagrywanie |
 | [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) | Pojazdy na żywo (T-99): `POST /v1/vehicles/track`, prognoza z poprzednika linii, instrukcja ikon i płynnej animacji dla R3 |
 | [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) | **Zasady:** git i PR, kto jest właścicielem czego, warstwy abstrakcji, nazewnictwo, testy, dobre praktyki, praca z agentami |
 | [05-plan-architektury.md](05-plan-architektury.md) | Pierwszy plan architektury (częściowo nieaktualny, zob. 12), TTL cache |

@@ -75,3 +75,26 @@ describe("createCachedPlacesRepository", () => {
     expect((await cached.getById("kercelak"))?.id).toBe("kercelak");
   });
 });
+
+describe("createCachedPlacesRepository under load", () => {
+  it("keeps at most 8 Supabase queries in flight and answers all of them", async () => {
+    const fake = createFakePlacesRepository();
+    let inFlight = 0;
+    let most = 0;
+    const repo: PlacesRepository = {
+      ...fake,
+      async getById(id) {
+        inFlight += 1;
+        most = Math.max(most, inFlight);
+        await new Promise((r) => setTimeout(r, 1));
+        inFlight -= 1;
+        return fake.getById(id);
+      },
+    };
+    const cached = createCachedPlacesRepository(repo);
+    const ids = Array.from({ length: 50 }, (_, i) => (i % 2 ? "kercelak" : `missing-${i}`));
+    const found = await Promise.all(ids.map((id) => cached.getById(id)));
+    expect(most).toBe(8);
+    expect(found.filter((p) => p?.id === "kercelak")).toHaveLength(25);
+  });
+});
