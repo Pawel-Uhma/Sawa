@@ -193,6 +193,8 @@ export function SawaMap({
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
+        // The map stays flat. Two-finger pitch also hijacks a pinch that starts mid-pan and blocks the zoom.
+        touchPitch={false}
         attributionControl={false}
         style={{ width: "100%", height: "100%" }}
       >

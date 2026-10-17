@@ -44,26 +44,45 @@ export function isAt(point: LatLng, stop: Pick<MockStop, "coord">): boolean {
 }
 
 /**
- * Time on the ride, until location replaces it: starts with a new route and runs like the
- * tram, also while Sawa is paused. `syncTo` moves it to a place the user picked by hand.
+ * Whether the ride clock runs: before the first place it runs alone (Sawa waits for it),
+ * after that only while Sawa plays, so a pause or stop also stops the slider and countdowns.
  */
-export function useRideClock(stops: readonly MockStop[]) {
+export function isClockRunning(
+  stops: readonly MockStop[],
+  rideSec: number,
+  isPlaying: boolean,
+): boolean {
+  return stops.length > 0 && (isPlaying || waitSec(stops, rideSec) !== null);
+}
+
+/**
+ * Time on the ride, until location replaces it: starts with a new route, stops while Sawa is
+ * paused (`isClockRunning`) and goes on from there. `syncTo` moves it to a place the user picked.
+ */
+export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
   // Set in the effect: Date.now() during render breaks the prerender with cacheComponents.
   const startedAt = useRef(0);
   // Time belongs to its route: in the render with a new route the old ride's time is not used.
   const [tick, setTick] = useState({ stops, sec: 0 });
   const rideSec = tick.stops === stops ? tick.sec : 0;
+  const running = isClockRunning(stops, rideSec, isPlaying);
+  // Where the clock stood when it stopped, so it goes on from there and not from the start
+  const secRef = useRef(rideSec);
+  secRef.current = rideSec;
 
   useEffect(() => {
-    startedAt.current = Date.now();
     setTick({ stops, sec: 0 });
-    if (stops.length === 0) return;
+  }, [stops]);
+
+  useEffect(() => {
+    if (!running) return;
+    startedAt.current = Date.now() - secRef.current * 1000;
     const id = setInterval(
       () => setTick({ stops, sec: Math.floor((Date.now() - startedAt.current) / 1000) }),
       TICK_MS,
     );
     return () => clearInterval(id);
-  }, [stops]);
+  }, [running, stops]);
 
   /** Moves the ride to `sec` (the slider in the podcast controls). */
   const seekTo = useCallback(

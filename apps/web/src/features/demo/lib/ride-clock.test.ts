@@ -1,6 +1,14 @@
 import { describe, expect, it } from "vitest";
 import type { MockStop } from "./mock-data";
-import { ARRIVE_M, dueIndex, isAt, LEAD_SEC, storyStartSec, waitSec } from "./ride-clock";
+import {
+  ARRIVE_M,
+  dueIndex,
+  isAt,
+  isClockRunning,
+  LEAD_SEC,
+  storyStartSec,
+  waitSec,
+} from "./ride-clock";
 
 const stop = (etaSec: number) => ({ etaSec, etaMin: Math.round(etaSec / 60) }) as MockStop;
 
@@ -34,5 +42,22 @@ describe("ride clock", () => {
     // 0.001° of latitude is about 111 m
     expect(isAt({ lat: 52.25 + ARRIVE_M / 111_000 - 0.0002, lng: 21 }, place)).toBe(true);
     expect(isAt({ lat: 52.255, lng: 21 }, place)).toBe(false);
+  });
+});
+
+describe("isClockRunning", () => {
+  const stops = [stop(60), stop(300)];
+
+  it("runs before the first place even while Sawa is quiet", () => {
+    expect(isClockRunning(stops, 10, false)).toBe(true);
+  });
+
+  it("stops with Sawa once she may talk", () => {
+    expect(isClockRunning(stops, 120, false)).toBe(false);
+    expect(isClockRunning(stops, 120, true)).toBe(true);
+  });
+
+  it("does not run without a route", () => {
+    expect(isClockRunning([], 0, true)).toBe(false);
   });
 });

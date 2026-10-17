@@ -5,9 +5,10 @@ import type { PlacePoint } from "./types";
 
 /** Places from the repository → what the planner scores (detailed tags → broad interests). */
 export function toPlacePoints(places: PlaceSummary[]): PlacePoint[] {
-  return places.map(({ id, name, position, interests, richness }) => ({
+  return places.map(({ id, name, kind, position, interests, richness }) => ({
     id,
     name,
+    kind,
     position,
     interests: interestsOfTags(interests),
     weight: weightFromRichness(richness),

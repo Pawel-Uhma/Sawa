@@ -124,7 +124,12 @@ export function FloatingCard({
           style={{ y }}
           className="pointer-events-auto touch-none md:touch-auto"
         >
-          {above && <div inert={collapsed && !isDesktop}>{above(progress)}</div>}
+          {/* Pas nad kartą jest przezroczysty: dotyk łapią tylko elementy z pointer-events-auto (Sawa), reszta idzie do mapy */}
+          {above && (
+            <div inert={collapsed && !isDesktop} className="pointer-events-none">
+              {above(progress)}
+            </div>
+          )}
           <div ref={cardRef} className={`karta relative ${className}`}>
             {children}
             {/* Zwinięta karta: cała powierzchnia to jeden przycisk „wysuń” */}
