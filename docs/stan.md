@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- Jasiek (R2 z agentem, T-53): `README.md` przebudowane pod jury według starter packa hackathonowego: link na żywo, problem i rozwiązanie, „jak to działa”, tabela zbiorów z dane.um.warszawa.pl i innych źródeł z licencjami, diagram architektury, stack z uzasadnieniem, sekcja „Użycie AI”. Instrukcja dla developerów jest niżej. Zrzuty z produkcji w `docs/img/readme-*.png`. **Do zrobienia:** sekcję AI niech przejrzy każdy, czy nic nie brakuje.
+
 - 17.10 (Paweł, z agentem R3): **głos wyłączony domyślnie** (kredyty ElevenLabs). Opowieść leci tekstem na timerze, a mowa działa dopiero pod adresem z `?voice=1` (`voiceOn()` w `features/demo/lib/story-player.ts`, `fetchClip` pomija audio). Dotyczy też „Posłuchaj” w karcie miejsca. API `/v1/stories/audio` bez zmian.
 
 - R1 (Szczepan, 18:11, plik R3 na prośbę użytkownika): T-121. Po wyznaczeniu trasy Sawa milczy do pierwszego miejsca: `useRideClock` zwraca `waitSec` (do `storyStartSec` pierwszego punktu), GPS w promieniu `ARRIVE_M` = 150 m przestawia zegar na to miejsce, stuknięcie w odtwarzanie startuje od razu. Ekran trasy pokazuje „Sawa czeka na pierwsze miejsce” i „Najpierw X · za ok. N min”. **Na pokaz spod 42 Warsaw:** stuknąć odtwarzanie, bo bez ruchu Sawa czeka do czasu z rozkładu. **Dla Pawła/Antka:** zmiany w `demo-app.tsx`, `route-live.tsx`, `ride-clock.ts`.
