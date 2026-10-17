@@ -1,8 +1,11 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 12:05 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 14:10 (Szczepan, z agentem)
 
 ## Teraz
+
+- R1 (Szczepan, 14:10): w `main` planer z pętlą (PR #9) i poprawką kształtu ostatniego odcinka (PR #11). **Dla R3 (Antek, PR #12):** mock T-16 zastąpiony prawdziwym planerem; `Leg.lngLats` to kształt po ulicach z GTFS (`shapes.txt`), nie same przystanki. Mapa może przejść z `GET /v1/routes/demo` na `POST /v1/routes/plan` (zainteresowania + czas + `returnToStart`), gdy będzie onboarding i slider. Następne w R1: deploy API na Railway (T-62, po terminie), planer na miejscach z Supabase zamiast `places.geojson` (T-19), odjazdy na żywo z `WAW_TOKEN` (T-17).
+- Paweł: frontend i generowanie głosu (TTS, T-43). Rola do wpisania w `zespol.md`. **Opowieści (T-45, T-41, T-42, R4) nie mają właściciela**, a to one konsumują `Route.places` i `windowSec` z planera.
 
 - R1 (Szczepan, ok. 14:30): planer jest w `main` (PR #5). Wybór zainteresowań zmieniony na 4 ogólne kategorie: `historical`, `cultural`, `sports`, `nature` (PR w toku). **R3:** onboarding pokazuje te 4 (etykiety PL: historia, kultura, sport, przyroda). **R2:** oznaczyć miejsca kategoriami (T-25, instrukcja w karcie R2): szczegółowe tagi zostają, można też wpisać nazwę kategorii wprost; do `sports` i `nature` potrzebne nowe miejsca (otwarte boiska z API miasta, parki z OSM). Dziś: historia 241 miejsc, kultura 207, sport 0, przyroda 0.
 
@@ -24,7 +27,8 @@
 
 ## Zablokowane
 
-- Nic zgłoszonego. Dopisz tu blokadę od razu, z nazwiskiem osoby, która może ją odblokować.
+- Trasy dłuższe niż ok. 20 min są puste w drugiej połowie: miejsca są tylko do 1 km od 42 Warsaw. Odblokowuje R2 (Jasiek): więcej miejsc i kategorie `sports`, `nature` (T-25).
+- Front na Vercelu nie ma API, dopóki nie ma deployu na Railway (T-62). Odblokowuje R1 (Szczepan).
 
 ## Otwarte decyzje
 
@@ -32,9 +36,13 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 | Pytanie | Kto rozstrzyga | Gdzie szukać kontekstu |
 |---|---|---|
+<<<<<<< Updated upstream
 | Kiedy `GET /v1/places` i `/v1/places/:id` w API (choćby z `fake`), żeby mapa (T-30) czytała bazę | R2 (Jasiek) | [14-plan-mapy.md §11](14-plan-mapy.md) |
 | Mock trasy T-16: termin i czy `Leg.lngLats` to kształt po ulicach | R1 (Szczepan) | [14-plan-mapy.md §11](14-plan-mapy.md) |
 | Lista zainteresowań (8 kluczy) i reguły przypisania w seedzie | R3 + R2 | [13-plan-bazy.md §5](13-plan-bazy.md) |
+=======
+| Kto robi opowieści (R4: T-45, T-41, T-42) | zespół | [role/R4-ai-i-glos.md](role/R4-ai-i-glos.md) |
+>>>>>>> Stashed changes
 | Potwierdzenie stacku z planu MVP: Hono na Railway + monorepo pnpm, 4 role (R5 → R2) | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) §2, §11 |
 | Konta Vercel i Railway: zespołowe czy prywatne | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) P7 |
 | Przycisk „dalej” w opowieści: MVP czy później | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
@@ -47,6 +55,8 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
 
 ## Ostatnie decyzje
+
+- 17.10, 13:37: zainteresowania to 4 ogólne kategorie `historical`, `cultural`, `sports`, `nature` (`packages/shared/src/interests.ts`, PR #7); szczegółowe tagi zostają w danych. Zastępuje listę 8 kluczy z [13-plan-bazy.md §5](13-plan-bazy.md). Zdecydował Szczepan (R1).
 
 - 17.10, 13:43: Google Places tylko z danych pobranych 15–16.10 (warstwa `dzis`, 506 obiektów przy 224 miejscach, i 55 rekordów `g-*`), **bez zapytań na żywo i bez klucza**. W API jako `Place.todayNearby`; w UI podpis „Google Maps”. Warunki Google: treść max 30 dni, po hackathonie usunąć albo odświeżyć. Zdecydował Jasiek (R2). T-23 odpada.
 - 17.10, 13:31: bez dziennika AI. Hook `log-prompt.sh` usunięty, reguła `**AI:**` z `CLAUDE.md` wycofana, `ai-log.md` zostaje jako archiwum. Opis użycia AI na oddanie robi R2 (T-53). Zdecydował Jasiek (R2, właściciel T-53).
