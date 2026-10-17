@@ -21,7 +21,8 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 
 | Plik | Co pokazuje | Zadanie | Decyzja |
 |---|---|---|---|
-| [1218-ekran-glowny-a-wariacje-00-zestawienie.jpg](propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg) | 5 wariacji A obok siebie | ekran główny | czeka na wybór |
+| [1249-…-a6-karta-z-sawa](propozycje/1249-ekran-glowny-a6-karta-z-sawa-mobile.png) | A6: połączenie A4 i A5. Pływająca karta z czasem, tematami i „Wyznacz trasę” nad paskiem zakładek (Mapa, Przejażdżki, Sawa); Sawa wychyla się zza karty i pyta w dymku | ekran główny | kandydat do wdrożenia |
+| [1218-ekran-glowny-a-wariacje-00-zestawienie.jpg](propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg) | 5 wariacji A obok siebie | ekran główny | Paweł: najlepsze A4 i A5, połączone w A6 |
 | [1218-…-a1-kropki-historii](propozycje/1218-ekran-glowny-a1-kropki-historii-mobile.png) | A1: A + 326 punktów historii na mapie, licznik i karta najbliższego miejsca (Kercelak, 120 m) | ekran główny | |
 | [1218-…-a2-dymek-sawy](propozycje/1218-ekran-glowny-a2-dymek-sawy-mobile.png) | A2: Sawa obok kropki lokalizacji mówi w dymku na mapie; niski arkusz z 5 przyciskami czasu zamiast suwaka | ekran główny | |
 | [1218-…-a3-podglad-trasy](propozycje/1218-ekran-glowny-a3-podglad-trasy-mobile.png) | A3: suwak od razu rysuje szkic trasy z numerami opowieści; podsumowanie (czas, linie, opowieści), „Jedziemy tą trasą” i losowanie innej | ekran główny | |

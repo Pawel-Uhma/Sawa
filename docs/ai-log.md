@@ -2602,3 +2602,387 @@
 > new file: docs/ui/propozycje/1218-ekran-glowny-a5-plywajaca-karta-mobile.png
 > new file: docs/ui/propozycje/html/_a.css
 
+
+### 2026-10-17 12:48 · Pawel
+
+> A4 i A5 najlepiej
+
+
+### 2026-10-17 12:48 · Pawel
+
+> [rztwprz spotkanie - widzielismy sie z Jury ktore podeszlo zobaczyc nad czym pracujemy: 
+> 
+> <pasted_content id="2214">
+> You: Role w końcu. Role?
+> You:  Także kto co implementuje.
+> You:  Bo to jest jeszcze nieuzupełnione.
+> You:  O, może zadaniami, bo to będą takie drobniejsze zadania, które może w trakcie ktoś coś skończy i będzie mówił, że bierze. Jak dane z Wikipedii, i tak dalej, integracja jakaś.
+> You:  Dobra, czyli póki co tego nie wpisywać?
+> You:  No, może nie.
+> You:  Może sam coś zasugerować.
+> You:  Pokazujemy jakieś demo.
+> You:  Cześć.
+> You:  Cześć.
+> You:  Tak.
+> You:  Drużyno Sawo, czy jesteście... tak, możemy powiedzieć, że jesteście w pełnym składzie i mam takie pytanie: czy jesteście gotowi podzielić się z nami swoimi pomysłami, konceptem?
+> You:  Tak, jak najbardziej.
+> You:  Mhm.
+> You:  Możemy. Więc zobaczyliśmy w dane, i w tym momencie 20% osób mieszkających w Warszawie nie pochodzi stąd, z innych miast lub innych krajów.
+> You:  I ten współczynnik na pewno będzie się zwiększał, tak jak w innych większych miastach, jak Nowy Jork. Więc chcemy zbudować aplikację, która pomaga osobom mieszkającym w Warszawie czuć się bardziej w Warszawiakiem, poprzez połączenie z bazą danych i z danymi z historycznymi z Warszawy, które pozyskujemy.
+> You:  Tak nazywa się Sawo, czyli jak syrenka warszawska, która według legendy założyła to miasto. I też może oprowadzać osoby po tym mieście.
+> You:  Na przykład jedną z funkcji będzie to, że możemy zaplanować sobie... na przykład mamy wolne 2 godziny, możemy wsiąść w autobus i Sawa zaplanuje nam trasę, która w trakcie, jak będziemy jechać tym autobusem, będzie nam mówić, co widzimy za oknem, z lewej czy z prawej strony, będzie miała dostęp do danych, co jest akurat wystawione w muzeach, jakie są budynki, z jaką historią. Więc te wszystkie dane pozyskamy, i w ten sposób, zamiast słuchać podcastu czy słuchać muzyki, jadąc po Warszawie, możemy się o niej uczyć.
+> You:  Albo nawet spacerując, możemy planować te trasy, i możemy czuć się bardziej połączeni z historią tego miasta.
+> You:  Tak, taki proces obok chcemy do tego podejść.
+> You:  Żeby jak coś na przykład wraca sobie z pracy, ma trochę więcej czasu, może sobie ustawić podróż do domu, zaznaczyć, ile tam chce mieć... ile ma wolnego czasu, no i taka podróż zostanie zaplanowana. Przy okazji właśnie zwiedzając jakieś różne miejsca w Warszawie.
+> You:  To muszę dopowiedzieć, że jest drużyna, która ma bardzo podobny koncept, ale różnica między wami a nim jest taka, że oni chcą adresować swoje rozwiązanie bardziej do mieszkańców Warszawy, jako taki sposób na zrozumienie tego ducha tego miasta, jakby odkrycie... nie nietypowych informacji, a wy rozumiem, że chcecie adresować w ogóle bardziej do cudzoziemców, tak? Dla osób.
+> You:  Znaczy, do ludzi na przykład, do... też ludzi, którzy mieszkają w Warszawie, ale tak na przykład, że przyjechali do Warszawy po to, znaleźli pracę i nic o tym mieście nie wiedzą.
+> You:  Tak, od strony takiej bardziej historycznej, a może niekoniecznie kulturowej.
+> You:  Mhm.
+> You:  Sygnalizuje, tak? Że jest... że jest drużyna, która jest tam.
+> You:  Mhm.
+> You:  I poprawi.
+> You:  Czyli nas podsłuchali na pewno.
+> You:  Oraz o prowadzenie przez syrenkę też było gdzieś wcześniej.
+> You:  Tak.
+> You:  To też na pewno.
+> You:  Okej.
+> You:  W ogóle jesteśmy w takim... można powiedzieć, że jesteście jedną z ostatnich drużyn, które podchodzimy.
+> You:  Taki temat związany z aktywnością wolnym czasie, przewodnicy, bycie w mieście, opowiadanie tras, co zobaczyć, jaki jest kontekst. No i jakby mocno się powtarza to, co powiedzieliśmy: zrealizowany pewnie w różny sposób, ale też czasami podobny.
+> You:  Więc tego po prostu sygnalizujemy wam, że tutaj są podobne... że wiele drużyn bierze te tematy też na swój warsztat.
+> You:  Mhm.
+> You:  Znaczy, chociaż tutaj do tamtego miasta poprawcie mi to, jak się nazywa, Warsaw Police Guy, nie wiem, co my mamy.
+> You:  Tak?
+> You:  Tak, jest taka aplikacja Warsaw Police Guy, to także dobrze by było też jakby nie powielać funkcjonalności, tak?
+> You:  Mhm.
+> You:  Natomiast tutaj tak jakby będę... powiedzieliście, no to one są delikatnie różne, delikatnie, już teraz różnica. Także jakby też warto tam zajrzeć, co się dzieje w tym Warsaw Police Guy, chociaż z tego co wiem, to jest tylko aplikacja, to nie jest...
+> You:  to nie jest... nie można się napisać przez stronę.
+> You:  Tak, tak, tak.
+> You:  Też instalowałem tego, ale brałem udział w trakcie instalowania tej aplikacji, więc nie usłyszałem, że jest mniej więcej znany.
+> You:  Warto też tam zajrzeć.
+> You:  Okej, dobra.
+> You:  Dziękujemy.
+> You:  A ja z kolei się tak... na ile się zastanawiam, jeśli dobrze zrozumiałem, problem z którego wyszliście, że to jest właśnie to, żeby ta osoba, która jest przyjezdna, no jakby lepiej się utożsamiła z miastem, no to ja rozumiem, że... znaczy, trochę to będzie brzmiało jak jakaś sugestia, ale tak pomyślałem sobie po prostu, to nie jest absolutnie tylko takie przemyślenia, że no oczywiście znajomość historii, wyjście z domu czy z biura, no jest jakimś sposobem, ale też na przykład mamy zbiory dotyczące tej aktywności społecznej, takiej... takiego właśnie, że nie wiem, że możesz... nie wiem, zaangażować się w budżet obywatelski Warszawy i możesz na przykład, nie wiem, zagłosować na jakiś projekt, a to sam wymyśleć, ale przynajmniej się dowiedzieć, że w ogóle jest taka inicjatywa, że są na przykład konsultacje gdzie mieszkańcy się wymieniają właśnie opiniami na jakiś temat. I to też jest co prawda, to jest narzędzie cyfrowe, no ale ono też trochę jakby tak w zamiarze powinno i te dane są właśnie na dane warszawa.
+> You: pl, one też w zamiarze po prostu powinny aktywizować tego mieszkańca. Mamy też, nie wiem, wolontariat miejski, na przykład, więc to jest jakby oprócz tej takiej sfery historycznej, która jest cenna, żeby się trochę utożsamić, no to są też takie właśnie kwestie związane z aktywnością, z poznawaniem tego miasta poprzez zaangażowanie się w jakieś procesy miejskie, no tak po prostu tak daje taki temat może to będzie wam po drodze z tym, nie wiem.
+> You:  Okej. Mhm.
+> You:  Dobry pomysł.
+> You:  Dziękuję.
+> You:  Dziękujemy.
+> You:  Dziękuję.
+> You:  Po prostu będziemy robić najlepiej to.
+> You:  Mhm. Mhm.
+> You:  Albo faktycznie skupić się na tej rzeczy dla cudzoziemców.
+> You:  Taki właśnie stricte pod tą daną. Wiadomo, Warszawa też mogą, ale przedstawić to.
+> You:  Dalej ta sama aplikacja, ale marketujemy to dla osób przyjezdnych, nie? Im to marketujemy.
+> You:  Bo mówili, że czegoś takiego jeszcze nie mieli.
+> You:  Moglibyśmy dodać też wtedy jakieś takie elementy właśnie, że jak kupować te bilety, tak?
+> You:  O, no, no, to prawda.
+> You:  To też wpadło jako problem.
+> You:  Ale może z tym poznawaniem ludzi wtedy też bardziej.
+> You:  Mhm.
+> You:  Wtedy to tylko wracamy do tego drugiego wyzwania, nie?
+> You:  Mhm, tak.
+> You:  Warszawa się... nie, że ludzie są w konflikcie, tak?
+> You:  Na spędzanie wol
+> You: nego czasu, nie?
+> You:  Mhm.
+> You:  To co uważacie, jakie macie przemyślenia po tej rozmowie?
+> You:  Myślę, że pytanie, czy jakby to, co oni powiedzieli, że jest podobne, to jest w naszym... w naszej kategorii, czy w innej? Czy właśnie w tej drugiej?
+> You:  No właśnie.
+> You:  Mhm.
+> You:  Bo jak w drugiej, no to w sumie wywalone.
+> You:  Mhm.
+> You:  Niby tak. A może też Jiri powiedzieć, że to nie jest nasze wyzwanie do końca.
+> You:  Mogliśmy się zapisać na drugie.
+> You:  I że no, nie wiem, chyba że się skupić też na jakimś innym feature'ze, który nas rozróżnia od nich.
+> You:  Na przykład detekcja śmierdzących autobusów.
+> You:  Hard pivot.
+> You:  Wszystko będzie o śmierdzących busach.
+> You:  Może to właśnie będzie jakiś taki w formie takiej... takiego podcastu zrobione.
+> You:  Czyli stricte podcast, no?
+> You:  Żeby to różniało.
+> You:  Warszawiacy jeżdżą przez korki.
+> You:  Też. Często do pracy.
+> You:  O, to też jest statystyka. Coraz więcej warszawiaków korzysta z autobusów.
+> You:  Więc w tym, jak jadą, no dobra, to jest ta sama trasa codziennie, ale może być to coś o Warszawie innego.
+> You:  Może być innym głosem czytany.
+> You:  Robert Makłowicz.
+> You:  No nie wiem, chyba... wydaje mi się, że Warszawia póki co nadal iść trochę w tą stronę i ewentualnie po tym to zacząć jeszcze kierować trochę... Zobaczymy, jak zaczniemy to jeszcze tworzyć.
+> You:  No bo trochę może tam parę osób ma jakieś podobne TT, ale z drugiej strony pewnie inne funkcje, które mieliśmy, też się powtarzają, nie?
+> You:  Mhm.
+> You:  No chyba, że faktycznie robisz jakiś... coś stricte pod jedną rzecz.
+> You:  Niszowe.
+> You:  Tak.
+> You:  Jak to drzewo.
+> You:  Trzeba zobaczyć też tą aplikację, co on podrzucał, tą... jak ona się nazywała?
+> You:  Warsawa.
+> You:  Warsaw Polish Guide?
+> You:  Warsaw Polish, tak.
+> You:  Polish Warszawa.
+> You:  Powiedział Polis, ale może nie mówiłeś.
+> You:  No tak, słyszałem.
+> You:  O, Warsaw Polis Guide.
+> You:  Nowa aplikacja turystyczna.
+> You:  Ale to jest z Warszawy ją robiła, więc jest chujowo na pewno.
+> You:  Pobieramy.
+> You:  A myśleliśmy, że jesteśmy tacy mądrzy.
+> You:  Zainstaluję aplikację, zobaczymy.
+> You:  No, no też ci proponuję trasy według tych screenów tutaj. Mówi ci, jak masz pójść.
+> You:  Ale no, zakładam, że nie mają... możesz se audio deskrypcję zrobić, ale nie mają podcastu.
+> You:  Mają quizy. Do której rodziny?
+> You:  To też jakby robienia ścieżek, tylko są jakieś pre-programowane ścieżki.
+> You:  Aha.
+> You:  I możesz tworzyć nowe ręcznie sobie, nie?
+> You:  A może skupmy się na tym podcaście, żeby to było podcaście i gada między sobą Wars i Sawa.
+> You:  Jak jest notebook LM.
+> You:  Ej, spoko.
+> You:  Ej, to by było spoko.
+> You:  I co? I zrobić tak jak w notebooku, chyba że możesz też im przerwać i z nimi gadać.
+> You:  A można tak?
+> You:  Chyba można, no.
+> You:  Można.
+> You:  Nie, no nie wiem, bo tak myślę sobie, jak możemy się wyróżnić od tych wszystkich projektów. I wykorzystać jakieś nasze zdolności.
+> You:  Promptowanie.
+> You:  Bo ja... ja nie robiłem podcastów, nic z dźwiękiem nigdy takiego.
+> You:  Ja tyle, co w Google LM wrzucałem rzeczy, żeby mi wygenerowało podcast.
+> You:  Ja słuchałem podcastów.
+> You:  No nie wiem, ale to może oni powinni się dostosować i zmienić pomysł, a nie my.
+> You:  Bo mówisz na zawsze, ale wpadliśmy znowu.
+> You:  Ej, rzućmy... zróbmy zasłonki karteczkę?
+> You:  Z 5 poprawek.
+> You:  Jakieś szantaż, coś takiego.
+> You:  No.
+> You:  Po wyłączajmy im komputery.
+> You:  Mhm.
+> You:  Możemy ich z sieci skickować, żeby nie mogli prosto zablokować serwery Claude'a.
+> You:  Zostawimy im jakieś shitowe GPT.
+> You:  Podmienimy.
+> You:  Dobra, ale w sumie mógłby być to podcast, nie?
+> You:  I macie tą aplikację, jedziecie sobie, ona mówi podcast i też faktycznie to, co mówił, te wydarzenia kulturalne są feature'em, nie główną rzeczą. Że na przykład...
+> You:  W trakcie mówi ci, tutaj jest wydarzenie kulturalne, nie wiem, jutro takie i takie, i możesz sobie kliknąć, czy chcesz dodać do kalendarza, czy nie, i tak dalej.
+> You:  Żeby premiowało tą trasę z tymi wydarzeniami kulturalnymi trochę, nie? Żeby celowo, czy tamtędy, przeprowadziło może.
+> You:  Mhm.
+> You:  No jak tak patrzę, to tak, są jakieś tam... albo można wybrać sobie właśnie miejsca, albo trasy, i są jakieś predefiniowane bardziej porobione.
+> You:  Nic dziwnego, że jest podobnie.
+> You:  No więc to nie jest dokładnie to, co mówiłem.
+> You:  Oni mają autobusów zaplanowania takich tras?
+> You:  No.
+> You:  Chyba co, no jak będziemy mieli takie bieżące planowanie tych tras.
+> You:  Podcast nasz, bo to jest to chyba trochę inne.
+> You:  No tak, tak.
+> You:  Dobra, czyli idziemy w stronę bardziej podcastową i...
+> You:  Tu widzisz, selekcjonujesz to, to widzisz, czego selekcjonujesz.
+> You:  Jak to podświetlenie jest takie prostokątne.
+> You:  Tak, tak, tak.
+> You:  Nie chcesz może przesuniemy ten komputer?
+> You:  W sumie możemy, no. Jest chyba jazz light włączony.
+> You:  Widzisz, zobaczcie.
+> You:  O, tylko on jest...
+> You:  Może będzie tak na przykład...
+> You:  Aha.
+> You:  No.
+> You:  I wtedy się ściśniemy tutaj.
+> You:  On tylko idzie trochę w lewo.
+> You:  O, dzięki.
+> You:  Dzięki.
+> You:  O, to by mi się też ten ekran by się podobał, wariacja tego.
+> You:  Ona tak wystaje.
+> You:  Zamiast tutaj.
+> You:  Nie wiem, co uważacie.
+> You:  No.
+> You:  Chyba lepiej.
+> You:  No lepiej.
+> You:  To też fajne, że już macie przejażdżki i Sawa.
+> You:  Coś między A4 a A5, wydaje mi się.
+> You:  Nie, no myślę, że nasze będzie zupełnie inne niż te tutaj.
+> You:  Jak patrzę sobie.
+> You:  No to jest bardziej jakby przyjeżdżasz do Warszawy i chcesz sobie zaplanować wizytę.
+> You:  Mhm.
+> You:  To jest sobie planujesz, ale też nie ma połączenia z autobusami ani z LM-em, tylko to jest bardziej na pieszo.
+> You:  Więc 24 godziny zrobimy lepszą aplikację niż Warszawa.
+> You:  Z większą ilością funkcji.
+> </pasted_content id="2214">
+
+
+**AI:** Paweł wskazał A4 i A5. Połączyłem je w A6 (pływająca karta + pasek zakładek z A5, Sawa wychylająca się zza karty z A4): `docs/ui/propozycje/html/a6-karta-z-sawa.html`, zrzut w `docs/ui/propozycje/`, wpis w `docs/ui/README.md`.
+
+### 2026-10-17 12:49 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md    | 202 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>  docs/ui/README.md |   3 +-
+>  2 files changed, 204 insertions(+), 1 deletion(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 8aa296f..d93f6c3 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2602,3 +2602,205 @@
+>  > new file: docs/ui/propozycje/1218-ekran-glowny-a5-plywajaca-karta-mobile.png
+>  > new file: docs/ui/propozycje/html/_a.css
+>  
+> +
+> +### 2026-10-17 12:48 · Pawel
+> +
+> +> A4 i A5 najlepiej
+> +
+> +
+> +### 2026-10-17 12:48 · Pawel
+> +
+> +> [rztwprz spotkanie - widzielismy sie z Jury ktore podeszlo zobaczyc nad czym pracujemy: 
+> +> 
+> +> <pasted_content id="2214">
+> +> You: Role w końcu. Role?
+> +> You:  Także kto co implementuje.
+> +> You:  Bo to jest jeszcze nieuzupełnione.
+> +> You:  O, może zadaniami, bo to będą takie drobniejsze zadania, które może w trakcie ktoś coś skończy i będzie mówił, że bierze. Jak dane z Wikipedii, i tak dalej, integracja jakaś.
+> +> You:  Dobra, czyli póki co tego nie wpisywać?
+> +> You:  No, może nie.
+> +> You:  Może sam coś zasugerować.
+> +> You:  Pokazujemy jakieś demo.
+> +> You:  Cześć.
+> +> You:  Cześć.
+> +> You:  Tak.
+> +> You:  Drużyno Sawo, czy jesteście... tak, możemy powiedzieć, że jesteście w pełnym składzie i mam takie pytanie: czy jesteście gotowi podzielić się z nami swoimi pomysłami, konceptem?
+> +> You:  Tak, jak najbardziej.
+> +> You:  Mhm.
+> +> You:  Możemy. Więc zobaczyliśmy w dane, i w tym momencie 20% osób mieszkających w Warszawie nie pochodzi stąd, z innych miast lub innych krajów.
+> +> You:  I ten współczynnik na pewno będzie się zwiększał, tak jak w innych większych miastach, jak Nowy Jork. Więc chcemy zbudować aplikację, która pomaga osobom mieszkającym w Warszawie czuć się bardziej w Warszawiakiem, poprzez połączenie z bazą danych i z danymi z historycznymi z Warszawy, które pozyskujemy.
+> +> You:  Tak nazywa się Sawo, czyli jak syrenka warszawska, która według legendy założyła to miasto. I też może oprowadzać osoby po tym mieście.
+> +> You:  Na przykład jedną z funkcji będzie to, że możemy zaplanować sobie... na przykład mamy wolne 2 godziny, możemy wsiąść w autobus i Sawa zaplanuje nam trasę, która w trakcie, jak będziemy jechać tym autobusem, będzie nam mówić, co widzimy za oknem, z lewej czy z prawej strony, będzie miała dostęp do danych, co jest akurat wystawione w muzeach, jakie są budynki, z jaką historią. Więc te wszystkie dane pozyskamy, i w ten sposób, zamiast słuchać podcastu czy słuchać muzyki, jadąc po Warszawie, możemy się o niej uczyć.
+> +> You:  Albo nawet spacerując, możemy planować te trasy, i możemy czuć się bardziej połączeni z historią tego miasta.
+> +> You:  Tak, taki proces obok chcemy do tego podejść.
+> +> You:  Żeby jak coś na przykład wraca sobie z pracy, ma trochę więcej czasu, może sobie ustawić podróż do domu, zaznaczyć, ile tam chce mieć... ile ma wolnego czasu, no i taka podróż zostanie zaplanowana. Przy okazji właśnie zwiedzając jakieś różne miejsca w Warszawie.
+> +> You:  To muszę dopowiedzieć, że jest drużyna, która ma bardzo podobny koncept, ale różnica między wami a nim jest taka, że oni chcą adresować swoje rozwiązanie bardziej do mieszkańców Warszawy, jako taki sposób na zrozumienie tego ducha tego miasta, jakby odkrycie... nie nietypowych informacji, a wy rozumiem, że chcecie adresować w ogóle bardziej do cudzoziemców, tak? Dla osób.
+> +> You:  Znaczy, do ludzi na przykład, do... też ludzi, którzy mieszkają w Warszawie, ale tak na przykład, że przyjechali do Warszawy po to, znaleźli pracę i nic o tym mieście nie wiedzą.
+> +> You:  Tak, od strony takiej bardziej historycznej, a może niekoniecznie kulturowej.
+> +> You:  Mhm.
+> +> You:  Sygnalizuje, tak? Że jest... że jest drużyna, która jest tam.
+> +> You:  Mhm.
+> +> You:  I poprawi.
+> +> You:  Czyli nas podsłuchali na pewno.
+> +> You:  Oraz o prowadzenie przez syrenkę też było gdzieś wcześniej.
+> +> You:  Tak.
+> +> You:  To też na pewno.
+> +> You:  Okej.
+> +> You:  W ogóle jesteśmy w takim... można powiedzieć, że jesteście jedną z ostatnich drużyn, które podchodzimy.
+> +> You:  Taki temat związany z aktywnością wolnym czasie, przewodnicy, bycie w mieście, opowiadanie tras, co zobaczyć, jaki jest kontekst. No i jakby mocno się powtarza to, co powiedzieliśmy: zrealizowany pewnie w różny sposób, ale też czasami podobny.
+> +> You:  Więc tego po prostu sygnalizujemy wam, że tutaj są podobne... że wiele drużyn bierze te tematy też na swój warsztat.
+> +> You:  Mhm.
+> +> You:  Znaczy, chociaż tutaj do tamtego miasta poprawcie mi to, jak się nazywa, Warsaw Police Guy, nie wiem, co my mamy.
+> +> You:  Tak?
+> +> You:  Tak, jest taka aplikacja Warsaw Police Guy, to także dobrze by było też jakby nie powielać funkcjonalności, tak?
+> +> You:  Mhm.
+> +> You:  Natomiast tutaj tak jakby będę... powiedzieliście, no to one są delikatnie różne, delikatnie, już teraz różnica. Także jakby też warto tam zajrzeć, co się dzieje w tym Warsaw Police Guy, chociaż z tego co wiem, to jest tylko aplikacja, to nie jest...
+> +> You:  to nie jest... nie można się napisać przez stronę.
+> +> You:  Tak, tak, tak.
+> +> You:  Też instalowałem tego, ale brałem udział w trakcie instalowania tej aplikacji, więc nie usłyszałem, że jest mniej więcej znany.
+> +> You:  Warto też tam zajrzeć.
+> +> You:  Okej, dobra.
+> +> You:  Dziękujemy.
+> +> You:  A ja z kolei się tak... na ile się zastanawiam, jeśli dobrze zrozumiałem, problem z którego wyszliście, że to jest właśnie to, żeby ta osoba, która jest przyjezdna, no jakby lepiej się utożsamiła z miastem, no to ja rozumiem, że... znaczy, trochę to będzie brzmiało jak jakaś sugestia, ale tak pomyślałem sobie po prostu, to nie jest absolutnie tylko takie przemyślenia, że no oczywiście znajomość historii, wyjście z domu czy z biura, no jest jakimś sposobem, ale też na przykład mamy zbiory dotyczące tej aktywności społecznej, takiej... takiego właśnie, że nie wiem, że możesz... nie wiem, zaangażować się w budżet obywatelski Warszawy i możesz na przykład, nie wiem, zagłosować na jakiś projekt, a to sam wymyśleć, ale przynajmniej się dowiedzieć, że w ogóle jest taka inicjatywa, że są na przykład konsultacje gdzie mieszkańcy się wymieniają właśnie opiniami na jakiś temat. I to też jest co prawda, to jest narzędzie cyfrowe, no ale ono też trochę jakby tak w zamiarze powinno i te dane są właśnie na dane warszawa.
+> +> You: pl, one też w zamiarze po prostu powinny aktywizować tego mieszkańca. Mamy też, nie wiem, wolontariat miejski, na przykład, więc to jest jakby oprócz tej takiej sfery historycznej, która jest cenna, żeby się trochę utożsamić, no to są też takie właśnie kwestie związane z aktywnością, z poznawaniem tego miasta poprzez zaangażowanie się w jakieś procesy miejskie, no tak po prostu tak daje taki temat może to będzie wam po drodze z tym, nie wiem.
+> +> You:  Okej. Mhm.
+> +> You:  Dobry pomysł.
+> +> You:  Dziękuję.
+> +> You:  Dziękujemy.
+> +> You:  Dziękuję.
+> +> You:  Po prostu będziemy robić najlepiej to.
+> +> You:  Mhm. Mhm.
+> +> You:  Albo faktycznie skupić się na tej rzeczy dla cudzoziemców.
+> +> You:  Taki właśnie stricte pod tą daną. Wiadomo, Warszawa też mogą, ale przedstawić to.
+> +> You:  Dalej ta sama aplikacja, ale marketujemy to dla osób przyjezdnych, nie? Im to marketujemy.
+> +> You:  Bo mówili, że czegoś takiego jeszcze nie mieli.
+> +> You:  Moglibyśmy dodać też wtedy jakieś takie elementy właśnie, że jak kupować te bilety, tak?
+> +> You:  O, no, no, to prawda.
+> +> You:  To też wpadło jako problem.
+> +> You:  Ale może z tym poznawaniem ludzi wtedy też bardziej.
+> +> You:  Mhm.
+> +> You:  Wtedy to tylko wracamy do tego drugiego wyzwania, nie?
+> +> You:  Mhm, tak.
+> +> You:  Warszawa się... nie, że ludzie są w konflikcie, tak?
+> +> You:  Na spędzanie wol
+> +> You: nego czasu, nie?
+> +> You:  Mhm.
+> +> You:  To co uważacie, jakie macie przemyślenia po tej rozmowie?
+> +> You:  Myślę, że pytanie, czy jakby to, co oni powiedzieli, że jest podobne, to jest w naszym... w naszej kategorii, czy w innej? Czy właśnie w tej drugiej?
+> +> You:  No właśnie.
+> +> You:  Mhm.
+> +> You:  Bo jak w drugiej, no to w sumie wywalone.
+> +> You:  Mhm.
+> +> You:  Niby tak. A może też Jiri powiedzieć, że to nie jest nasze wyzwanie do końca.
+> +> You:  Mogliśmy się zapisać na drugie.
+> +> You:  I że no, nie wiem, chyba że się skupić też na jakimś innym feature'ze, który nas rozróżnia od nich.
+> +> You:  Na przykład detekcja śmierdzących autobusów.
+> +> You:  Hard pivot.
+> +> You:  Wszystko będzie o śmierdzących busach.
+> +> You:  Może to właśnie będzie jakiś taki w formie takiej... takiego podcastu zrobione.
+> +> You:  Czyli stricte podcast, no?
+> +> You:  Żeby to różniało.
+> +> You:  Warszawiacy jeżdżą przez korki.
+> +> You:  Też. Często do pracy.
+> +> You:  O, to też jest statystyka. Coraz więcej warszawiaków korzysta z autobusów.
+> +> You:  Więc w tym, jak jadą, no dobra, to jest ta sama trasa codziennie, ale może być to coś o Warszawie innego.
+> +> You:  Może być innym głosem czytany.
+> +> You:  Robert Makłowicz.
+> +> You:  No nie wiem, chyba... wydaje mi się, że Warszawia póki co nadal iść trochę w tą stronę i ewentualnie po tym to zacząć jeszcze kierować trochę... Zobaczymy, jak zaczniemy to jeszcze tworzyć.
+> +> You:  No bo trochę może tam parę osób ma jakieś podobne TT, ale z drugiej strony pewnie inne funkcje, które mieliśmy, też się powtarzają, nie?
+> +> You:  Mhm.
+> +> You:  No chyba, że faktycznie robisz jakiś... coś stricte pod jedną rzecz.
+> +> You:  Niszowe.
+> +> You:  Tak.
+> +> You:  Jak to drzewo.
+> +> You:  Trzeba zobaczyć też tą aplikację, co on podrzucał, tą... jak ona się nazywała?
+> +> You:  Warsawa.
+> +> You:  Warsaw Polish Guide?
+> +> You:  Warsaw Polish, tak.
+> +> You:  Polish Warszawa.
+> +> You:  Powiedział Polis, ale może nie mówiłeś.
+> +> You:  No tak, słyszałem.
+> +> You:  O, Warsaw Polis Guide.
+> +> You:  Nowa aplikacja turystyczna.
+> +> You:  Ale to jest z Warszawy ją robiła, więc jest chujowo na pewno.
+> +> You:  Pobieramy.
+> +> You:  A myśleliśmy, że jesteśmy tacy mądrzy.
+> +> You:  Zainstaluję aplikację, zobaczymy.
+> +> You:  No, no też ci proponuję trasy według tych screenów tutaj. Mówi ci, jak masz pójść.
+> +> You:  Ale no, zakładam, że nie mają... możesz se audio deskrypcję zrobić, ale nie mają podcastu.
+> +> You:  Mają quizy. Do której rodziny?
+> +> You:  To też jakby robienia ścieżek, tylko są jakieś pre-programowane ścieżki.
+> +> You:  Aha.
+> +> You:  I możesz tworzyć nowe ręcznie sobie, nie?
+> +> You:  A może skupmy się na tym podcaście, żeby to było podcaście i gada między sobą Wars i Sawa.
+> +> You:  Jak jest notebook LM.
+> +> You:  Ej, spoko.
+> +> You:  Ej, to by było spoko.
+> +> You:  I co? I zrobić tak jak w notebooku, chyba że możesz też im przerwać i z nimi gadać.
+> +> You:  A można tak?
+> +> You:  Chyba można, no.
+> +> You:  Można.
+> +> You:  Nie, no nie wiem, bo tak myślę sobie, jak możemy się wyróżnić od tych wszystkich projektów. I wykorzystać jakieś nasze zdolności.
+> +> You:  Promptowanie.
+> +> You:  Bo ja... ja nie robiłem podcastów, nic z dźwiękiem nigdy takiego.
+> +> You:  Ja tyle, co w Google LM wrzucałem rzeczy, żeby mi wygenerowało podcast.
+> +> You:  Ja słuchałem podcastów.
+> +> You:  No nie wiem, ale to może oni powinni się dostosować i zmienić pomysł, a nie my.
+> +> You:  Bo mówisz na zawsze, ale wpadliśmy znowu.
+> +> You:  Ej, rzućmy... zróbmy zasłonki karteczkę?
+> +> You:  Z 5 poprawek.
+> +> You:  Jakieś szantaż, coś takiego.
+> +> You:  No.
+> +> You:  Po wyłączajmy im komputery.
+> +> You:  Mhm.
+> +> You:  Możemy ich z sieci skickować, żeby nie mogli prosto zablokować serwery Claude'a.
+> +> You:  Zostawimy im jakieś shitowe GPT.
+> +> You:  P
+
+**AI:** Przetworzyłem transkrypt rozmowy z jury (koncept dla przyjezdnych, konkurencja, format podcastu). Nowy plik `docs/spotkania/2026-10-17-wieczor-jury-koncept.md`; dopisałem do `docs/stan.md` otwarte decyzje i ostatnią decyzję. Nie zmieniałem PRD, bo grupa docelowa i format są nierozstrzygnięte. Pominąłem żarty i sprawy prywatne.
