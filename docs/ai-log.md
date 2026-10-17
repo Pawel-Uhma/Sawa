@@ -368,3 +368,35 @@
 > add node and pnpm setup to the README
 
 **AI:** Utworzyłem główny `README.md`: opis Sawy, linki do dokumentacji, instalacja Node 24 (macOS, Windows, nvm) i pnpm 12.14.0 (npm lub Corepack), uruchomienie lokalne, tabela poleceń, struktura repo i typowe problemy.
+
+### 2026-10-17 11:53 · Jasiek
+
+> familiarize yourself with this repo
+
+**AI:** Zapoznałem się ze strukturą repozytorium, dokumentacją mózgu zespołu (`CLAUDE.md`, `docs/README.md`, `stan.md`, `todo.md`, `zespol.md`), PRD Sawy, planem architektury oraz rolami R1–R5.
+
+### 2026-10-17 12:49 · Jasiek
+
+> przejrzyj TODO. Przejrzyj załadowane dane o punktach w Warszawie. Na tej podstawie zaplanuj jak załadować to do bazy danych żeby było najprostsze w użyciu później
+
+**AI:** Przeanalizowałem `todo.md`, `12-plan-mvp.md` §6 i `historia/sawa-historia.geojson` (326 punktów, pola, licencje 351 zdjęć, test reguł zainteresowań) oraz sprawdziłem przez MCP, że baza Supabase jest pusta i bez PostGIS. Napisałem `docs/13-plan-bazy.md` (płaska tabela `places` z jsonb, `place_photos`, `story_cache`, RPC `places_in_bbox`/`places_near_line`/`place_detail`, idempotentny seed, 8 zainteresowań, reguły licencji); dopisałem link w `README.md` i dwie otwarte decyzje w `stan.md`. Rozwiązałem konflikt w `ai-log.md` po `git pull`. Nic nie commitowałem.
+
+### 2026-10-17 12:55 · Jasiek
+
+> możemy zignorować licencje, to na razie jest tylko na użytek własny. Dopisz mnie do zaspol.md i zacznij implementacje tego planu
+
+**AI:** Dopisałem Jaśka do `zespol.md` (wiersz Janek, rola R2), T-22 zamknięte decyzją „licencje pomijamy”. Zainstalowałem Node 24 i pnpm, napisałem i wgrałem przez MCP migracje `supabase/migrations/20261017130000_places.sql` (PostGIS, `places`, `place_photos`, `story_cache`, RLS) i `…131000_places_rpc.sql` (`places_in_bbox`, `places_near_line`, `place_detail`), oraz seed `scripts/seed-historia.ts` z mapperem i regułami zainteresowań w `scripts/historia/` (5 testów, dry-run 326 miejsc, 351 zdjęć). Ładowanie danych czeka na klucz `service_role` w `.env.local`.
+
+**AI:** Podałem komendę, która zapisuje klucz `service_role` do ukrytego pliku `.env.local` bez wyświetlania go na ekranie (do uruchomienia we własnym terminalu), oraz alternatywę z `nano`.
+
+### 2026-10-17 · Jasiek
+
+> dobra, wkleiłem klucz
+
+**AI:** Uruchomiłem seed: w Supabase jest 326 miejsc i 351 zdjęć, drugie uruchomienie nie dubluje rekordów. Sprawdziłem SQL-em `places_in_bbox` (326), `places_near_line` wzdłuż al. Solidarności (108 w 150 m) i `place_detail`. Zaktualizowałem `todo.md` (T-21 zrobione), `stan.md` i `13-plan-bazy.md`.
+
+### 2026-10-17 · Jasiek
+
+> zrób osobny branch, opisz go, zrób commit, push i otwórz PR
+
+**AI:** Utworzyłem gałąź `r2/places-migration` z trzema commitami (migracje, seed z `.env.example`, dokumenty), wypchnąłem ją i otworzyłem PR #1 (https://github.com/Pawel-Uhma/Sawa/pull/1) z opisem: co, dlaczego, jak sprawdzić, otwarte decyzje.
