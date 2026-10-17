@@ -26,10 +26,11 @@
 - R2 (Jasiek, 14:08): sport i przyroda mają miejsca (T-25): +102 z OSM (parki, skwery, obiekty sportowe), w bazie 428 miejsc (historia 242, kultura 113, sport 33, przyroda 75). `apps/api/data/places.geojson` odświeżony dla planera. Następne: zbiór miasta „Otwarte boiska” (T-27, potrzebny token).
 
 - R2 (Jasiek, 14:30): zbiór miasta „Otwarte boiska” w bazie (T-27): 57 szkolnych terenów sportowych z godzinami otwarcia, adresy geokodowane Nominatim. Razem 485 miejsc, sport 90, przyroda 75. `places.geojson` dla planera odświeżony.
+- R1 (Szczepan, 14:40): planer czyta miejsca z Supabase (`listInBBox`, cache 10 min, odświeżanie w tle), przy błędzie lub braku kluczy z `places.geojson` (T-19, PR #17). Na Railway sprawdzić w logach `planner places loaded` z `isFallback: false`.
 
 ## Zablokowane
 
-- Trasy dłuższe niż ok. 20 min były puste w drugiej połowie (miejsca tylko do 1 km od 42 Warsaw). Po odświeżeniu `places.geojson` przez R2 (14:08, 428 miejsc) do sprawdzenia, czy zasięg się poprawił. Sprawdza R1 (Szczepan), więcej miejsc dokłada R2 (Jasiek).
+- Pomiar R1 (14:40, 485 miejsc): trasa 60 min w jedną stronę z 42 Warsaw dalej ma ostatnie miejsce ok. 30. min (ostatnie okno 31 min). Pętla 60 min i trasa 90 min ze wszystkimi kategoriami mają miejsca do końca. Miejsca leżą tylko ok. 3 km od 42 Warsaw (lng 20,93–21,02, lat 52,21–52,26), więc potrzebne miejsca dalej od centrum Woli (R2, Jasiek).
 - Front na Vercelu nie ma API, dopóki nie ma deployu na Railway (T-62). Konfiguracja gotowa w `main` (PR #15); brakuje logowania do Railway i Vercela oraz sekretów (`SUPABASE_*`, `WAW_TOKEN`). Odblokowuje R1 (Szczepan).
 
 ## Otwarte decyzje

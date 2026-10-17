@@ -113,7 +113,7 @@ Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiada
 
 **Dane:**
 - Sieć: GTFS Warszawy z [mkuran.pl/gtfs](https://mkuran.pl/gtfs/) (licencja ZTM + ODbL dla kształtów, podpis w `Route.attribution`). Skrypt `pnpm --filter @sawa/scripts transit` buduje `apps/api/data/transit-graph.json.gz` (ok. 0,4 MB: 575 wariantów tras tramwajów i autobusów z ruchem w dzień, 6384 przystanki, mediana czasów przejazdu, częstotliwość 10–20). Metro i kolej pominięte, bo pod ziemią nic nie widać. Plik jest na jeden dzień (domyślnie dziś); przed niedzielnym demo przebudować z `--date 2026-10-18`.
-- Miejsca: GeoJSON w formacie RPC `places_in_bbox` (`id, name, kind, interests, richness`). Teraz z pliku `apps/api/data/places.geojson` (`pnpm --filter @sawa/scripts export:places`, mapper R2), potem z Supabase: ten sam port `PlacesRepository.listInBBox` (R2), tylko inny adapter.
+- Miejsca: z Supabase przez `PlacesRepository.listInBBox` (RPC `places_in_bbox`: `id, name, kind, interests, richness`), bbox wokół startu. Cache w pamięci per bbox na 10 min, po wygaśnięciu odświeżany w tle; trafienia na wariantach liczone od nowa tylko, gdy zmienił się zbiór miejsc. Bez kluczy Supabase albo przy błędzie (timeout 5 s) planer bierze `apps/api/data/places.geojson` (ten sam format, `pnpm --filter @sawa/scripts export:places`) i loguje to; Supabase próbuje znów po 1 min.
 - Odjazdy na żywo: `get_ztm_odjazdy_linii_z_przystanku` dla pierwszego odcinka (wymaga `WAW_TOKEN`); bez tokenu czekanie = połowa częstotliwości.
 
 **Algorytm:**
@@ -124,7 +124,7 @@ Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiada
 5. Wynik: `Route` z kontraktu (`packages/shared/src/schemas/route.ts`), ok. 0,2 s na zapytanie.
 6. **Pętla** (`returnToStart: true` w zapytaniu): trasa kończy się na przystanku do 500 m od startu. Do 3 przesiadek, można wrócić tą samą linią w drugą stronę, czas 80–110% budżetu. Czas powrotu z każdego zespołu przystanków liczy odwrócony Dijkstra (`return-times.ts`), więc wyszukiwanie od razu odrzuca trasy, z których nie da się zdążyć wrócić. Odpowiedź ma `endsAtStart` (false, gdy pętli nie udało się znaleźć). Ok. 0,3 s.
 
-**Ograniczenie danych:** miejsca są tylko do 1 km od 42 Warsaw, więc po ok. 20 min jazdy nie ma już o czym opowiadać (ostatnie okno jest długie). Rozwiązuje to więcej miejsc w Supabase.
+**Ograniczenie danych:** miejsca są tylko ok. 3 km od 42 Warsaw (pomiar 17.10, 14:40, 485 miejsc), więc trasa 60 min w jedną stronę ma ostatnie miejsce ok. 30. min. Pętla i trasa 90 min ze wszystkimi kategoriami mają miejsca do końca. Rozwiązuje to więcej miejsc w Supabase dalej od Woli.
 
 ## 8. Opowieść i tryb demo (R4 + R3, M5–M6)
 
