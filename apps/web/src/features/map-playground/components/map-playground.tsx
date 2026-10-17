@@ -144,7 +144,9 @@ export function MapPlayground() {
             options={INTERESTS.map((value) => ({ value, label: INTEREST_LABELS[value] }))}
             onChange={(interests) => set({ interests })}
           />
-          <p className="text-xs text-tekst-3">Wpływa na planowanie trasy, nie na mapę.</p>
+          <p className="text-xs text-tekst-3">
+            Wpływa na planowanie trasy i kolor miejsc z kilkoma tematami.
+          </p>
         </Section>
 
         <Section title="Trasa" prop="route">
