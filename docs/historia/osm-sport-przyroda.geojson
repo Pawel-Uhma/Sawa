@@ -1,0 +1,3247 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0114569,
+     52.2129166
+    ]
+   },
+   "properties": {
+    "id": "osm-way-23472149",
+    "nazwa": "Stadion Syrenki",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako stadion."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/23472149"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.988875,
+     52.2167599
+    ]
+   },
+   "properties": {
+    "id": "osm-node-14056022795",
+    "nazwa": "Skwer im. ks. Jana Salamuchy",
+    "typ": "miejsce",
+    "adres_dzis": "Wawelska",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/14056022795"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0083569,
+     52.2406995
+    ]
+   },
+   "properties": {
+    "id": "osm-way-4943389",
+    "nazwa": "Ogród Saski",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Ogród Saski – park miejski w śródmieściu Warszawy, położony między placem marsz. Józefa Piłsudskiego, placem Żelaznej Bramy, ul. Marszałkowską i ul. Królewską, na Osi Saskiej.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ogród Saski w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Saski_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/4943389"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9529729,
+     52.241005
+    ]
+   },
+   "properties": {
+    "id": "osm-way-5088307",
+    "nazwa": "Park Moczydło",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Moczydło – park na warszawskiej Woli, znajdujący się na terenie osiedla Koło, między ulicami: Deotymy, Górczewską, Prymasa Tysiąclecia i Czorsztyńską.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Moczydło w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_Moczyd%C5%82o_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/5088307"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0055627,
+     52.2338253
+    ]
+   },
+   "properties": {
+    "id": "osm-way-7306721",
+    "nazwa": "Park Świętokrzyski",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Świętokrzyski – park w Warszawie, położony pomiędzy ulicami: Emilii Plater, Świętokrzyską i Marszałkowską a Pałacem Kultury i Nauki.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Świętokrzyski w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_%C5%9Awi%C4%99tokrzyski_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/7306721"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9880194,
+     52.2454911
+    ]
+   },
+   "properties": {
+    "id": "osm-way-10504959",
+    "nazwa": "Skwer gen. Jana Jura-Gorzechowskiego",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/10504959"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9417949,
+     52.2489445
+    ]
+   },
+   "properties": {
+    "id": "osm-way-10701217",
+    "nazwa": "Park im. Księcia Janusza",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/10701217"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9919267,
+     52.2176821
+    ]
+   },
+   "properties": {
+    "id": "osm-way-16539902",
+    "nazwa": "Skwer Sue Ryder",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/16539902"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.002156,
+     52.2481572
+    ]
+   },
+   "properties": {
+    "id": "osm-way-18467869",
+    "nazwa": "Ogród Krasińskich",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Ogród Krasińskich w Warszawie – zabytkowy park miejski w Warszawie, w Śródmieściu, na Muranowie, znajdujący się między ulicami Świętojerską, Andersa, Starymi Nalewkami, Długą i placem Krasińskich.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ogród Krasińskich w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Krasi%C5%84skich_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/18467869"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9683507,
+     52.2251514
+    ]
+   },
+   "properties": {
+    "id": "osm-way-20136487",
+    "nazwa": "Skwer Alojzego Pawełka",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/20136487"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0207235,
+     52.2414076
+    ]
+   },
+   "properties": {
+    "id": "osm-way-20933417",
+    "nazwa": "Park Kazimierzowski",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Kazimierzowski – park znajdujący się w dzielnicy Śródmieście w Warszawie.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Kazimierzowski w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_Kazimierzowski_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/20933417"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9517617,
+     52.2339439
+    ]
+   },
+   "properties": {
+    "id": "osm-way-22719550",
+    "nazwa": "Park im. Edwarda Szymańskiego",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park im. Edwarda Szymańskiego – park miejski znajdujący się w warszawskiej dzielnicy Wola.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park im. Edwarda Szymańskiego w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_im._Edwarda_Szyma%C5%84skiego_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/22719550"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9945543,
+     52.2178752
+    ]
+   },
+   "properties": {
+    "id": "osm-way-22920998",
+    "nazwa": "Park Wielkopolski",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Wielkopolski, także Zieleniec Wielkopolski – zabytkowy park znajdujący się w warszawskiej dzielnicy Ochota, w kwartale ulic: Łęczyckiej, Wawelskiej, Górnickiego i Filtrowej.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Wielkopolski w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_Wielkopolski_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/22920998"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0084812,
+     52.2113153
+    ]
+   },
+   "properties": {
+    "id": "osm-way-23470728",
+    "nazwa": "Skwer Wasyla Stusa",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/23470728"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9848112,
+     52.2145457
+    ]
+   },
+   "properties": {
+    "id": "osm-way-23696231",
+    "nazwa": "Park Marii Skłodowskiej-Curie",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/23696231"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0167657,
+     52.241803
+    ]
+   },
+   "properties": {
+    "id": "osm-way-24049035",
+    "nazwa": "Skwer Księdza Jana Twardowskiego",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/24049035"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.016208,
+     52.2483684
+    ]
+   },
+   "properties": {
+    "id": "osm-way-25865137",
+    "nazwa": "Ogrody Zamkowe",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Ogrody Zamkowe – ogród przylegający do Zamku Królewskiego w Warszawie od strony Wisły, pomiędzy zamkiem a Wisłostradą. Obszar ten o powierzchni 5,8 ha położony jest częściowo na i poniżej skarpy warszawskiej w granicach dzielnicy Śródmieście.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ogrody Zamkowe w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ogrody_Zamkowe_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/25865137"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0112629,
+     52.2540823
+    ]
+   },
+   "properties": {
+    "id": "osm-way-26020105",
+    "nazwa": "Skwer 1 Dywizji Pancernej WP",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/26020105"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9850766,
+     52.2445286
+    ]
+   },
+   "properties": {
+    "id": "osm-way-26260939",
+    "nazwa": "Skwer Racheli Auerbach",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/26260939"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0170069,
+     52.2379151
+    ]
+   },
+   "properties": {
+    "id": "osm-way-28092636",
+    "nazwa": "Autonomia",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/28092636"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9998705,
+     52.245076
+    ]
+   },
+   "properties": {
+    "id": "osm-way-29388095",
+    "nazwa": "Skwer Batalionu Harcerskiego AK \"Wigry\"",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/29388095"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0144998,
+     52.2445549
+    ]
+   },
+   "properties": {
+    "id": "osm-way-30338260",
+    "nazwa": "Skwer Herberta Clarka Hoovera",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/30338260"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0189392,
+     52.2135507
+    ]
+   },
+   "properties": {
+    "id": "osm-way-30876212",
+    "nazwa": "Skwer Mieczysława Fogga",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/30876212"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0189132,
+     52.2159754
+    ]
+   },
+   "properties": {
+    "id": "osm-way-30876236",
+    "nazwa": "Skwer Oleandrów",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/30876236"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.948274,
+     52.2278641
+    ]
+   },
+   "properties": {
+    "id": "osm-way-33689388",
+    "nazwa": "Skwer pułkownika Zdzisława Kuźmirskiego-Pacaka",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/33689388"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9998817,
+     52.2382628
+    ]
+   },
+   "properties": {
+    "id": "osm-way-34627264",
+    "nazwa": "Park Mirowski",
+    "typ": "miejsce",
+    "adres_dzis": "Aleja Piotra Drzewieckiego",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Mirowski, nazywany także parkiem Śródmiejskim – miejski park w warszawskiej dzielnicy Śródmieście.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Mirowski w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_Mirowski_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/34627264"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9479549,
+     52.2308351
+    ]
+   },
+   "properties": {
+    "id": "osm-way-34966187",
+    "nazwa": "Park Józefa Sowińskiego",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park im. gen. Józefa Sowińskiego – park miejski znajdujący się u zbiegu ulic Elekcyjnej i Wolskiej w warszawskiej dzielnicy Wola. Graniczy z cmentarzem prawosławnym i parkiem im. Edwarda Szymańskiego.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park im. gen. Józefa Sowińskiego w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_im._gen._J%C3%B3zefa_Sowi%C5%84skiego_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/34966187"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0084367,
+     52.2456969
+    ]
+   },
+   "properties": {
+    "id": "osm-way-35009444",
+    "nazwa": "Skwer Adolfa Marii Bocheńskiego",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/35009444"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9678471,
+     52.2352724
+    ]
+   },
+   "properties": {
+    "id": "osm-way-35071381",
+    "nazwa": "Skwer Wandy Lurie",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/35071381"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9740522,
+     52.2364513
+    ]
+   },
+   "properties": {
+    "id": "osm-way-35071406",
+    "nazwa": "Skwer Gwary Warszawskiej",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/35071406"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9989944,
+     52.2572746
+    ]
+   },
+   "properties": {
+    "id": "osm-way-38790605",
+    "nazwa": "Szkolny Park Sportowy imienia Janusza Kusocińskiego",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/38790605"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9379536,
+     52.226701
+    ]
+   },
+   "properties": {
+    "id": "osm-way-83823124",
+    "nazwa": "Park Powstańców Warszawy",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/83823124"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.996537,
+     52.2243761
+    ]
+   },
+   "properties": {
+    "id": "osm-way-106646320",
+    "nazwa": "Skwer Alfonsa Grotowskiego",
+    "typ": "miejsce",
+    "adres_dzis": "Plac Sokratesa Starynkiewicza",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/106646320"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9323953,
+     52.2405023
+    ]
+   },
+   "properties": {
+    "id": "osm-way-115810009",
+    "nazwa": "Park Ulricha",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Zakłady Ogrodnicze C. Ulrich – spółka będąca właścicielem gospodarstwa ogrodniczego w Warszawie, w dzielnicy Wola, założona w 1805 przez Jana Bogumiła Traugotta Ulricha. W 1876 gospodarstwo zostało przeniesione na grunty wsi Górce przez Jana Krystiana Ulricha. Grunty należące do spółki zostały w 1945 znacjonalizowane, a sama spółka upaństwowiona w 1958.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zakłady Ogrodnicze C. Ulrich",
+      "url": "https://pl.wikipedia.org/wiki/Zak%C5%82ady_Ogrodnicze_C._Ulrich"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/115810009"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9648643,
+     52.2608802
+    ]
+   },
+   "properties": {
+    "id": "osm-way-116603582",
+    "nazwa": "Skwer Aleksandry Piłsudskiej",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/116603582"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.010188,
+     52.2266823
+    ]
+   },
+   "properties": {
+    "id": "osm-way-118254320",
+    "nazwa": "Skwer Batalionu AK \"Zaremba-Piorun\"",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/118254320"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9732982,
+     52.2102717
+    ]
+   },
+   "properties": {
+    "id": "osm-way-129493399",
+    "nazwa": "Skwer Dobrego Maharadży",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/129493399"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0143347,
+     52.2508269
+    ]
+   },
+   "properties": {
+    "id": "osm-way-135977483",
+    "nazwa": "Skwer Karoliny Lanckorońskiej",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/135977483"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0032728,
+     52.2450572
+    ]
+   },
+   "properties": {
+    "id": "osm-way-200032029",
+    "nazwa": "Skwer Robinsonów Warszawskich",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/200032029"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9691723,
+     52.2377771
+    ]
+   },
+   "properties": {
+    "id": "osm-way-220349213",
+    "nazwa": "Plac Opolski",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/220349213"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9873745,
+     52.2376723
+    ]
+   },
+   "properties": {
+    "id": "osm-way-298748480",
+    "nazwa": "Skwer Psa Fafika",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/298748480"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9949089,
+     52.2575161
+    ]
+   },
+   "properties": {
+    "id": "osm-way-299630261",
+    "nazwa": "Skwer Batalionu AK \"Czata 49\"",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/299630261"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9988776,
+     52.2647298
+    ]
+   },
+   "properties": {
+    "id": "osm-way-326736657",
+    "nazwa": "Park Fosa",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Fosa i Stoki Cytadeli – park znajdujący się wokół murów Cytadeli Warszawskiej w warszawskiej dzielnicy Żoliborz, między ulicami: Wybrzeżem Gdyńskim, Kaniowską i Krajewskiego.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Fosa i Stoki Cytadeli w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_Fosa_i_Stoki_Cytadeli_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/326736657"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9996801,
+     52.2429942
+    ]
+   },
+   "properties": {
+    "id": "osm-way-330496954",
+    "nazwa": "Skwer Duśki Trafankowskiej",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/330496954"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0168773,
+     52.2349871
+    ]
+   },
+   "properties": {
+    "id": "osm-way-369123179",
+    "nazwa": "Skwer Straży Obywatelskiej 1939 r.",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/369123179"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9352196,
+     52.2292456
+    ]
+   },
+   "properties": {
+    "id": "osm-way-437212060",
+    "nazwa": "Skwer Teodora Klincewicza",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/437212060"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9675315,
+     52.236733
+    ]
+   },
+   "properties": {
+    "id": "osm-way-461553638",
+    "nazwa": "Różany Skwer Pysznych Pączków",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/461553638"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9689559,
+     52.2555059
+    ]
+   },
+   "properties": {
+    "id": "osm-way-466177987",
+    "nazwa": "Skwer Kaliny",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/466177987"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9649811,
+     52.2342878
+    ]
+   },
+   "properties": {
+    "id": "osm-way-476766786",
+    "nazwa": "Skwer „Sierpnia 1944”",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/476766786"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9934836,
+     52.2376919
+    ]
+   },
+   "properties": {
+    "id": "osm-way-493884615",
+    "nazwa": "Skwer Sybiraków",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/493884615"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9661768,
+     52.216794
+    ]
+   },
+   "properties": {
+    "id": "osm-way-519586588",
+    "nazwa": "Park Pięciu Sióstr",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Pięciu Sióstr, do 2022 i zwyczajowo park Zachodni – park miejski w dzielnicy Ochota w Warszawie, znajdujący się u zbiegu ulicy Bitwy Warszawskiej 1920 r. i Alej Jerozolimskich.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Pięciu Sióstr",
+      "url": "https://pl.wikipedia.org/wiki/Park_Pi%C4%99ciu_Si%C3%B3str"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/519586588"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9951597,
+     52.2369867
+    ]
+   },
+   "properties": {
+    "id": "osm-way-719489379",
+    "nazwa": "Skwer Isaaca Bashevisa Singera",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/719489379"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9871038,
+     52.2429651
+    ]
+   },
+   "properties": {
+    "id": "osm-way-719497592",
+    "nazwa": "Skwer Józefa Rotblata",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/719497592"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9787041,
+     52.2118021
+    ]
+   },
+   "properties": {
+    "id": "osm-way-988742918",
+    "nazwa": "Skwer Rodziny Wolskich",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/988742918"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9980692,
+     52.2482592
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1092375396",
+    "nazwa": "Skwer Więźniów Politycznych Stalinizmu",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1092375396"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9815316,
+     52.2317581
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1099436567",
+    "nazwa": "Park Wolności",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1099436567"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9524634,
+     52.2262161
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1099444936",
+    "nazwa": "Skwer Generała Marka Bezruczki",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1099444936"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9298889,
+     52.2307677
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1134318653",
+    "nazwa": "Skwer Wiesława Michnikowskiego",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1134318653"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9796067,
+     52.2377246
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1136176426",
+    "nazwa": "Skwer Hanki Bielickiej",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1136176426"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0058207,
+     52.2422095
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1145636279",
+    "nazwa": "Ogród Zamoyskich",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1145636279"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0005439,
+     52.2454851
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1147327447",
+    "nazwa": "Skwer Sportów Miejskich",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1147327447"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9360865,
+     52.2227657
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1238926594",
+    "nazwa": "Skwer Zielone Odolany",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1238926594"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.00093,
+     52.2135093
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1287493952",
+    "nazwa": "Krajobrazy biocenotyczne",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1287493952"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9931356,
+     52.2288531
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1421303112",
+    "nazwa": "Skwer Wróbelka Elemelka",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1421303112"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0018767,
+     52.2121395
+    ]
+   },
+   "properties": {
+    "id": "osm-relation-8353307",
+    "nazwa": "Pole Mokotowskie",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Pole Mokotowskie, park Józefa Piłsudskiego – kompleks parkowy w Warszawie, położony na terenie trzech dzielnic: Mokotowa, Ochoty i Śródmieścia.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Pole Mokotowskie",
+      "url": "https://pl.wikipedia.org/wiki/Pole_Mokotowskie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/8353307"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0054727,
+     52.257812
+    ]
+   },
+   "properties": {
+    "id": "osm-relation-15992521",
+    "nazwa": "Park Traugutta",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Park Romualda Traugutta – park w dzielnicy Śródmieście w Warszawie.",
+     "W OpenStreetMap oznaczone jako park."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Park Romualda Traugutta w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Park_Romualda_Traugutta_w_Warszawie"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/relation/15992521"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0177177,
+     52.2435265
+    ]
+   },
+   "properties": {
+    "id": "osm-way-135993858",
+    "nazwa": "Ogród Prezydencki",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako ogród."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/135993858"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9419435,
+     52.2575756
+    ]
+   },
+   "properties": {
+    "id": "osm-way-923443040",
+    "nazwa": "Ogród społecznościowy - Fort Bema",
+    "typ": "miejsce",
+    "adres_dzis": "Jerzego Waldorffa 32",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako ogród."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/923443040"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9879139,
+     52.2349148
+    ]
+   },
+   "properties": {
+    "id": "osm-way-970458651",
+    "nazwa": "Ogród Centralny",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako ogród."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/970458651"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9991233,
+     52.2308633
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1369228714",
+    "nazwa": "Ogród Pamięci i Integracji",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako ogród."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1369228714"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0147396,
+     52.2462761
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1420008107",
+    "nazwa": "Ogród św. Anny",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako ogród."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1420008107"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9538627,
+     52.2480282
+    ]
+   },
+   "properties": {
+    "id": "osm-node-3584003769",
+    "nazwa": "Centrum Wspinaczkowe On Sight",
+    "typ": "miejsce",
+    "adres_dzis": "Obozowa 60",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: wspinaczka."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/3584003769"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0101832,
+     52.2244931
+    ]
+   },
+   "properties": {
+    "id": "osm-node-4222629925",
+    "nazwa": "Crux Boulder",
+    "typ": "miejsce",
+    "adres_dzis": "Hoża 51",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: wspinaczka."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/4222629925"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0173329,
+     52.2152873
+    ]
+   },
+   "properties": {
+    "id": "osm-node-11286874919",
+    "nazwa": "Polna",
+    "typ": "miejsce",
+    "adres_dzis": "Polna 7A",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/11286874919"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.988901,
+     52.255316
+    ]
+   },
+   "properties": {
+    "id": "osm-node-13372021648",
+    "nazwa": "Akademia Pływania Urszula Winkowska - Trzpis",
+    "typ": "miejsce",
+    "adres_dzis": "Inflancka 8",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/13372021648"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9471368,
+     52.2583639
+    ]
+   },
+   "properties": {
+    "id": "osm-node-13650614758",
+    "nazwa": "Park Tennis Academy",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: tenis."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/13650614758"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9535435,
+     52.236119
+    ]
+   },
+   "properties": {
+    "id": "osm-way-22719552",
+    "nazwa": "Ośrodek sportowy Moczydło",
+    "typ": "miejsce",
+    "adres_dzis": "Górczewska 69/73",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie, siatkówka plażowa, piłka nożna, piłka ręczna, siatkówka, tenis stołowy, łyżwiarstwo."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/22719552"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.938304,
+     52.2593499
+    ]
+   },
+   "properties": {
+    "id": "osm-way-22719662",
+    "nazwa": "Bemowski Ośrodek Piłki Nożnej",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: piłka nożna."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/22719662"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9842262,
+     52.2112284
+    ]
+   },
+   "properties": {
+    "id": "osm-way-23696234",
+    "nazwa": "Centrum Sportu i Rekreacji UW",
+    "typ": "miejsce",
+    "adres_dzis": "Stefana Banacha 2A",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/23696234"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.001629,
+     52.2196563
+    ]
+   },
+   "properties": {
+    "id": "osm-way-28407932",
+    "nazwa": "OSiR Ochota",
+    "typ": "miejsce",
+    "adres_dzis": "Nowowiejska 37B",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: wspinaczka, squash, tenis stołowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/28407932"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9899236,
+     52.2554021
+    ]
+   },
+   "properties": {
+    "id": "osm-way-33740625",
+    "nazwa": "Ośrodek sportowy Inflancka",
+    "typ": "miejsce",
+    "adres_dzis": "Inflancka 8",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie, siatkówka plażowa, gimnastyka."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/33740625"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9538258,
+     52.2482962
+    ]
+   },
+   "properties": {
+    "id": "osm-way-117628658",
+    "nazwa": "Hala Sportowa \"Koło\"",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/117628658"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9771063,
+     52.2286074
+    ]
+   },
+   "properties": {
+    "id": "osm-way-134533926",
+    "nazwa": "Pływalnia \"Delfin\"",
+    "typ": "miejsce",
+    "adres_dzis": "Marcina Kasprzaka 1/3",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/134533926"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9401559,
+     52.2340118
+    ]
+   },
+   "properties": {
+    "id": "osm-way-169102666",
+    "nazwa": "Hala Sportowa \"Reduta\"",
+    "typ": "miejsce",
+    "adres_dzis": "Redutowa 37",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/169102666"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0015368,
+     52.2554413
+    ]
+   },
+   "properties": {
+    "id": "osm-way-169154000",
+    "nazwa": "Ośrodek Sportowy Polonia",
+    "typ": "miejsce",
+    "adres_dzis": "Konwiktorska 6",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Stadion Polonii Warszawa im. gen. Kazimierza Sosnkowskiego – stadion użytkowany przez klub Polonia Warszawa, znajdujący się na Nowym Mieście przy ulicy Konwiktorskiej 6.",
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: piłka nożna, pływanie, koszykówka, siatkówka."
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stadion Polonii Warszawa",
+      "url": "https://pl.wikipedia.org/wiki/Stadion_Polonii_Warszawa"
+     },
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/169154000"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9303465,
+     52.2576381
+    ]
+   },
+   "properties": {
+    "id": "osm-way-240258272",
+    "nazwa": "Hala Sportowa Bemowo",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/240258272"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9575304,
+     52.2541375
+    ]
+   },
+   "properties": {
+    "id": "osm-way-273430168",
+    "nazwa": "Klub Jeździecki Legia-Kozielska",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/273430168"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9927971,
+     52.213852
+    ]
+   },
+   "properties": {
+    "id": "osm-way-285268075",
+    "nazwa": "Nowa Skra",
+    "typ": "miejsce",
+    "adres_dzis": "Wawelska 5",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: lekkoatletyka."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/285268075"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0172233,
+     52.2155694
+    ]
+   },
+   "properties": {
+    "id": "osm-way-371875281",
+    "nazwa": "OSiR Śródmieście",
+    "typ": "miejsce",
+    "adres_dzis": "Polna 7A",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie, siatkówka, koszykówka."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/371875281"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9462518,
+     52.2574391
+    ]
+   },
+   "properties": {
+    "id": "osm-way-376846761",
+    "nazwa": "Klub Bokserski Legia",
+    "typ": "miejsce",
+    "adres_dzis": "Jerzego Waldorffa 31",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: boks."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/376846761"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9427017,
+     52.2346411
+    ]
+   },
+   "properties": {
+    "id": "osm-way-429345451",
+    "nazwa": "Pływalnia \"Nowa Fala\"",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/429345451"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9538822,
+     52.2341204
+    ]
+   },
+   "properties": {
+    "id": "osm-way-503099972",
+    "nazwa": "Wola Tennis Club",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: tenis."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/503099972"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9991669,
+     52.2575961
+    ]
+   },
+   "properties": {
+    "id": "osm-way-842004751",
+    "nazwa": "Międzyszkolny Ośrodek Sportowy nr 3",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/842004751"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9956583,
+     52.2352678
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1086019915",
+    "nazwa": "Ośrodek Sportowy Grzybowska",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1086019915"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9628201,
+     52.2137163
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1131824705",
+    "nazwa": "Warszawski Klub Tenisowy Mera",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: tenis."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1131824705"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9907298,
+     52.2556121
+    ]
+   },
+   "properties": {
+    "id": "osm-way-1242591734",
+    "nazwa": "Pływalnia letnia",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako obiekt sportowy; dyscypliny: pływanie, siatkówka plażowa."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/1242591734"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9525885,
+     52.2371332
+    ]
+   },
+   "properties": {
+    "id": "osm-node-11910470914",
+    "nazwa": "Zespół boisk \"Syrenka VI\"",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako boisko."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/node/11910470914"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0033961,
+     52.2560278
+    ]
+   },
+   "properties": {
+    "id": "osm-way-32791485",
+    "nazwa": "Boisko treningowe „Sahara”",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako boisko; dyscypliny: piłka nożna."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/32791485"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0180002,
+     52.257764
+    ]
+   },
+   "properties": {
+    "id": "osm-way-168638177",
+    "nazwa": "Korty tenisowe Praski Brzeg",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako boisko; dyscypliny: tenis."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/168638177"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9547859,
+     52.2338971
+    ]
+   },
+   "properties": {
+    "id": "osm-way-230266063",
+    "nazwa": "Wrotkowisko Szymański",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako tor lub bieżnia; dyscypliny: wrotkarstwo."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/230266063"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9454022,
+     52.2564799
+    ]
+   },
+   "properties": {
+    "id": "osm-way-448334965",
+    "nazwa": "Profbud Arena Bemowo",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako boisko; dyscypliny: piłka nożna."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/448334965"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.9417171,
+     52.2497311
+    ]
+   },
+   "properties": {
+    "id": "osm-way-719300414",
+    "nazwa": "Pumptrack Wola",
+    "typ": "miejsce",
+    "adres_dzis": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "W OpenStreetMap oznaczone jako boisko; dyscypliny: kolarstwo."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap (ODbL)",
+      "url": "https://www.openstreetmap.org/way/719300414"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm",
+    "tagi": [
+     "sport"
+    ]
+   }
+  }
+ ]
+}

@@ -117,8 +117,40 @@ describe("mapPhotos", () => {
 
 describe("assignInterests", () => {
   it("tags by kind even without keywords", () => {
-    expect(assignInterests({ kind: "mural", text: "Wolska", hasPeople: false })).toEqual([
-      "street_art",
-    ]);
+    expect(
+      assignInterests({ kind: "mural", name: "Wolska", text: "Wolska", hasPeople: false }),
+    ).toEqual(["street_art"]);
+  });
+
+  it.each([
+    ["Park Moczydło", "nature"],
+    ["Ogród Krasińskich", "nature"],
+    ["Dąb doktora Korczaka (pomnik przyrody)", "nature"],
+    ["Stadion Syrenki", "sport"],
+    ["Pływalnia „Delfin”", "sport"],
+  ])("tags %s as %s by its name", (name, tag) => {
+    expect(assignInterests({ kind: "site", name, text: name, hasPeople: false })).toContain(tag);
+  });
+
+  it.each([
+    ["a street named after gardens", "Ogrodowa 65 (kamienica)", "ogrodowa dawna droga"],
+    ["an office called Park", "Generation Park", "biurowiec, 900 miejsc parkingowych"],
+    ["a pool mentioned in the facts", "Hilton Warsaw City", "w hotelu jest basen i ogród"],
+  ])("does not tag %s as sport or nature", (_, name, text) => {
+    const tags = assignInterests({
+      kind: "building",
+      name,
+      text: `${name} ${text}`,
+      hasPeople: false,
+    });
+    expect(tags).not.toContain("sport");
+    expect(tags).not.toContain("nature");
+  });
+});
+
+describe("mapPlace with source tags", () => {
+  it("adds tags given by the source to the rule-based ones", () => {
+    const row = mapPlace(feature({ nazwa: "Autonomia", tagi: ["nature"] }), NOW);
+    expect(row.interests).toContain("nature");
   });
 });

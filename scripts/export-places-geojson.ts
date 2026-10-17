@@ -3,20 +3,19 @@
 // and switch to Supabase later without changes. Uses R2's mapper, the same as the seed.
 // Usage: pnpm --filter @sawa/scripts export:places
 
-import { readFile, writeFile } from "node:fs/promises";
+import { writeFile } from "node:fs/promises";
 import type { PlaceSummaryFeature } from "@sawa/shared";
 import { FeatureSchema, mapPlace } from "./historia/map-place";
+import { readSourceFeatures } from "./historia/sources";
 
-const GEOJSON_PATH = new URL("../docs/historia/sawa-historia.geojson", import.meta.url);
 const OUT_PATH = new URL("../apps/api/data/places.geojson", import.meta.url);
 
 async function main() {
-  const collection = JSON.parse(await readFile(GEOJSON_PATH, "utf8")) as { features: unknown[] };
   const now = new Date();
   const features: PlaceSummaryFeature[] = [];
   let skipped = 0;
 
-  for (const raw of collection.features) {
+  for (const raw of await readSourceFeatures()) {
     const parsed = FeatureSchema.safeParse(raw);
     if (!parsed.success) {
       skipped++;
