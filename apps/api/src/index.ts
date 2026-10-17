@@ -2,6 +2,7 @@ import { serve } from "@hono/node-server";
 import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthesizer";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
+import { createFootRoutingSource } from "./adapters/osm/foot-routing";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
 import {
   createSupabaseClient,
@@ -64,6 +65,7 @@ const routePlanner = createRoutePlanner({
   fallbackPlaces: placesRepository ? placesFile : undefined,
   departures: createWawDepartureSource(env.WAW_TOKEN),
   live: env.WAW_TOKEN ? createTrackerBoardingSource(vehicles) : undefined,
+  walkPaths: createFootRoutingSource(),
   logger,
 });
 

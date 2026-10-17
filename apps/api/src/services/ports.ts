@@ -29,6 +29,11 @@ export interface LiveBoardingSource {
   boardAtMs(leg: TrackLeg): Promise<number | undefined>;
 }
 
+/** Walking path along streets between two points; undefined when unknown (no route, timeout). */
+export interface WalkPathSource {
+  path(from: LatLng, to: LatLng): Promise<LatLng[] | undefined>;
+}
+
 /** Live tram and bus positions (ZTM, refreshed every 10 s). Throws AppError when ZTM fails. */
 export interface VehiclePositionSource {
   positions(): Promise<VehicleReport[]>;

@@ -1,4 +1,5 @@
-import type { LatLng, PlanRouteRequest, Route } from "@sawa/shared";
+import { fromLngLat, type LatLng, type PlanRouteRequest, type Route, toLngLat } from "@sawa/shared";
+import { FOOT_ROUTING_ATTRIBUTION } from "../adapters/osm/foot-routing";
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
 import { DEFAULT_SEARCH_OPTIONS, planRide, type Ride } from "../domain/routing/beam-search";
@@ -12,7 +13,13 @@ import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
 import { placesAlong, planWalk } from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
-import type { DepartureSource, LiveBoardingSource, PlacesRepository, TransitData } from "./ports";
+import type {
+  DepartureSource,
+  LiveBoardingSource,
+  PlacesRepository,
+  TransitData,
+  WalkPathSource,
+} from "./ports";
 
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
@@ -79,6 +86,8 @@ export function createRoutePlanner(deps: {
   departures?: DepartureSource;
   /** Live delay of the first vehicle to board, from ZTM positions. */
   live?: LiveBoardingSource;
+  /** Street paths for walking legs (drawn straight without it). */
+  walkPaths?: WalkPathSource;
   logger?: PlannerLogger;
   /** Milliseconds; for the cache TTL. */
   clock?: () => number;
@@ -247,126 +256,156 @@ export function createRoutePlanner(deps: {
       : route;
   }
 
-  return {
-    async plan(request, now) {
-      const { hitsByPattern, placesById } = await prepare(
-        reachableBbox(
-          request.destination ? [request.origin, request.destination] : [request.origin],
-          request.durationMin ?? 0,
-        ),
-      );
-      const interests = new Set(request.interests);
-      const prefs = {
-        richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
-        heard: request.heard && new Map(Object.entries(request.heard)),
-      };
-      const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
-      const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
-      const story = { attribution, storyGapSec, storyMaxSec, now, placesById };
+  async function planRoute(request: PlanRouteRequest, now: Date): Promise<Route> {
+    const { hitsByPattern, placesById } = await prepare(
+      reachableBbox(
+        request.destination ? [request.origin, request.destination] : [request.origin],
+        request.durationMin ?? 0,
+      ),
+    );
+    const interests = new Set(request.interests);
+    const prefs = {
+      richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
+      heard: request.heard && new Map(Object.entries(request.heard)),
+    };
+    const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
+    const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
+    const story = { attribution, storyGapSec, storyMaxSec, now, placesById };
 
-      /**
-       * The fastest way to the destination as a route: a walk when that is quicker, or
-       * undefined for a walk with `rideOnly`.
-       */
-      const fastestRoute = async (destination: LatLng, rideOnly = false) => {
-        const fastest = planFastest({
-          network,
-          hitsByPattern,
-          placesById,
-          origin: request.origin,
-          destination,
-          interests,
-          prefs,
-        });
-        if (fastest.kind === "walk") {
-          if (rideOnly) return undefined;
-          return buildWalkRoute({
-            ...story,
-            walk: fastest.walk,
-            origin: request.origin,
-            destination,
-          });
-        }
-        const ride = await withTimes(fastest.ride, now);
-        return credited(
-          buildRoute({
-            ...story,
-            ride,
-            network,
-            origin: request.origin,
-            end: destination,
-            walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
-          }),
-        );
-      };
-
-      // No duration with a destination: the fastest way there.
-      if (request.durationMin === undefined) {
-        return (await fastestRoute(request.destination as LatLng)) as Route;
-      }
-
-      const budgetSec = request.durationMin * 60;
-      const planned = planRide({
+    /**
+     * The fastest way to the destination as a route: a walk when that is quicker, or
+     * undefined for a walk with `rideOnly`.
+     */
+    const fastestRoute = async (destination: LatLng, rideOnly = false) => {
+      const fastest = planFastest({
         network,
         hitsByPattern,
         placesById,
         origin: request.origin,
-        budgetSec,
+        destination,
         interests,
         prefs,
-        returnToStart: request.returnToStart,
-        destination: request.destination,
       });
-
-      const ride = planned && (await withTimes(planned, now));
-
-      // Short rides: walking to a stop and waiting can take the whole time, so a walk
-      // past places competes with the ride (a ride counts only if it fits the time).
-      if (request.durationMin < WALK_UNDER_MIN) {
-        const walk = planWalk({
-          places: [...placesById.values()],
+      if (fastest.kind === "walk") {
+        if (rideOnly) return undefined;
+        return buildWalkRoute({
+          ...story,
+          walk: fastest.walk,
           origin: request.origin,
-          end: request.returnToStart ? request.origin : request.destination,
-          budgetSec,
-          interests,
-          prefs,
+          destination,
         });
-        const rideFits =
-          !!ride &&
-          ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&
-          ride.endsAtDestination !== false;
-        if (walk && (!ride || !rideFits || walk.score > ride.score)) {
-          return buildWalkRoute({
-            ...story,
-            walk,
-            origin: request.origin,
-            destination: request.destination,
-          });
-        }
       }
-      if (!ride) {
-        throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
-      }
-      // A sightseeing ride that cannot reach the destination: rather the fastest ride there.
-      if (request.destination && ride.endsAtDestination === false) {
-        const fastest = await fastestRoute(request.destination, true);
-        if (fastest) return fastest;
-      }
-
-      // Walking legs to the first stop and from the last one to where the user ends.
-      const end = request.returnToStart
-        ? ride.endsAtStart && request.origin
-        : ride.endsAtDestination && request.destination;
+      const ride = await withTimes(fastest.ride, now);
       return credited(
         buildRoute({
           ...story,
           ride,
           network,
           origin: request.origin,
-          end: end || undefined,
+          end: destination,
           walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
         }),
       );
+    };
+
+    // No duration with a destination: the fastest way there.
+    if (request.durationMin === undefined) {
+      return (await fastestRoute(request.destination as LatLng)) as Route;
+    }
+
+    const budgetSec = request.durationMin * 60;
+    const planned = planRide({
+      network,
+      hitsByPattern,
+      placesById,
+      origin: request.origin,
+      budgetSec,
+      interests,
+      prefs,
+      returnToStart: request.returnToStart,
+      destination: request.destination,
+    });
+
+    const ride = planned && (await withTimes(planned, now));
+
+    // Short rides: walking to a stop and waiting can take the whole time, so a walk
+    // past places competes with the ride (a ride counts only if it fits the time).
+    if (request.durationMin < WALK_UNDER_MIN) {
+      const walk = planWalk({
+        places: [...placesById.values()],
+        origin: request.origin,
+        end: request.returnToStart ? request.origin : request.destination,
+        budgetSec,
+        interests,
+        prefs,
+      });
+      const rideFits =
+        !!ride &&
+        ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&
+        ride.endsAtDestination !== false;
+      if (walk && (!ride || !rideFits || walk.score > ride.score)) {
+        return buildWalkRoute({
+          ...story,
+          walk,
+          origin: request.origin,
+          destination: request.destination,
+        });
+      }
+    }
+    if (!ride) {
+      throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
+    }
+    // A sightseeing ride that cannot reach the destination: rather the fastest ride there.
+    if (request.destination && ride.endsAtDestination === false) {
+      const fastest = await fastestRoute(request.destination, true);
+      if (fastest) return fastest;
+    }
+
+    // Walking legs to the first stop and from the last one to where the user ends.
+    const end = request.returnToStart
+      ? ride.endsAtStart && request.origin
+      : ride.endsAtDestination && request.destination;
+    return credited(
+      buildRoute({
+        ...story,
+        ride,
+        network,
+        origin: request.origin,
+        end: end || undefined,
+        walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
+      }),
+    );
+  }
+
+  /** Walking legs along streets instead of straight lines, where the router answers. */
+  async function withStreetWalks(route: Route): Promise<Route> {
+    const source = deps.walkPaths;
+    if (!source || !route.legs.some((l) => l.mode === "walk")) return route;
+    let routed = false;
+    const legs = await Promise.all(
+      route.legs.map(async (leg) => {
+        if (leg.mode !== "walk" || leg.lngLats.length < 2) return leg;
+        const segments = await Promise.all(
+          leg.lngLats.slice(1).map(async (to, i) => {
+            const from = leg.lngLats[i] as [number, number];
+            const path = await source.path(fromLngLat(from), fromLngLat(to));
+            if (path) routed = true;
+            return path ? path.map(toLngLat) : [from, to];
+          }),
+        );
+        // Consecutive segments share their joint point.
+        const lngLats = segments.flatMap((s, i) => (i === 0 ? s : s.slice(1)));
+        return { ...leg, lngLats };
+      }),
+    );
+    return routed
+      ? { ...route, legs, attribution: [...route.attribution, FOOT_ROUTING_ATTRIBUTION] }
+      : route;
+  }
+
+  return {
+    async plan(request, now) {
+      return withStreetWalks(await planRoute(request, now));
     },
   };
 }

@@ -1,9 +1,10 @@
 import { HACKATHON_VENUE, haversineM, INTERESTS, type Route, RouteSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
+import { FOOT_ROUTING_ATTRIBUTION } from "../adapters/osm/foot-routing";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import { createRoutePlanner } from "./plan-route";
-import type { DepartureSource, LiveBoardingSource } from "./ports";
+import type { DepartureSource, LiveBoardingSource, WalkPathSource } from "./ports";
 
 // Integration test on the committed data files (real Warsaw network and places).
 const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
@@ -112,7 +113,8 @@ describe("route planner on real data", () => {
     const walkSec = (route.legs[0]?.durationMin ?? 0) * 60;
     for (const p of route.places) {
       // Places on the walk come before boarding; the rest are on ride legs.
-      expect(route.legs[p.legIndex]?.mode === "walk").toBe(p.etaSec <= walkSec + 1);
+      // `durationMin` is rounded to 0.1 min (6 s).
+      expect(route.legs[p.legIndex]?.mode === "walk").toBe(p.etaSec <= walkSec + 6);
     }
   });
 
@@ -237,6 +239,44 @@ describe("route planner on real data", () => {
       NOW,
     );
     expect(route.legs.every((l) => l.realDeparture === undefined)).toBe(true);
+  });
+
+  it.each([
+    30, 60, 90,
+  ])("never transfers to ride shorter than the wait on a free %i-minute ride", async (durationMin) => {
+    const route = await planner.plan(
+      { origin: { lat: 52.2297, lng: 20.9719 }, durationMin, interests: ["historical"] },
+      NOW,
+    );
+    // Half the headway is at least 1 min; with the 2-min transfer that is over 3 min.
+    for (const leg of rideLegs(route).slice(1)) expect(leg.durationMin).toBeGreaterThan(3);
+  });
+
+  describe("walking legs along streets", () => {
+    const REQUEST = {
+      origin: HACKATHON_VENUE,
+      durationMin: 60,
+      interests: ["historical" as const],
+    };
+
+    it("draws walks on the street path and credits OpenStreetMap", async () => {
+      const walkPaths: WalkPathSource = {
+        path: async (from, to) => [from, { lat: (from.lat + to.lat) / 2, lng: from.lng }, to],
+      };
+      const route = await createRoutePlanner({ transit, places, walkPaths }).plan(REQUEST, NOW);
+      const walk = route.legs[0];
+      expect(walk?.mode).toBe("walk");
+      expect(walk?.lngLats).toHaveLength(3);
+      for (const leg of rideLegs(route)) expect(leg.lngLats.length).toBeGreaterThan(3);
+      expect(route.attribution).toContain(FOOT_ROUTING_ATTRIBUTION);
+    });
+
+    it("keeps straight walks when the router does not answer", async () => {
+      const walkPaths: WalkPathSource = { path: async () => undefined };
+      const route = await createRoutePlanner({ transit, places, walkPaths }).plan(REQUEST, NOW);
+      expect(route.legs[0]?.lngLats).toHaveLength(2);
+      expect(route.attribution).not.toContain(FOOT_ROUTING_ATTRIBUTION);
+    });
   });
 
   describe("live delay of the first vehicle", () => {
