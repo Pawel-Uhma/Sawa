@@ -41,7 +41,7 @@ const csv = (s: string) =>
     .map((x) => x.trim())
     .filter(Boolean);
 
-/** Query of `GET /v1/places`: `?bbox=minLng,minLat,maxLng,maxLat&interests=war_uprising,people`. */
+/** Query of `GET /v1/places`: `?bbox=minLng,minLat,maxLng,maxLat&interests=historical,cultural` (categories, not place tags). */
 export const PlacesQuerySchema = z.object({
   bbox: z
     .string()
