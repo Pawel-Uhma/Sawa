@@ -135,6 +135,17 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-97** Zdjęcia bez sprawdzonej licencji (T-22 zamknięte decyzją „pomijamy”): na demo i w decku tylko zdjęcia z licencją i autorem albo z podpisem źródła — `R2`
 - [x] **T-98** Opowieść z produkcji ma cyfry („założone w 1867 roku”), a TTS czyta je źle (decyzja 13:55: LLM pisze liczby słownie): dopisać to do promptu albo zamieniać cyfry przed `/v1/speech` — `R4` → `R2` (Jasiek, z polecenia użytkownika, 18:15: prompt mówił „Lata zapisujesz cyframi”, teraz liczby, lata i daty słownie; do sprawdzenia na produkcji, czy model słucha)
 
+## Ze spotkania ok. 20:00 ([podsumowanie](spotkania/2026-10-17-2000-proxy-dane-mentorzy.md))
+
+- [ ] **T-140** Wyszukiwanie celu znajduje też ulice i adresy (dziś Google Places zwraca tylko miejsca) — `R3`
+- [ ] **T-141** Ciemny motyw: jaśniejsze ulice na mapie, syrenka czytelna na ciemnym tle — `R3` (Antek)
+- [ ] **T-142** Stany czekania (spinner, kółka) w czcionce i kolorach Sawy — `R3`
+- [ ] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł)
+- [ ] **T-144** Głos czyta lata źle („1099” zamiast 1939, „1090” zamiast 1940, „5355” zamiast 53/55): sprawdzić, czy prompt pisze liczby słownie (T-98) — `R4`
+- [ ] **T-145** Przetestować proxy z home labu (#63) na produkcji: API miasta, pojazdy — `R1` + Antek
+- [ ] **T-146** Firecrawl: klucz z drugiego konta, kolejne miejsca rzadziej i po całej Warszawie (poza Śródmieściem i Wolą) — `R2`
+- [ ] **T-147** Pitch wg mentorów: problem → rozwiązanie, lista wymagań funkcjonalnych, aktorzy systemu (np. emeryci, biuro miasta, lokalny przewoźnik) — `R2`
+
 ## Wszyscy · końcówka
 
 - [ ] **T-68** Sprawdzić repo pod kątem kluczy API i tokenów przed pierwszym pushem — `Wszyscy` — przed pushem
