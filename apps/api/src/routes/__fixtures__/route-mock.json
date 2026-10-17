@@ -1,0 +1,98 @@
+{
+  "id": "mock-solidarnosci-west-east",
+  "legs": [
+    {
+      "line": "MOCK",
+      "mode": "tram",
+      "headsign": "Przykładowa trasa (mock)",
+      "fromStop": {
+        "id": "mock-plocka",
+        "name": "Płocka (mock)",
+        "position": { "lat": 52.2363, "lng": 20.9652 }
+      },
+      "toStop": {
+        "id": "mock-okopowa",
+        "name": "Okopowa (mock)",
+        "position": { "lat": 52.2362, "lng": 20.9822 }
+      },
+      "departAt": "2026-10-17T14:00:00+02:00",
+      "durationMin": 8,
+      "lngLats": [
+        [20.9652, 52.2363],
+        [20.9682, 52.2363],
+        [20.9733, 52.2362],
+        [20.9767, 52.2362],
+        [20.9789, 52.2361],
+        [20.9802, 52.2362],
+        [20.9822, 52.2362]
+      ]
+    }
+  ],
+  "places": [
+    {
+      "placeId": "szpital-wolski-plocka-26",
+      "name": "Szpital Wolski",
+      "position": { "lat": 52.23603, "lng": 20.96569 },
+      "etaSec": 20,
+      "windowSec": 70,
+      "legIndex": 0,
+      "distanceM": 30
+    },
+    {
+      "placeId": "kolonia-wawelberga",
+      "name": "Kolonia Wawelberga",
+      "position": { "lat": 52.236579, "lng": 20.968148 },
+      "etaSec": 90,
+      "windowSec": 110,
+      "legIndex": 0,
+      "distanceM": 31
+    },
+    {
+      "placeId": "mlynarska-8-12-pdt-wola",
+      "name": "Budynek PDT Wola (Młynarska 8/12)",
+      "position": { "lat": 52.2357142, "lng": 20.9733237 },
+      "etaSec": 200,
+      "windowSec": 80,
+      "legIndex": 0,
+      "distanceM": 55
+    },
+    {
+      "placeId": "szpital-sw-lazarza",
+      "name": "Szpital św. Łazarza",
+      "position": { "lat": 52.2364, "lng": 20.9767 },
+      "etaSec": 280,
+      "windowSec": 60,
+      "legIndex": 0,
+      "distanceM": 22
+    },
+    {
+      "placeId": "aleja-solidarnosci",
+      "name": "Aleja „Solidarności”",
+      "position": { "lat": 52.2361114, "lng": 20.9779286 },
+      "etaSec": 340,
+      "windowSec": 50,
+      "legIndex": 0,
+      "distanceM": 5
+    },
+    {
+      "placeId": "kercelak",
+      "name": "Kercelak",
+      "position": { "lat": 52.2370217, "lng": 20.9801911 },
+      "etaSec": 390,
+      "windowSec": 40,
+      "legIndex": 0,
+      "distanceM": 90
+    },
+    {
+      "placeId": "chlodna",
+      "name": "Chłodna",
+      "position": { "lat": 52.2356284, "lng": 20.9807142 },
+      "etaSec": 430,
+      "windowSec": 50,
+      "legIndex": 0,
+      "distanceM": 64
+    }
+  ],
+  "totalMin": 8,
+  "attribution": ["Dane przykładowe (mock), nie prawdziwa trasa ZTM"]
+}

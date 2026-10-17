@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { AppError, toErrorBody } from "./lib/errors";
 import { healthRoutes } from "./routes/health";
+import { routeRoutes } from "./routes/routes";
 
 export type AppConfig = {
   corsOrigins: string[];
@@ -29,7 +30,8 @@ export function createApp(config: AppConfig) {
       return c.json(toErrorBody("INTERNAL", "Unexpected error"), 500);
     })
     .notFound((c) => c.json(toErrorBody("NOT_FOUND", "Route not found"), 404))
-    .route("/", healthRoutes);
+    .route("/", healthRoutes)
+    .route("/", routeRoutes);
 }
 
 /** Used by apps/web for the typed `hc` client. */
