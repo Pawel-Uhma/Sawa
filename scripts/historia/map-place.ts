@@ -1,9 +1,13 @@
 // Anti-corruption layer: GeoJSON from docs/historia (Polish keys) → rows of public.places
 // and public.place_photos. Pure functions, no IO.
 
-import { PLACE_TAGS, type PlaceTag } from "@sawa/shared";
+import { INTERESTS, type Interest, PLACE_TAGS, type PlaceTag } from "@sawa/shared";
 import { z } from "zod";
 import { assignInterests } from "./interests";
+
+/** Stored in places.interests: detailed tags, plus category names a source gives directly (a museum is `cultural`). */
+const STORED_TAGS = [...PLACE_TAGS, ...INTERESTS] as const;
+type StoredTag = PlaceTag | Interest;
 
 const SourceSchema = z.object({ tytul: z.string(), url: z.string() });
 const PersonSchema = z.object({ kto: z.string(), rola: z.string(), wiki: z.string().nullish() });
@@ -50,7 +54,7 @@ const PropertiesSchema = z.looseObject({
   zrodlo_rekordu: z.string().nullish(),
   dzis: z.array(TodaySchema).nullish(),
   /** Tags known from the source (e.g. OSM leisure=park → nature), added to the rule-based ones. */
-  tagi: z.array(z.enum(PLACE_TAGS)).nullish(),
+  tagi: z.array(z.enum(STORED_TAGS)).nullish(),
 });
 
 export const FeatureSchema = z.object({
@@ -97,7 +101,7 @@ export type PlaceRow = {
   sources: { id: string; title: string; url: string }[];
   unverified_facts: { text: string; reason: string }[];
   today_nearby: { name: string; type: string | null; googleMapsUrl: string; placeId: string }[];
-  interests: PlaceTag[];
+  interests: StoredTag[];
   confidence: string | null;
   location_precision: string | null;
   origin: string;
@@ -180,8 +184,9 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
   };
 }
 
-function withTags(assigned: PlaceTag[], given: PlaceTag[]): PlaceTag[] {
-  return PLACE_TAGS.filter((tag) => assigned.includes(tag) || given.includes(tag));
+function withTags(assigned: PlaceTag[], given: StoredTag[]): StoredTag[] {
+  const all: StoredTag[] = [...assigned, ...given];
+  return STORED_TAGS.filter((tag) => all.includes(tag));
 }
 
 // Licences are ignored for now (internal use, T-22); the licence text is kept as given.

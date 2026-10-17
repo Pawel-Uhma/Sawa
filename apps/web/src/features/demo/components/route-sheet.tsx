@@ -1,22 +1,23 @@
 "use client";
 
-import type { Interest } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
-import { useStoryPlayer } from "../lib/story-player";
-import { ChevronLeftIcon, TramIcon } from "./icons";
-import { Logo } from "./logo";
+import type { StoryPlayer } from "../lib/story-player";
+import { ChevronLeftIcon, PinIcon, TramIcon } from "./icons";
+import { SawaMenuButton } from "./sawa-menu";
 import { StoryCard } from "./story-card";
 
 type RouteSheetProps = {
   durationMin: number;
+  /** Koniec trasy (pętla albo cel); null przy trasie „przed siebie”. */
+  end: { label: string; reached: boolean } | null;
   stops: MockStop[];
-  /** Kategorie z onboardingu: Sawa opowiada pod nie. */
-  interests: Interest[];
+  /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
+  player: StoryPlayer;
   activeIndex: number;
   onActiveChange: (index: number) => void;
   onBack: () => void;
@@ -27,8 +28,8 @@ type RouteSheetProps = {
 
 /** Trasa: arkusz z punktami zatrzymania na telefonie, pływający panel na desktopie. */
 export function RouteSheet(props: RouteSheetProps) {
-  const { stops, activeIndex, onActiveChange } = props;
-  const { setIsPlaying, rewind, ...player } = useStoryPlayer(stops, activeIndex, props.interests);
+  const { stops, activeIndex, onActiveChange, player } = props;
+  const { setIsPlaying, rewind } = player;
   const [direction, setDirection] = useState(1);
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
@@ -236,6 +237,7 @@ type SheetContentProps = RouteSheetProps & {
 
 function SheetContent({
   durationMin,
+  end,
   stops,
   activeIndex,
   onBack,
@@ -254,7 +256,11 @@ function SheetContent({
   return (
     <div className="flex flex-col gap-5">
       <header>
-        {isDesktop && <Logo className="mb-5 block text-[28px]" />}
+        {isDesktop && (
+          <div className="mb-4">
+            <SawaMenuButton variant="inline" />
+          </div>
+        )}
         <div className="flex items-start justify-between gap-3">
           <h2 className="pt-1 text-[22px] font-extrabold leading-tight tracking-[-0.02em] md:text-[26px]">
             Twoja przejażdżka
@@ -275,6 +281,17 @@ function SheetContent({
             <TramIcon className="size-4" /> {lines.join(", ")}
           </span>
         </p>
+        {end && (
+          <p
+            role={end.reached ? undefined : "status"}
+            className={`mt-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[13px] font-semibold ${
+              end.reached ? "bg-mieta-jasna text-glebia" : "bg-koral/15 text-tekst"
+            }`}
+          >
+            <PinIcon className="size-4 shrink-0" />
+            {end.label}
+          </p>
+        )}
       </header>
 
       {activeStop && (

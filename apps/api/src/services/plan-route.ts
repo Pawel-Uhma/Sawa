@@ -167,6 +167,7 @@ export function createRoutePlanner(deps: {
       const interests = new Set(request.interests);
       const prefs = {
         richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
+        heard: request.heard && new Map(Object.entries(request.heard)),
       };
       const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
       const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];

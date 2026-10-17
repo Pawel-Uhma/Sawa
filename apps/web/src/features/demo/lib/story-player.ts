@@ -1,8 +1,10 @@
 "use client";
 
-import type { Interest } from "@sawa/shared";
+import type { Story } from "@sawa/shared";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { api } from "@/lib/api";
+import type { Listener } from "./api-data";
+import { getMemory, HEARD_AT_PROGRESS, rememberStory } from "./memory";
 import type { MockStop } from "./mock-data";
 
 /** Polish speech in ElevenLabs runs at about 2.5 words a second (same as the API). */
@@ -14,8 +16,12 @@ const MAX_TARGET_SEC = 600;
 /** When even the story text fails, the card waits this long and moves on. */
 const FAILED_STORY_MS = 6000;
 
-/** One story: text for the card, mp3 when the voice answered. */
-type Clip = { text: string; audioUrl: string | null };
+/** One story: text for the card, mp3 when the voice answered, and what it told (for memory). */
+export type Clip = {
+  text: string;
+  audioUrl: string | null;
+  told: Pick<Story, "placeId" | "factIds" | "contextIds"> & { placeName?: string };
+};
 
 /** Sawa may talk until the next stop. */
 function targetSecFor(stops: readonly MockStop[], index: number): number {
@@ -25,18 +31,44 @@ function targetSecFor(stops: readonly MockStop[], index: number): number {
   return Math.min(MAX_TARGET_SEC, Math.max(MIN_TARGET_SEC, Math.round(sec)));
 }
 
-async function fetchClip(placeId: string, interests: Interest[], targetSec: number): Promise<Clip> {
-  const res = await api.v1.stories.$post({ json: { placeId, interests, targetSec } });
+/** Asks for a story with what Sawa already told this listener, so it tells something new. */
+export async function fetchClip(
+  placeId: string,
+  listener: Listener,
+  targetSec: number,
+  placeName?: string,
+): Promise<Clip> {
+  const memory = getMemory();
+  const res = await api.v1.stories.$post({
+    json: {
+      placeId,
+      targetSec,
+      ...listener,
+      heardFacts: memory.places[placeId]?.facts ?? [],
+      knownContexts: memory.contexts,
+    },
+  });
   if (!res.ok) throw new Error(`POST /v1/stories: ${res.status}`);
-  const { text } = await res.json();
+  const { text, factIds, contextIds } = await res.json();
+  const told = { placeId, factIds, contextIds, placeName };
   // Without the voice the card still shows the text and runs on a timer.
   try {
     const audio = await api.v1.speech.$post({ json: { text } });
-    if (!audio.ok) return { text, audioUrl: null };
-    return { text, audioUrl: URL.createObjectURL(await audio.blob()) };
+    if (!audio.ok) return { text, audioUrl: null, told };
+    return { text, audioUrl: URL.createObjectURL(await audio.blob()), told };
   } catch {
-    return { text, audioUrl: null };
+    return { text, audioUrl: null, told };
   }
+}
+
+/** Remembers a clip once it was heard past `HEARD_AT_PROGRESS`, once per clip. */
+export function useRememberHeard(clip: Clip | null, progress: number) {
+  const remembered = useRef(new WeakSet<Clip>());
+  useEffect(() => {
+    if (!clip || progress < HEARD_AT_PROGRESS || remembered.current.has(clip)) return;
+    remembered.current.add(clip);
+    rememberStory(clip.told);
+  }, [clip, progress]);
 }
 
 /**
@@ -46,7 +78,7 @@ async function fetchClip(placeId: string, interests: Interest[], targetSec: numb
 export function useStoryPlayer(
   stops: readonly MockStop[],
   activeIndex: number,
-  interests: Interest[],
+  listener: Listener,
 ) {
   const cache = useRef(new Map<string, Promise<Clip>>());
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -54,6 +86,8 @@ export function useStoryPlayer(
   const [failed, setFailed] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
+  // Id punktu, który jest teraz aktywny: spóźniona odpowiedź z innego punktu nie może nadpisać klipu.
+  const activeId = useRef<string | undefined>(undefined);
 
   useEffect(() => {
     const audio = new Audio();
@@ -77,17 +111,18 @@ export function useStoryPlayer(
       if (!stop) return null;
       let pending = cache.current.get(stop.id);
       if (!pending) {
-        pending = fetchClip(stop.id, interests, targetSecFor(stops, index));
+        pending = fetchClip(stop.id, listener, targetSecFor(stops, index), stop.name);
         cache.current.set(stop.id, pending);
         pending.catch(() => cache.current.delete(stop.id));
       }
       return pending;
     },
-    [stops, interests],
+    [stops, listener],
   );
 
   useEffect(() => {
     let cancelled = false;
+    activeId.current = stops[activeIndex]?.id;
     setClip(null);
     setFailed(false);
     setProgress(0);
@@ -97,7 +132,25 @@ export function useStoryPlayer(
     return () => {
       cancelled = true;
     };
-  }, [activeIndex, load]);
+  }, [activeIndex, load, stops]);
+
+  /**
+   * „Więcej o tym miejscu”: uznaje obecną opowieść za znaną i prosi o nową o tym samym miejscu.
+   * Pamięć idzie do zapytania, więc Sawa nie powtórzy faktów.
+   */
+  const more = useCallback(() => {
+    const stop = stops[activeIndex];
+    if (!stop || !clip) return;
+    rememberStory(clip.told);
+    cache.current.delete(stop.id);
+    setClip(null);
+    setFailed(false);
+    setProgress(0);
+    setIsPlaying(true);
+    load(activeIndex)
+      ?.then((next) => activeId.current === stop.id && setClip(next))
+      .catch(() => activeId.current === stop.id && setFailed(true));
+  }, [stops, activeIndex, clip, load]);
 
   // The next story is ready before the tram gets there.
   useEffect(() => {
@@ -146,6 +199,8 @@ export function useStoryPlayer(
     return () => cancelAnimationFrame(frame);
   }, [isPlaying, clip, failed]);
 
+  useRememberHeard(clip, progress);
+
   const toggle = useCallback(() => {
     const audio = audioRef.current;
     const restart = progress >= 100;
@@ -168,5 +223,8 @@ export function useStoryPlayer(
     /** Zeruje postęp w tym samym renderze co zmiana punktu, żeby koniec opowieści nie przeskoczył dwóch. */
     rewind: useCallback(() => setProgress(0), []),
     toggle,
+    more,
   };
 }
+
+export type StoryPlayer = ReturnType<typeof useStoryPlayer>;

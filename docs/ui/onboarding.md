@@ -72,7 +72,16 @@ Wszystkie w `apps/web/public/onboarding/` jako WebP z przezroczystym tłem (wyci
 
 Koszt: 7 generacji nano-banana-2.1 (ok. 0,05–0,10 $ każda, szacunek) i 7 wycięć tła, razem ok. 0,40–0,80 $.
 
+## Co odpowiedzi zmieniają (17.10, 16:30)
+
+| Pytanie | Wpływ |
+|---|---|
+| Znajomość miasta | Dobór trasy w planerze (R1): pierwszy raz dostaje miejsca z największą liczbą faktów, mieszkaniec mniej znane. Pierwszy raz słyszy też raz na temat tło (Powstanie, getto, przemysłowa Warszawa) |
+| Zainteresowania | 4 kategorie z danych: Historia, Kultura, Sport, Przyroda (decyzja R1 #25). Planer i opowieści znają tylko je, więc 8 kafelków z tagami było złudzeniem wyboru. Sport i przyroda mają po 1–2 fakty na miejsce, więc podpis mówi „krótko” |
+| Styl opowieści | Odstęp między miejscami (R1) oraz ton i długość opowieści (ciekawostki do 40 słów) |
+
+**Pamięć** (`lib/memory.ts`, localStorage): po wysłuchaniu połowy opowieści telefon zapisuje, które fakty padły. Następna opowieść o tym miejscu mówi to, czego jeszcze nie było, zaczynając od najważniejszych faktów, więc mieszkaniec Żoliborza na Ursynowie usłyszy najpierw podstawy. Miejsca opowiedziane do końca planer omija, więc z czasem trasy schodzą do mniej oczywistych. Profil też zostaje w telefonie: kto wraca, od razu widzi mapę. Menu Sawy ma wiersz „Co już Ci opowiedziałam” z zapominaniem, a „Zacznij od nowa” czyści profil i pamięć.
+
 ## Otwarte
 
-- Pytania o znajomość miasta i styl opowieści zbieramy w `Profile` (`lib/onboarding.ts`), ale planer (R1) i prompty (R4) ich jeszcze nie czytają. Do decyzji R1 + R4: czy wchodzą do kontraktu `POST /v1/routes/plan`.
-- Lista 8 zainteresowań nadal czeka na potwierdzenie R3 + R2 (`stan.md`).
+- Pamięć jest na jednym urządzeniu. Konto albo synchronizacja to temat po hackathonie.

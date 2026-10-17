@@ -21,6 +21,7 @@ describe("toPlacePoints", () => {
         position: { lat: 52.237, lng: 20.9802 },
         interests: ["historical", "cultural"],
         weight: 3,
+        richness: 3,
       },
     ]);
   });

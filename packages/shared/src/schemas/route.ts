@@ -1,11 +1,14 @@
 import { z } from "zod";
 import { InterestSchema } from "../interests";
+import { MAX_HEARD_PLACES } from "../memory";
 import { LatLngSchema } from "./common";
-import { MAX_STORY_SEC } from "./story";
 
 /** Rides under 30 min may be a walk (`Leg.mode` "walk"); see docs/12-plan-mvp.md §7. */
 export const MIN_DURATION_MIN = 5;
 export const MAX_DURATION_MIN = 240;
+
+/** A story never runs longer than the longest window the planner gives (docs/12-plan-mvp.md §8). */
+export const MAX_STORY_SEC = 600;
 
 /** Onboarding answers (keys as in apps/web `lib/onboarding.ts`). */
 export const FAMILIARITY = ["first_time", "know_a_bit", "local"] as const;
@@ -26,6 +29,14 @@ export const PlanRouteRequestSchema = z
     familiarity: z.enum(FAMILIARITY).optional(),
     /** How Sawa tells stories: sets the shortest time between two places. */
     storyStyle: z.enum(STORY_STYLES).optional(),
+    /**
+     * What the listener already heard: place id → number of its facts told (apps/web memory).
+     * Places told in full count much less, so with time rides go to less obvious places.
+     */
+    heard: z
+      .record(z.string(), z.number().int().nonnegative())
+      .refine((h) => Object.keys(h).length <= MAX_HEARD_PLACES, "heard: too many places")
+      .optional(),
   })
   .refine((r) => !(r.returnToStart && r.destination), {
     message: "Podaj destination albo returnToStart, nie oba",

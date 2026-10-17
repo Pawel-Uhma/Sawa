@@ -4,23 +4,48 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { haptic, SPRING } from "../lib/device";
-import { INTERESTS, SIMILAR_INTERESTS } from "../lib/mock-data";
+import { getMemory } from "../lib/memory";
 import {
   type Choice,
   FAMILIARITY,
+  INTERESTS,
   interestIcon,
-  MAX_INTERESTS,
   type Profile,
   STORY_STYLES,
 } from "../lib/onboarding";
 import { Logo } from "./logo";
+import { Heading } from "./onboarding-heading";
+import { How, Legend, Why } from "./onboarding-intro";
 import { PrimaryButton } from "./primary-button";
 import { SAWA_POSES, SawaGuide, type SawaPose, sawaSrc } from "./sawa-guide";
 
-export type OnboardingStep = "welcome" | "familiarity" | "interests" | "style" | "building";
+export type OnboardingStep =
+  | "welcome"
+  | "legend"
+  | "why"
+  | "how"
+  | "familiarity"
+  | "interests"
+  | "style"
+  | "building";
 
-const ORDER: OnboardingStep[] = ["welcome", "familiarity", "interests", "style", "building"];
-const QUESTIONS: OnboardingStep[] = ["familiarity", "interests", "style"];
+// Wstęp (legend, why, how) tłumaczy, czym jest Sawa, komuś, kto widzi ją pierwszy raz. Potem 3 pytania.
+const ORDER: OnboardingStep[] = [
+  "welcome",
+  "legend",
+  "why",
+  "how",
+  "familiarity",
+  "interests",
+  "style",
+  "building",
+];
+const INTRO: OnboardingStep[] = ["legend", "why", "how"];
+/** Kroki z paskiem postępu i strzałką wstecz. */
+const PAGED: OnboardingStep[] = ORDER.slice(1, -1);
+// Przesunięcie albo rzut palcem, po którym wstęp przewija się na następną stronę.
+const SWIPE_PX = 64;
+const SWIPE_VELOCITY = 500;
 
 // Po jednym tapnięciu przy wyborze jednokrotnym przechodzimy dalej, ale z chwilą na zobaczenie zaznaczenia.
 const AUTO_ADVANCE_MS = 320;
@@ -28,7 +53,10 @@ const BUILD_LINE_MS = 650;
 
 const POSE: Record<OnboardingStep, SawaPose> = {
   welcome: "macha",
-  familiarity: "mapa",
+  legend: "sekret",
+  why: "mysli",
+  how: "mapa",
+  familiarity: "macha",
   interests: "mysli",
   style: "sekret",
   building: "radosc",
@@ -80,7 +108,6 @@ export function OnboardingFlow({
     haptic();
     setProfile((current) => {
       const has = current.interests.includes(key);
-      if (!has && current.interests.length >= MAX_INTERESTS) return current;
       return {
         ...current,
         interests: has
@@ -91,8 +118,14 @@ export function OnboardingFlow({
   }
 
   const say = sawaLine(step, profile);
-  const questionIndex = QUESTIONS.indexOf(step);
-  const showChrome = step !== "welcome" && step !== "building";
+  const showChrome = PAGED.includes(step);
+  const isIntro = INTRO.includes(step);
+
+  // Wstęp przewija się palcem jak strony w iOS; pytania nie, żeby gest nie mylił się z wyborem.
+  function onSwipe(offsetX: number, velocityX: number) {
+    if (offsetX < -SWIPE_PX || velocityX < -SWIPE_VELOCITY) go(nextOf(step));
+    else if (offsetX > SWIPE_PX || velocityX > SWIPE_VELOCITY) go(prevOf(step));
+  }
 
   // Wejście z kierunku kroku, wyjście w przeciwną stronę: wstecz cofa się tą samą drogą.
   const slide = {
@@ -132,7 +165,7 @@ export function OnboardingFlow({
             ) : (
               <Logo className="text-2xl md:text-3xl" />
             )}
-            {showChrome && <Progress index={questionIndex} total={QUESTIONS.length} />}
+            {showChrome && <Progress index={PAGED.indexOf(step)} />}
           </header>
 
           <div className={step === "welcome" ? "pt-6 md:pt-0" : ""}>
@@ -151,9 +184,19 @@ export function OnboardingFlow({
               animate="center"
               exit="exit"
               transition={SPRING}
+              drag={isIntro && !reduce ? "x" : false}
+              dragDirectionLock
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={(_, info) => onSwipe(info.offset.x, info.velocity.x)}
               className="flex flex-1 flex-col md:flex-none"
             >
-              {step === "welcome" && <Welcome onStart={() => go("familiarity")} />}
+              {step === "welcome" && (
+                <Welcome onStart={() => go("legend")} onSkipIntro={() => go("familiarity")} />
+              )}
+              {step === "legend" && <Legend onNext={() => go("why")} />}
+              {step === "why" && <Why onNext={() => go("how")} />}
+              {step === "how" && <How onNext={() => go("familiarity")} />}
               {step === "familiarity" && (
                 <SingleChoice
                   title="Jak dobrze znasz Warszawę?"
@@ -192,17 +235,20 @@ export function OnboardingFlow({
 function sawaLine(step: OnboardingStep, profile: Profile): string {
   switch (step) {
     case "welcome":
-      return "Cześć! Jestem Sawa, syrenka z herbu.";
+      return "Cześć! Jestem Sawa, syrenka z herbu Warszawy.";
+    case "legend":
+      return "Mam imię po syrenie z legendy o Warszawie.";
+    case "why":
+      return "Pokażę Ci miasto, które mijasz codziennie.";
+    case "how":
+      return "To proste: trzy kroki i jedziemy.";
     case "familiarity":
-      return "Najpierw powiedz, czy znamy się z Warszawą.";
+      return "Teraz o Tobie. Znasz Warszawę?";
     case "interests": {
       const last = profile.interests.at(-1);
-      if (!last) return "Co Cię ciekawi? Wybierz do trzech.";
-      if (profile.interests.length >= MAX_INTERESTS) return "Komplet! Mam już pomysł na trasę.";
-      const tip = (SIMILAR_INTERESTS[last] ?? []).find((key) => !profile.interests.includes(key));
-      return tip
-        ? `Dobry wybór! Może jeszcze ${labelOf(tip).toLowerCase()}?`
-        : "Dobry wybór! Coś jeszcze?";
+      if (!last) return "Co Cię ciekawi? Możesz wybrać kilka.";
+      if (profile.interests.length === INTERESTS.length) return "Wszystko po trochu? Da się!";
+      return INTEREST_LINE[last] ?? "Dobry wybór! Coś jeszcze?";
     }
     case "style":
       return "I ostatnie: jak mam opowiadać?";
@@ -211,18 +257,30 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
   }
 }
 
-function Progress({ index, total }: { index: number; total: number }) {
+/** Sawa reaguje na ostatnio wybraną kategorię. Przy sporcie i przyrodzie mówi wprost, że krótko. */
+const INTEREST_LINE: Record<string, string> = {
+  historical: "Historia to moja specjalność. Coś jeszcze?",
+  cultural: "Murale, świątynie, dawne bazary. Coś jeszcze?",
+  sports: "Boiska mam opisane krótko, ale po drodze ich nie brakuje.",
+  nature: "Parki i skwery! O nich opowiem krótko.",
+};
+
+function Progress({ index }: { index: number }) {
   return (
     <div
       role="progressbar"
       aria-label="Postęp"
       aria-valuemin={1}
-      aria-valuemax={total}
+      aria-valuemax={PAGED.length}
       aria-valuenow={index + 1}
       className="flex flex-1 gap-1.5"
     >
-      {QUESTIONS.slice(0, total).map((segment, i) => (
-        <div key={segment} className="h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10">
+      {PAGED.map((segment, i) => (
+        // Większa przerwa oddziela wstęp od pytań.
+        <div
+          key={segment}
+          className={`h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10 ${segment === "familiarity" ? "ml-2" : ""}`}
+        >
           <motion.div
             className="h-full origin-left rounded-full bg-glebia"
             initial={false}
@@ -235,25 +293,7 @@ function Progress({ index, total }: { index: number; total: number }) {
   );
 }
 
-function Heading({ children, sub }: { children: string; sub?: string }) {
-  const ref = useRef<HTMLHeadingElement>(null);
-  // Fokus na nagłówku nowego kroku: czytnik ekranu od razu czyta pytanie.
-  useEffect(() => ref.current?.focus({ preventScroll: true }), []);
-  return (
-    <div className="flex flex-col gap-2 md:gap-3">
-      <h1
-        ref={ref}
-        tabIndex={-1}
-        className="text-[28px] font-extrabold leading-[1.1] tracking-[-0.02em] outline-none md:text-5xl md:leading-[1.05] md:tracking-[-0.025em]"
-      >
-        {children}
-      </h1>
-      {sub && <p className="text-[15px] leading-relaxed text-tekst-2 md:text-lg">{sub}</p>}
-    </div>
-  );
-}
-
-function Welcome({ onStart }: { onStart: () => void }) {
+function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: () => void }) {
   return (
     <div className="flex flex-1 flex-col gap-8 md:gap-10">
       <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-left">
@@ -292,9 +332,16 @@ function Welcome({ onStart }: { onStart: () => void }) {
           Poznajmy się
         </PrimaryButton>
         <p className="text-center text-sm text-tekst-3 md:text-left">
-          3 pytania · ok. 15 sekund · bez logowania
+          ok. minuty · bez logowania i instalacji
         </p>
       </div>
+      <button
+        type="button"
+        onClick={onSkipIntro}
+        className="-mt-4 mx-auto h-11 rounded-full px-4 text-sm font-semibold text-tekst-3 transition-colors hover:text-tekst-2 md:mx-0 md:-mt-6"
+      >
+        Znam Sawę, przejdź do pytań
+      </button>
     </div>
   );
 }
@@ -401,97 +448,90 @@ type InterestsProps = {
 };
 
 function Interests({ picked, onToggle, onNext }: InterestsProps) {
-  const isFull = picked.length >= MAX_INTERESTS;
-  const last = picked.at(-1);
-  // „Podobne” jak przy pierwszym uruchomieniu TikToka: podpowiedź pojawia się na kafelkach, nie w osobnej sekcji.
-  const similar = new Set(
-    last ? (SIMILAR_INTERESTS[last] ?? []).filter((key) => !picked.includes(key)) : [],
-  );
-
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
-      <Heading sub="Od tego zależy, o czym opowiem po drodze.">Co Cię ciekawi?</Heading>
+      <Heading sub="Od tego zależy, które miejsca wybiorę i o czym opowiem.">
+        Co Cię ciekawi?
+      </Heading>
 
       <ul className="grid grid-cols-2 gap-2.5 md:gap-3" aria-label="Zainteresowania">
         {INTERESTS.map((item) => {
           const isOn = picked.includes(item.key);
-          const isDisabled = !isOn && isFull;
-          const isSimilar = similar.has(item.key) && !isFull;
           return (
             <li key={item.key}>
               <motion.button
                 type="button"
                 aria-pressed={isOn}
-                disabled={isDisabled}
                 onClick={() => onToggle(item.key)}
-                whileTap={isDisabled ? undefined : { scale: 0.95 }}
+                whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", bounce: 0, duration: 0.2 }}
-                className={`relative flex h-full min-h-[68px] w-full items-center gap-2.5 rounded-3xl border-2 bg-white p-2.5 pr-3 text-left transition-[border-color,background-color,opacity,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia disabled:opacity-40 disabled:hover:shadow-none md:min-h-20 md:gap-3 md:p-3 ${
-                  isOn
-                    ? "border-glebia bg-mieta-jasna"
-                    : isSimilar
-                      ? "border-koral/50"
-                      : "border-transparent"
+                className={`flex h-full w-full flex-col items-start gap-2 rounded-3xl border-2 bg-white p-3 text-left transition-[border-color,background-color,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia md:gap-3 md:p-4 ${
+                  isOn ? "border-glebia bg-mieta-jasna" : "border-transparent"
                 }`}
               >
-                <motion.span
-                  className="block shrink-0"
-                  animate={{ scale: isOn ? 1.08 : 1, rotate: isOn ? -4 : 0 }}
-                  transition={SPRING}
-                >
-                  <Image
-                    src={interestIcon(item.key)}
-                    alt=""
-                    width={64}
-                    height={64}
-                    className="size-11 md:size-14"
-                  />
-                </motion.span>
-                <span className="text-sm font-bold leading-tight md:text-base">{item.label}</span>
-
-                <AnimatePresence>
-                  {isSimilar && (
-                    <motion.span
-                      initial={{ opacity: 0, scale: 0.6 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.6 }}
-                      transition={SPRING}
-                      className="absolute -top-2 right-3 rounded-full bg-koral px-2 py-0.5 text-[11px] font-bold text-white"
-                    >
-                      podobne
-                    </motion.span>
-                  )}
-                </AnimatePresence>
+                <span className="flex w-full items-start justify-between">
+                  <motion.span
+                    className="block"
+                    animate={{ scale: isOn ? 1.08 : 1, rotate: isOn ? -4 : 0 }}
+                    transition={SPRING}
+                  >
+                    <Image
+                      src={interestIcon(item.key)}
+                      alt=""
+                      width={64}
+                      height={64}
+                      className="size-14 md:size-16"
+                    />
+                  </motion.span>
+                  <Check on={isOn} />
+                </span>
+                <span className="flex flex-col gap-0.5">
+                  <span className="text-base font-bold leading-tight md:text-lg">{item.label}</span>
+                  <span className="text-[13px] leading-snug text-tekst-2 md:text-sm">
+                    {item.hint}
+                  </span>
+                </span>
               </motion.button>
             </li>
           );
         })}
       </ul>
 
-      {/* Na telefonie przycisk przyklejony do dołu, żeby był pod kciukiem także przy długiej liście. */}
-      <div className="sticky bottom-0 -mx-4 mt-auto bg-gradient-to-t from-[#eef3f0] via-[#eef3f0] to-transparent px-4 pb-1 pt-6 md:static md:mx-0 md:bg-none md:p-0">
+      <div className="mt-auto md:mt-0">
         <PrimaryButton
           disabled={picked.length === 0}
           onClick={onNext}
           className="md:w-auto md:px-12"
         >
-          {picked.length === 0
-            ? "Wybierz co najmniej jedno"
-            : `Dalej · ${picked.length} z ${MAX_INTERESTS}`}
+          {picked.length === 0 ? "Wybierz co najmniej jedno" : "Dalej"}
         </PrimaryButton>
       </div>
     </div>
   );
 }
 
+/** Co znajomość miasta zmienia w trasie (planer R1: waga bogactwa miejsca, tło w opowieściach). */
+const FAMILIARITY_LINE: Record<string, string> = {
+  first_time: "Zaczynam od najważniejszych miejsc i tła",
+  know_a_bit: "Mieszam znane miejsca z mniej znanymi",
+  local: "Szukam mniej oczywistych miejsc",
+};
+
 function Building({ profile, onDone }: { profile: Profile; onDone: () => void }) {
   const [shown, setShown] = useState(0);
   const style = STORY_STYLES.find((item) => item.key === profile.storyStyle);
+  // Pamięć czytamy raz: ekran trwa 2–3 s, a w tym czasie nic jej nie zmienia.
+  const [remembered] = useState(() => Object.keys(getMemory().places).length);
   const lines = [
     profile.interests.length
       ? `Szukam miejsc: ${profile.interests.map((key) => labelOf(key).toLowerCase()).join(", ")}`
       : "Szukam miejsc z historią na Twojej trasie",
-    style ? `Opowiadam: ${style.label.toLowerCase()}` : "Dobieram długość opowieści",
+    FAMILIARITY_LINE[profile.familiarity ?? "know_a_bit"] ?? FAMILIARITY_LINE.know_a_bit,
+    remembered > 0
+      ? "Pomijam to, co już Ci opowiedziałam"
+      : style
+        ? `Opowiadam: ${style.label.toLowerCase()}`
+        : "Dobieram długość opowieści",
     "Sprawdzam tramwaje i autobusy",
   ];
 

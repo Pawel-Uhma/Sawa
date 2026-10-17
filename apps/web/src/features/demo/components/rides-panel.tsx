@@ -7,11 +7,12 @@ import { planRoute, routeLine } from "../lib/api-data";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { type MockStop, type RidePreview, UPCOMING_RIDES } from "../lib/mock-data";
+import type { Profile } from "../lib/onboarding";
 import { ArrowRightIcon, PlayIcon, TramIcon } from "./icons";
 import { KORAL, RouteThumb } from "./route-thumb";
 
 type RidesPanelProps = {
-  interests: string[];
+  profile: Profile;
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
   /** Trasa wyznaczona wcześniej w tej sesji (pusta, jeśli jeszcze żadnej nie było). */
@@ -25,7 +26,7 @@ const SEGMENTS = [30, 60, 120, 240];
 
 /** Zakładka Przejażdżki (makieta D): gotowe trasy jak odcinki podcastu, przełącznik czasu, ostatnia trasa. */
 export function RidesPanel({
-  interests,
+  profile,
   durationMin,
   onDurationChange,
   lastRoute,
@@ -38,7 +39,7 @@ export function RidesPanel({
   useEffect(() => {
     let cancelled = false;
     setFailed(false);
-    planRoute(durationMin, interests)
+    planRoute(durationMin, profile)
       .then((route) => !cancelled && setPreview(route))
       .catch(() => {
         if (cancelled) return;
@@ -48,7 +49,7 @@ export function RidesPanel({
     return () => {
       cancelled = true;
     };
-  }, [durationMin, interests]);
+  }, [durationMin, profile]);
   const nearest = SEGMENTS.reduce((best, value) =>
     Math.abs(value - durationMin) < Math.abs(best - durationMin) ? value : best,
   );

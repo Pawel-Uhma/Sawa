@@ -34,6 +34,37 @@ describe("createStoryService", () => {
     expect(user).toContain("historia");
   });
 
+  it("tells what the listener has not heard yet and says which facts it told", async () => {
+    const placeId = await anyPlace();
+    const service = createStoryService({ places });
+    const first = await service.tell({ placeId, targetSec: 20 });
+    expect(first.factIds.length).toBeGreaterThan(0);
+    expect(first.recap).toBe(false);
+
+    const second = await service.tell({ placeId, targetSec: 20, heardFacts: first.factIds });
+    expect(second.factIds.some((id) => first.factIds.includes(id))).toBe(false);
+  });
+
+  it("explains the background to a first-timer once", async () => {
+    const all = await places.listInBBox({ minLng: -180, minLat: -90, maxLng: 180, maxLat: 90 });
+    const uprising = all.find((p) => p.interests.includes("war_uprising"));
+    if (!uprising) throw new Error("no uprising place in the fake repository");
+    const llm = fakeLlm();
+    const service = createStoryService({ places, llm });
+    const ask = (knownContexts: string[]) =>
+      service.tell({
+        placeId: uprising.id,
+        targetSec: 60,
+        familiarity: "first_time",
+        knownContexts,
+      });
+
+    expect((await ask([])).contextIds).toEqual(["powstanie-1944"]);
+    expect(llm.complete.mock.calls[0]?.[0].user).toContain("pierwszy raz");
+    expect((await ask(["powstanie-1944"])).contextIds).not.toContain("powstanie-1944");
+    expect(llm.complete.mock.calls[1]?.[0].user).toContain("słyszał już ode mnie o");
+  });
+
   it("asks once for the same place, interests and length band", async () => {
     const placeId = await anyPlace();
     const llm = fakeLlm();

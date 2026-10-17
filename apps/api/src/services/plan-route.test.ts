@@ -67,6 +67,23 @@ describe("route planner on real data", () => {
     expect(Math.min(...gaps)).toBeGreaterThanOrEqual(89);
   });
 
+  it("moves on to other places once the listener heard everything on the first ride", async () => {
+    const all = await places.listInBBox({ minLng: 20, minLat: 52, maxLng: 22, maxLat: 53 });
+    const richness = new Map(all.map((p) => [p.id, p.richness]));
+    const ask = (heard?: Record<string, number>) =>
+      planner.plan(
+        { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], heard },
+        NOW,
+      );
+    const first = await ask();
+    const heard = Object.fromEntries(
+      first.places.map((p) => [p.placeId, richness.get(p.placeId) ?? 1]),
+    );
+    const second = await ask(heard);
+    const repeated = second.places.filter((p) => p.placeId in heard).length;
+    expect(repeated).toBeLessThan(second.places.length / 2);
+  });
+
   it.each(INTERESTS)("finds places for a single category: %s", async (interest) => {
     const route = await planner.plan(
       { origin: HACKATHON_VENUE, durationMin: 60, interests: [interest] },

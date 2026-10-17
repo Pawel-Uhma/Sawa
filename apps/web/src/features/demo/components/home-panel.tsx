@@ -11,7 +11,14 @@ import Image from "next/image";
 import { type CSSProperties, useRef } from "react";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
-import { DURATION_MAX_MIN, DURATION_MIN_MIN, DURATION_STEP_MIN, INTERESTS } from "../lib/mock-data";
+import { DURATION_STOPS_MIN } from "../lib/mock-data";
+import { INTERESTS } from "../lib/onboarding";
+import {
+  CUSTOM_DESTINATION_NAME,
+  DESTINATION_PRESETS,
+  type RideEnd,
+  type RideEndType,
+} from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import { ArrowRightIcon } from "./icons";
 import { PrimaryButton } from "./primary-button";
@@ -20,6 +27,9 @@ type HomePanelProps = {
   interests: string[];
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
+  rideEnd: RideEnd;
+  onRideEndTypeChange: (type: RideEndType) => void;
+  onRideEndChange: (end: RideEnd) => void;
   onEditInterests: () => void;
   onGenerate: () => void;
   planning: boolean;
@@ -28,13 +38,28 @@ type HomePanelProps = {
   onCollapsedChange: (collapsed: boolean) => void;
 };
 
-const SCALE = ["30 min", "1 h", "2 h", "3 h", "4 h+"];
+/** Podpisy pod suwakiem w miejscach ich wartości (suwak jest liniowy, więc 1 h nie leży w 1/4). */
+const SCALE = [5, 30, 60, 120, 180, 240];
+
+/** Środek gałki suwaka (30 px) dla danej wartości: tor zaczyna się i kończy pół gałki od krawędzi. */
+function thumbCenter(durationMin: number): string {
+  return `calc(15px + (100% - 30px) * ${sliderPercent(durationMin) / 100})`;
+}
+
+const END_OPTIONS: { type: RideEndType; label: string }[] = [
+  { type: "open", label: "Przed siebie" },
+  { type: "loop", label: "Wracam tu" },
+  { type: "destination", label: "Do celu" },
+];
 
 /** Ekran główny A6: pływająca karta nad paskiem zakładek, Sawa wychyla się zza karty i pyta w dymku. */
 export function HomePanel({
   interests,
   durationMin,
   onDurationChange,
+  rideEnd,
+  onRideEndTypeChange,
+  onRideEndChange,
   onEditInterests,
   onGenerate,
   planning,
@@ -93,23 +118,44 @@ export function HomePanel({
         className="suwak mt-2"
         aria-label="Czas przejażdżki"
         aria-valuetext={formatDuration(durationMin)}
-        min={DURATION_MIN_MIN}
-        max={DURATION_MAX_MIN}
-        step={DURATION_STEP_MIN}
-        value={durationMin}
+        min={0}
+        max={DURATION_STOPS_MIN.length - 1}
+        step={1}
+        value={DURATION_STOPS_MIN.indexOf(durationMin)}
         onChange={(event) => {
-          const value = Number(event.target.value);
+          const value = DURATION_STOPS_MIN[Number(event.target.value)];
           if (value !== lastStep.current) haptic(4);
           lastStep.current = value;
           onDurationChange(value);
         }}
-        style={{ "--postep": `${sliderPercent(durationMin)}%` } as CSSProperties}
+        style={{ "--postep": thumbCenter(durationMin) } as CSSProperties}
       />
-      <div className="flex justify-between text-xs font-semibold text-tekst-3">
-        {SCALE.map((label) => (
-          <span key={label}>{label}</span>
+      <div aria-hidden className="relative h-4 text-xs font-semibold text-tekst-3">
+        {SCALE.map((value, index) => (
+          <span
+            key={value}
+            // Skrajne podpisy przy krawędziach, żeby nie wystawały poza kartę.
+            style={
+              index === 0
+                ? { left: 0 }
+                : index === SCALE.length - 1
+                  ? { right: 0 }
+                  : { left: thumbCenter(value) }
+            }
+            className={`absolute top-0 whitespace-nowrap tabular-nums transition-colors duration-200 ${
+              index === 0 || index === SCALE.length - 1 ? "" : "-translate-x-1/2"
+            } ${value === durationMin ? "text-glebia" : ""}`}
+          >
+            {formatDuration(value)}
+          </span>
         ))}
       </div>
+
+      <RideEndPicker
+        rideEnd={rideEnd}
+        onTypeChange={onRideEndTypeChange}
+        onChange={onRideEndChange}
+      />
 
       <div className="mt-3 flex items-center gap-1.5 text-[13px] text-tekst-2">
         <span className="shrink-0">Tematy:</span>
@@ -133,6 +179,103 @@ export function HomePanel({
         </p>
       )}
     </FloatingCard>
+  );
+}
+
+type RideEndPickerProps = {
+  rideEnd: RideEnd;
+  onTypeChange: (type: RideEndType) => void;
+  onChange: (end: RideEnd) => void;
+};
+
+/** Koniec trasy: przełącznik segmentowy, a przy „Do celu” cele do stuknięcia i podpowiedź o mapie. */
+function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) {
+  const destination = rideEnd.type === "destination" ? rideEnd : null;
+  const isCustom =
+    destination !== null && !DESTINATION_PRESETS.some((preset) => preset.name === destination.name);
+
+  return (
+    <div className="mt-4">
+      <div
+        role="radiogroup"
+        aria-label="Gdzie kończysz"
+        className="flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
+      >
+        {END_OPTIONS.map((option) => {
+          const isActive = option.type === rideEnd.type;
+          return (
+            // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
+            <button
+              key={option.type}
+              type="button"
+              role="radio"
+              aria-checked={isActive}
+              onClick={() => {
+                if (isActive) return;
+                haptic(4);
+                onTypeChange(option.type);
+              }}
+              className={`relative h-[34px] flex-1 rounded-[11px] text-[13px] font-semibold transition-colors duration-200 active:scale-[0.97] ${
+                isActive ? "text-tekst" : "text-tekst-2"
+              }`}
+            >
+              {isActive && (
+                <motion.span
+                  layoutId="segment-konca"
+                  transition={SPRING}
+                  className="absolute inset-0 rounded-[inherit] bg-white shadow-[0_1px_3px_rgba(16,43,42,0.12)]"
+                />
+              )}
+              <span className="relative">{option.label}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      <AnimatePresence initial={false}>
+        {destination && (
+          <motion.div
+            key="cele"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ type: "spring", bounce: 0, duration: 0.35 }}
+            className="overflow-hidden"
+          >
+            <div className="-mx-[18px] flex gap-2 overflow-x-auto px-[18px] pt-2.5 [scrollbar-width:none] md:-mx-6 md:px-6">
+              {DESTINATION_PRESETS.map((preset) => {
+                const isActive = preset.name === destination.name;
+                return (
+                  <button
+                    key={preset.id}
+                    type="button"
+                    aria-pressed={isActive}
+                    onClick={() => {
+                      if (isActive) return;
+                      haptic(4);
+                      onChange({ type: "destination", name: preset.name, point: preset.point });
+                    }}
+                    className={`h-8 shrink-0 rounded-full px-3 text-[13px] font-semibold transition-[transform,background-color,color] active:scale-[0.96] ${
+                      isActive ? "bg-glebia text-white" : "bg-mieta-jasna text-glebia"
+                    }`}
+                  >
+                    {preset.name}
+                  </button>
+                );
+              })}
+              {isCustom && (
+                <span className="flex h-8 shrink-0 items-center rounded-full bg-glebia px-3 text-[13px] font-semibold text-white">
+                  {CUSTOM_DESTINATION_NAME}
+                </span>
+              )}
+            </div>
+            <p className="mt-1.5 text-xs text-tekst-3">
+              Albo stuknij w mapę, żeby wybrać własny cel.
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
 

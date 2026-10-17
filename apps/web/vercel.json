@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": {
+      "*": false,
+      "main": true
+    }
+  },
+  "github": {
+    "autoJobCancelation": true
+  },
+  "ignoreCommand": "[ \"$VERCEL_ENV\" != production ] || git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . ../../packages/shared ../../pnpm-lock.yaml"
+}

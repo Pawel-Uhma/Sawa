@@ -1,6 +1,6 @@
 # Todo zespołu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 14:10
+**Ostatnia aktualizacja:** 17.10.2026, ok. 16:10
 
 **Źródło prawdy dla zadań.** Każdy agent i każda osoba czyta tę listę przed pracą i aktualizuje ją po pracy.
 
@@ -36,6 +36,7 @@
 - [x] **T-66** Wybór punktu końcowego trasy (`destination`, `endsAtDestination`) — `R1` — (Szczepan, 14:40, PR #19)
 - [x] **T-76** Odjazdy z rozkładu ZTM dla każdego odcinka trasy, także przesiadek, `Leg.realDeparture` w kontrakcie — `R1` — (Szczepan, 15:00, PR #19; z prawdziwym tokenem do sprawdzenia w T-17)
 - [x] **T-77** Odpowiedzi z onboardingu w planerze: znajomość miasta, styl opowieści; web wysyła je z `planRoute` — `R1` — (Szczepan, 16:30, PR #22; 17:20 bez kafelków `tags`, front ma tylko 4 kategorie)
+- [x] **T-78** Pamięć słuchacza (opowiedziane fakty i tło w telefonie, `heard` w planerze, `heardFacts`/`knownContexts` w opowieściach) i onboarding z 4 kategoriami — `R3` — (Paweł z agentem, 16:40; zmiana w `score.ts` R1 na polecenie Pawła, do akceptacji Szczepana)
 - [x] **T-79** Trasy od 5 min i odcinki piesze (`Leg.mode` `walk`, spacer poniżej 30 min, dojścia do i z przystanków) — `R1` — (Szczepan, 17:50, PR w toku)
 - [ ] **T-10** Adapter `apps/api/src/adapters/waw` (przystanki, linie, odjazdy) z cache w pamięci i fixtures z curl — `R1` — 15:00 (do przeglądu: mapa bierze miejsca z `/v1/places`, planer jedzie na GTFS, w MVP może zostać tylko odjazdy z T-17)
 - [x] **T-15** Skąd kolejność przystanków linii (GTFS / stare API / kształt z pozycji pojazdów), decyzja w `stan.md` (P1 w planie MVP) — `R1` — 13:30 (Szczepan, 13:15: GTFS z mkuran.pl, skompresowany do pliku w repo)
@@ -58,7 +59,7 @@
 
 ## R3 · Frontend i mapa
 
-- [~] **T-30** Mapa MapLibre z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00 (Antek, od 13:30; plan w [14-plan-mapy.md](14-plan-mapy.md); 15:00: `/mapa` z miejscami z API, kartą miejsca i trasą demo, PR z `r3/maplibre-map`)
+- [~] **T-30** Mapa MapLibre z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00 (Antek, od 13:30; plan w [14-plan-mapy.md](14-plan-mapy.md); 15:00: `/mapa` z miejscami z API, kartą miejsca i trasą demo, PR z `r3/maplibre-map`; 16:07: miejsca z kafelków widoku zamiast stałego bbox, cała Warszawa, gałąź `r3/places-viewport`)
 - [~] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap w barwach Sawy, bez tokenu; punkty i trasa z docs/historia i makiet, jeszcze nie z T-10)
 - [x] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — (Paweł z agentem, 17.10 13:25: mock bez API, mapa szkicowa zamiast Mapbox; 13:51: wariant A6 z makiety, Sawa z dymkiem, pasek zakładek, prawdziwa mapa)
 - [x] **T-67** Wersja desktopowa (ten sam UI na szerokim ekranie) — `R3` — (Paweł z agentem, 17.10 13:25: panel boczny od 768 px, mock; 13:51: mapa na cały ekran, pływający szklany panel 360/400 px, kamera omija panel, skróty klawiszowe w trasie)
@@ -88,6 +89,18 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-53** Opis zakresu użycia AI (z historii git, PR-ów i archiwum `ai-log.md`) i dokumentacja na oddanie (`README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30
 - [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R2` — niedziela 10:30
 
+## Z przeglądu stanu (Jasiek, 15:00; numery T-90+, bo T-76 zajął R1)
+
+- [x] **T-90** Railway nie wdraża `main` (stoi na `19c97a1`): sprawdzić auto-deploy i watch paths serwisu, wdrożyć `main`, potwierdzić `version` w `/health`; bez tego odtwarzacz na produkcji daje 404 — `R3` (Paweł, konto Railway) — (16:10, Jasiek: sprawdzone, `/health` pokazuje 01ed0e3)
+- [x] **T-91** Zmienne na Railway: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `OPENROUTER_KEY`, `ELEVENLABS_KEY`; sprawdzić w logach `api listening` i `planner places loaded` (`isFallback: false`) — `R3` (Paweł) — (16:10, Jasiek: sprawdzone z zewnątrz: `/v1/places` 1303 miejsc z bazy, `/v1/stories` z LLM, `/v1/speech` daje mp3)
+- [ ] **T-92** `POST /v1/speech` przyjmuje dowolny tekst bez limitu zapytań (każdy może zużyć kredyty ElevenLabs): web na `/v1/stories/audio`, a `/v1/speech` wyłączyć albo dodać rate limit — `R4`
+- [ ] **T-93** Odtwarzacz (`story-player.ts`) trzyma klipy po samym `stop.id`: po zmianie zainteresowań lub czasu gra starą opowieść o złej długości; klucz z zainteresowaniami i `targetSec` — `R3`
+- [ ] **T-94** Cache opowieści i głosu jest w pamięci, restart Railway go czyści: przed pitchem rozgrzać trasę demo albo zapisać ją jako fixture (z T-18, T-36) — `R1` + `R3` — niedziela 08:00
+- [ ] **T-95** Pokazać zbiór z dane.um.warszawa.pl na scenie: dziś tylko „Otwarte boiska” (sport), transport idzie z GTFS mkuran.pl, `WAW_TOKEN` nieustawiony (T-17). Ścieżka demo musi go zawierać, pitch musi go nazwać — `R2` (z T-50) + `R1`
+- [x] **T-96** Dwie mapy (`features/demo/` Pawła na `/` i `features/map/` Antka na `/mapa`): zdecydować, która idzie na demo, drugą zamrozić — `R3` — (Paweł, 14:54: demo używa `SawaMap` Antka, stara mapa usunięta)
+- [ ] **T-97** Zdjęcia bez sprawdzonej licencji (T-22 zamknięte decyzją „pomijamy”): na demo i w decku tylko zdjęcia z licencją i autorem albo z podpisem źródła — `R2`
+- [ ] **T-98** Opowieść z produkcji ma cyfry („założone w 1867 roku”), a TTS czyta je źle (decyzja 13:55: LLM pisze liczby słownie): dopisać to do promptu albo zamieniać cyfry przed `/v1/speech` — `R4`
+
 ## Wszyscy · końcówka
 
 - [ ] **T-68** Sprawdzić repo pod kątem kluczy API i tokenów przed pierwszym pushem — `Wszyscy` — przed pushem
@@ -110,10 +123,10 @@ Zakres to tylko lista MVP z [10-prd.md](10-prd.md), zob. [12-plan-mvp.md](12-pla
 
 ## Ze spotkania 13:30
 
-- [x] **T-70** Planer: limit miejsc na trasie albo minimalny czas na opowieść (30 min daje teraz 120 miejsc) — `R1` — (Szczepan, 18:30: liczba miejsc już nie 120, ok. 2–5 na 10 min; naprawione okna: min. odstęp stylu także na końcu, maks. 60/120/300 s, opowieści na dojściu do przystanku; PR w toku)
+- [x] **T-70** Planer: limit miejsc na trasie albo minimalny czas na opowieść (30 min daje teraz 120 miejsc) — `R1` — (Jasiek 14:45: na produkcji 30 min 9 miejsc, 120 min 15; Szczepan, 18:30: liczba miejsc już nie 120, ok. 2–5 na 10 min; naprawione okna: min. odstęp stylu także na końcu, maks. 60/120/300 s, opowieści na dojściu do przystanku; PR w toku)
 - [~] **T-71** Integracja ElevenLabs w API (`ELEVENLABS_KEY` w Railway) — `R4` → zrobił Pawel na własną prośbę (17.10, 13:55), gałąź `r4/tts-elevenlabs`: `POST /v1/speech` → mp3 głosem Asi, cache w pamięci. W `main` od 14:50
 - [ ] **T-72** Styl mapy Mapbox i kategorie punktów (budynek, ulica, pomnik…) z ikonami — `R3`
-- [ ] **T-73** Scraping kolejnych miejsc (budynki → Wikipedia) prosto do Supabase, dopiero po ustabilizowaniu schematu; najpierw Żoliborz i Śródmieście — `R2`
+- [x] **T-73** Scraping kolejnych miejsc (budynki → Wikipedia) prosto do Supabase — `R2` — (Jasiek z agentami, 15:50: 1092 miejsc; 16:30: 1347 miejsc na całą Warszawę, w tym 260 poza pasem Śródmieście–Praga; zabytki z OSM + Wikipedia w `docs/historia/osm-historia.geojson`, parki, sport i „Otwarte boiska” z 18 dzielnic; seed i `export:places` zrobione)
 - [ ] **T-74** Opisać w `docs/` repo przydatne na hackathon (link na Discordzie zespołu) — `Wszyscy` (kto znalazł)
 
 ## Zrobione

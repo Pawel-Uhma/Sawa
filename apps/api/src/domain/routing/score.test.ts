@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
-import { RICHNESS_EXPONENT, scorePlace, weightFromRichness } from "./score";
+import { HEARD_FLOOR, RICHNESS_EXPONENT, scorePlace, weightFromRichness } from "./score";
 
 const interests = new Set(["historical"]);
 
@@ -32,6 +32,15 @@ describe("scorePlace", () => {
       scorePlace(modest, 0, interests, { richnessExponent });
     expect(ratio(RICHNESS_EXPONENT.first_time)).toBeCloseTo(3 ** 1.5, 6);
     expect(ratio(RICHNESS_EXPONENT.local)).toBeCloseTo(Math.sqrt(3), 6);
+  });
+
+  it("values a place by what is left to tell there", () => {
+    const p = { ...place("p", 0, 0, ["historical"]), richness: 4 };
+    const score = (told: number) =>
+      scorePlace(p, 0, interests, { heard: new Map(told ? [["p", told]] : []) });
+    expect(score(2)).toBeCloseTo(score(0) * (HEARD_FLOOR + (1 - HEARD_FLOOR) / 2), 6);
+    expect(score(4)).toBeCloseTo(score(0) * HEARD_FLOOR, 6);
+    expect(score(9)).toBeCloseTo(score(0) * HEARD_FLOOR, 6);
   });
 
   it("halves the value at the edge of visibility", () => {

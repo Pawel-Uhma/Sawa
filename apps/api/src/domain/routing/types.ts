@@ -40,6 +40,8 @@ export type PlacePoint = {
   position: LatLng;
   interests: string[];
   weight: number;
+  /** Facts + trivia; with `ScorePrefs.heard` tells how much is left to tell. */
+  richness?: number;
 };
 
 /** A place visible from a pattern, at a time offset from the pattern's first stop. */

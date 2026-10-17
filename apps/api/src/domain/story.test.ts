@@ -1,6 +1,15 @@
+import { factId } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
+import { contextFor, STORY_CONTEXTS } from "./contexts";
 import type { Place } from "./place";
-import { bandFor, factsStory, parseStoryAnswer, storyCacheKey } from "./story";
+import {
+  bandFor,
+  factsStory,
+  parseStoryAnswer,
+  pickFacts,
+  placeFacts,
+  storyCacheKey,
+} from "./story";
 
 const place = {
   id: "kercelak",
@@ -55,9 +64,60 @@ describe("parseStoryAnswer", () => {
   });
 });
 
+describe("pickFacts", () => {
+  const medium = bandFor(60);
+  const [first, second, trivia] = placeFacts(place).map((f) => f.id);
+
+  it("tells the facts in the seed's order, then the trivia", () => {
+    const pick = pickFacts(place, { heard: [], band: medium });
+    expect(pick.facts.map((f) => f.id)).toEqual([first, second, trivia]);
+    expect(pick.recap).toBe(false);
+  });
+
+  it("skips what the listener already heard", () => {
+    const pick = pickFacts(place, { heard: [first ?? ""], band: medium });
+    expect(pick.facts.map((f) => f.id)).toEqual([second, trivia]);
+  });
+
+  it("recalls one fact when everything was heard", () => {
+    const pick = pickFacts(place, { heard: [first, second, trivia] as string[], band: medium });
+    expect(pick).toEqual({ facts: [placeFacts(place)[0]], recap: true });
+  });
+
+  it("starts with trivia in the trivia style", () => {
+    const pick = pickFacts(place, { heard: [], band: medium, style: "trivia" });
+    expect(pick.facts[0]?.kind).toBe("trivia");
+  });
+
+  it("keeps at least one fact even when the band is tiny", () => {
+    const pick = pickFacts(place, { heard: [], band: { id: "short", upToSec: 5, words: 2 } });
+    expect(pick.facts).toHaveLength(1);
+  });
+
+  it("ids facts by their text", () => {
+    expect(placeFacts(place)[0]?.id).toBe(factId("Kercelak był największym bazarem Warszawy."));
+  });
+});
+
+describe("contextFor", () => {
+  const uprising = { interests: ["war_uprising", "architecture"] };
+
+  it("explains the background once, and only to first-timers", () => {
+    expect(contextFor(uprising, "first_time", [])?.id).toBe("powstanie-1944");
+    expect(contextFor(uprising, "first_time", ["powstanie-1944"])).toBeNull();
+    expect(contextFor(uprising, "local", [])).toBeNull();
+    expect(contextFor({ interests: ["nature"] }, "first_time", [])).toBeNull();
+  });
+
+  it("has a unique id per background", () => {
+    expect(new Set(STORY_CONTEXTS.map((c) => c.id)).size).toBe(STORY_CONTEXTS.length);
+  });
+});
+
 describe("factsStory", () => {
-  it("names the place and stays within the band", () => {
-    const draft = factsStory(place, { id: "short", upToSec: 30, words: 8 });
+  it("names the place and reads the picked facts", () => {
+    const pick = pickFacts(place, { heard: [], band: { id: "short", upToSec: 30, words: 8 } });
+    const draft = factsStory(place, pick);
     expect(draft.text).toBe("Mijamy: Kercelak. Kercelak był największym bazarem Warszawy.");
     expect(draft.sources).toEqual(place.sources);
   });

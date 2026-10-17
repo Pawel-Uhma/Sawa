@@ -1,0 +1,120 @@
+"use client";
+
+import type { Place } from "@sawa/shared";
+import { useState } from "react";
+import { placeTagLabel } from "@/lib/interest-labels";
+import type { Listener } from "../lib/api-data";
+import { usePlaceStory } from "../lib/place-story";
+import {
+  CloseButton,
+  cleanFact,
+  KindLine,
+  ListenButton,
+  photoCredit,
+  Sources,
+  splitName,
+  TodayNearby,
+} from "./place-card";
+
+const FACTS_PREVIEW = 3;
+
+type PlaceDetailsProps = { place: Place; listener: Listener; onClose: () => void };
+
+/** Treść karty miejsca, jak arkusz w Mapach Apple: nagłówek, główna akcja, pasek zdjęć, a niżej wszystko, co wiemy o miejscu. */
+export function PlaceDetails({ place, listener, onClose }: PlaceDetailsProps) {
+  const story = usePlaceStory(place.id, listener);
+  const [showAll, setShowAll] = useState(false);
+  const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW)).map(cleanFact);
+  const { title, aside } = splitName(place.name);
+  const address = [aside, place.addressToday ?? place.addressHistoric].filter(Boolean).join(" · ");
+
+  return (
+    <div className="px-[18px] pb-5 pt-6 md:px-6">
+      <div className="flex items-start gap-3">
+        <div className="min-w-0 flex-1">
+          <KindLine place={place} />
+          <h2 className="mt-1 text-[24px] font-extrabold leading-[1.15] tracking-[-0.025em] text-tekst">
+            {title}
+          </h2>
+          {address && <p className="mt-1 text-[14px] text-tekst-2">{address}</p>}
+        </div>
+        <CloseButton onClick={onClose} />
+      </div>
+
+      <div className="mt-4">
+        <ListenButton state={story.state} progress={story.progress} onToggle={story.toggle} />
+        {story.text && (
+          <p aria-live="polite" className="wejdz mt-3 text-[15px] leading-relaxed text-tekst-2">
+            {story.text}
+          </p>
+        )}
+      </div>
+
+      {place.photos.length > 0 && (
+        <ul className="-mx-[18px] mt-4 flex snap-x snap-mandatory gap-2 overflow-x-auto px-[18px] pb-1 [scrollbar-width:none] md:-mx-6 md:px-6">
+          {place.photos.map((photo) => (
+            <li key={photo.url} className="w-[78%] shrink-0 snap-start first:ml-0 md:w-[85%]">
+              <figure>
+                {/* biome-ignore lint/performance/noImgElement: zdjęcia z wielu archiwów, next/image wymagałby każdej domeny w konfiguracji */}
+                <img
+                  src={photo.url}
+                  alt={photo.caption ?? place.name}
+                  loading="lazy"
+                  draggable={false}
+                  className="aspect-[4/3] w-full rounded-2xl bg-tlo-2 object-cover"
+                />
+                <figcaption className="mt-1 line-clamp-1 text-[11px] text-tekst-3">
+                  {photoCredit(photo)}
+                </figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {place.interests.length > 0 && (
+        <ul className="mt-4 flex flex-wrap gap-1.5">
+          {place.interests.map((tag) => (
+            <li
+              key={tag}
+              className="rounded-full bg-mieta-jasna px-2.5 py-1 text-xs font-bold text-glebia-ciemna"
+            >
+              {placeTagLabel(tag)}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {facts.length > 0 && (
+        <div className="mt-5">
+          <h3 className="etykieta">Co tu się działo</h3>
+          <ul className="mt-2 space-y-2.5">
+            {facts.map((fact) => (
+              <li key={fact} className="flex gap-2.5 text-[15px] leading-relaxed text-tekst">
+                <span
+                  aria-hidden="true"
+                  className="mt-[9px] size-1.5 shrink-0 rounded-full bg-koral"
+                />
+                {fact}
+              </li>
+            ))}
+          </ul>
+          {place.facts.length > FACTS_PREVIEW && (
+            <button
+              type="button"
+              onClick={() => setShowAll((isShown) => !isShown)}
+              className="-ml-2 mt-2 rounded-full px-2 py-1.5 text-[14px] font-bold text-glebia hover:bg-mieta-jasna"
+            >
+              {showAll ? "Pokaż mniej" : `Wszystkie fakty (${place.facts.length})`}
+            </button>
+          )}
+        </div>
+      )}
+
+      <div className="mt-5 space-y-5">
+        <TodayNearby place={place} />
+        <Sources place={place} />
+      </div>
+    </div>
+  );
+}

@@ -11,5 +11,6 @@ export function toPlacePoints(places: PlaceSummary[]): PlacePoint[] {
     position,
     interests: interestsOfTags(interests),
     weight: weightFromRichness(richness),
+    richness,
   }));
 }

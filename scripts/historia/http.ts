@@ -5,8 +5,19 @@ export const USER_AGENT = "sawa-hackathon/1.0 (Warsaw Open Data Hackathon 2026)"
 /** Curated places sit in 20.96–21.00, 52.227–52.245; routes run up to ~3 km further. */
 export const AREA = { south: 52.21, west: 20.93, north: 52.26, east: 21.02 };
 
-export const inArea = (lat: number, lng: number) =>
-  lat >= AREA.south && lat <= AREA.north && lng >= AREA.west && lng <= AREA.east;
+/**
+ * Where rides from 42 Warsaw reach in 60–120 min (T-73): Śródmieście, Żoliborz, Ochota,
+ * Mokotów and Praga. Too few places outside AREA left the second half of a ride silent.
+ */
+export const WIDE_AREA = { south: 52.17, west: 20.9, north: 52.3, east: 21.08 };
+
+/** Warsaw's city limits: the map covers the whole city, sparser outside WIDE_AREA. */
+export const CITY_AREA = { south: 52.09, west: 20.85, north: 52.37, east: 21.28 };
+
+type Area = typeof AREA;
+
+export const inArea = (lat: number, lng: number, area: Area = AREA) =>
+  lat >= area.south && lat <= area.north && lng >= area.west && lng <= area.east;
 
 export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 

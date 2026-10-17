@@ -1,10 +1,38 @@
 import { type Leg, type Route, toLngLat } from "@sawa/shared";
 import { boundsOf, type LngLat, type LngLatBounds } from "./bounds";
+import { lineColor } from "./map-style";
 
 export type RouteLegFeature = {
   type: "Feature";
   geometry: { type: "LineString"; coordinates: LngLat[] };
-  properties: { legIndex: number; line: string; mode: Leg["mode"] };
+  /** `lineIndex` counts boarded lines: consecutive legs on the same line share it and its colour. */
+  properties: {
+    legIndex: number;
+    line: string;
+    mode: Leg["mode"];
+    lineIndex: number;
+    color: string;
+  };
+};
+
+/** A stop where a line is boarded: the start (`order` 0) or a transfer. */
+export type RouteBoardingFeature = {
+  type: "Feature";
+  geometry: { type: "Point"; coordinates: LngLat };
+  properties: {
+    line: string;
+    mode: Leg["mode"];
+    color: string;
+    stopName: string;
+    isTransfer: boolean;
+  };
+};
+
+/** Walk between the stop a line was left at and the stop the next one is boarded at. */
+export type RouteWalkFeature = {
+  type: "Feature";
+  geometry: { type: "LineString"; coordinates: LngLat[] };
+  properties: { legIndex: number };
 };
 
 export type RoutePlaceFeature = {
@@ -16,17 +44,106 @@ export type RoutePlaceFeature = {
 
 export type FeatureCollection<F> = { type: "FeatureCollection"; features: F[] };
 
+/**
+ * For each leg, the index of the line it belongs to; a new line starts when `line` changes.
+ * Walk legs belong to no line (-1) and don't break a line that continues after them.
+ */
+export function lineIndexes(route: Route): number[] {
+  let index = -1;
+  let previous: string | undefined;
+  return route.legs.map((leg) => {
+    if (leg.mode === "walk") return -1;
+    if (leg.line !== previous) index += 1;
+    previous = leg.line;
+    return index;
+  });
+}
+
 export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeature> {
+  const lines = lineIndexes(route);
   return {
     type: "FeatureCollection",
     features: route.legs
       .map((leg, legIndex) => ({ leg, legIndex }))
-      .filter(({ leg }) => leg.lngLats.length >= 2)
+      .filter(({ leg }) => leg.mode !== "walk" && leg.lngLats.length >= 2)
       .map(({ leg, legIndex }) => ({
         type: "Feature",
         geometry: { type: "LineString", coordinates: leg.lngLats },
-        properties: { legIndex, line: leg.line, mode: leg.mode },
+        properties: {
+          legIndex,
+          line: leg.line,
+          mode: leg.mode,
+          lineIndex: lines[legIndex],
+          color: lineColor(lines[legIndex]),
+        },
       })),
+  };
+}
+
+/** Boarding points: the first stop of the ride and every stop where the line changes. */
+export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBoardingFeature> {
+  const lines = lineIndexes(route);
+  return {
+    type: "FeatureCollection",
+    features: route.legs
+      .map((leg, legIndex) => ({ leg, legIndex }))
+      .filter(
+        ({ legIndex }) =>
+          lines[legIndex] >= 0 && !lines.slice(0, legIndex).includes(lines[legIndex]),
+      )
+      .map(({ leg, legIndex }) => ({
+        type: "Feature",
+        geometry: { type: "Point", coordinates: toLngLat(leg.fromStop.position) },
+        properties: {
+          line: leg.line,
+          mode: leg.mode,
+          color: lineColor(lines[legIndex]),
+          stopName: leg.fromStop.name,
+          isTransfer: lines[legIndex] > 0,
+        },
+      })),
+  };
+}
+
+/**
+ * Walk legs, plus walks at transfers where the next leg starts at a different stop than the
+ * previous one ended.
+ */
+export function routeWalksToGeoJson(route: Route): FeatureCollection<RouteWalkFeature> {
+  const walkLegs: RouteWalkFeature[] = route.legs.flatMap((leg, legIndex) =>
+    leg.mode === "walk"
+      ? [
+          {
+            type: "Feature" as const,
+            geometry: {
+              type: "LineString" as const,
+              coordinates:
+                leg.lngLats.length >= 2
+                  ? leg.lngLats
+                  : [toLngLat(leg.fromStop.position), toLngLat(leg.toStop.position)],
+            },
+            properties: { legIndex },
+          },
+        ]
+      : [],
+  );
+  return {
+    type: "FeatureCollection",
+    features: walkLegs.concat(
+      route.legs.slice(1).flatMap((leg, i) => {
+        const previous = route.legs[i];
+        const from = previous.lngLats.at(-1) ?? toLngLat(previous.toStop.position);
+        const to = leg.lngLats[0] ?? toLngLat(leg.fromStop.position);
+        if (from[0] === to[0] && from[1] === to[1]) return [];
+        return [
+          {
+            type: "Feature" as const,
+            geometry: { type: "LineString" as const, coordinates: [from, to] },
+            properties: { legIndex: i + 1 },
+          },
+        ];
+      }),
+    ),
   };
 }
 

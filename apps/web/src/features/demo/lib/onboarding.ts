@@ -1,30 +1,62 @@
-// Dane onboardingu (docs/ui/onboarding.md). Pytania o znajomość miasta i styl to propozycja R3,
-// planer ich jeszcze nie czyta. Grafiki w public/onboarding/ (fal.ai, styl obrazu 32).
+// Dane onboardingu (docs/ui/onboarding.md). Znajomość miasta wybiera trasy i tło opowieści,
+// styl ton i długość (planer R1 i /v1/stories). Grafiki w public/onboarding/ (fal.ai, styl obrazu 32).
 
-export const MAX_INTERESTS = 3;
-
-export const interestIcon = (key: string) => `/onboarding/${key}.webp`;
+import { type Interest, interestsOfTags } from "@sawa/shared";
 
 export type Choice = { key: string; label: string; hint: string; icon: string };
+
+/**
+ * Cztery kategorie, które zna planer i opowieści (decyzja 17.10, R1 #25). Podpowiedzi mówią,
+ * co w nich jest według danych (485 miejsc): sport i przyroda mają mało faktów, więc krótko.
+ */
+export const INTERESTS: (Choice & { key: Interest })[] = [
+  {
+    key: "historical",
+    label: "Historia",
+    hint: "Powstanie, kamienice, fabryki, ludzie",
+    icon: "war_uprising",
+  },
+  {
+    key: "cultural",
+    label: "Kultura",
+    hint: "Murale, świątynie, życie codzienne",
+    icon: "street_art",
+  },
+  { key: "sports", label: "Sport", hint: "Boiska i obiekty, krótko", icon: "sport" },
+  { key: "nature", label: "Przyroda", hint: "Parki i skwery, krótko", icon: "nature" },
+];
+
+export const interestIcon = (key: string) =>
+  `/onboarding/${INTERESTS.find((item) => item.key === key)?.icon ?? key}.webp`;
 
 export const FAMILIARITY: Choice[] = [
   {
     key: "first_time",
     label: "Jestem tu pierwszy raz",
-    hint: "Zacznę od tego, co najważniejsze",
+    hint: "Najważniejsze miejsca i tło wydarzeń",
     icon: "first_time",
   },
-  { key: "know_a_bit", label: "Trochę znam", hint: "Pominę oczywistości", icon: "know_a_bit" },
-  { key: "local", label: "Mieszkam tu", hint: "Pokażę to, czego nie widać", icon: "local" },
+  {
+    key: "know_a_bit",
+    label: "Trochę znam",
+    hint: "Znane miejsca na przemian z mniej znanymi",
+    icon: "know_a_bit",
+  },
+  { key: "local", label: "Mieszkam tu", hint: "Więcej mniej oczywistych miejsc", icon: "local" },
 ];
 
 export const STORY_STYLES: Choice[] = [
   { key: "fun", label: "Krótko i z humorem", hint: "Jak znajoma z miasta", icon: "style_fun" },
-  { key: "deep", label: "Z detalami", hint: "Daty, ludzie, tło", icon: "style_deep" },
+  {
+    key: "deep",
+    label: "Z detalami",
+    hint: "Daty, ludzie, tło. Rzadziej, ale dłużej",
+    icon: "style_deep",
+  },
   {
     key: "trivia",
     label: "Same ciekawostki",
-    hint: "Jedno zdanie, jedno „wow”",
+    hint: "Jedno zdanie, jedno „wow”, częściej",
     icon: "style_trivia",
   },
 ];
@@ -36,3 +68,36 @@ export type Profile = {
 };
 
 export const EMPTY_PROFILE: Profile = { familiarity: null, interests: [], storyStyle: null };
+
+const PROFILE_KEY = "sawa.profile.v1";
+
+/** Odpowiedzi z poprzedniej wizyty: kto wraca, od razu widzi mapę. */
+export function loadProfile(): Profile | null {
+  try {
+    const raw = window.localStorage.getItem(PROFILE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as Partial<Profile>;
+    if (!Array.isArray(parsed.interests) || parsed.interests.length === 0) return null;
+    // Starsze profile trzymały szczegółowe tagi (np. `jewish_warsaw`): zamieniamy je na kategorie.
+    const interests = interestsOfTags(
+      parsed.interests.filter((key): key is string => typeof key === "string"),
+    );
+    if (interests.length === 0) return null;
+    return {
+      familiarity: parsed.familiarity ?? null,
+      interests,
+      storyStyle: parsed.storyStyle ?? null,
+    };
+  } catch {
+    return null;
+  }
+}
+
+export function saveProfile(profile: Profile | null) {
+  try {
+    if (profile) window.localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+    else window.localStorage.removeItem(PROFILE_KEY);
+  } catch {
+    // Bez localStorage onboarding po prostu wróci przy następnej wizycie.
+  }
+}

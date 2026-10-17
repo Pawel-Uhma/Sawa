@@ -1,4 +1,4 @@
-import { HACKATHON_VENUE, type Leg } from "@sawa/shared";
+import { HACKATHON_VENUE } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 
 /** OpenFreeMap basemap: no API key, OSM data. */
@@ -6,17 +6,6 @@ export const BASEMAP_STYLE_URL = "https://tiles.openfreemap.org/styles/positron"
 
 /** Fonts available in the OpenFreeMap glyph server. */
 export const LABEL_FONT = ["Noto Sans Regular"];
-
-/**
- * Area the places are fetched for: the seed covers ~1 km around 42 Warsaw (12-plan-mvp Z5),
- * so one request with a slightly larger box gets them all.
- */
-export const PLACES_BBOX = {
-  minLng: HACKATHON_VENUE.lng - 0.025,
-  minLat: HACKATHON_VENUE.lat - 0.015,
-  maxLng: HACKATHON_VENUE.lng + 0.025,
-  maxLat: HACKATHON_VENUE.lat + 0.015,
-};
 
 export const START_VIEW = {
   longitude: HACKATHON_VENUE.lng,
@@ -65,14 +54,24 @@ export const PLACE_KIND_LABELS: Record<string, string> = {
 /** User position dot. */
 export const USER_COLOR = "#2563eb";
 
+/** End point the user picked for the ride. */
+export const DESTINATION_COLOR = "#f2755f";
+
 /** Route place the story is about right now. */
 export const ACTIVE_STOP_COLOR = "#17706f";
 
-export const LEG_MODE_COLORS: Record<Leg["mode"], string> = {
-  tram: "#d62828",
-  bus: "#1d3557",
-  walk: "#6b7280",
-};
+/**
+ * One colour per line of the ride, in the order the lines are boarded.
+ * Kept away from the teal of the active stop and the coral of the destination.
+ */
+export const LINE_COLORS = ["#d62828", "#1d4ed8", "#7c3aed", "#e07a00", "#c2185b", "#4d7c0f"];
+
+/** Walk between two stops at a transfer. */
+export const WALK_COLOR = "#52525b";
+
+export function lineColor(lineIndex: number): string {
+  return LINE_COLORS[lineIndex % LINE_COLORS.length];
+}
 
 export function placeKindColor(kind: string): string {
   return PLACE_KIND_COLORS[kind] ?? UNKNOWN_KIND_COLOR;
