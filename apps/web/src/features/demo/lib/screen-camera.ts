@@ -4,6 +4,8 @@ import type { MapCamera } from "@/features/map";
 export type ScreenCameraInput = {
   /** Karta miejsca jest otwarta; `position` to null, dopóki szczegóły miejsca się nie wczytają. */
   place: { position: LatLng | null } | null;
+  /** Karta miejsca właśnie się zamknęła: mapa zostaje tam, gdzie jest, aż ekran się zmieni. */
+  placeClosed?: boolean;
   /** Punkt trasy, o którym teraz mowa (tylko na ekranie trasy). */
   activeStop: LatLng | null;
   /** Wybrany cel na ekranie głównym. */
@@ -20,6 +22,7 @@ const HOME_FIT_MAX_ZOOM = 15;
 /** Co mapa pokazuje na danym ekranie. */
 export function screenCamera({
   place,
+  placeClosed = false,
   activeStop,
   destination,
   origin,
@@ -31,6 +34,9 @@ export function screenCamera({
     // do miejsca, czyli dwa ruchy zamiast jednego (#117).
     return place.position ? { type: "center", center: place.position } : { type: "stay" };
   }
+  // Zamknięcie karty nie przenosi mapy na start ani na przystanek trasy: wyglądało to jak skok
+  // w przypadkowe miejsce.
+  if (placeClosed) return { type: "stay" };
   if (activeStop) return { type: "center", center: activeStop, zoom: ROUTE_STOP_ZOOM };
   // Wybrany cel: mapa pokazuje start i cel naraz
   if (destination) {

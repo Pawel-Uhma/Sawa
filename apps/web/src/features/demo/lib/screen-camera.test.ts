@@ -21,6 +21,13 @@ describe("screenCamera", () => {
     });
   });
 
+  it("keeps the view after the place card closes", () => {
+    expect(screenCamera({ ...BASE, placeClosed: true })).toEqual({ type: "stay" });
+    expect(screenCamera({ ...BASE, placeClosed: true, activeStop: STOP })).toEqual({
+      type: "stay",
+    });
+  });
+
   it("follows the active route stop", () => {
     expect(screenCamera({ ...BASE, activeStop: STOP })).toEqual({
       type: "center",

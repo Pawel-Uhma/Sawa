@@ -253,6 +253,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const isPickingEnd = endType === "destination";
   // Karta miejsca działa też na trasie: klik w pinezkę spoza trasy pokazuje to miejsce.
   const isPlaceOpen = (isHome || isRoute) && selectedPlace !== null;
+  // Po zamknięciu karty kamera stoi, dopóki nie zmieni się przystanek, cel albo ekran.
+  const [placeClosed, setPlaceClosed] = useState(false);
+  useEffect(() => {
+    if (isPlaceOpen) setPlaceClosed(true);
+  }, [isPlaceOpen]);
+  // biome-ignore lint/correctness/useExhaustiveDependencies: reset on screen, stop or destination change
+  useEffect(() => {
+    setPlaceClosed(false);
+  }, [stage, tab, activeIndex, destination]);
 
   const padding: MapPadding = useMemo(() => {
     if (isDesktop) {
@@ -282,12 +291,23 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       isRoute && activeStop ? { lat: activeStop.coord[1], lng: activeStop.coord[0] } : null;
     return screenCamera({
       place: isPlaceOpen ? { position: selectedPlace.position } : null,
+      placeClosed,
       activeStop: stop,
       destination: isHome && destination ? destination.point : null,
       origin,
       isDesktop,
     });
-  }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace, origin]);
+  }, [
+    isRoute,
+    activeStop,
+    isDesktop,
+    isHome,
+    destination,
+    isPlaceOpen,
+    selectedPlace,
+    placeClosed,
+    origin,
+  ]);
 
   const listener = useMemo(() => listenerOf(profile), [profile]);
   const memory = useMemory();
