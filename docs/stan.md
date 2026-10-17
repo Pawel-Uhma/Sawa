@@ -11,6 +11,8 @@
 - Najbliższe: wpisanie git user.name i ról do `zespol.md` (T-08), inicjalizacja repo aplikacji (T-04), zdjęcie decyzji o API Bielika i Supabase (T-01, T-02).
 - Plan bazy miejsc w [13-plan-bazy.md](13-plan-bazy.md) (Jasiek, 13:00): baza Supabase pusta, PostGIS do włączenia; 13:10: schemat i RPC w Supabase (T-20), 13:08: dane załadowane (326 miejsc, 351 zdjęć, T-21). R3 i R4 mogą czytać przez RPC `places_in_bbox`, `place_detail`, R1 przez `places_near_line` (Jasiek).
 
+- R1 (Szczepan, 13:15): kolejność przystanków i kształty linii z GTFS mkuran.pl (licencja ZTM + ODbL, wymagany podpis), skompresowane do `apps/api/data/`. Planer dopasowuje miejsca do tras **w pamięci API**, wejście to GeoJSON w formacie RPC `places_in_bbox` (teraz z pliku `apps/api/data/places.geojson`, potem z Supabase). **Dla R2 (Jasiek):** RPC `places_near_line` nie będzie używane przez planer; lista `INTERESTS` przenosi się do `packages/shared/src/interests.ts` (te same klucze), `scripts/historia/interests.ts` może ją stamtąd importować; dodaję `scripts/export-places-geojson.ts`, które używa Twojego `mapPlace`.
+
 ## Zablokowane
 
 - Nic zgłoszonego. Dopisz tu blokadę od razu, z nazwiskiem osoby, która może ją odblokować.
@@ -23,7 +25,6 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 |---|---|---|
 | Lista zainteresowań (8 kluczy) i reguły przypisania w seedzie | R3 + R2 | [13-plan-bazy.md §5](13-plan-bazy.md) |
 | Potwierdzenie stacku z planu MVP: Hono na Railway + monorepo pnpm, 4 role (R5 → R2) | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) §2, §11 |
-| Skąd kolejność przystanków linii (GTFS?) | R1, 13:30 | [12-plan-mvp.md](12-plan-mvp.md) §7, P1 |
 | Konta Vercel i Railway: zespołowe czy prywatne | zespół, 12:30 | [12-plan-mvp.md](12-plan-mvp.md) P7 |
 | Przycisk „dalej” w opowieści: MVP czy później | zespół | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
 | Głos: ElevenLabs czy open source, jakość polskiego | R4 + zespół | [05-plan-architektury.md](05-plan-architektury.md) |
