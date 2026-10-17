@@ -3,7 +3,7 @@
 import type { Route, Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
@@ -11,7 +11,7 @@ import { shortestStopFor, useFastestRoute } from "../lib/fastest-route";
 import { forgetAll, useMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
-import { useRideClock } from "../lib/ride-clock";
+import { isAt, useRideClock } from "../lib/ride-clock";
 import {
   CUSTOM_DESTINATION_NAME,
   DESTINATION_PRESETS,
@@ -249,10 +249,30 @@ export function DemoApp() {
     },
     [syncTo],
   );
-  // Sawa mówi na trasie; po wyjściu z niej pauza, a po wejściu wznowienie (jak wcześniej arkusz).
+  // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
+  // (zegar jazdy albo GPS). Po wyjściu z trasy pauza, a po wejściu wznowienie.
+  const waiting = clock.waitSec !== null;
+  const wasWaiting = useRef(false);
   useEffect(() => {
-    setIsPlaying(isRoute);
-  }, [isRoute, setIsPlaying]);
+    const arrived = wasWaiting.current && !waiting;
+    wasWaiting.current = waiting;
+    // Start z zakładki Sawa (poza ekranem trasy) zostaje, nie pauzujemy go od razu
+    if (arrived && !isRoute) return;
+    setIsPlaying(isRoute && !waiting);
+  }, [isRoute, waiting, setIsPlaying]);
+  const firstStop = route[0];
+  useEffect(() => {
+    if (waiting && firstStop && start.status === "located" && isAt(origin, firstStop)) syncTo(0);
+  }, [waiting, firstStop, start.status, origin, syncTo]);
+  // Stuknięcie w odtwarzanie przed pierwszym miejscem znaczy „opowiadaj już teraz”.
+  const ridePlayer = useMemo(() => {
+    if (!waiting) return player;
+    const toggle = () => {
+      syncTo(0);
+      player.toggle();
+    };
+    return { ...player, toggle };
+  }, [waiting, player, syncTo]);
   const playStop = useCallback(
     (index: number) => {
       if (index < 0 || index >= route.length) return;
@@ -377,7 +397,7 @@ export function DemoApp() {
                 onCollapsedChange={setPanelCollapsed}
                 stops={route}
                 activeIndex={activeIndex}
-                player={player}
+                player={ridePlayer}
                 places={memory.places}
                 onPrev={() => playStop(activeIndex - 1)}
                 onNext={() => playStop(activeIndex + 1)}
@@ -391,7 +411,7 @@ export function DemoApp() {
                 legs={planned?.legs ?? []}
                 attribution={planned?.attribution ?? []}
                 stops={route}
-                player={player}
+                player={ridePlayer}
                 activeIndex={activeIndex}
                 onActiveChange={setActiveIndex}
                 clock={clock}
