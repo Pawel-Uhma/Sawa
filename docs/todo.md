@@ -107,6 +107,7 @@
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 - [ ] **T-150** Mapa: punkty znów grupują się w klastry z liczbą przy oddaleniu (usunięte w `17d8870`/`578b21d`; jeśli celowo, powód do `stan.md`) ([#101](https://github.com/Pawel-Uhma/Sawa/issues/101)) — `R3` (Paweł)
 - [ ] **T-151** Mapa: jedno źródło koloru punktu, zgodne z chipami tematów, plus zwijana legenda kolor → kategoria ([#102](https://github.com/Pawel-Uhma/Sawa/issues/102)) — `R3` (Paweł)
+- [x] **T-152** Mapa: ulica zostaje ikoną, ale po kliknięciu (na desktopie też po najechaniu) podświetla się cała jej linia z kafelków OpenFreeMap (`transportation_name`, filtr po nazwie); propozycje w `ui/propozycje/html/ulice-jako-linie.html` — `R3` (Paweł z agentem, 21:20)
 
 ## R4 · AI i głos
 

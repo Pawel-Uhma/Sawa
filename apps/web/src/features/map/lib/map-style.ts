@@ -32,6 +32,8 @@ export type MapPalette = {
   label: string;
   labelHalo: string;
   walk: string;
+  /** Whole street drawn under its icon when the street is hovered or selected. */
+  street: string;
   /** Group of places drawn as one circle with their count when zoomed out ("glass" style, 17.10). */
   clusterFill: string;
   clusterStroke: string;
@@ -68,6 +70,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#27272a",
     labelHalo: "#ffffff",
     walk: "#52525b",
+    street: "#4f6d9a",
     clusterFill: "rgba(255, 255, 255, 0.92)",
     clusterStroke: "rgba(23, 112, 111, 0.35)",
     clusterText: "#17706f",
@@ -98,6 +101,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     label: "#d5dfdd",
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
+    street: "#8fa9d4",
     clusterFill: "rgba(23, 33, 32, 0.92)",
     clusterStroke: "rgba(142, 209, 181, 0.4)",
     clusterText: "#8ed1b5",
