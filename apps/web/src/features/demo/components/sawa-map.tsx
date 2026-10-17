@@ -1,6 +1,5 @@
 "use client";
 
-import "maplibre-gl/dist/maplibre-gl.css";
 import type { GeoJSONSource, Map as MapLibreMap, Marker } from "maplibre-gl";
 import { useEffect, useRef, useState } from "react";
 import { usePrefersReducedMotion } from "../lib/device";
@@ -118,7 +117,7 @@ export function SawaMap({
   route = null,
   onStopClick,
 }: SawaMapProps) {
-  const containerRef = useRef<HTMLElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const markerClassRef = useRef<typeof Marker | null>(null);
   const [isReady, setIsReady] = useState(false);
@@ -132,7 +131,7 @@ export function SawaMap({
     let cancelled = false;
     let map: MapLibreMap | null = null;
 
-    import("maplibre-gl").then(({ Map: MapClass, Marker: MarkerClass }) => {
+    import("maplibre-gl").then(({ AttributionControl, Map: MapClass, Marker: MarkerClass }) => {
       if (cancelled || !containerRef.current) return;
       markerClassRef.current = MarkerClass;
       map = new MapClass({
@@ -140,11 +139,13 @@ export function SawaMap({
         style: STYLE_URL,
         center: user,
         zoom: 14.6,
-        attributionControl: { compact: true },
+        attributionControl: false,
         dragRotate: false,
         pitchWithRotate: false,
         fadeDuration: 0,
       });
+      // Podpis OSM pod pogodą, żeby nie wchodził pod arkusz i pasek zakładek
+      map.addControl(new AttributionControl({ compact: true }), "top-right");
       map.touchZoomRotate.disableRotation();
       map.keyboard.disableRotation();
 
@@ -269,10 +270,9 @@ export function SawaMap({
   }, [cameraKey, paddingKey, isReady, reducedMotion]);
 
   return (
-    <section
-      ref={containerRef}
-      className="absolute inset-0 bg-[#EEF3F0]"
-      aria-label="Mapa Warszawy z trasą"
-    />
+    // MapLibre nadaje kontenerowi position: relative, więc pozycjonujemy opakowanie, a nie sam kontener
+    <section className="absolute inset-0" aria-label="Mapa Warszawy z trasą">
+      <div ref={containerRef} className="h-full w-full bg-mapa" />
+    </section>
   );
 }

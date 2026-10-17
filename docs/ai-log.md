@@ -4886,3 +4886,144 @@
 > +> [Image #1] jak dodac to uprawnienie
 > +
 
+
+### 2026-10-17 13:44 · Pawel
+
+> podoba mi sie Asia ale ma problem z liczbami - daj w przykladach liczby napisane po polsku nie liczbami - oraz dodaj typowe dla elevenlabs westchniecia akcenty glosu w danych momentach
+
+
+> podoba mi sie Asia ale ma problem z liczbami - daj w przykladach liczby napisane po polsku nie liczbami - oraz dodaj typowe dla elevenlabs westchniecia akcenty glosu w danych momentach
+
+**AI:** Pawlowi pasuje głos Asia, ale cyfry czyta źle. W stroiku kwestie mają teraz liczby słownie, tagi v3 ([sighs], [laughs], [whispers] itd.) i wielokropki jako pauzy. Doszły przyciski do wstawiania tagów, a dla modeli innych niż v3 tagi są wycinane. Wniosek dla R4: prompt Sawy musi pisać liczby i daty słownie.
+
+### 2026-10-17 13:45 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/app/globals.css                       | 13 +++++++++++--
+>  apps/web/src/features/demo/components/sawa-map.tsx | 18 +++++++++---------
+>  docs/ai-log.md                                     |  9 +++++++++
+>  3 files changed, 29 insertions(+), 11 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/app/globals.css b/apps/web/src/app/globals.css
+> index 99d4df1..eee0abd 100644
+> --- a/apps/web/src/app/globals.css
+> +++ b/apps/web/src/app/globals.css
+> @@ -1,4 +1,5 @@
+>  @import "tailwindcss";
+> +@import "maplibre-gl/dist/maplibre-gl.css";
+>  
+>  /* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
+>  @theme inline {
+> @@ -43,7 +44,7 @@ button {
+>  
+>  /* Materiał: szkło na mapie (makiety, docs/ui/propozycje/html/_wspolne.css) */
+>  @utility szklo {
+> -  background: rgba(255, 255, 255, 0.74);
+> +  background: rgba(255, 255, 255, 0.84);
+>    backdrop-filter: blur(24px) saturate(1.8);
+>    -webkit-backdrop-filter: blur(24px) saturate(1.8);
+>    border: 1px solid rgba(255, 255, 255, 0.7);
+> @@ -95,7 +96,15 @@ button {
+>  }
+>  
+>  .maplibregl-ctrl-top-right {
+> -  top: calc(env(safe-area-inset-top) + 72px);
+> +  top: calc(max(1rem, env(safe-area-inset-top)) + 52px);
+> +  right: 8px;
+> +}
+> +
+> +@media (min-width: 768px) {
+> +  .maplibregl-ctrl-top-right {
+> +    top: 80px;
+> +    right: 16px;
+> +  }
+>  }
+>  
+>  .maplibregl-ctrl-attrib.maplibregl-compact {
+> diff --git a/apps/web/src/features/demo/components/sawa-map.tsx b/apps/web/src/features/demo/components/sawa-map.tsx
+> index 6478541..da6088c 100644
+> --- a/apps/web/src/features/demo/components/sawa-map.tsx
+> +++ b/apps/web/src/features/demo/components/sawa-map.tsx
+> @@ -1,6 +1,5 @@
+>  "use client";
+>  
+> -import "maplibre-gl/dist/maplibre-gl.css";
+>  import type { GeoJSONSource, Map as MapLibreMap, Marker } from "maplibre-gl";
+>  import { useEffect, useRef, useState } from "react";
+>  import { usePrefersReducedMotion } from "../lib/device";
+> @@ -118,7 +117,7 @@ export function SawaMap({
+>    route = null,
+>    onStopClick,
+>  }: SawaMapProps) {
+> -  const containerRef = useRef<HTMLElement>(null);
+> +  const containerRef = useRef<HTMLDivElement>(null);
+>    const mapRef = useRef<MapLibreMap | null>(null);
+>    const markerClassRef = useRef<typeof Marker | null>(null);
+>    const [isReady, setIsReady] = useState(false);
+> @@ -132,7 +131,7 @@ export function SawaMap({
+>      let cancelled = false;
+>      let map: MapLibreMap | null = null;
+>  
+> -    import("maplibre-gl").then(({ Map: MapClass, Marker: MarkerClass }) => {
+> +    import("maplibre-gl").then(({ AttributionControl, Map: MapClass, Marker: MarkerClass }) => {
+>        if (cancelled || !containerRef.current) return;
+>        markerClassRef.current = MarkerClass;
+>        map = new MapClass({
+> @@ -140,11 +139,13 @@ export function SawaMap({
+>          style: STYLE_URL,
+>          center: user,
+>          zoom: 14.6,
+> -        attributionControl: { compact: true },
+> +        attributionControl: false,
+>          dragRotate: false,
+>          pitchWithRotate: false,
+>          fadeDuration: 0,
+>        });
+> +      // Podpis OSM pod pogodą, żeby nie wchodził pod arkusz i pasek zakładek
+> +      map.addControl(new AttributionControl({ compact: true }), "top-right");
+>        map.touchZoomRotate.disableRotation();
+>        map.keyboard.disableRotation();
+>  
+> @@ -269,10 +270,9 @@ export function SawaMap({
+>    }, [cameraKey, paddingKey, isReady, reducedMotion]);
+>  
+>    return (
+> -    <section
+> -      ref={containerRef}
+> -      className="absolute inset-0 bg-[#EEF3F0]"
+> -      aria-label="Mapa Warszawy z trasą"
+> -    />
+> +    // MapLibre nadaje kontenerowi position: relative, więc pozycjonujemy opakowanie, a nie sam kontener
+> +    <section className="absolute inset-0" aria-label="Mapa Warszawy z trasą">
+> +      <div ref={containerRef} className="h-full w-full bg-mapa" />
+> +    </section>
+>    );
+>  }
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index e13b9f5..fce29cd 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -4886,3 +4886,12 @@
+>  > +> [Image #1] jak dodac to uprawnienie
+>  > +
+>  
+> +
+> +### 2026-10-17 13:44 · Pawel
+> +
+> +> podoba mi sie Asia ale ma problem z liczbami - daj w przykladach liczby napisane po polsku nie liczbami - oraz dodaj typowe dla elevenlabs westchniecia akcenty glosu w danych momentach
+> +
+> +
+> +> podoba mi sie Asia ale ma problem z liczbami - daj w przykladach liczby napisane po polsku nie liczbami - oraz dodaj typowe dla elevenlabs westchniecia akcenty glosu w danych momentach
+> +
+> +**AI:** Pawlowi pasuje głos Asia, ale cyfry czyta źle. W stroiku kwestie mają teraz liczby słownie, tagi v3 ([sighs], [laughs], [whispers] itd.) i wielokropki jako pauzy. Doszły przyciski do wstawiania tagów, a dla modeli innych niż v3 tagi są wycinane. Wniosek dla R4: prompt Sawy musi pisać liczby i daty słownie.
+
