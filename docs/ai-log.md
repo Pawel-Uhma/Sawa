@@ -2903,3 +2903,69 @@ _brak_
 > +
 > +**AI:** Nie usunąłem wpisów sprzed 17.10 z dziennika: jury dopuściło te logi, a ich usunięcie ukryłoby przygotowania przed wydarzeniem, które regulamin (§4 ust. 3–4) każe opisać. Zaproponowałem zostawienie wpisów z jawnym oznaczeniem okresu przed startem. Nic innego nie zmieniłem.
 
+
+### 2026-10-17 11:03 · Pawel
+
+> przotuj pytania do stworzenia product reaquiremets md - ktore bedzie fundamentem aplikacji
+
+
+### 2026-10-17 11:03 · Pawel
+
+> przotuj pytania do stworzenia product reaquiremets md - ktore bedzie fundamentem aplikacji
+
+
+**AI:** Utworzyłem `docs/09-pytania-prd.md`: 34 pytania do PRD Sawy w 10 blokach (problem, użytkownik, główna ścieżka, MVP, dane miejskie, AI, wdrożenie, wymagania niefunkcjonalne, demo, zespół), każde z propozycją domyślną z dotychczasowych dokumentów; 9 kluczowych oznaczyłem ⭐.
+
+### 2026-10-17 11:04 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/README.md |  3 ++-
+>  docs/ai-log.md | 12 ++++++++++++
+>  2 files changed, 14 insertions(+), 1 deletion(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/README.md b/docs/README.md
+> index de2a8e0..8549ae2 100644
+> --- a/docs/README.md
+> +++ b/docs/README.md
+> @@ -24,7 +24,8 @@
+>  7. [07-brainstorm-problemy.md](07-brainstorm-problemy.md): brainstorm problemów Warszawy za 50 lat i propozycja Sawy
+>  8. [08-badania-trendy.md](08-badania-trendy.md): badania o Warszawie z lat 2020–2026 i trendy na 50 lat
+>  9. [historia/](historia/README.md): historia miejsc w promieniu 400 m od 42 Warsaw (GeoJSON, ludzie, oś czasu, zdjęcia)
+> -10. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
+> +10. [09-pytania-prd.md](09-pytania-prd.md): pytania do PRD z propozycjami odpowiedzi
+> +11. [ai-log.md](ai-log.md): dziennik użycia AI, aktualizowany automatycznie po każdym prompcie
+>  
+>  ## Do zrobienia przed 17.10
+>  
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index a6d4694..c6f9b54 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2903,3 +2903,15 @@ _brak_
+>  > +
+>  > +**AI:** Nie usunąłem wpisów sprzed 17.10 z dziennika: jury dopuściło te logi, a ich usunięcie ukryłoby przygotowania przed wydarzeniem, które regulamin (§4 ust. 3–4) każe opisać. Zaproponowałem zostawienie wpisów z jawnym oznaczeniem okresu przed startem. Nic innego nie zmieniłem.
+>  
+> +
+> +### 2026-10-17 11:03 · Pawel
+> +
+> +> przotuj pytania do stworzenia product reaquiremets md - ktore bedzie fundamentem aplikacji
+> +
+> +
+> +### 2026-10-17 11:03 · Pawel
+> +
+> +> przotuj pytania do stworzenia product reaquiremets md - ktore bedzie fundamentem aplikacji
+> +
+> +
+> +**AI:** Utworzyłem `docs/09-pytania-prd.md`: 34 pytania do PRD Sawy w 10 blokach (problem, użytkownik, główna ścieżka, MVP, dane miejskie, AI, wdrożenie, wymagania niefunkcjonalne, demo, zespół), każde z propozycją domyślną z dotychczasowych dokumentów; 9 kluczowych oznaczyłem ⭐.
+> new file: docs/09-pytania-prd.md
+
