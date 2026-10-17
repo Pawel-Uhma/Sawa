@@ -30,7 +30,7 @@
 ## Zablokowane
 
 - Trasy dłuższe niż ok. 20 min były puste w drugiej połowie (miejsca tylko do 1 km od 42 Warsaw). Po odświeżeniu `places.geojson` przez R2 (14:08, 428 miejsc) do sprawdzenia, czy zasięg się poprawił. Sprawdza R1 (Szczepan), więcej miejsc dokłada R2 (Jasiek).
-- Front na Vercelu nie ma API, dopóki nie ma deployu na Railway (T-62). Odblokowuje R1 (Szczepan).
+- Front na Vercelu nie ma API, dopóki nie ma deployu na Railway (T-62). Konfiguracja gotowa w `main` (PR #15); brakuje logowania do Railway i Vercela oraz sekretów (`SUPABASE_*`, `WAW_TOKEN`). Odblokowuje R1 (Szczepan).
 
 ## Otwarte decyzje
 
