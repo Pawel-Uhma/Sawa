@@ -151,7 +151,8 @@ function canTransferAt(network: Network, stopId: string, pattern: Pattern, loop:
 
 function backFrom(ctx: Context, stopId: string): number {
   const group = ctx.groupOf(stopId);
-  return (group && ctx.returnTimes.get(group)) ?? Number.POSITIVE_INFINITY;
+  const sec = group === undefined ? undefined : ctx.returnTimes.get(group);
+  return sec ?? Number.POSITIVE_INFINITY; // unknown group or no way back
 }
 
 /** Every ride that extends `state` by one leg and ends where it can finish or transfer. */
