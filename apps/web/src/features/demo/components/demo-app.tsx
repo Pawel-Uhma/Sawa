@@ -21,6 +21,7 @@ import {
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
+import { useGpsClockSync } from "../lib/ride-sync";
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
@@ -278,6 +279,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Pauza i stop Sawy zatrzymują też zegar (suwak i odliczanie).
   const clock = useRideClock(route, player.isPlaying);
   const { syncTo } = clock;
+  // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
+  const position = start.status === "located" ? start.point : null;
+  useGpsClockSync(route, position, clock);
   const pickStop = useCallback(
     (index: number) => {
       syncTo(index);

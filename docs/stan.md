@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 19:20 (Antek, R3 z agentem): T-130 (issue #35, otwarte w „wieczornym” spotkaniu). GPS przesuwa zegar jazdy także po pierwszym miejscu: przy kolejnym punkcie trasy (`isAt`, 150 m, najwyżej 2 do przodu) `syncTo` (`ride-sync.ts`, `useGpsClockSync` w `DemoApp`). Przejścia między tematami w `story-player.ts`: wyciszenie, oddech 0,6 s, łagodne wejście (słychać tylko z `?voice=1`). **Dla R4:** zdanie-pomost do poprzedniego tematu w prompcie. **Nie sprawdzone** w jeździe.
 - 19:10 (Paweł, z agentem R3): **angielski w interfejsie (T-128).** Przełącznik Polski / English w menu i na ekranie powitalnym onboardingu, wybór w localStorage (`sawa-lang`), domyślnie polski. Kod: `features/i18n`, teksty jako `t("pl", "en")` w komponentach. Typecheck, lint i testy zielone. **Dla R4 (T-129):** opowieści z API są dalej po polsku, potrzebne pole `lang` w kontrakcie i prompcie.
 
 - 17.10, wieczór (spotkanie zespołu, [podsumowanie](spotkania/2026-10-17-wieczor-ui-trasa-dzieci.md)): odpada tryb „w samochodzie”; trasa pieszo ma zahaczać o punkty i nie wracać tą samą drogą (T-126, R1); sub-kind miejsc do potwierdzenia przez R2 (T-127). Otwarte: śledzenie lokalizacji w podcaście (#35), muzyka między punktami, prezentacja (Slides czy PDF), klucze Firecrawl. Sprzeczność: licencje zdjęć (T-97 vs. „ignorujemy licencję”), obowiązuje T-97.
