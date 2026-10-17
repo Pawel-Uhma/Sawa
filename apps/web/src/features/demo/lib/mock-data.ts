@@ -6,8 +6,8 @@ export type LngLat = [number, number];
 
 /** Kroki suwaka czasu (min). Do 1 h co 5 min, dalej co 15 min, żeby odstęp 30 min–1 h nie był ściśnięty. */
 export const DURATION_STOPS_MIN = [
-  5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210, 225,
-  240,
+  5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 75, 90, 105, 120, 135, 150, 165, 180, 195, 210,
+  225, 240,
 ];
 export const DURATION_MIN_MIN = DURATION_STOPS_MIN[0];
 export const DURATION_MAX_MIN = DURATION_STOPS_MIN[DURATION_STOPS_MIN.length - 1];
