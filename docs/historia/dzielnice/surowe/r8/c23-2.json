@@ -1,0 +1,281 @@
+[
+  {
+    "id": "rakow-warszawa",
+    "nazwa": "Raków",
+    "name_en": "Raków",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.197319, "lon": 20.950156,
+    "lokalizacja": "przyblizona",
+    "okres": "1231–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze wzmianki o miejscowości pochodzą z 1231, kiedy rycerz Gotard dostał od Konrada mazowieckiego wieś Rakowo.",
+      "Wieś lokował Bolesław IV warszawski w 1447 na prawie chełmińskim.",
+      "W 1528 wieś liczyła 6 łanów powierzchni.",
+      "Według danych z 1827 Raków liczył 185 mieszkańców.",
+      "W 1923 przez wschodnią część Rakowa, Szosą Krakowską, poprowadzono linię tramwajową do nowo powstających zakładów lotniczych Škody.",
+      "1927 pomiędzy Rakowem a Wiktorynem poprowadzono linię Elektrycznych Kolei Dojazdowych prowadzącą do Grodziska Mazowieckiego.",
+      "W 1936 Raków przeszedł z parafii służewskiej do nowo erygowanej parafii św. Franciszka z Asyżu na Okęciu.",
+      "Od 1951 w skład Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Raków is a former village, today a housing estate and MSI area in the Włochy district of Warsaw. It is first mentioned in 1231, when the knight Gotard received the village of Rakowo from Duke Konrad of Masovia. By the 19th century it had been overtaken by neighbouring Okęcie, and it was incorporated into Warsaw in 1951.",
+    "ludzie": [
+      {"kto": "Gotard", "rola": "rycerz, który w 1231 otrzymał od Konrada mazowieckiego wieś Rakowo", "wiki": null},
+      {"kto": "Konrad mazowiecki", "rola": "książę, który nadał wieś Rakowo rycerzowi Gotardowi", "wiki": null},
+      {"kto": "Bolesław IV warszawski", "rola": "lokował wieś w 1447 na prawie chełmińskim", "wiki": null}
+    ],
+    "dawne_nazwy": ["Rakowo"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Raków (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Rak%C3%B3w_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek obszaru MSI, przybliżone)."
+  },
+  {
+    "id": "staw-sadurka",
+    "nazwa": "Staw Sadurka",
+    "name_en": "Sadurka Pond",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ok. ul. Komitetu Obrony Robotników",
+    "adres_historyczny": null,
+    "lat": 52.181666666, "lon": 20.9675,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1865 r. w pobliżu stawu wybudowano nieistniejący obecnie dwór szlachecki dla Łabęckich autorstwa architekta Bolesława Orłowskiego.",
+      "Program Ochrony Środowiska dla m. st. Warszawy na lata 2009–2012 z uwzględnieniem perspektywy do 2016 r. podaje, że staw ma powierzchnię 0,6867 ha.",
+      "W okolicy znajduje się niewielki park z tablicami upamiętniającymi polskich żołnierzy poległych podczas szturmu na Okęcie w dniu 12 września 1939 r.",
+      "W pobliżu znajdują się tablice pracowników ówczesnych zakładów lotniczych zamordowanych przez Niemców w dniu 15 sierpnia 1942 r."
+    ],
+    "ciekawostki": [
+      "Staw wziął swoją nazwę od rzeki Sadurki, która do XIX w. przepływała przez Warszawę. Jest jedną z nielicznych pozostałości po tej rzece."
+    ],
+    "summary_en": "Sadurka is a small pond in the Włochy district of Warsaw, next to Chopin Airport and the Okęcie housing estate. It takes its name from the Sadurka river, which once flowed through Warsaw. Nearby is a small park with plaques commemorating Polish soldiers who died in the assault on Okęcie on 12 September 1939.",
+    "ludzie": [
+      {"kto": "Bolesław Orłowski", "rola": "architekt dworu wybudowanego w 1865 w pobliżu stawu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Staw Sadurka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Sadurka (staw)", "url": "https://pl.wikipedia.org/wiki/Sadurka_%28staw%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z opisu położenia (ulica Komitetu Obrony Robotników jest w pobliżu, nie podano numeru). Współrzędne z nagłówka WSPÓŁRZĘDNE."
+  },
+  {
+    "id": "salomea-warszawa",
+    "nazwa": "Salomea",
+    "name_en": "Salomea",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.189767, "lon": 20.926722,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "XIX w. – wydzielenie ze wsi Opacz osady Salomea, nazwanej tak najpewniej na cześć Salomei ze Zwolińskich Kalinowskiej (ok. 1772-1852), żony Kajetana Dominika, właściciela dóbr Opacz Wielka.",
+      "1927 – przeprowadzenie przez Salomeę torów Elektrycznej Kolei Dojazdowej; wieś uzyskuje połączenie z Warszawą.",
+      "1951 – włączenie do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Salomea is a former village, today a housing estate and MSI area in the Włochy district of Warsaw. It was separated from the village of Opacz in the 19th century and named most likely after Salomea Kalinowska, wife of Kajetan Dominik Kalinowski. The Electric Suburban Railway line through the village, opened in 1927, connected it with Warsaw.",
+    "ludzie": [
+      {"kto": "Salomea ze Zwolińskich Kalinowska", "rola": "żona Kajetana Dominika Kalinowskiego, patronka nazwy osady (ok. 1772–1852)", "wiki": null},
+      {"kto": "Kajetan Dominik Kalinowski", "rola": "właściciel dóbr Opacz Wielka", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Salomea (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Salomea_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla)."
+  },
+  {
+    "id": "schronisko-na-paluchu",
+    "nazwa": "Schronisko na Paluchu im. Jana Lityńskiego",
+    "name_en": "Na Paluchu Animal Shelter",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Paluch 2",
+    "adres_historyczny": null,
+    "lat": 52.156415, "lon": 20.961557,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Schronisko zajmuje powierzchnię 3 ha, z czego 1 ha należy do miasta, a pozostałe 2 ha są dzierżawione od Przedsiębiorstwa Państwowego „Porty Lotnicze”.",
+      "W latach 2010–2011 odnotowano największą liczbę zwierząt przebywających w schronisku – blisko 2400 psów i kotów.",
+      "Od 2015 roku schronisko organizuje akcję „Adoptuj Warszawiaka”.",
+      "W schronisku pracuje 63 etatowych pracowników, a działa tu 290 wolontariuszy podzielonych na 20 grup.",
+      "W 2022 roku nazwę schroniska zmieniono ze Schroniska dla Bezdomnych Zwierząt na Schronisko na Paluchu im. Jana Lityńskiego, a przy wejściu odsłonięto tablicę upamiętniającą patrona, który zginął ratując swojego psa."
+    ],
+    "ciekawostki": [
+      "Każde zwierzę trafiające do schroniska jest ewidencjonowane, przechodzi badanie lekarskie oraz zostaje zaczipowane, a następnie przechodzi przez 15-dniowy okres kwarantanny."
+    ],
+    "summary_en": "The Na Paluchu animal shelter at ul. Paluch 2 in the Włochy district is the largest such institution in Warsaw. It was moved to Paluch in the 1970s and in 2022 was renamed after Jan Lityński. In 2010–2011 it held almost 2,400 dogs and cats at once.",
+    "ludzie": [
+      {"kto": "Jan Lityński", "rola": "patron schroniska; w 2022 przy wejściu odsłonięto tablicę upamiętniającą go jako człowieka, który zginął ratując swojego psa", "wiki": null}
+    ],
+    "dawne_nazwy": ["Schronisko dla Bezdomnych Zwierząt „Na Paluchu”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Schronisko na Paluchu im. Jana Lityńskiego", "url": "https://pl.wikipedia.org/wiki/Schronisko_na_Paluchu_im._Jana_Lity%C5%84skiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE, lokalizacja dokładna. Artykuł o schronisku jako miejscu; działalność opisana skrótowo."
+  },
+  {
+    "id": "solipse",
+    "nazwa": "Solipse",
+    "name_en": "Solipse",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.201972, "lon": 20.907306,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze wzmianki o miejscowości pochodzą z XIV wieku.",
+      "Wieś szlachecka Solipsi w 1580 znajdowała się w powiecie warszawskim ziemi warszawskiej województwa mazowieckiego.",
+      "Osada zaczęła rozrastać się, kiedy jej właścicielem został Stanisław Rakowski, który był również właścicielem sąsiednich Włoch."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Solipse is a former village, today a housing estate in the Włochy district of Warsaw. It is first mentioned in the 14th century. Its growth was blocked by the Russian authorities.",
+    "ludzie": [
+      {"kto": "Stanisław Rakowski", "rola": "właściciel osady Solipse, który był też właścicielem sąsiednich Włoch", "wiki": null}
+    ],
+    "dawne_nazwy": ["Solipsy", "Solipsi"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Solipse", "url": "https://pl.wikipedia.org/wiki/Solipse"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla)."
+  },
+  {
+    "id": "stare-wlochy",
+    "nazwa": "Stare Włochy",
+    "name_en": "Stare Włochy",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.201389, "lon": 20.9225,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–1951",
+    "istnieje": true,
+    "fakty": [
+      "Do 1930 roku teren ten należał do gminy Skorosze w powiecie warszawskim w woj. warszawskim.",
+      "15 kwietnia 1930 wszedł w skład nowo utworzonej gminy Włochy w tymże powiecie.",
+      "20 października 1933 utworzono gromadę Włochy Stare w granicach gminy Włochy, składającą się z miejscowości: Włochy Nowe Północne, kolonia Wiktoryn, wieś Solipse i fort nr 5 Solipse.",
+      "1 kwietnia 1939 osadzie Włochy, składającej się z gromad Stare Włochy i Włochy Nowe, nadano status miasta.",
+      "Miasto Włochy zniesiono 15 maja 1951 po włączeniu do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stare Włochy is a former rural community, now part of the Włochy housing estate in Warsaw's Włochy district. It became part of the Włochy commune in 1930. On 1 April 1939 the town of Włochy was granted city status, and it was abolished on 15 May 1951 when it was incorporated into Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": ["Włochy Stare"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stare Włochy", "url": "https://pl.wikipedia.org/wiki/Stare_W%C5%82ochy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE, przybliżone."
+  },
+  {
+    "id": "staw-koziorozca",
+    "nazwa": "Staw Koziorożca",
+    "name_en": "Koziorożec Pond",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Koziorożca",
+    "adres_historyczny": null,
+    "lat": 52.209444444, "lon": 20.911666666,
+    "lokalizacja": "przyblizona",
+    "okres": "przed II wojną światową–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw jest glinianką, powstałą w wyniku zalania wodą wyrobiska gliny, którego eksploatacja zakończyła się przed II wojną światową.",
+      "Pierwsza cegielnia we Włochach powstała z inicjatywy Koelichenów w 1842 r.",
+      "Zbiornik wodny wcześniej nosił nazwę Kilcheniak od nazwiska ostatnich właścicieli majątku Włochy – Koelichenów.",
+      "Według Programu Ochrony Środowiska dla m. st. Warszawy na lata 2009–2012 powierzchnia zbiornika wynosi 2,0643 hektara, a średnia głębokość 2,65 m."
+    ],
+    "ciekawostki": [
+      "Obecna wielkość stawu wynika z jego połączenia z mniejszą glinianką – w miejscu byłej grobli znajduje się obecnie mostek nad stawem."
+    ],
+    "summary_en": "Koziorożec Pond, also called Northern Pond, is a former clay pit in the Włochy district of Warsaw, next to the Nowe Włochy estate, and part of a park of 4.71 ha. It was formed by flooding a clay pit after the clay extraction ended before World War II. Earlier it was called Kilcheniak, after the Koelichen family, the last owners of the Włochy estate.",
+    "ludzie": [
+      {"kto": "Koelichenowie", "rola": "ostatni właściciele majątku Włochy; z ich inicjatywy powstała pierwsza cegielnia we Włochach w 1842 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kilcheniak"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw Koziorożca", "url": "https://pl.wikipedia.org/wiki/Staw_Kozioro%C5%BCca"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek stawu). Adres z nazwy ulicy w opisie położenia, bez numeru."
+  },
+  {
+    "id": "staw-zbarski",
+    "nazwa": "Staw Zbarski",
+    "name_en": "Zbarż Pond",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ok. ul. Wirażowej",
+    "adres_historyczny": null,
+    "lat": 52.18, "lon": 20.983333333,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś (rekultywacja 1998)",
+    "istnieje": true,
+    "fakty": [
+      "Program Ochrony Środowiska dla m. st. Warszawy na lata 2009-2012 podaje, że staw ma powierzchnię 0,2727 ha.",
+      "Zbiornik wodny jest prawdopodobnie jedynym powstałym naturalnie na terenie dzielnicy, położony jest w obniżeniu terenu. W przeszłości znajdował się na terenie wsi Zbarż.",
+      "Staw przeszedł rekultywację w 1998 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zbarż Pond is a small pond in the Włochy district of Warsaw, near Wirażowa street and the S79 expressway. It is probably the only natural water body in the district and lies on the site of the former village of Zbarż. It was reclaimed in 1998.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zbarż"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw Zbarski", "url": "https://pl.wikipedia.org/wiki/Staw_Zbarski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE. Adres z nazwy ulicy w opisie położenia, bez numeru."
+  },
+  {
+    "id": "stawy-cietrzewia",
+    "nazwa": "Stawy Cietrzewia",
+    "name_en": "Cietrzew Ponds",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ok. ul. Cietrzewia",
+    "adres_historyczny": null,
+    "lat": 52.200555555, "lon": 20.923611111,
+    "lokalizacja": "przyblizona",
+    "okres": "1842–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza cegielnia na terenie Włoch powstała w 1842 r.",
+      "Głównym inicjatorem rozwoju cegielni na tym terenie był Andrzej Koelichen (1791–1861), właściciel majątku włochowskiego.",
+      "Średnia głębokość stawów wynosi 4,1 m, a łączna powierzchnia lustra wody 4,16 ha."
+    ],
+    "ciekawostki": [
+      "Tak powstały również inne włochowskie stawy, jak Staw Koziorożca czy Glinianki Załuskie."
+    ],
+    "summary_en": "The Cietrzew Ponds, also called Cietrzew Clay Pits, are two flooded clay pits in the Włochy district of Warsaw, in the Stare Włochy area, with a combined area of over 4 ha. They were formed after clay extraction for brickmaking, which began in 1842 under Andrzej Koelichen, owner of the Włochy estate.",
+    "ludzie": [
+      {"kto": "Andrzej Koelichen", "rola": "właściciel majątku włochowskiego, główny inicjator rozwoju cegielni (1791–1861)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Glinianki Cietrzewia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stawy Cietrzewia", "url": "https://pl.wikipedia.org/wiki/Stawy_Cietrzewia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek zespołu stawów)."
+  }
+]

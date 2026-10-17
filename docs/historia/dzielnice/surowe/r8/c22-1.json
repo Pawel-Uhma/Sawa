@@ -1,0 +1,248 @@
+[
+  {
+    "id": "powsin",
+    "nazwa": "Powsin",
+    "name_en": "Powsin",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.129444,
+    "lon": 21.112222,
+    "lokalizacja": "przyblizona",
+    "okres": "XIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze wzmianki o Powsinie, noszącym wtedy nazwę Powsino, pojawiły się w XIII wieku.",
+      "W 1398 Elżbieta Ciołkowa ufundowała w Powsinie drewniany kościół pod wezwaniem św. Andrzeja Apostoła i św. Elżbiety.",
+      "W latach dwudziestych XVIII wieku Powsin i okolice kupiła Elżbieta Helena Sieniawska.",
+      "W 1720 powstał miejscowy cmentarz.",
+      "W 1725 ufundowany został kościół św. Elżbiety, stojący w centrum Powsina.",
+      "W latach 1803–1815 był tu proboszczem Jan Paweł Woronicz.",
+      "Woronicz był m.in. inicjatorem powstania w 1810 szkoły parafialnej i parafialnego ośrodka pomocy.",
+      "W 1951 Wilanów (wraz z nim Powsin) został włączony do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Powsin is a settlement in the Wilanów district of Warsaw. First mentioned in the 13th century as Powsino, it had a wooden church of St. Andrew and St. Elizabeth from 1398 and was incorporated into Warsaw in 1951.",
+    "ludzie": [
+      {"kto": "Jan Paweł Woronicz", "rola": "proboszcz w Powsinie w latach 1803–1815", "wiki": null}
+    ],
+    "dawne_nazwy": ["Powsino"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Powsin", "url": "https://pl.wikipedia.org/wiki/Powsin"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Autor kościoła z 1725 r. nie jest w zdaniu wymieniony z nazwiska; wpisana Elżbieta Helena Sieniawska wynika z poprzedniego zdania akapitu."
+  },
+  {
+    "id": "powsinek",
+    "nazwa": "Powsinek",
+    "name_en": "Powsinek",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.15,
+    "lon": 21.1,
+    "lokalizacja": "przyblizona",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1528 roku powierzchnia wsi Powsinek wynosiła około 170 hektarów (10 łanów).",
+      "W 1661 w miejscowości były 22 domy.",
+      "23 kwietnia 1677 roku Milanów wraz z Powsinkiem zostały zakupione przez koniuszego wielkiego koronnego Marka Matczyńskiego dla Jana III Sobieskiego za 35 000 florenów.",
+      "W 1720 Konstanty Sobieski sprzedał posiadłość wraz z Wilanowem i przyległymi terenami Elżbiecie Sieniawskiej za 506 666 florenów i 20 groszy.",
+      "Miejscowość w 1775 liczyła 38 gospodarstw, a jej powierzchnia wynosiła 328 hektarów.",
+      "W 1905 znajdowało się tu 57 domów i 4 sklepy, miejscowość liczyła 606 mieszkańców.",
+      "W 1921 było 110 domów i 900 mieszkańców.",
+      "W dniu 14 maja 1951 rozporządzeniem Rady Ministrów osiedle wraz z resztą gminy Wilanów zostało włączone w granice administracyjne Warszawy."
+    ],
+    "ciekawostki": [
+      "W 2002 roku ustanowiono tu użytek ekologiczny „Powsinek” o powierzchni 2,8518 ha w celu ochrony siedlisk motyla modraszka telejusa."
+    ],
+    "summary_en": "Powsinek is a former village and today a settlement in the Wilanów district of Warsaw. Bought for King Jan III Sobieski in 1677, it grew from 22 houses in 1661 to 110 houses and 900 residents in 1921, and was incorporated into Warsaw in 1951.",
+    "ludzie": [
+      {"kto": "Jan III Sobieski", "rola": "nabywca Milanowa i Powsinka w 1677 r. (zakup za pośrednictwem Marka Matczyńskiego)", "wiki": null},
+      {"kto": "Marek Matczyński", "rola": "koniuszy wielki koronny, który w 1677 r. dokonał zakupu dla Jana III Sobieskiego", "wiki": null},
+      {"kto": "Elżbieta Helena Sieniawska", "rola": "kupiła posiadłość w 1720 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Powszyno minor", "Powsino Minor", "Powsino Prutenorum", "Powszynko", "Powszynek"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Powsinek", "url": "https://pl.wikipedia.org/wiki/Powsinek"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje obszar MSI i osiedle; autor zakupu z 1677 r. to Marek Matczyński działający dla Sobieskiego, a sprzedawca to Stanisław Krzycki."
+  },
+  {
+    "id": "rezerwat-przyrody-las-natolinski",
+    "nazwa": "Las Natoliński",
+    "name_en": "Natolin Forest",
+    "typ": "park",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1422,
+    "lon": 21.0789,
+    "lokalizacja": "dokladna",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pod koniec XVII wieku król Jan III Sobieski utworzył na tym obszarze królewski zwierzyniec.",
+      "August II Mocny przekształcił zwierzyniec na miejsce hodowli oraz polowań na bażanty; miejsce uzyskało nazwę Bażantarnia, która funkcjonowała do początków XIX wieku.",
+      "Książę August Czartoryski urządził w Bażantarni wiejską rezydencję w 1780 roku.",
+      "Nazwa Bażantarnia funkcjonowała do 1807 roku, kiedy została zmieniona na Natolin.",
+      "W czasie II wojny światowej na terenie obecnego rezerwatu rozstrzelano 15 mężczyzn, była to jedna z pierwszych egzekucji w okupowanej przez Niemców Warszawie.",
+      "Ciała ofiar ekshumowano w 1971 roku, a w 2022 roku upamiętniono je pomnikiem ustawionym przy ogrodzeniu Kolegium Europejskiego.",
+      "Rezerwat został utworzony w 1991 roku."
+    ],
+    "ciekawostki": [
+      "Nazwa Natolin nawiązywała do urodzonej w 1807 roku córki Aleksandra i Anny Potockich – Natalii."
+    ],
+    "summary_en": "Las Natoliński is a forest nature reserve in Wilanów created in 1991, on the site of a royal game preserve set up by Jan III Sobieski. It was called Bażantarnia until 1807 and was the scene of one of the first mass executions in occupied Warsaw in 1939–1945.",
+    "ludzie": [
+      {"kto": "Jan III Sobieski", "rola": "utworzył na tym obszarze królewski zwierzyniec pod koniec XVII wieku", "wiki": null},
+      {"kto": "August II Mocny", "rola": "przekształcił zwierzyniec w miejsce hodowli i polowań na bażanty", "wiki": null},
+      {"kto": "August Czartoryski", "rola": "urządził w Bażantarni wiejską rezydencję w 1780 roku", "wiki": null},
+      {"kto": "Stanisław Kostka Potocki", "rola": "za jego czasów powstał w Bażantarni park krajobrazowy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bażantarnia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rezerwat przyrody Las Natoliński", "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Las_Natoli%C5%84ski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica i współrzędne z nagłówka. Pozycja pomnika z 2022 r. to przy ogrodzeniu Kolegium Europejskiego, nie w dokładnym punkcie podanych współrzędnych."
+  },
+  {
+    "id": "morysin",
+    "nazwa": "Park Morysin (rezerwat przyrody Morysin)",
+    "name_en": "Morysin Park",
+    "typ": "park",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.17339,
+    "lon": 21.09978,
+    "lokalizacja": "dokladna",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W początku XIX wieku, za rządów Stanisława Kostki Potockiego, północną część Morysina przekształcono w park romantyczny i nazwano go na cześć wnuka Potockiego, Maurycego Eustachego, zwanego zdrobniale Morysiem.",
+      "W parku w 1811 r. wzniesiono pałacyk z rotundą wzorowaną na świątyni Westy w Tivoli.",
+      "W 1825 r. w parku powstało tzw. oraculum, czyli figura pogańskiego bóstwa między dwoma kolumnami.",
+      "W 1846 r. na polach morysińskich wybudowano ceglaną neogotycką bramę, która zamykała wysadzaną drzewami aleję położoną na osi pałacu w Wilanowie.",
+      "Park pełnił rolę rekreacyjno-wypoczynkową dla właścicieli pałacu i ich gości do 1939 r., kiedy zaczęła się jego dewastacja.",
+      "Po 1945 r. park włączono do Muzeum Narodowego w Warszawie, a od 1995 r. jest własnością Muzeum Pałacu Króla Jana III w Wilanowie.",
+      "W 1973 r. park został wpisany do rejestru zabytków województwa warszawskiego.",
+      "Rezerwat przyrody Morysin utworzono w 1996 r."
+    ],
+    "ciekawostki": [
+      "Rotunda pałacyku nawiązuje do świątyni Herkulesa na Forum Boarium w Rzymie (w części źródeł podawana jest też świątynia Westy w Tivoli)."
+    ],
+    "summary_en": "Morysin is a romantic park next to the Wilanów Palace, named after Maurycy Eustachy Potocki. It has a 1811 small palace with a rotunda, a 1825 oraculum, and an 1846 brick gate, and it has been a nature reserve since 1996.",
+    "ludzie": [
+      {"kto": "Stanisław Kostka Potocki", "rola": "właściciel dóbr wilanowskich, za jego rządów przekształcono północną część Morysina w park", "wiki": null},
+      {"kto": "Maurycy Eustachy Potocki", "rola": "wnuk Stanisława Kostki Potockiego, od którego park wziął nazwę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rezerwat przyrody Morysin", "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Morysin"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten rekord dotyczy parku, który jest częścią rezerwatu. W artykule imię występuje w formie „Maurycego Eustachego” (dopełniacz); w rekordzie podano mianownik."
+  },
+  {
+    "id": "row-wolicki",
+    "nazwa": "Rów Wolicki",
+    "name_en": "Wolicki Ditch",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Franciszka Klimczaka",
+    "adres_historyczny": null,
+    "lat": 52.156666666,
+    "lon": 21.062222222,
+    "lokalizacja": "dokladna",
+    "okres": "XX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rów został przebudowany w okresie 2004–2006 przez Prokom Investments w ramach realizacji projektu Miasteczka Wilanów.",
+      "Przy przebudowie wzdłuż kanału i ulicy Franciszka Klimczaka zaprojektowano zieleń parkową mającą nawiązywać pejzażem do mazowieckich łąk.",
+      "Rów zasilany jest wodami gruntowymi spod skarpy warszawskiej z terenu dawnej wsi Wolica.",
+      "Rozbudowa rowu miała na celu odciążenie Potoku Służewieckiego w zakresie odprowadzania wody deszczowej z terenu Wilanowa."
+    ],
+    "ciekawostki": [
+      "Nad brzegiem rowu znajdują się dwie wierzby kruche chronione jako pomniki przyrody."
+    ],
+    "summary_en": "Wolicki Ditch is a drainage channel in the Miasteczko Wilanów area, rebuilt in 2004–2006 by Prokom Investments as part of the Miasteczko Wilanów project. It was built to relieve the Służewiec Stream of rainwater from Wilanów.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kanał Wolicki", "Rów Klimczaka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rów Wolicki", "url": "https://pl.wikipedia.org/wiki/R%C3%B3w_Wolicki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord o urządzeniu wodnym, wpisany ze względu na datowaną przebudowę. Adres to przybliżony przebieg ulicy Klimczaka."
+  },
+  {
+    "id": "staw-poludniowy",
+    "nazwa": "Staw Południowy",
+    "name_en": "South Pond (Świrlik)",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.163333333,
+    "lon": 21.091666666,
+    "lokalizacja": "dokladna",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W czasach, kiedy właścicielem pałacu był Jan III Sobieski, staw pełnił funkcje gospodarcze, hodowano w nim ryby.",
+      "W latach 70. XVIII wieku na zlecenie Izabeli Lubomirskiej architekt Szymon Bogumił Zug przearanżował istniejący ogród na park w stylu angielskim.",
+      "Kolejne zmiany otoczenia akwenu miały miejsce w XIX wieku z inicjatywy Stanisława Kostki Potockiego.",
+      "Za czasów Potockiego powiększono Park Południowy m.in. o Górę Bachusa.",
+      "W XX wieku kompozycja parku uległa zatarciom w wyniku kolejnych modernizacji.",
+      "Zgodnie z decyzją Mazowieckiego Konserwatora Zabytków z dnia 07.03.2019 nr W/829/2019 planowane jest odtworzenie XIX-wiecznego układu kompozycyjnego parku do 2025 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "South Pond (Staw Południowy, also called Świrlik) lies in the Ogród Wilanowski gardens south of the palace. Used for fish farming under Jan III Sobieski, it became part of an English-style park in the 1770s, and the 19th-century layout is to be restored.",
+    "ludzie": [
+      {"kto": "Jan III Sobieski", "rola": "właściciel pałacu, za jego czasów staw hodował ryby", "wiki": null},
+      {"kto": "Izabela Lubomirska", "rola": "zleciła w latach 70. XVIII w. przearanżowanie ogrodu na park w stylu angielskim", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "architekt, który przearanżował ogród na park w stylu angielskim", "wiki": null},
+      {"kto": "Stanisław Kostka Potocki", "rola": "inicjował zmiany otoczenia stawu w XIX wieku; nad brzegami stawu znajdują się jego obelisk z urną i sarkofag", "wiki": null}
+    ],
+    "dawne_nazwy": ["Świrlik"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw Południowy", "url": "https://pl.wikipedia.org/wiki/Staw_Po%C5%82udniowy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok 1770 jako przybliżony, pisze o „latach 70. XVIII wieku”."
+  },
+  {
+    "id": "staw-zawadowski",
+    "nazwa": "Staw Zawadowski",
+    "name_en": "Zawadowski Pond",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Syta (osiedle)",
+    "adres_historyczny": null,
+    "lat": 52.176778,
+    "lon": 21.105088,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zbiornik wodny był w 1938 r. częścią rzeki Wilanówki, której jest dziś starorzeczem.",
+      "Staw z korytem rzeki łączy kanał.",
+      "Według „Programu Ochrony Środowiska dla m. st. Warszawy na lata 2009–2012” staw leży na tarasie zalewowym i ma powierzchnię 0,7902 ha."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zawadowski Pond is a former channel of the Wilanówka river in the Zawady area of Wilanów, on the Syta street estate. It was part of the river as late as 1938.",
+    "ludzie": [],
+    "dawne_nazwy": ["Jezioro Zawadowskie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw Zawadowski", "url": "https://pl.wikipedia.org/wiki/Staw_Zawadowski"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Mało datowanych faktów w artykule; rekord granicznie kwalifikuje się jako miejsce z historią. Adres to przybliżona nazwa osiedla przy ul. Sytej."
+  }
+]

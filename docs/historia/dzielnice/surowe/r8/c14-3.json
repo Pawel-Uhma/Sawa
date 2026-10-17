@@ -1,0 +1,314 @@
+[
+  {
+    "id": "stalowa-zajezdnia-autobusowa",
+    "nazwa": "Zajezdnia autobusowa Stalowa",
+    "name_en": "Stalowa Bus Depot",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Stalowa 77",
+    "adres_historyczny": null,
+    "lat": 52.265,
+    "lon": 21.0458,
+    "lokalizacja": "dokladna",
+    "okres": "1985–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zajezdnia powstała w 1985 roku.",
+      "W latach 1993–1998 na jej terenie działała montownia autobusów marki Ikarus.",
+      "W 2020 roku zajezdnia otrzymała 50 ze 130 Solarisów Urbino 18 IV FL Electric zamówionych przez MZA w 2019 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stalowa is a bus depot of Miejskie Zakłady Autobusowe on Stalowa Street in Praga-Północ, opened in 1985. In 1993–1998 it hosted an Ikarus bus assembly plant.",
+    "ludzie": [],
+    "dawne_nazwy": ["Oddział Przewozów R-4 „Stalowa”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stalowa (zajezdnia autobusowa)", "url": "https://pl.wikipedia.org/wiki/Stalowa_%28zajezdnia_autobusowa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stara-praga",
+    "nazwa": "Stara Praga",
+    "name_en": "Old Praga",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.24847,
+    "lon": 21.03667,
+    "lokalizacja": "przyblizona",
+    "okres": "1432–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1432 – pierwsza wzmianka o wsi szlacheckiej Praga.",
+      "1643 – fundacja z dotacji króla Władysława IV i jego rodziny kaplicy wzorowanej na Santa Casa w Loreto, wraz ze słynącą łaskami figurą Matki Boskiej Loretańskiej.",
+      "1862 – budowa dworca kolei Petersburskiej (obecnie Warszawa Wileńska).",
+      "1864 – oddanie do użytku stałego mostu inż. Stanisława Kierbedzia.",
+      "1888–1891 – wzniesienie katolickiego kościoła parafialnego św. Floriana.",
+      "1916 – na Pradze mieszka około 90 000 mieszkańców.",
+      "14 września 1944 – wyzwolenie Pragi."
+    ],
+    "ciekawostki": [
+      "W 2003 ulica Ząbkowska została uznana w plebiscycie Gazety Wyborczej za miejsce magiczne."
+    ],
+    "summary_en": "Stara Praga is the central, mostly early 20th-century and interwar part of Praga-Północ, around plac Wileński. It has a rare set of well-preserved prewar urban fabric and is now a popular artistic district.",
+    "ludzie": [
+      {"kto": "Adam Kazanowski", "rola": "właściciel połowy dóbr praskich w latach 1637–1647", "wiki": null}
+    ],
+    "dawne_nazwy": ["Praga Biskupia", "Praga Książęca"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stara Praga", "url": "https://pl.wikipedia.org/wiki/Stara_Praga"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI; współrzędne to przybliżony środek obszaru. Oś rejonu to ul. Targowa."
+  },
+  {
+    "id": "stara-synagoga-nowopraska",
+    "nazwa": "Stara Synagoga Nowopraska",
+    "name_en": "Old Nowa Praga Synagogue",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Bródnowska 8",
+    "lat": 52.2643858,
+    "lon": 21.0404769,
+    "lokalizacja": "dokladna",
+    "okres": "nieznany–ok. 1900",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga znajdowała się przy ul. Bródnowskiej 8 na Nowej Pradze.",
+      "Wzniosła ją liczące około 20 rodzin społeczność żydowska Nowej Pragi na gruncie podarowanym przez Ksawerego Konopackiego.",
+      "Dokładna data budowy nie jest znana.",
+      "Zburzono ją około roku 1900 pod budowę nowej, murowanej synagogi dla powiększającej się gminy żydowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The old synagogue of Nowa Praga stood at Bródnowska 8 and was built by about 20 Jewish families on land donated by Ksawery Konopacki. It was demolished around 1900 to make way for a new masonry synagogue.",
+    "ludzie": [
+      {"kto": "Ksawery Konopacki", "rola": "podarował grunt pod synagogę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stara Synagoga Nowopraska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Stara_Synagoga_Nowopraska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "synagoga-gmachu-wychowawczego",
+    "nazwa": "Synagoga Gmachu Wychowawczego",
+    "name_en": "Synagogue of the Educational Building",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jagiellońska 28",
+    "adres_historyczny": null,
+    "lat": 52.2525505,
+    "lon": 21.0347135,
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga została założona w budynku gmachu Wychowawczego Warszawskiej Gminy Starozakonnych im. Michała Bergsona.",
+      "Powstała wraz z budynkiem w latach 1911–1914.",
+      "Podczas II wojny światowej hitlerowcy zdewastowali synagogę.",
+      "Po zakończeniu wojny główną salę modlitewną przebudował na swoje potrzeby Teatr Żydowski.",
+      "Od 1953 roku mieści się w niej Państwowy Teatr Lalki i Aktora „Baj”."
+    ],
+    "ciekawostki": [
+      "Synagoga była przeznaczona głównie dla personelu i wychowanków ośrodka, ale pewnie korzystali z niej również okoliczni mieszkańcy."
+    ],
+    "summary_en": "A synagogue founded in the 1911–1914 Educational Building of the Warsaw Jewish Community on Jagiellońska Street. It was devastated in the war, and since 1953 its main prayer hall has housed the Baj puppet and actor theatre.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Synagoga Gmachu Wychowawczego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Gmachu_Wychowawczego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Synagoga już nie działa; budynek nadal stoi i pełni funkcję teatru."
+  },
+  {
+    "id": "synagoga-icchaka-hersza-jahrmana",
+    "nazwa": "Synagoga Icchaka Hersza Jahrmana",
+    "name_en": "Icchak Hersz Jahrman Synagogue",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Ząbkowska 11 (oficyna)",
+    "adres_historyczny": null,
+    "lat": 52.2533544,
+    "lon": 21.0399892,
+    "lokalizacja": "dokladna",
+    "okres": "po 1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Synagoga została zbudowana po 1880 roku z inicjatywy i funduszy właściciela kamienicy, Icchaka Hersza Jahrmana.",
+      "Podczas II wojny światowej Niemcy zdewastowali synagogę.",
+      "Po zakończeniu wojny w jej wnętrzu urządzono zakład stolarski.",
+      "Latem 2000 roku Janusz Sujecki z Zespołu Opiekunów Kulturowego Dziedzictwa Warszawy odkrył we wnętrzach pozostałości polichromii.",
+      "18 stycznia 2002 roku pomieszczenia modlitewni zostały wynajęte przez gminę Warszawa-Centrum Fundacji Cmentarza Żydowskiego „Gęsia”.",
+      "Obecnie modlitewnia pozostaje nieużytkowana."
+    ],
+    "ciekawostki": [
+      "W jej wnętrzu znajdują się jedne z dwóch zachowanych malowideł synagogalnych na Mazowszu."
+    ],
+    "summary_en": "A small prayer house in the rear wing of a tenement at Ząbkowska 11, founded by its owner Icchak Hersz Jahrman after 1880. It survived the war with fragments of its wall paintings, rediscovered in 2000, and is now unused.",
+    "ludzie": [
+      {"kto": "Icchak Hersz Jahrman", "rola": "właściciel kamienicy, fundator synagogi", "wiki": null},
+      {"kto": "Janusz Sujecki", "rola": "z Zespołu Opiekunów Kulturowego Dziedzictwa Warszawy, odkrył polichromię w 2000", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Synagoga Icchaka Hersza Jahrmana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Icchaka_Hersza_Jahrmana_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "synagoga-praska",
+    "nazwa": "Synagoga Praska",
+    "name_en": "Praga Synagogue",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ok. ul. Jagiellońskiej 28 (plac zabaw przedszkola nr 163)",
+    "adres_historyczny": "skrzyżowanie ulic Petersburskiej (obecnie Jagiellońska) i Szerokiej (ks. I. Kłopotowskiego)",
+    "lat": 52.25138889,
+    "lon": 21.03472222,
+    "lokalizacja": "dokladna",
+    "okres": "co najmniej 1780–połowa XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Drewniana synagoga pod numerem 26 istniała co najmniej od 1780 i została najprawdopodobniej zniszczona w 1791 podczas rzezi Pragi.",
+      "Murowaną synagogę w formie rotundy, ufundowaną przez Gabriela Bereksohna, według projektu Józefa Lessela ukończono w 1836.",
+      "Podczas II wojny światowej Niemcy zdewastowali synagogę i urządzili w jej budynku odwszalnię.",
+      "21 lipca 1945 odbyło się w niej pierwsze powojenne nabożeństwo.",
+      "9 marca 1949 opinią Urzędu Konserwatorskiego synagoga została uznana za zabytek.",
+      "W 1961 władze miasta nakazały zburzyć bożnicę, uzasadniając decyzję fatalnym stanem budowli.",
+      "Na miejscu synagogi powstał plac zabaw dla dzieci z przedszkola nr 163."
+    ],
+    "ciekawostki": [
+      "Była jedną z pierwszych w Europie okrągłych synagog."
+    ],
+    "summary_en": "The Praga Synagogue was a rare round synagogue on the corner of today's Jagiellońska and ks. I. Kłopotowski streets. Completed in 1836, it was damaged in the war and demolished in 1961; a playground now occupies the site.",
+    "ludzie": [
+      {"kto": "Gabriel Bereksohn", "rola": "fundator murowanej synagogi", "wiki": null},
+      {"kto": "Józef Lessel", "rola": "architekt projektu synagogi", "wiki": null}
+    ],
+    "dawne_nazwy": ["Petersburska", "Szeroka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Synagoga Praska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Praska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje różne daty rozbiórki (1955 lub 1961); w faktach przyjęto 1961 jako decyzję władz miasta. Dawne nazwy to ulice, przy których stała."
+  },
+  {
+    "id": "szkola-otwocka-3",
+    "nazwa": "Szkoła przy ul. Otwockiej 3",
+    "name_en": "School at Otwocka 3",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Otwocka 3",
+    "adres_historyczny": null,
+    "lat": 52.259389,
+    "lon": 21.057556,
+    "lokalizacja": "dokladna",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach szkolny został wybudowany w latach 1925–1927 w tzw. stylu magistrackim według projektu Konstantego Sylwina Jakimowicza.",
+      "Szkoła przeniesiona została 12 lutego 1928 do nowego gmachu przy ul. Otwockiej.",
+      "17 stycznia 1932 szkole nr 192 nadano imię Adama Asnyka.",
+      "Wraz z wybuchem II wojny światowej w budynku urządzono szpital.",
+      "Podczas okupacji niemieckiej gmach został zajęty na koszary niemieckiej żandarmerii.",
+      "W gmachu miały siedzibę władze miejskie Warszawy, które w 1945 roku przeniosły się do budynku Banku Gospodarstwa Krajowego w Alej Jerozolimskich.",
+      "Zespół został wpisany do rejestru zabytków nieruchomych w 2018."
+    ],
+    "ciekawostki": [
+      "Szkoła miała charakter eksperymentalny; często odwiedzali ją pedagodzy i uczeni z zagranicy."
+    ],
+    "summary_en": "A 1925–1927 school complex on Otwocka Street in Praga-Północ, designed by Konstanty Sylwin Jakimowicz in the municipal style. It served as the first seat of Warsaw's postwar city authorities and was listed as a monument in 2018.",
+    "ludzie": [
+      {"kto": "Konstanty Sylwin Jakimowicz", "rola": "projektant gmachu", "wiki": null},
+      {"kto": "Stefania Usarkowa", "rola": "kierowniczka szkoły nr 126", "wiki": null},
+      {"kto": "Adam Asnyk", "rola": "patron szkoły nr 192", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szkoła przy ul. Otwockiej 3 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szko%C5%82a_przy_ul._Otwockiej_3_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zespół obejmuje też budynki mieszkalne przy ul. Łochowskiej 40 i Siedleckiej 29."
+  },
+  {
+    "id": "szmulowizna",
+    "nazwa": "Szmulowizna",
+    "name_en": "Szmulowizna",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.25599,
+    "lon": 21.0541,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa obszaru pochodzi od imienia Szmula Zbytkowera, zamożnego żydowskiego kupca, bankiera i przedsiębiorcy działającego w drugiej połowie XVIII wieku.",
+      "W 1780 roku Szmul Zbytkower otrzymał królewskie zezwolenie na urządzenie cmentarza żydowskiego na Bródnie.",
+      "W 1862 roku uruchomiono Kolej Warszawsko-Petersburską, której linia przebiegała od północnej strony obszaru.",
+      "Pod koniec XIX wieku obszar został włączony do Warszawy.",
+      "We wrześniu 1902 roku małżeństwo książąt Marii i Michała Radziwiłłów nabyło część gruntów we wschodniej części Szmulowizny.",
+      "Jednym z najbardziej charakterystycznych obiektów jest liczący około pół kilometra długości budynek mieszkalny przy ul. Kijowskiej 11, potocznie nazywany „jamnikiem”."
+    ],
+    "ciekawostki": [
+      "Potocznie obszar nazywany jest Szmulkami."
+    ],
+    "summary_en": "Szmulowizna is a historic area on the eastern edge of old Praga, named after the 18th-century financier Szmul Zbytkower. It grew into an industrial district after the railways were built in the 19th century.",
+    "ludzie": [
+      {"kto": "Szmul Zbytkower", "rola": "kupiec, bankier i dostawca wojskowy, założyciel folwarku, od którego pochodzi nazwa", "wiki": null},
+      {"kto": "Michał Piotr Radziwiłł", "rola": "książę, który wraz z żoną Marią nabył grunty w 1902", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szmulowszczyzna", "Szmulewizna", "Bojmurek", "Bojnówek"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szmulowizna", "url": "https://pl.wikipedia.org/wiki/Szmulowizna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek obszaru; granice MSI nie są tożsame z granicami historycznej Szmulowizny."
+  },
+  {
+    "id": "szpital-praski",
+    "nazwa": "Szpital Praski pw. Przemienienia Pańskiego",
+    "name_en": "Praski Hospital of the Transfiguration",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "al. „Solidarności” 67",
+    "adres_historyczny": null,
+    "lat": 52.25154,
+    "lon": 21.0292,
+    "lokalizacja": "dokladna",
+    "okres": "1868–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szpital powstał w 1868 roku jako Szpital Najświętszej Marii Panny na Pradze.",
+      "W 1866 roku epidemia cholery wymusiła przekształcenie lazaretu w szpital dla zarażonych.",
+      "W 1939 podczas obrony Warszawy szpital został kilkakrotnie zbombardowany przez lotnictwo niemieckie.",
+      "W 1941 wiosną odbudowany gmach został przejęty przez Wehrmacht.",
+      "W 1945 rozebrano neogotycką kaplicę Matki Boskiej Loretańskiej, wzniesioną na początku XX wieku.",
+      "W 1948 oddano do użytku odbudowane w całości lewe skrzydło szpitala.",
+      "W 2007 odsłonięto tablicę upamiętniającą pisarza Władysława Stanisława Reymonta, który był tu leczony od 13 lipca do 10 sierpnia 1900 roku po wypadku kolei."
+    ],
+    "ciekawostki": [
+      "W 1868 roku Szpital Najświętszej Marii Panny na Pradze otrzymał ustanowienie jako miejski, z Radą Główną Opiekuńczą jako fundatorem."
+    ],
+    "summary_en": "The Praski Hospital of the Transfiguration on Solidarności Avenue was founded in 1868 as a municipal hospital from a Napoleonic-era military lazaret. It was bombed in 1939, taken by the Wehrmacht in 1941 and rebuilt after the war.",
+    "ludzie": [
+      {"kto": "Władysław Stanisław Reymont", "rola": "pisarz, leczony w szpitalu w 1900 roku", "wiki": null},
+      {"kto": "Zygmunt Dobierzewski", "rola": "pierwszy Lekarz Naczelny szpitala", "wiki": null},
+      {"kto": "Walerian Klecki", "rola": "lekarz naczelny w latach 1825–1830", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital Najświętszej Marii Panny na Pradze"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szpital Praski pw. Przemienienia Pańskiego", "url": "https://pl.wikipedia.org/wiki/Szpital_Praski_pw._Przemienienia_Pa%C5%84skiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł przerwany w paczce w części o oddziałach; fakty z dostępnej części historii."
+  }
+]

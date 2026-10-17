@@ -1,0 +1,472 @@
+[
+  {
+    "id": "ulica-folwarczna",
+    "nazwa": "ul. Folwarczna",
+    "name_en": "Folwarczna Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Folwarczna",
+    "adres_historyczny": null,
+    "lat": 52.2568,
+    "lon": 21.0516,
+    "lokalizacja": "przyblizona",
+    "okres": "2. poł. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tereny, na których leży ulica, pierwotnie należały do Szmula Zbytkowera; folwark Bojnówek został zniszczony w 1794 roku podczas Rzezi Pragi, a ponownie w 1831 roku podczas Bitwy o Olszynkę Grochowską.",
+      "W 1834 roku Stanisław Flatau sprzedał Szmulowiznę rodzinie von Brühlów.",
+      "W drugiej połowie XIX wieku tereny rozparcelowano i wytyczono ulicę, a jej nazwa wywodzi się od rozparcelowanego folwarku.",
+      "Po przyłączeniu do miasta w 1889 roku ulica została skrócona do nowo wytyczonej ulicy Białostockiej.",
+      "W okresie okupacji niemieckiej całkowicie zniszczona została zabudowa najstarszego odcinka ulicy; po 1960 roku odcinek ten został skasowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Folwarczna Street in Praga-Północ takes its name from a parcelled manor farm of the Zbytkower family in Szmulowizna. Its oldest section disappeared after the war and it now ends at Radzymińska Street.",
+    "ludzie": [
+      {
+        "kto": "Szmul Zbytkower",
+        "rola": "właściciel folwarku, od którego pochodzi nazwa ulicy",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Flatau",
+        "rola": "sprzedał Szmulowiznę w 1834",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Folwarczna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Folwarczna_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-grajewska",
+    "nazwa": "ul. Grajewska",
+    "name_en": "Grajewska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Grajewska",
+    "adres_historyczny": null,
+    "lat": 52.2607,
+    "lon": 21.06,
+    "lokalizacja": "przyblizona",
+    "okres": "1925–1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach 1925–1927 na terenie Szmulowizny, przyłączonej do Warszawy w 1889 roku.",
+      "Jednym z pierwszych obiektów przy ulicy była kamienica pod nr 4 z 1926 roku.",
+      "Po 1937 roku przy ulicy powstało kilka zachowanych do dziś kamienic czynszowych; wybuch wojny w 1939 roku przerwał proces zabudowy.",
+      "W okresie okupacji niemieckiej ulica uniknęła większych zniszczeń i zachowała wiele przedwojennego wyglądu.",
+      "Ważniejszym obiektem przy ulicy jest Fabryka Obrabiarek Precyzyjnych Avia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grajewska Street in Szmulowizna was laid out in 1925–1927 on the last remaining land near the railway line. Its interwar tenements survived the war largely intact.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Grajewska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Grajewska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-grodzienska",
+    "nazwa": "ul. Grodzieńska",
+    "name_en": "Grodzieńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Grodzieńska",
+    "adres_historyczny": null,
+    "lat": 52.2598,
+    "lon": 21.0513,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1889–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono na dawnych gruntach wsi Targówek, których niewielki fragment przyłączono do Warszawy w 1889 roku.",
+      "Pierwsze kamienice czynszowe powstały przy Grodzieńskiej krótko przed wybuchem I wojny światowej.",
+      "Pierwsze zakłady przemysłowe przy ulicy produkowały głównie mydło i świece, m.in. fabryka mydła Sport pod nr 45/47 oraz fabryka mydła i świec „Adamczewski i S-ka” pod nr 21/29.",
+      "Obrona Warszawy w 1939 roku przyniosła poważne zniszczenia zabudowy, powstałe w związku z bombardowaniem pobliskiego węzła kolejowego.",
+      "W 2019 roku zburzono dawną fabrykę mydła i świec Adamczewskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grodzieńska Street in Praga-Północ grew up from the 1900s around soap and candle factories between Radzymińska and the Warsaw-Petersburg railway. Most of its prewar buildings survived the postwar clearances.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Grodzieńska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Grodzie%C5%84ska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-inzynierska",
+    "nazwa": "ul. Inżynierska",
+    "name_en": "Inżynierska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Inżynierska",
+    "adres_historyczny": null,
+    "lat": 52.2578,
+    "lon": 21.0356,
+    "lokalizacja": "przyblizona",
+    "okres": "1882–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała jako droga dojazdowa do zajezdni tramwajów konnych utworzonej w 1882 roku.",
+      "Nazwa ulicy, nadana w 1907 roku, pochodzi od przedsiębiorstw inżynieryjnych związanych z budową i modernizacją zajezdni i elektryfikacją tramwajów na Pradze.",
+      "W 1908 roku zajezdnię tramwajów konnych przystosowano do obsługi taboru elektrycznego.",
+      "Pierwszymi zabudowaniami poza zajezdnią była fabryka armatur metalowych Barwicha i Junga, wystawiona pod nr 5 w 1892 roku.",
+      "18 listopada 1944 roku w zaadaptowanym lokalu kina „Syrena” w budynku nr 4 odbyła się premiera przedstawienia Majstra i Czeladnika Józefa Korzeniowskiego, pierwszego w wyzwolonej prawobrzeżnej części Warszawy."
+    ],
+    "ciekawostki": [
+      "Od 1912 roku pod nr 11 działała wytwórnia koronek i haftów Adolfa Pypkego i Zelmana Rosenfrieda."
+    ],
+    "summary_en": "Inżynierska Street in Praga-Północ was built as access road to the Praga tram depot. It was named in 1907 after engineering firms linked to the tram electrification, and in 1944 the first postwar theatre premiere in right-bank Warsaw was staged in the Syrena cinema here.",
+    "ludzie": [
+      {
+        "kto": "Józef Korzeniowski",
+        "rola": "autor sztuki Majster i Czeladnik, wystawionej w 1944",
+        "wiki": null
+      },
+      {
+        "kto": "Adolf Pypke",
+        "rola": "współwłaściciel wytwórni koronek pod nr 11",
+        "wiki": null
+      },
+      {
+        "kto": "Zelman Rosenfried",
+        "rola": "współwłaściciel wytwórni koronek pod nr 11",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Inżynierska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_In%C5%BCynierska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone). Artykuł podaje dwie daty premiery (18 lub 23 listopada 1944)."
+  },
+  {
+    "id": "ulica-jadowska",
+    "nazwa": "ul. Jadowska",
+    "name_en": "Jadowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jadowska",
+    "adres_historyczny": null,
+    "lat": 52.2618,
+    "lon": 21.0572,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach 1928–1930, w ostatnim etapie parcelacji Szmulowizny.",
+      "Po obu jej stronach wytyczono osiem parcel, zabudowanych wkrótce skromnymi trzypiętrowymi kamienicami.",
+      "Nazwa ulicy pochodzi od miejscowości Jadów.",
+      "W okresie okupacji zniszczeniu uległa zabudowa parzystej strony ulicy; ocalały dwa zespoły bliźniaczych kamienic pod nr 5/5A i 7.",
+      "Pod numerem 2 znajduje się piekarnia i Warszawskie Muzeum Chleba."
+    ],
+    "ciekawostki": [
+      "Ocalało pięć latarni gazowych, przerobionych w latach 90. XX wieku na elektryczne."
+    ],
+    "summary_en": "Jadowska Street in Szmulowizna was laid out in 1928–1930 with modest three-storey tenements. Part of its even side was destroyed in the occupation, and it is home to the Warsaw Bread Museum at number 2.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Jadowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jadowska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-jagiellonska",
+    "nazwa": "ul. Jagiellońska",
+    "name_en": "Jagiellońska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jagiellońska",
+    "adres_historyczny": null,
+    "lat": 52.2689,
+    "lon": 21.0194,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1762–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na miejscu dawniejszej drogi istniejącej przed rokiem 1762; pierwotnie nosiła nazwę Szeroka.",
+      "W 1807 roku, z rozkazu Napoleona I, zniwelowano całą sieć ulic pomiędzy Wisłą a dzisiejszą ul. Targową przy budowie fortyfikacji.",
+      "Północny odcinek ulicy, dawna szosa wylotowa Petersburska, przemianowano w 1865 roku na ul. Petersburską.",
+      "W 1836 roku ukończono budowę murowanej synagogi Praskiej.",
+      "W 1865 roku na osi nowo wybudowanego mostu Kierbedzia wytyczono okrągły plac, nazwany później placem Weteranów 1863 r.",
+      "W latach 1896–1900 pod nr 17 wybudowano z inicjatywy Rosyjskiego Czerwonego Krzyża gmach Zakładu dla Wdów po Poległych Żołnierzach i Oficerach.",
+      "W 1916 roku ulicy nadano obecną nazwę."
+    ],
+    "ciekawostki": [
+      "W 1900 roku wzdłuż szosy wylotowej uruchomiono kolej jabłonowską."
+    ],
+    "summary_en": "Jagiellońska Street in Praga-Północ is one of the oldest roads of old Praga, once called Szeroka. Its northern section was a Petersburg highway, and many of its key buildings date from the 1830s to the 1910s.",
+    "ludzie": [
+      {
+        "kto": "Jakub Kubicki",
+        "rola": "autor projektu pawilonów rogatkowych z 1823",
+        "wiki": null
+      },
+      {
+        "kto": "Władysław Adolf Kozłowski",
+        "rola": "projektant gmachu Gimnazjum Męskiego (nr 38)",
+        "wiki": null
+      },
+      {
+        "kto": "Bronisław Massalski",
+        "rola": "inwestor trzech kamienic pod nr 9, 11, 13",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Szeroka",
+      "Petersburska",
+      "Moskiewska"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Jagiellońska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jagiello%C5%84ska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje w różnych miejscach dwie wersje lokalizacji Zakładu dla Wdów (ul. Floriańska 2 oraz Jagiellońska 17); rekord ulicy zawiera wersję z tej ulicy. Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-jakuba-jasinskiego",
+    "nazwa": "ul. Jakuba Jasińskiego",
+    "name_en": "Jakub Jasiński Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jakuba Jasińskiego",
+    "adres_historyczny": null,
+    "lat": 52.2504,
+    "lon": 21.0296,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę w obecnym kształcie wytyczono przed 1912 rokiem.",
+      "Od ok. 1905 do 1916 roku ulica nosiła nazwę Floriańskiej.",
+      "Przed rokiem 1912 zlikwidowano środkowy odcinek ulicy; na tym miejscu wznosi się gmach Szpitala Praskiego.",
+      "Na rogu ulic Jasińskiego i Sierakowskiego wzniesiono budynek tzw. morgi, zaprojektowany przez Felicjana Rakiewicza.",
+      "Na rogu Panieńskiej i Jasińskiego, przy murze Szpitala Praskiego, zachował się niemiecki schron obserwacyjno-wartowniczy z okresu II wojny światowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Jakuba Jasińskiego Street in Praga-Północ was redrawn before 1912 and partly absorbed into the grounds of the Praski Hospital. A German observation bunker from the Second World War survives at its junction with Panieńska.",
+    "ludzie": [
+      {
+        "kto": "Felicjan Rakiewicz",
+        "rola": "projektant budynku tzw. morgi",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Michajłowska",
+      "Floriańska"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Jakuba Jasińskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Jakuba_Jasi%C5%84skiego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-jozefa-sierakowskiego",
+    "nazwa": "ul. Józefa Sierakowskiego",
+    "name_en": "Józef Sierakowski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Józefa Sierakowskiego",
+    "adres_historyczny": "ul. Namiestnikowska",
+    "lat": 52.250678,
+    "lon": 21.031191,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica, pierwotnie nosząca nazwę Namiestnikowska, była jedną z ulic wychodzących promieniście z placu Weteranów 1863 roku.",
+      "Patron ulicy, Józef Sierakowski, został wybrany ze względu na funkcjonowanie w tej części miasta jatek i rzeźni.",
+      "Pod nr 7 znajdował się Żydowski Dom Akademicki.",
+      "Artykuł wymienia wśród nieistniejących obiektów przy ulicy rzeźnię praską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Józef Sierakowski Street in Praga-Północ was originally named Namiestnikowska and radiates from Plac Weteranów 1863. The article links its patron to the area's butchers' stalls and slaughterhouse.",
+    "ludzie": [
+      {
+        "kto": "Józef Sierakowski",
+        "rola": "patron ulicy",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Namiestnikowska"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Józefa Sierakowskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_J%C3%B3zefa_Sierakowskiego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Wpis o patronie ograniczony do tego, co podaje artykuł; współrzędne to środek ulicy."
+  },
+  {
+    "id": "ulica-kaweczynska",
+    "nazwa": "ul. Kawęczyńska",
+    "name_en": "Kawęczyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kawęczyńska",
+    "adres_historyczny": "droga do Woli Ząbkowskiej",
+    "lat": 52.257388888,
+    "lon": 21.056277777,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą prowadzącą do Woli Ząbkowskiej, nazywanej od XVIII wieku Ząbkami.",
+      "Nadana w 1907 roku nazwa pochodzi od dawnej miejscowości Kawęczyn.",
+      "W latach 1907–1923 przy ulicy wzniesiono monumentalną bazylikę Najświętszego Serca Jezusowego.",
+      "1 marca 1925 roku przy ul. Kawęczyńskiej 16 uruchomiono zajezdnię tramwajową.",
+      "Od 1933 roku pod nr 12 mieściło się XII Państwowe Gimnazjum Żeńskie im. Marii Słodowskiej-Curie.",
+      "20 czerwca 1945 roku uruchomiono pierwszą po wojnie linię tramwajową nr „1”, łączącą ul. Kawęczyńską z ul. Wiatraczną.",
+      "W 2021 roku historyczny układ urbanistyczny ulicy został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kawęczyńska Street in Praga-Północ runs toward the old Wola Ząbkowska and was named in 1907. It is home to the Praga tram depot and the Sacred Heart Basilica, and its historic urban layout was listed as a monument in 2021.",
+    "ludzie": [
+      {
+        "kto": "Stanisław August Poniatowski",
+        "rola": "król, który darował dobra Szmulowizna Szmulowi Zbytkowerowi",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "droga do Woli Ząbkowskiej"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Kawęczyńska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Kaw%C4%99czy%C5%84ska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "ulica-kijowska",
+    "nazwa": "ul. Kijowska",
+    "name_en": "Kijowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kijowska",
+    "adres_historyczny": null,
+    "lat": 52.251916666,
+    "lon": 21.047555555,
+    "lokalizacja": "przyblizona",
+    "okres": "1863–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę zaprojektowano w 1863 roku jako element planu regulacyjnego Pragi zatwierdzonego rok później.",
+      "Dworzec Terespolski wybudowano w latach 1864–1865 według projektu Alfonsa Kropiwnickiego.",
+      "Od końca 1866 roku uruchomiono między dworcami a mostem Kierbedzia tramwaje konne „kolejowe”.",
+      "5 września 1939 roku niemal całkowicie zniszczono stację Warszawa Wschodnia; kilkakrotne bombardowanie tego dnia spowodowało masakrę ludności cywilnej oczekującej na pociągi ewakuacyjne.",
+      "W 1967 roku ulicę przebudowano, a przy okazji wyburzono neogotycką kamienicę Dominika Cichockiego przy ul. Targowej 22.",
+      "Nowy budynek dworca Warszawa Wschodnia, projektu Arseniusza Romanowicza, ukończono w 1969 roku.",
+      "W 2000 roku oddano do użytku składający się z trzech segmentów kompleks Centrum Millenium."
+    ],
+    "ciekawostki": [
+      "Najdłuższy w mieście blok mieszkalny powstał w latach 1971–1973 pod nr 11 według projektu Jana Kalinowskiego."
+    ],
+    "summary_en": "Kijowska Street in Praga-Północ and Targówek links the Warsaw Wschodnia and former Terespol stations. Its layout was rebuilt several times, and the eastern station was moved and rebuilt after the war.",
+    "ludzie": [
+      {
+        "kto": "Alfons Kropiwnicki",
+        "rola": "projektant Dworca Terespolskiego",
+        "wiki": null
+      },
+      {
+        "kto": "Arseniusz Romanowicz",
+        "rola": "projektant nowego budynku dworca Warszawa Wschodnia",
+        "wiki": null
+      },
+      {
+        "kto": "Dominik Cichocki",
+        "rola": "właściciel neogotyckiej kamienicy przy Targowej 22, wyburzonej w 1967",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Kijowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Kijowska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica w dzielnicach Praga-Północ i Targówek; współrzędne to środek ulicy (przybliżone)."
+  },
+  {
+    "id": "dworzec-terespolski-kijowska-14a",
+    "nazwa": "Dworzec Terespolski (ocalały fragment, ul. Kijowska 14a)",
+    "name_en": "Terespol Railway Station (surviving fragment, Kijowska 14a)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kijowska 14a",
+    "adres_historyczny": null,
+    "lat": 52.251916666,
+    "lon": 21.047555555,
+    "lokalizacja": "przyblizona",
+    "okres": "1864–dziś (ocalały fragment)",
+    "istnieje": true,
+    "fakty": [
+      "Dworzec Terespolski wybudowano w latach 1864–1865 według projektu Alfonsa Kropiwnickiego.",
+      "Budynek dawnego Dworca Terespolskiego przetrwał okres okupacji, a dworzec został zniszczony w ostatnim okresie walk.",
+      "Jedyny ocalały fragment dworca znajduje się pod nr 14a przy ul. Kijowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Terespol railway station was built in 1864–1865 near Brzeska Street. It was destroyed in the final fighting of the war, and only a fragment survives at Kijowska 14a.",
+    "ludzie": [
+      {
+        "kto": "Alfons Kropiwnicki",
+        "rola": "projektant dworca",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Dworzec Terespolski"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Kijowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Kijowska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zachował się tylko fragment dawnego dworca; z artykułu o ulicy Kijowskiej, bez dokładnej daty zniszczenia."
+  }
+]

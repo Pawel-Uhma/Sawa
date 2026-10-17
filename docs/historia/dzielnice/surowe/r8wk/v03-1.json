@@ -1,0 +1,267 @@
+[
+  {
+    "id": "szkola-glowna-handlowa",
+    "nazwa": "Szkoła Główna Handlowa",
+    "name_en": "Warsaw School of Economics (SGH)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Al. Niepodległości 162",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1924 roku zakupiono działkę na Mokotowie, u zbiegu ul. Rakowieckiej i al. Niepodległości.",
+      "We wrześniu 1925 roku rozpoczął działalność Pawilon Zakładów Doświadczalnych przy ul. Rakowieckiej 24 (obecnie budynek „A”).",
+      "W latach 1928–1931 przy ul. Rakowieckiej 22 wzniesiono gmach biblioteki uczelnianej.",
+      "W listopadzie 1939 roku budynek przy ul. Rakowieckiej 24 został zajęty przez wojsko niemieckie.",
+      "W latach 1951–1955 wzniesiono gmach główny SGPiS według projektu Jana Witkiewicza Koszczyca z 1924 roku, zmodyfikowanego przez Stefana Putowskiego.",
+      "W 1973 roku uczelnia pozyskała budynek szkolny przy ul. Wiśniowej."
+    ],
+    "ciekawostki": [
+      "W roku akademickim 1937/1938 SGH, jako jedna z pierwszych uczelni w Polsce, wprowadziła getto ławkowe."
+    ],
+    "summary_en": "The Warsaw School of Economics has its campus in Mokotów at Al. Niepodległości 162, near Pole Mokotowskie metro station. The first pavilion on the site opened in 1925, and the main building was completed in 1951–1955 to a design by Jan Witkiewicz Koszczyc.",
+    "ludzie": [
+      {"kto": "Bolesław Miklaszewski", "rola": "wybrany na rektora na pierwszym posiedzeniu Senatu Wyższej Szkoły Handlowej", "wiki": null},
+      {"kto": "Jan Witkiewicz Koszczyc", "rola": "architekt, autor koncepcji nowego kampusu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wyższa Szkoła Handlowa (WSH)", "Szkoła Główna Planowania i Statystyki (SGPiS)"],
+    "zrodla": [{"tytul": "Warszawikia: Szkoła Główna Handlowa", "url": "https://warszawa.fandom.com/pl/wiki/Szkoła_Główna_Handlowa"}],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord dotyczy kampusu uczelni (budynki), a nie samej instytucji; adres z campusu głównego."
+  },
+  {
+    "id": "szpital-czerniakowski",
+    "nazwa": "Szpital Czerniakowski",
+    "name_en": "Czerniaków Hospital",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Stępińska 19/25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1956–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szpital Czerniakowski został założony w 1956 r., a dwa lata później zapewniał już pełny zestaw usług medycznych na terenie Dolnego Mokotowa.",
+      "Stanisław Herakliusz Lubomirski, który wykupił wieś Czerniakowo (Czerniaków) w 1683 r., postawił szpital na miejscu dworu Czerniakowskich.",
+      "Od 1988 r. placówka posiada status Samodzielnego Publicznego Zakładu Opieki Zdrowotnej.",
+      "W 2004 roku Szpital otrzymał akredytację ISO 9001, w 2013 roku otwarto zaś w szpitalu nowy Oddział Terapii i Anestezjologii."
+    ],
+    "ciekawostki": [
+      "W filmie Fuks w tym szpitalu jest opatrywany Aleks (Maciej Sturh). Sadystyczny lekarz zszywa mu łuk brwiowy bez znieczulenia, mszcząc się w ten sposób za skradzione mu radia samochodowe."
+    ],
+    "summary_en": "Czerniaków Hospital at Stępińska 19/25 in Lower Mokotów was founded in 1956 and became an autonomous public health institution in 1988. It has 9 wards with 340 beds, and about 15 thousand patients are treated there each year.",
+    "ludzie": [
+      {"kto": "Stanisław Herakliusz Lubomirski", "rola": "wykupił wieś Czerniaków w 1683 r. i postawił tu szpital", "wiki": null},
+      {"kto": "Maciej Sturh", "rola": "aktor grający Aleksa w filmie Fuks", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Szpital Czerniakowski", "url": "https://warszawa.fandom.com/pl/wiki/Szpital_Czerniakowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Pierwsze zdanie historii dotyczy dworu na tym miejscu; szpital od 1956 r."
+  },
+  {
+    "id": "teatr-guliwer",
+    "nazwa": "Teatr Guliwer",
+    "name_en": "Guliwer Puppet Theatre",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Różana 16",
+    "adres_historyczny": "ul. Marszałkowska 18 (miejsce pierwszej inauguracji)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Guliwer założony przez Irenę Kręzlewicz-Sowicką 1 października 1945 roku pod nazwą Warszawski Teatr Lalki i Aktora.",
+      "Inauguracja odbyła się 8 grudnia 1945 roku w sali Ośrodka Wychowawczo-Artystycznego, Robotniczego Towarzystwa Przyjaciół Dzieci w Warszawie przy ulicy Marszałkowskiej 18.",
+      "Dwa lata później teatr otrzymał nazwę „Guliwer”.",
+      "Dopiero w 1970 teatr uzyskał stałą siedzibę w budynku przy ul. Różanej 16.",
+      "Od roku 1991 dyrektorem naczelnym pełniącym funkcję do dziś został Mirosław Korzeb."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Guliwer is a children's puppet theatre in Mokotów, founded in 1945 by Irena Kręzlewicz-Sowicka. It got a permanent seat at Różana 16 in 1970.",
+    "ludzie": [
+      {"kto": "Irena Kręzlewicz-Sowicka", "rola": "założycielka teatru", "wiki": null},
+      {"kto": "Mirosław Korzeb", "rola": "dyrektor naczelny od 1991 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawski Teatr Lalki i Aktora"],
+    "zrodla": [{"tytul": "Warszawikia: Teatr Guliwer", "url": "https://warszawa.fandom.com/pl/wiki/Teatr_Guliwer"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-abramowskiego",
+    "nazwa": "Ulica Abramowskiego",
+    "name_en": "Abramowskiego Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Abramowskiego",
+    "adres_historyczny": "Niepodległości (do 1970 roku)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1957–1959",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wybudowana między 1957 a 1959 rokiem i nazywała się wcześniej Niepodległości.",
+      "Niepodległości biegła po tej samej trasie co Abramowskiego do 1970 roku, a nazwę Abramowskiego nadano właśnie w tym roku.",
+      "W latach 70 i 80 (ogólnie do 1994) ulicę oddzielono od Niepodległości, a w 1994 Abramowskiego „wchłonęła” ulicę Niepodległości.",
+      "W 2018 roku odcinek zachodni nazwano Zdziechowskiego, a do wschodniego dodano człon Edwarda Józefa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Abramowskiego Street in Ksawerów, Mokotów, was built in 1957–1959 under the name Niepodległości. It received its current name in 1970 and was named after the political thinker Edward Abramowski.",
+    "ludzie": [
+      {"kto": "Edward Abramowski", "rola": "patron ulicy, polski myśliciel polityczny i społeczny", "wiki": null}
+    ],
+    "dawne_nazwy": ["Niepodległości"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Abramowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Abramowskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-adriatycka",
+    "nazwa": "Ulica Adriatycka",
+    "name_en": "Adriatycka Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Adriatycka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "koniec lat 80. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wybudowana pod koniec lat 80 XX wieku, wraz z osiedlem domków jednorodzinnych na nieużytkach z budowy osiedla Stegny.",
+      "Praktycznie cała ulica położona jest na terenie zamkniętego osiedla domków jednorodzinnych, które zostały wybudowane pod koniec lat 80 XX wieku.",
+      "Nazwa pochodzi od Morza Adriatyckiego i związana jest, tak jak wszystkie ulice w okolicy, z nazwami geograficznymi basenu Morza Śródziemnego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Adriatycka is a residential street in Stegny, Mokotów, built at the end of the 1980s together with a development of single-family houses. Its name comes from the Adriatic Sea.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Adriatycka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Adriatycka"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-akermanska",
+    "nazwa": "Ulica Akermańska",
+    "name_en": "Akermańska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Akermańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 70. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy: lata 70. XX wieku.",
+      "Zabudowę ulicy stanowią po stronie zachodniej trzy 10-piętrowe bloki mieszkalne z lat 70. XX wieku (Akermańska 1, 5, 7).",
+      "Nazwa ulicy pochodzi od Akermanu i związana jest, tak jak wszystkie nazwy ulic w okolicy, z nazwami geograficznymi basenu Morza Czarnego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Akermańska is a short local street in Stegny, Mokotów, built in the 1970s. Its name comes from the Akerman, a Black Sea place name.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Akermańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Akermańska"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł głównie opisuje zabudowę; historia ograniczona do dat powstania."
+  },
+  {
+    "id": "ulica-asfaltowa",
+    "nazwa": "Ulica Asfaltowa",
+    "name_en": "Asfaltowa Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Asfaltowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "ok. 1910",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa uliczki związana jest z asfaltem, ponieważ była to pierwsza ulica asfaltowa na Mokotowie, nastąpiło to na początku jej istnienia, czyli w 1910 roku.",
+      "W 1916 roku ulica znalazła się w granicach miasta.",
+      "W latach 30. XX wieku planowano przedłużenie ulicy na południe jako ulica Iłżecka."
+    ],
+    "ciekawostki": [
+      "Pierwszą ulicą asfaltową w Warszawie była ul. Mazowiecka."
+    ],
+    "summary_en": "Asfaltowa is a one-way street in Stary Mokotów, built around 1910. It was the first asphalt street in Mokotów, and its name refers to that.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Asfaltowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Asfaltowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-batuty",
+    "nazwa": "Ulica Batuty",
+    "name_en": "Batuty Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Batuty",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "XX wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w czasie budowania osiedla Służew nad Dolinką.",
+      "Zyskała popularność dzięki oszustwu (tzw. hoax), którego ofiarą padła Wikipedia w latach 2004-2006.",
+      "Grupa osób określających się jako „Armia Batuty” utworzyła hasło o fikcyjnej postaci Henryku Batucie, który był rzekomym patronem ulicy Batuty.",
+      "Oszustwo zostało wykryte w lutym 2006."
+    ],
+    "ciekawostki": [
+      "Pojawiło się wówczas wiele artykułów prasowych, m.in. w Gazecie Wyborczej pt. Jak komunista Batuta katolików mordował."
+    ],
+    "summary_en": "Batuty Street in Służew, Mokotów, was built during the development of the Służew nad Dolinką estate. It became known because of a hoax in which Polish Wikipedia was misled about a fictional patron, Henryk Batuta.",
+    "ludzie": [
+      {"kto": "Henryk Batuta", "rola": "fikcyjna postać, wymyślona w hoaxie jako rzekomy patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Batuty", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Batuty"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-balucki",
+    "nazwa": "Ulica Bałuckiego",
+    "name_en": "Bałuckiego Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Bałuckiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy: lata 30. XX wieku.",
+      "Kamienica przy ul. Bałuckiego 35 pochodzi z 1932 roku.",
+      "Nazwa ulicy pochodzi od nazwiska Michała Bałuckiego, polskiego powieściopisarza i komediopisarza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bałuckiego Street in Stary Mokotów was built in the 1930s and is named after the Polish novelist and playwright Michał Bałucki. The house at no. 35 dates from 1932.",
+    "ludzie": [
+      {"kto": "Michał Bałucki", "rola": "patron ulicy, polski powieściopisarz i komediopisarz", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Bałuckiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bałuckiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

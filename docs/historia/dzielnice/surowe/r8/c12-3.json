@@ -1,0 +1,321 @@
+[
+  {
+    "id": "ulica-wiatraczna",
+    "nazwa": "ulica Wiatraczna",
+    "name_en": "Wiatraczna Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Wiatraczna",
+    "adres_historyczny": null,
+    "lat": 52.252666666, "lon": 21.084944444,
+    "lokalizacja": "przyblizona",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XIX wieku podczas parcelacji okolicznych gruntów wytyczono drogę z ul. Grochowskiej do działki oznaczonej hipotecznie jako Dobra Grochów nr 26 – Wiatrak.",
+      "W 1916 roku teren wraz z Grochowem przyłączono do Warszawy.",
+      "Ulica powstała w 1919 roku jako droga łącząca ul. Kobielską z ul. Józefa Dwernickiego.",
+      "W latach 30. XX wieku połączyła Grochowską z ul. Dwernickiego.",
+      "W 2023 roku skrócono jej przebieg, włączając odcinek przez osiedle Kozia Górka w ciąg ulicy Kozia Górka."
+    ],
+    "ciekawostki": [
+      "Od jej nazwy pochodzi nazwa ronda Wiatraczna."
+    ],
+    "summary_en": "Wiatraczna Street in Grochów was laid out in the 19th century as a track to the Wiatrak plot, and became a street in 1919. In 2023 its route was shortened where it passes the Kozia Górka estate.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Wiatraczna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wiatraczna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-uminskiego",
+    "nazwa": "ulica Władysława Umińskiego",
+    "name_en": "Władysław Umiński Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Władysława Umińskiego",
+    "adres_historyczny": null,
+    "lat": 52.2264, "lon": 21.0995,
+    "lokalizacja": "przyblizona",
+    "okres": "1979–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest jednym z czterech łuków tzw. „obwodnicy Gocławia”, ograniczających osiedla Orlik, Wilgę, Iskrę i Jantar.",
+      "„Obwodnica Gocławia” została wytyczona w drugiej połowie lat 70. XX wieku w związku z likwidacją Lotniska Gocław.",
+      "Początkowo nosiła nazwę ulicy Franciszka Jóźwiaka, następnie podzielono ją na cztery odcinki.",
+      "Nazwę nadaną w 1979 roku ulica zawdzięcza Władysławowi Umińskiemu, pisarzowi tworzącemu w nurcie fantastyki naukowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Władysław Umiński Street is part of the Gocław ring road built in the late 1970s after the Gocław airfield was closed. It is named after the science-fiction writer Władysław Umiński, with the name given in 1979.",
+    "ludzie": [
+      {"kto": "Władysław Umiński", "rola": "pisarz fantastyki naukowej, patron ulicy od 1979", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Franciszka Jóźwiaka (część obwodnicy Gocławia)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Władysława Umińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_W%C5%82adys%C5%82awa_Umi%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-zwyciezcow",
+    "nazwa": "ulica Zwycięzców",
+    "name_en": "Zwycięzców Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Zwycięzców",
+    "adres_historyczny": null,
+    "lat": 52.232194444, "lon": 21.059472222,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica początkowo nazywała się ulicą Augusta III.",
+      "W projekcie Wydziału Technicznego magistratu z 1925 roku planowano utworzenie terenu handlowego u zbiegu ulic Zwycięzców i Saskiej.",
+      "Nawierzchnię i chodniki ułożono w 1938 roku.",
+      "We wrześniu 1939 roku na ul. Zwycięzców, u zbiegu z ul. Francuską, znajdowała się barykada.",
+      "Po zakończeniu okupacji niemieckiej Biuro Odbudowy Stolicy zdecydowało się na utrzymanie jej dotychczasowego charakteru komunikacyjnego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zwycięzców Street on Saska Kępa was called Augusta III Street at first. It was paved in 1938, and a barricade stood at its junction with Francuska Street during the September 1939 defence of Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": ["ulica Augusta III"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zwycięzców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zwyci%C4%99zc%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "zwyciezcow-11-plon",
+    "nazwa": "Budynek przy ul. Zwycięzców 11 (płaskorzeźba Plon)",
+    "name_en": "Building at 11 Zwycięzców Street (Plon relief)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Zwycięzców 11",
+    "adres_historyczny": null,
+    "lat": 52.232194444, "lon": 21.059472222,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na ścianie od strony ul. Katowickiej znajduje się płaskorzeźba Plon autorstwa Jerzego Jarnuszkiewicza.",
+      "Jest to jeden z ostatnich zachowanych elementów dekoracji ul. Katowickiej z drugiej połowy lat 40. XX wieku.",
+      "W 2011 roku płaskorzeźba została wpisana do rejestru zabytków, a następnie odnowiona."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A relief called Plon by Jerzy Jarnuszkiewicz on the wall of the building at 11 Zwycięzców Street, facing Katowicka. It is one of the last surviving parts of the late-1940s decoration of Katowicka Street.",
+    "ludzie": [
+      {"kto": "Jerzy Jarnuszkiewicz", "rola": "autor płaskorzeźby Plon", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zwycięzców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zwyci%C4%99zc%C3%B3w_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst o ul. Katowickiej przypisuje Plon do 1947 r., a tutaj autora Jarnuszkiewicza. Rozbieżność w źródle, nie rozstrzygam. Współrzędne ulicy."
+  },
+  {
+    "id": "willa-lepkowskich-francuska-2",
+    "nazwa": "Willa Łepkowskich (ul. Francuska 2)",
+    "name_en": "Łepkowski Villa (2 Francuska Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Francuska 2 (róg ul. Zwycięzców)",
+    "adres_historyczny": null,
+    "lat": 52.232194444, "lon": 21.059472222,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa z lat 1933–1934 zaprojektowana przez Lucjana Korngolda i Piotra Marię Lubińskiego.",
+      "Najbardziej charakterystyczne elementy znajdują się po stronie ogrodu: rozległy taras, na który wchodzi się krętymi schodami.",
+      "Od początku budynek spotykał się z przychylnymi recenzjami i wskazywano go jako realizację w duchu idei Le Corbusiera.",
+      "Obecnie w budynku mieści się siedziba firmy Bose International Planning and Architecture."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1933–1934 villa on the corner of Francuska and Zwycięzców streets, designed by Lucjan Korngold and Piotr Maria Lubiński. It was praised from the start as a Le Corbusier-inspired design and now houses a company's offices.",
+    "ludzie": [
+      {"kto": "Lucjan Korngold", "rola": "projektant willi", "wiki": null},
+      {"kto": "Piotr Maria Lubiński", "rola": "projektant willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zwycięzców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zwyci%C4%99zc%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu: Francuska 2. Współrzędne ulicy Zwycięzców."
+  },
+  {
+    "id": "dom-zwyciezcow-31-wanda-grodecka",
+    "nazwa": "Dom przy ul. Zwycięzców 31",
+    "name_en": "House at 31 Zwycięzców Street",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Zwycięzców 31",
+    "adres_historyczny": null,
+    "lat": 52.232194444, "lon": 21.059472222,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": null,
+    "fakty": [
+      "Dom wielorodzinny z 1935 roku zaprojektował Roman Feliński.",
+      "Mieszkała tu Wanda Grodecka, sanitariuszka w powstaniu warszawskim.",
+      "W 1944 roku jej mieszkanie służyło jako kryjówka dla trzech powstańców przyprowadzonych przez Juliana Ambroziewicza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1935 apartment building at 31 Zwycięzców Street, designed by Roman Feliński. During the Warsaw Uprising in 1944, the flat of Wanda Grodecka, a field nurse, sheltered three insurgents brought in by Julian Ambroziewicz.",
+    "ludzie": [
+      {"kto": "Roman Feliński", "rola": "projektant domu", "wiki": null},
+      {"kto": "Wanda Grodecka", "rola": "sanitariuszka w powstaniu warszawskim, mieszkanka domu", "wiki": null},
+      {"kto": "Julian Ambroziewicz", "rola": "przyprowadził trzech powstańców do mieszkania w 1944", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zwycięzców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zwyci%C4%99zc%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst nie mówi, czy budynek stoi dziś. Współrzędne ulicy."
+  },
+  {
+    "id": "ulica-generala-fieldorfa-nila",
+    "nazwa": "ulica gen. Augusta Emila Fieldorfa „Nila”",
+    "name_en": "General August Emil Fieldorf 'Nil' Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. gen. Augusta Emila Fieldorfa „Nila”",
+    "adres_historyczny": null,
+    "lat": 52.2281, "lon": 21.0942,
+    "lokalizacja": "przyblizona",
+    "okres": "1976–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w drugiej połowie lat 70. XX wieku w związku z likwidacją lotniska Gocław i budową osiedla.",
+      "W październiku 1976 roku nadano jej imię Bolesława Bieruta.",
+      "Obecną nazwę, upamiętniającą gen. Emila „Nila” Fieldorfa, nadano 29 czerwca 1989 roku.",
+      "Fieldorf był dowódcą Kedywu Armii Krajowej i zastępcą Komendanta Głównego AK."
+    ],
+    "ciekawostki": [
+      "Przy ulicy znajduje się centrum handlowe Gocław."
+    ],
+    "summary_en": "General Emil Fieldorf 'Nil' Street on Gocław was laid out in the late 1970s and first named after Bolesław Bierut in 1976. It was renamed for Fieldorf, commander of the Kedyw special operations unit of the Home Army, on 29 June 1989.",
+    "ludzie": [
+      {"kto": "Emil Fieldorf „Nil”", "rola": "dowódca Kedywu AK, zastępca Komendanta Głównego AK, patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Bolesława Bieruta (1976–1989)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica gen. Augusta Emila Fieldorfa „Nila” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_gen._Augusta_Emila_Fieldorfa_%E2%80%9ENila%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-generala-abrahama",
+    "nazwa": "ulica gen. Romana Abrahama",
+    "name_en": "General Roman Abraham Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. gen. Romana Abrahama",
+    "adres_historyczny": null,
+    "lat": 52.228, "lon": 21.0882,
+    "lokalizacja": "przyblizona",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w drugiej połowie lat 70. XX wieku wraz z innymi głównymi ulicami na Gocławiu.",
+      "Od grudnia 1977 roku cała pętla obwodnicy osiedlowej nosiła nazwę ul. gen. Franciszka Jóźwiaka.",
+      "Na początku lat 80. z tej ulicy wydzielono ulice Meissnera, Jugosłowiańską i Umińskiego.",
+      "W październiku 1990 roku, w ramach likwidacji nazw i symboli komunistycznych, ulica otrzymała obecnego patrona."
+    ],
+    "ciekawostki": [],
+    "summary_en": "General Roman Abraham Street forms part of the ring road around the Gocław estates. The loop was named after Franciszek Jóźwiak from 1977, and the present name was given in October 1990.",
+    "ludzie": [
+      {"kto": "Roman Abraham", "rola": "generał, patron ulicy od 1990", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. gen. Franciszka Jóźwiaka (część obwodnicy, od 1977)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica gen. Romana Abrahama w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_gen._Romana_Abrahama_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-generala-bora-komorowskiego",
+    "nazwa": "ulica gen. Tadeusza Bora-Komorowskiego",
+    "name_en": "General Tadeusz Bór-Komorowski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. gen. Tadeusza Bora-Komorowskiego",
+    "adres_historyczny": null,
+    "lat": 52.225388888, "lon": 21.09,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie ulica nosiła nazwę ul. Aleksandra Zawadzkiego.",
+      "Obecną nazwę nadano w lutym 1991 roku.",
+      "W październiku 2006 roku spółka Skanska S.A. podpisała umowę na przebudowę ulicy.",
+      "Przebudowany odcinek oddano do użytku 28 września 2007 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Gen. Tadeusz Bór-Komorowski Street in Praga-Południe and Wawer was called Aleksander Zawadzki Street before its renaming in February 1991. The section between Umińskiego and Jugosłowiańska was rebuilt by Skanska and reopened in September 2007.",
+    "ludzie": [
+      {"kto": "Aleksander Zawadzki", "rola": "patron ulicy przed 1991", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Aleksandra Zawadzkiego (do 1991)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica gen. Tadeusza Bora-Komorowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_gen._Tadeusza_Bora-Komorowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka). Tekst nie podaje pełnego imienia i nazwiska patrona przed zmianą nazwy."
+  },
+  {
+    "id": "ulica-lukowska",
+    "nazwa": "ulica Łukowska",
+    "name_en": "Łukowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Łukowska",
+    "adres_historyczny": null,
+    "lat": 52.2375, "lon": 21.102777777,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono na początku lat 20. XX wieku, w czasie dynamicznego rozwoju przemysłowej części Grochowa; łączyła wtedy Karczewską z Komorską.",
+      "Mapa Wielkiej Warszawy z 1932 roku pokazuje ją przecinającą Komorską i dochodzącą do Kawczej.",
+      "Krótko przed II wojną światową została wydłużona w kierunku wschodnim do Witolińskiej.",
+      "Mapa Warszawy z 1958 roku pokazuje ją już tylko między Komorską a Karczewską.",
+      "W 2006 roku uruchomiono w środkowej części ulicy sygnalizację świetlną."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Łukowska Street in Grochów was laid out in the early 1920s between Karczewska and Komorska streets, and extended east towards Witolińska just before WWII. Traffic lights were installed in the middle section in 2006.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Łukowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%81ukowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "uniwersam-grochow-grochowska-207",
+    "nazwa": "Uniwersam Grochów (ul. Grochowska 207)",
+    "name_en": "Uniwersam Grochów department store (207 Grochowska Street)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grochowska 207 (przy rondzie Wiatraczna)",
+    "adres_historyczny": null,
+    "lat": 52.2446, "lon": 21.0887,
+    "lokalizacja": "dokladna",
+    "okres": "1977–2016",
+    "istnieje": false,
+    "fakty": [
+      "Do 1952 roku w miejscu Uniwersamu znajdowała się stacja Grochów II kolejki jabłonowskiej.",
+      "W 1973 roku Prezydium Stołecznej Rady Narodowej zatwierdziło projekt dzielnicowego centrum handlowo-usługowego przy rondzie Wiatraczna.",
+      "Budynek zaprojektowali Józef Zaborowski i Mieczysław Sabat w stylu brutalistycznym; konstrukcję opracowali Andrzej Pol i Krzysztof Kalinowski.",
+      "Pierwsze stoiska uruchomiono 19 lipca 1977 roku; był to pierwszy w stolicy dzielnicowy ośrodek handlowo-usługowy.",
+      "W 2016 roku budynek zburzono; w jego miejscu powstała dwukondygnacyjna galeria handlowa i dwie 17-piętrowe wieże z 470 mieszkaniami.",
+      "28 lutego 2018 roku supermarket wznowił działalność w galerii Rondo Wiatraczna."
+    ],
+    "ciekawostki": [
+      "Przed budynkiem stoi rzeźba Poranek Kazimierza Zielińskiego, nazywana przez mieszkańców „Panienką”; obecnie ustawiona we wnętrzu galerii.",
+      "Budynek uzyskał wyróżnienie w konkursie „Mister Warszawy” 1977 organizowanym przez „Życie Warszawy”."
+    ],
+    "summary_en": "The Uniwersam department store at 207 Grochowska Street, at the Wiatraczna roundabout, opened in 1977 as the first district commercial centre in Warsaw. It was demolished in 2016 and replaced by a shopping gallery and two residential towers.",
+    "ludzie": [
+      {"kto": "Józef Zaborowski", "rola": "współprojektant budynku", "wiki": null},
+      {"kto": "Mieczysław Sabat", "rola": "współprojektant budynku", "wiki": null},
+      {"kto": "Andrzej Pol", "rola": "odpowiadał za konstrukcję", "wiki": null},
+      {"kto": "Krzysztof Kalinowski", "rola": "odpowiadał za konstrukcję", "wiki": null},
+      {"kto": "Kazimierz Zieliński", "rola": "autor rzeźby Poranek", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Handlowy „Uniwersam”"],
+    "zrodla": [{"tytul": "Wikipedia: Uniwersam Grochów", "url": "https://pl.wikipedia.org/wiki/Uniwersam_Groch%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje dwie daty otwarcia: 29 czerwca 1977 i 19 lipca 1977 (pierwsze stoiska); rekord podaje 19 lipca jako w tekście. Współrzędne z nagłówka (dokładne)."
+  }
+]

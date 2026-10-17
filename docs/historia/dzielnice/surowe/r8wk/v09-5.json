@@ -1,0 +1,164 @@
+[
+  {
+    "id": "aleja-dzieci-polskich",
+    "nazwa": "Aleja Dzieci Polskich",
+    "name_en": "Aleja Dzieci Polskich (Children of Poland Avenue)",
+    "typ": "ulica",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Aleja Dzieci Polskich",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed XIX wiekiem–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga w tym miejscu istniała już w XIX wieku jako szlak ze wsi Zerzeń do wsi Miłosna.",
+      "Około 1908 roku wzdłuż tej ulicy wybudowano odnogę kolei jabłonowskiej – tzw. „kolejkę do Miłosny”.",
+      "W 1951 roku cały ten obszar znalazł się w granicach Warszawy, a opisywana droga stała się częścią ulicy Żegańskiej.",
+      "W 1973 roku odcinkowi na wschód od ul. Bielszowickiej nadano nazwę al. Dzieci Polskich, w nawiązaniu do wznoszonego Centrum Zdrowia Dziecka.",
+      "Pętlę Międzylesie CZD oficjalnie oddano do użytku 17 sierpnia 1977 roku.",
+      "20 października 2015 roku rozpoczęto przebudowę pierwszego odcinka ulicy, a 6 maja 2016 roku przebudowaną ulicę otwarto.",
+      "Ulica ma 2 100 m długości."
+    ],
+    "ciekawostki": [
+      "W połowie 2013 roku zaproponowano trasę tramwajową przez al. Dzieci Polskich, ale specjaliści uznali taką inwestycję za bezzasadną."
+    ],
+    "summary_en": "Aleja Dzieci Polskich is a 2.1-kilometre avenue in Międzylesie, Wawer, formerly known as Żegańska. It took its present name in 1973 in connection with the Children's Health Centre (CZD) being built along it, and it was rebuilt and reopened in May 2016.",
+    "ludzie": [],
+    "dawne_nazwy": ["Żegańska"],
+    "zrodla": [{"tytul": "Warszawikia: Aleja Dzieci Polskich", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Dzieci_Polskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "egzekucja-w-wawrze",
+    "nazwa": "Egzekucja w Wawrze",
+    "name_en": "Execution in Wawer",
+    "typ": "zdarzenie",
+    "dzielnica": "Wawer",
+    "adres_dzis": "27 Grudnia",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "26/27 grudnia 1939",
+    "istnieje": true,
+    "fakty": [
+      "W nocy z 26 na 27 grudnia 1939 roku w Wawrze Niemcy dokonali zbrodni wojennej na 107 mężczyznach zamieszkujących tę okolicę.",
+      "Odwetem było zabójstwo 2 niemieckich podoficerów przez Mariana Prasułę i Stanisława Dąbka, dwóch polskich kryminalistów, w karczmie Antoniego Bartoszka przy ul. Widocznej 85.",
+      "Aresztowano 120 przypadkowych mieszkańców Wawra i Anina, wśród których znajdowała się grupa Żydów, 2 Amerykanów i 1 Rosjanin.",
+      "Aresztowanych rozstrzelano nocą na placu między ulicami Błękitną a Spiżową (obecnie 27 Grudnia).",
+      "Siedmioro aresztowanych przeżyło rozstrzelanie, a jeden zbiegł podczas egzekucji.",
+      "W 1940 roku ciała ekshumowano i pochowano m.in. na cmentarzu w Marysinie Wawerskim.",
+      "W 1947 roku Max Daume został stracony, a w 1951 roku Wilhelm Wenzl."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On the night of 26–27 December 1939, German forces executed civilians from Wawer and Anin in retaliation for the killing of two German NCOs. The shooting took place on a square now called 27 Grudnia, and the victims were buried in a common grave.",
+    "ludzie": [
+      {"kto": "Max Daume", "rola": "ppłk, zastępca dowódcy 31. pułku Ordnungspolizei, współodpowiedzialny za zbrodnię, stracony w 1947", "wiki": null},
+      {"kto": "Wilhelm Wenzl", "rola": "mjr policji, przewodniczący egzekucji, stracony w 1951", "wiki": null},
+      {"kto": "Marian Prasuła", "rola": "polski kryminalista, zabił 2 niemieckich podoficerów w karczmie", "wiki": null},
+      {"kto": "Stanisław Dąbek", "rola": "polski kryminalista, zabił 2 niemieckich podoficerów w karczmie", "wiki": null},
+      {"kto": "Antoni Bartoszek", "rola": "właściciel karczmy, w której doszło do zabójstwa, pobity i powieszony", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac między ulicami Błękitną a Spiżową"],
+    "zrodla": [{"tytul": "Warszawikia: Egzekucja w Wawrze", "url": "https://warszawa.fandom.com/pl/wiki/Egzekucja_w_Wawrze"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych. Artykuł podaje tylko obecną nazwę placu (27 Grudnia), bez numeru."
+  },
+  {
+    "id": "falenicka-sosna",
+    "nazwa": "Falenicka sosna",
+    "name_en": "Falenica Pine",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Patriotów",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Sosna ma około 50 lat, wysokość 7,5 metra i obwód pnia 212 centymetrów.",
+      "W 2018 roku PKP Polskie Linie Kolejowe wskazało sosnę jako zbyt blisko planowanego toru i przeznaczyło ją do wycinki.",
+      "20 maja 2018 roku Jacek Wiśnicki ze Stowarzyszenia Razem dla Wawra zwrócił się do PKP PLK o zgodę na ustanowienie pomnika przyrody.",
+      "W połowie czerwca PKP PLK nie wyraziło zgody na ustanowienie sosny pomnikiem przyrody.",
+      "Do prezydent Hanny Gronkiewicz-Waltz trafiła petycja z 350 podpisami.",
+      "Pod koniec 2019 roku sosna została zgłoszona do konkursu Drzewo Roku 2020 i zajęła drugie miejsce z 14 902 głosami."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Falenica Pine is an informal landmark of Falenica in Wawer, a pine tree growing beside the eastern carriageway of Patriotów street near the railway line. Railway operator PKP PLK wanted it felled in 2018, but a petition and local campaign kept it standing, and it placed second in the Tree of the Year 2020 contest.",
+    "ludzie": [
+      {"kto": "Jacek Wiśnicki", "rola": "przedstawiciel Stowarzyszenia Razem dla Wawra, inicjator starań o status pomnika przyrody", "wiki": null},
+      {"kto": "Bartosz Mróz", "rola": "współorganizator zbiórki podpisów za uznaniem drzewa za pomnik przyrody", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Falenicka sosna", "url": "https://warszawa.fandom.com/pl/wiki/Falenicka_sosna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych i numeru. Artykuł podaje tylko ulicę (przy wschodniej jezdni ul. Patriotów, na wysokości ul. Świtezianki). Wiek to szacunek z artykułu."
+  },
+  {
+    "id": "pamiatkowa-mogila-kanal-wawerski",
+    "nazwa": "Pamiątkowa mogiła nad Kanałem Wawerskim",
+    "name_en": "Memorial grave by the Wawer Canal",
+    "typ": "pomnik",
+    "dzielnica": "Wawer, Wesoła",
+    "adres_dzis": "Niemodlińska 51",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1942–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pamiątkowa mogiła znajduje się nad Kanałem Wawerskim, na tyłach posesji przy ul. Niemodlińskiej 51.",
+      "24 kwietnia 1942 roku hitlerowcy rozstrzelali w tym miejscu kilkunastu mieszkańców Anina.",
+      "Kanał Wawerski ma około 15 km długości, z czego 12 km znajduje się na terenie Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A memorial grave lies by the Wawer Canal, behind the property at Niemodlińska 51 in Wawer. On 24 April 1942 German forces shot several residents of Anin at this spot.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kanał Wawerski", "url": "https://warszawa.fandom.com/pl/wiki/Kanał_Wawerski"}],
+    "pewnosc": "srednia",
+    "uwagi": "Mogiła leży na tyłach posesji przy Niemodlińskiej 51, a nie przy samej ulicy. Trzeci fakt dotyczy kanału, nie mogiły."
+  },
+  {
+    "id": "kosciol-wniebowziecia-nmp-zerzen",
+    "nazwa": "Kościół Wniebowzięcia Najświętszej Maryi Panny",
+    "name_en": "Church of the Assumption of the Blessed Virgin Mary (Zerzeń)",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Trakt Lubelski 157",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1403–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy drewniany kościół, ufundowany przez rodzinę Zerzeńskich, powstał w tym miejscu już w 1403 roku.",
+      "W 1406 roku biskup poznański Wojciech Jastrzębiec erygował przy kościele parafię.",
+      "Kościół został odbudowany do 1667 roku, a 10 lipca konsekrowany przez biskupa Stanisława Święcickiego.",
+      "Nowy, murowany kościół powstał w latach 1880-1888 staraniem ks. Aleksandra Kubina z fundacji hr. Aleksandry Augustowej Potockiej, według projektu architekta Konstantego Wojciechowskiego.",
+      "W 1944 roku kościół został zbombardowany; zniszczenia oceniono na 80%.",
+      "Odbudowę całej świątyni zakończono do 1976 roku, a poświęcił ją kardynał Stefan Wyszyński."
+    ],
+    "ciekawostki": [
+      "W 1941 roku, gdy Niemcy zażądali wydania trzech dzwonów, mieszkańcy ukryli dzwon „Kazimierz” w stodole w Zastowie i w zamian wydali dzwon z sygnaturki; „Kazimierz” przetrwał do dziś."
+    ],
+    "summary_en": "The neo-Gothic parish church at Trakt Lubelski 157 in Zerzeń, Wawer, stands on a site where a wooden church was first built in 1403. The present brick church was built in 1880–1888 and rebuilt after bombing in the Second World War, with the work completed in 1976.",
+    "ludzie": [
+      {"kto": "Wojciech Jastrzębiec", "rola": "biskup poznański, który w 1406 roku erygował parafię", "wiki": null},
+      {"kto": "Aleksander Kubin", "rola": "ks., proboszcz parafii zerzeńskiej, inicjator budowy murowanego kościoła w latach 1880–1888", "wiki": null},
+      {"kto": "Konstanty Wojciechowski", "rola": "architekt, autor projektu murowanego kościoła", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał, poświęcił odbudowany kościół w 1976 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kościół Wniebowzięcia Najświętszej Maryi Panny", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Wniebowzięcia_Najświętszej_Maryi_Panny"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych; adres z opisu artykułu. Od 2006 roku kościół jest nocą iluminowany."
+  }
+]

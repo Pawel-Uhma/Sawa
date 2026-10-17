@@ -1,0 +1,35 @@
+[
+  {
+    "id": "budynek-xxi-lo-metrykantow",
+    "nazwa": "Budynek XXI Liceum Ogólnokształcącego im. Hugona Kołłątaja",
+    "name_en": "Building of the 21st Hugo Kołłątaj Secondary School",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Metrykantów",
+    "adres_historyczny": null,
+    "lat": 52.20996889,
+    "lon": 20.97757694,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szkoła kontynuuje tradycje II Męskiego Gimnazjum i Liceum im. Hugona Kołłątaja, utworzonego w 1921 roku, które od 1927 roku mieściło się w tych samych budynkach.",
+      "Budynki wzniesiono według projektu architekta Tadeusza Szaniora, z dwoma mieszkalnymi oficynami po bokach i salą gimnastyczną na osi centralnej; były jednymi z nowocześniejszych budynków szkolnych w przedwojennej Warszawie.",
+      "W czasie okupacji hitlerowskiej budynki szkoły zajęła niemiecka żandarmeria.",
+      "W czasie powstania warszawskiego w szkolnej sali gimnastycznej oddziały RONA urządziły krematorium, w którym palono zwłoki zmarłych i zamordowanych więźniów obozu przejściowego Zieleniak.",
+      "Budynki odbudowano w latach 1948–1949.",
+      "W 2012 roku przed wejściem od ulicy Metrykantów odsłonięto Głaz Marszałka Józefa Piłsudskiego, który był zakopany przez kilkadziesiąt lat na boisku liceum."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The school buildings on Metrykantów Street in Ochota, designed by Tadeusz Szanior and used by the Kołłątaj gimnazjum from 1927. During the Warsaw Uprising the gymnasium hall was used as a crematorium by RONA units.",
+    "ludzie": [
+      {"kto": "Tadeusz Szanior", "rola": "architekt, autor projektu budynków szkolnych", "wiki": null},
+      {"kto": "Władysław Malczewski", "rola": "nauczyciel historii i dyrektor szkoły w latach 1921–1937, poległ w powstaniu warszawskim", "wiki": null},
+      {"kto": "Józef Miernik", "rola": "nauczyciel matematyki i dyrektor w latach 1937–1943, rozstrzelany w publicznej egzekucji w 1943", "wiki": null}
+    ],
+    "dawne_nazwy": ["II Męskie Gimnazjum i Liceum im. Hugona Kołłątaja"],
+    "zrodla": [{"tytul": "Wikipedia: XXI Liceum Ogólnokształcące im. Hugona Kołłątaja w Warszawie", "url": "https://pl.wikipedia.org/wiki/XXI_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_im._Hugona_Ko%C5%82%C5%82%C4%85taja_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku budowy budynków, tylko rok przeprowadzki gimnazjum (1927); okres ustawiony od tej daty."
+  }
+]

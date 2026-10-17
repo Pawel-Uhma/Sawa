@@ -1,0 +1,247 @@
+[
+  {
+    "id": "robyg-business-center",
+    "nazwa": "Robyg Business Center",
+    "name_en": "Robyg Business Center",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Aleja Rzeczypospolitej 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2012–2015",
+    "istnieje": true,
+    "fakty": [
+      "Prace konstrukcyjne przy budynku biurowo-konferencyjnym rozpoczęto na początku lipca 2012 roku, a budowę kompleksu rozpoczęto w lutym 2012 roku, od uzyskania pozwolenia na budowę.",
+      "Pierwszy etap, czyli budynek frontowy, oddano do użytku w czerwcu 2013 roku, a 16 marca 2013 roku otwarto w budynku supermarket Alma.",
+      "W lipcu 2014 roku Robyg odkupił od spółki Wildetio LTD wszystkie udziały w obiekcie.",
+      "W grudniu 2014 roku spółka Robyg sprzedała budynek firmie Millennium Leasing na zasadzie leasingu finansowego i operacyjnego za łączną kwotę ponad 19 mln euro.",
+      "Budowa budynku została zakończona w 2015 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An office building in the southern part of Miasteczko Wilanów, designed by Atelier 3 Girtler & Girtler for the Robyg group. Construction began in 2012 and the building was completed in 2015.",
+    "ludzie": [
+      {"kto": "Marta Girtler-Szymborska", "rola": "projektantka budynku (Atelier 3 Girtler & Girtler)", "wiki": null},
+      {"kto": "Ryszard Girtler", "rola": "projektant budynku (Atelier 3 Girtler & Girtler)", "wiki": null},
+      {"kto": "Wojciech Wierzbicki", "rola": "projektant budynku (Atelier 3 Girtler & Girtler)", "wiki": null},
+      {"kto": "Łukasz Kozioł", "rola": "projektant budynku (Atelier 3 Girtler & Girtler)", "wiki": null},
+      {"kto": "Witold Rybiński", "rola": "autor konstrukcji projektu, pracownia Rybcent", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Robyg Business Center", "url": "https://warszawa.fandom.com/pl/wiki/Robyg_Business_Center"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sawa-wilanow",
+    "nazwa": "Sawa Wilanów",
+    "name_en": "Sawa Wilanów",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Aleja Rzeczypospolitej 33",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2011–2016",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy etap osiedla zrealizowano w latach 2011-2012 według projektu pracowni Plus3Architekci dla spółki BRE Property Partner.",
+      "Budynki pierwszego etapu oddano do użytku w grudniu 2012 roku.",
+      "W pierwszym etapie wybudowano około 110 mieszkań o powierzchni od 30 do 107 metrów kwadratowych.",
+      "Pod koniec 2014 roku rozpoczęła się realizacja drugiego etapu, w ramach którego powstaną budynki nr 3 i nr 4; mają być gotowe w pierwszym kwartale 2016 roku.",
+      "Docelowo w ramach osiedla ma powstać siedem budynków mieszkalnych, a na całym osiedlu znajdzie się 321 lokali mieszkalnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential estate at Aleja Rzeczypospolitej 33 in Miasteczko Wilanów. The first two buildings were finished in December 2012, and the planned seven buildings will have 321 apartments in total.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Sawa Wilanów", "url": "https://warszawa.fandom.com/pl/wiki/Sawa_Wilanów"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-dostatnia",
+    "nazwa": "Ulica Dostatnia",
+    "name_en": "Dostatnia Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Dostatnia",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XXI wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na początku XXI wieku, w ramach budowy nowych osiedli mieszkaniowych na terenie byłej wsi Zawady.",
+      "Ulica jest jednojezdniowa, bez ścieżek rowerowych, i odchodzi od ul. Zaściankowej.",
+      "Początkowy odcinek (numery od 1 do 20) kończy się na granicy dużego sadu należącego do gospodarstwa przy Sytej 112.",
+      "Długość ulicy wynosi 470 m."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short residential access street in Zawady, Wilanów, built at the start of the 21st century on the site of the former village of Zawady.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Dostatnia", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Dostatnia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko nazwę ulicy, bez numeru."
+  },
+  {
+    "id": "ulica-lukasza-drewny",
+    "nazwa": "Ulica Łukasza Drewny",
+    "name_en": "Łukasz Drewny Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Łukasza Drewny",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1892–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1892-1957 biegły nią tory kolei wilanowskiej.",
+      "Swoją nazwę otrzymała 5 grudnia 1977 roku.",
+      "Ulica rozpoczyna się granicą miasta z Konstancinem-Jeziorną, jako przedłużenie ul. Warszawskiej, a kończy skrzyżowaniem z ul. Przyczółkową.",
+      "Patronem ulicy jest Łukasz Drewno, warszawski aptekarz. W okresie epidemii 1624–1626 pełnił funkcję burmistrza powietrznego Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A long street in Wilanów, part of Wisłostrada, named after the Warsaw pharmacist Łukasz Drewno. Tracks of the Wilanów railway ran along it from 1892 to 1957.",
+    "ludzie": [
+      {"kto": "Łukasz Drewno", "rola": "warszawski aptekarz, patron ulicy; w okresie epidemii 1624–1626 burmistrz powietrzny Warszawy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Drewny", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Drewny"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. W artykule patron figuruje jako „Łukasz Drewno”."
+  },
+  {
+    "id": "ulica-hektarowa",
+    "nazwa": "Ulica Hektarowa",
+    "name_en": "Hektarowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Hektarowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica leży na terenie przyłączonym do Warszawy w 1951 roku i była kiedyś jedną z dróg lokalnych wsi Zawady.",
+      "Jako ulica Warszawy uzyskała nazwę w 1960 roku.",
+      "Nazwa pochodzi od jednostki powierzchni hektar i wpisuje się w nazewnictwo ulic w rejonie Zawad i Kępy Zawadowskiej, którym nadano nazwy nawiązujące do systemu miar.",
+      "Ulica odchodzi od ul. Sytej i ma długość 130 m."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in Zawady, Wilanów, branching off Sytej. It received its name in 1960 and its name refers to the hectare, like other streets in the area named after units of measure.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Hektarowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Hektarowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru."
+  },
+  {
+    "id": "ulica-herbu-szreniawa",
+    "nazwa": "Ulica Herbu Szreniawa",
+    "name_en": "Herbu Szreniawa Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Herbu Szreniawa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga powstała na pierwszym odcinku, od budynków pod adresami Sarmacka 18 i 20 do ul. Kazachskiej, około 2006 roku, wraz z pierwszymi budowanymi tam blokami.",
+      "Ulica uzyskała nazwę 2 października 2008 roku na odcinku od ul. Sarmackiej do Kazachskiej; odcinek do ul. Przyczółkowej otrzymał ją 8 października 2009 roku, a ostatnia część od Sarmackiej do al. Rzeczypospolitej 26 lutego 2015 roku.",
+      "W 2012 roku pojawił się pomysł nazwania ronda z ul. Sarmacką jako rondo Lemingów; ostatecznie nie zebrano wystarczającej liczby podpisów.",
+      "Nazwa upamiętnia polski herb szlachecki, Szreniawę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Miasteczko Wilanów on Błonia Wilanowskie, linking Aleja Rzeczypospolitej with Przyczółkowa. It was built around 2006 alongside the first blocks and got its name in stages between 2008 and 2015.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Herbu Szreniawa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Herbu_Szreniawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. Adres „Sarmacka 18 i 20” pojawia się tylko jako punkt odniesienia."
+  },
+  {
+    "id": "ulica-historyczna",
+    "nazwa": "Ulica Historyczna",
+    "name_en": "Historyczna Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Historyczna",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2014–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana 11 września 2014 roku.",
+      "Nazwa została zaopiniowana na sesji rady dzielnicy Wilanów 15 maja 2014 roku.",
+      "Początkowo nazwę „Historyczna” miała nosić ulica w pobliżu Pałacu w Wilanowie, ale dzielnicowi radni nie wyrazili na to zgody.",
+      "Ulica łączy ul. Wiedeńską ze skrzyżowaniem ul. Drewny i ul. Przyczółkowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in Wilanów linking Wiedeńska with the junction of Drewny and Przyczółkowa. It was named on 11 September 2014, after a district council opinion in May of that year.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Historyczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Historyczna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru."
+  },
+  {
+    "id": "ulica-klimczaka",
+    "nazwa": "Ulica Klimczaka",
+    "name_en": "Klimczaka Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Klimczaka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1836–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1951 roku trakt znalazł się w granicach Warszawy, a ulica otrzymała obecną nazwę – Franciszka Klimczaka – 21 grudnia 1962 roku.",
+      "W latach 90. XX wieku ulica została włączona w projekt Miasteczka Wilanów jako jedna z trzech głównych osi planistycznych tego założenia.",
+      "23 października 2006 roku odcinek na zachód od planowanej Al. Rzeczypospolitej otrzymał nazwę Księdza Prymasa Augusta Hlonda, i do niej przypisano adresowo Świątynię Opatrzności Bożej.",
+      "W 2009 roku przy ul. Klimczaka 5 zaczęła działać pierwsza kawiarnia w Miasteczku Wilanów.",
+      "W drugiej połowie 2014 roku ulica została przebudowana na odcinku od Al. Rzeczypospolitej do ul. Sarmackiej; pod koniec roku oddano też do użytku budynek urzędu dzielnicy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in the western part of Wilanów and the Miasteczko Wilanów project, named after the farmer and stucco-worker Franciszek Klimczak. Its planning began in the 1990s with the Temple of Divine Providence and the district office.",
+    "ludzie": [
+      {"kto": "Franciszek Klimczak", "rola": "rolnik i sztukator z Wilanowa, patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Księdza Prymasa Augusta Hlonda (odcinek na zachód od planowanej Al. Rzeczypospolitej, od 23.10.2006)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Klimczaka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Klimczaka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. Dane o obiektach przy ulicy (np. Urząd Dzielnicy Wilanów przy nr 2/4) pominięto."
+  }
+]

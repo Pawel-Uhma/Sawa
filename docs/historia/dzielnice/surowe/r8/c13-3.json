@@ -1,0 +1,145 @@
+[
+  {
+    "id": "jamnik-budynek",
+    "nazwa": "Jamnik",
+    "name_en": "Jamnik (Dachshund) housing block",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kijowska 11",
+    "adres_historyczny": null,
+    "lat": 52.2533,
+    "lon": 21.0497,
+    "lokalizacja": "dokladna",
+    "okres": "1971–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony w latach 1971−1973 w południowej części osiedla Szmulowizna, naprzeciwko dworca Warszawa Wschodnia, według projektu Jana Kalinowskiego.",
+      "Inwestorem była Robotnicza Spółdzielnia Mieszkaniowa „Praga”.",
+      "Budynek ma 508 metrów długości i jest uważany za najdłuższy budynek mieszkalny w Warszawie.",
+      "Ma 430 mieszkań w 43 klatkach schodowych i 132 garaże.",
+      "W 2008 mieszkało w nim ponad 1200 mieszkańców.",
+      "W 2017 na bocznej ścianie budynku (od strony ul. Markowskiej) umieszczono mural z wizerunkiem jamnika."
+    ],
+    "ciekawostki": [
+      "W 2004 brytyjski zespół Travis nakręcił w budynku i na jego podwórkach teledysk Love Will Come Through."
+    ],
+    "summary_en": "Jamnik, a housing block at ul. Kijowska 11 in Praga-Północ, is described as the longest residential building in Warsaw at 508 metres. It was built in 1971–1973 on the Szmulowizna estate, opposite Warszawa Wschodnia station, and was investor-funded by the Praga housing cooperative.",
+    "ludzie": [
+      {"kto": "Jan Kalinowski", "rola": "autor projektu budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Jamnik (budynek)", "url": "https://pl.wikipedia.org/wiki/Jamnik_%28budynek%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-karola-mintera",
+    "nazwa": "Kamienica Karola Mintera",
+    "name_en": "Karol Minter's tenement house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Sierakowskiego 4 róg ul. Okrzei",
+    "adres_historyczny": null,
+    "lat": 52.2497,
+    "lon": 21.0325,
+    "lokalizacja": "dokladna",
+    "okres": "1869–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historię budynku odkrył i opisał varsavianista Janusz Sujecki na podstawie drzeworytu Józefa Holewińskiego, opublikowanego w 1869 roku w czasopiśmie „Kłosy”.",
+      "W latach 1885–1905 w wynajmowanej części budynku mieściło się VII Rządowe Gimnazjum Męskie.",
+      "W latach 1891–1897 jednym z uczniów VII Gimnazjum był Janusz Korczak.",
+      "W 1910 roku budynek sprzedano Warszawskiemu Towarzystwu Fabryk Wyrobów Metalowych i Emaliowanych „Wulkan”.",
+      "W 1924 Urząd Miasta odkupił część nieruchomości, a od 1942 był jedynym właścicielem całej kamienicy.",
+      "W 2011 kamienica została wpisana do rejestru zabytków.",
+      "Od 2006 właścicielem budynku jest spółka Port Praski. Prace przy budowie czterogwiazdkowego hotelu rozpoczęły się w 2019."
+    ],
+    "ciekawostki": [
+      "Nad oknem na pierwszym piętrze rogu kamienicy do dziś zachował się oryginalny dzwonek, pochodzący z czasów, gdy w budynku mieściła się szkoła."
+    ],
+    "summary_en": "Karol Minter's tenement house stands at the corner of ul. Sierakowskiego 4 and ul. Okrzei in Praga-Północ. In 1885–1905 part of it housed the VII State Boys' Gymnasium, which Janusz Korczak attended in 1891–1897, and it was entered in the register of monuments in 2011.",
+    "ludzie": [
+      {"kto": "Janusz Sujecki", "rola": "varsavianista, który opisał historię budynku", "wiki": null},
+      {"kto": "Janusz Korczak", "rola": "uczeń VII Gimnazjum w latach 1891–1897", "wiki": null},
+      {"kto": "Józef Holewiński", "rola": "autor drzeworytu z 1869 roku", "wiki": null},
+      {"kto": "Juliusz Kossak", "rola": "autor obrazu, na podstawie którego powstał drzeworyt", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Mintera"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica Karola Mintera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Karola_Mintera_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres od 1869 to data pierwszego znanego przedstawienia budynku, nie data budowy."
+  },
+  {
+    "id": "kamienica-nazimkow",
+    "nazwa": "Kamienica Nazimków",
+    "name_en": "Nazimek tenement house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Mała 13a",
+    "adres_historyczny": null,
+    "lat": 52.258806,
+    "lon": 21.038681,
+    "lokalizacja": "dokladna",
+    "okres": "1906–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wybudowana w latach 1906-1908 dla Romualda Nazimka.",
+      "Posiadała pięć kondygnacji z elewacją podzieloną doryckimi pilastrami, które tworzyły pseudoportyk.",
+      "Przy szczycie umieszczono owalny medalion z datą ukończenia budowy.",
+      "Na kamienicy zachował się oryginalny przedwojenny malowany szyld sklepu J. Nowickiego.",
+      "W 2005 kamienica wraz z oficyną została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W bramie przejazdowej znajdowały się, dziś ledwo widoczne, ozdoby malarskie: malowane temperą tonda ze skrzydlatymi nagimi puttami otoczone kwiatowymi girlandami i ptakami."
+    ],
+    "summary_en": "The Nazimek tenement house at ul. Mała 13a in Praga-Północ was built in 1906–1908 for Romuald Nazimek. It keeps an original pre-war painted shop sign and was entered in the register of monuments in 2005.",
+    "ludzie": [
+      {"kto": "Romuald Nazimek", "rola": "inwestor, dla którego wybudowano kamienicę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica Nazimków w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Nazimk%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-przy-ul-sprzecznej-8",
+    "nazwa": "Kamienica przy ul. Sprzecznej 8",
+    "name_en": "Tenement house at ul. Sprzeczna 8",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Sprzeczna 8",
+    "adres_historyczny": null,
+    "lat": 52.24915,
+    "lon": 21.04165,
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwuktraktowa, sześciokondygnacyjna, ceglana kamienica została wzniesiona w latach 1911−1912 dla Anny i Leona Józefa Klatczyńskich.",
+      "W kamienicy mieszkali m.in. strażacy, kolejarze i handlowcy, a także wynalazca Szczepan Łazarkiewicz.",
+      "Budynek bez większych zniszczeń przetrwał II wojnę światową. W okresie powojennym skuto z niego tynki i usunięto balkony.",
+      "W 2019 roku kamienica została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na bocznej ścianie umieszczono zachowane inicjały właścicieli „KL” z krzyżem i datą „1912”."
+    ],
+    "summary_en": "The brick tenement house at ul. Sprzeczna 8 in Praga-Północ was built in 1911–1912 for Anna and Leon Józef Klatczyński. It survived the Second World War without major damage and was entered in the register of monuments in 2019.",
+    "ludzie": [
+      {"kto": "Anna Klatczyńska", "rola": "współwłaścicielka, dla której wzniesiono kamienicę", "wiki": null},
+      {"kto": "Leon Józef Klatczyński", "rola": "współwłaściciel, dla którego wzniesiono kamienicę", "wiki": null},
+      {"kto": "Szczepan Łazarkiewicz", "rola": "wynalazca, mieszkaniec kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica przy ul. Sprzecznej 8 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ul._Sprzecznej_8_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "id": "ulica-kacik",
+    "nazwa": "Ulica Kącik",
+    "name_en": "Kącik street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Kącik",
+    "adres_historyczny": "Majolikowa",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2015–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Po dołączeniu rejonu ulicy do miasta w 1951 roku nosiła ona nazwę Parkowa.",
+      "Ulica uzyskała 23 maja 1960 roku uchwałą Rady Narodowej nazwę ulica Majolikowa.",
+      "W 1999 roku wybudowano ul. Milenijną, która podzieliła ul. Majolikową na dwie części.",
+      "26 marca 2015 roku nazwę południowego, odciętego odcinka ulicy zmieniono na ulica Kącik, po wniosku Rady Dzielnicy Białołęka.",
+      "Ulicą nie kursuje komunikacja miejska i nie są do niej przypisane żadne obiekty."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kącik is a roughly 200 m street in Tarchomin, Białołęka, running from Produkcyjna to Milenijna. It was cut off from Majolikowa street by the Milenijna road in 1999 and received its own name on 26 March 2015.",
+    "ludzie": [],
+    "dawne_nazwy": ["Majolikowa", "Parkowa"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Kącik", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kącik"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Numery z nagłówka: brak."
+  },
+  {
+    "id": "ulica-leliwitow",
+    "nazwa": "Ulica Leliwitów",
+    "name_en": "Leliwitów street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Leliwitów",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica otrzymała nazwę 5 maja 1960 roku, a po raz pierwszy na planach miasta pojawia się w 1961 roku.",
+      "Nazwa ulicy odnosi się do herbu Leliwa, którego posiadaczy nazywano właśnie Leliwitami.",
+      "Do 2012 roku ulicą można było dojechać jedynie do ul. Modlińskiej, a z drugiej strony kończyła się ona ślepym zaułkiem.",
+      "W 2012 roku, w związku z budową linii tramwajowej, dobudowano fragment ulicy Życzliwej, tworząc połączenie z ul. Myśliborską i Świderską.",
+      "Ulica jest nieutwardzona na całej długości, oprócz niewielkiego fragmentu przy skrzyżowaniu z Traktem Nadwiślańskim."
+    ],
+    "ciekawostki": [
+      "Wcześniej jedyną ulicą w jej okolicy była ulica Świderska (ob. Obrazkowa)."
+    ],
+    "summary_en": "Leliwitów is a 500 m unpaved street on the Nowy Tarchomin estate, running from Modlińska to Trakt Nadwiślański. Named in 1960 after the Leliwa coat of arms, it was a dead end on one side until 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Leliwitów", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Leliwitów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (11-29) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-lidzbarska",
+    "nazwa": "Ulica Lidzbarska",
+    "name_en": "Lidzbarska street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Lidzbarska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "okres II wojny światowej–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w czasie II wojny światowej, najprawdopodobniej w 1944 roku, gdy w tym rejonie rozegrała się duża bitwa pancerna.",
+      "Była ona wówczas prowadzącą przez pola uprawne i sady drogą ubitą przez gąsienice czołgów.",
+      "Do 1944 roku w rejonie obecnego zbiegu ulic Lidzbarskiej, Wałuszewskiej i Bohaterów istniały zabudowania dworskie z drewnianym dworkiem.",
+      "Ulica nie posiadała nazwy przed włączeniem do Warszawy i była potocznie nazywana drogą czołgową.",
+      "Obecna nazwa, pochodząca od miasta Lidzbark w województwie warmińsko-mazurskim, została nadana w 1960 roku."
+    ],
+    "ciekawostki": [
+      "Jeden z ostatnich wraków, niemiecki czołg Pantera, został prawdopodobnie pocięty i przetopiony na stal w Hucie Warszawa w połowie lat 70."
+    ],
+    "summary_en": "Lidzbarska is a 1,800 m road linking the Białołęka Dworska and Choszczówka estates, from Wałuszewska to Na Przełaj. It was formed during World War II, probably in 1944, by tanks crossing fields during a battle, and was named in 1960 after the town of Lidzbark.",
+    "ludzie": [],
+    "dawne_nazwy": ["droga czołgowa (nazwa potoczna)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Lidzbarska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Lidzbarska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (22-52) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-majolikowa",
+    "nazwa": "Ulica Majolikowa",
+    "name_en": "Majolikowa street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Majolikowa",
+    "adres_historyczny": "Parkowa",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Po dołączeniu rejonu ulicy do miasta w 1951 roku nosiła ona nazwę Parkowa.",
+      "Ulica uzyskała 23 maja 1960 roku uchwałą Rady Narodowej dzisiejszą nazwę, a ok. 1961 roku zaczęła krzyżować się z nowo utworzoną ul. Kaflową.",
+      "W 1999 roku wybudowano ul. Milenijną, która częściowo przejęła funkcję ul. Majolikowej i podzieliła ją na dwie części.",
+      "26 marca 2015 roku nazwę południowego, odciętego odcinka ulicy zmieniono na ul. Kącik, a odcinkowi od ul. Mehoffera do Pomorskiej nadano nazwę Majolikowa.",
+      "Od 1 września 2008 roku ulicą kursuje linia autobusowa 211."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od majoliki, rodzaju ceramiki, i została nadana zgodnie z ceramicznym kluczem, obejmującym ulice Ceramiczna, Ćmielowska, Jagmina i Kaflowa."
+    ],
+    "summary_en": "Majolikowa is a roughly 1 km street in Tarchomin, Białołęka. Named in 1960 after majolica ceramics under a local ceramic naming scheme, it was split by Milenijna in 1999, and its southern stretch became Kącik in 2015.",
+    "ludzie": [],
+    "dawne_nazwy": ["Parkowa"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Majolikowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Majolikowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (21-29) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-majorki",
+    "nazwa": "Ulica Majorki",
+    "name_en": "Majorki street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Majorki",
+    "adres_historyczny": "Chopina",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 30. XX wieku jako droga przedwojennego osiedla Białołęka Dworska, nosząc wówczas nazwę ul. Chopina.",
+      "W 1934 roku staraniem mieszkańców w prywatnym domu przy ulicy powstała czterooddziałowa szkoła powszechna.",
+      "Po wojnie, około 1957 roku, ulicę utwardzono trylinką, która do dziś stanowi jej nawierzchnię.",
+      "Ulica służyła samochodom dowożącym materiały budowlane do powstającego „Domu Matysiaków w Białołęce”.",
+      "Obecna nazwa została nadana w 1960 roku i pochodzi od hiszpańskiej wyspy na Morzu Śródziemnym."
+    ],
+    "ciekawostki": [
+      "Majorki 53 to dawna siedziba osiedlowego klubu sportowego Junak, dziś mieści się tu przychodnia rejonowa.",
+      "Ulicę zbudowano bez udziału fachowców, dlatego jej nawierzchnia i profil pozostawiają wiele do życzenia."
+    ],
+    "summary_en": "Majorki is an 850 m street in Białołęka Dworska, built in the 1930s as Chopina street. It was paved with interlocking block paving around 1957 and renamed Majorki in 1960 after a Mediterranean island.",
+    "ludzie": [],
+    "dawne_nazwy": ["Chopina"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Majorki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Majorki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (10-53) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-modlinska",
+    "nazwa": "Ulica Modlińska",
+    "name_en": "Modlińska street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Modlińska",
+    "adres_historyczny": "Trakt do Jabłonny",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 20. XIX wieku jako trakt łączący Pragę z Jabłonną i Modlinem.",
+      "Ulica nosiła różne nazwy, takie jak Trakt do Jabłonny, Szosa Kowieńska, Szosa Petersburska albo Szosa Modlińska.",
+      "Nazwa pochodzi od Modlina; ulica nosi ją od 1919 roku.",
+      "Częściowo stanowi fragment drogi krajowej nr 61.",
+      "Ulica Modlińska ma 9 400 m długości i jest szóstą najdłuższą ulicą w mieście.",
+      "W przyszłości ulica ma zostać rozbudowana do klasy drogi głównej, a na odcinku Żerań – Tarchomin ma powstać linia tramwajowa."
+    ],
+    "ciekawostki": [
+      "Pod adresem Modlińska 310/312 stoi Fort Piontek; dawniej znajdował się tu dom z klasami szkoły powszechnej."
+    ],
+    "summary_en": "Modlińska is a 9.4 km main road in Białołęka and Praga-Północ, running from Toruńska to the city boundary. It began in the 1820s as the road to Jabłonna and Modlin, takes its name from Modlin, and is part of national road 61.",
+    "ludzie": [],
+    "dawne_nazwy": ["Trakt do Jabłonny", "Szosa Kowieńska", "Szosa Petersburska", "Szosa Modlińska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Modlińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Modlińska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica z nagłówka: Białołęka, Praga-Północ (wpisana pierwsza). Zakres numerów 4-389; w adres_dzis sama nazwa ulicy. Rekord z ulicy nie obejmuje osobnych obiektów (np. Modlińska 4, 257), które mają osobne rekordy."
+  },
+  {
+    "id": "ulica-claudia-monteverdiego",
+    "nazwa": "Ulica Claudia Monteverdiego",
+    "name_en": "Monteverdi street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Claudia Monteverdiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2019–2020",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 2019-2020 w miejscu dawnych pól uprawnych i nieużytków, podczas budowy osiedla budynków wielorodzinnych Miasteczko Greenwood.",
+      "Przy ulicy znajduje się 15 bloków osiedla.",
+      "Patronem ulicy jest Claudio Monteverdi, włoski kompozytor, violista, śpiewak i ksiądz katolicki, jeden z pierwszych wielkich twórców oper.",
+      "Nazwa ulicy została nadana 27 lutego 2020 roku zgodnie z „operowym” kluczem nazewniczym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Monteverdi Street is a 300 m street on the Augustówek estate in Kobiałka, Białołęka, running from Verdiego street towards the Długa river. It was built in 2019-2020 on former fields and named after the Italian composer Claudio Monteverdi under the opera naming scheme.",
+    "ludzie": [
+      {"kto": "Claudio Monteverdi", "rola": "patron ulicy, włoski kompozytor, jeden z pierwszych wielkich twórców oper", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Monteverdiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Monteverdiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek i tytuł: „Claudia Monteverdiego”, w treści patron: „Claudio Monteverdi”; w adres_dzis forma z nagłówka. Zakres numerów 1-14 pominięty."
+  },
+  {
+    "id": "ulica-paavo-nurmiego",
+    "nazwa": "Ulica Paavo Nurmiego",
+    "name_en": "Paavo Nurmi street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Paavo Nurmiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica biegnie między ulicami Ostródzką i Piasta Kołodzieja i znajduje się w całości na osiedlu Viking II.",
+      "Nazwa ulicy pochodzi od Paavo Nurmiego, fińskiego lekkoatlety, dziewięciokrotnego mistrza olimpijskiego.",
+      "Nazwę nadano zgodnie z kluczem skandynawskim, powiązanym z nazwą osiedla."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Paavo Nurmi Street is a 550 m street on the Viking II estate in Białołęka, between Ostródzka and Piasta Kołodzieja streets. It is named after the Finnish runner Paavo Nurmi, nine-time Olympic champion.",
+    "ludzie": [
+      {"kto": "Paavo Nurmi", "rola": "patron ulicy, fiński lekkoatleta, dziewięciokrotny mistrz olimpijski", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Nurmiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Nurmiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów 20-89; nagłówek podaje osiedle Brzeziny, tekst Viking II."
+  }
+]

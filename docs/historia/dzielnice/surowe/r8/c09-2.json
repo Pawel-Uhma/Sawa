@@ -1,0 +1,119 @@
+[
+  {
+    "id": "warszawa-szczesliwice-stacja",
+    "nazwa": "Stacja Warszawa Szczęśliwice",
+    "name_en": "Warszawa Szczęśliwice railway station",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Drawska",
+    "adres_historyczny": null,
+    "lat": 52.2017,
+    "lon": 20.9486,
+    "lokalizacja": "przyblizona",
+    "okres": "1927–1975",
+    "istnieje": false,
+    "fakty": [
+      "Stacja Szczęśliwice została wybudowana w 1927 roku.",
+      "Znajdowała się na osiedlu Szczęśliwice, przy ulicy Drawskiej, między ul. Włodarzewską a linią kolejową radomską.",
+      "W 1932 roku wybudowano odgałęzienie do stacji Warszawa Włochy EKD, zlikwidowane w 1971 roku.",
+      "Stację zlikwidowano w styczniu 1975 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A railway station in the Szczęśliwice estate in Ochota, built in 1927 on the Radom line. It was closed in January 1975.",
+    "ludzie": [],
+    "dawne_nazwy": ["Szczęśliwice"],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Szczęśliwice", "url": "https://pl.wikipedia.org/wiki/Warszawa_Szcz%C4%99%C5%9Bliwice"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres podany tylko jako ulica (przy ul. Drawskiej), bez numeru."
+  },
+  {
+    "id": "warszawa-zachodnia-wkd",
+    "nazwa": "Przystanek Warszawa Zachodnia WKD",
+    "name_en": "Warszawa Zachodnia WKD stop",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Dworzec Zachodni (peron nr 1)",
+    "adres_historyczny": null,
+    "lat": 52.2194,
+    "lon": 20.9656,
+    "lokalizacja": "dokladna",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W pierwszej połowie 2012 roku, przed mistrzostwami EURO 2012, przeprowadzono modernizację peronu.",
+      "W 2022 roku dzienna wymiana pasażerska na przystanku wyniosła 3 000–4 000 osób.",
+      "Przystanek składa się z jednego peronu wyspowego, na którym znajduje się tablica z nazwą stacji i rozkładem jazdy oraz elektroniczne tablice systemu informacji pasażerskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Warsaw Suburban Railway (WKD) stop on platform 1 of Warszawa Zachodnia station in Ochota. The platform was modernised in 2012 ahead of Euro 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Zachodnia WKD", "url": "https://pl.wikipedia.org/wiki/Warszawa_Zachodnia_WKD"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku otwarcia przystanku."
+  },
+  {
+    "id": "warszawa-srodmiescie-wkd",
+    "nazwa": "Stacja Warszawa Śródmieście WKD",
+    "name_en": "Warszawa Śródmieście WKD station",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "skrzyżowanie al. Jerozolimskich i al. Jana Pawła II",
+    "adres_historyczny": null,
+    "lat": 52.2275,
+    "lon": 20.999722,
+    "lokalizacja": "dokladna",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stację otwarto 8 grudnia 1963 roku.",
+      "Powodem jej powstania było przeniesienie linii WKD z ulicy Nowogrodzkiej do wykopu linii średnicowej.",
+      "Stację zaprojektował zespół kierowany przez Arseniusza Romanowicza.",
+      "W 2020 roku żelazobetonowa wiata nad wejściem na stację została wpisana do rejestru zabytków.",
+      "W 1995 roku na stacji nagrano część teledysku „Wielka ulewo” Grzegorza Turnaua, w którym wzięli udział Zbigniew Zamachowski i Wojciech Malajkat."
+    ],
+    "ciekawostki": [
+      "W 2006 roku na stacji nakręcono kilka scen do 54. odcinka serialu telewizyjnego „Kryminalni”."
+    ],
+    "summary_en": "A Warsaw Suburban Railway (WKD) station on the north-west side of the Aleje Jerozolimskie and Aleja Jana Pawła II junction in Ochota. Opened in December 1963, its canopy was listed as a monument in 2020.",
+    "ludzie": [
+      {"kto": "Arseniusz Romanowicz", "rola": "kierował zespołem, który zaprojektował stację", "wiki": null},
+      {"kto": "Grzegorz Turnau", "rola": "muzyk, na stacji nagrano część teledysku „Wielka ulewo” (1995)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Śródmieście WKD", "url": "https://pl.wikipedia.org/wiki/Warszawa_%C5%9Ar%C3%B3dmie%C5%9Bcie_WKD"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE. Stacja leży w dzielnicy Śródmieście, a nagłówek podaje Ochotę; zachowano dzielnicę z nagłówka."
+  },
+  {
+    "id": "gmach-wolnej-wszechnicy-polskiej",
+    "nazwa": "Gmach Wolnej Wszechnicy Polskiej",
+    "name_en": "Free Polish University building",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Banacha 2",
+    "adres_historyczny": "ul. Opaczewska 2a",
+    "lat": 52.2103,
+    "lon": 20.9818,
+    "lokalizacja": "przyblizona",
+    "okres": "1929–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wolna Wszechnica Polska od roku 1929 mieściła się w nowo wybudowanym gmachu przy ul. Opaczewskiej 2a (obecnie ul. Banacha 2), zaprojektowanym przez Pawła Wędziagolskiego.",
+      "Wcześniej uczelnia mieściła się w budynku Towarzystwa Kursów Naukowych przy ul. Śniadeckich 8.",
+      "Wzniesiono także trzy kamienice z mieszkaniami dla pracowników Wszechnicy przy ul. Grójeckiej 40a, 41 i 43.",
+      "Współcześnie gmach jest użytkowany przez Siły Zbrojne Rzeczypospolitej Polskiej (m.in. Wojskowe Centrum Edukacji Obywatelskiej) i Uniwersytet Warszawski (m.in. Wydział Matematyki, Informatyki i Mechaniki)."
+    ],
+    "ciekawostki": [
+      "Uczelnia miała opinię lewicowej. W odróżnieniu od innych warszawskich uczelni nie dochodziło na niej do antysemickich ekscesów i nie wprowadzono tam getta ławkowego."
+    ],
+    "summary_en": "The Free Polish University (Wolna Wszechnica Polska) moved in 1929 into a new building at Opaczewska 2a, now Banacha 2, designed by Paweł Wędziagolski. The building is now used by the Armed Forces and by the University of Warsaw.",
+    "ludzie": [
+      {"kto": "Paweł Wędziagolski", "rola": "projektant gmachu przy ul. Opaczewskiej 2a", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Opaczewska 2a"],
+    "zrodla": [{"tytul": "Wikipedia: Wolna Wszechnica Polska", "url": "https://pl.wikipedia.org/wiki/Wolna_Wszechnica_Polska"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka artykułu o uczelni; artykuł nie podaje wprost, że leżą na działce gmachu, stąd lokalizacja przyblizona. Kamienice przy Grójeckiej to osobne budynki bez współrzędnych w tekście."
+  }
+]

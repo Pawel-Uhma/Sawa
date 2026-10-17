@@ -1,0 +1,588 @@
+[
+  {
+    "id": "ulica-katowicka",
+    "nazwa": "ulica Katowicka",
+    "name_en": "Katowicka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0517,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926 r. Nazwa nawiązuje do Katowic.",
+      "Najstarsza część zabudowy, czyli Kolonia Łaskiego, pochodzi z roku 1926.",
+      "Od roku 1928 na ulicy zaczęły pojawiać się pojedyncze wille, inspirowane m.in. projektami Le Corbusiera.",
+      "Po II wojnie światowej odcinek ulicy między Zwycięzców i Obrońców (ok. 250 m) wytypowano do zrekonstruowania przez Biuro Odbudowy Stolicy (BOS) jako „ulicę Warszawy przyszłości”.",
+      "Przebudowę prowadził zespół architektów pod kierunkiem Bohdana Lacherta, a prace rzeźbiarzy pod kierunkiem prof. Tadeusza Breyera.",
+      "Przy ulicy znajdowała się Ambasada Republiki Federalnej Niemiec, przez którą latem i jesienią 1989 roku ok. 6 tys. obywateli NRD usiłowało przedostać się na Zachód.",
+      "W 2010 roku wydarzenia te upamiętniono pomnikiem pt. „Przez Warszawę ku Wolności”."
+    ],
+    "ciekawostki": [
+      "Najlepiej zachowanym elementem powojennej dekoracji ulicy jest płaskorzeźba Plon z 1947 roku, odnowiona w 2011 roku."
+    ],
+    "summary_en": "Katowicka Street is a residential street on Saska Kępa in Praga-Południe, named in 1926. Much of its interwar villa architecture is listed as monuments, and after WWII a section was reconstructed as an experimental 'street of the future'. The West German embassy here was the focus of the 1989 GDR citizens' attempt to reach the West.",
+    "ludzie": [
+      {"kto": "Bohdan Lachert", "rola": "architekt, kierował zespołem przebudowy odcinka ulicy przez BOS", "wiki": null},
+      {"kto": "Tadeusz Breyer", "rola": "prof., kierował pracą grupy rzeźbiarzy przy dekoracji ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Katowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Katowicka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka). Niektóre fakty o zabudowie (Kolonia Łaskiego) powtarzają się w rekordzie ulicy Obrońców."
+  },
+  {
+    "id": "katowicka-7a-dom-avenariusa",
+    "nazwa": "Dom Avenariusa (ul. Katowicka 7A)",
+    "name_en": "Avenarius House (7A Katowicka Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka 7A",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0517,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom z 1930 roku, pierwotnie zaprojektowany przez Stanisława Barylskiego.",
+      "W 1938 roku przerobili go Bohdan Lachert i Józef Szanajca.",
+      "W czasie przebudowy powstała przeszklona klatka schodowa, która jest pierwszym w Polsce przykładem zastosowania motywu béton brut.",
+      "Ściana wieży, nosząca ślady ostrzału z okresu II wojny światowej, zwieńczona jest perforowanym daszkiem.",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Jego mieszkańcem był m.in. Lech Niemojewski.",
+      "Ilustracja przedstawiająca ten dom znalazła się na okładce książki „Saska Kępa” Hanny Faryny-Paszkiewicz."
+    ],
+    "summary_en": "Villa 7A on Katowicka Street was built around 1930 for the Avenarius family to a design by Stanisław Barylski. In 1938 Bohdan Lachert and Józef Szanajca remodelled it, adding a glazed staircase that is the first Polish example of béton brut. It is a listed monument.",
+    "ludzie": [
+      {"kto": "Stanisław Barylski", "rola": "pierwotny projektant domu", "wiki": null},
+      {"kto": "Bohdan Lachert", "rola": "przebudowa domu w 1938", "wiki": null},
+      {"kto": "Józef Szanajca", "rola": "przebudowa domu w 1938", "wiki": null},
+      {"kto": "Lech Niemojewski", "rola": "mieszkaniec domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Katowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Katowicka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dom rodziny Avenariusów. Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "katowicka-7-siedziba-bos",
+    "nazwa": "Dom przy ul. Katowickiej 7 (siedziba Biura Odbudowy Stolicy)",
+    "name_en": "House at 7 Katowicka Street (seat of the Warsaw Reconstruction Office)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka 7",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0517,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom z ok. 1930 roku.",
+      "Mieściła się w nim siedziba Biura Odbudowy Stolicy (BOS).",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A c. 1930 house at 7 Katowicka Street that housed the headquarters of the Warsaw Reconstruction Office (BOS) after WWII. It is a listed monument.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Katowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Katowicka_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst nie podaje, od kiedy działała tu siedziba BOS. Brak własnych współrzędnych."
+  },
+  {
+    "id": "zespol-szkol-nr-77-katowicka",
+    "nazwa": "Zespół Szkół nr 77 (ul. Katowicka / Zwycięzców)",
+    "name_en": "School Complex No. 77 (Katowicka / Zwycięzców corner)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka (róg ul. Zwycięzców)",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0517,
+    "lokalizacja": "przyblizona",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt budynku powstał jeszcze przed zadekretowaniem w Polsce socrealizmu (1949).",
+      "Jego autorami są Barbara i Hieronim Karpowiczowie.",
+      "Elewację pokrywa charakterystyczna ceglana dekoracja z lat 1953–1954.",
+      "Na ścianie od strony Katowickiej znajduje się płaskorzeźba Warszawska Syrenka, wykonana przez Wojciecha Czerwosza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The school building on the corner of Katowicka and Zwycięzców streets is the one non-residential building on the street. Designed before socialist realism was imposed in 1949, it has brick decoration from 1953–1954 and a Warsaw Mermaid relief by Wojciech Czerwosz.",
+    "ludzie": [
+      {"kto": "Barbara Karpowicz", "rola": "współautorka projektu budynku", "wiki": null},
+      {"kto": "Hieronim Karpowicz", "rola": "współautor projektu budynku", "wiki": null},
+      {"kto": "Wojciech Czerwosz", "rola": "autor płaskorzeźby Warszawskiej Syrenki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Katowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Katowicka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres 1949 to rok zadekretowania socrealizmu, nie rok budowy; pierwotny rok projektu nie jest podany."
+  },
+  {
+    "id": "dom-lachertow-katowicka-9",
+    "nazwa": "Willa Lachertów (ul. Katowicka 9/11/11A)",
+    "name_en": "Lachert Villa (9/11/11A Katowicka Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka 9/11/11A",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0517,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–1929–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom trójrodzinny Lachertów, projektu Bohdana Lacherta i Józefa Szanajcy, z lat 1928–1929.",
+      "Jest jednym z pierwszych w Polsce przykładów zastosowania pięciu zasad nowoczesnej architektury sformułowanych przez Le Corbusiera.",
+      "Szkieletowa konstrukcja pozwoliła na swobodne formowanie wnętrz i elewacji.",
+      "Od strony ulicy zastosowano wąskie pasmowe okna, a tył został przeszklony.",
+      "W części pod numerem 9 mieszkał współprojektant domu Bohdan Lachert; obecnie jest to siedziba Fundacji Dom Holenderski.",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-family house built in 1928–1929 by Bohdan Lachert and Józef Szanajca, one of the first Polish buildings to apply Le Corbusier's five points of modern architecture. Lachert lived in the part at No. 9, which now houses the Dutch House Foundation. It is a listed monument.",
+    "ludzie": [
+      {"kto": "Bohdan Lachert", "rola": "współprojektant domu, mieszkał pod numerem 9", "wiki": null},
+      {"kto": "Józef Szanajca", "rola": "współprojektant domu", "wiki": null},
+      {"kto": "Le Corbusier", "rola": "autor pięciu zasad architektury, na których oparto projekt", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Katowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Katowicka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "willa-romanow-katowicka-10",
+    "nazwa": "Willa Romanów (ul. Katowicka 10)",
+    "name_en": "Roman Villa (10 Katowicka Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka 10",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0517,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa z lat 30. XX wieku, zaprojektowana przez Mariana Lalewicza.",
+      "Budynek jest pozbawiony historyzujących detali.",
+      "Wyróżnia go przeszklony, półokrągły salon, którego elewacja podzielona jest pionowymi elementami.",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1930s villa at 10 Katowicka Street, designed by Marian Lalewicz for the Roman family. Its glazed semicircular living room with vertical divisions is its main feature. It is a listed monument.",
+    "ludzie": [
+      {"kto": "Marian Lalewicz", "rola": "projektant willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Katowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Katowicka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje „willę Romanów” bez rozwinięcia imienia. Brak własnych współrzędnych."
+  },
+  {
+    "id": "willa-kiltynowicza-katowicka-26",
+    "nazwa": "Willa Kiltynowicza (ul. Katowicka 26)",
+    "name_en": "Kiltynowicz Villa (26 Katowicka Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka 26",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0517,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa z ok. 1936 roku, zaprojektowana przez Szymona Syrkusa i Helenę Syrkusową.",
+      "Elewacja boczna jest zaburzona przez garaż dobudowany w późniejszym okresie.",
+      "Od strony ulicy są betonowy detal schodów i cegła klinkierowa na cokole z szeroką fugą poziomą i wąską pionową, typowa dla Syrkusów.",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A villa at 26 Katowicka Street, built around 1936 for the Kiltynowicz family to a design by Szymon and Helena Syrkus. It is a listed monument.",
+    "ludzie": [
+      {"kto": "Szymon Syrkus", "rola": "projektant willi", "wiki": null},
+      {"kto": "Helena Syrkusowa", "rola": "projektantka willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Katowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Katowicka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "ulica-kobielska",
+    "nazwa": "ulica Kobielska",
+    "name_en": "Kobielska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Kobielska",
+    "adres_historyczny": null,
+    "lat": 52.2474, "lon": 21.0819,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "W drugiej połowie lat 20. XX wieku przy zbiegu ul. Podskarbińskiej (nr 6–8) i Kobielskiej (nr 82–89) z inicjatywy władz miasta powstały dwa domy komunalne z jednopokojowymi mieszkaniami dla bezdomnych.",
+      "Administracja tego osiedla mieściła się w narożnym budynku przy skrzyżowaniu Podskarbińskiej z Kobielską, którego szczyt wieńczyła ozdobna waza.",
+      "W budynku przy skrzyżowaniu Kobielskiej z Rębkowską (ul. Rębkowska 1) mieszkał Edward Stachura; 24 lipca 1979 r. popełnił w nim samobójstwo.",
+      "W pobliżu skrzyżowania Kobielskiej z Kaleńską znajduje się najstarszy dom na Grochowie (ul. Kaleńska 12)."
+    ],
+    "ciekawostki": [
+      "Ulica jest przedłużeniem ulicy Osowskiej w kierunku zachodnim i przecina Podskarbińską, a kończy się przy Weterynaryjnej."
+    ],
+    "summary_en": "Kobielska Street runs through Grochów in Praga-Południe. In the late 1920s the city built communal houses here for the homeless, and in 1938 the Workers' Housing Association built ten four-storey blocks nearby. Edward Stachura lived at the junction with Rębkowska.",
+    "ludzie": [
+      {"kto": "Edward Stachura", "rola": "mieszkał w budynku przy Rębkowskiej 1, popełnił tam samobójstwo", "wiki": null},
+      {"kto": "Mirosław Szabuniewicz", "rola": "projektant budynków Towarzystwa Osiedli Robotniczych (1938)", "wiki": null},
+      {"kto": "Natalia Hiszpańska", "rola": "projektantka budynków Towarzystwa Osiedli Robotniczych (1938)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Kobielska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kobielska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "budynki-tor-kobielska-96-100",
+    "nazwa": "Budynki Towarzystwa Osiedli Robotniczych (ul. Podskarbińska 7–9, Kobielska 96–100)",
+    "name_en": "Workers' Housing Association Blocks (Podskarbińska 7–9, Kobielska 96–100)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Kobielska 96–100",
+    "adres_historyczny": null,
+    "lat": 52.2474, "lon": 21.0819,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1938 roku zbudowano dziesięć czteropiętrowych budynków Towarzystwa Osiedli Robotniczych wg projektu Mirosława Szabuniewicza i Natalii Hiszpańskiej.",
+      "Budynki przeznaczono dla robotników, których dochody nie przekraczały 250 zł.",
+      "Powierzchnia lokali wynosiła 30 i 37 m², a do pomieszczeń składających się głównie z pokoju z kuchnią doprowadzono wodę i gaz.",
+      "Pomiędzy budynkami znajdują się łączniki wsparte na żelbetowych słupach, pierwotnie przeznaczone na pralnie i suszarnie, później zagospodarowane na lokale mieszkalne.",
+      "Osiedle otaczał ogród."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ten four-storey blocks built in 1938 on Kobielska and Podskarbińska streets for workers earning up to 250 zł, designed by Mirosław Szabuniewicz and Natalia Hiszpańska. The estate was surrounded by a garden.",
+    "ludzie": [
+      {"kto": "Mirosław Szabuniewicz", "rola": "projektant", "wiki": null},
+      {"kto": "Natalia Hiszpańska", "rola": "projektantka", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Kobielska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kobielska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu: Podskarbińska 7–9 i Kobielska 96–100. Współrzędne z nagłówka ulicy."
+  },
+  {
+    "id": "kobielska-88-92-dom-dla-bezdomnych",
+    "nazwa": "Zespół budynków przy ul. Kobielskiej 88/92 i Podskarbińskiej 6",
+    "name_en": "Building complex at Kobielska 88/92 and Podskarbińska 6",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Kobielska 88/92, ul. Podskarbińska 6",
+    "adres_historyczny": null,
+    "lat": 52.2474, "lon": 21.0819,
+    "lokalizacja": "przyblizona",
+    "okres": "1925–1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1925–1932.",
+      "Miał to być zespół budynków z mieszkaniami dla bezdomnych.",
+      "Obiekt jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A complex of buildings at Kobielska 88/92 and Podskarbińska 6, built in 1925–1932 as flats for the homeless. It is a listed monument.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Kobielska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kobielska_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst nie precyzuje, czy budynek został zrealizowany w tej formie. Brak własnych współrzędnych."
+  },
+  {
+    "id": "ulica-lubelska",
+    "nazwa": "ulica Lubelska",
+    "name_en": "Lubelska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Lubelska",
+    "adres_historyczny": null,
+    "lat": 52.247222, "lon": 21.051667,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona około roku 1820 jako droga wzdłuż niewielkiego, praskiego fragmentu okopów Lubomirskiego.",
+      "W granicach Warszawy Kamionek znalazł się w 1889 roku.",
+      "Po roku 1918 zmieniono numerację ulicy, ponieważ wcześniej numery nieparzyste znajdowały się po prawej stronie.",
+      "W 1930 roku magistrat Warszawy kupił nieużywany budynek fabryki obuwia przy torach i przeznaczył go na schronisko dla bezdomnych.",
+      "W 1973 roku bazar z odzieżą (tzw. ciuchy) został przeniesiony do Rembertowa, na plac przy ul. Paderewskiego."
+    ],
+    "ciekawostki": [
+      "Do lat 70. XX wieku przy ulicy stały latarnie gazowe."
+    ],
+    "summary_en": "Lubelska Street was laid out around 1820 along a fragment of the Lubomirski trenches and runs from Jeziorko Kamionkowskie to Warszawa Wschodnia station. In the interwar period a former shoe factory building at No. 30/32 became a homeless shelter, and a clothing bazaar operated here until 1973.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Lubelska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Lubelska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "schronisko-dla-bezdomnych-lubelska-30-32",
+    "nazwa": "Budynek fabryki „Polus” przy Lubelskiej 30/32 (schronisko dla bezdomnych)",
+    "name_en": "Former 'Polus' shoe factory at Lubelska 30/32 (homeless shelter)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Lubelska 30/32",
+    "adres_historyczny": null,
+    "lat": 52.247222, "lon": 21.051667,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX w.–dziś",
+    "istnieje": null,
+    "fakty": [
+      "W latach 20. XX wieku przy torach kolejowych pod numerem 30/32 wzniesiono żelbetowy budynek fabryki obuwia „Polus”, wzorowanej na czeskich zakładach „Bata”.",
+      "Z powodu kryzysu gospodarczego do otwarcia zakładu nie doszło.",
+      "W 1930 roku nieużywany budynek kupił magistrat Warszawy i przeznaczył na schronisko dla bezdomnych.",
+      "W schronisku mieszkało około 2000 bezdomnych, którzy z czasem zostali zdominowani przez alkoholików i złodziei.",
+      "W 1945 roku mieszkańców schroniska wysiedlono na Ziemie Zachodnie.",
+      "Po wojnie budynek zajmowały zakłady konfekcyjne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A reinforced-concrete shoe factory built for the 'Polus' company at Lubelska 30/32 in the 1920s, never opened because of the economic crisis. The city turned it into a shelter for about 2000 homeless people in 1930; they were evacuated to the Western Territories in 1945.",
+    "ludzie": [],
+    "dawne_nazwy": ["fabryka obuwia „Polus”"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Lubelska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Lubelska_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst nie mówi, czy budynek istnieje dziś. Adres 30/32 z tekstu, współrzędne ulicy."
+  },
+  {
+    "id": "ulica-miedzyborska",
+    "nazwa": "ulica Międzyborska",
+    "name_en": "Międzyborska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Międzyborska",
+    "adres_historyczny": null,
+    "lat": 52.2407, "lon": 21.0782,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Do 1950 roku ulica nosiła nazwę generała Franciszka Żymirskiego, uczestnika insurekcji kościuszkowskiej, śmiertelnie rannego w bitwie o Olszynkę Grochowską.",
+      "Zmieniono ją w związku z pomyleniem z gen. Żymierskim; nazwa Żymirskiego nadana została innej ulicy w pobliżu.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku na skrzyżowaniu z al. Jerzego Waszyngtona znajdowała się reduta „Skrzyżowanie”.",
+      "W 1986 roku na domu przy al. Waszyngtona 104 odsłonięto tablicę upamiętniającą obrońców reduty."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Międzyborska Street in Praga-Południe was named Żymirskiego until 1950. In September 1939 a redoubt at its junction with Aleja Waszyngtona blocked the route to the Poniatowski Bridge.",
+    "ludzie": [
+      {"kto": "Franciszek Żymirski", "rola": "generał, uczestnik insurekcji kościuszkowskiej, patron ulicy do 1950", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. gen. Franciszka Żymirskiego (do 1950)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Międzyborska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C4%99dzyborska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "reduta-skrzyzowanie-miedzyborska",
+    "nazwa": "Reduta „Skrzyżowanie” (al. Waszyngtona / ul. Międzyborska)",
+    "name_en": "'Skrzyżowanie' Redoubt (Washington Avenue / Międzyborska)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "skrzyżowanie ul. Międzyborskiej z al. Waszyngtona",
+    "adres_historyczny": null,
+    "lat": 52.2407, "lon": 21.0782,
+    "lokalizacja": "przyblizona",
+    "okres": "1939",
+    "istnieje": null,
+    "fakty": [
+      "We wrześniu 1939 roku na skrzyżowaniu z al. Jerzego Waszyngtona znajdowała się reduta „Skrzyżowanie”.",
+      "Redutę broniono przez żołnierzy z 21 Pułku Piechoty „Dzieci Warszawy”.",
+      "Reduta zamykała atakującym Niemcom najkrótszą drogę do mostu Poniatowskiego.",
+      "W 1986 roku na domu przy al. Waszyngtona 104 odsłonięto tablicę upamiętniającą obrońców reduty."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A September 1939 defensive redoubt at the junction of Międzyborska Street and Aleja Waszyngtona, held by soldiers of the 21st Infantry Regiment 'Children of Warsaw'. It blocked the shortest German route to the Poniatowski Bridge. A plaque commemorating its defenders was unveiled in 1986.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Międzyborska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C4%99dzyborska_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne ulicy, bo tekst nie podaje położenia redty. Dziś nie wiadomo z tekstu, czy zachowały się ślady."
+  },
+  {
+    "id": "ulica-miedzynarodowa",
+    "nazwa": "ulica Międzynarodowa",
+    "name_en": "Międzynarodowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Międzynarodowa",
+    "adres_historyczny": null,
+    "lat": 52.235138888, "lon": 21.065472222,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przed I wojną światową rozważano budowę w okolicy miejskich rzeźni.",
+      "W okresie dwudziestolecia międzywojennego obszary przy dzisiejszej ulicy brano pod uwagę jako tereny wystawowe.",
+      "Przewidywano budowę m.in. Stadionu Reprezentacyjnego oraz Pawilonów Wystawy Rolniczej w pobliżu skrzyżowania z al. Waszyngtona.",
+      "Po II wojnie światowej nastąpiło faktyczne poszerzenie granic Saskiej Kępy do ul. Międzynarodowej.",
+      "W latach 70. XX wieku zrealizowano grupę rzeźb plenerowych między blokami, element humanizacji przestrzeni na tzw. „Osiedlach Młodych”."
+    ],
+    "ciekawostki": [
+      "Pamiątką po przedwojennych planach są nazwa ulicy i nazwa pobliskiego Kanału Wystawowego."
+    ],
+    "summary_en": "Międzynarodowa Street on Saska Kępa and Kamionek is named after pre-war plans for exhibition grounds in the area. Its post-war housing dates mainly from the PRL period, and sculptures from the 1970s stand between the blocks.",
+    "ludzie": [
+      {"kto": "Teresa Brzóskiewicz", "rola": "autorka rzeźby Wiosna przy ul. Międzynarodowej", "wiki": null},
+      {"kto": "Ryszard Wojciechowski", "rola": "autor rzeźby Majestat Wszechżycia", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Międzynarodowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C4%99dzynarodowa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-minska",
+    "nazwa": "ulica Mińska",
+    "name_en": "Mińska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Mińska",
+    "adres_historyczny": null,
+    "lat": 52.2478, "lon": 21.0567,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XIX wieku była to droga rozdzielająca pola Skaryszewa, wzdłuż której stały domy z ogrodami.",
+      "W 1889 roku rejon ulicy został przyłączony do Warszawy.",
+      "W 1914 roku fabryka Towarzystwa Akcyjnego Lnianej i Jutowej Manufaktury (przy nr 25, uruchomiona w 1899) zatrudniała ok. 600 pracowników.",
+      "W 1950 roku pod nr 65 uruchomiono Drukarnię im. Rewolucji Październikowej, jeden z największych zakładów poligraficznych w Polsce.",
+      "Od 2010 roku na terenie dawnej Warszawskiej Fabryki Motocykli o powierzchni ponad 7 ha zaczęto realizację kompleksu Soho Factory."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Mińska Street in Kamionek, Praga-Południe, was once a road between fields. Factories were established here from 1899, including the printing works at No. 65 from 1950. From 2010 the former motorcycle factory site has been redeveloped as Soho Factory.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Mińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "soho-factory-dawna-wfm-minska",
+    "nazwa": "Soho Factory (dawna Warszawska Fabryka Motocykli, ul. Mińska)",
+    "name_en": "Soho Factory (former Warsaw Motorcycle Factory, Mińska Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Mińska",
+    "adres_historyczny": null,
+    "lat": 52.249694, "lon": 21.061083,
+    "lokalizacja": "przyblizona",
+    "okres": "1899–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1899 roku pod nr 25 powstała fabryka Towarzystwa Akcyjnego Lnianej i Jutowej Manufaktury.",
+      "Po 1918 roku na jej miejscu powstały Zakłady Amunicyjne „Pocisk”.",
+      "Na początku lat 50. XX wieku teren zniszczonych zakładów „Pocisk” przejęła Warszawska Fabryka Motocykli, która produkowała motocykle WFM oraz skuter Osa.",
+      "W 1965 roku produkcję WFM przeniesiono do Szczecina, a budynki przejęły Państwowe Zakłady Optyczne.",
+      "Od 2010 roku zaczęto realizację nowego kompleksu usługowo-mieszkaniowego Soho Factory na terenie o powierzchni ponad 7 ha."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The site at Mińska Street began as a 1899 linen and jute factory, became the 'Pocisk' munitions works after 1918 and then the Warsaw Motorcycle Factory in the 1950s. After 1965 it housed Państwowe Zakłady Optyczne, and from 2010 it was redeveloped as Soho Factory.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zakłady Amunicyjne „Pocisk”", "Warszawska Fabryka Motocykli (WFM)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Mińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o Warszawskiej Fabryce Motocykli podaje WFM przy ul. Mińskiej 25 (1951–1965) i Soho Factory na jej terenie. Współrzędne z artykułu o WFM (52.249694, 21.061083)."
+  },
+  {
+    "id": "pomnik-pilsudskiego-minska-25",
+    "nazwa": "Głaz upamiętniający Józefa Piłsudskiego (ul. Mińska 25)",
+    "name_en": "Józef Piłsudski memorial boulder (25 Mińska Street)",
+    "typ": "pomnik",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Mińska 25",
+    "adres_historyczny": null,
+    "lat": 52.2478, "lon": 21.0567,
+    "lokalizacja": "przyblizona",
+    "okres": "1990–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1990 roku przy wjeździe bramnym na posesję nr 25 odsłonięto głaz upamiętniający Józefa Piłsudskiego.",
+      "Piłsudski po powrocie do Polski w listopadzie 1918 roku odwiedził mieszkającą w znajdującym się tam budynku (już nieistniejącym) Aleksandrę Szczerbińską i ich córkę Wandę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A boulder unveiled in 1990 at the gate of No. 25 Mińska Street, commemorating Józef Piłsudski, who visited Aleksandra Szczerbińska and their daughter Wanda here after returning to Poland in November 1918.",
+    "ludzie": [
+      {"kto": "Józef Piłsudski", "rola": "odwiedził Aleksandrę Szczerbińską i Wandę w listopadzie 1918", "wiki": null},
+      {"kto": "Aleksandra Szczerbińska", "rola": "mieszkanka budynku przy Mińskiej 25", "wiki": null},
+      {"kto": "Wanda Szczerbińska", "rola": "córka Aleksandry Szczerbińskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Mińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje jedynie „Wandę” jako córkę; nazwisko podano wyłącznie dla matki. Tylko dwa fakty z artykułu o ulicy."
+  },
+  {
+    "id": "ulica-mladzka",
+    "nazwa": "ulica Mlądzka",
+    "name_en": "Mlądzka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Mlądzka",
+    "adres_historyczny": null,
+    "lat": 52.240277777, "lon": 21.098888888,
+    "lokalizacja": "przyblizona",
+    "okres": "1916–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona na miejscu dawnej miedzy podczas parcelacji dóbr wiejskich włączonych do Warszawy w 1916 roku.",
+      "Pierwotnie nosiła nazwę Mląckiej, od dawnej podwarszawskiej wsi Mlądz (obecnie część Otwocka).",
+      "Pierwszymi trwałymi domami były dom kupca Romualda Piekarskiego pod nr 14 oraz kamienica Justyny Kutrzyk pod nr 44.",
+      "W latach 2001–2002, na rogu ulic Mlądzkiej i Sulejkowskiej, zbudowano zespół budynków mieszkalnych pod nazwą osiedle Sulejkowska."
+    ],
+    "ciekawostki": [
+      "Niewielki skwer przy ulicy, tzw. park Zajdla, został odzyskany przez spadkobierców rodziny Zajdlów."
+    ],
+    "summary_en": "Mlądzka Street was laid out in 1916 when the rural estates were subdivided and added to Warsaw. The Kamiński brothers, organ builders, lived and worked here, and in 2001–2002 the Sulejkowska housing complex was built at its corner with Sulejkowska Street.",
+    "ludzie": [
+      {"kto": "Zygmunt Kamiński", "rola": "producent organów, odlewnia piszczałek pod nr 15", "wiki": null},
+      {"kto": "Romuald Piekarski", "rola": "kupiec, właściciel domu pod nr 14", "wiki": null},
+      {"kto": "Justyna Kutrzyk", "rola": "właścicielka kamienicy pod nr 44", "wiki": null}
+    ],
+    "dawne_nazwy": ["Mlącka"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Mlądzka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ml%C4%85dzka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "odlewnia-organow-kaminskich-mladzka-15",
+    "nazwa": "Odlewnia piszczałek organowych Zygmunta Kamińskiego (ul. Mlądzka 15)",
+    "name_en": "Zygmunt Kamiński's organ pipe foundry (15 Mlądzka Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Mlądzka 15",
+    "adres_historyczny": null,
+    "lat": 52.240277777, "lon": 21.098888888,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": null,
+    "fakty": [
+      "Zygmunt Kamiński posiadał pod numerem 15 odlewnię piszczałek metalowych.",
+      "Miejsce na zakład wybrał ze względu na brak budynków wokół, dla mieszkańców których produkcja mogłaby być uciążliwa.",
+      "Bracia Kamińscy wykonywali organy przede wszystkim dla mniejszych kościołów.",
+      "Drugi z braci, mieszkający pod numerem 44, przygotowywał części drewniane organów, kompletowanych z udziałem snycerzy, rzeźbiarzy i zdobników."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zygmunt Kamiński, one of the Kamiński brothers, organ builders on Mlądzka Street, ran a metal pipe foundry at No. 15. Organs were mainly made for smaller churches, and the brothers helped repair instruments during and after WWII.",
+    "ludzie": [
+      {"kto": "Zygmunt Kamiński", "rola": "producent organów, odlewnia piszczałek", "wiki": null},
+      {"kto": "Bracia Kamińscy", "rola": "producenci organów, pracowali przy Mlądzkiej 15 i 44", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Mlądzka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ml%C4%85dzka_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst nie podaje, czy budynek istnieje dziś. Współrzędne ulicy."
+  }
+]

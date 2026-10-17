@@ -1,0 +1,85 @@
+[
+  {"id": "pyry", "nazwa": "Pyry", "name_en": "Pyry", "typ": "miejsce", "dzielnica": "Ursynów", "adres_dzis": null, "adres_historyczny": null, "lat": 52.11666667, "lon": 21.01666667, "lokalizacja": "przyblizona", "okres": "koniec XVIII w.–dziś", "istnieje": true,
+   "fakty": [
+     "Miejscowość była pierwotnie kolonią, założoną pod koniec XVIII wieku na południe od Imielina.",
+     "Intensywny rozwój nastąpił pod koniec XIX wieku wraz z budową kolejki grójeckiej, która umożliwiała tani transport płodów rolnych do Warszawy.",
+     "W 1921 roku w Pyry były 60 domów i 421 mieszkańców.",
+     "W latach 30. XX wieku na terenie Lasu Kabackiego wzniesiono kompleks budynków dla Sztabu Głównego Wojska Polskiego, w którym do 1939 mieścił się Referat Niemiecki Biura Szyfrów.",
+     "Niemcy zajęli Pyry 8 września 1939 roku.",
+     "W 1951 roku miejscowość została włączona do Warszawy."
+   ],
+   "ciekawostki": [], "summary_en": "Pyry is a former colony south of Imielin in Ursynów, founded at the end of the 18th century and grown up along the Grójec narrow-gauge railway. In the 1930s its forest area housed the German cipher bureau of the Polish General Staff.",
+   "ludzie": [], "dawne_nazwy": ["Pery"],
+   "zrodla": [{"tytul": "Wikipedia: Pyry (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Pyry_%28Warszawa%29"}],
+   "pewnosc": "wysoka", "uwagi": "Geneza nazwy niepewna wg artykułu."},
+
+  {"id": "las-kabacki", "nazwa": "Las Kabacki im. Stefana Starzyńskiego (rezerwat)", "name_en": "Kabaty Woods (Stefan Starzyński nature reserve)", "typ": "park", "dzielnica": "Ursynów", "adres_dzis": null, "adres_historyczny": null, "lat": 52.1161, "lon": 21.0572, "lokalizacja": "przyblizona", "okres": "1938–dziś", "istnieje": true,
+   "fakty": [
+     "Las został sprzedany Zarządowi Miejskiemu m.st. Warszawy 31 grudnia 1938 przez dziedzica dóbr wilanowskich Adama Branickiego; wielkość zakupionych terenów wynosiła 914 ha.",
+     "Kwota transakcji wyniosła 3 mln 425 tys. zł, z czego 3 mln zł w obligacjach miejskich, a 425 tys. zł gotówką.",
+     "Ochronę prawną teren uzyskał zarządzeniem Ministra Leśnictwa i Przemysłu Drzewnego z dnia 11 sierpnia 1980; ochroną objęto 902,68 ha.",
+     "W 1999 przy ul. Leśnej odsłonięto kamień z tablicą upamiętniającą matematyków-kryptologów Mariana Rejewskiego, Jerzego Różyckiego i Henryka Zygalskiego, którym udało się złamać szyfr Enigmy.",
+     "Podczas II wojny światowej Niemcy zamordowali w lesie co najmniej kilkuset mieszkańców Warszawy.",
+     "9 maja 1987 roku w Lesie Kabackim rozbił się samolot LOT „Tadeusz Kościuszko”; zginęło 183 osoby."
+   ],
+   "ciekawostki": ["Las Kabacki jest największym zwartym kompleksem leśnym na terenie lewobrzeżnej Warszawy i największym rezerwatem województwa mazowieckiego."],
+   "summary_en": "Kabaty Woods, named after mayor Stefan Starzyński, is a forest park and nature reserve in southern Warsaw. The city bought it from the Branicki family in 1938 to save it from development; it is the largest compact forest on the left bank of Warsaw.",
+   "ludzie": [
+     {"kto": "Stefan Starzyński", "rola": "komisaryczny prezydent Warszawy; podjął decyzję o zakupie lasu w 1938", "wiki": null},
+     {"kto": "Adam Branicki", "rola": "dziedzic dóbr wilanowskich; sprzedał las miastu w 1938", "wiki": null},
+     {"kto": "Wiktor Stephan", "rola": "zarządca lasów dóbr wilanowskich do 1923", "wiki": null},
+     {"kto": "Marian Rejewski", "rola": "kryptolog; upamiętniony tablicą (1999)", "wiki": null},
+     {"kto": "Jerzy Różycki", "rola": "kryptolog; upamiętniony tablicą (1999)", "wiki": null},
+     {"kto": "Henryk Zygalski", "rola": "kryptolog; upamiętniony tablicą (1999)", "wiki": null}
+   ],
+   "dawne_nazwy": [],
+   "zrodla": [{"tytul": "Wikipedia: Rezerwat przyrody Las Kabacki im. Stefana Starzyńskiego", "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Las_Kabacki_im._Stefana_Starzy%C5%84skiego"}],
+   "pewnosc": "wysoka", "uwagi": "Współrzędne z nagłówka dotyczą całego lasu; lokalizacja przybliżona."},
+
+  {"id": "skarpa-ursynowska-rezerwat", "nazwa": "Rezerwat Skarpa Ursynowska (pałac Rozkosz)", "name_en": "Skarpa Ursynowska nature reserve", "typ": "park", "dzielnica": "Ursynów", "adres_dzis": "między ul. Arbuzową a pałacem Ursynowskim", "adres_historyczny": null, "lat": 52.1656, "lon": 21.05, "lokalizacja": "przyblizona", "okres": "1996–dziś", "istnieje": true,
+   "fakty": [
+     "Rezerwat Skarpa Ursynowska utworzony został 14 czerwca 1996 r. zarządzeniem Ministra Ochrony Środowiska, Zasobów Naturalnych i Leśnictwa.",
+     "Teren rezerwatu to pozostałość zespołu pałacowo-parkowego Rozkosz, który w XVIII w. należał do dóbr wilanowskich księżnej Izabeli Lubomirskiej.",
+     "Nazwę Ursynów otrzymał od kolejnego właściciela, Juliana Ursyna Niemcewicza.",
+     "Ostatni właściciel posiadłości, Edward Raczyński, w 1921 roku przekazał rezydencję na cele społeczne.",
+     "We wrześniu 2025 decyzją Regionalnej Dyrekcji Ochrony Środowiska w Warszawie wejścia na teren rezerwatu zostały zamknięte."
+   ],
+   "ciekawostki": [], "summary_en": "Skarpa Ursynowska is a 20.8 ha landscape reserve on the Warsaw escarpment, on the border of Ursynów and Wilanów. It covers the grounds of the former Rozkosz palace-park complex; access was closed in September 2025.",
+   "ludzie": [
+     {"kto": "Izabela Lubomirska", "rola": "księżna, właścicielka rezydencji Rozkosz w XVIII w.", "wiki": null},
+     {"kto": "Julian Ursyn Niemcewicz", "rola": "kolejny właściciel, od którego pochodzi nazwa Ursynów", "wiki": null},
+     {"kto": "Edward Raczyński", "rola": "ostatni właściciel; przekazał rezydencję na cele społeczne w 1921", "wiki": null}
+   ],
+   "dawne_nazwy": ["Rozkosz (zespół pałacowo-parkowy)"],
+   "zrodla": [{"tytul": "Wikipedia: Rezerwat przyrody Skarpa Ursynowska", "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Skarpa_Ursynowska"}],
+   "pewnosc": "wysoka", "uwagi": "Adres przybliżony (opis granic w artykule)."},
+
+  {"id": "stacja-techniczno-postojowa-kabaty", "nazwa": "Stacja Techniczno-Postojowa Kabaty", "name_en": "Kabaty Technical and Depot Station", "typ": "budynek", "dzielnica": "Ursynów", "adres_dzis": "ul. Wilczy Dół 5", "adres_historyczny": null, "lat": 52.1258, "lon": 21.0622, "lokalizacja": "dokladna", "okres": "lata 70. XX w.–dziś", "istnieje": true,
+   "fakty": [
+     "Stacja została zaprojektowana w latach 70. XX wieku; podczas budowy zrezygnowano z trzech obiektów o łącznej kubaturze ok. 100 000 m³, które nie były niezbędne dla funkcjonowania metra.",
+     "W 2006 r. podjęto decyzję o budowie głowicy zachodniej na STP Kabaty.",
+     "Przetarg na Centralną Dyspozytornię wygrało przedsiębiorstwo KONTRON EAST EUROPE Sp. z o.o., które 6 listopada 2006 r. podpisało umowę; koszt wyniósł ok. 15 milionów złotych brutto.",
+     "Na terenie STP od 13 grudnia 2007 działa Centralna Dyspozytornia, która obsługuje obie linie metra.",
+     "W 2019 na terenie STP Kabaty urządzono łąki kwietne i ustawiono pasiekę z pszczołami."
+   ],
+   "ciekawostki": ["Na STP jest tor próbny o długości 1200 metrów, służący do testowania pociągów metra."],
+   "summary_en": "The Kabaty depot (STP Kabaty) at ul. Wilczy Dół 5 is the technical and maintenance base for metro lines M1 and M2. It was designed in the 1970s and its Central Control Centre moved here in December 2007.",
+   "ludzie": [], "dawne_nazwy": [],
+   "zrodla": [{"tytul": "Wikipedia: Stacja Techniczno-Postojowa Kabaty", "url": "https://pl.wikipedia.org/wiki/Stacja_Techniczno-Postojowa_Kabaty"}],
+   "pewnosc": "wysoka", "uwagi": null},
+
+  {"id": "stary-imielin", "nazwa": "Stary Imielin", "name_en": "Stary Imielin", "typ": "miejsce", "dzielnica": "Ursynów", "adres_dzis": null, "adres_historyczny": null, "lat": 52.149166666, "lon": 21.029722222, "lokalizacja": "przyblizona", "okres": "1430–dziś", "istnieje": true,
+   "fakty": [
+     "Wieś Imielin (lub Jamielino, Imielino) jest wzmiankowana po raz pierwszy w 1430 roku.",
+     "14 maja 1951 r. teren późniejszego Starego Imielina został włączony w granice Warszawy wraz z resztą gminy Wilanów.",
+     "Od 1974 roku teren wchodził w skład projektowanego pod kierownictwem Marka Budzyńskiego pasma Ursynów-Natolin.",
+     "Od marca 1994 roku teren znajduje się w granicach dzielnicy Ursynów.",
+     "W 2000 roku wyodrębniono obszar w obecnych granicach i nadano mu nazwę Stary Imielin."
+   ],
+   "ciekawostki": ["Jezioro Imielińskie wraz z przyległymi terenami ma od 2002 roku status użytku ekologicznego."],
+   "summary_en": "Stary Imielin is a planning area in western Ursynów, with the village of Imielin first mentioned in 1430. It was incorporated into Warsaw in 1951 and became part of the Ursynów-Natolin development from 1974.",
+   "ludzie": [{"kto": "Marek Budzyński", "rola": "kierował projektowanym pasmem Ursynów-Natolin", "wiki": null}],
+   "dawne_nazwy": ["Imielin", "Jamielino", "Imielino"],
+   "zrodla": [{"tytul": "Wikipedia: Stary Imielin", "url": "https://pl.wikipedia.org/wiki/Stary_Imielin"}],
+   "pewnosc": "wysoka", "uwagi": "Współrzędne z nagłówka dotyczą obszaru MSI, nie konkretnego budynku."}
+]

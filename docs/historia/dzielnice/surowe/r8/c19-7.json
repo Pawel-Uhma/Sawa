@@ -1,0 +1,289 @@
+[
+  {
+    "id": "budynek-fujifilm-polska",
+    "nazwa": "Budynek Fujifilm Polska",
+    "name_en": "Fujifilm Polska office and warehouse building",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Płowiecka 105/107",
+    "adres_historyczny": null,
+    "lat": 52.227777777,
+    "lon": 21.143888888,
+    "lokalizacja": "dokladna",
+    "okres": "1992–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został zaprojektowany w 1992 roku w pracowni architektonicznej APA Kuryłowicz & Associates.",
+      "Budynek powstał w okresie lipiec 1992–1994 z przeznaczeniem na siedzibę spółki Fujifilm Polska.",
+      "Koszt realizacji przedsięwzięcia wraz z działką i uzbrojeniem wyniósł ok. 4,5 miliona dolarów amerykańskich.",
+      "Grunt został zakupiony od działającej tu wcześniej spółdzielni piekarskiej.",
+      "Budynek otrzymał za projekt i realizację Nagrodę Roku SARP za 1993 rok."
+    ],
+    "ciekawostki": [
+      "Pierwotnie w lobby umieszczono ladę nawiązującą kształtem do kasety filmowej, a w niszy przy schodach kopię zbroi samuraja z XVII–XVIII wieku autorstwa Andrzeja Jakubiaka."
+    ],
+    "summary_en": "An office and warehouse building at ul. Płowiecka 105/107 in Wawer, designed in 1992 by APA Kuryłowicz & Associates and built in 1992–1994 for the Polish arm of Fujifilm. It received the SARP Architecture Award for 1993.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "architekt projektu (1992)", "wiki": null},
+      {"kto": "Ewa Kuryłowicz", "rola": "architekt projektu (1992)", "wiki": null},
+      {"kto": "Piotr Kuczyński", "rola": "architekt projektu (1992)", "wiki": null},
+      {"kto": "Rafał Pamuła", "rola": "architekt projektu (1992)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Fujifilm Polska", "url": "https://pl.wikipedia.org/wiki/Budynek_Fujifilm_Polska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "blota-warszawa",
+    "nazwa": "Błota",
+    "name_en": "Błota (former village in Falenica)",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.152222,
+    "lon": 21.186667,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1867–1939 Błota była wsią w gminie Zagóźdź.",
+      "20 października 1933 utworzono gromadę Błota w granicach gminy Zagóźdź.",
+      "1 kwietnia 1939 w związku ze zniesieniem gminy Zagóźdź gromadę Błota włączono do gminy Letnisko Falenica w tymże powiecie.",
+      "W 1943 gromada Błota (w gminie Falenica) liczyła 533 mieszkańców.",
+      "15 maja 1951, w związku ze zniesieniem gminy Falenica Letnisko, gromadę Błota – oprócz kolonii Błota – włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former village at the southern edge of Warsaw, along Wał Miedzeszyński, now part of the Falenica estate in Wawer. It was incorporated into Warsaw on 15 May 1951.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Błota (Warszawa)", "url": "https://pl.wikipedia.org/wiki/B%C5%82ota_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek dawnej wsi."
+  },
+  {
+    "id": "cmentarz-ofiar-ii-wojny-swiatowej-w-wawrze",
+    "nazwa": "Cmentarz Ofiar II Wojny Światowej w Wawrze",
+    "name_en": "WWII Victims Cemetery in Wawer",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Kościuszkowców",
+    "adres_historyczny": null,
+    "lat": 52.2336,
+    "lon": 21.1586,
+    "lokalizacja": "dokladna",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nekropolia została założona po zakończeniu kampanii wrześniowej jako cmentarz wojenny dla żołnierzy poległych w okolicy.",
+      "Cmentarz zaprojektowany przez Józefa Tarnasa i Aleksandra Zdanowicza został otwarty 12 listopada 1939.",
+      "Pierwszym pochowanym był wilnianin Kazimierz Grauzynius, poległy 19 września 1939.",
+      "Po zbrodni dokonanej przez Niemców w grudniu 1939 w Wawrze, po ekshumacji z masowego grobu w czerwcu 1940, pochowano na nim 76 ze 107 ofiar masakry.",
+      "Podczas walk w 1944 cmentarz został uszkodzony, lecz szkody usunięto do 1964, kiedy go na nowo ogrodzono."
+    ],
+    "ciekawostki": [
+      "W ramach prac porządkowych po 1964 roku zastąpiono dotychczasowy pomnik, drewniany krzyż, rzeźbą autorstwa Stanisława Zielińskiego."
+    ],
+    "summary_en": "A war cemetery in Wawer founded after the September 1939 campaign, opened on 12 November 1939. It holds 76 of the 107 victims of the German massacre in Wawer in December 1939.",
+    "ludzie": [
+      {"kto": "Józef Tarnas", "rola": "projektant cmentarza", "wiki": null},
+      {"kto": "Aleksander Zdanowicz", "rola": "projektant cmentarza", "wiki": null},
+      {"kto": "Stanisław Krupka", "rola": "wójt gminy Wawer, inicjator powstania cmentarza", "wiki": null},
+      {"kto": "Kazimierz Grauzynius", "rola": "pierwszy pochowany na cmentarzu (poległ 19 września 1939)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz Ofiar II Wojny Światowej w Wawrze", "url": "https://pl.wikipedia.org/wiki/Cmentarz_Ofiar_II_Wojny_%C5%9Awiatowej_w_Wawrze"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Cmentarz leży na terenie rezerwatu im. Króla Jana Sobieskiego."
+  },
+  {
+    "id": "cmentarz-ewangelicko-augsburski-w-aleksandrowie",
+    "nazwa": "Cmentarz ewangelicko-augsburski w Aleksandrowie",
+    "name_en": "Evangelical-Augsburg cemetery in Aleksandrów",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. ks. Szulczyka",
+    "adres_historyczny": null,
+    "lat": 52.179111111,
+    "lon": 21.237694444,
+    "lokalizacja": "dokladna",
+    "okres": "2. poł. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz powstał w drugiej połowie XIX wieku jako miejsce pochówku dla zamieszkujących wówczas wieś Aleksandrów niemieckich kolonistów z Meklemburgii i Pomorza.",
+      "Cmentarz działał do końca II wojny światowej.",
+      "Od 2016 cmentarz ujęty jest w gminnej ewidencji zabytków.",
+      "Do dzisiaj zachowało się kilkanaście nagrobków z inskrypcjami w języku polskim i niemieckim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Protestant cemetery in Aleksandrów, founded in the second half of the 19th century for German colonists. It operated until the end of the Second World War and has been on the local heritage register since 2016.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz ewangelicko-augsburski w Aleksandrowie (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Cmentarz_ewangelicko-augsburski_w_Aleksandrowie_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cmentarz-parafialny-w-zerzniu",
+    "nazwa": "Cmentarz parafialny w Zerzniu",
+    "name_en": "Zerzeń parish cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Cylichowska",
+    "adres_historyczny": null,
+    "lat": 52.1928,
+    "lon": 21.1411,
+    "lokalizacja": "dokladna",
+    "okres": "1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz założony został w roku 1880 z inicjatywy ks. Aleksandra Kubina.",
+      "Do obecnych rozmiarów został on powiększony prawdopodobnie na przełomie XIX i XX wieku.",
+      "Jesienią 1939 z inicjatywy Izydora Królaka zawiązał się Tajny Komitet Opieki Nad Grobami Poległych, który przeprowadził prace ekshumacyjne i pochował na cmentarzu poległych w dniach 19–20 września żołnierzy 13 Dywizji Piechoty.",
+      "1 sierpnia 1944 Niemcy aresztowali koncentrujących się na cmentarzu żołnierzy AK, przy czym dwóch spośród nich zastrzelono na miejscu.",
+      "Obecne ogrodzenie wybudowane zostało w roku 1957."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Catholic parish cemetery in Zerzeń, founded in 1880 on the initiative of Fr. Aleksander Kubin. Soldiers killed in September 1939 were buried here after a secret committee carried out exhumations that autumn.",
+    "ludzie": [
+      {"kto": "Aleksander Kubin", "rola": "ksiądz, inicjator założenia cmentarza w 1880 roku", "wiki": null},
+      {"kto": "Izydor Królak", "rola": "inicjator Tajnego Komitetu Opieki Nad Grobami Poległych (jesień 1939)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz parafialny w Zerzniu", "url": "https://pl.wikipedia.org/wiki/Cmentarz_parafialny_w_Zerzniu"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwiska w artykule w formie dopełniacza (ks. Aleksandra Kubina, Izydora Królaka); w rekordzie podano mianownik."
+  },
+  {
+    "id": "cmentarz-w-aleksandrowie",
+    "nazwa": "Cmentarz w Aleksandrowie",
+    "name_en": "Aleksandrów cemetery (Falenica)",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Złotej Jesieni",
+    "adres_historyczny": null,
+    "lat": 52.171388888,
+    "lon": 21.234722222,
+    "lokalizacja": "dokladna",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz założono w 1932 z myślą o lokalnej społeczności Aleksandrowa i Falenicy.",
+      "W 1939 w centralnej części cmentarza utworzono kwaterę wojenną, w której spoczęli żołnierze polegli 19 września 1939 w bitwie pod Falenicą.",
+      "W późniejszym okresie w kwaterze tej chowano także żołnierzy Armii Krajowej oraz żołnierzy 1 Armii Wojska Polskiego poległych w latach 1944–1945.",
+      "W 1950 na cmentarzu utworzono kwaterę wojskową z pomnikiem z krzyżem Grunwaldu.",
+      "Od 2017 cmentarz ujęty jest w gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A parish cemetery opened in 1932 in Aleksandrów, also called the Falenica cemetery. Its central part holds a 1939 war plot for soldiers who fell at the battle of Falenica.",
+    "ludzie": [],
+    "dawne_nazwy": ["cmentarz w Falenicy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz w Aleksandrowie (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Aleksandrowie_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cmentarz-w-marysinie-wawerskim",
+    "nazwa": "Cmentarz w Marysinie Wawerskim",
+    "name_en": "Marysin Wawerski cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2406,
+    "lon": 21.1647,
+    "lokalizacja": "dokladna",
+    "okres": "1942–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został erygowany w 1942 i służył wiernym miejscowej parafii.",
+      "Nekropolia ma kształt prostokąta.",
+      "Na cmentarzu znajduje się kaplica Miłosierdzia Bożego.",
+      "Na cmentarzu znajduje się również wydzielona kwatera zakonnic ze Zgromadzenia Sióstr Felicjanek."
+    ],
+    "ciekawostki": [
+      "Na cmentarzu pochowano m.in. Edwarda Babiucha, polityka i premiera, oraz Romualda Czystawa, wokalistę zespołu Budka Suflera."
+    ],
+    "summary_en": "A Catholic cemetery in the Marysin Wawerski estate in Wawer, consecrated in 1942. It has a chapel of Divine Mercy and a section for the Felician Sisters.",
+    "ludzie": [],
+    "dawne_nazwy": ["cmentarz Wawerski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz w Marysinie Wawerskim", "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Marysinie_Wawerskim"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres nie podany w artykule; podano współrzędne z nagłówka."
+  },
+  {
+    "id": "cmentarz-w-radosci",
+    "nazwa": "Cmentarz w Radości",
+    "name_en": "Radość cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1814,
+    "lon": 21.2258,
+    "lokalizacja": "dokladna",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz powstał w 1932 i służył wiernym parafii katolickiej w Radości.",
+      "Na cmentarzu znajduje się symboliczna mogiła żołnierzy Wojska Polskiego poległych w okolicy podczas obrony Warszawy w ramach kampanii wrześniowej.",
+      "Na cmentarzu znajduje się grób zbiorowy żołnierzy podziemia i Ludowego Wojska Polskiego.",
+      "Na cmentarzu znajduje się wydzielona kwatera dziecięca."
+    ],
+    "ciekawostki": [
+      "Pochowani są tu m.in. aktor Stanisław Milski oraz artysta malarz Karol Mondral."
+    ],
+    "summary_en": "A Catholic cemetery in the Radość estate, founded in 1932 for the local parish. It holds a symbolic grave of soldiers killed in September 1939 and a mass grave of underground and Polish People's Army soldiers.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz w Radości", "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Rado%C5%9Bci"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cmentarz-zydowski-w-radosci",
+    "nazwa": "Cmentarz żydowski w Warszawie (Radość)",
+    "name_en": "Jewish cemetery in Radość",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": "u zbiegu ulic Izbickiej i Kwitnącej Akacji",
+    "adres_historyczny": null,
+    "lat": 52.1825,
+    "lon": 21.2192,
+    "lokalizacja": "dokladna",
+    "okres": "początek XX w.–dziś (nieczynny)",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został założony na początku XX wieku i służył żydowskiej ludności Radości, Falenicy i innych pobliskich miejscowości.",
+      "W latach 30. zapełnił się grobami i w 1937 zaprzestano pochówków; zmarłych zaczęto chować na cmentarzu w pobliskim Aleksandrowie.",
+      "Podczas II wojny światowej Niemcy zdewastowali cmentarz, a nagrobki wykorzystali do prac budowlanych.",
+      "Zachowały się jedynie 4 nagrobki, z których najstarszy pochodzi z 1924."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A closed Jewish cemetery of about 1 ha in Radość, founded in the early 20th century. It was vandalised during the war, and only four tombstones survive.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz żydowski w Warszawie (Radość)", "url": "https://pl.wikipedia.org/wiki/Cmentarz_%C5%BCydowski_w_Warszawie_%28Rado%C5%9B%C4%87%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nieczynny cmentarz; stan opisany w artykule, bez daty aktualizacji."
+  }
+]

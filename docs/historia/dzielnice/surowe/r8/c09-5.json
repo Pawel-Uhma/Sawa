@@ -1,0 +1,490 @@
+[
+  {
+    "id": "osiedle-atenska",
+    "nazwa": "Osiedle Ateńska",
+    "name_en": "Ateńska housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "osiedle między ul. Afrykańską, Egipską, Ateńską i Wałem Miedzeszyńskim",
+    "adres_historyczny": null,
+    "lat": 52.223333333,
+    "lon": 21.068888888,
+    "lokalizacja": "przyblizona",
+    "okres": "1971–1976",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało wybudowane w latach 1971–1976 według projektu Lucjana Dutkowskiego i Tadeusza Koźmińskiego.",
+      "W blokach zaprojektowano 1113 mieszkań dla ok. 4 tys. mieszkańców.",
+      "Pierwotnie osiedle miało nosić imię Kopernika, jednak tymczasowa nazwa przyjęła się na stałe.",
+      "Inwestorem była Spółdzielnia Mieszkaniowa „Osiedle Młodych”.",
+      "Osiedle otrzymało wyróżnienie w konkursie „Mister Warszawy” organizowanym przez dziennik „Życie Warszawy” za 1976 rok."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential estate on Saska Kępa in Praga-Południe, built in 1971–1976 with five-storey large-panel blocks and two eleven-storey buildings. It has 1113 flats for about 4,000 residents.",
+    "ludzie": [
+      {"kto": "Lucjan Dutkowski", "rola": "współautor projektu osiedla (1971–1976)", "wiki": null},
+      {"kto": "Tadeusz Koźmiński", "rola": "współautor projektu osiedla (1971–1976)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kopernik (nazwa pierwotnie planowana)"],
+    "zrodla": [{"tytul": "Wikipedia: Ateńska (osiedle w Warszawie)", "url": "https://pl.wikipedia.org/wiki/Ate%C5%84ska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje dokładnego adresu osiedla; ulice podane wg opisu granic."
+  },
+  {
+    "id": "osiedle-atenska-ii",
+    "nazwa": "Osiedle Ateńska II",
+    "name_en": "Ateńska II housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "rejon ul. Algierskiej, Libijskiej, Marokańskiej i Wału Miedzeszyńskiego",
+    "adres_historyczny": null,
+    "lat": 52.223333333,
+    "lon": 21.075,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1989–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle domów jednorodzinnych szeregowych zostało wybudowane przed 1989 rokiem według projektu Jerzego Kumelowskiego.",
+      "Architektura osiedla jest inspirowana rozwiązaniami skandynawskimi, zwłaszcza duńskimi.",
+      "W projekcie studium uwarunkowań i kierunków zagospodarowania przestrzennego Warszawy z 2023 roku osiedle zaliczono do dóbr kultury współczesnej Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A terraced single-family housing estate on Saska Kępa, built before 1989 to a design by Jerzy Kumelowski. Its Scandinavian-inspired architecture was included in Warsaw's list of modern cultural assets in 2023.",
+    "ludzie": [
+      {"kto": "Jerzy Kumelowski", "rola": "projektant osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ateńska II", "url": "https://pl.wikipedia.org/wiki/Ate%C5%84ska_II"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka; artykuł nie podaje adresu."
+  },
+  {
+    "id": "osiedle-atenska-iii",
+    "nazwa": "Osiedle Ateńska III",
+    "name_en": "Ateńska III housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "rejon ul. Algierskiej, Libijskiej, Marokańskiej i Wału Miedzeszyńskiego",
+    "adres_historyczny": null,
+    "lat": 52.2225,
+    "lon": 21.078611111,
+    "lokalizacja": "przyblizona",
+    "okres": "1996–1997",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało wybudowane w latach 1996–1997 według projektu Wojciecha Hermanowicza, Piotra Majewskiego i Andrzeja Wyszyńskiego, przy współpracy Elżbiety Kozłowskiej.",
+      "Za konstrukcję osiedla odpowiadał Arkadiusz Koziński; projekt powstał w 1994 roku.",
+      "Osiedle składa się z pięciu podłużnych budynków, podzielonych na łącznie 60 jednorodzinnych segmentów.",
+      "Osiedle otrzymało nagrodę 3. stopnia Ministra Spraw Wewnętrznych i Administracji za 1998 rok.",
+      "Znalazło się w finale II edycji konkursu Życie w Architekturze w kategorii „najlepszy budynek Warszawy 1996–1997”."
+    ],
+    "ciekawostki": [
+      "Charakterystyczne są półkoliste dachy o jednolitym kolorze, które kontrastują z sąsiednią zabudową modernistyczną."
+    ],
+    "summary_en": "A terraced housing estate on Saska Kępa built in 1996–1997 with 60 single-family segments in five long blocks. It received a ministry award for 1998.",
+    "ludzie": [
+      {"kto": "Wojciech Hermanowicz", "rola": "autor projektu osiedla", "wiki": null},
+      {"kto": "Piotr Majewski", "rola": "autor projektu osiedla", "wiki": null},
+      {"kto": "Andrzej Wyszyński", "rola": "autor projektu osiedla", "wiki": null},
+      {"kto": "Elżbieta Kozłowska", "rola": "współpracowała przy projekcie", "wiki": null},
+      {"kto": "Arkadiusz Koziński", "rola": "odpowiadał za konstrukcję", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ateńska III", "url": "https://pl.wikipedia.org/wiki/Ate%C5%84ska_III"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka; artykuł nie podaje adresu."
+  },
+  {
+    "id": "bazar-szembeka",
+    "nazwa": "Bazar Szembeka",
+    "name_en": "Szembek Bazaar",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "pl. Piotra Szembeka (między ul. Gdecką, Komorską i Zamieniecką)",
+    "adres_historyczny": null,
+    "lat": 52.240722222,
+    "lon": 21.102138888,
+    "lokalizacja": "dokladna",
+    "okres": "dwudziestolecie międzywojenne–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia targowiska przy placu Szembeka sięga dwudziestolecia międzywojennego, a działało ono również podczas okupacji niemieckiej.",
+      "Bazar w obecnej lokalizacji powstał jesienią 1944 roku i był miejscem ożywionego handlu w okresie PRL.",
+      "W 2002 roku na terenie bazaru powstał jednopiętrowy pawilon handlowy z parkingiem podziemnym.",
+      "W latach 2014–2016 na większej części bazaru powstało Centrum Handlowe Szembeka, będące integralną częścią targowiska."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A market in Grochów near Piotr Szembek Square. Trading there dates back to the interwar period; the bazaar in its present location was set up in autumn 1944, and a shopping centre was built on most of the site in 2014–2016.",
+    "ludzie": [
+      {"kto": "Piotr Szembek", "rola": "patron placu, od którego pochodzi nazwa bazaru", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Bazar Szembeka", "url": "https://pl.wikipedia.org/wiki/Bazar_Szembeka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku założenia targowiska przed 1944."
+  },
+  {
+    "id": "bitwa-o-olszynke-grochowska",
+    "nazwa": "Bitwa o Olszynkę Grochowską",
+    "name_en": "Battle of Olszynka Grochowska",
+    "typ": "zdarzenie",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Olszynka Grochowska (Grochów)",
+    "adres_historyczny": null,
+    "lat": 52.248611111,
+    "lon": 21.107777777,
+    "lokalizacja": "przyblizona",
+    "okres": "1831",
+    "istnieje": false,
+    "fakty": [
+      "Bitwa miała miejsce 25 lutego 1831 roku (według kalendarza juliańskiego 13 lutego), w czasie powstania listopadowego.",
+      "Wojska polskie w liczbie ok. 40 tys. dowodzone były oficjalnie przez księcia Michała Radziwiłła, a faktycznie przez generała Józefa Chłopickiego; rosyjskie w liczbie ok. 60 tys. dowodził feldmarszałek Iwan Dybicz.",
+      "W bitwie poległo ok. 6800 żołnierzy polskich i 9400 rosyjskich.",
+      "W 1898 roku Stanisław Wyspiański napisał dramat „Warszawianka”, inspirowany tą bitwą.",
+      "W 1916 roku w miejscu bitwy w obecności ok. 100 tys. osób ustawiono drewniany krzyż."
+    ],
+    "ciekawostki": [
+      "Według legendy w Dworku Grochowskim na Gocławku miała być kwatera gen. Józefa Chłopickiego w czasie bitwy."
+    ],
+    "summary_en": "One of the largest and bloodiest battles of the November Uprising, fought on 25 February 1831 at Olszynka Grochowska on the Grochów side of Warsaw. The Polish army under Chłopicki held the Russians led by Dybicz.",
+    "ludzie": [
+      {"kto": "Józef Chłopicki", "rola": "generał, dowodził wojskami polskimi w bitwie", "wiki": null},
+      {"kto": "Iwan Dybicz", "rola": "feldmarszałek, dowodził wojskami rosyjskimi", "wiki": null},
+      {"kto": "Stanisław Wyspiański", "rola": "autor dramatu „Warszawianka” (1898)", "wiki": null},
+      {"kto": "Ignacy Mościcki", "rola": "prezydent, podpisał akt erekcyjny pod mauzoleum (1931)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Bitwa o Olszynkę Grochowską", "url": "https://pl.wikipedia.org/wiki/Bitwa_o_Olszynk%C4%99_Grochowsk%C4%85"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord o miejscu zdarzenia, nie o budynku. Współrzędne z nagłówka."
+  },
+  {
+    "id": "blue-point",
+    "nazwa": "Blue Point",
+    "name_en": "Blue Point office tower",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "al. Stanów Zjednoczonych 61a",
+    "adres_historyczny": null,
+    "lat": 52.2411,
+    "lon": 21.0822,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biurowiec oddano do użytku w 2002 roku.",
+      "Inwestorem był Pezetel Development Warszawa, a budynek był zarządzany przez GP Bis Grupa Impel.",
+      "Biurowiec ma 65 metrów wysokości i 17 kondygnacji.",
+      "Projektantem budynku był Wojciech Jankowski, a generalnym wykonawcą spółka Progress, JKM Designs.",
+      "W biurowcu miała swoją pierwszą warszawską siedzibę agencja Frontex."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 65-metre, 17-storey office tower at the corner of Aleja Stanów Zjednoczonych and Grenadierów Street, opened in 2002. Frontex had its first Warsaw office here.",
+    "ludzie": [
+      {"kto": "Wojciech Jankowski", "rola": "projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Blue Point", "url": "https://pl.wikipedia.org/wiki/Blue_Point"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Róg ul. Grenadierów wg artykułu."
+  },
+  {
+    "id": "kolonia-bluszcze",
+    "nazwa": "Bluszcze",
+    "name_en": "Bluszcze",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Bluszcze (Praga-Południe)",
+    "adres_historyczny": null,
+    "lat": 52.220042,
+    "lon": 21.096786,
+    "lokalizacja": "przyblizona",
+    "okres": "1838–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kolonia rolnicza została założona w 1838 roku na północnych terenach dawnej wsi Las w gminie Zagóźdź.",
+      "W 1884 roku Bluszcze wraz z kilkoma innymi miejscowościami zostały zalane.",
+      "11 marca 1905 roku podczas zebrania gminnego w Wawrze podjęto decyzję o budowie wału.",
+      "W 1938 roku na części terenów Bluszczy powstało lotnisko sportowe na Gocławiu.",
+      "W 1951 roku kolonia stała się częścią Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former agricultural colony founded in 1838 on the outskirts of today's Praga-Południe. It was flooded in 1884, protected by a dyke from 1905, and became part of Warsaw in 1951.",
+    "ludzie": [
+      {"kto": "Wincenty Chmielewski", "rola": "osoba, dla której wydzielono obszar kolonii", "wiki": null}
+    ],
+    "dawne_nazwy": ["Las (dawna wieś)"],
+    "zrodla": [{"tytul": "Wikipedia: Bluszcze (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Bluszcze"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka, odpowiadają napisowi na mapie z 1931 r. wg artykułu."
+  },
+  {
+    "id": "budynek-zakladow-amunicyjnych-pocisk",
+    "nazwa": "Budynek mieszkalny Zakładów Amunicyjnych „Pocisk”",
+    "name_en": "Residential building of the Pocisk Ammunition Works",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Chodakowska 22",
+    "adres_historyczny": "ul. Terespolska 22",
+    "lat": 52.2497,
+    "lon": 21.0669,
+    "lokalizacja": "dokladna",
+    "okres": "1908–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tylna część budynku została wybudowana w 1914 roku, o czym świadczy data z cegieł na bocznej ścianie oficyny.",
+      "Front budynku znajduje się na mapie z 1908 roku.",
+      "18 czerwca 1941 roku budynek został sprzedany Feliksowi i Michalinie Rachmielowskim, aby wypłacić zaległe wynagrodzenia pracownikom Zakładów Amunicyjnych „Pocisk”.",
+      "Do 1 maja 1968 roku budynek pozostawał w rękach Rachmielowskich, a następnie na mocy dekretu z 26 października 1945 roku przeszedł na własność Skarbu Państwa.",
+      "W 2006 roku budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W 2010 roku unieważniono decyzje z lat 60., odbierające własność prywatnym właścicielom, wobec czego budynki są obecnie własnością prywatną."
+    ],
+    "summary_en": "A listed residential building at 22 Chodakowska Street (formerly Terespolska) in Praga-Południe, owned by the Pocisk Ammunition Works from the 1920s to 1930s. Its rear wing was built in 1914.",
+    "ludzie": [
+      {"kto": "Feliks Rachmielowski", "rola": "właściciel budynku od 1941 roku", "wiki": null},
+      {"kto": "Michalina Rachmielowska", "rola": "właścicielka budynku od 1941 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Terespolska 22"],
+    "zrodla": [{"tytul": "Wikipedia: Budynek mieszkalny Zakładów Amunicyjnych „Pocisk” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_mieszkalny_Zak%C5%82ad%C3%B3w_Amunicyjnych_%E2%80%9EPocisk%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres od 1908 wg daty na mapie frontu. Ciekawostka dotyczy losów własności po 1945 roku."
+  },
+  {
+    "id": "budynek-zakladu-wychowawczego-albertynow",
+    "nazwa": "Budynek zakładu wychowawczego braci albertynów",
+    "name_en": "Albertine Brothers educational institution building",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grochowska 194/196",
+    "adres_historyczny": null,
+    "lat": 52.245583,
+    "lon": 21.087917,
+    "lokalizacja": "dokladna",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony w latach 1931–1934 dla braci albertynów według projektu Stefana Szyllera.",
+      "W 2004 roku przeszedł gruntowną renowację, w czasie której zmieniono wystrój elewacji, w tym opaski okien i płycinę z obecną nazwą na attyce.",
+      "W 2006 roku budynek został wpisany do rejestru zabytków.",
+      "Na attyce znajduje się płycina z inskrypcją „Dom Słowa Bożego im. ks. K. Romaniuka, pierwszego biskupa diecezji Warszawsko-Praskiej”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-storey listed building at 194/196 Grochowska Street, designed by Stefan Szyller for the Albertine Brothers in 1931–1934. It was renovated in 2004.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "projektant budynku (1931–1934)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Budynek zakładu wychowawczego braci albertynów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_zak%C5%82adu_wychowawczego_braci_albertyn%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cmentarz-kamionkowski",
+    "nazwa": "Cmentarz Kamionkowski",
+    "name_en": "Kamionek Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grochowska (przy konkatedrze Matki Bożej Zwycięskiej)",
+    "adres_historyczny": null,
+    "lat": 52.2469,
+    "lon": 21.0531,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1300–1887",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz powstał na przełomie XIII i XIV wieku przy nieistniejącym już kościele św. Stanisława Biskupa w ówczesnej wsi Kamion.",
+      "Był użytkowany od chwili powstania do 1887 roku, kiedy utworzono cmentarz Bródnowski.",
+      "Na cmentarzu pochowano uczestników bitwy ze Szwedami w 1656 roku, powstańców kościuszkowskich, w tym generałów Tadeusza Korsaka i Jakuba Jasińskiego, oraz uczestników Bitwy pod Grochowem w 1831 roku.",
+      "Obecnie na cmentarzu znajduje się około pięćdziesiąt nagrobków z połowy XIX wieku; najstarszy zachowany pochodzi z 1827 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "One of the oldest cemeteries in Poland, founded at the turn of the 13th and 14th centuries next to the Kamion church of St Stanislaus. Used until 1887, it holds about fifty mid-19th-century sandstone tombstones.",
+    "ludzie": [
+      {"kto": "Tadeusz Korsak", "rola": "generał powstania kościuszkowskiego, pochowany na cmentarzu", "wiki": null},
+      {"kto": "Jakub Jasiński", "rola": "generał powstania kościuszkowskiego, pochowany na cmentarzu", "wiki": null}
+    ],
+    "dawne_nazwy": ["cmentarz przykościelny przy kościele św. Stanisława Biskupa w Kamionie"],
+    "zrodla": [{"tytul": "Wikipedia: Cmentarz Kamionkowski", "url": "https://pl.wikipedia.org/wiki/Cmentarz_Kamionkowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje powstanie na przełomie XIII i XIV wieku, bez dokładnego roku."
+  },
+  {
+    "id": "cmentarz-staroobrzedowcow-kamionek",
+    "nazwa": "Cmentarz staroobrzędowców na Kamionku",
+    "name_en": "Old Believers' cemetery in Kamionek",
+    "typ": "cmentarz",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "skwer przy ul. Grochowskiej 307",
+    "adres_historyczny": "ul. Grochowska",
+    "lat": 52.2461,
+    "lon": 21.0661,
+    "lokalizacja": "dokladna",
+    "okres": "1831–1961",
+    "istnieje": false,
+    "fakty": [
+      "Cmentarz powstał w czasie powstania listopadowego; pierwotnie znajdowały się na nim mogiły rosyjskich kirasjerów, którzy polegli w bitwie o Olszynkę Grochowską.",
+      "W latach 80. XIX wieku cmentarz stał się miejscem pochówków rosyjskich rodzin kupieckich osiadłych w Warszawie, należących do wspólnot staroobrzędowców.",
+      "W 1961 roku podjęto decyzję o zamknięciu i likwidacji nekropolii; w 1970 roku rozebrano parkan i ostatnie grobowce.",
+      "Część nagrobków, głównie w kształcie trumien, przeniesiono na cmentarz prawosławny na Woli.",
+      "W 2017 roku na terenie dawnego cmentarza ustawiono tablicę informacyjną z historycznym zdjęciem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A historic Old Believers' cemetery on Grochowska Street in Kamionek, in use 1831–1961 and closed in 1961. Today a small square with an information board from 2017.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Cmentarz staroobrzędowców na Kamionku", "url": "https://pl.wikipedia.org/wiki/Cmentarz_staroobrz%C4%99dowc%C3%B3w_na_Kamionku"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Artykuł podaje adres skweru, nie samego cmentarza."
+  },
+  {
+    "id": "dom-funkcjonalny",
+    "nazwa": "Dom Funkcjonalny",
+    "name_en": "Dom Funkcjonalny (Functional House)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Jakubowska 16",
+    "adres_historyczny": null,
+    "lat": 52.2369,
+    "lon": 21.0485,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony w 1928 roku według projektu Czesława Przybylskiego, prywatnego przyjaciela Mieczysława Lubelskiego.",
+      "W różnych okresach mieszkali w nim m.in. Agnieszka Osiecka, Elżbieta i Emil Cieślarowie, Wiktor Gutt i Barbara Turkiewicz-Gutt.",
+      "Od 2011 roku miejsce jest siedzibą galerii artystycznych.",
+      "W 2016 roku Dom Funkcjonalny został wyróżniony Nagrodą im. Bohdana Lacherta i Józefa Szanajcy w kategorii Modernizacja Wnętrza."
+    ],
+    "ciekawostki": [
+      "Dom udostępniany jest do zwiedzania m.in. w czasie Festiwalu Otwarte Mieszkania."
+    ],
+    "summary_en": "A 1928 house on Saska Kępa at 16 Jakubowska Street, built as a sculptor's home and studio. It has housed art galleries since 2011.",
+    "ludzie": [
+      {"kto": "Mieczysław Lubelski", "rola": "rzeźbiarz, właściciel domu z pracownią rzeźbiarską", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "autor projektu budynku (1928)", "wiki": null},
+      {"kto": "Agnieszka Osiecka", "rola": "mieszkała w domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dom Funkcjonalny", "url": "https://pl.wikipedia.org/wiki/Dom_Funkcjonalny"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-przy-kalenskiej-12",
+    "nazwa": "Dom przy ul. Kaleńskiej 12",
+    "name_en": "House at 12 Kaleńska Street",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Kaleńska 12",
+    "adres_historyczny": null,
+    "lat": 52.247176,
+    "lon": 21.081539,
+    "lokalizacja": "dokladna",
+    "okres": "lata 20. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 20. XX wieku dla Zofii i Kazimierza Burczyńskich, z cegły pozyskanej po rozbiórce fortu Grochów.",
+      "Na podstawie dekretu Bieruta z 1945 roku dom przeszedł na własność miasta; mieściły się w nim mieszkania komunalne.",
+      "Od 1974 roku w budynku mieszkała i prowadziła pracownię artystyczną plastyczka Elżbieta Ostrowska-Leszczyńska.",
+      "W 2011 roku dom wpisano do wojewódzkiej ewidencji zabytków, a w 2023 roku obiekt wraz z otoczeniem wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Przez niektóre źródła jest określany jako najstarszy budynek na Grochowie."
+    ],
+    "summary_en": "A historicist suburban house at the corner of Kaleńska and Kobielska streets, built in the 1920s from brick salvaged from the Grochów fort. It became municipal housing after 1945 and was listed in 2023.",
+    "ludzie": [
+      {"kto": "Zofia Burczyńska", "rola": "pierwsza właścicielka domu z mężem", "wiki": null},
+      {"kto": "Kazimierz Burczyński", "rola": "pierwszy właściciel domu z żoną", "wiki": null},
+      {"kto": "Elżbieta Ostrowska-Leszczyńska", "rola": "plastyczka, mieszkała i pracowała w domu od 1974 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dom przy ul. Kaleńskiej 12 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_przy_ul._Kale%C5%84skiej_12_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Według innego źródła budynek powstał w 1919 r. (przypis w artykule); w rekordzie podano lata 20. wg tekstu głównego."
+  },
+  {
+    "id": "dom-wielorodzinny-edmunda-wolframa",
+    "nazwa": "Dom wielorodzinny Edmunda Wolframa",
+    "name_en": "Edmund Wolfram apartment building",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Paryska 3",
+    "adres_historyczny": null,
+    "lat": 52.225972222,
+    "lon": 21.059194444,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom powstał w 1935 roku według projektu Maksymiliana Goldberga i Hipolita Rutkowskiego.",
+      "Dom jest podzielony na dwie nieruchomości.",
+      "Budynek ma murowaną elewację z okładziną z żółtej cegły klinkierowej; stan zachowania jest dobry, z małymi ubytkami okładziny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A functionalist apartment building at 3 Paryska Street, built in 1935 to designs by Maksymilian Goldberg and Hipolit Rutkowski. It is faced with yellow clinker brick.",
+    "ludzie": [
+      {"kto": "Maksymilian Goldberg", "rola": "współautor projektu (1935)", "wiki": null},
+      {"kto": "Hipolit Rutkowski", "rola": "współautor projektu (1935)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dom wielorodzinny Edmunda Wolframa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_wielorodzinny_Edmunda_Wolframa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł ma krótką sekcję historyczną; rekord zawiera głównie fakty o budowie."
+  },
+  {
+    "id": "dworzec-autobusowy-warszawa-stadion",
+    "nazwa": "Dworzec autobusowy Warszawa Stadion",
+    "name_en": "Warszawa Stadion bus station",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "okolice przystanku Warszawa Stadion",
+    "adres_historyczny": null,
+    "lat": 52.246,
+    "lon": 21.0452,
+    "lokalizacja": "dokladna",
+    "okres": "1966–2011",
+    "istnieje": false,
+    "fakty": [
+      "Dworzec Warszawa Stadion powstał w 1966 roku na terenach wydzierżawionych od miasta (4212 m²) i PKP (336,4 m²), przy przystanku kolejowym Warszawa Stadion na linii średnicowej.",
+      "Dworzec miał 5 stanowisk odjazdowych i 30 miejsc postojowych dla autobusów.",
+      "W 2007 roku obsługiwał 274 kursy dziennie, z których korzystało 1,5 miliona pasażerów rocznie.",
+      "W związku z przebudową terenu przed EURO 2012 dworzec zlikwidowano 1 września 2011 roku, a kursy dalekobieżne przeniesiono na prowizoryczną pętlę przy ul. Lubelskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A bus station in Praga-Południe that operated from 1966 to 2011 next to the Warszawa Stadion railway stop. It was closed in September 2011 to make way for works before Euro 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dworzec autobusowy Warszawa Stadion", "url": "https://pl.wikipedia.org/wiki/Dworzec_autobusowy_Warszawa_Stadion"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru ulicy; adres ustawiony na przystanek kolejowy."
+  },
+  {
+    "id": "dab-szypulkowy-zakopianska-28",
+    "nazwa": "Dąb szypułkowy przy ul. Zakopiańskiej 28",
+    "name_en": "Pedunculate oak at 28 Zakopiańska Street",
+    "typ": "pomnik",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Zakopiańska 28",
+    "adres_historyczny": null,
+    "lat": 52.230833333,
+    "lon": 21.055111111,
+    "lokalizacja": "dokladna",
+    "okres": "1962–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jest to pierwszy zarejestrowany po II wojnie światowej pomnik przyrody na Saskiej Kępie i czwarty w Warszawie.",
+      "W 1962 roku został zatwierdzony decyzją Kierownika Rolnictwa i Leśnictwa Rady Narodowej.",
+      "Pomnik przyrody został zarejestrowany w rejestrze miasta stołecznego Warszawy pod numerem 4.",
+      "Dąb ma 30 metrów wysokości i 449 cm obwodu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 30-metre pedunculate oak on private land at 28 Zakopiańska Street, one of the nature monuments on the Saska Kępa trail. It was registered in 1962 as Warsaw's fourth nature monument.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dąb szypułkowy w Warszawie (ul. Zakopiańska 28)", "url": "https://pl.wikipedia.org/wiki/D%C4%85b_szypu%C5%82kowy_w_Warszawie_%28ul._Zakopia%C5%84ska_28%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Drzewo na prywatnej posesji; widoczne od ul. Zakopiańskiej i ul. Radziłowskiej."
+  }
+]

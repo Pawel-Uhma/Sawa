@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ulice jako linie</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+  :root { --glebia: #17706f; --mieta-jasna: #ddf2e9; --koral: #f2755f; --tekst: #102b2a; --tekst-2: #4c6462; --ulica: #4f6d9a; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #f4f6f5; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: var(--tekst); -webkit-font-smoothing: antialiased; }
+  .siatka { display: grid; grid-template-columns: repeat(3, 390px); gap: 28px; padding: 28px; width: max-content; }
+  h2 { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
+  h2 span { color: var(--koral); margin-right: 6px; }
+  p.opis { font-size: 12.5px; color: var(--tekst-2); line-height: 1.4; margin: 4px 0 12px; min-height: 70px; }
+  .ramka { position: relative; width: 390px; height: 700px; border-radius: 28px; overflow: hidden; background: #f2f3f0;
+    box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 12px 32px rgba(16,43,42,.12); }
+  .ramka > div.m { position: absolute; inset: 0; }
+  .maplibregl-ctrl-attrib, .maplibregl-ctrl-logo { display: none !important; }
+
+  /* Karta wybranej ulicy (arkusz w aplikacji) */
+  .karta { position: absolute; left: 12px; right: 12px; bottom: 12px; padding: 14px 16px 16px; border-radius: 22px;
+    background: rgba(255,255,255,.94); backdrop-filter: blur(18px); box-shadow: 0 8px 28px rgba(16,43,42,.16); }
+  .karta::before { content: ""; display: block; width: 36px; height: 5px; border-radius: 3px; background: rgba(16,43,42,.14); margin: -4px auto 10px; }
+  .karta .wiersz { display: flex; gap: 12px; align-items: center; }
+  .karta img { width: 40px; height: 40px; }
+  .karta b { font-size: 17px; font-weight: 800; letter-spacing: -.02em; display: block; }
+  .karta small { font-size: 12.5px; color: var(--tekst-2); }
+  .karta .fakt { font-size: 13px; line-height: 1.45; color: var(--tekst-2); margin-top: 10px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 7px 12px; border-radius: 999px;
+    font-size: 12.5px; font-weight: 700; background: var(--mieta-jasna); color: var(--glebia); }
+  .chip i { width: 14px; height: 3px; border-radius: 2px; background: var(--ulica); display: inline-block; }
+  .zoom { position: absolute; top: 14px; left: 14px; padding: 6px 10px; border-radius: 999px; font-size: 11.5px; font-weight: 700;
+    background: rgba(255,255,255,.9); color: var(--tekst-2); box-shadow: 0 2px 8px rgba(16,43,42,.12); }
+</style></head>
+<body>
+<div class="siatka">
+  <section>
+    <h2><span>A</span>Zakreślacz</h2>
+    <p class="opis">Ulica podkreślona szerokim, półprzezroczystym pasem w kolorze grupy, jak markerem po papierowej mapie. Nazwa biegnie wzdłuż linii, ikona zostaje w punkcie z bazy. Wybrana: pas gęstnieje i dostaje cienką linię w środku.</p>
+    <div class="ramka"><div class="m" id="mapa-a"></div><div class="zoom">Chłodna wybrana · Krochmalna i Ogrodowa obok</div>
+      <div class="karta"><div class="wiersz"><img src="../../../../apps/web/public/map-icons/street.png" alt=""><div><b>Chłodna</b><small>ulica · Wola</small></div></div>
+        <div class="fakt">Dawna droga narolna z placu Mirowskiego do wsi Wola, po 1713 włączona w Oś Saską.</div></div>
+    </div>
+  </section>
+  <section>
+    <h2><span>B</span>Tablica na linii</h2>
+    <p class="opis">Ulica rysowana jak linia trasy: biała obwódka i pełny kolor. Zamiast jednej ikony co kawałek stoi mała tablica z nazwą (jak oznaczenie drogi), więc widać, że to cała ulica. Wybrana: grubsza, a po linii płynie jaśniejszy przerywany ślad.</p>
+    <div class="ramka"><div class="m" id="mapa-b"></div><div class="zoom">Chłodna wybrana · Krochmalna i Ogrodowa obok</div>
+      <div class="karta"><div class="wiersz"><img src="../../../../apps/web/public/map-icons/street.png" alt=""><div><b>Chłodna</b><small>ulica · Wola</small></div></div>
+        <div class="fakt">Dawna droga narolna z placu Mirowskiego do wsi Wola, po 1713 włączona w Oś Saską.</div>
+        <span class="chip"><i></i>Przejdź całą ulicą</span></div>
+    </div>
+  </section>
+  <section>
+    <h2><span>C</span>Sznur pereł</h2>
+    <p class="opis">Z daleka ulica to zwykły znacznik. Po przybliżeniu (od zoomu 15) znacznik „rozwija się” w sznur kropek wzdłuż ulicy, z ikoną na początku jak przypinka. Wybrana: miękka poświata, a kropki przesuwają się wzdłuż ulicy. Ruch znika przy „ogranicz ruch”.</p>
+    <div class="ramka"><div class="m" id="mapa-c"></div><div class="zoom">Chłodna wybrana · Krochmalna i Ogrodowa obok</div>
+      <div class="karta"><div class="wiersz"><img src="../../../../apps/web/public/map-icons/street.png" alt=""><div><b>Chłodna</b><small>ulica · Wola · ok. 1,4 km</small></div></div>
+        <div class="fakt">Dawna droga narolna z placu Mirowskiego do wsi Wola, po 1713 włączona w Oś Saską.</div></div>
+    </div>
+  </section>
+</div>
+<script>
+// Ulica z bazy = punkt (places.geom). Linię bierzemy z kafelków OpenFreeMap: warstwa transportation_name, filtr po nazwie.
+const ULICA = '#4f6d9a';
+const WYBRANA = 'Chłodna';
+const ULICE = ['Chłodna', 'Krochmalna', 'Ogrodowa'];
+const PUNKTY_ULIC = { type: 'FeatureCollection', features: [
+  { type: 'Feature', properties: { name: 'Chłodna' }, geometry: { type: 'Point', coordinates: [20.9807142, 52.2356284] } },
+  { type: 'Feature', properties: { name: 'Krochmalna' }, geometry: { type: 'Point', coordinates: [20.9815998, 52.2346844] } },
+  { type: 'Feature', properties: { name: 'Ogrodowa' }, geometry: { type: 'Point', coordinates: [20.9824256, 52.2371604] } },
+]};
+// Inne miejsca z historii w okolicy (kontekst, przygaszone jak w aplikacji).
+const INNE = [
+  [20.97903, 52.2359, '#4f6d9a'], [20.9800598, 52.2357021, '#b5543c'], [20.9777324, 52.2355894, '#d4902a'],
+  [20.9806, 52.2356, '#4f6d9a'], [20.9801911, 52.2370217, '#8e4585'], [20.978, 52.23472, '#4f6d9a'],
+  [20.97803, 52.23442, '#b5543c'], [20.981767, 52.236727, '#d4902a'], [20.9816947, 52.2368821, '#3f7d5a'],
+  [20.982455, 52.2354, '#4f6d9a'], [20.98154, 52.23492, '#b5543c'], [20.982106, 52.236843, '#4f6d9a'],
+];
+const INNE_GJ = { type: 'FeatureCollection', features: INNE.map(([x, y, c]) => ({ type: 'Feature', properties: { c }, geometry: { type: 'Point', coordinates: [x, y] } })) };
+
+const nazwa = ['get', 'name'];
+const jestUlica = ['in', nazwa, ['literal', ULICE]];
+const jestWybrana = ['==', nazwa, WYBRANA];
+const ograniczRuch = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Ulice jaśniejsze niż domyślny positron, jak roadPaintOverrides w apps/web.
+function drogiJakWAplikacji(m) {
+  const set = (id, p, v) => { if (m.getLayer(id)) m.setPaintProperty(id, p, v); };
+  set('highway_minor', 'line-color', '#d2d7d5'); set('highway_minor', 'line-opacity', 1);
+  set('highway_path', 'line-color', '#dde1df');
+  set('highway_major_casing', 'line-color', '#c0c7c5'); set('highway_major_inner', 'line-color', '#ffffff');
+  set('water', 'fill-color', '#b4d7ec');
+}
+
+function mapa(id, zoom = 15.15) {
+  const m = new maplibregl.Map({ container: id, style: 'https://tiles.openfreemap.org/styles/positron',
+    center: [20.9872, 52.2357], zoom, bearing: 0, attributionControl: false, preserveDrawingBuffer: true });
+  return new Promise(res => m.on('load', async () => {
+    drogiJakWAplikacji(m);
+    const img = await m.loadImage('../../../../apps/web/public/map-icons/street.png');
+    m.addImage('ulica', img.data);
+    m.addSource('ulice-punkty', { type: 'geojson', data: PUNKTY_ULIC });
+    m.addSource('inne', { type: 'geojson', data: INNE_GJ });
+    m.addLayer({ id: 'inne', type: 'circle', source: 'inne', paint: {
+      'circle-radius': 7, 'circle-color': ['get', 'c'], 'circle-stroke-color': '#fff', 'circle-stroke-width': 2, 'circle-opacity': .55, 'circle-stroke-opacity': .55 } });
+    res(m);
+  }));
+}
+
+const linia = (id, paint, filtr = jestUlica, layout = {}) => ({ id, type: 'line', source: 'openmaptiles', 'source-layer': 'transportation_name',
+  filter: filtr, layout: { 'line-cap': 'round', 'line-join': 'round', ...layout }, paint });
+
+function napis(id, filtr, extra = {}) {
+  return { id, type: 'symbol', source: 'openmaptiles', 'source-layer': 'transportation_name', filter: filtr,
+    layout: { 'symbol-placement': 'line', 'text-field': ['upcase', nazwa], 'text-font': ['Noto Sans Bold'], 'text-size': 11,
+      'text-letter-spacing': .12, 'symbol-spacing': 320, ...extra.layout },
+    paint: { 'text-color': ULICA, 'text-halo-color': '#fff', 'text-halo-width': 2, ...extra.paint } };
+}
+
+const ikonaUlicy = (id, filtr, rozmiar = .32) => ({ id, type: 'symbol', source: 'ulice-punkty', filter: filtr,
+  layout: { 'icon-image': 'ulica', 'icon-size': rozmiar, 'icon-allow-overlap': true } });
+
+// Mrówki: przesuwanie przerywanej linii przez kolejne fazy dasharray.
+function mrowki(m, warstwa, kroki) {
+  if (ograniczRuch) return;
+  let i = 0;
+  setInterval(() => { i = (i + 1) % kroki.length; m.setPaintProperty(warstwa, 'line-dasharray', kroki[i]); }, 70);
+}
+const FAZY = (() => {
+  const out = [], kres = 0.5, przerwa = 3.5, n = 14;
+  for (let k = 0; k < n; k++) {
+    const t = (k / n) * (kres + przerwa);
+    out.push(t < kres ? [kres - t, przerwa, t] : [0, t - kres, kres, przerwa - (t - kres)]);
+  }
+  return out;
+})();
+
+// A: zakreślacz
+mapa('mapa-a').then(m => {
+  m.addLayer(linia('a-pas', { 'line-color': ULICA, 'line-opacity': ['case', jestWybrana, .42, .22],
+    'line-width': ['interpolate', ['linear'], ['zoom'], 13, 6, 16, ['case', jestWybrana, 22, 16], 18, 34], 'line-blur': 1 }), 'inne');
+  m.addLayer(linia('a-srodek', { 'line-color': ULICA, 'line-width': 2.5, 'line-opacity': .9 }, jestWybrana), 'inne');
+  m.addLayer(napis('a-napis', jestUlica, { layout: { 'text-offset': [0, 0] } }));
+  m.addLayer(ikonaUlicy('a-ikona', ['has', 'name']));
+});
+
+// B: tablica na linii
+mapa('mapa-b').then(m => {
+  m.addLayer(linia('b-obwodka', { 'line-color': '#fff', 'line-width': ['case', jestWybrana, 11, 8] }), 'inne');
+  m.addLayer(linia('b-linia', { 'line-color': ULICA, 'line-width': ['case', jestWybrana, 7, 4.5], 'line-opacity': ['case', jestWybrana, 1, .75] }), 'inne');
+  m.addLayer(linia('b-slad', { 'line-color': '#c9d6ea', 'line-width': 3, 'line-dasharray': [0.5, 3.5] }, jestWybrana, { 'line-cap': 'butt' }), 'inne');
+  mrowki(m, 'b-slad', FAZY);
+  m.addLayer({ id: 'b-tablica', type: 'symbol', source: 'openmaptiles', 'source-layer': 'transportation_name', filter: jestUlica,
+    layout: { 'symbol-placement': 'line', 'symbol-spacing': 210, 'text-field': nazwa, 'text-font': ['Noto Sans Bold'], 'text-size': 11.5,
+      'text-rotation-alignment': 'viewport', 'icon-rotation-alignment': 'viewport', 'icon-image': 'tablica', 'icon-text-fit': 'both',
+      'icon-text-fit-padding': [3, 8, 3, 8], 'text-allow-overlap': false },
+    paint: { 'text-color': '#fff' } });
+  // Tablica: zaokrąglony prostokąt w kolorze ulicy z białą obwódką, rozciągany pod napis.
+  const c = document.createElement('canvas'); c.width = c.height = 48; const g = c.getContext('2d');
+  g.fillStyle = '#fff'; g.beginPath(); g.roundRect(0, 0, 48, 48, 14); g.fill();
+  g.fillStyle = ULICA; g.beginPath(); g.roundRect(3, 3, 42, 42, 11); g.fill();
+  m.addImage('tablica', g.getImageData(0, 0, 48, 48), { pixelRatio: 2, stretchX: [[16, 32]], stretchY: [[16, 32]], content: [12, 12, 36, 36] });
+});
+
+// C: sznur pereł
+mapa('mapa-c').then(m => {
+  m.addLayer(linia('c-poswiata', { 'line-color': ULICA, 'line-opacity': .22, 'line-width': 18, 'line-blur': 10 }, jestWybrana), 'inne');
+  m.addLayer(linia('c-perly-tlo', { 'line-color': '#fff', 'line-width': ['case', jestWybrana, 10, 8], 'line-dasharray': [0, 2] }), 'inne');
+  // line-dasharray nie przyjmuje wyrażeń po danych, więc wybrana ulica ma osobną warstwę.
+  m.addLayer(linia('c-perly', { 'line-color': ULICA, 'line-width': 5, 'line-dasharray': [0, 2.4], 'line-opacity': .8 }, ['all', jestUlica, ['!', jestWybrana]]), 'inne');
+  m.addLayer(linia('c-perly-wybrana', { 'line-color': ULICA, 'line-width': 6.5, 'line-dasharray': [0, 2.4] }, jestWybrana), 'inne');
+  if (!ograniczRuch) {
+    let t = 0;
+    setInterval(() => { t = (t + 1) % 12; const s = (t / 12) * 2.4; m.setPaintProperty('c-perly-wybrana', 'line-dasharray', [0, s, 0, 2.4 - s]); }, 90);
+  }
+  m.addLayer(ikonaUlicy('c-ikona', ['has', 'name'], .36));
+  m.addLayer({ id: 'c-nazwa', type: 'symbol', source: 'ulice-punkty', filter: ['==', nazwa, WYBRANA],
+    layout: { 'text-field': nazwa, 'text-font': ['Noto Sans Bold'], 'text-size': 12.5, 'text-anchor': 'left', 'text-offset': [1.6, 0] },
+    paint: { 'text-color': ULICA, 'text-halo-color': '#fff', 'text-halo-width': 2 } });
+});
+</script>
+</body></html>

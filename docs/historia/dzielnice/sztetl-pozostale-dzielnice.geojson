@@ -1,0 +1,1014 @@
+{
+ "type": "FeatureCollection",
+ "name": "sztetl-pozostale-dzielnice",
+ "metadata": {
+  "zebrano": "2026-10-17"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.010965,
+     52.20766
+    ]
+   },
+   "properties": {
+    "id": "areszt-sledczy-warszawa-mokotow-rakowiecka-37",
+    "nazwa": "Areszt Śledczy Warszawa-Mokotów",
+    "name_en": "Warsaw-Mokotów Detention Centre",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Rakowiecka 37",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1902–2016",
+    "istnieje": true,
+    "fakty": [
+     "W latach 1902–1904 władze rosyjskie zbudowały więzienie karne z przeznaczeniem dla 800 więźniów.",
+     "Po I wojnie światowej doszło do rozbudowy więzienia, które służyło także jako areszt śledczy.",
+     "Podczas drugiej wojny światowej zakład przejęli Niemcy; funkcjonował pod niemiecką nazwą Deutsche Strafanstalt.",
+     "Więziono w nim licznych obywateli polskich, m.in. Polaków niosących pomoc Żydom.",
+     "Po drugiej wojnie światowej został tu osadzony i stracony SS-Gruppenführer Juergen Stroop, odpowiedzialny za likwidację getta warszawskiego.",
+     "Przed śmiercią Stroop spędził kilka miesięcy w jednej celi z Kazimierzem Moczarskim, którego opowieści Stroopa stały się inspiracją do książki „Rozmowy z katem”.",
+     "W 2016 r. Ministerstwo Sprawiedliwości RP zlikwidowało areszt; w obiekcie ma powstać Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Prison on Rakowiecka street in Mokotów, built by the Russian authorities in 1902–1904 for 800 inmates. Under German occupation it was run as the Deutsche Strafanstalt, and after the war it held SS-Gruppenführer Juergen Stroop before his execution. The remand centre was closed in 2016.",
+    "ludzie": [
+     {
+      "kto": "Juergen Stroop",
+      "rola": "SS-Gruppenführer, odpowiedzialny za likwidację getta warszawskiego; osadzony i stracony w tym areszcie",
+      "wiki": null
+     },
+     {
+      "kto": "Kazimierz Moczarski",
+      "rola": "dziennikarz, były szef Biura Informacji i Propagandy ZWZ-AK; autor „Rozmów z katem”",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "Deutsche Strafanstalt",
+     "więzienie mokotowskie"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Areszt Śledczy Warszawa-Mokotów (ul. Rakowiecka 37)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/51945-areszt-sledczy-warszawa-mokotow-ul-rakowiecka-37"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w tekście; adres z tytułu artykułu. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.039324,
+     52.251597
+    ]
+   },
+   "properties": {
+    "id": "dom-modlitwy-fajgenblatow-targowa-50-52",
+    "nazwa": "Dom modlitwy Fajgenblatów",
+    "name_en": "Fajgenblat prayer house",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 50/52",
+    "adres_historyczny": "nr hip. Praga 156/157",
+    "lokalizacja": "dokladna",
+    "okres": "przed 1869–1940(?)",
+    "istnieje": true,
+    "fakty": [
+     "Synagoga mieściła się przy ul. Targowej 50/52 (nr hip. Praga 156/157) i funkcjonowała przed 1869–1940(?).",
+     "Skrajny dom frontowy posesji, wzniesiony w 1819 r. przez niejakiego Rotblita, był ponoć pierwszym murowanym budynkiem na Pradze.",
+     "Przed 1839 r. mieściła się tu żydowska szkoła elementarna.",
+     "Około 1870 r. do muru granicznego dostawiono murowaną oficynę, w której część sal była prawdopodobnie od początku przeznaczona na modlitwę.",
+     "Adres ten po raz pierwszy znalazł się w spisie domów modlitwy z 1869 roku; w spisie z 1926 r. figurują tu trzy modlitewnie.",
+     "W 1938 r. właścicielami posesji byli Maksymilian i Hipolit bracia Fajgenblat oraz Rozalia Hermelin; najpóźniej w październiku 1940 roku zostali zmuszeni do przesiedlenia do getta.",
+     "Malowidła w jednej z sal zawierają datę 1934 r. i imiona fundatorów: Israel Jehuda, Jehoszua, Josef i Zew, synowie Dawida Grinsztejna.",
+     "Garaż, który istniał w budynku, funkcjonował tu do 1999 roku."
+    ],
+    "ciekawostki": [
+     "W drugiej zachowanej sali modlitwy przez wiele lat mieściła się pracownia krawiecka.",
+     "W 1943 r. cechowy mistrz ślusarski Władysław Himkowski zwrócił się o orzeczenie, czy budynek gospodarczy w podwórzu może być użytkowany jako warsztat."
+    ],
+    "summary_en": "Former prayer house in the courtyard of 50/52 Targowa street in Praga. Zodiac-frieze murals dated 1934 survive in two halls. The owners were forced out to the ghetto in 1940.",
+    "ludzie": [
+     {
+      "kto": "Maksymilian Fajgenblat",
+      "rola": "współwłaściciel posesji w 1938 r.",
+      "wiki": null
+     },
+     {
+      "kto": "Hipolit Fajgenblat",
+      "rola": "współwłaściciel posesji w 1938 r.",
+      "wiki": null
+     },
+     {
+      "kto": "Rozalia Hermelin",
+      "rola": "współwłaścicielka posesji w 1938 r.",
+      "wiki": null
+     },
+     {
+      "kto": "Rotblit",
+      "rola": "wzniósł frontowy dom posesji w 1819 r.",
+      "wiki": null
+     },
+     {
+      "kto": "Władysław Himkowski",
+      "rola": "cechowy mistrz ślusarski; w 1943 r. ubiegał się o orzeczenie ws. użytkowania budynku w podwórzu",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "nr hip. Praga 156/157"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Dom modlitwy Fajgenblatów w Warszawie (ul. Targowa 50/52)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89621-dom-modlitwy-fajgenblatow-w-warszawie-ul-targowa-5052"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w tekście; adres z tytułu. Dzielnica z tekstu: Praga (bez podziału na Północ/Południe). Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.041133,
+     52.250564
+    ]
+   },
+   "properties": {
+    "id": "dom-modlitwy-targowa-38",
+    "nazwa": "Dom modlitwy przy ul. Targowej 38",
+    "name_en": "Prayer house at 38 Targowa street",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 38",
+    "adres_historyczny": "nr hip. 163 b Praga",
+    "lokalizacja": "dokladna",
+    "okres": "przed 1910",
+    "istnieje": false,
+    "fakty": [
+     "Dom modlitwy pod tym adresem figuruje w spisie z 1910 roku.",
+     "Na Planie Lindleya z 1905 r. zaznaczono w tym miejscu odrębny budynek murowany o wymiarach 5,0 x 5,5 m, jednak rysunek jest przekreślony.",
+     "Na planie miasta z 1925 r. w tym samym miejscu zaznaczono budynek drewniany o wymiarach około 6 x 6 m.",
+     "Zachowane malowidła na ścianie granicznej sąsiedniego budynku (nr pol. 36) są od wielu lat całkowicie odsłonięte i narażone na działanie warunków atmosferycznych.",
+     "Towarzystwo Przyjaciół Warszawy od dawna bezskutecznie podejmuje próby ratowania tego zabytku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Former prayer house at 38 Targowa street in Praga, listed in the 1910 census of prayer houses. Fragments of murals survive on the boundary wall of the neighbouring building, exposed to the weather for years.",
+    "ludzie": [],
+    "dawne_nazwy": [
+     "nr hip. 163 b Praga"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Targowej 38 w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89735-dom-modlitwy-przy-ul-targowej-38-w-warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Autorka zastanawia się, czy malowidła należały do tego domu modlitwy; lokalizacja niepewna. Brak współrzędnych. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.037235,
+     52.252873
+    ]
+   },
+   "properties": {
+    "id": "dom-modlitwy-targowa-64",
+    "nazwa": "Dom modlitwy przy ul. Targowej 64",
+    "name_en": "Prayer house at 64 Targowa street",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 64",
+    "adres_historyczny": "nr hip. 150 b, Praga",
+    "lokalizacja": "dokladna",
+    "okres": "1806?–1940?",
+    "istnieje": false,
+    "fakty": [
+     "Synagoga na ul. Targowej 64 (nr hip. 150 b, Praga) funkcjonowała w okresie od 1806? (po I wojnie światowej?) do 1940?.",
+     "Pod tym adresem istniała jedna z najstarszych bóżnic na Pradze.",
+     "W spisach z 1815 i 1826 r. wymieniono domy modlitwy pod nr hip. 150, co oznacza, że działka nie była jeszcze podzielona.",
+     "W spisie z 1926 r. po jednym domu modlitwy figurowało na posesjach nr hip. 150 a (Targowa 66) i 150 b (Targowa 64).",
+     "Dom modlitwy mieścił się na pierwszym piętrze, od frontu czynszowej kamienicy; dla około stu wiernych, przeważnie zgrupowanych przy praskiej organizacji syjonistycznej.",
+     "Ściany i sufit sali były ozdobione malowidłami, a dla kobiet przeznaczono niewielki pokój; nic z tej dekoracji się nie zachowało."
+    ],
+    "ciekawostki": [
+     "Zarząd domu modlitwy tworzyli zamożni prascy kupcy; przez jakiś czas był wśród nich ojciec Mariana Fuksa."
+    ],
+    "summary_en": "Former prayer house on the first floor of a Praga tenement at 64 Targowa street, one of the oldest in the district. It served about a hundred worshippers, and its decoration did not survive.",
+    "ludzie": [
+     {
+      "kto": "Marian Fuks",
+      "rola": "świadek, który pamiętał dom modlitwy jako przebudowane mieszkanie; informator autorki",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "nr hip. 150 b, Praga"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Targowej 64 w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89676-dom-modlitwy-przy-ul-targowej-64-w-warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Daty w tekście z pytajnikami. Brak współrzędnych. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.020349,
+     52.186596
+    ]
+   },
+   "properties": {
+    "id": "kamien-instytut-mokotowski-ksawerow-13",
+    "nazwa": "Kamień w Instytucie Mokotowskim",
+    "name_en": "Memorial stone at the Mokotów Institute",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Ksawerów 13",
+    "adres_historyczny": "folwark Ksawerów",
+    "lokalizacja": "dokladna",
+    "okres": "okupacja niemiecka; kamień od 1991",
+    "fakty": [
+     "Instytut Mokotowski, zakład wychowawczy dla trudnej młodzieży, powstał w 1830 r. z inicjatywy hrabiego Fryderyka Skarbka.",
+     "Pierwotnie mieścił się przy ul. Okopowej, skąd w 1851 r. przeniósł się do zabudowań folwarku Ksawerów należącego do rodziny Pusłowskich.",
+     "Dworek Ksawerego Pusłowskiego przy ul. Ksawerów 13 zbudowano w 1840 roku.",
+     "W okresie okupacji niemieckiej pracownicy Instytutu Mokotowskiego uratowali 500 osób pochodzenia żydowskiego.",
+     "Dyrektor Władysław Sala uzyskał zgodę na zatrudnianie więźniów getta w swoim gospodarstwie rolnym; każdego dnia zabierał z getta kilkudziesięciu ludzi, ale kwitował odbiór tylko dwudziestu.",
+     "Za każdą osobę, której nie pokwitował, płacił 5 zł.",
+     "5 września 1991 r. w parku na Ksawerowie, tuż przy ul. Puławskiej, odsłonięto głaz pamiątkowy z napisem: „Kamień upamiętnia ratowanie Żydów od zagłady hitlerowskiej przez pracowników Instytutu Mokotowskiego na farmie Ksawerów. Warszawa 1991”."
+    ],
+    "ciekawostki": [
+     "Żydzi wyprowadzeni przez Salę znajdowali schronienie w gospodarstwie, a później w innych miejscach po tzw. aryjskiej stronie Warszawy."
+    ],
+    "summary_en": "Memorial boulder unveiled in 1991 in the park at Ksawerów, commemorating the rescue of about 500 Jews by staff of the Mokotów Institute during the occupation. Director Władysław Sala arranged for ghetto prisoners to work on the institute's farm.",
+    "ludzie": [
+     {
+      "kto": "Fryderyk Skarbek",
+      "rola": "hrabia, inicjator powstania Instytutu Mokotowskiego w 1830 r.",
+      "wiki": null
+     },
+     {
+      "kto": "Ksawery Pusłowski",
+      "rola": "właściciel dworku przy ul. Ksawerów 13 (zbudowany w 1840)",
+      "wiki": null
+     },
+     {
+      "kto": "Władysław Sala",
+      "rola": "dyrektor Instytutu Mokotowskiego w okresie okupacji",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "folwark Ksawerów"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Kamień w Instytucie Mokotowskim w Warszawie (ul. Ksawerów 13)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52198-kamien-w-instytucie-mokotowskim-w-warszawie-ul-ksawerow-13"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych. Tekst nie mówi, czy głaz istnieje dziś. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.035704,
+     52.252255
+    ]
+   },
+   "properties": {
+    "id": "mykwa-praga-klopotowskiego-31",
+    "nazwa": "Mykwa na Pradze",
+    "name_en": "Mikveh in Praga",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kłopotowskiego 31",
+    "adres_historyczny": "ul. Brukowa",
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+     "Jedyna zachowana żydowska łaźnia rytualna (mykwa) w Warszawie znajduje się na Pradze, przy ul. Kłopotowskiego 31, niegdyś Brukowej.",
+     "Praska mykwa została wybudowana w latach 1911–1914 według projektu Nauma Hornsteina.",
+     "Gmach licowany czerwoną cegłą ma dwa skrzydła, które wraz z poprzeczną oficyną otaczają z trzech stron dziedziniec.",
+     "W wnętrzach zachowały się m.in. posadzki i marmurowe schody.",
+     "Budynek jest wpisany do rejestru zabytków.",
+     "Obecnie budynek stanowi własność Gminy Wyznaniowej Żydowskiej, która udostępniła go na siedzibę Wielokulturowego Liceum Humanistycznego im. Jacka Kuronia."
+    ],
+    "ciekawostki": [
+     "Nie zachowała się attyka z cokołami i balustradami."
+    ],
+    "summary_en": "Ritual bath built in 1911–1914 to a design by Naum Hornstein, the only surviving Jewish mikveh in Warsaw, on Kłopotowskiego street in Praga. It is now owned by the Jewish community and houses a secondary school.",
+    "ludzie": [
+     {
+      "kto": "Naum Hornstein",
+      "rola": "autor projektu mykwy (1911–1914)",
+      "wiki": null
+     },
+     {
+      "kto": "Jacek Kuroń",
+      "rola": "patron Wielokulturowego Liceum Humanistycznego mieszczącego się w budynku",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "ul. Brukowa"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Mykwa na Pradze w Warszawie (ul. Kłopotowskiego 31)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89540-mykwa-na-pradze-w-warszawie-ul-klopotowskiego-31"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w tekście. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.004534,
+     52.288916
+    ]
+   },
+   "properties": {
+    "id": "synagoga-garnizonowa-praga-jagiellonska",
+    "nazwa": "Synagoga garnizonowa na Pradze",
+    "name_en": "Garrison synagogue in Praga",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jagiellońska",
+    "adres_historyczny": "u zbiegu ul. Ratuszowej i ul. Jagiellońskiej (kompleks koszar)",
+    "lokalizacja": "przyblizona",
+    "okres": "1938–1939",
+    "istnieje": false,
+    "fakty": [
+     "Nowa synagoga garnizonowa powstała w 1938 r. w kompleksie koszar u zbiegu Ratuszowej i Jagiellońskiej.",
+     "Pierwsze nabożeństwo w nowej synagodze odprawiono 4 grudnia 1938 roku.",
+     "Synagoga miała służyć żołnierzom odbywającym czynną służbę w warszawskim garnizonie, m.in. w 21. i 36. Pułku Piechoty oraz w 1. Pułku Szwoleżerów.",
+     "Starsza synagoga garnizonowa na Pradze była już w użyciu w 1937 r., kiedy odprawiono w niej nabożeństwo dla żołnierzy-Żydów w Święto Niepodległości.",
+     "Jedyną dekorację stanowiła konturowa Gwiazda Dawida na stropie nad przejściem.",
+     "Dnia 27 sierpnia 1939 r. w synagodze tej odbył się pierwszy i może równocześnie ostatni ślub żołnierza."
+    ],
+    "ciekawostki": [
+     "Przy poświęceniu synagogi rabin Mojżesz Schorr mówił o modlitwach „żołnierza – Żyda, syna Polski”."
+    ],
+    "summary_en": "Wooden garrison synagogue for Jewish soldiers, built in 1938 in the barracks complex at Ratuszowa and Jagiellońska streets in Praga. It opened on 4 December 1938 and was still in use in August 1939.",
+    "ludzie": [
+     {
+      "kto": "Mojżesz Schorr",
+      "rola": "rabin, który wygłosił kazanie przy poświęceniu synagogi",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Synagoga garnizonowa na Pradze w Warszawie (ul. Jagiellońska)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89728-synagoga-garnizonowa-na-pradze-w-warszawie-ul-jagiellonska"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dokładna lokalizacja budynku nieznana (tekst). Brak współrzędnych; koniec istnienia nie podany w tekście. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.034624,
+     52.252496
+    ]
+   },
+   "properties": {
+    "id": "synagoga-gmach-wychowawczy-gminy-starozakonnych-jagiellonska-28",
+    "nazwa": "Synagoga w Gmachu Wychowawczym Gminy Starozakonnych",
+    "name_en": "Synagogue in the Warsaw Jewish Community Educational Building",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jagiellońska 28",
+    "adres_historyczny": "nr hip. 181/182",
+    "lokalizacja": "dokladna",
+    "okres": "1914–1940?",
+    "istnieje": true,
+    "fakty": [
+     "Synagoga przy ul. Jagiellońskiej 28 (nr hip. 181/182) funkcjonowała w latach 1914–1940?.",
+     "Synagoga powstała jako część Gmachu Wychowawczego Warszawskiej Gminy Starozakonnych im. Michała Bergsona, wzniesionego w latach 1911–1914 według projektu Henryka Stifelmana i Stanisława Weissa.",
+     "Budynek miał pomieścić przytułek dzienny dla 100 dzieci, ochronkę dla 150 dzieci oraz szkołę na 550 dziewcząt i chłopców.",
+     "Stary dom modlitwy, dawny bejt ha-midrasz, istniał w tym miejscu od 1838 roku.",
+     "Gmach po wybuchu wojny objęły władze wojskowe, a do Gminy przeszedł dopiero na wiosnę 1917 r.",
+     "W latach okupacji hitlerowskiej budynek pełnił funkcję szpitala oraz różne funkcje administracyjne.",
+     "Wiosną 1945 r. budynek objął Centralny Komitet Żydów w Polsce; w pomieszczeniu dawnej synagogi od 1947 r. działał teatr.",
+     "W 1950 r. budynek przejęły władze Pragi Północ; po paru latach w miejsce teatru żydowskiego ulokowano teatr dla dzieci „Baj”, który funkcjonuje tam do dzisiaj."
+    ],
+    "ciekawostki": [
+     "Koszt budowy całego kompleksu wyniósł 160 tysięcy rubli, czyli około połowy sumy wydanej niecałe 40 lat wcześniej na Wielką Synagogę na Tłomackiem."
+    ],
+    "summary_en": "Prayer room in the educational complex of the Warsaw Jewish Community at Jagiellońska 28 in Praga, built in 1911–1914 to designs by Henryk Stifelman and Stanisław Weiss. The interior has lost its original decoration; after the war the prayer room housed a theatre, and the building later became home to the children's theatre Baj.",
+    "ludzie": [
+     {
+      "kto": "Henryk Stifelman",
+      "rola": "autor projektu Gmachu Wychowawczego (1911–1914)",
+      "wiki": null
+     },
+     {
+      "kto": "Stanisław Weiss",
+      "rola": "autor projektu Gmachu Wychowawczego (1911–1914)",
+      "wiki": null
+     },
+     {
+      "kto": "Michał Bergson",
+      "rola": "patron Gmachu Wychowawczego Warszawskiej Gminy Starozakonnych",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "Gmach Wychowawczy Warsz. Gminy Starozakonnych im. Michała Bergsona",
+     "nr hip. 181/182"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Synagoga w Gmachu Wychowawczym Gminy Starozakonnych na Pradze w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89759-synagoga-w-gmachu-wychowawczym-gminy-starozakonnych-na-pradze-w-warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w tekście. Pominięto synagogę w Pustelniku: artykuł podaje, że osada leżała poza granicą Warszawy, a budowy nie potwierdzono. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.167411,
+     52.262057
+    ]
+   },
+   "properties": {
+    "id": "synagoga-rembertow-gawedziarzy-25",
+    "nazwa": "Synagoga w Warszawie-Rembertowie (ul. Gawędziarzy 25)",
+    "name_en": "Synagogue in Rembertów (Gawędziarzy 25 Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "ul. Gawędziarzy 25",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1920–1999",
+    "istnieje": false,
+    "fakty": [
+     "Synagoga przy ul. Gawędziarzy 25 w Rembertowie została wybudowana po 1920 roku.",
+     "Mieściła się w murowanym, orientowanym budynku na planie prostokąta, z nieotynkowanej cegły.",
+     "Podczas II wojny światowej została zdewastowana przez Niemców.",
+     "Po 1945 r. budynek został przebudowany na siedzibę zakładu rzemieślniczego.",
+     "W 1999 r. budynek uległ rozbiórce.",
+     "Na części działki urządzono plac zabaw, a druga część stanowi własność prywatną.",
+     "Po synagodze nie pozostał żaden materialny ślad."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A synagogue built after 1920 at Gawędziarzy 25 in Rembertów. It was damaged by the Germans during World War II, converted into a craft workshop after 1945, and demolished in 1999. Nothing of it remains today.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Synagoga w Warszawie-Rembertowie (ul. Gawędziarzy 25)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/88274-synagoga-w-warszawie-rembertowie-ul-gawedziarzy-25"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.994449,
+     52.228386
+    ]
+   },
+   "properties": {
+    "id": "szkola-prywatna-powszechna-i-zelazna-27",
+    "nazwa": "Szkoła Prywatna Powszechna w Warszawie I (ul. Żelazna 27)",
+    "name_en": "Private Primary School I at Żelazna 27",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Żelazna 27",
+    "adres_historyczny": "ul. Żelazna 27",
+    "lokalizacja": "dokladna",
+    "okres": "1930–1931",
+    "istnieje": false,
+    "fakty": [
+     "W roku szkolnym 1930/1931 przy ul. Żelaznej 27 funkcjonowała siedmioklasowa męska szkoła powszechna, z językami nauczania polskim i hebrajskim.",
+     "W Spisie Abonentów Warszawskiej Sieci Telefonów Polskiej Akcyjnej Spółki Telefonicznej 1930-31 jej nazwa własna brzmi „Szkoła Prywatna Powszechna”.",
+     "Siedziba szkoły posiadała 7 sal lekcyjnych (296 m kw., wynajem).",
+     "Zatrudniano 17 nauczycieli.",
+     "Uczęszczało 268 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A seven-grade private boys' primary school with Polish and Hebrew as languages of instruction, located at Żelazna 27 in the 1930/31 school year. It rented seven classrooms and had 17 teachers and 268 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Szkoła Prywatna Powszechna w Warszawie I",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139145-szkola-prywatna-powszechna-w-warszawie-i"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko adres z 1930/31 (przedwojenny), dzisiejszy nie podany w tekście. Dzielnica nie wynika z tekstu; ul. Żelazna może leżeć na granicy Woli i Muranowa (Śródmieście), do sprawdzenia przed użyciem. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.035812,
+     52.249456
+    ]
+   },
+   "properties": {
+    "id": "szkola-cku-wrzesinska-2-1",
+    "nazwa": "Szkoła podstawowa Centralnego Komitetu Żydów w Polsce (ul. Wrzesińska 2/1)",
+    "name_en": "Primary School of the Central Committee of Jews in Poland (Wrzesińska 2/1)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Wrzesińska 2/1",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1945–1946",
+    "istnieje": false,
+    "fakty": [
+     "Pierwsza udokumentowana siedziba szkoły żydowskiej Centralnego Komitetu Żydów w Polsce mieściła się przy ul. Wrzesińskiej 2/1 na warszawskiej Pradze.",
+     "Szkoła rozpoczęła działalność jesienią 1945 r., a jej oficjalna nazwa brzmiała: „Szkoła Powszechna przy Wojewódzkim Komitecie Żydowskim w Warszawie”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The first documented seat of the Central Committee of Jews in Poland's Jewish primary school, on Wrzesińska Street in Praga. The school opened in autumn 1945 under the name Primary School at the Voivodeship Jewish Committee in Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [
+     "Szkoła Powszechna przy Wojewódzkim Komitecie Żydowskim w Warszawie"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Szkoła podstawowa Centralnego Komitetu Żydów w Polsce w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139307-szkola-podstawowa-centralnego-komitetu-zydow-w-polsce-w-warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.044205,
+     52.249709
+    ]
+   },
+   "properties": {
+    "id": "szkola-cku-targowa-22",
+    "nazwa": "Szkoła podstawowa Centralnego Komitetu Żydów w Polsce (ul. Targowa 22)",
+    "name_en": "Primary School of the Central Committee of Jews in Poland (Targowa 22)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 22",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1946–1947",
+    "istnieje": false,
+    "fakty": [
+     "25.04.1946 r. szkoła przeniosła się na ul. Targową 22, gdzie panowały lepsze warunki lokalowe.",
+     "Budynek był wyposażony w świetlicę, bibliotekę i stołówkę.",
+     "W tym czasie patronat nad szkołą objęło Żydowskie Towarzystwo Kulturalne z New Haven."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Central Committee of Jews in Poland's Jewish primary school moved here on 25 April 1946, into a building with better facilities, including a reading room, library and canteen. The school was under the patronage of a Jewish cultural society from New Haven at that time.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Szkoła podstawowa Centralnego Komitetu Żydów w Polsce w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139307-szkola-podstawowa-centralnego-komitetu-zydow-w-polsce-w-warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie podana w tekście, przypisana z adresu (ul. Targowa, Praga). Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.034624,
+     52.252496
+    ]
+   },
+   "properties": {
+    "id": "szkola-cku-jagiellonska-28",
+    "nazwa": "Szkoła podstawowa Centralnego Komitetu Żydów w Polsce (ul. Jagiellońska 28)",
+    "name_en": "Primary School of the Central Committee of Jews in Poland (Jagiellońska 28)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jagiellońska 28",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1947–1951",
+    "istnieje": false,
+    "fakty": [
+     "Na przełomie lutego i marca 1947 r. szkołę przeniesiono do budynku przy ul. Jagiellońskiej 28.",
+     "W 1948 r. szkoła zmieniła nazwę na Społeczną Żydowską Szkołę Powszechną im. Bohaterów Getta w Warszawie.",
+     "W tym czasie uczyło się w niej 58 uczniów (stan na początek lutego 1948 roku).",
+     "Nauka wbrew zaleceniom odbywała się w języku polskim.",
+     "W 1949 r. szkołę upaństwowiono i od września tego roku funkcjonowała jako Publiczna Szkoła Podstawowa nr 4 z żydowskim językiem nauczania.",
+     "Latem 1951 r. szkoła została zamknięta."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The school moved to Jagiellońska 28 in early 1947 and was renamed the Social Jewish Primary School named after the Ghetto Heroes in 1948. It was nationalised in 1949 as Public Primary School No. 4 and closed in summer 1951.",
+    "ludzie": [],
+    "dawne_nazwy": [
+     "Społeczna Żydowska Szkoła Powszechna im. Bohaterów Getta w Warszawie",
+     "Publiczna Szkoła Podstawowa nr 4"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Szkoła podstawowa Centralnego Komitetu Żydów w Polsce w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139307-szkola-podstawowa-centralnego-komitetu-zydow-w-polsce-w-warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie podana w tekście, przypisana z adresu (ul. Jagiellońska, Praga). Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.048089,
+     52.20641
+    ]
+   },
+   "properties": {
+    "id": "szkola-religijna-przy-ul-czerniakowskiej-105",
+    "nazwa": "Szkoła religijna przy ul. Czerniakowskiej 105",
+    "name_en": "Religious school at 105 Czerniakowska Street",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Czerniakowska 105",
+    "adres_historyczny": "Czerniakowska 105",
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "fakty": [
+     "W roku szkolnym 1930/1931 przy ul. Czerniakowskiej 105 funkcjonowała siedmioklasowa żydowska żeńska szkoła religijna z językami nauczanymi polskim, hebrajskim i jidysz.",
+     "Posiadała 4 sale lekcyjne, 16 nauczycieli i 217 uczennic.",
+     "Wyróżniała się wielkością na tle innych szkół religijnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A seven-grade religious school for Jewish girls, with Polish, Hebrew and Yiddish instruction, operated at 105 Czerniakowska Street in the 1930/1931 school year. It had 4 classrooms, 16 teachers and 217 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Czerniakowskiej 105 w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/183609-szkola-religijna-przy-ul-czerniakowskiej-105-w-warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie jest podana w tekście, pole puste; sprawdzić, czy to nie Śródmieście (wtedy pominąć). Tekst podaje tylko adres z 1930/1931, więc wpisany w obu polach adresu. Źródło: Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931, Warszawa 1933, s. 41. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.930808,
+     52.223523
+    ]
+   },
+   "properties": {
+    "id": "szkola-religijna-przy-ul-wolskiej-129",
+    "nazwa": "Szkoła religijna przy ul. Wolskiej 129",
+    "name_en": "Religious school at 129 Wolska Street",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Wolska 129",
+    "adres_historyczny": "Wolska 129",
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "fakty": [
+     "W roku szkolnym 1930/1931 przy ul. Wolskiej 129 funkcjonowała trzyklasowa męska szkoła religijna, z językami nauczania polskim i jidysz.",
+     "Siedziba posiadała 3 sale lekcyjne (96 m kw., wynajem).",
+     "Zatrudniano 5 nauczycieli.",
+     "Uczęszczało 99 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-class religious school for boys, with Polish and Yiddish instruction, operated at 129 Wolska Street in the 1930/1931 school year. It rented 3 classrooms (96 m²), employed 5 teachers and had 99 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Wolskiej 129 w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139141-szkola-religijna-przy-ul-wolskiej-129-w-warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/1931, więc wpisany w obu polach adresu. Dzielnica (Wola) wynika z adresu, nie z tekstu. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.993624,
+     52.229692
+    ]
+   },
+   "properties": {
+    "id": "szkola-religijna-zelazna-37",
+    "nazwa": "Szkoła religijna przy ul. Żelaznej 37",
+    "name_en": "Religious school at 37 Żelazna Street",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Żelazna 37",
+    "adres_historyczny": "Żelazna 37",
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "fakty": [
+     "W roku szkolnym 1930/1931 przy ul. Żelaznej 37 funkcjonowała dwuklasowa męska szkoła religijna, z językami nauczania polskim i jidysz.",
+     "Siedziba szkoły składała się z 3 sal lekcyjnych (49 m kw., wynajem).",
+     "Zatrudniano 4 nauczycieli. Uczęszczało 56 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-class men's religious school teaching in Polish and Yiddish operated at 37 Żelazna Street in the 1930/31 school year. It rented three classrooms and had 56 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Żelaznej 37 w Warszawie",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139147-szkola-religijna-przy-ul-zelaznej-37-w-warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie wynika z tekstu. Do sprawdzenia: jeśli to Muranów (Śródmieście), rekord trzeba pominąć. Tekst podaje tylko adres przedwojenny, więc wpisany w obu polach. Brak współrzędnych. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.960205,
+     52.314902
+    ]
+   },
+   "properties": {
+    "id": "talmud-tora-xii-szczesliwa-6",
+    "nazwa": "Talmud-Tora XII Gminy Wyznaniowej Żydowskiej w Warszawie (ul. Szczęśliwa 6)",
+    "name_en": "Talmud Torah XII of the Jewish Community in Warsaw (6 Szczęśliwa Street)",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Szczęśliwa 6",
+    "adres_historyczny": "Szczęśliwa 6",
+    "lokalizacja": "przyblizona",
+    "okres": "1930/1931",
+    "fakty": [
+     "W roku szkolnym 1930/1931 przy ul. Szczęśliwej 6 funkcjonowała męska szkoła religijna z 8 kompletami uczniów, z językami nauczania polskim i hebrajskim.",
+     "Była to talmud-tora, utrzymywana przez Gminę Wyznaniową Żydowską w Warszawie.",
+     "Siedzibę stanowiły 4 sale lekcyjne (210 m kw., wynajem).",
+     "Było 17 nauczycieli, 314 uczniów.",
+     "Pod tym samym adresem mieściła się Druga Miejska Szkoła Rękodzielnicza im. Narcyzy Żmichowskiej."
+    ],
+    "ciekawostki": [
+     "Była to jedna z największych szkół religijnych w Warszawie."
+    ],
+    "summary_en": "A men's Talmud Torah with eight classes, taught in Polish and Hebrew, operated at 6 Szczęśliwa Street in the 1930/31 school year. It was maintained by the Jewish Community of Warsaw and had 314 pupils and 17 teachers. The same address housed the Second Municipal Crafts School named after Narcyza Żmichowska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Talmud-Tora Gminy Wyznaniowej Żydowskiej w Warszawie XII",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139110-talmud-tora-gminy-wyznaniowej-zydowskiej-w-warszawie-xii"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie wynika z tekstu, do ustalenia. Tekst podaje tylko adres przedwojenny, więc wpisany w obu polach. Źródło ma literówkę „Szkota”, poprawiona na „Szkoła”. Tekst zawiera też przypuszczenie o związku obu szkół (pominięte jako niepewne). Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.107883,
+     52.260017
+    ]
+   },
+   "properties": {
+    "id": "miejsce-egzekucji-zabraniecka-utrata",
+    "nazwa": "Miejsce egzekucji ok. 600 Żydów w latach 1942–1943 (ul. Zabraniecka/Utrata)",
+    "name_en": "Execution site of about 600 Jews in 1942–1943 (Zabraniecka/Utrata Streets)",
+    "typ": "pomnik",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Zabraniecka / Utrata (zbieg ulic)",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1942–1943 (egzekucje); pomnik po wyzwoleniu",
+    "fakty": [
+     "W latach 1942–1943 w rejonie ulicy Zabranieckiej Niemcy zamordowali ok. 600 osób pochodzenia żydowskiego.",
+     "Po wyzwoleniu Warszawy z rąk okupanta, u zbiegu ulic Zabranieckiej i Utrata, odsłonięto pomnik ku czci ofiar egzekucji.",
+     "Pomnik ma stylizowaną postać krzyża maltańskiego z napisem „Cześć ich pamięci!” (proj. Karol Tchorek, zapewne lata 50. XX w.).",
+     "W tej części Warszawy prace przymusowe Żydów odbywały się na terenie warsztatów kolejowych i parowozowni na Bródnie (stacja Warszawa Praga), w zakładach wojskowych na Żeraniu oraz w magazynie węglowym na Pelcowiźnie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "About 600 Jews were shot by the Germans near Zabraniecka Street in 1942–1943. After the liberation, a cross-shaped monument with the inscription 'Cześć ich pamięci!' was unveiled at the junction with Utrata Street. The monument is attributed to designer Karol Tchorek, probably from the 1950s.",
+    "ludzie": [
+     {
+      "kto": "Karol Tchorek",
+      "rola": "projektant pomnika (proj. Karol Tchorek)",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Utrata – miejsce egzekucji 600 Żydów w latach 1942–1943 (ul. Zabraniecka/Utrata)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52360-utrata-miejsce-egzekucji-600-zydow-w-latach-1942-1943-ul-zabranieckautrata"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dzielnica nie jest podana w treści artykułu. Wpisano Targówek na podstawie tytułu przypisu („Na Targówku kamienie mówią…”). Tekst nie mówi, czy pomnik stoi dziś, stąd istnieje: null. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.174504,
+     52.258158
+    ]
+   },
+   "properties": {
+    "id": "obelisk-markietanki-rembertow",
+    "nazwa": "Obelisk upamiętniający mord z 1943 r. przy ul. Markietanki",
+    "name_en": "Obelisk commemorating the 1943 killing at Markietanki Street",
+    "typ": "pomnik",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "Markietanki",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1943",
+    "istnieje": true,
+    "fakty": [
+     "Podczas drugiej wojny światowej na terenie Rembertowa Niemcy rozstrzelali kilkaset osób pochodzenia żydowskiego.",
+     "Przy ul. Markietanki znajduje się obelisk z napisem: „Tu w 1943 r. hitlerowcy dokonali mordu na 200 Żydach” (tylko język polski).",
+     "Obelisk upamiętnia zbrodnię z lata 1943 r., gdy Niemcy rozstrzelali ostatnich mieszkańców getta w Rembertowie na terenie działek za dzisiejszą ul. Markietanki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An obelisk on Markietanki Street in Rembertów commemorates the summer 1943 shooting of 200 Jews, the last residents of the local ghetto. Its inscription is in Polish only.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Warszawa-Rembertów - miejsca egzekucji",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/51954-warszawa-rembertow-miejsca-egzekucji"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru i współrzędnych. Rekord z artykułu zbiorczego o miejscach egzekucji w Rembertowie. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.034624,
+     52.252496
+    ]
+   },
+   "properties": {
+    "id": "wielka-synagoga-gminna-praga",
+    "nazwa": "Wielka Synagoga Gminna na Pradze",
+    "name_en": "Great Community Synagogue in Praga",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Jagiellońska 28",
+    "adres_historyczny": "nr hip. 181/182 (posesja Szmula Zbytkowera, budowle wcześniejsze)",
+    "lokalizacja": "dokladna",
+    "okres": "1836–1955/1961 (data rozbiórki sporna)",
+    "istnieje": false,
+    "fakty": [
+     "Prawdopodobnie synagoga istniała tu co najmniej od 1780 r.",
+     "Zapewne po 1794 r. Szmul Zbytkower, na swojej posesji pod nr. hip. 181/182, wzniósł drewnianą bóżnicę, która służyła całej żydowskiej gminie praskiej.",
+     "Trzynaście lat później jego syn Ber (Berek) Sonnenberg (1764–1822) wzniósł drewniany bejt ha-midrasz i ofiarował obydwa budynki na wieczność gminie (akt z 1807 r.).",
+     "Budowle te spłonęły w czasie Powstania Listopadowego.",
+     "Praski Dozór Bóżniczy zebrał 17 tysięcy złotych, a Gabryel Bereksohn zaokrąglił tę sumę do 40 tysięcy złotych na budowę obszerniejszej bóżnicy.",
+     "Projekt wykonał architekt Józef Grzegorz Lessel; synagoga funkcjonowała od 1836 r., a w 1936 r. obchodzono stulecie jej istnienia.",
+     "Budowlę, uszkodzoną w czasie II wojny światowej, Zarząd Miejski 7 grudnia 1948 r. nakazał rozebrać do 1 lutego 1949 r.; decyzję cofnięto 3 marca 1949 r. na interwencję CKŻP i Urzędu Konserwatorskiego, połączoną z wpisem do rejestru zabytków.",
+     "Synagoga była rotundą, z niższym dwukondygnacyjnym obejściem i ośmioboczną bimą w centrum wnętrza."
+    ],
+    "ciekawostki": [
+     "Ławki ustawiono promieniście, co było wówczas rozwiązaniem wyjątkowym.",
+     "Główne wejście dla mężczyzn prowadziło przez portyk zachodni, kobiety wchodziły przez portyk południowy."
+    ],
+    "summary_en": "The Great Community Synagogue in Praga was designed by architect Józef Grzegorz Lessel and operated from 1836 as a rotunda. Earlier wooden buildings on the site burned during the November Uprising. The synagogue was damaged in WWII and dismantled in the 1950s, and it no longer exists.",
+    "ludzie": [
+     {
+      "kto": "Szmul Zbytkower",
+      "rola": "fundator drewnianej bóżnicy na swojej posesji (po 1794 r.)",
+      "wiki": null
+     },
+     {
+      "kto": "Ber (Berek) Sonnenberg (1764–1822)",
+      "rola": "wzniósł drewniany bejt ha-midrasz i ofiarował obie budowle gminie",
+      "wiki": null
+     },
+     {
+      "kto": "Gabryel Bereksohn (1789–1844)",
+      "rola": "zaokrąglił zebraną sumę do 40 tys. zł na budowę synagogi",
+      "wiki": null
+     },
+     {
+      "kto": "Józef Grzegorz Lessel",
+      "rola": "architekt synagogi",
+      "wiki": null
+     },
+     {
+      "kto": "Wacław Żenczykowski",
+      "rola": "wydał orzeczenie w sprawie możliwości odbudowy",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "Synagoga praska"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wirtualny Sztetl: Wielka Synagoga Gminna na Pradze w Warszawie (ul. Jagiellońska 28)",
+      "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89749-wielka-synagoga-gminna-na-pradze-w-warszawie-ul-jagiellonska-28"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Infobox w artykule: „Istnieje: Nie”, „Wpis do rejestru zabytków: Nie” (stan obecny). Treść mówi o wpisie do rejestru w 1949 r. Dzielnica Praga-Północ wnioskowana z adresu, do weryfikacji. Współrzędne null. Rekord zawiera tylko fakty z tekstu; wątki o trudnej do ustalenia dacie rozbiórki zostawiono w okresie. Licencja Wirtualnego Sztetla nieustalona (POLIN).",
+    "zrodlo_rekordu": "sztetl-dzielnice"
+   }
+  }
+ ]
+}

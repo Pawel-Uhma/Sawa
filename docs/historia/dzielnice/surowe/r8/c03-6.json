@@ -1,0 +1,39 @@
+[
+  {
+    "id": "muzeum-zolnierzy-wykletych-rakowiecka-37",
+    "nazwa": "Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL",
+    "name_en": "Museum of the Cursed Soldiers and Political Prisoners of the Polish People's Republic",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Rakowiecka 37",
+    "adres_historyczny": null,
+    "lat": 52.207222222,
+    "lon": 21.011111111,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Akt utworzenia placówki podpisał 29 lutego 2016 roku minister sprawiedliwości Zbigniew Ziobro; siedzibą muzeum wybrano stołeczne więzienie mokotowskie przy ul. Rakowieckiej 37.",
+      "Pierwszą ekspozycję zaprezentowano podczas Nocy Muzeów 14 maja 2016 roku.",
+      "W dokumentach są przesłanki, że w latach 40. i 50. XX w. na terenie więzienia zabijano więźniów, m.in. rtm. Witolda Pileckiego, mjra Zygmunta Szendzielarza „Łupaszkę” i gen. Augusta Emila Fieldorfa „Nila”; przeprowadzono tam badania archeologiczne pod nadzorem Krzysztofa Szwagrzyka.",
+      "Symboliczne otwarcie bramy aresztu i muzeum nastąpiło 1 marca 2017 roku.",
+      "W 2018 roku muzeum udostępniło zwiedzającym część wystawy czasowej, celę Pileckiego oraz miejsce rozstrzeliwania więźniów.",
+      "17 marca 2022 roku weszła w życie ustawa, na podstawie której organem prowadzącym muzeum stał się IPN."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Museum of the Cursed Soldiers and Political Prisoners of the PRL opened in 2016 in the former Mokotów Prison at ul. Rakowiecka 37. The first exhibition opened in May 2016, and the IPN became the museum's governing body in 2022.",
+    "ludzie": [
+      {"kto": "Zbigniew Ziobro", "rola": "minister sprawiedliwości, podpisał akt utworzenia placówki 29 lutego 2016 roku", "wiki": null},
+      {"kto": "Witold Pilecki", "rola": "rtm., wymieniony w dokumentach jako jeden z więźniów zabitych w więzieniu", "wiki": null},
+      {"kto": "Krzysztof Szwagrzyk", "rola": "prowadził badania archeologiczne na terenie więzienia", "wiki": null},
+      {"kto": "Patryk Jaki", "rola": "sekretarz stanu, nadzorował prace związane z przeniesieniem aresztu", "wiki": null},
+      {"kto": "Filip Musiał", "rola": "dyrektor muzeum od 2022 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Więzienie mokotowskie (areszt przy ul. Rakowieckiej 37)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL", "url": "https://pl.wikipedia.org/wiki/Muzeum_%C5%BBo%C5%82nierzy_Wykl%C4%99tych_i_Wi%C4%99%C5%BAni%C3%B3w_Politycznych_PRL"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Muzeum w organizacji, w dawnym więzieniu mokotowskim. Więzienie jest też opisane w rekordzie masakry z 2 sierpnia 1944 roku (ta sama lokalizacja)."
+  }
+]

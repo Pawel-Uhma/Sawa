@@ -1,0 +1,199 @@
+[
+  {
+    "id": "kamienica-wojciecha-kemnitza",
+    "nazwa": "Kamienica Wojciecha Kemnitza",
+    "name_en": "Wojciech Kemnitz tenement house",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Chodakowska 24",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "nieznany–2010",
+    "istnieje": false,
+    "fakty": [
+      "Kamienicę wybudował Wojciech Kemnitz, właściciel sąsiadującej fabryki wyrobów cynkowych i ołowianych przy ul. Mińskiej 70.",
+      "Po wojnie kamienica przeszła na własność skarbu państwa i stała się czynszówką.",
+      "W pierwszej dekadzie XXI wieku kamienica została wysiedlona i sprzedana, a w 2010 roku rozebrana.",
+      "W październiku 2011 roku rozpoczęto w jej miejscu budowę wielorodzinnego budynku mieszkalnego z garażem podziemnym, która zakończyła się w czerwcu 2013 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement house at Chodakowska 24, at the corner of Mińska, built by Wojciech Kemnitz, owner of a neighbouring zinc and lead works. It was demolished in 2010 and replaced by a residential block completed in June 2013.",
+    "ludzie": [
+      {"kto": "Wojciech Kemnitz", "rola": "wybudował kamienicę, właściciel fabryki wyrobów cynkowych i ołowianych", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Wojciecha Kemnitza", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Wojciecha_Kemnitza"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Nieistniejący. Adres z artykułu (ul. Chodakowska 24); data budowy nieznana."
+  },
+  {
+    "id": "kamienica-zwyciezcow-31",
+    "nazwa": "Kamienica Zwycięzców 31",
+    "name_en": "Zwycięzców 31 tenement house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Zwycięzców 31",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "II poł. lat 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w II połowie lat 30. XX wieku według projektu Romana Felińskiego jako funkcjonalistyczna, trzypiętrowa, na rogu ulicy Zwycięzców i Królowej Aldony.",
+      "Nie została zniszczona podczas II wojny światowej.",
+      "W 2012 roku odremontowano jej fasadę.",
+      "Dawniej w kamienicy działała m.in. kawiarnia Vanilia, obecnie zlokalizowana przy ul. Zwycięzców 57."
+    ],
+    "ciekawostki": [
+      "Kamienica ma narożne balkony o zaokrąglonych końcach od strony ulicy Królowej Aldony."
+    ],
+    "summary_en": "A three-storey functionalist tenement house on the corner of Zwycięzców and Królowej Aldony on Saska Kępa, designed by Roman Feliński in the late 1930s. It survived the war and its façade was renovated in 2012.",
+    "ludzie": [
+      {"kto": "Roman Feliński", "rola": "projektant kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Zwycięzców 31", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Zwycięzców_31"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-neonow",
+    "nazwa": "Muzeum Neonów",
+    "name_en": "Neon Museum Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Mińska 25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum, jeszcze jako instytucja prywatna, działa od 2005 roku.",
+      "Otwarcie placówki miało miejsce 19 maja 2012 roku.",
+      "W 2013 roku muzeum wraz ze spółką RWE było organizatorem konkursu „Neon dla Warszawy”.",
+      "Od 2016 roku w placówce znajduje się m.in. neon, który wcześniej wisiał na Pałacu Kultury i Nauki, reklamując Kinotekę."
+    ],
+    "ciekawostki": [
+      "Kolekcja składa się z około stu neonów, a muzeum odnawia też szyldy, m.in. Syrenkę na Grójeckiej i Mydła i Farby na Nowolipkach."
+    ],
+    "summary_en": "The Neon Museum at Mińska 25 in Praga-Południe is the first museum in Poland devoted to documenting and preserving old neon advertising signs. It opened officially on 19 May 2012, after operating as a private collection since 2005.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Muzeum Neonów", "url": "https://warszawa.fandom.com/pl/wiki/Muzeum_Neonów"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-chrystusa-krola-pokoju-skaryszewska-12",
+    "nazwa": "Kościół Chrystusa Króla Pokoju (parafia św. Wincentego Pallottiego)",
+    "name_en": "Church of Christ the King of Peace, Kamionek",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Skaryszewska 12",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "zabory–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki kościoła w tym miejscu sięgają zaborów, kiedy mariawici postawili tu kapliczkę.",
+      "Około 1920 roku kaplica została sprzedana i przez pewien czas pełniła funkcję magazynu materiałów budowlanych.",
+      "W 1927 roku gmach został odkupiony przez księży pallotynów, a pierwszym rektorem został ks. Franciszek Pauliński.",
+      "Kościół zniszczono na początku II wojny światowej, jednak został odbudowany do listopada 1941 roku.",
+      "W 1976 roku świątynia stała się kościołem parafialnym pod patronatem św. Wincentego Pallottiego.",
+      "W 1985 roku wybudowano aktualną świątynię według projektu inż. Janusza Maliszewskiego.",
+      "W styczniu 2007 roku w wyniku spięcia instalacji elektrycznej wybuchł pożar; spłonął m.in. obraz A. Styki z czasów okupacji."
+    ],
+    "ciekawostki": [
+      "Świątynia zbudowana jest na planie ośmiokąta."
+    ],
+    "summary_en": "The Church of Christ the King of Peace at Skaryszewska 12 on Kamionek, home of the St Vincent Pallotti parish. It grew from a Mariavite chapel of the partition era and was rebuilt in 1985 to a design by Janusz Maliszewski.",
+    "ludzie": [
+      {"kto": "Franciszek Pauliński", "rola": "pierwszy rektor po odkupieniu przez pallotynów w 1927 roku", "wiki": null},
+      {"kto": "Janusz Maliszewski", "rola": "inżynier, projektant obecnej świątyni (1985)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Parafia św. Wincentego Pallottiego", "url": "https://warszawa.fandom.com/pl/wiki/Parafia_św._Wincentego_Pallottiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z artykułu o parafii, dotyczą budynku kościoła."
+  },
+  {
+    "id": "kosciol-matki-boskiej-ostrobramskiej-ostrobramska-72",
+    "nazwa": "Kościół Matki Boskiej Ostrobramskiej (parafia Narodzenia Pańskiego)",
+    "name_en": "Our Lady of Ostra Brama church, Witolin",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Ostrobramska 72",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1983 roku podjęto decyzję o budowie nowego kościoła na terenie Osiedla Ostrobramska; na początku wybudowano punkt katechetyczny.",
+      "W punkcie katechetycznym 25 grudnia 1983 roku kard. Józef Glemp odprawił pierwszą pasterkę.",
+      "21 grudnia 1984 roku wydano pozwolenie na budowę kościoła Matki Bożej Ostrobramskiej.",
+      "W 1985 roku wmurowano kamień węgielny, którego dokonał ks. prymas Józef Glemp w asyście bpa Modzelewskiego.",
+      "16 listopada 1994 roku nastąpiło przeniesienie Najświętszego Sakramentu do górnego kościoła."
+    ],
+    "ciekawostki": [
+      "W kościele znajduje się kopia obrazu Matki Boskiej Ostrobramskiej z Wilna."
+    ],
+    "summary_en": "The church of Our Lady of Ostra Brama at Ostrobramska 72, the parish church of the Narodzenie Pańskie parish. Construction began in 1983 with a catechetical point, and the Blessed Sacrament was moved to the upper church in 1994.",
+    "ludzie": [
+      {"kto": "Józef Glemp", "rola": "kardynał, odprawił pierwszą pasterkę (1983) i wmurował kamień węgielny (1985)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Parafia Narodzenia Pańskiego", "url": "https://warszawa.fandom.com/pl/wiki/Parafia_Narodzenia_Pańskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z artykułu o parafii, dotyczą budynku kościoła."
+  },
+  {
+    "id": "kosciol-sw-patryka-rechniewskiego-14",
+    "nazwa": "Kościół św. Patryka",
+    "name_en": "St Patrick's Church, Rechniewskiego",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Rechniewskiego 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1990–dziś",
+    "istnieje": true,
+    "fakty": [
+      "8 marca 1990 roku postawiono krzyż na nowym placu kościelnym, na którym postanowiono wznieść nową świątynię.",
+      "29 września 1990 roku Prymas Polski kard. Józef Glemp dokonał poświęcenia drewnianej kaplicy, którą parafia dostała w darze od Księży Pallotynów z Ożarowa Mazowieckiego.",
+      "2 lutego 1991 roku wydano dekret erygujący parafię.",
+      "16 kwietnia 2000 roku odbyło się uroczyste wejście do nowego budynku kościoła."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St Patrick's Church at Rechniewskiego 14 in Praga-Południe. The parish began in 1990 with a wooden chapel donated by the Pallottines, and the new modern church building was entered in April 2000.",
+    "ludzie": [
+      {"kto": "Józef Glemp", "rola": "prymas Polski, poświęcił drewnianą kaplicę w 1990 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Parafia św. Patryka", "url": "https://warszawa.fandom.com/pl/wiki/Parafia_św._Patryka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane z artykułu o parafii, dotyczą budynku kościoła."
+  }
+]

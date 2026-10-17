@@ -1,0 +1,266 @@
+[
+  {
+    "id": "klub-proxima",
+    "nazwa": "Klub Proxima",
+    "name_en": "Proxima Club",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Żwirki i Wigury 99a",
+    "adres_historyczny": null,
+    "lat": 52.212566666,
+    "lon": 20.987222222,
+    "lokalizacja": "dokladna",
+    "okres": "połowa lat 90. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klub w obecnej formule działa od połowy lat 90. XX wieku.",
+      "W latach 2000–2005 w „Proximie” odbywało się corocznie 35–50 koncertów zespołów należących do czołówki polskiej sceny rockowej.",
+      "W latach 1994−1998 w podziemiach klubu mieściło się studio Złota Skała.",
+      "W 2003 do budynku Proximy przeniosła się siedziba szkoły tańca Augustina Egurroli.",
+      "Klub ma siedzibę w budynku dawnej stołówki na terenie kampusu Uniwersytetu Warszawskiego na Ochocie.",
+      "„Proximą” zarządza Fundacja na Rzecz Studentów i Absolwentów Uniwersytetu Warszawskiego „Universitatis Varsoviensis”."
+    ],
+    "ciekawostki": [
+      "W latach 1991−2024 w czasopismach „Tylko Rock” i „Teraz Rock” ukazało się 186 recenzji koncertów zorganizowanych w klubie."
+    ],
+    "summary_en": "Proxima is a University of Warsaw student rock club at Żwirki i Wigury 99a, housed in a former canteen on the Ochota campus. Since the mid-1990s it has hosted dozens of concerts a year, including many leading Polish rock acts.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Klub Proxima", "url": "https://pl.wikipedia.org/wiki/Klub_Proxima"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kolonia-lubeckiego",
+    "nazwa": "Kolonia Lubeckiego",
+    "name_en": "Lubecki Colony",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2189,
+    "lon": 20.9836,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plan regulacji tego terenu wraz z pobliską kolonią Staszica powstał w 1923 roku.",
+      "Pierwsze budynki zaczęły powstawać w 1924 roku.",
+      "W czasie powstania warszawskiego, od 6 do 11 sierpnia 1944 roku, wielu mieszkańców osiedla padło ofiarą pacyfikacji Ochoty.",
+      "11 sierpnia Niemcy zdobyli domy między ulicami Wawelską, Pługa, Mianowskiego i Uniwersytecką (tzw. Redutę Wawelską), ostatni punkt polskiego oporu w dzielnicy.",
+      "Kolonia Lubeckiego jest wpisana do rejestru zabytków jako „Kolonia Lubeckiego – układ i zespół budowlany wraz z zielenią” z numerem 1535-A z 20.12.1993."
+    ],
+    "ciekawostki": [
+      "Przed I wojną światową teren ten pozostawał poza granicami miasta, stanowiąc Mokotowskie Pole Wojenne."
+    ],
+    "summary_en": "A historic interwar housing estate in Ochota, built from 1924 by housing cooperatives on land first planned as a park. During the Warsaw Uprising its residents suffered a massacre, and the estate was entered in the heritage register in 1993.",
+    "ludzie": [
+      {"kto": "Antoni Jawornicki", "rola": "architekt (projekty domów)", "wiki": null},
+      {"kto": "Aleksander Sygietyński", "rola": "architekt (projekty domów)", "wiki": null},
+      {"kto": "Wacław Weker", "rola": "architekt (projekty domów)", "wiki": null},
+      {"kto": "Teofil Wiśniowski", "rola": "architekt (projekty domów)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Mokotowskie Pole Wojenne"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kolonia Lubeckiego", "url": "https://pl.wikipedia.org/wiki/Kolonia_Lubeckiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedla, nie pojedynczy budynek; współrzędne z nagłówka przybliżone."
+  },
+  {
+    "id": "kolonia-staszica",
+    "nazwa": "Kolonia Staszica",
+    "name_en": "Staszic Colony",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.219,
+    "lon": 21.002,
+    "lokalizacja": "przyblizona",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kolonia Staszica została wybudowana w latach 1922–1926 według projektu Antoniego Dygata, Mariana Kontkiewicza, Adama Paprockiego i Józefa Referowskiego.",
+      "Kolonia składa się z ok. 100 willi z ogródkami oraz budynku wielopiętrowego przy ul. Filtrowej 30.",
+      "W sierpniu 1944 roku Kolonia Staszica była miejscem zbrodni i bestialstw dokonywanych przez oddziały Rosyjskiej Wyzwoleńczej Armii Ludowej (RONA) w dniach 4–25 sierpnia 1944 roku.",
+      "Większa część obszaru, wpisana do ewidencji w 2012 pod numerem OCH05176, jest ujęta od 1993 w rejestrze zabytków.",
+      "W XXI w. do Spółdzielni Budowlano-Mieszkaniowej „Kolonia im. Staszica” należał blok przy ulicy Filtrowej 30."
+    ],
+    "ciekawostki": [
+      "Wśród mieszkańców byli m.in. Witold Lutosławski, Stanisław Wojciechowski (prezydent RP) i Zygmunt Słomiński (prezydent Warszawy)."
+    ],
+    "summary_en": "A 1920s garden-villa colony in Ochota, designed by Antoni Dygat, Marian Kontkiewicz, Adam Paprocki and Józef Referowski. It was the scene of mass crimes by RONA units in August 1944 and is partly listed as a historic monument since 1993.",
+    "ludzie": [
+      {"kto": "Antoni Dygat", "rola": "architekt (projekt)", "wiki": null},
+      {"kto": "Marian Kontkiewicz", "rola": "architekt (projekt)", "wiki": null},
+      {"kto": "Adam Paprocki", "rola": "architekt (projekt)", "wiki": null},
+      {"kto": "Józef Referowski", "rola": "architekt (projekt)", "wiki": null},
+      {"kto": "Witold Lutosławski", "rola": "mieszkaniec", "wiki": null},
+      {"kto": "Stanisław Wojciechowski", "rola": "mieszkaniec, prezydent RP", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kolonia Staszica", "url": "https://pl.wikipedia.org/wiki/Kolonia_Staszica"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedla, nie pojedynczy budynek; współrzędne z nagłówka przybliżone."
+  },
+  {
+    "id": "kombajn-osiedle-ochota",
+    "nazwa": "Osiedle Kombajn",
+    "name_en": "Kombajn Housing Estate",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.22504,
+    "lon": 20.99324,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół mieszkaniowy został zaprojektowany w wyniku konkursu zleconego przez Dyrekcję Rozbudowy Miasta i ogłoszonego przez Stowarzyszenie Architektów Polskich (SARP) w 1957 roku.",
+      "Łącznie, w latach 1960–1966 powstało 563 mieszkania (według innego źródła 584 mieszkania zbudowane w latach 1961–1966) o średniej powierzchni 37,5 m², przewidziane dla 1707 mieszkańców.",
+      "Osiedle składa się z 7 budynków mieszkalnych o wysokości od 7 do 12 kondygnacji.",
+      "Projekt osiedla otrzymał nagrodę II stopnia Ministra Budownictwa i Przemysłu Materiałów Budowlanych.",
+      "Zespół znalazł się na opracowanej w 2003 roku przez SARP liście dóbr kultury współczesnej Warszawy z lat 1945–1989.",
+      "W październiku 2012 roku na północnej ścianie bloku przy ul. Nowogrodzkiej 76 powstał ponad 30-metrowy mural autorstwa grupy GORE pt. „Humalus”."
+    ],
+    "ciekawostki": [
+      "Nazwa została wymyślona przez twórców osiedla i pochodzi od planowanego układu budynków, który przypominał kształtem kombajn zbożowy.",
+      "Działał tu bar szybkiej obsługi „Zajazd”, a od 1997 roku przez ponad 20 lat restauracja „Grand Kredens”."
+    ],
+    "summary_en": "A 1960s housing estate in Ochota between Nowogrodzka and Aleje Jerozolimskie, named after the shape of its planned layout, which resembled a combine harvester. Built in 1960–1966 after a 1957 SARP competition, it was added to Warsaw's modern heritage list in 2003.",
+    "ludzie": [
+      {"kto": "Teodor Bursche", "rola": "architekt (projekt osiedla)", "wiki": null},
+      {"kto": "Wojciech Onitzch", "rola": "architekt (projekt osiedla)", "wiki": null},
+      {"kto": "Władysław Rzechowski", "rola": "architekt (projekt osiedla)", "wiki": null},
+      {"kto": "Marian Sulikowski", "rola": "architekt (projekt osiedla)", "wiki": null},
+      {"kto": "Alina Supińska", "rola": "architekt (projekt osiedla)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kombajn (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Kombajn_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle, nie pojedynczy budynek; współrzędne z nagłówka przybliżone."
+  },
+  {
+    "id": "kosciol-dzieciatka-jezus-lindleya",
+    "nazwa": "Kościół Dzieciątka Jezus",
+    "name_en": "Church of the Child Jesus",
+    "typ": "swiatynia",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Lindleya 2/4",
+    "adres_historyczny": null,
+    "lat": 52.225,
+    "lon": 20.9972,
+    "lokalizacja": "dokladna",
+    "okres": "1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę kaplicy katolickiej Dzieciątka Jezus rozpoczęto 25 lipca 1897 roku i zaplanowano ją na 150 osób.",
+      "Prace nad rozbudową kościoła przerwała I wojna światowa; po czterech latach rozpoczęto je na nowo i zakończono w 1925 roku.",
+      "Podczas obrony Warszawy, 24 września 1939 roku, rozbita została wieża, rozbite dzwony i zerwany dach.",
+      "W 1941 roku po prawej stronie nawy kościoła umieszczono, sprowadzony ze Lwowa, obraz Miłosierdzie Boże, którego autorem jest Stanisław Batowski Kaczor.",
+      "W 1965 roku świątynia została wpisana do rejestru zabytków.",
+      "Od 1986 jest kościołem parafialnym parafii rzymskokatolickiej św. Alojzego Orione."
+    ],
+    "ciekawostki": [
+      "Projekt zespołu szpitala Dzieciątka Jezus przewidywał dwie małe świątynie: prawosławną (późniejsza cerkiew Matki Bożej Nieustającej Pomocy) i katolicką."
+    ],
+    "summary_en": "A Neo-Gothic Roman Catholic church at Lindleya 2/4, begun in 1897 as a chapel for the Child Jesus hospital complex. Work resumed after World War I and was finished in 1925, the tower was smashed in the 1939 defence of Warsaw, and it was listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "Stanisław Batowski Kaczor", "rola": "autor obrazu Miłosierdzie Boże (1941)", "wiki": null},
+      {"kto": "Adolf Hyła", "rola": "autor obrazu Niepokalane Poczęcie NMP (1944)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Dzieciątka Jezus w Warszawie (Ochota)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Dzieci%C4%85tka_Jezus_w_Warszawie_%28Ochota%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-najswietszej-maryi-panny-krolowej-wszechswiata",
+    "nazwa": "Kościół Najświętszej Maryi Panny Królowej Wszechświata",
+    "name_en": "Church of Our Lady Queen of the Universe",
+    "typ": "swiatynia",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Opaczewska",
+    "adres_historyczny": null,
+    "lat": 52.210715,
+    "lon": 20.970291,
+    "lokalizacja": "dokladna",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od 1928 roku w swoim domu przy ul. Opaczewskiej 20 szarytki prowadziły szkołę, w której znajdowała się również kaplica.",
+      "W 1949 roku przy budynku wzniesiono prowizoryczny drewniany kościół, omurowany później cegłą rozbiórkową.",
+      "W marcu 1950 roku arcybiskup Stefan Wyszyński erygował przy kościele parafię.",
+      "Zgodę na budowę nowej świątyni uzyskano w czerwcu 1977 roku; w październiku 1977 roku biskup Jerzy Modzelewski wmurował akt erekcyjny.",
+      "Świątynia powstała w latach 1977−1981 według projektu Leszka Klajnerta.",
+      "Kościół został konsekrowany w czerwcu 1982 roku przez kardynała Józefa Glempa."
+    ],
+    "ciekawostki": [
+      "Bryła kościoła z narożną wieżą przypomina wzbijający się w górę samolot, co nawiązuje do pobliskiego lotniska Warszawa-Okęcie."
+    ],
+    "summary_en": "A Roman Catholic parish church on Opaczewska street, which grew out of a 1949 temporary wooden church. The current building was designed by Leszek Klajnert, built in 1977–1981 and consecrated in 1982.",
+    "ludzie": [
+      {"kto": "Stefan Wyszyński", "rola": "arcybiskup, erygował parafię w 1950", "wiki": null},
+      {"kto": "Jerzy Modzelewski", "rola": "biskup, wmurował akt erekcyjny w 1977", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "kardynał, konsekrował kościół w 1982", "wiki": null},
+      {"kto": "Leszek Klajnert", "rola": "autor projektu świątyni", "wiki": null},
+      {"kto": "Krzysztof Gąsiorowski", "rola": "autor wizerunku Matki Bożej Królowej Wszechświata na ścianie ołtarzowej", "wiki": null},
+      {"kto": "Teresa Chromy-Gąsiorowska", "rola": "autorka witraży", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Najświętszej Maryi Panny Królowej Wszechświata w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_Kr%C3%B3lowej_Wszech%C5%9Bwiata_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst nie podaje numeru kościoła przy ul. Opaczewskiej; numer 20 dotyczy domu szarytek z 1928 roku."
+  },
+  {
+    "id": "kosciol-opatrznosci-bozej-rakowiec",
+    "nazwa": "Kościół Opatrzności Bożej (Rakowiec)",
+    "name_en": "Divine Providence Church (Rakowiec)",
+    "typ": "swiatynia",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Dickensa 5",
+    "adres_historyczny": null,
+    "lat": 52.204444,
+    "lon": 20.973889,
+    "lokalizacja": "dokladna",
+    "okres": "1962–dziś",
+    "istnieje": true,
+    "fakty": [
+      "31 maja 1962 kaplica, nazwana przez parafian Stajenką, została poświęcona przez kardynała Stefana Wyszyńskiego.",
+      "Magazyn cementu zaadaptowano na kaplicę, szatnię dla robotników na zakrystię, a pomieszczenie na narzędzia o powierzchni 5 m² na mieszkanie dla proboszcza.",
+      "W 1966 roku władze siłą zajęły połowę placu kościelnego, przeznaczając zabrany teren na przedszkole.",
+      "W 1972 została ostatecznie wydana zgoda na budowę świątyni.",
+      "30 kwietnia 1976 odbyło się uroczyste wmurowanie kamienia węgielnego.",
+      "8 grudnia 1979 kardynał Stefan Wyszyński dokonał konsekracji kościoła."
+    ],
+    "ciekawostki": [
+      "Obok drzwi wmurowano kamień z grobu św. Piotra, przywieziony z Rzymu w 1972 jako dar papieża Pawła VI."
+    ],
+    "summary_en": "A Roman Catholic church at Dickensa 5 that began as a wooden chapel in a cement store in 1962, after a long dispute with the authorities. The church itself was built after permission in 1972 and consecrated by Cardinal Wyszyński in 1979.",
+    "ludzie": [
+      {"kto": "ks. dr Stefan Sydry", "rola": "pomysłodawca i inicjator budowy kościoła, proboszcz parafii NMP Królowej Świata", "wiki": null},
+      {"kto": "ks. Romuald Kołakowski", "rola": "proboszcz parafii, przystosował zaplecze budowy na kaplicę", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "autor projektu kościoła złożonego w Radzie Narodowej", "wiki": null},
+      {"kto": "Leszek Kołacz", "rola": "autor projektu kościoła z 1972 r. (z zespołem)", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał, poświęcił kaplicę (1962) i konsekrował kościół (1979)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stajenka (nazwa kaplicy nadana przez parafian)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Opatrzności Bożej w Warszawie (Rakowiec)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Opatrzno%C5%9Bci_Bo%C5%BCej_w_Warszawie_%28Rakowiec%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,429 @@
+[
+  {
+    "id": "ulica-grojecka",
+    "nazwa": "Ulica Grójecka",
+    "name_en": "Grójecka Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2109,
+    "lon": 20.9766,
+    "lokalizacja": "przyblizona",
+    "okres": "1818–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Grójecka powstała na miejscu starego traktu, uregulowanego w latach 1818–1823, biegnącego przez wieś Raków oraz miasta Grójec i Radom do Krakowa.",
+      "W 1909 przyłączono do Warszawy odcinek Grójeckiej od pl. Zawiszy do ul. Niemcewicza.",
+      "W 1921 Grójecką pojechał pierwszy tramwaj linii 7 – kursował z ul. Radzymińskiej do zbiegu Grójeckiej i Opaczewskiej; w 1923 linię wydłużono do Okęcia.",
+      "W dniach 8 i 9 września 1939 nastąpił tu szturm wojsk niemieckich, zakończony przejściowym zwycięstwem wojsk polskich.",
+      "W okresie okupacji niemieckiej ulicy nadano niemiecką nazwę Radomerstrasse.",
+      "W latach 1957–1967 wzniesiono po obu stronach ulicy na odcinku od Opaczewskiej do Korotyńskiego osiedle Szosa Krakowska na 25 tys. mieszkańców."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The main street of Ochota, running from Plac Zawiszy to the Radom railway line. It follows the 1818–1823 road to Kraków, was annexed to Warsaw in 1909, and had tram line 7 from 1921. Fighting took place here in September 1939, and the Szosa Krakowska estate was built along it in 1957–1967.",
+    "ludzie": [
+      {"kto": "Marcin Weinfeld", "rola": "architekt, twórca Prudentialu; wzniósł dla siebie kamienicę pod nr 27 (1935–1936)", "wiki": null},
+      {"kto": "Roman Feliński", "rola": "autor projektu kamienicy pod nr 27 (1935–1936)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szosa Krakowska (nazwa w XIX w.)", "Radomerstrasse (okupacja)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grójecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Gr%C3%B3jecka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "kosciol-niepokalanego-poczecia",
+    "nazwa": "Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny",
+    "name_en": "Church of the Immaculate Conception of the Blessed Virgin Mary (Ochota)",
+    "typ": "swiatynia",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Grójecka 38",
+    "adres_historyczny": null,
+    "lat": 52.21888889,
+    "lon": 20.98361111,
+    "lokalizacja": "przyblizona",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1911 na placu podarowanym przez Jana Grądzkę rozpoczęto prace przy budowie kościoła Niepokalanego Poczęcia Najświętszej Maryi Panny, zaprojektowanego przez Oskara Sosnowskiego.",
+      "Brak funduszy sprawił, że budowa kościoła ciągnęła się blisko 14 lat; świątyni nigdy też nie ukończono – zabrakło planowanego w projekcie hełmu wieńczącego wieżę.",
+      "Niemcy podpalili budynki w czasie powstania warszawskiego; spłonął m.in. pokryty miedzianą blachą dach kościoła, wypalone zostało również wnętrze świątyni.",
+      "Usytuowanie bryły kościoła jest śladem niezrealizowanego zamierzenia urbanistycznego: jej widok miał zamykać perspektywę ul. Uniwersyteckiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A neo-Romanesque church on Plac Gabriela Narutowicza, begun in 1911 to a design by Oskar Sosnowski. It was never completed for lack of funds, its roof and interior burned in 1944, and its layout was meant to close the view down Uniwersytecka Street.",
+    "ludzie": [
+      {"kto": "Oskar Sosnowski", "rola": "projektant kościoła", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grójecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Gr%C3%B3jecka_w_Warszawie"},
+      {"tytul": "Wikipedia: Plac Gabriela Narutowicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Gabriela_Narutowicza_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne: środek placu Narutowicza z jego artykułu (kościół stoi na placu, dokładne współrzędne kościoła nie są w tekście)."
+  },
+  {
+    "id": "ulica-jozefa-mianowskiego",
+    "nazwa": "Ulica Józefa Mianowskiego",
+    "name_en": "Józef Mianowski Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2177,
+    "lon": 20.9876,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1923 roku wraz z pobliskim placem Gabriela Narutowicza i półkoliście otaczającymi go przecznicami − ulicami Akademicką i Maurycego Mochnackiego.",
+      "Jako jedna z ulic Kolonii Lubeckiego uzyskała zabudowę w latach 1924−1925, inwestorem była Spółdzielnia Budowlano-Mieszkaniowa „Kolonia Lubeckiego”.",
+      "Pod numerem 15 Spółdzielnia Mieszkaniowa Inżynierów Ministerstwa Kolei; pod 18 – Bank Polska Kasa Opieki.",
+      "W czasie powstania warszawskiego, od 1 do 11 sierpnia 1944 roku, zespół domów między ulicami Mianowskiego, Pługa, Wawelską i Uniwersytecką stanowił polski punkt oporu nazwany Redutą Wawelską.",
+      "W latach 50. na budynku nr 15 umieszczono tablicę Tchorka upamiętniającą masową egzekucję dokonaną w tym miejscu po zdobyciu Reduty Wawelskiej przez żołnierzy RONA."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street laid out in 1923 around Plac Gabriela Narutowicza. Its twin houses were built in 1924–1925 by a housing cooperative of the Kolonia Lubeckiego, and the houses at its corner were the last Polish stronghold of the Reduta Wawelska in August 1944.",
+    "ludzie": [
+      {"kto": "Teofil Wiśniowski", "rola": "autor projektu dwupiętrowych domów (1924–1925)", "wiki": null},
+      {"kto": "Karol Tchorek", "rola": "autor tablicy na budynku nr 15", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Józefa Mianowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_J%C3%B3zefa_Mianowskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-kaliska",
+    "nazwa": "Ulica Kaliska",
+    "name_en": "Kaliska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2197,
+    "lon": 20.981,
+    "lokalizacja": "przyblizona",
+    "okres": "1831–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Po 1831 u zbiegu ul. Kaliskiej z ul. Grójecką wzniesiono karczmę „Ochota”, od której nazwę przyjęła dzielnica Ochota.",
+      "Później w tym miejscu istniała manufaktura wyrobów pasmanteryjnych, wreszcie dom administracyjno-mieszkalny Fabryki Wyrobów Tytoniowych Państwowego Monopolu Tytoniowego (utworzonego w 1924 roku).",
+      "O ten budynek toczono walki podczas powstania warszawskiego.",
+      "W latach 30. XX wieku zaczęto wznosić przy niej pierwsze modernistyczne domy spółdzielcze i funkcjonalistyczne czynszowe kamienice.",
+      "Pod numerem 9 znajduje się dom wybudowany w roku 1937 dla Ludwika Nasierowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Ochota whose junction with Grójecka Street held the inn Ochota, from which the district took its name after 1831. The tobacco factory's administrative building there was fought over during the Warsaw Uprising, and a modernist house at no. 9 was built in 1937.",
+    "ludzie": [
+      {"kto": "Ludwik Nasierowski", "rola": "inwestor domu pod nr 9 (1937)", "wiki": null}
+    ],
+    "dawne_nazwy": ["polna droga łącząca trakt do Radomia i Krakowa ze wsiami Wola i Czyste"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kaliska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kaliska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-mariana-langiewicza",
+    "nazwa": "Ulica Mariana Langiewicza",
+    "name_en": "Marian Langiewicz Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2181,
+    "lon": 21.0023,
+    "lokalizacja": "przyblizona",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Została wytyczona w 1922 jako jedna z ulic Kolonii Staszica. Nazwa została nadana w 1926.",
+      "Zabytkowa zabudowa ulicy pochodzi z lat 1922–1924 i nawiązuje formą do staropolskich dworów.",
+      "Bliźniacze domki tworzące zabudowę ulicy są dziełem architektów: Antoniego Dygata, Konstantego Jakimowicza i Mariana Kontkiewicza.",
+      "Mieszkali tam m.in. Antoni Dygat (nr 13), Stanisław Wojciechowski (nr 15), Władysław Jaroszewicz (nr 21) i Ludwik Krzywicki (nr 25).",
+      "Podczas II wojny światowej zniszczeniu uległy budynki pod numerami 3 oraz 8/10."
+    ],
+    "ciekawostki": ["Przy ulicy znajduje się pomnik przyrody – buk zwyczajny odmiany czerwonolistnej (Fagus sylvatica f. purpurea)."],
+    "summary_en": "A street in the Kolonia Staszica estate, laid out in 1922 and named in 1926. Its semi-detached houses from 1922–1924 are built in a manor-house style and were designed by Antoni Dygat, Konstanty Jakimowicz and Marian Kontkiewicz.",
+    "ludzie": [
+      {"kto": "Antoni Dygat", "rola": "architekt zabudowy; mieszkaniec domu nr 13", "wiki": null},
+      {"kto": "Konstanty Jakimowicz", "rola": "architekt zabudowy ulicy", "wiki": null},
+      {"kto": "Marian Kontkiewicz", "rola": "architekt zabudowy ulicy", "wiki": null},
+      {"kto": "Stanisław Wojciechowski", "rola": "mieszkaniec domu nr 15", "wiki": null},
+      {"kto": "Władysław Jaroszewicz", "rola": "mieszkaniec domu nr 21", "wiki": null},
+      {"kto": "Ludwik Krzywicki", "rola": "mieszkaniec domu nr 25", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica Kolonii Staszica (przed 1926)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mariana Langiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mariana_Langiewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-opaczewska",
+    "nazwa": "Ulica Opaczewska",
+    "name_en": "Opaczewska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2113,
+    "lon": 20.9624,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została uregulowana w końcu XIX wieku; wtedy też otrzymała obecną nazwę.",
+      "W 1926–1927 przy Opaczewskiej wybudowano gmach szkół powszechnych 188 i 189.",
+      "We wrześniu 1939 roku w rejonie skrzyżowania z ul. Grójecką toczyły się walki w obronie stolicy przed Niemcami; upamiętniono je pomnikiem Barykada Września oraz wierszem Jana Janiczka Ulica Opaczewska.",
+      "W 1960 wschodniemu odcinkowi ulicy, od ulicy Grójeckiej do ulicy Żwirki i Wigury, nadano nazwę upamiętniającą Stefana Banacha.",
+      "21 października 2015 r. ul. Opaczewska została skrócona, a jej odcinek między Al. Jerozolimskimi a ul. Mszczonowską przemianowano na ul. Kołomyjską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street on the old road from Błonie to Czersk, which marks the south-west edge of the Ochota district. It runs past the Zieleniak market and the Barricade of September monument, and its eastern part was renamed after Stefan Banach in 1960.",
+    "ludzie": [
+      {"kto": "Stefan Banach", "rola": "patron wschodniego odcinka ulicy (nadanie nazwy 1960)", "wiki": null},
+      {"kto": "Jan Janiczek", "rola": "autor wiersza „Ulica Opaczewska”", "wiki": null},
+      {"kto": "Artemi Aroniszydze", "rola": "patron ronda na skrzyżowaniu z al. Bohaterów Września (2020)", "wiki": null}
+    ],
+    "dawne_nazwy": ["odcinek dawnego traktu z Błonia do Czerska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Opaczewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Opaczewska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy). Artykuł podaje, że wschodni odcinek nazwano w 1960 po Stefanie Banachu."
+  },
+  {
+    "id": "ulica-pruszkowska",
+    "nazwa": "Ulica Pruszkowska",
+    "name_en": "Pruszkowska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2018,
+    "lon": 20.9807,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przy ulicy znajduje się kompleks budynków nazywanych „szklanymi domami”, wzniesionych w latach 1935–1937 przez Warszawską Spółdzielnię Mieszkaniową według projektu Heleny i Szymona Syrkusów dla pracowników pobliskich Państwowych Zakładów Lotniczych.",
+      "Osiedle, którego pierwszymi budynkami były cztery domy przy ul. Pruszkowskiej, miało być samowystarczalne.",
+      "Do roku 1939 wybudowano kolonię 7 modernistycznych budynków (6 mieszkalnych i 1 Dom Społeczny)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street on the Rakowiec estate with the 'glass houses', modernist cooperative buildings from 1935–1937 designed by Helena and Szymon Syrkus for workers of the Polish Aviation Works. The estate was meant to be self-sufficient, with a fishpond and garden plots for residents.",
+    "ludzie": [
+      {"kto": "Helena Syrkus", "rola": "autorka projektu „szklanych domów” (1935–1937)", "wiki": null},
+      {"kto": "Szymon Syrkus", "rola": "autor projektu „szklanych domów” (1935–1937)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Pruszkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pruszkowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-raszynska",
+    "nazwa": "Ulica Raszyńska",
+    "name_en": "Raszyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2206,
+    "lon": 20.9895,
+    "lokalizacja": "przyblizona",
+    "okres": "1885–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach 1885–1886 wzdłuż zachodniej granicy Stacji Filtrów, w miejscu biegnącej w tym miejscu Drogi Raszyńskiej.",
+      "Nazwa, nadana w 1890, nawiązywała do tego, że ulica prowadziła w kierunku Raszyna.",
+      "W latach 1935–1936 pod nr 22 (róg ul. Niemcewicza) wzniesiono zachowany budynek szkół powszechnych nr 13, 16 i 164.",
+      "W okresie okupacji niemieckiej, w listopadzie 1940, nazwę ulicy zmieniono na Oberst Sommer Strasse, upamiętniając pułkownika Otto Sommera.",
+      "W 1944 zabudowa ulicy została spalona."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Ochota along the western edge of the Water Filters Station, named in 1890 after the road towards Raszyn. During the occupation it was renamed Oberst Sommer Strasse after a German colonel killed in the Battle of Britain, and its buildings were burned in 1944.",
+    "ludzie": [
+      {"kto": "Otto Sommer", "rola": "pułkownik, patron niemieckiej nazwy ulicy (1940); były dowódca bazy lotniczej w Delmenhorst, zginął w bitwie o Anglię w sierpniu 1940", "wiki": null}
+    ],
+    "dawne_nazwy": ["Oberst Sommer Strasse (1940–1945)", "Droga Raszyńska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Raszyńska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Raszy%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-stefana-banacha",
+    "nazwa": "Ulica Stefana Banacha",
+    "name_en": "Stefan Banach Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2105,
+    "lon": 20.9824,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1960 roku, w związku z przebudową ulicy Grójeckiej, wschodni odcinek ulicy Opaczewskiej został włączony w bieg ulicy Wery Kostrzewy; w tym samym roku nadano mu nazwę upamiętniającą Stefana Banacha.",
+      "W 1944 roku część domów znajdujących się przy ulicy i gmach szkolny spłonęły.",
+      "W 1948 roku odbudowany gmach szkolny stał się siedzibą XXI Liceum Ogólnokształcącego im. Hugona Kołłątaja.",
+      "W 1980 roku funkcje likwidowanego dworca autobusowego PKS Ochota, znajdującego się przy ulicy, przejął dworzec autobusowy Warszawa Zachodnia.",
+      "Na początku lat 80. XX wieku na targowisku Banacha urządzonym po wojnie w miejscu Zieleniaka oddano do użytku Hale Banacha."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Ochota named in 1960 after Stefan Banach, formerly the eastern part of Opaczewska Street. It was the site of the Zieleniak market and of the school building that burned in 1944, and it became the home of the XXI Lyceum after the war.",
+    "ludzie": [
+      {"kto": "Stefan Banach", "rola": "patron ulicy (nazwa nadana w 1960)", "wiki": null}
+    ],
+    "dawne_nazwy": ["część ulicy Opaczewskiej (do 1960)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Stefana Banacha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Stefana_Banacha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-szczesliwicka",
+    "nazwa": "Ulica Szczęśliwicka",
+    "name_en": "Szczęśliwicka Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2155,
+    "lon": 20.969944444,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie był to odcinek drogi od rogatek Wolskich przez Czyste i Szczęśliwice do Opaczy Wielkiej.",
+      "W 1845 została oddzielona od ulicy Przyokopowej torami kolei warszawsko-wiedeńskiej.",
+      "W 1916 ulica wraz z Ochotą została włączona do Warszawy.",
+      "W 1927 wzdłuż ulicy poprowadzono tory Elektrycznych Kolei Dojazdowych ze stacjami Warszawa Zachodnia EKD, Warszawa Szczęśliwicka i Warszawa Opaczewska.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku ulicę na wysokości ulicy Opaczewskiej przegrodzono barykadą zbudowaną z dwóch wagonów EKD wypełnionych kamieniami.",
+      "W 2009 zbudowano rondo na skrzyżowaniu z ul. Dickensa i ul. Drawską; w 2010 nadano mu nazwę Bohdana Pniewskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street that took its name from the village of Szczęśliwice and was joined to Warsaw in 1916. A barricade of two tram wagons was built across it in September 1939, and its junction with Dickens Street became a roundabout named after Bohdan Pniewski in 2010.",
+    "ludzie": [
+      {"kto": "Bohdan Pniewski", "rola": "patron ronda (2010)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Szczęśliwicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Szcz%C4%99%C5%9Bliwicka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-uniwersytecka",
+    "nazwa": "Ulica Uniwersytecka",
+    "name_en": "Uniwersytecka Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2177,
+    "lon": 20.9862,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach dwudziestych XX w. jako jedna z arterii promieniście zbiegających się na placu Narutowicza.",
+      "W pierwotnych planach miała to być główna ulica łącząca Ochotę z Mokotowem, dochodząca do ul. Madalińskiego.",
+      "Ulicę dociągnięto tylko do zbiegu z ul. Wawelską i ul. Raszyńską; po wojnie zaniechano dalszej jej budowy, a nawet odcięto przejazd do ul. Wawelskiej przy pomniku Lotnika, przez co ulica stała się ślepa.",
+      "W czasie powstania warszawskiego, od 1 do 11 sierpnia 1944 roku, zespół domów między ulicami Wawelską, Pługa, Mianowskiego i Uniwersytecką stanowił polski punkt oporu nazwany Redutą Wawelską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street of the Kolonia Lubeckiego estate, laid out in the 1920s as one of the arteries radiating from Plac Narutowicza. It was planned to reach Mokotów but was cut short after the war and ends at Wawelska and Raszyńska streets.",
+    "ludzie": [],
+    "dawne_nazwy": ["uliczka za dzisiejszą Bramą Główną Uniwersytetu Warszawskiego (XIX w.)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Uniwersytecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Uniwersytecka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-wawelska",
+    "nazwa": "Ulica Wawelska",
+    "name_en": "Wawelska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.216666666,
+    "lon": 20.993666666,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona po roku 1880 na skraju dawnego Mokotowskiego Pola Wojennego (obecnego Pola Mokotowskiego), utworzonego jako miejsce ćwiczeń wojskowych w roku 1818.",
+      "W roku 1933 ukończono budowę gmachu Szkoły Nauk Politycznych według projektu Romualda Gutta – obecnie w tym budynku działa Krajowa Szkoła Administracji Publicznej (nr 56).",
+      "W roku 1936 ukończono budowę modernistycznego gmachu Dyrekcji Naczelnej Lasów Państwowych – Wawelska 52-54.",
+      "W latach 1948–1951 według konkursowego projektu Romualda Gutta przy współpracy m.in. Zbigniewa Wasiutyńskiego pod numerem 1/3 wybudowano siedzibę Głównego Urzędu Statystycznego.",
+      "Budowa w latach 1971–1974 Trasy Łazienkowskiej zmieniła funkcję ul. Wawelskiej, a wiele dawnych przecznic straciło połączenie z ulicą."
+    ],
+    "ciekawostki": [],
+    "summary_en": "One of Ochota's main streets, running from Aleja Niepodległości to Grójecka, part of the Łazienkowska route since 1971–1974. Its public buildings include the Political Sciences School of 1933, the Forestry Directorate of 1936 and the Central Statistical Office from 1948–1951, and it is also the site of the Skra stadium.",
+    "ludzie": [
+      {"kto": "Romuald Gutt", "rola": "projektant gmachu Szkoły Nauk Politycznych (1933) i konkursowego projektu GUS (1948–1951)", "wiki": null},
+      {"kto": "Zbigniew Wasiutyński", "rola": "współpracownik przy projekcie GUS (1948–1951)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wawelska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wawelska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "instytut-radowy",
+    "nazwa": "Instytut Radowy (dziś Narodowy Instytut Onkologii im. Marii Skłodowskiej-Curie)",
+    "name_en": "Radium Institute (now National Institute of Oncology)",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Wawelska 15",
+    "adres_historyczny": null,
+    "lat": 52.216666666,
+    "lon": 20.993666666,
+    "lokalizacja": "przyblizona",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach Instytutu Radowego przy ul. Wawelskiej 15 został zbudowany w latach 1925-27 według projektu Zygmunta Wóycickiego i Tadeusza Zielińskiego.",
+      "Instytut Radowy był placówką o charakterze medycznym założoną przez Marię Skłodowską-Curie.",
+      "Maria Skłodowska-Curie kładła kamień węgielny pod budowę przyszłego Instytutu oraz ofiarowała dla jego celów 1 gram radu.",
+      "W dniu otwarcia Instytutu zasadziła w jego ogrodzie dwa głogi i jawor, po kilkudziesięciu latach uznany za pomnik przyrody i nazwany na jej cześć „Marią”.",
+      "Po śmierci założycielki przed gmachem wystawiono pomnik Marii Skłodowskiej-Curie dłuta Ludwiki Nitschowej, odsłonięty 5 września 1935 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Radium Institute at Wawelska 15, built in 1925–1927 to designs by Zygmunt Wóycicki and Tadeusz Zieliński. Founded by Maria Skłodowska-Curie, who donated a gram of radium to it, it is now the National Institute of Oncology, and a monument to her by Ludwika Nitsch stands in front of it.",
+    "ludzie": [
+      {"kto": "Maria Skłodowska-Curie", "rola": "założycielka Instytutu Radowego", "wiki": null},
+      {"kto": "Zygmunt Wóycicki", "rola": "autor projektu gmachu (1925–1927)", "wiki": null},
+      {"kto": "Tadeusz Zieliński", "rola": "autor projektu gmachu (1925–1927)", "wiki": null},
+      {"kto": "Ludwika Nitschowa", "rola": "autorka pomnika Marii Skłodowskiej-Curie (odsłonięty 5.09.1935)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Instytut Radowy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wawelska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wawelska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka ulicy Wawelskiej (przybliżone); numer 15 podany w artykule o ulicy."
+  }
+]

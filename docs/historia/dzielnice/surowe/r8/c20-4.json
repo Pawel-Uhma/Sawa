@@ -1,0 +1,266 @@
+[
+  {
+    "id": "marysin-wawerski",
+    "nazwa": "Marysin Wawerski",
+    "name_en": "Marysin Wawerski",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.23234,
+    "lon": 21.1369,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Marysin został założony na początku XX wieku w lasach należących do dóbr Zastawów.",
+      "W okresie międzywojennym zbudowano klasztor sióstr felicjanek wraz z kościołem Najświętszej Maryi Panny Królowej Polski przy ulicy Śnieżki (od grudnia 1974 ul. Kościuszkowców).",
+      "Od 1921 roku na terenie dawnej wsi Czaplowizna działało letnisko dla dzieci – filia Domu Sierot, prowadzona przez Towarzystwo „Pomoc dla Sierot”, kierowane przez Janusza Korczaka.",
+      "Maksymilian Cohen z żoną ofiarowali na letnisko 10 morgów ziemi i budynki, chcąc uczcić pamięć zmarłej córki Róży; zabudowania rozebrano w latach 60. XX wieku pod budowę osiedla.",
+      "W latach 1965–1967 zbudowano według projektu Bohdana Lewandowskiego i Teresy Kłębkowskiej osiedle składające się z 20 bloków mieszkalnych.",
+      "W 1932 roku na terenie Marysina utworzono rezerwat im. Króla Jana Sobieskiego, początkowo na 311 ha; po II wojnie światowej zmniejszono go do 110 ha."
+    ],
+    "ciekawostki": [
+      "Z wieży kościoła Matki Boskiej Królowej Polski Adolf Hitler obserwował 15 września 1939 roku (według innego źródła 22 września) broniącą się Warszawę."
+    ],
+    "summary_en": "Marysin Wawerski is a housing estate in Wawer, founded in the early 20th century on Zastów estate forest land. It grew around the Felician Sisters' convent and a children's summer camp run by Janusz Korczak, and in 1965–1967 it was built up with 20 apartment blocks.",
+    "ludzie": [
+      {"kto": "Janusz Korczak", "rola": "kierował Towarzystwem „Pomoc dla Sierot” i letniskiem dla dzieci w Czaplowiźnie", "wiki": null},
+      {"kto": "Maksymilian Cohen", "rola": "ofiarował ziemię i budynki na letnisko dla dzieci", "wiki": null},
+      {"kto": "Xawery Dunikowski", "rola": "autor rzeźb i płaskorzeźb w kościele NMP Królowej Polski", "wiki": null},
+      {"kto": "Bohdan Lewandowski", "rola": "projektant osiedla (1965–1967)", "wiki": null},
+      {"kto": "Teresa Kłębkowska", "rola": "projektantka osiedla (1965–1967)", "wiki": null},
+      {"kto": "Adolf Hitler", "rola": "obserwował Warszawę z wieży kościoła (wrzesień 1939)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czaplowizna", "Glinki"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Marysin Wawerski", "url": "https://pl.wikipedia.org/wiki/Marysin_Wawerski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dwie daty obserwacji Warszawy przez Hitlera (15 lub 22 września 1939)."
+  },
+  {
+    "id": "miedzeszyn",
+    "nazwa": "Miedzeszyn",
+    "name_en": "Miedzeszyn",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.170176,
+    "lon": 21.194446,
+    "lokalizacja": "przyblizona",
+    "okres": "1580–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1580 roku Miedziessin była wsią duchowną w powiecie warszawskim ziemi warszawskiej.",
+      "W 1926 roku w Miedzeszynie otwarto sanatorium im. Włodzimierza Medema dla dzieci żydowskich zagrożonych gruźlicą; utworzyły je wspólnie Bund i CISZO, działało do 1942 roku.",
+      "Podczas okupacji niemieckiej w Miedzeszynie utworzono getto dla ludności żydowskiej, zlikwidowane 20 sierpnia 1942 roku.",
+      "Przez Miedzeszyn przebiega droga ekspresowa S2."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Miedzeszyn is a district of Wawer, once a church estate recorded in 1580. In 1926 a Jewish children's sanatorium opened here, and a ghetto was liquidated in August 1942.",
+    "ludzie": [
+      {"kto": "Włodzimierz Medem", "rola": "patron sanatorium dla dzieci żydowskich (od 1926)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Miedziessin"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Miedzeszyn", "url": "https://pl.wikipedia.org/wiki/Miedzeszyn"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł ma krótką część historyczną; współrzędne to środek osiedla."
+  },
+  {
+    "id": "miedzylesie",
+    "nazwa": "Międzylesie",
+    "name_en": "Międzylesie",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.207936,
+    "lon": 21.188073,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI wiek–dziś (w Warszawie od 1951)",
+    "istnieje": true,
+    "fakty": [
+      "W XVI i XVII wieku była to wieś szlachecka o nazwie Kaczkowo.",
+      "Od XVIII wieku miejscowość była znana jako Kaczy Dół.",
+      "Nazwę zmieniono w 1927 roku, aby przyciągnąć letników (według innych źródeł w 1932 roku).",
+      "Miejscowość przyłączono do Warszawy w 1951 roku.",
+      "W latach 2015–2016 zbudowano w centrum osiedla tunel dla samochodów pod linią kolejową nr 7, łączący ulicę Zwoleńską z ul. Żegańską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Międzylesie is a Warsaw estate in Wawer, formerly the village of Kaczkowo and then Kaczy Dół. It was renamed around 1927 to attract summer residents and joined Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kaczkowo", "Kaczy Dół"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Międzylesie (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Mi%C4%99dzylesie_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dwie daty zmiany nazwy (1927 lub 1932)."
+  },
+  {
+    "id": "most-anny-jagiellonki",
+    "nazwa": "Most Anny Jagiellonki",
+    "name_en": "Anna Jagiellon Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.161444,
+    "lon": 21.143972,
+    "lokalizacja": "dokladna",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę mostu, wówczas zwanego Południowym, oficjalnie rozpoczęto 21 czerwca 2017 roku; oddano go do użytku 22 grudnia 2020 roku. Planowany termin – lato 2020 – nie został dotrzymany.",
+      "W maju 2015 roku wykonawcą mostu została turecka spółka Gϋlermak Ağır Sanayi İnşaat ve Taahhut, A.Ş. przy współpracy Przedsiębiorstwa Budowy Dróg i Mostów z Mińska Mazowieckiego; odcinek miał kosztować 757,64 mln zł.",
+      "Most, o długości całkowitej 1506,5 m, jest jednym z największych mostów drogowych w Polsce i dziewiątym mostem drogowym w Warszawie.",
+      "W maju 2019 roku prace przy moście czasowo wstrzymano z powodu wysokiego poziomu wody w rzece.",
+      "W 2021 roku prezydent Warszawy Rafał Trzaskowski zapowiedział wniosek o nadanie mostowi imienia królowej Anny Jagiellonki; 10 czerwca 2021 Rada Warszawy przyjęła uchwałę o patronce mostu."
+    ],
+    "ciekawostki": [
+      "Jest to jedyny obiekt w Polsce wybudowany w technologii betonowania nawisowego, który ma zastrzały wspierające wsporniki."
+    ],
+    "summary_en": "Anna Jagiellon Bridge, formerly the Southern Bridge, is a 1.5 km crossing of the Vistula on the S2 expressway. Built from 2017 and opened on 22 December 2020, it was named after Queen Anna Jagiellon in 2021.",
+    "ludzie": [
+      {"kto": "Rafał Trzaskowski", "rola": "prezydent Warszawy, zapowiedział wniosek o imię Anny Jagiellonki (2021)", "wiki": null},
+      {"kto": "Rafał Sabisz", "rola": "główny projektant dokumentacji", "wiki": null},
+      {"kto": "Anna Jagiellonka", "rola": "patronka mostu od 10 czerwca 2021", "wiki": null}
+    ],
+    "dawne_nazwy": ["most Południowy", "MG04 (robocza nazwa)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Anny Jagiellonki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Most_Anny_Jagiellonki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "most-siekierkowski",
+    "nazwa": "Most Siekierkowski",
+    "name_en": "Siekierkowski Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.21485,
+    "lon": 21.09322778,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Most Siekierkowski został oddany do użytku 21 września 2002 roku; jego budowa wraz z drogami dojazdowymi trwała 2 lata.",
+      "W otwarciu wzięli udział m.in. Prezydent RP Aleksander Kwaśniewski, Prezes Rady Ministrów Leszek Miller, Marszałek Sejmu Marek Borowski i wicemarszałek Senatu Kazimierz Kutz.",
+      "Podczas próby obciążeniowej w sierpniu 2002 roku most jednorazowo uniósł 940 ton.",
+      "Od 1 stycznia 2014 do 20 grudnia 2021 roku, do otwarcia tunelu pod Ursynowem, po moście przebiegała droga krajowa nr 2, fragment trasy europejskiej E30.",
+      "W 2018 roku przez most przejeżdżało średnio 105 665 pojazdów na dobę; była to trzecia liczba wśród ośmiu przepraw drogowych w Warszawie.",
+      "Głównym projektantem mostu był Stefan Filipiuk, dyrektorem budowy Jerzy Bogaczyk, głównym wykonawcą Mostostal Warszawa S.A., a pylony wykonała spółka Warbud."
+    ],
+    "ciekawostki": [
+      "Jest drugim po moście Świętokrzyskim mostem w Warszawie przystosowanym do jazdy rowerem już w fazie budowy."
+    ],
+    "summary_en": "The Siekierkowski Bridge is a cable-stayed bridge on the Siekierkowska Route, opened on 21 September 2002. It links Mokotów with Praga-Południe and Wawer and carried about 105,000 vehicles a day in 2018.",
+    "ludzie": [
+      {"kto": "Aleksander Kwaśniewski", "rola": "Prezydent RP, uczestniczył w otwarciu (2002)", "wiki": null},
+      {"kto": "Leszek Miller", "rola": "Prezes Rady Ministrów, uczestniczył w otwarciu (2002)", "wiki": null},
+      {"kto": "Marek Borowski", "rola": "Marszałek Sejmu, uczestniczył w otwarciu (2002)", "wiki": null},
+      {"kto": "Kazimierz Kutz", "rola": "wicemarszałek Senatu, uczestniczył w otwarciu (2002)", "wiki": null},
+      {"kto": "Stefan Filipiuk", "rola": "główny projektant mostu", "wiki": null},
+      {"kto": "Jerzy Bogaczyk", "rola": "dyrektor budowy mostu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Siekierkowski", "url": "https://pl.wikipedia.org/wiki/Most_Siekierkowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "nowy-miedzeszyn",
+    "nazwa": "Nowy Miedzeszyn",
+    "name_en": "Nowy Miedzeszyn",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.182733,
+    "lon": 21.190184,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś (w Warszawie od 1951)",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1867–1924 Nowy Miedzeszyn był wsią letniskową w gminie Zagóźdź w powiecie warszawskim.",
+      "W 1921 roku miejscowość (w tekście: Emilianów) liczyła 121 stałych mieszkańców.",
+      "1 stycznia 1925 roku włączono ją do nowo utworzonej gminy Letnisko Falenica.",
+      "W 1943 roku gromada Nowy Miedzeszyn (w gminie Falenica) liczyła 1192 mieszkańców.",
+      "15 maja 1951 roku, w związku ze zniesieniem gminy Falenica Letnisko, gromadę włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Nowy Miedzeszyn is a summer-resort village turned Warsaw district part, once in the Zagóźdź commune. It joined Falenica commune in 1925 and was incorporated into Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Miedzeszyn-Wille", "Miedzeszyn Nowy", "Miedzeszyn II"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowy Miedzeszyn", "url": "https://pl.wikipedia.org/wiki/Nowy_Miedzeszyn"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście w 1921 roku pojawia się nazwa „Emilianów” (prawdopodobnie błąd lub dawna nazwa); fakt przepisany wprost."
+  },
+  {
+    "id": "radosc",
+    "nazwa": "Radość",
+    "name_en": "Radość",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.185555555,
+    "lon": 21.187222222,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na początku XX wieku Radość była popularną miejscowością letniskową, która zawdzięczała swoje istnienie Kolei Nadwiślańskiej.",
+      "Przed II wojną światową wybudowano tu kościół Matki Boskiej Anielskiej oraz szkołę podstawową.",
+      "Ochotnicza Straż Pożarna w Radości została założona w 1926 roku.",
+      "Osiedle Radość obejmuje też Borków, Zagóźdź, Nowy Miedzeszyn i Zbójną Górę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Radość is a former independent summer-resort village in Wawer, made popular in the early 20th century by the Kolej Nadwiślańska railway. Its Matki Boskiej Anielskiej church was built before the Second World War.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Radość (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Rado%C5%9B%C4%87_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje Radość jako osiedle i obszar MSI; czwarty fakt dotyczy granic jednostki, nie historii."
+  },
+  {
+    "id": "rezerwat-im-krola-jana-sobieskiego",
+    "nazwa": "Rezerwat im. Króla Jana Sobieskiego",
+    "name_en": "King Jan Sobieski Nature Reserve",
+    "typ": "park",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2317,
+    "lon": 21.1658,
+    "lokalizacja": "dokladna",
+    "okres": "przed II wojną (wg artykułu) / 1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rezerwat wydzielony z dóbr wilanowskich utworzono przed II wojną światową na znacznie większej powierzchni, obejmującej całe uroczysko Las Sobieskiego do granicy z Wesołą.",
+      "Celem ochrony jest starodrzew dębowy w wieku do 150–170 lat na siedlisku grądu i dąbrowy świetlistej, będący częścią pierwotnej Puszczy Mazowieckiej.",
+      "Z wyjątkiem cmentarza Ofiar II Wojny Światowej rezerwat nie jest udostępniony dla ruchu turystycznego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A forest reserve in north-eastern Wawer, created from the Wilanów estates to protect old oak stands. It is one of nine reserves in the Mazovian Landscape Park and is closed to tourists except for a war cemetery.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rezerwat im. Króla Jana Sobieskiego", "url": "https://pl.wikipedia.org/wiki/Rezerwat_im._Kr%C3%B3la_Jana_Sobieskiego"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Daty utworzenia są niezgodne: ten artykuł mówi o okresie przed II wojną, Las Sobieskiego i artykuł o Marysinie o 1952 i 1932 roku."
+  }
+]

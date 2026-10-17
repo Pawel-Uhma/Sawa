@@ -1,0 +1,330 @@
+[
+  {
+    "id": "most-kierbedzia",
+    "nazwa": "Most Kierbedzia",
+    "name_en": "Kierbedź Bridge",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "w miejscu mostu Śląsko-Dąbrowskiego",
+    "adres_historyczny": "most Aleksandryjski (Kierbedzia), łączący Pragę ze Śródmieściem",
+    "lat": 52.24925,
+    "lon": 21.022,
+    "lokalizacja": "dokladna",
+    "okres": "1864–1944",
+    "istnieje": false,
+    "fakty": [
+      "Prace nad budową mostu Kierbedzia rozpoczęto latem 1859, a ukończono w 1864.",
+      "Otwarcie przeprawy nastąpiło 22 listopada 1864.",
+      "Most miał sześć przęseł i długość 474 m (według innych źródeł 475 m lub 476 m).",
+      "Ogólny koszt budowy przeprawy wyniósł ok. 2,7 mln rubli.",
+      "W 1908 mostem po raz pierwszy pojechały tramwaje elektryczne.",
+      "5 sierpnia 1915 około 6 rano wycofujące się z Warszawy wojska rosyjskie wysadziły dwa środkowe przęsła przeprawy.",
+      "Most został wysadzony 13 września 1944 o 23.30 przez 2. Kompanię 654. Batalionu Pionierów Wehrmachtu."
+    ],
+    "ciekawostki": [
+      "Zamiast linii kolejowej na moście ułożono szyny dla tramwajów konnych, nazywanych przez mieszkańców Warszawy „ropuchami”."
+    ],
+    "summary_en": "The Kierbedź Bridge (officially the Alexander Bridge) was the first permanent steel bridge over the Vistula in Warsaw, built in 1859–1864 to a design by Stanisław Kierbedź. It was blown up in 1915 and again in 1944, and it was replaced after the war by the Śląsko-Dąbrowski Bridge.",
+    "ludzie": [
+      {"kto": "Stanisław Kierbedź", "rola": "główny projektant i budowniczy mostu", "wiki": null},
+      {"kto": "Julian Majewski", "rola": "nadzorował budowę mostu razem z Kierbedziem", "wiki": null},
+      {"kto": "Tadeusz Chrzanowski", "rola": "pracował przy budowie, później zaprojektował most przy Cytadeli", "wiki": null},
+      {"kto": "Stanisław Janicki", "rola": "polski inżynier i wynalazca, przedstawiciel firmy Schneider Creuzot", "wiki": null},
+      {"kto": "Karl Eymer", "rola": "oberleutnant, dowodził kompanią, która wysadziła most w 1944", "wiki": null}
+    ],
+    "dawne_nazwy": ["most Aleksandryjski", "I most", "Kierbedź", "Kierbedziak"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Kierbedzia", "url": "https://pl.wikipedia.org/wiki/Most_Kierbedzia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE; most nie istnieje, zachował się fragment kratownicy w zbiorach."
+  },
+  {
+    "id": "most-poninskiego",
+    "nazwa": "Most Ponińskiego",
+    "name_en": "Poniński Bridge",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "u wylotu ul. Bednarskiej",
+    "adres_historyczny": "u wylotu ul. Bednarskiej",
+    "lat": 52.247167,
+    "lon": 21.024278,
+    "lokalizacja": "dokladna",
+    "okres": "1775–1806",
+    "istnieje": false,
+    "fakty": [
+      "Most łyżwowy (pływający) został wybudowany w 1775 na Wiśle w Warszawie, u wylotu ulicy Bednarskiej.",
+      "Inwestorem mostu był podskarbi wielki koronny Adam Poniński, który za wybudowanie przeprawy miał prawo przez 10 lat pobierać opłaty mostowe.",
+      "Most był wsparty na 43 płaskodennych łodziach (staropol. łyżwach).",
+      "W 1781 i w 1786 most został uszkodzony przez krę.",
+      "4 listopada 1794, po rzezi Pragi przez Rosjan, naczelnik powstania kościuszkowskiego Tomasz Wawrzecki nakazał spalić most, by uniemożliwić przedostanie się wroga na lewy brzeg Wisły.",
+      "Został zniszczony po raz kolejny 25 listopada 1806 przez cofających się przed wojskami Napoleona Prusaków i Rosjan."
+    ],
+    "ciekawostki": [
+      "Opłata za przejście lub przejazd wynosiła: 2 grosze od człowieka pieszego, 4 grosze od konia lub bydlęcia, 20 groszy od karety ładownej, 1 złoty od bryki ładownej."
+    ],
+    "summary_en": "The Poniński Bridge was a floating pontoon-type bridge over the Vistula at the mouth of ul. Bednarska, built in 1775 for the Crown treasurer Adam Poniński. It was burned in 1794 and destroyed for the last time in 1806.",
+    "ludzie": [
+      {"kto": "Adam Poniński", "rola": "podskarbi wielki koronny, inwestor mostu", "wiki": null},
+      {"kto": "Efraim Szreger", "rola": "autor projektu mostu", "wiki": null},
+      {"kto": "Jan Kristian Lehmnann", "rola": "inżynier w korpusie pontonierów, wykonawca", "wiki": null},
+      {"kto": "Tomasz Wawrzecki", "rola": "naczelnik powstania kościuszkowskiego, nakazał spalić most w 1794", "wiki": null},
+      {"kto": "Aleksander Suworow", "rola": "nakazał prowizoryczną naprawę mostu w 1794", "wiki": null}
+    ],
+    "dawne_nazwy": ["most łyżwowy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Ponińskiego", "url": "https://pl.wikipedia.org/wiki/Most_Poni%C5%84skiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwisko wykonawcy w tekście zapisane jako „Lehmnanna”; przepisano bez poprawki."
+  },
+  {
+    "id": "most-syreny",
+    "nazwa": "Most Syreny",
+    "name_en": "Syrena Bridge",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "łączył ul. Tamkę i Wybrzeże Szczecińskie",
+    "adres_historyczny": null,
+    "lat": 52.24126,
+    "lon": 21.03419,
+    "lokalizacja": "dokladna",
+    "okres": "1985–2000",
+    "istnieje": false,
+    "fakty": [
+      "Most został zbudowany w 3 miesiące (od kwietnia do czerwca) w 1985 przez wojsko (jednostki kolejowa i drogowa) jako przeprawa zastępcza na czas remontu mostu Poniatowskiego.",
+      "Uroczystość otwarcia odbyła się 17 lipca 1985.",
+      "Z przeprawy nie mogli korzystać piesi oraz obowiązywało na niej ograniczenie prędkości do 40 km/h.",
+      "Most był wykorzystywany do 22 września 2000, a 6 października tego samego roku został zastąpiony przez most Świętokrzyski."
+    ],
+    "ciekawostki": [
+      "Na moście panowały specyficzne zasady ruchu: samochody poruszały się po bokach jezdni, natomiast autobusy miejskie jeździły środkiem."
+    ],
+    "summary_en": "The Syrena Bridge was a temporary military bridge over the Vistula, linking ul. Tamka and Wybrzeże Szczecińskie. It was built in three months in 1985 and was in use until 2000, when the Świętokrzyski Bridge replaced it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Syreny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Most_Syreny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Most rozebrany; na praskim brzegu zachowały się żelbetowe podpory, częściowo wkomponowane w ścianę wspinaczkową z 2017."
+  },
+  {
+    "id": "zespol-kamienic-przy-ul-targowej-50-52",
+    "nazwa": "Zespół kamienic przy ul. Targowej 50/52 (Muzeum Warszawskiej Pragi)",
+    "name_en": "Tenement complex at ul. Targowa 50/52 (Warsaw Praga Museum)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 50/52",
+    "adres_historyczny": null,
+    "lat": 52.25169722,
+    "lon": 21.03924722,
+    "lokalizacja": "dokladna",
+    "okres": "2015–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ostatecznie zdecydowano, że Muzeum Warszawskiej Pragi będzie się mieścić w zespole trzech zabytkowych kamienic przy ul. Targowej 50/52, obok Bazaru Różyckiego.",
+      "Jedna z nich – dom Rothblitha – jest najstarszym zachowanym murowanym domem mieszkalnym na Pradze.",
+      "W oficynie odkryto w 1996 fragmenty malowideł ściennych zdobiących przed wojną żydowski dom modlitwy.",
+      "W trakcie budowy obok nich odkryto XVIII-wieczne piwnice – konieczne były zmiany projektu i wykonanie dodatkowych prac.",
+      "Muzeum ze stałą ekspozycją zostało otwarte dla zwiedzających 19 września 2015."
+    ],
+    "ciekawostki": [
+      "Unikatowe polichromie przedstawiają znaki Zodiaku, żydów modlących się przy Ścianie Płaczu i grób Racheli w Betlejem."
+    ],
+    "summary_en": "Three historic tenement houses at ul. Targowa 50/52 in Praga-Północ, next to the Różycki Bazaar, house the Warsaw Praga Museum, which opened to visitors on 19 September 2015. The rear wing contains fragments of pre-war wall paintings from a Jewish prayer house.",
+    "ludzie": [],
+    "dawne_nazwy": ["dom Rothblitha"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Warszawskiej Pragi", "url": "https://pl.wikipedia.org/wiki/Muzeum_Warszawskiej_Pragi"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres to data otwarcia muzeum w zespole, nie data budowy kamienic, których tekst nie podaje."
+  },
+  {
+    "id": "mykwa-w-warszawie",
+    "nazwa": "Mykwa w Warszawie",
+    "name_en": "Mikveh building in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. ks. Ignacego Kłopotowskiego 31",
+    "adres_historyczny": null,
+    "lat": 52.2522,
+    "lon": 21.0356,
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony pomiędzy 1911 a 1914 według projektu Nauma Hornsteina z przeznaczeniem na żydowską łaźnię obrzędową, jako część kompleksu zabudowań praskiej gminy żydowskiej.",
+      "Po zakończeniu II wojny światowej budynek został ponownie przebudowany i przeznaczony na siedzibę Centralnego Komitetu Żydów Polskich.",
+      "Po 1989 budynek został odzyskany przez Gminę Wyznaniową Żydowską w Warszawie.",
+      "Od 2006 mieści się w nim Wielokulturowe Liceum Humanistyczne im. Jacka Kuronia.",
+      "W 1999 budynek został wpisany do rejestru zabytków. Jest jedynym tego typu obiektem na terenie Warszawy."
+    ],
+    "ciekawostki": [
+      "Mykwa cieszyła się dobrą opinią, m.in. z powodu wysokiej jakości wyposażenia.",
+      "Sąsiadował od wschodu z synagogą Praską."
+    ],
+    "summary_en": "The former Jewish mikveh (ritual bath) at ul. ks. Ignacego Kłopotowskiego 31 in Praga-Północ was built in 1911–1914 to a design by Naum Hornstein. After the war it housed other institutions, and since 2006 it has been home to the Jacek Kuroń Multicultural Humanities High School.",
+    "ludzie": [
+      {"kto": "Naum Hornstein", "rola": "autor projektu budynku", "wiki": null},
+      {"kto": "Jacek Kuroń", "rola": "patron liceum mieszczącego się w budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["łaźnia obrzędowa praskiej gminy żydowskiej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mykwa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Mykwa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "nove-kino-praha",
+    "nazwa": "Nove Kino Praha",
+    "name_en": "Nove Kino Praha",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jagiellońska 26",
+    "adres_historyczny": null,
+    "lat": 52.25164,
+    "lon": 21.0355666,
+    "lokalizacja": "dokladna",
+    "okres": "2007–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nove Kino Praha – pierwsze w Polsce kino cyfrowe – zostało otwarte 14 czerwca 2007 w obiekcie Centrum Praha przy ulicy Jagiellońskiej 26 i działało w latach 2007–2019.",
+      "Budynek, wzniesiony w 2007 r. w miejscu zburzonego kina „Praha”, ma trzy sale projekcyjne, mieszczące łącznie 555 widzów.",
+      "Cechą charakterystyczną obiektu jest ozdobienie jego fasady 12 płaskorzeźbami znanych polskich aktorów.",
+      "Pomysłodawcą i inicjatorem umieszczenia w elewacji kamiennych portretów polskich aktorów był prezes IF Max-Film Krzysztof Andracki.",
+      "Od 2009 r. w Centrum Praha (przy kinie) mieści się Urząd Marszałkowski Województwa Mazowieckiego.",
+      "W marcu 2012 r. podjęto decyzję o zamknięciu tego ostatniego na Pradze-Północ kina. Seria protestów wstrzymała decyzję o zamknięciu.",
+      "31 marca 2019 kino zakończyło działalność z powodu kłopotów finansowych zarządcy, a jego miejsce zajął Mazowiecki Teatr Muzyczny im. Jana Kiepury."
+    ],
+    "ciekawostki": [
+      "Płaskorzeźby mają wymiary 4,5 na 1,5 metra i wagę 5 ton każda.",
+      "Podczas seansów cyfrowych kino korzystało z projektora Barco DP90 o rozdzielczości 2K (2048 x 1080 pikseli)."
+    ],
+    "summary_en": "Nove Kino Praha at ul. Jagiellońska 26 in Praga-Północ, Poland's first digital cinema, opened on 14 June 2007 on the site of the old Praha cinema. Its facade carries 12 relief portraits of Polish actors, and the cinema closed in March 2019.",
+    "ludzie": [
+      {"kto": "Krzysztof Andracki", "rola": "prezes IF Max-Film, pomysłodawca portretów na elewacji", "wiki": null},
+      {"kto": "Jerzy Dobczański", "rola": "projektant płaskorzeźb", "wiki": null},
+      {"kto": "Piotr Banasik", "rola": "wykonawca płaskorzeźb", "wiki": null},
+      {"kto": "Krzysztof Tyszkiewicz", "rola": "członek zespołu projektowego budynku", "wiki": null},
+      {"kto": "Sławomir Stankiewicz", "rola": "członek zespołu projektowego budynku", "wiki": null},
+      {"kto": "Michał Adamczyk", "rola": "członek zespołu projektowego budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Centrum Praha"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nove Kino Praha", "url": "https://pl.wikipedia.org/wiki/Nove_Kino_Praha"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam adres co rekord „Kino Praha” (dawny budynek, zburzony w 2005)."
+  },
+  {
+    "id": "nowa-praga",
+    "nazwa": "Nowa Praga",
+    "name_en": "Nowa Praga district area",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.26333333,
+    "lon": 21.02833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1844–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W roku 1844 Józef Noskowski, który był właścicielem folwarku Targówek, podzielił swoje grunty na kilkanaście kolonii.",
+      "W trójkącie wyznaczonym obecnymi ulicami 11 Listopada – al. „Solidarności” i nasypem torów kolejowych do Olszynki Grochowskiej, właściciel tych terenów Ksawery Konopacki rozpoczął w 1861 roku parcelację terenu.",
+      "Warszawska Fabryka Stali przy ul. Stalowej działała w latach 1879–1886.",
+      "Większą część Nowej Pragi włączono do Warszawy w 1890.",
+      "W latach 1944–1956 w rejonie ulic 11 Listopada i Namysłowskiej funkcjonowało Więzienie karno-śledcze nr III (tzw. Toledo).",
+      "W 1974 roku zamknięto kolejkę Marecką z powodu wyeksploatowania i spadku frekwencji wśród użytkowników.",
+      "Do rejestru zabytków wpisanych jest 11 obiektów, 2 zespoły budowlane, zespół koszarowy przy ul. 11 Listopada, 2 zespoły przemysłowe oraz układ urbanistyczny ul. Małej."
+    ],
+    "ciekawostki": [
+      "W 2008 stołeczny konserwator zabytków Ewa Nekanda-Trepka zaproponowała, by Nową Pragę objąć ochroną w formie parku kulturowego."
+    ],
+    "summary_en": "Nowa Praga is a district area in Praga-Północ, lying north of the Warsaw–St Petersburg railway line. Its parcelling began in 1861 under Ksawery Konopacki, the Warsaw Steel Works operated in 1879–1886, and the Toledo prison operated there from 1944 to 1956.",
+    "ludzie": [
+      {"kto": "Józef Noskowski", "rola": "właściciel folwarku Targówek, który podzielił grunty na kolonie w 1844", "wiki": null},
+      {"kto": "Ksawery Konopacki", "rola": "właściciel terenów, rozpoczął ich parcelację w 1861", "wiki": null},
+      {"kto": "Ewa Nekanda-Trepka", "rola": "stołeczny konserwator zabytków", "wiki": null}
+    ],
+    "dawne_nazwy": ["Targówek (folwark)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowa Praga", "url": "https://pl.wikipedia.org/wiki/Nowa_Praga"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Obszar osiedla i MSI, bez jednego adresu; współrzędne z nagłówka WSPÓŁRZĘDNE. Okres od daty podziału gruntów z 1844."
+  },
+  {
+    "id": "nowa-synagoga-nowopraska",
+    "nazwa": "Nowa Synagoga Nowopraska",
+    "name_en": "New Nowa Praga Synagogue",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Bródnowska 8",
+    "adres_historyczny": "ul. Bródnowska 8",
+    "lat": 52.2643858,
+    "lon": 21.0404769,
+    "lokalizacja": "dokladna",
+    "okres": "1900–lata 70. XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga została sfinansowana przez dwóch prywatnych fundatorów (po 2000 rubli) oraz warszawską gminę żydowską.",
+      "Otwarcie synagogi nastąpiło 17 lipca 1900 roku w obecności Prezesa i Zarządu Gminy, przedstawicieli warszawskiego Rabinatu i miejscowych Żydów.",
+      "Budową i urządzaniem synagogi kierował Zygmunt Frumkin.",
+      "Personel tej bożnicy stanowił posługacz (szames) i kantor (chazen), pobierający 200 rubli pensji rocznej.",
+      "W jej miejscu w latach 70. XX wieku wzniesiono blok mieszkalny."
+    ],
+    "ciekawostki": [
+      "Synagoga była większa niż Synagoga Praska."
+    ],
+    "summary_en": "The New Nowa Praga Synagogue stood at ul. Bródnowska 8 in Praga-Północ. It was opened on 17 July 1900 and financed by two private donors and the Warsaw Jewish community. A residential block was built on its site in the 1970s.",
+    "ludzie": [
+      {"kto": "Zygmunt Frumkin", "rola": "kierował budową i urządzaniem synagogi", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowa Synagoga Nowopraska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowa Synagoga Nowopraska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Nowa_Synagoga_Nowopraska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nieznany jest czas rozbiórki synagogi."
+  },
+  {
+    "id": "oficyna-burkego",
+    "nazwa": "Oficyna Burkego",
+    "name_en": "Burke's outbuilding",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kawęczyńska 26",
+    "adres_historyczny": null,
+    "lat": 52.256645,
+    "lon": 21.05506,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Oficyna powstała ok. 1900 jako najstarsza część zespołu mieszkalnego Edmunda Burkego i Józefa Wągrowskiego.",
+      "Po 1945 budynek stał się domem komunalnym.",
+      "W 2015 budynek został wpisany do rejestru zabytków jako relikt mieszkalnej architektury drewnianej.",
+      "Jest jednym z dwóch drewnianych budynków mieszkalnych z przełomu XIX i XX wieku zachowanych na Pradze-Północ (drugi znajduje się przy ul. Środkowej 9).",
+      "W 2016 z budynku wyprowadził się ostatni lokator.",
+      "W 2019 oficyna miała zapadnięty dach, zniszczone stropy i odchylone od pionu ściany."
+    ],
+    "ciekawostki": [
+      "Murowany budynek frontowy zespołu nie zachował się."
+    ],
+    "summary_en": "Burke's outbuilding at ul. Kawęczyńska 26 in Praga-Północ is a single-storey wooden house built around 1900 for Edmund Burke and Józef Wągrowski. It is one of the few surviving wooden residential buildings from that period in Praga, was entered in the register of monuments in 2015 and was in poor condition by 2019.",
+    "ludzie": [
+      {"kto": "Edmund Burke", "rola": "współwłaściciel zespołu mieszkalnego, dla którego powstała oficyna", "wiki": null},
+      {"kto": "Józef Wągrowski", "rola": "współwłaściciel zespołu mieszkalnego, dla którego powstała oficyna", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Oficyna Burkego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Oficyna_Burkego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "id": "cieplownia-kaweczyn",
+    "nazwa": "Ciepłownia Kawęczyn",
+    "name_en": "Kawęczyn heating plant",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "ul. Chełmżyńska 180",
+    "adres_historyczny": null,
+    "lat": 52.268056,
+    "lon": 21.128611,
+    "lokalizacja": "dokladna",
+    "okres": "1979–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa Ciepłowni Kawęczyn rozpoczęła się w 1979 roku, a zakład został uruchomiony w 1983 roku.",
+      "Ciepłownia jest najmłodszym i trzecim co do wielkości źródłem ciepła dla Warszawy; jej moc cieplna to 453 MWt.",
+      "Jeden z kotłów węglowych został wyłączony z eksploatacji z końcem kwietnia 2025 roku, a w jego miejsce wybudowano dwie nowe jednostki.",
+      "W 2023 przekazano do eksploatacji farmę fotowoltaiczną o mocy 0,999 MWp.",
+      "Komin ciepłowni ma wysokość 300 metrów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Kawęczyn heat plant at Chełmżyńska 180 in Rembertów was built from 1979 and started in 1983. It is Warsaw's third-largest heat source and has a 300-metre chimney.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ciepłownia Kawęczyn",
+        "url": "https://pl.wikipedia.org/wiki/Ciep%C5%82ownia_Kaw%C4%99czyn"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Właściciel w tekście: Orlen Termika S.A."
+  },
+  {
+    "id": "cmentarz-w-rembertowie",
+    "nazwa": "Cmentarz w Rembertowie",
+    "name_en": "Rembertów cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "ul. Grzybowa",
+    "adres_historyczny": null,
+    "lat": 52.2503,
+    "lon": 21.1775,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został utworzony 1 stycznia 1928 roku, wraz z powstaniem parafii Matki Boskiej Zwycięskiej.",
+      "Cmentarz ma kształt prostokąta i trzy bramy.",
+      "Na cmentarzu znajduje się wydzielona kwatera dziecięca.",
+      "Pochowani m.in.: Józef Kamiński (1919–2015), generał broni SZ PRL, oraz Andrzej Conder (1929–2015), polski architekt.",
+      "Pochowany jest tu także Wiesław Newecki (1929−2023), uczestnik powstania warszawskiego i pomysłodawca Hejnału warszawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Rembertów cemetery on Grzybowa Street was founded on 1 January 1928 together with the Matki Boskiej Zwycięskiej parish. Among those buried here are General Józef Kamiński, architect Andrzej Conder and Warsaw Uprising veteran Wiesław Newecki.",
+    "ludzie": [
+      {
+        "kto": "Józef Kamiński",
+        "rola": "generał broni SZ PRL; prezes Zarządu Głównego CWKS Legia Warszawa (1919–2015)",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Conder",
+        "rola": "polski architekt (1929–2015)",
+        "wiki": null
+      },
+      {
+        "kto": "Wiesław Newecki",
+        "rola": "uczestnik powstania warszawskiego, pomysłodawca Hejnału warszawskiego (1929–2023)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Cmentarz w Rembertowie",
+        "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Rembertowie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lista pochowanych w artykule niepełna; wybrano trzy osoby."
+  },
+  {
+    "id": "fort-kaweczyn",
+    "nazwa": "Fort Kawęczyn",
+    "name_en": "Kawęczyn Fort",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2592,
+    "lon": 21.1536,
+    "lokalizacja": "przyblizona",
+    "okres": "1892–po 1945",
+    "istnieje": false,
+    "fakty": [
+      "Fort Kawęczyn wzniesiono w latach 1892–1893 jako jeden z fortów Warszawskiego Rejonu Fortecznego, zamykających rejon od wschodu.",
+      "Fort znajdował się w obrębie dzisiejszych ulic Strażackiej, Zesłańców Polskich, Roty, Madziarów i Kordiana.",
+      "W 1909, w ramach likwidacji Twierdzy Warszawa, fort został skasowany, a w pierwszych latach powojennych rozebrany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort Kawęczyn was one of the eastern forts of the Warsaw Fortress, built in 1892–1893 on the right bank of the Vistula. It was decommissioned in 1909 and demolished after the Second World War.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Fort Kawęczyn",
+        "url": "https://pl.wikipedia.org/wiki/Fort_Kaw%C4%99czyn"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "getto-w-rembertowie",
+    "nazwa": "Getto w Rembertowie",
+    "name_en": "Rembertów ghetto",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Artyleryjska 13 (siedziba Judenratu)",
+    "lat": 52.25,
+    "lon": 21.166666666,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1943",
+    "istnieje": false,
+    "fakty": [
+      "Getto w Rembertowie utworzono na podstawie zarządzenia gubernatora dystryktu warszawskiego Ludwiga Fischera z 2 października 1940.",
+      "Getto istniało od października 1940 do sierpnia 1942, a w formie szczątkowej – od listopada 1942 do czerwca 1943.",
+      "Według Wiktora Kulerskiego w listopadzie 1941 w getcie znajdowało się około 1800 Żydów.",
+      "20 sierpnia 1942 do getta wkroczyła niemiecka żandarmeria, wsparta przez litewskich kolaborantów oraz polską granatową policję.",
+      "Podczas marszu do Falenicy, po drodze do stacji kolejowej, zginęło wielu Żydów; największa masakra miała miejsce przy stacji w Aninie.",
+      "W czerwcu 1943 roku Niemcy zlikwidowali „getto szczątkowe”, a zamieszkujących w nim Żydów rozstrzelali na terenie ogródków działkowych przy ul. Batorego.",
+      "Po wojnie ofiary upamiętniono trzema wykonanymi z piaskowca tablicami projektu Karola Tchorka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Rembertów ghetto was set up by the Germans in October 1940 under the order of Governor Ludwig Fischer and liquidated in August 1942, with a residual ghetto until June 1943. Most of its roughly 1,400–2,000 residents were murdered at Treblinka or shot locally.",
+    "ludzie": [
+      {
+        "kto": "Ludwig Fischer",
+        "rola": "gubernator dystryktu warszawskiego; wydał zarządzenie o utworzeniu getta (2 października 1940)",
+        "wiki": null
+      },
+      {
+        "kto": "Gustaw Chwast",
+        "rola": "podoficer, komendant getta; znany z szczególnej brutalności",
+        "wiki": null
+      },
+      {
+        "kto": "Rudolf Mizgalewicz",
+        "rola": "major, ps. „Ryba”; kierował tajną akcją dożywiania Żydów w getcie",
+        "wiki": null
+      },
+      {
+        "kto": "Wiktor Kulerski",
+        "rola": "autor cytowanej pracy (2007), źródło liczby mieszkańców getta",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "getto szczątkowe (1942–1943)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Getto w Rembertowie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_w_Rembertowie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek getta, przybliżone). Liczba mieszkańców w tekście podana w przedziale 1400–2000."
+  },
+  {
+    "id": "karolowka",
+    "nazwa": "Karolówka",
+    "name_en": "Karolówka",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.264167,
+    "lon": 21.156389,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Karolówka należała w latach 1867–1930 do gminy Okuniew w powiecie warszawskim; w 1921 roku liczyła 384 mieszkańców.",
+      "1 kwietnia 1930 Karolówkę włączono do gminy Wawer w tymże powiecie.",
+      "20 października 1933 utworzono gromadę Karolówka w granicach gminy Wawer.",
+      "1 kwietnia 1939 Karolówkę włączono do nowo utworzonego miasta Rembertów.",
+      "1 kwietnia 1957 miasto Rembertów, wraz z Karolówką, włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Karolówka is a former village in the west of the Stary Rembertów area, which passed through several administrative units before joining Warsaw in 1957 along with the town of Rembertów.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Karolówka (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Karol%C3%B3wka_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kaweczyn-warszawa",
+    "nazwa": "Kawęczyn",
+    "name_en": "Kawęczyn (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.268888888,
+    "lon": 21.121111111,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Kawenczyn należała w latach 1867–1939 do gminy Wawer w powiecie warszawskim; w 1921 roku liczyła 416 mieszkańców, a osada fabryczna Kawenczyn 563.",
+      "20 października 1933 utworzono gromadę Kawenczyn w granicach gminy Wawer.",
+      "1 kwietnia 1939 Kawenczyn włączono do nowo utworzonego miasta Rembertów.",
+      "1 kwietnia 1957 miasto Rembertów, wraz z Kawęczynem, włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kawęczyn is an industrial district of Rembertów. It was part of Wawer commune until 1939, when it passed to the new town of Rembertów, and it joined Warsaw in 1957. The Kawęczyn heat plant is located here.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Kawenczyn"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kawęczyn (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Kaw%C4%99czyn_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł pisze nazwę wsi jako Kawenczyn; rekord używa też formy Kawęczyn z tytułu."
+  },
+  {
+    "id": "kaweczyn-wygoda",
+    "nazwa": "Kawęczyn-Wygoda",
+    "name_en": "Kawęczyn-Wygoda",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.260411,
+    "lon": 21.121836,
+    "lokalizacja": "przyblizona",
+    "okres": "XII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Kawęczyn od XII wieku wchodziła w skład dóbr Kamion, należących z nadania książęcego do biskupów płockich.",
+      "W 1811 istniało tu 16 gospodarstw, cegielnia i karczma.",
+      "Z cegły kawęczyńskiej wybudowano m.in. istniejącą do dziś Komorę Wodną na Pradze, Rogatki Grochowskie oraz Teatr Wielki.",
+      "W 1866 cegielnię przekształcono w Kawęczyńskie Zakłady Cegielniane Kazimierza Granzowa.",
+      "W 1932 między Kawęczynem i Ząbkami odkryto 2 cmentarzyska wielokulturowe z 19 grobami oraz cmentarzysko grobów kloszowych.",
+      "W 1998 na obszarze między ulicami Marsa, Żołnierską i torami kolejowymi utworzono rezerwat przyrody Kawęczyn ze względu na unikatową roślinność."
+    ],
+    "ciekawostki": [
+      "Od Kawęczyna pochodzi nazwa ulicy Kawęczyńskiej na Szmulowiźnie."
+    ],
+    "summary_en": "Kawęczyn-Wygoda is a district of Rembertów with a long brickworks tradition. Its clay supplied bricks for Warsaw landmarks such as the Water Tower on Praga's bank, and a nature reserve was created here in 1998.",
+    "ludzie": [
+      {
+        "kto": "Kazimierz Granzow",
+        "rola": "właściciel Kawęczyńskich Zakładów Cegielnianych od 1866",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Kawenczyn"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kawęczyn-Wygoda",
+        "url": "https://pl.wikipedia.org/wiki/Kaw%C4%99czyn-Wygoda"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-matki-boskiej-zwycieskiej",
+    "nazwa": "Kościół Matki Boskiej Zwycięskiej",
+    "name_en": "Church of Our Lady of Victory, Rembertów",
+    "typ": "swiatynia",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.252444444,
+    "lon": 21.169083333,
+    "lokalizacja": "przyblizona",
+    "okres": "1939–1995 (budowa)",
+    "istnieje": true,
+    "fakty": [
+      "Budowa świątyni według planów architektów Wiesława Kononowicza i Stanisława Mizerskiego rozpoczęła się w lipcu 1939 roku; wybuch II wojny światowej przerwał prace, które wznowiono w 1946 roku.",
+      "Kamień węgielny poświęcił kardynał August Hlond 1 czerwca 1947 roku.",
+      "Kościół stanął w stanie surowym w 1952 roku dzięki staraniom księdza prałata Stanisława Skrzeszewskiego.",
+      "20 kwietnia 1952 roku arcybiskup Stefan Wyszyński odprawił pierwszą mszę świętą, poświęcił mury oraz pierwszy dzwon i nadał mu imię „Stefan”.",
+      "Kościół został konsekrowany przez biskupa Jerzego Modzelewskiego w 1978 roku.",
+      "W 1995 roku, dzięki staraniom księdza prałata Edwarda Żmijewskiego, ukończono wieżę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of Our Lady of Victory in Rembertów's Nowy Rembertów estate was begun in July 1939, interrupted by the war, and finished in 1995 when its tower was completed. Stefan Wyszyński blessed its first bell in 1952.",
+    "ludzie": [
+      {
+        "kto": "Wiesław Kononowicz",
+        "rola": "architekt projektu świątyni",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Mizerski",
+        "rola": "architekt projektu świątyni",
+        "wiki": null
+      },
+      {
+        "kto": "August Hlond",
+        "rola": "kardynał; poświęcił kamień węgielny 1 czerwca 1947",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Wyszyński",
+        "rola": "arcybiskup; odprawił pierwszą mszę świętą w 1952 i nadał imię dzwonowi „Stefan”",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kościół Matki Boskiej Zwycięskiej w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Boskiej_Zwyci%C4%99skiej_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres w artykule: osiedle Nowy Rembertów; brak numeru."
+  }
+]

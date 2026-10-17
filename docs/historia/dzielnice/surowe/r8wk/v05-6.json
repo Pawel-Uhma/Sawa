@@ -1,0 +1,236 @@
+[
+  {
+    "id": "ulica-lizbonska",
+    "nazwa": "Ulica Lizbońska",
+    "name_en": "Lizbońska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Lizbońska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Lizbońska łączy ulicę Saską z ulicą Afrykańską, po drodze spotykając się z ulicą Urugwajską.",
+      "Nazwa pochodzi od stolicy Portugalii, Lizbony.",
+      "Ulica miała być jedną z czterech równoległych ulic między ulicą Saską a ulicą Koalicyjną, a zabudowana została dopiero w latach 70. i 80. XX wieku.",
+      "Przy ul. Lizbońskiej 2/62 mieszkał Miron Białoszewski, polski poeta, prozaik, dramatopisarz i aktor teatralny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lizbońska is a short street on Saska Kępa in Praga-Południe, named after Lisbon. It was planned before World War II but built up only in the 1970s and 1980s; poet Miron Białoszewski lived at number 2/62.",
+    "ludzie": [
+      {"kto": "Miron Białoszewski", "rola": "polski poeta, prozaik, dramatopisarz i aktor teatralny, mieszkał przy ul. Lizbońskiej 2/62", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Lizbońska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Lizbońska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-londynska",
+    "nazwa": "Ulica Londyńska",
+    "name_en": "Londyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Londyńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od stolicy Wielkiej Brytanii, Londynu.",
+      "Ulica została wytyczona w okresie międzywojennym, ale zabudowana głównie powojennymi domami.",
+      "Do lat 90. XX wieku ulica kojarzyła się głównie z komisariatem policji pod numerem 20, zlikwidowanym w 1999 roku.",
+      "W 2014 roku pod nr 5 rozpoczęła się budowa budynku mieszkalnego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Londyńska is a street on Saska Kępa in Praga-Południe, named after London. It was laid out between the wars and built up mainly after the war; a police station at number 20 was closed in 1999.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Londyńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Londyńska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-lotarynska",
+    "nazwa": "Ulica Lotaryńska",
+    "name_en": "Lotaryńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Lotaryńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została zaplanowana w okresie międzywojennym; pierwotnie miała biec od Saskiej do ulicy Wersalskiej.",
+      "Powojenna zabudowa zmieniła te plany.",
+      "Nazwa ulicy pochodzi od Lotaryngii, krainy historycznej we Francji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lotaryńska is a street on Saska Kępa in Praga-Południe, named after the historic region of Lorraine. It was planned between the wars, and post-war building changed the original route from Saska to Wersalska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Lotaryńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Lotaryńska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-marokanska",
+    "nazwa": "Ulica Marokańska",
+    "name_en": "Marokańska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Marokańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1985–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona około 1985 roku.",
+      "Wcześniej znajdowały się tu tereny nieużytków rolnych i ogródki działkowe.",
+      "Ulica biegnie od skrzyżowania z ul. Algierską, krzyżuje się z kilkoma wewnętrznymi uliczkami i wpada w ul. Afrykańską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Marokańska is a street of about 560 metres on Saska Kępa in Praga-Południe. It was laid out around 1985 on former farmland and allotment gardens, and runs from Algierska to Afrykańska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Marokańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Marokańska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-marsa",
+    "nazwa": "Ulica Marsa",
+    "name_en": "Marsa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe, Rembertów",
+    "adres_dzis": "Marsa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica o długości 3,2 km położona jest na Pradze Południe i w Rembertowie; biegnie od skrzyżowania ulic Płowieckiej i Ostrobramskiej (ronda I. Mościckiego).",
+      "Od 2005 roku trwa przebudowa ulicy; najpierw do 2011 roku wybudowano rondo oraz węzeł łączący ulicę z Trasą Siekierkowską.",
+      "Pochodzenie nazwy nie jest do końca jasne; nawiązuje ona najprawdopodobniej do boga wojny Marsa lub do Pola Marsowego, czyli popularnej nazwy poligonu.",
+      "W 1999 roku w telewizji i prasie spekulowano, że nazwa ulicy miała zostać zmieniona na al. NATO, w 50. rocznicę powstania układu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Marsa is a 3.2 km road on the border of Praga-Południe and Rembertów, running from Płowiecka and Ostrobramska northward. It has been rebuilt since 2005, and its name's origin is uncertain.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Marsa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Marsa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres powstania podany w tekście jako ok. 1909 rok."
+  },
+  {
+    "id": "ulica-mladzka",
+    "nazwa": "Ulica Mlądzka",
+    "name_en": "Mlądzka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Mlądzka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od dawnej wsi Mlądz, przyłączonej później do Otwocka.",
+      "Ulica biegnie równolegle do Zamienieckiej i kończy swój bieg tuż przed Grochowską.",
+      "Przy ul. Mlądzkiej zachowało się kilka przedwojennych domów, znajdują się one pod numerami 3, 3a, 5a, 8, 10, 15, 20, 30, 32, 42 i 44 (z 1912 roku)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Mlądzka is a 575-metre street on Grochów in Praga-Południe, named after the former village of Mlądz. Several pre-war houses survive along it, including number 44 from 1912.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Mlądzka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Mlądzka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-motorowa",
+    "nazwa": "Ulica Motorowa",
+    "name_en": "Motorowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Motorowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica pojawiła się na planach regulacyjnych Grochowa i Gocławia w latach 30. XX wieku.",
+      "Do 1935 roku wzdłuż przyszłej ulicy znajdowały się już trzy domy.",
+      "W niezmienionym kształcie ulica dotrwała do lat 60. XX wieku, kiedy rozpoczęły się zmiany urbanistyczne okolicy, związane początkowo z budową osiedla Przyczółek Grochowski.",
+      "Ulica znajdowała się wówczas w granicach XVII Komisariatu »Grochów«."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Motorowa is a 400-metre street on Gocław in Praga-Południe, running from Poligonowa to Ostrobramska. It appeared in 1930s planning, survived in its original shape until the 1960s, and was rerouted after the Łazienkowska Route opened.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Motorowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Motorowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-nieklanska",
+    "nazwa": "Ulica Niekłańska",
+    "name_en": "Niekłańska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Niekłańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę swoją ulica zawdzięcza wsi Niekłań Wielki, położonej w gminie Stąporków w woj. świętokrzyskim.",
+      "Zabudowa ulicy pochodzi z lat 30. XX wieku.",
+      "Niekłańska 15 to dom wybudowany w 1938 roku wg projektu Mariana Niewiarowskiego i Jerzego Brandysewicza (funkcjonalizm).",
+      "Ulica jest ważna dla Saskiej Kępy z punktu widzenia usługowego i handlowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Niekłańska is a 795-metre street on Saska Kępa in Praga-Południe, named after the village of Niekłań Wielki. Its 1930s buildings include functionalist houses, and it is a key shopping and service street for the district.",
+    "ludzie": [
+      {"kto": "Marian Niewiarowski", "rola": "projektant domu przy Niekłańskiej 15", "wiki": null},
+      {"kto": "Jerzy Brandysewicz", "rola": "projektant domu przy Niekłańskiej 15", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Niekłańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Niekłańska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

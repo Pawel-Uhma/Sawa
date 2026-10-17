@@ -1,0 +1,55 @@
+[
+  {
+    "id": "jezioro-zablockiego",
+    "nazwa": "Jezioro Zabłockiego",
+    "name_en": "Zabłocki Lake",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1408,
+    "lon": 21.0058,
+    "lokalizacja": "dokladna",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zgodnie z badaniem z 2004 roku na terenie zbiornika i w jego okolicach stwierdzono perkozka i kaczkę krzyżówkę.",
+      "Zgodnie z Uchwałą Rady m.st. Warszawy z dnia 23 września 2010 r. w sprawie miejscowego planu zagospodarowania przestrzennego Zachodniego Pasma Pyrskiego nakazuje się ochronę jeziora, m.in. zakaz zasypywania i odprowadzania ścieków.",
+      "Jezioro stanowi jedną z nielicznych pozostałości po zespole jezior wytopiskowych na Ursynowie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zabłocki Lake, also called Staw Zabłockiego, is a 0.92 ha kettle lake in the Krasnowola area of Ursynów. It is one of the few remaining kettle lakes of the district, and a 2010 local plan requires its protection.",
+    "ludzie": [],
+    "dawne_nazwy": ["Staw Zabłockiego"],
+    "zrodla": [{"tytul": "Wikipedia: Jezioro Zabłockiego", "url": "https://pl.wikipedia.org/wiki/Jezioro_Zab%C5%82ockiego"}],
+    "pewnosc": "średnia",
+    "uwagi": "Nazwa wywodzi się od jednego z dawnych właścicieli okolicznych terenów (artykuł nie podaje imienia)."
+  },
+  {
+    "id": "stacja-metra-kabaty",
+    "nazwa": "Stacja metra Kabaty",
+    "name_en": "Kabaty metro station",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.131944,
+    "lon": 21.065,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa stacji została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983 roku.",
+      "Stacja jest przystosowana do pełnienia w razie konieczności funkcji schronu dla ludności cywilnej; służą temu m.in. grube stalowe drzwi przy każdym wejściu.",
+      "Na południe od stacji znajduje się Stacja Techniczno-Postojowa Kabaty.",
+      "Stacja ma powierzchnię 14 250 m² i kubaturę 59 600 m³."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kabaty is the first station of Warsaw's M1 metro line, at the junction of Komisji Edukacji Narodowej Avenue and Wąwozowa Street in Ursynów. Its name was set by the city council in 1983.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kabaty (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Kabaty_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku oddania stacji do ruchu."
+  }
+]

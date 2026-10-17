@@ -1,0 +1,465 @@
+[
+  {
+    "id": "aleja-wedla",
+    "nazwa": "Aleja Wedla",
+    "name_en": "Wedel Avenue",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Aleja Wedla",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2004–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja Emila Wedla została uroczyście otwarta 14 czerwca 2004 roku.",
+      "Nazwa upamiętnia Emila Wedela, cukiernika, syna Karola Wedela, założyciela słynnej fabryki słodyczy.",
+      "Tablicę upamiętniającą cukiernika w samo południe przykręcił ówczesny prezes spółki Cadbury Wedel Peter Knauer."
+    ],
+    "ciekawostki": [
+      "Aleja biegnie wzdłuż brzegu Jeziora Kamionkowskiego, a dzięki sąsiedztwu Zakładów Wedla dookoła rozciąga się zapach czekolady."
+    ],
+    "summary_en": "Aleja Wedla is an 815 m promenade along the shore of Lake Kamionkowski in Praga-Południe. It was opened on 14 June 2004 and named after the confectioner Emil Wedel, son of the founder of the Wedel chocolate factory.",
+    "ludzie": [
+      {"kto": "Emil Wedel", "rola": "cukiernik, patron alei", "wiki": null},
+      {"kto": "Karol Wedel", "rola": "założyciel słynnej fabryki słodyczy, ojciec Emila", "wiki": null},
+      {"kto": "Peter Knauer", "rola": "prezes spółki Cadbury Wedel, przykręcił tablicę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Aleja Wedla", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Wedla"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Aleja bez numeru w adresie; współrzędne nieznane."
+  },
+  {
+    "id": "apteka-przy-grochowskiej-128",
+    "nazwa": "Apteka przy Grochowskiej 128",
+    "name_en": "Pharmacy at Grochowska 128",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Grochowska 128",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Apteka powstała z inicjatywy Towarzystwa Przyjaciół Grochowa w 1937 roku.",
+      "Jej założycielem był magister Robert Żłobikowski, farmaceuta i fotograf.",
+      "Przy aptece funkcjonowało laboratorium chemiczno-farmaceutyczne, gdzie studenci farmacji mogli odbywać praktyki.",
+      "Apteka pracowała przez cały okres II wojny światowej.",
+      "W latach 50. została przejęta przez CEFRAM w ramach realizacji ustawy o nacjonalizacji aptek.",
+      "W latach 90. powróciła do rąk prywatnego przedsiębiorcy, a dziś nieprzerwanie funkcjonuje."
+    ],
+    "ciekawostki": [
+      "Najbardziej charakterystycznym elementem wyglądu apteki był neon nad obrotowymi drzwiami; dziś wisi w tym samym miejscu, choć jest inny."
+    ],
+    "summary_en": "A pharmacy at Grochowska 128, on the corner of plac Szembeka, opened in 1937 on the initiative of the Towarzystwo Przyjaciół Grochowa. It worked through the war, was nationalised in the 1950s and returned to private hands in the 1990s.",
+    "ludzie": [
+      {"kto": "Robert Żłobikowski", "rola": "założyciel apteki, farmaceuta i fotograf", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Apteka przy Grochowskiej 128", "url": "https://warszawa.fandom.com/pl/wiki/Apteka_przy_Grochowskiej_128"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "centrum-handlowe-gocław",
+    "nazwa": "Centrum Handlowe Gocław",
+    "name_en": "Gocław Shopping Centre",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Fieldorfa 41",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2010–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Centrum handlowe zostało uruchomione w 2010 roku na miejscu wyburzonych rok wcześniej hal Centrum Naukowo-Produkcyjnego Elektroniki Profesjonalnej Radwar.",
+      "Centrum ma powierzchnię ok. 43 tysięcy m2 i powierzchnię najmu 18 tysięcy m2.",
+      "Głównym sklepem centrum było Tesco, zajmujące ok. 8 tysięcy m2 powierzchni użytkowej.",
+      "Tesco zostało zamknięte w 2020 roku, a od 14 maja 2020 roku jego miejsce zajmuje sklep Kaufland."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Gocław Shopping Centre at Fieldorfa 41 opened in 2010 on the site of the Radwar electronics halls, demolished a year earlier. Its anchor Tesco store closed in 2020 and was replaced by a Kaufland on 14 May 2020.",
+    "ludzie": [],
+    "dawne_nazwy": ["Centrum Naukowo-Produkcyjne Elektroniki Profesjonalnej Radwar (hale)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Centrum Handlowe Gocław", "url": "https://warszawa.fandom.com/pl/wiki/Centrum_Handlowe_Gocław"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cmentarz-kamionkowski",
+    "nazwa": "Cmentarz Kamionkowski",
+    "name_en": "Kamionek Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Grochowska 365",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "XIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz przy kościele na Kamionku powstał w XIII wieku i jest najstarszą istniejącą nekropolią Warszawy.",
+      "Zamknięto go oficjalnie w 1887 roku, trzy lata po otwarciu cmentarza Bródnowskiego, jednak faktycznie przestano go używać dopiero na początku XX wieku.",
+      "Do tego czasu kilkadziesiąt rodzin miało prawo do grzebania swoich zmarłych w grobowcach rodzinnych.",
+      "Dziś ze starego cmentarza przetrwało tylko kilka płyt i pomników, przeważnie z lat 1868-1884.",
+      "Na prawo od wejścia znajduje się symboliczny grób Jakuba Jasińskiego, który poległ na szańcach Pragi w 1794 roku."
+    ],
+    "ciekawostki": [
+      "Przy wejściu do kościoła stoi obelisk z piaskowca przypominający o dawnym, wielonarodowościowym cmentarzu."
+    ],
+    "summary_en": "Kamionek Cemetery, behind the Church of Our Lady of Victory at Grochowska 365, is Warsaw's oldest surviving necropolis, dating from the 13th century. It was officially closed in 1887 and is now disused.",
+    "ludzie": [
+      {"kto": "Jakub Jasiński", "rola": "poległ na szańcach Pragi w 1794 roku; symboliczny grób na cmentarzu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Cmentarz Kamionkowski", "url": "https://warszawa.fandom.com/pl/wiki/Cmentarz_Kamionkowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nieczynny cmentarz."
+  },
+  {
+    "id": "dom-obroncow-12",
+    "nazwa": "Dom Obrońców 12",
+    "name_en": "Obrońców 12 house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Obrońców 12",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom wybudowany został w 1923 roku przez znanego adwokata i spekulanta Edmunda Iwaszkiewicza.",
+      "Właściciel miał dwoje dzieci: córkę Helenę i syna, który został wywieziony po powstaniu i zaginął.",
+      "Córka, Helena Iwaszkiewicz-Michalikowska, przez ponad 40 lat pozbywała się lokatorów i wyłączyła cały parter oraz piwnice spod kwaterunku.",
+      "W 1974 roku rodzina ze strony matki wprowadziła się na piętro i po jakimś czasie wyrzuciła państwa Grodzickich.",
+      "Adoptowany syn wyjechał w 1972 roku do Berlina Zachodniego i po śmierci rodziców sprzedał pół domu Holendrom."
+    ],
+    "ciekawostki": [
+      "Obecnie w piwnicach domu znajduje się Galeria Sztuki „Kontynenty”."
+    ],
+    "summary_en": "A house at Obrońców 12 in Saska Kępa, built in 1923 by the lawyer and speculator Edmund Iwaszkiewicz. Its history includes the wartime loss of a son, a long fight with wartime tenancy rules, and a gallery in the cellars today.",
+    "ludzie": [
+      {"kto": "Edmund Iwaszkiewicz", "rola": "adwokat i spekulant, wybudował dom w 1923 roku", "wiki": null},
+      {"kto": "Helena Iwaszkiewicz-Michalikowska", "rola": "córka Edmunda Iwaszkiewicza, właścicielka domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dom Obrońców 12", "url": "https://warszawa.fandom.com/pl/wiki/Dom_Obrońców_12"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Część faktów z relacji rodzinnych w artykule; daty podane wprost."
+  },
+  {
+    "id": "dom-obroncow-15",
+    "nazwa": "Dom Obrońców 15",
+    "name_en": "Obrońców 15 villa",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Obrońców 15",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szeregowa willa została wybudowana w latach 1926-1929 według projektu Włodzimierza Galla, wraz z całym kompleksem Kolonii Łaskiego.",
+      "13 czerwca 1979 roku willa wraz z całą kolonią została wpisana na listę obiektów zabytkowych.",
+      "Segment kupili zaraz po wybudowaniu państwo Roszkowscy, którzy przenieśli na Saską Kępę cały swój dobytek.",
+      "Ich córka Teresa była od czasów przedwojennych znaną i cenioną malarką oraz scenografem i mieszkała w domu przez kilkadziesiąt lat, od 1926 do 1992 roku.",
+      "W październikową noc 1992 roku zamordował ją nieujęty do dziś bandyta, który włamał się do domu."
+    ],
+    "ciekawostki": [
+      "Ponad wejściem znajduje się herb oraz data budowy „Kolonii Łaskiego”."
+    ],
+    "summary_en": "A terraced villa at Obrońców 15 in Saska Kępa, one of the Kolonia Łaskiego villas built in 1926-1929 to a design by Włodzimierz Gall. It was listed as a monument in 1979. Its long-time resident, painter and set designer Teresa Roszkowska, was murdered in her home in 1992.",
+    "ludzie": [
+      {"kto": "Włodzimierz Gall", "rola": "projektant willi (Kolonia Łaskiego)", "wiki": null},
+      {"kto": "Teresa Roszkowska", "rola": "malarka i scenograf, mieszkanka domu, zamordowana w 1992 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dom Obrońców 15", "url": "https://warszawa.fandom.com/pl/wiki/Dom_Obrońców_15"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-obroncow-3",
+    "nazwa": "Dom Obrońców 3",
+    "name_en": "Obrońców 3 house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Obrońców 3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wielorodzinny dom został wybudowany około 1937 roku według projektu Juliana Ambroziewicza (funkcjonalizm) i przebudowany około 1976 roku.",
+      "W mieszkaniu na pierwszym piętrze zamieszkali jeszcze przed wojną państwo Małaniczowie; pan domu był inżynierem.",
+      "Ich córka, Elżbieta Małanicz-Onoszko, przed kilkudziesięciu laty założyła małą, prywatną szkołę muzyczną, gdzie indywidualnie nauczała gry na fortepianie.",
+      "Szkoła nie miała siedziby, dlatego została nazwana „Latającą Akademią Pani Eli”.",
+      "Uwieńczeniem każdego roku szkolnego były koncerty uczniów w Galerii Rzeźby lub w Teatrze Stanisławowskim w Starej Pomarańczarni w Łazienkach."
+    ],
+    "ciekawostki": [
+      "Pani Małaniczowa zmarła tuż przed swymi 105. urodzinami."
+    ],
+    "summary_en": "A functionalist apartment house at Obrońców 3 in Saska Kępa, built around 1937 to a design by Julian Ambroziewicz. The Małanicz family lived here from before the war, and their daughter Elżbieta ran a private music school known as the Flying Academy of Mrs Ela.",
+    "ludzie": [
+      {"kto": "Julian Ambroziewicz", "rola": "projektant domu", "wiki": null},
+      {"kto": "Elżbieta Małanicz-Onoszko", "rola": "założycielka prywatnej szkoły muzycznej", "wiki": null},
+      {"kto": "Marek Kwiatkowski", "rola": "długoletni dyrektor Łazienek Królewskich, przyjaciel szkoły", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dom Obrońców 3", "url": "https://warszawa.fandom.com/pl/wiki/Dom_Obrońców_3"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Część faktów z relacji rodzinnych w artykule."
+  },
+  {
+    "id": "dom-obroncow-7",
+    "nazwa": "Dom Obrońców 7",
+    "name_en": "Obrońców 7 villa",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Obrońców 7",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szeregowa willa przy ul. Obrońców 7 to jedna z zabytkowych wilii Kolonii Łaskiego, wybudowanej w latach 1926-1929.",
+      "Zaraz po wybudowaniu nieruchomość kupił dla swojej żony Józef Stemler.",
+      "Rodzina Stemlerów władała domem do końca II wojny światowej; potem do każdego pomieszczenia dokwaterowano lokatorów, a w szczytowym momencie willę użytkowało 12 rodzin.",
+      "Na początku lat 80. XX wieku domem zainteresował się kuzyn Stemlerów, doktor Krzysztof Popkowski, który rozpoczął proces odzyskiwania nieruchomości.",
+      "W 1986 roku Krzysztof i Anna Popkowscy zostali wpisani do księgi wieczystej jako właściciele domu.",
+      "Remont obiektu trwał do lat 90. XX wieku."
+    ],
+    "ciekawostki": [
+      "Józef Stemler był późniejszym członkiem rządu RP na wychodźstwie w Londynie i uczestnikiem moskiewskiego „Procesu Szesnastu”."
+    ],
+    "summary_en": "A terraced villa at Obrońców 7 in Saska Kępa, part of the Kolonia Łaskiego built in 1926-1929. After the war it was split among many tenants; in 1986 Krzysztof and Anna Popkowski became its owners and restored it over the following decade.",
+    "ludzie": [
+      {"kto": "Józef Stemler", "rola": "pierwszy właściciel domu, kupił go dla żony", "wiki": null},
+      {"kto": "Krzysztof Popkowski", "rola": "lekarz, kuzyn Stemlerów, odzyskał dom", "wiki": null},
+      {"kto": "Anna Popkowska", "rola": "współwłaścicielka domu od 1986 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dom Obrońców 7", "url": "https://warszawa.fandom.com/pl/wiki/Dom_Obrońców_7"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dworek-grochowski",
+    "nazwa": "Dworek Grochowski",
+    "name_en": "Grochów Manor",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Grochowska 64",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "koniec XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałacyk wybudowano pod koniec XVIII wieku z inicjatywy ks. prymasa Michała Poniatowskiego.",
+      "W roku 1833 (po powstaniu listopadowym) dobra nabył Karol Osterloff, szwedzki przedsiębiorca, rozpoczynając polską gałąź rodu.",
+      "W 1915 roku mieszkała tu i tworzyła Pola Gojawiczyńska, a rok później budynek nabył Andrzej Wierzbicki.",
+      "W czasie rozszerzania granic Warszawy w 1916 roku Dworek znalazł się w Warszawie.",
+      "Dzięki legendzie dworek nie został rozebrany w okresie międzywojennym, a odrestaurowano go na fali uroczystości setnej rocznicy bitwy grochowskiej.",
+      "Obecnie działa tu Państwowa Szkoła Muzyczna I stopnia nr 3 im. Juliusza Zarębskiego."
+    ],
+    "ciekawostki": [
+      "Ulica, przy której stoi dworek, nazywa się Kwatery Głównej, bo według legendy była tu kwatera gen. Chłopickiego; w rzeczywistości miejsce znajdowało się zbyt blisko pola bitwy."
+    ],
+    "summary_en": "The Dworek Grochowski manor house at Grochowska 64 was built at the end of the 18th century on the initiative of Primate Michał Poniatowski. It was bought by the Swedish entrepreneur Karol Osterloff in 1833, and today houses a music school.",
+    "ludzie": [
+      {"kto": "Michał Poniatowski", "rola": "ksiądz prymas, inicjator budowy pałacyku", "wiki": null},
+      {"kto": "Karol Osterloff", "rola": "nabywca dóbr w 1833 roku, szwedzki przedsiębiorca", "wiki": null},
+      {"kto": "Pola Gojawiczyńska", "rola": "mieszkała i tworzyła w dworku w 1915 roku", "wiki": null},
+      {"kto": "Andrzej Wierzbicki", "rola": "nabywca budynku w 1916 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dworek Grochowski", "url": "https://warszawa.fandom.com/pl/wiki/Dworek_Grochowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-instytutu-weterynarii",
+    "nazwa": "Gmach Instytutu Weterynarii",
+    "name_en": "Veterinary Institute building",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Grochowska 272",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1899–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Siedzibę Instytutu, pierwszej wyższej uczelni na tym terenie, wzniesiono w latach 1899-1900 według projektu rosyjskiego architekta Władimira Pokrowskiego.",
+      "W 1918 roku Instytut przekształcił się w studium weterynaryjne przy Wydziale Lekarskim Uniwersytetu Warszawskiego, a w 1927 roku w Wydział Weterynarii UW.",
+      "Wydział przejęła w 1952 roku Szkoła Główna Gospodarstwa Wiejskiego.",
+      "W 2005 roku uczelnia całkowicie wyprowadziła się stąd na Ursynów.",
+      "W 2010 roku budynek przejęła Sinfonia Varsovia; prace modernizacyjne się opóźniają, a całość zakładano ukończyć w 2020 roku."
+    ],
+    "ciekawostki": [
+      "Po sąsiedzku znajdowało się targowisko koni i bydła, które dostarczało studentom materiału badawczego."
+    ],
+    "summary_en": "The former Veterinary Institute building at Grochowska 272, built in 1899-1900 to a design by Władimir Pokrowski, now houses the Sinfonia Varsovia orchestra. The university left in 2005 and the building was reworked after 2010.",
+    "ludzie": [
+      {"kto": "Władimir Pokrowski", "rola": "architekt budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Gmach Instytutu Weterynarii", "url": "https://warszawa.fandom.com/pl/wiki/Gmach_Instytutu_Weterynarii"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-jablonskich",
+    "nazwa": "Kamienica Jabłońskich",
+    "name_en": "Jabłoński tenement house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Łotewska 4",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wybudowana w 1949 roku przez państwa Jabłońskich według projektu Józefa Ufnalewskiego (funkcjonalizm).",
+      "Na parterze zamieszkał znany przedwojenny aktor, amant filmowy Aleksander Żabczyński wraz z żoną Marią.",
+      "Dr Władysław Popkowski (1917-2002) przez lata prowadził tu gabinet lekarski, który z czasem przejął jego syn, dr Krzysztof Popkowski (1943-1993).",
+      "Halina Popkowska, śpiewaczka operowa, mieszkała tu do 2007 roku, czyli przez 58 lat.",
+      "28 maja 2015 roku odbyło się uroczyste odsłonięcie tablicy poświęconej Aleksandrowi Żabczyńskiemu na froncie kamienicy.",
+      "Jesienią 2015 roku kamienica przeszła gruntowny remont elewacji oraz izolacji budynku."
+    ],
+    "ciekawostki": [
+      "W 2009 roku rodzina Popkowskich obchodziła jubileusz 60-lecia mieszkania pod tym samym adresem."
+    ],
+    "summary_en": "A detached tenement house at Łotewska 4 in Saska Kępa, built in 1949 to a design by Józef Ufnalewski. Actor Aleksander Żabczyński lived on the ground floor, and a plaque in his honour was unveiled on the façade on 28 May 2015.",
+    "ludzie": [
+      {"kto": "Józef Ufnalewski", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Aleksander Żabczyński", "rola": "aktor, mieszkał na parterze, tablica z 2015 roku", "wiki": null},
+      {"kto": "Maria Żabczyńska", "rola": "żona Aleksandra Żabczyńskiego", "wiki": null},
+      {"kto": "Władysław Popkowski", "rola": "lekarz ginekolog-położnik, gabinet przy Łotewskiej 4", "wiki": null},
+      {"kto": "Krzysztof Popkowski", "rola": "lekarz ginekolog-położnik, przejął gabinet po ojcu", "wiki": null},
+      {"kto": "Halina Popkowska", "rola": "śpiewaczka operowa, mieszkała w kamienicy do 2007 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Jabłońskich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Jabłońskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-leona-doleya",
+    "nazwa": "Kamienica Leona Doleya",
+    "name_en": "Leon Doley tenement house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Chodakowska 22",
+    "adres_historyczny": "Terespolska 22",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1914 roku, gdy posesję zakupili małżonkowie Leon i Antonina Doleyowie.",
+      "W 1914 roku wzniesiono oficynę wschodnią, o czym świadczy inskrypcja „L.D. +1914” na jednej ze ścian.",
+      "Na mocy aktu notarialnego z 24 kwietnia 1920 roku 50% udziałów w kamienicy zostało wniesione jako aport do spółki Zakładów Metalowo-Amunicyjnych „Obrona”.",
+      "W 1941 roku zarządca „Pocisku”, dr Konrad Klimosch, sprzedał kamienicę małżeństwu Feliksowi i Michalinie Rachmielowskim za 314 000 złotych.",
+      "Kamienica przetrwała II wojnę światową w dobrym stanie.",
+      "5 lipca 1967 roku decyzją Prezydium Rady Narodowej nieruchomość została przejęta przez Skarb Państwa na mocy dekretu Bieruta."
+    ],
+    "ciekawostki": [
+      "Kamienica nazywana jest także Kamienicą Zakładów Amunicyjnych „Pocisk” lub „kamienicą z wieżyczką”."
+    ],
+    "summary_en": "A tenement house at Chodakowska 22 (formerly Terespolska 22) on Kamionek, built in 1914 by Leon and Antonina Doley. It was owned by the Pocisk ammunition works from 1924, sold in 1941, and taken over by the State Treasury in 1967 under the Bierut decree.",
+    "ludzie": [
+      {"kto": "Leon Doley", "rola": "współwłaściciel posesji, kupił ją w 1914 roku", "wiki": null},
+      {"kto": "Antonina Doley", "rola": "współwłaścicielka posesji, kupiła udziały w 1920 roku", "wiki": null},
+      {"kto": "Konrad Klimosch", "rola": "zarządca Pocisku S.A., sprzedał kamienicę w 1941 roku", "wiki": null},
+      {"kto": "Feliks Rachmielowski", "rola": "kupił kamienicę w 1941 roku, zmarł w 1968 roku", "wiki": null},
+      {"kto": "Michalina Rachmielowska", "rola": "współwłaścicielka kamienicy, odmówiła podpisania protokołu przejęcia w 1968 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Terespolska 22"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Leona Doleya", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Leona_Doleya"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Autor artykułu zaznacza, że autorstwo projektu (Czesław Przybylski) i rok 1914 nie są pewne w każdym źródle; w tekście podane prawdopodobnie inaczej."
+  },
+  {
+    "id": "kamienica-targowa-14",
+    "nazwa": "Kamienica Targowa 14",
+    "name_en": "Targowa 14 tenement house",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Targowa 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1899–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wraz z oficynami oraz stajnią-wozownią powstała w latach 1899-1902 na terenie zakupionym dwa lata wcześniej przez Władysława Karszo-Siedlewskiego, producenta wódek.",
+      "W maju 1920 roku kamienicę sprzedano Bankowi Towarzystw Spółdzielczych, a w latach 1920-1927 z jej części wydzielono bursę dla gimnazjalistów spoza Warszawy.",
+      "W 1940 roku budynek stał się własnością Spółki Zjednoczonych Browarów Warszawskich Haberbusch i Schiele S.A.",
+      "W 1942 roku dom przeszedł w ręce barona Stanisława Ruziczka de Rosenwerth.",
+      "Po wojnie, w 1950 roku, kamienica stała się własnością skarbu państwa.",
+      "W 2010 roku kamienica została wpisana do rejestru zabytków z inicjatywy Zespołu Opiekunów Dziedzictwa Kulturowego Warszawy „ZOK”.",
+      "19 marca 2013 roku spaliło się poddasze jednej z tylnych oficyn kamienicy."
+    ],
+    "ciekawostki": [
+      "Kamienica jest unikatowym na terenie Warszawy przykładem budownictwa mieszkaniowego, z najbardziej rozbudowanym układem oficyn wokół aż czterech podwórek."
+    ],
+    "summary_en": "A tenement house with wings and courtyards at Targowa 14 in Praga-Południe, built in 1899-1902 by the vodka producer Władysław Karszo-Siedlewski. It passed to the State Treasury in 1950 and was added to the heritage register in 2010.",
+    "ludzie": [
+      {"kto": "Władysław Karszo-Siedlewski", "rola": "producent wódek, zakupił teren przed budową", "wiki": null},
+      {"kto": "Stanisław Ruziczka de Rosenwerth", "rola": "baron, właściciel od 1942 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Targowa 14", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Targowa_14"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

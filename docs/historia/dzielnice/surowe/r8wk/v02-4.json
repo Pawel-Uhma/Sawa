@@ -1,0 +1,325 @@
+[
+  {
+    "id": "zaklady-wytworcze-mebli-artystycznych-henrykow",
+    "nazwa": "Zakłady Wytwórcze Mebli Artystycznych Henryków",
+    "name_en": "Henryków Artistic Furniture Works",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Modlińska",
+    "adres_historyczny": "Modlińska i Mehoffera",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1951–2009",
+    "istnieje": false,
+    "fakty": [
+      "Przedsiębiorstwo powstało w 1951 roku i od początku funkcjonowało przy skrzyżowaniu ulic Modlińskiej i Mehoffera na Henrykowie.",
+      "Początkowo firma działała w starym budynku z szarej cegły, w którym przed wojną miała mieścić się wytwórnia izolacji korkowej Lenkiewicza, a w czasie wojny niemieckie magazyny.",
+      "Zakłady produkowały posadzki z szlachetnych gatunków drewna, które trafiły do wnętrz m.in. Belwederu, Zamku Królewskiego, Łazienek Królewskich, pałacu w Wilanowie, Kancelarii Prezydenta oraz Sejmu.",
+      "3 października 1988 roku dyrektor biura Rady Krajowej PRON Andrzej Peszka złożył w zakładach zamówienie na „okrągły stół” do negocjacji władz PRL z opozycją.",
+      "Zamówienie zrealizowano w 20 dni, a mebel kosztował 3 826 000 ówczesnych złotych.",
+      "Zabudowania zburzono w 2008 roku, a na ich terenie funkcjonuje obecnie supermarket Kaufland. W 2009 roku zakłady ogłosiły upadłość."
+    ],
+    "ciekawostki": [
+      "Stół składał się z 14 segmentów i mógł przy nim usiąść do 56 osób; obecnie stoi w Pałacu Prezydenckim i odbywają się przy nim lekcje historii dla uczniów.",
+      "Zakłady wykonały laskę marszałkową Marszałka Senatu, użytkowaną do dziś, oraz tron papieski na okazję wizyty Jana Pawła II."
+    ],
+    "summary_en": "Zakłady Wytwórcze Mebli Artystycznych Henryków was a furniture and flooring workshop founded in 1951 at the junction of Modlińska and Mehoffera streets in Henryków. It made the round table for the 1988 talks between the PRL authorities and the opposition. The buildings were demolished in 2008, and the company was declared bankrupt in 2009.",
+    "ludzie": [
+      {"kto": "Andrzej Peszka", "rola": "dyrektor biura Rady Krajowej PRON, który złożył zamówienie na okrągły stół", "wiki": null},
+      {"kto": "Anzelma Klimkowska", "rola": "rzeźbiarka, autorka projektu laski marszałkowskiej z 1993 roku", "wiki": null},
+      {"kto": "Lenkiewicz", "rola": "właściciel wytwórni izolacji korkowej przed wojną", "wiki": null}
+    ],
+    "dawne_nazwy": ["zakłady henrykowskie"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Zakłady Wytwórcze Mebli Artystycznych Henryków", "url": "https://warszawa.fandom.com/pl/wiki/Zakłady_Wytwórcze_Mebli_Artystycznych_Henryków"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje skrzyżowanie ul. Modlińskiej i ul. Mehoffera bez numeru. Dzisiejszy adres to ul. Modlińska (teren zajmuje Kaufland)."
+  },
+  {
+    "id": "aleja-becka",
+    "nazwa": "Aleja Becka",
+    "name_en": "Józef Beck Avenue",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Aleja Becka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja Józefa Becka jest częścią Trasy Siekierkowskiej na Mokotowie; biegnie od ul. Czerniakowskiej do Mostu Siekierkowskiego.",
+      "Projektowanie drogi rozpoczęto dopiero w 1982 roku, a aleję wybudowano w latach 2000-2002.",
+      "Oficjalnego otwarcia dnia 22 września 2002 roku dokonał prezydent RP Aleksander Kwaśniewski.",
+      "Decyzją Rady Miasta z 27 sierpnia 2009 roku mokotowskiemu odcinkowi trasy nadano imię Józefa Becka.",
+      "Aleja ma długość 3100 m."
+    ],
+    "ciekawostki": [
+      "Początkowo aleja nazywała się po prostu „Trasa Siekierkowska”; planowano też nadać nazwę Becka uliczce między Metropolitanem a Teatrem Wielkim."
+    ],
+    "summary_en": "Aleja Becka is a 3.1 km section of the Siekierkowska Route on Mokotów, running from Czerniakowska Street to the Siekierkowski Bridge. It was built in 2000–2002 and named after Józef Beck, interwar Polish foreign minister.",
+    "ludzie": [
+      {"kto": "Józef Beck", "rola": "patron ulicy, minister spraw zagranicznych w okresie międzywojennym", "wiki": null},
+      {"kto": "Aleksander Kwaśniewski", "rola": "prezydent RP, który dokonał oficjalnego otwarcia alei", "wiki": null}
+    ],
+    "dawne_nazwy": ["Trasa Siekierkowska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Aleja Becka", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Becka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru; współrzędne w artykule brak."
+  },
+  {
+    "id": "aleja-godziny-w",
+    "nazwa": "Aleja Godziny „W”",
+    "name_en": "Zero Hour Avenue",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Aleja Godziny „W”",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2004–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 2004 roku, w sześćdziesiątą rocznicę wybuchu powstania warszawskiego, w ramach apelu powstańców o godny wygląd kopca.",
+      "Schody składają się z 400 stopni i 40 podestów; są najdłuższymi w Warszawie.",
+      "Aleja zapewnia wejście na szczyt Kopca Powstania Warszawskiego i dojście do pomnika Polski Walczącej.",
+      "Wzdłuż alei znajdują się krzyże powstańcze.",
+      "Długość alei wynosi 210 m."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Aleja Godziny „W” on Czerniaków is a flight of stairs, 210 m long, leading to the top of the Warsaw Uprising Mound. It was built in 2004 for the 60th anniversary of the Uprising, and it has 400 steps, the longest staircase in Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Aleja Godziny „W”", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Godziny_„W”"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null. Artykuł nie podaje numeru ani adresu poza nazwą alei."
+  },
+  {
+    "id": "aleja-polski-walczacej",
+    "nazwa": "Aleja Polski Walczącej",
+    "name_en": "Fighting Poland Avenue",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Aleja Polski Walczącej",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja została zapisana w miejscowym planie zagospodarowania przestrzennego w 2000 roku jako droga główna (3KGD).",
+      "Wycinka drzew pod budowę alei rozpoczęła się w lutym 2017.",
+      "9 marca 2017 ogłoszono, że ulicę wybuduje Budimex; wartość robót budowlanych wyniesie 39,5 mln zł.",
+      "Aleja została otwarta 2 lutego 2019 roku.",
+      "3 lutego 2019 roku na ulicę skierowano pierwszą linię autobusową, nr 168.",
+      "W kwietniu 2019 roku odcinek od ul. Czerniakowskiej do ul. Melomanów, dotychczas noszący nazwę ul. Nehru, otrzymał nazwę aleja Polski Walczącej."
+    ],
+    "ciekawostki": [
+      "W alei znajduje się nietypowy buspas na pasach wewnętrznych, będący rezerwą pod przyszłą inwestycję tramwajową."
+    ],
+    "summary_en": "Aleja Polski Walczącej, also called Czerniakowska-bis, is a 1.42 km main road on Mokotów running from Czerniakowska Street to Aleja Becka. Construction began in 2017 and the road opened in February 2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["Czerniakowska-bis", "ul. Nehru (odcinek od ul. Czerniakowskiej do ul. Melomanów)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Aleja Polski Walczącej", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Polski_Walczącej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null."
+  },
+  {
+    "id": "aleja-wyscigowa",
+    "nazwa": "Aleja Wyścigowa",
+    "name_en": "Wyścigowa Avenue",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Aleja Wyścigowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała przed II wojną światową i jest widoczna już na planach z 1936 roku.",
+      "Na mapie Związku Zawodowego Pracowników Niewidomych z 1946 roku przedstawiono ją jako odchodzącą spod Wyścigów i dochodzącą w rejon Al. Lotników.",
+      "Jej nazwa pochodzi od pobliskiego Toru Wyścigów Konnych, który wyznacza południowy kraniec ulicy.",
+      "Od września 2008 roku wzdłuż alei kursuje okresowa linia autobusowa 300, zapewniająca dojazd spod stacji metra Wilanowska w dniach gonitw.",
+      "W kwietniu 2010 roku ulicą kursowała także linia Z-1, uruchomiona po wyłączeniu ruchu tramwajowego na ul. Puławskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Aleja Wyścigowa is an 880 m street on Służew in Mokotów, named after the nearby racecourse. It existed before World War II and runs from Puławska Street to Bartłomieja Street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Aleja Wyścigowa", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Wyścigowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null."
+  },
+  {
+    "id": "biurowiec-agora",
+    "nazwa": "Biurowiec Agora",
+    "name_en": "Agora Office Building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Czerska 8/10",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biurowiec na osiedlu Sielce, przy ul. Czerskiej 8/10, budowano w dwóch etapach: od 2000 do 2001 roku oraz w 2002 roku.",
+      "Autorem projektu jest pracownia JEMS Architekci; budynek zaplanowano jako biurowiec open space.",
+      "Biurowiec znalazł się w gronie najlepszych 20 budynków powstałych po 1989 r. w plebiscycie pisma „Architektura-Murator”.",
+      "W 2002 r. budynek otrzymał nagrodę za „najlepszy biurowiec wzniesiony w ciągu ostatnich 12 miesięcy”.",
+      "Budynek ma 5 kondygnacji nadziemnych, wysokość 27 m i powierzchnię całkowitą 36896 m²."
+    ],
+    "ciekawostki": [
+      "Na ostatnim piętrze znajduje się redakcja Gazety Wyborczej."
+    ],
+    "summary_en": "Agora office building at 8/10 Czerska Street in Sielce, Mokotów, was built in 2000–2002 to a design by JEMS Architekci. It has five above-ground storeys and houses the Gazeta Wyborcza and Gazeta Stołeczna newsrooms.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Biurowiec Agora", "url": "https://warszawa.fandom.com/pl/wiki/Biurowiec_Agora"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null."
+  },
+  {
+    "id": "budynek-dolna-43",
+    "nazwa": "Kamienica przy ul. Dolnej 43",
+    "name_en": "Tenement at 43 Dolna Street",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Dolna 43",
+    "adres_historyczny": "Dolna 43",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "przedwojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przedwojenny budynek mieścił masarnię „Rowiński i Ruszkiewicz”.",
+      "W trakcie powstania warszawskiego ukrywały się w nim rodziny właścicieli oraz powstańcy ze zgrupowania AK „Granat”.",
+      "Po przejęciu Mokotowa przez wojska niemieckie teren zajęli okupanci, a rodzinę wypędzono przez Okęcie do Pruszkowa.",
+      "Po wojnie Tadeusz Rowiński odzyskał zakład wędliniarski, ale 22 lipca 1950 roku kamienica została znacjonalizowana.",
+      "W 2000 roku uznano, że władze komunistyczne bezpodstawnie zawłaszczyły sobie kamienicę.",
+      "W lipcu 2014 roku pojawiły się plany otwarcia w budynku sklepu; wykupiono wtedy ponad połowę udziałów w nieruchomości."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The prewar tenement at 43 Dolna Street on Mokotów housed the Rowiński i Ruszkiewicz meat works. It sheltered families and AK Granat soldiers during the 1944 Uprising, was nationalised in 1950, and remained in a long ownership dispute.",
+    "ludzie": [
+      {"kto": "Tadeusz Rowiński", "rola": "właściciel zakładu wędliniarskiego, który po wojnie odzyskał zakład", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Budynek Dolna 43", "url": "https://warszawa.fandom.com/pl/wiki/Budynek_Dolna_43"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł mówi o planach wyburzenia (tunel pod ul. Puławską), które nie zostały zrealizowane."
+  },
+  {
+    "id": "budynek-rozana-27",
+    "nazwa": "Budynek przy ul. Różanej 27",
+    "name_en": "Building at 27 Różana Street",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Różana 27",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "lata 50. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historycznie w tym miejscu znajdowała się rozległa glinianka obejmująca obszar wokół skrzyżowania ul. Różanej z ul. Wiśniową.",
+      "Teren wyrównano i rozparcelowano na działki jeszcze w okresie międzywojennym; działka otrzymała numer hipoteczny 9647.",
+      "Obecny trzypiętrowy budynek powstał w latach 50. XX wieku i został oddany do użytku po 1955 roku.",
+      "Jako materiał posłużyła cegła rozbiórkowa z ruin Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The three-storey building at 27 Różana Street on Mokotów stands on the corner of Wiśniowa Street. It was built in the 1950s from brick salvaged from the ruins of Warsaw, on land that was once a clay pit.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Budynek Różana 27", "url": "https://warszawa.fandom.com/pl/wiki/Budynek_Różana_27"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null."
+  },
+  {
+    "id": "centrum-handlowe-land",
+    "nazwa": "Centrum Handlowe Land",
+    "name_en": "Land Shopping Centre",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Wałbrzyska 11",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1996–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Centrum handlowe powstało od września 1996 roku do sierpnia 1999 roku.",
+      "Pod centrum znajduje się dwupiętrowy parking na 460 samochodów; pierwszy poziom jest dla klientów, drugi dla pracowników i abonentów.",
+      "Powierzchnia centrum handlowego wynosi 40 tysięcy metrów kwadratowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Centrum Handlowe Land is a 40,000 m2 shopping centre at 11 Wałbrzyska Street on Mokotów, next to the Służew metro station. It was built between September 1996 and August 1999.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Centrum Handlowe Land", "url": "https://warszawa.fandom.com/pl/wiki/Centrum_Handlowe_Land"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null."
+  },
+  {
+    "id": "domek-gotycki",
+    "nazwa": "Domek Gotycki",
+    "name_en": "Gothic House",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Puławska 59",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Domek Gotycki został wzniesiony około 1780 roku jako pawilon ogrodowy w podmiejskim pałacu księżnej Izabeli z Czartoryskich Lubomirskiej.",
+      "Projekt budynku przypisuje się Szymonowi Bogumiłowi Zugowi, który od 1773 roku współpracował przy realizacji rezydencji.",
+      "W 1944 roku, podczas powstania warszawskiego, obiekt został uszkodzony.",
+      "W 1949 roku przeprowadzono jego restaurację, nadając mu nowy dach.",
+      "Od 1969 roku zegar na wieżyczce codziennie o godzinie 17:00 wygrywa „Marsz Mokotowa”, na pamiątkę godziny „W”."
+    ],
+    "ciekawostki": [
+      "Gołębnik był jednym z dwóch budynków bramnych według projektu Zuga; drugim była Glorieta Flamandzka, dziś Domek Mauretański."
+    ],
+    "summary_en": "The Gothic House at 59 Puławska Street in Mokotów is a neo-Gothic tower built around 1780 as a garden pavilion of the Lubomirska estate. It is also known as the Dovecote, and since 1969 its clock plays the Mokotów March every day at 17:00.",
+    "ludzie": [
+      {"kto": "Izabela z Czartoryskich Lubomirska", "rola": "księżna, właścicielka założenia ogrodowego", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gołębnik"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Domek Gotycki", "url": "https://warszawa.fandom.com/pl/wiki/Domek_Gotycki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek WSPÓŁRZĘDNE ma „brak”, więc lat/lon = null."
+  }
+]

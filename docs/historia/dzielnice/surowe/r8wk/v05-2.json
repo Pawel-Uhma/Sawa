@@ -1,0 +1,413 @@
+[
+  {
+    "id": "ulica-arabska",
+    "nazwa": "Ulica Arabska",
+    "name_en": "Arabska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Arabska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Arabska biegnie od ul. Afrykańskiej bez przecznic do ul. Ateńskiej.",
+      "Ulica została nazwana w 1970 roku i pochodzi od Arabii Saudyjskiej.",
+      "Ulica położona jest na Saskiej Kępie w dzielnicy Praga Południe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Arabska is a street on Saska Kępa in Praga-Południe, running from Afrykańska straight to Ateńska. It was named in 1970 after Saudi Arabia.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Arabska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Arabska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-argentynska",
+    "nazwa": "Ulica Argentyńska",
+    "name_en": "Argentyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Argentyńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Powojenna ulica na Saskiej Kępie upamiętnia południowoamerykański kraj, Argentynę.",
+      "Ulica rozpoczyna się od Saskiej i kończy na Raperswilskiej, jest równoległa do alei Stanów Zjednoczonych.",
+      "W 2011 roku przy ulicy zakończono budowę apartamentowca Sapir Saska Kępa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Argentyńska is a post-war street on Saska Kępa in Praga-Południe, named after Argentina. It runs parallel to Aleja Stanów Zjednoczonych and was completed as a residential block in 2011 nearby.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Argentyńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Argentyńska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bajonska",
+    "nazwa": "Ulica Bajońska",
+    "name_en": "Bajońska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Bajońska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach 30. XX wieku i z tego okresu pochodzi większość zabudowań wzdłuż ulicy.",
+      "Nazwa ulicy pochodzi od miejscowości Bajonna we Francji, gdzie podczas I wojny światowej sformowany został liczący około 200 żołnierzy polski oddział zwany legionem bajońskim lub „bajończykami”.",
+      "Ulica rozpoczyna swój bieg od skrzyżowania z Wersalską i przechodzi w ulicę Wąchocką pod wiaduktem alei Stanów Zjednoczonych w ciągu Trasy Łazienkowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bajońska is a street on Saska Kępa in Praga-Południe, laid out in the 1930s. Its name comes from Bayonne in France, where a Polish unit of about 200 soldiers was formed during World War I.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Bajońska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bajońska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "bajonska-6",
+    "nazwa": "Willa Bogdana Węglera przy ul. Bajońskiej 6",
+    "name_en": "Villa of Bogdan Węgler at Bajońska 6",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Bajońska 6",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa Bogdana Węglera przy Bajońskiej 6 została wybudowana przed 1939 rokiem.",
+      "Rozbudowa w latach 1970-1989 dobudowała m.in. wieżę z czerwonej cegły.",
+      "Na parterze budynku ulokowany jest warsztat samochodowy.",
+      "Budynek prezentuje styl postmodernizmu historycznego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The villa at Bajońska 6 on Saska Kępa was built before 1939 and expanded between 1970 and 1989. Its brick tower and historicist postmodern look make it the most distinctive building on the street.",
+    "ludzie": [
+      {"kto": "Bogdan Węgler", "rola": "właściciel willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Bajońska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bajońska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście w dopełniaczu: Bogdana Węglera."
+  },
+  {
+    "id": "ulica-bernenska",
+    "nazwa": "Ulica Berneńska",
+    "name_en": "Berneńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Berneńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Berneńska została nazwana od stolicy Szwajcarii, Berna.",
+      "Ulica została zaplanowana przed II wojną światową.",
+      "Zabudowa powojenna, głównie segmentami z lat 60. XX wieku ulokowanymi prostopadle do ulicy.",
+      "Przy ul. Berneńskiej zachowały się dwa przedwojenne domy: nr 2 i nr 4."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Berneńska is a street in Praga-Południe, named after Bern. It was planned before World War II and is lined mainly with 1960s segment houses set at right angles to the street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Berneńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Berneńska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-belzecka",
+    "nazwa": "Ulica Bełżecka",
+    "name_en": "Bełżecka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Bełżecka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od wsi położonej obecnie na wschodniej granicy.",
+      "W czasie II wojny światowej Bełżec najpierw wypadł na linii demarkacyjnej niemiecko-radzieckiej, gdzie tworzono obozy pracy.",
+      "Nazwa nabrała szczególnie tragicznego znaczenia w związku z umieszczeniem w Bełżcu obozu zagłady dla Żydów.",
+      "Metody zagłady tu wypracowane były stosowane w obozach Sobibór i Treblinka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bełżecka is a street in Gocławek and Grochów in Praga-Południe, named after the village of Bełżec. The name carries the memory of the Bełżec extermination camp.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Bełżecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bełżecka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-biskupia",
+    "nazwa": "Ulica Biskupia",
+    "name_en": "Biskupia Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Biskupia",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Biskupia została zaprojektowana na początku lat 30. XX wieku jako ulica Zawichocka.",
+      "W późniejszym czasie została wybudowana i nazwana Biskupią.",
+      "Ulica Biskupia biegnie wzdłuż Kanału Olszynka Grochowska.",
+      "Przy ul. Biskupiej zachowały się trzy przedwojenne budynki: nr 4, nr 38 oraz nr 42."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Biskupia is a street of over 700 metres in Gocławek, Praga-Południe. It was designed in the early 1930s as Zawichocka and later renamed Biskupia, and it runs along the Olszynka Grochowska canal.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zawichocka"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Biskupia", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Biskupia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-brukselska",
+    "nazwa": "Ulica Brukselska",
+    "name_en": "Brukselska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Brukselska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Brukselska została wytyczona jeszcze przed II wojną światową.",
+      "Nazwę zawdzięcza stolicy Belgii, Brukseli.",
+      "Ulica łączy starą Saską Kępę z nowszą częścią osiedla.",
+      "Przy ul. Brukselskiej 9 znajduje się ambasada Republiki Argentyńskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Brukselska is a street on Saska Kępa in Praga-Południe, named after Brussels. It was laid out before World War II and connects the old and new parts of the estate.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Brukselska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Brukselska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "klub-kultury-saskiej-kepy",
+    "nazwa": "Klub Kultury Saskiej Kępy",
+    "name_en": "Saska Kępa Culture Club",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Brukselska 23",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2010–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 2010-2011 w miejscu dawnej myjni i biur na rogu z ulicą Wersalską wybudowano budynek Klubu Kultury Saskiej Kępy (nr 23).",
+      "Budynek ma lekką bryłę z rampą prowadzącą na płaski dach, gdzie znajduje się kawiarnia.",
+      "Wewnątrz znajduje się 1,7 tysiąca metrów kwadratowych powierzchni użytkowej.",
+      "Koszt budowy wyniósł 7,5 mln złotych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Saska Kępa Culture Club at Brukselska 23 was built in 2010–2011 on the corner with Wersalska, in place of an old car wash and offices. It has about 1,700 square metres of usable space and a café on its roof terrace.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Brukselska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Brukselska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "baraki-brukselska-44",
+    "nazwa": "Baraki przy ul. Brukselskiej 44",
+    "name_en": "Barracks at Brukselska 44",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Brukselska 44",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "początek lat 40. XX wieku–lata 90. XX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Baraki pod numerem 44 wybudowano prawdopodobnie na początku lat 40. XX wieku.",
+      "Do 1956 roku tymczasowymi parterowymi obiektami władało Ministerstwo Bezpieczeństwa Publicznego i Milicja Obywatelska.",
+      "Po 1956 roku budynki przekazano Przedsiębiorstwu handlowemu KONSUMY.",
+      "Baraki przetrwały do lat 90. XX wieku."
+    ],
+    "ciekawostki": [
+      "Istnieją przypuszczenia, że w czasach stalinowskich mieścił się tu jeden z ubeckich aresztów."
+    ],
+    "summary_en": "Temporary barracks at Brukselska 44 on Saska Kępa were built around the early 1940s. They were used by the public security ministry and militia until 1956 and survived into the 1990s; a new house now stands on the site.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Brukselska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Brukselska"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Przypuszczenie o areszcie podano w tekście jako przypuszczenie."
+  },
+  {
+    "id": "ulica-bulgarska",
+    "nazwa": "Ulica Bułgarska",
+    "name_en": "Bułgarska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Bułgarska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Bułgarska została nazwana i wytyczona w 1963 roku.",
+      "Ulica została nazwana na cześć Bułgarii, sojusznika PRL znad Morza Czarnego.",
+      "Bułgarska łączy ze sobą ulice Lotaryńską z Argentyńską.",
+      "Zabudowana jest wyłącznie charakterystycznymi dla tego rejonu dzielnicy szeregowymi domkami jednorodzinnymi."
+    ],
+    "ciekawostki": [
+      "Bułgaria przez setki lat była okupowana przez Turcję."
+    ],
+    "summary_en": "Bułgarska is a small post-war street on Saska Kępa in Praga-Południe, named after Bulgaria, a PRL ally on the Black Sea. It was laid out in 1963 and lined with terraced single-family houses.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Bułgarska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bułgarska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-wojciecha-chrzanowskiego",
+    "nazwa": "Ulica Wojciecha Chrzanowskiego",
+    "name_en": "Wojciech Chrzanowski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Chrzanowskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Od 17 czerwca do 20 grudnia 2013 roku trwała przebudowa ulicy, w ramach której przebudowano prawie 750 metrów jezdni.",
+      "Przy ul. Chrzanowskiego znajduje się zakład energetyczny STOEN oraz MPT Grochów, który swoją działkę odsprzedał w 2013 roku prywatnemu inwestorowi.",
+      "W 2014 roku w miejscu tej działki rozpoczęły się budowy nowych osiedli mieszkaniowych.",
+      "Ulica krzyżuje się z takimi ulicami jak Mycielskiego, Przeworska, Kickiego i Siennicka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wojciech Chrzanowski Street runs through Grochów in Praga-Południe, from Wiatraczna to Podskarbińska. It was rebuilt in 2013, and new housing estates appeared on a former MPT Grochów site from 2014.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Wojciecha Chrzanowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Wojciecha_Chrzanowskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje w nawiasie: „ul. Chrzanowskiego (rejon ul. Siennickiej) 2014 – por. 2012” (nieczytelne, pominięte)."
+  },
+  {
+    "id": "ulica-cyraneczki",
+    "nazwa": "Ulica Cyraneczki",
+    "name_en": "Cyraneczki Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Cyraneczki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1953–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w ok. 1953 r.",
+      "W 2020 r. w ramach projektu z Budżetu Obywatelskiego wzdłuż ulicy ułożono nowy chodnik, a w 2021 r. przeprowadzono wymianę nawierzchni na całej ulicy.",
+      "Nazwa wzięła się od cyraneczka, średniej wielkości wędrownego ptaka wodnego.",
+      "Taki tytuł nosi również jedna z pieśni skomponowanych przez Tadeusza Sygietyńskiego, który patronuje ulice w pobliżu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Cyraneczki is a street in Grochów, Praga-Południe, running from Międzyborska to Grenadierów. It was laid out around 1953 and named after the teal, a wading bird.",
+    "ludzie": [
+      {"kto": "Tadeusz Sygietyński", "rola": "kompozytor, patron ulic w pobliżu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Cyraneczki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Cyraneczki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-czechowicka",
+    "nazwa": "Ulica Czechowicka",
+    "name_en": "Czechowicka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Czechowicka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała najpewniej w latach 30. XX wieku, biegła na granicy przedwojennej Warszawy.",
+      "Przy Czechowickiej 4 do lat 60. XX wieku znajdowała się rzeźnia końska.",
+      "W XXI wieku na Czechowickiej wybudowano dwa 5-kondygnacyjne bloki mieszkalne.",
+      "Z przedwojennej zabudowy do dziś dotrwał jedynie dom nr 2 na rogu Jordanowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Czechowicka is a street in Gocławek, Praga-Południe, running between Jordanowska and Pabianicka. It probably dates from the 1930s, and only one pre-war house, at number 2, has survived.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Czechowicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Czechowicka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "id": "ulica-christa-botewa",
+    "nazwa": "Ulica Christa Botewa",
+    "name_en": "Christo Botev street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Christa Botewa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica leży pomiędzy ulicami Światowida a Myśliborską, w samym sercu Tarchomina.",
+      "Patronem ulicy jest Christo Botew, dziewiętnastowieczny bułgarski poeta rewolucyjny.",
+      "Ulica została zaznaczona na mapie miasta z lat osiemdziesiątych, jednak zabudowano ją dopiero w pierwszym dziesięcioleciu XXI wieku osiedlami zamkniętymi.",
+      "Długość ulicy wynosi 290 m."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Christo Botev Street is a 290 m street in the middle of Tarchomin, Białołęka, between Światowida and Myśliborska streets. It was marked on city maps in the 1980s but was built up only in the first decade of the 21st century, with gated housing estates.",
+    "ludzie": [
+      {"kto": "Christo Botew", "rola": "patron ulicy, dziewiętnastowieczny bułgarski poeta rewolucyjny", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Botewa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Botewa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Numer z nagłówka: 4; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-braci-zawadzkich",
+    "nazwa": "Ulica Braci Zawadzkich",
+    "name_en": "Zawadzcy Brothers street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Braci Zawadzkich",
+    "adres_historyczny": "Podróżnicza",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica do 2015 roku była częścią ulicy Podróżniczej, powstałej w latach 20. XX wieku.",
+      "Została wydzielona 12 lutego 2015 roku, gdy rada miasta uchwałą nr 95 zmieniła nazwę odcinka ul. Podróżniczej od ul. Modlińskiej do ul. Marchołta na ulicę Braci Zawadzkich.",
+      "Ulica została nazwana na cześć braci Wojciecha i Antoniego Zawadzkich.",
+      "Wojciech Zawadzki był współzałożycielem Koła Przyjaciół Wiśniewa, organizatorem miejscowej biblioteki powszechnej i redaktorem lokalnego miesięcznika „Kronika”.",
+      "Antoni Zawadzki wraz z bratem założył Koło Młodych Polskiej Macierzy Szkolnej, a w trakcie wojny zorganizował wraz z bratem jedne z pierwszych w okupowanym kraju tajne gimnazjalne komplety nauczania."
+    ],
+    "ciekawostki": [
+      "Przy ulicy znajduje się Park Wiśniewo, który był dawniej częścią majątku Srebrna Góra."
+    ],
+    "summary_en": "Braci Zawadzkich street is a 250 m road in the Henryków area of Białołęka, named after the brothers Wojciech and Antoni Zawadzki, teachers and organisers of wartime underground education. It was separated from Podróżnicza street in 2015.",
+    "ludzie": [
+      {"kto": "Wojciech Zawadzki", "rola": "współzałożyciel Koła Przyjaciół Wiśniewa, redaktor „Kroniki”", "wiki": null},
+      {"kto": "Antoni Zawadzki", "rola": "nauczyciel, organizator tajnych kompletów nauczania w czasie wojny", "wiki": null}
+    ],
+    "dawne_nazwy": ["Podróżnicza (odcinek)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Braci Zawadzkich", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Braci_Zawadzkich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: brak (–)."
+  },
+  {
+    "id": "ulica-arcangelo-corellego",
+    "nazwa": "Ulica Arcangelo Corellego",
+    "name_en": "Arcangelo Corelli street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Arcangelo Corellego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2017–2019",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 2017-2019 w miejscu dawnych pól uprawnych i nieużytków, podczas budowy osiedla budynków wielorodzinnych Zielona Dolina.",
+      "Przy ulicy znajduje się 11 bloków osiedla.",
+      "Patronem ulicy jest Arcangelo Corelli, włoski kompozytor i skrzypek.",
+      "Nazwa ulicy została nadana 8 lutego 2018 roku zgodnie z „operowym” kluczem nazewniczym."
+    ],
+    "ciekawostki": [
+      "Operowy klucz nazewniczy obejmuje też ulice Verdiego, Monteverdiego, Pavarottiego, Pucciniego, Rossiniego, Belliniego, Scarlattiego i Vivaldiego."
+    ],
+    "summary_en": "Arcangelo Corelli Street is a closed-in housing street on the Augustówek estate in Kobiałka, Białołęka. Built in 2017-2019 on former fields, it is named after the Italian composer and violinist under an opera-themed naming scheme.",
+    "ludzie": [
+      {"kto": "Arcangelo Corelli", "rola": "patron ulicy, włoski kompozytor i skrzypek", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Corellego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Corellego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (1-18) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-druciana",
+    "nazwa": "Ulica Druciana",
+    "name_en": "Druciana street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Druciana",
+    "adres_historyczny": "Grabowa",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed II wojną światową–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica istniała już przed wojną jako jedna z dróg wiejskich pod nazwą „Grabowa”.",
+      "Ulica została przyłączona do miasta w 1951 roku i, aby nie dublować ul. Grabowej na Mokotowie, przemianowano ją na „Drucianą”.",
+      "Na przełomie lat 70. i 80. XX wieku zlikwidowano niemal całą ulicę (300 z 450 metrów) w związku z przeznaczeniem obszaru pod zabudowę przemysłową.",
+      "Około 2008 roku przebieg ulicy otrzymał nawierzchnię jako fragment drogi dojazdowej do nowej myjni samochodowej, a w 2017 roku przy zachodniej stronie ulicy powstał parking.",
+      "Obecnie jedyną pozostałością dawnej zabudowy ulicy jest opuszczony budynek o adresie Druciana 7."
+    ],
+    "ciekawostki": [
+      "Drugim budynkiem o adresie Druciana, pod numerem 7B, jest wspomniana myjnia."
+    ],
+    "summary_en": "Druciana is a short remnant street in the Piekiełko area of Żerań, Białołęka. Once called Grabowa, it was cut down to about 40 metres in the 1970s and 1980s, and only a derelict building at No. 7 survives from its old development.",
+    "ludzie": [],
+    "dawne_nazwy": ["Grabowa"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Druciana", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Druciana"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Numer z nagłówka: 7; de iure 110 m, de facto 40 m (z artykułu)."
+  },
+  {
+    "id": "ulica-aleksandra-fleminga",
+    "nazwa": "Ulica Aleksandra Fleminga",
+    "name_en": "Aleksander Fleming street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Aleksandra Fleminga",
+    "adres_historyczny": "Józefa Poniatowskiego",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała najprawdopodobniej w XIX wieku wraz z sąsiednimi zakładami Ludwik Spiess i Syn, by połączyć je z sąsiednim Wiśniewem.",
+      "Początkowo ulica nazywała się Józefa Poniatowskiego.",
+      "Została włączona w granice Warszawy w 1951 roku, a następnie nadano jej nazwę Lotna.",
+      "Współczesnego patrona, Aleksandra Fleminga (1881-1955), bakteriologa, lekarza, laureata Nagrody Nobla w dziedzinie fizjologii i medycyny, ulica uzyskała 16 maja 1963 roku.",
+      "Pod adresem ul. Fleminga 2 znajdują się Tarchomińskie Zakłady Farmaceutyczne Polfa."
+    ],
+    "ciekawostki": [
+      "Na rogu ul. Pułaskiego stoi krzyż przydrożny (kapliczka)."
+    ],
+    "summary_en": "Aleksander Fleming Street runs for about 1,200 m from Ekspresowa to Sąsiedzka in Białołęka. It was built in the 19th century to link the Spiess factories with Wiśniew, was known as Józefa Poniatowskiego and Lotna, and took its present name in 1963.",
+    "ludzie": [
+      {"kto": "Aleksander Fleming", "rola": "patron ulicy, bakteriolog, laureat Nagrody Nobla", "wiki": null}
+    ],
+    "dawne_nazwy": ["Józefa Poniatowskiego", "Lotna"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Fleminga", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Fleminga"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: 2-69. Tekst pisze imię patrona jako Aleksander (w tytule Aleksandra)."
+  },
+  {
+    "id": "ulica-geometryczna",
+    "nazwa": "Ulica Geometryczna",
+    "name_en": "Geometryczna street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Geometryczna",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W miejscu ulicy biegła dawniej droga narolna dawnej wsi Lewandów.",
+      "W 2017 roku zbudowano 220-metrowy odcinek ulicy od ul. Geodezyjnej do ul. Kartograficznej, wraz z odwodnieniem jezdni, chodnikiem i oświetleniem.",
+      "Pod koniec 2018 roku zbudowano drugi odcinek, od ul. Kartograficznej do planowanej ul. Siecznej (ok. 230 m).",
+      "Nazwa ulicy została nadana 16 września 2004 roku zgodnie z obowiązującym w okolicy geometrycznym kluczem nazewniczym.",
+      "Do ulicy nie są przypisane adresy."
+    ],
+    "ciekawostki": [
+      "Docelowa długość ulicy ma wynosić 800 m."
+    ],
+    "summary_en": "Geometryczna is a street in the Lewandów area of Białołęka, built in stages in 2017-2018 between Geodezyjna and the planned Sieczna street. It was named in 2004 under the local geometry-themed naming scheme.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Geometryczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Geometryczna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (5-72) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-stanislawa-jagmina",
+    "nazwa": "Ulica Stanisława Jagmina",
+    "name_en": "Stanisław Jagmin street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Stanisława Jagmina",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rejon ulicy Jagmina został włączony do Warszawy wraz z całą Białołęką w 1951 roku, wówczas nie było tu jeszcze żadnych ulic oprócz Ceramicznej.",
+      "Ulica pojawia się na planach dopiero w latach 70. XX wieku.",
+      "Patronem ulicy jest Stanisław Jagmin, polski rzeźbiarz, ceramik, założyciel fabryki ceramiki w Nieborowie i projektant ceramiki dla fabryki w Ćmielowie.",
+      "Ulica nazywa się Jagmina, ponieważ Stanisław Jagmin mieszkał w tej okolicy i miał tu swoją pracownię.",
+      "Przy ulicy znajduje się Przedszkole Prywatne Plastuś (ul. Jagmina 16)."
+    ],
+    "ciekawostki": [
+      "Ulica została zabudowana nietypowo jak na okolicę, domami i willami."
+    ],
+    "summary_en": "Stanisław Jagmin Street is a 200 m street in eastern Tarchomin, Białołęka, between Milenijna and Kaflowa streets. It is named after the sculptor and ceramicist Stanisław Jagmin, who had his studio in the area.",
+    "ludzie": [
+      {"kto": "Stanisław Jagmin", "rola": "patron ulicy, rzeźbiarz i ceramik, miał tu pracownię", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Jagmina", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Jagmina"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (1-23) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-jasiniec",
+    "nazwa": "Ulica Jasiniec",
+    "name_en": "Jasiniec street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Jasiniec",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała ok. 2005 roku wraz z budową osiedla domów jednorodzinnych.",
+      "Nazwa ulicy została nadana 9 grudnia 2005 roku.",
+      "Ulica biegnie od Rowu z Lewandowa do ul. Siecznej, przecinając ul. Kartograficzną.",
+      "Ulica nie krzyżuje się z ul. Geodezyjną, znajdującą się po drugiej stronie rowu, w związku z brakiem przeprawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Jasiniec is a 650 m street in the Lewandów area of Białołęka. It was built around 2005 alongside a housing estate of detached houses and runs from the Lewandów ditch to Sieczna street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Jasiniec", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Jasiniec"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (1-83) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-kartograficzna",
+    "nazwa": "Ulica Kartograficzna",
+    "name_en": "Kartograficzna street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Kartograficzna",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2014–2016",
+    "istnieje": true,
+    "fakty": [
+      "Ulica biegnie od ul. Głębockiej w kierunku granicy miasta, krzyżując się z ulicami Geometryczną, Jasiniec i Konik Polny, i urywa się ok. 130 metrów przed granicą miasta.",
+      "Nazwa ulicy została nadana 16 września 2004 roku i nawiązuje do kartografii, zgodnie z kluczem pobliskich ulic Geodezyjnej i Geometrycznej.",
+      "Pierwszy, ok. 120-metrowy odcinek ulicy powstał w rejonie ul. Jasiniec jako droga wewnętrzna budowanego osiedla.",
+      "Kolejny, 150-metrowy odcinek został zbudowany na początku 2014 roku jako dojazd do nowej szkoły podstawowej nr 356.",
+      "Odcinek do ul. Jasiniec był ostatecznie gotowy w kwietniu 2015 roku.",
+      "W 2016 roku oddano do użytku ostatni odcinek ulicy."
+    ],
+    "ciekawostki": [
+      "Przed budową ulicy mieszkańcy domów przy Trasie Toruńskiej musieli jechać 4 kilometry ul. Jasiniec, Lewandów i Głębocką."
+    ],
+    "summary_en": "Kartograficzna is a street in the Grodzisk area of Białołęka, running from Głębocka towards the city boundary. It was built in sections between 2014 and 2016, shortening the route to Trasa Toruńska to about 1.5 km.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Kartograficzna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kartograficzna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (6-88) pominięty; w tekście szkoła podstawowa nr 356 z adresem od ul. Głębockiej."
+  }
+]

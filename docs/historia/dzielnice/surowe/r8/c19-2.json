@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ulica-baletowa",
+    "nazwa": "Ulica Baletowa",
+    "name_en": "Baletowa Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Baletowa",
+    "adres_historyczny": null,
+    "lat": 52.127222222,
+    "lon": 20.991944444,
+    "lokalizacja": "przyblizona",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana w 1960 roku decyzją Przewodniczącego Prezydium Rady Narodowej m.st. Warszawy.",
+      "Przebieg drogi w miejscu późniejszej ulicy zaznaczony został na mapach z 1911 roku.",
+      "Długość ulicy wynosi około 3,05 km.",
+      "Na swoim biegu przecina linie kolejowe nr 8 i nr 937, na których zlokalizowano przystanek Warszawa Dawidy.",
+      "Przy ulicy Baletowej znajdują się m.in. pod numerem 14 wybudowany w 1998 roku, uhonorowany Nagrodą Roku SARP biurowiec Arcon Industrial Service Corporation projektu Stefana Kuryłowicza, Pawła Grodzickiego i Jacka Syropolskiego."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od baletu, podobnie jak duża część ulic w tej części miasta odchodzących na zachód od Puławskiej, których nazwy pochodzą od tańców."
+    ],
+    "summary_en": "A street in Ursynów about 3.05 km long, running from ul. Puławska to the city boundary. It was named in 1960 after the ballet, and its route appears on maps from 1911.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "projektant biurowca Arcon przy ul. Baletowej 14", "wiki": null},
+      {"kto": "Paweł Grodzicki", "rola": "projektant biurowca Arcon przy ul. Baletowej 14", "wiki": null},
+      {"kto": "Jacek Syropolski", "rola": "projektant biurowca Arcon przy ul. Baletowej 14", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Baletowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Baletowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-belgradzka",
+    "nazwa": "Ulica Belgradzka",
+    "name_en": "Belgradzka Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Belgradzka",
+    "adres_historyczny": null,
+    "lat": 52.14,
+    "lon": 21.058333333,
+    "lokalizacja": "przyblizona",
+    "okres": "1978–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana w 1978 roku decyzją Rady Narodowej m.st. Warszawy dla odcinka pomiędzy ulicami Rosoła i Pileckiego.",
+      "Nazwa pochodzi od miasta Belgrad, ówczesnej stolicy Jugosławii.",
+      "W 1990 roku Rada Dzielnicy Mokotów przedłużyła oficjalnie ulicę o odcinek od ulicy Rosoła do Nowoursynowskiej.",
+      "W 2018 powstał jedynie mierzący około 150 metrów długości fragment tego projektowanego odcinka, stanowiący dojazd do ośrodka dla niepełnosprawnych.",
+      "Faktyczna długość ulicy wynosi około 1,6 km."
+    ],
+    "ciekawostki": [
+      "Ulica Belgradzka łączy park im. Cichociemnych Spadochroniarzy AK z parkiem Natolińskim. Wzdłuż ulicy zlokalizowane są kościół Ofiarowania Pańskiego w Warszawie, Galeria Natolin i stacja linii M1 warszawskiego metra Natolin."
+    ],
+    "summary_en": "A street in Ursynów, about 1.6 km long, named in 1978 after the Yugoslav capital Belgrade. It was officially extended to Nowoursynowska in 1990.",
+    "ludzie": [],
+    "dawne_nazwy": ["Welwetowa (nazwa na części map projektowanego odcinka)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Belgradzka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Belgradzka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-dereniowa",
+    "nazwa": "Ulica Dereniowa",
+    "name_en": "Dereniowa Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Dereniowa",
+    "adres_historyczny": null,
+    "lat": 52.1478,
+    "lon": 21.0422,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od rodzaju krzewu dereń i została nadana uchwałą z dnia 5 maja 1960.",
+      "Współcześnie ulica ma długość niecałych 1300 metrów i wraz z ul. Stryjeńskich tworzy jedną z głównych południkowych arterii komunikacyjnych dzielnicy.",
+      "Przed wybudowaniem al. KEN ulica Dereniowa wraz z ul. Stryjeńskich stanowiła główny ciąg komunikacyjny łączący Ursynów z pozostałymi częściami Warszawy.",
+      "Po oddaniu do użytku al. KEN znaczenie tej arterii zmalało."
+    ],
+    "ciekawostki": [
+      "Nazwa prawdopodobnie nie była realnie umotywowana, podobnie jak w przypadku większości spośród kilkuset przyrodniczych nazw ulic w Warszawie."
+    ],
+    "summary_en": "A street of just under 1300 m in Ursynów, named in 1960 after the dogwood shrub. Before al. KEN was built it was one of the main routes linking Ursynów with the rest of Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dereniowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dereniowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ulica-dolina-sluzewiecka",
+    "nazwa": "Ulica Dolina Służewiecka",
+    "name_en": "Dolina Służewiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Dolina Służewiecka",
+    "adres_historyczny": null,
+    "lat": 52.167361111,
+    "lon": 21.033833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1978–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projektowanej arterii nadano nazwę ulica Dolina Służewiecka uchwałą Rady Narodowej m.st. Warszawy z dnia 31 stycznia 1969.",
+      "Ulica została wytyczona w drugiej połowie lat 70. XX wieku przez teren dawnej wsi Służew.",
+      "Ulica została otwarta dla ruchu w sierpniu 1978.",
+      "19 listopada 1978 zaczęła obsługiwać komunikację autobusową na odcinku pomiędzy alejami Komisji Edukacji Narodowej i Wilanowską.",
+      "W lutym 1983 oddany do użytku został fragment ulicy Wincentego Rzymowskiego stanowiący przedłużenie ulicy Dolina Służewiecka na zachód.",
+      "W styczniu 2022 wyznaczono na niej buspasy w obu kierunkach, na odcinku od ul. Nowoursynowskiej do al. Wilanowskiej."
+    ],
+    "ciekawostki": [
+      "W trakcie budowy arterii wyburzona została część zabytkowej zabudowy wsi Służew znajdująca się po zachodniej stronie ulicy Fosa."
+    ],
+    "summary_en": "A street in Ursynów laid out in the late 1970s across the former village of Służew and opened in August 1978. Bus lanes were marked on it in January 2022.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dolina Służewiecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dolina_S%C5%82u%C5%BCewiecka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; artykuł podaje dzielnice Mokotów i Ursynów, nagłówek Ursynów."
+  }
+]

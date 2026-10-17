@@ -1,0 +1,115 @@
+[
+  {
+    "id": "jadwisin",
+    "nazwa": "Jadwisin",
+    "name_en": "Jadwisin",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.194773,
+    "lon": 20.967119,
+    "lokalizacja": "przyblizona",
+    "okres": "początek lat 60. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle mieszkaniowe na terenie Jadwisina wybudowano na początku lat 60. XX wieku; nosiło wówczas nazwę „Okęcie-Pola”.",
+      "Autorką projektu osiedla była Barbara Brukalska.",
+      "Pierwotnie osiedle projektu Brukalskiej wzniesiono po 1962 w kwartale al. Krakowska / ul. 1 Sierpnia / ul. Sulmierzycka / ul. Lechicka.",
+      "Nazwę Jadwisin nadała później rada osiedla, mimo że nie ma ona żadnego umocowania w historii obszaru."
+    ],
+    "ciekawostki": [
+      "Osiedle bywa mylone z drugą inwestycją Warszawskiej Spółdzielni Mieszkaniowej „Okęcie” autorstwa Jana Zdanowicza i Jerzego Baumillera, zrealizowaną w latach 1958–63 między ul. Hynka i 17 Stycznia."
+    ],
+    "summary_en": "Jadwisin is a housing estate in Włochy, built in the early 1960s as \"Okęcie-Pola\" to a design by Barbara Brukalska. The name Jadwisin was given later by the estate council.",
+    "ludzie": [
+      {"kto": "Barbara Brukalska", "rola": "autorka projektu osiedla „Okęcie-Pola”", "wiki": null},
+      {"kto": "Jan Zdanowicz", "rola": "współautor osiedla „Okęcie” (1958–63)", "wiki": null},
+      {"kto": "Jerzy Baumiller", "rola": "współautor osiedla „Okęcie” (1958–63)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Okęcie-Pola"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Jadwisin (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Jadwisin_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w przypisie cytuje „Życie WSM” 9/1962 jako potwierdzenie autorstwa Brukalskiej."
+  },
+  {
+    "id": "katastrofa-lotnicza-okecie-1980",
+    "nazwa": "Katastrofa lotnicza na Okęciu (1980)",
+    "name_en": "1980 Okęcie air crash (Ił-62 Mikołaj Kopernik)",
+    "typ": "zdarzenie",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.18476,
+    "lon": 20.949758,
+    "lokalizacja": "dokladna",
+    "okres": "14 marca 1980",
+    "istnieje": false,
+    "fakty": [
+      "14 marca 1980 roku o godzinie 11:15 w pobliżu lotniska Okęcie rozbił się lecący z Nowego Jorku samolot LOT Ił-62 „Mikołaj Kopernik”.",
+      "Zginęło 87 osób (77 pasażerów i 10 członków załogi), wszyscy na pokładzie.",
+      "Samolot uderzył w pokrytą lodem fosę okalającą fort „Okęcie” Twierdzy Warszawa.",
+      "Po katastrofie powołano komisję, której przewodniczącym został wicepremier Tadeusz Wrzaszczyk.",
+      "Prezydium Rady Narodowej miasta Warszawy ogłosiło żałobę w stolicy w dniach 15 i 16 marca 1980 roku.",
+      "W 1991 roku imieniem kapitana Pawła Lipowczana nazwano ulicę na warszawskim Okęciu (dawniej Rozwojowa przy kinie Lotnik), przecznicę al. Krakowskiej.",
+      "W 2017 roku u zbiegu ulic Pawła Lipowczana i Materii odsłonięto pomnik załogi samolotu."
+    ],
+    "ciekawostki": [
+      "W katastrofie zginęli m.in. polska piosenkarka Anna Jantar oraz 22 członków reprezentacji Stanów Zjednoczonych w boksie amatorskim."
+    ],
+    "summary_en": "On 14 March 1980 a LOT Ił-62 \"Mikołaj Kopernik\" flying from New York crashed near Okęcie airport, killing all 87 people on board. The engine turbine failure was later attributed to a material and manufacturing defect in the shaft.",
+    "ludzie": [
+      {"kto": "Paweł Lipowczan", "rola": "kapitan samolotu", "wiki": null},
+      {"kto": "Tadeusz Łochocki", "rola": "II pilot", "wiki": null},
+      {"kto": "Tomasz Smolicz", "rola": "kapitan, który przyleciał samolotem do Nowego Jorku 13 marca 1980", "wiki": null},
+      {"kto": "Anna Jantar", "rola": "piosenkarka, pasażerka (ofiara katastrofy)", "wiki": null},
+      {"kto": "Tadeusz Wrzaszczyk", "rola": "wicepremier, przewodniczący komisji badającej katastrofę", "wiki": null}
+    ],
+    "dawne_nazwy": ["Rozwojowa (ulica, przed 1991)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Katastrofa lotnicza na Okęciu (1980)", "url": "https://pl.wikipedia.org/wiki/Katastrofa_lotnicza_na_Ok%C4%99ciu_%281980%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord zdarzenia; „istnieje” ustawione na false, bo to jednorazowe zdarzenie. Artykuł podaje też przyczyny i oświadczenia, które zostały pominięte jako spór między stronami."
+  },
+  {
+    "id": "katastrofa-lotnicza-warszawa-1962",
+    "nazwa": "Katastrofa lotnicza w Warszawie (1962)",
+    "name_en": "1962 Warsaw air crash (Vickers Viscount SP-LVB)",
+    "typ": "zdarzenie",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.145,
+    "lon": 20.98472222,
+    "lokalizacja": "przyblizona",
+    "okres": "19 grudnia 1962",
+    "istnieje": false,
+    "fakty": [
+      "19 grudnia 1962 roku w pobliżu lotniska Okęcie rozbił się samolot PLL LOT Vickers Viscount 804 o rejestracji SP-LVB; zginęło 33 pasażerów i członków załogi.",
+      "Samolot wykonywał powrotny lot z Brukseli do Warszawy z międzylądowaniem w Berlinie, skąd wystartował o 17:55.",
+      "Podczas podejścia na pas 33, o godzinie 19:30, załoga otrzymała pozwolenie na lądowanie; 46 sekund później samolot rozbił się i doszczętnie spłonął, 1335 metrów od progu pasa 33.",
+      "Samolot Vickers Viscount 804 został kupiony od British United Airlines, a ten egzemplarz do dnia katastrofy wylatał w LOT zaledwie 84 godziny.",
+      "Raport komisji badającej wypadek nie został upubliczniony ani odnaleziony w archiwach."
+    ],
+    "ciekawostki": [
+      "Wśród ofiar był Fryderyk Bluemke, polski inżynier i konstruktor silników dwusuwowych, m.in. silnika S-31 do samochodu Syrena."
+    ],
+    "summary_en": "On 19 December 1962 a LOT Vickers Viscount crashed while landing at Okęcie from Brussels via Berlin, killing 33 people. The official report was never published.",
+    "ludzie": [
+      {"kto": "Fryderyk Bluemke", "rola": "polski inżynier, konstruktor silników dwusuwowych (ofiara katastrofy)", "wiki": null},
+      {"kto": "Aleksander Jarzębski", "rola": "polski kompozytor i pedagog, dyrektor Liceum Muzycznego w Warszawie (ofiara katastrofy)", "wiki": null},
+      {"kto": "Marek Kwiek", "rola": "profesor Uniwersytetu Poznańskiego i poseł na Sejm (ofiara katastrofy)", "wiki": null},
+      {"kto": "Marcin Szeligiewicz", "rola": "polski pedagog i działacz kulturalny, kompozytor, pianista (ofiara katastrofy)", "wiki": null},
+      {"kto": "M. Rzepecki", "rola": "kapitan, dowódca samolotu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Katastrofa lotnicza w Warszawie (1962)", "url": "https://pl.wikipedia.org/wiki/Katastrofa_lotnicza_w_Warszawie_%281962%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord zdarzenia; „istnieje” false. Oficjalne przyczyny i ustalenia pominięto, bo to sporne ustalenia komisji i analiz, nie fakty o miejscu. Współrzędne z nagłówka."
+  }
+]

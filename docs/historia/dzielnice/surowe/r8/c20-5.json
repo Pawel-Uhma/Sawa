@@ -1,0 +1,198 @@
+[
+  {
+    "id": "sosna-falenicka",
+    "nazwa": "Sosna Falenicka",
+    "name_en": "Falenica Pine",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Patriotów (przy wjeździe z Józefowa)",
+    "adres_historyczny": null,
+    "lat": 52.15537,
+    "lon": 21.21791,
+    "lokalizacja": "dokladna",
+    "okres": "szac. ok. 50 lat w 2018 – dziś (pomnik przyrody od 2021)",
+    "istnieje": true,
+    "fakty": [
+      "W 2018 roku sosnę, szacowaną wówczas na ok. 50 lat, miano wyciąć ze względu na plany modernizacji linii kolejowej nr 7 i budowę przejścia podziemnego.",
+      "Protesty aktywistów, w tym radnych, zapoczątkowało Stowarzyszenie Razem Dla Wawra; włączyło się Miasto Jest Nasze i inne osoby.",
+      "Regionalna Dyrekcja Ochrony Środowiska w Warszawie początkowo uznała, że stan drzewa nie pozwala na objęcie go ochroną; po odwołaniu miasta Generalny Dyrektor Ochrony Środowiska uchylił to postanowienie.",
+      "Rada m.st. Warszawy ustanowiła pomnik przyrody 18 listopada 2021 roku, ze skutkiem od 15 grudnia 2021 roku.",
+      "Rada osiedla Falenica zgłosiła drzewo do konkursu Drzewo Roku (edycja 2020), w którym sosna zajęła drugie miejsce.",
+      "W kwietniu 2022 roku okiść spowodowała złamanie części korony."
+    ],
+    "ciekawostki": [
+      "Pień sosny pochyla się nad jezdnią, tworząc jednostronny łuk, dlatego nazywana jest metaforycznie bramą miasta lub rogatką wawerską."
+    ],
+    "summary_en": "A Scots pine at the entrance to Falenica from Józefów, nicknamed the gate of Warsaw. It was almost cut down in 2018 for a pedestrian underpass and was granted natural monument status in 2021 after local protests.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Sosna Falenicka", "url": "https://pl.wikipedia.org/wiki/Sosna_Falenicka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka; adres przybliżony z treści artykułu (skrzyżowanie z ul. Świtezianki i Ochoczą)."
+  },
+  {
+    "id": "stara-wisla-lacha",
+    "nazwa": "Stara Wisła (łacha wiślana w Wawrze)",
+    "name_en": "Stara Wisła (Vistula oxbow in Wawer)",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1956,
+    "lon": 21.1169,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek (na planie Wisły z 1892) – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na planie Wisły ukazującym stan jej koryta w 1892 roku, kilka lat po rozpoczęciu regulacji rzeki, odnoga odpowiadająca współczesnej Starej Wiśle łączy się z Wisłą w trzecim miejscu, rozbijając Kępę Wieloryb na dwie wyspy.",
+      "Na rosyjskiej mapie Wisły z lat 1875–77 w tym rejonie naniesiona jest tylko jedna długa wyspa.",
+      "Stara Wisła ma około 4,3 km długości (w innym miejscu tekstu: ok. 3 km); początek przy ul. Skalnicowej, koniec przy ul. Kadetów.",
+      "Do łachy uchodzą Rów Miedzeszyński i Kanał Nowe Ujście, na wysokości osiedla Zbytki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stara Wisła is an old Vistula channel in Wawer, separated from the river by Wieloryb Islet. It appears as a separate branch on the 1892 river plan after the regulation of the Vistula began.",
+    "ludzie": [],
+    "dawne_nazwy": ["Dawne zakole Wilanówki (nazwa też dla łachy po drugiej stronie Wisły)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stara Wisła (łacha wiślana w Wawrze)", "url": "https://pl.wikipedia.org/wiki/Stara_Wis%C5%82a_%28%C5%82acha_wi%C5%9Blana_w_Wawrze%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje długość 4,3 km i ok. 3 km."
+  },
+  {
+    "id": "synagoga-w-falenicy",
+    "nazwa": "Synagoga w Falenicy",
+    "name_en": "Synagogue in Falenica",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Bambusowa 9",
+    "adres_historyczny": "ul. Nowa",
+    "lat": 52.16369,
+    "lon": 21.21064,
+    "lokalizacja": "dokladna",
+    "okres": "lata 30. XX wieku – dziś (nieczynna)",
+    "istnieje": true,
+    "fakty": [
+      "Synagogę zbudowano w latach 30. XX wieku przy ul. Nowej; obecnie stoi przy ul. Bambusowej 9.",
+      "Ortodoksyjni Żydzi faleniccy krytykowali nowoczesny, modernistyczny wygląd synagogi.",
+      "Podczas II wojny światowej Niemcy zdewastowali synagogę i utworzyli w tej części miejscowości getto dla ludności żydowskiej Falenicy.",
+      "Po zakończeniu wojny budynek przebudowano na dom mieszkalny, m.in. nadbudowując go o jedno piętro.",
+      "Na parterze zachowały się półokrągle zakończone okna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former synagogue in Falenica, built in the 1930s in a modernist style. It was damaged during the occupation, when a ghetto was set up nearby, and after the war it was converted into a residential house.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Nowa (adres przy budowie w latach 30.)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Synagoga w Falenicy", "url": "https://pl.wikipedia.org/wiki/Synagoga_w_Falenicy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o Falenicy podaje rok 1938; ten artykuł mówi o latach 30. XX wieku."
+  },
+  {
+    "id": "ulica-bronislawa-czecha",
+    "nazwa": "Ulica Bronisława Czecha",
+    "name_en": "Bronisław Czech Street",
+    "typ": "ulica",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Bronisława Czecha",
+    "adres_historyczny": "ul. Sportowa",
+    "lat": 52.22483,
+    "lon": 21.19206,
+    "lokalizacja": "przyblizona",
+    "okres": "1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy, wcześniej nazywanej ulicą Sportową, nadano uchwałą Rady Narodowej m.st. Warszawy z dnia 18 maja 1957 roku.",
+      "W czasach Polski Ludowej, do reformy sieci drogowej z grudnia 1985 roku, ulica znajdowała się w ciągu drogi państwowej nr 13 oraz dróg międzynarodowych E8 i E81.",
+      "Od 14 lutego 1986 r. do 20 grudnia 2021 r. ulica była fragmentem drogi krajowej nr 2 oraz międzynarodowej drogi E30.",
+      "Obecnie, po zmianie przebiegu miejskiego odcinka drogi nr 2, trasa ma kategorię drogi wojewódzkiej jako część DW 628.",
+      "Ulica jest jednym z trzech połączeń Wesołej z resztą Warszawy (obok ulic Korkowej i Cyrulików)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A dual-carriageway street in Wawer, named after Bronisław Czech in 1957 (earlier ul. Sportowa). It was part of national road 2 and the E30 from 1986 to 2021.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Sportowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bronisława Czecha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bronis%C5%82awa_Czecha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka; w tekście artykułu podano też współrzędne 52,2255 N, 21,17425 E (inna wartość, pozostawiono nagłówek)."
+  },
+  {
+    "id": "ulica-korkowa",
+    "nazwa": "Ulica Korkowa",
+    "name_en": "Korkowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Korkowa",
+    "adres_historyczny": null,
+    "lat": 52.239194,
+    "lon": 21.152694,
+    "lokalizacja": "przyblizona",
+    "okres": "1964–dziś (osiedle przy ulicy)",
+    "istnieje": true,
+    "fakty": [
+      "Największe osiedle bloków przy ulicy Korkowej wzniesiono w latach 1964–1968 według projektu Bohdana Lewandowskiego i Teresy Kłębkowskiej; składa się z 20 bloków, w ostatnich latach poddanych odnowieniu i ociepleniu.",
+      "W ostatnich latach w miejsce zakładów przemysłowych przy wschodnim odcinku powstały nowe osiedla, m.in. Osiedle Zielony Marysin i Osiedle przy Lesie.",
+      "Z wieży kościoła św. Feliksa z Kantalicjo 15 września 1939 roku Adolf Hitler obserwował broniącą się Warszawę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Korkowa Street is the central axis of Marysin Wawerski in Wawer. It is lined with trees and apartment blocks, including a 1964–1968 estate designed by Bohdan Lewandowski and Teresa Kłębkowska.",
+    "ludzie": [
+      {"kto": "Bohdan Lewandowski", "rola": "projektant osiedla bloków przy ul. Korkowej (1964–1968)", "wiki": null},
+      {"kto": "Teresa Kłębkowska", "rola": "projektantka osiedla bloków przy ul. Korkowej (1964–1968)", "wiki": null},
+      {"kto": "Adolf Hitler", "rola": "obserwował Warszawę z wieży kościoła (wrzesień 1939)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Korkowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Korkowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje 1964–1968; artykuł o Marysinie Wawerskim podaje 1965–1967 dla tego samego osiedla."
+  },
+  {
+    "id": "ulica-wal-miedzeszynski",
+    "nazwa": "Ulica Wał Miedzeszyński",
+    "name_en": "Wał Miedzeszyński Street",
+    "typ": "ulica",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Wał Miedzeszyński",
+    "adres_historyczny": "Droga do Miedzeszyna; ul. Miedzeszyńska",
+    "lat": 52.193944444,
+    "lon": 21.121555555,
+    "lokalizacja": "przyblizona",
+    "okres": "1906–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie w miejscu ulicy istniał wał przeciwpowodziowy, usypany w latach 1906–1911, chroniący Saską Kępę przed zalewaniem przez Wisłę.",
+      "Ulica była początkowo nazywana Drogą do Miedzeszyna, od 1919 roku ul. Miedzeszyńską, a od 1958 roku nosi obecną nazwę.",
+      "Podczas prac w latach 1906–1911 natrafiono na szczątki żołnierzy polskich i szwedzkich poległych w lipcu 1656 roku w bitwie pod Warszawą; na Wale Gocławskim wzniesiono niewielki krzyż, pomnik Poległych w Bitwie ze Szwedami.",
+      "Na początku lat 30. XX wieku przeprowadzono alejkę spacerową; po roku 1934 wał poszerzono, a wzdłuż jezdni stanęły pierwsze w Warszawie latarnie z lampami sodowymi.",
+      "W dwudziestoleciu międzywojennym powstały plaże Braci Kozłowskich i miejska plaża Poniatówka oraz dwie luksusowe wille: willa Szyllerów (proj. Józef Szanajca i Bohdan Lachert) i willa Zalewskich (proj. Bohdan Pniewski).",
+      "Budowę estakady rozpoczęto dopiero w 1991 roku; kompleks basenów powstał w latach 1962–1970.",
+      "Na początku XXI wieku ulicę poszerzono i gruntownie przebudowano od Mostu Łazienkowskiego do granicy miasta w związku z budową mostu Siekierkowskiego; w sierpniu 2020 oddano przebudowany odcinek od Traktu Lubelskiego do węzła z Południową Obwodnicą Warszawy.",
+      "Przy długości ok. 14,5 km jest najdłuższą ulicą w Warszawie."
+    ],
+    "ciekawostki": [
+      "Według wspomnień Bronisława Kopczyńskiego w 1933 roku Saska Kępa miała zaledwie kilkanaście domków i willi przy ulicy Miedzeszyńskiej."
+    ],
+    "summary_en": "Wał Miedzeszyński runs along the right bank of the Vistula from Poniatowski Bridge to the city boundary. It was built on a flood embankment raised in 1906–1911 and was developed as a leisure route between the wars.",
+    "ludzie": [
+      {"kto": "Władysław Marconi", "rola": "fotograf, jego fotografia z 1910 roku może przedstawiać resztki folwarku Holendry", "wiki": null},
+      {"kto": "Józef Wolfram", "rola": "właściciel zabudowań przy wylocie ul. Wersalskiej w latach 30.", "wiki": null},
+      {"kto": "Józef Szanajca", "rola": "projektant willi Szyllerów", "wiki": null},
+      {"kto": "Bohdan Lachert", "rola": "projektant willi Szyllerów", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "projektant willi Zalewskich", "wiki": null},
+      {"kto": "Bronisław Kopczyński", "rola": "autor wspomnień o Saskiej Kępie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga do Miedzeszyna", "ul. Miedzeszyńska (1919–1958)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wał Miedzeszyński w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wa%C5%82_Miedzeszy%C5%84ski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica biegnie też przez Pragę-Południe; w nagłówku podano tylko Wawer."
+  }
+]

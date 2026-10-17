@@ -1,0 +1,72 @@
+[
+  {
+    "id": "willa-kazimierza-granzowa",
+    "nazwa": "Willa Kazimierza Granzowa",
+    "name_en": "Kazimierz Granzow Villa",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "Chełmżyńska 165",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1890–2014",
+    "istnieje": false,
+    "fakty": [
+      "Dom powstał pod koniec XIX wieku (1888-1890 bądź ok. 1895 roku) jako neogotycki budynek administracji zakładów cegielniczych Kazimierza Granzowa na Kawęczynie.",
+      "Willa nie została uszkodzona podczas II wojny światowej.",
+      "Po wojnie w budynku mieściła się najpierw szkoła dla Kawęczyna, potem przedszkole, a później jeszcze Szkolny Ośrodek Socjoterapii.",
+      "Na początku XXI wieku pod ciężarem śniegu zawaliło się sklepienie, a w 2004 roku ozdobna wieżyczka.",
+      "W 2014 roku rozpoczęły się przygotowania do rewitalizacji willi – zrujnowany budynek zakupiła spółka Millberry.",
+      "Prace rozpoczęto w kwietniu 2014 roku, ale przerwano je po jednym dniu, gdyż stan murów okazał się znacznie gorszy od przewidywanego.",
+      "Prace wznowiono we wrześniu, jednak w ciągu kilku dni inwestor zburzył willę.",
+      "Pod koniec lipca 2016 Ministerstwo Kultury i Dziedzictwa Narodowego unieważniło decyzję stołecznego konserwatora zabytków ws. przeprowadzenia wyburzenia budynku przy pomocy ciężkiego sprzętu."
+    ],
+    "ciekawostki": [
+      "Takiej samej cegły użyto w wielu budynkach w mieście.",
+      "Ściany pokryte były charakterystyczną, licowaną, różnokolorową cegłą ułożoną w geometryczne wzory."
+    ],
+    "summary_en": "A neo-Gothic brick villa from the late 19th century, built as the administration building of Kazimierz Granzow's brickworks in Kawęczyn (Rembertów). It was left to decay, and in 2014 an investor demolished it despite protests. In 2016 the ministry annulled the conservator's decision that the demolition had been carried out legally.",
+    "ludzie": [
+      {"kto": "Kazimierz Granzow", "rola": "patron zakładów cegielniczych, dla których zbudowano willę", "wiki": null},
+      {"kto": "Piotr Brabander", "rola": "stołeczny konserwator zabytków", "wiki": null}
+    ],
+    "dawne_nazwy": ["Grancówka (potocznie)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Kazimierza Granzowa", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Kazimierza_Granzowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z treści („przy ul. Chełmżyńskiej 165”). Plac po willi nadal istnieje."
+  },
+  {
+    "id": "radiostacja-kg-ak-gawedziarzy-24",
+    "nazwa": "Radiostacja KG AK w domu przy ul. Gawędziarzy 24",
+    "name_en": "Home Army HQ radio station at 24 Gawędziarzy Street",
+    "typ": "zdarzenie",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "Gawędziarzy 24",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1944",
+    "istnieje": null,
+    "fakty": [
+      "W dniu 4 marca 1944 roku żołnierze broniący tajnej Radiostacji KG Armii Krajowej, umieszczonej w domu przy ulicy Gawędziarzy 24, zginęli bohatersko walcząc z gestapo.",
+      "Radiostacja KG AK była umieszczona w domu przy ulicy Gawędziarzy 24, określanym na tablicy jako „d. Okuniewska”.",
+      "Zginęli kap. pchor. Eugeniusz Bocheński ps. Dubaniec (lat 23), dowódca Osłony Radiostacji, oraz kap. pchor. Stefan Łyszkiewicz ps. Pechowiec (lat 19), żołnierz Osłony Radiostacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A house at 24 Gawędziarzy Street in Rembertów hosted a secret radio station of the Home Army Main Command. On 4 March 1944 its defenders died fighting the Gestapo; a monument at a nearby intersection commemorates them.",
+    "ludzie": [
+      {"kto": "Eugeniusz Bocheński ps. Dubaniec", "rola": "kapitan pchor., dowódca Osłony Radiostacji, zginął w wieku 23 lat", "wiki": null},
+      {"kto": "Stefan Łyszkiewicz ps. Pechowiec", "rola": "kapitan pchor., żołnierz Osłony Radiostacji, zginął w wieku 19 lat", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Obrońców Radiostacji", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Obrońców_Radiostacji"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord wyprowadzony z napisu na pomniku; brak współrzędnych, a artykuł nie mówi, czy dom istnieje. Sam pomnik (u zbiegu ul. Gawędziarzy i Haubicy) nie ma adresu z numerem, więc nie dostał osobnego rekordu."
+  }
+]

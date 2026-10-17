@@ -1,0 +1,162 @@
+[
+  {
+    "id": "universam-grochow",
+    "nazwa": "Universam Grochów",
+    "name_en": "Universam Grochów",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Grochowska 207",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1977–2016",
+    "istnieje": false,
+    "fakty": [
+      "Budynek handlowo-usługowy został oddany do użytku w sierpniu 1977 roku.",
+      "Na trzech kondygnacjach mieścił m.in. megasam z artykułami spożywczymi, bar szybkiej obsługi, oddziały NBP i PKO oraz pralnię.",
+      "Od 2006 roku pojawiają się pomysły wyburzenia Uniwersamu i zastąpienia go nowym budynkiem, które zostały potwierdzone w maju 2013 roku.",
+      "Budynek został rozebrany w 2016 roku."
+    ],
+    "ciekawostki": [
+      "Budynek wykonany był z materiałów złej jakości, a remontu doczekała się jedynie fontanna."
+    ],
+    "summary_en": "Universam Grochów was a shopping and service building at Grochowska 207, next to the Wiatraczna roundabout in Praga-Południe. It opened in August 1977, was demolished in 2016, and was replaced by a residential development.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Universam Grochów", "url": "https://warszawa.fandom.com/pl/wiki/Universam_Grochów"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Według tekstu nowy budynek miał powstać w miejscu; w tekście nie podano, czy został ukończony."
+  },
+  {
+    "id": "willa-brzezinskich",
+    "nazwa": "Willa Brzezińskich",
+    "name_en": "Brzeziński Villa",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Obrońców 10",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ta modernistyczna willa powstała około 1930 roku wg projektu Piotra Kwieka i Lucjana Korngolda dla rodziny Brzezińskich.",
+      "Budowlę charakteryzuje spora liczba balkonów oraz tarasów, w tym jeden umieszczony na dachu.",
+      "Po wojnie dom skomunalizowano, a w jego części umieszczono Państwowe Przedszkole, do którego uczęszczało kilka pokoleń mieszkańców Saskiej Kępy.",
+      "Po 1990 roku budynek wrócił do rąk prywatnych właścicieli."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Brzeziński Villa at Obrońców 10, on the corner of Katowicka on Saska Kępa, is a modernist house from about 1930 designed by Piotr Kwiek and Lucjan Korngold. After the war part of it housed a state kindergarten.",
+    "ludzie": [
+      {"kto": "Piotr Kwiek", "rola": "architekt, współprojektant willi", "wiki": null},
+      {"kto": "Lucjan Korngold", "rola": "architekt, współprojektant willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Brzezińskich", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Brzezińskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-fitelberga-i-szmolcownej",
+    "nazwa": "Willa Grzegorza Fitelberga i Haliny Szmolcówny",
+    "name_en": "Villa of Grzegorz Fitelberg and Halina Szmolcówna",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Elsterska 3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1929–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa została wybudowana w 1929 roku w stylu modernizmu historycznego.",
+      "Od 1930 roku należała do dyrygenta Grzegorza Fitelberga i jego drugiej żony Haliny Szmolcówny, primabaleriny Teatru Wielkiego i Opery Narodowej.",
+      "Od 1935 roku Fitelberg kierował orkiestrą Polskiego Radia.",
+      "Halina Szmolcówna zginęła 7 września 1939 roku, raniona odłamkami zabłąkanego pocisku na Moście Poniatowskiego.",
+      "Dopiero gdy w 2006 roku willa znalazła właściciela, wymieniono okna, wywieziono gruz i dom zaczął powracać do życia."
+    ],
+    "ciekawostki": [
+      "Nad wejściem do willi dwa amorki trzymają tarczę z monogramem żony „H.S.”; w domu urządzono salę ćwiczeń, gdzie Halina Szmolcówna tańczyła i udzielała lekcji."
+    ],
+    "summary_en": "Elsterska 3 on Saska Kępa is a 1929 historicist-modernist villa. From 1930 it belonged to conductor Grzegorz Fitelberg and ballerina Halina Szmolcówna, who died in September 1939. It was restored after 2006.",
+    "ludzie": [
+      {"kto": "Grzegorz Fitelberg", "rola": "dyrygent; koncertmistrz, a następnie dyrygent Filharmonii Warszawskiej; od 1935 kierował orkiestrą Polskiego Radia", "wiki": null},
+      {"kto": "Halina Szmolcówna", "rola": "primabalerina Teatru Wielkiego i Opery Narodowej, druga żona Fitelberga", "wiki": null},
+      {"kto": "Jerzy Kasprzycki", "rola": "autor wspomnień „Korzenie miasta”, cytowany w tekście o willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Grzegorza Fitelberga i Haliny Szmolcówny", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Grzegorza_Fitelberga_i_Haliny_Szmolcówny"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-oldakowskich",
+    "nazwa": "Willa Ołdakowskich",
+    "name_en": "Ołdakowski Villa",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Obrońców 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ta modernistyczna willa o charakterze funkcjonalistycznym powstała około 1928 roku wg projektu Bohdana Pniewskiego.",
+      "Pierwotnie piękny, przydomowy ogród został w latach 60. i 70. XX wieku zabudowany niewielkimi szeregowcami.",
+      "Willa w międzyczasie stała się domem wielorodzinnym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ołdakowski Villa at Obrońców 2 on Saska Kępa is a functionalist house of about 1928 by Bohdan Pniewski. Its garden was built over with small terraced houses in the 1960s and 1970s.",
+    "ludzie": [
+      {"kto": "Bohdan Pniewski", "rola": "architekt, autor projektu willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Ołdakowskich", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Ołdakowskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-wolskich",
+    "nazwa": "Willa Wolskich",
+    "name_en": "Wolski Villa",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Obrońców 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom powstał w 1927 roku wg projektu Aleksandra Więckowskiego; styl budowli opisano jako neoklasycyzm narodowy.",
+      "Po II wojnie światowej każdy większy dom kazano dzielić na miniaturowe mieszkania; tak postąpiono z willą Wolskich.",
+      "Przez 45 lat powojennych willa była bezwzględnie niszczona przez użytkowników i zamieniła się w ruderę.",
+      "Po 1989 roku była to jeden z pierwszych zrewitalizowanych obiektów starej Saskiej Kępy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Wolski Villa at Obrońców 14 on Saska Kępa was built in 1927 to a design by Aleksander Więckowski in national neoclassical style. After the war it was split into flats and fell into ruin, and it was restored after 1989.",
+    "ludzie": [
+      {"kto": "Aleksander Więckowski", "rola": "architekt, autor projektu willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Wolskich", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Wolskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

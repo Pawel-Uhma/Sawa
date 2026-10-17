@@ -1,0 +1,233 @@
+[
+  {
+    "id": "warszawa-wlochy-graniczna-przystanek",
+    "nazwa": "Warszawa Włochy Graniczna (przystanek EKD)",
+    "name_en": "Warszawa Włochy Graniczna (former stop)",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Popularna",
+    "lat": 52.2028, "lon": 20.9281,
+    "lokalizacja": "dokladna",
+    "okres": "1932–1971",
+    "istnieje": false,
+    "fakty": [
+      "Przystanek Elektrycznej Kolei Dojazdowej został wybudowany w lipcu 1932 roku.",
+      "Znajdował się w dzielnicy Włochy, na osiedlu Osiedle Włochy, przy ulicy Popularnej.",
+      "Przystanek zlikwidowano w listopadzie 1971 roku razem z linią z Warszawy Szczęśliwic do Warszawy Włoch EKD z powodu przebudowy ulicy Aleje Jerozolimskie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Włochy Graniczna, formerly Włochy Graniczna, was a stop on the Electric Suburban Railway (EKD) in the Włochy district of Warsaw, on Popularna street. It was built in July 1932 and closed in November 1971 together with the line to Warszawa Włochy EKD, because of the reconstruction of Aleje Jerozolimskie.",
+    "ludzie": [],
+    "dawne_nazwy": ["Włochy Graniczna"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Włochy Graniczna", "url": "https://pl.wikipedia.org/wiki/Warszawa_W%C5%82ochy_Graniczna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nieistniejący przystanek; tekst niemal identyczny z artykułem o Wiktorynie (ten sam termin 1932 i likwidacja 1971). Współrzędne z nagłówka WSPÓŁRZĘDNE."
+  },
+  {
+    "id": "wiktoryn-warszawa",
+    "nazwa": "Wiktoryn",
+    "name_en": "Wiktoryn",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2035, "lon": 20.932722,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XIX wieku miejscowość była znana również pod nazwą Wiktorya.",
+      "W 1932 roku wzdłuż jej granic przeprowadzono rozgałęzienie Elektrycznej Kolei Dojazdowej (EKD) do Włoch.",
+      "W XIX wieku miejscowość ta należała do gminy Pruszków.",
+      "Od 1945 roku stała się częścią Okęcia. W 1951 roku Okęcie włączono do granic Warszawy.",
+      "Następnie Wiktoryn znalazł się w obrębie Ochoty i wchodził w jej skład do 1994 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wiktoryn is a housing estate in the Włochy district of Warsaw. In the 19th century it belonged to the Pruszków commune and was also known as Wiktorya. Since 1945 it has been part of Okęcie, which was incorporated into Warsaw in 1951. It was part of the Ochota district until 1994.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wiktorya"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wiktoryn (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wiktoryn_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla)."
+  },
+  {
+    "id": "willa-jasny-dom",
+    "nazwa": "Willa „Jasny Dom”",
+    "name_en": "Jasny Dom Villa",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Świerszcza 2",
+    "adres_historyczny": null,
+    "lat": 52.2069, "lon": 20.9154,
+    "lokalizacja": "dokladna",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony na początku lat 30. XX wieku na zamówienie burmistrza Włoch Franciszka Kosteckiego.",
+      "W 1936 roku został zakupiony przez Józefa Kasperkiewicza, notariusza z Pabianic.",
+      "W styczniu 1945 z rozkazu Wojennego Komendanta miasta Włochy rodzina Kasperkiewiczów została zmuszona do opuszczenia budynku, który stał się stalinowskim aresztem.",
+      "Zbiorowe cele ulokowano w pomieszczeniach piwnicznych willi; zachowały się w nich wykonane przez więźniów inskrypcje, wskazujące m.in. że był wśród nich Bolesław Piasecki.",
+      "W 1992 roku budynek odzyskali spadkobiercy przedwojennych właścicieli.",
+      "W marcu 2006 roku na ścianie „Jasnego Domu” odsłonięto tablicę pamiątkową upamiętniającą ofiary sowieckich represji przetrzymywane w tym budynku.",
+      "W 2009 piwnice budynku zostały wpisane do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Osoby przesłuchiwane w willi trafiały m.in. do obozu NKWD w Rembertowie.",
+      "W 2013 z inicjatywy Jolanty Piekarskiej, Macieja Piekarskiego oraz Marleny Piekarskiej-Olszówki powstała Fundacja „Willa Jasny Dom”, która opiekuje się zabytkowymi piwnicami."
+    ],
+    "summary_en": "Willa „Jasny Dom” is a modernist villa from 1934 at ul. Świerszcza 2 in the Włochy district of Warsaw. Built for the mayor of Włochy, Franciszek Kostecki, it was taken over in January 1945 by the Soviet security services and used as a Stalinist detention centre. Its cellars carry prisoners' inscriptions, and a memorial plaque was unveiled in 2006.",
+    "ludzie": [
+      {"kto": "Franciszek Kostecki", "rola": "burmistrz Włoch, zamawiający willę (w tekście: Franciszka Kosteckiego)", "wiki": null},
+      {"kto": "Józef Kasperkiewicz", "rola": "notariusz z Pabianic, kupił willę w 1936", "wiki": null},
+      {"kto": "Bolesław Piasecki", "rola": "wymieniony wśród więźniów, według inskrypcji w piwnicach", "wiki": null},
+      {"kto": "Jolanta Piekarska, Maciej Piekarski, Marlena Piekarska-Olszówka", "rola": "inicjatorzy powstania Fundacji „Willa Jasny Dom” w 2013", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Jasny Dom w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Jasny_Dom_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE. Rok 1934 w okresie (rok z tytułu artykułu, „modernistyczna willa z 1934 roku”); tekst podaje też początek lat 30. jako czas budowy."
+  },
+  {
+    "id": "wypad-na-okecie-i-zaluski",
+    "nazwa": "Wypad na Okęcie i Załuski",
+    "name_en": "Sortie on Okęcie and Załuski (1939)",
+    "typ": "zdarzenie",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.165833333, "lon": 20.967222222,
+    "lokalizacja": "przyblizona",
+    "okres": "12 września 1939",
+    "istnieje": true,
+    "fakty": [
+      "Po odparciu szturmu niemieckiej 4 Dywizji Pancernej w dniach 8–9 września 1939 roku Dowództwo Obrony Warszawy postanowiło przejść do aktywnej obrony.",
+      "12 września dowódca 366 pp, ppłk Jakub Chmura, przeprowadził wypad z Mokotowa na zajęte przez Niemców lotnisko na Okęciu.",
+      "Celem wypadu było wzięcie jeńców oraz rozpoznanie sił nieprzyjaciela na przedpolu Warszawy.",
+      "Polacy zdołali przejściowo opanować lotnisko; natarcie w kierunku Załusek natknęło się na zaalarmowaną niemiecką obronę i zostało zdziesiątkowane ogniem piechoty i artylerii.",
+      "Cele wypadu nie zostały osiągnięte. Polskie straty wyniosły 280 żołnierzy i 7 czołgów."
+    ],
+    "ciekawostki": [
+      "W wypadzie wzięły udział dwie kompanie czołgów pod wspólnym dowództwem rtm. Stanisława Grąbczewskiego (łącznie 21 czołgów 7TP)."
+    ],
+    "summary_en": "On 12 September 1939 Polish forces under Lt Col Jakub Chmura made a daytime sortie from Mokotów to seize the German-held Okęcie airfield. The Poles briefly took the airfield, but the advance towards Załuski ran into German fire. The Polish side lost 280 soldiers and 7 tanks, and the objectives were not achieved.",
+    "ludzie": [
+      {"kto": "Jakub Chmura", "rola": "ppłk, dowódca wypadu na Okęcie", "wiki": null},
+      {"kto": "Jerzy Gołębiowski", "rola": "ppor., dowódca plutonu czołgów, poległ w boju", "wiki": null},
+      {"kto": "Marian Porwit", "rola": "płk, który wydał rozkaz wypadu (odcinek „Warszawa-Zachód”)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wypad na Okęcie i Załuski", "url": "https://pl.wikipedia.org/wiki/Wypad_na_Ok%C4%99cie_i_Za%C5%82uski"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z pola „miejsce starcia” w nagłówku artykułu. Tekst w dwóch miejscach podaje różne numery pułku (366 pp w otwarciu, 360 pp dalej); w rekordzie zapisano 366 pp zgodnie z pierwszym zdaniem o dowódcy."
+  },
+  {
+    "id": "osiedle-wlochy",
+    "nazwa": "Włochy (osiedle)",
+    "name_en": "Włochy housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.206156, "lon": 20.914964,
+    "lokalizacja": "przyblizona",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1842 roku we Włochach powstała pierwsza cegielnia.",
+      "W 1844 roku osada została zakupiona przez Koelichena i w rękach jego potomków znajdowała się aż do 1928 roku.",
+      "W 1934 roku przez Stare Włochy ulicą Kościuszki (obecnie Popularna) zaczęła kursować Elektryczna Kolej Dojazdowa.",
+      "Podczas łapanek Niemcy aresztowali i wywieźli do Auschwitz około 5 tysięcy mężczyzn, głównie mieszkańców Włoch.",
+      "Miasto zostało wyzwolone 18 stycznia 1945 roku przez 1 Brygadę Pancerną im. Bohaterów Westerplatte.",
+      "Włochy zostały włączone do stolicy w 1951 roku."
+    ],
+    "ciekawostki": [
+      "Po zakończeniu II wojny światowej w miejscu niewielkiej drewnianej świątyni wzniesionej w 1928 rozpoczęto budowę nowego murowanego kościoła św. Teresy od Dzieciątka Jezus."
+    ],
+    "summary_en": "Włochy is a housing estate in the Włochy district of Warsaw, covering parts of the Stare Włochy and Nowe Włochy areas. Its name dates from the 15th century and comes from the village owner Jan, called Włoch. The first brickworks was founded in 1842, and the Electric Suburban Railway reached the area in 1934. About 5,000 men from Włochy were deported to Auschwitz during round-ups in the war.",
+    "ludzie": [
+      {"kto": "Jan zwany Włochem", "rola": "właściciel wsi, od którego pochodzi nazwa osiedla", "wiki": null},
+      {"kto": "Koelichen", "rola": "nabywca osady w 1844 roku; potomkowie posiadali ją do 1928", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Włochy (osiedle)", "url": "https://pl.wikipedia.org/wiki/W%C5%82ochy_%28osiedle%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla). Artykuł o osiedlu; pominięto parafie i szkoły."
+  },
+  {
+    "id": "zaluski-warszawa",
+    "nazwa": "Załuski",
+    "name_en": "Załuski",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.169167, "lon": 20.939361,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVI wieku miejscowość należąca do rodziny Górków miała dawną nazwę Górki.",
+      "Została spalona w czasie potopu szwedzkiego i przestała istnieć.",
+      "W XVII wieku na miejscu spalonej wsi powstał folwark Załuski, nazwany od nazwiska nowego właściciela.",
+      "Załuski wraz z Okęciem zostały włączone do Warszawy w 1951.",
+      "W 1994 stały się częścią gminy Warszawa-Włochy, a następnie dzielnicy Włochy."
+    ],
+    "ciekawostki": [
+      "Na terenie osiedla znajdują się Glinianki Załuskie."
+    ],
+    "summary_en": "Załuski is a former village, now a housing estate and MSI area in the Włochy district of Warsaw. In the 16th century it belonged to the Górka family and was called Górki. It was burned during the Swedish Deluge and replaced in the 17th century by a manor farm named after its new owner. It was incorporated into Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Górki"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Załuski (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Za%C5%82uski_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla)."
+  },
+  {
+    "id": "zbarz-warszawa",
+    "nazwa": "Zbarż",
+    "name_en": "Zbarż",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.166666666, "lon": 20.966666666,
+    "lokalizacja": "przyblizona",
+    "okres": "XIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "XIII-XIV w. – założenie wsi przez potomków rycerza Gotarda Rakowskiego.",
+      "1451 – lokacja na prawie chełmińskim wsi Zbarż przez księcia mazowieckiego Bolesława IV.",
+      "1528 – wieś staje się własnością Babickich.",
+      "ok. 1628 – Babiccy sprzedali wieś wojewodzie inowrocławskiemu Jakubowi Hieronimowi Rozdrażewskiemu, właścicielowi sąsiednich Gorzkiewek i Służewca.",
+      "1886 – wzniesienie Fortu VII Zbarż przez władze carskie na polach pomiędzy Gorzkiewkami a Zbarżem, co spowodowało zahamowanie rozwoju wsi.",
+      "1951 – przyłączenie do Warszawy terenów na zachód od linii radomskiej."
+    ],
+    "ciekawostki": [
+      "Na terenie osiedla znajduje się fort Zbarż, a także Staw Zbarski."
+    ],
+    "summary_en": "Zbarż, formerly Zbarz or Dzbarz, is a former village and now a housing estate in the Włochy district of Warsaw. It was founded in the 13th–14th century and granted Chełmno-law rights in 1451 under Duke Bolesław IV. The Tsarist authorities built Fort VII Zbarż in 1886, which halted the village's growth.",
+    "ludzie": [
+      {"kto": "Bolesław IV", "rola": "książę mazowiecki, który w 1451 lokował wieś Zbarż na prawie chełmińskim", "wiki": null},
+      {"kto": "Jakub Hieronim Rozdrażewski", "rola": "wojewoda inowrocławski, kupił wieś ok. 1628", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zbarz", "Dzbarz"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zbarż", "url": "https://pl.wikipedia.org/wiki/Zbar%C5%BC"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek osiedla). Artykuł podaje lokację na prawie chełmińskim w 1451 r. (w artykule o Rakowie – 1447, inny rok)."
+  }
+]

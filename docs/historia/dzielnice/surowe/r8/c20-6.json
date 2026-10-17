@@ -1,0 +1,199 @@
+[
+  {
+    "id": "warszawa-falenica-stacja",
+    "nazwa": "Dworzec Warszawa Falenica",
+    "name_en": "Warszawa Falenica railway station",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Patriotów",
+    "adres_historyczny": null,
+    "lat": 52.161944,
+    "lon": 21.211111,
+    "lokalizacja": "dokladna",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1877 roku otwarto Kolej Nadwiślańską, jedną z najważniejszych linii kolejowych w zaborze rosyjskim, łączącą m.in. Warszawę z popularnymi letniskami w Aninie, Otwocku i Falenicy.",
+      "Pierwszy, drewniany budynek stacji powstał w 1897 roku.",
+      "W latach 1905–1910 dodano drugi tor na linii Warszawa–Otwock, a stację przeniesiono w rejon ulic Patriotów, Bysławskiej, Młodej i Walcowniczej.",
+      "W latach 1915–1916 zmieniono rozstaw szyn z szerokotorowego na europejski i wzniesiono duży murowany budynek dworcowy.",
+      "W latach 1933–1936 dworzec przebudowano w stylu modernistycznym w związku z elektryfikacją linii Otwock – Warszawa – Pruszków.",
+      "20 sierpnia 1942 roku z rampy stacji wywieziono do obozu zagłady w Treblince ok. 7 tys. Żydów z likwidowanych gett w Falenicy i Rembertowie.",
+      "W 2010 roku, po gruntownym remoncie, budynek przekształcono w Kinokawiarnię Stacja Falenica.",
+      "W 2010 roku wiaty peronowe z poczekalnią wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Falenica station opened with the Kolej Nadwiślańska line in 1877. Its brick station building was modernised in 1933–1936, and since 2010 it houses a cinema-café.",
+    "ludzie": [],
+    "dawne_nazwy": ["Falenica (stacja Kolei Nadwiślańskiej)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Falenica", "url": "https://pl.wikipedia.org/wiki/Warszawa_Falenica"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o Falenicy datuje dworzec Kolei Nadwiślańskiej na lata 20. XX wieku; ten artykuł podaje lata 1915–1936."
+  },
+  {
+    "id": "warszawa-radosc-przystanek",
+    "nazwa": "Przystanek Warszawa Radość",
+    "name_en": "Warszawa Radość railway stop",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Patriotów",
+    "adres_historyczny": null,
+    "lat": 52.185833,
+    "lon": 21.187222,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek przystanku z kasą, poczekalnią i skrzydlatym dachem wybudowano w 1936 roku według projektu Kazimierza Centnerszwera; to przykład architektury modernizmu.",
+      "Kasa i poczekalnia na przystanku zostały zamknięte w październiku 2008 roku.",
+      "W 2010 roku wiatę peronową z poczekalnią wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A modernist railway stop on the Otwock line in Radość, its 1936 station building designed by Kazimierz Centnerszwer. The peron shelter was listed as a monument in 2010.",
+    "ludzie": [
+      {"kto": "Kazimierz Centnerszwer", "rola": "autor projektu budynku przystanku (1936)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Radość", "url": "https://pl.wikipedia.org/wiki/Warszawa_Rado%C5%9B%C4%87"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "katastrofa-kolejowa-warszawa-wawer-1966",
+    "nazwa": "Katastrofa kolejowa pod stacją Warszawa Wawer (1966)",
+    "name_en": "1966 railway accident near Warszawa Wawer station",
+    "typ": "zdarzenie",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Widoczna (okolice stacji Warszawa Wawer)",
+    "adres_historyczny": null,
+    "lat": 52.223333,
+    "lon": 21.149444,
+    "lokalizacja": "przyblizona",
+    "okres": "6 lipca 1966",
+    "istnieje": false,
+    "fakty": [
+      "6 lipca 1966 roku w pobliżu stacji Warszawa Wawer doszło do katastrofy kolejowej.",
+      "Od strony Otwocka nadjechał sezonowy pociąg pośpieszny nr 3810 relacji Rzeszów–Ustka, prowadzony lokomotywą Pt31-21; semafor wskazywał wjazd na tor zwrotny, gdzie dopuszczalna prędkość wynosiła 40 km/h, a pociąg jechał ok. 90 km/h.",
+      "Skład wykoleił się i spiętrzył; z całego pociągu jedynie cztery ostatnie wagony pozostały na torze.",
+      "Ciężko rannych zostało siedemnaście osób, a drużyna obsługująca parowóz została dotkliwie poparzona parą z uszkodzonego kotła.",
+      "Maszynista zmarł w wyniku odniesionych obrażeń podczas transportu do szpitala."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A passenger train derailed near Warszawa Wawer station on 6 July 1966 after entering a siding at about twice its speed limit. Seventeen people were seriously injured and the engine driver died on the way to hospital.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Wawer (stacja kolejowa)", "url": "https://pl.wikipedia.org/wiki/Warszawa_Wawer_%28stacja_kolejowa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Miejsce zdarzenia przybliżone do stacji; artykuł nie podaje dokładnego punktu."
+  },
+  {
+    "id": "wawer-dzielnica",
+    "nazwa": "Wawer (dzielnica Warszawy)",
+    "name_en": "Wawer (district of Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.213888888,
+    "lon": 21.158055555,
+    "lokalizacja": "przyblizona",
+    "okres": "1727–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Najstarsza wzmianka o karczmie Wawer, od której nazwa pochodzi, pochodzi z 1727 roku; kolonia Wawer powstała w 1838 roku, a pierwsi osadnicy pojawili się w 1839 roku.",
+      "Podczas powstania listopadowego na początku 1831 roku rozegrały się tu pierwsza i druga bitwa pod Wawrem.",
+      "W nocy z 26 na 27 grudnia 1939 roku Niemcy dokonali w Wawrze zbrodni.",
+      "W listopadzie 1940 roku Niemcy utworzyli getto, w którym przebywało ok. 950 Żydów; w marcu 1942 roku zostali wywiezieni do getta w Warszawie, a stamtąd do obozu zagłady w Treblince.",
+      "W 1960 roku Wawer włączono do dzielnicy Praga-Południe; w 1994 roku ponownie pojawił się na mapie Warszawy jako gmina, a w 2002 roku przekształcono go w dzielnicę.",
+      "W 1951 roku Wawer został przyłączony do Warszawy."
+    ],
+    "ciekawostki": [
+      "Wawer jest największą pod względem powierzchni i najrzadziej zaludnioną dzielnicą Warszawy."
+    ],
+    "summary_en": "Wawer is the largest and least densely populated district of Warsaw, on the right bank of the Vistula. It grew from the Wawer inn and colony, saw battles in 1831, and suffered German crimes and a ghetto in 1939–1942.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wawer", "url": "https://pl.wikipedia.org/wiki/Wawer"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy całej dzielnicy, współrzędne z nagłówka to centrum jednostki; w dzielnicy jest też wiele rekordów dla konkretnych miejsc."
+  },
+  {
+    "id": "willa-pod-kogutkiem",
+    "nazwa": "Willa Pod Kogutkiem",
+    "name_en": "Villa Pod Kogutkiem (Under the Rooster)",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Junaków 33/35",
+    "adres_historyczny": null,
+    "lat": 52.1849,
+    "lon": 21.187195,
+    "lokalizacja": "dokladna",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w 1912 roku i był jednym z pierwszych murowanych budynków osiedla Radość.",
+      "W 1918 roku zakupił go aktor Antoni Fertner jako swoją podwarszawską siedzibę.",
+      "Bywały tu osoby z ówczesnej elity kulturalnej, m.in. Eugeniusz Bodo, Mieczysława Ćwiklińska, Leopold Staff i Aleksander Żabczyński.",
+      "Po II wojnie światowej mieszkał tu działacz społeczny Jan Jarecki, mieścił się sklep „Społem”, a później w małych mieszkaniach zakwaterowano 9 rodzin.",
+      "W 2000 roku budynek wraz z ogrodem wpisano do rejestru zabytków.",
+      "17 kwietnia 2016 roku pod willą zorganizowano happening mający na celu uratowanie budynku; w roli Antoniego Fertnera wystąpił aktor Maciej Damięcki."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od rzeźby koguta na szczycie fasady."
+    ],
+    "summary_en": "A partly ruined two-storey villa in Radość, built in 1912. It was the country seat of actor Antoni Fertner from 1918 and was listed as a monument in 2000.",
+    "ludzie": [
+      {"kto": "Antoni Fertner", "rola": "aktor, kupił willę w 1918 roku jako podwarszawską siedzibę", "wiki": null},
+      {"kto": "Eugeniusz Bodo", "rola": "bywał w willi", "wiki": null},
+      {"kto": "Mieczysława Ćwiklińska", "rola": "bywała w willi", "wiki": null},
+      {"kto": "Leopold Staff", "rola": "bywał w willi", "wiki": null},
+      {"kto": "Aleksander Żabczyński", "rola": "bywał w willi", "wiki": null},
+      {"kto": "Jan Jarecki", "rola": "działacz społeczny, mieszkał w willi po II wojnie", "wiki": null},
+      {"kto": "Maciej Damięcki", "rola": "aktor, wcielił się w Fertnera podczas happeningu (17 kwietnia 2016)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Willa Fertnera"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Pod Kogutkiem w Radości", "url": "https://pl.wikipedia.org/wiki/Willa_Pod_Kogutkiem_w_Rado%C5%9Bci"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że obiekt jest częściowo zrujnowany i że przed 2016 rokiem został sprzedany."
+  },
+  {
+    "id": "wisniowa-gora",
+    "nazwa": "Wiśniowa Góra",
+    "name_en": "Wiśniowa Góra",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.210833,
+    "lon": 21.210278,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś (w Warszawie od 1951)",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Podkaczydół należała w latach 1867–1939 do gminy Wawer w powiecie warszawskim; w 1921 roku liczyła 171 mieszkańców.",
+      "20 października 1933 roku utworzono gromadę Podkaczy Dół w granicach gminy Wawer.",
+      "13 marca 1939 roku nazwę Podkaczego Dołu zmieniono oficjalnie na Wiśniowa Góra.",
+      "W 1943 roku Podkaczydół (w gminie Wawer) liczył 594 mieszkańców.",
+      "15 maja 1951 roku, w związku ze zniesieniem gminy Wawer, gromadę Wiśniowa Góra włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wiśniowa Góra is a small former village in Wawer, known as Podkaczy Dół until 1939. It was incorporated into Warsaw in 1951 with the dissolution of the Wawer commune.",
+    "ludzie": [],
+    "dawne_nazwy": ["Podkaczy Dół", "Podkaczydół"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wiśniowa Góra (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wi%C5%9Bniowa_G%C3%B3ra_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]
