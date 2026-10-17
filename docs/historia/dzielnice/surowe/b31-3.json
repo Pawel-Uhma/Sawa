@@ -1,0 +1,317 @@
+[
+  {
+    "id": "przyczolek-czerniakowski",
+    "nazwa": "Przyczółek czerniakowski",
+    "name_en": "Czerniaków Bridgehead",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Górny Czerniaków (Solec), przy ul. Wilanowskiej",
+    "adres_historyczny": null,
+    "lat": 52.2287,
+    "lon": 21.043,
+    "lokalizacja": "przyblizona",
+    "okres": "16–23 września 1944",
+    "istnieje": false,
+    "fakty": [
+      "Nazwa przyjęta dla miejsca desantu żołnierzy 3 Dywizji Piechoty im. Romualda Traugutta na Górnym Czerniakowie (Solcu) w czasie powstania warszawskiego i późniejszych walk na przyczółku.",
+      "15 września 1944 r. na przyczółku zginął dowódca kompanii „Rudy” Andrzej Romocki ps. „Morro”; najprawdopodobniej uznany przez żołnierzy LWP za Niemca, mimo biało-czerwonej opaski na niemieckiej panterce.",
+      "W nocy z 15 na 16 września na przyczółek na Solcu przeprawiły się pierwsze oddziały 3 DP, w tym żołnierze 9 pp.",
+      "W nocy z 19 na 20 września większość żołnierzy Zgrupowania „Radosław” przeszła kanałami do Mokotowa; ostatni punkt oporu na Górnym Czerniakowie padł 23 września na posesji ul. Wilanowska 1.",
+      "W dniach 16–23 września 1944 r. przeprawiono 1254 żołnierzy 3 DP; poległo i zaginęło 961, a na Saską Kępę wróciło 293 (w tym 52 rannych).",
+      "Łączne straty 3 DP wyniosły 2383 żołnierzy, w tym 1762 zabitych i zaginionych, czyli ok. 25% stanu z 10 września 1944 r.",
+      "Rozkaz wsparcia przez radziecki 226 Gwardyjski Pułk Strzelecki wydano 20 września o 13:30, ale wobec beznadziejnej sytuacji do desantu nie doszło."
+    ],
+    "ciekawostki": [
+      "Płyta Desantu 3 DP (w parku Rydza-Śmigłego) znajduje się na 511. kilometrze Wisły."
+    ],
+    "summary_en": "The bridgehead at Czerniaków (Solec) where soldiers of the 3rd Infantry Division landed to help the Uprising between 16 and 23 September 1944. The landing failed to reach the insurgents in time, and heavy losses followed.",
+    "ludzie": [
+      {"kto": "Andrzej Romocki „Morro”", "rola": "dowódca kompanii „Rudy”, zginął 15 września 1944", "wiki": null},
+      {"kto": "Henryk Kończykowski „Halicz”", "rola": "świadek śmierci „Morro”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Przyczółek czerniakowski", "url": "https://pl.wikipedia.org/wiki/Przycz%C3%B3%C5%82ek_czerniakowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar działań (Górny Czerniaków), nie pojedynczy adres; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "punkt-etapowy-stawki-5-7",
+    "nazwa": "Punkt etapowy (ul. Stawki 5/7)",
+    "name_en": "Transit Point at Stawki 5/7",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Stawki 5/7",
+    "lat": 52.244167,
+    "lon": 21.002778,
+    "lokalizacja": "przyblizona",
+    "okres": "1941",
+    "istnieje": false,
+    "fakty": [
+      "Rysunek „Punkt etapowy” jest jednym z pięciu rysunków pokazujących życie w getcie warszawskim i losy zamkniętych w nim dzieci; autorem podpisującym się jako Rozenfeld.",
+      "Rysunek powstał najprawdopodobniej jesienią i zimą 1941 r., prawdopodobnie na zamówienie twórców tzw. Archiwum Ringelbluma.",
+      "Według opisu na rękopisie przedstawia pomieszczenie przy ul. Stawki 5/7, w którym mieściła się izba zatrzymań i punkt etapowy, kierowany przez Henryka Kalmowicza.",
+      "Trafiały tam dzieci zatrzymane przez granatową policję poza dzielnicą żydowską; czekały na rodziców, którzy musieli zapłacić kaucję, lub – w przypadku sierot – na przekazanie do sierocińca albo internatu.",
+      "Rękopis (7 kart) przechowywany jest w Żydowskim Instytucie Historycznym (ŻIH)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1941 drawing by an unknown artist signed Rozenfeld, showing a detention room and transit point at Stawki 5/7 in the Warsaw Ghetto, where children caught outside the district were held until their parents paid bail.",
+    "ludzie": [
+      {"kto": "Rozenfeld", "rola": "autor rysunku i rękopisu (podpis)", "wiki": null},
+      {"kto": "Henryk Kalmowicz", "rola": "kierownik punktu etapowego", "wiki": null},
+      {"kto": "Piotr Żuchowski", "rola": "kurator wystawy prezentującej rysunki Rozenfelda", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Punkt etapowy", "url": "https://pl.wikipedia.org/wiki/Punkt_etapowy"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka artykułu o rysunku, nie sprawdzone dla ul. Stawki 5/7. Istnienie budynku nieznane z tekstu (istnieje=false jako przypuszczenie)."
+  },
+  {
+    "id": "plyta-desantu-3-dywizji-piechoty",
+    "nazwa": "Płyta Desantu 3 Dywizji Piechoty",
+    "name_en": "Landing Slab of the 3rd Infantry Division",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "park Marszałka Edwarda Rydza-Śmigłego (ul. Solec), oś główna między brzegiem Wisły a Wisłostradą",
+    "adres_historyczny": null,
+    "lat": 52.2287,
+    "lon": 21.043,
+    "lokalizacja": "dokladna",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik w formie płyty upamiętnia desant żołnierzy 1 Armii Wojska Polskiego, spieszących na pomoc powstańcom we wrześniu 1944 r.",
+      "Pierwsza grupa ok. 60 żołnierzy 9 pp 3 DP im. Romualda Traugutta wylądowała 16 września 1944 r. ok. godz. 4 rano w pobliżu ul. Wilanowskiej, w trzech nocnych rzutach (15/16, 16/17 i 17/18 września).",
+      "W miejscu lądowania w 1946 r. odsłonięto tablicę pamiątkową; we wrześniu 1951 r., w przeddzień 7. rocznicy desantu, odsłonięto pomnik w formie płyty.",
+      "Pomnik zaprojektowali Zygmunt Stępiński i Kazimierz Marczewski; na kamiennym podwyższeniu znajduje się brązowa tablica.",
+      "Napis na tablicy podaje, że w dniach od 16 do 23 września 1944 r. oddziały 3 DP, wspierane przez radziecką artylerię i lotnictwo, stoczyły nierówny bój; poległo 2056 żołnierzy i oficerów WP i Armii Radzieckiej oraz setki powstańców Czerniakowa i Solca.",
+      "Upamiętnienie jest elementem większego założenia architektonicznego w postaci placu."
+    ],
+    "ciekawostki": [
+      "Płyta znajduje się na 511. kilometrze Wisły."
+    ],
+    "summary_en": "A stone slab with a bronze inscription in the park at Solec, marking the 1944 landing of 3rd Infantry Division soldiers who came to help the Warsaw Uprising. Designed by Zygmunt Stępiński and Kazimierz Marczewski and unveiled in September 1951.",
+    "ludzie": [
+      {"kto": "Zygmunt Stępiński", "rola": "projektant pomnika", "wiki": null},
+      {"kto": "Kazimierz Marczewski", "rola": "projektant pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": ["Płyta Czerniakowska", "Płyta Desantu Czerniakowskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Płyta Desantu 3 Dywizji Piechoty", "url": "https://pl.wikipedia.org/wiki/P%C5%82yta_Desantu_3_Dywizji_Piechoty"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje też nazwy: płyta Czerniakowska i płyta Desantu Czerniakowskiego."
+  },
+  {
+    "id": "q22",
+    "nazwa": "Q22",
+    "name_en": "Q22 Office Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Pawła II 22",
+    "adres_historyczny": "miejsce hotelu Mercure Fryderyk Chopin",
+    "lat": 52.2356,
+    "lon": 20.9978,
+    "lokalizacja": "dokladna",
+    "okres": "2013–2016",
+    "istnieje": true,
+    "fakty": [
+      "Hotel Mercure Fryderyk Chopin zakończył działalność 15 grudnia 2011 r.; w tym samym miesiącu spółka Echo Investment kupiła go za 31 mln euro.",
+      "Hotel zburzono w 2012 r.; przy rozbiórce poddano recyklingowi materiały, uzyskując 1500 ton stali i 25 000 ton betonowego kruszywa.",
+      "Budowa rozpoczęła się w czerwcu 2013 r.; wykonawcą stanu surowego była firma Modzelewski & Rodek, a szacunkowa wartość inwestycji to 500 mln zł.",
+      "Projekt wykonała pracownia Kuryłowicz & Associates przy współpracy z polskim oddziałem Buro Happold.",
+      "Pod budynkiem zaplanowano 5-kondygnacyjny parking.",
+      "Budynek oddano do użytku w lipcu 2016 r."
+    ],
+    "ciekawostki": [
+      "Litera „Q” w nazwie nawiązuje do struktury kryształu kwarcu (ang. quartz), od której pochodzi inspiracja architektoniczna; liczba 22 to numer adresu."
+    ],
+    "summary_en": "A 2016 office tower on Aleja Jana Pawła II 22, built on the site of the Mercure Fryderyk Chopin hotel after its 2011 closure and demolition. Designed by Kuryłowicz & Associates for developer Echo Investment.",
+    "ludzie": [],
+    "dawne_nazwy": ["Mercure Fryderyk Chopin (hotel na tym miejscu)"],
+    "zrodla": [{"tytul": "Wikipedia: Q22", "url": "https://pl.wikipedia.org/wiki/Q22"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ratusz-arsenal",
+    "nazwa": "Ratusz Arsenał",
+    "name_en": "Ratusz Arsenał Metro Station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Bankowy, w rejonie ul. Andersa i al. „Solidarności”",
+    "adres_historyczny": null,
+    "lat": 52.244722,
+    "lon": 21.000556,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś (nazwa Ratusz w latach 2001–2006)",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M1 metra w Warszawie, w latach 2001–2006 nosiła nazwę Ratusz.",
+      "31 sierpnia 2006 r. podjęto uchwałę o zmianie nazwy; początkowo planowano nazwę Arsenał dla upamiętnienia akcji pod Arsenałem, ostatecznie zatwierdzono Ratusz Arsenał (bez łącznika).",
+      "Zmiana weszła w życie 29 grudnia 2006 r., wraz z przyłączeniem do I linii stacji Marymont; lektor zaczął czytać nową nazwę od 12 stycznia 2007 r.",
+      "26 marca 2007 r. odbyła się uroczystość zmiany nazwy; odsłonięcie nazwy nastąpiło przy wyjściu od strony ul. Długiej, w 64. rocznicę akcji pod Arsenałem.",
+      "Stacja jest dwukondygnacyjna, z peronem-wyspą o szerokości 12 m i długości 120 m."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-level metro station on the M1 line at Plac Bankowy, renamed in 2006 to Ratusz Arsenał to commemorate the 1944 Arsenał action.",
+    "ludzie": [
+      {"kto": "Zdzisław Kostrzewa", "rola": "architekt, Biuro Projektów AiB-Gen. (projekt stacji)", "wiki": null},
+      {"kto": "Agnieszka Sadkowska", "rola": "wnętrza, Agencja 3A", "wiki": null},
+      {"kto": "Mirosław Duchowski", "rola": "wnętrza, Agencja 3A", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ratusz"],
+    "zrodla": [{"tytul": "Wikipedia: Ratusz Arsenał", "url": "https://pl.wikipedia.org/wiki/Ratusz_Arsena%C5%82"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord o stacji metra; artykuł opisuje głównie nazwę i stację, historia miejsca jest ograniczona."
+  },
+  {
+    "id": "ratusz-starej-warszawy",
+    "nazwa": "Ratusz Starej Warszawy",
+    "name_en": "Town Hall of Old Warsaw",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta",
+    "adres_historyczny": "Rynek Starego Miasta",
+    "lat": 52.2497,
+    "lon": 21.0122,
+    "lokalizacja": "dokladna",
+    "okres": "XV wiek–1817",
+    "istnieje": false,
+    "fakty": [
+      "Pierwsze wzmianki o ratuszu pochodzą z 1429 r.; w formie gotyckiej przetrwał do 1580 r.; pierwotnie miał wymiary 15 na 13 m.",
+      "W piwnicy pod ratuszem sprzedawano piwa wareckie i piątkowskie, co było znaczącym źródłem dochodów miasta.",
+      "W 1580 r. Antonim de Ralia przebudował ratusz na modłę niderlandzką, z czterema cylindrycznymi skarpami w narożach i wieżą ratuszową.",
+      "W 1701 r. wokół ratusza powstał murowany, parterowy budynek z kramami, według projektu Tylmana z Gameren; pożar w 1749 r. zniszczył piętro i wieżę, co przyniosło odbudowę w stylu barokowym.",
+      "W 1781 r. przebudowano go w stylu klasycystycznym, prawdopodobnie według projektu Dominika Merliniego.",
+      "Przed ratuszem 9 maja 1794 r. powieszono przywódców konfederacji targowickiej: Piotra Ożarowskiego, Józefa Ankwicza i Józefa Zabiełłę; 28 czerwca 1794 r. zawisnęli tam kolejni targowiczanie.",
+      "Ratusz rozebrano w 1817 r., gdy stał się za mały dla miasta; jego funkcję przejął pałac Jabłonowskich. Nie został odbudowany po II wojnie światowej."
+    ],
+    "ciekawostki": [
+      "W 1855 r., po uruchomieniu wodociągów miejskich, pośrodku rynku ustawiono wodotrysk z pomnikiem Syrenki dłuta Konstantego Hegla."
+    ],
+    "summary_en": "The Old Town Hall on the Old Town Market Square, standing from the 15th century until its demolition in 1817. Rebuilt several times, it was the site of the 1794 hangings of Targowica Confederation leaders.",
+    "ludzie": [
+      {"kto": "Antonim de Ralia", "rola": "przebudował ratusz w 1580", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "projekt budynku z kramami (1701)", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "prawdopodobny autor przebudowy klasycystycznej (1781)", "wiki": null},
+      {"kto": "Hugo Kołłątaj", "rola": "działacz Oświecenia, przebywał w ratuszu", "wiki": null},
+      {"kto": "Stanisław Mokronowski", "rola": "wybrany komendantem miasta 17/18 kwietnia 1794", "wiki": null},
+      {"kto": "Konstanty Hegel", "rola": "autor pomnika Syrenki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ratusz miasta Starej Warszawy"],
+    "zrodla": [{"tytul": "Wikipedia: Ratusz Starej Warszawy", "url": "https://pl.wikipedia.org/wiki/Ratusz_Starej_Warszawy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Opis dotyczy ratusza na rynku Starego Miasta; rekord nieistniejący (rozebrany 1817)."
+  },
+  {
+    "id": "resursa-obywatelska",
+    "nazwa": "Resursa Obywatelska",
+    "name_en": "Resursa Obywatelska Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 64",
+    "adres_historyczny": "posesja dawnego pałacu (przed 1860 r.)",
+    "lat": 52.245414,
+    "lon": 21.014453,
+    "lokalizacja": "dokladna",
+    "okres": "1860–1861 (budowa); 1861–1939 siedziba Resursy Kupieckiej",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektował Edward Cichocki, a wybudował Leon Karasiński w latach 1860–1861; w latach 1861–1939 była tu siedziba Warszawskiej Resursy Kupieckiej.",
+      "W 1860 r. Towarzystwo Nowej Resursy wyburzyło stary pałac i rozpisało konkurs; zrealizowano syntezę zwycięskiego projektu Cichockiego (fasada) i projektu Karasińskiego (wnętrza, II miejsce).",
+      "Nowy gmach był jednym z najwcześniejszych budynków eklektycznych w stolicy, łączącym cechy neorenesansu, neobaroku i neoklasycyzmu.",
+      "W 1754 r. posesję przejął biskup Andrzej Stanisław Załuski; w latach 1801–1805 wynajmował pałac emigracyjny król Francji Ludwik XVIII.",
+      "W sierpniu 1920 r., w czasie bitwy warszawskiej, mieściła się tu siedziba Wojskowego Gubernatorstwa Warszawy.",
+      "Budynek spalono we wrześniu 1939 r.; odbudowano go w latach 1948–1950 według projektu Michała Ptic-Borkowskiego.",
+      "W 1965 r. budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W 2020 r. na budynku odsłonięto tablicę upamiętniającą Wojskowe Gubernatorstwo Warszawy oraz gen. Franciszka Latinika."
+    ],
+    "summary_en": "A 1860–61 eclectic building at Krakowskie Przedmieście 64, designed by Edward Cichocki as the seat of the Warsaw merchants' Resursa. Burned in 1939 and rebuilt after the war, it is a listed monument.",
+    "ludzie": [
+      {"kto": "Edward Cichocki", "rola": "autor zwycięskiego projektu (fasada)", "wiki": null},
+      {"kto": "Leon Karasiński", "rola": "wykonawca i autor projektu wnętrz (II miejsce)", "wiki": null},
+      {"kto": "Andrzej Stanisław Załuski", "rola": "biskup, właściciel posesji od 1754", "wiki": null},
+      {"kto": "Ludwik XVIII", "rola": "wynajmował pałac w latach 1801–1805", "wiki": null},
+      {"kto": "Michał Ptic-Borkowski", "rola": "autor projektu odbudowy 1948–1950", "wiki": null},
+      {"kto": "Franciszek Latinik", "rola": "wojskowy gubernator Warszawy (tablica 2020)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Resursa Obywatelska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Resursa_Obywatelska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule przy dacie wcześniejszej zabudowy jest znak zapytania (1740–1743); pominięto tę datę."
+  },
+  {
+    "id": "rezydencja-foksal",
+    "nazwa": "Rezydencja Foksal",
+    "name_en": "Rezydencja Foksal Apartment Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mikołaja Kopernika (wejście główne), między ulicami Gałczyńskiego, Kopernika i Przybosia",
+    "adres_historyczny": "kino Skarpa (zburzone)",
+    "lat": 52.2344,
+    "lon": 21.0203,
+    "lokalizacja": "dokladna",
+    "okres": "2009–2012",
+    "istnieje": true,
+    "fakty": [
+      "Pozwolenie na budowę otrzymano w listopadzie 2008 r.; budowę rozpoczęto pod koniec marca 2009 r. i zakończono jesienią 2011 r.; zgodę na użytkowanie wydano na początku stycznia 2012 r. dla inwestora BBI Development.",
+      "Pięciopiętrowy budynek ma 41 luksusowych mieszkań; dwie kondygnacje podziemne zajmuje klub fitness o powierzchni 700 m² z basenem i salą do squasha oraz parking.",
+      "Budynek powstał w miejscu zburzonego kina Skarpa; spółka Max Film, która miała być operatorem dwóch sal kinowych, wycofała się z umowy.",
+      "Projektantami byli Sławomir Stankiewicz, Michał Adamczyk i Krzysztof Tyszkiewicz; połączyli modernizm z art déco.",
+      "Wnętrze zdobią płaskorzeźby prof. Antoniego Pastwy o motywach kwiatowych (słoneczniki, lilie, akanty, papirusy), nawiązujące do konstruktywizmu lat 30.",
+      "W XXII edycji konkursu „Budowa Roku 2011” apartamentowiec otrzymał główną nagrodę w kategorii „Obiekty Oceniane Indywidualnie”."
+    ],
+    "ciekawostki": [
+      "Na najniższych kondygnacjach jest prywatny basen z akwarium, wyłożony mozaiką imitującą fale."
+    ],
+    "summary_en": "A luxury apartment block of 41 flats built in 2009–2011 on the site of the demolished Skarpa cinema, near the Foksal area. Designed in a modernist art deco style with Antoni Pastwa's floral reliefs.",
+    "ludzie": [
+      {"kto": "Sławomir Stankiewicz", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Michał Adamczyk", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Krzysztof Tyszkiewicz", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Antoni Pastwa", "rola": "autor płaskorzeźb (prof.)", "wiki": null},
+      {"kto": "Jacek Synkiewicz", "rola": "projektant wnętrz", "wiki": null}
+    ],
+    "dawne_nazwy": ["kino Skarpa"],
+    "zrodla": [{"tytul": "Wikipedia: Rezydencja Foksal w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rezydencja_Foksal_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rezydencja-piekna-nova",
+    "nazwa": "Rezydencja Piękna Nova",
+    "name_en": "Rezydencja Piękna Nova",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piękna 15",
+    "adres_historyczny": "pałacyk Ambasady Niemiec (spalony w 1939 r., zburzony po wojnie)",
+    "lat": 52.223383,
+    "lon": 21.018378,
+    "lokalizacja": "dokladna",
+    "okres": "2008–2010",
+    "istnieje": true,
+    "fakty": [
+      "Apartamentowiec w Śródmieściu Południowym łączy kamienicę stylizowaną na XIX-wieczną z nowoczesną zabudową; powstał w latach 2008–2010 według projektu pracowni Bulanda Mucha Architekci.",
+      "W miejscu budynku stał pałacyk będący siedzibą Ambasady Niemiec; w 1939 r. spłonął po bombardowaniu Warszawy przez Luftwaffe, a po wojnie zburzono go.",
+      "W okresie powojennym działka była zapleczem kamieniarskim budowy Marszałkowskiej Dzielnicy Mieszkaniowej; do 2008 r. pełniła funkcję parkingu przy budynku Telekomunikacji Polskiej.",
+      "Inwestor, firma Magnus Group, wybrał w 2006 r. projekt w konkursie architektonicznym.",
+      "W budynku jest 76 mieszkań o metrażach od 45 do 170 m²; pod nim dwukondygnacyjny parking.",
+      "Budynek zagrał jedną z głównych ról w komedii Juliusza Machulskiego „Ambassada”."
+    ],
+    "ciekawostki": [
+      "Pierwotnie używana nazwa to „Budynek mieszkalno-usługowy z parkingiem podziemnym, Warszawa, ul. Piękna 13”."
+    ],
+    "summary_en": "A 2008–2010 apartment block at Piękna 15 that mixes a 19th-century style tenement facade with a modern wing. It stands on the site of the German Embassy's villa, burned in 1939, and was a set in Juliusz Machulski's film Ambassada.",
+    "ludzie": [
+      {"kto": "Andrzej Bulanda", "rola": "architekt, Bulanda Mucha Architekci", "wiki": null},
+      {"kto": "Włodzimierz Mucha", "rola": "architekt, Bulanda Mucha Architekci", "wiki": null},
+      {"kto": "Jacek Chyrosz", "rola": "architekt, Bulanda Mucha Architekci", "wiki": null},
+      {"kto": "Juliusz Machulski", "rola": "reżyser filmu „Ambassada”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Budynek mieszkalno-usługowy z parkingiem podziemnym, Warszawa, ul. Piękna 13"],
+    "zrodla": [{"tytul": "Wikipedia: Rezydencja Piękna Nova w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rezydencja_Pi%C4%99kna_Nova_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce podaje adres Piękna 15, a w przypisie pierwotną nazwę z ul. Piękna 13."
+  }
+]

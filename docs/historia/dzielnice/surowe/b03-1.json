@@ -1,0 +1,371 @@
+[
+  {
+    "id": "koszary-mirowskie",
+    "nazwa": "Koszary Mirowskie",
+    "name_en": "Mirów Barracks",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.238361,
+    "lon": 20.99425,
+    "lokalizacja": "dokladna",
+    "okres": "1730–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Koszary wzniesiono w latach 1730–1732 na terenie jurydyki Wielopole, według projektu Joachima Daniela Jaucha, jako element oprawy architektonicznej Osi Saskiej.",
+      "Nazwa koszar pochodzi od nazwiska dowódcy Regimentu Gwardii Konnej Koronnej Wilhelma Miera.",
+      "W latach 1784–1786 koszary zostały przebudowane w stylu klasycystycznym przez Stanisława Zawadzkiego.",
+      "Regiment Gwardii Konnej Koronnej stacjonował w Koszarach Mirowskich do 1794 (po II rozbiorze Polski). W 1831 w koszarach sformował się 6 Pułk Ułanów „Dzieci Warszawy”.",
+      "W 1851, po przebudowie przeprowadzonej przez Józefa Lessla, w zachodnich budynkach koszar umieszczono IV Oddział Warszawskiej Straży Ogniowej.",
+      "W 1898 rozebrano dwie pary budynków od strony wschodniej, uwalniając miejsce pod plac Mirowski i hale Mirowskie, których budowę zapoczątkowano w październiku 1899.",
+      "W 1944, w czasie i po powstaniu warszawskim, budynki koszar zostały spalone. Po wojnie rozebrano budynek południowy, a budynek północny został odbudowany w latach 1948–1950 według projektu Władysława Netto.",
+      "Obiekt w dalszym ciągu jest użytkowany przez warszawską Państwową Straż Pożarną; mieści się w nim Jednostka Ratowniczo-Gaśnicza nr 4."
+    ],
+    "ciekawostki": [
+      "Do nazwy koszar nawiązują m.in. nazwy hal Mirowskich i parku Mirowskiego."
+    ],
+    "summary_en": "The Mirów Barracks were built in 1730–1732 for the Crown Horse Guards Regiment, designed by Joachim Daniel Jauch as part of the Saxon Axis. Rebuilt in the classicist style in 1784–1786, they were partly demolished in 1898 to make way for the Mirów Halls and burned during the 1944 Warsaw Uprising. The northern building was rebuilt after the war and still houses a fire brigade unit.",
+    "ludzie": [
+      {"kto": "Joachim Daniel Jauch", "rola": "projektant koszar (1730–1732)", "wiki": null},
+      {"kto": "Wilhelm Mier", "rola": "dowódca Regimentu Gwardii Konnej Koronnej, od którego pochodzi nazwa koszar", "wiki": null},
+      {"kto": "Stanisław Zawadzki", "rola": "autor przebudowy w stylu klasycystycznym (1784–1786)", "wiki": null},
+      {"kto": "Józef Lessel", "rola": "autor przebudowy z 1851", "wiki": null},
+      {"kto": "Władysław Netto", "rola": "autor projektu odbudowy budynku północnego (1948–1950)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koszary Gwardii Konnej Koronnej", "Koszary Wielopolskie"],
+    "zrodla": [{"tytul": "Wikipedia: Koszary Mirowskie", "url": "https://pl.wikipedia.org/wiki/Koszary_Mirowskie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres dzisiejszy nie jest podany w artykule. Artykuł mówi o użytkowaniu przez straż pożarną w czasie teraźniejszym."
+  },
+  {
+    "id": "kolo",
+    "nazwa": "Koło",
+    "name_en": "Koło estate",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.245148,
+    "lon": 20.945587,
+    "lokalizacja": "przyblizona",
+    "okres": "międzywojnie–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Według MSI granice Koła wyznaczają: granica Woli z dzielnicą Żoliborz, zachodnia granica Lasku na Kole, linia kolejowa nr 20 i ul. Górczewska.",
+      "Nazwa pochodzi od Koła Rycerskiego, tj. terenu przy starym trakcie do Sochaczewa, gdzie stawało zgromadzenie posłów ziemskich.",
+      "W okresie międzywojennym na Kole zbudowano osiedla mieszkaniowe Towarzystwa Osiedli Robotniczych i Banku Gospodarstwa Krajowego.",
+      "Po II wojnie światowej powstało tam kolejne pięć osiedli.",
+      "W 1948 Koło odwiedził Pablo Picasso, który w jednym z mieszkań znajdujących się w nowo budowanym bloku mieszkalnym narysował wizerunek Syrenki."
+    ],
+    "ciekawostki": [
+      "Pablo Picasso w 1948 roku narysował wizerunek Syrenki w jednym z mieszkań nowo budowanego bloku na Kole."
+    ],
+    "summary_en": "Koło is a group of housing estates and a Warsaw City Information System area in the Wola district. Its name comes from the Koło Rycerskie, where provincial deputies gathered during the elections. Interwar housing cooperatives built estates here, and Pablo Picasso drew a Syrenka in one of its flats in 1948.",
+    "ludzie": [
+      {"kto": "Pablo Picasso", "rola": "odwiedził Koło w 1948 i w jednym z mieszkań narysował wizerunek Syrenki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Koło (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%82o_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord dotyczy osiedla, nie pojedynczego budynku; współrzędne to przybliżony środek obszaru z nagłówka. Zachodni fragment Koła to historycznie Ulrychów."
+  },
+  {
+    "id": "kosciol-dobrego-pasterza",
+    "nazwa": "Kościół Dobrego Pasterza",
+    "name_en": "Church of the Good Shepherd, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Szczecińskiego 5",
+    "adres_historyczny": null,
+    "lat": 52.2364,
+    "lon": 20.9386,
+    "lokalizacja": "dokladna",
+    "okres": "1995–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia została wybudowana w latach 1995–2001.",
+      "Projektantami byli Konrad Kucza-Kuczyński, Andrzej Miklaszewski i Piotr Kudelski, a budowniczym ks. Józef Łazicki.",
+      "Na klinkierowej ścianie za ołtarzem umieszczono obraz przedstawiający Jezusa Chrystusa wśród stada owiec pasących się na zielonym pastwisku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of the Good Shepherd on Szczecińska Street in Wola was built in 1995–2001. It was designed by Konrad Kucza-Kuczyński, Andrzej Miklaszewski and Piotr Kudelski, with Fr. Józef Łazicki as builder. Behind the altar is a brick wall with a painting of Jesus among sheep.",
+    "ludzie": [
+      {"kto": "Konrad Kucza-Kuczyński", "rola": "projektant świątyni", "wiki": null},
+      {"kto": "Andrzej Miklaszewski", "rola": "projektant świątyni", "wiki": null},
+      {"kto": "Piotr Kudelski", "rola": "projektant świątyni", "wiki": null},
+      {"kto": "ks. Józef Łazicki", "rola": "budowniczy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół Dobrego Pasterza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Dobrego_Pasterza_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki, bez historii poza budową."
+  },
+  {
+    "id": "kosciol-matki-boskiej-nieustajacej-pomocy",
+    "nazwa": "Kościół Matki Boskiej Nieustającej Pomocy w Warszawie",
+    "name_en": "Church of Our Lady of Perpetual Help (Mariavite), Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Wolska 186",
+    "adres_historyczny": null,
+    "lat": 52.224080555,
+    "lon": 20.930263888,
+    "lokalizacja": "dokladna",
+    "okres": "1994–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pod koniec lat 80. i na początku lat 90. XX w. liczba mariawitów w Warszawie stale wzrastała, co wymagało budowy nowego, większego kościoła, który miał zastąpić starszy, zbudowany w latach 30. XX wieku.",
+      "3 sierpnia 1994 został położony kamień węgielny pod budowę nowego kościoła według projektu Juliusza Marcinkowskiego.",
+      "21 września 1997 Biskup Naczelny Zdzisław Maria Włodzimierz Jaworski konsekrował nową świątynię.",
+      "Od 17 czerwca 2001 kościół posiada murowaną dzwonnicę, w której trzy dzwony sterowane są mechanizmem zegarowym.",
+      "Kościół jest główną świątynią parafii Starokatolickiej Mariawitów Matki Boskiej Nieustającej Pomocy w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Mariavite church of Our Lady of Perpetual Help on Wolska Street replaced an older 1930s church. Its cornerstone was laid in 1994, and Bishop Zdzisław Jaworski consecrated it in 1997. A brick bell tower with three clock-driven bells was added in 2001.",
+    "ludzie": [
+      {"kto": "Juliusz Marcinkowski", "rola": "projektant nowego kościoła", "wiki": null},
+      {"kto": "Zdzisław Maria Włodzimierz Jaworski", "rola": "Biskup Naczelny, konsekrował świątynię w 1997", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół Matki Boskiej Nieustającej Pomocy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Boskiej_Nieustaj%C4%85cej_Pomocy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-matki-boskiej-nieustajacej-pomocy-stary",
+    "nazwa": "Kościół Matki Boskiej Nieustającej Pomocy w Warszawie (stary)",
+    "name_en": "Old Church of Our Lady of Perpetual Help (Mariavite), Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Wolska",
+    "adres_historyczny": null,
+    "lat": 52.224139,
+    "lon": 20.931417,
+    "lokalizacja": "dokladna",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa świątyni została ukończona w 1934 roku.",
+      "Podczas kampanii wrześniowej i powstania warszawskiego kościół został zniszczony.",
+      "W 1955 roku władze Kościoła mianowały proboszczem kapłana Bernarda Kuklę i powierzyły mu odbudowę świątyni.",
+      "23 października 1960 roku biskup naczelny Maria Michał Sitek poświęcił kościół pod wezwaniem Matki Boskiej Nieustającej Pomocy.",
+      "8 kwietnia 1967 roku biskup Maria Innocenty Gołębiowski poświęcił w świątyni organy o siedmiu głosach.",
+      "Na początku lat dziewięćdziesiątych XX wieku pogorszył się stan techniczny kościoła – jego mury zaczęły pękać na skutek ruchu na pobliskiej, nowo oddanej linii tramwajowej.",
+      "W związku z tym została podjęta decyzja o budowie większej świątyni, konsekrowanej w 1997 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The old Mariavite church of Our Lady of Perpetual Help, finished in 1934, stands on the Mariavite cemetery in Ulrychów. It was destroyed in 1939 and 1944 and rebuilt after 1955, and was consecrated in 1960. Cracks caused by a new tram line in the early 1990s led to the building of the larger church nearby.",
+    "ludzie": [
+      {"kto": "Bernard Kukla", "rola": "proboszcz, który odbudowywał świątynię po wojnie", "wiki": null},
+      {"kto": "Maria Michał Sitek", "rola": "biskup naczelny, poświęcił kościół w 1960", "wiki": null},
+      {"kto": "Maria Innocenty Gołębiowski", "rola": "biskup, poświęcił organy w 1967", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół Matki Boskiej Nieustającej Pomocy w Warszawie (stary)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Boskiej_Nieustaj%C4%85cej_Pomocy_w_Warszawie_%28stary%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nazywa to 'dawny kościół parafialny' i opisuje go w czasie teraźniejszym ('znajduje się'); nie podaje wprost, czy dziś pełni funkcję sakralną. Adres podany w artykule to tylko ulica."
+  },
+  {
+    "id": "kosciol-sw-augustyna",
+    "nazwa": "Kościół św. Augustyna w Warszawie",
+    "name_en": "St. Augustine Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Nowolipki 18",
+    "adres_historyczny": "ul. Dzielna (dom z placem zapisany pod budowę kościoła)",
+    "lat": 52.244444,
+    "lon": 20.988611,
+    "lokalizacja": "dokladna",
+    "okres": "1891–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Józef Mikulicki, urzędnik warszawskiej kasy gubernialnej, zapisał dom wraz z placem przy ulicy Dzielnej pod budowę nowego kościoła.",
+      "Hrabina Aleksandra Potocka, wdowa po Auguście Potockim, przeznaczyła na ten cel ogromną jak na owe czasy sumę 300 tysięcy rubli.",
+      "Do budowy przystąpiono w 1891. Kamień węgielny poświęcił 20 października 1892 arcybiskup warszawski Wincenty Teofil Popiel.",
+      "10 grudnia 1896 pierwszą mszę św. w nowym kościele odprawił arcybiskup Popiel. W 1903 erygowano przy kościele parafię.",
+      "Konsekracja kościoła przez biskupa Ruszkiewicza miała miejsce w 1905 (a nie jak podaje tablica erekcyjna w 1896).",
+      "W listopadzie 1940 kościół znalazł się na terenie warszawskiego getta.",
+      "Ks. Franciszek Garncarek został zamordowany przez Niemców 20 grudnia 1943, zaś wikariusz ks. Leon Więckowicz został aresztowany 3 grudnia 1942, za pomoc udzielaną Żydom, i zmarł 4 sierpnia 1944 w obozie koncentracyjnym Gross Rosen.",
+      "11 kwietnia 2019 na terenie kościoła jeden z członków miejscowej parafii zamordował 65-letniego mężczyznę, ojca jednego z księży, i pobił broniącego go duchownego."
+    ],
+    "ciekawostki": [
+      "Od lipca 1941 w kościele działał założony przez konwertytę Andrzeja Marka „Nowy Teatr Kameralny”.",
+      "Niemcy mieli w planie wysadzenie kościoła po powstaniu warszawskim, czego jednak nie zrealizowali."
+    ],
+    "summary_en": "St. Augustine's Church on Nowolipki Street was funded by Countess Aleksandra Potocka and built from 1891, with the cornerstone laid in 1892. It was inside the Warsaw Ghetto in 1940, and during the 1944 Uprising the Germans set fire to its roof. It was consecrated in 1905.",
+    "ludzie": [
+      {"kto": "Józef Mikulicki", "rola": "ofiarodawca domu i placu pod budowę", "wiki": null},
+      {"kto": "Aleksandra Potocka", "rola": "fundatorka, przeznaczyła 300 tys. rubli", "wiki": null},
+      {"kto": "Ludwik Górski", "rola": "przewodniczący Komitetu Budowy Kościoła", "wiki": null},
+      {"kto": "Edward Cichocki", "rola": "autor projektu świątyni", "wiki": null},
+      {"kto": "Józef Huss", "rola": "autor projektu świątyni", "wiki": null},
+      {"kto": "Wincenty Teofil Popiel", "rola": "arcybiskup warszawski, poświęcił kamień węgielny i odprawił pierwszą mszę", "wiki": null},
+      {"kto": "Franciszek Garncarek", "rola": "proboszcz, zamordowany przez Niemców 20 grudnia 1943", "wiki": null},
+      {"kto": "Leon Więckowicz", "rola": "wikariusz, aresztowany 3 grudnia 1942, zmarł 4 sierpnia 1944 w Gross Rosen", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Augustyna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Augustyna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ks. Garncarek w artykule to 'proboszcz'; w tekście nie ma roku jego urodzenia. Adres historyczny to ul. Dzielna z artykułu."
+  },
+  {
+    "id": "kosciol-sw-jozefa-kolo",
+    "nazwa": "Kościół św. Józefa Oblubieńca Najświętszej Maryi Panny i św. Jana od Krzyża w Warszawie",
+    "name_en": "St. Joseph Church on Koło, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2445,
+    "lon": 20.94714,
+    "lokalizacja": "dokladna",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia została poświęcona 6 sierpnia 1951 roku przez kardynała Stefana Wyszyńskiego, prymasa Polski.",
+      "W 1955 roku została wzniesiona kopuła z polichromią autorstwa profesorów Józefa Sławińskiego i Michała Baranowskiego.",
+      "1 czerwca 1963 roku Prymas Tysiąclecia konsekrował ukończony kościół.",
+      "19 marca 2021 roku kard. Kazimierz Nycz ustanowił świątynię na Kole diecezjalnym sanktuarium św. Józefa.",
+      "Dwupoziomowa świątynia zajmuje powierzchnię 900 metrów kwadratowych i osiąga wysokość 37 metrów.",
+      "Stacje Drogi Krzyżowej i witraże wykonała artystka Maria Hiszpańska-Neuman, a monumentalny krzyż z figurą Pana Jezusa i tablice z tajemnicami różańcowymi wykonał prof. Gustaw Zemła.",
+      "W latach 2013–2015 został wykonany kompleksowy remont wnętrza świątyni razem z wymianą wszystkich instalacji, renowacją posadzki i wystrojem liturgicznym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St. Joseph's Church on the Koło estate was blessed in 1951 and consecrated in 1963. It has a 37-metre high modernist basilica-type building with a central dome. In 2021 Cardinal Kazimierz Nycz made it the diocesan sanctuary of St. Joseph.",
+    "ludzie": [
+      {"kto": "Stefan Wyszyński", "rola": "kardynał, prymas Polski, poświęcił świątynię w 1951", "wiki": null},
+      {"kto": "Józef Sławiński", "rola": "autor polichromii kopuły (1955)", "wiki": null},
+      {"kto": "Michał Baranowski", "rola": "autor polichromii kopuły (1955)", "wiki": null},
+      {"kto": "Kazimierz Nycz", "rola": "kardynał, ustanowił sanktuarium w 2021", "wiki": null},
+      {"kto": "Maria Hiszpańska-Neuman", "rola": "artystka, autorka stacji Drogi Krzyżowej i witraży", "wiki": null},
+      {"kto": "Gustaw Zemła", "rola": "rzeźbiarz, autor krzyża i tablic różańcowych", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Józefa Oblubieńca Najświętszej Maryi Panny i św. Jana od Krzyża w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._J%C3%B3zefa_Oblubie%C5%84ca_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_i_%C5%9Bw._Jana_od_Krzy%C5%BCa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres ulicy nie jest podany w artykule. Artykuł nie wymienia z nazwiska konsekratora z 1963 roku (podano 'Prymas Tysiąclecia')."
+  },
+  {
+    "id": "kosciol-sw-karola-boromeusza-powazki",
+    "nazwa": "Kościół św. Karola Boromeusza w Warszawie (Powązki)",
+    "name_en": "St. Charles Borromeo Church, Powązki, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Powązkowska 14",
+    "adres_historyczny": null,
+    "lat": 52.253333,
+    "lon": 20.978056,
+    "lokalizacja": "dokladna",
+    "okres": "1790–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół powstał pomiędzy rokiem 1790 a 1793 według projektu Dominika Merliniego, z fundacji króla Stanisława Augusta i jego brata, ówczesnego prymasa Michała Poniatowskiego.",
+      "W 1849 roku rozpoczęła się przebudowa pod kierunkiem architekta Alfonsa Kropiwnickiego, a 22 września 1850 odbyła się uroczysta konsekracja odnowionego kościoła.",
+      "W latach 1891–1898 zbudowano praktycznie nową świątynię według planów i pod kierunkiem Józefa Piusa Dziekońskiego; powstał sześciokrotnie większy kościół na planie krzyża łacińskiego.",
+      "W czasie powstania warszawskiego Niemcy zlokalizowali na cmentarzu stanowisko ciężkiej artylerii; spadające bomby wznieciły pożar, w wyniku którego spadła kopuła, a zabytkowe dzwony spadły z wieży i stopiły się.",
+      "Powojenną konserwację ukończono w 1960; w 1965 roku świątynia została wpisana do rejestru zabytków.",
+      "1 września 1984 krzyż z napisem „Poległym na Wschodzie” został poświęcony przez prymasa Polski, kardynała Józefa Glempa.",
+      "W 1990 roku pod krzyżem wmurowano relikwiarz z czaszką jednego z polskich oficerów zamordowanych w Katyniu."
+    ],
+    "ciekawostki": [
+      "Przy kościele zaczęli się skupiać członkowie rodzin ofiar zbrodni katyńskiej, a ścianę koło krzyża pokryto ok. 1000 tabliczek epitafijnych.",
+      "Czaszkę wywiózł w 1943 z Katynia prof. Eduard Miloslavić, członek Międzynarodowej Komisji Lekarskiej (MKL)."
+    ],
+    "summary_en": "St. Charles Borromeo Church in Powązki was built in 1790–1793 to a design by Dominik Merlini, founded by King Stanisław August and Primate Michał Poniatowski. It was rebuilt in 1891–1898 and damaged in 1944. On its outer wall is a memorial to Poles killed in the East, including those murdered at Katyń.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "autor projektu kościoła (1790–1793)", "wiki": null},
+      {"kto": "Stanisław August", "rola": "fundator kościoła", "wiki": null},
+      {"kto": "Michał Poniatowski", "rola": "fundator kościoła, ówczesny prymas", "wiki": null},
+      {"kto": "Alfons Kropiwnicki", "rola": "architekt przebudowy z 1849", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "autor przebudowy 1891–1898", "wiki": null},
+      {"kto": "Stefan Niedzielak", "rola": "proboszcz i rektor, z jego inicjatywy powstało miejsce pamięci w 1984", "wiki": null},
+      {"kto": "Jadwiga Zienkiewiczowa", "rola": "autorka krzyża z napisem „Poległym na Wschodzie”", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "kardynał, prymas Polski, poświęcił krzyż 1 września 1984", "wiki": null},
+      {"kto": "Eduard Miloslavić", "rola": "członek Międzynarodowej Komisji Lekarskiej, wywiózł czaszkę z Katynia w 1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Karola Boromeusza w Warszawie (Powązki)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Karola_Boromeusza_w_Warszawie_%28Pow%C4%85zki%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje kościół na terenie cmentarza Powązkowskiego."
+  },
+  {
+    "id": "kosciol-sw-stanislawa-biskupa-i-meczennika",
+    "nazwa": "Kościół św. Stanisława Biskupa i Męczennika w Warszawie",
+    "name_en": "St. Stanislaus Bishop and Martyr Church, Warsaw (Bema Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Bema 73/75",
+    "adres_historyczny": null,
+    "lat": 52.2274,
+    "lon": 20.9589,
+    "lokalizacja": "dokladna",
+    "okres": "1858–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół został wybudowany w latach 1858–1860 według projektu Józefa Orłowskiego. W tamtym czasie obszar ten nie znajdował się w granicach administracyjnych Warszawy.",
+      "Do kościoła nawiązywały nazwy Droga Kościelna lub Droga Parafialna, obecnej ul. J. Bema.",
+      "Obraz Matki Bożej Elekcyjnej (powstały w 1621) trafił w 1860 roku do nowo wybudowanego kościoła; wcześniej, po przejęciu świątyni przez władze rosyjskie w 1834, był w prywatnej kaplicy rodziny Biernackich.",
+      "8 maja, w dniu św. Stanisława, przy kościele odbywał się odpust, który przyciągał tysiące mieszkańców Warszawy.",
+      "W latach 1927–1932 do świątyni dobudowano dwie nawy boczne według projektu Wacława Popławskiego.",
+      "W 2009 roku abp Kazimierz Nycz poświęcił tablicę upamiętniającą 200 tys. Polaków rzekomo zamordowanych w obozie KL Warschau, która została umieszczona przy wejściu do kościoła."
+    ],
+    "ciekawostki": [
+      "Obraz Matki Bożej Elekcyjnej towarzyszył elekcjom królów na polach Woli; pierwotnie nosił nazwę Matki Boskiej Pocieszenia."
+    ],
+    "summary_en": "St. Stanislaus Church on Bema Street was built in 1858–1860 to a design by Józef Orłowski, in what was then outside Warsaw's city limits. It holds the image of Our Lady of the Election, which accompanied royal elections on the Wola fields. Side aisles were added in 1927–1932.",
+    "ludzie": [
+      {"kto": "Józef Orłowski", "rola": "autor projektu kościoła (1858–1860)", "wiki": null},
+      {"kto": "Leopold Rzeczycki", "rola": "pierwszy proboszcz", "wiki": null},
+      {"kto": "Wacław Popławski", "rola": "autor projektu bocznych naw (1927–1932)", "wiki": null},
+      {"kto": "Kazimierz Nycz", "rola": "arcybiskup, poświęcił tablicę w 2009 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Stanisława Biskupa i Męczennika w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Stanis%C5%82awa_Biskupa_i_M%C4%99czennika_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tablica z 2009 roku zawiera kontrowersyjne twierdzenie; artykuł opisuje je jako 'rzekomo', przepisano bez oceny. Współrzędne z nagłówka."
+  },
+  {
+    "id": "kosciol-sw-stanislawa-biskupa-wolska",
+    "nazwa": "Kościół św. Stanisława Biskupa w Warszawie",
+    "name_en": "St. Stanislaus Bishop Church, Wolska Street (St. Adalbert)",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Wolska 76",
+    "adres_historyczny": null,
+    "lat": 52.2333,
+    "lon": 20.9608,
+    "lokalizacja": "dokladna",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prace nad budową kościoła w stylu neogotyckim rozpoczęto w czerwcu 1898 według projektu Józefa Piusa Dziekońskiego.",
+      "Uroczyste otwarcie kościoła nastąpiło 8 lipca 1903.",
+      "W czerwcu 1925 nastąpił pożar kościoła w wyniku zwarcia przewodów elektrycznych – spłonęły chór, organy i część wieży.",
+      "1 kwietnia 1927 dekretem ks. kard. Aleksandra Kakowskiego powołano parafię św. Wojciecha. Pierwszym proboszczem parafii został ks. Wacław Murawski.",
+      "Podczas powstania warszawskiego w 1944 kościół stał się obozem przejściowym dla ewakuowanych mieszkańców stolicy.",
+      "8 sierpnia 1944 za pomoc udzieloną więźniom obozu rozstrzelano księży wikariuszy: Stanisława Mączka i Stanisława Kuleszę oraz rezydenta ks. Romana Ciesiołkiewicza.",
+      "31 maja 1966 kard. Stefan Wyszyński konsekrował kościół.",
+      "Od 16 października 2006 w Kaplicy Pamięci Narodowej, w lewej nawie kościoła, znajduje się symboliczny grób papieża Jana Pawła II, którego pomysłodawcą był ówczesny wikariusz ks. Mariusz Brzostek."
+    ],
+    "ciekawostki": [
+      "W płycie grobu, pod szkłem, umieszczono fragment pasa od sutanny papieża, podarowany parafii staraniem proboszcza ks. prałata Wojciecha Łagowskiego, przez osobistego sekretarza papieża kardynała Stanisława Dziwisza."
+    ],
+    "summary_en": "St. Stanislaus Bishop Church on Wolska Street is a neo-Gothic church designed by Józef Pius Dziekoński, opened in 1903. During the 1944 Uprising it served as a transit camp, and three priests were executed there in August. Since 2006 a symbolic grave of Pope John Paul II has been in its Chapel of National Memory.",
+    "ludzie": [
+      {"kto": "Józef Pius Dziekoński", "rola": "autor projektu kościoła", "wiki": null},
+      {"kto": "Aleksander Kakowski", "rola": "kardynał, dekretem z 1927 powołał parafię św. Wojciecha", "wiki": null},
+      {"kto": "Wacław Murawski", "rola": "pierwszy proboszcz parafii", "wiki": null},
+      {"kto": "Stanisław Mączek", "rola": "ksiądz wikariusz, rozstrzelany 8 sierpnia 1944", "wiki": null},
+      {"kto": "Stanisław Kulesza", "rola": "ksiądz wikariusz, rozstrzelany 8 sierpnia 1944", "wiki": null},
+      {"kto": "Roman Ciesiołkiewicz", "rola": "rezydent, rozstrzelany 8 sierpnia 1944", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał, konsekrował kościół w 1966", "wiki": null},
+      {"kto": "Mariusz Brzostek", "rola": "wikariusz, pomysłodawca symbolicznego grobu Jana Pawła II", "wiki": null},
+      {"kto": "Stanisław Dziwisz", "rola": "kardynał, osobisty sekretarz papieża, przekazał fragment pasa od sutanny", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kościół św. Wojciecha (nazwa zwyczajowa)"],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Stanisława Biskupa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Stanis%C5%82awa_Biskupa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje nazwę zwyczajową 'kościół św. Wojciecha' (parafia św. Wojciecha). Kościół jest przy skrzyżowaniu z ul. Sokołowską (artykuł pisze 'Sokołowsiej')."
+  }
+]

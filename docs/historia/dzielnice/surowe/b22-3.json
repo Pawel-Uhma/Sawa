@@ -1,0 +1,551 @@
+[
+  {
+    "id": "kamienica-jacobsona",
+    "nazwa": "Kamienica Jacobsona",
+    "name_en": "Jacobson Palace-Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. „Solidarności” 105",
+    "adres_historyczny": "ul. Leszno 25",
+    "lat": 52.242454, "lon": 20.996254,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica w formie przyulicznego pałacyku, wzniesiona około 1780 roku w stylu klasycystycznym.",
+      "Projekt wykonał Szymon Bogumił Zug lub Jan Chrystian Kamsetzer dla jubilera królewskiego Fryderyka Jacobsona.",
+      "Pierwotnym adresem budynku była ul. Leszno 25.",
+      "Budynek został częściowo zniszczony w 1944 roku; odbudowano go w latach 1962–1977 ze znacznymi zmianami.",
+      "Wewnątrz budynku zachowały się dekoracje.",
+      "W 1965 roku pałac wpisano do rejestru zabytków.",
+      "Jest siedzibą Instytutu Archeologii i Etnologii PAN."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A classicist townhouse-palace on al. Solidarności 105, built around 1780 for royal jeweller Fryderyk Jacobson and originally at Leszno 25. It was partly destroyed in 1944, rebuilt with major changes in 1962–1977, and now houses an archaeology and ethnology institute of the Polish Academy of Sciences.",
+    "ludzie": [
+      {"kto": "Fryderyk Jacobson", "rola": "jubiler królewski, inwestor", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "możliwy projektant", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "możliwy projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Jacobsona w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Jacobsona_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Autorstwo projektu niepewne (Zug lub Kamsetzer)."
+  },
+  {
+    "id": "kamienica-jakuba-fontany",
+    "nazwa": "Kamienica Jakuba Fontany",
+    "name_en": "Jakub Fontana Tenement (Mokronowski Palace)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zakroczymska 2 / ul. Kościelna 12",
+    "adres_historyczny": null,
+    "lat": 52.253611, "lon": 21.006944,
+    "lokalizacja": "dokladna",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek na rogu ul. Zakroczymskiej 2 i ul. Kościelnej 12, nazywany też pałacem Mokronowskich.",
+      "W 1734 roku właścicielem był Stefan Bernacki; na miejscu drewnianej zabudowy wzniesiono kamienicę w 1770 roku.",
+      "Kamienica była jedynym budynkiem frontowym w mieście o 11-osiowej fasadzie z arkadowymi podcieniami w parterze.",
+      "W 1806 roku podcienia zamurowano, a fasadę przekształcono według projektu Fryderyka A. Lessla, z trójosiowym ryzalitem środkowym.",
+      "W 1944 roku kamienica została w znacznej mierze zburzona, ale zachowały się mury konstrukcyjne i elewacje, dzięki czemu mogła zostać zrekonstruowana.",
+      "Około 1953 roku zrezygnowano z rekonstrukcji fasady z czasów Lessla i wybudowano od fundamentów gmach będący wizją pierwotnej kamienicy.",
+      "W kamienicy mieszczą się Biblioteka, Muzeum i Archiwum Warszawskiego Towarzystwa Muzycznego im. Stanisława Moniuszki."
+    ],
+    "ciekawostki": [
+      "W archiwum przechowywane są autografy utworów z XIX wieku, m.in. Stanisława Moniuszki, Fryderyka Chopina, Józefa Elsnera i Karola Kurpińskiego."
+    ],
+    "summary_en": "A building on the corner of Zakroczymska and Kościelna streets, known as the Mokronowski Palace, with an 11-bay arcaded façade. Largely destroyed in 1944 and rebuilt around 1953 in a new form, it now houses the library, museum and archive of the Stanisław Moniuszko Warsaw Music Society.",
+    "ludzie": [
+      {"kto": "Stefan Bernacki", "rola": "właściciel w 1734 roku", "wiki": null},
+      {"kto": "Jan i Stanisław Grayber", "rola": "właściciele po 1776 roku, kapitanowie wojsk koronnych", "wiki": null},
+      {"kto": "Józef Potkański", "rola": "kasztelan radomski, właściciel", "wiki": null},
+      {"kto": "Fryderyk A. Lessel", "rola": "projekt przebudowy fasady w 1806 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Mokronowskich"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Jakuba Fontany w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Jakuba_Fontany_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-jana-alfonsa-jasinskiego",
+    "nazwa": "Kamienica Jana Alfonsa Jasińskiego",
+    "name_en": "Jan Alfons Jasiński Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 25",
+    "adres_historyczny": null,
+    "lat": 52.2328, "lon": 21.0195,
+    "lokalizacja": "dokladna",
+    "okres": "1822–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Nowy Świat 25, wzniesiona w 1822 roku.",
+      "W 1784 roku na miejscu posesji stał drewniany dworek Jana Dietrycha (Dytrycha).",
+      "W 1822 roku wybudowano tu reprezentacyjną, późnoklasycystyczną, trzyosiową kamienicę dla kupca Jana Adolfa Jasińskiego według projektu Karola Gallego.",
+      "W drugiej połowie XIX wieku znajdowała się tu księgarnia Leopolda Szyllera.",
+      "Przed 1923 rokiem budynek przeszedł na własność Instytutu Wydawniczego „Biblioteka Polska”, założonego przez Władysława Augusta Kościelskiego.",
+      "W czasie wojny działało tu kino „Studio”, a pod nim dansing „Bodega”.",
+      "Pod koniec II wojny światowej oba budynki zostały zniszczone; w 1951 roku kamienicę odbudowano w XIX-wiecznej, dwupiętrowej formie.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na ścianie budynku umieszczono tablicę upamiętniającą, że Julian Tuwim mieszkał w tym domu w latach 1951–1953."
+    ],
+    "summary_en": "A late-classicist townhouse at Nowy Świat 25, built in 1822 for merchant Jan Adolf Jasiński. It was destroyed at the end of WWII and rebuilt in 1951 in its 19th-century two-storey form; Julian Tuwim lived here in 1951–1953.",
+    "ludzie": [
+      {"kto": "Jan Adolf Jasiński", "rola": "kupiec, inwestor", "wiki": null},
+      {"kto": "Karol Gallego", "rola": "projekt kamienicy z 1822 roku", "wiki": null},
+      {"kto": "Leopold Szyller", "rola": "właściciel księgarni w drugiej połowie XIX wieku", "wiki": null},
+      {"kto": "Władysław August Kościelski", "rola": "założyciel Instytutu Wydawniczego „Biblioteka Polska”", "wiki": null},
+      {"kto": "Julian Tuwim", "rola": "mieszkaniec w latach 1951–1953", "wiki": null},
+      {"kto": "Kazimierz Thor", "rola": "kierował odbudową (pracownia ZOR, 1951)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Jana Alfonsa Jasińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Jana_Alfonsa_Jasi%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-jana-fruzinskiego",
+    "nazwa": "Kamienica Jana Fruzińskiego",
+    "name_en": "Jan Fruziński Tenement (destroyed)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "zbieg ul. Marszałkowskiej i ul. Wilczej",
+    "lat": 52.224551, "lon": 21.014593,
+    "lokalizacja": "dokladna",
+    "okres": "lata 80. XIX wieku–1944",
+    "istnieje": false,
+    "fakty": [
+      "Kamienicę wybudowano w latach 80. XIX wieku, prawdopodobnie według projektu Artura Spitzbartha.",
+      "Początkowo była trzypiętrową kamienicą o eklektycznym wystroju architektonicznym.",
+      "W 1913 roku przebudowano ją dla Jana Fruzińskiego według projektu Juliusza Nagórskiego, z dekoracją w stylu Ludwika XV.",
+      "Na parterze znajdowała się cukiernia z wyrobami firmy cukierniczej Fruzińskiego.",
+      "Budynek został zniszczony w czasie II wojny światowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A late-19th-century tenement at the corner of Marszałkowska and Wilcza streets, remodelled in 1913 for Jan Fruziński in Louis XV style, with a branch of his confectionery company on the ground floor. It was destroyed in WWII.",
+    "ludzie": [
+      {"kto": "Artur Spitzbarth", "rola": "prawdopodobny projektant pierwotnej kamienicy", "wiki": null},
+      {"kto": "Jan Fruziński", "rola": "właściciel, zlecił przebudowę w 1913 roku", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "projekt przebudowy z 1913 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Jana Fruzińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Jana_Fruzi%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł krótki; nie podaje roku zniszczenia, tylko II wojnę światową."
+  },
+  {
+    "id": "kamienica-jana-wernera-i-marii-lilpop",
+    "nazwa": "Kamienica Jana Wernera i Marii Lilpop",
+    "name_en": "Jan Werner and Maria Lilpop Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "zbieg ul. Zgody i ul. Chmielnej",
+    "adres_historyczny": null,
+    "lat": 52.23244, "lon": 21.01433,
+    "lokalizacja": "dokladna",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica zbudowana w 1877 roku na zbiegu ulic Zgody i Chmielnej na warszawskim Śródmieściu.",
+      "Powstała na miejscu zbudowanej w 1828 roku innej kamienicy.",
+      "W 1902 roku wykonano nadbudowę dwóch pięter, zaplanowaną przez autora oryginalnego projektu, Edwarda Lilpopa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An 1877 corner building at Zgody and Chmielna streets, built on the site of an 1828 tenement. Two upper floors were added in 1902 to the plan of the original designer, Edward Lilpop.",
+    "ludzie": [
+      {"kto": "Edward Lilpop", "rola": "autor oryginalnego projektu; nadbudowa w 1902 roku", "wiki": null},
+      {"kto": "Jan Werner i Maria Lilpop", "rola": "patroni nazwy kamienicy; rola nieopisana w artykule", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Jana Wernera i Marii Lilpop w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Jana_Wernera_i_Marii_Lilpop_w_Warszawie"}],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł bardzo krótki; nie podaje stanu obecnego budynku, istnienie oznaczono na podstawie braku informacji o rozbiórce."
+  },
+  {
+    "id": "kamienica-johna",
+    "nazwa": "Kamienica Johna",
+    "name_en": "John Tenement on Krakowskie Przedmieście",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 89 (przy placu Zamkowym)",
+    "adres_historyczny": null,
+    "lat": 52.246972, "lon": 21.013056,
+    "lokalizacja": "dokladna",
+    "okres": "1654–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza kamienica w tym miejscu została wzniesiona w 1654 roku dla muzyka Adameckiego.",
+      "Ok. 1754 roku kamienicę gruntownie przebudowano według projektu Jana Deybla dla metrykanta koronnego Ignacego Ludwika Nowickiego.",
+      "Od 1784 roku właścicielem był Henryk Münchenbeck, który miał tu skład towarów żelaznych.",
+      "W latach 1790–1796 mieściła się tu księgarnia i wypożyczalnia książek Fryderyka Chrystiana Netty.",
+      "W 1909 roku nieruchomość kupił adwokat Aleksander John.",
+      "W 1911 roku, po zabiegach Towarzystwa Opieki nad Zabytkami Przeszłości, przywrócono kamienicy rokokowy charakter.",
+      "Kamienica spłonęła we wrześniu 1939 roku, a w 1944 roku została całkowicie zniszczona.",
+      "W 1947 roku relikty rozebrano z powodu budowy tunelu Trasy W-Z; odbudowano ją w latach 1949–1950 według projektu Włodzimierza Wapińskiego i Kazimierza Thora.",
+      "Fasadę z 1768 roku odtworzono na podstawie obrazu Canaletta.",
+      "Kamienica jest siedzibą Stowarzyszenia Pisarzy Polskich, PEN Clubu i Związku Literatów Polskich."
+    ],
+    "ciekawostki": [
+      "W 1910 roku ogłoszono konkurs na projekt fasady; wygrał go architekt Konrad Kłos."
+    ],
+    "summary_en": "A tenement on Krakowskie Przedmieście 89 by Castle Square, first built in 1654 and remodelled around 1754 for Ignacy Ludwik Nowicki. It was destroyed in 1944 and rebuilt in 1949–1950 with its façade recreated from a Canaletto painting; it now houses Polish writers' organisations.",
+    "ludzie": [
+      {"kto": "Adamecki", "rola": "muzyk, pierwszy właściciel w 1654 roku", "wiki": null},
+      {"kto": "Ignacy Ludwik Nowicki", "rola": "metrykant koronny, zlecił przebudowę ok. 1754 roku", "wiki": null},
+      {"kto": "Jan Deybel", "rola": "projekt przebudowy ok. 1754 roku", "wiki": null},
+      {"kto": "Aleksander John", "rola": "adwokat, właściciel od 1909 roku", "wiki": null},
+      {"kto": "Konrad Kłos", "rola": "architekt fasady wybrany w konkursie (1910)", "wiki": null},
+      {"kto": "Włodzimierz Wapiński", "rola": "projekt odbudowy (1949–1950)", "wiki": null},
+      {"kto": "Kazimierz Thor", "rola": "projekt odbudowy (1949–1950)", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Ignacego Nowickiego", "kamienica Aleksandra Johna"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Johna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Johna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-judy-wielburskiego",
+    "nazwa": "Kamienica Judy Wielburskiego",
+    "name_en": "Judy Wielburski Tenement (Potempski Tenement)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 2 / al. Szucha 1 (pl. Unii Lubelskiej)",
+    "adres_historyczny": null,
+    "lat": 52.21425, "lon": 21.0216,
+    "lokalizacja": "dokladna",
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek mieszkalny u zbiegu ul. Marszałkowskiej 2 i al. Szucha 1, przy placu Unii Lubelskiej.",
+      "Wzniesiony na początku XX wieku w okresie zabudowy placu Unii Lubelskiej.",
+      "Przetrwał II wojnę światową.",
+      "Charakterystyczne są jego biała elewacja z delikatnymi neoklasycystycznymi detalami oraz wieża z klatką schodową od strony al. Szucha, zwieńczona hełmem.",
+      "24 lipca 2012 roku wpisano go do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An early-20th-century building at the junction of Marszałkowska and Aleja Szucha on Plac Unii Lubelskiej, with a white neo-classical façade and a helmet-roofed stair tower. It survived WWII and was added to Warsaw's municipal heritage register in 2012.",
+    "ludzie": [
+      {"kto": "Judy Wielburski (?)", "rola": "patron nazwy kamienicy; postać niepewna", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Potempskich"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Judy Wielburskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Judy_Wielburskiego_w_Warszawie"}],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł krótki; nazwa z dopiskiem znaku zapytania w tytule."
+  },
+  {
+    "id": "kamienica-juliusza-ostrowskiego",
+    "nazwa": "Kamienica Juliusza Ostrowskiego",
+    "name_en": "Juliusz Ostrowski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 4",
+    "adres_historyczny": null,
+    "lat": 52.214453, "lon": 21.021426,
+    "lokalizacja": "dokladna",
+    "okres": "1906–1908–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pięciopiętrowa kamienica przy ul. Marszałkowskiej 4, wzniesiona w latach 1906–1908 dla Juliusza Ostrowskiego.",
+      "Wchodzi w skład zabytkowego założenia urbanistycznego Osi Stanisławowskiej.",
+      "Przed I wojną światową lub w okresie międzywojennym nadbudowano ją o jedno piętro.",
+      "W 1919 roku Kazimierz Jarocki sprzedał kamienicę Julianowi i Simie Owczyńskim.",
+      "W latach 1931–1932 górne piętro wynajmowało Ministerstwo Wyznań Religijnych i Oświecenia Publicznego.",
+      "Pisarka Zofia Nałkowska przyjmowała tu gości; powstał nieformalny „salon Nałkowskiej”. Na początku października 1936 roku przeniosła się pod adres Podchorążych 101.",
+      "Od stycznia 2007 do września 2012 roku w lokalu nr 3 mieściła się Czarna Galeria.",
+      "24 lipca 2012 roku wpisano ją do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [
+      "W czasie okupacji w lokalu nr 2 działała konspiracyjna „Kawiarenka”, w której w ciągu dnia pracowali generałowie Michał Karaszewicz-Tokarzewski i Stefan „Grot” Rowecki."
+    ],
+    "summary_en": "A five-storey tenement at Marszałkowska 4 in the Stanisław Axis, built in 1906–1908 for Juliusz Ostrowski. It is known for Zofia Nałkowska's salon and for an underground café used by generals during the occupation.",
+    "ludzie": [
+      {"kto": "Juliusz Ostrowski", "rola": "inwestor", "wiki": null},
+      {"kto": "Zofia Nałkowska", "rola": "pisarka, mieszkanka; prowadziła salon", "wiki": null},
+      {"kto": "Bruno Schulz", "rola": "pomieszkiwał w lokalu w 1934 roku", "wiki": null},
+      {"kto": "Michał Karaszewicz-Tokarzewski", "rola": "generał, pracował w „Kawiarence” w czasie okupacji", "wiki": null},
+      {"kto": "Stefan „Grot” Rowecki", "rola": "generał, pracował w „Kawiarence” w czasie okupacji", "wiki": null},
+      {"kto": "Tadeusz Rolke", "rola": "fotograf, mieszkaniec po wojnie", "wiki": null},
+      {"kto": "Agnieszka Czarnecka", "rola": "właścicielka Czarnej Galerii", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Juliusza Ostrowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Juliusza_Ostrowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-jozefa-dawidsohna-i-hackela-kadynskiego",
+    "nazwa": "Kamienica Józefa Dawidsohna i Hackela Kadyńskiego",
+    "name_en": "Józef Dawidsohn and Hackel Kadyński Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 49",
+    "adres_historyczny": null,
+    "lat": 52.228944, "lon": 21.008958,
+    "lokalizacja": "dokladna",
+    "okres": "1913–1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Modernistyczna kamienica powstała w miejscu dawnego The Monster Roller Skating Rink, olbrzymiego wrotkowiska z lat 1910–1912.",
+      "Wzniesiona w latach 1913–1914 dla senatora dr. Józefa Dawidsohna i inżyniera Hackela Kadyńskiego.",
+      "Projektowali ją architekci Józef Napoleon Czerwiński i Wacław Heppen.",
+      "Budynek ma siedem pięter, z czego siódme jest ukryte w mansardowym dachu.",
+      "Parter zajęły cztery lokale handlowe z dużymi witrynami, a na pierwszym piętrze biura i gabinet lekarski.",
+      "Józef Dawidsohn był jednym z czołowych polskich syjonistów; w 1933 roku wyemigrował do Palestyny, a w kamienicy zamieszkała jego córka Halina.",
+      "Budynek nie ucierpiał znacząco w czasie II wojny światowej; w 1965 roku wpisano go do rejestru zabytków, a w 2010 roku przeszedł remont generalny."
+    ],
+    "ciekawostki": [
+      "Zachowała się oryginalna brama z zakładu ślusarskiego S. Szlechtera z Mokotowa."
+    ],
+    "summary_en": "A seven-storey modernist tenement at Jerozolimskie 49, built in 1913–1914 on the site of the Monster Roller Skating Rink for senator Józef Dawidsohn and engineer Hackel Kadyński. It came through WWII largely intact and was fully renovated in 2010.",
+    "ludzie": [
+      {"kto": "Józef Dawidsohn", "rola": "senator, syjonista; inwestor", "wiki": null},
+      {"kto": "Hackel Kadyński", "rola": "inżynier, inwestor", "wiki": null},
+      {"kto": "Józef Napoleon Czerwiński", "rola": "architekt", "wiki": null},
+      {"kto": "Wacław Heppen", "rola": "architekt", "wiki": null},
+      {"kto": "Halina", "rola": "córka Józefa Dawidsohna, zamieszkała w kamienicy po 1933 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["The Monster Roller Skating Rink (wrotkowisko, 1910–1912)"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Józefa Dawidsohna i Hackela Kadyńskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Dawidsohna_i_Hackela_Kady%C5%84skiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-jozefa-duzika",
+    "nazwa": "Kamienica Józefa Duzika",
+    "name_en": "Józef Duzik Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 61",
+    "adres_historyczny": null,
+    "lat": 52.228333, "lon": 21.006056,
+    "lokalizacja": "dokladna",
+    "okres": "1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa neorenesansowa kamienica w Alejach Jerozolimskich 61, wybudowana w 1897 roku dla Józefa Duzika według projektu nieznanego architekta.",
+      "Od końca lat 20. XX wieku budynek należał do Towarzystwa Ubezpieczeniowego „Warta”.",
+      "W 1927 roku przebudowano go według projektu Bolesława Handelsmana Targowskiego, który zakładał m.in. budowę czwartego i piątego piętra oraz windy.",
+      "Obok bramy widnieje napis: „B.H. Targowski architekt przebudował 1927”.",
+      "W latach 30. budynek pełnił funkcje biurowe, a na ostatnim piętrze mieszkalne.",
+      "Kamienicę wpisano do rejestru zabytków w 2007 roku, a w latach 2009–2010 przeszła remont generalny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A neo-Renaissance building at Jerozolimskie 61, built in 1897 for Józef Duzik. Remodelled in 1927 by Bolesław Handelsman Targowski, it was listed in 2007 and since its 2010 renovation forms the Lipiński Passage office complex with the neighbouring tenement.",
+    "ludzie": [
+      {"kto": "Józef Duzik", "rola": "inwestor", "wiki": null},
+      {"kto": "Bolesław Handelsman Targowski", "rola": "architekt przebudowy z 1927 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Józefa Duzika", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Duzika"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Projekt z 1897 roku autorstwa nieznanego architekta."
+  },
+  {
+    "id": "kamienica-jozefa-frageta",
+    "nazwa": "Kamienica Józefa Frageta",
+    "name_en": "Józef Fraget Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Elektoralna 14",
+    "adres_historyczny": "ul. Elektoralna 16",
+    "lat": 52.240278, "lon": 20.997222,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1830 lub 1844–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Neorenesansowa kamienica przy ul. Elektoralnej 14 na terenie osiedla Mirów.",
+      "Kwestionowane jest, czy została wzniesiona ok. 1830 roku na zlecenie Józefa Hempla, czy w 1844 roku na zlecenie platernika Józefa Frageta, właściciela Fabryki wyrobów srebrnych i platerów.",
+      "Oryginalny adres brzmiał Elektoralna 16.",
+      "Od 1844 roku w oficynach bocznych mieściły się warsztaty fabryczne.",
+      "Kamienica została spalona w trakcie II wojny światowej w 1944 roku i odbudowana w latach 50. XX wieku bez oficyn.",
+      "W 2012 roku wpisano ją do gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [
+      "W bramie, według projektu Andrzeja Gołońskiego, zachowały się inicjały J.F. założyciela zakładów Frageta."
+    ],
+    "summary_en": "A neo-Renaissance tenement at Elektoralna 14 on the Mirów estate, linked to silversmith Józef Fraget's factory from 1844. It was burned in 1944 and rebuilt in the 1950s without its side wings, and it still bears the founder's initials on the gate.",
+    "ludzie": [
+      {"kto": "Józef Fraget", "rola": "platernik, właściciel fabryki wyrobów srebrnych i platerów", "wiki": null},
+      {"kto": "Józef Hempel", "rola": "wskazany jako możliwy inwestor ok. 1830 roku", "wiki": null},
+      {"kto": "Andrzej Gołoński", "rola": "projekt bramy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Józefa Frageta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Frageta_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Datowanie sporne: ok. 1830 (Józef Hempel) czy 1844 (Józef Fraget)."
+  },
+  {
+    "id": "kamienica-jozefa-lipinskiego",
+    "nazwa": "Kamienica Józefa Lipińskiego (Śródmieście)",
+    "name_en": "Józef Lipiński Tenement (Lipiński Passage)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 63",
+    "adres_historyczny": null,
+    "lat": 52.228278, "lon": 21.005792,
+    "lokalizacja": "dokladna",
+    "okres": "1897–1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa neorenesansowa kamienica w Alejach Jerozolimskich 63, wzniesiona w latach 1897–1898 według projektu Józefa Hussa lub Witolda Lanciego.",
+      "Narożny 4-piętrowy budynek nazwano Pasażem Lipińskiego.",
+      "Fasada od strony Alej ma charakterystyczną partię zamkniętą pilastrami, z zespolonymi oknami.",
+      "Kamienica była jedną z kilku w Alejach Jerozolimskich należących do Józefa Lipińskiego; zachowały się tylko ta i druga, pod numerem 109.",
+      "Przy budowie Dworca Centralnego w 1974 roku podjęto decyzję o skuciu zdobień sztukatorskich z fasady.",
+      "W 2005 roku nowy właściciel Tomasz Gudzowaty ogłosił zamiar wyburzenia; konserwator zabytków wpisał ją w 2006 roku do rejestru zabytków.",
+      "W latach 2009–2010 szwedzki inwestor Reinhold przeprowadził remont generalny i odtworzył oryginalny wystrój elewacji."
+    ],
+    "ciekawostki": [
+      "Projekt przebudowy przewidywał przykrycie dziedzińca szklanym dachem oraz połączenie z kamienicą Józefa Duzika; nowa nadbudowa o jedno piętro wzbudziła kontrowersje."
+    ],
+    "summary_en": "A four-storey neo-Renaissance corner tenement at Jerozolimskie 63, built in 1897–1898 and called the Lipiński Passage. Its stucco was removed in 1974, and after a 2005 demolition threat it was listed in 2006 and restored in 2009–2010.",
+    "ludzie": [
+      {"kto": "Józef Lipiński", "rola": "właściciel, inwestor", "wiki": null},
+      {"kto": "Józef Huss", "rola": "możliwy projektant", "wiki": null},
+      {"kto": "Witold Lanci", "rola": "możliwy projektant", "wiki": null},
+      {"kto": "Tomasz Gudzowaty", "rola": "właściciel w 2005 roku", "wiki": null},
+      {"kto": "Reinhold", "rola": "szwedzki inwestor, remont 2009–2010", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pasaż Lipińskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Józefa Lipińskiego w Warszawie (Śródmieście)", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Lipi%C5%84skiego_w_Warszawie_%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29"}],
+    "pewnosc": "średnia",
+    "uwagi": "Projektant niepewny: Józef Huss lub Witold Lanci."
+  },
+  {
+    "id": "kamienica-jozefa-orlowskiego",
+    "nazwa": "Kamienica Józefa Orłowskiego",
+    "name_en": "Józef Orłowski Tenement (destroyed)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "zbieg ul. Marszałkowskiej, ul. Rysiej i ul. Szkolnej",
+    "lat": 52.236427, "lon": 21.008998,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1860–1870–1944",
+    "istnieje": false,
+    "fakty": [
+      "Trzypiętrowa kamienica u zbiegu ulic Marszałkowskiej, Rysiej i Szkolnej.",
+      "Powstała około 1860–1870 roku; architektem i właścicielem był Józef Orłowski.",
+      "Najwęższe było boczne skrzydło od strony ul. Rysiej, z pomieszczeniami dwutraktowymi.",
+      "Fasada od ul. Marszałkowskiej była eklektyczna, z motywami renesansu i empiru; na osi znajdował się pseudoryzalit z półkolistymi oknami i trójkątnym frontonikiem.",
+      "Została zniszczona w czasie powstania warszawskiego (1944) i nie została odbudowana."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-storey eclectic tenement at the junction of Marszałkowska, Rysiej and Szkolna streets, built around 1860–1870 by its architect and owner Józef Orłowski. It was destroyed in the 1944 uprising and never rebuilt.",
+    "ludzie": [
+      {"kto": "Józef Orłowski", "rola": "architekt i właściciel", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Józefa Orłowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Or%C5%82owskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-jozefa-rotbarda",
+    "nazwa": "Kamienica Józefa Rotbarda (Marszałkowska 19)",
+    "name_en": "Józef Rotbard Tenement (Marszałkowska 19)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 19",
+    "adres_historyczny": null,
+    "lat": 52.216806, "lon": 21.019444,
+    "lokalizacja": "dokladna",
+    "okres": "1909–1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Marszałkowskiej 19, ukończona w 1913 roku.",
+      "Wzniesiona w latach 1909–1913 według projektu Henryka Stifelmana i Stanisława Weissa jako jedna z dwóch bliźniaczych kamienic (nr 19 i 21) u wlotu później wytyczonej ul. Oleandrów.",
+      "Podobne założenie dwóch symetrycznych kamienic projektanci wykorzystali na działkach przy ul. Polnej 50 i 52.",
+      "Budynek został zniszczony w czasie II wojny światowej i odbudowano go w znacznie zredukowanej formie.",
+      "Z narożnej części usunięto wystrój fasady, wykusze i wnęki; budynek obniżono do pięciu pięter (z szóstym cofniętym).",
+      "W lipcu 2012 roku wpisano go do gminnej ewidencji zabytków, a w marcu 2017 roku do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1913 corner tenement at Marszałkowska 19, designed by Henryk Stifelman and Stanisław Weiss as a twin of no. 21. It was badly damaged in WWII and rebuilt in a reduced form with its corner decoration removed.",
+    "ludzie": [
+      {"kto": "Henryk Stifelman", "rola": "architekt", "wiki": null},
+      {"kto": "Stanisław Weiss", "rola": "architekt", "wiki": null},
+      {"kto": "Józef Rotbard", "rola": "patron nazwy kamienicy; rola nieopisana w artykule", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Józefa Rotbarda (ul. Marszałkowska 19)", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Rotbarda_%28ul._Marsza%C5%82kowska_19%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-jozefa-skalskiego",
+    "nazwa": "Kamienica Józefa Skalskiego",
+    "name_en": "Józef Skalski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 45",
+    "adres_historyczny": null,
+    "lat": 52.244618, "lon": 21.013761,
+    "lokalizacja": "dokladna",
+    "okres": "1774–1777–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Krakowskie Przedmieście 45.",
+      "W 1655 roku budynek należał do mieszczanina Bischoffa; w 1700 roku właścicielem był kuśnierz Kazimierz Ziomecki.",
+      "Obecna klasycystyczna kamienica została wzniesiona w latach 1774–1777 według projektu Efraima Schroegera dla nadwornego lekarza króla Stanisława Augusta, Józefa Skalskiego.",
+      "Skalski był również aptekarzem i prowadził w kamienicy skład apteczny.",
+      "W 1917 roku kamienicę restaurowano według projektu Kazimierza Skórewicza i Kazimierza Tołłoczki.",
+      "W 1944 roku kamienicę spalono, ale ocalała fasada i elewacja od strony ul. Koziej.",
+      "Odbudowano ją w latach 1948–1949 według projektu Mieczysława Kuzmy; w 1965 roku wpisano ją do rejestru zabytków.",
+      "W 1999 roku zaadaptowano poddasze w mansardowym dachu, co spowodowało pojawienie się facjatek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A classicist tenement at Krakowskie Przedmieście 45, built in 1774–1777 by Efraim Schroeger for King Stanisław August's court physician Józef Skalski, who also ran a pharmacy here. Its façade survived the 1944 fire and the building was rebuilt in 1948–1949.",
+    "ludzie": [
+      {"kto": "Józef Skalski", "rola": "nadworny lekarz króla Stanisława Augusta, aptekarz; inwestor", "wiki": null},
+      {"kto": "Efraim Schroeger", "rola": "architekt budynku z lat 1774–1777", "wiki": null},
+      {"kto": "Kazimierz Skórewicz i Kazimierz Tołłoczko", "rola": "restauracja w 1917 roku", "wiki": null},
+      {"kto": "Mieczysław Kuzma", "rola": "projekt odbudowy (1948–1949)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Józefa Skalskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Skalskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwisko architekta w tym artykule: Efraim Schroeger (w artykule o Karmelitach: Szreger)."
+  },
+  {
+    "id": "kamienica-karmelitow-bosych",
+    "nazwa": "Kamienica Karmelitów Bosych",
+    "name_en": "Discalced Carmelites Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bednarska 23",
+    "adres_historyczny": null,
+    "lat": 52.244833, "lon": 21.016167,
+    "lokalizacja": "dokladna",
+    "okres": "1770–1773–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwupiętrowa kamienica przy ul. Bednarskiej 23, wzniesiona w latach 1770–1773 na terenie klasztoru Karmelitów Bosych, prawdopodobnie według projektu Efraima Szregera.",
+      "Była kamienicą czynszową, z której zyski miały wspomagać utrzymanie klasztoru i kościoła.",
+      "W latach 1783–1786 działała tu manufaktura sukiennicza i wyrobów wełnianych Abrahama Pappenguta.",
+      "W 1885 roku po likwidacji klasztoru kamienicę zajęła Resursa Ruska; w 1887 roku posesję przejęło Rosyjskie Towarzystwo Dobroczynności.",
+      "Do budynku dobudowano 3-piętrowe oficyny (w 1884 lub 1887 roku), tworzące dwa wewnętrzne dziedzińce.",
+      "W okresie międzywojennym mieściła się tu szkoła akuszersko-felczerska.",
+      "W 1998 roku budynek główny wraz z oficynami i dziedzińcami wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Kamienicę uwieczniono na dwóch obrazach Canaletta: z 1770 roku (w trakcie budowy) i z 1773 roku (ukończona).",
+      "Fragmenty serialu „Samo życie” kręcono na terenie posesji w 2009 i 2010 roku."
+    ],
+    "summary_en": "A two-storey tenement at Bednarska 23, built in 1770–1773 on the Discalced Carmelites' grounds to fund the monastery and church. It came through WWII largely undamaged, was recorded in two Canaletto paintings, and was listed in 1998 together with its courtyards.",
+    "ludzie": [
+      {"kto": "Efraim Szreger", "rola": "prawdopodobny projektant", "wiki": null},
+      {"kto": "Abraham Pappengut", "rola": "właściciel manufaktury sukienniczej (1783–1786)", "wiki": null},
+      {"kto": "Canaletto", "rola": "malarz, uwiecznił kamienicę na dwóch obrazach", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica pokarmelicka"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Karmelitów Bosych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Karmelit%C3%B3w_Bosych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

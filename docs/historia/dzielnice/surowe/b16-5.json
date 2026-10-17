@@ -1,0 +1,297 @@
+[
+  {
+    "id": "atak-na-belweder",
+    "nazwa": "Atak na Belweder",
+    "name_en": "Attack on the Belweder Palace (1830)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Belweder (pałac wielkiego księcia Konstantego)",
+    "adres_historyczny": null,
+    "lat": 52.213333,
+    "lon": 21.027777,
+    "lokalizacja": "dokladna",
+    "okres": "29.11.1830",
+    "istnieje": true,
+    "fakty": [
+      "Atak przeprowadziła grupa cywilnych spiskowych (belwederczyków) wieczorem 29 listopada 1830 roku; celem było zabicie lub pojmanie wielkiego księcia Konstantego jako zakładnika.",
+      "Spiskowcy zebrali się pod pomnikiem króla Sobieskiego na Agrykoli; w akcji wzięło udział 18 osób, które przez park Łazienkowski ruszyły w kierunku pałacu.",
+      "W pałacu służbę pełniło 29 mężczyzn, w tym pięciu Polaków; Belwederu strzegło trzech inwalidów uzbrojonych tylko w szable.",
+      "Szturm rozpoczął się o godz. 19.15, od strzałów w stronę ogrodu, które były sygnałem do ataku drugiej grupy.",
+      "W wyniku ataku zginęły dwie do czterech osób, co najmniej pięć odniosło rany.",
+      "Wielki książę na zawsze opuścił Belweder, a następnie Warszawę i Królestwo Polskie; atak był pierwszym zbrojnym wystąpieniem powstańców listopadowych."
+    ],
+    "ciekawostki": [
+      "W tygodniach przed powstaniem wieszano w okolicach Belwederu afisze z napisem „Od nowego roku do wynajęcia” czy „Pałac Lucypera”."
+    ],
+    "summary_en": "On the evening of 29 November 1830 a small group of civilian conspirators attacked the Belweder Palace, residence of Grand Duke Constantine, aiming to kill or capture him. The attack failed, but it is regarded as the first armed action of the November Uprising, and the Grand Duke left Warsaw for good.",
+    "ludzie": [
+      {"kto": "Ludwik Nabielak", "rola": "organizator szturmu i dowódca grupy spiskowych", "wiki": null},
+      {"kto": "Leonard Rettel", "rola": "19-letni student prawa, werbownik „oddziału zemsty narodowej”", "wiki": null},
+      {"kto": "Konstanty Trzaskowski", "rola": "podchorąży, znał rozkład pomieszczeń pałacu", "wiki": null},
+      {"kto": "Walenty Witkowski", "rola": "akademik, znał rozkład pomieszczeń pałacu", "wiki": null},
+      {"kto": "Seweryn Goszczyński", "rola": "uczestnik szturmu, wcześniej dokonał rekonesansu wokół Belwederu", "wiki": null},
+      {"kto": "Ksawery Bronikowski", "rola": "dokonał rekonesansu topograficznego wokół Belwederu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Atak na Belweder", "url": "https://pl.wikipedia.org/wiki/Atak_na_Belweder"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w opisie pierwszych strzałów przy szturmie. Współrzędne z nagłówka (52.213333, 21.027777) są dokładniejsze niż przy innych „Akcjach”."
+  },
+  {
+    "id": "auditorium-maximum-uw",
+    "nazwa": "Auditorium Maximum Uniwersytetu Warszawskiego",
+    "name_en": "Auditorium Maximum of the University of Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 26/28",
+    "adres_historyczny": null,
+    "lat": 52.241111,
+    "lon": 21.018833,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie gmach wzniesiono w połowie lat 30. XX wieku według projektu Aleksandra Bojemskiego.",
+      "W czasie II wojny światowej Niemcy zajęli budynek i urządzili tam m.in. stajnię i magazyn broni; później uległ zniszczeniu.",
+      "Gmach odbudowano w latach 1951–1955 w nieco zmienionej formie architektonicznej.",
+      "W 2007 roku budynek przeszedł gruntowną renowację, częścią rewitalizacji kampusu centralnego UW.",
+      "W 2001 roku w holu odsłonięto tablicę upamiętniającą Menachema Begina, studenta Wydziału Prawa z 1935 roku.",
+      "W 2016 roku odsłonięto tablicę upamiętniającą Józefa Rotblata, który w 1938 roku obronił na UW rozprawę doktorską."
+    ],
+    "ciekawostki": [
+      "Aula im. Adama Mickiewicza mieści 1080 osób i jest największą salą wykładową w zasobach UW."
+    ],
+    "summary_en": "The Auditorium Maximum on Krakowskie Przedmieście is a classicist building of the University of Warsaw, designed in the mid-1930s by Aleksander Bojemski. It was used by the Germans during the war, rebuilt in 1951–1955, and renovated in 2007.",
+    "ludzie": [
+      {"kto": "Aleksander Bojemski", "rola": "autor projektu z połowy lat 30. XX wieku", "wiki": null},
+      {"kto": "Menachem Begin", "rola": "student Wydziału Prawa UW (1935), późniejszy premier Izraela, laureat Pokojowej Nagrody Nobla", "wiki": null},
+      {"kto": "Józef Rotblat", "rola": "laureat Pokojowej Nagrody Nobla, doktorat na UW w 1938", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Auditorium Maximum Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Auditorium_Maximum_Uniwersytetu_Warszawskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "babka-tower",
+    "nazwa": "Babka Tower",
+    "name_en": "Babka Tower (residential and office complex)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Pawła II 80",
+    "adres_historyczny": null,
+    "lat": 52.253888888,
+    "lon": 20.984166666,
+    "lokalizacja": "dokladna",
+    "okres": "1998–2000 – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1998–2000 według projektu zespołu architektów z pracowni JEMS Architekci.",
+      "Nazwa nawiązuje do historycznej nazwy ronda Zgrupowania AK „Radosław” (do 2001 roku rondo Babka).",
+      "Jest pierwszym w historii Warszawy budynkiem mieszkalnym, którego wysokość przekroczyła 100 metrów; część wieżowa mierzy 105 metrów i ma 28 kondygnacji.",
+      "Wcześniej powstały wyższe budynki, PKiN z 1955 roku (231 m) i hotel Forum z 1974 roku (111 m), lecz nie były mieszkalne.",
+      "W obiekcie znajduje się 299 mieszkań (114 w wieży i 185 w bloku) oraz 675 miejsc parkingowych."
+    ],
+    "ciekawostki": [
+      "W lokalu D 13 znajduje się klasztor sióstr dominikanek."
+    ],
+    "summary_en": "Babka Tower at 80 Aleja Jana Pawła II is a mixed residential, office and service complex built in 1998–2000. Its 105-metre tower was the first residential building in Warsaw above 100 metres.",
+    "ludzie": [
+      {"kto": "JEMS Architekci", "rola": "pracownia, której zespół zaprojektował budynek", "wiki": null}
+    ],
+    "dawne_nazwy": ["rondo Babka (do 2001)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Babka Tower", "url": "https://pl.wikipedia.org/wiki/Babka_Tower"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "bar-kawowy-piotrus",
+    "nazwa": "Bar Kawowy Piotruś",
+    "name_en": "Piotruś Coffee Bar, Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 18/20",
+    "adres_historyczny": null,
+    "lat": 52.232611111,
+    "lon": 21.020055555,
+    "lokalizacja": "dokladna",
+    "okres": "1958–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Bar został założony w 1958 roku na parterze kamienicy Feliksa Łaszewskiego przy ul. Nowy Świat 18/20.",
+      "Od 1985 albo 1986 roku prowadzi go Irena Dańkowska-Jarząbek, która wygrała wtedy konkurs PSS „Społem” na ajencję lokalu.",
+      "Bar jest popularny wśród społeczności gejowskiej i artystów; regularnymi bywalcami byli m.in. Marek Nowakowski, Marek Gaszyński i Czesław Niemen.",
+      "Gaszyński sprezentował oryginał tekstu piosenki „Sen o Warszawie”, który wisi na ścianie w barze.",
+      "W 2002 roku bar został wspomniany w wierszu „Oranżada” Marcina Sendeckiego, a w 2011 roku w piosence zespołu Pablopavo."
+    ],
+    "ciekawostki": [
+      "Dorota Masłowska poświęciła lokalowi felieton w „Tygodniku Powszechnym”, który później ukazał się jako rozdział książki „Mam tak samo jak ty”.",
+      "Bar Kawowy Piotruś był laureatem plebiscytu „Orły Gastronomii”."
+    ],
+    "summary_en": "Piotruś is a coffee bar on Nowy Świat in Warsaw, opened in 1958 and popular with artists and the gay community. Its owner since the mid-1980s, Irena Dańkowska-Jarząbek, won the lease in a state competition.",
+    "ludzie": [
+      {"kto": "Feliks Łaszewski", "rola": "właściciel kamienicy, na której parterze działa bar", "wiki": null},
+      {"kto": "Irena Dańkowska-Jarząbek", "rola": "prowadząca bar od 1985/1986", "wiki": null},
+      {"kto": "Marek Nowakowski", "rola": "stały bywalec", "wiki": null},
+      {"kto": "Marek Gaszyński", "rola": "stały bywalec, autor daru oryginału tekstu „Sen o Warszawie”", "wiki": null},
+      {"kto": "Czesław Niemen", "rola": "stały bywalec", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bar Kawowy Piotruś", "url": "https://pl.wikipedia.org/wiki/Bar_Kawowy_Piotru%C5%9B"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł pisze o barze w czasie teraźniejszym, więc przyjęto istnieje: true. Nazwa zespołu z 2011 roku jest w tekście urwana („Pablopavo”) i nie została uzupełniona."
+  },
+  {
+    "id": "barbakan",
+    "nazwa": "Barbakan",
+    "name_en": "Barbican of Warsaw (Nowomiejska Gate)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowomiejska (przy Bramie Nowomiejskiej, Stare Miasto)",
+    "adres_historyczny": null,
+    "lat": 52.2506,
+    "lon": 21.01,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1548–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Barbakan wzniesiono około 1548 roku jako przedbramie Bramy Nowomiejskiej, element warszawskich murów obronnych.",
+      "Projektantem był architekt Jan Baptysta z Wenecji.",
+      "Barbakan tylko raz w swej historii uczestniczył w obronie Warszawy: podczas potopu szwedzkiego wojska króla Jana Kazimierza odbiły go 30 czerwca 1656 roku z rąk szwedzkich.",
+      "W XVIII wieku barbakan częściowo rozebrano, a w XIX jego pozostałości włączono w kamienice.",
+      "W latach 1937–1938 pod kierownictwem Jana Zachwatowicza zrekonstruowano fragment murów i zachodnią część mostu barbakanu.",
+      "Rekonstrukcji dokonano w latach 1952–1954 pod kierownictwem Wacława Podlewskiego, na podstawie XVII-wiecznych rycin.",
+      "W 1956 roku na wewnętrznym murze odsłonięto tablicę upamiętniającą żołnierzy i mieszkańców walczących w czasie potopu szwedzkiego."
+    ],
+    "ciekawostki": [
+      "Do 1944 roku w miejscu wschodniej części barbakanu stała kamienica Piwnica Gdańska.",
+      "W barbakanie działa wystawa Muzeum Warszawy poświęcona murom obronnym Starej Warszawy (czynna w sezonie letnim)."
+    ],
+    "summary_en": "The Barbican is a brick gatehouse built around 1548 in front of the Nowomiejska Gate of Warsaw's Old Town walls. It was reconstructed in 1937–38 and again in 1952–54 after the war, and today it houses a Warsaw Museum exhibition.",
+    "ludzie": [
+      {"kto": "Jan Baptysta z Wenecji", "rola": "architekt barbakanu", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "kierownik rekonstrukcji w latach 1937–1938", "wiki": null},
+      {"kto": "Wacław Podlewski", "rola": "kierownik rekonstrukcji w latach 1952–1954", "wiki": null},
+      {"kto": "Jan Kazimierz", "rola": "król, którego wojska odbiły barbakan w 1656", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Barbakan w Warszawie", "url": "https://pl.wikipedia.org/wiki/Barbakan_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "baszta-prochowa",
+    "nazwa": "Baszta Prochowa",
+    "name_en": "Gunpowder Tower (Warsaw city walls)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Stare Miasto, przy murach miejskich (adres w artykule nie podany)",
+    "adres_historyczny": null,
+    "lat": 52.250254,
+    "lon": 21.010011,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Baszta została wzniesiona w XIV wieku jako część miejskich murów obronnych Warszawy.",
+      "Zbudowano ją z cegły; jej głównym zadaniem było przechowywanie prochu oraz pełnienie funkcji strażnicy i punktu obronnego.",
+      "Po wojnach napoleońskich i utracie pierwotnego znaczenia militarnego w XIX wieku wykorzystywano ją do innych celów.",
+      "Po II wojnie światowej baszta została odbudowana."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Gunpowder Tower is a 14th-century brick tower in the city walls of Warsaw's Old Town. It stored gunpowder and served as a guard post, and was rebuilt after World War II.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Baszta Prochowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Baszta_Prochowa_w_Warszawie"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł w paczce jest bardzo krótki: bez dokładnych dat, adresu i nazwisk. Współrzędne z nagłówka są w Śródmieściu, ale adres trzeba sprawdzić."
+  },
+  {
+    "id": "baszta-rycerska",
+    "nazwa": "Baszta Rycerska",
+    "name_en": "Knights' Tower (Dom Rycerski), Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Podwale (między ul. Piekarską i Wąski Dunaj), Stare Miasto",
+    "adres_historyczny": null,
+    "lat": 52.248736,
+    "lon": 21.010319,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1339–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gotycka baszta została wzniesiona prawdopodobnie przed 1339 rokiem w wewnętrznym murze obronnym Starej Warszawy.",
+      "Pierwotnie była czterokondygnacyjna, otwarta od strony miasta, i wykorzystywali ją strażnicy miejscy.",
+      "Po 1379 roku dodano najwyższą kondygnację z okienkami strzelniczymi.",
+      "W 1614 roku miasto sprzedało basztę Adamowi Leszczyńskiemu, który przekształcił ją w dom mieszkalny.",
+      "W latach 1958–1963 baszta została oczyszczona z późniejszej zabudowy i odbudowano jej ścianę boczną.",
+      "W 1965 roku baszta została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Od nazwy baszty pochodzi nazwa ulicy Rycerskiej."
+    ],
+    "summary_en": "The Knights' Tower, also called Dom Rycerski, is a Gothic tower in the inner city wall of Warsaw's Old Town on Podwale Street. It was built before 1339, sold to a private owner in 1614, and listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "Adam Leszczyński", "rola": "nabywca baszty w 1614 roku, przekształcił ją w dom mieszkalny", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Rycerski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Baszta Rycerska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Baszta_Rycerska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "bazylika-archikatedralna-sw-jana",
+    "nazwa": "Bazylika Archikatedralna św. Jana Chrzciciela",
+    "name_en": "Archcathedral Basilica of St. John the Baptist, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętojańska 8",
+    "adres_historyczny": null,
+    "lat": 52.248888888,
+    "lon": 21.013611111,
+    "lokalizacja": "dokladna",
+    "okres": "przełom XIII/XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszą świątynią w miejscu prezbiterium była drewniana kaplica zamkowa z przełomu XIII i XIV wieku; na początku XIV wieku stała się kościołem parafialnym miasta.",
+      "Około 1390 roku z inicjatywy księcia Janusza I Starszego powstała gotycka budowla murowana, miejsce pochówku książąt mazowieckich.",
+      "W 1406 roku kościół farny stał się kolegiatą.",
+      "W 1798 roku, po utworzeniu godności biskupa warszawskiego, kolegiata otrzymała tytuł katedry; w 1818 roku stała się archikatedrą.",
+      "W 1861 roku wojska rosyjskie pacyfikowały ludność zgromadzoną przy kościele w rocznicę śmierci Tadeusza Kościuszki; Kościół ogłosił wtedy zamknięcie wszystkich kościołów warszawskich.",
+      "Świątynia została niemal całkowicie zniszczona przez Niemców w 1944 roku i zrekonstruowana w latach 1948–1956.",
+      "Uroczystej konsekracji odbudowanej katedry dokonał 9 czerwca 1960 roku prymas Stefan Wyszyński; w 1960 roku kościół otrzymał tytuł bazyliki mniejszej."
+    ],
+    "ciekawostki": [
+      "W murach katedry wygłaszał kazania ksiądz Piotr Skarga, a w jej murach zaprzysiężono Konstytucję 3 maja.",
+      "Fasada odbudowanej świątyni oparta jest na akwareli Zygmunta Vogla z początku XIX wieku."
+    ],
+    "summary_en": "St. John's Archcathedral Basilica on Świętojańska Street is one of Warsaw's oldest churches and the seat of the archdiocese. It was rebuilt in 1948–1956 after near-total destruction in 1944 and consecrated in 1960 by Cardinal Stefan Wyszyński.",
+    "ludzie": [
+      {"kto": "Janusz I Starszy", "rola": "inicjator gotyckiej budowli (ok. 1390)", "wiki": null},
+      {"kto": "Anna Holszańska", "rola": "ufundowała pierwszą kaplicę (1428)", "wiki": null},
+      {"kto": "Piotr Skarga", "rola": "wygłaszał kazania w świątyni", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "autor projektu odbudowy (1948–1956)", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "prymas Polski, konsekrował odbudowaną katedrę w 1960 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ścięcia św. Jana Chrzciciela (pierwotne wezwanie)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bazylika Archikatedralna św. Jana Chrzciciela w Warszawie", "url": "https://pl.wikipedia.org/wiki/Bazylika_Archikatedralna_%C5%9Bw._Jana_Chrzciciela_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok 1861 i konsekracja 1960 podane wg artykułu; w tekście nie podano roku zaprzysiężenia Konstytucji 3 maja."
+  }
+]

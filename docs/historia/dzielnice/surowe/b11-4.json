@@ -1,0 +1,270 @@
+[
+  {
+    "id": "plac-defilad",
+    "nazwa": "Plac Defilad",
+    "name_en": "Parade Square (Plac Defilad)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Defilad, przy Pałacu Kultury i Nauki",
+    "adres_historyczny": null,
+    "lat": 52.2317674,
+    "lon": 21.0061431,
+    "lokalizacja": "dokladna",
+    "okres": "1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac powstał razem z budową Pałacu Kultury i Nauki w 1955 roku, w miejscu zabudowy części ulic Chmielnej, Siennej, Śliskiej, Wielkiej, Zielnej i Złotej.",
+      "Plac przeznaczono na defilady i pochody Polski Ludowej, m.in. 1 maja i 22 lipca; od nich pochodzi nazwa.",
+      "24 października 1956 roku odbył się tu wiec poparcia dla Władysława Gomułki, w którym uczestniczyło ok. 300–400 tysięcy osób.",
+      "22 lipca 1966 roku odbyła się wielotysięczna Defilada Tysiąclecia; 14 czerwca 1987 roku papież Jan Paweł II odprawił tu mszę kończącą II Krajowy Kongres Eucharystyczny.",
+      "W 2012 roku zorganizowano tu Strefę Kibica podczas UEFA Euro 2012.",
+      "Budowa placu Centralnego przed Pałacem Kultury i Nauki rozpoczęła się w czerwcu 2023 roku."
+    ],
+    "ciekawostki": [
+      "Podczas mszy na placu w 1987 roku papież beatyfikował biskupa Michała Kozala.",
+      "Corocznie na placu odbywa się największy koncert w ramach Finału Wielkiej Orkiestry Świątecznej Pomocy."
+    ],
+    "summary_en": "A large open square in front of the Palace of Culture and Science, laid out in 1955 for state parades and public gatherings. It hosted the 1956 Gomułka rally and the 1987 papal Mass.",
+    "ludzie": [
+      {"kto": "Władysław Gomułka", "rola": "I sekretarz KC PZPR, przemawiał na wiecu w 1956 roku", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "papież, odprawił mszę na placu w 1987 roku", "wiki": null},
+      {"kto": "Michał Kozal", "rola": "biskup, beatyfikowany podczas mszy w 1987 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Defilad w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Defilad_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-grzybowski",
+    "nazwa": "Plac Grzybowski",
+    "name_en": "Grzybowski Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Grzybowski (między ul. Twardą, Bagno, Grzybowską i Królewską)",
+    "adres_historyczny": "Rynek Grzybowski (od 1830)",
+    "lat": 52.2361682,
+    "lon": 21.0034656,
+    "lokalizacja": "dokladna",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1786–1787, według projektu Karola Schütza, wybudowano na placu ratusz Grzybowa; w latach 1809–1830 mieściło się w nim więzienie.",
+      "Od połowy XVII wieku plac był targowiskiem założonej wówczas jurydyki Grzybów, nazwanej od właściciela Jana Grzybowskiego.",
+      "W 1863 roku, w czasie powstania styczniowego, Rosjanie przeprowadzili na placu egzekucję powstańców.",
+      "13 listopada 1904 roku Organizacja Bojowa PPS zorganizowała demonstrację, w czasie której doszło do starć z policją i wojskiem; zginęło 11 Polaków, a aresztowano 413 osób.",
+      "Kościół Wszystkich Świętych według projektu Henryka Marconiego budowano ponad 30 lat; ukończono go w 1895 roku.",
+      "W listopadzie 1940 roku plac znalazł się w obrębie warszawskiego getta; w czasie wielkiej akcji deportacyjnej latem 1942 roku wywieziono większość mieszkańców getta do Treblinki.",
+      "Po upadku powstania w 1944 roku Niemcy spalili zachodnią pierzeję placu; zniszczona została m.in. synagoga Arona Serdynera.",
+      "W latach 1966–1967 na zachodniej pierzei wzniesiono późnomodernistyczny gmach Teatru Żydowskiego, który zburzono w 2017 roku."
+    ],
+    "ciekawostki": [
+      "Plac można zobaczyć w komedii „Miś” (1981) Stanisława Barei; w 2007 roku prezentowano na skwerze instalację „Dotleniacz” Joanny Rajkowskiej."
+    ],
+    "summary_en": "A historic market square in the former Warsaw Ghetto area, named after the Grzybowski estate. Its 1786–1787 town hall was later demolished, the square was damaged in 1939 and 1944, and the Yiddish Theatre building was demolished in 2017.",
+    "ludzie": [
+      {"kto": "Karol Schütz", "rola": "projektant ratusza Grzybowa (1786–1787)", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projektant kościoła Wszystkich Świętych", "wiki": null},
+      {"kto": "Jan Grzybowski", "rola": "właściciel jurydyki, od której nazwano plac", "wiki": null},
+      {"kto": "Aron Serdyner", "rola": "twórca synagogi zniszczonej w 1944 roku", "wiki": null},
+      {"kto": "Joanna Rajkowska", "rola": "autorka instalacji „Dotleniacz” (2007)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Rynek Grzybowski (od 1830)", "jurydyka Grzybów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Grzybowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Grzybowski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plac-jana-henryka-dabrowskiego",
+    "nazwa": "Plac Jana Henryka Dąbrowskiego",
+    "name_en": "Jan Henryk Dąbrowski Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Jana Henryka Dąbrowskiego (kwartał ulic Rysiej, Szkolnej, Kredytowej i Jasnej)",
+    "adres_historyczny": "plac Zielony; plac Dąbrowskiego",
+    "lat": 52.2372299,
+    "lon": 21.009811,
+    "lokalizacja": "dokladna",
+    "okres": "1730–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zaczątkiem placu był założony w 1730 roku Lasek Przy Promenadzie, ogród pałacu Franciszka Bielińskiego przy ul. Królewskiej.",
+      "W 1757 roku marszałek Bieliński utworzył jurydykę Bielino; na terenie dawnego lasku wytyczono jej rynek otoczony parterowymi domami projektu Jakuba Fontany.",
+      "W 1797 roku założono tu ogród, co zaowocowało nazwą plac Zielony.",
+      "Obecną nazwę nadano w 1921 roku (według innego źródła w czerwcu 1918 roku, w setną rocznicę śmierci Jana Henryka Dąbrowskiego).",
+      "Kamienicę Leona Feliksa Goldstanda (nr 8, 1913–1916) uznawano za jeden z najwyższych warszawskich „niebotyków”.",
+      "W 1930 roku w basenie skweru ustawiono fontannę z brązową kopią rzeźby „Chłopiec z krokodylem” Stanisława Jackowskiego.",
+      "W listopadzie 2012 roku Rada Warszawy skorygowała nazwę na plac Jana Henryka Dąbrowskiego."
+    ],
+    "ciekawostki": [
+      "W 1999 roku na skwerze na środku placu wmurowano kamień węgielny pod pomnik Hymnu Narodowego."
+    ],
+    "summary_en": "A small square in central Warsaw that grew out of an 18th-century garden of the Bieliński palace. Its present name dates from 1921, and its 19th- and early 20th-century tenement houses survive in part.",
+    "ludzie": [
+      {"kto": "Franciszek Bieliński", "rola": "właściciel pałacu i założyciel jurydyki Bielino", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projektant parterowych domów przy rynku jurydyki", "wiki": null},
+      {"kto": "Ludwik Natanson", "rola": "lekarz, który w 1868 roku wzniósł tu dom", "wiki": null},
+      {"kto": "Stanisław Jackowski", "rola": "autor rzeźby „Chłopiec z krokodylem”", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Zielony (XIX w.)", "plac Dąbrowskiego (1921–2012)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Jana Henryka Dąbrowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Jana_Henryka_D%C4%85browskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plac-konstytucji",
+    "nazwa": "Plac Konstytucji",
+    "name_en": "Constitution Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Konstytucji, w osi ul. Marszałkowskiej",
+    "adres_historyczny": null,
+    "lat": 52.2228921,
+    "lon": 21.0155944,
+    "lokalizacja": "dokladna",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac powstał w 1952 roku jako centralny element Marszałkowskiej Dzielnicy Mieszkaniowej (MDM), sztandarowej inwestycji realizmu socjalistycznego.",
+      "Nazwę nadano 19 lipca 1952 roku; upamiętnia Konstytucję PRL uchwaloną 22 lipca 1952 roku, czyli w dniu oddania placu do użytku.",
+      "W czasie budowy wyburzono większość zachowanych kamienic, a ciągi ulic Koszykowej i Pięknej przekształcono i przerwano.",
+      "Na rogu ulic Marszałkowskiej i Waryńskiego powstał hotel MDM, pierwszy wzniesiony po wojnie hotel w odbudowywanej Warszawie.",
+      "Na środku placu urządzono parking; pierwotnie planowano tam fontannę.",
+      "Tablica na budynku nr 6 upamiętnia kawiarnię „Niespodzianka”, w której w 1989 roku mieścił się Warszawski Komitet Obywatelski „Solidarność”; odsłonięto ją w 2019 roku."
+    ],
+    "ciekawostki": [
+      "Południowo-zachodnia część placu nosi nazwę Zaułek Braci Pakulskich, od rodziny warszawskich kupców Wacława, Jana i Adama Pakulskich."
+    ],
+    "summary_en": "A socialist-realist square at the axis of Marszałkowska Street, built in 1952 as the centre of the Marszałkowska Residential District. Its name commemorates the 1952 constitution of the People's Republic of Poland.",
+    "ludzie": [
+      {"kto": "Wacław, Jan i Adam Pakulscy", "rola": "warszawscy kupcy, patroni zaułka", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Konstytucji w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Konstytucji_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plac-krasinskich",
+    "nazwa": "Plac Krasińskich",
+    "name_en": "Krasiński Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Krasińskich (między ul. Długą, Miodową, Świętojerską i Bonifraterską)",
+    "adres_historyczny": "plac Katedralny (po przebudowie kościoła pijarów na sobór, 1835–1837)",
+    "lat": 52.250083,
+    "lon": 21.0041263,
+    "lokalizacja": "dokladna",
+    "okres": "1765–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac powstał w miejscu dziedzińca pałacu Krasińskich; po zakupieniu gmachu przez I Rzeczpospolitą w 1765 roku stał się przestrzenią publiczną.",
+      "W 1779 roku naprzeciwko pałacu wzniesiono budynek Teatru Narodowego według projektu Bonawentury Solariego; w 1884 roku rozebrano go, a parcele zabudowano kamienicami.",
+      "W latach 1835–1837 kościół pijarów przebudowano na sobór Trójcy Świętej według projektu Antonia Corazziego i Andrzeja Gołońskiego.",
+      "W 1908 roku przez plac pojechały pierwsze tramwaje elektryczne.",
+      "W 1965 roku założenie urbanistyczne placu wpisano do rejestru zabytków.",
+      "W 1989 roku odsłonięto na placu pomnik Powstania Warszawskiego, przedstawiający powstańców i ludność cywilną podczas walk w 1944 roku.",
+      "6 sierpnia 1944 roku na placu odbyła się jedyna podczas powstania defilada wojsk powstańczych; w rocznicę wymarszu Pierwszej Kompanii Kadrowej."
+    ],
+    "ciekawostki": [
+      "W kwietniu 1943 roku widok ludzi bawiących się na karuzeli pod murami płonącego getta zainspirował Czesława Miłosza do napisania wiersza „Campo di Fiori”.",
+      "6 lipca 2017 roku przed pomnikiem Powstania Warszawskiego przemówienie wygłosił prezydent USA Donald Trump."
+    ],
+    "summary_en": "A square in front of the Krasiński Palace, the scene of fighting and an insurgent parade during the 1944 Warsaw Uprising. It holds the Warsaw Uprising Monument (1989) and the Supreme Court building, completed in 1996–1999.",
+    "ludzie": [
+      {"kto": "Bonawentura Solari", "rola": "autor projektu Teatru Narodowego (1779)", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "architekt przebudowy kościoła na sobór", "wiki": null},
+      {"kto": "Czesław Miłosz", "rola": "poeta, autor wiersza „Campo di Fiori”", "wiki": null},
+      {"kto": "Donald Trump", "rola": "prezydent USA, przemawiał przy pomniku w 2017 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Katedralny (po 1835)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Krasińskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Krasi%C5%84skich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plac-na-rozdrozu",
+    "nazwa": "Plac Na Rozdrożu",
+    "name_en": "Na Rozdrożu Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Na Rozdrożu (węzeł Trasy Łazienkowskiej)",
+    "adres_historyczny": "plac Wolności (przed II wojną światową)",
+    "lat": 52.2190844,
+    "lon": 21.0253329,
+    "lokalizacja": "dokladna",
+    "okres": "1768–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac powstał w 1768 roku jako część Osi Stanisławowskiej i założenia Ujazdowskiego; autorem założenia był August Moszyński.",
+      "Od placu wytyczono cztery aleje, z których trzy przetrwały do dziś: al. Wyzwolenia, ul. Koszykową i al. Szucha.",
+      "Pod koniec XIX wieku wzniesiono tu cerkiew św. Michała Archanioła dla rosyjskiego garnizonu; rozebrano ją w latach 20. XX wieku.",
+      "W latach 1971–1974, przy budowie Trasy Łazienkowskiej, plac uzyskał dwupoziomową formę; pod placem przebito tunel o długości 46 metrów.",
+      "10 listopada 2006 roku u zbiegu alei Szucha i Alej Ujazdowskich odsłonięto pomnik Romana Dmowskiego, który stał się przedmiotem protestów.",
+      "4 czerwca 2023 roku na placu rozpoczął się tzw. „Wielki Marsz” w proteście przeciwko działaniom rządu PiS.",
+      "W 2024 roku Wojewódzki Sąd Administracyjny uchylił pozwolenie na budowę pomnika Bitwy Warszawskiej 1920 na placu."
+    ],
+    "ciekawostki": [
+      "Po 1935 roku planowano tu pomnik Józefa Piłsudskiego, w ramach projektowanej Dzielnicy Marszałka Józefa Piłsudskiego; w 1990 roku wmurowano tablicę informacyjną."
+    ],
+    "summary_en": "A two-level traffic junction on the Stanisław Axis at the start of Aleje Ujazdowskie, built in 1768 and rebuilt in 1971–1974 for the Łazienki Route. The Dmowski monument (2006) has been a source of controversy.",
+    "ludzie": [
+      {"kto": "August Moszyński", "rola": "autor założenia Ujazdowskiego (1768)", "wiki": null},
+      {"kto": "Roman Dmowski", "rola": "patron pomnika odsłoniętego w 2006 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Wolności (przed II wojną światową)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Na Rozdrożu w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Na_Rozdro%C5%BCu_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plac-pieciu-rogow",
+    "nazwa": "Plac Pięciu Rogów",
+    "name_en": "Five Corners Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "u zbiegu ul. Brackiej, Kruczej, Zgody, Szpitalnej i Chmielnej",
+    "adres_historyczny": null,
+    "lat": 52.2324179,
+    "lon": 21.0152503,
+    "lokalizacja": "dokladna",
+    "okres": "2021–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nieformalna nazwa placu u zbiegu ulic Brackiej, Kruczej, Zgody, Szpitalnej i Chmielnej.",
+      "Pomysł placu miejskiego pojawił się w 2010 roku w koncepcji Andrzeja Michalika (PRC Architekci) i Roberta Mandżunowskiego (LHI) przy rewitalizacji ul. Chmielnej.",
+      "W 2016 roku ogłoszono konkurs na koncepcję zagospodarowania; prace wykonawcze trwały od marca 2021 do lipca 2022 roku.",
+      "Na przebudowanym placu posadzono 22 drzewa.",
+      "25 sierpnia 2022 roku Rada m.st. Warszawy nadała placowi imię Poli Negri; wojewoda stwierdził nieważność tej uchwały, a sądy podtrzymały jego decyzję.",
+      "W 2023 roku na placu odsłonięto dwutonową rzeźbę akustyczną „Pisklę. Drozd śpiewak” Joanny Rajkowskiej, wykonaną z gipsu akrylowego."
+    ],
+    "ciekawostki": [
+      "W 2023 roku plac był jednym z finalistów konkursu „Gazety Wyborczej” „Zaprojektowane po ludzku”."
+    ],
+    "summary_en": "An informal name for a small square in the Chmielna-Brackie area, redesigned in 2021–2022 with 22 new trees. Its proposed naming after Pola Negri was annulled by the voivode.",
+    "ludzie": [
+      {"kto": "Andrzej Michalik", "rola": "autor koncepcji placu w ramach rewitalizacji ul. Chmielnej (PRC Architekci)", "wiki": null},
+      {"kto": "Robert Mandżunowski", "rola": "autor koncepcji placu (LHI)", "wiki": null},
+      {"kto": "Pola Negri", "rola": "patronka zaproponowana w 2022 roku", "wiki": null},
+      {"kto": "Joanna Rajkowska", "rola": "autorka rzeźby „Pisklę. Drozd śpiewak”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Pięciu Rogów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Pi%C4%99ciu_Rog%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwa nieformalna. Współrzędne z nagłówka artykułu."
+  }
+]

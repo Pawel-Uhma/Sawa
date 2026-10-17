@@ -24,6 +24,7 @@ import {
   paddingWithSheet,
   resolveCamera,
 } from "../lib/camera";
+import { loadMapIcons } from "../lib/map-icons";
 import { BASEMAP_STYLE_URLS, MAP_PALETTES, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
 import { MIN_PLACES_ZOOM, tilesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
@@ -77,6 +78,8 @@ export function SawaMap({
 }: SawaMapProps) {
   const mapRef = useRef<MapRef>(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  // Layers mount only after the icons are in the style, so they keep their stacking order.
+  const [icons, setIcons] = useState<"loading" | "ready" | "failed">("loading");
   const [cursor, setCursor] = useState<string>("grab");
   const [view, setView] = useState<MapView | null>(null);
   const tiles = useMemo(() => (view ? tilesInView(view.bounds, view.zoom) : []), [view]);
@@ -169,6 +172,7 @@ export function SawaMap({
             ?.classList.remove("maplibregl-compact-show");
           setView(viewOf(event.target));
           setIsLoaded(true);
+          loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
         attributionControl={false}
@@ -176,17 +180,21 @@ export function SawaMap({
       >
         {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
         <AttributionControl compact customAttribution={attribution} />
-        <PlacesLayer
-          places={visiblePlaces}
-          selectedId={selectedId}
-          isDimmed={Boolean(route)}
-          palette={palette}
-        />
-        {route && (
+        {icons !== "loading" && (
+          <PlacesLayer
+            places={visiblePlaces}
+            selectedId={selectedId}
+            isDimmed={Boolean(route)}
+            hasIcons={icons === "ready"}
+            palette={palette}
+          />
+        )}
+        {icons !== "loading" && route && (
           <RouteLayer
             route={route}
             selectedId={selectedId}
             activeId={activeStopId}
+            hasIcons={icons === "ready"}
             palette={palette}
           />
         )}

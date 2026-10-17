@@ -10,6 +10,10 @@ export const SOURCE_FILES = [
   new URL("../../docs/historia/um-otwarte-boiska.geojson", import.meta.url),
   // Monuments, churches, museums and theatres with a Wikipedia article, `fetch:osm-historia` (T-73).
   new URL("../../docs/historia/osm-historia.geojson", import.meta.url),
+  // Wola, Bemowo, Bielany, Żoliborz, Śródmieście: facts from the local Wikipedia dump and OSM tags
+  // (docs/historia/dzielnice/README.md), deduplicated against the files above.
+  new URL("../../docs/historia/dzielnice/sawa-dzielnice.geojson", import.meta.url),
+  new URL("../../docs/historia/dzielnice/osm-dzielnice.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {

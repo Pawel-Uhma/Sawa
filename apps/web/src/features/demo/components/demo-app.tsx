@@ -1,6 +1,6 @@
 "use client";
 
-import { interestsOfTags, type Route } from "@sawa/shared";
+import { interestsOfTags, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -19,11 +19,12 @@ import {
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
-import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
+import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
+import { ProfileModal, type ProfileStep } from "./profile-modal";
 import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
-import { type ProfileStep, type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
+import { type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
 import { SawaTab } from "./sawa-tab";
 import { type Tab, TabBar } from "./tab-bar";
 import { TopBar } from "./top-bar";
@@ -48,11 +49,13 @@ export function DemoApp() {
   const isDesktop = useIsDesktop();
   const isWide = useIsWide();
   const [stage, setStage] = useState<Stage>("onboarding");
-  const [onboardingStep, setOnboardingStep] = useState<OnboardingStep>("welcome");
   const [profile, setProfile] = useState<Profile>(EMPTY_PROFILE);
+  // Edycja jednego pola profilu idzie przez modal, nigdy przez onboarding.
+  const [editing, setEditing] = useState<ProfileStep | null>(null);
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(90);
   const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "loop" });
+  const [travel, setTravel] = useState<Travel>("transit");
   // Ostatni wybrany cel wraca po przełączeniu „Wracam tu” → „Do celu”
   const [lastDestination, setLastDestination] = useState<Extract<RideEnd, { type: "destination" }>>(
     { type: "destination", ...DESTINATION_PRESETS[0] },
@@ -81,7 +84,7 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(origin, durationMin, profile, rideEnd));
+      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
     } catch {
       setPlanError(
         start.status === "located"
@@ -91,7 +94,7 @@ export function DemoApp() {
     } finally {
       setPlanning(false);
     }
-  }, [origin, start.status, durationMin, profile, rideEnd, showRoute]);
+  }, [origin, start.status, durationMin, profile, rideEnd, travel, showRoute]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);
@@ -132,12 +135,18 @@ export function DemoApp() {
     setStage("map");
   }, []);
 
-  const editProfile = useCallback((step: ProfileStep) => {
-    setOnboardingStep(step);
-    setStage("onboarding");
-  }, []);
+  const editProfile = useCallback((step: ProfileStep) => setEditing(step), []);
 
-  const editInterests = useCallback(() => editProfile("interests"), [editProfile]);
+  const editInterests = useCallback(() => setEditing("interests"), []);
+
+  const closeEditing = useCallback(() => setEditing(null), []);
+
+  // Zapis z modalu zmienia tylko profil, bez wracania do ekranów wstępu.
+  const saveEditing = useCallback((next: Profile) => {
+    setProfile(next);
+    saveProfile(next);
+    setEditing(null);
+  }, []);
 
   const restart = useCallback(() => {
     saveProfile(null);
@@ -146,7 +155,7 @@ export function DemoApp() {
     setRoute([]);
     setPlanned(null);
     setTab("map");
-    setOnboardingStep("welcome");
+    setEditing(null);
     setStage("onboarding");
   }, []);
 
@@ -288,6 +297,8 @@ export function DemoApp() {
                 interests={profile.interests}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                travel={travel}
+                onTravelChange={setTravel}
                 rideEnd={rideEnd}
                 onRideEndTypeChange={changeRideEndType}
                 onRideEndChange={changeRideEnd}
@@ -307,6 +318,8 @@ export function DemoApp() {
                 originLabel={startLabel(start.status)}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                rideEnd={rideEnd}
+                travel={travel}
                 lastRoute={route}
                 onOpenLastRoute={() => {
                   setTab("map");
@@ -337,6 +350,7 @@ export function DemoApp() {
                 key="route"
                 durationMin={durationMin}
                 end={planned ? routeEnd(planned, rideEnd) : null}
+                legs={planned?.legs ?? []}
                 stops={route}
                 player={player}
                 activeIndex={activeIndex}
@@ -354,6 +368,10 @@ export function DemoApp() {
               listener={listener}
               onSelectionChange={setSelectedPlace}
               onCoverChange={setPlaceCoverPx}
+              onRideTo={(name, point) => {
+                changeRideEnd({ type: "destination", name, point });
+                setPanelCollapsed(false);
+              }}
             />
           )}
 
@@ -377,14 +395,18 @@ export function DemoApp() {
                 exit={{ opacity: 0, scale: 1.02 }}
                 transition={SPRING}
               >
-                <OnboardingFlow
-                  initialStep={onboardingStep}
-                  initialProfile={profile}
-                  onDone={finishOnboarding}
-                />
+                <OnboardingFlow onDone={finishOnboarding} />
               </motion.div>
             )}
           </AnimatePresence>
+
+          {/* Modal edycji nad wszystkim: zmienia jedno pole i wraca na to, co było pod spodem */}
+          <ProfileModal
+            step={editing}
+            profile={profile}
+            onSave={saveEditing}
+            onClose={closeEditing}
+          />
         </div>
       </SawaMenuProvider>
     </MotionConfig>

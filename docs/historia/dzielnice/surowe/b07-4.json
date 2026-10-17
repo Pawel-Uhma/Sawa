@@ -1,0 +1,92 @@
+[
+  {
+    "id": "chomiczowka",
+    "nazwa": "Chomiczówka",
+    "name_en": "Chomiczówka",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "osiedle Chomiczówka, Bielany",
+    "adres_historyczny": "Kolonia Chomiczów (od 1913); Przylesie (nazwa w latach 30., nieoficjalna)",
+    "lat": 52.276915,
+    "lon": 20.921101,
+    "lokalizacja": "przyblizona",
+    "okres": "1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa „Chomiczówka” pochodzi od nazwiska rodziny Chomiczów, właścicieli okolicznych gruntów.",
+      "W 1909 roku teren folwarku we Wawrzyszewie został rozparcelowany; grunty po południowej stronie dzisiejszej ul. Wólczyńskiej stały się własnością rodziny Chomiczów.",
+      "W 1913 roku powstała niewielka osada zwana Kolonią Chomiczów, położona po północnej stronie obecnej ul. Księżycowej.",
+      "W 1933 roku w obrębie gminy Młociny utworzono gromadę Wawrzyszew, w której znalazły się trzy kolonie Chomiczów.",
+      "W 1934 roku na terenie kolonii stało około 25 budynków.",
+      "We wrześniu 1939 roku obszar znalazł się w strefie walk o północno-zachodnie przedpole Warszawy; walczyły tu m.in. oddziały 30 Pułku Strzelców Kaniowskich.",
+      "W 1951 roku Wawrzyszew i jego kolonie, w tym Chomiczówka, zostały przyłączone do Warszawy.",
+      "W latach 70. XX wieku zbudowano osiedle mieszkaniowe Chomiczówka według projektu Haliny Drewiczewskiej, Danuty Małkowskiej i Jana Szmidta; inwestorem była Warszawska Spółdzielnia Mieszkaniowa.",
+      "Kościół parafii Matki Bożej Wspomożycielki Wiernych został konsekrowany 7 czerwca 2003 roku przez Józefa Glempa; parafię erygowano w 1988 roku."
+    ],
+    "ciekawostki": [
+      "W latach 30. XX wieku osiedle nowych domów Chomiczów nazywano również „Przylesie”.",
+      "Według relacji świadków w piekarni przy ul. Aspekt we wrześniu 1939 roku spalono żywcem grupę rannych polskich żołnierzy (relacja w artykule, nie potwierdzona w paczce)."
+    ],
+    "summary_en": "Chomiczówka is a housing estate and statistical area in the south of Bielany, named after the Chomicz family, who bought land after the Wawrzyszew farm was divided in 1909. Its large housing estate was built from the 1970s, and it was incorporated into Warsaw in 1951.",
+    "ludzie": [
+      {"kto": "Józef Chomicz", "rola": "założyciel firmy ogrodniczej Bracia Chomicz (1909)", "wiki": null},
+      {"kto": "Mieczysław Michałowski", "rola": "autor wspomnień o okolicy z okresu przedwojennego", "wiki": null},
+      {"kto": "Halina Drewiczewska", "rola": "architektka osiedla Chomiczówka (projekt z lat 70.)", "wiki": null},
+      {"kto": "Danuta Małkowska", "rola": "architektka osiedla Chomiczówka (projekt z lat 70.)", "wiki": null},
+      {"kto": "Jan Szmidt", "rola": "architekt osiedla Chomiczówka (projekt z lat 70.)", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "prymas; poświęcił kaplicę (grudzień 1982) i konsekrował kościół (2003)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Kolonia Chomiczów (od 1913)",
+      "Przylesie (nazwa nieoficjalna, lata 30. XX w.)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Chomiczówka", "url": "https://pl.wikipedia.org/wiki/Chomicz%C3%B3wka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w połowie zdania (ostatnia linia o przynależności administracyjnej do 1994 roku). Współrzędne z nagłówka. Relację o spaleniu rannych żołnierzy artykuł przytacza jako relację świadków; przed użyciem warto sprawdzić źródło."
+  },
+  {
+    "id": "cmentarz-komunalny-polnocny",
+    "nazwa": "Cmentarz Komunalny Północny",
+    "name_en": "Północny Municipal Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Wóycickiego / Wólczyńska, Bielany (teren Młocin i Wólki Węglowej)",
+    "adres_historyczny": "Cmentarz na Wólce (nazwa potoczna)",
+    "lat": 52.300833333,
+    "lon": 20.895833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1973–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na początku lat 60. XX wieku w Warszawie zaczęło brakować wolnych miejsc grzebalnych; podjęto decyzję o budowie nowego cmentarza.",
+      "Cmentarz ulokowano przy trasie wylotowej na Gdańsk, częściowo na terenie Wólki Węglowej.",
+      "Prace projektowe pod kierunkiem architekta krajobrazu Longina Majdeckiego wykonano w Biurze Projektów Budownictwa Komunalnego „Stolica”.",
+      "Na powierzchni 143 ha powstało 800 kwater grzebalnych, posadzono kilkadziesiąt tysięcy drzew i krzewów.",
+      "Wybudowano ponad 200 km dróg i alejek, dom pogrzebowy z 3 salami ceremonialnymi, spopielarnię, kancelarię i przechowalnię zwłok.",
+      "Użytkowanie cmentarza rozpoczęto w lutym 1973 roku.",
+      "Cmentarz graniczy z terenem kościoła św. Ignacego Loyoli, w którym odbywają się uroczystości pogrzebowe osób wyznania rzymskokatolickiego."
+    ],
+    "ciekawostki": [
+      "Cmentarz jest jednym z największych pod względem powierzchni w Polsce i Europie; leży na Młocinach i na Wólce Węglowej."
+    ],
+    "summary_en": "Północny Municipal Cemetery is one of the largest cemeteries in Poland and Europe by area, on Młociny and Wólka Węglowa in Bielany. It was built in the early 1970s to relieve Warsaw's full cemeteries and began receiving burials in February 1973.",
+    "ludzie": [
+      {"kto": "Jan Himilsbach", "rola": "pisarz i aktor (1931–1988), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Edward Stachura", "rola": "pochowany na cmentarzu (grób)", "wiki": null},
+      {"kto": "Antoni Frydel", "rola": "gen. bryg. MO, komendant stołeczny MO (1928–2004), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Dariusz Hajn", "rola": "pierwszy wokalista punkowej formacji Dezerter (1964–1995), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Janusz Grzelak", "rola": "psycholog, uczestnik obrad Okrągłego Stołu (1941–2025), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Longin Majdecki", "rola": "architekt krajobrazu, kierował projektem cmentarza", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Cmentarz na Wólce (nazwa potoczna)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz Komunalny Północny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cmentarz_Komunalny_P%C3%B3%C5%82nocny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lista pochowanych w artykule jest długa; wybrano sześć nazwisk jako przykład. Współrzędne z nagłówka (52.300833333, 20.895833333). Adres dzisiejszy nie jest w artykule, wpisano ogólny opis lokalizacji; do weryfikacji."
+  }
+]

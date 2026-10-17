@@ -1,0 +1,42 @@
+[
+  {
+    "id": "centralny-dom-towarowy-krucza-50",
+    "nazwa": "Centralny Dom Towarowy (dziś Cedet)",
+    "name_en": "Central Department Store (today Cedet)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krucza 50 (dziś biurowiec Cedet)",
+    "adres_historyczny": "ul. Bracka 15/19 (pierwotny adres)",
+    "lat": 52.23136112,
+    "lon": 21.01685107,
+    "lokalizacja": "dokladna",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektowali w latach 1947–1948 Zbigniew Ihnatowicz i Jerzy Romański; otwarto go 22 lipca 1951 roku jako Centralny Dom Towarowy.",
+      "W 1971 roku przeniesiono tu Centralny Dom Dziecka, wcześniej mieszczący się w Domu Towarowym Braci Jabłkowskich.",
+      "Był jednym z pierwszych budynków w PRL z podziemnym garażem; zrealizował w pełni pięć zasad architektury nowoczesnej Le Corbusiera.",
+      "W kwietniu 1952 roku na szóstym piętrze otwarto restaurację „Stolica”.",
+      "21 września 1975 roku w budynku wybuchł pożar, który objął trzy piętra; budynek odbudowano i oddano do użytku 25 listopada 1977 roku.",
+      "W 2006 roku główna bryła budynku została wpisana do rejestru zabytków.",
+      "W 2014 roku nowy właściciel, spółka Immobel, rozpoczął przebudowę na biurowiec; zburzono niemal cały budynek, z wyjątkiem żelbetowej konstrukcji od strony Alej Jerozolimskich. Budynek pod nazwą Cedet oddano do użytku w maju 2018 roku."
+    ],
+    "ciekawostki": [
+      "Były to drugie ruchome schody w Warszawie; autorem logotypu CDT był Karol Śliwka.",
+      "Po remoncie dawny Centralny Dom Dziecka nazywano „Smyk”."
+    ],
+    "summary_en": "The Central Department Store, designed in 1947–1948 by Zbigniew Ihnatowicz and Jerzy Romański and opened on 22 July 1951 at Bracka 15/19 and later at Krucza 50. It was a showcase of Polish post-war modernism; it burned in 1975, was listed in 2006 and was converted into the Cedet office building in 2018.",
+    "ludzie": [
+      {"kto": "Zbigniew Ihnatowicz", "rola": "projektant budynku (1947–1948)", "wiki": null},
+      {"kto": "Jerzy Romański", "rola": "projektant budynku (1947–1948)", "wiki": null},
+      {"kto": "Karol Śliwka", "rola": "autor logotypu CDT", "wiki": null},
+      {"kto": "Jan Poliński", "rola": "projektant części wystroju wnętrz (kawiarnia, restauracja „Stolica”)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Towarowy „Smyk”", "Centralny Dom Dziecka (w budynku od 1971)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centralny Dom Towarowy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Centralny_Dom_Towarowy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie przebudowy Cedet; wzięto fakty z części dostępnej."
+  }
+]

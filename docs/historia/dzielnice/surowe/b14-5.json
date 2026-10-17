@@ -1,0 +1,286 @@
+[
+  {
+    "id": "ulica-nowowiejska",
+    "nazwa": "ulica Nowowiejska",
+    "name_en": "Nowowiejska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowowiejska",
+    "adres_historyczny": "Nowa Wieś (osada, od której pochodzi nazwa)",
+    "lat": 52.2198947,
+    "lon": 21.0166332,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1767–1768, z polecenia Stanisława Augusta Poniatowskiego, przeprowadzono Drogę Wolską (Królewską) z zamku w Ujazdowie w kierunku pola elekcyjnego na Woli.",
+      "W 1784 roku z woli króla powstała wzorcowa osada Nowa Wieś, od której pochodzi nazwa ulicy.",
+      "Ulica miała być osią placów gwiaździstych w ramach Osi Stanisławowskiej; place Politechniki i Zbawiciela znajdują się nadal w jej ciągu.",
+      "W latach 1922–1926 po południowej stronie zachodniego odcinka zbudowano Kolonię Staszica; w 1924 roku Czesław Przybylski przebudował dawne koszary na monumentalny gmach Ministerstwa Spraw Wojskowych.",
+      "W grudniu 1933 roku nazwę ulicy zmieniono na 6 Sierpnia, dla upamiętnienia wymarszu Pierwszej Kompanii Kadrowej z Krakowa w 1914 roku.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 26 marca 1949 roku odcinkowi między placem Zbawiciela a aleją Niepodległości przywrócono nazwę ulica Nowowiejska.",
+      "W latach 80. XIX wieku tereny wokół zachodniej części ulicy zagospodarowano na siedzibę Stacji Filtrów, a ulicą poprowadzono linię tramwaju elektrycznego."
+    ],
+    "ciekawostki": [
+      "W 1933 roku odsłonięto pomnik Poległym Saperom przy skrzyżowaniu z al. Niepodległości; został zniszczony w 1944 roku."
+    ],
+    "summary_en": "Nowowiejska was laid out in 1767–68 as the Royal Road to the election field in Wola and became part of the Stanisławowska Axis. Its name comes from the model village of Nowa Wieś, and it was briefly renamed 6 Sierpnia in 1933.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "król, z jego polecenia wytyczono Drogę Wolską i osadę Nowa Wieś", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "przebudował dawne koszary na gmach Ministerstwa Spraw Wojskowych (1924)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowa Wieś (osada, 1784)", "6 Sierpnia (od grudnia 1933)", "aleja Wyzwolenia (wschodni odcinek, od 1946)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowowiejska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowowiejska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-nowy-zjazd",
+    "nazwa": "ulica Nowy Zjazd",
+    "name_en": "Nowy Zjazd Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Zjazd",
+    "adres_historyczny": "wiadukt Pancera (Nowy Zjazd, 1844–1846)",
+    "lat": 52.2473181,
+    "lon": 21.0199804,
+    "lokalizacja": "przyblizona",
+    "okres": "1844–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1844–1846 wybudowano wiadukt do planowanego stałego mostu przez Wisłę; nazwano go Nowym Zjazdem, a zwyczajowo wiaduktem Pancera od nazwiska projektanta Feliksa Pancera.",
+      "Po otwarciu mostu Aleksandrowskiego (Kierbedzia) w 1864 roku Nowy Zjazd stał się główną arterią łączącą centrum Warszawy z Pragą.",
+      "W 1907 roku wiadukt zmodernizowano dla tramwajów elektrycznych, które pojechały nim niecały rok później.",
+      "W 1944 roku Niemcy wysadzili Wiadukt Pancera i spalili lub zburzyli prawie wszystkie budynki przy ulicy.",
+      "Pozostałości zabudowy rozebrano przy realizacji osiedla Mariensztat w 1949 roku."
+    ],
+    "ciekawostki": [
+      "W domu pod nr 5 Jean Lucien Dieuleveut-Kaulek, nauczyciel francuskiego, uczył w nim Romaina Gary’ego, o czym Gary pisze w książce „Obietnica poranka”."
+    ],
+    "summary_en": "Nowy Zjazd is a short street by the Vistula viaduct built in 1844–46 by Feliks Pancer. It became the main link from the centre to Praga after 1864, and most of its buildings were destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Feliks Pancer", "rola": "projektant wiaduktu, od którego wziął nazwę wiadukt Pancera", "wiki": null},
+      {"kto": "Romain Gary", "rola": "uczeń Jeana Lucien Dieuleveut-Kaulek w domu pod nr 5", "wiki": null},
+      {"kto": "Jean Lucien Dieuleveut-Kaulek", "rola": "nauczyciel języka francuskiego, mieszkał pod nr 5", "wiki": null},
+      {"kto": "Michaił I. Żdanowicz", "rola": "właściciel łaźni parowej pod nr 1 wzniesionej w 1867–1868", "wiki": null}
+    ],
+    "dawne_nazwy": ["wiadukt Pancera (nazwa nieoficjalna)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowy Zjazd w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowy_Zjazd_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "lazni-zdanowicza-nowy-zjazd-1",
+    "nazwa": "dawna łaźnia parowa Żdanowicza, później Muzeum Komunikacji (Nowy Zjazd 1)",
+    "name_en": "Zdanowicz steam bath building, later Museum of Transport",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Zjazd 1",
+    "adres_historyczny": null,
+    "lat": 52.2473181,
+    "lon": 21.0199804,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1867–1868 wzniesiono na planie podkowy trzypiętrowy budynek łaźni parowej Michaiła I. Żdanowicza, największej wtedy łaźni w Warszawie.",
+      "W latach 1926–1928 budynek podwyższono o trzy kondygnacje dla Towarzystwa Budowy i Eksploatacji Domów; był wtedy największym w Warszawie budynkiem biurowo-mieszkalnym.",
+      "Od 1931 roku mieściło się tu Muzeum Kolejowe, które 15 grudnia 1938 roku przekształcono w Muzeum Komunikacji.",
+      "W 1940 roku zbiory muzeum usunięto z budynku; po przeprowadzkach trafiły do budynków Dworca Wileńskiego, gdzie spłonęły w wyniku radzieckiego nalotu.",
+      "W czasie powstania warszawskiego budynek był ważnym punktem niemieckiego oporu i nigdy nie został zdobyty przez Polaków.",
+      "Od lat 90. XX wieku mieści się tu Wojewódzkie Centrum Stomatologii."
+    ],
+    "ciekawostki": [
+      "Wewnątrz podkowy budynku znajdowała się kotłownia z wysokim kominem, widoczna na wielu przedwojennych zdjęciach okolicy."
+    ],
+    "summary_en": "A bath house built in 1867–68 on the Nowy Zjazd viaduct, later enlarged, used as the Railway Museum and then the Museum of Transport, and turned into a dental centre in the 1990s.",
+    "ludzie": [
+      {"kto": "Michaił I. Żdanowicz", "rola": "fundator łaźni parowej (1867–1868)", "wiki": null}
+    ],
+    "dawne_nazwy": ["łaźnia parowa Żdanowicza"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowy Zjazd w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowy_Zjazd_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Nowy Zjazd."
+  },
+  {
+    "id": "dom-profesorow-nowy-zjazd-5",
+    "nazwa": "Dom Profesorów przy Nowym Zjeździe 5",
+    "name_en": "Professors' House at Nowy Zjazd 5",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Nowy Zjazd 5",
+    "lat": 52.2473181,
+    "lon": 21.0199804,
+    "lokalizacja": "przyblizona",
+    "okres": "1914–1944",
+    "istnieje": false,
+    "fakty": [
+      "W 1914 roku rozpoczęto budowę kamienicy Trachtenbergów pod nr 5; prace wstrzymał wybuch I wojny światowej.",
+      "Szkielet został wykorzystany w latach 1924–1925 do wybudowania Domu Profesorów zrzeszonych w spółdzielni mieszkaniowej Kooperatywa Budowlana „Siedziba”.",
+      "Projekt Domu Profesorów: Konstanty Sylwin Jakimowicz lub Kazimierz Tołłoczko (wg Jarosława Zielińskiego). Pięciopiętrowa kamienica miała jedenastoosiową fasadę i 20 dużych mieszkań.",
+      "3 sierpnia 1944 roku żołnierze niemieccy zamordowali ok. 15 mężczyzn, mieszkańców Domu Profesorów, w tym profesorów Uniwersytetu Warszawskiego."
+    ],
+    "ciekawostki": [
+      "W dzieciństwie w tym domu mieszkał Andrzej Łapicki, który opisywał go jako dom pełen uniwersyteckich sław."
+    ],
+    "summary_en": "Built in 1924–25 on the frame of an unfinished prewar tenement, the Professors' House housed Warsaw University academics. About 15 residents, including several professors, were murdered there on 3 August 1944.",
+    "ludzie": [
+      {"kto": "Konstanty Sylwin Jakimowicz", "rola": "możliwy projektant Domu Profesorów (wg Jarosława Zielińskiego: Kazimierz Tołłoczko)", "wiki": null},
+      {"kto": "Wacław Roszkowski", "rola": "profesor UW, zginął 3 sierpnia 1944 roku", "wiki": null},
+      {"kto": "Józef Rafacz", "rola": "profesor UW, zamordowany 3 sierpnia 1944 roku", "wiki": null},
+      {"kto": "Andrzej Tretiak", "rola": "profesor UW, zamordowany 3 sierpnia 1944 roku", "wiki": null},
+      {"kto": "Eugeniusz Wajgiel", "rola": "lekarz, profesor UW, zamordowany 3 sierpnia 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Trachtenbergów (projekt z 1914 roku)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowy Zjazd w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowy_Zjazd_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Położenie przybliżone. Artykuł podaje nazwisko projektanta w dwóch wersjach. Tekst o egzekucjach jest urwany w źródle; zamordowanych podano jako ok. 15 i wymieniono czterech profesorów."
+  },
+  {
+    "id": "ulica-nowy-swiat",
+    "nazwa": "ulica Nowy Świat",
+    "name_en": "Nowy Świat Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat",
+    "adres_historyczny": null,
+    "lat": 52.2379689,
+    "lon": 21.017688,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica stanowi fragment dawnego traktu ze Starej Warszawy do Ujazdowa; jej nazwa nawiązuje do nowego osadnictwa rozwijającego się za wałami miejskimi w XVII wieku.",
+      "W XVII i XVIII wieku w rejonie ulicy powstały jurydyki: Nowoświecka, Tamka-Kałęczyn, Bożydar-Kałęczyn, Aleksandria i Ordynacka; zniesiono je ustawą Prawo o miastach z 1791 roku.",
+      "W 1907 roku na ulicy uruchomiono latarnie elektryczne, a w 1908 roku pojechały nią tramwaje elektryczne.",
+      "W sierpniu 1944 roku ulicę przegrodziły dwie powstańcze barykady: przy ul. Chmielnej oraz na osi ulic Ordynackiej i Wareckiej.",
+      "W marcu 1947 roku rozpoczęto odbudowę budynków, obniżonych do dwóch pięter; ulicę otwarto dla ruchu 22 lipca 1949 roku.",
+      "Od 2 lutego do 15 czerwca 1996 roku przeprowadzono remont według projektu Krzysztofa Domaradzkiego; jezdnie zwężono z 14 do 7 metrów, a samochody prywatne wyłączono z ruchu.",
+      "W 1994 roku Trakt Królewski wraz z historycznym zespołem miasta i Wilanowem został uznany za pomnik historii."
+    ],
+    "ciekawostki": [
+      "Przy ulicy rosną dwa drzewa, grusze samosiejki: przy wylocie ul. Foksal oraz między ul. Ordynacką a Świętokrzyską."
+    ],
+    "summary_en": "Nowy Świat is part of the Royal Route between the Old Town and Ujazdów. Its neoclassical reconstruction after 1947 rebuilt the street at two storeys, and in 1996 it was narrowed and closed to private cars.",
+    "ludzie": [
+      {"kto": "Krzysztof Domaradzki", "rola": "projektant remontu ulicy w 1996 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowy Świat w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowy_%C5%9Awiat_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-oboznia",
+    "nazwa": "ulica Oboźna",
+    "name_en": "Oboźna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Oboźna",
+    "adres_historyczny": null,
+    "lat": 52.2391371,
+    "lon": 21.0207974,
+    "lokalizacja": "przyblizona",
+    "okres": "1771–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica prowadziła do dworu oboźnego królewskiego Bogusława Ernesta Denhoffa, od czego pochodzi jej nazwa nadana w 1771 roku.",
+      "W 1896 roku przy ulicy wybudowano rotundę, w której umieszczono panoramę Tatr.",
+      "Około 1911 roku rotundę przebudowano na Teatr Żydowski im. A. Kamińskiego; w 1935 roku przebudowano ją na garaż.",
+      "Większość zabudowy ulicy uległa zniszczeniu w czasie II wojny światowej.",
+      "Po remoncie w latach 2005–2006 skręt z ul. Oboźnej w ul. Krakowskie Przedmieście zlikwidowano, a ulicę połączono z północnym odcinkiem ul. Kopernika."
+    ],
+    "ciekawostki": [
+      "Klasycystyczny zdrój z 1837 roku, w miejscu dawnego źródła skarpowego, wykonano według projektu Edwarda de Klopmanna; obecnie zasilany jest wodą z wodociągów miejskich."
+    ],
+    "summary_en": "Oboźna is named after the royal Oboźny, Bogusław Ernest Denhoff, whose manor the street led to. Its 1896 rotunda was used as a panorama, then a Yiddish theatre and finally a garage, and most of the street was destroyed in the war.",
+    "ludzie": [
+      {"kto": "Bogusław Ernest Denhoff", "rola": "dworzanin, oboźny królewski; od jego dworu pochodzi nazwa ulicy", "wiki": null},
+      {"kto": "Edward de Klopmann", "rola": "projektant klasycystycznego zdroju z 1837 roku", "wiki": null},
+      {"kto": "Leon Schiller", "rola": "pomnik Leona Schillera stoi przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Oboźna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obo%C5%BAna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-okrag",
+    "nazwa": "ulica Okrąg",
+    "name_en": "Okrąg Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Okrąg",
+    "adres_historyczny": null,
+    "lat": 52.230143,
+    "lon": 21.0361101,
+    "lokalizacja": "przyblizona",
+    "okres": "1771–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest fragmentem dawnej drogi schodzącej ze skarpy warszawskiej w kierunku Solca; przy ulicy przepływała rzeka Żurawka.",
+      "W 1770 roku ulicę uregulowano, a nadano jej nazwę w 1771 roku; łukowaty kształt utrwalił się w nazwie.",
+      "Do połowy XIX wieku dominowała tu luźna zabudowa drewniana; później powstawały murowane budynki zakładów przemysłowych, m.in. Fabryki Płodów Chemicznych Ludwika Hirschmanna i Jana Kijewskiego.",
+      "W latach 1923–1924 na rogu ulic Okręgu i Ludnej wzniesiono dom mieszkalny Pocztowej Kasy Oszczędności pod adresem Ludna 9.",
+      "W 1944 roku w czasie powstania ulicę na wysokości domów 2 i 3 przegrodzono barykadą; od 8 sierpnia w domu nr 2 mieścił się sztab zgrupowania „Kryski”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Okrąg follows an old road down from the Warsaw escarpment towards Solec, once beside the Żurawka stream. It became a mixed industrial and residential street after WWI and was a strongpoint in the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "Ludwik Hirschmann", "rola": "współwłaściciel Fabryki Płodów Chemicznych przy ulicy", "wiki": null},
+      {"kto": "Jan Kijewski", "rola": "współwłaściciel Fabryki Płodów Chemicznych przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Okrąg w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Okr%C4%85g_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-okolnik",
+    "nazwa": "ulica Okólnik",
+    "name_en": "Okólnik Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Okólnik",
+    "adres_historyczny": null,
+    "lat": 52.2348834,
+    "lon": 21.022348,
+    "lokalizacja": "przyblizona",
+    "okres": "1882–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę przeprowadzono w 1882 roku przez grunty Ludwika Krasińskiego w związku z budową budynku cyrku.",
+      "Nazwa pochodzi od słowa „okólnik”, które oznacza zagrodę lub podwórze dla zwierząt.",
+      "W latach 1912–1914 przy ulicy wzniesiono gmach Biblioteki Ordynacji Krasińskich.",
+      "Zabudowa ulicy została częściowo zniszczona najpierw podczas obrony Warszawy we wrześniu 1939 roku, a następnie w 1944 roku w czasie powstania warszawskiego."
+    ],
+    "ciekawostki": [
+      "Przy ulicy stał cyrk Braci Staniewskich, dziś nieistniejący."
+    ],
+    "summary_en": "Okólnik was cut through the Krasiński family's land in 1882 to make room for a circus. It is now home to the Chopin Museum and Chopin University, and its Krasiński library building dates from 1912–14.",
+    "ludzie": [
+      {"kto": "Ludwik Krasiński", "rola": "właściciel gruntów, przez które przeprowadzono ulicę w 1882 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Okólnik w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ok%C3%B3lnik_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  }
+]

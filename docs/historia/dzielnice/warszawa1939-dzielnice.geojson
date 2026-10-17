@@ -1,0 +1,691 @@
+{
+ "type": "FeatureCollection",
+ "name": "warszawa1939-dzielnice",
+ "metadata": {
+  "zebrano": "2026-10-17",
+  "zrodla": "warszawa1939.pl (CC BY-NC), pobrane przez Firecrawl; geokodowanie: adresy OSM"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.00351,
+     52.243505
+    ]
+   },
+   "properties": {
+    "id": "w1939-senatorska-40a",
+    "nazwa": "Dom Centrali Związku Kupców, Senatorska 40a",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Senatorska 36",
+    "adres_historyczny": "Senatorska 40a",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Architekci: Ludwik Paradistal, Ludwik Krakowski.",
+     "Budowa: projekt trzypiętrowego biurowca dla Centrali Związku Kupców został zatwierdzony w czerwcu 1938 a symboliczne położenie kamienia węgielnego pod budynek odbyło się 26 października tego samego roku. Gmach miał wypełnić prawie całkowicie działkę o specyficznym kształcie, wciśniętą między istniejące już budynki. Przed wrześniem 1939 udało się wznieść żelbetowy szkielet gmachu, ale wybuch wojny całkowicie wstrzymał prace.",
+     "Okres powojenny: niewykończona żelbetowa konstrukcja przetrwała wojnę, ale w związku z powiększeniem placu Bankowego (przemianowanego na plac Dzierżyńskiego) i planowanej budowie reprezentacyjnej wschodniej pierzei placu w duchu socrealistycznym, miała zostać wyburzona wraz z otaczającą ją zabudową. Taki los spotkał na początku lat 50. XX wieku oficyny Wielkiej Synagogi, które przylegały ścianą szczytową do nieukończonego gmachu Centrali Związku Kupców. Żelbetowa konstrukcja uniknęła jednak zburzenia w związku z odejściem od socrealistycznej koncepcji zabudowy placu i przetrwała kolejne lata w niezmienionym stanie. W końcu lat 50-tych XX szkielet budynku stał się scenografią dla etiudy Jerzego Skolimowskiego \"Hamleś\".",
+     "Ukończenie budowy: na początku lat 60. XX wieku przy placu wzniesiono długi, funkcjonalistyczny blok mieszkalny, częściowo obudowując nim szkielet gmachu Centrali Związku Kupców, który wykończono z przeznaczeniem na cele biurowe. Opis opracowany przez: Jakuba Jastrzębskiego; cenne uzupełnienia: J. Zieliński"
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Dom Centrali Związku KupcówSenatorska 40aSenatorska 36",
+      "url": "https://www.warszawa1939.pl/obiekt/senatorska-40a"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/senatorska/senatorska_40a.jpg?itok=OECkF2EH",
+      "opis": "Dom Centrali Związku Kupców",
+      "rok": "(L) czerwiec/lipiec 1944 - źródło: \"Warszawa - ostatnie spojrzenie\"",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.043085,
+     52.214925
+    ]
+   },
+   "properties": {
+    "id": "w1939-29listopada-olga",
+    "nazwa": "cerkiew pw. św. Olgi, 29-ego Listopada",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "29-ego Listopada",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Architekt: W. N. Pokrowski.",
+     "Budowa: rozpoczęta w 1902 ukończona zapewne około 1904. Po zakończeniu budowy cerkwi została zlikwidowana dotychczasowa cerkiew pułkowa (wspólna dla pułku huzarskiego i ułańskiego) mieszcząca się w jednym z budynków koszarowych ( _jak ustalił Andrzej Buczyński, był to budynek stojący na wschód od cerkwi z 1904_). Prawdopodobnie była to cerkiew urządzona w 1867 według projektu Teodora Witkowskiego, mylnie utożsamiana z cerkwią pw. bł. Martyniana przy Szwoleżerów. _Więcej o historii powstania cerkwi w opracowaniu _\"Historia cerkwi bł. Martyniana i św. Olgi\"__. Obok cerkwi w 1911 wzniesiono pomnik generała M.D. Skobielewa. W 1922 przeznaczona tymczasowo na siedzibę Archiwum Państwowego.",
+     "Rozebrana: w okresie międzywojennym."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: cerkiew pw. św. Olgi29-ego Listopada",
+      "url": "https://www.warszawa1939.pl/obiekt/29listopada-olga"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": false,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/29listopada/29listopada_olga.jpg?itok=1j6KXxQC",
+      "opis": "cerkiew pw. św. Olgi",
+      "rok": "przed 1913 - źródło: Z kolekcji prywatnej Roberta Marcinkowskiego",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.043085,
+     52.214925
+    ]
+   },
+   "properties": {
+    "id": "w1939-29listopada-koszary-pilsudski",
+    "nazwa": "koszary 1. Dywizjonu Artylerii Konnej im. Józefa Bema pomnik J. Piłsudskiego, 29-ego Listopada",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "29-ego Listopada",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Odsłonięty: 14 października 1933. Pomnik ustawiono na terenie koszar im. generała Józefa Bema, (dawnych koszar Grodzieńskiego Husarskiego Pułku Lejb-Gwardii) zajmowanych w okresie międzywojennym przez 1. Dywizjon Artylerii Konnej. Pomnik stanął na miejscu, lub bardzo blisko miejsca gdzie w latach 1911-1915 (?) stał pomnik rosyjskiego generała Michała Skobielewa.",
+     "Rozebrany: prawdopodobnie po 1945. Boczne tablice ocalały i znajdują się w zbiorach Muzeum Wojska Polskiego. Po zmianach ustrojowych w 1989 r. zostały zawieszone przy głównym wejściu do siedziby muzeum przy Al. Jerozolimskich."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: koszary 1. Dywizjonu Artylerii Konnej im. Józefa Bema pomnik J. Piłsudskiego29-ego Listopada",
+      "url": "https://www.warszawa1939.pl/obiekt/29listopada-koszary-pilsudski"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": false,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/29listopada/29listopada_pilsudski.jpg?itok=5vPGKr2W",
+      "opis": "koszary 1. Dywizjonu Artylerii Konnej im. Józefa Bema pomnik J. Piłsudskiego",
+      "rok": "1933 - źródło: Narodowe Archiwum Cyfrowe",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.043085,
+     52.214925
+    ]
+   },
+   "properties": {
+    "id": "w1939-29listopada-bem",
+    "nazwa": "pomnik Józefa Bema z cyklu \", Obiekty ruchome\"29-ego Listopada",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Obiekty ruchome\"29-ego Listopada",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Odsłonięcie: 19 maja 1927 przez budynkiem Koszar 1. Dywizjonu Artylerii Konnej im. gen. Józefa Bema przy ul. 29 Listopada.",
+     "Obecnie: od 2004 pomnik stoi w Łazienkach Królewskich, przy alei pomiędzy Teatrem na Wyspie a Koszarami Kantonistów."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: pomnik Józefa Bema z cyklu \"Obiekty ruchome\"29-ego Listopada",
+      "url": "https://www.warszawa1939.pl/obiekt/29listopada-bem"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/29listopada/29listopada_bem_0.jpg?itok=sS5WC1aO",
+      "opis": "pomnik Józefa Bema z cyklu \"",
+      "rok": "(L) marzec 1928 - źródło: Narodowe Archiwum Cyfrowe",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.043085,
+     52.214925
+    ]
+   },
+   "properties": {
+    "id": "w1939-29listopada-skobielew",
+    "nazwa": "pomnik generała Michała D. Skobielewa, 29-ego Listopada",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "29-ego Listopada",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Odsłonięcie: 12 czerwca 1911. Pomnik został ustawiony przy placu na terenie koszar Grodzieńskiego Husarskiego Pułku Lejb-Gwardii, w którym Skobielew rozpoczynał swoją karierę wojskową.",
+     "Rozebrany: prawdopodobnie około 1915-1918. Na jego miejscu, bądź bardzo blisko tego miejsca w 1933 odsłonięto pomnik poświęcony Józefowi Piłsudskiemu."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: pomnik generała Michała D. Skobielewa29-ego Listopada",
+      "url": "https://www.warszawa1939.pl/obiekt/29listopada-skobielew"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": false,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/29listopada/29listopada_skobielew.jpg?itok=MVkCVCcP",
+      "opis": "pomnik generała Michała D. Skobielewa",
+      "rok": "przed 1915 -",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.002212,
+     52.244766
+    ]
+   },
+   "properties": {
+    "id": "w1939-11listopada-10",
+    "nazwa": "11 Listopada nr 10",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "11 Listopada nr 10",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Rozebrany: rozebrany w latach 70-ych XX w. Pozostałe zabudowania na posesji wciąż istnieją. * * * Na temat tego budynku albo nie posiadamy więcej informacji, albo jeszcze nie dotarliśmy do źródeł bądź opracowań, w których takie informacje się znajdują. Jeśli chciałbyś opracować ten obiekt - przejdź **do formularza**, dzięki Tobie baza informacji o dawnej Warszawie może stać się pełniejsza!"
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: 11 Listopada nr 10",
+      "url": "https://www.warszawa1939.pl/obiekt/11listopada-10"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": false,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/11listopada/11listopada_10.jpg?itok=2nLrmxH1",
+      "opis": "11 Listopada nr 10",
+      "rok": "sierpień 1939 - źródło: Narodowe Archiwum Cyfrowe",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.973566,
+     52.27481
+    ]
+   },
+   "properties": {
+    "id": "w1939-gdanska-6-kosciol",
+    "nazwa": "kościół Matki Boskiej Królowej Korony Polskiej dawny pałacyk Marii Kazimiery Sobieskiej, Gdańska 6",
+    "typ": "swiatynia",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Gdańska 6",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Architekt: Tylman z Gameren",
+     "Budowa: 1691-96. Kwadratowy, piętrowy pałacyk powstał dla królowej Marii Kazimiery, żony Jana III Sobieskiego. Ulokowany na splantowanym szczycie wzniesienia, z francuska zwany, od imienia królowej \"Marie Mont\" - nazwa która przetrwała do czasów obecnych jako określenie tej części miasta: Marymont. Obok pałacyku stanęły dwa pawilony mieszczące kuchnię i pomieszczenia dla służby.",
+     "Przebudowy: przez króla Augusta II Mocnego w latach 20-tych XVIII w. na willę myśliwską, restaurowaną w latach 70. lub 80. XVIII w. przez ówczesnego właściciela Franciszka Rzewuskiego. Po trzecim rozbiorze własność rządu pruskiego, następnie rządu Księstwa Warszawskiego, który lokuje w budynku w 1816 Instytut Agronomiczny. Na potrzeby instytutu w latach 1820-40 poniżej pałacyku zostaje wzniesiony zespół nowych budynków dydaktycznych, pałacyk zostaje przekształcony w kaplicę, przebudowany dodatkowo na ten cel w 1853 według projektu Karola Martina. Po likwidacji Instytutu w 1861 i przejęciu terenu przez wojsko w pałacyku, obniżonym do wysokości parterowego budynku mieszczą się magazyny wojskowe. Od 1915 w zabudowaniach Instytutu zostaje ulokowane się schronisko św. Józefa prowadzone przez Zgromadzenie Sióstr Miłosierdzia św. Wincentego à Paulo, a w 1916 księża marianie (rezydujący w budynkach przy kościele w Lesie Bielańskim) urządzają kaplicę w parterowym relikcie pałacyku. Po 1819 kaplica przejęta przez duszpasterstwo wojskowe. W 1924 z inicjatywy księdza kapelana Michała Sopoćki obiekt zostaje gruntownie przebudowany na kościół, którego poświęcenie nastąpiło 16 listopada 1924. Aut"
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: kościół Matki Boskiej Królowej Korony Polskiej dawny pałacyk Marii Kazimiery SobieskiejGdańska 6",
+      "url": "https://www.warszawa1939.pl/obiekt/gdanska-6-kosciol"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/gdanska/gdanska_6_01.jpg?itok=6nH58a8Q",
+      "opis": "kościół Matki Boskiej Królowej Korony Polskiej dawny pałacyk Marii Kazimiery Sobieskiej",
+      "rok": "(L) przed 1939 - źródło: Narodowe Archiwum Cyfrowe",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.043085,
+     52.214925
+    ]
+   },
+   "properties": {
+    "id": "w1939-11listopada-wet",
+    "nazwa": "Wojskowa Pracownia Weterynaryjna, 11-ego Listopada",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Brechta 16",
+    "adres_historyczny": "11-ego Listopada",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Budowa: ok. 1930.",
+     "Częściowa rozbiórka: po 1945 stopniowo rozebrano skrzydło boczne budynku - najpierw piętrowy budynek, a następnie parterowy łącznik.",
+     "Obecnie: w budynku mieści się Wojskowa Komenda Uzupełnień Warszawa-Praga."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Wojskowa Pracownia Weterynaryjna11-ego ListopadaBrechta 16",
+      "url": "https://www.warszawa1939.pl/obiekt/11listopada-wet"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/11listopada/11listopada_wet.jpg?itok=bE6oKerE",
+      "opis": "Wojskowa Pracownia Weterynaryjna",
+      "rok": "(L) 1932 -",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.995891,
+     52.250226
+    ]
+   },
+   "properties": {
+    "id": "w1939-nalewki-kamien1830",
+    "nazwa": "Głaz-tablica ku czci powstańców listopadowych, Nalewki - skwer przy Kramach Nalewkowskich",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nalewki - skwer przy Kramach Nalewkowskich",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Odsłoniety: 29 listopada 1930. Kamień z pamiątkowym napisem został odsłonięty w miejscu potyczki stoczonej podczas powstania listopadowego w setną rocznicę tego wydarzenia. W czasie II wojny światowej skwerek, na którym stał kamień został przedzielony murem getta, kamień znalazł się w obrębie dzielnicy żydowskiej, ale przetrwał wojnę.",
+     "Obecnie: po II wojnie św., wraz z wytyczeniem ulicy Nowotki (dzisiejszej ulicy Andersa) skwerek został włączony w obręb powiększonego Ogrodu Krasińskich, a sam kamień być może został nieznacznie przesunięty. Opis opracowany przez: Jakuba Jastrzębskiego"
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Głaz-tablica ku czci powstańców listopadowychNalewki - skwer przy Kramach Nalewkowskich",
+      "url": "https://www.warszawa1939.pl/obiekt/nalewki-kamien1830"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/nalewki/nalewki_kamien1830.jpg?itok=owVaHoRN",
+      "opis": "Głaz-tablica ku czci powstańców listopadowych",
+      "rok": "(L) 29 listopada 1930 - źródło: Narodowe Archiwum Cyfrowe",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.964927,
+     52.23269
+    ]
+   },
+   "properties": {
+    "id": "w1939-29listopada-koszary-c",
+    "nazwa": "Koszary 1. Dywizjonu Artylerii Konnej im. gen. Józefa Bema dawne koszary Grodzieńskiego Husarskiego Pułku Lejb-Gwardii, 29-ego Listopada; nr wojskowy 28 i 12329-ego Listopada 3",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "B",
+    "adres_historyczny": "29-ego Listopada; nr wojskowy 28 i 12329-ego Listopada 3",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Budowa: około 1895-1900. Budynek powstał na terenie koszar huzarskich, zajmowanych przez Grodzieński Huzarski Pułk Lejb-Gwardii, w okresie zastępowania drewnianych budynków koszarowych wzniesionych w I połowie XIX w. nowymi budynkami murowanymi. Od strony południowej towarzyszył mu budynek kuchni ze stołówką (nr wojskowy 123).",
+     "Przebudowa: około 1925 według projektu Kazimierza Tołłoczki oba budynki (nr wojskowy i nr 123) przebudowane na koszary Oddziału Przybocznego Prezydenta RP. Po rozwiązaniu Oddziału, budynki przejęte przez 1. Dywizjon Artylerii Konnej im. gen. Józefa Bema.",
+     "Obecnie: budynek koszarowy nadbudowany o jedno piętro około 2005."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Koszary 1. Dywizjonu Artylerii Konnej im. gen. Józefa Bema dawne koszary Grodzieńskiego Husarskiego Pułku Lejb-Gwardii29-ego Listopada; nr wojskowy 28 i 12329-ego Listopada 3B",
+      "url": "https://www.warszawa1939.pl/obiekt/29listopada-koszary-c"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/29listopada/29listopada_koszary03.jpg?itok=7aUvtM63",
+      "opis": "Koszary 1. Dywizjonu Artylerii Konnej im. gen. Józefa Bema dawne koszary Grodzieńskiego Husarskiego Pułku Lejb-Gwardii",
+      "rok": "(L) 1925 - źródło: \"Architektura i Budownictwo\"",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.036757,
+     52.227798
+    ]
+   },
+   "properties": {
+    "id": "w1939-czerniakowska-153a",
+    "nazwa": "Dom oficerski Funduszu Kwaterunku Wojskowego, Czerniakowska 153a róg 29-ego Listopada",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Czerniakowska 153a róg 29-ego Listopada",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Architekt: Kazimierz Tołłoczko.",
+     "Budowa: 1929-30. Budynek zawierał w trzech klatkach schodowych 20 mieszkań dwu i trzy pokojowych, o łącznie 74 izbach (pokoje oraz kuchnie ) i miał kubaturę 8500 m.szesc.",
+     "Zniszczony: w czasie II wojny św."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Dom oficerski Funduszu Kwaterunku WojskowegoCzerniakowska 153a róg 29-ego Listopada",
+      "url": "https://www.warszawa1939.pl/obiekt/czerniakowska-153a"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": false,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/czerniakowska/czerniakowska_153a.jpg?itok=NjBqKCQQ",
+      "opis": "Dom oficerski Funduszu Kwaterunku Wojskowego",
+      "rok": "1938 - źródło: Referat Gabarytów (APW)",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.982991,
+     52.283417
+    ]
+   },
+   "properties": {
+    "id": "w1939-11listopada-15-36pp",
+    "nazwa": "Dom mieszkalny 36 Pułku Piechoty Legii Akademickiej, 11 Listopada nr 15",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "11 Listopada nr 15",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Architekt: Paweł Wędziagolski.",
+     "Budowa: około 1928. Budynek powstał jako jedyny z trzech planowanych, które miały stanowić kompleks domów mieszkalnych dla żołnierzy 36 pp stacjonującego w koszarach przy ul. 11 Listopada."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Dom mieszkalny 36 Pułku Piechoty Legii Akademickiej11 Listopada nr 15",
+      "url": "https://www.warszawa1939.pl/obiekt/11listopada-15-36pp"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/11listopada/11listopada_15_36pp.jpg?itok=Sm75I-7F",
+      "opis": "Dom mieszkalny 36 Pułku Piechoty Legii Akademickiej",
+      "rok": "(L) przed 1939 - Strona poświęcona Juliuszowi Dzierżanowskiemu",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.013068,
+     52.24354
+    ]
+   },
+   "properties": {
+    "id": "w1939-trebacka-4",
+    "nazwa": "kamienica Karola Scheiblera, Trębacka 4",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Trębacka 4",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Architekci: E. Lilpop i J.P. Dziekoński.",
+     "Budowa: 1886. Kamienica powstała na miejscu wyburzonych w latach 1879-83 oficyn pałacu Załuskiego. Inwestorem była prawdopodobnie Anna Scheibler, wdowa po zmarłym w 1881 r. Karolu Scheiblerze, wybitnym przemysłowcu łódzkim. _Nazywanie kamienicy nazwiskiem Karola Scheiblera być może wynika z faktu, że prowadzenie \"Towarzystwa Akcyjnego Manufaktur Bawełnianych Karola Scheiblera\", przejął po ojcu jego syn, również Karol i był on w późniejszym okresie właścicielem budynku, albo jest to skrót myślowy od nazwy Towarzystwa, w której znajdowało się nazwisko Karol Scheibler\"._",
+     "Zniszczony: w 1939.",
+     "Odbudowany: w latach 50-tych XX w. przebudowany na dwupiętrowy biurowiec (bądź też wyburzony, a na jego miejscu wzniesiono budynek o zbliżonym układzie elewacji). W 1994 podwyższony do pierwotnej wysokości trzech pięter."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: kamienica Karola ScheibleraTrębacka 4",
+      "url": "https://www.warszawa1939.pl/obiekt/trebacka-4"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/trebacka/trebacka_4_01.jpg?itok=O-vzWacu",
+      "opis": "kamienica Karola Scheiblera",
+      "rok": "(L) przed 1939 - źródło: Archiwum Państwowe w Warszawie",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.982991,
+     52.283417
+    ]
+   },
+   "properties": {
+    "id": "w1939-11listopada-15-fkw",
+    "nazwa": "Blok podoficerski Funduszu Kwaterunku Wojskowego, 11 Listopada nr 15",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Starzyńskiego 12",
+    "adres_historyczny": "11 Listopada nr 15",
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Architekt: Juliusz Dzierżanowski.",
+     "Budowa: 1928. Budynek przeznaczony dla rodzin podoficerów zawodowych powstał z inicjatywy Departamentu Budownictwa Ministerstwa Spraw Wojskowych, następnie przejęty przez Fundusz Kwaterunku Wojskowego. Liczył 40 mieszkań z 92 izbami. Ciekawym elementem architektury są w nim trzy miniaturowe podwórka - \"studnie\", na które wychodzą okna łazienek i WC. Opis opracowany przez: Szymona Kucharskiego"
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Blok podoficerski Funduszu Kwaterunku Wojskowego11 Listopada nr 15Starzyńskiego 12",
+      "url": "https://www.warszawa1939.pl/obiekt/11listopada-15-fkw"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/11listopada/11listopada_15_fkw.jpg?itok=BRqoeH8o",
+      "opis": "Blok podoficerski Funduszu Kwaterunku Wojskowego",
+      "rok": "(L) około 1929 - źródło: \"Architektura i Budownictwo\"",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.036757,
+     52.227798
+    ]
+   },
+   "properties": {
+    "id": "w1939-czerniakowska-127-targ",
+    "nazwa": "Targowisko Miejskie, Czerniakowska 127 / Podchorążych",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Czerniakowska 127 / Podchorążych",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Otwarcie: 28 listopada 1938 Targowisko powstało w miejscu nieukończonej budowy osiedla mieszkaniowego (powstały jedynie fundamenty czterech bloków)."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: Targowisko MiejskieCzerniakowska 127 / Podchorążych",
+      "url": "https://www.warszawa1939.pl/obiekt/czerniakowska-127-targ"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": false,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/media_uploaded/obiekty/czerniakowska/czerniakowska_127.jpg?itok=omf-r7dg",
+      "opis": "Targowisko Miejskie",
+      "rok": "listopad 1938 - źródło: Narodowe Archiwum Cyfrowe",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.003818,
+     52.250335
+    ]
+   },
+   "properties": {
+    "id": "w1939-bonifraterska-wiadukt",
+    "nazwa": "Wiadukt, Bonifraterska - Mickiewicza",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Bonifraterska - Mickiewicza",
+    "adres_historyczny": null,
+    "lokalizacja": "przyblizona",
+    "fakty": [
+     "Budowa: wiadukt oddano do użytku 27 listopada 1937. Był jednym z elementów nowego połączenia Śródmieścia z Żoliborzem, w skład którego wchodziło przebicie Bonifraterskiej do pl. Krasińskich. Dzięki nowemu wiaduktowi możliwe było wycofanie tramwajów oraz głównego ruchu samochodowego z tunelu pod torami na osi Krajewskiego.",
+     "Zniszczony: w czasie II wojny św.",
+     "Odbudowany: po 1945, ze zmianą wjazdu od strony Śródmieścia z Bonifraterskiej na nowowytyczoną ulicę Nowotki (obecną Andersa).",
+     "Obecnie: ze względu na zagrożenie katastrofą budowlaną zamknięty od listopada 2008 dla komunikacji miejskiej, a w lutym 2009 całkowicie dla ruchu kołowego. W kwietniu 2010 powojenna konstrukcja została rozebrana, a budowa nowego wiaduktu trwała od kwietnia 2010 do października 2011."
+    ],
+    "zrodla": [
+     {
+      "tytul": "warszawa1939.pl: WiaduktBonifraterska - Mickiewicza",
+      "url": "https://www.warszawa1939.pl/obiekt/bonifraterska-wiadukt"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "warszawa1939-firecrawl",
+    "uwagi": "Adres z karty warszawa1939.pl (numeracja przedwojenna może się różnić od dzisiejszej). Licencja CC BY-NC.",
+    "istnieje": true,
+    "zdjecia": [
+     {
+      "url": "https://www.warszawa1939.pl/sites/default/files/styles/full/public/wiadukt_2.jpg?itok=WycBHd_8",
+      "opis": "Wiadukt",
+      "rok": "1944 - źródło: \"Warszawa - ostatnie spojrzenie\"",
+      "zrodlo": "warszawa1939.pl",
+      "licencja": "CC BY-NC (warszawa1939.pl)"
+     }
+    ]
+   }
+  }
+ ]
+}

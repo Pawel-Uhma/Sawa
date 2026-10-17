@@ -1,9 +1,15 @@
-import { fromLngLat, type LatLng, type PlanRouteRequest, type Route } from "@sawa/shared";
+import {
+  fromLngLat,
+  haversineM,
+  type LatLng,
+  type PlanRouteRequest,
+  type Route,
+} from "@sawa/shared";
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
 import { DEFAULT_SEARCH_OPTIONS, planRide, type Ride } from "../domain/routing/beam-search";
 import { buildRoute, buildWalkRoute } from "../domain/routing/build-route";
-import { planFastest } from "../domain/routing/fastest";
+import { DEFAULT_FASTEST_OPTIONS, planFastest } from "../domain/routing/fastest";
 import { computePlaceHits } from "../domain/routing/place-hits";
 import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
 import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
@@ -288,6 +294,33 @@ export function createRoutePlanner(deps: {
     const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
     const story = { attribution, storyGapSec, storyMaxSec, now, placesById };
 
+    // The user picked a walk: no ride is planned at all. Without a duration the walk takes
+    // as long as the straight line at walking speed with the detour factor.
+    if (request.travel === "walk") {
+      const { walkDetourFactor, walkSpeedMps } = DEFAULT_FASTEST_OPTIONS;
+      const budgetSec =
+        request.durationMin !== undefined
+          ? request.durationMin * 60
+          : request.destination
+            ? (haversineM(request.origin, request.destination) * walkDetourFactor) / walkSpeedMps
+            : 0;
+      const walk = planWalk({
+        places: [...placesById.values()],
+        origin: request.origin,
+        end: request.returnToStart ? request.origin : request.destination,
+        budgetSec,
+        interests,
+        prefs,
+      });
+      if (!walk) throw new AppError("NOT_FOUND", "Nie udało się ułożyć spaceru z tych miejsc");
+      return buildWalkRoute({
+        ...story,
+        walk,
+        origin: request.origin,
+        destination: request.destination,
+      });
+    }
+
     /**
      * The fastest way to the destination as a route: a walk when that is quicker, or
      * undefined for a walk with `rideOnly`.
@@ -326,7 +359,12 @@ export function createRoutePlanner(deps: {
 
     // No duration with a destination: the fastest way there.
     if (request.durationMin === undefined) {
-      return (await fastestRoute(request.destination as LatLng)) as Route;
+      const fastest = await fastestRoute(
+        request.destination as LatLng,
+        request.travel === "transit",
+      );
+      if (!fastest) throw new AppError("NOT_FOUND", "Brak przejazdu komunikacją do tego celu");
+      return fastest;
     }
 
     const budgetSec = request.durationMin * 60;
@@ -346,7 +384,8 @@ export function createRoutePlanner(deps: {
 
     // Short rides: walking to a stop and waiting can take the whole time, so a walk
     // past places competes with the ride (a ride counts only if it fits the time).
-    if (request.durationMin < WALK_UNDER_MIN) {
+    // Picked "transit" skips this; no pick (auto) walks only under WALK_UNDER_MIN.
+    if (request.travel === undefined && request.durationMin < WALK_UNDER_MIN) {
       const walk = planWalk({
         places: [...placesById.values()],
         origin: request.origin,

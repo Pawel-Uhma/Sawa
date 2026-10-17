@@ -1,0 +1,230 @@
+[
+  {
+    "id": "plac-politechniki",
+    "nazwa": "Plac Politechniki",
+    "name_en": "Politechnika Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Politechniki (ulice Nowowiejska, Noakowskiego, Lwowska, Śniadeckich, Polna)",
+    "adres_historyczny": "plac Jedności Robotniczej (1949–1989)",
+    "lat": 52.2200472,
+    "lon": 21.0121135,
+    "lokalizacja": "dokladna",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac ukształtowano w ramach założenia ujazdowskiego i osi stanisławowskiej; zaplanowano go pod koniec lat 60. XVIII wieku razem z placami Na Rozdrożu i Zbawiciela.",
+      "W 1784 roku między placem a pl. Zbawiciela powstała osada Nowa Wieś, od której wzięła nazwę ul. Nowowiejska.",
+      "W 1902 roku plac uregulowano w związku z budową gmachu głównego Politechniki Warszawskiej.",
+      "Uchwałą Rady Narodowej z 19 grudnia 1949 roku nadano placowi nazwę plac Jedności Robotniczej, upamiętniającą kongres zjednoczeniowy PPR i PPS, który odbył się w gmachu Politechniki w dniach 15–21 grudnia 1948 roku.",
+      "W latach 1965–1966 przy placu wzniesiono gmach Wydziału Elektroniki Politechniki Warszawskiej.",
+      "Obecną nazwę plac Politechniki nadano w 1989 roku."
+    ],
+    "ciekawostki": [
+      "Po południowej stronie placu znajdowało się główne wejście na tor wyścigów konnych na Polu Mokotowskim."
+    ],
+    "summary_en": "A square on the Ujazdów axis in Śródmieście, planned in the late 18th century and shaped by the main building of the Warsaw University of Technology (1902). From 1949 to 1989 it was named after the 1948 merger congress of the Polish Workers' Party and the PPS.",
+    "ludzie": [],
+    "dawne_nazwy": ["plac Jedności Robotniczej (1949–1989)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Politechniki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Politechniki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plac-powstancow-warszawy",
+    "nazwa": "Plac Powstańców Warszawy",
+    "name_en": "Warsaw Insurgents Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Powstańców Warszawy (przy ul. Boduena, Świętokrzyskiej i Sienkiewicza)",
+    "adres_historyczny": "plac Dzieciątka Jezus (1839–1870)",
+    "lat": 52.2358413,
+    "lon": 21.0128687,
+    "lokalizacja": "dokladna",
+    "okres": "1823–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prostokątny plac wytyczono w latach 1823–1826 w miejscu ogrodów między ulicami Szpitalną, Mazowiecką, Świętokrzyską i Warecką.",
+      "W 1839 roku nadano mu nazwę plac Dzieciątka Jezus, od istniejącego tu od 1758 roku Szpitala Dzieciątka Jezus.",
+      "W latach 1912–1916 stację pocztową zastąpiono monumentalnym gmachem Poczty Głównej.",
+      "W latach 1931–1933 przy placu zbudowano 16-piętrowy wieżowiec Towarzystwa Ubezpieczeniowego Prudential, pierwszy w Polsce drapacz chmur o wysokości 66 metrów.",
+      "W sierpniu 1944 roku powstańcy zajęli budynek Prudentialu i utrzymali go do końca powstania; 28 sierpnia trafił go pocisk o masie 2 ton z moździerza Karl-Gerät.",
+      "Uchwałą Rady Narodowej z 27 września 1957 roku zmieniono nazwę placu na plac Powstańców Warszawy.",
+      "W 1979 roku odsłonięto na placu płytę-pomnik upamiętniającą walki batalionu „Kiliński” podczas powstania warszawskiego."
+    ],
+    "ciekawostki": [
+      "W 1921 roku, w setną rocznicę śmierci Napoleona Bonapartego, plac nazwano placem Napoleona i postawiono tu jego pomnik; rozebrano go, a odsłonięto ponownie w 2011 roku."
+    ],
+    "summary_en": "A rectangular square in central Warsaw with the main post office (1912–1916) and the Prudential skyscraper (1931–1933), the first in Poland. Both were heavily involved in the 1944 Uprising, and the square was renamed in 1957.",
+    "ludzie": [
+      {"kto": "Józef Pułaski", "rola": "starosta warecki, na którego gruntach wytyczono plac (ok. 1870)", "wiki": null},
+      {"kto": "Karol Fryderyk Minter", "rola": "właściciel kamienicy przy placu (1828)", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Dzieciątka Jezus (1839–1870)", "plac Warecki (1870–1921)", "plac Napoleona (1921–1940, 1945–1957)", "Postplatz (1940–1945)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Powstańców Warszawy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Powsta%C5%84c%C3%B3w_Warszawy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-teatralny",
+    "nazwa": "Plac Teatralny",
+    "name_en": "Theatre Square (Plac Teatralny)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Teatralny (między ulicami Senatorską, Moliera, Bielańską i Wierzbową)",
+    "adres_historyczny": "plac Pociejowski; plac Marywilski",
+    "lat": 52.2440895,
+    "lon": 21.0095679,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1808–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Około 1808 roku, na miejscu zlikwidowanego targowiska Pociejów i rozebranego pałacu Pociejowskiego, utworzono najpierw ogród, a później niewielki plac Pociejowski.",
+      "W 1825 roku rozebrano sąsiedni Marywil; teren wykorzystano pod budowę monumentalnego gmachu Teatru Wielkiego oraz kolejnego placu, połączonego z placem Pociejowskim i nazwanego Marywilskim.",
+      "Nazwa plac Teatralny zaczęła być używana ok. 1840 roku.",
+      "Po przeniesieniu w 1818 roku siedziby władz miejskich do pałacu Jabłonowskich plac stał się centrum życia miasta.",
+      "W 1936 roku przed gmachem teatru odsłonięto pomnik Wojciecha Bogusławskiego.",
+      "W czasie wojny zniszczono m.in. gmach teatru, pomnik Bogusławskiego i budynki w północnej pierzei placu; ocalał najmniej uszkodzony pałac Blanka.",
+      "W 1964 roku w miejscu zniszczonego pałacu Jabłonowskich ustawiono pomnik Bohaterów Warszawy; w 1965 roku odsłonięto zrekonstruowany pomnik Bogusławskiego i pomnik Stanisława Moniuszki.",
+      "W latach 90. zrekonstruowano pałac Jabłonowskich i kościół św. Andrzeja."
+    ],
+    "ciekawostki": [
+      "9 maja 1945 roku na placu odbyła się wielka manifestacja mieszkańców po ogłoszeniu kapitulacji III Rzeszy."
+    ],
+    "summary_en": "A square in front of the Great Theatre in Warsaw, which grew out of the Pociej market and the Marywil area in the early 19th century. Much of it was destroyed in 1939–1944, and its 18th-century palaces were rebuilt in the 1990s.",
+    "ludzie": [
+      {"kto": "Wojciech Bogusławski", "rola": "aktor i reżyser, patron pomnika z 1936 roku (zrekonstruowany w 1965)", "wiki": null},
+      {"kto": "Stanisław Moniuszko", "rola": "kompozytor, patron pomnika z 1965 roku", "wiki": null},
+      {"kto": "Marcin Zaleski", "rola": "malarz, który przedstawił plac na obrazie z 1838 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Pociejowski", "plac Marywilski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Teatralny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Teatralny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-trzech-krzyzy",
+    "nazwa": "Plac Trzech Krzyży",
+    "name_en": "Three Crosses Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Trzech Krzyży, w ciągu Traktu Królewskiego",
+    "adres_historyczny": "plac Trzech Złotych Krzyży; plac pod Figurami; plac Aleksandra",
+    "lat": 52.2277648,
+    "lon": 21.0231284,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1725–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Około 1725 roku na placu wzniesiono dwie kolumny zwieńczone pozłacanymi krzyżami, wyznaczające początek Drogi Kalwaryjskiej, ufundowanej przez króla Augusta II.",
+      "W 1756 roku marszałek Franciszek Bieliński postawił przy kolumnach posąg św. Jana Nepomucena z krzyżem, prawdopodobnie dłuta Jana Jerzego Plerscha.",
+      "W latach 1818–1825 wzniesiono klasycystyczny kościół św. Aleksandra według projektu Chrystiana Piotra Aignera; kościół odbudowano w latach 1949–1952.",
+      "W grudniu 1922 roku na placu doszło do starć zwolenników i przeciwników wyboru Gabriela Narutowicza na prezydenta; kilkanaście osób zostało rannych.",
+      "Podczas powstania warszawskiego plac był pod kontrolą Niemców do 3 sierpnia 1944 roku, a 4 sierpnia 1944 roku przejęli go powstańcy; 2 września 1944 roku samoloty Luftwaffe zbombardowały Gimnazjum im. Królowej Jadwigi i kościół św. Aleksandra.",
+      "Obecną nazwę nadano oficjalnie w 1919 roku.",
+      "W 2022–2023 roku plac przebudowano, m.in. wyznaczono pas rowerowy w ciągu Alej Ujazdowskich i posadzono 28 drzew."
+    ],
+    "ciekawostki": [
+      "Na placu stał jeden z pierwszych nowoczesnych szaletów publicznych w Warszawie, który w 2005 roku został rozebrany jako ostatni z kilkunastu zbudowanych przez francuskie towarzystwo.",
+      "W styczniu 1943 roku bojownik Gwardii Ludowej zginął podczas zamachu na kino „Apollo”; upamiętniający go kamień z tablicą ustawiono na skwerze, a upamiętnienie usunięto w latach 90. w związku z budową hotelu Sheraton."
+    ],
+    "summary_en": "A historic square at the junction of the Royal Route and several old roads, marked since around 1725 by two gilded crosses at the start of the Calvary Road. It was damaged during the 1944 Uprising, and the church of St Aleksander was rebuilt in 1949–1952.",
+    "ludzie": [
+      {"kto": "August II", "rola": "król, który ufundował Drogę Kalwaryjską", "wiki": null},
+      {"kto": "Franciszek Bieliński", "rola": "marszałek wielki koronny, fundator posągu św. Jana Nepomucena (1756)", "wiki": null},
+      {"kto": "Jan Jerzy Plersch", "rola": "prawdopodobny autor posągu św. Jana Nepomucena", "wiki": null},
+      {"kto": "Chrystian Piotr Aigner", "rola": "projektant kościoła św. Aleksandra", "wiki": null},
+      {"kto": "Gabriel Narutowicz", "rola": "kandydat na prezydenta, którego wybór w 1922 roku wywołał zamieszki", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Trzech Złotych Krzyży", "plac Złotych Krzyży", "plac pod Figurami", "plac Aleksandra (od kościoła)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Trzech Krzyży w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Trzech_Krzy%C5%BCy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w zrzucie urywa się w opisie przebudowy kamienicy z 2003 roku; pominięto dalsze szczegóły."
+  },
+  {
+    "id": "plac-unii-lubelskiej",
+    "nazwa": "Plac Unii Lubelskiej",
+    "name_en": "Union of Lublin Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Unii Lubelskiej (ulice Polna, Marszałkowska, al. Szucha, Bagatela, Puławska, Klonowa, Boya-Żeleńskiego)",
+    "adres_historyczny": "rondo Mokotowskie; plac Keksholmski (ok. 1875)",
+    "lat": 52.2138675,
+    "lon": 21.0217371,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac ukształtowano przed 1770 rokiem jako najdalej na południe wysunięty okrągły plac założenia ujazdowskiego; w 1770 roku otoczono go okopami Lubomirskiego.",
+      "W latach 1816–1818 w południowej części placu wzniesiono klasycystyczne rogatki Mokotowskie według projektu Jakuba Kubickiego.",
+      "W 1881 roku z placu na Muranów poprowadzono pierwszą linię tramwaju konnego, a w 1908 roku – tramwaju elektrycznego.",
+      "11 listopada 1932 roku na placu odsłonięto pomnik Lotnika dłuta Edwarda Wittinga; został zniszczony przez Niemców w 1944 roku, a jego kopię ustawiono w 1967 roku.",
+      "W 1936 roku przy placu, pod adresem ul. Polna 1, wzniesiono budynek Komendy Straży Ogniowej.",
+      "W 1962 roku przy placu wzniesiono pawilon „Supersam”; w 2006 roku został zburzony, a w latach 2010–2013 powstało centrum biurowo-handlowe Plac Unii.",
+      "W styczniu 1946 roku uruchomiono pierwszą w Warszawie linię trolejbusową „A” na trasie ul. Trębacka – plac Unii Lubelskiej."
+    ],
+    "ciekawostki": [
+      "Obecną nazwę nadano w lipcu 1919 roku, w 350. rocznicę zawarcia unii lubelskiej.",
+      "W 1999 roku na ścianie kamienicy przy ul. Bagatela 15 odsłonięto tablicę unii lubelskiej ufundowaną przez społeczeństwo Lublina."
+    ],
+    "summary_en": "A round square on the south edge of the Ujazdów axis, formerly Rondo Mokotowskie, with the classical Mokotów Toll Gates (1816–1818). Its present name, from 1919, commemorates the 1569 Union of Lublin.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "projektant rogatek Mokotowskich", "wiki": null},
+      {"kto": "Edward Witting", "rola": "autor pomnika Lotnika (1932)", "wiki": null}
+    ],
+    "dawne_nazwy": ["rondo Mokotowskie", "plac Keksholmski (ok. 1875)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Unii Lubelskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Unii_Lubelskiej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plac-zamkowy",
+    "nazwa": "Plac Zamkowy",
+    "name_en": "Castle Square (Plac Zamkowy)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Zamkowy (przy Zamku Królewskim, początek Traktu Królewskiego)",
+    "adres_historyczny": null,
+    "lat": 52.2478718,
+    "lon": 21.0138713,
+    "lokalizacja": "dokladna",
+    "okres": "1818–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1644 roku za murami Starej Warszawy, przed Bramą Krakowską, wzniesiono kolumnę Zygmunta III Wazy, wokół której powstał niewielki plac.",
+      "Plac wytyczono w latach 1818–1821 według projektu Jakuba Kubickiego, w wyniku wyburzenia zabudowań gospodarczych Zamku Królewskiego, Bramy Krakowskiej i kilku kamienic.",
+      "9 maja 1794 roku przed kościołem św. Anny powieszono skazanego na karę śmierci targowiczanina, biskupa inflanckiego Józefa Kazimierza Kossakowskiego.",
+      "8 kwietnia 1861 roku wojska rosyjskie pod dowództwem generała Stiepana Aleksandrowicza Chrulewa dokonały krwawej masakry ludności cywilnej, w której zginęło ponad 100 osób.",
+      "15 listopada 1920 roku na placu wręczono buławę marszałkowską pierwszemu marszałkowi Polski, Józefowi Piłsudskiemu.",
+      "Zabudowa placu została zniszczona w 1939 i 1944 roku; plac odbudowano w latach 1949–1958 w jednolitym stylu.",
+      "W 1977 roku plac przy zamku obniżono o 0,5–1,5 metra według projektu Jana Bogusławskiego; prace archeologiczne odsłoniły relikty murów obronnych i gotyckiego mostu przedbramia Bramy Krakowskiej.",
+      "10 lipca 1997 roku prezydent USA Bill Clinton wygłosił tu przemówienie z okazji zaproszenia Polski do NATO."
+    ],
+    "ciekawostki": [
+      "5 sierpnia 1944 roku powstańcy zdobyli na placu niemiecki transporter opancerzony, który nazwali „Starówka”."
+    ],
+    "summary_en": "The square in front of the eastern façade of the rebuilt Royal Castle, the starting point of the Royal Route. Its layout dates from 1818–1821, and it was rebuilt after the destruction of 1939 and 1944.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "autor projektu placu (1818–1821)", "wiki": null},
+      {"kto": "Zygmunt III Waza", "rola": "król, którego kolumnę wzniesiono w 1644 roku", "wiki": null},
+      {"kto": "Józef Kazimierz Kossakowski", "rola": "targowiczanin, stracony na placu w 1794 roku", "wiki": null},
+      {"kto": "Bill Clinton", "rola": "prezydent USA, przemawiał na placu w 1997 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Zamkowy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Zamkowy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,199 @@
+[
+  {
+    "id": "park-gorczewska",
+    "nazwa": "Park Górczewska",
+    "name_en": "Górczewska Park",
+    "typ": "park",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "część Bemowa (Jelonki), między ul. Lazurową a zabudowaniami parafii Bogurodzicy Maryi",
+    "adres_historyczny": null,
+    "lat": 52.233889,
+    "lon": 20.904722,
+    "lokalizacja": "przyblizona",
+    "okres": "data założenia nieznana–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park założono na dawnych polach uprawnych i mokradłach, stopniowo zasypywanych ziemią wydobywaną przy budowie okolicznych osiedli.",
+      "Mokradła były miejscem rozrodu kilku gatunków płazów: ropuchy zielonej, grzebiuszki ziemnej i traszki zwyczajnej.",
+      "Zasypane pola, z towarzyszącymi rozlewiskami, nosiły zwyczajową nazwę „Prerii”.",
+      "W 2008 roku w parku wzniesiono amfiteatr, któremu w 2009 roku nadano imię Michaela Jacksona – na pamiątkę jego jedynego koncertu w Polsce, z 1996 roku na lotnisku na Bemowie.",
+      "W 2019 roku nazwę obiektu zmieniono na amfiteatr „Górczewska” ze względu na kontrowersje wokół osoby Michaela Jacksona.",
+      "Park zachował się m.in. dzięki temu, że stanowi klin nawietrzający Warszawę od strony Puszczy Kampinoskiej."
+    ],
+    "ciekawostki": [
+      "Park leży na trasie przelotów gęsi gęgawy; spotyka się tu chronione motyle: paziowa królowa i mieniak tęczowiec."
+    ],
+    "summary_en": "Górczewska Park is a green space in the Jelonki part of Bemowo, laid out on former fields and wetlands filled with soil from nearby housing construction. Its amphitheatre was named after Michael Jackson in 2009 and renamed in 2019.",
+    "ludzie": [
+      {"kto": "Michael Jackson", "rola": "patron amfiteatru w parku (nadane 2009), koncert w 1996 na lotnisku na Bemowie", "wiki": null}
+    ],
+    "dawne_nazwy": ["amfiteatr im. Michaela Jacksona (2009–2019)", "Prerie (zwyczajowo)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Park Górczewska", "url": "https://pl.wikipedia.org/wiki/Park_G%C3%B3rczewska"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł w części ucięty w sekcji „Powstanie parku” (data założenia niepodana w widzianym fragmencie). Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "dworek-schneiderow-polczynska-59",
+    "nazwa": "Dworek Schneiderów (ul. Połczyńska 59)",
+    "name_en": "Schneider manor house (Połczyńska 59)",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Połczyńska 59",
+    "adres_historyczny": null,
+    "lat": 52.218,
+    "lon": 20.9079,
+    "lokalizacja": "dokladna",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obiekt przy ul. Połczyńskiej 59 był dworkiem rodziny Schneiderów i został wpisany na listę zabytków (BEM01007).",
+      "Drewniany pałacyk rodziny Schneiderów to jedna z dwóch pozostałości po wytwórni Bogumiła Schneidera w Jelonkach, obok Glinianek Jelonek i Glinianek Sznajdra.",
+      "W 1987 roku zbór przeniósł się do zakupionego budynku przy ul. Połczyńskiej 59 i działa tu pod nazwą Zbór Warszawa-Wola Kościoła Zielonoświątkowego.",
+      "W budynku znajduje się sala modlitewna oraz pomieszczenia do zajęć dla dzieci."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Schneider manor house at Połczyńska 59 is a listed wooden residence that survives from the Schneider brickworks. Since 1987 it has housed a Pentecostal congregation in Warsaw-Wola.",
+    "ludzie": [
+      {"kto": "Waldemar Lisieski", "rola": "pierwszy pastor zboru (ur. 1936)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Chrześcijańska Wspólnota Ewangelii (nazwa zboru)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zbór Warszawa-Wola Kościoła Zielonoświątkowego", "url": "https://pl.wikipedia.org/wiki/Zb%C3%B3r_Warszawa-Wola_Ko%C5%9Bcio%C5%82a_Zielono%C5%9Bwi%C4%85tkowego"},
+      {"tytul": "Wikipedia: Glinianki Jelonek", "url": "https://pl.wikipedia.org/wiki/Glinianki_Jelonek"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord budynku wzięty z artykułu o zborze (obiekt wpisany do rejestru). Datę początku budowy pominięto, bo nie jest podana. Współrzędne z nagłówka artykułu o zborze."
+  },
+  {
+    "id": "stp-mory",
+    "nazwa": "Stacja Techniczno-Postojowa Mory",
+    "name_en": "Mory depot (STP Mory / STP Karolin)",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "obszar między torami PKP, Instytutem Energetyki, al. 4 Czerwca 1989 r. i ul. Gierdziejewskiego",
+    "adres_historyczny": null,
+    "lat": 52.21216,
+    "lon": 20.88375,
+    "lokalizacja": "dokladna",
+    "okres": "2018–dziś (planowane zakończenie 2026)",
+    "istnieje": false,
+    "fakty": [
+      "W 2018 roku podpisano umowę z konsorcjum firm Gülermak i Astaldi na budowę stacji techniczno-postojowej dla linii M2.",
+      "W sierpniu 2020 roku STP wraz z ostatnim odcinkiem drugiej linii metra uzyskała komplet decyzji administracyjnych.",
+      "W lutym 2021 roku przeprowadzono wycinkę drzew i krzewów na terenie przyszłej stacji.",
+      "Pas budowy o długości ok. 2 km częściowo znajduje się na terenie gminy Ożarów Mazowiecki.",
+      "Spodziewany termin zakończenia prac to 2026 rok."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Mory depot (also STP Karolin) is a metro technical and parking depot for line M2 on the border of Bemowo and Ożarów Mazowiecki. The contract was signed in 2018 and the permits came in 2020. Completion was expected in 2026.",
+    "ludzie": [],
+    "dawne_nazwy": ["STP Karolin"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Stacja Techniczno-Postojowa Mory", "url": "https://pl.wikipedia.org/wiki/Stacja_Techniczno-Postojowa_Mory"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt w budowie wg artykułu (istnieje: false). Termin 2026 z artykułu może być nieaktualny. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "staw-jeziorzec",
+    "nazwa": "Staw Jeziorzec",
+    "name_en": "Jeziorzec pond",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "osiedle Stare Górce, otoczony ul. Pełczyńskiego i ul. Narwik",
+    "adres_historyczny": null,
+    "lat": 52.243611,
+    "lon": 20.899444,
+    "lokalizacja": "dokladna",
+    "okres": "data powstania nieznana–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw jest własnością miasta stołecznego Warszawy.",
+      "W latach 2006–2013 przechodził rewitalizację: wzmocniono brzegi i skarpę, pogłębiono dno i zbudowano asfaltową ścieżkę oraz drewniany pomost z ławkami; koszt prac wyniósł ponad 600 tys. zł.",
+      "W przeszłości staw pełnił rolę regulatora gospodarki wodnej na terenach rolniczych.",
+      "Staw jest połączony podziemnym kolektorem deszczowym ze Stawem Zielonym oraz z Fosą Groty na terenie Fortu III Twierdzy Warszawa.",
+      "W 2004 roku na zbiorniku i w okolicy stwierdzono występowanie kaczki krzyżówki."
+    ],
+    "ciekawostki": [
+      "Przed zakończeniem rewitalizacji staw był siedliskiem karczowników ziemnowodnych."
+    ],
+    "summary_en": "Jeziorzec pond lies in the Stare Górce estate in Bemowo, next to the S8 expressway. It was renovated in 2006–2013 at a cost above 600,000 zloty and is connected by a stormwater culvert to the Zielony pond and the Groty moat.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw Jeziorzec", "url": "https://pl.wikipedia.org/wiki/Staw_Jeziorzec"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "staw-zielony",
+    "nazwa": "Staw Zielony",
+    "name_en": "Zielony pond",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "MSI Górce, przy ul. gen. Tadeusza Pełczyńskiego",
+    "adres_historyczny": null,
+    "lat": 52.242222,
+    "lon": 20.906111,
+    "lokalizacja": "dokladna",
+    "okres": "data powstania nieznana–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw jest połączony podziemnym kolektorem deszczowym z Stawem Jeziorzec oraz dalej z Fosą Groty na terenie Fortu III Twierdzy Warszawa.",
+      "Staw pełni funkcję odbiornika wód opadowych z pobliskich osiedli; nadmiar wody spływa do Fosy Groty.",
+      "Po południowej stronie staw graniczy z ul. gen. Tadeusza Pełczyńskiego, a od północy z budynkiem wielorodzinnym przy ul. Pełczyńskiego 22A."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zielony pond in Bemowo is a small stormwater pond on the Górce MSI area. It drains into the Groty moat through the same culvert as the Jeziorzec pond.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zielony Staw"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Staw Zielony (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Staw_Zielony_%28Warszawa%29"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki, mało historii. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "transatlantycka-centrala-radiotelegraficzna",
+    "nazwa": "Transatlantycka Centrala Radiotelegraficzna (Radiostacja Babice)",
+    "name_en": "Transatlantic Radiotelegraph Centre (Babice radio station)",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "fort Babice („Radiowo”), prostopadle do ul. Radiowej",
+    "adres_historyczny": "Radiostacja Babice",
+    "lat": 52.2647,
+    "lon": 20.8794,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–1945 (pozostałości do dziś)",
+    "istnieje": true,
+    "fakty": [
+      "Umowę między Ministerstwem Poczt i Telegrafów a amerykańską spółką Radio Corporation of America podpisano 4 sierpnia 1921 roku.",
+      "W 1922 roku rozpoczęto budowę stacji nadawczej przy forcie „Babice”.",
+      "1 października 1923 roku uruchomiono radiostację; 17 listopada 1923 roku odbyło się jej uroczyste otwarcie z udziałem Prezydenta RP Stanisława Wojciechowskiego.",
+      "W 1938 roku uruchomiono nadajniki na dwóch wieżach antenowych w forcie Babice; transmitowano z nich audycje Polskiego Radia dla Polonii.",
+      "16 września 1939 roku radiostację obsadził 3. batalion 26. pułku piechoty z mjr. Jackiem Decowskim; 27 września zajęła ją niemiecka 19. Dywizja Piechoty.",
+      "Od 1939 do 1945 roku radiostacja była wykorzystywana przez Niemców do łączności z okrętami podwodnymi Kriegsmarine.",
+      "16 stycznia 1945 roku Niemcy wysadzili wszystkie wieże antenowe w Babicach.",
+      "1 grudnia 2017 roku wpisano pozostałości Transatlantyckiej Centrali Nadawczej do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Stacja nadawcza miała 10 wież antenowych o wysokości 126,5 m.",
+      "Bliźniaczy, zachowany odpowiednik to Radiostacja Varberg w Grimeton w Szwecji, wpisana na Listę Światowego Dziedzictwa UNESCO w 2004 roku."
+    ],
+    "summary_en": "The Transatlantic Radiotelegraph Centre, known as the Babice radio station, was a long-range radio station in the Babice fort area from 1923 to 1945. It had ten 126.5 m masts and was blown up by the Germans in January 1945. Its remains are a listed monument.",
+    "ludzie": [
+      {"kto": "Stanisław Wojciechowski", "rola": "Prezydent RP, uczestnik otwarcia radiostacji (1923)", "wiki": null},
+      {"kto": "Jan Moszczyński", "rola": "minister poczt i telegrafów, uczestnik otwarcia radiostacji (1923)", "wiki": null},
+      {"kto": "Jacek Decowski", "rola": "mjr, dowódca oddziału, który obsadził radiostację we wrześniu 1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Radiostacja Babice", "Radiostacja (Radio-Stacja)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Transatlantycka Centrala Radiotelegraficzna", "url": "https://pl.wikipedia.org/wiki/Transatlantycka_Centrala_Radiotelegraficzna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Stacja odbiorcza była w Grodzisku Mazowieckim (poza Warszawą). Współrzędne z nagłówka artykułu (przybliżone do obszaru stacji nadawczej)."
+  }
+]

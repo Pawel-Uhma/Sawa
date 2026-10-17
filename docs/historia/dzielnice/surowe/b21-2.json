@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ix-lo-hoffmanowej-hoza-88",
+    "nazwa": "Budynek IX LO im. Klementyny Hoffmanowej (ul. Hoża 88)",
+    "name_en": "Building of the IX Klementyna Hoffmanowa Secondary School (Hoża 88)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Hoża 88",
+    "adres_historyczny": "ul. Hoża 88",
+    "lat": 52.2264,
+    "lon": 21.0056,
+    "lokalizacja": "dokladna",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1919–1920 dla prowadzonej przez Alfonsa Graviera Szkoły Budowlanej.",
+      "W końcu lat 30. XIX w. [sic] w budynku mieściły się Szkoła Chemiczno-Przemysłowa, Szkoła Drogowa i Szkoła Miernicza.",
+      "Podczas II wojny światowej funkcjonowała tu Państwowa Szkoła Techniczno-Mechaniczna.",
+      "Od 5 czerwca 1942 do 21 lipca 1944 w budynku stacjonowało Frontleitstelle 72, centrum dowodzenia frontem wojsk Wehrmachtu.",
+      "Po wojnie w budynku wznowiła działalność Państwowa Szkoła Techniczna, przekształcona w 1975 w Zespół Szkół Samochodowych i Licealnych Nr 1.",
+      "Od września 2013 roku IX LO wraz z Gimnazjum nr 43 stanowiło Zespół Szkół nr 125 z siedzibą w przedwojennym budynku przy ul. Hożej 88.",
+      "1 września 2017 roku Zespół nr 125 przekształcił się w IX Liceum Ogólnokształcące im. Klementyny Hoffmanowej."
+    ],
+    "ciekawostki": [
+      "W okresie międzywojennym nauczycielką arytmetyki w szkole była Helena Skłodowska-Szalay, siostra Marii Curie-Skłodowskiej."
+    ],
+    "summary_en": "The pre-war building at Hoża 88 was erected in 1919–1920 for a school of civil engineering. During the German occupation it housed Frontleitstelle 72, a Wehrmacht front command centre, from June 1942 to July 1944. Since 2017 it has been the home of the IX Klementyna Hoffmanowa Secondary School.",
+    "ludzie": [
+      {"kto": "Alfons Gravier", "rola": "prowadził Szkołę Budowlaną, dla której powstał budynek", "wiki": null},
+      {"kto": "Helena Skłodowska-Szalay", "rola": "nauczycielka arytmetyki w okresie międzywojennym", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zespół Szkół nr 125"],
+    "zrodla": [{"tytul": "Wikipedia: IX Liceum Ogólnokształcące im. Klementyny Hoffmanowej w Warszawie", "url": "https://pl.wikipedia.org/wiki/IX_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_im._Klementyny_Hoffmanowej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o szkole; rekord ograniczony do historii budynku. Data 'w końcu lat 30. XIX w.' jest w źródle zapisana tak, prawdopodobnie chodzi o XX w."
+  },
+  {
+    "id": "igrek",
+    "nazwa": "Igrek (budynek przy ul. Emilii Plater 55)",
+    "name_en": "Igrek (residential block, Emilii Plater 55)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Emilii Plater 55",
+    "adres_historyczny": null,
+    "lat": 52.234444,
+    "lon": 21.001111,
+    "lokalizacja": "dokladna",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Igrek, zwany także Wiatrakiem, to blok mieszkalny przy ul. Emilii Plater 55 w dzielnicy Śródmieście.",
+      "Budynek wzniesiono na planie litery „Y”; miał nawiązywać do kształtu gmachu UNESCO w Paryżu.",
+      "Powstał jako część osiedla Mariańska, zrealizowanego w latach 1961–1967 (projekt Hanna Lewicka i Wojciech Piotrowski) między ulicami Emilii Plater, Twardą i Świętokrzyską.",
+      "Ukończony w 1964 roku był jednym z największych budynków mieszkalnych wzniesionych w Warszawie w latach 60. XX wieku.",
+      "Zaprojektowano w nim mieszkania dla 920 lokatorów."
+    ],
+    "ciekawostki": [
+      "Zwyczajowo nazywany jest Igrekiem lub Wiatrakiem."
+    ],
+    "summary_en": "Igrek, also called Wiatrak, is a Y-shaped residential block at Emilii Plater 55. Completed in 1964 as part of the Mariańska estate, it was one of the largest housing blocks built in Warsaw in the 1960s, with apartments for 920 residents.",
+    "ludzie": [
+      {"kto": "Hanna Lewicka", "rola": "projektantka osiedla Mariańska", "wiki": null},
+      {"kto": "Wojciech Piotrowski", "rola": "projektant osiedla Mariańska", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wiatrak"],
+    "zrodla": [{"tytul": "Wikipedia: Igrek (budynek)", "url": "https://pl.wikipedia.org/wiki/Igrek_%28budynek%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zajezdnia-inflancka",
+    "nazwa": "Zajezdnia autobusowa Inflancka (R-5)",
+    "name_en": "Inflancka bus depot (R-5)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Inflancka",
+    "lat": 52.255938,
+    "lon": 20.99358,
+    "lokalizacja": "dokladna",
+    "okres": "1951–2003",
+    "istnieje": false,
+    "fakty": [
+      "Zajezdnia autobusowa R-5 „Inflancka” należała do Miejskich Zakładów Autobusowych w Warszawie.",
+      "Budowę rozpoczęto jeszcze w latach 30. XX wieku, ale z powodu wybuchu II wojny światowej ukończono ją dopiero w 1951 roku (według innych źródeł w 1948).",
+      "Przez wiele lat była najważniejszą zajezdnią autobusową w Warszawie i jako jedyna posiadała pełne wyposażenie zaplecza technicznego.",
+      "Do początku lat 70. XX wieku, kiedy wymieniono cały tabor na Jelcze-Berliety PR100, zajezdnia posiadała niemal każdy typ autobusu używany w Warszawie.",
+      "W decyzja o likwidacji zajezdni zapadła w 2003 roku ze względu na wysoką wartość działki.",
+      "Zajezdnia zniknęła z mapy warszawskich zajezdni autobusowych 1 czerwca 2003 roku.",
+      "Na terenie dawnej zajezdni znajduje się osiedle mieszkalne i kompleks biurowy Gdański Business Center."
+    ],
+    "ciekawostki": [
+      "W grudniu 1994 roku do Warszawy sprowadzono próbnie jeden egzemplarz Neoplana N4020 (nr taborowy 6455)."
+    ],
+    "summary_en": "The Inflancka bus depot (R-5) was the most important bus depot in Warsaw and the only one with a full technical maintenance facility. It was closed on 1 June 2003 because of the high value of its site, and a housing estate and the Gdański Business Center now occupy the area.",
+    "ludzie": [],
+    "dawne_nazwy": ["R-5 „Inflancka”"],
+    "zrodla": [{"tytul": "Wikipedia: Inflancka (zajezdnia autobusowa)", "url": "https://pl.wikipedia.org/wiki/Inflancka_%28zajezdnia_autobusowa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o zajezdni (obiekt techniczny), nie o instytucji. Adres: artykuł podaje tylko ulicę."
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "most-poniatowskiego",
+    "nazwa": "Most Poniatowskiego",
+    "name_en": "Poniatowski Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "most nad Wisłą, przedłużenie Alei Jerozolimskich",
+    "adres_historyczny": "most Mikołajewski, most im. Cesarza Mikołaja II, Trzeci Most",
+    "lat": 52.2350272,
+    "lon": 21.037068,
+    "lokalizacja": "dokladna",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Most zbudowano w latach 1904–1913 (według innego źródła 1904–1914) jako przedłużenie Alej Jerozolimskich; dla ruchu otwarto go 8 czerwca 1913 roku, a uroczyste otwarcie całej trasy nastąpiło 4 stycznia 1914 roku.",
+      "Projekt wykonali inżynierowie Mieczysław Marszewski, Bronisław Plebiński i Wacław Paszkowski; oprawę architektoniczną mostu i wiaduktu stworzył Stefan Szyller.",
+      "W czasie budowy wybuchł skandal korupcyjny; kierujący projektowaniem Mieczysław Marszewski został usunięty z funkcji i skazany na karę więzienia.",
+      "5 sierpnia 1915 roku wycofujące się wojska rosyjskie wysadziły górne części dwóch filarów przeprawy.",
+      "13 września 1944 roku most wysadzili Niemcy; odbudowano go według projektu Stanisława Hempla i oddano do użytku 22 lipca 1946 roku.",
+      "4 grudnia 1945 roku w czasie odbudowy runęło siedem łuków trzeciego przęsła; zginął 21-letni monter, a dziewięć osób zostało rannych.",
+      "W 1965 roku most wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "12 maja 1926 roku na moście doszło do spotkania prezydenta Stanisława Wojciechowskiego z marszałkiem Józefem Piłsudskim; porozumienia nie osiągnięto.",
+      "Most nazwano imieniem Poniatowskiego po wycofaniu się Rosjan w 1915 roku; mieszkańcy nazywali go Trzecim Mostem."
+    ],
+    "summary_en": "A Vistula bridge completed in 1913–1914 as the northern extension of Aleje Jerozolimskie. It was blown up in 1915 and again in 1944, and rebuilt in 1946. It is a listed monument.",
+    "ludzie": [
+      {"kto": "Mieczysław Marszewski", "rola": "kierownik projektowania i budowy, usunięty po skandalu korupcyjnym", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "autor oprawy architektonicznej", "wiki": null},
+      {"kto": "Stanisław Hempel", "rola": "projektant odbudowy po 1944 roku", "wiki": null},
+      {"kto": "Stanisław Wojciechowski, Józef Piłsudski", "rola": "uczestnicy spotkania na moście w maju 1926 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["most Mikołajewski", "most im. Cesarza Mikołaja II", "Neue Brücke (okupacja)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Poniatowskiego", "url": "https://pl.wikipedia.org/wiki/Most_Poniatowskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "most-lazienkowski",
+    "nazwa": "Most Łazienkowski",
+    "name_en": "Łazienkowski Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "most nad Wisłą (część Trasy Łazienkowskiej)",
+    "adres_historyczny": "most im. gen. Zygmunta Berlinga (1981–1998)",
+    "lat": 52.2235274,
+    "lon": 21.0412032,
+    "lokalizacja": "dokladna",
+    "okres": "1971–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Most zbudowano w latach 1971–1974 jako część Trasy Łazienkowskiej; uroczyście otwarto go 22 lipca 1974 roku.",
+      "Projekt wykonał zespół Centralnego Biura Projektów Dróg i Mostów „Transprojekt” pod kierunkiem Jerzego Mazura.",
+      "W 1975 roku pożar drewnianej budki pod mostem uszkodził pierwsze przęsło i część drugiego oraz nawierzchnię na długości ok. 200 m.",
+      "14 lutego 2015 roku wybuchł pożar pod praską częścią mostu; most był wyłączony z ruchu do 28 października 2015 roku.",
+      "Prokuratura potwierdziła celowe podpalenie mostu, ale w grudniu 2015 roku umorzyła postępowanie z powodu niewykrycia sprawców.",
+      "W listopadzie 1981 roku mostowi nadano nazwę gen. Zygmunta Berlinga; do nazwy most Łazienkowski powrócono w styczniu 1998 roku.",
+      "Otwarcie Trasy Łazienkowskiej zmniejszyło ruch kołowy na moście Poniatowskiego o 25%."
+    ],
+    "ciekawostki": [
+      "W 1985 roku po praskiej stronie przeprawy odsłonięto pomnik gen. Zygmunta Berlinga.",
+      "W sierpniu 2017 roku pod mostem otwarto dwie kładki dla rowerzystów i pieszych."
+    ],
+    "summary_en": "A Vistula bridge of the Łazienki Route, built in 1971–1974 and officially opened on 22 July 1974. It was closed for eight months after a fire in February 2015 that the prosecutors found to be arson.",
+    "ludzie": [
+      {"kto": "Zygmunt Berling", "rola": "generał, patron mostu w latach 1981–1998, pomnik na moście od strony praskiej", "wiki": null},
+      {"kto": "Jerzy Mazur", "rola": "kierownik zespołu projektowego w Transprojekcie", "wiki": null}
+    ],
+    "dawne_nazwy": ["most im. gen. Zygmunta Berlinga (1981–1998)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Łazienkowski", "url": "https://pl.wikipedia.org/wiki/Most_%C5%81azienkowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "most-slasko-dabrowski",
+    "nazwa": "Most Śląsko-Dąbrowski",
+    "name_en": "Silesian-Dąbrowski Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "most nad Wisłą (Trasa W-Z)",
+    "adres_historyczny": null,
+    "lat": 52.2479402,
+    "lon": 21.0188729,
+    "lokalizacja": "dokladna",
+    "okres": "1947–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Most zbudowano w latach 1947–1949 jako element Trasy W-Z, na filarach zniszczonego w 1944 roku mostu Kierbedzia; ciężkiej stalowej konstrukcji mostu Kierbedzia nie odtworzono.",
+      "Nazwę nadano w 1947 roku jako podziękowanie dla Górnego Śląska i Zagłębia Dąbrowskiego, które zadeklarowały zebranie w ciągu roku 250 mln zł na budowę przeprawy.",
+      "Projektantem mostu był Jerzy Koziełek, a wybudowało go przedsiębiorstwo „Mostostal”.",
+      "Prace montażowe rozpoczęły się 22 września 1948 roku w obecności prezydenta Bolesława Bieruta; montaż zakończono 6 grudnia 1948 roku.",
+      "W latach 1992–1993 most przeszedł generalny remont; od 16 czerwca 2007 roku torowisko tramwajowe wydzielono od jezdni żółtą linią.",
+      "15 października 2011 roku most zamknięto dla samochodów osobowych w związku z budową stacji metra Dworzec Wileński; otwarto go ponownie 27 sierpnia 2012 roku."
+    ],
+    "ciekawostki": [
+      "Most jest kołowo-tramwajowy, a tory tramwajowe poprowadzono na jezdni dla samochodów, co odróżnia go od większości warszawskich torowisk.",
+      "Na północnej balustradzie mostu, bliżej strony praskiej, znajduje się tablica upamiętniająca żołnierzy AK z akcji „Kutschera”, zastrzelonych przez Niemców po skoku z mostu Kierbedzia 1 lutego 1944 roku."
+    ],
+    "summary_en": "A road and tram bridge across the Vistula built in 1947–1949 on the piers of the destroyed Kierbedź Bridge. It was named as a thank-you to Upper Silesia and the Dąbrowa Basin for funding its construction.",
+    "ludzie": [
+      {"kto": "Jerzy Koziełek", "rola": "projektant mostu", "wiki": null},
+      {"kto": "Bolesław Bierut", "rola": "prezydent RP, obecny przy rozpoczęciu montażu w 1948 roku", "wiki": null},
+      {"kto": "Zbigniew Gęsicki „Juno”, Kazimierz Sott „Sokół”", "rola": "żołnierze AK z akcji „Kutschera”, zastrzeleni przez Niemców", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Śląsko-Dąbrowski", "url": "https://pl.wikipedia.org/wiki/Most_%C5%9Al%C4%85sko-D%C4%85browski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "most-swietokrzyski",
+    "nazwa": "Most Świętokrzyski",
+    "name_en": "Świętokrzyski Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "most nad Wisłą (łączy Śródmieście z Pragą-Północ)",
+    "adres_historyczny": null,
+    "lat": 52.2418569,
+    "lon": 21.0340944,
+    "lokalizacja": "dokladna",
+    "okres": "1998–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień węgielny wmurowano 28 września 1998 roku; budowa trwała 2 lata, a całkowity koszt wyniósł ok. 160 mln zł.",
+      "Most wantowy wykonał Mostostal Warszawa według projektu Andrzeja Czapskiego i Pekki Pulkkinena; oprawę architektoniczną stworzył Tadeusz Korszyński.",
+      "Konstrukcja wantowa opiera się na 90-metrowym pylonie, na którym zaczepiono 48 lin; wraz z wiaduktem most ma 479 metrów długości.",
+      "Most przejął ruch z rozebranego mostu Syreny; po wyłączeniu dwóch pasów ruchu kołowego na moście Śląsko-Dąbrowskim w 2007 roku jego znaczenie wzrosło.",
+      "W 2005 roku planowano poprowadzić przez most linię tramwajową, ale plany zarzucono ze względu na budowę II linii metra.",
+      "Jest piątym pod względem długości mostem wantowym w Polsce."
+    ],
+    "ciekawostki": [
+      "31 sierpnia 2001 roku na przyczółku mostu Syreny odbył się koncert zespołu Tangerine Dream, zakończony iluminacją mostu i pokazem sztucznych ogni dla ok. 6000 osób."
+    ],
+    "summary_en": "A cable-stayed bridge over the Vistula linking the city centre with Praga-Północ, begun with a foundation stone in 1998, with a 90-metre pylon. It is considered the most bicycle-friendly bridge in Warsaw.",
+    "ludzie": [
+      {"kto": "Andrzej Czapski, Pekka Pulkkinen", "rola": "autorzy projektu mostu", "wiki": null},
+      {"kto": "Tadeusz Korszyński", "rola": "autor oprawy architektonicznej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Świętokrzyski", "url": "https://pl.wikipedia.org/wiki/Most_%C5%9Awi%C4%99tokrzyski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku oddania mostu do ruchu; okres liczony od wmurowania kamienia węgielnego."
+  },
+  {
+    "id": "pasaz-simonsa",
+    "nazwa": "Pasaż Simonsa",
+    "name_en": "Simons Passage (Pasaż Simonsa)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "u zbiegu ulic Długiej i Nalewek (dziś ul. Stare Nalewki)",
+    "lat": 52.2462924,
+    "lon": 21.0023432,
+    "lokalizacja": "dokladna",
+    "okres": "1903–1944",
+    "istnieje": false,
+    "fakty": [
+      "Pierwszy budynek pasażu ukończono w 1903 roku na zlecenie berlińskiego kupca Alberta Simonsa, w miejscu rozebranego kościoła i klasztoru sióstr Brygidek.",
+      "W latach 1904–1906 od strony Nalewek dobudowano sześciopiętrowy gmach; między budynkami biegła ulica Wyjazd.",
+      "W kompleksie działał największy warszawski żydowski klub sportowy Makabi Warszawa, z salami gimnastyczną i bokserską.",
+      "We wrześniu 1939 roku starsza część pasażu została zbombardowana i spalona, a następnie częściowo rozebrana.",
+      "31 sierpnia 1944 roku nowszy gmach zawalił się wskutek nalotu niemieckich stukasów; pod gruzami zginęło ok. 300 osób, w większości żołnierzy batalionu „Chrobry I”.",
+      "W 1947 roku z ruin i piwnic wydobyto 99 ciał; teren włączono do Ogrodu Krasińskich.",
+      "31 sierpnia 1989 roku odsłonięto pomnik ufundowany przez żołnierzy batalionu „Chrobry I”."
+    ],
+    "ciekawostki": [
+      "W 2019 roku Rada Miasta nadała nazwę Pasaż Simonsa ciągowi pieszemu biegnącemu przez teren nieistniejącego kompleksu, od ul. Długiej do Ogrodu Krasińskich.",
+      "W 2017 roku prace archeologiczne przed budową apartamentowca nie znalazły ludzkich szczątków; w 2024 roku odsłonięto relikty dawnych piwnic."
+    ],
+    "summary_en": "A commercial and social complex at Długa and Nalewki streets, built from 1903. It was destroyed during the Warsaw Uprising in August 1944, when about 300 people died under its rubble, and was never rebuilt.",
+    "ludzie": [
+      {"kto": "Albert Simons", "rola": "berliński kupiec, zleceniodawca pasażu", "wiki": null},
+      {"kto": "Terlecki", "rola": "architekt pierwszego budynku (inż.)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Wyjazd (między budynkami)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pasaż Simonsa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pasa%C5%BC_Simonsa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "pasaz-wiecha",
+    "nazwa": "Pasaż Stefana Wiecheckiego „Wiecha”",
+    "name_en": "Stefan Wiechecki „Wiech” Passage",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pasaż od ul. Widok do ul. Sienkiewicza",
+    "adres_historyczny": "pasaż Śródmiejski",
+    "lat": 52.2317539,
+    "lon": 21.0114957,
+    "lokalizacja": "dokladna",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pasaż powstał w latach 1963–1969 jako część kompleksu Ściany Wschodniej; pierwotnie nosił nazwę pasażu Śródmiejskiego, nadaną uchwałą Rady Narodowej z 29 stycznia 1970 roku.",
+      "Obecną nazwę, upamiętniającą Stefana Wiecheckiego „Wiecha”, nadano uchwałą Rady m.st. Warszawy z 7 kwietnia 1997 roku.",
+      "Pasaż był inspirowany pasażem handlowym Lijnbaan w Rotterdamie z 1953 roku; elementy małej architektury zaprojektowała Barbara Kaliszewska.",
+      "W październiku 1970 roku przy pasażu otwarto kino Relax.",
+      "W 2006 roku zakończono przebudowę według projektu Dariusza Hyca i Henryka Łaguny; zlikwidowano małą architekturę i wprowadzono gładką granitową nawierzchnię.",
+      "W 2015 roku plac przylegający do pasażu od strony wschodniej nazwano skwerem Janusza Grabiańskiego."
+    ],
+    "ciekawostki": [
+      "Pasaż biegnie równolegle do ul. Marszałkowskiej i jest oddzielony od niej budynkami domów towarowych „Centrum”, miał dawać użytkownikom poczucie wytchnienia od ruchu ulicznego."
+    ],
+    "summary_en": "A pedestrian passage in central Warsaw, built in 1963–1969 as part of the Ściana Wschodnia complex and named after the writer Stefan Wiechecki „Wiech”. It was redesigned in 2006.",
+    "ludzie": [
+      {"kto": "Stefan Wiechecki „Wiech”", "rola": "prozaik, publicysta i satyryk, patron pasażu", "wiki": null},
+      {"kto": "Barbara Kaliszewska", "rola": "autorka elementów małej architektury (1960s)", "wiki": null},
+      {"kto": "Dariusz Hyc, Henryk Łaguna", "rola": "autorzy przebudowy z 2006 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pasaż Śródmiejski (1970–1997)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pasaż Stefana Wiecheckiego „Wiecha” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pasa%C5%BC_Stefana_Wiecheckiego_%E2%80%9EWiecha%E2%80%9D_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-bankowy",
+    "nazwa": "Plac Bankowy",
+    "name_en": "Bankowy Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Bankowy (między al. Solidarności a ul. Senatorską i Elektoralną)",
+    "adres_historyczny": "plac Feliksa Dzierżyńskiego (1951–1989)",
+    "lat": 52.2441501,
+    "lon": 21.0010815,
+    "lokalizacja": "dokladna",
+    "okres": "1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac powstał w 1825 roku w miejscu dziedzińca pałacu Ogińskich, w związku z budową trzech gmachów zaprojektowanych przez Antonia Corazziego: pałacu Komisji Rządowej Przychodów i Skarbu, pałacu Ministra Skarbu oraz gmachu Giełdy i Banku Polskiego.",
+      "1 listopada 1905 roku tłum demonstrantów został zaatakowany przez żołnierzy Lejb-Gwardyjskiego Wołyńskiego Pułku; zginęło dziewięć osób.",
+      "Po 1945 roku odbudowano monumentalne gmachy rządowe, a plac uzyskał kształt prostokąta po zlikwidowaniu ulicy Rymarskiej.",
+      "21 lipca 1951 roku przed pałacem Ministra Skarbu Bolesław Bierut odsłonił pomnik Feliksa Dzierżyńskiego dłuta Zbigniewa Dunajewskiego; plac nazwano wtedy jego imieniem.",
+      "W latach 1976–1991 po wschodniej stronie placu wzniesiono Błękitny Wieżowiec; przed nim w 1993 roku odsłonięto pomnik Stefana Starzyńskiego.",
+      "W listopadzie 1989 roku pomnik Dzierżyńskiego zburzono, a na mocy uchwały Rady Narodowej z 16 listopada 1989 roku przywrócono historyczną nazwę placu.",
+      "W 2001 roku odsłonięto pomnik Juliusza Słowackiego, który w latach 1829–1831 pracował w pałacu Komisji Rządowej Przychodów i Skarbu."
+    ],
+    "ciekawostki": [
+      "Plac pierwotnie miał trójkątny kształt, który nadała mu biegnąca po skosie ulica Rymarska."
+    ],
+    "summary_en": "A historic square in central Warsaw, laid out in 1825 by Antonio Corazzi around three government buildings. It was named after Feliks Dzierżyński from 1951 to 1989 and has monuments to Słowacki and Starzyński.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "architekt trzech gmachów przy placu", "wiki": null},
+      {"kto": "Bolesław Bierut", "rola": "odsłonił pomnik Dzierżyńskiego w 1951 roku", "wiki": null},
+      {"kto": "Zbigniew Dunajewski", "rola": "rzeźbiarz pomnika Dzierżyńskiego", "wiki": null},
+      {"kto": "Stefan Starzyński", "rola": "patron pomnika z 1993 roku", "wiki": null},
+      {"kto": "Juliusz Słowacki", "rola": "pracował w pałacu Komisji Rządowej w latach 1829–1831; pomnik z 2001", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Feliksa Dzierżyńskiego (1951–1989)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Bankowy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Bankowy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

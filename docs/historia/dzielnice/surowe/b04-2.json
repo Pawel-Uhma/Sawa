@@ -1,0 +1,261 @@
+[
+  {
+    "id": "szpital-dzieciecy-bersohnow-baumanow",
+    "nazwa": "Szpital Dziecięcy Bersohnów i Baumanów",
+    "name_en": "Bersohn and Bauman Children's Hospital",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Śliska 51 / ul. Sienna 60",
+    "lat": 52.23147, "lon": 20.9976,
+    "lokalizacja": "dokladna",
+    "okres": "1878–1942",
+    "istnieje": true,
+    "fakty": [
+      "W 1873 roku rodziny Majer i Chaja Bersohn oraz Paulina Bauman z mężem Salomonem zakupiły teren pod budowę szpitala dla chorych dzieci żydowskich.",
+      "W latach 1876–1878 powstał kompleks szpitalny, zaprojektowany przez Artura Goebla.",
+      "Działka leżała między ulicami Śliską i Sienną, stąd podwójny adres: ul. Śliska 51 / ul. Sienna 60.",
+      "Początkowo placówka była przeznaczona dla 27 dzieci. Leczenie było bezpłatne. Pierwszym lekarzem naczelnym został Ludwik Chwat.",
+      "W latach 1905–1912 w szpitalu pracował jako pediatra Janusz Korczak.",
+      "W 1923 roku placówkę zamknięto; w 1930 roku zabudowania przejęło Towarzystwo Przyjaciół Dzieci, a gmina żydowska i Joint sfinansowały rozbudowę do 150 łóżek.",
+      "W listopadzie 1940 roku szpital znalazł się w granicach getta warszawskiego.",
+      "11 września 1942 roku chorych i większość personelu (ok. 1000 osób) wywieziono do obozu zagłady w Treblince.",
+      "W 1953 roku w budynku otwarto Szpital Zakaźny nr 3, od 1962 roku działający pod nazwą Szpital im. Dzieci Warszawy."
+    ],
+    "ciekawostki": [
+      "Adina Blady-Szwajger podała grupie dzieci morfinę, aby mogły umrzeć na miejscu, unikając cierpień wysiedlenia."
+    ],
+    "summary_en": "The Bersohn and Bauman Children's Hospital for Jewish children stood at ul. Śliska 51 / Sienna 60 in Wola. Built in 1876–1878 to a design by Artur Goebel, it was inside the Warsaw ghetto from 1940. Most of its staff and patients were deported to Treblinka in September 1942. The article says the complex is to house the Warsaw Ghetto Museum.",
+    "ludzie": [
+      {"kto": "Majer i Chaja Bersohn, Paulina i Salomon Bauman", "rola": "fundatorzy szpitala (zakup terenu w 1873)", "wiki": null},
+      {"kto": "Artur Goebel", "rola": "autor projektu kompleksu szpitalnego", "wiki": null},
+      {"kto": "Ludwik Chwat", "rola": "pierwszy lekarz naczelny szpitala", "wiki": null},
+      {"kto": "Janusz Korczak", "rola": "pediatra pracujący w szpitalu w latach 1905–1912", "wiki": null},
+      {"kto": "Anna Braude-Hellerowa", "rola": "lekarka, której interwencje doprowadziły do przejęcia zabudowań w 1930 roku", "wiki": null},
+      {"kto": "Adina Blady-Szwajger", "rola": "lekarka w szpitalu w czasie wywózki w 1942 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Szpital Dziecięcy Bersohnów i Baumanów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szpital_Dzieci%C4%99cy_Bersohn%C3%B3w_i_Bauman%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że kompleks ma być siedzibą Muzeum Getta Warszawskiego; bieżący adres nie jest podany. Artykuł kończy się urwaniem w części o powojennych losach."
+  },
+  {
+    "id": "szubienica-na-woli",
+    "nazwa": "Szubienica na Woli",
+    "name_en": "Gallows at Mszczonowska Street, Wola",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Mszczonowska",
+    "adres_historyczny": null,
+    "lat": 52.2183, "lon": 20.9467,
+    "lokalizacja": "dokladna",
+    "okres": "1942–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W nocy z 7 na 8 października 1942 roku, w ramach akcji „Wieniec” zorganizowanej przez Armię Krajową, patrol por. Zbigniewa Lewandowskiego „Zbyszka” wysadził dwa tory między stacjami Warszawa Zachodnia a Warszawa Włochy.",
+      "15 października 1942 roku w odwecie Niemcy rozstrzelali na Wydmach Łuże 39 więźniów Pawiaka.",
+      "Następnego dnia o świcie w pięciu punktach na peryferiach Warszawy publicznie powieszono kolejnych 50 więźniów.",
+      "Szubienica przy ul. Mszczonowskiej jest jedyną zachowaną z pięciu zbudowanych w ramach tej akcji odwetowej.",
+      "Została zbudowana z trzech słupów telegraficznych wyprodukowanych przed wojną w Ostrowi Mazowieckiej.",
+      "Po 1945 roku przy szubienicy ustawiono pamiątkową tablicę projektu Karola Tchorka."
+    ],
+    "ciekawostki": [
+      "Obok kiedyś znajdowała się druga, identyczna szubienica."
+    ],
+    "summary_en": "The gallows on Mszczonowska Street in Wola is the only surviving one of five built by the Germans in October 1942 as reprisal for Operation „Wieniec”, a Home Army rail sabotage. It is made of three prewar telegraph poles and has a memorial plaque designed by Karol Tchorek.",
+    "ludzie": [
+      {"kto": "Zbigniew Lewandowski „Zbyszek”", "rola": "por., dowódca patrolu AK, który wysadził tory (akcja „Wieniec”)", "wiki": null},
+      {"kto": "Leon Tarajkiewicz „Leon”", "rola": "por., dowódca drugiego patrolu działającego w tym samym miejscu", "wiki": null},
+      {"kto": "Karol Tchorka (w artykule w dopełniaczu)", "rola": "autor projektu tablicy pamiątkowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Szubienica na Woli", "url": "https://pl.wikipedia.org/wiki/Szubienica_na_Woli"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres bez numeru; teren należy do Skarbu Państwa, użytkownik: PKP S.A. (wg artykułu). Nazwisko autora tablicy w artykule w formie zależnej."
+  },
+  {
+    "id": "gmach-sadow-na-lesznie",
+    "nazwa": "Gmach Sądów Grodzkich na Lesznie",
+    "name_en": "Leszno Courts building (Sądy na Lesznie)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Leszno 53/55",
+    "adres_historyczny": "ul. Leszno 53/55",
+    "lat": 52.240833, "lon": 20.992222,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wzniesiono w latach 1935–1939 pod adresem ul. Leszno 53/55. Budowę powierzono Bohdanowi Pniewskiemu; rozpoczęto ją w II połowie 1935 roku, a zakończono wiosną 1939.",
+      "Gmach zaczął służyć warszawskiemu sądownictwu 30 czerwca 1939 roku.",
+      "Nad wejściem umieszczono maksymę „Sprawiedliwość jest ostoją mocy i trwałości Rzeczypospolitej”, sformułowaną przez Andrzeja Frycza Modrzewskiego.",
+      "11 grudnia 1939 roku sądy ponownie rozpoczęły działalność, już pod ścisłą kontrolą niemiecką; część budynku zajął niemiecki szpital.",
+      "Z uwagi na pełnione funkcje gmach nie został w listopadzie 1940 roku włączony do getta warszawskiego.",
+      "Po wojnie gmach ocalał, ale piętra V i VI zostały spalone; odbudowany oddano do użytku w lipcu 1949 roku.",
+      "W 1950 roku do gmachu przeniósł się z Łodzi Sąd Najwyższy. W 2009 roku budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Gmach nazywano zwyczajowo „Sądami na Lesznie”.",
+      "Dostęp do budynku mieli zarówno mieszkańcy getta, jak i pozostałej części miasta; od 2008 roku upamiętnia to jeden z pomników granic getta u zbiegu ulic Chłodnej i Elektoralnej."
+    ],
+    "summary_en": "The Leszno courts building at ul. Leszno 53/55 in Wola was built in 1935–1939 to a design by Bohdan Pniewski and opened on 30 June 1939. It was not included in the ghetto in 1940. The building survived the war, though its fifth and sixth floors were burned, and it was listed as a monument in 2009.",
+    "ludzie": [
+      {"kto": "Bohdan Pniewski", "rola": "autor projektu gmachu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sądy Grodzkie na Lesznie"],
+    "zrodla": [{"tytul": "Wikipedia: Sąd Okręgowy w Warszawie", "url": "https://pl.wikipedia.org/wiki/S%C4%85d_Okr%C4%99gowy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy sądu (instytucji); rekord opisuje gmach. Według artykułu sąd okręgowy ma siedzibę przy al. „Solidarności” 127, a gmach wzniesiono przy ul. Leszno 53/55. Artykuł nie podaje roku spalenia piętr V i VI."
+  },
+  {
+    "id": "hotel-westin-warsaw",
+    "nazwa": "The Westin Warsaw",
+    "name_en": "The Westin Warsaw hotel",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "al. Jana Pawła II 21 (róg ul. Grzybowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.235202, "lon": 20.996529,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel znajduje się przy al. Jana Pawła II 21, na rogu ul. Grzybowskiej.",
+      "Budynek ma 94 m wysokości i 22 kondygnacje naziemne; jego wykonawcą była spółka Skanska S.A.",
+      "Uroczyste otwarcie hotelu nastąpiło we wrześniu 2003 roku.",
+      "Hotel kosztował około 79,5 mln euro.",
+      "Elewację pokrywają płyty barwy łososiowej.",
+      "We frontowej części znajduje się przeszklona, podświetlana nocą tuba z panoramicznymi windami, osiągającymi prędkość 3,5 m/s.",
+      "Hotel dysponuje 361 pokojami."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Westin Warsaw is a 94 m, 22-storey hotel at al. Jana Pawła II 21 on the corner of Grzybowska street in Wola. Built by Skanska, it opened in September 2003 at a cost of about 79.5 million euro and has 361 rooms.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: The Westin Warsaw", "url": "https://pl.wikipedia.org/wiki/The_Westin_Warsaw"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "towarowa-towers",
+    "nazwa": "Towarowa Towers",
+    "name_en": "Towarowa Towers residential complex",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Prosta 69C–69D",
+    "adres_historyczny": null,
+    "lat": 52.229167, "lon": 20.982778,
+    "lokalizacja": "dokladna",
+    "okres": "2021–2024",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks dwóch wież mieszkalnych przy ul. Prostej 69C–69D zrealizowała firma deweloperska Asbud Group.",
+      "Budowa trwała od kwietnia 2021 do listopada 2024 roku; inwestycję oddano do użytkowania w listopadzie 2024 roku.",
+      "Oba budynki mają 29 kondygnacji; całkowita wysokość wynosi 105 m, a dach znajduje się na 95 m.",
+      "W kompleksie jest łącznie 577 apartamentów o powierzchni od 25 do 140 m².",
+      "Projekt architektoniczny opracowała pracownia FS&P Arcus, a generalnym wykonawcą był Hochtief Polska.",
+      "Na najniższych kondygnacjach przewidziano powierzchnie usługowe; dla mieszkańców zaprojektowano zewnętrzny wspólny taras o powierzchni ok. 900 m².",
+      "Projekt otrzymał m.in. nagrodę Five Stars w European Property Awards 2022–2023 i tytuł Silver Winner w New York Architectural Design Awards 2024."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Towarowa Towers is a complex of two 29-storey residential towers at ul. Prosta 69C–69D in Wola. Built by Asbud Group between April 2021 and November 2024, it has 577 apartments. The design is by FS&P Arcus and Hochtief Polska was the general contractor.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Towarowa Towers", "url": "https://pl.wikipedia.org/wiki/Towarowa_Towers"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "tunel-sredniceowy",
+    "nazwa": "Tunel średnicowy",
+    "name_en": "Warsaw Cross-City Tunnel (Tunel średnicowy)",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2273, "lon": 20.9977,
+    "lokalizacja": "przyblizona",
+    "okres": "1924–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kolejowy tunel średnicowy ma całkowitą długość 2310 m i biegnie pod centrum Warszawy, na trasie łączącej Warszawę Wschodnią, Centralną i Zachodnią.",
+      "Koncepcję płytkiego tunelu przedstawili w 1884 roku inżynierowie Rohan i Zieliński.",
+      "Projekt zatwierdzono w 1921 roku, a budowę rozpoczęto w 1924 roku; prace dwukrotnie przerywano z braku środków.",
+      "Uroczyste otwarcie tunelu i całej linii średnicowej nastąpiło 2 września 1933 roku.",
+      "15 grudnia 1936 roku, po zakończeniu pierwszego etapu elektryfikacji Warszawskiego Węzła Kolejowego, tunelem przejechał pierwszy pociąg elektryczny.",
+      "W 1944 roku tunel został bardzo poważnie uszkodzony; w czerwcu 1949 roku uroczyście otwarto kompletny, czterotorowy tunel.",
+      "Docelowy układ komunikacyjny wraz z przystankami Śródmieście, Powiśle i Ochota oddano do użytku w 1963 roku.",
+      "Generalny remont tunelu południowego rozpoczął się 1 lipca 2006 roku; tunel otwarto 15 stycznia 2007 roku."
+    ],
+    "ciekawostki": [
+      "Na wysokości ulicy Marszałkowskiej tunel przecina leżącą poniżej linię warszawskiego metra."
+    ],
+    "summary_en": "The Warsaw Cross-City Tunnel is a 2,310 m railway tunnel under the city centre, linking Warszawa Wschodnia, Centralna and Zachodnia stations. Planned from 1884, it was opened on 2 September 1933 and was rebuilt after heavy damage in 1944.",
+    "ludzie": [
+      {"kto": "Rohan i Zieliński", "rola": "inżynierowie, autorzy koncepcji płytkiego tunelu (1884)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Tunel średnicowy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Tunel_%C5%9Brednicowy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tunel przebiega pod kilkoma dzielnicami; dzielnica z nagłówka (Wola), współrzędne z nagłówka są przybliżone."
+  },
+  {
+    "id": "ulrychow-obszar",
+    "nazwa": "Ulrychów",
+    "name_en": "Ulrychów (district area)",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.239875, "lon": 20.935908,
+    "lokalizacja": "przyblizona",
+    "okres": "1712–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia Ulrychowa związana jest z rodziną Ulrichów, która od 1712 roku prowadziła na terenie Warszawy komercyjną działalność ogrodniczą.",
+      "W miejscu dawnych carskich ogrodów wojskowych założono szklarnie, szkółki i uprawy roślinne w ramach firmy „C. Ulrich”; przedsiębiorstwo zajmowało ponad 48 ha.",
+      "Uprawy warzyw i owoców trwały do wybuchu II wojny światowej w 1939 roku; w czasach PRL teren ogrodów został zaniedbany.",
+      "Część obszaru leżała w granicach Warszawy już w 1916 roku, a zachodnią część przyłączono do miasta w 1951 roku.",
+      "Z Ogrodów Ulrichów zachowały się pałacyk, zdewastowane szklarnie i część parku; na tym terenie stoi dziś centrum handlowe Wola Park.",
+      "4 kwietnia 2020 roku otwarto wolski odcinek II linii metra, a 30 czerwca 2022 roku stację Ulrychów.",
+      "Na przełomie 2006 i 2007 roku, w zbiegu ulic Jana Olbrachta, Redutowej i Góralskiej, powstał plac z rondem i kościołem Dobrego Pasterza."
+    ],
+    "ciekawostki": [
+      "Nazwa „Ulrychów” pojawiła się na mapie topograficznej z lat 80. XX wieku; wcześniej na mapach opisywano tu Ogrody Ulrycha."
+    ],
+    "summary_en": "Ulrychów is a Warsaw district area (MSI) in Wola, named after the Ulrich family's nursery business active from 1712. The Ulrich gardens operated until 1939, and today part of their former site is occupied by the Wola Park shopping centre.",
+    "ludzie": [
+      {"kto": "Rodzina Ulrichów", "rola": "właściciele firmy ogrodniczej „C. Ulrich” (Ogrody Ulrichów)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ogrody Ulrycha", "Ogrody Ulrichów"],
+    "zrodla": [{"tytul": "Wikipedia: Ulrychów (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Ulrych%C3%B3w_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt; współrzędne ogólne z nagłówka."
+  },
+  {
+    "id": "stacja-metra-ulrychow",
+    "nazwa": "Stacja metra Ulrychów",
+    "name_en": "Ulrychów metro station",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Górczewska (przy Wola Park)",
+    "adres_historyczny": null,
+    "lat": 52.24043, "lon": 20.93013,
+    "lokalizacja": "dokladna",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M2 metra znajduje się w dzielnicy Wola, przy ul. Górczewskiej, w sąsiedztwie centrum handlowego Wola Park.",
+      "Rada m.st. Warszawy zatwierdziła nazwę stacji w 2018 roku.",
+      "Budowa stacji rozpoczęła się w 2019 roku.",
+      "Stacja została otwarta 30 czerwca 2022 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ulrychów is a metro station on Line M2 at ul. Górczewska in Wola, next to the Wola Park shopping centre. Its name was approved by the city council in 2018, construction began in 2019, and the station opened on 30 June 2022.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulrychów (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Ulrych%C3%B3w_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki; numer budynku nie podany."
+  }
+]

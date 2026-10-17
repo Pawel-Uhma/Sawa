@@ -1,0 +1,283 @@
+[
+  {
+    "id": "sciana-wschodnia",
+    "nazwa": "Ściana Wschodnia w Warszawie",
+    "name_en": "Eastern Wall (Ściana Wschodnia) complex, Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ul. Świętokrzyską, ul. Jasną, ul. Marszałkowską i al. Jerozolimskimi",
+    "adres_historyczny": "Strona Wschodnia ulicy Marszałkowskiej",
+    "lat": 52.23194444,
+    "lon": 21.01083333,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–1969",
+    "istnieje": true,
+    "fakty": [
+      "Zespół architektoniczno-urbanistyczny wzniesiono w latach 1961–1969 według projektu Zbigniewa Karpińskiego i Jana Klewina; zajmuje powierzchnię 4,5 ha.",
+      "W 1958 roku rozstrzygnięto ogólnopolski konkurs na zabudowę; ex aequo wygrał go Zbigniew Karpiński. Prace rozpoczęto w sierpniu 1961.",
+      "Przed budową na tym obszarze stały kamienice czynszowe z końca XIX wieku; w 1944, po upadku powstania warszawskiego, zabudowa ulicy została w większości zburzona lub spalona.",
+      "Na tyłach Domów Towarowych „Centrum” powstał pasaż Śródmiejski (obecnie pasaż Stefana Wiecheckiego „Wiecha”), inspirowany rotterdamskim Lijnbaan z 1953 roku.",
+      "Zespół obejmował cztery domy towarowe: „Wars”, „Sawa”, „Junior” i „Sezam”; pierwszy z nich, „Junior”, otwarto w lipcu 1969.",
+      "Po zakończeniu budowy rozpoczęto projektowanie, a od 1972 budowę Ściany Zachodniej; po 1989 roku zaniechano jej realizacji.",
+      "W 2003 zespół wpisano na listę dóbr kultury współczesnej, co nie oznacza ochrony zabytkowej."
+    ],
+    "ciekawostki": [
+      "Przy ulicy działały kina Apollo (610 miejsc), Stylowy (900 miejsc), Światowid i Capitol.",
+      "Wysokościowce mają wysokość: przy ul. Zgoda 87 m, przy ul. Świętokrzyskiej 85 m, przy ul. Chmielnej 81 m."
+    ],
+    "summary_en": "The Eastern Wall, a 1961–1969 architectural complex designed by Zbigniew Karpiński and Jan Klewin, replaced the 19th-century tenement blocks on the east side of Marszałkowska Street. It includes the pedestrian Wiecha arcade and four department stores, and was listed as a modern cultural heritage site in 2003.",
+    "ludzie": [
+      {"kto": "Zbigniew Karpiński", "rola": "zwycięzca konkursu ex aequo w 1958 i generalny projektant", "wiki": null},
+      {"kto": "Jan Klewin", "rola": "współautor projektu zespołu", "wiki": null},
+      {"kto": "Zbigniew Wacławek", "rola": "architekt trzech wieżowców w zespole", "wiki": null},
+      {"kto": "Stefan Wiecheck („Wiech”)", "rola": "patron pasażu, obecnie pasaż jego imienia", "wiki": null},
+      {"kto": "Jerzy Kowarski", "rola": "kierował zespołem projektującym budynek „Universalu” (1965)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Strona Wschodnia ulicy Marszałkowskiej",
+      "pasaż Śródmiejski (dziś pasaż Wiecha)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ściana Wschodnia w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%9Aciana_Wschodnia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje 23 budynki, a wymienia 3 wieżowce, 8 niższych budynków i 4 domy towarowe (15); zostawiono liczbę z tekstu. Artykuł przechodzi też w opis budynku Universalu (zburzony 2016/2017)."
+  },
+  {
+    "id": "swiatynia-egipska-lazienki",
+    "nazwa": "Świątynia Egipska w Warszawie",
+    "name_en": "Egyptian Temple in the Royal Baths park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Łazienki Królewskie, ogród za pałacem Belwederskim",
+    "lat": 52.211189,
+    "lon": 21.029097,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1822–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia Egipska to klasycystyczna budowla w Łazienkach Królewskich, przykład egiptyzacji architektury pierwszej połowy XIX wieku.",
+      "Po 1819 roku zaczęto urządzać nowy, romantyczny ogród na tyłach pałacu Belwederskiego; w jego południowej części, na wale dawnych okopów Lubomirskiego, postawiono pawilon.",
+      "Budowla powstała prawdopodobnie około 1822 roku; za jej autora uważa się Jakuba Kubickiego.",
+      "Elewacja północna ma kształt świątyni egipskiej; cztery kolumny lotosowe były początkowo drewniane, a w 1936 roku zastąpiono je betonowymi.",
+      "Na szczycie budynku stał wysoki obelisk pokryty hieroglifami, bardzo dobrze widoczny z okien pałacu; obecnie nad świątynią góruje jego rekonstrukcja.",
+      "Główny element budynku stanowiła figarnia, cieplarnia z drzewkami figowymi; jej południowa część nie przetrwała, zachował się północny fragment nad stawem.",
+      "W pobliżu stoi popiersie Aleksandra Kamińskiego, ustawione w czasie, gdy obiekt użytkowało Muzeum Harcerstwa (2005–2010)."
+    ],
+    "ciekawostki": [
+      "Dachem budowli biegł most na drodze między rogatką Belwederską a Drogą Chińską.",
+      "Autorstwo mogło należeć także do Hilarego Szpilowskiego, Aleksandra d'Alphonce'a lub Piotra Aignera."
+    ],
+    "summary_en": "The Egyptian Temple in the Royal Baths park is a classicist pavilion of about 1822, attributed to Jakub Kubicki, with lotus columns and a monumental obelisk that was once visible from the palace.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "prawdopodobny autor, intendent generalny budynków królewskich w latach 20. XIX w.", "wiki": null},
+      {"kto": "Aleksander Kamiński", "rola": "upamiętniony popiersiem przy budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Świątynia Egipska w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%9Awi%C4%85tynia_Egipska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Autorstwo niepewne (artykuł wymienia kilka nazwisk jako możliwe)."
+  },
+  {
+    "id": "swiatynia-sybilli-lazienki",
+    "nazwa": "Świątynia Sybilli w Warszawie",
+    "name_en": "Temple of the Sibyl in the Royal Baths park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Łazienki Królewskie, tyły Belwederu nad sadzawką",
+    "lat": 52.213698416,
+    "lon": 21.028985785,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1822–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia Sybilli, pierwotnie Świątynia Grecka, a później Świątynia Diany, to pawilon w Łazienkach Królewskich.",
+      "Wzniesiono ją po tym, jak Maria Teresa z Poniatowskich Tyszkiewiczowa sprzedała Łazienki carowi Aleksandrowi I; w przyłączonej części Łazienek powstały wtedy trzy pawilony: Oranżeria Gotycka, Świątynia Egipska i Świątynia Grecka.",
+      "Świątynia Grecka została zbudowana ok. 1822 roku, prawdopodobnie według projektu Jakuba Kubickiego, na tyłach Belwederu nad sadzawką.",
+      "Pawilon jest w całości drewniany, na planie prostokąta, otoczony pojedynczą jońską kolumnadą z czterokolumnowym portykiem.",
+      "Po obu stronach wejścia ustawiono dwa żeliwne lwy stylizowane na egipskie sfinksy.",
+      "Wnętrze ozdobiono oryginalną polichromią z motywami kwiatów i owoców, autorstwa Adama Byczkowskiego.",
+      "W maju 2013 przy budynku odsłonięto artystyczną kopię Omfalosa ze świątyni w Delfach, wykonaną przez grecką rzeźbiarkę Christinę Papageorgiou."
+    ],
+    "ciekawostki": [
+      "Pawilon służył jako miejsce spotkań i małych towarzyskich podwieczorków, a współcześnie urządza się w nim okolicznościowe wystawy.",
+      "Polichromia wnętrza nawiązuje do Diany, bogini m.in. łowów i przyrody, od której pochodzi druga nazwa pawilonu."
+    ],
+    "summary_en": "The Temple of the Sibyl (originally the Greek Temple, later the Temple of Diana) is a wooden pavilion in the Royal Baths park, built around 1822 after the estate was sold to Tsar Alexander I. Today it hosts temporary exhibitions.",
+    "ludzie": [
+      {"kto": "Maria Teresa Tyszkiewiczowa", "rola": "sprzedała Łazienki carowi Aleksandrowi I", "wiki": null},
+      {"kto": "Aleksander I", "rola": "car, nabywca Łazienek", "wiki": null},
+      {"kto": "Jakub Kubicki", "rola": "prawdopodobny autor projektu", "wiki": null},
+      {"kto": "Adam Byczkowski", "rola": "autor polichromii wnętrza", "wiki": null},
+      {"kto": "Christina Papageorgiou", "rola": "grecka rzeźbiarka, autorka kopii Omfalosa (2013)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Świątynia Grecka",
+      "Świątynia Diany"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Świątynia Sybilli w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%9Awi%C4%85tynia_Sybilli_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Autorstwo Kubickiego podane w tekście jako prawdopodobne."
+  },
+  {
+    "id": "stacja-metra-swietokrzyska",
+    "nazwa": "Świętokrzyska (stacja metra)",
+    "name_en": "Świętokrzyska metro station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pod skrzyżowaniem ul. Marszałkowskiej i ul. Świętokrzyskiej",
+    "adres_historyczny": null,
+    "lat": 52.235833333,
+    "lon": 21.0075,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świętokrzyska to stacja przesiadkowa między liniami M1 i M2 warszawskiego metra; jest zintegrowana z budynkiem Centrum Marszałkowska.",
+      "W 1983 roku, uchwałą Rady Narodowej, planowanej stacji nadano oznaczenie A14 i nazwę Świętokrzyska.",
+      "Harmonogram z 1982 roku przewidywał uruchomienie stacji w 1992; termin przesuwano, a w 1993 ustalono go na 1998.",
+      "Decyzję o budowie stacji podjęto w 1996 roku; protesty kupców z pawilonów nad przyszłą stacją opóźniły prace, które rozpoczęły się w 1998.",
+      "W 1998, przy drążeniu tunelu za stacją, doszło do pierwszego śmiertelnego wypadku przy budowie warszawskiego metra; roboty wstrzymano na trzy miesiące.",
+      "Stację I linii włączono do eksploatacji 11 maja 2001 roku wraz ze stacją Ratusz.",
+      "Budowę stacji II linii rozpoczęto w kwietniu 2012 roku, a 8 marca 2015 stację oddano do użytku."
+    ],
+    "ciekawostki": [
+      "Główną projektantką stacji była Jasna Strzałkowska-Ryszka, za architekturę odpowiadała Krystyna Jonak.",
+      "Zaprojektowany w koncepcji M′90 projekt stacji nie został zrealizowany, ponieważ rozpisano przetarg na nowe projekty."
+    ],
+    "summary_en": "Świętokrzyska is an interchange station between metro lines M1 and M2 at the junction of Marszałkowska and Świętokrzyska streets. Its first section opened on 11 May 2001 together with Ratusz; the M2 station opened in March 2015.",
+    "ludzie": [
+      {"kto": "Jasna Strzałkowska-Ryszka", "rola": "główna projektantka stacji", "wiki": null},
+      {"kto": "Krystyna Jonak", "rola": "architektura stacji", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "stacja A14 (oznaczenie projektowe)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Świętokrzyska (stacja metra)", "url": "https://pl.wikipedia.org/wiki/%C5%9Awi%C4%99tokrzyska_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie protestu kupców z 1997 roku."
+  },
+  {
+    "id": "zelazna-brama-ogrod-saski",
+    "nazwa": "Żelazna Brama w Warszawie",
+    "name_en": "Iron Gate of the Saxon Garden",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Żelaznej Bramy (przedpole pomnika Tadeusza Kościuszki)",
+    "adres_historyczny": "zachodnie wejście do Ogrodu Saskiego, Oś Saska",
+    "lat": 52.23977778,
+    "lon": 21.00325,
+    "lokalizacja": "dokladna",
+    "okres": "1735–1945",
+    "istnieje": false,
+    "fakty": [
+      "Żelazna Brama, wzniesiona w 1735 roku, była zachodnim wejściem do Ogrodu Saskiego i ważnym elementem Osi Saskiej.",
+      "Zamówił ją król August II w 1724 roku; autorami projektu byli najprawdopodobniej Matthäus Daniel Pöppelmann, jego syn Carl Friedrich lub Joachim Daniel Jauch.",
+      "Skrzydła bramy, każde o szerokości ok. 1 m i wysokości 3,5 m, wykonano z kutego żelaza; nazwa pochodzi właśnie od tych ruchomych skrzydeł.",
+      "W 1821 roku, w wyniku ekspansji targowiska, bramę rozebrano, a ogrodzenie cofnięto o 41 łokci (ok. 25 m) w głąb ogrodu.",
+      "W 1936 roku, przy przebiciu jezdni ul. Marszałkowskiej do placu Żelaznej Bramy, zdemontowano część ogrodzenia wraz z bramą, którą wyeksponowano jako pamiątkę historyczną.",
+      "Brama zaginęła w czasie II wojny światowej.",
+      "W okolicy placu od listopada 1940 do listopada 1941 biegła granica warszawskiego getta."
+    ],
+    "ciekawostki": [
+      "Plac między pałacem Lubomirskich a ul. Marszałkowską nadal nosi nazwę placu Żelaznej Bramy, a największe śródmiejskie osiedle mieszkaniowe nazywa się „Za Żelazną Bramą”.",
+      "W 1995 roku firma Ego Software wydała grę FPS o nazwie „Za Żelazną Bramą”."
+    ],
+    "summary_en": "The Iron Gate, built in 1735, was the western entrance to the Saxon Garden on the Saxon Axis. It was moved in 1821, dismantled in 1936 and lost during the Second World War; the square that bears its name remains in use.",
+    "ludzie": [
+      {"kto": "August II Mocny", "rola": "król, który zamówił bramę w 1724 roku", "wiki": null},
+      {"kto": "Matthäus Daniel Pöppelmann", "rola": "najprawdopodobniej autor projektu bramy i ogrodu", "wiki": null},
+      {"kto": "Joachim Daniel Jauch", "rola": "możliwy autor projektu bramy", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "plac Za Żelazną Bramą",
+      "plac Targowicy Wielopolskiej"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Żelazna Brama w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%BBelazna_Brama_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Autorstwo projektu: w artykule ‘najprawdopodobniej’. Plac Targowicy Wielopolskiej to pierwotna nazwa placu za bramą."
+  },
+  {
+    "id": "zyleta-legia-warszawa",
+    "nazwa": "Żyleta (trybuna stadionu Legii)",
+    "name_en": "Żyleta, north stand of the Legia Warsaw stadium",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Łazienkowska 3 (północna trybuna stadionu Legii)",
+    "adres_historyczny": null,
+    "lat": 52.2211,
+    "lon": 21.0408,
+    "lokalizacja": "dokladna",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę „trybuny otwartej” stadionu Legii zakończono w lipcu 1930 roku; 9 sierpnia 1930 oddano ją do użytku przed meczem Legia Warszawa – CF Europa Barcelona (1:1).",
+      "Pierwotnie trybuna była wałem ziemnym z betonowymi stopniami i miała 4500 miejsc, wyłącznie stojących.",
+      "W czasie II wojny światowej trybuna uległa poważnemu zniszczeniu; wiosną 1945 częściowo ją odremontowano.",
+      "Na przełomie lat 40. i 50. pojawiły się pierwsze miejsca siedzące, 20 rzędów drewnianych ław.",
+      "Latem 1993 drewniane ławki zastąpiono prawie 6000 plastikowych fotelików w barwach klubu.",
+      "14 listopada 2008 roku w meczu Legia Warszawa – Śląsk Wrocław (4:0) odbyło się ostatnie spotkanie na starym stadionie.",
+      "7 sierpnia 2010 roku, wraz z otwarciem nowego obiektu, doping na trybunie prowadzony jest z północnej części stadionu."
+    ],
+    "ciekawostki": [
+      "Nazwa „Żyleta” pochodzi od tablicy reklamowej żyletek marki Iridium, zamontowanej w latach 70. nad środkowym sektorem trybuny.",
+      "25 listopada 2023 roku, podczas meczu Legia – Warta Poznań, zorganizowano 50. urodziny Żylety; z tej okazji klub wydał koszulkę z symbolem żyletki."
+    ],
+    "summary_en": "Żyleta is the north stand of the Legia Warsaw stadium at ul. Łazienkowska 3, the fans' section of the club. It was built as an open earth embankment in 1930; after the old stadium closed in 2008 the fans moved to the new stadium on 7 August 2010.",
+    "ludzie": [
+      {"kto": "Kazimierz Deyna", "rola": "patron trybuny (oficjalne imię nadane w latach 90.)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "trybuna otwarta"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Żyleta (Legia Warszawa)", "url": "https://pl.wikipedia.org/wiki/%C5%BByleta_%28Legia_Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł mówi, że trybuna mieści obecnie około 8 tysięcy kibiców na dwóch piętrach; przy opisie współczesnego stadionu brak szczegółów."
+  },
+  {
+    "id": "zyletkowiec-marszalkowska-82",
+    "nazwa": "Żyletkowiec (ul. Marszałkowska 82 w Warszawie)",
+    "name_en": "Żyletkowiec office building, Marszałkowska 82",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 82, między ul. Wspólną a ul. Żurawią",
+    "adres_historyczny": null,
+    "lat": 52.2275,
+    "lon": 21.013611111,
+    "lokalizacja": "dokladna",
+    "okres": "1946–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek biurowy zaprojektował w 1946 roku Marek Leykam w stylu modernizmu historyzującego.",
+      "Początkowo biurowiec przeznaczono na potrzeby Ministerstwa Hutnictwa.",
+      "W latach 1958–1986 w budynku mieściła się m.in. część siedziby Najwyższej Izby Kontroli.",
+      "Na niższych kondygnacjach przez wiele lat działała Centralna Składnica Harcerska; jej sklep zdobiła elektryczna makieta kolejki wyprodukowana w NRD przez firmę Piko.",
+      "Obecnie budynek jest siedzibą Sądu Rejonowego dla Warszawy-Śródmieścia i Sądu Rejonowego dla m.st. Warszawy (bez wydziałów gospodarczych przy ul. Czerniakowskiej 100 i 100A)."
+    ],
+    "ciekawostki": [
+      "Nazwa „żyletkowiec” jest zwyczajowa i wzięła się z charakterystycznej konstrukcji okien; podobną konstrukcję mają inne powojenne budynki Leykama."
+    ],
+    "summary_en": "The Żyletkowiec office building at Marszałkowska 82, designed by Marek Leykam in 1946, was first meant for the Ministry of Metallurgy. It is now home to district courts for Warsaw's city centre.",
+    "ludzie": [
+      {"kto": "Marek Leykam", "rola": "architekt, autor projektu z 1946 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Żyletkowiec (ul. Marszałkowska 82 w Warszawie)", "url": "https://pl.wikipedia.org/wiki/%C5%BByletkowiec_%28ul._Marsza%C5%82kowska_82_w_Warszawie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje dat budowy ani ukończenia."
+  }
+]

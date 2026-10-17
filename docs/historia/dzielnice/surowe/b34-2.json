@@ -1,0 +1,281 @@
+[
+  {
+    "id": "warszawa-centralna",
+    "nazwa": "Warszawa Centralna",
+    "name_en": "Warszawa Centralna railway station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie, między al. Jana Pawła II a ul. Emilii Plater",
+    "adres_historyczny": "przystanek Warszawa Śródmieście (przed 1967)",
+    "lat": 52.228611111,
+    "lon": 21.003055555,
+    "lokalizacja": "dokladna",
+    "okres": "1967–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1967 roku dwa perony i drewniane pawilony kasowe tymczasowego przystanku Warszawa Śródmieście zostały przekształcone w przystanek Warszawa Centralna.",
+      "W latach 1972–1975 wybudowano Dworzec Centralny.",
+      "Stacja ma 4 perony wyspowe, wysokie, dwukrawędziowe o długości 400 m.",
+      "W 2022 roku stacja obsłużyła 13 286 tys. osób, co dało jej 7. miejsce w Polsce.",
+      "Głównym przewoźnikiem korzystającym ze stacji jest PKP Intercity."
+    ],
+    "ciekawostki": [
+      "Stacja jest podziemna, obsługuje przewozy dalekobieżne i leży w tunelu średnicowym łączącym ją ze stacjami Warszawa Wschodnia i Warszawa Zachodnia."
+    ],
+    "summary_en": "Warszawa Centralna is an underground railway station on Aleje Jerozolimskie, linked by the cross-city tunnel to Warszawa Wschodnia and Warszawa Zachodnia. Its long-distance station building was built in 1972–1975, and in 2022 it served 13.3 million passengers, the seventh-busiest in Poland.",
+    "ludzie": [],
+    "dawne_nazwy": ["Warszawa Śródmieście (przystanek tymczasowy)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Centralna", "url": "https://pl.wikipedia.org/wiki/Warszawa_Centralna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urwany po sekcji „Ruch pasażerski” (bez danych w treści); rekord oparty na treści, która jest."
+  },
+  {
+    "id": "warszawa-chalubinskiego-wkd",
+    "nazwa": "Warszawa Chałubińskiego WKD (przystanek)",
+    "name_en": "Warszawa Chałubińskiego WKD (former stop)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ul. Emilii Plater a ul. Chałubińskiego",
+    "adres_historyczny": null,
+    "lat": 52.2269,
+    "lon": 21.0033,
+    "lokalizacja": "przyblizona",
+    "okres": "1927–1963",
+    "istnieje": false,
+    "fakty": [
+      "Przystanek kolejowy otwarty w 1927 roku, obsługiwany przez Warszawską Kolej Dojazdową (WKD).",
+      "Znajdował się w Śródmieściu, między ulicami Emilii Plater i Chałubińskiego.",
+      "W 1957 roku, po likwidacji przystanku Warszawa Marszałkowska EKD, stał się przystankiem końcowym WKD.",
+      "Został zlikwidowany w 1963 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Chałubińskiego WKD was a railway stop between Emilii Plater and Chałubińskiego streets, opened in 1927. It became the terminus of the WKD line in 1957 and was closed in 1963.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Chałubińskiego WKD", "url": "https://pl.wikipedia.org/wiki/Warszawa_Cha%C5%82ubi%C5%84skiego_WKD"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka artykułu; położenie przystanku opisane ogólnie (między ulicami)."
+  },
+  {
+    "id": "dworzec-gdanski",
+    "nazwa": "Dworzec Gdański (Warszawa Gdańska)",
+    "name_en": "Gdański railway station (Warszawa Gdańska)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Słomińskiego 6",
+    "adres_historyczny": "Dworzec Nadwiślański, potem Dworzec Kowelski (na pierwszym pasie fortów Cytadeli)",
+    "lat": 52.258611111,
+    "lon": 20.994722222,
+    "lokalizacja": "dokladna",
+    "okres": "1878–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy dworzec w tym miejscu wybudowano w latach 1878–1880 w związku z budową Kolei Nadwiślańskiej; parterowy budynek o konstrukcji drewnianej nosił nazwę Dworzec Nadwiślański.",
+      "Dworzec powstał w obrębie pierwszego pasa fortów Cytadeli Warszawskiej, gdzie istniał zakaz wznoszenia budynków murowanych.",
+      "Budynek dworca został spalony w 1915 podczas wycofywania się Rosjan z Warszawy.",
+      "W latach 1932–1939 wybudowano Dworzec Główny, który stał się najważniejszym dworcem stolicy.",
+      "W czasie likwidacji getta warszawskiego w latach 1942–1943 Niemcy z zachodniej bocznicy przy tzw. Umschlagplatzu wywozili Żydów do obozu zagłady w Treblince.",
+      "Nowy budynek dworca według projektu Stanisława Kallera powstał w latach 1958–1959 i został oddany do użytku 12 września 1959; był pierwszym stałym budynkiem dworcowym w powojennej Warszawie.",
+      "W 1968, po wydarzeniach marcowych, wielu obywateli pochodzenia żydowskiego odjeżdżało z Dworca Gdańskiego; w marcu 1998 odsłonięto na wschodniej ścianie budynku tablicę upamiętniającą te wydarzenia."
+    ],
+    "ciekawostki": [
+      "Jeszcze długo po II wojnie światowej dworzec obsługiwał dalekobieżne połączenia zagraniczne, m.in. do Moskwy, Leningradu, Berlina, Paryża, Ostendy, Pragi i Wiednia.",
+      "Podczas powstania warszawskiego oddziały Obwodu Żoliborz dwukrotnie (nocami 19/20 i 21/22 sierpnia 1944) próbowały przebić się w kierunku Starówki, bez powodzenia."
+    ],
+    "summary_en": "Dworzec Gdański, at ul. Słomińskiego 6, began in 1878–1880 as a wooden station called Dworzec Nadwiślański and was burned in 1915. The current building, designed by Stanisław Kaller, opened on 12 September 1959 and was the first permanent station building in postwar Warsaw.",
+    "ludzie": [
+      {"kto": "Stanisław Kaller", "rola": "autor projektu budynku dworca (1958–1959)", "wiki": null},
+      {"kto": "Wacław Nowiński", "rola": "autor projektu przebudowy stacji (plany z 1988)", "wiki": null},
+      {"kto": "Henryk Grynberg", "rola": "autor słów na tablicy upamiętniającej wydarzenia z 1968", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dworzec Nadwiślański", "Dworzec Kowelski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Gdańska", "url": "https://pl.wikipedia.org/wiki/Warszawa_Gda%C5%84ska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce ucięty w połowie zdania w części o przebudowie z 1987–1988 (rekord oparty na treści, która jest)."
+  },
+  {
+    "id": "warszawa-marszalkowska-ekd",
+    "nazwa": "Warszawa Marszałkowska EKD (przystanek)",
+    "name_en": "Warszawa Marszałkowska EKD (former stop)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowogrodzka, między ul. Poznańską a ul. Marszałkowską",
+    "adres_historyczny": null,
+    "lat": 52.2286,
+    "lon": 21.0117,
+    "lokalizacja": "przyblizona",
+    "okres": "1927–1957",
+    "istnieje": false,
+    "fakty": [
+      "Przystanek został wybudowany w 1927 roku przez spółkę Elektryczne Koleje Dojazdowe (EKD).",
+      "Znajdował się przy ul. Nowogrodzkiej, na odcinku między ulicami Poznańską i Marszałkowską.",
+      "Został zlikwidowany w 1957 roku, kiedy przystanek końcowy przeniesiono na zachód (Warszawa Chałubińskiego WKD)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Marszałkowska EKD was a railway stop built in 1927 by the Elektryczne Koleje Dojazdowe company on ul. Nowogrodzka. It was closed in 1957 when the terminus moved west to Warszawa Chałubińskiego.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Marszałkowska EKD", "url": "https://pl.wikipedia.org/wiki/Warszawa_Marsza%C5%82kowska_EKD"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu; przybliżone do odcinka ul. Nowogrodzkiej."
+  },
+  {
+    "id": "warszawa-powisle",
+    "nazwa": "Warszawa Powiśle (przystanek)",
+    "name_en": "Warszawa Powiśle railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Leona Kruczkowskiego i ul. Smolna",
+    "adres_historyczny": null,
+    "lat": 52.233611111,
+    "lon": 21.027777777,
+    "lokalizacja": "dokladna",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek został zbudowany w latach 1954–1963 według projektu Arseniusza Romanowicza i Piotra Szymaniaka; początkowo miał się nazywać Warszawa Skarpa.",
+      "Projekt zakładał dodatkowe wykorzystanie peronów do komunikacji pieszej między Śródmieściem a Powiślem położonym pod skarpą.",
+      "W trakcie budowy rozebrano część zabytkowych neorenesansowych pawilonów przy wiadukcie mostu Poniatowskiego.",
+      "W latach 2006–2007, w związku z remontem tunelu średnicowego, przystanek został wyremontowany.",
+      "W czerwcu 2009 w dawnym budynku kas biletowych przy ul. Leona Kruczkowskiego 3B otwarto klubokawiarnię.",
+      "W 2021 PKP PLK podpisało umowę na projekt dwóch nowych przystanków, które mają zastąpić Warszawę Powiśle.",
+      "W 2022 roku wymiana pasażerska wyniosła 2 100 osób dziennie."
+    ],
+    "ciekawostki": [
+      "Według klasyfikacji PKP przystanek ma kategorię dworca aglomeracyjnego.",
+      "Charakterystyczne betonowe zadaszenia peronów zostały zmienione po 1989 roku przez usunięcie szyb zbrojonych."
+    ],
+    "summary_en": "Warszawa Powiśle is a commuter-rail stop on the Warsaw cross-city line, built in 1954–1963 to designs by Arseniusz Romanowicz and Piotr Szymaniak. The platforms were also meant to serve as a pedestrian route between Śródmieście and Powiśle, and two replacement stops were planned from 2021.",
+    "ludzie": [
+      {"kto": "Arseniusz Romanowicz", "rola": "autor projektu przystanku", "wiki": null},
+      {"kto": "Piotr Szymaniak", "rola": "autor projektu przystanku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawa Skarpa (plan nazwy)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Powiśle", "url": "https://pl.wikipedia.org/wiki/Warszawa_Powi%C5%9Ble"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "warszawa-srodmiescie-dworzec",
+    "nazwa": "Warszawa Śródmieście (dworzec podziemny, Aleje Jerozolimskie 50)",
+    "name_en": "Warszawa Śródmieście underground station",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 50",
+    "adres_historyczny": "przedwojenny Dworzec Główny i dawny Dworzec Wiedeński (teren do 1944)",
+    "lat": 52.229444444,
+    "lon": 21.007777777,
+    "lokalizacja": "dokladna",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dworzec powstał w miejscu przedwojennego Dworca Głównego, istniejącego do 1944 roku, na terenie dawnego Dworca Wiedeńskiego.",
+      "Pierwszy prowizoryczny dworzec otwarto 23 czerwca 1949 w drewnianym pawilonie u zbiegu ulic Marszałkowskiej i Alej Jerozolimskich.",
+      "W 1955 ukończono budowę dwóch pawilonów wejściowych według projektu Arseniusza Romanowicza i Piotra Szymaniaka; pawilony umieszczono symetrycznie względem osi Pałacu Kultury i Nauki.",
+      "Część podziemną dworca otwarto 29 września 1963 roku.",
+      "Wnętrza zaprojektowali artyści z warszawskiej ASP: Wojciech Fangor, Jerzy Sołtan, Zbigniew Ihnatowicz, Wiktor Gessler, Adolf Szczepiński, Bogusław Smyrski i Lech Tomaszewski.",
+      "Dworzec ma 52 mozaiki sufitowe i 27 mozaik ściennych; ich głównym autorem był Wojciech Fangor, a wykonano je we włocławskich zakładach fajansowych.",
+      "W 2006 roku rozpoczął się remont zakończony w styczniu 2007 roku."
+    ],
+    "ciekawostki": [
+      "Kierunek zachodni oznaczono płytkami zielonymi i niebieskimi, a wschodni żółtymi, pomarańczowymi i czerwonymi.",
+      "Zaprojektowano schody ruchome prowadzące na dworzec, jednak ich nie zrealizowano.",
+      "Pieszy tunel w kierunku stacji metra powstał w 1963 roku, mimo że budowę metra wstrzymano w 1957 roku."
+    ],
+    "summary_en": "Warszawa Śródmieście is an underground commuter station at Aleje Jerozolimskie 50, opened on 29 September 1963 on the site of the prewar Dworzec Główny. Its interiors were designed by Academy of Fine Arts artists, with a large mosaic programme led by Wojciech Fangor.",
+    "ludzie": [
+      {"kto": "Arseniusz Romanowicz", "rola": "projekt pawilonów wejściowych (1955)", "wiki": null},
+      {"kto": "Piotr Szymaniak", "rola": "projekt pawilonów wejściowych (1955)", "wiki": null},
+      {"kto": "Wojciech Fangor", "rola": "główny autor projektu wnętrz i mozaik", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dworzec Główny (przedwojenny)", "Dworzec Wiedeński (teren)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Śródmieście", "url": "https://pl.wikipedia.org/wiki/Warszawa_%C5%9Ar%C3%B3dmie%C5%9Bcie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce ucięty w części o pawilonach po 2014 roku; rekord oparty na treści, która jest."
+  },
+  {
+    "id": "westfield-arkadia",
+    "nazwa": "Westfield Arkadia (dawniej Arkadia)",
+    "name_en": "Westfield Arkadia shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Pawła II 82",
+    "adres_historyczny": null,
+    "lat": 52.25638889,
+    "lon": 20.98388889,
+    "lokalizacja": "dokladna",
+    "okres": "2004–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Uroczyste otwarcie centrum handlowego pod nazwą Arkadia odbyło się w 2004 roku.",
+      "Inwestorem i deweloperem była firma Cefic, należąca do francusko-amerykańskiej grupy ERE-BEG.",
+      "W 2010 centrum zostało sprzedane spółce Unibail-Rodamco.",
+      "W latach 2016–2017 centrum rozbudowano o nowe skrzydło od strony ronda Zgrupowania AK „Radosław”.",
+      "25 września 2019 centrum zmieniło nazwę na Westfield Arkadia.",
+      "W 2020 w centrum działało m.in. 240 sklepów, w tym hipermarket Carrefour, 37 restauracji i kawiarni, multikino Cinema City oraz klub fitness."
+    ],
+    "ciekawostki": [
+      "W 2018 roku na dachu budynku powstała pasieka.",
+      "W 2021 roku otwarto tu pierwszy w Polsce i Europie Środkowo-Wschodniej Lego Store."
+    ],
+    "summary_en": "Westfield Arkadia, formerly Arkadia, is a shopping centre at al. Jana Pawła II 82 that opened in 2004. It was sold to Unibail-Rodamco in 2010, extended in 2016–2017, and renamed Westfield Arkadia in 2019.",
+    "ludzie": [
+      {"kto": "Cefic (grupa ERE-BEG)", "rola": "inwestor i deweloper centrum (2004)", "wiki": null},
+      {"kto": "Unibail-Rodamco", "rola": "właściciel od 2010 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Arkadia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Westfield Arkadia", "url": "https://pl.wikipedia.org/wiki/Westfield_Arkadia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wiadukt-pancera",
+    "nazwa": "Wiadukt Pancera (Nowy Zjazd)",
+    "name_en": "Pancer Viaduct (Nowy Zjazd)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "okolice placu Zamkowego i mostu Kierbedzia (przy ul. Nowy Zjazd)",
+    "adres_historyczny": "łączył plac Zamkowy z ul. Dobrą i ul. Bednarską",
+    "lat": 52.2469,
+    "lon": 21.0149,
+    "lokalizacja": "dokladna",
+    "okres": "1844–1948",
+    "istnieje": false,
+    "fakty": [
+      "Wiadukt Pancera, zwany także Nowym Zjazdem, zbudowano w latach 1844–1846 według projektu Feliksa Pancera.",
+      "Była to konstrukcja o siedmiu łukowych sklepieniach z cegły, wspartych na sześciu filarach i dwóch przyczółkach.",
+      "W związku z jego budową zburzono klasztor i kościół bernardynek oraz część zabudowy Mariensztatu.",
+      "Wiadukt został wykorzystany jako dojazd do oddanego w 1864 roku mostu Aleksandryjskiego (Kierbedzia); ułożono na nim także tory tramwajowe.",
+      "Wycofujące się wojska niemieckie po powstaniu warszawskim zniszczyły przedostatni filar, co spowodowało zawalenie się dwóch przęseł.",
+      "Pozostałości rozebrano w styczniu–lutym 1948 roku podczas budowy trasy W-Z, a obok wytyczono ul. Nowy Zjazd."
+    ],
+    "ciekawostki": [
+      "Ocalałym elementem wiaduktu jest żelazna tablica z napisem w językach rosyjskim i polskim; w 2007 roku została ustawiona przy Bramie Grodzkiej Zamku Królewskiego.",
+      "Wiadukt powstał, by ułatwić dojazd do mostu łyżwowego na Wiśle u wylotu ul. Bednarskiej."
+    ],
+    "summary_en": "The Pancer Viaduct, also called Nowy Zjazd, was built in 1844–1846 to connect plac Zamkowy with the bridge to Praga. It was partly blown up after the Warsaw Uprising and its remains were removed in 1948 during the construction of the W-Z route.",
+    "ludzie": [
+      {"kto": "Feliks Pancer", "rola": "projektant wiaduktu (1844–1846)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowy Zjazd"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wiadukt Pancera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wiadukt_Pancera_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Galeria i podpisy zdjęć pominięte. Lokalizacja z nagłówka artykułu."
+  }
+]

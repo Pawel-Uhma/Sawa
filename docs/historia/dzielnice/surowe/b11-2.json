@@ -1,0 +1,118 @@
+[
+  {
+    "id": "aleje-jerozolimskie",
+    "nazwa": "Aleje Jerozolimskie",
+    "name_en": "Jerozolimskie Avenues",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie (od mostu Poniatowskiego do granicy miasta)",
+    "adres_historyczny": "Droga Jerozolimska",
+    "lat": 52.2340717,
+    "lon": 21.0315899,
+    "lokalizacja": "przyblizona",
+    "okres": "1823–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono ostatecznie w latach 1823–1824; przecięła miasto od rogatek Jerozolimskich do brzegu Wisły, a 40-metrową arterię obsadzono czterema rzędami topoli.",
+      "Nazwa pochodzi od żydowskiego osiedla Nowa Jerozolima, założonego w 1774 roku na terenie jurydyki Bożydar-Kałęczyn należącej do Augusta Sułkowskiego.",
+      "W 1845 roku przy skrzyżowaniu z Marszałkowską wybudowano Dworzec Wiedeński według projektu Henryka Marconiego, co zwiększyło znaczenie ulicy.",
+      "W 1908 roku ulicą po raz pierwszy pojechały tramwaje elektryczne; w latach 1921–1932 pod ulicą wybudowano tunel kolei średnicowej.",
+      "W czasie okupacji nazwano ją Bahnhofstraße (1941–1943), a następnie Reichstraße (1943–1945) i Ostlandstraße (odcinek od Marszałkowskiej do mostu Poniatowskiego).",
+      "Podczas powstania warszawskiego ulica była miejscem zaciętych walk; po powstaniu wysadzono Dworzec Główny i spalono większość kamienic między Nowym Światem a Marszałkowską.",
+      "19 stycznia 1945 roku w Alejach odbyła się defilada Wojska Polskiego, którą przyjęli Bolesław Bierut i Edward Osóbka-Morawski."
+    ],
+    "ciekawostki": [
+      "W 1924 roku u zbiegu z ul. Emilii Plater uruchomiono pierwszą w Warszawie i w Polsce stację paliw należącą do spółki Nobel."
+    ],
+    "summary_en": "A long boulevard running from the Poniatowski Bridge to the city limits, named after the 18th-century Jewish settlement of Nowa Jerozolima. It was laid out in 1823–1824, got electric trams in 1908 and was heavily damaged during the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant Dworca Wiedeńskiego (1845)", "wiki": null},
+      {"kto": "Józef Huss", "rola": "projektant Dworca Kaliskiego (1902)", "wiki": null},
+      {"kto": "Bolesław Bierut", "rola": "uczestnik defilady z 19 stycznia 1945 roku", "wiki": null},
+      {"kto": "Edward Osóbka-Morawski", "rola": "uczestnik defilady z 19 stycznia 1945 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Jerozolimska", "Bahnhofstraße (1941–1943)", "Reichstraße (1943–1945)", "al. Generała Władysława Sikorskiego (1946–1949, odcinek)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleje Jerozolimskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleje_Jerozolimskie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka."
+  },
+  {
+    "id": "aleje-ujazdowskie",
+    "nazwa": "Aleje Ujazdowskie",
+    "name_en": "Ujazdowskie Avenues",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie (fragment Traktu Królewskiego)",
+    "adres_historyczny": "Droga Kalwaryjska (1722–1732)",
+    "lat": 52.2214825,
+    "lon": 21.0246898,
+    "lokalizacja": "przyblizona",
+    "okres": "1722–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1722–1732, z polecenia króla Augusta II, wytyczono Drogę Kalwaryjską z 28 murowanymi kaplicami zaprojektowanymi przez Joachima Daniela Jaucha, prowadzącą do Ujazdowa.",
+      "W drugiej połowie XVIII wieku kaplice z nietrwałych materiałów rozebrano, a droga przekształciła się w Aleje Ujazdowskie.",
+      "W 1827 roku powstała Dolina Szwajcarska, która szybko stała się popularnym miejscem spotkań i imprez masowych.",
+      "W 1908 roku ulicą przejechały tramwaje elektryczne; torowisko ułożono przy chodnikach, a nie pośrodku jezdni.",
+      "5 października 1939 roku Adolf Hitler przyjął na Alejach defiladę zwycięstwa wojsk niemieckich; była to jedyna jego wizyta w okupowanej Warszawie.",
+      "W maju 1940 roku aleje przemianowano na Lindenallee, a 6 października 1940 roku na Siegesstrasse.",
+      "1 lutego 1944 roku w Alejach miał miejsce udany zamach na dowódcę SS i Policji na dystrykt warszawski, Franza Kutscherę.",
+      "W 1994 roku Trakt Królewski wraz z historycznym zespołem miasta i Wilanowem został uznany za pomnik historii."
+    ],
+    "ciekawostki": [
+      "Od 1951 roku w Alejach organizowano kiermasz książkowy „Dni Oświaty, Książki i Prasy”, przeniesiony później pod Pałac Kultury i Nauki."
+    ],
+    "summary_en": "A broad tree-lined avenue of the Royal Route, created in 1722–1732 as the Calvary Road with 28 chapels. Adolf Hitler held a victory parade here in 1939, and the street was renamed twice under German occupation.",
+    "ludzie": [
+      {"kto": "August II", "rola": "król, który polecił wytyczenie Drogi Kalwaryjskiej", "wiki": null},
+      {"kto": "Joachim Daniel Jauch", "rola": "projektant 28 kaplic", "wiki": null},
+      {"kto": "Adolf Hitler", "rola": "przyjął defiladę 5 października 1939 roku", "wiki": null},
+      {"kto": "Franz Kutschera", "rola": "dowódca SS i Policji, cel zamachu z 1 lutego 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Kalwaryjska (1722–1732)", "Lindenallee (1940)", "Siegesstrasse (1940–1945)", "aleja im. Marszałka Józefa Stalina (1945–1956, fragment)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleje Ujazdowskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleje_Ujazdowskie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka."
+  },
+  {
+    "id": "most-gdanski",
+    "nazwa": "Most Gdański",
+    "name_en": "Gdański Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "most nad Wisłą (łączy ul. Słomińskiego z ul. Starzyńskiego)",
+    "adres_historyczny": null,
+    "lat": 52.2609952,
+    "lon": 21.0103411,
+    "lokalizacja": "dokladna",
+    "okres": "1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwupoziomowy stalowy most na Wiśle, część obwodnicy śródmiejskiej, wybudowany w latach 1957–1959 na filarach pierwszego mostu pod Cytadelą.",
+      "Pierwszy most pod Cytadelą, zbudowany w latach 1873–1875 jako kolejowo-drogowy, został wysadzony przez Niemców 13 września 1944 roku; na jego filarach wzniesiono nowy most.",
+      "Projekt wykonał Janusz Ratyński; most był elementem Trasy Mostowej im. Stefana Starzyńskiego, nazwanej uchwałą Rady Narodowej z 27 września 1957 roku.",
+      "Proponowano nazwy m.in. „most Pokoju”, „most Piętnastolecia”, „most Wolności” i „most imienia Traugutta”; ostatecznie nadano nazwę „most Gdański” w dniu otwarcia Trasy, 21 lipca 1959 roku.",
+      "Łączny koszt budowy mostu wyniósł 25 mln złotych.",
+      "W czerwcu 2014 roku po południowej stronie mostu umieszczono neon „Miło cię widzieć” autorstwa Mariusza Lewczyka."
+    ],
+    "ciekawostki": [
+      "Na dolnym poziomie mostu znajdują się drewniane podkłady torowisk, które mają być w przyszłości wymienione."
+    ],
+    "summary_en": "A two-level steel bridge over the Vistula, built in 1957–1959 on the piers of the first bridge under the Citadel, which was blown up in 1944. It is part of Warsaw's inner ring road and opened with the Starzyński Route on 21 July 1959.",
+    "ludzie": [
+      {"kto": "Janusz Ratyński", "rola": "projektant mostu", "wiki": null},
+      {"kto": "Stefan Starzyński", "rola": "patron Trasy Mostowej", "wiki": null},
+      {"kto": "Mariusz Lewczyk", "rola": "autor neonu „Miło cię widzieć”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Gdański", "url": "https://pl.wikipedia.org/wiki/Most_Gda%C5%84ski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  }
+]

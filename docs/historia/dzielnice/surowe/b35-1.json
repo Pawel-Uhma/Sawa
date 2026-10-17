@@ -1,0 +1,290 @@
+[
+  {
+    "id": "zacheta-narodowa-galeria-sztuki",
+    "nazwa": "Zachęta Narodowa Galeria Sztuki",
+    "name_en": "Zachęta National Art Gallery",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "u zbiegu ulicy Królewskiej i Placu Ewangelickiego",
+    "lat": 52.23944444,
+    "lon": 21.01138889,
+    "lokalizacja": "dokladna",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W lutym 1862 Towarzystwo Zachęty Sztuk Pięknych ogłosiło pierwszy konkurs na projekt gmachu wystawienniczego; projekt nie został zrealizowany.",
+      "W 1894 magistrat Warszawy przekazał Towarzystwu działkę u zbiegu ulicy Królewskiej i Placu Ewangelickiego; ogłoszono trzeci konkurs, który wygrał Stefan Szyller.",
+      "Budowę rozpoczęto we wrześniu 1898, a oficjalne otwarcie budynku frontowego nastąpiło 15 grudnia 1900.",
+      "W dniu 15 października 1903 otwarto południowe skrzydło z wystawą stałą złożoną z dzieł polskich z kolekcji Towarzystwa.",
+      "W 1942 gmach został przekształcony w Haus der Deutschen Kultur (Dom Kultury Niemieckiej), w którym urządzano wystawy propagandowe.",
+      "W kwietniu 1945 Biuro Odbudowy Stolicy rozpoczęło remont gmachu.",
+      "W 1982 rozpoczęto wznoszenie skrzydła północno-zachodniego według projektu Feliksa Dzierżanowskiego.",
+      "14 grudnia 2000 nad wejściem do sali Narutowicza odsłonięto tablicę upamiętniającą Gabriela Narutowicza.",
+      "Budynek został wpisany do rejestru zabytków pod nr 705 z 1.07.1965."
+    ],
+    "ciekawostki": [
+      "W Sali Matejkowskiej w 1942 roku zamiast Bitwy pod Grunwaldem zawisły pruski orzeł i swastyka.",
+      "Podczas powstania warszawskiego gmach był przygotowany do podpalenia, ale ostatecznie nie został zniszczony."
+    ],
+    "summary_en": "The Zachęta gallery building, designed by Stefan Szyller, was built from 1898 and opened its front block on 15 December 1900. During the occupation it became the German 'House of German Culture' and after the war it returned to exhibitions; since 2003 it has operated as the national art gallery.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "architekt gmachu, zwycięzca trzeciego i czwartego konkursu", "wiki": null},
+      {"kto": "Zygmunt Otto", "rola": "autor dekoracji gmachu", "wiki": null},
+      {"kto": "Feliks Dzierżanowski", "rola": "autor projektu skrzydła północno-zachodniego (od 1982)", "wiki": null},
+      {"kto": "Ludwika z Lindów Górecka", "rola": "właścicielka kamienicy przy ul. Królewskiej 17, która zapisała działkę Towarzystwu", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Towarzystwo Zachęty Sztuk Pięknych (1900–1942)",
+      "Haus der Deutschen Kultur (1942–1945)",
+      "Centralne Biuro Wystaw Artystycznych (1949–1989)",
+      "Państwowa Galeria Sztuki Zachęta (1989–2003)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zachęta Narodowa Galeria Sztuki", "url": "https://pl.wikipedia.org/wiki/Zach%C4%99ta_Narodowa_Galeria_Sztuki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "adres_dzis nie występuje w paczce, dlatego null. Dziś w tekście nie ma numeru budynku."
+  },
+  {
+    "id": "zajazd-dziekanka",
+    "nazwa": "Zajazd Dziekanka",
+    "name_en": "Dziekanka Inn",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 56",
+    "adres_historyczny": null,
+    "lat": 52.244028,
+    "lon": 21.015417,
+    "lokalizacja": "dokladna",
+    "okres": "XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dziekanka powstała w XVI w. jako piętrowy, murowany dwór; pierwszym jej właścicielem był ówczesny proboszcz parafii św. Jana.",
+      "W wyniku pożaru w 1657 r. dwór uległ spaleniu i już nigdy nie odzyskał pierwotnej formy.",
+      "Zajazd Dziekanka wzniesiono w latach 1770–1784.",
+      "W 1865 r. wyburzono jedno ze skrzydeł kompleksu, przez co Dziekanka „zwróciła się” ku Krakowskiemu Przedmieściu.",
+      "W 1944 r. Dziekanka została spalona podczas akcji niszczenia stolicy przez wojska niemieckie; zniszczenia szacowano na ok. 85%.",
+      "Budynek odbudowano ze środków Społecznego Funduszu Odbudowy Stolicy i oddano do użytku w sierpniu 1948 jako dom studencki dla studentek.",
+      "Autorami projektu architektonicznego odbudowy byli Mieczysław Kuzma i Zygmunt Stępiński."
+    ],
+    "ciekawostki": [
+      "Mieszkał tu Józef Elsner, nauczyciel Fryderyka Chopina i twórca Warszawskiego Konserwatorium.",
+      "Dziekanka jest połączona z budynkiem klasztornym karmelitów bramą, którą prowadzi spacerowa droga poprzez ulicę Mularską."
+    ],
+    "summary_en": "Dziekanka at Krakowskie Przedmieście 56 is a manor-turned-inn built in 1770–1784. It was burned in 1944 and rebuilt in 1948 as a student dormitory, and it now houses students of the Fryderyk Chopin University of Music.",
+    "ludzie": [
+      {"kto": "Józef Elsner", "rola": "mieszkaniec, nauczyciel Fryderyka Chopina, twórca Warszawskiego Konserwatorium", "wiki": null},
+      {"kto": "Mieczysław Kuzma", "rola": "autor projektu architektonicznego odbudowy", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "autor projektu architektonicznego odbudowy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zajazd Dziekanka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zajazd_Dziekanka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "klasztor-szarytek-tamka-35",
+    "nazwa": "Zakład Sióstr Miłosierdzia św. Wincentego à Paulo w Warszawie",
+    "name_en": "Daughters of Charity convent on Tamka Street",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tamka 35",
+    "adres_historyczny": null,
+    "lat": 52.23572778,
+    "lon": 21.025025,
+    "lokalizacja": "dokladna",
+    "okres": "1659–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zakład ufundowała w XVII wieku Maria Ludwika Gonzaga, żona króla Jana Kazimierza.",
+      "Siostry przybyły do Warszawy 8 grudnia 1652 r. na prośbę Marii Ludwiki Gonzagi.",
+      "W 1659 roku fundatorka kupiła dworek i tzw. dworzec „Gisowski” u podnóża zamku Ostrogskich, górującego nad wąwozem Tamki.",
+      "Siostry wprowadziły się tam z 15 podopiecznymi (sierotami) miesiąc po zakupieniu posiadłości; artykuł podaje tę datę jako 7 czerwca 1659 roku.",
+      "W 1677 roku w czasie zarazy Szarytki umieściły w odosobnionych barakach około 4000 chorych.",
+      "W 1699 roku rozpoczęto budowę murowanego klasztoru i świątyni pod wezwaniem św. Kazimierza; 9 lipca 1699 roku zakończono budowę domu murowanego.",
+      "W 1939 roku kościół spłonął całkowicie wraz z klasztorem, który w 1944 roku był częściowo zburzony w czasie powstania warszawskiego.",
+      "Odbudowę klasztoru rozpoczęto po wojnie i trwała ona do 1956 roku.",
+      "W 2017 Rada m.st. Warszawy nadała przejściu od ul. Tamka do bramy klasztoru nazwę Zaułek Ku Szarytkom."
+    ],
+    "ciekawostki": [
+      "Przez wiele lat na mszy w kościele św. Kazimierza gromadzili się Francuzi mieszkający w Warszawie.",
+      "W klasztorze na ścianach wiszą liczne obrazy, w tym portret Marii Ludwiki Gonzagi."
+    ],
+    "summary_en": "The Daughters of Charity convent on Tamka 35 was founded in the 17th century by Queen Maria Ludwika Gonzaga, wife of King Jan Kazimierz. The church of St. Casimir burned in 1939, and the complex was rebuilt after the war until 1956.",
+    "ludzie": [
+      {"kto": "Maria Ludwika Gonzaga", "rola": "fundatorka zakładu, żona króla Jana Kazimierza", "wiki": null},
+      {"kto": "Wincenty à Paulo", "rola": "założyciel Zgromadzenia", "wiki": null},
+      {"kto": "Ludwika de Marillac", "rola": "współzałożycielka Zgromadzenia, służyła najuboższym", "wiki": null},
+      {"kto": "Michał Radziejowski", "rola": "kardynał, który zapisał majątek na rzecz zakładu", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Szpital Ubogich i Sierot (adresat wieczystej darowizny królowej)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zakład Sióstr Miłosierdzia św. Wincentego à Paulo w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zak%C5%82ad_Si%C3%B3str_Mi%C5%82osierdzia_%C5%9Bw._Wincentego_%C3%A0_Paulo_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data wprowadzenia sióstr w artykule jest zapisana dwuznacznie (miesiąc po zakupie, a w tym samym zdaniu 7 czerwca 1659)."
+  },
+  {
+    "id": "zamach-gl-na-kolumne-sa-1943",
+    "nazwa": "Zamach Gwardii Ludowej na kolumnę SA",
+    "name_en": "People's Guard attack on an SA column (1943)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "róg al. Ujazdowskich i ul. Wilczej",
+    "adres_historyczny": null,
+    "lat": 52.229722,
+    "lon": 21.011667,
+    "lokalizacja": "dokladna",
+    "okres": "1943",
+    "istnieje": true,
+    "fakty": [
+      "15 lipca 1943 bojownicy Gwardii Ludowej przeprowadzili zamach na kolumnę Sturmabteilung (SA) na rogu Alej Ujazdowskich i ulicy Wilczej.",
+      "Zamach był odwetem za egzekucję dokonaną przez Niemców 24 czerwca 1943 w ruinach warszawskiego getta na grupie 200 osób.",
+      "Pierwotnie planowany zamach na uroczystą zmianę warty przed gmachem niemieckiej komendy garnizonu został odwołany, bo miejsce było otoczone drutem kolczastym.",
+      "Na rogu Alej Ujazdowskich i ulicy Wilczej Roman Łączyński i Leon Rycharski rzucili dwie wiązki granatów na czoło i koniec kolumny.",
+      "Według GL zabito 4 Niemców, a około 20 zraniono.",
+      "Łączyńskiemu udało się uciec; Leon Rycharski, raniony przez Niemców w pościgu, został ujęty."
+    ],
+    "ciekawostki": [
+      "Kolumnę SA maszerującą ulicą Krakowskie Przedmieście z rozwiniętym sztandarem poprzedzała orkiestra.",
+      "Tego samego dnia gwardziści rzucili dwa granaty na tramwaj „Tylko dla Niemców” na placu Żelaznej Bramy, bez większych szkód."
+    ],
+    "summary_en": "On 15 July 1943 People's Guard fighters threw grenades at an SA column at the corner of Aleje Ujazdowskie and Wilcza streets, in revenge for a German execution of about 200 people in the Warsaw ghetto ruins. Four Germans were reportedly killed and about twenty wounded; Rycharski was captured.",
+    "ludzie": [
+      {"kto": "Henryk Sternhel ps. „Gustaw”", "rola": "dowódca oddziału bojowego GL, zdecydował o zmianie celu", "wiki": null},
+      {"kto": "Roman Łączyński", "rola": "dowódca sekcji, rzucił granaty, uciekł", "wiki": null},
+      {"kto": "Leon Rycharski", "rola": "uczestnik zamachu, raniony i ujęty", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zamach Gwardii Ludowej na kolumnę SA", "url": "https://pl.wikipedia.org/wiki/Zamach_Gwardii_Ludowej_na_kolumn%C4%99_SA"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Liczby ofiar podane wg GL (według źródła GL)."
+  },
+  {
+    "id": "zamach-na-aleksieja-lizariewa-1928",
+    "nazwa": "Zamach na Aleksieja Lizariewa",
+    "name_en": "Assassination attempt on Aleksei Lizariev (1928)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skrzyżowanie ul. Marszałkowskiej i ul. Wilczej",
+    "adres_historyczny": null,
+    "lat": 52.224861,
+    "lon": 21.014944,
+    "lokalizacja": "dokladna",
+    "okres": "1928",
+    "istnieje": true,
+    "fakty": [
+      "4 maja 1928 na skrzyżowaniu ul. Marszałkowskiej z ul. Wilczą oddano w kierunku Aleksieja S. Lizariewa, szefa sowieckiej misji handlowej, dwa strzały z rewolweru.",
+      "Zamachowiec, młody biały emigrant rosyjski Jurij L. Wojciechowski, strzelał z samochodu jadącego za Sowietami, ale niecelnie.",
+      "Szkło z rozbitego lusterka raniło jedynie Lizariewa w rękę.",
+      "Wojciechowski schronił się w siedzibie Domu Rosyjskiego, po czym oddał się policjantowi i przekazał mu rewolwer.",
+      "6 maja przeprowadzono aresztowania białych emigrantów i rewizje w siedzibach organizacji rosyjskich.",
+      "Proces Wojciechowskiego rozpoczął się 28 grudnia w warszawskim sądzie okręgowym; 31 grudnia został skazany na 10 lat więzienia.",
+      "W 1933 J.L. Wojciechowski wyszedł na wolność."
+    ],
+    "ciekawostki": [
+      "Władze Rosji Sowieckiej twierdziły, że zamach był skierowany przeciw sowieckiemu posłowi Dmitrijowi W. Bogomołowowi, a Lizariew padł jego ofiarą przez pomyłkę.",
+      "W 1929 karę zmniejszono do 5 lat więzienia."
+    ],
+    "summary_en": "On 4 May 1928 a Russian émigré, Jurij Wojciechowski, fired two shots at Aleksei Lizariev, head of the Soviet trade mission, at the junction of Marszałkowska and Wilcza streets. The shots missed; Lizariev was wounded in the hand by mirror glass. Wojciechowski was sentenced to ten years in prison.",
+    "ludzie": [
+      {"kto": "Aleksiej S. Lizariew", "rola": "szef sowieckiej misji handlowej, ofiara zamachu", "wiki": null},
+      {"kto": "Jurij L. Wojciechowski", "rola": "zamachowiec, biały emigrant rosyjski", "wiki": null},
+      {"kto": "Marian Niedzielski", "rola": "obrońca Wojciechowskiego", "wiki": null},
+      {"kto": "Dmitrij W. Bogomołow", "rola": "sowiecki poseł, według oświadczenia ZSRR właściwy cel zamachu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zamach na Aleksieja Lizariewa", "url": "https://pl.wikipedia.org/wiki/Zamach_na_Aleksieja_Lizariewa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zamach-na-gabriela-narutowicza",
+    "nazwa": "Zamach na Gabriela Narutowicza",
+    "name_en": "Assassination of President Gabriel Narutowicz",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "gmach Towarzystwa Zachęty Sztuk Pięknych, sala nr 1",
+    "lat": 52.239166666,
+    "lon": 21.011666666,
+    "lokalizacja": "dokladna",
+    "okres": "1922–1923",
+    "istnieje": true,
+    "fakty": [
+      "16 grudnia 1922 w gmachu Towarzystwa Zachęty Sztuk Pięknych Eligiusz Niewiadomski zastrzelił pierwszego prezydenta Rzeczypospolitej Polskiej Gabriela Narutowicza.",
+      "Narutowicz uczestniczył w otwarciu dorocznego Salonu Towarzystwa; podczas zwiedzania wystawy w sali nr 1 zamachowiec oddał do niego z małej odległości trzy strzały z pistoletu.",
+      "Narutowicz został wybrany prezydentem 9 grudnia 1922 r. w piątej turze, 289 głosami Zgromadzenia Narodowego.",
+      "30 grudnia 1922 Niewiadomski został skazany na karę śmierci.",
+      "Wyrok wykonano 31 stycznia 1923 przez rozstrzelanie.",
+      "Po wyborze pochód protestujących, głównie młodzieży akademickiej i szkolnej, udał się do mieszkania gen. Józefa Hallera; w alei 3 Maja uchwalono rezolucję wzywającą Narutowicza do ustąpienia."
+    ],
+    "ciekawostki": [
+      "Narutowicz uznał, że podporządkowanie się woli Zgromadzenia Narodowego jest jego obywatelskim obowiązkiem i wybór przyjął.",
+      "Gen. Józef Haller przemawiał z balkonu do tłumu, a skandujących hasła przeciwko Narutowiczowi pochwalił."
+    ],
+    "summary_en": "President Gabriel Narutowicz, elected on 9 December 1922, was shot dead on 16 December 1922 by Eligiusz Niewiadomski during the opening of the annual Salon of the Zachęta Society of Fine Arts. The assassin was sentenced to death and executed on 31 January 1923.",
+    "ludzie": [
+      {"kto": "Gabriel Narutowicz", "rola": "pierwszy prezydent Rzeczypospolitej, ofiara zamachu", "wiki": null},
+      {"kto": "Eligiusz Niewiadomski", "rola": "zamachowiec, skazany na karę śmierci", "wiki": null},
+      {"kto": "Józef Haller", "rola": "generał, przemawiał do protestujących przeciw wyborowi Narutowicza", "wiki": null},
+      {"kto": "Antoni Sadzewicz", "rola": "poseł, przemawiał na proteście przeciw Narutowiczowi", "wiki": null},
+      {"kto": "Julian Nowak", "rola": "premier, który zawiadomił Narutowicza o wyborze", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zamach na Gabriela Narutowicza", "url": "https://pl.wikipedia.org/wiki/Zamach_na_Gabriela_Narutowicza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres: gmach Zachęty (zob. rekord zacheta-narodowa-galeria-sztuki). Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "zamachy-gl-na-cafe-club-1942-1943",
+    "nazwa": "Zamachy Gwardii Ludowej na „Café Club”",
+    "name_en": "People's Guard attacks on the Café Club",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "róg ul. Nowy Świat i al. Jerozolimskich",
+    "adres_historyczny": "kamienica Istomina na rogu Nowego Światu i Alej Jerozolimskich",
+    "lat": 52.229722,
+    "lon": 21.011667,
+    "lokalizacja": "dokladna",
+    "okres": "1942–1943",
+    "istnieje": null,
+    "fakty": [
+      "Café Club był warszawską kawiarnią w kamienicy Istomina na rogu Nowego Światu i Alej Jerozolimskich; w czasie okupacji był przeznaczony tylko dla Niemców.",
+      "W odwecie za powieszenie 50 więźniów Pawiaka w nocy z 15 na 16 października 1942 Gwardia Ludowa zaplanowała zamach na trzy lokale „Nur für Deutsche”.",
+      "24 października 1942 o godzinie 19:00 „Suchy” (Roman Bogucki) wrzucił przez okno wiązkę granatów; eksplozja raniła trzydzieści osób.",
+      "Wśród rannych byli trzej policjanci (ciężko), jeden cywil i kilkunastu żołnierzy na urlopie.",
+      "Uczestnicy zamachu wycofali się bez strat, mimo ostrzału z gmachu Banku Gospodarstwa Krajowego.",
+      "Pod koniec czerwca 1943 Niemcy przeprowadzili egzekucje na terenach dawnego getta; stracono ponad 200 osób, a dowódca okręgu GL Henryk Sternhel zdecydował o zamachu na Café Club."
+    ],
+    "ciekawostki": [
+      "Tego samego wieczoru zaatakowano restaurację „Mitropa” na Dworcu Głównym; akcja na „Café Otto” się nie odbyła, a grupa „Młota” zaatakowała drukarnię Nowego Kuriera Warszawskiego.",
+      "Stefan Korboński ocenił zamach z 1942 roku negatywnie, uznając go za dowód słabości komunistycznego podziemia."
+    ],
+    "summary_en": "Two grenade attacks by People's Guard units targeted the Café Club, a German-only café at the corner of Nowy Świat and Aleje Jerozolimskie. The first, on 24 October 1942, wounded about thirty people, including three police officers.",
+    "ludzie": [
+      {"kto": "Roman Bogucki ps. „Suchy”", "rola": "wykonawca zamachu na Café Club w 1942", "wiki": null},
+      {"kto": "Bolesław Kowalski ps. „Janek”", "rola": "dowódca miejscowego okręgu GL, któremu powierzono odwet", "wiki": null},
+      {"kto": "Jan Strzeszewski ps. „Wiktor”", "rola": "oficer Sztabu Głównego GL, dowodził akcją", "wiki": null},
+      {"kto": "Tadeusz Findziński ps. „Olek”", "rola": "dowódca Dzielnicy GL Powiśle, wsparł zamach", "wiki": null},
+      {"kto": "Henryk Sternhel ps. „Gustaw”", "rola": "dowódca okręgu GL Warszawa-Miasto, zlecił zamach w lipcu 1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zamachy Gwardii Ludowej na Café Club", "url": "https://pl.wikipedia.org/wiki/Zamachy_Gwardii_Ludowej_na_Caf%C3%A9_Club"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł urwany w opisie zamachu z 11 lipca 1943 (zdanie niedokończone). Lead podaje, że drugi zamach w 1943 przeprowadził Związek Walki Młodych, a sekcja o zamachu z lipca 1943 mówi o GL: do sprawdzenia. Istnienie budynku nie jest potwierdzone w paczce, dlatego istnieje: null."
+  }
+]

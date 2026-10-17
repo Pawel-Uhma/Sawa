@@ -1,0 +1,150 @@
+[
+  {
+    "id": "marymont-potok",
+    "nazwa": "Marymont-Potok",
+    "name_en": "Marymont-Potok district",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "obszar MSI Marymont-Potok (ul. Słowackiego, Potocka, Promyka, al. Armii Krajowej)",
+    "adres_historyczny": "wieś Polków (Polikowo) i folwark Potok",
+    "lat": 52.27847,
+    "lon": 20.988511,
+    "lokalizacja": "przyblizona",
+    "okres": "1367–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawna wieś Polków (Polikowo) była wzmiankowana już w 1367 i 1368 roku jako własność książąt mazowieckich.",
+      "W 1639 roku król Władysław IV darował bielańskim kamedułom lasy wsi Polków, a w 1641 roku samą wieś.",
+      "Jan III Sobieski otrzymał od kamedułów część gruntów Polkowa i wybudował tu dla Marysieńki letni pałacyk, dzieło Tylmana z Gameren (po roku 1691).",
+      "W 1820 roku w przebudowanym pałacyku Marysieńki Sobieskiej powstała pierwsza w Królestwie Polskim wyższa uczelnia rolnicza – Szkoła Agronomiczna na Marymoncie; w 1862 roku przeniesiono ją do Puław.",
+      "W 1792 roku w folwarku Potok założono krótko działającą fabrykę perkalików.",
+      "Pod koniec XIX wieku wieś Pólków i folwark Potok należały do gminy Młociny; Pólków liczył 12 mieszkańców, a Potok 67 mieszkańców i 26 budynków.",
+      "8 kwietnia 1916 roku generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające do Warszawy (od 1 kwietnia 1916) okoliczne miejscowości, m.in. Potok.",
+      "Na początku lat 30. XX wieku wzniesiono gmach Wyższej Szkoły Służby Pożarniczej projektu Jana Redy."
+    ],
+    "ciekawostki": [
+      "Budowa Cytadeli Warszawskiej wymusiła przeniesienie wsi Pólków w rejon między Kaskadą a Słodowcem."
+    ],
+    "summary_en": "Marymont-Potok is a district in Żoliborz named after the former village of Polków and the Potok farm. Polków was a royal village in the 14th century, a palace built for Marysieńka Sobieska stood here, and the area was annexed to Warsaw in 1916.",
+    "ludzie": [
+      {"kto": "Władysław IV", "rola": "król, który w 1639 roku darował kamedułom lasy wsi Polków", "wiki": null},
+      {"kto": "Jan III Sobieski", "rola": "zlecił budowę letniego pałacyku dla Marysieńki", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "architekt pałacyku", "wiki": null},
+      {"kto": "Hans Hartwig von Beseler", "rola": "generał-gubernator, włączył Potok do Warszawy w 1916 roku", "wiki": null},
+      {"kto": "Jan Reda", "rola": "projektant gmachu Wyższej Szkoły Służby Pożarniczej (początek lat 30. XX wieku)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Polków (Polikowo)", "folwark Potok"],
+    "zrodla": [{"tytul": "Wikipedia: Marymont-Potok", "url": "https://pl.wikipedia.org/wiki/Marymont-Potok"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "panteon-mauzoleum-wykletych-niezlomnych",
+    "nazwa": "Panteon – Mauzoleum Wyklętych-Niezłomnych",
+    "name_en": "Pantheon – Mausoleum of the Cursed Soldiers",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Cmentarz Wojskowy na Powązkach, kwatera „Ł” (Łączka)",
+    "adres_historyczny": null,
+    "lat": 52.255833,
+    "lon": 20.952361,
+    "lokalizacja": "dokladna",
+    "okres": "2015–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Panteon – Mauzoleum Wyklętych-Niezłomnych znajduje się w Kwaterze na Łączce na Cmentarzu Wojskowym na Powązkach.",
+      "Pomnik zaprojektowali rzeźbiarz Jan Kuka i architekt Michał Dąbek z Krakowa; odsłonięto go 27 września 2015 roku.",
+      "Pierwszy pomnik na Łączce, wzniesiony w 1991 roku, miał formę fragmentu ceglanego muru z wyciętą literą „V”; został rozebrany w 2013 roku w związku z pracami ekshumacyjnymi.",
+      "Pomnik składa się z 24 kamiennych bloków-filarów z jasnoszarego granitu; każdy element kolumnady ma 3,9 m wysokości.",
+      "W pierwszym etapie zabudowano północno-zachodnią część kwatery „Ł” o powierzchni 451,8 m²; w przyszłości łączna powierzchnia zagospodarowana przez Panteon ma wynieść 1106 m².",
+      "Pomnik ma 300 miejsc na pochówki: 240 na groby osób zidentyfikowanych i 60 na niezidentyfikowane szczątki.",
+      "Na elewacji znajduje się napis „Niezłomni wyklęci” z datą 1945–1956 oraz fragment wiersza Artura Oppmana i cytat z Ewangelii św. Łukasza (19, 40)."
+    ],
+    "ciekawostki": [
+      "Elewacja z napisem jest miejscem składania kwiatów podczas głównych uroczystości."
+    ],
+    "summary_en": "The Pantheon – Mausoleum of the Cursed Soldiers stands in the Łączka Quarter of Powązki Military Cemetery. Designed by Jan Kuka and Michał Dąbek and unveiled on 27 September 2015, it commemorates those murdered by the communist authorities in Mokotów prison.",
+    "ludzie": [
+      {"kto": "Jan Kuka", "rola": "rzeźbiarz, współautor projektu pomnika", "wiki": null},
+      {"kto": "Michał Dąbek", "rola": "architekt z Krakowa, współautor projektu pomnika", "wiki": null},
+      {"kto": "Artur Oppman", "rola": "autor fragmentu wiersza „Pacierz za umarłych” umieszczonego na pomniku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pierwszy pomnik na Łączce (1991–2013)"],
+    "zrodla": [{"tytul": "Wikipedia: Panteon – Mauzoleum Wyklętych-Niezłomnych", "url": "https://pl.wikipedia.org/wiki/Panteon_%E2%80%93_Mauzoleum_Wykl%C4%99tych-Niez%C5%82omnych"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w części o konkursie i kontrowersjach; fakty z tej części pominięto."
+  },
+  {
+    "id": "park-fosa-i-stoki-cytadeli",
+    "nazwa": "Park Fosa i Stoki Cytadeli",
+    "name_en": "Citadel Moat and Slopes Park",
+    "typ": "park",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "park wokół murów Cytadeli, między ul. Wybrzeże Gdyńskie, ul. Kaniowską i ul. Krajewskiego",
+    "adres_historyczny": null,
+    "lat": 52.264174,
+    "lon": 21.003777,
+    "lokalizacja": "dokladna",
+    "okres": "1950–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Urządzanie parku rozpoczęto po II wojnie światowej według projektu Zygmunta Stępińskiego, Kazimierza Marczewskiego i Krystyny Onitzchowej.",
+      "Park powstał w miejscu dawnej strzelnicy i miejsca ćwiczeń żołnierzy 21 Pułku Piechoty „Dzieci Warszawy”, by upamiętnić rozstrzelanie w 1925 roku trzech komunistów: Władysława Hibnera, Władysława Kniewskiego i Henryka Rutkowskiego.",
+      "Centralnym elementem parku było mauzoleum tych trzech w postaci granitowego sarkofagu.",
+      "Pierwotnie park miał powierzchnię 1,7 ha; po oczyszczeniu koryta i spiętrzeniu wody rzeki Drny powstał tam staw o powierzchni 1400 m².",
+      "Park został otwarty w 1950 roku.",
+      "W 1954 roku na skraju parku, przy ul. Wybrzeże Gdyńskie, odsłonięto płytę upamiętniającą żołnierzy 2 Dywizji Piechoty poległych w walkach na przyczółku żoliborskim we wrześniu 1944 roku.",
+      "W późniejszych latach park został rozszerzony i otoczył całą Cytadelę."
+    ],
+    "ciekawostki": [
+      "Przy wejściu planowano ustawić kamienne lwy dłuta Mieczysława Lubelskiego, ale wojsko przejęło rzeźby, a cokoły pozostały puste."
+    ],
+    "summary_en": "The Citadel Moat and Slopes Park surrounds the walls of the Warsaw Citadel. Laid out after the Second World War on the site of a former rifle range, it was opened in 1950 and commemorates three communists executed there in 1925.",
+    "ludzie": [
+      {"kto": "Władysław Hibner", "rola": "rozstrzelany w 1925 roku, patron parku", "wiki": null},
+      {"kto": "Władysław Kniewski", "rola": "rozstrzelany w 1925 roku, patron parku", "wiki": null},
+      {"kto": "Henryk Rutkowski", "rola": "rozstrzelany w 1925 roku, patron parku", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "autor projektu parku", "wiki": null},
+      {"kto": "Kazimierz Marczewski", "rola": "autor projektu parku", "wiki": null},
+      {"kto": "Krystyna Onitzch", "rola": "autorka projektu parku (w tekście: Onitzchowa)", "wiki": null}
+    ],
+    "dawne_nazwy": ["park im. Kniewskiego, Hibnera i Rutkowskiego", "park Hibnera"],
+    "zrodla": [{"tytul": "Wikipedia: Park Fosa i Stoki Cytadeli w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Fosa_i_Stoki_Cytadeli_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Patroni parku: Hibner, Kniewski, Rutkowski (rozstrzelani w 1925 roku wg artykułu)."
+  },
+  {
+    "id": "park-kaskada",
+    "nazwa": "Park Kaskada",
+    "name_en": "Kaskada Park",
+    "typ": "park",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "między al. Armii Krajowej a ul. Słowackiego",
+    "adres_historyczny": "część rezydencji królewskiej na Marymoncie",
+    "lat": 52.2731,
+    "lon": 20.9711,
+    "lokalizacja": "dokladna",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od XVII wieku obecny park stanowił część rezydencji królewskiej na Marymoncie.",
+      "Na początku XIX wieku nowy właściciel, generał Józef Rautenstrauch, wytyczył aleje spacerowe i ścieżki oraz wprowadził łodzie spacerowe.",
+      "Niewielki wodospad, urządzony w 1820 roku, dał nazwę całemu terenowi: „Kaskada”.",
+      "W parterowym domku generała urządzono później gospodę, gdzie organizowano zabawy, festyny i pokazy pirotechniczne.",
+      "Park oddano do użytku w 1950 lub 1951 roku; koncepcję zrealizowano według projektu Ludwika Lawina.",
+      "Na fragmencie muru w parku znajduje się tablica pamiątkowa upamiętniająca masową egzekucję z września 1944 roku."
+    ],
+    "ciekawostki": [
+      "Park leży w okolicy, gdzie w XIX wieku odbywały się podmiejskie przechadzki warszawiaków, a teren nazwano od wodospadu zasilanego naturalnym źródłem."
+    ],
+    "summary_en": "Kaskada Park lies between Home Army Avenue and Słowackiego Street in Żoliborz. It was part of the Marymont royal residence, and its name comes from a small waterfall built in 1820. The park opened in 1950 or 1951.",
+    "ludzie": [
+      {"kto": "Józef Rautenstrauch", "rola": "generał, właściciel terenu na początku XIX wieku, wytyczył aleje i ścieżki", "wiki": null},
+      {"kto": "Ludwik Lawin", "rola": "architekt, autor projektu parku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kaskada"],
+    "zrodla": [{"tytul": "Wikipedia: Park Kaskada", "url": "https://pl.wikipedia.org/wiki/Park_Kaskada"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ciekawostka oparta na ogólnym opisie artykułu (podmiejskie przechadzki)."
+  }
+]

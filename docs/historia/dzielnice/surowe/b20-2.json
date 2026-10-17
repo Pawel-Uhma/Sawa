@@ -1,0 +1,694 @@
+[
+  {
+    "id": "gmach-domu-bankowego-wilhelma-landaua",
+    "nazwa": "Gmach Domu Bankowego Wilhelma Landaua",
+    "name_en": "Wilhelm Landau Bank House Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Senatorska 38",
+    "adres_historyczny": "ul. Senatorska 42 (przed 1945 r. numeracja)",
+    "lat": 52.2429,
+    "lon": 21.004,
+    "lokalizacja": "dokladna",
+    "okres": "1904–1906–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektowali Stanisław Grochowicz i Gustaw Landau-Gutenteger; wzniesiono go w latach 1904–1906.",
+      "Bank Landaua funkcjonował w tym miejscu do 1925 roku, potem mieścił się tu Polski Bank Przemysłowy.",
+      "Podczas II wojny światowej budynek wykorzystywano na potrzeby Szpitala Maltańskiego, mieszczącego się w sąsiadującym pałacu Mniszchów; w skarbcu urządzono salę operacyjną i magazyn.",
+      "Budynek przetrwał wojnę bez większych strat, ale po 1945 roku pozbawiono go efektownej kopuły wieńczącej główne wejście.",
+      "Po wojnie zmieniono numerację budynku z 42 na 38.",
+      "W 1984 roku budynek został wpisany do rejestru zabytków.",
+      "W latach 2015–2018 budynek był siedzibą Parku Miniatur Województwa Mazowieckiego."
+    ],
+    "ciekawostki": [
+      "Zachowało się wiele elementów secesyjnych, m.in. posadzka z motywem liścia klonu, sztukatorska oprawa okien i boazeria.",
+      "Na bocznej ścianie budynku umieszczono tablicę projektu Karola Tchorka, upamiętniającą egzekucje Polaków z 7 i 14 sierpnia 1944 roku (w latach 50.)."
+    ],
+    "summary_en": "An Art Nouveau bank house at Senatorska 38, designed by Stanisław Grochowicz and Gustaw Landau-Gutenteger and built in 1904–1906. It is one of the best-preserved Art Nouveau buildings in the city and has been a listed monument since 1984.",
+    "ludzie": [
+      {
+        "kto": "Stanisław Grochowicz",
+        "rola": "współprojektant budynku",
+        "wiki": null
+      },
+      {
+        "kto": "Gustaw Landau-Gutenteger",
+        "rola": "współprojektant budynku",
+        "wiki": null
+      },
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor tablicy upamiętniającej egzekucje z sierpnia 1944",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Dom Bankowy Wilhelma Landaua"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Domu Bankowego Wilhelma Landaua w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Domu_Bankowego_Wilhelma_Landaua_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawny adres 42 podany w tekście tylko pośrednio (zmiana numeracji po 1945). Nazwisko architekta w artykule: Gustawa Landaua-Gutentegera; zapis w tym rekordzie uproszczony. Adres historyczny wpisany wg numeracji przed 1945 - do weryfikacji."
+  },
+  {
+    "id": "gmach-gieldy-i-banku-polskiego",
+    "nazwa": "Gmach Giełdy i Banku Polskiego",
+    "name_en": "Stock Exchange and Bank of Poland Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Bankowy 1",
+    "adres_historyczny": "ul. Elektoralna 2 (skrzydło biurowe)",
+    "lat": 52.242192,
+    "lon": 21.002302,
+    "lokalizacja": "dokladna",
+    "okres": "1825–1828–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczny gmach wzniesiono w latach 1825–1828 według projektu Antonia Corazziego przy współpracy Jana Jakuba Gaya.",
+      "Pod niską kopułą, na wysokim tamburze, mieściła się wielka sala operacyjna Banku Polskiego (według innego źródła – sala Giełdy).",
+      "W 1830 roku, po wybuchu powstania listopadowego, do gmachu przeniosła się z Pałacu Namiestnikowskiego Rada Administracyjna.",
+      "W 1863 roku, w czasie powstania styczniowego, powstańcy pod dowództwem Aleksandra Waszkowskiego przejęli znajdującą się w skarbcu Banku Polskiego Kasę Główną Królestwa Polskiego.",
+      "W 1877 roku Giełdę przeniesiono do budynku dawnej Ujeżdżalni przy ul. Królewskiej 14; w 1886 roku Bank Polski został zlikwidowany.",
+      "W latach 1950–1954 gmach odbudowano według projektu Piotra Biegańskiego, z uproszczeniami i zmianą funkcji.",
+      "W latach 1957–1989 był siedzibą Muzeum Historii Polskiego Ruchu Rewolucyjnego; od 1990 roku mieści się tu Muzeum Kolekcji im. Jana Pawła II Fundacji Carroll-Porczyńskich.",
+      "W 1965 roku budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W 1988 roku na fasadzie odsłonięto tablicę upamiętniającą Bank Polski.",
+      "W 1992 roku przy wejściu do muzeum odsłonięto pomnik Jana Pawła II zaprojektowany przez Gustawa Zemłę, dar Fundacji Carroll-Porczyńskich dla miasta."
+    ],
+    "summary_en": "A classicist building on Plac Bankowy 1, built in 1825–1828 by Antonio Corazzi for the Bank Polski and the stock exchange. Rebuilt after WWII, it has been a listed monument since 1965 and now houses the John Paul II Collection museum.",
+    "ludzie": [
+      {
+        "kto": "Antonio Corazzi",
+        "rola": "autor projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Jakub Gay",
+        "rola": "współpracownik projektu, autor skrzydła biurowego",
+        "wiki": null
+      },
+      {
+        "kto": "Ludwik Kauffmann",
+        "rola": "płaskorzeźby geniuszy Sławy nad oknem kopuły",
+        "wiki": null
+      },
+      {
+        "kto": "Marian Lalewicz",
+        "rola": "kierował restauracją w latach 1919–1921",
+        "wiki": null
+      },
+      {
+        "kto": "Piotr Biegański",
+        "rola": "autor projektu odbudowy (1950–1954)",
+        "wiki": null
+      },
+      {
+        "kto": "Gustaw Zemła",
+        "rola": "autor pomnika Jana Pawła II",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Giełdy i Banku Polskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Gie%C5%82dy_i_Banku_Polskiego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-glowny-politechniki-warszawskiej",
+    "nazwa": "Gmach Główny Politechniki Warszawskiej",
+    "name_en": "Main Building of the Warsaw University of Technology",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Politechniki 1",
+    "adres_historyczny": null,
+    "lat": 52.2205,
+    "lon": 21.0106,
+    "lokalizacja": "dokladna",
+    "okres": "1899–1901–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach zaprojektowany przez Stefana Szyllera dla Instytutu Politechnicznego im. Cara Mikołaja II powstał na zadrzewionym skwerze; budowę rozpoczęto w lipcu 1899 roku i trwała 2 lata.",
+      "Na fasadzie umieszczono tablice z datą rozpoczęcia budowy (1899) i jej zakończenia (1901).",
+      "W 1915 roku niemieckie władze umieściły w gmachu szpital wojskowy, dlatego uroczystość otwarcia Politechniki Warszawskiej 15 listopada tego roku odbyła się w Gmachu Fizyki.",
+      "W czasie II wojny światowej wnętrza gmachu zostały wypalone, a stalowe konstrukcje dachu uszkodzone pociskami artyleryjskimi.",
+      "Grupa rzeźbiarska „Apoteoza Wiedzy” przed 1944 rokiem przedstawiała Geniusza Wiedzy oraz Fizykę i Chemię; po rekonstrukcji w 1965 roku postać Chemii zastąpiono alegorią Architektury.",
+      "W 2005 roku w gmachu odsłonięto pomnik Marii Skłodowskiej-Curie zaprojektowany przez Maksymiliana Biskupskiego."
+    ],
+    "ciekawostki": [
+      "Gmach zagrał w wielu filmach, m.in. w Dorożkarzu nr 13, Człowieku z marmuru, Poślizgu, Gorączce, Graczach, Szczęśliwego Nowego Jorku, Kung-fu i Poza zasięgiem.",
+      "Klatka schodowa jest inspirowana schodami zamku w Baranowie Sandomierskim, a w Dużej Auli z przeszklonym dachem odbywają się inauguracje roku akademickiego."
+    ],
+    "summary_en": "The main building of the Warsaw University of Technology on Plac Politechniki 1, designed by Stefan Szyller and built in 1899–1901 in an Italian Renaissance and Baroque style. It was gutted in WWII and rebuilt after the war, and it houses the Large Hall used for academic ceremonies.",
+    "ludzie": [
+      {
+        "kto": "Stefan Szyller",
+        "rola": "architekt gmachu",
+        "wiki": null
+      },
+      {
+        "kto": "Maksymilian Biskupski",
+        "rola": "autor pomnika Marii Skłodowskiej-Curie",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Instytut Politechniczny im. Cara Mikołaja II"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Główny Politechniki Warszawskiej",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_G%C5%82%C3%B3wny_Politechniki_Warszawskiej"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-instytutu-techniki-cieplnej-pw",
+    "nazwa": "Gmach Instytutu Techniki Cieplnej Politechniki Warszawskiej (Pawilon Techniki Cieplnej)",
+    "name_en": "Institute of Thermal Technology Building, Warsaw University of Technology",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowowiejska 21/25",
+    "adres_historyczny": null,
+    "lat": 52.219886,
+    "lon": 21.009572,
+    "lokalizacja": "dokladna",
+    "okres": "1952–1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach powstał w pierwszej połowie lat 50. XX wieku zgodnie z doktryną realizmu socjalistycznego.",
+      "Jest jedną z najwcześniejszych inwestycji Politechniki Warszawskiej po II wojnie światowej; inicjatorem budowy był Bohdan Stefanowski, jeden z twórców warszawskiej szkoły termodynamiki.",
+      "Budynek zaprojektowano w 1952 roku i wzniesiono w latach 1952–1955 według projektu Józefa Ufnalewskiego i Józefa Korszyńskiego.",
+      "Budynek wykonano w wersji uboższej niż planowana: nie zrealizowano oblicowania dolnych kondygnacji piaskowcem i górnych cegłą elewacyjną, nie zwieńczono go też balustradową attyką.",
+      "W 2015 roku gmach został wpisany do rejestru zabytków.",
+      "W 2024 roku zakończyła się modernizacja, w ramach której m.in. zadaszono dziedziniec; od 2025 roku gmach jest także siedzibą Muzeum Politechniki Warszawskiej."
+    ],
+    "ciekawostki": [
+      "Ostateczny styl przypomina bardziej zredukowany neorenesans niż monumentalny socrealizm.",
+      "W hali D powstała ścieżka dydaktyczno-edukacyjna, eksponująca urządzenia będące zabytkami ruchomymi."
+    ],
+    "summary_en": "A 1950s Warsaw University of Technology building at Nowowiejska 21/25, designed by Józef Ufnalewski and Józef Korszyński and built in 1952–1955. It was listed as a monument in 2015 and has housed the university's museum since 2025.",
+    "ludzie": [
+      {
+        "kto": "Bohdan Stefanowski",
+        "rola": "inicjator budowy",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Ufnalewski",
+        "rola": "projektant",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Korszyński",
+        "rola": "projektant",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Pawilon Techniki Cieplnej"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Instytutu Techniki Cieplnej Politechniki Warszawskiej",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Instytutu_Techniki_Cieplnej_Politechniki_Warszawskiej"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-kancelarii-prezesa-rady-ministrow",
+    "nazwa": "Gmach Kancelarii Prezesa Rady Ministrów",
+    "name_en": "Chancellery of the Prime Minister Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 1/3",
+    "adres_historyczny": "zespół koszar Korpusu Kadetów im. Suworowa",
+    "lat": 52.21571,
+    "lon": 21.02474,
+    "lokalizacja": "dokladna",
+    "okres": "1900–1903–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1900 roku rozpoczęto budowę kompleksu koszar Korpusu Kadetów im. Aleksandra Suworowa; gmach zaprojektował Wiktor Junosza-Piotrowski, a prace nadzorował Henryk Julian Gay.",
+      "W listopadzie 1902 roku wyświęcono znajdującą się tam cerkiew Opieki Matki Bożej; prace zakończono w 1903 roku.",
+      "W 1914 roku budynek przebudowano w stylu neorenesansowym według projektu Stefana Szyllera na miejski lazaret.",
+      "Po przebudowie w 1926 roku gmach stał się siedzibą Szkoły Podchorążych Piechoty.",
+      "W 1928 roku przeniesiono tu siedzibę Generalnego Inspektoratu Sił Zbrojnych, na czele którego stanął marszałek Józef Piłsudski.",
+      "We wrześniu 1939 roku, podczas oblężenia Warszawy, gmach został zbombardowany.",
+      "Odbudowany i rozbudowany gmach oddano do użytku w 1949 roku; w latach 1953–1996 mieścił się tu Urząd Rady Ministrów.",
+      "W 1995 roku gmach główny oraz sąsiednie budynki wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Sala Kolumnowa, powstała po 1947 roku nad częścią centralną, mieści 1000 osób.",
+      "Odbudowany gmach uzyskał w 1949 roku Nagrodę Państwową."
+    ],
+    "summary_en": "Former central building of the Suvorov Cadet Corps barracks on Aleje Ujazdowskie 1/3, built in 1900–1903. It later served as a military hospital, the Infantry Officer Cadet School and the Chancellery of the Prime Minister, and it is a listed monument.",
+    "ludzie": [
+      {
+        "kto": "Wiktor Junosza-Piotrowski",
+        "rola": "projektant gmachu",
+        "wiki": null
+      },
+      {
+        "kto": "Henryk Julian Gay",
+        "rola": "nadzór nad budową",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Szyller",
+        "rola": "projekt przebudowy na lazaret (1914)",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Piłsudski",
+        "rola": "szef Generalnego Inspektoratu Sił Zbrojnych od 1928 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Zygmunt Odyniec-Dobrowolski",
+        "rola": "projekt nadbudowy (1947–1948)",
+        "wiki": null
+      },
+      {
+        "kto": "Franciszek Krzywda-Polkowski",
+        "rola": "główny portyk",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Gmach główny zespołu koszar Korpusu Kadetów im. Suworowa",
+      "Gmach Urzędu Rady Ministrów"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Kancelarii Prezesa Rady Ministrów",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Kancelarii_Prezesa_Rady_Ministr%C3%B3w"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst artykułu urwany w zdaniu o wpisie do rejestru zabytków (koniec: „jako”)."
+  },
+  {
+    "id": "gmach-krajowej-kasy-oszczednosci",
+    "nazwa": "Gmach Krajowej Kasy Oszczędności",
+    "name_en": "National Savings Bank Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rog ulic Złotej i Zgoda",
+    "adres_historyczny": null,
+    "lat": 52.2328,
+    "lon": 21.0125,
+    "lokalizacja": "dokladna",
+    "okres": "1890–1901",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1890–1901 na rogu ulic Złotej i Zgoda.",
+      "Gmach nazywano również Kasą Pożyczkową Przemysłowców Warszawskich.",
+      "W 1906 roku w budynku doszło do napadu na bank, który zakończył się strzelaniną i ofiarami śmiertelnymi.",
+      "W okresie międzywojennym na budynku znajdował się neon z napisem „Polacy, bogaćcie się”.",
+      "W trakcie II wojny światowej budynek został uszkodzony.",
+      "Po odnowieniu został zaadaptowany na biura."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Built in 1890–1901 at the corner of Złota and Zgoda streets in Śródmieście, the building was known as the Warsaw Manufacturers' Loan Bank. It was damaged in WWII and later converted into offices.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Kasa Pożyczkowa Przemysłowców Warszawskich"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Krajowej Kasy Oszczędności w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Krajowej_Kasy_Oszcz%C4%99dno%C5%9Bci_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Krótki artykuł, bez nazwisk i dokładniejszych dat. Artykuł nie mówi wprost, czy budynek stoi dziś; zapisano jako istniejący wg czasu teraźniejszego w tekście."
+  },
+  {
+    "id": "gmach-ministerstwa-finansow",
+    "nazwa": "Gmach Ministerstwa Finansów",
+    "name_en": "Ministry of Finance Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "kwartał ulic Świętokrzyskiej, Czackiego, Traugutta i Krakowskiego Przedmieścia",
+    "adres_historyczny": null,
+    "lat": 52.237667,
+    "lon": 21.015944,
+    "lokalizacja": "dokladna",
+    "okres": "1953–1956–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wzniesiono w latach 1953–1956 dla Ministerstwa Skarbu; zaprojektowali go Stanisław Bieńkuński i Stanisław Rychłowski.",
+      "Architektura łączy cechy modernizmu z kanonami socrealizmu oraz założenia pałacowe doby renesansu i baroku.",
+      "Nad głównym wejściem znajdują się trzy płaskorzeźby Jana Ślusarczyka, nawiązujące do stylistyki art déco.",
+      "Do drugiej połowy lat 70. XX wieku w jednym ze skrzydeł działało ogólnie dostępne kino „Skarb”.",
+      "W 2004 roku na bocznej ścianie gmachu (od strony ul. Czackiego) odsłonięto tablicę upamiętniającą Janusza Regulskiego.",
+      "W 2012 roku budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na dziedzińcu od strony ul. Świętokrzyskiej rośnie topola szara datowana na 1891 rok, pozostałość ogrodu przypałacowego Branickich; od 1978 roku to pomnik przyrody.",
+      "Fontanna na dziedzińcu od strony ul. Świętokrzyskiej została zbudowana razem z gmachem."
+    ],
+    "summary_en": "A socialist-realist Ministry of Finance building in central Warsaw, designed by Stanisław Bieńkuński and Stanisław Rychłowski and built in 1953–1956. It was listed as a monument in 2012.",
+    "ludzie": [
+      {
+        "kto": "Stanisław Bieńkuński",
+        "rola": "współprojektant gmachu",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Rychłowski",
+        "rola": "współprojektant gmachu",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Ślusarczyk",
+        "rola": "trzy płaskorzeźby nad wejściem",
+        "wiki": null
+      },
+      {
+        "kto": "Janusz Regulski",
+        "rola": "upamiętniony tablicą z 2004 roku",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Ministerstwa Finansów",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Ministerstwa_Finans%C3%B3w"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-ministerstwa-komunikacji",
+    "nazwa": "Gmach Ministerstwa Komunikacji",
+    "name_en": "Ministry of Communications Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tytusa Chałubińskiego 4/6",
+    "adres_historyczny": null,
+    "lat": 52.2239,
+    "lon": 21.0047,
+    "lokalizacja": "dokladna",
+    "okres": "1929–1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Modernistyczny biurowiec wzniesiono w latach 1929–1931 według projektu Rudolfa Świerczyńskiego.",
+      "Projekt wykonano dla Ministerstwa Robót Publicznych; po jego likwidacji budynek stał się siedzibą Ministerstwa Komunikacji, które przejęło jego zadania.",
+      "W latach 1948–1950 budynek rozbudował Bohdan Pniewski.",
+      "We wrześniu 1939 roku w wyniku nalotu Luftwaffe w budynku wybuchł pożar.",
+      "W 1965 roku budynek został wpisany do rejestru zabytków.",
+      "Obecnie jest siedzibą Ministerstwa Infrastruktury."
+    ],
+    "ciekawostki": [
+      "Długa fasada ma dziewiętnaście osi, a elewację wyłożono klinkierem i czarnym, szlifowanym bazaltem.",
+      "W budynku mieści się także Główna Biblioteka Komunikacyjna."
+    ],
+    "summary_en": "A modernist office building at Tytusa Chałubińskiego 4/6, designed by Rudolf Świerczyński in 1929–1931 and extended by Bohdan Pniewski in 1948–1950. It has been a listed monument since 1965 and houses the Ministry of Infrastructure.",
+    "ludzie": [
+      {
+        "kto": "Rudolf Świerczyński",
+        "rola": "autor projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Bohdan Pniewski",
+        "rola": "autor rozbudowy (1948–1950)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Ministerstwa Komunikacji",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Ministerstwa_Komunikacji"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-ministerstwa-wyznan-religijnych-i-oswiecenia-publicznego",
+    "nazwa": "Gmach Ministerstwa Wyznań Religijnych i Oświecenia Publicznego",
+    "name_en": "Ministry of Religious Denominations and Public Enlightenment Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Chrystiana Szucha 25",
+    "adres_historyczny": null,
+    "lat": 52.217388888,
+    "lon": 21.023472222,
+    "lokalizacja": "dokladna",
+    "okres": "1927–1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wzniesiono w latach 1927–1930 dla Ministerstwa Wyznań Religijnych i Oświecenia Publicznego.",
+      "Do konkursu na projekt budynku wpłynęło 54 prace; jury w marcu 1927 roku wybrało projekt Zdzisława Mączeńskiego.",
+      "Kamień węgielny wmurowano 28 czerwca 1927 roku.",
+      "Budynek zaprojektowano w stylu zwanym klasycyzmem redukcyjnym; najbardziej charakterystycznym elementem jest olbrzymi portyk z podwójnymi filarami.",
+      "Podczas II wojny światowej mieściła się tu siedziba Gestapo i SD w dystrykcie warszawskim.",
+      "Obecnie gmach zajmuje Ministerstwo Edukacji Narodowej, a w przyziemiu lewego skrzydła urządzono Mauzoleum Walki i Męczeństwa.",
+      "Od 2022 roku gmach jest pomnikiem historii."
+    ],
+    "ciekawostki": [
+      "Na portyku frontowym znajduje się wyrzeźbiony godło państwa – orzeł; nad wejściem był napis „Ministerstwo Wyznań Religijnych i Oświecenia Publicznego”, dziś już nieistniejący.",
+      "Wystrój i wyposażenie to polska odmiana art déco, dzieło Wojciecha Jastrzębowskiego."
+    ],
+    "summary_en": "A monumental building at al. Jana Chrystiana Szucha 25, designed by Zdzisław Mączeński and built in 1927–1930. During WWII it housed the Gestapo and SD headquarters for Warsaw district; today it houses the Ministry of National Education and a Mausoleum of Struggle and Martyrdom.",
+    "ludzie": [
+      {
+        "kto": "Zdzisław Mączeński",
+        "rola": "autor projektu, zwycięzca konkursu",
+        "wiki": null
+      },
+      {
+        "kto": "Wojciech Jastrzębowski",
+        "rola": "autor wystroju i wyposażenia",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Ministerstwa Wyznań Religijnych i Oświecenia Publicznego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Ministerstwa_Wyzna%C5%84_Religijnych_i_O%C5%9Bwiecenia_Publicznego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst artykułu urwany w połowie zdania (opis budowy z 1930 r.); sekcja historii niepełna."
+  },
+  {
+    "id": "gmach-najwyzszej-izby-kontroli",
+    "nazwa": "Gmach Najwyższej Izby Kontroli",
+    "name_en": "Supreme Audit Office Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Chrystiana Szucha 23",
+    "adres_historyczny": null,
+    "lat": 52.2173,
+    "lon": 21.0233,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wzniesiono w 1935 roku według projektu Tadeusza Leśniewskiego przy współpracy Stefana Colonny-Walewskiego.",
+      "Najwyższa Izba Kontroli Państwa przeniosła się tu z budynku przy ul. Poznańskiej 30.",
+      "Fasadę pokryto płytami ciemnoczerwonego piaskowca tumlińskiego, a reprezentacyjny hol wyłożono czarnym marmurem.",
+      "W czasie II wojny światowej budynek znalazł się w obrębie niemieckiej dzielnicy policyjnej; władze okupacyjne przeznaczyły go na siedzibę Policji Porządkowej (Ordnungspolizei).",
+      "Gmach nie został zniszczony w czasie wojny i w 1945 roku stał się siedzibą Ministerstwa Spraw Zagranicznych.",
+      "Ok. 1950 roku od strony ul. Litewskiej dobudowano skrzydło boczne w stylu neoracjonalizmu."
+    ],
+    "ciekawostki": [
+      "Gmach zaprojektowano w stylu nowego klasycyzmu połączonego ze strukturalizmem; detale zewnętrzne i wystrój wnętrz wykonano w stylu art déco."
+    ],
+    "summary_en": "A monumental office building at al. Jana Chrystiana Szucha 23, designed by Tadeusz Leśniewski with Stefan Colonna-Walewski and built in 1935. Its red sandstone façade is a distinctive feature, and since 1945 it has housed the Ministry of Foreign Affairs.",
+    "ludzie": [
+      {
+        "kto": "Tadeusz Leśniewski",
+        "rola": "autor projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Colonna-Walewski",
+        "rola": "współpracownik projektu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Najwyższej Izby Kontroli w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Najwy%C5%BCszej_Izby_Kontroli_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-pocztowej-kasy-oszczednosci",
+    "nazwa": "Gmach Pocztowej Kasy Oszczędności",
+    "name_en": "Postal Savings Bank Building (Świętokrzyska 31/33)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętokrzyska 31/33 (róg ul. Jasnej)",
+    "adres_historyczny": null,
+    "lat": 52.23524,
+    "lon": 21.01064,
+    "lokalizacja": "dokladna",
+    "okres": "1922–1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wzniesiono w latach 1922–1923 według projektu Józefa Handzelewicza na potrzeby głównych biur Pocztowej Kasy Oszczędności.",
+      "Był pierwszym budynkiem publicznym wzniesionym w Warszawie po odzyskaniu przez Polskę niepodległości.",
+      "W 1930 roku dobudowano skrzydło na działce ul. Świętokrzyska 33, a około 1932 roku podwyższono gmach o dwie kondygnacje.",
+      "W czasie powstania warszawskiego mieściła się tu siedziba dowódcy powstania płk. Antoniego Chruściela „Montera” oraz szpital polowy.",
+      "W wyniku bombardowań niemieckich 30 sierpnia i 4 września 1944 roku zniszczono części budynku, a gmach zaczął się palić; ruiny doszczętnie zburzono.",
+      "Odbudowę zakończono w 1961 roku; od tego czasu mieści się tu Urząd Pocztowy Warszawa 1 oraz biura Dyrekcji Okręgu."
+    ],
+    "ciekawostki": [
+      "Narożna część budynku zwieńczona jest kopułą.",
+      "Pod koniec lat 30. planowano połączyć ten budynek z gmachem Centrali PKO przy ul. Marszałkowskiej 134, zniszczonym w 1944 roku."
+    ],
+    "summary_en": "An early-modernist building at Świętokrzyska 31/33, designed by Józef Handzelewicz and built in 1922–1923 as the first public building in Warsaw after independence. Destroyed in part during the Warsaw Uprising, it was rebuilt by 1961 and is still a post office.",
+    "ludzie": [
+      {
+        "kto": "Józef Handzelewicz",
+        "rola": "autor projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Bryła",
+        "rola": "autor spawanej konstrukcji przy podwyższeniu po 1932 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Antoni Chruściel „Monter”",
+        "rola": "dowódca powstania, którego siedziba mieściła się w budynku",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Pocztowej Kasy Oszczędności w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Pocztowej_Kasy_Oszcz%C4%99dno%C5%9Bci_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule nazwisko architekta pisane zamiennie: Handzelewicz i Handzlewicz. Dzisiejszy stan: urząd pocztowy (wg artykułu)."
+  },
+  {
+    "id": "gmach-poczty-glownej-plac-napoleona",
+    "nazwa": "Gmach Poczty Głównej przy placu Napoleona",
+    "name_en": "Main Post Office Building at Napoleon Square",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "pl. Napoleona 8 (dawniej pl. Warecki), róg ul. Wareckiej 16",
+    "lat": 52.235379,
+    "lon": 21.015311,
+    "lokalizacja": "dokladna",
+    "okres": "1912–1944",
+    "istnieje": false,
+    "fakty": [
+      "Budynek wzniesiono w latach 1912–1916 według projektu Antoniego Jabłońskiego-Jesieńczyka, na miejscu jednokondygnacyjnego budynku pocztowego.",
+      "Po zajęciu Warszawy przez wojska niemieckie w sierpniu 1915 roku z nieukończonego budynku zbito umieszczone na elewacji godło rosyjskie.",
+      "Nad centralnie położonym wejściem początkowo stała rzeźba czterech gigantów dźwigających globus; usunięto ją w 1921 roku.",
+      "W 1935 roku gmach rozbudowano wzdłuż ul. Wareckiej o nowe siedmioosiowe skrzydło.",
+      "Podczas powstania warszawskiego żołnierze Batalionu „Kiliński” odbili gmach z rąk Niemców; w wyniku walk i bombardowań został w 1944 roku w olbrzymim stopniu zniszczony.",
+      "Budynku nie odbudowano; został rozebrany w latach 1946–1947, a w 1965 roku na jego miejscu wzniesiono budynki Narodowego Banku Polskiego."
+    ],
+    "ciekawostki": [
+      "W dwudziestoleciu międzywojennym przed budynkiem często mieli swoje stoiska bukiniści.",
+      "Po wojnie Poczta Główna znalazła siedzibę w Gmachu Pocztowej Kasy Oszczędności przy ul. Świętokrzyskiej 31/33."
+    ],
+    "summary_en": "The Main Post Office of Warsaw at Napoleon Square 8, built in 1912–1916 and heavily damaged in the Warsaw Uprising. It was demolished in 1946–1947, and the National Bank of Poland was built on the site in 1965.",
+    "ludzie": [
+      {
+        "kto": "Antoni Jabłoński-Jesieńczyk",
+        "rola": "autor projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Bohdan Pniewski",
+        "rola": "autor projektu budynków NBP na miejscu (1965)",
+        "wiki": null
+      },
+      {
+        "kto": "Barbara Czerwińska",
+        "rola": "współautorka projektu budynków NBP (1965)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "pl. Warecki"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Poczty Głównej przy placu Napoleona w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Poczty_G%C5%82%C3%B3wnej_przy_placu_Napoleona_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje nazwisko architekta jako Antoniego Jabłońskiego-Jesieńczyka; w rekordzie zapisano formę mianowniczą."
+  },
+  {
+    "id": "gmach-powszechnego-zakladu-ubezpieczen-wzajemnych",
+    "nazwa": "Gmach Powszechnego Zakładu Ubezpieczeń Wzajemnych",
+    "name_en": "Mutual Insurance Company (PZU) Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kopernika 36/40",
+    "adres_historyczny": null,
+    "lat": 52.2382,
+    "lon": 21.0203,
+    "lokalizacja": "dokladna",
+    "okres": "1920–1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstawał od początku lat 20. z przeznaczeniem na hotel Towarzystwa Budowy i Eksploatacji Hoteli i Sanatoriów „Helvetia” (projekt Antoni Jawornicki); ukończono go w 1928 roku.",
+      "Nigdy nie pełnił funkcji hotelowej; w wyniku kłopotów finansowych inwestora przejął go na siedzibę Powszechny Zakład Ubezpieczeń Wzajemnych, który mieścił się tu do 1939 roku.",
+      "Część wieżowa przyszłego hotelu, o wysokości 47,1 m, sprawiała, że w tamtym czasie był to jeden z najwyższych budynków w Warszawie.",
+      "Gmach odbudowano w latach 1947–1948, znacznie zmniejszając jego bryłę, na siedzibę Komisji Centralnej Związków Zawodowych.",
+      "Od 1949 roku użytkownikiem budynku była Centralna Rada Związków Zawodowych, od 1984 roku – Ogólnopolskie Porozumienie Związków Zawodowych.",
+      "W 1998 roku na bocznej ścianie odsłonięto tablicę upamiętniającą Instytut Reduty i Państwową Wyższą Szkołę Aktorską."
+    ],
+    "ciekawostki": [
+      "W 2021 roku odsłonięto tablicę upamiętniającą Stanisława Bukowieckiego."
+    ],
+    "summary_en": "Built from the early 1920s and completed in 1928 at Kopernika 36/40 as a hotel that never opened. It was taken over by the Mutual Insurance Company (PZU), and after 1945 it housed trade union bodies.",
+    "ludzie": [
+      {
+        "kto": "Antoni Jawornicki",
+        "rola": "autor projektu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Powszechnego Zakładu Ubezpieczeń Wzajemnych w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Powszechnego_Zak%C5%82adu_Ubezpiecze%C5%84_Wzajemnych_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst urwany pod koniec (tablica z 2021 r.). Artykuł nie podaje, co mieści się w budynku dziś."
+  }
+]

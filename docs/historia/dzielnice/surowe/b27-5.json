@@ -1,0 +1,370 @@
+[
+  {
+    "id": "kosciol-sw-barbary-warszawa",
+    "nazwa": "Kościół św. Barbary w Warszawie",
+    "name_en": "St Barbara's Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2265,
+    "lon": 21.0074,
+    "lokalizacja": "dokladna",
+    "okres": "1781–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki parafii sięgają 1781 roku, kiedy na terenie cmentarza Świętokrzyskiego wzniesiono niewielką kaplicę cmentarną pod wezwaniem św. Barbary; cmentarz zamknięto w 1836 roku.",
+      "Parafię erygowano 1 września 1866 roku przez wydzielenie z parafii Świętego Krzyża; kaplica cmentarna została tymczasowo przekształcona w kościół parafialny.",
+      "Budowę nowej świątyni (według projektu Józefa Dziekońskiego) rozpoczęto w 1883 roku, zakończono w 1886 roku, a 29 czerwca konsekrowano ją.",
+      "W 1939 roku kościół został częściowo zniszczony w wyniku wybuchu składu amunicji; w sierpniu 1944 roku rejon kościoła był jednym z najcięższych miejsc walk w Śródmieściu.",
+      "Po upadku powstania Niemcy zaminowali ruiny kościoła na wysokości fundamentów i wysadzili budowlę; ocalały m.in. figura św. Franciszka z Asyżu i rzeźba „Chrystus i jawnogrzesznica” Ludwika Pyrowicza.",
+      "Odbudowę rozpoczęto w 1946 roku według projektu Stanisława Marzyńskiego; całą zasadniczą bryłę poświęcił 17 listopada 1957 roku prymas Stefan Wyszyński."
+    ],
+    "ciekawostki": [
+      "Do dziś na parkanie otaczającym teren parafii widoczne są ślady po kulach i odłamkach.",
+      "Kopuła, inspirowana florencką, została ukończona w latach 70. XX wieku."
+    ],
+    "summary_en": "St Barbara's Church in Śródmieście grew out of a 1781 cemetery chapel. The parish was founded in 1866, the current church was built in 1883–1886, and it was blown up by the Germans after the Warsaw Uprising and rebuilt from 1946.",
+    "ludzie": [
+      {"kto": "Józef Dziekoński", "rola": "autor projektu kościoła z 1883 roku", "wiki": null},
+      {"kto": "Władysław Szcześniak", "rola": "bp pomocniczy warszawski, proboszcz od 1906 roku", "wiki": null},
+      {"kto": "Jerzy Gautier", "rola": "proboszcz po 1926 roku, prowadził rozbudowę i restaurację świątyni", "wiki": null},
+      {"kto": "Stanisław Marzyński", "rola": "architekt odbudowy po 1946 roku", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "Prymas Polski, który poświęcił bryłę kościoła w 1957 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół św. Apostołów Piotra i Pawła (nazwa projektu z 1883 roku)"],
+    "zrodla": [{"tytul": "Wikipedia: Parafia św. Barbary w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._Barbary_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł rozbieżny: odbudowa 'zakończona konsekracją 4 października 1979' przy poświęceniu bryły w 1957; w rekordzie przyjęto 1957. Adres niepodany w paczce."
+  },
+  {
+    "id": "kosciol-sw-jana-bozego-warszawa",
+    "nazwa": "Kościół św. Jana Bożego w Warszawie",
+    "name_en": "St John of God Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2536,
+    "lon": 21.0006,
+    "lokalizacja": "dokladna",
+    "okres": "1728–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół św. Jana Bożego należący do Zakonu Bonifratrów wybudowano w 1728 roku; po zniszczeniach wojennych został odbudowany.",
+      "Parafię erygowano w 1976 roku przez prymasa Stefana Wyszyńskiego; obejmowała część osiedla Muranów oraz fragment Nowego Miasta.",
+      "Z dniem 1 stycznia 2014 roku dekretem kard. Kazimierza Nycza parafię zniesiono, a kościół stał się kościołem rektorskim.",
+      "Terytorium zniesionej parafii przyłączono w większości do parafii Nawiedzenia NMP, a w niewielkim fragmencie do parafii św. Augustyna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St John of God Church was built by the Brothers Hospitallers in 1728 and rebuilt after the war. The parish created in 1976 was dissolved in 2014, and the church became a rector's church.",
+    "ludzie": [
+      {"kto": "Stefan Wyszyński", "rola": "erygował parafię w 1976 roku", "wiki": null},
+      {"kto": "Kazimierz Nycz", "rola": "metropolita warszawski, który zniósł parafię w 2014 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia św. Jana Bożego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._Jana_Bo%C5%BCego_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł o parafii, rekord dotyczy kościoła. Adres niepodany w paczce."
+  },
+  {
+    "id": "park-agrykola",
+    "nazwa": "Park Agrykola",
+    "name_en": "Agrykola Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Agrykola (między Trasą Łazienkowską a koroną skarpy)",
+    "adres_historyczny": null,
+    "lat": 52.219444,
+    "lon": 21.031667,
+    "lokalizacja": "przyblizona",
+    "okres": "1720–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park został założony w latach 1720–1723 na wschód od Zamku Ujazdowskiego.",
+      "W 1899 roku Warszawskie Towarzystwo Higieniczne otworzyło w parku jeden z pierwszych w mieście placów zabaw dla dzieci, ufundowany przez Wilhelma Raua.",
+      "W 1925 roku na zboczu skarpy powstała niewielka skocznia narciarska.",
+      "W okresie międzywojennym kompleks sportowo-rekreacyjny nazywano parkiem Sobieskiego.",
+      "W 1965 roku park wraz z Kanałem Piaseczyńskim wpisano do rejestru zabytków.",
+      "9 czerwca 2014 roku w parku odsłonięto pomnik upamiętniający mszę odprawioną tu przez Jana Pawła II podczas jego IV podróży apostolskiej 9 czerwca 1991 roku."
+    ],
+    "ciekawostki": [
+      "Cennym walorem parku jest panorama roztaczająca się z Zamku Ujazdowskiego do Wisły."
+    ],
+    "summary_en": "Agrykola Park, founded in 1720–1723 east of Ujazdów Castle, was a sports and leisure complex between the wars and holds a 2014 monument to a 1991 mass celebrated there by John Paul II.",
+    "ludzie": [
+      {"kto": "Wilhelm Rau", "rola": "fundator placu zabaw z 1899 roku", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "odprawił mszę w parku 9 czerwca 1991 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["park Sobieskiego (nazwa międzywojenna)"],
+    "zrodla": [{"tytul": "Wikipedia: Park Agrykola", "url": "https://pl.wikipedia.org/wiki/Park_Agrykola"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "park-karola-beyera",
+    "nazwa": "Park Karola Beyera",
+    "name_en": "Karol Beyer Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ulicami Smolną a Leona Kruczkowskiego",
+    "adres_historyczny": null,
+    "lat": 52.234416666,
+    "lon": 21.027777777,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park założono w latach 70. XX wieku w obszarze MSI Powiśle.",
+      "Nazwano go na cześć Karola Beyera, dziewiętnastowiecznego fotografa i numizmatyka.",
+      "Położony jest między ulicami Smolną i Leona Kruczkowskiego, torami kolei średnicowej i stacją Warszawa Powiśle.",
+      "Ma powierzchnię 2,12 ha."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Karol Beyer Park is a 2.12 ha park on Powiśle, laid out in the 1970s and named after a 19th-century photographer and numismatist. It lies between Smolna and Leona Kruczkowskiego streets, next to the Warszawa Powiśle station.",
+    "ludzie": [
+      {"kto": "Karol Beyer", "rola": "XIX-wieczny fotograf i numizmatyk, patron parku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Park im. Karola Beyera (nazwa alternatywna)"],
+    "zrodla": [{"tytul": "Wikipedia: Park Karola Beyera", "url": "https://pl.wikipedia.org/wiki/Park_Karola_Beyera"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki; brak opisu historii przed latami 70. XX wieku."
+  },
+  {
+    "id": "park-kazimierzowski",
+    "nazwa": "Park Kazimierzowski w Warszawie",
+    "name_en": "Kazimierzowski Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Browarna i ul. Dynasy, u podnóża Pałacu Kazimierzowskiego",
+    "adres_historyczny": null,
+    "lat": 52.240917,
+    "lon": 21.021111,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś (data założenia niepodana)",
+    "istnieje": true,
+    "fakty": [
+      "Park rozciąga się między terenem Uniwersytetu Warszawskiego a klasztorem sióstr wizytek, przy ul. Karowej z wiaduktem Stanisława Markiewicza, u podnóża Pałacu Kazimierzowskiego.",
+      "Park jest częściowo położony na stromej skarpie warszawskiej, która w tym rejonie osiąga najwyższą w Warszawie wysokość względną (25 metrów).",
+      "W czasie budowy osiedla Radna w latach 1959–1966 u zbiegu ulic Browarnej i Oboźnej powstał staw.",
+      "W 2000 roku w parku odsłonięto pomnik Nauczycieli Tajnego Nauczania w formie rozłożonego zeszytu, autorstwa Antoniny Wysockiej-Jonczak.",
+      "Jedną z alejek w parku nazwano imieniem ks. Bronka Bozowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kazimierzowski Park lies at the foot of the Kazimierzowski Palace and on the Warsaw escarpment, between the University of Warsaw and the Wizytki convent. It has a 2000 monument to the teachers of the clandestine education system.",
+    "ludzie": [
+      {"kto": "Antonina Wysocka-Jonczak", "rola": "autorka pomnika Nauczycieli Tajnego Nauczania (2000)", "wiki": null},
+      {"kto": "ks. Bronek Bozowski", "rola": "patron jednej z alejek parku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Park Kazimierzowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Kazimierzowski_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje roku założenia parku."
+  },
+  {
+    "id": "park-marszalka-edwarda-rydza-smiglego",
+    "nazwa": "Park Marszałka Edwarda Rydza-Śmigłego w Warszawie",
+    "name_en": "Marshal Edward Rydz-Śmigły Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rejon ul. Książęcej, al. Na Skarpie i Solca",
+    "adres_historyczny": null,
+    "lat": 52.2278,
+    "lon": 21.0342,
+    "lokalizacja": "przyblizona",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prace porządkujące teren pod przyszły park rozpoczęto w 1948 roku; decyzję o urządzeniu parku ogłoszono w marcu 1950 roku, a prace urządzające rozpoczęto w lipcu 1951 roku.",
+      "Park o powierzchni ok. 90 ha powstał na terenie dawnej zabudowy Powiśla oraz dawnych ogrodów Frascati, częściowo na skarpie wiślanej.",
+      "Projekt wykonał zespół architektów w składzie Alina Scholtz, Zygmunt Stępiński i Longin Majdecki.",
+      "Główna część parku została otwarta 22 lipca 1955 roku.",
+      "Główny element parku, dwupoziomowy taras na stoku skarpy, powstał w miejscu, w którym wcześniej znajdował się pałac Branickich.",
+      "W latach 60. XX wieku teren parku zmniejszono o tereny pod budowę osiedla Ludna oraz bloków w rejonie al. 3 Maja.",
+      "Obecna nazwa, nadana w 1992 roku, upamiętnia Edwarda Śmigłego-Rydza."
+    ],
+    "ciekawostki": [
+      "W parku działało kino letnie „Jutrzenka” oraz dwa kręgi taneczne.",
+      "Staromiejski pomnik Syreny stał w parku od 1951 roku; po konserwacji ustawiono go w 1972 roku przy Wieży Marszałkowskiej."
+    ],
+    "summary_en": "Marshal Edward Rydz-Śmigły Park covers about 90 ha on the Vistula escarpment in Powiśle. It was laid out in 1951–1955 on the site of postwar ruins and former Frascati gardens, and renamed after Rydz-Śmigły in 1992.",
+    "ludzie": [
+      {"kto": "Alina Scholtz", "rola": "architektka, członkini zespołu projektowego parku", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "architekt, członek zespołu projektowego parku", "wiki": null},
+      {"kto": "Longin Majdecki", "rola": "architekt, członek zespołu projektowego parku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Centralny Park Kultury (do 1992 roku)", "Centralny Park Kultury i Wypoczynku „Powiśle”"],
+    "zrodla": [{"tytul": "Wikipedia: Park Marszałka Edwarda Rydza-Śmigłego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Marsza%C5%82ka_Edwarda_Rydza-%C5%9Amig%C5%82ego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Park zajmuje wiele kwartałów; współrzędne z nagłówka to punkt w obrębie parku. Artykuł wymienia też obiekty nieistniejące (Teatr Rozrywki)."
+  },
+  {
+    "id": "park-mirowski",
+    "nazwa": "Park Mirowski w Warszawie",
+    "name_en": "Mirów Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ul. Marszałkowską a al. Jana Pawła II",
+    "adres_historyczny": "ul. Juliana Marchlewskiego (obecnie al. Jana Pawła II)",
+    "lat": 52.238491,
+    "lon": 21.000184,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park został urządzony w latach 60. XX wieku na powierzchni ok. 4 ha między ulicami Marszałkowską i Juliana Marchlewskiego (obecnie al. Jana Pawła II).",
+      "Nazwa parku nawiązuje do Koszar Mirowskich.",
+      "W lipcu 1968 roku na terenie parku, od strony ul. Juliana Marchlewskiego, odsłonięto pomnik Juliana Marchlewskiego; w 1990 roku monument rozebrano.",
+      "Przez park przebiega aleja Piotra Drzewieckiego.",
+      "Na terenie parku znajdują się pomniki Feliksa Stamma, Piotra Drzewieckiego oraz warszawskiej Syrenki, a także plac zabaw dla dzieci."
+    ],
+    "ciekawostki": [
+      "Park bywa nazywany także parkiem Śródmiejskim."
+    ],
+    "summary_en": "Mirów Park is a 4 ha urban park laid out in the 1960s between Marszałkowska and today's Aleja Jana Pawła II. A monument to Julian Marchlewski, unveiled in 1968, was removed in 1990.",
+    "ludzie": [
+      {"kto": "Julian Marchlewski", "rola": "patron pomnika odsłoniętego w 1968 roku, rozebranego w 1990 roku", "wiki": null},
+      {"kto": "Feliks Stamm", "rola": "patron pomnika w parku", "wiki": null},
+      {"kto": "Piotr Drzewiecki", "rola": "patron pomnika i alei w parku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Park Mirowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Mirowski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "park-na-ksiazecem",
+    "nazwa": "Park Na Książęcem w Warszawie",
+    "name_en": "Na Książęcem Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ul. Książęcą a ul. Leona Kruczkowskiego",
+    "adres_historyczny": "Na Książęcem (ogród Kazimierza Poniatowskiego)",
+    "lat": 52.2314,
+    "lon": 21.0275,
+    "lokalizacja": "przyblizona",
+    "okres": "1776–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park założono dla Kazimierza Poniatowskiego w latach 1776–1779 według projektu Szymona Bogumiła Zuga jako rezydencjonalny ogród o charakterze sentymentalnym.",
+      "Projekt zrealizowano częściowo: budynek pałacowy, główny element założenia, nigdy nie został zbudowany.",
+      "Domek Imama przebudowano w latach 1841–1842 według projektu Henryka Marconiego na potrzeby Szpitala św. Łazarza; spłonął w 1939 roku i nie został odbudowany.",
+      "Minaret uszkodzono w górnej części pociskiem w 1939 roku, a rozebrano w 1953 roku.",
+      "W 1841 roku na terenie dawnego ogrodu zbudowano według projektu Henryka Marconiego Szpital św. Łazarza, który spłonął w czasie II wojny światowej.",
+      "Po wojnie park stał się częścią Centralnego Parku Kultury; w 1958 roku odsłonięto tu popiersie Elizy Orzeszkowej."
+    ],
+    "ciekawostki": [
+      "Nazwa parku i ulicy Książęcej pochodzi od księcia podkomorzego koronnego Kazimierza Poniatowskiego, właściciela ogrodów Na Książęcem i Na Górze.",
+      "Pierwotny staw zasypano około 1900 roku, aby urządzić ogród warzywny szpitala."
+    ],
+    "summary_en": "Na Książęcem Park was laid out in 1776–1779 by Szymon Bogumił Zug for Kazimierz Poniatowski as a sentimental garden on the Vistula escarpment. The planned palace was never built, and the Imam's House and minaret were lost in 1939.",
+    "ludzie": [
+      {"kto": "Kazimierz Poniatowski", "rola": "właściciel ogrodu, dla którego założono park", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu z lat 1776–1779", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "autor przebudowy Domku Imama i projektu Szpitala św. Łazarza", "wiki": null},
+      {"kto": "Eliza Orzeszkowa", "rola": "patronka, której popiersie odsłonięto w 1958 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Na Książęcem"],
+    "zrodla": [{"tytul": "Wikipedia: Park Na Książęcem w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Na_Ksi%C4%85%C5%BC%C4%99cem_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje także nieistniejące obiekty (Domek Imama, minaret, Szpital św. Łazarza); w rekordzie jako fakty historyczne."
+  },
+  {
+    "id": "park-tadeusza-mazowieckiego",
+    "nazwa": "Park Tadeusza Mazowieckiego w Warszawie",
+    "name_en": "Tadeusz Mazowiecki Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rejon ul. Jazdów (między al. Armii Ludowej a ulicami Myśliwiecką i Górnośląską)",
+    "adres_historyczny": "Park Jazdów",
+    "lat": 52.223055555,
+    "lon": 21.031388888,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś (data założenia niepodana)",
+    "istnieje": true,
+    "fakty": [
+      "Park położony jest na skarpie warszawskiej w rejonie ul. Jazdów, pomiędzy al. Armii Ludowej a ulicami Myśliwiecką i Górnośląską.",
+      "W 2016 roku park wyremontowano: zasadzono dodatkowe drzewa i krzewy, wyremontowano alejki i schody.",
+      "W 2018 roku parkowi nadano nazwę park Tadeusza Mazowieckiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Tadeusz Mazowiecki Park, formerly Jazdów Park, lies on the Warsaw escarpment near Jazdów Street. It was renovated in 2016 and renamed in 2018.",
+    "ludzie": [],
+    "dawne_nazwy": ["Park Jazdów"],
+    "zrodla": [{"tytul": "Wikipedia: Park Tadeusza Mazowieckiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Tadeusza_Mazowieckiego_w_Warszawie"}],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł krótki; brak opisu historii parku przed 2016 rokiem."
+  },
+  {
+    "id": "park-ujazdowski",
+    "nazwa": "Park Ujazdowski w Warszawie",
+    "name_en": "Ujazdów Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Ujazdowskie, między ul. Piękną a placem Na Rozdrożu",
+    "adres_historyczny": null,
+    "lat": 52.2219,
+    "lon": 21.0256,
+    "lokalizacja": "przyblizona",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park urządzono w latach 1893–1896 staraniem Komitetu Plantacyjnego według projektu Franciszka Szaniora; był parkiem krajobrazowym.",
+      "Na terenie parku znajdował się staw zaprojektowany przez Williama Heerleina Lindleya, z wodą spływającą po granitowych skałach; przy budowie mostka po raz pierwszy na terenie Królestwa Polskiego zastosowano betonową konstrukcję przęsła.",
+      "W 1913 roku prezydent miasta Aleksander Miller obronił przed zabudową północno-zachodni narożnik parku, w którym planowano Rosyjski Dom Ludowy.",
+      "We wrześniu 1939 roku w parku chowano osoby, które zginęły podczas obrony miasta; wiosną 1944 roku zakazano wstępu do niego ludności polskiej.",
+      "W 1965 roku park wpisano do rejestru zabytków; w 2002 roku zakończono jego rewaloryzację.",
+      "Park ma powierzchnię 5,7 ha (według innego źródła 5,3 ha) i jest ogrodzony oraz zamykany na noc."
+    ],
+    "ciekawostki": [
+      "Odsłonięcie rzeźby „Ewa” Edwarda Wittiga w 1911 roku wywołało protesty organizacji dewocyjnych i ożywioną polemikę w prasie.",
+      "Przy budowie mostka w parku po raz pierwszy na terenie Królestwa Polskiego zastosowano betonową konstrukcję przęsła."
+    ],
+    "summary_en": "Ujazdów Park is a landscape park laid out in 1893–1896 to a design by Franciszek Szanior, on the site of former fairgrounds. It was listed as a monument in 1965 and restored in 2002.",
+    "ludzie": [
+      {"kto": "Franciszek Szanior", "rola": "projektant parku (1893–1896)", "wiki": null},
+      {"kto": "William Heerlein Lindley", "rola": "projektant stawu w parku", "wiki": null},
+      {"kto": "Aleksander Miller", "rola": "prezydent miasta, który obronił narożnik parku przed zabudową w 1913 roku", "wiki": null},
+      {"kto": "Edward Wittig", "rola": "autor rzeźby „Ewa” z 1911 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Alleepark (nazwa okupacyjna)"],
+    "zrodla": [{"tytul": "Wikipedia: Park Ujazdowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Ujazdowski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "park-swietokrzyski",
+    "nazwa": "Park Świętokrzyski w Warszawie",
+    "name_en": "Świętokrzyski Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ul. Emilii Plater, ul. Świętokrzyską i Marszałkowską a Pałacem Kultury i Nauki",
+    "adres_historyczny": null,
+    "lat": 52.2343,
+    "lon": 21.0065,
+    "lokalizacja": "przyblizona",
+    "okres": "1954–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park powstał na powierzchni ok. 3 ha jako część otoczenia Pałacu Kultury i Nauki, w miejscu zlikwidowanych odcinków ulic Pańskiej, Siennej, Zielnej i Wielkiej.",
+      "Projekt wykonał Tadeusz Nurkiewicz; urządzanie rozpoczęto w 1954 roku, posadzono ok. 400 drzew i 7000 krzewów.",
+      "Park oddano do użytku 22 lipca 1955 roku.",
+      "W 1955 roku park nosił nazwę „parku na placu im. Stalina”, a następnie „parku przy Pałacu Kultury i Nauki”; obecna nazwa pochodzi od ul. Świętokrzyskiej.",
+      "W 2006 roku w parku odsłonięto pomnik Janusza Korczaka.",
+      "W latach 2008–2009 rozważano zabudowę zachodniej części parku 280-metrowym wysokościowcem; w przyjętym w 2010 roku planie miejscowym zrezygnowano z zabudowy parku."
+    ],
+    "ciekawostki": [
+      "Od końca 2007 do początku 2009 roku działało tu „Forum Wolności Słowa”, wzorowane na londyńskim Hyde Parku.",
+      "W maju 2004 roku ustawiono ławkę Laury i Petrarki, ufundowaną przez Włoski Instytut Kultury w 700. rocznicę urodzin Francesca Petrarki."
+    ],
+    "summary_en": "Świętokrzyski Park, about 3 ha, was laid out in 1954–1955 around the Palace of Culture and Science on the site of demolished streets, to a design by Tadeusz Nurkiewicz. A 2008–2009 proposal for a 280 m tower in the park was dropped in the 2010 local plan.",
+    "ludzie": [
+      {"kto": "Tadeusz Nurkiewicz", "rola": "projektant parku", "wiki": null},
+      {"kto": "Janusz Korczak", "rola": "patron pomnika odsłoniętego w 2006 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["park na placu im. Stalina (1955)", "park przy Pałacu Kultury i Nauki (1955)"],
+    "zrodla": [{"tytul": "Wikipedia: Park Świętokrzyski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_%C5%9Awi%C4%99tokrzyski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

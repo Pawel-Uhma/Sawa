@@ -1,0 +1,306 @@
+[
+  {
+    "id": "jm-tower",
+    "nazwa": "JM Tower",
+    "name_en": "JM Tower",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Grzybowska 45",
+    "adres_historyczny": null,
+    "lat": 52.2342,
+    "lon": 20.9897,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec jest fragmentem częściowo zrealizowanego Centrum Żelazna.",
+      "Przed rozpoczęciem budowy koncepcja budynku zmieniała się dwukrotnie.",
+      "Końcowy projekt zakładał 29 kondygnacji nadziemnych, 92 metry wysokości i 27 tys. m² powierzchni.",
+      "Budowa zakończyła się na początku 2011 roku.",
+      "W budynku znajdują się powierzchnie biurowe oraz hotel Leonardo Royal Hotel Warsaw."
+    ],
+    "ciekawostki": [],
+    "summary_en": "JM Tower at ul. Grzybowska 45 is a 92 m, 29-storey office and hotel tower, part of the partly built Centrum Żelazna complex. Construction was completed in early 2011.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: JM Tower", "url": "https://pl.wikipedia.org/wiki/JM_Tower"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje daty rozpoczęcia budowy."
+  },
+  {
+    "id": "kamienica-jozefa-bakela",
+    "nazwa": "Kamienica Józefa Bakela",
+    "name_en": "Józef Bakel tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Chmielna 126 (róg ul. Żelaznej 25)",
+    "adres_historyczny": null,
+    "lat": 52.228079,
+    "lon": 20.994535,
+    "lokalizacja": "dokladna",
+    "okres": "1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trzypiętrowa kamienica przy Chmielnej 126, należąca najprawdopodobniej do Józefa Bakela, została wzniesiona w 1897 roku.",
+      "W latach 1896–1900 w tej samej konwencji zbudowano sąsiednie domy nr 128 i 130.",
+      "Kamienica stała się miejscem intensywnych walk w czasie powstania warszawskiego; przez pierwsze dni była redutą, a potem do końca walk ważną placówką powstańczą.",
+      "Historię kamienicy opisał Zbigniew Brym „Zdunin” w książce „Żelazna reduta”.",
+      "Kamienica została zreprywatyzowana na podstawie decyzji wydanych w latach 2010 i 2012 na mocy Dekretu Bieruta; w momencie pierwszej decyzji mieszkało w niej 70 osób.",
+      "W 2012 roku dom umieszczono w gminnej ewidencji zabytków Warszawy.",
+      "W lutym 2019 roku stowarzyszenie Miasto Jest Nasze złożyło wniosek o wpis do rejestru zabytków.",
+      "Do dziś zachował się przejazd bramny oraz wystrój klatek schodowych; fasada ma dziesięć przęseł i siedem balkonów."
+    ],
+    "ciekawostki": [
+      "Dom nr 126, dzięki narożnemu położeniu i ośmioprzęsłowej elewacji od strony ul. Żelaznej, nadaje całej pierzei większe znaczenie w przestrzeni skrzyżowania."
+    ],
+    "summary_en": "Józef Bakel's tenement at ul. Chmielna 126, on the corner of Żelazna, was built in 1897. It was a strongpoint during the 1944 Warsaw Uprising and was entered in the municipal heritage register in 2012.",
+    "ludzie": [
+      {"kto": "Józef Bakel", "rola": "prawdopodobny właściciel kamienicy wzniesionej w 1897 roku", "wiki": null},
+      {"kto": "Zbigniew Brym „Zdunin”", "rola": "autor książki „Żelazna reduta”, opisującej historię kamienicy; jego kompania działała w tym rejonie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica Józefa Bakela w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_J%C3%B3zefa_Bakela_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-karola-bagienskiego",
+    "nazwa": "Kamienica Karola Bagieńskiego",
+    "name_en": "Karol Bagieński tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Chmielna 122",
+    "adres_historyczny": null,
+    "lat": 52.22825,
+    "lon": 20.995583,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona w latach 1913–1914; składa się z siedmiokondygnacyjnego budynku frontowego oraz identycznej wysokości oficyn.",
+      "W okresie międzywojennym mieszkali w niej m.in. bracia Artur i Henryk Gold, co upamiętnia tablica na budynku.",
+      "W czasie remontów po 1945 roku wystrój fasady został znacznie zubożony.",
+      "W 2007 roku budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W przejeździe bramnym zachowały się odboje, a na ścianie oficyny poprzecznej drewniana kapliczka skrzynkowa."
+    ],
+    "summary_en": "Karol Bagieński's tenement at ul. Chmielna 122 was built in 1913–1914 and entered in the heritage register in 2007. Its facade lost much of its decoration after 1945, and a plaque honours brothers Artur and Henryk Gold, who lived there between the wars.",
+    "ludzie": [
+      {"kto": "Artur Gold", "rola": "mieszkał w kamienicy w okresie międzywojennym; upamiętniony tablicą", "wiki": null},
+      {"kto": "Henryk Gold", "rola": "mieszkał w kamienicy w okresie międzywojennym; upamiętniony tablicą", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica Karola Bagieńskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Karola_Bagie%C5%84skiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-lejba-osnosa",
+    "nazwa": "Kamienica Lejba Osnosa",
+    "name_en": "Lejb Osnos tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Twarda 28",
+    "adres_historyczny": null,
+    "lat": 52.233333333,
+    "lon": 20.997083333,
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1911 roku.",
+      "Wraz z sąsiednią kamienicą przy ul. Ciepłej 3 znajdowała się w getcie warszawskim w latach 1940–1942.",
+      "Jest reliktem dawnego przebiegu ul. Twardej, podzielonej po wojnie przez ul. Juliana Marchlewskiego (obecnie al. Jana Pawła II) i rondo ONZ na dwa odcinki.",
+      "W 2009 roku mieszkańców wykwaterowano, a sklepy na parterze zakończyły działalność.",
+      "Wewnątrz zachowały się pozostałości bogatego wystroju architektonicznego.",
+      "W 2019 roku budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lejb Osnos's tenement at ul. Twarda 28, by the Rondo ONZ, was built in 1911. It lay inside the Warsaw Ghetto in 1940–1942, was emptied of residents in 2009 and entered the heritage register in 2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Twarda (dawny odcinek)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica Lejba Osnosa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Lejba_Osnosa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-wolfa-krongolda",
+    "nazwa": "Kamienica Wolfa Krongolda",
+    "name_en": "Wolf Krongold tenement („Pekin”)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Złota 83 (róg ul. Żelaznej)",
+    "adres_historyczny": null,
+    "lat": 52.2292,
+    "lon": 20.9947,
+    "lokalizacja": "dokladna",
+    "okres": "1896–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica została wzniesiona w latach 1896–1899 dla żydowskiego przedsiębiorcy i inwestora z sektora nieruchomości Wolfa Krongolda.",
+      "W 1933 roku, z powodu problemów finansowych Krongoldów, kamienicę wystawiono na licytację.",
+      "W czasie II wojny światowej budynek frontowy został uszkodzony, a oficyny zachowały się w bardzo dobrym stanie.",
+      "Po 1945 roku kamienicę odbudowano jako mieszkania komunalne; z elewacji zbito detale i zdobienia, a w latach 60. usunięto balkony i kutą bramę.",
+      "W 1989 roku kamienicę wpisano do rejestru zabytków.",
+      "W 2003 roku eksmitowano mieszkańców oraz najemców lokali handlowych.",
+      "W lutym 2015 roku miasto sprzedało kamienicę spółce Czerwone Maki z grupy AFI Europe.",
+      "15 listopada 2015 roku w opuszczonym budynku wybuchł pożar; po przebudowie na luksusowy apartamentowiec z parkingiem podziemnym remont ukończono w 2022 roku."
+    ],
+    "ciekawostki": [
+      "Budynek nazywany jest zwyczajowo „Pekinem”, czyli określeniem przeludnionej kamienicy czynszowej.",
+      "Ewa Borzęcka nakręciła o wysiedlanych mieszkańcach film dokumentalny „Pekin. Złota 83” oraz ośmioodcinkowy serial „U nas na Pekinie”."
+    ],
+    "summary_en": "The Wolf Krongold tenement at ul. Złota 83, built in 1896–1899, is nicknamed „Pekin”. Its residents were evicted in 2003, and after a fire in 2015 the building was converted into luxury flats completed in 2022.",
+    "ludzie": [
+      {"kto": "Wolf Krongold", "rola": "żydowski przedsiębiorca i inwestor, dla którego wzniesiono kamienicę", "wiki": null},
+      {"kto": "Ewa Borzęcka", "rola": "autorka filmu dokumentalnego „Pekin. Złota 83”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica Wolfa Krongolda w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Wolfa_Krongolda_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-ciepla-3",
+    "nazwa": "Kamienica przy ul. Ciepłej 3",
+    "name_en": "Tenement at ul. Ciepła 3",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Ciepła 3",
+    "adres_historyczny": null,
+    "lat": 52.233694,
+    "lon": 20.997056,
+    "lokalizacja": "dokladna",
+    "okres": "po 1881–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona po 1881 roku jako frontowy trzypiętrowy dom o dziewięciu osiach; ok. 1910 roku dobudowano czteropiętrowe oficyny, zamykając podwórze.",
+      "W 1893 roku w kamienicy urodził się późniejszy duchowny rzymskokatolicki Ignacy Skorupka, poległy w bitwie pod Ossowem w 1920 roku.",
+      "W latach 1940–1942 kamienica znajdowała się na terenie getta warszawskiego; została z niego wyłączona wraz z całym małym gettem w sierpniu 1942 roku.",
+      "W 1943 roku na środku podwórza zbudowano kapliczkę.",
+      "Kamienica przetrwała powstanie warszawskie i jest jedynym zachowanym przykładem czynszowej zabudowy ulicy Ciepłej sprzed 1939 roku.",
+      "W latach 50. XX wieku budynek pozbawiono całego wystroju fasady i balkonów.",
+      "W marcu 2016 roku Mazowiecki Wojewódzki Konserwator Zabytków wpisał do rejestru zabytków kamienicę wraz z oficynami, terenem posesji i kapliczką."
+    ],
+    "ciekawostki": [
+      "Tablicę upamiętniającą Ignacego Skorupkę zaprojektował Andrzej Gawlikowski; odsłonięto ją na frontowej ścianie budynku w 1997 roku."
+    ],
+    "summary_en": "The tenement at ul. Ciepła 3 was built after 1881. Ignacy Skorupka was born there in 1893, and in 1940–1942 it lay inside the Warsaw Ghetto. It is the only surviving pre-war tenement on the street and was entered in the heritage register in 2016.",
+    "ludzie": [
+      {"kto": "Ignacy Skorupka", "rola": "duchowny, urodzony w kamienicy w 1893 roku, poległy pod Ossowem w 1920 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica przy ul. Ciepłej 3 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ul._Ciep%C5%82ej_3_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-spokojna",
+    "nazwa": "Kamienica „Spokojna”",
+    "name_en": "„Spokojna” tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Spokojna 7",
+    "adres_historyczny": null,
+    "lat": 52.25168,
+    "lon": 20.97897,
+    "lokalizacja": "dokladna",
+    "okres": "1903–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawna kamienica fabryczna została wybudowana w latach 1903–1904 na zlecenie Wacława Matuszkiewicza, właściciela Fabryki Maszyn Narzędziowych i Kas Ogniotrwałych, oraz Stanisława Czajkowskiego, właściciela garbarni.",
+      "Obie spółki działały w kamienicy od 1905 roku.",
+      "W okresie od 1 do 11 sierpnia 1944 roku teren, na którym stała kamienica, znajdował się w rejonie działania batalionów Zośka i Parasol ze Zgrupowania Radosław.",
+      "Kamienicę odbudowano ze zniszczeń wojennych w latach 1948–1950.",
+      "Remont ukończony w 2010 roku zaadaptował ją na potrzeby biurowe.",
+      "W 2012 roku wpisano ją do gminnej ewidencji zabytków jako część zespołu fabrycznego Fabryki Maszyn Narzędziowych i Kas Ogniotrwałych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Spokojna tenement at ul. Spokojna 7 in Powązki was built in 1903–1904 for two industrialists, a machine and safe factory owner and a tannery owner. It was adapted into offices after a renovation completed in 2010.",
+    "ludzie": [
+      {"kto": "Wacław Matuszkiewicz", "rola": "zleceniodawca kamienicy, właściciel Fabryki Maszyn Narzędziowych i Kas Ogniotrwałych", "wiki": null},
+      {"kto": "Stanisław Czajkowski", "rola": "zleceniodawca kamienicy, właściciel garbarni", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica „Spokojna” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_%E2%80%9ESpokojna%E2%80%9D_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kaplica-kosciola-jezusa-chrystusa-swietych-w-dniach-ostatnich",
+    "nazwa": "Kaplica Kościoła Jezusa Chrystusa Świętych w Dniach Ostatnich w Warszawie",
+    "name_en": "Latter-day Saints chapel, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Wolska 142",
+    "adres_historyczny": null,
+    "lat": 52.227175,
+    "lon": 20.941808,
+    "lokalizacja": "dokladna",
+    "okres": "1989–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień węgielny pod kaplicę wmurowano w czerwcu 1989 roku.",
+      "Pierwsze spotkanie sakramentalne w budynku odbyło się w listopadzie 1990 roku.",
+      "Poświęcenie kaplicy i przekazanie jej wiernym nastąpiło w czerwcu 1991 roku.",
+      "W grudniu 1997 roku wierni umieścili u podstawy wysokiej wieży Kapsułę Czasu, upamiętniającą działalność pierwszych polskich mormonów.",
+      "Budynek jest głównym ośrodkiem wspólnoty i siedzibą misji w Polsce.",
+      "W budynku działa Centrum Historii Rodziny, prowadzące badania genealogiczne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The chapel of the Church of Jesus Christ of Latter-day Saints at ul. Wolska 142 was dedicated in June 1991. It is the main centre of the church in Poland and has a tower with a time capsule placed in 1997.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kaplica Kościoła Jezusa Chrystusa Świętych w Dniach Ostatnich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kaplica_Ko%C5%9Bcio%C5%82a_Jezusa_Chrystusa_%C5%9Awi%C4%99tych_w_Dniach_Ostatnich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kopiec-moczydlowski",
+    "nazwa": "Kopiec Moczydłowski",
+    "name_en": "Moczydłowski Mound (Górka Moczydłowska)",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "park Moczydło, przy ul. Czorsztyńskiej i ul. Prymasa Tysiąclecia",
+    "adres_historyczny": null,
+    "lat": 52.2428,
+    "lon": 20.9553,
+    "lokalizacja": "dokladna",
+    "okres": "po 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kopiec został usypany po II wojnie światowej z gruzu przywożonego z zniszczonych warszawskich budynków.",
+      "Był jednym z czterech tego typu miejsc w mieście, obok Kopca Powstania Warszawskiego, Górki Szczęśliwickiej i nieistniejącego kopca u wylotu ul. Krasińskiego.",
+      "Na przełomie lat 60. i 70. XX wieku teren przekształcono w park, a na zboczu zamontowano wyciąg narciarski, który istniał do połowy lat 80.",
+      "Po zdemontowaniu wyciągu dawna wypożyczalnia nart mieści kawiarnię.",
+      "Wysokość względna kopca wynosi 20 m (130,5 m n.p.m.).",
+      "Kopiec jest punktem widokowym, z którego rozpościera się widok na Warszawę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kopiec Moczydłowski, also Górka Moczydłowska, is a 20 m hill in Moczydło Park, built after World War II from rubble of destroyed Warsaw buildings. It had a ski tow until the mid-1980s.",
+    "ludzie": [],
+    "dawne_nazwy": ["Górka Moczydłowska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kopiec Moczydłowski", "url": "https://pl.wikipedia.org/wiki/Kopiec_Moczyd%C5%82owski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

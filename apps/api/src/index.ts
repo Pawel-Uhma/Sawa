@@ -1,5 +1,6 @@
 import { serve } from "@hono/node-server";
 import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthesizer";
+import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
 import { createOsrmWalkPathSource } from "./adapters/osrm/walk-paths";
@@ -16,6 +17,7 @@ import { createLogger } from "./lib/logger";
 import { warsawDate } from "./routes/health";
 import { createTrackerBoardingSource } from "./services/live-boarding";
 import { createRoutePlanner } from "./services/plan-route";
+import { createDestinationService } from "./services/search-destinations";
 import { createSpeechService } from "./services/speak";
 import { createVehicleTracker } from "./services/track-vehicles";
 
@@ -77,6 +79,10 @@ const speech = env.ELEVENLABS_KEY
   ? createSpeechService(createElevenLabsSynthesizer({ apiKey: env.ELEVENLABS_KEY }))
   : undefined;
 
+const destinations = env.GOOGLE_PLACES_API_KEY
+  ? createDestinationService(createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY))
+  : undefined;
+
 const app = createApp({
   corsOrigins: env.CORS_ORIGINS,
   corsPreviewPattern: env.CORS_PREVIEW_PATTERN,
@@ -87,6 +93,7 @@ const app = createApp({
     places: placesRepository,
     llm,
     speech,
+    destinations,
     vehicles,
     onLlmError: (err, placeId) => logger.warn({ err, placeId }, "llm failed, story from facts"),
   },
@@ -101,6 +108,7 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
       walkPaths: env.WALK_ROUTER_URL ?? null,
       llm: llm?.model ?? null,
       speech: Boolean(speech),
+      destinations: Boolean(destinations),
     },
     "api listening",
   );

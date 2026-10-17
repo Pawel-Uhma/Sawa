@@ -1,0 +1,322 @@
+[
+  {
+    "id": "ulica-bielanska",
+    "nazwa": "Ulica Bielańska",
+    "name_en": "Bielańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bielańska",
+    "adres_historyczny": null,
+    "lat": 52.2454295, "lon": 21.0029634,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica pierwotnie wraz z ul. Wierzbową tworzyła fragment starego traktu do kościoła i klasztoru kamedułów na Bielanach, dokąd po 1673 roku pielgrzymowano do obrazu św. Brunona z Kwerfurtu.",
+      "Pierwszy dom murowany wybudowano w 1788 roku; był to dzieło Szymona Bogumiła Zuga, kamienica nr 5 dla Królewsko-Pruskiej Kompanii Handlu Morskiego.",
+      "Na początku II ćwierci XVIII wieku wybudowano przy Bielańskiej pałac dla biskupa Teodora Potockiego, który za panowania Stanisława Augusta mieścił Mennicę Warszawską.",
+      "W 1829 roku wybudowano kamienicę Gertrudy i Jana Baumów (projekt Karola Henryka Galle), a w 1830 roku niezachowaną kamienicę Wawrzyńca Mikulskiego (projekt Antonia Corazziego).",
+      "W 1911 roku ukończono gmach oddziału rosyjskiego Banku Państwa, zaprojektowany przez Leontija Benois.",
+      "Od listopada 1940 do marca 1942 krótki odcinek nieparzystej strony ulicy stanowił wschodnią granicę warszawskiego getta.",
+      "W czasie powstania warszawskiego szczególnie ciężkie walki stoczono o gmach Banku Państwa (Reduta Bank Polski).",
+      "Pałac Przebendowskich, odbudowany w latach 1948–1949 z licznymi zmianami, mieści obecnie Muzeum Niepodległości."
+    ],
+    "ciekawostki": [
+      "26 marca 1943 roku u zbiegu Bielańskiej, Długiej i Nalewek miała miejsce akcja pod Arsenałem.",
+      "Przy ulicy działało kilka hoteli, m.in. Hotel Lipski (nr 3), Hotel Krakowski (nr 7), Hotel Paryski (nr 9) i Hotel Białostocki (nr 16)."
+    ],
+    "summary_en": "Bielańska Street in Śródmieście runs from Senatorska Street to Długa Street. It began in the 17th century as part of the old road to the Camaldolese monastery at Bielany. Its 1911 Russian State Bank branch, designed by Leontij Benois, replaced the buildings of the old Mint, and in 1944 the Bank Polski building was the scene of heavy fighting.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "autor pierwszego murowanego domu przy ulicy (1788)", "wiki": null},
+      {"kto": "Teodor Potocki", "rola": "biskup; pałac wybudowany dla niego na początku XVIII wieku", "wiki": null},
+      {"kto": "Leontij Benois", "rola": "autor projektu gmachu oddziału rosyjskiego Banku Państwa (1911)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bielańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Biela%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bolesc",
+    "nazwa": "Ulica Boleść",
+    "name_en": "Boleść Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Boleść",
+    "adres_historyczny": null,
+    "lat": 52.2521891, "lon": 21.0126777,
+    "lokalizacja": "przyblizona",
+    "okres": "średniowiecze–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica występuje już w średniowieczu jako przedłużenie ul. Mostowej do Wisły; prowadziła do ukończonego w 1573 roku mostu Zygmunta Augusta.",
+      "W 1582 roku przy ulicy wzniesiono Bramę Mostową, w późniejszym okresie mieszczącą prochownię oraz więzienie.",
+      "Po przeznaczeniu budynku na więzienie (Dom Kary i Poprawy) w 1770 roku ulicy nadano nazwę Poprawna.",
+      "Nazwa nie przyjęła się wśród mieszkańców, którzy nazywali ulicę Boleść lub Bolesną, gdyż tą ulicą rodziny odprowadzały aresztantów do więzienia.",
+      "Pozostałą zabudowę stanowiły drewniane spichlerze; dopiero w 1780 roku pojawiły się pierwsze murowane kamienice.",
+      "Ok. 1910 roku, przy rozbudowie fabryki ekstraktów garbarskich „Quebracho” mieszczącej się przy ul. Rybaki, jej zabudowania otrzymały numer 2/4 przy ul. Boleść.",
+      "Wszystkie zabudowania przy ulicy spłonęły w 1944 roku; wypalony zespół Bramy Mostowej i więzienia odbudowano po wojnie.",
+      "Zabudowania fabryki „Quebracho” wyburzono w latach 60. XX wieku."
+    ],
+    "ciekawostki": [
+      "Układ urbanistyczny ulicy jest wpisany do gminnej ewidencji zabytków i rejestru zabytków."
+    ],
+    "summary_en": "Boleść Street in the Nowe Miasto part of Śródmieście runs from Mostowa Street down to the Vistula. It led to the Zygmunt Augustus Bridge, completed in 1573. Named Poprawna in 1770 after the prison, the street was called Boleść (Sorrow) by residents, because families led prisoners along it. All its buildings burned in 1944.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Poprawna (od 1770)",
+      "Bolesna / Boleść (nazwa mieszkańców)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Boleść w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bole%C5%9B%C4%87_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bonifraterska",
+    "nazwa": "Ulica Bonifraterska",
+    "name_en": "Bonifraterska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bonifraterska",
+    "adres_historyczny": "Paryszewszyzna, Paryszewska",
+    "lat": 52.2503351, "lon": 21.0038182,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest fragmentem dawnej drogi do Szosy Marymonckiej i pojawia się na planach już w XVIII wieku; wytyczono ją na gruntach rodziny Parysów.",
+      "Nazwa pochodzi od Bonifratrów, którzy prowadzili przy ulicy klasztor i kościół św. Jana Bożego oraz przytułek dla obłąkanych.",
+      "Po budowie Cytadeli Warszawskiej w latach 30. XIX wieku wyburzono całą zabudowę za linią ul. Konwiktorskiej.",
+      "Gdy w 1930 roku przy ul. Konwiktorskiej wybudowano Stadion Polonii Warszawa, od strony ul. Bonifraterskiej wzniesiono trybuny z bocznym wejściem.",
+      "27 listopada 1937 roku oddano wiadukt łączący ul. Bonifraterską z Żoliborzem; w grudniu 1938 ulicę wydłużono do ul. Świętojerskiej i placu Krasińskich.",
+      "W listopadzie 1940 południowy odcinek ulicy znalazł się w granicach warszawskiego getta.",
+      "Tramwaje kursowały ulicą Bonifraterską do 15 listopada 1947 roku.",
+      "Nowemu odcinkowi między ulicami Międzyparkową i Szymanowską nadano nazwę ulica Bonifraterska uchwałą Rady Narodowej m.st. Warszawy z 18 maja 1957 roku."
+    ],
+    "ciekawostki": [
+      "W 2005 roku odcinek między ul. Międzyparkową a ul. Słomińskiego zamknięto dla pojazdów zmotoryzowanych z powodu zapadnięcia się podziemnych chodników Fortu Traugutta (obecnie Fortu Aleksieja).",
+      "Ulica Bonifraterska oraz kościół Jana Bożego znalazły się w tekście piosenki „Astrolog” zespołu Lao Che."
+    ],
+    "summary_en": "Bonifraterska Street in the Nowe Miasto area of Śródmieście follows an old road toward the Marymont road. Its name comes from the Brothers Hospitallers (Bonifratrzy), whose church of St John of God stood here. It was built up in the 18th and 19th centuries, extended to Żoliborz by a viaduct in 1937, and partly fell inside the Warsaw Ghetto in 1940.",
+    "ludzie": [
+      {"kto": "Józef Fontana", "rola": "architekt; projektował dwór przy ulicy oraz zespół klasztoru i kościoła św. Jana Bożego", "wiki": null},
+      {"kto": "Antoni Solari", "rola": "współprojektant zespołu klasztoru i kościoła św. Jana Bożego", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Paryszewszyzna",
+      "Paryszewska",
+      "Klosterstrasse (okupacja niemiecka)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bonifraterska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bonifraterska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bracka",
+    "nazwa": "Ulica Bracka",
+    "name_en": "Bracka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bracka",
+    "adres_historyczny": null,
+    "lat": 52.2308849, "lon": 21.0189417,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest częścią dawnego traktu z Ujazdowa do Grzybowa; została uregulowana około 1770 roku.",
+      "Nazwa pochodzi od gruntów należących do różnych zakonów i bractw, przez które przechodził trakt.",
+      "Ok. 1790 roku u zbiegu z ul. Chmielną wzniesiono drewnianą rotundę pierwszego cyrku w Warszawie, zwanego „Hecą”.",
+      "W 1834 roku pod nr 11/13 zbudowano kamienicę Gołaszewskich, zaprojektowaną przez Antonia Corazziego.",
+      "W latach 1903–1910 powstały przy ulicy cztery kamienice, w tym nr 13 dla Kasy Pożyczkowo-Oszczędnościowej „Zgoda”.",
+      "W 1913–1914 na północnym odcinku ulicy wzniesiono gmach Domu Towarowego Braci Jabłkowskich, przykład modernizmu (projekt Karola Jankowskiego i Franciszka Lilpopa).",
+      "W czasie powstania warszawskiego większość zabudowy ulicy uległa zniszczeniu.",
+      "W 2024 roku odcinek między Alejami Jerozolimskimi a ul. Chmielną przebudowano, tworząc woonerf."
+    ],
+    "ciekawostki": [
+      "W 2011 roku w poprzek osi widokowej ulicy stanął budynek Wolf Bracka."
+    ],
+    "summary_en": "Bracka Street in Śródmieście is part of the old road from Ujazdów to Grzybów, regulated around 1770. Around 1790 a wooden rotunda of Warsaw's first circus, called Heca, stood at its junction with Chmielna. The 1913–14 Jabłkowski department store on its northern section is a modernist landmark, and most of the street was destroyed during the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "projektant kamienicy Gołaszewskich pod nr 11/13 (1834)", "wiki": null},
+      {"kto": "Karol Jankowski", "rola": "współautor projektu Domu Towarowego Braci Jabłkowskich", "wiki": null},
+      {"kto": "Franciszek Lilpop", "rola": "współautor projektu Domu Towarowego Braci Jabłkowskich", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ordenstrasse (okupacja niemiecka)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bracka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bracka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-browarna",
+    "nazwa": "Ulica Browarna",
+    "name_en": "Browarna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Browarna",
+    "adres_historyczny": null,
+    "lat": 52.243387, "lon": 21.0201522,
+    "lokalizacja": "przyblizona",
+    "okres": "1768–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1768 roku u podnóża skarpy warszawskiej wraz z przedłużeniem (ulicami Furmańską i Sowią) jako droga z jurydyki Mariensztat do jurydyki Stanisławów.",
+      "Nazwa pochodzi od browaru królewskiego, istniejącego tu jeszcze w XVIII wieku; wtedy ulica miała wyłącznie drewnianą zabudowę.",
+      "Po 1815 roku przy ulicy powstały niewielkie murowane kamieniczki o bardzo skromnym wystroju.",
+      "W II połowie XIX wieku mieszkańcami ulicy była w znacznym stopniu ludność żydowska.",
+      "Krótko przed 1930 rokiem w okolicy ul. Karowej powstał sześciopiętrowy dom spółdzielni mieszkaniowej „Własność”.",
+      "Do 1939 roku ulica słynęła z licznych sklepików spożywczych i wędliniarskich.",
+      "W okresie okupacji niemieckiej zabudowa ulicy została zniszczona.",
+      "W latach 1959–1966 między ulicami Browarną, Lipową, Dobrą i Leszczyńską powstało osiedle Radna."
+    ],
+    "ciekawostki": [
+      "Na początku XX wieku w wynajmowanym pokoju na poddaszu domu przy ul. Browarnej 11 mieszkała młoda Apolonia Chałupiec, znana później jako Pola Negri."
+    ],
+    "summary_en": "Browarna Street lies at the foot of the Warsaw escarpment in Śródmieście. It was laid out in 1768 as a road between the Mariensztat and Stanisławów estates and takes its name from a royal brewery of the 18th century. The street was largely destroyed during the occupation, and the Radna housing estate was built nearby in 1959–1966.",
+    "ludzie": [
+      {"kto": "Apolonia Chałupiec (Pola Negri)", "rola": "na początku XX wieku mieszkała przy ul. Browarnej 11 w wynajmowanym pokoju na poddaszu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Browarna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Browarna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bugaj",
+    "nazwa": "Ulica Bugaj",
+    "name_en": "Bugaj Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bugaj",
+    "adres_historyczny": null,
+    "lat": 52.2516852, "lon": 21.0121221,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga powstała jako fragment osady rybackiej Piscatoria, wzmiankowanej w XVI wieku; jako ulicę wytyczono na początku XVII wieku.",
+      "Nazwę oficjalnie nadano w 1770 roku; pochodzi od określenia topograficznego bugaj, czyli podmokłego, niskiego brzegu rzeki zalewanego przez wodę.",
+      "Parzysta strona ulicy została zabudowana dopiero pod koniec XVIII wieku, po cofnięciu się koryta Wisły; pierwszymi obiektami były kamienica i drewniany budynek Komory Wodnej.",
+      "W 1923 roku powstał na Gnojnej Górze, dawnym wysypisku śmieci Starej Warszawy, ogromny zespół domów Pocztowej Kasy Oszczędności, projektu Mariana Lalewicza.",
+      "Przed II wojną światową wzniesiono koszary Oddziału Zamkowego Prezydenta RP (Służby Zamkowej), zachowane do dziś.",
+      "Przed 1938 rokiem pod nr 10 wzniesiono Przedszkole im. Michaliny Mościckiej, zaprojektowane przez Jana Łukasika.",
+      "Walki powstańcze w 1944 roku doprowadziły do zniszczenia niemal całej zabudowy ulicy.",
+      "Po wojnie wyremontowano koszary Służby Zamkowej oraz kamienicę pod nr 14; przetrwał też dom Komory Wodnej z 1850 roku."
+    ],
+    "ciekawostki": [
+      "Pod koniec XVIII wieku kilka parcel przy ulicy posiadał hetman wielki litewski Michał Kazimierz Ogiński."
+    ],
+    "summary_en": "Bugaj Street in the Old Town runs from the Royal Castle gardens north toward Mostowa and Boleść streets. Its name, from a topographic term for a waterlogged riverbank, was officially given in 1770. In 1923 a large Post Office Savings Bank complex was built on the old rubbish dump of Gnojna Góra, and almost all buildings were destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Michał Kazimierz Ogiński", "rola": "hetman wielki litewski; posiadał kilka parcel przy ulicy pod koniec XVIII wieku", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "projektant zespołu domów Pocztowej Kasy Oszczędności (1923)", "wiki": null},
+      {"kto": "Jan Łukasik", "rola": "projektant Przedszkola im. Michaliny Mościckiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bugaj w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bugaj_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-burmistrzowska",
+    "nazwa": "Ulica Burmistrzowska",
+    "name_en": "Burmistrzowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Burmistrzowska",
+    "adres_historyczny": null,
+    "lat": 52.2546486, "lon": 21.008614,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona ok. 1955 roku na terenie należącym wcześniej do kościoła Nawiedzenia Najświętszej Marii Panny.",
+      "Nazwa pochodzi od tytułu burmistrza, dawnego najwyższego urzędu miejskiego, sprawowanego przez jednego z rajców wybieranego corocznie spośród rady miejskiej, osobnej dla Nowej i Starej Warszawy.",
+      "Z jednej strony ulicy znajdują się budynki plebanii kościoła, z drugiej zabudowa jednorodzinna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Burmistrzowska Street is one of the newer streets of the Nowe Miasto area in Śródmieście, running from the Vistula escarpment to Przyrynek. It was laid out around 1955 on land formerly belonging to the Church of the Nativity of the Blessed Virgin Mary, and its name refers to the burgomaster, the highest city office.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Burmistrzowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Burmistrzowska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Krótki artykuł, mało faktów historycznych."
+  },
+  {
+    "id": "ulica-canaletta",
+    "nazwa": "Ulica Canaletta",
+    "name_en": "Canaletto Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Canaletta",
+    "adres_historyczny": "wewnętrzna alejka pasażu Galeria Luxenburga",
+    "lat": 52.2430313, "lon": 21.0078263,
+    "lokalizacja": "przyblizona",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 1904–1909 jako wewnętrzna alejka pasażu handlowego Galeria Luxenburga.",
+      "Pasaż tworzyły dwa wydłużone pawilony wzdłuż granic posesji między ul. Senatorską 29 a ul. Niecałą 6 i 8; między nimi miała się znajdować uliczka nakryta szklanym dachem.",
+      "Dolne kondygnacje pawilonów wypełniły wielkie przeszklone witryny, a uliczkę nakrył dwuspadowy szklany dach.",
+      "Pozostająca długo bezimienną alejka otrzymała obecną nazwę dopiero w 1993 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Canaletto Street in Śródmieście is the former internal glazed passage of the Luxenburg Gallery, a commercial arcade built in 1904–1909 between Senatorska and Niecała streets. It remained nameless for decades and was named in 1993, taking over the name of a Marymont street lost to the construction of the AK Route.",
+    "ludzie": [],
+    "dawne_nazwy": ["bezimienna alejka Galerii Luxenburga (do 1993)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Canaletta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Canaletta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-celna",
+    "nazwa": "Ulica Celna",
+    "name_en": "Celna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Celna",
+    "adres_historyczny": "Gnojna, Gnojowa",
+    "lat": 52.2498535, "lon": 21.0132944,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została utworzona pod koniec XIII wieku jako bardzo wąska droga prowadząca do furty w murach miejskich.",
+      "Pod koniec XIV wieku u wylotu ulicy wybudowano Bramę Gnojną, włączoną w ciąg murów obronnych; od pobliskiego wysypiska Gnojnej Góry ulica nosiła dawniej nazwy Gnojna lub Gnojowa.",
+      "Obecna nazwa, nadana w 1833 roku, nawiązuje do Komory Celnej znajdującej się wówczas u wylotu ulicy Bugaj.",
+      "W 1833 roku wyburzono średniowieczną Bramę Gnojną, a w 1835 roku rozebrano część zabudowań przy południowej pierzei, co pozwoliło poszerzyć ulicę.",
+      "W 1923 roku Gnojną Górę zabudowano zespołem domów Pocztowej Kasy Oszczędności, projektu Mariana Lalewicza.",
+      "W 1944 roku zabudowa ulicy została wypalona i częściowo zburzona; zespół Pocztowej Kasy Oszczędności rozebrano po wojnie, a ulicę skrócono do ul. Brzozowej.",
+      "W latach 1956–1957 odsłonięto fragment muru wtopiony w ścianę kamienicy Patrycjuszowskiej Burbachów przy ul. Brzozowej 5, przylegającej do ul. Celnej."
+    ],
+    "ciekawostki": [
+      "Przy wschodnim odcinku ulicy zachował się relikt dawnej Bramy Gnojnej, a wraz z murem odsłonięto wylot dawnej uliczki podmurnej, przesklepionej w XVI wieku."
+    ],
+    "summary_en": "Celna Street in the Old Town runs from the Market Square toward Brzozowa Street. It began at the end of the 13th century as a narrow road to a gate in the city walls. The Gnojna Gate, named after a rubbish heap on Gnojna Góra, stood at its end until 1833. The current name refers to a customs house at the nearby Bugaj Street.",
+    "ludzie": [
+      {"kto": "Marian Lalewicz", "rola": "projektant zespołu domów Pocztowej Kasy Oszczędności (1923)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gnojna", "Gnojowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Celna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Celna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

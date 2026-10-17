@@ -1,0 +1,363 @@
+[
+  {
+    "id": "kamienica-poznanska-21",
+    "nazwa": "Kamienica przy ul. Poznańskiej 21",
+    "name_en": "Tenement at 21 Poznańska Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Poznańska 21",
+    "adres_historyczny": "ul. Wielka (ob. ul. Poznańska)",
+    "lat": 52.225878,
+    "lon": 21.011251,
+    "lokalizacja": "dokladna",
+    "okres": "1879–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jest to pierwszy murowany dom przy ul. Wielkiej (ob. ul. Poznańska), wzniesiony w 1879 roku.",
+      "Jest ostatnim zachowanym przykładem śródmiejskiej zabudowy sprzed wielkiej rozbudowy miasta w drugiej połowie XIX wieku.",
+      "Kamienica była opuszczona ze względu na zły stan techniczny; przez lata nie była remontowana ani zabezpieczana, bo nie można było dotrzeć do wszystkich 26 wpisanych do księgi hipotecznej właścicieli.",
+      "Przez blisko dwadzieścia lat nie rozpatrzono wniosku o wpisanie jej do rejestru zabytków (pismo ZOK z 27 lipca 1998 roku).",
+      "W 2018 roku kamienica została wpisana do rejestru zabytków.",
+      "W nocy z 25 na 26 czerwca 2018 roku zawaliła się część stropu i środkowa, szeroka na pięć metrów część ściany tylnej; 2 września na podwórze runął kolejny fragment poddasza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An 1879 brick house at Poznańska 21, the last surviving example of central Warsaw's pre-expansion development. Left empty for years because its 26 registered owners could not be reached, it was entered in the register of monuments in 2018, after parts of the building collapsed in 2018.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Wielka"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica przy ul. Poznańskiej 21 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ul._Pozna%C5%84skiej_21_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane o stanie po 2018 roku nie wynikają z artykułu."
+  },
+  {
+    "id": "kamienica-prozna-7",
+    "nazwa": "Kamienica przy ul. Próżnej 7",
+    "name_en": "Tenement at 7 Prózna Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Próżna 7",
+    "adres_historyczny": null,
+    "lat": 52.236319,
+    "lon": 21.004972,
+    "lokalizacja": "dokladna",
+    "okres": "brak danych w artykule–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została zaprojektowana przez Franciszka Braumanna i bezpośrednio sąsiaduje z kamienicą Zalmana Nożyka.",
+      "Kamienica przetrwała zagładę warszawskiego getta.",
+      "W 1987 roku wraz z kamienicami o adresach 9, 12 i 14 została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential tenement at Próżna 7, designed by Franciszek Braumann and standing next to Zalman Nożyk's house. It survived the destruction of the Warsaw Ghetto and was listed as a monument in 1987 together with the houses at Próżna 9, 12 and 14.",
+    "ludzie": [
+      {"kto": "Franciszek Braumann", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica przy ul. Próżnej 7 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ul._Pr%C3%B3%C5%BCnej_7_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki; brak daty budowy."
+  },
+  {
+    "id": "kamienica-solec-103",
+    "nazwa": "Kamienica przy ul. Solec 103",
+    "name_en": "Tenement at 103 Solec Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Solec 103",
+    "adres_historyczny": null,
+    "lat": 52.23626,
+    "lon": 21.02947,
+    "lokalizacja": "dokladna",
+    "okres": "1900 (oficyna), 1913–1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica na warszawskim Powiślu została wzniesiona w latach 1913–1914; ma pięć kondygnacji i poddasze.",
+      "Oficyna na tej posesji została wzniesiona w 1900 roku.",
+      "W okresie międzywojennym na tyłach działki stały pawilony, w których mieściło się wiele zakładów produkcyjnych i handlowych, m.in. warsztaty stolarskie „Ołtarzew” i mechaniczna fabryka wyrobów pończoszniczych „Powiśle”.",
+      "Przed II wojną światową i w czasie wojny mieszkała tu pisarka Janina Porazińska, autorka „Kichusia majstra Lepigliny”; po powstaniu warszawskim została wypędzona do obozu w Pruszkowie.",
+      "W latach 1943–1944 na terenie posesji działała w podziemiu Wytwórnia Materiałów Wybuchowych „Kinga”, zorganizowana przez Janinę Szabatowską w strukturach Wydziału Saperów Oddziału III Komendy Głównej Armii Krajowej.",
+      "Pomimo walk podczas powstania warszawskiego kamienica nie została zniszczona."
+    ],
+    "ciekawostki": [
+      "Tablica upamiętniająca likwidację wytwórni „Kinga” stoi kilkadziesiąt metrów na północ, przy ul. Solec."
+    ],
+    "summary_en": "A 1913–1914 five-storey tenement on Solec in Powiśle, with a 1900 back wing. During the Second World War a clandestine explosives workshop, the Kinga works of the Home Army, operated on the site, and the building survived the Warsaw Uprising intact.",
+    "ludzie": [
+      {"kto": "Janina Porazińska", "rola": "pisarka, mieszkanka przed wojną i w czasie wojny", "wiki": null},
+      {"kto": "Janina Szabatowska", "rola": "organizatorka Wytwórni Materiałów Wybuchowych „Kinga” (1943–1944)", "wiki": null},
+      {"kto": "Jan Tabeau", "rola": "działacz konspiracji opiekujący się wytwórnią środków piorących (dr, z Pionek)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica przy ul. Solec 103 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ul._Solec_103_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W gminnej ewidencji zabytków są dwa budynki: główny (ID 00010787) i oficyna (ID 00010786)."
+  },
+  {
+    "id": "kamienica-nowy-swiat-15-17",
+    "nazwa": "Kamienica przy ul. Nowy Świat 15/17",
+    "name_en": "Tenement at 15/17 Nowy Świat Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 15/17 (róg Alej Jerozolimskich)",
+    "adres_historyczny": null,
+    "lat": 52.23199,
+    "lon": 21.01997,
+    "lokalizacja": "dokladna",
+    "okres": "1823–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza duża kamienica stanęła na posesji nr 15 w 1823 roku według projektu Adolfa Schucha dla Antoniego Husaka.",
+      "W 1882 roku została podwyższona do czterech kondygnacji według projektu Józefa Hussa.",
+      "W 1884 roku w kamienicy (z wejściem na rogu) otwarto mleczarnię i kawiarnię „Udziałową”, w której dostępna była krajowa i zagraniczna prasa.",
+      "Około 1932 roku na miejscu kawiarni powstał zespół lokali „Café Club”, które zajmowały także trzy piętra kamienicy.",
+      "W okresie okupacji lokal „Café Club” był dostępny tylko dla Niemców; Gwardia Ludowa dwukrotnie dokonała na niego zamachu (24 października 1942 roku i 11 lipca 1943 roku).",
+      "W latach 1949–1950 zbudowano przy rogu nową kamienicę w stylu socrealistycznym według projektu Zygmunta Stępińskiego, gmach Społecznego Funduszu Odbudowy Stolicy.",
+      "21 lipca 1964 roku odsłonięto tu mozaikę przedstawiającą m.in. sceny z zamachu na Café Club; autorem był Władysław Zych."
+    ],
+    "ciekawostki": [
+      "Stefan Żeromski poznał tu przyszłą żonę, Władysław Reymont myślał tu o „Chłopach”, bywał tu Bolesław Leśmian, a Jerzy Zaruba rysował tu swoje karykatury.",
+      "Na frontowej ścianie budynku w 1952 roku odsłonięto brązową tablicę upamiętniającą akcje Gwardii Ludowej."
+    ],
+    "summary_en": "A corner tenement at Nowy Świat 15/17 on Aleje Jerozolimskie, first built in 1823 by Adolf Schuch for Antoni Husak. Its Café Club was a German-only venue in the occupation and was attacked twice by the Polish Gwardia Ludowa. The socialist-realist building that replaced the war ruins in 1949–1950 carries a mosaic commemorating the attacks.",
+    "ludzie": [
+      {"kto": "Adolf Schuch", "rola": "projektant pierwszej kamienicy (1823)", "wiki": null},
+      {"kto": "Antoni Husak", "rola": "inwestor (1823)", "wiki": null},
+      {"kto": "Józef Huss", "rola": "projekt podwyższenia (1882)", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projekt budynku z lat 1949–1950", "wiki": null},
+      {"kto": "Władysław Zych", "rola": "autor mozaiki (1964); zmarł przed odsłonięciem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica przy ulicy Nowy Świat 15/17 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ulicy_Nowy_%C5%9Awiat_15/17_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord obejmuje NS 15 (róg Alej Jerozolimskich) i sąsiednią kamieniczkę NS 17 (1849–1851, projekt Henryka Marconiego), o której artykuł pisze w tym samym wpisie. Zdanie o statusie własnościowym urwane w źródle."
+  },
+  {
+    "id": "kamienica-nowy-swiat-21",
+    "nazwa": "Kamienica przy ulicy Nowy Świat 21",
+    "name_en": "Tenement at 21 Nowy Świat Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 21",
+    "adres_historyczny": null,
+    "lat": 52.2325,
+    "lon": 21.0197,
+    "lokalizacja": "dokladna",
+    "okres": "II poł. XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W II połowie XVIII wieku stał tu piętrowy budynek należący do Andrzeja Szponholtza.",
+      "W 1882 roku frontowy budynek został podwyższony przez Adolfa Schimmelpfenniga do trzech kondygnacji i otrzymał neobarokową oprawę okien.",
+      "Przed I wojną światową mieścił się tu bar „Centralny”, księgarnia Idzikowskiego, sklep papierniczy Piaseckiego i dom handlowy „Grafika”.",
+      "W latach 30. XX wieku kamienicę podwyższono o jeszcze jedno piętro.",
+      "Po II wojnie światowej budynek został niestarannie odbudowany do wysokości drugiego piętra."
+    ],
+    "ciekawostki": [
+      "Bar Kawowy Amatorska, działający w budynku, został opisany przez Janusza Głowackiego w kryminale „Dzień słodkiej śmierci” z 1969 roku, który ukazał się jako dwunasty zeszyt serii „Ewa wzywa 07”."
+    ],
+    "summary_en": "A socialist-realist tenement at Nowy Świat 21, with an 18th-century origin. It was raised to three storeys in 1882 and again in the 1930s, and after the war was rebuilt only to the second floor. The Amatorska coffee bar in it features in a 1969 crime novel by Janusz Głowacki.",
+    "ludzie": [
+      {"kto": "Andrzej Szponholtz", "rola": "właściciel budynku w II poł. XVIII w.", "wiki": null},
+      {"kto": "Adolf Schimmelpfennig", "rola": "podwyższenie budynku (1882)", "wiki": null},
+      {"kto": "Janusz Głowacki", "rola": "pisarz; opisał bar w kryminale z 1969 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica przy ulicy Nowy Świat 21 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ulicy_Nowy_%C5%9Awiat_21_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-nowy-swiat-23",
+    "nazwa": "Kamienica przy ulicy Nowy Świat 23",
+    "name_en": "Tenement at 23 Nowy Świat Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 23",
+    "adres_historyczny": null,
+    "lat": 52.2326,
+    "lon": 21.0197,
+    "lokalizacja": "dokladna",
+    "okres": "1784–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1784 roku stał tu dworek Macieja Żebrowskiego; w 1819 roku budowano tu kamienicę Czarneckiego.",
+      "Przed 1923 rokiem budynek wraz z sąsiednią kamienicą (Nowy Świat 25) przeszedł na własność Instytutu Wydawniczego „Biblioteka Polska”, założonego przez Władysława Augusta Kościelskiego.",
+      "Budynek został rozebrany, a w jego miejscu wzniesiono siedzibę wydawnictwa i luksusowej księgarni „Biblioteki Polskiej” według projektu Juliusza Nagórskiego.",
+      "Księgarnia przetrwała tu do 1933 roku, kiedy została przeniesiona do mniejszego lokalu w sąsiednim budynku (Nowy Świat 25).",
+      "Kamienica została odbudowana w 1952 roku; w latach 1952–2022 działała tu m.in. Galeria „Nowy Świat” Lucyny Kubicy.",
+      "Pasaż „Italia” został wpisany do ewidencji zabytków w 2007 roku w rejestrze B pod numerem 1077."
+    ],
+    "ciekawostki": [
+      "Lucyna Kubica (1916–2006) była pierwszą marszand w powojennej Polsce."
+    ],
+    "summary_en": "A socialist-classicist building at Nowy Świat 23 that replaced a 1819 house. In the 1920s it was the seat of the Biblioteka Polska publishing house and a luxury bookshop designed by Juliusz Nagórski. Rebuilt in 1952, it now houses a restaurant on the ground floor.",
+    "ludzie": [
+      {"kto": "Maciej Żebrowski", "rola": "właściciel dworku (1784)", "wiki": null},
+      {"kto": "Władysław August Kościelski", "rola": "założyciel Instytutu Wydawniczego „Biblioteka Polska”", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "projekt siedziby wydawnictwa i księgarni", "wiki": null},
+      {"kto": "Lucyna Kubica", "rola": "prowadziła Galerię „Nowy Świat”; pierwsza marszand w powojennej Polsce", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica przy ulicy Nowy Świat 23 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ulicy_Nowy_%C5%9Awiat_23_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wspomina o pasażu „Italia” (1929 i później), zbudowanym na zapleczu NS 23 i 25; w rekordzie opisano tylko budynek przy NS 23."
+  },
+  {
+    "id": "kamienica-aleje-jerozolimskie-59",
+    "nazwa": "Kamienica w Alejach Jerozolimskich 59",
+    "name_en": "Tenement at 59 Aleje Jerozolimskie",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 59",
+    "adres_historyczny": null,
+    "lat": 52.228431,
+    "lon": 21.006444,
+    "lokalizacja": "dokladna",
+    "okres": "1859–1860–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wybudowana w latach 1859–1860 w stylu neorenesansowym według projektu Antoniego Kwiatkowskiego.",
+      "Pierwotnie był to budynek dwupiętrowy z jedną oficyną poprzeczną; po roku 1900 dobudowano trzy kondygnacje, z których ostatnia została ukryta w mansardowym dachu.",
+      "Kamienica została spalona podczas powstania warszawskiego, a w wyniku powojennej odbudowy obniżona o dwa piętra.",
+      "Od końca lat 60. XIX wieku do I wojny światowej należała do rodziny Wojno, a później do Bronisława Krystalla, który przed śmiercią zapisał ją wraz z kolekcją sztuki Muzeum Narodowemu w Warszawie.",
+      "W 1948 roku budynek został wynajęty przez British Council jako jego warszawska siedziba, którą pozostał do 2015 roku.",
+      "Kamienica została wpisana do rejestru zabytków w 2010 roku."
+    ],
+    "ciekawostki": [
+      "Jest najstarszą kamienicą w Alejach Jerozolimskich.",
+      "Na budynku zachowały się dwa monogramy: „BJ” w przejeździe bramnym i „BK” na balustradzie balkonu, od imienia i nazwiska Bronisława Krystalla."
+    ],
+    "summary_en": "The oldest tenement on Aleje Jerozolimskie, built in 1859–1860 to a design by Antoni Kwiatkowski in the Neo-Renaissance style. It burned during the Warsaw Uprising and was rebuilt two storeys lower. The British Council used it from 1948 until 2015, and it was listed as a monument in 2010.",
+    "ludzie": [
+      {"kto": "Antoni Kwiatkowski", "rola": "projektant (1859–1860)", "wiki": null},
+      {"kto": "Bronisław Krystall", "rola": "ostatni właściciel; zapisał kamienicę i kolekcję Muzeum Narodowemu", "wiki": null},
+      {"kto": "Rodzina Wojno", "rola": "właściciele od końca lat 60. XIX w. do I wojny światowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica w Alejach Jerozolimskich 59 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_w_Alejach_Jerozolimskich_59_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kampus-glowny-uw",
+    "nazwa": "Kampus Główny Uniwersytetu Warszawskiego",
+    "name_en": "University of Warsaw Main Campus",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 26/28",
+    "adres_historyczny": null,
+    "lat": 52.24025,
+    "lon": 21.018806,
+    "lokalizacja": "dokladna",
+    "okres": "1765–1894 (w źródle opis urwany)",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1765–1766 dotychczasową rezydencję królewską Villa Regia (Pałac Kazimierzowski) zaadaptowano na potrzeby nowo powstałej Szkoły Rycerskiej (Korpusu Kadetów).",
+      "Od 1808 roku Pałac Kazimierzowski był wykorzystywany przez Szkołę Prawa.",
+      "W latach 1815–1816 do pałacu dobudowano dwa neoklasycystyczne gmachy-oficyny; Gmach Porektorski służył jako mieszkanie rektorów i nauczycieli Liceum Warszawskiego.",
+      "Po upadku powstania listopadowego zlikwidowano Uniwersytet Warszawski i Liceum Warszawskie.",
+      "W 1862 roku budynek przy kampusie stał się siedzibą Szkoły Głównej Warszawskiej.",
+      "W latach 1891–1894 na dziedzińcu między gmachami Porektorskim i Poseminaryjnym wybudowano budynek biblioteki Cesarskiego Uniwersytetu Warszawskiego."
+    ],
+    "ciekawostki": [
+      "W Gmachu Porektorskim mieszkali m.in. rodziny nauczycieli, w tym Fryderyk Chopin."
+    ],
+    "summary_en": "The historic core of the University of Warsaw, centred on the former royal residence Villa Regia (Pałac Kazimierzowski) on Krakowskie Przedmieście. Its buildings were adapted for a cadet school in 1765–1766 and later served the Warsaw Lyceum and the university; the university library was built in 1891–1894.",
+    "ludzie": [
+      {"kto": "Fryderyk Chopin", "rola": "mieszkał w Gmachu Porektorskim jako członek rodziny nauczyciela Liceum", "wiki": null}
+    ],
+    "dawne_nazwy": ["Villa Regia (Pałac Kazimierzowski)"],
+    "zrodla": [{"tytul": "Wikipedia: Kampus Główny Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Kampus_G%C5%82%C3%B3wny_Uniwersytetu_Warszawskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w rozdziale o dwudziestoleciu międzywojennym; w rekordzie fakty z XVIII–XIX w. Pałac Kazimierzowski i Gmach Porektorski to osobne obiekty, do ewentualnego rozbicia."
+  },
+  {
+    "id": "kanal-piaseczynski",
+    "nazwa": "Kanał Piaseczyński",
+    "name_en": "Piaseczyński Canal (Royal Canal)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Park Agrykola, od Zamku Ujazdowskiego do ul. Czerniakowskiej",
+    "adres_historyczny": null,
+    "lat": 52.219444444,
+    "lon": 21.033611111,
+    "lokalizacja": "dokladna",
+    "okres": "1717–1726–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kanał został wykopany w latach 1717–1726 na polecenie Augusta II Mocnego, który w tym okresie dzierżawił od Lubomirskich teren Ujazdowa jako swoją podmiejską rezydencję.",
+      "Był wzorowany na kanale w Wersalu; budowę kierowali kolejno gen. Burkhard Christoph Münnich (1717–1721) i płk Krzysztof Karol d'Isebrandt (1722–1726).",
+      "W 1781 roku drewniany mostek nad kanałem zastąpiono kamiennym mostkiem zaprojektowanym przez Dominika Merliniego.",
+      "W 1963 roku na kanale uruchomiono ośrodek sportów wodnych dla młodzieży.",
+      "Na początku lat 70. XX wieku kanał skrócono od wschodu ze względu na budowę Wisłostrady.",
+      "W 1965 roku kanał wraz z parkiem Agrykola został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W XIX wieku rosyjscy kawalerzyści uczyli się tu pływać i pokonywać przeszkody wodne.",
+      "W 2011 roku ciągom pieszym wzdłuż kanału nadano nazwy: aleja Radiowej Trójki i aleja George'a Harrisona."
+    ],
+    "summary_en": "The Piaseczyński Canal, also called the Royal Canal, was dug in 1717–1726 for Augustus II the Strong near Agrykola Park and is part of the Royal Route axis. Its stone bridge was designed by Dominik Merlini, and the canal and park were listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "August II Mocny", "rola": "zleceniodawca budowy kanału", "wiki": null},
+      {"kto": "Burkhard Christoph Münnich", "rola": "kierownik budowy (1717–1721)", "wiki": null},
+      {"kto": "Krzysztof Karol d'Isebrandt", "rola": "kierownik budowy (1722–1726)", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "projekt kamiennego mostka (1781)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kanał Królewski"],
+    "zrodla": [{"tytul": "Wikipedia: Kanał Piaseczyński", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Piaseczy%C5%84ski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres_dzis przybliżony (opis położenia z artykułu)."
+  },
+  {
+    "id": "gmach-korpusu-kadetow-ujazdowskie-1-3",
+    "nazwa": "Gmach dawnego Korpusu Kadetów im. Suworowa (al. Ujazdowskie 1/3)",
+    "name_en": "Former Suvorov Cadet Corps Building (Ujazdowskie Avenue 1/3)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Ujazdowskie 1/3",
+    "adres_historyczny": null,
+    "lat": 52.21555556,
+    "lon": 21.02444444,
+    "lokalizacja": "dokladna",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w 1900 roku jako siedziba Korpusu Kadetów im. Aleksandra Suworowa.",
+      "Gmach zaprojektował Wiktor Junosza-Piotrowski.",
+      "Od 1953 roku mieści się tu Urząd Rady Ministrów, który w 1997 roku zmienił nazwę na Kancelarię Prezesa Rady Ministrów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building at Aleje Ujazdowskie 1/3 erected in 1900 as the seat of the Suvorov Cadet Corps, designed by Wiktor Junosza-Piotrowski. Since 1953 it has housed the government administration, now the Chancellery of the Prime Minister.",
+    "ludzie": [
+      {"kto": "Wiktor Junosza-Piotrowski", "rola": "projektant (1900)", "wiki": null}
+    ],
+    "dawne_nazwy": ["siedziba Korpusu Kadetów im. Aleksandra Suworowa"],
+    "zrodla": [{"tytul": "Wikipedia: Kancelaria Prezesa Rady Ministrów", "url": "https://pl.wikipedia.org/wiki/Kancelaria_Prezesa_Rady_Ministr%C3%B3w"}],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord wydzielony z artykułu o instytucji (KPRM): przyjęto, że adres i współrzędne z nagłówka dotyczą tego samego gmachu. Historia samej instytucji (Prezydium RM, Targowa 74, Pałac Prezydencki) pominięta jako nie dotycząca tego budynku."
+  },
+  {
+    "id": "gmach-izby-przemyslowo-handlowej-wiejska-10",
+    "nazwa": "Gmach dawnej Izby Przemysłowo-Handlowej (ul. Wiejska 10)",
+    "name_en": "Former Chamber of Industry and Commerce Building (Wiejska 10)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wiejska 10 (róg ul. Senackiej)",
+    "adres_historyczny": null,
+    "lat": 52.22611111,
+    "lon": 21.02583333,
+    "lokalizacja": "dokladna",
+    "okres": "1933–1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach dawnej Izby Przemysłowo-Handlowej wzniesiono w dwóch etapach w latach 1933–1939 przy ul. Wiejskiej 10 na rogu ul. Senackiej.",
+      "W okresie PRL gmach był siedzibą Ministerstwa Handlu Zagranicznego.",
+      "Budynek jest w bezpośrednim sąsiedztwie Sejmu i Senatu i jest dziś siedzibą Kancelarii Prezydenta RP."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former Chamber of Industry and Commerce building at Wiejska 10 corner Senacka, built in 1933–1939 in two stages. It housed the Ministry of Foreign Trade in the communist period and is now the seat of the Chancellery of the President of Poland.",
+    "ludzie": [],
+    "dawne_nazwy": ["Izba Przemysłowo-Handlowa"],
+    "zrodla": [{"tytul": "Wikipedia: Kancelaria Prezydenta Rzeczypospolitej Polskiej", "url": "https://pl.wikipedia.org/wiki/Kancelaria_Prezydenta_Rzeczypospolitej_Polskiej"}],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord wydzielony z artykułu o instytucji (Kancelaria Prezydenta); pominięto pozostałe rezydencje i zarządzanie nimi."
+  }
+]

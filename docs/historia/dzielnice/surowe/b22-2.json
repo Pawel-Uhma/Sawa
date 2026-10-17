@@ -1,0 +1,549 @@
+[
+  {
+    "id": "kamienica-efrosa",
+    "nazwa": "Kamienica Efrosa",
+    "name_en": "Efros Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 7",
+    "adres_historyczny": null,
+    "lat": 52.2306, "lon": 21.0212,
+    "lokalizacja": "dokladna",
+    "okres": "1878–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wzniesiona w latach 1878–1879 przez Natana Efrosa na miejscu dworku, według projektu Adama Oczkowskiego lub Aleksandra Woydego (ten ostatni był też kierownikiem budowy).",
+      "W 1770 roku na terenie posesji stał drewniany dworek księcia Sułkowskiego; w 1784 roku należał do Izabeli Lubomirskiej, a w 1819 roku do Tomasza Szengielewicza.",
+      "Była to czteropiętrowa kamienica, bogato zdobiona w duchu manierystycznym.",
+      "Przed I wojną światową działały tu m.in. sklep z wyrobami z bawełny Towarzystwa Akcyjnego „Zawiercie”, księgarnia wysyłkowa Ludwika Fiszera i salon damskich kapeluszy „Sylla”.",
+      "W czasie powstania warszawskiego kamienica została spalona, a w 1946 roku częściowo rozebrana.",
+      "W 1947 roku odbudowano ją jako 3-kondygnacyjną kamienicę, pozbawioną balkonów, ozdobnego boniowania i dekoracji okien.",
+      "Obecnie na parterze działa sklep firmowy Emporio Armani, a na I piętrze siedziba Związku Polskich Artystów Plastyków."
+    ],
+    "ciekawostki": [
+      "W ostatnich dekadach XIX wieku istniał tu salon firmowy Fabryki Kafli, Pieców Berlińskich i Kominków Augusta Hänsla."
+    ],
+    "summary_en": "A four-storey Mannerist-style tenement at Nowy Świat 7, built in 1878–1879 by Natan Efros on the site of a manor house. It was burned during the 1944 uprising and rebuilt in 1947 in a simplified three-storey form; today it has an Emporio Armani shop on the ground floor.",
+    "ludzie": [
+      {"kto": "Natan Efros", "rola": "inwestor", "wiki": null},
+      {"kto": "Adam Oczkowski lub Aleksander Woyde", "rola": "projektant (w artykule wariant niepewny)", "wiki": null},
+      {"kto": "Anna Scheibler", "rola": "właścicielka od przełomu wieków do I wojny światowej", "wiki": null},
+      {"kto": "Konstanty Pusłowski", "rola": "hrabia, właściciel po I wojnie światowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Efrosa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Efrosa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-emila-wedla",
+    "nazwa": "Kamienica Emila Wedla",
+    "name_en": "Emil Wedel Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Szpitalna 8",
+    "adres_historyczny": null,
+    "lat": 52.2333, "lon": 21.0144,
+    "lokalizacja": "dokladna",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wzniesiona w 1893 roku przy ul. Szpitalnej 8.",
+      "W zachowanej do dziś 4-piętrowej oficynie z tyłu budynku Emil Wedel prowadził zakład cukierniczy od 1865 roku.",
+      "Od początku istnienia kamienicy na parterze działa sklep i pijalnia czekolady; bywali tu m.in. Henryk Sienkiewicz i Bolesław Prus.",
+      "W latach 30. XX wieku produkcję przeniesiono na Pragę; w budynku pozostały pijalnia i sklep.",
+      "W 1937 roku Jan Wedel zaplanował modernizację wnętrza; po licznych protestach zmodernizowano tylko zaplecze.",
+      "Na dachu kamienicy umieszczono neon reklamujący firmę, przedstawiający Chłopca na zebrze.",
+      "Podczas powstania warszawskiego zawalił się północny fragment kamienicy; odbudowano go w 1947 roku według projektu Zdzisława Mączeńskiego.",
+      "Ponowne otwarcie lokalu na parterze nastąpiło w 1958 roku."
+    ],
+    "ciekawostki": [
+      "W czasie wojny w kamienicy stacjonowali fotoreporterzy Referatu Filmowego Biura Informacji i Propagandy KG AK; ich szef Antoni Bohdziewicz sfilmował z czwartego piętra ostrzał artylerii niemieckiej gmachu Prudentialu."
+    ],
+    "summary_en": "A tenement at Szpitalna 8 from 1893, with a four-storey rear wing where Emil Wedel ran his confectionery from 1865. The ground-floor shop and chocolate house was popular with writers, and the north part of the building was rebuilt after the 1944 uprising.",
+    "ludzie": [
+      {"kto": "Emil Wedel", "rola": "założyciel zakładu cukierniczego (od 1865)", "wiki": null},
+      {"kto": "Jan Wedel", "rola": "planował modernizację wnętrza w 1937 roku", "wiki": null},
+      {"kto": "Henryk Sienkiewicz", "rola": "bywalec pijalni czekolady", "wiki": null},
+      {"kto": "Bolesław Prus", "rola": "bywalec pijalni czekolady", "wiki": null},
+      {"kto": "Antoni Bohdziewicz", "rola": "szef Referatu Filmowego, który sfilmował ostrzał Prudentialu", "wiki": null},
+      {"kto": "Zdzisław Mączeński", "rola": "projekt odbudowy północnego fragmentu (1947)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Emila Wedla w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Emila_Wedla_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-falkiewiczowska",
+    "nazwa": "Kamienica Falkiewiczowska",
+    "name_en": "Falkiewicz Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 28 (róg ul. Krzywe Koło)",
+    "adres_historyczny": null,
+    "lat": 52.250361, "lon": 21.011889,
+    "lokalizacja": "dokladna",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Późnorenesansowa kamienica na rogu Rynku Starego Miasta 28 i ul. Krzywe Koło.",
+      "Pierwszymi właścicielami byli Beneszowie, którzy mieszkali w niej w latach 1458–1499.",
+      "Po 1628 roku posesję przejął dawny rajca Warszawy Stanisław Falkiewicz, który przebudował kamienicę według własnego projektu.",
+      "W 1643 roku (rok wyryty na attyce) Stanisław Falkiewicz kazał przebudować kamienicę; obecny wygląd wnętrza i dekoracji odpowiada epoce XVII wieku.",
+      "Rodzina Falkiewiczów zamieszkiwała kamienicę do roku 1704.",
+      "Attykę zdobiły obeliski, kule i trzy rzeźby świętych: Matka Boska, św. Stanisław i św. Elżbieta; na cokole rzeźby Matki Boskiej widnieje monogram FS i rok 1643.",
+      "Kamienica została spalona i częściowo zburzona w 1944 roku, a odbudowana w latach 1951–1953.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków; wraz z pozostałymi kamienicami na Stronie Dekerta jest siedzibą Muzeum Warszawy."
+    ],
+    "ciekawostki": [
+      "Przez długi czas historycy przypisywali kamienicę szkockiej rodzinie Czemerów; pomyłka wynikała z tego, że pierwszą kamienicą na rogu Rynku był budynek Krzywe Koło 2."
+    ],
+    "summary_en": "A late-Renaissance tenement at the corner of the Old Town Market and Krzywe Koło, remodelled in 1643 by councillor Stanisław Falkiewicz, after whom it is named. It was damaged in 1944, rebuilt in 1951–1953, and now belongs to the Warsaw Museum.",
+    "ludzie": [
+      {"kto": "Stanisław Falkiewicz", "rola": "dawny rajca Warszawy, właściciel i budowniczy przebudowy z 1643 roku", "wiki": null},
+      {"kto": "Beneszowie", "rola": "pierwsi właściciele (1458–1499)", "wiki": null},
+      {"kto": "Henryk Potulicki z Obór", "rola": "właściciel w późniejszym okresie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Falkiewicza"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Falkiewiczowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Falkiewiczowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-felicjana-jankowskiego",
+    "nazwa": "Kamienica Felicjana Jankowskiego",
+    "name_en": "Felicjan Jankowski Tenement (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska 130 (róg ul. Stanisława Moniuszki 12)",
+    "lat": 52.2344, "lon": 21.0094,
+    "lokalizacja": "dokladna",
+    "okres": "1904–1946",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica na rogu ulic Marszałkowskiej 130 i Stanisława Moniuszki 12.",
+      "Została zbudowana w 1904 roku dla Felicjana Jankowskiego na miejscu XVIII-wiecznego piętrowego domu.",
+      "Zaprojektował ją architekt Stanisław Grochowicz.",
+      "W 1944 roku budynek został znacznie zniszczony, a w 1946 roku wyburzono ruiny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1904 tenement at the corner of Marszałkowska and Stanisław Moniuszko streets, built for Felicjan Jankowski on the site of an 18th-century house. Badly damaged in 1944, its ruins were demolished in 1946.",
+    "ludzie": [
+      {"kto": "Felicjan Jankowski", "rola": "inwestor", "wiki": null},
+      {"kto": "Stanisław Grochowicz", "rola": "architekt", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Felicjana Jankowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Felicjana_Jankowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki, bez opisu wyglądu budynku."
+  },
+  {
+    "id": "kamienica-franciszka-lapinskiego",
+    "nazwa": "Kamienica Franciszka Łapińskiego",
+    "name_en": "Franciszek Łapiński Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 55 (róg ul. Pankiewicza)",
+    "adres_historyczny": null,
+    "lat": 52.228611, "lon": 21.007417,
+    "lokalizacja": "dokladna",
+    "okres": "1880–1881–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa neorenesansowa kamienica na rogu Alei Jerozolimskich 55 i ul. Pankiewicza.",
+      "Wybudowana w latach 1880–1881 dla warszawskiego kupca Franciszka Łapińskiego; zaprojektował ją Witold Lanci.",
+      "Narożna elewacja ma ryzality boczne zwieńczone trzema belwederkami z zapożyczeniami z architektury wiedeńskiej.",
+      "Jest jedyną znaną i w pełni zachowaną kamienicą autorstwa Witolda Lanciego.",
+      "W 1994 roku kamienicę wpisano do rejestru zabytków, a w latach 2007–2008 przeszła remont elewacji.",
+      "Obecnie mieszczą się w niej lokale usługowe i biura."
+    ],
+    "ciekawostki": [
+      "Franciszek Łapiński był dziadkiem Wacława Sierpińskiego, profesora matematyki Uniwersytetu Warszawskiego."
+    ],
+    "summary_en": "A neo-Renaissance corner tenement at Jerozolimskie 55, built in 1880–1881 for merchant Franciszek Łapiński to a design by Witold Lanci. It is Lanci's only known fully preserved building, listed in 1994, and it now houses shops and offices.",
+    "ludzie": [
+      {"kto": "Franciszek Łapiński", "rola": "kupiec, inwestor", "wiki": null},
+      {"kto": "Witold Lanci", "rola": "architekt", "wiki": null},
+      {"kto": "Wacław Sierpiński", "rola": "wnuk inwestora, profesor matematyki UW", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Franciszka Łapińskiego", "url": "https://pl.wikipedia.org/wiki/Kamienica_Franciszka_%C5%81api%C5%84skiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-fukierowska",
+    "nazwa": "Kamienica Fukierowska",
+    "name_en": "Fukier Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 27 i ul. Piwna 44",
+    "adres_historyczny": null,
+    "lat": 52.249639, "lon": 21.011514,
+    "lokalizacja": "dokladna",
+    "okres": "1552–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica na Starym Mieście między Rynkiem Starego Miasta a ul. Piwną.",
+      "W XV wieku stały tu dwa drewniane domy, które spaliły się prawdopodobnie podczas pożaru w 1544 roku.",
+      "W 1552 roku zastąpiono je murowaną kamienicą wykonaną przez Jerzego Korba.",
+      "W 1647 roku, z inicjatywy burmistrza Baltazara Strubicza, część frontowa została połączona z oficyną gankami.",
+      "W 1810 roku kamienica stała się własnością kupieckiej rodziny Fukierów; od tamtej pory mieści się tu popularna winiarnia.",
+      "Na kamiennym portalu prowadzącym z rynku dodano herb nowych właścicieli i inicjały Floriana Fukiera.",
+      "Zniszczenia wojenne oszacowano na ok. 55%; odbudowano ją w latach 1947–1953 według projektu Wacława Podlewskiego.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W obszernej piwnicy znajdowała się słynna winiarnia Fukierów; na parterze działa dziś restauracja „U Fukiera”."
+    ],
+    "summary_en": "An Old Town merchant house at Rynek 27 and Piwna 44, rebuilt in brick in 1552. Since 1810 it has housed the Fukier family's wine cellar, and after heavy war damage it was rebuilt in 1947–1953 and now hosts the Art Historians' Society and the restaurant U Fukiera.",
+    "ludzie": [
+      {"kto": "Jerzy Korb", "rola": "wykonawca murowanej kamienicy z 1552 roku", "wiki": null},
+      {"kto": "Baltazar Strubicz", "rola": "burmistrz Warszawy, inicjator remontu z 1647 roku", "wiki": null},
+      {"kto": "Florian Fukier", "rola": "właściciel winiarni, którego inicjały są na portalu", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "projekt nowej fasady od strony rynku (1782)", "wiki": null},
+      {"kto": "Wacław Podlewski", "rola": "projekt odbudowy (1947–1953)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Fukierowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Fukierowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-gaszynskiego",
+    "nazwa": "Kamienica Gaszyńskiego",
+    "name_en": "Gaszyński Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa 18/20",
+    "adres_historyczny": null,
+    "lat": 52.2496, "lon": 21.0067,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Długiej 18/20, wzniesiona dla szambelana królewskiego A. Gaszyńskiego.",
+      "W czasach Królestwa Polskiego mieściła się tu kawiarnia Suchy Las, założona w 1822 roku.",
+      "Ok. 1874 roku mieszkał w niej Soter Rozbicki.",
+      "W 1944 roku budynek uległ spaleniu.",
+      "Po II wojnie światowej odbudowano go według projektu Zygmunta Stępińskiego i przeznaczono na Bursę Szkolnictwa Zawodowego.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Długa Street tenement built for royal chamberlain A. Gaszyński, which housed the Suchy Las café from 1822. It burned in 1944 and was rebuilt to Zygmunt Stępiński's design as a hostel for vocational schools.",
+    "ludzie": [
+      {"kto": "A. Gaszyński", "rola": "szambelan królewski, inwestor", "wiki": null},
+      {"kto": "Soter Rozbicki", "rola": "mieszkaniec ok. 1874 roku", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projekt odbudowy po wojnie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Gaszyńskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Gaszy%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie podaje roku budowy; okres podano na podstawie daty zniszczenia w 1944 roku."
+  },
+  {
+    "id": "kamienica-gizinska-rynek-29",
+    "nazwa": "Kamienica Gizińska (Rynek Starego Miasta 29)",
+    "name_en": "Gizińska Tenement at Old Town Market 29",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 29",
+    "adres_historyczny": null,
+    "lat": 52.249694, "lon": 21.011389,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1442–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wybudowana przed 1442 rokiem jako własność Andrzeja Grabskiego; następnie sprzedana Maciejowi Haftarzowi.",
+      "Od końca XVI wieku do 1671 roku należała do rodziny Gizów, która przebudowała ją na przełomie XVI i XVII wieku.",
+      "W 1793 roku w kamienicy mieściła się siedziba „Gazety Warszawskiej”.",
+      "W 1928 roku przeprowadzono remont i ozdobiono ją polichromią Zofii Stryjeńskiej.",
+      "Zburzona podczas powstania warszawskiego; w latach 1951–1953 odbudowana według projektu Wacława Podlewskiego.",
+      "W 1953 roku fasadę ozdobiły polichromie Romana i Zofii Artymowskich.",
+      "Budynek mieści siedzibę Instytutu Historii PAN.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Ignacy Ludwik Nowicki, właściciel w latach 1754–1788, wynajmował lokale m.in. sekretarzowi królewskiemu S. Rembowskiemu."
+    ],
+    "summary_en": "A tenement at Old Town Market 29, owned by the Gizi family from the late 16th century and home to the Gazeta Warszawska in 1793. It was destroyed during the 1944 uprising, rebuilt in 1951–1953, and now houses the Institute of History of the Polish Academy of Sciences.",
+    "ludzie": [
+      {"kto": "Andrzej Grabski", "rola": "pierwszy właściciel (przed 1442)", "wiki": null},
+      {"kto": "Maciej Haftarz", "rola": "właściciel po Grabskim", "wiki": null},
+      {"kto": "Zofia Stryjeńska", "rola": "autorka polichromii z 1928 roku", "wiki": null},
+      {"kto": "Wacław Podlewski", "rola": "projekt odbudowy (1951–1953)", "wiki": null},
+      {"kto": "Roman i Zofia Artymowscy", "rola": "autorzy polichromii fasady z 1953 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sakresowska"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Gizińska w Warszawie (Rynek Starego Miasta 29)", "url": "https://pl.wikipedia.org/wiki/Kamienica_Gizi%C5%84ska_w_Warszawie_%28Rynek_Starego_Miasta_29%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia też nazwę „Kamienica Gizińska, także Sakresowska”."
+  },
+  {
+    "id": "kamienica-gizinska-rynek-6",
+    "nazwa": "Kamienica Gizińska (Rynek Starego Miasta 6)",
+    "name_en": "Gizińska Tenement at Old Town Market 6",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 6",
+    "adres_historyczny": null,
+    "lat": 52.24992, "lon": 21.01284,
+    "lokalizacja": "dokladna",
+    "okres": "1. poł. XV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica z pierwszej połowy XV wieku przy Rynku Starego Miasta 6.",
+      "Pierwotnie dwuokienna, w stylu gotyckim; w 1607 roku uległa spaleniu i odbudowano ją w stylu barokowym w 1610 roku.",
+      "Do połowy XVII wieku była własnością patrycjuszowskiej rodziny Gizów.",
+      "W latach 1784–1826 w budynku mieścił się sklep z piwnicą i szynkiem; nad jego wejściem był napis „Vinum laetificat cor et acuit ingenium”.",
+      "W kolejnych latach budynek nadbudowano do pięciu kondygnacji i dobudowano latarnię.",
+      "W 1928 roku kamienicę ozdobiono polichromią L. Ślendzińskiego.",
+      "Spalona podczas powstania warszawskiego; w latach 1952–1953 odbudowana według projektu T. Bursche i S. Kamińskiego.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Front kamienicy wraz z napisem „Vinum laetificat cor et acuit ingenium” został uwieczniony w komedii „Ja tu rządzę” z 1939 roku."
+    ],
+    "summary_en": "A tenement from the first half of the 15th century at Old Town Market 6, rebuilt in Baroque style in 1610 and later raised to five storeys. Its front, with the Latin inscription „Vinum laetificat cor”, appeared in the 1939 comedy Ja tu rządzę.",
+    "ludzie": [
+      {"kto": "Marcin Martenson z Bremy", "rola": "właściciel po Gizach", "wiki": null},
+      {"kto": "J. M. Łukaszewicz", "rola": "rajca, właściciel 1784–1826", "wiki": null},
+      {"kto": "L. Ślendziński", "rola": "autor polichromii z 1928 roku", "wiki": null},
+      {"kto": "T. Bursche i S. Kamiński", "rola": "projekt odbudowy (1952–1953)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Martensowa", "Martensowska", "Wachnicowska"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Gizińska w Warszawie (Rynek Starego Miasta 6)", "url": "https://pl.wikipedia.org/wiki/Kamienica_Gizi%C5%84ska_w_Warszawie_%28Rynek_Starego_Miasta_6%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-grzegorza-stiagatowa",
+    "nazwa": "Kamienica Grzegorza Stiagatowa",
+    "name_en": "Grzegorz Stiagatow Tenement (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "róg ul. Marszałkowskiej i ul. Świętokrzyskiej",
+    "lat": 52.234828, "lon": 21.009456,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1863–1936/1938",
+    "istnieje": false,
+    "fakty": [
+      "Dwupiętrowa kamienica na rogu ulic Marszałkowskiej i Świętokrzyskiej.",
+      "Powstała ok. 1863 roku dla Grzegorza Stiagatowa według projektu architekta Józefa Orłowskiego, w wyniku rozbudowy starszego piętrowego domu.",
+      "Z czasem została pozbawiona zdobień elewacji.",
+      "W 1936 lub 1938 roku kamienicę rozebrano pod budowę gmachu Centrali PKO."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-storey tenement at the corner of Marszałkowska and Świętokrzyska streets, built around 1863 for Grzegorz Stiagatow by Józef Orłowski. It was demolished in 1936 or 1938 to make way for the PKO headquarters.",
+    "ludzie": [
+      {"kto": "Grzegorz Stiagatow", "rola": "inwestor", "wiki": null},
+      {"kto": "Józef Orłowski", "rola": "architekt rozbudowy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Grzegorza Stiagatowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Grzegorza_Stiagatowa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok rozbiórki jako 1936 lub 1938."
+  },
+  {
+    "id": "kamienica-heleny-pal",
+    "nazwa": "Kamienica Heleny Pal",
+    "name_en": "Helena Pal Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 8",
+    "adres_historyczny": null,
+    "lat": 52.215, "lon": 21.021111,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica przy ul. Marszałkowskiej 8, ukończona w 1935 roku według projektu Maksymiliana Goldberga i Hipolita Rutkowskiego.",
+      "Właścicielką była Helena Pal, wdowa po Adolfie Ferdynandzie Palu, współwłaścicielu Fabryki Przetworów Chemicznych „Dobrolin”.",
+      "Od stycznia do końca czerwca 1939 roku działał tu prywatny Teatr Malickiej.",
+      "W czasie II wojny światowej, do 1944 roku, działał tu kino-teatr dla Niemców.",
+      "W grudniu 1945 roku teatr w kamienicy wznowił działalność.",
+      "24 lipca 2012 roku wpisano ją do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1935 building at Marszałkowska 8, designed by Maksymilian Goldberg and Hipolit Rutkowski for Helena Pal. It housed a private theatre in 1939, a cinema-theatre for Germans during the occupation, and a theatre again from December 1945.",
+    "ludzie": [
+      {"kto": "Helena Pal", "rola": "właścicielka, wdowa po Adolfie Ferdynandzie Palu", "wiki": null},
+      {"kto": "Maksymilian Goldberg", "rola": "architekt", "wiki": null},
+      {"kto": "Hipolit Rutkowski", "rola": "architekt", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Heleny Pal w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Heleny_Pal_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-horowitzow",
+    "nazwa": "Kamienica Horowitzów",
+    "name_en": "Horowitz Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wilcza 71 / ul. Emilii Plater 4",
+    "adres_historyczny": null,
+    "lat": 52.223193, "lon": 21.008685,
+    "lokalizacja": "dokladna",
+    "okres": "1937–1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica u zbiegu ulic Wilczej i Emilii Plater powstała w latach 1937–1938 dla rodziny Józefa, Moszka i Gity Horowitzów, pochodzącej ze Lwowa.",
+      "Projekt opracował Józef Steinberg.",
+      "Sześciokondygnacyjna kamienica ma zaokrąglony narożnik z balkonami; parter przeznaczono na działalność handlowo-usługową.",
+      "Elewację obłożono płytami z piaskowca, a do wykończenia wnętrz użyto najlepszych ówcześnie materiałów.",
+      "Jest jednym z budynków wykończonych w stylu art déco w międzywojennej Warszawie.",
+      "Przetrwała II wojnę światową; ślady po pociskach na fasadzie zostały wyeksponowane jako świadectwo historii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A six-storey art deco tenement at the corner of Wilcza and Emilii Plater streets, built in 1937–1938 for the Horowitz family from Lwów to a design by Józef Steinberg. It survived the war, and shell marks on its façade have been left visible.",
+    "ludzie": [
+      {"kto": "Józef, Moszek i Gita Horowitzowie", "rola": "inwestorzy, rodzina ze Lwowa", "wiki": null},
+      {"kto": "Józef Steinberg", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Horowitzów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Horowitz%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazywana też kamienicą Mojżesza Horowitza lub kamienicą Gity Horowitz."
+  },
+  {
+    "id": "kamienica-hoserow",
+    "nazwa": "Kamienica Hoserów",
+    "name_en": "Hoser Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 51",
+    "adres_historyczny": "Aleje Jerozolimskie 45 (przed 1939)",
+    "lat": 52.228861, "lon": 21.008583,
+    "lokalizacja": "dokladna",
+    "okres": "1904–1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa secesyjna kamienica przy Alejach Jerozolimskich 51, zbudowana w latach 1904–1905 na gruntach Zakładu Ogrodniczego Braci Hoser.",
+      "Nie jest pewne, kto był projektantem; najczęściej podaje się Pawła Hosera, syna Piotra Hosera Starszego.",
+      "Przed 1939 rokiem budynek miał adres Al. Jerozolimskie 45.",
+      "Frontowa elewacja jest w stylu neobarokowym, pokryta rustykalnym boniowaniem; balkony podtrzymują korynckie kolumny.",
+      "Kamienica jest zwieńczona kopułą; liczne zdobienia nawiązują do florystyki.",
+      "Od 1946 roku działa tu fotoplastykon; od 2008 roku jest to oddział Muzeum Powstania Warszawskiego.",
+      "Swoją siedzibę mają tu również Warszawski Oddział Przewodników PTTK oraz Muzeum im. Bolesława Biegasa."
+    ],
+    "ciekawostki": [
+      "Piotr Hoser pełnił m.in. funkcję głównego ogrodnika Ogrodu Saskiego; bracia Hoser uważani byli za jednych z najlepszych ogrodników w Warszawie."
+    ],
+    "summary_en": "An Art Nouveau tenement at Jerozolimskie 51, built in 1904–1905 on the grounds of the Hoser brothers' nursery, with floral decoration throughout. It has housed a photoplasticon since 1946 and a branch of the Warsaw Uprising Museum since 2008.",
+    "ludzie": [
+      {"kto": "Paweł Hoser", "rola": "najczęściej podawany projektant", "wiki": null},
+      {"kto": "Piotr Hoser Starszy", "rola": "ojciec Pawła Hosera", "wiki": null},
+      {"kto": "Apoloniusz Nieniewski", "rola": "możliwy projektant", "wiki": null},
+      {"kto": "Władysław Kozłowski", "rola": "możliwy projektant", "wiki": null},
+      {"kto": "Bolesław Biegas", "rola": "patron muzeum mieszczącego się w budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Hoserów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Hoser%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-izaaka-rotberga-aleje-jerozolimskie",
+    "nazwa": "Kamienica Izaaka Rotberga (Aleje Jerozolimskie 53)",
+    "name_en": "Izaak Rotberg Tenement on Jerozolimskie Avenue",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 53 (róg ul. Pankiewicza)",
+    "adres_historyczny": "Aleje Jerozolimskie 47",
+    "lat": 52.22869644, "lon": 21.00805879,
+    "lokalizacja": "dokladna",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy Alejach Jerozolimskich 53, róg ul. Pankiewicza.",
+      "Wzniesiona w latach 1893–1894 dla Izaaka Rotberga; pierwotnie była to trzypiętrowa narożna kamienica o wystroju neorenesansowym z jednym, półzamkniętym podwórzem.",
+      "Około 1907 roku została nadbudowana, prawdopodobnie według projektu Władysława Marconiego; w nadbudowanej części mieścił się hotel „Centralny”.",
+      "Po I wojnie światowej mieściła się tu część komórek organizacyjnych Francuskiej Misji Wojskowej (1924).",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków.",
+      "W latach 1994–1995 przebudowano ją na budynek biurowy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A corner tenement at Jerozolimskie 53, built in 1893–1894 for Izaak Rotberg in neo-Renaissance style and raised around 1907, when its upper floors housed the Centralny hotel. It was listed in 1965 and converted into offices in 1994–1995.",
+    "ludzie": [
+      {"kto": "Izaak Rotberg", "rola": "inwestor", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "prawdopodobny projektant nadbudowy (ok. 1907)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Izaaka Rotberga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Izaaka_Rotberga_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Inna kamienica niż Kamienica Izaaka Rothberga przy Marszałkowskiej 66 (pisownia nazwiska w artykułach różni się)."
+  },
+  {
+    "id": "kamienica-izaaka-rothberga-i-zygmunta-frumkina",
+    "nazwa": "Kamienica Izaaka Rothberga i Zygmunta Frumkina",
+    "name_en": "Izaak Rothberg and Zygmunt Frumkin Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 81",
+    "adres_historyczny": null,
+    "lat": 52.22527, "lon": 21.01359,
+    "lokalizacja": "dokladna",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica przy ul. Marszałkowskiej 81, ukończona w 1904 roku.",
+      "Powstała na jednej z działek, na których rozebrano budynki Fabryki Wyrobów Tabacznych „Union” i podzielono teren fabryki na 9 posesji.",
+      "Kamienica miała dwa podwórka przedzielone oficyną.",
+      "W latach 50. XX wieku, w wyniku poszerzania ul. Marszałkowskiej, rozebrano budynek od strony ulicy, a oficyna przejęła funkcję fasady.",
+      "24 lipca 2012 roku wpisano ją do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1904 tenement at Marszałkowska 81, built on part of the former Union tobacco factory site. Its street front was demolished in the 1950s when Marszałkowska was widened, and the wing behind it became the façade.",
+    "ludzie": [
+      {"kto": "Izaak Rothberg", "rola": "współinwestor", "wiki": null},
+      {"kto": "Zygmunt Frumkin", "rola": "współinwestor", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Izaaka Rothberga i Zygmunta Frumkina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Izaaka_Rothberga_i_Zygmunta_Frumkina_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie wymienia wprost, kto był projektantem."
+  },
+  {
+    "id": "kamienica-izaaka-rothberga-marszalkowska-66",
+    "nazwa": "Kamienica Izaaka Rothberga",
+    "name_en": "Izaak Rothberg Tenement at Marszałkowska 66",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 66",
+    "adres_historyczny": null,
+    "lat": 52.225, "lon": 21.0151,
+    "lokalizacja": "dokladna",
+    "okres": "1893–1894–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Marszałkowskiej 66, świadectwo nielicznie zachowanej zabudowy Marszałkowskiej sprzed 1939 roku.",
+      "Zaprojektował ją architekt Stefan Szyller na zlecenie przedsiębiorcy budowlanego Izaaka Rothberga; zrealizowano ją w 1894 roku w stylu neogotyckim.",
+      "Jest jednym z niewielu zachowanych spośród 150 domów mieszkalnych zaprojektowanych przez Stefana Szyllera.",
+      "W trakcie okupacji między domami nr 68 i 66 istniało tajne przejście, ukryte za szafą; w sierpniu 1944 roku powstańcy zdobyli odcinek ulicy obejmujący nr 66.",
+      "W trakcie walk uszkodzono narożnik, wskutek czego zniszczony został sześcioboczny hełm zwieńczony sterczyną.",
+      "W latach 50. XX wieku, w ramach poszerzania Marszałkowskiej i budowy MDM, skuto sztukaterię obu fasad i pokryto je szarym tynkiem.",
+      "W 2012 roku kamienicę umieszczono w gminnej ewidencji zabytków; w 2019 roku wpisano ją do rejestru zabytków.",
+      "Po 2000 roku budynek przechodził jedynie drobne techniczne remonty i wciąż nie był podłączony do centralnego ogrzewania."
+    ],
+    "ciekawostki": [
+      "Tajne przejście w murze wykorzystywali uciekinierzy z okolicznych łapanek hitlerowskich."
+    ],
+    "summary_en": "A neo-Gothic tenement at Marszałkowska 66, designed by Stefan Szyller for Izaak Rothberg and built in 1894. It survived the war with a hidden wartime passage, lost its decorative stucco in the 1950s, and was listed in 2019.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "architekt", "wiki": null},
+      {"kto": "Izaak Rothberg", "rola": "przedsiębiorca budowlany, inwestor", "wiki": null},
+      {"kto": "Sabina Rzeczkowska", "rola": "uczestniczka powstania; po wojnie odbudowywała budynek z mężem Kazimierzem", "wiki": null},
+      {"kto": "Adriana Kłosińska", "rola": "dawna lokatorka, uczestniczka powstania", "wiki": null},
+      {"kto": "Jakub Lewicki", "rola": "Wojewódzki Konserwator Zabytków, uzasadniał wpis w 2019 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Izaaka Rothberga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Izaaka_Rothberga_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Inna kamienica niż Kamienica Izaaka Rotberga przy Alejach Jerozolimskich 53."
+  }
+]

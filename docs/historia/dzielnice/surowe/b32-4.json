@@ -1,0 +1,253 @@
+[
+  {
+    "id": "szpital-ewangelicki-karmelicka-10",
+    "nazwa": "Szpital Ewangelicki w Warszawie",
+    "name_en": "Protestant Hospital in Warsaw",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Karmelicka 10",
+    "lat": 52.2462,
+    "lon": 20.9942,
+    "lokalizacja": "dokladna",
+    "okres": "1736–1943",
+    "istnieje": false,
+    "fakty": [
+      "Szpital ewangelicki przy ul. Karmelickiej 10 istniał w latach 1736–1943 i prowadziła go warszawska parafia ewangelicko-augsburska Świętej Trójcy.",
+      "Położony był u zbiegu ulic Karmelickiej i Mylnej, na terenie między dawnymi jurydykami Leszno i Nowolipie.",
+      "W 1769 roku wspólnie ze zborem reformowanym wzniesiono na uprzednio uporządkowanym terenie pocmentarnym nowy drewniany dom dla chorych; w 1792 roku cmentarz zlikwidowano i przeniesiono na ul. Młynarską.",
+      "W latach 1835–1937 (taki zapis w artykule) na nowo zakupionej posesji między ulicami Mylną i Nowolipie wzniesiono nowy budynek szpitala.",
+      "W 1893 roku, za sprawą Artura Göbela, powstał gmach od ul. Karmelickiej oraz nowa kaplica; w 1924 roku Emil Gerlach ufundował pracownię rentgenologiczną.",
+      "W maju 1943 roku, na rozkaz Niemców i z powodu powstania w getcie, szpital przeniesiono do budynku Prywatnego 2-letniego Liceum Handlowego Żeńskiego H. Chanowskiej przy ul. Królewskiej 35.",
+      "1 sierpnia 1944 roku szpital stał się szpitalem powstańczym; 3 października 1944 roku część chorych wraz z personelem i pastorem Zygmuntem Michelisem trafiła do obozu w Pruszkowie."
+    ],
+    "ciekawostki": [
+      "Na budynku przy ul. Nowolipie 9/11 znajduje się tablica upamiętniająca szpital, ufundowana m.in. przez fundację szpitala i miasto Detmold."
+    ],
+    "summary_en": "The Protestant Hospital at 10 Karmelicka Street ran from 1736 to 1943, maintained by the Holy Trinity Lutheran parish. It became an uprising hospital in 1944 and was later commemorated by a plaque at 9/11 Nowolipie and a square named in 2019.",
+    "ludzie": [
+      {"kto": "Zygmunt Michelis", "rola": "pastor, który w październiku 1944 roku trafił z chorymi do obozu w Pruszkowie", "wiki": null},
+      {"kto": "Artur Göbel", "rola": "sprawił, że w 1893 roku powstał gmach od strony Karmelickiej", "wiki": null},
+      {"kto": "Emil Gerlach", "rola": "ufundował pracownię rentgenologiczną w 1924 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital Ewangelicki przy Karmelickiej"],
+    "zrodla": [{"tytul": "Wikipedia: Szpital Ewangelicki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szpital_Ewangelicki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tablica pamiątkowa na Nowolipie 9/11; skwer Szpitala Ewangelickiego nadany uchwałą Rady Warszawy z 29 sierpnia 2019."
+  },
+  {
+    "id": "szpital-kliniczny-anny-mazowieckiej-karowa-2",
+    "nazwa": "Szpital Kliniczny im. ks. Anny Mazowieckiej w Warszawie",
+    "name_en": "Anna Mazowiecka Clinical Hospital in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karowa 2",
+    "adres_historyczny": "ul. Karowa 2",
+    "lat": 52.245080555,
+    "lon": 21.0227,
+    "lokalizacja": "dokladna",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szpital utworzono 15 grudnia 1912 roku w intencji księcia Aleksego Nikołajewicza Romanowa; początkowo nosił imię cesarzowej Aleksandry Fiodorowny i był domem porodowym dla samotnych kobiet.",
+      "Budynek i rozmieszczenie pomieszczeń zaprojektowali architekt Kazimierz Skórewicz oraz lekarz naczelny zakładu W. Popiel; gmach zbudowano na planie czworoboku z wewnętrznym podwórzem 16x16 m.",
+      "Zaplanowano go na przyjęcie od 72 do 100 pacjentek; w budynku zainstalowano pięć wind elektrycznych.",
+      "W 1925 roku szpitalowi nadano imię Anny księżnej Mazowieckiej; w 1933 roku mógł pomieścić 98 pacjentek i 80 niemowląt, a mieściła się w nim Warszawska Miejska Szkoła Położnych.",
+      "W 1945 roku w opustoszałym budynku ulokowano Wojskową Komendę Miasta; w 1949 roku wznowiono pracę jako Miejski Szpital Położniczy nr 2, a w 1955 roku uzyskał status szpitala klinicznego.",
+      "W 1964 roku oddano do użytku nowy budynek szpitala; był to drugi szpital w Polsce (po Gdańsku) i pierwszy w Warszawie, który wprowadził system rooming-in.",
+      "Był to też pierwszy szpital w Polsce, w którym podczas porodu zastosowano próżnociąg położniczy."
+    ],
+    "ciekawostki": [
+      "Ordynatorem w latach 1925–1928 był Franciszek Ksawery Cieszyński, pediatra i autor publikacji medycznych.",
+      "W czasie powstania warszawskiego pacjentki przeniesiono do kościoła pokarmelickiego przy Krakowskim Przedmieściu."
+    ],
+    "summary_en": "The Anna Mazowiecka Clinical Hospital at 2 Karowa Street began in 1912 as a maternity home for unmarried women. Named after Princess Anna Mazowiecka in 1925, it introduced rooming-in in Warsaw in 1964 after moving into a new building.",
+    "ludzie": [
+      {"kto": "Aleksy Nikołajewicz Romanow", "rola": "książę, w intencji którego utworzono szpital", "wiki": null},
+      {"kto": "Kazimierz Skórewicz", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Franciszek Ksawery Cieszyński", "rola": "ordynator w latach 1925–1928", "wiki": null},
+      {"kto": "Stanisław Chełmecki", "rola": "ordynator 1928–1938, następnie dyrektor (do 1943)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawski zakład położniczy", "Szpital im. Aleksandry Fiodorowny"],
+    "zrodla": [{"tytul": "Wikipedia: Szpital Kliniczny im. ks. Anny Mazowieckiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szpital_Kliniczny_im._ks._Anny_Mazowieckiej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie 1965 roku; fakty dalsze pominięte."
+  },
+  {
+    "id": "szpital-maltanski-palac-mniszchow",
+    "nazwa": "Szpital Maltański w Warszawie",
+    "name_en": "Maltese Hospital in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "pałac Mniszchów, ul. Senatorska 40",
+    "lat": 52.243611,
+    "lon": 21.00375,
+    "lokalizacja": "dokladna",
+    "okres": "1939–1944",
+    "istnieje": false,
+    "fakty": [
+      "Szpital założony przez Związek Polskich Kawalerów Maltańskich został otwarty 7 września 1939 roku w pałacu Mniszchów przy ul. Senatorskiej 40.",
+      "Pierwszych pacjentów przyjęto wieczorem 7 września, dzięki mieszkańcom Warszawy, którzy dostarczyli łóżka i pościel; 8 września szpital zbombardowała Luftwaffe.",
+      "Do kapitulacji miasta 28 września 1939 roku pacjentami były głównie ofiary nalotów; liczba chorych wzrosła do ok. 300.",
+      "Po kapitulacji szpital zaliczono do szpitali wojskowych i ograniczono liczbę łóżek do 190; sala operacyjna mieściła się w schronie w sąsiednim gmachu Banku Landaua.",
+      "Personel współpracował z Polskim Państwem Podziemnym; przyjmowano rannych uczestników akcji ZWZ-AK, m.in. zamachu na Kutscherę, i udzielano pomocy Żydom.",
+      "W czasie powstania warszawskiego szpital znajdował się między placówkami niemieckimi w Ogrodzie Saskim, dowództwem Wehrmachtu na placu Teatralnym a powstańczym Starym Miastem.",
+      "Szpital został ewakuowany i spalony przez Niemców 14 września 1944 roku."
+    ],
+    "ciekawostki": [
+      "Personel nazywał placówkę „Maltańcem”."
+    ],
+    "summary_en": "The Maltese Hospital was set up by the Polish Maltese Knights in the Mniszech Palace at 40 Senatorska Street, opening on 7 September 1939. It treated civilian and military wounded through the siege and the Warsaw Uprising and was burned by the Germans in September 1944.",
+    "ludzie": [
+      {"kto": "Stanisław Milewski-Lipkowski", "rola": "komendant szpitala", "wiki": null},
+      {"kto": "Adam Huszcza", "rola": "naczelny lekarz (płk dr)", "wiki": null},
+      {"kto": "Magdalena Lipkowska", "rola": "siostra naczelna", "wiki": null},
+      {"kto": "Cyprian Sadowski (ps. Skiba)", "rola": "szef sanitariatu Grupy Północ w czasie powstania", "wiki": null}
+    ],
+    "dawne_nazwy": ["Maltańc (nazwa personelu)"],
+    "zrodla": [{"tytul": "Wikipedia: Szpital Maltański w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szpital_Malta%C5%84ski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Istnienie: szpital zniszczony w 1944; artykuł nie opisuje dalszych losów pałacu Mniszchów. Artykuł urwany w kalendarium powstania (5–6 sierpnia 1944)."
+  },
+  {
+    "id": "szpital-inflancka-zakurzona",
+    "nazwa": "Szpital Specjalistyczny „Inflancka” im. Krysi Niżyńskiej „Zakurzonej”",
+    "name_en": "“Inflancka” Specialist Hospital (Zakurzona)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Inflancka 6",
+    "adres_historyczny": "ul. Inflancka 6 (przy bocznicy kolejowej przy ul. Stawki)",
+    "lat": 52.255,
+    "lon": 20.9914,
+    "lokalizacja": "dokladna",
+    "okres": "1938–2022",
+    "istnieje": false,
+    "fakty": [
+      "Budynek szpitala wzniesiono w latach 1938–1939 jako jeden z budynków otaczających tereny bocznicy kolejowej przy ul. Stawki; wcześniej mieścił się w nim Urząd Celny.",
+      "Placówkę pod nazwą Miejski Szpital Ginekologiczno-Położniczy otwarto w 1954 roku, a oddział położniczy w 1958 roku.",
+      "Po modernizacji w 1976 roku szpital zmienił nazwę na Śródmiejski Szpital Położniczo-Ginekologiczny.",
+      "Na początku lat 90. miał 180 łóżek, w tym 30 dla noworodków; przy placówce działała przychodnia przyszpitalna.",
+      "Uchwałą Rady m.st. Warszawy z 9 grudnia 2021 roku szpital połączono ze Szpitalem Bielańskim, który przejął jego zadania, zobowiązania i mienie; w 2022 roku wykreślono go z Krajowego Rejestru Sądowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Inflancka Specialist Hospital at 6 Inflancka Street was a gynaecology and maternity hospital in a 1938–1939 building that had earlier housed a customs office. It was merged into Szpital Bielański by a city resolution in 2021 and removed from the registry in 2022.",
+    "ludzie": [],
+    "dawne_nazwy": ["Miejski Szpital Ginekologiczno-Położniczy", "Śródmiejski Szpital Położniczo-Ginekologiczny"],
+    "zrodla": [{"tytul": "Wikipedia: Szpital Specjalistyczny „Inflancka” im. Krysi Niżyńskiej – „Zakurzonej”", "url": "https://pl.wikipedia.org/wiki/Szpital_Specjalistyczny_%E2%80%9EInflancka%E2%80%9D_im._Krysi_Ni%C5%BCy%C5%84skiej_%E2%80%93_%E2%80%9EZakurzonej%E2%80%9D"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Istnieje budynek przy Inflanckiej 6 (nie wiadomo z artykułu, czy stoi); szpital jako podmiot zlikwidowany w 2022."
+  },
+  {
+    "id": "szpital-ujazdowski-zamek-ujazdowski",
+    "nazwa": "Szpital Ujazdowski w Warszawie",
+    "name_en": "Ujazdów Hospital in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Zamek Ujazdowski w Ujazdowie",
+    "lat": 52.219444444,
+    "lon": 21.030555555,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1792–1945",
+    "istnieje": false,
+    "fakty": [
+      "Szpital Ujazdowski, najstarszy i największy szpital wojskowy w Polsce, utworzono ok. 1792 roku w byłym zamku królewskim w Ujazdowie.",
+      "Około 1772 roku Stanisław August Poniatowski wstrzymał przebudowę Zamku Ujazdowskiego, a w 1784 roku oddał go miastu na koszary Gwardii Pieszej Litewskiej.",
+      "W 1818 roku z rozkazu księcia Konstantego Romanowa utworzono Szpital Główny Wojskowy, nazwany „Szpitalem Ujazdowskim”.",
+      "Pod koniec XIX wieku szpital ponownie rozszerzono, wznosząc 20 nowych pawilonów z czerwonej cegły; cały kompleks był rozległy, a po jego terenie kursowała kolejka.",
+      "Podczas obrony Warszawy, 7 września 1939 roku, część personelu szpitala wyjechała, co pozbawiło rannych i chorych opieki.",
+      "Od 1940 do wybuchu powstania komendantem był płk dr Leon Strehl, szef sanitarny Komendy Głównej AK.",
+      "5 sierpnia 1944 roku Niemcy zażądali ewakuacji; kolumna z 1491 osobami wyruszyła rano 6 sierpnia, a szpital rozwiązano w styczniu 1945 roku po ewakuacji do Krakowa."
+    ],
+    "ciekawostki": [
+      "Około 600 zmarłych w szpitalu pochowano pod murem od strony parku Ujazdowskiego na tymczasowym „cmentarzu Obrońców Warszawy”.",
+      "Edward Loth zorganizował w szpitalu Zakład Przeszkolenia Inwalidów, uruchomiony w 1941 roku.",
+      "W szpitalu wydawano fałszywe zaświadczenia o inwalidztwie dla ukrywających się żołnierzy."
+    ],
+    "summary_en": "The Ujazdów Military Hospital, Poland’s oldest and largest military hospital, operated from about 1792 in the old Ujazdów royal castle. Its staff hid soldiers and helped Jews during the occupation, and the institution was dissolved in January 1945 after the evacuation to Kraków.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "król, który w 1784 roku oddał zamek miastu na koszary", "wiki": null},
+      {"kto": "Konstanty Romanow", "rola": "wielki książę, z jego rozkazu w 1818 roku utworzono szpital", "wiki": null},
+      {"kto": "Tadeusz Kościuszko", "rola": "planował przeznaczenie koszar na lazaret", "wiki": null},
+      {"kto": "Leon Strehl", "rola": "komendant szpitala 1940–1944", "wiki": null},
+      {"kto": "Edward Loth", "rola": "profesor UW, organizator Zakładu Przeszkolenia Inwalidów", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital Główny Wojskowy", "Zamek Ujazdowski"],
+    "zrodla": [{"tytul": "Wikipedia: Szpital Ujazdowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szpital_Ujazdowski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie sierpnia 1944 roku. Istnienie: szpital zlikwidowany w 1945; budynek zamku w artykule nie jest opisany jako istniejący."
+  },
+  {
+    "id": "szpital-sw-ducha-elektoralna-12",
+    "nazwa": "Szpital św. Ducha w Warszawie (ul. Elektoralna 12)",
+    "name_en": "Holy Spirit Hospital (Elektoralna 12)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Elektoralna 12",
+    "adres_historyczny": "ul. Elektoralna 12",
+    "lat": 52.24062,
+    "lon": 20.99819,
+    "lokalizacja": "dokladna",
+    "okres": "1857–dziś (budynek)",
+    "istnieje": true,
+    "fakty": [
+      "Szpital św. Ducha założono w Starej Warszawie w 1442 roku przy kościele św. Marcina przez ks. Annę Holszańską jako przytułek dla starców i kalek.",
+      "W 1825 roku szpital przeniesiono na ul. Przyrynek, a w styczniu 1853 roku do tzw. koszar Sierakowskich przy ul. Konwiktorskiej.",
+      "Gmach przy ul. Elektoralnej 12 wzniesiono w latach 1857–1861 według projektu Józefa Orłowskiego; był to pierwszy szpital w Warszawie z wolno stojącymi pawilonami.",
+      "25 września 1939 roku szpital zbombardowała Luftwaffe; znajdowało się w nim ok. 700 chorych i rannych, z których tylko część uratowano; szpital ewakuowano do hali Mirowskiej.",
+      "W 1940 roku placówkę przeniesiono na ul. Dworską; od 15 grudnia 1940 do 15 sierpnia 1942 uszkodzony budynek przy Elektoralnej znajdował się w granicach getta.",
+      "W 1953 roku budynek przy ul. Elektoralnej odbudowano na Dom Kultury; w 1946 roku szpital ponownie zajął ocalałe zabudowania przy Dworskiej, a w 1957 roku zmieniono mu nazwę na Szpital Miejski nr 1."
+    ],
+    "ciekawostki": [
+      "Na terenie posesji rośnie pomnik przyrody – jesion wyniosły.",
+      "Przed 1939 rokiem szpital był jednym z najnowocześniejszych w mieście; w 1881 roku pracownię chemiczno-bakteriologiczną prowadził Leon Nencki."
+    ],
+    "summary_en": "The Holy Spirit Hospital, founded in 1442, moved into a purpose-built 1857–1861 block at 12 Elektoralna Street designed by Józef Orłowski. The building was bombed in 1939 and in 1953 was converted into a community centre, which still houses cultural and school institutions.",
+    "ludzie": [
+      {"kto": "Anna Holszańska", "rola": "założycielka szpitala w 1442 roku", "wiki": null},
+      {"kto": "Józef Orłowski", "rola": "projektant gmachu przy ul. Elektoralnej 12", "wiki": null},
+      {"kto": "Janusz Rostworowski", "rola": "przewodniczący komitetu budowy gmachu", "wiki": null},
+      {"kto": "Leon Nencki", "rola": "kierownik pracowni chemiczno-bakteriologicznej od 1881 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital Miejski nr 1 (od 1957)"],
+    "zrodla": [{"tytul": "Wikipedia: Szpital św. Ducha w Warszawie (ul. Elektoralna 12)", "url": "https://pl.wikipedia.org/wiki/Szpital_%C5%9Bw._Ducha_w_Warszawie_%28ul._Elektoralna_12%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Szpital jako instytucja przeniósł się z tego budynku w 1940 roku; istnieje=true dotyczy budynku przy Elektoralnej 12, w którym działa Dom Kultury."
+  },
+  {
+    "id": "szpital-sw-rocha",
+    "nazwa": "Szpital św. Rocha w Warszawie",
+    "name_en": "Saint Roch Hospital in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Krakowskie Przedmieście 24 (1710)",
+    "lat": 52.2396,
+    "lon": 21.0174,
+    "lokalizacja": "przyblizona",
+    "okres": "1707–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szpital św. Rocha założono w 1707 roku; początkowo prowadziło go Bractwo św. Rocha, a w latach 30. XX wieku fundacja pod zarządem miejskim.",
+      "Początkowo szpital mieścił się w domu Czyżykowskiego na Nowym Świecie; w 1710 roku przeniesiono go na ul. Krakowskie Przedmieście 24.",
+      "W 1751 roku szpitalowi oddano w zastaw wieś Rakowiec, którą przejął on dziesięć lat później i założył przy niej folwark, należący do szpitala do 1920 roku.",
+      "W 1936 roku dyrektorem był dr Stanisław Gądek; szpital miał etatowo 102 łóżka, a faktycznie 120.",
+      "W 1944 roku budynek szpitala spłonął; w latach 1947–1948 odbudowano go na siedzibę samorządu studentów UW, organizacji studenckich, PTTK, przychodni i księgarni, włączając go do głównego kampusu UW.",
+      "W budynku ma siedzibę Instytut Kultury Polskiej."
+    ],
+    "ciekawostki": [
+      "W 2026 roku podczas Nocy Muzeów odbył się wernisaż wystawy „Poszpitalne” o dziejach szpitala."
+    ],
+    "summary_en": "The Saint Roch Hospital, founded in 1707 by a confraternity of St Roch, moved to 24 Krakowskie Przedmieście in 1710. It burned in 1944 and was rebuilt in 1947–1948 as part of the University of Warsaw campus, where the Institute of Polish Culture is now based.",
+    "ludzie": [
+      {"kto": "Jan Wężyk", "rola": "biskup poznański, który utworzył parafię i bractwo św. Rocha", "wiki": null},
+      {"kto": "Anna Wolfowa", "rola": "fundatorka parafii, z której wyrosło bractwo", "wiki": null},
+      {"kto": "Stanisław Gądek", "rola": "dyrektor szpitala w 1936 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital chorych płci obojga pod tytułem św. Rocha w Warszawie pod nr 395"],
+    "zrodla": [{"tytul": "Wikipedia: Szpital św. Rocha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szpital_%C5%9Bw._Rocha_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje adresu po odbudowie 1947–1948; lokalizacja z nagłówka, przybliżona. Pominięto fakty o kliniki XIX w. i szkole pielęgniarskiej dla zwięzłości."
+  }
+]

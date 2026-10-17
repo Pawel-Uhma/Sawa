@@ -1,0 +1,322 @@
+[
+  {
+    "id": "rogatki-mokotowskie",
+    "nazwa": "Rogatki Mokotowskie",
+    "name_en": "Mokotowskie Toll Houses",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Unii Lubelskiej 1 i 2",
+    "adres_historyczny": "dawne rondo Mokotowskie",
+    "lat": 52.213239,
+    "lon": 21.021389,
+    "lokalizacja": "dokladna",
+    "okres": "1816–1818",
+    "istnieje": true,
+    "fakty": [
+      "Dwa klasycystyczne pawilony rogatkowe przy placu Unii Lubelskiej 1 i 2 (dawnym rondzie Mokotowskim) wzniesiono w latach 1816–1818.",
+      "Pierwsze rogatki w Warszawie, na Pradze i Golędzinowie powstały po 1770 r., gdy obszar otoczono wałem ziemnym znanym jako okopy Lubomirskiego; pod koniec XVIII w. działało tu 10 rogatek.",
+      "W latach 1816–1823 Jakub Kubicki zaprojektował 18 nowych pawilonów; ustawiono je parami, a każdy zespół miał inny wygląd.",
+      "W jednym pawilonie urzędował dozorca policji (przedstawiciel Urzędu Municypalnego), a w drugim poborca podatkowy, który przyjmował opłaty za wjazd do miasta.",
+      "Pawilony mają plan lekko wygiętego prostokąta z dwukolumnowymi doryckimi wgłębnymi portykami; wygięcie elewacji dostosowano do okrągłego placu.",
+      "Budynki wpisano do rejestru zabytków w 1965 r.; do dziś zachowały się rogatki Mokotowskie i Grochowskie."
+    ],
+    "ciekawostki": [
+      "W 2016 r. w rogatce wschodniej otwarto Muzeum Sue Ryder."
+    ],
+    "summary_en": "Two neoclassical toll pavilions from 1816–1818 on Plac Unii Lubelskiej, the former Mokotów roundabout. Part of a set of 18 pavilions designed by Jakub Kubicki, they are among the few toll houses surviving in Warsaw.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "autor projektu pawilonów (1816–1823)", "wiki": null}
+    ],
+    "dawne_nazwy": ["rondo Mokotowskie"],
+    "zrodla": [{"tytul": "Wikipedia: Rogatki Mokotowskie", "url": "https://pl.wikipedia.org/wiki/Rogatki_Mokotowskie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rondo-1",
+    "nazwa": "Rondo 1",
+    "name_en": "Rondo 1 Office Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "przy rondzie ONZ",
+    "adres_historyczny": null,
+    "lat": 52.2331,
+    "lon": 20.9997,
+    "lokalizacja": "dokladna",
+    "okres": "2003–2006",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektował Larry Oltmanns z pracowni Skidmore, Owings and Merrill przy współpracy z warszawską pracownią AZO; generalnym wykonawcą była firma Hochtief Polska.",
+      "Prace budowlane rozpoczęto na wiosnę 2003 r.; 7 sierpnia 2004 r. wmurowano kamień węgielny, a 7 marca 2006 r. odbyło się uroczyste otwarcie.",
+      "Bryłę tworzy niższa, 10-piętrowa galeria handlowo-usługowa (budynek A, ukończona na początku 2005 r.) i wyższa, 40-piętrowa wieża (budynek B).",
+      "Budynek kosztował 200 mln euro; ma 61 000 m² powierzchni użytkowej, 18 szybkich wind panoramicznych i 2 windy towarowe.",
+      "Wieżowiec przy rondzie ONZ został jako pierwszy w Europie Środkowo-Wschodniej wyposażony w system DALI, sterujący każdą z 36 000 żarówek i 4 000 żaluzji.",
+      "Od grudnia 2009 r. z budynku nadaje Akademickie Radio Kampus; w 2025 r. większość stacji przeniesiono na nadajnik na Varso Tower."
+    ],
+    "ciekawostki": [
+      "Od 2011 r. w biurowcu odbywają się warszawskie zawody w biegach po schodach „Bieg na Szczyt”."
+    ],
+    "summary_en": "A 40-storey glass office tower by Skidmore, Owings and Merrill at the UN roundabout, opened in March 2006 at a cost of 200 million euros. Its eco features include an EU Green Building certificate and LEED Gold.",
+    "ludzie": [
+      {"kto": "Larry Oltmanns", "rola": "architekt, Skidmore, Owings and Merrill", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Rondo 1", "url": "https://pl.wikipedia.org/wiki/Rondo_1"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "rondo-onz-stacja-metra",
+    "nazwa": "Rondo ONZ (stacja metra)",
+    "name_en": "Rondo ONZ Metro Station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pod rondem ONZ, w ciągu ulic Prostej i Świętokrzyskiej",
+    "adres_historyczny": null,
+    "lat": 52.233056,
+    "lon": 20.998333,
+    "lokalizacja": "dokladna",
+    "okres": "2011–2015",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M2 metra leży w dzielnicach Wola i Śródmieście, pod rondem ONZ.",
+      "Pozwolenie na budowę wydano 13 maja 2011 r. (wniosek złożono 14 stycznia 2011 r.); roboty budowlane ruszyły w listopadzie 2011 r.",
+      "Tarcze TBM dotarły na stację w 2012 r.: tarcza Anna 31 sierpnia, a tarcza Maria 3 września.",
+      "Wykonawcą było konsorcjum AGP Metro Polska (decyzja z 28 października 2009 r.); zastosowano metodę odkrywkową podstropową.",
+      "Projekt generalny opracował Andrzej Chołdzyński, a opracowanie graficzne Wojciech Fangor; projekt branż technicznych wykonał Metroprojekt; w projekcie stacja nosiła oznaczenie S8.",
+      "Pozwolenie na użytkowanie uzyskano 27 lutego 2015 r., a stacja została uruchomiona 8 marca 2015 r."
+    ],
+    "ciekawostki": [
+      "Testy pociągów Siemens Inspiro na odcinku Rondo Daszyńskiego – Rondo ONZ rozpoczęto w nocy z 25 na 26 czerwca 2014 r."
+    ],
+    "summary_en": "An M2 metro station under the UN roundabout, built in 2011–2014 and opened on 8 March 2015. Designed by Andrzej Chołdzyński with graphic design by Wojciech Fangor.",
+    "ludzie": [
+      {"kto": "Andrzej Chołdzyński", "rola": "projektant generalny centralnego odcinka II linii metra", "wiki": null},
+      {"kto": "Wojciech Fangor", "rola": "autor opracowania graficznego", "wiki": null}
+    ],
+    "dawne_nazwy": ["C10 (robocze oznaczenie)", "S8 (oznaczenie w projekcie 2008)"],
+    "zrodla": [{"tytul": "Wikipedia: Rondo ONZ (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Rondo_ONZ_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rotunda-pko",
+    "nazwa": "Rotunda PKO",
+    "name_en": "PKO Rotunda",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 100/102",
+    "adres_historyczny": "narożna kamienica Pinkusa Lothego (do 1944 r.)",
+    "lat": 52.230444,
+    "lon": 21.012417,
+    "lokalizacja": "dokladna",
+    "okres": "1966–2017 (dawny budynek); 2019–dziś (nowy budynek)",
+    "istnieje": true,
+    "fakty": [
+      "Rotunda PKO, siedziba Powszechnej Kasy Oszczędności, stała przy ul. Marszałkowskiej 100/102 w latach 1966–2017; w jej miejscu powstał nowy budynek o zbliżonym kształcie, oddany w 2019 r.",
+      "Wcześniej stała tu narożna kamienica Pinkusa Lothego, do 1944 r.; po wojnie ruiny rozebrano do parteru.",
+      "Budynek, część Ściany Wschodniej (1960–1969), zaprojektował Jerzy Jakubowicz; stalową konstrukcję opracowali Stanisław Więcek i Włodzimierz Wojnowski.",
+      "15 lutego 1979 r. wybuch gazu zniszczył budynek w ok. 70%; zginęło 49 osób, a 110 odniosło obrażenia.",
+      "20 stycznia 2015 r. konserwator Piotr Brabander wydał zgodę na rozbiórkę mimo wpisu do rejestru zabytków; 10 marca 2017 r. rozpoczęto rozbiórkę, a 16 marca konserwator Michał Krasucki wstrzymał prace, uznając poprzednią decyzję za oparta na błędnych przesłankach.",
+      "Nową rotundę zaprojektowała pracownia Gowin & Siuta z Krakowa; oddano ją w listopadzie 2019 r."
+    ],
+    "ciekawostki": [
+      "Ze względu na kształt dachu z charakterystycznym ząbkowaniem budynek nazywano „czapką generalską”."
+    ],
+    "summary_en": "The PKO Bank's Rotunda on Marszałkowska, built in 1966 and rebuilt after a 1979 gas explosion. Dismantled in 2017 amid a dispute over heritage protection, it was replaced by a new building of similar shape in 2019.",
+    "ludzie": [
+      {"kto": "Jerzy Jakubowicz", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Stanisław Więcek", "rola": "konstrukcja stalowa", "wiki": null},
+      {"kto": "Włodzimierz Wojnowski", "rola": "konstrukcja stalowa", "wiki": null},
+      {"kto": "Pinkus Lothe", "rola": "właściciel kamienicy na tym miejscu do 1944 r.", "wiki": null},
+      {"kto": "Piotr Brabander", "rola": "stołeczny konserwator zabytków, zgoda na rozbiórkę (2015)", "wiki": null},
+      {"kto": "Michał Krasucki", "rola": "stołeczny konserwator zabytków, wstrzymał prace (2017)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Rotunda PKO w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rotunda_PKO_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord obejmuje miejsce: dawny budynek (rozebrany w 2017) i nowy budynek z 2019 r. Artykuł podaje też, że w 2014 r. bank otrzymał tytuł „Miastoszpeciciela 2014”."
+  },
+  {
+    "id": "rzezba-oswiecim-ii",
+    "nazwa": "Rzeźba Oświęcim II",
+    "name_en": "Oświęcim II Sculpture",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "międzymurze murów obronnych Starego Miasta, na wysokości ul. Rycerskiej 12",
+    "adres_historyczny": null,
+    "lat": 52.2489,
+    "lon": 21.0101,
+    "lokalizacja": "dokladna",
+    "okres": "1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rzeźba autorstwa Franciszka Strynkiewicza stoi w międzymurzu murów obronnych Starego Miasta, między ulicami Podwale i Rycerską, na południe od wylotu ul. Wąski Dunaj.",
+      "Upamiętnienie o wysokości ok. 1 metra składa się z figury z brązu i ponadmetrowego cokołu z piaskowca.",
+      "Przedstawia nagą kobietę z niemowlęciem w pozie pełnej bólu – alegorię męczeństwa w obozie Auschwitz-Birkenau.",
+      "Rzeźbę wykonano w 1945 r. (według innych źródeł w 1948 r.) i odsłonięto w 1957 r.",
+      "W obecnym miejscu ustawiono ją w 1976 r."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A bronze figure of a naked woman with a child on a sandstone plinth, set in the city wall of the Old Town. It is an allegory of martyrdom at Auschwitz-Birkenau, unveiled in 1957.",
+    "ludzie": [
+      {"kto": "Franciszek Strynkiewicz", "rola": "autor rzeźby", "wiki": null}
+    ],
+    "dawne_nazwy": ["Oświęcim II"],
+    "zrodla": [{"tytul": "Wikipedia: Rzeźba Oświęcim II w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rze%C5%BAba_O%C5%9Bwi%C4%99cim_II_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok wykonania 1945 lub 1948; rok odsłonięcia 1957."
+  },
+  {
+    "id": "rzezba-psa-asa",
+    "nazwa": "Rzeźba Psa Asa",
+    "name_en": "Statue of the Dog As",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie, przy Starej Pomarańczarni",
+    "adres_historyczny": null,
+    "lat": 52.21682,
+    "lon": 21.03075,
+    "lokalizacja": "dokladna",
+    "okres": "brak daty ustawienia w artykule",
+    "istnieje": true,
+    "fakty": [
+      "Rzeźba leżącego psa przedstawia wyżła Asa, bohatera noweli Adolfa Dygasińskiego „As”.",
+      "Jest kopią brązowej rzeźby Czesława Makowskiego z 1903 r., będącej elementem nagrobka Adolfa Dygasińskiego na Powązkach.",
+      "Rzeźba została ustawiona przy Starej Pomarańczarni, w miejscu pochówku psów strażniczych Łazienek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A bronze copy of Czesław Makowski's 1903 sculpture of the hunting dog As from Adolf Dygasiński's novella, placed at the Old Orangery in Łazienki Park on the burial site of the park's guard dogs.",
+    "ludzie": [
+      {"kto": "Czesław Makowski", "rola": "autor oryginalnej rzeźby z 1903 r.", "wiki": null},
+      {"kto": "Adolf Dygasiński", "rola": "autor noweli „As”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Rzeźba Psa Asa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rze%C5%BAba_Psa_Asa_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak daty ustawienia kopii w artykule."
+  },
+  {
+    "id": "rzezba-w-holdzie-polskim-artystom-baletu",
+    "nazwa": "Tancerka (W hołdzie polskim artystom baletu)",
+    "name_en": "Dancer (Tribute to Polish Ballet Artists)",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Moliera, przed gmachem Teatru Wielkiego",
+    "adres_historyczny": null,
+    "lat": 52.243551,
+    "lon": 21.011667,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Inicjatorką powstania rzeźby była Bożena Kociołkowska, prezes Fundacji Sztuki Tańca.",
+      "Autor rzeźby Zbigniew Stanuch zdobył pierwszą nagrodę w konkursie, w którym wzięło udział 56 artystów.",
+      "Rzeźbę odsłonięto 8 października 2016 r. przed gmachem Teatru Wielkiego, vis-a-vis Ogólnokształcącej Szkoły Baletowej im. Romana Turczynowicza.",
+      "Przedstawia tancerkę z rozpuszczonymi włosami w pozycji przypominającej arabesque; na postumencie napis „W hołdzie polskim artystom baletu”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A sculpture of a dancer in arabesque pose in front of the Grand Theatre, unveiled in 2016 as a tribute to all generations of Polish dance artists. The winning design came from a competition with 56 entrants.",
+    "ludzie": [
+      {"kto": "Bożena Kociołkowska", "rola": "inicjatorka, prezes Fundacji Sztuki Tańca", "wiki": null},
+      {"kto": "Zbigniew Stanuch", "rola": "autor rzeźby", "wiki": null}
+    ],
+    "dawne_nazwy": ["Tancerka"],
+    "zrodla": [{"tytul": "Wikipedia: Rzeźba „W hołdzie polskim artystom baletu”", "url": "https://pl.wikipedia.org/wiki/Rze%C5%BAba_%E2%80%9EW_ho%C5%82dzie_polskim_artystom_baletu%E2%80%9D"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rzeznia-miejska-solec",
+    "nazwa": "Rzeźnia miejska na Solcu",
+    "name_en": "Municipal Slaughterhouse on Solec",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Solec 24 (dwa zachowane pawilony)",
+    "adres_historyczny": "rzeźnia miejska przy ul. Solec, między ul. Solec a ul. Wioślarską",
+    "lat": 52.233625,
+    "lon": 21.036347,
+    "lokalizacja": "dokladna",
+    "okres": "1840–ok. 1930 (rzeźnia); od 1983 Muzeum Azji i Pacyfiku w pawilonach",
+    "istnieje": true,
+    "fakty": [
+      "Rzeźnia działała w Warszawie w latach 1840–1930 przy ul. Solec, między ulicą Solec a Wioślarską.",
+      "Murowane zabudowania wzniesiono w latach 1853–1856 według projektu Piotra Frydrycha, który w 1849 r. odwiedził rzeźnie w Niemczech, Belgii i Paryżu.",
+      "Rzeźnię zlikwidowano około 1930 r. w związku z pracami regulacyjnymi brzegu Wisły; większość zabudowań zniszczono w czasie II wojny światowej.",
+      "W powstaniu warszawskim 1140 pluton (plut. pchor. Zdzisław Gatkowski „Prus”) z 3 kompanii III zgrupowania por. Juliusza Szawdyna „Konrada” bronił tych terenów; 1 sierpnia 1944 r. zaatakował stąd most Poniatowskiego (tablica na zachowanym budynku).",
+      "Wypalony obiekt zburzono w 1952 r., wbrew ustaleniom konserwatorskim; zachowały się dwa narożne pawilony, wpisane do rejestru zabytków 1 lipca 1965 r. (nr 648).",
+      "Ocalałe pawilony przy Solcu od 1983 r. mieszczą Muzeum Azji i Pacyfiku; w 2014 r. zakończono budowę apartamentowca Pacific Residence, którego parter przeznaczono na nową siedzibę muzeum."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A municipal slaughterhouse on Solec, in use from 1840 to about 1930. Only two corner pavilions survived the war and are listed monuments; since 1983 they house the Museum of Asia and the Pacific.",
+    "ludzie": [
+      {"kto": "Piotr Frydrych", "rola": "projektant zabudowań (1853–1856)", "wiki": null},
+      {"kto": "Zdzisław Gatkowski „Prus”", "rola": "plutonowy pchorąż, 1140 pluton w powstaniu", "wiki": null},
+      {"kto": "Juliusz Szawdyn „Konrad”", "rola": "porucznik, dowódca III zgrupowania", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Rzeźnia miejska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rze%C5%BAnia_miejska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "row-piaseczynski",
+    "nazwa": "Rów Piaseczyński",
+    "name_en": "Piaseczyński Ditch",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Park Arkadia, wzdłuż ul. Piaseczyńskiej, do Łazienek",
+    "adres_historyczny": null,
+    "lat": 52.207417,
+    "lon": 21.034444,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rów wodny o długości ok. 2,05 km (wraz ze stawem Arkadia) leży w dzielnicach Mokotów i Śródmieście, w zlewni Kanału Głównego „A”.",
+      "Został wybudowany w XVIII w. w celu odprowadzania wód źródlanych ze skarpy warszawskiej.",
+      "Początkowy odcinek płynie przez Park Arkadia (połączenie Stawu pod Królikarnią i stawu Arkadia), a dalej otwartym rowem wzdłuż ul. Piaseczyńskiej.",
+      "Przy ul. Konduktorskiej wpada do kolektora podziemnego; zarurowany odcinek mija ul. Jurija Gagarina i uchodzi do układu stawów w Łazienkach.",
+      "Dalej woda płynie stawami w Łazienkach i Kanałem Piaseczyńskim do basenu Portu Czerniakowskiego, a finalnie do Wisły."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An 18th-century drainage ditch that carries spring water from the Warsaw escarpment through Arkadia Park and the Łazienki ponds to the Vistula. Part of the Arkadia nature-landscape complex.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Rów Piaseczyński", "url": "https://pl.wikipedia.org/wiki/R%C3%B3w_Piaseczy%C5%84ski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (ogólny punkt rowu)."
+  },
+  {
+    "id": "sala-kongresowa",
+    "nazwa": "Sala Kongresowa",
+    "name_en": "Congress Hall",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Pałac Kultury i Nauki",
+    "adres_historyczny": null,
+    "lat": 52.231581,
+    "lon": 21.005229,
+    "lokalizacja": "dokladna",
+    "okres": "PRL–dziś (zamknięta od 2014 r.)",
+    "istnieje": true,
+    "fakty": [
+      "Sala może pomieścić 2880 widzów na trzech poziomach: amfiteatrze, lożach i balkonach; zachowała oryginalny wystrój, głównie socrealistyczny.",
+      "W czasach PRL odbywały się tu zjazdy PZPR, w tym ostatni, XI Zjazd, w styczniu 1990 r.",
+      "Koncert The Rolling Stones w 1967 r. był jednym z pierwszych koncertów zachodniej grupy za żelazną kurtyną; występowały tu też Marlena Dietrich, King Crimson i Procol Harum (trzykrotnie).",
+      "W 2007 r. wpisano Pałac Kultury do rejestru zabytków; jedną z przyczyn była planowana przebudowa sali na teatr muzyczny.",
+      "8 marca 2008 r. salę zamknięto z powodu obaw o stabilność sufitu, a 11 marca ponownie otwarto.",
+      "We wrześniu 2014 r. rozpoczęto remont, szacowany na ok. 45 mln zł; wiosną 2016 r. wykonawca ogłosił upadłość.",
+      "W 2026 r. ratusz poinformował, że remont ma się zakończyć w 2027 r. i kosztować ponad 470 mln zł."
+    ],
+    "ciekawostki": [
+      "W sierpniu 2018 r. Rada m.st. Warszawy przyznała na remont 183 mln zł."
+    ],
+    "summary_en": "The 2,880-seat hall in the Palace of Culture and Science, home to PZPR congresses and many concerts in the communist era. Closed for renovation since 2014, with the works repeatedly delayed.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Sala Kongresowa", "url": "https://pl.wikipedia.org/wiki/Sala_Kongresowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok 2026 jako datę informacji o terminie remontu; zachowano dane z tekstu."
+  }
+]

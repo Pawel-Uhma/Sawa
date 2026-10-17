@@ -1,0 +1,364 @@
+[
+  {
+    "id": "muzeum-narodowe-w-warszawie",
+    "nazwa": "Muzeum Narodowe w Warszawie",
+    "name_en": "National Museum in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. 3 Maja",
+    "adres_historyczny": null,
+    "lat": 52.231666666,
+    "lon": 21.024722222,
+    "lokalizacja": "dokladna",
+    "okres": "1862–dziś (gmach 1927–1938)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało powołane w 1862 roku jako Muzeum Sztuk Pięknych w Warszawie; pierwszym dyrektorem był Justynian Karnicki.",
+      "Od 1916 roku muzeum było instytucją miejską i otrzymało nazwę Muzeum Narodowe.",
+      "W 1926 roku wrócono do budowy nowego gmachu; plac przy alei 3 Maja został zakupiony w 1912 roku od Warszawskiego Konsystorza Prawosławnego za 1 mln 105 tys. rubli, a wcześniej znajdował się tu Ogród Wahla.",
+      "Kamień węgielny wmurowano 15 czerwca 1927 roku; gmach zaprojektowali Tadeusz Tołwiński i Antoni Dygat.",
+      "Uroczyste otwarcie ukończonego gmachu nastąpiło 18 czerwca 1938 roku.",
+      "Gmach został uszkodzony w czasie obrony Warszawy we wrześniu 1939 roku; w czasie wojny muzeum przemianowano na Museum der Stadt Warschau.",
+      "W 1945 roku muzeum zostało znacjonalizowane."
+    ],
+    "ciekawostki": [
+      "Muzeum ma kilka obrazów z prywatnej kolekcji Adolfa Hitlera, przekazanych przez władze amerykańskie w powojennych Niemczech.",
+      "W 2010 roku muzeum jako jedna z pierwszych instytucji państwowych w Europie Środkowo-Wschodniej zorganizowało wystawę Ars Homo Erotica."
+    ],
+    "summary_en": "The National Museum in Warsaw was founded in 1862 as the Museum of Fine Arts. Its modernist building on the Al. 3 Maja was designed by Tadeusz Tołwiński and Antoni Dygat and opened in 1938, and much of its collection was lost during the German occupation.",
+    "ludzie": [
+      {"kto": "Justynian Karnicki", "rola": "pierwszy dyrektor muzeum (do 1876)", "wiki": null},
+      {"kto": "Cyprian Lachnicki", "rola": "dyrektor muzeum w latach 1876–1906", "wiki": null},
+      {"kto": "Bronisław Gembarzewski", "rola": "dyrektor muzeum w latach 1916–1936", "wiki": null},
+      {"kto": "Stanisław Lorentz", "rola": "dyrektor muzeum od 1936 roku (do 1982, z przerwą na wojnę)", "wiki": null},
+      {"kto": "Tadeusz Tołwiński", "rola": "współprojektant gmachu", "wiki": null},
+      {"kto": "Antoni Dygat", "rola": "współprojektant gmachu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Sztuk Pięknych w Warszawie", "Museum der Stadt Warschau"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Narodowe w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Narodowe_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru budynku; adres to al. 3 Maja z tekstu. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "muzeum-niepodleglosci-w-warszawie",
+    "nazwa": "Muzeum Niepodległości w Warszawie (pałac Przebendowskich)",
+    "name_en": "Museum of Independence in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. „Solidarności” 62",
+    "adres_historyczny": null,
+    "lat": 52.24527778,
+    "lon": 21.00416667,
+    "lokalizacja": "dokladna",
+    "okres": "1990–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało utworzone 30 stycznia 1990 roku w wyniku przekształcenia Muzeum Historii Polskiego Ruchu Rewolucyjnego oraz Muzeum Lenina.",
+      "Siedziba główna mieści się w pałacu Przebendowskich przy al. „Solidarności” 62.",
+      "Muzeum ma cztery oddziały: Muzeum X Pawilonu Cytadeli Warszawskiej, Muzeum Więzienia Pawiak, Mauzoleum Walki i Męczeństwa oraz Muzeum Bitwy Warszawskiej 1920 roku w Radzyminie.",
+      "Organizatorem muzeum jest samorząd województwa mazowieckiego.",
+      "Dyrektorami byli dr Andrzej Stawarz (1990–2009) i dr Tadeusz Skoczek (2009–2026)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Museum of Independence was created in 1990 from the former Lenin Museum and the Museum of the Polish Revolutionary Movement. Its main seat is in the Przebendowski Palace on Solidarności Avenue, and it runs four branches including Pawiak prison.",
+    "ludzie": [
+      {"kto": "Andrzej Stawarz", "rola": "dyrektor muzeum w latach 1990–2009", "wiki": null},
+      {"kto": "Tadeusz Skoczek", "rola": "dyrektor muzeum w latach 2009–2026", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Historii Polskich Ruchów Niepodległościowych i Społecznych", "Muzeum Historii Polskiego Ruchu Rewolucyjnego", "Muzeum Lenina w Warszawie"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Niepodległości w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Niepodleg%C5%82o%C5%9Bci_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam pałac co rekord muzeum-lenina-w-warszawie; tu opisane jest obecne muzeum."
+  },
+  {
+    "id": "muzeum-ordynariatu-polowego",
+    "nazwa": "Muzeum Ordynariatu Polowego",
+    "name_en": "Field Chaplaincy Museum",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa 13/15",
+    "adres_historyczny": null,
+    "lat": 52.24909,
+    "lon": 21.00709,
+    "lokalizacja": "dokladna",
+    "okres": "2010–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum znajduje się w podziemiach katedry polowej Wojska Polskiego przy ul. Długiej 13/15.",
+      "Zostało utworzone w grudniu 2010 roku jako oddział Muzeum Warszawy.",
+      "W 2022 roku placówkę oddano pod zarząd parafii katedralnej Najświętszej Maryi Panny Królowej Polski wraz z jej wyposażeniem; Muzeum Warszawy udostępniło część swoich muzealiów.",
+      "Ekspozycja przedstawia historię katolickiego duszpasterstwa wojskowego od chrztu Polski do czasów współczesnych.",
+      "W zbiorach są m.in. przedmioty rzemiosła artystycznego z połowy XVII wieku, ołtarze polowe, mundury, paramenty liturgiczne, dokumenty i fotografie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Field Chaplaincy Museum is located in the crypt of the Polish Army field cathedral on Długa street. It was opened in 2010 as a branch of the Warsaw Museum and in 2022 was handed over to the cathedral parish.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Ordynariatu Polowego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Ordynariatu_Polowego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-przemyslu-i-rolnictwa-krakowskie-przedmiescie",
+    "nazwa": "Muzeum Przemysłu i Rolnictwa (gmach przy Krakowskim Przedmieściu)",
+    "name_en": "Museum of Industry and Agriculture (Krakowskie Przedmieście building)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Krakowskie Przedmieście (dawny odwach i klasztor bernardyński)",
+    "lat": 52.24583333,
+    "lon": 21.01416667,
+    "lokalizacja": "przyblizona",
+    "okres": "1881–1939",
+    "istnieje": false,
+    "fakty": [
+      "Muzeum Przemysłu i Rolnictwa zostało utworzone w 1875 roku z prywatnych funduszy arystokracji i ziemian z inicjatywy księcia Jana Tadeusza Lubomirskiego.",
+      "Od 1881 roku muzeum mieściło się przy Krakowskim Przedmieściu w dawnym odwachu i klasztorze bernardyńskim.",
+      "W latach 1884–1888 przebudowano wnętrza na pomieszczenia muzeum.",
+      "W latach 1890–1891 w pracowni fizycznej muzeum prowadziła doświadczenia Maria Skłodowska-Curie; upamiętniono to tablicą z brązu odsłoniętą w czerwcu 1935 roku na frontowej ścianie budynku.",
+      "Budynek muzeum i większość jego zbiorów zostały zniszczone podczas obrony Warszawy we wrześniu 1939 roku."
+    ],
+    "ciekawostki": [
+      "Pod egidą muzeum w latach 1890–1902 opublikowano 11-tomową Encyklopedię rolniczą."
+    ],
+    "summary_en": "The Museum of Industry and Agriculture, founded in 1875, was housed from 1881 in a former guardhouse and Bernardine monastery on Krakowskie Przedmieście. Maria Skłodowska-Curie worked in its physics lab in 1890–1891, and the building was destroyed in 1939.",
+    "ludzie": [
+      {"kto": "Jan Tadeusz Lubomirski", "rola": "książę, inicjator powstania muzeum w 1875 roku", "wiki": null},
+      {"kto": "Maria Skłodowska-Curie", "rola": "prowadziła doświadczenia w pracowni fizycznej muzeum w latach 1890–1891", "wiki": null},
+      {"kto": "Stanisław Leśniowski", "rola": "dyrektor muzeum w latach 1924–1951", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Przemysłu i Rolnictwa"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Przemysłu i Rolnictwa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Przemys%C5%82u_i_Rolnictwa_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje numeru budynku przy Krakowskim Przedmieściu; współrzędne z nagłówka artykułu, stąd lokalizacja przybliżona. Muzeum zostało zniszczone w 1939 roku, ale tradycje kontynuują inne instytucje."
+  },
+  {
+    "id": "muzeum-rzemiosl-artystycznych-i-precyzyjnych",
+    "nazwa": "Muzeum Rzemiosł Artystycznych i Precyzyjnych (Muzeum Zegarów)",
+    "name_en": "Museum of Artistic and Precision Crafts (Clock Museum)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piekarska",
+    "adres_historyczny": null,
+    "lat": 52.2483,
+    "lon": 21.0106,
+    "lokalizacja": "dokladna",
+    "okres": "1966–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum powstało w 1966 roku z inicjatywy członków Cechu Złotników, Zegarmistrzów, Optyków, Grawerów i Brązowników m.st. Warszawy.",
+      "Zostało udostępnione zwiedzającym w czerwcu 1971 roku.",
+      "Największą część zbiorów stanowią zegary z XVIII–XX wieku, stąd potoczna nazwa Muzeum Zegarów.",
+      "Muzeum mieści się w kamienicy wzniesionej w połowie XIX wieku, odbudowanej ze składek rzemieślników w latach 1959–1961; od zachodu na parterze odsłonięto fragment muru obronnego.",
+      "Na fasadzie kamienicy jest zegar z kurantem, który wygrywa pierwsze takty melodii do wiersza Marii Konopnickiej „A jak poszedł król na wojnę”."
+    ],
+    "ciekawostki": [
+      "Muzeum nie jest dostępne dla publiczności i można je zwiedzać wyłącznie po wcześniejszym uzgodnieniu."
+    ],
+    "summary_en": "The Museum of Artistic and Precision Crafts on Piekarska street in the Old Town is known as the Clock Museum. It is housed in a mid-19th-century tenement rebuilt by craftsmen in 1959–1961, and its façade carries a clock that plays a tune.",
+    "ludzie": [
+      {"kto": "Wacław Makowski", "rola": "autor tarczy zegara z mozaiką zodiaku na fasadzie kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Zegarów"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Rzemiosł Artystycznych i Precyzyjnych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Rzemios%C5%82_Artystycznych_i_Precyzyjnych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje tylko ulicę (Piekarska); współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "muzeum-sztuki-nowoczesnej-marszalkowska-103",
+    "nazwa": "Muzeum Sztuki Nowoczesnej (siedziba przy Marszałkowskiej 103)",
+    "name_en": "Museum of Modern Art Warsaw (Marszałkowska 103 building)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 103 (pl. Defilad)",
+    "adres_historyczny": "ul. Pańska 3 (tymczasowa siedziba 2008–2017); Wybrzeże Kościuszkowskie 22 („Muzeum nad Wisłą”, 2017–2024)",
+    "lat": 52.23319,
+    "lon": 21.00883,
+    "lokalizacja": "dokladna",
+    "okres": "2024–dziś (siedziba); 2005–dziś (muzeum)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało założone w 2005 roku; w latach 2005–2022 było współprowadzone przez Ministerstwo Kultury i Dziedzictwa Narodowego i miasto.",
+      "Od stycznia 2008 do marca 2017 roku muzeum działało w tymczasowej siedzibie przy ul. Pańskiej 3.",
+      "W 2012 roku urząd miasta zerwał umowę z architektem Christianem Kerezem, który wygrał konkurs w 2007 roku.",
+      "Ostatecznie projekt budynku powierzono w 2014 roku nowojorskiej pracowni Thomas Phifer and Partners; budynek ma około 19 800 m² powierzchni użytkowej.",
+      "25 października 2024 roku oddano do użytku siedzibę przy ul. Marszałkowskiej 103, na pl. Defilad, w miejscu dawnej hali Kupieckich Domów Towarowych."
+    ],
+    "ciekawostki": [
+      "Fasada to podwieszana fasada z białego betonu architektonicznego barwionego w masie, wykonana po raz pierwszy w Polsce, a także w Europie."
+    ],
+    "summary_en": "The Museum of Modern Art Warsaw opened its permanent building on Plac Defilad at Marszałkowska 103 in October 2024, after years in temporary venues. The building, with a white concrete façade, replaced a long-delayed design by Christian Kerez.",
+    "ludzie": [
+      {"kto": "Christian Kerez", "rola": "szwajcarski architekt, zwycięzca konkursu z 2007 roku; umowa zerwana w 2012", "wiki": null},
+      {"kto": "Thomas Phifer and Partners", "rola": "pracownia architektoniczna autorów ostatecznego projektu z 2014 roku", "wiki": null},
+      {"kto": "Joanna Mytkowska", "rola": "dyrektorka muzeum od 2007 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Sztuki Nowoczesnej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Sztuki_Nowoczesnej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-teatralne-w-warszawie",
+    "nazwa": "Muzeum Teatralne w Warszawie",
+    "name_en": "Theatre Museum in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.243,
+    "lon": 21.011,
+    "lokalizacja": "dokladna",
+    "okres": "1957–dziś (w gmachu Teatru Wielkiego od 1965)",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1957–1966 muzeum działało jako oddział Muzeum Historycznego m.st. Warszawy.",
+      "Od 1965 roku działa w gmachu i w strukturze Teatru Wielkiego, we wnętrzach zaprojektowanych przez Mieczysława Pipreka.",
+      "Współzałożycielką muzeum była Ewa Jeglińska.",
+      "Kolekcja liczy kilkadziesiąt tysięcy obiektów, zarówno muzealiów, jak i archiwaliów.",
+      "W muzeum wydzielono archiwa tematyczne, m.in. Archiwum Teatru Polskiego, Leona Schillera, Juliusza Osterwy i Tadeusza Łomnickiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Theatre Museum is Poland's central theatre museum. Since 1965 it has been housed within the Grand Theatre building in Warsaw, in interiors designed by Mieczysław Piprek.",
+    "ludzie": [
+      {"kto": "Mieczysław Pipreka", "rola": "projektant wnętrz gmachu Teatru Wielkiego, w którym mieści się muzeum", "wiki": null},
+      {"kto": "Ewa Jeglińska", "rola": "współzałożycielka muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Teatralne w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Teatralne_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje adresu; rekord dotyczy gmachu Teatru Wielkiego."
+  },
+  {
+    "id": "muzeum-uniwersytetu-warszawskiego",
+    "nazwa": "Muzeum Uniwersytetu Warszawskiego",
+    "name_en": "University of Warsaw Museum",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 32 (pałac Tyszkiewiczów)",
+    "adres_historyczny": "Pałac Kazimierzowski; gmach obecnego Wydziału Historycznego (od 1820)",
+    "lat": 52.2403,
+    "lon": 21.0167,
+    "lokalizacja": "dokladna",
+    "okres": "1817–dziś (w obecnym pałacu od 2000)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum ma siedzibę w klasycystycznym pałacu Tyszkiewiczów przy ul. Krakowskie Przedmieście 32, dokąd przeniesiono zbiory w 2000 roku.",
+      "W 1820 roku zbiory muzeum ulokowano w gmachu obecnego Wydziału Historycznego, zwanym Gmachem Pomuzealnym; w Sali Kolumnowej prezentowano odlewy gipsowe rzeźby.",
+      "Muzeum w tym kształcie przetrwało do 1831 roku, kiedy władze rosyjskie zamknęły uniwersytet, a najcenniejsze zbiory skonfiskowano i wywieziono do Rosji.",
+      "W 1869 roku podbibliotekarz Hipolit Skimborowicz urządził w Pałacu Kazimierzowskim Muzeum Starożytności.",
+      "Od stycznia 2015 roku w Sali Stołowej pałacu Tyszkiewiczów dostępna jest wystawa stała „Orzeł i pięć gwiazd Uniwersytetu”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The University of Warsaw Museum is housed in the Tyszkiewicz Palace on Krakowskie Przedmieście 32. Its collections go back to 1817 and to the university's 1831 closure by Russian authorities.",
+    "ludzie": [
+      {"kto": "Hipolit Skimborowicz", "rola": "podbibliotekarz, który w 1869 roku urządził Muzeum Starożytności", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Starożytności"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Uniwersytetu_Warszawskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord łączy pałac Tyszkiewiczów (siedziba muzeum) i historyczne lokalizacje zbiorów."
+  },
+  {
+    "id": "muzeum-warszawy",
+    "nazwa": "Muzeum Warszawy",
+    "name_en": "Warsaw Museum",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta (kamienice po stronie Dekerta) i ul. Nowomiejska",
+    "adres_historyczny": "kamienice Baryczkowska, Kleinpoldowska i Pod Murzynkiem (1936)",
+    "lat": 52.250227,
+    "lon": 21.011683,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś (siedziba w obecnych kamienicach od 1955)",
+    "istnieje": true,
+    "fakty": [
+      "Siedziba muzeum mieści się w jedenastu połączonych kamienicach Starego Miasta: ośmiu po stronie Dekerta na Rynku oraz trzech przy ul. Nowomiejskiej.",
+      "Placówka powstała w 1936 roku jako Muzeum Dawnej Warszawy, w trzech kamienicach kupionych przez magistrat na rynku: Baryczkowskiej, Kleinpoldowskiej i Pod Murzynkiem.",
+      "Siedziba wraz z dużą częścią zbiorów została zniszczona w 1944 roku podczas powstania warszawskiego.",
+      "Kamienice odbudowano w latach 1948–1954 w ramach rekonstrukcji Starego Miasta, a muzeum otwarto 17 stycznia 1955 roku.",
+      "W latach 2010–2012 przeprowadzono renowację piwnic pod ośmioma kamienicami po stronie Dekerta; podczas wykopalisk znaleziono skarb 1211 monet z lat od pierwszej połowy XVII do początku XVIII wieku.",
+      "Wyremontowane piwnice udostępniono zwiedzającym podczas Nocy Muzeów w maju 2012 roku."
+    ],
+    "ciekawostki": [
+      "W sezonie letnim czynna jest stała wystawa Muzeum w warszawskim Barbakanie, poświęcona Staremu Miastu i murom obronnym.",
+      "W 1947 roku inwentarz muzeum liczył 169 przedmiotów."
+    ],
+    "summary_en": "The Warsaw Museum occupies eleven connected tenement houses in the Old Town, eight on the Market Square and three on Nowomiejska street. The houses were rebuilt in 1948–1954, and the museum opened in 1955 after the destruction of 1944.",
+    "ludzie": [
+      {"kto": "Antoni Wieczorkiewicz", "rola": "kustosz placówki od 1937 roku; aresztowany przez okupanta w 1941 roku, zmarł w Auschwitz-Birkenau", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Dawnej Warszawy", "Muzeum Historyczne m.st. Warszawy"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Warszawy", "url": "https://pl.wikipedia.org/wiki/Muzeum_Warszawy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "muzeum-wiezienia-pawiak",
+    "nazwa": "Muzeum Więzienia Pawiak",
+    "name_en": "Pawiak Prison Museum",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzielna 24/26",
+    "adres_historyczny": null,
+    "lat": 52.246278,
+    "lon": 20.991,
+    "lokalizacja": "dokladna",
+    "okres": "1939–1944 (więzienie); 1965–dziś (muzeum)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum upamiętnia działalność więzienia Pawiak w czasie okupacji niemieckiej w latach 1939–1944.",
+      "Placówka została otwarta 28 listopada 1965 roku; zaprojektowali ją Romuald Gutt i Mieczysław Mołdawa.",
+      "Budynek muzeum wzniesiono na ocalałych fundamentach kazamat VII i VIII oddziału więzienia, wysadzonego przez Niemców w sierpniu 1944 roku.",
+      "6 grudnia 1943 roku na wadze węglowej publicznie powieszono trzech więźniów za próbę ucieczki; miejsce oznaczono na zrekonstruowanym dziedzińcu marmurową płytą.",
+      "Pomnik Drzewa Pawiackiego to brązowa kopia wiązu, na którym rodziny ofiar od 1945 roku umieszczały tabliczki epitafijne."
+    ],
+    "ciekawostki": [
+      "Kartoteka osobowa więźniów z lat 1939–1944 jest odtworzona w około 50%, bo oryginalna dokumentacja została zniszczona przez Niemców."
+    ],
+    "summary_en": "The Pawiak Prison Museum at Dzielna 24/26 commemorates the German occupation prison of Pawiak, which operated from 1939 to 1944. The museum building was erected on the surviving foundations of cells destroyed in 1944, and it has been a branch of the Museum of Independence since 1990.",
+    "ludzie": [
+      {"kto": "Romuald Gutt", "rola": "współautor założenia architektonicznego muzeum", "wiki": null},
+      {"kto": "Mieczysław Mołdawa", "rola": "współautor założenia architektonicznego muzeum", "wiki": null},
+      {"kto": "Zofia Pociłowska", "rola": "autorka obelisku na dziedzińcu więziennym", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Więzienia Pawiak", "url": "https://pl.wikipedia.org/wiki/Muzeum_Wi%C4%99zienia_Pawiak"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy terenu więzienia i muzeum przy Dzielnej 24/26; od 1990 roku muzeum jest oddziałem Muzeum Niepodległości."
+  },
+  {
+    "id": "muzeum-wodki-w-warszawie",
+    "nazwa": "Muzeum Wódki w Warszawie",
+    "name_en": "Vodka Museum in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wierzbowa 11",
+    "adres_historyczny": null,
+    "lat": 52.243417,
+    "lon": 21.007639,
+    "lokalizacja": "dokladna",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Oficjalne otwarcie muzeum odbyło się 16 grudnia 2017 roku; powstało z inicjatywy Piotra Popińskiego.",
+      "Muzeum posiada 10 tysięcy eksponatów, pochodzących w większości z prywatnej kolekcji Piotra Popińskiego i Adama Łukawskiego.",
+      "Muzeum jest częścią Domu Wódki, którego misją jest propagowanie tradycji kulinarnych i gorzelniczych Polski.",
+      "W maju 2018 roku Muzeum Wódki wraz z Domem Wódki otrzymało nagrodę Orła Wprost, a w czerwcu 2018 roku godło „Teraz Polska”.",
+      "Muzeum jest jednym z dwóch muzeów o wódce w Warszawie; drugim jest Muzeum Polskiej Wódki."
+    ],
+    "ciekawostki": [
+      "W zbiorach jest kieliszek Napoleona Bonaparte oraz manierka na wódkę, używana przez armię napoleońską w czasie marszu na Moskwę.",
+      "Najstarszym z ponad 100-letnich, nigdy nieotwieranych butelek jest likier ziołowy „Altvater” z fabryki Zygfryda Gesslera z Bielska-Białej, wyprodukowany około 1890 roku."
+    ],
+    "summary_en": "The Vodka Museum at Wierzbowa 11 opened in December 2017 and documents the history of Polish distilling and vodka culture. Its collection of around 10,000 objects includes bottles, labels, posters and a Napoleonic flask.",
+    "ludzie": [
+      {"kto": "Piotr Popiński", "rola": "inicjator muzeum; współkolekcjoner", "wiki": null},
+      {"kto": "Adam Łukawski", "rola": "kolekcjoner, którego zbiory weszły w skład muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Wódki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_W%C3%B3dki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "id": "ulica-swietokrzyska",
+    "nazwa": "Ulica Świętokrzyska",
+    "name_en": "Świętokrzyska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętokrzyska",
+    "adres_historyczny": null,
+    "lat": 52.2334876,
+    "lon": 20.9994265,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa, potwierdzona urzędowo w 1770, pochodzi pośrednio od kościoła św. Krzyża.",
+      "W 1828 w rejonie Świętokrzyskiej powstała duża fabryka metalurgiczna Karola Mintera wraz z pałacykiem właściciela.",
+      "W 1868 w zabudowaniach dawnej fabryki uruchomiono pocztę.",
+      "W latach 1922–1923 na rogu ulic Świętokrzyskiej i Jasnej wzniesiono gmach Pocztowej Kasy Oszczędności zaprojektowany przez Józefa Handzlewicza.",
+      "Od 4 sierpnia do 5 września 1944 w gmachu PKO mieścił się m.in. Sztab Komendy Okręgu Warszawa Armii Krajowej.",
+      "W czerwcu 2011 rozpoczęto pod ulicą budowę linii M2 warszawskiego metra; ulicę zamknięto dla ruchu kołowego na czas budowy.",
+      "Ponowne otwarcie po modernizacji nastąpiło 30 września 2014."
+    ],
+    "ciekawostki": [
+      "Od końca XIX wieku do wybuchu II wojny światowej ulica między Nowym Światem a ulicą Jasną była znana jako miejsce handlu starymi i używanymi książkami; działało tu kilkanaście antykwariatów.",
+      "W październiku 2015 przy skrzyżowaniu z ul. Nowy Świat powstała pierwsza w Warszawie śluza rowerowa."
+    ],
+    "summary_en": "Świętokrzyska is a street in the Śródmieście district of Warsaw. It was known for second-hand bookshops before World War II, lost most of its buildings in 1939, and was widened during the post-war reconstruction. Its M2 metro section opened in 2014.",
+    "ludzie": [
+      {"kto": "Józef Handzlewicz", "rola": "projektant gmachu Pocztowej Kasy Oszczędności (1922–1923)", "wiki": null},
+      {"kto": "Karol Mintera", "rola": "właściciel fabryki metalurgicznej z 1828 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Świętokrzyska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%9Awi%C4%99tokrzyska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-sw-barbary",
+    "nazwa": "Ulica św. Barbary",
+    "name_en": "St. Barbara Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. św. Barbary",
+    "adres_historyczny": "ul. Barbary (do 2012)",
+    "lat": 52.2269487,
+    "lon": 21.0079312,
+    "lokalizacja": "przyblizona",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę przeprowadzono w 1898 na terenach rozparcelowanej walcowni Koszyki; pracami kierował Władysław Kozłowski.",
+      "Nazwa pochodzi od cmentarnej kaplicy św. Barbary przy ulicy Wspólnej, na terenie nieistniejącego cmentarza Świętokrzyskiego.",
+      "W latach 1898–1899 ulicę zabudowano trzypiętrowymi kamienicami.",
+      "W latach 1928–1933 na działce między ulicami Nowogrodzką, Poznańską i św. Barbary wzniesiono modernistyczny Gmach Urzędu Telekomunikacyjnego i Telegraficznego.",
+      "Wypalone w 1944 domy rozebrano w okresie powojennym; ocalała jedynie kamienica sióstr Tołwińskich, zrewitalizowana w 2017.",
+      "W latach 1950–1952 przy ulicy powstały dwa budynki projektu Marka Leykama: Biurowiec Prezydium Rządu oraz jeden z „żyletkowców” – gmach Centrali Biura Studiów i Projektów Budownictwa Przemysłowego.",
+      "W listopadzie 2012 Rada Warszawy zmieniła nazwę ulicy z Barbary na św. Barbrary."
+    ],
+    "ciekawostki": [
+      "Pod zamykającym ulicę murem cmentarza ustawiono „Bożą Mękę”, krzyż przeniesiony z ulic Marszałkowskiej i Nowogrodzkiej przy okazji przebijania ulicy Poznańskiej; od XVIII wieku był drogowskazem dla konduktów pogrzebowych.",
+      "Kamienica sióstr Tołwińskich mieściła przed 1939 rokiem Gimnazjum Fizjologiczne Stefanii Tołwińskiej, a od 1920 roku XI Państwowe Żeńskie Gimnazjum i Liceum im. Marii Konopnickiej."
+    ],
+    "summary_en": "St. Barbara Street in Śródmieście was laid out in 1898 on the site of a former rolling mill. Named after a chapel at the old Świętokrzyski cemetery, it was rebuilt after 1944 with modernist and 1950s office buildings. It was renamed in 2012.",
+    "ludzie": [
+      {"kto": "Władysław Kozłowski", "rola": "kierował pracami przy wytyczeniu ulicy (1898)", "wiki": null},
+      {"kto": "Marek Leykam", "rola": "projektant dwóch budynków z lat 1950–1952", "wiki": null},
+      {"kto": "Stefania Tołwińska", "rola": "patronka Gimnazjum Fizjologicznego w kamienicy sióstr Tołwińskich", "wiki": null}
+    ],
+    "dawne_nazwy": ["Barbary (do listopada 2012)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica św. Barbary w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%9Bw._Barbary_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście źródłowym nazwa po zmianie z 2012 roku zapisana jest jako „św. Barbrary” (prawdopodobny błąd w artykule)."
+  },
+  {
+    "id": "ulica-zurawia",
+    "nazwa": "Ulica Żurawia",
+    "name_en": "Żurawia Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Żurawia",
+    "adres_historyczny": "ul. Żórawia (przed 1945)",
+    "lat": 52.2283248,
+    "lon": 21.0148317,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od płynącej tam kiedyś rzeki Żurawki.",
+      "Ulica zaczyna się na północnym krańcu placu Trzech Krzyży, a kończy na skrzyżowaniu z ul. Poznańską.",
+      "Zabudowa ulicy ucierpiała w czasie obrony Warszawy we wrześniu 1939.",
+      "W czasie II wojny światowej pod nr 24 mieściła się siedziba Żegoty.",
+      "Klasycystyczna kamienica (nr 2) wzniesiona ok. 1870 roku według projektu Adolfa Wolińskiego.",
+      "Wczesnomodernistyczna kamienica wzniesiona ok. 1910 roku według projektu Edwarda Ebera."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Żurawia runs from Plac Trzech Krzyży towards Poznańska Street in Śródmieście. Its name comes from the Żurawka, a river that once flowed there. During World War II the Żegota organisation had its seat at number 24.",
+    "ludzie": [
+      {"kto": "Adolf Woliński", "rola": "projektant klasycystycznej kamienicy (nr 2)", "wiki": null},
+      {"kto": "Edward Eber", "rola": "projektant wczesnomodernistycznej kamienicy (ok. 1910)", "wiki": null},
+      {"kto": "Marek Leykam", "rola": "projektant biurowca „żyletkowca” przy ul. Marszałkowskiej 82", "wiki": null}
+    ],
+    "dawne_nazwy": ["Żórawia (przed 1945)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Żurawia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%BBurawia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wiadukt-markiewicza",
+    "nazwa": "Wiadukt im. Stanisława Markiewicza",
+    "name_en": "Stanisław Markiewicz Viaduct",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karowa (wiadukt)",
+    "adres_historyczny": null,
+    "lat": 52.2422634,
+    "lon": 21.0193544,
+    "lokalizacja": "dokladna",
+    "okres": "1902–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wiadukt powstał w latach 1902–1905 w stylu neorenesansowym, w ciągu i nad ulicą Karową.",
+      "Projekt konstrukcji wykonał Karol Sommer, architekturę Stefan Szyller, a wystrój rzeźbiarski Jan Woydyga.",
+      "Wiadukt połączył dwie dotąd niezależne części ulicy: górną, na skarpie, przy ulicy Krakowskie Przedmieście, i dolną nad rzeką (Powiśle).",
+      "Budowę rozpoczęto na wiosnę 1903, a roboty konstrukcyjne zakończono w 1904.",
+      "Patronem wiaduktu został lekarz Stanisław Markiewicz, twórca pierwszych w Polsce kolonii dla dzieci.",
+      "W 1965 roku wiadukt został wpisany do rejestru zabytków.",
+      "Podczas generalnego remontu (2006–2007) przywrócono kamienny bruk i odtworzono latarnie, które w latach 40. XX wieku usunięto jako przejaw burżuazyjnego gustu."
+    ],
+    "ciekawostki": [
+      "Materiały dotyczące wiaduktu, znajdujące się w aktach magistratu, spłonęły w czasie powstania warszawskiego w Arsenale wraz z Archiwum Zarządu Miejskiego, dlatego historia obiektu jest trudna do poznania.",
+      "Na wiadukcie znajduje się kompozycja rzeźbiarska: kobieta w koronie z miejskich murów symbolizuje Warszawę, a mężczyzna z falującą mokrą brodą to Wisła."
+    ],
+    "summary_en": "The Stanisław Markiewicz Viaduct, built in 1902–1905 in a neo-Renaissance style, carries traffic over Karowa Street and links Krakowskie Przedmieście with Powiśle. It is named after the paediatrician who founded the first children's colonies in Poland and has been a listed monument since 1965.",
+    "ludzie": [
+      {"kto": "Karol Sommer", "rola": "inżynier, projekt konstrukcji wiaduktu", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "architekt, eklektyczna oprawa architektoniczna", "wiki": null},
+      {"kto": "Jan Woydyga", "rola": "autor kompozycji rzeźbiarskich", "wiki": null},
+      {"kto": "Stanisław Markiewicz", "rola": "lekarz, patron wiaduktu, twórca kolonii dla dzieci", "wiki": null},
+      {"kto": "Kajetan Mościcki", "rola": "współtwórca koncepcji wiaduktu", "wiki": null},
+      {"kto": "Kazimierz Dankowski", "rola": "współtwórca koncepcji wiaduktu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wiadukt im. Stanisława Markiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wiadukt_im._Stanis%C5%82awa_Markiewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "adria",
+    "nazwa": "Adria",
+    "name_en": "Adria (café and restaurant)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Moniuszki 8 (po wojnie; przed wojną nr 10)",
+    "adres_historyczny": "ul. Moniuszki 10",
+    "lat": 52.234722222,
+    "lon": 21.010555555,
+    "lokalizacja": "dokladna",
+    "okres": "1931–1944; 1973–2005",
+    "istnieje": false,
+    "fakty": [
+      "Lokal działał w gmachu Towarzystwa Riunione Adriatica di Sicurtà przy ul. Moniuszki 10, zbudowanym w latach 1928–1930 wg projektu Edwarda Ebera.",
+      "Lokal rozpoczął działalność w lutym 1931; mógł pomieścić do 1500 gości.",
+      "Lokal miał klimatyzację, która w ciągu godziny 5-krotnie wymieniała powietrze w salach i 15-krotnie w kuchni.",
+      "Twórcą, kierownikiem i współwłaścicielem lokalu był od ok. 1930 roku Franciszek Moszkowicz.",
+      "Po 1940 roku lokal miał status Nur für Deutsche.",
+      "22 maja 1943 żołnierz AK Jan Kryst ps. „Alan” przeprowadził w „Adrii” samotny atak na bawiących się tam Niemców; zanim zginął, zastrzelił trzech gestapowców. Tablicę upamiętniającą umieszczono w październiku 1995.",
+      "18 sierpnia 1944 w budynek trafił pocisk kalibru 600 mm wystrzelony z moździerza Karl Gerät; nie eksplodował, a powstańczy saperzy uzyskali z niego materiał wybuchowy do produkcji granatów.",
+      "W 1973 roku lokal reaktywowano pod wcześniejszą nazwą; nową „Adrię” zamknięto w listopadzie 2005 roku."
+    ],
+    "ciekawostki": [
+      "W 1933 we wnętrzach „Adrii” zrealizowano część zdjęć do filmu Jego ekscelencja subiekt.",
+      "Skorupę pocisku odnaleziono w połowie lat 60. XX wieku podczas usuwania gruzu i przekazano do Muzeum Wojska Polskiego w Warszawie."
+    ],
+    "summary_en": "Adria was an elegant café, dance hall and restaurant in Moniuszki Street, Śródmieście, open from 1931 to 1944 and again from 1973 to 2005. During the occupation it was a German-only venue, and in 1943 a lone AK soldier attacked German officers there.",
+    "ludzie": [
+      {"kto": "Edward Eber", "rola": "projektant gmachu, w którym mieścił się lokal", "wiki": null},
+      {"kto": "Alicja Eber", "rola": "projektantka szyldu i autorka fresku w lokalu", "wiki": null},
+      {"kto": "Franciszek Moszkowicz", "rola": "kierownik i współwłaściciel lokalu", "wiki": null},
+      {"kto": "Jan Kryst ps. „Alan”", "rola": "żołnierz AK, atak na Niemców w lokalu 22.05.1943", "wiki": null},
+      {"kto": "Edward Seydenbeutel", "rola": "wymieniony wśród projektantów lokalu", "wiki": null},
+      {"kto": "Jerzy Gelbard", "rola": "wymieniony wśród projektantów lokalu", "wiki": null},
+      {"kto": "Grzegorz Sigalin", "rola": "wymieniony wśród projektantów lokalu", "wiki": null},
+      {"kto": "Roman Sigalin", "rola": "wymieniony wśród projektantów lokalu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Adria (lokal w Warszawie)", "url": "https://pl.wikipedia.org/wiki/Adria_%28lokal_w_Warszawie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje, co stało się z budynkiem po zamknięciu lokalu w 2005 roku, stąd istnieje: false dotyczy lokalu, nie gmachu. Fresk nie istnieje (wg artykułu)."
+  }
+]

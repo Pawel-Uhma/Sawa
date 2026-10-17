@@ -1,0 +1,297 @@
+[
+  {
+    "id": "teatr-wielki-w-warszawie",
+    "nazwa": "Teatr Wielki w Warszawie (gmach przy pl. Teatralnym 1)",
+    "name_en": "Teatr Wielki (Grand Theatre) building in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Teatralny 1",
+    "adres_historyczny": "plac Marywilski",
+    "lat": 52.243,
+    "lon": 21.011,
+    "lokalizacja": "dokladna",
+    "okres": "1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wzniesiono w latach 1825–1833 w miejscu zburzonego kompleksu Marywil według projektu Antonia Corazziego, dla zespołu Teatru Narodowego.",
+      "Kamień węgielny położono 19 listopada 1825 roku, w 60. rocznicę utworzenia Teatru Narodowego; w uroczystości wziął udział namiestnik Józef Zajączek.",
+      "Pierwsze przedstawienie w nowo otwartym teatrze odbyło się 24 lutego 1833 roku: opera Cyrulik sewilski Rossiniego i balet Zabawa tancerska Karola Kurpińskiego.",
+      "Po powstaniu listopadowym nazwę teatru zmieniono na Teatr Wielki; w listopadzie 1864 roku zainstalowano oświetlenie gazowe.",
+      "Po pożarze Teatru Rozmaitości (1883) gmach przebudowano w latach 1890–1891: drewnianą konstrukcję zastąpiono stalową, a prąd zapewniała własna elektrownia.",
+      "Podczas obrony Warszawy we wrześniu 1939 gmach został zbombardowany; ocalała m.in. fasada od strony placu Teatralnego.",
+      "Między 6 a 8 sierpnia 1944 roku w ruinach gmachu zamordowano ok. 350 polskich cywilów.",
+      "Gmach odbudowano, przekształcono i powiększono w latach 1947–1965, z zachowaniem oryginalnej fasady od strony placu Teatralnego; południowe skrzydło z Salami Redutowymi oddano 22 lipca 1949 roku."
+    ],
+    "ciekawostki": [
+      "Przed gmachem zatrzymywały się kondukty pogrzebowe znanych aktorów, śpiewaków i artystów; z tarasu wygłaszano przemówienia.",
+      "W 1862 roku przed Teatrem Wielkim Ludwik Jaroszyński dokonał nieudanego zamachu na namiestnika, wielkiego księcia Konstantego."
+    ],
+    "summary_en": "The Teatr Wielki building on Plac Teatralny in Warsaw was built in 1825–1833 by Antonio Corazzi on the site of the Marywil complex. It was bombed in 1939, badly damaged in 1944 and rebuilt in 1947–1965 with its original facade. Today it houses the National Opera, the Polish National Ballet and the Theatre Museum.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "architekt gmachu (1825–1833)", "wiki": null},
+      {"kto": "Józef Zajączek", "rola": "namiestnik Królestwa Polskiego, uczestnik uroczystości kamienia węgielnego", "wiki": null},
+      {"kto": "Dymitr Palicyn", "rola": "dyrektor Warszawskich Teatrów Rządowych, pozyskał środki na przebudowę 1890–1891", "wiki": null},
+      {"kto": "Zdzisław Górzyński", "rola": "dyrektor gmachu po odbudowie (1949)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Narodowy (nazwa przed powstaniem listopadowym)", "Państwowa Opera i Filharmonia w Warszawie (od 1949)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Wielki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Wielki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dwie daty wmurowania kamienia węgielnego: 19 listopada 1823 (przez Zajączka) i 19 listopada 1825; rozbieżność nieskorygowana. Tekst w paczce urwany na nazwie przedsiębiorstwa z 1950 roku."
+  },
+  {
+    "id": "teatr-cwiklinskiej-i-fertnera",
+    "nazwa": "Teatr Ćwiklińskiej i Fertnera",
+    "name_en": "Ćwiklińska and Fertner Theatre",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 63",
+    "adres_historyczny": null,
+    "lat": 52.236754,
+    "lon": 21.0154842,
+    "lokalizacja": "dokladna",
+    "okres": "1926–1927",
+    "istnieje": false,
+    "fakty": [
+      "Teatr Ćwiklińskiej i Fertnera, prywatny teatr komedii i farsy, założyli popularni aktorzy Mieczysława Ćwiklińska i Antoni Fertner.",
+      "Teatr działał od 19 września 1926 do 10 lipca 1927 roku na pierwszym piętrze budynku przy Nowym Świecie 63.",
+      "Kierowali nim Jerzy Boczkowski i Seweryn Majde.",
+      "W teatrze wystawiono 12 premier; reżyserowali Jan Janusz, Antoni Fertner i J. Pawłowski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ćwiklińska and Fertner Theatre was a private comedy and farce theatre on the first floor of a building at Nowy Świat 63 in Warsaw. It operated from September 1926 to July 1927 and staged 12 premieres.",
+    "ludzie": [
+      {"kto": "Mieczysława Ćwiklińska", "rola": "współzałożycielka teatru, aktorka", "wiki": null},
+      {"kto": "Antoni Fertner", "rola": "współzałożyciel teatru, aktor i reżyser", "wiki": null},
+      {"kto": "Jerzy Boczkowski", "rola": "kierownik teatru", "wiki": null},
+      {"kto": "Seweryn Majde", "rola": "kierownik teatru", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Ćwiklińskiej i Fertnera", "url": "https://pl.wikipedia.org/wiki/Teatr_%C4%86wikli%C5%84skiej_i_Fertnera"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie opisuje stanu budynku przy Nowym Świecie 63 po 1927 roku."
+  },
+  {
+    "id": "budynek-teatru-zydowskiego-grzybowski",
+    "nazwa": "Budynek Teatru Żydowskiego przy pl. Grzybowskim",
+    "name_en": "Yiddish Theatre building at Grzybowski Square",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "pl. Grzybowski",
+    "lat": 52.23583333,
+    "lon": 21.00222222,
+    "lokalizacja": "dokladna",
+    "okres": "1966–2017",
+    "istnieje": false,
+    "fakty": [
+      "Nową siedzibę Teatru Żydowskiego wzniesiono w latach 1966–1967 według projektu Władysława Jotkiewicza; szkice koncepcyjne z 1964 roku wykonał Bohdan Pniewski.",
+      "Teatr przeniósł się do nowego budynku w 1970 roku i zainaugurował działalność 5 grudnia 1970 roku premierą Dziejów Tewji Mleczarza Szolema Alejchema.",
+      "Na widowni było 375 miejsc.",
+      "W 2015 roku budynek sprzedano spółce Ghelamco, która chciała w jego miejscu wybudować biurowiec z nową siedzibą teatru na 350 miejsc.",
+      "W maju 2016 roku powiatowy inspektor nadzoru budowlanego zamknął część budynku z powodu złego stanu technicznego; decyzję uchylił wojewódzki inspektor.",
+      "Ostatnie przedstawienia w sezonie 2015/2016 teatr zagrał na placu Grzybowskim; budynek przy placu zburzono w 2017 roku."
+    ],
+    "ciekawostki": [
+      "Przed 1970 rokiem teatr mieścił się w gmachu niezachowanego pawilonu Instytutu Propagandy Sztuki przy ul. Królewskiej 13.",
+      "W teatrze realizowano serial komediowy „Miodowe lata” emitowany przez Polsat; przedstawienia w jidysz mają tłumaczenie na słuchawkach."
+    ],
+    "summary_en": "The Yiddish Theatre building at Grzybowski Square in Warsaw was designed by Władysław Jotkiewicz and opened in 1970. It was sold in 2015, partly closed for safety in 2016, and demolished in 2017. The theatre moved to Senatorska Street.",
+    "ludzie": [
+      {"kto": "Władysław Jotkiewicz", "rola": "projektant budynku (1966–1967)", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "autor szkiców koncepcyjnych (1964)", "wiki": null},
+      {"kto": "Szymon Szurmiej", "rola": "dyrektor teatru 1970–2014", "wiki": null},
+      {"kto": "Gołda Tencer", "rola": "dyrektorka teatru od 2014", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Żydowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_%C5%BBydowski_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje numeru budynku przy pl. Grzybowskim; obecna siedziba teatru to ul. Senatorska 35 (inny budynek). Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "tor-wyscigow-konnych-pole-mokotowskie",
+    "nazwa": "Tor wyścigów konnych na Polu Mokotowskim",
+    "name_en": "Horse racecourse on Pole Mokotowskie",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "wzdłuż ul. Polnej",
+    "lat": 52.21666,
+    "lon": 21.01152,
+    "lokalizacja": "przyblizona",
+    "okres": "1841–1938",
+    "istnieje": false,
+    "fakty": [
+      "Pierwszy tor na Polu Mokotowskim, służący do ćwiczeń wojskowych, powstał w pierwszej połowie XIX wieku dzięki namiestnikowi Iwanowi Paskiewiczowi; miał około kilometra długości.",
+      "20 czerwca 1841 roku odbyła się gonitwa koni w ramach wystawy zwierząt gospodarskich – były to pierwsze formalne wyścigi konne w Królestwie Polskim.",
+      "W 1861 roku wyścigi zakazano; w 1880 roku zakaz odwołano i powołano totalizator.",
+      "W 1887 roku urządzono nowy, większy tor, leżący wzdłuż ul. Polnej, przy początku ul. Marszałkowskiej.",
+      "Na torze przy Polnej w dwóch sezonach w roku organizowano gonitwy trwające kilkadziesiąt dni; powołano wówczas gonitwę Wielka Warszawska.",
+      "W 1915 roku stadninę związaną z torem ewakuowano; pierwsze gonitwy w niepodległej Polsce odbyły się we wrześniu 1919 roku.",
+      "Do końca 1938 roku wyścigi odbywały się przy ul. Polnej; wtedy przeniesiono je na nowo wybudowany Tor wyścigów konnych Służewiec."
+    ],
+    "ciekawostki": [
+      "Na przełomie XIX i XX wieku teren wokół toru był miejscem festynów z karuzelami i namydlonymi słupami do wspinania."
+    ],
+    "summary_en": "A horse racecourse existed on Pole Mokotowskie in Warsaw for several decades around 1900, first laid out in the 1840s and moved to Służewiec at the end of 1938. The track was along Polna Street and hosted the first formal races in the Congress Kingdom of Poland.",
+    "ludzie": [
+      {"kto": "Iwan Paskiewicz", "rola": "namiestnik carski, inicjator pierwszego toru", "wiki": null}
+    ],
+    "dawne_nazwy": ["tor przy ul. Polnej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Tor wyścigów konnych na Polu Mokotowskim", "url": "https://pl.wikipedia.org/wiki/Tor_wy%C5%9Bcig%C3%B3w_konnych_na_Polu_Mokotowskim"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł podaje, że tor początkowo leżał w gminie Mokotów pod Warszawą, a od 1916 roku w granicach miasta. Współrzędne z nagłówka, lokalizacja przyblizona."
+  },
+  {
+    "id": "osiedle-torwar",
+    "nazwa": "Osiedle Torwar",
+    "name_en": "Torwar housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "osiedle przy ul. Fabrycznej i Górnośląskiej",
+    "adres_historyczny": null,
+    "lat": 52.225,
+    "lon": 21.039444444,
+    "lokalizacja": "dokladna",
+    "okres": "1964–1973",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle Torwar leży między ulicami Solec, Górnośląską, Czerniakowską, Cecylii Śniegockiej, Koźmińską i Fabryczną; nazwa pochodzi od pierwszego krytego lodowiska w Warszawie, zbudowanego w latach 1953–1957 w pobliżu.",
+      "Zachodnią część osiedla zaprojektowali Zofia i Oskar Hansenowie, z Bohdanem Ufnalewskim (koncepcja) i Jerzym Dowgiałło (konstrukcja); powstała w latach 1964–1968.",
+      "Wschodnią część, trzy 16-kondygnacyjne budynki zwane „Iksami”, zaprojektował Jan Zdanowicz; wzniesiono je w latach 1971–1973.",
+      "Osiedle ma 5,6 ha powierzchni i 1219 mieszkań dla ok. 3800 osób.",
+      "Relikty hali fabryki montującej samochody Citroëna, która przetrwała wojnę, rozebrano w 1999 roku.",
+      "W sierpniu 2016 roku „Iksy” przy ul. Górnośląskiej 1, ul. Górnośląskiej 3 i ul. Fabrycznej 2 wpisano do gminnej ewidencji zabytków m.st. Warszawy; w kwietniu 2017 roku wpisano cały układ wschodniej części osiedla."
+    ],
+    "ciekawostki": [
+      "Nazwa „Iksy” wzięła się z kształtu planów bloków, przypominających literę X. W 1994 roku „Encyklopedia Warszawy” nazwała je „jednym z piękniejszych fragmentów panoramy południowej Warszawy”."
+    ],
+    "summary_en": "Torwar is a housing estate in Warsaw's Śródmieście, built in two stages in 1964–1973. Its western part was designed by Zofia and Oskar Hansen; the eastern part, three 16-storey blocks nicknamed the Iksy, was designed by Jan Zdanowicz. The Iksy were entered into the municipal heritage register in 2016.",
+    "ludzie": [
+      {"kto": "Zofia Hansen", "rola": "projektantka zachodniej części osiedla", "wiki": null},
+      {"kto": "Oskar Hansen", "rola": "projektant zachodniej części osiedla", "wiki": null},
+      {"kto": "Jan Zdanowicz", "rola": "projektant wschodniej części („Iksy”)", "wiki": null},
+      {"kto": "Bohdan Ufnalewski", "rola": "współpracownik przy koncepcji zachodniej części", "wiki": null},
+      {"kto": "Jerzy Dowgiałło", "rola": "konstruktor zachodniej części", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Torwar (osiedle)", "url": "https://pl.wikipedia.org/wiki/Torwar_%28osiedle%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje różne daty i adresy budynków; w rekordzie zbiorczo dla osiedla."
+  },
+  {
+    "id": "trakt-krolewski",
+    "nazwa": "Trakt Królewski",
+    "name_en": "Royal Route (Trakt Królewski) in Warsaw",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "od pl. Zamkowego do Alej Ujazdowskich",
+    "adres_historyczny": null,
+    "lat": 52.23643,
+    "lon": 21.01802,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trakt Królewski to zwyczajowa nazwa ciągu ulic od placu Zamkowego do Alej Ujazdowskich; według niektórych źródeł biegnie dalej, do pałacu w Wilanowie.",
+      "Trakt biegnie ulicami Krakowskim Przedmieściem, Nowym Światem, Alejami Ujazdowskimi, Belwederską i Sobieskiego do Wilanowa.",
+      "W 1994 roku Trakt Królewski wraz z historycznym zespołem miasta i Wilanowem został uznany za pomnik historii.",
+      "W 2009 roku na trakcie i w jego pobliżu ustawiono 15 ławeczek Chopina."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Royal Route is the traditional name for the sequence of streets in Warsaw from Castle Square to the Ujazdów Avenues, and according to some sources onward to the palace in Wilanów. It was recognised as a historic monument in 1994.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Trakt Królewski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Trakt_Kr%C3%B3lewski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ciąg ulic, nie pojedynczy obiekt; współrzędne z nagłówka, lokalizacja przyblizona. Artykuł zawiera mało historii; rekord bez zdarzeń."
+  },
+  {
+    "id": "trakt-pamieci-meczenstwa-i-walki-zydow",
+    "nazwa": "Trakt Pamięci Męczeństwa i Walki Żydów w Warszawie",
+    "name_en": "Trail of the Memory of the Martyrdom and Struggle of the Jews (Warsaw)",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zamenhofa, ul. Dubois, ul. Stawki (Muranów)",
+    "adres_historyczny": null,
+    "lat": 52.249108,
+    "lon": 20.995101,
+    "lokalizacja": "przyblizona",
+    "okres": "1988–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trakt powstał w latach 1988–1989 według projektu Zbigniewa Gąsiora, Stanisława Jankowskiego i Marka Moderaua; uzupełniono go w 1995 i 1997 roku.",
+      "Trakt składa się z 22 kamiennych form: 17 bloków, obelisku, płyty, 2 tablic i pomnika; bloki są z czarnego sjenitu, z inskrypcjami po polsku i hebrajsku.",
+      "Na bloki wyryto datę „1940-1943”, wskazującą okres istnienia getta w Warszawie.",
+      "Trakt odsłonięto 18 kwietnia 1988 roku, w przeddzień 45. rocznicy wybuchu powstania w getcie.",
+      "Trakt zaczyna się przy pomniku Bohaterów Getta, prowadzi ulicami Zamenhofa i Dubois do Kopca Anielewicza i kończy na ul. Stawki, przy pomniku Umschlagplatz.",
+      "27 września 1995 roku Władysław Bartoszewski odsłonił przy dębie obelisk Żegoty.",
+      "22 lipca 1997 roku odsłonięto pomnik Szmula Zygielbojma według projektu Marka Moderaua."
+    ],
+    "ciekawostki": [
+      "W 45. rocznicę powstania w getcie na placu przy pomniku Bohaterów Getta zasadzono dąb piramidalny (Quercus robur Fastigiata), Drzewo Wspólnej Pamięci Polaków i Żydów."
+    ],
+    "summary_en": "The Trail of the Memory of the Martyrdom and Struggle of the Jews in Muranów, Warsaw, is a group of 22 black syenite memorial forms along Zamenhofa, Dubois and Stawki streets. It was unveiled on 18 April 1988, the eve of the 45th anniversary of the Warsaw Ghetto Uprising.",
+    "ludzie": [
+      {"kto": "Zbigniew Gąsior", "rola": "współautor projektu traktu", "wiki": null},
+      {"kto": "Stanisław Jankowski", "rola": "współautor projektu traktu", "wiki": null},
+      {"kto": "Marek Moderau", "rola": "współautor projektu traktu; autor pomnika Zygielbojma", "wiki": null},
+      {"kto": "Władysław Bartoszewski", "rola": "odsłonił obelisk Żegoty w 1995 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Trakt Pamięci Męczeństwa i Walki Żydów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Trakt_Pami%C4%99ci_M%C4%99cze%C5%84stwa_i_Walki_%C5%BByd%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord zbiorczy dla całego traktu. Artykuł kończy się niedokończonym fragmentem o ocenie artystycznej."
+  },
+  {
+    "id": "trasa-lazienkowska",
+    "nazwa": "Trasa Łazienkowska",
+    "name_en": "Łazienkowska Route (Trasa Łazienkowska)",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "trasa: ul. Wawelska, al. Armii Ludowej, most Łazienkowski, al. Stanów Zjednoczonych",
+    "adres_historyczny": null,
+    "lat": 52.21829,
+    "lon": 21.0211,
+    "lokalizacja": "przyblizona",
+    "okres": "1971–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trasa Łazienkowska to trasa szybkiego ruchu łącząca centrum Warszawy z prawobrzeżną częścią miasta; zbudowano ją w latach 1971–1974 jako część obwodnicy śródmiejskiej.",
+      "Prace nad trasą i mostem przez Wisłę rozpoczęto w 1968 roku, po pół roku je wstrzymano; w czerwcu 1971 roku ekipa Edwarda Gierka zdecydowała o wznowieniu budowy.",
+      "Prace ruszyły 10 września 1971 roku, a trasę oddano do użytku 19 lipca 1974 roku.",
+      "Głównym projektantem trasy był Józef Sigalin.",
+      "Budowa trasy i Wisłostrady przerwała ciąg ul. Czerniakowskiej.",
+      "Od 14 lutego do 28 października 2015 roku most Łazienkowski był wyłączony z eksploatacji z powodu pożaru, który uszkodził jego konstrukcję.",
+      "22 września 2009 roku na trasie uruchomiono buspas.",
+      "Remont wiaduktów nad Agrykolą rozpoczął się 29 stycznia 2022 roku."
+    ],
+    "ciekawostki": [
+      "Od 1 stycznia 2014 roku arteria straciła kategorię drogi krajowej (wcześniej droga krajowa nr 2 i trasa europejska E30 przebiegały Trasą Łazienkowską do końca 2013 roku)."
+    ],
+    "summary_en": "Trasa Łazienkowska is a fast road in Warsaw linking the city centre with the right bank. Built in 1971–1974 as part of the central ring road, it includes the Łazienkowski Bridge over the Vistula.",
+    "ludzie": [
+      {"kto": "Józef Sigalin", "rola": "główny projektant trasy", "wiki": null},
+      {"kto": "Edward Gierek", "rola": "decyzja o wznowieniu budowy w 1971 roku (wg artykułu: ekipa Gierka)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Trasa Łazienkowska", "url": "https://pl.wikipedia.org/wiki/Trasa_%C5%81azienkowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek trasy), lokalizacja przyblizona. Tekst w paczce urwany w opisie 2021 roku."
+  }
+]

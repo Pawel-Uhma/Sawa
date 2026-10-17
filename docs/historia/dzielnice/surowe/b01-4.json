@@ -1,0 +1,305 @@
+[
+  {
+    "id": "ulica-kolejowa",
+    "nazwa": "Ulica Kolejowa",
+    "name_en": "Kolejowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Kolejowa (od ul. Sławińskiej do ul. Towarowej)",
+    "adres_historyczny": "ul. Zaokopowa (do 1901)",
+    "lat": 52.2242837,
+    "lon": 20.9746309,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała krótko przed 1875 rokiem jako droga podwalna, powiązana z Okopami Lubomirskiego.",
+      "Okopy Lubomirskiego zniesiono po około 10 latach; w ich przebiegu powstała ulica zwana Zaokopową.",
+      "Rozwój ulicy związany był z bocznicami i torami Kolei Warszawsko-Wiedeńskiej; pierwszymi obiektami były wielkie hale magazynów kolejowych, budowane od ok. 1896 roku pod nr 8/10.",
+      "W 1920 roku pod nr 57 wybudowano ogromne hale produkcyjne Warszawskiej Spółki Akcyjnej Budowy Parowozów; pierwszy parowóz wybudowany w tych zakładach nosił oznaczenie Tr12.",
+      "W latach 1907–1911 przy ulicy działał znany zakład elektrotechniczny „Bracia Borkowscy”, który ostatecznie przeniósł się na praski brzeg.",
+      "Po nacjonalizacji fabryki parowozów przekształcono ją w Warszawskie Zakłady Maszyn Budowlanych im. Ludwika Waryńskiego (obecnie Bumar-Waryński).",
+      "Po zburzeniu w 2007 roku budynków Bumaru w ich miejscu od 2010 roku powstaje etapami osiedle 19. Dzielnica."
+    ],
+    "ciekawostki": [
+      "Poza dwoma niewielkimi domkami na terenach kolejowych przy ulicy nigdy nie wzniesiono obiektów mieszkalnych."
+    ],
+    "summary_en": "Kolejowa Street in Wola runs alongside the Warsaw-Vienna railway and the Lubomirski ramparts. Its industrial character came from railway magazines, a locomotive plant founded in 1920, and a later factory that became Bumar-Waryński. Its former factory site is now being redeveloped as the 19. Dzielnica housing estate.",
+    "ludzie": [
+      {"kto": "Ludwik Waryński", "rola": "patron Warszawskich Zakładów Maszyn Budowlanych im. Ludwika Waryńskiego, które wchłonęły część dawnej ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ulica Zaokopowa (do 1901)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kolejowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kolejowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola."
+  },
+  {
+    "id": "ulica-kolska",
+    "nazwa": "Ulica Kolska",
+    "name_en": "Kolska Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Kolska",
+    "adres_historyczny": null,
+    "lat": 52.2507585,
+    "lon": 20.9774757,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona około 1925 roku jako gospodarcze i komunikacyjne zaplecze ulicy Spokojnej.",
+      "Jej nazwę nadano uchwałą Rady Miejskiej z 27 września 1926 roku.",
+      "W 1929 roku odnotowano zabudowę na czterech posesjach, z czego trzy przyporządkowano numeracji ulicy Kolskiej.",
+      "11 sierpnia 1944 roku na ul. Spokojnej odcięty został pluton „Felek” wchodzący w skład batalionu „Zośka”; podczas odwrotu przez ogrody przy ul. Kolskiej poległo kilkunastu powstańców.",
+      "Od 1964 roku pod nr 2/4 mieści się utworzona w 1956 roku Izba Wytrzeźwień m.st. Warszawy; w 2009 roku nazwę zmieniono na Stołeczny Ośrodek dla Osób Nietrzeźwych.",
+      "W czasie II wojny światowej zabudowa ulicy nie została zniszczona."
+    ],
+    "ciekawostki": [
+      "Adres „Kolska” został wśród warszawiaków powiązany z alkoholizmem; występuje w piosenkach Staśka Wielanka („Ja samokrytycznie”) i zespołu Endefis.",
+      "Pod nr 12 wzniesiono nową siedzibę Naukowej i Akademickiej Sieci Komputerowej – Państwowego Instytutu Badawczego."
+    ],
+    "summary_en": "Kolska Street in Wola was laid out around 1925 as a service road for Spokojna Street and named in 1926. Its best-known association is the sobering-up station housed at number 2/4 since 1964, which made the street's name a byword for drunkenness in Warsaw. Its wartime history is linked to the Pluton Felek fighting in August 1944.",
+    "ludzie": [
+      {"kto": "Konrad Okolski ps. Kuba", "rola": "dowódca plutonu „Felek” batalionu „Zośka”; poległ podczas odwrotu przez ogrody przy ul. Kolskiej w sierpniu 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kolska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kolska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola."
+  },
+  {
+    "id": "ulica-klopot",
+    "nazwa": "Ulica Kłopot",
+    "name_en": "Kłopot Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Kłopot (przy torach kolei obwodowej, na tyłach Westfield Arkadia)",
+    "adres_historyczny": null,
+    "lat": 52.2582791,
+    "lon": 20.9811512,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica widnieje już na mapach pochodzących z XVIII wieku.",
+      "W XIX wieku, po wybudowaniu Cytadeli Warszawskiej, była przedłużeniem ulicy Bonifraterskiej; łącząc się z Pokorną, tworzyła jedną z najważniejszych północnych tras wylotowych z miasta.",
+      "W 1948 roku, po powstaniu ulicy Nowotki (dziś Andersa), południowa część Kłopotu została zlikwidowana.",
+      "Jedenaście lat później, po otwarciu ulicy Buczka (dziś Słomińskiego), ulica Kłopot praktycznie zanikła.",
+      "Rada Warszawy przywróciła nazwę Kłopot nowej ulicy, stanowiącej przedłużenie historycznego przebiegu w kierunku zachodnim.",
+      "Pod ulicą Kłopot powstał istniejący do dziś kolektor kanalizacyjny; w jednym z bloków przy ul. Słomińskiego wzniesionych na początku XXI wieku znajduje się prześwit pokrywający się z osią dawnej ulicy."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy nie pochodzi od wyrazu „problem”, lecz od nazwiska Mateusza Kłopockiego, łowczego z województwa rawskiego."
+    ],
+    "summary_en": "Kłopot Street was a northern exit road from the city after the Citadel was built, and it was cut in two after the war. Its name, which comes from the estate owner Mateusz Kłopocki, was restored in the early 21st century for a new street along the rail line behind Westfield Arkadia.",
+    "ludzie": [
+      {"kto": "Mateusz Kłopocki", "rola": "łowczy województwa rawskiego; osiadł na Muranowie i był właścicielem ziem w okolicy dzisiejszego Dworca Gdańskiego; patron nazwy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kłopot w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_K%C5%82opot_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich."
+  },
+  {
+    "id": "ulica-ludwiki",
+    "nazwa": "Ulica Ludwiki",
+    "name_en": "Ludwika Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Ludwiki (od ul. Bema do ul. Płockiej)",
+    "adres_historyczny": null,
+    "lat": 52.2301523,
+    "lon": 20.9647522,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono około 1927 roku na odcinku od ul. Bema do ul. Sebastiana Klonowicza.",
+      "W 1930 roku nadano jej nazwę upamiętniającą Ludwikę Wawelberg, żonę finansisty i filantropa Hipolita Wawelberga; wspólnie z mężem w 1898 roku założyła „Fundację Tanich Mieszkań”.",
+      "Około 1957 roku ulicę przedłużono na wschód do ul. Płockiej; nowemu odcinkowi nadano nazwę ulica Ludwiki 24 listopada 1961 roku.",
+      "Dom pod nr 1, zbudowany w latach 1927–1929 ze środków Fundacji jako II Osiedle Tanich Mieszkań, został w 2005 roku wpisany do rejestru zabytków.",
+      "Budynki pod nr 3 (A i B), 5, 6 i 8 wzniesiono w latach 1931–1933 jako domy spółdzielcze Zakładu Ubezpieczeń Społecznych.",
+      "Od 2020 roku, w związku z rozszerzeniem strefy płatnego parkowania, odcinek od ul. Bema do ul. Klonowicza jest jednokierunkowy."
+    ],
+    "ciekawostki": [
+      "Rejon ulic Ludwiki, Klonowicza i Bema objęty został mikroprogramem rewitalizacji dzielnicy Wola; projekt rewitalizacji kamienicy przy Ludwiki 1 wyceniono na 2 657,5 tys. zł."
+    ],
+    "summary_en": "Ludwika Street in Wola was laid out around 1927 and named in 1930 after Ludwika Wawelberg, who with her husband founded a fund for affordable housing. Its houses from 1927-1933 include a ZUS cooperative estate that is listed as heritage.",
+    "ludzie": [
+      {"kto": "Ludwika Wawelberg", "rola": "żona finansisty i filantropa Hipolita Wawelberga; współzałożycielka Fundacji Tanich Mieszkań (1898), patronka ulicy od 1930 roku", "wiki": null},
+      {"kto": "Hipolit Wawelberg", "rola": "finansista i filantrop; wspólnie z żoną założył Fundację Tanich Mieszkań w 1898 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Ludwiki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ludwiki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola."
+  },
+  {
+    "id": "ulica-marcina-kasprzaka",
+    "nazwa": "Ulica Marcina Kasprzaka",
+    "name_en": "Marcin Kasprzak Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Marcina Kasprzaka (od ul. Karolkowej do ul. Wolskiej)",
+    "adres_historyczny": "ul. Dworska (do 1950)",
+    "lat": 52.2278331,
+    "lon": 20.9579857,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1787–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica była dawną drogą od granicy pól warszawskich i wsi Wielka Wola w kierunku zachodnim; nazywano ją Drogą Dworską od dworu na Czystem, należącego do bankiera Karola Szchultza.",
+      "Jej początkowy odcinek uregulowano przed 1787 rokiem; w 1875 roku została przecięta torami kolei obwodowej.",
+      "Powstanie Gazowni Warszawskiej (1888) i Szpitala Starozakonnych na Czystem (1902) spowodowało połączenie dwóch części ulicy, która została wybrukowana kamieniami polnymi.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 28 września 1950 roku ulicy Dworskiej nadano nazwę upamiętniającą Marcina Kasprzaka, w 45. rocznicę jego śmierci.",
+      "W 1963 roku przeprowadzono przebudowę i poszerzenie do dwóch jezdni o trzech pasach ruchu; 4 grudnia 1963 roku oficjalnie przebito 4-kilometrową ulicę łączącą Wolę ze Śródmieściem.",
+      "W 1968 roku na pasie zieleni między jezdniami ustawiono rzeźby z I Biennale Rzeźby w Metalu, tworząc trzykilometrową Ekspozycję Dużych Rzeźb, tzw. Galerię samochodową.",
+      "15 października 1975 roku oddano do użytku wielopoziomowy węzeł u zbiegu ulic Kasprzaka, Wolskiej i Redutowej, nazwany wolskim węzłem komunikacyjnym.",
+      "Na początku lat 90. XX wieku Zakłady Radiowe im. Marcina Kasprzaka zostały zlikwidowane.",
+      "5 marca 2024 roku oddano do użytku linię tramwajową między ulicami Skierniewicką a Wolską."
+    ],
+    "ciekawostki": [
+      "Rzeźby z Galerii samochodowej poddano renowacji w 2009 roku; podlegają Zarządowi Oczyszczania Miasta jako część Publicznej Kolekcji m.st. Warszawy.",
+      "W miejscu domu, w którym znajdowała się drukarnia i gdzie Marcin Kasprzak stawił opór rosyjskim żandarmom, ustawiono kamień pamiątkowy."
+    ],
+    "summary_en": "Marcin Kasprzak Street is a major east-west road in Wola, a route to the centre since 1963. It was called Dworska until 1950, when it was renamed after the printer Marcin Kasprzak. It has a large 1968 sculpture collection, a 1975 interchange, and a tram line reopened in 2024.",
+    "ludzie": [
+      {"kto": "Marcin Kasprzak", "rola": "patron nazwy ulicy od 1950 roku; stawił opór rosyjskim żandarmom w drukarni przy ulicy", "wiki": null},
+      {"kto": "Karol Szchultz", "rola": "bankier, właściciel podmiejskiej rezydencji na Czystem, obok której przebiegała ulica", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ulica Dworska (do 1950)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Marcina Kasprzaka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Marcina_Kasprzaka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. Artykuł opisuje też Pomnik Marcina Kasprzaka i wiele budynków z listy ważniejszych obiektów; pominięto je jako osobne rekordy."
+  },
+  {
+    "id": "ulica-miedziana",
+    "nazwa": "Ulica Miedziana",
+    "name_en": "Miedziana Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Miedziana (od ul. Chmielnej do ul. Prostej)",
+    "adres_historyczny": null,
+    "lat": 52.2273208,
+    "lon": 20.991478,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona około 1875 roku w czasie parcelacji okolicznych pól uprawnych i ogrodów.",
+      "W latach 1876–1877 przy skrzyżowaniu z ul. Sienną wzniesiono pierwszą dwupiętrową kamienicę.",
+      "Przed 1939 rokiem ulica należała do najbardziej jednorodnie zabudowanych w tej części miasta; kursowały nią autobusy linii „B” z placu Kazimierza Wielkiego do śródmieścia.",
+      "W sierpniu 1944 roku ta część Woli była terenem działania zgrupowania „Chrobry II”; ulicę przegrodziły cztery barykady.",
+      "W 1946 roku rozebrano spalone budynki, a później również dobrze zachowane budynki po nieparzystej (zachodniej) stronie ulicy.",
+      "W latach 1948–1950, w miejscu zlikwidowanego placu Kazimierza Wielkiego, wzniesiono Dom Słowa Polskiego, największy zakład poligraficzny w PRL.",
+      "W 1995 roku niezabudowany teren między ulicami Chmielną i Twardą nazwano skwerem Zgrupowania AK „Chrobry II”.",
+      "W 2020 roku przy południowo-wschodnim końcu ulicy wybudowano biurowiec Chmielna 89."
+    ],
+    "ciekawostki": [
+      "Około 1868 roku utworzono plac Kaliksta Witkowskiego na osi ul. Siennej, gdzie od 1867 roku działało targowisko; w 1921 roku przemianowano go na plac Kazimierza Wielkiego."
+    ],
+    "summary_en": "Miedziana Street in Wola was laid out around 1875 on former fields and gardens. Before the war it was a uniform row of tenements, and in 1948-1950 the large Dom Słowa Polskiego printing works was built where a square had been. It was later partly demolished and redeveloped.",
+    "ludzie": [
+      {"kto": "Kalikst Witkowski", "rola": "patron placu utworzonego około 1868 roku na osi ul. Siennej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Miedziana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Miedziana_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. W 2025 roku podpisano umowę na kompleks Towarowa 22 na terenie zburzonego Domu Słowa Polskiego; pominięto jako osobny rekord."
+  },
+  {
+    "id": "ulica-mila",
+    "nazwa": "Ulica Miła",
+    "name_en": "Miła Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Miła (od ul. Zamenhofa do ul. Smoczej)",
+    "adres_historyczny": null,
+    "lat": 52.2489218,
+    "lon": 20.9851764,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1770 roku; pierwotnie, do 1943 roku, biegła od placu Muranowskiego do ul. Smoczej.",
+      "Pierwsza zabudowa ulicy powstała przed 1829 rokiem i była wyłącznie drewniana.",
+      "W 1880 roku powstała kamienica pod nr 35, zaprojektowana przez Ludwika Kwiatkowskiego; jej tandetny sztukatorski wystrój stał się inspiracją dla innych kamienic.",
+      "W 1908 roku w kamienicy pod numerem 64 urodził się Józef Rotblat, laureat Pokojowej Nagrody Nobla w 1995 roku.",
+      "W listopadzie 1940 roku ulica w całości została włączona do getta.",
+      "W dniach 6–11 września 1942 roku, podczas wielkiej akcji deportacyjnej, zgromadzono na terenie „kotła na Miłej” ok. 100 tys. mieszkańców getta; 2,6 tys. zastrzelono, a ponad 54 tys. wywieziono do obozu zagłady w Treblince.",
+      "Podczas powstania w getcie w bunkrze przy Miłej 29 znajdował się sztab Żydowskiej Organizacji Bojowej; po jego wykryciu przeniósł się do schronu przy Miłej 18.",
+      "8 maja, gdy bunkier otoczyli Niemcy i kolaborujące z nimi oddziały ukraińskie, Mordechaj Anielewicz i Mira Fuchrer odmówili poddania się i popełnili zbiorowe samobójstwo."
+    ],
+    "ciekawostki": [
+      "W miejscu zniszczonego bunkra znajduje się upamiętnienie nazywane Kopcem Anielewicza.",
+      "Na posesji nr 45 działała szwalnia nr X Warszawskiego Towarzystwa Dobroczynności dająca pracę ubogim dziewczętom."
+    ],
+    "summary_en": "Miła Street in Wola and Śródmieście was laid out in 1770 and ran through the Jewish district. It was entirely inside the Warsaw ghetto from 1940, and during the ghetto uprising the ŻOB command was based at Miła 29 and then Miła 18. Its pre-war fabric was burned and levelled, and the Anielewicz Mound now marks the bunker site.",
+    "ludzie": [
+      {"kto": "Józef Rotblat", "rola": "urodził się w kamienicy pod nr 64 w 1908 roku; laureat Pokojowej Nagrody Nobla w 1995 roku", "wiki": null},
+      {"kto": "Ludwik Kwiatkowski", "rola": "architekt kamienicy pod nr 35 (1880)", "wiki": null},
+      {"kto": "Mordechaj Anielewicz", "rola": "dowódca Żydowskiej Organizacji Bojowej; po otoczeniu bunkra przy Miłej 18 przez Niemców i oddziały ukraińskie odmówił poddania się i popełnił samobójstwo wraz z Mirą Fuchrer", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Miła w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C5%82a_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich. Kopiec Anielewicza opisano w ciekawostkach; Trakt Pamięci i licea z listy ważniejszych obiektów pominięto."
+  },
+  {
+    "id": "ulica-mordechaja-anielewicza",
+    "nazwa": "Ulica Mordechaja Anielewicza",
+    "name_en": "Mordechaj Anielewicz Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Mordechaja Anielewicza (od ul. Okopowej do ul. Świętojerskiej)",
+    "adres_historyczny": "ul. Gęsia (średniowiecze–1947)",
+    "lat": 52.2443207,
+    "lon": 20.9778645,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała po II wojnie światowej śladem dawnej ulicy Gęsiej, na odcinku od ul. Okopowej do ul. Karmelickiej.",
+      "Ulica Gęsia pojawiła się w średniowieczu jako droga Nowego Miasta prowadząca do pól uprawnych.",
+      "W listopadzie 1940 roku ulica na całej swej długości znalazła się w granicach getta.",
+      "Dawna zabudowa ulicy uległa zniszczeniu w 1943 roku podczas powstania w getcie oraz w wyniku systematycznego burzenia dzielnicy zamkniętej po upadku powstania.",
+      "Budynki nr 2, 4 i 3/5, zaprojektowane przez Bohdana Lacherta i zbudowane w latach 1949–1950, są jednymi z pierwszych powstałych na Muranowie.",
+      "Nazwa ulicy, upamiętniająca Mordechaja Anielewicza, została nadana w kwietniu 1947 roku (według innego źródła 31 grudnia 1955 roku).",
+      "Tablica na bloku nr 34 upamiętnia zdobycie podczas powstania przez żołnierzy batalionu „Zośka” Gęsiówki; odsłonięto ją 5 sierpnia 1994 roku."
+    ],
+    "ciekawostki": [
+      "Wschodni odcinek ulicy wygięto w stronę południową względem dawnego przebiegu Gęsiej i doprowadzono do skrzyżowania z ulicą Świętojerską."
+    ],
+    "summary_en": "Mordechaj Anielewicz Street in Wola and Śródmieście follows the line of the medieval Gęsia Street, which was inside the Warsaw ghetto. After the war it was rebuilt on the ghetto ruins and named after Mordechaj Anielewicz, commander of the ŻOB. The first post-war blocks by Bohdan Lachert stand here, and a plaque commemorates the Gęsiówka camp taken by the Zośka battalion in 1944.",
+    "ludzie": [
+      {"kto": "Mordechaj Anielewicz", "rola": "dowódca Żydowskiej Organizacji Bojowej; patron nazwy ulicy", "wiki": null},
+      {"kto": "Bohdan Lachert", "rola": "architekt budynków nr 2, 4 i 3/5 zbudowanych w latach 1949–1950", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ulica Gęsia"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mordechaja Anielewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mordechaja_Anielewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich. Artykuł podaje dwie różne daty nadania nazwy (kwiecień 1947 i 31 grudnia 1955); w rekordzie obie."
+  }
+]

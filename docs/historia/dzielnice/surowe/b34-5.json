@@ -1,0 +1,77 @@
+[
+  {
+    "id": "wybuch-gazu-rotunda-pko",
+    "nazwa": "Wybuch gazu w Rotundzie PKO",
+    "name_en": "Gas explosion at the PKO Rotunda",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "u zbiegu ul. Marszałkowskiej i Alej Jerozolimskich",
+    "adres_historyczny": "budynek Powszechnej Kasy Oszczędności (Rotunda PKO)",
+    "lat": 52.2306,
+    "lon": 21.0122,
+    "lokalizacja": "dokladna",
+    "okres": "1979",
+    "istnieje": false,
+    "fakty": [
+      "Eksplozja nastąpiła 15 lutego 1979 roku o godzinie 12:37 w budynku Powszechnej Kasy Oszczędności u zbiegu ul. Marszałkowskiej i Alej Jerozolimskich; przyczyną był wybuch gazu ziemnego.",
+      "Do wybuchu doszło dwadzieścia minut przed końcem pierwszej zmiany, gdy w banku było około 170 pracowników i 300 klientów.",
+      "Budynek został zniszczony w siedemdziesięciu procentach; wszystkie kondygnacje, łącznie z archiwum w podziemiach, zapadły się, a uszkodzone zostały sąsiednie budynki.",
+      "W katastrofie zginęło 49 osób, a 77 odniosło obrażenia.",
+      "Przeszukiwanie rumowiska trwało 6 dni; ostatnią ofiarę odnaleziono we wtorek 21 lutego; brało w tym udział prawie 2000 osób.",
+      "Rozporządzeniem Prezydium Rady Narodowej m.st. Warszawy dzień 16 lutego 1979 roku ogłoszono dniem żałoby narodowej.",
+      "27 października 1979 roku pod północną ścianą budynku odsłonięto tablicę upamiętniającą ofiary."
+    ],
+    "ciekawostki": [
+      "Po dwudziestu latach, podczas kręcenia dokumentalnej serii „Czarny serial”, autorzy dotarli do robotnika, który był prawdopodobnym sprawcą: w czasie prac konserwacyjnych zbyt mocno dokręcił śrubę kryzy mocującej zawór gazu.",
+      "Zima 1979 roku nazywana była zimą stulecia; pokrywa śniegu uniemożliwiła ujście gazu na powierzchnię."
+    ],
+    "summary_en": "On 15 February 1979 a gas explosion destroyed about 70 percent of the Powszechna Kasa Oszczędności building (the PKO Rotunda) at the corner of Marszałkowska and Aleje Jerozolimskie. 49 people died and 77 were injured, and 16 February was declared a day of national mourning.",
+    "ludzie": [
+      {"kto": "robotnik konserwujący zawór gazu (nienazwany)", "rola": "prawdopodobny sprawca wybuchu, wskazany przez autorów „Czarnego serialu”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Rotunda PKO"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wybuch gazu w Rotundzie PKO w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wybuch_gazu_w_Rotundzie_PKO_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie mówi, co stało się z budynkiem po katastrofie; istnieje wzmianka o „nowej rotundzie PKO” w innym artykule paczki (Widok Towers), bez szczegółów. Przyczyna wskazana jako prawdopodobna."
+  },
+  {
+    "id": "wyzwolenie-kl-warschau",
+    "nazwa": "Wyzwolenie KL Warschau (wyzwolenie „Gęsiówki”)",
+    "name_en": "Liberation of KL Warschau (Gęsiówka)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "teren dawnego obozu między ul. Gęsią, Zamenhofa, Okopową i Wołyńską",
+    "adres_historyczny": "KL Warschau (Gęsiówka)",
+    "lat": 52.249444444,
+    "lon": 20.992777777,
+    "lokalizacja": "dokladna",
+    "okres": "5 sierpnia 1944",
+    "istnieje": false,
+    "fakty": [
+      "5 sierpnia 1944 roku, w piątym dniu powstania warszawskiego, harcerski batalion AK „Zośka” zdobył niemiecki obóz KL Warschau, popularnie zwany „Gęsiówką”.",
+      "Celem ataku było uwolnienie więźniów oraz wywalczenie połączenia między Wolą a Starym Miastem.",
+      "Silną niemiecką obronę przełamano dzięki zdobycznemu czołgowi Panzerkampfwagen V Panther.",
+      "Żołnierze AK wyzwolili 348 Żydów, z których większość dołączyła do powstania.",
+      "Obóz utworzono w lipcu 1943 roku na terenie byłego getta; przeszło przez niego co najmniej 7250 więźniów, niemal wszyscy Żydzi z różnych państw Europy.",
+      "27 lipca 1944 roku SS-Unterscharführer Heinz Villain polecił chorym i wyczerpanym więźniom zgłosić się do lazaretu; wszyscy zgłoszeni zostali rozstrzelani, łącznie zginęło około 400 więźniów.",
+      "Następnego dnia blisko 4 tys. Żydów pognano pieszo w kierunku Kutna; w trakcie trzydniowego marszu nie otrzymywali wody i pożywienia."
+    ],
+    "ciekawostki": [
+      "Obóz zaadaptowano na zabudowania przedwojennego Wojskowego Więzienia Śledczego przy ul. Gęsiej; ludność Warszawy zaczęła nazywać obóz „Gęsiówką” od nazwy więzienia.",
+      "Stanisław Sosabowski ps. „Stasinek” z oddziału Kedywu zdobył w tym samym czasie magazyny Waffen-SS na Stawkach."
+    ],
+    "summary_en": "On 5 August 1944, on the fifth day of the Warsaw Uprising, soldiers of the Zośka scout battalion of the Home Army captured the Nazi camp KL Warschau, known as Gęsiówka, and freed 348 Jews. The camp had been used for forced labour and as an execution site, and in July 1944 about 400 sick prisoners were shot during the evacuation.",
+    "ludzie": [
+      {"kto": "Heinz Villain", "rola": "SS-Unterscharführer, dowódca straży obozu; zlecił zgłoszenie chorych do lazaretu (27 lipca 1944)", "wiki": null},
+      {"kto": "Stanisław Sosabowski („Stasinek”)", "rola": "dowódca oddziału Kedywu Okręgu Warszawskiego AK (tzw. Kolegium A) w tym samym czasie", "wiki": null}
+    ],
+    "dawne_nazwy": ["KL Warschau", "Gęsiówka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wyzwolenie KL Warschau", "url": "https://pl.wikipedia.org/wiki/Wyzwolenie_KL_Warschau"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urwany w połowie zdania w opisie pierwszych dni powstania (pominięte). Współrzędne z nagłówka artykułu."
+  }
+]

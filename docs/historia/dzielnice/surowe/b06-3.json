@@ -1,0 +1,397 @@
+[
+  {
+    "id": "boernerowo",
+    "nazwa": "Boernerowo",
+    "name_en": "Boernerowo estate",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "osiedle Boernerowo",
+    "adres_historyczny": "Radio-Stacja (do 2 października 1936)",
+    "lat": 52.25,
+    "lon": 20.9,
+    "lokalizacja": "przyblizona",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1922 roku rozpoczęto budowę Transatlantyckiej Centrali Radiotelegraficznej i wzniesiono 6 budynków dla pracowników przy forcie Babice.",
+      "W październiku 1933 roku uruchomiono linię tramwajową „B” na trasie Ulrychów–Księcia Janusza–droga forteczna (obecna ul. Radiowa)–Boernerowo.",
+      "W listopadzie 1932 roku gotowe były pierwsze 56 domów, skanalizowanych i zelektryfikowanych.",
+      "2 października 1936 roku zmieniono nazwę osiedla z Radiostacja na Boernerowo, w uznaniu zasług Ignacego Boernera.",
+      "We wrześniu 1939 roku osiedle było samodzielnym ośrodkiem oporu; polscy żołnierze bronili go do rana 27 września, kiedy zdobyła je niemiecka 19 Dywizja Piechoty.",
+      "2 sierpnia 1944 roku Niemcy rozbili pod Boernerowem kompanię AK pod dowództwem por. Jerzego Terczyńskiego ps. „Starża”; poległo co najmniej 73 powstańców.",
+      "31 stycznia 1947 roku osiedle zmieniło nazwę na Bemowo; nazwę Boernerowo przywrócono w 1987 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Boernerowo is a housing estate and MSI area in Bemowo, built in the 1920s and 1930s for staff of the Transatlantic Radiotelegraph Centre near Babice fort. It was defended in September 1939 and was the scene of a battle in August 1944. It takes its name from Ignacy Boerner, minister of posts and telegraphs.",
+    "ludzie": [
+      {"kto": "Ignacy Boerner", "rola": "minister poczt i telegrafów, patron nazwy osiedla", "wiki": null},
+      {"kto": "Jacek Decowski", "rola": "mjr, dowódca III batalionu 26 pułku piechoty broniącego osiedla we wrześniu 1939", "wiki": null},
+      {"kto": "Jerzy Terczyński ps. „Starża”", "rola": "por., dowódca kompanii AK rozbitej pod Boernerowem 2 sierpnia 1944", "wiki": null}
+    ],
+    "dawne_nazwy": ["Radiostacja (do 2 października 1936)", "Bemowo (1947–1987)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Boernerowo", "url": "https://pl.wikipedia.org/wiki/Boernerowo"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek osiedla)."
+  },
+  {
+    "id": "chrzanow",
+    "nazwa": "Chrzanów",
+    "name_en": "Chrzanów estate",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "osiedle Chrzanów (obszar MSI), między ul. Połczyńską a ul. Lazurową",
+    "adres_historyczny": "wieś Chrzanów (Macierzysz-Chrzanowo)",
+    "lat": 52.22338,
+    "lon": 20.885455,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W drugiej połowie XIX wieku powstała szlachecka wieś Macierzysz-Chrzanowo, należąca do rodziny Chrzanowskich; od XVII wieku znana była jako Chrzanów.",
+      "Około 1877 roku 15 osadników niemieckich założyło w pobliżu wsi Odolany Kolonię Chrzanów.",
+      "Po 1886 roku zbudowano tu fort IV Chrzanów; po utracie znaczenia strategicznego po 1913 roku był użytkowany jako magazyn.",
+      "W lutym 1913 roku Towarzystwo Ogrodnicze Warszawskie ogłosiło konkurs na rozplanowanie folwarku Mory, przeznaczonego na stację doświadczalną i szkołę ogrodniczą z arboretum.",
+      "W 1951 roku gromadę Chrzanów, w tym folwark Mory, włączono w granice Warszawy.",
+      "W latach 1951–1989 Chrzanów należał do dzielnicy Wola, w latach 1989–1994 do dzielnicy-gminy Warszawa-Wola.",
+      "W 2022 roku rozpoczęto prace przygotowawcze do budowy stacji metra Chrzanów."
+    ],
+    "ciekawostki": [
+      "W XIX wieku w obszarze Chrzanowa i Jelonek Południowych powstało wiele cegielni; największa z nich była fabryką dachówek Bogumiła Schneidera."
+    ],
+    "summary_en": "Chrzanów is a district in Bemowo, historically a noble village known from the 17th century. Its fort IV was part of the Warsaw Fortress ring. It was incorporated into Warsaw in 1951 and got a metro station under construction from 2022.",
+    "ludzie": [
+      {"kto": "Bogumił Schneider", "rola": "założyciel fabryki dachówek i cegielni w Chrzanowie i Jelonkach Południowych", "wiki": null}
+    ],
+    "dawne_nazwy": ["Macierzysz-Chrzanowo", "Kolonia Chrzanów (1877)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Chrzanów (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Chrzan%C3%B3w_%28Warszawa%29"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka artykułu. Granice osiedla opisowe, bez dokładnego przebiegu."
+  },
+  {
+    "id": "stacja-metra-chrzanow",
+    "nazwa": "Stacja metra Chrzanów",
+    "name_en": "Chrzanów metro station (under construction)",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "u zbiegu ul. Szeligowskiej i ul. gen. Rayskiego",
+    "adres_historyczny": null,
+    "lat": 52.226944,
+    "lon": 20.889444,
+    "lokalizacja": "dokladna",
+    "okres": "2018–dziś",
+    "istnieje": false,
+    "fakty": [
+      "W 2018 roku podpisano umowę na projekt i budowę stacji z konsorcjum spółek Gülermak i Astaldi.",
+      "Pod koniec 2020 roku wykonawca złożył wniosek o wydanie pozwolenia na budowę.",
+      "Prace przygotowawcze rozpoczęły się w grudniu 2022 roku, po porozumieniu miasta ze spółką Gülermak co do kontynuowania budowy II linii metra na Bemowie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Chrzanów is a planned station on Warsaw metro line II, at the junction of Szeligowska and gen. Rayski streets in Bemowo. A contract for its design and construction was signed in 2018 with the Gülermak and Astaldi consortium, and preparatory works began in December 2022.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Chrzanów (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Chrzan%C3%B3w_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Stacja w budowie wg stanu z artykułu (nieotwarta; istnieje: false). Status aktualny do sprawdzenia."
+  },
+  {
+    "id": "cieplownia-wola",
+    "nazwa": "Ciepłownia Wola",
+    "name_en": "Wola heating plant",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Połczyńska 21",
+    "adres_historyczny": null,
+    "lat": 52.22,
+    "lon": 20.9206,
+    "lokalizacja": "dokladna",
+    "okres": "1971–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa ciepłowni rozpoczęła się w październiku 1971 roku i zakończyła we wrześniu 1974 roku.",
+      "W 2014–2015 roku zmodernizowano trzy istniejące kotły PTWM: wymieniono części ciśnieniowe i palniki, dostosowując je do oleju lekkiego i zaostrzonych norm emisyjnych.",
+      "Z eksploatacji wycofano olej opałowy ciężki (mazut).",
+      "Ciepłownia razem z Ciepłownią Kawęczyn stanowi szczytowe źródło ciepła dla Warszawy; uruchamia się ją, gdy temperatura spada poniżej zera, a elektrociepłownie Siekierki i Żerań nie zaspokajają popytu.",
+      "Moc cieplna po modernizacji wynosi 348 MWt."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wola heating plant on Połczyńska Street in Bemowo was built in 1971–1974 and runs three water boilers on light fuel oil. It is a peak heat source for Warsaw, started when the main combined heat plants cannot meet demand. It was modernised in 2014–2015 and is owned by Orlen Termika.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ciepłownia Wola", "url": "https://pl.wikipedia.org/wiki/Ciep%C5%82ownia_Wola"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt zakładu (nie firma). Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "cmentarz-bemowski",
+    "nazwa": "Cmentarz Bemowski",
+    "name_en": "Bemowo Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "u zbiegu ul. Kaliskiego i ul. Kutrzeby, osiedle Boernerowo",
+    "adres_historyczny": null,
+    "lat": 52.2625,
+    "lon": 20.8981,
+    "lokalizacja": "dokladna",
+    "okres": "data powstania nieznana–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz powstał równocześnie z kaplicą Matki Boskiej Miłosierdzia-Ostrobramskiej, w jej bezpośrednim otoczeniu.",
+      "Ostatnich pochówków dokonano w latach powojennych.",
+      "Ze względu na niewielkie rozmiary cmentarz został wkrótce zamknięty dla celów grzebalnych.",
+      "Zachowało się dwanaście nagrobków z czasów powojennych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bemowo Cemetery is a Roman Catholic cemetery in the Boernerowo estate, next to the Our Lady of Mercy-Ostrobramska chapel. It was closed for burials after the postwar period. Twelve postwar gravestones survive.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz Bemowski", "url": "https://pl.wikipedia.org/wiki/Cmentarz_Bemowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data powstania nie podana w artykule. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "egzekucja-na-szwedzkich-gorach",
+    "nazwa": "Egzekucja na Szwedzkich Górach",
+    "name_en": "Execution on the Szwedzkie Góry (Swedish Hills)",
+    "typ": "zdarzenie",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Szwedzkie Góry, Bemowo (pomnik u zbiegu ul. Powstańców Śląskich i ul. Zdzisława Krasnodębskiego)",
+    "adres_historyczny": null,
+    "lat": 52.247833,
+    "lon": 20.907,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–dziś",
+    "istnieje": true,
+    "fakty": [
+      "6 stycznia 1940 roku okupanci niemieccy rozstrzelali na Szwedzkich Górach 96 osób; wiele szczegółów tej zbrodni pozostaje tajemnicą.",
+      "31 marca – 3 kwietnia 1947 roku Polski Czerwony Krzyż przeprowadził prace ekshumacyjne i odnalazł zbiorową mogiłę z 96 zwłokami (w tym jednej kobiety).",
+      "Zwłoki ofiar pochowano na cmentarzu w Palmirach, gdzie spoczywa ponad 2000 ofiar niemieckiego terroru odnalezionych w miejscach kaźni nieopodal Warszawy.",
+      "Na podstawie dokumentów przy zwłokach ustalono tożsamość tylko trzech zamordowanych.",
+      "W 1949 roku, w związku z przygotowaniami do budowy lotniska wojskowego, Szwedzkie Góry splantowano.",
+      "W 2021 roku odsłonięto pomnik upamiętniający ofiary zbrodni, u zbiegu ulic Powstańców Śląskich i Zdzisława Krasnodębskiego."
+    ],
+    "ciekawostki": [
+      "Według relacji świadków egzekucja była jedną z najwcześniejszych zbrodni okupanta w okolicach Warszawy; odbyła się 10 dni po głośnej zbrodni w Wawrze."
+    ],
+    "summary_en": "On 6 January 1940 German forces executed 96 people on the Szwedzkie Góry (Swedish Hills) dunes in what is now Bemowo. The victims were exhumed in 1947 and reburied at Palmiry. A memorial was unveiled there in 2021.",
+    "ludzie": [
+      {"kto": "Władysław Guteszust", "rola": "ofiara egzekucji, zidentyfikowany po dokumentach", "wiki": null},
+      {"kto": "Marian Gutowski (Sutowski)", "rola": "ofiara egzekucji, zidentyfikowany po dokumentach", "wiki": null},
+      {"kto": "Kazimierz Makowski", "rola": "ofiara egzekucji, zidentyfikowany po dokumentach", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Egzekucja na Szwedzkich Górach", "url": "https://pl.wikipedia.org/wiki/Egzekucja_na_Szwedzkich_G%C3%B3rach"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wykonawcy według artykułu: niepotwierdzone informacje wskazują funkcjonariuszy Sicherheitsdienst. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "fort-bema",
+    "nazwa": "Fort Bema",
+    "name_en": "Fort Bem (Fort Bema)",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "osiedle Fort Bema, ograniczone ul. gen. Maczka i ul. Powstańców Śląskich",
+    "adres_historyczny": "Fort P (Parysów)",
+    "lat": 52.262027,
+    "lon": 20.937281,
+    "lokalizacja": "dokladna",
+    "okres": "1886–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort „P” (Parysów) powstał w latach 1886–1890 w ramach budowy drugiego, wewnętrznego pierścienia fortów Twierdzy Warszawa.",
+      "31 stycznia 1909 roku wydano rozkaz likwidacji Twierdzy; wysadzono jedynie poternę i prochownię.",
+      "W 1921 roku fort Parysów przemianowano na fort Bema, w celu upamiętnienia Józefa Bema.",
+      "W latach 1924–1939 mieściły się tu Warsztaty Zakładów Amunicyjnych Nr 1, zajmujące się elaboracją amunicji karabinowej.",
+      "We wrześniu 1939 roku fort bronił 1. batalion 144 pułku piechoty pod dowództwem mjr. Bronisława Wadasa; utrzymano go aż do kapitulacji Warszawy.",
+      "W latach 1940–1944 znajdowały się tu niemieckie magazyny uzbrojenia, które były celem ataków polskiego ruchu oporu.",
+      "W latach 80. XX wieku część terenu fortu przekazano Wojskowemu Klubowi Sportowemu Legia Warszawa.",
+      "W 1999 roku zarząd nad terenem fortu przejęła gmina, a później dzielnica Bemowo; w 2002 roku rozpoczęto rewitalizację."
+    ],
+    "ciekawostki": [
+      "Nazwa Parysów pochodzi od wsi Parysów, położonej na północ od fortu, do 1939 roku przy granicy Warszawy."
+    ],
+    "summary_en": "Fort Bema, once Fort P (Parysów), is a Warsaw Fortress ring fort built in 1886–1890 and renamed in 1921 after Józef Bem. It housed an ammunition workshop in the interwar years and was defended in September 1939. It was taken over by the city in 1999 and revitalised from 2002.",
+    "ludzie": [
+      {"kto": "Józef Bem", "rola": "patron nazwy fortu od 1921 roku", "wiki": null},
+      {"kto": "Bronisław Wadas", "rola": "mjr, dowódca 1. batalionu 144 pułku piechoty broniącego fortu we wrześniu 1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Fort P (Parysów)", "Parysów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort Bema", "url": "https://pl.wikipedia.org/wiki/Fort_Bema"},
+      {"tytul": "Wikipedia: Fort P Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_P_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dwa artykuły opisują ten sam obiekt (Fort Bema / Fort P); połączono w jeden rekord. Współrzędne z nagłówka artykułu Fort Bema."
+  },
+  {
+    "id": "fort-iia-babice",
+    "nazwa": "Fort IIA Twierdzy Warszawa („Babice”, „Radiowo”)",
+    "name_en": "Fort IIA of the Warsaw Fortress (Babice)",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "teren wojskowy przy Radiowej, Bemowo",
+    "adres_historyczny": null,
+    "lat": 52.2631,
+    "lon": 20.8814,
+    "lokalizacja": "dokladna",
+    "okres": "lata 80. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort IIA został wybudowany w latach 80. XIX wieku jako jeden z czterech planowanych fortów, które miały wzmacniać zachodni fragment twierdzy.",
+      "W efekcie redukcji planów powstał tylko ten jeden fort; zaplanowano go na planie sześcioboku z dwoma czołami i dwoma barkami.",
+      "Mimo wodnej fosy fort posiadał kaponiery czołową i barkowe, co było rozwiązaniem nietypowym.",
+      "Od 1923 roku znajdowały się w nim radiostacje Transatlantyckiej Centrali Radiotelegraficznej, stąd nazwa „Radiowo”.",
+      "We wrześniu 1939 roku bronili go żołnierze 3. batalionu 26 pułku piechoty mjr. Jacka Decowskiego; fort został opanowany przez Niemców w nocy z 25 na 26 września.",
+      "Od zakończenia II wojny światowej fort zajmuje Wojsko Polskie i jest niedostępny dla zwiedzających."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort IIA, also called Babice or Radiowo, was built in the 1880s as part of the Warsaw Fortress. It hosted radio stations of the Transatlantic Radiotelegraph Centre from 1923. The fort is now used by the Polish Army and closed to visitors.",
+    "ludzie": [
+      {"kto": "Jacek Decowski", "rola": "mjr, dowódca 3. batalionu 26 pułku piechoty broniącego fortu we wrześniu 1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Babice", "Radiowo"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort IIA Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_IIA_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "fort-iii-blizne",
+    "nazwa": "Fort III Twierdzy Warszawa („Blizne”)",
+    "name_en": "Fort III of the Warsaw Fortress (Blizne)",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Lazurowa 187",
+    "adres_historyczny": null,
+    "lat": 52.246945,
+    "lon": 20.894408,
+    "lokalizacja": "dokladna",
+    "okres": "lata 80. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort III („Blizne”) wybudowano w latach 80. XIX wieku jako jeden z fortów pierścienia zewnętrznego Twierdzy Warszawa.",
+      "Umocnienie wzniesiono na planie pięcioboku, z rawelinem osłaniającym kaponierę czołową.",
+      "Fort posiadał ceglane koszary i betonowe kaponiery; w czasie likwidacji twierdzy po 1909 roku kaponiery wysadzono, a ich ruiny zachowały się.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku dowódca oddziału obsadzającego fort opuścił pozycje bez dostatecznego oporu i został oddany pod sąd polowy.",
+      "Fort jest wpisany do rejestru zabytków jako Fort III Blizne-Groty (nr rej. 10-A z 24.05.2001)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort III, known as Blizne, is a ring fort of the outer Warsaw Fortress, built in the 1880s. Its caponiers were blown up after 1909 and the ruins survive. The fort is listed as a monument and is privately owned.",
+    "ludzie": [],
+    "dawne_nazwy": ["Blizne", "Fort III Blizne-Groty"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort III Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_III_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że fort jest własnością prywatnego właściciela. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "fort-iv-chrzanow",
+    "nazwa": "Fort IV Twierdzy Warszawa („Chrzanów”)",
+    "name_en": "Fort IV of the Warsaw Fortress (Chrzanów)",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Kopalniana 3",
+    "adres_historyczny": null,
+    "lat": 52.220347,
+    "lon": 20.892606,
+    "lokalizacja": "dokladna",
+    "okres": "1883–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort IV zbudowano w latach 1883–1890; zadaniem fortu była obrona szosy prowadzącej w kierunku Poznania oraz linii kolejowej.",
+      "W szyi fortu wzniesiono dużą kaponierę przeznaczoną do ostrzału międzypól, osłoniętą ziemnym rawelinem.",
+      "Po 1909 roku, w ramach likwidacji twierdzy, zniszczono część umocnień fortu.",
+      "W 1939 roku w oparciu o fort toczyły się walki 360 pułku piechoty.",
+      "Po wojnie mieściły się tu przetwórnia mięsna oraz magazyn techniczny PSS Społem (do 1994 roku), a później obiekt przejęło wojsko.",
+      "Fort jest opuszczony; na terenie w szyi fortu powstało osiedle mieszkaniowe Fort Chrzanów przy ul. Kopalnianej.",
+      "Fort jest wpisany do rejestru zabytków jako Fort IV Chrzanów, ul. Kopalniana 3 (decyzja nr 576/2006 z 29.03.2006, nr rej. A-739)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort IV, known as Chrzanów, was built in 1883–1890 to guard the road to Poznań and a railway line. After 1909 part of it was destroyed. It was used as a meat plant and depot after the war and is now abandoned, with a housing estate built in its neck.",
+    "ludzie": [],
+    "dawne_nazwy": ["Chrzanów (fort IV)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort IV Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_IV_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "fort-radiowo",
+    "nazwa": "Fort Radiowo",
+    "name_en": "Fort Radiowo area",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "obszar między ul. Antoniego Kocjana, Fortową, Dywizjonu 303, ul. Powstańców Śląskich i ul. Radiową",
+    "adres_historyczny": "Radio-Stacja",
+    "lat": 52.25543,
+    "lon": 20.888057,
+    "lokalizacja": "przyblizona",
+    "okres": "2. poł. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa „Fort Radiowo” pochodzi od zwyczajowej nazwy fortu IIA Twierdzy Warszawa, wzniesionego tu w drugiej połowie XIX wieku.",
+      "Ze względu na znajdujące się tam instalacje nadawcze obszar przyjął obecnie używaną nazwę.",
+      "Zachodnia granica obszaru przebiega dokładnie na osi masztów nieistniejącej już Transatlantyckiej Centrali Radiotelegraficznej.",
+      "Obecnie obszar pokrywa Las Bemowski; są tu też ogródki wojskowe, mały poligon z placem ćwiczeń i dwie strzelnice wojskowe.",
+      "Na obszarze znajduje się Wojskowa Akademia Techniczna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort Radiowo is an MSI area in Bemowo named after the Fort IIA radio stations. Its western boundary follows the former masts of the Transatlantic Radiotelegraph Centre. Today it is largely covered by the Las Bemowski forest and military facilities.",
+    "ludzie": [],
+    "dawne_nazwy": ["Radio-Stacja"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort Radiowo", "url": "https://pl.wikipedia.org/wiki/Fort_Radiowo"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Obszar opisany granicami MSI, współrzędne z nagłówka artykułu (przybliżone)."
+  },
+  {
+    "id": "glinianki-jelonek",
+    "nazwa": "Glinianki Jelonek",
+    "name_en": "Jelonek clay pits",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "między ul. Połczyńską, Powstańców Śląskich, Szczotkarską, Brygadzistów i Strzelców",
+    "adres_historyczny": null,
+    "lat": 52.220556,
+    "lon": 20.914167,
+    "lokalizacja": "dokladna",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zbiorniki powstały w wyniku zalania wodą wyeksploatowanego wyrobiska iłów.",
+      "W XIX wieku (prawdopodobnie w 1846 roku) przy ówczesnej szosie poznańskiej, obecnie ulicy Połczyńskiej, powstała wytwórnia cegieł, dachówek i ceramiki, założona przez Bogumiła Schneidera.",
+      "Cegły z tej wytwórni posłużyły do budowy warszawskich fortów, m.in. fortu Chrzanów, fortu Blizne i fortu Wawrzyszew.",
+      "Cegielnia, zatrudniająca w szczycie kilkuset pracowników, przestała działać po II wojnie światowej.",
+      "Przed 2012 rokiem były tu cztery zbiorniki; dwa z nich zasypał deweloper Robyg bez wymaganych pozwoleń wodnoprawnych, budując na ich miejscu „Osiedle Kameralne”.",
+      "W 2004 roku na zbiornikach i w okolicy stwierdzono występowanie czernicy."
+    ],
+    "ciekawostki": [
+      "Same glinianki uważano za element obronny, utrudniający forsowanie linii fortów."
+    ],
+    "summary_en": "The Jelonek clay pits are two artificial ponds in Bemowo, formed in flooded clay workings. They are the remains of a brickworks founded by Bogumił Schneider in the 19th century, whose bricks were used for several Warsaw fortresses.",
+    "ludzie": [
+      {"kto": "Bogumił Schneider", "rola": "założyciel wytwórni cegieł, dachówek i ceramiki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Glinianki Jelonek", "url": "https://pl.wikipedia.org/wiki/Glinianki_Jelonek"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu. Artykuł wspomina też, że przy ul. Połczyńskiej 59 stoi drewniany pałacyk rodziny Schneidrów, użytkowany przez zbór zielonoświątkowców; opisany osobno w rekordzie dworek-schneiderow-polczynska-59."
+  }
+]

@@ -1,0 +1,260 @@
+[
+  {
+    "id": "ulica-drewniana",
+    "nazwa": "Ulica Drewniana",
+    "name_en": "Drewniana Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Drewniana",
+    "adres_historyczny": null,
+    "lat": 52.2394303, "lon": 21.0255688,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica, pierwotnie zaczynająca swój bieg od współczesnej ul. Elektrycznej, została wytyczona w XVII wieku wraz z jurydyką Aleksandria.",
+      "Później stała się aleją wzdłuż kanału będącego częścią założenia ogrodowego pałacu rodziny Gozdzkich-de Nassau przy ul. Sewerynów; kanał wykopano ok. 1760 roku.",
+      "Pod koniec XVIII wieku na wolnych terenach pojawiła się drewniana zabudowa, od której pochodzi nazwa ulicy; ulica jest widoczna na planie z 1808 roku.",
+      "Przed 1817 rokiem kanał skrócono przy wytyczaniu ul. Dobrej; kanał zasypano ok. 1865 roku, wytyczając nowe parcele przy ul. Drewnianej.",
+      "W 1906 roku wzniesiono gmach Publicznych Szkół Powszechnych nr 34 i 41, projektu Henryka Juliana Gaya.",
+      "Od 1911 roku pod nr 9/11/13 działała Fabryka Czekolady, Kakao i Cukierków „Franciszek Fuchs i Synowie”.",
+      "Podczas powstania warszawskiego w budynku szkół mieścił się szpital powstańczy; we wrześniu 1944 roku Niemcy zamordowali w nim 22 rannych, upamiętnionych tablicą Tchorka.",
+      "Wszystkie zabudowania Fabryki Czekolady „Franciszek Fuchs i Synowie” wyburzono w 2006 roku."
+    ],
+    "ciekawostki": [
+      "Przy ulicy (nr 8) mieści się Szkoła Podstawowa z Oddziałami Integracyjnymi nr 41 im. Żołnierzy Armii Krajowej Grupy Bojowej „Krybar”."
+    ],
+    "summary_en": "Drewniana Street in Śródmieście began near today's Elektryczna Street and was laid out in the 17th century with the Aleksandria estate. Its name comes from the wooden buildings that appeared in the late 18th century. In 1906 a school building was erected here, and in 1944 the school housed an insurgent hospital where 22 wounded were murdered by Germans.",
+    "ludzie": [
+      {"kto": "Franciszek Feliks Fuchs", "rola": "właściciel Fabryki Czekolady, Kakao i Cukierków „Franciszek Fuchs i Synowie”", "wiki": null},
+      {"kto": "Franciszek Ksawery Fuchs", "rola": "ojciec; w 1829 roku założył Dom Handlowo-Przemysłowy „Franciszek Fuchs i S-ka” przy ul. Miodowej 12", "wiki": null},
+      {"kto": "Henryk Julian Gay", "rola": "autor projektu budynku szkół z 1906 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Drewniana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Drewniana_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-dynasy",
+    "nazwa": "Ulica Dynasy",
+    "name_en": "Dynasy Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dynasy",
+    "adres_historyczny": "Dynasy (nazwa warszawiaków od posiadłości)",
+    "lat": 52.238215, "lon": 21.0226695,
+    "lokalizacja": "przyblizona",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od nazwiska księcia Karla Otto von Nassau-Siegena i jego posiadłości, nazwanej przez warszawiaków Dynasami.",
+      "Ulica powstała w 1934 roku na terenach dawnych ogrodów należących do rodziny Gozdzkich-de Nassau; pałac przy ul. Sewerynów spłonął ok. 1778 roku.",
+      "W 1892 roku księżna Maria Światopełk-Czetwertyńska wydzierżawiła teren Warszawskiemu Towarzystwu Cyklistów.",
+      "Wkrótce wybudowano tu tor kolarski według projektu Józefa Hussa oraz budynek siedziby Towarzystwa według projektu Stefana Szyllera.",
+      "W 1896 roku wystawiono rotundę mającą służyć ekspozycji olbrzymiego obrazu „Panorama Tatr” pędzla Stanisława Janowskiego (projekt Karola Kozłowskiego).",
+      "Ok. 1910 roku rotundę przebudowano na teatr; później działał w niej Warszawer Idiszer Kunstteatr pod kierunkiem Idy Kamińskiej. W 1938 roku przebudowano ją na stację obsługi samochodów; w 1944 roku uległa zniszczeniu i pozostaje w tym stanie do dziś.",
+      "W 1929 roku księżna sprzedała teren Towarzystwu Budowlano-Parcelacyjnemu „Dynasy”; wzniesione w latach 1938–1939 kamienice zachowały się do dziś."
+    ],
+    "ciekawostki": [
+      "W 1902 roku w rotundzie wystawiono też panoramiczny obraz „Trzy dni Zbawiciela” autorstwa Jana Styki."
+    ],
+    "summary_en": "Dynasy Street in Śródmieście, opened in 1934 on the former gardens of the Gozdzki-de Nassau palace, is named after Prince Karl Otto von Nassau-Siegen and the estate that Warsaw residents called Dynasy. A cycling track and club headquarters were built here in the 1890s, and a rotunda for a Panorama Tatr was built in 1896. The rotunda, later a car service station, was destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Karl Otto von Nassau-Siegen", "rola": "książę; od jego nazwiska pochodzi nazwa ulicy", "wiki": null},
+      {"kto": "Maria Światopełk-Czetwertyńska", "rola": "księżna, córka Seweryna Uruskiego; właścicielka Dynasów, wydzierżawiła teren cyklistom w 1892 roku", "wiki": null},
+      {"kto": "Józef Huss", "rola": "autor projektu toru kolarskiego", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "autor projektu budynku siedziby Warszawskiego Towarzystwa Cyklistów", "wiki": null},
+      {"kto": "Stanisław Janowski", "rola": "autor obrazu „Panorama Tatr” wystawionego w rotundzie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dynasy (nazwa warszawiaków od posiadłości)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dynasy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dynasy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-dziekania",
+    "nazwa": "Ulica Dziekania",
+    "name_en": "Dziekania Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dziekania",
+    "adres_historyczny": null,
+    "lat": 52.2485077, "lon": 21.0133756,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w XIV wieku na terenie należącym do dziekana kanoników kolegiaty św. Jana; teren był wyłączony spod jurysdykcji miejskiej.",
+      "Około 1620 roku nad wschodnim odcinkiem ulicy przerzucono kryty, arkadowy ganek – fragment strzeżonego przejścia z Zamku Królewskiego do katedry, wprowadzony po nieudanym zamachu na króla Zygmunta III Wazę, którego dokonał Michał Piekarski.",
+      "W 1649 roku analogiczne arkadowe przejście przebito w dzwonnicy kolegiaty, zamykającej zachodni odcinek ulicy.",
+      "Od połowy XIX wieku ulicę oświetlały latarnie gazowe zamocowane na przyściennych wysięgnikach.",
+      "W 1944 roku niemal całe otoczenie ulicy uległo zniszczeniu, m.in. na skutek eksplozji miny Goliath, która uderzyła w południową ścianę katedry.",
+      "Podczas odbudowy katedry w latach 1947–1956 w miejscu eksplozji wmurowano gąsienicę innego pojazdu, Sd.Kfz.301 Borgward.",
+      "Jedynym obiektem przypisanym numeracji ulicy jest pałac dziekana kanoników z 1610 roku, odbudowany w latach 1966–1968 według projektu Stanisława Marzyńskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Dziekania Street in the Old Town runs along the St John's Archcathedral basilica from Kanonia to Świętojańska. Its land belonged to the cathedral dean and lay outside city jurisdiction. Its surroundings were largely destroyed in 1944, including by a German Goliath mine that struck the cathedral's southern wall, and the dean's palace of 1610 was rebuilt in 1966–1968.",
+    "ludzie": [
+      {"kto": "Michał Piekarski", "rola": "dokonał nieudanego zamachu na króla Zygmunta III Wazę; po nim wprowadzono zabezpieczenie w postaci arkadowego ganku", "wiki": null},
+      {"kto": "Stanisław Marzyński", "rola": "autor projektu odbudowy pałacu dziekana (1966–1968)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dziekania w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dziekania_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-dluga",
+    "nazwa": "Ulica Długa",
+    "name_en": "Długa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa",
+    "adres_historyczny": null,
+    "lat": 52.2475182, "lon": 21.0050531,
+    "lokalizacja": "przyblizona",
+    "okres": "dawny trakt–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest częścią dawnego traktu do Sochaczewa i Łowicza; pełniła też rolę placu targowego, czego pozostałością jest jej bardzo duża szerokość na obszarze Nowego Miasta.",
+      "W czasie potopu szwedzkiego z 70 domów znajdujących się przy ulicy ocalało 8.",
+      "Wzniesiony w 1821 roku domek pod nr 1, u zbiegu z ul. Freta, stanowił najmniejszą nieruchomość hipoteczną w Warszawie.",
+      "Wieczorem 29 listopada 1830 roku powstańcy listopadowi, przy znacznym udziale ludności cywilnej, zdobyli Arsenał, co pozwoliło przechylić szalę zwycięstwa na stronę Polaków.",
+      "Ulica była miejscem walk podczas powstania warszawskiego; 6 sierpnia 1944 roku, w rocznicę wymarszu Pierwszej Kompanii Kadrowej, na Długiej odbyła się jedyna podczas powstania defilada wojsk powstańczych.",
+      "Duża część zabudowy ulicy została zniszczona w czasie nalotu niemieckiego 20 sierpnia 1944 roku.",
+      "Wskutek przebicia Trasy W-Z oraz ulicy Nowotki (obecnie Andersa) ulica kończy się ślepo przy Arsenale i stacji metra Ratusz Arsenał.",
+      "W 1965 roku ulica jako założenie urbanistyczne została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "26 marca 1943 roku u zbiegu ulic Bielańskiej, Długiej i Nalewek miała miejsce akcja pod Arsenałem.",
+      "Na kamienicy nr 4 znajduje się tablica upamiętniająca Joachima Lelewela, odsłonięta w 1916 roku."
+    ],
+    "summary_en": "Długa Street in the Nowe Miasto area of Śródmieście was part of the old road to Sochaczew and Łowicz and once served as a market place, which explains its unusual width. The Arsenal at its western end was captured by November Uprising insurgents on the evening of 29 November 1830. In the 1944 Uprising the street saw a parade of insurgent troops on 6 August. Its western end now ends blindly at the Arsenal.",
+    "ludzie": [
+      {"kto": "Joachim Lelewel", "rola": "upamiętniony tablicą na kamienicy nr 4 (odsłonięta w 1916 roku)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Długa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_D%C5%82uga_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-elektryczna",
+    "nazwa": "Ulica Elektryczna",
+    "name_en": "Elektryczna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Elektryczna",
+    "adres_historyczny": null,
+    "lat": 52.239363, "lon": 21.0294443,
+    "lokalizacja": "przyblizona",
+    "okres": "1892–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1892 roku; biegła pierwotnie od ul. Wybrzeże Kościuszkowskie do ul. Leszczyńskiej.",
+      "W latach 1902–1905 została skrócona do linii ul. Drewnianej w związku z budową Elektrowni Warszawskiej.",
+      "Zabudowania elektrowni wypełniły całą parzystą stronę ulicy.",
+      "W 1923 roku do zakładu doprowadzono z Dworca Kowelskiego bocznicę kolejową wzdłuż ul. Wybrzeże Kościuszkowskie.",
+      "W 1939 i 1944 roku budynki elektrowni zostały ostrzelane i zbombardowane.",
+      "Do 1974 roku przetrwała bocznica kolejowa, wykorzystana także podczas odbudowy mostów Poniatowskiego i średnicowego.",
+      "Po 1996 roku, wraz z budową mostu Świętokrzyskiego i przedłużeniem ul. Zajęczej, wyburzono kilka budynków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Elektryczna Street in Śródmieście was laid out in 1892. In 1902–1905 it was shortened to the line of Drewniana Street to make room for the Warsaw Electric Power Plant, whose buildings filled its even side. The plant was shelled and bombed in 1939 and 1944, and a church by Konstanty Sylwin Jakimowicz was begun in 1938.",
+    "ludzie": [
+      {"kto": "Konstanty Sylwin Jakimowicz", "rola": "autor projektu kościoła Zmartwychwstania Pańskiego (budowa rozpoczęta w 1938 roku)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Elektryczna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Elektryczna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-emilii-plater",
+    "nazwa": "Ulica Emilii Plater",
+    "name_en": "Emilia Plater Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Emilii Plater",
+    "adres_historyczny": "Leopoldyny (ok. 1872–1916)",
+    "lat": 52.2289842, "lon": 21.0053732,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1872–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała ok. 1872 roku w związku z rozplanowaniem obszaru między ulicami Marszałkowską, Koszykową i Al. Jerozolimskimi, na mocy uchwały Komitetu Regulacyjnego miasta Warszawy.",
+      "W 1881 roku podniesiono jej poziom; w większości zabudowana była kamienicami czynszowymi autorstwa architekta A. Wayde’a.",
+      "Od powstania do 1916 roku ulica nosiła nazwę Leopoldyny; obecna nazwa, upamiętniająca Emilię Plater, została nadana w październiku 1916 roku.",
+      "W czasie powstania warszawskiego wzdłuż ulicy przebiegała linia frontu, w wyniku czego spaleniu uległa większość domów między ulicami Hożą i Wspólną.",
+      "Po upadku powstania Niemcy wysadzili w powietrze kościół św. św. Apostołów Piotra i Pawła.",
+      "W związku z budową Pałacu Kultury i Nauki ulicę przedłużono w kierunku północnym w formie szerokiej alei; nowy odcinek nazwano uchwałą Rady Narodowej z 25 marca 1959 roku.",
+      "Uchwałą z 8 listopada 2012 roku Rada m.st. Warszawy skorygowała nazwę z „Plater Emilii” na „Emilii Plater”.",
+      "W 2010 roku, w ramach obchodów Roku Chopinowskiego, w północnej części ulicy powstały dwa przejścia dla pieszych w formie klawiatury fortepianu."
+    ],
+    "ciekawostki": [
+      "Pod nr 15 tablica pamiątkowa Tchorka upamiętnia rozstrzelanie przez Niemców grupy Polaków 1 sierpnia 1944 roku."
+    ],
+    "summary_en": "Emilia Plater Street in Śródmieście was laid out around 1872 between Marszałkowska, Koszykowa and Aleje Jerozolimskie. It was called Leopoldyny until 1916 and then renamed after Emilia Plater. The front line of the 1944 Uprising ran along it, and its northern section was extended as a wide avenue when the Palace of Culture and Science was built.",
+    "ludzie": [
+      {"kto": "Emilia Plater", "rola": "patronka ulicy od października 1916 roku", "wiki": null},
+      {"kto": "Kalikst Witkowski", "rola": "prezydent Warszawy; według przyjętej tradycji od imienia jego żony pochodzi pierwotna nazwa Leopoldyny (artykuł tę tradycję podważa)", "wiki": null},
+      {"kto": "A. Wayde", "rola": "architekt większości kamienic czynszowych przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Leopoldyny (ok. 1872–1916)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Emilii Plater w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Emilii_Plater_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podważa tradycję nazwy Leopoldyny (żona Witkowskiego nie miała takiego imienia)."
+  },
+  {
+    "id": "ulica-fabryczna",
+    "nazwa": "Ulica Fabryczna",
+    "name_en": "Fabryczna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Fabryczna",
+    "adres_historyczny": null,
+    "lat": 52.224424, "lon": 21.0378339,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1868–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około 1868 roku z drogi wiodącej do giserni Konstantego Rudzkiego na Solcu.",
+      "Na działce na rogu ul. Czerniakowskiej i Fabrycznej rozpoczęło się powstanie listopadowe: 29 listopada 1830 roku pchor. Wiktor Tylski podpalił browar Weissa.",
+      "Od ok. 1850 do 1944 roku stała tu neorenesansowa kamienica hr. Andrzeja Zamojskiego lub Barcińskich, z mieszkaniami dla dyrekcji Warsztatów Żeglugi Parowej.",
+      "W lipcu 1865 roku do domu przy ul. Czerniakowskiej 3001 wprowadzili się Izabella i Antoni Barcińscy – siostra Fryderyka Chopina z mężem.",
+      "Po 1910 roku dla hr. Henryka Ronikiera powstał wielki dom robotniczy o ceglanych fasadach.",
+      "W 1932 roku hale fabryczne rozebrano; w 1938 roku pod nr 21–27 wzniesiono zespół bloków osiedla BGK, ustawionych szczytowo do ulicy.",
+      "W czasie powstania warszawskiego cała ulica była w rękach powstańców; w zachodniej części toczono walki, a ruiny komisariatu na Fabrycznej 28 były ostatnim wysuniętym punktem obrony.",
+      "W 1944 roku zupełnemu zniszczeniu uległ początkowy odcinek ulicy; w latach 1964–1968 wybudowano tam według projektu Oskara Hansena bloki osiedla Torwar."
+    ],
+    "ciekawostki": [
+      "W okresie międzywojennym w domu nr 28 mieścił się IX komisariat Policji Państwowej."
+    ],
+    "summary_en": "Fabryczna Street on the Solec estate in Śródmieście appeared around 1868 as a road to the Konstanty Rudzki foundry. Near its corner with Czerniakowska Street the November Uprising began in 1830, when the Weiss brewery was set on fire. The Torwar estate was built in 1964–68 on the site of the first section, destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Konstanty Rudzki", "rola": "właściciel giserni, od której pochodzi droga", "wiki": null},
+      {"kto": "Wiktor Tylski", "rola": "pchor.; podpalił browar Weissa 29 listopada 1830 roku", "wiki": null},
+      {"kto": "Izabella Barcińska i Antoni Barciński", "rola": "siostra Fryderyka Chopina z mężem; wprowadzili się do domu przy ul. Czerniakowskiej 3001 w lipcu 1865 roku", "wiki": null},
+      {"kto": "Oskar Hansen", "rola": "autor projektu bloków osiedla Torwar (1964–1968)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Fabryczna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Fabryczna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule w opisie walk podano datę '14 kwietnia' (prawdopodobnie wrzesień 1944); w rekordzie daty nie przepisano."
+  }
+]

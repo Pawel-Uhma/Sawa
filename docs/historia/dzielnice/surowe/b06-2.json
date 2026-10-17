@@ -1,0 +1,234 @@
+[
+  {
+    "id": "ulica-jana-olbrachta",
+    "nazwa": "Ulica Jana Olbrachta",
+    "name_en": "Jana Olbrachta Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Jana Olbrachta",
+    "adres_historyczny": null,
+    "lat": 52.234060,
+    "lon": 20.925664,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rozporządzeniem z 8 kwietnia 1916 roku generał-gubernator Hans Hartwig von Beseler poszerzył granice Warszawy, z mocą wsteczną od 1 kwietnia 1916; zachodnia granica miasta przebiegała wzdłuż obecnej ulicy.",
+      "Nazwa ulicy, upamiętniająca króla Polski Jana I Olbrachta, została nadana 14 maja 1928 roku.",
+      "We wrześniu 1939 roku, w czasie obrony Warszawy, na ulicy, przy ulicy Księcia Janusza, wykopano rów przeciwpancerny.",
+      "15 maja 1951 roku ponownie poszerzono granice Warszawy, włączając posesje po północnej stronie ulicy.",
+      "24 listopada 1961 roku ulicę wydłużono na wschód o 180-metrowy odcinek ulicy Księcia Janusza, a na zachód o całą długość 1180-metrowej ulicy Cieszyńskiej.",
+      "4 kwietnia 2020 roku oddano do użytku stację metra Księcia Janusza, znajdującą się pod skrzyżowaniem z ulicą Górczewską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Jana Olbrachta Street runs through the Bemowo and Wola districts and marks part of Warsaw's western boundary set in 1916. It was named in 1928 after King Jan I Olbracht. A metro station on Księcia Janusza, opened in 2020, is located under its junction with Górczewska.",
+    "ludzie": [
+      {"kto": "Jan I Olbracht", "rola": "król Polski, patron ulicy", "wiki": null},
+      {"kto": "Hans Hartwig von Beseler", "rola": "generał-gubernator warszawski, autor rozporządzenia o granicach miasta (1916)", "wiki": null}
+    ],
+    "dawne_nazwy": ["odcinek ulicy Księcia Janusza do 1961 roku"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana Olbrachta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Olbrachta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-ksiecia-janusza",
+    "nazwa": "Ulica Księcia Janusza",
+    "name_en": "Księcia Janusza Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Księcia Janusza",
+    "adres_historyczny": "Trakt Kiejstuta (do 1921)",
+    "lat": 52.249953,
+    "lon": 20.938469,
+    "lokalizacja": "przyblizona",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rozporządzeniem z 8 kwietnia 1916 roku granicę Warszawy ustanowiono wzdłuż ulicy, nazwanej w rozporządzeniu drogą wojskową.",
+      "Po włączeniu do Warszawy ulicę nazywano Traktem Kiejstuta; obecną nazwę, upamiętniającą Janusza I Starszego, nadano w 1921 roku.",
+      "2 grudnia 1928 roku oddano do użytku pętlę tramwajową „Ulrychów” na rogu ulic Księcia Janusza i Górczewskiej.",
+      "22 października 1933 roku zakończono 17-miesięczną budowę linii tramwajowej do Boernerowa; ulica stała się główną trasą łączącą Boernerowo z Warszawą.",
+      "Tramwaje dzienne wycofano z ulicy 9 października 1938 roku; nocną linię 90 zawieszono 8 września 1939 w wyniku bombardowania Warszawy.",
+      "W 1932 roku wzdłuż północnego odcinka ulicy powstało osiedle dla bezdomnych z 54 parterowych drewnianych domów; zostało spalone w sierpniu 1944 roku.",
+      "4 kwietnia 2020 roku oddano do użytku stację metra Księcia Janusza."
+    ],
+    "ciekawostki": [
+      "Torowisko wzdłuż ulicy stało się jedynym odcinkiem sieci tramwajowej w mieście trwale wycofanym z eksploatacji wraz z wybuchem wojny."
+    ],
+    "summary_en": "Księcia Janusza Street is a Wola street named in 1921 after Janusz I the Elder. In the interwar period it carried the main tram route from Boernerowo into Warsaw, until trams were withdrawn at the outbreak of war. A metro station opened under its junction with Górczewska in 2020.",
+    "ludzie": [
+      {"kto": "Janusz I Starszy", "rola": "patron ulicy", "wiki": null},
+      {"kto": "Hans Hartwig von Beseler", "rola": "generał-gubernator warszawski, autor rozporządzenia o granicach miasta (1916)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Trakt Kiejstuta"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Księcia Janusza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ksi%C4%99cia_Janusza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy). Przebieg według artykułu: od Górczewskiej do wiaduktu nad Aleją Obrońców Grodna."
+  },
+  {
+    "id": "ulica-powstancow-slaskich",
+    "nazwa": "Ulica Powstańców Śląskich",
+    "name_en": "Powstańców Śląskich Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Powstańców Śląskich",
+    "adres_historyczny": null,
+    "lat": 52.268585,
+    "lon": 20.932359,
+    "lokalizacja": "przyblizona",
+    "okres": "1954–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano w 1954 roku.",
+      "Jej północny odcinek poprowadzono na dawnym pasie startowym Lotniska Warszawa-Babice.",
+      "Decyzję zezwalającą na poszerzenie jezdni kosztem posesji przy ul. Szczotkarskiej 15 wydano w 1987 roku, ale skorzystano z niej dopiero w 2009 roku.",
+      "Do czasu wybudowania nowej jezdni ruch odbywał się jednym pasem na torowisku tramwajowym, co wymusiło zastosowanie sygnalizacji świetlnej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Powstańców Śląskich Street runs through the Bemowo and Bielany districts. Its northern section was laid out on the former runway of the Warsaw-Babice airport. Widening the road was delayed for over two decades by a dispute with property owners.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Powstańców Śląskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Powsta%C5%84c%C3%B3w_%C5%9Al%C4%85skich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy). Artykuł nie podaje wprost, że nazwa pochodzi od Powstańców Śląskich, więc nie dopisywano wyjaśnienia."
+  },
+  {
+    "id": "ulica-polczynska",
+    "nazwa": "Ulica Połczyńska",
+    "name_en": "Połczyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Połczyńska",
+    "adres_historyczny": "Szosa Poznańska (1951–1954)",
+    "lat": 52.221788,
+    "lon": 20.923756,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica to dawna droga prowadząca z Warszawy przez Wolę na zachód, w kierunku Błonia.",
+      "W 1657 roku wojska szwedzkie, nacierając tym traktem na Warszawę w czasie potopu szwedzkiego, zniszczyły zabudowę wsi Chrzanów, Odolany i Wielka Wola.",
+      "W XIX wieku na przedpolu Twierdzy Warszawa zbudowano fort pierścienia wewnętrznego (Fort Wola) i fort pierścienia zewnętrznego (fort Chrzanów).",
+      "Jeszcze w II połowie XIX wieku na odcinku między ul. Młynarską a Szosą Bemowską (dziś Powstańców Śląskich) działało 27 lokali z wyszynkiem.",
+      "Ulicę włączono do Warszawy 15 maja 1951 pod nazwą Szosa Poznańska; obecną nazwę nadano uchwałą z 12 kwietnia 1954 roku.",
+      "1 sierpnia 1992 roku oddano przedłużenie linii tramwajowej od pętli przy cmentarzu Wolskim do skrzyżowania z ul. Powstańców Śląskich."
+    ],
+    "ciekawostki": [
+      "Przy budowie linii tramwajowej w 1992 roku zniszczono ślady starej zabudowy ulicy; pozostały tylko stare kapliczki."
+    ],
+    "summary_en": "Połczyńska Street is an old road leading west from Warsaw through Wola, toward Błonie. It was an important route for armies marching through the area, and it gained its present name in 1954. Its western section now runs toward Ożarów Mazowiecki.",
+    "ludzie": [],
+    "dawne_nazwy": ["Szosa Poznańska (1951–1954)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Połczyńska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Po%C5%82czy%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy). Artykuł podaje, że od kwietnia 2026 ciąg dalej to droga wojewódzka nr 800 (poza Warszawą); nie włączono tego do opisu."
+  },
+  {
+    "id": "bemowo",
+    "nazwa": "Bemowo (dzielnica)",
+    "name_en": "Bemowo district",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "adres_historyczny": "Boernerowo (osiedle, przed nazwą Bemowo)",
+    "lat": 52.238611,
+    "lon": 20.913333,
+    "lokalizacja": "przyblizona",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę dzielnicy, odnoszącą się pierwotnie do osiedla, wprowadzono po II wojnie światowej w miejsce nazwy „Boernerowo”.",
+      "Nazwa nawiązuje do fortu Bema; fort przemianowano w 1921 roku w celu upamiętnienia Józefa Bema.",
+      "Nazwę „Boernerowo” przywrócono w 1987 roku jako nazwę starej części Bemowa.",
+      "Od 14 maja 1951 roku Bemowo znajduje się w granicach Warszawy.",
+      "W przeszłości na terenie Fortu Bema działały Zakłady Amunicyjne nr 1, a teren przyległy do fortu zajmował wojskowy klub sportowy CWKS Legia.",
+      "W okresie II wojny światowej powstało tu lotnisko o twardej nawierzchni; w okresie PRL działały tu m.in. 103 Pułk Lotniczy i 3 Łużycka Dywizja Artylerii Obrony Powietrznej Kraju."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bemowo is a district in western Warsaw, named after Józef Bem's fort. It was earlier known as Boernerowo, and its airfield and military units, such as the Babice airport complex, are a major part of its history. Fort Bema was used for ammunition production in the past.",
+    "ludzie": [
+      {"kto": "Józef Bem", "rola": "patron nazwy fortu, a przez to nazwy dzielnicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Boernerowo"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bemowo", "url": "https://pl.wikipedia.org/wiki/Bemowo"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł o całej dzielnicy, a nie o pojedynczym miejscu; współrzędne to środek dzielnicy z nagłówka. Pierwsza dzielnica z nagłówka: Bemowo."
+  },
+  {
+    "id": "stacja-metra-bemowo",
+    "nazwa": "Stacja metra Bemowo",
+    "name_en": "Bemowo metro station",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "pod ul. Górczewską, w rejonie skrzyżowania z ul. Powstańców Śląskich",
+    "adres_historyczny": null,
+    "lat": 52.23919,
+    "lon": 20.9155,
+    "lokalizacja": "dokladna",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa stacji linii M2 rozpoczęła się w 2019 roku; pierwotnie funkcjonowała pod roboczą nazwą Powstańców Śląskich.",
+      "Wykonawcą stacji było konsorcjum firm Gülermak i Astaldi.",
+      "Stację otwarto 30 czerwca 2022 roku; uroczystego otwarcia dokonali prezydent Warszawy Rafał Trzaskowski i unijna komisarz Elisa Ferreira.",
+      "Stację C4 Bemowo zaprojektowało konsorcjum biur Metroprojekt i AMC Andrzej M. Chołdzyński.",
+      "Korpus stacji z torami odstawczymi ma 459 m długości, a całkowita kubatura obiektu z torami odstawczymi wynosi 224 586 m³.",
+      "Posadzki wyłożono granitem, a ściany zatorowe wykonano ze stali kortenowskiej.",
+      "W części stacji znajduje się Punkt Obsługi Pasażerów ZTM dostosowany do osób z niepełnosprawnościami, w tym niesłyszących."
+    ],
+    "ciekawostki": [
+      "Na stropach stacji znajdują się kwadratowe kasetony akustyczne wykonane z miedzi, ułożone skośnie do osi peronu."
+    ],
+    "summary_en": "Bemowo is a metro station on line M2, located beneath Górczewska Street near the Powstańców Śląskich junction. Construction began in 2019 and the station opened on 30 June 2022. Its main body with storage tracks is 459 m long, with granite floors and corten steel walls.",
+    "ludzie": [
+      {"kto": "Rafał Trzaskowski", "rola": "prezydent Warszawy, dokonał uroczystego otwarcia stacji", "wiki": null},
+      {"kto": "Elisa Ferreira", "rola": "unijna komisarz, dokonała uroczystego otwarcia stacji", "wiki": null}
+    ],
+    "dawne_nazwy": ["Powstańców Śląskich (nazwa robocza)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bemowo (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Bemowo_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu. Adres opisowy wg artykułu."
+  },
+  {
+    "id": "bemowo-lotnisko",
+    "nazwa": "Bemowo-Lotnisko",
+    "name_en": "Bemowo-Lotnisko area",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "osiedle między ul. Dywizjonu 303, ul. Piastów Śląskich i ul. Dostępną–Radiową–Powstańców Śląskich",
+    "adres_historyczny": "Lotnisko Babice (zwyczajowo Lotnisko Bemowo)",
+    "lat": 52.257038,
+    "lon": 20.915674,
+    "lokalizacja": "przyblizona",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obszar wziął nazwę od istniejącego tu lotniska wojskowego, nazywanego Lotniskiem Babice, zwyczajowo Lotniskiem Bemowo.",
+      "Lotnisko znacznie pomniejszono na początku lat 80. XX wieku ze względu na bliskość aglomeracji warszawskiej.",
+      "Do dziś widoczne są drogi startowe lotniska; na jego płytach leżą m.in. ulice Powstańców Śląskich, Widawska i Osmańczyka.",
+      "W głębi osiedla znajduje się stara wieża kontroli lotów i kilka hangarów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bemowo-Lotnisko is a residential area in Bemowo built on part of the former Babice military airfield. The airfield was reduced in size in the early 1980s, and its old control tower and several hangars still stand in the estate.",
+    "ludzie": [],
+    "dawne_nazwy": ["Lotnisko Babice (Lotnisko Bemowo)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bemowo-Lotnisko", "url": "https://pl.wikipedia.org/wiki/Bemowo-Lotnisko"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Okres początkowy przybliżony wg artykułu o dzielnicy Bemowo (lotnisko z czasów II wojny światowej). Współrzędne z nagłówka artykułu."
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "id": "operalnia",
+    "nazwa": "Operalnia",
+    "name_en": "Opera House of the Saxon Garden",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "róg ul. Marszałkowskiej i ul. Królewskiej",
+    "adres_historyczny": "południowo-zachodnia część Ogrodu Saskiego",
+    "lat": 52.240555555,
+    "lon": 21.008611111,
+    "lokalizacja": "dokladna",
+    "okres": "1725–1772",
+    "istnieje": false,
+    "fakty": [
+      "Budynek wzniesiono w 1725 z inicjatywy Augusta II, który na ten cel przeznaczył początkowo 5000 dukatów.",
+      "Warszawska Operalnia była pierwszym publicznym teatrem operowym; zainaugurowała działalność 3 sierpnia 1748, w dniu imienin króla.",
+      "Pierwowzorem budynku był Teatr Mały w Dreźnie z 1687 roku.",
+      "W budynku mieściły się cztery kondygnacje lóż, a w teatrze mogło zmieścić się ok. 500 widzów.",
+      "19 listopada 1765 w gmachu Operalni komedią Natręci Józefa Bielawskiego zainaugurował działalność Teatr Narodowy.",
+      "Budynek rozebrano w 1772 roku z powodu fatalnego stanu technicznego; od 1773 przedstawienia operowe odbywały się w Pałacu Radziwiłłowskim przy Krakowskim Przedmieściu.",
+      "W latach 1819–1923 (tak podaje artykuł) na miejscu Operalni zbudowano gmach ujeżdżalni wojskowej; w 1876 przebudowany na siedzibę Giełdy Warszawskiej. Budynek został całkowicie zniszczony w czasie II wojny światowej i nie został odbudowany.",
+      "W 1965 roku na rogu ulic Marszałkowskiej i Królewskiej odsłonięto głaz upamiętniający pierwszą siedzibę teatru."
+    ],
+    "ciekawostki": [
+      "Zdobieniem budynku zajmowali się malarz Mock i rzeźbiarz Yinache; wśród potencjalnych twórców projektu wymieniany jest m.in. Józef Galli-Bibiena.",
+      "W 2005 roku wokół głazu powstała instalacja architektoniczna projektu Czesława Bieleckiego, z witrynami z plakatami bieżącego repertuaru Teatru Narodowego."
+    ],
+    "summary_en": "The Opera House (Operalnia) stood in the south-western part of the Saxon Garden. Built in 1725 on the initiative of Augustus II, it was the first public opera house in Warsaw, opened in 1748, and was demolished in 1772.",
+    "ludzie": [
+      {"kto": "August II Mocny", "rola": "inicjator budowy budynku w 1725 roku", "wiki": null},
+      {"kto": "Józef Bielawski", "rola": "autor komedii Natręci, którą zainaugurowano Teatr Narodowy", "wiki": null},
+      {"kto": "Czesław Bielecki", "rola": "autor instalacji wokół upamiętniającego głazu (2005)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Operalnia", "url": "https://pl.wikipedia.org/wiki/Operalnia"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje datę 1819-1923 dla ujeżdżalni (prawdopodobnie błąd w źródle, warto zweryfikować). Okres w polu okres obejmuje tylko istnienie Operalni."
+  },
+  {
+    "id": "osiedle-jazdow",
+    "nazwa": "Osiedle Jazdów",
+    "name_en": "Jazdów Estate",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jazdów (na tyłach parku Ujazdowskiego)",
+    "adres_historyczny": "teren zniszczonego w 1944 Szpitala Ujazdowskiego",
+    "lat": 52.22195,
+    "lon": 21.02799,
+    "lokalizacja": "przyblizona",
+    "okres": "1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół 90 domków fińskich powstał w 1945 roku jako pierwsze osiedle mieszkaniowe w powojennej Warszawie.",
+      "Domki pochodziły z reparacji wojennych, jakie Finlandia płaciła Związkowi Radzieckiemu; w marcu 1945 Warszawa otrzymała w darze 407 domków z 503 mieszkaniami i 1280 izbami.",
+      "Montaż domków rozpoczął się 24 marca 1945, a domki przekazano lokatorom na początku sierpnia 1945 roku.",
+      "Osiedle powstało na skarpie wiślanej, na terenie zniszczonego w 1944 roku Szpitala Ujazdowskiego, i było przeznaczone dla pracowników Biura Odbudowy Stolicy.",
+      "W 2011 roku burmistrz dzielnicy Śródmieście Wojciech Bartelski podjął działania zmierzające do likwidacji domków; w 2015 roku dzielnica wycofała się z tych planów.",
+      "W kwietniu 2017 roku układ urbanistyczny Osiedla Jazdów ujęto w gminnej ewidencji zabytków.",
+      "W 2024 roku zamieszkałych było kilka z ok. 20 domków; pozostałe udostępniano różnym organizacjom przez Urząd Dzielnicy Śródmieście."
+    ],
+    "ciekawostki": [
+      "W dawnej kostnicy Szpitala Ujazdowskiego uruchomiono łaźnię z prysznicami i wannami; mieszkańcy czerpali wodę z osiedlowej studni.",
+      "Wśród pierwszych mieszkańców byli m.in. Adolf Ciborowski, Alfred Funkiewicz, Maciej Nowicki i Zygmunt Skibniewski."
+    ],
+    "summary_en": "Jazdów Estate is a colony of 90 Finnish prefabricated wooden cottages on the Vistula escarpment behind Ujazdów Park. Delivered as war reparations and assembled from March 1945, it was the first postwar housing estate in Warsaw.",
+    "ludzie": [
+      {"kto": "Adolf Ciborowski", "rola": "pierwszy mieszkaniec osiedla (1945)", "wiki": null},
+      {"kto": "Wojciech Bartelski", "rola": "burmistrz dzielnicy Śródmieście, który w 2011 roku zainicjował plan likwidacji domków", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Osiedle Jazdów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Osiedle_Jazd%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje wprost adresu osiedla; podano ulicę Jazdów z artykułu (wpisy ewidencji: Jazdów 5A, 8, 10). Liczba mieszkających w 2024 podana jako 'kilka z ok. 20' przy 90 domkach w całym zespole."
+  },
+  {
+    "id": "osiedle-szwolezerow",
+    "nazwa": "Osiedle Szwoleżerów",
+    "name_en": "Szwoleżerów Housing Estate",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ulicami Czerniakowską, Szwoleżerów i Dragonów oraz Kanałem Piaseczyńskim",
+    "adres_historyczny": null,
+    "lat": 52.216725,
+    "lon": 21.04334,
+    "lokalizacja": "przyblizona",
+    "okres": "1972–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zbudowano w latach 1972–1974 według projektu Haliny Skibniewskiej, która w 1965 roku uzyskała I nagrodę w konkursie SARP.",
+      "Osiedle powstało na terenie o powierzchni ok. 4,5 ha, między ulicami Czerniakowską, Szwoleżerów i Dragonów oraz Kanałem Piaseczyńskim; jego nazwa nawiązuje do ulicy Szwoleżerów.",
+      "Składa się z siedmiu kilkukondygnacyjnych bloków w technologii wielkoblokowej „Ż”, przeznaczonych dla ok. 1700 osób.",
+      "Wewnętrzny ogród zaprojektowany przez Alinę Scholtz uzyskał formę lapidarium z elementami kamiennych detali zniszczonych w latach 1939–1944 i po 1945 roku.",
+      "W 1974 roku na osiedlu powstał pawilon handlowo-usługowy z kawiarnią.",
+      "Osiedle otrzymało tytuł Mistera Warszawy w konkursie na najlepszy obiekt w stolicy za rok 1974.",
+      "W 2016 roku budynki mieszkalne i pawilon handlowy wpisano do gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [
+      "Pawilon handlowo-usługowy z kawiarnią utrzymany jest w typie architektury skandynawskiej, inspirowany pracami Franka Lloyda Wrighta."
+    ],
+    "summary_en": "The Szwoleżerów Housing Estate in Śródmieście was built in 1972–1974 to a design by Halina Skibniewska, with seven large-panel blocks for about 1,700 residents. It won the Mister Warszawy award for 1974 and was entered in the municipal register of monuments in 2016.",
+    "ludzie": [
+      {"kto": "Halina Skibniewska", "rola": "autorka projektu osiedla, laureatka I nagrody SARP (1965)", "wiki": null},
+      {"kto": "Alina Scholtz", "rola": "autorka projektu wewnętrznego ogrodu (lapidarium)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Osiedle Szwoleżerów", "url": "https://pl.wikipedia.org/wiki/Osiedle_Szwole%C5%BCer%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "osiedle-za-zelazna-brama",
+    "nazwa": "Osiedle Za Żelazną Bramą",
+    "name_en": "Behind the Iron Gate Housing Estate",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między Ogrodem Saskim a ulicami Królewską, Twardą, Prostą, Żelazną i Elektoralną",
+    "adres_historyczny": "Żelazna Brama, wejście do Ogrodu Saskiego (nieistniejące)",
+    "lat": 52.23666,
+    "lon": 21.00017,
+    "lokalizacja": "przyblizona",
+    "okres": "1965–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zbudowano w latach 1965–1972 na obszarze Mirowa, na terenie 33 ha, między Ogrodem Saskim a ulicami Królewską, Twardą, Prostą, Żelazną i Elektoralną.",
+      "Nazwa pochodzi od nieistniejącej Żelaznej Bramy, wejścia do Ogrodu Saskiego, znajdującej się na Osi Saskiej.",
+      "Osiedle jest wynikiem zwycięskiego projektu w konkursie SARP nr 322 z 1961 roku; autorami byli Jerzy Czyż, Jan Furman, Andrzej Skopiński, Jerzy Józefowicz, Marek Bieniewski i Stanisław Furman.",
+      "Między 1961 a 1965 rokiem projekt zmodyfikowano pod naciskiem władz: zwiększono gabaryty i liczbę wysokich bloków; ostateczna wysokość wynikała z potrzeby zwiększenia liczby mieszkańców do 18 tysięcy.",
+      "Osiedle składa się z 19 długich, 16-kondygnacyjnych budynków; łącznie zamieszkuje je ponad 25 tysięcy mieszkańców.",
+      "Bloki zbudowano w technologii „Stolica” – z monolitycznych betonów wylewanych, a nie z wielkiej płyty."
+    ],
+    "ciekawostki": [
+      "Władze nie zgodziły się na wyposażenie bloków w balkony z przyczyn oszczędnościowych.",
+      "Na parterach bloków znajdują się duże hole, w których organizowane są zebrania mieszkańców, wystawy i akcje społeczno-kulturalne."
+    ],
+    "summary_en": "Behind the Iron Gate is a 33-hectare housing estate built in 1965–1972 between the Saxon Garden and Królewska, Twarda, Prosta, Żelazna and Elektoralna streets. Its 19 long, 16-storey blocks house over 25,000 residents.",
+    "ludzie": [
+      {"kto": "Jerzy Czyż", "rola": "autor zwycięskiego projektu konkursowego (SARP nr 322, 1961)", "wiki": null},
+      {"kto": "Jan Furman", "rola": "autor zwycięskiego projektu konkursowego (SARP nr 322, 1961)", "wiki": null},
+      {"kto": "Andrzej Skopiński", "rola": "autor zwycięskiego projektu konkursowego (SARP nr 322, 1961)", "wiki": null},
+      {"kto": "Jerzy Józefowicz", "rola": "autor zwycięskiego projektu konkursowego (SARP nr 322, 1961)", "wiki": null},
+      {"kto": "Marek Bieniewski", "rola": "autor zwycięskiego projektu konkursowego (SARP nr 322, 1961)", "wiki": null},
+      {"kto": "Stanisław Furman", "rola": "autor zwycięskiego projektu konkursowego (SARP nr 322, 1961)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Osiedle Za Żelazną Bramą", "url": "https://pl.wikipedia.org/wiki/Osiedle_Za_%C5%BBelazn%C4%85_Bram%C4%85"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst artykułu w paczce urywa się w sekcji o legendzie miejskiej (ok. 1965); fakty pochodzą z części dostępnej. Artykuł podaje też dzielnicę Wola; nagłówek paczki: Śródmieście."
+  },
+  {
+    "id": "os-saska",
+    "nazwa": "Oś Saska",
+    "name_en": "Saxon Axis",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "od Krakowskiego Przedmieścia do placu Żelaznej Bramy, przez Ogród Saski",
+    "adres_historyczny": "plac Wielopole (przed nazwą plac Żelaznej Bramy)",
+    "lat": 52.239833,
+    "lon": 21.003944,
+    "lokalizacja": "przyblizona",
+    "okres": "1713–1748 (założenie); dziś",
+    "istnieje": true,
+    "fakty": [
+      "Oś Saska to barokowe założenie urbanistyczne XVIII-wiecznej Warszawy, związane z budową rezydencji królewskiej dla Augusta II – pałacu Saskiego; wiele zaprojektowanych elementów nie zostało wybudowanych.",
+      "Oś biegnie od Krakowskiego Przedmieścia do placu Żelaznej Bramy, przez Ogród Saski, i ma ok. 1650 metrów długości.",
+      "Prace trwały niemal 40 lat: od 1713 do początków lat 20. XVIII wieku, a następnie od 1717 do śmierci Augusta II; ostatecznie ukończył je August III w latach 30. i 40. XVIII wieku.",
+      "W 1727 roku środkowa część ogrodu została udostępniona ludności Warszawy.",
+      "W latach 1839–1842 przebudowano pałac Saski w stylu klasycystycznym, dodając kolumnadę wg projektu Adama Idźkowskiego.",
+      "2 listopada 1925 roku pod arkadami kolumnady pałacu Saskiego powstał Grób Nieznanego Żołnierza.",
+      "W dniach 30 marca – 18 maja 1970 roku przesunięto pałac Lubomirskich na Oś Saską; była to największa tego typu akcja w powojennej Warszawie.",
+      "W 2021 roku Sejm uchwalił ustawę, na podstawie której mają zostać odbudowane pałac Saski, pałac Brühla oraz kamienice przy ul. Królewskiej."
+    ],
+    "ciekawostki": [
+      "W latach 1985–1991 przed pałacem Lubomirskich stał pomnik „Poległym w Służbie i Obronie Polski Ludowej”, który warszawiacy nazywali „Pomnikiem Utrwalaczy” lub „Ubelisku”.",
+      "Pomnik Księcia Józefa Poniatowskiego autorstwa Bertela Thorvaldsena stał na placu przed kolumnadą od 1923 roku, aż do wysadzenia przez Niemców po upadku powstania warszawskiego."
+    ],
+    "summary_en": "The Saxon Axis is a Baroque urban layout of 18th-century Warsaw, built around the Saxon Palace for Augustus II. It stretches about 1,650 m from Krakowskie Przedmieście to Plac Żelaznej Bramy, through the Saxon Garden.",
+    "ludzie": [
+      {"kto": "August II Mocny", "rola": "inicjator rezydencji i Osi Saskiej", "wiki": null},
+      {"kto": "Matthäus Daniel Pöppelmann", "rola": "autor koncepcji i realizacji Osi Saskiej (wraz z J. Naumannem, Z. Longuelune'em, J.D. Jauchem i J.Z. Deybelem)", "wiki": null},
+      {"kto": "Adam Idźkowski", "rola": "autor projektu kolumnady pałacu Saskiego (1839–1842)", "wiki": null},
+      {"kto": "Bertel Thorvaldsen", "rola": "autor pomnika Księcia Józefa Poniatowskiego (1923)", "wiki": null},
+      {"kto": "Jan Bohdan Chmielewski", "rola": "autor pomnika „Poległym w Służbie i Obronie Polski Ludowej” (1985)", "wiki": null},
+      {"kto": "Antoni Popiel", "rola": "autor pomnika Tadeusza Kościuszki (2010), kopii waszyngtońskiego pomnika z 1910", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Wielopole (przed nazwą plac Żelaznej Bramy)"],
+    "zrodla": [{"tytul": "Wikipedia: Oś Saska", "url": "https://pl.wikipedia.org/wiki/O%C5%9B_Saska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Pole okres: daty z artykułu (1713 początek prac, 1748 ukończenie); 'dziś' oznacza istniejące elementy. Obiekt jest założeniem urbanistycznym, nie budynkiem."
+  }
+]

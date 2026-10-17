@@ -1,0 +1,36 @@
+[
+  {
+    "id": "muranow-stacja-metra",
+    "nazwa": "Muranów (planowana stacja metra)",
+    "name_en": "Muranów (planned metro station)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "okolice skrzyżowania ul. Anielewicza i ul. Andersa (osiedle Muranów)",
+    "adres_historyczny": "ul. Nowotki (obecnie ul. Andersa)",
+    "lat": 52.25,
+    "lon": 20.998888888,
+    "lokalizacja": "przyblizona",
+    "okres": "1983–dziś (planowana)",
+    "istnieje": false,
+    "fakty": [
+      "Muranów to planowana stacja linii M1 metra w Warszawie.",
+      "Nazwę stacji nadano uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983 roku.",
+      "Stację wyłączono z budowy ze względu na oszczędności razem ze stacją Plac Konstytucji.",
+      "Według planów stacja miała znajdować się między stacjami Ratusz Arsenał (od południa, 635 m) a Dworzec Gdański (od północy, 899 m), w pobliżu skrzyżowania ulic Anielewicza i ówczesnej ul. Nowotki (obecnie ul. Andersa).",
+      "W 2006 roku władze Warszawy podjęły decyzję o budowie obu pominiętych stacji: Placu Konstytucji i Muranowa.",
+      "W 2019 roku ogłoszono i rozstrzygnięto przetarg na dokumentację przedprojektową i projekty budowlane obu stacji.",
+      "19 grudnia 2024 roku wojewoda mazowiecki Mariusz Frankowski wydał pozwolenia na budowę tej stacji oraz stacji Plac Konstytucji."
+    ],
+    "ciekawostki": [
+      "Stacja, zamieszkana przez policjantów z pobliskiego pałacu Mostowskich, pojawia się w postapokaliptycznej powieści „Kompleks 7215” Bartka Biedrzyckiego."
+    ],
+    "summary_en": "A planned station on Line M1 of the Warsaw Metro, named in 1983 but left out of the original construction for cost reasons. Building permits for it and for the Plac Konstytucji station were issued in December 2024.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Nowotki"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muranów (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Muran%C3%B3w_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Stacja nie istnieje; rekord dotyczy planu. Współrzędne z nagłówka (52.25, 20.998888888)."
+  }
+]

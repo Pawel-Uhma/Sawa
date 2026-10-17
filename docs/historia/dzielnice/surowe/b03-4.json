@@ -1,0 +1,110 @@
+[
+  {
+    "id": "obrona-warszawy-1831",
+    "nazwa": "Obrona Warszawy (1831)",
+    "name_en": "Defence of Warsaw (1831)",
+    "typ": "zdarzenie",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": "przedpole i wały miasta na Woli (dzieło nr 56 – Reduta Wolska)",
+    "lat": 52.227222222,
+    "lon": 20.943055555,
+    "lokalizacja": "przyblizona",
+    "okres": "6–7 września 1831",
+    "istnieje": true,
+    "fakty": [
+      "Bitwa obrońców Warszawy z nacierającymi wojskami rosyjskimi w czasie powstania listopadowego, rozegrana na przedpolu i wałach miasta w dniach 6–7 września 1831, zakończyła się kapitulacją obrońców i wkroczeniem Rosjan do opuszczonego przez polskie wojsko miasta.",
+      "Najsilniej umocnionym punktem było dzieło nr 56 na Woli, obejmujące zamkniętą ze wszystkich stron redutą kościół św. Wawrzyńca i przyległy ogród.",
+      "Reduta Wolska miała wał ziemny wysokości około 3,5 metra, otoczony głęboką fosą.",
+      "W nocy z 5 na 6 września 1831 wojska rosyjskie zajęły pozycje wyjściowe do szturmu, który nastąpił o 5 rano.",
+      "Luneta nr 57, broniąca dostępu do dzieła nr 56, była obsadzona przez dwie kompanie z 8 Pułku Piechoty Liniowej pod dowództwem majora Krassowskiego; do niewoli dostało się żywcem jedynie 80 obrońców. Bohaterska obrona opóźniła o godzinę szturm na Wolę.",
+      "Siły polskie liczyły około 40 tys. ludzi, w tym 3000 jazdy, oraz 200 dział; po stronie rosyjskiej było 54 tys. piechoty, 17 tys. jazdy i 360 dział.",
+      "W trakcie walki o fort nr 54 wyleciał w powietrze magazyn amunicyjny; zdarzenie to przypisał później Adam Mickiewicz podporucznikowi artylerii Julianowi Konstantemu Ordonowi. W wyniku wybuchu zginęło około 300 Rosjan."
+    ],
+    "ciekawostki": [
+      "Według artykułu Adam Mickiewicz przypisał wysadzenie magazynu amunicyjnego podporucznikowi Julianowi Konstantemu Ordonowi."
+    ],
+    "summary_en": "The Defence of Warsaw on 6–7 September 1831 ended with the Russian entry into the city after a fierce battle on its western defences. The strongest point of the Polish line was Redoubt No. 56 in Wola, next to the St. Lawrence Church. The defence of the nearby lunette No. 57 delayed the assault on Wola by an hour.",
+    "ludzie": [
+      {"kto": "Iwan Paskiewicz", "rola": "nowy feldmarszałek rosyjski, dowodził atakiem na Warszawę", "wiki": null},
+      {"kto": "Henryk Dembiński", "rola": "generał dywizji, dowódca korpusu polskiego", "wiki": null},
+      {"kto": "Jan Nepomucen Umiński", "rola": "generał dywizji, dowódca korpusu polskiego", "wiki": null},
+      {"kto": "Józef Bem", "rola": "generał brygady, dowodził pierwszą linią obrony", "wiki": null},
+      {"kto": "Piotr Pahlen", "rola": "dowódca I korpusu rosyjskiego, który miał uderzyć na dzieło nr 56", "wiki": null},
+      {"kto": "Franciszek Bobiński", "rola": "kapitan, dowodził obsadą fortu nr 54", "wiki": null},
+      {"kto": "Julian Konstanty Ordon", "rola": "podporucznik artylerii, przypisano mu wysadzenie magazynu amunicyjnego w forcie nr 54", "wiki": null},
+      {"kto": "Fiodor Geismar", "rola": "generał rosyjski, ciężko ranny w wybuchu magazynu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szturm Warszawy", "Reduta Wolska (dzieło nr 56)"],
+    "zrodla": [{"tytul": "Wikipedia: Obrona Warszawy (1831)", "url": "https://pl.wikipedia.org/wiki/Obrona_Warszawy_%281831%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł jest urwany w opisie bitwy (koniec w obsadzie Reduty Wolskiej); fakty ograniczone do tego, co jest w tekście. Rekord to zdarzenie, współrzędne z nagłówka to obszar Woli, nie dokładne miejsce walki."
+  },
+  {
+    "id": "odolany",
+    "nazwa": "Odolany",
+    "name_en": "Odolany, Wola",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": "dawna wieś wzdłuż drogi do Błonia (dziś ul. Połczyńska)",
+    "lat": 52.219312,
+    "lon": 20.94224,
+    "lokalizacja": "przyblizona",
+    "okres": "1418–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawna wieś szlachecka położona wzdłuż drogi do Błonia (obecnie ul. Połczyńska). Pierwsza wzmianka o Odolanach pochodzi najprawdopodobniej z 1418.",
+      "Od 1431 Odolany były własnością dziekanów kolegiaty warszawskiej św. Jana. W 1789 znajdowało się tam 18 gospodarstw.",
+      "W latach 1886–1890 w rejonie ulic Gniewkowskiej i Potrzebnej zbudowano fort Odolany, będący elementem pierścienia wewnętrznego Twierdzy Warszawa.",
+      "W 1901–1903 przez Odolany przeprowadzono tory linii warszawsko-kaliskiej. W latach 1922–1929 przy południowej granicy powstała stacja postojowa Warszawa Szczęśliwice, a na początku lat 30. XX wieku stacja rozrządowa Włochy.",
+      "16 października 1942 w odwecie za akcję „Wieniec” Niemcy powiesili obok przejazdu kolejowo-drogowego w ciągu ul. Mszczonowskiej 10 więźniów Pawiaka. W 1964 miejsce mordu upamiętniono tablicą Tchorka.",
+      "Po 1945 przy ul. Jana Kazimierza powstała jedna z dwóch lokalizacji Warszawskich Zakładów Maszyn Budowlanych im. Ludwika Waryńskiego."
+    ],
+    "ciekawostki": [
+      "Po włączeniu Szczecina do Polski Odolany użyczyły nazwy jednemu z tamtejszych osiedli, położonemu w dzielnicy Warszewo."
+    ],
+    "summary_en": "Odolany was a noble village in the south-west of Wola, first mentioned around 1418. In 1942 the Germans hanged ten Pawiak prisoners at a railway crossing on Mszczonowska Street in reprisal for the 'Wieniec' action. Today it is a rail-dominated area with industrial sites and housing.",
+    "ludzie": [],
+    "dawne_nazwy": ["wieś Odolany (dawna wieś szlachecka)"],
+    "zrodla": [{"tytul": "Wikipedia: Odolany", "url": "https://pl.wikipedia.org/wiki/Odolany"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy obszaru MSI Odolany. Współrzędne z nagłówka (środek obszaru). Miejsce egzekucji z 1942 przy ul. Mszczonowskiej jest opisane w artykule bez własnych współrzędnych, więc nie wydzielono osobnego rekordu."
+  },
+  {
+    "id": "ogrod-sprawiedliwych",
+    "nazwa": "Ogród Sprawiedliwych w Warszawie",
+    "name_en": "Garden of the Righteous, Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "skwer im. „Jura” Gorzechowskiego, między ulicami Dzielną i Pawią",
+    "adres_historyczny": "teren dawnego więzienia kobiecego „Serbia”",
+    "lat": 52.245777777,
+    "lon": 20.989527777,
+    "lokalizacja": "dokladna",
+    "okres": "2014–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ogród znajduje się na skwerze im. „Jura” Gorzechowskiego, na terenie dawnego więzienia kobiecego „Serbia”, między ulicami Dzielną i Pawią, w pobliżu al. Jana Pawła II i kościoła św. Augustyna.",
+      "Inicjatorami pomysłu są warszawski Dom Spotkań z Historią i włoska fundacja GARIWO. Ogród zaprojektowała pracownia architektury krajobrazu „Abies” Barbary Kraus-Galińskiej.",
+      "Charakter ogrodu nawiązuje do istniejącego w Mediolanie Światowego Ogrodu Sprawiedliwych, w którym honorowani są również polscy Sprawiedliwi.",
+      "Uroczyste otwarcie ogrodu odbyło się 5 czerwca 2014 o godz. 12:00, w 25. rocznicę wyborów 4 czerwca 1989 r.",
+      "Co roku upamiętniane są trzy osoby. Komitet przyjmuje kandydatury jedynie osób nieżyjących.",
+      "W 2021 roku uhonorowano 7 osób, ponieważ w 2020 roku uroczystość nie odbyła się."
+    ],
+    "ciekawostki": [
+      "Idea ogrodu jest krytykowana za europocentryzm i skupianie się na znanych, szeroko omawianych tragediach; do 2019 przemilczano m.in. ludobójstwa w Kambodży, Gwatemali czy Burundi."
+    ],
+    "summary_en": "The Garden of the Righteous is a memorial square in Wola, opened on 5 June 2014 on the site of the former 'Serbia' women's prison. It was initiated by the Dom Spotkań z Historią and the Italian GARIWO foundation and honours three people each year. Its design by Barbara Kraus-Galińska echoes the Garden of the Righteous in Milan.",
+    "ludzie": [
+      {"kto": "Władysław Bartoszewski", "rola": "członek komitetu Ogrodu Sprawiedliwych", "wiki": null},
+      {"kto": "Zbigniew Gluza", "rola": "przewodniczący Komitetu Ogrodu Sprawiedliwych w latach 2013–2022", "wiki": null},
+      {"kto": "Agnieszka Bieńczyk-Missala", "rola": "przewodnicząca Komitetu Ogrodu Sprawiedliwych od 2022", "wiki": null},
+      {"kto": "Barbara Kraus-Galińska", "rola": "autorka projektu ogrodu (pracownia „Abies”)", "wiki": null}
+    ],
+    "dawne_nazwy": ["teren więzienia kobiecego „Serbia”"],
+    "zrodla": [{"tytul": "Wikipedia: Ogród Sprawiedliwych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Sprawiedliwych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia też dziesiątki członków komitetu i kandydatów; przepisano tylko te osoby, które są związane z miejscem. Pozycja krytyki przepisana jako ciekawostka (jest to stanowisko w sporze, nie fakt)."
+  }
+]

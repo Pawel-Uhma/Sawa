@@ -1,0 +1,306 @@
+[
+  {
+    "id": "stacja-metro-mlociny",
+    "nazwa": "Stacja metra Młociny",
+    "name_en": "Młociny metro station",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Kasprowicza (przy ul. Nocznickiego)",
+    "adres_historyczny": null,
+    "lat": 52.2911, "lon": 20.9289,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Młociny to ostatnia stacja linii M1 metra w Warszawie, zlokalizowana na Bielanach, niedaleko Huty Warszawa.",
+      "Stacja ma jedną kondygnację podziemną, długość 142 m i powierzchnię 3 550 m².",
+      "Data rozstrzygnięcia przetargu na generalnego wykonawcę to 23 grudnia 2005 r.; wybrana została konsorcjum PeBeKa S.A./PRG Metro S.A.",
+      "Umowa z generalnym wykonawcą została zawarta 14 czerwca 2006 r.",
+      "Stacja została oddana do ruchu pasażerskiego 25 października 2008 r.; tego samego dnia dostępna była cała linia M1.",
+      "Koszt budowy stacji oraz węzła komunikacyjnego wyniósł 296 947 986 zł.",
+      "Nad stacją powstał węzeł przesiadkowy dla autobusów, tramwajów i metra, z parkingiem Parkuj i Jedź na ok. 900 samochodów; artykuł podaje, że jest to największy węzeł przesiadkowy w Warszawie."
+    ],
+    "ciekawostki": [
+      "Rozpoczęcie zaawansowanych robót ziemnych zostało opóźnione o ok. 2 miesiące z powodu sporu między właścicielem kolektury Lotto, stojącej na terenie budowy, a władzami miasta.",
+      "Tory odstawcze mają 295 m długości i umożliwiają pociągom zawracanie w kierunku stacji Kabaty."
+    ],
+    "summary_en": "Młociny is the last station of metro line M1 in Warsaw, in the Bielany district near the Huta Warszawa steelworks. It opened on 25 October 2008, together with the whole M1 line, and is the centre of the largest transport interchange in the city.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Młociny (stacja metra)", "url": "https://pl.wikipedia.org/wiki/M%C5%82ociny_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pacyfikacja-wawrzyszewa",
+    "nazwa": "Pacyfikacja Wawrzyszewa",
+    "name_en": "Massacre of Wawrzyszew",
+    "typ": "zdarzenie",
+    "dzielnica": "Bielany",
+    "adres_dzis": "rogu ul. Wólczyńskiej i ul. Wolumen (pamiątkowy krzyż)",
+    "adres_historyczny": "wieś Wawrzyszew",
+    "lat": 52.283333, "lon": 20.931944,
+    "lokalizacja": "przyblizona",
+    "okres": "1944",
+    "istnieje": true,
+    "fakty": [
+      "3 sierpnia 1944 oddziały niemieckie spaliły częściowo podwarszawską wieś Wawrzyszew, mordując ponad 30 osób, w tym kobiety i dzieci.",
+      "W nocy z 1 na 2 sierpnia 1944 oddziały AK z Kampinosu zaatakowały pobliskie lotnisko bielańskie i zostały odparte, tracąc 29 zabitych i 45 rannych.",
+      "Wawrzyszew został zaatakowany przez Niemców w dniu, w którym zaatakowali pozycje żoliborskich powstańców na Bielanach; zemsta była skierowana na ludność cywilną wsi.",
+      "Według zeznań świadków w akcji brali udział żołnierze należący do formacji SS.",
+      "Ocalałych mieszkańców Niemcy wysiedlili; częściowo spalony został zwłaszcza tzw. Wawrzyszew Stary.",
+      "22 listopada 1992 na rogu ulic Wólczyńskiej i Wolumen odsłonięto metalowy krzyż upamiętniający ofiary; zapisano na nim nazwiska 34 zidentyfikowanych ofiar."
+    ],
+    "ciekawostki": [
+      "Obecnie na terenie dawnej wsi znajduje się osiedle Wrzeciono.",
+      "Wysiedleniu podlegała także ludność m.in. Anina, Babic, Bemowa, Boernerowa, Jelonka, Młocin, Ursusa i Wawra."
+    ],
+    "summary_en": "On 3 August 1944, during the Warsaw Uprising, German units burned most of the village of Wawrzyszew and killed more than 30 residents, including women and children. A metal cross commemorating the victims was unveiled on 22 November 1992.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wawrzyszew"],
+    "zrodla": [{"tytul": "Wikipedia: Pacyfikacja Wawrzyszewa", "url": "https://pl.wikipedia.org/wiki/Pacyfikacja_Wawrzyszewa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykul podaje wspolrzedne wsi, nie konkretnego miejsca masakry; krzyz stoi na rogu ul. Wolumen i ul. Wólczyńskiej."
+  },
+  {
+    "id": "kaplica-mariawitow-schulza-5",
+    "nazwa": "Kaplica Matki Bożej Nieustającej Pomocy (Mariawici, ul. Brunona Schulza 5)",
+    "name_en": "Mariavite chapel of Our Lady of Perpetual Help",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Brunona Schulza 5",
+    "adres_historyczny": "ul. Stanisława Wyspiańskiego (kaplica przed 2003)",
+    "lat": 52.284179522, "lon": 20.969482561,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kaplica Matki Boskiej Nieustającej Pomocy jest siedzibą kustodii warszawskiej Kościoła Katolickiego Mariawitów i parafii centralnej.",
+      "W 1926 r. z polecenia abp. Jana Marii Michała Kowalskiego sprzedano dwa kościoły mariawickie w Warszawie, przy ulicach Skaryszewskiej i Karolkowej.",
+      "Po rozłamie w mariawityzmie (1935 r.) obie świątynie przejął Kościół Starokatolicki Mariawitów.",
+      "Kaplica przy ul. Stanisława Wyspiańskiego została przeniesiona w 2003 r. do budynku przy ul. Brunona Schulza 5.",
+      "Kaplica zajmuje ok. 60 m² na parterze budynku; obok znajdują się kancelaria parafialna i zakrystia.",
+      "Adoracja miesięczna przypada na 3. dzień każdego miesiąca, a uroczystość parafialna na niedzielę przed 24 czerwca."
+    ],
+    "ciekawostki": [
+      "Na tabernakulum, zgodnie z tradycją mariawicką, znajduje się pośmiertne zdjęcie Założycielki Mariawityzmu, zwane Ofiarą Mateczki.",
+      "Drzwiczki tabernakulum zdobi wizerunek Chrystusa pukającego do domu, nawiązujący do Ap 3, 20."
+    ],
+    "summary_en": "The Mariavite parish chapel of Our Lady of Perpetual Help in Bielany, seat of the Warsaw custody of the Catholic Mariavite Church. The chapel was moved in 2003 to a building at ul. Brunona Schulza 5.",
+    "ludzie": [
+      {"kto": "Hanna Maria Rafaela Woińska", "rola": "proboszczka parafii (od 1976) i kustoszka warszawska", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kaplica przy ul. Stanisława Wyspiańskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Kościoła Katolickiego Mariawitów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Ko%C5%9Bcio%C5%82a_Katolickiego_Mariawit%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-matki-bozej-krolowej-pokoju-mlociny",
+    "nazwa": "Kościół Matki Bożej Królowej Pokoju (Młociny)",
+    "name_en": "Church of Our Lady Queen of Peace (Młociny)",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.3084, "lon": 20.9234,
+    "lokalizacja": "przyblizona",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafię Matki Bożej Królowej Pokoju w Warszawie na Młocinach założył kardynał Stefan Wyszyński w 1951 roku.",
+      "Kościół pod wezwaniem Matki Bożej Nieustającej Pomocy zbudowano jako kaplicę w 1951 roku z inicjatywy ks. Konstantego Kruka (Rosińskiego).",
+      "Wokół kaplicy zbudowano kościół z inicjatywy ks. Wiesława Kabulskiego.",
+      "Poświęcenia kościoła dokonał kardynał Józef Glemp 18 czerwca 1998 roku.",
+      "Parafia należy do dekanatu bielańskiego, archidiecezji warszawskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of Our Lady Queen of Peace in Młociny began as a chapel built in 1951 and was later enlarged into a church. Cardinal Józef Glemp consecrated it on 18 June 1998.",
+    "ludzie": [
+      {"kto": "ks. Konstanty Kruk (Rosiński)", "rola": "inicjator budowy kaplicy (1951)", "wiki": null},
+      {"kto": "ks. Wiesław Kabulski", "rola": "inicjator budowy kościoła wokół kaplicy", "wiki": null},
+      {"kto": "ks. kan. Jarosław Kotula", "rola": "proboszcz parafii", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kaplica Matki Bożej Nieustającej Pomocy"],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Matki Bożej Królowej Pokoju w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Matki_Bo%C5%BCej_Kr%C3%B3lowej_Pokoju_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul nie podaje adresu kościoła; wspolrzedne z naglowka artykulu."
+  },
+  {
+    "id": "kosciol-matki-bozej-wspomozycielki-wiernych",
+    "nazwa": "Kościół Matki Bożej Wspomożycielki Wiernych",
+    "name_en": "Church of Our Lady Help of Christians",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Josepha Conrada 7",
+    "adres_historyczny": null,
+    "lat": 52.2708, "lon": 20.9278,
+    "lokalizacja": "dokladna",
+    "okres": "1988–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafię Matki Bożej Wspomożycielki Wiernych założył w 1988 roku metropolita warszawski Józef Glemp.",
+      "Kościół parafialny został wybudowany na przełomie lat osiemdziesiątych i dziewięćdziesiątych XX wieku.",
+      "Wystrój ścian prezbiterium oraz drogę krzyżową wykonał pochodzący z Armenii artysta malarz i rzeźbiarz Zhora Golstyan.",
+      "Parafia należy do dekanatu bielańskiego, archidiecezji warszawskiej, i jest obsługiwana przez księży diecezjalnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Parish church of Our Lady Help of Christians at ul. Josepha Conrada 7, built at the turn of the 1980s and 1990s. The parish was founded in 1988 by Cardinal Józef Glemp; the presbytery walls and the Stations of the Cross are by Armenian artist Zhora Golstyan.",
+    "ludzie": [
+      {"kto": "Zhora Golstyan", "rola": "artysta malarz i rzeźbiarz, autor wystroju prezbiterium i drogi krzyżowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Matki Bożej Wspomożycielki Wiernych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Matki_Bo%C5%BCej_Wspomo%C5%BCycielki_Wiernych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-niepokalanego-poczecia-wrzeciono",
+    "nazwa": "Kościół Niepokalanego Poczęcia NMP na Wrzecionie",
+    "name_en": "Church of the Immaculate Conception on Wrzeciono",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2915, "lon": 20.9397,
+    "lokalizacja": "przyblizona",
+    "okres": "1980–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia Niepokalanego Poczęcia NMP na Wrzecionie została erygowana 15 marca 1980 przez prymasa Stefana Wyszyńskiego.",
+      "Kościół został wybudowany w latach 90. XX wieku.",
+      "8 września 1995 kardynał Józef Glemp dokonał uroczystego poświęcenia świątyni.",
+      "W parafii posługę pełnią siostry salezjanki.",
+      "Od 2022 roku proboszczem parafii jest ks. Wojciech Janyga."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Parish church of the Immaculate Conception of the Blessed Virgin Mary on Wrzeciono. The parish was established on 15 March 1980, and the church, built in the 1990s, was consecrated by Cardinal Józef Glemp on 8 September 1995.",
+    "ludzie": [
+      {"kto": "ks. Wojciech Janyga", "rola": "proboszcz parafii (od 2022)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Niepokalanego Poczęcia Najświętszej Maryi Panny w Warszawie (Wrzeciono)", "url": "https://pl.wikipedia.org/wiki/Parafia_Niepokalanego_Pocz%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Warszawie_%28Wrzeciono%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul nie podaje adresu; wspolrzedne z naglowka artykulu."
+  },
+  {
+    "id": "kosciol-zeslania-ducha-swietego",
+    "nazwa": "Kościół Zesłania Ducha Świętego",
+    "name_en": "Church of the Descent of the Holy Spirit",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.269, "lon": 20.9569,
+    "lokalizacja": "przyblizona",
+    "okres": "1984–2002",
+    "istnieje": true,
+    "fakty": [
+      "Parafia Zesłania Ducha Świętego została erygowana w 1984 roku.",
+      "Budowę kościoła parafialnego zaczęto w latach 80. XX wieku, a ukończono w 2000 roku.",
+      "Kościół konsekrował 4 maja 2002 roku Prymas Polski kardynał Józef Glemp."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Parish church of the Descent of the Holy Spirit. Building began in the 1980s, was completed in 2000, and was consecrated by Cardinal Józef Glemp on 4 May 2002.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Zesłania Ducha Świętego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Zes%C5%82ania_Ducha_%C5%9Awi%C4%99tego_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul nalezy do dekanatu zoliborskiego, a w naglowku podano dzielnice Bielany; wspolrzedne z naglowka."
+  },
+  {
+    "id": "kosciol-bl-detkensa-kamedulow-bielany",
+    "nazwa": "Kościół Niepokalanego Poczęcia NMP, św. Józefa i św. Ambrożego (zespół kamedułów na Bielanach)",
+    "name_en": "Church of the Immaculate Conception on Bielany (Camaldolese complex)",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2969, "lon": 20.9615,
+    "lokalizacja": "przyblizona",
+    "okres": "1669–1710",
+    "istnieje": true,
+    "fakty": [
+      "Parafia bł. Edwarda Detkensa spośród stu ośmiu Męczenników w Warszawie została erygowana w 1999 roku.",
+      "Obecny kościół parafialny pw. Niepokalanego Poczęcia NMP, św. Józefa i św. Ambrożego został wybudowany w latach 1669–1710.",
+      "Kościół wchodzi w skład zespołu klasztornego kamedułów na Bielanach.",
+      "Pierwszym proboszczem parafii był ks. Wojciech Drozdowicz (od 1999)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The parish church of the Immaculate Conception, St Joseph and St Ambrose, built in 1669–1710, is part of the Camaldolese monastery complex on Bielany. It is the church of the parish named after Blessed Edward Detkens, erected in 1999.",
+    "ludzie": [
+      {"kto": "ks. Wojciech Drozdowicz", "rola": "proboszcz parafii (od 1999)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia bł. Edwarda Detkensa spośród stu ośmiu Męczenników w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_b%C5%82._Edwarda_Detkensa_spo%C5%9Br%C3%B3d_stu_o%C5%9Bmiu_M%C4%99czennik%C3%B3w_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Adres nie podany w artykule; wspolrzedne z naglowka. Rekord dotyczy kosciola, nie samej parafii."
+  },
+  {
+    "id": "kosciol-swietej-marii-magdaleny-wawrzyszew",
+    "nazwa": "Kościół św. Marii Magdaleny (Wawrzyszew)",
+    "name_en": "Church of St Mary Magdalene (Wawrzyszew)",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "wieś Wawrzyszew",
+    "lat": 52.281, "lon": 20.9279,
+    "lokalizacja": "przyblizona",
+    "okres": "1542–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia św. Marii Magdaleny w Wawrzyszewie została erygowana w 1542 roku przez biskupa poznańskiego Benedykta Izbieńskiego.",
+      "Kościół w Wawrzyszewie ufundował i uposażył lekarz królewski Baltazar Szymaszowski (Szymanowski).",
+      "Biskup poznański Wawrzyniec Goślicki wizytował kościół w 1603 roku i zalecił naprawę zakrystii oraz ścian i sufitu.",
+      "Kościół, którego zdjęcie znajduje się w infoboksie, został wybudowany w latach 90. XX wieku.",
+      "Na terenie parafii znajduje się cmentarz Wawrzyszewski."
+    ],
+    "ciekawostki": [
+      "Józef Łukaszewicz opisał stary kościół; w 1603 roku kolatorem kościoła był pan N. Kącki."
+    ],
+    "summary_en": "St Mary Magdalene parish in Wawrzyszew was founded in 1542 by a royal physician, Baltazar Szymaszowski, and the current church dates from the 1990s. The parish also serves the Wawrzyszewski cemetery.",
+    "ludzie": [
+      {"kto": "Baltazar Szymaszowski (Szymanowski)", "rola": "lekarz królewski, fundator kościoła w Wawrzyszewie (1542)", "wiki": null},
+      {"kto": "Benedykt Izbieński", "rola": "biskup poznański, który erygował parafię i nadał dziesięciny", "wiki": null},
+      {"kto": "Wawrzyniec Goślicki", "rola": "biskup poznański, który wizytował kościół w 1603", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wawrzyszew"],
+    "zrodla": [{"tytul": "Wikipedia: Parafia św. Marii Magdaleny w Warszawie (Wawrzyszew)", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._Marii_Magdaleny_w_Warszawie_%28Wawrzyszew%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Wspolrzedne z naglowka; zdjecie i wiek obecnego budynku z infoboksu nie sa podane szczegolowo."
+  },
+  {
+    "id": "kosciol-swietego-zygmunta-zdobycz-robotnicza",
+    "nazwa": "Kościół św. Zygmunta (plac Konfederacji 55)",
+    "name_en": "Church of St Sigismund (Konfederacji Square 55)",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": "pl. Konfederacji 55",
+    "adres_historyczny": null,
+    "lat": 52.2794, "lon": 20.9463,
+    "lokalizacja": "dokladna",
+    "okres": "1976–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia św. Zygmunta została erygowana 28 czerwca 1951 r. przez abp. Stefana Wyszyńskiego z części parafii św. Marii Magdaleny w Wawrzyszewie i Matki Bożej Królowej Polski na Marymoncie.",
+      "Kościół parafialny na osiedlu Zdobycz Robotnicza przy placu Konfederacji 55 został zbudowany w latach 1976–1980.",
+      "Projekt kościoła wykonał arch. Zbigniew Pawelski.",
+      "Budowę prowadził ks. Ryszard Grygielka.",
+      "Kościół został poświęcony 8 grudnia 1980 r. przez kard. Stefana Wyszyńskiego.",
+      "Od 2007 proboszczem parafii jest ks. prałat dr Krzysztof Kosk."
+    ],
+    "ciekawostki": [
+      "Na terenie parafii, w Szpitalu Bielańskim przy ul. Cegłowskiej 80, działa kaplica Matki Bożej Częstochowskiej."
+    ],
+    "summary_en": "The parish church of St Sigismund on Konfederacji Square in Bielany was built in 1976–1980 to a design by architect Zbigniew Pawelski and consecrated on 8 December 1980 by Cardinal Stefan Wyszyński.",
+    "ludzie": [
+      {"kto": "arch. Zbigniew Pawelski", "rola": "autor projektu kościoła", "wiki": null},
+      {"kto": "ks. Ryszard Grygielka", "rola": "budowniczy kościoła", "wiki": null},
+      {"kto": "ks. prałat dr Krzysztof Kosk", "rola": "proboszcz parafii (od 2007)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia św. Zygmunta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._Zygmunta_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

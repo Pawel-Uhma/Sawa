@@ -1,0 +1,114 @@
+[
+  {
+    "id": "akcja-durrfelda",
+    "nazwa": "Akcja Dürrfeld",
+    "name_en": "Dürrfeld operation (1943 assassination attempt)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "róg ul. Marszałkowskiej i ul. Świętokrzyskiej",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "25.06.1943",
+    "istnieje": true,
+    "fakty": [
+      "Zamach przeprowadziła Armia Krajowa 25 czerwca 1943 roku na rogu ulic Marszałkowskiej i Świętokrzyskiej.",
+      "Celem był Ernst Dürrfeld, niemiecki komisarz warszawskich przedsiębiorstw miejskich.",
+      "Od lutego 1941 roku Dürrfeld nadzorował Przedsiębiorstwo Zaopatrywania i Komunikacji, do którego weszło pięć najbardziej dochodowych miejskich przedsiębiorstw, m.in. Wodociągi i Elektrownia Warszawska.",
+      "Przedsiębiorstwo zostało wyłączone spod kompetencji komisarycznego burmistrza Juliana Kulskiego i podporządkowane Urzędowi Pełnomocnika Szefa Okręgu na m. Warszawę.",
+      "Akcja zakończyła się raną Dürrfelda i zabiciem jego polskiego współpracownika Śliwińskiego, konfidenta i szmalcownika.",
+      "W trakcie akcji rany odniosło dwóch żołnierzy Referatu 993, tzw. Wapiennika, specjalnej jednostki AK do egzekucji na członkach nazistowskiego aparatu represji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 25 June 1943 the Home Army attacked Ernst Dürrfeld, the German commissioner of Warsaw's municipal enterprises, at the corner of Marszałkowska and Świętokrzyska streets. Dürrfeld was wounded and his Polish collaborator was killed.",
+    "ludzie": [
+      {"kto": "Ernst Dürrfeld", "rola": "niemiecki komisarz warszawskich przedsiębiorstw miejskich, cel zamachu (w tekście także „Ernest”)", "wiki": null},
+      {"kto": "Śliwiński", "rola": "polski współpracownik Dürrfelda, zabity w akcji", "wiki": null},
+      {"kto": "Julian Kulski", "rola": "komisaryczny burmistrz miasta, spod którego kompetencji wyłączono przedsiębiorstwa Dürrfelda", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja Dürrfeld", "url": "https://pl.wikipedia.org/wiki/Akcja_D%C3%BCrrfeld"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka są identyczne dla kilku artykułów „Akcja …” (52.232222, 21.008333), więc to prawdopodobnie punkt ogólny dla Śródmieścia, a nie dokładne miejsce. W tekście imię komisarza zapisano raz jako Ernst, raz jako Ernest."
+  },
+  {
+    "id": "akcja-europejska",
+    "nazwa": "Akcja Europejska",
+    "name_en": "Europejska café operation (1943)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "kawiarnia „Europejska”, róg ul. Wilczej i ul. Marszałkowskiej",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "30.03.1943",
+    "istnieje": true,
+    "fakty": [
+      "Akcja została przeprowadzona 30 marca 1943 roku w kawiarni „Europejska” na rogu ulic Wilczej i Marszałkowskiej.",
+      "Akcję przeprowadził oddział wykonawczy Referatu 993.",
+      "Zlikwidowano wówczas dwóch oficerów krakowskiego Gestapo, którzy przybyli do Warszawy na spotkanie z podporucznikiem AK Janem Poznańskim.",
+      "Jan Poznański, aresztowany i torturowany przez Niemców, pozornie zgodził się na współpracę z nimi i dostał dwa tygodnie na znalezienie dojścia do Komendy Głównej AK.",
+      "W likwidacji Niemców brali udział m.in. Tadeusz Towarnicki, Leszek Kowalewski i Lucjan Wiśniewski."
+    ],
+    "ciekawostki": [
+      "Strzały w kawiarni zagłuszyła niemiecka orkiestra, która w tym momencie maszerowała ulicą Marszałkowską."
+    ],
+    "summary_en": "On 30 March 1943 an executive unit of Referat 993 of the Home Army shot two Gestapo officers from Kraków in the Europejska café at Wilcza and Marszałkowska streets. The officers had come to meet an AK officer who had been turned by the Germans.",
+    "ludzie": [
+      {"kto": "Jan Poznański", "rola": "podporucznik AK, pozornie współpracujący z Niemcami po aresztowaniu", "wiki": null},
+      {"kto": "Tadeusz Towarnicki", "rola": "uczestnik likwidacji Niemców", "wiki": null},
+      {"kto": "Leszek Kowalewski", "rola": "uczestnik likwidacji Niemców", "wiki": null},
+      {"kto": "Lucjan Wiśniewski", "rola": "uczestnik likwidacji Niemców", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja Europejska", "url": "https://pl.wikipedia.org/wiki/Akcja_Europejska"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka są identyczne dla kilku artykułów „Akcja …” (52.232222, 21.008333), więc to punkt ogólny, a nie dokładne miejsce kawiarni. Artykuł nie mówi, czy budynek przetrwał wojnę."
+  },
+  {
+    "id": "akcja-kretschmann",
+    "nazwa": "Akcja Kretschmann",
+    "name_en": "Kretschmann operation (1943 assassination)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dmochowskiego (okolice ul. Rozbrat)",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "24.09.1943",
+    "istnieje": true,
+    "fakty": [
+      "Zamach na gestapowca Augusta Kretschmanna przeprowadzili 24 września 1943 żołnierze harcerskiego oddziału „Agat”.",
+      "Kretschmann pracował w referacie IV A 3c warszawskiego Gestapo i był zastępcą komendanta Gęsiówki, gdzie słynął z okrucieństwa.",
+      "W 1943 roku polski sąd podziemny skazał go na karę śmierci; jego nazwisko znalazło się na liście do likwidacji w ramach tzw. Akcji Główki.",
+      "Kretschmann wyszedł z kamienicy przy ul. Dmochowskiego 2 i szedł pieszo do pracy; zamachowcy wyszli mu naprzeciw po przeciwnej stronie ulicy.",
+      "Termin akcji wyznaczono na godz. 7:00 dnia 24 września 1943; wszyscy uczestnicy zajęli stanowiska o 7:08.",
+      "Na ulicy Rozbrat wywiązała się strzelanina między zamachowcami a Niemcami; „Rawicz” osłaniał odwrót celnym ogniem."
+    ],
+    "ciekawostki": [
+      "Pistolet „Kopcia” zaciął się; nie mając czasu na przeładowanie, uderzył Kretschmanna kolbą w głowę, a potem zastrzelił go z zapasowego pistoletu."
+    ],
+    "summary_en": "On 24 September 1943 members of the Agat scouting unit shot August Kretschmann, a Gestapo officer and deputy commandant of the Gęsiówka camp, as he walked to work. An underground court had sentenced him to death earlier that year.",
+    "ludzie": [
+      {"kto": "August Kretschmann", "rola": "gestapowiec, zastępca komendanta Gęsiówki, cel zamachu", "wiki": null},
+      {"kto": "Stanisław Jastrzębski ps. „Kopeć”", "rola": "dowódca akcji i główny wykonawca wyroku", "wiki": null},
+      {"kto": "Zbigniew Dąbrowski ps. „Cyklon”", "rola": "drugi wykonawca", "wiki": null},
+      {"kto": "Żelisław Olech ps. „Rawicz”", "rola": "zastępca dowódcy, ubezpieczenie", "wiki": null},
+      {"kto": "Aleksander Kunicki ps. „Rayski”", "rola": "szef komórki wywiadu oddziału „Agat”, rozpoznanie", "wiki": null},
+      {"kto": "Maria Chuchla ps. „Maja”", "rola": "łączniczka, obserwacja Kretschmanna", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja Kretschmann", "url": "https://pl.wikipedia.org/wiki/Akcja_Kretschmann"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Tekst w paczce urywa się w opisie odjazdu samochodu. Współrzędne z nagłówka są identyczne dla kilku „Akcja …” (52.232222, 21.008333), więc to punkt ogólny, a nie dokładne miejsce zamachu."
+  }
+]

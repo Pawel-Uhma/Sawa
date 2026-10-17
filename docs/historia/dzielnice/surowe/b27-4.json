@@ -1,0 +1,256 @@
+[
+  {
+    "id": "kosciol-ewangelicko-reformowany-warszawa",
+    "nazwa": "Kościół Ewangelicko-Reformowany w Warszawie",
+    "name_en": "Reformed Evangelical Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2438,
+    "lon": 20.9985,
+    "lokalizacja": "dokladna",
+    "okres": "1776–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafię zarejestrowano na terenie Leszna w 1776 roku, kiedy cofnięto dekret Janusza Mazowieckiego z 1525 roku zabraniający innowiercom osiedlania się na Mazowszu.",
+      "Rok po rejestracji poświęcono pierwszy kościół (obecnie siedziba Warszawskiej Opery Kameralnej) i wybudowano plebanię według projektu Szymona Bogumiła Zuga.",
+      "30 października 1866 roku rozpoczęto budowę nowego kościoła w stylu neogotyckim według projektu architekta Adolfa Loewego; budowa trwała 14 lat.",
+      "24 października 1880 roku świątynię poświęcono; wysoka wieża z koronkowym hełmem wzorowana jest na wieży katedry we Fryburgu Bryzgowijskim.",
+      "W 1881 roku parafia założyła w należącym do niej pałacu Działyńskich szkołę elementarną i przytułek dla sierot, a w 1900 roku dom starców i kalek.",
+      "W 1940 roku budynek parafii wraz z kościołem, pałacem Działyńskich i Szpitalem Ewangelickim znalazł się w tzw. enklawie ewangelickiej, wyłączonej z warszawskiego getta.",
+      "W 1958 roku parafia odzyskała plebanię (pałacyk Zuga)."
+    ],
+    "ciekawostki": [
+      "Wśród elementów skromnego wystroju świątyni zwraca uwagę dębowa ambona wykonana według projektu Konstantego Wojciechowskiego."
+    ],
+    "summary_en": "The Reformed Evangelical Church in Warsaw was built in neo-Gothic style in 1866–1880 to a design by Adolf Loewe, with a tower modelled on Freiburg Minster. The parish was registered in 1776 and ran schools and a shelter in the Działyński Palace.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu plebanii (1777)", "wiki": null},
+      {"kto": "Adolf Loewe", "rola": "architekt nowego kościoła neogotyckiego (1866–1880)", "wiki": null},
+      {"kto": "Konstanty Wojciechowski", "rola": "autor projektu dębowej ambony", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Ewangelicko-Reformowana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Ewangelicko-Reformowana_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy kościoła; adres nie podany w paczce. Rok 1777 wyprowadzony z 'rok później' po rejestracji w 1776."
+  },
+  {
+    "id": "kosciol-matki-boskiej-czestochowskiej-warszawa",
+    "nazwa": "Kościół Matki Boskiej Częstochowskiej w Warszawie",
+    "name_en": "Church of Our Lady of Częstochowa, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zagórna 5",
+    "adres_historyczny": "ul. Łazienkowska (kościół zniszczony w 1944)",
+    "lat": 52.2264,
+    "lon": 21.0402,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś (obecna świątynia)",
+    "istnieje": true,
+    "fakty": [
+      "Ośrodek duszpasterski przy ul. Łazienkowskiej powstał w latach 1907–1908; kaplicę wybudował ks. Wacław Rytel.",
+      "5 lipca 1919 roku ks. arcybiskup Aleksander Kakowski erygował parafię pod wezwaniem Matki Boskiej Częstochowskiej; pierwszym proboszczem został ks. Marceli Ryniewicz.",
+      "Budowę kościoła przy ul. Łazienkowskiej rozpoczęto w 1923 roku według projektu Hugona Kudery; w 1933 roku ks. kard. Kakowski konsekrował nową świątynię.",
+      "We wrześniu 1944 roku świątynia została zniszczona przez niemieckie bomby; w jej murach zginęło kilkadziesiąt osób.",
+      "W związku z budową Trasy Łazienkowskiej w 1968 roku wyrażono zgodę na przeniesienie siedziby parafii i budowę kościoła oraz plebanii przy ul. Zagórnej 5.",
+      "W 1979 roku Prymas Stefan Wyszyński wmurował kamień węgielny; kościół powstał według projektu architektów Stanisława i Piotra Marzyńskich.",
+      "W 1983 roku bp Jerzy Modzelewski poświęcił nową świątynię na pobojowisku czerniakowskiego przyczółka; w prezbiterium umieszczono tablice związane z ugrupowaniami powstańczymi.",
+      "W 1993 roku kard. Józef Glemp dokonał konsekracji świątyni."
+    ],
+    "ciekawostki": [
+      "W 1933 roku w uroczystości konsekracji uczestniczyli prezydent Ignacy Mościcki oraz marszałek Józef Piłsudski."
+    ],
+    "summary_en": "The Church of Our Lady of Częstochowa was founded in 1919 and first built on Łazienkowska Street, where the church was destroyed by German bombs in 1944. The parish moved to Zagórna Street after the Łazienkowska Trasa was built, and the current church was consecrated in 1983 on the site of the Czerniaków bridgehead battles.",
+    "ludzie": [
+      {"kto": "ks. Wacław Rytel", "rola": "budowniczy kaplicy ośrodka duszpasterskiego (1907–1908)", "wiki": null},
+      {"kto": "Hugon Kudera", "rola": "autor projektu kościoła przy ul. Łazienkowskiej (1923)", "wiki": null},
+      {"kto": "Stanisław i Piotr Marzyńscy", "rola": "architekci kościoła przy ul. Zagórnej (projekt z 1979)", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "Prymas Polski, wmurował kamień węgielny w 1979 roku", "wiki": null},
+      {"kto": "Jerzy Modzelewski", "rola": "biskup, który poświęcił nową świątynię w 1983 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Matki Boskiej Częstochowskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Matki_Boskiej_Cz%C4%99stochowskiej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o parafii; rekord dotyczy kościoła przy ul. Zagórnej 5 (współrzędne z nagłówka parafii)."
+  },
+  {
+    "id": "kosciol-najswietszego-zbawiciela-warszawa",
+    "nazwa": "Kościół Najświętszego Zbawiciela w Warszawie",
+    "name_en": "Church of the Most Holy Saviour, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2189,
+    "lon": 21.0178,
+    "lokalizacja": "dokladna",
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia została erygowana w 1911 roku.",
+      "Kościół wybudowano na początku XX wieku; po zniszczeniach wojennych został odbudowany.",
+      "Od 2006 roku kościół jest siedzibą Sanktuarium Matki Bożej – Matki Zbawiciela."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of the Most Holy Saviour was built at the beginning of the 20th century, rebuilt after wartime damage, and has been the seat of the Shrine of Our Lady, Mother of the Saviour since 2006.",
+    "ludzie": [
+      {"kto": "ks. prałat Roman Rembeliński", "rola": "proboszcz parafii w latach 1912–1926", "wiki": null},
+      {"kto": "ks. prałat Marceli Nowakowski", "rola": "proboszcz parafii w latach 1927–1939", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Najświętszego Zbawiciela w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Naj%C5%9Bwi%C4%99tszego_Zbawiciela_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł bardzo krótki; adres i nazwa ulicy niepodane w paczce."
+  },
+  {
+    "id": "kosciol-narodzenia-nmp-warszawa",
+    "nazwa": "Kościół Narodzenia Najświętszej Maryi Panny w Warszawie",
+    "name_en": "Church of the Nativity of the Blessed Virgin Mary, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2428,
+    "lon": 20.995,
+    "lokalizacja": "dokladna",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafię erygowano 1 września 1866 roku przez ks. kan. Jozafata Szczygielskiego, administratora archidiecezji warszawskiej po wywiezieniu bp. Pawła Rzewuskiego do Astrachania.",
+      "Kościół wybudowano w XVIII wieku dla karmelitów trzewiczkowych.",
+      "W 1962 roku, w związku z poszerzeniem al. „Solidarności”, kościół przesunięto o 21 metrów w kierunku północnym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The church was built in the 18th century for the Discalced Carmelites and moved 21 metres north in 1962 to make room for widening Solidarności Avenue. The parish was founded in 1866.",
+    "ludzie": [
+      {"kto": "ks. kan. Jozafat Szczygielski", "rola": "erygował parafię w 1866 roku", "wiki": null},
+      {"kto": "ks. Stanisław Zdzitowiecki", "rola": "proboszcz parafii, późniejszy biskup włocławski", "wiki": null},
+      {"kto": "ks. Tadeusz Karolak", "rola": "proboszcz parafii", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Narodzenia Najświętszej Maryi Panny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Narodzenia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres niepodany w paczce; artykuł podaje tylko, że kościół stoi przy al. Solidarności (obecnej w czasie przesunięcia)."
+  },
+  {
+    "id": "kosciol-nawiedzenia-nmp-warszawa",
+    "nazwa": "Kościół Nawiedzenia Najświętszej Maryi Panny w Warszawie",
+    "name_en": "Church of the Visitation of the Blessed Virgin Mary, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2542,
+    "lon": 21.0092,
+    "lokalizacja": "dokladna",
+    "okres": "1409–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół parafialny Nawiedzenia Najświętszej Maryi Panny wybudowano w latach 1409–1411; został odbudowany po zniszczeniach wojennych.",
+      "Parafię erygowano w 1411 roku.",
+      "Antonin Pobóg Malinowski, dominikanin, wyświęcony na biskupa 22 grudnia 1782 roku w kościele Dominikanów w Warszawie, był proboszczem parafii w czasie Sejmu Czteroletniego.",
+      "Proboszcz Tomasz Bożeński (1822–1828) naprawił uszkodzone mury i sztachetami ogrodził plac przy kościele."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of the Visitation was built in 1409–1411 and rebuilt after the wars. Its parish was founded in 1411.",
+    "ludzie": [
+      {"kto": "Antonin Pobóg Malinowski", "rola": "dominikanin, sufragan żmudzki, proboszcz w czasie Sejmu Czteroletniego", "wiki": null},
+      {"kto": "Tomasz Bożeński", "rola": "honorowy kanonik warszawski, proboszcz (1822–1828)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Nawiedzenia Najświętszej Marii Panny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Nawiedzenia_Naj%C5%9Bwi%C4%99tszej_Marii_Panny_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres niepodany w paczce. Lista proboszczów w artykule jest wybiórczo przytoczona w polu ludzie."
+  },
+  {
+    "id": "kosciol-wszystkich-swietych-warszawa",
+    "nazwa": "Kościół Wszystkich Świętych w Warszawie",
+    "name_en": "All Saints Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.235,
+    "lon": 21.0036,
+    "lokalizacja": "dokladna",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafię erygowano w 1866 roku.",
+      "Kościół parafialny wybudowano w XIX wieku; po zniszczeniach II wojny światowej został odbudowany.",
+      "W latach 1914–1946 proboszczem parafii był Marceli Godlewski.",
+      "Administratorem parafii był m.in. ks. Tadeusz Karolak."
+    ],
+    "ciekawostki": [],
+    "summary_en": "All Saints Church was built in the 19th century, rebuilt after World War II, and its parish was founded in 1866.",
+    "ludzie": [
+      {"kto": "Marceli Godlewski", "rola": "proboszcz parafii w latach 1914–1946", "wiki": null},
+      {"kto": "ks. Tadeusz Karolak", "rola": "administrator parafii", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Wszystkich Świętych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Wszystkich_%C5%9Awi%C4%99tych_w_Warszawie"}],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł bardzo krótki; brak adresu i opisu architektury w paczce."
+  },
+  {
+    "id": "kaplica-milosierdzia-bozego-polskokatolicka",
+    "nazwa": "Kaplica Miłosierdzia Bożego (Kościół Polskokatolicki)",
+    "name_en": "Chapel of Divine Mercy (Polish National Catholic Church)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2247,
+    "lon": 21.0156,
+    "lokalizacja": "przyblizona",
+    "okres": "2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia Miłosierdzia Bożego została reaktywowana 12 grudnia 2005 roku decyzją bp. prof. dr. hab. Wiktora Wysoczańskiego; wcześniej erygowano ją 30 marca 1961 roku, ale wkrótce rozwiązano.",
+      "Kaplica znajduje się na parterze budynku Centrum Kościoła Polskokatolickiego w RP im. bpa F. Hodura w Warszawie i służy także potrzebom Wyższego Seminarium Duchownego Kościoła Polskokatolickiego.",
+      "W latach 2006–2011 kaplicę współużytkował Kościół prawosławny; od 21 maja 2011 roku prawosławny punkt duszpasterski korzysta z własnej kaplicy przy ul. Lelechowskiej 5.",
+      "Msze odbywają się w niedziele; najważniejsze święta obchodzone są wspólnie z parafią katedralną Świętego Ducha przy ul. Szwoleżerów 2."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Divine Mercy chapel is a small chapel on the ground floor of the Polish National Catholic Church centre in Warsaw. It was reactivated in 2005 and shared with the Orthodox Church from 2006 to 2011.",
+    "ludzie": [
+      {"kto": "bp prof. dr hab. Wiktor Wysoczański", "rola": "reaktywował parafię w 2005 roku", "wiki": null},
+      {"kto": "bp dr Maksymilian Rode", "rola": "erygował parafię w 1961 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia polskokatolicka Miłosierdzia Bożego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_polskokatolicka_Mi%C5%82osierdzia_Bo%C5%BCego_w_Warszawie"}],
+    "pewnosc": "niska",
+    "uwagi": "Adres budynku Centrum Kościoła Polskokatolickiego nie jest podany w paczce; współrzędne z nagłówka parafii, lokalizacja przyblizona. Artykuł o parafii, rekord dotyczy kaplicy."
+  },
+  {
+    "id": "kosciol-sw-aleksandra-warszawa",
+    "nazwa": "Kościół św. Aleksandra w Warszawie",
+    "name_en": "St Alexander's Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2291,
+    "lon": 21.0223,
+    "lokalizacja": "dokladna",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafię erygowano w 1820 roku.",
+      "Kościół wybudowano w XIX wieku; po zniszczeniach wojennych został odbudowany.",
+      "Na terenie parafii znajdują się cztery kaplice, m.in. Kaplica Matki Bożej Nieustającej Pomocy przy ul. Wilcza 7 oraz Kaplica Matki Bożej Królowej Polski w Belwederze.",
+      "W latach 1919–1924 plebania była siedzibą Nuncjatury Stolicy Apostolskiej w Polsce."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St Alexander's Church was built in the 19th century and rebuilt after the war. The parish, founded in 1820, also runs four chapels, and its rectory housed the Apostolic Nunciature from 1919 to 1924.",
+    "ludzie": [
+      {"kto": "ks. Tadeusz Balewski", "rola": "proboszcz parafii (2000–2020)", "wiki": null},
+      {"kto": "ks. Mirosław Jaworski", "rola": "proboszcz parafii (od 2020)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia św. Aleksandra w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._Aleksandra_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Adres kościoła niepodany w paczce; rekord dotyczy kościoła parafialnego, bez kaplic jako osobnych rekordów."
+  }
+]

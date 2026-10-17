@@ -1,0 +1,374 @@
+[
+  {
+    "id": "ermitaz-w-lazienkach",
+    "nazwa": "Ermitaż w Łazienkach Królewskich",
+    "name_en": "Ermitaż (Hermitage) pavilion in Łazienki Park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie (północna część parku)",
+    "adres_historyczny": null,
+    "lat": 52.217736111,
+    "lon": 21.036244444,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70. XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ermitaż został wybudowany na polecenie marszałka wielkiego koronnego Stanisława Herakliusza Lubomirskiego w latach 70. XVII wieku według projektu Tylmana z Gameren; pierwotnie nazywany był Eremitorium.",
+      "W 1764 roku właścicielem Ujazdowa i tym samym Ermitażu został król Stanisław August Poniatowski.",
+      "W 1777 roku Ermitaż spłonął w pożarze i został szybko odbudowany w klasycystycznym kostiumie według projektu Dominika Merliniego.",
+      "Stanisław August Poniatowski oddał Ermitaż w ręce swojej przyjaciółki Henrietty Lullier.",
+      "W latach 50. XX wieku Ermitaż był rezydencją Kazimierza Mijala; później zaadaptowano go na przedszkole dla dzieci elit.",
+      "W 1993 roku Marek Kwiatkowski, dyrektor Łazienek Królewskich, rozpoczął rozmowy o przekazaniu budynku Łazienkom; wywołało to protesty rodziców, bo oznaczało likwidację przedszkola.",
+      "W 1995 roku zainteresowała się nim restauracja „Belvedere”, która zleciła remont według wskazówek Marka Kwiatkowskiego; organizowano tu m.in. obiady czwartkowe i promocje książek."
+    ],
+    "ciekawostki": [
+      "Na tyłach Ermitażu powstał ogród w stylu angielsko-chińskim, nazywany Dziką Promenadą.",
+      "W 1976 roku rozebrano ogrodzenie wzdłuż ulic Agrykoli i Myśliwieckiej, a na ogrodzonym terenie urządzono boisko, na którym grali zawodnicy Legii i młodzież z okolicznych szkół."
+    ],
+    "summary_en": "The Ermitaż is a pavilion in the northern part of the Royal Łazienki Park, built in the 1670s for Stanisław Herakliusz Lubomirski. It was rebuilt in neoclassical style after a fire in 1777 and was later used as a kindergarten, a restaurant venue and a cultural space.",
+    "ludzie": [
+      {"kto": "Stanisław Herakliusz Lubomirski", "rola": "marszałek wielki koronny, zleceniodawca budowy", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "architekt projektu z lat 70. XVII w.", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król, właściciel Ermitażu od 1764 roku", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "architekt odbudowy po 1777 roku", "wiki": null},
+      {"kto": "Henrietta Lullier", "rola": "przyjaciółka króla, której oddano Ermitaż", "wiki": null},
+      {"kto": "Kazimierz Mijal", "rola": "rezydent Ermitażu w latach 50. XX w.", "wiki": null},
+      {"kto": "Marek Kwiatkowski", "rola": "dyrektor Łazienek Królewskich, który przekazanie budynku zainicjował", "wiki": null}
+    ],
+    "dawne_nazwy": ["Eremitorium (pierwotna nazwa)"],
+    "zrodla": [{"tytul": "Wikipedia: Ermitaż w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ermita%C5%BC_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Pominięto końcowe fakty artykułu: użytkowników po „Belvedere” (Stowarzyszenie Kulturalne „Renesans”), obecne użytkowanie parteru i piętra (Towarzystwo Opieki nad Zabytkami)."
+  },
+  {
+    "id": "fabryka-kobiercow-w-warszawie",
+    "nazwa": "Fabryka Kobierców w Warszawie",
+    "name_en": "Warsaw carpet factory (1817–1855)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Czerniakowska, nr hip. 3041a",
+    "lat": 52.230833,
+    "lon": 21.032778,
+    "lokalizacja": "dokladna",
+    "okres": "1817–1855",
+    "istnieje": false,
+    "fakty": [
+      "Zakład „Rządowa Fabryka Kobierców” powstał w 1817 roku z inicjatywy Stanisława Staszica.",
+      "W 1821 fabryka pracowała na 12 warsztatach i zatrudniała 120 osób.",
+      "W 1826 roku fabrykę sprzedano wspólnikom Janowi Geysmerowi i Janowi Velthusenowi; od tej pory działała jako „Fabryka Kobierców Jana Geysmera”.",
+      "W 1828 fabryka miała 27 warsztatów i zatrudniała 320 robotników.",
+      "W 1841 roku fabryka zatrudniała 157 osób, mimo że dzięki mechanizacji zaprzestano przędzenia ręcznego.",
+      "30 marca 1850 roku fabryka uległa pożarowi; przed 1855 rokiem zakończyła działalność na ul. Czerniakowskiej.",
+      "W 1856 roku na miejscu fabryki powstała Gazownia Miejska (Gazownia na Ludnej)."
+    ],
+    "ciekawostki": [
+      "Nowi właściciele sprzedawali swoje wyroby w sklepie pod adresem Miodowa 461 (pałac Lessera)."
+    ],
+    "summary_en": "The Warsaw carpet factory, founded in 1817 on Czerniakowska Street on the initiative of Stanisław Staszic, operated until about 1855. A fire in 1850 damaged it, and in 1856 its site became the city gasworks.",
+    "ludzie": [
+      {"kto": "Stanisław Staszic", "rola": "inicjator zakładu z 1817 roku", "wiki": null},
+      {"kto": "Jan Geysmer", "rola": "wspólnik, od 1826 właściciel fabryki", "wiki": null},
+      {"kto": "Jan Velthusen", "rola": "wspólnik, od 1826 właściciel fabryki", "wiki": null},
+      {"kto": "Juliusz Gortz", "rola": "nabywca zakładów po zakończeniu działalności w Warszawie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Rządowa Fabryka Kobierców", "Fabryka Kobierców Jana Geysmera"],
+    "zrodla": [{"tytul": "Wikipedia: Fabryka Kobierców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Fabryka_Kobierc%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "figura-matki-boskiej-pasawskiej",
+    "nazwa": "Figura Matki Boskiej Pasawskiej",
+    "name_en": "Our Lady of Passau statue on Krakowskie Przedmieście",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście",
+    "adres_historyczny": null,
+    "lat": 52.245056,
+    "lon": 21.014181,
+    "lokalizacja": "dokladna",
+    "okres": "1683–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rzeźbę wykonał rzeźbiarz i architekt Józef Bellotti; wzniesiono ją w 1683 roku jako wotum dziękczynne za ocalenie artysty z rodziną od zarazy z lat 1677–1679 oraz na pamiątkę zwycięstwa Jana III Sobieskiego w odsieczy wiedeńskiej.",
+      "Nazwa figury pochodzi od wzorowania na słynącym cudami obrazie Matki Boskiej w pasawskim kościele Wallfahrtskirche Mariahilf.",
+      "Obraz w Pasawie jest wierną kopią obrazu ołtarzowego z Innsbrucku, dzieła Lucasa Cranacha Starszego z 1537 roku, sporządzoną w 1620 roku.",
+      "Figurę ukoronowano w latach 30. XIX wieku; w 1852 roku restaurację ufundował generał Aleksander Hauke.",
+      "W 1866 roku figurę przeniesiono na obecne miejsce; wcześniej stała bardziej na południe Krakowskiego Przedmieścia.",
+      "W 1905 roku podniesiono cokół, ustawiając go na kamiennej podbudowie w stylu secesji.",
+      "Figura przetrwała powstanie warszawskie i została odnowiona w 2001 roku staraniem Franza Batthyany'ego.",
+      "Jest drugim – po Kolumnie Zygmunta z 1644 roku – najstarszym pomnikiem Warszawy."
+    ],
+    "ciekawostki": [
+      "Przed obrazem w Pasawie modlił się cesarz Leopold I wraz z małżonką o wyzwolenie Wiednia z oblężenia.",
+      "Na czterech stronach cokołu wykuto inskrypcje po łacinie lub po włosku."
+    ],
+    "summary_en": "The Our Lady of Passau statue on Krakowskie Przedmieście is a votive sculpture made by Józef Bellotti in 1683 after a Passau painting. It survived the Warsaw Uprising and is the second-oldest monument in Warsaw after the Sigismund Column.",
+    "ludzie": [
+      {"kto": "Józef Bellotti", "rola": "rzeźbiarz i architekt, autor figury", "wiki": null},
+      {"kto": "Jan III Sobieski", "rola": "król, którego zwycięstwo pod Wiedniem upamiętniono", "wiki": null},
+      {"kto": "Aleksander Hauke", "rola": "generał, ufundował restaurację w 1852 roku", "wiki": null},
+      {"kto": "Hugo Kuder", "rola": "architekt projektu nowego postumentu (1905)", "wiki": null},
+      {"kto": "Franz Batthyany", "rola": "fundator odnowienia w 2001 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Figura Matki Boskiej Pasawskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Figura_Matki_Boskiej_Pasawskiej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "figura-sw-jana-nepomucena-senatorska",
+    "nazwa": "Figura św. Jana Nepomucena (ul. Senatorska)",
+    "name_en": "Saint John of Nepomuk statue on Senatorska Street",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Senatorska 40",
+    "adres_historyczny": null,
+    "lat": 52.2427,
+    "lon": 21.004,
+    "lokalizacja": "dokladna",
+    "okres": "1733–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rokokowa rzeźba świętego Jana Nepomucena została wykonana w 1733 roku przez Giovanniego Liverottiego.",
+      "Fundatorami rzeźby byli Józef Wandalin Mniszech i jego żona Konstancja.",
+      "Pomnik stoi w tym samym miejscu co pierwotnie, w sąsiedztwie pałacu Mniszchów; jest jedyną pozostałością przypałacowego ogrodu.",
+      "Na czworobocznej kolumnie umieszczono płaskorzeźby ze scenami z życia świętego, ilustrujące jego cnoty: męstwo, umiarkowanie, sprawiedliwość i roztropność.",
+      "W 1965 roku rzeźba została wpisana do rejestru zabytków.",
+      "W 2004 roku przeprowadzono renowację pomnika; pod figurą odnaleziono ołowianą tabliczkę kommemoratywną z 1733 roku.",
+      "Podczas prac konserwatorskich zmieniono rysunek rąk świętego, zrekonstruowanych po II wojnie światowej."
+    ],
+    "ciekawostki": [
+      "Drugą kopię tabliczki przekazano do Ambasady Belgii, która od 1962 roku mieści się w pałacu Mniszchów."
+    ],
+    "summary_en": "The rococo statue of Saint John of Nepomuk on Senatorska Street was made in 1733 for the Mniszech family and is the only surviving remnant of their palace garden. It was restored in 2004, when a lead commemorative plaque from 1733 was found beneath it.",
+    "ludzie": [
+      {"kto": "Giovanni Liverotti", "rola": "rzeźbiarz, wykonawca w 1733 roku", "wiki": null},
+      {"kto": "Józef Wandalin Mniszech", "rola": "fundator rzeźby", "wiki": null},
+      {"kto": "Konstancja Mniszech", "rola": "żona fundatora, współfundatorka", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Figura św. Jana Nepomucena w Warszawie (ul. Senatorska)", "url": "https://pl.wikipedia.org/wiki/Figura_%C5%9Bw._Jana_Nepomucena_w_Warszawie_%28ul._Senatorska%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-filharmonii-narodowej",
+    "nazwa": "Gmach Filharmonii Narodowej",
+    "name_en": "National Philharmonic building (Jasna 5)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jasna 5",
+    "adres_historyczny": "kwartał ulic Jasnej, Moniuszki i Nowosiennej (Sienkiewicza)",
+    "lat": 52.234475,
+    "lon": 21.011202,
+    "lokalizacja": "dokladna",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach przy ul. Jasnej 5 wzniesiono w latach 1900–1901 pod kierownictwem Karola Kozłowskiego, na działce o wymiarach ok. 58 × 44 m.",
+      "Pierwotny gmach Filharmonii Warszawskiej powstał dzięki spółce zawiązanej przez arystokratów i finansistów, m.in. Lubomirskich, Zamoyskich i Władysława Tyszkiewicza, którzy zdobyli pieniądze na budowę ze sprzedaży akcji.",
+      "Uroczysta inauguracja odbyła się 5 listopada 1901 roku; orkiestrą dyrygował Emil Młynarski, a solistą był Ignacy Jan Paderewski.",
+      "W murach gmachu odbywał się Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina (1927, 1932, 1937).",
+      "Gmach spalono w czasie obrony Warszawy we wrześniu 1939 roku, a w 1944 uległ zbombardowaniu i dalszemu zniszczeniu.",
+      "Odbudowany budynek otwarto 21 lutego 1955 roku, w dniu rozpoczęcia V Międzynarodowego Konkursu Pianistycznego im. Fryderyka Chopina; odbudowano go według projektu Eugeniusza Szparkowskiego i Henryka Białobrzeskiego, w stylistyce socrealizmu.",
+      "Główne wejście przeniesiono na stronę ul. Sienkiewicza; sala koncertowa ma 1072 miejsca."
+    ],
+    "ciekawostki": [
+      "W pierwotnym gmachu plafon w sali koncertowej wykonał Henryk Siemiradzki.",
+      "Zarządzeniem Ministra Kultury i Sztuki z 25 października 1949 roku utworzono przedsiębiorstwo państwowe „Filharmonia Narodowa w Warszawie”."
+    ],
+    "summary_en": "The National Philharmonic building at Jasna 5 was built in 1900–1901 by Karol Kozłowski for the Warsaw Philharmonic. It was destroyed in 1939 and 1944 and reopened in 1955 in a socialist-realist style, the year the Chopin Competition began.",
+    "ludzie": [
+      {"kto": "Karol Kozłowski", "rola": "architekt gmachu z lat 1900–1901", "wiki": null},
+      {"kto": "Eugeniusz Szparkowski", "rola": "architekt odbudowy (1950–1955)", "wiki": null},
+      {"kto": "Henryk Białobrzeski", "rola": "architekt odbudowy (1950–1955)", "wiki": null},
+      {"kto": "Emil Młynarski", "rola": "dyrygował inauguracją w 1901 roku", "wiki": null},
+      {"kto": "Ignacy Jan Paderewski", "rola": "solista na inauguracji w 1901 roku", "wiki": null},
+      {"kto": "Aleksander Rajchman", "rola": "dziennikarz i wydawca, jeden z inicjatorów Filharmonii", "wiki": null},
+      {"kto": "Leopold Julian Kronenberg", "rola": "bankier, stanął na czele Towarzystwa Akcyjnego", "wiki": null},
+      {"kto": "Henryk Siemiradzki", "rola": "autor plafonu w sali koncertowej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Filharmonia Warszawska (przedwojenna nazwa instytucji)"],
+    "zrodla": [{"tytul": "Wikipedia: Filharmonia Narodowa", "url": "https://pl.wikipedia.org/wiki/Filharmonia_Narodowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy gmachu; instytucja Filharmonia Narodowa jest poza zakresem."
+  },
+  {
+    "id": "focus-biurowiec",
+    "nazwa": "Focus (biurowiec)",
+    "name_en": "Focus office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Armii Ludowej 26",
+    "adres_historyczny": null,
+    "lat": 52.217777777,
+    "lon": 21.008055555,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prostopadłościenny biurowiec zaprojektowany w pracowni Stefana Kuryłowicza powstał w 2001 roku.",
+      "Każda ściana budynku odróżnia się architektonicznie; wewnątrz są cztery niezależne, samowystarczalne części z własnymi windami.",
+      "Wspólne są 3 podziemne kondygnacje z parkingami.",
+      "Na 6. piętrze frontowej ściany znajduje się czteropiętrowy ogród zimowy z widokiem na Pole Mokotowskie.",
+      "Frontowa ściana przykryta jest dwuwarstwową ścianą kurtynową, która zapewnia izolację termiczną i dźwiękową.",
+      "W 2016 roku na dachu biurowca ustawiono pasiekę.",
+      "W budynku mieszczą się m.in. Ambasada Królestwa Norwegii, Ambasada Islandii i centrala Deutsche Bank Polska."
+    ],
+    "ciekawostki": [
+      "Atrium przykryte szklanym dachem jest połączone z ogrodem zimowym."
+    ],
+    "summary_en": "Focus is a 2001 office building at Aleja Armii Ludowej 26, designed in the studio of Stefan Kuryłowicz. Each of its four facades is different, and it houses a winter garden, an apiary on the roof and several embassies.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "projektant (pracownia)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Focus (biurowiec)", "url": "https://pl.wikipedia.org/wiki/Focus_%28biurowiec%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fontanna-skwer-batalionu-wigry",
+    "nazwa": "Fontanna na skwerze Batalionu Harcerskiego AK „Wigry”",
+    "name_en": "Fountain on the Wigry Battalion Square",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skwer Batalionu Harcerskiego AK „Wigry”, przed kinem „Muranów”",
+    "adres_historyczny": "skwer przy Krakowskim Przedmieściu (w 1866)",
+    "lat": 52.245056,
+    "lon": 21.0,
+    "lokalizacja": "przyblizona",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fontanna została wykonana z żeliwa w 1866 roku przez Wiktora Lipko; zaprojektowali ją Józef Orłowski i Alfons Grotowski, a rzeźby w 1860 roku zaprojektował Leonard Marconi.",
+      "Pierwotnie fontanna stała na skwerze przy Krakowskim Przedmieściu, urządzonym po wyburzeniu w 1865 roku bloku zabudowy.",
+      "Rzeźby przedstawiają grupę chłopców trzymających sieć rybacką.",
+      "W 1872 roku z fontanny skradziono metalowe rybki trzymane przez jednego z chłopców.",
+      "W 1897 roku fontannę zdemontowano, a w 1910 ustawiono ją na trójkątnym skwerze w południowej części placu Bankowego.",
+      "W czasie II wojny światowej fontanna nie uległa zniszczeniu; odrestaurowano ją pod kierunkiem Zygmunta Stępińskiego.",
+      "W 1952 roku fontannę odsłonięto w obecnej lokalizacji, przed kinem „Muranów”, na osi pałacu Mostowskich."
+    ],
+    "ciekawostki": [
+      "Patera wodotrysku z trzonem jest otoczona trzema rzeźbami chłopców."
+    ],
+    "summary_en": "The cast-iron fountain was made in 1866 and first stood on Krakowskie Przedmieście. Moved to Plac Bankowy in 1910, it was finally placed in front of the Muranów cinema in 1952 after restoration.",
+    "ludzie": [
+      {"kto": "Wiktor Lipko", "rola": "wykonawca fontanny (1866)", "wiki": null},
+      {"kto": "Józef Orłowski", "rola": "projektant fontanny", "wiki": null},
+      {"kto": "Alfons Grotowski", "rola": "projektant fontanny", "wiki": null},
+      {"kto": "Leonard Marconi", "rola": "projektant rzeźb (1860)", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "kierował renowacją po wojnie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Fontanna na skwerze Batalionu Harcerskiego AK „Wigry”", "url": "https://pl.wikipedia.org/wiki/Fontanna_na_skwerze_Batalionu_Harcerskiego_AK_%E2%80%9EWigry%E2%80%9D"}],
+    "pewnosc": "srednia",
+    "uwagi": "Długość geograficzna w nagłówku artykułu podana jako „21.0” (niepełna), stąd lokalizacja przybliżona."
+  },
+  {
+    "id": "fontanna-w-ogrodzie-saskim",
+    "nazwa": "Fontanna w Ogrodzie Saskim",
+    "name_en": "Fountain in the Saxon Garden",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Ogród Saski",
+    "adres_historyczny": null,
+    "lat": 52.2408,
+    "lon": 21.0102,
+    "lokalizacja": "dokladna",
+    "okres": "1855–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fontanna powstała w 1855 roku w związku z budową w mieście pierwszej sieci wodociągowej (tzw. wodociągu Marconiego); zaprojektował ją Henryk Marconi.",
+      "Składa się z wielkiej patery, odlanej z żeliwa w Rządowej Fabryce Machin na Solcu, oraz z misy z płaskorzeźbami w postaci głów.",
+      "Całość stoi w dwóch kamiennych wannach; na krawędzi zewnętrznej umieszczono cztery cynkowe delfiny, które według projektu Hermana Fritscha wyrzucają wodę ku środkowi fontanny.",
+      "Przy fontannie ustawiono zegar słoneczny z fundacji Antoniego Magiera.",
+      "W 1903 roku wymieniono część instalacji wodnej; w latach 30. XX wieku przeprowadzono renowację, a powojenny remont ukończono w 1950 roku.",
+      "W 2006 roku przeprowadzono pierwszy duży remont, który trwał 9 miesięcy; ważącą 7 ton misę składającą się z 18 elementów oczyszczono piaskowaniem i pomalowano."
+    ],
+    "ciekawostki": [
+      "Delfiny wykonano w warszawskiej fabryce Karola Juliusza Mintera."
+    ],
+    "summary_en": "The fountain in the Saxon Garden was built in 1855 with the first Warsaw water supply network, designed by Henryk Marconi. It has a cast-iron bowl with four zinc dolphins and was fully restored in 2006.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant fontanny", "wiki": null},
+      {"kto": "Herman Fritsch", "rola": "projektant delfinów", "wiki": null},
+      {"kto": "Antoni Magier", "rola": "fundator zegara słonecznego", "wiki": null},
+      {"kto": "Karol Juliusz Minter", "rola": "właściciel warszawskiej fabryki, w której wykonano delfiny", "wiki": null}
+    ],
+    "dawne_nazwy": ["wodociąg Marconiego (sieć, z którą powstała fontanna)"],
+    "zrodla": [{"tytul": "Wikipedia: Fontanna w Ogrodzie Saskim", "url": "https://pl.wikipedia.org/wiki/Fontanna_w_Ogrodzie_Saskim"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fort-legionow",
+    "nazwa": "Fort Legionów",
+    "name_en": "Legions Fort of the Warsaw Citadel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.257278,
+    "lon": 21.006667,
+    "lokalizacja": "dokladna",
+    "okres": "1851–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort Legionów (ros. Владимир, „Włodzimierz”) jest fortem pierścienia umocnień wokół Cytadeli Warszawskiej, zbudowanym w latach 1851–1853.",
+      "Trzykondygnacyjną wieżę artyleryjską wzniesiono według projektu francuskiego fortyfikatora Marca Montalemberta.",
+      "W latach 1905–1906 i w 1909 roku mieściło się tu więzienie.",
+      "Po 1918 roku fort przejęło Centralne Archiwum Wojskowe; w 1921 roku nazwę fortu zmieniono oficjalnie na Fort Legionów.",
+      "W dwudziestoleciu międzywojennym mieściło się tu archiwum Oddziału II Sztabu Generalnego (wywiadu); niezniszczone we wrześniu 1939 roku wpadło w ręce Niemców, co doprowadziło do uwięzienia i śmierci wielu polskich agentów.",
+      "Podczas powstania warszawskiego budynek znajdował się w strefie frontowej.",
+      "W 1996 roku fort został opuszczony i zdewastowany."
+    ],
+    "ciekawostki": [
+      "W 1916 roku w zachodniej części stoku bojowego, w miejscu stracenia członków Rządu Narodowego z powstania styczniowego, ustawiono pamiątkowy krzyż.",
+      "Wnętrza fortu wykorzystywano przy produkcji reklam i filmów, m.in. „Ogniem i mieczem”."
+    ],
+    "summary_en": "Fort Legionów, built in 1851–1853, is a fort of the Warsaw Citadel ring with a three-storey artillery tower. Its interwar intelligence archive fell into German hands in 1939, and it was abandoned and vandalised in the 1990s.",
+    "ludzie": [
+      {"kto": "Marc Montalembert", "rola": "fortyfikator, autor projektu wieży", "wiki": null},
+      {"kto": "Józef Smoleński", "rola": "szef Oddziału II Sztabu Generalnego; jego błędy i zaniechania sprawiły, że akta nie zostały zniszczone", "wiki": null}
+    ],
+    "dawne_nazwy": ["Włodzimierz (nazwa w okresie zaboru rosyjskiego)"],
+    "zrodla": [{"tytul": "Wikipedia: Fort Legionów Cytadeli Warszawskiej", "url": "https://pl.wikipedia.org/wiki/Fort_Legion%C3%B3w_Cytadeli_Warszawskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres dzisiejszy nie podany w artykule. Artykuł w paczce urwany w części o przejęciu fortu przez Agencję Mienia Wojskowego (1999)."
+  },
+  {
+    "id": "fort-traugutta",
+    "nazwa": "Fort Traugutta Cytadeli Warszawskiej",
+    "name_en": "Traugutt Fort of the Warsaw Citadel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "park im. Janusza Kusocińskiego",
+    "adres_historyczny": null,
+    "lat": 52.2572,
+    "lon": 20.9989,
+    "lokalizacja": "dokladna",
+    "okres": "1847–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort Traugutta, pierwotnie nazwany Aleksieja, a następnie Berga, został wzniesiony w latach 1847–1849 i zmodernizowany w latach 1864–1874.",
+      "Początkowo składał się z dużej, ceglanej działobitni.",
+      "W czasie modernizacji uzupełniono go o umocnienie ceglano-ziemne w formie lunety, otoczone suchą fosą broniona przez kaponiery.",
+      "We wrześniu 1939 roku w forcie miał swoje stanowisko pluton obrony przeciwlotniczej.",
+      "Obecnie fort znajduje się na terenie parku im. Janusza Kusocińskiego, wydzielonego z parku im. Romualda Traugutta.",
+      "Jest jedynym z umocnień wokół Cytadeli, które zachowało części swojego układu ziemnego.",
+      "W 1965 roku fort został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Wzniesiona w latach 30. XIX wieku Cytadela pełniła głównie funkcje więzienne i miała małe możliwości obrony miasta, dlatego szybko zaczęto budować wysunięte umocnienia."
+    ],
+    "summary_en": "Fort Traugutta, built in 1847–1849 and modernised in 1864–1874, is one of the forts protecting the Warsaw Citadel. It is now in Janusz Kusociński Park and is the only outer fort that kept part of its earthwork layout.",
+    "ludzie": [],
+    "dawne_nazwy": ["Aleksieja", "Berga"],
+    "zrodla": [{"tytul": "Wikipedia: Fort Traugutta Cytadeli Warszawskiej", "url": "https://pl.wikipedia.org/wiki/Fort_Traugutta_Cytadeli_Warszawskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

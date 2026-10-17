@@ -1,0 +1,293 @@
+[
+  {
+    "id": "ulica-krolewska",
+    "nazwa": "ulica Królewska",
+    "name_en": "Królewska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Królewska",
+    "adres_historyczny": null,
+    "lat": 52.2374031,
+    "lon": 21.0040483,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1725–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica była dawną drogą narolną, łączyła Trakt Królewski z Grzybowem.",
+      "Została uregulowana ok. 1725 w związku z realizacją Osi Saskiej, z czym związana jest jej nazwa.",
+      "Przed 1730 przy ulicy wybudowano pałac Franciszka Bielińskiego, zaprojektowany przez Józefa Fontanę.",
+      "W 1816 na tyłach ulic Królewskiej i Marszałkowskiej powstało targowisko przeniesione z Pociejowa.",
+      "W 1908 roku ulicą po raz pierwszy pojechały tramwaje elektryczne.",
+      "W latach 1962–1967 między ul. Królewską a Próżną powstało osiedle Grzybów I.",
+      "W 2021 kamienice nr 6, 8 i 8/10 włączono w zakres rządowej inwestycji odbudowy pałacu Saskiego, pałacu Brühla oraz wybranych kamienic przy ulicy."
+    ],
+    "ciekawostki": [
+      "W XVIII w. na rogu Marszałkowskiej i Królewskiej działała otwarta w 1784 Operalnia, pierwszy w Polsce teatr zawodowy."
+    ],
+    "summary_en": "Królewska is a central street in Śródmieście, laid out around 1725 as part of the Saxon Axis. It takes its name from the royal route and was one of the first streets in Warsaw to carry electric trams, from 1908.",
+    "ludzie": [
+      {"kto": "Józef Fontana", "rola": "architekt pałacu Franciszka Bielińskiego przy ulicy", "wiki": null},
+      {"kto": "Franciszek Bieliński", "rola": "zleceniodawca pałacu przy ulicy Królewskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Królewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kr%C3%B3lewska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "palac-bielinskich",
+    "nazwa": "Pałac Bielińskich",
+    "name_en": "Bieliński Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Królewska",
+    "lat": 52.2374031,
+    "lon": 21.0040483,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1730–1895",
+    "istnieje": false,
+    "fakty": [
+      "Przed 1730 przy ulicy Królewskiej wybudowano pałac dla Franciszka Bielińskiego.",
+      "Pałac zaprojektował Józef Fontana.",
+      "W 1895 zburzono pałac, a w jego miejscu wzniesiono trzy czteropiętrowe kamienice."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A palace built before 1730 on Królewska Street for Franciszek Bieliński, designed by Józef Fontana. It was demolished in 1895 and replaced by three tenement houses.",
+    "ludzie": [
+      {"kto": "Franciszek Bieliński", "rola": "zleceniodawca pałacu", "wiki": null},
+      {"kto": "Józef Fontana", "rola": "architekt pałacu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Królewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kr%C3%B3lewska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Królewskiej."
+  },
+  {
+    "id": "ulica-ksiazeca",
+    "nazwa": "ulica Książęca",
+    "name_en": "Książęca Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Książęca",
+    "adres_historyczny": null,
+    "lat": 52.2302151,
+    "lon": 21.0305661,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1749–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica biegnie prostopadle do Wisły, od skrzyżowania ulic Rozbrat i Kruczkowskiego stromo pod górę, kończąc się na placu Trzech Krzyży.",
+      "Nazwa pochodzi od parku „Na Książęcem”, który po 1776 roku zaprojektował Szymon Zug dla księcia Kazimierza Poniatowskiego.",
+      "Kamienica pod numerem 21 powstała w latach 1900–1902 wg projektu Tomasza Saryusz-Bielskiego i została wpisana do rejestru zabytków 18 października 1999 roku (nr A-942).",
+      "Kamienica pod numerem 6, zbudowana w 1883 roku, została wpisana do rejestru zabytków 9 sierpnia 2006 roku (nr A-711).",
+      "W latach 1929–1944 i 1947–1959 ulicą kursowały tramwaje, zjeżdżające z placu Trzech Krzyży do pętli na Solcu.",
+      "W czasie powstania warszawskiego ulica była w rękach powstańców do 13 września 1944 roku.",
+      "Kładka dla pieszych nad ulicą, o długości 82 m, została oddana do użytku 17 lipca 1974 roku, dla upamiętnienia 30-lecia PRL."
+    ],
+    "ciekawostki": [
+      "Na kamienicy pod numerem 21 umieszczono tablice upamiętniające wizyty papieży: Piusa XI, który był tu pierwszym nuncjuszem apostolskim w Polsce Odrodzonej (1918–1921), oraz Pawła VI, sekretarza nuncjatury w 1922 roku.",
+      "W 1851 roku działkę pod numerem 21 podarował parafii św. Aleksandra Ludwik Naimski, właściciel browaru przy placu Trzech Krzyży."
+    ],
+    "summary_en": "Książęca runs steeply uphill from Rozbrat towards Plac Trzech Krzyży, crossing the Vistula Escarpment. It takes its name from the 18th-century Na Książęcem park, and it was the site of tram lines and fighting during the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "Pius XI", "rola": "pierwszy nuncjusz apostolski w Polsce Odrodzonej, mieszkał w domu pod nr 21 w latach 1918–1921", "wiki": null},
+      {"kto": "Paweł VI (Giovanni Battista Montini)", "rola": "sekretarz Nuncjatury Apostolskiej, mieszkał w domu pod nr 21 w 1922 roku", "wiki": null},
+      {"kto": "Adam Chmielowski", "rola": "malarz i uczestnik powstania styczniowego, późniejszy św. Brat Albert; mieszkał pod nr 6 w latach 1858–1861", "wiki": null},
+      {"kto": "Stanisław Piasecki", "rola": "redaktor naczelny tygodnika „Prosto z mostu”, redagowanego pod nr 6 w latach 1935–1939; rozstrzelany w Palmirach 12 czerwca 1941", "wiki": null},
+      {"kto": "Szymon Zug", "rola": "projektant parku „Na Książęcem” dla księcia Kazimierza Poniatowskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Książęca w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ksi%C4%85%C5%BC%C4%99ca_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka). Część faktów (np. rok 1749) podana w artykule jako historia trasy, nie samego adresu."
+  },
+  {
+    "id": "szpital-sw-lazarza",
+    "nazwa": "Szpital św. Łazarza",
+    "name_en": "St. Lazarus Hospital",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Książęca",
+    "lat": 52.2302151,
+    "lon": 21.0305661,
+    "lokalizacja": "przyblizona",
+    "okres": "1841–1944",
+    "istnieje": false,
+    "fakty": [
+      "Kompleks gmachów szpitala powstał w 1841 roku wg projektu Henryka Marconiego i Adama Idźkowskiego.",
+      "Szpital specjalizował się w opiece nad chorymi wenerycznie.",
+      "W czasie II wojny światowej działał jako niemiecki lazaret polowy.",
+      "21 września 1939 roku niemiecka artyleria zniszczyła pawilony szpitala.",
+      "11 sierpnia 1944 roku szpital opanowała kompania „Redy”; powstańcy kilkakrotnie go odzyskiwali.",
+      "13 września 1944 roku ostatecznie padł szpital św. Łazarza, a w pożarze spłonęły jego zabudowania."
+    ],
+    "ciekawostki": [
+      "Pocisk artyleryjski ściął większą część minaretu w parku Na Książęcem."
+    ],
+    "summary_en": "St. Lazarus Hospital, built in 1841 on Książęca Street, specialised in venereal disease. It was a German field hospital in WWII, and it was held and retaken by Uprising units in 1944 before burning down in September.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Książęca w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ksi%C4%85%C5%BC%C4%99ca_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Książęcej. Pewne, że szpital leżał przy dolnej części ulicy, dokładny numer nieznany z tekstu."
+  },
+  {
+    "id": "ulica-kubusia-puchatka",
+    "nazwa": "ulica Kubusia Puchatka",
+    "name_en": "Winnie-the-Pooh Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kubusia Puchatka",
+    "adres_historyczny": null,
+    "lat": 52.2359928,
+    "lon": 21.0168033,
+    "lokalizacja": "przyblizona",
+    "okres": "1950–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w pierwszej połowie lat 50. XX wieku na miejscu ruin oficyn zachodniej pierzei Nowego Światu.",
+      "Ulica o długości 149 m miała odciążać ciągiem pieszym Nowy Świat.",
+      "Dwa rzędy lip przywiezionych ze Szczecina zasadzono w 1954 roku.",
+      "Projekt zabudowy jest dziełem architekta Zygmunta Stępińskiego i zespołu studentów Wydziału Architektury Politechniki Warszawskiej.",
+      "Nazwę wybrano w 1954 roku w konkursie rozpisanym wśród czytelników „Expressu Wieczornego”.",
+      "Wszystkie budynki ulicy są administracyjnie przypisane do numeracji ulicy Wareckiej."
+    ],
+    "ciekawostki": [
+      "Perspektywę ulicy zamyka wieżyczka wbudowana w budynek mieszkalny za skrzyżowaniem z ulicą Warecką."
+    ],
+    "summary_en": "A pedestrian-oriented street laid out in the early 1950s on the ruins of Nowy Świat's western backyards. Its name was picked by readers of the Express Wieczorny in a 1954 contest.",
+    "ludzie": [
+      {"kto": "Zygmunt Stępiński", "rola": "architekt zabudowy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kubusia Puchatka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kubusia_Puchatka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-lekarska",
+    "nazwa": "ulica Lekarska",
+    "name_en": "Lekarska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Lekarska",
+    "adres_historyczny": null,
+    "lat": 52.2181044,
+    "lon": 21.006376,
+    "lokalizacja": "przyblizona",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1922 roku jako ulicę zamykającą zwarty blok zabudowy między al. Armii Ludowej, al. Niepodległości i ul. Filtrową.",
+      "Nazwę nadano uchwałą Rady Miejskiej Warszawy z 27 września 1926 roku, ponieważ przy ulicy mieszkało wielu znanych lekarzy.",
+      "Domy Spółdzielni Mieszkaniowej „Ognisko” w zachodniej pierzei wybudowano w latach 1924–1927 wg konceptu Romana Felińskiego.",
+      "Wschodnią pierzeję zbudowano w latach 1931–1932 dla spółdzielni „Temida”; projekt wykonał Piotr Kwiek.",
+      "Przed II wojną światową przy ulicy miała siedzibę Wielka Loża Narodowa Polski.",
+      "W 1944 roku w ogrodzie segmentu pod nr 9 Irena Sendlerowa i Jadwiga Piotrowska zakopały kartotekę referatu dziecięcego Rady Pomocy Żydom („Żegoty”)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lekarska was laid out in 1922 to close a residential block in Śródmieście and was named in 1926 after the doctors who lived there. In 1944 Irena Sendlerowa and Jadwiga Piotrowska buried Żegota's children's card index in a garden at no. 9.",
+    "ludzie": [
+      {"kto": "Irena Sendlerowa", "rola": "w 1944 zakopała w ogrodzie segmentu nr 9 kartotekę referatu dziecięcego Żegoty", "wiki": null},
+      {"kto": "Jadwiga Piotrowska", "rola": "w 1944 współuczestniczyła w zakopaniu kartoteki Żegoty przy ulicy", "wiki": null},
+      {"kto": "Roman Feliński", "rola": "autor projektów domów Spółdzielni „Ognisko”", "wiki": null},
+      {"kto": "Piotr Kwiek", "rola": "architekt zabudowy wschodniej pierzei dla spółdzielni „Temida”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Lekarska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Lekarska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-litewska",
+    "nazwa": "ulica Litewska",
+    "name_en": "Litewska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Litewska",
+    "adres_historyczny": null,
+    "lat": 52.2167531,
+    "lon": 21.0210456,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1877 roku w związku z parcelacją ogrodów.",
+      "Nazwa pochodzi od stacjonującego w pobliżu rosyjskiego Litewskiego Pułku Lejbgwardii, nadana kilka lat po wytyczeniu.",
+      "Po 1880 roku pod nr 3 wzniesiono krytą ujeżdżalnię, zwaną tattersallem; w jej przebudowanej hali w 1948 roku rozpoczął działalność Teatr Syrena.",
+      "W 1899 roku pod nr 6 powstał pałacyk księcia Wasyla Dołgorukowa, zaprojektowany przez Ludwika Panczakiewicza.",
+      "W latach 1902–1903 pod nr 16 zbudowano dom Instytutu Higieny Dziecięcej im. barona Leona de Lenvala.",
+      "7 września 1943 roku członkowie harcerskiego oddziału „Agat” przeprowadzili na Litewskiej akcję likwidacyjną zastępcy komendanta Pawiaka Franza Bürkla.",
+      "5 października 1943 roku u zbiegu z aleją Szucha zastrzelono kierownika referatu IV A3 warszawskiego Gestapo Jacoba Lechnera.",
+      "Po 1993 roku w pałacyku Dołgorukowa ulokowała się Ambasada Słowacji."
+    ],
+    "ciekawostki": [
+      "Przy wejściu do budynku nr 16 zachował się napis z 1945 roku o jego rozminowaniu, pozostawiony przez sapera Borowicza."
+    ],
+    "summary_en": "Litewska was laid out in 1877 and named after a nearby Russian guards regiment. During the occupation it was in a German police district, and in 1943 Scouts from the Agat unit carried out an attack on a Pawiak deputy commandant on the street.",
+    "ludzie": [
+      {"kto": "Franz Bürkl", "rola": "zastępca komendanta Pawiaka, zlikwidowany 7 września 1943 roku przez harcerzy z oddziału „Agat”", "wiki": null},
+      {"kto": "Jacob Lechner", "rola": "kierownik referatu IV A3 warszawskiego Gestapo, zastrzelony 5 października 1943 roku", "wiki": null},
+      {"kto": "Wasyl Dołgorukow", "rola": "książę, właściciel pałacyku pod nr 6", "wiki": null},
+      {"kto": "Ludwik Panczakiewicz", "rola": "architekt pałacyku Dołgorukowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Litewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Litewska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-ludna",
+    "nazwa": "ulica Ludna",
+    "name_en": "Ludna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Ludna",
+    "adres_historyczny": null,
+    "lat": 52.2334506,
+    "lon": 21.0387025,
+    "lokalizacja": "przyblizona",
+    "okres": "1732–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica pojawiła się na planach po raz pierwszy w 1732 roku; była już wtedy częściowo uregulowana i otoczona ogrodami.",
+      "W latach 1856–1857 Towarzystwo Oświetlenia Gazowego z Dessau wystawiło przy ulicy dwa ceglane, wieloboczne zbiorniki gazu.",
+      "W 1872 roku Gazownia zakupiła od rodziny Janasch część dawnej posiadłości Poniatowskiego.",
+      "W 1888 roku gazownię na Ludnej połączono ponad 5-kilometrowym przewodem z Gazownią Wolską.",
+      "W 1922 roku ulicą pojechał pierwszy tramwaj elektryczny linii „P”.",
+      "W 1944 roku o pocztę i kamienice wzdłuż ulicy toczyły się ciężkie walki żołnierzy batalionów „Zośka” i „Parasol” z Niemcami; głównym bastionem był budynek PKO.",
+      "W 1945 i 1946 na osi ulicy istniał most pontonowy na Wiśle, zlikwidowany w sierpniu 1946 roku."
+    ],
+    "ciekawostki": [
+      "Poczta pod nr 4 pojawiła się w filmie Stanisława Barei „Co mi zrobisz, jak mnie złapiesz?”, gdzie fotograf Roman Ferde śledzi dyrektorową."
+    ],
+    "summary_en": "Ludna was once an industrial street on the Powiśle riverside, with a gasworks and tobacco factory. It was heavily fought over during the 1944 Uprising, and its PKO building became a rebel stronghold.",
+    "ludzie": [
+      {"kto": "Kazimierz Poniatowski", "rola": "właściciel posesji od 1771 roku, gdzie powstał zespół pałacowo-ogrodowy wg projektu Szymona Bogumiła Zuga", "wiki": null},
+      {"kto": "Maurycy Karstens", "rola": "właściciel zakładów ciesielskich przy nr 9 przed 1914 rokiem", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "projektant zespołu pałacowo-ogrodowego Poniatowskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Ludna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ludna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  }
+]

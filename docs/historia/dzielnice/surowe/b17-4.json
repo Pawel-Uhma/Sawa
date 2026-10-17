@@ -1,0 +1,422 @@
+[
+  {
+    "id": "budynek-kasy-chorych-marianska-1",
+    "nazwa": "Budynek Kasy Chorych",
+    "name_en": "Sickness Fund Building (Mariańska 1)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mariańska 1 (róg ul. Pańskiej)",
+    "adres_historyczny": "ul. Mariańska 34 (kamienica z lat 60. XIX wieku na tym miejscu)",
+    "lat": 52.233306,
+    "lon": 21.000778,
+    "lokalizacja": "dokladna",
+    "okres": "1924–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1924–1925 dla stołecznej Kasy Chorych w miejscu kamienicy z lat 60. XIX wieku przy zbiegu ulic Mariańskiej i Pańskiej.",
+      "Projekt wykonał Henryk Julian Gay w stylu modernistycznego historyzmu, w formach neobaroku i neoklasycyzmu; autorem detalu rzeźbiarskiego był prawdopodobnie Zygmunt Otto.",
+      "Po przekształceniu kas chorych w 1934 roku w ubezpieczalnie społeczne budynek stał się siedzibą jednego z czterech obwodów leczniczych Ubezpieczalni Społecznej w Warszawie.",
+      "9 września 1939 roku do budynku przeniesiono Centralę Ubezpieczalni Społecznej; we wrześniu 1939 roku został on nieznacznie uszkodzony.",
+      "W listopadzie 1940 roku budynek znalazł się na terenie getta i stał się siedzibą żydowskiej Szkoły Pielęgniarek kierowanej przez Lubę Blum-Bielicką; w sierpniu 1942 roku został włączony do „aryjskiej” części miasta.",
+      "Od 3 sierpnia 1944 roku mieścił się tu szpital powstańczy zgrupowania „Chrobry II”, zorganizowany przez dr. Romana Bornsteina; 20 sierpnia 1944 roku został zbombardowany przez Niemców.",
+      "W 1975 roku budynek wpisano do rejestru zabytków nieruchomych; w 2002 roku zarządca wystąpił o wykreślenie go z rejestru, ale Generalna Konserwator Zabytków nie wyraziła na to zgody."
+    ],
+    "ciekawostki": [
+      "W latach 90. XX wieku umieszczono na budynku tablicę upamiętniającą Lubę Blum-Bielicką i żydowską Szkołę Pielęgniarek."
+    ],
+    "summary_en": "A three-storey corner building at Mariańska 1 and Pańska streets, built in 1924–1925 for the Warsaw Sickness Fund to a design by Henryk Julian Gay. It housed a Jewish nursing school from 1940 and an insurgent hospital from August 1944. It has been listed since 1975.",
+    "ludzie": [
+      {"kto": "Henryk Julian Gay", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Zygmunt Otto", "rola": "prawdopodobny autor detalu rzeźbiarskiego", "wiki": null},
+      {"kto": "Luba Blum-Bielicka", "rola": "kierowniczka żydowskiej Szkoły Pielęgniarek", "wiki": null},
+      {"kto": "Roman Bornstein", "rola": "dr, organizator szpitala powstańczego „Chrobry II”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Kasy Chorych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_Kasy_Chorych_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-obserwatorium-astronomicznego-uw",
+    "nazwa": "Budynek Obserwatorium Astronomicznego Uniwersytetu Warszawskiego",
+    "name_en": "Astronomical Observatory of the University of Warsaw (building)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Ujazdowskie 4 (teren Ogrodu Botanicznego UW)",
+    "adres_historyczny": null,
+    "lat": 52.216889,
+    "lon": 21.027583,
+    "lokalizacja": "dokladna",
+    "okres": "1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zbudowano w latach 1820–1824; decyzję o budowie obserwatorium podjęła Komisja Rządowa 8 września 1819 roku.",
+      "Pracami budowlanymi kierowali Michał Kado, Hilary Szpilowski i Piotr Aigner; po wstrzymaniu budowy pod koniec 1821 roku wznowiono ją w czerwcu 1822 roku pod kierunkiem Szpilowskiego.",
+      "Budynek odwiedził cesarz Aleksander I 8 czerwca 1825 roku, a 18 sierpnia 1825 roku obserwatorium oficjalnie otwarto.",
+      "W połowie XIX wieku uruchomiono tu pierwszy w Warszawie zegar elektryczny oraz wahadło Foucaulta.",
+      "W latach 1870–1871 budynek przebudowano pod kierownictwem Bolesława Podczaszyńskiego; zachodnią kopułę i pawilon zastąpiono rozsuwanym kioskiem, co w powszechnej opinii oszpeciło budynek.",
+      "2 sierpnia 1944 roku niemieckie czołgi ostrzelały budynek, niszcząc bramę i obie kopuły; w kilka dni po wyprowadzeniu pracowników Niemcy podpalili budynek, a spłonęła też biblioteka z inkunabułami z XVI i XVII wieku.",
+      "Odbudowany w latach 1947–1949 według projektu Jana Dąbrowskiego; był to jeden z dwóch pierwszych budynków UW odbudowanych po wojnie."
+    ],
+    "ciekawostki": [
+      "Jedynym instrumentem, który przetrwał pożar, był zegar wahadłowy firmy Siemens & Halske zawieszony w słupie wieży zachodniej."
+    ],
+    "summary_en": "The building of the University of Warsaw Astronomical Observatory, at Al. Ujazdowskie 4 in the Botanic Garden, is a late-classicist building erected in 1820–1824 and officially opened in August 1825. It was set on fire by the Germans in August 1944 and rebuilt in 1947–1949 in a form close to its original exterior.",
+    "ludzie": [
+      {"kto": "Stanisław Grabowski", "rola": "minister, odwiedził budynek w 1825 roku wraz z Aleksandrem I", "wiki": null},
+      {"kto": "Michał Kado, Hilary Szpilowski, Piotr Aigner", "rola": "kierownicy prac budowlanych (1820–1824)", "wiki": null},
+      {"kto": "Bolesław Podczaszyński", "rola": "kierował przebudową w latach 1870–1871", "wiki": null},
+      {"kto": "Jan Dąbrowski", "rola": "architekt odbudowy 1947–1949", "wiki": null},
+      {"kto": "Jan Śniadecki, Franciszek Armiński", "rola": "konsultacje projektu; Armiński był pierwszym dyrektorem obserwatorium", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Obserwatorium Astronomicznego Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Budynek_Obserwatorium_Astronomicznego_Uniwersytetu_Warszawskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie odbudowy 1947–1949; wzięto fakty z części dostępnej."
+  },
+  {
+    "id": "budynek-pkpg-plac-trzech-krzyzy",
+    "nazwa": "Budynek Państwowej Komisji Planowania Gospodarczego",
+    "name_en": "State Commission for Economic Planning Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Trzech Krzyży 3/5",
+    "adres_historyczny": "na miejscu bazaru przy rogu placu Trzech Krzyży i ul. Wspólnej (bazar od 1871 roku)",
+    "lat": 52.2285,
+    "lon": 21.0219,
+    "lokalizacja": "dokladna",
+    "okres": "1946–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1946–1949 według projektu Stanisława Bieńkuńskiego i Stanisława Rychłowskiego jako siedzibę Państwowej Komisji Planowania Gospodarczego (PKPG).",
+      "Projekt wybrano spośród jedenastu prac w otwartym konkursie SARP, rozpisanym jesienią 1946 roku; w zespole pracowali też Barbara Andrzejewska, Jan Dobrowolski, Maria Garncarczyk, Helena Jasieńska i Ryszard Łagutko.",
+      "Budowę rozpoczęto w kwietniu 1947 roku; zastosowano wielkowymiarowe pustaki z gruzobetonu oraz, jako jedne z pierwszych w Polsce, prefabrykowane elementy stropów i ścian.",
+      "W fazie realizacji dodano jedną kondygnację cofniętą od lica; nie doszło do zamierzonego podwyższenia do pięciu pięter z socrealistyczną attyką.",
+      "Był to pierwszy gmach rządowy zaprojektowany i wybudowany w Warszawie po II wojnie światowej; od nazwiska szefa PKPG Hilarego Minca nazywano go „Mincówką”.",
+      "W 2016 roku na fasadzie odsłonięto tablicę upamiętniającą Grażynę Gęsicką."
+    ],
+    "ciekawostki": [
+      "Kwadratowy dziedziniec południowy przykryto kopułą z luksferami; w tej sali działało później kino Pod Kopułą."
+    ],
+    "summary_en": "The State Commission for Economic Planning building at Plac Trzech Krzyży 3/5 was designed by Stanisław Bieńkuński and Stanisław Rychłowski and built in 1946–1949 on the site of a market. It was the first government building designed and built in Warsaw after the Second World War and became known as „Mincówka” after its head, Hilary Minc. It is now the seat of the Ministry of Development and Technology.",
+    "ludzie": [
+      {"kto": "Stanisław Bieńkuński", "rola": "architekt, autor projektu", "wiki": null},
+      {"kto": "Stanisław Rychłowski", "rola": "architekt, autor projektu", "wiki": null},
+      {"kto": "Hilary Minc", "rola": "szef PKPG, od jego nazwiska budynek nazywano „Mincówką”", "wiki": null},
+      {"kto": "Grażyna Gęsicka", "rola": "upamiętniona tablicą z 2016 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["„Mincówka”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Państwowej Komisji Planowania Gospodarczego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_Pa%C5%84stwowej_Komisji_Planowania_Gospodarczego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-zespolu-szkol-nr-23",
+    "nazwa": "Budynek Zespołu Szkół nr 23",
+    "name_en": "Building of School Complex No. 23",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Górnośląska 31 (róg ul. Rozbrat)",
+    "adres_historyczny": null,
+    "lat": 52.2245,
+    "lon": 21.0339,
+    "lokalizacja": "dokladna",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach zaprojektował Romuald Gutt; budowano go w latach 1919–1926, a rozbudowano według projektu Tadeusza Majewskiego i Franciszka Eychoma w latach 1928–1932.",
+      "Pierwotnie przeznaczony był na czteroklasową Państwową Szkołę Handlową dla dziewcząt, Żeńskie Liceum Handlowe i Szkołę Przemysłową.",
+      "W latach 1939–1941 mieściła się tu niemiecka szkoła Deutsche Handel und Handwerkerschule; w czasie powstania warszawskiego budynek był niemieckim bastionem, sąsiadującym z budynkami powstańców po drugiej stronie ul. Rozbrat.",
+      "W latach 1945–1951 budynek ponownie służył szkolnictwu zawodowemu; od września 1951 roku jest siedzibą Technikum Budowlanego Nr 1 im. Zdzisława Mączeńskiego.",
+      "Od 1990 roku mieści się tu LVIII Liceum Ogólnokształcące im. Krzysztofa Kamila Baczyńskiego.",
+      "Elewację oblicowano szarą cementową cegłą w stylu art déco; architekt inspirował się gotykiem i ekspresjonizmem."
+    ],
+    "ciekawostki": [
+      "Pobliska willa Romualda Gutta przy ul. Hoene-Wrońskiego 5, wybudowana w latach 1926–1928, reprezentuje ten sam styl architektoniczny."
+    ],
+    "summary_en": "A five-storey art deco school building at Górnośląska 31 and Rozbrat street, designed by Romuald Gutt and built in 1919–1926, with an extension in 1928–1932. It housed a German school during the occupation and was a German stronghold during the Warsaw Uprising. Since 1951 it has housed the Technikum Budowlane No. 1 technical school.",
+    "ludzie": [
+      {"kto": "Romuald Gutt", "rola": "projektant budynku (1919–1926)", "wiki": null},
+      {"kto": "Tadeusz Majewski, Franciszek Eychom", "rola": "projektanci rozbudowy (1928–1932)", "wiki": null},
+      {"kto": "Zdzisław Mączeński", "rola": "patron Technikum Budowlanego Nr 1", "wiki": null},
+      {"kto": "Krzysztof Kamil Baczyński", "rola": "patron LVIII Liceum Ogólnokształcącego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Zespołu Szkół nr 23 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_Zespo%C5%82u_Szk%C3%B3%C5%82_nr_23_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł mówi, że z zaprojektowanych dwóch skrzydeł jedno nie zostało zrealizowane, bez wskazania którego."
+  },
+  {
+    "id": "budynek-kasyna-garnizonowego-szucha-29",
+    "nazwa": "Budynek oficerskiego kasyna garnizonowego (al. Szucha 29)",
+    "name_en": "Garrison Officers' Casino Building (Szucha 29)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "al. J.Ch. Szucha 29",
+    "lat": 52.218282,
+    "lon": 21.023792,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1870–1968",
+    "istnieje": false,
+    "fakty": [
+      "Kasyno dla oficerów stołecznego garnizonu wzniesiono ok. 1870 roku z czerwonej cegły; było częścią kompleksu koszar rosyjskiego Litewskiego Pułku Lejbgwardii.",
+      "W II RP mieściło się tu oficerskie kasyno garnizonowe; w 1926 roku urządzono w jednym z pomieszczeń przedszkole dla dzieci rodzin wojskowych.",
+      "W październiku 1940 roku Niemcy uruchomili tu kasyno gry dla Polaków, miało ono służyć demoralizacji społeczeństwa i celom propagandowym; Niemcy i Volksdeutsche nie mieli wstępu.",
+      "19 maja 1942 roku żołnierze Wydziału Sabotażu Polskich Socjalistów podłożyli tu bombę; poważnie rannych zostało 7 osób.",
+      "W nocy z 1 na 2 lutego 1944 roku, po udanym zamachu na Franza Kutscherę, Niemcy aresztowali w kasynie 385 osób; 100 z nich rozstrzelano 2 lutego 1944 roku.",
+      "1 sierpnia 1944 roku, w godzinę „W”, budynek trafił pocisk z moździerza powstańców; powstańcy, którzy po wyczerpaniu amunicji zostali otoczeni, zginęli z rąk Niemców.",
+      "Budynek rozebrano w 1968 roku w związku z budową Trasy Łazienkowskiej."
+    ],
+    "ciekawostki": [
+      "Po 1945 roku budynek przeznaczono na Dom Żołnierza; zachowano kilka rosnących przy nim drzew."
+    ],
+    "summary_en": "A garrison officers' casino at Aleja Szucha 29, built around 1870 as part of a Russian Imperial Guard barracks complex. From October 1940 the Germans ran a gambling casino there for Poles. It was demolished in 1968 for the Łazienkowska route.",
+    "ludzie": [
+      {"kto": "Franz Kutschera", "rola": "cel udanego zamachu (1944), po którym Niemcy aresztowali gości kasyna", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek oficerskiego kasyna garnizonowego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_oficerskiego_kasyna_garnizonowego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok budowy jako ok. 1870."
+  },
+  {
+    "id": "budynek-lazienek-teodozji-majewskiej",
+    "nazwa": "Budynek łazienek Teodozji Majewskiej (Dom Łaziebny)",
+    "name_en": "Teodozja Majewska Baths Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bednarska 2/4 (na rogu z ul. Dobrą)",
+    "adres_historyczny": null,
+    "lat": 52.2459,
+    "lon": 21.0204,
+    "lokalizacja": "dokladna",
+    "okres": "1832–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczny budynek łaźni zaprojektował Alfons Kropiwnicki; wzniesiono go w latach 1832–1835 z inicjatywy rodziny Stanisława Majewskiego.",
+      "Dawniej mieściła się tu łaźnia parowa na kilkanaście osób oraz gabinety z jednoosobowymi łaźniami parowymi; wodę czerpano z Wisły i oczyszczano w filtrach.",
+      "W tympanonie znajduje się płaskorzeźba „Porwanie Prozerpiny przez Posejdona” autorstwa Pawła Malińskiego.",
+      "Teodozja Majewska zmarła w 1881 roku, przekazując łaźnię swym dzieciom.",
+      "Budynek został częściowo zniszczony w czasie II wojny światowej; po wojnie odrestaurowano fasadę, ale za nią powstał nowy budynek. W latach 1954–1973 w budynku mieściły się szkoły, m.in. obecna Szkoła Podstawowa nr 41 im. Stanisława Staszica.",
+      "W 1965 roku budynek wpisano do rejestru zabytków.",
+      "W pierwszej połowie 2015 roku budynek odrestaurowano i stał się siedzibą Instytutu Dziennikarstwa UW; od września 2016 roku jest siedzibą Wydziału Dziennikarstwa, Informacji i Bibliologii."
+    ],
+    "ciekawostki": [
+      "Architektonicznie budynek nawiązywał do Komory Wodnej na Pradze, jednak nie jest słusznie uważany za jej odpowiednik."
+    ],
+    "summary_en": "A neoclassical bathhouse at Bednarska 2/4, built in 1832–1835 on the initiative of the Majewski family. Later used by schools and a PZPR training centre, it was listed in 1965 and restored in 2015. It now houses the Faculty of Journalism, Information and Library Science of the University of Warsaw.",
+    "ludzie": [
+      {"kto": "Alfons Kropiwnicki", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Teodozja Majewska", "rola": "wzniosła łaźnię, zmarła w 1881 roku", "wiki": null},
+      {"kto": "Paweł Maliński", "rola": "autor płaskorzeźby w tympanonie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Łaziebny"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek łazienek Teodozji Majewskiej", "url": "https://pl.wikipedia.org/wiki/Budynek_%C5%82azienek_Teodozji_Majewskiej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wspomina też plan konkursu UW z 2019 roku na nowy budynek dydaktyczny połączony z łaźnią."
+  },
+  {
+    "id": "bulwary-wislane-warszawa",
+    "nazwa": "Bulwary wiślane",
+    "name_en": "Vistula Boulevards",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.25125,
+    "lon": 21.016222222,
+    "lokalizacja": "przyblizona",
+    "okres": "1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prace nad tzw. bulwarkiem na zachodnim brzegu Wisły, od koszar gwardyjskich do Solca, rozpoczęto w 1825 roku; przerwał je wybuch powstania listopadowego, a materiały Rosjanie przeznaczyli na budowę Cytadeli.",
+      "Kamienny bulwarek wykonano w połowie planowanej długości (ok. 1 kilometra), od posesji nr 2951 do wylotu ul. Leszczyńskiej; nie zabezpieczył Powiśla przed powodziami.",
+      "W latach 1899–1910 przebudowano część nabrzeża i urządzono bulwary; w 1917 roku ten odcinek nazwano Wybrzeże Kościuszkowskie.",
+      "W 1930 roku ogłoszono przetarg na odcinek od Zamku Królewskiego do Bielan; do 1937 roku przebudowano część od mostu średnicowego do Mariensztatu.",
+      "Pierwszy odcinek wielkomiejskiego bulwaru, ok. 500 metrów od mostu Kierbedzia w kierunku północnym, powstał w latach 1935–1938.",
+      "W 1939 roku u wylotu ul. Tamka ustawiono pomnik Syreny.",
+      "Do końca 1976 roku na odcinku między Cyplem Czerniakowskim a Cytadelą zbudowano ok. 2700 metrów bulwarów według projektu Zofii Dziewulskiej; betonowe stopnie nie cieszyły się dużym zainteresowaniem mieszkańców.",
+      "Pierwszy odcinek po przebudowie na Podzamczu otwarto 2 sierpnia 2015 roku."
+    ],
+    "ciekawostki": [
+      "Od 2006 roku odcinek między Cyplem Czerniakowskim a mostem Poniatowskiego nosi nazwę Flotylli Wiślanej; od 2012 roku odcinek między mostami Śląsko-Dąbrowskim i Gdańskim – imienia Jana Karskiego."
+    ],
+    "summary_en": "The Vistula Boulevards run along the left bank of the river in Warsaw. Work on the embankment began in 1825 but only about half was built before the November Uprising. Proper boulevards date from 1899–1910, and the Syrena statue was set up in 1939. The first section of the post-war reconstruction reopened on 2 August 2015.",
+    "ludzie": [
+      {"kto": "Zofia Dziewulska", "rola": "projektantka bulwarów z lat 70. XX wieku", "wiki": null},
+      {"kto": "Michał Olszewski", "rola": "wiceprezydent Warszawy, podawał terminy przebudowy w 2015 roku", "wiki": null},
+      {"kto": "Jan Karski", "rola": "patron odcinka bulwarów (od 2012 roku)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wybrzeże Kościuszkowskie (nazwa odcinka od 1917 roku)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bulwary wiślane w Warszawie", "url": "https://pl.wikipedia.org/wiki/Bulwary_wi%C5%9Blane_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Bulwary są liniowe; współrzędne z nagłówka to punkt orientacyjny. Artykuł urwany w opisie przebudowy po 2015 roku."
+  },
+  {
+    "id": "bunkier-anielewicza-milej-18",
+    "nazwa": "Bunkier Anielewicza (ul. Miła 18)",
+    "name_en": "Anielewicz Bunker (Miła 18)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Miła 18 (przedwojenny adres; bunkier pod kamienicą na rogu Miłej i Dubois)",
+    "lat": 52.2515,
+    "lon": 20.9923,
+    "lokalizacja": "dokladna",
+    "okres": "1943–dziś (upamiętnienie)",
+    "istnieje": false,
+    "fakty": [
+      "Bunkier znajdował się pod kamienicą na rogu ulic Miłej i Dubois na Muranowie, w getcie warszawskim; kamienica została zniszczona we wrześniu 1939 roku.",
+      "Po wykryciu sztabu ŻOB przy ul. Miłej 29 sztab przeniósł się do bunkra przy Miłej 18; był on dobrze wyposażony w broń, żywność, wodę i elektryczność, a prowadziło do niego sześć wejść.",
+      "8 maja 1943 roku bunkier, w którym było ok. 300 osób, otoczyli Niemcy i kolaborujące z nimi oddziały ukraińskie; Niemcy zaczęli wpuszczać gaz, a według relacji Tosi Altman bojowcy popełnili zbiorowe samobójstwo.",
+      "Zginęło ok. 120 powstańców, w tym dowódca ŻOB Mordechaj Anielewicz; przeżyło ok. 15 osób.",
+      "W 1946 roku nad zniszczonym bunkrem usypano kopiec, nazwany kopcem Anielewicza.",
+      "W 2006 roku skwer wokół kopca uporządkowano, a w 2008 roku upamiętnienie wpisano do rejestru zabytków.",
+      "W 2022 roku Muzeum Getta Warszawskiego prowadziło wykopaliska przy ul. Dubois, odkrywając korytarz i fragmenty piwnic, które mogły być częścią bunkra."
+    ],
+    "ciekawostki": [
+      "Ze względu na podobieństwa do wydarzeń w Masadzie bunkier na Miłej bywa nazywany „warszawską Masadą”."
+    ],
+    "summary_en": "The Anielewicz Bunker was a large shelter under a tenement at Miła 18 in the Warsaw Ghetto, where the ŻOB command was hiding in 1943. On 8 May 1943 the Germans surrounded it; about 120 fighters died there, including ŻOB commander Mordechaj Anielewicz. A mound was raised over the ruins in 1946, and the memorial was entered in the heritage register in 2008.",
+    "ludzie": [
+      {"kto": "Mordechaj Anielewicz", "rola": "dowódca ŻOB, zginął w bunkrze 8 maja 1943 roku", "wiki": null},
+      {"kto": "Szmul Asher", "rola": "dowodził grupą czompów, do której należał bunkier", "wiki": null},
+      {"kto": "Tosia Altman", "rola": "ocalała, zostawiła relację o samobójstwie zbiorowym", "wiki": null},
+      {"kto": "Arie Wilner", "rola": "na jego wezwanie bojowcy popełnili samobójstwo zbiorowe", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bunkier Anielewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Bunkier_Anielewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współczesny adres Miła 18 to inny blok, ok. 700 m na zachód; dlatego adres_dzis pusty. Współrzędne z nagłówka."
+  },
+  {
+    "id": "blekitny-wiezowiec-plac-bankowy-2",
+    "nazwa": "Błękitny Wieżowiec",
+    "name_en": "Blue Skyscraper",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Bankowy 2",
+    "adres_historyczny": "w miejscu Wielkiej Synagogi (wysadzonej 16 maja 1943 roku)",
+    "lat": 52.24440833,
+    "lon": 21.00250556,
+    "lokalizacja": "dokladna",
+    "okres": "1966–1991",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec stoi w miejscu, które przed II wojną światową zajmowała warszawska Wielka Synagoga, wysadzona w powietrze przez Niemców 16 maja 1943 roku.",
+      "Budowę rozpoczęto w lutym 1966 roku; w 1967 roku wstrzymano ją z powodu braków w dokumentacji i wątpliwości co do statyki.",
+      "W 1980 roku Prezydium Rządu zmieniło przeznaczenie budynku na hotel na 850 miejsc; po wybudowaniu głównej bryły budowę ponownie wstrzymano.",
+      "W 1985 roku niedokończoną inwestycję przekazano miastu stołecznemu Warszawie.",
+      "W kwietniu 1988 roku podpisano umowę na dokończenie budowy z jugosłowiańskim konsorcjum Generalexport/Giposs o wartości 40,5 mln dolarów; zastosowano szkło refleksyjne, pierwszą taką elewację typu float w Warszawie.",
+      "Prace zakończono w 1991 roku; wieżowiec liczy 120 metrów wysokości (z masztami anten) i 27 kondygnacji naziemnych. Trzy piętra przekazano Gminie Wyznaniowej Żydowskiej w Warszawie.",
+      "Tablica MSI na fasadzie od strony ul. Tłomackie upamiętnia Wielką Synagogę."
+    ],
+    "ciekawostki": [
+      "Rekordowo długi czas budowy tłumaczono klątwą, którą rzekomo mieli rzucić warszawscy rabini; historię budowy przedstawia film „Stoję więc jestem” z 1985 roku, z Wiesławem Drzewiczem jako narratorem."
+    ],
+    "summary_en": "The Blue Skyscraper at Plac Bankowy 2 stands on the site of the Great Synagogue of Warsaw, blown up by the Germans on 16 May 1943. Construction began in 1966, was halted several times and was finished in 1991. Its original copper-coloured facade gave it the former name Golden Skyscraper; three floors went to the Jewish Religious Community.",
+    "ludzie": [
+      {"kto": "Wiesław Drzewicz", "rola": "narrator filmu „Stoję więc jestem” (1985) o historii budowy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Złocisty Wieżowiec"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Błękitny Wieżowiec w Warszawie", "url": "https://pl.wikipedia.org/wiki/B%C5%82%C4%99kitny_Wie%C5%BCowiec_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cele-bezpieki-al-ujazdowskie-11",
+    "nazwa": "Cele Bezpieki (oddział Muzeum Powstania Warszawskiego)",
+    "name_en": "Security Service Cells (Warsaw Uprising Museum branch)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Ujazdowskie 11",
+    "adres_historyczny": "piwnice dawnej siedziby Ministerstwa Bezpieczeństwa Publicznego",
+    "lat": 52.22077,
+    "lon": 21.02394,
+    "lokalizacja": "dokladna",
+    "okres": "1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W piwnicach kompleksu czterech budynków, będących od 1945 roku siedzibą Ministerstwa Bezpieczeństwa Publicznego, w latach 1945–1954 funkcjonował areszt.",
+      "Przetrzymywano tu m.in. Zygmunta Augustyńskiego, Władysława Bartoszewskiego, Wiesława Chrzanowskiego, Augusta Emila Fieldorfa i Jana Rodowicza.",
+      "Przed przygotowaniem ekspozycji zespół Muzeum Powstania Warszawskiego zabezpieczył w sześciu celach kilkadziesiąt śladów pozostawionych przez więźniów.",
+      "Oddział otwarto 1 marca 2018 roku z udziałem prezydenta Andrzeja Dudy.",
+      "Ekspozycja zajmuje 600 m² i składa się z czterech części: historii oporu wobec aparatu represji w latach 1944–1956, katów i ich ofiar, zrekonstruowanych cel aresztu oraz procesu przywracania pamięci po 1989 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Cells of the Security Service are a branch of the Warsaw Uprising Museum in the basements of a former Ministry of Public Security complex at Aleje Ujazdowskie 11, now the Ministry of Justice. Between 1945 and 1954 the basement held a prison; the branch opened on 1 March 2018 in 600 square metres of exhibition space.",
+    "ludzie": [
+      {"kto": "Zygmunt Augustyński", "rola": "więzień aresztu MBP", "wiki": null},
+      {"kto": "Władysław Bartoszewski", "rola": "więzień aresztu MBP", "wiki": null},
+      {"kto": "Wiesław Chrzanowski", "rola": "więzień aresztu MBP", "wiki": null},
+      {"kto": "August Emil Fieldorf", "rola": "więzień aresztu MBP", "wiki": null},
+      {"kto": "Jan Rodowicz", "rola": "więzień aresztu MBP", "wiki": null},
+      {"kto": "Andrzej Duda", "rola": "prezydent, uczestniczył w otwarciu 1 marca 2018 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cele Bezpieki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cele_Bezpieki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obecnie w budynku siedziba Ministerstwa Sprawiedliwości (wg artykułu)."
+  },
+  {
+    "id": "budynek-centralnej-biblioteki-rolniczej",
+    "nazwa": "Budynek Centralnej Biblioteki Rolniczej (Krakowskie Przedmieście 66)",
+    "name_en": "Central Agricultural Library Building (Krakowskie Przedmieście 66)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 66",
+    "adres_historyczny": "dawny klasztor bernardynów, później odwach („Odwach” – tak nazywano budynek do dziś)",
+    "lat": 52.2459,
+    "lon": 21.0143,
+    "lokalizacja": "dokladna",
+    "okres": "XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Działka od połowy XVI wieku należała do klasztoru bernardynów, którzy na sąsiedniej działce wybudowali kościół św. Anny; w 1603 roku klasztor powiększono o teren tej działki.",
+      "W 1634 roku dobudowano do budynku bibliotekę i lektorium, istniejące do dziś; w 1657 roku budynki zostały z premedytacją spalone.",
+      "W 1820 roku na polecenie namiestnika Józefa Zajączka przebudowano fasadę odwachu od strony Krakowskiego Przedmieścia według projektu Piotra Aignera, wzorowanego na Teatrze Marcellusa w Rzymie.",
+      "W 1864 roku klasztor został zlikwidowany przez władze carskie w ramach represji popowstaniowych.",
+      "W latach 1881–1884 gruntownie przebudowano budynek, nadając mu kształt litery „T”; urządzono tu Muzeum Przemysłu i Rolnictwa.",
+      "Gmach został zbombardowany i spalony we wrześniu 1939 roku, a w czasie powstania warszawskiego ponownie spalony; utracono ok. 10 tysięcy eksponatów.",
+      "W 1952 roku budynek przejął Centralny Instytut Rolniczy, a w 1955 roku powołano tu Centralną Bibliotekę Rolniczą."
+    ],
+    "ciekawostki": [
+      "W Pracowniach Chemicznej i Fizycznej Muzeum Przemysłu i Rolnictwa pracowała m.in. Maria Skłodowska-Curie.",
+      "Już w 1876 roku uruchomiono tu pracownię chemiczną, która działała aż do 1939 roku."
+    ],
+    "summary_en": "The building at Krakowskie Przedmieście 66 stands on the site of the Bernardine monastery of St Anna. After the monastery was suppressed in 1864 the building became the Museum of Industry and Agriculture (1881–1951); since 1955 it has housed the Central Agricultural Library, now part of the National Institute of Culture and Rural Heritage.",
+    "ludzie": [
+      {"kto": "Józef Zajączek", "rola": "namiestnik, zlecił przebudowę fasady odwachu (1820)", "wiki": null},
+      {"kto": "Piotr Aigner", "rola": "projektant przebudowy fasady (1820)", "wiki": null},
+      {"kto": "Maria Skłodowska-Curie", "rola": "pracowała w pracowniach Muzeum Przemysłu i Rolnictwa", "wiki": null},
+      {"kto": "Beata Trylińska", "rola": "kierowała odbudową muzeum w latach 1945–1947", "wiki": null}
+    ],
+    "dawne_nazwy": ["pruski odwach", "Muzeum Przemysłu i Rolnictwa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centralna Biblioteka Rolnicza", "url": "https://pl.wikipedia.org/wiki/Centralna_Biblioteka_Rolnicza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy biblioteki; wzięto fakty dotyczące gmachu, pominięto historię instytucji."
+  }
+]

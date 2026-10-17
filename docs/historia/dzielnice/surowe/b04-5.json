@@ -1,0 +1,64 @@
+[
+  {
+    "id": "wola-park",
+    "nazwa": "Wola Park",
+    "name_en": "Wola Park shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Górczewska 124",
+    "adres_historyczny": null,
+    "lat": 52.2416, "lon": 20.932,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Centrum handlowe przy ul. Górczewskiej 124 zlokalizowano na granicy z Bemowem, na terenie dawnych Zakładów Ogrodniczych Ulrychów.",
+      "Centrum otwarto jesienią 2002 roku.",
+      "W latach 2014–2015 zmodernizowano i rozbudowano centrum, zwiększając powierzchnię o ponad 17 000 m²; otwarto m.in. market budowlany Castorama.",
+      "W 2020 roku działało tu 180 sklepów, w tym największy w Polsce dwukondygnacyjny hipermarket Auchan, 27 restauracji i barów oraz Multikino.",
+      "Przed centrum znajduje się park Ulricha, pozostałość po gospodarstwie ogrodniczym rodziny Ulrychów; po rewaloryzacji park otwarto dla zwiedzających.",
+      "W ramach rewitalizacji historycznych szklarni i otoczenia przed centrum powstała przestrzeń gastronomiczna i kulturalna pod nazwą Ogrody Ulricha."
+    ],
+    "ciekawostki": [
+      "Przy centrum latem działa kino samochodowe, a zimą boisko do koszykówki i siatkówki plażowej zamienia się w ogólnodostępne lodowisko."
+    ],
+    "summary_en": "Wola Park is a shopping centre at ul. Górczewska 124 in Wola, on the border with Bemowo, opened in autumn 2002 on the site of the former Ulrich nursery gardens. A park and restored greenhouses of the Ulrich family were kept and reopened as the Ogrody Ulricha cultural space.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wola Park", "url": "https://pl.wikipedia.org/wiki/Wola_Park"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Centrum handlowe; wpisane, bo leży na terenie dawnych Ogrodów Ulrichów (ogrody i szklarnie zachowane w części)."
+  },
+  {
+    "id": "wolskie-pieciochatki",
+    "nazwa": "Wolskie Pięciochatki",
+    "name_en": "Wolskie Pięciochatki (five houses on Prądzyński Street)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Ignacego Prądzyńskiego 23, 23A–23D",
+    "adres_historyczny": null,
+    "lat": 52.22242, "lon": 20.96222,
+    "lokalizacja": "dokladna",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół pięciu domów przy ul. Ignacego Prądzyńskiego 23, 23A, 23B, 23C i 23D wybudowano w latach 1923–1924.",
+      "Osiedle mieszkaniowe dla kolejarzy zaprojektowano na terenach należących do kolei, w okolicach ówczesnej granicy Warszawy i późniejszej stacji Warszawa Zachodnia.",
+      "Projekt wykonał Aleksander Raniecki, a inwestorem był Związek Zawodowy Kolejarzy.",
+      "Mieszkania miały być tanie, a zespół domów przypomina układ zespołu pałacowego, z architekturą nawiązującą do barokowych polskich dworów.",
+      "Wszystkie domy wpisano do gminnej ewidencji zabytków 24 lipca 2012 roku.",
+      "Całe osiedle, opisane jako pięć budynków i teren posesji z układem komunikacyjnym i zielenią, wpisano do rejestru zabytków nieruchomych pod numerem A-1412 w dniu 22 marca 2018 roku."
+    ],
+    "ciekawostki": [
+      "Najdłuższy z domów, przy Prądzyńskiego 23B, ma dwie klatki schodowe i spina całe założenie."
+    ],
+    "summary_en": "Wolskie Pięciochatki are five houses at ul. Ignacego Prądzyńskiego 23 in Wola, built in 1923–1924 for railway workers. Designed by Aleksander Raniecki, they are arranged like a palace complex with Baroque-inspired Polish manor-house details. The estate has been on the register of monuments since 2018.",
+    "ludzie": [
+      {"kto": "Aleksander Raniecki", "rola": "projektant osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wolskie Pięciochatki", "url": "https://pl.wikipedia.org/wiki/Wolskie_Pi%C4%99ciochatki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Według MSI zespół leży na obszarze Czyste (Wola)."
+  }
+]

@@ -1,0 +1,561 @@
+[
+  {
+    "id": "kamienica-kestnerow",
+    "nazwa": "Kamienica Kestnerów",
+    "name_en": "Kestner Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 27",
+    "adres_historyczny": null,
+    "lat": 52.243917, "lon": 21.013944,
+    "lokalizacja": "dokladna",
+    "okres": "1836–1840–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Krakowskie Przedmieście 27.",
+      "Obecną kamienicę zbudowano w latach 1836–1840 według projektu Józefa Lessela dla rękawicznika Kestnera.",
+      "W XIX wieku mieściła się tu cukiernia prowadzona przez Laurentego Tosiego; w lokalu odbywały się wystawy i koncerty.",
+      "W 1944 roku budynek spalono, a po wojnie rozebrano do fundamentów.",
+      "W 1949 roku odbudowano go według projektów Zygmunta Stępińskiego i Mieczysława Kuzmy, nawiązując do dawnego wyglądu.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków; w 2008 roku została zreprywatyzowana."
+    ],
+    "ciekawostki": [
+      "W budynku mieści się kawiarnia Telimena, wspominana w peerelowskiej beletrystyce, m.in. przez L. Tyrmanda w powieści „Zły”."
+    ],
+    "summary_en": "A tenement at Krakowskie Przedmieście 27, built in 1836–1840 by Józef Lessel for the glover Kestner. It was burned in 1944 and rebuilt in 1949 to its earlier appearance, and it now houses the Telimena café, mentioned in Tyrmand's novel Zły.",
+    "ludzie": [
+      {"kto": "Józef Lessel", "rola": "projektant (1836–1840)", "wiki": null},
+      {"kto": "Kestner", "rola": "rękawicznik, inwestor", "wiki": null},
+      {"kto": "Laurenty Tosi", "rola": "prowadził cukiernię w XIX wieku", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projekt odbudowy (1949)", "wiki": null},
+      {"kto": "Mieczysław Kuzma", "rola": "projekt odbudowy (1949)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Kestnerów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Kestner%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-kleinpoldowska-klekotowska",
+    "nazwa": "Kamienica Kleinpoldowska (Klekotowska)",
+    "name_en": "Kleinpoldt Tenement (Klekot Tenement)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 34",
+    "adres_historyczny": null,
+    "lat": 52.25021, "lon": 21.01164,
+    "lokalizacja": "dokladna",
+    "okres": "1449–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Czterokondygnacyjna kamienica po stronie Dekerta na Rynku Starego Miasta 34.",
+      "Pierwsza wzmianka o budynku w tym miejscu pochodzi z 1449 roku; od 1452 roku była własnością warszawskich kuśnierzy Klekotów.",
+      "W 1504 roku sprzedano ją Jerzemu Baryczce, który w 1516 roku przekazał ją swojemu zięciowi Grzegorzowi Bartkemu.",
+      "W latach 1579–1619 właścicielem był burmistrz Starej Warszawy Franciszek Szeliga; w 1619 roku sprzedał dom Gerardowi Kleinpoldtowi, który zmienił układ kamienicy na trzytraktowy.",
+      "W 1788 roku zmieniono dach z pogrążonego na kalenicowy, likwidując attykę.",
+      "W 1937 roku kamienica stała się własnością m.st. Warszawy z przeznaczeniem na Muzeum Dawnej Warszawy.",
+      "Podczas prac odkryto drewniane polichromowane stropy i wykonano nad nimi ogniotrwałe stropy żelbetowe, co uchroniło budynek przed zniszczeniem w czasie II wojny światowej.",
+      "Odbudowana w latach 1950–1953 według projektu Stanisława Żaryna przy współpracy Józefa Zencikiewicza; w 1965 roku wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Do najcenniejszych elementów wnętrza należą drewniane stropy z I poł. XVII wieku na pierwszym piętrze oraz wielki komin na sklepieniu sieni."
+    ],
+    "summary_en": "A four-storey tenement on the Dekert side of Old Town Market 34, first mentioned in 1449. Owned by the Kleinpoldt family from 1619, it was adapted for the planned Museum of Old Warsaw in 1937–1938 and rebuilt in 1950–1953 after the war.",
+    "ludzie": [
+      {"kto": "Jerzy Baryczka", "rola": "kupił kamienicę w 1504 roku", "wiki": null},
+      {"kto": "Franciszek Szeliga", "rola": "burmistrz Starej Warszawy, właściciel 1579–1619", "wiki": null},
+      {"kto": "Gerard Kleinpoldt", "rola": "właściciel, przebudował dom po 1619 roku", "wiki": null},
+      {"kto": "Zofia Stryjeńska", "rola": "autorka polichromii z 1928 roku (niezachowanej)", "wiki": null},
+      {"kto": "Jan Zachwatowicz i Stanisław Hempel", "rola": "projekt adaptacji i prac konserwatorskich (od 1938)", "wiki": null},
+      {"kto": "Stanisław Żaryn", "rola": "projekt odbudowy (1950–1953)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kleinpoldtowska", "Klekotowska", "Szlichtyngowska", "Szlichtingowska"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Kleinpoldowska (Klekotowska) w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Kleinpoldowska_%28Klekotowska%29_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-klemensowska",
+    "nazwa": "Kamienica Klemensowska",
+    "name_en": "Klemens Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 40",
+    "adres_historyczny": null,
+    "lat": 52.25005, "lon": 21.01142,
+    "lokalizacja": "dokladna",
+    "okres": "II poł. XV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica przy Rynku Starego Miasta 40, po stronie Dekerta; obecnie mieści się w niej Muzeum Warszawy.",
+      "Pierwsze zabudowania w tym miejscu powstały na przełomie XIV i XV wieku; obecny budynek zbudowano najpewniej w II połowie XV wieku.",
+      "Pierwszym znanym właścicielem był złotnik Teofil, dzięki któremu kamienica otrzymała przydomek Teofilowska.",
+      "W latach 1566–1574 kamienica należała do lekarskiej rodziny Wojciecha Sobola, która rozbudowała ją do trzech kondygnacji.",
+      "W połowie XVII wieku za sprawą poczmistrza królewskiego Karola Montelupiego urządzono tu pierwszy w Warszawie urząd pocztowy, stację poczty wileńskiej.",
+      "W 1743 roku bankier Piotr de Riaucourt zastąpił mieszkalne poddasze dodatkowym piętrem.",
+      "W 1928 roku artysta Tadeusz Gronowski wykonał na fasadzie klasycyzujące polichromie.",
+      "W 1946 roku huraganowy wiatr zawalił fasadę do wysokości II piętra; w latach 1952–1953 kamienicę odbudowano według projektu Stanisława Żaryna i Jana Zientkiewicza."
+    ],
+    "ciekawostki": [
+      "Podczas powstania warszawskiego kamienica w większości przetrwała w relatywnie dobrym stanie, inaczej niż większość Starówki."
+    ],
+    "summary_en": "A late-15th-century Old Town house at Market 40, named after its first known owner, the goldsmith Teofil. In the mid-17th century it housed Warsaw's first post office, and after the 1944 uprising it was rebuilt in 1952–1953; it now belongs to the Warsaw Museum.",
+    "ludzie": [
+      {"kto": "Teofil", "rola": "złotnik, pierwszy znany właściciel", "wiki": null},
+      {"kto": "Wojciech Sobol", "rola": "lekarz, właściciel 1566–1574", "wiki": null},
+      {"kto": "Klemens z Radziwia", "rola": "aptekarz, rajca i burmistrz Warszawy; właściciel do 1621 roku", "wiki": null},
+      {"kto": "Karol Montelupi", "rola": "poczmistrz królewski, urządził pocztę w kamienicy", "wiki": null},
+      {"kto": "Piotr de Riaucourt", "rola": "bankier, kupiec i ławnik; dobudował piętro w 1743 roku", "wiki": null},
+      {"kto": "Wincenty Gagatkiewicz", "rola": "lekarz, właściciel 1782–1813; urządził drukarnię", "wiki": null},
+      {"kto": "Tadeusz Gronowski", "rola": "artysta, autor polichromii z 1928 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gagatkiewicza", "Teofilowska", "Adamowska", "Kotlarzewska"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Klemensowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Klemensowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-kohnow",
+    "nazwa": "Kamienica Kohnów",
+    "name_en": "Kohn Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 56",
+    "adres_historyczny": null,
+    "lat": 52.223769, "lon": 21.016242,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Sześciopiętrowa kamienica przy ul. Marszałkowskiej 56, wybudowana w 1935 roku dla rodziny Kohnów.",
+      "Powstała w miejscu dwóch częściowo rozebranych piętrowych kamieniczek.",
+      "Połączono ją ze starszymi oficynami (z ok. 1878 roku) w głębi działki, za którymi wzniesiono pawilon kina „Imperial”.",
+      "Po II wojnie światowej, w 1945 roku, kino „Imperial” zastąpiono kinem „Polonia”.",
+      "24 lipca 2012 roku wpisano ją do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A six-storey tenement at Marszałkowska 56, built in 1935 for the Kohn family on the site of two older houses. Behind it stood the Imperial cinema pavilion, renamed Polonia after the war, and the building was entered in the Warsaw municipal heritage register in 2012.",
+    "ludzie": [
+      {"kto": "Kohnowie", "rola": "rodzina, inwestorzy budynku z 1935 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Kohnów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Kohn%C3%B3w_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł krótki; brak opisu architektury i nazwiska projektanta."
+  },
+  {
+    "id": "kamienica-koscielskich",
+    "nazwa": "Kamienica Kościelskich",
+    "name_en": "Kościelski Tenement (Mansionaria)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętojańska 2 (narożnik placu Zamkowego)",
+    "adres_historyczny": null,
+    "lat": 52.24825, "lon": 21.013889,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1478–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Świętojańskiej 2, w narożniku placu Zamkowego; wcześniej nazywana kamienicą Nad Kanałem, także Mansjonarią.",
+      "W 1433 roku Anna Holszańska ofiarowała nieruchomość księżom mansjonarzom, pełniącym posługę w ufundowanej przez nią w 1428 roku kaplicy w kolegiacie św. Jana.",
+      "Murowana kamienica została wzniesiona przed 1478 rokiem.",
+      "Przebudowa w 1688 roku nadała budynkowi cechy barokowe; pozostałością po niej jest boniowany portal z zatartą datą „1688”.",
+      "W latach 1817–1818 rozebrano przylegające budynki i odsłonięto elewację południową; dobudowano trzy skarpy.",
+      "W 1869 roku kamienicę kupił na licytacji wędliniarz Franciszek Szpringer; jego przebudowa zatarła historyczny wygląd elewacji.",
+      "W 1918 roku właścicielem został Władysław Kościelski; w latach 1918–1921 kamienicę przebudowano według projektu Juliusza Nagórskiego.",
+      "Po śmierci Władysława Kościelskiego (1933) budynek był oficjalną rezydencją ambasadorów: najpierw amerykańskiego, potem rumuńskiego.",
+      "Podczas powstania warszawskiego w sierpniu 1944 roku przez kilka tygodni była umocnionym punktem oporu; dach spłonął, ale zachowały się mury."
+    ],
+    "ciekawostki": [
+      "W 1822 roku rozebrano kaplicę Wniebowzięcia NMP, w wyniku czego zgromadzenie mansjonarzy przestało istnieć.",
+      "W okresie międzywojennym budynek miał jedne z najbardziej reprezentacyjnych wnętrz w stolicy."
+    ],
+    "summary_en": "A tenement at Świętojańska 2 on Castle Square, first built before 1478 for the Mansionary priests of a foundation by Anna Holszańska. After its 1918–1921 remodelling for the Kościelski family it became an ambassadors' residence, and in August 1944 it was a Polish stronghold for several weeks.",
+    "ludzie": [
+      {"kto": "Anna Holszańska", "rola": "ofiarodawczyni nieruchomości (1433)", "wiki": null},
+      {"kto": "Władysław Kościelski", "rola": "poeta, wydawca i mecenas sztuki; właściciel od 1918 roku", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "projekt przebudowy (1918–1921)", "wiki": null},
+      {"kto": "Franciszek Szpringer", "rola": "wędliniarz, właściciel od 1869 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nad Kanałem", "Mansjonaria"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Kościelskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Ko%C5%9Bcielskich_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł urwany w zdaniu o murach (brak informacji o stanie po 1944 roku); istnienie oznaczono na podstawie tekstu o odbudowie."
+  },
+  {
+    "id": "kamienica-krasinskich",
+    "nazwa": "Kamienica Krasińskich",
+    "name_en": "Krasiński Tenement (Heurich Tenement)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Stanisława Małachowskiego 2 (róg ul. Traugutta)",
+    "adres_historyczny": null,
+    "lat": 52.239, "lon": 21.0127,
+    "lokalizacja": "dokladna",
+    "okres": "1907–1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy pl. Stanisława Małachowskiego 2, na rogu ul. Traugutta; przykład monumentalnej architektury początku XX wieku.",
+      "W 1848 roku rodzina Krasińskich zbudowała w tym miejscu kamienicę według projektu Franciszka Marii Lanciego.",
+      "W latach 1868–1871 bankier Leopold Stanisław Kronenberg wzniósł na sąsiedniej posesji rezydencję według projektu Friedricha Hitziga.",
+      "Na początku XX wieku kamienicę Lanciego zastąpiono reprezentacyjnym domem; w latach 1907–1910 wzniesiono budynek o sześciu kondygnacjach z potężną attyką.",
+      "W trakcie budowy obiekt kupił hrabia Edward Raczyński, który zmienił jego przeznaczenie na kamienicę czynszową.",
+      "W 1944 roku budynek został spalony przez Niemców.",
+      "Odbudowano go w latach 1949–1950 według projektu Bohdana Pniewskiego, na siedzibę Ministerstwa Poczt i Telegrafów (od 11 marca 1955 roku Ministerstwo Łączności).",
+      "Budynek zajmowany przez dziesięciolecia na cele ministerialne został sprzedany firmie deweloperskiej."
+    ],
+    "ciekawostki": [
+      "Twórcy Marszałkowskiej Dzielnicy Mieszkaniowej nawiązali do architektury tej kamienicy, projektując budynki przy placu Konstytucji."
+    ],
+    "summary_en": "A monumental early-20th-century tenement at Plac Małachowskiego 2 on the corner of Traugutta Street, built in 1907–1910 on the site of an 1848 house by Franciszek Maria Lanci. Burned in 1944, it was rebuilt in 1949–1950 for the Ministry of Posts and Telegraphs and was later sold to a developer.",
+    "ludzie": [
+      {"kto": "Franciszek Maria Lanci", "rola": "architekt kamienicy z 1848 roku", "wiki": null},
+      {"kto": "Leopold Stanisław Kronenberg", "rola": "bankier; rezydencja na sąsiedniej posesji (1868–1871)", "wiki": null},
+      {"kto": "Friedrich Hitzig", "rola": "architekt rezydencji Kronenberga (Berlin)", "wiki": null},
+      {"kto": "Jan Heurich", "rola": "architekt projektu z początku XX wieku", "wiki": null},
+      {"kto": "Edward Raczyński", "rola": "hrabia, kupił budynek w trakcie budowy", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "projekt odbudowy (1949–1950)", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Heurichowska", "kamienica Raczyńskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Krasińskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Krasi%C5%84skich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje, czy budynek został po sprzedaży przebudowany lub rozebrany."
+  },
+  {
+    "id": "kamienica-kwiecinskiego",
+    "nazwa": "Kamienica Kwiecińskiego",
+    "name_en": "Kwiecinski Tenement (Pod Łabędziem)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mariensztat 9",
+    "adres_historyczny": null,
+    "lat": 52.246083, "lon": 21.018778,
+    "lokalizacja": "dokladna",
+    "okres": "1780–1784–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczna kamienica przy ul. Mariensztat 9, zbudowana w latach 1780–1784 dla Józefa Kwiecińskiego, kupca i finansisty.",
+      "Jest jedenastoosiowa, trzykondygnacyjna, dwutraktowa i sklepiona w przyziemiu.",
+      "Nad bramą, na osi środkowej, w zwieńczeniu drzwi balkonowych umieszczono godło łabędzia.",
+      "Kamienica została spalona podczas powstania warszawskiego; w latach 1948–1950 odbudowano ją według projektu Zygmunta Stępińskiego.",
+      "W 2006 roku zaplanowano budowę podziemnego parkingu (560 m²) na podwórzu; decyzja spotkała się z protestem mieszkańców."
+    ],
+    "ciekawostki": [
+      "Nazwa „Pod Łabędziem” nawiązuje do godła łabędzia nad bramą."
+    ],
+    "summary_en": "A classicist tenement at Mariensztat 9, built in 1780–1784 for merchant and financier Józef Kwieciński and known as Pod Łabędziem after the swan emblem over its gate. It was burned in 1944 and rebuilt in 1948–1950 to Zygmunt Stępiński's design.",
+    "ludzie": [
+      {"kto": "Józef Kwieciński", "rola": "kupiec i finansista, inwestor", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projekt odbudowy (1948–1950)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pod Łabędziem"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Kwiecińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Kwieci%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-leona-breslauera",
+    "nazwa": "Kamienica Leona Breslauera",
+    "name_en": "Leon Breslauer Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Górnośląska 22",
+    "adres_historyczny": null,
+    "lat": 52.2246, "lon": 21.029591,
+    "lokalizacja": "dokladna",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trzypiętrowa, 11-osiowa kamienica przy ul. Górnośląskiej 22, wybudowana w 1904 roku.",
+      "Bogata secesyjna oprawa fasady zawiera m.in. fryz z liści i owoców kasztanowca oraz uskrzydlone główki kobiece.",
+      "Przejazd bramny na osi środkowej poprzedzają schodki; odbojami bramnymi są krasnale z tarczami z datą „1898”.",
+      "Budynek frontowy w partii fasady i wnętrz stanowi najbogatszy i najlepiej zachowany przykład architektury secesji wśród warszawskich kamienic.",
+      "Nieznacznie uszkodzony w 1939 roku; po wojnie upaństwowiony, a mieszkania podzielono na mniejsze.",
+      "W 1990 roku wpisano ją do rejestru zabytków; w 1996 roku została zreprywatyzowana.",
+      "Po 2000 roku kamienica nie była zamieszkana i ulegała degradacji; w 2025 roku w budynku zerwały się stropy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-storey Art Nouveau tenement at Górnośląska 22, built in 1904 and regarded as the richest and best-preserved Art Nouveau street front among Warsaw's tenements. It was listed in 1990 but has stood empty and degrading since 2000, and its ceilings collapsed in 2025.",
+    "ludzie": [
+      {"kto": "Leon Breslauer", "rola": "patron nazwy kamienicy; rola nieopisana w artykule", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Leona Breslauera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Leona_Breslauera_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-leona-feliksa-goldstanda",
+    "nazwa": "Kamienica Leona Feliksa Goldstanda",
+    "name_en": "Leon Feliks Goldstand Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kredytowa 9 / pl. Dąbrowskiego 8",
+    "adres_historyczny": "ul. Erywańska (plac Zielony)",
+    "lat": 52.237639, "lon": 21.009917,
+    "lokalizacja": "dokladna",
+    "okres": "1912–1916–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica na rogu ul. Kredytowej 9 i pl. Dąbrowskiego 8.",
+      "W momencie powstania była jedną z najwyższych kamienic Warszawy.",
+      "Zbudowana w latach 1912–1916 przy ówczesnym placu Zielonym; inicjatorem i inwestorem był Leon Feliks Goldstand.",
+      "Projektowali ją architekci Józef Napoleon Czerwiński oraz Juliusz bądź Wacław Heppen.",
+      "Ośmiopiętrowy budynek miał empirową fasadę z płaskorzeźbami oraz jońskimi i korynckimi półkolumnami.",
+      "Po I wojnie światowej (od 1919) mieściło się tu Ministerstwo Robót Publicznych; na parterze działała kawiarnia „Duża” lub „Wielka Ziemiańska”, a od strony placu dancing „Kakadu”.",
+      "W latach 1946–1947 kamienicę gruntownie przebudowano: usunięto kilka kondygnacji i zwieńczenie fasady, zmieniono układ okien i usunięto dekoracje.",
+      "Od września 1946 przez kolejne 57 lat była główną siedzibą Wydawnictw Szkolnych i Pedagogicznych."
+    ],
+    "ciekawostki": [
+      "W czasie powstania warszawskiego funkcjonowała tu radiostacja wraz ze szpitalem."
+    ],
+    "summary_en": "An eight-storey Empire-style building from 1912–1916 at Kredytowa 9 and Plac Dąbrowskiego 8, designed by Józef Napoleon Czerwiński and Heppen for Leon Feliks Goldstand. After 1946 it was cut down by several storeys and stripped of its decoration, and it housed the Wydawnictwa Szkolne i Pedagogiczne publisher for decades.",
+    "ludzie": [
+      {"kto": "Leon Feliks Goldstand", "rola": "inicjator i inwestor", "wiki": null},
+      {"kto": "Józef Napoleon Czerwiński", "rola": "architekt", "wiki": null},
+      {"kto": "Juliusz bądź Wacław Heppen", "rola": "architekt (w tekście wariant niepewny)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Erywańska (przed 1916 rokiem)", "plac Zielony"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Leona Feliksa Goldstanda w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Leona_Feliksa_Goldstanda_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-ludwika-panczakiewicza",
+    "nazwa": "Kamienica Ludwika Panczakiewicza",
+    "name_en": "Ludwik Panczakiewicz Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 6",
+    "adres_historyczny": null,
+    "lat": 52.214808, "lon": 21.021681,
+    "lokalizacja": "dokladna",
+    "okres": "1912–1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica przy ul. Marszałkowskiej 6, wzniesiona w latach 1912–1913 w stylu eklektycznym według projektu architekta Ludwika Panczakiewicza.",
+      "Fasada jest bogato dekorowana; we wnętrzach zachowały się detale oryginalnego wystroju.",
+      "24 lipca 2012 roku wpisano ją do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An eclectic 1912–1913 building at Marszałkowska 6, designed by architect Ludwik Panczakiewicz, with a richly decorated façade and original interior details. It was added to the Warsaw municipal heritage register in 2012.",
+    "ludzie": [
+      {"kto": "Ludwik Panczakiewicz", "rola": "architekt projektu; patron nazwy kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Ludwika Panczakiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Ludwika_Panczakiewicza_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł krótki; galeria bez opisów."
+  },
+  {
+    "id": "kamienica-macieja-lyszkiewicza",
+    "nazwa": "Kamienica Macieja Łyszkiewicza",
+    "name_en": "Maciej Łyszkiewicz Tenement (Marie Curie Birthplace)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta 16",
+    "adres_historyczny": null,
+    "lat": 52.2514, "lon": 21.0086,
+    "lokalizacja": "dokladna",
+    "okres": "1782–1787–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Freta 16 na Nowym Mieście; miejsce narodzin noblistki Marii Skłodowskiej-Curie.",
+      "Zbudowana w latach 1782–1787 przez połączenie dwóch kamienic; zrobił to architekt Szymon Bogumił Zug na zlecenie bankiera Macieja Łyszkiewicza.",
+      "W latach 1858–1874 właścicielem był posiadacz warszawskiej fabryki sztućców i maszyn Gerlach i Pulst, Wilhelm Gerlach.",
+      "W 1933 roku w mury wbudowano tablicę upamiętniającą odkrycie polonu i radu przez Marię Skłodowską-Curie.",
+      "W 1935 roku zawaliła się część kamienicy od strony dziedzińca; aresztowano Józefa i Stanisława Fiszchautów oraz administratora Mieczysława Podbora.",
+      "W czasie powstania warszawskiego budynek był siedzibą sztabu Obwodu Warszawskiego Armii Ludowej; 26 sierpnia 1944 roku w wyniku bombardowania kamienica zawaliła się.",
+      "Pod gruzami zginęli m.in. dowódca Obwodu Bolesław Kowalski ps. „Ryszard”, Stanisław Nowicki ps. „Feliks”, Edward Lanota ps. „Edward” i Anastazy Matywiecki ps. „Nastek”.",
+      "Po wojnie w maju 1951 roku Zjednoczenie Budownictwa Miejskiego „Warszawa-3” podjęło decyzję o odbudowie według projektu Stanisławy i Jerzego Dotkiewiczów; w 1965 roku wpisano ją do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Tablica upamiętniająca czterech zabitych w 1944 roku została odsłonięta w 1954 roku."
+    ],
+    "summary_en": "A Nowe Miasto tenement at Freta 16, where Maria Skłodowska-Curie was born. Built in 1782–1787 by merging two houses for banker Maciej Łyszkiewicz, it collapsed in a bombing on 26 August 1944 that killed the Warsaw AL district commander, and it was rebuilt from 1951 with a museum on the first floor.",
+    "ludzie": [
+      {"kto": "Maciej Łyszkiewicz", "rola": "bankier, zleceniodawca przebudowy 1782–1787", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "architekt przebudowy 1782–1787", "wiki": null},
+      {"kto": "Maria Skłodowska-Curie", "rola": "urodzona w kamienicy (miejsce narodzin)", "wiki": null},
+      {"kto": "Wilhelm Gerlach", "rola": "właściciel 1858–1874", "wiki": null},
+      {"kto": "Józef i Stanisław Fiszchautowie", "rola": "aresztowani w 1935 roku po zawaleniu", "wiki": null},
+      {"kto": "Bolesław Kowalski „Ryszard”", "rola": "dowódca Obwodu Warszawskiego AL, zginął pod gruzami w 1944", "wiki": null},
+      {"kto": "Stanisław Nowicki „Feliks”", "rola": "zginął pod gruzami w 1944", "wiki": null},
+      {"kto": "Edward Lanota „Edward”", "rola": "zginął pod gruzami w 1944", "wiki": null},
+      {"kto": "Anastazy Matywiecki „Nastek”", "rola": "zginął pod gruzami w 1944", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Macieja Łyszkiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Macieja_%C5%81yszkiewicza_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście nazwisko projektantek odbudowy: Dotkiewiczów (prawdopodobnie Dutkiewiczów)."
+  },
+  {
+    "id": "kamienica-majera-wolanowskiego",
+    "nazwa": "Kamienica Majera Wolanowskiego",
+    "name_en": "Majer Wolanowski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Próżna 14",
+    "adres_historyczny": null,
+    "lat": 52.236, "lon": 21.0038,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1943–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Próżnej 14, która przetrwała zagładę warszawskiego getta.",
+      "W 1987 roku wraz z kamienicami o adresach 7, 9 i 12 została wpisana do rejestru zabytków.",
+      "W latach 2008–2014 w oknach i na elewacji znajdowały się fotografie polskich Żydów ze zbiorów Fundacji Shalom; zbiór liczył ok. 8000 zdjęć.",
+      "Fotografie wykorzystano do wystawy „I ciągle widzę ich twarze”, pokazanej w 29 muzeach na całym świecie.",
+      "W 2012 roku w bramie kamienicy umieszczono rzeźbę HIM Maurizio Cattelana przedstawiającą modlącego się na klęczkach Adolfa Hitlera.",
+      "W czerwcu 2018 roku Urząd m.st. Warszawy zapowiedział, że kamienica ma stać się siedzibą Teatru Żydowskiego; później zdecydowano o nowej siedzibie teatru przy ul. Kasprzaka 22."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement at Próżna 14 that survived the Warsaw Ghetto and was listed in 1987. In 2008–2014 its façade displayed portraits of Polish Jews from the Shalom Foundation collection, and in 2012 a Maurizio Cattelan sculpture of Hitler at prayer was placed in its gateway.",
+    "ludzie": [
+      {"kto": "Majer Wolanowski", "rola": "patron nazwy kamienicy; rola nieopisana w artykule", "wiki": null},
+      {"kto": "Maurizio Cattelan", "rola": "autor rzeźby HIM (2012)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Majera Wolanowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Majera_Wolanowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku budowy; okres oznaczono od daty zagłady getta (1943)."
+  },
+  {
+    "id": "kamienica-maksymiliana-harczyka-jasna-10",
+    "nazwa": "Kamienica Maksymiliana Harczyka (ul. Jasna 10)",
+    "name_en": "Maksymilian Harczyk Tenement (Jasna 10)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jasna 10 (róg ul. Henryka Sienkiewicza)",
+    "adres_historyczny": null,
+    "lat": 52.2344, "lon": 21.01205,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1903–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Narożna kamienica należąca do Maksymiliana Harczyka, wzniesiona ok. 1903 roku według projektu Dawida Landego.",
+      "W tym samym czasie i dla tego samego inwestora vis-à-vis powstała podobna narożna kamienica pod numerem 8.",
+      "Pięciopiętrowy budynek ma 9-osiową fasadę od ul. Jasnej i 11-osiowe skrzydło od ul. Sienkiewicza; fasada ma bogatą secesyjną ornamentykę.",
+      "W okresie międzywojennym było tu siedziba wielu przedsiębiorstw, polskich i zagranicznych.",
+      "Kamienica jest jedyną w pełni zachowaną kamienicą czynszową w tej części śródmieścia, w której przed 1939 rokiem mieściły się firmy sektora usług finansowych (tzw. warszawskie „City”).",
+      "Uszkodzona w czasie powstania warszawskiego, po wojnie została wyremontowana; w 2007 roku wpisano ją do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A corner Art Nouveau tenement at Jasna 10 and Sienkiewicza street, built around 1903 to designs by Dawid Lande for Maksymilian Harczyk. It is described as the only fully preserved rental building of Warsaw's prewar financial district and was listed in 2007.",
+    "ludzie": [
+      {"kto": "Maksymilian Harczyk", "rola": "inwestor", "wiki": null},
+      {"kto": "Dawid Lande", "rola": "architekt", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Maksymiliana Harczyka w Warszawie (ul. Jasna 10)", "url": "https://pl.wikipedia.org/wiki/Kamienica_Maksymiliana_Harczyka_w_Warszawie_%28ul._Jasna_10%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Bliźniacza kamienica przy Jasnej 8 to osobny rekord."
+  },
+  {
+    "id": "kamienica-maksymiliana-harczyka-jasna-8",
+    "nazwa": "Kamienica Maksymiliana Harczyka (ul. Jasna 8)",
+    "name_en": "Maksymilian Harczyk Tenement (Jasna 8)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jasna 8",
+    "adres_historyczny": null,
+    "lat": 52.23408, "lon": 21.01238,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1903–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wybudowana ok. 1903 roku według projektu Dawida Landego na świeżo rozparcelowanym terenie Szpitala Dzieciątka Jezus.",
+      "W tym samym czasie i dla tego samego inwestora powstała podobna narożna kamienica pod numerem 10.",
+      "Przed wojną mieściły się tu m.in. Bank Związku Spółek Zarobkowych SA oraz drukarnia Piotra Ambroziaka i tłocznia Towarzystwa „Straży Kresowej”.",
+      "W czasie obrony Warszawy we wrześniu 1939 roku niemiecka bomba zburzyła do drugiego piętra skrzydło od ul. Sienkiewicza oraz trzy osie od ul. Jasnej.",
+      "Po wojnie, w czasie odbudowy, kamienicę pozbawiono wystroju elewacji i całkowicie przekształcono.",
+      "Od 2012 roku kamienica znajduje się w gminnej ewidencji zabytków; obecnie mieści się tu Centrala Narodowego Banku Polskiego oraz mieszkania."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A corner tenement at Jasna 8 built around 1903 by Dawid Lande for Maksymilian Harczyk on the grounds of the Infant Jesus Hospital. It bore a German bomb in 1939 and was stripped of its façade decoration during reconstruction; today it houses the National Bank of Poland's headquarters and flats.",
+    "ludzie": [
+      {"kto": "Maksymilian Harczyk", "rola": "inwestor", "wiki": null},
+      {"kto": "Dawid Lande", "rola": "architekt", "wiki": null},
+      {"kto": "Piotr Ambroziak", "rola": "właściciel drukarni przed wojną", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Maksymiliana Harczyka w Warszawie (ul. Jasna 8)", "url": "https://pl.wikipedia.org/wiki/Kamienica_Maksymiliana_Harczyka_w_Warszawie_%28ul._Jasna_8%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Bliźniacza kamienica przy Jasnej 10 to osobny rekord."
+  },
+  {
+    "id": "kamienica-malcza",
+    "nazwa": "Kamienica Malcza",
+    "name_en": "Malcz Tenement (destroyed)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Krakowskie Przedmieście (hip. nr 372)",
+    "lat": 52.244833, "lon": 21.014278,
+    "lokalizacja": "dokladna",
+    "okres": "1767–1865",
+    "istnieje": false,
+    "fakty": [
+      "Okazały budynek mieszkalny zamykał widok z Placu Zamkowego na Krakowskie Przedmieście; zbudowany w 1767 roku, rozebrany w 1865.",
+      "Działkę kupił w 1765 roku Józef Seweryn Wasilewski, lekarz i aptekarz, konsyliarz króla Stanisława Augusta Poniatowskiego.",
+      "Kamienicę zaprojektował Piotr Hiż (Hiche), a budową kierował konduktor Karol Bogumił Schütz.",
+      "W 1829 roku kamienicę Wasilewskiego kupił za 230 000 złp znany lekarz dr Wilhelm Malcz; w 1830 roku dobudowano czwarte piętro.",
+      "Lokatorami byli m.in. księżna Elżbieta Sapieżyna, biskup Ignacy Krasicki, który organizował tu wieczory uczone, oraz Hugo Kołłątaj.",
+      "W 1859 roku kamienicę kupił Samuel Orgelbrand, drukarz i wydawca, który urządził tu księgarnię i drukarnię.",
+      "Podczas tłumienia demonstracji 27 lutego 1861 roku kozacy przed domem zabili pięciu demonstrantów.",
+      "Rada Administracyjna zdecydowała o rozbiórce wąskiego Krakowskiego Przedmieścia; budynki rozebrano w latach 1865–1867."
+    ],
+    "ciekawostki": [
+      "Rozbiórkę domu Malcza w 1865 roku uwiecznił na fotografii Karol Beyer."
+    ],
+    "summary_en": "A three-storey townhouse built in 1767 for royal physician Józef Seweryn Wasilewski, closing the view from Castle Square onto Krakowskie Przedmieście. It was owned by Wilhelm Malcz from 1829, was the scene of an 1861 demonstration killing, and was demolished in 1865–1867.",
+    "ludzie": [
+      {"kto": "Józef Seweryn Wasilewski", "rola": "lekarz, konsyliarz króla, inwestor", "wiki": null},
+      {"kto": "Piotr Hiż (Hiche)", "rola": "architekt", "wiki": null},
+      {"kto": "Karol Bogumił Schütz", "rola": "konduktor, kierował budową", "wiki": null},
+      {"kto": "Wilhelm Malcz", "rola": "lekarz, właściciel od 1829 roku", "wiki": null},
+      {"kto": "Ignacy Krasicki", "rola": "biskup, lokator; organizował wieczory uczone", "wiki": null},
+      {"kto": "Samuel Orgelbrand", "rola": "drukarz i wydawca, właściciel od 1859 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["dom Wasilewskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Malcza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Malcza_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-maurycego-spokornego",
+    "nazwa": "Kamienica Maurycego Spokornego",
+    "name_en": "Maurycy Spokorny Tenement (destroyed)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "róg Alej Ujazdowskich i ul. Fryderyka Chopina",
+    "lat": 52.2228, "lon": 21.0239,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1910–ok. 1947",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica na rogu Alej Ujazdowskich i ul. Fryderyka Chopina, jeden z najpiękniejszych przykładów secesji w Warszawie.",
+      "Wzniesiona według projektu Dawida Lande; fundatorem był Maurycy Spokorny, dyrektor i akcjonariusz przedsiębiorstwa eksploatującego tramwaje warszawskie.",
+      "Jako jedna z pierwszych w Warszawie została wyposażona w oświetlenie elektryczne, windy i ciepłą wodę bieżącą; na dachu miała ogród.",
+      "Elewację od strony Alej Ujazdowskich ozdobiły alegoryczne rzeźby „Sławy” i „Wiedzy” dłuta Stanisława Romana Lewandowskiego.",
+      "Od 1910 roku mieszkał tu architekt Czesław Przybylski, który miał tu swoją pracownię.",
+      "W czasie II wojny światowej kamienica została wypalona; ruiny rozebrano ok. 1947 roku.",
+      "W jej miejscu wzniesiono budynek biurowy przy ul. Chopina 1, mieszczący Komitet Warszawski PZPR (tzw. mały Dom Partii)."
+    ],
+    "ciekawostki": [
+      "Narożnik kamienicy zwieńczony wieżyczką został usunięty w latach 20. XX wieku."
+    ],
+    "summary_en": "An Art Nouveau corner building at Ujazdowskie Avenue and Chopina Street, designed by Dawid Lande for tram-company director Maurycy Spokorny. It was gutted in WWII, its ruins were removed around 1947, and an office block for the PZPR Warsaw committee now stands on the site.",
+    "ludzie": [
+      {"kto": "Maurycy Spokorny", "rola": "fundator; dyrektor i akcjonariusz przedsiębiorstwa tramwajowego", "wiki": null},
+      {"kto": "Dawid Lande", "rola": "architekt", "wiki": null},
+      {"kto": "Stanisław Roman Lewandowski", "rola": "autor rzeźb „Sławy” i „Wiedzy”", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "architekt, mieszkaniec i właściciel pracowni od 1910 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Maurycego Spokornego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Maurycego_Spokornego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku budowy; okres przybliżono od daty zamieszkania architekta Czesława Przybylskiego (1910)."
+  }
+]

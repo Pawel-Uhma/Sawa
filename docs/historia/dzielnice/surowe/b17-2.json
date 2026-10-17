@@ -1,0 +1,121 @@
+[
+  {
+    "id": "biblioteka-uniwersytecka-dobra-56",
+    "nazwa": "Biblioteka Uniwersytecka w Warszawie (gmach przy ul. Dobrej)",
+    "name_en": "University of Warsaw Library (Dobra Street building)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dobra 56/66",
+    "adres_historyczny": "Pałac Kazimierzowski (od 1818); kampus UW przy Krakowskim Przedmieściu 26/28 (do 1999)",
+    "lat": 52.242388,
+    "lon": 21.024371,
+    "lokalizacja": "dokladna",
+    "okres": "1816–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biblioteka została utworzona przy Uniwersytecie Warszawskim w 1816 roku; w marcu 1818 roku usamodzielniono ją i nadano jej charakter biblioteki publicznej. Pierwszym dyrektorem był leksykograf Samuel Linde, a jego zastępcą Joachim Lelewel.",
+      "Bibliotekę umieszczono w Pałacu Kazimierzowskim, w siedzibie Uniwersytetu.",
+      "Po upadku powstania listopadowego bibliotekę zamknięto, a w 1832 roku wywieziono do Petersburga m.in. Gabinet Rycin i kolekcję numizmatyczną.",
+      "W 1894 roku oddano do użytku nowy gmach biblioteki zaprojektowany przez Antoniego Jabłońskiego-Jasieńczyka i Stefana Szyllera.",
+      "W sierpniu 1915 roku, po opuszczeniu Warszawy przez Rosjan, najcenniejsze zbiory (inkunabuły, rękopisy, archiwum biblioteczne) wywieziono w głąb Rosji; biblioteka ruszyła ponownie jesienią 1915 roku.",
+      "W 1940 roku połączono biblioteki Narodową, Uniwersytecką i Ordynacji Krasińskich, tworząc Staatsbibliothek Warschau.",
+      "11 czerwca 1999 roku Jan Paweł II poświęcił nowy gmach biblioteki, a 15 grudnia 1999 roku biblioteka otwarła się dla czytelników na rogu ulic Dobrej i Lipowej, po pięciomiesięcznej przeprowadzce.",
+      "15 czerwca 2001 roku prezydent USA George W. Bush wygłosił w nowym gmachu przemówienie do społeczności UW i mieszkańców Warszawy."
+    ],
+    "ciekawostki": [
+      "W listopadzie 2018 roku jako pierwsza w Polsce biblioteka wprowadziła model zakupu e-książek „Zakup Decyzją Czytelnika”."
+    ],
+    "summary_en": "The University of Warsaw Library was founded in 1816 with the university and moved in 1818 into the Kazimierz Palace. Its current building at Dobra 56/66 was consecrated by Pope John Paul II in June 1999 and opened to readers in December 1999 on the corner of Dobra and Lipowa streets.",
+    "ludzie": [
+      {"kto": "Samuel Linde", "rola": "pierwszy dyrektor biblioteki", "wiki": null},
+      {"kto": "Joachim Lelewel", "rola": "zastępca pierwszego dyrektora", "wiki": null},
+      {"kto": "Antoni Jabłoński-Jasieńczyk, Stefan Szyller", "rola": "projektanci gmachu z 1894 roku", "wiki": null},
+      {"kto": "Marek Budzyński, Zbigniew Badowski", "rola": "autorzy projektu nowego gmachu (konkurs 1993)", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "poświęcił nowy gmach w 1999 roku", "wiki": null},
+      {"kto": "George W. Bush", "rola": "wygłosił przemówienie w nowym gmachu w 2001 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biblioteka Główna (od 1862 roku)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biblioteka Uniwersytecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Biblioteka_Uniwersytecka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o instytucji; wzięto tylko fakty dotyczące gmachów. Adres z artykułu: ul. Dobra 56/66."
+  },
+  {
+    "id": "palac-danilowiczowski-biblioteka-zaluskich",
+    "nazwa": "Biblioteka Załuskich (pałac Daniłowiczowski)",
+    "name_en": "Załuski Library (Daniłowicz Palace)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.245388888,
+    "lon": 21.0075,
+    "lokalizacja": "dokladna",
+    "okres": "1745–1795",
+    "istnieje": null,
+    "fakty": [
+      "Biblioteka Załuskich została otwarta dla publiczności 8 sierpnia 1747 roku w pałacu Daniłowiczowskim; fundatorami byli bracia, biskupi Józef Andrzej i Andrzej Stanisław Załuscy.",
+      "Pałac Daniłowiczowski zakupiono w 1736 roku; przebudowano go ok. 1742–1754, a rozbudowano ok. 1754–1762. Zbiory przeniesiono tu w 1745 roku z Marywilu.",
+      "Zbiory zajmowały 29 sal; obwiedziona galerią sala biblioteczna była ozdobiona popiersiami uczonych i pisarzy polskich XVII i XVIII wieku.",
+      "Do 1787 roku obowiązywał podział działowy Józefa Andrzeja Załuskiego, od 1787 roku wprowadzano podział systematyczny Onufrego Kopczyńskiego.",
+      "Na rozkaz Katarzyny II w grudniu 1794 i styczniu 1795 roku zbiory wywieziono do Petersburga, gdzie stały się zrębem Cesarskiej Biblioteki Publicznej; na miejsce dotarło 260 tysięcy woluminów z ok. 400 tysięcy.",
+      "Od 1780 roku biblioteka była polską biblioteką narodową.",
+      "Po I wojnie światowej część dawnych zbiorów zwrócono na mocy traktatu ryskiego w latach 1921–1934; w 1944 roku zbiory, które pozostały w Warszawie, uległy w znacznej części zniszczeniu, podpalone przez wojska niemieckie."
+    ],
+    "ciekawostki": [
+      "Plany otwarcia zbiorów dla publiczności ogłosił Józef Andrzej Załuski już w Programma literarium (1732)."
+    ],
+    "summary_en": "The Załuski Library, founded by the Załuski brothers, bishops, opened to the public on 8 August 1747 in the Daniłowicz Palace in Warsaw. From 1780 it served as Poland's national library. In 1794–1795 its collections were seized on Catherine II's order and taken to Saint Petersburg, and what remained in Warsaw was largely destroyed by fire in 1944.",
+    "ludzie": [
+      {"kto": "Józef Andrzej Załuski", "rola": "biskup, bibliograf, współfundator biblioteki", "wiki": null},
+      {"kto": "Andrzej Stanisław Załuski", "rola": "biskup, mecenas, współfundator biblioteki", "wiki": null},
+      {"kto": "Onufry Kopczyński", "rola": "autor podziału systematycznego wprowadzonego od 1787 roku", "wiki": null},
+      {"kto": "Katarzyna II", "rola": "wydała rozkaz wywózki zbiorów do Petersburga", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biblioteka Publiczna Rzeczypospolitej", "Biblioteka Publiczna Załuskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biblioteka Załuskich", "url": "https://pl.wikipedia.org/wiki/Biblioteka_Za%C5%82uskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres pałacu nie jest podany w tekście artykułu; los pałacu po 1795 roku nieopisany (istnieje: null). Artykuł urwany w sekcji Historia; wzięto tylko fakty z części dostępnej w paczce."
+  },
+  {
+    "id": "bitwa-pod-warszawa-1656",
+    "nazwa": "Bitwa pod Warszawą (1656)",
+    "name_en": "Battle of Warsaw (1656)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Równina Praska pod Warszawą",
+    "lat": 52.2323,
+    "lon": 21.0084,
+    "lokalizacja": "przyblizona",
+    "okres": "1656",
+    "istnieje": null,
+    "fakty": [
+      "Bitwa została stoczona w dniach 28–30 lipca 1656 roku na Równinie Praskiej pod Warszawą, podczas II wojny północnej; była największą bitwą wojen polsko-szwedzkich w czasie potopu szwedzkiego.",
+      "Wojska polsko-litewskie miały 18 armat, 24 tys. żołnierzy regularnych (w tym 20 tys. jazdy, z czego tylko 950 husarii), ok. 10 tys. pospolitego ruszenia i 2 tys. Tatarów.",
+      "Armia szwedzko-brandenburska miała 47 armat i ok. 19 tys. doświadczonych żołnierzy regularnych.",
+      "Bitwę wygrali Szwedzi i Brandenburczycy, ale armia polsko-litewska nie została rozbita i zdołała wycofać się na drugi brzeg Wisły, tracąc niewielką część artylerii.",
+      "25 czerwca 1656 w Malborku Karol Gustaw podpisał traktat z elektorem brandenburskim Fryderykiem Wilhelmem.",
+      "1 lipca 1656 wojska polsko-litewskie zdobyły Warszawę."
+    ],
+    "ciekawostki": [
+      "Jan Kazimierz zdecydował się na walną bitwę, mimo że Stefan Czarniecki nalegał na kontynuowanie dotychczasowej wojny szarpanej."
+    ],
+    "summary_en": "The Battle of Warsaw, fought on 28–30 July 1656 on the Praga Plain during the Second Northern War, was the largest battle of the Polish-Swedish wars during the Deluge. The Swedish and Brandenburg army, with 47 guns and about 19,000 men, won, but the Polish-Lithuanian army was not destroyed and withdrew across the Vistula.",
+    "ludzie": [
+      {"kto": "Karol Gustaw", "rola": "król szwedzki, dowódca armii szwedzkiej", "wiki": null},
+      {"kto": "Fryderyk Wilhelm", "rola": "elektor brandenburski, sojusznik Szwecji", "wiki": null},
+      {"kto": "Jan Kazimierz", "rola": "król polski, zdecydował o stoczeniu bitwy", "wiki": null},
+      {"kto": "Stefan Czarniecki", "rola": "dowódca, przeciwny walnej bitwie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bitwa pod Warszawą (1656)", "url": "https://pl.wikipedia.org/wiki/Bitwa_pod_Warszaw%C4%85_%281656%29"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Równina Praska leży po prawym brzegu Wisły (Praga), a nagłówek przypisuje artykuł do Śródmieścia. Dzielnica z nagłówka, do weryfikacji. Artykuł urwany w opisie przebiegu; wzięto fakty z części dostępnej."
+  }
+]

@@ -1,0 +1,348 @@
+[
+  {
+    "id": "synagoga-aron-serdyner",
+    "nazwa": "Synagoga Arona Serdynera w Warszawie",
+    "name_en": "Aron Serdyner Synagogue",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Twarda 2/4 (na miejscu wieżowiec Cosmopolitan)",
+    "adres_historyczny": "ul. Twarda 4",
+    "lat": 52.235229,
+    "lon": 21.001897,
+    "lokalizacja": "dokladna",
+    "okres": "XIX w.–1939",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga stała przy ul. Twardej 4 w Warszawie i została zbudowana w XIX wieku z inicjatywy i funduszy Arona Serdynera.",
+      "Budynek stał przy wjeździe, w wielkim wyasfaltowanym podwórzu, i był połączony z dużym domem nauki.",
+      "Był to murowany budynek na planie prostokąta; ścianę frontową z trzema wysokimi, półkoliście zwieńczonymi oknami z witrażami oddzielał od podwórza pas drzew.",
+      "W 1939 roku synagogę zburzyli hitlerowcy; po wojnie nie została odbudowana.",
+      "Na jej miejscu powstał wieżowiec Cosmopolitan Twarda 2/4."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Aron Serdyner Synagogue at 4 Twarda Street was a 19th-century brick synagogue with a large study house, funded by Aron Serdyner. The Germans demolished it in 1939 and it was never rebuilt; the Cosmopolitan Twarda 2/4 tower now stands on the site.",
+    "ludzie": [
+      {"kto": "Aron Serdyner", "rola": "fundator synagogi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Synagoga Arona Serdynera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Arona_Serdynera_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Bardzo krótki artykuł; data budowy podana tylko jako XIX wiek."
+  },
+  {
+    "id": "synagoga-moriah",
+    "nazwa": "Synagoga Moriah w Warszawie",
+    "name_en": "Moriah Synagogue in Warsaw",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "podwórze kamienicy przy ul. Dzielnej",
+    "lat": 52.2461077,
+    "lon": 20.9918746,
+    "lokalizacja": "dokladna",
+    "okres": "1908–1942",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga powstała w 1908 roku z inicjatywy syjonistycznego Towarzystwa Moriah i znajdowała się w podwórzu kamienicy przy ul. Dzielnej.",
+      "W 1939 roku hitlerowcy zdewastowali synagogę; w 1940 roku znalazła się w granicach getta warszawskiego.",
+      "20 maja 1941 roku władze niemieckie zezwoliły na otwarcie w granicach getta trzech synagog, w tym Moriah; w ciągu trzech miesięcy synagogę gruntownie odnowiono.",
+      "6 września 1941 roku podczas uroczystego otwarcia modły odprawił kantor Izrael Mowsza Rudnicki z chórem pod kierownictwem doktora Gutwerka, a mowę wygłosił rabin Goldsztejn.",
+      "Na początku września 1942 roku na kamienicę i synagogę spadła bomba, która doszczętnie je zniszczyła; po wojnie synagogi nie odbudowano."
+    ],
+    "ciekawostki": [
+      "Nazwa synagogi pochodzi od wzgórza Moriah w Jerozolimie; w zapisie występuje także jako „Morija”."
+    ],
+    "summary_en": "The Moriah Synagogue, founded in 1908 by the Zionist Moriah society, stood in a courtyard on Dzielna Street. It was renovated within the ghetto in 1941 and destroyed by a bomb in September 1942, and it was never rebuilt.",
+    "ludzie": [
+      {"kto": "Izrael Mowsza Rudnicki", "rola": "kantor, który odprawił modły podczas otwarcia 6 września 1941 roku", "wiki": null},
+      {"kto": "Izaak Nisenbaum", "rola": "wieloletni kaznodzieja synagogi; jego pismo powitalne odczytano podczas otwarcia w 1941 roku", "wiki": null},
+      {"kto": "Goldsztejn", "rola": "rabin, mówca podczas otwarcia w 1941 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Morija"],
+    "zrodla": [{"tytul": "Wikipedia: Synagoga Moriah w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Moriah_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "synagoga-chabad-lubawicz",
+    "nazwa": "Synagoga chasydów z Chabad-Lubawicz w Warszawie",
+    "name_en": "Chabad-Lubavitch Synagogue in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Słomińskiego 19/508",
+    "adres_historyczny": null,
+    "lat": 52.257083,
+    "lon": 20.990639,
+    "lokalizacja": "dokladna",
+    "okres": "2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Synagoga przy ul. Słomińskiego 19/508 została założona w grudniu 2005 roku z inicjatywy chasydów z Chabad Lubawicz, skupionych w Chabad Lubawicz Polska.",
+      "Modlitewnia wchodzi w skład Centrum Żydowskiego, w którym prowadzona jest także jesziwa, koszerna restauracja, biblioteka i mykwa.",
+      "Obecnym rabinem synagogi jest Szalom Dov Ber Stambler; nabożeństwa odbywają się codziennie, we wszystkie szabaty i święta.",
+      "17 kwietnia 2008 roku prezydent Izraela Szymon Peres spotkał się z przedstawicielami ruchu w Pałacu Prezydenckim i nakreślił ostatnią literę w słowie „Izrael” w nowym zwoju Tory, który wkrótce przeniesiono do synagogi Chabadu."
+    ],
+    "ciekawostki": [
+      "Inną tego typu synagogą w Polsce jest Synagoga Izaaka Jakubowicza w Krakowie."
+    ],
+    "summary_en": "The Chabad-Lubavitch synagogue at 19/508 Słomińskiego Street was founded in December 2005 and belongs to the Jewish Centre complex with a yeshiva, kosher restaurant, library and mikveh. In 2008 Israeli President Shimon Peres wrote the last letter of a new Torah scroll there.",
+    "ludzie": [
+      {"kto": "Szymon Peres", "rola": "prezydent Izraela, w 2008 roku nakreślił ostatnią literę w nowym zwoju Tory", "wiki": null},
+      {"kto": "Szalom Dov Ber Stambler", "rola": "obecny rabin synagogi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Synagoga chasydów z Chabad-Lubawicz w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_chasyd%C3%B3w_z_Chabad-Lubawicz_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł zawiera zdanie o wydzierżawieniu synagogi w Krakowie w 2007 roku, które w tekście jest niejasne; pominięte."
+  },
+  {
+    "id": "synagoga-nozykow",
+    "nazwa": "Synagoga im. Małżonków Nożyków w Warszawie",
+    "name_en": "Nożyk Synagogue",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Twarda 6",
+    "adres_historyczny": "ul. Twarda 6",
+    "lat": 52.236056,
+    "lon": 21.001111,
+    "lokalizacja": "dokladna",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Koncepcja budowy nowej ortodoksyjnej synagogi narodziła się w 1892 roku; 11 kwietnia 1893 roku Zalman Nożyk kupił za 157 tys. rubli pustą parcelę przy ul. Twardej 6 od Jana Teodora Engelberta Zembrzuskiego.",
+      "Wiosną 1898 roku rozpoczęto prace budowlane; budynek zaprojektowano dla ok. 600 osób, po połowie kobiet i mężczyzn. Projekt najprawdopodobniej wykonał Leandro Marconi, choć nie jest to pewne.",
+      "Koszt realizacji wyniósł ok. 257 tys. rubli; kwotę w całości wyłożyli małżonkowie Nożykowie.",
+      "Uroczyste otwarcie odbyło się 12 maja 1902 roku w święto Lag ba-Omer.",
+      "W 1914 roku, po śmierci Rywki, bożnicę wraz z nieruchomościami przekazano Warszawskiej Gminie Starozakonnych.",
+      "W 1923 roku synagogę wyremontowano i dobudowano do ściany wschodniej półokrągły chór według planów Maurycego Grodzieńskiego.",
+      "W 1939 roku była jedną z pięciu największych synagog w Warszawie; w 1940 roku została zamknięta i zdewastowana, a potem służyła za stajnię dla koni i magazyn paszy.",
+      "Podczas powstania warszawskiego synagoga została znacznie uszkodzona podczas walk i bombardowań, ale jej konstrukcja się nie zawaliła."
+    ],
+    "ciekawostki": [
+      "W okresie międzywojennym synagoga słynęła z męskiego chóru prowadzonego przez Abrahama Cwi Dawidowicza.",
+      "Synagoga jest główną synagogą Gminy Wyznaniowej Żydowskiej w Warszawie i siedzibą naczelnego rabina Polski Michaela Schudricha."
+    ],
+    "summary_en": "The Nożyk Synagogue at 6 Twarda Street, built in 1898–1902 with funds from the Nożyk couple, was the largest Orthodox synagogue in Warsaw. It was damaged by the Germans and during the Warsaw Uprising, and today it is the main synagogue of the Warsaw Jewish community.",
+    "ludzie": [
+      {"kto": "Zalman Nożyk", "rola": "fundator, kupił parcelę w 1893 roku i sfinansował budowę wraz z żoną", "wiki": null},
+      {"kto": "Rywka Nożyk", "rola": "fundatorka, żona Zalmana", "wiki": null},
+      {"kto": "Szymon Landau", "rola": "notariusz, spisał akt kupna parceli w 1893 roku", "wiki": null},
+      {"kto": "Maurycy Grodzieński", "rola": "autor planów przebudowy z 1923 roku", "wiki": null},
+      {"kto": "Majer Bałaban", "rola": "rabin i kaznodzieja synagogi od 1941 roku", "wiki": null},
+      {"kto": "Michael Schudrich", "rola": "naczelny rabin Polski, urzęduje w synagodze", "wiki": null}
+    ],
+    "dawne_nazwy": ["Synagoga im. Zalmana i Rywki Małżonków Nożyków"],
+    "zrodla": [{"tytul": "Wikipedia: Synagoga im. Małżonków Nożyków w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_im._Ma%C5%82%C5%BConk%C3%B3w_No%C5%BCyk%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie 1945 roku; fakty powojenne pominięte. Istnienie synagogi oparte na czasie teraźniejszym z lead artykułu."
+  },
+  {
+    "id": "synagoga-w-arsenale",
+    "nazwa": "Synagoga w Arsenale w Warszawie",
+    "name_en": "Synagogue in the Arsenal",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa 52 (budynek Arsenału)",
+    "adres_historyczny": "ul. Długa 52",
+    "lat": 52.246,
+    "lon": 21.001,
+    "lokalizacja": "dokladna",
+    "okres": "1928–ok. 1935",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga w budynku Arsenału Królewskiego przy ul. Długiej 52 została otwarta w 1928 roku.",
+      "Przeznaczona była dla więźniów wyznania mojżeszowego, którzy odbywali karę w mieszczącym się w Arsenale więzieniu karnym.",
+      "Funkcjonowała zapewne do 1935 roku, kiedy Arsenał przeznaczono na siedzibę Archiwum Miejskiego, dokonując licznych przekształceń wnętrz i elewacji.",
+      "Była niewielkim pomieszczeniem na zaledwie kilka osób; na ścianie wschodniej stała ozdobna szafa pełniąca rolę Aron ha-kodesz, a na jej szczycie znajdowały się tablice Dekalogu nakryte koroną.",
+      "Drzwi szafy zasłaniał ozdobny parochet z gwiazdą Dawida, otoczoną koroną i dwoma lwami."
+    ],
+    "ciekawostki": [
+      "Nie wiadomo, czy była to pierwsza sala modlitwy mieszcząca się w tym budynku."
+    ],
+    "summary_en": "A small prayer room for Jewish prisoners opened in 1928 inside the Royal Arsenal at 52 Długa Street. It likely closed around 1935, when the building was converted into the City Archive.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Synagoga w Arsenale w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_w_Arsenale_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł urwany w opisie architektury; brak danych o współczesnym stanie wnętrza. Budynek Arsenału istnieje, synagoga nie."
+  },
+  {
+    "id": "syrena-skwot-wilcza-30",
+    "nazwa": "Syrena (squat) przy ul. Wilczej 30",
+    "name_en": "Syrena squat at 30 Wilcza Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wilcza 30",
+    "adres_historyczny": "ul. Wilcza 30",
+    "lat": 52.225161,
+    "lon": 21.016369,
+    "lokalizacja": "dokladna",
+    "okres": "XIX w.–dziś (skłot od 2011)",
+    "istnieje": true,
+    "fakty": [
+      "Budynek przy ul. Wilczej 30 pochodzi z XIX wieku; w 1945 roku został przeznaczony do rozbiórki, a jego połowa została całkowicie zniszczona.",
+      "W tym samym roku budynek na dziko zasiedliło 50 osób, które rozpoczęły remont; na przełomie 1945/1946 ruszył na większą skalę koncesjonowany remont mieszkań za pieniądze z budżetu.",
+      "Kamienica funkcjonowała od 1945 roku jako budynek komunalny; w 2006 roku przeszła w ręce prywatne, a czynsz zwiększono trzykrotnie i zlikwidowano stanowisko dozorcy.",
+      "Po opinii o możliwości zawalenia się budynku nakazano wszystkim mieszkańcom jego opuszczenie; nowy właściciel i urząd miasta negocjowali kilka lat.",
+      "10 marca 2011 roku grupa osób zajęła opuszczony już niemal budynek i oficjalnie założono Autonomiczną Przestrzeń Inicjatyw Syrena, tydzień po zabójstwie Jolanty Brzeskiej, działaczki na rzecz praw lokatorów.",
+      "W październiku 2014 roku wyznaczono licytację komorniczą kamienicy; 15 października przed skłotem odbyła się ok. 150-osobowa pikieta. Licytacji nie przeprowadzono, bo właściciel zawarł z miastem umowę spłaty zadłużenia.",
+      "W 2016 roku powstał krótkometrażowy film dokumentalny o Syrenie „House on Strike”, nagrodzony na Tolpuddle Radical Film Festival."
+    ],
+    "ciekawostki": [
+      "Od maja 2016 przy skłocie działa klubokawiarnia Cafe Kryzys, prowadzona na zasadach anarchistycznej spółdzielni.",
+      "W bramie budynku znajduje się szafka jadłodzielni prowadzona przez Foodsharing Warszawa."
+    ],
+    "summary_en": "The 19th-century tenement at 30 Wilcza Street was half-destroyed in 1945 and became a municipal building, then was privatised in 2006 and emptied. Squatters occupied it in 2011 and created the Syrena autonomous social centre, which has stayed open with a cafe and a film about the building.",
+    "ludzie": [
+      {"kto": "Jolanta Brzeska", "rola": "warszawska działaczka na rzecz praw lokatorów, której zabójstwo poprzedziło zajęcie budynku o tydzień", "wiki": null}
+    ],
+    "dawne_nazwy": ["Autonomiczna Przestrzeń Inicjatyw Syrena"],
+    "zrodla": [{"tytul": "Wikipedia: Syrena (squat)", "url": "https://pl.wikipedia.org/wiki/Syrena_%28squat%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje stan na lata 2016–2017; obecny status skłotu nieznany z tekstu."
+  },
+  {
+    "id": "szara-willa",
+    "nazwa": "Szara Willa w Warszawie",
+    "name_en": "Szara Willa (Grey Villa) in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Wybrzeże Kościuszkowskie 47 (Collegium Iuridicum IV UW)",
+    "adres_historyczny": "ul. Lipowa 2",
+    "lat": 52.2431,
+    "lon": 21.0253,
+    "lokalizacja": "dokladna",
+    "okres": "1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willę wzniesiono w 1905 roku według projektu Bronisława Brochwicza-Rogoyskiego w stylu modernizmu jako dom mieszkalny Inspekcji Sieci Kanalizacyjnej i Wodociągowej w Warszawie.",
+      "Pierwotny adres budynku to ul. Lipowa 2.",
+      "Podczas II wojny światowej willa została zniszczona i odbudowana w uproszczonej formie.",
+      "W latach 1994–1997, przy okazji budowy Biblioteki Uniwersyteckiej, zmodernizowano ją według projektu Andrzeja Kicińskiego.",
+      "Za projekt modernizacji otrzymano Honorową Nagrodę SARP (1997), Europejską Nagrodę Architektoniczną THE GREEN POINT (1998), nagrody Ministra Spraw Wewnętrznych i Administracji w dziedzinie architektury (1997 i 1998) oraz nagrodę za Modernizację Roku 1998.",
+      "W 1995 roku budynek został wpisany do rejestru zabytków.",
+      "Obecnie nosi nazwę Collegium Iuridicum IV im. Cezarego Berezowskiego i mieści się w nim Instytut Prawa Międzynarodowego Wydziału Prawa i Administracji UW."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Grey Villa at 47 Wybrzeże Kościuszkowskie, built in 1905 as a modernist house for the city sewer and waterworks inspectorate, was destroyed in the war and rebuilt in a simplified form. Remodelled in 1994–1997 during the construction of the University Library, it now houses the Institute of International Law of Warsaw University.",
+    "ludzie": [
+      {"kto": "Bronisław Brochwicz-Rogoyski", "rola": "autor projektu willi z 1905 roku", "wiki": null},
+      {"kto": "Andrzej Kiciński", "rola": "autor projektu modernizacji w latach 1994–1997", "wiki": null}
+    ],
+    "dawne_nazwy": ["Lipowa 2 (pierwotny adres)"],
+    "zrodla": [{"tytul": "Wikipedia: Szara Willa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szara_Willa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "szary-dom-powisle",
+    "nazwa": "Szary Dom na Powiślu",
+    "name_en": "Grey House (Szary Dom) in Powiśle",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wiślana (dawniej ul. ks. Siemca), ul. Dobra, ul. Gęsta",
+    "adres_historyczny": "ul. Księdza Siemca (obecnie Wiślana)",
+    "lat": 52.242472222,
+    "lon": 21.02375,
+    "lokalizacja": "dokladna",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szary Dom to zwyczajowa nazwa domu zakonnego Zgromadzenia Sióstr Urszulanek Serca Jezusa Konającego na Powiślu, między ulicami Wiślaną, Dobrą i Gęstą.",
+      "Nazwa powstała w czasie powstania warszawskiego, gdy dom karmił ludność i był ośrodkiem działalności konspiracyjnej; nawiązuje do szarej elewacji.",
+      "W czerwcu 1930 roku zaczęto kopać fundamenty trzyfrontowego, pięciopiętrowego domu; prace trwały do 1934 roku, a pierwsza grupa studentek wprowadziła się już w 1931 roku.",
+      "Aktu poświęcenia kaplicy dokonał ks. bp Stanisław Gall 21 października 1932 roku.",
+      "W czasie II wojny siostry prowadziły z ramienia RGO dwie kuchnie: dla ok. 1500 dzieci i młodzieży oraz dla ok. 2000 dorosłych.",
+      "4 września 1944 roku Niemcy nakazali przymusową ewakuację mieszkańców Szarego Domu; budynek został wypalony i pozostały jedynie żelbetonowe mury.",
+      "Karol Wojtyła mieszkał w domu w latach 1955–1978, gdy przebywał w Warszawie jako ksiądz, biskup i kardynał; 3 października 1978 roku udał się stąd do Rzymu na konklawe."
+    ],
+    "ciekawostki": [
+      "Papież Jan Paweł II odwiedził dom w czerwcu 1999 roku podczas pielgrzymki do Ojczyzny, gdy poświęcił gmach Biblioteki Uniwersytetu Warszawskiego."
+    ],
+    "summary_en": "The Grey House is the convent of the Sisters of the Agonizing Heart of Jesus in Powiśle, named for its grey facade. It fed thousands during the Warsaw Uprising and was burned in September 1944; Karol Wojtyła lived there from 1955 to 1978.",
+    "ludzie": [
+      {"kto": "Urszula Ledóchowska", "rola": "matka założycielka zgromadzenia", "wiki": null},
+      {"kto": "Jan Paweł II (Karol Wojtyła)", "rola": "mieszkał w domu w latach 1955–1978 jako ksiądz, biskup i kardynał", "wiki": null},
+      {"kto": "Maria Wittek", "rola": "generał WP, lokator domu (pseud. „Mira”)", "wiki": null},
+      {"kto": "Jan Zieja", "rola": "kapelan, z którym zbierała się w domu młodzież harcerska", "wiki": null},
+      {"kto": "Stanisław Gall", "rola": "biskup, dokonał aktu poświęcenia kaplicy w 1932 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Szarych Urszulanek", "Szary Dom (nazwa z czasu powstania)"],
+    "zrodla": [{"tytul": "Wikipedia: Szary Dom w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szary_Dom_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w sekcji „Pokój papieski”; datę 1931 erekcji kanonicznej pominięto dla zwięzłości."
+  },
+  {
+    "id": "szkola-podchorazych-podchorazowka",
+    "nazwa": "Szkoła Podchorążych w Warszawie (Podchorążówka)",
+    "name_en": "Officer Cadet School in Warsaw (Podchorążówka)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie, Wielka Oficyna (Ujazdów)",
+    "adres_historyczny": "Wielka Oficyna w Łazienkach Królewskich w Ujazdowie",
+    "lat": 52.215694,
+    "lon": 21.037083,
+    "lokalizacja": "dokladna",
+    "okres": "1815–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wyższa szkoła wojskowa powstała 28 lipca 1815 roku w Warszawie; szkoliła przyszłych oficerów.",
+      "Siedziba szkoły mieściła się w Wielkiej Oficynie w Łazienkach Królewskich w Ujazdowie.",
+      "Szkołę założono z polecenia księcia Konstantego, brata cara Aleksandra I; architektem i budowniczym był Wilhelm Henryk Minter.",
+      "Liczyła 200 słuchaczy z wszystkich zaborów, w większości z drobnej szlachty; działały dwa wydziały: piechoty i jazdy.",
+      "Nauka miała trwać dwa lata, ale z powodu braku wolnych etatów oficerskich trwała 5 lat lub dłużej.",
+      "Wieczorem 29 listopada 1830 roku uczniowie szkoły rozpoczęli powstanie listopadowe, przechodząc przez most Sobieskiego i szturmując Belweder.",
+      "W latach 1988–2012 Podchorążówka była siedzibą Muzeum Ignacego Jana Paderewskiego."
+    ],
+    "ciekawostki": [
+      "Przy budynku stoi popiersie Piotra Wysockiego, instruktora szkoły, który utworzył w niej tajny związek patriotyczny znany jako sprzysiężenie Wysockiego."
+    ],
+    "summary_en": "The Warsaw Officer Cadet School, founded in 1815 on Konstanty's orders, was housed in the Wielka Oficyna in the Royal Baths Park. Its cadets launched the November Uprising by storming the Belweder in 1830. The building is now a museum known as Podchorążówka.",
+    "ludzie": [
+      {"kto": "Konstanty Romanow", "rola": "brat cara Aleksandra I, z jego polecenia założono szkołę", "wiki": null},
+      {"kto": "Wilhelm Henryk Minter", "rola": "architekt i budowniczy szkoły", "wiki": null},
+      {"kto": "Piotr Wysocki", "rola": "instruktor szkoły, twórca sprzysiężenia Wysockiego", "wiki": null}
+    ],
+    "dawne_nazwy": ["Podchorążówka"],
+    "zrodla": [{"tytul": "Wikipedia: Szkoła Podchorążych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szko%C5%82a_Podchor%C4%85%C5%BCych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy budynku; artykuł w większości opisuje historię szkoły."
+  },
+  {
+    "id": "szkola-podstawowa-41-krybar-drewniana-8",
+    "nazwa": "Szkoła Podstawowa nr 41 „Krybar” przy ul. Drewnianej 8",
+    "name_en": "Primary School No. 41 “Krybar”, 8 Drewniana Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Drewniana 8",
+    "adres_historyczny": "posesja nr 2821 (ul. Drewniana)",
+    "lat": 52.2394,
+    "lon": 21.0256,
+    "lokalizacja": "dokladna",
+    "okres": "1906–dziś",
+    "istnieje": true,
+    "fakty": [
+      "6 września 1856 roku właścicielem posesji nr 2821 był Idzi Sikorski, który otrzymał pozwolenie na osztachetowanie gruntów od wału ochronnego Wisły do ul. Dobrej.",
+      "16 stycznia 1867 roku właścicielem posesji był Edward Przybylski, który nabył ją za 3900 srebrnych rubli.",
+      "W 1905 roku właścicielem był już Magistrat Miasta Warszawy, który przeznaczył teren na szkołę elementarną niższego szczebla; o budowę szkoły walczył dr Henryk Polak, higienista i założyciel Warszawskiego Towarzystwa Higienicznego.",
+      "W 1906 roku wybudowano gmach szkoły zaprojektowany przez architekta Henryka Juliana Gaya; początkowo wszystkie przedmioty wykładano po rosyjsku.",
+      "Budynek zajmuje południową część posesji zamkniętej ulicami Drewnianą, Dobrą i Leszczyńską; składa się z korpusu szkolnego, budynku mieszkalnego, aneksów sal i sali gimnastycznej.",
+      "W czasie I wojny szkoła przeszła w ręce polskich nauczycieli.",
+      "Od jesieni 1939 do jesieni 1941 roku Niemcy okupowali gmach, mieszcząc tu koszary; ponownie zajęli go od jesieni 1943 roku."
+    ],
+    "ciekawostki": [
+      "Od 1920 roku szkoła nosiła nazwy Szkoła Miejska nr 34 (męska), nr 37 (męska) i nr 41 (żeńska), a od 1930 roku Miejska Szkoła Powszechna nr 34, 37, 41 i 86."
+    ],
+    "summary_en": "The school building at 8 Drewniana Street was built in 1906 to a design by Henryk Julian Gay, at the initiative of Dr Henryk Polak, on a plot whose owners are recorded from 1856. It was occupied by the Germans in 1939–1941 and again from 1943.",
+    "ludzie": [
+      {"kto": "Henryk Polak", "rola": "higienista, założyciel Warszawskiego Towarzystwa Higienicznego, zabiegał o budowę szkoły", "wiki": null},
+      {"kto": "Henryk Julian Gay", "rola": "architekt gmachu szkoły z 1906 roku", "wiki": null},
+      {"kto": "Idzi Sikorski", "rola": "właściciel posesji nr 2821 w 1856 roku", "wiki": null},
+      {"kto": "Edward Przybylski", "rola": "właściciel posesji nr 2821 od 1867 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szkoła Miejska nr 41 (żeńska)"],
+    "zrodla": [{"tytul": "Wikipedia: Szkoła Podstawowa z Oddziałami Integracyjnymi nr 41 im. Żołnierzy Armii Krajowej Grupy Bojowej „Krybar” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szko%C5%82a_Podstawowa_z_Oddzia%C5%82ami_Integracyjnymi_nr_41_im._%C5%BBo%C5%82nierzy_Armii_Krajowej_Grupy_Bojowej_%E2%80%9EKrybar%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w kalendarium (1944 rok); fakty z lat 1944+ pominięte."
+  }
+]

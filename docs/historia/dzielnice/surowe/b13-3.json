@@ -1,0 +1,359 @@
+[
+  {
+    "id": "ulica-hoza",
+    "nazwa": "Ulica Hoża",
+    "name_en": "Hoża Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Hoża",
+    "adres_historyczny": "Victoriastrasse (okupacja)",
+    "lat": 52.2240171,
+    "lon": 21.0044652,
+    "lokalizacja": "przyblizona",
+    "okres": "1766–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze posesje przy ulicy wytyczono w 1766 roku; nazwa, nadana w 1770 roku, pochodzi od hożych (ładnych) ogrodów po obu jej stronach.",
+      "W 1790 roku według projektu Szymona Bogumiła Zuga wzniesiono pałacyk kupca Klemensa Bernauxa.",
+      "W 1861 roku Leopold Kronenberg uruchomił przy Hożej Fabrykę Wyrobów Tabacznych, nabywając jednocześnie dawny pałacyk Bernaux’a.",
+      "W 1875 roku ulicę przedłużono na odcinku od ul. Poznańskiej do ul. Chałubińskiego.",
+      "Gdy w 1895 roku przedsiębiorca Frąckiewicz nabył dawny pałac Kronenberga, na terenie jego sadu wytyczono ulicę Sadową, dziś ks. Ignacego Skorupki.",
+      "W okresie międzywojennym w kamienicy nr 30 mieścił się XIII komisariat Policji Państwowej.",
+      "Krótko po wojnie rozebrano kilkadziesiąt wypalonych kamienic.",
+      "W grudniu 2008 roku przy wejściu do Domu Prowincjonalnego Sióstr Franciszkanek Rodziny Maryi pod nr 53 uruchomiono pierwsze w Warszawie okno życia."
+    ],
+    "ciekawostki": [
+      "W nieistniejącej już kamienicy pod nr 11 urodził się 24 lutego 1885 roku Stanisław Ignacy Witkiewicz; tablicę umieszczono na frontowej ścianie obecnego Zespołu Szkół nr 68.",
+      "W biurowcu M76 (ul. Marszałkowska 76) nagrywany jest program Dzień Dobry TVN."
+    ],
+    "summary_en": "Hoża Street was laid out in 1766 among pleasant gardens, hence its name. Its 18th-century buildings were replaced by tenements in the late 19th century. The street was renamed Victoriastrasse during the occupation and much of it burned after the 1944 uprising.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "projektant pałacyku Bernaux'a (1790)", "wiki": null},
+      {"kto": "Klemens Bernaux", "rola": "kupiec, właściciel pałacyku (1790)", "wiki": null},
+      {"kto": "Leopold Kronenberg", "rola": "uruchomił fabrykę wyrobów tabacznych przy ulicy (1861)", "wiki": null},
+      {"kto": "Frąckiewicz", "rola": "przedsiębiorca, który w 1895 nabył dawny pałac Kronenberga", "wiki": null},
+      {"kto": "Stanisław Ignacy Witkiewicz", "rola": "urodził się w 1885 roku w kamienicy pod nr 11", "wiki": null}
+    ],
+    "dawne_nazwy": ["Victoriastrasse (okupacja)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Hoża w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ho%C5%BCa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-inflancka",
+    "nazwa": "Ulica Inflancka",
+    "name_en": "Inflancka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Inflancka",
+    "adres_historyczny": null,
+    "lat": 52.2544487,
+    "lon": 20.9907942,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1753–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona po roku 1753 jako droga dojazdowa do folwarku biskupa inflanckiego Antoniego Ostrowskiego; nazwę nadano urzędowo w 1770 roku.",
+      "W 1827 roku szpital żydowski przeniósł się z ul. Zielonej na Inflancką, do kamienicy Sorettiego.",
+      "W latach 1835–1838 szpital rozbudowano według projektu Henryka Marconiego; w 1902 roku przeniósł się do nowej siedziby przy ul. Kasprzaka.",
+      "W latach 1925–1926 przy ulicy pod nr 1 wzniesiono dom mieszkalny pracowników Państwowego Monopolu Spirytusowego, projektu Jana Rybickiego.",
+      "W 1938 roku rozpoczęto budowę zajezdni autobusowej obliczonej na 100 pojazdów.",
+      "W latach 1974–1978 przy ulicy wzniesiono osiedle Stawki, a także zespół basenów kąpielowych.",
+      "W miejscu zlikwidowanej w 2003 roku zajezdni „Inflancka” wzniesiono budynki mieszkalne oraz kompleks biurowy Gdański Business Center."
+    ],
+    "ciekawostki": [
+      "Plac Broni, wytyczony w okresie 1821–22 między ulicami Pokorną i Dziką, zlikwidowano wraz z niezabudowanym fragmentem Inflanckiej."
+    ],
+    "summary_en": "Inflancka Street began as a road to a bishop's estate and became home to a Jewish hospital in 1827. Its bus depot, begun in 1938, was destroyed in 1944 and closed in 2003. Stawki housing estate went up in 1974–1978.",
+    "ludzie": [
+      {"kto": "Antoni Ostrowski", "rola": "biskup inflancki, właściciel folwarku, od którego pochodzi nazwa ulicy", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projektant rozbudowy szpitala żydowskiego (1835–1838)", "wiki": null},
+      {"kto": "Jan Rybicki", "rola": "projektant domu pracowników Monopolu Spirytusowego", "wiki": null},
+      {"kto": "Stanisław Hempel", "rola": "projektant hali zajezdni (1938)", "wiki": null},
+      {"kto": "Roman Kalinowski", "rola": "projektant hali zajezdni (1938)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Inflancka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Inflancka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "zajezdnia-inflancka",
+    "nazwa": "Zajezdnia autobusowa Inflancka",
+    "name_en": "Inflancka bus depot",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Inflancka (dawny adres)",
+    "adres_historyczny": null,
+    "lat": 52.2544487,
+    "lon": 20.9907942,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–2003",
+    "istnieje": false,
+    "fakty": [
+      "W 1938 roku rozpoczęto budowę zajezdni autobusowej obliczonej na 100 pojazdów; nowoczesną halę zaprojektowali Stanisław Hempel i Roman Kalinowski.",
+      "W 1939 roku hala została zajęta przez Niemców na magazyn zbożowy; w 1944 roku Niemcy wysadzili ją w powietrze.",
+      "Zajezdnię odbudowano w nieco zmienionym, acz nawiązującym do przedwojennego kształcie.",
+      "Zajezdnię zlikwidowano w 2003 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A bus depot on Inflancka Street with a modern hall designed by Stanisław Hempel and Roman Kalinowski, begun in 1938. The Germans used it as a grain store and blew it up in 1944. It was rebuilt and closed in 2003.",
+    "ludzie": [
+      {"kto": "Stanisław Hempel", "rola": "projektant hali zajezdni", "wiki": null},
+      {"kto": "Roman Kalinowski", "rola": "projektant hali zajezdni", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Inflancka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Inflancka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Lokalizacja przybliżona do środka ulicy Inflanckiej."
+  },
+  {
+    "id": "ulica-jana-kilinskiego",
+    "nazwa": "Ulica Jana Kilińskiego",
+    "name_en": "Jan Kiliński Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jana Kilińskiego",
+    "adres_historyczny": "ul. Wąska (do 1917)",
+    "lat": 52.2496536,
+    "lon": 21.008472,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W połowie XVI wieku pojawiła się jako przesmyk w zabudowie, którym poprowadzono drewniane rury zaopatrujące Stare Miasto w wodę ze źródła przy ul. Długiej 32/34.",
+      "W latach 1787–89 pałac został przebudowany przez Jana Chrystiana Kamsetzera w stylu klasycystycznym dla marszałka nadwornego koronnego Kazimierza Raczyńskiego; od tego czasu zwany jest pałacem Raczyńskich.",
+      "W 1881 roku ulicą Wąską poprowadzono trasę tramwaju konnego.",
+      "W 1901 roku ulicę Wąską poszerzono kosztem nieczynnej piwiarni i dawnego dworu radziwiłłowskiego.",
+      "W 1917 roku ulicy nadano obecną nazwę Jana Kilińskiego, bohatera Insurekcji Warszawskiej, który niegdyś mieszkał w pobliżu.",
+      "24 stycznia 1944 roku w czasie łapanki hitlerowcy rozstrzelali przy Kilińskiego około 50 osób.",
+      "W dniach powstania w pałacu Raczyńskich od 10 sierpnia mieścił się szpital powstańczy; 2 września Niemcy wymordowali prawie 400 rannych i personel, a pałac podpalili.",
+      "Pałac odbudowano w latach 1948–1949, jednak rekonstrukcja wnętrz ciągnęła się do 1976 roku.",
+      "W listopadzie 2012 roku Rada Warszawy skorygowała nazwę ulicy na Jana Kilińskiego."
+    ],
+    "ciekawostki": [
+      "Pod nr 3 przy chodniku ustawiono w latach 50. kamień z tablicą z brązu upamiętniającą ofiary wybuchu niemieckiego czołgu z 13 sierpnia 1944 roku; drugi kamień pojawił się w pierwszej połowie lat 70."
+    ],
+    "summary_en": "Kiliński Street runs through Nowe Miasto, named in 1917 after the hero of the Warsaw Insurrection (Insurekcja Warszawska). The Raczyński Palace at its heart served as a hospital in 1944 until the Germans massacred its wounded. The palace was rebuilt in 1948–1949.",
+    "ludzie": [
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "architekt przebudowy pałacu Raczyńskich (1787–89)", "wiki": null},
+      {"kto": "Kazimierz Raczyński", "rola": "marszałek nadworny koronny, zleceniodawca przebudowy pałacu", "wiki": null},
+      {"kto": "Stanisław Trembecki", "rola": "poeta, mieszkał w zajeździe w pałacu w okresie stanisławowskim", "wiki": null},
+      {"kto": "Krystian Karolle", "rola": "jubiler, właściciel kamienic przy ulicy Długiej", "wiki": null},
+      {"kto": "Alfons Kropiwnicki", "rola": "autor projektu przebudowy oficyn pałacu (1854)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Wąska (do 1917)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Jana Kilińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Kili%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-jana-matejki",
+    "nazwa": "Ulica Jana Matejki",
+    "name_en": "Jan Matejko Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jana Matejki",
+    "adres_historyczny": "ul. Instytutowa (1863–1921; okupacja: Institutstrasse)",
+    "lat": 52.2249386,
+    "lon": 21.0253803,
+    "lokalizacja": "przyblizona",
+    "okres": "1863–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1863 roku na koszt bankiera Stanisława Lessera przez jego posesję rozparcelowywaną na działki budowlane.",
+      "Nazwano ją Instytutową od Instytutu Szlacheckiego przy ul. Wiejskiej, w którego budynkach w 1862 roku umieszczono Aleksandryjsko-Maryjski Instytut Wychowania Panien.",
+      "Po 1863 roku ulica została zabudowana kamienicami czynszowymi na 11 parcelach.",
+      "Zabudowę ulicy spalili Niemcy w 1944 roku, po upadku powstania warszawskiego; zniszczeniu uległy budynki nr 1 i 3.",
+      "W latach 1966–1967 po północnej stronie ulicy wzniesiono domy Nauczycielskiej Spółdzielni Budowlano-Mieszkaniowej.",
+      "W 1999 roku u zbiegu ulic Matejki i Wiejskiej odsłonięto pomnik Armii Krajowej i Polskiego Państwa Podziemnego.",
+      "W 2016 roku skwerowi u zbiegu ulic Matejki i Alej Ujazdowskich nadano nazwę skwer Ronalda Reagana."
+    ],
+    "ciekawostki": [
+      "Z uwagi na sąsiedztwo reprezentacyjnych Alej Ujazdowskich ulica uchodziła za ekskluzywną."
+    ],
+    "summary_en": "Matejko Street was laid out in 1863 on the estate of banker Stanisław Lesser and was named Instytutowa after a noble institute. It was burned by the Germans in 1944. Today it is home to the Sejm complex and several monuments.",
+    "ludzie": [
+      {"kto": "Stanisław Lesser", "rola": "bankier, na koszt którego wytyczono ulicę (1863)", "wiki": null},
+      {"kto": "Ronald Reagan", "rola": "patron skweru nazwanego w 2016 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Instytutowa (1863–1921)", "Institutstrasse (okupacja)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Jana Matejki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Matejki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-jana-i-jedrzeja-sniadeckich",
+    "nazwa": "Ulica Jana i Jędrzeja Śniadeckich",
+    "name_en": "Jan and Jędrzej Śniadecki Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jana i Jędrzeja Śniadeckich",
+    "adres_historyczny": "ul. Kaliksta (od 1880)",
+    "lat": 52.2215058,
+    "lon": 21.0156222,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została przeprowadzona około 1770 roku jako jedna z ulic założenia ujazdowskiego placów gwiaździstych.",
+      "Od 1784 roku prowadziła przez grunty uprawne Nowej Wsi; przez około 100 lat pozostawała niezabudowana.",
+      "W styczniu 1880 roku nadano jej nazwę Kaliksta, na cześć rosyjskiego prezydenta Warszawy Kaliksta Witkowskiego.",
+      "Obecną nazwę nadano 26 października 1916 roku; upamiętnia ona braci Jana Władysława i Jędrzeja Śniadeckich.",
+      "W 1908 roku ulicą przeprowadzono linię tramwaju elektrycznego.",
+      "5 października 1944 roku przez rozebraną barykadę na ul. Śniadeckich wyszedł do niewoli niemieckiej Naczelny Wódz Tadeusz Komorowski ps. „Bór”.",
+      "Po wojnie budowa Marszałkowskiej Dzielnicy Mieszkaniowej i wytyczenie placu Konstytucji zmieniły bieg początkowego odcinka ulicy.",
+      "W listopadzie 2012 roku Rada Warszawy skorygowała nazwę na Jana i Jędrzeja Śniadeckich."
+    ],
+    "ciekawostki": [
+      "Ulica jest jednokierunkowa; ruch jest możliwy wyłącznie w stronę placu Politechniki.",
+      "Relikty dawnej linii tramwajowej zostały odsłonięte i wkomponowane w brukowaną nawierzchnię ulicy."
+    ],
+    "summary_en": "A street in the Ujazdów star-shaped squares layout, laid out around 1770. Named Kaliksta in 1880 after a Russian mayor of Warsaw, it was renamed in 1916 after the Śniadecki brothers. Tadeusz Komorowski ('Bór') left captivity through its barricade in October 1944.",
+    "ludzie": [
+      {"kto": "Kalikst Witkowski", "rola": "rosyjski prezydent Warszawy, patron nazwy Kaliksta (1880)", "wiki": null},
+      {"kto": "Tadeusz Komorowski „Bór”", "rola": "Naczelny Wódz Polskich Sił Zbrojnych, wyszedł do niewoli 5.10.1944", "wiki": null},
+      {"kto": "Jan Władysław Śniadecki", "rola": "patron ulicy", "wiki": null},
+      {"kto": "Jędrzej Śniadecki", "rola": "patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kaliksta (od 1880)", "ul. Śniadeckich (1916–2012)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Jana i Jędrzeja Śniadeckich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_i_J%C4%99drzeja_%C5%9Aniadeckich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-jasna",
+    "nazwa": "Ulica Jasna",
+    "name_en": "Jasna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jasna",
+    "adres_historyczny": null,
+    "lat": 52.2355122,
+    "lon": 21.0109585,
+    "lokalizacja": "przyblizona",
+    "okres": "1757–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jasna powstała w 1757 roku jako jedna z ulic jurydyki Bielino; wytyczono ją na osi pałacu marszałka Franciszka Bielińskiego przy ul. Królewskiej.",
+      "Nazwę oficjalnie nadano w 1770 roku.",
+      "Przełom w rozwoju okolicy nastąpił po wybudowaniu w latach 1844–45 dworca kolei Warszawsko-Wiedeńskiej.",
+      "W latach 1896–1901 wyburzono dawne zabudowania Szpitala Dzieciątka Jezus i wytyczono nowe ulice, w tym przedłużenie Jasnej do ul. Zgoda.",
+      "Gmach Filharmonii Warszawskiej, projektu Karola Kozłowskiego, ukończono w 1901 roku.",
+      "Naprzeciwko, pod nr 1, w latach 1912–17 wzniesiono według projektu Jana Heuricha wczesnomodernistyczny gmach Banku Towarzystw Spółdzielczych, znany jako „Dom pod Orłami”.",
+      "W 1913 roku ukończono budowę Teatru Nowoczesnego pod nr 3, według projektu Czesława Przybylskiego.",
+      "W 1939 roku całkowicie spłonął gmach Filharmonii Warszawskiej, a narożna kamienica pod nr 8 została trafiona bombą.",
+      "Od 1 sierpnia do 4 września 1944 roku w hotelu „Victoria” kwaterował sztab komendanta Okręgu Warszawskiego AK płk. Antoniego Chruściela, ps. „Monter”."
+    ],
+    "ciekawostki": [
+      "Pod nr 26 do 1866 roku wzniesiono hotel „Victoria”; około 1893 roku jego łazienki ozdobiły malowidła olejne Wojciecha Gersona."
+    ],
+    "summary_en": "Jasna Street was founded in 1757 in the Bielino jurisdiction and became a hub of hotels and tenements after the Warsaw-Vienna railway station opened in 1844–45. The Philharmonic (1901) and the Dom pod Orłami bank building (1912–17) anchored it. Much of it burned in 1939 and 1944.",
+    "ludzie": [
+      {"kto": "Franciszek Bieliński", "rola": "marszałek, którego pałac wyznaczał oś ulicy", "wiki": null},
+      {"kto": "Karol Kozłowski", "rola": "autor projektu Filharmonii Warszawskiej i kamienicy pod nr 2", "wiki": null},
+      {"kto": "Jan Heurich", "rola": "autor projektu Banku Towarzystw Spółdzielczych pod nr 1", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "autor projektu Teatru Nowoczesnego pod nr 3", "wiki": null},
+      {"kto": "Antoni Chruściel „Monter”", "rola": "płk, komendant Okręgu Warszawskiego AK; sztab w hotelu „Victoria” w 1944", "wiki": null},
+      {"kto": "Wojciech Gerson", "rola": "autor malowideł w łazienkach hotelu „Victoria”", "wiki": null}
+    ],
+    "dawne_nazwy": ["jurydyka Bielino (XVIII w.)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Jasna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jasna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu. Filharmonia i Dom pod Orłami mają osobne rekordy."
+  },
+  {
+    "id": "dom-pod-orlami",
+    "nazwa": "Dom pod Orłami (Bank Towarzystw Spółdzielczych)",
+    "name_en": "Dom pod Orłami (Cooperative Banks Building)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jasna 1",
+    "adres_historyczny": null,
+    "lat": 52.2355122,
+    "lon": 21.0109585,
+    "lokalizacja": "przyblizona",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1912–17 wzniesiono według projektu Jana Heuricha wczesnomodernistyczny gmach Banku Towarzystw Spółdzielczych pod nr 1 przy ul. Jasnej.",
+      "Budynek jest znany też jako „Dom pod Orłami”, jedno z najwybitniejszych dzieł architektury polskiej początków XX wieku.",
+      "Artykuł o ulicy Gabriela Piotra Boduena nazywa ten gmach pozostałą historyczną zabudową tamtej ulicy, przypisaną numeracji ulicy Jasnej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Cooperative Banks Building at Jasna 1, known as Dom pod Orłami, was designed by Jan Heurich and built in 1912–17. It is one of the outstanding works of early 20th-century Polish architecture.",
+    "ludzie": [
+      {"kto": "Jan Heurich", "rola": "architekt gmachu (1912–17)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Jasna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jasna_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł o ulicy Boduena przypisuje ten gmach numeracji ul. Jasnej; artykuł o ulicy Jasnej podaje nr 1. Współrzędne to środek ulicy Jasnej."
+  },
+  {
+    "id": "ulica-jezuicka",
+    "nazwa": "Ulica Jezuicka",
+    "name_en": "Jezuicka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jezuicka",
+    "adres_historyczny": "ul. Świętojańska (przed XVII w.)",
+    "lat": 52.2494509,
+    "lon": 21.0132953,
+    "lokalizacja": "przyblizona",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona podczas lokacji miasta; pierwotnie nosiła nazwę Świętojańskiej.",
+      "W XV wieku znajdowało się na niej dziewięć posesji; pierwsze informacje o kamienicach pochodzą z 1445 i 1462 roku.",
+      "Od 1597 roku i po pożarze w 1607 roku, który zniszczył większość zabudowy, jezuici zaczęli przejmować posesje przy ulicy.",
+      "Po zachodniej stronie ulicy pod nr 1/3 powstało kolegium jezuitów w Warszawie (druga połowa XVII wieku), a po wschodniej szkoła (1676).",
+      "W 1773 roku, po kasacie zakonu, nieruchomości przeszły w ręce Komisji Edukacji Narodowej.",
+      "W latach 1872–1939 w budynku kolegium jezuickiego znajdowało się Archiwum Akt Dawnych.",
+      "Budynki spalone w 1944 roku zostały zrekonstruowane w latach 1953–1959.",
+      "W 1983 roku na komisariacie milicji pod nr 1/3 doszło do śmiertelnego pobicia Grzegorza Przemyka."
+    ],
+    "ciekawostki": [
+      "Od 1725 roku na posesji nr 4 działało Gimnazjum Zaluscianum."
+    ],
+    "summary_en": "Jezuicka Street in the Old Town took its name in the 17th century from the Jesuit church and college. After the order's suppression in 1773 the buildings passed to the Education Commission, and they were rebuilt after 1944. In 1983 Grzegorz Przemyk was beaten to death in a police station on the street.",
+    "ludzie": [
+      {"kto": "Grzegorz Przemyk", "rola": "ofiara śmiertelnego pobicia na komisariacie milicji w 1983 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Świętojańska (przed XVII w.)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Jezuicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jezuicka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-juliana-bartoszewicza",
+    "nazwa": "Ulica Juliana Bartoszewicza",
+    "name_en": "Julian Bartoszewicz Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Juliana Bartoszewicza",
+    "adres_historyczny": "fragment ul. Sewerynów (przy ul. Kopernika)",
+    "lat": 52.2375459,
+    "lon": 21.0215718,
+    "lokalizacja": "przyblizona",
+    "okres": "1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1937 roku na miejscu wewnętrznej alejki zlikwidowanego targowiska zwanego Sewerynowem.",
+      "Sewerynów powstał w 1847 roku z inicjatywy Seweryna Uruskiego, jednego z właścicieli Dynasów.",
+      "Projekt przeprowadzenia alei Na Skarpie zakładał, że ulica będzie jej końcowym odcinkiem; stojące tu domy miały nawet adresy al. Na Skarpie 65, 67 i 69.",
+      "Ostatecznie powstał tylko fragment alei Na Skarpie w okolicy gmachu Sejmu i ul. Frascati.",
+      "Końcowy odcinek alei nosi od 1939 roku nazwę upamiętniającą Juliana Bartoszewicza.",
+      "Ulicę zabudowano luksusowymi, półmodernistycznymi kamienicami o wysokości siedmiu pięter."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Julian Bartoszewicz Street was laid out in 1937 on the site of the Sewerynów market, and its end section was named after Bartoszewicz in 1939. A 1930s plan for Na Skarpie Avenue was to end here, but only a fragment of the avenue was built; the street was lined with seven-storey buildings.",
+    "ludzie": [
+      {"kto": "Seweryn Uruski", "rola": "inicjator Sewerynowa (1847), jeden z właścicieli Dynasów", "wiki": null}
+    ],
+    "dawne_nazwy": ["fragment ul. Sewerynów (przy ul. Kopernika)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Juliana Bartoszewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Juliana_Bartoszewicza_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  }
+]

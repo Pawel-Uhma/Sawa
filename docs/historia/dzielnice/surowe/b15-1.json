@@ -1,0 +1,238 @@
+[
+  {
+    "id": "przyrynek",
+    "nazwa": "ul. Przyrynek",
+    "name_en": "Przyrynek Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Przyrynek",
+    "adres_historyczny": "ul. Morgowska (w XVI w.), ul. Panny Marii (epizodycznie w połowie XVII w.)",
+    "lat": 52.2547211,
+    "lon": 21.0081638,
+    "lokalizacja": "przyblizona",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą wiodącą wzdłuż ogrodów mieszczańskich zwanych Morgami, stąd w XVI wieku nazywana Morgowską.",
+      "Od początków XV wieku przy ulicy rozciągała się działka należąca do kościoła Nawiedzenia Najświętszej Marii Panny, wybudowanego w roku 1411; znajdowała się na niej szkoła i szpital.",
+      "W latach 1621–24 usypano Wał Zygmuntowski, który odciął Przyrynek od Nowej Warszawy.",
+      "W 1791 roku ulicę wybrukowano.",
+      "W 1832 i 1851 roku ulica została dwukrotnie skrócona w związku z poszerzeniem esplanady Cytadeli Warszawskiej.",
+      "W latach 1925–1926 na osi ulicy wzniesiono gmach Polskiej Wytwórni Papierów Wartościowych według projektu Antoniego Dygata.",
+      "Zabudowa ulicy została całkowicie zniszczona w roku 1944.",
+      "W 1958 roku na terenie posesji Przyrynek 4 przebito nową ulicę Burmistrzowską."
+    ],
+    "ciekawostki": [
+      "W latach 50. XX wieku u zbiegu z ulicą Kościelną, przy murze kościoła, ustawiono tablicę Tchorka upamiętniającą mord na ludności cywilnej w sierpniu 1944."
+    ],
+    "summary_en": "Przyrynek is a street in the Nowe Miasto area of Warsaw, once a road along the burghers' gardens called Morgi. The street was cut short in the 19th century when the Citadel esplanade was widened, and its buildings were destroyed in 1944.",
+    "ludzie": [],
+    "dawne_nazwy": ["Morgowska (XVI w.)", "ul. Panny Marii (epizodycznie w połowie XVII w.)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Przyrynek w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Przyrynek_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka wg nagłówka artykułu."
+  },
+  {
+    "id": "prozna",
+    "nazwa": "ul. Próżna",
+    "name_en": "Próżna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Próżna",
+    "adres_historyczny": "ul. Ogrodowa (pierwotna nazwa)",
+    "lat": 52.2364669,
+    "lon": 21.0050841,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na początku XVIII wieku była to droga, a od 1757 roku ulica jurydyki Bielino, prowadząca od rynku (dziś plac Jana Henryka Dąbrowskiego) do ulicy Zielnej.",
+      "Pierwotna nazwa to ulica Ogrodowa; obecną nazwę, wynikającą z braku zabudowy, nadano w 1770 roku.",
+      "W 1880 roku przebito ulicę do placu Grzybowskiego po przejęciu nieruchomości przez Abrama i Zofię Idelsohnów; projekt wsparł prezydent miasta Sokrat Starynkiewicz.",
+      "W kamienicy pod nr 10 amerykańskie towarzystwo International Bell Telephone, które w listopadzie 1881 roku otrzymało koncesję na sieć telefoniczną, zainstalowało pierwszą w mieście centralę telefoniczną (800 numerów).",
+      "Pod koniec XIX wieku przeważała wśród mieszkańców ludność żydowska; ulica miała charakter handlowy.",
+      "W listopadzie 1940 zachodnia część ulicy znalazła się w granicach warszawskiego getta; w marcu 1941 została z niego wyłączona.",
+      "Podczas powstania warszawskiego pomiędzy kamienicami nr 9 i 14 wzniesiono barykadę zamykającą wylot ulicy na plac Grzybowski; w 1944 roku zniszczona została większość zabudowy środkowej i wschodniej części.",
+      "Cztery kamienice (nr 7, 9, 12 i 14) przetrwały zagładę getta; w 1987 roku wpisano je do rejestru zabytków.",
+      "W 2014 roku ulica została wyremontowana i w listopadzie tego roku zamieniona w deptak."
+    ],
+    "ciekawostki": [
+      "W latach 2008–2014 w oknach i na elewacjach kamienic wystawiano fotografie polskich Żydów ze zbiorów Fundacji Shalom.",
+      "W 2011 roku w czasie remontu kamienic nr 7 i 9 znaleziono 40-tonowy głaz narzutowy, przyniesiony przez lodowiec najprawdopodobniej z okolic Uppsali w Szwecji.",
+      "Ulicę można zobaczyć w scenach komedii Miś (1981) Stanisława Barei."
+    ],
+    "summary_en": "Próżna is a Śródmieście street that was once a route through gardens and later a commercial street with a largely Jewish population. Several tenements survived the Warsaw Ghetto and were listed as monuments in 1987, and the street became a pedestrian zone in 2014.",
+    "ludzie": [
+      {"kto": "Abram i Zofia Idelsohnowie", "rola": "przejęli nieruchomość i umożliwili przebicie ulicy do placu Grzybowskiego (1880)", "wiki": null},
+      {"kto": "Sokrat Starynkiewicz", "rola": "prezydent miasta, wspierał projekt przebicia ulicy", "wiki": null},
+      {"kto": "Filip Merynos", "rola": "kierował organizacją przestępczą, której przykrywką była Spółdzielnia Pracy „Woreczek” przy ulicy (opisana przez Leopolda Tyrmanda w powieści Zły)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica Ogrodowa"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Próżna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pr%C3%B3%C5%BCna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka wg nagłówka artykułu."
+  },
+  {
+    "id": "pulawska",
+    "nazwa": "ul. Puławska",
+    "name_en": "Puławska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Puławska",
+    "adres_historyczny": "ul. Nowoaleksandryjska (przed październikiem 1916)",
+    "lat": 52.2126706,
+    "lon": 21.0207747,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od miasta Puławy; ulica była wylotówką w kierunku Puław i Lublina.",
+      "Nazwę Nowoaleksandryjska zmieniono na obecną w październiku 1916 roku.",
+      "W latach 1880–1881 pod nr 13/15 wzniesiono zajezdnię tramwajową „Mokotów”; w 1955 roku została zamknięta.",
+      "W 1898 roku uruchomiono kolejkę grójecką biegnącą wzdłuż ulicy; w 1935 roku etapami usuwano jej tory.",
+      "W 1983 roku uruchomiono komunikację trolejbusową na trasie Dworzec Południowy–Piaseczno; zlikwidowano ją w 1995 roku.",
+      "W 2022 roku, na odcinku od granicy miasta do ul. rtm. Pileckiego, wyznaczono ok. 5-kilometrowe buspasy w obu kierunkach.",
+      "Ulica jest drugą po Wale Miedzeszyńskim najdłuższą ulicą w granicach Warszawy (12,25 km w granicach administracyjnych miasta)."
+    ],
+    "ciekawostki": [
+      "W okresie okupacji niemieckiej ulicy nadano niemiecką nazwę Feldherrnallee.",
+      "Przy ulicy znajduje się Dom Wedla (nr 28), a przed Centrum Finansowym Puławska tablica Tchorka upamiętniająca publiczną egzekucję 112 więźniów Pawiaka (nr 15)."
+    ],
+    "summary_en": "Puławska runs from Plac Unii Lubelskiej in the Śródmieście district south towards the city boundary, where it continues into Piaseczno. It was a historic road toward Puławy and once carried a tram depot, a narrow-gauge railway and a trolleybus line.",
+    "ludzie": [],
+    "dawne_nazwy": ["Nowoaleksandryjska", "Feldherrnallee (okupacja niemiecka)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Puławska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pu%C5%82awska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje całą ulicę (przez Śródmieście Południowe, Mokotów i Ursynów); współrzędne to środek odcinka wg nagłówka artykułu, a nie środek całej ulicy. Dzielnica wg nagłówka DZIELNICE."
+  },
+  {
+    "id": "radna",
+    "nazwa": "ul. Radna",
+    "name_en": "Radna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Radna",
+    "adres_historyczny": null,
+    "lat": 52.2409002,
+    "lon": 21.0239211,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1768–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona ok. 1768 roku jako jedna z ulic królewskiej jurydyki Stanisławów, założonej przez Stanisława Augusta Poniatowskiego.",
+      "Nazwę nadano w 1770 roku; nawiązywała do ratusza i mieszkań radnych jurydyki.",
+      "Według delineacji Hiża z 1771 roku ulica zaczynała się od Wisły.",
+      "W czasie powstania warszawskiego powstańcy zagrodzili barykadą wylot ulicy od strony ulicy Dobrej.",
+      "Zabudowa została w większości zniszczona w czasie II wojny światowej; zachowało się pięć przedwojennych budynków.",
+      "W latach 1959–1966 między ulicami Browarną, Lipową, Dobrą i Leszczyńską powstało osiedle Radna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Radna is a short Śródmieście street laid out in the 1760s in the royal jurisdiction of Stanisławów, named after the councillors who lived there. Most of its buildings were destroyed in the Second World War, and a housing estate of the same name was built in the 1960s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Radna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Radna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki; przed 1939 rokiem ulica zaczynała się między ulicami Wybrzeże Kościuszkowskie i Dobrą."
+  },
+  {
+    "id": "rajcow",
+    "nazwa": "ul. Rajców",
+    "name_en": "Rajców Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Rajców",
+    "adres_historyczny": null,
+    "lat": 52.255193,
+    "lon": 21.0088989,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica o długości ok. 110 metrów została wytyczona ok. 1955 roku.",
+      "Nazwa pochodzi od tytułu urzędników rady miejskiej, utworzonej w XIV wieku dla Starej Warszawy i na początku XV wieku dla Nowej.",
+      "Po obu stronach ulicy ciągnie się szeregowa zabudowa jednorodzinna z lat 70. XX wieku, powstała w ramach spółdzielni mieszkaniowej.",
+      "Wśród członków spółdzielni byli gen. bryg. Władysław Hermaszewski i płk Ryszard Kukliński (do 1981 roku mieszkał pod numerem 11).",
+      "Pod numerem 10, w willi zaprojektowanej przez Zygmunta Stępińskiego, znana jako „Ochabówka”, znajduje się siedziba Pol-Mot Holding."
+    ],
+    "ciekawostki": [
+      "W 1971 roku willa pod numerem 10 pojawiła się w filmie komediowym „Poszukiwany, poszukiwana”."
+    ],
+    "summary_en": "Rajców is a short street in Warsaw's Nowe Miasto, named after the councillors of the city council. Its 1970s terraced houses were built by a housing cooperative whose members included two Polish officers, and the villa at number 10 appeared in a 1971 comedy.",
+    "ludzie": [
+      {"kto": "Władysław Hermaszewski", "rola": "generał brygady, członek spółdzielni mieszkaniowej przy ulicy", "wiki": null},
+      {"kto": "Ryszard Kukliński", "rola": "pułkownik, członek spółdzielni mieszkaniowej przy ulicy; do 1981 roku mieszkał pod numerem 11", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projektant willi pod numerem 10 („Ochabówka”)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Rajców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Rajc%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "romana-sanguszki",
+    "nazwa": "ul. Romana Sanguszki",
+    "name_en": "Roman Sanguszko Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Romana Sanguszki",
+    "adres_historyczny": "fragment ul. Konwiktorskiej (do 1930)",
+    "lat": 52.2566763,
+    "lon": 21.0083964,
+    "lokalizacja": "przyblizona",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1919 roku na dawnych terenach esplanady Cytadeli Warszawskiej i Fortu Władimira, jako fragment ul. Konwiktorskiej.",
+      "W 1925 roku wokół fortu utworzono park Romualda Traugutta, po częściowym splantowaniu jego ziemnych umocnień.",
+      "W latach 1926–1929 przy ulicy wybudowano funkcjonalistyczny gmach Polskiej Wytwórni Papierów Wartościowych według projektu Antoniego Dygata.",
+      "Nazwa, upamiętniająca uczestnika powstania listopadowego Romana Sanguszkę, została nadana w 1930 roku.",
+      "W 2010 roku w pobliżu skrzyżowania z Wisłostradą odsłonięto instalację „Rozdroże 2010” – cztery rzeźby Magdaleny Abakanowicz."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Roman Sanguszko Street was laid out in 1919 across the former Citadel esplanade and was named in 1930 after a November Uprising participant. It runs past the Traugutt Park, the Polish Security Printing Works building and the Abakanowicz sculptures unveiled in 2010.",
+    "ludzie": [
+      {"kto": "Roman Sanguszko", "rola": "uczestnik powstania listopadowego, patron ulicy", "wiki": null},
+      {"kto": "Antoni Dygat", "rola": "autor projektu gmachu Polskiej Wytwórni Papierów Wartościowych", "wiki": null},
+      {"kto": "Magdalena Abakanowicz", "rola": "autorka instalacji „Rozdroże 2010” (cztery rzeźby)", "wiki": null}
+    ],
+    "dawne_nazwy": ["fragment ul. Konwiktorskiej"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Romana Sanguszki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Romana_Sanguszki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rozbrat",
+    "nazwa": "ul. Rozbrat",
+    "name_en": "Rozbrat Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Rozbrat",
+    "adres_historyczny": null,
+    "lat": 52.2222373,
+    "lon": 21.0355421,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica stanowiła odgałęzienie biegnącej wąwozem ulicy Książęcej i łączyła rezydencję Kazimierza Poniatowskiego z Łazienkami, należącymi do jego młodszego brata Stanisława Augusta.",
+      "Pierwsze budynki powstały w połowie XVIII wieku, a obecną nazwę nadano w 1770 roku.",
+      "W latach 1936–1939 pod nr 44a mieściła się Wyższa Szkoła Dziennikarska, przeniesiona z budynku Gimnazjum im. Mikołaja Reja przy placu Małachowskiego.",
+      "W 1940 roku w budynku II Miejskiego Gimnazjum Żeńskiego im. Jana Kochanowskiego (nr 26) otwarto dwie niemieckie szkoły powszechne.",
+      "24 września 1943 roku na rogu ulic Dmochowskiego i Rozbrat żołnierze drugiego plutonu Agatu dokonali udanego zamachu na zastępcę komendanta Gęsiówki SS-Hauptscharführera Augusta Kretschmanna.",
+      "Do 2012 roku w budynku dawnej Wyższej Szkoły Dziennikarskiej mieściła się Rada Krajowa SLD; w 2011 roku kompleks trzech budynków sprzedano spółce deweloperskiej, a budynek WSD zburzono w 2023 roku.",
+      "W 1954–1955 w tym budynku działała Centralna Szkoła Partyjna PZPR."
+    ],
+    "ciekawostki": [
+      "W komedii Stanisława Barei „Mąż swojej żony” przy ulicy Rozbrat 55 mieszkają kompozytor Michał Karcz i jego żona, mistrzyni lekkoatletyczna Jadwiga Fołtasiówna."
+    ],
+    "summary_en": "Rozbrat is a Śródmieście street that linked a Poniatowski residence with the Łazienki Palace and was named in 1770. During the occupation it saw a successful Agat resistance attack on an SS official, and its former Journalism School building was demolished in 2023.",
+    "ludzie": [
+      {"kto": "Kazimierz Poniatowski", "rola": "właściciel rezydencji, z którą łączyła się ulica", "wiki": null},
+      {"kto": "August Kretschmann", "rola": "zastępca komendanta Gęsiówki SS, zabity w zamachu 24.09.1943 na rogu z ul. Dmochowskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Rozbrat w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Rozbrat_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł mówi o „udanym zamachu” bez opisu skutków; zapisano wprost z tekstu."
+  }
+]

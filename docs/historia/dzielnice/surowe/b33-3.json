@@ -1,0 +1,190 @@
+[
+  {
+    "id": "teatr-letni-w-warszawie",
+    "nazwa": "Teatr Letni w Warszawie",
+    "name_en": "Teatr Letni (Summer Theatre) in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Ogród Saski",
+    "lat": 52.2417243,
+    "lon": 21.0055108,
+    "lokalizacja": "dokladna",
+    "okres": "1870–1939",
+    "istnieje": false,
+    "fakty": [
+      "Drewniany budynek teatru zbudowano w 1870 roku w Ogrodzie Saskim według projektu Aleksandra Zabierzowskiego w związku z przebudową Teatru Wielkiego.",
+      "Teatr mieścił 940 widzów; jego scenę wymiarowo dopasowano do sceny Teatru Wielkiego, co pozwalało używać tych samych dekoracji.",
+      "W 1890 roku budynek przystosowano do użytku całorocznego, a widownię powiększono do ok. 1000 miejsc.",
+      "Między 31 marca a 2 kwietnia 1902 roku w budynku odbyły się pokazy polskich filmów Towarzystwa Udziałowego Pleograf Kazimierza Prószyńskiego, z dokumentami z życia Warszawy.",
+      "Do 1915 roku budynek był siedzibą zespołu farsy Teatru Małego; w latach 1921–1923 mieścił zespół dramatyczny Teatru Rozmaitości.",
+      "Budynek teatru spłonął we wrześniu 1939 roku.",
+      "W 2014 roku w Parku Miniatur Województwa Mazowieckiego powstała replika budynku teatru."
+    ],
+    "ciekawostki": [
+      "Podczas przedstawień posterunki pełniła w nim Warszawska Straż Ogniowa.",
+      "Teatr cieszył się popularnością, ale krytykowano go m.in. za przeciągi."
+    ],
+    "summary_en": "The Summer Theatre was a wooden theatre built in 1870 in the Saxon Garden in Warsaw, designed by Aleksander Zabierzowski. It seated 940 and later about 1000 people, and it burned down in September 1939. A replica stands in the Mazovian Miniature Park since 2014.",
+    "ludzie": [
+      {"kto": "Aleksander Zabierzowski", "rola": "autor projektu drewnianego budynku (1870)", "wiki": null},
+      {"kto": "Kazimierz Prószyński", "rola": "wynalazca; jego Pleograf zorganizował pokazy filmów w budynku w 1902 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Letni w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Letni_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "teatr-maly-w-warszawie-1973-2009",
+    "nazwa": "Teatr Mały w Warszawie (1973–2009)",
+    "name_en": "Teatr Mały (Small Theatre), 1973–2009",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska 104/122",
+    "lat": 52.23214,
+    "lon": 21.008648,
+    "lokalizacja": "dokladna",
+    "okres": "1973–2009",
+    "istnieje": false,
+    "fakty": [
+      "Teatr Mały, scena kameralna Teatru Narodowego, działał w latach 1973–2009 w podziemiach kina „Relax”.",
+      "Wejście prowadziło przez Dom Towarowy „Junior” przy ul. Marszałkowskiej 104/122, w którym znajdowała się kasa.",
+      "Scena miała 12×4 metry i wysokość 340 cm; na widowni mieściło się 216–300 osób.",
+      "Teatr zainaugurował działalność 11 stycznia 1973 roku spektaklem Antygona Sofoklesa.",
+      "Po pożarze Teatru Narodowego w 1985 roku scena Teatru Małego pełniła funkcję sceny głównej.",
+      "W latach 1992–1993 salę bezpłatnie użyczono Teatrowi Współczesnemu.",
+      "Od 1994 roku doradcą artystycznym ds. Teatru Małego był Paweł Konic; w ciągu dziesięciu lat jego dyrekcji pokazano ponad 1200 zaproszonych spektakli."
+    ],
+    "ciekawostki": [
+      "Na scenie teatru w Antygonie, pierwszym dyplomowym przedstawieniu warszawskiej PWST, debiutowali m.in. Anna Chodakowska i Wiktor Zborowski; debiutowała tu też Krystyna Janda."
+    ],
+    "summary_en": "Teatr Mały was the chamber stage of the National Theatre. It operated from 1973 to 2009 in the basement of the Relax cinema on Marszałkowska Street in Warsaw and opened on 11 January 1973 with Sophocles' Antigone.",
+    "ludzie": [
+      {"kto": "Adam Hanuszkiewicz", "rola": "dyrektor Teatru Narodowego w czasie powstania Teatru Małego", "wiki": null},
+      {"kto": "Zbigniew Wacławek", "rola": "architekt projektu teatru", "wiki": null},
+      {"kto": "Zbigniew Gąsior", "rola": "współprojektant teatru", "wiki": null},
+      {"kto": "Paweł Konic", "rola": "doradca artystyczny ds. Teatru Małego od 1994 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Mały w Warszawie (1973–2009)", "url": "https://pl.wikipedia.org/wiki/Teatr_Ma%C5%82y_w_Warszawie_%281973%E2%80%932009%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-dom-akcji-katolickiej-nowogrodzka-49",
+    "nazwa": "Budynek przy ul. Nowogrodzkiej 49 (Teatr Muzyczny Roma)",
+    "name_en": "Building at 49 Nowogrodzka Street (Roma Musical Theatre)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowogrodzka 49",
+    "adres_historyczny": null,
+    "lat": 52.2275,
+    "lon": 21.0078,
+    "lokalizacja": "dokladna",
+    "okres": "lata 30. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek Domu Akcji Katolickiej im. Piusa XI przy ul. Nowogrodzkiej 49 powstał w latach 30. XX wieku i przetrwał II wojnę światową bez większych zniszczeń.",
+      "Po 1945 roku głównym użytkownikiem budynku była Opera Warszawska, która działała tu do 1965 roku, do czasu ukończenia odbudowy gmachu Teatru Wielkiego.",
+      "Następnie w budynku działała Operetka Warszawska; w latach 90. XX wieku budynek odzyskał kościół.",
+      "W 1994 roku Bogusław Kaczyński przemianował instytucję na Teatr Muzyczny Roma.",
+      "Duża Scena ma 999 miejsc, a kameralna Nova Scena 150 miejsc, z wejściem od ul. św. Barbary 12.",
+      "Nova Scena powstała w grudniu 2009 roku w dawnej sali prób orkiestry, w przyziemiu od strony ul. św. Barbary.",
+      "Trzy najdłużej grane tytuły to Upiór w operze (572 przedstawienia), Mamma Mia! (562) i Piloci (427)."
+    ],
+    "ciekawostki": [
+      "Od 2008 roku teatr stosuje tzw. system „westendowy”: na Dużej Scenie gra się jeden tytuł siedem razy w tygodniu, tak długo, jak utrzymuje się zainteresowanie widzów."
+    ],
+    "summary_en": "The Roma Musical Theatre occupies a 1930s Catholic Action house at Nowogrodzka 49 in Warsaw. After 1945 it housed the Warsaw Opera until 1965 and then the Warsaw Operetta, before the Church reclaimed the building in the 1990s. Since 1994 it has been a musical theatre with a 999-seat main stage and a 150-seat Nova Scena.",
+    "ludzie": [
+      {"kto": "Bogusław Kaczyński", "rola": "dyrektor 1994–1998, przemianował operetkę na Teatr Muzyczny Roma", "wiki": null},
+      {"kto": "Wojciech Kępczyński", "rola": "dyrektor od 1998", "wiki": null}
+    ],
+    "dawne_nazwy": ["Operetka Warszawska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Muzyczny Roma", "url": "https://pl.wikipedia.org/wiki/Teatr_Muzyczny_Roma"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord opisuje budynek, w którym działa teatr; Nova Scena jest ujęta w tym samym rekordzie."
+  },
+  {
+    "id": "gmach-teatru-nowosci-hipoteczna",
+    "nazwa": "Gmach Teatru Nowości przy ul. Hipotecznej",
+    "name_en": "Teatr Nowości building on Hipoteczna Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Hipoteczna",
+    "lat": 52.246638888,
+    "lon": 21.005330555,
+    "lokalizacja": "dokladna",
+    "okres": "1900–1932",
+    "istnieje": true,
+    "fakty": [
+      "Gmach Teatru Nowości powstał w 1900 roku przy ul. Hipotecznej na miejscu sklepów kolonialnych i teatrzyku Eldorado; zaprojektował go Feliks Stępiński.",
+      "Warszawskie Teatry Rządowe wydzierżawiły budynek zespołowi operetki i farsy pod dyrekcją Ludwika Śliwińskiego, który dotąd mieścił się w Teatrze Małym.",
+      "Nowy gmach mieścił 1300 widzów, miał ogrzewanie parowe, elektryczne oświetlenie i wentylację, a scena miała 400 m².",
+      "Teatr otwarto 5 stycznia 1901 roku komedią Fredry Gwałtu, co się dzieje!",
+      "W latach 1901–1921 Teatr Nowości był najważniejszą sceną operetkową na ziemiach polskich.",
+      "W pierwszym roku działalności w nowym gmachu zespół wystawił 6 premier i wznowień."
+    ],
+    "ciekawostki": [
+      "Ludwik Śliwiński, dyrektor i główny reżyser, dostosowywał libretta do polskich warunków, dodając kuplety i aluzje do bieżącej sytuacji."
+    ],
+    "summary_en": "The Teatr Nowości building on Hipoteczna Street was built in 1900 on the site of colonial shops and the Eldorado theatre, designed by Feliks Stępiński. It opened on 5 January 1901 and was the leading operetta stage in Polish lands until 1921.",
+    "ludzie": [
+      {"kto": "Ludwik Śliwiński", "rola": "dyrektor i główny reżyser teatru, 1901–1921", "wiki": null},
+      {"kto": "Feliks Stępiński", "rola": "architekt gmachu (1900)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Nowości w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Nowo%C5%9Bci_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł urwany w paczce w połowie opisu roku 1902; fakty zebrano tylko do tego miejsca. Stan budynku dziś nie wynika z artykułu."
+  },
+  {
+    "id": "teatr-nowy-marszalkowska-125",
+    "nazwa": "Teatr Nowy (ul. Marszałkowska 125)",
+    "name_en": "Teatr Nowy (Marszałkowska 125)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska 125",
+    "lat": 52.234166666,
+    "lon": 21.008888888,
+    "lokalizacja": "dokladna",
+    "okres": "1921–1926",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Nowy, teatr operetki, uruchomiono 21 października 1921 roku w przebudowanej sali teatru Czarny Kot przy ul. Marszałkowskiej 125.",
+      "Teatr powstał po zakończeniu działalności Teatru Nowości, gdy Rada Miejska Warszawy wydała zgodę na otwieranie nowych teatrów operetkowych.",
+      "Właściciel teatru kabaretowo-rewiowego Czarny Kot, Norbert Hochmann, zmienił nazwę i repertuar teatru.",
+      "W kwietniu 1923 roku wystawiono w tym gmachu ostatnią operetkę, Zemstę nietoperza Johanna Straussa.",
+      "24 maja 1923 roku zespół przeniósł się na letnią scenę w Teatrze Wodewil.",
+      "We wrześniu 1926 roku budynek zajął teatr rewiowo-kabaretowy Perskie Oko."
+    ],
+    "ciekawostki": [
+      "Na otwarcie teatru wystawiono operetkę Dziewczę z Holandii Imrego Kálmána."
+    ],
+    "summary_en": "Teatr Nowy was an operetta theatre that opened on 21 October 1921 in a converted hall of the Czarny Kot cabaret at Marszałkowska Street 125 in Warsaw. The company moved out in 1923, and in September 1926 the building was taken over by the Perskie Oko revue theatre.",
+    "ludzie": [
+      {"kto": "Mieczysław Kochanowski", "rola": "pierwszy dyrektor artystyczny", "wiki": null},
+      {"kto": "Wacław Julicz", "rola": "dyrektor artystyczny od maja 1922", "wiki": null},
+      {"kto": "Norbert Hochmann", "rola": "właściciel teatru Czarny Kot", "wiki": null},
+      {"kto": "Władysław Szczawiński", "rola": "prowadził teatr od października 1922", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czarny Kot (teatr kabaretowo-rewiowy)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Nowy w Warszawie (1921–1926)", "url": "https://pl.wikipedia.org/wiki/Teatr_Nowy_w_Warszawie_%281921%E2%80%931926%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje, czy budynek przy ul. Marszałkowskiej 125 istnieje dziś."
+  }
+]

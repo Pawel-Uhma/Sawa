@@ -1,0 +1,268 @@
+[
+  {
+    "id": "topola-czarna-bielany",
+    "nazwa": "Topola Bielańska (topola czarna na Bielanach)",
+    "name_en": "Bielany Black Poplar",
+    "typ": "pomnik",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Smoleńskiego 31 (przy boisku Niepublicznej Szkoły Podstawowej nr 74)",
+    "adres_historyczny": null,
+    "lat": 52.279166666, "lon": 20.961194444,
+    "lokalizacja": "dokladna",
+    "okres": "ponad 120 lat (stan 2020)",
+    "istnieje": true,
+    "fakty": [
+      "Topola czarna na Bielanach, zwana Topolą Bielańską, jest uważana za najwyższą spośród rosnących w Polsce; w 2020 roku mierzyła 40,2 m wysokości.",
+      "Jest pomnikiem przyrody od 1997 roku.",
+      "Jej pień miał w 2020 roku obwód 621 cm, a wiek ocenia się na ponad 120 lat.",
+      "Według niektórych źródeł przez długi czas, przy wysokości ok. 45 m, była najwyższym drzewem liściastym w Polsce.",
+      "Około 2010 roku uległa obłamaniu wierzchołka; kilka lat później, przy wysokości ok. 42 m, jej koronę zredukowano o kolejne fragmenty."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Bielany Black Poplar is a monumental black poplar growing next to a school sports field at ul. Smoleńskiego 31. It was declared a nature monument in 1997 and measured 40.2 m in 2020 after its top broke and its crown was reduced.",
+    "ludzie": [],
+    "dawne_nazwy": ["Topola Bielańska"],
+    "zrodla": [{"tytul": "Wikipedia: Topola czarna na warszawskich Bielanach", "url": "https://pl.wikipedia.org/wiki/Topola_czarna_na_warszawskich_Bielanach"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wiek 'ponad 120 lat' oceniony w artykule; wysokosc maksymalna 45 m podana jako wedlug niektorych zrodel."
+  },
+  {
+    "id": "wawrzyszew-obszar-msi",
+    "nazwa": "Wawrzyszew (osiedle i obszar MSI)",
+    "name_en": "Wawrzyszew (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "wieś Wawrzyszewo",
+    "lat": 52.283347, "lon": 20.932475,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wawrzyszewo to dawna wieś szlachecka, wzmiankowana w XIV wieku; nazwa pochodzi od imienia Wawrzyniec.",
+      "W latach 1543–1548 w miejscowości wzniesiono kościół św. Marii Magdaleny z fundacji Baltazara Smosarskiego, nadwornego lekarza króla Zygmunta I Starego.",
+      "W 1819 roku folwark przejął Instytut Agronomiczny z Marymontu; przy melioracjach wykopano sadzawki, nazwane Stawami Brustmana.",
+      "W 1829 roku wieś przeniesiono w nowe miejsce, przy drodze do Wólki Węglowej, odpowiadającej dzisiejszej ul. Wólczyńskiej.",
+      "3 sierpnia 1944 roku Niemcy dokonali pacyfikacji wsi, paląc część budynków i mordując kilkudziesięciu mieszkańców.",
+      "W 1951 roku tereny przyłączono do Warszawy; w latach 1973–1978 w miejscu zabudowy wsi powstało osiedle dla ok. 20 tys. mieszkańców."
+    ],
+    "ciekawostki": [
+      "W 1367 roku spór o dziesięcinę z Wawrzyszewa między biskupami poznańskim i płockim rozstrzygnął papież Urban V."
+    ],
+    "summary_en": "Wawrzyszew is a former village, first mentioned in the 14th century, that became a housing estate for about 20,000 people in 1973–1978. The St Mary Magdalene church (1543–1548) and the cemetery are the surviving remnants of the old village.",
+    "ludzie": [
+      {"kto": "Baltazar Smosarski", "rola": "nadworny lekarz króla Zygmunta I Starego, fundator kościoła św. Marii Magdaleny (wg tego artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wawrzyszewo"],
+    "zrodla": [{"tytul": "Wikipedia: Wawrzyszew (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wawrzyszew_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul o parafii podaje fundatora jako Baltazara Szymaszowskiego (Szymanowskiego), a ten artykul jako Baltazara Smosarskiego; rozbieznosc do sprawdzenia. Obszar MSI."
+  },
+  {
+    "id": "stacja-metro-wawrzyszew",
+    "nazwa": "Stacja metra Wawrzyszew",
+    "name_en": "Wawrzyszew metro station",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "rejon ul. Kasprowicza, ul. Wolumen i ul. Lindego",
+    "adres_historyczny": null,
+    "lat": 52.286388888, "lon": 20.939444444,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M1 metra jest jednokondygnacyjna i ma długość 149 m.",
+      "Jazdy próbne pociągów na odcinku Stare Bielany – Wawrzyszew prowadzono w weekend 25–27 lipca 2008 r.; 24 lipca 2008 r. odbyło się próbne zadymienie obu stacji.",
+      "Przetarg na budowę tuneli i dwóch stacji (Stare Bielany oraz Wawrzyszew) rozstrzygnięto 29 listopada 2005 r.; wygrało go konsorcjum Mostostalu Warszawa i firmy Acciona Development.",
+      "Umowę zawarto 31 maja 2006 r.; stację oddano do ruchu pasażerskiego 25 października 2008 r.",
+      "Koszt budowy dwóch stacji i tuneli wyniósł 217 697 410 zł."
+    ],
+    "ciekawostki": [
+      "Stacja jest zlokalizowana tuż obok bazaru Wolumen, a jej wejście od strony bazaru jest pomalowane na czerwono.",
+      "Za stacją Wawrzyszew nie ma zwrotnicy; pociągi zawracają w komorze torów odstawczych za stacją Młociny."
+    ],
+    "summary_en": "Wawrzyszew is an M1 metro station along ul. Kasprowicza, next to the Wolumen bazaar, opened on 25 October 2008. Trains turn back in the sidings beyond Młociny because there is no crossover at this station.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wawrzyszew (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Wawrzyszew_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykul podaje wykonawce jako konsorcjum Mostostal Warszawa i Acciona Development; artykul Stare Bielany podaje tylko Mostostal Warszawa."
+  },
+  {
+    "id": "wawrzyszew-nowy",
+    "nazwa": "Wawrzyszew Nowy",
+    "name_en": "Wawrzyszew Nowy (former farm)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "dawny folwark, wzdłuż ul. Bogusławskiego i ul. Maszewskiej",
+    "lat": 52.278889, "lon": 20.916944,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–1951",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1867–1951 był folwarkiem w gminie Młociny w powiecie warszawskim.",
+      "W 1921 roku Wawrzyszew Nowy liczył 245 mieszkańców.",
+      "20 października 1933 roku utworzono gromadę Wawrzyszew Nowy w granicach gminy Młociny.",
+      "W 1943 roku Wawrzyszew Nowy liczył 588 mieszkańców.",
+      "15 maja 1951 roku gromadę włączono do Warszawy."
+    ],
+    "ciekawostki": [
+      "Miejscowość nie figuruje w państwowym rejestrze nazw geograficznych."
+    ],
+    "summary_en": "Wawrzyszew Nowy was a farm in the Młociny commune that was incorporated into Warsaw in 1951. Its former area corresponds roughly to the western part of Chomiczówka and now forms the southern part of the Bielany district.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wawrzyszew Nowy"],
+    "zrodla": [{"tytul": "Wikipedia: Wawrzyszew Nowy", "url": "https://pl.wikipedia.org/wiki/Wawrzyszew_Nowy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawna miejscowosc, nie istniejacy obiekt; istnieje: false."
+  },
+  {
+    "id": "wawrzyszew-stary",
+    "nazwa": "Wawrzyszew Stary",
+    "name_en": "Wawrzyszew Stary (former village)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "wzdłuż dawnej ul. Wólczyńskiej, między ul. Nocznickiego a ul. Sokratesa / Josepha Conrada",
+    "lat": 52.281667, "lon": 20.921944,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–1951",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1867–1951 był wsią w gminie Młociny w powiecie warszawskim.",
+      "W 1921 roku wieś liczyła 328 mieszkańców.",
+      "20 października 1933 roku utworzono gromadę Wawrzyszew Stary w granicach gminy Młociny.",
+      "W 1943 roku liczba mieszkańców wynosiła 1431.",
+      "15 maja 1951 roku gromadę włączono do Warszawy."
+    ],
+    "ciekawostki": [
+      "Miejscowość nie figuruje w państwowym rejestrze nazw geograficznych."
+    ],
+    "summary_en": "Wawrzyszew Stary was a linear village along today's ul. Wólczyńska, part of the Młociny commune. It was incorporated into Warsaw in 1951 and now lies on the border of Chomiczówka and Wawrzyszew.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wawrzyszew Stary"],
+    "zrodla": [{"tytul": "Wikipedia: Wawrzyszew Stary", "url": "https://pl.wikipedia.org/wiki/Wawrzyszew_Stary"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul podaje w sekcji historii liczbe z 1921 jako dla 'Wawrzyszewa Nowego' (328), a 1943 jako dla 'Nowego' (1431); zachowano wartosci z tekstu. Dawna miejscowosc, istnieje: false."
+  },
+  {
+    "id": "wrzeciono-osiedle",
+    "nazwa": "Wrzeciono (osiedle i obszar MSI)",
+    "name_en": "Wrzeciono (estate, Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.292861, "lon": 20.940028,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało zbudowane w latach 60. XX wieku, po likwidacji lotniska bielańskiego.",
+      "Wrzeciono leży między ul. Marymoncką, ul. Lindego, ul. Kasprowicza i ogródkami działkowymi wzdłuż ul. Nocznickiego.",
+      "Centrum Rekreacyjno-Sportowe CRS Bielany (m.in. pływalnia i hala sportowa) znajduje się przy ul. Lindego 20.",
+      "Na osiedlu działa Kościół Niepokalanego Poczęcia NMP na Wrzecionie."
+    ],
+    "ciekawostki": [
+      "W osiedlu działa LIX Liceum Ogólnokształcące Mistrzostwa Sportowego im. Janusza Kusocińskiego."
+    ],
+    "summary_en": "Wrzeciono is an estate in Bielany built in the 1960s on the site of the former Bielany airfield. It has a sports and recreation centre at ul. Lindego 20 and the Immaculate Conception parish church.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wrzeciono (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wrzeciono_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt."
+  },
+  {
+    "id": "wypad-na-wawrzyszew",
+    "nazwa": "Wypad na Wawrzyszew",
+    "name_en": "Wawrzyszew sortie",
+    "typ": "zdarzenie",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Wawrzyszew, cmentarz Wawrzyszewski",
+    "lat": 52.278888888, "lon": 20.926944444,
+    "lokalizacja": "przyblizona",
+    "okres": "1939 (10–11 września)",
+    "istnieje": true,
+    "fakty": [
+      "Wypad na Wawrzyszew był starciem zbrojnym podczas obrony Warszawy w kampanii wrześniowej 1939 roku.",
+      "Po odparciu szturmu niemieckiej 4 Dywizji Pancernej w dniach 8–9 września 1939 roku Dowództwo Obrony Warszawy postanowiło przejść do aktywnej obrony.",
+      "Oddział wypadowy pod dowództwem kpt. Witolda Chotkowskiego wyruszył z Marymontu w kierunku Wawrzyszewa wieczorem 10 września; wypad przeprowadzono w nocy z 10 na 11 września.",
+      "W rejonie cmentarza Wawrzyszewskiego polskie czołgi 7TP rozbiły niemiecki pluton; unieszkodliwiono trzy czołgi PzKpfw I i zniszczono trzy samochody ciężarowe.",
+      "W starciu poległ kpt. Chotkowski; po niespodziewanym pojawieniu się niemieckich czołgów w polskich szeregach wybuchła panika i wypad przerwano."
+    ],
+    "ciekawostki": [
+      "Oddział składał się m.in. z kompanii czołgów lekkich 7TP pod dowództwem rtm. Stanisława Grąbczewskiego (15 czołgów)."
+    ],
+    "summary_en": "A sortie by a Polish reconnaissance detachment from Marymont towards Wawrzyszew on the night of 10–11 September 1939. Polish 7TP tanks destroyed a German platoon near the Wawrzyszew cemetery, but the commander, Capt. Witold Chotkowski, was killed and the sortie ended in panic.",
+    "ludzie": [
+      {"kto": "kpt. Witold Chotkowski", "rola": "dowódca oddziału wypadowego, poległ", "wiki": null},
+      {"kto": "płk Marian Porwit", "rola": "dowódca odcinka „Warszawa-Zachód”, zlecił wypad", "wiki": null},
+      {"kto": "rtm. Stanisław Grąbczewski", "rola": "dowódca kompanii czołgów 7TP; przejął dowództwo po Chotkowskim", "wiki": null},
+      {"kto": "por. Stanisław Stopa", "rola": "oficer sztabu DOW, osłonił odwrót ogniem armaty", "wiki": null},
+      {"kto": "gen. Walerian Czuma", "rola": "dowódca obrony Warszawy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wypad na Wawrzyszew", "url": "https://pl.wikipedia.org/wiki/Wypad_na_Wawrzyszew"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa sie w chwili, gdy gen. Czuma nie zgadza sie na dalsze ryzyko; wynik dowodztwa nie jest podany."
+  },
+  {
+    "id": "wolczynska-133",
+    "nazwa": "Wólczyńska 133 (wieżowiec PKO BP)",
+    "name_en": "Wólczyńska 133 (PKO BP tower)",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Wólczyńska 133",
+    "adres_historyczny": null,
+    "lat": 52.2823, "lon": 20.9153,
+    "lokalizacja": "dokladna",
+    "okres": "1976–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek znany jako wieżowiec PKO BP (Centrum Operacji Kartowych) został oddany do użytku w 1976 roku.",
+      "Ma 17 kondygnacji.",
+      "W latach 90. XX wieku przeprowadzono gruntowny remont elewacji; wcześniej była przeszklona, a później została wyłożona pastelowymi panelami."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 17-storey office tower at ul. Wólczyńska 133, known as the PKO BP tower (card operations centre). Completed in 1976, its glass façade was replaced with pastel panels after a major renovation in the 1990s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wólczyńska 133", "url": "https://pl.wikipedia.org/wiki/W%C3%B3lczy%C5%84ska_133"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wolka-weglowa",
+    "nazwa": "Wólka Węglowa",
+    "name_en": "Wólka Węglowa (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.300733333, "lon": 20.893336111,
+    "lokalizacja": "przyblizona",
+    "okres": "II poł. XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wólka Węglowa jest dawną wsią królewską, założoną w II połowie XVIII wieku w miejscu, gdzie w średniowieczu istniała osada.",
+      "W 1877 roku wieś liczyła 23 domy i 237 mieszkańców.",
+      "W czasie kampanii wrześniowej 1939 roku wieś była terenem zaciekłych walk; 19 września 1939 roku doszło tam do szarży 14. pułku Ułanów Jazłowieckich.",
+      "Wiosną 1943 roku w pobliżu wsi Niemcy zamordowali 15 osób.",
+      "W 1951 roku miejscowość została przyłączona do Warszawy.",
+      "W 1973 roku na terenie Wólki Węglowej, Młocin i Placówki otwarto cmentarz Komunalny Północny."
+    ],
+    "ciekawostki": [
+      "W 1949 roku we wsi było 125 domów i 595 mieszkańców.",
+      "Nazwa ma taką samą genezę jak nazwa Wola, ale wskazuje na mniejszą miejscowość; Węglowa pochodzi od pozyskiwania węgla drzewnego."
+    ],
+    "summary_en": "Wólka Węglowa is a former royal village in Bielany, founded in the late 18th century. It was the scene of the September 1939 cavalry charge of the 14th Uhlan Regiment and was incorporated into Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Węglana"],
+    "zrodla": [{"tytul": "Wikipedia: Wólka Węglowa", "url": "https://pl.wikipedia.org/wiki/W%C3%B3lka_W%C4%99glowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI; artykul podaje date szarzy 19 wrzesnia 1939 (potwierdza rekord szarza-pod-wolka-weglowa)."
+  }
+]

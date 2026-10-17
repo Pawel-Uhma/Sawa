@@ -1,0 +1,294 @@
+[
+  {
+    "id": "hotel-brulowski-fredry-12",
+    "nazwa": "Hotel Brülowski",
+    "name_en": "Hotel Brülowski (Hotel Brül)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Fredry 12 (dawniej ul. hr. Pawła Kotzebue)",
+    "lat": 52.24187205,
+    "lon": 21.00867033,
+    "lokalizacja": "dokladna",
+    "okres": "1880–1944",
+    "istnieje": false,
+    "fakty": [
+      "Budynek zbudowano w 1880 roku.",
+      "Hotel z widokiem na staw w Ogrodzie Saskim dysponował 94 pokojami.",
+      "Nazwa hotelu pochodziła od pobliskiego pałacu Brühla.",
+      "W 1920 roku budynek był też siedzibą poselstwa Danii.",
+      "W 1944 roku, podczas II wojny światowej, został wysadzony przez Niemców."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Brülowski Hotel at Fredry 12, facing the pond in the Saxon Garden, built in 1880 and blown up by the Germans in 1944. It was named after the nearby Brühl Palace.",
+    "ludzie": [],
+    "dawne_nazwy": ["Hotel Brül", "ul. hr. Pawła Kotzebue"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Brülowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Br%C3%BClowski_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Bardzo krótki artykuł. Współrzędne z nagłówka."
+  },
+  {
+    "id": "hotel-drezdenski-dluga-38-40",
+    "nazwa": "Hotel Drezdeński",
+    "name_en": "Hotel Drezdeński (Dresden Hotel)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Długa 38/40 (ówcześnie 556)",
+    "lat": 52.247222,
+    "lon": 21.003889,
+    "lokalizacja": "dokladna",
+    "okres": "1808–1914",
+    "istnieje": false,
+    "fakty": [
+      "Hotel funkcjonował w latach 1808–1914 w pałacu Pod Czterema Wiatrami Stanisława Kleinpolta z 1680 roku.",
+      "Hotel działał także w dobudowanej do pałacu kamienicy Teppera z 1769 roku.",
+      "Nazwa hotelu brzmiała po francusku Hôtel de Dresde, po rosyjsku Дрезденская Гостиница."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Dresden Hotel at Długa 38/40 operated in 1808–1914 in the Pod Czterema Wiatrami palace and the adjoining Tepper tenement house.",
+    "ludzie": [
+      {"kto": "Stanisław Kleinpolt", "rola": "właściciel pałacu Pod Czterema Wiatrami (1680)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hôtel de Dresde", "Pod Czterema Wiatrami (pałac)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Drezdeński w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Drezde%C5%84ski_w_Warszawie"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Bardzo krótki artykuł, prawie bez faktów; rekord minimalny, do uzupełnienia lub pominięcia. Kamienica Teppera: w tekście 'kamienicy Teppera' (nazwisko zapisane tak jak w artykule)."
+  },
+  {
+    "id": "hotel-europejski-krakowskie-przedmiescie",
+    "nazwa": "Hotel Europejski",
+    "name_en": "Hotel Europejski (Europejski Hotel, now Raffles Europejski Warsaw)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "przy pl. Piłsudskiego i ul. Ossolińskich (adres nieokreślony w artykule)",
+    "adres_historyczny": null,
+    "lat": 52.241667,
+    "lon": 21.014444,
+    "lokalizacja": "dokladna",
+    "okres": "1855–1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel zbudowano etapami w latach 1855–1877 według projektu Henryka i Leandra Marconich, zastępując wcześniejszy hotel Gerlacha.",
+      "Część od strony ul. Ossolińskich i Krakowskiego Przedmieścia powstała w latach 1857–1859; budowę dokończono w latach 1876–1877.",
+      "W 1877 roku w hotelu uruchomiono pierwszą w mieście windę osobową.",
+      "Hotel był pierwszą siedzibą Towarzystwa Zachęty Sztuk Pięknych.",
+      "W 1938 roku hotel dysponował 250 pokojami.",
+      "W 1948 roku hotel zajęło Ministerstwo Obrony Narodowej, które dokończyło odbudowę na Akademię Wojskowo-Polityczną im. Feliksa Dzierżyńskiego (1951–1954).",
+      "W maju 2018 roku hotel wznowił działalność pod marką Raffles jako Raffles Europejski Warsaw."
+    ],
+    "ciekawostki": [
+      "W 1863 roku przed hotelem stracono czeladnika cukierniczego Emiliana Chodakowskiego za udział w zamachu na carskiego agenta Bertolda Hermaniego.",
+      "W hotelowej pracowni tworzyli i mieszkali m.in. Józef Chełmoński, Adam Chmielowski, Antoni Adam Piotrowski i Stanisław Witkiewicz."
+    ],
+    "summary_en": "The Europejski Hotel was Warsaw's first modern hotel, built in stages in 1855–1877 by the Marconi family. Taken over after the war by the military, it reopened as a Raffles hotel in 2018.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant hotelu", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "współprojektant hotelu", "wiki": null},
+      {"kto": "Ferdynand Gerlach", "rola": "stolarz, który urządził hotel na początku XIX wieku", "wiki": null},
+      {"kto": "Gene Gutowski", "rola": "zaangażowany w próbę renowacji w 1989 roku", "wiki": null},
+      {"kto": "Vera Michalski-Hoffmann", "rola": "właścicielka większościowa od 2012 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["hotel Gerlacha", "pałac Ogińskich (XVIII w.)", "Akademia Wojskowo-Polityczna im. Feliksa Dzierżyńskiego (1951–1954)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Europejski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Europejski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje w leadzie „Henryka i Leandra Marconich”, w treści „Henryka Marconiego”. W rekordzie występują oba imiona. Adres nieokreślony w paczce."
+  },
+  {
+    "id": "hotel-francuski-marszalkowska-146",
+    "nazwa": "Hotel Francuski",
+    "name_en": "Hotel Francuski (French Hotel)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "obecnie blok mieszkalny (w miejscu hotelu)",
+    "adres_historyczny": "ul. Marszałkowska 146, róg ul. Rysiej i pl. Zielonego 5 (dziś pl. Jana Henryka Dąbrowskiego)",
+    "lat": 52.2368,
+    "lon": 21.0087,
+    "lokalizacja": "dokladna",
+    "okres": "po 1902–1944",
+    "istnieje": false,
+    "fakty": [
+      "Budynek hotelu powstał po 1902 roku w miejscu, na którym wcześniej stał Hotel Maringe'a oraz niewielka fabryczka wyrobów drucianych.",
+      "W okresie przed I wojną światową częstym gościem hotelu był Józef Piłsudski.",
+      "W latach 20. i 30. XX wieku po likwidacji hotelu budynek mieścił biura, m.in. Ministerstwo Reform Rolnych, Ministerstwo Ochrony Pracy i Opieki Społecznej oraz Grodzką Izbę Skarbową.",
+      "W przyziemiu działały sklepy, m.in. A.W. Kuzniecowa oraz sklep muzyczny i radiowy B. Rudzkiego, który od 1935 roku stał się jego główną siedzibą.",
+      "Budynek został nieznacznie uszkodzony we wrześniu 1939 roku, a doszczętnie zniszczony podczas powstania warszawskiego.",
+      "Po wojnie w jego miejscu wybudowano blok mieszkalny."
+    ],
+    "ciekawostki": [
+      "Hotel był jednym z największych obiektów hotelowych w Warszawie pierwszych dekad XX wieku.",
+      "W latach 1930–1939 działał inny Hotel Francuski przy Marszałkowskiej 112, w budynku kina Stylowy."
+    ],
+    "summary_en": "The Hotel Francuski stood at Marszałkowska 146 corner Rysia and Plac Zielony. It was one of the largest hotels in early-20th-century Warsaw, was destroyed in the Warsaw Uprising and replaced by a housing block.",
+    "ludzie": [
+      {"kto": "Józef Piłsudski", "rola": "częsty gość przed I wojną światową", "wiki": null},
+      {"kto": "Adam Oczkowski", "rola": "autor eklektycznych, neorenesansowych elewacji", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Maringe'a (poprzedni obiekt na miejscu)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Francuski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Francuski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł zawiera uwagi o dwóch innych hotelach o tej nazwie; rekord dotyczy hotelu przy Marszałkowskiej 146."
+  },
+  {
+    "id": "hotel-mdm-plac-konstytucji-1",
+    "nazwa": "Hotel MDM",
+    "name_en": "MDM Hotel (Marszałkowska Dzielnica Mieszkaniowa)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Konstytucji 1",
+    "adres_historyczny": null,
+    "lat": 52.221413,
+    "lon": 21.016461,
+    "lokalizacja": "dokladna",
+    "okres": "1950–1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel powstał w ramach pierwszego etapu Marszałkowskiej Dzielnicy Mieszkaniowej (MDM I); projekt przygotowała pracownia „MDM” kierowana przez Józefa Sigalina.",
+      "Innymi ważnymi architektami dzielnicy byli Stanisław Jankowski, Jan Knothe i Zygmunt Stępiński.",
+      "Budowę rozpoczęto 1 sierpnia 1950 roku, a cały zespół ukończono 22 lipca 1952 roku.",
+      "Pierwotne plany przewidywały wieżowiec na miejscu hotelu; ostatecznie żaden z planów wieżowca nie został zrealizowany.",
+      "Przez kilkadziesiąt lat dach budynku zdobił neon „Podróżuj Lotem”, widoczny w pierwszej scenie filmu Andrzeja Wajdy „Niewinni czarodzieje”.",
+      "W hotelu mieścił się popularny klub taneczny „Pod Kandelabrami”, nawiązujący do trzech gigantycznych latarni przed hotelem."
+    ],
+    "ciekawostki": [
+      "Po modernizacji hotel dysponuje 142 pokojami i 1 apartamentem.",
+      "Po bokach budynku stoją monumentalne rzeźby robotników, o wysokości około 4 metrów."
+    ],
+    "summary_en": "The MDM Hotel on Plac Konstytucji 1, the central point of Marszałkowska Housing Estate, built in 1950–1952 in socialist-realist style. It is a three-star hotel run by a private group.",
+    "ludzie": [
+      {"kto": "Józef Sigalin", "rola": "kierownik pracowni MDM", "wiki": null},
+      {"kto": "Stanisław Jankowski", "rola": "architekt dzielnicy MDM", "wiki": null},
+      {"kto": "Jan Knothe", "rola": "architekt dzielnicy MDM", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "architekt dzielnicy MDM", "wiki": null}
+    ],
+    "dawne_nazwy": ["Marszałkowska Dzielnica Mieszkaniowa (MDM I)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel MDM", "url": "https://pl.wikipedia.org/wiki/Hotel_MDM"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "hotel-mercure-warszawa-grand-kruczej-28",
+    "nazwa": "Hotel Mercure Warszawa Grand",
+    "name_en": "Hotel Mercure Warszawa Grand (formerly Grand Hotel Orbis)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kruczej 28",
+    "adres_historyczny": null,
+    "lat": 52.22761541,
+    "lon": 21.01850867,
+    "lokalizacja": "dokladna",
+    "okres": "1954–1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1954–1957 według projektu Stanisława Bieńkuńskiego i Stanisława Rychłowskiego jako część planowanej dzielnicy rządowej.",
+      "Pierwotnie nosił nazwę Grand Hotel Orbis i był przeznaczony dla gości odwiedzających pobliskie ministerstwa.",
+      "Hotel otwarto 24 lipca 1958 roku; miał 416 pokoi o standardzie trzygwiazdkowym.",
+      "W listopadzie 1958 roku na dachu hotelu odbyło się próbne lądowanie helikoptera.",
+      "W 1988 roku w hotelu rozpoczął pracę pucybut, pierwszy w Warszawie po kilkudziesięciu latach przerwy.",
+      "Do 2004 roku mieściła się tu siedziba Polskiego Komitetu Olimpijskiego.",
+      "W latach 2007–2009, po przejęciu budynku przez sieć Accor, przeprowadzono remont; utworzono 299 pokoi; projektantem był Olivier Gibault."
+    ],
+    "ciekawostki": [
+      "W hotelu mieściły się przedstawicielstwa dyplomatyczne: Ambasada Japonii (1958), Poselstwo Ekwadoru (1961) i Ambasada Australii (1974).",
+      "Na jedenastym piętrze znajdowała się restauracja Olimp."
+    ],
+    "summary_en": "A socialist-realist hotel at Kruczej 28, built in 1954–1957 as the Grand Hotel Orbis for visitors to the nearby government ministries. It was renovated in 2007–2009 and reopened under the Mercure brand.",
+    "ludzie": [
+      {"kto": "Stanisław Bieńkuński", "rola": "projektant", "wiki": null},
+      {"kto": "Stanisław Rychłowski", "rola": "projektant", "wiki": null},
+      {"kto": "Olivier Gibault", "rola": "projektant remontu 2007–2009 (główny projektant hoteli Accor)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Grand Hotel Orbis"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Mercure Warszawa Grand", "url": "https://pl.wikipedia.org/wiki/Hotel_Mercure_Warszawa_Grand"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "hotel-metropol-marszalkowska-jerozolimskie",
+    "nazwa": "Hotel Metropol",
+    "name_en": "Metropol Hotel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "zbieg ul. Marszałkowskiej i Alej Jerozolimskich",
+    "adres_historyczny": null,
+    "lat": 52.229194444,
+    "lon": 21.010888888,
+    "lokalizacja": "dokladna",
+    "okres": "1964–1965–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1964–1965 według projektu Zygmunta Stępińskiego i Grzegorza Chruścielewskiego.",
+      "Hotel otwarto 11 listopada 1965 roku; miał 128 pokoi, a w 1966 roku uruchomiono w nim oddział „Orbisu”.",
+      "W 2010 roku przeprowadzono remont, w wyniku którego skuto balkony, zastępując je portfenetrami.",
+      "Działka pod hotelem była objęta roszczeniami."
+    ],
+    "ciekawostki": [
+      "Według „Gazety Wyborczej” z 2010 roku obiekt „jest uważany za mało udany budynek”.",
+      "Przed 1939 rokiem w Warszawie działał inny hotel Metropol, przy ul. Marszałkowskiej 114 (róg Złotej 11)."
+    ],
+    "summary_en": "A ten-storey hotel at the junction of Marszałkowska and Aleje Jerozolimskie, designed by Zygmunt Stępiński and Grzegorz Chruścielewski and opened on 11 November 1965.",
+    "ludzie": [
+      {"kto": "Zygmunt Stępiński", "rola": "autor projektu", "wiki": null},
+      {"kto": "Grzegorz Chruścielewski", "rola": "autor projektu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Metropol w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Metropol_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Krótki artykuł; historia przedwojennego hotelu o tej nazwie podana tylko w jednym zdaniu."
+  },
+  {
+    "id": "hotel-polonia-palace-jerozolimskie-45",
+    "nazwa": "Hotel Polonia Palace",
+    "name_en": "Polonia Palace Hotel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Jerozolimskie 45 (róg ul. Poznańskiej)",
+    "adres_historyczny": "Al. Jerozolimskie 39",
+    "lat": 52.22908333,
+    "lon": 21.01027778,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel zainaugurował działalność 14 lipca 1913 roku; inwestycja kosztowała 1100 tys. rubli.",
+      "Hotelem zarządzał do 1939 roku hr. Konstanty Przeździecki.",
+      "Projekt hotelu wykonali architekci Józef Holewiński i Juliusz Nagórski; budowę wykonała firma inż. Stanisława Puka.",
+      "Hotel był po Bristolu drugim najstarszym hotelem działającym w stolicy.",
+      "W 1924 roku kosztem garaży dobudowano nową salę dancingową.",
+      "W czasie powstania warszawskiego hotel pełnił rolę szpitala i bazy zaopatrzeniowej dla powstańców.",
+      "Hotel wznowił działalność jako pierwszy w Warszawie 26 kwietnia 1945 roku; we wrześniu 1945 roku zatrzymał się w nim gen. Dwight Eisenhower."
+    ],
+    "ciekawostki": [
+      "Nazwa „Polonia” miała, w czasach zaborów, pokrzepiać serca i była silnym akcentem patriotycznym.",
+      "W 1929 roku króla Afganistanu Amanullaha Chana witano z honorami na dworcu naprzeciwko hotelu."
+    ],
+    "summary_en": "The Polonia Palace at Aleje Jerozolimskie 45, opened in 1913 and the second-oldest hotel in Warsaw after the Bristol. It served as a hospital during the Warsaw Uprising and reopened as the first hotel in the city after the war.",
+    "ludzie": [
+      {"kto": "Konstanty Przeździecki", "rola": "inwestor i zarządca do 1939 roku", "wiki": null},
+      {"kto": "Józef Holewiński", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Stanisław Puk", "rola": "wykonawca budowy (firma inż. Stanisława Puka)", "wiki": null},
+      {"kto": "Dwight Eisenhower", "rola": "gość hotelu we wrześniu 1945 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Al. Jerozolimskie 39"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Polonia Palace", "url": "https://pl.wikipedia.org/wiki/Hotel_Polonia_Palace"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst urwany na końcu paczki (w akapicie o latach 50. i dekoracjach kulinarnych); rekord oparty na treści do tego miejsca. Hotel nadal działa."
+  }
+]

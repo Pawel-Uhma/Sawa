@@ -1,0 +1,571 @@
+[
+  {
+    "id": "gmach-stowarzyszenia-technikow-polskich",
+    "nazwa": "Gmach Stowarzyszenia Techników Polskich (Warszawski Dom Technika)",
+    "name_en": "Building of the Association of Polish Engineers (Warsaw House of the Engineer)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tadeusza Czackiego 3/5",
+    "adres_historyczny": "ul. Włodzimierzowska 3/5",
+    "lat": 52.237,
+    "lon": 21.0148,
+    "lokalizacja": "dokladna",
+    "okres": "1903–1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Działkę o powierzchni 2100 m² kupiono 5 czerwca 1901 roku za 120 tys. rubli.",
+      "W dwustopniowym konkursie do realizacji dopuszczono projekt inż. arch. Jana Fijałkowskiego; budowę rozpoczęto 31 lipca 1903 roku, a zakończono 25 listopada 1905 roku.",
+      "Na szczycie fasady umieszczono rzeźby Dedala i Ikara; nad wejściem, na wysokości drugiego piętra, Archimedesa i kobietę z promieniami radu, symbolizujące przeszłość i przyszłość.",
+      "Najważniejszym elementem wnętrza jest plafon Odrodzenie Stanisława Bohusz-Siestrzeńcewicza na głównej klatce schodowej.",
+      "W czasie II wojny światowej spłonęło trzecie i czwarte piętro; po upadku powstania warszawskiego Niemcy podpalili pozostałą część gmachu.",
+      "18 listopada 1948 roku siedzibę przejęła Naczelna Organizacja Techniczna (NOT), która zarządza budynkiem do dziś.",
+      "W latach 1968–2003 gmach zmodernizowano, wyposażając go w nowoczesne systemy akustyczne i klimatyzacyjne."
+    ],
+    "ciekawostki": [
+      "W kartuszu nad wejściem umieszczono łaciński napis ARTIBUS TECHNICIS MCMIV."
+    ],
+    "summary_en": "The Warsaw House of the Engineer at Tadeusza Czackiego 3/5, built in 1903–1905 for the Association of Polish Engineers. It burned during WWII and has been the seat of the National Technical Organisation since 1948.",
+    "ludzie": [
+      {
+        "kto": "Jan Fijałkowski",
+        "rola": "autor zwycięskiego projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Zygmunt Otto",
+        "rola": "rzeźbiarz, autor rzeźb na fasadzie",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Bohusz-Siestrzeńcewicz",
+        "rola": "autor plafonu na klatce schodowej",
+        "wiki": null
+      },
+      {
+        "kto": "Bronisław Rogóyski",
+        "rola": "wykonawca (Biuro Architektoniczno-Budowlane „Rogóyski, Bracia Horn i Rupniewicz”)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Włodzimierzowska 3/5 (do 1919 r. nazwa ulicy)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Stowarzyszenia Techników w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Stowarzyszenia_Technik%C3%B3w_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst urwany w sekcji historii (po zdaniu o zniszczeniach); końcowe fragmenty nieznane."
+  },
+  {
+    "id": "gmach-urzedu-telekomunikacyjnego-i-telegraficznego",
+    "nazwa": "Gmach Urzędu Telekomunikacyjnego i Telegraficznego",
+    "name_en": "Telecommunications and Telegraph Office Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowogrodzka 45",
+    "adres_historyczny": null,
+    "lat": 52.228028,
+    "lon": 21.009778,
+    "lokalizacja": "dokladna",
+    "okres": "1929–1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Modernistyczny biurowiec wzniesiono według projektu Juliana Putermana-Sadłowskiego jako jeden z pierwszych w Polsce budynków o stalowej konstrukcji szkieletowej.",
+      "Gmach powstał na terenie dawnego folwarku świętokrzyskiego, gdzie znajdowały się magazyny wełny; konkurs na projekt ogłoszono 26 października 1921 roku.",
+      "Otwarcie budynku nastąpiło najprawdopodobniej pomiędzy listopadem a grudniem 1933 roku; okres robót podawany jest jako lata 1928–1934.",
+      "Po uszkodzeniach w kampanii wrześniowej 1939 roku gmach szybko odbudowano; Niemcy użytkowali go jako siedzibę Deutsche Post Osten.",
+      "18 sierpnia 1944 roku w salach biurowca rozstrzelano 18 polskich pracowników poczty.",
+      "W latach 1959–1962 dobudowano wzdłuż ul. Nowogrodzkiej nowe skrzydło według projektu M. Wróbla i M. Pomianowskiego.",
+      "1 lipca 1965 roku obiekt wpisano do rejestru zabytków pod numerem 780-A."
+    ],
+    "ciekawostki": [
+      "W 2019 roku sześć budynków przy Nowogrodzkiej, wchodzących w skład dawnego urzędu, kupił niemiecki fundusz inwestycyjny na apartamenty i biura.",
+      "Na dachu głównego skrzydła przewidziano tarasy rekreacyjne, a na czwartym piętrze były sale wypoczynkowe i stołówka dla personelu."
+    ],
+    "summary_en": "A steel-frame modernist office building at Nowogrodzka 45, designed by Julian Puterman-Sadłowski and built in 1929–1933. The Germans shot 18 Polish postal workers here in August 1944, and it has been a listed monument since 1965.",
+    "ludzie": [
+      {
+        "kto": "Julian Puterman-Sadłowski",
+        "rola": "autor projektu",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Tołwiński",
+        "rola": "autor wcześniejszego projektu z 1927 roku, nie zrealizowanego",
+        "wiki": null
+      },
+      {
+        "kto": "Waldemar Radlow",
+        "rola": "opracowanie konstrukcji",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Bryła",
+        "rola": "stały doradca Ministerstwa",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "folwark świętokrzyski"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Urzędu Telekomunikacyjnego i Telegraficznego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Urz%C4%99du_Telekomunikacyjnego_i_Telegraficznego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ostatnie zdanie o wnętrzach urwane w artykule."
+  },
+  {
+    "id": "gmach-warszawskiego-towarzystwa-wioslarskiego",
+    "nazwa": "Gmach Warszawskiego Towarzystwa Wioślarskiego",
+    "name_en": "Warsaw Rowing Society Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Foksal 19",
+    "adres_historyczny": null,
+    "lat": 52.2333,
+    "lon": 21.0203,
+    "lokalizacja": "dokladna",
+    "okres": "1895–1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zimową siedzibę Warszawskiego Towarzystwa Wioślarskiego (WTW) wybudowano w latach 1895–1897 ze składek członków oraz wkładu hr. Ksawerego Branickiego.",
+      "Plany budynku opracował inż. Kazimierz Matecki, a na projekt elewacji ogłoszono konkurs, który wygrał architekt Bronisław Brochowicz-Rogoyski.",
+      "Budynek służył do uprawiania w zimie szermierki i gimnastyki.",
+      "W 1914 roku, podczas I wojny światowej, w gmachu ulokowano szpital wojskowy.",
+      "W 1944 roku, w czasie powstania warszawskiego, Niemcy spalili gmach od środka; ocalała tylko fasada.",
+      "1 lipca 1965 roku gmach wpisano do rejestru zabytków m.st. Warszawy; w 1978 roku WTW odzyskało dom przy Foksal.",
+      "We wrześniu 2019 roku doszło do rozległego pożaru; straty oszacowano na około 5,5 mln zł."
+    ],
+    "ciekawostki": [
+      "Fasada w duchu zmodernizowanego neogotyku została wyłożona żółtą glazurowaną cegłą na życzenie hr. Ksawerego Branickiego.",
+      "Po lewej stronie fasady stoi rzeźba Hipolita Marczewskiego „Alegoria Wisły”; na budynku są diabły ze skrzydłami i rzygacze w formie smoków."
+    ],
+    "summary_en": "The Warsaw Rowing Society's winter clubhouse at Foksal 19, built in 1895–1897 with funds from members and Count Ksawery Branicki. It was burned out by the Germans in 1944 and has been a listed monument since 1965.",
+    "ludzie": [
+      {
+        "kto": "Ksawery Branicki",
+        "rola": "ówczesny prezes WTW, fundator",
+        "wiki": null
+      },
+      {
+        "kto": "Kazimierz Matecki",
+        "rola": "autor planów budynku, wiceprezes WTW",
+        "wiki": null
+      },
+      {
+        "kto": "Bronisław Brochowicz-Rogoyski",
+        "rola": "zwycięzca konkursu na elewację",
+        "wiki": null
+      },
+      {
+        "kto": "Hipolit Marczewski",
+        "rola": "autor rzeźby „Alegoria Wisły”",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach Warszawskiego Towarzystwa Wioślarskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_Warszawskiego_Towarzystwa_Wio%C5%9Blarskiego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwisko architekta w nagłówku zapisano jako Brochwicz-Rogoyski, w treści jako Brochowicz-Rogoyski; rekord używa formy z treści."
+  },
+  {
+    "id": "gmach-dawnego-domu-partii",
+    "nazwa": "Gmach dawnego Domu Partii",
+    "name_en": "Former Party House (Biały Dom) Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 6/12 (rondo Charles’a de Gaulle’a)",
+    "adres_historyczny": null,
+    "lat": 52.231039,
+    "lon": 21.022328,
+    "lokalizacja": "dokladna",
+    "okres": "1948–1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1951–1990 gmach był siedzibą Komitetu Centralnego Polskiej Zjednoczonej Partii Robotniczej.",
+      "W 1947 roku rozpisano konkurs architektoniczny; spośród 10 zaproszonych zespołów wybrano projekt zespołu „Tygrysów” (Wacław Kłyszewski, Jerzy Mokrzyński i Eugeniusz Wierzbicki).",
+      "Budowę rozpoczęto w lipcu 1948 roku; budynek oddano do użytku 1 maja 1951 roku, a całość przekazano na początku sierpnia 1952 roku.",
+      "Do budowy wykorzystano m.in. granit ze zniszczonego mauzoleum Hindenburga.",
+      "Koszty pokryto z kasy państwa i z wymuszonych zakupów cegiełek, choć oficjalnie budowę miały finansować składki członków partii.",
+      "W latach 1991–2000 mieściła się tu Giełda Papierów Wartościowych; pierwsza sesja odbyła się 16 kwietnia 1991 roku.",
+      "W 2009 roku budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Do lat 40. XX wieku w tym miejscu stała kamienica Jasińskiego (Nowy Świat 14), w której w latach 1827–1918 mieściła się Izba Obrachunkowa.",
+      "Na mocy decyzji premiera Tadeusza Mazowieckiego z lipca 1990 roku środki z wynajmu przeznaczono na budowę nowej Biblioteki Uniwersytetu Warszawskiego."
+    ],
+    "summary_en": "Known as the Party House or White House, this modernist building on the Charles de Gaulle roundabout was the seat of the Central Committee of the Polish United Workers' Party from 1951 to 1990. It is a listed monument since 2009.",
+    "ludzie": [
+      {
+        "kto": "Wacław Kłyszewski",
+        "rola": "autor projektu (zespół „Tygrysów”)",
+        "wiki": null
+      },
+      {
+        "kto": "Jerzy Mokrzyński",
+        "rola": "autor projektu (zespół „Tygrysów”)",
+        "wiki": null
+      },
+      {
+        "kto": "Eugeniusz Wierzbicki",
+        "rola": "autor projektu (zespół „Tygrysów”)",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Mazowiecki",
+        "rola": "premier, decyzja o przeznaczeniu środków z wynajmu (1990)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Dom Partii",
+      "Biały Dom",
+      "gmach KC PZPR"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gmach dawnego Domu Partii w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gmach_dawnego_Domu_Partii_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "goscinny-dwor-plac-zelaznej-bramy",
+    "nazwa": "Gościnny Dwór",
+    "name_en": "Gościnny Dwór (Guest Court) trade building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "pl. Żelaznej Bramy",
+    "lat": 52.2391,
+    "lon": 21.0019,
+    "lokalizacja": "dokladna",
+    "okres": "1841–1939",
+    "istnieje": false,
+    "fakty": [
+      "Duży budynek handlowy, zwany Gościnnym Dworem, wybudowano w 1841 roku na placu Żelaznej Bramy, by uporządkować handel na terenie jurydyki Wielopole.",
+      "Budynek miał kształt trójkąta równoramiennego o mocno zaokrąglonych narożnikach i obwód ok. 280 metrów.",
+      "Mieścił 168 niewielkich lokali sklepowych i tyleż straganów.",
+      "Nad głównym wejściem widniał szyld „Gościnny Dwór” w języku polskim i rosyjskim.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku budynek uległ znacznemu zniszczeniu w wyniku bombardowań.",
+      "Nie został odbudowany, a jego metalowe elementy zostały przez Niemców zarekwirowane na złom."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od rosyjskiego Гостинный дворъ, którą nosiły podobne obiekty w miastach imperium rosyjskiego."
+    ],
+    "summary_en": "A triangular covered trade building with 168 shops on Plac Żelaznej Bramy, built in 1841 and destroyed in the September 1939 bombing of Warsaw. It was never rebuilt.",
+    "ludzie": [
+      {
+        "kto": "Jan Jakub Gay",
+        "rola": "współprojektant obiektu",
+        "wiki": null
+      },
+      {
+        "kto": "Alfons Kropiwnicki",
+        "rola": "współprojektant obiektu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Gościnny Dwór"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gościnny Dwór w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Go%C5%9Bcinny_Dw%C3%B3r_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Autorstwo: lead podaje Gaya i Kropiwnickiego, artykuł nie precyzuje ich roli."
+  },
+  {
+    "id": "grand-hotel-senatorska-29",
+    "nazwa": "Grand Hotel przy ul. Senatorskiej 29 (Galeria Luxenburga)",
+    "name_en": "Grand Hotel at Senatorska 29 (Luxenburg Gallery)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Senatorska 29",
+    "lat": 52.2433,
+    "lon": 21.0071,
+    "lokalizacja": "dokladna",
+    "okres": "1907–1944",
+    "istnieje": false,
+    "fakty": [
+      "Hotel wybudowano w latach 1907–1909 jako część galerii składającej się z dwóch równoległych budynków, przedzielonych uliczką przykrytą szklanym dachem.",
+      "Charakterystycznym akcentem był oszklony łącznik na wysokości trzeciego piętra.",
+      "Podczas kryzysu finansowego w latach 30. hotel przejęło państwo, lokując w nim Hotel Oficerski Komendy Miasta.",
+      "Galeria Luxenburga spłonęła w czasie walk powstania warszawskiego; w jej miejscu powstała ul. Canaletta."
+    ],
+    "ciekawostki": [
+      "W latach 1930–1939 przy ul. Chmielnej 5 działał inny Grand Hotel, a w latach 1954–1958 Grand Hotel powstał przy ul. Kruczej 28."
+    ],
+    "summary_en": "The Grand Hotel at Senatorska 29 was part of the Luxenburg Gallery complex, built in 1907–1909. It was taken over by the state in the 1930s and burned during the Warsaw Uprising in 1944.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Galeria Luxenburga (część hotelowa)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Grand Hotel w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Grand_Hotel_w_Warszawie"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł-wieloznacznik: rekord dotyczy hotelu przy Senatorskiej 29 (współrzędne z nagłówka). Pozostałe hotele o tej nazwie (Chmielna 5, Kruczej 28) nie mają współrzędnych w paczce."
+  },
+  {
+    "id": "gruba-kaska-wodozbior",
+    "nazwa": "Gruba Kaśka (wodozbiór)",
+    "name_en": "Gruba Kaśka (water intake)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. „Solidarności”, w pobliżu placu Bankowego i ul. Andersa",
+    "adres_historyczny": "plac Tłumackie",
+    "lat": 52.24464,
+    "lon": 21.00218,
+    "lokalizacja": "dokladna",
+    "okres": "1787–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczny wodozbiór (obudowę studni) wzniesiono w 1787 roku według projektu Szymona Bogumiła Zuga na placyku Tłumackie w jurydyce o tej samej nazwie.",
+      "Ma kształt walca o średnicy zewnętrznej 4,3 m, ozdobionego płycinami z boniowaniem i fryzem tryglifowym, zwieńczonego schodkowym daszkiem z blachy miedzianej z pozłacaną kulą.",
+      "W czasie powstania warszawskiego pociski wybiły w budowli trzy duże wyrwy; 16 maja 1943 roku Niemcy wysadzili naprzeciwko Wielką Synagogę.",
+      "Po przeprowadzeniu w latach 1947–1949 Trasy W-Z znalazła się między jezdniami al. gen. Karola Świerczewskiego (obecnie al. „Solidarności”).",
+      "Remont w 2004 roku przywrócił pierwotny wygląd: odsłonięto dwa zamurowane okienka, przywrócono linie boniowania nad poszerzonym wejściem, wykonano dębowe drzwi i pozłocono kulę.",
+      "W latach 1966–1967 przy al. gen. Karola Świerczewskiego 74 zbudowano bar samoobsługowy „Gruba Kaśka” według projektu Jana Bogusławskiego i Bohdana Gniewiewskiego."
+    ],
+    "ciekawostki": [
+      "Wodozbiór był jednym z kilku ujęć wody powstałych w tym czasie w Warszawie.",
+      "Wzmocniono fundamenty, by ograniczyć drgania od tramwajów przejeżdżających bardzo blisko."
+    ],
+    "summary_en": "Gruba Kaśka is a late-18th-century classicist water-intake housing in central Warsaw, built in 1787 and restored in 2004. It stands in the middle of al. Solidarności near Plac Bankowy.",
+    "ludzie": [
+      {
+        "kto": "Szymon Bogumił Zug",
+        "rola": "autor projektu wodozbioru",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Bogusławski",
+        "rola": "projekt baru „Gruba Kaśka” (1966–1967)",
+        "wiki": null
+      },
+      {
+        "kto": "Bohdan Gniewiewski",
+        "rola": "projekt baru „Gruba Kaśka” (1966–1967)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "plac Tłumackie (placyk)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gruba Kaśka (wodozbiór)",
+        "url": "https://pl.wikipedia.org/wiki/Gruba_Ka%C5%9Bka_%28wodozbi%C3%B3r%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt to budowla (wodozbiór), nie budynek mieszkalny; typ ustawiono na miejsce."
+  },
+  {
+    "id": "osiedle-grzybow",
+    "nazwa": "Osiedle Grzybów",
+    "name_en": "Grzybów housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między pl. Grzybowskim a ulicami Królewską, Zielną, Świętokrzyską, Emilii Plater i Twardą",
+    "adres_historyczny": "jurydyka Grzybów",
+    "lat": 52.235277777,
+    "lon": 21.004444444,
+    "lokalizacja": "dokladna",
+    "okres": "1962–1967–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zbudowano w latach 1962–1967 w technologii monolitycznej według projektu Jana Bogusławskiego i Bogdana Gniewiewskiego z Biura Projektowego Miastoprojekt Śródmieście.",
+      "Decyzję o rozbiórce ruin i budowie osiedla podjęto w 1961 roku.",
+      "Osiedle na powierzchni 4 ha liczy 14 budynków i 1330 mieszkań dla ok. 3800–4400 osób.",
+      "Zachowano kościół Wszystkich Świętych, dwa budynki na Grzybowie II, fragment zabudowy ul. Próżnej oraz budynek PAST-y.",
+      "W 1998 roku zakończono budowę ośmiokondygnacyjnego biurowca Zielna Point (ul. Zielna 41/43), w 2004 roku powstał Centrum Zielna (ul. Zielna 37).",
+      "Budynek przy ul. Królewskiej 43 (blok B-3) uzyskał w 1964 roku tytuł „Wicemistera Warszawy”."
+    ],
+    "ciekawostki": [
+      "Po II wojnie światowej teren nazywano rejonem „Dzikiego Zachodu”, pełnym ruin i prowizorycznych zabudowań."
+    ],
+    "summary_en": "A monolithic-technology housing estate in central Warsaw, built in 1962–1967 on the site of the former Grzybów jurisdiction. It kept the Church of All Saints and a few older buildings, and includes the Królewska 43 block that won the 1964 Warsaw Vice-Master award.",
+    "ludzie": [
+      {
+        "kto": "Jan Bogusławski",
+        "rola": "projektant osiedla",
+        "wiki": null
+      },
+      {
+        "kto": "Bogdan Gniewiewski",
+        "rola": "projektant osiedla",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Niemunis",
+        "rola": "konstruktor bloku przy Królewskiej 43",
+        "wiki": null
+      },
+      {
+        "kto": "Janusz Zarzycki",
+        "rola": "przewodniczący Prezydium Stołecznej Rady Narodowej (ceremonia wręczenia kluczy 1963)",
+        "wiki": null
+      },
+      {
+        "kto": "Witold Rogala",
+        "rola": "dyrektor Stołecznego Zarządu Rozbudowy Miasta (ceremonia wręczenia kluczy 1963)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "jurydyka Grzybów"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Grzybów (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Grzyb%C3%B3w_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle powstało na części obszaru dawnej jurydyki Grzybów (do XVIII wieku)."
+  },
+  {
+    "id": "grob-nieznanego-zolnierza-warszawa",
+    "nazwa": "Grób Nieznanego Żołnierza w Warszawie",
+    "name_en": "Tomb of the Unknown Soldier, Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. marsz. Józefa Piłsudskiego",
+    "adres_historyczny": null,
+    "lat": 52.241111111,
+    "lon": 21.011388888,
+    "lokalizacja": "dokladna",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Warszawski Grób Nieznanego Żołnierza odsłonięto 2 listopada 1925 roku w środkowych arkadach kolumnady pałacu Saskiego.",
+      "Złożono w nim szczątki niezidentyfikowanego żołnierza, sprowadzone z cmentarza Obrońców Lwowa; twórcą grobu był rzeźbiarz Stanisław Kazimierz Ostrowski.",
+      "Pierwszy na świecie Grób Nieznanego Żołnierza powstał w Paryżu w 1920 roku.",
+      "Pod koniec II wojny światowej grób został poważnie uszkodzony w wyniku wysadzenia przez Niemców; w 1946 roku odbudowano go i ponownie odsłonięto.",
+      "W latach 1990–1991 wystrój grobu częściowo zmieniono.",
+      "Przy grobie płonie wieczny znicz, a służbę pełni warta honorowa z Pułku Reprezentacyjnego Wojska Polskiego."
+    ],
+    "ciekawostki": [
+      "Wybrany w październiku 2023 roku projekt odbudowy zachodniej pierzei placu Piłsudskiego zakłada odtworzenie kolumnady wokół grobu i wyodrębnienie oryginalnych arkad.",
+      "Inicjatorem pierwszego grobu nieznanego żołnierza we Francji był Fryderyk Simon, który podczas wojny stracił trzech synów."
+    ],
+    "summary_en": "The Warsaw Tomb of the Unknown Soldier, unveiled in 1925 in the arcades of the Saxon Palace colonnade on Plac Piłsudskiego. It was blown up by the Germans in 1944, rebuilt in 1946 and still has an honour guard and an eternal flame.",
+    "ludzie": [
+      {
+        "kto": "Stanisław Kazimierz Ostrowski",
+        "rola": "twórca grobu",
+        "wiki": null
+      },
+      {
+        "kto": "Fryderyk Simon",
+        "rola": "inicjator idei grobu nieznanego żołnierza we Francji",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Grób Nieznanego Żołnierza w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gr%C3%B3b_Nieznanego_%C5%BBo%C5%82nierza_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst urwany w sekcji o Komitecie Uczczenia Poległych i projekcie Polskiego Żałobnego Krzyża; dalsza historia pomnika nieuwzględniona."
+  },
+  {
+    "id": "grob-czlonkow-sztabu-al-skwer-hoovera",
+    "nazwa": "Grób członków Sztabu Armii Ludowej na skwerze Hoovera",
+    "name_en": "Grave of Home Army (AL) staff members at Hoover Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skwer Hoovera przy Krakowskim Przedmieściu (dziś brak mogiły)",
+    "adres_historyczny": "skwer Hoovera przy Krakowskim Przedmieściu",
+    "lat": 52.244564,
+    "lon": 21.014339,
+    "lokalizacja": "dokladna",
+    "okres": "1953–2008",
+    "istnieje": false,
+    "fakty": [
+      "Mogiła pięciu członków sztabu okręgu warszawskiego Armii Ludowej, poległych 26 sierpnia 1944 roku w powstaniu warszawskim, znajdowała się w latach 1953–2008 na skwerze Hoovera.",
+      "W mogile pochowano m.in. dowódcę okręgu mjr. Bolesława Kowalskiego, mjr. Stanisława Nowickiego, kpt. Edwarda Lanotę, kpt. Stanisława Kurlanda i por. Anastazego Matywieckiego.",
+      "Pierwotnie mogiły znajdowały się przy gruzach kamienicy przy ul. Freta 16, zbombardowanej w czasie powstania; w marcu 1945 roku ciała ekshumowano i złożono we wspólnym grobie na skwerze Hoovera.",
+      "Miejsce upamiętniono w 1953 roku płytą granitową; szóstym nazwiskiem na tablicy był kpt. Henryk Woźniak, poległy 21 września 1944 roku.",
+      "9 października 2008 roku, podczas prac na skwerze, robotnicy usunęli płytę i natrafili na szczątki; Rada Ochrony Pamięci Walk i Męczeństwa zdecydowała o usunięciu płyty mimo protestów rodzin.",
+      "26 sierpnia 2009 roku wszystkie szczątki z grobu spoczęły w zbiorowej mogile w kwaterze AL na cmentarzu Wojskowym na Powązkach."
+    ],
+    "ciekawostki": [
+      "W mogile znaleziono również szczątki co najmniej kilkunastu osób dorosłych i dziecka, prawdopodobnie poległych przy bombardowaniu kamienicy przy ul. Freta 16."
+    ],
+    "summary_en": "A 1953 grave of five Home Army (AL) staff officers killed in the Warsaw Uprising on 26 August 1944, at Hoover Square by Krakowskie Przedmieście. The grave was dismantled in 2008 and the remains moved to Powązki in 2009.",
+    "ludzie": [
+      {
+        "kto": "Bolesław Kowalski",
+        "rola": "dowódca okręgu warszawskiego AL, pochowany w mogile",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Nowicki",
+        "rola": "członek Sztabu Głównego AL, pochowany w mogile",
+        "wiki": null
+      },
+      {
+        "kto": "Edward Lanota",
+        "rola": "szef sztabu okręgu, pochowany w mogile",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Kurland",
+        "rola": "dowódca oddziałów Służby Bezpieczeństwa AL, pochowany w mogile",
+        "wiki": null
+      },
+      {
+        "kto": "Anastazy Matywiecki",
+        "rola": "oficer sztabowy, pochowany w mogile",
+        "wiki": null
+      },
+      {
+        "kto": "Henryk Woźniak",
+        "rola": "kapitan AL, szósty upamiętniony na tablicy",
+        "wiki": null
+      },
+      {
+        "kto": "Piotr Matywiecki",
+        "rola": "poeta, krewny pochowanych, nagłaśniał sprawę",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "skwer Hoovera"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Grób członków Sztabu Armii Ludowej na skwerze Hoovera w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Gr%C3%B3b_cz%C5%82onk%C3%B3w_Sztabu_Armii_Ludowej_na_skwerze_Hoovera_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Miejsce bez mogiły od 2009 roku; rekord ma status istnieje=false. Mogiła była w rejestrze jako grób symboliczny (wg artykułu)."
+  }
+]

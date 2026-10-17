@@ -1,0 +1,314 @@
+[
+  {
+    "id": "niemiecka-synagoga-warszawa",
+    "nazwa": "Niemiecka Synagoga (ul. Daniłowiczowska 8/10)",
+    "name_en": "German Synagogue in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Daniłowiczowska 8/10",
+    "lat": 52.244585,
+    "lon": 21.002398,
+    "lokalizacja": "dokladna",
+    "okres": "1849–1878 (synagoga)",
+    "istnieje": false,
+    "fakty": [
+      "Koncepcje budowy nowej reformowanej synagogi narodziły się w latach 30. XIX wieku; w październiku 1842 roku Dozór Bożniczy Okręgu Warszawskiego wydał pozwolenie na jej wzniesienie.",
+      "Na prośbę Eisenbauma zamówiono projekt u Henryka Marconiego; wykonano go najprawdopodobniej w latach 1842–1843, ale z niewiadomych przyczyn nie został zrealizowany.",
+      "W 1843 roku na miejscu starej synagogi wystawiono jedno duże, tymczasowe pomieszczenie z salą modlitewną i galerią dla kobiet.",
+      "Nowy budynek powstał w 1849 roku według planów wykonanych bezpłatnie przez Alfonsa Kropiwnickiego oraz częściowo przez nauczyciela matematyki Jakuba Centnerschwera.",
+      "W 1878 roku, po wybudowaniu i otwarciu Wielkiej Synagogi przy placu Tłomackie, kongregacja sprzedała budynek; w 1880 roku przebudował go Bronisław Brodzic-Żochowski na Teatr Mały.",
+      "Podczas II wojny światowej budynek został zburzony i nie został odbudowany po wojnie."
+    ],
+    "ciekawostki": [
+      "Do dziś nie jest znany wygląd synagogi z 1849 roku."
+    ],
+    "summary_en": "The German Synagogue stood at Daniłowiczowska 8/10 in the Śródmieście district from 1849 to 1878. The congregation sold it after the Great Synagogue on Tłomackie square opened, and the building was later converted into a theatre and destroyed in the Second World War.",
+    "ludzie": [
+      {"kto": "Eisenbaum", "rola": "inicjator budowy; na jego prośbę zamówiono projekt synagogi", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "architekt, autor nie zrealizowanego projektu z lat 1842–1843", "wiki": null},
+      {"kto": "Alfons Kropiwnicki", "rola": "autor bezpłatnie wykonanego planu budynku z 1849 roku", "wiki": null},
+      {"kto": "Jakub Centnerschwer", "rola": "nauczyciel matematyki, częściowo autor planu budynku z 1849 roku", "wiki": null},
+      {"kto": "Bronisław Brodzic-Żochowski", "rola": "przebudował budynek na Teatr Mały w 1880 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Mały (po 1880)"],
+    "zrodla": [{"tytul": "Wikipedia: Niemiecka Synagoga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Niemiecka_Synagoga_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Po przebudowie z 1880 roku w artykule jest nazwa „Teatr Mały”, bez bliższego opisu; traktować ostrożnie."
+  },
+  {
+    "id": "nobu-hotel-warsaw",
+    "nazwa": "Nobu Hotel Warsaw (dawniej Hotel Rialto)",
+    "name_en": "Nobu Hotel Warsaw (formerly Hotel Rialto)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wilcza 73 (róg ul. Emilii Plater)",
+    "adres_historyczny": null,
+    "lat": 52.22305556,
+    "lon": 21.00805556,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1939–dziś (hotel od 2003)",
+    "istnieje": true,
+    "fakty": [
+      "Hotel powstał w 2003 roku w ocalałej po zniszczeniach wojennych kamienicy Mierzejewskiego, poddanej kompletnej restauracji i adaptacji.",
+      "Z przedwojennej kamienicy zachowano jedynie ściany zewnętrzne i wewnętrzne, ściany konstrukcyjne oraz klatkę schodową.",
+      "Hotel był pierwszym w Warszawie hotelem typu boutique; każdy z jego 44 pokoi zaprojektowano indywidualnie, w dużej części z autentycznymi antykami z epoki art déco.",
+      "Witraże zaprojektowali i wykonali Andrzej i Jerzy Owsiakowie.",
+      "W 2020 roku zakończono rozbudowę o nowe skrzydło na wąskiej, trójkątnej działce po dawnym parkingu i stacji benzynowej między ul. Wilczą a ul. Koszykową; hotel zmienił nazwę na Nobu Hotel Warsaw.",
+      "W 2021 roku hotel otrzymał II nagrodę XXV edycji nagrody Polski Cement w Architekturze."
+    ],
+    "ciekawostki": [
+      "Hotel należy do sieci luksusowych hoteli Nobu, założonej m.in. przez Roberta De Niro."
+    ],
+    "summary_en": "The Nobu Hotel Warsaw is a five-star boutique hotel at Wilcza 73, created in 2003 inside a surviving pre-war tenement. A new wing built on a former car park was added in 2020, and the hotel was renamed from Hotel Rialto.",
+    "ludzie": [
+      {"kto": "Andrzej Owsiak", "rola": "autor witraży w hotelu", "wiki": null},
+      {"kto": "Jerzy Owsiak", "rola": "autor witraży w hotelu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Rialto"],
+    "zrodla": [{"tytul": "Wikipedia: Nobu Hotel Warsaw", "url": "https://pl.wikipedia.org/wiki/Nobu_Hotel_Warsaw"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "norway-house-lwowska-19",
+    "nazwa": "Norway House",
+    "name_en": "Norway House",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Lwowska 19",
+    "adres_historyczny": null,
+    "lat": 52.22273,
+    "lon": 21.01251,
+    "lokalizacja": "dokladna",
+    "okres": "1997–dziś (na miejscu kamienicy rozebranej w 1976)",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektowano w latach 1996–1997, a zbudowano w latach 1997–1998, między ulicami Koszykową, Lwowską i Piękną.",
+      "Wcześniej stała tu kamienica uszkodzona w czasie II wojny światowej; po 1945 roku zredukowano ją do dwóch kondygnacji, a w 1976 roku rozebrano.",
+      "Inwestorem było norweskie przedsiębiorstwo Interscandia Group AS oraz PP APA; koszt wyniósł 12 milionów dolarów amerykańskich.",
+      "Kolejni właściciele to Pramerica (do 2012), IVG (od 2012), Triuva (w 2017), Patrizia AG (do 2022) i Vig Fund (od 2022).",
+      "W 2017 roku na parterze otwarto kawiarnię Starbucks.",
+      "Biurowiec zdobył nagrodę I stopnia Ministra Spraw Wewnętrznych i Administracji za 1999 rok."
+    ],
+    "ciekawostki": [
+      "Marta Leśniakowska wybrała Norway House do katalogu 230 budynków z lat 1989–2001, które najlepiej oddają styl architektoniczny tego okresu."
+    ],
+    "summary_en": "Norway House is an office building at Lwowska 19, designed in 1996–1997 and completed in 1998 on the site of a tenement demolished in 1976. It was funded by a Norwegian company and has been praised for its corner design.",
+    "ludzie": [
+      {"kto": "Tom Granlund", "rola": "główny architekt projektu", "wiki": null},
+      {"kto": "Krzysztof Stapf", "rola": "główny architekt projektu", "wiki": null},
+      {"kto": "Zdzisław Jońca", "rola": "główny architekt projektu", "wiki": null},
+      {"kto": "Michał Sondij", "rola": "główny architekt projektu (pracownia APA)", "wiki": null},
+      {"kto": "Ryszard Trzaska", "rola": "główny architekt projektu", "wiki": null},
+      {"kto": "Andrzej Kiciński", "rola": "krytyk architektury, uznał budynek za przykład udanej zabudowy narożnika ulic", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Norway House (budynek)", "url": "https://pl.wikipedia.org/wiki/Norway_House_%28budynek%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres historycznej kamienicy nie występuje w artykule."
+  },
+  {
+    "id": "novotel-warszawa-centrum",
+    "nazwa": "Novotel Warszawa Centrum (dawny hotel Forum)",
+    "name_en": "Novotel Warsaw Centrum (formerly Hotel Forum)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 94/98",
+    "adres_historyczny": "pawilon handlowy „Śródmieście” (na miejscu hotelu, przed 1972)",
+    "lat": 52.229883333,
+    "lon": 21.012544444,
+    "lokalizacja": "dokladna",
+    "okres": "1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel wzniesiono w latach 1972–1974 dla Polskiego Biura Podróży „Orbis”; działał pod nazwą „Forum” do 2002 roku w sieci InterContinental Hotels Group.",
+      "Stanął w miejscu pawilonu handlowego „Śródmieście” zaprojektowanego przez Tadeusza Tomickiego i Ryszarda Trzaskę.",
+      "Hotel rozpoczął działalność 25 stycznia 1974 roku i oferował 752 pokoje dla 1386 gości.",
+      "Początkowo obsługiwał głównie cudzoziemców; pobyt można było opłacić wyłącznie w dolarach. Gościła w nim m.in. ekipa prezydenta Jimmy’ego Cartera oraz grupa ABBA.",
+      "W latach 1975–1979 w hotelu mieściły się przedstawicielstwa dyplomatyczne, m.in. ambasady Portugalii, Libii, Gabonu, Malezji i Kostaryki.",
+      "W 2002 roku po przejęciu większościowych udziałów Orbisu przez grupę Accor hotel zmienił nazwę na Novotel Warszawa Centrum.",
+      "W latach 2004–2005 przeszedł modernizację; elewację zmieniono z żółtej na szarą, a po przebudowie hotel otwarto 7 grudnia 2005 roku."
+    ],
+    "ciekawostki": [
+      "Hotel był jednym z najwcześniej wzniesionych wysokościowców w powojennej Warszawie, drugim po Pałacu Kultury i Nauki budynkiem o wysokości przekraczającej 100 m."
+    ],
+    "summary_en": "The Novotel Warsaw Centrum on Marszałkowska street was built in 1972–1974 as the Forum Hotel for the Orbis travel agency. It was one of Warsaw's first high-standard hotels, and it was renamed Novotel in 2002 after the Accor takeover.",
+    "ludzie": [
+      {"kto": "Sten Samuelson", "rola": "architekt projektu hotelu", "wiki": null},
+      {"kto": "Tadeusz Tomicki", "rola": "architekt poprzedniego pawilonu „Śródmieście” na tej działce", "wiki": null},
+      {"kto": "Ryszard Trzaska", "rola": "architekt poprzedniego pawilonu „Śródmieście” na tej działce", "wiki": null},
+      {"kto": "Yves Lagache", "rola": "francuski architekt, autor metalicznych okładzin elewacji w modernizacji 2004–2005", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Forum"],
+    "zrodla": [{"tytul": "Wikipedia: Novotel Warszawa Centrum", "url": "https://pl.wikipedia.org/wiki/Novotel_Warszawa_Centrum"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "nowa-kordegarda",
+    "nazwa": "Nowa Kordegarda",
+    "name_en": "New Guardhouse (Łazienki Royal Park)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie (zachodnia strona pałacu Na Wyspie)",
+    "adres_historyczny": null,
+    "lat": 52.214961111,
+    "lon": 21.034238888,
+    "lokalizacja": "dokladna",
+    "okres": "1779–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1779–1780 według projektu Dominika Merliniego i przebudowano w 1830 roku.",
+      "Pierwotnie pawilon służył do gry w Trou-Madame, polegającej na wrzucaniu kulek z kości słoniowej do numerowanych bramek.",
+      "W 1782 roku obiekt przemieniono w Teatr Mały, zwany także Komedialnym; w 1788 roku teatr powiększono.",
+      "Po wybudowaniu teatru w Pomarańczarni Teatr Mały przestał być potrzebny i zaadaptowano go na magazyn rzeźb.",
+      "W 1830 roku Jakub Kubicki przebudował obiekt w stylu klasycyzmu, dodając kolumny i kartusze z panopliami; w tej postaci przetrwał do dziś."
+    ],
+    "ciekawostki": [
+      "Teatr Mały miał dwie stałe dekoracje: z jednej strony gabinet, z drugiej las."
+    ],
+    "summary_en": "The New Guardhouse in the Royal Baths Park was built in 1779–1780 to a design by Dominik Merlini. It served as a small theatre and was rebuilt in the Classicist style in 1830.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "projektant budynku (1779–1780)", "wiki": null},
+      {"kto": "Jakub Kubicki", "rola": "przebudował obiekt w stylu klasycyzmu w 1830 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Mały (Komedialny)"],
+    "zrodla": [{"tytul": "Wikipedia: Nowa Kordegarda", "url": "https://pl.wikipedia.org/wiki/Nowa_Kordegarda"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres podany w artykule to położenie w Łazienkach; numer nie występuje."
+  },
+  {
+    "id": "nowa-pomaranczarnia",
+    "nazwa": "Nowa Pomarańczarnia w Łazienkach Królewskich",
+    "name_en": "New Orangery in the Royal Baths Park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie (południowa część ogrodu, przy Drodze Wilanowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.2116,
+    "lon": 21.0334,
+    "lokalizacja": "dokladna",
+    "okres": "1860–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nowa Pomarańczarnia powstała w latach 1860–1861 według projektu Adama Adolfa Loewego i Józefa Orłowskiego jako drugi obiekt w Łazienkach o tym przeznaczeniu.",
+      "Dawną Pomarańczarnię stanisławowską zaczęto nazywać Starą Pomarańczarnią.",
+      "W oknach środkowej części elewacji południowej umieszczono rzeźby Vertumnusa i Pomony, wykonane przez Leona Molatyńskiego.",
+      "Główna sala służyła pierwotnie do przechowywania w zimie drzew egzotycznych; urządzono tu stały ogród z roślinami, również tropikalnymi.",
+      "Od 1992 roku w budynku działa restauracja Belvedere."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The New Orangery in the Royal Baths Park was built in 1860–1861 by Adam Adolf Loewe and Józef Orłowski. Its main hall once sheltered exotic trees in winter, and since 1992 the building has housed the Belvedere restaurant.",
+    "ludzie": [
+      {"kto": "Adam Adolf Loewe", "rola": "współautor projektu z 1860–1861", "wiki": null},
+      {"kto": "Józef Orłowski", "rola": "współautor projektu z 1860–1861", "wiki": null},
+      {"kto": "Leon Molatyński", "rola": "autor rzeźb w oknach elewacji", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowa Oranżeria", "Stara Pomarańczarnia (stanisławowska; dla odróżnienia)"],
+    "zrodla": [{"tytul": "Wikipedia: Nowa Pomarańczarnia w Łazienkach Królewskich", "url": "https://pl.wikipedia.org/wiki/Nowa_Pomara%C5%84czarnia_w_%C5%81azienkach_Kr%C3%B3lewskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres podany w artykule to położenie w Łazienkach; numer nie występuje."
+  },
+  {
+    "id": "nowe-miasto-warszawa",
+    "nazwa": "Nowe Miasto (dawniej Nowa Warszawa)",
+    "name_en": "Nowe Miasto (New Town, Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2528,
+    "lon": 21.0081,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Miasto Nowa Warszawa założono na początku XV wieku na północ od Starej Warszawy; w 1791 roku włączono je do zespołu miejskiego Warszawy.",
+      "W 1408 roku książę mazowiecki Janusz I Starszy nadał Nowej Warszawie przywilej, wyłączający ją spod jurysdykcji wójta Starej Warszawy.",
+      "W 1409 roku książę Janusz i jego żona Danuta Anna ufundowali kościół Nawiedzenia Najświętszej Marii Panny jako parafialny; w 1414 roku Nowa Warszawa uzyskała własny samorząd.",
+      "W 1527 roku Zygmunt I Stary potwierdził dawny przywilej zakazujący Żydom zamieszkiwania w Starej i Nowej Warszawie.",
+      "Większość zabudowy Nowego Miasta zniszczono w czasie II wojny światowej; odbudowę Nowego Miasta wraz z rynkiem zakończono 1 września 1956 roku."
+    ],
+    "ciekawostki": [
+      "Nowa Warszawa nie posiadała murów obronnych, choć miała rynek, ratusz i kościół parafialny."
+    ],
+    "summary_en": "Nowe Miasto was founded in the early 15th century north of the Old Town as a separate municipality with its own charter. It was incorporated into Warsaw in 1791, and most of its buildings were destroyed in the Second World War before reconstruction was completed in 1956.",
+    "ludzie": [
+      {"kto": "Janusz I Starszy", "rola": "książę mazowiecki; nadał Nowej Warszawie przywilej w 1408 roku", "wiki": null},
+      {"kto": "Danuta Anna", "rola": "żona księcia Janusza, ufundowała kościół parafialny w 1409 roku", "wiki": null},
+      {"kto": "Zygmunt I Stary", "rola": "król, który potwierdził przywilej zakazujący Żydom osiedlania się w Nowej i Starej Warszawie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowa Warszawa"],
+    "zrodla": [{"tytul": "Wikipedia: Nowe Miasto (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Nowe_Miasto_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord obszaru (osiedla) z punktem środkowym z nagłówka artykułu; lokalizacja przybliżona."
+  },
+  {
+    "id": "nowy-swiat-2-0",
+    "nazwa": "Nowy Świat 2.0 (biurowiec przy Nowym Świecie 4a)",
+    "name_en": "Nowy Świat 2.0 office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 4a",
+    "adres_historyczny": null,
+    "lat": 52.2304,
+    "lon": 21.0219,
+    "lokalizacja": "dokladna",
+    "okres": "1871–1948 (poprzednie budynki); 2013–dziś (obecny biurowiec)",
+    "istnieje": true,
+    "fakty": [
+      "Kamień węgielny pod budowę biurowca, pierwotnie nazwanego CBF Nowy Świat Bis, wmurowano 27 czerwca 2013 roku; autorem projektu był Andrzej Marek Chołdzyński z pracowni AMC.",
+      "Wcześniej na działce stał Zakład Sierot i Ochrona Warszawskiego Towarzystwa Dobroczynności, który w 1871 roku przeniósł się na ul. Freta.",
+      "W 1873 roku wprowadził się tu III Oddział Warszawskiej Straży Ogniowej, który działał w tym miejscu do 1936 roku, kiedy przeniósł się na ul. Polną 1.",
+      "Budynek straży i szkoły rozebrano w 1948 roku w związku z budową siedziby KC PZPR na sąsiednich posesjach; wieżę czatowni rozebrano w 1951 roku.",
+      "Biurowiec ma 9270 m² powierzchni całkowitej, w tym 4030 m² biurowej i 1900 m² handlowej; ma 119 miejsc parkingowych.",
+      "W 2015 roku budynek otrzymał I Nagrodę Architektoniczną Prezydenta m.st. Warszawy w kategorii Budynek komercyjny."
+    ],
+    "ciekawostki": [
+      "Elewacja ma system „podwójnej skóry” oraz pionowe „żyletki” nawiązujące do modernistycznej architektury powojennej."
+    ],
+    "summary_en": "Nowy Świat 2.0 is a Class A office and retail building at Nowy Świat 4a, built on the site of a 19th-century orphanage and a fire station. Its double-skin façade earned the city's architectural award in 2015.",
+    "ludzie": [
+      {"kto": "Andrzej Marek Chołdzyński", "rola": "autor projektu biurowca; współprojektant sąsiedniego budynku GPW", "wiki": null}
+    ],
+    "dawne_nazwy": ["CBF Nowy Świat Bis"],
+    "zrodla": [{"tytul": "Wikipedia: Nowy Świat 2.0", "url": "https://pl.wikipedia.org/wiki/Nowy_%C5%9Awiat_2.0"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stacja-nowy-swiat-uniwersytet",
+    "nazwa": "Stacja metra Nowy Świat-Uniwersytet",
+    "name_en": "Nowy Świat-Uniwersytet metro station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętokrzyska (wzdłuż, między ul. Czackiego a ul. Nowy Świat)",
+    "adres_historyczny": null,
+    "lat": 52.236833,
+    "lon": 21.016788,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś (oddana 8 marca 2015)",
+    "istnieje": true,
+    "fakty": [
+      "Pozwolenie na budowę stacji wydano 29 marca 2011 roku, a prace związane ze ścianami szczelinowymi rozpoczęto w październiku 2011 roku.",
+      "W sierpniu i wrześniu 2012 roku do stacji dotarły tarcze TBM drążące tunele; na początku 2014 roku rozpoczęto zasypywanie stropu.",
+      "Pozwolenie na użytkowanie wydano 20 lutego 2015 roku, a 8 marca 2015 roku stację oddano do użytku.",
+      "Projekt koncepcyjny centralnego odcinka II linii metra opracowano we wrześniu 2008 roku; stacja otrzymała oznaczenie S10, a 1 lutego 2010 roku robocze oznaczenie C12.",
+      "Pierwotnie wejście na stację miało być na dziedzińcu Ministerstwa Finansów, ale ministerstwo nie wyraziło zgody; wejście przeniesiono na ul. Świętokrzyską.",
+      "18 sierpnia 2011 roku przy ul. Świętokrzyskiej odkryto pozostałości dawnych piwnic; po inwentaryzacji nadzór archeologiczny pozwolił kontynuować prace."
+    ],
+    "ciekawostki": [
+      "Autorem opracowania graficznego był Wojciech Fangor."
+    ],
+    "summary_en": "Nowy Świat-Uniwersytet is a metro station on the M2 line at Świętokrzyska street in the Śródmieście district. Building work began in 2011, and the station opened on 8 March 2015.",
+    "ludzie": [
+      {"kto": "Andrzej Chołdzyński", "rola": "projektant generalny centralnego odcinka II linii metra, w tym stacji", "wiki": null},
+      {"kto": "Wojciech Fangor", "rola": "autor opracowania graficznego stacji", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stacja C12 (robocza)", "Stacja S10 (w projekcie)"],
+    "zrodla": [{"tytul": "Wikipedia: Nowy Świat-Uniwersytet", "url": "https://pl.wikipedia.org/wiki/Nowy_%C5%9Awiat-Uniwersytet"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł ucięty w części o budowie (sierpień 2012); koniec tekstu nie został zawarty w paczce."
+  }
+]
