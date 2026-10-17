@@ -58,8 +58,8 @@
 
 ## R3 · Frontend i mapa
 
-- [ ] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3`
-- [ ] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3`
+- [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/issues-42-43-44`, czeka na PR)
+- [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/issues-42-43-44`, czeka na PR)
 - [x] **T-30** Mapa MapLibre z jednym zbiorem punktów (miejsca z `/v1/places`, nie z T-10) — `R3` — 13:00 (Antek, 16:40; plan w [14-plan-mapy.md](14-plan-mapy.md); `/mapa` z kartą miejsca i trasą PR #12, API `SawaMap` dla ekranów PR #16, miejsca z kafelków widoku na całą Warszawę PR #27)
 - [x] **T-105** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; ekrany demo zostają jasne, dopóki nie przejdą na tokeny)
 - [x] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap; 14:54: demo na `SawaMap` Antka, piny z `/v1/places`, trasa z `POST /v1/routes/plan`, zob. `stan.md`)
@@ -80,7 +80,7 @@
 - [~] **T-101** Mapa: `fitBounds` trasy z uwzględnieniem otwartej karty miejsca (trasa chowa się pod kartą) i ostrzeżenie „Expected number, found null” w konsoli — `R3` (Antek, 16:55: karta doliczana do paddingu kamery, `paddingWithSheet`, gałąź `r3/fit-place-sheet`; ostrzeżenie zostaje)
 - [ ] **T-102** Pozycja „za oknem”: znacznik jedzie wzdłuż `Leg.lngLats` w czasie odtwarzania (krok 8 w [14-plan-mapy.md](14-plan-mapy.md) §10, M2 planu MVP); potrzebne do T-36 — `R3` (Antek) — niedziela 08:00
 - [ ] **T-103** Mapa na 2 prawdziwych telefonach: karta miejsca z przeciąganiem, 16 px marginesu, bez poziomego scrolla (krok 7 w [14-plan-mapy.md](14-plan-mapy.md) §10) — `R3` (Antek)
-- [ ] **T-107** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42)
+- [x] **T-107** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42) (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/issues-42-43-44`, czeka na PR)
 - [ ] **T-115** Ekrany demo na tokeny kolorów (`bg-powierzchnia`, `bg-tlo-2`) zamiast `bg-white` i hexów, potem klasa `.motyw` na `<body>`, żeby ciemny motyw działał wszędzie (dziś w trybie jazdy syrenka ma ciemne pachy na jasnym tle) — `R3` (Paweł)
 - [ ] **T-116** Usunąć „Przed siebie” z wyboru końca trasy (wywozi w przypadkowe miejsce); zostają „Wracam tu” i „Do celu” — `R3` (Paweł)
 - [ ] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`
