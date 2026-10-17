@@ -1,4 +1,4 @@
-import { HACKATHON_VENUE, type Leg } from "@sawa/shared";
+import { HACKATHON_VENUE } from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 
 /** OpenFreeMap basemap: no API key, OSM data. */
@@ -71,10 +71,18 @@ export const DESTINATION_COLOR = "#f2755f";
 /** Route place the story is about right now. */
 export const ACTIVE_STOP_COLOR = "#17706f";
 
-export const LEG_MODE_COLORS: Record<Leg["mode"], string> = {
-  tram: "#d62828",
-  bus: "#1d3557",
-};
+/**
+ * One colour per line of the ride, in the order the lines are boarded.
+ * Kept away from the teal of the active stop and the coral of the destination.
+ */
+export const LINE_COLORS = ["#d62828", "#1d4ed8", "#7c3aed", "#e07a00", "#c2185b", "#4d7c0f"];
+
+/** Walk between two stops at a transfer. */
+export const WALK_COLOR = "#52525b";
+
+export function lineColor(lineIndex: number): string {
+  return LINE_COLORS[lineIndex % LINE_COLORS.length];
+}
 
 export function placeKindColor(kind: string): string {
   return PLACE_KIND_COLORS[kind] ?? UNKNOWN_KIND_COLOR;

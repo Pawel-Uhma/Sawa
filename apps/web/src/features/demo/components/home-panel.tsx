@@ -37,7 +37,13 @@ type HomePanelProps = {
   onCollapsedChange: (collapsed: boolean) => void;
 };
 
-const SCALE = ["30 min", "1 h", "2 h", "3 h", "4 h+"];
+/** Podpisy pod suwakiem w miejscach ich wartości (suwak jest liniowy, więc 1 h nie leży w 1/4). */
+const SCALE = [30, 60, 120, 180, 240];
+
+/** Środek gałki suwaka (30 px) dla danej wartości: tor zaczyna się i kończy pół gałki od krawędzi. */
+function thumbCenter(durationMin: number): string {
+  return `calc(15px + (100% - 30px) * ${sliderPercent(durationMin) / 100})`;
+}
 
 const END_OPTIONS: { type: RideEndType; label: string }[] = [
   { type: "open", label: "Przed siebie" },
@@ -121,11 +127,26 @@ export function HomePanel({
           lastStep.current = value;
           onDurationChange(value);
         }}
-        style={{ "--postep": `${sliderPercent(durationMin)}%` } as CSSProperties}
+        style={{ "--postep": thumbCenter(durationMin) } as CSSProperties}
       />
-      <div className="flex justify-between text-xs font-semibold text-tekst-3">
-        {SCALE.map((label) => (
-          <span key={label}>{label}</span>
+      <div aria-hidden className="relative h-4 text-xs font-semibold text-tekst-3">
+        {SCALE.map((value, index) => (
+          <span
+            key={value}
+            // Skrajne podpisy przy krawędziach, żeby nie wystawały poza kartę.
+            style={
+              index === 0
+                ? { left: 0 }
+                : index === SCALE.length - 1
+                  ? { right: 0 }
+                  : { left: thumbCenter(value) }
+            }
+            className={`absolute top-0 whitespace-nowrap tabular-nums transition-colors duration-200 ${
+              index === 0 || index === SCALE.length - 1 ? "" : "-translate-x-1/2"
+            } ${value === durationMin ? "text-glebia" : ""}`}
+          >
+            {formatDuration(value)}
+          </span>
         ))}
       </div>
 

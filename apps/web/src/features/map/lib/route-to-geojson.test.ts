@@ -1,6 +1,14 @@
 import type { Route } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
-import { routeBounds, routeLegsToGeoJson, routePlacesToGeoJson } from "./route-to-geojson";
+import { lineColor } from "./map-style";
+import {
+  lineIndexes,
+  routeBoardingsToGeoJson,
+  routeBounds,
+  routeLegsToGeoJson,
+  routePlacesToGeoJson,
+  routeWalksToGeoJson,
+} from "./route-to-geojson";
 
 const stop = (id: string, lat: number, lng: number) => ({ id, name: id, position: { lat, lng } });
 
@@ -70,6 +78,56 @@ describe("routeLegsToGeoJson", () => {
   it("skips legs without a drawable shape", () => {
     const route = { ...ROUTE, legs: [{ ...ROUTE.legs[0], lngLats: [[20.96, 52.23]] }] } as Route;
     expect(routeLegsToGeoJson(route).features).toEqual([]);
+  });
+});
+
+describe("lines and transfers", () => {
+  const sameLineAgain = { ...ROUTE.legs[0], departAt: "2026-10-17T14:20:00+02:00" };
+  const route = {
+    ...ROUTE,
+    legs: [ROUTE.legs[0], { ...ROUTE.legs[0] }, ROUTE.legs[1], sameLineAgain],
+  };
+
+  it("keeps one line index for consecutive legs on the same line", () => {
+    expect(lineIndexes(route)).toEqual([0, 0, 1, 2]);
+  });
+
+  it("colours each leg by its line", () => {
+    const colors = routeLegsToGeoJson(route).features.map((f) => f.properties.color);
+    expect(colors).toEqual([lineColor(0), lineColor(0), lineColor(1), lineColor(2)]);
+    expect(lineColor(0)).not.toBe(lineColor(1));
+  });
+
+  it("marks the start and every change of line, not a leg that stays on the line", () => {
+    const { features } = routeBoardingsToGeoJson(route);
+    expect(features.map((f) => [f.properties.line, f.properties.isTransfer])).toEqual([
+      ["10", false],
+      ["520", true],
+      ["10", true],
+    ]);
+    expect(features[1].geometry.coordinates).toEqual([20.98, 52.24]);
+  });
+
+  it("draws a walk only where the next leg starts somewhere else", () => {
+    expect(routeWalksToGeoJson(ROUTE).features).toEqual([]);
+    const moved = {
+      ...ROUTE,
+      legs: [
+        ROUTE.legs[0],
+        {
+          ...ROUTE.legs[1],
+          lngLats: [
+            [20.981, 52.241],
+            [21.0, 52.25],
+          ],
+        },
+      ],
+    } as Route;
+    const [walk] = routeWalksToGeoJson(moved).features;
+    expect(walk.geometry.coordinates).toEqual([
+      [20.98, 52.24],
+      [20.981, 52.241],
+    ]);
   });
 });
 

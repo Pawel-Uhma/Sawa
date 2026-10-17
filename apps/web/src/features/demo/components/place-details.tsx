@@ -17,13 +17,10 @@ import {
 
 const FACTS_PREVIEW = 3;
 
-type VariantProps = { place: Place; interests: Interest[]; onClose: () => void };
+type PlaceDetailsProps = { place: Place; interests: Interest[]; onClose: () => void };
 
-/**
- * A · Arkusz jak w Mapach Apple: nagłówek, główna akcja, pasek zdjęć, a niżej wszystko,
- * co wiemy o miejscu. Najwięcej informacji, przewija się.
- */
-export function PlaceCardA({ place, interests, onClose }: VariantProps) {
+/** Treść karty miejsca, jak arkusz w Mapach Apple: nagłówek, główna akcja, pasek zdjęć, a niżej wszystko, co wiemy o miejscu. */
+export function PlaceDetails({ place, interests, onClose }: PlaceDetailsProps) {
   const story = usePlaceStory(place.id, interests);
   const [showAll, setShowAll] = useState(false);
   const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW)).map(cleanFact);

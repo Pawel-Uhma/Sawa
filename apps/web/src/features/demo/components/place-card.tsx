@@ -14,8 +14,6 @@ type PlaceCardShellProps = {
   onClose: () => void;
   /** Ile pikseli od dołu ekranu zasłania karta, żeby mapa trzymała miejsce nad nią. */
   onCoverChange: (px: number) => void;
-  /** Co wystaje nad kartą (Sawa w wariancie B). */
-  above?: ReactNode;
   className?: string;
   children: ReactNode;
 };
@@ -28,7 +26,6 @@ export function PlaceCardShell({
   label,
   onClose,
   onCoverChange,
-  above,
   className = "",
   children,
 }: PlaceCardShellProps) {
@@ -97,7 +94,6 @@ export function PlaceCardShell({
           style={{ y }}
           className="pointer-events-auto touch-none md:touch-auto"
         >
-          {above}
           <div
             ref={scrollRef}
             className={`karta relative max-h-[min(64dvh,600px)] touch-pan-y overflow-y-auto overscroll-contain md:max-h-[calc(100dvh-8rem)] ${className}`}
@@ -114,23 +110,13 @@ export function PlaceCardShell({
   );
 }
 
-export function CloseButton({
-  onClick,
-  onPhoto = false,
-}: {
-  onClick: () => void;
-  onPhoto?: boolean;
-}) {
+export function CloseButton({ onClick }: { onClick: () => void }) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-label="Zamknij"
-      className={`flex size-9 shrink-0 items-center justify-center rounded-full transition-[transform,background-color] active:scale-[0.92] ${
-        onPhoto
-          ? "bg-black/35 text-white backdrop-blur-md hover:bg-black/50"
-          : "bg-tlo-2 text-tekst-2 hover:bg-mieta-jasna hover:text-tekst"
-      }`}
+      className="flex size-9 shrink-0 items-center justify-center rounded-full bg-tlo-2 text-tekst-2 transition-[transform,background-color] hover:bg-mieta-jasna hover:text-tekst active:scale-[0.92]"
     >
       <svg aria-hidden="true" viewBox="0 0 20 20" className="size-4" fill="currentColor">
         <path d="M5.3 4.3a1 1 0 0 0-1.4 1.4L8.6 10l-4.7 4.3a1 1 0 1 0 1.4 1.4L10 11.4l4.3 4.3a1 1 0 0 0 1.4-1.4L11.4 10l4.3-4.3a1 1 0 0 0-1.4-1.4L10 8.6 5.3 4.3Z" />
@@ -158,11 +144,10 @@ type ListenButtonProps = {
   state: PlaceStoryState;
   progress: number;
   onToggle: () => void;
-  compact?: boolean;
 };
 
 /** „Posłuchaj Sawy”: tło przycisku wypełnia się w miarę opowieści, jak pasek postępu. */
-export function ListenButton({ state, progress, onToggle, compact = false }: ListenButtonProps) {
+export function ListenButton({ state, progress, onToggle }: ListenButtonProps) {
   const isPlaying = state === "playing";
   const label = {
     idle: "Posłuchaj Sawy",
@@ -179,9 +164,7 @@ export function ListenButton({ state, progress, onToggle, compact = false }: Lis
       whileTap={{ scale: 0.97 }}
       transition={SPRING}
       aria-label={label}
-      className={`relative flex w-full items-center justify-center gap-2.5 overflow-hidden rounded-[18px] bg-glebia font-bold tracking-[-0.01em] text-white shadow-[0_6px_16px_rgba(23,112,111,0.28)] transition-colors hover:bg-glebia-ciemna ${
-        compact ? "h-12 text-[15px]" : "h-14 text-[17px]"
-      }`}
+      className="relative flex h-14 w-full items-center justify-center gap-2.5 overflow-hidden rounded-[18px] bg-glebia text-[17px] font-bold tracking-[-0.01em] text-white shadow-[0_6px_16px_rgba(23,112,111,0.28)] transition-colors hover:bg-glebia-ciemna"
     >
       <span
         aria-hidden="true"

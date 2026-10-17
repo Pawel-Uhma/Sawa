@@ -4,6 +4,9 @@
 
 ## Teraz
 
+- 16:00 (Paweł, z agentem R3): mapa rysuje każdą linię trasy innym kolorem (`LINE_COLORS` w `map-style.ts`, kolejne odcinki tej samej linii dzielą kolor), start i przesiadki to kółka w kolorze linii z jej numerem, a przejście między przystankami to kropkowana linia. Zamiast koloru wg `mode` (`LEG_MODE_COLORS` usunięte; Antek: do akceptacji, `features/map`). Suwak czasu: podpisy stoją w miejscach swoich wartości.
+- 15:54 (Paweł, z agentem R3): karta miejsca: wybrany wariant A (arkusz jak w Mapach Apple), B i C oraz przełącznik usunięte. Kod: `features/demo/components/place-card.tsx` (powłoka i części), `place-details.tsx` (treść), `place-card-host.tsx`.
+
 - 15:47 (Paweł, z agentem R3): karta miejsca na ekranie głównym (klik w pin): 3 propozycje w kodzie do wyboru, przełącznik u góry ekranu ([dziennik UI](ui/README.md)). Po wyborze zostaje jeden wariant, a przełącznik znika. W `features/map/index.ts` dodany eksport `usePlace`, `useSelectedPlace`, `PLACE_KIND_LABELS`, `placeKindColor` (Antek: do akceptacji).
 
 - 15:55 (Paweł, z agentem R3): ekran główny demo ma wybór końca trasy: „Przed siebie”, „Wracam tu” (`returnToStart`) i „Do celu” (`destination`: 4 gotowe cele albo stuknięcie w mapę). Cel to koralowa kropka na mapie, a arkusz trasy mówi, gdy planer nie dojechał (`endsAtDestination`/`endsAtStart` = false). `SawaMap` ma dwa nowe propsy: `destination` i `onMapClick`.
