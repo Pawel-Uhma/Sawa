@@ -2,9 +2,10 @@ import { z } from "zod";
 import type { VehicleReport } from "../../domain/vehicles/types";
 import { AppError } from "../../lib/errors";
 import type { VehiclePositionSource } from "../../services/ports";
+import { DEFAULT_WAW_API, type WawApi, wawActionUrl, wawHeaders } from "./api";
 import { warsawTimeToDate } from "./departures";
 
-const ENDPOINT = "https://dane.um.warszawa.pl/api/action/get_ztm_lokalizacja_pojazdow";
+const ACTION = "get_ztm_lokalizacja_pojazdow";
 const TIMEOUT_MS = 5_000;
 const TYPES = [
   { type: 1, mode: "bus" },
@@ -55,11 +56,15 @@ export function parseVehiclePositions(body: unknown, mode: "bus" | "tram"): Vehi
 }
 
 /** Buses and trams from ZTM (dane.um.warszawa.pl, refreshed every 10 s). */
-export function createWawVehiclePositionSource(token: string): VehiclePositionSource {
+export function createWawVehiclePositionSource(
+  token: string,
+  api: WawApi = DEFAULT_WAW_API,
+): VehiclePositionSource {
+  const endpoint = wawActionUrl(api, ACTION);
   async function fetchType(type: 1 | 2, mode: "bus" | "tram"): Promise<VehicleReport[]> {
-    const res = await fetch(ENDPOINT, {
+    const res = await fetch(endpoint, {
       method: "POST",
-      headers: { Authorization: token, "Content-Type": "application/json" },
+      headers: wawHeaders(api, token),
       body: JSON.stringify({ type }),
       signal: AbortSignal.timeout(TIMEOUT_MS),
     }).catch((err: unknown) => {

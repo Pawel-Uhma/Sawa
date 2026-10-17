@@ -4,10 +4,12 @@ import type { Place } from "@sawa/shared";
 import { useState } from "react";
 import { FadeImage, SkeletonLines } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
+import { placeTopic } from "@/features/map";
 import { placeTagLabel } from "@/lib/interest-labels";
 import type { Listener } from "../lib/api-data";
 import { haptic } from "../lib/device";
 import { usePlaceStory } from "../lib/place-story";
+import { topicStyle } from "../lib/topic-style";
 import { PinIcon } from "./icons";
 import {
   CloseButton,
@@ -98,14 +100,21 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
 
       {place.interests.length > 0 && (
         <ul className="mt-4 flex flex-wrap gap-1.5">
-          {place.interests.map((tag) => (
-            <li
-              key={tag}
-              className="rounded-full bg-mieta-jasna px-2.5 py-1 text-xs font-bold text-glebia-ciemna"
-            >
-              {placeTagLabel(tag, lang)}
-            </li>
-          ))}
+          {place.interests.map((tag) => {
+            // Tag w kolorze swojego tematu, jak obwódka miejsca na mapie
+            const topic = placeTopic([tag]);
+            return (
+              <li
+                key={tag}
+                style={topic ? topicStyle(topic) : undefined}
+                className={`rounded-full px-2.5 py-1 text-xs font-bold ${
+                  topic ? "temat bg-(--temat-tlo) text-(--temat)" : "bg-tlo-2 text-tekst-2"
+                }`}
+              >
+                {placeTagLabel(tag, lang)}
+              </li>
+            );
+          })}
         </ul>
       )}
 

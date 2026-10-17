@@ -1,4 +1,11 @@
-import { HACKATHON_VENUE, PLACE_SUBKINDS, type PlaceSubkind } from "@sawa/shared";
+import {
+  HACKATHON_VENUE,
+  INTERESTS,
+  type Interest,
+  interestsOfTags,
+  PLACE_SUBKINDS,
+  type PlaceSubkind,
+} from "@sawa/shared";
 import type { ExpressionSpecification } from "maplibre-gl";
 import type { Lang } from "@/features/i18n";
 
@@ -336,4 +343,64 @@ export function placeKindColorExpression(): ExpressionSpecification {
     color,
   ]);
   return ["match", MARKER, ...pairs, UNKNOWN_KIND_COLOR] as unknown as ExpressionSpecification;
+}
+
+/**
+ * Colours of a topic (Interest), the one legend shared by map rings and topic chips (T-119, #53).
+ * `color`: ring around the place icon, chip border, check and label (AA text on `surface` and `tint`).
+ * `tint`: background of a picked chip. `onColor`: check mark drawn on `color`.
+ * Stops and vehicles stay out of this palette.
+ */
+export type TopicColors = { color: string; tint: string; onColor: string };
+
+export const TOPIC_COLORS: Record<MapTheme, Record<Interest, TopicColors>> = {
+  light: {
+    historical: { color: "#a8402c", tint: "#fbebe6", onColor: "#ffffff" },
+    cultural: { color: "#7a3e9d", tint: "#f3eaf8", onColor: "#ffffff" },
+    sports: { color: "#1f5faa", tint: "#e7eef9", onColor: "#ffffff" },
+    nature: { color: "#2f7a34", tint: "#e6f3e6", onColor: "#ffffff" },
+  },
+  dark: {
+    historical: { color: "#f0a28f", tint: "#3b231e", onColor: "#0e1615" },
+    cultural: { color: "#d1a6ec", tint: "#30233a", onColor: "#0e1615" },
+    sports: { color: "#97bbf0", tint: "#1d2b3f", onColor: "#0e1615" },
+    nature: { color: "#93cf96", tint: "#1d3221", onColor: "#0e1615" },
+  },
+};
+
+/** Places whose tags map to no topic (older seed). */
+export const NO_TOPIC_COLOR: Record<MapTheme, string> = { light: "#71717a", dark: "#a1a1aa" };
+
+/**
+ * One topic for a place with several: the first one the user picked that the place has,
+ * otherwise the first in INTERESTS order. Null when its tags map to no topic.
+ */
+export function placeTopic(
+  tags: readonly string[],
+  picked: readonly string[] = [],
+): Interest | null {
+  const topics = interestsOfTags(tags);
+  return (
+    picked.find((key): key is Interest => topics.includes(key as Interest)) ?? topics[0] ?? null
+  );
+}
+
+export function placeTopicColor(
+  tags: readonly string[],
+  picked: readonly string[],
+  theme: MapTheme,
+): string {
+  const topic = placeTopic(tags, picked);
+  return topic ? TOPIC_COLORS[theme][topic].color : NO_TOPIC_COLOR[theme];
+}
+
+/** MapLibre `match` expression: colour by the `topic` property that PlacesLayer adds to each place. */
+export function placeTopicColorExpression(theme: MapTheme): ExpressionSpecification {
+  const pairs = INTERESTS.flatMap((topic) => [topic, TOPIC_COLORS[theme][topic].color]);
+  return [
+    "match",
+    ["get", "topic"],
+    ...pairs,
+    NO_TOPIC_COLOR[theme],
+  ] as unknown as ExpressionSpecification;
 }

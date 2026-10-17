@@ -339,6 +339,7 @@ export function MapPlayground() {
           padding={state.padding}
           user={user}
           activeStopId={activeStop?.placeId}
+          interests={state.interests}
           onStopClick={state.isStopClickHandled ? handleStopClick : undefined}
           hasPlaceSheet={state.hasPlaceSheet}
           hasZoomControls={state.hasZoomControls}
