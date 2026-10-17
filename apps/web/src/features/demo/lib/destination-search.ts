@@ -6,6 +6,8 @@ import { API_TIMEOUT_MS, api } from "@/lib/api";
 /** Tyle czekamy po ostatnim znaku, zanim zapytamy Google (każde zapytanie kosztuje). */
 const DEBOUNCE_MS = 300;
 const MIN_CHARS = 2;
+/** Wynik żyje kilka minut, nie do zamknięcia karty: poprawka w API ma dotrzeć bez przeładowania. */
+const STALE_MS = 5 * 60 * 1000;
 
 /** Cele z Google Places dla wpisanego tekstu (`GET /v1/destinations`), z opóźnieniem po pisaniu. */
 export function useDestinationSearch(text: string) {
@@ -27,7 +29,7 @@ export function useDestinationSearch(text: string) {
       if (!res.ok) throw new Error(`GET /v1/destinations: ${res.status}`);
       return DestinationsResponseSchema.parse(await res.json()).results;
     },
-    staleTime: Number.POSITIVE_INFINITY,
+    staleTime: STALE_MS,
     placeholderData: keepPreviousData,
     retry: false,
   });

@@ -25,8 +25,10 @@ function stubGoogle(answers: { text?: unknown; autocomplete?: unknown; details?:
 describe("createGoogleDestinationSearch", () => {
   it("puts the typed address before the businesses at it", async () => {
     stubGoogle({ text: textSearch, autocomplete, details });
-    const results = await createGoogleDestinationSearch("key").search("marszałkowska 10");
+    const { results, partial } =
+      await createGoogleDestinationSearch("key").search("marszałkowska 10");
 
+    expect(partial).toBe(false);
     expect(results).toHaveLength(5);
     expect(results[0]).toEqual({
       id: autocomplete.suggestions[0]?.placePrediction.placeId,
@@ -52,11 +54,47 @@ describe("createGoogleDestinationSearch", () => {
     ]);
   });
 
-  it("still returns the places when the address lookup fails", async () => {
+  it("returns the places marked partial and reports why when Autocomplete fails", async () => {
     stubGoogle({ text: textSearch });
-    const results = await createGoogleDestinationSearch("key").search("marszałkowska 10");
+    const onAddressError = vi.fn();
+    const { results, partial } = await createGoogleDestinationSearch("secret-key", {
+      onAddressError,
+    }).search("marszałkowska 10");
+
     expect(results.map((r) => r.name)[0]).toBe("HOTPOT Asia Deli");
     expect(results).toHaveLength(5);
+    expect(partial).toBe(true);
+    expect(onAddressError).toHaveBeenCalledOnce();
+    const message = String((onAddressError.mock.calls[0]?.[0] as Error).message);
+    expect(message).toMatch(/403/);
+    expect(message).not.toContain("secret-key");
+  });
+
+  it("names Google's error status when the address lookup is refused", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: string | URL | Request) =>
+        String(input).endsWith(":searchText")
+          ? Response.json(textSearch)
+          : Response.json(
+              { error: { code: 403, message: "API not enabled", status: "PERMISSION_DENIED" } },
+              { status: 403 },
+            ),
+      ),
+    );
+    const onAddressError = vi.fn();
+    await createGoogleDestinationSearch("key", { onAddressError }).search("lwa");
+    expect((onAddressError.mock.calls[0]?.[0] as Error).message).toMatch(
+      /^Google Places answered 403 PERMISSION_DENIED/,
+    );
+  });
+
+  it("returns the address alone, marked partial, when Text Search fails", async () => {
+    stubGoogle({ autocomplete, details });
+    const { results, partial } =
+      await createGoogleDestinationSearch("key").search("marszałkowska 10");
+    expect(results.map((r) => r.kind)).toEqual(["address"]);
+    expect(partial).toBe(true);
   });
 
   it("fails when neither search answers", async () => {

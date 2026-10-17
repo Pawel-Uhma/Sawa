@@ -95,7 +95,12 @@ const speech = env.ELEVENLABS_KEY
   : undefined;
 
 const destinations = env.GOOGLE_PLACES_API_KEY
-  ? createDestinationService(createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY))
+  ? createDestinationService(
+      createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY, {
+        // Shows whether the key has Autocomplete and Place Details enabled; the key is never logged.
+        onAddressError: (err) => logger.warn({ err }, "destination address lookup failed"),
+      }),
+    )
   : undefined;
 
 const app = createApp({
