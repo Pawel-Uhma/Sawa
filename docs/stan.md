@@ -1,9 +1,10 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 16:30 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 17:50 (Szczepan, z agentem)
 
 ## Teraz
 
+- R1 (Szczepan, 17:50): trasy od 5 min i odcinki piesze ([12-plan-mvp.md](12-plan-mvp.md) §7 pkt 9). `MIN_DURATION_MIN` = 5; poniżej 30 min trasa może być samym spacerem. **Dla R3:** `Leg.mode` ma nową wartość `walk` (`line` pusty, proste odcinki); trasy komunikacją zaczynają się od dojścia na przystanek (`legs[0]` może być `walk`), `RoutePlace.legIndex` wskazuje właściwy odcinek. Dodałem minimalnie: kolor `walk` w `map-style.ts` i `route-layer.tsx`, szary znaczek „pieszo” w `rides-panel.tsx`; suwak czasu może zejść do 5 min. **Dla R4:** opowieści mogą dotyczyć też odcinków pieszych (wolniej, miejsca bliżej).
 - R1 (Szczepan, 16:30): planer czyta odpowiedzi z onboardingu: `tags` (kafelki), `familiarity`, `storyStyle` w `POST /v1/routes/plan` ([12-plan-mvp.md](12-plan-mvp.md) §7 pkt 8). Odjazdy z prawdziwym tokenem działają (PR #20: API zwraca gołą tablicę). **Dla R3:** w `api-data.ts` `planRoute` przyjmuje trzeci argument z profilem, `demo-app.tsx` go przekazuje (2 linie w Waszych plikach); `rides-panel.tsx` nadal bez profilu. **Dla R4:** `storyStyle` zmienia tylko odstępy (deep = dłuższe `windowSec`), prompt może go też czytać.
 - R1 (Szczepan, 15:00): planer bierze odjazdy z rozkładu ZTM dla każdego odcinka, także przesiadek. **Dla R3:** `Leg.realDeparture: true` = godzina z rozkładu; bez pola godzina jest szacowana (można pokazać „ok. 14:05”). Do sprawdzenia z prawdziwym tokenem (T-17).
 - R1 (Szczepan, 14:40): planer przyjmuje punkt końcowy: `destination: {lat, lng}` w `POST /v1/routes/plan` (nie razem z `returnToStart`), odpowiedź ma `endsAtDestination`. **Dla R3:** wybór celu na mapie wysyła `destination`; gdy `endsAtDestination` jest `false`, pokaż, że do celu nie udało się dojechać. Szczegóły: [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 7.

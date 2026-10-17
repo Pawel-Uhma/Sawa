@@ -1,4 +1,4 @@
-import { HACKATHON_VENUE, haversineM, INTERESTS, RouteSchema } from "@sawa/shared";
+import { HACKATHON_VENUE, haversineM, INTERESTS, type Route, RouteSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
@@ -8,6 +8,8 @@ import type { DepartureSource } from "./ports";
 // Integration test on the committed data files (real Warsaw network and places).
 const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
 const places = createFilePlacesRepository(new URL("../../data/places.geojson", import.meta.url));
+/** Tram and bus legs, without the walks to and from the stops. */
+const rideLegs = (route: Route) => route.legs.filter((l) => l.mode !== "walk");
 const NOW = new Date("2026-10-17T14:00:00+02:00");
 
 describe("route planner on real data", () => {
@@ -24,8 +26,8 @@ describe("route planner on real data", () => {
       ),
     );
     expect(performance.now() - started).toBeLessThan(2000);
-    expect(route.legs.length).toBeGreaterThan(0);
-    expect(route.legs.length).toBeLessThanOrEqual(3);
+    expect(rideLegs(route).length).toBeGreaterThan(0);
+    expect(rideLegs(route).length).toBeLessThanOrEqual(3);
     expect(route.places.length).toBeGreaterThanOrEqual(3);
     expect(route.totalMin).toBeLessThanOrEqual(durationMin * 1.1);
   });
@@ -73,6 +75,36 @@ describe("route planner on real data", () => {
     expect(route.places.length).toBeGreaterThan(0);
   });
 
+  it.each([5, 10])("plans a %i-minute walk past places", async (durationMin) => {
+    const route = RouteSchema.parse(
+      await planner.plan({ origin: HACKATHON_VENUE, durationMin, interests: ["historical"] }, NOW),
+    );
+    expect(route.legs.map((l) => l.mode)).toEqual(["walk"]);
+    expect(route.totalMin).toBeLessThanOrEqual(durationMin * 1.1);
+    expect(route.places.length).toBeGreaterThan(0);
+  });
+
+  it("shows the walk to the first stop and keeps places on their ride legs", async () => {
+    const route = await planner.plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"] },
+      NOW,
+    );
+    expect(route.legs[0]?.mode).toBe("walk");
+    expect(route.legs[0]?.fromStop.position).toEqual(HACKATHON_VENUE);
+    expect(route.legs[0]?.toStop.id).toBe(route.legs[1]?.fromStop.id);
+    for (const p of route.places) expect(route.legs[p.legIndex]?.mode).not.toBe("walk");
+  });
+
+  it("walks from the last stop back to the start of a loop", async () => {
+    const route = await planner.plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], returnToStart: true },
+      NOW,
+    );
+    const last = route.legs[route.legs.length - 1];
+    expect(last?.mode).toBe("walk");
+    expect(last?.toStop.position).toEqual(HACKATHON_VENUE);
+  });
+
   it("plans a ride that ends at the Castle Square", async () => {
     const castleSquare = { lat: 52.2477, lng: 21.0137 };
     const route = RouteSchema.parse(
@@ -90,7 +122,7 @@ describe("route planner on real data", () => {
     const end = route.legs[route.legs.length - 1]?.toStop.position;
     expect(end && haversineM(end, castleSquare)).toBeLessThanOrEqual(600);
     expect(route.totalMin).toBeLessThanOrEqual(60 * 1.1);
-    const lines = route.legs.map((l) => l.line);
+    const lines = rideLegs(route).map((l) => l.line);
     expect(new Set(lines).size).toBe(lines.length);
   });
 
@@ -99,7 +131,7 @@ describe("route planner on real data", () => {
       { origin: { lat: 52.2297, lng: 20.9719 }, durationMin, interests: ["historical"] },
       NOW,
     );
-    for (const leg of route.legs) expect(leg.durationMin).toBeGreaterThanOrEqual(3);
+    for (const leg of rideLegs(route)) expect(leg.durationMin).toBeGreaterThanOrEqual(3);
   });
 
   it("moves every leg to a real departure", async () => {
@@ -115,7 +147,7 @@ describe("route planner on real data", () => {
         NOW,
       ),
     );
-    for (const leg of route.legs) {
+    for (const leg of rideLegs(route)) {
       expect(leg.realDeparture).toBe(true);
       const min = (new Date(leg.departAt).getTime() - NOW.getTime()) / 60_000;
       expect((min - 3) % 7).toBeCloseTo(0);
