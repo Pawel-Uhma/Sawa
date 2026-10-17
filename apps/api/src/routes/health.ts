@@ -1,25 +1,29 @@
 import type { Health } from "@sawa/shared";
 import { Hono } from "hono";
 
+import { warsawDate } from "../lib/warsaw-date";
+
+export { warsawDate };
+
 const VERSION = process.env.RAILWAY_GIT_COMMIT_SHA?.slice(0, 7) ?? "dev";
 
-/** Today's date in Warsaw, YYYY-MM-DD. */
-export function warsawDate(now: Date): string {
-  return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Warsaw" }).format(now);
-}
-
 /**
- * `GET /health`. With `transitDate` it also says whether the GTFS snapshot is for today:
- * the graph is built for one day, so after midnight it needs a rebuild (T-18).
+ * `GET /health`. With `transitDate` it also says whether the GTFS snapshot in use is for today:
+ * each graph covers one day, and when the built days run out the last one stays (T-18).
  */
-export function createHealthRoutes(transitDate?: string, clock: () => Date = () => new Date()) {
-  return new Hono().get("/health", (c) =>
-    c.json({
+export function createHealthRoutes(
+  transitDate?: string | ((now: Date) => string),
+  clock: () => Date = () => new Date(),
+) {
+  return new Hono().get("/health", (c) => {
+    const now = clock();
+    const date = typeof transitDate === "function" ? transitDate(now) : transitDate;
+    return c.json({
       ok: true,
       version: VERSION,
-      ...(transitDate ? { transitDate, transitIsToday: transitDate === warsawDate(clock()) } : {}),
-    } satisfies Health),
-  );
+      ...(date ? { transitDate: date, transitIsToday: date === warsawDate(now) } : {}),
+    } satisfies Health);
+  });
 }
 
 export const healthRoutes = createHealthRoutes();

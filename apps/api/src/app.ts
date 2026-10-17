@@ -44,8 +44,8 @@ export type AppConfig = {
   corsPreviewPattern?: string;
   /** Mounts /debug/* pages (route planner preview) and POST /v1/speech for any text. */
   debugPages?: boolean;
-  /** Service day of the transit graph, reported by /health. */
-  transitDate?: string;
+  /** Service day of the transit graph in use at `now`, reported by /health. */
+  transitDate?: string | ((now: Date) => string);
   services: AppServices;
   onUnexpectedError?: (err: unknown) => void;
 };
