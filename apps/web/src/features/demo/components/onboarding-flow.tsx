@@ -243,7 +243,7 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
     case "how":
       return "To proste: trzy kroki i jedziemy.";
     case "familiarity":
-      return "Teraz o Tobie. Znasz Warszawę?";
+      return "Teraz o Tobie. Trzy szybkie pytania.";
     case "interests": {
       const last = profile.interests.at(-1);
       if (!last) return "Co Cię ciekawi? Możesz wybrać kilka.";

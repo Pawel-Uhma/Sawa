@@ -181,10 +181,12 @@ export function How({ onNext }: IntroProps) {
       </motion.p>
 
       <div className="mt-auto flex flex-col gap-3 md:mt-0 md:flex-row md:items-center md:gap-5">
-        <PrimaryButton onClick={onNext} className="md:w-auto md:px-12">
+        <PrimaryButton onClick={onNext} className="md:w-auto md:shrink-0 md:px-10">
           Dopasujmy trasę do Ciebie
         </PrimaryButton>
-        <p className="text-center text-sm text-tekst-3 md:text-left">3 pytania · ok. 15 sekund</p>
+        <p className="text-center text-sm text-tekst-3 md:whitespace-nowrap md:text-left">
+          3 pytania · ok. 15 sekund
+        </p>
       </div>
     </div>
   );
