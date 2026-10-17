@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kółka klastrów 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --glebia: #17706f; --mieta: #8ed1b5; --mieta-jasna: #ddf2e9; --tekst: #102b2a; --tekst-2: #4c6462; --koral: #f2755f; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #f4f6f5; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: var(--tekst); }
+  .siatka { display: grid; grid-template-columns: repeat(3, 387px); gap: 28px; padding: 28px; width: max-content; }
+  h2 { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
+  h2 span { color: var(--koral); margin-right: 6px; }
+  h2 em { font-style: normal; font-size: 12px; font-weight: 700; color: var(--tekst-2); margin-left: 6px; }
+  p { font-size: 12.5px; color: var(--tekst-2); line-height: 1.4; margin: 4px 0 12px; min-height: 52px; }
+  .ramka { position: relative; width: 387px; height: 358px; border-radius: 22px 22px 0 0; overflow: hidden;
+    background: url(klastry-tlo.png) 0 0 / 387px 358px; }
+  .ciemna { position: relative; width: 387px; height: 78px; border-radius: 0 0 22px 22px; overflow: hidden;
+    background: radial-gradient(120px 60px at 70% 30%, #26302f, transparent), linear-gradient(160deg, #1d2524, #151b1a);
+    background-color: #171d1c; }
+  .ciemna::before { content: ""; position: absolute; inset: 0;
+    background: linear-gradient(28deg, transparent 47%, #2e3938 48%, #2e3938 50%, transparent 51%),
+                linear-gradient(-12deg, transparent 60%, #2a3433 61%, #2a3433 62.5%, transparent 63.5%); }
+  .karta { border-radius: 22px; box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 12px 32px rgba(16,43,42,.12); }
+  /* Zakrywa stare kółko ze zrzutu. */
+  .gumka { position: absolute; width: 40px; height: 40px; margin: -20px; border-radius: 50%; background: #efefec; filter: blur(3px); }
+  .k { position: absolute; transform: translate(-50%, -50%); display: grid; place-items: center; border-radius: 50%;
+    font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.02em; line-height: 1; }
+  .ciemna .k { --tlo-mapy: #171d1c; }
+
+  /* 0: obecny (Szkło) */
+  .o { width: 36px; height: 36px; background: rgba(255,255,255,.92); color: var(--glebia); font-size: 13.5px;
+    border: 1.5px solid rgba(23,112,111,.35); box-shadow: 0 3px 10px rgba(16,43,42,.18); }
+  .o.duzy { width: 42px; height: 42px; font-size: 15px; }
+  .ciemna .o { background: rgba(23,33,32,.92); color: var(--mieta); border-color: rgba(142,209,181,.4); box-shadow: 0 3px 10px rgba(0,0,0,.5); }
+
+  /* A: Naklejka — jak znaczniki miejsc: pełny kolor, gruba biała obwódka */
+  .a { width: 36px; height: 36px; background: var(--glebia); color: #fff; font-size: 13.5px;
+    box-shadow: 0 0 0 3px #fff, 0 3px 8px 2px rgba(16,43,42,.28); }
+  .a.duzy { width: 42px; height: 42px; font-size: 15px; }
+  .ciemna .a { background: var(--mieta); color: var(--tekst); box-shadow: 0 0 0 3px #fff, 0 3px 8px 2px rgba(0,0,0,.5); }
+
+  /* B: Stos — kilka naklejek jedna na drugiej */
+  .b { width: 34px; height: 34px; background: #fff; color: var(--glebia); font-size: 13.5px;
+    box-shadow: 0 0 0 1.5px rgba(23,112,111,.35), 5px -5px 0 -1px var(--mieta-jasna), 5px -5px 0 .5px rgba(23,112,111,.3),
+      10px -10px 0 -3px var(--mieta), 10px -10px 0 -1.5px #fff, 0 3px 8px rgba(16,43,42,.22); }
+  .b.duzy { width: 40px; height: 40px; font-size: 15px; }
+  .ciemna .b { background: #24302f; color: var(--mieta);
+    box-shadow: 0 0 0 1.5px rgba(142,209,181,.4), 5px -5px 0 -1px #2f3e3c, 5px -5px 0 .5px #171d1c,
+      10px -10px 0 -3px var(--glebia), 10px -10px 0 -1.5px #171d1c, 0 3px 8px rgba(0,0,0,.5); }
+
+  /* C: Pigułka z ikoną przeważającego rodzaju */
+  .c { border-radius: 99px; height: 30px; padding: 0 10px 0 6px; display: flex; gap: 4px; align-items: center;
+    background: #fff; color: var(--tekst); font-size: 13px; box-shadow: 0 0 0 1px rgba(16,43,42,.1), 0 3px 10px rgba(16,43,42,.2); }
+  .c svg { width: 18px; height: 18px; }
+  .c.duzy { height: 34px; font-size: 14.5px; }
+  .ciemna .c { background: #24302f; color: #eef5f3; box-shadow: 0 0 0 1px rgba(255,255,255,.08), 0 3px 10px rgba(0,0,0,.5); }
+
+  /* D: Tarcza — jądro w Głębi, pierścień rośnie z liczbą */
+  .d { width: 28px; height: 28px; background: var(--glebia); color: #fff; font-size: 12.5px;
+    box-shadow: 0 0 0 2.5px #fff, 0 0 0 5px var(--mieta), 0 2px 10px 5px rgba(16,43,42,.2); }
+  .d.duzy { width: 32px; height: 32px; font-size: 13.5px;
+    box-shadow: 0 0 0 2.5px #fff, 0 0 0 7px var(--mieta), 0 2px 12px 7px rgba(16,43,42,.2); }
+  .ciemna .d { background: var(--mieta); color: var(--tekst); box-shadow: 0 0 0 2.5px #171d1c, 0 0 0 5px rgba(142,209,181,.45); }
+
+  /* E: Kropki składu — liczba i trzy największe grupy w kolorach znaczników */
+  .e { width: 38px; height: 38px; background: #fff; color: var(--tekst); font-size: 13px; padding-bottom: 7px;
+    box-shadow: 0 0 0 1px rgba(16,43,42,.1), 0 3px 10px rgba(16,43,42,.2); }
+  .e i { position: absolute; bottom: 7px; left: 50%; transform: translateX(-50%); display: flex; gap: 2.5px; }
+  .e i b { width: 5px; height: 5px; border-radius: 50%; }
+  .e.duzy { width: 44px; height: 44px; font-size: 15px; }
+  .ciemna .e { background: #24302f; color: #eef5f3; box-shadow: 0 0 0 1px rgba(255,255,255,.08), 0 3px 10px rgba(0,0,0,.5); }
+</style></head>
+<body>
+<div class="siatka" id="siatka"></div>
+<script>
+// Ikony z apps/web/src/features/map/lib/place-glyphs.json, kolory grup z PLACE_GROUP_COLORS.
+const GLIFY = {
+  tenement: ['#4f6d9a', 'M5 21V6l2-3h10l2 3v15h-5v-4h-4v4Z M8 7.5h2v2.5H8Z M14 7.5h2v2.5h-2Z M8 12h2v2.5H8Z M14 12h2v2.5h-2Z'],
+  monument: ['#b5543c', 'M10 4.5 12 2l2 2.5V16h-4Z M6.5 17h11v4h-11Z'],
+  church: ['#8e4585', 'M10.4 2h3.2v5h5v3.2h-5V22h-3.2V10.2h-5V7h5Z'],
+  museum: ['#d4902a', 'M2.5 3.5h19v17h-19Z M5 6v12h14V6Z M6.5 16.5l4-5.5 3 3.8 2-2.3 2 4Z M15.5 7.2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z'],
+  park: ['#3f7d5a', 'M12 2a6 6 0 0 1 5.7 7.9A4.6 4.6 0 0 1 15.2 18H13.2v4h-2.4v-4H8.8A4.6 4.6 0 0 1 6.3 9.9 6 6 0 0 1 12 2Z'],
+};
+const glif = (k) => `<svg viewBox="0 0 24 24"><path fill="${GLIFY[k][0]}" fill-rule="evenodd" d="${GLIFY[k][1]}"/></svg>`;
+// Środki kółek ze zrzutu (css px przy 387 × 358), liczby, przeważający rodzaj i 3 największe grupy.
+const KLASTRY = [
+  { x: 72, y: 58, n: 14, ikona: 'tenement', sklad: ['tenement', 'monument', 'church'] },
+  { x: 129, y: 214, n: 11, ikona: 'monument', sklad: ['monument', 'tenement', 'park'] },
+  { x: 205, y: 216, n: 13, ikona: 'tenement', sklad: ['tenement', 'museum', 'monument'] },
+  { x: 11, y: 296, n: 10, ikona: 'church', sklad: ['church', 'tenement', 'park'] },
+  { x: -2, y: 108, n: 52, duzy: true, ikona: 'tenement', sklad: ['tenement', 'monument', 'museum'] },
+  { x: 188, y: 360, n: 21, ikona: 'park', sklad: ['park', 'tenement', 'church'] },
+];
+const CIEMNE = [{ x: 70, y: 40, n: 14, ikona: 'tenement', sklad: ['tenement', 'monument', 'church'] },
+  { x: 195, y: 38, n: 52, duzy: true, ikona: 'monument', sklad: ['monument', 'tenement', 'museum'] },
+  { x: 315, y: 42, n: 11, ikona: 'park', sklad: ['park', 'church', 'tenement'] }];
+const WARIANTY = [
+  ['o', '0', 'Szkło', 'obecny', 'Styl wdrożony o 19:00 (wybór B z pierwszej rundy), dla porównania. Lekki, ale blady: na jasnej mapie ginie, wygląda jak dziura w mapie.'],
+  ['a', 'A', 'Naklejka', '', 'Ten sam język co znaczniki miejsc: pełna Głębia, gruba biała obwódka, cień jak u naklejki. Kółko i ikony wyglądają na jeden zestaw.'],
+  ['b', 'B', 'Stos', '', 'Białe kółko z dwiema miętowymi kartami za plecami. Bez czytania liczby widać, że „pod spodem jest więcej”. Rysowane jako obraz, nie warstwa circle.'],
+  ['c', 'C', 'Pigułka z ikoną', '', 'Ikona rodzaju, którego w grupie najwięcej, i liczba. Mówi nie tylko „ile”, ale „czego”. Potrzebny clusterProperties z licznikiem rodzajów.'],
+  ['d', 'D', 'Tarcza', '', 'Małe jądro w Głębi, biała przerwa i miętowy pierścień, szerszy przy większej grupie. Kompaktowe, nie zasłania ulic.'],
+  ['e', 'E', 'Kropki składu', '', 'Białe kółko z liczbą i trzema kropkami w kolorach grup znaczników. Lżejsze niż pierścień rodzajów z pierwszej rundy, wciąż widać skład.'],
+];
+function kolko(cls, k) {
+  const el = document.createElement('div');
+  el.className = `k ${cls}${k.duzy ? ' duzy' : ''}`;
+  el.style.left = k.x + 'px'; el.style.top = k.y + 'px';
+  if (cls === 'c') el.innerHTML = glif(k.ikona) + k.n;
+  else if (cls === 'e') el.innerHTML = `${k.n}<i>${k.sklad.map((s) => `<b style="background:${GLIFY[s][0]}"></b>`).join('')}</i>`;
+  else el.textContent = k.n;
+  return el;
+}
+const siatka = document.getElementById('siatka');
+for (const [cls, lit, nazwa, dopisek, opis] of WARIANTY) {
+  const w = document.createElement('div');
+  w.innerHTML = `<h2><span>${lit}</span>${nazwa}${dopisek ? `<em>${dopisek}</em>` : ''}</h2><p>${opis}</p><div class="karta"><div class="ramka"></div><div class="ciemna"></div></div>`;
+  const ramka = w.querySelector('.ramka');
+  for (const k of KLASTRY) {
+    const g = document.createElement('div');
+    g.className = 'gumka'; g.style.left = k.x + 'px'; g.style.top = k.y + 'px';
+    ramka.append(g, kolko(cls, k));
+  }
+  const ciemna = w.querySelector('.ciemna');
+  for (const k of CIEMNE) ciemna.append(kolko(cls, k));
+  siatka.append(w);
+}
+</script>
+</body></html>
