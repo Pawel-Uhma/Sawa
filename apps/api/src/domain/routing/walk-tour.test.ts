@@ -1,12 +1,17 @@
-import { haversineM } from "@sawa/shared";
+import { haversineM, type LatLng } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
 import {
   isLoop,
   placesAlong,
+  planBeamWalk,
+  planSquareLoop,
+  planSquareLoops,
   planWalk,
+  polylineM,
+  resizeLoop,
   retracedShare,
-  roundness,
+  squareness,
   toSegment,
   turnBackM,
   walkThrough,
@@ -139,12 +144,12 @@ describe("walking back the same way", () => {
   };
 
   it("goes out and back when nothing penalises it", () => {
-    const walk = planWalk(loop, { backtrackPenalty: 0, loopRoundnessBonus: 0 });
+    const walk = planBeamWalk(loop, { backtrackPenalty: 0 });
     expect(walk?.waypoints).toHaveLength(3);
   });
 
   it("comes back another way when one fits the time", () => {
-    const walk = planWalk(loop);
+    const walk = planBeamWalk(loop);
     expect(walk?.waypoints.map((p) => p.lat)).toEqual([52.23, 52.2316, 52.23, 52.23]);
     expect(walk?.elapsedSec).toBeLessThanOrEqual(1.1 * 20 * 60);
   });
@@ -191,24 +196,6 @@ describe("turning back along the street just walked", () => {
   });
 });
 
-describe("roundness", () => {
-  const ll = (lng: number, lat: number) => ({ lat, lng });
-
-  it("is high for a square and zero for out and back along one line", () => {
-    // ~140 × 140 m square.
-    const square = [ll(21.0, 52.23), ll(21.002, 52.23), ll(21.002, 52.23126), ll(21.0, 52.23126)];
-    expect(roundness(square)).toBeCloseTo(Math.PI / 4, 1);
-    expect(roundness([ORIGIN, ll(21.004, 52.23), ORIGIN])).toBe(0);
-    expect(roundness([ORIGIN, ll(21.004, 52.23)])).toBe(0);
-  });
-
-  it("is low for a lollipop: out, a street over, back along it", () => {
-    const lollipop = [ORIGIN, ll(21.006, 52.23), ll(21.006, 52.2306), ll(21.0, 52.2306)];
-    const square = [ORIGIN, ll(21.003, 52.23), ll(21.003, 52.2318), ll(21.0, 52.2318)];
-    expect(roundness(lollipop)).toBeLessThan(roundness(square) / 2);
-  });
-});
-
 describe("isLoop", () => {
   it("is a loop only when the walk ends at the start", () => {
     expect(isLoop(ORIGIN, ORIGIN)).toBe(true);
@@ -218,52 +205,95 @@ describe("isLoop", () => {
   });
 });
 
-describe("a loop comes back around, not along the way out", () => {
-  // A street east of the origin, a parallel one ~65 m north and another ~330 m north.
-  const grid = [
-    place("e1", 21.002, 52.23, ["historical"]),
-    place("e2", 21.004, 52.23, ["historical"]),
-    place("e3", 21.006, 52.23, ["historical"]),
-    place("p1", 21.005, 52.2306, ["historical"]),
-    place("p2", 21.002, 52.2306, ["historical"]),
-    place("n1", 21.006, 52.233, ["historical"], 0.6),
-    place("n2", 21.003, 52.233, ["historical"], 0.6),
-    place("n3", 21.0, 52.233, ["historical"], 0.6),
+describe("squareness", () => {
+  const ll = (lng: number, lat: number) => ({ lat, lng });
+
+  it("is 1 for a square, low for a lollipop and zero for out and back", () => {
+    const square = [ORIGIN, ll(21.003, 52.23), ll(21.003, 52.2318), ll(21.0, 52.2318)];
+    const lollipop = [ORIGIN, ll(21.006, 52.23), ll(21.006, 52.2306), ll(21.0, 52.2306)];
+    expect(squareness(square)).toBeCloseTo(1, 1);
+    expect(squareness(lollipop)).toBeLessThan(0.6);
+    expect(squareness([ORIGIN, ll(21.004, 52.23), ORIGIN])).toBe(0);
+  });
+});
+
+describe("a loop walks round a square of places", () => {
+  // 24 min at 0.92 m/s: a square of ~330 m sides, east, then north-east, then north of the origin.
+  const corners = [
+    place("c1", 21.005, 52.2301, ["historical"]),
+    place("c2", 21.0047, 52.2331, ["historical"]),
+    place("c3", 20.9998, 52.2328, ["historical"]),
   ];
-  const loop = {
-    places: grid,
+  const onSide = place("side", 21.0049, 52.2315, ["historical"]);
+  const west = place("west", 20.996, 52.2315, ["historical"]);
+  const loop = (places = [...corners, onSide, west]) => ({
+    places,
     origin: ORIGIN,
     end: ORIGIN,
-    budgetSec: 20 * 60,
+    budgetSec: 24 * 60,
     interests: new Set(["historical"]),
-  };
-  const kx = 111_320 * Math.cos((ORIGIN.lat * Math.PI) / 180);
-  const areaM2 = (points: { lat: number; lng: number }[]) =>
-    Math.abs(
-      points.reduce((sum, a, i) => {
-        const b = points[(i + 1) % points.length] as { lat: number; lng: number };
-        return (
-          sum +
-          ((a.lng - ORIGIN.lng) * kx * (b.lat - ORIGIN.lat) -
-            (b.lng - ORIGIN.lng) * kx * (a.lat - ORIGIN.lat)) *
-            111_320
-        );
-      }, 0) / 2,
-    );
-
-  it("goes round the block and encloses more than a zig-zag along the parallel streets", () => {
-    const flat = planWalk(loop, { loopRoundnessBonus: 0 });
-    const round = planWalk(loop);
-    expect(flat && roundness(flat.waypoints)).toBeLessThan(0.3);
-    expect(round && roundness(round.waypoints)).toBeGreaterThan(0.6);
-    expect(round && flat && areaM2(round.waypoints)).toBeGreaterThan(
-      2 * areaM2(flat?.waypoints ?? []),
-    );
-    expect(round?.elapsedSec).toBeLessThanOrEqual(1.1 * 20 * 60);
   });
 
-  it("leaves walks to a destination as they were", () => {
-    const toDestination = { ...loop, end: { lat: 52.233, lng: 21.006 } };
-    expect(planWalk(toDestination)).toEqual(planWalk(toDestination, { loopRoundnessBonus: 0 }));
+  it("walks through places near the three corners and back to the start", () => {
+    const walk = planSquareLoop(loop());
+    expect(walk.waypoints).toEqual([ORIGIN, ...corners.map((c) => c.position), ORIGIN]);
+    expect(Math.abs(walk.elapsedSec - 24 * 60)).toBeLessThanOrEqual(0.1 * 24 * 60);
+  });
+
+  it("collects the places by its sides in walking order, not those off it", () => {
+    const ids = planSquareLoop(loop()).places.map((p) => p.placeId);
+    expect(ids).toEqual(["c1", "side", "c2", "c3"]);
+  });
+
+  it("walks round the bare square that fits the time when no place stands at a corner", () => {
+    const walk = planSquareLoop(loop([west]));
+    const [o, c1, c2] = walk.corners as [LatLng, LatLng, LatLng];
+    expect(walk.corners).toHaveLength(5);
+    expect(haversineM(o, c1)).toBeCloseTo((24 * 60 * 1.2) / (4 * 1.3), -1);
+    expect(haversineM(o, c2)).toBeCloseTo(haversineM(o, c1) * Math.SQRT2, -1);
+    expect(walk.elapsedSec).toBeCloseTo(24 * 60, -1);
+  });
+
+  it("is what planWalk plans for a loop, and walks to a destination stay as they were", () => {
+    expect(planWalk(loop())).toEqual(planSquareLoop(loop()));
+    const toDestination = { ...loop(), end: { lat: 52.233, lng: 21.006 } };
+    expect(planWalk(toDestination)).toEqual(planBeamWalk(toDestination));
+  });
+
+  it("bends a side through an interesting place near it, not only those right by it", () => {
+    // ~40 m off the side from the corner east to the one north-east.
+    const offSide = place("off-side", 21.0055, 52.2316, ["historical"]);
+    const walk = planSquareLoop(loop([...corners, offSide]));
+    expect(walk.waypoints).toContainEqual(offSide.position);
+    expect(walk.places.map((p) => p.placeId)).toEqual(["c1", "off-side", "c2", "c3"]);
+    expect(Math.abs(walk.elapsedSec - 24 * 60)).toBeLessThanOrEqual(0.1 * 24 * 60);
+  });
+
+  it("shrinks a loop by moving its bare corners, keeping the places at its corners", () => {
+    const walk = planSquareLoop(loop([corners[1] as (typeof corners)[number]]));
+    const length = polylineM(walk.corners ?? []);
+    const smaller = resizeLoop(loop([corners[1] as (typeof corners)[number]]), walk, 0.9 * length);
+    expect(smaller && polylineM(smaller.corners ?? [])).toBeCloseTo(0.9 * length, -1);
+    expect(smaller?.corners?.[2]).toEqual(walk.corners?.[2]);
+    expect(resizeLoop(loop(), planSquareLoop(loop()), 1000)).toBeUndefined();
+    expect(resizeLoop(loop([west]), planSquareLoop(loop([west])), 100)).toBeUndefined();
+  });
+
+  it("offers different loops, the best first", () => {
+    const loops = planSquareLoops(loop(), {}, 3);
+    expect(loops[0]).toEqual(planSquareLoop(loop()));
+    expect(loops).toHaveLength(3);
+    for (let i = 1; i < loops.length; i++) {
+      const differs = (loops[i]?.corners ?? []).some(
+        (c, k) => haversineM(c, (loops[0]?.corners ?? [])[k] as LatLng) > 0.3 * 330,
+      );
+      expect(differs).toBe(true);
+    }
+  });
+
+  it("stays at the start when there is no time for a square", () => {
+    const walk = planSquareLoop({ ...loop(), budgetSec: 30 });
+    expect(walk.waypoints).toEqual([ORIGIN, ORIGIN]);
+    expect(walk.places).toEqual([]);
   });
 });

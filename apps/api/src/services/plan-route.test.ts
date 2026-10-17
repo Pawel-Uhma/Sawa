@@ -332,6 +332,50 @@ describe("route planner on real data", () => {
     expect(onRides(route).map((p) => p.placeId)).toEqual(onRides(straight).map((p) => p.placeId));
   });
 
+  it("plans a loop walk so its real path takes about the time", async () => {
+    // Streets 1.6 × the straight line: each segment bent out at its middle.
+    const walkPaths: WalkPathSource = {
+      path: async (points) =>
+        points.flatMap((b, i) => {
+          if (i === 0) return [toLngLat(b)];
+          const a = points[i - 1] as LatLng;
+          const h = Math.sqrt(0.8 ** 2 - 0.5 ** 2);
+          const mid = {
+            lat: (a.lat + b.lat) / 2 - h * (b.lng - a.lng) * Math.cos((a.lat * Math.PI) / 180),
+            lng: (a.lng + b.lng) / 2 + (h * (b.lat - a.lat)) / Math.cos((a.lat * Math.PI) / 180),
+          };
+          return [toLngLat(mid), toLngLat(b)];
+        }),
+    };
+    const route = RouteSchema.parse(
+      await createRoutePlanner({ transit, places, walkPaths }).plan(
+        {
+          origin: HACKATHON_VENUE,
+          durationMin: 30,
+          interests: ["historical"],
+          travel: "walk",
+          returnToStart: true,
+        },
+        NOW,
+      ),
+    );
+    const leg = route.legs[0];
+    const pathM = (leg?.lngLats ?? []).reduce(
+      (sum, p, i, all) =>
+        i === 0
+          ? 0
+          : sum +
+            haversineM(
+              { lat: all[i - 1]?.[1] ?? 0, lng: all[i - 1]?.[0] ?? 0 },
+              { lat: p[1], lng: p[0] },
+            ),
+      0,
+    );
+    expect(route.endsAtStart).toBe(true);
+    expect(Math.abs(pathM / 1.2 - 30 * 60)).toBeLessThanOrEqual(0.25 * 30 * 60);
+    expect(route.totalMin).toBeCloseTo(pathM / 1.2 / 60, 0);
+  });
+
   it("keeps straight walking legs when the walk router has no path", async () => {
     const walkPaths: WalkPathSource = { path: async () => undefined };
     const request: PlanRouteRequest = {
