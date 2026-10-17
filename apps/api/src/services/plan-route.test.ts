@@ -1,4 +1,4 @@
-import { HACKATHON_VENUE, RouteSchema } from "@sawa/shared";
+import { HACKATHON_VENUE, haversineM, RouteSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
@@ -37,6 +37,20 @@ describe("route planner on real data", () => {
         NOW,
       ),
     ).rejects.toMatchObject({ code: "NOT_FOUND" });
+  });
+
+  it.each([60, 120])("plans a %i-minute loop that ends near the start", async (durationMin) => {
+    const route = RouteSchema.parse(
+      await planner.plan(
+        { origin: HACKATHON_VENUE, durationMin, interests: ["historical"], returnToStart: true },
+        NOW,
+      ),
+    );
+    expect(route.endsAtStart).toBe(true);
+    const end = route.legs[route.legs.length - 1]?.toStop.position;
+    expect(end && haversineM(end, HACKATHON_VENUE)).toBeLessThanOrEqual(600);
+    expect(route.totalMin).toBeGreaterThanOrEqual(durationMin * 0.8);
+    expect(route.totalMin).toBeLessThanOrEqual(durationMin * 1.1);
   });
 
   it("moves the ride to the real first departure", async () => {

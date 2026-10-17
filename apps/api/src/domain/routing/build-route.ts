@@ -73,6 +73,7 @@ export function buildRoute({
     legs,
     places,
     totalMin: Math.round(ride.elapsedSec / 6) / 10,
+    endsAtStart: ride.endsAtStart,
     attribution,
   };
 }

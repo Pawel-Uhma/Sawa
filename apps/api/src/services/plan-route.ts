@@ -73,6 +73,7 @@ export function createRoutePlanner(deps: {
         origin: request.origin,
         budgetSec: request.durationMin * 60,
         interests: new Set(request.interests),
+        returnToStart: request.returnToStart,
       });
       if (!ride) {
         throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
