@@ -13,16 +13,28 @@ export const PLACES_SOURCE_ID = "places";
 export const PLACES_LAYER_ID = "places-circle";
 /**
  * Icon scale (1 = 48 css px): grows with zoom, and richer places are a bit larger.
- * Large enough to tell the five shapes apart at zoom 15 (about 36 css px).
+ * About 24 css px at zoom 15 (#90): the shapes stay readable, but icons no longer cover
+ * the route line and its numbered stops (22 px), and fewer of them collide and hide.
  */
 const ICON_SIZE: ExpressionSpecification = [
   "interpolate",
   ["linear"],
   ["zoom"],
   12,
-  ["interpolate", ["linear"], ["get", "richness"], 1, 0.6, 40, 0.7],
+  ["interpolate", ["linear"], ["get", "richness"], 1, 0.36, 40, 0.42],
   17,
-  ["interpolate", ["linear"], ["get", "richness"], 1, 0.85, 40, 0.95],
+  ["interpolate", ["linear"], ["get", "richness"], 1, 0.6, 40, 0.68],
+];
+
+/** Ring around the selected place, just outside the icon at every zoom. */
+const SELECTED_RADIUS: ExpressionSpecification = [
+  "interpolate",
+  ["linear"],
+  ["zoom"],
+  12,
+  13,
+  17,
+  19,
 ];
 
 type PlacesLayerProps = {
@@ -74,7 +86,7 @@ export function PlacesLayer({ places, selectedId, isDimmed, hasIcons, palette }:
         type="circle"
         filter={["==", ["get", "id"], selectedId ?? ""]}
         paint={{
-          "circle-radius": 20,
+          "circle-radius": SELECTED_RADIUS,
           "circle-opacity": 0,
           "circle-stroke-color": palette.selected,
           "circle-stroke-width": 3,
