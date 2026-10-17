@@ -11,6 +11,7 @@ import {
   ListenButton,
   photoCredit,
   Sources,
+  splitName,
   TodayNearby,
 } from "./place-card";
 
@@ -26,7 +27,8 @@ export function PlaceCardA({ place, interests, onClose }: VariantProps) {
   const story = usePlaceStory(place.id, interests);
   const [showAll, setShowAll] = useState(false);
   const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW)).map(cleanFact);
-  const address = place.addressToday ?? place.addressHistoric;
+  const { title, aside } = splitName(place.name);
+  const address = [aside, place.addressToday ?? place.addressHistoric].filter(Boolean).join(" · ");
 
   return (
     <div className="px-[18px] pb-5 pt-6 md:px-6">
@@ -34,7 +36,7 @@ export function PlaceCardA({ place, interests, onClose }: VariantProps) {
         <div className="min-w-0 flex-1">
           <KindLine place={place} />
           <h2 className="mt-1 text-[24px] font-extrabold leading-[1.15] tracking-[-0.025em] text-tekst">
-            {place.name}
+            {title}
           </h2>
           {address && <p className="mt-1 text-[14px] text-tekst-2">{address}</p>}
         </div>
@@ -91,7 +93,10 @@ export function PlaceCardA({ place, interests, onClose }: VariantProps) {
           <ul className="mt-2 space-y-2.5">
             {facts.map((fact) => (
               <li key={fact} className="flex gap-2.5 text-[15px] leading-relaxed text-tekst">
-                <span aria-hidden="true" className="mt-[9px] size-1.5 shrink-0 rounded-full bg-koral" />
+                <span
+                  aria-hidden="true"
+                  className="mt-[9px] size-1.5 shrink-0 rounded-full bg-koral"
+                />
                 {fact}
               </li>
             ))}

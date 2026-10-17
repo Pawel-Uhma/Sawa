@@ -4,6 +4,8 @@
 
 ## Teraz
 
+- 15:47 (Paweł, z agentem R3): karta miejsca na ekranie głównym (klik w pin): 3 propozycje w kodzie do wyboru, przełącznik u góry ekranu ([dziennik UI](ui/README.md)). Po wyborze zostaje jeden wariant, a przełącznik znika. W `features/map/index.ts` dodany eksport `usePlace`, `useSelectedPlace`, `PLACE_KIND_LABELS`, `placeKindColor` (Antek: do akceptacji).
+
 - 15:55 (Paweł, z agentem R3): ekran główny demo ma wybór końca trasy: „Przed siebie”, „Wracam tu” (`returnToStart`) i „Do celu” (`destination`: 4 gotowe cele albo stuknięcie w mapę). Cel to koralowa kropka na mapie, a arkusz trasy mówi, gdy planer nie dojechał (`endsAtDestination`/`endsAtStart` = false). `SawaMap` ma dwa nowe propsy: `destination` i `onMapClick`.
 - 15:42 (Paweł, z agentem R3): Sawa działa jako PWA. Na iPhonie w Safari wybierz „Udostępnij” i „Do ekranu początkowego”: aplikacja otwiera się pełnoekranowo z ikoną syrenki. Dodane `app/manifest.ts`, `app/apple-icon.png` i `public/icons/`.
 - R1 (Szczepan, 15:00): planer bierze odjazdy z rozkładu ZTM dla każdego odcinka, także przesiadek. **Dla R3:** `Leg.realDeparture: true` = godzina z rozkładu; bez pola godzina jest szacowana (można pokazać „ok. 14:05”). Do sprawdzenia z prawdziwym tokenem (T-17).

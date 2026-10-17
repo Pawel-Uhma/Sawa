@@ -6,8 +6,15 @@ import { useState } from "react";
 import { placeKindColor } from "@/features/map";
 import { SPRING } from "../lib/device";
 import { usePlaceStory } from "../lib/place-story";
-import { CloseButton, cleanFact, KindLine, photoCredit, TodayNearby } from "./place-card";
 import { PauseIcon, PlayIcon } from "./icons";
+import {
+  CloseButton,
+  cleanFact,
+  KindLine,
+  photoCredit,
+  splitName,
+  TodayNearby,
+} from "./place-card";
 
 type VariantProps = { place: Place; interests: Interest[]; onClose: () => void };
 
@@ -80,7 +87,11 @@ export function PlaceCardC({ place, interests, onClose }: VariantProps) {
             />
           </svg>
           <span className={story.state === "loading" ? "animate-pulse" : ""}>
-            {isPlaying ? <PauseIcon className="size-6" /> : <PlayIcon className="size-6 translate-x-[1px]" />}
+            {isPlaying ? (
+              <PauseIcon className="size-6" />
+            ) : (
+              <PlayIcon className="size-6 translate-x-[1px]" />
+            )}
           </span>
         </motion.button>
       </div>
@@ -88,7 +99,7 @@ export function PlaceCardC({ place, interests, onClose }: VariantProps) {
       <div className="px-[18px] pt-4 md:px-6">
         <KindLine place={place} className="pr-16" />
         <h2 className="mt-1 pr-16 text-[22px] font-extrabold leading-tight tracking-[-0.025em]">
-          {place.name}
+          {splitName(place.name).title}
         </h2>
 
         {story.text && (
@@ -150,15 +161,12 @@ function EraSwitch({ era, onChange }: { era: Era; onChange: (era: Era) => void }
 
 function ThenView({ place }: { place: Place }) {
   const facts = place.facts.map(cleanFact);
+  const names = [
+    ...new Set([place.addressHistoric, ...place.formerNames.map((n) => n.name)].filter(Boolean)),
+  ].slice(0, 3);
   return (
     <div className="space-y-3">
-      {(place.addressHistoric || place.formerNames.length > 0) && (
-        <p className="text-[14px] text-tekst-2">
-          {[place.addressHistoric, ...place.formerNames.map((n) => n.name)]
-            .filter(Boolean)
-            .join(" · ")}
-        </p>
-      )}
+      {names.length > 0 && <p className="text-[14px] text-tekst-2">{names.join(" · ")}</p>}
       {facts.length > 0 && (
         <ul className="-mx-[18px] flex snap-x snap-mandatory gap-2.5 overflow-x-auto px-[18px] pb-1 [scrollbar-width:none] md:-mx-6 md:px-6">
           {facts.map((fact, index) => (
@@ -177,7 +185,10 @@ function ThenView({ place }: { place: Place }) {
       {place.people.length > 0 && (
         <ul className="flex flex-wrap gap-1.5">
           {place.people.slice(0, 6).map((person) => (
-            <li key={person.name} className="rounded-full bg-mieta-jasna px-2.5 py-1 text-xs font-bold text-glebia-ciemna">
+            <li
+              key={person.name}
+              className="rounded-full bg-mieta-jasna px-2.5 py-1 text-xs font-bold text-glebia-ciemna"
+            >
               {person.name}
             </li>
           ))}
@@ -202,7 +213,9 @@ function NowView({ place }: { place: Place }) {
             {exists}
           </span>
         )}
-        {place.addressToday && <span className="text-[14px] text-tekst-2">{place.addressToday}</span>}
+        {place.addressToday && (
+          <span className="text-[14px] text-tekst-2">{place.addressToday}</span>
+        )}
       </div>
       <TodayNearby place={place} />
       {place.todayNearby.length === 0 && !place.addressToday && (

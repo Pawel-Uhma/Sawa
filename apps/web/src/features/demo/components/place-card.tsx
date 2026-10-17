@@ -197,6 +197,12 @@ export function ListenButton({ state, progress, onToggle, compact = false }: Lis
   );
 }
 
+/** „Kercelak (plac Kercelego, rondo Kercelak)” → tytuł „Kercelak” i podtytuł z nawiasu. */
+export function splitName(name: string): { title: string; aside: string | null } {
+  const match = name.match(/^(.+?)\s*\((.+)\)\s*$/);
+  return match ? { title: match[1], aside: match[2] } : { title: name, aside: null };
+}
+
 /** Fakty z bazy mają na końcu źródło w nawiasie („(Wikipedia pl: Kercelak)”); w karcie źródła są osobno. */
 export function cleanFact(fact: string): string {
   return fact.replace(/\s*\([^()]*\)\s*$/, "");

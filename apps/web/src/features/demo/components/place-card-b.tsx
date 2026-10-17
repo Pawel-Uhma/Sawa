@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { SPRING } from "../lib/device";
 import { usePlaceStory } from "../lib/place-story";
-import { CloseButton, cleanFact, KindLine, ListenButton, Sources } from "./place-card";
+import { CloseButton, cleanFact, KindLine, ListenButton, Sources, splitName } from "./place-card";
 
 type VariantProps = { place: Place; interests: Interest[]; onClose: () => void };
 
@@ -40,7 +40,7 @@ export function PlaceCardB({ place, interests, onClose }: VariantProps) {
         <div className="min-w-0 flex-1">
           <KindLine place={place} />
           <h2 className="mt-0.5 line-clamp-2 text-[19px] font-extrabold leading-tight tracking-[-0.02em]">
-            {place.name}
+            {splitName(place.name).title}
           </h2>
         </div>
         <CloseButton onClick={onClose} />
