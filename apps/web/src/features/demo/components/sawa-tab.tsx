@@ -11,6 +11,7 @@ import { useStoryWaitMessage } from "../lib/story-wait";
 import { FloatingCard, Grabber } from "./floating-card";
 import { CloseIcon, PauseIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
 import { SawaHead } from "./logo";
+import { StoryPhotos } from "./story-photos";
 
 type SawaTabProps = {
   collapsed: boolean;
@@ -106,6 +107,8 @@ export function SawaTab({
                 {stop.name}
               </h3>
             </div>
+
+            <StoryPhotos placeId={stop.id} name={stop.name} />
 
             {/* Transkrypcja: słowa już wypowiedziane są ciemniejsze, reszta jaśniejsza */}
             <p className="min-h-[72px] text-[15px] leading-relaxed text-tekst-3">

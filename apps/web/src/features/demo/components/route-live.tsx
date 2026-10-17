@@ -15,6 +15,7 @@ import { Attribution, Itinerary } from "./departures";
 import { PinIcon } from "./icons";
 import { LiveDot } from "./podcast-controls";
 import { SawaMenuButton } from "./sawa-menu";
+import { StoryPhotos } from "./story-photos";
 
 /*
  * Ekran trasy na żywo (wybrany wariant A, propozycje w docs/ui/README.md).
@@ -284,6 +285,7 @@ export function RouteLive({
             {stop && (
               <section>
                 {/* Bez etykiety: nazwa bieżącego miejsca jest w nagłówku tuż nad zapisem */}
+                {!waiting && <StoryPhotos placeId={stop.id} name={stop.name} className="mb-4" />}
                 {waiting ? (
                   <PlacePreview placeId={stop.id} />
                 ) : (
