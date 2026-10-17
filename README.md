@@ -59,19 +59,30 @@ Baza ma ok. 3700 miejsc ze źródłami i ok. 800 zdjęć (Supabase, PostGIS). Op
 
 ## Architektura
 
-```
- telefon (PWA)                       Railway                          zewnętrzne
-┌────────────────┐  HTTPS  ┌──────────────────────────┐
-│  apps/web      │────────▶│  apps/api (Hono, Node)   │──▶ dane.um.warszawa.pl (pojazdy, odjazdy)
-│  Next.js       │         │                          │──▶ OpenRouter (LLM opowieści)
-│  MapLibre      │         │  planer tras: graf GTFS  │──▶ ElevenLabs (głos, opcjonalnie)
-│  Vercel        │         │  w pamięci procesu       │──▶ OSRM (odcinki piesze)
-└────────────────┘         │  cache opowieści         │──▶ Google Places (wyszukiwanie celu)
-        │                  └────────────┬─────────────┘
-        │ podkład mapy                  │ service_role
-        ▼                               ▼
-   OpenFreeMap              Supabase: Postgres + PostGIS
-                            (miejsca, fakty, zdjęcia, źródła)
+```mermaid
+flowchart LR
+  subgraph tel["Telefon (PWA)"]
+    web["apps/web<br/>Next.js + MapLibre<br/>(Vercel)"]
+  end
+  subgraph rw["Railway"]
+    api["apps/api (Hono, Node)<br/>planer tras: graf GTFS w pamięci<br/>cache opowieści"]
+  end
+  db[("Supabase<br/>Postgres + PostGIS<br/>miejsca, fakty, zdjęcia, źródła")]
+  ofm["OpenFreeMap<br/>podkład mapy"]
+  waw["dane.um.warszawa.pl<br/>pojazdy, odjazdy"]
+  llm["OpenRouter<br/>LLM opowieści"]
+  tts["ElevenLabs<br/>głos (opcjonalnie)"]
+  osrm["OSRM<br/>odcinki piesze"]
+  gp["Google Places<br/>wyszukiwanie celu"]
+
+  web -- HTTPS --> api
+  web --> ofm
+  api -- service_role --> db
+  api --> waw
+  api --> llm
+  api --> tts
+  api --> osrm
+  api --> gp
 ```
 
 Kontrakt API (zod) jest w `packages/shared` i jest wspólny dla web i api. Przeglądarka nie zna żadnych kluczy: Supabase, API miasta i LLM wołamy tylko z backendu. Szczegóły: [docs/12-plan-mvp.md](docs/12-plan-mvp.md), [docs/05-plan-architektury.md](docs/05-plan-architektury.md).
@@ -80,14 +91,14 @@ Kontrakt API (zod) jest w `packages/shared` i jest wspólny dla web i api. Przeg
 
 | Warstwa | Technologia | Dlaczego |
 |---|---|---|
-| Frontend | Next.js (App Router), Tailwind, shadcn/ui, Vercel | szybki start, PWA na telefonie |
-| Mapa | MapLibre GL, podkład OpenFreeMap | otwarte, bez klucza API |
-| Backend | Hono na Node, Railway | graf linii w pamięci procesu, długie odpowiedzi LLM (bez limitów serverless), sekrety w jednym miejscu |
-| Kontrakt | zod w `packages/shared` | jedno źródło typów dla API i web |
-| Baza | Supabase (Postgres + PostGIS) | zapytania „miejsca w obszarze / przy trasie” |
-| LLM | OpenRouter, `google/gemini-3.5-flash-lite` (port `LlmProvider`, model wymienny) | tani i szybki; bez klucza opowieść to same fakty |
-| Głos | ElevenLabs `eleven_multilingual_v2` | naturalny polski; domyślnie wyłączony (`?voice=1`) |
-| Jakość | TypeScript `strict`, Vitest, Biome, GitHub Actions | jedna konfiguracja dla 4 osób |
+| Frontend | Next.js (App Router), Tailwind, shadcn/ui, Vercel | szybko zbudowaliśmy ekrany, a aplikację da się zainstalować na telefonie jak zwykłą (PWA) |
+| Mapa | MapLibre GL, podkład OpenFreeMap | otwarte oprogramowanie i dane, bez klucza i opłat |
+| Backend | Hono na Node, Railway | stały serwer trzyma w pamięci sieć linii ZTM, czeka na długie odpowiedzi modelu językowego i jako jedyny zna klucze |
+| Kontrakt API | zod w `packages/shared` | frontend i backend korzystają z tych samych definicji danych, więc nie rozjeżdżają się |
+| Baza | Supabase (Postgres + PostGIS) | szybko wyszukuje miejsca w danym obszarze mapy |
+| Model językowy | OpenRouter, `google/gemini-3.5-flash-lite` | tani i szybki; model zmienia się jedną zmienną środowiskową (`OPENROUTER_MODEL`) |
+| Głos | ElevenLabs `eleven_multilingual_v2` | naturalnie brzmiący polski; domyślnie wyłączony, włącza go `?voice=1` w adresie |
+| Jakość kodu | TypeScript w trybie `strict`, testy Vitest, Biome, GitHub Actions | każdy PR automatycznie przechodzi sprawdzenie typów, testy i lint, zanim trafi do `main` |
 
 ## Użycie AI
 
