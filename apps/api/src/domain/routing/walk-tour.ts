@@ -101,6 +101,19 @@ export function retracedShare(waypoints: LatLng[], from: LatLng, to: LatLng): nu
  * street or a block away (a ride sees farther, see `VISIBLE_RADIUS_M`).
  */
 export const WALK_VISIBLE_RADIUS_M = 15;
+/**
+ * A building, church, cemetery or square: its point is the middle, often 40–60 m from the
+ * pavement, and the walker passes by the whole of it.
+ */
+export const WALK_LARGE_VISIBLE_RADIUS_M = 50;
+const LARGE_KINDS: ReadonlySet<string> = new Set(["building", "church", "cemetery", "site"]);
+
+/** How far from a walk `place` still counts as passed right by it. */
+export function walkVisibleRadiusM(place: PlacePoint): number {
+  return place.kind && LARGE_KINDS.has(place.kind)
+    ? WALK_LARGE_VISIBLE_RADIUS_M
+    : WALK_VISIBLE_RADIUS_M;
+}
 /** A place this far off a direct walk is worth a short detour to pass right by it. */
 export const WALK_DETOUR_M = 60;
 /** Detours make a direct walk at most this share longer. */
@@ -110,7 +123,7 @@ const MAX_DETOURS = 20;
 
 export type Segment = { from: LatLng; to: LatLng; startSec: number; sec: number };
 
-/** Places right by a straight walk (`WALK_VISIBLE_RADIUS_M`), with the time each is passed (`legIndex` 0). */
+/** Places right by a straight walk (`walkVisibleRadiusM`), with the time each is passed (`legIndex` 0). */
 export function placesAlong(
   places: Iterable<PlacePoint>,
   { from, to, startSec, sec }: Segment,
@@ -120,7 +133,7 @@ export function placesAlong(
   for (const place of places) {
     if (scoring.skip?.has(place.id)) continue;
     const { distanceM, t } = toSegment(place.position, from, to);
-    if (distanceM > WALK_VISIBLE_RADIUS_M) continue;
+    if (distanceM > walkVisibleRadiusM(place)) continue;
     const score = scorePlace(place, distanceM, scoring.interests, scoring.prefs);
     gained.push({ placeId: place.id, etaSec: startSec + t * sec, distanceM, legIndex: 0, score });
   }
@@ -146,7 +159,7 @@ export function walkThrough(
   for (const place of all) {
     if (scoring.skip?.has(place.id)) continue;
     const { distanceM, t } = toSegment(place.position, from, to);
-    if (distanceM <= WALK_VISIBLE_RADIUS_M || distanceM > WALK_DETOUR_M) continue;
+    if (distanceM <= walkVisibleRadiusM(place) || distanceM > WALK_DETOUR_M) continue;
     near.push({ place, t, score: scorePlace(place, 0, scoring.interests, scoring.prefs) });
   }
   near.sort((a, b) => b.score - a.score || a.place.id.localeCompare(b.place.id));
