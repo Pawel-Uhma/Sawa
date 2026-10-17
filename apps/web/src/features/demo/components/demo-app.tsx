@@ -4,7 +4,8 @@ import { HACKATHON_VENUE, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { type Lang, pick, useLang } from "@/features/i18n";
+import { LoadingCover } from "@/components/waiting";
+import { type Lang, pick, useLang, useT } from "@/features/i18n";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { useDemoDrive } from "../lib/demo-drive";
@@ -41,7 +42,14 @@ type Tab = "map" | "rides" | "sawa";
 // Mapa Antka (features/map). MapLibre potrzebuje window i WebGL, więc tylko w przeglądarce.
 const SawaMap = dynamic(() => import("@/features/map").then((mod) => mod.SawaMap), {
   ssr: false,
+  loading: MapChunkLoading,
 });
+
+/** Póki kod mapy się ściąga: ta sama zasłona, którą potem pokazuje sama mapa, więc nic nie skacze. */
+function MapChunkLoading() {
+  const t = useT();
+  return <LoadingCover show label={t("Wczytuję mapę Warszawy…", "Loading the map of Warsaw…")} />;
+}
 
 // Karta miejsca czyta wybór z URL-a (`?p=`) i dane mapy, więc też tylko w przeglądarce.
 const PlaceCardHost = dynamic(() => import("./place-card-host").then((mod) => mod.PlaceCardHost), {
@@ -418,6 +426,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 onGenerate={generateRoute}
                 planning={planning}
                 planError={planError}
+                locating={!isStage && start.status === "locating"}
               />
             )}
             {stage === "map" && tab === "rides" && (

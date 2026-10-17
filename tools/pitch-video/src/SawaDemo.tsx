@@ -179,7 +179,7 @@ function Screen() {
         }}
       >
         <OffthreadVideo
-          src={staticFile("capture/screen.webm")}
+          src={staticFile("capture/screen.mp4")}
           startFrom={Math.round(TRIM_START_SEC * fps)}
           muted
           style={{ width: "100%", height: "100%", objectFit: "cover" }}

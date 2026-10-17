@@ -11,15 +11,13 @@ import { type ReactNode, useEffect, useState } from "react";
 
 const SPOKES = 8;
 
-/** Spinner aktywności jak w iOS: osiem kresek, jasność obiega w kółko. Kolor bierze z `currentColor`. */
-export function Spinner({ className = "size-4", label }: { className?: string; label?: string }) {
+/**
+ * Spinner aktywności jak w iOS: osiem kresek, jasność obiega w kółko. Kolor bierze z `currentColor`.
+ * Sam nic nie mówi czytnikowi ekranu: obok zawsze stoi tekst, co się dzieje.
+ */
+export function Spinner({ className = "size-4" }: { className?: string }) {
   return (
-    <span
-      role={label ? "status" : undefined}
-      aria-label={label}
-      aria-hidden={label ? undefined : true}
-      className={`spinner relative inline-block shrink-0 ${className}`}
-    >
+    <span aria-hidden="true" className={`spinner relative inline-block shrink-0 ${className}`}>
       {Array.from({ length: SPOKES }, (_, index) => (
         <span
           // biome-ignore lint/suspicious/noArrayIndexKey: stała liczba kresek
@@ -42,7 +40,13 @@ export function Skeleton({ className = "" }: { className?: string }) {
 }
 
 /** Kilka linijek tekstu w budowie: ostatnia krótsza, jak koniec akapitu. */
-export function SkeletonLines({ lines = 3, className = "" }: { lines?: number; className?: string }) {
+export function SkeletonLines({
+  lines = 3,
+  className = "",
+}: {
+  lines?: number;
+  className?: string;
+}) {
   return (
     <span aria-hidden="true" className={`flex flex-col gap-2 ${className}`}>
       {Array.from({ length: lines }, (_, index) => (
@@ -132,7 +136,11 @@ export function useWaitMessage(active: boolean, steps: readonly WaitStep[]): str
     );
     return () => window.clearInterval(id);
   }, [active]);
-  if (!active) return null;
+  return active ? waitStepText(steps, elapsedSec) : null;
+}
+
+/** Ostatni krok, którego czas już minął; przed pierwszym progiem pierwszy krok. */
+export function waitStepText(steps: readonly WaitStep[], elapsedSec: number): string | null {
   let text = steps[0]?.text ?? null;
   for (const step of steps) if (elapsedSec >= step.afterSec) text = step.text;
   return text;
