@@ -2,13 +2,16 @@
 
 import type { Leg } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
-import { type ReactNode, useEffect, useRef, useState } from "react";
+import { type ReactNode, type RefObject, useCallback, useEffect, useRef, useState } from "react";
+import { useT } from "@/features/i18n";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
-import type { RideClock } from "../lib/ride-clock";
+import { backTarget } from "../lib/podcast";
+import { dueIndex as placeAt, type RideClock, storyStartSec } from "../lib/ride-clock";
 import type { StoryPlayer } from "../lib/story-player";
 import { RoutesIcon } from "./icons";
+import { PodcastControls } from "./podcast-controls";
 import { RouteLive } from "./route-live";
 
 type RouteSheetProps = {
@@ -24,8 +27,12 @@ type RouteSheetProps = {
   player: StoryPlayer;
   activeIndex: number;
   onActiveChange: (index: number) => void;
-  /** Zegar jazdy: który punkt już powinien mieć opowieść i za ile następny. */
-  clock: Pick<RideClock, "dueIndex" | "nextInSec" | "waitSec">;
+  /** Przejście do miejsca z przycisków: zegar jazdy staje przy nim, opowieść gra od początku. */
+  onPlayStop: (index: number) => void;
+  /** Zegar jazdy: który punkt już powinien mieć opowieść, ile trwa jazda i przeskok suwakiem. */
+  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "seekTo">;
+  /** Długość przejażdżki z planera (s), zakres suwaka. */
+  totalSec: number;
   onBack: () => void;
   isDesktop: boolean;
   /** Ile pikseli od dołu zasłania arkusz (telefon), żeby mapa wiedziała, gdzie jest jej widoczna część. */
@@ -34,10 +41,11 @@ type RouteSheetProps = {
 
 /** Trasa: arkusz z punktami zatrzymania na telefonie, pływający panel na desktopie. */
 export function RouteSheet(props: RouteSheetProps) {
-  const { stops, activeIndex, onActiveChange, player, clock } = props;
-  const { setIsPlaying, rewind } = player;
+  const { stops, activeIndex, onActiveChange, onPlayStop, player, clock } = props;
+  const { setIsPlaying, rewind, restart, more } = player;
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
+  const { seekTo } = clock;
 
   // Po końcu opowieści Sawa czeka, aż zbliżysz się do następnego punktu (zegar jazdy, do czasu
   // lokalizacji). Gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
@@ -65,7 +73,29 @@ export function RouteSheet(props: RouteSheetProps) {
     said[stop.id] && index <= activeIndex ? [{ stopIndex: index, text: said[stop.id] }] : [],
   );
 
-  // Klawiatura na desktopie: spacja wstrzymuje. Strzałek nie ma, bo temat wybiera lokalizacja.
+  // Wstecz: w trakcie opowieści od jej początku, na samym początku do poprzedniego miejsca.
+  const goBack = useCallback(() => {
+    const target = backTarget(activeIndex, progress);
+    if (target === activeIndex) restart(true);
+    else onPlayStop(target);
+  }, [activeIndex, progress, restart, onPlayStop]);
+  const goNext = useCallback(() => {
+    if (hasNext) onPlayStop(activeIndex + 1);
+  }, [hasNext, activeIndex, onPlayStop]);
+  // Suwak przesuwa zegar jazdy; inne miejsce pod suwakiem znaczy nową opowieść od początku.
+  const seek = useCallback(
+    (sec: number) => {
+      seekTo(sec);
+      const index = placeAt(stops, sec);
+      if (index === activeIndex) return;
+      rewind();
+      setIsPlaying(true);
+      onActiveChange(index);
+    },
+    [seekTo, stops, activeIndex, rewind, setIsPlaying, onActiveChange],
+  );
+
+  // Klawiatura na desktopie: spacja wstrzymuje, strzałki przechodzą między miejscami.
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       const target = event.target as HTMLElement | null;
@@ -73,37 +103,66 @@ export function RouteSheet(props: RouteSheetProps) {
       if (event.key === " ") {
         event.preventDefault();
         togglePlay();
+      } else if (event.key === "ArrowLeft") {
+        goBack();
+      } else if (event.key === "ArrowRight") {
+        goNext();
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [togglePlay]);
+  }, [togglePlay, goBack, goNext]);
+
+  // Suwak obejmuje całą jazdę, a co najmniej start ostatniej opowieści
+  const last = stops[stops.length - 1];
+  const totalSec = Math.max(props.totalSec, last ? storyStartSec(last) + 60 : 0);
+  const controlsRef = useRef<HTMLDivElement>(null);
 
   const content = (
     <RouteLive
       {...props}
       isPlaying={player.isPlaying}
       progress={progress}
-      nextInSec={clock.nextInSec}
       waitSec={clock.waitSec}
       storyText={player.text}
       transcript={transcript}
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
-      togglePlay={togglePlay}
+      controls={
+        <div ref={controlsRef} className="pb-[env(safe-area-inset-bottom)]">
+          <PodcastControls
+            stops={stops}
+            activeIndex={activeIndex}
+            rideSec={clock.rideSec}
+            totalSec={totalSec}
+            isPlaying={player.isPlaying}
+            waiting={clock.waitSec !== null}
+            onToggle={togglePlay}
+            onStop={() => restart(false)}
+            onBack={goBack}
+            onNext={goNext}
+            onMore={more}
+            onSeek={seek}
+            onLeave={props.onBack}
+          />
+        </div>
+      }
     />
   );
 
   return props.isDesktop ? (
     <DesktopPanel>{content}</DesktopPanel>
   ) : (
-    <MobileSheet onCoverChange={props.onCoverChange}>{content}</MobileSheet>
+    <MobileSheet onCoverChange={props.onCoverChange} controlsRef={controlsRef}>
+      {content}
+    </MobileSheet>
   );
 }
 
 function DesktopPanel({ children }: { children: ReactNode }) {
+  const t = useT();
   return (
     <motion.section
-      aria-label="Trasa"
+      aria-label={t("Trasa", "Route")}
       initial={{ opacity: 0, x: -32 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -32 }}
@@ -132,26 +191,44 @@ function useViewportHeight() {
 
 /** Ile pikseli od dołu zajmuje przycisk „Trasa”, gdy arkusz jest schowany (mapa ma wtedy wolny cały ekran). */
 const HIDDEN_COVER_PX = 96;
+// Odstęp pod sterowaniem w zwiniętym arkuszu; pasek domowy iPhone'a dokłada safe area w samym sterowaniu
+const CONTROLS_GAP_PX = 8;
 
 /**
- * Arkusz z punktami zatrzymania (pełny i środkowy). Schowany zostaje tylko przycisk w prawym dolnym rogu,
- * więc mapa ma całą wysokość. Ciągnie się za każde miejsce, rzut wybiera punkt z rozpędu, ściągnięcie w dół chowa arkusz.
+ * Arkusz z dwoma punktami zatrzymania: zwinięty pokazuje tylko sterowanie opowieścią (reszta
+ * ekranu to mapa), rozwinięty także zapis Sawy. Schowany zostaje tylko przycisk w prawym dolnym rogu.
+ * Ciągnie się za każde miejsce, rzut wybiera punkt z rozpędu, ściągnięcie w dół chowa arkusz.
  */
 function MobileSheet({
   children,
   onCoverChange,
+  controlsRef,
 }: {
   children: ReactNode;
   onCoverChange: (px: number) => void;
+  /** Sterowanie na górze treści: zwinięty arkusz kończy się tuż pod nim. */
+  controlsRef: RefObject<HTMLDivElement | null>;
 }) {
+  const t = useT();
   const reduce = useReducedMotion();
   const height = useViewportHeight();
+  // Dół sterowania od góry arkusza (px); mierzony, bo zależy od czcionek i długości nazw
+  const [controlsBottom, setControlsBottom] = useState(300);
+  useEffect(() => {
+    const el = controlsRef.current;
+    if (!el) return;
+    const update = () => setControlsBottom(el.offsetTop + el.offsetHeight);
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [controlsRef]);
   const detents = {
     full: 64,
-    mid: Math.round(height * 0.42),
+    controls: Math.max(Math.round(height * 0.35), height - controlsBottom - CONTROLS_GAP_PX),
   };
   const y = useMotionValue(height);
-  const [detent, setDetent] = useState<keyof typeof detents>("mid");
+  const [detent, setDetent] = useState<keyof typeof detents>("controls");
   const [isHidden, setIsHidden] = useState(true);
   const sheetRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -165,7 +242,7 @@ function MobileSheet({
     const animation = animate(y, target, reduce ? { duration: 0 } : SPRING);
     onCoverChange(isHidden ? HIDDEN_COVER_PX : height - detents[detent]);
     return () => animation.stop();
-  }, [height, detent, isHidden]);
+  }, [height, detent, isHidden, controlsBottom]);
 
   // Poza pełnym rozmiarem treść się nie przewija, tylko ciągnie arkusz. Wracamy wtedy na górę listy.
   useEffect(() => {
@@ -188,7 +265,7 @@ function MobileSheet({
     onEnd: (velocity) => {
       // Cel wybieramy z miejsca, w które arkusz by doleciał, a nie z miejsca puszczenia
       const landing = y.get() + project(velocity);
-      if (landing > detents.mid + (height - detents.mid) * 0.5 && velocity >= 0) {
+      if (landing > detents.controls + (height - detents.controls) * 0.5 && velocity >= 0) {
         haptic();
         setIsHidden(true);
         animate(y, height, reduce ? { duration: 0 } : { ...SPRING_FLICK, velocity });
@@ -206,7 +283,7 @@ function MobileSheet({
 
   function show() {
     haptic();
-    setDetent("mid");
+    setDetent("controls");
     setIsHidden(false);
   }
 
@@ -214,7 +291,7 @@ function MobileSheet({
     <>
       <motion.section
         ref={sheetRef}
-        aria-label="Trasa"
+        aria-label={t("Trasa", "Route")}
         aria-hidden={isHidden}
         inert={isHidden}
         exit={reduce ? { opacity: 0 } : { y: height }}
@@ -228,10 +305,14 @@ function MobileSheet({
         <div className="flex shrink-0 cursor-grab justify-center pb-2 pt-2.5 active:cursor-grabbing">
           <button
             type="button"
-            aria-label={isFull ? "Zwiń trasę" : "Rozwiń trasę"}
+            aria-label={
+              isFull
+                ? t("Pokaż tylko sterowanie", "Show controls only")
+                : t("Pokaż zapis opowieści", "Show the story transcript")
+            }
             onClick={() => {
               haptic();
-              setDetent((current) => (current === "full" ? "mid" : "full"));
+              setDetent((current) => (current === "full" ? "controls" : "full"));
             }}
             className="flex h-6 w-16 items-center justify-center"
           >
@@ -252,7 +333,7 @@ function MobileSheet({
 
       <motion.button
         type="button"
-        aria-label="Pokaż trasę"
+        aria-label={t("Pokaż trasę", "Show route")}
         onClick={show}
         inert={!isHidden}
         initial={false}
