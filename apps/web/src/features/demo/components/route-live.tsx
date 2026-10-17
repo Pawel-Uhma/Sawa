@@ -37,6 +37,8 @@ export type RouteLiveProps = {
   progress: number;
   /** Za ile sekund następny temat według zegara jazdy. */
   nextInSec: number | null;
+  /** Za ile sekund pierwsze miejsce; do tego czasu Sawa milczy. Null, gdy już może mówić. */
+  waitSec: number | null;
   storyText: string | null;
   storyState: "loading" | "ready" | "failed";
   /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
@@ -44,12 +46,28 @@ export type RouteLiveProps = {
   togglePlay: () => void;
 };
 
-/** Za ile następny temat. Dziś z zegara jazdy, docelowo z odległości do punktu. */
-function untilNext(stops: MockStop[], activeIndex: number, nextInSec: number | null) {
+/** „za chwilę” albo „za ok. N min”. */
+function inLabel(sec: number | null): string {
+  return sec === null || sec < 60 ? "za chwilę" : `za ok. ${Math.round(sec / 60)} min`;
+}
+
+/**
+ * Za ile następny temat. Dziś z zegara jazdy, docelowo z odległości do punktu.
+ * Przed pierwszym miejscem „następny” to ono samo.
+ */
+function untilNext(
+  stops: MockStop[],
+  activeIndex: number,
+  nextInSec: number | null,
+  waitSec: number | null,
+) {
+  if (waitSec !== null) {
+    const first = stops[activeIndex];
+    return first ? { stop: first, label: inLabel(waitSec), first: true } : null;
+  }
   const next = stops[activeIndex + 1];
   if (!next) return null;
-  if (nextInSec === null || nextInSec < 60) return { stop: next, label: "za chwilę" };
-  return { stop: next, label: `za ok. ${Math.round(nextInSec / 60)} min` };
+  return { stop: next, label: inLabel(nextInSec), first: false };
 }
 
 /* ------------------------------------------------------------------ */
@@ -203,15 +221,17 @@ function NextUp({
   activeIndex,
   progress,
   nextInSec,
+  waitSec,
   end,
 }: {
   stops: MockStop[];
   activeIndex: number;
   progress: number;
   nextInSec: number | null;
+  waitSec: number | null;
   end: RouteLiveProps["end"];
 }) {
-  const next = untilNext(stops, activeIndex, nextInSec);
+  const next = untilNext(stops, activeIndex, nextInSec, waitSec);
   if (!next) {
     return (
       <div className="flex flex-col items-start gap-2">
@@ -223,7 +243,8 @@ function NextUp({
   return (
     <div className="min-w-0 flex-1">
       <p className="truncate text-sm text-tekst-2">
-        Dalej <span className="font-bold text-tekst">{next.stop.name}</span>
+        {next.first ? "Najpierw" : "Dalej"}{" "}
+        <span className="font-bold text-tekst">{next.stop.name}</span>
       </p>
       <div className="mt-1.5 flex items-center gap-2">
         <div className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
@@ -256,11 +277,13 @@ export function RouteLive({
   isPlaying,
   progress,
   nextInSec,
+  waitSec,
   storyText,
   storyState,
   transcript,
   togglePlay,
 }: RouteLiveProps) {
+  const waiting = waitSec !== null;
   const reduce = useReducedMotion();
   const scrollRef = useRef<HTMLDivElement>(null);
   const edgeRef = useRef<HTMLSpanElement>(null);
@@ -298,7 +321,11 @@ export function RouteLive({
         <div className="min-w-0 flex-1">
           <p className="etykieta flex items-center gap-2">
             <LiveDot on={isPlaying} />
-            {isPlaying ? "Sawa opowiada" : "Wstrzymane"}
+            {isPlaying
+              ? "Sawa opowiada"
+              : waiting
+                ? "Sawa czeka na pierwsze miejsce"
+                : "Wstrzymane"}
           </p>
           <p className="mt-0.5 flex flex-wrap items-center gap-1.5 text-sm text-tekst-2">
             <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>
@@ -311,7 +338,7 @@ export function RouteLive({
 
       {stop && (
         <div className="flex items-center gap-2">
-          <span className="etykieta">Teraz</span>
+          <span className="etykieta">{waiting ? "Najpierw" : "Teraz"}</span>
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.span
               key={stop.id}
@@ -353,13 +380,20 @@ export function RouteLive({
                     {activeIndex + 1} · {stop.name}
                   </p>
                 )}
-                <LiveText
-                  text={storyText}
-                  progress={progress}
-                  state={storyState}
-                  edgeRef={edgeRef}
-                  className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"
-                />
+                {waiting ? (
+                  <p className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em] text-tekst-3">
+                    Sawa odezwie się, gdy dojedziesz do miejsca {stop.name}. Chcesz wcześniej?
+                    Stuknij odtwarzanie.
+                  </p>
+                ) : (
+                  <LiveText
+                    text={storyText}
+                    progress={progress}
+                    state={storyState}
+                    edgeRef={edgeRef}
+                    className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"
+                  />
+                )}
               </section>
             )}
           </div>
@@ -389,6 +423,7 @@ export function RouteLive({
           activeIndex={activeIndex}
           progress={progress}
           nextInSec={nextInSec}
+          waitSec={waitSec}
           end={end}
         />
       </div>

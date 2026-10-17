@@ -24,7 +24,7 @@ type RouteSheetProps = {
   activeIndex: number;
   onActiveChange: (index: number) => void;
   /** Zegar jazdy: który punkt już powinien mieć opowieść i za ile następny. */
-  clock: Pick<RideClock, "dueIndex" | "nextInSec">;
+  clock: Pick<RideClock, "dueIndex" | "nextInSec" | "waitSec">;
   onBack: () => void;
   isDesktop: boolean;
   /** Ile pikseli od dołu zasłania arkusz (telefon), żeby mapa wiedziała, gdzie jest jej widoczna część. */
@@ -84,6 +84,7 @@ export function RouteSheet(props: RouteSheetProps) {
       isPlaying={player.isPlaying}
       progress={progress}
       nextInSec={clock.nextInSec}
+      waitSec={clock.waitSec}
       storyText={player.text}
       transcript={transcript}
       storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
