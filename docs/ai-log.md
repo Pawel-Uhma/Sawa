@@ -394,3 +394,9 @@
 > dobra, wkleiłem klucz
 
 **AI:** Uruchomiłem seed: w Supabase jest 326 miejsc i 351 zdjęć, drugie uruchomienie nie dubluje rekordów. Sprawdziłem SQL-em `places_in_bbox` (326), `places_near_line` wzdłuż al. Solidarności (108 w 150 m) i `place_detail`. Zaktualizowałem `todo.md` (T-21 zrobione), `stan.md` i `13-plan-bazy.md`.
+
+### 2026-10-17 · Jasiek
+
+> zrób osobny branch, opisz go, zrób commit, push i otwórz PR
+
+**AI:** Utworzyłem gałąź `r2/places-migration` z trzema commitami (migracje, seed z `.env.example`, dokumenty), wypchnąłem ją i otworzyłem PR #1 (https://github.com/Pawel-Uhma/Sawa/pull/1) z opisem: co, dlaczego, jak sprawdzić, otwarte decyzje.
