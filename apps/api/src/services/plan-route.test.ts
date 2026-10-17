@@ -92,6 +92,27 @@ describe("route planner on real data", () => {
     expect(route.places.length).toBeGreaterThan(0);
   });
 
+  it.each([60, 120])("plans a %i-minute walk when the user picked walking", async (durationMin) => {
+    const route = RouteSchema.parse(
+      await planner.plan(
+        { origin: HACKATHON_VENUE, durationMin, interests: ["historical"], travel: "walk" },
+        NOW,
+      ),
+    );
+    expect(route.legs.map((l) => l.mode)).toEqual(["walk"]);
+    expect(route.places.length).toBeGreaterThan(0);
+  });
+
+  it("plans a ride for a short time when the user picked transit", async () => {
+    const route = RouteSchema.parse(
+      await planner.plan(
+        { origin: HACKATHON_VENUE, durationMin: 10, interests: ["historical"], travel: "transit" },
+        NOW,
+      ),
+    );
+    expect(rideLegs(route).length).toBeGreaterThan(0);
+  });
+
   it.each([5, 10])("plans a %i-minute walk past places", async (durationMin) => {
     const route = RouteSchema.parse(
       await planner.plan({ origin: HACKATHON_VENUE, durationMin, interests: ["historical"] }, NOW),
