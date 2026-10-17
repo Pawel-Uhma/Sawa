@@ -6,10 +6,11 @@ import {
   type MotionValue,
   motion,
   useAnimationControls,
+  useReducedMotion,
   useTransform,
 } from "motion/react";
 import Image from "next/image";
-import { type CSSProperties, useRef, useState } from "react";
+import { type CSSProperties, type ReactNode, useLayoutEffect, useRef, useState } from "react";
 import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
@@ -390,36 +391,77 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
           className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
         />
       </div>
-      {hasQuery && (
-        <ul aria-label="Wyniki" className="mt-1.5 overflow-hidden rounded-[14px] bg-powierzchnia">
-          {results.map((result) => (
-            <li key={result.id}>
-              <button
-                type="button"
-                onClick={() => {
-                  haptic(4);
-                  onPick({ type: "destination", name: result.name, point: result.position });
-                  setText("");
-                }}
-                className="flex w-full flex-col px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
-              >
-                <span className="truncate text-[14px] font-bold text-tekst">{result.name}</span>
-                <span className="truncate text-xs text-tekst-3">{result.address}</span>
-              </button>
-            </li>
-          ))}
-          {results.length === 0 && (
-            <li className="px-3 py-2 text-[13px] text-tekst-3">
-              {isSearching
-                ? "Szukam…"
-                : isError
-                  ? "Nie udało się wyszukać. Wybierz cel niżej albo na mapie."
-                  : "Nie znalazłam takiego miejsca w Warszawie."}
-            </li>
-          )}
-        </ul>
-      )}
+      <AnimatePresence initial={false}>
+        {hasQuery && (
+          <AutoHeight key="wyniki">
+            <ul
+              aria-label="Wyniki"
+              className="mt-1.5 overflow-hidden rounded-[14px] bg-powierzchnia"
+            >
+              {results.map((result) => (
+                <li key={result.id}>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      haptic(4);
+                      onPick({ type: "destination", name: result.name, point: result.position });
+                      setText("");
+                    }}
+                    className="flex w-full flex-col px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
+                  >
+                    <span className="truncate text-[14px] font-bold text-tekst">{result.name}</span>
+                    <span className="truncate text-xs text-tekst-3">{result.address}</span>
+                  </button>
+                </li>
+              ))}
+              {results.length === 0 && (
+                <li className="px-3 py-2 text-[13px] text-tekst-3">
+                  {isSearching
+                    ? "Szukam…"
+                    : isError
+                      ? "Nie udało się wyszukać. Wybierz cel niżej albo na mapie."
+                      : "Nie znalazłam takiego miejsca w Warszawie."}
+                </li>
+              )}
+            </ul>
+          </AutoHeight>
+        )}
+      </AnimatePresence>
     </div>
+  );
+}
+
+/**
+ * Wysokość dociągana sprężyną do treści. Karta rośnie od dołu, więc bez tego każda zmiana
+ * liczby wyników szarpie całą kartę w jednej klatce.
+ */
+function AutoHeight({ children }: { children: ReactNode }) {
+  const reduce = useReducedMotion();
+  const innerRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState<number | "auto">("auto");
+
+  useLayoutEffect(() => {
+    const inner = innerRef.current;
+    if (!inner) return;
+    const observer = new ResizeObserver(() => setHeight(inner.offsetHeight));
+    observer.observe(inner);
+    setHeight(inner.offsetHeight);
+    return () => observer.disconnect();
+  }, []);
+
+  const transition = reduce
+    ? { duration: 0 }
+    : { type: "spring" as const, bounce: 0, duration: 0.35 };
+  return (
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height, opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      transition={transition}
+      className="overflow-hidden"
+    >
+      <div ref={innerRef}>{children}</div>
+    </motion.div>
   );
 }
 
