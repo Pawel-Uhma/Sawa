@@ -1,6 +1,6 @@
 # Todo zespołu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 16:10
+**Ostatnia aktualizacja:** 17.10.2026, ok. 16:40
 
 **Źródło prawdy dla zadań.** Każdy agent i każda osoba czyta tę listę przed pracą i aktualizuje ją po pracy.
 
@@ -14,7 +14,7 @@
 
 ## Start i wspólne (sobota 17.10)
 
-- [ ] **T-08** Każdy wpisuje swój `git user.name` i rolę w [zespol.md](zespol.md), zanim zacznie pracę — `Wszyscy` — 11:45
+- [x] **T-08** Każdy wpisuje swój `git user.name` i rolę w [zespol.md](zespol.md), zanim zacznie pracę — `Wszyscy` — 11:45 (16:40: wszyscy czworo w tabeli; hook czyta też rolę z dopiskiem, PR #31)
 - [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git); klucz jest na Discordzie zespołu — `Wszyscy` — 11:30
 - [ ] **T-09** Konta: GitHub (repo), Vercel, dostęp do LLM — `Wszyscy` — 12:00
 - [ ] **T-02** Projekt Supabase na koncie zespołu (nie prywatnym); kto zakłada, do potwierdzenia — `R2` — 13:00
@@ -24,9 +24,7 @@
 - [ ] **T-64** Każdy czyta [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) i zgłasza w `stan.md` niezgodę z założeniami [Z] z [12-plan-mvp.md](12-plan-mvp.md) §11 — `Wszyscy` — 12:30
 - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
 
-- [x] **T-65** Mapa: Mapbox (styl i renderer), decyzja R3, 17.10 — `R3` — 13:00 (plan MVP mówi MapLibre, do uzgodnienia w `stan.md`)
-- [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
-- [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
+- [x] **T-65** Mapa: Mapbox (styl i renderer), decyzja R3, 17.10 — `R3` — 13:00 (zmienione 13:40, decyzja Antka: MapLibre + OpenFreeMap, bez tokenu; [14-plan-mapy.md](14-plan-mapy.md) §2)
 - [x] **T-69** Zasady pracy z repo (dawne T-62 Pawła): pokryte przez [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) — `Wszyscy`
 
 ## R1 · Dane i planer tras
@@ -42,7 +40,6 @@
 - [x] **T-15** Skąd kolejność przystanków linii (GTFS / stare API / kształt z pozycji pojazdów), decyzja w `stan.md` (P1 w planie MVP) — `R1` — 13:30 (Szczepan, 13:15: GTFS z mkuran.pl, skompresowany do pliku w repo)
 - [x] **T-16** Mock `POST /v1/routes/plan` z fixture zgodnej z kontraktem, żeby R3 i R4 nie czekali — `R1` — 14:30 (Szczepan, 13:20, PR #2; od 14:00 zastąpiony prawdziwym planerem)
 - [ ] **T-11** Odjazdy z przystanku i linie na przystanku (endpointy z [api/](api/)) — `R1` — 15:00
-- [ ] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00
 - [x] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00 (Szczepan, 14:00: GTFS + beam search, podgląd `/debug/planner`, PR #4)
 - [~] **T-17** `WAW_TOKEN` w `apps/api/.env.local` i na Railway, sprawdzić odjazdy na żywo (format odpowiedzi API nie był testowany z tokenem) — `R1` — 17:00 (Szczepan, 15:40: lokalnie działa; API zwraca gołą tablicę wierszy, nie `{ result }`, poprawka parsera w PR; zostało: `WAW_TOKEN` na Railway)
 - [ ] **T-18** Przed demo: przebudować graf na niedzielę (`pnpm --filter @sawa/scripts transit --date 2026-10-18`) i zapisać trasę demo jako fixture do trybu offline — `R1` — niedziela 08:00
@@ -60,8 +57,8 @@
 
 ## R3 · Frontend i mapa
 
-- [~] **T-30** Mapa MapLibre z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00 (Antek, od 13:30; plan w [14-plan-mapy.md](14-plan-mapy.md); 15:00: `/mapa` z miejscami z API, kartą miejsca i trasą demo, PR z `r3/maplibre-map`; 16:07: miejsca z kafelków widoku zamiast stałego bbox, cała Warszawa, gałąź `r3/places-viewport`)
-- [~] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap w barwach Sawy, bez tokenu; punkty i trasa z docs/historia i makiet, jeszcze nie z T-10)
+- [x] **T-30** Mapa MapLibre z jednym zbiorem punktów (miejsca z `/v1/places`, nie z T-10) — `R3` — 13:00 (Antek, 16:40; plan w [14-plan-mapy.md](14-plan-mapy.md); `/mapa` z kartą miejsca i trasą PR #12, API `SawaMap` dla ekranów PR #16, miejsca z kafelków widoku na całą Warszawę PR #27)
+- [x] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap; 14:54: demo na `SawaMap` Antka, piny z `/v1/places`, trasa z `POST /v1/routes/plan`, zob. `stan.md`)
 - [x] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — (Paweł z agentem, 17.10 13:25: mock bez API, mapa szkicowa zamiast Mapbox; 13:51: wariant A6 z makiety, Sawa z dymkiem, pasek zakładek, prawdziwa mapa)
 - [x] **T-67** Wersja desktopowa (ten sam UI na szerokim ekranie) — `R3` — (Paweł z agentem, 17.10 13:25: panel boczny od 768 px, mock; 13:51: mapa na cały ekran, pływający szklany panel 360/400 px, kamera omija panel, skróty klawiszowe w trasie)
 - [x] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — (Paweł z agentem, 17.10 13:25: mock, lista 8 kluczy z 13-plan-bazy §5; 13:47: nowy przepływ z Sawą, 3 pytania i grafikami z fal.ai, [ui/onboarding.md](ui/onboarding.md); do podpięcia w demo-app przez sesję R3 od mapy)
@@ -70,7 +67,11 @@
 - [x] **T-35** Wersja mobilna: 16 px marginesu, bez poziomego scrolla — `R3` — 22:00 (Paweł z agentem, 13:51: arkusz trasy z 3 punktami zatrzymania i rzutem, swipe opowieści, sprężyny motion, safe area, reduced motion; sprawdzone 390–1920 px bez poziomego scrolla)
 - [ ] **T-36** Podstrona demo: stała lokalizacja, symulowana jazda ok. 1,5 min — `R3` — niedziela 08:00
 - [ ] **T-78** Cel przejażdżki w UI: wybór punktu końcowego (stuknięcie w mapę albo karta miejsca) i `destination: { lat, lng }` w `planRoute` (`apps/web/src/features/demo/lib/api-data.ts`); przy `endsAtDestination: false` pokazać, że trasa nie kończy się przy celu. Bez `returnToStart` jednocześnie. API gotowe na Railway (PR #19) — `R3` — (zgłosił Szczepan, R1)
+- [x] **T-104** Najszybsza trasa do celu: `POST /v1/routes/plan` z `destination` bez `durationMin`; trasa z czasem, która nie dojeżdża do celu, przechodzi na najszybszy przejazd — `R1` — (Szczepan, 19:10, PR w toku)
 - [ ] **T-100** Pojazdy na mapie trasy: hook `useLiveVehicles` (co 10 s), osobne ikony tramwaju i autobusu, płynny ruch przez `positionOnTrack` w `requestAnimationFrame`, wyróżniony pojazd `ride`. Gotowe przykłady kodu w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R3` (Paweł, issue #30) — po T-99 (PR #29)
+- [ ] **T-101** Mapa: `fitBounds` trasy z uwzględnieniem otwartej karty miejsca (trasa chowa się pod kartą) i ostrzeżenie „Expected number, found null” w konsoli — `R3` (Antek)
+- [ ] **T-102** Pozycja „za oknem”: znacznik jedzie wzdłuż `Leg.lngLats` w czasie odtwarzania (krok 8 w [14-plan-mapy.md](14-plan-mapy.md) §10, M2 planu MVP); potrzebne do T-36 — `R3` (Antek) — niedziela 08:00
+- [ ] **T-103** Mapa na 2 prawdziwych telefonach: karta miejsca z przeciąganiem, 16 px marginesu, bez poziomego scrolla (krok 7 w [14-plan-mapy.md](14-plan-mapy.md) §10) — `R3` (Antek)
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos
@@ -78,7 +79,6 @@
 Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) nie mają jeszcze właściciela, zob. `stan.md`.
 
 - [~] **T-45** Port `LlmProvider` z implementacjami `bielik`, `claude`, `fake` i `POST /v1/stories` z `story_cache` — `R4` — 17:00 (Paweł, 14:50: w `main` OpenRouter + `POST /v1/stories` i `/v1/stories/audio`, cache w pamięci; Bielik i `story_cache` w Supabase jeszcze nie)
-- [ ] **T-40** Endpoint `chat` w backendzie na Railway z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
 - [ ] **T-41** Prompt Sawy: persona rówieśniczki, która mieszka w Warszawie rok, zasady „fakty ze źródłami, bez zmyślania” — `R4` — 20:00
 - [ ] **T-42** Opowieść „z okna”: tekst o punkcie na trasie z faktów z Supabase; długość zależna od czasu do punktu — `R4` — 22:00
 
@@ -126,8 +126,8 @@ Zakres to tylko lista MVP z [10-prd.md](10-prd.md), zob. [12-plan-mvp.md](12-pla
 ## Ze spotkania 13:30
 
 - [x] **T-70** Planer: limit miejsc na trasie albo minimalny czas na opowieść (30 min daje teraz 120 miejsc) — `R1` — (Jasiek 14:45: na produkcji 30 min 9 miejsc, 120 min 15; Szczepan, 18:30: liczba miejsc już nie 120, ok. 2–5 na 10 min; naprawione okna: min. odstęp stylu także na końcu, maks. 60/120/300 s, opowieści na dojściu do przystanku; PR w toku)
-- [~] **T-71** Integracja ElevenLabs w API (`ELEVENLABS_KEY` w Railway) — `R4` → zrobił Pawel na własną prośbę (17.10, 13:55), gałąź `r4/tts-elevenlabs`: `POST /v1/speech` → mp3 głosem Asi, cache w pamięci. W `main` od 14:50
-- [ ] **T-72** Styl mapy Mapbox i kategorie punktów (budynek, ulica, pomnik…) z ikonami — `R3`
+- [x] **T-71** Integracja ElevenLabs w API (`ELEVENLABS_KEY` w Railway) — `R4` → zrobił Pawel na własną prośbę (17.10, 13:55), gałąź `r4/tts-elevenlabs`: `POST /v1/speech` → mp3 głosem Asi, cache w pamięci. W `main` od 14:50
+- [ ] **T-72** Styl mapy (MapLibre) i kategorie punktów (budynek, ulica, pomnik…) z ikonami — `R3`
 - [x] **T-73** Scraping kolejnych miejsc (budynki → Wikipedia) prosto do Supabase — `R2` — (Jasiek z agentami, 15:50: 1092 miejsc; 16:30: 1347 miejsc na całą Warszawę, w tym 260 poza pasem Śródmieście–Praga; zabytki z OSM + Wikipedia w `docs/historia/osm-historia.geojson`, parki, sport i „Otwarte boiska” z 18 dzielnic; seed i `export:places` zrobione)
 - [ ] **T-74** Opisać w `docs/` repo przydatne na hackathon (link na Discordzie zespołu) — `Wszyscy` (kto znalazł)
 
