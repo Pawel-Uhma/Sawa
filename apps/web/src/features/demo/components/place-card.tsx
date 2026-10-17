@@ -3,6 +3,7 @@
 import type { Place } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useEffect, useLayoutEffect, useRef } from "react";
+import { Skeleton, SkeletonLines, Spinner } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { placeKindColor, placeKindLabel } from "@/features/map";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
@@ -175,8 +176,14 @@ export function ListenButton({ state, progress, onToggle }: ListenButtonProps) {
         className="absolute inset-y-0 left-0 w-full origin-left bg-white/15"
         style={{ transform: `scaleX(${state === "idle" ? 0 : progress / 100})` }}
       />
-      <span className={`relative shrink-0 ${state === "loading" ? "animate-pulse" : ""}`}>
-        {isPlaying ? <PauseIcon className="size-5" /> : <PlayIcon className="size-5" />}
+      <span className="relative shrink-0">
+        {state === "loading" ? (
+          <Spinner className="size-5" />
+        ) : isPlaying ? (
+          <PauseIcon className="size-5" />
+        ) : (
+          <PlayIcon className="size-5" />
+        )}
       </span>
       {/* Etykieta w jednej linii, czas pod nią: w wąskiej karcie obok „Jedź tutaj” nic się nie łamie. */}
       <span className="relative flex min-w-0 flex-col items-start leading-tight">
@@ -252,14 +259,23 @@ export function TodayNearby({ place }: { place: Place }) {
   );
 }
 
-export function CardSkeleton() {
+/** Karta w budowie: układ jak w gotowej (etykieta, nazwa, zdjęcie, tekst), żeby nic nie skakało. */
+export function CardSkeleton({ onClose }: { onClose?: () => void }) {
+  const t = useT();
   return (
-    <div aria-hidden="true" className="space-y-3 p-5 pt-6">
-      <div className="h-3 w-1/3 animate-pulse rounded bg-tlo-2" />
-      <div className="h-6 w-4/5 animate-pulse rounded bg-tlo-2" />
-      <div className="aspect-[16/9] w-full animate-pulse rounded-2xl bg-tlo-2" />
-      <div className="h-3 w-full animate-pulse rounded bg-tlo-2" />
-      <div className="h-3 w-2/3 animate-pulse rounded bg-tlo-2" />
+    <div className="space-y-3 p-5 pt-6">
+      <div className="flex items-start gap-3">
+        <div className="flex-1 space-y-2.5">
+          <Skeleton className="h-3 w-1/3" />
+          <Skeleton className="h-6 w-4/5" />
+        </div>
+        {onClose && <CloseButton onClick={onClose} />}
+      </div>
+      <Skeleton className="aspect-[16/9] w-full rounded-2xl" />
+      <SkeletonLines lines={2} />
+      <span className="sr-only" aria-live="polite">
+        {t("Wczytuję miejsce…", "Loading the place…")}
+      </span>
     </div>
   );
 }

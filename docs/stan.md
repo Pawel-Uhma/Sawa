@@ -7,11 +7,19 @@
 ## Teraz
 
 - 18:30 (Antek, z agentem): proxy do `dane.um.warszawa.pl` na home labie ([#63](https://github.com/Pawel-Uhma/Sawa/issues/63)) działa: `https://sawa.rockydomek.party` (Caddy w Portainerze + Cloudflare Tunnel, [`infra/waw-proxy/`](../infra/waw-proxy/README.md)), tylko `POST /api/action/*` z `X-Proxy-Key`. API już to obsługuje (`e3a1596`, `adapters/waw/api.ts`); zostaje ustawić `WAW_API_BASE_URL` + `WAW_PROXY_KEY` na Railway (klucz od Antka prywatnie).
+- 17.10, ok. 20:00 (rozmowa przy stole, [podsumowanie](spotkania/2026-10-17-2000-proxy-dane-mentorzy.md)): repo bez licencji (decydują organizatorzy); ekran trasy wariant B z suwakiem, rzadsze podziałki; większe zadania jako issues dla agenta z pętlą; PR-ów Pawła nie mergujemy hurtem. Proxy z home labu (#63) czeka na test. Głos źle czyta lata (T-144). Nowe zadania T-140–T-147. Otwarte: tryb dziecięcy robiony na Haiku do przejrzenia, parki na mapie, domyślny motyw.
+
+- 19:35 (Paweł, z agentem R3): **stany czekania wszędzie (T-131).** Wspólne klocki w `apps/web/src/components/waiting.tsx`; mapa, planowanie, opowieść, karta miejsca i przejażdżki mówią, co się dzieje, a przy długim czekaniu to przyznają. Typecheck, lint i testy zielone. Uwaga: lokalny web na porcie 3100 nie przechodzi CORS do API z Railway.
+
+- 19:30 (Paweł, z agentem R3): **mapa wraca do samych ikon podrodzaju.** Bez kolorowej obwódki tematu (T-119) i bez zielonych klastrów z liczbą (T-118), na prośbę Pawła. `placeTopic` zostaje dla chipów w karcie miejsca.
+
 - Jasiek (R2 z agentem, issue #85): migracja `places_subkind` wgrana na Supabase, seed puszczony ponownie (4511 miejsc), 35 podrodzajów, m.in. park 224, `null` 12. API na Railway wdrożone z `main` (46bd4e7, `railway up`), `/v1/places` zwraca `subkind`. **Uwaga R1:** Railway nie wdrażał automatycznie od 16:52, sprawdzić auto-deploy z GitHuba.
 
 - 19:20 (Szczepan, z agentem R1, plik R3 na prośbę użytkownika): **przystanki wsiadania na mapie (T-131, PR #84).** Pod kółkiem startu i przesiadki etykieta „Centrum 09” i „14:05” (lub „ok. 14:05”). Numer słupka z id przystanku (`stopPost()`), godzina w czasie warszawskim. Nie sprawdzone na żywej mapie. **Dla R3:** warstwa `route-boarding-label` w `route-layer.tsx`.
 
 - 19:20 (Antek, R3 z agentem): T-130 (issue #35, otwarte w „wieczornym” spotkaniu). GPS przesuwa zegar jazdy także po pierwszym miejscu: przy kolejnym punkcie trasy (`isAt`, 150 m, najwyżej 2 do przodu) `syncTo` (`ride-sync.ts`, `useGpsClockSync` w `DemoApp`). Przejścia między tematami w `story-player.ts`: wyciszenie, oddech 0,6 s, łagodne wejście (słychać tylko z `?voice=1`). **Dla R4:** zdanie-pomost do poprzedniego tematu w prompcie. **Nie sprawdzone** w jeździe.
+- 19:25 (Paweł, z agentem R3): **ekran główny bez paska zakładek (T-130).** Karta wg 1900-A z suwakiem i podpisanymi przełącznikami. Przejażdżki i Sawa są w menu pod logo, a gdy Sawa mówi poza trasą, pojawia się pigułka „Sawa opowiada”. Typecheck, lint i testy zielone.
+
 - 19:10 (Paweł, z agentem R3): **angielski w interfejsie (T-128).** Przełącznik Polski / English w menu i na ekranie powitalnym onboardingu, wybór w localStorage (`sawa-lang`), domyślnie polski. Kod: `features/i18n`, teksty jako `t("pl", "en")` w komponentach. Typecheck, lint i testy zielone. **Dla R4 (T-129):** opowieści z API są dalej po polsku, potrzebne pole `lang` w kontrakcie i prompcie.
 
 - 17.10, wieczór (spotkanie zespołu, [podsumowanie](spotkania/2026-10-17-wieczor-ui-trasa-dzieci.md)): odpada tryb „w samochodzie”; trasa pieszo ma zahaczać o punkty i nie wracać tą samą drogą (T-126, R1); sub-kind miejsc do potwierdzenia przez R2 (T-127). Otwarte: śledzenie lokalizacji w podcaście (#35), muzyka między punktami, prezentacja (Slides czy PDF), klucze Firecrawl. Sprzeczność: licencje zdjęć (T-97 vs. „ignorujemy licencję”), obowiązuje T-97.

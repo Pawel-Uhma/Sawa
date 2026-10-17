@@ -2,6 +2,7 @@
 
 import type { Place } from "@sawa/shared";
 import { useState } from "react";
+import { FadeImage, SkeletonLines } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { placeTopic } from "@/features/map";
 import { placeTagLabel } from "@/lib/interest-labels";
@@ -72,6 +73,8 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
             </button>
           )}
         </div>
+        {/* Miejsce na opowieść rezerwujemy od razu, żeby karta nie podskoczyła, gdy tekst przyjdzie */}
+        {story.state === "loading" && !story.text && <SkeletonLines lines={3} className="mt-4" />}
         {story.text && (
           <p aria-live="polite" className="wejdz mt-3 text-[15px] leading-relaxed text-tekst-2">
             {story.text}
@@ -84,13 +87,10 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
           {place.photos.map((photo) => (
             <li key={photo.url} className="w-[78%] shrink-0 snap-start first:ml-0 md:w-[85%]">
               <figure>
-                {/* biome-ignore lint/performance/noImgElement: zdjęcia z wielu archiwów, next/image wymagałby każdej domeny w konfiguracji */}
-                <img
+                <FadeImage
                   src={photo.url}
                   alt={photo.caption ?? place.name}
-                  loading="lazy"
-                  draggable={false}
-                  className="aspect-[4/3] w-full rounded-2xl bg-tlo-2 object-cover"
+                  className="aspect-[4/3] w-full rounded-2xl"
                 />
               </figure>
             </li>

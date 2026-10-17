@@ -1,12 +1,13 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { LoadingCover } from "@/components/waiting";
 import { useDemoRoute } from "@/features/planner";
 
 // MapLibre needs window and WebGL, so the map renders only in the browser.
 const SawaMap = dynamic(() => import("@/features/map").then((mod) => mod.SawaMap), {
   ssr: false,
-  loading: () => <div className="h-full w-full animate-pulse bg-tlo-2" />,
+  loading: () => <LoadingCover show label="Wczytuję mapę Warszawy…" />,
 });
 
 export function MapScreen() {

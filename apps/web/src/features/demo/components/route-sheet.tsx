@@ -136,6 +136,7 @@ export function RouteSheet(props: RouteSheetProps) {
             totalSec={totalSec}
             isPlaying={player.isPlaying}
             waiting={clock.waitSec !== null}
+            loading={player.loading}
             onToggle={togglePlay}
             onStop={() => restart(false)}
             onBack={goBack}

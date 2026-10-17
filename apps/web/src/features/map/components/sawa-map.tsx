@@ -2,7 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
-import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
+import type { Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -11,6 +11,7 @@ import {
   type MapRef,
   NavigationControl,
 } from "react-map-gl/maplibre";
+import { LoadingCover, StatusPill, useDelayed } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { useTheme } from "@/features/theme";
 import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
@@ -40,16 +41,11 @@ import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
-import {
-  PLACES_CLUSTER_LAYER_ID,
-  PLACES_LAYER_ID,
-  PLACES_SOURCE_ID,
-  PlacesLayer,
-} from "./places-layer";
+import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { UserLayer } from "./user-layer";
 
-const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
+const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID];
 
 const CAMERA_DURATION_MS = 800;
 
@@ -72,11 +68,9 @@ export type SawaMapProps = {
   hasZoomControls?: boolean;
   /** Click on the map outside any place (e.g. to pick a destination). */
   onMapClick?: (point: LatLng) => void;
-  /** Topics the user picked, in their order; they decide the ring colour of places with several. */
+  /** Topics the user picked; unused while places show only their kind icon (no topic ring). */
   interests?: readonly string[];
 };
-
-const NO_INTERESTS: readonly string[] = [];
 
 export function SawaMap({
   route,
@@ -89,7 +83,6 @@ export function SawaMap({
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
-  interests = NO_INTERESTS,
 }: SawaMapProps) {
   const t = useT();
   const mapRef = useRef<MapRef>(null);
@@ -100,6 +93,8 @@ export function SawaMap({
   const [view, setView] = useState<MapView | null>(null);
   const bboxes = useMemo(() => (view ? placeBBoxesInView(view.bounds, view.zoom) : []), [view]);
   const places = usePlaces(bboxes);
+  // Miejsca dociągają się kafelkami przy każdym przesunięciu; pigułka tylko, gdy trwa to dłużej
+  const isFindingPlaces = useDelayed(isLoaded && places.isPending, 700);
   const vehicles = useLiveVehicles(route);
   const attribution = useMemo(
     () => [...(route?.attribution ?? []), ...(vehicles.data?.attribution ?? [])],
@@ -157,11 +152,6 @@ export function SawaMap({
 
   function handleClick(event: MapLayerMouseEvent) {
     const feature = event.features?.[0];
-    if (feature?.layer.id === PLACES_CLUSTER_LAYER_ID) {
-      const center = feature.geometry.type === "Point" ? feature.geometry.coordinates : null;
-      expandCluster(event.target, feature.properties?.cluster_id, center ?? event.lngLat.toArray());
-      return;
-    }
     const id = feature?.properties?.id;
     if (typeof id !== "string") {
       select(null);
@@ -208,8 +198,6 @@ export function SawaMap({
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
-            interests={interests}
-            theme={theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
             hasIcons={icons === "ready"}
@@ -229,31 +217,41 @@ export function SawaMap({
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
-      {places.isError && (
-        <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-powierzchnia px-3 py-2 text-sm text-koral shadow">
-          {t("Nie udało się pobrać miejsc.", "Couldn't load the places.")}{" "}
-          <button type="button" className="font-medium underline" onClick={() => places.refetch()}>
-            {t("Spróbuj ponownie", "Try again")}
-          </button>
-        </p>
-      )}
+      <LoadingCover
+        show={!isLoaded}
+        label={t("Wczytuję mapę Warszawy…", "Loading the map of Warsaw…")}
+      />
+      {/* Stan miejsc w pigułce u góry, pośrodku: nie zasłania logo ani paneli */}
+      <div className="pointer-events-none absolute inset-x-0 top-[max(1.25rem,env(safe-area-inset-top))] z-[15] flex justify-center md:top-6">
+        <StatusPill
+          icon={
+            places.isError ? <span className="size-2 shrink-0 rounded-full bg-koral" /> : undefined
+          }
+          action={
+            places.isError && (
+              <button
+                type="button"
+                className="-mr-1 shrink-0 rounded-full px-1.5 font-bold text-glebia underline-offset-2 hover:underline"
+                onClick={() => places.refetch()}
+              >
+                {t("Ponów", "Retry")}
+              </button>
+            )
+          }
+        >
+          {places.isError
+            ? t("Nie wczytałam miejsc", "Places didn't load")
+            : isFindingPlaces
+              ? t("Szukam miejsc w okolicy…", "Finding places nearby…")
+              : null}
+        </StatusPill>
+      </div>
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );
 }
 
 type MapView = { bounds: LngLatBounds; zoom: number };
-
-/**
- * Zooms in on a cluster just far enough for it to split.
- * MapLibre skips the animation itself under reduced motion.
- */
-async function expandCluster(map: MapLibre, clusterId: unknown, center: number[]) {
-  const source = map.getSource<GeoJSONSource>(PLACES_SOURCE_ID);
-  if (typeof clusterId !== "number" || !source || center.length < 2) return;
-  const zoom = await source.getClusterExpansionZoom(clusterId);
-  map.easeTo({ center: [center[0], center[1]], zoom, duration: CAMERA_DURATION_MS });
-}
 
 function viewOf(map: MapLibre): MapView {
   const bounds = map.getBounds();

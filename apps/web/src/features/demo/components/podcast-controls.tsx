@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { type ReactNode, useState } from "react";
+import { Spinner } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
 import { haptic, SPRING } from "../lib/device";
 import type { MockStop } from "../lib/mock-data";
@@ -36,6 +37,8 @@ export type PodcastControlsProps = {
   isPlaying: boolean;
   /** Sawa czeka na pierwsze miejsce. */
   waiting: boolean;
+  /** Opowieść o bieżącym miejscu jeszcze się ładuje (tekst albo głos). */
+  loading: boolean;
   onToggle: () => void;
   onStop: () => void;
   onBack: () => void;
@@ -78,6 +81,7 @@ export function PodcastControls({
   totalSec,
   isPlaying,
   waiting,
+  loading,
   onToggle,
   onStop,
   onBack,
@@ -105,13 +109,17 @@ export function PodcastControls({
     setDragSec(null);
   }
 
+  // Odtwarzanie włączone, a opowieści jeszcze nie ma: jak „buforowanie” w Podcastach
+  const buffering = isPlaying && loading && !waiting && !dragging;
   const status = dragging
     ? t("Przejdź do", "Go to")
     : waiting
       ? t("Najpierw", "First up")
-      : isPlaying
-        ? t("Teraz", "Now")
-        : t("Wstrzymane", "Paused");
+      : buffering
+        ? t("Sawa szykuje opowieść", "Sawa is getting ready")
+        : isPlaying
+          ? t("Teraz", "Now")
+          : t("Wstrzymane", "Paused");
 
   // Jedno zdanie pod nazwą: przed pierwszym miejscem kiedy Sawa zacznie, potem co dalej
   const hint =
@@ -145,7 +153,7 @@ export function PodcastControls({
           <ChevronLeftIcon className="size-[18px]" />
         </button>
         <p className="etykieta flex min-w-0 items-center gap-2" aria-live="polite">
-          <LiveDot on={isPlaying} />
+          {buffering ? <Spinner className="size-3 text-koral" /> : <LiveDot on={isPlaying} />}
           <span className="truncate">
             {status} · {index + 1} {t("z", "of")} {stops.length}
           </span>
@@ -228,10 +236,12 @@ export function PodcastControls({
                 ? t("Opowiedz teraz", "Tell me now")
                 : t("Wznów Sawę", "Resume Sawa")
           }
+          aria-busy={buffering}
           whileTap={{ scale: 0.92 }}
           transition={SPRING}
-          className="flex size-[68px] items-center justify-center rounded-full bg-glebia text-white shadow-[0_8px_20px_rgba(23,112,111,0.3)] transition-colors hover:bg-glebia-ciemna"
+          className="relative flex size-[68px] items-center justify-center rounded-full bg-glebia text-white shadow-[0_8px_20px_rgba(23,112,111,0.3)] transition-colors hover:bg-glebia-ciemna"
         >
+          <BufferRing show={buffering} />
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.span
               key={isPlaying ? "pause" : "play"}
@@ -286,6 +296,47 @@ export function PodcastControls({
         </button>
       </div>
     </div>
+  );
+}
+
+/** Obracający się łuk wokół przycisku odtwarzania, póki opowieść się ładuje. */
+function BufferRing({ show }: { show: boolean }) {
+  return (
+    <AnimatePresence>
+      {show && (
+        <motion.svg
+          key="pierscien"
+          aria-hidden="true"
+          viewBox="0 0 80 80"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+          transition={{ type: "spring", bounce: 0, duration: 0.3 }}
+          className="pointer-events-none absolute -inset-[6px] size-[80px]"
+        >
+          <circle
+            cx="40"
+            cy="40"
+            r="37"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            className="text-glebia/15"
+          />
+          <circle
+            cx="40"
+            cy="40"
+            r="37"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeDasharray="58 175"
+            className="origin-center animate-spin text-glebia [animation-duration:1.1s]"
+          />
+        </motion.svg>
+      )}
+    </AnimatePresence>
   );
 }
 
