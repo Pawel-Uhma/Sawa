@@ -240,7 +240,7 @@ export function SawaMap({
           }
         >
           {places.isError
-            ? t("Nie udało się pobrać miejsc", "Couldn't load the places")
+            ? t("Nie wczytałam miejsc", "Places didn't load")
             : isFindingPlaces
               ? t("Szukam miejsc w okolicy…", "Finding places nearby…")
               : null}
