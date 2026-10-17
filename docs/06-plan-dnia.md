@@ -34,7 +34,7 @@ Testy na telefonie co 2 h robią wszyscy na zmianę.
 |---|---|---|
 | 08:00 | Śniadanie | Próba pitcha z zegarkiem |
 | 09:00 | | **Zamrożenie zmian w kodzie**, tylko poprawki błędów |
-| 10:30 | | Wysłanie: repo, deck, dokumentacja, [ai-log.md](ai-log.md) |
+| 10:30 | | Wysłanie: repo, deck, dokumentacja z opisem użycia AI |
 | 11:00 | Koniec pracy | Wszystko oddane |
 | 11:30–13:30 | Prezentacje | 5 minut + 2 minuty pytań |
 | 14:30 | Wyniki | |

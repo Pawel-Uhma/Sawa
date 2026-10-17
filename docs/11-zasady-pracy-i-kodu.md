@@ -15,7 +15,7 @@ Oznaczenia: **[Z]** założenie, którego zespół jeszcze nie potwierdził. Je�
 7. Każde wywołanie zewnętrzne ma timeout i zachowanie awaryjne. Demo musi działać, gdy API miasta albo LLM padnie.
 8. Logika biznesowa jest w czystych funkcjach z testami. Route handler i komponent tylko ją wołają.
 9. Sawa mówi tylko fakty z bazy ze źródłem. Tekstów Sawy nie piszemy ręcznie (regulamin §4 ust. 3).
-10. Po każdym zadaniu: `todo.md`, `stan.md`, linia `**AI:**` w `ai-log.md`.
+10. Po każdym zadaniu: `todo.md`, `stan.md`.
 
 ## 2. Git i współpraca
 

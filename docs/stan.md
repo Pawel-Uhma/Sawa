@@ -38,6 +38,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 ## Ostatnie decyzje
 
+- 17.10, 13:31: bez dziennika AI. Hook `log-prompt.sh` usunięty, reguła `**AI:**` z `CLAUDE.md` wycofana, `ai-log.md` zostaje jako archiwum. Opis użycia AI na oddanie robi R2 (T-53). Zdecydował Jasiek (R2, właściciel T-53).
 - 17.10, 11:45: backend jako osobna usługa Hono (TypeScript) na Railway, monorepo pnpm, dokumenty po polsku, kod po angielsku, 4 role (R5 rozwiązana, zadania ma R2). Ustalone przez Szczepana, do potwierdzenia przez zespół. [12-plan-mvp.md](12-plan-mvp.md)
 
 - 17.10: MVP to historia miejsc; podcast z okna w komunikacji; bez logowania; Supabase na koncie zespołu. [Podsumowanie](spotkania/2026-10-17-1100-mvp-sawy.md)

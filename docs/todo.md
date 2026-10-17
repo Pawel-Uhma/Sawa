@@ -61,7 +61,7 @@
 - [ ] **T-51** Zaktualizować pitch deck w [pitch/](pitch/) pod MVP — `R2` — 22:00
 - [ ] **T-52** Test na telefonie co 2 h: wszystkie ścieżki z PRD, zgłoszenia w tym pliku (robią wszyscy na zmianę, R2 pilnuje) — `R2` — od 17:00
 - [ ] **T-55** Nagranie wideo demo jako zapas — `R2` — 22:00
-- [ ] **T-53** Dziennik AI i dokumentacja na oddanie (`ai-log.md`, `README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30
+- [ ] **T-53** Opis zakresu użycia AI (z historii git, PR-ów i archiwum `ai-log.md`) i dokumentacja na oddanie (`README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30
 - [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R2` — niedziela 10:30
 
 ## Wszyscy · końcówka

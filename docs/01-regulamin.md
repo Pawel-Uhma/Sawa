@@ -31,7 +31,7 @@ Bez tego jury nie oceni projektu.
 ## Ograniczenia
 
 - **§4 ust. 3: cały projekt powstaje w trakcie wydarzenia.** Nie wolno używać kodu ani innych elementów przygotowanych wcześniej. Wyjątek: ogólnodostępne, darmowe biblioteki i frameworki open source, jeśli licencja pozwala na użycie komercyjne. Projekt nie mógł być wcześniej nigdzie prezentowany.
-- **§4 ust. 4: AI wolno używać**, ale trzeba opisać zakres jego użycia (patrz [ai-log.md](ai-log.md)). Za treści wygenerowane przez AI odpowiada zespół.
+- **§4 ust. 4: AI wolno używać**, ale trzeba opisać zakres jego użycia (opis przygotowuje R2 na oddanie, T-53; archiwum promptów do 17.10, 13:30: [ai-log.md](ai-log.md)). Za treści wygenerowane przez AI odpowiada zespół.
 - **§4 ust. 9:** projekt bez żadnego zbioru z dane.um.warszawa.pl lub miejskiego API nie jest oceniany.
 - Zespół liczy 3–5 osób (my: 4).
 
