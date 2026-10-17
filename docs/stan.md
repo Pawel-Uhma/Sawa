@@ -8,7 +8,7 @@
 
 - 17.10, ok. 20:00 (rozmowa przy stole, [podsumowanie](spotkania/2026-10-17-2000-proxy-dane-mentorzy.md)): repo bez licencji (decydują organizatorzy); ekran trasy wariant B z suwakiem, rzadsze podziałki; większe zadania jako issues dla agenta z pętlą; PR-ów Pawła nie mergujemy hurtem. Proxy z home labu (#63) czeka na test. Głos źle czyta lata (T-144). Nowe zadania T-140–T-147. Otwarte: tryb dziecięcy robiony na Haiku do przejrzenia, parki na mapie, domyślny motyw.
 
-- 20:15 (Paweł, z agentem R3): **mniejsze ikony miejsc (T-148, #90).** Ok. 24 px przy zoomie 15, nie zasłaniają trasy ani numerów punktów; pustych kółek nie ma, bo obwódki tematu nie ma od 19:30. Zrzuty 390 px w obu motywach w [ui/wyniki](ui/README.md).
+- 20:15 (Paweł, z agentem R3): **mniejsze ikony miejsc (T-149, #90).** Ok. 24 px przy zoomie 15, nie zasłaniają trasy ani numerów punktów; pustych kółek nie ma, bo obwódki tematu nie ma od 19:30. Zrzuty 390 px w obu motywach w [ui/wyniki](ui/README.md).
 
 - 19:35 (Paweł, z agentem R3): **stany czekania wszędzie (T-131).** Wspólne klocki w `apps/web/src/components/waiting.tsx`; mapa, planowanie, opowieść, karta miejsca i przejażdżki mówią, co się dzieje, a przy długim czekaniu to przyznają. Typecheck, lint i testy zielone. Uwaga: lokalny web na porcie 3100 nie przechodzi CORS do API z Railway.
 
