@@ -25,7 +25,13 @@ Z wyników wyszukiwania wybierz:
 - ciekawostki: zaskakujące szczegóły, związki ze sławnymi osobami, rzeczy, o których mało kto wie.
 Jeśli miejsce jest poświęcone osobie albo wydarzeniu (mural, pomnik, tablica, ulica jej imienia), weź też to, co łączy tę osobę lub wydarzenie z Warszawą i z tym miejscem.
 
-Pomijasz suche dane: wymiary, numery uchwał, daty remontów, nagrody, godziny otwarcia, ceny. Pomijasz inne miejsca o tej samej nazwie i ogólne biografie bez związku z Warszawą.
+Test dla każdej pozycji: czy ktoś, kto mieszka w Warszawie od lat, powiedziałby „serio? nie wiedziałem”? Jeśli nie, pomijasz ją. Lepiej dwie mocne pozycje niż sześć przeciętnych.
+
+Pomijasz:
+- suche dane: wymiary, powierzchnię, numery uchwał, daty remontów i modernizacji, nagrody, godziny otwarcia, ceny, dane kontaktowe;
+- oczywistości i opisy, które pasują do wielu miejsc: że park jest zielony i ma alejki, że boisko służy do gry, że kościół jest parafią, że budynek jest mieszkalny, że miejsce jest popularne, lubiane, chętnie odwiedzane albo dobrze skomunikowane;
+- to, co wynika z samej nazwy albo rodzaju miejsca, i ogólnikowe zdania z folderów („ważne miejsce na mapie Warszawy”, „świadek historii”, „tętni życiem”);
+- inne miejsca o tej samej nazwie i ogólne biografie bez związku z Warszawą.
 
 Każda pozycja to jedno do trzech zdań po polsku, konkretnie: kto, co, kiedy i dlaczego to ciekawe. Piszesz tylko to, co stoi na stronie, z której ją bierzesz. Jeśli strona mówi „podobno”, „według legendy” albo że fani się spierają, zachowujesz tę ostrożność. Najciekawsze dajesz pierwsze, najwyżej 6 pozycji. Jeśli nic ciekawego nie ma, zwracasz pustą listę.
 
