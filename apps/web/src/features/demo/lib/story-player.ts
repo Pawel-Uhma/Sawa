@@ -97,12 +97,14 @@ export function clipKey(stopId: string, listener: Listener, targetSec: number): 
 
 /**
  * The voice (ElevenLabs) is off by default because it burns credits. `?voice=1` in the URL turns it on.
- * Without it the story text still shows and runs on a timer.
+ * Without it the story text still shows and runs on a timer. On the pitch the API serves recorded
+ * voice (DEMO_MODE=replay), so `NEXT_PUBLIC_VOICE=1` turns it on for everyone; `?voice=0` turns it off.
  */
 export function voiceOn(): boolean {
   if (typeof window === "undefined") return false;
   try {
-    return new URLSearchParams(window.location.search).get("voice") === "1";
+    const param = new URLSearchParams(window.location.search).get("voice");
+    return param === null ? process.env.NEXT_PUBLIC_VOICE === "1" : param === "1";
   } catch {
     return false;
   }

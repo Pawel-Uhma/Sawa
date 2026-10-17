@@ -2,9 +2,11 @@ import { haversineM } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
 import {
+  isLoop,
   placesAlong,
   planWalk,
   retracedShare,
+  roundness,
   toSegment,
   turnBackM,
   walkThrough,
@@ -137,7 +139,7 @@ describe("walking back the same way", () => {
   };
 
   it("goes out and back when nothing penalises it", () => {
-    const walk = planWalk(loop, { backtrackPenalty: 0 });
+    const walk = planWalk(loop, { backtrackPenalty: 0, loopRoundnessBonus: 0 });
     expect(walk?.waypoints).toHaveLength(3);
   });
 
@@ -186,5 +188,82 @@ describe("turning back along the street just walked", () => {
     for (const id of ["mid-1", "mid-2"]) {
       if (eta.has(id)) expect(eta.get(id)).toBeLessThan(eta.get("far") as number);
     }
+  });
+});
+
+describe("roundness", () => {
+  const ll = (lng: number, lat: number) => ({ lat, lng });
+
+  it("is high for a square and zero for out and back along one line", () => {
+    // ~140 × 140 m square.
+    const square = [ll(21.0, 52.23), ll(21.002, 52.23), ll(21.002, 52.23126), ll(21.0, 52.23126)];
+    expect(roundness(square)).toBeCloseTo(Math.PI / 4, 1);
+    expect(roundness([ORIGIN, ll(21.004, 52.23), ORIGIN])).toBe(0);
+    expect(roundness([ORIGIN, ll(21.004, 52.23)])).toBe(0);
+  });
+
+  it("is low for a lollipop: out, a street over, back along it", () => {
+    const lollipop = [ORIGIN, ll(21.006, 52.23), ll(21.006, 52.2306), ll(21.0, 52.2306)];
+    const square = [ORIGIN, ll(21.003, 52.23), ll(21.003, 52.2318), ll(21.0, 52.2318)];
+    expect(roundness(lollipop)).toBeLessThan(roundness(square) / 2);
+  });
+});
+
+describe("isLoop", () => {
+  it("is a loop only when the walk ends at the start", () => {
+    expect(isLoop(ORIGIN, ORIGIN)).toBe(true);
+    expect(isLoop(ORIGIN, { lat: 52.2302, lng: 21.0 })).toBe(true); // ~22 m
+    expect(isLoop(ORIGIN, { lat: 52.235, lng: 21.0 })).toBe(false);
+    expect(isLoop(ORIGIN, undefined)).toBe(false);
+  });
+});
+
+describe("a loop comes back around, not along the way out", () => {
+  // A street east of the origin, a parallel one ~65 m north and another ~330 m north.
+  const grid = [
+    place("e1", 21.002, 52.23, ["historical"]),
+    place("e2", 21.004, 52.23, ["historical"]),
+    place("e3", 21.006, 52.23, ["historical"]),
+    place("p1", 21.005, 52.2306, ["historical"]),
+    place("p2", 21.002, 52.2306, ["historical"]),
+    place("n1", 21.006, 52.233, ["historical"], 0.6),
+    place("n2", 21.003, 52.233, ["historical"], 0.6),
+    place("n3", 21.0, 52.233, ["historical"], 0.6),
+  ];
+  const loop = {
+    places: grid,
+    origin: ORIGIN,
+    end: ORIGIN,
+    budgetSec: 20 * 60,
+    interests: new Set(["historical"]),
+  };
+  const kx = 111_320 * Math.cos((ORIGIN.lat * Math.PI) / 180);
+  const areaM2 = (points: { lat: number; lng: number }[]) =>
+    Math.abs(
+      points.reduce((sum, a, i) => {
+        const b = points[(i + 1) % points.length] as { lat: number; lng: number };
+        return (
+          sum +
+          ((a.lng - ORIGIN.lng) * kx * (b.lat - ORIGIN.lat) -
+            (b.lng - ORIGIN.lng) * kx * (a.lat - ORIGIN.lat)) *
+            111_320
+        );
+      }, 0) / 2,
+    );
+
+  it("goes round the block and encloses more than a zig-zag along the parallel streets", () => {
+    const flat = planWalk(loop, { loopRoundnessBonus: 0 });
+    const round = planWalk(loop);
+    expect(flat && roundness(flat.waypoints)).toBeLessThan(0.3);
+    expect(round && roundness(round.waypoints)).toBeGreaterThan(0.6);
+    expect(round && flat && areaM2(round.waypoints)).toBeGreaterThan(
+      2 * areaM2(flat?.waypoints ?? []),
+    );
+    expect(round?.elapsedSec).toBeLessThanOrEqual(1.1 * 20 * 60);
+  });
+
+  it("leaves walks to a destination as they were", () => {
+    const toDestination = { ...loop, end: { lat: 52.233, lng: 21.006 } };
+    expect(planWalk(toDestination)).toEqual(planWalk(toDestination, { loopRoundnessBonus: 0 }));
   });
 });
