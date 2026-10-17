@@ -42,6 +42,19 @@ describe("placesAlong", () => {
     );
     expect(ids).toEqual(["by-the-way"]);
   });
+
+  it("counts a building farther off: its point is the middle, the walker passes the facade", () => {
+    const segment = { from: ORIGIN, to: { lat: 52.23, lng: 21.004 }, startSec: 0, sec: 300 };
+    const places = [
+      { ...place("palace", 21.002, 52.2304, ["historical"]), kind: "building" as const }, // ~45 m
+      { ...place("plaque", 21.002, 52.2304, ["historical"]), kind: "plaque" as const },
+      { ...place("far-church", 21.002, 52.2306, ["historical"]), kind: "church" as const }, // ~67 m
+    ];
+    const ids = placesAlong(places, segment, { interests: new Set(["historical"]) }).map(
+      (p) => p.placeId,
+    );
+    expect(ids).toEqual(["palace"]);
+  });
 });
 
 describe("walkThrough", () => {

@@ -1,4 +1,4 @@
-import type { LatLng } from "@sawa/shared";
+import type { LatLng, PlaceKind } from "@sawa/shared";
 
 export type LngLat = [number, number];
 export type Mode = "tram" | "bus";
@@ -38,6 +38,8 @@ export type PlacePoint = {
   id: string;
   name: string;
   position: LatLng;
+  /** A building or a square is passed farther from its point than a plaque (see walk-tour.ts). */
+  kind?: PlaceKind;
   interests: string[];
   weight: number;
   /** Facts + trivia; with `ScorePrefs.heard` tells how much is left to tell. */
