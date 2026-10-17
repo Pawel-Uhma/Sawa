@@ -4,7 +4,7 @@ import { Layer, Source } from "react-map-gl/maplibre";
 import { DESTINATION_COLOR } from "../lib/map-style";
 
 /** Coral dot with a white ring where the ride should end. */
-export function DestinationLayer({ position }: { position: LatLng }) {
+export function DestinationLayer({ position, ring }: { position: LatLng; ring: string }) {
   const data = useMemo(
     () => ({
       type: "Feature" as const,
@@ -27,7 +27,7 @@ export function DestinationLayer({ position }: { position: LatLng }) {
         paint={{
           "circle-radius": 9,
           "circle-color": DESTINATION_COLOR,
-          "circle-stroke-color": "#ffffff",
+          "circle-stroke-color": ring,
           "circle-stroke-width": 3,
         }}
       />
