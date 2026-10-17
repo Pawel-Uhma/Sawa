@@ -8,19 +8,21 @@
     "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "@sawa/shared": "workspace:*",
+    "hono": "^4.13.13",
+    "maplibre-gl": "^5.24.0",
+    "motion": "^12.43.0",
     "next": "16.4.2",
     "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "@sawa/shared": "workspace:*",
-    "hono": "^4.13.13"
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@sawa/api": "workspace:*",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "@sawa/api": "workspace:*"
+    "typescript": "^5"
   }
 }

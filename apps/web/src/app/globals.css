@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "maplibre-gl/dist/maplibre-gl.css";
 
 /* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
 @theme inline {

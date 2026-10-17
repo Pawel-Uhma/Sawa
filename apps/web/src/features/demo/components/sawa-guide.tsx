@@ -65,9 +65,7 @@ export function SawaGuide({ pose, say, hero }: SawaGuideProps) {
             exit={reduce ? { opacity: 0 } : { opacity: 0, scale: 0.97 }}
             transition={SPRING}
             className={`relative rounded-3xl bg-white px-4 py-3 text-[15px] font-semibold leading-snug text-tekst shadow-[0_6px_20px_rgba(16,43,42,0.08)] md:origin-top md:text-center md:text-base ${
-              hero
-                ? "origin-top text-center"
-                : "origin-bottom-left rounded-bl-md md:rounded-bl-3xl"
+              hero ? "origin-top text-center" : "origin-bottom-left rounded-bl-md md:rounded-bl-3xl"
             }`}
           >
             {say}

@@ -5722,3 +5722,333 @@
 > @@ -1,114 +0,0 @@
 > -import type { CSSProperties
 
+
+### 2026-10-17 13:53 · Pawel
+
+> dodalem na railway OPENROUTER_KEY , zaimplementuj na backendzie z modelem jakims tanim gemini flash lite , czesc odnosnie generowania tego co sawa mowi -w sensie tekst. niech sie to juz laczy z tts ktory jest wlasnie implementowany
+
+
+### 2026-10-17 13:58 · Pawel
+
+> Popraw swiping animacje , scrolowanie itd itp zeby nawet mobilnie aplikacje czulo sie jakby byla w swifcie na iphone, nic sie nie przesuwa, przesuwanie arkuszy w dol dziala i je chowa , bez zoom outu na arkuszach ani w innych miejscach itd itp. testuj lokalnie az nie bedzie bugow w UI
+
+
+### 2026-10-17 13:58 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/package.json                                  |  12 +--
+>  apps/web/src/app/globals.css                           |   1 -
+>  apps/web/src/features/demo/components/icons.tsx        |  15 ++--
+>  apps/web/src/features/demo/components/sawa-guide.tsx   |   4 +-
+>  apps/web/src/features/demo/components/sawa-map.tsx     |   4 +
+>  apps/web/src/features/demo/components/start-screen.tsx |  22 ------
+>  apps/web/src/features/demo/components/story-player.tsx |  88 ----------------------
+>  apps/web/src/features/demo/lib/onboarding.ts           |  20 +++--
+>  docs/ai-log.md                                         |  10 +++
+>  pnpm-lock.yaml                                         | 244 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>  10 files changed, 288 insertions(+), 132 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/package.json b/apps/web/package.json
+> index f19ac1f..30fc0fd 100644
+> --- a/apps/web/package.json
+> +++ b/apps/web/package.json
+> @@ -8,19 +8,21 @@
+>      "typecheck": "next typegen && tsc --noEmit"
+>    },
+>    "dependencies": {
+> +    "@sawa/shared": "workspace:*",
+> +    "hono": "^4.13.13",
+> +    "maplibre-gl": "^5.24.0",
+> +    "motion": "^12.43.0",
+>      "next": "16.4.2",
+>      "react": "19.3.0",
+> -    "react-dom": "19.3.0",
+> -    "@sawa/shared": "workspace:*",
+> -    "hono": "^4.13.13"
+> +    "react-dom": "19.3.0"
+>    },
+>    "devDependencies": {
+> +    "@sawa/api": "workspace:*",
+>      "@tailwindcss/turbopack": "^4",
+>      "@types/node": "^24",
+>      "@types/react": "^19",
+>      "@types/react-dom": "^19",
+>      "tailwindcss": "^4",
+> -    "typescript": "^5",
+> -    "@sawa/api": "workspace:*"
+> +    "typescript": "^5"
+>    }
+>  }
+> diff --git a/apps/web/src/app/globals.css b/apps/web/src/app/globals.css
+> index eee0abd..010fd92 100644
+> --- a/apps/web/src/app/globals.css
+> +++ b/apps/web/src/app/globals.css
+> @@ -1,5 +1,4 @@
+>  @import "tailwindcss";
+> -@import "maplibre-gl/dist/maplibre-gl.css";
+>  
+>  /* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
+>  @theme inline {
+> diff --git a/apps/web/src/features/demo/components/icons.tsx b/apps/web/src/features/demo/components/icons.tsx
+> index 98856b1..cd161d6 100644
+> --- a/apps/web/src/features/demo/components/icons.tsx
+> +++ b/apps/web/src/features/demo/components/icons.tsx
+> @@ -10,12 +10,11 @@ const base = {
+>    strokeWidth: 2,
+>    strokeLinecap: "round",
+>    strokeLinejoin: "round",
+> -  "aria-hidden": true,
+>  } as const;
+>  
+>  export function PinIcon(props: IconProps) {
+>    return (
+> -    <svg {...base} {...props}>
+> +    <svg aria-hidden="true" {...base} {...props}>
+>        <circle cx="12" cy="10" r="3" />
+>        <path d="M12 21s7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 7 11 7 11Z" />
+>      </svg>
+> @@ -24,7 +23,7 @@ export function PinIcon(props: IconProps) {
+>  
+>  export function RoutesIcon(props: IconProps) {
+>    return (
+> -    <svg {...base} {...props}>
+> +    <svg aria-hidden="true" {...base} {...props}>
+>        <path d="M4 19V8l5-3 6 3 5-3v11l-5 3-6-3-5 3Z" />
+>        <path d="M9 5v11M15 8v11" />
+>      </svg>
+> @@ -33,7 +32,7 @@ export function RoutesIcon(props: IconProps) {
+>  
+>  export function ChatIcon(props: IconProps) {
+>    return (
+> -    <svg {...base} {...props}>
+> +    <svg aria-hidden="true" {...base} {...props}>
+>        <path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12Z" />
+>      </svg>
+>    );
+> @@ -41,7 +40,7 @@ export function ChatIcon(props: IconProps) {
+>  
+>  export function CloudIcon(props: IconProps) {
+>    return (
+> -    <svg {...base} {...props}>
+> +    <svg aria-hidden="true" {...base} {...props}>
+>        <path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7Z" />
+>      </svg>
+>    );
+> @@ -49,7 +48,7 @@ export function CloudIcon(props: IconProps) {
+>  
+>  export function ArrowRightIcon(props: IconProps) {
+>    return (
+> -    <svg {...base} strokeWidth={2.4} {...props}>
+> +    <svg aria-hidden="true" {...base} strokeWidth={2.4} {...props}>
+>        <path d="M5 12h14M13 6l6 6-6 6" />
+>      </svg>
+>    );
+> @@ -57,7 +56,7 @@ export function ArrowRightIcon(props: IconProps) {
+>  
+>  export function ChevronLeftIcon(props: IconProps) {
+>    return (
+> -    <svg {...base} strokeWidth={2.4} {...props}>
+> +    <svg aria-hidden="true" {...base} strokeWidth={2.4} {...props}>
+>        <path d="M15 6l-6 6 6 6" />
+>      </svg>
+>    );
+> @@ -98,7 +97,7 @@ export function SkipPrevIcon(props: IconProps) {
+>  
+>  export function TramIcon(props: IconProps) {
+>    return (
+> -    <svg {...base} {...props}>
+> +    <svg aria-hidden="true" {...base} {...props}>
+>        <rect x="5" y="6" width="14" height="12" rx="3" />
+>        <path d="M9 3h6M12 3v3M5 13h14M8 21l1.5-3M16 21l-1.5-3" />
+>      </svg>
+> diff --git a/apps/web/src/features/demo/components/sawa-guide.tsx b/apps/web/src/features/demo/components/sawa-guide.tsx
+> index 55e4d6b..b05f920 100644
+> --- a/apps/web/src/features/demo/components/sawa-guide.tsx
+> +++ b/apps/web/src/features/demo/components/sawa-guide.tsx
+> @@ -65,9 +65,7 @@ export function SawaGuide({ pose, say, hero }: SawaGuideProps) {
+>              exit={reduce ? { opacity: 0 } : { opacity: 0, scale: 0.97 }}
+>              transition={SPRING}
+>              className={`relative rounded-3xl bg-white px-4 py-3 text-[15px] font-semibold leading-snug text-tekst shadow-[0_6px_20px_rgba(16,43,42,0.08)] md:origin-top md:text-center md:text-base ${
+> -              hero
+> -                ? "origin-top text-center"
+> -                : "origin-bottom-left rounded-bl-md md:rounded-bl-3xl"
+> +              hero ? "origin-top text-center" : "origin-bottom-left rounded-bl-md md:rounded-bl-3xl"
+>              }`}
+>            >
+>              {say}
+> diff --git a/apps/web/src/features/demo/components/sawa-map.tsx b/apps/web/src/features/demo/components/sawa-map.tsx
+> index da6088c..1d2a7ef 100644
+> --- a/apps/web/src/features/demo/components/sawa-map.tsx
+> +++ b/apps/web/src/features/demo/components/sawa-map.tsx
+> @@ -152,6 +152,10 @@ export function SawaMap({
+>        map.on("load", () => {
+>          if (!map) return;
+>          recolor(map);
+> +        // Atrybucja zwinięta do ikony „i”, rozwija się po dotknięciu
+> +        const attribution = containerRef.current?.querySelector(".maplibregl-ctrl-attrib");
+> +        attribution?.classList.remove("maplibregl-compact-show");
+> +        attribution?.removeAttribute("open");
+>          map.addSource("route", { type: "geojson", data: routeData(null) });
+>          map.addLayer({
+>            id: "route-casing",
+> diff --git a/apps/web/src/features/demo/components/start-screen.tsx b/apps/web/src/features/demo/components/start-screen.tsx
+> deleted file mode 100644
+> index ed3e199..0000000
+> --- a/apps/web/src/features/demo/components/start-screen.tsx
+> +++ /dev/null
+> @@ -1,22 +0,0 @@
+> -import { Logo } from "./logo";
+> -import { PrimaryButton } from "./primary-button";
+> -
+> -export function StartScreen({ onStart }: { onStart: () => void }) {
+> -  return (
+> -    <main className="wejdz mx-auto flex min-h-dvh w-full max-w-md flex-col justify-between px-4 pb-[max(2rem,env(safe-area-inset-bottom))] pt-[max(3rem,env(safe-area-inset-top))] md:max-w-xl md:px-8">
+> -      <div className="flex flex-col gap-4">
+> -        <Logo className="text-4xl" />
+> -        <p className="max-w-xs text-lg leading-snug text-tekst-2">
+> -          Opowiem Ci o mieście za oknem tramwaju.
+> -        </p>
+> -      </div>
+> -
+> -      <div className="flex flex-col gap-4">
+> -        <PrimaryButton onClick={onStart}>Zaczynamy</PrimaryButton>
+> -        <p className="text-center text-xs text-tekst-3">
+> -          Wersja demo · dane testowe, bez logowania
+> -        </p>
+> -      </div>
+> -    </main>
+> -  );
+> -}
+> diff --git a/apps/web/src/features/demo/components/story-player.tsx b/apps/web/src/features/demo/components/story-player.tsx
+> deleted file mode 100644
+> index c0fad44..0000000
+> --- a/apps/web/src/features/demo/components/story-player.tsx
+> +++ /dev/null
+> @@ -1,88 +0,0 @@
+> -"use client";
+> -
+> -import { useEffect, useState } from "react";
+> -import type { MockStop } from "../lib/mock-data";
+> -
+> -// Placeholder: opowieść trwa stały czas. Docelowo długość wynika z czasu do punktu i API (T-42).
+> -const PLACEHOLDER_STORY_MS = 8000;
+> -const TICK_MS = 100;
+> -
+> -type StoryPlayerProps = {
+> -  stop: MockStop;
+> -  hasNext: boolean;
+> -  onNext: () => void;
+> -};
+> -
+> -export function StoryPlayer({ stop, hasNext, onNext }: StoryPlayerProps) {
+> -  const [isPlaying, setIsPlaying] = useState(true);
+> -  const [progress, setProgress] = useState(0);
+> -
+> -  useEffect(() => {
+> -    if (!isPlaying) return;
+> -    const timer = setInterval(() => {
+> -      setProgress((current) => Math.min(100, current + (TICK_MS / PLACEHOLDER_STORY_MS) * 100));
+> -    }, TICK_MS);
+> -    return () => clearInterval(timer);
+> -  }, [isPlaying]);
+> -
+> -  useEffect(() => {
+> -    if (progress < 100) return;
+> -    if (hasNext) {
+> -      onNext();
+> -    } else {
+> -      setIsPlaying(false);
+> -    }
+> -  }, [progress, hasNext, onNext]);
+> -
+> -  return (
+> -    <div className="flex flex-col gap-4 rounded-3xl bg-white p-4 shadow-[0_10px_30px_rgba(16,43,42,0.10)]">
+> -      <div className="flex items-center justify-between gap-3">
+> -        <div className="min-w-0">
+> -          <p className="text-xs font-semibold uppercase tracking-wide text-tekst-3">
+> -            Opowieść z okna
+> -          </p>
+> -          <p className="truncate text-base font-bold">{stop.name}</p>
+> -        </div>
+> -        <span className="shrink-0 rounded-full bg-mieta-jasna px-3 py-1 text-xs font-semibold text-glebia-ciemna">
+> -          linia {stop.line}
+> -        </span>
+> -      </div>
+> -
+> -      <p className="min-h-16 text-[15px] leading-relaxed text-tekst-2">
+> -        Tu pojawi się tekst opowieści z API (placeholder, bez treści Sawy).
+> -      </p>
+> -
+> -      <div
+> -        role="progressbar"
+> -        aria-label="Postęp opowieści"
+> -        aria-valuemin={0}
+> -        aria-valuemax={100}
+> -        aria-valuenow={Math.round(progress)}
+> -        className="h-1.5 overflow-hidden rounded-full bg-tlo-2"
+> -      >
+> -        <div className="h-full rounded-full bg-glebia" style={{ width: `${progress}%` }} />
+> -      </div>
+> -
+> -      <div className="flex items-center gap-3">
+> -        <button
+> -          type="button"
+> -          onClick={() => {
+> -            if (!isPlaying && progress >= 100) setProgress(0);
+> -            setIsPlaying((value) => !value);
+> -          }}
+> -          className="flex h-12 flex-1 items-center justify-center rounded-full bg-tlo-2 font-semibold text-tekst transition-transform active:scale-[0.98]"
+> -        >
+> -          {isPlaying ? "Pauza" : "Odtwarzaj"}
+> -        </button>
+> -        <button
+> -          type="button"
+> -          onClick={onNext}
+> -          disabled={!hasNext}
+> -          className="flex h-12 flex-1 items-center justify-center rounded-full bg-glebia font-semibold text-white transition-transform active:scale-[0.98] disabled:opacity-40"
+> -        >
+> -          Dalej
+> -        </button>
+> -      </div>
+> -    </div>
+> -  );
+> -}
+> diff --git a/apps/web/src/features/demo/lib/onboarding.ts b/apps/web/src/features/demo/lib/onboarding.ts
+> index e42f74e..0fad48d 100644
+> --- a/apps/web/src/features/demo/lib/onboarding.ts
+> +++ b/apps/web/src/features/demo/lib/onboarding.ts
+> @@ -5,18 +5,28 @@ export const MAX_INTERESTS = 3;
+>  
+>  export const interestIcon = (key: string) => `/onboarding/${key}.webp`;
+>  
+> -export type Choice = { key: string; label: string; hint: string; icon?: string };
+> +export type Choice = { key: string; label: string; hint: string; icon: string };
+>  
+>  export const FAMILIARITY: Choice[] = [
+> -  { key: "first_time", label: "Jestem tu pierwszy raz", hint: "Zacznę od tego, co najważniejsze", icon: "first_time" },
+> +  {
+> +    key: "first_time",
+> +    label: "Jestem tu pierwszy raz",
+> +    hint: "Zacznę od tego, co najważniejsze",
+> +    icon: "first_time",
+> +  },
+>    { key: "know_a_bit", label: "Trochę znam", hint: "Pominę oczywistości", icon: "know_a_bit" },
+>    { key: "local", label: "Mieszkam tu", hint: "Pokażę to, czego nie widać", icon: "local" },
+>  ];
+>  
+>  export const STORY_STYLES: Choice[] = [
+> -  { key: "fun", label: "Krótko i z humorem", hint: "Jak znajoma z miasta" },
+> -  { key: "deep", label: "Z detalami", hint: "Daty, ludzie, tło" },
+> -  { key: "trivia", label: "Same ciekawostki", hint: "Jedno zdanie, jedno „wow”" },
+> +  { k
+

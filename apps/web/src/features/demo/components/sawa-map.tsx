@@ -152,6 +152,10 @@ export function SawaMap({
       map.on("load", () => {
         if (!map) return;
         recolor(map);
+        // Atrybucja zwinięta do ikony „i”, rozwija się po dotknięciu
+        const attribution = containerRef.current?.querySelector(".maplibregl-ctrl-attrib");
+        attribution?.classList.remove("maplibregl-compact-show");
+        attribution?.removeAttribute("open");
         map.addSource("route", { type: "geojson", data: routeData(null) });
         map.addLayer({
           id: "route-casing",

@@ -10,12 +10,11 @@ const base = {
   strokeWidth: 2,
   strokeLinecap: "round",
   strokeLinejoin: "round",
-  "aria-hidden": true,
 } as const;
 
 export function PinIcon(props: IconProps) {
   return (
-    <svg {...base} {...props}>
+    <svg aria-hidden="true" {...base} {...props}>
       <circle cx="12" cy="10" r="3" />
       <path d="M12 21s7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 7 11 7 11Z" />
     </svg>
@@ -24,7 +23,7 @@ export function PinIcon(props: IconProps) {
 
 export function RoutesIcon(props: IconProps) {
   return (
-    <svg {...base} {...props}>
+    <svg aria-hidden="true" {...base} {...props}>
       <path d="M4 19V8l5-3 6 3 5-3v11l-5 3-6-3-5 3Z" />
       <path d="M9 5v11M15 8v11" />
     </svg>
@@ -33,7 +32,7 @@ export function RoutesIcon(props: IconProps) {
 
 export function ChatIcon(props: IconProps) {
   return (
-    <svg {...base} {...props}>
+    <svg aria-hidden="true" {...base} {...props}>
       <path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12Z" />
     </svg>
   );
@@ -41,7 +40,7 @@ export function ChatIcon(props: IconProps) {
 
 export function CloudIcon(props: IconProps) {
   return (
-    <svg {...base} {...props}>
+    <svg aria-hidden="true" {...base} {...props}>
       <path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 11a3.5 3.5 0 0 0 1 7Z" />
     </svg>
   );
@@ -49,7 +48,7 @@ export function CloudIcon(props: IconProps) {
 
 export function ArrowRightIcon(props: IconProps) {
   return (
-    <svg {...base} strokeWidth={2.4} {...props}>
+    <svg aria-hidden="true" {...base} strokeWidth={2.4} {...props}>
       <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
   );
@@ -57,7 +56,7 @@ export function ArrowRightIcon(props: IconProps) {
 
 export function ChevronLeftIcon(props: IconProps) {
   return (
-    <svg {...base} strokeWidth={2.4} {...props}>
+    <svg aria-hidden="true" {...base} strokeWidth={2.4} {...props}>
       <path d="M15 6l-6 6 6 6" />
     </svg>
   );
@@ -98,7 +97,7 @@ export function SkipPrevIcon(props: IconProps) {
 
 export function TramIcon(props: IconProps) {
   return (
-    <svg {...base} {...props}>
+    <svg aria-hidden="true" {...base} {...props}>
       <rect x="5" y="6" width="14" height="12" rx="3" />
       <path d="M9 3h6M12 3v3M5 13h14M8 21l1.5-3M16 21l-1.5-3" />
     </svg>
