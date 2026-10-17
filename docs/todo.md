@@ -76,7 +76,7 @@
 - [x] **T-108** Czasy na żywo: opóźnienie pierwszego pojazdu z pozycji (`Leg.delaySec`), podpis danych miasta w trasie, `/health` z datą grafu GTFS — `R1` — (Szczepan, 19:40, PR w toku)
 - [x] **T-109** Słabe punkty planera: bez dobijania czasu czekaniem, przesiadki pieszo do 300 m, wiązka bez kopii — `R1` — (Szczepan, 19:40, PR w toku)
 - [x] **T-100** Pojazdy na mapie trasy (PR, Paweł, 17.10, ok. 16:45): hook `useLiveVehicles` (co 10 s), osobne ikony tramwaju i autobusu, płynny ruch przez `positionOnTrack` w `requestAnimationFrame`, wyróżniony pojazd `ride`. Gotowe przykłady kodu w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R3` (Paweł, issue #30) — po T-99 (PR #29)
-- [ ] **T-101** Mapa: `fitBounds` trasy z uwzględnieniem otwartej karty miejsca (trasa chowa się pod kartą) i ostrzeżenie „Expected number, found null” w konsoli — `R3` (Antek)
+- [~] **T-101** Mapa: `fitBounds` trasy z uwzględnieniem otwartej karty miejsca (trasa chowa się pod kartą) i ostrzeżenie „Expected number, found null” w konsoli — `R3` (Antek, 16:55: karta doliczana do paddingu kamery, `paddingWithSheet`, gałąź `r3/fit-place-sheet`; ostrzeżenie zostaje)
 - [ ] **T-102** Pozycja „za oknem”: znacznik jedzie wzdłuż `Leg.lngLats` w czasie odtwarzania (krok 8 w [14-plan-mapy.md](14-plan-mapy.md) §10, M2 planu MVP); potrzebne do T-36 — `R3` (Antek) — niedziela 08:00
 - [ ] **T-103** Mapa na 2 prawdziwych telefonach: karta miejsca z przeciąganiem, 16 px marginesu, bez poziomego scrolla (krok 7 w [14-plan-mapy.md](14-plan-mapy.md) §10) — `R3` (Antek)
 - [ ] **T-107** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42)
