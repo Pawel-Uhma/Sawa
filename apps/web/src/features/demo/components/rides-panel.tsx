@@ -1,6 +1,6 @@
 "use client";
 
-import type { Leg, Route } from "@sawa/shared";
+import type { LatLng, Leg, Route } from "@sawa/shared";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { planRoute, routeLine } from "../lib/api-data";
@@ -13,6 +13,9 @@ import { KORAL, RouteThumb } from "./route-thumb";
 
 type RidesPanelProps = {
   profile: Profile;
+  /** Start przejażdżki i jego podpis (lib/start-point.ts). */
+  origin: LatLng;
+  originLabel: string;
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
   /** Trasa wyznaczona wcześniej w tej sesji (pusta, jeśli jeszcze żadnej nie było). */
@@ -27,6 +30,8 @@ const SEGMENTS = [30, 60, 120, 240];
 /** Zakładka Przejażdżki (makieta D): gotowe trasy jak odcinki podcastu, przełącznik czasu, ostatnia trasa. */
 export function RidesPanel({
   profile,
+  origin,
+  originLabel,
   durationMin,
   onDurationChange,
   lastRoute,
@@ -39,7 +44,7 @@ export function RidesPanel({
   useEffect(() => {
     let cancelled = false;
     setFailed(false);
-    planRoute(durationMin, profile)
+    planRoute(origin, durationMin, profile)
       .then((route) => !cancelled && setPreview(route))
       .catch(() => {
         if (cancelled) return;
@@ -49,7 +54,7 @@ export function RidesPanel({
     return () => {
       cancelled = true;
     };
-  }, [durationMin, profile]);
+  }, [origin, durationMin, profile]);
   const nearest = SEGMENTS.reduce((best, value) =>
     Math.abs(value - durationMin) < Math.abs(best - durationMin) ? value : best,
   );
@@ -68,7 +73,7 @@ export function RidesPanel({
         <h1 className="text-[30px] font-extrabold leading-[1.1] tracking-[-0.035em] md:text-[26px]">
           Przejażdżki na dziś
         </h1>
-        <p className="mt-1 text-sm text-tekst-2">Ułożone z Twoich tematów, start spod 42 Warsaw</p>
+        <p className="mt-1 text-sm text-tekst-2">Ułożone z Twoich tematów. Start: {originLabel}</p>
 
         <div
           role="radiogroup"
