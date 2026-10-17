@@ -45,6 +45,7 @@
 - [x] **T-119** Długość opowieści dopasowana do czasu jazdy do następnego miejsca + zegar jazdy (następny temat przy następnym miejscu, nie zaraz po końcu opowieści), [12-plan-mvp.md](12-plan-mvp.md) §8 — `R4`/`R3` (zrobił Jasiek na polecenie użytkownika) — (Jasiek z agentem, 20:30)
 - [x] **T-113** Trasa kończy się dziwną pętlą (zgłaszane kilka razy przy teście) — `R1` — (Szczepan, PR #52: planer karze powrót tą samą drogą)
 - [ ] **T-18** Przed demo: przebudować graf na niedzielę (`pnpm --filter @sawa/scripts transit --date 2026-10-18`) i zapisać trasę demo jako fixture do trybu offline — `R1` — niedziela 08:00
+- [ ] **T-153** Własny OSRM (profil pieszy, Warszawa) w kontenerze `api` obok API, `WALK_ROUTER_URL=http://127.0.0.1:5000` (PR #121). Bez planera na ścieżkach OSRM z #108: planowanie spaceru zostaje jak na `main` (decyzja Szczepana); RAM ok. 250–400 MB dla samej Warszawy. Szczegóły: issue #118 — `R1` (zlecone Pawłowi przez Szczepana, zgoda na pliki R1)
 - [x] **T-99** Pojazdy na żywo pod mapę: pojazd użytkownika + po jednym przed i za nim, tor do płynnej animacji, prędkość z przejazdu poprzednika tej samej linii; `POST /v1/vehicles/track`, kontrakt w `packages/shared/src/schemas/vehicles.ts`. Opis: [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R1` (zrobił Jasiek na prośbę użytkownika, gałąź `r1/live-vehicles`) — (Jasiek, 16:30; na Railway potrzebne `WAW_TOKEN` (T-17) i w dniu demo `VEHICLES_ALWAYS_ON=1`, wpisane w [przed-demo.md](przed-demo.md))
 
 ## R2 · Baza i historia
