@@ -25,26 +25,13 @@ export function projectOnPolyline(
   lngLats: LngLat[],
   cumDistM: number[],
 ): { distanceM: number; alongM: number } {
-  const mPerDegLng = M_PER_DEG_LAT * Math.cos((point.lat * Math.PI) / 180);
-  const toXY = ([lng, lat]: LngLat) => [
-    (lng - point.lng) * mPerDegLng,
-    (lat - point.lat) * M_PER_DEG_LAT,
-  ];
   let best = { distanceM: Number.POSITIVE_INFINITY, alongM: 0 };
   for (let i = 0; i < lngLats.length - 1; i++) {
-    const [ax, ay] = toXY(lngLats[i] as LngLat);
-    const [bx, by] = toXY(lngLats[i + 1] as LngLat);
-    const dx = (bx as number) - (ax as number);
-    const dy = (by as number) - (ay as number);
-    const lenSq = dx * dx + dy * dy;
-    // Point is the origin of the local frame, so project (0,0) onto segment A→B.
-    const t =
-      lenSq === 0
-        ? 0
-        : Math.min(1, Math.max(0, -((ax as number) * dx + (ay as number) * dy) / lenSq));
-    const px = (ax as number) + t * dx;
-    const py = (ay as number) + t * dy;
-    const distanceM = Math.hypot(px, py);
+    const { distanceM, t } = projectOnSegment(
+      point,
+      lngLats[i] as LngLat,
+      lngLats[i + 1] as LngLat,
+    );
     if (distanceM < best.distanceM) {
       const segStart = cumDistM[i] as number;
       const segLen = (cumDistM[i + 1] as number) - segStart;
@@ -52,6 +39,23 @@ export function projectOnPolyline(
     }
   }
   return best;
+}
+
+/** Closest point of segment A→B to `point`; `t` is its position on the segment, 0 = A, 1 = B. */
+export function projectOnSegment(
+  point: LatLng,
+  [aLng, aLat]: LngLat,
+  [bLng, bLat]: LngLat,
+): { distanceM: number; t: number } {
+  const mPerDegLng = M_PER_DEG_LAT * Math.cos((point.lat * Math.PI) / 180);
+  const ax = (aLng - point.lng) * mPerDegLng;
+  const ay = (aLat - point.lat) * M_PER_DEG_LAT;
+  const dx = (bLng - point.lng) * mPerDegLng - ax;
+  const dy = (bLat - point.lat) * M_PER_DEG_LAT - ay;
+  const lenSq = dx * dx + dy * dy;
+  // Point is the origin of the local frame, so project (0,0) onto segment A→B.
+  const t = lenSq === 0 ? 0 : Math.min(1, Math.max(0, -(ax * dx + ay * dy) / lenSq));
+  return { distanceM: Math.hypot(ax + t * dx, ay + t * dy), t };
 }
 
 /**
