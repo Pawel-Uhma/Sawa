@@ -1,8 +1,11 @@
 # Stan projektu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 14:10 (Szczepan, z agentem)
+**Ostatnia aktualizacja:** 17.10.2026, ok. 14:40 (Szczepan, z agentem)
 
 ## Teraz
+
+- R1 (Szczepan, 15:00): planer bierze odjazdy z rozkładu ZTM dla każdego odcinka, także przesiadek. **Dla R3:** `Leg.realDeparture: true` = godzina z rozkładu; bez pola godzina jest szacowana (można pokazać „ok. 14:05”). Do sprawdzenia z prawdziwym tokenem (T-17).
+- R1 (Szczepan, 14:40): planer przyjmuje punkt końcowy: `destination: {lat, lng}` w `POST /v1/routes/plan` (nie razem z `returnToStart`), odpowiedź ma `endsAtDestination`. **Dla R3:** wybór celu na mapie wysyła `destination`; gdy `endsAtDestination` jest `false`, pokaż, że do celu nie udało się dojechać. Szczegóły: [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 7.
 
 - 14:54 (Paweł, z agentem R3): PR #16 Antka w `main`, ekrany demo (`demo-app.tsx`) używają już jego `SawaMap` z `@/features/map`; stara mapa `features/demo/components/sawa-map.tsx` usunięta. Wbudowana karta miejsca jest w demo wyłączona (`hasPlaceSheet={false}`), bo wjeżdżałaby pod panele; klik w zwykłe miejsce na ekranie głównym na razie nic nie robi.
 
