@@ -53,6 +53,7 @@ const DEMO_PROFILE: Profile = {
   familiarity: "first_time",
   interests: ["historical"],
   storyStyle: "fun",
+  audience: "adult",
 };
 const DEMO_DURATION_MIN = 90;
 
