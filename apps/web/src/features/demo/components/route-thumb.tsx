@@ -13,6 +13,9 @@ type RouteThumbProps = {
 };
 
 const SIZE = { width: 400, height: 240 };
+// SVG potrzebuje wartości, nie klas: @theme inline w globals.css nie wystawia zmiennych --color-*.
+export const GLEBIA = "#17706f";
+export const KORAL = "#f2755f";
 const PAD = 28;
 
 /**
@@ -22,7 +25,7 @@ const PAD = 28;
 export function RouteThumb({
   line,
   stops = [],
-  color = "var(--color-glebia)",
+  color = GLEBIA,
   strokeWidth = 5,
   className = "",
 }: RouteThumbProps) {
@@ -109,15 +112,8 @@ export function RouteThumb({
       ))}
       {start && (
         <g>
-          <circle cx={start[0]} cy={start[1]} r={18} fill="var(--color-glebia)" opacity="0.14" />
-          <circle
-            cx={start[0]}
-            cy={start[1]}
-            r={8}
-            fill="var(--color-glebia)"
-            stroke="#fff"
-            strokeWidth={3}
-          />
+          <circle cx={start[0]} cy={start[1]} r={18} fill={GLEBIA} opacity="0.14" />
+          <circle cx={start[0]} cy={start[1]} r={8} fill={GLEBIA} stroke="#fff" strokeWidth={3} />
         </g>
       )}
     </svg>

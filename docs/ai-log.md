@@ -7186,3 +7186,7 @@
 > new file: docs/spotkania/2026-10-17-1430-mentor-i-postep.md
 
 **AI:** Leaderboard commitów i linii ze wszystkich gałęzi (bez merge): Paweł 82, Szczepan 24, Janek 23, Antek 7. Bez plików danych (json/geojson/lock) linie: Paweł +21k, Szczepan +4,4k, Janek +4k, Antek +1,2k. Nic w repo poza tym wpisem.
+
+> zrob Ekran przejazdczki
+
+**AI:** Zakładka Przejażdżki według makiety D (wybrana przez Pawła spośród: zakładka / ekran jazdy T-36): nowe `rides-panel.tsx` i `route-thumb.tsx` (miniatura trasy w SVG), zapowiedzi tras w `mock-data.ts`, wpięcie w `demo-app.tsx`, a `tab-placeholder.tsx` zostaje tylko dla Sawy. Podgląd trasy idzie z planera, zrzuty są w `docs/ui/wyniki/1446-*`, zadanie T-75.

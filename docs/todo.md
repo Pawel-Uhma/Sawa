@@ -98,6 +98,7 @@ Zakres to tylko lista MVP z [10-prd.md](10-prd.md), zob. [12-plan-mvp.md](12-pla
 - [ ] **T-14** Przewidywanie, co będzie za oknem za X s (pozycja + rozkład); przy korku dłuższa historia — `R1` — po 22:00
 - [x] **T-23** ~~Cache Google Places w Supabase~~ niepotrzebne: nie odpytujemy Google na żywo (T-06) — `R2` — (Jasiek, 13:43)
 - [ ] **T-34** Zakładka czatu z Sawą (UI, podpięcie do T-40) — `R3` — noc
+- [x] **T-75** Zakładka Przejażdżki (makieta D): przełącznik czasu, karta trasy z podglądem z planera, zapowiedzi Śródmieścia i Pragi — `R3` — (Paweł z agentem, 17.10 14:46)
 - [ ] **T-40** `POST /v1/chat` (SSE) z LLM (Bielik lub zapasowy); klucz tylko na serwerze — `R4` — 17:00
 - [x] **T-43** TTS: wybrany ElevenLabs (17.10, 13:30), test polskiego w ramach T-71 — `R4`
 - [ ] **T-44** Awatar Sawy wygenerowany od zera po 11:00 wg [awatar/](awatar/) — `R4` — 15:00

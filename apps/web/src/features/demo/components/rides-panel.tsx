@@ -7,8 +7,8 @@ import { planRoute, routeLine } from "../lib/api-data";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { type MockStop, type RidePreview, UPCOMING_RIDES } from "../lib/mock-data";
-import { ArrowRightIcon, PlayIcon } from "./icons";
-import { RouteThumb } from "./route-thumb";
+import { ArrowRightIcon, PlayIcon, TramIcon } from "./icons";
+import { KORAL, RouteThumb } from "./route-thumb";
 
 type RidesPanelProps = {
   interests: string[];
@@ -60,9 +60,10 @@ export function RidesPanel({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 24 }}
       transition={SPRING}
-      className="absolute inset-0 z-20 bg-tlo-2 md:inset-auto md:top-24 md:bottom-6 md:left-6 md:w-[360px] md:overflow-hidden md:rounded-[32px] md:bg-transparent lg:w-[400px]"
+      className="absolute inset-0 z-[15] bg-tlo-2 md:inset-auto md:top-24 md:bottom-6 md:left-6 md:w-[360px] md:overflow-hidden md:rounded-[32px] md:bg-transparent lg:w-[400px]"
     >
-      <div className="h-full overflow-y-auto overscroll-contain px-4 pb-[calc(max(1.25rem,env(safe-area-inset-bottom))+96px)] pt-[calc(max(1rem,env(safe-area-inset-top))+64px)] md:karta md:rounded-[32px] md:p-6">
+      {/* Na telefonie treść gaśnie pod logo i pogodą, zamiast przewijać się pod nimi */}
+      <div className="h-full overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent_calc(max(1rem,env(safe-area-inset-top))+40px),black_calc(max(1rem,env(safe-area-inset-top))+64px))] md:[mask-image:none] px-4 pb-[calc(max(1.25rem,env(safe-area-inset-bottom))+96px)] pt-[calc(max(1rem,env(safe-area-inset-top))+64px)] md:karta md:rounded-[32px] md:p-6">
         <h1 className="text-[30px] font-extrabold leading-[1.1] tracking-[-0.035em] md:text-[26px]">
           Przejażdżki na dziś
         </h1>
@@ -151,12 +152,16 @@ function FeaturedRide({ route, failed, onStart }: FeaturedRideProps) {
   return (
     <article className="relative mt-4 overflow-hidden rounded-[24px] bg-white shadow-[0_1px_2px_rgba(16,43,42,0.05),0_10px_30px_rgba(16,43,42,0.10)]">
       <div className="relative aspect-[5/3] w-full bg-mapa">
-        {route && (
+        {route ? (
           <RouteThumb
             key={route.id}
             line={routeLine(route)}
             stops={places.map((place) => [place.position.lng, place.position.lat])}
             className="absolute inset-0 size-full"
+          />
+        ) : (
+          <TramIcon
+            className={`absolute inset-0 m-auto size-10 text-tekst-3 ${failed ? "" : "animate-pulse"}`}
           />
         )}
         <span className="szklo absolute left-3 top-3 flex h-7 items-center gap-1.5 rounded-full px-2.5 text-xs font-bold text-glebia-ciemna">
@@ -215,7 +220,7 @@ function UpcomingRide({ ride }: { ride: RidePreview }) {
       <RouteThumb
         line={ride.line}
         strokeWidth={6}
-        color={ride.id === "praga" ? "var(--color-koral)" : undefined}
+        color={ride.id === "praga" ? KORAL : undefined}
         className="aspect-[4/3] w-full opacity-80"
       />
       <div className="px-3 pb-3 pt-2">
