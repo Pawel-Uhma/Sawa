@@ -27,6 +27,7 @@ import {
   paddingWithSheet,
   resolveCamera,
 } from "../lib/camera";
+import { registerClusterBadges } from "../lib/cluster-badges";
 import { loadMapIcons } from "../lib/map-icons";
 import {
   BASEMAP_STYLE_URLS,
@@ -220,6 +221,7 @@ export function SawaMap({
           setIsLoaded(true);
           // Place markers are drawn on demand; the map lives as long as this listener.
           registerPlaceStickers(event.target);
+          registerClusterBadges(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}

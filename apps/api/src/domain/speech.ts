@@ -1,3 +1,5 @@
+import { spellYears } from "./spoken-years";
+
 /** Synthesized speech ready to send to the client. */
 export type SpeechAudio = {
   audio: Uint8Array<ArrayBuffer>;
@@ -6,10 +8,11 @@ export type SpeechAudio = {
 
 /**
  * Text as it goes to TTS and as the cache key: same words with different spacing are one clip.
- * Line breaks become spaces because ElevenLabs reads a newline as a long pause.
+ * Line breaks become spaces because ElevenLabs reads a newline as a long pause, and years in
+ * digits become words because it reads digits badly.
  */
 export function normalizeSpeechText(text: string): string {
-  return text.replace(/\s+/g, " ").trim();
+  return spellYears(text.replace(/\s+/g, " ").trim());
 }
 
 /** The first chunk is short so the voice starts soon; later ones are longer for steadier prosody. */

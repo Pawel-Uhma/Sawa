@@ -6,9 +6,9 @@ import type {
 } from "maplibre-gl";
 import { useMemo } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
+import { clusterBadgeExpression } from "../lib/cluster-badges";
 import {
   LABEL_FONT,
-  LABEL_FONT_BOLD,
   type MapPalette,
   type MapTheme,
   placeKindColorExpression,
@@ -24,15 +24,6 @@ const CLUSTER_MAX_ZOOM = 14;
 const CLUSTER_RADIUS_PX = 44;
 /** Smaller groups stay as separate icons: a "3" says less than the three places themselves. */
 const CLUSTER_MIN_POINTS = 10;
-const CLUSTER_RADIUS: ExpressionSpecification = [
-  "step",
-  ["get", "point_count"],
-  18,
-  50,
-  21,
-  200,
-  25,
-];
 const CLUSTERED: FilterSpecification = ["has", "point_count"];
 const UNCLUSTERED: FilterSpecification = ["!", CLUSTERED];
 
@@ -112,43 +103,17 @@ export function PlacesLayer({
       clusterRadius={CLUSTER_RADIUS_PX}
       clusterMinPoints={CLUSTER_MIN_POINTS}
     >
-      {/* Soft shadow under the glass circle, nudged down like a lifted card. */}
-      <Layer
-        id="places-cluster-shadow"
-        type="circle"
-        filter={CLUSTERED}
-        paint={{
-          "circle-color": palette.clusterShadow,
-          "circle-radius": CLUSTER_RADIUS,
-          "circle-blur": 0.6,
-          "circle-translate": [0, 2],
-          "circle-opacity": opacity,
-        }}
-      />
+      {/* Glass circle with the count in the app font, drawn as an image (cluster-badges.ts). */}
       <Layer
         id={PLACES_CLUSTER_LAYER_ID}
-        type="circle"
-        filter={CLUSTERED}
-        paint={{
-          "circle-color": palette.clusterFill,
-          "circle-radius": CLUSTER_RADIUS,
-          "circle-stroke-color": palette.clusterStroke,
-          "circle-stroke-width": 1.5,
-          "circle-opacity": opacity,
-          "circle-stroke-opacity": opacity,
-        }}
-      />
-      <Layer
-        id="places-cluster-count"
         type="symbol"
         filter={CLUSTERED}
         layout={{
-          "text-field": ["get", "point_count_abbreviated"],
-          "text-font": LABEL_FONT_BOLD,
-          "text-size": 13,
-          "text-allow-overlap": true,
+          "icon-image": clusterBadgeExpression(theme),
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true,
         }}
-        paint={{ "text-color": palette.clusterText, "text-opacity": opacity }}
+        paint={{ "icon-opacity": opacity }}
       />
       {hasIcons ? (
         // One symbol per place: glyph and its outline are a single image, so a collision hides both (#90).

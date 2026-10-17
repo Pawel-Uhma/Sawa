@@ -109,7 +109,7 @@
 - [x] **T-150** Mapa: punkty znów grupują się w klastry z liczbą przy oddaleniu (usunięte w `17d8870`/`578b21d`; jeśli celowo, powód do `stan.md`) ([#101](https://github.com/Pawel-Uhma/Sawa/issues/101)) — `R3` (Paweł) — (Paweł z agentem, 20:45–21:10: `cluster: true`, szklane kółko z liczbą, stuknięcie przybliża i rozbija grupę)
 - [x] **T-151** Mapa: jedno źródło koloru punktu, zgodne z chipami tematów, plus zwijana legenda kolor → kategoria ([#102](https://github.com/Pawel-Uhma/Sawa/issues/102)) — `R3` (Paweł) — (Paweł z agentem, 20:45–21:10: glif podrodzaju w kolorze tematu, rysowany w przeglądarce; legenda pod zoomem; paleta grup rodzajów usunięta); 21:35 Paweł: ikony wracają do kolorów grup rodzajów, legenda pokazuje grupy
 - [x] **T-152** Wyszukiwanie celu: stara odpowiedź bez ulicy przez cache ([#107](https://github.com/Pawel-Uhma/Sawa/issues/107)). Cache HTTP `private, max-age=60`, w web `staleTime` 5 min; adapter zwraca `partial`, gdy Autocomplete/Place Details padnie, i loguje `logger.warn` ze statusem Google; serwis nie cache'uje `partial`, TTL 1 h — `R3` — (Paweł z agentem, 20:55–21:05)
-- [x] **T-153** Mapa: ulica zostaje ikoną, ale po kliknięciu (na desktopie też po najechaniu) podświetla się cała jej linia z kafelków OpenFreeMap (`transportation_name`, filtr po nazwie); propozycje w `ui/propozycje/html/ulice-jako-linie.html` — `R3` (Paweł z agentem, 21:20)
+- [x] **T-154** Mapa: ulica zostaje ikoną, ale po kliknięciu (na desktopie też po najechaniu) podświetla się cała jej linia z kafelków OpenFreeMap (`transportation_name`, filtr po nazwie); propozycje w `ui/propozycje/html/ulice-jako-linie.html` — `R3` (Paweł z agentem, 21:20)
 
 ## R4 · AI i głos
 
