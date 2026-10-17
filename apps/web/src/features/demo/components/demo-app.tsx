@@ -22,6 +22,7 @@ import {
   type RideEndType,
 } from "../lib/ride-end";
 import { useGpsClockSync } from "../lib/ride-sync";
+import { screenCamera } from "../lib/screen-camera";
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
@@ -270,19 +271,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   ]);
 
   const camera: MapCamera = useMemo(() => {
-    // Wybrane miejsce jedzie nad kartę; zoom zostaje taki, jaki ustawił użytkownik
-    if (isPlaceOpen && selectedPlace.position) {
-      return { type: "center", center: selectedPlace.position };
-    }
-    if (isRoute && activeStop) {
-      const [lng, lat] = activeStop.coord;
-      return { type: "center", center: { lat, lng }, zoom: 15.4 };
-    }
-    // Wybrany cel: mapa pokazuje start i cel naraz
-    if (isHome && destination) {
-      return { type: "fit", points: [origin, destination.point], maxZoom: 15 };
-    }
-    return { type: "center", center: origin, zoom: isDesktop ? 15.3 : 14.8 };
+    const stop =
+      isRoute && activeStop ? { lat: activeStop.coord[1], lng: activeStop.coord[0] } : null;
+    return screenCamera({
+      place: isPlaceOpen ? { position: selectedPlace.position } : null,
+      activeStop: stop,
+      destination: isHome && destination ? destination.point : null,
+      origin,
+      isDesktop,
+    });
   }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace, origin]);
 
   const listener = useMemo(() => listenerOf(profile), [profile]);
