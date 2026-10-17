@@ -406,3 +406,9 @@
 > ok, czy możesz też już wgrać dane do db?
 
 **AI:** Sprawdziłem w bazie: dane są już wgrane od 13:08 (seed po wklejeniu klucza), 326 miejsc i 351 zdjęć. Nic nie zmieniałem.
+
+### 2026-10-17 · Jasiek
+
+> usuń gałąź, wpis wrzuć do następnego PR
+
+**AI:** Usunąłem z GitHuba gałąź `r2/places-migration`, którą odtworzyłem pushem po merge'u PR #1. Wpis do dziennika przeniosłem na nową lokalną gałąź `r2/places-repository` (od `origin/main`), na której powstanie adapter `PlacesRepository`.
