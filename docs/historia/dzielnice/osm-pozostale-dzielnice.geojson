@@ -9452,6 +9452,1461 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     20.971046,
+     52.325079
+    ]
+   },
+   "properties": {
+    "id": "osm-dab-pomnik-przyrody-1785835088",
+    "nazwa": "Dąb - Pomnik przyrody",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/1785835088"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.942105,
+     52.331809
+    ]
+   },
+   "properties": {
+    "id": "osm-i-love-fitness-3017158301",
+    "nazwa": "I LOVE FITNESS",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Godziny otwarcia: Mo-Fr 07:00-22:30; Sa 09:00-18:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3017158301"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.00618,
+     52.318216
+    ]
+   },
+   "properties": {
+    "id": "osm-2wieze-4343869472",
+    "nazwa": "2Wieże",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Kupiecka 10",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Godziny otwarcia: 11:00-19:00."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4343869472"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.987723,
+     52.296772
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-674-14-07-1997r-4455085773",
+    "nazwa": "Tablica: 674 14.07.1997r…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „674 14.07.1997r”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4455085773"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.987722,
+     52.296774
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-689-26-04-1998r-4455085774",
+    "nazwa": "Tablica: 689 26.04.1998r.…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „689 26.04.1998r.”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4455085774"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.987721,
+     52.296777
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-725-31-07-2001-4455085775",
+    "nazwa": "Tablica: 725 31.07.2001.…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „725 31.07.2001.”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4455085775"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.98772,
+     52.29678
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-nw-22-05-2010-r-780-4455085776",
+    "nazwa": "Tablica: NW. 22.05.2010 r. 780…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „NW. 22.05.2010 r. 780”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4455085776"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.987718,
+     52.296783
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-nw-31-vii-1960r-804-4455085777",
+    "nazwa": "Tablica: NW. 31 VII 1960r. 804…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „NW. 31 VII 1960r. 804”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4455085777"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.074041,
+     52.331937
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-pocieszycielko-strapionych-modl-sie-za-nami-4606265657",
+    "nazwa": "Tablica: Pocieszycielko strapionych, módl się za nami…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Pocieszycielko strapionych, módl się za nami”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4606265657"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0501,
+     52.347244
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-wiara-czyni-cuda-5649146546",
+    "nazwa": "Tablica: Wiara czyni cuda.…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Wiara czyni cuda.”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/5649146546"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.053889,
+     52.350126
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-1957-5649146587",
+    "nazwa": "Tablica: 1957…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „1957”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/5649146587"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.059271,
+     52.328676
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-jezu-ufam-tobie-5698511642",
+    "nazwa": "Tablica: Jezu ufam Tobie…",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Jezu ufam Tobie”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/5698511642"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.007503,
+     52.319439
+    ]
+   },
+   "properties": {
+    "id": "osm-jump-arena-6240325289",
+    "nazwa": "Jump Arena",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: fitness."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/6240325289"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.950288,
+     52.312326
+    ]
+   },
+   "properties": {
+    "id": "osm-pablo-8361756369",
+    "nazwa": "Pablo",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8361756369"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.971047,
+     52.358859
+    ]
+   },
+   "properties": {
+    "id": "osm-na-pamiatke-zakonczenia-ii-wojny-swiatowej-8743533061",
+    "nazwa": "Na pamiątkę zakończenia II wojny światowej",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „BOŻE BŁOGOSŁAW NASZĄ OJCZYZNĘ NA PAMIĄTKĘ ZAKOŃCZENIA DRUGIEJ WOJNY ŚWIATOWEJ 1945 r.”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8743533061"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.951958,
+     52.311691
+    ]
+   },
+   "properties": {
+    "id": "osm-pamieci-zydowskich-wiezniow-niemieckiego-obozu-pracy-przymusowej-9823083675",
+    "nazwa": "Pamięci żydowskich więźniów niemieckiego obozu pracy przymusowej",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Pamięci Żydów, więźniów niemieckiego obozu pracy przymusowej w pobliskim Piekiełku, którzy w latach 1940-1943 w nieludzkich warunkach budowali ten wał przeciwpowodziowy, a następnie zostali zamordowani przez oddziały niemieckiej żandarmerii”.",
+     "Data powstania wg OSM: 2019."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9823083675"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.943095,
+     52.357465
+    ]
+   },
+   "properties": {
+    "id": "osm-miejsce-pamieci-10314720956",
+    "nazwa": "Miejsce pamięci",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Pamięci 35 ofiar nacjonalistycznego systemu nazistowskich Niemiec, zamordowanych podczas II Wojny światowej.”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10314720956"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.996085,
+     52.318097
+    ]
+   },
+   "properties": {
+    "id": "osm-matka-boska-10724545973",
+    "nazwa": "Matka Boska",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1915."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10724545973"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.015197,
+     52.315361
+    ]
+   },
+   "properties": {
+    "id": "osm-a1karting-11033970860",
+    "nazwa": "A1Karting",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Annopol 24B",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Godziny otwarcia: Mo-Fr 14:00-22:00; Sa-Su 12:00-22:00.",
+     "Sport: karting."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11033970860"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.961919,
+     52.344791
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-szpitalna-11228857203",
+    "nazwa": "Kaplica szpitalna",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Domu Opieki - Rezydencji Dąbrówka Grupy Orpea"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11228857203"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.009003,
+     52.334179
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-wiezienna-11228857204",
+    "nazwa": "Kaplica więzienna",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Zakładzie Karnym Warszawa-Białołęka"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11228857204"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.981282,
+     52.355529
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-matki-bozej-bolesnej-11228857205",
+    "nazwa": "Kaplica pw. Matki Bożej Bolesnej",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Zgromadzenia Córek Matki Bożej Bolesnej"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11228857205"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.994475,
+     52.339505
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-milosierdzia-bozego-11228857206",
+    "nazwa": "Kaplica pw. Miłosierdzia Bożego",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Domu Pomocy Społecznej „Pod Brzozami”"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11228857206"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.989466,
+     52.341681
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-matki-bozej-bolesnej-11228857207",
+    "nazwa": "Kaplica pw. Matki Bożej Bolesnej",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Domu Dziecka Zgromadzenia Sióstr Rodziny Maryi"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11228857207"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.982437,
+     52.332943
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-matki-bozej-nieustajacej-pomocy-11228857208",
+    "nazwa": "Kaplica pw. Matki Bożej Nieustającej Pomocy",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Domu Dziecka Zgromadzenia Sióstr Franciszkanek Rodziny Maryi"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11228857208"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.979206,
+     52.324567
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-swietego-jozefa-oblubienca-11228857209",
+    "nazwa": "Kaplica pw. Świętego Józefa Oblubieńca",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Zakładzie dla Chronicznie Chorych Kobiet Sióstr Felicjanek"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11228857209"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.939873,
+     52.351728
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-klasztorna-11434832496",
+    "nazwa": "Kaplica klasztorna",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Klasztorze Sióstr Dominikanek"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11434832496"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.067837,
+     52.31215
+    ]
+   },
+   "properties": {
+    "id": "osm-dab-robert-11971470977",
+    "nazwa": "Dąb Robert",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: ~1670.",
+     "Dąb szypułkowy - Quercus robur"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11971470977"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.022618,
+     52.314929
+    ]
+   },
+   "properties": {
+    "id": "osm-sztafeta-pokolen-12514152045",
+    "nazwa": "Sztafeta Pokoleń",
+    "typ": "pomnik",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 2018."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12514152045"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.008106,
+     52.324326
+    ]
+   },
+   "properties": {
+    "id": "osm-loba-padel-14015615284",
+    "nazwa": "Loba Padel",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: padel."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/14015615284"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.875538,
+     52.358178
+    ]
+   },
+   "properties": {
+    "id": "osm-rezerwat-lawice-kielpinskie-109797527",
+    "nazwa": "Rezerwat Ławice Kiełpińskie",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/109797527"
+     },
+     {
+      "tytul": "Wikipedia: Rezerwat przyrody Ławice Kiełpińskie",
+      "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Ławice_Kiełpińskie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.967788,
+     52.331238
+    ]
+   },
+   "properties": {
+    "id": "osm-park-henrykowski-109988296",
+    "nazwa": "Park Henrykowski",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/109988296"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.950978,
+     52.312962
+    ]
+   },
+   "properties": {
+    "id": "osm-syrenka-111592906",
+    "nazwa": "Syrenka",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: soccer."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/111592906"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.939528,
+     52.32472
+    ]
+   },
+   "properties": {
+    "id": "osm-skatepark-tarchomin-119797316",
+    "nazwa": "Skatepark Tarchomin",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: skateboard."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/119797316"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.996031,
+     52.298335
+    ]
+   },
+   "properties": {
+    "id": "osm-spojnia-warszawa-154365971",
+    "nazwa": "Spójnia Warszawa",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: canoe."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/154365971"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.053782,
+     52.349182
+    ]
+   },
+   "properties": {
+    "id": "osm-plac-bociani-zakatek-176560052",
+    "nazwa": "Plac Bociani Zakątek",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/176560052"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.947235,
+     52.334456
+    ]
+   },
+   "properties": {
+    "id": "osm-park-ireny-jarockiej-392082936",
+    "nazwa": "Park Ireny Jarockiej",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/392082936"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.058587,
+     52.312306
+    ]
+   },
+   "properties": {
+    "id": "osm-park-magiczna-424804134",
+    "nazwa": "Park Magiczna",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/424804134"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.944644,
+     52.334129
+    ]
+   },
+   "properties": {
+    "id": "osm-skwer-teheranski-524003875",
+    "nazwa": "Skwer Teherański",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/524003875"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.012463,
+     52.3437
+    ]
+   },
+   "properties": {
+    "id": "osm-huculski-raj-742419957",
+    "nazwa": "Huculski Raj",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: equestrian."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/742419957"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.947695,
+     52.325677
+    ]
+   },
+   "properties": {
+    "id": "osm-park-ogrody-mehoffera-799383004",
+    "nazwa": "Park Ogrody Mehoffera",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Godziny otwarcia: 24/7."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/799383004"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.92769,
+     52.34206
+    ]
+   },
+   "properties": {
+    "id": "osm-plaza-aluzyjna-902412851",
+    "nazwa": "Plaża Aluzyjna",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: beachvolleyball."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/902412851"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.982592,
+     52.356918
+    ]
+   },
+   "properties": {
+    "id": "osm-hala-sportowa-940179697",
+    "nazwa": "Hala sportowa",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: multi."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/940179697"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.971704,
+     52.354144
+    ]
+   },
+   "properties": {
+    "id": "osm-sporteum-940775274",
+    "nazwa": "Sporteum",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/940775274"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.962003,
+     52.332837
+    ]
+   },
+   "properties": {
+    "id": "osm-szachy-1052455944",
+    "nazwa": "Szachy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: chess."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1052455944"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.073578,
+     52.330286
+    ]
+   },
+   "properties": {
+    "id": "osm-lotnisko-modelarskie-bialoleka-1060882064",
+    "nazwa": "Lotnisko Modelarskie Białołęka",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: model_aerodrome."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1060882064"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.013273,
+     52.311548
+    ]
+   },
+   "properties": {
+    "id": "osm-park-kieszonkowy-1530640182",
+    "nazwa": "Park kieszonkowy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1530640182"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.963744,
+     52.325192
+    ]
+   },
+   "properties": {
+    "id": "osm-las-anecin-18668569",
+    "nazwa": "Las Anecin",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/18668569"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.025966,
      52.162454
     ]
@@ -13051,6 +14506,855 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     21.192719,
+     52.177545
+    ]
+   },
+   "properties": {
+    "id": "osm-kosciol-pw-niepokalanego-poczecia-najswietszej-maryi-panny-2025290590",
+    "nazwa": "Kościół pw. Niepokalanego Poczęcia Najświętszej Maryi Panny",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Garncarska 34",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Kościół Bractwa Świętego Piusa X pw. Niepokalanego Poczęcia Najświętszej Maryi Panny w Warszawie"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/2025290590"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.158506,
+     52.21771
+    ]
+   },
+   "properties": {
+    "id": "osm-sosna-zwyczajna-3659449027",
+    "nazwa": "Sosna zwyczajna",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3659449027"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.20014,
+     52.199978
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-ku-czci-zolnierzy-nieznanych-walczacych-w-ii-wojnie-swiatowe-4122576549",
+    "nazwa": "Tablica: Ku czci żołnierzy nieznanych walczących w II wojnie światowe…",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Ku czci żołnierzy nieznanych walczących w II wojnie światowej. \nSpoczywa tu człowiek nieznany. Cześć jego pamięci.\nSpokój jego duszy.”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4122576549"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.215357,
+     52.170145
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-upamietniajaca-dzieci-i-opiekunow-sanatorium-im-wl-medema-w-mi-4868307984",
+    "nazwa": "Tablica upamiętniająca Dzieci i Opiekunów Sanatorium im. Wł. Medema w Miedzeszynie",
+    "typ": "tablica",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 2016.",
+     "Autor: Andrzej Rukowicz."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4868307984"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.213818,
+     52.161714
+    ]
+   },
+   "properties": {
+    "id": "osm-pomnik-pamieci-zolnierzy-polskich-walczacych-pod-falenica-19-wrzesnia--4905894044",
+    "nazwa": "Pomnik pamięci żołnierzy polskich walczących pod Falenicą 19 września 1939 r",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Bohaterskim żołnierzom 13 Dywizji Piechoty Strzelców Kresowych 3 Lubelskiego Dyziwzjonu Artylerii Konnej w 51 rocznicę bitwy stoczonej w Falenicy w dniu 19 września 1939 r. Wrzesień 1990. Tow. Miłośników Falenicy”.",
+     "Data powstania wg OSM: 1990-09."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4905894044"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.210053,
+     52.214701
+    ]
+   },
+   "properties": {
+    "id": "osm-wielki-dab-7252346228",
+    "nazwa": "Wielki Dąb",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/7252346228"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.198298,
+     52.218723
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-pamieci-rodziny-saksow-1908-8245100287",
+    "nazwa": "Tablica: Pamięci rodziny Saksów 1908…",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Pamięci rodziny Saksów 1908”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8245100287"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.144991,
+     52.184466
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-1988-8308650026",
+    "nazwa": "Tablica: 1988…",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „1988”.",
+     "Data powstania wg OSM: 1988."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8308650026"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.168271,
+     52.205407
+    ]
+   },
+   "properties": {
+    "id": "osm-kazimierz-szpotanski-9711132942",
+    "nazwa": "Kazimierz Szpotański",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Kazimierz Szpotański (1887-1966) - inżynier, pionier polskiej elektryki. Twórca pierwszej w naszym kraju fabryki liczników elektrycznych na Kamionku.”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9711132942"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.191463,
+     52.206643
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-matki-bozej-nieustajacej-pomocy-10248285549",
+    "nazwa": "Kaplica pw. Matki Bożej Nieustającej Pomocy",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Instytucie – Pomniku Centrum Zdrowia Dziecka"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10248285549"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.183116,
+     52.203816
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-swietego-ojca-pio-10248285550",
+    "nazwa": "Kaplica pw. Świętego Ojca Pio",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Międzyleskim Szpitalu Specjalistycznym"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10248285550"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.180345,
+     52.206195
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-szpitalna-10248285551",
+    "nazwa": "Kaplica szpitalna",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Domu Pomocy Społecznej dla Dzieci Zgromadzenia Sióstr Franciszkanek Rodziny Maryi"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10248285551"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.175413,
+     52.217842
+    ]
+   },
+   "properties": {
+    "id": "osm-kaplica-pw-najswietszego-serca-jezusowego-10249636864",
+    "nazwa": "Kaplica pw. Najświętszego Serca Jezusowego",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "w Instytucie Kardiologii im. Prym. S. Wyszyńskiego"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10249636864"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.139818,
+     52.190887
+    ]
+   },
+   "properties": {
+    "id": "osm-tablica-1980-10651465860",
+    "nazwa": "Tablica: 1980…",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „1980”.",
+     "Data powstania wg OSM: 1980."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10651465860"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.201063,
+     52.209054
+    ]
+   },
+   "properties": {
+    "id": "osm-matka-boza-milosierdzia-11210391211",
+    "nazwa": "Matka Boża Miłosierdzia",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „MATKO MIŁOSIERDZA\nPANI Z OSTREJ BRAMY\nU SYNA SWOJEGO\nPRZYCZYŃ SIĘ\nZA NAMI”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11210391211"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.147198,
+     52.224324
+    ]
+   },
+   "properties": {
+    "id": "osm-antoni-bartoszek-11799889146",
+    "nazwa": "Antoni Bartoszek",
+    "typ": "tablica",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 2022."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11799889146"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.21292,
+     52.160936
+    ]
+   },
+   "properties": {
+    "id": "osm-51-rocznica-bitwy-w-falenicy-12798347190",
+    "nazwa": "51 rocznica bitwy w Falenicy.",
+    "typ": "tablica",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Bohaterskim żołnierzom 13 Dywizji Piechoty Strzelców Kresowych 3 Lubelskiego Dywizjonu Artylerii Konnej w 51 rocznicę bitwy stoczonej w Falenicy w dniu 19 września 1939r.\nwrzesień 1990 Tow. Miłośników Falenicy”.",
+     "Data powstania wg OSM: 1990-09."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12798347190"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.100484,
+     52.218337
+    ]
+   },
+   "properties": {
+    "id": "osm-firetrap-pl-training-academy-13725763819",
+    "nazwa": "FireTrap.pl Training Academy",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: safety_training."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13725763819"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.179109,
+     52.204379
+    ]
+   },
+   "properties": {
+    "id": "osm-klub-sportowy-zwar-27548157",
+    "nazwa": "Klub Sportowy ZWAR",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/27548157"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.189959,
+     52.175024
+    ]
+   },
+   "properties": {
+    "id": "osm-pks-radosc-303133581",
+    "nazwa": "PKS Radość",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: soccer."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/303133581"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.126167,
+     52.229043
+    ]
+   },
+   "properties": {
+    "id": "osm-zakole-wawerskie-326214244",
+    "nazwa": "Zakole Wawerskie",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/326214244"
+     },
+     {
+      "tytul": "Wikipedia: Zakole Wawerskie",
+      "url": "https://pl.wikipedia.org/wiki/Zakole_Wawerskie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.19589,
+     52.16884
+    ]
+   },
+   "properties": {
+    "id": "osm-polanka-466372238",
+    "nazwa": "Polanka",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/466372238"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.143174,
+     52.185428
+    ]
+   },
+   "properties": {
+    "id": "osm-pumptrack-wawer-665833795",
+    "nazwa": "Pumptrack Wawer",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: skateboard."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/665833795"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.119363,
+     52.21661
+    ]
+   },
+   "properties": {
+    "id": "osm-asm-arena-845195994",
+    "nazwa": "ASM Arena",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Godziny otwarcia: We 19:00-22:00; Sa, Su 11:00-14:00.",
+     "Sport: paintball."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/845195994"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.146199,
+     52.189938
+    ]
+   },
+   "properties": {
+    "id": "osm-pks-victoria-zerzen-962343377",
+    "nazwa": "PKS Victoria Zerzeń",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/962343377"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.17861,
+     52.19253
+    ]
+   },
+   "properties": {
+    "id": "osm-ogrod-japonski-1242612434",
+    "nazwa": "Ogród Japoński",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1242612434"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.111847,
+     52.223938
+    ]
+   },
+   "properties": {
+    "id": "osm-taak-tenis-stolowy-warszawa-1384413826",
+    "nazwa": "TAAK Tenis Stołowy Warszawa",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Sport: table_tennis."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1384413826"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "sport"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.321366,
+     52.105983
+    ]
+   },
+   "properties": {
+    "id": "osm-mazowiecki-park-krajobrazowy-4520047",
+    "nazwa": "Mazowiecki Park Krajobrazowy",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/4520047"
+     },
+     {
+      "tytul": "Wikipedia: Mazowiecki Park Krajobrazowy",
+      "url": "https://pl.wikipedia.org/wiki/Mazowiecki_Park_Krajobrazowy"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-dzielnice",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      21.247988,
      52.260862
     ]
@@ -13736,40 +16040,6 @@
     "zrodlo_rekordu": "osm-dzielnice",
     "tagi": [
      "sport"
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     21.321366,
-     52.105983
-    ]
-   },
-   "properties": {
-    "id": "osm-mazowiecki-park-krajobrazowy-4520047",
-    "nazwa": "Mazowiecki Park Krajobrazowy",
-    "typ": "miejsce",
-    "dzielnica": "Wesoła",
-    "adres_dzis": null,
-    "lokalizacja": "dokladna",
-    "fakty": [],
-    "zrodla": [
-     {
-      "tytul": "OpenStreetMap",
-      "url": "https://www.openstreetmap.org/relation/4520047"
-     },
-     {
-      "tytul": "Wikipedia: Mazowiecki Park Krajobrazowy",
-      "url": "https://pl.wikipedia.org/wiki/Mazowiecki_Park_Krajobrazowy"
-     }
-    ],
-    "pewnosc": "srednia",
-    "zrodlo_rekordu": "osm-dzielnice",
-    "tagi": [
-     "nature"
     ]
    }
   },
