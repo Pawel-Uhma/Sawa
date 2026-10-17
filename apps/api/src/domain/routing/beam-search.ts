@@ -108,6 +108,8 @@ type Context = {
   groupOf: (stopId: string) => string | undefined;
   nearOrigin: (stopId: string) => boolean;
   nearEnd: (stopId: string) => boolean;
+  /** Seconds on foot from a stop to the end point (0 without one). */
+  walkToEnd: (stopId: string) => number;
   /** Fixed end: seconds to the end point per stop group (see return-times.ts). */
   endTimes: Map<string, number>;
 };
@@ -253,10 +255,15 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
 
       if (stop.atSec - board.atSec < opts.minLegRideSec) continue; // e.g. a terminus loop
       const near = ctx.fixedEnd && ctx.nearEnd(stop.stopId);
-      const backSec = ctx.fixedEnd && !near ? timeToEnd(ctx, stop.stopId) : 0;
+      // Near the end only the walk is left; otherwise the estimated ride there.
+      const backSec = !ctx.fixedEnd
+        ? 0
+        : near
+          ? ctx.walkToEnd(stop.stopId)
+          : timeToEnd(ctx, stop.stopId);
       if (alightElapsedSec + backSec > maxSec) continue; // cannot reach the end in time
 
-      const finishes = alightElapsedSec >= minSec && (!ctx.fixedEnd || near);
+      const finishes = alightElapsedSec + backSec >= minSec && (!ctx.fixedEnd || near);
       const transfers = !isLastLeg && canTransferAt(network, stop.stopId, pattern, ctx.loop);
       const terminus = j === pattern.stops.length - 1;
       if (!finishes && !transfers && !terminus) continue;
@@ -385,6 +392,10 @@ export function planRide(input: SearchInput, options: Partial<SearchOptions> = {
     groupOf,
     nearOrigin: near(originGroups, input.origin),
     nearEnd: end ? near(endGroups, end) : () => false,
+    walkToEnd: (stopId) => {
+      const stop = network.stops.get(stopId);
+      return end && stop ? haversineM(stop.position, end) / opts.walkSpeedMps : 0;
+    },
     endTimes,
   };
 

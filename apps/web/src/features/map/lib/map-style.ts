@@ -71,6 +71,7 @@ export const ACTIVE_STOP_COLOR = "#17706f";
 export const LEG_MODE_COLORS: Record<Leg["mode"], string> = {
   tram: "#d62828",
   bus: "#1d3557",
+  walk: "#6b7280",
 };
 
 export function placeKindColor(kind: string): string {

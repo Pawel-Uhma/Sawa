@@ -2,7 +2,8 @@ import { z } from "zod";
 import { InterestSchema, PLACE_TAGS } from "../interests";
 import { LatLngSchema } from "./common";
 
-export const MIN_DURATION_MIN = 30;
+/** Rides under 30 min may be a walk (`Leg.mode` "walk"); see docs/12-plan-mvp.md §7. */
+export const MIN_DURATION_MIN = 5;
 export const MAX_DURATION_MIN = 240;
 
 /** Onboarding answers (keys as in apps/web `lib/onboarding.ts`). */
@@ -42,8 +43,11 @@ export const StopSchema = z.object({
 export type Stop = z.infer<typeof StopSchema>;
 
 export const LegSchema = z.object({
+  /** Empty for a walk. */
   line: z.string(),
-  mode: z.enum(["tram", "bus"]),
+  /** "walk": on foot, straight segments (to the first stop, from the last one, or a whole walk). */
+  mode: z.enum(["tram", "bus", "walk"]),
+  /** Direction of the line, or where a walk ends. */
   headsign: z.string(),
   fromStop: StopSchema,
   toStop: StopSchema,

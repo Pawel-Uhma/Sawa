@@ -38,6 +38,8 @@ export function RouteLayer({ route, selectedId, activeId }: RouteLayerProps) {
               ["get", "mode"],
               "bus",
               LEG_MODE_COLORS.bus,
+              "walk",
+              LEG_MODE_COLORS.walk,
               LEG_MODE_COLORS.tram,
             ],
             "line-width": 5,
