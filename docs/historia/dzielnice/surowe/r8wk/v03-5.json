@@ -1,0 +1,177 @@
+[
+  {
+    "id": "ulica-olszewska",
+    "nazwa": "Ulica Olszewska",
+    "name_en": "Olszewska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Olszewska",
+    "adres_historyczny": "Hirsenstrasse (w okresie okupacji, 1943–1945)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy: lata 30. XX wieku.",
+      "Ulica powstała jako droga do lasu olszowego i stąd pochodzi jej nazwa.",
+      "Inaczej nazywano ją „Dolasówką”, czyli drogą prowadzącą do lasu.",
+      "W okresie okupacji (od lipca 1943 do stycznia 1945) ulica nosiła nazwę „Hirsenstrasse” (Prosowa)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Olszewska is a street in Stary Mokotów between Sandomierska and Chocimska. It began as a road to an alder forest, which gave it its name, and during the occupation it was called Hirsenstrasse.",
+    "ludzie": [],
+    "dawne_nazwy": ["Dolasówka", "Hirsenstrasse (1943–1945)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Olszewska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Olszewska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-pilicka",
+    "nazwa": "Ulica Pilicka",
+    "name_en": "Pilicka Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Pilicka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 20. XX w.",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy: lata 20. XX w.",
+      "Budynek-bliźniak z licznymi śladami po kulach z okresu powstania warszawskiego, oznaczony numerami 16 i 18, zbudował Zygmunt Gardecki, przedwojenny działacz PPS i poseł na Sejm.",
+      "Przy Pilickiej 27 mieszkał Stefan Dękierowski, reżyser, operator filmowy, dyrektor środka produkcji filmowej Flanga."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Pilicka is a street in Wierzbno, Mokotów, built in the 1920s. Its twin houses at nos. 16 and 18 still carry bullet marks from the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "Zygmunt Gardecki", "rola": "przedwojenny działacz PPS i poseł na Sejm, zbudował bliźniak przy ul. Pilickiej 16 i 18", "wiki": null},
+      {"kto": "Stefan Dękierowski", "rola": "reżyser, operator filmowy, dyrektor środka produkcji filmowej Flanga; mieszkał przy Pilickiej 27", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Pilicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Pilicka"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-polska",
+    "nazwa": "Ulica Polska",
+    "name_en": "Polska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Polska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "ok. 1920",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana tuż po odzyskaniu niepodległości w latach 1918-1920.",
+      "Ulica Polska na początku XX wieku była małą wiejską drogą przebiegającą przez wieś Siekierki Duże.",
+      "Od 1959 roku zaczął tutaj przyjeżdżać autobus 108.",
+      "Od 2002 r. nad ulicą Polską przebiega wiadukt Trasy Siekierkowskiej (pod nazwą al. Becka)."
+    ],
+    "ciekawostki": [
+      "W latach 30. XX wieku planowano na terenie Siekierek zbudować wioskę i stadion olimpijski – Polska miała starać się o organizację igrzysk w 1944 roku."
+    ],
+    "summary_en": "Polska is a winding local street of about 675 metres in Siekierki, Mokotów. It was named right after Poland regained independence, and today the Trasa Siekierkowska viaduct runs above it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Polska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Polska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-potoki",
+    "nazwa": "Ulica Potoki",
+    "name_en": "Potoki Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Potoki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "XIX wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała zapewne równocześnie z powstaniem wsi Potok, czyli na początku XIX wieku.",
+      "Zabudowana nielicznymi domami osada Potok znalazła się w granicach Warszawy w 1938 roku.",
+      "Wkrótce po II wojnie światowej wydano zakaz remontowania domów, którego celem było doprowadzenie do technicznej śmierci dawnych domów we wsi Potok.",
+      "Nazwa ulicy została oficjalnie nadana po wojnie.",
+      "Pierwszym nowym kompleksem w otoczeniu ul. Potoki będzie osiedle Potoki Residence, którego budowa rozpoczęła się we wrześniu 2013 roku.",
+      "W 2014 roku po południowej stronie rozpoczęła się także budowa osiedla Ogrody Potoki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Potoki is a 350-metre street in the Potok estate in Stegny, Mokotów. It was the main road of the village of Potok, which entered Warsaw in 1938, and it was given its official name after the war.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Potoki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Potoki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Część zdań dotyczy planów zagospodarowania; wybrano tylko fakty historyczne."
+  },
+  {
+    "id": "ulica-powsinska",
+    "nazwa": "Ulica Powsińska",
+    "name_en": "Powsińska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Powsińska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "przed XVIII wiekiem",
+    "istnieje": true,
+    "fakty": [
+      "Trakt ten istniał już w XVIII wieku jako tzw. droga powsińska, czyli droga z Warszawy przez Czerniaków do Wilanowa i Powsina.",
+      "W 1907 roku przy trakcie powstał cmentarz czerniakowski.",
+      "W 1916 roku droga znalazła się w granicach Warszawy, a w 1919 roku nadano jej nazwę Powsińska.",
+      "Dnia 18 grudnia 1927 roku wzdłuż ul. Powsińskiej doprowadzona została linia tramwajowa.",
+      "Dnia 15 maja 1937 roku istniejącą linię tramwajową przedłużono do Wilanowa.",
+      "Trasa tramwajowa została oddana do użytku dnia 20 lipca 1957 roku.",
+      "W latach 1971-1974 ulica została znacznie przebudowana i poszerzona w ramach budowy tzw. Wisłostrady.",
+      "Torowisko tramwajowe istniało do dnia 11 listopada 1973 roku, kiedy to uległo ostatecznej likwidacji."
+    ],
+    "ciekawostki": [
+      "U zbiegu z ul. Okrężną znajduje się pomnikowa lokomotywa, upamiętniająca istnienie kolejki wilanowskiej."
+    ],
+    "summary_en": "Powsińska is a 1,850-metre street in Sadyba and Czerniaków, Mokotów, running from Augustówka to Gołkowska. It existed as a road in the 18th century, got its name in 1919 and carried trams from 1927 until 1973.",
+    "ludzie": [
+      {"kto": "Janusz Kusociński", "rola": "upamiętniony kamieniem przy ul. Powsińskiej, obok fortu Czerniaków", "wiki": null}
+    ],
+    "dawne_nazwy": ["droga powsińska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Powsińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Powsińska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-rymanowska",
+    "nazwa": "Ulica Rymanowska",
+    "name_en": "Rymanowska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Rymanowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "około roku 1990",
+    "istnieje": true,
+    "fakty": [
+      "W latach 50. XX wieku ulica o takiej nazwie istniała na Stegnach, a została zlikwidowana w 1972 roku.",
+      "Na Sadybie ulica powstała w latach dziewięćdziesiątych podczas rozbudowy osiedla.",
+      "Nazwa pochodzi od wsi uzdrowiskowej Rymanów Zdrój zlokalizowanej w województwie podkarpackim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rymanowska is a 190-metre street in Sadyba, Mokotów, near Fort Czerniaków. It was built in the 1990s during the expansion of the estate, and the name comes from the spa village of Rymanów Zdrój.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Rymanowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rymanowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

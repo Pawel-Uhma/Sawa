@@ -1,0 +1,256 @@
+[
+  {
+    "id": "warszawa-mokry-lug-przystanek",
+    "nazwa": "Przystanek kolejowy Warszawa Mokry Ług",
+    "name_en": "Warszawa Mokry Ług railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "rejon skrzyżowania ul. Czwartaków, ul. Mokry Ług i al. Sztandarów",
+    "adres_historyczny": null,
+    "lat": 52.277194444,
+    "lon": 21.170583333,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek został oddany do użytku 1 sierpnia 2016, po przebudowie i modernizacji linii kolejowej pomiędzy stacjami Warszawa Rembertów i Zielonka, trwającej w latach 2014–2016.",
+      "Jedynym przewoźnikiem obsługującym przystanek po jego uruchomieniu były Koleje Mazowieckie.",
+      "W roku 2017 przystanek obsługiwał 20–49 pasażerów na dobę.",
+      "W roku 2022 stacja obsługiwała 50-55 pasażerów na dobę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A railway stop on the Warsaw–Zielonka line in Rembertów, opened on 1 August 2016 after the line was rebuilt in 2014–2016. It is served by Koleje Mazowieckie and a city bus loop is nearby.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Mokry Ług", "url": "https://pl.wikipedia.org/wiki/Warszawa_Mokry_%C5%81ug"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje liczbę pasażerów w 2022 roku jako „50-55”, a w 2017 jako „20–49”."
+  },
+  {
+    "id": "warszawa-rembertow-stacja",
+    "nazwa": "Warszawa Rembertów (stacja kolejowa)",
+    "name_en": "Warszawa Rembertów railway station",
+    "typ": "budynek",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "ul. Cyrulików",
+    "adres_historyczny": null,
+    "lat": 52.256944,
+    "lon": 21.157778,
+    "lokalizacja": "dokladna",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 2022 roku wymiana pasażerska na stacji wyniosła 6,1 tys. (dziennie), co dało jej 57. miejsce w Polsce.",
+      "Stacja składa się z jednego wysokiego peronu wyspowego o długości 200 m, posiadającego dwie krawędzie peronowe.",
+      "Budynek stacyjny znajduje się na peronie, jest murowany, parterowy i połączony z przejściem podziemnym.",
+      "W obrębie stacji znajdują się dwa przejścia podziemne, oba przystosowane dla osób niepełnosprawnych.",
+      "Według klasyfikacji PKP stacja ma kategorię dworca aglomeracyjnego; jest stacją pasażerską oraz towarową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Rembertów is a railway junction station on the Warsaw–Terespol line, classed by PKP as a suburban station and also used for freight. Its building sits on a 200-metre island platform.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Rembertów (stacja kolejowa)", "url": "https://pl.wikipedia.org/wiki/Warszawa_Rembert%C3%B3w_%28stacja_kolejowa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres „1866–dziś” z artykułu o dzielnicy (stacja powstała w 1866 r.), nie z tego artykułu."
+  },
+  {
+    "id": "willa-granzowa",
+    "nazwa": "Willa Granzowa (Grancówka)",
+    "name_en": "Granzow Villa",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Chełmżyńska 165",
+    "lat": 52.259108,
+    "lon": 21.126158,
+    "lokalizacja": "dokladna",
+    "okres": "1888–2014",
+    "istnieje": false,
+    "fakty": [
+      "Wzniesiono go w latach 1888-1890 lub w roku 1895 z przeznaczeniem na siedzibę administracji zakładów Kazimierza Granzowa, zlokalizowanych na Kawęczynie.",
+      "Budynek przetrwał II wojnę światową, pomimo że zakłady ceramiczne zostały zbombardowane już w 1939.",
+      "Po wojnie mieściła się tu szkoła gminna dla Kawęczyna, a potem przedszkole.",
+      "W 1989 budynek wpisano do rejestru zabytków.",
+      "We wrześniu 2014 spółka Millbery dokonała rozbiórki willi na podstawie decyzji stołecznego konserwatora zabytków z 31 lipca 2014; wbrew pozwoleniu budynek zburzono przy użyciu koparki.",
+      "16 maja 2016 Magdalena Gawin podpisała decyzję o wykreśleniu z rejestru zabytków nieistniejącej willi Granzowa, po której pozostał jedynie głęboki wykop.",
+      "W styczniu 2017 Prokuratura Okręgowa Warszawa-Praga nie stwierdziła znaczących uchybień przy rozbiórce willi i umorzyła postępowanie."
+    ],
+    "ciekawostki": [
+      "Willa była reklamą wyrobów cegielni na Kawęczynie: mury zbudowano z różnych gatunków cegły, a fasadę wyłożono żółtą cegłą oblicową."
+    ],
+    "summary_en": "An eclectic villa built in the late 19th century as the administrative building of the Granzow brick works in Kawęczyn. It was listed as a monument in 1989 and demolished in 2014 despite a ban, which led to its removal from the register in 2016.",
+    "ludzie": [
+      {"kto": "Kazimierz Granzow", "rola": "właściciel zakładów ceramicznych w Kawęczynie, dla których zbudowano willę", "wiki": null},
+      {"kto": "Magdalena Gawin", "rola": "generalny konserwator zabytków; w 2016 podpisała wykreślenie willi z rejestru", "wiki": null},
+      {"kto": "Piotr Brabander", "rola": "stołeczny konserwator zabytków; wydał decyzję o rozbiórce z 2014 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Grancówka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Granzowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Granzowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Budynek stał na rogu ul. Strażackiej i ul. Chełmżyńskiej. Współrzędne z nagłówka. Artykuł opisuje też spór o rozbiórkę; w fakcie z 2016 r. użyto nazwiska Magdaleny Gawin wprost z tekstu."
+  },
+  {
+    "id": "wygoda-warszawa",
+    "nazwa": "Wygoda (Warszawa)",
+    "name_en": "Wygoda (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.246388888,
+    "lon": 21.133055555,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Wygoda należała w latach 1867–1939 do gminy Wawer w powiecie warszawskim.",
+      "W 1921 roku Wygoda liczyła 74 mieszkańców.",
+      "20 października 1933 utworzono gromadę Gocławek w granicach gminy Wawer, w skład której weszły wsie Gocławek i Wygoda.",
+      "W 1943 gromada Wygoda liczyła 1818 mieszkańców.",
+      "15 maja 1951 w związku ze zniesieniem gminy Wawer gromadę Wygoda włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wygoda is a housing estate in the southwestern part of Rembertów, along Chełmżyńska Street. It was a village in the Wawer commune until 1951, when it was incorporated into Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wygoda (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wygoda_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zygmuntow-warszawa",
+    "nazwa": "Zygmuntów (Warszawa)",
+    "name_en": "Zygmuntów (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.269444,
+    "lon": 21.168056,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Zygmuntów należała w latach 1867–1930 do gminy Okuniew w powiecie warszawskim.",
+      "W 1921 roku Zygmuntów liczył 58 mieszkańców.",
+      "1 kwietnia 1930 Zygmuntów włączono do gminy Wawer w tymże powiecie.",
+      "20 października 1933 utworzono gromadę Zygmuntów-Magenta w granicach gminy Wawer.",
+      "1 kwietnia 1939 gromadę Zygmuntów-Magenta włączono do nowo utworzonego miasta Rembertów.",
+      "1 kwietnia 1957 miasto Rembertów, wraz z Zygmuntowem-Magentą, włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zygmuntów is a housing estate in the eastern part of the Stary Rembertów area. It was a village in the Okuniew commune before being absorbed into Rembertów in 1939 and Warsaw in 1957.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zygmuntów (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Zygmunt%C3%B3w_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "antoninow-warszawa",
+    "nazwa": "Antoninów (Warszawa)",
+    "name_en": "Antoninów (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.269166666,
+    "lon": 21.092222222,
+    "lokalizacja": "przyblizona",
+    "okres": "fort do 1909; teren–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W przeszłości istniał tu fort XII Twierdzy Warszawa („Antoninów”), zniszczony w 1909.",
+      "Jeszcze w okresie międzywojennym między Utratą a Kawęczynem, za Kanałem Bródnowskim, już poza ówczesnymi granicami Warszawy, istniał folwark Antoninów.",
+      "Współcześnie nazwę tę nosi posterunek odgałęźny na linii kolejowej nr 2 w rejonie pętli autobusowej Zajezdnia Utrata."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Antoninów is a rarely used name for an area of Warsaw's Targówek district. It takes its name from Fort Antoninów of the Warsaw Fortress, which was destroyed in 1909.",
+    "ludzie": [],
+    "dawne_nazwy": ["Antoninów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Antoninów (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Antonin%C3%B3w_%28Warszawa%29"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł opisuje nazwę obszaru, nie pojedynczy budynek; fort i folwark już nie istnieją lub nie są w tekście opisane szczegółowo."
+  },
+  {
+    "id": "brodno-warszawa",
+    "nazwa": "Bródno",
+    "name_en": "Bródno",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.28333333,
+    "lon": 21.03333333,
+    "lokalizacja": "przyblizona",
+    "okres": "IX–X w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki Bródna sięgają IX–X wieku, gdy na terenie obecnego Lasu Bródnowskiego powstał warowny gród, jeden z trzech na terenie obecnej Warszawy.",
+      "W 1656 roku, w okolicach Bródna, trwająca trzy dni bitwa (28-30 lipca) w czasie potopu szwedzkiego.",
+      "W roku 1884 założono cmentarz Bródnowski na terenach należących do wojska i szpitala św. Ducha.",
+      "Wiosną 1917 katastrofalna powódź sprawiła, że Pelcowizna i Nowe Bródno zostały zalane.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku zabudowa Nowego Bródna została w znacznym stopniu zniszczona w dniach 10–11 września w wyniku nalotów Luftwaffe.",
+      "Przy ul. Wysockiego znajduje się pomnik „Cudu nad Wisłą”, ufundowany przez mieszkańców dzielnicy w 1925 roku.",
+      "We wrześniu 2022 roku oddano do użytku stację metra Bródno, najdalej na północ wysuniętą stację warszawskiego metra."
+    ],
+    "ciekawostki": [
+      "Zdjęcia zniszczonej dzielnicy w 1939 roku wykonał amerykański dokumentalista Julien Bryan.",
+      "Przy ul. Wysockiego zachowano sześćdziesięciometrowy fragment bruku, szyny tramwajowe i cztery słupy trakcji tramwajowej."
+    ],
+    "summary_en": "Bródno is a housing estate and MSI area in Targówek, with roots in an early medieval fortified settlement. It was badly damaged by air raids in September 1939 and gained the northernmost metro station in Warsaw in 2022.",
+    "ludzie": [
+      {"kto": "Julien Bryan", "rola": "amerykański dokumentalista; wykonał zdjęcia zniszczonej dzielnicy we wrześniu 1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowe Bródno", "Stare Bródno"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bródno", "url": "https://pl.wikipedia.org/wiki/Br%C3%B3dno"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o osiedlu i obszarze, nie o pojedynczym budynku. Dawne nazwy: Nowe Bródno i Stare Bródno występują w tekście jako części osiedla."
+  },
+  {
+    "id": "stacja-metra-brodno",
+    "nazwa": "Stacja metra Bródno",
+    "name_en": "Bródno metro station",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Kondratowicza (w pobliżu ul. Rembielińskiej i Bazyliańskiej)",
+    "adres_historyczny": null,
+    "lat": 52.293480555,
+    "lon": 21.029530555,
+    "lokalizacja": "dokladna",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Bródno to stacja linii M2 metra w Warszawie, w ciągu ulicy Kondratowicza, w pobliżu skrzyżowania z ulicami Rembielińską i Bazyliańską.",
+      "Stacja jest ostatnią stacją na prawobrzeżnym odcinku linii M2.",
+      "Budowa stacji rozpoczęła się w 2019.",
+      "W grudniu 2019, w czasie budowy, wykopano kości dwóch prażubrów.",
+      "Nazwa stacji została nadana przez Radę m.st. Warszawy w sierpniu 2020.",
+      "Stacja została otwarta dla ruchu pasażerskiego 28 września 2022 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bródno is a metro station on Line M2, the last station on the right-bank section of the line. Construction began in 2019 and passengers were first carried on 28 September 2022.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bródno (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Br%C3%B3dno_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

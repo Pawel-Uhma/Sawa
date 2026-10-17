@@ -1,0 +1,175 @@
+[
+  {
+    "id": "panienska",
+    "nazwa": "Osiedle Panieńska",
+    "name_en": "Panieńska housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "osiedle między ul. Wybrzeże Szczecińskie, Olszową, Panieńską i Stefana Okrzei",
+    "adres_historyczny": null,
+    "lat": 52.249722222,
+    "lon": 21.026944444,
+    "lokalizacja": "dokladna",
+    "okres": "1964–1967",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało wybudowane w latach 1964–1967 według projektu Gabriela Rekwirowicza i Teresy Tyszyńskiej.",
+      "Osiedle składa się z pięciu bloków wielorodzinnych wybudowanych w technologii monolitycznej o 12 kondygnacjach oraz trzech mniejszych, z lokalami usługowymi na parterze.",
+      "W budynkach zaprojektowano 739 mieszkań dla ok. 2 tys. mieszkańców.",
+      "Powierzchnia osiedla wynosi 3,2 hektara."
+    ],
+    "ciekawostki": [
+      "„Encyklopedia Warszawy” (1994) nazywa osiedle „malowniczym akcentem panoramy Pragi”."
+    ],
+    "summary_en": "The Panieńska estate in Praga-Północ, on the banks of the Vistula near the Śląsko-Dąbrowski Bridge, was built in 1964–1967 to designs by Gabriel Rekwirowicz and Teresa Tyszyńska. It has five 12-storey residential blocks with 739 flats.",
+    "ludzie": [
+      {"kto": "Gabriel Rekwirowicz", "rola": "autor projektu osiedla", "wiki": null},
+      {"kto": "Teresa Tyszyńska", "rola": "autorka projektu osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Panieńska", "url": "https://pl.wikipedia.org/wiki/Panie%C5%84ska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle na Pradze-Północ; obszar osiedla opisany granicami ulic z tekstu."
+  },
+  {
+    "id": "pawilon-edukacyjny-kamien",
+    "nazwa": "Pawilon Edukacyjny Kamień",
+    "name_en": "Kamień Educational Pavilion",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "między nabrzeżem Wisły a ul. Wybrzeże Puckie",
+    "adres_historyczny": null,
+    "lat": 52.26325,
+    "lon": 21.014080555,
+    "lokalizacja": "dokladna",
+    "okres": "2018–2020",
+    "istnieje": true,
+    "fakty": [
+      "Pawilon został wybudowany w ramach projektu finansowanego ze środków Komisji Europejskiej w ramach instrumentu finansowego LIFE+ oraz z dotacji Narodowego Funduszu Ochrony Środowiska i Gospodarki Wodnej.",
+      "Budynek przypominający wielki głaz polodowcowy wraz z otaczającą go polaną został zaprojektowany przez eM4 Pracownia Architektury Brataniec.",
+      "Kamień węgielny wmurowano w kwietniu 2018 roku.",
+      "Pawilon został oddany do użytku w 2020 roku.",
+      "Obiekt zdobył Grand Prix Nagrody Architektonicznej „Polityki”, Nagrodę Architektoniczną Prezydenta m.st. Warszawy oraz nagrodę w XXIV edycji konkursu Polski Cement w Architekturze.",
+      "Otrzymał także nominację do nagrody Mies van der Rohe Award 2022."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Kamień Educational Pavilion on Golędzinów, between the Vistula embankment and ul. Wybrzeże Puckie in Praga-Północ, is designed to resemble a large glacial boulder. It was built under an EU LIFE+ bird habitat project, opened in 2020, and has since become the Warsaw Green Management Board's main ecological education point.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pawilon Edukacyjny Kamień", "url": "https://pl.wikipedia.org/wiki/Pawilon_Edukacyjny_Kamie%C5%84"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pelcowizna",
+    "nazwa": "Pelcowizna",
+    "name_en": "Pelcowizna",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.27598,
+    "lon": 21.02063,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1806–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawna kolonia i folwark Pelcowizna założone zostały około 1806 przez Józefa Pelca, właściciela folwarku Golędzinów.",
+      "Około roku 1820 wytyczono tamtędy szosę modlińską (dziś ul. Modlińska).",
+      "8 kwietnia 1916 generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające do Warszawy (od 1 kwietnia 1916) m.in. Pelcowiznę, znajdującą się w tamtym czasie w gminie Bródno.",
+      "W 1924 uzyskała połączenie tramwajowe z resztą miasta.",
+      "W latach 1937–1939 na terenie dóbr golędzinowskich powstała Kolonia Śliwice – zespół małych domków mieszkalnych pomiędzy ulicami Jagiellońską i Witkiewicza.",
+      "Po II wojnie światowej na terenie Pelcowizny wzniesiono Fabrykę Samochodów Osobowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Pelcowizna is a former village and now an MSI area in Praga-Północ, formed as a farm settlement around 1806 by Józef Pelc. It was annexed to Warsaw in 1916, and a passenger fleet factory was built there after the Second World War.",
+    "ludzie": [
+      {"kto": "Józef Pelc", "rola": "właściciel folwarku Golędzinów, założyciel kolonii Pelcowizna", "wiki": null},
+      {"kto": "Hans Hartwig von Beseler", "rola": "generał-gubernator, wydał rozporządzenie o włączeniu do Warszawy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pelcowizna", "url": "https://pl.wikipedia.org/wiki/Pelcowizna"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Obszar MSI, bez jednego adresu; współrzędne z nagłówka WSPÓŁRZĘDNE."
+  },
+  {
+    "id": "plac-wilenski",
+    "nazwa": "Plac Wileński",
+    "name_en": "Wileński Square",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "pl. Wileński",
+    "adres_historyczny": null,
+    "lat": 52.2542,
+    "lon": 21.0353,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1862–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac istniał w obecnym miejscu co najmniej od czasów budowy Dworca Petersburskiego, jednak nie posiadał oficjalnej nazwy.",
+      "Nazwa Plac Wileński została nadana w lipcu 2001.",
+      "W latach 1945–2011 na placu znajdował się pomnik Braterstwa Broni.",
+      "W latach 1949−1952 w północnej części placu powstało osiedle Praga I zaprojektowane przez Szymona i Helenę Syrkusów.",
+      "W 2009 przebiegająca przez plac Wileński ulica Targowa na odcinku od placu do wiaduktu kolejowego jako założenie urbanistyczne została wpisana do rejestru zabytków.",
+      "Pod placem znajduje się stacja Dworzec Wileński linii M2 warszawskiego metra."
+    ],
+    "ciekawostki": [
+      "Pomnik Braterstwa Broni miał zostać przesunięty około 80 m na północ, jednak ostatecznie nie został postawiony na nowym cokole."
+    ],
+    "summary_en": "Plac Wileński is a square in Praga-Północ between ul. Targowa, ul. Świętych Cyryla i Metodego, ul. Wileńska and al. Solidarności. It has existed in its current location since the Petersburg Station was built and was officially named in 2001. It is now above the Dworzec Wileński metro station.",
+    "ludzie": [
+      {"kto": "Szymon Syrkus", "rola": "architekt osiedla Praga I na placu", "wiki": null},
+      {"kto": "Helena Syrkus", "rola": "architektka osiedla Praga I na placu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Wileński w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Wile%C5%84ski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres: ok. 1862 to rok budowy Dworca Petersburskiego podany w innych artykułach, nie w tym."
+  },
+  {
+    "id": "plac-gen-jozefa-hallera",
+    "nazwa": "Plac gen. Józefa Hallera",
+    "name_en": "General Józef Haller Square",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "między ul. Dąbrowszczaków a ul. Jagiellońską",
+    "adres_historyczny": null,
+    "lat": 52.259138888,
+    "lon": 21.025666666,
+    "lokalizacja": "dokladna",
+    "okres": "1950–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przed I wojną światową na terenie obecnego placu znajdowały się rosyjskie koszary, które po odzyskaniu niepodległości zostały przejęte przez 36 Pułk Piechoty Legii Akademickiej.",
+      "Plac został wytyczony w pierwszej połowie lat 50. XX wieku. W latach 1957–1991 nosił imię Juliana Leńskiego.",
+      "Plac stanowił centrum założenia urbanistycznego osiedla mieszkaniowego Praga II zaprojektowanego przez Jerzego Gieysztora i Jerzego Kumelowskiego.",
+      "W latach 60. XX wieku w północno-wschodniej części placu ustawiono stelę z napisem: Miejsce uświęcone krwią żołnierzy radzieckich i polskich zamordowanych przez hitlerowców w latach 1941–1943.",
+      "W latach 70. XX wieku na placu zbudowano betonowy pawilon.",
+      "Od 2015 roku przy placu Hallera działa Centrum Wielokulturowe."
+    ],
+    "ciekawostki": [
+      "Na placu znajdują się m.in. fontanna, plac zabaw, dąb papieski i ujęcie wody oligoceńskiej."
+    ],
+    "summary_en": "General Józef Haller Square in Praga-Północ, a two-hectare socialist-realist square at the centre of the Praga II estate, was laid out in the early 1950s. It was named after Julian Leński in 1957–1991 and has a stela inscribed with a commemoration of Soviet and Polish soldiers murdered in 1941–1943.",
+    "ludzie": [
+      {"kto": "Józef Haller", "rola": "generał, od którego nazwano plac", "wiki": null},
+      {"kto": "Julian Leński", "rola": "patron placu w latach 1957–1991", "wiki": null},
+      {"kto": "Jerzy Gieysztor", "rola": "współprojektant założenia osiedla Praga II", "wiki": null},
+      {"kto": "Jerzy Kumelowski", "rola": "współprojektant założenia osiedla Praga II", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac im. Juliana Leńskiego (1957–1991)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac gen. Józefa Hallera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_gen._J%C3%B3zefa_Hallera_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

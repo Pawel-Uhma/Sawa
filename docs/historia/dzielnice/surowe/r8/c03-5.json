@@ -1,0 +1,130 @@
+[
+  {
+    "id": "zajezdnia-tramwajowa-mokotow",
+    "nazwa": "Zajezdnia tramwajowa „Mokotów”",
+    "name_en": "Mokotów Tram Depot",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Woronicza 27",
+    "adres_historyczny": null,
+    "lat": 52.186943,
+    "lon": 21.000269,
+    "lokalizacja": "dokladna",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę zajezdni rozpoczęto w 1952 roku, a ukończono ją w styczniu 1955 roku.",
+      "Zajezdnia zastąpiła pierwszą remizę tramwajową „Mokotów”, wzniesioną w latach 1880–1881 przy ul. Puławskiej 13/15.",
+      "W 1961 roku do zajezdni przeniesiono tabor z likwidowanej zajezdni „Solec”, znajdującej się pod wiaduktem mostu Poniatowskiego.",
+      "W latach 60. zajezdnię ogrodzono i wyposażono w bramy wjazdowe; wtedy dostarczono też pierwsze wagony typu Konstal 13N.",
+      "W 2005 roku zajezdnia obchodziła 50-lecie istnienia.",
+      "W 2019 roku na terenie zajezdni otwarto Izbę Tradycji Tramwajów Warszawskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Mokotów tram depot at ul. Woronicza 27 was built in 1952–1955 to replace an 1880s depot on Puławska street. It took over the rolling stock of the Solec depot in 1961 and opened a tram heritage room in 2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zakład Realizacji Przewozów „Mokotów” – R-3"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mokotów (zajezdnia tramwajowa)", "url": "https://pl.wikipedia.org/wiki/Mokot%C3%B3w_%28zajezdnia_tramwajowa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "mordor-warszawa",
+    "nazwa": "Mordor (skupisko biurowców na Służewcu i Ksawerowie)",
+    "name_en": "Mordor (office cluster in Służewiec and Ksawerów)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.176944444,
+    "lon": 21.0075,
+    "lokalizacja": "przyblizona",
+    "okres": "1991–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Mordor to nieformalna, żartobliwa nazwa skupiska biurowców na Służewcu i zachodnim Ksawerowie, w rejonie ulic Domaniewskiej, Wołoskiej, Cybernetyki i Marynarskiej.",
+      "Teren dawnej Dzielnicy Przemysłowo-Składowej „Służewiec” (ok. 260 ha) po zakończeniu działalności zakładów w latach 90. stał się dużym, uzbrojonym terenem pod inwestycje.",
+      "Biurowiec Curtis Plaza zbudowano w latach 1991–1992 przy ul. Wołoskiej 18.",
+      "W latach 1995–2001 w rejonie ulic Domaniewskiej i Postępu powstał zespół biurowców Mokotów Business Park.",
+      "W 2000 roku przy ul. Wołoskiej oddano do użytku jedno z największych stołecznych centrów handlowych, Galerię Mokotów.",
+      "W 2018 roku do pracy w Mordorze dojeżdżało dziennie ok. 80–100 tys. osób.",
+      "W 2021 roku spółka Echo Investment rozpoczęła rozbiórkę pierwszego z czterech biurowców Empark Mokotów Business Park, a w 2024 roku zburzono biurowiec Curtis Plaza."
+    ],
+    "ciekawostki": [
+      "Nazwa została spopularyzowana przez fanpage „Mordor na Domaniewskiej” w serwisie Facebook, który w 2018 roku miał ponad 100 tys. fanów."
+    ],
+    "summary_en": "Mordor is an informal name for an office cluster in Służewiec and western Ksawerów, named after Tolkien's Mordor because of its traffic problems. Its office towers were built on the sites of former factories in the 1990s; some have since been demolished for housing.",
+    "ludzie": [],
+    "dawne_nazwy": ["Dzielnica Przemysłowo-Składowa „Służewiec”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mordor (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Mordor_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu, to środek skupiska; nie jest to pojedynczy adres."
+  },
+  {
+    "id": "muzeum-geologiczne-pig-rakowiecka-4",
+    "nazwa": "Muzeum Geologiczne Państwowego Instytutu Geologicznego",
+    "name_en": "Geological Museum of the Polish Geological Institute",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Rakowiecka 4",
+    "adres_historyczny": null,
+    "lat": 52.20888889,
+    "lon": 21.01305556,
+    "lokalizacja": "dokladna",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum powstało w 1919 roku.",
+      "Mieści się w zabytkowym gmachu wybudowanym w latach 1925–1930 według projektu Mariana Lalewicza.",
+      "Wystawa stała „Państwowy Instytut Geologiczny 1919–1999” przedstawia historię instytutu.",
+      "Na wystawie zgromadzono ok. 4,5 tys. eksponatów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Geological Museum of the Polish Geological Institute opened in 1919 and is housed in a listed building at ul. Rakowiecka 4, built in 1925–1930 to designs by Marian Lalewicz. It holds about 4,500 exhibits.",
+    "ludzie": [
+      {"kto": "Marian Lalewicz", "rola": "autor projektu zabytkowego gmachu (1925–1930)", "wiki": null},
+      {"kto": "Marta Szubert", "rola": "wykonała model dinozaura dilofozaura nazywanego „Dyzio”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Geologiczne Państwowego Instytutu Geologicznego - Państwowego Instytutu Badawczego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Geologiczne_Pa%C5%84stwowego_Instytutu_Geologicznego_-_Pa%C5%84stwowego_Instytutu_Badawczego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord budynku muzeum; sam instytut to osobna instytucja (nie wpisana)."
+  },
+  {
+    "id": "fort-ix-czerniakow-muzeum-polskiej-techniki-wojskowej",
+    "nazwa": "Fort IX Czerniaków (Muzeum Polskiej Techniki Wojskowej)",
+    "name_en": "Fort IX Czerniaków (Museum of Polish Military Technology)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Powsińska 13",
+    "adres_historyczny": null,
+    "lat": 52.182015,
+    "lon": 21.066179,
+    "lokalizacja": "dokladna",
+    "okres": "1883–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało usytuowane w części XIX-wiecznego rosyjskiego fortu IX Twierdzy Warszawa, przedzielonego ulicą Powsińską.",
+      "Historia i tradycje Fortu IX Czerniakowskiego sięgają jego budowy w 1883 roku.",
+      "Na początku lat 90. XX w. Muzeum Wojska Polskiego utworzyło tu magazyn, a pod koniec lat 90. otwarto ekspozycję plenerową i filię muzeum.",
+      "Wystawa „Polska broń pancerna 1918–1945” zawiera ponad 200 pamiątek po polskich siłach pancernych."
+    ],
+    "ciekawostki": [
+      "Wiele eksponatów jest tu remontowanych, a planowane jest stopniowe przywracanie ich do stanu sprawności technicznej."
+    ],
+    "summary_en": "The Museum of Polish Military Technology occupies part of the 19th-century Russian Fort IX of the Warsaw Fortress at ul. Powsińska 13 in Mokotów. The fort was built in 1883, and the museum became a branch of the Museum of the Polish Army in the late 1990s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Polskiej Techniki Wojskowej", "url": "https://pl.wikipedia.org/wiki/Muzeum_Polskiej_Techniki_Wojskowej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

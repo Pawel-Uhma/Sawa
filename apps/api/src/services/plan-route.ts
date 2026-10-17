@@ -8,7 +8,12 @@ import {
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
 import { DEFAULT_SEARCH_OPTIONS, planRide, type Ride } from "../domain/routing/beam-search";
-import { buildRoute, buildWalkRoute } from "../domain/routing/build-route";
+import {
+  type AlongPathsInput,
+  alongWalkPaths,
+  buildRoute,
+  buildWalkRoute,
+} from "../domain/routing/build-route";
 import { DEFAULT_FASTEST_OPTIONS, planFastest } from "../domain/routing/fastest";
 import { computePlaceHits } from "../domain/routing/place-hits";
 import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
@@ -261,24 +266,24 @@ export function createRoutePlanner(deps: {
   }
 
   /**
-   * Walking legs drawn along real paths. Only the shape changes: times stay the planner's
-   * (straight line × detour factor), so place ETAs and story windows still match.
+   * Walking legs drawn along real paths, with the places passed on them collected again along
+   * the path (see `alongWalkPaths`). Times stay the planner's (straight line × detour factor).
    */
-  async function withWalkPaths(route: Route): Promise<Route> {
+  async function withWalkPaths(route: Route, along: AlongPathsInput): Promise<Route> {
     const source = deps.walkPaths;
     if (!source) return route;
-    const legs = await Promise.all(
-      route.legs.map(async (leg) => {
-        if (leg.mode !== "walk" || leg.lngLats.length < 2) return leg;
-        const path = await source.path(leg.lngLats.map(fromLngLat));
-        return path ? { ...leg, lngLats: path } : leg;
-      }),
+    const paths = await Promise.all(
+      route.legs.map((leg) =>
+        leg.mode === "walk" && leg.lngLats.length >= 2
+          ? source.path(leg.lngLats.map(fromLngLat))
+          : undefined,
+      ),
     );
-    return { ...route, legs };
+    return alongWalkPaths(route, paths, along);
   }
 
-  /** Plans with straight walking legs; `plan` then draws them along paths. */
-  async function planStraight(request: PlanRouteRequest, now: Date): Promise<Route> {
+  /** Plans with straight walking legs, then `drawn` puts them on real paths. */
+  async function planRoute(request: PlanRouteRequest, now: Date): Promise<Route> {
     const { hitsByPattern, placesById } = await prepare(
       reachableBbox(
         request.destination ? [request.origin, request.destination] : [request.origin],
@@ -293,6 +298,8 @@ export function createRoutePlanner(deps: {
     const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
     const storyMaxSec = request.storyStyle && STORY_MAX_SEC[request.storyStyle];
     const story = { attribution, storyGapSec, storyMaxSec, now, placesById };
+    const drawn = (route: Route) =>
+      withWalkPaths(route, { placesById, interests, prefs, now, storyGapSec, storyMaxSec });
 
     // The user picked a walk: no ride is planned at all. Without a duration the walk takes
     // as long as the straight line at walking speed with the detour factor.
@@ -313,12 +320,14 @@ export function createRoutePlanner(deps: {
         prefs,
       });
       if (!walk) throw new AppError("NOT_FOUND", "Nie udało się ułożyć spaceru z tych miejsc");
-      return buildWalkRoute({
-        ...story,
-        walk,
-        origin: request.origin,
-        destination: request.destination,
-      });
+      return drawn(
+        buildWalkRoute({
+          ...story,
+          walk,
+          origin: request.origin,
+          destination: request.destination,
+        }),
+      );
     }
 
     /**
@@ -364,7 +373,7 @@ export function createRoutePlanner(deps: {
         request.travel === "transit",
       );
       if (!fastest) throw new AppError("NOT_FOUND", "Brak przejazdu komunikacją do tego celu");
-      return fastest;
+      return drawn(fastest);
     }
 
     const budgetSec = request.durationMin * 60;
@@ -399,12 +408,14 @@ export function createRoutePlanner(deps: {
         ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&
         ride.endsAtDestination !== false;
       if (walk && (!ride || !rideFits || walk.score > ride.score)) {
-        return buildWalkRoute({
-          ...story,
-          walk,
-          origin: request.origin,
-          destination: request.destination,
-        });
+        return drawn(
+          buildWalkRoute({
+            ...story,
+            walk,
+            origin: request.origin,
+            destination: request.destination,
+          }),
+        );
       }
     }
     if (!ride) {
@@ -413,30 +424,28 @@ export function createRoutePlanner(deps: {
     // A sightseeing ride that cannot reach the destination: rather the fastest ride there.
     if (request.destination && ride.endsAtDestination === false) {
       const fastest = await fastestRoute(request.destination, true);
-      if (fastest) return fastest;
+      if (fastest) return drawn(fastest);
     }
 
     // Walking legs to the first stop and from the last one to where the user ends.
     const end = request.returnToStart
       ? ride.endsAtStart && request.origin
       : ride.endsAtDestination && request.destination;
-    return credited(
-      buildRoute({
-        ...story,
-        ride,
-        network,
-        origin: request.origin,
-        end: end || undefined,
-        walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
-      }),
+    return drawn(
+      credited(
+        buildRoute({
+          ...story,
+          ride,
+          network,
+          origin: request.origin,
+          end: end || undefined,
+          walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
+        }),
+      ),
     );
   }
 
-  return {
-    async plan(request, now) {
-      return withWalkPaths(await planStraight(request, now));
-    },
-  };
+  return { plan: planRoute };
 }
 
 function fingerprintOf(places: PlaceSummary[]): string {

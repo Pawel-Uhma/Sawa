@@ -1,0 +1,425 @@
+[
+  {
+    "id": "stary-cmentarz-na-sluzewie",
+    "nazwa": "Stary cmentarz na Służewie",
+    "name_en": "Old Służew Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Fosa (przy plebanii kościoła św. Katarzyny)",
+    "adres_historyczny": null,
+    "lat": 52.17,
+    "lon": 21.045,
+    "lokalizacja": "dokladna",
+    "okres": "co najmniej od 1238–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz jest co najmniej równie stary jak parafia św. Katarzyny, która została erygowana w 1238.",
+      "Cmentarz został częściowo zniszczony w czasie powstania listopadowego, a po odnowieniu rekonsekrowany w 1839.",
+      "W 1850 powiększono obszar cmentarza i obwiedziono go murem; teren powiększono ponownie w 1876.",
+      "28 października 1989 podczas uroczystości z udziałem Józefa Glempa w miedzianej urnie, wykonanej przez Andrzeja Renesa, złożono ziemię pobraną z miejsc egzekucji i pochówków ofiar komunistycznego terroru.",
+      "Na cmentarzu pochowano m.in. Teresę Badzian (1929–1989), reżysera i scenarzystkę filmów animowanych, oraz Michała Filipowicza (1914–1978), lotnika RAF, syna Wandy Krahelskiej."
+    ],
+    "ciekawostki": [
+      "Wśród pochowanych jest wielu profesorów SGGW i UW oraz proboszczowie parafii św. Katarzyny, m.in. Wojciech Kubiak (1875–1899) i Antoni Czarnecki (1950–1985)."
+    ],
+    "summary_en": "The old Służew cemetery lies beside the Fosa-street parish buildings of St. Catherine's Church in Ursynów. It is at least as old as the 1238 parish, was enlarged in 1850 and 1876, and holds graves of many Polish academics, artists and clergy.",
+    "ludzie": [
+      {
+        "kto": "Teresa Badzian (1929–1989)",
+        "rola": "reżyserka i scenarzystka filmów animowanych; pochowana na cmentarzu",
+        "wiki": null
+      },
+      {
+        "kto": "Michał Filipowicz (1914–1978)",
+        "rola": "lotnik RAF, syn Wandy Krahelskiej; pochowany na cmentarzu",
+        "wiki": null
+      },
+      {
+        "kto": "Wanda Krahelska (1886–1968)",
+        "rola": "działaczka socjalistyczna; pochowana na cmentarzu",
+        "wiki": null
+      },
+      {
+        "kto": "Wojciech Kubiak (1841–1899)",
+        "rola": "proboszcz parafii św. Katarzyny (1875–1899), rektor Seminarium w Warszawie",
+        "wiki": null
+      },
+      {
+        "kto": "Antoni Czarnecki (1906–1989)",
+        "rola": "proboszcz parafii św. Katarzyny (1950–1985)",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Glemp",
+        "rola": "kardynał; uczestniczył w uroczystości z 28 października 1989",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Stary cmentarz na Służewie w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Stary_cmentarz_na_S%C5%82u%C5%BCewie_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł daje tylko przybliżone współrzędne cmentarza (nagłówek)."
+  },
+  {
+    "id": "staw-krosno",
+    "nazwa": "Staw Krosno",
+    "name_en": "Krosno pond",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1373,
+    "lon": 21.0126,
+    "lokalizacja": "dokladna",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Powierzchnia stawu wynosi 0,48 ha, a jego pojemność retencyjna wynosi 3400 m³.",
+      "Staw stanowi zbiornik retencyjny dla wód deszczowych spływających z osiedli Ludwinów i Grabówek.",
+      "Zgodnie z uchwałą Rady m.st. Warszawy z dnia 23 września 2010 r. staw podlega ochronie, w tym zakazowi zasypywania i odprowadzania ścieków."
+    ],
+    "ciekawostki": [
+      "Razem ze stawem Kądziołeczka i Jeziorem Zabłockiego tworzy „pasmo jeziorek Pyrskich”."
+    ],
+    "summary_en": "Krosno is a small retention pond in Ursynów near Jeziorki Północne, fed by runoff from Ludwinów and Grabówek. It is protected under a 2010 local plan.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Staw Krosno",
+        "url": "https://pl.wikipedia.org/wiki/Staw_Krosno"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "staw-lipkowski",
+    "nazwa": "Staw Lipkowski",
+    "name_en": "Lipkowski pond",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.113611111,
+    "lon": 21.021944444,
+    "lokalizacja": "dokladna",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Staw powstał w wyniku zalania wodą wyeksploatowanego wyrobiska iłów zaopatrującego w surowiec cegielnie.",
+      "Powierzchnia stawu wynosi 0,2297 ha, a lustro wody znajduje się na wysokości 97,6 m n.p.m.",
+      "Staw położony jest na terenie otuliny rezerwatu przyrody Las Kabacki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lipkowski Pond, also called Lipkowskie Lake, is a small clay-pit pond in the Wille Laguna area of Ursynów, filled with water after clay extraction for brickworks.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Jezioro Lipkowskie"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Staw Lipkowski",
+        "url": "https://pl.wikipedia.org/wiki/Staw_Lipkowski"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "staw-szyja",
+    "nazwa": "Stawy Szyja",
+    "name_en": "Szyja ponds",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.136666666,
+    "lon": 20.991388888,
+    "lokalizacja": "dokladna",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Stawy powstały w wyniku zalania wodą dawnego wyrobiska kruszywa naturalnego.",
+      "Na planie Warszawy z 1970 roku staw nie był jeszcze podzielony na dwie części i zajmował większy obszar.",
+      "Według „Opracowania ekofizjograficznego” z 2006 roku stawy zanikają.",
+      "Teren stawów objęty jest miejscowym planem zagospodarowania przestrzennego przyjętym uchwałą Rady miasta z dnia 23 września 2010 roku."
+    ],
+    "ciekawostki": [
+      "Po przeciwnej stronie nasypu kolejowego na planie z 1970 roku znajdowały się trzy kolejne zbiorniki wodne."
+    ],
+    "summary_en": "Szyja is a pair of small artificial ponds in Ursynów Północny near the Warszawa Lotnisko junction, formed by flooding a former gravel pit. They were already shrinking by 2006.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Stawy Szyja"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Staw Szyja",
+        "url": "https://pl.wikipedia.org/wiki/Staw_Szyja"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dwa stawy o łącznej powierzchni 0,0784 ha; współrzędne dotyczą większego."
+  },
+  {
+    "id": "staw-wyscigi",
+    "nazwa": "Staw Wyścigi",
+    "name_en": "Wyścigi pond",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Bokserska (przy torze wyścigów Służewiec)",
+    "adres_historyczny": null,
+    "lat": 52.166111111,
+    "lon": 21.009444444,
+    "lokalizacja": "dokladna",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Zbiornik przeszedł rekultywację w 2007 roku, której celem było odbudowanie i pogłębienie czaszy stawu oraz ukształtowanie brzegów.",
+      "Program Ochrony Środowiska dla m. st. Warszawy na lata 2009–2012 podaje, że staw ma powierzchnię 1,9170 ha.",
+      "Staw leży na terenie należącym do toru wyścigów konnych Służewiec, w Dolinie Służewieckiej.",
+      "Przez staw przepływa Potok Służewiecki, a swoje ujście ma tu Kanał Bokserski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wyścigi is a flow-through pond of about 1.9 ha on the Służewiec racecourse grounds in Ursynów. It was restored in 2007 and sits on the Służewiec Stream.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Staw przy Wyścigach"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Staw Wyścigi",
+        "url": "https://pl.wikipedia.org/wiki/Staw_Wy%C5%9Bcigi"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres przybliżony (przy ul. Bokserskiej wg artykułu); w tekście brak numeru."
+  },
+  {
+    "id": "stawy-berensewicza",
+    "nazwa": "Stawy Berensewicza",
+    "name_en": "Berensewicz ponds",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.158721,
+    "lon": 21.000342,
+    "lokalizacja": "dokladna",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Stawy Berensewicza, zwane też Stawami Łączyny, składają się z dwóch zbiorników o łącznej powierzchni blisko 1,14 ha.",
+      "Leżą na terenie zespołu dworsko-ogrodowego „Wyczółki” z XVIII wieku, wpisanego w 1952 r. do rejestru zabytków.",
+      "Nazwa stawów pochodzi od jednej z rodzin, która była właścicielem dworu przed II wojną światową; majątek został znacjonalizowany po wojnie.",
+      "Zbiorniki przeszły rekultywację w latach 2004–2005; w 2004 przeprowadzono renowację stawu dolnego, a w 2005 przebudowano staw górny.",
+      "Projekt został sfinansowany ze środków Funduszu Ochrony Środowiska i Gospodarki Wodnej w ramach „Programu małej retencji”, a jego koszt wyniósł 860 tys. zł."
+    ],
+    "ciekawostki": [
+      "Na środku stawu górnego jest wyspa, która w przeszłości była połączona z lądem mostem; zachowały się kamienne elementy mostu i pozostałości murowanej piwnicy."
+    ],
+    "summary_en": "The Berensewicz ponds are two detention ponds near the Wyczółki manor-garden complex in Ursynów, restored in 2004–2005 at a cost of 860,000 zł. The estate was nationalised after WWII and returned to the family in the 1990s.",
+    "ludzie": [
+      {
+        "kto": "Franciszek Krotkowski",
+        "rola": "wcześniejszy właściciel majątku Wyczółki",
+        "wiki": null
+      },
+      {
+        "kto": "Fryderyk Florian Skarbek",
+        "rola": "wcześniejszy właściciel majątku Wyczółki",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Stawy Beręsewicza",
+      "Stawy Łączyny"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Stawy Berensewicza",
+        "url": "https://pl.wikipedia.org/wiki/Stawy_Berensewicza"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że Berensewiczowie odzyskali własność w latach 90. XX w."
+  },
+  {
+    "id": "stawy-na-wyscigach",
+    "nazwa": "Stawy na Wyścigach",
+    "name_en": "Ponds at the Racecourse",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.16,
+    "lon": 21.014444444,
+    "lokalizacja": "dokladna",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Dwa stawy o powierzchni 0,4064 i 0,2106 ha (łącznie 0,6170 ha) leżą wewnątrz głównego toru wyścigów konnych Służewiec.",
+      "Stawy są bezodpływowe i nie są powiązane hydrologicznie z ciekiem.",
+      "Lustra wody znajdują się na wysokości 101,0 m i 101,7 m n.p.m."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Two shallow ponds with a combined area of about 0.62 ha inside the main track of the Służewiec racecourse in Ursynów. They have no outflow.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Stawy na Wyścigach",
+        "url": "https://pl.wikipedia.org/wiki/Stawy_na_Wy%C5%9Bcigach"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie zawiera historii powstania stawów; rekord oparty na opisie położenia i parametrów."
+  },
+  {
+    "id": "stoklosy",
+    "nazwa": "Osiedle Stokłosy",
+    "name_en": "Stokłosy estate",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.159722222,
+    "lon": 21.034444444,
+    "lokalizacja": "przyblizona",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "14 maja 1951 r. obszar późniejszych Stokłosów został rozporządzeniem Rady Ministrów włączony w granice Warszawy wraz z resztą gminy Wilanów.",
+      "Od 1975 teren stanowił część południowego pasma rozwojowego Ursynów Północny o łącznej powierzchni 126 hektarów.",
+      "Całość zaplanowano na 9580 mieszkań i ok. 39,3 tys. mieszkańców.",
+      "Budynki mieszkalne miały mieć 4 lub 13 kondygnacji i powstawać w technologii wielkiej płyty w systemach „Szczecin” i „Wk-70”.",
+      "Od marca 1994 roku Stokłosy znajdują się w granicach Ursynowa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stokłosy is a residential area of Ursynów Północny. Part of Warsaw from 1951, it was planned from 1975 as a large-panel housing complex of 9,580 flats.",
+    "ludzie": [
+      {
+        "kto": "Marek Budzyński",
+        "rola": "główny projektant pasma Ursynów Północny",
+        "wiki": null
+      },
+      {
+        "kto": "Jerzy Szczepanik-Dzikowski",
+        "rola": "projektant pasma Ursynów Północny",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Szkop",
+        "rola": "projektant pasma Ursynów Północny",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Ursynów Północny-Stokłosy"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Stokłosy (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Stok%C5%82osy_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka dotyczą osiedla jako całości."
+  },
+  {
+    "id": "stoklosy-stacja-metra",
+    "nazwa": "Stacja metra Stokłosy",
+    "name_en": "Stokłosy metro station",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "al. Komisji Edukacji Narodowej, ul. Jastrzębowskiego i ul. Herbsta (skrzyżowanie)",
+    "adres_historyczny": null,
+    "lat": 52.156111111,
+    "lon": 21.034722222,
+    "lokalizacja": "dokladna",
+    "okres": "od 1983",
+    "istnieje": true,
+    "fakty": [
+      "Budowa stacji rozpoczęła się w lipcu 1983.",
+      "Nazwa stacji została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983.",
+      "Stacja przystosowana jest do pełnienia w razie konieczności funkcji schronu dla ludności cywilnej; służą temu grube stalowe drzwi przy każdym wejściu.",
+      "Śluzy wejściowe zamykane są podczas ulewnych deszczów, aby zapobiec zalaniu stacji."
+    ],
+    "ciekawostki": [
+      "Za stacją od strony południowej znajduje się połączenie między torem 1 i 2, którego można użyć do odholowania zepsutego składu."
+    ],
+    "summary_en": "Stokłosy is a single-level metro station on Line M1 at the junction of al. KEN, Jastrzębowskiego and Herbsta streets. Construction began in July 1983 and the station was designed to serve as a civil shelter.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Stokłosy (stacja metra)",
+        "url": "https://pl.wikipedia.org/wiki/Stok%C5%82osy_%28stacja_metra%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sggw-kampus",
+    "nazwa": "Kampus SGGW (Ursynów)",
+    "name_en": "Warsaw University of Life Sciences (SGGW) campus",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Nowoursynowska 159 (kampus)",
+    "adres_historyczny": "ul. Rakowiecka 26/30 (budynki z ok. 1925)",
+    "lat": 52.161666666,
+    "lon": 21.048055555,
+    "lokalizacja": "przyblizona",
+    "okres": "1816–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Instytut Agronomiczny założono 23 września 1816 we wsi Marymont, a pierwszym dyrektorem został Jerzy Beniamin Flatt.",
+      "W 1919 roku uczelnię upaństwowiono i nadano jej nazwę Szkoła Główna Gospodarstwa Wiejskiego.",
+      "Ok. 1925 wzniesiono budynki uczelni przy ul. Rakowieckiej 26/30 według projektu Tadeusza Zielińskiego.",
+      "W 1956 roku decyzją Rady Ministrów SGGW otrzymała tereny na Ursynowie.",
+      "Ostatecznie na całkowite przeniesienie kampusu do Ursynowa zdecydowano się w 2001 roku.",
+      "Kampus nazwano imieniem hrabiego Edwarda Bernarda Raczyńskiego, który w 1921 roku podarował teren wraz z ursynowskim pałacem państwu polskiemu na cele edukacyjne."
+    ],
+    "ciekawostki": [
+      "Rektorat uczelni mieści się w zabytkowym pałacu, który według artykułu należał do Juliana Ursyna Niemcewicza i nazywany jest „pałacykiem Rektorskim”.",
+      "Od 1983 roku uczelnia organizuje cykl imprez juwenaliowych pod nazwą Ursynalia."
+    ],
+    "summary_en": "The SGGW campus in Ursynów is home to the Warsaw University of Life Sciences, founded in 1816 as the Agronomic Institute at Marymont. It moved fully to Ursynów after the 1956 land grant and the 2001 decision.",
+    "ludzie": [
+      {
+        "kto": "Jerzy Beniamin Flatt",
+        "rola": "pierwszy dyrektor Instytutu Agronomicznego (1816)",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Zieliński",
+        "rola": "projektant budynków uczelni przy ul. Rakowieckiej (ok. 1925)",
+        "wiki": null
+      },
+      {
+        "kto": "Przemysław Wolski",
+        "rola": "dr inż., zagospodarował teren kampusu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Instytut Agronomiczny",
+      "Szkoła Główna Gospodarstwa Wiejskiego"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Szkoła Główna Gospodarstwa Wiejskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Szko%C5%82a_G%C5%82%C3%B3wna_Gospodarstwa_Wiejskiego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Instytucja z budynkami; rekord dotyczy kampusu (lokalizacja z nagłówka). Brak wyraźnej daty przeniesienia całości w jednym zdaniu."
+  }
+]

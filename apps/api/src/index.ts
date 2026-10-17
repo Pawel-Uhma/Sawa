@@ -5,6 +5,7 @@ import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
 import { createOsrmWalkPathSource } from "./adapters/osrm/walk-paths";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
+import { createCachedPlacesRepository } from "./adapters/supabase/cached-places-repository";
 import {
   createSupabaseClient,
   createSupabasePlacesRepository,
@@ -38,13 +39,16 @@ if (transit.serviceDate !== warsawDate(new Date())) {
   );
 }
 
+// Cached: during the demo many phones ask for the same area and the same places at once.
 const placesRepository =
   env.SUPABASE_URL && env.SUPABASE_SERVICE_ROLE_KEY
-    ? createSupabasePlacesRepository(
-        createSupabaseClient({
-          url: env.SUPABASE_URL,
-          serviceRoleKey: env.SUPABASE_SERVICE_ROLE_KEY,
-        }),
+    ? createCachedPlacesRepository(
+        createSupabasePlacesRepository(
+          createSupabaseClient({
+            url: env.SUPABASE_URL,
+            serviceRoleKey: env.SUPABASE_SERVICE_ROLE_KEY,
+          }),
+        ),
       )
     : undefined;
 if (!placesRepository)

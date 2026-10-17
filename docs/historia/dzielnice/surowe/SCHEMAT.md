@@ -58,3 +58,15 @@ Paczki `sNN.txt`, wyniki do `surowe/sz/sNN-K.json`. Ten sam schemat, bez współ
 - `adres_dzis`: dzisiejszy adres „Ulica numer”, jeśli tekst go podaje; `adres_historyczny`: adres przedwojenny (np. „Gęsia 9”). Jeśli jest tylko przedwojenny, wpisz go w oba pola i zaznacz w `uwagi`.
 - Pomijasz obiekty spoza Warszawy i spoza dzielnic Wola, Śródmieście (z Muranowem i Powiślem), Żoliborz, Bielany, Bemowo.
 - `zrodla`: `{"tytul": "Wirtualny Sztetl: <tytuł>", "url": <URL>}`. Wpis jednozdaniowy z księgi adresowej też jest faktem, jeśli ma rok i adres.
+
+## Runda 8: pozostałe 13 dzielnic (Wikipedia)
+
+Mokotów, Ochota, Praga-Południe, Praga-Północ, Targówek, Białołęka, Ursynów, Wilanów, Wawer, Wesoła, Rembertów, Ursus, Włochy. Paczki `cNN.txt` (artykuły wybrane przez Wikidatę i granice dzielnic), wyniki do `surowe/r8/cNN-K.json`. Schemat i zasady jak w rundzie 4; `dzielnica` bierzesz z nagłówka `DZIELNICE`.
+
+## Runda 9: Warszawikia dla 13 dzielnic
+
+Paczki `vNN.txt`, wyniki do `surowe/r8wk/vNN-K.json`. Zasady jak w rundzie 5 (bez współrzędnych: `lat`/`lon` = null i dzisiejszy adres „Ulica numer” w `adres_dzis`; ulica bez numeru też wystarczy dla rekordu typu `ulica`). `dzielnica` z nagłówka `DZIELNICE`.
+
+## Runda 10: Wirtualny Sztetl, druga partia
+
+Paczki `tNN.txt`, wyniki do `surowe/r8sz/tNN-K.json`. Zasady jak w rundzie 7, ale pomijasz obiekty w Śródmieściu (z Muranowem i Powiślem); bierzesz Wolę, Żoliborz, Bielany, Bemowo i 13 pozostałych dzielnic (Praga, Mokotów, Rembertów itd.). Wpisz `dzielnica`, jeśli tekst ją wskazuje albo wynika z adresu.

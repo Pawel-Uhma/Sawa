@@ -1,0 +1,40 @@
+[
+  {
+    "id": "warszawska-wytwornia-wodek-koneser",
+    "nazwa": "Warszawska Wytwórnia Wódek „Koneser”",
+    "name_en": "Warsaw Vodka Distillery \"Koneser\"",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Ząbkowska 27/31",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1895–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nowe zabudowania Warszawskiej Wytwórni Wódek „Koneser” powstały w latach 1895-1897.",
+      "W 1919 roku zwierzchnictwo nad całym kompleksem przejął Państwowy Monopol Spirytusowy.",
+      "Formalnie, dopiero w 1936 roku wykupiono z prywatnych rąk Rektyfikację Warszawską, czyniąc zakład w całości znacjonalizowanym.",
+      "W dwudziestoleciu międzywojennym w fabryce zatrudnionych było ponad 400 osób, a jej możliwości produkcyjne osiągnęły ćwierć miliona butelek trunku na dobę.",
+      "Proces produkcyjny trwał nieprzerwanie od lat 50. XX wieku aż do początku XXI wieku, kiedy to pogarszająca się sytuacja przedsiębiorstwa doprowadziła do likwidacji fabryki w 2007 roku.",
+      "Wraz z przejęciem terenu fabryki przez BBI Development w 2006 roku zmienił się całkowicie pomysł zagospodarowania przestrzennego dawnego zakładu.",
+      "Budowa pierwszych obiektów – budynków „Mennica” i „Wytwórnia” – rozpoczęła się w 2013 roku."
+    ],
+    "ciekawostki": [
+      "W procesie produkcyjnym wykorzystywano wodę oligoceńską z jednego z pierwszych w Warszawie ujęć, położonego na terenie fabryki."
+    ],
+    "summary_en": "The former Warsaw vodka distillery \"Koneser\" at Ząbkowska 27/31, a late 19th-century neo-Gothic brick complex built in 1895-1897. Nationalised in the interwar period and closed in 2007, it was redeveloped from 2006 into the Koneser residential, office and retail centre.",
+    "ludzie": [
+      {"kto": "Emil Bruhl", "rola": "sprzedał teren pod zabudowę nowej fabryki", "wiki": null},
+      {"kto": "L. Iwanowski", "rola": "wg artykułu, autor projektu architektonicznego (przypisywany)", "wiki": null},
+      {"kto": "K. Loewe", "rola": "wg artykułu, autor projektu architektonicznego (przypisywany)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Monopol"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Warszawska Wytwórnia Wódek \"Koneser\"", "url": "https://warszawa.fandom.com/pl/wiki/Warszawska_Wytwórnia_Wódek_\"Koneser\""}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje adres ul. Ząbkowska 27/31; w treści projekt architektoniczny przypisywany L. Iwanowskiemu i K. Loewemu."
+  }
+]

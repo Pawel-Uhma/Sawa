@@ -1,0 +1,139 @@
+[
+  {
+    "id": "nimbus-office-jerozolimskie-98",
+    "nazwa": "Nimbus Office",
+    "name_en": "Nimbus Office",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Al. Jerozolimskie 98",
+    "adres_historyczny": null,
+    "lat": 52.22227,
+    "lon": 20.97767,
+    "lokalizacja": "dokladna",
+    "okres": "2013–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa wieżowca Nimbus Office była III etapem inwestycji Equator Office; wcześniej wybudowano Equator I (Equator Office Building) i Equator II (Zenith).",
+      "3 października 2008 wydano decyzję o pozwoleniu na budowę, a budowa rozpoczęła się pod koniec 2012 roku.",
+      "16 maja 2013 odbyła się uroczystość wmurowania kamienia węgielnego.",
+      "Koszt budowy wyniósł około 27 mln euro.",
+      "Budynek ma 65 metrów wysokości i w większości przeznaczony jest na biura."
+    ],
+    "ciekawostki": [
+      "W 3 podziemnych kondygnacjach znajdują się miejsca parkingowe dla samochodów."
+    ],
+    "summary_en": "A 65-metre office tower at Aleje Jerozolimskie 98, the third stage of the Equator Office complex. Construction started at the end of 2012 after a 2008 building permit, and the cost was about 27 million euro.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nimbus Office", "url": "https://pl.wikipedia.org/wiki/Nimbus_Office"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "obelisk-lindleya",
+    "nazwa": "Obelisk przy ulicy Lindleya",
+    "name_en": "Obelisk on Lindleya Street",
+    "typ": "pomnik",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Lindleya (zbieg z ul. Nowogrodzką)",
+    "adres_historyczny": "ul. Żelazna (Lindleya 4 przed zmianą nazwy)",
+    "lat": 52.22514,
+    "lon": 20.99686,
+    "lokalizacja": "dokladna",
+    "okres": "1799–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obelisk wystawiono w 1799 roku; pierwotnie upamiętniał 30 000 pacjentów Szpitala Dzieciątka Jezus pochowanych na przyszpitalnym cmentarzu.",
+      "Szpital wtedy miał siedzibę przy placu Wareckim (obecny plac Powstańców Warszawy).",
+      "Po przeniesieniu szpitala w 1901 roku pod adres Lindleya 4 (wtedy ulicy Żelaznej) obelisk został ustawiony na obecnym miejscu.",
+      "Na cokole zachował się pierwotny napis z 1799 roku: „BOŻE BĄDZ MIŁOSCIW ZMARŁYM W SZPITALU OD R. 1757. ATU DO 30.000. POGRZEBIONYM AD. 1799”.",
+      "W 1965 roku obelisk został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na tylnej ścianie cokołu wyrysowano plan dawnego cmentarza z długościami boków podanymi w łokciach: 53, 75, 83 i 69."
+    ],
+    "summary_en": "A sandstone obelisk from 1799 at the junction of Lindleya and Nowogrodzka streets, originally marking the burial ground of about 30,000 patients of the Child Jesus Hospital. It was moved to its present site in 1901 and listed as a monument in 1965.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Żelazna (przy Lindleya 4)", "plac Warecki (obecny plac Powstańców Warszawy) – dawna siedziba szpitala i cmentarza"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Obelisk przy ulicy Lindleya", "url": "https://pl.wikipedia.org/wiki/Obelisk_przy_ulicy_Lindleya"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje 1799 jako rok wystawienia; dawna lokalizacja (plac Wareckiego) to miejsce pierwotnego cmentarza, nie obelisku."
+  },
+  {
+    "id": "obrona-ochoty-i-woli-1939",
+    "nazwa": "Obrona Ochoty i Woli (8–9 września 1939)",
+    "name_en": "Defence of Ochota and Wola (8–9 September 1939)",
+    "typ": "zdarzenie",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.21026,
+    "lon": 20.9758,
+    "lokalizacja": "przyblizona",
+    "okres": "8–9 września 1939",
+    "istnieje": false,
+    "fakty": [
+      "Obrona Ochoty i Woli to działania zbrojne prowadzone przez Wojsko Polskie 8–9 września 1939 roku na terenie warszawskich dzielnic Ochota i Wola.",
+      "Ich rezultatem było odparcie szturmu niemieckiej 4 Dywizji Pancernej (4 DPanc.).",
+      "Niemieckie czołgi, które nadjechały szosą krakowską, zostały odparte ogniem polskiej artylerii i piechoty już 8 września.",
+      "Punkt ciężkości niemieckiego regularnego szturmu 9 września znajdował się na Ochocie.",
+      "Stanowisko dowodzenia odcinka „Zachód” mieściło się w budynku koszar Policji Konnej przy ul. Ciepłej 13."
+    ],
+    "ciekawostki": [
+      "Według tekstu była to największa polska odniesiona w obronie Warszawy we wrześniu 1939 roku; w połączeniu z kontruderzeniem nad Bzurą zmusiła Niemców do chwilowego zaprzestania bezpośredniego szturmu."
+    ],
+    "summary_en": "A defensive battle on 8–9 September 1939 in Ochota and Wola, during which Polish forces repelled an assault by the German 4th Panzer Division. The victory, together with the counterattack on the Bzura, forced the Germans to halt their direct assault on Warsaw for a time.",
+    "ludzie": [
+      {"kto": "Georg-Hans Reinhardt", "rola": "niemiecki generał, który 8 września podjął próbę zdobycia miasta z marszu", "wiki": null},
+      {"kto": "Walerian Czuma", "rola": "generał, komendant garnizonu warszawskiego, organizował obronę miasta", "wiki": null},
+      {"kto": "Józef Kalandyk", "rola": "podpułkownik, dowódca odcinka „Zachód”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Obrona Ochoty i Woli (8–9 września 1939)", "url": "https://pl.wikipedia.org/wiki/Obrona_Ochoty_i_Woli_%288%E2%80%939_wrze%C5%9Bnia_1939%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie, nie obiekt. Współrzędne z nagłówka dotyczą miejsca bitwy (przybliżone)."
+  },
+  {
+    "id": "och-teatr-grojecka-65",
+    "nazwa": "Och-Teatr",
+    "name_en": "Och-Teatr",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Grójecka 65",
+    "adres_historyczny": null,
+    "lat": 52.214236,
+    "lon": 20.980136,
+    "lokalizacja": "dokladna",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr mieści się w budynku dawnego kina „Ochota” z 1949 roku, zaprojektowanym przez Mieczysława Piprka; ma 447 miejsc na widowni.",
+      "Teatr został założony przez Fundację Krystyny Jandy na rzecz Kultury.",
+      "Otwarcie teatru nastąpiło 16 stycznia 2010 roku premierą Wassy Żeleznowej Maksyma Gorkiego.",
+      "21 września 2013 roku premierą spektaklu Pierwsza Dama w reż. Grzegorza Warchoła zainaugurowano nową scenę Och-Cafe Teatr, mieszczącą się w kawiarni i holach teatru.",
+      "Co roku, latem, Och-Teatr zaprasza na darmowe spektakle plenerowe w swojej siedzibie przy ul. Grójeckiej 65."
+    ],
+    "ciekawostki": [
+      "Odbyły się tu koncerty m.in. Marii Peszek, Ani Dąbrowskiej czy Kultu."
+    ],
+    "summary_en": "A private drama theatre at Grójecka 65, set up in the former Ochota cinema building of 1949. It opened on 16 January 2010 with a production of Gorky's Vassa Zheleznova and runs an added second stage since 2013.",
+    "ludzie": [
+      {"kto": "Mieczysław Piprek", "rola": "architekt budynku dawnego kina „Ochota”", "wiki": null},
+      {"kto": "Krystyna Janda", "rola": "prezes Fundacji, założycielka teatru", "wiki": null},
+      {"kto": "Grzegorz Warchoł", "rola": "reżyser spektaklu „Pierwsza Dama” (2013)", "wiki": null},
+      {"kto": "Alicja Przerazińska", "rola": "dyrektor Och-Teatru", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kino „Ochota”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Och-Teatr", "url": "https://pl.wikipedia.org/wiki/Och-Teatr"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

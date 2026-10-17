@@ -311,7 +311,10 @@ describe("route planner on real data", () => {
     expect(asked).toHaveLength(walks.length);
     for (const leg of walks) expect(leg.lngLats).toHaveLength(3);
     expect(route.legs.map((l) => l.durationMin)).toEqual(straight.legs.map((l) => l.durationMin));
-    expect(route.places).toEqual(straight.places);
+    // Places on rides stay; on walks they are the ones by the drawn path.
+    const onRides = (r: typeof route) =>
+      r.places.filter((p) => r.legs[p.legIndex]?.mode !== "walk");
+    expect(onRides(route).map((p) => p.placeId)).toEqual(onRides(straight).map((p) => p.placeId));
   });
 
   it("keeps straight walking legs when the walk router has no path", async () => {

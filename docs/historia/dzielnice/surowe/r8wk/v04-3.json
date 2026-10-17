@@ -1,0 +1,67 @@
+[
+  {
+    "id": "zajezdnia-tramwajowa-rakowiec",
+    "nazwa": "Zajezdnia tramwajowa Rakowiec",
+    "name_en": "Rakowiec tram depot",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Opaczewska 35",
+    "adres_historyczny": "Opaczewska 35",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–lata 50. XX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Remiza tramwajowa „Rakowiec” powstała w latach 1928-1930 według projektu Juliusza Dzierżanowskiego.",
+      "Budowa głównej hali zakończyła się 15 maja 1930 roku, a obiekt oficjalnie oddano do użytku 21 czerwca 1930 roku w obecności prezydenta Zygmunta Słomińskiego.",
+      "W zajezdni znalazło się miejsce dla 118 wagonów, w tym dla części z dostarczonych w 1930 roku wagonów model F i model P14.",
+      "Zabudowania zajezdni zostały wysadzone w powietrze po upadku powstania warszawskiego, a hala została uznana za niezdatną do odbudowy.",
+      "Pierwszy pojazd na lewym brzegu Wisły wyruszył z tej zajezdni 15 września 1945 roku i kursował na linii 7.",
+      "18 maja 1948 roku uznano, że zajezdnia nie będzie odbudowywana."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Rakowiec tram depot, built in 1928-1930 to a design by Juliusz Dzierżanowski, stood at Opaczewska 35 in western Rakowiec. It was blown up after the Warsaw Uprising, briefly reused in 1945, and not rebuilt after May 1948.",
+    "ludzie": [
+      {"kto": "Juliusz Dzierżanowski", "rola": "projektant remizy", "wiki": null},
+      {"kto": "Zygmunt Słomiński", "rola": "prezydent obecny przy otwarciu zajezdni (1930)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Zajezdnia tramwajowa Rakowiec", "url": "https://warszawa.fandom.com/pl/wiki/Zajezdnia_tramwajowa_Rakowiec"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nieistniejący. Adres tylko przedwojenny (Opaczewska 35); w tekście dzisiejszy rejon ul. Trzech Budrysów. Współrzędne nieznane."
+  },
+  {
+    "id": "aleja-stanow-zjednoczonych",
+    "nazwa": "Aleja Stanów Zjednoczonych",
+    "name_en": "Stanów Zjednoczonych Avenue",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Aleja Stanów Zjednoczonych",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1935 rok–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja pojawiła się po raz pierwszy na mapach w latach 30. XX wieku (mapa z 1935 roku), lecz wówczas łączyła tylko Wał Miedzeszyński z Paryską.",
+      "W czasie wojny nazwę ulicy zmieniono na Europejską.",
+      "W 1969 roku na aleję wyruszyły pierwsze autobusy przyspieszonej linii K.",
+      "Aleję w obecnym kształcie otwarto dla ruchu 22 lipca 1974 roku."
+    ],
+    "ciekawostki": [
+      "Aleja jest fragmentem Trasy Łazienkowskiej i biegnie od mostu Łazienkowskiego do ronda Wiatraczna."
+    ],
+    "summary_en": "Aleja Stanów Zjednoczonych is a 3,150 m road in Praga-Południe, part of the Łazienkowska route, running from the Łazienkowski Bridge to Wiatraczna roundabout. It first appeared on maps in 1935 and was opened in its present form on 22 July 1974.",
+    "ludzie": [],
+    "dawne_nazwy": ["Europejska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Aleja Stanów Zjednoczonych", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Stanów_Zjednoczonych"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Aleja bez numeru w adresie; współrzędne nieznane."
+  }
+]

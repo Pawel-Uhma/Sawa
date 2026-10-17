@@ -1,0 +1,462 @@
+[
+  {
+    "id": "ulica-elsterska",
+    "nazwa": "Ulica Elsterska w Warszawie",
+    "name_en": "Elsterska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Elsterska (od ul. Dąbrówki do ul. Galijskiej)",
+    "adres_historyczny": null,
+    "lat": 52.23744,
+    "lon": 21.053873,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stała zabudowa ulicy Elsterskiej rozpoczęła się na przełomie lat 20. i 30. XX wieku.",
+      "W latach 1937–1938 przy Elsterskiej pojawiły się kwietniki.",
+      "Według planu strefowego regulacji Warszawy z 1922 Elsterska miała być jedną z pięciu ulic odchodzących promieniście od Ronda Waszyngtona."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy nawiązuje do rzeki Elstery, na której zginął książę Józef Poniatowski podczas bitwy pod Lipskiem."
+    ],
+    "summary_en": "A street of interwar villas on Saska Kępa, named after the Elster river. Several of its houses are listed monuments.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Elsterska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Elsterska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "willa-elsterska-1",
+    "nazwa": "Willa Różyckiego (ul. Elsterska 1)",
+    "name_en": "Różycki Villa (Elsterska 1)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Elsterska 1",
+    "adres_historyczny": null,
+    "lat": 52.23744,
+    "lon": 21.053873,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa Różyckiego z 1935 roku została zaprojektowana przez Teodora Bursche.",
+      "Jest przykładem zastosowania stylu art déco; charakterystyczny jest półokrągły wykusz na schodkowych wspornikach, zwieńczony mostkiem kapitańskim.",
+      "13 czerwca 1979 budynek został wpisany do rejestru zabytków pod numerem 949 A."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1935 art deco villa designed by Teodor Bursche on Elsterska Street, with a semicircular bay window and a garden terrace. Listed as a monument in 1979.",
+    "ludzie": [
+      {"kto": "Teodor Bursche", "rola": "architekt willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Elsterska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Elsterska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy (środek odcinka), nie budynku."
+  },
+  {
+    "id": "willa-elsterska-3",
+    "nazwa": "Willa Fitelberga i Szmolcówny (ul. Elsterska 3)",
+    "name_en": "Fitelberg and Szmolcówna Villa (Elsterska 3)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Elsterska 3",
+    "adres_historyczny": null,
+    "lat": 52.23744,
+    "lon": 21.053873,
+    "lokalizacja": "przyblizona",
+    "okres": "1929–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa Fitelberga i Szmolcówny z lat 1929–1930 jest jednym z najstarszych domów przy tej ulicy.",
+      "Na elewacji są rzeźbione putta dźwigające kartusz z inicjałami Grzegorza Fitelberga i Haliny Szmolcówny.",
+      "W domu mieściła się m.in. sala ćwiczeń, w której Halina Szmolcówna ćwiczyła i udzielała lekcji tańca.",
+      "Na budynku znajdowała się tablica upamiętniająca obecność Zarządu Głównego Stronnictwa Demokratycznego, który w okresie 1944–1945 miał tam swą siedzibę.",
+      "Elewacja została odrestaurowana w 2006 roku."
+    ],
+    "ciekawostki": [
+      "Obecna tablica upamiętniająca zasłużonego mieszkańca domu została umieszczona w 1996 roku."
+    ],
+    "summary_en": "A 1929-1930 villa on Elsterska Street built for Grzegorz Fitelberg and dancer Halina Szmolcówna. The facade was restored in 2006.",
+    "ludzie": [
+      {"kto": "Grzegorz Fitelberg", "rola": "współwłaściciel willi", "wiki": null},
+      {"kto": "Halina Szmolcówna", "rola": "współwłaścicielka willi, tancerka, udzielała lekcji tańca", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Elsterska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Elsterska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy (środek odcinka), nie budynku."
+  },
+  {
+    "id": "ulica-estonska",
+    "nazwa": "Ulica Estońska w Warszawie",
+    "name_en": "Estońska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Estońska (od ul. Berezyńskiej do ul. Jakubowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.2368,
+    "lon": 21.0487,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Najstarsze zachowane przy ulicy domy pochodzą z lat 30. XX wieku.",
+      "Dom własny Jadwigi Dobrzyńskiej i Zygmunta Łobody z 1932 roku pierwotnie stanowił przykład skrajnego funkcjonalizmu.",
+      "W grudniu 2013 dwie organizacje pozarządowe zgłosiły wniosek o wpisanie tego domu do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A one-way street on Saska Kępa named in 1926, lined with interwar modernist houses. The Dobrzyński and Łoboda house of 1932 was an early example of radical functionalism.",
+    "ludzie": [
+      {"kto": "Jadwiga Dobrzyńska, Zygmunt Łoboda", "rola": "architekci, właściciele domu z 1932 r.", "wiki": null},
+      {"kto": "Helena i Szymon Syrkusowie", "rola": "architekci domu z 2. poł. lat 30. i budynku nr 8", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Estońska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Esto%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "budynek-estonska-8",
+    "nazwa": "Budynek Anieli Landau (ul. Estońska 8)",
+    "name_en": "Aniela Landau House (Estońska 8)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Estońska 8",
+    "adres_historyczny": null,
+    "lat": 52.2368,
+    "lon": 21.0487,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–1939 (budowa), dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek Anieli Landau z 1938–1939 został zaprojektowany przez Helenę i Szymona Syrkusów.",
+      "Budynek ma cechy typowe dla architektury modernistycznej końca lat 30. XX wieku, np. wyraźny kontrast między gładkimi tynkami a nieregularnym kamieniem.",
+      "Uwagę zwracają pasmowe okna oraz cofnięty parter."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A modernist house on Estońska Street built in 1938-1939 for Aniela Landau, designed by Helena and Szymon Syrkus.",
+    "ludzie": [
+      {"kto": "Aniela Landau", "rola": "inwestorka budynku", "wiki": null},
+      {"kto": "Helena i Szymon Syrkusowie", "rola": "architekci", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Estońska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Esto%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy (środek odcinka), nie budynku."
+  },
+  {
+    "id": "ulica-francuska",
+    "nazwa": "Ulica Francuska w Warszawie",
+    "name_en": "Francuska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Francuska (od placu Przymierza do ronda Waszyngtona)",
+    "adres_historyczny": null,
+    "lat": 52.234778,
+    "lon": 21.053806,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Zabudowa ulicy rozpoczęła się w latach 30. XX wieku, czemu sprzyjało zawarte 14 października 1931 porozumienie lokalnych właścicieli gruntów z władzami miasta.",
+      "Od 1935 ulicą jeździł autobus linii S, kończący swą trasę na rondzie Waszyngtona.",
+      "Asfalt na ulicy położono w roku 1937, a Francuska stała się trzecią wyasfaltowaną ulicą Saskiej Kępy.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku na rogu ul. Francuskiej i Zwycięzców znajdowała się kluczowa barykada.",
+      "W 1942 w jednym z mieszkań przy ulicy Francuskiej Anna Jachnina napisała słowa piosenki „Siekiera, motyka”.",
+      "W 2011 odsłonięto tablice upamiętniające barykadę z okresu walk we wrześniu 1939."
+    ],
+    "ciekawostki": [
+      "Od 2006 ulica jest głównym miejscem organizacji imprez święta Saskiej Kępy, a od 2012 także Święta Francji."
+    ],
+    "summary_en": "A tree-lined avenue on Saska Kępa that runs from Plac Przymierza to the Washington Roundabout. It held a barricade in September 1939 and has hosted Saska Kępa festivals since 2006.",
+    "ludzie": [
+      {"kto": "Anna Jachnina", "rola": "autorka słów piosenki „Siekiera, motyka” napisanej w 1942 r. na tej ulicy", "wiki": null},
+      {"kto": "Bronisław Kopczyński", "rola": "autor wspomnień o Saskiej Kępie (cytowany w artykule)", "wiki": null},
+      {"kto": "Marek Leykam", "rola": "krytykował wygląd ulicy (cytowany w artykule)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Francuska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Francuska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "willa-francuska-4",
+    "nazwa": "Willa Kossakowskich (ul. Francuska 4)",
+    "name_en": "Kossakowski Villa (Francuska 4)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Francuska 4",
+    "adres_historyczny": null,
+    "lat": 52.234778,
+    "lon": 21.053806,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa Kossakowskich z 1930 roku została zaprojektowana przez Dionizego Cieślaka.",
+      "Willa została wykorzystana w filmie Czarna perła z Eugeniuszem Bodo i Leną Żelichowską.",
+      "We wrześniu 1939 oraz w styczniu 1945 dom był znany jako jedno z nielicznych miejsc w okolicy, gdzie znajdowało się źródło wody zdatnej do picia, dzięki pompie zainstalowanej w 1931 roku.",
+      "Wcześniej na terenie posesji znajdował się zniszczony w czasie działań wojennych Królewski Dąb (Dąb Saski), którego następcę posadzono w 2012 roku przy ul. Nobla."
+    ],
+    "ciekawostki": [
+      "W domu mieszkał m.in. Kazimierz Kossakowski."
+    ],
+    "summary_en": "A 1930 villa on Francuska Street by Dionizy Cieślak, with an openwork balcony balustrade. It appeared in the film Czarna perła and had a well pump used during the wars.",
+    "ludzie": [
+      {"kto": "Dionizy Cieślak", "rola": "architekt willi", "wiki": null},
+      {"kto": "Kazimierz Kossakowski", "rola": "mieszkaniec", "wiki": null},
+      {"kto": "Eugeniusz Bodo, Lena Żelichowska", "rola": "aktorzy filmu Czarna perła, w którym wykorzystano willę", "wiki": null}
+    ],
+    "dawne_nazwy": ["Królewski Dąb (Dąb Saski)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Francuska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Francuska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy (środek odcinka), nie budynku."
+  },
+  {
+    "id": "willa-francuska-2",
+    "nazwa": "Willa Łepkowskich (ul. Francuska 2)",
+    "name_en": "Łepkowski Villa (Francuska 2)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Francuska 2",
+    "adres_historyczny": null,
+    "lat": 52.234778,
+    "lon": 21.053806,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–1934 (budowa), dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa Łepkowskich z 1933–1934 została zaprojektowana przez Lucjana Korngolda i Piotra Marię Lubińskiego.",
+      "Najbardziej charakterystyczne elementy znajdują się po stronie ogrodu – rozległy taras, na który można wejść po krętych schodach.",
+      "Budynek od początku spotykał się z przychylnymi recenzjami i wskazywany był jako realizacja w duchu idei Le Corbusiera."
+    ],
+    "ciekawostki": [
+      "Uznawana jest za jeden z najcenniejszych zabytków funkcjonalizmu na Saskiej Kępie."
+    ],
+    "summary_en": "A 1933-1934 functionalist villa on Francuska Street, designed by Lucjan Korngold and Piotr Maria Lubiński, with a terrace on the garden side.",
+    "ludzie": [
+      {"kto": "Lucjan Korngold, Piotr Maria Lubiński", "rola": "projektanci willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Francuska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Francuska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy (środek odcinka), nie budynku."
+  },
+  {
+    "id": "ulica-goclawska",
+    "nazwa": "Ulica Gocławska w Warszawie",
+    "name_en": "Gocławska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Gocławska (od ul. Grochowskiej do ul. Mińskiej)",
+    "adres_historyczny": null,
+    "lat": 52.24825,
+    "lon": 21.063667,
+    "lokalizacja": "przyblizona",
+    "okres": "1891–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wytyczona przed rokiem 1890, ulica Gocławska otrzymała obecną nazwę w roku 1891, wraz z przyłączeniem Kamionka do Warszawy.",
+      "Od roku 1897 pod nr. 7/9/11 działała duża fabryka Berlińskiego Towarzystwa Akcyjnego produkująca gumowe obuwie.",
+      "W roku 1928 rozpoczęła działalność Warszawsko-Ryska Fabryka Wyrobów Gumowych „Rygawar”, zatrudniająca 600 osób; po nacjonalizacji firma działa jako Stomil.",
+      "Najważniejszym zakładem była działająca na Gocławskiej od roku 1921 Fabryka Aparatów Elektrycznych Kazimierza Szpotańskiego i S-ka.",
+      "W 1939 firma zatrudniająca 1500 osób otworzyła oddział w Międzylesiu.",
+      "Po roku 1990 ZWAR został sprzedany spółce ABB i funkcjonował pod nazwą ABB ZWAR; na terenie przedsiębiorstwa mieści się obecnie Uniwersytet SWPS."
+    ],
+    "ciekawostki": [
+      "W 1911 parcelę u zbiegu z ul. Grochowską zakupiły zakłady „Bracia Borkowscy S.A.”, zatrudniające przed wojną ok. 1000 osób."
+    ],
+    "summary_en": "A street in Kamionek that grew into an industrial district: rubber works, electrical apparatus factories and the Szpotański works, which later became ZWAR and ABB ZWAR.",
+    "ludzie": [
+      {"kto": "Kazimierz Szpotański", "rola": "założyciel fabryki aparatów elektrycznych; został zmuszony do opuszczenia firmy", "wiki": null}
+    ],
+    "dawne_nazwy": ["ZWAR (Zakłady Wytwórcze Aparatury Wysokiego Napięcia)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Gocławska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Goc%C5%82awska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "ulica-grenadierow",
+    "nazwa": "Ulica Grenadierów w Warszawie",
+    "name_en": "Grenadierów Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grenadierów (Grochów)",
+    "adres_historyczny": null,
+    "lat": 52.240944,
+    "lon": 21.081556,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Grenadierzy, od których pochodzi nazwa ulicy, byli wojskową formacją piesza powstałą na zachodzie Europy w pierwszej połowie XVII w.",
+      "W latach 30. XX wieku w rejonie Grochowa rozparcelowywano liczne kolonie, wsie i osady, jak Witolin, Wysypka czy Zalina.",
+      "Działalność Spółki Wodnej Obwodu Wawerskiego, powołanej z inicjatywy Towarzystwa Przyjaciół Grochowa w 1924 roku, pozwoliła osuszyć okoliczne podmokłe grunty.",
+      "W latach 1961–1965 w rejonie ulicy zbudowano osiedle Grenadierów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Grochów laid out across former villages and settlements in the 1930s. The Grenadierów housing estate was built nearby in 1961-1965.",
+    "ludzie": [],
+    "dawne_nazwy": ["Witolin", "Wysypka", "Zalina"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grenadierów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Grenadier%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "ulica-grochowska",
+    "nazwa": "Ulica Grochowska w Warszawie",
+    "name_en": "Grochowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grochowska (Praga-Południe i Praga-Północ)",
+    "adres_historyczny": null,
+    "lat": 52.244917,
+    "lon": 21.088889,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała jako droga do Brześcia, przekształcona w początkach XIX wieku w brukowany trakt; jego budowę ukończono w 1823.",
+      "Upamiętnia to żeliwny obelisk odsłonięty w rejonie ul. Siennickiej w 1825.",
+      "W latach 1899–1900 według projektu Władimira Pokorowskiego wzniesiono zabudowania Instytutu Weterynaryjnego.",
+      "4 stycznia 1901 ulicą pojechała po raz pierwszy Kolej Jabłonowska.",
+      "W 1929 według projektu Konstantego Sylwina Jakimowicza rozpoczęła się budowa kościoła Matki Boskiej Zwycięskiej.",
+      "W 1952 zamknięto kolejkę wąskotorową do Karczewa, a w 1959 usunięto z ulicy szyny kolejki."
+    ],
+    "ciekawostki": [
+      "W 1937 odwrócono numerację ulicy zgodnie z biegiem Wisły; wcześniej zaczynała się ona od ul. Lubelskiej."
+    ],
+    "summary_en": "An old road to Brześć, paved as a trakt and completed in 1823, later lined with factories, the Jabłonowska narrow-gauge railway and tenement houses.",
+    "ludzie": [
+      {"kto": "Władimir Pokorowski", "rola": "projektant zabudowań Instytutu Weterynaryjnego (1899–1900)", "wiki": null},
+      {"kto": "Konstanty Sylwin Jakimowicz", "rola": "projektant kościoła Matki Boskiej Zwycięskiej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Trakt Moskiewski (przed nazwą Grochowska)", "Trakt Brzeski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grochowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Grochowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy; nazwa „Trakt Brzeski” pochodzi z artykułu o rogatkach."
+  },
+  {
+    "id": "konkatedra-matki-bozej-zwycieskiej",
+    "nazwa": "Konkatedra Matki Bożej Zwycięskiej",
+    "name_en": "Our Lady of Victory Co-Cathedral",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grochowska (Kamionek)",
+    "adres_historyczny": null,
+    "lat": 52.244917,
+    "lon": 21.088889,
+    "lokalizacja": "przyblizona",
+    "okres": "1929–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1929 według projektu Konstantego Sylwina Jakimowicza rozpoczęła się budowa kościoła Matki Boskiej Zwycięskiej.",
+      "Kościół wzniesiony został na terenie dawnego cmentarza.",
+      "Kościół jest tylko dwa lata starszy od kolejnej grochowskiej świątyni – kościoła pw. Najczystszego Serca Maryi."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A church on Grochowska Street begun in 1929 to a design by Konstanty Sylwin Jakimowicz, built on the site of an old cemetery.",
+    "ludzie": [
+      {"kto": "Konstanty Sylwin Jakimowicz", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grochowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Grochowska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dokładny adres ulicy nie pada w paczce; współrzędne to środek odcinka Grochowskiej."
+  },
+  {
+    "id": "ulica-groszowicka",
+    "nazwa": "Ulica Groszowicka w Warszawie",
+    "name_en": "Groszowicka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Groszowicka (od ul. Terespolskiej do ul. Chodakowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.248028,
+    "lon": 21.068528,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1889–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około roku 1889 jako fragment ulicy Terespolskiej; wraz z okolicznymi terenami przyłączono ją do Warszawy w roku 1891.",
+      "Obiekt zwany „carskim pomnikiem”, wystawiony w roku 1846 według projektu Antonia Adaminiego, upamiętniał Rosjan poległych pod Olszynką Grochowską.",
+      "Armia rosyjska walcząca pod rozkazami Iwana Dybicza straciła około dziesięciu tysięcy żołnierzy.",
+      "Pomnik wykorzystano w latach 80. XIX wieku jako jeden z punktów triangulacyjnych przy sporządzaniu planu Williama Heerleina Lindleya.",
+      "Na skwerze przy skrzyżowaniu z ul. Terespolską pomnik znajdował się do roku 1915; po 1945 skwer zlikwidowano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in Kamionek on the line of the former Terespolska road, with interwar tenements. Its square once held a Russian memorial to the 1831 battle of Olszynka Grochowska.",
+    "ludzie": [
+      {"kto": "Antoni Adamini", "rola": "autor projektu pomnika ('carski pomnik')", "wiki": null},
+      {"kto": "William Heerlein Lindley", "rola": "autor planu, do którego pomnik służył jako punkt triangulacyjny", "wiki": null},
+      {"kto": "Iwan Dybicz", "rola": "dowódca armii rosyjskiej w bitwie pod Olszynką Grochowską", "wiki": null}
+    ],
+    "dawne_nazwy": ["Terespolska (fragment)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Groszowicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Groszowicka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "ulica-glucha",
+    "nazwa": "Ulica Głucha w Warszawie",
+    "name_en": "Głucha Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Głucha (od ul. Kamionkowskiej do ul. Mińskiej)",
+    "adres_historyczny": null,
+    "lat": 52.248389,
+    "lon": 21.060722,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Głucha powstała około roku 1900 jako ślepy zaułek ul. Kamionkowskiej; po roku 1945 została przedłużona aż do linii ul. Mińskiej.",
+      "Przed rokiem 1939 wybudowano przy niej tylko dwie kamienice, z których jedną, pod nr. 3, zaprojektował Wacław Heppen.",
+      "Kamienica z 1936 roku otrzymała stropy o drewnianej konstrukcji.",
+      "W 2017 historyczną nawierzchnię ulicy wpisano do gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [
+      "Strona parzysta ulicy nigdy nie otrzymała zabudowy."
+    ],
+    "summary_en": "A short street in Kamionek that began as a cul-de-sac around 1900 and kept its pre-war look. Its historic paving was added to the municipal register of monuments in 2017.",
+    "ludzie": [
+      {"kto": "Wacław Heppen", "rola": "projektant kamienicy nr 3", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Głucha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_G%C5%82ucha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  }
+]

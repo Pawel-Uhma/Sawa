@@ -1,0 +1,227 @@
+[
+  {
+    "id": "gmach-dyrekcji-naczelnej-lasow-panstwowych",
+    "nazwa": "Gmach Dyrekcji Naczelnej Lasów Państwowych",
+    "name_en": "Head Office of the State Forests Directorate building",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Wawelska 52/54",
+    "adres_historyczny": null,
+    "lat": 52.216944444,
+    "lon": 20.991388888,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt budynku stworzył Stefan Tomorowicz już w roku 1928. Ostateczną formę przyjęto w 1934, a rozbudowa trwała do 1936.",
+      "Budynek rozbudowano trzykrotnie, zużywając do tego ponad 3 miliony cegieł i 3 000 m² piaskowca.",
+      "Część środków (156 000 ówczesnych złotych) na budowę pochodziła ze zbiórki Związku Leśników Polskich, pierwotnie przeznaczonej na budowę wielofunkcyjnego Domu Leśnika.",
+      "Tablica upamiętniająca Józefa Piłsudskiego została zdemontowana w 1946 i zawieszona ponownie w 1993.",
+      "Od 2017 znajdują się tu dwie tablice upamiętniające leśników – ofiary zbrodni katyńskiej i żołnierzy wyklętych.",
+      "W latach 40. mieściło się w nim Ministerstwo Leśnictwa, używając adresu ul. Reja 3/5. Od 1999 było to Ministerstwo Środowiska."
+    ],
+    "ciekawostki": [
+      "Rozbudowa była podawana jako przykład oszczędności w porównaniu z kosztami budowy innych powstających w tym czasie gmachów administracyjnych."
+    ],
+    "summary_en": "A monumental interwar administrative building on Wawelska street, built 1928–1936 for the State Forests. It later housed ministries, including the Ministry of Forestry in the 1940s and the Ministry of Environment from 1999.",
+    "ludzie": [
+      {"kto": "Stefan Tomorowicz", "rola": "autor pierwotnego projektu (1928)", "wiki": null},
+      {"kto": "Jan Zabłocki", "rola": "uczestniczył w opracowaniu ostatecznej formy budynku (1934)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Gmach Dyrekcji Naczelnej Lasów Państwowych", "url": "https://pl.wikipedia.org/wiki/Gmach_Dyrekcji_Naczelnej_Las%C3%B3w_Pa%C5%84stwowych"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Od 2012 w gminnej ewidencji zabytków (OCH05167)."
+  },
+  {
+    "id": "gmach-kierownictwa-marynarki-wojennej",
+    "nazwa": "Gmach Kierownictwa Marynarki Wojennej",
+    "name_en": "Naval Command Building in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Żwirki i Wigury 105",
+    "adres_historyczny": null,
+    "lat": 52.215861,
+    "lon": 20.987528,
+    "lokalizacja": "dokladna",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach został wzniesiony w latach 1933–1935 według projektu Rudolfa Świerczyńskiego.",
+      "Autorem konstrukcji był Stefan Bryła.",
+      "Pierwotnie gmach mieścił Kierownictwo Marynarki Wojennej. Po 1945 był siedzibą innych instytucji wojskowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A listed modernist building on Żwirki i Wigury street, built in 1933–1935. It was first the seat of the Navy High Command and after 1945 housed other military institutions.",
+    "ludzie": [
+      {"kto": "Rudolf Świerczyński", "rola": "autor projektu (1933–1935)", "wiki": null},
+      {"kto": "Stefan Bryła", "rola": "autor konstrukcji budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Gmach Kierownictwa Marynarki Wojennej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gmach_Kierownictwa_Marynarki_Wojennej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-wojskowego-instytutu-geograficznego",
+    "nazwa": "Gmach Wojskowego Instytutu Geograficznego",
+    "name_en": "Military Geographic Institute building",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Aleje Jerozolimskie 97",
+    "adres_historyczny": null,
+    "lat": 52.226278,
+    "lon": 20.998361,
+    "lokalizacja": "dokladna",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach został wzniesiony w latach 1933−1934 według projektu Antoniego Dygata z przeznaczeniem na siedzibę Wojskowego Instytutu Geograficznego.",
+      "W holu umieszczono fresk Bolesława Cybisa i Jana Zamoyskiego „Bolesław Chrobry wytyczający granice Polski na Odrze”, ukończony w 1937 roku.",
+      "Sgraffito „Mapa Polski” wykonane w 1938 roku przez Edwarda Manteuffela.",
+      "W 2000 roku na frontowej ścianie budynku odsłonięto tablicę upamiętniającą oficerów, podoficerów i pracowników Wojskowego Instytutu Geograficznego, którzy zginęli w czasie II wojny światowej.",
+      "W 2007 roku gmach został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Czteropiętrowy budynek ma sześciokondygnacyjną narożną wieżę zegarową."
+    ],
+    "summary_en": "A listed interwar building on Aleje Jerozolimskie 97, built in 1933–1934 for the Military Geographic Institute. It has a fresco and a sgraffito in the entrance hall and a memorial plaque to staff killed in the Second World War.",
+    "ludzie": [
+      {"kto": "Antoni Dygat", "rola": "autor projektu (1933–1934)", "wiki": null},
+      {"kto": "Bolesław Cybis", "rola": "autor fresku w holu", "wiki": null},
+      {"kto": "Jan Zamoyski", "rola": "współautor fresku w holu", "wiki": null},
+      {"kto": "Edward Manteuffel", "rola": "wykonał sgraffito „Mapa Polski” (1938)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Gmach Wojskowego Instytutu Geograficznego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gmach_Wojskowego_Instytutu_Geograficznego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gorka-szczesliwicka",
+    "nazwa": "Górka Szczęśliwicka",
+    "name_en": "Szczęśliwice Hill (Górka Szczęśliwicka)",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Park Szczęśliwicki",
+    "adres_historyczny": null,
+    "lat": 52.203858333,
+    "lon": 20.957466666,
+    "lokalizacja": "dokladna",
+    "okres": "1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Górka powstała w wyniku zwożenia tam po 1945 roku gruzów ze zniszczonej w czasie II wojny światowej Warszawy. Później wywożono tam również śmieci.",
+      "W latach 1967–1970 gruzowisko-śmietnisko obsypano ziemią i utworzono park Szczęśliwicki.",
+      "W czerwcu 1997 roku ośrodek został wydzierżawiony na 30 lat firmie Energopol Trade SA, która „podsypała” górkę o 14 m.",
+      "W sezonie zimowym 2005/2006 ośrodek został zamknięty w wyniku konfliktów między dzierżawcą stoku a Urzędem Miasta.",
+      "We wrześniu 2008 roku doszło do ugody, w ramach której miasto przejęło sprzęt i budynki."
+    ],
+    "ciekawostki": [
+      "Górka ma wysokość wierzchołka 152 m n.p.m. i jest najwyższym punktem wysokościowym Warszawy."
+    ],
+    "summary_en": "An artificial hill in Szczęśliwice Park in Ochota, made from rubble after the Second World War. It has been a ski slope since the 1990s, and the city took over the ski centre in 2008.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kopiec Szczęśliwicki"],
+    "zrodla": [{"tytul": "Wikipedia: Górka Szczęśliwicka", "url": "https://pl.wikipedia.org/wiki/G%C3%B3rka_Szcz%C4%99%C5%9Bliwicka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres podany jako nazwa parku; tekst nie podaje numeru."
+  },
+  {
+    "id": "glaz-marszalka-pilsudskiego-ochota",
+    "nazwa": "Głaz Marszałka Józefa Piłsudskiego na Ochocie",
+    "name_en": "Marshal Józef Piłsudski Boulder in Ochota",
+    "typ": "pomnik",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Grójecka 93",
+    "adres_historyczny": null,
+    "lat": 52.20957,
+    "lon": 20.977979,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jako głaz pamiątkowy został odsłonięty 5 czerwca 1936 roku w ramach otwarcia ogrodu jordanowskiego przy ulicy Opaczewskiej.",
+      "Na głazie umieszczono cytat z radiowego przemówienia Józefa Piłsudskiego: „Niech się śmieją polskie dzieci śmiechem odrodzenia”.",
+      "Głaz przetrwał wojnę. Po kilku latach z powodów politycznych zakopano go w pobliżu, skuwszy wcześniej inskrypcję.",
+      "Głaz udało się odnaleźć pod boiskiem liceum im. Kołłątaja i odkopać.",
+      "Głaz ponownie odsłonięto 5 czerwca 2012 roku, w rocznicę pierwotnej odsłony.",
+      "Rok później głaz uznano za pomnik przyrody."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A granite erratic boulder with a Piłsudski quotation, unveiled in 1936 at a children's playground in Ochota. It was buried for political reasons after the war, dug up, and unveiled again in 2012.",
+    "ludzie": [
+      {"kto": "Stefan Starzyński", "rola": "prezydent Warszawy, uczestnik odsłonięcia w 1936", "wiki": null},
+      {"kto": "Henryk Winczakowski", "rola": "mieszkaniec, który przypomniał władzom dzielnicy o głazie", "wiki": null},
+      {"kto": "Hanna Gronkiewicz-Waltz", "rola": "prezydent Warszawy, uczestniczka ponownego odsłonięcia w 2012", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Głaz Marszałka Józefa Piłsudskiego na Ochocie", "url": "https://pl.wikipedia.org/wiki/G%C5%82az_Marsza%C5%82ka_J%C3%B3zefa_Pi%C5%82sudskiego_na_Ochocie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu: działka nr 58 przy ul. Grójeckiej 93, a w tekście też „przy ulicy Metrykantów”. Obecne miejsce: przed wejściem do liceum im. Kołłątaja."
+  },
+  {
+    "id": "hala-kopinska",
+    "nazwa": "Hala Kopińska",
+    "name_en": "Kopińska Hall (former market hall and department store)",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. ppłk. M. Sokołowskiego „Grzymały” 2",
+    "adres_historyczny": null,
+    "lat": 52.218447,
+    "lon": 20.97695,
+    "lokalizacja": "dokladna",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony w latach 1952−1956 (według innego źródła 1952−1953) na podstawie projektu Zbigniewa Wacławka.",
+      "Obiekt pierwotnie nosił nazwę hala targowa Ochota.",
+      "Od 1958 roku działał tu samodzielny wielobranżowy dom towarowy PDT Warszawa-Ochota przy ul. Kopińskiej 18.",
+      "Był to pierwszy w Warszawie duży obiekt handlowy, w którym rozdzielono drogi dla kupujących od tras dostaw towarów.",
+      "Budynek został ujęty w 2003 roku na liście dóbr kultury współczesnej Warszawy z lat 1945–1989.",
+      "Od 2012 roku budynek znajduje się w gminnej ewidencji zabytków (numer OCH05261)."
+    ],
+    "ciekawostki": [
+      "Hala ma długość 60 i szerokość 36 metrów, a zadaszenie przeszklonymi ćwierćwalcami sprawia, że przypomina hangar lotniczy lub halę fabryczną."
+    ],
+    "summary_en": "A 1950s market hall in Ochota that later became the PDT Warszawa-Ochota department store. It has been on the city's heritage register since 2012.",
+    "ludzie": [{"kto": "Zbigniew Wacławek", "rola": "projektant budynku", "wiki": null}],
+    "dawne_nazwy": ["hala targowa Ochota", "PDT Warszawa-Ochota"],
+    "zrodla": [{"tytul": "Wikipedia: Hala Kopińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hala_Kopi%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "iii-ogrod-jordanowski",
+    "nazwa": "III Ogród Jordanowski",
+    "name_en": "Third Jordan Garden in Warsaw (Jordanek nr 3)",
+    "typ": "park",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Wawelska 3",
+    "adres_historyczny": null,
+    "lat": 52.21595,
+    "lon": 20.99569,
+    "lokalizacja": "dokladna",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "III Ogród Jordanowski otwarto 25 listopada 1933 roku.",
+      "Trzy lata po otwarciu Skarb Państwa wypowiedział dzierżawę działki, mimo że umowę podpisano na 10 lat (do 1943 roku).",
+      "Teren przeznaczono na parcelację i sprzedaż, w celu zasilenia Funduszu Obrony Narodowej.",
+      "Od 1 września 1945 roku uruchomiono regularne zajęcia pozaszkolne oraz stołówkę.",
+      "Nazwa pochodzi od nazwiska lekarza Henryka Jordana, pomysłodawcy i założyciela pierwszego ogrodu tego typu w Krakowie."
+    ],
+    "ciekawostki": [
+      "Według tradycji ogród założono w 1928 roku na terenie przekazanym przez fundację przemysłowca Wilhelma Ellisa Raua, co nie znajduje potwierdzenia w dokumentach."
+    ],
+    "summary_en": "A children's garden on Pole Mokotowskie at ul. Wawelska 3, opened in November 1933. The city lease was ended after three years, and the site was later used for parcelling.",
+    "ludzie": [
+      {"kto": "Henryk Jordan", "rola": "lekarz, pomysłodawca ogrodów jordanowskich", "wiki": null},
+      {"kto": "Wilhelm Ellis Raue", "rola": "przemysłowiec, fundator warszawskich ogrodów dla dzieci (wg tradycji)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Jordanek nr 3"],
+    "zrodla": [{"tytul": "Wikipedia: III Ogród Jordanowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/III_Ogr%C3%B3d_Jordanowski_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł w paczce jest ucięty w połowie (po 1945). Dane do 1945 roku, dalsze dzieje pominięto."
+  }
+]

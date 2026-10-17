@@ -1,0 +1,288 @@
+[
+  {
+    "id": "supersam-w-warszawie",
+    "nazwa": "Supersam",
+    "name_en": "Supersam (Warsaw)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Puławska 2",
+    "lat": 52.2128,
+    "lon": 21.02,
+    "lokalizacja": "dokladna",
+    "okres": "1962–2006",
+    "istnieje": false,
+    "fakty": [
+      "Warszawski Supersam został otwarty 6 czerwca 1962.",
+      "W jednoprzestrzennym pawilonie o powierzchni użytkowej 6 tys. m² umieszczono największy w Warszawie samoobsługowy sklep spożywczy.",
+      "Dach budynku, na zasadzie tensegrity, zaprojektowali Jerzy Hryniewicki, Maciej Krasiński i Ewa Krasińska, a konstrukcję Wacław Zalewski, Stanisław Kuś i Andrzej Żórawski.",
+      "7 sierpnia 1971, podczas rekordowych upałów, Supersam odwiedził premier Piotr Jaroszewicz.",
+      "9 kwietnia 2006 Supersam został zamknięty z powodu ekspertyzy Powiatowego Inspektoratu Nadzoru Budowlanego, z której wynikało, że konstrukcja dachu budynku jest skorodowana.",
+      "Budynek został rozebrany w grudniu 2006.",
+      "W 2008 Supersam otwarto ponownie w innej lokalizacji, w parterowej hali przy ul. Puławskiej 131 (róg ul. Domaniewskiej).",
+      "W latach 2010–2013 wzniesiono w miejscu dawnego pawilonu kompleks biurowo-handlowy Plac Unii."
+    ],
+    "ciekawostki": [
+      "Od tego obiektu pochodzi nazwa podobnych placówek handlowych, charakterystycznych szczególnie dla drugiej połowy okresu PRL.",
+      "Wewnątrz sklepu w Plac Unii pozostawiono zdjęcia historyczne dawnego Supersamu, które znajdują się na ścianach ponad regałami."
+    ],
+    "summary_en": "Supersam was a 1962 self-service food pavilion at ul. Puławska 2, one of the best achievements of Polish modernism and the first supersam in Poland. It was closed in 2006 over a corroded roof and demolished that December; the Plac Unii office and retail complex was built on its site in 2010–2013.",
+    "ludzie": [
+      {"kto": "Jerzy Hryniewicki", "rola": "architekt projektu Supersamu", "wiki": null},
+      {"kto": "Piotr Jaroszewicz", "rola": "premier, który odwiedził sklep w 1971", "wiki": null}
+    ],
+    "dawne_nazwy": ["Supersam"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Supersam w Warszawie", "url": "https://pl.wikipedia.org/wiki/Supersam_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres (Plac Unii) nie jest podany w tekście. Współrzędne z nagłówka."
+  },
+  {
+    "id": "szopy-warszawa",
+    "nazwa": "Szopy",
+    "name_en": "Szopy",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.18421,
+    "lon": 21.02547,
+    "lokalizacja": "przyblizona",
+    "okres": "1456–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szopy to wieś szlachecka, wymieniana w 1456.",
+      "1 kwietnia 1916, na mocy rozporządzenia generał-gubernatora Hansa Hartwiga von Beselera, Szopy włączono do Warszawy.",
+      "W 1898 oddana została do użytku Grójecka Kolej Dojazdowa, a jedna ze stacji nosiła nazwę Szopy.",
+      "W 1938 linia została wycofana z Warszawy aż do stacji Szopy, a w 1943 nazwa stacji została zmieniona na Dworzec Warszawa Południowa.",
+      "Kolejka została zlikwidowana w 1969 roku.",
+      "Najstarszym reliktem dawnej zabudowy Szopów Polskich jest murowany dworek Pyzlów przy ul. Potoki 5 z ok. 1860."
+    ],
+    "ciekawostki": [
+      "Pod koniec XVIII wieku władze pruskie osadziły tu kolonistów niemieckich w kolonii Szopy Niemieckie, a na terenie wsi powstała kolonia Szopy Polskie.",
+      "Dworek Pyzlów jest w bardzo złym stanie i popada w ruinę, mimo że wpisano go do gminnej ewidencji zabytków."
+    ],
+    "summary_en": "Szopy was a former suburban village, first mentioned in 1456, that became part of Warsaw in 1916. A railway station called Szopy on the Grójec narrow-gauge line operated from 1898 until the line was dismantled in 1969; the area is now served by a bus loop and the Wilanowska metro station.",
+    "ludzie": [],
+    "dawne_nazwy": ["Szopy Polskie", "Szopy Niemieckie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szopy (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Szopy_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawna wieś, obecnie obszar MSI Ksawerów i Stegny. Współrzędne z nagłówka."
+  },
+  {
+    "id": "szpital-specjalistyczny-swietej-rodziny",
+    "nazwa": "Szpital Specjalistyczny im. Świętej Rodziny",
+    "name_en": "Holy Family Specialist Hospital",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Antoniego Józefa Madalińskiego 25",
+    "adres_historyczny": null,
+    "lat": 52.203888888,
+    "lon": 21.016944444,
+    "lokalizacja": "dokladna",
+    "okres": "1953–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1953: szpital został wybudowany, według projektu inż. Władysława Borawskiego.",
+      "W lipcu 1953 roku otwarto tutaj Oddział Ginekologiczno-Położniczy.",
+      "1954: powstał Oddział Położniczy z Blokiem Porodowym.",
+      "1998: szpital otrzymał nazwę.",
+      "2006: otwarto tutaj pierwszy w województwie mazowieckim Pododdział Leczenia i Rekonwalescencji Noworodków.",
+      "2015: otwarto Regionalny Bank Mleka Kobiecego.",
+      "2017: otwarto Oddział Onkologii Klinicznej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Holy Family Specialist Hospital at Antoniego Józefa Madalińskiego 25 was built in 1953 to a design by engineer Władysław Borawski. Over the following decades it added obstetric, oncology, paediatric and breast-milk bank units.",
+    "ludzie": [
+      {"kto": "Władysław Borawski", "rola": "inżynier, autor projektu szpitala z 1953", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szpital Specjalistyczny im. Świętej Rodziny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szpital_Specjalistyczny_im._%C5%9Awi%C4%99tej_Rodziny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sluzew",
+    "nazwa": "Służew",
+    "name_en": "Służew",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.169273,
+    "lon": 21.031476,
+    "lokalizacja": "przyblizona",
+    "okres": "1065–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy zapis mówiący o osadnictwie tej okolicy pochodzi z 1065 roku, kiedy na terenach Służewca osiedlili się zakonnicy – Benedyktyni.",
+      "1234 – książę Konrad mazowiecki przekazał ziemie Służewa na własność i pod opiekę swojemu rycerzowi, komesowi Gotardowi.",
+      "1238 – erygowanie przez biskupa Pawła z Bnina parafii pod wezwaniem św. Katarzyny, pierwszej parafii na terenie Mazowsza.",
+      "1846 – kościół zostaje przebudowany przez Franciszka Marię Lanciniego do neoromańskiej formy, która przetrwała do dziś.",
+      "1864 – przeprowadzono uwłaszczenie 44 gospodarstw, na 342 ha gruntu, a wieś przyłączono do gminy Wilanów.",
+      "1905 – w Służewie było 917 mieszkańców, 63 domy, kościół, szkoła, zajazd, 3 sklepy.",
+      "1938 – Służew włączony w administracyjne granice Warszawy."
+    ],
+    "ciekawostki": [
+      "W 1565 kroniki parafialne donoszą o ślubie w kościele św. Katarzyny, który niektórzy uważali za ślub Gotarda; przy szkieletach odnaleziono miecz należący do warszawskiego kata.",
+      "Dzwon „Ave Maria” w dzwonnicy z 1881 pochodzi z nieistniejącego dziś gotyckiego kościoła św. Jerzego na Nowym Mieście w Warszawie."
+    ],
+    "summary_en": "Służew is a former village and today an MSI area in Mokotów. Its St Catherine's church, the first parish in Mazovia, was founded in 1238 and rebuilt in Baroque and then neo-Romanesque styles.",
+    "ludzie": [
+      {"kto": "Gotard", "rola": "rycerz komes, któremu książę Konrad mazowiecki przekazał ziemie Służewa w 1234", "wiki": null},
+      {"kto": "Krzysztof Szumowski", "rola": "proboszcz, który z pomocą ówczesnych właścicieli terenów odbudowywał świątynię przez 11 lat (od 1664)", "wiki": null},
+      {"kto": "Adam Wyrębowski", "rola": "proboszcz, który w 1932 kupił pierwszą działkę wraz z zabudowaniami dworskimi", "wiki": null},
+      {"kto": "Franciszek Maria Lancini", "rola": "architekt, który przebudował kościół św. Katarzyny w 1846", "wiki": null}
+    ],
+    "dawne_nazwy": ["Służewo", "Borzęcin (nazwa wsi w 1240)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Służew", "url": "https://pl.wikipedia.org/wiki/S%C5%82u%C5%BCew"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI; granice historyczne nie pokrywają się z MSI."
+  },
+  {
+    "id": "sluzew-stacja-metra",
+    "nazwa": "Służew (stacja metra)",
+    "name_en": "Służew metro station",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.172777777,
+    "lon": 21.026388888,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa stacji została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983.",
+      "Jej budowa rozpoczęła się w 1984.",
+      "Stacja jednokondygnacyjna, dwunawowa, z jednym rzędem słupów pośrodku peronu; peron-wyspa ma szerokość 10 m i długość 120 m.",
+      "Stacja przystosowana jest do pełnienia w razie konieczności funkcji schronu dla ludności cywilnej.",
+      "W 2023 roku ceramiczna okładzina zatorowa stacji oraz ceramiczna okładzina dojść do wind na poziomie peronu zostały wpisane do rejestru zabytków ruchomych."
+    ],
+    "ciekawostki": [
+      "Stacja jest utrzymana w kolorach żółto-czerwono-brązowych."
+    ],
+    "summary_en": "Służew is a single-level, two-aisle station on metro line M1 at the junction of al. Harcerzy Rzeczypospolitej, Rolna and Wałbrzyska streets. It was named in 1983, built from 1984 and was listed as movable heritage in 2023 for its ceramic cladding.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Służew (stacja metra)", "url": "https://pl.wikipedia.org/wiki/S%C5%82u%C5%BCew_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sluzew-fort",
+    "nazwa": "Służew Fort",
+    "name_en": "Służew Fort",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.176666666,
+    "lon": 21.014444444,
+    "lokalizacja": "przyblizona",
+    "okres": "1972–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało zbudowane w latach 1972–1977.",
+      "Jego generalnym projektantem był Tadeusz Mrówczyński.",
+      "Całość obejmowała 3450 mieszkań, które zaplanowano na ok. 11000 mieszkańców.",
+      "Budynki wielorodzinne to 16-kondygnacyjne punktowce oraz 11-kondygnacyjne budynki o długości przekraczającej 200 metrów, wybudowane w technologii wielkopłytowej Wk-70.",
+      "W późniejszym okresie zabudowę osiedla uzupełniły m.in.: Uczelnia Łazarskiego, Centrum Kulturalne Ojców Barnabitów oraz budynki mieszkalne „Manhattan Place”, „Modra Mokotów” i „Modra 90”.",
+      "Od czerwca 2001 roku do stycznia 2016 osiedle miało status jednostki niższego rzędu w dzielnicy Mokotów i posiadało Radę Osiedla."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Służew Fort is a 1970s housing estate in northwestern Służew, designed by Tadeusz Mrówczyński. It was built in large-panel and point-block form for about 11,000 residents across 3,450 flats.",
+    "ludzie": [
+      {"kto": "Tadeusz Mrówczyński", "rola": "generalny projektant osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": ["Służewiec Fort"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Służew Fort", "url": "https://pl.wikipedia.org/wiki/S%C5%82u%C5%BCew_Fort"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sluzew-nad-dolinka",
+    "nazwa": "Służew nad Dolinką",
+    "name_en": "Służew nad Dolinką",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.170833333,
+    "lon": 21.029722222,
+    "lokalizacja": "przyblizona",
+    "okres": "1973–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Za realizację kompleksu mieszkaniowego, budowanego od 1973 roku, odpowiadała powstała w 1958 roku Spółdzielnia Mieszkaniowa „Mokotów”.",
+      "Służew nad Doliną I został zbudowany w latach 1973–1978; zaplanowano na nim 4400 mieszkań o średniej powierzchni 50 m² dla 15100 mieszkańców.",
+      "Służew nad Doliną II został zbudowany w latach 1976–1979, z 916 mieszkaniami zaplanowanymi dla 3200 osób.",
+      "Od 1991 osiedlem zarządza Spółdzielnia Mieszkaniowa „Służew nad Dolinką”, która powstała poprzez podział poprzedniej.",
+      "Zachodnia część osiedla została uhonorowana tytułem Mistera Warszawy przyznawanym przez dziennik „Życie Warszawy” za 1978 rok.",
+      "Spółdzielnia od 2003 roku prowadzi na terenie osiedla dalszą działalność deweloperską; w 2005 roku zakończono budowę budynku Noskowskiego 2."
+    ],
+    "ciekawostki": [
+      "Na osiedlu przez pewien czas mieszkał artysta Zdzisław Beksiński; w 2007 na budynku przy ul. Sonaty 6, gdzie został zamordowany, powstał jego mural autorstwa Piotra Janowczyka.",
+      "Nazwa płyty Tede z 2006 roku „Esende Mylffon” wywodzi się częściowo od skrótu nazwy osiedla – SND."
+    ],
+    "summary_en": "Służew nad Dolinką is a housing estate in Mokotów built from 1973 on the edge of the Dolina Służewska park. It was designed in the H-frame and large-block technologies and has about 10,000 residents today.",
+    "ludzie": [
+      {"kto": "Zdzisław Beksiński", "rola": "artysta, który przez pewien czas mieszkał na osiedlu", "wiki": null},
+      {"kto": "Piotr Janowczyk", "rola": "autor muralu poświęconego Beksińskiemu z 2007", "wiki": null}
+    ],
+    "dawne_nazwy": ["Służew nad Doliną"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Służew nad Dolinką", "url": "https://pl.wikipedia.org/wiki/S%C5%82u%C5%BCew_nad_Dolink%C4%85"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sluzewiec",
+    "nazwa": "Służewiec",
+    "name_en": "Służewiec",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1769,
+    "lon": 21.0075,
+    "lokalizacja": "przyblizona",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dzielnica przemysłowo-składowa „Służewiec”, zajmująca obszar ok. 260 ha, powstała na terenach rolniczych wsi Służewiec i Zbarż; jej budowa rozpoczęła się w 1952.",
+      "W kilkudziesięciu zakładach przemysłowych na Służewcu na początku lat 70. pracowało ok. 20 tys. osób.",
+      "Największymi przedsiębiorstwami były: Fabryka Półprzewodników „Tewa”, Zakłady Urządzeń Dźwigowych, Fabryka Podzespołów Radiowych „Elwa”, Zakłady Ceramiki Radiowej, Zakłady Mięsne „Służewiec” i Stołeczne Zakłady Wyrobów Skórzanych Przemysłu Terenowego „Argo”.",
+      "Fabryka wind (Kombinat Dźwigów Osobowych) miała budynek, który został rozebrany w 2016 roku.",
+      "Od lat 90. XX wieku dawna przemysłowa część Służewca zaczęła być intensywnie zabudowywana budynkami biurowymi; do 2016 wzniesiono tam 75 biurowców.",
+      "1938 – Służewiec został przyłączony do Warszawy.",
+      "1939 – na Służewiec przeniesiono z Pola Mokotowskiego Tor Wyścigów Konnych."
+    ],
+    "ciekawostki": [
+      "Z powodu kłopotów komunikacyjnych (m.in. korki i trudności z parkowaniem) największy w Polsce kompleks biurowy zyskał żartobliwą nazwę Mordoru – mrocznej krainy z powieści J.R.R. Tolkiena.",
+      "Pamiątką po fabryce wind jest mozaika wykonana przez Wandę Gosławską, eksponowana na terenie dzielnicy."
+    ],
+    "summary_en": "Służewiec is a former village in Mokotów, now an MSI area. Its industrial district, built from 1952 on about 260 ha, housed around 20,000 workers in the early 1970s and was later turned into Poland's largest office complex.",
+    "ludzie": [
+      {"kto": "Wanda Gosławska", "rola": "autorka mozaiki z dawnej fabryki wind, eksponowanej w dzielnicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zbarż (wieś)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Służewiec", "url": "https://pl.wikipedia.org/wiki/S%C5%82u%C5%BCewiec"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI; granice MSI nie obejmują całego Służewca (część osiedli leży w granicach Służewa)."
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "wyzyny-warszawa",
+    "nazwa": "Wyżyny",
+    "name_en": "Wyżyny (housing estate)",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.141111111,
+    "lon": 21.049166666,
+    "lokalizacja": "przyblizona",
+    "okres": "1979–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W dniu 14 maja 1951 rozporządzeniem Rady Ministrów obszar późniejszych Wyżyn został włączony w granice administracyjne Warszawy wraz z resztą gminy Wilanów.",
+      "W 1979 roku Kombinat Budownictwa Mieszkaniowego Południe rozpoczął budowę w częściach Wyżyny-Wschód i Wyżyny-Środek.",
+      "Wznoszenie Wyżyn-Południowych rozpoczęto w sierpniu 1981.",
+      "W 1990 roku ludność osiedla wynosiła 19,0 tys.",
+      "Spółdzielnia Mieszkaniowa „Wyżyny” powstała w 1994 roku w wyniku podziału Spółdzielni Budownictwa Mieszkaniowego „Natolin”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A housing estate in Ursynów, part of the Ursynów-Natolin development belt. Construction started in 1979, and in 1994 the Wyżyny housing cooperative was formed.",
+    "ludzie": [
+      {"kto": "Jacek Nowicki", "rola": "generalny projektant pasma Ursynów-Natolin", "wiki": null}
+    ],
+    "dawne_nazwy": ["Natolin-Wyżyny"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wyżyny (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wy%C5%BCyny_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedlowy; współrzędne to przybliżony środek."
+  },
+  {
+    "id": "wzgorze-trzech-szczytow",
+    "nazwa": "Wzgórze Trzech Szczytów",
+    "name_en": "Three Peaks Hill (Kazurka)",
+    "typ": "park",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "park im. Cichociemnych Spadochroniarzy AK, rejon ul. Kazury",
+    "adres_historyczny": null,
+    "lat": 52.136944444,
+    "lon": 21.043333333,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wzniesienie zostało usypane w latach 70. XX wieku.",
+      "W maju 2016 znalazło się w obrębie nowo utworzonego parku miejskiego im. Cichociemnych Spadochroniarzy AK.",
+      "Około roku 2000 na górce powstała pierwsza trasa rowerowa do tzw. dualu.",
+      "W 2018 otwarto tam największy pumptrack w województwie mazowieckim o łącznej długości 255 metrów.",
+      "W ramach zakończonej w 2023 przebudowy parku na szczycie wzgórza, po jego zachodniej stronie, powstał punkt widokowy."
+    ],
+    "ciekawostki": [
+      "Według innego źródła większość ziemi pochodziła z wykopów budowanej od lat 80. linii metra M1.",
+      "Na górce odbywały się zawody rowerowe, m.in. Mistrzostwa Polski 4X 2014 oraz Mistrzostwa Polski w kolarstwie górskim MTB (2017)."
+    ],
+    "summary_en": "An artificial hill in Ursynów's Cichociemnych Spadochroniarzy AK park, built in the 1970s and known locally as Kazurka. It has been a bike park since around 2000.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kazurka", "Górka Kazurka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wzgórze Trzech Szczytów", "url": "https://pl.wikipedia.org/wiki/Wzg%C3%B3rze_Trzech_Szczyt%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "staw-wasal",
+    "nazwa": "Staw Wąsal",
+    "name_en": "Wąsal pond",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "rejon ulic Pozytywki, Katarynki i ks. Kazimierza Czarkowskiego",
+    "adres_historyczny": null,
+    "lat": 52.106388888,
+    "lon": 21.015,
+    "lokalizacja": "dokladna",
+    "okres": "lata 50. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 50. XX wieku staw został włączony w system melioracyjny Jeziorek Południowych.",
+      "Z powodu zamulenia i zanieczyszczenia zbiornika dochodziło do wielu lokalnych podtopień pobliskich zabudowań, np. w 2010 r.",
+      "Rekultywacja, która rozpoczęła się w 2012 r., obejmowała odmulenie, ukształtowanie skarp, wykonanie przepustów, mnicha i zastawki.",
+      "Prace zostały zakończone w czerwcu 2013 r.",
+      "W ich wyniku maksymalna retencja stawu Wąsal wzrosła z 4 240 m³ do 6 850 m³."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small retention pond in the Jeziorki Południowe area of Ursynów. After flooding in 2010 it was reclaimed in 2012–2013, raising its maximum retention from 4,240 m³ to 6,850 m³.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wąsal", "url": "https://pl.wikipedia.org/wiki/W%C4%85sal"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "jezioro-zgorzala",
+    "nazwa": "Jezioro Zgorzała",
+    "name_en": "Zgorzała lake (drained and reclaimed)",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "osiedle Zgorzała nad Jeziorem, kwadrat ulic Trombity, Kórnickiej i Dumki",
+    "adres_historyczny": null,
+    "lat": 52.117,
+    "lon": 21.0008,
+    "lokalizacja": "dokladna",
+    "okres": "2012–dziś (rekultywacja)",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie jezioro było największym w Warszawie, o powierzchni ok. 20 ha.",
+      "Tereny dawnego Jeziora Zgorzała zasypane zostały gruzem i ziemią powstałą w wyniku wykopów budowlanych.",
+      "W 2012 r. rozpoczęła się rekultywacja jeziora na podstawie opracowania z 2011 r. zleconego przez zarząd Dzielnicy Ursynów.",
+      "Głównym celem rekultywacji było stworzenie retencji w ilości 60 000 m³; całkowity koszt przedsięwzięcia oszacowano na kwotę 8 291 288,88 zł.",
+      "Miasto stołeczne Warszawa uznało w 2007 roku, iż teren jeziora Zgorzała należy objąć użytkiem ekologicznym."
+    ],
+    "ciekawostki": [
+      "Zasypanie jeziora spowodowało problemy z odwodnieniem okolicy tzw. zielonego Ursynowa i częste podtopienia, w tym jedno bardzo duże w 2010 r."
+    ],
+    "summary_en": "A lake in Ursynów that was once the largest in Warsaw, about 20 ha. It shrank as groundwater dropped and parts were filled in with rubble, and reclamation began in 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zgorzała (jezioro)", "url": "https://pl.wikipedia.org/wiki/Zgorza%C5%82a_%28jezioro%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawny obrys jeziora ok. 17 ha misy; współrzędne dotyczą pozostałego zbiornika."
+  },
+  {
+    "id": "leczyca-warszawa",
+    "nazwa": "Łęczyca",
+    "name_en": "Łęczyca (former village)",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "wzdłuż ul. Prawdziwka",
+    "adres_historyczny": null,
+    "lat": 52.103611111,
+    "lon": 21.0875,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1867–1954 Łęczyca była wsią w gminie Jeziorna w powiecie warszawskim.",
+      "20 października 1933 utworzyła gromadę Łęczyca w granicach gminy Jeziorna.",
+      "15 maja 1951 gromadę Gawroniec-Janówek podzielono, włączając Łęczycę do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former village in the southeast of Ursynów, along ul. Prawdziwka. It belonged to Jeziorna commune until it was incorporated into Warsaw in May 1951.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Łęczyca (Warszawa)", "url": "https://pl.wikipedia.org/wiki/%C5%81%C4%99czyca_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "aleksandrow-pierwszy-warszawa",
+    "nazwa": "Aleksandrów Pierwszy",
+    "name_en": "Aleksandrów Pierwszy (Aleksandrów)",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.176033,
+    "lon": 21.226565,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1797–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleksandrów został założony na gruntach majątku Wiązowna około 1797 roku przez Jana Alojzego Potockiego lub barona Józefa de Maltzahna.",
+      "Leżał przy tzw. Trakcie Wołowym, zwanym później Napoleońskim.",
+      "Pierwotnie składał się z dwóch osad łańcuchowych, położonych przy drogach z Falenicy do Góraszki, zamieszkałych do 1944 roku w większości przez niemieckich kolonistów.",
+      "Do roku 1991 wieś należała do gminy Wiązowna. Od 1 stycznia 1992 r. jako osiedle należy do Wawra wchodzącego w skład Warszawy.",
+      "W 1992 roku Aleksandrów został włączony do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A village founded around 1797 on the Wiązowna estate, on the old Napoleonic trade route. It has been part of Warsaw since 1992.",
+    "ludzie": [
+      {"kto": "Jan Alojzy Potocki", "rola": "możliwy założyciel osady (wg artykułu: lub baron Józef de Maltzahn)", "wiki": null},
+      {"kto": "Józef de Maltzahn", "rola": "możliwy założyciel osady (wg artykułu: lub Jan Alojzy Potocki)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleksandrów Pierwszy (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Aleksandr%C3%B3w_Pierwszy_%28Warszawa%29"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł podaje dwóch możliwych założycieli. Współrzędne to przybliżony środek osiedla."
+  },
+  {
+    "id": "anin-osiedle",
+    "nazwa": "Anin",
+    "name_en": "Anin (estate in Wawer)",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.218093,
+    "lon": 21.165601,
+    "lokalizacja": "przyblizona",
+    "okres": "1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Anin powstał na dawnych terenach dóbr wilanowskich hrabiego Ksawerego Branickiego, rozparcelowanych częściowo jeszcze przed I wojną światową.",
+      "Nazwa osiedla pochodzi od imienia żony Branickiego – Anny.",
+      "W latach 1909–1910 w klinie powstałym z przecięcia szosy brzeskiej i torów wytyczono pierwsze parcele budowlane.",
+      "Do wybuchu I wojny światowej w Aninie wydzielono 200 działek budowlanych, z których 8 przeznaczono na park osiedlowy.",
+      "Anin od 1924 r. był częścią letniskowej gminy Falenica, lecz faktycznie należy zdecydowanie do stolicy."
+    ],
+    "ciekawostki": [
+      "W okresie międzywojennym mieszkali tu m.in. poeci Konstanty Ildefons Gałczyński i Julian Tuwim."
+    ],
+    "summary_en": "A residential district of Wawer whose first building plots were laid out in 1909–1910 on former Wilanów estate land. It was named after Anna, the wife of Ksawery Branicki.",
+    "ludzie": [
+      {"kto": "Ksawery Branicki", "rola": "hrabia, właściciel dóbr wilanowskich, na których powstał Anin", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Anin", "url": "https://pl.wikipedia.org/wiki/Anin"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek osiedla."
+  },
+  {
+    "id": "kosciol-matki-bozej-krolowej-polski-w-aninie",
+    "nazwa": "Kościół Matki Bożej Królowej Polski w Aninie",
+    "name_en": "Our Lady Queen of Poland Church in Anin",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.218093,
+    "lon": 21.165601,
+    "lokalizacja": "przyblizona",
+    "okres": "1942–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1 czerwca 1942 r. uroczystego erygowania parafii Matki Bożej Królowej Polski dokonał ks. abp Stanisław Gall, a pierwszym proboszczem został ks. Piotr Pieniążek.",
+      "W 1976 r. rozpoczęła się budowa nowego kościoła według projektu Zygmunta Stępińskiego.",
+      "Kościół ukończono w ciągu 4 lat i 13 grudnia 1980 r. Abp Bronisław Dąbrowski dokonał przeniesienia Najświętszego Sakramentu do nowego budynku.",
+      "W okresie od października 1975 do maja 1978 r. w parafii pełnił posługę wikariusza Jerzy Popiełuszko.",
+      "W 1989 r. parafii zwrócono budynek po byłym kinie „Wrzos”, który po generalnym remoncie służy zebraniom społecznym i imprezom kulturalnym."
+    ],
+    "ciekawostki": [
+      "Nowy kościół ozdobił ołtarz przedstawiający „krzew gorejący”, dzieło artysty rzeźbiarza Władysława Trojana, oraz witraże z pracowni Teresy Reklewskiej."
+    ],
+    "summary_en": "The parish church of Anin, founded in 1942. The current church was built in 1976–1980 to a design by Zygmunt Stępiński and consecrated by the archbishop on 13 December 1980.",
+    "ludzie": [
+      {"kto": "Stanisław Gall", "rola": "arcybiskup, który erygował parafię 1 czerwca 1942", "wiki": null},
+      {"kto": "Piotr Pieniążek", "rola": "pierwszy proboszcz parafii", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projektant kościoła z lat 1976–1980", "wiki": null},
+      {"kto": "Bronisław Dąbrowski", "rola": "arcybiskup, który przeniósł Najświętszy Sakrament do nowego kościoła w 1980", "wiki": null},
+      {"kto": "Jerzy Popiełuszko", "rola": "wikariusz parafii w latach 1975–1978", "wiki": null}
+    ],
+    "dawne_nazwy": ["kino „Wrzos” (budynek przekazany parafii w 1989)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Anin", "url": "https://pl.wikipedia.org/wiki/Anin"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Opis z sekcji „Parafia” artykułu o Aninie (ta sama paczka). Adres i dokładne współrzędne kościoła nie są w tekście; podano współrzędne osiedla."
+  }
+]

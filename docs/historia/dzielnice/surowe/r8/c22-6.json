@@ -1,0 +1,317 @@
+[
+  {
+    "id": "katastrofa-lufthansa-2904",
+    "nazwa": "Katastrofa lotu Lufthansa 2904",
+    "name_en": "Lufthansa flight 2904 accident at Okęcie",
+    "typ": "zdarzenie",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.16075833,
+    "lon": 20.98539444,
+    "lokalizacja": "dokladna",
+    "okres": "14 września 1993",
+    "istnieje": false,
+    "fakty": [
+      "14 września 1993 roku na lotnisku Okęcie przy lądowaniu i nieskutecznym dobiegu rozbił się Airbus A320-211 linii Lufthansa (lot nr 2904) przybywający z Frankfurtu nad Menem.",
+      "Samolot rozbił się podczas nieskutecznego hamowania na kierunku 11/29, czyli na krótszej z dwóch dróg startowych portu.",
+      "Lewe koło dotknęło ziemi 9 sekund później niż prawe, przez co układ hamowania zadziałał za późno.",
+      "W wyniku uderzenia wybuchł pożar, który przeniknął do kabiny; zginął jeden z pasażerów oraz drugi pilot.",
+      "51 osób zostało ciężko rannych (w tym 2 członków załogi), 5 lekko rannych, a 12 wyszło z wypadku bez obrażeń.",
+      "Wśród rannych był ambasador Republiki Federalnej Niemiec Franz Bertele z małżonką oraz polski śpiewak operowy Marcin Bronikowski, którzy odnieśli urazy kręgosłupa."
+    ],
+    "ciekawostki": [
+      "W wyniku badania przyczyn producent samolotu wniósł poprawki techniczne do czujników, ale nie do oprogramowania."
+    ],
+    "summary_en": "On 14 September 1993 a Lufthansa Airbus A320 from Frankfurt overran the runway while landing at Okęcie in strong wind and aquaplaning conditions and caught fire. One passenger and the co-pilot died and 51 people were seriously injured.",
+    "ludzie": [
+      {"kto": "Franz Bertele", "rola": "ambasador RFN, ranny w katastrofie", "wiki": null},
+      {"kto": "Marcin Bronikowski", "rola": "polski śpiewak operowy, ranny w katastrofie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Katastrofa lotu Lufthansa 2904", "url": "https://pl.wikipedia.org/wiki/Katastrofa_lotu_Lufthansa_2904"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord zdarzenia; „istnieje” false. Przyczyny (błędy załogi, uskok wiatru, działanie hamulców) pominięto jako ustalenia komisji, nie fakty o miejscu."
+  },
+  {
+    "id": "kleszczowa-zajezdnia",
+    "nazwa": "Zajezdnia Kleszczowa",
+    "name_en": "Kleszczowa bus depot",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Kleszczowa 28",
+    "adres_historyczny": null,
+    "lat": 52.1969,
+    "lon": 20.9212,
+    "lokalizacja": "dokladna",
+    "okres": "1973–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zajezdnia została wybudowana w 1973 roku.",
+      "W przeszłości na stanie zajezdni stacjonowały Ikarusy 260, Ikarusy 280 oraz Jelcze M121M.",
+      "Od 2005 roku zajezdnia specjalizowała się w pojazdach marki Neoplan, których od 2015 roku już nie posiada.",
+      "W 2012 roku do zajezdni przybyły pierwsze w jej historii niskopodłogowe autobusy przegubowe: 18-metrowe Mercedesy Conecto LF G.",
+      "W 2019 roku rozpoczęły się dostawy 50 MAN-ów NL313 Lion's City CNG, a rok później dokupiono kolejne 10 sztuk MAN-ów NG313 Lion's City G CNG."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kleszczowa is a bus depot at ul. Kleszczowa 28 in Włochy, owned by Miejskie Zakłady Autobusowe (MZA). Built in 1973, it has been fully low-floor since the 2010s.",
+    "ludzie": [],
+    "dawne_nazwy": ["Oddział Przewozów R-2 „Kleszczowa”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kleszczowa (zajezdnia autobusowa)", "url": "https://pl.wikipedia.org/wiki/Kleszczowa_%28zajezdnia_autobusowa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje też stan taboru z 17 lipca 2026 r. (bez historii); pominięte."
+  },
+  {
+    "id": "kosciol-objawienia-panskiego",
+    "nazwa": "Kościół Objawienia Pańskiego",
+    "name_en": "Church of the Epiphany (Stare Włochy)",
+    "typ": "swiatynia",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.203,
+    "lon": 20.923194444,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1936 roku rodzina Koelichenów podarowała plac o powierzchni 2000 m² pod budowę świątyni.",
+      "19 kwietnia 1936 roku powstał Komitet Budowy, a 15 listopada 1936 roku poświęcono kamień węgielny.",
+      "Plany budowy wykonali bezinteresownie architekci: bracia Goetzenowie.",
+      "6 stycznia 1939 roku świątynia została poświęcona, chociaż brakowało jeszcze części wyposażenia wnętrza.",
+      "Po zakończeniu II wojny światowej świątynia była zajęta przez intendenturę; nabożeństwa mogły być odprawiane dopiero od 1946 roku.",
+      "W 1965 roku przeprowadzono gruntowny remont świątyni i dokonano jej rekonsekracji.",
+      "W 2017 roku świątynia otrzymała nazwę Kościół Objawienia Pańskiego (wcześniej nazwany od ks. Mieczysława Rügera)."
+    ],
+    "ciekawostki": [
+      "W 1985 roku wmurowano tablicę pamiątkową poświęconą ks. Mieczysławowi Rügerowi, w 10. rocznicę jego śmierci."
+    ],
+    "summary_en": "The Church of the Epiphany in Stare Włochy is a branch church of the Evangelical-Augsburg Holy Trinity parish. Built on land given by the Koelichen family, it was consecrated in 1939 and renovated in 1965.",
+    "ludzie": [
+      {"kto": "Edward Koelichen", "rola": "przewodniczący Komitetu Budowy (1936)", "wiki": null},
+      {"kto": "Ludwik J. Evert", "rola": "honorowy prezes Komitetu Budowy, senator", "wiki": null},
+      {"kto": "August Loth", "rola": "pastor, który dokonał poświęcenia świątyni w 1939 r.", "wiki": null},
+      {"kto": "Zygmunt Michelis", "rola": "pastor warszawski, wygłosił kazanie przy poświęceniu w 1939 r.", "wiki": null},
+      {"kto": "Mieczysław Rüger", "rola": "opiekun parafian z Włoch, odczytał sprawozdanie z budowy", "wiki": null},
+      {"kto": "Józef Scholtz", "rola": "kierował pracami budowlanymi; zmarł w marcu 1939 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Objawienia Pańskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Objawienia_Pa%C5%84skiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Kościół jest filialny parafii Ewangelicko-Augsburskiej Świętej Trójcy; w 2017 r. nadano mu nazwę."
+  },
+  {
+    "id": "lotnisko-chopina",
+    "nazwa": "Lotnisko Chopina (Okęcie)",
+    "name_en": "Warsaw Chopin Airport (Okęcie)",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.165833333,
+    "lon": 20.967222222,
+    "lokalizacja": "dokladna",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Lotnisko zostało otwarte w 1934 roku.",
+      "29 kwietnia 1934 roku uroczyście otwarto nowy terminal, który przejął ruch pasażerski z lotniska mokotowskiego.",
+      "W 1935 roku na terenie lotniska wojskowego odsłonięto 20-metrowy pomnik Józefa Piłsudskiego, zniszczony przez Niemców w 1944 roku.",
+      "5 października 1939 roku na Okęciu wylądował samolot z Adolfem Hitlerem, który przyleciał do Warszawy na defiladę zwycięstwa.",
+      "1 sierpnia 1944 roku lotnisko zostało zaatakowane przez żołnierzy 7 Pułku Piechoty AK „Garłuch”; atak zakończył się niepowodzeniem, a poległo ponad 120 powstańców.",
+      "Prace związane z rozbudową lotniska zakończono w 1969 roku; zespół dworca wybudowano według projektu Jana i Krystyny Dobrowolskich i Aleksandra Włodarza (konstrukcje).",
+      "W 1980 roku wydłużono główną drogę startową o 700 metrów, dzięki czemu lotnisko może przyjmować wszystkie typy samolotów.",
+      "W 2001 roku lotnisku nadano imię Fryderyka Chopina; w styczniu 2010 roku zarejestrowano nową nazwę Lotnisko Chopina."
+    ],
+    "ciekawostki": [
+      "Przy otwarciu terminala w 1934 roku uczestniczyli prezydent Ignacy Mościcki i premier Janusz Jędrzejewicz; mszę odprawił biskup polowy Józef Gawlina."
+    ],
+    "summary_en": "Warsaw Chopin Airport, known as Okęcie, opened in 1934 on the site of a military airfield in Włochy. It was attacked during the 1944 Warsaw Uprising and was later rebuilt; it was named after Chopin in 2001.",
+    "ludzie": [
+      {"kto": "Ignacy Mościcki", "rola": "prezydent RP, uczestnik otwarcia terminala w 1934 r.", "wiki": null},
+      {"kto": "Janusz Jędrzejewicz", "rola": "premier, uczestnik otwarcia terminala w 1934 r.", "wiki": null},
+      {"kto": "Józef Gawlina", "rola": "biskup polowy, odprawił mszę przy otwarciu terminala", "wiki": null},
+      {"kto": "Adolf Hitler", "rola": "wylądował na Okęciu 5 października 1939 r.", "wiki": null},
+      {"kto": "Jan Dobrowolski", "rola": "projektant zespołu dworca (z Krystyną Dobrowolską)", "wiki": null},
+      {"kto": "Krystyna Dobrowolska", "rola": "projektantka zespołu dworca (z Janem Dobrowolskim)", "wiki": null},
+      {"kto": "Aleksander Włodarz", "rola": "konstruktor zespołu dworca", "wiki": null}
+    ],
+    "dawne_nazwy": ["Port Lotniczy Warszawa-Okęcie", "Centralny Port Lotniczy Warszawa-Okęcie", "Okęcie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lotnisko Chopina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Lotnisko_Chopina_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje także spory o nazwę i roszczenia do gruntów, pominięte jako nie będące historią miejsca. Adres ogólny, bo artykuł nie podaje adresu portu."
+  },
+  {
+    "id": "nowe-wlochy",
+    "nazwa": "Nowe Włochy",
+    "name_en": "Nowe Włochy",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.207778,
+    "lon": 20.905833,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–1951",
+    "istnieje": true,
+    "fakty": [
+      "Do 1930 roku teren należał do gminy Skorosze w powiecie warszawskim w woj. warszawskim.",
+      "15 kwietnia 1930 teren wszedł w skład nowo utworzonej gminy Włochy.",
+      "20 października 1933 utworzono gromadę Włochy Nowe w granicach gminy Włochy.",
+      "1 kwietnia 1939 osadzie Włochy, składającej się z gromad Włochy Stare i Włochy Nowe, nadano status miasta.",
+      "Miasto Włochy zniesiono 15 maja 1951 po włączeniu do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Nowe Włochy was a former rural district that became part of the town of Włochy in 1939. Włochy lost its town status when it was incorporated into Warsaw in May 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Włochy Nowe"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowe Włochy", "url": "https://pl.wikipedia.org/wiki/Nowe_W%C5%82ochy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord osiedla, wpisany ze względu na datowaną historię administracyjną."
+  },
+  {
+    "id": "nowy-sluzewiec",
+    "nazwa": "Nowy Służewiec",
+    "name_en": "Nowy Służewiec",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.172222222,
+    "lon": 20.981944444,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "20 października 1933 utworzono gromadę Służewiec Nowy w granicach gminy Wilanów.",
+      "Podczas II wojny światowej okupant włączył Służewiec Nowy do gminy Okęcie.",
+      "W 1943 gromada Służewiec Nowy liczyła 136 mieszkańców.",
+      "15 maja 1951 w związku ze zniesieniem gminy Okęcie gromadę włączono do Warszawy."
+    ],
+    "ciekawostki": [
+      "Na obszarze osiedla znajduje się fort Zbarż oraz Fosa Zbarska."
+    ],
+    "summary_en": "Nowy Służewiec is a former village and now an estate in Włochy, north of Chopin Airport. It was part of the Wilanów commune in the interwar period and joined Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Służewiec Nowy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowy Służewiec", "url": "https://pl.wikipedia.org/wiki/Nowy_S%C5%82u%C5%BCewiec"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "okecie-warszawa",
+    "nazwa": "Okęcie",
+    "name_en": "Okęcie",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.18333333,
+    "lon": 20.95,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1580 wieś szlachecka Okencie znajdowała się w powiecie warszawskim ziemi warszawskiej województwa mazowieckiego.",
+      "W 1854 roku w centrum wsi, nad Sadurką, wybudowano dwór rodziny Bagniewskich, zniszczony wiek później.",
+      "W 1923 roku na Okęciu zakończono linię tramwajową z Warszawy.",
+      "W 1934 roku na nowe lotnisko wojskowe na Okęciu przeniesiono ruch pasażerski z lotniska mokotowskiego.",
+      "W 1936 roku erygowano odrębną parafię rzymskokatolicką.",
+      "8 września 1939 Okęcie zostało zajęte przez wojska niemieckie.",
+      "W latach 1942–1943 funkcjonował na Okęciu obóz pracy dla ludności żydowskiej, a w 1944 obóz dla jeńców radzieckich.",
+      "W 1951 Okęcie zostało przyłączone do Warszawy i stało się częścią nowo utworzonej dzielnicy Ochota."
+    ],
+    "ciekawostki": [
+      "Nazwa osiedla wywodzi się od położenia w kącie posiadłości rakowskich; początkowo funkcjonowały nazwy Zakącie i Okącie."
+    ],
+    "summary_en": "Okęcie is an estate and MSI area in Włochy, named after its location in a corner of the Rakowski estates. It grew around Warsaw's airport, which opened on its land in 1934, and was occupied by Germany in 1939.",
+    "ludzie": [
+      {"kto": "Bagniewscy", "rola": "rodzina, która w 1854 r. wybudowała dwór w centrum wsi", "wiki": null}
+    ],
+    "dawne_nazwy": ["Okencie", "Zakącie", "Okącie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Okęcie (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Ok%C4%99cie_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule jest też wzmianka o parafii św. Franciszka z Asyżu i obozach; pominięto szczegóły wspólnot wyznaniowych."
+  },
+  {
+    "id": "okecie-ii",
+    "nazwa": "Okęcie II",
+    "name_en": "Okęcie II housing estate",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Marcina Flisa 7, 9, 11",
+    "adres_historyczny": null,
+    "lat": 52.189444444,
+    "lon": 20.952222222,
+    "lokalizacja": "przyblizona",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wzniesiono w latach 1952–1953 i składa się z trzech budynków mieszkalnych przy ul. Marcina Flisa 7, 9 i 11.",
+      "Budynki zaprojektowało przedsiębiorstwo „Miastoprojekt Stolica”, którym kierował Bolesław Szmidt; zespołem architektów kierował Gustaw Kozik.",
+      "Osiedle było częścią większego założenia: pierwotnie zaplanowano je na 24 hektarach dla 5600 mieszkańców, z 1433 mieszkaniami.",
+      "Zrealizowano połowę zaplanowanej zabudowy; plany zarzucono, a na terenie powstały domy jednorodzinne i zakłady przemysłowe.",
+      "W 2010 roku doszło do pożaru dachu budynku przy ul. Flisa 9; w jego wyniku konieczne było obniżenie budynku o jedną kondygnację."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Okęcie II is a small 1950s housing estate on ul. Flisa in Włochy, three brick buildings of three to four storeys. It was a part of a much larger plan that was never finished.",
+    "ludzie": [
+      {"kto": "Bolesław Szmidt", "rola": "kierował przedsiębiorstwem „Miastoprojekt Stolica”, które zaprojektowało budynki", "wiki": null},
+      {"kto": "Gustaw Kozik", "rola": "architekt, który stał na czele zespołu projektującego budynki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Okęcie II", "url": "https://pl.wikipedia.org/wiki/Ok%C4%99cie_II"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nawiązuje do osiedla Okęcie I (od 1952 r.), które jest osobnym rekordem."
+  },
+  {
+    "id": "okecie-lotnisko-osiedle",
+    "nazwa": "Okęcie Lotnisko (osiedle Okęcie I)",
+    "name_en": "Okęcie Lotnisko housing estate (Okęcie I)",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "między ul. Franciszka Hynka, ul. Żwirki i Wigury i ul. Komitetu Obrony Robotników",
+    "adres_historyczny": null,
+    "lat": 52.182222222,
+    "lon": 20.976666666,
+    "lokalizacja": "przyblizona",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy etap osiedla zrealizowano w latach 1952–1956 według projektu Zdzisława Forkasiewicza; powstało wtedy 271 lokali mieszkalnych.",
+      "Drugi etap wybudowano w latach 1958–1961; głównymi architektami byli Jerzy Baumiller i Jan Zdanowicz.",
+      "Łącznie powstało 1760 mieszkań przewidzianych dla około 6 tys. osób.",
+      "W 1970 roku zespół mieszkaniowy włączono do zasobów Warszawskiej Spółdzielni Mieszkaniowej „Ochota”.",
+      "Budynek przy ul. Drzewieckiego 2 od 2012 roku jest wpisany do gminnej ewidencji zabytków jako Dom Podoficerski Funduszu Kwaterunku Wojskowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Okęcie Lotnisko (also called Okęcie I) is a 1950s–60s housing estate of four-storey blocks between Hynka, Żwirki i Wigury and Komitetu Obrony Robotników streets, built for airport and aviation workers.",
+    "ludzie": [
+      {"kto": "Zdzisław Forkasiewicz", "rola": "projektant pierwszego etapu osiedla (1952–1956)", "wiki": null},
+      {"kto": "Jerzy Baumiller", "rola": "główny architekt drugiego etapu osiedla (1958–1961)", "wiki": null},
+      {"kto": "Jan Zdanowicz", "rola": "główny architekt drugiego etapu osiedla (1958–1961)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Okęcie-Lot", "Okęcie I", "Osiedle Hynka-Komitetu Obrony Robotników"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Okęcie Lotnisko", "url": "https://pl.wikipedia.org/wiki/Ok%C4%99cie_Lotnisko"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Pierwszy etap podany w artykule także jako 1950–1955 z innego źródła; w rekordzie przyjęto 1952–1956."
+  }
+]

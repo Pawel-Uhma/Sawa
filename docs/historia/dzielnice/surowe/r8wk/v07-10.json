@@ -1,0 +1,68 @@
+[
+  {
+    "id": "dworek-karniewskich",
+    "nazwa": "Dworek Karniewskich (modrzewiowy dworek)",
+    "name_en": "Karniewski Manor House (larch manor)",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Rosoła 19",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "pierwsza połowa XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w pierwszej połowie XIX wieku.",
+      "Teren został podarowany przez Potockich, właścicieli dóbr wilanowskich, w podziękowaniu za uratowanie majątku w czasie powstania styczniowego.",
+      "Julian Karniewski wziął na siebie winę za transport broni dla powstańców, który zorganizował August Potocki; władze carskie wtrąciły go do więzienia.",
+      "W 1918 roku doszło do pożaru dworku, podczas którego spłonął ganek.",
+      "Pod koniec lat 70. XX wieku obiekt został wpisany do rejestru zabytków; dzięki temu nie zabrano ziemi pod budowę bloków.",
+      "W maju 2020 roku poinformowano, że dworek zostanie uratowany; radni przyznali na prace prawie 200 tys. złotych."
+    ],
+    "ciekawostki": [
+      "Według legendy dworek zbudowano bez użycia jednego gwoździa i przeniesiono na Natolin z innego miejsca."
+    ],
+    "summary_en": "A larch-wood manor house at Rosoła 19 in Natolin, Ursynów, built in the first half of the 19th century. It belonged to the Karniewski family, was listed as a monument in the late 1970s, and received city funds for restoration in 2020.",
+    "ludzie": [
+      {"kto": "Julian Karniewski", "rola": "wziął winę za transport broni dla powstańców styczniowych; uwięziony przez władze carskie", "wiki": null},
+      {"kto": "August Potocki", "rola": "zorganizował transport broni dla powstańców", "wiki": null},
+      {"kto": "Marek Karniewski", "rola": "dzisiejszy właściciel dworku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Dworek Karniewskich", "url": "https://warszawa.fandom.com/pl/wiki/Dworek_Karniewskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych. Tekst artykułu w części historycznej pochodzi z haloursynow.pl (za zgodą autora), a stamtąd też część wypowiedzi właściciela."
+  },
+  {
+    "id": "galeria-ursynow-al-ken-36",
+    "nazwa": "Budynek Galerii Ursynów",
+    "name_en": "Galeria Ursynów building",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Al. Komisji Edukacji Narodowej 36",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1999–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wybudowany w latach 1999-2001 dla spółdzielni mieszkaniowej „Przy Metrze”.",
+      "Ma 18 pięter i wysokość 56,1 m; galeria mieści się na dwóch pierwszych nadziemnych kondygnacjach.",
+      "Parter i 1. piętro galerii przeznaczone są dla punktów handlowo-usługowych, a 2. piętro mieści biura i siedziby firm.",
+      "Budynek posiada garaż podziemny i zieleń na dachu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An 18-storey residential building at Al. Komisji Edukacji Narodowej 36 on Natolin, Ursynów, built in 1999–2001 for the housing cooperative „Przy Metrze”. Its first two floors hold the Galeria Ursynów shopping and office space, near Natolin metro station.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Galeria Ursynów", "url": "https://warszawa.fandom.com/pl/wiki/Galeria_Ursynów"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych. Rekord dotyczy budynku, nie firm w nim działających."
+  }
+]

@@ -1,0 +1,383 @@
+[
+  {
+    "id": "cmentarz-w-wolicy",
+    "nazwa": "Cmentarz w Wolicy",
+    "name_en": "Cemetery in Wolica",
+    "typ": "cmentarz",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.152463,
+    "lon": 21.061703,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych (dawna wieś Wolica)",
+    "istnieje": false,
+    "fakty": [
+      "Cmentarz katolicki znajdował się w dawnej wsi Wolica, w sąsiedztwie skarpy warszawskiej, pomiędzy obecnymi ulicami Orszady i Kokosową.",
+      "Nie wiadomo kiedy cmentarz powstał, ani kto był na nim chowany; nie wiadomo również, kiedy został formalnie zlikwidowany.",
+      "Na jego miejscu postawiono kościół parafii bł. Edmunda Bojanowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Wolica cemetery was a Catholic burial ground in the former village of Wolica, near the Warsaw escarpment. Its origin and closure dates are unknown, and a church of the Blessed Edmund Bojanowski parish now stands on the site.",
+    "ludzie": [
+      {"kto": "bł. Edmund Bojanowski", "rola": "patron parafii, której kościół stanął na miejscu cmentarza", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wolica"],
+    "zrodla": [{"tytul": "Wikipedia: Cmentarz w Wolicy (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Cmentarz_w_Wolicy_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki; brak dat i adresu. Okres nieznany. Współrzędne z nagłówka."
+  },
+  {
+    "id": "jezioro-lisowskie",
+    "nazwa": "Jezioro Lisowskie",
+    "name_en": "Lisowskie Lake",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1278,
+    "lon": 21.126,
+    "lokalizacja": "przyblizona",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jezioro Lisowskie jest starorzeczem o powierzchni 6,0529 ha, długości 850 m i szerokości do 100 m.",
+      "Zbiornik leży na terenie Warszawskiego Obszaru Chronionego Krajobrazu utworzonego rozporządzeniem Wojewody Warszawskiego z dnia 29 sierpnia 1997 r.",
+      "Rozporządzenie zmieniono rozporządzeniem Wojewody Mazowieckiego z dnia 3 sierpnia 2000 r., dodając zapis, iż w skład obszaru wejdą jeziora Lisowskie i Pod Morgami o łącznej powierzchni 13,1258 ha.",
+      "W 2013 roku utworzono na jeziorze dwusłupowy wyciąg z przeszkodami do uprawiania wakeboardingu o długości 160 metrów.",
+      "Zgodnie z badaniem z 2004 roku na terenie zbiornika i w jego okolicach stwierdzono m.in. perkoza dwuczubego, bączka, czajkę i kaczkę krzyżówkę."
+    ],
+    "ciekawostki": [
+      "Akwen współtworzy 12-kilometrowy ciąg starorzeczy, rozpoczynający się od jezior Bielawskich i kończący się na Jeziorze Wilanowskim."
+    ],
+    "summary_en": "Lisowskie Lake is an oxbow lake of about 6 ha in the Wilanów district, inside a protected landscape area since 1997. In 2013 a 160 m cable wakeboard park was set up on it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Jezioro Lisowskie (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Jezioro_Lisowskie_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres to data rozporządzenia o ochronie krajobrazu, nie data powstania jeziora (brak w tekście)."
+  },
+  {
+    "id": "jezioro-powsinkowskie",
+    "nazwa": "Jezioro Powsinkowskie",
+    "name_en": "Powsinkowskie Lake",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.158888888,
+    "lon": 21.098888888,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jezioro stanowi część kompleksu „dobra Wilanów” utworzonego w XVIII w., którego właścicielem był m.in. ród Czartoryskich.",
+      "Zbiornikowi przyznano w 2009 roku II klasę czystości wody wg metody BMWP-PL.",
+      "Zgodnie z monitoringiem w ramach Natura 2000 przeprowadzonym w latach 2009–2011 jezioro wykazało stan niezadowalający (U1).",
+      "Powierzchnia jeziora wynosi 10,9152 hektara; inne źródła mówią o 8,5 ha.",
+      "Jezioro leży na terenie Warszawskiego Obszaru Chronionego Krajobrazu (Dz. Urz. Woj. Maz. Nr 42/14.02.2007 r., poz. 870)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Powsinkowskie Lake is an oxbow of the Vistula in the Powsinek estate of the Wilanów district. It belonged to the Wilanów estate, created in the 18th century, which was owned by the Czartoryski family among others.",
+    "ludzie": [],
+    "dawne_nazwy": ["Jeziorko Powsinkowskie"],
+    "zrodla": [{"tytul": "Wikipedia: Jezioro Powsinkowskie", "url": "https://pl.wikipedia.org/wiki/Jezioro_Powsinkowskie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "jezioro-wilanowskie",
+    "nazwa": "Jezioro Wilanowskie",
+    "name_en": "Wilanów Lake",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1678,
+    "lon": 21.0925,
+    "lokalizacja": "dokladna",
+    "okres": "koniec XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jezioro od końca XVII wieku jest częścią wilanowskiego założenia pałacowo-parkowego, stanowiąc wodny łącznik między ogrodem wilanowskim a parkiem Morysin.",
+      "Częścią jeziora jest Kanał Sobieskiego o długości ok. 800 m; na kanale w latach 60. XX w. wybudowano jaz, dzięki któremu jezioro jest sztucznie piętrzone.",
+      "Na jeziorze znajdują się dwie wyspy; druga, sztuczna, w północnej części jeziora jest częścią parku wilanowskiego i ozdobiona pomnikiem Bitwy Raszyńskiej w kształcie monumentalnego sarkofagu.",
+      "Według Programu Ochrony Środowiska dla m. st. Warszawy na lata 2009–2012 jezioro ma powierzchnię 13,4699 ha.",
+      "W 2009 roku zbiornikowi przyznano II klasę czystości wody według metody BMWP-PL.",
+      "W miesiącach zimowych, w związku z odladzaniem miejskich ulic, w jeziorze występuje silne stężenie chlorków, miejscowo przekraczające 3 000 mg/l."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wilanów Lake has been part of the Wilanów palace and park complex since the late 17th century and links the palace garden with Morysin Park. Its north-eastern island holds a sarcophagus-shaped monument to the Battle of Raszyn.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Jezioro Wilanowskie", "url": "https://pl.wikipedia.org/wiki/Jezioro_Wilanowskie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł: „od końca XVII w.” jako część założenia; druga wyspa z pomnikiem według tekstu w północnej części."
+  },
+  {
+    "id": "jezioro-pod-morgami",
+    "nazwa": "Jezioro pod Morgami",
+    "name_en": "Jezioro pod Morgami",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.134722222,
+    "lon": 21.122222222,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa jeziora wywodzi się od nazwy pola Morgi.",
+      "Powierzchnia jeziora wynosi 2,1141 ha; maksymalna długość 500 m, szerokość 80 m, głębokość 1–3 m.",
+      "Jezioro leży na terenie Warszawskiego Obszaru Chronionego Krajobrazu utworzonego rozporządzeniem Wojewody Warszawskiego z dnia 29 sierpnia 1997 r.",
+      "Rozporządzenie zmieniono rozporządzeniem Wojewody Mazowieckiego z dnia 3 sierpnia 2000 r.; wtedy do obszaru włączono jeziora Lisowskie i Pod Morgami o łącznej powierzchni 13,1258 ha.",
+      "Zgodnie z badaniem z 2004 roku stwierdzono m.in. bączka, bociana białego, orzełka włochatego, czajkę i trzciniaka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Jezioro pod Morgami is a small oxbow lake of about 2 ha in the Wilanów district, named after the Morgi field. It has been inside a protected landscape area since 1997.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Jezioro pod Morgami", "url": "https://pl.wikipedia.org/wiki/Jezioro_pod_Morgami"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje daty powstania; okres to ogólny zakres z tekstu."
+  },
+  {
+    "id": "kabaty",
+    "nazwa": "Kabaty",
+    "name_en": "Kabaty",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.13012,
+    "lon": 21.08148,
+    "lokalizacja": "przyblizona",
+    "okres": "1386–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza wzmianka o Kabatach pochodzi z 1386; wieś, będąca własnością chorążego płockiego Andrzeja Ciołka, otrzymała wtedy prawo chełmińskie od księcia Janusza I.",
+      "W 1580 Kabaty liczyły 4 łany (ok. 70 ha) i znajdowały się w powiecie warszawskim ziemi warszawskiej województwa mazowieckiego.",
+      "Wieś została zniszczona w czasie potopu szwedzkiego w 1656.",
+      "W 1721 Elżbieta Sieniawska z Lubomirskich kupiła Kabaty od Mikołaja Dunina Szpota i włączyła je do dóbr wilanowskich.",
+      "W 1827 Kabaty liczyły 17 domów i 177 mieszkańców.",
+      "W 1951 Kabaty razem z pozostałą częścią obecnego Ursynowa przyłączono do Warszawy.",
+      "W 1995 na Kabatach oddano do użytku początkową stację linii M1 metra w Warszawie."
+    ],
+    "ciekawostki": [
+      "Od nazwy wsi pochodzi nazwa sąsiadującego z nią kompleksu leśnego, Lasu Kabackiego.",
+      "Nazwę Kabaty nosi także pierwsza stacja linii M1 warszawskiego metra."
+    ],
+    "summary_en": "Kabaty is a former village first mentioned in 1386, later part of the Wilanów estate. It was incorporated into Warsaw in 1951 and gained a metro station on line M1 in 1995.",
+    "ludzie": [
+      {"kto": "Andrzej Ciołek", "rola": "chorąży płocki, właściciel wsi w 1386", "wiki": null},
+      {"kto": "Elżbieta Sieniawska z Lubomirskich", "rola": "kupiła Kabaty w 1721 i włączyła je do dóbr wilanowskich", "wiki": null},
+      {"kto": "Ksawery Branicki", "rola": "w 1892 wieś przeszła pod jego kontrolę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kabaty", "url": "https://pl.wikipedia.org/wiki/Kabaty"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE podaje Wilanów, a artykuł opisuje obszar MSI Kabaty w dzielnicy Ursynów. W rekordzie zapisano dzielnicę z nagłówka."
+  },
+  {
+    "id": "kanal-sobieskiego",
+    "nazwa": "Kanał Sobieskiego",
+    "name_en": "Sobieski Canal",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1743,
+    "lon": 21.0965,
+    "lokalizacja": "przyblizona",
+    "okres": "1681–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac w Wilanowie wzniesiono w latach 1681–1696, a skrzydła boczne dobudowano w latach 1723–1729.",
+      "Prawdopodobnie w 1681 r. Locci skierował Sadurkę (obecnie Potok Służewiecki) do Wilanowa.",
+      "W XVIII wieku potok został czasowo poprowadzony dawnym korytem w celu zasilenia wodą stawów w Łazienkach.",
+      "Jaz w pobliżu ujścia kanału wybudowano w latach 60. XX w.",
+      "Na planie dóbr królewskich w Wilanowie z 1732 roku w miejscu obecnego kanału znajdowały się trzy nie połączone ze sobą wydłużone zbiorniki wodne."
+    ],
+    "ciekawostki": [
+      "Ciek określany jest nazwami Kanał Sobieskiego oraz Kanał Królewski."
+    ],
+    "summary_en": "The Sobieski Canal drains the Wilanów Lake into the Wilanówka river. Its historic water channel dates back to the late 17th century, when the Wilanów palace was built.",
+    "ludzie": [
+      {"kto": "Locci", "rola": "według tekstu prawdopodobnie w 1681 skierował Sadurkę do Wilanowa", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kanał Królewski"],
+    "zrodla": [{"tytul": "Wikipedia: Kanał Sobieskiego", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Sobieskiego"}],
+    "pewnosc": "srednia",
+    "uwagi": "Część faktów historycznych dotyczy otoczenia kanału (Sadurka, dzisiejszy Potok Służewiecki), a nie samego kanału. Okres to data budowy pałacu i pierwsze wzmianki o korycie."
+  },
+  {
+    "id": "kanal-w",
+    "nazwa": "Kanał „W”",
+    "name_en": "Canal \"W\"",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.177555555,
+    "lon": 21.079916666,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W przeszłości ciek poprzez Sielankę prowadził wodę z Jeziora Wilanowskiego; postuluje się odtworzenie tego połączenia.",
+      "Kanał prowadzi wody z jeziora Sielanka do Jeziorka Czerniakowskiego; długość rowu wynosi 1320 m.",
+      "Pod ulicami Goczałkowicką i Augustówka znajdują się betonowe przepusty, a nad rowem wybudowano stalową kładkę.",
+      "Jest on zaliczany do urządzeń melioracji podstawowych Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Canal \"W\" is a drainage ditch on the border of the Wilanów and Mokotów districts, leading water from Sielanka lake to Jeziorko Czerniakowskie. Historically it carried water from Wilanów Lake through Sielanka.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kanał „W”", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_%E2%80%9EW%E2%80%9D"}],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord techniczny, historii mało. Artykuł obejmuje też dzielnicę Mokotów (Augustówka); w rekordzie zapisano Wilanów wg nagłówka."
+  },
+  {
+    "id": "kolegiata-sw-anny-wilanow",
+    "nazwa": "Kolegiata św. Anny w Warszawie (Wilanów)",
+    "name_en": "St. Anne's Collegiate Church in Wilanów",
+    "typ": "swiatynia",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Kolegiacka 1",
+    "adres_historyczny": null,
+    "lat": 52.166111,
+    "lon": 21.0875,
+    "lokalizacja": "dokladna",
+    "okres": "1772–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół został wzniesiony w latach 1772−1775 według projektu Jana Kotelnickiego; fundatorem był August Aleksander Czartoryski, ówczesny właściciel dóbr wilanowskich.",
+      "Świątynia została gruntownie przebudowana w latach 1857–1870 przez Henryka Marconiego, przy współpracy Leonarda Marconiego i Jana Hussa, na zlecenie Aleksandry i Augusta Potockich.",
+      "Stacje Męki Pańskiej otaczające kościół są dziełem Henryka Marconiego i powstały w latach 1857–1863.",
+      "Kościół został konsekrowany w 1884 przez arcybiskupa Wicentego Popiela.",
+      "W 1965 roku świątynia została wpisana do rejestru zabytków.",
+      "16 października 1998 prymas Polski kardynał Józef Glemp podniósł kościół św. Anny w Wilanowie do rangi kolegiaty Kapituły Kolegiackiej Wilanowskiej."
+    ],
+    "ciekawostki": [
+      "W podziemiach kościoła znajduje się krypta rodowa właścicieli Wilanowa – Potockich i Branickich.",
+      "Przed świątynią rośnie lipa drobnolistna będąca pomnikiem przyrody."
+    ],
+    "summary_en": "St. Anne's church in Wilanów was built in 1772–1775 to a design by Jan Kotelnicki, funded by August Aleksander Czartoryski, and remodelled by Henryk Marconi in 1857–1870. It was raised to collegiate status in 1998.",
+    "ludzie": [
+      {"kto": "Jan Kotelnicki", "rola": "autor projektu kościoła (1772–1775)", "wiki": null},
+      {"kto": "August Aleksander Czartoryski", "rola": "fundator, ówczesny właściciel dóbr wilanowskich", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "przebudowa 1857–1870, stacje Męki Pańskiej", "wiki": null},
+      {"kto": "Bolesław Syrewicz", "rola": "autor rzeźb w fasadzie", "wiki": null},
+      {"kto": "Wicenty Popiel", "rola": "arcybiskup, konsekrował kościół w 1884", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "prymas Polski, podniósł kościół do rangi kolegiaty w 1998", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kolegiata św. Anny w Warszawie (Wilanów)", "url": "https://pl.wikipedia.org/wiki/Kolegiata_%C5%9Bw._Anny_w_Warszawie_%28Wilan%C3%B3w%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-sw-elzbiety-powsin",
+    "nazwa": "Kościół św. Elżbiety w Warszawie",
+    "name_en": "St. Elizabeth's Church in Powsin",
+    "typ": "swiatynia",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "ul. Przyczółkowa 31",
+    "adres_historyczny": null,
+    "lat": 52.1236,
+    "lon": 21.1025,
+    "lokalizacja": "dokladna",
+    "okres": "1398–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1398 roku Elżbieta Ciołkowa, wdowa po Andrzeju Ciołku kasztelanie czerskim, ufundowała na terenie obecnego Powsina drewniany kościół pod wezwaniem św. Andrzeja Apostoła i św. Elżbiety.",
+      "W 1410 roku biskup poznański Wojciech (Albert) odłączył od parafii wilanowskiej wsie Powsino, Jeziorna i Lisy, przypisując je do nowego kościoła w Powsinie.",
+      "Dopiero w 1725 roku, dzięki fundacji Elżbiety z Lubomirskich Sieniawskiej, zbudowano okazały murowany kościół; jego projektantem był Józef Fontana.",
+      "W latach 1803–1815 proboszczem parafii i gospodarzem kościoła był ks. Jan Paweł Woronicz, późniejszy prymas Królestwa Polskiego.",
+      "W 1889 roku kościół rozbudowano: dodano nawy boczne i kruchtę oraz dwie wieże, staraniem hrabiny Aleksandry Potockiej.",
+      "W 1921 roku kościół przebudowano według planów architekta Józefa Dziekońskiego; zlikwidowano dwie dziewiętnastowieczne wieże i postawiono wolno stojącą dzwonnicę.",
+      "W ołtarzu głównym od przeszło 300 lat znajduje się obraz Matki Bożej Tęskniącej, zwanej Powsińską."
+    ],
+    "ciekawostki": [
+      "28 czerwca 1998 r., w sześćsetlecie istnienia kościoła, prymas Józef Glemp uroczyście nałożył na obraz papieską koronę."
+    ],
+    "summary_en": "St. Elizabeth's church in Powsin began as a wooden church founded in 1398 and became a parish in 1410. The present building dates from a 1725 stone rebuild, extended in 1889 and remodelled in 1921, and houses the Matka Boża Tęskniąca image.",
+    "ludzie": [
+      {"kto": "Elżbieta Ciołkowa", "rola": "fundatorka drewnianego kościoła w 1398", "wiki": null},
+      {"kto": "Wojciech (Albert)", "rola": "biskup poznański, który w 1410 wydzielił parafię w Powsinie", "wiki": null},
+      {"kto": "Elżbieta z Lubomirskich Sieniawska", "rola": "fundatorka murowanego kościoła z 1725", "wiki": null},
+      {"kto": "Józef Fontana", "rola": "projektant murowanego kościoła z 1725", "wiki": null},
+      {"kto": "Jan Paweł Woronicz", "rola": "proboszcz w latach 1803–1815, późniejszy prymas Królestwa Polskiego", "wiki": null},
+      {"kto": "Aleksandra Potocka", "rola": "hrabina, ufundowała znaczną część funduszy rozbudowy z 1889", "wiki": null},
+      {"kto": "Teofil Mierzejewski", "rola": "ks., proboszcz, z jego inicjatywy przebudowa z 1921", "wiki": null},
+      {"kto": "Józef Dziekoński", "rola": "architekt przebudowy z 1921", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Elżbiety w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._El%C5%BCbiety_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Kościół jest też sanktuarium Matki Bożej Tęskniącej w Powsinie. Współrzędne z nagłówka."
+  },
+  {
+    "id": "kepa-latoszkowa",
+    "nazwa": "Kępa Latoszkowa",
+    "name_en": "Kępa Latoszkowa",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1442,
+    "lon": 21.1283,
+    "lokalizacja": "przyblizona",
+    "okres": "1831–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osada założona w 1831 roku początkowo składała się z 10 gospodarstw.",
+      "W 1864 osadę przyłączono do gminy Wilanów.",
+      "W 1905 roku liczyła 11 domów i 107 mieszkańców, w 1921 roku 14 domów i 80 mieszkańców.",
+      "W 1943 roku przeprowadzono tu część operacji bojowej pod nazwą akcja Wilanów, skierowanej przeciwko niemieckim osadnikom; spalono cztery domy i zabito 12 osób związanych z działalnością antypolską.",
+      "W 1951 roku wieś została włączona do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kępa Latoszkowa was founded as a settlement in 1831 and became part of Warsaw in 1951. In 1943 an action called Wilanów targeted German settlers here; four houses were burned.",
+    "ludzie": [
+      {"kto": "August Friedrich Borauna", "rola": "przywódca NSDAP w osadzie; jego rodzina i współpracownicy zginęli w akcji 1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kępa Latoszkowa", "url": "https://pl.wikipedia.org/wiki/K%C4%99pa_Latoszkowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica wg nagłówka: Wilanów. Artykuł: od 1960 w Mokotowie, od 2002 ponownie w Wilanowie."
+  },
+  {
+    "id": "kepa-zawadowska",
+    "nazwa": "Kępa Zawadowska",
+    "name_en": "Kępa Zawadowska",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1523,
+    "lon": 21.1291,
+    "lokalizacja": "przyblizona",
+    "okres": "1819–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Miejscowość założona została w 1819; osiedlili się tam koloniści niemieccy (Olędrzy) sprowadzeni przez administratorów dóbr wilanowskich należących do Potockich.",
+      "W 1832 roku koloniści zbudowali szkołę, założyli zachowany do dziś cmentarz ewangelicki oraz kolonię domów mieszkalnych.",
+      "W 1905 roku miejscowość liczyła 35 domów i 278 mieszkańców.",
+      "W latach 1942–1943 w miejscowości znajdował się obóz pracy dla ludności żydowskiej; w 1942 roku było w nim ok. 400 osób.",
+      "W lipcu 1944, w związku z ofensywą Armii Czerwonej, mieszkańcy Kępy Zawadowskiej zostali ewakuowani do Niemiec.",
+      "W 1951 roku wieś została włączona do Warszawy."
+    ],
+    "ciekawostki": [
+      "W 1998 roku rozebrano ostatni, drewniany dom kolonistów olenderskich.",
+      "Na obszarze osiedla znajduje się część rezerwatu przyrody Wyspy Zawadowskie."
+    ],
+    "summary_en": "Kępa Zawadowska was founded in 1819 by German settlers (Olędrzy) brought in by the Potocki estate administration. It had a wartime labour camp for Jewish people in 1942–1943, and its residents were evacuated to Germany in July 1944.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kępa Zawadowska", "url": "https://pl.wikipedia.org/wiki/K%C4%99pa_Zawadowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawna nazwa z tekstu: „Zawadowska” od folwarku Zawady. Cmentarz ewangelicki na tej Kępie jest osobnym rekordem."
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "id": "ulica-trocka",
+    "nazwa": "Ulica Trocka",
+    "name_en": "Trocka Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Trocka",
+    "adres_historyczny": null,
+    "lat": 52.27305,
+    "lon": 21.06276,
+    "lokalizacja": "przyblizona",
+    "okres": "1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie ulica nosiła nazwę Żerańska, a następnie Nowożerańska i dochodziła do tzw. Drogi Lampego (późniejsza ulica Pratulińska).",
+      "Obecna nazwa pochodzi od miasta Troki na Litwie i pojawiła się na planie miasta Feliksa Kasprzykiewicza z 1920 roku.",
+      "Od połowy XIX wieku w rejonie późniejszej ulicy Trockiej (strona parzysta) mieściła się posiadłość Adolfa Hipsza (Hiebscha lub Hubscha) zwana Hipszówką.",
+      "Towarzystwo Opieki nad Zwierzętami zorganizowało na terenie Hipszówki pierwsze w Warszawie schronisko dla psów, kotów i chorych koni, zniszczone w 1939 roku.",
+      "Po przyłączeniu Targówka do Warszawy w 1916 roku ulica stanowiła ówczesną granicę miasta.",
+      "25 października 1987 roku u zbiegu ulic Radzymińskiej i Trockiej poświęcono plac pod budowę kościoła pw. św. Marka Ewangelisty, świątynię konsekrowano 25 czerwca 2000 roku.",
+      "W latach 1992–2016 u zbiegu ulic Trockiej i Pratulińskiej znajdował się bazar, który w związku z budową stacji Trocka drugiej linii metra został przeniesiony bliżej Radzymińskiej.",
+      "Stacja metra Trocka została oddana do użytku 15 września 2019."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Trocka Street in the Targówek district of Warsaw, named after the Lithuanian city of Trakai. Before the name change it was called Żerańska; the Animal Protection Society set up Warsaw's first dog and horse shelter on the nearby Hipszówka estate.",
+    "ludzie": [
+      {"kto": "Feliks Kasprzykiewicz", "rola": "autor planu miasta z 1920 roku, na którym pojawiła się nazwa ulicy", "wiki": null},
+      {"kto": "Adolf Hipsz", "rola": "właściciel posiadłości Hipszówka od połowy XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Żerańska", "Nowożerańska"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Trocka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Trocka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-tykocinska",
+    "nazwa": "Ulica Tykocińska",
+    "name_en": "Tykocińska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Tykocińska",
+    "adres_historyczny": null,
+    "lat": 52.26878,
+    "lon": 21.05282,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie ulica nosiła nazwę Julianówka i była drogą przechodzącą przez kolonię o tej samej nazwie.",
+      "W 1914 roku przy ulicy wystawiono nowy, neorenesansowy gmach (obecnie nr 32/34), który pomieścił urząd gminy wraz z sądem grodzkim.",
+      "Po przyłączeniu Targówka do Warszawy ulicę przemianowano na Julianowską.",
+      "Obecna nazwa ulicy pochodzi od miejscowości Tykocin na Podlasiu i po raz pierwszy pojawiła się na planie Warszawy w 1920 roku.",
+      "W 1930 roku pod nr 15 (część dawnej kolonii Pracówka) powstała willa architekta Bolesława Pietrusińskiego, która zapoczątkowała nowoczesną architekturę mieszkaniową w tej części dzielnicy.",
+      "Budowa kościoła Chrystusa Króla rozpoczęła się w 1932 roku, a ze względu na działania wojenne zakończono ją dopiero w 1953 roku.",
+      "W okresie międzywojennym w domu nr 24 mieścił się XXIV komisariat Policji Państwowej.",
+      "W trakcie powstania warszawskiego w gmachu pod nr 32/34 działał punkt sanitarny II Rejonu 6-XXVI Obwodu Armii Krajowej."
+    ],
+    "ciekawostki": [
+      "Willa Pietrusińskiego ocalała w czasie odbudowy ukryta między blokami, ze względu na zasługi jej właściciela przy odbudowie miasta."
+    ],
+    "summary_en": "Tykocińska Street in the Targówek district of Warsaw, named after the town of Tykocin. Before the Second World War it was one of the main streets of Targówek; after the war most of it was cut short by housing blocks.",
+    "ludzie": [
+      {"kto": "Roch Krzeszewski (1867–1951)", "rola": "były wójt gminy Bródno, wystawił kamienice czynszowe przy parzystej stronie ulicy i ufundował plac pod kościół Chrystusa Króla", "wiki": null},
+      {"kto": "Bolesław Pietrusiński", "rola": "architekt, autor willi pod nr 15", "wiki": null}
+    ],
+    "dawne_nazwy": ["Julianówka", "Julianowska"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Tykocińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Tykoci%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-ks-piotra-skargi",
+    "nazwa": "Ulica ks. Piotra Skargi",
+    "name_en": "Father Piotr Skarga Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. ks. Piotra Skargi",
+    "adres_historyczny": null,
+    "lat": 52.26904,
+    "lon": 21.04921,
+    "lokalizacja": "przyblizona",
+    "okres": "połowa XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Po przyłączeniu Targówka do granic Warszawy ulica nosiła nazwę Mantynowska.",
+      "Obecna nazwa pojawia się po raz pierwszy na planie Warszawy w 1920 roku.",
+      "W latach 20. XX wieku ulica, jako jedna z pierwszych w dzielnicy, została wybrukowana i podłączona do sieci gazowej.",
+      "Pod nr 48 w latach 1928-1944 funkcjonowała fabryka amunicji Warszawskiej Spółki Myśliwskiej.",
+      "W czasie powstania warszawskiego fabryka była jednym ze strategicznych celów powstańczych. Gmach uległ zniszczeniu.",
+      "W 1960 roku powstało kino „Znicz” na 200 miejsc.",
+      "W 1978 roku arteria została podzielona na dwa odcinki w związku z budową nowych osiedli mieszkaniowych.",
+      "Nowa zabudowa ulicy Piotra Skargi tudzież okolic została sfilmowana w 1979 roku w filmie Andrzeja Wajdy „Dyrygent”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Father Piotr Skarga Street in the Targówek district of Warsaw. In the 1920s it was one of the first paved streets in the district; under the Polish People's Republic it lost much of its prewar building stock.",
+    "ludzie": [
+      {"kto": "Józef Noskowski", "rola": "przeprowadził parcelację Targówka w połowie XIX wieku", "wiki": null},
+      {"kto": "Andrzej Wajda", "rola": "reżyser filmu „Dyrygent” (1979), w którym sfilmowano okolicę ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Mantynowska"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica ks. Piotra Skargi w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_ks._Piotra_Skargi_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-sw-wincentego",
+    "nazwa": "Ulica św. Wincentego",
+    "name_en": "St. Vincent Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. św. Wincentego",
+    "adres_historyczny": null,
+    "lat": 52.283611,
+    "lon": 21.047222,
+    "lokalizacja": "przyblizona",
+    "okres": "przed XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1780 Szmul Zbytkower założył za Rogatkami Bródnowskimi cmentarz żydowski, którego główne wejście wychodziło na dzisiejszą ulicę św. Wincentego.",
+      "Cmentarz Bródnowski otwarto 21 listopada 1884 i tę datę uznaje się za początek przemiany wiejskiej drogi w miejską ulicę.",
+      "W 1916 rozszerzono granice miasta i odcinek do końca muru cmentarnego znalazł się w Warszawie; otrzymał za patrona świętego Wincentego à Paulo.",
+      "26 października 1933 uruchomiono linię tramwajową „6A”, która połączyła plac Narutowicza przez Śródmieście z bramą cmentarną.",
+      "10 września 1939 ulica św. Wincentego stała się jednym z celów ataku bombowego wojsk niemieckich.",
+      "Po wybuchu powstania warszawskiego hitlerowcy urządzili łapankę; egzekucja siedemnastu zatrzymanych mężczyzn miała miejsce pod ścianą domu przy ulicy św. Wincentego 44a.",
+      "W latach 1957–1960 powstał kościół Matki Bożej Częstochowskiej (nr 81).",
+      "30 marca 1969 zlikwidowano trakcję tramwajową, a linię zastąpiono autobusową „169bis”."
+    ],
+    "ciekawostki": [
+      "W domu nr 84, naprzeciwko bramy głównej cmentarza, działała legendarna restauracja „Krańcowa”, gdzie organizowano konsolacje, których przebieg często był dość oryginalny.",
+      "Pogrzeb Romana Dmowskiego, który odbył się 7 stycznia 1939, został udokumentowany na filmach pokazujących ówczesny wygląd ulicy."
+    ],
+    "summary_en": "St. Vincent Street in the Targówek district of Warsaw, running from the Bródno Jewish cemetery area towards Ostródzka. It started as a rural road to Nieporęt and became an urban street after the Bródno cemetery opened in 1884.",
+    "ludzie": [
+      {"kto": "Szmul Zbytkower", "rola": "założył cmentarz żydowski za Rogatkami Bródnowskimi w 1780 roku", "wiki": null},
+      {"kto": "Rokita (ps.)", "rola": "dowódca XXVI obwodu Armii Krajowej, rozstrzelany na zbiegu z ulicą Oszmiańską", "wiki": null},
+      {"kto": "Kruk (ps.)", "rola": "dowódca XXVI obwodu Armii Krajowej, rozstrzelany na zbiegu z ulicą Oszmiańską", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Bródnowska", "Wincentego (nazwa po 1945)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica św. Wincentego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%9Bw._Wincentego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje ulicę także po stronie Białołęki (odcinek ojca Aniceta); w rekordzie dzielnica z nagłówka: Targówek."
+  },
+  {
+    "id": "warszawa-zacisze-wilno",
+    "nazwa": "Przystanek Warszawa Zacisze Wilno",
+    "name_en": "Warszawa Zacisze Wilno railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.27786,
+    "lon": 21.08001,
+    "lokalizacja": "dokladna",
+    "okres": "2013–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek powstał w ramach partnerstwa publiczno-prywatnego.",
+      "Warszawa Zacisze Wilno to jeden z pierwszych w Polsce przypadków sfinansowania przystanku kolejowego przez firmę prywatną. Koszt budowy wyniósł 6,5 mln zł.",
+      "Otwarcie przystanku nastąpiło 9 czerwca 2013 roku.",
+      "Przez początkowe lata działania przystanku dostęp do niego istniał jedynie od strony osiedla Wilno.",
+      "Droga dojazdowa od strony Zacisza została zbudowana w IV kwartale 2019 roku.",
+      "Przystanek składa się z dwóch wysokich, częściowo zadaszonych peronów bocznych o długości 200 metrów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A commuter rail stop in the Targówek district of Warsaw, opened on 9 June 2013. It was one of the first railway stops in Poland financed by a private company, the developer of the nearby Wilno estate.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Zacisze Wilno", "url": "https://pl.wikipedia.org/wiki/Warszawa_Zacisze_Wilno"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu niepodany; przystanek przy granicy Zacisza i Elsnerowa, w pobliżu ul. Wiernej."
+  },
+  {
+    "id": "warszawska-wytwornia-energii",
+    "nazwa": "Warszawska Wytwórnia Energii",
+    "name_en": "Warsaw Energy Plant (WWE)",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Gwarków 9",
+    "adres_historyczny": null,
+    "lat": 52.261588,
+    "lon": 21.103369,
+    "lokalizacja": "dokladna",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1989 roku zawarta została umowa między rządem polskim a włoskim na dostarczenie technologii dotyczącej budowy spalarni.",
+      "16 lutego 1997 r. w gminie Warszawa-Targówek odbyło się referendum dotyczące spalarni śmieci. Większość głosujących była przeciwna budowie, ale frekwencja nie przekroczyła 30% i wynik był niewiążący.",
+      "W kwietniu 2000 r. przy ul. Gwarków 9 ukończono budowę Zakładu Unieszkodliwiania Stałych Odpadów Komunalnych.",
+      "W 2018 przetarg na rozbudowę zakładu z ofertą o wartości 1,038 mld zł wygrało chińskie przedsiębiorstwo Shanghai Electric Power Construction. Krajowa Izba Odwoławcza nakazała jednak unieważnienie tej oferty.",
+      "W 2020 podpisano umowę na rozbudowę spalarni z koreańską spółką POSCO Engineering & Construction Co. Ltd., która złożyła ofertę o wartości 1,668 mld zł.",
+      "Prace rozbudowy rozpoczęły się w 2021.",
+      "W 2025 roku spalarnia zmieniła nazwę na Warszawską Wytwórnię Energii (WWE).",
+      "Zakład został uruchomiony w lutym 2026 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warsaw Energy Plant (WWE), formerly the municipal waste incineration plant ZUSOK at Gwarków 9 in Targówek. Opened in 2000 as the first municipal waste-to-energy plant in Poland, it was expanded after 2021 and restarted in 2026.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zakład Unieszkodliwiania Stałych Odpadów Komunalnych (ZUSOK)", "spalarnia śmieci"],
+    "zrodla": [{"tytul": "Wikipedia: Warszawska Wytwórnia Energii", "url": "https://pl.wikipedia.org/wiki/Warszawska_Wytw%C3%B3rnia_Energii"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-boleslawa-pietrusinskiego",
+    "nazwa": "Willa Bolesława Pietrusińskiego",
+    "name_en": "Bolesław Pietrusiński Villa",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Tykocińska 15",
+    "adres_historyczny": null,
+    "lat": 52.267472,
+    "lon": 21.055861,
+    "lokalizacja": "dokladna",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jednopiętrowy zabytkowy dom wzniesiony w 1930 przy ulicy Tykocińskiej 15 na terenie osiedla Targówek Mieszkaniowy.",
+      "Przed II wojną światową w willi mieszkał i pracował jej projektant, architekt Bolesław Pietrusiński.",
+      "Po wojnie w budynku willi działał chwilowo komitet PPR, a następnie przedszkole i urząd ZUS.",
+      "W latach 90. XX wieku budynek odzyskali spadkobiercy wcześniejszych właścicieli.",
+      "W 2009 obiekt został wpisany do rejestru zabytków, zaś w 2012 willę nabyła i wyremontowała spółka Grudnik Nieruchomości."
+    ],
+    "ciekawostki": [
+      "Ocalała również ukryta między blokami willa Pietrusińskiego, ze względu na zasługi właściciela przy odbudowie miasta."
+    ],
+    "summary_en": "A listed interwar villa at Tykocińska 15 in the Targówek district of Warsaw, built in 1930 and designed by the architect Bolesław Pietrusiński, who also lived in it. It was entered in the register of monuments in 2009.",
+    "ludzie": [
+      {"kto": "Bolesław Pietrusiński", "rola": "architekt, projektant willi i jej mieszkaniec przed wojną", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Willa Bolesława Pietrusińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Boles%C5%82awa_Pietrusi%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "rogatka-brodnowska",
+    "nazwa": "Rogatka bródnowska",
+    "name_en": "Bródno Toll Gate",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "11 Listopada 68",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał na podstawie projektu prawdopodobnie Wiktora Junosza-Piotrowskiego około 1900 roku.",
+      "Około 1915 roku na posesji działał miejski skład kamienia brukowego.",
+      "W latach 1944–1945 mieściły się tu katownia i zarazem sowiecki Trybunał Wojenny.",
+      "Ofiary działalności NKWD w tym budynku były grzebane u podnóża pobliskiego nasypu kolejowego.",
+      "W 2013 roku umieszczono na nim tablicę upamiętniającą ofiary tamtych wydarzeń."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building at 11 Listopada 68, also known as the Rogatka wileńska (toll gate), built around 1900. In 1944-1945 it housed an execution site and a Soviet military tribunal; a memorial plaque was added in 2013.",
+    "ludzie": [
+      {"kto": "Wiktor Junosza-Piotrowski", "rola": "prawdopodobny autor projektu", "wiki": null}
+    ],
+    "dawne_nazwy": ["rogatka wileńska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Rogatka bródnowska", "url": "https://warszawa.fandom.com/pl/wiki/Rogatka_bródnowska"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Projektant podany jako „prawdopodobnie”."
+  },
+  {
+    "id": "studia-superstacji",
+    "nazwa": "Studia Superstacji",
+    "name_en": "Superstacja Studios",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Inżynierska 4",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w okresie międzywojennym i był siedzibą dla kina Era.",
+      "Po wyzwoleniu Warszawy we wrześniu 1944 roku w budynku urządzono kolejne kino: „Syrena”, które działało po wojnie.",
+      "W latach 90. XX wieku w budynku mieścił się krótko Teatr Janusza Wiśniewskiego, który dał tu premierę spektaklu „Życie jest cudem” (1992).",
+      "We wnętrzu tym zrealizowano również zdjęcia do telewizyjnej „Balladyny” (1993).",
+      "Od 2006 roku z budynku nadaje Superstacja TV.",
+      "W 1995 roku budynek został sprzedany prywatnemu właścicielowi, jednak sąd uznał tę decyzję za nieważną."
+    ],
+    "ciekawostki": [
+      "Jedyna osobista garderoba w budynku należy do Karola Strasburgera."
+    ],
+    "summary_en": "A former cinema building at Inżynierska 4 that became a TV studio complex. It was called Kino Era and then Kino Syrena, housed the Janusz Wiśniewski theatre in the 1990s, and has broadcast Superstacja TV since 2006.",
+    "ludzie": [
+      {"kto": "Janusz Wiśniewski", "rola": "dyrektor teatru, który w budynku dał premierę „Życie jest cudem” (1992)", "wiki": null},
+      {"kto": "Jan Mroziński", "rola": "założyciel teatru m.st. Warszawy, który wystąpił w budynku jesienią 1944 roku", "wiki": null},
+      {"kto": "Karol Strasburger", "rola": "właściciel osobistej garderoby w budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kino Era", "Kino Syrena"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Studia Superstacji", "url": "https://warszawa.fandom.com/pl/wiki/Studia_Superstacji"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-cymermanow",
+    "nazwa": "Kamienica Cymermanów",
+    "name_en": "Cymerman Tenement",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Białostocka 4",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica Cymermanów powstała w latach 1910–1913.",
+      "Kamienicę odrestaurowano w 1993 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement at Białostocka 4 built in 1910-1913 and restored in 1993. It is listed among the buildings of Białostocka street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Białostocka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Białostocka"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Rekord z artykułu o ulicy; tylko dwie daty z jednego zdania."
+  },
+  {
+    "id": "ulica-bialostocka",
+    "nazwa": "ulica Białostocka",
+    "name_en": "Białostocka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Białostocka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1889–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Białostocka to dawna droga narolna wsi Targówek.",
+      "W 1889 została włączona do Warszawy i uregulowana, pierwotnie tylko przy Radzymińskiej, później przebita w kierunku Targowej.",
+      "Z racji równoległego położenia do torów kolei warszawsko-petersburskiej nosiła w okresie Królestwa Polskiego nazwę Objazdowa.",
+      "W czasie II wojny światowej uległa zniszczeniu zabudowa północnej strony ulicy granicząca z torami kolejowymi.",
+      "W latach 1982–1986 powstały 3 bloki mieszkalne przy ul. Białostockiej (Białostocka 7, 9 i 11) tzw. Kolonia Białostocka po północnej stronie ulicy.",
+      "W 2002 ukończona została po północnej stronie ulicy budowa centrum handlowego mieszczącego stację Warszawa Wileńska."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Białostocka street in Stara Praga, a former rural road of Targówek that was annexed to Warsaw in 1889. It ran alongside the rail line, was called Objazdowa under the Kingdom of Poland, and gained the Warszawa Wileńska shopping centre in 2002.",
+    "ludzie": [],
+    "dawne_nazwy": ["Objazdowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Białostocka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Białostocka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  },
+  {
+    "id": "ulica-borowskiego",
+    "nazwa": "ulica Tadeusza Borowskiego",
+    "name_en": "Tadeusz Borowski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Borowskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę Borowskiego wytyczono w 1969 lub 1970 roku.",
+      "Swoją nazwę otrzymała ona 27 kwietnia 1971 roku, gdy nadano jej patrona, Tadeusza Borowskiego, poety, prozaika, więźnia niemieckiego obozu koncentracyjnego Auschwitz.",
+      "Ulica przechodzi obok pozostałości XIX-wiecznej zabudowy wojskowej, zaadaptowanej w okresie PRL-u na obiekty instytucji państwowych – warsztaty Instytutu Tele- i Radiotechnicznego we wschodniej części i obiekty Przedsiębiorstwa Transportu Samochodowego Łączności w zachodniej części.",
+      "Obok dziś istniejącej ulicy znajdowały się zbudowane po 1875 roku obiekty wojskowe, a w parterowych domkach znajdowały się magazyny i stajnie 2. Orenburskiego Pułku Kozaków, mającego koszary w pobliżu do 1915 roku."
+    ],
+    "ciekawostki": [
+      "Na cegłach dawnych budynków zachowały się wyryte w cyrylicy napisy patrolujących, m.in. nazwiska z datami, a najpóźniejszy z nich pochodzi z 4 września 1914 roku."
+    ],
+    "summary_en": "A 200 m street in Nowa Praga, laid out in 1969-1970 and named in 1971 after the poet and Auschwitz survivor Tadeusz Borowski. The old barracks of the Orenburg Cossack regiment next to it were later used by the Institute of Tele- and Radiotechnology.",
+    "ludzie": [
+      {"kto": "Tadeusz Borowski", "rola": "poeta, prozaik, więzień Auschwitz; patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Borowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Borowskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  },
+  {
+    "id": "ulica-brzeska",
+    "nazwa": "ulica Brzeska",
+    "name_en": "Brzeska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Brzeska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od powstałego w 1866 roku Dworca Terespolskiego, zwanego też Brzeskim, który dziś zwie się Wschodnim.",
+      "Ulica została wytyczona w latach 80 XIX w. w sąsiedztwie Dworca Terespolskiego.",
+      "W 1925 roku przedłużona za ul. Białostocką - wówczas ten odcinek nosił nazwę ul. Słonimska.",
+      "Przy tej ulicy są liczne przedwojenne kamienice: nr 4, nr 5, nr 6, nr 7, nr 9, nr 11, nr 12, nr 13, nr 14, nr 14a, nr 15/17, nr 17a, nr 18, nr 19, nr 20, nr 21, nr 29/31."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Brzeska street in Stara Praga, laid out in the 1880s next to Terespol Station, which gave it its name. The section beyond Białostocka was called Słonimska from 1925 until it was merged with Brzeska after WWII.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Słonimska (odcinek za ul. Białostocką)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Brzeska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Brzeska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  },
+  {
+    "id": "ulica-florianska",
+    "nazwa": "ulica Floriańska",
+    "name_en": "Floriańska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Floriańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1864–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę Floriańską wytyczono około 1864 roku, gdy znajdowało się tutaj targowisko.",
+      "Od powstania przez czas zaborów ulica nosiła nazwę Konstantynowskiej na cześć księcia Konstantego.",
+      "Od 1921 roku uzyskała nazwę Floriańska (zapisywana początkowo jako Florjańska), najpewniej od znajdującej się obok katedry św. Floriana.",
+      "Ulica zachowała swój dawny charakter. Jako jedna z niewielu na Pradze zachowała swoją brukowaną nawierzchnię.",
+      "Od 2006 r. w maju odbywa się na ulicy Jarmark Floriański."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Floriańska street in Stara Praga, laid out around 1864 and called Konstantynowska under the partitions. It took its present name in 1921 after the nearby cathedral of St. Florian and keeps its cobbled surface.",
+    "ludzie": [],
+    "dawne_nazwy": ["Konstantynowska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Floriańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Floriańska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru (numeracja 2-14 w nagłówku); lat/lon null."
+  },
+  {
+    "id": "ulica-folwarczna",
+    "nazwa": "ulica Folwarczna",
+    "name_en": "Folwarczna Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "Folwarczna",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od folwarku Szmulowizna i została utworzona podczas parcelacji ziem należących do rodziny Brühlów w latach 70. XIX wieku.",
+      "W 1889 roku została włączona w granice Warszawy, wówczas wytyczono obecnie istniejący jej fragment do ulicy Kawęczyńskiej.",
+      "Istniejące obecnie kamienice pod numerami 5 i 7 powstały w latach 30. XX wieku.",
+      "W 1939 roku, na skutek bombardowań pobliskiego węzła kolejowego, znaczne zniszczenia poniosła zabudowa ulicy pomiędzy ulicą Radzymińską i ulicą Białostocką."
+    ],
+    "ciekawostki": [
+      "Na elewacjach budynków zachowały się ślady dawnej działalności handlowo-usługowej, m.in. zakład wyrobu zabawek przy Folwarcznej 5."
+    ],
+    "summary_en": "Folwarczna street in Szmulowizna, created in the 1870s when the Brühl family's estate was subdivided. Bombing in 1939 destroyed much of its middle section, which was cleared in the 1960s for a housing block.",
+    "ludzie": [
+      {"kto": "rodzina Brühlów", "rola": "właściciele ziem, które parcelowano w latach 70. XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Folwarczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Folwarczna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord ulicy bez numeru, lat/lon null."
+  }
+]

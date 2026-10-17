@@ -1,0 +1,330 @@
+[
+  {
+    "id": "ulica-nobla",
+    "nazwa": "Ulica Alfreda Nobla",
+    "name_en": "Alfred Nobel Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Nobla",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Patronem ulicy jest Alfred Nobel, szwedzki przemysłowiec i naukowiec, wynalazca dynamitu, fundator Nagrody Nobla.",
+      "Ulica zaczyna swój bieg na skrzyżowaniu z ulicą Zwycięzców i kończy się ślepo, 100 metrów za skrzyżowaniem z ulicą Walecznych.",
+      "Nobla 7, 9, 11, 13, 15, 15a, 17 i 17a tworzą pierzeję wybudowaną przed 1939 rokiem (funkcjonalizm, modernizm historyczny).",
+      "Nobla 27, 29 i 29a to domy wybudowane po 1937 roku wg projektu Maksymiliana Goldberga (funkcjonalizm)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Alfred Nobla is a half-kilometre residential street on Saska Kępa in Praga-Południe, named after Alfred Nobel. It ends in a dead end 100 metres past Walecznych, and has interwar functionalist houses along it.",
+    "ludzie": [
+      {"kto": "Alfred Nobel", "rola": "patron ulicy, szwedzki przemysłowiec i naukowiec, wynalazca dynamitu", "wiki": null},
+      {"kto": "Maksymilian Goldberg", "rola": "projektant domów przy Nobla 27, 29 i 29a", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Nobla", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Nobla"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-nubijska",
+    "nazwa": "Ulica Nubijska",
+    "name_en": "Nubijska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Nubijska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest krótką, ślepą, osiedlową uliczką w nowej części Saskiej Kępy, odchodzącą od ulicy Afrykańskiej.",
+      "Ulica została wytyczona i nazwana w 1970 roku.",
+      "Zabudowana jest blokami mieszkalnymi z lat 70. i 80. XX wieku.",
+      "Nazwa ulicy nawiązuje do Nubii, krainy historycznej w południowym Egipcie oraz Sudanie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Nubijska is a short dead-end street in the newer part of Saska Kępa, Praga-Południe, leaving Afrykańska. It was named in 1970 after Nubia and is built up with 1970s and 1980s blocks.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Nubijska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Nubijska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-nurska",
+    "nazwa": "Ulica Nurska",
+    "name_en": "Nurska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Nurska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Nurska to krótka, ślepa uliczka biegnąca na wschód od ulicy Poselskiej; ruch samochodowy jest na niej dozwolony tylko dla mieszkańców.",
+      "Zaledwie sześć domów ma adres ulicy Nurskiej, a ich zabudowa pochodzi z lat 30. XX wieku.",
+      "Pod adresem Nurska 4 znajduje się jednopiętrowa kamienica wybudowana w 1938 roku wg projektu Wandy i Stefana Netto (funkcjonalizm)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Nurska is a 65-metre dead-end street on Saska Kępa in Praga-Południe, east of Poselska. Only six houses have addresses on it, and number 4 is a 1938 functionalist tenement.",
+    "ludzie": [
+      {"kto": "Wanda Netto", "rola": "projektantka kamienicy przy Nurskiej 4", "wiki": null},
+      {"kto": "Stefan Netto", "rola": "projektant kamienicy przy Nurskiej 4", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Nurska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Nurska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-ostrzycka",
+    "nazwa": "Ulica Ostrzycka",
+    "name_en": "Ostrzycka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Ostrzycka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Ostrzycka, dawniej także Głowicowa, biegnie od Bracławskiej do Motorowej i przecina po drodze jedynie ulicę Opinogórską.",
+      "Ulica pojawia się na planach regulacyjnych Gocławia i Grochowa w latach 30. XX wieku, i zależnie od planu nazywała się Ostrzycka lub Głowicowa.",
+      "W planowanym przebiegu ulica, nazwana ostatecznie Ostrzycką, została wytyczona zapewne dopiero w latach 50. XX wieku.",
+      "Od Fundamentowej odcięła ją budowa Trasy Łazienkowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ostrzycka is a 250-metre street on Gocław in Praga-Południe, one of the streets around the Przyczółek Grochowski estate. Planned in the 1930s as Ostrzycka or Głowicowa, it was actually laid out in the 1950s.",
+    "ludzie": [],
+    "dawne_nazwy": ["Głowicowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Ostrzycka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Ostrzycka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-owsiana",
+    "nazwa": "Ulica Owsiana",
+    "name_en": "Owsiana Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Owsiana",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Owsiana to przecznica odchodząca od ul. Groszowickiej na północ, zakończona ślepo w pobliżu ul. Mińskiej.",
+      "Przy ul. Owsianej 14 od 1937 roku znajdowały się Zakłady Telefunken, gdzie produkowano odbiorniki radiowe.",
+      "Po wojnie władze ludowe wtrąciły do więzienia właściciela fabryczki, Jerzego Pakulskiego (oficera AK)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Owsiana is a short dead-end street on Kamionek in Praga-Południe, running north off Groszowicka. Its number 14 housed the Telefunken radio factory from 1937.",
+    "ludzie": [
+      {"kto": "Jerzy Pakulski", "rola": "właściciel fabryczki Telefunken, oficer AK, po wojnie uwięziony", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Owsiana", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Owsiana"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica w treści artykułu: Praga Północ; w nagłówku: Praga-Południe (przyjęto nagłówek)."
+  },
+  {
+    "id": "dawna-fabryka-telefunken-owsiana-14",
+    "nazwa": "Dawna fabryka Telefunken przy ul. Owsianej 14",
+    "name_en": "Former Telefunken factory at Owsiana 14",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Owsiana 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1937–bd.",
+    "istnieje": true,
+    "fakty": [
+      "Od 1937 roku w budynku przy ul. Owsianej 14 znajdowały się Zakłady Telefunken, gdzie produkowano odbiorniki radiowe.",
+      "Maszyny sprowadzone tuż przed wojną ze Szwecji przetrwały całą wojnę w budynku.",
+      "Po wojnie budynek oddano fabryce mięsnej Rembertów, która wyrzuciła maszyny i znacznie przekształciła budynek.",
+      "Później budynek przejęły Zakłady Odzieżowe Cora, które umieściły w mieszkaniach biura."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The building at Owsiana 14 on Kamionek housed the Telefunken radio factory from 1937. After the war it was taken over by a meat factory and later by a clothing company.",
+    "ludzie": [
+      {"kto": "Jerzy Pakulski", "rola": "właściciel fabryczki Telefunken, oficer AK", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Owsiana", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Owsiana"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst: »Obecnie wszystko uległo zniszczeniu«; stan budynku nie jest opisany wprost."
+  },
+  {
+    "id": "ulica-pesztenska",
+    "nazwa": "Ulica Peszteńska",
+    "name_en": "Peszteńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Peszteńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica swoją nazwę zawdzięcza miastu Peszt, które obecnie jest częścią stolicy Węgier, Budapesztu.",
+      "Według przedwojennych planów ulica miała przebiegać od ul. Angorskiej do ulicy Zwycięzców, podobnie jak ul. Niekłańska.",
+      "Ulica zaczyna się od Holenderskiej (przy szpitalu), przecina Walecznych i dochodzi do Angorskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Peszteńska is a small street on Saska Kępa in Praga-Południe, named after Pest, now part of Budapest. Its planned route was changed when the children's hospital was built on Niekłańska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Peszteńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Peszteńska"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst: budowa Szpitala Dziecięcego przy Niekłańskiej spowodowała zmiany planów; data nie jest podana."
+  },
+  {
+    "id": "ulica-poselska",
+    "nazwa": "Ulica Poselska",
+    "name_en": "Poselska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Poselska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została zapewne nazwana tak dla uhonorowania posłów, członków izby niższej naszego parlamentu, analogicznie do śródmiejskiej ulicy Senatorskiej.",
+      "Do lat 50. XX wieku ulica była pokryta żwirem i szutrem.",
+      "Przy ul. Poselskiej 21 mieszkał znany aktor Wieńczysław Gliński.",
+      "W 2008 roku władze dzielnicy w całości wyremontowały jezdnie oraz chodniki na ulicy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Poselska is a 420-metre one-way street on Saska Kępa in Praga-Południe, probably named after members of the Sejm. Actor Wieńczysław Gliński lived at number 21, and the street was fully renovated in 2008.",
+    "ludzie": [
+      {"kto": "Wieńczysław Gliński", "rola": "znany aktor, mieszkał przy ul. Poselskiej 21", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Poselska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Poselska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-pustelnicka",
+    "nazwa": "Ulica Pustelnicka",
+    "name_en": "Pustelnicka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Pustelnicka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od wsi Pustelnik pod Sulejówkiem; dawniej ulica nosiła nazwę Łęczyckiej.",
+      "Ulica rozpoczyna się skrzyżowaniem z ulicą Witolińską i dochodzi do Komorskiej, gdzie znajduje się Bazar i centrum handlowe Szembeka.",
+      "Zabudowę ulicy stanowią domy wielorodzinne o wysokości około trzech pięter.",
+      "Pod adresem Pustelnicka 35 znajduje się przedszkole."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Pustelnicka is a 540-metre street on Grochów and Gocławek in Praga-Południe. It is named after the village of Pustelnik near Sulejówek and was once called Łęczycka.",
+    "ludzie": [],
+    "dawne_nazwy": ["Łęczycka"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Pustelnicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Pustelnicka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-plowiecka",
+    "nazwa": "Ulica Płowiecka",
+    "name_en": "Płowiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe, Wawer",
+    "adres_dzis": "Płowiecka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica szybkiego ruchu, położona na Pradze Południe i w Wawrze, ma 1,7 km długości.",
+      "Biegnie od skrzyżowania z ulicą Jordanowską na wschód.",
+      "Krzyżuje się m.in. z Marsa (jako rondo Mościckiego), Tomasza Edisona i Traktem Lubelskim.",
+      "Jej przedłużeniem jest ulica Bronisława Czecha."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Płowiecka is a 1.7 km fast road running east from Jordanowska across Praga-Południe and Wawer. It crosses Marsa at the Mościcki roundabout, and its extension is Bronisława Czecha Street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Płowiecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Płowiecka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-radziłowska",
+    "nazwa": "Ulica Radziłowska",
+    "name_en": "Radziłowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Radziłowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 30. XX wieku; początkowo planowano, że będzie biec od Zakopiańskiej do Wandy, przecinając po drodze Paryską przy placu Przymierza.",
+      "Ostatecznie z planów zrezygnowano i ulicę skrócono do krótkiego odcinka w rejonie Zakopiańskiej.",
+      "Ulica Radziłowska była jedną z ostatnich wyasfaltowanych uliczek na Saskiej Kępie.",
+      "Nazwa ulicy wiąże się zapewne z miejscowością Radziłów, współcześnie w powiecie grajewskim w województwie podlaskim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Radziłowska is a 50-metre street on Saska Kępa in Praga-Południe, a shortened version of a planned road from Zakopiańska to Wanda. It was one of the last asphalted streets on the estate.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Radziłowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Radziłowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

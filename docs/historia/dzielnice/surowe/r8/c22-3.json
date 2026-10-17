@@ -1,0 +1,129 @@
+[
+  {
+    "id": "aleja-krakowska",
+    "nazwa": "Aleja Krakowska",
+    "name_en": "Aleja Krakowska (Kraków Avenue)",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Aleja Krakowska",
+    "adres_historyczny": null,
+    "lat": 52.1811,
+    "lon": 20.9497,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1923 wzdłuż obecnej alei przeprowadzono linię tramwajową w kierunku Okęcia.",
+      "W 1927 po wschodniej stronie alei powstały Polskie Zakłady „Skoda”, do których przeprowadzono bocznicę kolejową przecinającą ulicę na wysokości obecnej ul. Komitetu Obrony Robotników.",
+      "W czasach Polski Ludowej, do reformy sieci dróg w 1985 roku, ulica była częścią dróg państwowych nr 15 i 16 oraz dróg międzynarodowych E7 i E82.",
+      "Do końca 2013 roku ulica leżała w ciągu drogi krajowej nr 7 i trasy europejskiej E77."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Aleja Krakowska is the main street of the Włochy district, continuing ul. Grójecka towards Kraków. A tram line reached Okęcie in 1923 and the Skoda works opened on its eastern side in 1927.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Krakowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Krakowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "awaryjne-ladowanie-lot-lo16-okecie",
+    "nazwa": "Awaryjne lądowanie LOT 016 na Lotnisku Chopina",
+    "name_en": "LOT 016 emergency landing at Warsaw Chopin Airport",
+    "typ": "zdarzenie",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.16555556,
+    "lon": 20.96722222,
+    "lokalizacja": "dokladna",
+    "okres": "1 listopada 2011",
+    "istnieje": false,
+    "fakty": [
+      "1 listopada 2011 roku doszło na Lotnisku Chopina do awaryjnego lądowania Boeinga 767-300ER (SP-LPC) lotu LO 16 z awarią podwozia.",
+      "Samolot wylądował około godziny 14:30 na drodze startowej 33; ocierał się kadłubem i gondolami silników o nawierzchnię zalaną pianą przeciwpożarową.",
+      "Port lotniczy został zamknięty do 2 listopada 2011 roku do godziny 22:34.",
+      "Około godziny 13:40 lotnictwo wojskowe otrzymało informację o kłopotach boeinga; dwa myśliwce F-16 wystartowały w ciągu 10 minut z 32. Bazy Lotnictwa Taktycznego w Łasku i eskortowały samolot.",
+      "Raport końcowy Państwowej Komisji Badania Wypadków Lotniczych opublikowano 15 grudnia 2017 roku; zakwalifikowała ona zdarzenie jako wypadek lotniczy.",
+      "7 listopada 2011 roku prezydent RP wręczył ordery i odznaczenia dla załogi samolotu oraz przedstawicieli służb ratunkowych."
+    ],
+    "ciekawostki": [
+      "Było to jedyne w historii Lotniska Chopina lądowanie ze schowanym podwoziem."
+    ],
+    "summary_en": "On 1 November 2011 a LOT Boeing 767 flying from Newark made an emergency landing at Warsaw Chopin Airport with its landing gear up, after a hydraulic fault. Two Polish Air Force F-16s escorted it, and the airport was closed until the next evening.",
+    "ludzie": [
+      {"kto": "Tadeusz Wrona", "rola": "kapitan lotu LO 16", "wiki": null},
+      {"kto": "Jerzy Szwarc", "rola": "drugi pilot lotu LO 16", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Awaryjne lądowanie lotu PLL LOT 016", "url": "https://pl.wikipedia.org/wiki/Awaryjne_l%C4%85dowanie_lotu_PLL_LOT_016"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord zdarzenia, nie obiektu; współrzędne z nagłówka to Lotnisko Chopina. „istnieje” ustawione na false, bo zdarzenie było jednorazowe."
+  },
+  {
+    "id": "centrum-lopuszanska-22",
+    "nazwa": "Centrum Łopuszańska 22",
+    "name_en": "Centrum Łopuszańska 22 shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Łopuszańska 22",
+    "adres_historyczny": null,
+    "lat": 52.192355555,
+    "lon": 20.951475,
+    "lokalizacja": "dokladna",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Centrum ma powierzchnię całkowitą 28 tys. m², w tym 17,5 tys. m² powierzchni handlowej.",
+      "W czerwcu 2017 roku Centrum Łopuszańska 22 zastąpiło powstałe w 2015 roku Modo Domy Mody.",
+      "Za projekt architektoniczny odpowiadało Biuro APA Wojciechowski z Warszawy, a generalnym wykonawcą była spółka Fundamental Group.",
+      "W 2020 działało tam 130 sklepów, punkty usługowe oraz 11 restauracji i barów.",
+      "Obiekt dysponuje trzema strefami parkingowymi na 1200 miejsc postojowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Centrum Łopuszańska 22 is a one-storey shopping and service centre at ul. Łopuszańska 22 in Włochy, opened in June 2017 in place of the Modo Domy Mody store. By 2020 it had 130 shops and 11 restaurants and bars.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Łopuszańska 22", "url": "https://pl.wikipedia.org/wiki/Centrum_%C5%81opusza%C5%84ska_22"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje obiekt handlowy; rekord zostawiony, bo to budynek z datowaną historią. Architekt to Biuro APA Wojciechowski (nazwa firmy, nie osoba)."
+  },
+  {
+    "id": "cerkiew-sw-jerzego-zwyciezcy",
+    "nazwa": "Cerkiew św. Jerzego Zwycięzcy",
+    "name_en": "Church of St. George the Victorious (Orthodox military cathedral)",
+    "typ": "swiatynia",
+    "dzielnica": "Włochy",
+    "adres_dzis": "ul. Żwirki i Wigury 9/13 (wejście od ul. Franciszka Hynka 2)",
+    "adres_historyczny": null,
+    "lat": 52.185388888,
+    "lon": 20.97625,
+    "lokalizacja": "dokladna",
+    "okres": "2018–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia została oddana do użytku 31 marca 2018 r.; tego dnia prawosławny ordynariusz polowy, arcybiskup wrocławski i szczeciński Jerzy, dokonał jej małego poświęcenia.",
+      "Wielkie poświęcenie cerkwi, dokonane przez arcybiskupa Jerzego, miało miejsce 23 czerwca 2019 r.",
+      "Wewnątrz znajduje się marmurowy ikonostas, w którym umieszczono ikonę św. męczennika Bazylego Martysza, patrona użytkowanej wcześniej przez parafię kaplicy."
+    ],
+    "ciekawostki": [
+      "Cerkiew jest główną świątynią Prawosławnego Ordynariatu Wojska Polskiego i służy miejscowej parafii wojskowej."
+    ],
+    "summary_en": "St. George the Victorious is an Orthodox military field cathedral in the Okęcie estate in Włochy, the main church of the Orthodox Military Ordinariate of Poland. It was consecrated in 2018 and given its great dedication in 2019.",
+    "ludzie": [
+      {"kto": "Jerzy", "rola": "arcybiskup wrocławski i szczeciński, prawosławny ordynariusz polowy, który dokonał poświęceń cerkwi (2018, 2019)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cerkiew św. Jerzego Zwycięzcy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Jerzego_Zwyci%C4%99zcy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje tylko imię arcybiskupa (Jerzy); w tekście nie ma nazwiska."
+  }
+]

@@ -1,0 +1,329 @@
+[
+  {
+    "id": "goclaw-warszawa",
+    "nazwa": "Gocław",
+    "name_en": "Gocław",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.233055555,
+    "lon": 21.087777777,
+    "lokalizacja": "przyblizona",
+    "okres": "XI wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dokumenty historyczne z 1155 roku wymieniają miejscowość jako własność biskupa płockiego.",
+      "W lipcu 1655 na terenie Gocławia stoczono trzydniowa bitwę z wojskami szwedzko-brandenburskimi, w wyniku czego wieś została zniszczona.",
+      "W 1780 król Stanisław August Poniatowski nabył teren Gocławia i odstąpił go swemu bratankowi Stanisławowi Poniatowskiemu.",
+      "Gocław (wraz z Grochowem i Saską Kępą) przyłączono do Warszawy w kwietniu 1916 roku, tworząc 17. okręg Grochów.",
+      "Po II wojnie światowej, w 1946, na terenach Gocławia założono lotnisko sportowe Aeroklubu Warszawskiego, które istniało do połowy lat 70. XX wieku.",
+      "W 1977 roku Robotnicza Spółdzielnia Mieszkaniowa „Osiedle Młodych” rozpoczęła na jego miejscu budowę największego na prawym brzegu Wisły zespołu mieszkaniowego Gocław-Lotnisko."
+    ],
+    "ciekawostki": [
+      "W okresie II RP na Gocławiu planowano drugie po Okęciu lotnisko międzynarodowe i zabezpieczono nawet teren pod budowę Lotniska Gocław."
+    ],
+    "summary_en": "Gocław is a medieval village area in today's Praga-Południe, first mentioned in 1155. It was devastated in 1655 during a battle with Swedish and Brandenburg troops, joined to Warsaw in 1916, and became a large housing area from 1977 onward, named after Polish aircraft.",
+    "ludzie": [
+      {
+        "kto": "Stanisław August Poniatowski",
+        "rola": "król, który nabył teren Gocławia w 1780 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Mrówczyński",
+        "rola": "generalny projektant zespołu Gocław-Lotnisko",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Gościsław",
+      "Gościesław"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gocław (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Goc%C5%82aw_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedla, bez punktu adresowego; lokalizacja z nagłówka. Artykuł ma też mniej istotne dane (Osiedle Saska 2010–2017, granice MSI), pominięte."
+  },
+  {
+    "id": "goclawek",
+    "nazwa": "Gocławek",
+    "name_en": "Gocławek",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2381,
+    "lon": 21.1193,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kolonia i folwark Gocławek należały w latach 1867–1939 do gminy Wawer w powiecie warszawskim.",
+      "W 1921 roku Gocławek liczył 216 mieszkańców.",
+      "Południową część łąk folwarku Gocławek włączono do Warszawy 1 kwietnia 1916 roku.",
+      "9 grudnia 1933 część osady Gocławek została włączona do gminy Zagóźdź.",
+      "15 maja 1951 w związku ze zniesieniem gminy Wawer gromady Gocławek i Nowy Wawer włączono do Warszawy."
+    ],
+    "ciekawostki": [
+      "4 stycznia 1901 wzdłuż ulicy Grochowskiej uruchomiono Warszawską Kolej Dojazdową Jabłonowską, parową kolej wąskotorową o rozstawie torów 800 mm, łączącą Jabłonnę z Wawrem."
+    ],
+    "summary_en": "Gocławek is a district area in Praga-Południe. It was a colony and farm belonging to Wawer commune until 1939 and was incorporated into Warsaw in 1951. Its oldest buildings date from the November Uprising period.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gocławek",
+        "url": "https://pl.wikipedia.org/wiki/Goc%C5%82awek"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu o Gocławku, bez punktu adresowego. Fakt o kolei to informacja o transporcie wzdłuż ul. Grochowskiej."
+  },
+  {
+    "id": "dworek-grochowski",
+    "nazwa": "Dworek Grochowski",
+    "name_en": "Grochowski Manor House",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grochowska 64",
+    "adres_historyczny": null,
+    "lat": 52.2381,
+    "lon": 21.1193,
+    "lokalizacja": "przyblizona",
+    "okres": "1835–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historycy wskazują datę powstania dworka na lata 1835–1840, więc po powstaniu listopadowym; według legendy został wybudowany z inicjatywy prymasa Michała Poniatowskiego.",
+      "Podczas bitwy grochowskiej dworek był kwaterą Józefa Chłopickiego.",
+      "W 1915 r. w dworku działała polska szkoła, w której uczyła się i pisała wiersze Pola Gojawiczyńska.",
+      "W 1918 r. powstał w nim sierociniec, który prowadzili Metodyści.",
+      "W 1924 r. dworek kupił Andrzej Wierzbicki, który gruntownie wyremontował budynek.",
+      "Dziś w dworku działa Państwowa Szkoła Muzyczna 1 st. nr 3."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A manor house at Grochowska 64 in Gocławek, dated by historians to 1835–1840. It served as a Polish school, an orphanage run by Methodists and today houses a state music school.",
+    "ludzie": [
+      {
+        "kto": "Michał Poniatowski",
+        "rola": "prymas, wg legendy inicjator budowy dworka",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Chłopicki",
+        "rola": "dowódca, którego kwaterą był dworek podczas bitwy grochowskiej",
+        "wiki": null
+      },
+      {
+        "kto": "Pola Gojawiczyńska",
+        "rola": "uczennica szkoły w dworku, pisała tu wiersze",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Wierzbicki",
+        "rola": "kupił dworek w 1924 r. i wyremontował go",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gocławek",
+        "url": "https://pl.wikipedia.org/wiki/Goc%C5%82awek"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dworek opisany w artykule o Gocławku, bez własnych współrzędnych; lat/lon to współrzędne Gocławka, więc pozycję trzeba sprawdzić."
+  },
+  {
+    "id": "grochow-warszawa",
+    "nazwa": "Grochów",
+    "name_en": "Grochów",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2408,
+    "lon": 21.0879,
+    "lokalizacja": "przyblizona",
+    "okres": "1347–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1780 Stanisław August Poniatowski objął formalnie w posiadanie dobra Grochów i odstąpił je swemu bratankowi Stanisławowi Poniatowskiemu, który jeszcze w tym samym roku założył kolonię Grochów.",
+      "25 lutego 1831 pod ówczesną wsią miała miejsce bitwa o Olszynkę Grochowską, w której wojska polskie dowodził Józef Chłopicki, a rosyjskie Iwan Dybicz.",
+      "8 kwietnia 1916 generał-gubernator Hans Hartwig von Beseler wydał rozporządzenie włączające do Warszawy (od 1 kwietnia 1916) m.in. Grochów I i Grochów II.",
+      "Liczba mieszkańców wzrosła: w 1921 – ok. 6 000, w 1930 – ok. 13 000, w 1938 – ok. 43 200.",
+      "W 1880 roku powstała na Grochowie fabryka zapałek Teofila Bieńkowskiego.",
+      "W 1950 przy ul. Mińskiej uruchomiono największą w Polsce drukarnię im. Rewolucji Październikowej.",
+      "W 1977 r. przy rondzie Wiatraczna wzniesiono budynek handlowo-usługowy Uniwersam Grochów, który został zburzony w 2016."
+    ],
+    "ciekawostki": [
+      "Osiedle zostało wspomniane w piosenkach, m.in. Warszawa (T.Love), Na zawsze i na wieczność (Wilki), czy Kolońska i szlugi (Sanah)."
+    ],
+    "summary_en": "Grochów is a district of Praga-Południe, known for the 1831 battle of Olszynka Grochowska. It was joined to Warsaw in 1916 and grew rapidly through the interwar period and industrialization after 1951. The Uniwersam Grochów building was demolished in 2016.",
+    "ludzie": [
+      {
+        "kto": "Józef Chłopicki",
+        "rola": "dowodził wojskami polskimi w bitwie o Olszynkę Grochowską",
+        "wiki": null
+      },
+      {
+        "kto": "Iwan Dybicz",
+        "rola": "dowodził wojskami rosyjskimi w bitwie o Olszynkę Grochowską",
+        "wiki": null
+      },
+      {
+        "kto": "Hans Hartwig von Beseler",
+        "rola": "generał-gubernator, wydał rozporządzenie o włączeniu do Warszawy",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Grochowo"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Grochów (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Groch%C3%B3w_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI, bez punktu adresowego. Ciekawostka o piosenkach dotyczy osiedla, nie budynku."
+  },
+  {
+    "id": "grochow-centrum",
+    "nazwa": "Grochów Centrum",
+    "name_en": "Grochów Centrum",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.24,
+    "lon": 21.085277777,
+    "lokalizacja": "przyblizona",
+    "okres": "1980–1986",
+    "istnieje": true,
+    "fakty": [
+      "Decyzja o przedsięwzięciu zmierzającym do realizacji Grochowa Centrum została podjęta w 1973 roku przez Prezydium Rady Narodowej m.st. Warszawy.",
+      "Osiedla wybudowano w latach 1980–1986.",
+      "Głównym autorem projektu architektonicznego był Jerzy Kumelowski z Miastoprojektu Warszawa, Oddział Wschód.",
+      "Zespół zaplanowano na 9 tysięcy mieszkańców; powstało łącznie 2472 mieszkania.",
+      "Osiedla zbudowała Robotnicza Spółdzielnia Mieszkaniowa „Osiedle Młodych”."
+    ],
+    "ciekawostki": [
+      "Jerzy S. Majewski na łamach Kroniki Warszawy (1996) nazwał bloki składające się na Grochów Centrum „bezładnie porozrzucanymi monstrami”."
+    ],
+    "summary_en": "Grochów Centrum is a set of three housing estates (Kobielska, Majdańska, Igańska) built in 1980–1986 near Rondo Wiatraczna. The complex was designed by Jerzy Kumelowski and has 2,472 flats.",
+    "ludzie": [
+      {
+        "kto": "Jerzy Kumelowski",
+        "rola": "główny autor projektu architektonicznego",
+        "wiki": null
+      },
+      {
+        "kto": "Jerzy S. Majewski",
+        "rola": "autor krytyki zespołu w Kronice Warszawy (1996)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Ośrodek Dzielnicowy (plan, nie zrealizowany)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Grochów Centrum",
+        "url": "https://pl.wikipedia.org/wiki/Groch%C3%B3w_Centrum"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zespół trzech osiedli bez wspólnego adresu, współrzędne z nagłówka. Cytat krytyka z 1996 r. wpisany jako ciekawostka."
+  },
+  {
+    "id": "gruba-kaska",
+    "nazwa": "Gruba Kaśka",
+    "name_en": "Gruba Kaśka water intake",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.22158056,
+    "lon": 21.05688333,
+    "lokalizacja": "dokladna",
+    "okres": "1964–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gruba Kaśka została wzniesiona w 1964 roku; rozruch nastąpił 22 września 1964.",
+      "W 2002 została wyremontowana wizualnie i technicznie oraz zwiększono jej przepustowość; oddano ją ponownie do użytku w styczniu 2003 r.",
+      "Metodę pobierania wody spod dna rzeki opracował Włodzimierz Skoraszewski.",
+      "Nazwa „Chudych Wojtków” jest nawiązaniem do Jerzego Wojtkowskiego, który w latach 60. opracował technologię hydraulicznego spulchniania złoża filtracyjnego.",
+      "Prototypowa jednostka „Chudy Wojtek” została zbudowana w latach 1968-1969 i oddana do eksploatacji w 1971 roku.",
+      "W 2024 roku MPWiK podpisało umowę na zaprojektowanie, budowę i dostawę dwóch nowych „Chudych Wojtków”."
+    ],
+    "ciekawostki": [
+      "Gruba Kaśka jest jedynym obiektem w Europie położonym w nurcie rzeki i wykorzystującym naturalny proces infiltracji."
+    ],
+    "summary_en": "Gruba Kaśka is a water intake building in the bed of the Vistula, opened on 22 September 1964. It pumps water from drains under the riverbed to the SUW Praga treatment plant and is the only such object in Europe in a river's current.",
+    "ludzie": [
+      {
+        "kto": "Włodzimierz Skoraszewski",
+        "rola": "opracował metodę pobierania wody spod dna rzeki",
+        "wiki": null
+      },
+      {
+        "kto": "Jerzy Wojtkowski",
+        "rola": "opracował technologię hydraulicznego spulchniania złoża filtracyjnego",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Gruba Kaśka",
+        "url": "https://pl.wikipedia.org/wiki/Gruba_Ka%C5%9Bka"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt w korycie Wisły, współrzędne z nagłówka."
+  },
+  {
+    "id": "gorki-grochowskie",
+    "nazwa": "Górki Grochowskie",
+    "name_en": "Górki Grochowskie",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2353,
+    "lon": 21.097,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś (nazwa)",
+    "istnieje": false,
+    "fakty": [
+      "Górki Grochowskie były dawną wsią, włączoną do Warszawy 1 kwietnia 1916 roku.",
+      "Na obszarze wsi położony był Fort XI carskiej twierdzy Warszawa, wysadzony latem 1913 roku w ramach likwidacji twierdzy.",
+      "Dekretem Prezydenta Rzeczypospolitej z dnia 29 września 1936 r. zezwolono na sprzedaż gminie Warszawy do 15 ha gruntu po obu stronach ulicy Ostrobramskiej pod nazwą „Górki Grochowskie”.",
+      "Ulice Ostrobramska, Filomatów, Budrysów, Gedymina, Perkuna, Łukiska i może Znicza otrzymały wileńskie nazwy od oficerów osiedlonych w Warszawie w 1929 roku.",
+      "W 1929 roku podczas wielkiej powodzi woda przerwała wał przeciwpowodziowy na ul. Wał Miedzeszyński, a zalewy sięgnęły do końca Górek Grochowskich.",
+      "Park Znicza, założony po II wojnie światowej, znajduje się w północnej części dawnej kolonii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Górki Grochowskie was a village in Grochów, incorporated into Warsaw in 1916. Fort XI stood there and was blown up in 1913. In the interwar period the land was sold to officers from Wilno, who gave the streets Wilno names.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Górki Grochowskie (wieś)",
+      "Górki Grochowskie (osiedle willowe)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Górki Grochowskie",
+        "url": "https://pl.wikipedia.org/wiki/G%C3%B3rki_Grochowskie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawna wieś, nazwa zachowana w osiedlu willowym; istnieje false oznacza brak wsi. Ciekawostka o powodzi wpisana w fakty; rok 1929 z tekstu. Uwaga: wpis dotyczy obszaru, nie punktu."
+  }
+]

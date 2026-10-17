@@ -1,0 +1,211 @@
+[
+  {
+    "id": "stacja-postojowa-warszawa-grochow",
+    "nazwa": "Stacja postojowa Warszawa Grochów (lokomotywownia i wagonownia)",
+    "name_en": "Warszawa Grochów depot (locomotive and carriage depot)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Kozia Górka 9 (Centrum Serwisowe Pociągów Dużych Prędkości, część terenu stacji)",
+    "adres_historyczny": null,
+    "lat": 52.252730555, "lon": 21.1064,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1936 roku rozpoczęto obsługę zespołów trakcyjnych przez punkt rewidencki Warszawa Grochów, a w 1938 roku powstał budynek elektrowozowni.",
+      "4 września 1939 roku podczas bombardowania Warszawy grochowska wagonownia uległa zniszczeniu.",
+      "Wiosną 1941 roku do elektrowozowni dostarczono cztery pojazdy serii E600.",
+      "Hala całopociągowa została oddana do użytku 17 kwietnia 2000 roku; ma 420 m długości i jest największym budynkiem na stacji.",
+      "W listopadzie 2012 roku rozpoczęto budowę Centrum Serwisowego Pociągów Dużych Prędkości, oddanego do użytku 9 kwietnia 2014 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warszawa Grochów depot, which serves Warszawa Wschodnia, began servicing traction units in 1936. Its 1938 traction depot was damaged in the September 1939 bombing, and a 420 m maintenance hall opened in 2000.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Grochów", "url": "https://pl.wikipedia.org/wiki/Warszawa_Groch%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu dotyczy tylko Centrum Serwisowego PDP; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "przystanek-warszawa-grochow",
+    "nazwa": "Przystanek Warszawa Grochów",
+    "name_en": "Warszawa Grochów railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "w pobliżu ul. Wiatracznej, na tyłach szpitala przy ul. Szaserów",
+    "adres_historyczny": null,
+    "lat": 52.255556, "lon": 21.084167,
+    "lokalizacja": "dokladna",
+    "okres": "2023–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przetarg na roboty budowlane ogłoszono 15 kwietnia 2020 roku.",
+      "Do 2021 roku przystanek nosił roboczą nazwę Warszawa Wiatraczna.",
+      "Prace budowlane rozpoczęto 12 czerwca 2023 roku.",
+      "Pierwszy pociąg zatrzymał się tu 10 grudnia 2023 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A railway stop on Line 7 near Wiatraczna Street, tendered in April 2020, built from June 2023, and first served by a train on 10 December 2023.",
+    "ludzie": [],
+    "dawne_nazwy": ["Warszawa Wiatraczna (robocza nazwa do 2021)"],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Grochów (przystanek kolejowy)", "url": "https://pl.wikipedia.org/wiki/Warszawa_Groch%C3%B3w_%28przystanek_kolejowy%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak dokładnego adresu w tekście; opis położenia z artykułu."
+  },
+  {
+    "id": "przystanek-warszawa-olszynka-grochowska",
+    "nazwa": "Przystanek Warszawa Olszynka Grochowska",
+    "name_en": "Warszawa Olszynka Grochowska railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "u zbiegu ul. Chłopickiego i ul. Makowskiej",
+    "adres_historyczny": null,
+    "lat": 52.249722, "lon": 21.106944,
+    "lokalizacja": "dokladna",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W miejscu przystanku, w czasie bitwy grochowskiej w 1831 roku, ranny został generał Józef Chłopicki.",
+      "Przy budowie linii przestawiono krzyż upamiętniający tę bitwę w pobliże Instytutu Kolejnictwa.",
+      "W sierpniu 2023 roku zdemontowano kładkę przy ul. Chłopickiego w ramach przebudowy linii nr 7; w miejscu rozebranego peronu wybudowano nowy."
+    ],
+    "ciekawostki": [
+      "Przystanek znajduje się na linii Warszawa–Dęblin, która powstała jako Kolej Nadwiślańska."
+    ],
+    "summary_en": "A stop at Chłopickiego and Makowska streets on the Warsaw–Dęblin line. During the 1831 Battle of Grochów General Józef Chłopicki was wounded here. The footbridge was removed in August 2023 during the line modernisation.",
+    "ludzie": [
+      {"kto": "Józef Chłopicki", "rola": "generał, ranny w bitwie grochowskiej 1831 w tym miejscu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Olszynka Grochowska", "url": "https://pl.wikipedia.org/wiki/Warszawa_Olszynka_Grochowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Krzyż przestawiono „przy budowie” — tekst nie precyzuje roku."
+  },
+  {
+    "id": "warszawa-stadion",
+    "nazwa": "Przystanek Warszawa Stadion (ul. Sokola)",
+    "name_en": "Warszawa Stadion railway stop (Sokola Street)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Sokola",
+    "adres_historyczny": null,
+    "lat": 52.244444444, "lon": 21.043888888,
+    "lokalizacja": "dokladna",
+    "okres": "1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek powstał w 1955 roku według projektu Arseniusza Romanowicza i Piotra Szymaniaka.",
+      "Był przeznaczony głównie do obsługi Stadionu Dziesięciolecia, ukończonego wówczas, i imprez masowych, m.in. V Światowego Festiwalu Młodzieży i Studentów.",
+      "W latach 1955–1958 wzniesiono budynek dworcowy łączący przystanek kolejowy z nowym dworcem autobusów podmiejskich, pierwszy taki węzeł przesiadkowy w stolicy.",
+      "Stację oddano do użytku po przebudowie 5 maja 2012 roku, z siedmiomiesięcznym opóźnieniem.",
+      "W 2022 roku wymiana pasażerska wyniosła 2100 osób dziennie."
+    ],
+    "ciekawostki": [
+      "Nowatorska forma budynku budziła duże zainteresowanie polskiej i zagranicznej krytyki architektonicznej; pewne elementy uważa się za nawiązania do secesji."
+    ],
+    "summary_en": "Warszawa Stadion station near the National Stadium was built in 1955 for the Stadion Dziesięciolecia. Its 1955–1958 station building was the first real interchange hub in Warsaw. The station was rebuilt and reopened on 5 May 2012.",
+    "ludzie": [
+      {"kto": "Arseniusz Romanowicz", "rola": "projektant przystanku (1955)", "wiki": null},
+      {"kto": "Piotr Szymaniak", "rola": "projektant przystanku (1955)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Stadion", "url": "https://pl.wikipedia.org/wiki/Warszawa_Stadion"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Według tekstu przystanek ma kategorię dworca aglomeracyjnego wg PKP. Współrzędne z nagłówka."
+  },
+  {
+    "id": "dworzec-warszawa-wschodnia",
+    "nazwa": "Dworzec Warszawa Wschodnia (Dworzec Wschodni)",
+    "name_en": "Warszawa Wschodnia railway station (Dworzec Wschodni)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Kijowska / ul. Lubelska",
+    "adres_historyczny": null,
+    "lat": 52.2508, "lon": 21.0529,
+    "lokalizacja": "dokladna",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1866 roku oddano do użytku dworzec Warszawa Praga, nazywany Dworcem Terespolskim lub Brzeskim, położony między obecnym dworcem a ul. Targową.",
+      "Podczas przebudowy Warszawskiego Węzła Kolejowego, rozpoczętej w 1919 roku, stację przebudowano na czołowo-przelotową; od 1933 roku stała się elementem warszawskiej linii średnicowej.",
+      "We wrześniu 1939 roku stacja była wielokrotnie bombardowana; ok. 20 warszawskich harcerek i uczennic niosących pomoc zginęło podczas nalotu Luftwaffe 5 września.",
+      "W 1944 roku dotychczasowy budynek dworca uległ zniszczeniu.",
+      "Budowa nowego dworca prowadzona była w latach 1962–1969; główny budynek oddano do użytku 16 stycznia 1969 roku.",
+      "W rankingu Gazety Wyborczej z wakacji 2008 roku dworzec oceniono jako najgorszy spośród 23 dworców największych polskich miast.",
+      "Przed Mistrzostwami Europy w Piłce Nożnej w 2012 roku, kosztem 60 mln PLN, przeprowadzono remont i modernizację dworca."
+    ],
+    "ciekawostki": [
+      "Dworzec w chwili otwarcia był najnowocześniejszą i najbardziej reprezentacyjną budowlą tego typu w Warszawie i otrzymał tytuł Mistera Warszawy.",
+      "Kamień ustawiony w 1968 roku naprzeciw jednego z wejść upamiętnia harcerki i uczennice zabite 5 września 1939 roku."
+    ],
+    "summary_en": "Warsaw Wschodnia (Dworzec Wschodni), the second-largest railway station in Warsaw, stands on the border of Praga-Północ and Praga-Południe. Its predecessor, the 1866 Terespol Station, was destroyed in 1944. The current building was built in 1962–1969 and renovated for Euro 2012.",
+    "ludzie": [
+      {"kto": "Arseniusz Romanowicz", "rola": "projektant dworca (1956–1961)", "wiki": null},
+      {"kto": "Piotr Szymaniak", "rola": "projektant dworca (1956–1961)", "wiki": null},
+      {"kto": "Maria Leszczyńska", "rola": "autorka abstrakcyjnej mozaiki w kawiarni dworca", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dworzec Terespolski", "Dworzec Brzeski", "Warszawa Praga (dworzec z 1866)"],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Wschodnia", "url": "https://pl.wikipedia.org/wiki/Warszawa_Wschodnia"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres budowy 1956–1961 podany dla projektu, a 1962–1969 dla realizacji. Adres z tekstu: między ul. Kijowską a Lubelską. Współrzędne z nagłówka."
+  },
+  {
+    "id": "wiezowiec-jerzego-waszyngtona-2b",
+    "nazwa": "Wieżowiec przy al. Jerzego Waszyngtona 2b",
+    "name_en": "Tower block at 2b Aleja Jerzego Waszyngtona",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "al. Jerzego Waszyngtona 2b",
+    "adres_historyczny": null,
+    "lat": 52.238196614, "lon": 21.053346559,
+    "lokalizacja": "dokladna",
+    "okres": "1962–1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1962–1963 według projektu Marka Leykama.",
+      "Był pierwszym wieżowcem na prawym brzegu Wisły.",
+      "Pierwotnie fasada była całkowicie przeszklona; warunki klimatyczne wymusiły ograniczenie przeszkleń o połowę.",
+      "Na dachu powstało lądowisko dla helikopterów, które nie było używane.",
+      "Obiekt stał się ilustracją hasła „architektura polska” w Wielkiej Encyklopedii Powszechnej PWN."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential tower at 2b Aleja Jerzego Waszyngtona, built in 1962–1963 to a design by Marek Leykam. It was the first tower block on the right bank of the Vistula. Its glazing was halved for climate reasons.",
+    "ludzie": [
+      {"kto": "Marek Leykam", "rola": "projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Wieżowiec przy al. Jerzego Waszyngtona 2b w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wie%C5%BCowiec_przy_al._Jerzego_Waszyngtona_2b_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (dokładne)."
+  },
+  {
+    "id": "witolin",
+    "nazwa": "Witolin",
+    "name_en": "Witolin (district area)",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "obszar ograniczony ulicami Grochowską, Ostrobramską i Zamieniecką",
+    "adres_historyczny": null,
+    "lat": 52.236553, "lon": 21.112309,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę obszaru zawdzięcza Marianowi Zajdlowi, który na początku XX wieku kupił olbrzymi ugór wzdłuż Grochowskiej i nazwał go na cześć swojego pierworodnego syna Witolda.",
+      "W 1780 roku król Stanisław August Poniatowski odstąpił dobra skaryszewskie bratankowi, Stanisławowi Poniatowskiemu, który jeszcze w tym roku założył kolonię Grochów.",
+      "Witolin do 1916 roku był podwarszawską osadą wiejską; w tym roku, wraz z Grochowem, został przyłączony do Warszawy.",
+      "W 1919 roku na terenie ok. 30 ha w rejonie ul. Witolińskiej powstała żydowska ferma rolnicza (kibuc) przygotowująca Żydów do emigracji do Palestyny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Witolin is an area in eastern Praga-Południe named after Marian Zajdel's son Witold. It was a village until 1916, when it was annexed to Warsaw together with Grochów. In 1919 a Jewish agricultural farm (kibbutz) preparing emigrants for Palestine was set up here.",
+    "ludzie": [
+      {"kto": "Marian Zajdel", "rola": "kupił ugór przy Grochowskiej i nazwał teren Witolinem", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król, w 1780 odstąpił dobra skaryszewskie", "wiki": null},
+      {"kto": "Stanisław Poniatowski", "rola": "bratanek króla, założył kolonię Grochów", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Witolin", "url": "https://pl.wikipedia.org/wiki/Witolin"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar, nie budynek; współrzędne z nagłówka (środek obszaru). Okres 1900 podany jako początek XX wieku z tekstu."
+  }
+]

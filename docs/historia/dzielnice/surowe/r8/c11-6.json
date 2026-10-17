@@ -1,0 +1,70 @@
+[
+  {
+    "id": "ulica-janusza-meissnera",
+    "nazwa": "Ulica Janusza Meissnera w Warszawie",
+    "name_en": "Janusz Meissner Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Janusza Meissnera (Gocław, od ul. gen. Fieldorfa do ul. gen. Bora-Komorowskiego)",
+    "adres_historyczny": null,
+    "lat": 52.22275,
+    "lon": 21.086806,
+    "lokalizacja": "przyblizona",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w drugiej połowie lat 70. XX wieku, razem z pozostałymi ulicami na Gocławiu, w związku z likwidacją Lotniska Gocław.",
+      "Początkowo nosiła nazwę ul. gen. Franciszka Jóźwiaka, nadaną 5 grudnia 1977.",
+      "Pierwszy raz widnieje na planie miasta na przełomie lat 1978 i 1979.",
+      "Na początku lat 80. ulica gen. Franciszka Jóźwiaka została podzielona na cztery odcinki, z których jeden otrzymał nazwę ul. Janusza Meissnera (Osiedle Jantar).",
+      "Nadana w 1990 nazwa upamiętnia Janusza Meissnera, lotnika, pisarza i dziennikarza, autora popularnych książek o tematyce lotniczej i marynistycznej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street on Gocław laid out in the late 1970s on the former Gocław airfield site, named after aviator and writer Janusz Meissner in 1990.",
+    "ludzie": [
+      {"kto": "Janusz Meissner", "rola": "lotnik, pisarz i dziennikarz, patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. gen. Franciszka Jóźwiaka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Janusza Meissnera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Janusza_Meissnera_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  },
+  {
+    "id": "ulica-kamionkowska",
+    "nazwa": "Ulica Kamionkowska w Warszawie",
+    "name_en": "Kamionkowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Kamionkowska (od ul. Bliskiej do ul. Terespolskiej)",
+    "adres_historyczny": null,
+    "lat": 52.247556,
+    "lon": 21.063556,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około roku 1880 jako droga dojazdowa na zapleczu działek przy ul. Grochowskiej.",
+      "W roku 1886 w pomiędzy ulicami Terespolską, Grochowską i Kamionkowską wzniesiono murowane hale Towarzystwa Akcyjnego Fabryki Wstążek Gumowych i Taśm R. Zieglera i J. Jägera.",
+      "Pod nr 22 od roku 1921 działała Fabryka Aparatów Optycznych i Precyzyjnych „H. Kolberg i S-ka”; w 1931 firma została przejęta przez państwo i zmieniła nazwę na Polskie Zakłady Optyczne.",
+      "W 1989 roku na ścianie budynku przy ul. Kamionkowskiej 51 odsłonięto tablicę pamiątkową z okazji 50. rocznicy niemieckiego nalotu, w wyniku którego zginęło 38 pracowników zakładu.",
+      "W latach 1964–1966 pod nr 36/44 zbudowano budynek szkoły podstawowej nr 255 im. Cypriana Kamila Norwida."
+    ],
+    "ciekawostki": [
+      "W XXI wieku zrewitalizowano niektóre pofabryczne budynki, m.in. Fabrykę PZO (obecnie kompleks biurowo-mieszkaniowy)."
+    ],
+    "summary_en": "A street in Kamionek that grew around the factories of the Grochowska and Gocławska area, including the Polish Optical Works. Many factory buildings were destroyed in the war, and the street was split in two after the war.",
+    "ludzie": [
+      {"kto": "H. Kolberg", "rola": "założyciel Fabryki Aparatów Optycznych i Precyzyjnych", "wiki": null},
+      {"kto": "Lucjan Korngold", "rola": "projektant domów zakładowych przy ul. Kamionkowskiej 18 (1934–1936)", "wiki": null},
+      {"kto": "Cyprian Kamil Norwid", "rola": "patron szkoły podstawowej nr 255", "wiki": null}
+    ],
+    "dawne_nazwy": ["Polskie Zakłady Optyczne (dawna fabryka H. Kolberga)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kamionkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kamionkowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka ulicy."
+  }
+]

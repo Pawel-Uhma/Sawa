@@ -1,0 +1,184 @@
+[
+  {
+    "id": "reprezentacyjna",
+    "nazwa": "Ulica Reprezentacyjna",
+    "name_en": "Reprezentacyjna Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Reprezentacyjna",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XX i XXI wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy to przełom XX i XXI wieku.",
+      "Ulica ma 100 m długości.",
+      "Odchodzi na północ od ul. Panoramicznej i kończy się ślepo, nie posiadając przecznic.",
+      "Jest pierwszą, licząc od zachodu, spośród równoległych ulic osiedla: Reprezentacyjnej, Letniskowej, Modelowej i Bulwarowej.",
+      "Otoczenie ulicy stanowią jednorodzinne domy szeregowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Reprezentacyjna is a 100-metre dead-end street on a closed estate in Ursynów, Warsaw. It is the first of several parallel streets on the estate, lined with single-family terraced houses. It dates from the turn of the 21st century.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Reprezentacyjna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Reprezentacyjna"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł wspomina osiedle na Wolicy, a w nagłówku dzielnica to Ursynów; zapisano dzielnicę z nagłówka."
+  },
+  {
+    "id": "roentgena",
+    "nazwa": "Ulica Roentgena",
+    "name_en": "Roentgena Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Roentgena",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została otwarta w marcu 1975 roku jako fragment ul. Ciszewskiego.",
+      "20 października 1995 roku nazwa ulicy została zmieniona na obecną.",
+      "Patronem ulicy jest Wilhelm Conrad Röntgen (w wersji spolszczonej: Wilhelm Konrad Roentgen) – fizyk niemiecki, laureat Nagrody Nobla.",
+      "W sierpniu 2017 ulica została wyfrezowana (zyskała nową nawierzchnię); równolegle wyremontowano chodnik oraz ścieżkę rowerową.",
+      "Ulica ma 950 m długości."
+    ],
+    "ciekawostki": [
+      "Pod numerem 5 przy ulicy Roentgena mieści się Narodowy Instytut Onkologii."
+    ],
+    "summary_en": "Roentgena is a street in Ursynów named after Wilhelm Conrad Röntgen, the German physicist and Nobel laureate. It opened in March 1975 as part of Ciszewskiego Street and received its current name in October 1995. The National Institute of Oncology is located at No. 5.",
+    "ludzie": [
+      {"kto": "Wilhelm Conrad Röntgen (Wilhelm Konrad Roentgen)", "rola": "patron ulicy, fizyk niemiecki, laureat Nagrody Nobla", "wiki": null}
+    ],
+    "dawne_nazwy": ["fragment ul. Ciszewskiego (do 20 października 1995 roku)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Roentgena", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Roentgena"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rosola",
+    "nazwa": "Ulica Rosoła",
+    "name_en": "Rosoła Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Rosoła",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 2018 roku poszerzono odcinek ulicy Rosoła od ul. Jeżewskiego do ul. Wąwozowej do dwóch pasów w kierunku centrum (w kierunku Lasu Kabackiego zrobiono latem 2019).",
+      "12 grudnia 2018 roku uruchomiono sygnalizację świetlną na skrzyżowaniu z ulicami Relaksową i Wąwozową.",
+      "W wyniku zmiany nazwy odcinka ul. Rosoła od Ciszewskiego do Doliny Służewieckiej powstała aleja Rodowicza (w 2005 roku).",
+      "Ulica ma 3 400 m długości.",
+      "Patronem ulicy jest Jan Rosół, pseudonimy „Ojciec” i „Stary”, dziewiętnastowieczny socjalista, uczestnik powstania styczniowego, współorganizator Socjaldemokracji Królestwa Polskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rosoła is a 3.4-kilometre main road in Ursynów linking ul. Ciszewskiego in the north with ul. Wąwozowa in the south. It was widened to two lanes towards the centre in 2018, and it is named after Jan Rosół, a 19th-century socialist.",
+    "ludzie": [
+      {"kto": "Jan Rosół", "rola": "patron ulicy, pseudonimy „Ojciec” i „Stary”, dziewiętnastowieczny socjalista, uczestnik powstania styczniowego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Rosoła", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rosoła"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule patron nazwany jest Janem Rosołem, a tytuł ulicy to Rosoła; zapisano tak, jak w tekście."
+  },
+  {
+    "id": "rzekotki",
+    "nazwa": "Ulica Rzekotki",
+    "name_en": "Rzekotki Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Rzekotki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od 29 czerwca do 6 sierpnia 2015 roku ulica była wyłączona z ruchu z powodu remontu kanalizacji oraz wodociągów.",
+      "W tym czasie pobliska ul. Podgrzybków była jedynym otwartym zjazdem ze skarpy wiślanej na Kabatach.",
+      "Do otwarcia ul. Korbońskiego i przebudowie ul. Rosnowskiego była jedynym ciągiem komunikacyjnym na Kabatach między Ursynowem, a Wilanowem.",
+      "Ulica ma 85 m długości.",
+      "Ulica pełni funkcję łącznika pomiędzy Traktem Leśnym i zjazdem ze skarpy wiślanej (ul. Podgrzybków)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rzekotki is an 85-metre street in Kabaty, Ursynów, linking Trakt Leśny with the descent from the Vistula escarpment at ul. Podgrzybków. It was closed to traffic from 29 June to 6 August 2015 during sewer and water-main works.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Rzekotki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rzekotki"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje roku powstania."
+  },
+  {
+    "id": "surowieckiego",
+    "nazwa": "Ulica Surowieckiego",
+    "name_en": "Surowieckiego Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Surowieckiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 70. XX wieku.",
+      "Ulica ma 1 100 m długości.",
+      "Ulica Wawrzyńca Surowieckiego łączy ul. Romera z Al. Komisji Edukacji Narodowej.",
+      "Jej przedłużeniem jest ul. Barwna, a w lipcu i sierpniu 2014 roku wybudowano tutaj rondo.",
+      "Odbywa się nią ruch autobusowy."
+    ],
+    "ciekawostki": [
+      "Na zdjęciu z 1977 roku ulica i osiedle Jary były w trakcie budowy."
+    ],
+    "summary_en": "Surowieckiego is a 1,100-metre street in Ursynów Północny, running from ul. Romera to Al. KEN. It was built in the 1970s, and it carries bus traffic. The Ursynów metro station is located at its junction with Al. KEN.",
+    "ludzie": [
+      {"kto": "Wawrzyniec Surowiecki (Wawrzyńca Surowieckiego)", "rola": "patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Surowieckiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Surowieckiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "telekiego",
+    "nazwa": "Ulica Telekiego",
+    "name_en": "Telekiego Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Telekiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach dziewięćdziesiątych XX wieku w związku z budową osiedla w tym rejonie, a wtedy zlikwidowano ul. Sukienną.",
+      "Ulica ma 740 m długości.",
+      "Patronem jest Pál Teleki (1879-1941), węgierski polityk i dwukrotny premier tego kraju.",
+      "Ulica przecina ulice Villardczyków, Boglarczyków, Baló i Borsuka.",
+      "Przy ulicy nr 8 znajduje się przedszkole nr 412 i plac zabaw."
+    ],
+    "ciekawostki": [
+      "Po propozycji niemieckiego ataku na Polskę przez Węgry Pál Teleki stwierdził, „że prędzej wysadzi swoje własne linie kolejowe, niż weźmie udział w inwazji na Polskę”."
+    ],
+    "summary_en": "Telekiego is a 740-metre street in Kabaty, Ursynów, connecting ul. Przy Bażantarni with Al. KEN. It was built in the 1990s during the development of the estate and is named after Pál Teleki, a Hungarian politician and two-time prime minister.",
+    "ludzie": [
+      {"kto": "Pál Teleki (1879-1941)", "rola": "patron ulicy, węgierski polityk, dwukrotny premier Węgier", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Telekiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Telekiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

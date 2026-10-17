@@ -1,0 +1,296 @@
+[
+  {
+    "id": "karczma-wawerska",
+    "nazwa": "Karczma wawerska",
+    "name_en": "Wawer Inn",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Płowiecka 83",
+    "adres_historyczny": null,
+    "lat": 52.2294,
+    "lon": 21.1392,
+    "lokalizacja": "dokladna",
+    "okres": "1727–dziś (obecny budynek z początku XIX w.)",
+    "istnieje": true,
+    "fakty": [
+      "Najstarszy dokument wymieniający karczmę Wawer pochodzi z 1727 roku, z aktu nabycia dóbr Zastowa przez Elżbietę z Lubomirskich Sieniawską; była to najprawdopodobniej budowla drewniana.",
+      "Karczma była miejscem zbierania się posłów; według Polińskiego odbywały się w niej narady i kontrakty.",
+      "Według nieudokumentowanych informacji w 1812 roku zatrzymał się w niej Napoleon podczas marszu na Moskwę; w trakcie kampanii karczma spłonęła.",
+      "W 1823 roku Zarząd Dóbr Wilanowa zbudował nowy, murowany zajazd (według niektórych źródeł w latach 1823–1825), którego zasadnicza bryła zachowała się do dziś.",
+      "W lutym i marcu 1831 w austerii miały siedziby sztaby generała Szembeka i generała Prądzyńskiego; według tradycji kwaterował tu także sztab Naczelnego Wodza gen. Jana Skrzyneckiego.",
+      "W 1838 roku Administracja Dóbr Wilanowskich założyła osiedle o nazwie Wawer, nazwane tak jak karczma.",
+      "W 1866 administracja carska powołała gminę Wawer, a z nią sąd gminny ulokowany w budynku karczmy.",
+      "Po I wojnie światowej budynek karczmy wykupił Konstanty Morantowicz; obecnie mieści się tu hotel Zajazd Napoleoński."
+    ],
+    "ciekawostki": [
+      "Pochodzenie nazwy Wawer jest nieznane; być może od nazwiska pierwszego właściciela, nazwy ludowej chabra (wawer) albo od słowa chabero (chwast)."
+    ],
+    "summary_en": "The Wawer Inn is a historic coaching inn at the Płowiecka and Trakt Lubelski crossroads in Wawer. The current single-storey brick building dates from the early 19th century, and today it houses the Zajazd Napoleoński hotel.",
+    "ludzie": [
+      {"kto": "Elżbieta z Lubomirskich Sieniawska", "rola": "nabyła dobra Zastów z karczmą Wawer (akt z 1727)", "wiki": null},
+      {"kto": "Napoleon", "rola": "według nieudokumentowanych informacji zatrzymał się w karczmie w 1812", "wiki": null},
+      {"kto": "Konstanty Morantowicz", "rola": "po I wojnie światowej wykupił budynek karczmy", "wiki": null},
+      {"kto": "Jan Skrzyneckiego", "rola": "generał, według tradycji kwaterował w karczmie (1831)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Austeria wawerska", "Wawr (Wawry)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Karczma wawerska", "url": "https://pl.wikipedia.org/wiki/Karczma_wawerska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje różne daty budowy (1804–1806 lub 1823–1825) dla kolejnych budynków; przyjęto 1823 jako datę obecnego zajazdu."
+  },
+  {
+    "id": "kosciol-matki-bozej-anielskiej-radosc",
+    "nazwa": "Kościół Matki Bożej Anielskiej w Radości",
+    "name_en": "Church of Our Lady of the Angels in Radość",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.18553,
+    "lon": 21.19194,
+    "lokalizacja": "dokladna",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa kościoła według projektu architekta inżyniera Paszkiewicza została rozpoczęta w 1922 roku, dzięki staraniom obywateli, w większości działających w Stowarzyszeniu Miłośników Letniska Radość.",
+      "W 1930 roku władze duchowne mianowały ks. Bronisława Lewandowskiego rektorem świątyni; podciągnął on mury do wysokości stropu.",
+      "Kościół został konsekrowany przez kardynała Stefana Wyszyńskiego 4 sierpnia 1957 roku.",
+      "W latach 1962–1963 wzniesiono wieżę według projektu profesora Stanisława Marzyńskiego; w wieży wiszą dwa dzwony odlane w 1936 roku: Św. Wacław i Św. Wojciech.",
+      "Dzwony były darem małżeństwa Wincentego i Karoliny Zalewskich dla uczczenia ich synów, Wacusia i Wojtusia, zmarłych w 1927 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Catholic parish church in the Radość estate, begun in 1922 by local residents. It was consecrated by Cardinal Stefan Wyszyński in 1957 and its tower was added in 1962–1963.",
+    "ludzie": [
+      {"kto": "Stefan Wyszyński", "rola": "kardynał, konsekrował kościół (4 sierpnia 1957)", "wiki": null},
+      {"kto": "Bronisław Lewandowski", "rola": "ks., rektor świątyni od 1930, podciągnął mury", "wiki": null},
+      {"kto": "Stanisław Marzyński", "rola": "profesor, autor projektu wieży (1962–1963)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Matki Bożej Anielskiej w Warszawie (Radość)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Bo%C5%BCej_Anielskiej_w_Warszawie_%28Rado%C5%9B%C4%87%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia też ks. Łuczaka (dach i prace do końca) i innych proboszczów; adres w tekście nie występuje."
+  },
+  {
+    "id": "kosciol-najswietszego-serca-pana-jezusa-falenica",
+    "nazwa": "Kościół Najświętszego Serca Pana Jezusa w Falenicy",
+    "name_en": "Church of the Sacred Heart of Jesus in Falenica",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Bartoszycka",
+    "adres_historyczny": null,
+    "lat": 52.16319,
+    "lon": 21.22133,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1927 roku właściciel okolicznego majątku Jakub Karol Hanneman ofiarował plac na wydmie przy dzisiejszej ulicy Bartoszyckiej pod budowę świątyni.",
+      "W 1930 roku stanął tu pierwszy drewniany kościółek, należący do parafii w Józefowie.",
+      "Parafię erygowano 8 grudnia 1934 roku, dzięki staraniom mieszkańców Falenicy; kościół poświęcił kardynał Aleksander Kakowski.",
+      "Kościół murowany budowano w latach 1950–1961 staraniem ks. Sylwestra Szulczyka.",
+      "W 1980 roku stanęła nowa dzwonnica dedykowana Janowi Pawłowi II.",
+      "W 2001 roku odmalowano wnętrze i zainstalowano na froncie mozaikę wykonaną przez falenickiego artystę Pawła Przyrowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Sacred Heart church in Falenica began as a wooden chapel in 1930 on land donated in 1927. The brick church was built in 1950–1961 and the parish was established in 1934.",
+    "ludzie": [
+      {"kto": "Jakub Karol Hanneman", "rola": "właściciel majątku, ofiarował plac pod budowę (1927)", "wiki": null},
+      {"kto": "Mieczysław Królak", "rola": "ks., proboszcz z Józefowa, budowniczy kościółka", "wiki": null},
+      {"kto": "Aleksander Kakowski", "rola": "kardynał, poświęcił kościół", "wiki": null},
+      {"kto": "Sylwester Szulczyk", "rola": "ks., staraniem którego budowano kościół murowany (1950–1961)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Najświętszego Serca Pana Jezusa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Naj%C5%9Bwi%C4%99tszego_Serca_Pana_Jezusa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście podano tylko nazwę ulicy (Bartoszycka), bez numeru."
+  },
+  {
+    "id": "kosciol-najswietszej-maryi-panny-krolowej-polski",
+    "nazwa": "Kościół Najświętszej Maryi Panny Królowej Polski w Warszawie",
+    "name_en": "Church of Our Lady Queen of Poland in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.236889,
+    "lon": 21.156131,
+    "lokalizacja": "dokladna",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynię wzniesiono według projektu architekta Zygmunta Gawlika w latach 1926–1936 dzięki staraniom sióstr felicjanek, jako wotum wdzięczności za odzyskaną niepodległość.",
+      "Kamień węgielny poświęcił i wmurował kardynał Aleksander Kakowski 24 kwietnia 1929 roku.",
+      "Pierwsza Eucharystia została odprawiona w niedzielę 21 lipca 1936 roku.",
+      "15 września 1939 Adolf Hitler obserwował z kościelnej wieży broniącą się Warszawę.",
+      "28 listopada 1944 saperzy polscy wysadzili wieżę na życzenie władz zakonnych, aby ocalić siostry i okolicznych mieszkańców; wieża spadła na lewą część świątyni.",
+      "W 1971–1974 odbudowano zachodnią przybudówkę wieży, która pełni funkcję plebanii; w 2007 rozpoczęto rekonstrukcję głównej wieży, ukończoną 12 marca 2008.",
+      "6 września 2017 roku biskup Henryk Hoser umieścił w kamiennym ołtarzu relikwie bł. Jerzego Popiełuszki i bł. Władysława Bukowińskiego.",
+      "30 kwietnia 2018 roku w czasie peregrynacji kopii Cudownego Obrazu Matki Bożej Częstochowskiej odbyła się koronacja obrazu Matki Bożej Królowej Korony Polskiej w kaplicy."
+    ],
+    "ciekawostki": [
+      "Z kościelnej wieży Adolf Hitler obserwował 15 września 1939 roku broniącą się Warszawę."
+    ],
+    "summary_en": "A church of the Felician Sisters in Marysin Wawerski, built in 1926–1936 in an Art Deco style. Heavily damaged in 1944, it was rebuilt by the sisters after the war.",
+    "ludzie": [
+      {"kto": "Zygmunt Gawlik", "rola": "architekt, autor projektu", "wiki": null},
+      {"kto": "Aleksander Kakowski", "rola": "kardynał, poświęcił kamień węgielny (24 kwietnia 1929)", "wiki": null},
+      {"kto": "Stanisław Gall", "rola": "arcybiskup", "wiki": null},
+      {"kto": "Antoni Szlagowski", "rola": "biskup, uczestniczył w poświęceniu kamienia węgielnego", "wiki": null},
+      {"kto": "Wojciech Kamiński", "rola": "ks., kapelan sióstr, prywatnie poświęcił kościół (20 lipca 1936)", "wiki": null},
+      {"kto": "Adolf Hitler", "rola": "obserwował Warszawę z wieży (15 września 1939)", "wiki": null},
+      {"kto": "Henryk Hoser", "rola": "biskup diecezji warszawsko-praskiej, umieścił relikwie (2017)", "wiki": null},
+      {"kto": "Jerzy Popiełuszko", "rola": "bł., relikwie w ołtarzu (2017)", "wiki": null},
+      {"kto": "Władysław Bukowiński", "rola": "bł., relikwie w ołtarzu (2017)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Najświętszej Maryi Panny Królowej Polski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_Kr%C3%B3lowej_Polski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położony na osiedlu Marysin Wawerski; artykuł nie podaje adresu."
+  },
+  {
+    "id": "krzyz-powstanczy-w-wawrze",
+    "nazwa": "Krzyż Powstańczy w Wawrze",
+    "name_en": "Insurgent Cross in Wawer",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Płowiecka (przy karczmie wawerskiej, nr 83)",
+    "adres_historyczny": null,
+    "lat": 52.2291,
+    "lon": 21.1394,
+    "lokalizacja": "dokladna",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Krzyż i pamiątkowy kamień postawiono w 1919 roku, ku czci poległych w zwycięskich bitwach z Rosjanami 19 lutego i 31 marca 1831 roku (I i II bitwa pod Wawrem).",
+      "Inicjatorem budowy był Zarząd Wawerskiego Kółka Rolniczego, powstałego w 1917 roku.",
+      "Pod krzyżem złożono kości ludzkie i szczątki umundurowania, wydobyte przy pracach melioracyjnych i drogowych na polach Wawra i Zastowa w latach 20. XX wieku przez Spółkę Wodną Obwodu Wawerskiego.",
+      "Po 1948 roku pomnik był zaniedbany, a kamień z napisem zasłaniały chwasty i krzewy dzikiego bzu.",
+      "Pomnik zrekonstruowano w latach 1981–1984 dzięki staraniom ks. prałata Wacława Karłowicza z parafii św. Wacława na Wygodzie.",
+      "31 marca 2001 roku, w 170. rocznicę zwycięstwa pod Wawrem, dodano płytę ufundowaną przez mieszkańców gminy Warszawa Wawer z nazwiskiem Jana Kochanowskiego."
+    ],
+    "ciekawostki": [
+      "Według jednych źródeł krzyż wzniesiono w lutym 1916 roku, według innych dopiero po odzyskaniu niepodległości w 1919 roku."
+    ],
+    "summary_en": "An oak cross and granite stone beside the Wawer Inn, erected in 1919 in memory of the insurgents who fell in the two battles of Wawer in 1831. It was neglected after 1948 and rebuilt in 1981–1984.",
+    "ludzie": [
+      {"kto": "Jan Kochanowski", "rola": "nazwisko na płycie z 2001 roku (wiersz cytowany na pomniku)", "wiki": null},
+      {"kto": "Wacław Karłowicz", "rola": "ks. prałat, z parafii św. Wacława na Wygodzie, inicjator rekonstrukcji (1981–1984)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Krzyż Powstańczy w Wawrze", "url": "https://pl.wikipedia.org/wiki/Krzy%C5%BC_Powsta%C5%84czy_w_Wawrze"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nie jest to dawny cmentarz; artykuł podaje dwie wersje, kto złożył kości (pod krzyż lub w miejscu pochowania)."
+  },
+  {
+    "id": "kepa-wieloryb",
+    "nazwa": "Kępa Wieloryb",
+    "name_en": "Wieloryb Islet",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1941,
+    "lon": 21.1121,
+    "lokalizacja": "przyblizona",
+    "okres": "1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na Kępach Wieloryb i Cisie zbierali się spiskowcy w czasie rewolucji 1905 roku.",
+      "Podczas okupacji hitlerowskiej wyspa Wieloryb była jednym z miejsc konspiracyjnych szkoleń wojskowych okolicznych strażaków.",
+      "W nocy z 10 na 11 sierpnia 1944 grupa około 30 harcerzy wawerskich przeszła przez linię frontu na wyspę Wieloryb i dalej do Miedzeszyna; 14/15 sierpnia przeszło tą drogą około 200 mieszkańców okolicznych miejscowości.",
+      "Kilka osób zginęło na minach i od pocisków; harcerzy po spotkaniu z Rosjanami przesłuchiwało NKWD, a część z nich trafiła do stodoły w Boryszewie, a następnie na Majdanek.",
+      "W 2007 roku ciężarówki zaczęły zwozić na działkę pod pole golfowe ziemię zanieczyszczoną gruzem; zniszczono 30 ha łęgów (lub 38 ha), a zwożenie wstrzymano w drugiej połowie lutego 2008 roku."
+    ],
+    "ciekawostki": [
+      "Z lotu ptaka kępa przypomina kształtem płetwala błękitnego; według niektórych źródeł nazwa pochodzi jednak od szczupaków wpływających na tarlisko."
+    ],
+    "summary_en": "Wieloryb Islet is the largest islet inside the Vistula channel in Warsaw, between Miedzeszyn and Las. It was used by conspirators and wartime couriers in 1944 and suffered illegal rubble dumping in 2007–2008.",
+    "ludzie": [
+      {"kto": "Henryk Wierzchowski", "rola": "historyk Wawra, autor monografii o Lesie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kępa Cisie", "Wyspa Wieloryb"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kępa Wieloryb", "url": "https://pl.wikipedia.org/wiki/K%C4%99pa_Wieloryb"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka są przybliżone; łąka Wieloryb i kępa leżą po obu stronach Kanału Nowe Ujście."
+  },
+  {
+    "id": "las-matki-mojej",
+    "nazwa": "Las Matki Mojej",
+    "name_en": "Matki Mojej Forest",
+    "typ": "park",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.233556,
+    "lon": 21.145778,
+    "lokalizacja": "dokladna",
+    "okres": "1839–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na terenie obecnego lasu znajdował się Cmentarz Ewangelicki założony w 1839 roku.",
+      "W 1891 roku podjęto decyzję o jego likwidacji; ekshumowane zwłoki przeniesiono na Cmentarz Ewangelicko-Augsburski przy ulicy Młynarskiej.",
+      "Zanim pojawił się las, wybudowano tu Fort Wawerski im. Suworowa, będący częścią Twierdzy Warszawskiej; w 1913 roku został wysadzony przez rosyjskich saperów.",
+      "W 1943 roku Komitet Obywatelski w Wawrze z przewodniczącym Stanisławem Krupką założył „Park Sportowy im. Matki Mojej”.",
+      "Park miał być dużym ośrodkiem rekreacyjno-sportowym, ale z powodu działań wojennych plan się nie udał; w 1944 roku park został zniszczony."
+    ],
+    "ciekawostki": [
+      "Nie jest jednoznacznie wyjaśnione, której matki dotyczy nazwa; podawane są trzy wersje, w tym jedna o Matce Przełożonej pobliskiego Zakonu Klarysek."
+    ],
+    "summary_en": "A 14-hectare pine forest on the former site of an Evangelical cemetery and a Warsaw Fortress fort, in Wawer. The name refers to an unidentified mother and the park planned there in 1943 was destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Stanisław Krupka", "rola": "przewodniczący Komitetu Obywatelskiego w Wawrze, założyciel Parku Sportowego im. Matki Mojej (1943)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Cmentarz Ewangelicki (1839)", "Fort Wawerski im. Suworowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Las Matki Mojej", "url": "https://pl.wikipedia.org/wiki/Las_Matki_Mojej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że fort wysadzono w 1913 roku, a artykuł o Forcie Wawer - że rozebrano go w 1919–1920; dane wymagają weryfikacji."
+  },
+  {
+    "id": "las-sobieskiego",
+    "nazwa": "Las Sobieskiego",
+    "name_en": "Sobieski Forest",
+    "typ": "park",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.234182,
+    "lon": 21.178285,
+    "lokalizacja": "dokladna",
+    "okres": "XX wiek–dziś (rezerwat od 1952)",
+    "istnieje": true,
+    "fakty": [
+      "Na początku XX wieku las nazywano Lasem Wawerskim; był pozostałością Puszczy Mazowieckiej o powierzchni 870 ha i należał do Adama Branickiego w ramach dóbr wilanowskich.",
+      "W latach 30. XX wieku przeszło 30% Lasu Wawerskiego stanowiły młodniki sosnowe.",
+      "Już w 1933 roku około 300 hektarów lasu zostało objętych ochroną.",
+      "W listopadzie 1952 roku utworzono rezerwat przyrody Las im. Króla Jana Sobieskiego o powierzchni 114,44 ha.",
+      "Na wschodnim skraju lasu, na wydmie, stoi Głaz Piłsudskiego upamiętniający ćwiczenia ochotniczego wojska zebranego w Polskiej Organizacji Wojskowej w dniu 29 IV 1917 r."
+    ],
+    "ciekawostki": [
+      "Uroczysko Las Sobieskiego (516,60 ha) jest drugim pod względem wielkości kompleksem leśnym w Warszawie, po Lesie Kabackim."
+    ],
+    "summary_en": "A 516-hectare forest complex in Wawer, the second largest in Warsaw. Its 114-hectare nature reserve was established in 1952, and a monument to Józef Piłsudski stands on its eastern edge.",
+    "ludzie": [
+      {"kto": "Adam Branicki", "rola": "właściciel Lasu Wawerskiego w ramach dóbr wilanowskich (początek XX w.)", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "ćwiczył ochotnicze wojsko w Polskiej Organizacji Wojskowej (29 IV 1917)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Las Wawerski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Las Sobieskiego", "url": "https://pl.wikipedia.org/wiki/Las_Sobieskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

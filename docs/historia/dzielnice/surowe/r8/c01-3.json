@@ -1,0 +1,191 @@
+[
+  {
+    "id": "fabryka-slusarska-ogorkiewicza-zagornego",
+    "nazwa": "Fabryka Ślusarska Ogórkiewicza i Zagórnego",
+    "name_en": "Ogórkiewicz and Zagórny Locksmith Factory",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "ul. Stefana Okrzei 12",
+    "adres_historyczny": "ul. Brukowa (obecnie Stefan Okrzei)",
+    "lat": 52.314806, "lon": 20.983333,
+    "lokalizacja": "dokladna",
+    "okres": "1882–2012",
+    "istnieje": false,
+    "fakty": [
+      "Fabryka ślusarska Leona Ogórkiewicza i Józefa Zagórnego powstała w 1882 roku, na posesji między ulicami Brukową (obecnie Stefan Okrzei) i Krowią.",
+      "Zabudowania fabryczne powstały w 1903 r.",
+      "W 1910 r. fabryka zatrudniała już 140 osób, dysponując dodatkowo silnikiem gazowym o mocy 12 koni.",
+      "W latach 30. XX wieku, po różnorakich perturbacjach finansowych, firma została zrestrukturyzowana i przyjęła nazwę Zakładów Metalurgiczno-Mechanicznych SBS.",
+      "W 2010 r. prezydent Warszawy – Hanna Gronkiewicz-Waltz wydała decyzję zatwierdzającą projekt budowlany, udzielając pozwolenia na budowę nowego budynku z wykorzystaniem fragmentów istniejącej zabudowy.",
+      "6 lutego 2012 r. do Powiatowego Inspektora Nadzoru Budowlanego wpłynął wniosek inwestora Spółki Port Praski o wydanie nakazu rozbiórki budynku.",
+      "W 2013 roku fragmenty budynku zostały odtworzone w nowym obiekcie mieszkalno-usługowym Apartamenty Krowia 6."
+    ],
+    "ciekawostki": [
+      "Obiekt otrzymał nagrodę I stopnia w konkursie „Budowa Roku 2013” Polskiego Związku Inżynierów i Techników Budownictwa.",
+      "W ruinach fabryki realizowano sceny retrospekcyjne z pacyfikacji Mokotowa i powstania warszawskiego w filmie Wojciecha Smarzowskiego „Róża” (2011)."
+    ],
+    "summary_en": "A locksmith factory founded in 1882 at ul. Okrzei 12 (formerly Brukowa), with main buildings from 1903. It was demolished in 2012 and its façade fragments were rebuilt in the Apartamenty Krowia 6 residential building in 2013.",
+    "ludzie": [
+      {"kto": "Leon Ogórkiewicz", "rola": "współzałożyciel fabryki ślusarskiej", "wiki": null},
+      {"kto": "Józef Zagórny", "rola": "współzałożyciel fabryki ślusarskiej", "wiki": null},
+      {"kto": "Hanna Gronkiewicz-Waltz", "rola": "prezydent Warszawy, zatwierdziła projekt budowlany (2010)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ulica Brukowa (obecnie Stefan Okrzei)", "Zakłady Metalurgiczno-Mechaniczne SBS"],
+    "zrodla": [{"tytul": "Wikipedia: Fabryka Ślusarska Ogórkiewicza i Zagórnego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Fabryka_%C5%9Alusarska_Og%C3%B3rkiewicza_i_Zag%C3%B3rnego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł umieszcza siedzibę w dzielnicy Praga-Północ, a w nagłówku DZIELNICE podano Białołęka; dzielnica wpisana wg nagłówka, do weryfikacji. Współrzędne z nagłówka."
+  },
+  {
+    "id": "fort-xiv-twierdzy-warszawa",
+    "nazwa": "Fort XIV Twierdzy Warszawa („Annopol”, „Marywil”)",
+    "name_en": "Fort XIV of the Warsaw Fortress",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2978, "lon": 21.0189,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XIX w. – 1932",
+    "istnieje": false,
+    "fakty": [
+      "Fort został wybudowany w latach 80. XIX wieku.",
+      "Fort został częściowo zniszczony na mocy rozkazu carskiego w 1913 o likwidacji Twierdzy Warszawa.",
+      "Ostateczna likwidacja fortu została przeprowadzona pomiędzy 1926 a 1932 rokiem.",
+      "Teren fortu został wtedy przeznaczony pod budowę osiedla dla bezdomnych na Annopolu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort XIV of the Warsaw Fortress, built in the 1880s on the outer ring on the right bank of the Vistula. It was partly dismantled in 1913 and fully liquidated in 1926–1932, when its site was given over to the Annopol settlement for the homeless.",
+    "ludzie": [],
+    "dawne_nazwy": ["Annopol", "Marywil"],
+    "zrodla": [{"tytul": "Wikipedia: Fort XIV Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_XIV_Twierdzy_Warszawa"}],
+    "pewnosc": "srednia",
+    "uwagi": "Dane o rozbiórce są niespójne z artykułem o Annopolu (tam: fort rozebrany w 1913). Współrzędne z nagłówka."
+  },
+  {
+    "id": "fort-xiva-twierdzy-warszawa",
+    "nazwa": "Fort XIVA Twierdzy Warszawa („Pelcowizna”)",
+    "name_en": "Fort XIVA of the Warsaw Fortress",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2942, "lon": 21.0003,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XIX w. – po 1909",
+    "istnieje": false,
+    "fakty": [
+      "Punkt oporu XIVA, wybudowany w latach 90. XIX wieku, był jednym z sześciu analogicznych punktów oporu, jakimi uzupełniono oba pierścienie twierdzy.",
+      "Był też ostatnim według numeracji i kolejności obiektem fortecznym Twierdzy Warszawa.",
+      "W ramach likwidacji twierdzy, po 1909 roku, punkt został całkowicie zniszczony.",
+      "Analiza zdjęć lotniczych Białołęki z 1932 ujawniła ślady fortu na tle budowanego wówczas Kanału Żerańskiego.",
+      "Fragment wału między szosą modlińską a Wisłą to teren dzisiejszej Elektrociepłowni Żerań."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort XIVA, a late-19th-century outpost of the Warsaw Fortress on the right bank of the Vistula. After 1909 it was totally destroyed; aerial photos from 1932 show its traces, and part of its earthworks lies under today's Żerań power plant.",
+    "ludzie": [],
+    "dawne_nazwy": ["Pelcowizna"],
+    "zrodla": [{"tytul": "Wikipedia: Fort XIVA Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_XIVA_Twierdzy_Warszawa"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "galeria-polnocna",
+    "nazwa": "Galeria Północna",
+    "name_en": "Galeria Północna",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "ul. Światowida 17",
+    "adres_historyczny": null,
+    "lat": 52.317425, "lon": 20.966855,
+    "lokalizacja": "dokladna",
+    "okres": "2015–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę obiektu rozpoczęto w połowie 2015.",
+      "Został on zaprojektowany przez pracownię APA Wojciechowski i izraelskie biuro projektowe Moshe Tzur.",
+      "Galeria Północna rozpoczęła działalność 14 września 2017.",
+      "Ma powierzchnię ok. 64 000 metrów kwadratowych oraz ponad 2000 miejsc parkingowych.",
+      "W 2020 działało w niej m.in. 200 sklepów i punktów usługowych, 13 restauracji i barów oraz 11-salowe kino Cinema City.",
+      "Wewnątrz ustawiono 22-metrową rzeźbę „Wir” autorstwa Oskara Zięty.",
+      "Właścicielem centrum jest spółka Globe Trade Centre."
+    ],
+    "ciekawostki": [
+      "Na dachu obiektu znajduje się ogród, skatepark i siłownia plenerowa."
+    ],
+    "summary_en": "Galeria Północna is a large shopping and leisure centre at ul. Światowida 17 in Tarchomin, Białołęka. Construction began in mid-2015 and the centre opened on 14 September 2017, with about 64,000 m² and over 2,000 parking spaces.",
+    "ludzie": [
+      {"kto": "Oskar Zięta", "rola": "autor 22-metrowej rzeźby „Wir” w holu centrum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Galeria Północna", "url": "https://pl.wikipedia.org/wiki/Galeria_P%C3%B3%C5%82nocna"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "grodzisk-osiedle",
+    "nazwa": "Grodzisk",
+    "name_en": "Grodzisk",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.317168, "lon": 21.063335,
+    "lokalizacja": "przyblizona",
+    "okres": "I poł. XVI w. – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Najwcześniejsze wzmianki o wsi Grodzisk, należącej wówczas do książąt mazowieckich, pochodzą z I poł. XVI w.",
+      "W czasie Bitwy pod Warszawą 28–30 lipca 1656 wieś została całkowicie spalona, a wraz z nią leżący nieopodal kościół św. Michała Archanioła oraz zabudowania oo. bernardynów.",
+      "Około 1825 r. we wsi Grodzisk w 20 domach mieszkały 142 osoby.",
+      "W 1921 r. Grodzisk wieś była zamieszkała przez 237 osób, a folwark Grodzisk przez 6 osób.",
+      "W 1943 r. we wsi Grodzisk mieszkało 317 osób.",
+      "W 1976 r. Grodzisk został włączony do granic Warszawy wraz z innymi sąsiadującymi wsiami."
+    ],
+    "ciekawostki": [
+      "Przy ul. Głębockiej znajduje się zabytkowy kościół św. Michała Archanioła; w innym miejscu przy tej samej ulicy rosną dwa dęby szypułkowe, wpisane na listę pomników przyrody."
+    ],
+    "summary_en": "Grodzisk is a residential estate in Warsaw's Białołęka district. The village is recorded from the early 16th century, was burned during the 1656 battle of Warsaw, and was incorporated into the city in 1976.",
+    "ludzie": [],
+    "dawne_nazwy": ["Grodzisko (osada, na miejscu której w połowie XVII w. założono nową wieś)"],
+    "zrodla": [{"tytul": "Wikipedia: Grodzisk (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Grodzisk_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje też mezolityczne ślady (ok. 8000–4000 p.n.e.); pominięte jako nieistotne dla rekordu."
+  },
+  {
+    "id": "henrykow-osiedle",
+    "nazwa": "Henryków",
+    "name_en": "Henryków",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.3322, "lon": 20.968,
+    "lokalizacja": "przyblizona",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa Henrykowa pochodzi od imienia żydowskiego przedsiębiorcy Henryka Bienentala, który w 1904 na miejscu dawnych zabudowań folwarku Dąbrówka uruchomił gorzelnię.",
+      "W latach 30. XX w. fabryka w Henrykowie zatrudniała ponad 50 pracowników; osada fabryczna liczyła 139 mieszkańców, a miasteczko Henryków – ok. 650 mieszkańców.",
+      "W okresie międzywojennym wieś Henryków wchodziła w skład gminy Jabłonna.",
+      "Po II wojnie światowej w 1951 przyłączono Henryków do Warszawy.",
+      "W 1927 budynki i ogród przy ul. Modlińskiej 257 zostały przekazane siostrom benedyktynkom samarytankom, które utworzyły tam placówkę opieki nad kobietami.",
+      "W 1932 roku kard. Aleksander Kakowski erygował Zgromadzenie Sióstr Benedyktynek Samarytanek Krzyża Chrystusowego na prawie diecezjalnym.",
+      "W październiku 1988 w Zakładach Wytwórczych Mebli Artystycznych w Henrykowie wykonano stół w kształcie koła o średnicy 8,4 m, przy którym odbywały się obrady Okrągłego Stołu.",
+      "W 2013 roku przedsiębiorstwo przeniosło produkcję do Wołomina, a wszystkie budynki zostały później wyburzone."
+    ],
+    "ciekawostki": [
+      "W oficynie dawnego domu sióstr ukrywał się przez jakiś czas Leon Schiller.",
+      "Stół dla obrad Okrągłego Stołu został zmontowany w pałacu w Jabłonnie, lecz na tydzień przed końcem listopada wywieziony do magazynów producenta."
+    ],
+    "summary_en": "Henryków is a residential estate in Warsaw's Białołęka district. It grew around a distillery founded in 1904, and in 1988 its furniture workshop made the round table used for the Round Table Talks; the workshop closed in 2013.",
+    "ludzie": [
+      {"kto": "Henryk Bienental", "rola": "przedsiębiorca, uruchomił gorzelnię w 1904 (w tekście: Henryka Bienentala)", "wiki": null},
+      {"kto": "Aleksander Kakowski", "rola": "kardynał, erygował Zgromadzenie Sióstr Benedyktynek Samarytanek (1932)", "wiki": null},
+      {"kto": "Leon Schiller", "rola": "ukrywał się w oficynie dawnego domu sióstr", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dąbrówka (folwark)"],
+    "zrodla": [{"tytul": "Wikipedia: Henryków (Białołęka)", "url": "https://pl.wikipedia.org/wiki/Henryk%C3%B3w_%28Bia%C5%82o%C5%82%C4%99ka%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Dane o Benedyktynkach dotyczą budynku przy ul. Modlińskiej 257 (osobny rekord). Pierwsza część zdania z tekstu o zakładzie nazywa imię „Henryka Bienentala” w dopełniaczu; nazwisko zapisane wg tekstu."
+  }
+]

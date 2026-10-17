@@ -1,0 +1,261 @@
+[
+  {
+    "id": "osiedle-bernardynska",
+    "nazwa": "Osiedle Bernardyńska",
+    "name_en": "Bernardyńska housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Bernardyńska (osiedle)",
+    "adres_historyczny": null,
+    "lat": 52.193055555, "lon": 21.064166666,
+    "lokalizacja": "przyblizona",
+    "okres": "1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało zbudowane w technologii monolitycznej w latach 1974–1979.",
+      "Generalnym projektantem osiedla był Jan Zdanowicz.",
+      "Składało się z 19 trzynastokondygnacyjnych punktowych bloków mieszkalnych, z 1540 mieszkaniami zaplanowanymi dla ok. 5200 mieszkańców.",
+      "W latach 2003–2004 spółka Dom Development wybudowała na terenie osiedla nowy 7-piętrowy budynek mieszkalny o nazwie „Willa Anna”.",
+      "W latach 80. XX w. mieszkał tu i miał swoją pracownię Franciszek Starowieyski, który w ramach protestu przeciwko brakowi otynkowania bloków wywiesił na elewacji kilkumetrowe dzieło z trupią czaszką.",
+      "W 2015 roku jednej z ulic na osiedlu nadano imię artysty."
+    ],
+    "ciekawostki": [
+      "Na zachód od Bernardyńskiej powstało kolejne osiedle projektu Jana Zdanowicza – Bernardyńska-Powsińska."
+    ],
+    "summary_en": "A monolithic-technology housing estate in Mokotów, built in 1974–1979 to a design by Jan Zdanowicz. It has 19 thirteen-storey tower blocks with 1540 flats. The painter Franciszek Starowieyski lived and worked here in the 1980s.",
+    "ludzie": [
+      {"kto": "Jan Zdanowicz", "rola": "generalny projektant osiedla", "wiki": null},
+      {"kto": "Franciszek Starowieyski", "rola": "malarz, mieszkał i pracował na osiedlu w latach 80.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Bernardyńska", "url": "https://pl.wikipedia.org/wiki/Bernardy%C5%84ska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle, nie pojedynczy budynek; współrzędne z nagłówka."
+  },
+  {
+    "id": "bernardynska-woda",
+    "nazwa": "Bernardyńska Woda (Fosa Bernardyńska)",
+    "name_en": "Bernardyńska Woda moat",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "wzdłuż ul. Idzikowskiego, między ul. Powsińską a ul. Sobieskiego",
+    "adres_historyczny": null,
+    "lat": 52.1922, "lon": 21.0536,
+    "lokalizacja": "dokladna",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zbiornik oraz część biegnącego wzdłuż niego nasypu są pozostałością byłych fortyfikacji Fortu Piłsudskiego z XIX w.",
+      "W 1891 roku inżynier Henryk Huss i Wiktor Magnus, specjalista od parcelacji, założyli spółkę w celu budowy kolejki do Wilanowa.",
+      "Wilanowska Kolej Wąskotorowa została uruchomiona w 1892 roku, a jej tory biegły wzdłuż Bernardyńskiej Wody do ul. Powsińskiej.",
+      "Od 1894 r. kolejka wąskotorowa woziła wycieczkowiczów z Placu Unii Lubelskiej przez Wilanów i Konstancin do Piaseczna.",
+      "Ostatnie fragmenty torów wzdłuż Bernardyńskiej Wody zdemontowano w latach 60. XX w.",
+      "We wrześniu 1939 roku w rejonie Czerniakowa i Sadyby Oddział Wydzielony 14 Pułku Ułanów Jazłowieckich bronił Warszawy od południa; w walkach tych poległo ponad 20 ułanów.",
+      "W 2009 roku, w 70. rocznicę walk, nad Bernardyńską Wodą odsłonięto kamień z tablicą pamiątkową ufundowany przez Zarząd Dzielnicy Warszawa Mokotów."
+    ],
+    "ciekawostki": [
+      "Nazwa fosy pochodzi od pobliskiego klasztoru Bernardynów przy kościele św. Antoniego z Padwy przy ul. Czerniakowskiej 2/4.",
+      "Jeszcze w latach 50. i 60. XX w. można było w kanale pływać i wypożyczać kajaki."
+    ],
+    "summary_en": "An artificial moat-pond in Sadyba, Mokotów, left over from the 19th-century Fort Piłsudski. Its name comes from the nearby Bernardine monastery. A narrow-gauge railway to Wilanów ran along it from 1892 until the 1960s.",
+    "ludzie": [
+      {"kto": "Henryk Huss", "rola": "inżynier, współzałożyciel spółki budującej kolejkę do Wilanowa (1891)", "wiki": null},
+      {"kto": "Wiktor Magnus", "rola": "specjalista od parcelacji, współzałożyciel spółki (1891)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Fosa Fortu Piłsudskiego (Bernardyńska Woda)"],
+    "zrodla": [{"tytul": "Wikipedia: Bernardyńska Woda", "url": "https://pl.wikipedia.org/wiki/Bernardy%C5%84ska_Woda"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "biurowiec-agory",
+    "nazwa": "Biurowiec Agory",
+    "name_en": "Agora headquarters building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Czerska 8/10",
+    "adres_historyczny": null,
+    "lat": 52.203530555, "lon": 21.047047222,
+    "lokalizacja": "dokladna",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Konkurs architektoniczny na projekt siedziby koncernu Agora S.A. rozstrzygnięto w 1998 roku; był to największy w historii Polski konkurs architektoniczny zorganizowany przez prywatnego inwestora.",
+      "Realizację inwestycji podzielono na dwie fazy: pierwszą w latach 2000–2001 i drugą w 2002.",
+      "Budynek wybudowano w miejscu wyburzonego biurowca Przedsiębiorstwa Transportowo-Sprzętowego Budownictwa „Transbud Warszawa”.",
+      "18 lipca 2002 w budynku miało miejsce spotkanie Adama Michnika z Lwem Rywinem, będące jednym z kluczowych wydarzeń tzw. afery Rywina.",
+      "W 2019 wnętrza zostały zmodernizowane według projektu pracowni Projekt Praga."
+    ],
+    "ciekawostki": [
+      "Z uwagi na wydłużony kształt i niewielką wysokość budynek nazywany był „leżącym wieżowcem”."
+    ],
+    "summary_en": "A postmodern office building in Warsaw at Czerska 8/10, designed by JEMS Architekci and home to the Agora media group. Built in 2000–2002 on the site of a demolished office block, it is known for its cedar sun-breakers and its inner courtyards.",
+    "ludzie": [
+      {"kto": "Adam Michnik", "rola": "uczestnik spotkania z Lwem Rywinem w budynku (18.07.2002)", "wiki": null},
+      {"kto": "Lew Rywin", "rola": "uczestnik spotkania w budynku (18.07.2002), związany z aferą Rywina", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Biurowiec Agory", "url": "https://pl.wikipedia.org/wiki/Biurowiec_Agory"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "biurowiec-canal-plus",
+    "nazwa": "Biurowiec Canal+",
+    "name_en": "Canal+ office building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "al. gen. Władysława Sikorskiego 9",
+    "adres_historyczny": null,
+    "lat": 52.181388888, "lon": 21.044166666,
+    "lokalizacja": "dokladna",
+    "okres": "2007–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa biurowca rozpoczęła się w styczniu 2007 i trwała 14 miesięcy.",
+      "Budynek ma sześć kondygnacji; powierzchnia całkowita wynosi 14100 m², a użytkowa 7600 m².",
+      "Generalnym wykonawcą budynku była firma Hochtief Polska.",
+      "Projekt architektoniczny został przygotowany przez Biuro Projektów Kazimierski i Ryba.",
+      "W 2020 roku dobudowano parking naziemny."
+    ],
+    "ciekawostki": [
+      "Na dachu budynku znajduje się maszt antenowy na potrzebę kanałów platformy Canal+."
+    ],
+    "summary_en": "A six-storey office building of Canal+ Polska at al. gen. W. Sikorskiego 9 in Mokotów. Construction ran from January 2007 for 14 months, with Hochtief Polska as general contractor.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Biurowiec Canal+", "url": "https://pl.wikipedia.org/wiki/Biurowiec_Canal%2B"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Sikorskiego zapisane w tekście jako „gen. W. Sikorskiego”."
+  },
+  {
+    "id": "budynek-pracownikow-radcy-handlowego-i-ambasady-zsrr",
+    "nazwa": "Budynek mieszkalny pracowników biur Radcy Handlowego i Ambasady ZSRR („Szpiegowo”)",
+    "name_en": "Residential block for USSR trade and embassy staff (\"Szpiegowo\")",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana III Sobieskiego 100",
+    "adres_historyczny": null,
+    "lat": 52.19737, "lon": 21.04056,
+    "lokalizacja": "dokladna",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Blok mieszkalny przy ul. Jana III Sobieskiego 100 wybudowano dla pracowników biur radcy handlowego i ambasady Związku Socjalistycznych Republik Radzieckich.",
+      "Budowa została zrealizowana w latach 1977–1980 (lub do 1978), a jej wykonawcą był Budimex.",
+      "Pierwotną rolę budynek pełnił do 1989 roku; według wielu relacji mógł być siedzibą KGB w Warszawie lub być wykorzystywany w celach wywiadowczych.",
+      "Od 1998 swoją siedzibę miało tu przedsiębiorstwo branży gazowej – Fart S.A.",
+      "Od 2005 do 2017 roku mieścił się tu utworzony dla Rosjan lokal Club 100, zwany „Setką” lub „Sotką”.",
+      "W 2016 roku Sąd Okręgowy w Warszawie orzekł o wydaniu nieruchomości Warszawie i spłacie 7 milionów złotych narosłych zobowiązań.",
+      "Budynek został przejęty przez komornika i wydany władzom miasta 11 kwietnia 2022 roku."
+    ],
+    "ciekawostki": [
+      "W 2017 roku blok został wpisany do gminnej ewidencji zabytków m.st. Warszawy (ID: MOK34197)."
+    ],
+    "summary_en": "A residential block at Jana III Sobieskiego 100 in Mokotów, built in 1977–1980 for staff of the Soviet trade mission and embassy. Its popular nicknames, \"Szpiegowo\" and \"Szpiegowiec\", refer to suspected intelligence use. It was handed to the city in 2022.",
+    "ludzie": [
+      {"kto": "Janusz Nowak", "rola": "główny architekt projektu", "wiki": null},
+      {"kto": "Piotr Sembrat", "rola": "główny architekt projektu", "wiki": null},
+      {"kto": "Andrzej Krawczyk", "rola": "odpowiedzialny za konstrukcję", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpiegowo", "Szpiegowiec", "Club 100 („Setka”, „Sotka”)"],
+    "zrodla": [{"tytul": "Wikipedia: Budynek mieszkalny pracowników biur Radcy Handlowego i Ambasady ZSRR", "url": "https://pl.wikipedia.org/wiki/Budynek_mieszkalny_pracownik%C3%B3w_biur_Radcy_Handlowego_i_Ambasady_ZSRR"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że budynek mógł być siedzibą KGB; to relacje, nie ustalenie. Adres z ewidencji (Sobieskiego 100A) jest przywołany jako omyłka, nie sprostowana."
+  },
+  {
+    "id": "budynek-redakcyjno-biurowy-b-tvp",
+    "nazwa": "Budynek redakcyjno-biurowy B Telewizji Polskiej",
+    "name_en": "Polish Television Building B",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana Pawła Woronicza 17",
+    "adres_historyczny": null,
+    "lat": 52.188186763, "lon": 21.008947587,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt budynku wyłoniono w 1997 roku w konkursie architektonicznym zorganizowanym przez Stowarzyszenie Architektów Polskich; pierwszą nagrodę zdobyło konsorcjum DiM’84 Dom i Miasto sp. z o.o. Czesława Bieleckiego oraz francuskiej pracowni Atelier d'Architecture – Karczewski & Bernier.",
+      "Z uwagi na utrudniony kontakt pomiędzy francuskim członkiem konsorcjum a TVP do realizacji projektu przystąpiła wyłącznie pracownia Bieleckiego.",
+      "Budynek powstał w latach 2001–2008.",
+      "W 2006 roku Najwyższa Izba Kontroli pozytywnie oceniła konkurs architektoniczny, natomiast negatywnie proces inwestycyjny i dyscyplinę finansową, w tym ponad trzykrotny wzrost kosztów budowy.",
+      "Z uwagi na wody podziemne zrezygnowano z budowy garażu podziemnego na rzecz wielokondygnacyjnego garażu wolnostojącego.",
+      "W 2008 roku budynek otrzymał nagrodę Makabryła."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A postmodern office building of Polish Television at Woronicza 17 in Mokotów, built in 2001–2008 after a 1997 competition. It was criticised for cost overruns and for its many architectural quotations.",
+    "ludzie": [
+      {"kto": "Czesław Bielecki", "rola": "architekt, pracownia DiM’84 (autor projektu)", "wiki": null},
+      {"kto": "Andrzej Urbański", "rola": "prezes spółki, ingerował w wystrój gabinetu prezesa TVP", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Budynek redakcyjno-biurowy B Telewizji Polskiej", "url": "https://pl.wikipedia.org/wiki/Budynek_redakcyjno-biurowy_B_Telewizji_Polskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cemi-zaklady-wolska",
+    "nazwa": "Zakłady CEMI (Naukowo-Produkcyjne Centrum Półprzewodników)",
+    "name_en": "CEMI semiconductor works",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Wołoska (teren przy Wołoskiej)",
+    "adres_historyczny": "ul. płk. Władimira Komarowa 5 (dawna ul. Komarowa)",
+    "lat": 52.1811, "lon": 20.9994,
+    "lokalizacja": "przyblizona",
+    "okres": "1970–1994",
+    "istnieje": false,
+    "fakty": [
+      "Naukowo-Produkcyjne Centrum Półprzewodników CEMI istniało w latach 1970–1994.",
+      "Zakłady początkowo mieściły się wyłącznie po zachodniej stronie ul. Komarowa (obecnie ul. Wołoska), a później wybudowano budynki po stronie wschodniej.",
+      "Od 1971 roku zakłady produkowały krzemowe elementy dyskretne (diody i tranzystory), a później także układy scalone TTL i CMOS.",
+      "W CEMI przy ul. płk. Władimira Komarowa 5 produkowano wtedy mikroprocesory MCY7880, polską wersję 8-bitowego Intela 8080.",
+      "Po likwidacji zakładów budynki po zachodniej stronie ul. Wołoskiej zaadaptowano do funkcji mieszkalnych i biznesowo-rozrywkowych, a budynki po stronie wschodniej (C1-2 i C3) rozebrano.",
+      "Stare hale UNITRA CEMI (największy bud. 16) zamieniły się w zespół biurowców GTC (Globe Trade Centre) przy Wołoskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The UNITRA-CEMI semiconductor complex in Warsaw, active 1970–1994, made transistors, diodes, integrated circuits and the MCY7880 microprocessor. After closure its halls were converted, and the site now holds the GTC office complex on Wołoska Street.",
+    "ludzie": [],
+    "dawne_nazwy": ["Komarowa (obecnie Wołoska)", "UNITRA CEMI"],
+    "zrodla": [{"tytul": "Wikipedia: CEMI", "url": "https://pl.wikipedia.org/wiki/CEMI"}],
+    "pewnosc": "średnia",
+    "uwagi": "Zakłady zlikwidowane; współrzędne z nagłówka, przybliżone do ul. Wołoskiej."
+  },
+  {
+    "id": "centrum-handlowe-panorama",
+    "nazwa": "Centrum Handlowe Panorama",
+    "name_en": "Panorama shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "al. Wincentego Witosa 31",
+    "adres_historyczny": null,
+    "lat": 52.197209034, "lon": 21.049096637,
+    "lokalizacja": "dokladna",
+    "okres": "1990–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prace projektowe nad budynkiem rozpoczęto w 1990, a otwarcie centrum handlowego nastąpiło w 1993 roku.",
+      "Panorama bywa nazywana pierwszym w Warszawie centrum handlowym.",
+      "W latach 90. za sprawą zastosowanych we wnętrzu materiałów i ówczesnych najemców była postrzegana jako symbol luksusu i ekskluzywności.",
+      "Budynek ma 4 kondygnacje, na których znajduje się prawie 200 lokali handlowych.",
+      "Obiekt wyposażono w pierwszą w Polsce windę panoramiczną, umieszczoną w jego narożniku.",
+      "Od 2021 toczy się dyskusja nad wpisaniem budynku na listę dóbr kultury współczesnej."
+    ],
+    "ciekawostki": [
+      "Nazwa centrum handlowego została wybrana w konkursie dla wykonawców i przyszłych najemców."
+    ],
+    "summary_en": "The Panorama shopping centre on Wincentego Witosa Avenue, Mokotów, designed by Tadeusz Szumielewicz and colleagues. Opened in 1993, it is often called Warsaw's first shopping centre. A marble fountain and mirror-clad interiors marked its 1990s luxury image.",
+    "ludzie": [
+      {"kto": "Tadeusz Szumielewicz", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Stanisław Chrzanowski", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Mirosława Koczan", "rola": "projektantka budynku", "wiki": null},
+      {"kto": "Marta Pawlica", "rola": "projektantka budynku", "wiki": null},
+      {"kto": "Tadeusz Katner", "rola": "projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Centrum Handlowe Panorama", "url": "https://pl.wikipedia.org/wiki/Centrum_Handlowe_Panorama"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

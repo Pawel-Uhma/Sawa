@@ -1,0 +1,183 @@
+[
+  {
+    "id": "olszewska-12-fabryka-mlot",
+    "nazwa": "Budynek przy ul. Olszewskiej 12 (dawna fabryka „Młot”)",
+    "name_en": "Olszewska 12 building (former Młot factory)",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Olszewska 12",
+    "adres_historyczny": null,
+    "lat": 52.2175,
+    "lon": 21.0034,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W okresie międzywojennym w budynku mieściła się fabryka pn. „Młot”.",
+      "Fabryka produkowała m.in. ogrodzenia, balustrady, kasy pancerne, konstrukcje i okna żelazne, schody oraz bramy.",
+      "Po roku 1945 zlokalizowano w nim drukarnię wojskową.",
+      "Projektem rozbudowy i rewitalizacji budynku na potrzeby nowej siedziby WSEiZ zajmowała się pracownia projektowa Archimed Sp. z o.o.",
+      "Administracja Uczelni funkcjonuje w nowej siedzibie od listopada 2013 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former interwar iron-goods factory, known as Młot, on ul. Olszewska 12. After 1945 it housed a military printing works, and since 2013 it has been the administrative seat of the Academy of Technology and Arts (ATA).",
+    "ludzie": [],
+    "dawne_nazwy": ["fabryka „Młot”"],
+    "zrodla": [{"tytul": "Wikipedia: Akademia Techniczno-Artystyczna Nauk Stosowanych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Akademia_Techniczno-Artystyczna_Nauk_Stosowanych_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka artykułu o uczelni, nie samego budynku. Tekst podaje dzielnicę Mokotów, a nagłówek DZIELNICE: Ochota; wpisano nagłówek."
+  },
+  {
+    "id": "rejtana-16-odlewnia-czcionek",
+    "nazwa": "Budynek przy ul. Rejtana 16 (dawna Odlewnia Czcionek)",
+    "name_en": "Rejtana 16 building (former type foundry)",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Rejtana 16",
+    "adres_historyczny": null,
+    "lat": 52.2175,
+    "lon": 21.0034,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W okresie międzywojennym w budynku mieściła się „Odlewnia Czcionek Jan Idźkowski i S-ka”.",
+      "Współwłaścicielem firmy był Tadeusz Drozdowski, który w czasie II wojny światowej prowadził w fabryce podziemne drukarstwo i wspierał tajne komplety dla młodzieży, zorganizowane przez prof. Bolesława Briksa w ramach Związku Walki Zbrojnej.",
+      "Tadeusz Drozdowski zginął tragicznie w niemieckim obozie koncentracyjnym w Oświęcimiu w 1943 roku.",
+      "W październiku 2015 r., w ramach obchodów jubileuszu 20-lecia WSEiZ, Władze Uczelni umieściły na elewacji budynku tablicę upamiętniającą Tadeusza Drozdowskiego i Bolesława Briksa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former interwar type foundry at ul. Rejtana 16. During the Second World War co-owner Tadeusz Drozdowski ran an underground print shop and supported secret classes for young people. A plaque on the facade commemorates him and Bolesław Briks.",
+    "ludzie": [
+      {"kto": "Tadeusz Drozdowski", "rola": "współwłaściciel odlewni, w czasie wojny prowadził podziemne drukarstwo, zginął w Oświęcimiu w 1943", "wiki": null},
+      {"kto": "prof. Bolesław Briks", "rola": "organizator tajnych kompletów w ramach Związku Walki Zbrojnej, upamiętniony tablicą", "wiki": null}
+    ],
+    "dawne_nazwy": ["Odlewnia Czcionek Jan Idźkowski i S-ka"],
+    "zrodla": [{"tytul": "Wikipedia: Akademia Techniczno-Artystyczna Nauk Stosowanych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Akademia_Techniczno-Artystyczna_Nauk_Stosowanych_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka artykułu o uczelni, nie samego budynku. Tekst podaje dzielnicę Mokotów, a nagłówek DZIELNICE: Ochota; wpisano nagłówek."
+  },
+  {
+    "id": "aleja-wielkopolski",
+    "nazwa": "Aleja Wielkopolski",
+    "name_en": "Wielkopolska Avenue",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Aleja Wielkopolski",
+    "adres_historyczny": null,
+    "lat": 52.2178,
+    "lon": 20.9947,
+    "lokalizacja": "przyblizona",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja Wielkopolski została wytyczona w latach 1932–1935 według projektu Zygmunta Hellwiga.",
+      "W założeniu miała ona stanowić jedną z osi nigdy nie wybudowanej Dzielnicy Józefa Piłsudskiego.",
+      "Według ówczesnych planów aleja miała liczyć 60 metrów szerokości i być znacznie dłuższa – jej bieg kończyłby się przy ul. Wołoskiej na wysokości ul. Madalińskiego.",
+      "Ostatecznie udało się zrealizować tylko fragment od ul. Filtrowej do ul. Wawelskiej.",
+      "Aleja jest osią wzdłużną założonego w 1938 roku parku Wielkopolskiego."
+    ],
+    "ciekawostki": [
+      "Pod koniec lat 30. planowano wytyczenie ulic o nazwach Mekki i Medyny w związku z planami budowy meczetu dla społeczności tatarskiej, jednak wybuch II wojny światowej uniemożliwił realizację tych planów."
+    ],
+    "summary_en": "A Warsaw avenue in Ochota, laid out in 1932–1935 to a design by Zygmunt Hellwig. Only the stretch from Filtrowa to Wawelska was built, out of a much longer planned route.",
+    "ludzie": [{"kto": "Zygmunt Hellwig", "rola": "autor projektu alei (1932–1935)", "wiki": null}],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Aleja Wielkopolski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Wielkopolski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka."
+  },
+  {
+    "id": "osiedle-aleje-jerozolimskie-zachod",
+    "nazwa": "Osiedle Aleje Jerozolimskie-Zachód",
+    "name_en": "Aleje Jerozolimskie-Zachód housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.221666666,
+    "lon": 20.979444444,
+    "lokalizacja": "przyblizona",
+    "okres": "1774–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVIII wieku w tej części miasta znajdowała się założona w 1774 roku osada żydowska nazywana Nową Jerozolimą.",
+      "We wrześniu 1939 roku w tym miejscu broniły się 41 Suwalski Pułk im. Marszałka Piłsudskiego i 40 Pułk Piechoty Dzieci Lwowskich.",
+      "Doszło tu też do jedynego starcia pancernego, które miało miejsce w czasie obrony Warszawy.",
+      "Osiedle wybudowano w latach 1962–1967 według projektu Jana Zdanowicza i Jerzego Baumillera.",
+      "Al. Jerozolimskie przedłużono od pl. Zawiszy na zachód dopiero w 1973 roku.",
+      "Osiedle ma powierzchnię 16,5 ha i 1898 mieszkań."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A housing estate in Ochota, built in 1962–1967 along the western Aleje Jerozolimskie. The site was earlier a Jewish settlement founded in 1774, and in September 1939 it saw a tank clash during the defence of Warsaw.",
+    "ludzie": [
+      {"kto": "Jan Zdanowicz", "rola": "projektant osiedla (1962–1967)", "wiki": null},
+      {"kto": "Jerzy Baumiller", "rola": "projektant osiedla (1962–1967)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowa Jerozolima"],
+    "zrodla": [{"tytul": "Wikipedia: Aleje Jerozolimskie-Zachód", "url": "https://pl.wikipedia.org/wiki/Aleje_Jerozolimskie-Zach%C3%B3d"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "siedziba-archiwum-akt-nowych",
+    "nazwa": "Siedziba Archiwum Akt Nowych",
+    "name_en": "Archiwum Akt Nowych (National Archive seat)",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Długa 13",
+    "lat": 52.208519444,
+    "lon": 20.978252777,
+    "lokalizacja": "dokladna",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Archiwum znajdowało się w Warszawie przy ul. Długiej 13, jednak w 1919 roku, gdy zasób liczył 2011 mb akt i 146 nierozpakowanych skrzyń, okazało się, że jego siedziba jest niewystarczająca.",
+      "W siedzibie AAN znajduje się tablica upamiętniająca spalenie zbiorów Archiwum Akt Nowych przez Niemców w 1944 roku.",
+      "W siedzibie AAN znajduje się tablica upamiętniająca gen. Marię Wittek oraz jej płaskorzeźba."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The seat of the Archiwum Akt Nowych in Warsaw, a central state archive founded in 1919. The building carries memorial plaques, including one for the collections burned by the Germans in 1944.",
+    "ludzie": [{"kto": "gen. Maria Wittek", "rola": "upamiętniona tablicą i płaskorzeźbą w siedzibie AAN", "wiki": null}],
+    "dawne_nazwy": ["Archiwum Wojskowe (1919–1930)"],
+    "zrodla": [{"tytul": "Wikipedia: Archiwum Akt Nowych", "url": "https://pl.wikipedia.org/wiki/Archiwum_Akt_Nowych"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje dzisiejszego adresu siedziby; współrzędne z nagłówka. Rekord oparty głównie na historii siedziby i tablicach, bez ogólnej historii instytucji."
+  },
+  {
+    "id": "atlas-tower",
+    "nazwa": "Atlas Tower",
+    "name_en": "Atlas Tower",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Aleje Jerozolimskie 123a",
+    "adres_historyczny": null,
+    "lat": 52.22489167,
+    "lon": 20.99127778,
+    "lokalizacja": "dokladna",
+    "okres": "1999–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę wieżowca ukończono w 1999 roku.",
+      "Inwestorami byli tureccy biznesmeni Sabri Bekdas i Vahap Toy.",
+      "W 2003 r. spółka inwestorów zbankrutowała, Toy został wydalony z Polski, a właścicielem budynku stał się Bank Millennium.",
+      "Wtedy budynek zmienił nazwę z Reform Plaza na Millennium Plaza.",
+      "Obiekt liczy 116 metrów wysokości i 31 kondygnacji, z czego trzy pod powierzchnią ziemi.",
+      "Do marca 2008 budynek pełnił rolę głównej siedziby Banku Millennium.",
+      "Budynek był tymczasową siedzibą ambasad Kanady (2001–2002, X p.) i Izraela (od 2009 na XX p.)."
+    ],
+    "ciekawostki": [
+      "Mieszkańcy miasta żartobliwie nazywają budynek toi-toiem, co jest nawiązaniem do biało-niebieskiej elewacji upodabniającej go do przenośnych toalet."
+    ],
+    "summary_en": "A 116-metre office tower on Aleje Jerozolimskie, finished in 1999. It was the main seat of Bank Millennium until 2008 and was renamed Atlas Tower after its 2018 renovation.",
+    "ludzie": [
+      {"kto": "Sabri Bekdas", "rola": "inwestor (turecki biznesmen)", "wiki": null},
+      {"kto": "Vahap Toy", "rola": "inwestor (turecki biznesmen), wydalony z Polski po bankructwie spółki w 2003", "wiki": null}
+    ],
+    "dawne_nazwy": ["Reform Plaza (do 2003)", "Millennium Plaza (2003–2018)"],
+    "zrodla": [{"tytul": "Wikipedia: Atlas Tower", "url": "https://pl.wikipedia.org/wiki/Atlas_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zmiana nazwy na Atlas Tower nastąpiła po renowacji w 2018 r."
+  }
+]

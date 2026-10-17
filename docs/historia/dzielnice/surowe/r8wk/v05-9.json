@@ -1,0 +1,296 @@
+[
+  {
+    "id": "ulica-wandy",
+    "nazwa": "Ulica Wandy",
+    "name_en": "Wandy Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Wandy",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest przedłużeniem ulicy Królowej Aldony i zaczyna swój bieg od Zwycięzców.",
+      "Ulica zawdzięcza swą nazwę legendarnej księżniczce Wandzie »co nie chciała Niemca«.",
+      "Do lat 90. XX wieku teren wzdłuż Wandy, pomiędzy Zwycięzców a Meksykańską, zajmowały łąki ciągnące prawie do ulicy Saskiej.",
+      "Po transformacji ustrojowej wybudowano tu pierwsze na Saskiej Kępie nowoczesne osiedle niskich apartamentowców."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wandy is a 445-metre street on Saska Kępa in Praga-Południe, named after the legendary princess Wanda. It is a continuation of Królowej Aldony and was meadowland until the 1990s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Wandy", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Wandy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-witolinska",
+    "nazwa": "Ulica Witolińska",
+    "name_en": "Witolińska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Witolińska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Witolińska została wytyczona ok. 1920 r.; dawniej nosiła nazwę Iłżańskiej.",
+      "Gdy w latach 70. XX wieku podjęto decyzję o budowie Osiedla Ostrobramska, zlikwidowano grunty rolne, a na ich terenie powstało wysokoblokowe osiedle.",
+      "W 2013 roku ul. Witolińska została przebudowana na odcinku Grochowska – Jarocińska."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Witolińska is a 550-metre residential street on Witolin in Praga-Południe, running from Łukowska to Grochowska. Formerly called Iłżańska, it was laid out around 1920 and became an estate road in the 1970s.",
+    "ludzie": [],
+    "dawne_nazwy": ["Iłżańska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Witolińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Witolińska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-wachocka",
+    "nazwa": "Ulica Wąchocka",
+    "name_en": "Wąchocka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Wąchocka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od miasta Wąchock, położonego w województwie świętokrzyskim.",
+      "Jej przedłużeniem jest ulica Bajońska; mimo że jest wąska, ruch odbywa się w dwóch kierunkach.",
+      "W latach 90. XX wieku na łąkach przy Trasie Łazienkowskiej powstało nowe osiedle szeregowych domków jednorodzinnych, ponumerowanych od 1a do 1s."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wąchocka is a 310-metre street on Saska Kępa in Praga-Południe, named after the town of Wąchock. It runs from Zakopiańska under the Łazienkowska Route viaduct and continues as Bajońska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Wąchocka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Wąchocka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zakopianska-10",
+    "nazwa": "Willa przy ul. Zakopiańskiej 10",
+    "name_en": "Villa at Zakopiańska 10",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Zakopiańska 10",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa przy Zakopiańskiej 10 została wybudowana w połowie lat 30. XX wieku.",
+      "Początkowo mieszkał tu płk Władysław Ostromęcki (1878-1945), zastępca szefa Departamentu Artylerii Ministerstwa Spraw Wojskowych po 1918 roku, inspektor techniczny artylerii i redaktor »Przeglądu Artyleryjskiego«.",
+      "Od 1938 roku w domu mieszkał Władysław Daniłowski (1902-2000), pianista, kompozytor i wokalista."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A villa built in the mid-1930s at Zakopiańska 10 on Saska Kępa. Colonel Władysław Ostromęcki lived there first, and from 1938 pianist and composer Władysław Daniłowski.",
+    "ludzie": [
+      {"kto": "Władysław Ostromęcki", "rola": "płk, zastępca szefa Departamentu Artylerii MSWojsk. po 1918 r., pierwszy mieszkaniec", "wiki": null},
+      {"kto": "Władysław Daniłowski", "rola": "pianista, kompozytor i wokalista, mieszkał od 1938 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Zakopiańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zakopiańska"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst podaje dla willi tylko »połowę lat 30.«; rok 1935 nie pada."
+  },
+  {
+    "id": "ulica-zakole",
+    "nazwa": "Ulica Zakole",
+    "name_en": "Zakole Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Zakole",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała ok. 1920 r. jako mało znacząca droga łącząca ulice Kobielską z Grochowską.",
+      "W związku z przebudową ronda Wiatraczna w 1968 roku i reorganizacją ruchu Zakole stało się jednokierunkową (w stronę północną) szeroką ulicą.",
+      "Zakole zawdzięcza swoją nazwę półkolistemu kształtowi.",
+      "Zakole, podobnie jak ulica Wiatraczna, ma wejść w skład tzw. Małej Obwodnicy Pragi."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zakole is a curved street of about 100 metres on Grochów in Praga-Południe, linking Grochowska and Wiatraczna. It became one-way northbound after the 1968 rebuild of the Wiatraczna roundabout.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Zakole", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zakole"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "W infoboksie okres: ok. 1968; w tekście powstanie ok. 1920 r."
+  },
+  {
+    "id": "ulica-zakopianska",
+    "nazwa": "Ulica Zakopiańska",
+    "name_en": "Zakopiańska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Zakopiańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy zawdzięcza bardzo popularnej w okresie międzywojennym stolicy polskich Tatr – Zakopanemu.",
+      "Swój bieg łukiem rozpoczyna od ulicy Zwycięzców, by ślepo zakończyć się przy murze Wału Miedzeszyńskiego.",
+      "Do 2005 roku ulica słynęła z rosnących wzdłuż niej ogromnych klonów, które obecnie zastąpiono lipami drobnolistnymi.",
+      "Najpopularniejszym miejscem na Zakopiańskiej jest cukiernia »Irena«, ulokowana w pawilonie ogrodu domu numer 20."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zakopiańska is a 380-metre curved street on Saska Kępa in Praga-Południe, named after Zakopane. It ends in a dead end at the Wał Miedzeszyński wall, and its best-known spot is the Irena café at number 20.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Zakopiańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zakopiańska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-zamoyskiego",
+    "nazwa": "Ulica Jana Zamoyskiego",
+    "name_en": "Jan Zamoyski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe, Praga-Północ",
+    "adres_dzis": "Zamoyskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1918–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy zawdzięcza Janowi Zamoyskiemu, kanclerzowi wielkiemu koronnemu, hetmanowi wielkiemu koronnemu, twórcy Zamościa.",
+      "Ulica odchodziła od ulicy Wołowej i prowadziła nad Wisłę; w okolicach odbywały się targi końskie i bydła, a z czasem powstała tam rzeźnia miejska.",
+      "Ulica Zamoyskiego nosi swoją dzisiejszą nazwę od zakończenia pierwszej wojny światowej.",
+      "W latach 20. XX wieku Jan Wedel postanowił wybudować na Pradze fabrykę słodyczy; Zakłady Wedla stoją do dziś pod adresem Zamoyskiego 28/30."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zamoyskiego is a 1.3 km street crossing Praga-Północ and Praga-Południe, named after Jan Zamoyski, founder of Zamość. The street has the name since the end of World War I, and the Wedel chocolate factory is still at numbers 28/30.",
+    "ludzie": [
+      {"kto": "Jan Zamoyski", "rola": "kanclerz wielki koronny, hetman wielki koronny, twórca Zamościa, patron ulicy", "wiki": null},
+      {"kto": "Jan Wedel", "rola": "przedsiębiorca, założył fabrykę słodyczy na Pradze", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sprzeczna", "Moskiewska"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Jana Zamoyskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zamoyskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres 1918 to data nadania obecnej nazwy, nie powstania ulicy."
+  },
+  {
+    "id": "ulica-zloczowska",
+    "nazwa": "Ulica Złoczowska",
+    "name_en": "Złoczowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Złoczowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została zaplanowana przed wojną.",
+      "Nazwa pochodzi od Złoczowa, miasta koło Lwowa; w okresie międzywojennym, kiedy powstawała nazwa ulicy, Złoczów był jeszcze w granicach Polski, a dziś leży na Ukrainie.",
+      "Złoczowska zaczyna się od ulicy Alzackiej i zygzakiem biegnie do ulicy Brukselskiej.",
+      "Dominuje tu powojenna szeregowa zabudowa jednorodzinna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Złoczowska is a 255-metre street on Saska Kępa in Praga-Południe, named after the town of Złoczów, then in Poland and now in Ukraine. It was planned before the war and is lined with post-war terraced houses.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Złoczowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Złoczowska"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dwa różne przebiegi w tekście (Lotaryńska–Ateńska i Alzacka–Brukselska); przyjęto drugi, szczegółowy."
+  },
+  {
+    "id": "ulica-lukiska",
+    "nazwa": "Ulica Łukiska",
+    "name_en": "Łukiska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Łukiska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica leży na historycznych Górkach Grochowskich.",
+      "Nazwa pochodzi od wileńskiego obszaru Łukiszki, gdzie znajdowało się znane więzienie na Łukiszkach.",
+      "Przebieg ulicy został przerwany w 1973 roku przy przebudowie ul. Ostrobramskiej w ciąg Trasy Łazienkowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Łukiska is a 470-metre street on Grochów and Gocław in Praga-Południe, on the historic Górki Grochowskie. Its name comes from the Łukiszki district of Vilnius, and its route was cut in 1973 by the rebuilding of Ostrobramska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Łukiska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Łukiska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-zymirskiego",
+    "nazwa": "Ulica Franciszka Żymirskiego",
+    "name_en": "Franciszek Żymirski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Żymirskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ogranicza od wschodu osiedle Przyczółek Grochowski i biegnie od Kwarcianej do Motorowej.",
+      "Pierwotnie ulica biegła od Grenadierów do Nasypowej; w latach 50. XX wieku zmieniono jej nazwę na Międzyborską.",
+      "Ponownie ulica Żymirskiego pojawiła się około 1973 roku w związku z budową osiedla Przyczółek Grochowski.",
+      "Patronem ulicy jest Franciszek Żymirski, generał, który brał udział w powstaniu listopadowym i zginął w czasie bitwy pod Olszynką Grochowską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Żymirskiego is a 350-metre street on Gocław in Praga-Południe, bounding the Przyczółek Grochowski estate on the east. It is named after General Franciszek Żymirski, who took part in the November Uprising and died at the battle of Olszynka Grochowska.",
+    "ludzie": [
+      {"kto": "Franciszek Żymirski", "rola": "generał, uczestnik powstania listopadowego, patron ulicy, zginął w bitwie pod Olszynką Grochowską", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Żymirskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żymirskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst: w latach 50. XX wieku dawną ulicę Żymirskiego przemianowano na Międzyborską."
+  }
+]

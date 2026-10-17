@@ -1,0 +1,366 @@
+[
+  {
+    "id": "szczesliwice",
+    "nazwa": "Szczęśliwice",
+    "name_en": "Szczęśliwice",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2075,
+    "lon": 20.9578,
+    "lokalizacja": "przyblizona",
+    "okres": "XV/XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Stenclewice powstała w XV lub XVI w.",
+      "W XVII w. wieś przeszła na własność kanclerza wielkiego koronnego i prymasa Andrzeja Leszczyńskiego i wojewody mazowieckiego Stanisława Warszyckiego.",
+      "W 1827 roku wieś liczyła 7 domów i 54 mieszkańców.",
+      "Na północnym krańcu Szczęśliwic znajdowała się Reduta nr 54, zwana Redutą Ordona, zniszczona podczas szturmu Warszawy w 1831 r.",
+      "W 1900 r. na Szczęśliwicach odkryto ślady prehistorycznego osadnictwa.",
+      "W 1935 roku podczas wydobywania gliny na terenie Szczęśliwic znaleziono zęby kopalnego nosorożca Mercka.",
+      "W 1961 roku na obszarze dawnych glinianek utworzono Park Szczęśliwicki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former village of Stenclewice, later a residential area of Ochota, lying between Grójecka Street and the Warsaw–Radom railway line. Its brick-clay pits and the Reduta Ordona site shaped its history, and it was joined to Warsaw's Ochota district in 1951.",
+    "ludzie": [
+      {"kto": "Andrzej Leszczyński", "rola": "kanclerz wielki koronny i prymas, właściciel wsi w XVII w.", "wiki": null},
+      {"kto": "Stanisław Warszycki", "rola": "wojewoda mazowiecki, właściciel wsi w XVII w.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stenclewice", "Stanclewicze"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szczęśliwice", "url": "https://pl.wikipedia.org/wiki/Szcz%C4%99%C5%9Bliwice"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt; artykuł nie podaje adresu."
+  },
+  {
+    "id": "szkola-glowna-sluzby-zagranicznej",
+    "nazwa": "Gmach Szkoły Nauk Politycznych przy ul. Wawelskiej 56 (dawna siedziba SGSZ)",
+    "name_en": "Former School of Political Sciences building, Wawelska 56",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Wawelska 56",
+    "lat": 52.2167,
+    "lon": 20.9897,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szkoła Główna Służby Zagranicznej (SGSZ) istniała w latach 1950–1961 w Warszawie i miała siedzibę przy ul. Wawelskiej 56.",
+      "SGSZ mieściła się w budynku przedwojennej Szkoły Nauk Politycznych (od 1939 – Akademii Nauk Politycznych w Warszawie).",
+      "Szkoła Główna Służby Zagranicznej stanowiła kontynuację działającej do 1950 Akademii Nauk Politycznych, z filią w Sopocie.",
+      "Dawna siedziba szkoły jest siedzibą Krajowej Szkoły Administracji Publicznej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The building at Wawelska 56 in Ochota, which housed the prewar School and then Academy of Political Sciences. From 1950 to 1961 it was the seat of the Higher School of Foreign Service, and today it houses the National School of Public Administration.",
+    "ludzie": [
+      {"kto": "Józef Kukułka", "rola": "absolwent SGSZ, profesor nauk o stosunkach międzynarodowych", "wiki": null},
+      {"kto": "Janusz Symonides", "rola": "absolwent SGSZ, profesor nauk o stosunkach międzynarodowych", "wiki": null},
+      {"kto": "Stanisław Parzymies", "rola": "absolwent SGSZ, profesor nauk o stosunkach międzynarodowych", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szkoła Nauk Politycznych", "Akademia Nauk Politycznych"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szkoła Główna Służby Zagranicznej", "url": "https://pl.wikipedia.org/wiki/Szko%C5%82a_G%C5%82%C3%B3wna_S%C5%82u%C5%BCby_Zagranicznej"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord dotyczy budynku; artykuł o uczelni. Data budowy przedwojennego gmachu nie jest podana w artykule."
+  },
+  {
+    "id": "szosa-krakowska",
+    "nazwa": "Osiedle Szosa Krakowska (Ochota II)",
+    "name_en": "Szosa Krakowska housing estate (Ochota II)",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2067,
+    "lon": 20.9722,
+    "lokalizacja": "przyblizona",
+    "okres": "1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 1957–1967 według projektów architektonicznych Leszka Kołacza i Witolda Parczewskiego.",
+      "Powstały łącznie 6993 mieszkania przeznaczone dla ok. 25 tys. osób.",
+      "Projekt Ochoty II dla ok. 40 000 mieszkańców powstawał pod kierunkiem Bohdana Pniewskiego od 1952 roku.",
+      "Centralny plac został częściowo zabudowany pawilonem pod adresem ul. Grójecka 109, w którym mieściła się m.in. restauracja „Pod Skrzydłami”.",
+      "Kościół poświęcono w 1979 roku.",
+      "W 2010 roku rondo w najbardziej na zachód wysuniętym punkcie osiedla nazwano imieniem Bohdana Pniewskiego."
+    ],
+    "ciekawostki": ["Na placu, nazywanym nieoficjalnie „placem Pod Skrzydłami”, zbudowano fontannę oraz ustawiono rzeźbę Lecące Łabędzie Anny Dębskiej."],
+    "summary_en": "A large socialist-era housing estate in Ochota, built in 1957–1967 to designs by Leszek Kołacz and Witold Parczewski, within a plan by Bohdan Pniewski for about 40,000 residents. It has 6,993 flats, and its church, dedicated in 1979, was the first permit for a church in Warsaw after 1945.",
+    "ludzie": [
+      {"kto": "Bohdan Pniewski", "rola": "autor planu zagospodarowania osiedla Ochota II", "wiki": null},
+      {"kto": "Leszek Kołacz", "rola": "architekt osiedla (1957–1967)", "wiki": null},
+      {"kto": "Witold Parczewski", "rola": "architekt osiedla (1957–1967)", "wiki": null},
+      {"kto": "Anna Dębska", "rola": "autorka rzeźby „Lecące Łabędzie”", "wiki": null},
+      {"kto": "Jadwiga Grębacka", "rola": "projektantka osiedla Szosa Krakowska-Działki (1970–72)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ochota II"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Szosa Krakowska", "url": "https://pl.wikipedia.org/wiki/Szosa_Krakowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedla, bez adresu jako jednego obiektu."
+  },
+  {
+    "id": "targowisko-banacha",
+    "nazwa": "Targowisko Banacha (Zieleniak)",
+    "name_en": "Banacha Market (Zieleniak)",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Grójecka 95",
+    "adres_historyczny": null,
+    "lat": 52.2092,
+    "lon": 20.9766,
+    "lokalizacja": "dokladna",
+    "okres": "1917–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Targowisko otwarto w roku 1917.",
+      "W czasie obrony Warszawy od 8 do 27 września 1939 roku barykada na ulicy Opaczewskiej z Zieleniakiem stanowiła linię obrony miasta.",
+      "Na obszarze Zieleniaka w dniach 5–20 sierpnia 1944 utworzono obóz przejściowy dla cywilnej ludności Ochoty.",
+      "Na obszarze Zieleniaka dokonywano wówczas dalszych rabunków i gwałtów oraz zamordowano ok. 1000 osób (1/10 ofiar pacyfikacji Ochoty).",
+      "W 1982 roku w centralnej części targowiska otwarto zabudowaną halę handlową należącą do WSS Społem Ochota.",
+      "W 2015 zakończono budowę hali targowej w południowej części targowiska; po plebiscycie nadano jej historyczną nazwę „Zieleniak”."
+    ],
+    "ciekawostki": ["Zachowano również fragmenty bruku z czasów Zieleniaka."],
+    "summary_en": "One of Warsaw's oldest working markets at Grójecka 95, opened in 1917 and nicknamed Zieleniak for its vegetables. In 1944 it held a transit camp for civilians during the Warsaw Uprising, and roughly 1,000 people were murdered there. The Barricade of September monument stands next to it.",
+    "ludzie": [
+      {"kto": "Karol Tchorek", "rola": "autor tablicy upamiętniającej ofiary rzezi Ochoty", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zieleniak"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Targowisko Banacha", "url": "https://pl.wikipedia.org/wiki/Targowisko_Banacha"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "teatr-ochoty",
+    "nazwa": "Teatr Ochoty im. Haliny i Jana Machulskich",
+    "name_en": "Ochota Theatre",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Reja 9",
+    "adres_historyczny": null,
+    "lat": 52.217164,
+    "lon": 20.989016,
+    "lokalizacja": "dokladna",
+    "okres": "1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr założyło w 1970 małżeństwo Jan i Halina Machulscy.",
+      "Od 1976 r. teatr wystawiał sztuki Szekspira w Zamościu, co dało początek Zamojskiemu Latu Teatralnemu.",
+      "Sala teatru liczy ok. 100 miejsc.",
+      "W 2020 zmieniono nazwę placówki z Teatr Ochoty – Ośrodek Kultury Teatralnej na obecną: Teatr Ochoty im. Haliny i Jana Machulskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small theatre at ul. Reja 9 in Ochota, founded in 1970 by Jan and Halina Machulski. Its roughly 100-seat hall is home to a theatre workshop that has trained several generations of artists.",
+    "ludzie": [
+      {"kto": "Jan Machulski", "rola": "współzałożyciel teatru, dyrektor w latach 1970–1996", "wiki": null},
+      {"kto": "Halina Machulska", "rola": "współzałożycielka teatru", "wiki": null},
+      {"kto": "Tomasz Mędrzak", "rola": "dyrektor w latach 1996–2008", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Ochoty – Ośrodek Kultury Teatralnej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Ochoty w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Ochoty_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy głównie instytucji; rekord ma adres i salę, więc został dodany."
+  },
+  {
+    "id": "topola-obroncow",
+    "nazwa": "Topola Obrońców",
+    "name_en": "Defenders' Poplar",
+    "typ": "pomnik",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Grójecka 95",
+    "adres_historyczny": null,
+    "lat": 52.209991666,
+    "lon": 20.97615,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jej pochodzenie datuje się na około 1927 rok.",
+      "Drzewo znajdowało się w rejonie barykady wzniesionej w czasie obrony Warszawy we wrześniu 1939, stanowiącej część głównej linii obrony miasta od 8 września do kapitulacji.",
+      "Według relacji urządzono pod nią zbiorową mogiłę ofiar obozu na Zieleniaku w sierpniu 1944.",
+      "W 1981 roku topola na podstawie orzeczenia Urzędu Miasta Stołecznego Warszawy nr 716 z dnia 23 lipca 1981 r. uzyskała status pomnika przyrody ożywionej.",
+      "W 2025 roku została wybrana Warszawskim Drzewem Roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Serotina Aurea Canadian poplar next to the Barricade of September monument on Grójecka Street. It is probably the oldest tree of its variety in Poland and, according to witnesses, grew inside the 1944 transit camp at the Zieleniak market. It has been a protected natural monument since 1981.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Topola Obrońców", "url": "https://pl.wikipedia.org/wiki/Topola_Obro%C5%84c%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Pomnik przyrody (drzewo); typ 'pomnik' z braku lepszej kategorii."
+  },
+  {
+    "id": "ulica-akademicka",
+    "nazwa": "Ulica Akademicka",
+    "name_en": "Akademicka Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2183,
+    "lon": 20.9852,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w kształcie łuku w 1923 roku wraz z pobliskim placem Gabriela Narutowicza.",
+      "Inicjatorem budowy nowoczesnych gmachów mieszczących domy akademickie był prezydent Warszawy Antoni Jabłoński, a projekt stworzył architekt Kazimierz Tołłoczko.",
+      "W roku 1925 ukończono budowę bocznego skrzydła, liczącego trzy piętra, przyporządkowanego numeracji ul. Grójeckiej jako nr 39.",
+      "Dom Studencki „Akademik” (nr 5) ukończono w roku 1930 i był wtedy jednym z największych budynków w Warszawie.",
+      "Pod numerem 3 znajduje się Dom Urzędników Ministerstwa Wyznań Religijnych i Oświecenia Publicznego.",
+      "W XXI w. odsłonięto na skwerze przy ulicy dwa pomniki – popiersie Gabriela Narutowicza (2002 r.) i kamień upamiętniający stulecie 16 Warszawskiej Drużyny Harcerzy (2011 r.)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A curved street in Ochota laid out in 1923 along the eastern edge of Plac Gabriela Narutowicza. Its student dormitory complex, the Akademik, was completed in 1930 for about 2,500 students and became one of Warsaw's largest buildings at the time.",
+    "ludzie": [
+      {"kto": "Antoni Jabłoński", "rola": "prezydent Warszawy, inicjator budowy domów akademickich", "wiki": null},
+      {"kto": "Kazimierz Tołłoczko", "rola": "architekt zespołu domów akademickich", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Akademicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Akademicka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "dom-studencki-akademik",
+    "nazwa": "Dom Studencki „Akademik”",
+    "name_en": "Akademik student dormitory",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Akademicka 5",
+    "adres_historyczny": null,
+    "lat": 52.2183,
+    "lon": 20.9852,
+    "lokalizacja": "przyblizona",
+    "okres": "1925–1930",
+    "istnieje": true,
+    "fakty": [
+      "Głównym gmachem założenia Akademickiej był Dom Studencki „Akademik” (nr 5), od nazwy którego pochodzi powszechne określenie placówek tego typu.",
+      "Jego budowę ukończono w roku 1930 i był on wtedy jednym z największych budynków w Warszawie.",
+      "Zaprojektowano go tak, by mógł dać schronienie niebagatelnej liczbie 2500 studentów.",
+      "Od strony ul. Akademickiej i Placu Gabriela Narutowicza gmach posiada osiem pięter i dodatkową kondygnację mieszczącą strych.",
+      "Na osi wejścia na najwyższej, dziewiątej kondygnacji w okresie powojennym umieszczono Godło Polski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Akademik dormitory at Akademicka 5, finished in 1930 and built for about 2,500 students. It is the main building of the Akademicka complex, and its art deco design draws on 17th-century Polish art.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Akademicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Akademicka_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Numer 5 podany w artykule bez nazwy ulicy; przyjęto ul. Akademicką. Współrzędne ulicy z nagłówka."
+  },
+  {
+    "id": "ulica-barska",
+    "nazwa": "Ulica Barska",
+    "name_en": "Barska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2189,
+    "lon": 20.9777,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona ok. 1900 na gruntach wsi Czyste na odcinku od ul. Kaliskiej do ul. Szczęśliwickiej.",
+      "Wraz z najbliższą okolicą przyłączona do Warszawy w 1916. Początkowo nazywana była ulicą Nowo-Czystą.",
+      "Nazwę ulica Barska nadano oficjalnie w 1919.",
+      "Około 1930 r. pod numerem 28/30 wzniesiono budynek fabryki czekolady firmy Plutos.",
+      "10 lutego 1944 przed murem ogrodu księży orionistów Niemcy w odwecie za udany zamach na Franza Kutscherę przeprowadzili uliczną egzekucję zakładników.",
+      "W 1991 pod nr 37 otwarto pierwszą pizzerię w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Ochota that was laid out around 1900 on the lands of the village of Czyste and was officially named in 1919. On 10 February 1944 the Germans carried out a street execution of hostages, which is commemorated by a plaque designed by Karol Tchorek.",
+    "ludzie": [
+      {"kto": "Franz Kutschera", "rola": "celem udanego zamachu, za który Niemcy dokonali egzekucji (10 lutego 1944)", "wiki": null},
+      {"kto": "Andrzej Chyczewski ps. Gustaw", "rola": "por., dowódca powstańców, którzy w sierpniu 1944 opanowali ulicę", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica Nowo-Czysta"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Barska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Barska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-bialobrzeska",
+    "nazwa": "Ulica Białobrzeska",
+    "name_en": "Białobrzeska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.214166666,
+    "lon": 20.97425,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy, nadana w 1928, pochodzi od miejscowości Białobrzegi.",
+      "Po 1930 pod nr 39 (u zbiegu z ul. Lelechowską) wzniesiono kamienicę Romana Felińskiego.",
+      "W latach 1930–1932 pod nr 44 wybudowano funkcjonalistyczny gmach Gimnazjum Żeńskiego Fundacji im. Wandy z Possetów Szachtmajerowej według projektu Romualda Gutta.",
+      "Obecnie w budynku mieści się Zespół Szkół Specjalnych nr 109, wcześniej Szkoła Podstawowa nr 9 im. gen. dyw. Stefana Roweckiego „Grota”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Ochota named in 1928 after the town of Białobrzegi. Its functionalist girls' gymnasium at no. 44, built in 1930–1932 to a design by Romuald Gutt, now houses a special school.",
+    "ludzie": [
+      {"kto": "Romuald Gutt", "rola": "projektant gmachu Gimnazjum Żeńskiego (1930–1932)", "wiki": null},
+      {"kto": "Roman Feliński", "rola": "właściciel kamienicy pod nr 39", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Białobrzeska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bia%C5%82obrzeska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  },
+  {
+    "id": "ulica-daleka",
+    "nazwa": "Ulica Daleka",
+    "name_en": "Daleka Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2223,
+    "lon": 20.988,
+    "lokalizacja": "przyblizona",
+    "okres": "1896–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica po raz pierwszy pojawia się jako uliczka bez nazwy na planie z 1886 roku, pod obecną nazwą w 1896 r.",
+      "U zbiegu z ulicą Grójecką, pod nr 13 w roku 1904 wybudowano dla Szlamy Książenickiego czteropiętrową kamienicę o eklektycznym wystroju.",
+      "Z obiektów przemysłowych należy wymienić zabudowania Fabryki Urządzeń Zdrowotnych pod nr 3, wybudowane w roku 1914.",
+      "Zagładę ulicy przyniósł rok 1944 – wypalonych zabudowań nigdy nie odbudowano, zaś najdłużej, bo do lat 70., utrzymały się zabudowania Fabryki Urządzeń Zdrowotnych.",
+      "Przy skrzyżowaniu z ulicą Tarczyńską znajduje się tablica Tchorka upamiętniająca grupę 17 cywilów zamordowanych przez Niemców 3 sierpnia 1944 w trakcie pacyfikacji Ochoty."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in Ochota running from Grójecka to Raszyńska. Its prewar tenements and a medical-equipment factory were largely destroyed in 1944, and a plaque at the Tarczyńska junction commemorates 17 civilians murdered on 3 August 1944.",
+    "ludzie": [
+      {"kto": "Szlama Książenicki", "rola": "inwestor kamienicy pod nr 13 (1904)", "wiki": null},
+      {"kto": "Karol Tchorek", "rola": "autor tablicy upamiętniającej 17 cywilów", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Daleka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Daleka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek ulicy)."
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "narodowy-instytut-geriatrii-reumatologii-i-rehabilitacji",
+    "nazwa": "Narodowy Instytut Geriatrii, Reumatologii i Rehabilitacji im. prof. dr hab. med. Eleonory Reicher",
+    "name_en": "National Institute of Geriatrics, Rheumatology and Rehabilitation",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Spartańska 1",
+    "adres_historyczny": "ul. Nowogrodzka 59",
+    "lat": 52.191238,
+    "lon": 20.994071,
+    "lokalizacja": "dokladna",
+    "okres": "1962–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1930 roku pojawił się pomysł utworzenia w Polsce Instytutu Reumatologii; w Inowrocławiu odbył się wtedy I Polski zjazd w sprawie badania i zwalczania reumatyzmu.",
+      "Od 1948 do 1951 r. działał Państwowy Instytut Reumatologiczny (PIR), którego bazą kliniczną była poradnia reumatologiczna prowadzona przez prof. Eleonorę Reicher, przy ul. Polnej w Warszawie.",
+      "Od 16 stycznia 1950 roku siedziba PIR znajdowała się w odbudowanym III pawilonie na terenie Państwowego Szpitala Klinicznego nr 1 przy ul. Nowogrodzkiej 59.",
+      "W 1962 roku Instytut Reumatologii przeniósł się do własnej siedziby przy ul. Spartańskiej 1 w Warszawie.",
+      "W 1980 roku z Instytutu została wyodrębniona klinika kardiochirurgiczna i włączona do nowo powstałego Instytutu Kardiologii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Research institute in Mokotów devoted to rheumatology, geriatrics and rehabilitation, named after Eleonora Reicher. It has been based at ul. Spartańska 1 since 1962, after earlier premises at Nowogrodzka 59.",
+    "ludzie": [
+      {"kto": "Eleonora Reicher", "rola": "prof. dr hab. med.; z jej inicjatywy instytut powstał po II wojnie światowej (patronka instytutu)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Państwowy Instytut Reumatologiczny (1948–1951)", "Instytut Reumatologii (1951–2015)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Narodowy Instytut Geriatrii, Reumatologii i Rehabilitacji im. prof. dr hab. med. Eleonory Reicher", "url": "https://pl.wikipedia.org/wiki/Narodowy_Instytut_Geriatrii%2C_Reumatologii_i_Rehabilitacji_im._prof._dr_hab._med._Eleonory_Reicher"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "nowy-teatr",
+    "nazwa": "Nowy Teatr",
+    "name_en": "New Theatre (Nowy Teatr)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Madalińskiego 10/16",
+    "adres_historyczny": null,
+    "lat": 52.205498,
+    "lon": 21.019742,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1927 roku, na obrzeżach dawnego wyrobiska gliny, wzniesiono halę warsztatową, która służyła jako zaplecze techniczne do naprawy wozów miejskiego systemu oczyszczania.",
+      "Początkowo, od 2008 roku, teatr korzystał z kilku niewielkich pomieszczeń wynajmowanych od Miejskiego Przedsiębiorstwa Oczyszczania przy ul. Madalińskiego 10/16.",
+      "Hala warsztatowa MPO z 1927 roku została w 2008 roku wpisana do rejestru zabytków.",
+      "Nowy Teatr rozpoczął działalność w sezonie 2008/2009; premiera spektaklu „(A)pollonia” w reżyserii Krzysztofa Warlikowskiego odbyła się 16 maja 2009 roku.",
+      "W 2012 roku teatr przejął całość obiektu, czyli zabytkową halę warsztatową i otaczający ją teren o powierzchni 9 tysięcy metrów kwadratowych.",
+      "W hali powstała sala widowiskowa ze sceną i widownią na 450 miejsc."
+    ],
+    "ciekawostki": [
+      "Sto pięćdziesiąt lat temu w miejscu teatru było wyrobisko gliny, z której wytwarzano cegły; po około pięćdziesięciu latach zaprzestano eksploatacji, a gliniankę zasypano odpadami i hałdami śmieci."
+    ],
+    "summary_en": "Theatre at ul. Madalińskiego 10/16 in Mokotów, housed in a 1927 municipal sanitation workshop hall that was listed as a historic monument in 2008. It opened its first season in 2008/2009 and has been the sole user of the whole site since 2012.",
+    "ludzie": [
+      {"kto": "Krzysztof Warlikowski", "rola": "reżyser; reżyserował premierę „(A)pollonia” (16 maja 2009); dyrektor artystyczny teatru", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowy Teatr w Warszawie", "url": "https://pl.wikipedia.org/wiki/Nowy_Teatr_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "nowy-cmentarz-na-sluzewie",
+    "nazwa": "Nowy cmentarz na Służewie",
+    "name_en": "New Służew Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Wałbrzyska",
+    "adres_historyczny": null,
+    "lat": 52.1725,
+    "lon": 21.034444444,
+    "lokalizacja": "dokladna",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został założony w 1900 roku.",
+      "Jest tu pochowanych 1717 ofiar kampanii wrześniowej, co upamiętnia tablica z napisem „Cmentarz wojenny”; w kwaterze A spoczywa 493 rozpoznanych i 1224 nierozpoznanych żołnierzy WP i osób cywilnych, ofiar nalotów i bombardowania broniącej się Warszawy w 1939 r.",
+      "Znajdują się tu groby 82 powstańców warszawskich z Pułku Baszta; w kwaterze B upamiętniono 39 rozpoznanych i 43 nierozpoznanych żołnierzy AK pułku „Baszta”, poległych w czasie powstania warszawskiego 1944.",
+      "Cmentarz został powiększony w 1955 roku.",
+      "W latach 1944–1948 w rozszerzeniu starego cmentarza służewieckiego (tzw. pole J. Bokusa) potajemnie chowano pomordowanych, głównie z więzienia mokotowskiego.",
+      "Od 30 czerwca do 10 lipca 2014 roku IPN, Rada Ochrony Pamięci Walk i Męczeństwa i Ministerstwo Sprawiedliwości prowadziły prace poszukiwawcze i ekshumacje pod kierunkiem Krzysztofa Szwagrzyka."
+    ],
+    "ciekawostki": [
+      "W rogu cmentarza, przy murze, stoi drewniany krzyż z tabliczką „PRZECHODNIU POCHYL CZOŁO WSTRZYMAJ KROK NA CHWILĘ”."
+    ],
+    "summary_en": "Roman Catholic cemetery on Mokotów's Służew, founded in 1900 at ul. Wałbrzyska. It contains a war cemetery for soldiers and civilians from 1939 and graves of Warsaw Uprising soldiers, and secret burials of victims of communist repression from 1944–1948 that were exhumed by the IPN in 2014.",
+    "ludzie": [
+      {"kto": "Krzysztof Szwagrzyk", "rola": "kierował ekshumacjami IPN w 2014 roku", "wiki": null},
+      {"kto": "Waldemar Baszanowski (1935–2011)", "rola": "sztangista, dwukrotny mistrz olimpijski; pochowany na cmentarzu", "wiki": null},
+      {"kto": "Ryszard Bartel (1897–1982)", "rola": "inżynier, konstruktor lotniczy, pilot, jeden z pionierów polskiego lotnictwa; pochowany na cmentarzu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Nowy cmentarz na Służewie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Nowy_cmentarz_na_S%C5%82u%C5%BCewie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lista pochowanych w artykule ciągnie się dalej poza wycinkiem paczki; w rekordzie tylko kilka nazwisk."
+  }
+]

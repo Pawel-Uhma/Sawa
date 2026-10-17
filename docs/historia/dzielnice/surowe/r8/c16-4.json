@@ -1,0 +1,164 @@
+[
+  {
+    "id": "kondratowicza-stacja-metra",
+    "nazwa": "Stacja metra Kondratowicza",
+    "name_en": "Kondratowicza metro station",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Ludwika Kondratowicza (między ul. Malborską a ul. św. Wincentego)",
+    "adres_historyczny": null,
+    "lat": 52.292,
+    "lon": 21.04864,
+    "lokalizacja": "dokladna",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kondratowicza to stacja linii M2 metra w Warszawie, znajdująca się w ciągu ulicy Ludwika Kondratowicza, między skrzyżowaniami z ul. Malborską i 20 Dywizji Piechoty WP a ul. św. Wincentego.",
+      "Budowa rozpoczęła się w 2019, a nazwa stacji została nadana przez Radę m.st. Warszawy w sierpniu 2020.",
+      "Stacja została otwarta dla ruchu pasażerskiego 28 września 2022 roku.",
+      "We wrześniu 2025 roku na terenie stacji otwarto Metrotekę, oddział Biblioteki Publicznej w Dzielnicy Targówek m.st. Warszawy."
+    ],
+    "ciekawostki": [
+      "Metroteka była pierwszą biblioteką w warszawskim metrze."
+    ],
+    "summary_en": "Kondratowicza is a metro station on Line M2 in Targówek. Construction began in 2019 and the station opened on 28 September 2022. It is also home to Metroteka, the first library in the Warsaw metro.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kondratowicza (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Kondratowicza_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-sw-wincentego-a-paulo-brodno",
+    "nazwa": "Kościół św. Wincentego à Paulo w Warszawie",
+    "name_en": "Church of St. Vincent de Paul in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Targówek",
+    "adres_dzis": "na terenie cmentarza Bródnowskiego",
+    "adres_historyczny": null,
+    "lat": 52.2785,
+    "lon": 21.0425,
+    "lokalizacja": "dokladna",
+    "okres": "1887–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia została wybudowana w latach 1887–1888.",
+      "Poświęcona w dniu 28 października 1888 przez księdza prałata Ignacego Durewicza, proboszcza parafii Matki Bożej Loretańskiej.",
+      "Projektantem świątyni był Edward Cichocki.",
+      "Do jej budowy użyto sosnowego drewna przekazanego przez prezydenta miasta Sokrata Starynkiewicza, pochodzącego z rusztowania wykorzystanego w czasie remontu Kolumny Zygmunta III Wazy.",
+      "Kościół nie ucierpiał w czasie II wojny światowej.",
+      "W 1960 funkcję parafialną przejął wybudowany w południowo-wschodnim rogu cmentarza murowany kościół Matki Boskiej Częstochowskiej.",
+      "W 1990 roku świątynia została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Drewno użyte do budowy nie było żywicowane, co zwiększyło jego odporność na szkodniki i wilgoć."
+    ],
+    "summary_en": "A neo-Gothic wooden church on the Bródno Cemetery in Targówek, built in 1887–1888 and consecrated in 1888. It was the parish church until 1960 and was entered in the heritage register in 1990.",
+    "ludzie": [
+      {"kto": "Ignacy Durewicz", "rola": "ksiądz prałat, proboszcz parafii Matki Bożej Loretańskiej; poświęcił świątynię 28 października 1888", "wiki": null},
+      {"kto": "Edward Cichocki", "rola": "projektant świątyni", "wiki": null},
+      {"kto": "Sokrat Starynkiewicz", "rola": "prezydent miasta; przekazał drewno do budowy", "wiki": null},
+      {"kto": "Wiesław Kononowicz", "rola": "autor bogatej polichromii", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Wincentego à Paulo w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Wincentego_%C3%A0_Paulo_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "las-brodnowski",
+    "nazwa": "Las Bródnowski",
+    "name_en": "Bródnowski Forest",
+    "typ": "park",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ograniczony ulicami Kondratowicza, Malborską, Głębocką i Bystrą",
+    "adres_historyczny": null,
+    "lat": 52.2958,
+    "lon": 21.0647,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Las zajmuje obszar wyciętej w połowie XIX wieku Puszczy Bródnowskiej, która była podmokła i z licznymi strumieniami.",
+      "Las ma powierzchnię 134,08 ha.",
+      "Aż 85% powierzchni tego obszaru zalesiono w latach 1951–1967.",
+      "Przez teren lasu prowadzi utworzona w 2003 roku ścieżka dydaktyczna „Nauka poszła w las”.",
+      "W północno-wschodniej części lasu znajdują się ślady rosyjskiego Fortu Lewicpol.",
+      "Przed II wojną światową grodzisko odkrył Roman Jakimowicz, ówczesny dyrektor Państwowego Muzeum Archeologicznego; badania rozpoczęto w 1948 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bródnowski Forest is an almost entirely man-made forest in Targówek, planted after the Second World War on the site of a cleared medieval marsh forest. It contains traces of Fort Lewicpol and the remains of an early medieval stronghold.",
+    "ludzie": [
+      {"kto": "Roman Jakimowicz", "rola": "ówczesny dyrektor Państwowego Muzeum Archeologicznego; przed wojną odkrył grodzisko w lesie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Las Bródno", "Lasek Bródnowski", "Puszcza Bródnowska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Las Bródnowski", "url": "https://pl.wikipedia.org/wiki/Las_Br%C3%B3dnowski"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł podaje dwie różne daty początku badań grodziska (przed wojną odkrycie, badania od 1948; w artykule o Bródnie-Podgrodziu badania 1949–1966). Daty przepisane z obu artykułów zgodnie z tekstem."
+  },
+  {
+    "id": "lewinow",
+    "nazwa": "Lewinów",
+    "name_en": "Lewinów",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": "folwark między ul. Lewinowską a ul. Łodygową",
+    "lat": 52.283969,
+    "lon": 21.078495,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W przeszłości pomiędzy obecnymi ulicami Lewinowską a Łodygową istniał folwark Lewinów.",
+      "Folwark przed II wojną światową słynął z ogrodów i parku.",
+      "W połowie XIX wieku na miejscu, w którym powstał folwark, znajdowała się fabryka konserw namiestnika rosyjskiego imperatora.",
+      "Na terenie Lewinowa znajdował się również fort Lewinów, element zewnętrznego pierścienia Twierdzy Warszawa; obecnie w tym miejscu jest kompleks ogródków działkowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lewinów is a housing estate in Targówek, sometimes treated as part of Zacisze. The site was once a manor farm famous for its gardens and park, and it also held a fort of the Warsaw Fortress ring.",
+    "ludzie": [],
+    "dawne_nazwy": ["folwark Lewinów", "fort Lewinów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lewinów", "url": "https://pl.wikipedia.org/wiki/Lewin%C3%B3w"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka to środek osiedla, nie dokładne miejsce folwarku."
+  },
+  {
+    "id": "mazowiecki-szpital-brodnowski",
+    "nazwa": "Mazowiecki Szpital Bródnowski",
+    "name_en": "Mazowiecki Bródnowski Hospital",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Kondratowicza 8",
+    "adres_historyczny": null,
+    "lat": 52.2911,
+    "lon": 21.0447,
+    "lokalizacja": "dokladna",
+    "okres": "1981–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks szpitalny, obejmujący 12 budynków, otwarto 22 stycznia 1981.",
+      "Do 31 grudnia 2010 szpital funkcjonował pod nazwą Wojewódzki Szpital Bródnowski.",
+      "W 2013 przy szpitalu oddano do użytku sanitarne lądowisko.",
+      "Podczas pandemii COVID-19 wiosną 2020 szpital stał się jednym z jej największych ognisk w Polsce; do 2 kwietnia 2020 stwierdzono 87 przypadków zakażenia SARS-CoV-2 wśród personelu i pacjentów.",
+      "Szpital ma łącznie 669 łóżek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A large hospital complex at Kondratowicza 8 in Targówek, opened in January 1981 as the Wojewódzki Szpital Bródnowski. It became one of the largest COVID-19 outbreak sites in Poland in spring 2020.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wojewódzki Szpital Bródnowski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mazowiecki Szpital Bródnowski", "url": "https://pl.wikipedia.org/wiki/Mazowiecki_Szpital_Br%C3%B3dnowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o lądowisku przy szpitalu pominięto jako rekord bez historii miejsca."
+  }
+]

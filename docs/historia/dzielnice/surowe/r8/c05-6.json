@@ -1,0 +1,72 @@
+[
+  {
+    "id": "willa-podgorskich",
+    "nazwa": "Willa Podgórskich",
+    "name_en": "Podgórski Villa",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Powsińska 104",
+    "adres_historyczny": "ul. Powsińska 24",
+    "lat": 52.192569,
+    "lon": 21.057597,
+    "lokalizacja": "dokladna",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom przy ul. Powsińskiej 104 został wybudowany w 1926 roku przez Przemysława Podgórskiego (1873–1953) według projektu Władysława Borawskiego.",
+      "Przemysław i Anna Podgórscy kupili działkę w 1923 roku.",
+      "W 1939 roku znajdował się tu sztab oddziałów broniących południowego rejonu Warszawy.",
+      "Podczas powstania warszawskiego willa została wybrana przez por. Czesława Szczubełka, dowódcę 5. Rejonu „Oaza” V Obwodu „Mokotów”, na siedzibę sztabu dowództwa Sadyby od 1 sierpnia 1944 roku.",
+      "W 1982 roku (w czasie stanu wojennego) w piwnicy tego domu działała podziemna drukarnia, drukująca niezależne książki i czasopisma, przede wszystkim Ruchu Obrony Praw Człowieka i Obywatela.",
+      "W 1990 roku dom został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Dom nazywany bywa czasem Małym Belwederem.",
+      "Por. Czesław Szczubełek zginął na terenie Fortu Czerniakowskiego 1 września 1944 roku."
+    ],
+    "summary_en": "The Podgórski Villa at Powsińska 104 was built in 1926 to a design by Władysław Borawski at a crossroads of the Warsaw exit road and field tracks. It served as a staff HQ in 1939 and in the Warsaw Uprising, and a samizdat print shop operated in its cellar in 1982.",
+    "ludzie": [
+      {"kto": "Przemysław Podgórski", "rola": "inwestor, zbudował dom w 1926 (1873–1953)", "wiki": null},
+      {"kto": "Anna Podgórska", "rola": "żona Przemysława, mieszkała w domu (1885–1968)", "wiki": null},
+      {"kto": "Władysław Borawski", "rola": "autor projektu domu", "wiki": null},
+      {"kto": "Czesław Szczubełek", "rola": "porucznik, dowódca 5. Rejonu „Oaza” w czasie powstania; zginął 1 września 1944", "wiki": null},
+      {"kto": "Katarzyna Piskorska", "rola": "rzeźbiarka, która w 1975 urządziła w willi prywatną galerię sztuki", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Powsińska 24 (przedwojenny adres)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Podgórskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Podg%C3%B3rskich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zajezdnia-woronicza",
+    "nazwa": "Zajezdnia autobusowa „Woronicza”",
+    "name_en": "Woronicza bus depot",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana Pawła Woronicza 29",
+    "adres_historyczny": null,
+    "lat": 52.1871,
+    "lon": 20.9966,
+    "lokalizacja": "dokladna",
+    "okres": "1959–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zajezdnię z przeznaczeniem dla 150 autobusów oddano do użytku wiosną 1959 roku.",
+      "W 2020 r. do zajezdni dostarczono 30 Solarisów Urbino 18 IV FL Electric, będących częścią zamówienia na 130 przegubowych autobusów elektrycznych.",
+      "Obecnie zajezdnia ma na stanie 347 autobusów, a trzon taboru stanowią 202 Solarisy Urbino 18 III."
+    ],
+    "ciekawostki": [
+      "Zajezdnia znajduje się obok Zakładu Eksploatacji Tramwajów R-3 „Mokotów”."
+    ],
+    "summary_en": "The Woronicza bus depot at Jana Pawła Woronicza 29 opened in spring 1959 for 150 buses. It is run by the Warsaw municipal bus company and now operates about 347 buses, mostly Solaris vehicles.",
+    "ludzie": [],
+    "dawne_nazwy": ["Oddział Przewozów R-1 „Woronicza”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Woronicza (zajezdnia autobusowa)", "url": "https://pl.wikipedia.org/wiki/Woronicza_%28zajezdnia_autobusowa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane o taborze stan na 15 lutego 2026 r. (wg tekstu)."
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "id": "dworzec-terespolski",
+    "nazwa": "Dworzec Terespolski",
+    "name_en": "Terespol Railway Station",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kijowska 14a",
+    "adres_historyczny": null,
+    "lat": 52.250833,
+    "lon": 21.048333,
+    "lokalizacja": "dokladna",
+    "okres": "1864–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dworzec wybudowano w latach 1864–1865 według projektu Alfonsa Kropiwnickiego.",
+      "Po przedłużeniu linii kolejowej do Brześcia nazwę zmieniono na Dworzec Brzeski.",
+      "W latach międzywojennych dworzec zmienił nazwę na Dworzec Wschodni.",
+      "Zniszczony został w 1939 (II wojna światowa), w trakcie bombardowania Warszawy przez Luftwaffe.",
+      "Jedynym reliktem budynku dworca jest zachowany fragment ryzalitu wschodniego, w którym ulokowano skup złomu.",
+      "W 2021 został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Terespol Railway Station, built in 1864–1865 to a design by Alfonso Kropiwnicki, was the terminus of the Warsaw–Terespol railway at ul. Kijowska 14a in Praga-Północ. Only a fragment of its east risalit survives, entered in the register of monuments in 2021.",
+    "ludzie": [
+      {"kto": "Alfons Kropiwnicki", "rola": "autor projektu dworca", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dworzec Brzeski", "Dworzec Wschodni"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dworzec Terespolski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dworzec_Terespolski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Istnieje tylko fragment ryzalitu wschodniego; rekord dotyczy budynku, którego pozostałość stoi przy adresie."
+  },
+  {
+    "id": "dworzec-wilenski-stacja-metra",
+    "nazwa": "Dworzec Wileński (stacja metra)",
+    "name_en": "Dworzec Wileński metro station",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "pod ul. Targową",
+    "adres_historyczny": null,
+    "lat": 52.254722,
+    "lon": 21.034722,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pozwolenie na budowę stacji zostało wydane 3 czerwca 2011, ale właściwe prace budowlane rozpoczęto w grudniu 2011.",
+      "28 października 2009 wykonawcą stacji, będącej elementem centralnego odcinka II linii metra, zostało konsorcjum AGP Metro Polska.",
+      "6 lutego 2012 podczas powiększania wykopu pod strop górny północnej części stacji robotnicy odkryli zniszczone pudełka z substancją wyglądającą na materiał wybuchowy.",
+      "27 października 2011 zostało wydane pozwolenie na rozbiórkę pomnika Braterstwa Broni, która trwała od 8 do 10 listopada 2011.",
+      "W lutym i marcu 2013 ze stacji wystartowały dwie tarcze TBM drążące tunele pod Wisłą.",
+      "13 lutego 2015 zostało wydane pozwolenie na użytkowanie stacji, a uruchomiona została ona 8 marca 2015."
+    ],
+    "ciekawostki": [
+      "Materiałem odsłoniętym przez koparkę był amonit wyprodukowany w 1939 w Państwowej Wytwórni Prochu w Pionkach.",
+      "13 marca 2013 tarcza Wisła I otrzymała imię Krystyna, natomiast maszynę Wisła II nazwano Elisabetta."
+    ],
+    "summary_en": "Dworzec Wileński is a metro station on line M2 under ul. Targowa in Praga-Północ. Construction started in December 2011, and the station opened on 8 March 2015.",
+    "ludzie": [
+      {"kto": "Andrzej Chołdzyński", "rola": "projektant generalny centralnego odcinka II linii metra", "wiki": null},
+      {"kto": "Wojciech Fangor", "rola": "autor opracowania graficznego", "wiki": null}
+    ],
+    "dawne_nazwy": ["C15", "S13"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dworzec Wileński (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Dworzec_Wile%C5%84ski_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu: stacja leży pod ul. Targową, między al. „Solidarności” i ul. Białostocką."
+  },
+  {
+    "id": "fort-sliwickiego",
+    "nazwa": "Fort Śliwickiego",
+    "name_en": "Śliwicki Fort",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jagiellońska 49a",
+    "adres_historyczny": null,
+    "lat": 52.266944,
+    "lon": 21.015667,
+    "lokalizacja": "dokladna",
+    "okres": "1835–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort został zbudowany w latach 1835–1836, najwcześniej ze wszystkich fortów otaczających Cytadelę, będąc jej przedmościem.",
+      "Nazwa upamiętnia por. Juliana Śliwickiego, walczącego po stronie rosyjskiej i ciężko rannego podczas powstania listopadowego, zmarłego w Paryżu i pochowanego na terenie fortu 6 grudnia 1835.",
+      "W okresie PRL mieściły się tutaj koszary ZOMO.",
+      "W latach 1976–1977 zachowana działobitnia południowa została wyremontowana w czynie społecznym przez oddziały ZOMO, co upamiętnia tablica.",
+      "W 2001 w bezpośredniej bliskości fortu powstało osiedle mieszkaniowe dla policjantów z budynkami na esplanadzie i częściowo dziedzińcu fortu.",
+      "W 1975 fort został wpisany do rejestru zabytków pod nazwą fort „Jasińskiego” (d. Śliwickiego)."
+    ],
+    "ciekawostki": [
+      "Nie znajdują potwierdzenia informacje o poternie (tunelu), który pod dnem Wisły miał łączyć fort z Cytadelą."
+    ],
+    "summary_en": "Śliwicki Fort (Jasiński Fort) at ul. Jagiellońska 49a in Praga-Północ was built in 1835–1836 as the earliest of the forts around the Warsaw Citadel and served as its outwork. It housed ZOMO barracks in the PRL period and was entered in the register of monuments in 1975.",
+    "ludzie": [
+      {"kto": "Julian Śliwicki", "rola": "porucznik, po którym nazwano fort", "wiki": null}
+    ],
+    "dawne_nazwy": ["fort Jasińskiego", "fort Śliwickiego"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort Śliwickiego Cytadeli Warszawskiej", "url": "https://pl.wikipedia.org/wiki/Fort_%C5%9Aliwickiego_Cytadeli_Warszawskiej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "galeria-wilenska",
+    "nazwa": "Galeria Wileńska",
+    "name_en": "Galeria Wileńska shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 72",
+    "adres_historyczny": null,
+    "lat": 52.2545,
+    "lon": 21.0359,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę centrum ukończono w 2002.",
+      "Do 2015 nosiło ono nazwę Centrum Handlowe Warszawa Wileńska.",
+      "W 2015 na dachu budynku ustawiono pasiekę.",
+      "W 2020 w centrum działało min. 86 sklepów i punktów usługowych i 12 restauracji i barów.",
+      "W kompleksie znajduje się także stacja kolejowa Warszawa Wileńska."
+    ],
+    "ciekawostki": [
+      "Jego działalność zmniejszyła charakterystyczny dla Starej Pragi handel bazarowy oraz ograniczyła działalność licznych małych sklepów."
+    ],
+    "summary_en": "Galeria Wileńska is a shopping centre at ul. Targowa 72 in Praga-Północ, completed in 2002 under the name Centrum Handlowe Warszawa Wileńska. It includes the Warszawa Wileńska railway station and had a beehive installed on its roof in 2015.",
+    "ludzie": [],
+    "dawne_nazwy": ["Centrum Handlowe Warszawa Wileńska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Galeria Wileńska", "url": "https://pl.wikipedia.org/wiki/Galeria_Wile%C5%84ska"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Centrum handlowe; wpisane jako budynek z historią, bo tekst podaje daty budowy i zmiany nazwy."
+  },
+  {
+    "id": "gmach-hotelu-nowa-praga",
+    "nazwa": "Gmach hotelu Nowa Praga",
+    "name_en": "Nowa Praga Hotel building",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Bertolta Brechta 7",
+    "adres_historyczny": null,
+    "lat": 52.259666666,
+    "lon": 21.030666666,
+    "lokalizacja": "dokladna",
+    "okres": "1956–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obiekt powstał jako część zabudowy wzniesionego w latach 1949–1955 kompleksu budynków osiedla Praga II, zaprojektowanego przez Jerzego Gieysztora.",
+      "Jego budowę rozpoczęto w 1956. Początkowo był przeznaczony na hotel robotniczy.",
+      "W 1961 został przekształcony w hotel miejski.",
+      "W 1994 w obiekcie były 143 pokoje (1-, 2- i 3-osobowe), znajdowała się restauracja oraz bar.",
+      "Pierwotnie hotel nosił nazwę „Nowa Praga”, w 2002 zmodyfikowaną (z użyciem litery „v”) na „Nova Praga”.",
+      "Później większą część budynku wykorzystywano na cele biurowe (do 2011 siedziba spółki Strabag)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Nowa Praga hotel building at ul. Bertolta Brechta 7 in Praga-Północ is a socialist-realist block on the Praga II estate. Construction began in 1956, and it was a workers' hotel before becoming a city hotel in 1961.",
+    "ludzie": [
+      {"kto": "Jerzy Gieysztor", "rola": "projektant kompleksu osiedla Praga II", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nova Praga"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gmach hotelu Nowa Praga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gmach_hotelu_Nowa_Praga_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

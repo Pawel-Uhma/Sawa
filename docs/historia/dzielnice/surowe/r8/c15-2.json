@@ -1,0 +1,351 @@
+[
+  {
+    "id": "ulica-ratuszowa",
+    "nazwa": "Ulica Ratuszowa",
+    "name_en": "Ratuszowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Ratuszowa",
+    "adres_historyczny": null,
+    "lat": 52.25802,
+    "lon": 21.03246,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1811–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy nawiązuje do lokalizacji ratusza dawnej Pragi; ulica biegła do jej rynku, przy którym znajdował się ratusz.",
+      "Na wysokości ulicy Ratuszowej zlokalizowany był most Zygmunta Augusta.",
+      "Zabudowa ulicy została zniszczona w wyniku budowy fortyfikacji napoleońskich; w 1811 roku ocalała jedynie wybroniona przez ludność kaplica Loretańska.",
+      "Po 1918 roku ulica została przedłużona od ulicy Jagiellońskiej do ulicy 11 listopada.",
+      "W 1934 roku pod numerem 11 rozpoczął działalność Państwowy Instytut Telekomunikacyjny, reaktywowany po II wojnie światowej jako Instytut Tele- i Radiotechniczny.",
+      "W marcu 1945 u wylotu ulicy oddano do użytku most pontonowy na Wiśle, przeniesiony w następnym miesiącu na Saską Kępę.",
+      "W latach 1949−1952 między ulicami Ratuszową, Targową, Świętych Cyryla i Metodego i Jagiellońską powstało osiedle Praga I zaprojektowane przez Szymona i Helenę Syrkusów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ratuszowa in Praga-Północ is named after the town hall of old Praga, which stood at the market the street led to. Its buildings were wiped out by Napoleonic fortifications in 1807, and the Praga I housing estate was built along it in 1949–1952.",
+    "ludzie": [
+      {
+        "kto": "Szymon Syrkus",
+        "rola": "projektant osiedla Praga I (1949–1952)",
+        "wiki": null
+      },
+      {
+        "kto": "Helena Syrkus",
+        "rola": "projektantka osiedla Praga I (1949–1952)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ratuszowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ratuszowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Początek okresu nieznany z artykułu; zdanie o fortyfikacjach napoleońskich wskazuje na czas przed 1811."
+  },
+  {
+    "id": "ulica-stalowa",
+    "nazwa": "Ulica Stalowa",
+    "name_en": "Stalowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Stalowa",
+    "adres_historyczny": null,
+    "lat": 52.2607,
+    "lon": 21.0423,
+    "lokalizacja": "przyblizona",
+    "okres": "1865–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w latach 1865–1867; była jedną z głównych ulic Nowej Pragi i nosiła nazwę Nowopraska.",
+      "Obecną nazwę nadano jej w 1891; upamiętnia Warszawską Fabrykę Stali, zbudowaną w latach 1878–1879.",
+      "W 1886 r. fabrykę zamknięto i zaczęto demontować urządzenia; w 1882 zakład dostarczył 87% szyn w Królestwie Polskim.",
+      "W 1901 r. powstała przy ulicy końcowa stacja kolejki wąskotorowej Warszawa Stalowa; pierwszy pociąg wyruszył 4 sierpnia 1901 r., a ostatni przejechał nią 31 sierpnia 1974 r.",
+      "W latach 1911–1914 Andrzej Domański i Władysław Pachulski zbudowali na działkach przy ul. Stalowej 17, 19, 21 domy frontowe i oficyny przeznaczone dla robotników.",
+      "We wrześniu 1939 r. zniszczona została stalownia.",
+      "W 2017 roku na ulicy odsłonięto Praską Galerię Sław w postaci ośmiu płyt wmurowanych w chodnik."
+    ],
+    "ciekawostki": [
+      "W bramie kamienicy nr 40/42 zachowały się fragmenty mykwy.",
+      "Ulica Stalowa „zagrała” ulicę Chłodną w filmie Romana Polańskiego Pianista."
+    ],
+    "summary_en": "Stalowa in Praga-Północ is named after the Warsaw Steel Works (1878–1886), once the largest industrial plant in the city. The narrow-gauge Warszawa Stalowa tramway terminus operated here from 1901 to 1974, and the Praska Galeria Sław commemorative plates were unveiled in 2017.",
+    "ludzie": [
+      {
+        "kto": "Julian Różycki",
+        "rola": "jeden z założycieli kolejki Mareckiej i jej udziałowiec",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Domański",
+        "rola": "współwłaściciel działek przy ul. Stalowej 17, 19, 21; budowa domów 1911–1914",
+        "wiki": null
+      },
+      {
+        "kto": "Władysław Pachulski",
+        "rola": "współwłaściciel działek przy ul. Stalowej 17, 19, 21; budowa domów 1911–1914",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Zwierzchowski",
+        "rola": "przemysłowiec, właściciel Fabryki Kas Pancernych Stalobetonowych; kamienica pod nr 47 z ok. 1935",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Nowopraska",
+      "Fabryczna",
+      "Nowostalowa (odcinek między ul. Inżynierską a Konopacką)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Stalowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Stalowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-stefana-okrzei",
+    "nazwa": "Ulica Stefana Okrzei",
+    "name_en": "Stefan Okrzei Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Stefana Okrzei",
+    "adres_historyczny": null,
+    "lat": 52.25,
+    "lon": 21.0326,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1792–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica to dawna droga narolna, oddzielająca grunty Pragi od gruntów Skaryszewa; pierwotnie nazywana Brukowaną, a po 1815 roku – Brukową.",
+      "W 1792 roku przy ulicy znajdowało się m.in. 18 drewnianych domów.",
+      "W 1864 roku w okolicy zakład „Wulkan” (Warszawskie Towarzystwo Wyrobów Metalowych i Emaliowanych) przeniesiono tutaj z lewobrzeżnej części miasta.",
+      "W latach 1924–1926 przy ulicy (z frontem do ulicy Sierakowskiego) wzniesiono monumentalny budynek Żydowskiego Domu Akademickiego.",
+      "26 marca 1949 roku uchwałą Rady Narodowej m.st. Warszawy ulicy Brukowej nadano imię Stefana Okrzei.",
+      "W latach 1964–1967 między ulicami Okrzei, Panieńską, Olszową i Wybrzeżem Szczecińskim powstało osiedle Panieńska.",
+      "Na osi ulicy Okrzei powstała kładka na Wiśle oddana do użytku w 2024 roku."
+    ],
+    "ciekawostki": [
+      "W czasach, gdy ulica nosiła nazwę Brukowana, była w tamtym czasie jedną z nielicznych wybrukowanych ulic na Pradze."
+    ],
+    "summary_en": "Stefan Okrzei Street in Praga-Północ was once Brukowana, one of the few paved streets in Praga. It was renamed for Stefan Okrzeja in 1949, and the Panieńska housing estate and a Vistula footbridge opened here in 1967 and 2024 respectively.",
+    "ludzie": [
+      {
+        "kto": "Stefan Okrzeja",
+        "rola": "pracował w zakładzie „Wulkan” przy ulicy; patron ulicy od 1949",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Brukowana",
+      "Brukowa"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Stefana Okrzei w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Stefana_Okrzei_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakład „Wulkan” wg tekstu przeniesiony tu w 1864; artykuł nie podaje wprost, że dotyczy numeru domu."
+  },
+  {
+    "id": "ulica-stefana-starzynskiego",
+    "nazwa": "Ulica Stefana Starzyńskiego",
+    "name_en": "Stefan Starzyński Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Stefana Starzyńskiego",
+    "adres_historyczny": null,
+    "lat": 52.263083333,
+    "lon": 21.018083333,
+    "lokalizacja": "przyblizona",
+    "okres": "1959–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę zaprojektowano jako część Trasy Mostowej im. Starzyńskiego, w związku z budową mostu Gdańskiego.",
+      "Nazwę upamiętniającą prezydenta Warszawy Stefana Starzyńskiego nadano całej trasie, wraz z mostem, uchwałą Rady Narodowej m.st. Warszawy z dnia 27 września 1957.",
+      "Ulica została oddana do użytku 21 lipca 1959.",
+      "Do 2019 roku ulica była częścią drogi wojewódzkiej nr 634, łączącej Warszawę z Wołominem i Tłuszczem.",
+      "W latach 2006–2007 w ciągu ulicy nad rondem wybudowano estakady.",
+      "W 2012 przy ulicy ustawiono pierwsze w Warszawie tablice zalecające kierowcom „jazdę na suwak”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stefan Starzyński Street in Praga-Północ is part of the Starzyński Transit Route built to serve the Gdański Bridge. It opened in July 1959 and was named after Warsaw's wartime president by a 1957 city council resolution.",
+    "ludzie": [
+      {
+        "kto": "Stefan Starzyński",
+        "rola": "prezydent Warszawy; imieniem upamiętniono trasę wraz z mostem (1957)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Stefana Starzyńskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Stefana_Starzy%C5%84skiego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-strzelecka",
+    "nazwa": "Ulica Strzelecka",
+    "name_en": "Strzelecka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Strzelecka",
+    "adres_historyczny": null,
+    "lat": 52.26207,
+    "lon": 21.042024,
+    "lokalizacja": "przyblizona",
+    "okres": "1792–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jedna z najstarszych ulic Pragi; jej historia sięga 1792 roku.",
+      "Pierwotnie znajdowała się w rejonie obecnej ulicy Ratuszowej; w czasie wytyczania Nowej Pragi została przesunięta na wschód.",
+      "Przy ulicy znajduje się dawna siedziba Fabryki Kas Pancernych Stalobetonowych „Stanisław Zwierzchowski i Synowie”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Strzelecka is one of the oldest streets in Praga, dating to 1792. It was moved east when New Praga was laid out, and it is now the location of Szwedzka metro station, opened in 2019.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Strzelecka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Strzelecka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "strzelecka-8-siedziba-nkwd",
+    "nazwa": "Dom przy ul. Strzeleckiej 8 (dawna Środkowa 13)",
+    "name_en": "Building at 8 Strzelecka Street (former Środkowa 13)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Strzelecka 8",
+    "adres_historyczny": "ul. Środkowa 13",
+    "lat": 52.26207,
+    "lon": 21.042024,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec lat 30.–po 1945",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiony w końcu lat 30. XX wieku, pierwotnie pod adresem ul. Środkowa 13.",
+      "W latach 1944–1945 mieściła się tu główna siedziba NKWD w Polsce.",
+      "Następnie w budynku mieściła się siedziba Wojewódzkiego Urzędu Bezpieczeństwa Publicznego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building at today's 8 Strzelecka Street, built in the late 1930s as Środkowa 13. In 1944–1945 it housed the main NKWD headquarters in Poland, followed by the Voivodeship Office of Public Security.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Środkowa 13"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Strzelecka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Strzelecka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne ulicy (środek odcinka), nie budynku. Artykuł nie podaje, czy budynek istnieje dziś."
+  },
+  {
+    "id": "ulica-szwedzka",
+    "nazwa": "Ulica Szwedzka",
+    "name_en": "Szwedzka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Szwedzka",
+    "adres_historyczny": null,
+    "lat": 52.26462,
+    "lon": 21.04218,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1861–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została przeprowadzona po 1861 jako jedna z ulic rozbudowującej się Nowej Pragi; w 1876 nosiła nazwę Górna.",
+      "W 1889 (według innego źródła w 1891) wraz z Nową Pragą została włączona do Warszawy, a nazwę zmieniono na Szwedzka, gdyż w Warszawie istniała już ulica Górna.",
+      "W 1879 została uruchomiona Warszawska Fabryka Stali, między ulicami Górną (Szwedzką), Nowopraską (późniejszą ul. Stalową) oraz torami kolei petersburskiej i obwodowej.",
+      "W 1896 przy ulicy rozpoczęło działalność Towarzystwo Akcyjne Fabryki Produktów Chemicznych „Praga”, a w 1899 Towarzystwo Akcyjne Fabryki Lamp – Bracia Brünner, Hugo Schneider i R. Ditmar.",
+      "W latach 1934–1935 przy skrzyżowaniu ulic Stalowej i Szwedzkiej wzniesiono kościół Matki Bożej z Lourdes.",
+      "W listopadzie 1945 pod nr. 2/4 zainaugurował działalność teatr Comoedia; budynek w 2017 został zburzony.",
+      "We wrześniu 2019 oddano do użytku stację metra Szwedzka, znajdującą się przy ul. Strzeleckiej, po wschodniej stronie ul. Szwedzkiej."
+    ],
+    "ciekawostki": [
+      "Nazwa mogła wiązać się z piaszczystymi wzgórzami na Targówku, na których w lipcu 1656 roku, w czasie potopu szwedzkiego, stoczono bitwę pod Warszawą; miejscowa ludność nazywała je „górami szwedzkimi”."
+    ],
+    "summary_en": "Szwedzka in Praga-Północ was laid out after 1861 and renamed in 1889–1891, when New Praga joined Warsaw. Factories filled its eastern side from the 1870s, and the Lourdes church (1934–1935) and Szwedzka metro station (2019) are among its landmarks.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Górna"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Szwedzka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Szwedzka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-targowa",
+    "nazwa": "Ulica Targowa",
+    "name_en": "Targowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa",
+    "adres_historyczny": null,
+    "lat": 52.2516,
+    "lon": 21.0387,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XII i XIII–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia ulicy sięga przełomu XII i XIII wieku, kiedy stanowiła wschodnią granicę wielkiego targowiska we wsi Targowe Wielkie; nazwę nadano w 1791 roku.",
+      "W końcu XVIII wieku przy Targowej istniało 71 drewnianych domów oraz 1 dom murowany.",
+      "W 1866 przeprowadzono tory dla tramwaju konnego.",
+      "W 1908 roku ulicą po raz pierwszy pojechały tramwaje elektryczne.",
+      "Po wyzwoleniu Pragi (15 września 1944) ze względu na niemiecki ostrzał z lewego brzegu Wisły ulica była nazywana „aleją śmierci”.",
+      "W 1967 pod ulicą w pobliżu al. Świerczewskiego powstało pierwsze w Warszawie przejście podziemne, wyposażone w telefon i ustęp publiczny.",
+      "W 2015 na skrzyżowaniu Targowej i al. „Solidarności” oddano do użytku stację metra Dworzec Wileński."
+    ],
+    "ciekawostki": [
+      "Pierwotnie północny odcinek ulicy nosił nazwę Rynkowa, a odcinek południowy, do 1916 roku, nazywano Wołową (od handlu bydłem)."
+    ],
+    "summary_en": "Targowa in Praga-Północ and Praga-Południe is one of Praga's oldest streets, named in 1791 after the cattle market of Targowe Wielkie. It was the first Warsaw street with electric trams (1908) and was called the 'Avenue of Death' under German shelling after 1944.",
+    "ludzie": [
+      {
+        "kto": "Szymon Syrkus",
+        "rola": "projektant osiedla Praga I (1949–1952) przy ulicy",
+        "wiki": null
+      },
+      {
+        "kto": "Helena Syrkus",
+        "rola": "projektantka osiedla Praga I (1949–1952) przy ulicy",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Rynkowa (północny odcinek)",
+      "Wołowa (południowy odcinek, do 1916)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Targowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Targowa_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "ulica-nad-wilanowka",
+    "nazwa": "Ulica Nad Wilanówką",
+    "name_en": "Nad Wilanówką Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Nad Wilanówką",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 90. XX wieku, w ramach budowy nowych osiedli mieszkaniowych na terenie byłej wsi Zawady.",
+      "Ulica odchodzi od Sytej i ma długość 275 m.",
+      "Nazwa pochodzi od przepływającej w pobliżu rzeki Wilanówki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in Zawady, Wilanów, branching off Sytej. It was built in the 1990s on the former village of Zawady and takes its name from the nearby Wilanówka river.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Nad Wilanówką", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Nad_Wilanówką"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru."
+  },
+  {
+    "id": "ulica-orszady",
+    "nazwa": "Ulica Orszady",
+    "name_en": "Orszady Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Orszady",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1836–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zjazd ze skarpy i jego przedłużenie w kierunku Wilanowa (dzisiejsza ul. Hlonda) pojawia się już na mapie okolic Warszawy z 1836 roku.",
+      "Latem 2008 roku ulicę wraz z ul. Hlonda przebudowano i wyasfaltowano, tworząc tymczasowe połączenie między Ursynowem a Miasteczkiem Wilanów.",
+      "Latem 2010 roku obsunęła się skarpa wiślana podczas obfitych deszczów, a ulica została zamknięta.",
+      "Mimo protestów władz Ursynowa drogę otwarto 19 sierpnia.",
+      "3 czerwca 2010 roku na rogu ul. Hlonda ustawiono kapliczkę upamiętniającą zbrodnię katyńską oraz katastrofę smoleńską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1200-metre street on the Vistula escarpment linking Kokosowa with the lower areas of Wilanów. Its steep section was closed after a landslide in 2010 and reopened to traffic on 19 August.",
+    "ludzie": [
+      {"kto": "Janusz Galas", "rola": "Miejski Inżynier Ruchu, na początku lipca wydał zgodę na otwarcie jezdni w kierunku zachodnim", "wiki": null},
+      {"kto": "Adam Zelga", "rola": "ks., proboszcz parafii bł. Edmunda Bojanowskiego, z jego inicjatywy ustawiono kapliczkę", "wiki": null},
+      {"kto": "Jerzy Kalina", "rola": "zaprojektował kapliczkę przy ul. Hlonda", "wiki": null},
+      {"kto": "Czesław Siekierski", "rola": "fundator kapliczki; poseł Parlamentu Europejskiego z ramienia PSL", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Orszady", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Orszady"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. Rok otwarcia drogi (19 sierpnia) nie jest w tekście podany wprost."
+  },
+  {
+    "id": "ulica-rzodkiewki",
+    "nazwa": "Ulica Rzodkiewki",
+    "name_en": "Rzodkiewki Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Rzodkiewki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ma długość 2200 m i biegnie od ulicy Orszady do Arbuzowej.",
+      "Przy projektowanym skrzyżowaniu z Osią Królewską znajduje się mogiła powstańcza, miejsce śmierci 5 żołnierzy powstania warszawskiego.",
+      "Nazwa ulicy pochodzi od rzodkiewki – odmiany warzywa znanego pod nazwą rzodkiew zwyczajna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 2.2-kilometre street on the Pola Wilanowskie area, running from Orszady to Arbuzowa. It is named after the radish and has a memorial grave of five soldiers of the Warsaw Uprising at the planned junction with Oś Królewska.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Rzodkiewki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rzodkiewki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. Data powstania w tekście: bd."
+  },
+  {
+    "id": "ulica-siedliskowa",
+    "nazwa": "Ulica Siedliskowa",
+    "name_en": "Siedliskowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Siedliskowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica leży na terenie przyłączonym do Warszawy w roku 1951 i była kiedyś jedną z dróg lokalnych wsi Kępa Nadwiślańska.",
+      "Jako ulica Warszawy uzyskała nazwę w roku 1960.",
+      "Ulica odchodzi od ul. Sytej w pobliżu Stawu Zawadowskiego i ma długość 420 m."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 420-metre street in the Zawady area of Wilanów, branching off Sytej near the Zawadowski Pond. It was part of the village of Kępa Nadwiślańska before being incorporated into Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Siedliskowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Siedliskowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru."
+  },
+  {
+    "id": "ulica-trojpolowa",
+    "nazwa": "Ulica Trójpolowa",
+    "name_en": "Trójpolowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Trójpolowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica leży na terenie przyłączonym do Warszawy w roku 1951 i jest lokalną drogą gruntową na terenie byłej wsi Kępa Nadwiślańska.",
+      "Jako ulica Warszawy uzyskała nazwę w roku 1960.",
+      "Przez lata przy ulicy znajdował się tylko jeden budynek (nr 3), jednak w latach 2013-2014 niemal naprzeciwko niego wybudowano nowy dom jednorodzinny (nr 6).",
+      "Ulica odchodzi od ul. Sytej i po około 300 m skręca w lewo, w kierunku rzeki Wilanówka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An unpaved road of about 1100 metres in the former village of Kępa Nadwiślańska, Wilanów. It was incorporated into Warsaw in 1951 and named in 1960.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Trójpolowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Trójpolowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru."
+  },
+  {
+    "id": "ulica-lokciowa",
+    "nazwa": "Ulica Łokciowa",
+    "name_en": "Łokciowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Łokciowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica leży na terenie przyłączonym do Warszawy w roku 1951 i była kiedyś jedną z dróg lokalnych wsi Zawady.",
+      "Jako ulica Warszawy uzyskała nazwę w roku 1960.",
+      "Nazwa pochodzi od staropolskiej miary długości i wpisuje się w nazewnictwo ulic w rejonie Zawad i Kępy Zawadowskiej, którym nadano nazwy nawiązujące do historycznego systemu miar.",
+      "Ulica ma długość 320 m i odchodzi od ul. Zaściankowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 320-metre street in Zawady, Wilanów, branching off Zaściankowa. It was named in 1960 after an old Polish unit of length, like many streets in the area.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Łokciowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Łokciowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru."
+  }
+]

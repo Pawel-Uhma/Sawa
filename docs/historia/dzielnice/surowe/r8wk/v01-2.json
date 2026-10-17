@@ -1,0 +1,108 @@
+[
+  {
+    "id": "gorzelnia-drozdzowa-henrykow",
+    "nazwa": "Gorzelnia drożdżowa Henryków",
+    "name_en": "Henryków yeast distillery",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Klasyków 10",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fabrykę założył żydowski przedsiębiorca Henryk Bienenthal na miejscu dawnych zabudowań folwarcznych.",
+      "Henrykowska fabryka, uruchomiona w 1904 roku, służyła wytwarzaniu drożdży prasowanych na potrzeby piekarstwa, za pomocą tzw. metody wiedeńskiej.",
+      "W 1911 roku zakład przeszedł na własność spółki braci Szpilfogel i M. Szereszewskiego, właścicieli dwóch innych drożdżowni.",
+      "W 1912 roku fabryka odnotowała produkcję 77 968 wiader spirytusu i 1 085 977 funtów drożdży.",
+      "W latach 1928-1929 gorzelnię zmodernizowano, wprowadzając produkcję drożdży z melasy.",
+      "W czasie drugiej wojny światowej zakład przejęli Niemcy i zarządzali nim do przełomu 1944 i 1945 roku.",
+      "W 1952 roku teren fabryki przekazano Ministerstwu Przemysłu Rolno-Spożywczego, które rozpoczęło na jej terenie budowę eksperymentalnego przedsiębiorstwa produkującego aromaty.",
+      "Zespół dawnej drożdżowni zostanie odnowiony przez fińskiego dewelopera YIT i stanie się częścią inwestycji mieszkaniowej Aroma Park."
+    ],
+    "ciekawostki": [
+      "Jedyny z domów pracowniczych, który przetrwał do dziś, pełnił zapewne funkcję domu portiera.",
+      "Gorzelnia jest pierwszą i jedyną zachowaną do dziś gorzelnią drożdżową w okolicach Warszawy."
+    ],
+    "summary_en": "A former yeast distillery at Klasyków 10 in Henryków, Białołęka. Founded by Henryk Bienenthal, it started production in 1904. It is the only surviving yeast distillery near Warsaw, and its complex is to be renovated by the Finnish developer YIT as part of the Aroma Park housing project.",
+    "ludzie": [
+      {"kto": "Henryk Bienenthal", "rola": "żydowski przedsiębiorca, założyciel fabryki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Gorzelnia drożdżowa Henryków", "url": "https://warszawa.fandom.com/pl/wiki/Gorzelnia_drożdżowa_Henryków"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-chrystusa-krola-pokoju",
+    "nazwa": "Kościół Chrystusa Króla Pokoju",
+    "name_en": "Church of Christ the King of Peace (St Jadwiga's)",
+    "typ": "swiatynia",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Modlińska 4",
+    "adres_historyczny": "Modlińska 24",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy drewniany kościół powstał w latach 1920-1921 według projektu Hugona Kudery.",
+      "Świątynię 17 października 1920 roku poświęcił ks. prałat Zygmunt Łubieński.",
+      "Dnia 22 października 1921 roku przy kościele erygowano parafię św. Jadwigi.",
+      "W latach 1969-1971 w miejscu drewnianej świątyni wybudowano nowy, murowany kościół.",
+      "Nowy kościół został oficjalnie poświęcony 19 września 1971 roku przez kardynała Stefana Wyszyńskiego.",
+      "Dnia 21 września 1981 roku w kościele ksiądz Jerzy Popiełuszko poświęcił sztandar Fabryki Samochodów Osobowych.",
+      "Między 2008 a 2011 rokiem kościół został wyremontowany."
+    ],
+    "ciekawostki": [
+      "Przed wojną adres kościoła brzmiał Modlińska 24.",
+      "Kościół nie został zniszczony w czasie II wojny światowej, choć był poważnie zdewastowany i ogołocony z wyposażenia."
+    ],
+    "summary_en": "The Church of Christ the King of Peace, also known as St Jadwiga's, stands at Modlińska 4 in Żerań, on the border of Białołęka and Praga-Północ. The first wooden church was built in 1920-1921 and the current brick church was completed in 1971, after a construction effort the authorities twice tried to halt.",
+    "ludzie": [
+      {"kto": "Hugo Kudera", "rola": "autor projektu pierwszego drewnianego kościoła (1920-1921)", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał, poświęcił nowy kościół 19 września 1971 roku", "wiki": null},
+      {"kto": "Ryszard Grygiełko", "rola": "ksiądz, który rozpoczął budowę nowej świątyni w latach 1969-1971", "wiki": null},
+      {"kto": "Jerzy Popiełuszko", "rola": "ksiądz, który 21 września 1981 roku poświęcił sztandar FSO", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół św. Jadwigi"],
+    "zrodla": [{"tytul": "Warszawikia: Kościół Chrystusa Króla Pokoju na Żeraniu", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Chrystusa_Króla_Pokoju_na_Żeraniu"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE podaje: Białołęka, Praga-Północ; w polu dzielnica wpisana Białołęka (pierwsza z listy)."
+  },
+  {
+    "id": "oboz-pracy-w-piekielku",
+    "nazwa": "Obóz pracy w Piekiełku",
+    "name_en": "Piekiełko forced labour camp",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Myśliborska 65",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1942",
+    "istnieje": false,
+    "fakty": [
+      "Obóz pracy w Piekiełku był niemieckim nazistowskim obozem pracy w osadzie Piekiełko, od 1951 roku wchodzącej w skład Żerania.",
+      "Przebywało tam kilkaset osób – Żydzi zamieszkujący ówczesną gminę Jabłonna, a także ci, którzy nie zostali wywiezieni z likwidowanego obozu w Otwocku do Treblinki.",
+      "Więźniowie obozu byli wykorzystywani do budowy istniejącego do dziś wału przeciwpowodziowego nad Wisłą.",
+      "Jesienią 1942 roku w pobliżu obozu naziści rozstrzelali grupę Żydów zbiegłych podczas akcji wysiedlenia getta w Legionowie.",
+      "Obóz najprawdopodobniej zlikwidowano jesienią – najczęściej mówi się o listopadzie 1942 roku."
+    ],
+    "ciekawostki": [
+      "Jedyną pozostałością obozu są betonowe słupy stanowiące kiedyś część ogrodzenia, które po wojnie mieszkańcy wykorzystali na ogrodzenia własnych posesji."
+    ],
+    "summary_en": "A Nazi forced labour camp in the Piekiełko settlement, now part of Żerań in Białołęka. Jewish prisoners from the former Jabłonna commune, and others from the liquidated Otwock camp, were used to build the Vistula flood embankment. The camp was liquidated in autumn 1942, and only concrete fence posts survive.",
+    "ludzie": [
+      {"kto": "Calek Perechodnik", "rola": "więzień obozu, opisał go w książce „Spowiedź”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Piekiełko"],
+    "zrodla": [{"tytul": "Warszawikia: Obóz pracy w Piekiełku", "url": "https://warszawa.fandom.com/pl/wiki/Obóz_pracy_w_Piekiełku"}],
+    "pewnosc": "niska",
+    "uwagi": "Lokalizacja sporna: Wirtualny Sztetl wskazuje rejon ul. Myśliborskiej i Przaśnej, Gazeta Stołeczna ul. Obrazkową przy komisariacie (Myśliborska 65). Adres z tego drugiego wariantu."
+  }
+]
