@@ -5,11 +5,14 @@
   "scripts": {
     "seed:historia": "node --env-file-if-exists=../.env.local --import tsx seed-historia.ts",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "transit": "node --import tsx transit/build-graph.ts",
+    "export:places": "node --import tsx export-places-geojson.ts"
   },
   "dependencies": {
     "@sawa/shared": "workspace:*",
     "@supabase/supabase-js": "^2.118.0",
+    "fflate": "^0.8.3",
     "tsx": "^4.23.15",
     "zod": "^4.6.7"
   }
