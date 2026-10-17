@@ -33,6 +33,7 @@
 
 - [x] **T-19** Planer bierze miejsca z Supabase (`PlacesRepository.listInBBox`) zamiast z `apps/api/data/places.geojson`, żeby nowe miejsca z T-25 trafiały do tras bez eksportu pliku — `R1` — 17:00 (Szczepan, 14:38, PR #17)
 - [x] **T-65** Pętla z powrotem do startu (`returnToStart`, PR #9) i kształt odcinka do ostatniego przystanku (PR #11) — `R1` — (Szczepan, 13:58)
+- [x] **T-66** Wybór punktu końcowego trasy (`destination`, `endsAtDestination`) — `R1` — (Szczepan, 14:40, PR w toku)
 - [ ] **T-10** Adapter `apps/api/src/adapters/waw` (przystanki, linie, odjazdy) z cache w pamięci i fixtures z curl — `R1` — 15:00 (do przeglądu: mapa bierze miejsca z `/v1/places`, planer jedzie na GTFS, w MVP może zostać tylko odjazdy z T-17)
 - [x] **T-15** Skąd kolejność przystanków linii (GTFS / stare API / kształt z pozycji pojazdów), decyzja w `stan.md` (P1 w planie MVP) — `R1` — 13:30 (Szczepan, 13:15: GTFS z mkuran.pl, skompresowany do pliku w repo)
 - [x] **T-16** Mock `POST /v1/routes/plan` z fixture zgodnej z kontraktem, żeby R3 i R4 nie czekali — `R1` — 14:30 (Szczepan, 13:20, PR #2; od 14:00 zastąpiony prawdziwym planerem)

@@ -124,6 +124,7 @@ Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiada
 4. Z trasy wybierane są miejsca do opowieści: najlepsze punktowo, co najmniej 45 s od siebie (`select-stories.ts`). `windowSec` = czas do następnego miejsca.
 5. Wynik: `Route` z kontraktu (`packages/shared/src/schemas/route.ts`), ok. 0,2 s na zapytanie.
 6. **Pętla** (`returnToStart: true` w zapytaniu): trasa kończy się na przystanku do 500 m od startu. Do 3 przesiadek, można wrócić tą samą linią w drugą stronę, czas 80–110% budżetu. Czas powrotu z każdego zespołu przystanków liczy odwrócony Dijkstra (`return-times.ts`), więc wyszukiwanie od razu odrzuca trasy, z których nie da się zdążyć wrócić. Odpowiedź ma `endsAtStart` (false, gdy pętli nie udało się znaleźć). Ok. 0,3 s.
+7. **Cel** (`destination: {lat, lng}` w zapytaniu, nie razem z `returnToStart`): ten sam mechanizm co pętla, tylko końcem jest przystanek do 500 m od celu. Gdy cel jest dalej, niż pozwala czas, budżet rośnie do najszybszego dojazdu. Gdy przy celu nie ma przystanku albo nie da się do niego dojechać, planer zwraca zwykłą trasę. Odpowiedź ma `endsAtDestination` (tylko gdy podano cel; false, gdy nie dojechaliśmy). Podgląd `/debug/planner`: Shift + klik ustawia cel.
 
 **Ograniczenie danych:** miejsca są tylko ok. 3 km od 42 Warsaw (pomiar 17.10, 14:40, 485 miejsc), więc trasa 60 min w jedną stronę ma ostatnie miejsce ok. 30. min. Pętla i trasa 90 min ze wszystkimi kategoriami mają miejsca do końca. Rozwiązuje to więcej miejsc w Supabase dalej od Woli.
 

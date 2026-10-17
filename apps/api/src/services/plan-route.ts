@@ -40,17 +40,20 @@ export type PlannerLogger = {
   warn(obj: object, msg: string): void;
 };
 
-function reachableBbox(origin: LatLng, durationMin: number): BBox {
+/** Around the origin and, if given, the destination. */
+function reachableBbox(points: LatLng[], durationMin: number): BBox {
   const km = reachKm(durationMin);
   const dLat = (km * 1000) / M_PER_DEG_LAT;
-  const dLng = dLat / Math.cos((origin.lat * Math.PI) / 180);
+  const lats = points.map((p) => p.lat);
+  const dLng = dLat / Math.cos((Math.max(...lats.map(Math.abs)) * Math.PI) / 180);
+  const lngs = points.map((p) => p.lng);
   const down = (v: number) => Math.floor(v / GRID_DEG) * GRID_DEG;
   const up = (v: number) => Math.ceil(v / GRID_DEG) * GRID_DEG;
   return {
-    minLng: down(origin.lng - dLng),
-    minLat: down(origin.lat - dLat),
-    maxLng: up(origin.lng + dLng),
-    maxLat: up(origin.lat + dLat),
+    minLng: down(Math.min(...lngs) - dLng),
+    minLat: down(Math.min(...lats) - dLat),
+    maxLng: up(Math.max(...lngs) + dLng),
+    maxLat: up(Math.max(...lats) + dLat),
   };
 }
 
@@ -143,7 +146,10 @@ export function createRoutePlanner(deps: {
   return {
     async plan(request, now) {
       const { hitsByPattern, placesById } = await prepare(
-        reachableBbox(request.origin, request.durationMin),
+        reachableBbox(
+          request.destination ? [request.origin, request.destination] : [request.origin],
+          request.durationMin,
+        ),
       );
       let ride = planRide({
         network,
@@ -153,6 +159,7 @@ export function createRoutePlanner(deps: {
         budgetSec: request.durationMin * 60,
         interests: new Set(request.interests),
         returnToStart: request.returnToStart,
+        destination: request.destination,
       });
       if (!ride) {
         throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");

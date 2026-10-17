@@ -74,6 +74,7 @@ export function buildRoute({
     places,
     totalMin: Math.round(ride.elapsedSec / 6) / 10,
     endsAtStart: ride.endsAtStart,
+    ...(ride.endsAtDestination === undefined ? {} : { endsAtDestination: ride.endsAtDestination }),
     attribution,
   };
 }

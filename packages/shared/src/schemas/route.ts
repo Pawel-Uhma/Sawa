@@ -5,14 +5,21 @@ import { LatLngSchema } from "./common";
 export const MIN_DURATION_MIN = 30;
 export const MAX_DURATION_MIN = 240;
 
-export const PlanRouteRequestSchema = z.object({
-  origin: LatLngSchema,
-  durationMin: z.number().int().min(MIN_DURATION_MIN).max(MAX_DURATION_MIN),
-  interests: z.array(InterestSchema).min(1).max(5),
-  /** Loop: the ride ends at a stop near the origin. */
-  returnToStart: z.boolean().default(false),
-});
-/** What a client sends; `returnToStart` may be left out (defaults to false). */
+export const PlanRouteRequestSchema = z
+  .object({
+    origin: LatLngSchema,
+    durationMin: z.number().int().min(MIN_DURATION_MIN).max(MAX_DURATION_MIN),
+    interests: z.array(InterestSchema).min(1).max(5),
+    /** Loop: the ride ends at a stop near the origin. */
+    returnToStart: z.boolean().default(false),
+    /** The ride ends at a stop near this point. Not together with `returnToStart`. */
+    destination: LatLngSchema.optional(),
+  })
+  .refine((r) => !(r.returnToStart && r.destination), {
+    message: "Podaj destination albo returnToStart, nie oba",
+    path: ["destination"],
+  });
+/** What a client sends; `returnToStart` and `destination` may be left out. */
 export type PlanRouteRequest = z.input<typeof PlanRouteRequestSchema>;
 
 export const StopSchema = z.object({
@@ -56,6 +63,11 @@ export const RouteSchema = z.object({
   totalMin: z.number().nonnegative(),
   /** The last stop is near the origin. False when a requested loop could not be found. */
   endsAtStart: z.boolean(),
+  /**
+   * Only when a `destination` was requested: the last stop is near it.
+   * False when no ride could reach it within the time.
+   */
+  endsAtDestination: z.boolean().optional(),
   /** Data credits that must be shown next to the route. */
   attribution: z.array(z.string()),
 });

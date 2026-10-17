@@ -53,6 +53,25 @@ describe("route planner on real data", () => {
     expect(route.totalMin).toBeLessThanOrEqual(durationMin * 1.1);
   });
 
+  it("plans a ride that ends at the Castle Square", async () => {
+    const castleSquare = { lat: 52.2477, lng: 21.0137 };
+    const route = RouteSchema.parse(
+      await planner.plan(
+        {
+          origin: HACKATHON_VENUE,
+          durationMin: 60,
+          interests: ["historical"],
+          destination: castleSquare,
+        },
+        NOW,
+      ),
+    );
+    expect(route.endsAtDestination).toBe(true);
+    const end = route.legs[route.legs.length - 1]?.toStop.position;
+    expect(end && haversineM(end, castleSquare)).toBeLessThanOrEqual(600);
+    expect(route.totalMin).toBeLessThanOrEqual(60 * 1.1);
+  });
+
   it("moves the ride to the real first departure", async () => {
     const departures: DepartureSource = {
       nextDeparture: async (_stop, _line, after) => new Date(after.getTime() + 9 * 60_000),
