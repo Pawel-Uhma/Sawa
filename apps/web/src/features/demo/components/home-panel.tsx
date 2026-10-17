@@ -52,7 +52,7 @@ type HomePanelProps = {
 };
 
 /** Podpisy pod suwakiem w miejscach ich wartości (suwak jest liniowy, więc 1 h nie leży w 1/4). */
-const SCALE = [5, 30, 60, 120, 180, 240];
+const SCALE = [5, 60, 120, 180, 240];
 
 /** Środek gałki suwaka (30 px) dla danej wartości: tor zaczyna się i kończy pół gałki od krawędzi. */
 function thumbCenter(durationMin: number): string {
@@ -163,21 +163,23 @@ export function HomePanel({
             />
           </p>
         </div>
-        <span className="relative h-9 shrink-0 overflow-hidden md:h-[42px]">
-          <AnimatePresence mode="popLayout" initial={false}>
-            <motion.strong
-              key={shownMin}
-              initial={{ y: 18, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -18, opacity: 0 }}
-              transition={{ type: "spring", bounce: 0, duration: 0.3 }}
-              className="block text-[28px] font-extrabold leading-9 tracking-[-0.03em] text-glebia tabular-nums md:text-[34px] md:leading-[42px]"
-            >
-              {formatDuration(shownMin)}
-            </motion.strong>
-          </AnimatePresence>
-        </span>
       </div>
+
+      {/* Wartość we własnym wierszu nad suwakiem: w nagłówku ucinała tytuł */}
+      <span className="relative mt-3 block h-11 overflow-hidden md:h-[52px]">
+        <AnimatePresence mode="popLayout" initial={false}>
+          <motion.strong
+            key={shownMin}
+            initial={{ y: 22, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -22, opacity: 0 }}
+            transition={{ type: "spring", bounce: 0, duration: 0.3 }}
+            className="block text-[40px] font-extrabold leading-[44px] tracking-[-0.04em] text-glebia tabular-nums md:text-[46px] md:leading-[52px]"
+          >
+            {formatDuration(shownMin)}
+          </motion.strong>
+        </AnimatePresence>
+      </span>
 
       {isFindingFastest ? (
         <p aria-live="polite" className="mt-2 flex items-center gap-1.5 text-[13px] text-tekst-2">

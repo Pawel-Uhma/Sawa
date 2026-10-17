@@ -369,22 +369,19 @@ function Welcome({ onStart, onSkipIntro }: { onStart: () => void; onSkipIntro: (
     <div className="flex flex-1 flex-col gap-8 md:gap-10">
       <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-left">
         <h1 className="text-[32px] font-extrabold leading-[1.08] tracking-[-0.025em] md:text-[clamp(2.5rem,3.8vw,3.75rem)] md:leading-[1.04]">
-          {t(
-            "Opowiem Ci o mieście za oknem tramwaju.",
-            "I'll tell you about the city outside your tram window.",
-          )}
+          {t("Opowiem Ci o mieście, które mijasz.", "I'll tell you about the city you're passing.")}
         </h1>
         <p className="max-w-md text-[15px] leading-relaxed text-tekst-2 md:text-lg">
           {t(
-            "Powiedz, co Cię ciekawi i ile masz czasu. Ułożę przejazd komunikacją miejską i opowiem o miejscach, które mijasz.",
-            "Tell me what interests you and how much time you have. I'll plan a ride on public transport and tell you about the places you pass.",
+            "Jak podcast w słuchawkach: w tramwaju, w autobusie albo na spacerze.",
+            "Like a podcast in your headphones: on a tram, on a bus or on a walk.",
           )}
         </p>
       </div>
 
       <ul className="hidden gap-3 md:flex" aria-label={t("Co potrafi Sawa", "What Sawa can do")}>
         {[
-          { icon: "tram", text: t("Tramwaje i autobusy ZTM", "ZTM trams and buses") },
+          { icon: "tram", text: t("Tramwaj, autobus albo spacer", "Tram, bus or a walk") },
           {
             icon: "know_a_bit",
             text: t("Historie miejsc z danych miasta", "Stories of places from city data"),
