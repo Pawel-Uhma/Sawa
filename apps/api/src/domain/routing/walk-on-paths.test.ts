@@ -107,7 +107,7 @@ describe("pickWalkOnPaths", () => {
     expect(picked?.elapsedSec).toBeCloseTo(270 / 1.2, -1);
   });
 
-  it("skips walks whose path does not fit the time, or the shortest when none does", () => {
+  it("skips walks whose path does not fit the time, or far longer than the shortest when none does", () => {
     const short: LngLat[] = [toLngLat(ORIGIN), toLngLat(target.position)];
     // ~2.4 km round: far over 1.1 × 300 s.
     const long: LngLat[] = [east(21.0), [21.0, 52.24], [21.004, 52.24], east(21.004)];
@@ -121,6 +121,25 @@ describe("pickWalkOnPaths", () => {
     expect(picked?.waypoints).toEqual(straight.waypoints);
     const none = pickWalkOnPaths([{ walk: straight, path: long }], input);
     expect(none?.waypoints).toEqual(straight.waypoints);
+  });
+
+  it("when none fits, picks the best of the walks near the shortest", () => {
+    const places = [
+      place("east-other", 21.002, 52.23, ["cultural"]),
+      place("west-match", 20.998, 52.23, ["historical"]),
+      place("north-1", 21.0, 52.231, ["historical"]),
+      place("north-2", 21.0, 52.232, ["historical"]),
+    ];
+    const paths: LngLat[][] = [
+      [east(21.0), east(21.0039)], // ~267 m, the shortest, passes only a non-match
+      [east(21.0), east(20.996)], // ~274 m, 3 % longer, passes a match
+      [east(21.0), [21.0, 52.2327]], // ~300 m, 12 % longer, passes two matches
+    ];
+    const picked = pickWalkOnPaths(
+      paths.map((path, i) => ({ walk: walk([ORIGIN, { lat: 52.23 + i / 1e5, lng: 21.0 }]), path })),
+      { places, budgetSec: 100, interests },
+    );
+    expect(picked?.places.map((p) => p.placeId)).toEqual(["west-match"]);
   });
 
   it("returns undefined without any path", () => {

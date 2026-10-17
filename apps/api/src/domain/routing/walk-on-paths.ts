@@ -84,13 +84,19 @@ export function retracedPathM(path: LngLat[]): number {
   return retracedM;
 }
 
+/**
+ * When no walk fits the time, walks this much longer than the shortest still compete: seconds
+ * apart matter less than the places passed.
+ */
+const NEAR_SHORTEST = 1.05;
+
 export type WalkOnPath = { walk: Walk; path?: LngLat[] };
 
 /**
  * Of walks planned on straight lines, the best one along its real path: the places the path
  * passes, its length at walking speed and the stretches walked back the same way, weighed like
- * `planWalk` does. Walks that fit `maxBudgetShare` × budget come first; when none does, the
- * shortest. The walk gets the path's places and time. Undefined when no walk has a path.
+ * `planWalk` does. Only walks that fit `maxBudgetShare` × budget count; when none does,
+ * the ones near the shortest (`NEAR_SHORTEST`). The walk gets the path's places and time. Undefined when no walk has a path.
  */
 export function pickWalkOnPaths(
   walks: WalkOnPath[],
@@ -119,12 +125,13 @@ export function pickWalkOnPaths(
       (opts.backtrackPenalty * retracedSec) / input.budgetSec;
     return [{ walk: { ...walk, places: passed, elapsedSec: sec, score }, objective }];
   });
-  const fitting = scored.filter((s) => s.walk.elapsedSec <= maxSec);
-  const best = fitting.length
-    ? fitting.reduce((a, b) => (b.objective > a.objective ? b : a))
-    : scored.reduce<(typeof scored)[number] | undefined>(
-        (a, b) => (!a || b.walk.elapsedSec < a.walk.elapsedSec ? b : a),
-        undefined,
-      );
+  const shortestSec = Math.min(...scored.map((s) => s.walk.elapsedSec));
+  const limitSec = shortestSec <= maxSec ? maxSec : shortestSec * NEAR_SHORTEST;
+  const best = scored
+    .filter((s) => s.walk.elapsedSec <= limitSec)
+    .reduce<(typeof scored)[number] | undefined>(
+      (a, b) => (!a || b.objective > a.objective ? b : a),
+      undefined,
+    );
   return best?.walk;
 }
