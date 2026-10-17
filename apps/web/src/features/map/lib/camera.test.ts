@@ -40,6 +40,10 @@ describe("resolveCamera", () => {
     expect(resolveCamera(undefined, undefined)).toBeNull();
   });
 
+  it("stays put on request, even with a route to fit", () => {
+    expect(resolveCamera({ type: "stay" }, ROUTE)).toBeNull();
+  });
+
   it("follows the route by default", () => {
     expect(resolveCamera(undefined, ROUTE)).toEqual({
       type: "fit",

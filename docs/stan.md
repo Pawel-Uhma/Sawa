@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 22:13 (Paweł, z agentem R3): **jeden ruch kamery przy pierwszym kliknięciu miejsca (T-155, #117).** Przyczyna: bez pozycji (szczegóły jeszcze się ładują) kamera wracała na start, a potem jechała do miejsca. Teraz czeka (`{ type: "stay" }`) i jedzie raz.
 - 22:30 (Szczepan, z agentem R1): **produkcja rysowała spacery prostymi liniami przez budynki.** FOSSGIS OSRM przestał dawać ścieżki z IP Railway (lokalnie działał; najpewniej blokada po symulacji 100–300 klientów o 21:30, każdy spacer to zapytanie do FOSSGIS). Poprawka w gałęzi `r1/walk-path-fallback`: gdy OSRM zawiedzie, ścieżkę daje Valhalla (też FOSSGIS, inny serwer, bez klucza), router, który zawiódł, jest pomijany przez minutę, błędy idą do logów. Po merge'u deploy ręczny (T-148). Pewne rozwiązanie na demo: własny OSRM (do decyzji).
 - 21:50 (Jasiek, z agentem R2): **`computePlaceHits` blokował API na ~3 s** przy każdym nowym obszarze planera (4522 miejsc × 575 kursów), stąd długie ogony w symulacji. Indeks siatki: 0,16 s, wynik identyczny na danych z produkcji. Plik R1, PR do akceptacji Szczepana.
 - 21:35 (Paweł, z agentem R3): **kolor znacznika miejsca znów według grupy rodzaju, nie tematu (cofa część T-151).** 8 kolorów `PLACE_GROUP_COLORS` jak w arkuszu „Naklejka”, biała obwódka w obu motywach; kropka w karcie miejsca też. Legenda pokazuje grupy. Klastry zostają, chipy tematów mają swoje kolory dalej.
