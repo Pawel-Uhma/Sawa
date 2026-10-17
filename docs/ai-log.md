@@ -2986,3 +2986,115 @@
 > +> You:  P
 
 **AI:** Przetworzyłem transkrypt rozmowy z jury (koncept dla przyjezdnych, konkurencja, format podcastu). Nowy plik `docs/spotkania/2026-10-17-wieczor-jury-koncept.md`; dopisałem do `docs/stan.md` otwarte decyzje i ostatnią decyzję. Nie zmieniałem PRD, bo grupa docelowa i format są nierozstrzygnięte. Pominąłem żarty i sprawy prywatne.
+
+### 2026-10-17 12:49 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/stan.md | 2 ++
+>  1 file changed, 2 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/stan.md b/docs/stan.md
+> index f6adacc..04bfe73 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -30,10 +30,12 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+>  | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
+>  | Tryb trasy w MVP: (a) „jak dojadę”, (b) przejażdżka z czasem, (c) start–koniec | zespół | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
+>  | Czat z Sawą w MVP (T-34) czy tylko na prezentacji | zespół | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
+> +| Grupa docelowa (przyjezdni czy mieszkańcy) i format: podcast dwóch głosów czy narracja | zespół (przy PRD) | [spotkania/2026-10-17-wieczor-jury-koncept.md](spotkania/2026-10-17-wieczor-jury-koncept.md) |
+>  | Hook auto-push z rozwiązywaniem konfliktów; wspólna gałąź czy osobne | zespół (przy T-62) | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
+>  
+>  ## Ostatnie decyzje
+>  
+> +- 17.10, wieczór (rozmowa z jury): problem to przyjezdni w Warszawie; konkurencja to aplikacja Warsaw Polish Guide, nie powielamy jej funkcji. [Podsumowanie](spotkania/2026-10-17-wieczor-jury-koncept.md)
+>  - 17.10, wieczór: ekran główny to wariant A (arkusz na mapie, mobile); język: docs po polsku, kod po angielsku; commit podpisuje osoba, nie agent. [Podsumowanie](spotkania/2026-10-17-wieczor-podzial-i-ui.md)
+>  - 17.10: backend na Railway; zostajemy przy darmowej subdomenie Vercela. [05-plan-architektury.md](05-plan-architektury.md)
+>  - 17.10: mapa na Mapbox (styl własny; R3). Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
+> new file: docs/spotkania/2026-10-17-wieczor-jury-koncept.md
+
+
+### 2026-10-17 12:50 · Pawel
+
+> czy jest gdzies w repo instrukcja zeby  claude przy zaczeciu zadania zrobil pull najpierw? wiele osob pracuje na tym samym branchu wiec jest to wazne zeby zminimalizowac konflikty
+
+
+**AI:** Odpowiedziałem na pytanie o `git pull` na starcie sesji. Nic nie zmieniałem w repo. Instrukcja jest tylko w `CLAUDE.md` (sekcja Git), ale hook `session-start.sh` jej nie wykonuje.
+
+### 2026-10-17 12:51 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 43 +++++++++++++++++++++++++++++++++++++++++++
+>  1 file changed, 43 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 512cf6f..664f357 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2986,3 +2986,46 @@
+>  > +> You:  P
+>  
+>  **AI:** Przetworzyłem transkrypt rozmowy z jury (koncept dla przyjezdnych, konkurencja, format podcastu). Nowy plik `docs/spotkania/2026-10-17-wieczor-jury-koncept.md`; dopisałem do `docs/stan.md` otwarte decyzje i ostatnią decyzję. Nie zmieniałem PRD, bo grupa docelowa i format są nierozstrzygnięte. Pominąłem żarty i sprawy prywatne.
+> +
+> +### 2026-10-17 12:49 · Pawel
+> +
+> +> You are a pragmatic engineer about to commit your uncommitted changes.
+> +> 
+> +> If they are NOT worth committing on their own (only whitespace, a stray debug
+> +> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> +> 
+> +> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> +> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> +> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> +> Reply with ONLY the message, or SKIP. Nothing else.
+> +> 
+> +> Changes:
+> +>  docs/stan.md | 2 ++
+> +>  1 file changed, 2 insertions(+)
+> +> ----- patch (truncated) -----
+> +> diff --git a/docs/stan.md b/docs/stan.md
+> +> index f6adacc..04bfe73 100644
+> +> --- a/docs/stan.md
+> +> +++ b/docs/stan.md
+> +> @@ -30,10 +30,12 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+> +>  | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
+> +>  | Tryb trasy w MVP: (a) „jak dojadę”, (b) przejażdżka z czasem, (c) start–koniec | zespół | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
+> +>  | Czat z Sawą w MVP (T-34) czy tylko na prezentacji | zespół | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
+> +> +| Grupa docelowa (przyjezdni czy mieszkańcy) i format: podcast dwóch głosów czy narracja | zespół (przy PRD) | [spotkania/2026-10-17-wieczor-jury-koncept.md](spotkania/2026-10-17-wieczor-jury-koncept.md) |
+> +>  | Hook auto-push z rozwiązywaniem konfliktów; wspólna gałąź czy osobne | zespół (przy T-62) | [spotkania/2026-10-17-wieczor-podzial-i-ui.md](spotkania/2026-10-17-wieczor-podzial-i-ui.md) |
+> +>  
+> +>  ## Ostatnie decyzje
+> +>  
+> +> +- 17.10, wieczór (rozmowa z jury): problem to przyjezdni w Warszawie; konkurencja to aplikacja Warsaw Polish Guide, nie powielamy jej funkcji. [Podsumowanie](spotkania/2026-10-17-wieczor-jury-koncept.md)
+> +>  - 17.10, wieczór: ekran główny to wariant A (arkusz na mapie, mobile); język: docs po polsku, kod po angielsku; commit podpisuje osoba, nie agent. [Podsumowanie](spotkania/2026-10-17-wieczor-podzial-i-ui.md)
+> +>  - 17.10: backend na Railway; zostajemy przy darmowej subdomenie Vercela. [05-plan-architektury.md](05-plan-architektury.md)
+> +>  - 17.10: mapa na Mapbox (styl własny; R3). Token trzymamy poza repo. [05-plan-architektury.md](05-plan-architektury.md)
+> +> new file: docs/spotkania/2026-10-17-wieczor-jury-koncept.md
+> +
+> +
+> +### 2026-10-17 12:50 · Pawel
+> +
+> +> czy jest gdzies w repo instrukcja zeby  claude przy zaczeciu zadania zrobil pull najpierw? wiele osob pracuje na tym samym branchu wiec jest to wazne zeby zminimalizowac konflikty
+> +
+> +
+> +**AI:** Odpowiedziałem na pytanie o `git pull` na starcie sesji. Nic nie zmieniałem w repo. Instrukcja jest tylko w `CLAUDE.md` (sekcja Git), ale hook `session-start.sh` jej nie wykonuje.
+
