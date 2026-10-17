@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { normalizeSpeechText } from "./speech";
+import { createSentenceChunker, normalizeSpeechText } from "./speech";
 
 describe("normalizeSpeechText", () => {
   it("collapses whitespace and line breaks into single spaces", () => {
@@ -12,5 +12,25 @@ describe("normalizeSpeechText", () => {
     expect(normalizeSpeechText("Ja tam wolę Wisłę… w Bałtyku jest za zimno.")).toBe(
       "Ja tam wolę Wisłę… w Bałtyku jest za zimno.",
     );
+  });
+});
+
+describe("createSentenceChunker", () => {
+  const first = "Bowie podobno wysiadł tu z pociągu na spacer. ";
+  const rest = "Kupił płytę zespołu Śląsk i wrócił do Berlina. Rok później nagrał utwór Warszawa. ";
+
+  it("cuts whole sentences only, the first one early and later ones longer", () => {
+    const chunker = createSentenceChunker();
+    const chunks: string[] = [];
+    for (const ch of `${first}${rest}Koniec`) chunks.push(...chunker.push(ch));
+    expect(chunks).toEqual([first.trim()]);
+    expect(chunker.flush()).toBe(`${rest}Koniec`.trim());
+  });
+
+  it("strips markdown and returns null when nothing is left", () => {
+    const chunker = createSentenceChunker();
+    expect(chunker.push("**Krótko**")).toEqual([]);
+    expect(chunker.flush()).toBe("Krótko");
+    expect(chunker.flush()).toBeNull();
   });
 });

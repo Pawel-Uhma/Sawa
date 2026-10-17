@@ -42,4 +42,32 @@ describe("createElevenLabsSynthesizer", () => {
     });
     await expect(synth.synthesize("Cześć")).rejects.toMatchObject({ code: "UPSTREAM_TIMEOUT" });
   });
+
+  it("streams mp3 from the /stream endpoint with what was said before", async () => {
+    const fetchMock = vi.fn(
+      async () =>
+        new Response(
+          new ReadableStream({
+            start(c) {
+              c.enqueue(new Uint8Array([1, 2]));
+              c.enqueue(new Uint8Array([3]));
+              c.close();
+            },
+          }),
+        ),
+    );
+    vi.stubGlobal("fetch", fetchMock);
+
+    const parts: number[][] = [];
+    for await (const b of synth.stream?.("Dalej.", { previousText: "Najpierw." }) ?? []) {
+      parts.push([...b]);
+    }
+    expect(parts.flat()).toEqual([1, 2, 3]);
+    const [url, init] = fetchMock.mock.calls[0] as unknown as [string, RequestInit];
+    expect(url).toContain("/stream?");
+    expect(JSON.parse(init.body as string)).toMatchObject({
+      text: "Dalej.",
+      previous_text: "Najpierw.",
+    });
+  });
 });
