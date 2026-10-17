@@ -2,26 +2,43 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useId, useRef, useState } from "react";
+import { useT } from "@/features/i18n";
 import { haptic, SPRING } from "../lib/device";
-import { FAMILIARITY, type Profile, STORY_STYLES } from "../lib/onboarding";
+import { AUDIENCES, FAMILIARITY, type Profile, STORY_STYLES } from "../lib/onboarding";
 import { PrimaryButton } from "./primary-button";
 import { ChoiceList, InterestPicker } from "./profile-choices";
 
 // Edycja jednego pola profilu z menu albo z panelu tras. Modal nie uruchamia onboardingu:
 // zmienia tylko wskazane pole i zapisuje je, a reszta profilu zostaje taka, jaka była.
 
-export type ProfileStep = "familiarity" | "interests" | "style";
+export type ProfileStep = "familiarity" | "interests" | "style" | "audience";
 
 const TITLES: Record<ProfileStep, string> = {
   interests: "Zainteresowania",
   familiarity: "Znajomość miasta",
   style: "Styl opowieści",
+  audience: "Kto słucha",
 };
 
 const HINTS: Record<ProfileStep, string> = {
   interests: "Od tego zależy, które miejsca wybiorę i o czym opowiem.",
   familiarity: "Od tego zależy, czy na trasie będą znane miejsca, czy mniej oczywiste.",
   style: "Jak długo i z jakim szczegółem opowiadam.",
+  audience: "Dziecku opowiadam prościej i krócej, a o wojnie delikatnie.",
+};
+
+const TITLES_EN: Record<ProfileStep, string> = {
+  interests: "Interests",
+  familiarity: "Knowing the city",
+  style: "Story style",
+  audience: "Who's listening",
+};
+
+const HINTS_EN: Record<ProfileStep, string> = {
+  interests: "This decides which places I pick and what I talk about.",
+  familiarity: "This decides whether your route has famous places or less obvious ones.",
+  style: "How long and how detailed my stories are.",
+  audience: "For a child I keep it simpler and shorter, and gentle about the war.",
 };
 
 type ProfileModalProps = {
@@ -46,6 +63,8 @@ type ProfileDialogProps = Required<Omit<ProfileModalProps, "step">> & { step: Pr
 
 function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
   const reduce = useReducedMotion();
+  const t = useT();
+  const titles = t(TITLES, TITLES_EN);
   const titleId = useId();
   const panelRef = useRef<HTMLDivElement>(null);
   // Zmiany trzymamy w szkicu, dopiero „Zapisz” wpisuje je do profilu. Anulowanie niczego nie rusza.
@@ -72,7 +91,7 @@ function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
     }));
   }
 
-  function pick(field: "familiarity" | "storyStyle", key: string) {
+  function pick(field: "familiarity" | "storyStyle" | "audience", key: string) {
     haptic();
     setDraft((current) => ({ ...current, [field]: key }));
   }
@@ -115,14 +134,16 @@ function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
               id={titleId}
               className="text-[22px] font-extrabold leading-tight tracking-[-0.02em]"
             >
-              {TITLES[step]}
+              {titles[step]}
             </h2>
-            <p className="mt-1 text-[14px] leading-relaxed text-tekst-2">{HINTS[step]}</p>
+            <p className="mt-1 text-[14px] leading-relaxed text-tekst-2">
+              {t(HINTS, HINTS_EN)[step]}
+            </p>
           </div>
           <button
             type="button"
             onClick={onClose}
-            aria-label="Zamknij"
+            aria-label={t("Zamknij", "Close")}
             className="-mr-2 -mt-1 flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-tlo-2 active:scale-90"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -142,7 +163,7 @@ function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
           )}
           {step === "familiarity" && (
             <ChoiceList
-              label={TITLES.familiarity}
+              label={titles.familiarity}
               options={FAMILIARITY}
               value={draft.familiarity}
               onPick={(key) => pick("familiarity", key)}
@@ -150,16 +171,24 @@ function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
           )}
           {step === "style" && (
             <ChoiceList
-              label={TITLES.style}
+              label={titles.style}
               options={STORY_STYLES}
               value={draft.storyStyle}
               onPick={(key) => pick("storyStyle", key)}
             />
           )}
+          {step === "audience" && (
+            <ChoiceList
+              label={titles.audience}
+              options={AUDIENCES}
+              value={draft.audience}
+              onPick={(key) => pick("audience", key)}
+            />
+          )}
         </div>
 
         <PrimaryButton onClick={save} disabled={!canSave}>
-          {canSave ? "Zapisz" : "Wybierz co najmniej jedno"}
+          {canSave ? t("Zapisz", "Save") : t("Wybierz co najmniej jedno", "Pick at least one")}
         </PrimaryButton>
       </motion.div>
     </div>

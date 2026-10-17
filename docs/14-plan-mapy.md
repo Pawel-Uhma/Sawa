@@ -48,6 +48,7 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 - Mapa bierze motyw z `useTheme()`: podkład `BASEMAP_STYLE_URLS[theme]` (OpenFreeMap `positron` / `dark`) i kolory własnych warstw z `MAP_PALETTES[theme]` (obwódki, numery miejsc trasy, podpisy, dojścia, krycie przygaszonych miejsc). Kolory linii trasy zostają te same, w ciemnym motywie mają jasną obwódkę.
 - Tokeny z `globals.css` ciemnieją wewnątrz `.motyw`. Od T-120 ta klasa jest na `<body>`, więc ciemna jest cała aplikacja, nie tylko mapa.
 - Woda: podkłady rysują rzeki na szaro, więc `useBasemapOverrides` po każdym załadowaniu stylu przemalowuje warstwy `water`, `waterway` i podpisy wody na niebiesko (`waterPaintOverrides`, kolory `water` i `waterLabel` w `MapPalette`).
+- Ulice: w ciemnym podkładzie małe ulice miały `#181818` na tle `#0c0c0c`, a w jasnym szarość 88% na 95%, więc ledwo je było widać. `roadPaintOverrides` przemalowuje warstwy `highway_*` i podpisy ulic kolorami z `MapPalette.roads`: w ciemnym ulice jaśniejsze od tła, a większe jaśniejsze od mniejszych, w jasnym boczne ulice ciemniejsze od tła. Obie listy nadpisań składa `basemapPaintOverrides`.
 - Ciemny styl OpenFreeMap loguje „Image wood-pattern could not be loaded” (brak obrazka w sprite). To ostrzeżenie, mapa działa.
 
 ## 3. Przepływ danych

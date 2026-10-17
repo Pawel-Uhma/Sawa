@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* dark: idzie za wyborem motywu w aplikacji (<html data-theme>, features/theme), nie tylko za systemem */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
 @theme inline {
   --color-glebia: var(--glebia);
@@ -116,6 +119,20 @@ button {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
+}
+
+/* Kolor tematu (T-119): te same barwy co obwódki miejsc na mapie. Wartości dla obu motywów są w
+   features/map/lib/map-style.ts (TOPIC_COLORS), element dostaje je przez topicStyle() i klasę temat. */
+.temat {
+  --temat: var(--temat-jasny);
+  --temat-tlo: var(--temat-tlo-jasny);
+  --temat-na: var(--temat-na-jasny);
+}
+
+:root[data-theme="dark"] .motyw .temat {
+  --temat: var(--temat-ciemny);
+  --temat-tlo: var(--temat-tlo-ciemny);
+  --temat-na: var(--temat-na-ciemny);
 }
 
 /* Gruby materiał: karty i panele (większa powierzchnia = mocniejsze rozmycie i cień) */
@@ -347,6 +364,40 @@ input[type="range"].suwak:focus-visible {
   outline: 2px solid var(--glebia);
   outline-offset: 4px;
   border-radius: 999px;
+}
+
+/* Suwak odtwarzacza: cienki tor i mały kciuk, który rośnie pod palcem (jak w Podcastach) */
+input[type="range"].suwak.suwak-cienki::-webkit-slider-runnable-track {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--glebia) var(--postep, 0%),
+    color-mix(in srgb, var(--tekst) 12%, transparent) var(--postep, 0%)
+  );
+}
+
+input[type="range"].suwak.suwak-cienki::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+}
+
+input[type="range"].suwak.suwak-cienki:active::-webkit-slider-thumb {
+  transform: scale(1.3);
+}
+
+input[type="range"].suwak.suwak-cienki::-moz-range-track {
+  height: 4px;
+  background: color-mix(in srgb, var(--tekst) 12%, transparent);
+}
+
+input[type="range"].suwak.suwak-cienki::-moz-range-progress {
+  height: 4px;
+}
+
+input[type="range"].suwak.suwak-cienki::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
 }
 
 @media (prefers-reduced-motion: reduce) {

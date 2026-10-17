@@ -1,0 +1,483 @@
+[
+  {
+    "id": "synagoga-synaj-adas-jeszurun-swietojerska-21",
+    "nazwa": "Synagoga Synaj (Adas Jeszurun)",
+    "name_en": "Synaj (Adas Jeszurun) Synagogue",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętojerska 21",
+    "adres_historyczny": "ul. Świętojerska 21",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "około 1898–1942?",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga przy ul. Świętojerskiej 21 (nr hip. 1782) i Długiej 2 (Pasaż Simonsa, nr hip. 560 b (?)) funkcjonowała w latach 1898–1942?.",
+      "W 1898 r. „Izraelita” ogłosił otwarcie „Nowej Synagogi” przy ul. Świętojerskiej 21; pierwsze nabożeństwo zapowiedziano na piątek 14/16 (w wigilię Rosz ha-Szana).",
+      "Synagoga była znana jako synagoga muzyków; miała doskonałych kantorów i chór.",
+      "W 1899 r. „Izraelita” opisał mniejszą synagogę w wynajętym lokalu: kilkaset miejsc, almemor na środku, galerie dla kobiet, komitet z A. Glassem na czele.",
+      "W 1903 r. „Izraelita” wymienił „Adas Jeszurun” na Nalewkach wśród nielicznych nowych większych synagóg zachowawczych.",
+      "W 1907 r. powstał komitet budowy synagogi Adas Jeszurun.",
+      "Zdjęcie chóru synagogi z 1905 r. znajduje się w zbiorach nowojorskiego YIVO."
+    ],
+    "ciekawostki": [
+      "Działka przy Świętojerskiej 21 leżała dość blisko Nalewek, dlatego synagogę wiązano z tą ulicą.",
+      "Synagoga w ogłoszeniu z 1898 r. została opisana jako urządzona według wszelkich wymagań nowoczesnych, z uwzględnieniem sfery inteligentnej-zachowawczej."
+    ],
+    "summary_en": "The Adas Jeszurun (Synaj) synagogue at 21 Świętojerska Street opened in 1898 and was known as the musicians' synagogue, with a choir and notable cantors. It was listed as operating until about 1942.",
+    "ludzie": [
+      {"kto": "A. Glass", "rola": "przewodniczący komitetu synagogi (1899)", "wiki": null},
+      {"kto": "Efraim Rotensztejn, Siemion (Szymon) Lewin, Beniamin Rikwert", "rola": "członkowie komitetu budowy synagogi z 1907 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Synagoga Synaj", "Długa 2 (Pasaż Simonsa)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Synaj Adas Jeszurun w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89652-synagoga-synaj-adas-jeszurun-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Numer 21 vs 23 (w jednym z ogłoszeń) - tekst sam zaznacza pomyłkę. Daty z pytajnikami. Tekst w paczce urwany na liście członków komitetu z 1912 r. Adres przedwojenny, w oba pola."
+  },
+  {
+    "id": "kamien-pamieci-zlota-62",
+    "nazwa": "Kamienie pamięci: ul. Złota 62",
+    "name_en": "Stolpersteine at 62 Złota Street",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Złota 62",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2023–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienie pamięci za Katarzynę z Kabaków Zylberberg (1887–1941), Marię z Kabaków Wygodzką (1891–1942) i Zofię Kabak (1896–1942).",
+      "Zamordowane w getcie warszawskim w 1941 i 1942 roku.",
+      "Uroczystość odsłonięcia kamieni odbyła się 23.07.2023 roku.",
+      "Katarzyna Zylberberg była nauczycielką historii i dyrektorką Gimnazjum Cecylii Brojdo działającego przy ul. Dzielnej 20."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolpersteine for three women murdered in the Warsaw Ghetto in 1941–1942, laid at 62 Złota Street in July 2023.",
+    "ludzie": [
+      {"kto": "Katarzyna z Kabaków Zylberberg (1887–1941)", "rola": "nauczycielka historii, dyrektorka Gimnazjum Cecylii Brojdo", "wiki": null},
+      {"kto": "Maria z Kabaków Wygodzka (1891–1942)", "rola": "nauczycielka biologii w Szkole Towarzystwa Zjednoczenia Nauczycieli przy ul. Rymarskiej", "wiki": null},
+      {"kto": "Zofia Kabak (1896–1942)", "rola": "filolożka klasyczna, nauczycielka", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord z listy adresów w artykule (stan na sierpień 2026). Brak współrzędnych."
+  },
+  {
+    "id": "kamien-pamieci-freta-27",
+    "nazwa": "Kamienie pamięci: ul. Freta 27",
+    "name_en": "Stolpersteine at 27 Freta Street",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta 27",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2024–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienie pamięci za Sonię Berliner z d. Barab (ur. 1905), Heńka Berlinera (ur. 1905), Hanię Berliner (ur. 1934) i Mirę Berliner (ur. 1934).",
+      "Zginęli w getcie warszawskim.",
+      "Uroczystość odsłonięcia kamieni odbyła się 15.09.2024 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolpersteine for a family of four who died in the Warsaw Ghetto, laid at 27 Freta Street in September 2024.",
+    "ludzie": [
+      {"kto": "Sonia Berliner z d. Barab (ur. 1905)", "rola": "upamiętniona osoba, zginęła w getcie", "wiki": null},
+      {"kto": "Heniek Berliner (ur. 1905)", "rola": "upamiętniona osoba, zginął w getcie", "wiki": null},
+      {"kto": "Hania Berliner (ur. 1934)", "rola": "upamiętniona osoba, zginęła w getcie", "wiki": null},
+      {"kto": "Mira Berliner (ur. 1934)", "rola": "upamiętniona osoba, zginęła w getcie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord z listy adresów w artykule. Brak współrzędnych."
+  },
+  {
+    "id": "kamien-pamieci-niska-7-9",
+    "nazwa": "Kamienie pamięci: ul. Niska 7/9",
+    "name_en": "Stolpersteine at 7/9 Niska Street",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Niska 7/9",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2024–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienie pamięci za Salę Frydman z domu Baranowicz (ur. 1892) i Wolfa Frydmana (ur. 1889), właściciela sklepiku przy ul. Miodowej w Warszawie.",
+      "Uroczystość odsłonięcia kamieni odbyła się 26.10.2024 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolpersteine for Sala and Wolf Frydman, laid at 7/9 Niska Street in October 2024. Wolf owned a small shop on Miodowa Street.",
+    "ludzie": [
+      {"kto": "Sala Frydman z d. Baranowicz (ur. 1892)", "rola": "upamiętniona osoba", "wiki": null},
+      {"kto": "Wolf Frydman (ur. 1889)", "rola": "właściciel sklepiku przy ul. Miodowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord z listy adresów w artykule. Brak współrzędnych."
+  },
+  {
+    "id": "kamien-pamieci-duboisa",
+    "nazwa": "Kamienie pamięci: ul. Duboisa",
+    "name_en": "Stolpersteine on Duboisa Street",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Duboisa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2024–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienie pamięci za Brandil Glezer z d. Szeinfarb (ur. 1895) i Chaima Glezera (ur. 1888), krawca.",
+      "Kamienie leżą między kopcem Anielewicza a przejściem między blokami nr 8 i 10.",
+      "Uroczystość odsłonięcia kamieni odbyła się 26.10.2024 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolpersteine for Brandil and Chaim Glezer, laid on Duboisa Street between the Anielewicz mound and the passage between blocks 8 and 10 in October 2024.",
+    "ludzie": [
+      {"kto": "Brandil Glezer z d. Szeinfarb (ur. 1895)", "rola": "upamiętniona osoba", "wiki": null},
+      {"kto": "Chaim Glezer (ur. 1888)", "rola": "krawiec, upamiętniony", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord z listy adresów w artykule. Brak numeru; lokalizacja opisana słownie. Brak współrzędnych."
+  },
+  {
+    "id": "kamien-pamieci-plac-zelaznej-bramy",
+    "nazwa": "Kamienie pamięci: Plac Żelaznej Bramy",
+    "name_en": "Stolpersteine at Żelazna Brama Square",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Plac Żelaznej Bramy",
+    "adres_historyczny": "ul. Graniczna",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2025–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienie pamięci za Stefanię Mandel z d. Warszawską (ur. 5.02.1891 w Warszawie), bratanicę Adolfa Warskiego, która studiowała prawo w Paryżu.",
+      "Kamienie pamięci za Karola Mandla (ur. 27.05.1885 w Nowym Targu), który ukończył prawo na UJ i był adwokatem i radcą prawnym.",
+      "Uroczystość odsłonięcia kamieni odbyła się 20 sierpnia 2025 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolpersteine for Stefania and Karol Mandel, laid on Żelazna Brama Square, the former Graniczna Street, in August 2025.",
+    "ludzie": [
+      {"kto": "Stefania Mandel z d. Warszawska (ur. 1891)", "rola": "upamiętniona osoba, studiowała prawo w Paryżu", "wiki": null},
+      {"kto": "Karol Mandel (ur. 1885)", "rola": "adwokat i radca prawny, upamiętniony", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Graniczna"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam dawny adres (ul. Graniczna) co Synagoga Nowakowskiego w tej paczce. Adres bez numeru."
+  },
+  {
+    "id": "kamien-pamieci-krolewska-45",
+    "nazwa": "Kamień pamięci: ul. Królewska 45",
+    "name_en": "Stolperstein at 45 Królewska Street",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Królewska 45",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2025–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień pamięci za Artura Marguliesa (ur. 1883), prawnika i uczestnika ruchu oporu, rozstrzelanego w Palmirach w 1940 roku.",
+      "Uroczystość odsłonięcia kamieni odbyła się 20 sierpnia 2025 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolperstein for Artur Margulies, a lawyer and resistance member shot at Palmiry in 1940, laid at 45 Królewska Street in August 2025.",
+    "ludzie": [
+      {"kto": "Artur Margulies (ur. 1883)", "rola": "prawnik, uczestnik ruchu oporu, rozstrzelany w Palmirach w 1940 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord z listy adresów w artykule. Brak współrzędnych."
+  },
+  {
+    "id": "kamien-pamieci-swietojerska-18",
+    "nazwa": "Kamień pamięci: ul. Świętojerska 18",
+    "name_en": "Stolperstein at 18 Świętojerska Street",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętojerska 18",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2025–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień pamięci za Stefanię Szwajgier z d. Hercberg (ur. 1890), dyrektorkę gimnazjum dla dziewcząt z językiem hebrajskim (Jehudyjah) w Warszawie przy ul. Długiej 55.",
+      "W getcie prowadziła kuchnię dla sierot na Smoczej w ramach Centosu.",
+      "Podczas Wielkiej Akcji Likwidacyjnej, 29.07.1942 r., została wywieziona do obozu zagłady w Treblince.",
+      "Uroczystość odsłonięcia kamieni odbyła się 14 września 2025 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolperstein for Stefania Szwajgier, a director of a Hebrew-language girls' gymnasium, laid at 18 Świętojerska Street in September 2025. She was deported to Treblinka in July 1942.",
+    "ludzie": [
+      {"kto": "Stefania Szwajgier z d. Hercberg (ur. 1890)", "rola": "dyrektorka gimnazjum dla dziewcząt (Jehudyjah), przy ul. Długiej 55; prowadziła kuchnię dla sierot w getcie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord z listy adresów w artykule. Brak współrzędnych."
+  },
+  {
+    "id": "kamien-pamieci-szpitalna-5",
+    "nazwa": "Kamienie pamięci: ul. Szpitalna 5",
+    "name_en": "Stolpersteine at 5 Szpitalna Street",
+    "typ": "tablica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Szpitalna 5",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2025–2026",
+    "istnieje": true,
+    "fakty": [
+      "Kamień pamięci za Annę Braude-Heller (1888–1943), lekarkę pediatrę i doktor nauk medycznych, która zginęła w 1943 r. w getcie.",
+      "Od 1930 r. kierowała Szpitalem Dziecięcym im. Bersohnów i Baumanów jako lekarka naczelna.",
+      "W czasie okupacji pozostała w szpitalu w warszawskim getcie, kierując placówką i organizując tajne nauczanie.",
+      "Pośmiertnie odznaczona Orderem Virtuti Militari.",
+      "Uroczystość odsłonięcia kamienia Anny Braude-Heller odbyła się 16 listopada 2025 roku.",
+      "Kamienie pamięci za Różę Sarę Aftergut z d. Braude i Stefanię „Steffi” Aftergut; uroczystość odsłonięcia odbyła się 26 września 2026 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stolpersteine for paediatrician Anna Braude-Heller, who ran the Bersohn and Baumann Children's Hospital from 1930 and stayed with patients in the ghetto, and for Róża Sara and Stefania Aftergut.",
+    "ludzie": [
+      {"kto": "Anna Braude-Heller (1888–1943)", "rola": "lekarka pediatra, doktor nauk medycznych, dyrektorka Szpitala Dziecięcego im. Bersohnów i Baumanów; zginęła w getcie", "wiki": null},
+      {"kto": "Róża Sara Aftergut z d. Braude", "rola": "upamiętniona osoba", "wiki": null},
+      {"kto": "Stefania „Steffi” Aftergut", "rola": "upamiętniona osoba", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kamienie pamięci (Stolpersteine) w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/197606-kamienie-pamieci-stolpersteine-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord z listy adresów w artykule. Okres z dat odsłonięć (2025–2026). Brak współrzędnych."
+  },
+  {
+    "id": "gesiowka-ul-gesia-22",
+    "nazwa": "Gęsiówka (areszt i obóz pracy)",
+    "name_en": "Gęsiówka (ghetto detention centre and labour camp)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Anielewicza",
+    "adres_historyczny": "ul. Gęsia 22",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1941–1944",
+    "istnieje": null,
+    "fakty": [
+      "Latem 1941 r. w dawnym więzieniu wojskowym przy ul. Gęsiej 22 Niemcy utworzyli centralny areszt getta, zwany „Gęsiówką”.",
+      "Areszt formalnie podporządkowany był warszawskiemu Judenratowi; jego kierownikiem był Leopold Lindenfeld, a oddziałem kobiecym administrowała Sylwia Huriwczowa.",
+      "Na początku areszt mieścił się w jednym budynku przy ul. Gęsiej 24; później obejmował kilka budynków między ulicami Zamenhofa, Gęsią (ob. ul. M. Anielewicza) i Lubeckiego.",
+      "W listopadzie i grudniu 1941 r. na terenie aresztu rozstrzelano ponad 20 osób.",
+      "Areszt centralny oficjalnie zlikwidowano 19 kwietnia 1943 r.",
+      "Na początku powstania warszawskiego, 5 sierpnia 1944 r., żołnierze kompanii AK „Giewont” z batalionu „Zośka” opanowali obóz i uwolnili 348 więźniów."
+    ],
+    "ciekawostki": [
+      "Ludwik Hirszfeld pisał, że więzienie przeznaczone przed wojną na 200–300 osób mieściło wtedy tysiąc dwieście."
+    ],
+    "summary_en": "Gęsiówka was a prison and labour camp on Gęsia Street in the Warsaw Ghetto area, set up in summer 1941. It was emptied during the Great Deportation, and after the camp was taken on 5 August 1944 by an AK unit, 348 prisoners were freed.",
+    "ludzie": [
+      {"kto": "Leopold Lindenfeld", "rola": "kierownik aresztu", "wiki": null},
+      {"kto": "Sylwia Huriwczowa", "rola": "administrowała oddziałem kobiecym", "wiki": null},
+      {"kto": "Ludwik Hirszfeld", "rola": "autor wspomnień, przewodniczący Rady Zdrowia", "wiki": null},
+      {"kto": "Henryk Lederman, Dawid Goldman „Gutek”", "rola": "uwolnieni więźniowie, przyłączyli się do powstańców", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Gęsia 24 (początkowa siedziba aresztu)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Gęsiówka – areszt i obóz pracy w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52122-gesiowka-areszt-i-oboz-pracy-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres: tekst podaje tylko nazwę 'ob. ul. M. Anielewicza' bez numeru. Artykuł o samym areszcie; w tekście też KL Warschau na Gęsiej (1943–1944). Tekst urwany w przypisach."
+  },
+  {
+    "id": "szkola-religijna-nowolipki-42",
+    "nazwa": "Szkoła religijna przy ul. Nowolipki 42",
+    "name_en": "Religious school at 42 Nowolipki Street",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowolipki 42",
+    "adres_historyczny": "ul. Nowolipki 42",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Nowolipki 42 funkcjonowała trzyklasowa męska szkoła religijna z językami nauczania polskim, hebrajskim i jidysz.",
+      "Szkoła posiadała trzy sale lekcyjne (wynajem, 42 m kw.), 7 nauczycieli i 111 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In the 1930/1931 school year a three-class Jewish religious boys' school operated at 42 Nowolipki Street, with 111 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Nowolipki 42 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139069-szkola-religijna-przy-ul-nowolipki-42-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko adres z 1930/31 r. (w oba pola). Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "dom-modlitwy-gesia-45",
+    "nazwa": "Dom modlitwy przy ul. Gęsiej 45",
+    "name_en": "Prayer house at 45 Gęsia Street",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Gęsia 45",
+    "adres_historyczny": "ul. Gęsia 45",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "?–1942?",
+    "istnieje": false,
+    "fakty": [
+      "Dom modlitwy przy ul. Gęsiej 45 (nr hip. 2294 b) funkcjonował w okresie ?–1942?.",
+      "Pod tym adresem nie znajduje się dom modlitwy w żadnym ze spisów.",
+      "Na zdjęciu z 1940 r. („mały punkt przesiedleńczy”) widać niewielką salę, w której pomieszczono przesiedleńców z Konstantynowa oraz bezdomnych z innych dzielnic Warszawy."
+    ],
+    "ciekawostki": [
+      "Szafa widoczna na zdjęciu pełniła zapewne funkcję arki."
+    ],
+    "summary_en": "A small room at 45 Gęsia Street, recorded as a house of prayer, was used in 1940 as a transit point for resettled people and the homeless. It is not listed in the prayer-house censuses.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Gęsiej 45 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89651-dom-modlitwy-przy-ul-gesiej-45-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tylko adres przedwojenny, w oba pola. Daty z pytajnikami. Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "talmud-tora-iv-mila-63",
+    "nazwa": "Talmud-Tora IV Gminy Wyznaniowej Żydowskiej",
+    "name_en": "Talmud Torah IV of the Jewish Religious Community",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miła 63",
+    "adres_historyczny": "ul. Miła 63",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Miłej 63 funkcjonowała czteroklasowa męska szkoła religijna Gminy Wyznaniowej Żydowskiej, z językami nauczania polskim i jidysz.",
+      "Szkoła posiadała 7 sal lekcyjnych we własnym obiekcie (łącznie 294 m kw.), 14 nauczycieli i 331 uczniów."
+    ],
+    "ciekawostki": [
+      "Z pewnością była to jedna z największych tego typu placówek w Warszawie."
+    ],
+    "summary_en": "In the 1930/1931 school year the Jewish Religious Community's four-class boys' Talmud Torah at 63 Miła Street had 331 pupils and 14 teachers in its own building.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Talmud-Tora Gminy Wyznaniowej Żydowskiej w Warszawie IV", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138998-talmud-tora-gminy-wyznaniowej-zydowskiej-w-warszawie-iv"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko adres z 1930/31 r. (w oba pola). Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "pomnik-zegoty-zamenhofa",
+    "nazwa": "Pomnik Żegoty",
+    "name_en": "Żegota Monument",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skwer u zbiegu ul. Anielewicza i ul. Zamenhofa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1995–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik Żegoty stoi na skwerze u zbiegu ulic Anielewicza i Zamenhofa, w pobliżu pomnika Bohaterów Getta.",
+      "Upamiętnia działalność Rady Pomocy Żydom „Żegota”.",
+      "Pomnik zaprojektowali Hanna Szmalenberg (architektura) i Marek Moderau (rzeźba); wzniesiono go dzięki funduszom amerykańskiej Polonii.",
+      "Ma formę pochylonego, kamiennego bloku z napisem w trzech językach: „Żegota 1942–1945 – organizacja utworzona przez Polskie Państwo Podziemne dla ratowania Żydów w czasie Holokaustu”.",
+      "Pomnik odsłonięto 27 listopada 1995 r.; zrobił to ostatni żyjący członek „Żegoty”, Władysław Bartoszewski."
+    ],
+    "ciekawostki": [
+      "Napis podaje, że Żegota była jedyną spośród podobnych organizacji w okupowanej Europie finansowaną przez swój rząd, rząd RP na uchodźstwie."
+    ],
+    "summary_en": "The Żegota Monument, unveiled on 27 November 1995, stands on a small square at Anielewicz and Zamenhof streets near the Ghetto Heroes Monument. It commemorates the Council for Aid to Jews, the Polish underground organisation.",
+    "ludzie": [
+      {"kto": "Hanna Szmalenberg", "rola": "architektka pomnika", "wiki": null},
+      {"kto": "Marek Moderau", "rola": "rzeźbiarz pomnika", "wiki": null},
+      {"kto": "Władysław Bartoszewski", "rola": "odsłonił pomnik, ostatni żyjący członek Żegoty", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Pomnik Żegoty w Warszawie (ul. Zamenhofa)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52023-pomnik-zegoty-w-warszawie-ul-zamenhofa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres opisowy (skwer), bez numeru. Dzielnica z położenia ulicy, nie z tekstu."
+  },
+  {
+    "id": "szkola-powszechna-dory-fejgin-lurie-marianska-6",
+    "nazwa": "Szkoła powszechna Dory Fejgin-Lurie",
+    "name_en": "Dora Feigin-Lurie primary school",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mariańska 6",
+    "adres_historyczny": "ul. Mariańska 6",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Mariańskiej 6 funkcjonowała prywatna sześcioklasowa męska szkoła powszechna z językiem polskim i nauczanym hebrajskim.",
+      "Szkoła posiadała 4 sale lekcyjne (210 m kw., wynajęte), 10 nauczycieli i 119 uczniów.",
+      "Właścicielką szkoły była Dora Fejgin-Lurie (Luriowa)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In the 1930/1931 school year a private six-grade boys' primary school owned by Dora Fejgin-Lurie operated at 6 Mariańska Street, with 119 pupils.",
+    "ludzie": [
+      {"kto": "Dora Fejgin-Lurie (Luriowa)", "rola": "właścicielka szkoły", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna Dory Fejgin-Lurie w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/138986-szkola-powszechna-dory-fejgin-lurie-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tylko adres z 1930/31 r. (w oba pola). Dzielnica z położenia ulicy, nie z tekstu."
+  }
+]

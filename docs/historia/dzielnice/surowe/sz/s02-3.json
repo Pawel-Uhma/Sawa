@@ -1,0 +1,96 @@
+[
+  {
+    "id": "synagoga-plac-muranowski-16",
+    "nazwa": "Synagoga na Placu Muranowskim 16",
+    "name_en": "Synagogue at 16 Plac Muranowski",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Plac Muranowski 16",
+    "adres_historyczny": "Plac Muranowski 16 (nr hip. 2191 b)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1826(?)–1943(?)",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga znajdowała się przy Placu Muranowskim 16 (nr hip. 2191 b); funkcjonowała przed 1826 r.(?), przed 1869 r.(?) – 1943 r.(?).",
+      "Dom modlitwy pod tym adresem występuje w spisie z 1869 r.; w dwóch wcześniejszych spisach również wzmiankowano bóżnice.",
+      "Działka stanowiła część dawnego pałacu Murano, a w wielu pałacach po trzecim rozbiorze zakładano domy modlitwy.",
+      "W spisie z 1926 r. pod tym adresem wymieniono dwa obiekty.",
+      "Na zdjęciach z 1940 r. widać bardzo skromne wnętrze: ściany wyłożone drewnianą boazerią do ok. 1,5 m, drążek od parochetu, na którym suszy się bielizna, oraz podarte ogłoszenie o zagrożeniu tyfusem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A synagogue stood at 16 Plac Muranowski on a plot that was once part of the Murano palace. It is recorded in censuses from 1869 and 1926, and photographs from 1940 show a very modest prayer room.",
+    "ludzie": [],
+    "dawne_nazwy": ["część dawnego pałacu Murano (działka)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga na Placu Muranowskim w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89579-synagoga-na-placu-muranowskim-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Daty w tekście z pytajnikami. Tekst podaje adres przedwojenny (nr hip. 2191 b), wpisany w oba pola. Dzielnica (Muranów) przypisana z adresu. Brak współrzędnych."
+  },
+  {
+    "id": "dom-modlitwy-lucka-25",
+    "nazwa": "Dom modlitwy przy ul. Łuckiej 25",
+    "name_en": "Prayer House at 25 Łucka Street",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łucka 25",
+    "adres_historyczny": "Łucka 25 (nr hip. 1172)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po I wojnie światowej(?)–1940(?)",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga mieściła się przy ul. Łuckiej 25 (nr hip. 1172); dom modlitwy pod tym adresem znajduje się tylko w spisie z 1926 r.",
+      "W 1940 r. umieszczono tu przesiedleńców z Raciąża i Kalisza.",
+      "Na zdjęciach z tego okresu widać przede wszystkim warunki bytowania ludzi; jedynie dekoracja stropu świadczy o dawnym przeznaczeniu sali."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A prayer house at 25 Łucka Street is known only from a 1926 census. In 1940 the building housed resettled families from Raciąż and Kalisz, and only the ceiling decoration hints at its earlier use.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Łuckiej 25 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89584-dom-modlitwy-przy-ul-luckiej-25-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Daty w tekście z pytajnikami. Tekst podaje adres przedwojenny, wpisany w oba pola. Dzielnica przypisana z adresu, do sprawdzenia. Brak współrzędnych."
+  },
+  {
+    "id": "szpital-starozakonnych-na-czystem-kasprzaka-17",
+    "nazwa": "Szpital Starozakonnych na Czystem (Dworska 17, ob. Kasprzaka 17)",
+    "name_en": "Jewish Hospital on Czyste (17 Dworska, now 17 Kasprzaka Street)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Kasprzaka 17",
+    "adres_historyczny": "Dworska 17",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1902–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szpital żydowski przy ul. Dworskiej 17 (ob. Kasprzaka 17) na Czystem powstał w 1902 r. według projektu Artura Goebla.",
+      "Inicjatorami budowy i organizatorami zbiórki funduszów była rodzina Natansonów; dużą rolę odegrał Ludwik Natanson (1821–1896), doktor medycyny, prezes Warszawskiego Towarzystwa Lekarskiego i warszawskiej gminy żydowskiej.",
+      "Przy budowie współpracował architekt Naum Hornstein, znany jako projektant zachowanej do dziś mykwy na Pradze.",
+      "Na początku XX w. był to najnowocześniejszy szpital w Warszawie; po raz pierwszy na ziemiach polskich zastosowano centralne ogrzewanie parowe niskiego ciśnienia.",
+      "W 1912 r. szpital miał 450 łóżek na oddziałach chorób wewnętrznych, chirurgicznym i ginekologicznym oraz 100 łóżek na oddziale dla umysłowo chorych.",
+      "Przed wybuchem II wojny światowej w szpitalu było 1500 łóżek; opiekowało się nimi 147 lekarzy, 119 pielęgniarek i 6 farmaceutów.",
+      "Obecnie w budynku dawnego szpitala żydowskiego mieści się Szpital Wolski; budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Jewish hospital on Czyste, at Dworska 17 (today Kasprzaka 17), was designed by Artur Goebel and opened in 1902. Funded by the Natanson family, it was one of the most modern hospitals in Warsaw, and it now houses the Wola Hospital.",
+    "ludzie": [
+      {"kto": "Artur Goebel", "rola": "architekt, autor projektu szpitala (1902)", "wiki": null},
+      {"kto": "Ludwik Natanson (1821–1896)", "rola": "doktor medycyny, prezes Warszawskiego Towarzystwa Lekarskiego i gminy żydowskiej; duża rola w powstaniu szpitala", "wiki": null},
+      {"kto": "Naum Hornstein", "rola": "architekt, współpracował przy budowie szpitala", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital Starozakonnych na Czystem", "Dworska 17 (przed zmianą nazwy ulicy na Kasprzaka)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szpital Starozakonnych na Czystem w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/113-zabytki-kultury-materialnej/28974-szpital-starozakonnych-na-czystem-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje, że Czyste to dawna wieś w obrębie dzisiejszej dzielnicy Wola, więc dzielnica z tekstu. Adres dzisiejszy z tekstu (ob. Kasprzaka 17)."
+  }
+]

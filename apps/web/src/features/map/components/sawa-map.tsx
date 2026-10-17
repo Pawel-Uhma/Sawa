@@ -11,6 +11,7 @@ import {
   type MapRef,
   NavigationControl,
 } from "react-map-gl/maplibre";
+import { useT } from "@/features/i18n";
 import { useTheme } from "@/features/theme";
 import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
@@ -28,10 +29,10 @@ import {
 import { loadMapIcons } from "../lib/map-icons";
 import {
   BASEMAP_STYLE_URLS,
+  basemapPaintOverrides,
   MAP_PALETTES,
   MIN_PLACE_RICHNESS,
   START_VIEW,
-  waterPaintOverrides,
 } from "../lib/map-style";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
@@ -71,7 +72,11 @@ export type SawaMapProps = {
   hasZoomControls?: boolean;
   /** Click on the map outside any place (e.g. to pick a destination). */
   onMapClick?: (point: LatLng) => void;
+  /** Topics the user picked, in their order; they decide the ring colour of places with several. */
+  interests?: readonly string[];
 };
+
+const NO_INTERESTS: readonly string[] = [];
 
 export function SawaMap({
   route,
@@ -84,7 +89,9 @@ export function SawaMap({
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
+  interests = NO_INTERESTS,
 }: SawaMapProps) {
+  const t = useT();
   const mapRef = useRef<MapRef>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   // Layers mount only after the icons are in the style, so they keep their stacking order.
@@ -100,8 +107,8 @@ export function SawaMap({
   );
   const theme = useTheme();
   const palette = MAP_PALETTES[theme];
-  const waterOverrides = useMemo(() => waterPaintOverrides(palette), [palette]);
-  useBasemapOverrides(mapRef, isLoaded, waterOverrides);
+  const basemapOverrides = useMemo(() => basemapPaintOverrides(palette), [palette]);
+  useBasemapOverrides(mapRef, isLoaded, basemapOverrides);
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
@@ -201,6 +208,8 @@ export function SawaMap({
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
+            interests={interests}
+            theme={theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
             hasIcons={icons === "ready"}
@@ -222,9 +231,9 @@ export function SawaMap({
       </MapLibreMap>
       {places.isError && (
         <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-powierzchnia px-3 py-2 text-sm text-koral shadow">
-          Nie udało się pobrać miejsc.{" "}
+          {t("Nie udało się pobrać miejsc.", "Couldn't load the places.")}{" "}
           <button type="button" className="font-medium underline" onClick={() => places.refetch()}>
-            Spróbuj ponownie
+            {t("Spróbuj ponownie", "Try again")}
           </button>
         </p>
       )}
@@ -273,6 +282,7 @@ function findPlace(
     id,
     name: summary?.name ?? onRoute?.properties.name,
     kind: summary?.kind,
+    subkind: summary?.subkind,
     tags: summary?.interests,
     order: onRoute?.properties.order,
   };

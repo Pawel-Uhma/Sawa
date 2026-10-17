@@ -8,6 +8,7 @@ import {
   routeLegsToGeoJson,
   routePlacesToGeoJson,
   routeWalksToGeoJson,
+  stopPost,
 } from "./route-to-geojson";
 
 const stop = (id: string, lat: number, lng: number) => ({ id, name: id, position: { lat, lng } });
@@ -106,6 +107,29 @@ describe("lines and transfers", () => {
       ["10", true],
     ]);
     expect(features[1].geometry.coordinates).toEqual([20.98, 52.24]);
+  });
+
+  it("labels each boarding with its stop and Warsaw time, marking estimates", () => {
+    const legs = ROUTE.legs.map((leg, i) => (i === 0 ? { ...leg, realDeparture: true } : leg));
+    const { features } = routeBoardingsToGeoJson({ ...ROUTE, legs });
+    expect(features.map((f) => [f.properties.stopName, f.properties.boardAt])).toEqual([
+      ["a", "14:00"],
+      ["b", "ok. 14:10"],
+    ]);
+  });
+
+  it("adds the ZTM post number to the stop name", () => {
+    const legs = [
+      { ...ROUTE.legs[0], fromStop: { ...stop("700905", 52.23, 21.01), name: "Centrum" } },
+    ];
+    expect(routeBoardingsToGeoJson({ ...ROUTE, legs }).features[0].properties.stopName).toBe(
+      "Centrum 05",
+    );
+  });
+
+  it("reads the post from a 6-digit ZTM id only", () => {
+    expect(stopPost("100102")).toBe("02");
+    expect(stopPost("mock-plocka")).toBeNull();
   });
 
   it("draws a walking leg along its whole path, joined to the ride that follows", () => {

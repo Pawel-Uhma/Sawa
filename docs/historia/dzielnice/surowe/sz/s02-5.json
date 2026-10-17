@@ -1,0 +1,100 @@
+[
+  {
+    "id": "centralna-biblioteka-judaistyczna-tlomackie",
+    "nazwa": "Gmach Centralnej Biblioteki Judaistycznej",
+    "name_en": "Building of the Central Judaic Library",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach Centralnej Biblioteki Judaistycznej zbudowano w latach 1928–1936 według projektu Zachariasza Ebera; uroczyste otwarcie nastąpiło 22 kwietnia 1936 r.",
+      "Przemówienie inauguracyjne wygłosił kaznodzieja Wielkiej Synagogi na Tłomackiem Mojżesz Schorr.",
+      "Księgozbiór liczył około 30 tys. woluminów.",
+      "W 1939 r. zaprezentowano wystawę Biblii z całego świata, m.in. Biblię w przekładzie ks. Wujka z 1621 r.",
+      "W gmachu mieścił się Instytut Nauk Judaistycznych, przy którym działało Żydowskie Towarzystwo Krzewienia Sztuk Pięknych.",
+      "Po utworzeniu getta w 1940 r. w gmachu mieściła się Żydowska Samopomoc Społeczna; 25 listopada 1940 r. dała tu swój pierwszy koncert Orkiestra Symfoniczna.",
+      "Budynek podpalono w 1943 r. podczas niszczenia Wielkiej Synagogi, ale jego mury ocalały; obecnie mieści się tu Żydowski Instytut Historyczny im. Emanuela Ringelbluma."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Central Judaic Library building was designed by Zachariasz Eber and opened in April 1936, next to the Great Synagogue on Tłomackie Street. It was set on fire in 1943 but survived, and it now houses the Jewish Historical Institute.",
+    "ludzie": [
+      {"kto": "Zachariasz Eber", "rola": "autor projektu gmachu (1928–1936)", "wiki": null},
+      {"kto": "Mojżesz Schorr", "rola": "kaznodzieja Wielkiej Synagogi na Tłomackiem; wygłosił przemówienie inauguracyjne w 1936 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Centralna Biblioteka Judaistyczna w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/113-zabytki-kultury-materialnej/28981-centralna-biblioteka-judaistyczna-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst nie podaje numeru budynku, tylko ulicę Tłomackie: adres_dzis zostawiony pusty, do uzupełnienia z Warszawikii lub OSM. Dzielnica przypisana z ulicy. Brak współrzędnych."
+  },
+  {
+    "id": "dom-starcow-moszaw-zkenim-wawelberga-10",
+    "nazwa": "Dom Starców Moszaw Zkenim (Wawelberga 10)",
+    "name_en": "Moszaw Zkenim Home for the Elderly (10 Wawelberga Street)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Wawelberga 10",
+    "adres_historyczny": "Górczewska 9 (przed 1939 r.)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom Starców Moszaw Zkenim wzniesiono w 1928 r. przy ul. Wawelberga 10 według projektu Henryka Stifelmana.",
+      "Przeniesiono do niego istniejącą od 1913 r. placówkę o tej samej nazwie, pierwotnie mieszczącą się przy ul. Górczewskiej 9.",
+      "Beneficjentami byli przede wszystkim przedstawiciele żydowskiej inteligencji, dotknięci następstwami wojny i kryzysu gospodarczego.",
+      "Gmach miał 70 pokojów, obliczonych na około 150 pensjonariuszy.",
+      "Obecnie mieści się tu przedszkole, szkoła podstawowa i gimnazjum Lauder-Morasha, stworzone dzięki fundacji Ronalda Laudera; budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Moszaw Zkenim home for elderly Jews was built in 1928 at Wawelberga 10, after the earlier institution on Górczewska 9 was moved there. Today the building houses the Lauder-Morasha kindergarten, primary school and gymnasium.",
+    "ludzie": [
+      {"kto": "Henryk Stifelman", "rola": "autor projektu gmachu (1928)", "wiki": null},
+      {"kto": "Ronald Lauder", "rola": "fundator obecnych placówek Lauder-Morasha", "wiki": null}
+    ],
+    "dawne_nazwy": ["Górczewska 9 (przed 1939 r.)", "Wawelberga 9a (po wojnie, według tekstu)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom Starców Moszaw Zkenim w Warszawie (ul. Wawelberga 10)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/113-zabytki-kultury-materialnej/30327-dom-starcow-moszaw-zkenim-w-warszawie-ul-wawelberga-10"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje przed 1939 r. adres Górczewska 9, po wojnie 9a (z nagłówka „ul. Wawelberga 10” jako dzisiejszy). Dzielnica przypisana z adresu. Brak współrzędnych."
+  },
+  {
+    "id": "dom-modlitwy-muranowska-24",
+    "nazwa": "Dom modlitwy przy ul. Muranowskiej 24",
+    "name_en": "Prayer House at 24 Muranowska Street",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Muranowska 24",
+    "adres_historyczny": "Muranowska 24 (nr hip. 2195)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po I wojnie światowej(?)–1943(?)",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga przy ul. Muranowskiej 24 (nr hip. 2195) funkcjonowała po I wojnie światowej(?) – 1943(?).",
+      "Według spisu z 1926 r. pod tym adresem mieściły się dwa domy modlitwy.",
+      "Wszystkie domy modlitwy po północnej stronie ulicy, na odcinku między Pokorną a Dziką, występują tylko w tym spisie; w tym rejonie mogły działać w zaadaptowanych pomieszczeniach, bo działki były niewielkie.",
+      "Mieszkała tu ludność uboższa niż przy Nalewkach, więc modlitewnie były dużo skromniejsze.",
+      "Na zdjęciu sali zapewne jedyną ozdobą były namalowane pod stropem znaki zodiaku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A modest prayer house at 24 Muranowska Street is recorded in the 1926 census, with two prayer houses at this address. Photographs show a simple room whose only decoration was a painted zodiac under the ceiling.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom modlitwy przy ul. Muranowskiej 24 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89581-dom-modlitwy-przy-ul-muranowskiej-24-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Daty z pytajnikami w tekście. Tekst podaje adres przedwojenny (nr hip. 2195), wpisany w oba pola. Dzielnica przypisana z adresu. Brak współrzędnych."
+  }
+]

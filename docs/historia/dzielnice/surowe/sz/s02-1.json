@@ -1,0 +1,356 @@
+[
+  {
+    "id": "synagoga-serdynerow-twarda-4",
+    "nazwa": "Synagoga Serdynerów",
+    "name_en": "Serdyner Synagogue",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Twarda 4",
+    "adres_historyczny": "Twarda 4 (nr hip. 1099)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1861–1942?",
+    "istnieje": false,
+    "fakty": [
+      "W dniu 5/17 stycznia 1861 r. Aron i Perla z Perlów małżonkowie Serdyner, właściciele nieruchomości nr hip. 1099, złożyli oświadczenie, że znajdujące się na ich posesji synagoga i bejt ha-midrasz mają po śmierci właścicieli przejść na własność Gminy Żydowskiej.",
+      "Synagoga stała się własnością gminy ponad 40 lat później, dopiero po śmierci Perli Serdynerowej; o otwarciu jej testamentu doniósł „Izraelita” w 1905 r.",
+      "W 1927 r. wśród domów modlitwy należących do Gminy występuje dom modlitwy „im. P. Serdyner”.",
+      "Na planach z lat 1925–1938 w dziedzińcu działki przy Twardej 4 widoczny jest budynek o wymiarach rzutu około 13 x 15 m; widać go też na zdjęciu lotniczym z 1935 r.",
+      "Identyczny obiekt widnieje na Planie Lindleya z 1897 r., a podobny budynek jest już w Taryffie Świątkowskiego z 1852 r.",
+      "Aron Serdyner jest w Skorowidzu z 1854 r. jako mieszkaniec niedalekiej posesji nr hip. 1086."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Serdyner Synagogue stood in the courtyard of the property at Twarda 4 (mortgage no. 1099). The owners Aron and Perla Serdyner declared in 1861 that the synagogue would pass to the Jewish community after their deaths, and the transfer happened only after Perla's death.",
+    "ludzie": [
+      {"kto": "Aron Serdyner", "rola": "właściciel nieruchomości nr hip. 1099; w 1861 r. złożył oświadczenie o przejściu synagogi na własność gminy", "wiki": null},
+      {"kto": "Perla z Perlów Serdyner", "rola": "współwłaścicielka nieruchomości; przekazanie gminie nastąpiło po jej śmierci", "wiki": null},
+      {"kto": "Ber Meisels", "rola": "rabin, świadek oświadczenia z 1861 r.", "wiki": null},
+      {"kto": "Natan Winawer", "rola": "członek Dozoru Bóżniczego, świadek oświadczenia z 1861 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["dom modlitwy „im. P. Serdyner”"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga Serdynerów w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89770-synagoga-serdynerow-w-warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst podaje tylko adres z XIX w. (Twarda 4, nr hip. 1099), więc wpisany w oba pola. Dzielnica nie pada w tekście, przypisana z lokalizacji ulicy. Brak współrzędnych. Daty z pytajnikiem w tekście."
+  },
+  {
+    "id": "synagoga-zielna-29",
+    "nazwa": "Synagoga przy ul. Zielnej 29",
+    "name_en": "Synagogue at 29 Zielna Street",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Zielna 29",
+    "adres_historyczny": "Zielna 29 (nr hip. 1412)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1826–po 1869",
+    "istnieje": false,
+    "fakty": [
+      "Dom modlitwy pod adresem Zielna 29 (nr hip. 1412) znajduje się w spisie z 1826 r.",
+      "W 1839 r. w taksie hipotecznej opisano bóżnicę drewnianą, cynkiem krytą, o długości 16 1/2 łokci (9,5 m), szerokości 10 1/2 łokci (6,05 m) i wysokości 11 1/4 łokci (6,49 m).",
+      "W 1841 r. na posesji należącej do Fiszela Machanbauma w podwórzu po prawej stronie stała drewniana bóżnica cynkiem kryta, z komórką obok, „w dobrym stanie”.",
+      "Bóżnica funkcjonowała tu w 1851 r. i pojawiła się też w spisie z 1869 r.",
+      "Po podziale posesji zabudowano ją dwiema czynszowymi kamienicami o niewielkich podwórkach–studniach, bo zabrakło na nią miejsca."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A wooden synagogue stood in the courtyard of 29 Zielna Street, on a plot that belonged to the former Bielino jurisdiction. It appears in records from 1826 to 1869, and after the plot was divided it was built over with two tenement houses.",
+    "ludzie": [
+      {"kto": "Fiszel Machanbaum", "rola": "właściciel posesji przy Zielnej 29 w 1841 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["dawna jurydyka Bielino (teren posesji)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga przy ul. Zielnej 29 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89698-synagoga-przy-ul-zielnej-29-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres przedwojenny (Zielna 29), wpisany w oba pola. Dzielnica przypisana z lokalizacji, nie z tekstu. Brak współrzędnych."
+  },
+  {
+    "id": "dom-schronienia-ubogich-sierot-i-starcow-leszno",
+    "nazwa": "Dom Schronienia Ubogich, Sierot i Starców Starozakonnych",
+    "name_en": "Shelter for the Poor, Orphans and Elderly of the Jewish Community",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Leszno 15",
+    "adres_historyczny": "Leszno 127 / Wolska 18",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1840–2009",
+    "istnieje": false,
+    "fakty": [
+      "Początki zakładu sięgają 1840 r., gdy działacz gminy żydowskiej Izaak Szymon Rosen kupił działkę, a po 3 latach ofiarował ją gminie na Dom Schronienia Ubogich, Sierot i Starców Starozakonnych.",
+      "W 1847 r. Mathias Rosen doprowadził do budowy nowego budynku dla 100 osób, według projektu Andrzeja Gołońskiego (1799–1854); w budynku mieściła się też synagoga.",
+      "W 1926 r. powstał projekt nowego gmachu na tej samej działce, od strony ulicy Leszno; autorami byli Edward Seydenbeutel, Henryk Oderfeld i Szymon Syrkus.",
+      "W 1935 r. przeniesiono tu Dom Opieki dla Opuszczonych Dzieci Żydowskich z ul. Płockiej.",
+      "Po utworzeniu getta dzieci wysiedlono do getta, a w budynku umieszczono Szpital św. Łazarza, który wcześniej działał przy ul. Książęcej 2.",
+      "W 1944 r., w czasie powstania warszawskiego, Niemcy wymordowali na miejscu rannych i personel szpitala – łącznie 1000 osób; budynek został spalony.",
+      "W 2009 r. budynek rozebrano z powodu złego stanu technicznego uniemożliwiającego remont."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Jewish communal shelter for orphans, the poor and the elderly on Leszno Street was founded in the 1840s, with a synagogue inside its 1847 building. The building was used as a hospital during the war, when the Germans murdered its patients and staff in 1944, and it was demolished in 2009.",
+    "ludzie": [
+      {"kto": "Izaak Szymon Rosen", "rola": "działacz gminy żydowskiej; kupił działkę (1840) i ofiarował ją gminie", "wiki": null},
+      {"kto": "Mathias Rosen (1807–1865)", "rola": "syn Izaaka Szymona Rosena, kierował Radą Szczegółową przytułku; doprowadził do budowy budynku z 1847 r.", "wiki": null},
+      {"kto": "Andrzej Gołoński (1799–1854)", "rola": "znany warszawski architekt, autor projektu budynku z 1847 r.", "wiki": null},
+      {"kto": "Edward Seydenbeutel", "rola": "autor projektu nowego gmachu z 1926 r.", "wiki": null},
+      {"kto": "Henryk Oderfeld", "rola": "autor projektu nowego gmachu z 1926 r.", "wiki": null},
+      {"kto": "Szymon Syrkus", "rola": "autor projektu nowego gmachu z 1926 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Przytułku Sierot i Ubogich", "Szpital św. Łazarza (w budynku po 1939 r.)", "Stołeczny Szpital Dermatologiczny (od 1963 r.)"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Dom Schronienia Ubogich, Sierot i Starców Starozakonnych w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/113-zabytki-kultury-materialnej/29448-dom-schronienia-ubogich-sierot-i-starcow-starozakonnych-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres_dzis „Leszno 15” to adres powojenny podany w tekście (działka odzyskana przez gminę po 1989 r.), nie wprost dzisiejszy adres. Dzielnica przypisana z adresu Wolska 18. Okres: budynek rozebrany w 2009 r. Sam tekst podaje też, że przy Lesznie 127 zakład funkcjonował przed wojną."
+  },
+  {
+    "id": "areszt-gestapo-al-szucha-25",
+    "nazwa": "Areszt śledczy Gestapo (Al. Szucha 25)",
+    "name_en": "Gestapo Investigation Prison at 25 Szucha Avenue",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Jana Chrystiana Szucha 25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach przy Al. Szucha 25 wzniesiono w latach 1925–1930 według projektu Zdzisława Mączeńskiego; przed II wojną mieściło się w nim Ministerstwo Wyznań Religijnych i Oświecenia Publicznego.",
+      "Na początku października 1939 r. budynek zajął Wehrmacht, a następnie IV Grupa Operacyjna Policji Bezpieczeństwa.",
+      "W piwnicach funkcjonował areszt śledczy z 10 izolatkami oraz wąskimi celami zbiorowymi z drewnianymi ławkami, zwanymi potocznie „tramwajami”.",
+      "W maju 1943 r. przywożono na przesłuchania Abraszę Bluma, bojownika powstania w getcie i członka kierownictwa Bundu i Cukunftu; najprawdopodobniej został tu zamordowany.",
+      "W maju 1944 r. przez trzy dni przesłuchiwano tu Emanuela Ringelbluma; przesłuchiwano i torturowano także Irenę Sendlerową.",
+      "Po likwidacji getta Żydów z getta sprowadzano codziennie do ciężkich prac, a następnie zakwaterowano w baraku obok siedziby gestapo; byli wyjątkowo źle traktowani.",
+      "Uchwałą Rady Ministrów z 25 lipca 1946 r. piwnice uznano za miejsce martyrologii; 18 kwietnia 1952 r. otwarto w nich Mauzoleum Walki i Męczeństwa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The 1925–1930 building at 25 Szucha Avenue became the Gestapo headquarters in 1939, with an investigation prison in its cellars. Jewish prisoners interrogated there included the Bund activist Abrasza Blum, Emanuel Ringelblum and Irena Sendler; the cellars were preserved as the Mausoleum of Struggle and Martyrdom.",
+    "ludzie": [
+      {"kto": "Abrasza Blum", "rola": "bojownik powstania w getcie, członek kierownictwa podziemnego Centralnego Komitetu Bundu i Cukunftu; przywieziony na przesłuchanie w maju 1943 r.", "wiki": null},
+      {"kto": "Emanuel Ringelblum", "rola": "kronikarz getta warszawskiego; przesłuchiwany tu przez trzy dni w maju 1944 r.", "wiki": null},
+      {"kto": "Irena Sendlerowa", "rola": "przesłuchiwana i torturowana w tym gmachu", "wiki": null},
+      {"kto": "Zdzisław Mączeński", "rola": "autor projektu gmachu (1925–1930)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Strasse der Polizei (pol. ulica Policyjna) – niemiecka nazwa al. Szucha"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Areszt śledczy Gestapo w Warszawie (Al. Szucha 25)", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/51902-areszt-sledczy-gestapo-w-warszawie-al-szucha-25"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica przypisana z adresu, nie z tekstu. Artykuł dotyczy głównie gestapo, żydowskie wątki to kilka zdań; wybrane fakty z nich. Dzisiejszy adres wpisany z artykułu (Mauzoleum Walki i Męczeństwa, Filia Muzeum Więzienia Pawiak)."
+  },
+  {
+    "id": "synagoga-w-szkole-rabinow-nalewki-2257",
+    "nazwa": "Synagoga w Szkole Rabinów",
+    "name_en": "Synagogue of the Rabbinical School",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nalewki 28/30",
+    "adres_historyczny": "Nalewki 28/30 (nr hip. 2257 ab)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1826–1864",
+    "istnieje": false,
+    "fakty": [
+      "Szkoła Rabinów, rządowa szkoła średnia dla żydowskiej młodzieży, została otwarta 26 listopada 1826 r.; pierwszym dyrektorem mianowano Abrahama Sterna, który wkrótce zrezygnował.",
+      "W 1828 r. szkołę przeniesiono do domu Józefa Janasza na Krochmalną, gdzie Antoni Eisenbaum urządził synagogę.",
+      "W 1839 r. szkołę wraz z synagogą przeniesiono na ulicę Nalewki pod nr. 2257, gdzie synagoga działała do 1864 r.",
+      "13 marca 1843 r. odbyła się tu konfirmacja dziewcząt, czyli bat micwa – uroczystość, którą artykuł określa jako pionierską.",
+      "Szkołę zamknięto 1 stycznia 1863 r. z powodu udziału większości uczniów w powstaniu styczniowym; przez szkołę przeszło ponad 1200 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The synagogue of the Warsaw Rabbinical School operated from 1826 to 1864 and moved several times, most recently to Nalewki Street in 1839. In 1843 it hosted a bat mitzvah for girls, and the school was closed in 1863 after most pupils joined the January Uprising.",
+    "ludzie": [
+      {"kto": "Antoni Eisenbaum (1791–1852)", "rola": "kierownik, od 1835 r. dyrektor Szkoły Rabinów; urządził synagogę", "wiki": null},
+      {"kto": "Abraham Stern", "rola": "pierwszy dyrektor Szkoły Rabinów, wkrótce zrezygnował", "wiki": null},
+      {"kto": "Józef Janasz", "rola": "właściciel domu na Krochmalnej, do którego szkołę przeniesiono w 1828 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szkoła Rabinów", "synagoga przy ul. Gwardii (hip. 1972) – pierwsza siedziba 1826", "Krochmalna 2, 4 (hip. 959) – siedziba 1828–1839"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Synagoga w Szkole Rabinów w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/112-synagogi-domy-modlitwy-mykwy/89628-synagoga-w-szkole-rabinow-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adresy przedwojenne: Gwardii (hip. 1972), Krochmalna 2, 4 (hip. 959), Nalewki 28/30 (hip. 2257 ab), Gęsia 5 (hip. 2247 d). Wpisano ostatnią siedzibę (od 1839). Dzielnica przypisana z adresu. Brak współrzędnych."
+  },
+  {
+    "id": "ziemianka-krysia-grojecka-77",
+    "nazwa": "Ziemianka „Krysia” przy ul. Grójeckiej 77",
+    "name_en": "“Krysia” Dugout at 77 Grójecka Street",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "Grójecka 77",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1942–1944",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1942–1944 w ziemiance w dawnym ogrodzie Wolskich, urządzonej przy pomocy rodziny Marczaków, ukrywało się około 40 Żydów, uciekinierów z getta warszawskiego.",
+      "Wśród ukrywających się byli Emanuel Ringelblum z żoną Judytą i synem Urim; bunkier otrzymał kryptonim „Krysia”.",
+      "W marcu 1944 r. po ujawnieniu ziemianki hitlerowcy wymordowali wszystkich ukrywających się w niej Żydów oraz ich opiekunów.",
+      "27 kwietnia 1990 r. na ścianie zbudowanego w tym miejscu bloku mieszkalnego odsłonięto tablicę pamiątkową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A dugout in the former garden of the Wolski family at 77 Grójecka Street sheltered about 40 Jews who escaped the Warsaw Ghetto, among them historian Emanuel Ringelblum. The hiding place was discovered in March 1944 and everyone in it was murdered.",
+    "ludzie": [
+      {"kto": "Emanuel Ringelblum", "rola": "historyk, badacz dziejów Żydów polskich, organizator Archiwum Getta; ukrywał się w ziemiance z żoną Judytą i synem Urim", "wiki": null},
+      {"kto": "rodzina Wolskich", "rola": "miejscowi ogrodnicy, w których dawnym ogrodzie była ziemianka; ukrywali Żydów w latach 1942–1944", "wiki": null},
+      {"kto": "rodzina Marczaków", "rola": "pomagała przy urządzeniu ziemianki", "wiki": null}
+    ],
+    "dawne_nazwy": ["ogród Wolskich", "bunkier „Krysia”"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kryjówki Żydów na terenie Warszawy", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52311-kryjowki-zydow-na-terenie-warszawy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wpis z listy kryjówek. Dzielnica przypisana z opisu („dawny ogród Wolskich”), do sprawdzenia. Brak współrzędnych."
+  },
+  {
+    "id": "internat-franciszkanek-hoza-53",
+    "nazwa": "Internat Franciszkanek Rodziny Maryi (Hoża 53)",
+    "name_en": "Boarding House of the Franciscan Sisters of the Family of Mary (53 Hoża Street)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Hoża 53",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "w czasie okupacji (data nieokreślona w tekście)",
+    "istnieje": true,
+    "fakty": [
+      "Hoża 53 – internat zakonny Zgromadzenia Sióstr Franciszkanek Rodziny Maryi, miejsce ukrywania żydowskich dzieci.",
+      "W 2019 r. wmurowano tu tablicę w hołdzie Matce Matyldzie Getter i siostrom Franciszkankom Rodziny Maryi oraz wszystkim ludziom dobrej woli, którzy ryzykując własne życie ratowali żydowskie dzieci skazane na zagładę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Franciscan Sisters of the Family of Mary ran a boarding house at 53 Hoża Street, where Jewish children were hidden during the occupation. A plaque honoring Mother Matylda Getter and the sisters was unveiled in 2019.",
+    "ludzie": [
+      {"kto": "Matylda Getter", "rola": "zakonnica, Franciszkanka Rodziny Maryi; upamiętniona tablicą z 2019 r. za ratowanie żydowskich dzieci", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kryjówki Żydów na terenie Warszawy", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52311-kryjowki-zydow-na-terenie-warszawy"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Wpis z listy kryjówek, tylko dwa zdania w artykule (fragment tablicy ucięty w tekście). Dzielnica przypisana z adresu, do sprawdzenia. Brak współrzędnych."
+  },
+  {
+    "id": "kryjowka-kopernika-4",
+    "nazwa": "Kamienica przy ul. Kopernika 4 (kryjówka)",
+    "name_en": "Tenement at 4 Kopernika Street (hiding place)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Kopernika 4",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "okres okupacji",
+    "istnieje": true,
+    "fakty": [
+      "W tym domu, w specjalnie zbudowanej zamaskowanej skrytce, w okresie okupacji ukrywali się Żydzi polscy: matka, syn i synowa.",
+      "Miejsce ukrywania się trzech osób: Blimy, Leona i Anny Joselsonów.",
+      "W 1989 r. wmurowano tablicę upamiętniającą miejsce ukrywania."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential building at 4 Kopernika Street had a concealed hiding place where a mother, son and daughter-in-law, the Joselson family, hid during the occupation. A commemorative plaque was installed in 1989.",
+    "ludzie": [
+      {"kto": "Blima Joselson", "rola": "ukrywała się w zamaskowanej skrytce w domu przy Kopernika 4", "wiki": null},
+      {"kto": "Leon Joselson", "rola": "ukrywał się w zamaskowanej skrytce w domu przy Kopernika 4 (na tablicy Jozelson vel Jolson)", "wiki": null},
+      {"kto": "Anna Joselson", "rola": "ukrywała się w zamaskowanej skrytce w domu przy Kopernika 4 (na tablicy Jozelson vel Jolson)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kryjówki Żydów na terenie Warszawy", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52311-kryjowki-zydow-na-terenie-warszawy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Wpis z listy kryjówek. Dzielnica przypisana z adresu, do sprawdzenia. Brak współrzędnych. Nazwisko w tekście: Joselson, na tablicy Jozelson vel Jolson."
+  },
+  {
+    "id": "okopowa-49-51-bunkier-na-cmentarzu",
+    "nazwa": "Bunkier w grobie na cmentarzu żydowskim (Okopowa 49/51)",
+    "name_en": "Bunker in a grave at the Jewish cemetery (49/51 Okopowa Street)",
+    "typ": "cmentarz",
+    "dzielnica": "Wola",
+    "adres_dzis": "Okopowa 49/51",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata Zagłady",
+    "istnieje": true,
+    "fakty": [
+      "Na cmentarzu żydowskim przy Okopowej 49/51 znajdował się „bunkier” w grobie, używany jako kryjówka w latach Zagłady."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A hiding bunker was built inside a grave at the Jewish cemetery at 49/51 Okopowa Street during the Holocaust. The source gives only this one line.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kryjówki Żydów na terenie Warszawy", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52311-kryjowki-zydow-na-terenie-warszawy"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Jedna pozycja listy, bez opisu w artykule (poniżej progu 3 faktów). Dzielnica przypisana z adresu, do sprawdzenia. Brak współrzędnych."
+  },
+  {
+    "id": "kamienica-nowy-swiat-41-drukarnia",
+    "nazwa": "Kamienica przy Nowym Świecie 41 (drukarnia i warsztat)",
+    "name_en": "Tenement at 41 Nowy Świat Street (printing press and workshop)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 41",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "w latach Zagłady",
+    "istnieje": true,
+    "fakty": [
+      "W kamienicy przy Nowym Świecie 41 działała tajna drukarnia Rady Pomocy Żydom.",
+      "W tym samym budynku mieścił się warsztat wulkanizacyjny Andrzeja Klimowicza, w którym ukrywał on Żydów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A secret printing press of the Council for Aid to the Jews operated in the tenement at 41 Nowy Świat Street. A tyre repair workshop in the same building, run by Andrzej Klimowicz, also hid Jews.",
+    "ludzie": [
+      {"kto": "Andrzej Klimowicz", "rola": "prowadził warsztat wulkanizacyjny, w którym ukrywał Żydów", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kryjówki Żydów na terenie Warszawy", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52311-kryjowki-zydow-na-terenie-warszawy"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Wpis z listy kryjówek, dwa zdania w artykule. Dzielnica przypisana z adresu, do sprawdzenia. Brak współrzędnych."
+  },
+  {
+    "id": "kryjowka-zelazna-97",
+    "nazwa": "Dom Generalny Franciszkanek Rodziny Maryi (Żelazna 97)",
+    "name_en": "Motherhouse of the Franciscan Sisters of the Family of Mary (97 Żelazna Street)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Żelazna 97",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "nie podano w tekście",
+    "istnieje": true,
+    "fakty": [
+      "Dom Generalny Zgromadzenia Sióstr Franciszkanek Rodziny Maryi, w którym zakonnice przechowały jedenaścioro dzieci żydowskich.",
+      "Obecnie w tym budynku mieści się Przedszkole nr 217 Sióstr Rodziny Maryi."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Franciscan Sisters of the Family of Mary sheltered eleven Jewish children at their motherhouse at 97 Żelazna Street. The article says a kindergarten of the order now operates there.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Kryjówki Żydów na terenie Warszawy", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/116-miejsca-martyrologii/52311-kryjowki-zydow-na-terenie-warszawy"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Wpis z listy kryjówek, dwa zdania; w tekście data ukrycia nie podana, a nawias przy przedszkolu jest ucięty. Dzielnica przypisana z adresu, do sprawdzenia. Brak współrzędnych."
+  }
+]

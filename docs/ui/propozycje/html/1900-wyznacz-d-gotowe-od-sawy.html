@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Wyznacz D · gotowe od Sawy</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .karta { padding-left: 0; padding-right: 0; }
+  .karta .naglowek, .karta .stopka { padding: 0 16px; }
+  .rolka { display: flex; gap: 10px; overflow: hidden; padding: 14px 16px 4px; }
+  .trasa { flex: none; width: 250px; border-radius: 20px; padding: 12px; background: rgba(16,43,42,.04); border: 1.5px solid transparent; }
+  .trasa.on { background: #fff; border-color: rgba(23,112,111,.45); box-shadow: 0 4px 14px rgba(16,43,42,.10); }
+  .trasa .gora2 { display: flex; justify-content: space-between; align-items: center; }
+  .trasa .czas { font-size: 22px; font-weight: 800; letter-spacing: -.03em; color: var(--glebia); }
+  .trasa .typ { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; color: var(--tekst-2); }
+  .trasa .typ svg { width: 14px; height: 14px; }
+  .trasa h2 { font-size: 16px; font-weight: 800; letter-spacing: -.01em; margin-top: 4px; }
+  .trasa p { font-size: 12.5px; color: var(--tekst-2); margin-top: 2px; line-height: 1.35; }
+  .linie { display: flex; gap: 4px; margin-top: 8px; align-items: center; font-size: 12px; color: var(--tekst-3); font-weight: 600; }
+  .linie b { min-width: 26px; height: 20px; padding: 0 5px; border-radius: 5px; background: #C8102E; color: #fff; font-size: 12px; display: grid; place-items: center; }
+  .linie b.bus { background: #1F4E9C; }
+  .stopka { display: flex; gap: 8px; margin-top: 12px; }
+  .stopka .przycisk { margin: 0; flex: 1; }
+  .stopka .wlasna { width: 52px; height: 52px; flex: none; border-radius: 16px; background: rgba(16,43,42,.06); display: grid; place-items: center; color: var(--tekst); }
+  .stopka .wlasna svg { width: 22px; height: 22px; }
+  .kropki { display: flex; gap: 5px; justify-content: center; margin-top: 8px; }
+  .kropki i { width: 6px; height: 6px; border-radius: 50%; background: rgba(16,43,42,.18); }
+  .kropki i:first-child { background: var(--glebia); width: 16px; border-radius: 3px; }
+</style></head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora"><div class="logo szklo">sawa<i>.</i></div></div>
+
+  <div class="karta">
+    <div class="uchwyt"></div>
+    <div class="naglowek">
+      <img class="awatar" src="../../../pitch/img/ikona-sawa.jpg">
+      <div><h1>Mam dla Ciebie 3 przejażdżki</h1><p>Stąd, teraz. Wybierz albo ułóż własną.</p></div>
+    </div>
+    <div class="rolka">
+      <div class="trasa on">
+        <div class="gora2"><span class="czas">1 h 20</span><span class="typ" data-ikona="petla">pętla</span></div>
+        <h2>Wola fabryczna</h2>
+        <p>Kercelak, Hale Mirowskie i ślady getta. 7 opowieści.</p>
+        <div class="linie"><b>10</b><b>26</b><b class="bus">171</b> · 2 przesiadki</div>
+      </div>
+      <div class="trasa">
+        <div class="gora2"><span class="czas">45 min</span><span class="typ" data-ikona="cel">do celu</span></div>
+        <h2>Na Stare Miasto naokoło</h2>
+        <p>Przez Plac Bankowy i Krakowskie. 4 opowieści.</p>
+        <div class="linie"><b>20</b> · bez przesiadek</div>
+      </div>
+    </div>
+    <div class="kropki"><i></i><i></i><i></i></div>
+    <div class="stopka">
+      <div class="przycisk">Jedziemy</div>
+      <div class="wlasna" data-ikona="suwaki"></div>
+    </div>
+  </div>
+
+  <div class="zakladki szklo"></div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script><script src="_wyznacz.js"></script>
+<script>sawaMapa('mapa', { trasa: 'wola', dopasuj: { top: 120, bottom: 470, left: 40, right: 40 } });</script>
+</body></html>

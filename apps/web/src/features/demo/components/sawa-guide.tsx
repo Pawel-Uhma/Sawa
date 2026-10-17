@@ -48,7 +48,7 @@ export function SawaGuide({ pose, say, hero }: SawaGuideProps) {
               width={720}
               height={720}
               priority={pose === "macha"}
-              className="size-full object-contain drop-shadow-[0_18px_24px_rgba(16,43,42,0.14)]"
+              className="size-full object-contain drop-shadow-[0_18px_24px_rgba(16,43,42,0.14)] dark:brightness-[0.82]"
             />
           </motion.div>
         </AnimatePresence>

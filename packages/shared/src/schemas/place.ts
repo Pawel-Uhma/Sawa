@@ -7,6 +7,7 @@ export const PlaceSummaryPropertiesSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
   kind: z.string(),
+  subkind: z.string().nullish(),
   interests: z.array(z.string()),
   richness: z.number().int().nonnegative(),
 });
@@ -67,6 +68,61 @@ export const PLACE_KINDS = [
 export const PlaceKindSchema = z.enum(PLACE_KINDS);
 export type PlaceKind = z.infer<typeof PlaceKindSchema>;
 
+/**
+ * Finer than `kind`: one map marker each (`places.subkind`, set by the seed from kind, name and tags,
+ * scripts/historia/subkind.ts). Grouped by marker colour, docs/ui/ikony-mapy/README.md.
+ */
+export const PLACE_SUBKINDS = [
+  // living
+  "tenement",
+  "building",
+  "palace",
+  "manor",
+  "housing",
+  "street",
+  // institutions
+  "school",
+  "university",
+  "hospital",
+  "office",
+  "trade",
+  // culture
+  "museum",
+  "theatre",
+  "cinema",
+  "library",
+  "mural",
+  // work and transport
+  "factory",
+  "station",
+  "bridge",
+  // war and memory
+  "monument",
+  "plaque",
+  "fortress",
+  "prison",
+  "event",
+  // sacred
+  "church",
+  "chapel",
+  "orthodox",
+  "synagogue",
+  "cemetery",
+  // nature and sport
+  "park",
+  "garden",
+  "water",
+  "pitch",
+  "stadium",
+  // anything else
+  "site",
+] as const;
+export const PlaceSubkindSchema = z.enum(PLACE_SUBKINDS);
+export type PlaceSubkind = z.infer<typeof PlaceSubkindSchema>;
+
+/** Unknown or missing subkind (older seed, newer API) reads as null; the map falls back to `kind`. */
+export const OptionalSubkindSchema = PlaceSubkindSchema.nullish().catch(null);
+
 export const PlaceSourceSchema = z.object({
   /** "s1", "s2", ...: the story cites these ids. */
   id: z.string(),
@@ -103,6 +159,7 @@ export const PlaceSchema = z.object({
   id: z.string(),
   name: z.string(),
   kind: PlaceKindSchema,
+  subkind: OptionalSubkindSchema,
   interests: z.array(z.string()),
   position: LatLngSchema,
   richness: z.number().int().nonnegative(),

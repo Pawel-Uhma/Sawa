@@ -1,4 +1,4 @@
-import type { LatLng, PlaceKind } from "@sawa/shared";
+import type { LatLng, PlaceKind, PlaceSubkind } from "@sawa/shared";
 
 /** The full place is the contract type (packages/shared); the API returns it unchanged. */
 export type { Place, PlaceKind, PlacePhoto, PlaceSource } from "@sawa/shared";
@@ -11,6 +11,8 @@ export type PlaceSummary = {
   id: string;
   name: string;
   kind: PlaceKind;
+  /** Map marker; null until the seed sets it. */
+  subkind?: PlaceSubkind | null;
   interests: string[];
   position: LatLng;
   /** facts + trivia count; higher = more to tell */

@@ -18,15 +18,15 @@ Warsaw Open Data Hackathon 2026 · 17–18.10 · 42 Warsaw
 
 ## Problem
 
-Według prognozy miasta w 2060 r. ok. 20% mieszkańców Warszawy to będą imigranci i ich potomkowie, a codziennie przyjeżdża tu ok. 600 tys. osób spoza miasta ([docs/08-badania-trendy.md](docs/08-badania-trendy.md)). Przyjezdni codziennie jeżdżą tymi samymi liniami, ale nie wiedzą nic o mijanych ulicach, a przewodniki i audioprzewodniki są pisane dla turystów i ich wyznaczonych tras, a nie dla zwykłego dojazdu do pracy.
+Według prognozy miasta w 2060 r. ok. 20% mieszkańców Warszawy to będą imigranci i ich potomkowie. Do tego codziennie jest w mieście ok. 600 tys. osób spoza niego, głównie dojeżdżających do pracy ([docs/08-badania-trendy.md](docs/08-badania-trendy.md)). Wielu z nich jeździ codziennie tymi samymi liniami i nie wie nic o mijanych ulicach. Przewodniki i audioprzewodniki są pisane dla turystów i ich wyznaczonych tras, nie dla zwykłego dojazdu do pracy.
 
 ## Rozwiązanie
 
-Sawa planuje przejazd komunikacją miejską pod Twoje zainteresowania i czas, a w trakcie jazdy opowiada o miejscach, które właśnie mijasz. Długość każdej opowieści dopasowuje do czasu dojazdu do następnego miejsca, liczonego z rozkładu ZTM i pozycji pojazdów na żywo.
+Sawa to aplikacja na telefon dla nowych mieszkańców, dojeżdżających i każdego, kto jeździ po Warszawie tramwajem albo autobusem. Planuje przejazd komunikacją miejską pod Twoje zainteresowania i czas, a w trakcie jazdy opowiada o miejscach, które właśnie mijasz. Długość każdej opowieści dopasowuje do czasu dojazdu do następnego miejsca, liczonego z rozkładu ZTM i pozycji pojazdów na żywo.
 
 ### Jak to działa
 
-1. **Onboarding:** wybierasz zainteresowania (historia, kultura, sport, przyroda), to, jak dobrze znasz miasto, i styl opowieści. Bez konta, profil zostaje w telefonie.
+1. **Onboarding:** wybierasz zainteresowania (historia, kultura, sport, przyroda), to, jak dobrze znasz miasto, styl opowieści i kto słucha (dorosły czy dziecko). Bez konta, profil zostaje w telefonie. Aplikacja działa po polsku i po angielsku.
 2. **Trasa:** podajesz czas albo cel. Planer układa przejazd tramwajami i autobusami ZTM (z odcinkami pieszymi) tak, żeby po drodze było jak najwięcej miejsc pasujących do Ciebie.
 3. **Jazda:** mapa pokazuje trasę, przystanki i pojazdy na żywo, a Sawa milczy, dopóki nie zbliżysz się do pierwszego miejsca.
 4. **Opowieść:** przy każdym miejscu LLM układa krótką opowieść wyłącznie z faktów z naszej bazy (każdy ze źródłem). Opcjonalnie czyta ją głos Sawy. Sawa pamięta, co już słyszałeś, i nie powtarza się.
@@ -39,7 +39,7 @@ Sawa planuje przejazd komunikacją miejską pod Twoje zainteresowania i czas, a 
 |---|---|---|---|
 | Lokalizacja pojazdów komunikacji miejskiej | `get_ztm_lokalizacja_pojazdow` | pojazdy na mapie na żywo, opóźnienie i prognoza dojazdu (korki) | CC BY, ZTM |
 | Odjazdy linii z przystanku | `get_ztm_odjazdy_linii_z_przystanku` | godziny odjazdów z rozkładu dla każdego odcinka trasy | CC BY, ZTM |
-| Otwarte boiska | `get_be_otwarte_boiska` | ok. 300 szkolnych terenów sportowych jako miejsca w kategorii „sport” | CC BY |
+| Otwarte boiska | `get_be_otwarte_boiska` | ok. 300 szkolnych terenów sportowych jako miejsca w kategorii „sport” (pobrane raz skryptem `scripts/fetch-otwarte-boiska.ts`) | CC BY |
 
 Zapytania do API miasta idą tylko z naszego backendu (token `WAW_TOKEN`), przeglądarka nie łączy się z nim bezpośrednio. Podpisy źródeł są w odpowiedziach API (`attribution`) i w aplikacji.
 
@@ -51,11 +51,12 @@ Zapytania do API miasta idą tylko z naszego backendu (token `WAW_TOKEN`), przeg
 | OpenStreetMap | zabytki, kościoły, muzea, teatry, parki, obiekty sportowe; geokodowanie (Nominatim) | ODbL |
 | Wikipedia, Warszawikia | fakty o miejscach | CC BY-SA |
 | [warszawa1939.pl](https://warszawa1939.pl) | karty przedwojennych budynków (Śródmieście, Wola) | CC BY-NC |
+| [Wirtualny Sztetl](https://sztetl.org.pl) (POLIN) | 155 miejsc żydowskiej Warszawy (synagogi, szkoły, miejsca pamięci) | do potwierdzenia |
 | Wikimedia Commons | zdjęcia archiwalne, z autorem i licencją przy każdym | licencja przy zdjęciu |
 | OpenFreeMap | podkład mapy | ODbL |
 | OSRM (FOSSGIS) | odcinki piesze po chodnikach | ODbL |
 
-Baza ma ok. 3700 miejsc ze źródłami i ok. 800 zdjęć (Supabase, PostGIS). Opis zbierania i licencji: [docs/historia/README.md](docs/historia/README.md), [docs/historia/dzielnice/README.md](docs/historia/dzielnice/README.md).
+Baza ma ok. 4500 miejsc ze źródłami i ok. 2900 zdjęć (Supabase, PostGIS). Opis zbierania i licencji: [docs/historia/README.md](docs/historia/README.md), [docs/historia/dzielnice/README.md](docs/historia/dzielnice/README.md).
 
 ## Architektura
 
@@ -91,7 +92,7 @@ Kontrakt API (zod) jest w `packages/shared` i jest wspólny dla web i api. Przeg
 
 | Warstwa | Technologia | Dlaczego |
 |---|---|---|
-| Frontend | Next.js (App Router), Tailwind, shadcn/ui, Vercel | szybko zbudowaliśmy ekrany, a aplikację da się zainstalować na telefonie jak zwykłą (PWA) |
+| Frontend | Next.js 16 (App Router), React 19, Tailwind 4, Motion, Vercel | szybko zbudowaliśmy ekrany, a aplikację da się zainstalować na telefonie jak zwykłą (PWA) |
 | Mapa | MapLibre GL, podkład OpenFreeMap | otwarte oprogramowanie i dane, bez klucza i opłat |
 | Backend | Hono na Node, Railway | stały serwer trzyma w pamięci sieć linii ZTM, czeka na długie odpowiedzi modelu językowego i jako jedyny zna klucze |
 | Kontrakt API | zod w `packages/shared` | frontend i backend korzystają z tych samych definicji danych, więc nie rozjeżdżają się |
@@ -106,15 +107,16 @@ Regulamin (§4 ust. 4) wymaga opisu zakresu użycia AI. Za wszystkie treści odp
 
 **W aplikacji:**
 
-- **Opowieści Sawy** generuje LLM (OpenRouter, `google/gemini-3.5-flash-lite`) na żywo, wyłącznie z faktów z naszej bazy przypisanych do miejsca. Prompt zabrania dopisywania dat, liczb, nazwisk i wydarzeń spoza tych faktów. Bez klucza LLM aplikacja czyta same fakty. Prompty: `apps/api/src/prompts/`.
-- **Głos Sawy:** synteza mowy ElevenLabs.
+- **Opowieści Sawy** generuje LLM (OpenRouter, `google/gemini-3.5-flash-lite`) na żywo, wyłącznie z faktów z naszej bazy przypisanych do miejsca. Prompt zabrania dopisywania dat, liczb, nazwisk i wydarzeń spoza tych faktów. Tryb dla dzieci ma osobny prompt: prostszy język, te same fakty. Bez klucza LLM aplikacja czyta same fakty. Prompty: `apps/api/src/prompts/`.
+- **Głos Sawy:** synteza mowy ElevenLabs (`eleven_multilingual_v2`, polski głos „Asia” z biblioteki ElevenLabs, wybrany na ucho). API trzyma nagrania w pamięci, więc powtórzona opowieść nie kosztuje drugi raz.
 
 **Przy budowie:**
 
 - **Kod:** każdy z 4 członków zespołu pracował z własnym agentem Claude Code. Kod powstał w czasie hackathonu (od 17.10, 11:00) przez PR-y do `main`. Każdy PR przechodził typecheck, lint i testy w CI, a zmiany przeglądał człowiek.
-- **Dane:** skrypty w `scripts/` pobierają dane z OSM, Wikipedii, Warszawikii, warszawa1939.pl i API miasta. Fakty z artykułów Warszawikii wyciągały agenty Claude Haiku. Każdy fakt ma podane źródło.
-- **Grafika:** awatar Sawy i jego warianty wygenerowały modele obrazów (fal.ai, m.in. Nano Banana, GPT Image). Wybór i poprawki należały do zespołu ([docs/awatar/](docs/awatar/README.md)).
-- **Dokumentacja i plan:** analiza danych, PRD, plany i pitch powstawały razem z agentami ([docs/](docs/README.md)). Do 17.10, 13:30 prowadziliśmy dziennik promptów: [docs/ai-log.md](docs/ai-log.md).
+- **Dane:** skrypty pobrały teksty z Wikipedii (lokalny zrzut ZIM i API), Wikidaty, OSM, Commons, Warszawikii (API MediaWiki), warszawa1939.pl i Wirtualnego Sztetla (te dwa przez Firecrawl) oraz z API miasta. Fakty z artykułów Wikipedii i Warszawikii oraz z adresów w biogramach wyciągały agenty Claude Haiku. Pracowały tylko na pobranym tekście, bez dostępu do sieci, i każdy fakt ma źródło. Skrypt sprawdził, czy każdy rok z faktu występuje w źródle, a fakty, które nie przeszły, nie trafiają do opowieści. Nazwisk i liczb skrypt nie sprawdzał. Karty z warszawa1939.pl i tagi OSM weszły dosłownie, bez LLM. Angielskie nazwy i streszczenia miejsc to tłumaczenia agentów. W pierwszych dwóch rundach (okolica 42 Warsaw) agenty Haiku szukały też w sieci. Szczegóły: [docs/historia/](docs/historia/README.md), [docs/historia/dzielnice/](docs/historia/dzielnice/README.md).
+- **Grafika:** awatar Sawy to obraz 32 z `google/nano-banana-2.1` (fal.ai). Wcześniej w 7 rundach szkiców sprawdziliśmy 10 modeli obrazów, m.in. GPT Image, Flux, Seedream i Ideogram. Ikonę aplikacji, pozy Sawy i 8 ikon zainteresowań w onboardingu zrobił `google/nano-banana-2.1/edit` z obrazem 32 jako referencją, a tło wycinał `fal-ai/birefnet/v2`. Ikony przystanku, tramwaju i autobusu na mapie to `flux-2-pro`, sceny z Sawą do prezentacji to `google/nano-banana-2-lite`. Znaczniki miejsc na mapie to glify SVG rysowane skryptem, bez modelu obrazów. Kierunek, prompty i wybór należały do zespołu, a wszystkie prompty i koszty są w [docs/awatar/](docs/awatar/README.md) i [docs/ui/](docs/ui/README.md).
+- **Film i nagrania do pitchu:** nagranie demo składa Remotion z zapisu ekranu aplikacji (`tools/pitch-video/`). Głos Sawy w nagraniach i w filmie z tramwaju to plik wygenerowany przez aplikację (ElevenLabs), bez osobnego lektora AI.
+- **Dokumentacja i plan:** analiza danych, PRD, plany i makiety ekranów powstawały razem z agentami ([docs/](docs/README.md)). Plan pitchu Paweł przygotował z agentem: research taktyk z artykułów, potem dwie rundy narady sześciu agentów w rolach znanych mówców i projektantów ([docs/pitch/plan-pitchu.md](docs/pitch/plan-pitchu.md)). Do 17.10, 13:30 prowadziliśmy dziennik promptów: [docs/ai-log.md](docs/ai-log.md).
 
 ---
 
@@ -191,7 +193,7 @@ pnpm dev
 - Web: http://localhost:3000
 - API: http://localhost:8787/health
 
-Sekrety (token dane.um.warszawa.pl, klucze Supabase i LLM) wpisujesz tylko do `.env.local`. Ten plik nie trafia do git.
+Sekrety (token dane.um.warszawa.pl, klucze Supabase i LLM) wpisujesz tylko do `.env.local`. Ten plik nie trafia do git. Aplikacja wstaje też bez kluczy: zamiast bazy API podaje kilka przykładowych miejsc, odjazdy liczy z rozkładu GTFS, a opowieść to same fakty bez LLM. Co włącza który klucz, opisuje `apps/api/.env.example`.
 
 ### Polecenia
 
