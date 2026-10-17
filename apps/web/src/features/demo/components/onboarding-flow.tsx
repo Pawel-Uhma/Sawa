@@ -4,7 +4,6 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { type Lang, LangSwitch, pick, useLang, useT } from "@/features/i18n";
-import { ThemeToggleButton } from "@/features/theme";
 import { haptic, SPRING } from "../lib/device";
 import {
   AUDIENCES,
@@ -182,8 +181,6 @@ export function OnboardingFlow({ onDone }: OnboardingFlowProps) {
             )}
             {/* Gość z zagranicy przełącza język na pierwszym ekranie, zanim cokolwiek przeczyta */}
             {step === "welcome" && <LangSwitch className="w-40 shrink-0" />}
-            {/* Motyw od pierwszego ekranu, zanim ktoś dojdzie do menu; „Auto” jest w menu Sawy */}
-            <ThemeToggleButton className="-mr-2" />
           </header>
 
           <div className={step === "welcome" ? "pt-6 md:pt-0" : ""}>
