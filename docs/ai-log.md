@@ -3283,3 +3283,19 @@
 
 
 **AI:** Założyłem projekt Railway `sawa` (serwis `api` z repo, start przez pnpm, healthcheck /health, CORS dla Vercela) i projekt Vercel `sawa` (root `apps/web`, region fra1, NEXT_PUBLIC_API_URL na Railway). Web działa pod https://sawa-beta.vercel.app, bo sawa.vercel.app jest zajęte; API pod https://api-production-d213.up.railway.app. Zaktualizowałem todo.md (T-60, T-62) i stan.md.
+
+### 2026-10-17 13:16 · Pawel
+
+> Na podstawie tego zrob zmockowane demo frontendu . ma dzialac na mobile i deskto - na razie bez polaczenia do bazy i backenud tylko placeholder data - i push na vercel
+
+
+### 2026-10-17 13:16 · Pawel
+
+> zmien adres na sawa-hackathon
+
+
+### 2026-10-17 · Pawel
+
+> zmien adres na sawa-hackathon
+
+**AI:** Produkcyjny adres weba to teraz https://sawa-hackathon.vercel.app (domena projektu w Vercelu, sawa-beta usunięta). CORS_ORIGINS w Railway zaktualizowane, stan.md i todo.md też.

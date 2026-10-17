@@ -54,7 +54,7 @@
 - [ ] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — 22:00
 - [ ] **T-35** Wersja mobilna: 16 px marginesu, bez poziomego scrolla — `R3` — 22:00
 - [ ] **T-36** Podstrona demo: stała lokalizacja, symulowana jazda ok. 1,5 min — `R3` — niedziela 08:00
-- [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-beta.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
+- [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos
 
