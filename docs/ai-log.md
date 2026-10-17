@@ -3209,3 +3209,39 @@
 > +
 > +**AI:** Pawel wybrał ElevenLabs. Zrobiłem prywatny artefakt „Głos Sawy w ElevenLabs” z 8 krokami (konto, plan Starter, głos z Voice Library, klucz z ograniczeniami w apps/api/.env.local i Railway), wyborem modelu, głosu, ustawień i formatu, kalkulatorem kredytów i konfiguracją do skopiowania dla R4 (T-43).
 
+
+### 2026-10-17 13:07 · Pawel
+
+> uzyj mojego vercel mcp i railway mcp - dodaj sawe pod sawa.vercel.app i backend sawy na railway
+
+
+### 2026-10-17 13:08 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 5 +++++
+>  1 file changed, 5 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index ac50822..2baee86 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -3209,3 +3209,8 @@
+>  > +
+>  > +**AI:** Pawel wybrał ElevenLabs. Zrobiłem prywatny artefakt „Głos Sawy w ElevenLabs” z 8 krokami (konto, plan Starter, głos z Voice Library, klucz z ograniczeniami w apps/api/.env.local i Railway), wyborem modelu, głosu, ustawień i formatu, kalkulatorem kredytów i konfiguracją do skopiowania dla R4 (T-43).
+>  
+> +
+> +### 2026-10-17 13:07 · Pawel
+> +
+> +> uzyj mojego vercel mcp i railway mcp - dodaj sawe pod sawa.vercel.app i backend sawy na railway
+> +
+
