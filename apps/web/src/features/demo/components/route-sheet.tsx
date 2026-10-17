@@ -30,7 +30,7 @@ type RouteSheetProps = {
   /** Przejście do miejsca z przycisków: zegar jazdy staje przy nim, opowieść gra od początku. */
   onPlayStop: (index: number) => void;
   /** Zegar jazdy: który punkt już powinien mieć opowieść, ile trwa jazda i przeskok suwakiem. */
-  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "seekTo">;
+  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "held" | "seekTo">;
   /** Długość przejażdżki z planera (s), zakres suwaka. */
   totalSec: number;
   onBack: () => void;
@@ -136,6 +136,7 @@ export function RouteSheet(props: RouteSheetProps) {
             totalSec={totalSec}
             isPlaying={player.isPlaying}
             waiting={clock.waitSec !== null}
+            held={clock.held}
             loading={player.loading}
             onToggle={togglePlay}
             onStop={() => restart(false)}

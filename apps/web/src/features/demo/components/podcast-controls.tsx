@@ -37,6 +37,8 @@ export type PodcastControlsProps = {
   isPlaying: boolean;
   /** Sawa czeka na pierwsze miejsce. */
   waiting: boolean;
+  /** Użytkownik zatrzymał Sawę (stop albo pauza): zegar jazdy stoi do wznowienia. */
+  held?: boolean;
   /** Opowieść o bieżącym miejscu jeszcze się ładuje (tekst albo głos). */
   loading: boolean;
   onToggle: () => void;
@@ -81,6 +83,7 @@ export function PodcastControls({
   totalSec,
   isPlaying,
   waiting,
+  held = false,
   loading,
   onToggle,
   onStop,
@@ -113,7 +116,7 @@ export function PodcastControls({
   const buffering = isPlaying && loading && !waiting && !dragging;
   const status = dragging
     ? t("Przejdź do", "Go to")
-    : waiting
+    : waiting && !held
       ? t("Najpierw", "First up")
       : buffering
         ? t("Sawa szykuje opowieść", "Sawa is getting ready")
@@ -232,7 +235,7 @@ export function PodcastControls({
           aria-label={
             isPlaying
               ? t("Wstrzymaj Sawę", "Pause Sawa")
-              : waiting
+              : waiting && !held
                 ? t("Opowiedz teraz", "Tell me now")
                 : t("Wznów Sawę", "Resume Sawa")
           }

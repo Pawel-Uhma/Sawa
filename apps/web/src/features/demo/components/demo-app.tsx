@@ -3,7 +3,7 @@
 import { HACKATHON_VENUE, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { type SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LoadingCover } from "@/components/waiting";
 import { type Lang, pick, useLang, useT } from "@/features/i18n";
 import type { MapCamera, MapPadding } from "@/features/map";
@@ -284,9 +284,11 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const player = useStoryPlayer(route, activeIndex, listener);
   const { setIsPlaying, rewind } = player;
   // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
-  // Pauza i stop Sawy zatrzymują też zegar (suwak i odliczanie).
+  // Pauza i stop Sawy zatrzymują też zegar (suwak i odliczanie), także przed pierwszym miejscem.
   const clock = useRideClock(route, player.isPlaying);
-  const { syncTo } = clock;
+  const { syncTo, held, setHeld } = clock;
+  const heldRef = useRef(held);
+  heldRef.current = held;
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
   const position = start.status === "located" ? start.point : null;
   useGpsClockSync(route, position, clock);
@@ -308,29 +310,51 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     wasWaiting.current = waiting;
     // Start z zakładki Sawa (poza ekranem trasy) zostaje, nie pauzujemy go od razu
     if (arrived && !isRoute) return;
-    setIsPlaying(isRoute && !waiting);
+    // Zatrzymana przez użytkownika Sawa nie rusza sama po powrocie na trasę
+    setIsPlaying(isRoute && !waiting && !heldRef.current);
   }, [isRoute, waiting, setIsPlaying]);
   const firstStop = route[0];
   useEffect(() => {
-    if (waiting && firstStop && start.status === "located" && isAt(origin, firstStop)) syncTo(0);
-  }, [waiting, firstStop, start.status, origin, syncTo]);
-  // Stuknięcie w odtwarzanie przed pierwszym miejscem znaczy „opowiadaj już teraz”.
+    if (held || !waiting || !firstStop || start.status !== "located") return;
+    if (isAt(origin, firstStop)) syncTo(0);
+  }, [held, waiting, firstStop, start.status, origin, syncTo]);
+  // Sterowanie użytkownika: stop i pauza zatrzymują zegar, odtwarzanie go wznawia.
+  // Stuknięcie w odtwarzanie przed pierwszym miejscem znaczy „opowiadaj już teraz”,
+  // a po stopie w tym czasie: zegar rusza od miejsca, w którym stanął.
   const ridePlayer = useMemo(() => {
-    if (!waiting) return player;
     const toggle = () => {
-      syncTo(0);
-      player.toggle();
+      if (player.isPlaying) {
+        setHeld(true);
+        player.toggle();
+        return;
+      }
+      setHeld(false);
+      if (!waiting) player.toggle();
+      else if (!held) {
+        syncTo(0);
+        player.toggle();
+      }
     };
-    return { ...player, toggle };
-  }, [waiting, player, syncTo]);
+    const restart = (keepPlaying: boolean) => {
+      setHeld(!keepPlaying);
+      player.restart(keepPlaying);
+    };
+    const setPlaying = (action: SetStateAction<boolean>) => {
+      const playing = typeof action === "function" ? action(player.isPlaying) : action;
+      setHeld(!playing);
+      player.setIsPlaying(playing);
+    };
+    return { ...player, toggle, restart, setIsPlaying: setPlaying };
+  }, [waiting, held, player, syncTo, setHeld]);
   const playStop = useCallback(
     (index: number) => {
       if (index < 0 || index >= route.length) return;
       rewind();
+      setHeld(false);
       setIsPlaying(true);
       pickStop(index);
     },
-    [route.length, rewind, setIsPlaying, pickStop],
+    [route.length, rewind, setHeld, setIsPlaying, pickStop],
   );
   const menu: SawaMenuActions = useMemo(
     () => ({

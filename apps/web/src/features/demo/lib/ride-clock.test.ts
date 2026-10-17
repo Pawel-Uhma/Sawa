@@ -57,6 +57,12 @@ describe("isClockRunning", () => {
     expect(isClockRunning(stops, 120, true)).toBe(true);
   });
 
+  it("stands before the first place once the user stopped Sawa", () => {
+    expect(isClockRunning(stops, 10, false, true)).toBe(false);
+    expect(isClockRunning(stops, 120, true, true)).toBe(false);
+    expect(isClockRunning(stops, 10, false, false)).toBe(true);
+  });
+
   it("does not run without a route", () => {
     expect(isClockRunning([], 0, true)).toBe(false);
   });
