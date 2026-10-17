@@ -15,12 +15,16 @@
 ## Start i wspólne (sobota 17.10)
 
 - [ ] **T-08** Każdy wpisuje swój `git user.name` i rolę w [zespol.md](zespol.md), zanim zacznie pracę — `Wszyscy` — 11:45
-- [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git) — `Wszyscy` — 11:30
+- [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git); klucz jest na Discordzie zespołu — `Wszyscy` — 11:30
 - [ ] **T-09** Konta: GitHub (repo), Vercel, dostęp do LLM — `Wszyscy` — 12:00
 - [ ] **T-02** Projekt Supabase na koncie zespołu (nie prywatnym); kto zakłada, do potwierdzenia — `R2` — 13:00
 - [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, maplibre, pierwszy push — `R3` — 13:00
 - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
 - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
+- [ ] **T-62** Zasady pracy z repo: gałęzie, PR, kto merge'uje; zapisać w `CLAUDE.md` — `Wszyscy` — 13:00
+- [ ] **T-63** Decyzja: route handlery na Vercelu czy backend na Railway — `R1` + `R4` — 13:00
+- [ ] **T-64** Decyzja o domenie (własna czy subdomena Vercela) — `R5` — 15:00
+- [ ] **T-65** Znaleźć darmowe API do własnego stylu mapy, sprawdzić z MapLibre — `R3` — 13:00
 - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
 
 ## R1 · Dane i planer tras

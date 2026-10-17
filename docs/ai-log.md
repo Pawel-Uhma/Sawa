@@ -688,3 +688,312 @@
 >    },
 >    "elements": [
 
+
+### 2026-10-17 11:34 · Pawel
+
+> przetworz spotkanie 2 : 
+> 
+> <pasted_content id="de84">
+> You: Tu fotel PIR, spotkanie regularne.
+> You:  I jeszcze słów...
+> You:  Gdzie jest ten w kartonie... jakiś regulamin i tak dalej?
+> You:  Kto znajdzie?
+> You:  Na stronie jest regulamin.
+> You:  Yyy, i weźmiemy jakąś domenę od razu, kupimy, nie? 17 zł za rok, jak ostatnio kupowałem, to...
+> You:  Możemy skorzystać z tej Wersela.
+> You:  Ale no nie wiem.
+> You:  Czy też można jeść za darmo.
+> You:  Ja mam domenę borys.monster.
+> You:  Chcemy użyć.
+> You:  Ja mam rockidomek.party.
+> You:  Okej.
+> You:  Okej.
+> You:  Ja mam umai.umai.pl.
+> You:  Parę innych też mam, no.
+> You:  Dwa kije.pl może pasować, na przykład.
+> You:  warszawa.pl?
+> You:  Może być.
+> You:  Dobra.
+> You:  A jak nie, byśmy hostowali na warszawa.pl.
+> You:  Sama.warszawa.pl.
+> You:  Myślę, że byśmy wygrali.
+> You:  Dobra, mój agent już to pushuje.
+> You:  Podeślij plecak.
+> You:  Możesz?
+> You:  Dziękuję.
+> You:  Dobra, pushnięte jest.
+> You:  Wrzucam na Discorda.
+> You:  Macie klucz API do danych.
+> You:  Ej, chyba... chyba użyję grog- groka, żeby mi usunął te wcześniej, bo on nie ma żadnych zabezpieczeń pomiędzy...
+> You:  Cześć.
+> You:  Cześć.
+> You:  Potrzebujecie karty, co?
+> You:  Dobra, to teraz tak: proszę tylko, żebyście mi powiedzieli, kto będzie odpowiedzialny?
+> You:  Ja mogę.
+> You:  Dobra, to masz tak: ty masz już kartę, masz to, wpisz nazwę teamu i się podpisz.
+> You:  Dobra.
+> You:  Jesteście sami.
+> You:  My już kończymy, jak coś, także...
+> You:  Kurczę.
+> You:  No to dobrze.
+> You:  Może jakąś listę...
+> You:  Zasad.
+> You:  Do tego, jak budujemy współpracować na tym repo, żeby to się potem dało ładnie komerczować.
+> You:  Możesz, no. No, takie gitowe, nie?
+> You:  Git flow jakiś.
+> You:  Kurde, napisałem, że for people we'll be working on this a w sumie for kocyków to working.
+> You:  No, agentów pewnie jeszcze więcej.
+> You:  Ej, grok nie miał problemu z tym, żeby przesunąć wszystko, no to do dzisiaj.
+> You:  Yyy, napiszę mu.
+> You:  Ta-da.
+> You:  Ej, czy w którejś z tych plików jest już zdefiniowany tekst, tak?
+> You:  Yyy, czy możemy napisać?
+> You:  Yyy, coś tam jest wspomniane, ale możemy... możemy od nowa napisać. Tak, dokładniej.
+> You:  Supabase.
+> You:  Ej, teraz podobno genialny pomysł, który byłby na czasie.
+> You:  Zrobić... ty zrobiłeś 40 commitów już?
+> You:  No.
+> You:  Gościu, wiesz, ile ja mam w Weddeli commitów?
+> You:  Ja tam walę z...
+> You:  Środki.
+> You:  Weddelia.
+> You:  Myślę, że dobijemy dzisiaj do 1000.
+> You:  200... 2008 commitów.
+> You:  Eee, powiecie mi jeszcze raz tekst, tak?
+> You:  Yyy...
+> You:  Co do czego?
+> You:  Supabase do bazy danych.
+> You:  Tak.
+> You:  Next.js.
+> You:  Tutaj, no.
+> You:  Do tego. On się fajnie łączy z Werselem.
+> You:  Yyy, backend jak... no, stawiamy backend. To może Railway?
+> You:  Ja mogę, ja mam płatną.
+> You:  Tam dużo zapytań nie będzie.
+> You:  Yyy, co tam.
+> You:  Jeszcze?
+> You:  Claude.
+> You:  To jest... kurde.
+> You:  No, chyba.
+> You:  Podchodzimy do merge tego. To musi być wtedy jakiś agent działający na GitHubie.
+> You:  Kto to merge'uje?
+> You:  Nie, możesz mu powiedzieć, że merge'ował z twojego, no. A, i jest mega fajne: za darmo robiłem to raz do Weddelii, taki koncept, jest takie darmowe API.
+> You:  Który ci tworzy mapę. Wydaje się, że to ten dzisiaj...
+> You:  dzisiaj korzystałeś z lokalizacji. Jak to się nazywało?
+> You:  UI? Coś takiego?
+> You:  Waze.
+> You:  Waze. Oni korzystają z tego.
+> You:  Jest takie darmowe API, gdzie możesz sobie customizować mapę, jak chcesz. Że na przykład chcesz zrobić drogę, która jest szeroka, różne kolory i tak dalej. Fajnie zrobić jakąś fajną mapę, nie żeby była taka z Google Mapsa, tylko taka customowa.
+> You:  Zaraz.
+> You:  Zaraz znajdę, jak to się nazywa.
+> You:  Yyy,
+> </pasted_content id="de84">
+
+**AI:** Przetworzono spotkanie 2 (stack, repo, domena): podsumowanie w `docs/spotkania/2026-10-17-1130-stack-repo-domena.md`, otwarte kwestie (Railway, domena, git flow, styl mapy) w `05-plan-architektury.md`, `stan.md` i `todo.md` (T-62–T-65).
+
+### 2026-10-17 11:35 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/05-plan-architektury.md |  10 ++++++---
+>  docs/ai-log.md               | 102 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>  docs/stan.md                 |   8 ++++++-
+>  docs/todo.md                 |   6 +++++-
+>  4 files changed, 121 insertions(+), 5 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/05-plan-architektury.md b/docs/05-plan-architektury.md
+> index cda1879..7f31510 100644
+> --- a/docs/05-plan-architektury.md
+> +++ b/docs/05-plan-architektury.md
+> @@ -8,13 +8,13 @@
+>  |---|---|---|
+>  | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
+>  | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
+> -| Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source |
+> -| Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache |
+> +| Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source. Chcemy własny styl (nie wygląd Google Maps); dostawca stylu do ustalenia (R3) |
+> +| Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache. Alternatywa: osobny backend na Railway (ktoś ma płatne konto), do decyzji R1 + R4 |
+>  | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
+>  | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
+>  | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
+>  | Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
+> -| Deploy | Vercel | Link do działającej aplikacji na pitchu |
+> +| Deploy | Vercel | Link do działającej aplikacji na pitchu. Domena: własna (ok. 17 zł/rok) czy subdomena Vercela, do decyzji R5 |
+>  
+>  ## Przepływ danych
+>  
+> @@ -67,6 +67,10 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
+>  
+>  ## Otwarte pytania
+>  
+> +- [ ] Osobny backend na Railway czy wystarczą route handlery na Vercelu? (spotkanie 17.10, 11:30)
+> +- [ ] Zasady pracy z repo: gałęzie, PR, kto merge'uje (może agent na GitHubie)
+> +- [ ] Darmowe API do własnego stylu mapy, zgodne z MapLibre
+> +
+>  - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
+>  - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token
+>  - [ ] Google Places: każdy zakłada własny klucz (1000 darmowych zapytań), cache w Supabase. Czy wystarczy Wikipedia?
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index d22f99c..3a3ba31 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -688,3 +688,105 @@
+>  >    },
+>  >    "elements": [
+>  
+> +
+> +### 2026-10-17 11:34 · Pawel
+> +
+> +> przetworz spotkanie 2 : 
+> +> 
+> +> <pasted_content id="de84">
+> +> You: Tu fotel PIR, spotkanie regularne.
+> +> You:  I jeszcze słów...
+> +> You:  Gdzie jest ten w kartonie... jakiś regulamin i tak dalej?
+> +> You:  Kto znajdzie?
+> +> You:  Na stronie jest regulamin.
+> +> You:  Yyy, i weźmiemy jakąś domenę od razu, kupimy, nie? 17 zł za rok, jak ostatnio kupowałem, to...
+> +> You:  Możemy skorzystać z tej Wersela.
+> +> You:  Ale no nie wiem.
+> +> You:  Czy też można jeść za darmo.
+> +> You:  Ja mam domenę borys.monster.
+> +> You:  Chcemy użyć.
+> +> You:  Ja mam rockidomek.party.
+> +> You:  Okej.
+> +> You:  Okej.
+> +> You:  Ja mam umai.umai.pl.
+> +> You:  Parę innych też mam, no.
+> +> You:  Dwa kije.pl może pasować, na przykład.
+> +> You:  warszawa.pl?
+> +> You:  Może być.
+> +> You:  Dobra.
+> +> You:  A jak nie, byśmy hostowali na warszawa.pl.
+> +> You:  Sama.warszawa.pl.
+> +> You:  Myślę, że byśmy wygrali.
+> +> You:  Dobra, mój agent już to pushuje.
+> +> You:  Podeślij plecak.
+> +> You:  Możesz?
+> +> You:  Dziękuję.
+> +> You:  Dobra, pushnięte jest.
+> +> You:  Wrzucam na Discorda.
+> +> You:  Macie klucz API do danych.
+> +> You:  Ej, chyba... chyba użyję grog- groka, żeby mi usunął te wcześniej, bo on nie ma żadnych zabezpieczeń pomiędzy...
+> +> You:  Cześć.
+> +> You:  Cześć.
+> +> You:  Potrzebujecie karty, co?
+> +> You:  Dobra, to teraz tak: proszę tylko, żebyście mi powiedzieli, kto będzie odpowiedzialny?
+> +> You:  Ja mogę.
+> +> You:  Dobra, to masz tak: ty masz już kartę, masz to, wpisz nazwę teamu i się podpisz.
+> +> You:  Dobra.
+> +> You:  Jesteście sami.
+> +> You:  My już kończymy, jak coś, także...
+> +> You:  Kurczę.
+> +> You:  No to dobrze.
+> +> You:  Może jakąś listę...
+> +> You:  Zasad.
+> +> You:  Do tego, jak budujemy współpracować na tym repo, żeby to się potem dało ładnie komerczować.
+> +> You:  Możesz, no. No, takie gitowe, nie?
+> +> You:  Git flow jakiś.
+> +> You:  Kurde, napisałem, że for people we'll be working on this a w sumie for kocyków to working.
+> +> You:  No, agentów pewnie jeszcze więcej.
+> +> You:  Ej, grok nie miał problemu z tym, żeby przesunąć wszystko, no to do dzisiaj.
+> +> You:  Yyy, napiszę mu.
+> +> You:  Ta-da.
+> +> You:  Ej, czy w którejś z tych plików jest już zdefiniowany tekst, tak?
+> +> You:  Yyy, czy możemy napisać?
+> +> You:  Yyy, coś tam jest wspomniane, ale możemy... możemy od nowa napisać. Tak, dokładniej.
+> +> You:  Supabase.
+> +> You:  Ej, teraz podobno genialny pomysł, który byłby na czasie.
+> +> You:  Zrobić... ty zrobiłeś 40 commitów już?
+> +> You:  No.
+> +> You:  Gościu, wiesz, ile ja mam w Weddeli commitów?
+> +> You:  Ja tam walę z...
+> +> You:  Środki.
+> +> You:  Weddelia.
+> +> You:  Myślę, że dobijemy dzisiaj do 1000.
+> +> You:  200... 2008 commitów.
+> +> You:  Eee, powiecie mi jeszcze raz tekst, tak?
+> +> You:  Yyy...
+> +> You:  Co do czego?
+> +> You:  Supabase do bazy danych.
+> +> You:  Tak.
+> +> You:  Next.js.
+> +> You:  Tutaj, no.
+> +> You:  Do tego. On się fajnie łączy z Werselem.
+> +> You:  Yyy, backend jak... no, stawiamy backend. To może Railway?
+> +> You:  Ja mogę, ja mam płatną.
+> +> You:  Tam dużo zapytań nie będzie.
+> +> You:  Yyy, co tam.
+> +> You:  Jeszcze?
+> +> You:  Claude.
+> +> You:  To jest... kurde.
+> +> You:  No, chyba.
+> +> You:  Podchodzimy do merge tego. To musi być wtedy jakiś agent działający na GitHubie.
+> +> You:  Kto to merge'uje?
+> +> You:  Nie, możesz mu powiedzieć, że merge'ował z twojego, no. A, i jest mega fajne: za darmo robiłem to raz do Weddelii, taki koncept, jest takie darmowe API.
+> +> You:  Który ci tworzy mapę. Wydaje się, że to ten dzisiaj...
+> +> You:  dzisiaj korzystałeś z lokalizacji. Jak to się nazywało?
+> +> You:  UI? Coś takiego?
+> +> You:  Waze.
+> +> You:  Waze. Oni korzystają z tego.
+> +> You:  Jest takie darmowe API, gdzie możesz sobie customizować mapę, jak chcesz. Że na przykład chcesz zrobić drogę, która jest szeroka, różne kolory i tak dalej. Fajnie zrobić jakąś fajną mapę, nie żeby była taka z Google Mapsa, tylko taka customowa.
+> +> You:  Zaraz.
+> +> You:  Zaraz znajdę, jak to się nazywa.
+> +> You:  Yyy,
+> +> </pasted_content id="de84">
+> +
+> +**AI:** Przetworzono spotkanie 2 (stack, repo, domena): podsumowanie w `docs/spotkania/2026-10-17-1130-stack-repo-domena.md`, otwarte kwestie (Railway, domena, git flow, styl mapy) w `05-plan-architektury.md`, `stan.md` i `todo.md` (T-62–T-65).
+> diff --git a/docs/stan.md b/docs/stan.md
+> index 28036ca..c8c1435 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -26,9 +26,15 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
+>  | Google Places: klucz każdego czy tylko Wikipedia | R2 + zespół | [05-plan-architektury.md](05-plan-architektury.md) |
+>  | API Bielika: gdzie hostowane, limity; zapasowy LLM | R4 | [05-plan-architektury.md](05-plan-architektury.md) |
+>  | Rozpoznawanie powracającego użytkownika bez konta | zespół (dodatek, jeśli zostanie czas) | [spotkania/2026-10-17-1100-mvp-sawy.md](spotkania/2026-10-17-1100-mvp-sawy.md) |
+> +| Backend: route handlery na Vercelu czy Railway | R1 + R4 | [spotkania/2026-10-17-1130-stack-repo-domena.md](spotkania/2026-10-17-1130-stack-repo-domena.md) |
+> +| Domena: własna czy subdomena Vercela | R5 | jw. |
+> +| Zasady pracy z repo (gałęzie, PR, merge) | zespół | jw. |
+> +| Własny styl mapy: który dostawca | R3 | jw. |
+>  | Zdanie o wdrożeniu dla jury (Sawa obok Warszawa 19115) | R5 | [06-plan-dnia.md](06-plan-dnia.md) |
+>  
+>  ## Ostatnie decyzje
+>  
+> +- 17.10, 11:30: stack Next.js + Supabase + Vercel potwierdzony; repo z dokumentacją i klucz API na Discordzie zespołu. [Podsumowanie](spotkania/2026-10-17-1130-stack-repo-domena.md)
+> +
+>  - 17.10: MVP to historia miejsc; podcast z okna w komunikacji; bez logowania; Supabase na koncie zespołu. [Podsumowanie](spotkania/2026-10-17-1100-mvp-sawy.md)
+> -- 15.10: historia to punkt na mapie, format GeoJSON + Markdown, treść generuje LLM na żywo. [historia/README.md](historia/README.md)
+> +- 17.10: historia to punkt na mapie, format GeoJSON + Markdown, treść generuje LLM na żywo. [historia/README.md](historia/README.md)
+> diff --git a/docs/todo.md b/docs/todo.md
+> index 58847c7..9f3343e 100644
+> --- a/docs/todo.md
+> +++ b/docs/todo.md
+> @@ -15,12 +15,16 @@
+>  ## Start i wspólne (sobota 17.10)
+>  
+>  - [ ] **T-08** Każdy wpisuje swój `git user.name` i rolę w [zespol.md](zespol.md), zanim zacznie pracę — `Wszyscy` — 11:45
+> -- [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git) — `Wszyscy` — 11:30
+> +- [ ] **T-03** Każdy ma token API dane.um.warszawa.pl w `.env.local` (nie w git); klucz jest na Discordzie zespołu — `Wszyscy` — 11:30
+>  - [ ] **T-09** Konta: GitHub (repo), Vercel, dostęp do LLM — `Wszyscy` — 12:00
+>  - [ ] **T-02** Projekt Supabase na koncie zespołu (nie prywatnym); kto zakłada, do potwierdzenia — `R2` — 13:00
+>  - [ ] **T-04** Repo aplikacji wg [05-plan-architektury.md](05-plan-architektury.md): `create-next-app`, shadcn, maplibre, pierwszy push — `R3` — 13:00
+>  - [ ] **T-01** Sprawdzić API Bielika (gdzie, limity, szybkość); wybrać zapasowy LLM — `R4` — 13:00
+>  - [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
+> +- [ ] **T-62** Zasady pracy z repo: gałęzie, PR, kto merge'uje; zapisać w `CLAUDE.md` — `Wszyscy` — 13:00
+> +- [ ] **T-63** Decyzja: route handlery na Vercelu czy backend na Railway — `R1` + `R4` — 13:00
+> +- [ ] **T-64** Decyzja o domenie (własna czy subdomena Vercela) — `R5` — 15:00
+> +- [ ] **T-65** Znaleźć darmowe API do własnego stylu mapy, sprawdzić z MapLibre — `R3` — 13:00
+>  - [ ] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00
+>  
+>  ## R1 · Dane i planer tras
+> new file: docs/spotkania/2026-10-17-1130-stack-repo-domena.md
+

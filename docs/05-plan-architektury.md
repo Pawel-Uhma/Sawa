@@ -8,13 +8,13 @@
 |---|---|---|
 | Aplikacja | **Next.js (App Router) + TypeScript** | Frontend i backend w jednym repo, jeden `npm run dev` |
 | UI | Tailwind CSS + shadcn/ui | Szybko wygląda porządnie |
-| Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source |
-| Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache |
+| Mapa | MapLibre GL (`react-map-gl`) + podkład OSM | Bez klucza API, open source. Chcemy własny styl (nie wygląd Google Maps); dostawca stylu do ustalenia (R3) |
+| Backend | Route handlers `app/api/*` | Proxy do API miasta, token tylko na serwerze, cache. Alternatywa: osobny backend na Railway (ktoś ma płatne konto), do decyzji R1 + R4 |
 | LLM | Bielik (polski model), zapasowo Claude | Plus u jurorki z Bielik.AI. **Przed wydarzeniem sprawdzić, gdzie jest hostowane API Bielika i jaki ma limit** |
 | Zbieranie danych (jeśli pomysł D) | Skrypt Node na laptopie, zapis do SQLite lub JSON | Vercel nie pozwoli pytać API co 10 sekund |
 | Baza miejsc | Supabase (darmowy plan, konto zespołu) | Miejsca ze współrzędnymi z Wikipedii, `historia/` i Google Places; ustalone 17.10 |
 | Głos | TTS do wyboru (ElevenLabs lub open source) | Po MVP; sprawdzić jakość polskiego |
-| Deploy | Vercel | Link do działającej aplikacji na pitchu |
+| Deploy | Vercel | Link do działającej aplikacji na pitchu. Domena: własna (ok. 17 zł/rok) czy subdomena Vercela, do decyzji R5 |
 
 ## Przepływ danych
 
@@ -66,6 +66,10 @@ Potem kopiujemy `docs/` i `CLAUDE.md` do repo. Pierwszy commit to czysta instala
 5. Deploy, zamrożenie zmian o 9:00, potem już tylko pitch
 
 ## Otwarte pytania
+
+- [ ] Osobny backend na Railway czy wystarczą route handlery na Vercelu? (spotkanie 17.10, 11:30)
+- [ ] Zasady pracy z repo: gałęzie, PR, kto merge'uje (może agent na GitHubie)
+- [ ] Darmowe API do własnego stylu mapy, zgodne z MapLibre
 
 - [ ] API Bielika: gdzie, jak szybkie, jakie limity? Zapasowy LLM?
 - [ ] Czy API miasta ma limity zapytań na token? Każdy z nas ma własny token
