@@ -12,9 +12,9 @@ import Image from "next/image";
 import { type CSSProperties, useRef, useState } from "react";
 import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING } from "../lib/device";
-import { formatDuration, sliderPercent } from "../lib/format";
-import { DURATION_STOPS_MIN } from "../lib/mock-data";
+import { formatDuration } from "../lib/format";
 import { INTERESTS } from "../lib/onboarding";
+import { durationStops, stopPercent } from "../lib/ride-duration";
 import { DESTINATION_PRESETS, type RideEnd, type RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import { ArrowRightIcon, PinIcon } from "./icons";
@@ -23,6 +23,8 @@ import { PrimaryButton } from "./primary-button";
 type HomePanelProps = {
   interests: string[];
   durationMin: number;
+  /** Czas najszybszej drogi do wybranego celu; suwak nie schodzi poniżej niego (T-110). */
+  floorMin: number | null;
   onDurationChange: (durationMin: number) => void;
   travel: Travel;
   onTravelChange: (travel: Travel) => void;
@@ -41,8 +43,8 @@ type HomePanelProps = {
 const SCALE = [5, 30, 60, 120, 180, 240];
 
 /** Środek gałki suwaka (30 px) dla danej wartości: tor zaczyna się i kończy pół gałki od krawędzi. */
-function thumbCenter(durationMin: number): string {
-  return `calc(15px + (100% - 30px) * ${sliderPercent(durationMin) / 100})`;
+function thumbCenter(durationMin: number, stops: readonly number[]): string {
+  return `calc(15px + (100% - 30px) * ${stopPercent(durationMin, stops) / 100})`;
 }
 
 const TRAVEL_OPTIONS: { type: Travel; label: string }[] = [
@@ -59,6 +61,7 @@ const END_OPTIONS: { type: RideEndType; label: string }[] = [
 export function HomePanel({
   interests,
   durationMin,
+  floorMin,
   onDurationChange,
   travel,
   onTravelChange,
@@ -74,6 +77,10 @@ export function HomePanel({
 }: HomePanelProps) {
   const sawa = useAnimationControls();
   const lastStep = useRef(durationMin);
+  const stops = durationStops(floorMin);
+  // Przy najszybszej drodze pierwszy podpis to ta droga, a krótsze wartości znikają z podpisów.
+  const scale =
+    floorMin === null ? SCALE : [floorMin, ...SCALE.filter((value) => value > floorMin)];
 
   const labels = interests
     .map((key) => INTERESTS.find((item) => item.key === key)?.label)
@@ -124,37 +131,42 @@ export function HomePanel({
         aria-label="Czas przejażdżki"
         aria-valuetext={formatDuration(durationMin)}
         min={0}
-        max={DURATION_STOPS_MIN.length - 1}
+        max={stops.length - 1}
         step={1}
-        value={DURATION_STOPS_MIN.indexOf(durationMin)}
+        value={stops.indexOf(durationMin)}
         onChange={(event) => {
-          const value = DURATION_STOPS_MIN[Number(event.target.value)];
+          const value = stops[Number(event.target.value)];
           if (value !== lastStep.current) haptic(4);
           lastStep.current = value;
           onDurationChange(value);
         }}
-        style={{ "--postep": thumbCenter(durationMin) } as CSSProperties}
+        style={{ "--postep": thumbCenter(durationMin, stops) } as CSSProperties}
       />
       <div aria-hidden className="relative h-4 text-xs font-semibold text-tekst-3">
-        {SCALE.map((value, index) => (
+        {scale.map((value, index) => (
           <span
             key={value}
             // Skrajne podpisy przy krawędziach, żeby nie wystawały poza kartę.
             style={
               index === 0
                 ? { left: 0 }
-                : index === SCALE.length - 1
+                : index === scale.length - 1
                   ? { right: 0 }
-                  : { left: thumbCenter(value) }
+                  : { left: thumbCenter(value, stops) }
             }
             className={`absolute top-0 whitespace-nowrap tabular-nums transition-colors duration-200 ${
-              index === 0 || index === SCALE.length - 1 ? "" : "-translate-x-1/2"
+              index === 0 || index === scale.length - 1 ? "" : "-translate-x-1/2"
             } ${value === durationMin ? "text-glebia" : ""}`}
           >
             {formatDuration(value)}
           </span>
         ))}
       </div>
+      {floorMin !== null && (
+        <p className="mt-2 text-xs text-tekst-2">
+          Najszybciej do tego celu: {formatDuration(floorMin)}. Krócej się nie da.
+        </p>
+      )}
 
       <TravelPicker travel={travel} onChange={onTravelChange} />
 

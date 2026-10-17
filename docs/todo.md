@@ -58,7 +58,7 @@
 
 ## R3 · Frontend i mapa
 
-- [ ] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3`
+- [~] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Paweł, 17.10 17:58; razem z T-117)
 - [ ] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3`
 - [x] **T-30** Mapa MapLibre z jednym zbiorem punktów (miejsca z `/v1/places`, nie z T-10) — `R3` — 13:00 (Antek, 16:40; plan w [14-plan-mapy.md](14-plan-mapy.md); `/mapa` z kartą miejsca i trasą PR #12, API `SawaMap` dla ekranów PR #16, miejsca z kafelków widoku na całą Warszawę PR #27)
 - [x] **T-105** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; ekrany demo zostają jasne, dopóki nie przejdą na tokeny)
@@ -83,7 +83,7 @@
 - [x] **T-118** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42) — (Antek z agentem, 17:42)
 - [ ] **T-115** Ekrany demo na tokeny kolorów (`bg-powierzchnia`, `bg-tlo-2`) zamiast `bg-white` i hexów, potem klasa `.motyw` na `<body>`, żeby ciemny motyw działał wszędzie (dziś w trybie jazdy syrenka ma ciemne pachy na jasnym tle) — `R3` (Paweł)
 - [ ] **T-116** Usunąć „Przed siebie” z wyboru końca trasy (wywozi w przypadkowe miejsce); zostają „Wracam tu” i „Do celu” — `R3` (Paweł)
-- [ ] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`
+- [~] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`; zrobione razem z T-110 (suwak nie schodzi poniżej najszybszej trasy, Paweł, 17.10 17:58)
 - [ ] **T-112** Śledzenie lokalizacji na żywo: z pozycji użytkownika wybierać opowieść (`activeIndex` do ekranu „Na żywo”) — `R3` (Antek)
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 

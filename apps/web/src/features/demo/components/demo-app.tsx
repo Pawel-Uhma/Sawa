@@ -7,9 +7,11 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
+import { useFastestRoute } from "../lib/fastest-route";
 import { forgetAll, useMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
+import { clampDuration } from "../lib/ride-duration";
 import {
   CUSTOM_DESTINATION_NAME,
   DESTINATION_PRESETS,
@@ -72,6 +74,10 @@ export function DemoApp() {
   // O zgodę na lokalizację pytamy dopiero po onboardingu
   const start = useStartPoint(stage !== "onboarding");
   const origin = start.point;
+  // Najszybsza droga do wybranego celu: jej czas to dolna granica suwaka, a zanim czas ruszy, pokazujemy ją na mapie (T-110, T-117)
+  const fastest = useFastestRoute(origin, rideEnd, travel, profile);
+  const floorMin = fastest ? fastest.totalMin : null;
+  const shownDuration = clampDuration(durationMin, floorMin);
 
   const showRoute = useCallback((next: Route) => {
     setPlanned(next);
@@ -84,7 +90,7 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
+      showRoute(await planRoute(origin, shownDuration, profile, rideEnd, travel));
     } catch {
       setPlanError(
         start.status === "located"
@@ -94,7 +100,7 @@ export function DemoApp() {
     } finally {
       setPlanning(false);
     }
-  }, [origin, start.status, durationMin, profile, rideEnd, travel, showRoute]);
+  }, [origin, start.status, shownDuration, profile, rideEnd, travel, showRoute]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);
@@ -258,7 +264,7 @@ export function DemoApp() {
         <div className="fixed inset-0 overflow-hidden bg-mapa">
           <div className="absolute inset-0">
             <SawaMap
-              route={isRoute ? (planned ?? undefined) : undefined}
+              route={isRoute ? (planned ?? undefined) : isHome ? (fastest ?? undefined) : undefined}
               camera={camera}
               padding={padding}
               user={origin}
@@ -291,7 +297,8 @@ export function DemoApp() {
               <HomePanel
                 key="home"
                 interests={profile.interests}
-                durationMin={durationMin}
+                durationMin={shownDuration}
+                floorMin={floorMin}
                 onDurationChange={setDurationMin}
                 travel={travel}
                 onTravelChange={setTravel}
@@ -312,7 +319,7 @@ export function DemoApp() {
                 profile={profile}
                 origin={origin}
                 originLabel={startLabel(start.status)}
-                durationMin={durationMin}
+                durationMin={shownDuration}
                 onDurationChange={setDurationMin}
                 rideEnd={rideEnd}
                 travel={travel}
@@ -344,7 +351,7 @@ export function DemoApp() {
             {isRoute && (
               <RouteSheet
                 key="route"
-                durationMin={durationMin}
+                durationMin={shownDuration}
                 end={planned ? routeEnd(planned, rideEnd) : null}
                 legs={planned?.legs ?? []}
                 stops={route}

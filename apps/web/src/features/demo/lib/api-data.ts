@@ -44,11 +44,12 @@ export function listenerOf(profile: Profile): Listener {
 
 /**
  * Plans a ride from `origin` (lib/start-point.ts) with `POST /v1/routes/plan`. Sends what Sawa
- * already told (lib/memory.ts), so places told in full give way to new ones.
+ * already told (lib/memory.ts), so places told in full give way to new ones. Bez `durationMin`
+ * przy celu planer zwraca najszybszą drogę do niego (T-104).
  */
 export async function planRoute(
   origin: LatLng,
-  durationMin: number,
+  durationMin: number | undefined,
   profile: Profile,
   end: RideEnd = { type: "loop" },
   travel: Travel = "transit",
