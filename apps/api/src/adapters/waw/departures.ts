@@ -1,7 +1,8 @@
 import { z } from "zod";
 import type { DepartureSource } from "../../services/ports";
+import { DEFAULT_WAW_API, type WawApi, wawActionUrl, wawHeaders } from "./api";
 
-const ENDPOINT = "https://dane.um.warszawa.pl/api/action/get_ztm_odjazdy_linii_z_przystanku";
+const ACTION = "get_ztm_odjazdy_linii_z_przystanku";
 const TIMEOUT_MS = 5_000;
 const CACHE_TTL_MS = 60 * 60 * 1000;
 
@@ -44,7 +45,11 @@ export function parseDepartureTimes(body: unknown): string[] {
  * Real departures of a line from a platform (ZTM timetable on dane.um.warszawa.pl).
  * GTFS stop id "100101" = busstopId "1001" + busstopNr "01". Any failure → undefined.
  */
-export function createWawDepartureSource(token: string | undefined): DepartureSource {
+export function createWawDepartureSource(
+  token: string | undefined,
+  api: WawApi = DEFAULT_WAW_API,
+): DepartureSource {
+  const endpoint = wawActionUrl(api, ACTION);
   const cache = new Map<string, { at: number; times: Promise<string[]> }>();
 
   // Shares the in-flight request, so parallel legs on one platform ask once.
@@ -52,9 +57,9 @@ export function createWawDepartureSource(token: string | undefined): DepartureSo
     const key = `${stopId}|${line}`;
     const hit = cache.get(key);
     if (hit && Date.now() - hit.at < CACHE_TTL_MS) return hit.times;
-    const list = fetch(ENDPOINT, {
+    const list = fetch(endpoint, {
       method: "POST",
-      headers: { Authorization: token as string, "Content-Type": "application/json" },
+      headers: wawHeaders(api, token as string),
       body: JSON.stringify({ busstopId: stopId.slice(0, 4), busstopNr: stopId.slice(4, 6), line }),
       signal: AbortSignal.timeout(TIMEOUT_MS),
     }).then(async (res) => (res.ok ? parseDepartureTimes(await res.json()) : []));

@@ -18,6 +18,16 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /** dane.um.warszawa.pl or a proxy in front of it (Railway's IPs are blocked by the city, #63). */
+  WAW_API_BASE_URL: z
+    .string()
+    .optional()
+    .transform((v) => v || "https://dane.um.warszawa.pl"),
+  /** Sent as X-Proxy-Key when WAW_API_BASE_URL is the proxy. */
+  WAW_PROXY_KEY: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
   // Empty values (copied from .env.example) mean "not set": the API then serves fake places.
   SUPABASE_URL: z
     .string()

@@ -51,8 +51,9 @@ if (!placesRepository)
     "SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set: /v1/places serves fake places, the planner uses places.geojson",
   );
 
+const wawApi = { baseUrl: env.WAW_API_BASE_URL, proxyKey: env.WAW_PROXY_KEY };
 const vehicles = createVehicleTracker({
-  source: env.WAW_TOKEN ? createWawVehiclePositionSource(env.WAW_TOKEN) : undefined,
+  source: env.WAW_TOKEN ? createWawVehiclePositionSource(env.WAW_TOKEN, wawApi) : undefined,
   transit,
   logger,
   alwaysOn: env.VEHICLES_ALWAYS_ON,
@@ -65,7 +66,7 @@ const routePlanner = createRoutePlanner({
   transit,
   places: placesRepository ?? placesFile,
   fallbackPlaces: placesRepository ? placesFile : undefined,
-  departures: createWawDepartureSource(env.WAW_TOKEN),
+  departures: createWawDepartureSource(env.WAW_TOKEN, wawApi),
   live: env.WAW_TOKEN ? createTrackerBoardingSource(vehicles) : undefined,
   walkPaths: env.WALK_ROUTER_URL ? createOsrmWalkPathSource(env.WALK_ROUTER_URL) : undefined,
   logger,
