@@ -28,31 +28,42 @@ export function createElevenLabsSynthesizer(options: ElevenLabsOptions): SpeechS
   const voiceId = options.voiceId ?? SAWA_VOICE_ID;
   const modelId = options.modelId ?? SAWA_MODEL_ID;
 
+  async function send(path: string, body: Record<string, unknown>): Promise<Response> {
+    let res: Response;
+    try {
+      res = await fetch(`${ENDPOINT}/${voiceId}${path}?output_format=${OUTPUT_FORMAT}`, {
+        method: "POST",
+        headers: {
+          "xi-api-key": options.apiKey,
+          "Content-Type": "application/json",
+          Accept: "audio/mpeg",
+        },
+        body: JSON.stringify({ ...body, model_id: modelId, voice_settings: SAWA_VOICE_SETTINGS }),
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
+    } catch (err) {
+      if (err instanceof DOMException && err.name === "TimeoutError") {
+        throw new AppError("UPSTREAM_TIMEOUT", "Speech synthesis timed out", { cause: err });
+      }
+      throw new AppError("UPSTREAM_ERROR", "Speech synthesis unreachable", { cause: err });
+    }
+    if (!res.ok) {
+      // The body explains quota and permission errors; it never contains the key.
+      const detail = (await res.text()).slice(0, 300);
+      throw new AppError("UPSTREAM_ERROR", `ElevenLabs answered ${res.status}: ${detail}`);
+    }
+    return res;
+  }
+
   return {
+    // The /stream endpoint sends mp3 frames as they are made; pieces of one story join into one mp3.
+    async *stream(text, { previousText }) {
+      const res = await send("/stream", { text, previous_text: previousText || undefined });
+      if (!res.body) return;
+      for await (const chunk of res.body) yield chunk;
+    },
     async synthesize(text) {
-      let res: Response;
-      try {
-        res = await fetch(`${ENDPOINT}/${voiceId}?output_format=${OUTPUT_FORMAT}`, {
-          method: "POST",
-          headers: {
-            "xi-api-key": options.apiKey,
-            "Content-Type": "application/json",
-            Accept: "audio/mpeg",
-          },
-          body: JSON.stringify({ text, model_id: modelId, voice_settings: SAWA_VOICE_SETTINGS }),
-          signal: AbortSignal.timeout(TIMEOUT_MS),
-        });
-      } catch (err) {
-        if (err instanceof DOMException && err.name === "TimeoutError") {
-          throw new AppError("UPSTREAM_TIMEOUT", "Speech synthesis timed out", { cause: err });
-        }
-        throw new AppError("UPSTREAM_ERROR", "Speech synthesis unreachable", { cause: err });
-      }
-      if (!res.ok) {
-        // The body explains quota and permission errors; it never contains the key.
-        const detail = (await res.text()).slice(0, 300);
-        throw new AppError("UPSTREAM_ERROR", `ElevenLabs answered ${res.status}: ${detail}`);
-      }
+      const res = await send("", { text });
       return {
         audio: new Uint8Array(await res.arrayBuffer()),
         contentType: res.headers.get("content-type") ?? "audio/mpeg",

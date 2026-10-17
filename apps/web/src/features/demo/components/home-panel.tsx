@@ -454,10 +454,17 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
                       onPick({ type: "destination", name: result.name, point: result.position });
                       setText("");
                     }}
-                    className="flex w-full flex-col px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
+                    className="flex w-full items-center gap-2.5 px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
                   >
-                    <span className="truncate text-[14px] font-bold text-tekst">{result.name}</span>
-                    <span className="truncate text-xs text-tekst-3">{result.address}</span>
+                    {result.kind === "address" && (
+                      <PinIcon className="size-[18px] shrink-0 text-glebia" />
+                    )}
+                    <span className="flex min-w-0 flex-col">
+                      <span className="truncate text-[14px] font-bold text-tekst">
+                        {result.name}
+                      </span>
+                      <span className="truncate text-xs text-tekst-3">{result.address}</span>
+                    </span>
                   </button>
                 </li>
               ))}

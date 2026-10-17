@@ -84,13 +84,29 @@ describe("routeLegsToGeoJson", () => {
 
 describe("lines and transfers", () => {
   const sameLineAgain = { ...ROUTE.legs[0], departAt: "2026-10-17T14:20:00+02:00" };
+  const stayOn = {
+    ...ROUTE.legs[0],
+    fromStop: ROUTE.legs[0].toStop,
+    toStop: ROUTE.legs[1].fromStop,
+  };
   const route = {
     ...ROUTE,
-    legs: [ROUTE.legs[0], { ...ROUTE.legs[0] }, ROUTE.legs[1], sameLineAgain],
+    legs: [ROUTE.legs[0], stayOn, ROUTE.legs[1], sameLineAgain],
   };
 
   it("keeps one line index for consecutive legs on the same line", () => {
     expect(lineIndexes(route)).toEqual([0, 0, 1, 2]);
+  });
+
+  it("starts a new line when the same number is boarded at another stop", () => {
+    const across = { ...ROUTE.legs[0], fromStop: stop("b2", 52.2401, 20.9801) };
+    const transfer = { ...ROUTE, legs: [ROUTE.legs[0], across] };
+    expect(lineIndexes(transfer)).toEqual([0, 1]);
+    const { features } = routeBoardingsToGeoJson(transfer);
+    expect(features.map((f) => [f.properties.stopName, f.properties.isTransfer])).toEqual([
+      ["a", false],
+      ["b2", true],
+    ]);
   });
 
   it("colours each leg by its line", () => {

@@ -105,6 +105,8 @@
 - [x] **T-131** Stany czekania w całej aplikacji (`components/waiting.tsx`: spinner jak w iOS, szkielet z połyskiem, pigułka statusu, komunikat zmieniający się z czasem): zasłona „Wczytuję mapę Warszawy…”, przycisk „Wyznacz” mówi, co robi planer, i przyznaje, gdy trwa długo; spinner przy najszybszej drodze, wyszukiwaniu celu i szukaniu lokalizacji; pigułka „Szukam miejsc w okolicy…” / błąd z „Ponów” u góry mapy; w odtwarzaczu „Sawa szykuje opowieść” i pierścień wokół play, szkielet tekstu z krokami (fakty → opowieść → głos); karta miejsca ze szkieletem i zamykaniem, spinner w „Posłuchaj”, zdjęcia wjeżdżają po wczytaniu; podgląd przejażdżki ze szkieletem. Reduced motion zatrzymuje połysk — `R3` — (Paweł z agentem, 19:10–19:35)
 - [x] **T-149** Mapa: puste kółka bez ikon i za duże ikony miejsc ([#90](https://github.com/Pawel-Uhma/Sawa/issues/90)). Obwódki tematu nie ma już na main (19:30), więc kółko bez ikony nie wraca; `ICON_SIZE` mniejsze (ok. 24 px przy zoomie 15 zamiast 36), obwódka zaznaczenia rośnie z zoomem — `R3` — (Paweł z agentem, 20:10–20:15)
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
+- [ ] **T-150** Mapa: punkty znów grupują się w klastry z liczbą przy oddaleniu (usunięte w `17d8870`/`578b21d`; jeśli celowo, powód do `stan.md`) ([#101](https://github.com/Pawel-Uhma/Sawa/issues/101)) — `R3` (Paweł)
+- [ ] **T-151** Mapa: jedno źródło koloru punktu, zgodne z chipami tematów, plus zwijana legenda kolor → kategoria ([#102](https://github.com/Pawel-Uhma/Sawa/issues/102)) — `R3` (Paweł)
 
 ## R4 · AI i głos
 
@@ -140,10 +142,11 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 
 ## Ze spotkania ok. 20:00 ([podsumowanie](spotkania/2026-10-17-2000-proxy-dane-mentorzy.md))
 
-- [ ] **T-140** Wyszukiwanie celu znajduje też ulice i adresy (dziś Google Places zwraca tylko miejsca) — `R3`
+- [x] **T-140** Wyszukiwanie celu znajduje też ulice i adresy (dziś Google Places zwraca tylko miejsca) ([#97](https://github.com/Pawel-Uhma/Sawa/issues/97)). Równolegle z Text Search: Autocomplete (New) z typami adresu i ulicy + Place Details, adres pierwszy, pole `kind` w kontrakcie, pinezka w UI — `R3` — (Paweł z agentem, 20:25–20:40; do sprawdzenia na produkcji po deployu)
 - [ ] **T-141** Ciemny motyw: jaśniejsze ulice na mapie, syrenka czytelna na ciemnym tle — `R3` (Antek)
 - [ ] **T-142** Stany czekania (spinner, kółka) w czcionce i kolorach Sawy — `R3`
 - [ ] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł)
+- [x] **T-148** Stop i pauza zatrzymują zegar jazdy także przed pierwszym miejscem: osobny stan „zatrzymane przez użytkownika” (`held` w `useRideClock`), wznowienie od tego samego miejsca, GPS (`useGpsClockSync`) nie przesuwa zegara przy zatrzymanej Sawie (#93) — `R3` — (Paweł z agentem, 17.10, 20:11, PR w toku)
 - [ ] **T-144** Głos czyta lata źle („1099” zamiast 1939, „1090” zamiast 1940, „5355” zamiast 53/55): sprawdzić, czy prompt pisze liczby słownie (T-98) — `R4`
 - [x] **T-145** Przetestować proxy z home labu (#63) na produkcji: API miasta, pojazdy — `R1` + Antek — (Jasiek, 20:15: PR #86, `WAW_API_BASE_URL` i `WAW_PROXY_KEY` na Railway; `/v1/vehicles/track` `stale: false` z pojazdami, odjazdy `realDeparture: true`)
 - [ ] **T-148** Railway nie wdraża merge'ów do `main` sam (stał na `2829bf3` z 18:52 mimo zmian w `apps/api/**`): sprawdzić trigger GitHub w serwisie `api`; do tego czasu po merge'u `railway redeploy --from-source --service api --yes` i `version` w `/health` — `R1`

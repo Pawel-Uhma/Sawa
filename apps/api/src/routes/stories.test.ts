@@ -1,13 +1,21 @@
-import { ApiErrorSchema, StorySchema } from "@sawa/shared";
+import { ApiErrorSchema, LiveStorySchema, StorySchema } from "@sawa/shared";
 import { describe, expect, it, vi } from "vitest";
 import { createFakePlacesRepository } from "../adapters/supabase/fake-places-repository";
 import { createApp } from "../app";
 import { createFakeRoutePlanner } from "../services/fake-route-planner";
-import type { SpeechService } from "../services/speak";
+import { createSpeechService, type SpeechService } from "../services/speak";
 
 const FAKE_MP3 = new Uint8Array([0xff, 0xfb, 0x90, 0x00]);
 const places = createFakePlacesRepository();
-const llm = { model: "fake", complete: async () => '{"text":"Hej, patrz.","sourceIds":[]}' };
+const ANSWER = '{"text":"Hej, patrz.","sourceIds":[]}';
+const llm = {
+  model: "fake",
+  complete: async () => ANSWER,
+  async *stream() {
+    yield ANSWER.slice(0, 12);
+    yield ANSWER.slice(12);
+  },
+};
 
 const appWith = (speech?: SpeechService) =>
   createApp({
@@ -54,7 +62,7 @@ describe("POST /v1/stories", () => {
 describe("POST /v1/stories/audio", () => {
   it("reads the story text with the speaker", async () => {
     const speak = vi.fn(async () => ({ audio: FAKE_MP3, contentType: "audio/mpeg" }));
-    const res = await post(appWith({ speak }), "/v1/stories/audio", {
+    const res = await post(appWith({ speak, speakStream: vi.fn() }), "/v1/stories/audio", {
       placeId: await anyPlaceId(),
       targetSec: 30,
     });
@@ -71,5 +79,70 @@ describe("POST /v1/stories/audio", () => {
     });
     expect(res.status).toBe(502);
     expect(ApiErrorSchema.parse(await res.json()).error.code).toBe("UPSTREAM_ERROR");
+  });
+});
+
+describe("live stories", () => {
+  const voice = createSpeechService({
+    synthesize: async () => ({ audio: FAKE_MP3, contentType: "audio/mpeg" }),
+    async *stream(text) {
+      yield new TextEncoder().encode(`[${text}]`);
+    },
+  });
+
+  async function finished(app: ReturnType<typeof appWith>, id: string) {
+    for (let i = 0; i < 50; i++) {
+      const state = LiveStorySchema.parse(
+        await (await app.request(`/v1/stories/live/${id}`)).json(),
+      );
+      if (state.done) return state;
+      await new Promise((r) => setTimeout(r, 5));
+    }
+    throw new Error("live story never finished");
+  }
+
+  it("streams the story's voice and then gives the whole story", async () => {
+    const app = appWith(voice);
+    const placeId = await anyPlaceId();
+    const start = await post(app, "/v1/stories/live", { placeId, targetSec: 30 });
+    const { id } = (await start.json()) as { id: string };
+
+    const audio = await app.request(`/v1/stories/live/${id}/audio`);
+    expect(audio.headers.get("content-type")).toBe("audio/mpeg");
+    expect(new TextDecoder().decode(await audio.arrayBuffer())).toBe("[Hej, patrz.]");
+    expect((await finished(app, id)).story).toMatchObject({ placeId, text: "Hej, patrz." });
+  });
+
+  it("answers byte ranges once the voice is finished", async () => {
+    const app = appWith(voice);
+    const { id } = (await (
+      await post(app, "/v1/stories/live", { placeId: await anyPlaceId(), targetSec: 30 })
+    ).json()) as { id: string };
+    await (await app.request(`/v1/stories/live/${id}/audio`)).arrayBuffer();
+    await finished(app, id);
+
+    const part = await app.request(`/v1/stories/live/${id}/audio`, {
+      headers: { range: "bytes=0-1" },
+    });
+    expect(part.status).toBe(206);
+    expect(part.headers.get("content-range")).toBe("bytes 0-1/13");
+    expect(new TextDecoder().decode(await part.arrayBuffer())).toBe("[H");
+  });
+
+  it("finishes with no story for an unknown place", async () => {
+    const app = appWith(voice);
+    const { id } = (await (
+      await post(app, "/v1/stories/live", { placeId: "nope", targetSec: 30 })
+    ).json()) as { id: string };
+    expect(await finished(app, id)).toMatchObject({ done: true, story: null });
+  });
+
+  it("answers 404 for an unknown session", async () => {
+    expect((await appWith().request("/v1/stories/live/nope")).status).toBe(404);
+  });
+
+  it("accepts a route to warm up", async () => {
+    const res = await post(appWith(), "/v1/stories/warm", { placeIds: [await anyPlaceId()] });
+    expect(res.status).toBe(202);
   });
 });

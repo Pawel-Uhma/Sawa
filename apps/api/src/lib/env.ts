@@ -47,6 +47,11 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /** "0" turns off the web search for stories (one OpenRouter web call per place). */
+  STORY_RESEARCH: z
+    .enum(["0", "1"])
+    .default("1")
+    .transform((v) => v === "1"),
   /** ElevenLabs API key (Text to Speech permission); without it POST /v1/speech answers 502. */
   ELEVENLABS_KEY: z
     .string()

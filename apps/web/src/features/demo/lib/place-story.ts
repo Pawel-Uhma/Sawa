@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Listener } from "./api-data";
-import { type Clip, fetchClip, useRememberHeard } from "./story-player";
+import { audioProgress, type Clip, fetchClip, useLiveText, useRememberHeard } from "./story-player";
 
 /** Poza trasą nikt nie wyznacza okna, więc Sawa mówi krótko: jak zajawka. */
 export const PLACE_STORY_SEC = 45;
@@ -12,13 +12,16 @@ export type PlaceStoryState = "idle" | "loading" | "playing" | "paused" | "faile
 
 /**
  * Opowieść Sawy o jednym miejscu z karty: ładuje się dopiero po dotknięciu „Posłuchaj”.
- * Postęp z dźwięku; bez głosu z długości tekstu (jak w odtwarzaczu trasy).
+ * Głos płynie strumieniem, zanim tekst jest gotowy. Postęp z dźwięku; bez głosu z długości
+ * tekstu (jak w odtwarzaczu trasy).
  */
 export function usePlaceStory(placeId: string, listener: Listener) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [clip, setClip] = useState<Clip | null>(null);
   const [state, setState] = useState<PlaceStoryState>("idle");
   const [progress, setProgress] = useState(0);
+  const [voiceFailed, setVoiceFailed] = useState(false);
+  const live = useLiveText(clip);
 
   useEffect(() => {
     const audio = new Audio();
@@ -27,27 +30,37 @@ export function usePlaceStory(placeId: string, listener: Listener) {
       setProgress(100);
       setState("paused");
     };
+    // Bez głosu (ElevenLabs padł) opowieść biegnie dalej na liczniku z tekstu.
+    const onError = () => audio.getAttribute("src") && setVoiceFailed(true);
     audio.addEventListener("ended", onEnded);
+    audio.addEventListener("error", onError);
     return () => {
       audio.removeEventListener("ended", onEnded);
+      audio.removeEventListener("error", onError);
       audio.pause();
       audio.removeAttribute("src");
     };
   }, []);
 
-  useEffect(() => () => void (clip?.audioUrl && URL.revokeObjectURL(clip.audioUrl)), [clip]);
+  useEffect(() => {
+    if (live.failed) setState("failed");
+  }, [live.failed]);
 
   useEffect(() => {
     if (state !== "playing") return;
-    const audio = audioRef.current;
-    const timerMs = clip ? (clip.text.split(/\s+/).length / WORDS_PER_SEC) * 1000 : 0;
+    // Bez `?voice=1` albo gdy głos padł, licznik z tekstu.
+    const audio = voiceFailed || !clip?.audioUrl ? null : audioRef.current;
+    // Bez głosu licznik czeka na cały tekst, bo dopiero on mówi, ile czekać.
+    if (!audio && !live.done) return;
+    const words = live.text?.split(/\s+/).length ?? 0;
+    const timerMs = (words / WORDS_PER_SEC) * 1000;
     let frame = 0;
     let last = performance.now();
     const tick = (now: number) => {
       const delta = now - last;
       last = now;
-      if (clip?.audioUrl && audio) {
-        if (audio.duration > 0) setProgress((audio.currentTime / audio.duration) * 100);
+      if (audio) {
+        if (!audio.ended) setProgress(audioProgress(audio, live));
       } else if (timerMs > 0) {
         setProgress((current) => {
           const next = Math.min(100, current + (delta / timerMs) * 100);
@@ -59,11 +72,11 @@ export function usePlaceStory(placeId: string, listener: Listener) {
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [state, clip]);
+  }, [state, live, voiceFailed, clip]);
 
   const start = useCallback((next: Clip) => {
     const audio = audioRef.current;
-    if (!next.audioUrl || !audio) {
+    if (!audio || !next.audioUrl) {
       setState("playing");
       return;
     }
@@ -75,7 +88,7 @@ export function usePlaceStory(placeId: string, listener: Listener) {
       .catch(() => setState("paused"));
   }, []);
 
-  useRememberHeard(clip, progress);
+  useRememberHeard(clip?.id, live.told, progress);
 
   const toggle = useCallback(() => {
     const audio = audioRef.current;
@@ -88,9 +101,10 @@ export function usePlaceStory(placeId: string, listener: Listener) {
     if (clip) {
       if (progress >= 100) {
         setProgress(0);
-        if (audio) audio.currentTime = 0;
+        if (audio && !voiceFailed) audio.currentTime = 0;
       }
-      start(clip);
+      if (voiceFailed || !clip.audioUrl) setState("playing");
+      else start(clip);
       return;
     }
     setState("loading");
@@ -100,7 +114,7 @@ export function usePlaceStory(placeId: string, listener: Listener) {
         start(next);
       })
       .catch(() => setState("failed"));
-  }, [state, clip, progress, placeId, listener, start]);
+  }, [state, clip, progress, placeId, listener, start, voiceFailed]);
 
-  return { state, text: clip?.text ?? null, progress, toggle };
+  return { state, text: live.text, progress, toggle };
 }

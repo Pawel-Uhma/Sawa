@@ -1,8 +1,10 @@
 import { describe, expect, it, vi } from "vitest";
 import { createFakePlacesRepository } from "../adapters/supabase/fake-places-repository";
+import { bandFor } from "../domain/story";
 import { AppError } from "../lib/errors";
 import { KIDS_STORY_SYSTEM_PROMPT, STORY_SYSTEM_PROMPT } from "../prompts/story";
 import type { LlmProvider } from "./ports";
+import type { PlaceResearch } from "./research-place";
 import { createStoryService } from "./tell-story";
 
 const places = createFakePlacesRepository();
@@ -46,6 +48,45 @@ describe("createStoryService", () => {
     expect(second.factIds.some((id) => first.factIds.includes(id))).toBe(false);
   });
 
+  it("tells stories found on the web first and cites their page", async () => {
+    const placeId = await anyPlace();
+    const finding = {
+      text: "Bowie podobno kupił tu płytę zespołu Śląsk.",
+      url: "https://stacjamuranow.pl/pl/mural-bowiego/",
+      title: "Mural Bowiego",
+    };
+    const research: PlaceResearch = { find: vi.fn(async () => [finding]) };
+    const llm = fakeLlm('{"text":"Bowie kupił tu płytę.","sourceIds":["w1"]}');
+    const story = await createStoryService({ places, llm, research }).tell({
+      placeId,
+      targetSec: 60,
+    });
+
+    const { user } = llm.complete.mock.calls[0]?.[0] ?? { user: "" };
+    expect(user.indexOf(finding.text)).toBeLessThan(user.indexOf("fakt:"));
+    expect(user).toContain("w1: Mural Bowiego");
+    expect(story.sources).toEqual([{ id: "w1", title: finding.title, url: finding.url }]);
+  });
+
+  it("remembers only the lines the model says it told", async () => {
+    const placeId = await anyPlace();
+    const service = createStoryService({ places });
+    const all = (await service.tell({ placeId, targetSec: 600 })).factIds;
+    const llm = fakeLlm(JSON.stringify({ text: "Krótko.", usedIds: [all[1], "zmyslone"] }));
+    const story = await createStoryService({ places, llm }).tell({ placeId, targetSec: 600 });
+    expect(story.factIds).toEqual([all[1]]);
+  });
+
+  it("asks for a short story when there is little to tell", async () => {
+    const placeId = await anyPlace();
+    const llm = fakeLlm();
+    await createStoryService({ places, llm }).tell({ placeId, targetSec: 600 });
+    const { user } = llm.complete.mock.calls[0]?.[0] ?? { user: "" };
+    const words = Number(user.match(/najwyżej (\d+) słów/)?.[1]);
+    expect(words).toBeGreaterThan(0);
+    expect(words).toBeLessThan(bandFor(600).words);
+  });
+
   it("explains the background to a first-timer once", async () => {
     const all = await places.listInBBox({ minLng: -180, minLat: -90, maxLng: 180, maxLat: 90 });
     const uprising = all.find((p) => p.interests.includes("war_uprising"));
@@ -78,7 +119,7 @@ describe("createStoryService", () => {
     expect(adult?.system).toBe(STORY_SYSTEM_PROMPT);
     expect(kids?.system).toBe(KIDS_STORY_SYSTEM_PROMPT);
     expect(kids?.system).toContain("WYŁĄCZNIE to, co jest w podanych faktach");
-    const words = (user = "") => Number(user.match(/około (\d+) słów/)?.[1]);
+    const words = (user = "") => Number(user.match(/najwyżej (\d+) słów/)?.[1]);
     expect(words(kids?.user)).toBeLessThan(words(adult?.user));
   });
 
@@ -147,5 +188,59 @@ describe("createStoryService", () => {
         targetSec: 20,
       }),
     ).rejects.toMatchObject({ code: "NOT_FOUND" });
+  });
+
+  describe("tellStream", () => {
+    function streamingLlm(...pieces: string[]) {
+      const stream = vi.fn(async function* () {
+        yield* pieces;
+      });
+      return { ...fakeLlm(pieces.join("")), stream };
+    }
+    async function read(text: AsyncIterable<string>) {
+      const out: string[] = [];
+      for await (const piece of text) out.push(piece);
+      return out;
+    }
+
+    it("gives the text in pieces as the model writes it, then the story", async () => {
+      const placeId = await anyPlace();
+      const llm = streamingLlm('{"text":"Bowie ', 'tu był.","usedIds":[]}');
+      const told = await createStoryService({ places, llm }).tellStream({ placeId, targetSec: 30 });
+
+      expect(await read(told.text)).toEqual(["Bowie ", "tu był."]);
+      expect(await told.story).toMatchObject({ placeId, text: "Bowie tu był.", cached: false });
+    });
+
+    it("caches the streamed story for the next ask", async () => {
+      const placeId = await anyPlace();
+      const llm = streamingLlm('{"text":"Raz."}');
+      const service = createStoryService({ places, llm });
+      await read((await service.tellStream({ placeId, targetSec: 30 })).text);
+
+      const again = await service.tellStream({ placeId, targetSec: 30 });
+      expect(again.whole).toBe("Raz.");
+      expect(await again.story).toMatchObject({ cached: true });
+      expect(llm.stream).toHaveBeenCalledOnce();
+    });
+
+    it("reads the facts when the model fails before saying anything", async () => {
+      const placeId = await anyPlace();
+      const llm = streamingLlm();
+      // biome-ignore lint/correctness/useYield: fails before the first piece
+      llm.stream.mockImplementationOnce(async function* () {
+        throw new AppError("UPSTREAM_ERROR", "boom");
+      });
+      const onLlmError = vi.fn();
+      const told = await createStoryService({ places, llm, onLlmError }).tellStream({
+        placeId,
+        targetSec: 30,
+      });
+
+      const [text] = await read(told.text);
+      expect(text).toMatch(/^Mijamy: /);
+      expect((await told.story).text).toBe(text);
+      expect(onLlmError).toHaveBeenCalledOnce();
+    });
   });
 });

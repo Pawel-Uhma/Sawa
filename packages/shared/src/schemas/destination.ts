@@ -14,6 +14,8 @@ export const DestinationSchema = z.object({
   /** Street and district, for telling two results with the same name apart. */
   address: z.string(),
   position: LatLngSchema,
+  /** `address`: a street or a street with a number; `place`: a business or landmark. Missing = place. */
+  kind: z.enum(["address", "place"]).optional(),
 });
 export type Destination = z.infer<typeof DestinationSchema>;
 

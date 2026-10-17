@@ -1,0 +1,28 @@
+{
+  "suggestions": [
+    {
+      "placePrediction": {
+        "place": "places/EjFNYXJzemHFgmtvd3NrYSAxMCwgMDAtNTkwIFdhcnN6YXdhLCBQb2xza2EiMBIuChQKEgk",
+        "placeId": "EjFNYXJzemHFgmtvd3NrYSAxMCwgMDAtNTkwIFdhcnN6YXdhLCBQb2xza2EiMBIuChQKEgk",
+        "text": { "text": "Marszałkowska 10, Warszawa, Polska" },
+        "structuredFormat": {
+          "mainText": { "text": "Marszałkowska 10" },
+          "secondaryText": { "text": "Warszawa, Polska" }
+        },
+        "types": ["geocode", "street_address"]
+      }
+    },
+    {
+      "placePrediction": {
+        "place": "places/EjJNYXJzemHFgmtvd3NrYSAxMDQsIFdhcnN6YXdhLCBQb2xza2EiMRIvChQKEgk",
+        "placeId": "EjJNYXJzemHFgmtvd3NrYSAxMDQsIFdhcnN6YXdhLCBQb2xza2EiMRIvChQKEgk",
+        "text": { "text": "Marszałkowska 104, Warszawa, Polska" },
+        "structuredFormat": {
+          "mainText": { "text": "Marszałkowska 104" },
+          "secondaryText": { "text": "Warszawa, Polska" }
+        },
+        "types": ["geocode", "street_address"]
+      }
+    }
+  ]
+}

@@ -63,16 +63,17 @@ export function stopPost(stopId: string): string | null {
 export type FeatureCollection<F> = { type: "FeatureCollection"; features: F[] };
 
 /**
- * For each leg, the index of the line it belongs to; a new line starts when `line` changes.
+ * For each leg, the index of the line it belongs to; a new line starts when `line` changes or
+ * the leg starts at another stop than the previous ride ended (a transfer to the same number).
  * Walk legs belong to no line (-1) and don't break a line that continues after them.
  */
 export function lineIndexes(route: Route): number[] {
   let index = -1;
-  let previous: string | undefined;
+  let previous: Leg | undefined;
   return route.legs.map((leg) => {
     if (leg.mode === "walk") return -1;
-    if (leg.line !== previous) index += 1;
-    previous = leg.line;
+    if (leg.line !== previous?.line || leg.fromStop.id !== previous.toStop.id) index += 1;
+    previous = leg;
     return index;
   });
 }
