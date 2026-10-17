@@ -1,0 +1,208 @@
+[
+  {
+    "id": "ulica-alka-dawidowskiego",
+    "nazwa": "ulica Alka Dawidowskiego",
+    "name_en": "Alek Dawidowski Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Alka Dawidowskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1957 roku wraz z ówczesną ulicą Mariana Buczka (dziś Słomińskiego) jako łącznik z wiaduktem ul. Nowotki (dziś Andersa).",
+      "Przez 50 lat ulica nie nosiła żadnej nazwy; 11 stycznia 2007 roku nadano jej imię Alka Dawidowskiego.",
+      "Maciej Aleksy Dawidowski, ps. „Alek”, urodził się w 1920 roku, był instruktorem harcerskim i podporucznikiem Armii Krajowej, a zmarł w wyniku ran odniesionych podczas Akcji pod Arsenałem w 1943 roku.",
+      "Dawidowski był bohaterem książki Aleksandra Kamińskiego „Kamienie na szaniec”.",
+      "Przy wiadukcie na Andersa umieszczono kamień upamiętniający 20 rozstrzelanych tutaj Polaków.",
+      "Ulica ma prawie 350 metrów długości i łączy zjazd z wiaduktu przy Andersa z ulicą Słomińskiego."
+    ],
+    "ciekawostki": [
+      "W pobliżu znajdują się Skwer Batalionu AK „Czata 49”, wieżowiec Intraco, stacja metra Dworzec Gdański oraz stacja kolejowa Warszawa Gdańska."
+    ],
+    "summary_en": "Alek Dawidowski Street is a roughly 350-metre ramp linking the Anders viaduct with Słomińska in Muranów. It was built in 1957 and went unnamed for fifty years before being named in 2007 after Maciej Aleksy „Alek” Dawidowski, a Home Army officer who died of wounds in 1943.",
+    "ludzie": [
+      {"kto": "Maciej Aleksy Dawidowski „Alek”", "rola": "instruktor harcerski, podporucznik AK, kawaler Orderu Virtuti Militari; bohater „Kamieni na szaniec”; urodzony 1920, zmarły 1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Dawidowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Dawidowskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy. Nagłówek podaje ulicę jako „Alka Dawidowskiego”."
+  },
+  {
+    "id": "ulica-stanislawa-dubois",
+    "nazwa": "ulica Stanisława Dubois",
+    "name_en": "Stanisław Dubois Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Stanisława Dubois",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "po II wojnie światowej–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Stanisława Dubois, długa na ponad 500 metrów, to ulica osiedlowa na Muranowie, ciągnąca się od Stawek do Nalewek.",
+      "Patronem ulicy jest Stanisław Dubois, polski działacz socjalistyczny i publicysta.",
+      "Dubois został aresztowany w czasie II wojny światowej, a w 1942 roku rozstrzelany w Oświęcimiu.",
+      "Ulica przecina po drodze ulicę Niską, a na wysokości ul. Miłej skręca na wschód i przechodzi przez Skwer Zygelbojma."
+    ],
+    "ciekawostki": [
+      "Imię patrona wymawia się „dibuła” (tak podaje artykuł)."
+    ],
+    "summary_en": "Stanisław Dubois Street is a residential street of more than 500 metres in Muranów, running from Stawki to Nalewki. It is named after the Polish socialist activist and journalist Stanisław Dubois, who was shot at Auschwitz in 1942.",
+    "ludzie": [
+      {"kto": "Stanisław Dubois", "rola": "polski działacz socjalistyczny i publicysta, patron ulicy; aresztowany w czasie wojny, rozstrzelany w Oświęcimiu w 1942 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Dubois", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Dubois"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w nagłówku i brak numeru w adresie ulicy; rekord ma adres samej ulicy. Artykuł krótki, bez historii zabudowy."
+  },
+  {
+    "id": "ulica-filtrowa",
+    "nazwa": "ulica Filtrowa",
+    "name_en": "Filtrowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Filtrowa",
+    "adres_historyczny": "Starynkiewicza (nazwa na mapach z 1892 roku)",
+    "lat": 52.2186842,
+    "lon": 21.0058864,
+    "lokalizacja": "przyblizona",
+    "okres": "1887–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia tej okolicy sięga lat 1883–1886, gdy zbudowano tu Filtry Lindleya, od których pochodzi nazwa ulicy.",
+      "Nazwę ulicy nadano już w 1890 roku, choć w 1892 roku na mapach widniała przy niej nazwa Starynkiewicza, dla uczczenia Sokratesa Starynkiewicza.",
+      "W okresie międzywojennym przy ulicy zaprojektowano i zbudowano osiedla, takie jak Kolonia Lubeckiego czy Kolonia Staszica.",
+      "Filtrowa 68 to zabytkowa kamienica Pocztowej Kasy Oszczędności z tablicą upamiętniającą podpisanie 31 lipca 1944 roku rozkazu rozpoczęcia powstania warszawskiego.",
+      "Filtrowa 57 to neoklasycystyczna siedziba Najwyższej Izby Kontroli.",
+      "Ulica pojawia się w utworze „Ferdydurke” Witolda Gombrowicza."
+    ],
+    "ciekawostki": [
+      "Na domu nr 68 zachowała się przedwojenna tabliczka adresowa oraz tablica upamiętniająca Antoniego Chruściela."
+    ],
+    "summary_en": "Filtrowa links South Śródmieście with Stara Ochota, running about 1.75 kilometres from Rektorska to Plac Narutowicza. Its name comes from the Lindley water filters built in 1883–1886. Interwar housing estates were built alongside it, and at number 68 a plaque marks the signing of the order to start the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Sokrates Starynkiewicz", "rola": "prezydent Warszawy, inicjator budowy wodociągów i kanalizacji; patron dawnej nazwy ulicy", "wiki": null},
+      {"kto": "Antoni Chruściel", "rola": "upamiętniony tablicą na domu nr 68", "wiki": null},
+      {"kto": "Witold Gombrowicz", "rola": "autor „Ferdydurke”, w którym pojawia się ulica", "wiki": null}
+    ],
+    "dawne_nazwy": ["Starynkiewicza (nazwa na mapach z 1892 roku)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Filtrowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Filtrowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dzielnice Ochota i Śródmieście; rekord przypisany do Śródmieścia."
+  },
+  {
+    "id": "ulica-franciszkanska",
+    "nazwa": "ulica Franciszkańska",
+    "name_en": "Franciszkańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Franciszkańska",
+    "adres_historyczny": null,
+    "lat": 52.2533937,
+    "lon": 21.0064445,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza zabudowa pojawiła się na początku XVI wieku; w 1621 roku ulicę przecięto Wałem Zygmuntowskim.",
+      "W 1646–1647 w zbiegu z ul. Zakroczymską wybudowano kościół św. Franciszka wraz z zakonem franciszkanów.",
+      "Po powstaniu listopadowym ruch budowlany znacznie zmalał; mieszkańcami byli niemal sami Żydzi, a ulica stała się ważną ulicą handlową.",
+      "Po 1936 roku wyburzono halę targową i trzy kamienice w związku z przedłużeniem i poszerzeniem ulicy Bonifraterskiej.",
+      "W grudniu 1941 roku cały obszar Nowego Miasta wraz ze wschodnim odcinkiem ulicy wyłączono z dzielnicy zamkniętej.",
+      "Powstanie w getcie warszawskim i Powstanie Warszawskie doprowadziły do całkowitego zniszczenia zabudowy ulicy.",
+      "Przed 1732 rokiem u zbiegu z ul. Sapieżyńską wybudowano zapewne według projektu Józefa Fontanny pałac dla Jana Skarbka."
+    ],
+    "ciekawostki": [
+      "Henryk Galle, najaktywniejszy architekt przy Franciszkańskiej, był autorem 12 realizacji na tej ulicy."
+    ],
+    "summary_en": "Franciszkańska runs about 530 metres through Nowe Miasto, from Wałowa to Zakroczymska. It was cut by the Zygmunt Rampart in 1621 and its church and friary date from the 1640s. Most of its buildings were destroyed during the Ghetto Uprising and the 1944 Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Józef Fontanna", "rola": "wg artykułu: prawdopodobny projektant pałacu dla Jana Skarbka (w tekście „Józefa Fontanny”)", "wiki": null},
+      {"kto": "Jan Skarbek", "rola": "inwestor pałacu przy ul. Sapieżyńskiej przed 1732 rokiem", "wiki": null},
+      {"kto": "Jakub Bonafus", "rola": "inwestor pałacu wzniesionego ok. 1734 roku przy ul. Noiniarskiej", "wiki": null},
+      {"kto": "Henryk Galle", "rola": "architekt, autor 12 realizacji przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Franciszkańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Franciszkańska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru w adresie ulicy. Historyczna zabudowa zniszczona w 1944 roku; współczesne obiekty z listy Otoczenie w artykule."
+  },
+  {
+    "id": "ulica-freta",
+    "nazwa": "ulica Freta",
+    "name_en": "Freta Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta",
+    "adres_historyczny": null,
+    "lat": 52.2526206,
+    "lon": 21.0075699,
+    "lokalizacja": "przyblizona",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa Freta jest odnotowywana od 1427 roku; najpopularniejsze wyjaśnienie wiąże ją z łacińskim określeniem fretha, oznaczającym pole nieuprawne.",
+      "Ulica powstała wzdłuż dawnego traktu Czersk–Zakroczym na terenie nowo lokowanego Nowego Miasta.",
+      "Około 1564 roku zabudowa była już zwarta, a przy ulicy rezydował wójt (pod nr 31).",
+      "Około 1770 roku drewnianą zabudowę zaczęły wypierać klasycystyczne kamieniczki; powstało około 30 kamienic.",
+      "W połowie XVIII wieku ulicę wyłożono brukiem.",
+      "W 1944 roku zabudowa została zrównana z ziemią, a następnie zrekonstruowana według wyglądu z czasów Stanisława Augusta Poniatowskiego.",
+      "Północny odcinek ulicy włączono do Freta dopiero w 1868 roku."
+    ],
+    "ciekawostki": [
+      "Pod numerem 16 znajduje się kamienica Macieja Łyszkiewicza, w której mieści się Muzeum Marii Skłodowskiej-Curie.",
+      "Wzdłuż ulicy niemal całkowicie autentyczne są kostka brukowa oraz granitowe krawężniki."
+    ],
+    "summary_en": "Freta is a historic street of the New Town, under 350 metres long, running from Długa to Kościelna. It was rebuilt in 1944 to the look of Stanisław August's time, and most of its facades are listed monuments. The Maria Skłodowska-Curie Museum occupies number 16.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "król, według którego wyglądu odtworzono zabudowę ulicy po 1944 roku", "wiki": null},
+      {"kto": "Maciej Łyszkiewicz", "rola": "właściciel kamienicy pod nr 16", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Freta", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Freta"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje „XV wiek” jako okres powstania. Brak numeru w adresie ulicy; rekord ma adres samej ulicy."
+  },
+  {
+    "id": "ulica-furmanska",
+    "nazwa": "ulica Furmańska",
+    "name_en": "Furmańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Furmańska",
+    "adres_historyczny": null,
+    "lat": 52.2444644,
+    "lon": 21.0189197,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w XVII wieku jako droga wzdłuż Wisły; gdy rzeka odsunęła się od skarpy, stała się drogą z Mariensztatu do jurydyki Stanisławów, założonej w 1768 roku.",
+      "Nazwa Furmańska została oficjalnie nadana w 1770 roku w nawiązaniu do licznych okolicznych stajni i wozowni.",
+      "Pierwszym murowanym budynkiem była kamienica Wawrzyńca Morawskiego na rogu ul. Bednarskiej.",
+      "Zabudowę ulicy często niszczyły powodzie, m.in. w 1867 i 1884 roku.",
+      "W 1944 roku zabudowa uległa zniszczeniu, a większość ruin rozebrano po 1946 roku.",
+      "Od 1964 roku ulicą kursowały autobusy linii 128, a później także 150; w 1974 roku linie te wycofano.",
+      "Od 1999 roku przy ulicy znajduje się całoroczny zdrój wody oligoceńskiej."
+    ],
+    "ciekawostki": [
+      "W otoczeniu ulicy powstały nowe budynki przypisane do ul. Bednarskiej, wśród nich tzw. „Waweliowiec”, a dawny teren zabudowy zajął skwer Zgrupowania AK „Róg”."
+    ],
+    "summary_en": "Furmańska is a short street in Powiśle, about 200 metres long, running from Karowa and Browarna to Bednarska and Sowia. It was named in 1770 after the stables and coach houses nearby. Most of its buildings were destroyed in 1944, and today it has a bike path and an oligocene spring.",
+    "ludzie": [
+      {"kto": "Wawrzyniec Morawski", "rola": "właściciel pierwszego murowanego budynku przy ulicy, na rogu ul. Bednarskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Furmańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Furmańska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru w adresie ulicy; rekord ma adres samej ulicy."
+  }
+]

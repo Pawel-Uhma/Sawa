@@ -1,0 +1,102 @@
+[
+  {
+    "id": "muzeum-marii-dabrowskiej-polna-40",
+    "nazwa": "Mieszkanie Marii Dąbrowskiej (Muzeum Marii Dąbrowskiej)",
+    "name_en": "Maria Dąbrowska's flat (museum branch of the Museum of Literature)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Polna 40",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1917–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum jest oddziałem Muzeum Literatury i mieści się w mieszkaniu przy ul. Polnej 40 m 31, w którym Maria Dąbrowska przeżyła 37 lat (1917–1954).",
+      "W tym mieszkaniu pisarka napisała większość swoich dzieł, w tym prawie w całości „Noce i dnie”.",
+      "Do zwiedzania udostępniono 3 pokoje wypełnione pamiątkami po pisarce; każdy odwiedzający może liczyć na osobiste oprowadzenie.",
+      "Godziny otwarcia: poniedziałki, środy i piątki 10.00–15.30; wtorki i czwartki 12.00–18.00; pierwsza i trzecia niedziela miesiąca 12.00–17.00."
+    ],
+    "ciekawostki": [
+      "Na drzwiach muzeum zachowała się kopia odręcznej kartki, którą pisarka umieściła tam, gdy 2 października 1944 roku została zmuszona do opuszczenia Warszawy, z prośbą o uszanowanie jej dorobku i rzeczy w mieszkaniu.",
+      "Muzeum jest jednym z najmniejszych warszawskich muzeów."
+    ],
+    "summary_en": "A small museum in Maria Dąbrowska's former flat at Polna 40, flat 31, in Śródmieście. The writer lived there for 37 years (1917–1954) and wrote most of her works there, including almost all of 'Noce i dnie'. It is a branch of the Museum of Literature.",
+    "ludzie": [
+      {"kto": "Maria Dąbrowska", "rola": "pisarka, mieszkała w tym mieszkaniu w latach 1917–1954", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Muzeum Marii Dąbrowskiej", "url": "https://warszawa.fandom.com/pl/wiki/Muzeum_Marii_Dąbrowskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu (ul. Polna 40, mieszkanie m 31), lat/lon null. Godziny otwarcia z artykułu mogą być nieaktualne."
+  },
+  {
+    "id": "dom-marii-sklodowskiej-curie-freta-16",
+    "nazwa": "Dom urodzenia Marii Skłodowskiej-Curie (Muzeum Marii Skłodowskiej-Curie)",
+    "name_en": "Birthplace of Maria Skłodowska-Curie (Museum of Maria Skłodowska-Curie)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Freta 16",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum mieści się w zrekonstruowanej XVIII-wiecznej kamienicy Macieja Łyszkiewicza, w której w 1867 roku urodziła się Maria Skłodowska-Curie.",
+      "Maria Skłodowska mieszkała w domu przy ul. Freta przez niecały rok, a w 1868 roku przeniosła się z rodzicami do domu przy ul. Nowolipki.",
+      "Dawny dom przy Nowolipkach został zniszczony podczas II wojny światowej i nie został odbudowany.",
+      "Muzeum utworzyło w 1967 roku Polskie Towarzystwo Chemiczne, za zgodą i przy wsparciu polskiej i francuskiej części rodziny; inicjatorem był prof. Józef Hurwic.",
+      "W lipcu 2018 roku Rada m.st. Warszawy podjęła uchwałę o utworzeniu muzeum jako wspólnej instytucji kultury; placówka rozpoczęła działalność 1 sierpnia 2018 roku."
+    ],
+    "ciekawostki": [
+      "Mural na ścianie budynku, namalowany w setną rocznicę drugiej nagrody Nobla Marii Skłodowskiej-Curie (2011), dziś już nie istnieje."
+    ],
+    "summary_en": "Museum housed in a reconstructed 18th-century tenement at Freta 16 in Nowe Miasto, where Maria Skłodowska-Curie was born in 1867. The museum was founded in 1967 by the Polish Chemical Society and became a municipal cultural institution in 2018.",
+    "ludzie": [
+      {"kto": "Maria Skłodowska-Curie", "rola": "urodziła się w kamienicy w 1867 roku", "wiki": null},
+      {"kto": "Maciej Łyszkiewicz", "rola": "właściciel kamienicy (wg podpisu zdjęcia w artykule)", "wiki": null},
+      {"kto": "Józef Hurwic", "rola": "prezes Polskiego Towarzystwa Chemicznego, inicjator muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Marii Skłodowskiej-Curie Polskiego Towarzystwa Chemicznego"],
+    "zrodla": [{"tytul": "Warszawikia: Muzeum Marii Skłodowskiej-Curie", "url": "https://warszawa.fandom.com/pl/wiki/Muzeum_Marii_Skłodowskiej-Curie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; adres z tekstu, lat/lon null."
+  },
+  {
+    "id": "north-gate",
+    "nazwa": "North Gate",
+    "name_en": "North Gate office tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Bonifraterska 17",
+    "adres_historyczny": "Przebieg 3",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec budowano w latach 2006–2008 przez Mostostal Warszawa S.A. według projektu KIPP Projekt.",
+      "Budynek ma 94 metry wysokości i 25 kondygnacji nadziemnych; składa się z parteru, podium do 10. piętra i wieży od 11. piętra.",
+      "Całkowita powierzchnia pomieszczeń wynosi 41 800 m², z czego 35 600 m² to powierzchnia użytkowa.",
+      "Garaż na 310 miejsc zajmuje 3 kondygnacje podziemne i 2 naziemne.",
+      "W latach 1900–1944 w miejscu dzisiejszego biurowca (ul. Przebieg 3) znajdowały się zabudowania fabryki wyrobów tytoniowych Progress, przemianowane w połowie lat 20. na Dom Przesyłkowy – przytułek dla bezdomnych i żebraków.",
+      "Budynki te zostały zniszczone w czasie powstania warszawskiego, a ulica Przebieg zanikła."
+    ],
+    "ciekawostki": [
+      "Bryła i szklana elewacja nie współgrają z sąsiednim Intraco, choć według projektantów oba wysokościowce miały tworzyć symboliczną „bramę wjazdową” do Śródmieścia."
+    ],
+    "summary_en": "Office tower at Bonifraterska 17 near Dworzec Gdański, 94 m tall with 25 storeys, built in 2006–2008 by Mostostal Warszawa to a design by KIPP Projekt. The site was previously occupied by the Progress tobacco factory and a shelter for the homeless, destroyed in the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "KIPP Projekt", "rola": "projektant budynku (d. Kancelaria Inwestycyjna „Property-Project”)", "wiki": null},
+      {"kto": "Mostostal Warszawa S.A.", "rola": "wykonawca budowy (2006–2008)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Belvedere Center"],
+    "zrodla": [{"tytul": "Warszawikia: North Gate", "url": "https://warszawa.fandom.com/pl/wiki/North_Gate"}],
+    "pewnosc": "srednia",
+    "uwagi": "W artykule są dwa różne numery: infobox podaje ul. Bonifraterska 17, a tekst ul. Bonifraterska 20. Zapisano 17 z infoboxu. Brak współrzędnych, lat/lon null."
+  }
+]
