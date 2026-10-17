@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 22:30 (Szczepan, z agentem R1): **produkcja rysowała spacery prostymi liniami przez budynki.** FOSSGIS OSRM przestał dawać ścieżki z IP Railway (lokalnie działał; najpewniej blokada po symulacji 100–300 klientów o 21:30, każdy spacer to zapytanie do FOSSGIS). Poprawka w gałęzi `r1/walk-path-fallback`: gdy OSRM zawiedzie, ścieżkę daje Valhalla (też FOSSGIS, inny serwer, bez klucza), router, który zawiódł, jest pomijany przez minutę, błędy idą do logów. Po merge'u deploy ręczny (T-148). Pewne rozwiązanie na demo: własny OSRM (do decyzji).
+- 21:50 (Jasiek, z agentem R2): **`computePlaceHits` blokował API na ~3 s** przy każdym nowym obszarze planera (4522 miejsc × 575 kursów), stąd długie ogony w symulacji. Indeks siatki: 0,16 s, wynik identyczny na danych z produkcji. Plik R1, PR do akceptacji Szczepana.
 - 21:35 (Paweł, z agentem R3): **kolor znacznika miejsca znów według grupy rodzaju, nie tematu (cofa część T-151).** 8 kolorów `PLACE_GROUP_COLORS` jak w arkuszu „Naklejka”, biała obwódka w obu motywach; kropka w karcie miejsca też. Legenda pokazuje grupy. Klastry zostają, chipy tematów mają swoje kolory dalej.
 - 21:20 (Paweł, z agentem R3): **ulica podświetla się w całości po kliknięciu, na desktopie po najechaniu (T-153).** Ikona zostaje. Linia z kafelków mapy bazowej (`street-layer.tsx`, `lib/street-highlight.ts`), bez nowych danych. Kamera nie dopasowuje się do ulicy (T-101 Antka). Lokalne API ma tylko 5 miejsc, sprawdzone z danymi z produkcji.
 

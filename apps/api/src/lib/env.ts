@@ -70,6 +70,14 @@ const EnvSchema = z.object({
     .string()
     .default("https://routing.openstreetmap.de/routed-foot")
     .transform((v) => v || undefined),
+  /**
+   * Valhalla server asked for a walking path when the OSRM one fails (default: FOSSGIS, no
+   * key); empty = no fallback.
+   */
+  WALK_ROUTER_FALLBACK_URL: z
+    .string()
+    .default("https://valhalla1.openstreetmap.de")
+    .transform((v) => v || undefined),
   /** "1": poll ZTM vehicle positions all the time, not only while someone tracks a ride. */
   VEHICLES_ALWAYS_ON: z
     .string()
