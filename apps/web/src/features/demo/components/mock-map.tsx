@@ -48,7 +48,13 @@ export function MockMap({ places = [], routePlaces = [], className = "" }: MockM
       </g>
 
       {/* Tory tramwajowe */}
-      <path d="M-20 430 H1020" stroke="#CFD8D4" strokeWidth="5" strokeDasharray="14 10" fill="none" />
+      <path
+        d="M-20 430 H1020"
+        stroke="#CFD8D4"
+        strokeWidth="5"
+        strokeDasharray="14 10"
+        fill="none"
+      />
 
       {/* Trasa */}
       {routePlaces.length > 1 && (
@@ -68,7 +74,12 @@ export function MockMap({ places = [], routePlaces = [], className = "" }: MockM
         const onRoute = routePlaces.some((stop) => stop.id === place.id);
         return (
           <g key={place.id} transform={`translate(${place.x} ${place.y})`}>
-            <circle r={onRoute ? 14 : 9} fill={onRoute ? "#F2755F" : "#17706F"} stroke="#fff" strokeWidth="4" />
+            <circle
+              r={onRoute ? 14 : 9}
+              fill={onRoute ? "#F2755F" : "#17706F"}
+              stroke="#fff"
+              strokeWidth="4"
+            />
           </g>
         );
       })}

@@ -3882,3 +3882,4 @@
 > new file: apps/web/src/features/demo/components/story-player.tsx
 > new file: apps/web/src/features/demo/index.ts
 
+**AI:** Zbudowałem mockowe demo frontendu w `apps/web` (ekran startowy, onboarding z 8 zainteresowaniami, mapa szkicowa z suwakiem 30 min–4 h, trasa z listą punktów i odtwarzaczem opowieści), bez API i bez Mapbox, z danymi placeholder; układ mobilny i desktopowy. Zmieniłem `todo.md` (T-31, T-32, T-33, T-66, T-67) i `stan.md`. Branch `r3/demo-mock`.

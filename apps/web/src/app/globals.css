@@ -113,9 +113,8 @@ input[type="range"].suwak:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .wejdz,
-  .wejdz * {
-    animation: none !important;
+  .wejdz {
+    animation: none;
   }
 
   input[type="range"].suwak::-webkit-slider-thumb {

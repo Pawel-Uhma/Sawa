@@ -64,7 +64,9 @@ export type MockStop = MockPlace & {
 // Placeholder planera: liczba punktów rośnie z czasem, kolejność to po prostu kolejność listy.
 export function buildMockRoute(durationMin: number, interests: string[]): MockStop[] {
   const pool = interests.length
-    ? [...MOCK_PLACES].sort((a, b) => Number(interests.includes(b.interest)) - Number(interests.includes(a.interest)))
+    ? [...MOCK_PLACES].sort(
+        (a, b) => Number(interests.includes(b.interest)) - Number(interests.includes(a.interest)),
+      )
     : MOCK_PLACES;
   const count = Math.min(pool.length, Math.max(3, Math.round(durationMin / 25)));
   const step = durationMin / count;

@@ -13,6 +13,8 @@
 
 - 13:20 (Paweł): deploy działa. Web: https://sawa-hackathon.vercel.app (Vercel, konto Pawła). API: https://api-production-d213.up.railway.app/health (Railway, projekt `sawa`, serwis `api`, auto-deploy z `main`). Railway nie czyta już `apps/api/railway.json`, ustawienia są w serwisie.
 
+- 13:25 (Paweł, z agentem R3): demo mock w `apps/web` (start → onboarding → mapa z suwakiem → trasa z odtwarzaczem), bez API i bez tokena Mapbox, branch `r3/demo-mock`. Do sprawdzenia na telefonie.
+
 ## Zablokowane
 
 - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.
