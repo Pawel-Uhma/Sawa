@@ -13,6 +13,7 @@ import {
   placeKindColorExpression,
   placeKindIconExpression,
   placeKindLabel,
+  roadPaintOverrides,
   UNKNOWN_KIND_COLOR,
   waterPaintOverrides,
 } from "./map-style";
@@ -81,5 +82,31 @@ describe("map style", () => {
       overrides.filter((o) => o.property === "text-color").every((o) => o.value === "#7fa8cb"),
     ).toBe(true);
     expect(MAP_PALETTES.light.water).not.toBe(MAP_PALETTES.dark.water);
+  });
+
+  it("repaints streets and street names in both basemaps' layer names", () => {
+    const overrides = roadPaintOverrides(MAP_PALETTES.dark);
+    expect(overrides).toContainEqual({
+      layerId: "highway_minor",
+      property: "line-color",
+      value: MAP_PALETTES.dark.roads.minor,
+    });
+    expect(overrides).toContainEqual({
+      layerId: "highway_minor",
+      property: "line-opacity",
+      value: 1,
+    });
+    // dark names it highway_name_other, positron highway-name-minor
+    const labelLayers = overrides.filter((o) => o.property === "text-color").map((o) => o.layerId);
+    expect(labelLayers).toEqual(
+      expect.arrayContaining(["highway_name_other", "highway-name-minor"]),
+    );
+  });
+
+  it("keeps bigger streets brighter than minor ones on the dark map", () => {
+    const { roads } = MAP_PALETTES.dark;
+    const lightness = (hex: string) => Number.parseInt(hex.slice(1, 3), 16);
+    expect(lightness(roads.majorInner)).toBeGreaterThan(lightness(roads.minor));
+    expect(lightness(roads.motorwayInner)).toBeGreaterThan(lightness(roads.majorInner));
   });
 });

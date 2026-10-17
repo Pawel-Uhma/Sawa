@@ -42,6 +42,19 @@ export type MapPalette = {
   /** Rivers and lakes; the basemaps draw them grey, we repaint them blue. */
   water: string;
   waterLabel: string;
+  /** Streets drawn over the basemap's own, which are barely visible (dark: #181818 on #0c0c0c). */
+  roads: RoadColors;
+};
+
+type RoadColors = {
+  minor: string;
+  path: string;
+  majorCasing: string;
+  majorInner: string;
+  motorwayCasing: string;
+  motorwayInner: string;
+  label: string;
+  labelHalo: string;
 };
 
 export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
@@ -62,6 +75,17 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     dimmedOpacity: 0.35,
     water: "#b4d7ec",
     waterLabel: "#3d6e94",
+    // Darker than the positron defaults, so minor streets stand out from the #f2f3f0 ground.
+    roads: {
+      minor: "#d2d7d5",
+      path: "#dde1df",
+      majorCasing: "#c0c7c5",
+      majorInner: "#ffffff",
+      motorwayCasing: "#b4bcba",
+      motorwayInner: "#ffffff",
+      label: "#4d5554",
+      labelHalo: "#f2f3f0",
+    },
   },
   dark: {
     // A light outline keeps the deep line colours (blue, violet) visible on the dark basemap.
@@ -81,6 +105,17 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     dimmedOpacity: 0.6,
     water: "#1f4a6b",
     waterLabel: "#7fa8cb",
+    // Lighter than the ground, bigger roads lighter still, like night mode in Apple Maps.
+    roads: {
+      minor: "#2f3a39",
+      path: "#283231",
+      majorCasing: "#1a2221",
+      majorInner: "#47534f",
+      motorwayCasing: "#1a2221",
+      motorwayInner: "#5b6865",
+      label: "#9aa8a6",
+      labelHalo: "#0c0c0c",
+    },
   },
 };
 
@@ -94,7 +129,7 @@ const WATER_LABEL_LAYERS = [
   "water_name",
 ];
 
-export type PaintOverride = { layerId: string; property: string; value: string };
+export type PaintOverride = { layerId: string; property: string; value: string | number };
 
 /** Basemap paint changes that make water blue; layers missing from a style are skipped by the caller. */
 export function waterPaintOverrides(palette: MapPalette): PaintOverride[] {
@@ -115,6 +150,45 @@ export function waterPaintOverrides(palette: MapPalette): PaintOverride[] {
       value: palette.waterLabel,
     })),
   ];
+}
+
+/** Road layers of the OpenFreeMap basemaps; dark and positron name the labels differently. */
+const ROAD_LINE_LAYERS: [Exclude<keyof RoadColors, "label" | "labelHalo">, string[]][] = [
+  ["minor", ["highway_minor"]],
+  ["path", ["highway_path"]],
+  ["majorCasing", ["highway_major_casing"]],
+  ["majorInner", ["highway_major_inner"]],
+  ["motorwayCasing", ["highway_motorway_casing", "highway_motorway_bridge_casing"]],
+  ["motorwayInner", ["highway_motorway_inner", "highway_motorway_bridge_inner"]],
+];
+const ROAD_LABEL_LAYERS = [
+  "highway_name_other",
+  "highway_name_motorway",
+  "highway-name-minor",
+  "highway-name-major",
+  "highway-name-path",
+];
+
+/** Basemap paint changes that make streets and their names readable in both themes. */
+export function roadPaintOverrides(palette: MapPalette): PaintOverride[] {
+  const { roads } = palette;
+  const lines = ROAD_LINE_LAYERS.flatMap(([kind, layerIds]) =>
+    layerIds.map((layerId) => ({ layerId, property: "line-color", value: roads[kind] })),
+  );
+  return [
+    ...lines,
+    // The basemaps draw minor streets at 0.9 opacity, which washes them out further.
+    { layerId: "highway_minor", property: "line-opacity", value: 1 },
+    ...ROAD_LABEL_LAYERS.flatMap((layerId) => [
+      { layerId, property: "text-color", value: roads.label },
+      { layerId, property: "text-halo-color", value: roads.labelHalo },
+    ]),
+  ];
+}
+
+/** Everything we repaint on the basemap: blue water and readable streets. */
+export function basemapPaintOverrides(palette: MapPalette): PaintOverride[] {
+  return [...waterPaintOverrides(palette), ...roadPaintOverrides(palette)];
 }
 
 /** Fonts available in the OpenFreeMap glyph server. */

@@ -99,6 +99,32 @@ export function RouteLayer({ route, selectedId, activeId, hasIcons, palette }: R
             "text-halo-width": 4,
           }}
         />
+        {/* Below the ring: where the line is boarded and when. */}
+        <Layer
+          id="route-boarding-label"
+          type="symbol"
+          layout={{
+            "text-field": [
+              "format",
+              ["get", "stopName"],
+              {},
+              "\n",
+              {},
+              ["get", "boardAt"],
+              { "font-scale": 0.9 },
+            ],
+            "text-font": LABEL_FONT,
+            "text-size": 12,
+            "text-anchor": "top",
+            "text-offset": hasIcons ? [0, 1.5] : [0, 0.8],
+            "text-max-width": 10,
+          }}
+          paint={{
+            "text-color": palette.label,
+            "text-halo-color": palette.labelHalo,
+            "text-halo-width": 1.5,
+          }}
+        />
       </Source>
       <Source id="route-places" type="geojson" data={places}>
         <Layer

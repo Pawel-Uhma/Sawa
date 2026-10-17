@@ -23,7 +23,10 @@ export type RouteBoardingFeature = {
     line: string;
     mode: Leg["mode"];
     color: string;
+    /** Name with the ZTM post number, as on the stop sign: "Plac Zawiszy 05". */
     stopName: string;
+    /** When the line is boarded, Warsaw time: "14:05", or "ok. 14:05" when estimated. */
+    boardAt: string;
     isTransfer: boolean;
   };
 };
@@ -41,6 +44,21 @@ export type RoutePlaceFeature = {
   /** `id` is the place id, so a click opens the same card as a regular place. */
   properties: { id: string; name: string; order: number };
 };
+
+// The ZTM timetable is in Warsaw time, whatever the phone's time zone
+const CLOCK = new Intl.DateTimeFormat("pl-PL", {
+  hour: "2-digit",
+  minute: "2-digit",
+  timeZone: "Europe/Warsaw",
+});
+
+/**
+ * A ZTM stop id is the stop group (4 digits) and the post (2 digits): "700905" is post 05.
+ * Ids in another form (mocks) have no post number.
+ */
+export function stopPost(stopId: string): string | null {
+  return /^\d{6}$/.test(stopId) ? stopId.slice(4) : null;
+}
 
 export type FeatureCollection<F> = { type: "FeatureCollection"; features: F[] };
 
@@ -98,7 +116,8 @@ export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBo
           line: leg.line,
           mode: leg.mode,
           color: lineColor(lines[legIndex]),
-          stopName: leg.fromStop.name,
+          stopName: [leg.fromStop.name, stopPost(leg.fromStop.id)].filter(Boolean).join(" "),
+          boardAt: `${leg.realDeparture ? "" : "ok. "}${CLOCK.format(new Date(leg.departAt))}`,
           isTransfer: lines[legIndex] > 0,
         },
       })),
