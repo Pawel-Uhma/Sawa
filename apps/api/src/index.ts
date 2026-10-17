@@ -2,6 +2,7 @@ import { serve } from "@hono/node-server";
 import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthesizer";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
+import { createOsrmWalkPathSource } from "./adapters/osrm/walk-paths";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
 import {
   createSupabaseClient,
@@ -46,6 +47,7 @@ const routePlanner = createRoutePlanner({
   places: placesRepository ?? placesFile,
   fallbackPlaces: placesRepository ? placesFile : undefined,
   departures: createWawDepartureSource(env.WAW_TOKEN),
+  walkPaths: env.WALK_ROUTER_URL ? createOsrmWalkPathSource(env.WALK_ROUTER_URL) : undefined,
   logger,
 });
 
@@ -82,7 +84,13 @@ const app = createApp({
 
 serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
   logger.info(
-    { port, departures: Boolean(env.WAW_TOKEN), llm: llm?.model ?? null, speech: Boolean(speech) },
+    {
+      port,
+      departures: Boolean(env.WAW_TOKEN),
+      walkPaths: env.WALK_ROUTER_URL ?? null,
+      llm: llm?.model ?? null,
+      speech: Boolean(speech),
+    },
     "api listening",
   );
 });

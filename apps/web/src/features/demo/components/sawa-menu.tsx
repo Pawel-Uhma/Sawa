@@ -23,11 +23,13 @@ import { createPortal } from "react-dom";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import { FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
+import type { StartMode } from "../lib/start-point";
 import {
   BubbleIcon,
   ChevronRightIcon,
   CompassIcon,
   InfoIcon,
+  LocateIcon,
   PinIcon,
   RestartIcon,
   RoutesIcon,
@@ -49,6 +51,10 @@ export type SawaMenuActions = {
   /** Ile miejsc Sawa już opowiedziała temu słuchaczowi (lib/memory.ts). */
   rememberedPlaces: number;
   onForget: () => void;
+  /** Skąd rusza przejażdżka (lib/start-point.ts) i podpis tego, co naprawdę jest startem. */
+  startMode: StartMode;
+  startLabel: string;
+  onStartModeChange: (mode: StartMode) => void;
 };
 
 const SawaMenuContext = createContext<SawaMenuActions | null>(null);
@@ -432,6 +438,19 @@ function MenuContent({ actions, run }: MenuContentProps) {
                 : `${placesLabel(actions.rememberedPlaces)} · stuknij, żeby zapomnieć`
           }
           onClick={actions.rememberedPlaces === 0 ? () => {} : forget}
+          chevron={false}
+        />
+      </Group>
+
+      <Group title="Skąd ruszamy">
+        <Row
+          Icon={LocateIcon}
+          label={actions.startMode === "gps" ? "Z Twojej lokalizacji" : "Spod 42 Warsaw"}
+          value={`${actions.startLabel} · stuknij, żeby zmienić`}
+          onClick={() => {
+            haptic();
+            actions.onStartModeChange(actions.startMode === "gps" ? "venue" : "gps");
+          }}
           chevron={false}
         />
       </Group>
