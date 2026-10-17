@@ -34,6 +34,8 @@ export type SearchOptions = {
   loopMinBudgetShare: number;
   /** Rides with a fixed end keep at most one ride per end stop group, in a wider beam. */
   loopBeamWidth: number;
+  /** Shortest ride on one leg: shorter legs only add waiting to fill the budget. */
+  minLegRideSec: number;
 };
 
 export const DEFAULT_SEARCH_OPTIONS: SearchOptions = {
@@ -50,6 +52,7 @@ export const DEFAULT_SEARCH_OPTIONS: SearchOptions = {
   loopMaxLegs: 4,
   loopMinBudgetShare: 0.8,
   loopBeamWidth: 24,
+  minLegRideSec: 180,
 };
 
 export type ChosenLeg = {
@@ -98,6 +101,8 @@ type Context = {
   opts: SearchOptions;
   /** The ride must end near a given point: the origin (loop) or the destination. */
   fixedEnd: boolean;
+  /** A loop may come back on a line it already used; other rides use each line once. */
+  loop: boolean;
   minSec: number;
   maxSec: number;
   groupOf: (stopId: string) => string | undefined;
@@ -152,21 +157,29 @@ function originStates(input: SearchInput, opts: SearchOptions): State[] {
 }
 
 /**
- * Whether another leg can start at this stop group: a different line, or with a fixed end
- * also another variant of the same line (turning back the way you came).
+ * Whether another leg can start at this stop group: a different line, or in a loop also
+ * another variant of the same line (turning back the way you came).
  */
-function canTransferAt(
-  network: Network,
-  stopId: string,
-  pattern: Pattern,
-  fixedEnd: boolean,
-): boolean {
+function canTransferAt(network: Network, stopId: string, pattern: Pattern, loop: boolean): boolean {
   const groupId = network.stops.get(stopId)?.groupId;
   const visits = groupId ? network.visitsByGroup.get(groupId) : undefined;
   return (visits ?? []).some((v) =>
-    fixedEnd
-      ? v.patternId !== pattern.id
-      : network.patterns.get(v.patternId)?.line !== pattern.line,
+    loop ? v.patternId !== pattern.id : network.patterns.get(v.patternId)?.line !== pattern.line,
+  );
+}
+
+/**
+ * Boarding `pattern` at `boardIndex` goes back along `leg`: the next stop is one the leg
+ * already passed. Riding on in the same direction on another variant is only a wait.
+ */
+function turnsBack(network: Network, leg: ChosenLeg, pattern: Pattern, boardIndex: number) {
+  const next = pattern.stops[boardIndex + 1];
+  const nextGroup = next && network.stops.get(next.stopId)?.groupId;
+  const ridden = network.patterns.get(leg.patternId)?.stops.slice(leg.boardIndex, leg.alightIndex);
+  return (
+    leg.patternId !== pattern.id &&
+    !!nextGroup &&
+    (ridden ?? []).some((s) => network.stops.get(s.stopId)?.groupId === nextGroup)
   );
 }
 
@@ -182,8 +195,6 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
   const { opts, minSec, maxSec } = ctx;
   const groupId = ctx.groupOf(state.stopId);
   const visits = (groupId && network.visitsByGroup.get(groupId)) || [];
-  const usedLines = new Set(state.legs.map((l) => network.patterns.get(l.patternId)?.line));
-  const usedPatterns = new Set(state.legs.map((l) => l.patternId));
   const isLastLeg = state.legs.length + 1 >= opts.maxLegs;
   const legIndex = state.legs.length;
   const children: State[] = [];
@@ -191,9 +202,14 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
   for (const visit of visits) {
     const pattern = network.patterns.get(visit.patternId) as Pattern;
     const board = pattern.stops[visit.index] as PatternStop;
-    // A ride with a fixed end may come back on a line it already used (the same tram the
-    // other way), but never rides the same variant twice; a free ride uses each line once.
-    const used = ctx.fixedEnd ? usedPatterns.has(pattern.id) : usedLines.has(pattern.line);
+    // A loop may come back on a line it already used (the same tram the other way);
+    // any other ride uses each line once.
+    const sameLine = state.legs.filter(
+      (l) => network.patterns.get(l.patternId)?.line === pattern.line,
+    );
+    const used = ctx.loop
+      ? sameLine.some((l) => !turnsBack(network, l, pattern, visit.index))
+      : sameLine.length > 0;
     if (used || visit.index === pattern.stops.length - 1) continue;
 
     const waitSec = pattern.headwaySec / 2 + (legIndex > 0 ? opts.transferSec : 0);
@@ -235,12 +251,13 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
         });
       }
 
+      if (stop.atSec - board.atSec < opts.minLegRideSec) continue; // e.g. a terminus loop
       const near = ctx.fixedEnd && ctx.nearEnd(stop.stopId);
       const backSec = ctx.fixedEnd && !near ? timeToEnd(ctx, stop.stopId) : 0;
       if (alightElapsedSec + backSec > maxSec) continue; // cannot reach the end in time
 
       const finishes = alightElapsedSec >= minSec && (!ctx.fixedEnd || near);
-      const transfers = !isLastLeg && canTransferAt(network, stop.stopId, pattern, ctx.fixedEnd);
+      const transfers = !isLastLeg && canTransferAt(network, stop.stopId, pattern, ctx.loop);
       const terminus = j === pattern.stops.length - 1;
       if (!finishes && !transfers && !terminus) continue;
 
@@ -362,6 +379,7 @@ export function planRide(input: SearchInput, options: Partial<SearchOptions> = {
   const ctx: Context = {
     opts,
     fixedEnd,
+    loop: input.returnToStart === true,
     minSec: opts.minBudgetShare * budgetSec,
     maxSec: opts.maxBudgetShare * budgetSec,
     groupOf,
