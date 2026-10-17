@@ -8,11 +8,13 @@ import {
   createSupabasePlacesRepository,
 } from "./adapters/supabase/places-repository";
 import { createWawDepartureSource } from "./adapters/waw/departures";
+import { createWawVehiclePositionSource } from "./adapters/waw/vehicle-positions";
 import { createApp } from "./app";
 import { loadEnv } from "./lib/env";
 import { createLogger } from "./lib/logger";
 import { createRoutePlanner } from "./services/plan-route";
 import { createSpeechService } from "./services/speak";
+import { createVehicleTracker } from "./services/track-vehicles";
 
 const env = loadEnv();
 const logger = createLogger(env.LOG_LEVEL);
@@ -47,6 +49,14 @@ const routePlanner = createRoutePlanner({
   logger,
 });
 
+const vehicles = createVehicleTracker({
+  source: env.WAW_TOKEN ? createWawVehiclePositionSource(env.WAW_TOKEN) : undefined,
+  transit,
+  logger,
+  alwaysOn: env.VEHICLES_ALWAYS_ON,
+});
+vehicles.start();
+
 const llm = env.OPENROUTER_KEY
   ? createOpenRouterProvider({ apiKey: env.OPENROUTER_KEY, model: env.OPENROUTER_MODEL })
   : undefined;
@@ -64,6 +74,7 @@ const app = createApp({
     places: placesRepository,
     llm,
     speech,
+    vehicles,
     onLlmError: (err, placeId) => logger.warn({ err, placeId }, "llm failed, story from facts"),
   },
   onUnexpectedError: (err) => logger.error({ err }, "unhandled error"),

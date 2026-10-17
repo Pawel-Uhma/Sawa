@@ -8,10 +8,12 @@ import { placeRoutes } from "./routes/places";
 import { createRouteRoutes } from "./routes/routes";
 import { createSpeechRoutes } from "./routes/speech";
 import { createStoryRoutes } from "./routes/stories";
+import { createVehicleRoutes } from "./routes/vehicles";
 import type { RoutePlanner } from "./services/plan-route";
 import type { LlmProvider, PlacesRepository } from "./services/ports";
 import { createDisabledSpeechService, type SpeechService } from "./services/speak";
 import { createStoryService } from "./services/tell-story";
+import { createDisabledVehicleTracker, type VehicleTracker } from "./services/track-vehicles";
 
 export type AppServices = {
   routePlanner: RoutePlanner;
@@ -22,6 +24,8 @@ export type AppServices = {
   /** Missing → POST /v1/speech and /v1/stories/audio answer UPSTREAM_ERROR. */
   speech?: SpeechService;
   onLlmError?: (err: unknown, placeId: string) => void;
+  /** Missing → POST /v1/vehicles/track answers `live: false` with no vehicles. */
+  vehicles?: VehicleTracker;
 };
 
 export type AppConfig = {
@@ -64,7 +68,8 @@ export function createApp(config: AppConfig) {
     .route("/", createRouteRoutes(services.routePlanner))
     .route("/", placeRoutes(services.places ?? createFakePlacesRepository()))
     .route("/", createSpeechRoutes(speech))
-    .route("/", createStoryRoutes(stories, speech));
+    .route("/", createStoryRoutes(stories, speech))
+    .route("/", createVehicleRoutes(services.vehicles ?? createDisabledVehicleTracker()));
 
   if (config.debugPages) app.route("/", createDebugRoutes());
   return app;

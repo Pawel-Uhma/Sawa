@@ -42,6 +42,11 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /** "1": poll ZTM vehicle positions all the time, not only while someone tracks a ride. */
+  VEHICLES_ALWAYS_ON: z
+    .string()
+    .optional()
+    .transform((v) => v === "1"),
   DEBUG_PAGES: z
     .enum(["0", "1"])
     .default("0")
