@@ -4,6 +4,8 @@
 
 ## Teraz
 
+- 16:30 (Paweł, z agentem R3): onboarding ma wstęp (czym jest Sawa, skąd imię, jak działa), [ui/onboarding.md](ui/onboarding.md).
+
 - 17:00 (Paweł, z agentem R3): **zakładka Sawa** (T-34) zamiast placeholdera: głowa Sawy na środku paska, świeci się, gdy mówi; podgląd opowieści z transkrypcją, sterowanie, „opowiedz więcej o tym miejscu”, lista „co już opowiedziała” z czasem. Odtwarzacz przeniesiony z arkusza trasy do `DemoApp`. Czat w wolnym tekście czeka na T-40 (R4). Kod nie jest jeszcze w commicie.
 
 - 16:40 (Paweł, z agentem R3): **pamięć Sawy i onboarding, który działa.** Zainteresowania to 4 kategorie z danych (historia, kultura, sport, przyroda). Opowieści biorą `familiarity`, `storyStyle`, `heardFacts`, `knownContexts` i mówią to, czego słuchacz jeszcze nie słyszał (pierwszy raz: raz na temat tło, np. Powstanie). Planer dostaje `heard` i omija miejsca opowiedziane do końca (po jednej trasie następna ma 1 wspólne miejsce na 10). Opis: [ui/onboarding.md](ui/onboarding.md), [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 9 i §8. **Dla R1 (Szczepan):** w `score.ts` doszedł `noveltyOf` (mnożnik pamięci), a do `PlacePoint` pole `richness`, do akceptacji. **Dla R2:** sport i przyroda potrzebują 2–3 faktów na miejsce, 64 miejsca nie mają tagu.

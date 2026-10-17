@@ -35,13 +35,18 @@ Wzorce, które się powtarzają:
 
 | Krok | Sawa (poza, dymek) | Pytanie | Co użytkownik robi |
 |---|---|---|---|
-| 0. Powitanie | macha, „Cześć! Jestem Sawa, syrenka z herbu.” | „Opowiem Ci o mieście za oknem tramwaju.” | „Poznajmy się” |
-| 1. Znajomość | z mapą | Jak dobrze znasz Warszawę? Pierwszy raz / Trochę znam / Mieszkam tu | 1 tapnięcie, przejście samo; „Pomiń” |
+| 0. Powitanie | macha, „Cześć! Jestem Sawa, syrenka z herbu Warszawy.” | „Opowiem Ci o mieście za oknem tramwaju.” | „Poznajmy się” albo „Znam Sawę, przejdź do pytań” |
+| W1. Imię | w sekrecie | Skąd moje imię? Wars + Sawa = Warszawa, legenda i herb | „Dalej” albo przesunięcie palcem |
+| W2. Po co | myśli | Mieszkasz tu, ale znasz trzy miejsca? Dom, praca, siłownia; przejazd jako opowieść o mieście | „Jak to działa?” |
+| W3. Jak | z mapą | Jak to działa: czas → przejazd ZTM → opowieść na głos; skąd dane i że tekst układa model | „Dopasujmy trasę do Ciebie” |
+| 1. Znajomość | macha | Jak dobrze znasz Warszawę? Pierwszy raz / Trochę znam / Mieszkam tu | 1 tapnięcie, przejście samo; „Pomiń” |
 | 2. Zainteresowania | myśli, dymek podpowiada podobne | Co Cię ciekawi? 8 kafelków z ikonami, do 3 | 1–3 tapnięcia, „Dalej · 2 z 3” |
 | 3. Styl | mówi w sekrecie | Jak mam opowiadać? Krótko i z humorem / Z detalami / Same ciekawostki | 1 tapnięcie; „Pomiń” |
 | 4. Budowanie | radość | Układam Twoją Warszawę: 3 linie odhaczają się po kolei | czeka ok. 2,5 s albo „Pokaż mapę” |
 
 Nic się nie wpisuje z klawiatury. Minimum to 4 tapnięcia (powitanie, znajomość, jedno zainteresowanie i „Dalej”, styl).
+
+**Wstęp W1–W3 (17.10, wieczór):** aplikacja nie ma landing page'a, a jury zobaczy ją pierwszy raz, więc onboarding mówi, czym jest Sawa, po co jest i jak działa, zanim o cokolwiek zapyta. Kod w `components/onboarding-intro.tsx`. Strony wstępu przewija się też palcem (`drag="x"`, próg 64 px albo rzut; bez przy reduced motion). Pasek postępu ma 6 segmentów: 3 wstępu, przerwa, 3 pytania. Kto zna Sawę, pomija wstęp linkiem z powitania. Teksty o legendzie z [pitch](../pitch/sawa-pitch.html), problem z [PRD](../10-prd.md).
 
 ## Ruch (apple-design)
 
