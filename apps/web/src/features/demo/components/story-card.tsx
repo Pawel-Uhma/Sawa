@@ -13,6 +13,9 @@ type StoryCardProps = {
   direction: number;
   isPlaying: boolean;
   progress: number;
+  /** Opowieść Sawy z `POST /v1/stories`; null, póki się ładuje. */
+  text: string | null;
+  state: "loading" | "ready" | "failed";
   onPrev: () => void;
   onNext: () => void;
   onTogglePlay: () => void;
@@ -35,6 +38,8 @@ export function StoryCard({
   direction,
   isPlaying,
   progress,
+  text,
+  state,
   onPrev,
   onNext,
   onTogglePlay,
@@ -89,8 +94,17 @@ export function StoryCard({
             </span>
           </div>
 
-          <p className="mt-3 min-h-[44px] text-[15px] leading-relaxed text-tekst-2">
-            Tu pojawi się opowieść Sawy z API (placeholder, bez treści).
+          <p
+            aria-live="polite"
+            className={`mt-3 line-clamp-5 min-h-[44px] text-[15px] leading-relaxed text-tekst-2 transition-opacity duration-300 ${
+              state === "loading" ? "animate-pulse opacity-60" : ""
+            }`}
+          >
+            {state === "loading"
+              ? "Sawa przypomina sobie, co wie o tym miejscu…"
+              : state === "failed"
+                ? "Tym razem Sawa nic nie powie. Jedziemy dalej."
+                : text}
           </p>
 
           <div

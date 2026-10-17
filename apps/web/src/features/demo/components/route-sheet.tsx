@@ -1,21 +1,22 @@
 "use client";
 
+import type { Interest } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
+import { useStoryPlayer } from "../lib/story-player";
 import { ChevronLeftIcon, TramIcon } from "./icons";
 import { Logo } from "./logo";
 import { StoryCard } from "./story-card";
 
-// Placeholder: opowieść trwa stały czas. Docelowo długość wynika z czasu do punktu i API (T-42).
-const PLACEHOLDER_STORY_MS = 8000;
-
 type RouteSheetProps = {
   durationMin: number;
   stops: MockStop[];
+  /** Kategorie z onboardingu: Sawa opowiada pod nie. */
+  interests: Interest[];
   activeIndex: number;
   onActiveChange: (index: number) => void;
   onBack: () => void;
@@ -27,49 +28,28 @@ type RouteSheetProps = {
 /** Trasa: arkusz z punktami zatrzymania na telefonie, pływający panel na desktopie. */
 export function RouteSheet(props: RouteSheetProps) {
   const { stops, activeIndex, onActiveChange } = props;
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [progress, setProgress] = useState(0);
+  const { setIsPlaying, rewind, ...player } = useStoryPlayer(stops, activeIndex, props.interests);
   const [direction, setDirection] = useState(1);
   const hasNext = activeIndex < stops.length - 1;
+  const { progress, toggle: togglePlay } = player;
 
   const goTo = useCallback(
     (index: number) => {
       if (index < 0 || index >= stops.length || index === activeIndex) return;
       setDirection(index > activeIndex ? 1 : -1);
-      setProgress(0);
+      rewind();
       setIsPlaying(true);
       onActiveChange(index);
     },
-    [activeIndex, stops.length, onActiveChange],
+    [activeIndex, stops.length, onActiveChange, setIsPlaying, rewind],
   );
 
-  // Postęp opowieści liczony w klatkach animacji, żeby pasek szedł płynnie
-  useEffect(() => {
-    if (!isPlaying) return;
-    let frame = 0;
-    let last = performance.now();
-    const tick = (now: number) => {
-      const delta = now - last;
-      last = now;
-      setProgress((current) => Math.min(100, current + (delta / PLACEHOLDER_STORY_MS) * 100));
-      frame = requestAnimationFrame(tick);
-    };
-    frame = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(frame);
-  }, [isPlaying]);
-
+  // Po końcu opowieści Sawa przechodzi do następnego punktu
   useEffect(() => {
     if (progress < 100) return;
     if (hasNext) goTo(activeIndex + 1);
     else setIsPlaying(false);
-  }, [progress, hasNext, activeIndex, goTo]);
-
-  const togglePlay = useCallback(() => {
-    setIsPlaying((playing) => {
-      if (!playing && progress >= 100) setProgress(0);
-      return !playing;
-    });
-  }, [progress]);
+  }, [progress, hasNext, activeIndex, goTo, setIsPlaying]);
 
   // Klawiatura na desktopie: strzałki i spacja
   useEffect(() => {
@@ -90,8 +70,10 @@ export function RouteSheet(props: RouteSheetProps) {
   const content = (
     <SheetContent
       {...props}
-      isPlaying={isPlaying}
+      isPlaying={player.isPlaying}
       progress={progress}
+      storyText={player.text}
+      storyState={player.loading ? "loading" : player.failed ? "failed" : "ready"}
       direction={direction}
       goTo={goTo}
       togglePlay={togglePlay}
@@ -245,6 +227,8 @@ function MobileSheet({
 type SheetContentProps = RouteSheetProps & {
   isPlaying: boolean;
   progress: number;
+  storyText: string | null;
+  storyState: "loading" | "ready" | "failed";
   direction: number;
   goTo: (index: number) => void;
   togglePlay: () => void;
@@ -258,6 +242,8 @@ function SheetContent({
   isDesktop,
   isPlaying,
   progress,
+  storyText,
+  storyState,
   direction,
   goTo,
   togglePlay,
@@ -299,6 +285,8 @@ function SheetContent({
           direction={direction}
           isPlaying={isPlaying}
           progress={progress}
+          text={storyText}
+          state={storyState}
           onPrev={() => goTo(activeIndex - 1)}
           onNext={() => goTo(activeIndex + 1)}
           onTogglePlay={togglePlay}

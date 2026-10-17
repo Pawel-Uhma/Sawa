@@ -32,7 +32,12 @@ export function RouteThumb({
     const k = Math.cos((52.23 * Math.PI) / 180);
     const xs = all.map(([lng]) => lng * k);
     const ys = all.map(([, lat]) => lat);
-    const [minX, maxX, minY, maxY] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+    const [minX, maxX, minY, maxY] = [
+      Math.min(...xs),
+      Math.max(...xs),
+      Math.min(...ys),
+      Math.max(...ys),
+    ];
     const scale = Math.min(
       (SIZE.width - PAD * 2) / (maxX - minX || 1),
       (SIZE.height - PAD * 2) / (maxY - minY || 1),
@@ -59,13 +64,26 @@ export function RouteThumb({
       className={`block bg-mapa ${className}`}
     >
       <defs>
-        <pattern id="kwartaly" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)">
+        <pattern
+          id="kwartaly"
+          width="36"
+          height="36"
+          patternUnits="userSpaceOnUse"
+          patternTransform="rotate(-12)"
+        >
           <path d="M0 0H36M0 0V36" stroke="#fff" strokeWidth="3" />
         </pattern>
       </defs>
       {/* Umowne kwartały ulic: tylko faktura, nie prawdziwa siatka */}
       <rect width="100%" height="100%" fill="url(#kwartaly)" opacity="0.7" />
-      <path d={path} fill="none" stroke="#fff" strokeWidth={strokeWidth + 4} strokeLinejoin="round" strokeLinecap="round" />
+      <path
+        d={path}
+        fill="none"
+        stroke="#fff"
+        strokeWidth={strokeWidth + 4}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+      />
       <motion.path
         d={path}
         fill="none"
@@ -92,7 +110,14 @@ export function RouteThumb({
       {start && (
         <g>
           <circle cx={start[0]} cy={start[1]} r={18} fill="var(--color-glebia)" opacity="0.14" />
-          <circle cx={start[0]} cy={start[1]} r={8} fill="var(--color-glebia)" stroke="#fff" strokeWidth={3} />
+          <circle
+            cx={start[0]}
+            cy={start[1]}
+            r={8}
+            fill="var(--color-glebia)"
+            stroke="#fff"
+            strokeWidth={3}
+          />
         </g>
       )}
     </svg>

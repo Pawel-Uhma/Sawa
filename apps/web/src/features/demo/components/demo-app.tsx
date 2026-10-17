@@ -2,12 +2,20 @@
 
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { fetchPlacePins, type PlacePin, planRoute, routeLine, routeStops } from "../lib/api-data";
+import {
+  fetchPlacePins,
+  type PlacePin,
+  planRoute,
+  routeLine,
+  routeStops,
+  toPlannerInterests,
+} from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
 import { type LngLat, type MockStop, USER_LOCATION } from "../lib/mock-data";
 import { EMPTY_PROFILE, type Profile } from "../lib/onboarding";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
+import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
 import { type MapCamera, type MapPadding, SawaMap } from "./sawa-map";
 import { type Tab, TabBar } from "./tab-bar";
@@ -123,6 +131,8 @@ export function DemoApp() {
     [isRoute, route, activeIndex],
   );
 
+  const storyInterests = useMemo(() => toPlannerInterests(profile.interests), [profile.interests]);
+
   const showPins = stage === "map" && tab === "map" ? pins : [];
 
   return (
@@ -163,17 +173,35 @@ export function DemoApp() {
               planError={planError}
             />
           )}
-          {stage === "map" && tab !== "map" && (
-            <TabPlaceholder
-              key={tab}
-              tab={tab}
-              hasRoute={route.length > 0}
-              collapsed={panelCollapsed}
-              onCollapsedChange={setPanelCollapsed}
-              onOpenRoute={() => {
+          {stage === "map" && tab === "rides" && (
+            <RidesPanel
+              key="rides"
+              interests={profile.interests}
+              durationMin={durationMin}
+              onDurationChange={setDurationMin}
+              lastRoute={route}
+              onOpenLastRoute={() => {
                 setTab("map");
                 setStage("route");
               }}
+              onStart={(planned) => {
+                setTab("map");
+                if (!planned) {
+                  generateRoute();
+                  return;
+                }
+                setRoute(routeStops(planned));
+                setLine(routeLine(planned));
+                setActiveIndex(0);
+                setStage("route");
+              }}
+            />
+          )}
+          {stage === "map" && tab === "sawa" && (
+            <TabPlaceholder
+              key="sawa"
+              collapsed={panelCollapsed}
+              onCollapsedChange={setPanelCollapsed}
             />
           )}
           {isRoute && (
@@ -181,6 +209,7 @@ export function DemoApp() {
               key="route"
               durationMin={durationMin}
               stops={route}
+              interests={storyInterests}
               activeIndex={activeIndex}
               onActiveChange={setActiveIndex}
               onBack={() => setStage("map")}
