@@ -268,7 +268,9 @@ export function SawaMap({
             palette={palette}
           />
         )}
-        {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
+        {isLoaded && route && (
+          <LiveVehiclesLayer data={vehicles.data} route={route} casing={palette.casing} />
+        )}
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
