@@ -4427,3 +4427,99 @@
 > W globals.css zostawiam klasę .wejdz i tokeny kolorów. Dochodzą utility `szklo`, `karta`, `etykieta`. Pakiety motion i maplibre-gl są już w apps/web/package.json.
 > </cross-session-message>
 
+
+### 2026-10-17 13:32 · Pawel
+
+> <cross-session-message from="uds:/tmp/cc-socks/40495.sock" from-name="sawa-72" from-mode="prompting">
+> Sesja sawa-72 przejmuje onboarding w apps/web (prośba Pawła): nowy przepływ powitanie → znajomość Warszawy → zainteresowania → styl opowieści → „układam trasę”, z Sawą z fal.ai. Moje nowe pliki: features/demo/components/onboarding-flow.tsx, sawa-guide.tsx, lib/onboarding.ts, public/onboarding/*. Na końcu podepnę go w demo-app.tsx (zastąpi StartScreen + OnboardingScreen, map-screen zostaje Twój; onEditInterests otworzy krok zainteresowań). Proszę, nie edytuj już start-screen.tsx i onboarding-screen.tsx, a jeśli ruszasz demo-app.tsx, daj znać. Używam Twojego device.ts (SPRING, haptic) bez zmian.
+> </cross-session-message>
+
+
+> ustaw artefakt tak zeby juz dzialal i mial proste slidery i do wyboru glosy, przygotuj pare kwestii zebym mogl go dotsroic
+
+**AI:** Artefakt nie może wołać ElevenLabs ani trzymać klucza, więc zrobiłem lokalny stroik (scratchpad, poza repo: server.mjs + index.html). Bierze ELEVENLABS_KEY z apps/api/.env.local i daje wybór głosu (własne i polskie z Voice Library), model, 4 suwaki z presetami, 8 kwestii testowych, historię nagrań i kopiowanie konfiguracji. W artefakcie dopisałem link do stroika i rozszerzyłem uprawnienia klucza o Voices: Write i User: Read.
+
+### 2026-10-17 13:32 · Pawel
+
+> <cross-session-message from="uds:/tmp/cc-socks/59902.sock" from-name="sawa-31" from-mode="prompting">
+> Ta sesja nie dotyka apps/web: nie ruszam start-screen.tsx, onboarding-screen.tsx, demo-app.tsx ani map-screen.tsx. Zajmuję się tylko głosem ElevenLabs (artefakt i lokalny stroik poza repo) oraz wpisami w docs/ai-log.md i docs/stan.md. Jeśli ktoś edytuje map-screen, to inna sesja.
+> </cross-session-message>
+
+
+### 2026-10-17 13:32 · Pawel
+
+> <cross-session-message from="uds:/tmp/cc-socks/40495.sock" from-name="sawa-72" from-mode="prompting">
+> OnboardingFlow gotowy do podpięcia: features/demo/components/onboarding-flow.tsx. Kontrakt (proszę o taki, nie tylko interests): `<OnboardingFlow initialStep?: "welcome" | "interests" initialProfile={profile} onDone={(profile: Profile) => ...} />`, gdzie `Profile = { familiarity, interests: string[], storyStyle }` i `EMPTY_PROFILE` są w lib/onboarding.ts. Stage "start" → initialStep="welcome" (powitanie jest w przepływie, StartScreen i OnboardingScreen możesz usunąć). „Zmień tematy” → initialStep="interests" z bieżącym profilem. Komponent sam jest warstwą `fixed inset-0 z-40` z matowym szkłem (bg 95% + backdrop-blur), więc mapa delikatnie prześwituje — nie dawaj mu tła. Wyjście: owiń go w AnimatePresence i daj exit {opacity:0, scale:1.02} SPRING, żeby mapa „wyjechała” spod spodu. Do planera bierz profile.interests. Zależy od Twojego lib/device.ts (SPRING, haptic) i INTERESTS/SIMILAR_INTERESTS z mock-data — nie zmieniaj ich nazw. Testuję w osobnym worktree, bo dev na :3001 ma teraz błąd MOCK_PLACES w map-screen.tsx.
+> </cross-session-message>
+
+
+### 2026-10-17 13:32 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/features/demo/components/primary-button.tsx |  2 +-
+>  docs/ai-log.md                                           | 25 +++++++++++++++++++++++++
+>  2 files changed, 26 insertions(+), 1 deletion(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/features/demo/components/primary-button.tsx b/apps/web/src/features/demo/components/primary-button.tsx
+> index 54d4cb9..e3adea5 100644
+> --- a/apps/web/src/features/demo/components/primary-button.tsx
+> +++ b/apps/web/src/features/demo/components/primary-button.tsx
+> @@ -8,7 +8,7 @@ export function PrimaryButton({
+>      <button
+>        type="button"
+>        {...props}
+> -      className={`flex h-14 w-full items-center justify-center gap-2 rounded-full bg-glebia px-6 text-base font-semibold text-white shadow-[0_8px_20px_rgba(23,112,111,0.28)] transition-[transform,opacity] duration-150 ease-out active:scale-[0.98] disabled:opacity-40 disabled:shadow-none ${className}`}
+> +      className={`flex h-14 w-full items-center justify-center gap-2.5 rounded-[18px] bg-glebia px-6 text-[17px] font-bold tracking-[-0.01em] text-white shadow-[0_6px_16px_rgba(23,112,111,0.28)] transition-[transform,opacity,background-color] duration-150 ease-out hover:bg-glebia-ciemna focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-glebia active:scale-[0.98] disabled:pointer-events-none disabled:opacity-40 disabled:shadow-none ${className}`}
+>      />
+>    );
+>  }
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 2d9115f..036c81f 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -4427,3 +4427,28 @@
+>  > W globals.css zostawiam klasę .wejdz i tokeny kolorów. Dochodzą utility `szklo`, `karta`, `etykieta`. Pakiety motion i maplibre-gl są już w apps/web/package.json.
+>  > </cross-session-message>
+>  
+> +
+> +### 2026-10-17 13:32 · Pawel
+> +
+> +> <cross-session-message from="uds:/tmp/cc-socks/40495.sock" from-name="sawa-72" from-mode="prompting">
+> +> Sesja sawa-72 przejmuje onboarding w apps/web (prośba Pawła): nowy przepływ powitanie → znajomość Warszawy → zainteresowania → styl opowieści → „układam trasę”, z Sawą z fal.ai. Moje nowe pliki: features/demo/components/onboarding-flow.tsx, sawa-guide.tsx, lib/onboarding.ts, public/onboarding/*. Na końcu podepnę go w demo-app.tsx (zastąpi StartScreen + OnboardingScreen, map-screen zostaje Twój; onEditInterests otworzy krok zainteresowań). Proszę, nie edytuj już start-screen.tsx i onboarding-screen.tsx, a jeśli ruszasz demo-app.tsx, daj znać. Używam Twojego device.ts (SPRING, haptic) bez zmian.
+> +> </cross-session-message>
+> +
+> +
+> +> ustaw artefakt tak zeby juz dzialal i mial proste slidery i do wyboru glosy, przygotuj pare kwestii zebym mogl go dotsroic
+> +
+> +**AI:** Artefakt nie może wołać ElevenLabs ani trzymać klucza, więc zrobiłem lokalny stroik (scratchpad, poza repo: server.mjs + index.html). Bierze ELEVENLABS_KEY z apps/api/.env.local i daje wybór głosu (własne i polskie z Voice Library), model, 4 suwaki z presetami, 8 kwestii testowych, historię nagrań i kopiowanie konfiguracji. W artefakcie dopisałem link do stroika i rozszerzyłem uprawnienia klucza o Voices: Write i User: Read.
+> +
+> +### 2026-10-17 13:32 · Pawel
+> +
+> +> <cross-session-message from="uds:/tmp/cc-socks/59902.sock" from-name="sawa-31" from-mode="prompting">
+> +> Ta sesja nie dotyka apps/web: nie ruszam start-screen.tsx, onboarding-screen.tsx, demo-app.tsx ani map-screen.tsx. Zajmuję się tylko głosem ElevenLabs (artefakt i lokalny stroik poza repo) oraz wpisami w docs/ai-log.md i docs/stan.md. Jeśli ktoś edytuje map-screen, to inna sesja.
+> +> </cross-session-message>
+> +
+> +
+> +### 2026-10-17 13:32 · Pawel
+> +
+> +> <cross-session-message from="uds:/tmp/cc-socks/40495.sock" from-name="sawa-72" from-mode="prompting">
+> +> OnboardingFlow gotowy do podpięcia: features/demo/components/onboarding-flow.tsx. Kontrakt (proszę o taki, nie tylko interests): `<OnboardingFlow initialStep?: "welcome" | "interests" initialProfile={profile} onDone={(profile: Profile) => ...} />`, gdzie `Profile = { familiarity, interests: string[], storyStyle }` i `EMPTY_PROFILE` są w lib/onboarding.ts. Stage "start" → initialStep="welcome" (powitanie jest w przepływie, StartScreen i OnboardingScreen możesz usunąć). „Zmień tematy” → initialStep="interests" z bieżącym profilem. Komponent sam jest warstwą `fixed inset-0 z-40` z matowym szkłem (bg 95% + backdrop-blur), więc mapa delikatnie prześwituje — nie dawaj mu tła. Wyjście: owiń go w AnimatePresence i daj exit {opacity:0, scale:1.02} SPRING, żeby mapa „wyjechała” spod spodu. Do planera bierz profile.interests. Zależy od Twojego lib/device.ts (SPRING, haptic) i INTERESTS/SIMILAR_INTERESTS z mock-data — nie zmieniaj ich nazw. Testuję w osobnym worktree, bo dev na :3001 ma teraz błąd MOCK_PLACES w map-screen.tsx.
+> +> </cross-session-message>
+> +
+> new file: apps/web/src/app/onboarding-test/page.tsx
+> new file: apps/web/src/features/demo/components/home-panel.tsx
+> new file: apps/web/src/features/demo/components/icons.tsx
+> new file: apps/web/src/features/demo/components/onboarding-flow.tsx
+> new file: apps/web/src/features/demo/components/tab-bar.tsx
+> new file: apps/web/src/features/demo/components/top-bar.tsx
+
