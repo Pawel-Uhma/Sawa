@@ -1,6 +1,5 @@
 import { type Leg, type Route, toLngLat } from "@sawa/shared";
-
-type LngLat = [number, number];
+import { boundsOf, type LngLat, type LngLatBounds } from "./bounds";
 
 export type RouteLegFeature = {
   type: "Feature";
@@ -45,16 +44,9 @@ export function routePlacesToGeoJson(route: Route): FeatureCollection<RoutePlace
 }
 
 /** [[west, south], [east, north]] around every leg shape and route place; null when empty. */
-export function routeBounds(route: Route): [LngLat, LngLat] | null {
-  const points: LngLat[] = [
+export function routeBounds(route: Route): LngLatBounds | null {
+  return boundsOf([
     ...route.legs.flatMap((leg) => leg.lngLats),
     ...route.places.map((place) => toLngLat(place.position)),
-  ];
-  if (points.length === 0) return null;
-  const lngs = points.map(([lng]) => lng);
-  const lats = points.map(([, lat]) => lat);
-  return [
-    [Math.min(...lngs), Math.min(...lats)],
-    [Math.max(...lngs), Math.max(...lats)],
-  ];
+  ]);
 }

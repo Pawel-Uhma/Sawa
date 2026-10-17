@@ -1,7 +1,7 @@
 "use client";
 
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { Interest, PlaceSummaryFeature, Route } from "@sawa/shared";
+import type { Interest, LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -12,25 +12,52 @@ import {
 } from "react-map-gl/maplibre";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import { cameraMoveKey, type MapCamera, type MapPadding, resolveCamera } from "../lib/camera";
 import { BASEMAP_STYLE_URL, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
-import { routeBounds, routePlacesToGeoJson } from "../lib/route-to-geojson";
+import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
+import { UserLayer } from "./user-layer";
 
 const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID];
 
-/** Leaves room for the bottom sheet on phones when zooming to the route. */
-const ROUTE_PADDING = { top: 48, right: 32, bottom: 200, left: 32 };
+/** Leaves room for the place card on phones when no padding is given. */
+const DEFAULT_PADDING: MapPadding = { top: 48, right: 32, bottom: 200, left: 32 };
+
+const CAMERA_DURATION_MS = 800;
 
 export type SawaMapProps = {
   /** Categories from onboarding; empty = all places. */
   interests: readonly Interest[];
   route?: Route;
+  /** Requested view; without it the map fits the route (or stays where the user left it). */
+  camera?: MapCamera;
+  /** Space covered by the screen's own panels; camera moves keep their target outside it. */
+  padding?: Partial<MapPadding>;
+  /** User position dot. */
+  user?: LatLng;
+  /** Route place the story is about right now. */
+  activeStopId?: string;
+  /** Click on a route place. When set, it replaces the built-in place card for route places. */
+  onStopClick?: (placeId: string) => void;
+  /** Built-in card after clicking a place; turn off when the screen shows its own. */
+  hasPlaceSheet?: boolean;
+  hasZoomControls?: boolean;
 };
 
-export function SawaMap({ interests, route }: SawaMapProps) {
+export function SawaMap({
+  interests,
+  route,
+  camera,
+  padding,
+  user,
+  activeStopId,
+  onStopClick,
+  hasPlaceSheet = true,
+  hasZoomControls = true,
+}: SawaMapProps) {
   const mapRef = useRef<MapRef>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [cursor, setCursor] = useState<string>("grab");
@@ -42,20 +69,48 @@ export function SawaMap({ interests, route }: SawaMapProps) {
     [places.data, interests],
   );
 
+  const fullPadding = { ...DEFAULT_PADDING, ...padding };
+  const move = resolveCamera(camera, route);
+  const moveKey = cameraMoveKey(move, fullPadding);
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: moveKey holds move and padding by value; the objects themselves are new on every render
   useEffect(() => {
-    const bounds = route && routeBounds(route);
-    if (!isLoaded || !bounds) return;
-    mapRef.current?.fitBounds(bounds, { padding: ROUTE_PADDING, duration: 800 });
-  }, [route, isLoaded]);
+    const map = mapRef.current;
+    if (!isLoaded || !map || !move) return;
+    // MapLibre reads an explicit `zoom: undefined` / `maxZoom: undefined` as a value (camera goes NaN),
+    // so optional options are only passed when set.
+    const options = { padding: fullPadding, duration: CAMERA_DURATION_MS };
+    if (move.type === "fit") {
+      map.fitBounds(
+        move.bounds,
+        move.maxZoom === undefined ? options : { ...options, maxZoom: move.maxZoom },
+      );
+    } else {
+      map.easeTo(
+        move.zoom === undefined
+          ? { ...options, center: move.center }
+          : { ...options, center: move.center, zoom: move.zoom },
+      );
+    }
+  }, [moveKey, isLoaded]);
 
   const selected = useMemo(
-    () => findPlace(selectedId, places.data ?? [], route),
-    [selectedId, places.data, route],
+    () => (hasPlaceSheet ? findPlace(selectedId, places.data ?? [], route) : null),
+    [hasPlaceSheet, selectedId, places.data, route],
   );
 
   function handleClick(event: MapLayerMouseEvent) {
-    const id = event.features?.[0]?.properties?.id;
-    select(typeof id === "string" ? id : null);
+    const feature = event.features?.[0];
+    const id = feature?.properties?.id;
+    if (typeof id !== "string") {
+      select(null);
+      return;
+    }
+    if (feature?.layer.id === ROUTE_PLACES_LAYER_ID && onStopClick) {
+      onStopClick(id);
+      return;
+    }
+    select(id);
   }
 
   return (
@@ -69,14 +124,23 @@ export function SawaMap({ interests, route }: SawaMapProps) {
         onMouseEnter={() => setCursor("pointer")}
         onMouseLeave={() => setCursor("grab")}
         onClick={handleClick}
-        onLoad={() => setIsLoaded(true)}
+        onLoad={(event) => {
+          // Compact attribution starts expanded and covers the bottom of a phone screen;
+          // collapse it, the (i) button still opens it.
+          event.target
+            .getContainer()
+            .querySelector(".maplibregl-ctrl-attrib")
+            ?.classList.remove("maplibregl-compact-show");
+          setIsLoaded(true);
+        }}
         attributionControl={false}
         style={{ width: "100%", height: "100%" }}
       >
-        <NavigationControl position="top-right" showCompass={false} />
+        {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
         <AttributionControl compact customAttribution={route?.attribution} />
         <PlacesLayer places={visiblePlaces} selectedId={selectedId} isDimmed={Boolean(route)} />
-        {route && <RouteLayer route={route} selectedId={selectedId} />}
+        {route && <RouteLayer route={route} selectedId={selectedId} activeId={activeStopId} />}
+        {user && <UserLayer position={user} />}
       </MapLibreMap>
       {places.isError && (
         <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-white px-3 py-2 text-sm text-red-700 shadow">
