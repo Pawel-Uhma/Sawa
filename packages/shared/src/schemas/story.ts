@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { InterestSchema } from "../interests";
-import { MAX_HEARD_FACTS } from "../memory";
+import { MAX_HEARD_FACTS, MAX_HEARD_PLACES } from "../memory";
 import { PlaceSourceSchema } from "./place";
 // MAX_STORY_SEC lives in route.ts with the planner windows it bounds (one import direction).
 import { AUDIENCES, FAMILIARITY, MAX_STORY_SEC, STORY_STYLES } from "./route";
@@ -25,6 +25,18 @@ export const StoryRequestSchema = z.object({
   heardFacts: z.array(z.string().max(16)).max(MAX_HEARD_FACTS).default([]),
   /** Background stories already explained (`Story.contextIds`), never explained again. */
   knownContexts: z.array(z.string().max(40)).max(50).default([]),
+  /**
+   * Seconds since the listener last heard a story about this place (apps/web memory `at`).
+   * Missing: never. Sawa says "trzy miesiące temu opowiadałam ci o…" instead of "Pamiętasz…".
+   */
+  heardAgoSec: z.number().int().nonnegative().optional(),
+  /** "Opowiedz więcej": the listener asked for more about this place, not the route's turn. */
+  more: z.boolean().optional(),
+  /**
+   * Places the listener already heard about (only with `more`): when nothing new is left here,
+   * Sawa suggests a nearby place outside this list.
+   */
+  heardPlaceIds: z.array(z.string()).max(MAX_HEARD_PLACES).optional(),
 });
 export type StoryRequest = z.infer<typeof StoryRequestSchema>;
 /** What a client sends; the lists may be left out. */
@@ -42,6 +54,13 @@ export const StorySchema = z.object({
   contextIds: z.array(z.string()),
   /** Every fact of the place was heard before: a short reminder, nothing new. */
   recap: z.boolean(),
+  /**
+   * With `more` and nothing new left: a nearby place Sawa offers to tell about instead
+   * ("ale mogę ci opowiedzieć o …"). The client shows it as a button.
+   */
+  suggestion: z.object({ placeId: z.string(), name: z.string() }).nullable().optional(),
+  /** Nothing worth telling here (a dull place, no story found): the client stays quiet. */
+  silent: z.boolean().optional(),
 });
 export type Story = z.infer<typeof StorySchema>;
 
@@ -60,5 +79,10 @@ export const LiveStorySchema = z.object({
   text: z.string(),
   done: z.boolean(),
   story: StorySchema.nullable(),
+  /**
+   * When each word of `text` (split on whitespace) starts in the voice, in seconds from the
+   * start of the clip; grows with the voice. Missing or shorter than the text: not known yet.
+   */
+  wordTimes: z.array(z.number().nonnegative()).optional(),
 });
 export type LiveStory = z.infer<typeof LiveStorySchema>;
