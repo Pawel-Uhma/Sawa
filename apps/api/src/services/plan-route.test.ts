@@ -1,9 +1,18 @@
-import { HACKATHON_VENUE, haversineM, INTERESTS, type Route, RouteSchema } from "@sawa/shared";
+import {
+  HACKATHON_VENUE,
+  haversineM,
+  INTERESTS,
+  type LatLng,
+  type PlanRouteRequest,
+  type Route,
+  RouteSchema,
+  toLngLat,
+} from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import { createRoutePlanner } from "./plan-route";
-import type { DepartureSource } from "./ports";
+import type { DepartureSource, WalkPathSource } from "./ports";
 
 // Integration test on the committed data files (real Warsaw network and places).
 const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
@@ -237,5 +246,43 @@ describe("route planner on real data", () => {
       NOW,
     );
     expect(route.legs.every((l) => l.realDeparture === undefined)).toBe(true);
+  });
+
+  it("draws walking legs along the paths from the walk router, keeping the times", async () => {
+    const asked: LatLng[][] = [];
+    const walkPaths: WalkPathSource = {
+      path: async (points) => {
+        asked.push(points);
+        const [a, b] = [points[0] as LatLng, points[points.length - 1] as LatLng];
+        // An L-shaped "street" between the ends.
+        return [toLngLat(a), [b.lng, a.lat], toLngLat(b)];
+      },
+    };
+    const request: PlanRouteRequest = {
+      origin: HACKATHON_VENUE,
+      durationMin: 60,
+      interests: ["historical"],
+    };
+    const straight = await planner.plan(request, NOW);
+    const route = RouteSchema.parse(
+      await createRoutePlanner({ transit, places, walkPaths }).plan(request, NOW),
+    );
+    const walks = route.legs.filter((l) => l.mode === "walk");
+    expect(walks.length).toBeGreaterThan(0);
+    expect(asked).toHaveLength(walks.length);
+    for (const leg of walks) expect(leg.lngLats).toHaveLength(3);
+    expect(route.legs.map((l) => l.durationMin)).toEqual(straight.legs.map((l) => l.durationMin));
+    expect(route.places).toEqual(straight.places);
+  });
+
+  it("keeps straight walking legs when the walk router has no path", async () => {
+    const walkPaths: WalkPathSource = { path: async () => undefined };
+    const request: PlanRouteRequest = {
+      origin: HACKATHON_VENUE,
+      durationMin: 10,
+      interests: ["historical"],
+    };
+    const route = await createRoutePlanner({ transit, places, walkPaths }).plan(request, NOW);
+    expect(route).toEqual(await planner.plan(request, NOW));
   });
 });

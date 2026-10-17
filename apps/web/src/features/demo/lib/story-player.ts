@@ -31,6 +31,14 @@ function targetSecFor(stops: readonly MockStop[], index: number): number {
   return Math.min(MAX_TARGET_SEC, Math.max(MIN_TARGET_SEC, Math.round(sec)));
 }
 
+/**
+ * A clip depends on who listens and how long Sawa may talk, not only on the stop (T-93):
+ * after a change of interests or ride length the old story must not play.
+ */
+export function clipKey(stopId: string, listener: Listener, targetSec: number): string {
+  return JSON.stringify([stopId, targetSec, listener]);
+}
+
 /** Asks for a story with what Sawa already told this listener, so it tells something new. */
 export async function fetchClip(
   placeId: string,
@@ -39,21 +47,21 @@ export async function fetchClip(
   placeName?: string,
 ): Promise<Clip> {
   const memory = getMemory();
-  const res = await api.v1.stories.$post({
-    json: {
-      placeId,
-      targetSec,
-      ...listener,
-      heardFacts: memory.places[placeId]?.facts ?? [],
-      knownContexts: memory.contexts,
-    },
-  });
+  const json = {
+    placeId,
+    targetSec,
+    ...listener,
+    heardFacts: memory.places[placeId]?.facts ?? [],
+    knownContexts: memory.contexts,
+  };
+  const res = await api.v1.stories.$post({ json });
   if (!res.ok) throw new Error(`POST /v1/stories: ${res.status}`);
   const { text, factIds, contextIds } = await res.json();
   const told = { placeId, factIds, contextIds, placeName };
   // Without the voice the card still shows the text and runs on a timer.
   try {
-    const audio = await api.v1.speech.$post({ json: { text } });
+    // The same body hits the API's story cache, so the voice reads exactly this text.
+    const audio = await api.v1.stories.audio.$post({ json });
     if (!audio.ok) return { text, audioUrl: null, told };
     return { text, audioUrl: URL.createObjectURL(await audio.blob()), told };
   } catch {
@@ -109,11 +117,13 @@ export function useStoryPlayer(
     (index: number) => {
       const stop = stops[index];
       if (!stop) return null;
-      let pending = cache.current.get(stop.id);
+      const targetSec = targetSecFor(stops, index);
+      const key = clipKey(stop.id, listener, targetSec);
+      let pending = cache.current.get(key);
       if (!pending) {
-        pending = fetchClip(stop.id, listener, targetSecFor(stops, index), stop.name);
-        cache.current.set(stop.id, pending);
-        pending.catch(() => cache.current.delete(stop.id));
+        pending = fetchClip(stop.id, listener, targetSec, stop.name);
+        cache.current.set(key, pending);
+        pending.catch(() => cache.current.delete(key));
       }
       return pending;
     },
@@ -142,7 +152,7 @@ export function useStoryPlayer(
     const stop = stops[activeIndex];
     if (!stop || !clip) return;
     rememberStory(clip.told);
-    cache.current.delete(stop.id);
+    cache.current.delete(clipKey(stop.id, listener, targetSecFor(stops, activeIndex)));
     setClip(null);
     setFailed(false);
     setProgress(0);
@@ -150,7 +160,7 @@ export function useStoryPlayer(
     load(activeIndex)
       ?.then((next) => activeId.current === stop.id && setClip(next))
       .catch(() => activeId.current === stop.id && setFailed(true));
-  }, [stops, activeIndex, clip, load]);
+  }, [stops, activeIndex, clip, load, listener]);
 
   // The next story is ready before the tram gets there.
   useEffect(() => {

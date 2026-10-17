@@ -11,6 +11,7 @@ import {
   type MapRef,
   NavigationControl,
 } from "react-map-gl/maplibre";
+import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
 import type { LngLatBounds } from "../lib/bounds";
@@ -27,6 +28,7 @@ import { MIN_PLACES_ZOOM, tilesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
+import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
@@ -78,6 +80,11 @@ export function SawaMap({
   const [view, setView] = useState<MapView | null>(null);
   const tiles = useMemo(() => (view ? tilesInView(view.bounds, view.zoom) : []), [view]);
   const places = usePlaces(tiles);
+  const vehicles = useLiveVehicles(route);
+  const attribution = useMemo(
+    () => [...(route?.attribution ?? []), ...(vehicles.data?.attribution ?? [])],
+    [route?.attribution, vehicles.data?.attribution],
+  );
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
@@ -165,9 +172,10 @@ export function SawaMap({
         style={{ width: "100%", height: "100%" }}
       >
         {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
-        <AttributionControl compact customAttribution={route?.attribution} />
+        <AttributionControl compact customAttribution={attribution} />
         <PlacesLayer places={visiblePlaces} selectedId={selectedId} isDimmed={Boolean(route)} />
         {route && <RouteLayer route={route} selectedId={selectedId} activeId={activeStopId} />}
+        {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
         {destination && <DestinationLayer position={destination} />}
         {user && <UserLayer position={user} />}
       </MapLibreMap>

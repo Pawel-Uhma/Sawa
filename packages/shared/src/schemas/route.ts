@@ -63,7 +63,10 @@ export type Stop = z.infer<typeof StopSchema>;
 export const LegSchema = z.object({
   /** Empty for a walk. */
   line: z.string(),
-  /** "walk": on foot, straight segments (to the first stop, from the last one, or a whole walk). */
+  /**
+   * "walk": on foot (to the first stop, from the last one, or a whole walk), along streets and
+   * footways; straight segments when the walking router is unavailable.
+   */
   mode: z.enum(["tram", "bus", "walk"]),
   /** Direction of the line, or where a walk ends. */
   headsign: z.string(),
@@ -77,7 +80,7 @@ export const LegSchema = z.object({
    */
   realDeparture: z.boolean().optional(),
   durationMin: z.number().nonnegative(),
-  /** Shape of the ride, [lng, lat] pairs for MapLibre. */
+  /** Shape of the ride or walk, [lng, lat] pairs for MapLibre. */
   lngLats: z.array(z.tuple([z.number(), z.number()])),
 });
 export type Leg = z.infer<typeof LegSchema>;

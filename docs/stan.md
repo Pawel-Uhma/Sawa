@@ -2,8 +2,12 @@
 
 **Ostatnia aktualizacja:** 17.10.2026, ok. 19:10 (Szczepan, z agentem)
 
+- 16:45 (Paweł, z agentem R3): pojazdy na mapie (T-100, issue #30) w gałęzi `r3/pojazdy-na-zywo`: hook co 10 s, ikony tramwaju i autobusu z `public/icons/`, płynny ruch w `requestAnimationFrame`. Typecheck, lint i testy zielone; zmergowane do `main` (PR, typecheck, lint i testy zielone). Do sprawdzenia na mapie z `WAW_TOKEN`.
+
 ## Teraz
 
+- Jasiek (16:57, R2 z agentem, za zgodą R1): T-106. Odcinki `walk` idą po ulicach i chodnikach: planer liczy jak dotąd (prosto × 1,3), a potem `Leg.lngLats` każdego odcinka pieszego bierze z OSRM (profil pieszy, `WALK_ROUTER_URL`, domyślnie FOSSGIS, bez klucza, timeout 3 s, przy awarii proste odcinki). Czasy i `etaSec` bez zmian. **Dla R3:** mapa rysuje to bez zmian w kodzie; w T-102 interpoluj po długości łamanej, nie po indeksie punktu.
+- Jasiek (18:15, R2 z agentem, zadania R3/R4 z polecenia użytkownika): T-92, T-93, T-98. **`POST /v1/speech` nie istnieje poza `DEBUG_PAGES=1`**, odtwarzacz bierze głos z `/v1/stories/audio` (ten sam cache opowieści). `/v1/stories*` mają limit 300/10 min na IP (429 `RATE_LIMITED`). Cache klipów w odtwarzaczu po punkcie, długości i profilu. Prompt: liczby i lata słownie. **Dla R4:** sprawdźcie na produkcji, czy LLM pisze lata słownie.
 - R1 (Szczepan, 19:10): najszybsza trasa do celu (T-104, [12-plan-mvp.md](12-plan-mvp.md) §7 pkt 11). **Dla R3 (T-78):** po wyborze celu wyślij `destination` bez `durationMin`, pokaż tę trasę, a jej `totalMin` daj jako najkrótszy czas na suwaku; dłuższy czas = trasa krajoznawcza do tego samego celu. Plac Zamkowy z 42 Warsaw: 20 min (190) zamiast 64 min.
 - 16:40 (Antek, R3): porządki w `todo.md`. T-30, T-30b, T-08 i T-71 zamknięte, usunięte duplikaty T-05, T-06, T-12 i T-40 (zostają w „Poza MVP”), T-65 i T-72 poprawione na MapLibre. Dalsze kroki mapy jako T-101 (`fitBounds` z kartą), T-102 („za oknem”, do T-36) i T-103 (test na telefonach). Uwaga: numery T-65, T-66 i T-78 występują po dwa razy (R1 i R3).
 - Jasiek (16:30, z agentem, za R1): pojazdy na żywo (T-99, PR #29, dla Pawła issue #30). `POST /v1/vehicles/track` zwraca pojazd użytkownika i po jednym przed i za nim z torem do płynnej animacji; prędkość z tego, jak odcinek przejechał poprzedni pojazd linii (korki). Zbiór miasta „Lokalizacja pojazdów” (T-95). **Dla R3 (Paweł):** ikony i animacja w T-100, instrukcja w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md). **Dla R1:** na Railway `WAW_TOKEN` (T-17), w dniu demo `VEHICLES_ALWAYS_ON=1`.
@@ -101,6 +105,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 ## Ostatnie decyzje
 
+- 17.10, 16:54: najkrótsza przejażdżka to 5 min (`MIN_DURATION_MIN`, wcześniej 30). Krótkie trasy mogą być samym spacerem (T-79). Nowość miejsca (`heard`, `HEARD_FLOOR` w `score.ts`) od Pawła zaakceptowana. Zdecydował Szczepan (R1).
 - 17.10, 13:37: zainteresowania to 4 ogólne kategorie `historical`, `cultural`, `sports`, `nature` (`packages/shared/src/interests.ts`, PR #7); szczegółowe tagi zostają w danych. Zastępuje listę 8 kluczy z [13-plan-bazy.md §5](13-plan-bazy.md). Zdecydował Szczepan (R1).
 
 - 17.10, 13:43: Google Places tylko z danych pobranych 15–16.10 (warstwa `dzis`, 506 obiektów przy 224 miejscach, i 55 rekordów `g-*`), **bez zapytań na żywo i bez klucza**. W API jako `Place.todayNearby`; w UI podpis „Google Maps”. Warunki Google: treść max 30 dni, po hackathonie usunąć albo odświeżyć. Zdecydował Jasiek (R2). T-23 odpada.

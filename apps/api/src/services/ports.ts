@@ -26,6 +26,15 @@ export interface VehiclePositionSource {
   positions(): Promise<VehicleReport[]>;
 }
 
+/** Walking paths along streets and footways (OSRM foot profile). */
+export interface WalkPathSource {
+  /**
+   * The path through `points` in order, as [lng, lat] pairs starting and ending at the first
+   * and last point; undefined when unknown (router down, timeout, no path).
+   */
+  path(points: LatLng[]): Promise<[number, number][] | undefined>;
+}
+
 /** Tram and bus network for one service day (apps/api/data/transit-graph.json.gz). */
 export type TransitData = {
   network: Network;
