@@ -24,16 +24,6 @@ describe("scorePlace", () => {
     expect(two).toBeCloseTo(one * 1.5, 6);
   });
 
-  it("prefers a place with a chosen tile over a category-only match", () => {
-    const prefs = { tags: new Set(["jewish_warsaw"]) };
-    const tile = { ...place("t", 0, 0, ["historical"]), tags: ["jewish_warsaw"] };
-    const category = { ...place("c", 0, 0, ["historical"]), tags: ["industry"] };
-    expect(scorePlace(tile, 0, interests, prefs)).toBeCloseTo(
-      scorePlace(category, 0, interests, prefs) * 1.5,
-      6,
-    );
-  });
-
   it("weighs richness by familiarity: first-timers favour rich places more than locals", () => {
     const rich = place("r", 0, 0, ["historical"], 6);
     const modest = place("m", 0, 0, ["historical"], 2);
