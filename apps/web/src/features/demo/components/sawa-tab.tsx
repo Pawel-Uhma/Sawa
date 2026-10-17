@@ -89,7 +89,10 @@ export function SawaTab({
         </button>
       </div>
 
-      <div className="flex max-h-[55vh] flex-col gap-5 overflow-y-auto overscroll-contain md:max-h-[70vh]">
+      <div
+        data-scroll="true"
+        className="flex max-h-[55vh] touch-pan-y flex-col gap-5 overflow-y-auto overscroll-contain md:max-h-[70vh]"
+      >
         {stop && (
           <section aria-label={t("Teraz opowiada", "Now telling")} className="flex flex-col gap-3">
             <div>

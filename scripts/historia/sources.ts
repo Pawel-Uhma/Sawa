@@ -25,6 +25,8 @@ export const SOURCE_FILES = [
   new URL("../../docs/historia/dzielnice/warszawikia-pozostale-dzielnice.geojson", import.meta.url),
   new URL("../../docs/historia/dzielnice/sztetl-pozostale-dzielnice.geojson", import.meta.url),
   new URL("../../docs/historia/dzielnice/osm-pozostale-dzielnice.geojson", import.meta.url),
+  // Zabytki z Wikidaty (rejestr, ewidencja) bez artykułu, w dzielnicach o małej gęstości.
+  new URL("../../docs/historia/dzielnice/wikidata-zabytki-dzielnice.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {
