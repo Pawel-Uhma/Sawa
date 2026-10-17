@@ -16,6 +16,8 @@ type RouteSheetProps = {
   end: { label: string; reached: boolean } | null;
   /** Odcinki trasy z planera: tramwaje, autobusy i spacery. */
   legs: Leg[];
+  /** Podpis źródeł danych trasy. */
+  attribution: string[];
   stops: MockStop[];
   /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
   player: StoryPlayer;
