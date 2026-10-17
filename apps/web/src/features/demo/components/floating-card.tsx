@@ -79,7 +79,14 @@ export function FloatingCard({
   }, [collapsed, range, reduce, y]);
 
   useVerticalDrag(dragRef, {
-    shouldStart: () => !isDesktop && range > 0,
+    shouldStart: (dy, target) => {
+      if (isDesktop || range <= 0) return false;
+      // Przewijana treść (data-scroll) dostaje gest, dopóki ma dokąd jechać; karta tylko z góry listy w dół (jak w iOS).
+      const scroller =
+        target instanceof Element ? target.closest<HTMLElement>('[data-scroll="true"]') : null;
+      if (!scroller || scroller.scrollHeight <= scroller.clientHeight) return true;
+      return dy > 0 && scroller.scrollTop <= 0;
+    },
     onStart: () => {
       y.stop();
       base.current = y.get();
