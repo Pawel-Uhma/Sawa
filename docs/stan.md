@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 19:35 (Paweł, z agentem R3): **stany czekania wszędzie (T-131).** Wspólne klocki w `apps/web/src/components/waiting.tsx`; mapa, planowanie, opowieść, karta miejsca i przejażdżki mówią, co się dzieje, a przy długim czekaniu to przyznają. Typecheck, lint i testy zielone. Uwaga: lokalny web na porcie 3100 nie przechodzi CORS do API z Railway.
+
 - 19:30 (Paweł, z agentem R3): **mapa wraca do samych ikon podrodzaju.** Bez kolorowej obwódki tematu (T-119) i bez zielonych klastrów z liczbą (T-118), na prośbę Pawła. `placeTopic` zostaje dla chipów w karcie miejsca.
 
 - 19:20 (Antek, R3 z agentem): T-130 (issue #35, otwarte w „wieczornym” spotkaniu). GPS przesuwa zegar jazdy także po pierwszym miejscu: przy kolejnym punkcie trasy (`isAt`, 150 m, najwyżej 2 do przodu) `syncTo` (`ride-sync.ts`, `useGpsClockSync` w `DemoApp`). Przejścia między tematami w `story-player.ts`: wyciszenie, oddech 0,6 s, łagodne wejście (słychać tylko z `?voice=1`). **Dla R4:** zdanie-pomost do poprzedniego tematu w prompcie. **Nie sprawdzone** w jeździe.
