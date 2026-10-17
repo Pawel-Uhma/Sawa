@@ -1,9 +1,9 @@
 import type { LatLng, PlanRouteRequest, Route } from "@sawa/shared";
 import type { BBox, PlaceSummary } from "../domain/place";
-import { planRide } from "../domain/routing/beam-search";
+import { applyDepartures } from "../domain/routing/apply-departures";
+import { DEFAULT_SEARCH_OPTIONS, planRide } from "../domain/routing/beam-search";
 import { buildRoute } from "../domain/routing/build-route";
 import { computePlaceHits } from "../domain/routing/place-hits";
-import { shiftRide } from "../domain/routing/shift-ride";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
 import { AppError } from "../lib/errors";
@@ -40,17 +40,20 @@ export type PlannerLogger = {
   warn(obj: object, msg: string): void;
 };
 
-function reachableBbox(origin: LatLng, durationMin: number): BBox {
+/** Around the origin and, if given, the destination. */
+function reachableBbox(points: LatLng[], durationMin: number): BBox {
   const km = reachKm(durationMin);
   const dLat = (km * 1000) / M_PER_DEG_LAT;
-  const dLng = dLat / Math.cos((origin.lat * Math.PI) / 180);
+  const lats = points.map((p) => p.lat);
+  const dLng = dLat / Math.cos((Math.max(...lats.map(Math.abs)) * Math.PI) / 180);
+  const lngs = points.map((p) => p.lng);
   const down = (v: number) => Math.floor(v / GRID_DEG) * GRID_DEG;
   const up = (v: number) => Math.ceil(v / GRID_DEG) * GRID_DEG;
   return {
-    minLng: down(origin.lng - dLng),
-    minLat: down(origin.lat - dLat),
-    maxLng: up(origin.lng + dLng),
-    maxLat: up(origin.lat + dLat),
+    minLng: down(Math.min(...lngs) - dLng),
+    minLat: down(Math.min(...lats) - dLat),
+    maxLng: up(Math.max(...lngs) + dLng),
+    maxLat: up(Math.max(...lats) + dLat),
   };
 }
 
@@ -143,7 +146,10 @@ export function createRoutePlanner(deps: {
   return {
     async plan(request, now) {
       const { hitsByPattern, placesById } = await prepare(
-        reachableBbox(request.origin, request.durationMin),
+        reachableBbox(
+          request.destination ? [request.origin, request.destination] : [request.origin],
+          request.durationMin,
+        ),
       );
       let ride = planRide({
         network,
@@ -153,27 +159,25 @@ export function createRoutePlanner(deps: {
         budgetSec: request.durationMin * 60,
         interests: new Set(request.interests),
         returnToStart: request.returnToStart,
+        destination: request.destination,
       });
       if (!ride) {
         throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
       }
 
-      const first = ride.legs[0];
-      const pattern = first && network.patterns.get(first.patternId);
-      const boardStop = pattern?.stops[first.boardIndex];
-      if (deps.departures && first && pattern && boardStop) {
-        const atStop = new Date(now.getTime() + ride.walkSec * 1000);
-        const departure = await deps.departures.nextDeparture(
-          boardStop.stopId,
-          pattern.line,
-          atStop,
+      if (deps.departures) {
+        const source = deps.departures;
+        // All legs at once; applyDepartures then picks the right one for each in order.
+        const perLeg = await Promise.all(
+          ride.legs.map(async (leg) => {
+            const pattern = network.patterns.get(leg.patternId);
+            const stop = pattern?.stops[leg.boardIndex];
+            if (!pattern || !stop) return undefined;
+            const times = await source.departures(stop.stopId, pattern.line, now);
+            return times?.map((d) => (d.getTime() - now.getTime()) / 1000);
+          }),
         );
-        if (departure) {
-          ride = shiftRide(
-            ride,
-            (departure.getTime() - now.getTime()) / 1000 - first.boardElapsedSec,
-          );
-        }
+        ride = applyDepartures(ride, perLeg, DEFAULT_SEARCH_OPTIONS.transferSec);
       }
 
       return buildRoute({ ride, network, placesById, now, attribution });

@@ -53,20 +53,51 @@ describe("route planner on real data", () => {
     expect(route.totalMin).toBeLessThanOrEqual(durationMin * 1.1);
   });
 
-  it("moves the ride to the real first departure", async () => {
+  it("plans a ride that ends at the Castle Square", async () => {
+    const castleSquare = { lat: 52.2477, lng: 21.0137 };
+    const route = RouteSchema.parse(
+      await planner.plan(
+        {
+          origin: HACKATHON_VENUE,
+          durationMin: 60,
+          interests: ["historical"],
+          destination: castleSquare,
+        },
+        NOW,
+      ),
+    );
+    expect(route.endsAtDestination).toBe(true);
+    const end = route.legs[route.legs.length - 1]?.toStop.position;
+    expect(end && haversineM(end, castleSquare)).toBeLessThanOrEqual(600);
+    expect(route.totalMin).toBeLessThanOrEqual(60 * 1.1);
+  });
+
+  it("moves every leg to a real departure", async () => {
+    // A departure every 7 minutes from :03, on every platform and line.
     const departures: DepartureSource = {
-      nextDeparture: async (_stop, _line, after) => new Date(after.getTime() + 9 * 60_000),
+      departures: async (_stop, _line, day) =>
+        Array.from({ length: 200 }, (_, i) => new Date(day.getTime() + (3 + 7 * i) * 60_000)),
     };
     const withReal = createRoutePlanner({ transit, places, departures });
-    const request = {
-      origin: HACKATHON_VENUE,
-      durationMin: 60,
-      interests: ["historical" as const],
-    };
-    const route = await withReal.plan(request, NOW);
-    const first = route.legs[0];
-    const departMin = (new Date(first?.departAt ?? "").getTime() - NOW.getTime()) / 60_000;
-    expect(departMin).toBeGreaterThanOrEqual(9);
-    expect(departMin).toBeLessThan(20);
+    const route = RouteSchema.parse(
+      await withReal.plan(
+        { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"] },
+        NOW,
+      ),
+    );
+    for (const leg of route.legs) {
+      expect(leg.realDeparture).toBe(true);
+      const min = (new Date(leg.departAt).getTime() - NOW.getTime()) / 60_000;
+      expect((min - 3) % 7).toBeCloseTo(0);
+    }
+  });
+
+  it("estimates departures when the timetable is unknown", async () => {
+    const departures: DepartureSource = { departures: async () => undefined };
+    const route = await createRoutePlanner({ transit, places, departures }).plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"] },
+      NOW,
+    );
+    expect(route.legs.every((l) => l.realDeparture === undefined)).toBe(true);
   });
 });

@@ -28,6 +28,16 @@ describe("POST /v1/routes/plan", () => {
     ["a too short ride", { origin: HACKATHON_VENUE, durationMin: 10, interests: ["historical"] }],
     ["an unknown interest", { origin: HACKATHON_VENUE, durationMin: 60, interests: ["pizza"] }],
     ["no interests", { origin: HACKATHON_VENUE, durationMin: 60, interests: [] }],
+    [
+      "a destination together with a loop",
+      {
+        origin: HACKATHON_VENUE,
+        durationMin: 60,
+        interests: ["historical"],
+        returnToStart: true,
+        destination: HACKATHON_VENUE,
+      },
+    ],
   ])("rejects %s with a VALIDATION error", async (_, body) => {
     const res = await plan(body);
     expect(res.status).toBe(400);

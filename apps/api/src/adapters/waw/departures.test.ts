@@ -34,6 +34,6 @@ describe("warsawTimeToDate", () => {
 describe("createWawDepartureSource", () => {
   it("returns undefined without a token, without calling the API", async () => {
     const source = createWawDepartureSource(undefined);
-    expect(await source.nextDeparture("100101", "10", new Date())).toBeUndefined();
+    expect(await source.departures("100101", "10", new Date())).toBeUndefined();
   });
 });

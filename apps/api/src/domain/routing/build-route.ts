@@ -45,6 +45,7 @@ export function buildRoute({
       fromStop: toStop(network, board.stopId),
       toStop: toStop(network, alight.stopId),
       departAt: at(now, leg.boardElapsedSec),
+      ...(leg.realDeparture ? { realDeparture: true } : {}),
       durationMin: Math.round((leg.alightElapsedSec - leg.boardElapsedSec) / 6) / 10,
       lngLats: slicePolyline(pattern.lngLats, cumDistM, board.alongM, alight.alongM),
     };
@@ -74,6 +75,7 @@ export function buildRoute({
     places,
     totalMin: Math.round(ride.elapsedSec / 6) / 10,
     endsAtStart: ride.endsAtStart,
+    ...(ride.endsAtDestination === undefined ? {} : { endsAtDestination: ride.endsAtDestination }),
     attribution,
   };
 }
