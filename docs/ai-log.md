@@ -6422,3 +6422,593 @@
 > +  tab,
 > +  h
 
+
+### 2026-10-17 14:10 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/app/globals.css                              |  18 ++++++++
+>  apps/web/src/app/layout.tsx                               |   3 ++
+>  apps/web/src/features/demo/components/demo-app.tsx        |  24 +++++++++--
+>  apps/web/src/features/demo/components/onboarding-flow.tsx |   2 +-
+>  apps/web/src/features/demo/components/route-sheet.tsx     | 131 ++++++++++++++++++++++++++++++++--------------------------
+>  apps/web/src/features/demo/components/story-card.tsx      |   1 +
+>  docs/stan.md                                              |   2 +
+>  docs/ui/README.md                                         |   1 +
+>  8 files changed, 118 insertions(+), 64 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/app/globals.css b/apps/web/src/app/globals.css
+> index 010fd92..a92fd75 100644
+> --- a/apps/web/src/app/globals.css
+> +++ b/apps/web/src/app/globals.css
+> @@ -20,10 +20,14 @@
+>    --background: #eef3f0;
+>  }
+>  
+> +/* Aplikacja na cały ekran: strona się nie przewija, nie odbija i nie powiększa (szczypanie i podwójne tapnięcie).
+> +   Przewijają się tylko konkretne listy, a mapa ma własny zoom. */
+>  html,
+>  body {
+>    height: 100%;
+> +  overflow: hidden;
+>    overscroll-behavior: none;
+> +  touch-action: pan-x pan-y;
+>  }
+>  
+>  body {
+> @@ -32,6 +36,20 @@ body {
+>    font-family: var(--font-plus), system-ui, sans-serif;
+>    -webkit-font-smoothing: antialiased;
+>    -webkit-tap-highlight-color: transparent;
+> +  /* Jak w natywnej aplikacji: przytrzymanie nie zaznacza tekstu ani nie otwiera menu obrazka */
+> +  -webkit-user-select: none;
+> +  user-select: none;
+> +  -webkit-touch-callout: none;
+> +}
+> +
+> +input,
+> +textarea {
+> +  -webkit-user-select: auto;
+> +  user-select: auto;
+> +}
+> +
+> +img {
+> +  -webkit-user-drag: none;
+>  }
+>  
+>  button {
+> diff --git a/apps/web/src/app/layout.tsx b/apps/web/src/app/layout.tsx
+> index 35a16b0..44fa7f5 100644
+> --- a/apps/web/src/app/layout.tsx
+> +++ b/apps/web/src/app/layout.tsx
+> @@ -26,6 +26,9 @@ export const metadata: Metadata = {
+>  export const viewport: Viewport = {
+>    width: "device-width",
+>    initialScale: 1,
+> +  // Interfejs nie powiększa się palcami; tekst i tak ma co najmniej 11 px, a duże czcionki z systemu działają
+> +  maximumScale: 1,
+> +  userScalable: false,
+>    // Treść pod wcięciem i paskiem home; marginesy bierzemy z env(safe-area-inset-*)
+>    viewportFit: "cover",
+>    themeColor: "#EEF3F0",
+> diff --git a/apps/web/src/features/demo/components/demo-app.tsx b/apps/web/src/features/demo/components/demo-app.tsx
+> index c528d62..6d5cc69 100644
+> --- a/apps/web/src/features/demo/components/demo-app.tsx
+> +++ b/apps/web/src/features/demo/components/demo-app.tsx
+> @@ -1,7 +1,7 @@
+>  "use client";
+>  
+>  import { AnimatePresence, MotionConfig, motion } from "motion/react";
+> -import { useCallback, useMemo, useState } from "react";
+> +import { useCallback, useEffect, useMemo, useState } from "react";
+>  import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
+>  import {
+>    buildMockRoute,
+> @@ -36,6 +36,18 @@ export function DemoApp() {
+>    const [route, setRoute] = useState<MockStop[]>([]);
+>    const [activeIndex, setActiveIndex] = useState(0);
+>    const [sheetCoverPx, setSheetCoverPx] = useState(360);
+> +  const [panelCollapsed, setPanelCollapsed] = useState(false);
+> +
+> +  // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
+> +  useEffect(() => {
+> +    const block = (event: Event) => event.preventDefault();
+> +    document.addEventListener("gesturestart", block);
+> +    document.addEventListener("gesturechange", block);
+> +    return () => {
+> +      document.removeEventListener("gesturestart", block);
+> +      document.removeEventListener("gesturechange", block);
+> +    };
+> +  }, []);
+>  
+>    const finishOnboarding = useCallback((next: Profile) => {
+>      setProfile(next);
+> @@ -62,8 +74,8 @@ export function DemoApp() {
+>      }
+>      return isRoute
+>        ? { top: 88, right: 0, bottom: sheetCoverPx, left: 0 }
+> -      : { top: 120, right: 0, bottom: 430, left: 0 };
+> -  }, [isDesktop, isWide, isRoute, sheetCoverPx]);
+> +      : { top: 120, right: 0, bottom: panelCollapsed ? 200 : 430, left: 0 };
+> +  }, [isDesktop, isWide, isRoute, sheetCoverPx, panelCollapsed]);
+>  
+>    const camera: MapCamera = useMemo(() => {
+>      if (isRoute && activeStop) {
+> @@ -110,7 +122,7 @@ export function DemoApp() {
+>            {stage !== "onboarding" && <TopBar key="top" hideLogoOnDesktop={isRoute} />}
+>          </AnimatePresence>
+>  
+> -        <AnimatePresence mode="popLayout">
+> +        <AnimatePresence>
+>            {stage === "map" && tab === "map" && (
+>              <HomePanel
+>                key="home"
+> @@ -118,6 +130,8 @@ export function DemoApp() {
+>                durationMin={durationMin}
+>                onDurationChange={setDurationMin}
+>                onEditInterests={editInterests}
+> +              collapsed={panelCollapsed}
+> +              onCollapsedChange={setPanelCollapsed}
+>                onGenerate={() => {
+>                  setRoute(buildMockRoute(durationMin, profile.interests));
+>                  setActiveIndex(0);
+> @@ -130,6 +144,8 @@ export function DemoApp() {
+>                key={tab}
+>                tab={tab}
+>                hasRoute={route.length > 0}
+> +              collapsed={panelCollapsed}
+> +              onCollapsedChange={setPanelCollapsed}
+>                onOpenRoute={() => {
+>                  setTab("map");
+>                  setStage("route");
+> diff --git a/apps/web/src/features/demo/components/onboarding-flow.tsx b/apps/web/src/features/demo/components/onboarding-flow.tsx
+> index d54305a..6d1b7fb 100644
+> --- a/apps/web/src/features/demo/components/onboarding-flow.tsx
+> +++ b/apps/web/src/features/demo/components/onboarding-flow.tsx
+> @@ -103,7 +103,7 @@ export function OnboardingFlow({
+>  
+>    return (
+>      // Pełnoekranowa warstwa nad mapą: mapa prześwituje przez matowe szkło, więc onboarding i mapa to jedna przestrzeń.
+> -    <div className="fixed inset-0 z-40 overflow-y-auto bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
+> +    <div className="fixed inset-0 z-40 touch-pan-y overflow-y-auto overscroll-contain bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
+>        <div
+>          aria-hidden="true"
+>          className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_45%_at_20%_15%,rgba(142,209,181,0.35),transparent_70%),radial-gradient(50%_40%_at_90%_90%,rgba(242,117,95,0.10),transparent_70%)]"
+> diff --git a/apps/web/src/features/demo/components/route-sheet.tsx b/apps/web/src/features/demo/components/route-sheet.tsx
+> index 380e2da..c14806c 100644
+> --- a/apps/web/src/features/demo/components/route-sheet.tsx
+> +++ b/apps/web/src/features/demo/components/route-sheet.tsx
+> @@ -1,16 +1,10 @@
+>  "use client";
+>  
+> -import {
+> -  animate,
+> -  motion,
+> -  type PanInfo,
+> -  useDragControls,
+> -  useMotionValue,
+> -  useTransform,
+> -} from "motion/react";
+> -import { type PointerEvent, type ReactNode, useCallback, useEffect, useState } from "react";
+> +import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
+> +import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
+>  import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
+>  import { formatDuration } from "../lib/format";
+> +import { rubberband, useVerticalDrag } from "../lib/gesture";
+>  import type { MockStop } from "../lib/mock-data";
+>  import { ChevronLeftIcon, TramIcon } from "./icons";
+>  import { Logo } from "./logo";
+> @@ -93,7 +87,7 @@ export function RouteSheet(props: RouteSheetProps) {
+>      return () => window.removeEventListener("keydown", onKey);
+>    }, [activeIndex, goTo, togglePlay]);
+>  
+> -  const content = (onHeaderPointerDown?: (event: PointerEvent) => void) => (
+> +  const content = (
+>      <SheetContent
+>        {...props}
+>        isPlaying={isPlaying}
+> @@ -101,14 +95,15 @@ export function RouteSheet(props: RouteSheetProps) {
+>        direction={direction}
+>        goTo={goTo}
+>        togglePlay={togglePlay}
+> -      onHeaderPointerDown={onHeaderPointerDown}
+>      />
+>    );
+>  
+>    return props.isDesktop ? (
+> -    <DesktopPanel>{content()}</DesktopPanel>
+> +    <DesktopPanel>{content}</DesktopPanel>
+>    ) : (
+> -    <MobileSheet onCoverChange={props.onCoverChange}>{content}</MobileSheet>
+> +    <MobileSheet onCoverChange={props.onCoverChange} onDismiss={props.onBack}>
+> +      {content}
+> +    </MobileSheet>
+>    );
+>  }
+>  
+> @@ -141,14 +136,17 @@ function useViewportHeight() {
+>    return height;
+>  }
+>  
+> -/** Arkusz z trzema punktami zatrzymania. Ciągnie się za uchwyt i nagłówek, rzut wybiera punkt z rozpędu. */
+> +/** Arkusz z trzema punktami zatrzymania. Ciągnie się za każde miejsce, rzut wybiera punkt z rozpędu, ściągnięcie w dół zamyka. */
+>  function MobileSheet({
+>    children,
+>    onCoverChange,
+> +  onDismiss,
+>  }: {
+> -  children: (startDrag: (event: PointerEvent) => void) => ReactNode;
+> +  children: ReactNode;
+>    onCoverChange: (px: number) => void;
+> +  onDismiss: () => void;
+>  }) {
+> +  const reduce = useReducedMotion();
+>    const height = useViewportHeight();
+>    const detents = {
+>      full: 64,
+> @@ -156,69 +154,90 @@ function MobileSheet({
+>      peek: Math.max(Math.round(height * 0.42) + 40, height - 330),
+>    };
+>    const y = useMotionValue(height);
+> -  const visibleHeight = useTransform(y, (value) => Math.max(0, height - value));
+> -  const controls = useDragControls();
+>    const [detent, setDetent] = useState<keyof typeof detents>("mid");
+> +  const sheetRef = useRef<HTMLElement>(null);
+> +  const scrollRef = useRef<HTMLDivElement>(null);
+> +  const base = useRef(0);
+> +  const isFull = detent === "full";
+>  
+>    // Wjazd i zmiana rozmiaru okna: sprężyna do bieżącego punktu zatrzymania
+>    // biome-ignore lint/correctness/useExhaustiveDependencies: reagujemy na rozmiar okna i punkt zatrzymania
+>    useEffect(() => {
+>      const target = detents[detent];
+> -    const animation = animate(y, target, SPRING);
+> +    const animation = animate(y, target, reduce ? { duration: 0 } : SPRING);
+>      onCoverChange(height - target);
+>      return () => animation.stop();
+>    }, [height, detent]);
+>  
+> -  function startDrag(event: PointerEvent) {
+> -    controls.start(event);
+> -  }
+> +  // Poza pełnym rozmiarem treść się nie przewija, tylko ciągnie arkusz. Wracamy wtedy na górę listy.
+> +  useEffect(() => {
+> +    if (!isFull) scrollRef.current?.scrollTo({ top: 0 });
+> +  }, [isFull]);
+>  
+> -  function handleDragEnd(_: unknown, info: PanInfo) {
+> -    // Cel wybieramy z miejsca, w które arkusz by doleciał, a nie z miejsca puszczenia
+> -    const landing = y.get() + project(info.velocity.y);
+> -    const nearest = (Object.keys(detents) as (keyof typeof detents)[]).reduce((best, key) =>
+> -      Math.abs(detents[key] - landing) < Math.abs(detents[best] - landing) ? key : best,
+> -    );
+> -    if (nearest !== detent) haptic();
+> -    setDetent(nearest);
+> -    animate(y, detents[nearest], { ...SPRING_FLICK, velocity: info.velocity.y });
+> -    onCoverChange(height - detents[nearest]);
+> -  }
+> +  useVerticalDrag(sheetRef, {
+> +    // W pełnym rozmiarze arkusz przejmuje gest tylko, gdy lista jest na górze i palec idzie w dół (jak w iOS).
+> +    shouldStart: (dy) => !isFull || (dy > 0 && (scrollRef.current?.scrollTop ?? 0) <= 0),
+> +    onStart: () => {
+> +      y.stop();
+> +      base.current = y.get();
+> +    },
+> +    onMove: (dy) => {
+> +      const raw = base.current + dy;
+> +      // W górę opór za pełnym rozmiarem, w dół 1:1, bo tam arkusz się zamyka
+> +      y.set(raw < detents.full ? detents.full - rubberband(detents.full - raw, height) : raw);
+> +    },
+> +    onEnd: (velocity) => {
+> +      // Cel wybieramy z miejsca, w które arkusz by doleciał, a nie z miejsca puszczenia
+> +      const landing = y.get() + project(velocity);
+> +      if (landing > detents.peek + (height - detents.peek) * 0.5 && velocity >= 0) {
+> +        haptic();
+> +        onDismiss();
+> +        return;
+> +      }
+> +      const nearest = (Object.keys(detents) as (keyof typeof detents)[]).reduce((best, key) =>
+> +        Math.abs(detents[key] - landing) < Math.abs(detents[best] - landing) ? key : best,
+> +      );
+> +      if (nearest !== detent) haptic();
+> +      setDeten
+
+
+### 2026-10-17 14:10 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 300 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>  1 file changed, 300 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 3500261..9636e02 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -6422,3 +6422,303 @@
+>  > +  tab,
+>  > +  h
+>  
+> +
+> +### 2026-10-17 14:10 · Pawel
+> +
+> +> You are a pragmatic engineer about to commit your uncommitted changes.
+> +> 
+> +> If they are NOT worth committing on their own (only whitespace, a stray debug
+> +> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> +> 
+> +> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> +> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> +> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> +> Reply with ONLY the message, or SKIP. Nothing else.
+> +> 
+> +> Changes:
+> +>  apps/web/src/app/globals.css                              |  18 ++++++++
+> +>  apps/web/src/app/layout.tsx                               |   3 ++
+> +>  apps/web/src/features/demo/components/demo-app.tsx        |  24 +++++++++--
+> +>  apps/web/src/features/demo/components/onboarding-flow.tsx |   2 +-
+> +>  apps/web/src/features/demo/components/route-sheet.tsx     | 131 ++++++++++++++++++++++++++++++++--------------------------
+> +>  apps/web/src/features/demo/components/story-card.tsx      |   1 +
+> +>  docs/stan.md                                              |   2 +
+> +>  docs/ui/README.md                                         |   1 +
+> +>  8 files changed, 118 insertions(+), 64 deletions(-)
+> +> ----- patch (truncated) -----
+> +> diff --git a/apps/web/src/app/globals.css b/apps/web/src/app/globals.css
+> +> index 010fd92..a92fd75 100644
+> +> --- a/apps/web/src/app/globals.css
+> +> +++ b/apps/web/src/app/globals.css
+> +> @@ -20,10 +20,14 @@
+> +>    --background: #eef3f0;
+> +>  }
+> +>  
+> +> +/* Aplikacja na cały ekran: strona się nie przewija, nie odbija i nie powiększa (szczypanie i podwójne tapnięcie).
+> +> +   Przewijają się tylko konkretne listy, a mapa ma własny zoom. */
+> +>  html,
+> +>  body {
+> +>    height: 100%;
+> +> +  overflow: hidden;
+> +>    overscroll-behavior: none;
+> +> +  touch-action: pan-x pan-y;
+> +>  }
+> +>  
+> +>  body {
+> +> @@ -32,6 +36,20 @@ body {
+> +>    font-family: var(--font-plus), system-ui, sans-serif;
+> +>    -webkit-font-smoothing: antialiased;
+> +>    -webkit-tap-highlight-color: transparent;
+> +> +  /* Jak w natywnej aplikacji: przytrzymanie nie zaznacza tekstu ani nie otwiera menu obrazka */
+> +> +  -webkit-user-select: none;
+> +> +  user-select: none;
+> +> +  -webkit-touch-callout: none;
+> +> +}
+> +> +
+> +> +input,
+> +> +textarea {
+> +> +  -webkit-user-select: auto;
+> +> +  user-select: auto;
+> +> +}
+> +> +
+> +> +img {
+> +> +  -webkit-user-drag: none;
+> +>  }
+> +>  
+> +>  button {
+> +> diff --git a/apps/web/src/app/layout.tsx b/apps/web/src/app/layout.tsx
+> +> index 35a16b0..44fa7f5 100644
+> +> --- a/apps/web/src/app/layout.tsx
+> +> +++ b/apps/web/src/app/layout.tsx
+> +> @@ -26,6 +26,9 @@ export const metadata: Metadata = {
+> +>  export const viewport: Viewport = {
+> +>    width: "device-width",
+> +>    initialScale: 1,
+> +> +  // Interfejs nie powiększa się palcami; tekst i tak ma co najmniej 11 px, a duże czcionki z systemu działają
+> +> +  maximumScale: 1,
+> +> +  userScalable: false,
+> +>    // Treść pod wcięciem i paskiem home; marginesy bierzemy z env(safe-area-inset-*)
+> +>    viewportFit: "cover",
+> +>    themeColor: "#EEF3F0",
+> +> diff --git a/apps/web/src/features/demo/components/demo-app.tsx b/apps/web/src/features/demo/components/demo-app.tsx
+> +> index c528d62..6d5cc69 100644
+> +> --- a/apps/web/src/features/demo/components/demo-app.tsx
+> +> +++ b/apps/web/src/features/demo/components/demo-app.tsx
+> +> @@ -1,7 +1,7 @@
+> +>  "use client";
+> +>  
+> +>  import { AnimatePresence, MotionConfig, motion } from "motion/react";
+> +> -import { useCallback, useMemo, useState } from "react";
+> +> +import { useCallback, useEffect, useMemo, useState } from "react";
+> +>  import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
+> +>  import {
+> +>    buildMockRoute,
+> +> @@ -36,6 +36,18 @@ export function DemoApp() {
+> +>    const [route, setRoute] = useState<MockStop[]>([]);
+> +>    const [activeIndex, setActiveIndex] = useState(0);
+> +>    const [sheetCoverPx, setSheetCoverPx] = useState(360);
+> +> +  const [panelCollapsed, setPanelCollapsed] = useState(false);
+> +> +
+> +> +  // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
+> +> +  useEffect(() => {
+> +> +    const block = (event: Event) => event.preventDefault();
+> +> +    document.addEventListener("gesturestart", block);
+> +> +    document.addEventListener("gesturechange", block);
+> +> +    return () => {
+> +> +      document.removeEventListener("gesturestart", block);
+> +> +      document.removeEventListener("gesturechange", block);
+> +> +    };
+> +> +  }, []);
+> +>  
+> +>    const finishOnboarding = useCallback((next: Profile) => {
+> +>      setProfile(next);
+> +> @@ -62,8 +74,8 @@ export function DemoApp() {
+> +>      }
+> +>      return isRoute
+> +>        ? { top: 88, right: 0, bottom: sheetCoverPx, left: 0 }
+> +> -      : { top: 120, right: 0, bottom: 430, left: 0 };
+> +> -  }, [isDesktop, isWide, isRoute, sheetCoverPx]);
+> +> +      : { top: 120, right: 0, bottom: panelCollapsed ? 200 : 430, left: 0 };
+> +> +  }, [isDesktop, isWide, isRoute, sheetCoverPx, panelCollapsed]);
+> +>  
+> +>    const camera: MapCamera = useMemo(() => {
+> +>      if (isRoute && activeStop) {
+> +> @@ -110,7 +122,7 @@ export function DemoApp() {
+> +>            {stage !== "onboarding" && <TopBar key="top" hideLogoOnDesktop={isRoute} />}
+> +>          </AnimatePresence>
+> +>  
+> +> -        <AnimatePresence mode="popLayout">
+> +> +        <AnimatePresence>
+> +>            {stage === "map" && tab === "map" && (
+> +>              <HomePanel
+> +>                key="home"
+> +> @@ -118,6 +130,8 @@ export function DemoApp() {
+> +>                durationMin={durationMin}
+> +>                onDurationChange={setDurationMin}
+> +>                onEditInterests={editInterests}
+> +> +              collapsed={panelCollapsed}
+> +> +              onCollapsedChange={setPanelCollapsed}
+> +>                onGenerate={() => {
+> +>                  setRoute(buildMockRoute(durationMin, profile.interests));
+> +>                  setActiveIndex(0);
+> +> @@ -130,6 +144,8 @@ export function DemoApp() {
+> +>                key={tab}
+> +>                tab={tab}
+> +>                hasRoute={route.length > 0}
+> +> +              collapsed={panelCollapsed}
+> +> +              onCollapsedChange={setPanelCollapsed}
+> +>                onOpenRoute={() => {
+> +>                  setTab("map");
+> +>                  setStage("route");
+> +> diff --git a/apps/web/src/features/demo/components/onboarding-flow.tsx b/apps/web/src/features/demo/components/onboarding-flow.tsx
+> +> index d54305a..6d1b7fb 100644
+> +> --- a/apps/web/src/features/demo/components/onboarding-flow.tsx
+> +> +++ b/apps/web/src/features/demo/components/onboarding-flow.tsx
+> +> @@ -103,7 +103,7 @@ export function OnboardingFlow({
+> +>  
+> +>    return (
+> +>      // Pełnoekranowa warstwa nad mapą: mapa prześwituje przez matowe szkło, więc onboarding i mapa to jedna przestrzeń.
+> +> -    <div className="fixed inset-0 z-40 overflow-y-auto bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
+> +> +    <div className="fixed inset-0 z-40 touch-pan-y overflow-y-auto overscroll-contain bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
+> +>        <div
+> +>          aria-hidden="true"
+> +>          className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_45%_at_20%_15%,rgba(142,209,181,0.35),transparent_70%),radial-gradient(50%_40%_at_90%_90%,rgba(242,117,95,0.10),transparent_70%)]"
+> +> diff --git a/apps/web/src/features/demo/components/route-sheet.tsx b/apps/web/src/features/demo/components/route-sheet.tsx
+> +> index 380e2da..c14806c 100644
+> +> --- a/apps/web/src/features/demo/components/route-sheet.tsx
+> +> +++ b/apps/web/src/features/demo/components/route-sheet.tsx
+> +> @@ -1,16 +1,10 @@
+> +>  "use client";
+> +>  
+> +> -import {
+> +> -  animate,
+> +> -  motion,
+> +> -  type PanInfo,
+> +> -  useDragControls,
+> +> -  useMotionValue,
+> +> -  useTransform,
+> +> -} from "motion/react";
+> +> -import { type PointerEvent, type ReactNode, useCallback, useEffect, useState } from "react";
+> +> +import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
+> +> +import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
+> +>  import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
+> +>  import { formatDuration } from "../lib/format";
+> +> +import { rubberband, useVerticalDrag } from "../lib/gesture";
+> +>  import type { MockStop } from "../lib/mock-data";
+> +>  import { ChevronLeftIcon, TramIcon } from "./icons";
+> +>  import { Logo } from "./logo";
+> +> @@ -93,7 +87,7 @@ export function RouteSheet(props: RouteSheetProps) {
+> +>      return () => window.removeEventListener("keydown", onKey);
+> +>    }, [activeIndex, goTo, togglePlay]);
+> +>  
+> +> -  const content = (onHeaderPointerDown?: (event: PointerEvent) => void) => (
+> +> +  const content = (
+> +>      <SheetContent
+> +>        {...props}
+> +>        isPlaying={isPlaying}
+> +> @@ -101,14 +95,15 @@ export function RouteSheet(props: RouteSheetProps) {
+> +>        direction={direction}
+> +>        goTo={goTo}
+> +>        togglePlay={togglePlay}
+> +> -      onHeaderPointerDown={onHeaderPointerDown}
+> +>      />
+> +>    );
+> +>  
+> +>    return props.isDesktop ? (
+> +> -    <DesktopPanel>{content()}</DesktopPanel>
+> +> +    <DesktopPanel>{content}</DesktopPanel>
+> +>    ) : (
+> +> -    <MobileSheet onCoverChange={props.onCoverChange}>{content}</MobileSheet>
+> +> +    <MobileSheet onCoverChange={props.onCoverChange} onDismiss={props.onBack}>
+> +> +      {content}
+> +> +    </MobileSheet>
+> +>    );
+> +>  }
+> +>  
+> +> @@ -141,14 +136,17 @@ function useViewportHeight() {
+> +>    return height;
+> +>  }
+> +>  
+> +> -/** Arkusz z trzema punktami zatrzymania. Ciągnie się za uchwyt i nagłówek, rzut wybiera punkt z rozpędu. */
+> +> +/** Arkusz z trzema punktami zatrzymania. Ciągnie się za każde miejsce, rzut wybiera punkt z rozpędu, ściągnięcie w dół zamyka. */
+> +>  function MobileSheet({
+> +>    children,
+> +>    onCoverChange,
+> +> +  onDismiss,
+> +>  }: {
+> +> -  children: (startDrag: (event: PointerEvent) => void) => ReactNode;
+> +> +  children: ReactNode;
+> +>    onCoverChange: (px: number) => void;
+> +> +  onDismiss: () => void;
+> +>  }) {
+> +> +  const reduce = useReducedMotion();
+> +>    const height = useViewportHeight();
+> +>    const detents = {
+> +>      full: 64,
+> +> @@ -156,69 +154,90 @@ function MobileSheet({
+> +>      peek: Math.max(Math.round(height * 0.42) + 40, height - 330),
+> +>    };
+> +>    const y = useMotionValue(height);
+> +> -  const visibleHeight = useTransform(y, (value) => Math.max(0, height - value));
+> +> -  const controls = useDragControls();
+> +>    const [detent, setDetent] = useState<keyof typeof detents>("mid");
+> +> +  const sheetRef = useRef<HTMLElement>(null);
+> +> +  const scrollRef = useRef<HTMLDivElement>(null);
+> +> +  const base = useRef(0);
+> +> +  const isFull = detent === "full";
+> +>  
+> +>    // Wjazd i zmiana rozmiaru okna: sprężyna do bieżącego punktu zatrzymania
+> +>    // biome-ignore lint/correctness/useExhaustiveDependencies: reagujemy na rozmiar okna i punkt zatrzymania
+> +>    useEffect(() => {
+> +>      const target = detents[detent];
+> +> -    const animation = animate(y, target, SPRING);
+> +> +    const animation = animate(y, target, reduce ? { duration: 0 } : SPRING);
+> +>      onCoverChange(height - target);
+> +>      return () => animation.stop();
+> +>    }, [height, detent]);
+> +>  
+> +> -  function startDrag(event: PointerEvent) {
+> +> -    controls.start(event);
+> +> -  }
+> +> +  // Poza pełnym rozmiarem treść się nie przewija, tylko ciągnie arkusz. Wracamy wtedy na górę listy.
+> +> +  useEffect(() => {
+> +> +    if (!isFull) scrollRef.current?.scrollTo({ top: 0 });
+> +> +  }, [isFull]);
+> +>  
+> +> -  funct
+
