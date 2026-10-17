@@ -1,6 +1,6 @@
 import { haversineM, type LatLng } from "@sawa/shared";
 import { computeReturnTimes } from "./return-times";
-import { scorePlace } from "./score";
+import { type ScorePrefs, scorePlace } from "./score";
 import type { Network, Pattern, PatternStop, PlaceHit, PlacePoint } from "./types";
 
 export type SearchInput = {
@@ -10,6 +10,8 @@ export type SearchInput = {
   origin: LatLng;
   budgetSec: number;
   interests: ReadonlySet<string>;
+  /** Onboarding preferences (tiles, familiarity) for place scores. */
+  prefs?: ScorePrefs;
   /** Loop: the ride must end at a stop near the origin. */
   returnToStart?: boolean;
   /** The ride must end at a stop near this point (ignored with `returnToStart`). */
@@ -238,7 +240,7 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
         ) {
           continue;
         }
-        const score = scorePlace(place, hit.distanceM, input.interests);
+        const score = scorePlace(place, hit.distanceM, input.interests, input.prefs);
         gain += score;
         gained.push({
           placeId: hit.placeId,

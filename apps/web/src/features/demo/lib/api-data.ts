@@ -1,4 +1,11 @@
-import { type Interest, interestsOfTags, type Route } from "@sawa/shared";
+import {
+  FAMILIARITY,
+  type Interest,
+  interestsOfTags,
+  PLACE_TAGS,
+  type Route,
+  STORY_STYLES,
+} from "@sawa/shared";
 import { api } from "@/lib/api";
 import type { LngLat, MockStop } from "./mock-data";
 import { USER_LOCATION } from "./mock-data";
@@ -12,14 +19,28 @@ export function toPlannerInterests(tags: readonly string[]): Interest[] {
   return interests.length > 0 ? interests : ["historical"];
 }
 
+/** The other onboarding answers the planner uses (`Profile` in `lib/onboarding.ts`). */
+export type PlanPrefs = { familiarity?: string | null; storyStyle?: string | null };
+
+const oneOf = <T extends string>(values: readonly T[], value: string | null | undefined) =>
+  values.find((v) => v === value);
+
 /** Plans a ride from the demo start with `POST /v1/routes/plan`. */
-export async function planRoute(durationMin: number, tags: readonly string[]): Promise<Route> {
+export async function planRoute(
+  durationMin: number,
+  tags: readonly string[],
+  prefs: PlanPrefs = {},
+): Promise<Route> {
+  const placeTags = PLACE_TAGS.filter((t) => tags.includes(t));
   const res = await api.v1.routes.plan.$post({
     json: {
       origin: { lat: USER_LOCATION[1], lng: USER_LOCATION[0] },
       durationMin,
       interests: toPlannerInterests(tags),
       returnToStart: false,
+      tags: placeTags.length > 0 ? placeTags : undefined,
+      familiarity: oneOf(FAMILIARITY, prefs.familiarity),
+      storyStyle: oneOf(STORY_STYLES, prefs.storyStyle),
     },
   });
   if (!res.ok) throw new Error(`POST /v1/routes/plan: ${res.status}`);

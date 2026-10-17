@@ -39,6 +39,8 @@ export type PlacePoint = {
   name: string;
   position: LatLng;
   interests: string[];
+  /** Detailed place tags (onboarding tiles); missing in hand-made fixtures. */
+  tags?: string[];
   weight: number;
 };
 

@@ -1,9 +1,15 @@
 import { z } from "zod";
-import { InterestSchema } from "../interests";
+import { InterestSchema, PLACE_TAGS } from "../interests";
 import { LatLngSchema } from "./common";
 
 export const MIN_DURATION_MIN = 30;
 export const MAX_DURATION_MIN = 240;
+
+/** Onboarding answers (keys as in apps/web `lib/onboarding.ts`). */
+export const FAMILIARITY = ["first_time", "know_a_bit", "local"] as const;
+export type Familiarity = (typeof FAMILIARITY)[number];
+export const STORY_STYLES = ["fun", "deep", "trivia"] as const;
+export type StoryStyle = (typeof STORY_STYLES)[number];
 
 export const PlanRouteRequestSchema = z
   .object({
@@ -14,6 +20,12 @@ export const PlanRouteRequestSchema = z
     returnToStart: z.boolean().default(false),
     /** The ride ends at a stop near this point. Not together with `returnToStart`. */
     destination: LatLngSchema.optional(),
+    /** Onboarding tiles (place tags): places with one of them count more than a category match. */
+    tags: z.array(z.enum(PLACE_TAGS)).max(PLACE_TAGS.length).optional(),
+    /** How well the user knows Warsaw: first-timers get the richest places first. */
+    familiarity: z.enum(FAMILIARITY).optional(),
+    /** How Sawa tells stories: sets the shortest time between two places. */
+    storyStyle: z.enum(STORY_STYLES).optional(),
   })
   .refine((r) => !(r.returnToStart && r.destination), {
     message: "Podaj destination albo returnToStart, nie oba",
