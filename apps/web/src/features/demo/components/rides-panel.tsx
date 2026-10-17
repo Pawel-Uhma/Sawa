@@ -1,6 +1,6 @@
 "use client";
 
-import type { Leg, Route } from "@sawa/shared";
+import type { Route } from "@sawa/shared";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { planRoute, routeLine } from "../lib/api-data";
@@ -8,13 +8,17 @@ import { haptic, SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import { type MockStop, type RidePreview, UPCOMING_RIDES } from "../lib/mock-data";
 import type { Profile } from "../lib/onboarding";
-import { ArrowRightIcon, PlayIcon, TramIcon } from "./icons";
+import type { RideEnd } from "../lib/ride-end";
+import { ArrowRightIcon, PinIcon, PlayIcon, TramIcon } from "./icons";
+import { Journey } from "./line-badge";
 import { KORAL, RouteThumb } from "./route-thumb";
 
 type RidesPanelProps = {
   profile: Profile;
   durationMin: number;
   onDurationChange: (durationMin: number) => void;
+  /** Koniec trasy wybrany na ekranie głównym; podgląd planuje z nim, żeby start pokazał to samo. */
+  rideEnd: RideEnd;
   /** Trasa wyznaczona wcześniej w tej sesji (pusta, jeśli jeszcze żadnej nie było). */
   lastRoute: MockStop[];
   onOpenLastRoute: () => void;
@@ -29,6 +33,7 @@ export function RidesPanel({
   profile,
   durationMin,
   onDurationChange,
+  rideEnd,
   lastRoute,
   onOpenLastRoute,
   onStart,
@@ -39,7 +44,7 @@ export function RidesPanel({
   useEffect(() => {
     let cancelled = false;
     setFailed(false);
-    planRoute(durationMin, profile)
+    planRoute(durationMin, profile, rideEnd)
       .then((route) => !cancelled && setPreview(route))
       .catch(() => {
         if (cancelled) return;
@@ -49,7 +54,7 @@ export function RidesPanel({
     return () => {
       cancelled = true;
     };
-  }, [durationMin, profile]);
+  }, [durationMin, profile, rideEnd]);
   const nearest = SEGMENTS.reduce((best, value) =>
     Math.abs(value - durationMin) < Math.abs(best - durationMin) ? value : best,
   );
@@ -123,7 +128,12 @@ export function RidesPanel({
           </button>
         )}
 
-        <FeaturedRide route={preview} failed={failed} onStart={() => onStart(preview)} />
+        <FeaturedRide
+          route={preview}
+          failed={failed}
+          destination={rideEnd.type === "destination" ? rideEnd.name : null}
+          onStart={() => onStart(preview)}
+        />
 
         <h2 className="etykieta mt-6">Wkrótce</h2>
         <div className="mt-2 grid grid-cols-2 gap-3">
@@ -140,14 +150,12 @@ type FeaturedRideProps = {
   route: Route | null;
   /** Planer nie odpowiedział: karta zostaje, a start spróbuje zaplanować trasę jeszcze raz. */
   failed: boolean;
+  /** Nazwa celu, gdy trasa ma się przy nim kończyć. */
+  destination: string | null;
   onStart: () => void;
 };
 
-function FeaturedRide({ route, failed, onStart }: FeaturedRideProps) {
-  // Kolejne linie bez powtórzeń z rzędu: 22 → 1 → 10
-  const legs = (route?.legs ?? []).filter(
-    (leg, index, all) => index === 0 || leg.line !== all[index - 1].line,
-  );
+function FeaturedRide({ route, failed, destination, onStart }: FeaturedRideProps) {
   const places = route?.places ?? [];
 
   return (
@@ -192,15 +200,22 @@ function FeaturedRide({ route, failed, onStart }: FeaturedRideProps) {
             <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[13px] text-tekst-2">
               <span className="tabular-nums">{formatDuration(Math.round(route.totalMin))}</span>
               <span aria-hidden="true">·</span>
-              {legs.map((leg, index) => (
-                <span key={`${leg.line}-${leg.departAt}`} className="flex items-center gap-1.5">
-                  {index > 0 && <span aria-hidden="true">→</span>}
-                  <LineBadge line={leg.line} mode={leg.mode} />
-                </span>
-              ))}
+              <Journey legs={route.legs} />
               <span aria-hidden="true">·</span>
               <span className="tabular-nums">{places.length} opowieści</span>
             </div>
+            {destination && (
+              <p
+                className={`mt-2 inline-flex items-center gap-1 text-[13px] font-semibold ${
+                  route.endsAtDestination ? "text-glebia" : "text-tekst"
+                }`}
+              >
+                <PinIcon className="size-4 shrink-0" />
+                {route.endsAtDestination
+                  ? `Do celu: ${destination}`
+                  : `Do celu (${destination}) nie zdążę w tym czasie`}
+              </p>
+            )}
             <p className="mt-2 line-clamp-2 text-[13px] leading-snug text-tekst-2">
               Po drodze: {places.map((place) => place.name).join(", ")}
             </p>
@@ -231,18 +246,5 @@ function UpcomingRide({ ride }: { ride: RidePreview }) {
         <p className="mt-0.5 text-xs text-tekst-2">ok. {formatDuration(ride.durationMin)}</p>
       </div>
     </article>
-  );
-}
-
-/** Numer linii ZTM w barwach pojazdu: tramwaj czerwony, autobus granatowy (jak w makiecie D); pieszo szary. */
-function LineBadge({ line, mode }: { line: string; mode: Leg["mode"] }) {
-  return (
-    <span
-      className={`inline-grid h-5 min-w-[26px] place-items-center rounded-[5px] px-1 text-[11.5px] font-extrabold text-white ${
-        mode === "tram" ? "bg-[#C8102E]" : mode === "walk" ? "bg-[#6b7280]" : "bg-[#1F2A44]"
-      }`}
-    >
-      {mode === "walk" ? "pieszo" : line}
-    </span>
   );
 }

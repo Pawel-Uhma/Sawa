@@ -286,6 +286,7 @@ export function DemoApp() {
                 profile={profile}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                rideEnd={rideEnd}
                 lastRoute={route}
                 onOpenLastRoute={() => {
                   setTab("map");
@@ -316,6 +317,7 @@ export function DemoApp() {
                 key="route"
                 durationMin={durationMin}
                 end={planned ? routeEnd(planned, rideEnd) : null}
+                legs={planned?.legs ?? []}
                 stops={route}
                 player={player}
                 activeIndex={activeIndex}
@@ -333,6 +335,10 @@ export function DemoApp() {
               listener={listener}
               onSelectionChange={setSelectedPlace}
               onCoverChange={setPlaceCoverPx}
+              onRideTo={(name, point) => {
+                changeRideEnd({ type: "destination", name, point });
+                setPanelCollapsed(false);
+              }}
             />
           )}
 

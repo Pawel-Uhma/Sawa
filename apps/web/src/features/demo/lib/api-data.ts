@@ -80,6 +80,7 @@ export function routeStops(route: Route): MockStop[] {
     name: place.name,
     interest: "",
     line: route.legs[place.legIndex]?.line ?? "",
+    mode: route.legs[place.legIndex]?.mode,
     coord: [place.position.lng, place.position.lat],
     along: place.etaSec / totalSec,
     etaMin: Math.round(place.etaSec / 60),

@@ -72,52 +72,111 @@ export function Legend({ onNext }: IntroProps) {
   );
 }
 
-const KNOWN = ["Dom", "Praca", "Siłownia"];
+type WhyCopy = {
+  title: string;
+  sub?: string;
+  /** Co już znasz (odhaczone) i czego jeszcze nie (koralowe, przerywane). */
+  chips: { label: string; known: boolean }[];
+  problem: string;
+  promise: string;
+};
 
-export function Why({ onNext }: IntroProps) {
+// Ten sam ekran „co Ci da Sawa”, ale mówi do osoby, którą właśnie poznała (odpowiedź o znajomości miasta).
+const WHY: Record<string, WhyCopy> = {
+  first_time: {
+    title: "Pierwszy raz w Warszawie? Wsiadaj do tramwaju.",
+    sub: "Bez planu zwiedzania i bez przewodnika w ręku.",
+    chips: [
+      { label: "Gdzie jestem?", known: false },
+      { label: "Co tu się wydarzyło?", known: false },
+      { label: "Co dalej?", known: false },
+    ],
+    problem: "Z okna tramwaju łatwo zobaczyć miasto, ale trudno zrozumieć, co się właśnie mija.",
+    promise:
+      "Sawa opowiada o najważniejszych miejscach na trasie i o tym, co się w nich wydarzyło. Najpierw tło, potem szczegóły.",
+  },
+  know_a_bit: {
+    title: "Znasz kilka miejsc. Reszta czeka za oknem.",
+    sub: "Miejsca z przewodników to dopiero początek.",
+    chips: [
+      { label: "Stare Miasto", known: true },
+      { label: "Pałac Kultury", known: true },
+      { label: "ulice pomiędzy?", known: false },
+    ],
+    problem:
+      "Między znanymi miejscami jest całe miasto: kamienice, murale, ślady fabryk i ludzi, którzy tu żyli.",
+    promise:
+      "Sawa przeplata to, co znasz, z tym, o czym nikt Ci nie powiedział. Opowiada w drodze, więc niczego nie musisz szukać.",
+  },
+  local: {
+    title: "Mieszkasz tu, ale znasz trzy miejsca?",
+    sub: "Warszawa rośnie dzięki ludziom, którzy przyjechali tu za pracą albo na studia.",
+    chips: [
+      { label: "Dom", known: true },
+      { label: "Praca", known: true },
+      { label: "Siłownia", known: true },
+      { label: "reszta miasta?", known: false },
+    ],
+    problem:
+      "Codziennie jedziesz tramwajem obok kamienic, murali i miejsc, gdzie działa się historia. Nikt Ci o nich nie mówi, więc ich nie widzisz.",
+    promise:
+      "Sawa zamienia zwykły przejazd w opowieść o mieście, w którym mieszkasz. Żeby było trochę bardziej Twoje.",
+  },
+};
+
+/** Gdy ktoś pominął pytanie o znajomość miasta. */
+const WHY_DEFAULT: WhyCopy = {
+  title: "Mijasz historię każdego dnia.",
+  chips: [],
+  problem:
+    "Za oknem tramwaju są kamienice, murale i miejsca, gdzie działa się historia. Nikt o nich nie mówi, więc ich nie widać.",
+  promise: "Sawa zamienia zwykły przejazd w opowieść o mieście, które mijasz.",
+};
+
+export function Why({ familiarity, onNext }: IntroProps & { familiarity: string | null }) {
   const rise = useRise();
+  const copy = WHY[familiarity ?? ""] ?? WHY_DEFAULT;
   return (
     <div className="flex flex-1 flex-col gap-6 md:gap-8">
-      <Heading sub="Warszawa rośnie dzięki ludziom, którzy przyjechali tu za pracą albo na studia.">
-        Mieszkasz tu, ale znasz trzy miejsca?
-      </Heading>
+      <Heading sub={copy.sub}>{copy.title}</Heading>
 
-      <ul className="flex flex-wrap gap-2" aria-label="Miasto, które znasz">
-        {KNOWN.map((place, i) => (
-          <motion.li
-            key={place}
-            {...rise(i)}
-            className="flex items-center gap-1.5 rounded-full bg-white py-2 pl-2.5 pr-4 text-[15px] font-bold"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path
-                d="M5 12.5l4.5 4.5L19 7.5"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-glebia"
-              />
-            </svg>
-            {place}
-          </motion.li>
-        ))}
-        <motion.li
-          {...rise(3)}
-          className="rounded-full border-2 border-dashed border-koral/60 px-4 py-1.5 text-[15px] font-bold text-koral"
-        >
-          reszta miasta?
-        </motion.li>
-      </ul>
+      {copy.chips.length > 0 && (
+        <ul className="flex flex-wrap gap-2" aria-label="Co znasz, a czego jeszcze nie">
+          {copy.chips.map((chip, i) => (
+            <motion.li
+              key={chip.label}
+              {...rise(i)}
+              className={
+                chip.known
+                  ? "flex items-center gap-1.5 rounded-full bg-white py-2 pl-2.5 pr-4 text-[15px] font-bold"
+                  : "rounded-full border-2 border-dashed border-koral/60 px-4 py-1.5 text-[15px] font-bold text-koral"
+              }
+            >
+              {chip.known && (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M5 12.5l4.5 4.5L19 7.5"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-glebia"
+                  />
+                </svg>
+              )}
+              {chip.label}
+            </motion.li>
+          ))}
+        </ul>
+      )}
 
-      <motion.div {...rise(4)} className="flex flex-col gap-3 rounded-3xl bg-white p-4 md:p-5">
-        <p className="text-[15px] leading-relaxed md:text-lg">
-          Codziennie jedziesz tramwajem obok kamienic, murali i miejsc, gdzie działa się historia.
-          Nikt Ci o nich nie mówi, więc ich nie widzisz.
-        </p>
+      <motion.div
+        {...rise(copy.chips.length)}
+        className="flex flex-col gap-3 rounded-3xl bg-white p-4 md:p-5"
+      >
+        <p className="text-[15px] leading-relaxed md:text-lg">{copy.problem}</p>
         <p className="text-[15px] font-semibold leading-relaxed text-glebia md:text-lg">
-          Sawa zamienia zwykły przejazd w opowieść o mieście, w którym mieszkasz. Żeby było trochę
-          bardziej Twoje.
+          {copy.promise}
         </p>
       </motion.div>
 
@@ -182,10 +241,10 @@ export function How({ onNext }: IntroProps) {
 
       <div className="mt-auto flex flex-col gap-3 md:mt-0 md:flex-row md:items-center md:gap-5">
         <PrimaryButton onClick={onNext} className="md:w-auto md:shrink-0 md:px-10">
-          Dopasujmy trasę do Ciebie
+          Wybierzmy, o czym opowiem
         </PrimaryButton>
         <p className="text-center text-sm text-tekst-3 md:whitespace-nowrap md:text-left">
-          3 pytania · ok. 15 sekund
+          jeszcze 2 pytania
         </p>
       </div>
     </div>

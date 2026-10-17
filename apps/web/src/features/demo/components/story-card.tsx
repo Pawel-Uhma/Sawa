@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion, type PanInfo } from "motion/react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
-import type { MockStop } from "../lib/mock-data";
+import { type MockStop, stopLineLabel } from "../lib/mock-data";
 import { PauseIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
 
 type StoryCardProps = {
@@ -84,13 +84,15 @@ export function StoryCard({
               {index + 1}
             </span>
             <div className="min-w-0 flex-1">
-              <p className="etykieta">Opowieść z okna</p>
+              <p className="etykieta">
+                {stop.mode === "walk" ? "Opowieść po drodze" : "Opowieść z okna"}
+              </p>
               <h3 className="truncate text-[17px] font-extrabold leading-snug tracking-[-0.01em]">
                 {stop.name}
               </h3>
             </div>
             <span className="shrink-0 rounded-full bg-mieta-jasna px-2.5 py-1 text-xs font-bold text-glebia-ciemna">
-              {stop.line}
+              {stopLineLabel(stop)}
             </span>
           </div>
 

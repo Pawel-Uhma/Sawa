@@ -190,7 +190,14 @@ export const ROUTE_LINE: LngLat[] = [
 export type MockStop = MockPlace & {
   // Minuty od startu trasy do tego punktu.
   etaMin: number;
+  // Odcinek, na którym jest punkt; "walk" to spacer (wtedy `line` jest pusty).
+  mode?: "tram" | "bus" | "walk";
 };
+
+/** Jak podpisać odcinek punktu: numer linii albo „pieszo”. */
+export function stopLineLabel(stop: Pick<MockStop, "line" | "mode">): string {
+  return stop.mode === "walk" ? "pieszo" : stop.line;
+}
 
 // Placeholder planera: liczba punktów rośnie z czasem, preferowane są wybrane tematy,
 // a kolejność wynika z położenia na trasie.

@@ -16,6 +16,8 @@ type PlaceCardHostProps = {
   listener: Listener;
   onSelectionChange: (selection: PlaceSelection | null) => void;
   onCoverChange: (px: number) => void;
+  /** „Jedź tutaj” w karcie: miejsce staje się celem przejażdżki. */
+  onRideTo: (name: string, point: LatLng) => void;
 };
 
 /** Miejsce wybrane na mapie (`?p=` z mapy Antka) i jego karta. */
@@ -24,6 +26,7 @@ export function PlaceCardHost({
   listener,
   onSelectionChange,
   onCoverChange,
+  onRideTo,
 }: PlaceCardHostProps) {
   const { selectedId, select } = useSelectedPlace();
   const detail = usePlace(selectedId);
@@ -49,7 +52,19 @@ export function PlaceCardHost({
           className="rounded-[32px]"
         >
           {place ? (
-            <PlaceDetails place={place} listener={listener} onClose={close} />
+            <PlaceDetails
+              place={place}
+              listener={listener}
+              onClose={close}
+              onRideTo={
+                position
+                  ? (name) => {
+                      onRideTo(name, position);
+                      close();
+                    }
+                  : undefined
+              }
+            />
           ) : detail.isError || (detail.isSuccess && !place) ? (
             <div className="flex items-start gap-3 p-5 pt-6">
               <p className="flex-1 text-[15px] text-tekst-2">

@@ -4,7 +4,9 @@ import type { Place } from "@sawa/shared";
 import { useState } from "react";
 import { placeTagLabel } from "@/lib/interest-labels";
 import type { Listener } from "../lib/api-data";
+import { haptic } from "../lib/device";
 import { usePlaceStory } from "../lib/place-story";
+import { PinIcon } from "./icons";
 import {
   CloseButton,
   cleanFact,
@@ -18,10 +20,16 @@ import {
 
 const FACTS_PREVIEW = 3;
 
-type PlaceDetailsProps = { place: Place; listener: Listener; onClose: () => void };
+type PlaceDetailsProps = {
+  place: Place;
+  listener: Listener;
+  onClose: () => void;
+  /** Ustawia miejsce jako cel przejażdżki; brak, gdy miejsce nie ma współrzędnych. */
+  onRideTo?: (name: string) => void;
+};
 
 /** Treść karty miejsca, jak arkusz w Mapach Apple: nagłówek, główna akcja, pasek zdjęć, a niżej wszystko, co wiemy o miejscu. */
-export function PlaceDetails({ place, listener, onClose }: PlaceDetailsProps) {
+export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetailsProps) {
   const story = usePlaceStory(place.id, listener);
   const [showAll, setShowAll] = useState(false);
   const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW)).map(cleanFact);
@@ -42,7 +50,24 @@ export function PlaceDetails({ place, listener, onClose }: PlaceDetailsProps) {
       </div>
 
       <div className="mt-4">
-        <ListenButton state={story.state} progress={story.progress} onToggle={story.toggle} />
+        <div className="flex items-center gap-2">
+          <div className="min-w-0 flex-1">
+            <ListenButton state={story.state} progress={story.progress} onToggle={story.toggle} />
+          </div>
+          {onRideTo && (
+            <button
+              type="button"
+              onClick={() => {
+                haptic();
+                onRideTo(title);
+              }}
+              className="flex h-14 shrink-0 items-center gap-1.5 rounded-[18px] bg-mieta-jasna px-4 text-[15px] font-bold text-glebia transition-transform active:scale-[0.96]"
+            >
+              <PinIcon className="size-[18px]" />
+              Jedź tutaj
+            </button>
+          )}
+        </div>
         {story.text && (
           <p aria-live="polite" className="wejdz mt-3 text-[15px] leading-relaxed text-tekst-2">
             {story.text}

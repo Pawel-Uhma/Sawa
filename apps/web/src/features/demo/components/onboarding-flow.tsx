@@ -4,7 +4,6 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { haptic, SPRING } from "../lib/device";
-import { getMemory } from "../lib/memory";
 import {
   type Choice,
   FAMILIARITY,
@@ -22,47 +21,42 @@ import { SAWA_POSES, SawaGuide, type SawaPose, sawaSrc } from "./sawa-guide";
 export type OnboardingStep =
   | "welcome"
   | "legend"
+  | "familiarity"
   | "why"
   | "how"
-  | "familiarity"
   | "interests"
-  | "style"
-  | "building";
+  | "style";
 
-// Wstęp (legend, why, how) tłumaczy, czym jest Sawa, komuś, kto widzi ją pierwszy raz. Potem 3 pytania.
+// Rozmowa dla kogoś, kto widzi Sawę pierwszy raz: kim jest, kim jesteś Ty, co Ci da (zależy od
+// odpowiedzi o znajomości miasta), jak działa, a potem już tylko wybory do trasy.
 const ORDER: OnboardingStep[] = [
   "welcome",
   "legend",
+  "familiarity",
   "why",
   "how",
-  "familiarity",
   "interests",
   "style",
-  "building",
 ];
+/** Strony bez pytania. Przy edycji z menu albo po „Znam Sawę” ich nie powtarzamy. */
 const INTRO: OnboardingStep[] = ["legend", "why", "how"];
-/** Kroki z paskiem postępu i strzałką wstecz. */
-const PAGED: OnboardingStep[] = ORDER.slice(1, -1);
+const QUESTIONS_ONLY = ORDER.filter((step) => !INTRO.includes(step));
 // Przesunięcie albo rzut palcem, po którym wstęp przewija się na następną stronę.
 const SWIPE_PX = 64;
 const SWIPE_VELOCITY = 500;
 
 // Po jednym tapnięciu przy wyborze jednokrotnym przechodzimy dalej, ale z chwilą na zobaczenie zaznaczenia.
 const AUTO_ADVANCE_MS = 320;
-const BUILD_LINE_MS = 650;
 
 const POSE: Record<OnboardingStep, SawaPose> = {
   welcome: "macha",
   legend: "sekret",
-  why: "mysli",
+  familiarity: "mapa",
+  why: "radosc",
   how: "mapa",
-  familiarity: "macha",
   interests: "mysli",
   style: "sekret",
-  building: "radosc",
 };
-
-const labelOf = (key: string) => INTERESTS.find((item) => item.key === key)?.label ?? key;
 
 type OnboardingFlowProps = {
   initialStep?: OnboardingStep;
@@ -79,7 +73,11 @@ export function OnboardingFlow({
   const [step, setStep] = useState<OnboardingStep>(initialStep);
   const [dir, setDir] = useState(1);
   const [profile, setProfile] = useState<Profile>(initialProfile);
+  const [skipIntro, setSkipIntro] = useState(initialStep !== "welcome");
   const advanceTimer = useRef<number | undefined>(undefined);
+  const steps = skipIntro ? QUESTIONS_ONLY : ORDER;
+  /** Kroki z paskiem postępu i strzałką wstecz. */
+  const paged = steps.slice(1);
 
   // Pozy i ikony ładujemy od razu, żeby zmiana kroku nie mrugała pustym obrazkiem.
   useEffect(() => {
@@ -94,14 +92,21 @@ export function OnboardingFlow({
     setStep(next);
   }
 
-  const nextOf = (current: OnboardingStep) => ORDER[ORDER.indexOf(current) + 1] ?? current;
-  const prevOf = (current: OnboardingStep) => ORDER[ORDER.indexOf(current) - 1] ?? current;
+  const prevOf = (current: OnboardingStep) => steps[steps.indexOf(current) - 1] ?? current;
+
+  // Po ostatnim pytaniu od razu mapa: trasę i tak układa planer dopiero po „Wyznacz trasę”.
+  function advance(current: Profile = profile) {
+    const next = steps[steps.indexOf(step) + 1];
+    if (next) go(next);
+    else onDone(current);
+  }
 
   function pickSingle(field: "familiarity" | "storyStyle", key: string) {
     haptic();
-    setProfile((current) => ({ ...current, [field]: key }));
+    const next = { ...profile, [field]: key };
+    setProfile(next);
     window.clearTimeout(advanceTimer.current);
-    advanceTimer.current = window.setTimeout(() => go(nextOf(step)), AUTO_ADVANCE_MS);
+    advanceTimer.current = window.setTimeout(() => advance(next), AUTO_ADVANCE_MS);
   }
 
   function toggleInterest(key: string) {
@@ -118,12 +123,12 @@ export function OnboardingFlow({
   }
 
   const say = sawaLine(step, profile);
-  const showChrome = PAGED.includes(step);
+  const showChrome = paged.includes(step);
   const isIntro = INTRO.includes(step);
 
   // Wstęp przewija się palcem jak strony w iOS; pytania nie, żeby gest nie mylił się z wyborem.
   function onSwipe(offsetX: number, velocityX: number) {
-    if (offsetX < -SWIPE_PX || velocityX < -SWIPE_VELOCITY) go(nextOf(step));
+    if (offsetX < -SWIPE_PX || velocityX < -SWIPE_VELOCITY) advance();
     else if (offsetX > SWIPE_PX || velocityX > SWIPE_VELOCITY) go(prevOf(step));
   }
 
@@ -165,7 +170,7 @@ export function OnboardingFlow({
             ) : (
               <Logo className="text-2xl md:text-3xl" />
             )}
-            {showChrome && <Progress index={PAGED.indexOf(step)} />}
+            {showChrome && <Progress segments={paged} index={paged.indexOf(step)} />}
           </header>
 
           <div className={step === "welcome" ? "pt-6 md:pt-0" : ""}>
@@ -192,25 +197,34 @@ export function OnboardingFlow({
               className="flex flex-1 flex-col md:flex-none"
             >
               {step === "welcome" && (
-                <Welcome onStart={() => go("legend")} onSkipIntro={() => go("familiarity")} />
+                <Welcome
+                  onStart={() => {
+                    setSkipIntro(false);
+                    go("legend");
+                  }}
+                  onSkipIntro={() => {
+                    setSkipIntro(true);
+                    go("familiarity");
+                  }}
+                />
               )}
-              {step === "legend" && <Legend onNext={() => go("why")} />}
-              {step === "why" && <Why onNext={() => go("how")} />}
-              {step === "how" && <How onNext={() => go("familiarity")} />}
+              {step === "legend" && <Legend onNext={() => advance()} />}
               {step === "familiarity" && (
                 <SingleChoice
                   title="Jak dobrze znasz Warszawę?"
                   options={FAMILIARITY}
                   value={profile.familiarity}
                   onPick={(key) => pickSingle("familiarity", key)}
-                  onSkip={() => go("interests")}
+                  onSkip={() => advance()}
                 />
               )}
+              {step === "why" && <Why familiarity={profile.familiarity} onNext={() => advance()} />}
+              {step === "how" && <How onNext={() => advance()} />}
               {step === "interests" && (
                 <Interests
                   picked={profile.interests}
                   onToggle={toggleInterest}
-                  onNext={() => go("style")}
+                  onNext={() => advance()}
                 />
               )}
               {step === "style" && (
@@ -219,10 +233,9 @@ export function OnboardingFlow({
                   options={STORY_STYLES}
                   value={profile.storyStyle}
                   onPick={(key) => pickSingle("storyStyle", key)}
-                  onSkip={() => go("building")}
+                  onSkip={() => advance()}
                 />
               )}
-              {step === "building" && <Building profile={profile} onDone={() => onDone(profile)} />}
             </motion.section>
           </AnimatePresence>
         </div>
@@ -238,12 +251,12 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
       return "Cześć! Jestem Sawa, syrenka z herbu Warszawy.";
     case "legend":
       return "Mam imię po syrenie z legendy o Warszawie.";
+    case "familiarity":
+      return "A Ty? Powiedz, czy znamy się z Warszawą.";
     case "why":
-      return "Pokażę Ci miasto, które mijasz codziennie.";
+      return WHY_LINE[profile.familiarity ?? ""] ?? "Pokażę Ci miasto, które mijasz codziennie.";
     case "how":
       return "To proste: trzy kroki i jedziemy.";
-    case "familiarity":
-      return "Teraz o Tobie. Trzy szybkie pytania.";
     case "interests": {
       const last = profile.interests.at(-1);
       if (!last) return "Co Cię ciekawi? Możesz wybrać kilka.";
@@ -252,10 +265,15 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
     }
     case "style":
       return "I ostatnie: jak mam opowiadać?";
-    case "building":
-      return "Mam to! Układam Twoją Warszawę.";
   }
 }
+
+/** Sawa odpowiada na to, jak dobrze znasz miasto, zanim powie, co Ci da. */
+const WHY_LINE: Record<string, string> = {
+  first_time: "Witaj w Warszawie! Będę Twoją przewodniczką.",
+  know_a_bit: "Trochę znasz? To dołożę resztę.",
+  local: "Mieszkasz tu? To pokażę Ci Twoje miasto od nowa.",
+};
 
 /** Sawa reaguje na ostatnio wybraną kategorię. Przy sporcie i przyrodzie mówi wprost, że krótko. */
 const INTEREST_LINE: Record<string, string> = {
@@ -265,22 +283,18 @@ const INTEREST_LINE: Record<string, string> = {
   nature: "Parki i skwery! O nich opowiem krótko.",
 };
 
-function Progress({ index }: { index: number }) {
+function Progress({ segments, index }: { segments: OnboardingStep[]; index: number }) {
   return (
     <div
       role="progressbar"
       aria-label="Postęp"
       aria-valuemin={1}
-      aria-valuemax={PAGED.length}
+      aria-valuemax={segments.length}
       aria-valuenow={index + 1}
       className="flex flex-1 gap-1.5"
     >
-      {PAGED.map((segment, i) => (
-        // Większa przerwa oddziela wstęp od pytań.
-        <div
-          key={segment}
-          className={`h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10 ${segment === "familiarity" ? "ml-2" : ""}`}
-        >
+      {segments.map((segment, i) => (
+        <div key={segment} className="h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10">
           <motion.div
             className="h-full origin-left rounded-full bg-glebia"
             initial={false}

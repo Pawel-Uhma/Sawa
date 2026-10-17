@@ -1,5 +1,6 @@
 "use client";
 
+import type { Leg } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useCallback, useEffect, useRef, useState } from "react";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
@@ -7,7 +8,8 @@ import { formatDuration } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import type { StoryPlayer } from "../lib/story-player";
-import { ChevronLeftIcon, PinIcon, TramIcon } from "./icons";
+import { ChevronLeftIcon, PinIcon } from "./icons";
+import { Journey } from "./line-badge";
 import { SawaMenuButton } from "./sawa-menu";
 import { StoryCard } from "./story-card";
 
@@ -15,6 +17,8 @@ type RouteSheetProps = {
   durationMin: number;
   /** Koniec trasy (pętla albo cel); null przy trasie „przed siebie”. */
   end: { label: string; reached: boolean } | null;
+  /** Odcinki trasy z planera: tramwaje, autobusy i spacery. */
+  legs: Leg[];
   stops: MockStop[];
   /** Odtwarzacz opowieści jest w `DemoApp`, bo zakładka Sawa steruje tą samą opowieścią. */
   player: StoryPlayer;
@@ -238,6 +242,7 @@ type SheetContentProps = RouteSheetProps & {
 function SheetContent({
   durationMin,
   end,
+  legs,
   stops,
   activeIndex,
   onBack,
@@ -251,7 +256,6 @@ function SheetContent({
   togglePlay,
 }: SheetContentProps) {
   const activeStop = stops[activeIndex];
-  const lines = [...new Set(stops.map((stop) => stop.line))];
 
   return (
     <div className="flex flex-col gap-5">
@@ -277,8 +281,8 @@ function SheetContent({
         <p className="mt-1 flex flex-wrap items-center gap-x-1.5 text-sm text-tekst-2">
           <span className="font-semibold text-tekst">{formatDuration(durationMin)}</span>·
           <span>{stops.length} opowieści</span>·
-          <span className="inline-flex items-center gap-1">
-            <TramIcon className="size-4" /> {lines.join(", ")}
+          <span className="inline-flex flex-wrap items-center gap-1.5">
+            <Journey legs={legs} />
           </span>
         </p>
         {end && (
@@ -350,7 +354,8 @@ function SheetContent({
                   <span className="relative min-w-0 flex-1">
                     <span className="block truncate text-[15px] font-bold">{stop.name}</span>
                     <span className="block text-xs text-tekst-3">
-                      linia {stop.line} · po ok. {stop.etaMin} min
+                      {stop.mode === "walk" ? "pieszo" : `linia ${stop.line}`} · po ok.{" "}
+                      {stop.etaMin} min
                     </span>
                   </span>
                 </button>

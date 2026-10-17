@@ -13,12 +13,7 @@ import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
 import { DURATION_STOPS_MIN } from "../lib/mock-data";
 import { INTERESTS } from "../lib/onboarding";
-import {
-  CUSTOM_DESTINATION_NAME,
-  DESTINATION_PRESETS,
-  type RideEnd,
-  type RideEndType,
-} from "../lib/ride-end";
+import { DESTINATION_PRESETS, type RideEnd, type RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import { ArrowRightIcon } from "./icons";
 import { PrimaryButton } from "./primary-button";
@@ -243,6 +238,11 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
             className="overflow-hidden"
           >
             <div className="-mx-[18px] flex gap-2 overflow-x-auto px-[18px] pt-2.5 [scrollbar-width:none] md:-mx-6 md:px-6">
+              {isCustom && (
+                <span className="flex h-8 max-w-[220px] shrink-0 items-center rounded-full bg-glebia px-3 text-[13px] font-semibold text-white">
+                  <span className="truncate">{destination.name}</span>
+                </span>
+              )}
               {DESTINATION_PRESETS.map((preset) => {
                 const isActive = preset.name === destination.name;
                 return (
@@ -263,11 +263,6 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
                   </button>
                 );
               })}
-              {isCustom && (
-                <span className="flex h-8 shrink-0 items-center rounded-full bg-glebia px-3 text-[13px] font-semibold text-white">
-                  {CUSTOM_DESTINATION_NAME}
-                </span>
-              )}
             </div>
             <p className="mt-1.5 text-xs text-tekst-3">
               Albo stuknij w mapę, żeby wybrać własny cel.
