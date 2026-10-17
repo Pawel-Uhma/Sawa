@@ -45,7 +45,7 @@
 
 ## R3 · Frontend i mapa
 
-- [~] **T-30** Mapa MapLibre z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00 (Antek, od 13:30; plan w [14-plan-mapy.md](14-plan-mapy.md); 14:30 na gałęzi `r3/maplibre-map`: `/mapa` z podkładem, punktami z fixture, filtrem `?i=`, kartą miejsca `?p=` i trasą demo z API; czeka na `GET /v1/places` od R2)
+- [~] **T-30** Mapa MapLibre z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00 (Antek, od 13:30; plan w [14-plan-mapy.md](14-plan-mapy.md); 15:00: `/mapa` z miejscami z API, kartą miejsca i trasą demo, PR z `r3/maplibre-map`)
 - [ ] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — 17:00
 - [ ] **T-32** Slider czasu (30 min – 4 h) i przycisk „generuj” — `R3` — 17:00
 - [ ] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — 22:00

@@ -15,12 +15,14 @@ Mapa w `apps/web` pokazuje:
 
 Podkład: **OpenFreeMap**, styl `https://tiles.openfreemap.org/styles/positron` (jasny i spokojny, punkty są na nim czytelne) **[Z]**, bez klucza.
 
-## Stan wdrożenia (14:30)
+## Stan wdrożenia (15:00, PR z gałęzi `r3/maplibre-map`)
 
-- Strona `/mapa` (link „Otwórz mapę” na `/`). Kroki 1–3, 5a i 6 z §10 zrobione, krok 5 częściowo: karta pokazuje nazwę, typ, zainteresowania i numer na trasie, bez faktów (czeka na `/v1/places/:id`).
-- Miejsca z `features/map/__fixtures__/api-places-sample.json` (4 miejsca, kopia fixture R2). Podmiana na API: tylko `queryFn` w `hooks/use-places.ts` (`TODO(T-30)`).
-- Trasa: `useDemoRoute` w `features/planner` woła `GET /v1/routes/demo` (mock R1). Brak API → mapa bez trasy i komunikat.
-- Sprawdzone zrzutami w headless Chromium (375 px i desktop): podkład, trasa, numery, klik → `?p=` i karta.
+- Strona `/mapa` (link „Otwórz mapę” na `/`). Kroki 1–6 i 5a z §10 zrobione.
+- Miejsca z `GET /v1/places` (bbox obszaru danych, `PLACES_BBOX`), karta ze szczegółami z `GET /v1/places/:id`: okres, adres, tagi, pierwsze zdjęcie z podpisem, fakty (3 + rozwiń), źródła. Bez kluczy Supabase API serwuje `fake`.
+- Zainteresowania w `?i=` to kategorie (`historical`, `cultural`, `sports`, `nature`). Miejsca mają tagi, filtr mapuje je przez `interestsOfTags` z `packages/shared`.
+- Trasa: `useDemoRoute` w `features/planner` woła `GET /v1/routes/demo` (planer R1). Brak API → mapa bez trasy i komunikat.
+- Sprawdzone zrzutami w headless Chromium (375 px i desktop).
+- Do zrobienia: `fitBounds` nie uwzględnia otwartej karty (trasa bywa pod nią), ostrzeżenie „Expected number, found null” w konsoli (prawdopodobnie styl podkładu).
 
 ## 3. Przepływ danych
 
