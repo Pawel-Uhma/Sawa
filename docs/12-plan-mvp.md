@@ -137,7 +137,8 @@ Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiada
 ## 8. Opowieść i tryb demo (R4 + R3, M5–M6)
 
 - `POST /v1/stories`: `story_cache` → prompt z faktów miejsca (tylko `facts`, `trivia`, `people`, `sources` z bazy) → LLM → walidacja wyjścia zod (`text`, `sourceIds[]` z listy wejściowej) → zapis do cache.
-- Długość z `targetSec`: ok. 2,5 słowa na sekundę, trzy przedziały. Opowieść jako tekst.
+- Długość z `targetSec`: ok. 2,5 słowa na sekundę, mowa wypełnia 85% okna (reszta to oddech przed kolejnym miejscem), okno zaokrąglone w dół do 20 s (od 2 min do 30 s) dla cache (`bandFor` w `domain/story.ts`). Klient wysyła `RoutePlace.windowSec`. Opowieść jako tekst.
+- **Zegar jazdy (17.10, T-119):** do czasu lokalizacji opowieść o miejscu rusza 15 s przed jego `etaSec` (`lib/ride-clock.ts` w `apps/web`). Gdy opowieść skończy się wcześniej, Sawa milknie do następnego miejsca; gdy się przeciągnie, następna rusza od razu, a miejsca już minięte są pomijane. Ręczny wybór punktu ustawia zegar na „jestem tutaj”.
 - Prompt Sawy w `apps/api/src/prompts/`.
 - **Pamięć i znajomość miasta (17.10, R3):** klient wysyła `heardFacts` (id faktów tego miejsca, `factId` z `packages/shared/src/memory.ts`) i `knownContexts`. API wybiera fakty jeszcze nieopowiedziane, w kolejności z bazy, czyli od najważniejszych (`pickFacts` w `domain/story.ts`); gdy wszystkie padły, krótkie „Pamiętasz…” (`recap`). Odpowiedź ma `factIds` i `contextIds`, telefon zapisuje je po wysłuchaniu połowy opowieści. `familiarity: first_time` dokłada raz na temat tło (Powstanie, getto, przemysłowa Warszawa, `domain/contexts.ts`); bez LLM tło nie pada. `storyStyle` zmienia ton i długość (ciekawostki do 40 słów).
 - `/demo` (R3): stała lokalizacja 42 Warsaw, `GET /v1/routes/demo`, symulowana jazda przyspieszona do ok. 1,5 min, przechodzi M1–M5 po kolei.

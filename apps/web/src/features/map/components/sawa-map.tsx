@@ -12,6 +12,7 @@ import {
   NavigationControl,
 } from "react-map-gl/maplibre";
 import { useTheme } from "@/features/theme";
+import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
@@ -25,7 +26,13 @@ import {
   resolveCamera,
 } from "../lib/camera";
 import { loadMapIcons } from "../lib/map-icons";
-import { BASEMAP_STYLE_URLS, MAP_PALETTES, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
+import {
+  BASEMAP_STYLE_URLS,
+  MAP_PALETTES,
+  MIN_PLACE_RICHNESS,
+  START_VIEW,
+  waterPaintOverrides,
+} from "../lib/map-style";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
@@ -93,6 +100,8 @@ export function SawaMap({
   );
   const theme = useTheme();
   const palette = MAP_PALETTES[theme];
+  const waterOverrides = useMemo(() => waterPaintOverrides(palette), [palette]);
+  useBasemapOverrides(mapRef, isLoaded, waterOverrides);
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(

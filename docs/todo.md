@@ -42,7 +42,8 @@
 - [x] **T-11** Odjazdy z przystanku i linie na przystanku (endpointy z [api/](api/)) — `R1` — 15:00 (Szczepan, 19:40: niepotrzebne, odjazdy są w planerze (T-76))
 - [x] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00 (Szczepan, 14:00: GTFS + beam search, podgląd `/debug/planner`, PR #4)
 - [x] **T-17** `WAW_TOKEN` w `apps/api/.env.local` i na Railway, sprawdzić odjazdy na żywo (format odpowiedzi API nie był testowany z tokenem) — `R1` — 17:00 (Szczepan, 15:40: lokalnie działa; API zwraca gołą tablicę wierszy, nie `{ result }`, poprawka parsera w PR; zostało: `WAW_TOKEN` na Railway) (19:40: token na Railway jest, ale każde zapytanie z produkcji do API miasta pada: `/v1/vehicles/track` daje `live: true, stale: true`, odjazdy szacowane; lokalnie ten sam kod działa. Sprawdzić w logach Railway „vehicle positions failed”: HTTP 500 = zła wartość tokenu, „did not answer” = sieć; po poprawce restart, bo pusty wynik odjazdów jest w cache 1 h) (spotkanie 19:30: `WAW_TOKEN` dodany na Railway, wcześniej zmienna miała inną nazwę)
-- [ ] **T-113** Trasa kończy się dziwną pętlą (zgłaszane kilka razy przy teście) — `R1`
+- [x] **T-119** Długość opowieści dopasowana do czasu jazdy do następnego miejsca + zegar jazdy (następny temat przy następnym miejscu, nie zaraz po końcu opowieści), [12-plan-mvp.md](12-plan-mvp.md) §8 — `R4`/`R3` (zrobił Jasiek na polecenie użytkownika) — (Jasiek z agentem, 20:30)
+- [x] **T-113** Trasa kończy się dziwną pętlą (zgłaszane kilka razy przy teście) — `R1` — (Szczepan, PR #52: planer karze powrót tą samą drogą)
 - [ ] **T-18** Przed demo: przebudować graf na niedzielę (`pnpm --filter @sawa/scripts transit --date 2026-10-18`) i zapisać trasę demo jako fixture do trybu offline — `R1` — niedziela 08:00
 - [x] **T-99** Pojazdy na żywo pod mapę: pojazd użytkownika + po jednym przed i za nim, tor do płynnej animacji, prędkość z przejazdu poprzednika tej samej linii; `POST /v1/vehicles/track`, kontrakt w `packages/shared/src/schemas/vehicles.ts`. Opis: [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R1` (zrobił Jasiek na prośbę użytkownika, gałąź `r1/live-vehicles`) — (Jasiek, 16:30; na Railway potrzebne `WAW_TOKEN` (T-17) i w dniu demo `VEHICLES_ALWAYS_ON=1`, wpisane w [przed-demo.md](przed-demo.md))
 
@@ -58,10 +59,13 @@
 
 ## R3 · Frontend i mapa
 
-- [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Paweł, 17.10 17:58 → 18:02; razem z T-117)
-- [ ] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3`
+- [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
+- [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-30** Mapa MapLibre z jednym zbiorem punktów (miejsca z `/v1/places`, nie z T-10) — `R3` — 13:00 (Antek, 16:40; plan w [14-plan-mapy.md](14-plan-mapy.md); `/mapa` z kartą miejsca i trasą PR #12, API `SawaMap` dla ekranów PR #16, miejsca z kafelków widoku na całą Warszawę PR #27)
-- [x] **T-105** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; ekrany demo zostają jasne, dopóki nie przejdą na tokeny)
+- [x] **T-119** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; numer zmieniony z T-105, który był zajęty)
+- [x] **T-121** Sawa nie mówi od razu po wyznaczeniu trasy: czeka na pierwsze miejsce (zegar jazdy albo GPS w promieniu 150 m), stuknięcie w odtwarzanie startuje od razu — `R3` — (Szczepan na prośbę użytkownika, 18:11, gałąź `r3/wait-for-first-place`)
+- [x] **T-120** Ekrany demo na tokenach zamiast `bg-white` i hexów, ciemny motyw w całej aplikacji (`.motyw` na `<body>`); rzeki i woda na mapie na niebiesko w obu motywach — `R3` — (Antek, 17:52, gałąź `r3/demo-tokens`)
+- [x] **T-122** Przełącznik jasny / ciemny już w onboardingu: słońce / księżyc w prawym górnym rogu nagłówka (`ThemeToggleButton` z `features/theme`), „Auto” zostaje w menu Sawy — `R3` — (Antek, 18:13, gałąź `r3/onboarding-theme`)
 - [x] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap; 14:54: demo na `SawaMap` Antka, piny z `/v1/places`, trasa z `POST /v1/routes/plan`, zob. `stan.md`)
 - [x] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — (Paweł z agentem, 17.10 13:25: mock bez API, mapa szkicowa zamiast Mapbox; 13:51: wariant A6 z makiety, Sawa z dymkiem, pasek zakładek, prawdziwa mapa)
 - [x] **T-67** Wersja desktopowa (ten sam UI na szerokim ekranie) — `R3` — (Paweł z agentem, 17.10 13:25: panel boczny od 768 px, mock; 13:51: mapa na cały ekran, pływający szklany panel 360/400 px, kamera omija panel, skróty klawiszowe w trasie)
@@ -81,11 +85,12 @@
 - [ ] **T-102** Pozycja „za oknem”: znacznik jedzie wzdłuż `Leg.lngLats` w czasie odtwarzania (krok 8 w [14-plan-mapy.md](14-plan-mapy.md) §10, M2 planu MVP); potrzebne do T-36 — `R3` (Antek) — niedziela 08:00
 - [ ] **T-103** Mapa na 2 prawdziwych telefonach: karta miejsca z przeciąganiem, 16 px marginesu, bez poziomego scrolla (krok 7 w [14-plan-mapy.md](14-plan-mapy.md) §10) — `R3` (Antek)
 - [x] **T-118** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42) — (Antek z agentem, 17:42)
-- [x] **T-119** Znaczniki miejsc na mapie od nowa: ilustracje były za drobne, zostaje wariant I „Naklejka” (pełny glif w kolorze grupy z białą obwódką, 5 kształtów, ok. 36 px przy zoomie 15) — `R3` (Paweł z agentem, 17:50 → 18:08)
+- [x] **T-123** Znaczniki miejsc na mapie od nowa (było T-119, numer zajęty): ilustracje były za drobne, zostaje wariant I „Naklejka” (pełny glif w kolorze grupy z białą obwódką, 5 kształtów, ok. 36 px przy zoomie 15) — `R3` (Paweł z agentem, 17:50 → 18:08)
 - [ ] **T-115** Ekrany demo na tokeny kolorów (`bg-powierzchnia`, `bg-tlo-2`) zamiast `bg-white` i hexów, potem klasa `.motyw` na `<body>`, żeby ciemny motyw działał wszędzie (dziś w trybie jazdy syrenka ma ciemne pachy na jasnym tle) — `R3` (Paweł)
 - [ ] **T-116** Usunąć „Przed siebie” z wyboru końca trasy (wywozi w przypadkowe miejsce); zostają „Wracam tu” i „Do celu” — `R3` (Paweł)
 - [x] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`; zrobione razem z T-110 (suwak nie schodzi poniżej najszybszej trasy, Paweł, 17.10 18:02)
 - [ ] **T-112** Śledzenie lokalizacji na żywo: z pozycji użytkownika wybierać opowieść (`activeIndex` do ekranu „Na żywo”) — `R3` (Antek)
+- [ ] **T-119** Kolory według tematu (historia, kultura, sport, przyroda): kółko pod ikoną miejsca na mapie, chipy tematów w tych samych kolorach jako legenda; reguła dla miejsca z kilkoma tematami, kontrast AA w obu motywach ([#53](https://github.com/Pawel-Uhma/Sawa/issues/53)) — `R3`
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos

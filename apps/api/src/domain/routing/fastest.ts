@@ -3,7 +3,7 @@ import type { ChosenLeg, CollectedPlace, Ride } from "./beam-search";
 import { MinQueue } from "./return-times";
 import { type ScorePrefs, scorePlace } from "./score";
 import type { Network, Pattern, PlaceHit, PlacePoint } from "./types";
-import { placesAlong, type Walk } from "./walk-tour";
+import { type Walk, walkThrough } from "./walk-tour";
 
 export type FastestInput = {
   network: Network;
@@ -102,17 +102,20 @@ export function planFastest(input: FastestInput, options: Partial<FastestOptions
     : Number.POSITIVE_INFINITY;
   if (ride && rideTotalSec < walkAllSec) return { kind: "ride", ride };
 
-  const places = placesAlong(
+  // On foot the way bends slightly to pass right by places near it.
+  const { waypoints, places, sec } = walkThrough(
     input.placesById.values(),
-    { from: input.origin, to: input.destination, startSec: 0, sec: walkAllSec },
+    input.origin,
+    input.destination,
+    opts.walkDetourFactor / opts.walkSpeedMps,
     { interests: input.interests, prefs: input.prefs },
   );
   return {
     kind: "walk",
     walk: {
-      waypoints: [input.origin, input.destination],
+      waypoints,
       places,
-      elapsedSec: walkAllSec,
+      elapsedSec: sec,
       score: places.reduce((sum, p) => sum + p.score, 0),
     },
   };

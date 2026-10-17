@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import {
   FALLBACK_PLACE_ICON,
   MAP_ICONS,
+  MAP_PALETTES,
   mapIconId,
   mapIconUrl,
   PLACE_ICON_KINDS,
@@ -12,6 +13,7 @@ import {
   placeKindColor,
   placeKindIconExpression,
   UNKNOWN_KIND_COLOR,
+  waterPaintOverrides,
 } from "./map-style";
 
 const PUBLIC_DIR = join(__dirname, "../../../../public");
@@ -52,5 +54,23 @@ describe("map style", () => {
 
   it("falls back to grey for an unknown kind", () => {
     expect(placeKindColor("ufo")).toBe(UNKNOWN_KIND_COLOR);
+  });
+
+  it("paints water fills, river lines and their labels with the theme's blues", () => {
+    const overrides = waterPaintOverrides(MAP_PALETTES.dark);
+    expect(overrides).toContainEqual({
+      layerId: "water",
+      property: "fill-color",
+      value: MAP_PALETTES.dark.water,
+    });
+    expect(overrides).toContainEqual({
+      layerId: "waterway",
+      property: "line-color",
+      value: MAP_PALETTES.dark.water,
+    });
+    expect(
+      overrides.filter((o) => o.property === "text-color").every((o) => o.value === "#7fa8cb"),
+    ).toBe(true);
+    expect(MAP_PALETTES.light.water).not.toBe(MAP_PALETTES.dark.water);
   });
 });

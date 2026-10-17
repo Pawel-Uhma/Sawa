@@ -56,7 +56,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null, adres z tekstu artykułu.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Siedziba_Satander_Polska.jpg/1280px-Siedziba_Satander_Polska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Siedziba_Satander_Polska.jpg",
+      "opis": "Siedziba Santander Bank Polska S.A. przy al. Jana Pawła II 17 w Warszawie",
+      "autor": "Darpaw",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2020",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -156,7 +167,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (kościół św. Augustyna, Nowolipki 18).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Augustyna_04.jpg/1280px-Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Augustyna_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Augustyna_04.jpg",
+      "opis": "Saint Augustinus church in Warsaw",
+      "autor": "Аимаина хикари",
+      "licencja": "CC0",
+      "rok": "2018",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -227,6 +249,17 @@
       "brak_w_zrodle": [
        "1944"
       ]
+     }
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/2025_Warszawa_Dom_Mody_Klif%2C_Enel-Med%2C_2.jpg/1280px-2025_Warszawa_Dom_Mody_Klif%2C_Enel-Med%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2025_Warszawa_Dom_Mody_Klif,_Enel-Med,_2.jpg",
+      "opis": "Dom Mody Klif w Warszawie, Enel-Med.",
+      "autor": "Cybularny",
+      "licencja": "CC0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
      }
     ]
    }
@@ -339,7 +372,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Rekord tablicy, bo sama Gęsiówka ma w tekście tylko adres skrzyżowania (u zbiegu Gęsiej i Zamenhofa), bez numeru. Brak współrzędnych w nagłówku; lat/lon null.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Anielewicza_Street_in_Warsaw_-_place_of_remembrance.jpg/1280px-Anielewicza_Street_in_Warsaw_-_place_of_remembrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Anielewicza_Street_in_Warsaw_-_place_of_remembrance.jpg",
+      "opis": "Płyta upamiętniająca  uwolnienie 5 sierpnia 1944 r 348 więźniów obozu koncentracyjnego \"Gęsiówka\" przez Harcerski Batalion AK \"Zośka\" Zgrupowania Radosław",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -450,7 +494,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Artykuł podaje Mirów jako lokalizację; w paczce nagłówek DZIELNICE: Wola.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Mir%C3%B3w%2C_Warsaw%2C_Poland_-_panoramio_-_Roman_Eugeniusz_%2845%29.jpg/1280px-Mir%C3%B3w%2C_Warsaw%2C_Poland_-_panoramio_-_Roman_Eugeniusz_%2845%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Mir%C3%B3w,_Warsaw,_Poland_-_panoramio_-_Roman_Eugeniusz_(45).jpg",
+      "opis": "Mirów, Warsaw, Poland",
+      "autor": "Roman Eugeniusz",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -544,7 +599,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Ciepłej 3”). Artykuł podaje Mirów; w paczce nagłówek DZIELNICE: Wola.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Mural%2C_ul._Ciep%C5%82a_3%2C_Warszawa_%282%29.jpg/1280px-Mural%2C_ul._Ciep%C5%82a_3%2C_Warszawa_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Mural,_ul._Ciep%C5%82a_3,_Warszawa_(2).jpg",
+      "opis": "Mural, ul. Ciepła 3, Warszawa.",
+      "autor": "Qkiel",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -595,7 +661,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Twardej 28”). Stan obecny opisany w artykule niejednoznacznie (większość zburzona, część stoi).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ul._Twarda_28%2C_Warszawa_%282%29.jpg/1280px-Ul._Twarda_28%2C_Warszawa_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ul._Twarda_28,_Warszawa_(2).jpg",
+      "opis": "Ul. Twarda 28, Warszawa.",
+      "autor": "Qkiel",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -755,7 +832,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Śliskiej 52”). Artykuł podaje Mirów; w paczce nagłówek DZIELNICE: Wola.",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Varsovia%2C_Polonia_-_panoramio_%2850%29.jpg/1280px-Varsovia%2C_Polonia_-_panoramio_%2850%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Varsovia,_Polonia_-_panoramio_(50).jpg",
+      "opis": "Varsovia, Polonia",
+      "autor": "Nelson Pérez",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "11 M",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -809,7 +897,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ulicy Bema 81”).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ul._Bema_81%2C_Warszawa_%286%29.jpg/1280px-Ul._Bema_81%2C_Warszawa_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ul._Bema_81,_Warszawa_(6).jpg",
+      "opis": "Ul. Bema 81, Warszawa.",
+      "autor": "Qkiel",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -943,7 +1042,18 @@
     ],
     "pewnosc": "srednia",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Złotej 65a”). Autorstwo projektu podane z zastrzeżeniem („najprawdopodobniej”).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Z%C5%82ota_65b.jpg/1280px-Z%C5%82ota_65b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Z%C5%82ota_65b.jpg",
+      "opis": "Oficyna kamienicy przy ul. Złotej 65b w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {
@@ -1219,7 +1329,18 @@
     ],
     "pewnosc": "wysoka",
     "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (pomnik przed biurowcem Prosta Center, ul. Prosta 51).",
-    "zrodlo_rekordu": "warszawikia-dzielnice"
+    "zrodlo_rekordu": "warszawikia-dzielnice",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Monument_to_Evacuation_of_the_Warsaw_Ghetto_Fighters%2C_2.jpg/1280px-Monument_to_Evacuation_of_the_Warsaw_Ghetto_Fighters%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Monument_to_Evacuation_of_the_Warsaw_Ghetto_Fighters,_2.jpg",
+      "opis": "Monument to Evacuation of the Warsaw Ghetto Fighters",
+      "autor": "Wistula",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2026",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
    }
   },
   {

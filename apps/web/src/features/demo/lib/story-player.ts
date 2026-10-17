@@ -6,6 +6,7 @@ import { api } from "@/lib/api";
 import type { Listener } from "./api-data";
 import { getMemory, HEARD_AT_PROGRESS, rememberStory } from "./memory";
 import type { MockStop } from "./mock-data";
+import { etaSecOf } from "./ride-clock";
 
 /** Polish speech in ElevenLabs runs at about 2.5 words a second (same as the API). */
 const WORDS_PER_SEC = 2.5;
@@ -23,11 +24,14 @@ export type Clip = {
   told: Pick<Story, "placeId" | "factIds" | "contextIds"> & { placeName?: string };
 };
 
-/** Sawa may talk until the next stop. */
-function targetSecFor(stops: readonly MockStop[], index: number): number {
+/**
+ * Sawa may talk until the next stop: the planner's window (it knows the story style's limits),
+ * else the time between the two stops.
+ */
+export function targetSecFor(stops: readonly MockStop[], index: number): number {
   const stop = stops[index];
   const next = stops[index + 1];
-  const sec = stop && next ? (next.etaMin - stop.etaMin) * 60 : LAST_STOP_SEC;
+  const sec = stop?.windowSec ?? (stop && next ? etaSecOf(next) - etaSecOf(stop) : LAST_STOP_SEC);
   return Math.min(MAX_TARGET_SEC, Math.max(MIN_TARGET_SEC, Math.round(sec)));
 }
 

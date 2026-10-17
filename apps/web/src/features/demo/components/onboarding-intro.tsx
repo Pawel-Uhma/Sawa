@@ -30,7 +30,7 @@ export function Legend({ onNext }: IntroProps) {
       <div className="flex flex-col items-center gap-3 md:items-start">
         <p className="sr-only">Wars plus Sawa to Warszawa.</p>
         <div aria-hidden="true" className="flex w-full items-center gap-2.5 md:gap-3">
-          <motion.div {...rise(0)} className="flex-1 rounded-3xl bg-white p-4 md:p-5">
+          <motion.div {...rise(0)} className="flex-1 rounded-3xl bg-powierzchnia p-4 md:p-5">
             <p className="text-2xl font-extrabold tracking-[-0.02em] md:text-3xl">Wars</p>
             <p className="text-sm text-tekst-2">rybak</p>
           </motion.div>
@@ -148,7 +148,7 @@ export function Why({ familiarity, onNext }: IntroProps & { familiarity: string 
               {...rise(i)}
               className={
                 chip.known
-                  ? "flex items-center gap-1.5 rounded-full bg-white py-2 pl-2.5 pr-4 text-[15px] font-bold"
+                  ? "flex items-center gap-1.5 rounded-full bg-powierzchnia py-2 pl-2.5 pr-4 text-[15px] font-bold"
                   : "rounded-full border-2 border-dashed border-koral/60 px-4 py-1.5 text-[15px] font-bold text-koral"
               }
             >
@@ -172,7 +172,7 @@ export function Why({ familiarity, onNext }: IntroProps & { familiarity: string 
 
       <motion.div
         {...rise(copy.chips.length)}
-        className="flex flex-col gap-3 rounded-3xl bg-white p-4 md:p-5"
+        className="flex flex-col gap-3 rounded-3xl bg-powierzchnia p-4 md:p-5"
       >
         <p className="text-[15px] leading-relaxed md:text-lg">{copy.problem}</p>
         <p className="text-[15px] font-semibold leading-relaxed text-glebia md:text-lg">
@@ -218,7 +218,7 @@ export function How({ onNext }: IntroProps) {
           <motion.li
             key={item.title}
             {...rise(i)}
-            className="flex items-center gap-3.5 rounded-3xl bg-white p-3 pr-4 md:gap-4 md:p-4"
+            className="flex items-center gap-3.5 rounded-3xl bg-powierzchnia p-3 pr-4 md:gap-4 md:p-4"
           >
             <span className="relative shrink-0">
               <Image src={item.icon} alt="" width={64} height={64} className="size-12 md:size-14" />

@@ -8,11 +8,11 @@ import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { useDemoDrive } from "../lib/demo-drive";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
-import { useFastestRoute } from "../lib/fastest-route";
+import { shortestStopFor, useFastestRoute } from "../lib/fastest-route";
 import { forgetAll, useMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
-import { clampDuration } from "../lib/ride-duration";
+import { isAt, useRideClock } from "../lib/ride-clock";
 import {
   CUSTOM_DESTINATION_NAME,
   DESTINATION_PRESETS,
@@ -85,10 +85,18 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Na scenie nie pytamy o lokalizację: stała pozycja pod 42 Warsaw
   const start = useStartPoint(!isStage && stage !== "onboarding");
   const origin = isStage ? HACKATHON_VENUE : start.point;
-  // Najszybsza droga do wybranego celu: jej czas to dolna granica suwaka, a zanim czas ruszy, pokazujemy ją na mapie (T-110, T-117)
-  const fastest = useFastestRoute(origin, rideEnd, travel, profile);
-  const floorMin = fastest ? fastest.totalMin : null;
-  const shownDuration = clampDuration(durationMin, floorMin);
+  const fastest = useFastestRoute(origin, profile, rideEnd, travel);
+  // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
+  const minDurationMin =
+    fastest.status === "ready" ? shortestStopFor(fastest.route.totalMin) : null;
+
+  const fastestRoute = fastest.status === "ready" ? fastest.route : null;
+
+  // Każdy nowy cel (i zmiana startu albo sposobu jazdy): suwak sam staje na najszybszej drodze.
+  // Użytkownik może go potem przesunąć dalej, dłuższy czas to trasa krajoznawcza.
+  useEffect(() => {
+    if (fastestRoute) setDurationMin(shortestStopFor(fastestRoute.totalMin));
+  }, [fastestRoute]);
 
   const showRoute = useCallback((next: Route) => {
     setPlanned(next);
@@ -101,7 +109,12 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(origin, shownDuration, profile, rideEnd, travel));
+      // Na najkrótszym kroku to po prostu najszybsza droga, już pobrana
+      if (fastest.status === "ready" && durationMin === minDurationMin) {
+        showRoute(fastest.route);
+        return;
+      }
+      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
     } catch {
       setPlanError(
         start.status === "located"
@@ -111,7 +124,17 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     } finally {
       setPlanning(false);
     }
-  }, [origin, start.status, shownDuration, profile, rideEnd, travel, showRoute]);
+  }, [
+    origin,
+    start.status,
+    durationMin,
+    profile,
+    rideEnd,
+    travel,
+    fastest,
+    minDurationMin,
+    showRoute,
+  ]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);
@@ -233,20 +256,50 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Odtwarzacz jest tu, a nie w arkuszu trasy: zakładka Sawa steruje tą samą opowieścią.
   const player = useStoryPlayer(route, activeIndex, listener);
   const { setIsPlaying, rewind } = player;
+  // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
+  const clock = useRideClock(route);
+  const { syncTo } = clock;
+  const pickStop = useCallback(
+    (index: number) => {
+      syncTo(index);
+      setActiveIndex(index);
+    },
+    [syncTo],
+  );
   // Na scenie autobus jedzie sam: aktywny punkt idzie po trasie w ok. 1,5 min (T-36)
-  useDemoDrive(isStage && isRoute, route, setActiveIndex);
-  // Sawa mówi na trasie; po wyjściu z niej pauza, a po wejściu wznowienie (jak wcześniej arkusz).
+  useDemoDrive(isStage && isRoute, route, pickStop);
+  // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
+  // (zegar jazdy albo GPS). Po wyjściu z trasy pauza, a po wejściu wznowienie.
+  const waiting = clock.waitSec !== null;
+  const wasWaiting = useRef(false);
   useEffect(() => {
-    setIsPlaying(isRoute);
-  }, [isRoute, setIsPlaying]);
+    const arrived = wasWaiting.current && !waiting;
+    wasWaiting.current = waiting;
+    // Start z zakładki Sawa (poza ekranem trasy) zostaje, nie pauzujemy go od razu
+    if (arrived && !isRoute) return;
+    setIsPlaying(isRoute && !waiting);
+  }, [isRoute, waiting, setIsPlaying]);
+  const firstStop = route[0];
+  useEffect(() => {
+    if (waiting && firstStop && start.status === "located" && isAt(origin, firstStop)) syncTo(0);
+  }, [waiting, firstStop, start.status, origin, syncTo]);
+  // Stuknięcie w odtwarzanie przed pierwszym miejscem znaczy „opowiadaj już teraz”.
+  const ridePlayer = useMemo(() => {
+    if (!waiting) return player;
+    const toggle = () => {
+      syncTo(0);
+      player.toggle();
+    };
+    return { ...player, toggle };
+  }, [waiting, player, syncTo]);
   const playStop = useCallback(
     (index: number) => {
       if (index < 0 || index >= route.length) return;
       rewind();
       setIsPlaying(true);
-      setActiveIndex(index);
+      pickStop(index);
     },
-    [route.length, rewind, setIsPlaying],
+    [route.length, rewind, setIsPlaying, pickStop],
   );
   const menu: SawaMenuActions = useMemo(
     () => ({
@@ -283,7 +336,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
         <div className="fixed inset-0 overflow-hidden bg-mapa">
           <div className="absolute inset-0">
             <SawaMap
-              route={isRoute ? (planned ?? undefined) : isHome ? (fastest ?? undefined) : undefined}
+              route={
+                isRoute ? (planned ?? undefined) : isHome ? (fastestRoute ?? undefined) : undefined
+              }
               camera={camera}
               padding={padding}
               user={origin}
@@ -297,7 +352,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               activeStopId={isRoute ? activeStop?.id : undefined}
               onStopClick={(id) => {
                 const index = route.findIndex((stop) => stop.id === id);
-                if (index >= 0) setActiveIndex(index);
+                if (index >= 0) pickStop(index);
               }}
               // Ekrany mają własne karty nad mapą; wbudowana karta miejsca wjechałaby pod nie
               hasPlaceSheet={false}
@@ -315,9 +370,11 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
             {isHome && !isPlaceOpen && (
               <HomePanel
                 key="home"
-                durationMin={shownDuration}
-                floorMin={floorMin}
+                durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                fastestMin={fastestRoute?.totalMin ?? null}
+                isFindingFastest={fastest.status === "loading"}
+                minDurationMin={minDurationMin}
                 travel={travel}
                 onTravelChange={setTravel}
                 rideEnd={rideEnd}
@@ -336,7 +393,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 profile={profile}
                 origin={origin}
                 originLabel={startLabel(start.status)}
-                durationMin={shownDuration}
+                durationMin={durationMin}
                 onDurationChange={setDurationMin}
                 rideEnd={rideEnd}
                 travel={travel}
@@ -359,7 +416,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 onCollapsedChange={setPanelCollapsed}
                 stops={route}
                 activeIndex={activeIndex}
-                player={player}
+                player={ridePlayer}
                 places={memory.places}
                 onPrev={() => playStop(activeIndex - 1)}
                 onNext={() => playStop(activeIndex + 1)}
@@ -368,13 +425,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
             {isRoute && (
               <RouteSheet
                 key="route"
-                durationMin={shownDuration}
+                durationMin={durationMin}
                 end={planned ? routeEnd(planned, rideEnd) : null}
                 legs={planned?.legs ?? []}
+                attribution={planned?.attribution ?? []}
                 stops={route}
-                player={player}
+                player={ridePlayer}
                 activeIndex={activeIndex}
                 onActiveChange={setActiveIndex}
+                clock={clock}
                 onBack={() => setStage("map")}
                 isDesktop={isDesktop}
                 onCoverChange={setSheetCoverPx}

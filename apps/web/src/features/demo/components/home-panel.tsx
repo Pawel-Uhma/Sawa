@@ -6,14 +6,15 @@ import {
   type MotionValue,
   motion,
   useAnimationControls,
+  useReducedMotion,
   useTransform,
 } from "motion/react";
 import Image from "next/image";
-import { type CSSProperties, type ReactNode, useRef, useState } from "react";
+import { type CSSProperties, type ReactNode, useLayoutEffect, useRef, useState } from "react";
 import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING } from "../lib/device";
-import { formatDuration } from "../lib/format";
-import { durationStops, stopPercent } from "../lib/ride-duration";
+import { formatDuration, sliderPercent } from "../lib/format";
+import { DURATION_STOPS_MIN } from "../lib/mock-data";
 import { DESTINATION_PRESETS, type RideEnd, type RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import { ArrowRightIcon, ForwardIcon, LoopIcon, PinIcon, TramIcon, WalkIcon } from "./icons";
@@ -21,9 +22,13 @@ import { PrimaryButton } from "./primary-button";
 
 type HomePanelProps = {
   durationMin: number;
-  /** Czas najszybszej drogi do wybranego celu; suwak nie schodzi poniżej niego (T-110). */
-  floorMin: number | null;
   onDurationChange: (durationMin: number) => void;
+  /** Najszybsza droga do celu (min), gdy wybrany jest cel. */
+  fastestMin: number | null;
+  /** Najkrótszy dozwolony krok suwaka: krok najszybszej drogi do celu. */
+  minDurationMin: number | null;
+  /** Planer liczy jeszcze najszybszą drogę do wybranego celu. */
+  isFindingFastest: boolean;
   travel: Travel;
   onTravelChange: (travel: Travel) => void;
   rideEnd: RideEnd;
@@ -40,8 +45,8 @@ type HomePanelProps = {
 const SCALE = [5, 30, 60, 120, 180, 240];
 
 /** Środek gałki suwaka (30 px) dla danej wartości: tor zaczyna się i kończy pół gałki od krawędzi. */
-function thumbCenter(durationMin: number, stops: readonly number[]): string {
-  return `calc(15px + (100% - 30px) * ${stopPercent(durationMin, stops) / 100})`;
+function thumbCenter(durationMin: number): string {
+  return `calc(15px + (100% - 30px) * ${sliderPercent(durationMin) / 100})`;
 }
 
 const TRAVEL_OPTIONS: ChoiceOption<Travel>[] = [
@@ -57,8 +62,10 @@ const END_OPTIONS: ChoiceOption<RideEndType>[] = [
 /** Ekran główny: czas na suwaku, sposób i koniec trasy jako kafelki z podpisem, co znaczą. */
 export function HomePanel({
   durationMin,
-  floorMin,
   onDurationChange,
+  fastestMin,
+  minDurationMin,
+  isFindingFastest,
   travel,
   onTravelChange,
   rideEnd,
@@ -72,10 +79,11 @@ export function HomePanel({
 }: HomePanelProps) {
   const sawa = useAnimationControls();
   const lastStep = useRef(durationMin);
-  const stops = durationStops(floorMin);
-  // Przy najszybszej drodze pierwszy podpis to ta droga, a krótsze wartości znikają z podpisów.
-  const scale =
-    floorMin === null ? SCALE : [floorMin, ...SCALE.filter((value) => value > floorMin)];
+  const minIndex = minDurationMin === null ? 0 : DURATION_STOPS_MIN.indexOf(minDurationMin);
+  const isFastest = fastestMin !== null && durationMin === minDurationMin;
+  // Na najkrótszym kroku nagłówek pokazuje prawdziwy czas najszybszej drogi, nie zaokrąglony krok
+  const shownMin =
+    isFastest && fastestMin !== null ? Math.max(1, Math.round(fastestMin)) : durationMin;
 
   // Dotknięcie Sawy: krótkie, sprężyste przechylenie (reakcja, nie dekoracja)
   function poke() {
@@ -102,61 +110,81 @@ export function HomePanel({
         <span className="relative h-9 overflow-hidden md:h-[42px]">
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.strong
-              key={durationMin}
+              key={shownMin}
               initial={{ y: 18, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -18, opacity: 0 }}
               transition={{ type: "spring", bounce: 0, duration: 0.3 }}
               className="block text-[28px] font-extrabold leading-9 tracking-[-0.03em] text-glebia tabular-nums md:text-[34px] md:leading-[42px]"
             >
-              {formatDuration(durationMin)}
+              {formatDuration(shownMin)}
             </motion.strong>
           </AnimatePresence>
         </span>
       </div>
 
-      <input
-        type="range"
-        className="suwak mt-1.5"
-        aria-label="Czas przejażdżki"
-        aria-valuetext={formatDuration(durationMin)}
-        min={0}
-        max={stops.length - 1}
-        step={1}
-        value={stops.indexOf(durationMin)}
-        onChange={(event) => {
-          const value = stops[Number(event.target.value)];
-          if (value !== lastStep.current) haptic(4);
-          lastStep.current = value;
-          onDurationChange(value);
-        }}
-        style={{ "--postep": thumbCenter(durationMin, stops) } as CSSProperties}
-      />
+      {isFindingFastest ? (
+        <p className="-mt-1 text-[13px] text-tekst-2">Szukam najszybszej drogi do celu…</p>
+      ) : (
+        fastestMin !== null && (
+          <p className="-mt-1 text-[13px] text-tekst-2">
+            {isFastest
+              ? "Najszybsza droga do celu. Przesuń, żeby pojechać dłużej i krajoznawczo."
+              : `Krajoznawczo. Najszybciej dojedziesz w ${formatDuration(Math.round(fastestMin))}.`}
+          </p>
+        )
+      )}
+
+      <div className="relative">
+        <input
+          type="range"
+          className="suwak mt-1.5"
+          aria-label="Czas przejażdżki"
+          aria-valuetext={formatDuration(durationMin)}
+          min={0}
+          max={DURATION_STOPS_MIN.length - 1}
+          step={1}
+          value={DURATION_STOPS_MIN.indexOf(durationMin)}
+          onChange={(event) => {
+            // Krócej niż najszybsza droga do celu się nie da: gałka zatrzymuje się na jej kroku
+            const value = DURATION_STOPS_MIN[Math.max(Number(event.target.value), minIndex)];
+            if (value !== lastStep.current) haptic(4);
+            lastStep.current = value;
+            onDurationChange(value);
+          }}
+          style={{ "--postep": thumbCenter(durationMin) } as CSSProperties}
+        />
+        {minIndex > 0 && minDurationMin !== null && (
+          // Wyszarzony odcinek toru poniżej najszybszej drogi
+          <span
+            aria-hidden
+            className="pointer-events-none absolute top-[21px] left-0 h-1.5 rounded-l-full bg-powierzchnia/60"
+            style={{ width: thumbCenter(minDurationMin) }}
+          />
+        )}
+      </div>
       <div aria-hidden className="relative h-3.5 text-[11px] font-semibold text-tekst-3">
-        {scale.map((value, index) => (
+        {SCALE.map((value, index) => (
           <span
             key={value}
             // Skrajne podpisy przy krawędziach, żeby nie wystawały poza kartę.
             style={
               index === 0
                 ? { left: 0 }
-                : index === scale.length - 1
+                : index === SCALE.length - 1
                   ? { right: 0 }
-                  : { left: thumbCenter(value, stops) }
+                  : { left: thumbCenter(value) }
             }
             className={`absolute top-0 whitespace-nowrap tabular-nums transition-colors duration-200 ${
-              index === 0 || index === scale.length - 1 ? "" : "-translate-x-1/2"
-            } ${value === durationMin ? "text-glebia" : ""}`}
+              index === 0 || index === SCALE.length - 1 ? "" : "-translate-x-1/2"
+            } ${value === durationMin ? "text-glebia" : ""} ${
+              minDurationMin !== null && value < minDurationMin ? "opacity-40" : ""
+            }`}
           >
             {formatDuration(value)}
           </span>
         ))}
       </div>
-      {floorMin !== null && (
-        <p className="mt-1.5 text-[12px] text-tekst-2">
-          Najszybciej do tego celu: {formatDuration(floorMin)}. Krócej się nie da.
-        </p>
-      )}
 
       <ChoiceGroup
         label="Jak jedziesz"
@@ -178,7 +206,7 @@ export function HomePanel({
         <ArrowRightIcon className="size-5" />
       </PrimaryButton>
       {planError && (
-        <p role="alert" className="mt-2 text-center text-sm text-zinc-600">
+        <p role="alert" className="mt-2 text-center text-sm text-tekst-2">
           {planError}
         </p>
       )}
@@ -233,7 +261,7 @@ function ChoiceGroup<T extends string>({
               <motion.span
                 layoutId={layoutId}
                 transition={SPRING}
-                className="absolute inset-0 rounded-[inherit] bg-white shadow-[0_1px_3px_rgba(16,43,42,0.12),0_0_0_1.5px_rgba(23,112,111,0.4)]"
+                className="absolute inset-0 rounded-[inherit] bg-powierzchnia shadow-[0_1px_3px_rgba(16,43,42,0.12),0_0_0_1.5px_rgba(23,112,111,0.4)]"
               />
             )}
             <span
@@ -343,39 +371,80 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
           aria-label="Dokąd jedziesz"
           enterKeyHint="search"
           autoComplete="off"
-          className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-white focus:ring-2 focus:ring-glebia"
+          className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
         />
       </div>
-      {hasQuery && (
-        <ul aria-label="Wyniki" className="mt-1.5 overflow-hidden rounded-[14px] bg-white">
-          {results.map((result) => (
-            <li key={result.id}>
-              <button
-                type="button"
-                onClick={() => {
-                  haptic(4);
-                  onPick({ type: "destination", name: result.name, point: result.position });
-                  setText("");
-                }}
-                className="flex w-full flex-col px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
-              >
-                <span className="truncate text-[14px] font-bold text-tekst">{result.name}</span>
-                <span className="truncate text-xs text-tekst-3">{result.address}</span>
-              </button>
-            </li>
-          ))}
-          {results.length === 0 && (
-            <li className="px-3 py-2 text-[13px] text-tekst-3">
-              {isSearching
-                ? "Szukam…"
-                : isError
-                  ? "Nie udało się wyszukać. Wybierz cel niżej albo na mapie."
-                  : "Nie znalazłam takiego miejsca w Warszawie."}
-            </li>
-          )}
-        </ul>
-      )}
+      <AnimatePresence initial={false}>
+        {hasQuery && (
+          <AutoHeight key="wyniki">
+            <ul
+              aria-label="Wyniki"
+              className="mt-1.5 overflow-hidden rounded-[14px] bg-powierzchnia"
+            >
+              {results.map((result) => (
+                <li key={result.id}>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      haptic(4);
+                      onPick({ type: "destination", name: result.name, point: result.position });
+                      setText("");
+                    }}
+                    className="flex w-full flex-col px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
+                  >
+                    <span className="truncate text-[14px] font-bold text-tekst">{result.name}</span>
+                    <span className="truncate text-xs text-tekst-3">{result.address}</span>
+                  </button>
+                </li>
+              ))}
+              {results.length === 0 && (
+                <li className="px-3 py-2 text-[13px] text-tekst-3">
+                  {isSearching
+                    ? "Szukam…"
+                    : isError
+                      ? "Nie udało się wyszukać. Wybierz cel niżej albo na mapie."
+                      : "Nie znalazłam takiego miejsca w Warszawie."}
+                </li>
+              )}
+            </ul>
+          </AutoHeight>
+        )}
+      </AnimatePresence>
     </div>
+  );
+}
+
+/**
+ * Wysokość dociągana sprężyną do treści. Karta rośnie od dołu, więc bez tego każda zmiana
+ * liczby wyników szarpie całą kartę w jednej klatce.
+ */
+function AutoHeight({ children }: { children: ReactNode }) {
+  const reduce = useReducedMotion();
+  const innerRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState<number | "auto">("auto");
+
+  useLayoutEffect(() => {
+    const inner = innerRef.current;
+    if (!inner) return;
+    const observer = new ResizeObserver(() => setHeight(inner.offsetHeight));
+    observer.observe(inner);
+    setHeight(inner.offsetHeight);
+    return () => observer.disconnect();
+  }, []);
+
+  const transition = reduce
+    ? { duration: 0 }
+    : { type: "spring" as const, bounce: 0, duration: 0.35 };
+  return (
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height, opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      transition={transition}
+      className="overflow-hidden"
+    >
+      <div ref={innerRef}>{children}</div>
+    </motion.div>
   );
 }
 

@@ -1,6 +1,5 @@
 import { haversineM, type LatLng } from "@sawa/shared";
 import type { CollectedPlace } from "./beam-search";
-import { VISIBLE_RADIUS_M } from "./place-hits";
 import { type ScorePrefs, scorePlace } from "./score";
 import type { PlacePoint } from "./types";
 
@@ -24,6 +23,8 @@ export type WalkOptions = {
   /** Best-scoring reachable places considered as stops. */
   maxCandidates: number;
   maxBudgetShare: number;
+  /** Cost of walking back along the way already walked, per budget share (see beam search). */
+  backtrackPenalty: number;
 };
 
 export const DEFAULT_WALK_OPTIONS: WalkOptions = {
@@ -33,6 +34,7 @@ export const DEFAULT_WALK_OPTIONS: WalkOptions = {
   maxStops: 8,
   maxCandidates: 40,
   maxBudgetShare: 1.1,
+  backtrackPenalty: 2,
 };
 
 export type Walk = {
@@ -46,7 +48,13 @@ export type Walk = {
   lastPlaceId?: string;
 };
 
-type State = Walk & { at: LatLng; visited: ReadonlySet<string>; key: string };
+type State = Walk & {
+  at: LatLng;
+  visited: ReadonlySet<string>;
+  key: string;
+  /** Seconds walked along segments walked before (going back the same way). */
+  retracedSec: number;
+};
 
 const M_PER_DEG_LAT = 111_320;
 
@@ -60,9 +68,49 @@ export function toSegment(p: LatLng, a: LatLng, b: LatLng): { distanceM: number;
   return { distanceM: Math.hypot(px - t * bx, py - t * by), t };
 }
 
+/** A walk this close to a segment walked before goes along it again. */
+const RETRACE_M = 30;
+/** Sample spacing along a new segment when checking it against the way so far. */
+const RETRACE_STEP_M = 20;
+
+/**
+ * Share (0–1) of the straight walk `from` → `to` that runs within `RETRACE_M` of the walk
+ * through `waypoints`. The first stretch is skipped: every turn starts next to the last segment.
+ */
+export function retracedShare(waypoints: LatLng[], from: LatLng, to: LatLng): number {
+  const lengthM = haversineM(from, to);
+  const samples = Math.floor(lengthM / RETRACE_STEP_M);
+  if (samples === 0 || waypoints.length < 2) return 0;
+  let near = 0;
+  for (let i = 1; i <= samples; i++) {
+    const t = i / samples;
+    if (t * lengthM < 2 * RETRACE_M) continue;
+    const p = { lat: from.lat + t * (to.lat - from.lat), lng: from.lng + t * (to.lng - from.lng) };
+    for (let k = 1; k < waypoints.length; k++) {
+      if (toSegment(p, waypoints[k - 1] as LatLng, waypoints[k] as LatLng).distanceM <= RETRACE_M) {
+        near++;
+        break;
+      }
+    }
+  }
+  return near / samples;
+}
+
+/**
+ * On foot only places right by the way count: the walker passes next to them, not across the
+ * street or a block away (a ride sees farther, see `VISIBLE_RADIUS_M`).
+ */
+export const WALK_VISIBLE_RADIUS_M = 15;
+/** A place this far off a direct walk is worth a short detour to pass right by it. */
+export const WALK_DETOUR_M = 60;
+/** Detours make a direct walk at most this share longer. */
+export const WALK_DETOUR_SHARE = 0.2;
+/** Best places near a direct walk tried as detours. */
+const MAX_DETOURS = 20;
+
 export type Segment = { from: LatLng; to: LatLng; startSec: number; sec: number };
 
-/** Places within sight of a straight walk, with the time each is passed (`legIndex` 0). */
+/** Places right by a straight walk (`WALK_VISIBLE_RADIUS_M`), with the time each is passed (`legIndex` 0). */
 export function placesAlong(
   places: Iterable<PlacePoint>,
   { from, to, startSec, sec }: Segment,
@@ -72,16 +120,71 @@ export function placesAlong(
   for (const place of places) {
     if (scoring.skip?.has(place.id)) continue;
     const { distanceM, t } = toSegment(place.position, from, to);
-    if (distanceM > VISIBLE_RADIUS_M) continue;
+    if (distanceM > WALK_VISIBLE_RADIUS_M) continue;
     const score = scorePlace(place, distanceM, scoring.interests, scoring.prefs);
     gained.push({ placeId: place.id, etaSec: startSec + t * sec, distanceM, legIndex: 0, score });
   }
   return gained;
 }
 
+export type DirectWalk = { waypoints: LatLng[]; places: CollectedPlace[]; sec: number };
+
+/**
+ * A walk `from` → `to` bent slightly through the best places within `WALK_DETOUR_M` of the
+ * straight line (all detours at most `WALK_DETOUR_SHARE` longer), so the walker passes right by
+ * them. Places right by any of its segments count, with the time each is passed.
+ */
+export function walkThrough(
+  places: Iterable<PlacePoint>,
+  from: LatLng,
+  to: LatLng,
+  secPerM: number,
+  scoring: { interests: ReadonlySet<string>; prefs?: ScorePrefs; skip?: ReadonlySet<string> },
+): DirectWalk {
+  const all = [...places];
+  const near: { place: PlacePoint; t: number; score: number }[] = [];
+  for (const place of all) {
+    if (scoring.skip?.has(place.id)) continue;
+    const { distanceM, t } = toSegment(place.position, from, to);
+    if (distanceM <= WALK_VISIBLE_RADIUS_M || distanceM > WALK_DETOUR_M) continue;
+    near.push({ place, t, score: scorePlace(place, 0, scoring.interests, scoring.prefs) });
+  }
+  near.sort((a, b) => b.score - a.score || a.place.id.localeCompare(b.place.id));
+
+  const lengthM = (points: LatLng[]) =>
+    points.reduce((sum, p, i) => (i === 0 ? 0 : sum + haversineM(points[i - 1] as LatLng, p)), 0);
+  const maxM = (1 + WALK_DETOUR_SHARE) * haversineM(from, to);
+  let detours: typeof near = [];
+  for (const candidate of near.slice(0, MAX_DETOURS)) {
+    const tried = [...detours, candidate].sort((a, b) => a.t - b.t);
+    if (lengthM([from, ...tried.map((d) => d.place.position), to]) <= maxM) detours = tried;
+  }
+
+  const waypoints = [from, ...detours.map((d) => d.place.position), to];
+  const skip = new Set(scoring.skip);
+  const passed: CollectedPlace[] = [];
+  let sec = 0;
+  for (let i = 1; i < waypoints.length; i++) {
+    const [a, b] = [waypoints[i - 1] as LatLng, waypoints[i] as LatLng];
+    const segmentSec = haversineM(a, b) * secPerM;
+    const gained = placesAlong(
+      all,
+      { from: a, to: b, startSec: sec, sec: segmentSec },
+      {
+        ...scoring,
+        skip,
+      },
+    );
+    for (const g of gained) skip.add(g.placeId);
+    passed.push(...gained);
+    sec += segmentSec;
+  }
+  return { waypoints, places: passed, sec };
+}
+
 /**
  * A short sightseeing walk: beam search over places near the origin, walking straight from
- * one to the next (× detour factor). Places within sight of each segment count, scored like
+ * one to the next (× detour factor). Places right by each segment count, scored like
  * on a ride. With `end` the walk finishes there; the result fits `maxBudgetShare` × budget.
  * Returns null when not even the walk to the end fits.
  */
@@ -119,6 +222,7 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
     );
     const visited = new Set(state.visited);
     for (const g of gained) visited.add(g.placeId);
+    const retracedSec = state.retracedSec + sec * retracedShare(state.waypoints, state.at, to);
     return {
       waypoints: [...state.waypoints, to],
       places: [...state.places, ...gained],
@@ -128,12 +232,15 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
       visited,
       key: `${state.key}|${key}`,
       lastPlaceId: key === "end" ? undefined : key,
+      retracedSec,
     };
   }
 
   const finish = (s: State) => (input.end ? walkTo(s, input.end, "end") : s);
   const objective = (s: State) =>
-    s.score - Math.abs(s.elapsedSec - input.budgetSec) / input.budgetSec;
+    s.score -
+    Math.abs(s.elapsedSec - input.budgetSec) / input.budgetSec -
+    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec;
   const byObjective = (a: State, b: State) =>
     objective(b) - objective(a) || a.key.localeCompare(b.key);
 
@@ -145,6 +252,7 @@ export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): 
     at: input.origin,
     visited: new Set(),
     key: "start",
+    retracedSec: 0,
   };
   const done: State[] = [finish(start)];
   let beam = [start];

@@ -1,3 +1,5 @@
+import { DURATION_STOPS_MIN } from "./mock-data";
+
 /** 90 → "1 h 30 min", 240 → "4 h", 45 → "45 min". */
 export function formatDuration(durationMin: number): string {
   const hours = Math.floor(durationMin / 60);
@@ -5,6 +7,12 @@ export function formatDuration(durationMin: number): string {
   if (hours === 0) return `${minutes} min`;
   if (minutes === 0) return `${hours} h`;
   return `${hours} h ${minutes} min`;
+}
+
+/** Pozycja suwaka w procentach (po indeksie kroku, nie po minutach), używana do pokolorowania toru. */
+export function sliderPercent(durationMin: number): number {
+  const index = DURATION_STOPS_MIN.indexOf(durationMin);
+  return (index / (DURATION_STOPS_MIN.length - 1)) * 100;
 }
 
 const CLOCK = new Intl.DateTimeFormat("pl-PL", { hour: "2-digit", minute: "2-digit" });

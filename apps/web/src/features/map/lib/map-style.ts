@@ -29,6 +29,9 @@ export type MapPalette = {
   clusterText: string;
   /** Opacity of regular places while a route is shown; dark needs more to stay visible. */
   dimmedOpacity: number;
+  /** Rivers and lakes; the basemaps draw them grey, we repaint them blue. */
+  water: string;
+  waterLabel: string;
 };
 
 export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
@@ -45,6 +48,8 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     clusterFill: "#3f3f46",
     clusterText: "#ffffff",
     dimmedOpacity: 0.35,
+    water: "#b4d7ec",
+    waterLabel: "#3d6e94",
   },
   dark: {
     // A light outline keeps the deep line colours (blue, violet) visible on the dark basemap.
@@ -60,8 +65,43 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     clusterFill: "#2c3d3b",
     clusterText: "#e6efed",
     dimmedOpacity: 0.6,
+    water: "#1f4a6b",
+    waterLabel: "#7fa8cb",
   },
 };
+
+/** Water layers of the OpenFreeMap basemaps (positron and dark name them the same, labels differ). */
+const WATER_FILL_LAYERS = ["water"];
+const WATER_LINE_LAYERS = ["waterway"];
+const WATER_LABEL_LAYERS = [
+  "waterway_line_label",
+  "water_name_point_label",
+  "water_name_line_label",
+  "water_name",
+];
+
+export type PaintOverride = { layerId: string; property: string; value: string };
+
+/** Basemap paint changes that make water blue; layers missing from a style are skipped by the caller. */
+export function waterPaintOverrides(palette: MapPalette): PaintOverride[] {
+  return [
+    ...WATER_FILL_LAYERS.map((layerId) => ({
+      layerId,
+      property: "fill-color",
+      value: palette.water,
+    })),
+    ...WATER_LINE_LAYERS.map((layerId) => ({
+      layerId,
+      property: "line-color",
+      value: palette.water,
+    })),
+    ...WATER_LABEL_LAYERS.map((layerId) => ({
+      layerId,
+      property: "text-color",
+      value: palette.waterLabel,
+    })),
+  ];
+}
 
 /** Fonts available in the OpenFreeMap glyph server. */
 export const LABEL_FONT = ["Noto Sans Regular"];

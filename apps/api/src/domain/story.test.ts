@@ -9,6 +9,7 @@ import {
   pickFacts,
   placeFacts,
   storyCacheKey,
+  WORDS_PER_SEC,
 } from "./story";
 
 const place = {
@@ -24,13 +25,22 @@ const place = {
 
 describe("bandFor", () => {
   it.each([
-    [10, "short"],
-    [30, "short"],
-    [31, "medium"],
-    [75, "medium"],
-    [600, "long"],
+    [10, "20s"],
+    [45, "40s"],
+    [59, "40s"],
+    [119, "100s"],
+    [179, "150s"],
+    [600, "600s"],
   ])("%i s → %s", (sec, band) => {
     expect(bandFor(sec).id).toBe(band);
+  });
+
+  it("fits the window with a breath to spare", () => {
+    for (const sec of [20, 45, 90, 200, 600]) {
+      const band = bandFor(sec);
+      expect(band.words / WORDS_PER_SEC).toBeLessThanOrEqual(Math.max(sec, 20));
+      expect(band.words / WORDS_PER_SEC).toBeGreaterThan(sec * 0.5);
+    }
   });
 });
 
@@ -90,7 +100,7 @@ describe("pickFacts", () => {
   });
 
   it("keeps at least one fact even when the band is tiny", () => {
-    const pick = pickFacts(place, { heard: [], band: { id: "short", upToSec: 5, words: 2 } });
+    const pick = pickFacts(place, { heard: [], band: { id: "5s", sec: 5, words: 2 } });
     expect(pick.facts).toHaveLength(1);
   });
 
@@ -116,7 +126,7 @@ describe("contextFor", () => {
 
 describe("factsStory", () => {
   it("names the place and reads the picked facts", () => {
-    const pick = pickFacts(place, { heard: [], band: { id: "short", upToSec: 30, words: 8 } });
+    const pick = pickFacts(place, { heard: [], band: { id: "30s", sec: 30, words: 8 } });
     const draft = factsStory(place, pick);
     expect(draft.text).toBe("Mijamy: Kercelak. Kercelak był największym bazarem Warszawy.");
     expect(draft.sources).toEqual(place.sources);
