@@ -4,6 +4,7 @@
 
 ## Teraz
 
+- 16:40 (Antek, R3): porządki w `todo.md`. T-30, T-30b, T-08 i T-71 zamknięte, usunięte duplikaty T-05, T-06, T-12 i T-40 (zostają w „Poza MVP”), T-65 i T-72 poprawione na MapLibre. Dalsze kroki mapy jako T-101 (`fitBounds` z kartą), T-102 („za oknem”, do T-36) i T-103 (test na telefonach). Uwaga: numery T-65, T-66 i T-78 występują po dwa razy (R1 i R3).
 - Jasiek (16:30, z agentem, za R1): pojazdy na żywo (T-99, PR #29, dla Pawła issue #30). `POST /v1/vehicles/track` zwraca pojazd użytkownika i po jednym przed i za nim z torem do płynnej animacji; prędkość z tego, jak odcinek przejechał poprzedni pojazd linii (korki). Zbiór miasta „Lokalizacja pojazdów” (T-95). **Dla R3 (Paweł):** ikony i animacja w T-100, instrukcja w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md). **Dla R1:** na Railway `WAW_TOKEN` (T-17), w dniu demo `VEHICLES_ALWAYS_ON=1`.
 - 16:33 (Antek, R3): akceptuję zmiany Pawła w `features/map`. Kolory trasy wg linii (`LINE_COLORS`, `lineIndexes`, przesiadki i dojścia) zostają: logika jest w czystych funkcjach z testami, a dla pasażera linia mówi więcej niż typ pojazdu. Eksporty `usePlace`, `useSelectedPlace`, `PLACE_KIND_LABELS`, `placeKindColor` z `index.ts` też zostają. Uwaga: mamy teraz dwie karty miejsca (`PlaceSheet` w mapie i `place-card` w demo); do ustalenia z Pawłem, czy `PlaceSheet` zostaje tylko na `/mapa`.
 
