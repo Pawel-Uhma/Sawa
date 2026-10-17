@@ -2,8 +2,15 @@ import { z } from "zod";
 import { InterestSchema } from "../interests";
 import { LatLngSchema } from "./common";
 
-export const MIN_DURATION_MIN = 30;
+/** Rides under 30 min may be a walk (`Leg.mode` "walk"); see docs/12-plan-mvp.md §7. */
+export const MIN_DURATION_MIN = 5;
 export const MAX_DURATION_MIN = 240;
+
+/** Onboarding answers (keys as in apps/web `lib/onboarding.ts`). */
+export const FAMILIARITY = ["first_time", "know_a_bit", "local"] as const;
+export type Familiarity = (typeof FAMILIARITY)[number];
+export const STORY_STYLES = ["fun", "deep", "trivia"] as const;
+export type StoryStyle = (typeof STORY_STYLES)[number];
 
 export const PlanRouteRequestSchema = z
   .object({
@@ -14,6 +21,10 @@ export const PlanRouteRequestSchema = z
     returnToStart: z.boolean().default(false),
     /** The ride ends at a stop near this point. Not together with `returnToStart`. */
     destination: LatLngSchema.optional(),
+    /** How well the user knows Warsaw: first-timers get the richest places first. */
+    familiarity: z.enum(FAMILIARITY).optional(),
+    /** How Sawa tells stories: sets the shortest time between two places. */
+    storyStyle: z.enum(STORY_STYLES).optional(),
   })
   .refine((r) => !(r.returnToStart && r.destination), {
     message: "Podaj destination albo returnToStart, nie oba",
@@ -30,8 +41,11 @@ export const StopSchema = z.object({
 export type Stop = z.infer<typeof StopSchema>;
 
 export const LegSchema = z.object({
+  /** Empty for a walk. */
   line: z.string(),
-  mode: z.enum(["tram", "bus"]),
+  /** "walk": on foot, straight segments (to the first stop, from the last one, or a whole walk). */
+  mode: z.enum(["tram", "bus", "walk"]),
+  /** Direction of the line, or where a walk ends. */
   headsign: z.string(),
   fromStop: StopSchema,
   toStop: StopSchema,

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { place } from "./__fixtures__/synthetic";
-import { scorePlace, weightFromRichness } from "./score";
+import { RICHNESS_EXPONENT, scorePlace, weightFromRichness } from "./score";
 
 const interests = new Set(["historical"]);
 
@@ -22,6 +22,16 @@ describe("scorePlace", () => {
     const one = scorePlace(place("a", 0, 0, ["historical"]), 0, both);
     const two = scorePlace(place("b", 0, 0, ["historical", "cultural"]), 0, both);
     expect(two).toBeCloseTo(one * 1.5, 6);
+  });
+
+  it("weighs richness by familiarity: first-timers favour rich places more than locals", () => {
+    const rich = place("r", 0, 0, ["historical"], 6);
+    const modest = place("m", 0, 0, ["historical"], 2);
+    const ratio = (richnessExponent: number) =>
+      scorePlace(rich, 0, interests, { richnessExponent }) /
+      scorePlace(modest, 0, interests, { richnessExponent });
+    expect(ratio(RICHNESS_EXPONENT.first_time)).toBeCloseTo(3 ** 1.5, 6);
+    expect(ratio(RICHNESS_EXPONENT.local)).toBeCloseTo(Math.sqrt(3), 6);
   });
 
   it("halves the value at the edge of visibility", () => {

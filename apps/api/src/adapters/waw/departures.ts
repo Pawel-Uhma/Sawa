@@ -8,7 +8,9 @@ const CACHE_TTL_MS = 60 * 60 * 1000;
 const KeyValueSchema = z.object({ key: z.string(), value: z.string().nullable() });
 // The portal wraps rows either as bare arrays or as { values: [...] }; accept both.
 const RowSchema = z.union([z.array(KeyValueSchema), z.object({ values: z.array(KeyValueSchema) })]);
-const ResponseSchema = z.object({ result: z.array(RowSchema) });
+// Live API (checked with a token 17.10) answers with a bare array of rows; the docs show
+// { result: [...] }. Accept both.
+const ResponseSchema = z.union([z.array(RowSchema), z.object({ result: z.array(RowSchema) })]);
 
 /** "06:46:00" (may exceed 24:00) on the Warsaw calendar day of `reference` → Date. */
 export function warsawTimeToDate(time: string, reference: Date): Date {
@@ -30,7 +32,8 @@ export function warsawTimeToDate(time: string, reference: Date): Date {
 export function parseDepartureTimes(body: unknown): string[] {
   const parsed = ResponseSchema.safeParse(body);
   if (!parsed.success) return [];
-  return parsed.data.result.flatMap((row) => {
+  const rows = Array.isArray(parsed.data) ? parsed.data : parsed.data.result;
+  return rows.flatMap((row) => {
     const values = Array.isArray(row) ? row : row.values;
     const time = values.find((v) => v.key === "czas")?.value;
     return time ? [time] : [];

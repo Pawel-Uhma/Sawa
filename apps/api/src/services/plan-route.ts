@@ -2,15 +2,20 @@ import type { LatLng, PlanRouteRequest, Route } from "@sawa/shared";
 import type { BBox, PlaceSummary } from "../domain/place";
 import { applyDepartures } from "../domain/routing/apply-departures";
 import { DEFAULT_SEARCH_OPTIONS, planRide } from "../domain/routing/beam-search";
-import { buildRoute } from "../domain/routing/build-route";
+import { buildRoute, buildWalkRoute } from "../domain/routing/build-route";
 import { computePlaceHits } from "../domain/routing/place-hits";
+import { RICHNESS_EXPONENT } from "../domain/routing/score";
+import { STORY_GAP_SEC } from "../domain/routing/select-stories";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
+import { planWalk } from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
 import type { DepartureSource, PlacesRepository, TransitData } from "./ports";
 
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
+/** Below this duration a walk may be planned instead of a ride. */
+const WALK_UNDER_MIN = 30;
 const CACHE_SIZE = 20;
 /** Places come from Supabase; refetched this often so new places reach routes without a restart. */
 const PLACES_TTL_MS = 10 * 60_000;
@@ -151,25 +156,30 @@ export function createRoutePlanner(deps: {
           request.durationMin,
         ),
       );
+      const budgetSec = request.durationMin * 60;
+      const interests = new Set(request.interests);
+      const prefs = {
+        richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
+      };
+      const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];
       let ride = planRide({
         network,
         hitsByPattern,
         placesById,
         origin: request.origin,
-        budgetSec: request.durationMin * 60,
-        interests: new Set(request.interests),
+        budgetSec,
+        interests,
+        prefs,
         returnToStart: request.returnToStart,
         destination: request.destination,
       });
-      if (!ride) {
-        throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
-      }
 
-      if (deps.departures) {
+      if (ride && deps.departures) {
         const source = deps.departures;
+        const planned = ride;
         // All legs at once; applyDepartures then picks the right one for each in order.
         const perLeg = await Promise.all(
-          ride.legs.map(async (leg) => {
+          planned.legs.map(async (leg) => {
             const pattern = network.patterns.get(leg.patternId);
             const stop = pattern?.stops[leg.boardIndex];
             if (!pattern || !stop) return undefined;
@@ -177,10 +187,54 @@ export function createRoutePlanner(deps: {
             return times?.map((d) => (d.getTime() - now.getTime()) / 1000);
           }),
         );
-        ride = applyDepartures(ride, perLeg, DEFAULT_SEARCH_OPTIONS.transferSec);
+        ride = applyDepartures(planned, perLeg, DEFAULT_SEARCH_OPTIONS.transferSec);
       }
 
-      return buildRoute({ ride, network, placesById, now, attribution });
+      // Short rides: walking to a stop and waiting can take the whole time, so a walk
+      // past places competes with the ride (a ride counts only if it fits the time).
+      if (request.durationMin < WALK_UNDER_MIN) {
+        const walk = planWalk({
+          places: [...placesById.values()],
+          origin: request.origin,
+          end: request.returnToStart ? request.origin : request.destination,
+          budgetSec,
+          interests,
+          prefs,
+        });
+        const rideFits =
+          !!ride &&
+          ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&
+          ride.endsAtDestination !== false;
+        if (walk && (!ride || !rideFits || walk.score > ride.score)) {
+          return buildWalkRoute({
+            walk,
+            placesById,
+            now,
+            attribution,
+            storyGapSec,
+            origin: request.origin,
+            destination: request.destination,
+          });
+        }
+      }
+      if (!ride) {
+        throw new AppError("NOT_FOUND", "Brak przystanku tramwaju ani autobusu w promieniu 500 m");
+      }
+
+      // Walking legs to the first stop and from the last one to where the user ends.
+      const end = request.returnToStart
+        ? ride.endsAtStart && request.origin
+        : ride.endsAtDestination && request.destination;
+      return buildRoute({
+        ride,
+        network,
+        placesById,
+        now,
+        attribution,
+        storyGapSec,
+        origin: request.origin,
+        end: end || undefined,
+      });
     },
   };
 }

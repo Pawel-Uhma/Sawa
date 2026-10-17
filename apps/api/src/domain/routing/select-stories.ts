@@ -1,7 +1,15 @@
+import type { StoryStyle } from "@sawa/shared";
 import type { CollectedPlace } from "./beam-search";
 
 /** Shortest time Sawa gets for one place; denser places are dropped, not crammed in. */
 export const MIN_STORY_GAP_SEC = 45;
+
+/** The shortest gap per story style: one-line trivia fits often, detailed stories need room. */
+export const STORY_GAP_SEC: Record<StoryStyle, number> = {
+  trivia: 30,
+  fun: MIN_STORY_GAP_SEC,
+  deep: 90,
+};
 
 /**
  * Picks the places Sawa talks about: best score first, each at least `minGapSec` from every

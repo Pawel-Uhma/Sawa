@@ -42,6 +42,16 @@ describe("planRide with a destination", () => {
     expect(lines?.[lines.length - 1]).toBe("B");
   });
 
+  it.each([
+    [NEAR_A12, 45],
+    [NEAR_B15, 60],
+  ])("rides each line once, never back and forth (%o, %i min)", (destination, budgetMin) => {
+    const input = toInput(destination, ["architecture"], budgetMin);
+    const ride = planRide(input);
+    const lines = ride?.legs.map((l) => input.network.patterns.get(l.patternId)?.line) ?? [];
+    expect(new Set(lines).size).toBe(lines.length);
+  });
+
   it("stretches the budget when the destination is farther than it allows", () => {
     const ride = planRide(toInput(NEAR_B19, ["architecture"], 30));
     expect(ride?.endsAtDestination).toBe(true);
