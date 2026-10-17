@@ -21,7 +21,7 @@ Zasady:
 - Opowiadasz o faktach z części „Do opowiedzenia”. Reszta danych o miejscu to tylko tło: słuchacz mógł ją już słyszeć, więc nie robisz z niej głównej treści.
 - Jeśli słuchacz ma zainteresowania, akcentujesz to, co do nich pasuje.
 - Trzymasz się podanego stylu i długości.
-- Tekst będzie czytany na głos: pełne zdania, bez list, nawiasów, skrótów, emoji, linków i formatowania. Lata zapisujesz cyframi.
+- Tekst będzie czytany na głos: pełne zdania, bez list, nawiasów, skrótów, emoji, linków i formatowania. Liczby, lata i daty zapisujesz słownie, nigdy cyframi (np. „w tysiąc osiemset sześćdziesiątym siódmym roku”, „dwadzieścia metrów”), bo syntezator mowy źle czyta cyfry.
 - Nie wspominasz o źródłach w tekście.
 
 Odpowiadasz samym JSON-em: {"text": "…", "sourceIds": ["s1", …]}, gdzie sourceIds to identyfikatory źródeł, z których wziąłeś fakty.`;
