@@ -162,8 +162,6 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
 
   const editProfile = useCallback((step: ProfileStep) => setEditing(step), []);
 
-  const editInterests = useCallback(() => setEditing("interests"), []);
-
   const closeEditing = useCallback(() => setEditing(null), []);
 
   // Zapis z modalu zmienia tylko profil, bez wracania do ekranów wstępu.
@@ -317,7 +315,6 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
             {isHome && !isPlaceOpen && (
               <HomePanel
                 key="home"
-                interests={profile.interests}
                 durationMin={shownDuration}
                 floorMin={floorMin}
                 onDurationChange={setDurationMin}
@@ -326,7 +323,6 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 rideEnd={rideEnd}
                 onRideEndTypeChange={changeRideEndType}
                 onRideEndChange={changeRideEnd}
-                onEditInterests={editInterests}
                 collapsed={panelCollapsed}
                 onCollapsedChange={setPanelCollapsed}
                 onGenerate={generateRoute}
