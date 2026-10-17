@@ -22,6 +22,8 @@ type HomePanelProps = {
   onDurationChange: (durationMin: number) => void;
   onEditInterests: () => void;
   onGenerate: () => void;
+  planning: boolean;
+  planError: string | null;
   collapsed: boolean;
   onCollapsedChange: (collapsed: boolean) => void;
 };
@@ -35,6 +37,8 @@ export function HomePanel({
   onDurationChange,
   onEditInterests,
   onGenerate,
+  planning,
+  planError,
   collapsed,
   onCollapsedChange,
 }: HomePanelProps) {
@@ -119,10 +123,15 @@ export function HomePanel({
         </button>
       </div>
 
-      <PrimaryButton onClick={onGenerate} className="mt-4">
-        Wyznacz trasę
+      <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-4">
+        {planning ? "Układam trasę…" : "Wyznacz trasę"}
         <ArrowRightIcon className="size-5" />
       </PrimaryButton>
+      {planError && (
+        <p role="alert" className="mt-2 text-center text-sm text-zinc-600">
+          {planError}
+        </p>
+      )}
     </FloatingCard>
   );
 }

@@ -2,14 +2,9 @@
 
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { fetchPlacePins, type PlacePin, planRoute, routeLine, routeStops } from "../lib/api-data";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
-import {
-  buildMockRoute,
-  HOME_PINS,
-  type MockStop,
-  ROUTE_LINE,
-  USER_LOCATION,
-} from "../lib/mock-data";
+import { type LngLat, type MockStop, USER_LOCATION } from "../lib/mock-data";
 import { EMPTY_PROFILE, type Profile } from "../lib/onboarding";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
@@ -34,9 +29,40 @@ export function DemoApp() {
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(90);
   const [route, setRoute] = useState<MockStop[]>([]);
+  const [line, setLine] = useState<LngLat[]>([]);
+  const [pins, setPins] = useState<PlacePin[]>([]);
+  const [planning, setPlanning] = useState(false);
+  const [planError, setPlanError] = useState<string | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [sheetCoverPx, setSheetCoverPx] = useState(360);
   const [panelCollapsed, setPanelCollapsed] = useState(false);
+
+  // Miejsca z bazy na mapie ekranu głównego. Bez API mapa zostaje czysta, bez fałszywych pinów.
+  useEffect(() => {
+    let cancelled = false;
+    fetchPlacePins()
+      .then((list) => !cancelled && setPins(list))
+      .catch(() => !cancelled && setPins([]));
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const generateRoute = useCallback(async () => {
+    setPlanning(true);
+    setPlanError(null);
+    try {
+      const planned = await planRoute(durationMin, profile.interests);
+      setRoute(routeStops(planned));
+      setLine(routeLine(planned));
+      setActiveIndex(0);
+      setStage("route");
+    } catch {
+      setPlanError("Nie udało się ułożyć trasy. Spróbuj jeszcze raz.");
+    } finally {
+      setPlanning(false);
+    }
+  }, [durationMin, profile.interests]);
 
   // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
   useEffect(() => {
@@ -97,7 +123,7 @@ export function DemoApp() {
     [isRoute, route, activeIndex],
   );
 
-  const pins = stage === "map" && tab === "map" ? HOME_PINS : [];
+  const showPins = stage === "map" && tab === "map" ? pins : [];
 
   return (
     <MotionConfig reducedMotion="user">
@@ -106,9 +132,9 @@ export function DemoApp() {
           user={USER_LOCATION}
           camera={camera}
           padding={padding}
-          pins={pins}
+          pins={showPins}
           stops={stops}
-          route={isRoute ? ROUTE_LINE : null}
+          route={isRoute ? line : null}
           onStopClick={(id) => {
             const index = route.findIndex((stop) => stop.id === id);
             if (index >= 0) setActiveIndex(index);
@@ -132,11 +158,9 @@ export function DemoApp() {
               onEditInterests={editInterests}
               collapsed={panelCollapsed}
               onCollapsedChange={setPanelCollapsed}
-              onGenerate={() => {
-                setRoute(buildMockRoute(durationMin, profile.interests));
-                setActiveIndex(0);
-                setStage("route");
-              }}
+              onGenerate={generateRoute}
+              planning={planning}
+              planError={planError}
             />
           )}
           {stage === "map" && tab !== "map" && (

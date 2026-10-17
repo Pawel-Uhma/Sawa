@@ -7185,3 +7185,4 @@
 > +**AI:** Transkrypt rozmowy z 14:30 (praca i wizyta mentora) przetworzony na `docs/spotkania/2026-10-17-1430-mentor-i-postep.md`: ustalenia (bez landing page, animacje ładowania, pogoda tylko w planerze, Google Places bez zapytań na żywo, boiska → sport), uwagi mentora i otwarte kwestie. Transkrypt usunięty z dziennika.
 > new file: docs/spotkania/2026-10-17-1430-mentor-i-postep.md
 
+**AI:** Leaderboard commitów i linii ze wszystkich gałęzi (bez merge): Paweł 82, Szczepan 24, Janek 23, Antek 7. Bez plików danych (json/geojson/lock) linie: Paweł +21k, Szczepan +4,4k, Janek +4k, Antek +1,2k. Nic w repo poza tym wpisem.
