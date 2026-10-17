@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Czas A · wartość nad suwakiem</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_czas.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+</head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora"><div class="logo szklo">sawa<i>.</i></div></div>
+  <div class="karta">
+    <div class="naglowek">
+      <img class="awatar" src="../../../pitch/img/ikona-sawa.jpg">
+      <div style="flex:1"><h1>Ile masz czasu?</h1><p>Opowiem, co mijasz</p></div>
+    </div>
+    <div class="wartosc" style="margin:14px 2px 2px">1 h 30 min</div>
+    <div class="suwak" style="--p:56%"><div class="tor"></div><div class="pelny"></div><div class="kciuk"></div></div>
+
+    <div class="podzialki"><span style="left:0">5 min</span><span style="left:48%">1 h</span><span style="left:64%">2 h</span><span style="left:80%">3 h</span><span style="left:100%">4 h</span></div>
+    <div class="podpis">Jak jedziesz</div>
+    <div class="seg"><div class="on" data-ikona="pieszo">Pieszo</div><div data-ikona="tramwaj">Komunikacją</div></div>
+    <div class="podpis">Gdzie kończysz</div>
+    <div class="seg"><div data-ikona="petla">Wracam tu</div><div class="on" data-ikona="cel">Do celu</div></div>
+    <div class="pole" data-ikona="pin">Dokąd jedziesz?</div>
+    <div class="przycisk wyl">Najpierw wybierz cel</div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_wyznacz.js"></script>
+<script>sawaMapa('mapa', { center: nad(JA, 150, 14.2), zoom: 14.2 });</script>
+</body></html>
