@@ -19,7 +19,7 @@ Podkład: **OpenFreeMap**, styl `https://tiles.openfreemap.org/styles/positron` 
 
 - Strona `/mapa` (link „Otwórz mapę” na `/`). Kroki 1–6 i 5a z §10 zrobione.
 - Miejsca z `GET /v1/places` po kafelkach z widoku (od 16:07, niżej §3), karta ze szczegółami z `GET /v1/places/:id`: okres, adres, tagi, pierwsze zdjęcie z podpisem, fakty (3 + rozwiń), źródła. Bez kluczy Supabase API serwuje `fake`.
-- Zainteresowania w `?i=` to kategorie (`historical`, `cultural`, `sports`, `nature`). Miejsca mają tagi, filtr mapuje je przez `interestsOfTags` z `packages/shared`.
+- Zainteresowania z onboardingu to kategorie (`historical`, `cultural`, `sports`, `nature`). Wpływają na wybór trasy przez planer i na to, co Sawa opowiada. Na mapie nie filtrują niczego: zawsze widać wszystkie ikony miejsc.
 - Trasa: `useDemoRoute` w `features/planner` woła `GET /v1/routes/demo` (planer R1). Brak API → mapa bez trasy i komunikat.
 - Sprawdzone zrzutami w headless Chromium (375 px i desktop).
 - Otwarta karta miejsca doliczana jest do paddingu kamery (`paddingWithSheet`: 412 px z lewej od 768 px, niżej pół wysokości z dołu); otwarcie i zamknięcie karty dopasowuje widok od nowa (T-101).
@@ -31,7 +31,6 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 
 | Prop | Typ | Co robi |
 |---|---|---|
-| `interests` | `Interest[]` | kategorie z onboardingu, pusta lista = wszystkie miejsca |
 | `route?` | `Route` | trasa z planera: linie, ponumerowane miejsca, podpis danych |
 | `camera?` | `{type:"center", center, zoom?}` · `{type:"fit", points, maxZoom?}` · `{type:"route"}` | widok; bez propsa mapa dopasowuje się do trasy. Rusza się tylko, gdy żądanie naprawdę się zmieni |
 | `padding?` | `{top,right,bottom,left}` (częściowo) | miejsce zajęte przez panele ekranu, np. `{ bottom: 380 }` pod arkusz |
@@ -101,12 +100,12 @@ apps/web/src/features/map/
     use-selected-place.ts # id wybranego miejsca w URL (?p=kercelak), link da się udostępnić
   lib/
     route-to-geojson.ts   # Route → FeatureCollection<LineString> (odcinki) + <Point> (miejsca z numerem)
-    visible-places.ts     # czysta funkcja: które miejsca pokazać (zainteresowania + MIN_PLACE_RICHNESS)
+    visible-places.ts     # czysta funkcja: które miejsca pokazać (MIN_PLACE_RICHNESS)
     map-style.ts          # stałe: styl podkładu, kolory wg kind/mode, środek i zoom startowy, MIN_PLACE_RICHNESS
   index.ts                # eksportuje SawaMap i typy propsów
 ```
 
-`SawaMap` dostaje trasę i zainteresowania przez propsy (`route?: Route`, `interests: Interest[]`). Planer (`features/planner`) jej nie importuje, a strona w `app/` składa obie funkcje. Dzięki temu `/demo` użyje tej samej mapy ze stałą trasą.
+`SawaMap` dostaje trasę przez propsy (`route?: Route`). Planer (`features/planner`) jej nie importuje, a strona w `app/` składa obie funkcje. Dzięki temu `/demo` użyje tej samej mapy ze stałą trasą.
 
 Mapa ładuje się tylko w przeglądarce: `next/dynamic` z `ssr: false`, bo MapLibre potrzebuje `window` i WebGL. Next 16 w repo ma zmiany względem starszych wersji. Przed kodem przeczytaj właściwy przewodnik w `node_modules/next/dist/docs/` ([apps/web/AGENTS.md](../apps/web/AGENTS.md)).
 
@@ -121,13 +120,13 @@ Mapa ładuje się tylko w przeglądarce: `next/dynamic` z `ssr: false`, bo MapLi
 | `route-places` | `route-places` | koło z numerem 1..n (kolejność `etaSec`), nad zwykłymi miejscami | klik → ta sama karta |
 | pozycja startu | `origin` | pinezka „Ty” albo 42 Warsaw (brak GPS) | — |
 
-**Które miejsca pokazujemy.** Decyduje jedna czysta funkcja `selectVisiblePlaces(places, { interests, minRichness })` w `lib/visible-places.ts`. Wynik idzie jako `data` do źródła `places`, a komponent wywołuje ją w `useMemo`.
+**Które miejsca pokazujemy.** Decyduje jedna czysta funkcja `selectVisiblePlaces(places, { minRichness })` w `lib/visible-places.ts`. Wynik idzie jako `data` do źródła `places`, a komponent wywołuje ją w `useMemo`.
 
-- **Zainteresowania użytkownika:** lista z onboardingu (T-31), trzymana w URL (`?i=war_uprising,architecture`, [11 §4](11-zasady-pracy-i-kodu.md#frontend-appsweb-nextjs)). Strona czyta ją z URL i podaje mapie w propsie `interests`. Mapa pokazuje miejsca, które mają **co najmniej jedno** z wybranych zainteresowań (OR, jak `&&` w `places_in_bbox`). Pusta lista oznacza wszystkie miejsca. Około 82 miejsca bez żadnego zainteresowania znikają, gdy filtr jest aktywny.
+- **Zainteresowania użytkownika:** nie filtrują mapy. Mapa zawsze pokazuje wszystkie miejsca (powyżej progu bogactwa). Zainteresowania z onboardingu (T-31) idą do planera trasy i do opowieści.
 - **Richness (decyzja Antka, 17.10):** pokazujemy wszystkie, także ubogie (`richness < 2`, rekordy `g-*` i `osm-*`). Próg siedzi w stałej `MIN_PLACE_RICHNESS = 0` w `map-style.ts`. Zmiana progu to zmiana jednej liczby, w UI nie ma przełącznika.
 - **Miejsca na trasie** pokazujemy zawsze, niezależnie od filtra, bo wybrał je planer.
 
-Filtrujemy w przeglądarce, nie w API. Mamy już wszystkie 326 punktów, więc zmiana zainteresowań działa od razu, bez nowego zapytania. Filtr warstwy MapLibre (`["in", key, ["get", "interests"]]`) odpuszczamy: tablice we właściwościach GeoJSON MapLibre potrafi zamieniać na tekst (np. w `queryRenderedFeatures`), a czystą funkcję łatwo przetestować. Gdy dane wyjdą poza 1 km, filtr przechodzi do parametru `interests` w `GET /v1/places`.
+Zainteresowań nie filtrujemy ani w przeglądarce, ani w API: mapa pokazuje wszystkie miejsca, a zainteresowania działają tylko w planerze i w opowieści. Dzięki temu nie ma filtra warstwy MapLibre ani parametru `interests` w `GET /v1/places`.
 
 
 Gdy jest trasa: miejsca spoza trasy bledną (`circle-opacity` 0,35), a mapa robi `fitBounds` do trasy z marginesem pod dolny panel. Klastrowanie na razie pomijamy: 326 punktów w 1 km przy zoomie 15 jest czytelne. Wracamy do niego, jeśli test na telefonie pokaże tłok **[Z]**.
@@ -148,7 +147,7 @@ Gdy jest trasa: miejsca spoza trasy bledną (`circle-opacity` 0,35), a mapa robi
 
 - `route-to-geojson.ts`: kolejność `[lng, lat]`, numeracja miejsc wg `etaSec`, pusta trasa. Testy Vitest, obowiązkowe (czysta logika).
 - `map-style.ts`: każdy `kind` z danych ma kolor (test na liście 9 typów).
-- `visible-places.ts`: pusta lista zainteresowań = wszystkie miejsca; jedno pasujące zainteresowanie wystarcza (OR); miejsca bez zainteresowań odpadają przy aktywnym filtrze; próg 0 przepuszcza wszystkie, próg 2 odcina ubogie.
+- `visible-places.ts`: bez zainteresowań, wszystkie miejsca; próg 0 przepuszcza wszystkie, próg 2 odcina ubogie.
 - Wygląd sprawdzamy ręcznie na telefonie (375 px) i w `/demo`, bez testów zrzutów.
 
 ## 10. Kolejność pracy

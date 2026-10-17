@@ -32,7 +32,6 @@ describe("cameraForPreset", () => {
 });
 
 const BASE: SnippetProps = {
-  interests: [],
   hasRoute: false,
   padding: DEFAULT_PADDING,
   isStopClickHandled: false,
@@ -42,13 +41,12 @@ const BASE: SnippetProps = {
 
 describe("buildUsageSnippet", () => {
   it("omits props left at their defaults", () => {
-    expect(buildUsageSnippet(BASE)).toBe("<SawaMap\n  interests={[]}\n/>");
+    expect(buildUsageSnippet(BASE)).toBe("<SawaMap\n/>");
   });
 
   it("writes every changed prop as copyable JSX", () => {
     const snippet = buildUsageSnippet({
       ...BASE,
-      interests: ["historical"],
       hasRoute: true,
       camera: { type: "center", center: HACKATHON_VENUE, zoom: 16 },
       padding: { ...DEFAULT_PADDING, bottom: 380 },
@@ -61,7 +59,6 @@ describe("buildUsageSnippet", () => {
     expect(snippet).toBe(
       [
         "<SawaMap",
-        '  interests={["historical"]}',
         "  route={route}",
         '  camera={{ type: "center", center: { lat: 52.2359, lng: 20.9789 }, zoom: 16 }}',
         "  padding={{ bottom: 380 }}",

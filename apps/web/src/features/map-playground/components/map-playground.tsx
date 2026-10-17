@@ -93,7 +93,6 @@ export function MapPlayground() {
   }
 
   const snippet = buildUsageSnippet({
-    interests: state.interests,
     hasRoute: Boolean(route),
     camera,
     padding: state.padding,
@@ -145,7 +144,7 @@ export function MapPlayground() {
             options={INTERESTS.map((value) => ({ value, label: INTEREST_LABELS[value] }))}
             onChange={(interests) => set({ interests })}
           />
-          <p className="text-xs text-tekst-3">Pusta lista pokazuje wszystkie miejsca.</p>
+          <p className="text-xs text-tekst-3">Wpływa na planowanie trasy, nie na mapę.</p>
         </Section>
 
         <Section title="Trasa" prop="route">
@@ -335,7 +334,6 @@ export function MapPlayground() {
 
       <div className="relative order-1 min-h-0 flex-1 md:order-2">
         <SawaMap
-          interests={state.interests}
           route={route}
           camera={camera}
           padding={state.padding}

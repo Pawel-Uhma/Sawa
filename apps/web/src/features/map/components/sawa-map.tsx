@@ -1,7 +1,7 @@
 "use client";
 
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { Interest, LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
+import type { LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
 import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -46,8 +46,6 @@ const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUST
 const CAMERA_DURATION_MS = 800;
 
 export type SawaMapProps = {
-  /** Categories from onboarding; empty = all places. */
-  interests: readonly Interest[];
   route?: Route;
   /** Requested view; without it the map fits the route (or stays where the user left it). */
   camera?: MapCamera;
@@ -69,7 +67,6 @@ export type SawaMapProps = {
 };
 
 export function SawaMap({
-  interests,
   route,
   camera,
   padding,
@@ -99,8 +96,8 @@ export function SawaMap({
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
-    () => selectVisiblePlaces(places.data, { interests, minRichness: MIN_PLACE_RICHNESS }),
-    [places.data, interests],
+    () => selectVisiblePlaces(places.data, { minRichness: MIN_PLACE_RICHNESS }),
+    [places.data],
   );
 
   const selected = useMemo(
