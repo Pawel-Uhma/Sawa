@@ -37,6 +37,7 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 | [zespol.md](zespol.md) | Osoby, git user.name, role | każdy przy starcie |
 | [role/](role/) | Karty ról R1–R5 | właściciel roli |
 | [06-plan-dnia.md](06-plan-dnia.md) | Harmonogram sobota/niedziela, struktura pitcha, checklista | R5 |
+| [przed-demo.md](przed-demo.md) | Lista rzeczy do zrobienia przed pokazem (zmienne na Railway, cache, graf na niedzielę) | R2 |
 | [spotkania/](spotkania/) | Podsumowania spotkań zespołu | skill `spotkanie` |
 | [ai-log.md](ai-log.md) | Archiwum dziennika AI do 17.10, 13:30 (już nie prowadzimy; opis użycia AI na oddanie: T-53) | nikt |
 
@@ -69,6 +70,7 @@ Hook `.claude/hooks/session-start.sh` robi kroki 3–4 za Ciebie przy starcie se
 | [12-plan-mvp.md](12-plan-mvp.md) | **Plan MVP:** stack, architektura, kontrakt API, model danych, planer, harmonogram z zadaniami ról, założenia, pytania |
 | [13-plan-bazy.md](13-plan-bazy.md) | Plan bazy miejsc: analiza GeoJSON, schemat Supabase, RPC, seed, zainteresowania, licencje zdjęć |
 | [14-plan-mapy.md](14-plan-mapy.md) | Plan mapy (R3): MapLibre, miejsca z bazy przez API, karta miejsca, warstwa trasy z planera, kolejność pracy |
+| [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) | Pojazdy na żywo (T-99): `POST /v1/vehicles/track`, prognoza z poprzednika linii, instrukcja ikon i płynnej animacji dla R3 |
 | [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) | **Zasady:** git i PR, kto jest właścicielem czego, warstwy abstrakcji, nazewnictwo, testy, dobre praktyki, praca z agentami |
 | [05-plan-architektury.md](05-plan-architektury.md) | Pierwszy plan architektury (częściowo nieaktualny, zob. 12), TTL cache |
 | [01-regulamin.md](01-regulamin.md) | Zasady konkursu, punktacja, co oddajemy |
