@@ -35,3 +35,9 @@ Zasady:
 - Z artykułu o ulicy możesz zrobić dodatkowe rekordy dla ważnych budynków i zdarzeń pod konkretnym adresem (współrzędne ulicy, `lokalizacja: przyblizona`, adres w `adres_dzis`).
 - Pomijasz artykuły bez historii miejsca: instytucje, firmy, organizacje, imprezy bez związku z budynkiem.
 - `id`: slug z nazwy, małe litery, myślniki, bez polskich znaków.
+
+## Runda 5: Warszawikia (warszawa.fandom.com)
+
+Paczki `wNN.txt`, wyniki do `docs/historia/dzielnice/surowe/wk/wNN-K.json`. Schemat ten sam, z dwiema różnicami:
+- Jeśli nagłówek `WSPÓŁRZĘDNE` ma liczby, wpisz je w `lat`/`lon`. Jeśli jest „brak”, wpisz `lat: null, lon: null`, a w `adres_dzis` podaj **dzisiejszy adres w formie „Ulica numer”** (np. „Krakowskie Przedmieście 11”), dokładnie tak, jak wynika z tekstu. Bez adresu i bez współrzędnych rekordu nie zapisuj.
+- `zrodla`: `{"tytul": "Warszawikia: <tytuł>", "url": <URL z nagłówka>}`.
