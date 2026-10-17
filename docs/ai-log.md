@@ -3098,3 +3098,13 @@
 > +
 > +**AI:** Odpowiedziałem na pytanie o `git pull` na starcie sesji. Nic nie zmieniałem w repo. Instrukcja jest tylko w `CLAUDE.md` (sekcja Git), ale hook `session-start.sh` jej nie wykonuje.
 
+
+### 2026-10-17 12:54 · Pawel
+
+> nie robilem nigdy nic z AI audio - przeprowadz mnie poprzez rozwiazania dostepne - ma miec plynny jezyk polski, nie musi miec customowego glosu, moze byc lokalnie lub po api , podaj koszty po api
+
+
+### 2026-10-17 12:54 · Pawel
+
+> git pull wszystko rozwiaz konflikty
+

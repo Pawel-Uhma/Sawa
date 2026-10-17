@@ -1,6 +1,6 @@
 # Badania o Warszawie: trendy na 50 lat
 
-Przegląd badań z lat 2020–2026, zrobiony 14.10.2026. Cel: sprawdzić, które problemy z [07-brainstorm-problemy.md](07-brainstorm-problemy.md) mają potwierdzenie w danych i w jakim kierunku idą.
+Przegląd badań z lat 2020–2026, zrobiony 17.10.2026. Cel: sprawdzić, które problemy z [07-brainstorm-problemy.md](07-brainstorm-problemy.md) mają potwierdzenie w danych i w jakim kierunku idą.
 
 ## Najmocniejsze trendy
 

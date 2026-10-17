@@ -35,7 +35,7 @@ Zasady:
 - Zdjęcia tylko jako linki do stron plików (Commons, NAC/szukajwarchiwach, Polona, fotopolska.eu) z licencją, bez pobierania.
 - Plik musi być poprawnym JSON (sprawdź `python3 -m json.tool plik.json`).
 
-## Runda 2 (16.10): głębiej, adres po adresie
+## Runda 2 (17.10): głębiej, adres po adresie
 
 - Cel: **20–40 rekordów na agenta**. Każdy adres, budynek, dawny budynek, fabryka, kino, szkoła, zdarzenie albo anegdota to osobny rekord.
 - Najpierw przeczytaj, co już jest: `docs/historia/sawa-historia.geojson` (pole `properties.id` i `nazwa`). Nie powtarzaj tego. Jeśli masz nowe fakty o istniejącym miejscu, dodaj rekord z **tym samym `id`** (scalimy).

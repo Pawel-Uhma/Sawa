@@ -1,6 +1,6 @@
 # Brainstorm: problemy Warszawy za 50 lat
 
-Spotkanie zespołu w środę 14.10.2026. Podsumowanie z fragmentu transkryptu.
+Spotkanie zespołu 17.10.2026. Podsumowanie z fragmentu transkryptu.
 
 **Zadanie (wyzwanie 1):** zaprojektować rozwiązanie dzisiejszego problemu miejskiego, które jest jednocześnie krokiem w stronę Warszawy, w jakiej chcemy żyć za 50 lat.
 

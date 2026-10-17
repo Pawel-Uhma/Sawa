@@ -1,6 +1,6 @@
 # Dane: katalog dane.um.warszawa.pl
 
-Stan na 2026-09-26. Portal ma **19 zbiorów**. Pełne przykłady wywołań i odpowiedzi są w [api/](api/), jeden plik na zbiór.
+Stan na 2026-10-17. Portal ma **19 zbiorów**. Pełne przykłady wywołań i odpowiedzi są w [api/](api/), jeden plik na zbiór.
 
 ## Jak wołać API
 
