@@ -11,6 +11,7 @@ import {
   type MapRef,
   NavigationControl,
 } from "react-map-gl/maplibre";
+import { LoadingCover, StatusPill, useDelayed } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { useTheme } from "@/features/theme";
 import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
@@ -95,6 +96,8 @@ export function SawaMap({
   const [view, setView] = useState<MapView | null>(null);
   const bboxes = useMemo(() => (view ? placeBBoxesInView(view.bounds, view.zoom) : []), [view]);
   const places = usePlaces(bboxes);
+  // Miejsca dociągają się kafelkami przy każdym przesunięciu; pigułka tylko, gdy trwa to dłużej
+  const isFindingPlaces = useDelayed(isLoaded && places.isPending, 700);
   const vehicles = useLiveVehicles(route);
   const attribution = useMemo(
     () => [...(route?.attribution ?? []), ...(vehicles.data?.attribution ?? [])],
@@ -222,14 +225,30 @@ export function SawaMap({
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
-      {places.isError && (
-        <p className="absolute inset-x-4 top-4 z-10 rounded-lg bg-powierzchnia px-3 py-2 text-sm text-koral shadow">
-          {t("Nie udało się pobrać miejsc.", "Couldn't load the places.")}{" "}
-          <button type="button" className="font-medium underline" onClick={() => places.refetch()}>
-            {t("Spróbuj ponownie", "Try again")}
-          </button>
-        </p>
-      )}
+      <LoadingCover show={!isLoaded} label={t("Wczytuję mapę Warszawy…", "Loading the map of Warsaw…")} />
+      {/* Stan miejsc w pigułce u góry, pośrodku: nie zasłania logo ani paneli */}
+      <div className="pointer-events-none absolute inset-x-0 top-[max(1.25rem,env(safe-area-inset-top))] z-10 flex justify-center md:top-6">
+        <StatusPill
+          icon={places.isError ? <span className="size-2 shrink-0 rounded-full bg-koral" /> : undefined}
+          action={
+            places.isError && (
+              <button
+                type="button"
+                className="-mr-1 shrink-0 rounded-full px-1.5 font-bold text-glebia underline-offset-2 hover:underline"
+                onClick={() => places.refetch()}
+              >
+                {t("Ponów", "Retry")}
+              </button>
+            )
+          }
+        >
+          {places.isError
+            ? t("Nie udało się pobrać miejsc", "Couldn't load the places")
+            : isFindingPlaces
+              ? t("Szukam miejsc w okolicy…", "Finding places nearby…")
+              : null}
+        </StatusPill>
+      </div>
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );
