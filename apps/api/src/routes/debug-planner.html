@@ -59,18 +59,14 @@
 </div>
 <script>
 /*__CONFIG__*/
-const LABELS = {
-  war_uprising: "wojna i Powstanie", architecture: "architektura", industry: "przemysł",
-  religion: "religia", jewish_warsaw: "żydowska Warszawa", everyday_life: "codzienność",
-  street_art: "street art", people: "ludzie",
-};
+const LABELS = { historical: "historia", cultural: "kultura", sports: "sport", nature: "przyroda" };
 const COLORS = ["#d7263d", "#1b6ca8", "#2a9d5c"];
 const $ = (id) => document.getElementById(id);
 let origin = { ...window.SAWA.venue };
 
 window.SAWA.interests.forEach((key, i) => {
   const label = document.createElement("label");
-  label.innerHTML = `<input type="checkbox" value="${key}" ${i < 3 ? "checked" : ""}> ${LABELS[key] ?? key}`;
+  label.innerHTML = `<input type="checkbox" value="${key}" ${i < 2 ? "checked" : ""}> ${LABELS[key] ?? key}`;
   $("interests").append(label);
 });
 $("minutes").oninput = (e) => { $("minutesLabel").textContent = e.target.value; };

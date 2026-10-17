@@ -3,11 +3,11 @@ import { Hono } from "hono";
 import { jsonBody } from "../lib/validate";
 import type { RoutePlanner } from "../services/plan-route";
 
-/** The ride shown on /demo: from 42 Warsaw, one hour, the strongest topics of the area. */
+/** The ride shown on /demo: from 42 Warsaw, one hour, what the area has data for. */
 export const DEMO_REQUEST: PlanRouteRequest = {
   origin: HACKATHON_VENUE,
   durationMin: 60,
-  interests: ["war_uprising", "everyday_life", "people"],
+  interests: ["historical", "cultural"],
 };
 
 export function createRouteRoutes(planner: RoutePlanner, clock: () => Date = () => new Date()) {
