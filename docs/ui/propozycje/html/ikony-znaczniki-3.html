@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Znaczniki miejsc 2</title>
+<title>Znaczniki miejsc 3</title>
 <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
 <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
 <link href="_wspolne.css" rel="stylesheet">
@@ -63,32 +63,41 @@ const cien = `<defs><filter id="c" x="-30%" y="-30%" width="160%" height="170%">
 // Wszystkie ok. 30–40 px na ekranie (poprzednio 17–26)
 const ROSNIE = ['interpolate', ['linear'], ['zoom'], 14, ['interpolate', ['linear'], ['get', 'b'], 1, .78, 40, .9], 17, ['interpolate', ['linear'], ['get', 'b'], 1, 1, 40, 1.12]];
 
+// Kolorowy glif z białą obwódką: obrys rysowany pod wypełnieniem (paint-order)
+const glifObwiedziony = (g, kolor, x, y, s, obrys) =>
+  `<g transform="translate(${x} ${y}) scale(${s})"><path d="${g}" fill="${kolor}" fill-rule="evenodd" stroke="#fff" stroke-width="${obrys / s}" stroke-linejoin="round" paint-order="stroke"/></g>`;
+// Jasny odcień koloru grupy na tło
+const odcien = (hex, a) => {
+  const n = parseInt(hex.slice(1), 16), m = c => Math.round(255 - (255 - c) * a);
+  return `rgb(${m(n >> 16)},${m((n >> 8) & 255)},${m(n & 255)})`;
+};
+
 const WARIANTY = [
   {
-    id: 'f', tytul: 'Duży medal',
-    opis: 'Kółko 36 px w kolorze grupy, gruba biała obwódka, cień i pełny biały glif. Pięć kształtów: kamienica, obelisk, kropla farby, krzyż, gwiazda.',
+    id: 'i', tytul: 'Naklejka',
+    opis: 'Sam kolorowy glif bez tła, z białą obwódką i cieniem, jak naklejka na mapie. Najlżejszy, kształt mówi wszystko.',
     kotwica: 'center',
     svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">${cien}
-      <circle cx="20" cy="19" r="16" fill="${r.kolor}" stroke="#fff" stroke-width="3" filter="url(#c)"/>
-      ${glif(r.g, '#fff', 10.4, 9.4, .8)}</svg>`,
+      <g filter="url(#c)">${glifObwiedziony(r.g, r.kolor, 6.5, 5.5, 1.12, 3.2)}</g></svg>`,
     wielkosc: ROSNIE,
   },
   {
-    id: 'g', tytul: 'Balon',
-    opis: 'Duża pinezka-balon z pełnym glifem, czubek wbity w miejsce. Najbardziej „klikalna” i widoczna, ale przy gęstych miejscach chowa więcej sąsiadów.',
-    kotwica: 'bottom',
-    svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="48" viewBox="0 0 40 48">${cien}
-      <path d="M20 45c-1.6-4.4-5.2-7.8-9-11.3a15.5 15.5 0 1 1 18 0c-3.8 3.5-7.4 6.9-9 11.3Z" fill="${r.kolor}" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" filter="url(#c)"/>
-      ${glif(r.g, '#fff', 11.2, 9.4, .74)}</svg>`,
+    id: 'j', tytul: 'Biała moneta',
+    opis: 'Białe kółko z cieniem, w środku kolorowy glif z jasną obwódką i cienki pierścień w kolorze grupy. Odwrócenie medalu F.',
+    kotwica: 'center',
+    svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">${cien}
+      <circle cx="20" cy="19" r="16" fill="#fff" filter="url(#c)"/>
+      <circle cx="20" cy="19" r="14.2" fill="none" stroke="${r.kolor}" stroke-width="1.6" stroke-opacity=".55"/>
+      ${glifObwiedziony(r.g, r.kolor, 9.2, 8.2, .9, 1.4)}</svg>`,
     wielkosc: ROSNIE,
   },
   {
-    id: 'h', tytul: 'Kafelek',
-    opis: 'Zaokrąglony kwadrat w kolorze grupy, jak ikona aplikacji, z białym glifem. Kwadrat odróżnia miejsca od okrągłej kropki „Ty” i przystanków.',
+    id: 'k', tytul: 'Pastelowa kropla',
+    opis: 'Miękkie kółko w jasnym odcieniu koloru grupy z białą krawędzią, glif w pełnym kolorze z białą obwódką. Pasuje do miętowej palety Sawy.',
     kotwica: 'center',
     svg: r => `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">${cien}
-      <rect x="4.5" y="3.5" width="31" height="31" rx="9.5" fill="${r.kolor}" stroke="#fff" stroke-width="3" filter="url(#c)"/>
-      ${glif(r.g, '#fff', 10.4, 9.4, .8)}</svg>`,
+      <circle cx="20" cy="19" r="16" fill="${odcien(r.kolor, .22)}" stroke="#fff" stroke-width="2.6" filter="url(#c)"/>
+      ${glifObwiedziony(r.g, r.kolor, 9.2, 8.2, .9, 1.8)}</svg>`,
     wielkosc: ROSNIE,
   },
 ];
