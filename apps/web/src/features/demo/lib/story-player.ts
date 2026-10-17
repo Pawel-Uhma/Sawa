@@ -227,6 +227,21 @@ export function useStoryPlayer(
     setIsPlaying(!isPlaying);
   }, [isPlaying, progress, clip]);
 
+  /** Bieżąca opowieść od początku; `keepPlaying: false` to „stop” (pauza na początku). */
+  const restart = useCallback(
+    (keepPlaying: boolean) => {
+      const audio = audioRef.current;
+      setProgress(0);
+      if (audio && clip?.audioUrl) {
+        audio.currentTime = 0;
+        // W geście stuknięcia, żeby Safari pozwolił na dźwięk.
+        if (keepPlaying) audio.play().catch(() => setIsPlaying(false));
+      }
+      setIsPlaying(keepPlaying);
+    },
+    [clip],
+  );
+
   return {
     text: clip?.text ?? null,
     loading: !clip && !failed,
@@ -237,6 +252,7 @@ export function useStoryPlayer(
     /** Zeruje postęp w tym samym renderze co zmiana punktu, żeby koniec opowieści nie przeskoczył dwóch. */
     rewind: useCallback(() => setProgress(0), []),
     toggle,
+    restart,
     more,
   };
 }

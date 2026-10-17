@@ -65,15 +65,22 @@ export function useRideClock(stops: readonly MockStop[]) {
     return () => clearInterval(id);
   }, [stops]);
 
+  /** Moves the ride to `sec` (the slider in the podcast controls). */
+  const seekTo = useCallback(
+    (sec: number) => {
+      const at = Math.max(0, Math.round(sec));
+      startedAt.current = Date.now() - at * 1000;
+      setTick({ stops, sec: at });
+    },
+    [stops],
+  );
+
   const syncTo = useCallback(
     (index: number) => {
       const stop = stops[index];
-      if (!stop) return;
-      const sec = storyStartSec(stop);
-      startedAt.current = Date.now() - sec * 1000;
-      setTick({ stops, sec });
+      if (stop) seekTo(storyStartSec(stop));
     },
-    [stops],
+    [stops, seekTo],
   );
 
   const due = dueIndex(stops, rideSec);
@@ -86,6 +93,7 @@ export function useRideClock(stops: readonly MockStop[]) {
     /** Seconds until the next story should start; null after the last place. */
     nextInSec: next ? Math.max(0, storyStartSec(next) - rideSec) : null,
     syncTo,
+    seekTo,
   };
 }
 

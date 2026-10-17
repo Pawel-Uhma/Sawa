@@ -2,20 +2,20 @@
 
 import type { Leg } from "@sawa/shared";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { type Ref, useEffect, useRef, useState } from "react";
+import { type ReactNode, type Ref, useEffect, useRef, useState } from "react";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
 import { Attribution, Departures } from "./departures";
-import { ChevronLeftIcon, PauseIcon, PinIcon, PlayIcon } from "./icons";
+import { ChevronLeftIcon, PinIcon } from "./icons";
 import { Journey } from "./line-badge";
 import { SawaMenuButton } from "./sawa-menu";
 
 /*
  * Ekran trasy na żywo (wybrany wariant A, propozycje w docs/ui/README.md).
- * O tym, o czym Sawa mówi, decyduje lokalizacja (T-106), a nie użytkownik. Sawa opowiada jednym
- * ciągłym strumieniem i sama przechodzi od tematu do tematu, więc nie ma przycisków
- * „poprzednia/następna”. Jest pauza, a skok do przodu („Opowiedz teraz”) to wyjątek.
+ * Sawa sama przechodzi od tematu do tematu z zegarem jazdy, ale słuchacz może ją prowadzić:
+ * sterowanie (stop, wstecz, odtwarzanie, dalej, suwak przejażdżki) jest na górze arkusza,
+ * więc zwinięty arkusz pokazuje tylko je, a rozwinięty także zapis tego, co Sawa mówi.
  */
 
 /** Fragment strumienia Sawy przypisany do punktu trasy (temat, o którym wtedy mówiła). */
@@ -35,40 +35,15 @@ export type RouteLiveProps = {
   isPlaying: boolean;
   /** Ile bieżącego tematu już padło (0–100). */
   progress: number;
-  /** Za ile sekund następny temat według zegara jazdy. */
-  nextInSec: number | null;
   /** Za ile sekund pierwsze miejsce; do tego czasu Sawa milczy. Null, gdy już może mówić. */
   waitSec: number | null;
   storyText: string | null;
   storyState: "loading" | "ready" | "failed";
   /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
   transcript: TranscriptPart[];
-  togglePlay: () => void;
+  /** Sterowanie opowieścią (`PodcastControls`), na samej górze arkusza. */
+  controls: ReactNode;
 };
-
-/** „za chwilę” albo „za ok. N min”. */
-function inLabel(sec: number | null): string {
-  return sec === null || sec < 60 ? "za chwilę" : `za ok. ${Math.round(sec / 60)} min`;
-}
-
-/**
- * Za ile następny temat. Dziś z zegara jazdy, docelowo z odległości do punktu.
- * Przed pierwszym miejscem „następny” to ono samo.
- */
-function untilNext(
-  stops: MockStop[],
-  activeIndex: number,
-  nextInSec: number | null,
-  waitSec: number | null,
-) {
-  if (waitSec !== null) {
-    const first = stops[activeIndex];
-    return first ? { stop: first, label: inLabel(waitSec), first: true } : null;
-  }
-  const next = stops[activeIndex + 1];
-  if (!next) return null;
-  return { stop: next, label: inLabel(nextInSec), first: false };
-}
 
 /* ------------------------------------------------------------------ */
 /* Wspólne klocki                                                      */
@@ -124,46 +99,6 @@ function LiveDot({ on }: { on: boolean }) {
   );
 }
 
-function PlayButton({
-  isPlaying,
-  onToggle,
-  size = "md",
-}: {
-  isPlaying: boolean;
-  onToggle: () => void;
-  size?: "lg" | "md";
-}) {
-  const big = size === "lg";
-  return (
-    <motion.button
-      type="button"
-      onClick={onToggle}
-      aria-label={isPlaying ? "Wstrzymaj Sawę" : "Wznów Sawę"}
-      whileTap={{ scale: 0.92 }}
-      transition={SPRING}
-      className={`flex shrink-0 items-center justify-center rounded-full bg-glebia text-white transition-colors hover:bg-glebia-ciemna ${
-        big ? "size-14 shadow-[0_6px_16px_rgba(23,112,111,0.3)]" : "size-11"
-      }`}
-    >
-      <AnimatePresence mode="popLayout" initial={false}>
-        <motion.span
-          key={isPlaying ? "pause" : "play"}
-          initial={{ scale: 0.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          exit={{ scale: 0.5, opacity: 0 }}
-          transition={{ type: "spring", bounce: 0, duration: 0.25 }}
-        >
-          {isPlaying ? (
-            <PauseIcon className={big ? "size-6" : "size-5"} />
-          ) : (
-            <PlayIcon className={`${big ? "size-6" : "size-5"} translate-x-[1px]`} />
-          )}
-        </motion.span>
-      </AnimatePresence>
-    </motion.button>
-  );
-}
-
 /**
  * Tekst na żywo: wypowiedziane słowa pełnym kolorem, reszta jaśniej (jak napisy karaoke).
  * Przy strumieniu tekst rośnie, a granica idzie za głosem.
@@ -215,52 +150,6 @@ function LiveText({
   );
 }
 
-/** Pasek „do następnego tematu”: napełnia się z bieżącą częścią opowieści. */
-function NextUp({
-  stops,
-  activeIndex,
-  progress,
-  nextInSec,
-  waitSec,
-  end,
-}: {
-  stops: MockStop[];
-  activeIndex: number;
-  progress: number;
-  nextInSec: number | null;
-  waitSec: number | null;
-  end: RouteLiveProps["end"];
-}) {
-  const next = untilNext(stops, activeIndex, nextInSec, waitSec);
-  if (!next) {
-    return (
-      <div className="flex flex-col items-start gap-2">
-        <p className="text-sm text-tekst-2">To ostatni temat tej przejażdżki.</p>
-        <EndPill end={end} />
-      </div>
-    );
-  }
-  return (
-    <div className="min-w-0 flex-1">
-      <p className="truncate text-sm text-tekst-2">
-        {next.first ? "Najpierw" : "Dalej"}{" "}
-        <span className="font-bold text-tekst">{next.stop.name}</span>
-      </p>
-      <div className="mt-1.5 flex items-center gap-2">
-        <div className="h-1 flex-1 overflow-hidden rounded-full bg-tekst/10">
-          <div
-            className="h-full origin-left rounded-full bg-glebia"
-            style={{ transform: `scaleX(${progress / 100})` }}
-          />
-        </div>
-        <span className="shrink-0 text-xs font-semibold tabular-nums text-tekst-3">
-          {next.label}
-        </span>
-      </div>
-    </div>
-  );
-}
-
 /* ------------------------------------------------------------------ */
 /* Ekran: jeden ciągły zapis tego, co mówi Sawa, jak napisy w radiu   */
 /* ------------------------------------------------------------------ */
@@ -276,12 +165,11 @@ export function RouteLive({
   isDesktop,
   isPlaying,
   progress,
-  nextInSec,
   waitSec,
   storyText,
   storyState,
   transcript,
-  togglePlay,
+  controls,
 }: RouteLiveProps) {
   const waiting = waitSec !== null;
   const reduce = useReducedMotion();
@@ -316,6 +204,7 @@ export function RouteLive({
   return (
     <div className="flex flex-col gap-4">
       {isDesktop && <SawaMenuButton variant="inline" />}
+      {controls}
       <header className="flex items-center gap-3">
         <BackButton onBack={onBack} compact />
         <div className="min-w-0 flex-1">
@@ -336,33 +225,12 @@ export function RouteLive({
 
       <Departures legs={legs} />
 
-      {stop && (
-        <div className="flex items-center gap-2">
-          <span className="etykieta">{waiting ? "Najpierw" : "Teraz"}</span>
-          <AnimatePresence mode="popLayout" initial={false}>
-            <motion.span
-              key={stop.id}
-              initial={reduce ? { opacity: 0 } : { opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={reduce ? { opacity: 0 } : { opacity: 0, y: -8 }}
-              transition={SPRING}
-              className="inline-flex min-w-0 items-center gap-1.5 rounded-full bg-mieta-jasna py-1 pl-1 pr-3 text-sm font-bold text-glebia-ciemna"
-            >
-              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-glebia text-xs font-extrabold text-white">
-                {activeIndex + 1}
-              </span>
-              <span className="truncate">{stop.name}</span>
-            </motion.span>
-          </AnimatePresence>
-        </div>
-      )}
-
       <div className="relative">
         <div
           ref={scrollRef}
           onTouchMove={stopFollowing}
           onWheel={stopFollowing}
-          className="h-[max(140px,calc(var(--trasa-widoczne,60dvh)-250px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
+          className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-430px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
         >
           <div className="pb-[40%] pt-6">
             {past.map((part) => (
@@ -416,17 +284,7 @@ export function RouteLive({
         </AnimatePresence>
       </div>
 
-      <div className="flex items-center gap-4">
-        <PlayButton isPlaying={isPlaying} onToggle={togglePlay} size="lg" />
-        <NextUp
-          stops={stops}
-          activeIndex={activeIndex}
-          progress={progress}
-          nextInSec={nextInSec}
-          waitSec={waitSec}
-          end={end}
-        />
-      </div>
+      {activeIndex === stops.length - 1 && <EndPill end={end} />}
 
       <Attribution lines={attribution} />
     </div>
