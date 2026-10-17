@@ -15,7 +15,7 @@ import { useDestinationSearch } from "../lib/destination-search";
 import { haptic, SPRING } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
 import { DURATION_STOPS_MIN } from "../lib/mock-data";
-import { DESTINATION_PRESETS, type RideEnd, type RideEndType } from "../lib/ride-end";
+import type { RideEnd, RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
 import { ArrowRightIcon, ForwardIcon, LoopIcon, PinIcon, TramIcon, WalkIcon } from "./icons";
 import { PrimaryButton } from "./primary-button";
@@ -292,11 +292,9 @@ type RideEndPickerProps = {
   onChange: (end: RideEnd) => void;
 };
 
-/** Koniec trasy: kafelki, a przy „Do celu” cele do stuknięcia i podpowiedź o mapie. */
+/** Koniec trasy: kafelki, a przy „Do celu” pole wyszukiwania i podpowiedź o mapie. */
 function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) {
   const destination = rideEnd.type === "destination" ? rideEnd : null;
-  const isCustom =
-    destination !== null && !DESTINATION_PRESETS.some((preset) => preset.name === destination.name);
 
   return (
     <div className="mt-2">
@@ -319,33 +317,12 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
             className="overflow-hidden"
           >
             <DestinationSearch onPick={onChange} />
-            <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pt-2.5 [scrollbar-width:none] md:-mx-6 md:px-6">
-              {isCustom && (
-                <span className="flex h-8 max-w-[220px] shrink-0 items-center rounded-full bg-glebia px-3 text-[13px] font-semibold text-white">
-                  <span className="truncate">{destination.name}</span>
-                </span>
-              )}
-              {DESTINATION_PRESETS.map((preset) => {
-                const isActive = preset.name === destination.name;
-                return (
-                  <button
-                    key={preset.id}
-                    type="button"
-                    aria-pressed={isActive}
-                    onClick={() => {
-                      if (isActive) return;
-                      haptic(4);
-                      onChange({ type: "destination", name: preset.name, point: preset.point });
-                    }}
-                    className={`h-8 shrink-0 rounded-full px-3 text-[13px] font-semibold transition-[transform,background-color,color] active:scale-[0.96] ${
-                      isActive ? "bg-glebia text-white" : "bg-mieta-jasna text-glebia"
-                    }`}
-                  >
-                    {preset.name}
-                  </button>
-                );
-              })}
-            </div>
+            <p className="mt-2 flex min-w-0 items-center gap-1.5 text-[13px] text-tekst-2">
+              <PinIcon className="size-4 shrink-0 text-glebia" />
+              <span className="truncate">
+                Cel: <span className="font-semibold text-tekst">{destination.name}</span>
+              </span>
+            </p>
             <p className="mt-1.5 text-xs text-tekst-3">Albo stuknij w mapę, żeby wybrać punkt.</p>
           </motion.div>
         )}
@@ -402,7 +379,7 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
                   {isSearching
                     ? "Szukam…"
                     : isError
-                      ? "Nie udało się wyszukać. Wybierz cel niżej albo na mapie."
+                      ? "Nie udało się wyszukać. Wybierz cel na mapie."
                       : "Nie znalazłam takiego miejsca w Warszawie."}
                 </li>
               )}
