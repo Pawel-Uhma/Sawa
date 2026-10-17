@@ -112,6 +112,7 @@
 - [x] **T-154** Mapa: ulica zostaje ikoną, ale po kliknięciu (na desktopie też po najechaniu) podświetla się cała jej linia z kafelków OpenFreeMap (`transportation_name`, filtr po nazwie); propozycje w `ui/propozycje/html/ulice-jako-linie.html` — `R3` (Paweł z agentem, 21:20)
 - [x] **T-155** Mapa: jeden ruch kamery przy pierwszym kliknięciu miejsca ([#117](https://github.com/Pawel-Uhma/Sawa/issues/117)). Zanim dojdzie pozycja miejsca, kamera stoi (`{ type: "stay" }`), zamiast wracać na start; logika w `demo/lib/screen-camera.ts` z testami — `R3` (Paweł) — (Paweł z agentem, 22:13, gałąź `r3/camera-one-move`)
 - [x] **T-156** Spacer w pętli wraca po okręgu, nie tą samą ani równoległą ulicą ([#131](https://github.com/Pawel-Uhma/Sawa/issues/131)): beam search w `walk-tour.ts` dla pętli (koniec ≤ 50 m od startu) dolicza `loopRoundnessBonus` (2) × `roundness` (4π·pole/obwód², 1 dla koła, 0 dla tam i z powrotem); `pickWalkOnPaths` to samo na ścieżce OSRM. Spacery do celu bez zmian — `R1` → `R3` (zlecił Szczepan, zgoda na pliki R1) — (Paweł z agentem, 22:45, gałąź `r3/loop-walk`)
+- [x] **T-157** Opowieść jak przewodnik: najpierw gdzie patrzeć i co widać („Po lewej stronie widzimy…”), nazwa miejsca na głos (słuchacz nie patrzy w telefon), jedna historia z otwartym pytaniem; bez firm, pracowni, wykonawców i inwestorów. Pole `side` w `StoryRequest`, web liczy stronę z geometrii odcinka (`demo/lib/side.ts`) — `R3` + `R4` (prompt R4, na prośbę Pawła) — (Paweł z agentem, 22:40, gałąź `r3/prompt-przewodnik`)
 
 ## R4 · AI i głos
 

@@ -16,6 +16,7 @@ import { getMemory, heardCounts } from "./memory";
 import type { LngLat, MockStop } from "./mock-data";
 import type { Profile } from "./onboarding";
 import { type RideEnd, rideEndRequest } from "./ride-end";
+import { sideOfPath } from "./side";
 
 /**
  * Onboarding picks broad categories (`historical`, …); older detailed tags (e.g. `jewish_warsaw`)
@@ -108,5 +109,9 @@ export function routeStops(route: Route): MockStop[] {
     etaMin: Math.round(place.etaSec / 60),
     etaSec: place.etaSec,
     windowSec: place.windowSec,
+    side: sideOfPath(route.legs[place.legIndex]?.lngLats ?? [], [
+      place.position.lng,
+      place.position.lat,
+    ]),
   }));
 }

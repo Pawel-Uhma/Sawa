@@ -2,7 +2,7 @@ import type { PlaceKind } from "@sawa/shared";
 import type { Place } from "../domain/place";
 
 /** How the search names each kind, so a mural called "David Bowie" is not the singer's biography. */
-const KIND_PL: Record<PlaceKind, string> = {
+export const KIND_PL: Record<PlaceKind, string> = {
   building: "budynek",
   monument: "pomnik",
   plaque: "tablica pamiątkowa",
@@ -31,7 +31,10 @@ Pomijasz:
 - suche dane: wymiary, powierzchnię, numery uchwał, daty remontów i modernizacji, nagrody, godziny otwarcia, ceny, dane kontaktowe;
 - oczywistości i opisy, które pasują do wielu miejsc: że park jest zielony i ma alejki, że boisko służy do gry, że kościół jest parafią, że budynek jest mieszkalny, że miejsce jest popularne, lubiane, chętnie odwiedzane albo dobrze skomunikowane;
 - to, co wynika z samej nazwy albo rodzaju miejsca, i ogólnikowe zdania z folderów („ważne miejsce na mapie Warszawy”, „świadek historii”, „tętni życiem”);
+- nazwy firm, pracowni architektonicznych, biur projektowych, wykonawców, inwestorów i deweloperów (projektanta bierzesz tylko wtedy, gdy jest sławny i wiąże się z nim historia);
 - inne miejsca o tej samej nazwie i ogólne biografie bez związku z Warszawą.
+
+Słuchacz patrzy przez okno, więc weź też jedną pozycję o tym, jak miejsce wygląda z ulicy i kiedy powstało (rok budowy, wysokość albo liczba pięter, kolor, charakterystyczny detal), jeśli strona to podaje. Ta jedna pozycja nie musi przejść testu „serio?”.
 
 Każda pozycja to jedno do trzech zdań po polsku, konkretnie: kto, co, kiedy i dlaczego to ciekawe. Piszesz tylko to, co stoi na stronie, z której ją bierzesz. Jeśli strona mówi „podobno”, „według legendy” albo że fani się spierają, zachowujesz tę ostrożność. Najciekawsze dajesz pierwsze, najwyżej 6 pozycji. Jeśli nic ciekawego nie ma, zwracasz pustą listę.
 

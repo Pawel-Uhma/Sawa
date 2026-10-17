@@ -37,6 +37,18 @@ describe("createStoryService", () => {
     expect(user).toContain("historia");
   });
 
+  it("tells Sawa which side to look at, and not to guess when the client does not know", async () => {
+    const placeId = await anyPlace();
+    const llm = fakeLlm();
+    const service = createStoryService({ places, llm });
+    await service.tell({ placeId, targetSec: 40, side: "left" });
+    await service.tell({ placeId, targetSec: 40 });
+
+    const [left, unknown] = llm.complete.mock.calls.map(([prompt]) => prompt.user);
+    expect(left).toContain("Strona: po lewej");
+    expect(unknown).toContain("nie mów, po której stronie");
+  });
+
   it("tells what the listener has not heard yet and says which facts it told", async () => {
     const placeId = await anyPlace();
     const service = createStoryService({ places });
