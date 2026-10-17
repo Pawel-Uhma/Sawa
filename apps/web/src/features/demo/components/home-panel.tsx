@@ -11,7 +11,15 @@ import { formatDuration, sliderPercent } from "../lib/format";
 import { DURATION_STOPS_MIN } from "../lib/mock-data";
 import type { RideEnd, RideEndType } from "../lib/ride-end";
 import { FloatingCard, Grabber } from "./floating-card";
-import { ArrowRightIcon, ForwardIcon, LoopIcon, PinIcon, TramIcon, WalkIcon } from "./icons";
+import {
+  ArrowRightIcon,
+  CloseIcon,
+  ForwardIcon,
+  LoopIcon,
+  PinIcon,
+  TramIcon,
+  WalkIcon,
+} from "./icons";
 import { SawaHead } from "./logo";
 import { PrimaryButton } from "./primary-button";
 
@@ -27,9 +35,14 @@ type HomePanelProps = {
   travel: Travel;
   onTravelChange: (travel: Travel) => void;
   rideEnd: RideEnd;
+  /** Wybór w przełączniku; „Do celu” może jeszcze nie mieć celu. */
+  endType: RideEndType;
   onRideEndTypeChange: (type: RideEndType) => void;
-  onRideEndChange: (end: RideEnd) => void;
+  /** `null` czyści wybrany cel. */
+  onRideEndChange: (end: RideEnd | null) => void;
   onGenerate: () => void;
+  /** Fałsz, dopóki przy „Do celu” nie ma wybranego celu. */
+  canGenerate: boolean;
   planning: boolean;
   planError: string | null;
   /** Telefon jeszcze szuka lokalizacji; do tego czasu start jest pod 42 Warsaw. */
@@ -69,9 +82,11 @@ export function HomePanel({
   travel,
   onTravelChange,
   rideEnd,
+  endType,
   onRideEndTypeChange,
   onRideEndChange,
   onGenerate,
+  canGenerate,
   planning,
   planError,
   locating,
@@ -247,13 +262,14 @@ export function HomePanel({
 
       <RideEndPicker
         rideEnd={rideEnd}
+        endType={endType}
         onTypeChange={onRideEndTypeChange}
         onChange={onRideEndChange}
       />
 
       <PrimaryButton
         onClick={onGenerate}
-        disabled={planning}
+        disabled={planning || !canGenerate}
         aria-busy={planning}
         className={`mt-4 !h-12 md:!h-14 ${planning ? "disabled:!opacity-100" : ""}`}
       >
@@ -266,10 +282,12 @@ export function HomePanel({
           </>
         ) : (
           <>
-            {rideEnd.type === "loop"
-              ? t("Wyznacz pętlę", "Plan a loop")
-              : t("Wyznacz trasę do celu", "Plan the way there")}
-            <ArrowRightIcon className="size-5" />
+            {!canGenerate
+              ? t("Najpierw wybierz cel", "Pick a destination first")
+              : rideEnd.type === "loop"
+                ? t("Wyznacz pętlę", "Plan a loop")
+                : t("Wyznacz trasę do celu", "Plan the way there")}
+            {canGenerate && <ArrowRightIcon className="size-5" />}
           </>
         )}
       </PrimaryButton>
@@ -367,12 +385,16 @@ function ChoiceGroup<T extends string>({
 
 type RideEndPickerProps = {
   rideEnd: RideEnd;
+  endType: RideEndType;
   onTypeChange: (type: RideEndType) => void;
-  onChange: (end: RideEnd) => void;
+  onChange: (end: RideEnd | null) => void;
 };
 
-/** Koniec trasy: przełącznik, a przy „Do celu” pole wyszukiwania i podpowiedź o mapie. */
-function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) {
+/**
+ * Koniec trasy: przełącznik, a przy „Do celu” jedno pole. Bez celu to wyszukiwarka, z celem
+ * staje się kartką wybranego celu z krzyżykiem, który wraca do szukania. Celu nie podsuwamy.
+ */
+function RideEndPicker({ rideEnd, endType, onTypeChange, onChange }: RideEndPickerProps) {
   const destination = rideEnd.type === "destination" ? rideEnd : null;
   const t = useT();
 
@@ -381,13 +403,13 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
       <ChoiceGroup
         label={t("Gdzie kończysz", "Where you finish")}
         options={END_OPTIONS}
-        value={rideEnd.type}
+        value={endType}
         layoutId="kafelek-koniec"
         onChange={onTypeChange}
       />
 
       <AnimatePresence initial={false}>
-        {destination && (
+        {endType === "destination" && (
           <motion.div
             key="cele"
             initial={{ height: 0, opacity: 0 }}
@@ -396,20 +418,54 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
             transition={{ type: "spring", bounce: 0, duration: 0.35 }}
             className="overflow-hidden"
           >
-            <DestinationSearch onPick={onChange} />
-            <p className="mt-2 flex min-w-0 items-center gap-1.5 text-[13px] text-tekst-2">
-              <PinIcon className="size-4 shrink-0 text-glebia" />
-              <span className="truncate">
-                {t("Cel", "Destination")}:{" "}
-                <span className="font-semibold text-tekst">{destination.name}</span>
-              </span>
-            </p>
-            <p className="mt-1.5 text-xs text-tekst-3">
-              {t("Albo stuknij w mapę, żeby wybrać punkt.", "Or tap the map to pick a point.")}
-            </p>
+            {/* Pierścień fokusu wystaje poza pole, więc padding zamiast przycinania go */}
+            <div className="px-0.5 pb-0.5 pt-2.5">
+              {destination ? (
+                <ChosenDestination
+                  name={destination.name}
+                  address={destination.address}
+                  onClear={() => onChange(null)}
+                />
+              ) : (
+                <DestinationSearch onPick={onChange} />
+              )}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
+    </div>
+  );
+}
+
+/** Wybrany cel w miejscu pola: nazwa, adres i krzyżyk, który wraca do szukania. */
+function ChosenDestination({
+  name,
+  address,
+  onClear,
+}: {
+  name: string;
+  address?: string;
+  onClear: () => void;
+}) {
+  const t = useT();
+  return (
+    <div className="flex min-h-11 items-center gap-2.5 rounded-[14px] bg-mieta-jasna py-2 pl-3 pr-1.5">
+      <PinIcon className="size-[18px] shrink-0 text-glebia" />
+      <div className="flex min-w-0 flex-1 flex-col">
+        <span className="truncate text-[15px] font-bold leading-5 text-tekst">{name}</span>
+        {address && <span className="truncate text-xs leading-4 text-tekst-2">{address}</span>}
+      </div>
+      <button
+        type="button"
+        onClick={() => {
+          haptic(4);
+          onClear();
+        }}
+        aria-label={t("Zmień cel", "Change destination")}
+        className="grid size-8 shrink-0 place-items-center rounded-full text-tekst-2 transition-[background-color,transform] hover:bg-tekst/[0.06] active:scale-90"
+      >
+        <CloseIcon className="size-4" />
+      </button>
     </div>
   );
 }
@@ -421,50 +477,73 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
   const { results, isSearching, isError, hasQuery } = useDestinationSearch(text);
 
   return (
-    <div className="pt-2.5">
+    <div>
       <div className="relative">
         <PinIcon className="pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2 text-tekst-3" />
-        {isSearching && hasQuery && (
-          <Spinner className="pointer-events-none absolute right-3 top-1/2 z-10 size-4 -translate-y-1/2 text-tekst-3" />
-        )}
         <input
-          type="search"
+          type="text"
           value={text}
           onChange={(event) => setText(event.target.value)}
           placeholder={t("Dokąd jedziesz?", "Where are you going?")}
           aria-label={t("Dokąd jedziesz", "Where are you going")}
           enterKeyHint="search"
           autoComplete="off"
-          className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
+          className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-10 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
         />
+        {isSearching && hasQuery ? (
+          <Spinner className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-tekst-3" />
+        ) : (
+          text && (
+            <button
+              type="button"
+              onClick={() => setText("")}
+              aria-label={t("Wyczyść", "Clear")}
+              className="absolute right-1.5 top-1/2 grid size-8 -translate-y-1/2 place-items-center rounded-full text-tekst-3 active:scale-90"
+            >
+              <CloseIcon className="size-4" />
+            </button>
+          )
+        )}
       </div>
       <AnimatePresence initial={false}>
-        {hasQuery && (
+        {hasQuery ? (
           <AutoHeight key="wyniki">
             <ul
               aria-label={t("Wyniki", "Results")}
-              className="mt-1.5 overflow-hidden rounded-[14px] bg-powierzchnia"
+              className="mt-1.5 divide-y divide-tekst/[0.06] overflow-hidden rounded-[14px] bg-powierzchnia"
             >
-              {results.map((result) => (
+              {results.slice(0, 5).map((result) => (
                 <li key={result.id}>
                   <button
                     type="button"
                     onClick={() => {
                       haptic(4);
-                      onPick({ type: "destination", name: result.name, point: result.position });
+                      onPick({
+                        type: "destination",
+                        name: result.name,
+                        address: result.address,
+                        point: result.position,
+                      });
                       setText("");
                     }}
-                    className="flex w-full flex-col px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
+                    className="flex w-full items-center gap-2.5 px-3 py-2.5 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
                   >
-                    <span className="truncate text-[14px] font-bold text-tekst">{result.name}</span>
-                    <span className="truncate text-xs text-tekst-3">{result.address}</span>
+                    <PinIcon className="size-4 shrink-0 text-tekst-3" />
+                    <span className="flex min-w-0 flex-col">
+                      <span className="truncate text-[14px] font-bold leading-5 text-tekst">
+                        {result.name}
+                      </span>
+                      <span className="truncate text-xs leading-4 text-tekst-3">
+                        {result.address}
+                      </span>
+                    </span>
                   </button>
                 </li>
               ))}
               {results.length === 0 && (
                 <li
                   aria-live="polite"
-                  className="flex items-center gap-2 px-3 py-2 text-[13px] text-tekst-3"
+                  className="flex items-center gap-2 px-3 py-2.5 text-[13px] text-tekst-3"
                 >
                   {isSearching && <Spinner className="size-3.5" />}
                   {isSearching
@@ -481,6 +560,12 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
                 </li>
               )}
             </ul>
+          </AutoHeight>
+        ) : (
+          <AutoHeight key="podpowiedz">
+            <p className="pt-2 text-xs text-tekst-3">
+              {t("Albo stuknij w mapę, żeby wybrać punkt.", "Or tap the map to pick a point.")}
+            </p>
           </AutoHeight>
         )}
       </AnimatePresence>

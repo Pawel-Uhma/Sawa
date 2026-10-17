@@ -15,7 +15,10 @@ const steps = process.argv.slice(2);
 let i = 2;
 for (const label of steps) {
   const [text, name] = label.split("=");
-  await p.getByRole("button", { name: text, exact: false }).first().click({ timeout: 5000 }).catch((e) => console.log("brak", text));
+  await p.waitForTimeout(800);
+  const clicked = await p.getByRole("button", { name: text }).first().click({ timeout: 3000 }).then(() => true).catch(() => false)
+    || await p.getByText(text, { exact: false }).first().click({ timeout: 3000, force: true }).then(() => true).catch(() => false);
+  if (!clicked) console.log("brak", text);
   if (name) await shot(`${String(i++).padStart(2, "0")}-${name}`);
 }
 await ctx.unrouteAll({ behavior: "ignoreErrors" });
