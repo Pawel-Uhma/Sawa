@@ -87,6 +87,7 @@
 - [ ] **T-116** Usunąć „Przed siebie” z wyboru końca trasy (wywozi w przypadkowe miejsce); zostają „Wracam tu” i „Do celu” — `R3` (Paweł)
 - [ ] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`
 - [ ] **T-112** Śledzenie lokalizacji na żywo: z pozycji użytkownika wybierać opowieść (`activeIndex` do ekranu „Na żywo”) — `R3` (Antek)
+- [ ] **T-119** Kolory według tematu (historia, kultura, sport, przyroda): kółko pod ikoną miejsca na mapie, chipy tematów w tych samych kolorach jako legenda; reguła dla miejsca z kilkoma tematami, kontrast AA w obu motywach ([#53](https://github.com/Pawel-Uhma/Sawa/issues/53)) — `R3`
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos
