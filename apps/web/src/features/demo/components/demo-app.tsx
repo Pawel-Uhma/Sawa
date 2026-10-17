@@ -22,6 +22,7 @@ import {
   type RideEndType,
 } from "../lib/ride-end";
 import { useGpsClockSync } from "../lib/ride-sync";
+import { screenCamera } from "../lib/screen-camera";
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
@@ -108,6 +109,10 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Na scenie nie pytamy o lokalizację: stała pozycja pod 42 Warsaw
   const start = useStartPoint(!isStage && stage !== "onboarding");
   const origin = isStage ? HACKATHON_VENUE : start.point;
+  // Kropka „tu jesteś”: GPS na żywo; 42 Warsaw tylko, gdy to wybrany start (scena, menu).
+  // Bez lokalizacji kropki nie ma, bo pod 42 Warsaw wyglądałaby jak zamrożony GPS.
+  const userDot =
+    isStage || start.mode === "venue" ? HACKATHON_VENUE : (start.position ?? undefined);
   const fastest = useFastestRoute(origin, profile, rideEnd, travel);
   // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
   const minDurationMin =
@@ -266,19 +271,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   ]);
 
   const camera: MapCamera = useMemo(() => {
-    // Wybrane miejsce jedzie nad kartę; zoom zostaje taki, jaki ustawił użytkownik
-    if (isPlaceOpen && selectedPlace.position) {
-      return { type: "center", center: selectedPlace.position };
-    }
-    if (isRoute && activeStop) {
-      const [lng, lat] = activeStop.coord;
-      return { type: "center", center: { lat, lng }, zoom: 15.4 };
-    }
-    // Wybrany cel: mapa pokazuje start i cel naraz
-    if (isHome && destination) {
-      return { type: "fit", points: [origin, destination.point], maxZoom: 15 };
-    }
-    return { type: "center", center: origin, zoom: isDesktop ? 15.3 : 14.8 };
+    const stop =
+      isRoute && activeStop ? { lat: activeStop.coord[1], lng: activeStop.coord[0] } : null;
+    return screenCamera({
+      place: isPlaceOpen ? { position: selectedPlace.position } : null,
+      activeStop: stop,
+      destination: isHome && destination ? destination.point : null,
+      origin,
+      isDesktop,
+    });
   }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace, origin]);
 
   const listener = useMemo(() => listenerOf(profile), [profile]);
@@ -293,8 +294,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const heldRef = useRef(held);
   heldRef.current = held;
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
-  const position = start.status === "located" ? start.point : null;
-  useGpsClockSync(route, position, clock);
+  useGpsClockSync(route, start.position, clock);
   const pickStop = useCallback(
     (index: number) => {
       syncTo(index);
@@ -409,7 +409,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               }
               camera={camera}
               padding={padding}
-              user={origin}
+              user={userDot}
               destination={isRoute || isHome ? destination?.point : undefined}
               onMapClick={
                 isHome && isPickingEnd

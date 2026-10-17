@@ -21,7 +21,8 @@ import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
 import { shiftRide } from "../domain/routing/shift-ride";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
-import { placesAlong, planWalk } from "../domain/routing/walk-tour";
+import { pickWalkOnPaths } from "../domain/routing/walk-on-paths";
+import { placesAlong, planWalks, type Walk, type WalkInput } from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
 import type {
   DepartureSource,
@@ -42,6 +43,8 @@ const MIN_LIVE_DELAY_SEC = 30;
 const CITY_TRANSIT_CREDIT =
   "Rozkład jazdy i pozycje pojazdów: Zarząd Transportu Miejskiego, dane.um.warszawa.pl (CC BY)";
 const CACHE_SIZE = 20;
+/** Walks compared along their real paths (one walk router request each). */
+const WALK_ALTERNATIVES = 4;
 /** Places come from Supabase; refetched this often so new places reach routes without a restart. */
 const PLACES_TTL_MS = 10 * 60_000;
 /** After a failed fetch (fallback in use) Supabase is retried sooner. */
@@ -282,6 +285,20 @@ export function createRoutePlanner(deps: {
     return alongWalkPaths(route, paths, along);
   }
 
+  /**
+   * The walk to take: the planner's best few walks (planned on straight lines) compared along
+   * their real paths (`pickWalkOnPaths`), so a walk that needs a long way round loses. Without
+   * paths the planner's best.
+   */
+  async function planWalkOnPaths(input: WalkInput): Promise<Walk | null> {
+    const walks = planWalks(input, {}, WALK_ALTERNATIVES);
+    const source = deps.walkPaths;
+    if (!source || walks.length === 0) return walks[0] ?? null;
+    const paths = await Promise.all(walks.map((walk) => source.path(walk.waypoints)));
+    const onPaths = walks.map((walk, i) => ({ walk, path: paths[i] }));
+    return pickWalkOnPaths(onPaths, input) ?? walks[0] ?? null;
+  }
+
   /** Plans with straight walking legs, then `drawn` puts them on real paths. */
   async function planRoute(request: PlanRouteRequest, now: Date): Promise<Route> {
     const { hitsByPattern, placesById } = await prepare(
@@ -311,7 +328,7 @@ export function createRoutePlanner(deps: {
           : request.destination
             ? (haversineM(request.origin, request.destination) * walkDetourFactor) / walkSpeedMps
             : 0;
-      const walk = planWalk({
+      const walk = await planWalkOnPaths({
         places: [...placesById.values()],
         origin: request.origin,
         end: request.returnToStart ? request.origin : request.destination,
@@ -395,7 +412,7 @@ export function createRoutePlanner(deps: {
     // past places competes with the ride (a ride counts only if it fits the time).
     // Picked "transit" skips this; no pick (auto) walks only under WALK_UNDER_MIN.
     if (request.travel === undefined && request.durationMin < WALK_UNDER_MIN) {
-      const walk = planWalk({
+      const walk = await planWalkOnPaths({
         places: [...placesById.values()],
         origin: request.origin,
         end: request.returnToStart ? request.origin : request.destination,

@@ -7,7 +7,9 @@ export type MapCamera =
   | { type: "center"; center: LatLng; zoom?: number }
   /** Fit all points (e.g. user + next stop); a single point is centred instead. */
   | { type: "fit"; points: LatLng[]; maxZoom?: number }
-  | { type: "route" };
+  | { type: "route" }
+  /** Keep the view as it is, e.g. while the target is still loading (one move once it is known, #117). */
+  | { type: "stay" };
 
 export type MapPadding = { top: number; right: number; bottom: number; left: number };
 
@@ -49,6 +51,8 @@ export function resolveCamera(
   if (!request) return null;
 
   switch (request.type) {
+    case "stay":
+      return null;
     case "center":
       return { type: "ease", center: toLngLat(request.center), zoom: request.zoom };
     case "route": {
