@@ -20,7 +20,7 @@ const logo = Fredoka({
 });
 
 export const metadata: Metadata = {
-  title: "Sawa",
+  title: { default: "Sawa · Warszawa za oknem", template: "%s · Sawa" },
   description: "Sawa opowiada o miejscach, które mijasz komunikacją miejską.",
   // Po dodaniu do ekranu głównego działa jak aplikacja, bez paska przeglądarki
   appleWebApp: { capable: true, title: "Sawa", statusBarStyle: "default" },
