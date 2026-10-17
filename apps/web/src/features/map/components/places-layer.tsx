@@ -11,10 +11,8 @@ import {
   LABEL_FONT_BOLD,
   type MapPalette,
   type MapTheme,
-  NO_TOPIC,
+  placeKindColorExpression,
   placeStickerExpression,
-  placeTopic,
-  placeTopicColorExpression,
 } from "../lib/map-style";
 
 export const PLACES_SOURCE_ID = "places";
@@ -84,8 +82,6 @@ function labelPaint(palette: MapPalette) {
 
 type PlacesLayerProps = {
   places: PlaceSummaryFeature[];
-  /** Topics the user picked, in their order: a place with several takes the first of these. */
-  interests: readonly string[];
   theme: MapTheme;
   selectedId: string | null;
   /** Fade regular places while a route is shown, so its places stand out. */
@@ -97,27 +93,13 @@ type PlacesLayerProps = {
 
 export function PlacesLayer({
   places,
-  interests,
   theme,
   selectedId,
   isDimmed,
   hasIcons,
   palette,
 }: PlacesLayerProps) {
-  // Each place gets its topic: the shape says what it is, the colour which topic (same as the chips).
-  const data = useMemo(
-    () => ({
-      type: "FeatureCollection" as const,
-      features: places.map((place) => ({
-        ...place,
-        properties: {
-          ...place.properties,
-          topic: placeTopic(place.properties.interests, interests) ?? NO_TOPIC,
-        },
-      })),
-    }),
-    [places, interests],
-  );
+  const data = useMemo(() => ({ type: "FeatureCollection" as const, features: places }), [places]);
   const opacity = isDimmed ? palette.dimmedOpacity : 0.9;
 
   return (
@@ -188,13 +170,13 @@ export function PlacesLayer({
           paint={{ "icon-opacity": opacity, ...labelPaint(palette) }}
         />
       ) : (
-        // If the icons failed to load, dots in the topic colour keep places visible.
+        // If the icons failed to load, dots in the group colour keep places visible.
         <Layer
           id={PLACES_LAYER_ID}
           type="circle"
           filter={UNCLUSTERED}
           paint={{
-            "circle-color": placeTopicColorExpression(theme),
+            "circle-color": placeKindColorExpression(),
             "circle-radius": ["interpolate", ["linear"], ["get", "richness"], 1, 5, 10, 7, 40, 9],
             "circle-stroke-color": palette.ring,
             "circle-stroke-width": 1.5,

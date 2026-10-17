@@ -45,7 +45,7 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
     <div className="px-[18px] pb-5 pt-6 md:px-6">
       <div className="flex items-start gap-3">
         <div className="min-w-0 flex-1">
-          <KindLine place={place} picked={listener.interests} />
+          <KindLine place={place} />
           <h2 className="mt-1 text-[24px] font-extrabold leading-[1.15] tracking-[-0.025em] text-tekst">
             {title}
           </h2>

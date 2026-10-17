@@ -145,7 +145,7 @@ export function MapPlayground() {
             onChange={(interests) => set({ interests })}
           />
           <p className="text-xs text-tekst-3">
-            Wpływa na planowanie trasy i kolor miejsc z kilkoma tematami.
+            Wpływa na planowanie trasy, nie na kolory mapy.
           </p>
         </Section>
 

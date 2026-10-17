@@ -78,11 +78,9 @@ export type SawaMapProps = {
   hasZoomControls?: boolean;
   /** Click on the map outside any place (e.g. to pick a destination). */
   onMapClick?: (point: LatLng) => void;
-  /** Topics the user picked, in their order; they decide the colour of places with several. */
+  /** Topics the user picked; unused while places are coloured by kind group, not topic. */
   interests?: readonly string[];
 };
-
-const NO_INTERESTS: readonly string[] = [];
 
 export function SawaMap({
   route,
@@ -95,7 +93,6 @@ export function SawaMap({
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
-  interests = NO_INTERESTS,
 }: SawaMapProps) {
   const t = useT();
   const mapRef = useRef<MapRef>(null);
@@ -221,7 +218,7 @@ export function SawaMap({
             ?.classList.remove("maplibregl-compact-show");
           setView(viewOf(event.target));
           setIsLoaded(true);
-          // Place markers are drawn on demand in their topic colour; the map lives as long as this listener.
+          // Place markers are drawn on demand; the map lives as long as this listener.
           registerPlaceStickers(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
@@ -236,7 +233,6 @@ export function SawaMap({
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
-            interests={interests}
             theme={theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
@@ -294,7 +290,6 @@ export function SawaMap({
         <PlaceSheet
           key={selected.id}
           place={selected}
-          interests={interests}
           onClose={() => select(null)}
         />
       )}

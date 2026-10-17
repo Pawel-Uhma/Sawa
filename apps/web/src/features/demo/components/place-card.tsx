@@ -5,11 +5,10 @@ import { animate, motion, useMotionValue, useReducedMotion } from "motion/react"
 import { type ReactNode, useEffect, useLayoutEffect, useRef } from "react";
 import { Skeleton, SkeletonLines, Spinner } from "@/components/waiting";
 import { useLang, useT } from "@/features/i18n";
-import { placeKindLabel, placeTopic } from "@/features/map";
+import { placeKindColor, placeKindLabel } from "@/features/map";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { PlaceStoryState } from "../lib/place-story";
-import { topicStyle } from "../lib/topic-style";
 import { PauseIcon, PlayIcon } from "./icons";
 
 type PlaceCardShellProps = {
@@ -129,24 +128,16 @@ export function CloseButton({ onClick }: { onClick: () => void }) {
   );
 }
 
-type KindLineProps = {
-  place: Place;
-  /** Tematy wybrane przez słuchacza: kropka ma kolor tematu jak znacznik na mapie. */
-  picked?: readonly string[];
-  className?: string;
-};
-
-/** Rodzaj miejsca z kropką w kolorze jego tematu (jak na mapie) i okres, np. „miejsce · 1867–1947”. */
-export function KindLine({ place, picked = [], className = "" }: KindLineProps) {
+/** Rodzaj miejsca w jego kolorze z mapy i okres, np. „miejsce · 1867–1947”. */
+export function KindLine({ place, className = "" }: { place: Place; className?: string }) {
   const lang = useLang();
-  const topic = placeTopic(place.interests, picked);
   const parts = [placeKindLabel(place.kind, place.subkind, lang), place.period].filter(Boolean);
   return (
     <p className={`etykieta flex items-center gap-2 ${className}`}>
       <span
         aria-hidden="true"
-        className={`inline-block size-2.5 shrink-0 rounded-full ${topic ? "temat bg-(--temat)" : "bg-tekst-3"}`}
-        style={topic ? topicStyle(topic) : undefined}
+        className="inline-block size-2.5 shrink-0 rounded-full"
+        style={{ backgroundColor: placeKindColor(place.kind, place.subkind) }}
       />
       <span className="truncate">{parts.join(" · ")}</span>
     </p>
