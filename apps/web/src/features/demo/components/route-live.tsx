@@ -236,15 +236,18 @@ export function RouteLive({
     const el = scrollRef.current;
     const edge = edgeRef.current;
     if (!el || !following) return;
-    const top = edge
-      ? edge.getBoundingClientRect().top -
-        el.getBoundingClientRect().top +
-        el.scrollTop -
-        el.clientHeight * 0.66
-      : el.scrollHeight;
+    // Zanim Sawa zacznie mówić, podgląd miejsca czyta się od góry
+    const top = waiting
+      ? 0
+      : edge
+        ? edge.getBoundingClientRect().top -
+          el.getBoundingClientRect().top +
+          el.scrollTop -
+          el.clientHeight * 0.66
+        : el.scrollHeight;
     if (Math.abs(el.scrollTop - top) < 4) return;
     el.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
-  }, [following, progress, storyText, activeIndex, reduce]);
+  }, [following, waiting, progress, storyText, activeIndex, reduce]);
 
   // Ręczne przewinięcie (palec, kółko) odpina zapis od głosu; nasze scrollTo tego nie robi
   function stopFollowing() {
