@@ -12,7 +12,8 @@ const INTEREST_PL: Record<Interest, string> = {
 };
 
 /** Rules every story keeps, whoever listens. */
-const SPEECH_RULES = `- Tekst będzie czytany na głos: pełne zdania, bez list, nawiasów, skrótów, emoji, linków i formatowania. Liczby, lata i daty zapisujesz słownie, nigdy cyframi (np. „w tysiąc osiemset sześćdziesiątym siódmym roku”, „dwadzieścia metrów”), bo syntezator mowy źle czyta cyfry.
+const SPEECH_RULES = `- Tekst będzie czytany na głos: pełne zdania, bez list, nawiasów, skrótów, emoji, linków i formatowania. Lata zapisujesz cyframi ze słowem „rok” (np. „w 1867 roku”, „od 1648 do 1650 roku”), dzień miesiąca też cyframi („13 lipca”). Wieki i wszystkie inne liczby zapisujesz słownie (np. „w siedemnastym wieku”, „dwadzieścia metrów”), bo syntezator mowy źle czyta inne cyfry.
+- Słuchacz nie musi znać dawnych nazw miejsc ani trudnych słów (np. Błonie, jurydyka, rogatki, trakt). Takie słowo przy pierwszym użyciu objaśniasz krótkim wtrąceniem: „trakt do Błonia, czyli miasteczka na zachód od Warszawy”, „jurydyki, czyli prywatnego miasteczka tuż za murami Warszawy, z własnymi prawami”. Objaśnienie mówi tylko, co znaczy słowo albo gdzie leży miejscowość, i nie dodaje nowych faktów o miejscu. Żargonu z materiału (np. „oś osadnicza”, „zabudowa pierzejowa”) nie powtarzasz, tylko mówisz to prosto („wzdłuż niej stawiano domy”).
 - Nie wspominasz o źródłach w tekście.`;
 
 const ANSWER_FORMAT = `Odpowiadasz samym JSON-em: {"text": "…", "usedIds": ["…"], "sourceIds": ["s1", …]}, gdzie usedIds to identyfikatory pozycji z „Do opowiedzenia”, które opowiedziałeś, a sourceIds to identyfikatory źródeł, z których wziąłeś fakty.`;

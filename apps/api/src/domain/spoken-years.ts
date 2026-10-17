@@ -6,7 +6,18 @@
 
 type Case = "nom" | "gen" | "loc" | "ins";
 
-const UNITS = ["", "pierwszy", "drugi", "trzeci", "czwarty", "piąty", "szósty", "siódmy", "ósmy", "dziewiąty"];
+const UNITS = [
+  "",
+  "pierwszy",
+  "drugi",
+  "trzeci",
+  "czwarty",
+  "piąty",
+  "szósty",
+  "siódmy",
+  "ósmy",
+  "dziewiąty",
+];
 const TEENS = [
   "dziesiąty",
   "jedenasty",
@@ -31,7 +42,18 @@ const TENS = [
   "osiemdziesiąty",
   "dziewięćdziesiąty",
 ];
-const HUNDREDS = ["", "sto", "dwieście", "trzysta", "czterysta", "pięćset", "sześćset", "siedemset", "osiemset", "dziewięćset"];
+const HUNDREDS = [
+  "",
+  "sto",
+  "dwieście",
+  "trzysta",
+  "czterysta",
+  "pięćset",
+  "sześćset",
+  "siedemset",
+  "osiemset",
+  "dziewięćset",
+];
 const HUNDREDTHS = [
   "",
   "setny",
