@@ -225,11 +225,16 @@ export function SawaMap({
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
-      <LoadingCover show={!isLoaded} label={t("Wczytuję mapę Warszawy…", "Loading the map of Warsaw…")} />
+      <LoadingCover
+        show={!isLoaded}
+        label={t("Wczytuję mapę Warszawy…", "Loading the map of Warsaw…")}
+      />
       {/* Stan miejsc w pigułce u góry, pośrodku: nie zasłania logo ani paneli */}
-      <div className="pointer-events-none absolute inset-x-0 top-[max(1.25rem,env(safe-area-inset-top))] z-10 flex justify-center md:top-6">
+      <div className="pointer-events-none absolute inset-x-0 top-[max(1.25rem,env(safe-area-inset-top))] z-[15] flex justify-center md:top-6">
         <StatusPill
-          icon={places.isError ? <span className="size-2 shrink-0 rounded-full bg-koral" /> : undefined}
+          icon={
+            places.isError ? <span className="size-2 shrink-0 rounded-full bg-koral" /> : undefined
+          }
           action={
             places.isError && (
               <button
