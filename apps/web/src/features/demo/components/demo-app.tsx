@@ -258,7 +258,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const player = useStoryPlayer(route, activeIndex, listener);
   const { setIsPlaying, rewind } = player;
   // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
-  const clock = useRideClock(route);
+  // Pauza i stop Sawy zatrzymują też zegar (suwak i odliczanie).
+  const clock = useRideClock(route, player.isPlaying);
   const { syncTo } = clock;
   const pickStop = useCallback(
     (index: number) => {
