@@ -13,6 +13,7 @@
       "!**/.next",
       "!**/dist",
       "!**/next-env.d.ts",
+      "!apps/api/data/demo",
       "!docs",
       "!.claude"
     ]

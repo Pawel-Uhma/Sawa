@@ -1,4 +1,5 @@
 import { serve } from "@hono/node-server";
+import { createFixtureStore } from "./adapters/demo/fixture-store";
 import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthesizer";
 import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
@@ -16,15 +17,31 @@ import { createApp } from "./app";
 import { loadEnv } from "./lib/env";
 import { createLogger } from "./lib/logger";
 import { warsawDate } from "./routes/health";
+import {
+  createCachedRoutePlanner,
+  createFixedDestinationSearch,
+  createFixtureSynthesizer,
+  createRecordingStoryService,
+  createReplayStoryService,
+} from "./services/demo";
 import { createTrackerBoardingSource } from "./services/live-boarding";
 import { createRoutePlanner } from "./services/plan-route";
 import { createPlaceResearch } from "./services/research-place";
 import { createDestinationService } from "./services/search-destinations";
 import { createSpeechService } from "./services/speak";
+import type { StoryService } from "./services/tell-story";
 import { createVehicleTracker } from "./services/track-vehicles";
+
+/** About 30 requests a ride: room for a hall of phones behind one NAT. */
+const DEMO_STORY_RATE_LIMIT = { limit: 20_000, windowMs: 10 * 60_000 };
 
 const env = loadEnv();
 const logger = createLogger(env.LOG_LEVEL);
+const demo = env.DEMO_MODE;
+// Saved stories and voice for the pitch (services/demo.ts); committed with the code.
+const fixtures =
+  demo === "off" ? undefined : createFixtureStore(new URL("../data/demo/", import.meta.url));
+if (fixtures) logger.info({ demo, ...fixtures.size() }, "demo mode: saved stories and voice");
 
 const transit = loadTransitData(new URL("../data/transit-graph.json.gz", import.meta.url));
 logger.info(
@@ -67,7 +84,7 @@ vehicles.start();
 
 // The planner reads Supabase; the committed export is its fallback when Supabase fails.
 const placesFile = createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url));
-const routePlanner = createRoutePlanner({
+const livePlanner = createRoutePlanner({
   transit,
   places: placesRepository ?? placesFile,
   fallbackPlaces: placesRepository ? placesFile : undefined,
@@ -76,10 +93,13 @@ const routePlanner = createRoutePlanner({
   walkPaths: env.WALK_ROUTER_URL ? createOsrmWalkPathSource(env.WALK_ROUTER_URL) : undefined,
   logger,
 });
+const routePlanner = demo === "off" ? livePlanner : createCachedRoutePlanner(livePlanner);
 
-const llm = env.OPENROUTER_KEY
-  ? createOpenRouterProvider({ apiKey: env.OPENROUTER_KEY, model: env.OPENROUTER_MODEL })
-  : undefined;
+// Replay never calls the LLM: a place without a saved story gets its facts read plainly.
+const llm =
+  demo !== "replay" && env.OPENROUTER_KEY
+    ? createOpenRouterProvider({ apiKey: env.OPENROUTER_KEY, model: env.OPENROUTER_MODEL })
+    : undefined;
 
 // One web search per place for stories beyond the seed (T-41); STORY_RESEARCH=0 turns it off.
 const research =
@@ -90,19 +110,36 @@ const research =
       })
     : undefined;
 
-const speech = env.ELEVENLABS_KEY
-  ? createSpeechService(createElevenLabsSynthesizer({ apiKey: env.ELEVENLABS_KEY }))
+const elevenLabs = env.ELEVENLABS_KEY
+  ? createElevenLabsSynthesizer({ apiKey: env.ELEVENLABS_KEY })
   : undefined;
+const speech = fixtures
+  ? createSpeechService(
+      createFixtureSynthesizer(fixtures, demo === "record" ? elevenLabs : undefined),
+    )
+  : elevenLabs && createSpeechService(elevenLabs);
 
-const destinations = env.GOOGLE_PLACES_API_KEY
-  ? createDestinationService(createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY))
-  : undefined;
+const destinations = fixtures
+  ? createDestinationService(createFixedDestinationSearch())
+  : env.GOOGLE_PLACES_API_KEY
+    ? createDestinationService(createGoogleDestinationSearch(env.GOOGLE_PLACES_API_KEY))
+    : undefined;
+
+const llmFailed = new Set<string>();
+const demoStories =
+  fixtures &&
+  (demo === "record"
+    ? (built: StoryService) => createRecordingStoryService(built, fixtures, llmFailed)
+    : (built: StoryService) => createReplayStoryService(fixtures, built));
 
 const app = createApp({
   corsOrigins: env.CORS_ORIGINS,
   corsPreviewPattern: env.CORS_PREVIEW_PATTERN,
   debugPages: env.DEBUG_PAGES,
   transitDate: transit.serviceDate,
+  demoMode: demo,
+  // Nothing in replay costs credits, and the whole room comes from the venue's one IP.
+  storyRateLimit: demo === "replay" ? DEMO_STORY_RATE_LIMIT : undefined,
   services: {
     routePlanner,
     places: placesRepository,
@@ -111,7 +148,11 @@ const app = createApp({
     speech,
     destinations,
     vehicles,
-    onLlmError: (err, placeId) => logger.warn({ err, placeId }, "llm failed, story from facts"),
+    stories: demoStories,
+    onLlmError: (err, placeId) => {
+      llmFailed.add(placeId);
+      logger.warn({ err, placeId }, "llm failed, story from facts");
+    },
   },
   onUnexpectedError: (err) => logger.error({ err }, "unhandled error"),
 });
@@ -126,6 +167,7 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
       research: Boolean(research),
       speech: Boolean(speech),
       destinations: Boolean(destinations),
+      demo,
     },
     "api listening",
   );

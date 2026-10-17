@@ -1,5 +1,6 @@
 import type { Health } from "@sawa/shared";
 import { Hono } from "hono";
+import type { DemoMode } from "../services/demo";
 
 const VERSION = process.env.RAILWAY_GIT_COMMIT_SHA?.slice(0, 7) ?? "dev";
 
@@ -12,12 +13,17 @@ export function warsawDate(now: Date): string {
  * `GET /health`. With `transitDate` it also says whether the GTFS snapshot is for today:
  * the graph is built for one day, so after midnight it needs a rebuild (T-18).
  */
-export function createHealthRoutes(transitDate?: string, clock: () => Date = () => new Date()) {
+export function createHealthRoutes(
+  transitDate?: string,
+  demoMode: DemoMode = "off",
+  clock: () => Date = () => new Date(),
+) {
   return new Hono().get("/health", (c) =>
     c.json({
       ok: true,
       version: VERSION,
       ...(transitDate ? { transitDate, transitIsToday: transitDate === warsawDate(clock()) } : {}),
+      ...(demoMode !== "off" ? { demoMode } : {}),
     } satisfies Health),
   );
 }
