@@ -1,0 +1,297 @@
+[
+  {
+    "id": "obserwatorium-astronomiczne-uw",
+    "nazwa": "Obserwatorium Astronomiczne Uniwersytetu Warszawskiego",
+    "name_en": "Warsaw University Astronomical Observatory",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 4",
+    "adres_historyczny": "Aleje Ujazdowskie 6/8",
+    "lat": 52.2169,
+    "lon": 21.0278,
+    "lokalizacja": "dokladna",
+    "okres": "1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek w Ogrodzie Botanicznym przy Alejach Ujazdowskich 4 (pierwotnie 6/8) został zbudowany w latach 1820–1825 z inicjatywy Franciszka Armińskiego.",
+      "W połowie XIX wieku w oknie na parterze gmachu wystawiono pierwszy w Warszawie zegar elektryczny.",
+      "Od 1 października 1928 do września 1939 pracownicy obserwatorium nadawali sygnały, które transmitowało Polskie Radio.",
+      "2 sierpnia 1944, po wybuchu powstania warszawskiego, niemieckie czołgi ostrzelały budynek, niszcząc obie kopuły obserwacyjne i sprzęt.",
+      "Kilka dni po 11 sierpnia 1944 Niemcy podpalili budynek; spłonęło całe wnętrze, a także biblioteka z inkunabułami z XVI i XVII wieku.",
+      "Pożar przetrwał 10-cm fragment meteorytu Łowicz.",
+      "Budynek został zrekonstruowany w latach 1947–1949 pod kierunkiem architekta Jana Dąbrowskiego; przywrócono zewnętrzny kształt z 1824.",
+      "Pierwszy powojenny doktorat z astronomii obronił Maciej Bielicki pod kierunkiem Włodzimierza Zonna (1956)."
+    ],
+    "ciekawostki": [
+      "Kopuły obserwacyjne nie są obecnie używane do swoich pierwotnych celów, pełnią jedynie funkcję dekoracyjną."
+    ],
+    "summary_en": "The Warsaw University Astronomical Observatory occupies a building in the Royal Botanic Garden on Aleje Ujazdowskie, built in 1820–1825 on the initiative of Franciszek Armiński. The building was shelled and burned during the Warsaw Uprising in 1944 and rebuilt in 1947–1949.",
+    "ludzie": [
+      {"kto": "Franciszek Armiński", "rola": "inicjator budowy obserwatorium (1820–1825)", "wiki": null},
+      {"kto": "Michał Kamieński", "rola": "dyrektor obserwatorium w okresie okupacji", "wiki": null},
+      {"kto": "Kurt Walter", "rola": "zwierzchnik obserwatorium od kwietnia 1942", "wiki": null},
+      {"kto": "Jan Dąbrowski", "rola": "architekt odbudowy budynku w latach 1947–1949", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Obserwatorium Astronomiczne Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Obserwatorium_Astronomiczne_Uniwersytetu_Warszawskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obserwatorium jest jednostką UW; w rekordzie opisany budynek. Okres i fakty z artykułu o obserwatorium."
+  },
+  {
+    "id": "ogrody-zamkowe",
+    "nazwa": "Ogrody Zamkowe",
+    "name_en": "Royal Castle Gardens",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2483,
+    "lon": 21.0164,
+    "lokalizacja": "przyblizona",
+    "okres": "średniowiecze–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ogród o powierzchni 5,8 ha przylega do Zamku Królewskiego od strony Wisły, częściowo na i poniżej skarpy warszawskiej.",
+      "Powstał już w średniowieczu, a rozwinięty został w XVI wieku jako ogród renesansowy.",
+      "Wielki park w XIX wieku według projektu Jakuba Kubickiego; ruchliwą ulicę u podnóża skarpy ukryto w Arkadach Kubickiego z lat 1818–1821.",
+      "Po odzyskaniu niepodległości w okresie międzywojennym przystąpiono do rewaloryzacji ogrodów, wzorując się na barokowych ogrodach francuskich.",
+      "Od roku 1991 prowadzona jest rekonstrukcja ogrodów, przewidziana na trzech poziomach.",
+      "Ogród należy do Zamku Królewskiego, a jego rekonstrukcja prowadzona jest z funduszy Zamku."
+    ],
+    "ciekawostki": [
+      "Rzeka kiedyś przepływała bliżej zamku niż obecnie."
+    ],
+    "summary_en": "The Royal Castle Gardens cover 5.8 ha between the Royal Castle and the Vistula, on and below the Warsaw escarpment. They were developed from the Middle Ages and reconstructed on three levels since 1991.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "autor projektu wielkiego parku w XIX wieku", "wiki": null},
+      {"kto": "prof. Janusz Bogdanowski", "rola": "architekt projektu rekonstrukcji", "wiki": null},
+      {"kto": "Dorota Uruska-Suszek", "rola": "architektka projektu rekonstrukcji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ogrody Zamkowe w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ogrody_Zamkowe_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Adres nie podany w artykule. Współrzędne z nagłówka WSPÓŁRZĘDNE to punkt w obszarze ogrodu."
+  },
+  {
+    "id": "ogrod-botaniczny-uw",
+    "nazwa": "Ogród Botaniczny Uniwersytetu Warszawskiego",
+    "name_en": "University of Warsaw Botanic Garden",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 4",
+    "adres_historyczny": "pałac Kazimierzowski (1811–1818)",
+    "lat": 52.217823,
+    "lon": 21.027403,
+    "lokalizacja": "przyblizona",
+    "okres": "1811–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy Ogród Botaniczny w Warszawie istniał od 1811 roku przy pałacu Kazimierzowskim, dla potrzeb Warszawskiej Szkoły Lekarskiej; pieczę sprawował prof. Jakub Fryderyk Hoffmann.",
+      "15 grudnia 1818 roku Komisja Rządowa uzyskała zgodę na przeniesienie placówki na teren w tzw. Ogrodzie Królewskim, obok Belwederu, co uznaje się za datę utworzenia ogrodu.",
+      "W 1824 wydanym spisie roślin znalazło się ponad 10 tysięcy gatunków.",
+      "Po powstaniu listopadowym i zamknięciu Uniwersytetu w 1834 roku z rozporządzenia namiestnika Iwana Paskiewicza niemal dwie trzecie powierzchni ogrodu przyłączono do parku Łazienkowskiego.",
+      "Początkowo ogród zajmował 22,5 ha; po 1834 roku powierzchnię zmniejszono o trzy czwarte do ok. 5,16 ha.",
+      "W 1864 roku dyrektorem został prof. Jerzy Aleksandrowicz; w 1869 władze rosyjskie zamknęły Szkołę Główną Warszawską i powołały uniwersytet rosyjski, który przejął opiekę nad ogrodem.",
+      "Budynek Obserwatorium Astronomicznego UW wzniesiono w latach 1820–1825 w miejscu pawilonu dawnej oranżerii."
+    ],
+    "ciekawostki": [
+      "Ogród był pierwotną lokalizacją Świątyni Opatrzności Bożej; kamień węgielny wmurował 3 maja 1792 król Stanisław August Poniatowski."
+    ],
+    "summary_en": "The University of Warsaw Botanic Garden dates its founding to 15 December 1818, when the garden moved to the Royal Garden next to the Belvedere. It is the third oldest botanic garden in Poland, though it lost about three quarters of its area after the November Uprising.",
+    "ludzie": [
+      {"kto": "prof. Jakub Fryderyk Hoffmann", "rola": "pierwszy kierownik ogrodu przy pałacu Kazimierzowskim", "wiki": null},
+      {"kto": "Karol Lindner", "rola": "ogrodnik ogrodu w okresie 1811–1824", "wiki": null},
+      {"kto": "prof. Michał Szubert", "rola": "kierownik ogrodu od 1816 roku", "wiki": null},
+      {"kto": "prof. Jerzy Aleksandrowicz", "rola": "dyrektor ogrodu od 1864 roku do 1878", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ogród Botaniczny Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Botaniczny_Uniwersytetu_Warszawskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt w artykule jest ogrodem botanicznym UW; pierwotna lokalizacja (1811–1818) przy pałacu Kazimierzowskim podana w adres_historyczny."
+  },
+  {
+    "id": "ogrod-chinski-lazienki",
+    "nazwa": "Ogród Chiński w Łazienkach Królewskich",
+    "name_en": "Chinese Garden in Łazienki Royal Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleja Chińska, Łazienki Królewskie",
+    "adres_historyczny": null,
+    "lat": 52.2168,
+    "lon": 21.0325,
+    "lokalizacja": "dokladna",
+    "okres": "1779–1823 (Most i Brama Chińska); ogród od 2012",
+    "istnieje": true,
+    "fakty": [
+      "Most i Brama Chińska zostały wzniesione w latach 1779–1780 na skrzyżowaniu Promenady Królewskiej i gościńca do Sielc i Wilanowa, nazwanego następnie Aleją Chińską.",
+      "Większość obiektów chińskich w Łazienkach z lat 1779–1800 projektował Jan Chrystian Kamsetzer.",
+      "Bramę rozebrano z rozkazu księcia Konstantego prawdopodobnie w roku 1823 albo 1825.",
+      "W 2012 roku archeolodzy odkryli pozostałości fundamentów mostu.",
+      "Budowę nowego Ogrodu Chińskiego w znacznej mierze sfinansowały firmy KGHM Polska Miedź i China Minmetals Corporation.",
+      "Koncepcję ogrodu opracowali prof. Edward Bartman i arch. Paweł Bartman; wszystkie elementy architektoniczne dostarczyło Muzeum Księcia Gonga w Pekinie.",
+      "Dwa lwy strzegące wejścia od strony Alei Chińskiej są podarunkiem Muzeum Rezydencji Księcia Gonga w Pekinie."
+    ],
+    "ciekawostki": [
+      "Pawilon Chiński symbolizuje pierwiastek męski, a Altana Chińska jest symbolem kobiecości; oba połączono kamiennym mostkiem symbolizującym Drogę Mleczną.",
+      "Malowidła w pawilonie tworzą historię pełną tradycyjnych chińskich treści; osiem obrazów opowiada ją wewnątrz."
+    ],
+    "summary_en": "The Chinese Garden in Łazienki Royal Park is a chinoiserie garden built around a pond in 2012, on the site of the 1779–1780 Chinese Bridge and Gate, which was dismantled in the 1820s. The garden elements were made by Chinese craftsmen and given by the Prince Gong Museum in Beijing.",
+    "ludzie": [
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "projektant większości obiektów chińskich w Łazienkach w XVIII wieku", "wiki": null},
+      {"kto": "prof. Edward Bartman", "rola": "współautor koncepcji nowego ogrodu", "wiki": null},
+      {"kto": "arch. Paweł Bartman", "rola": "współautor koncepcji nowego ogrodu", "wiki": null},
+      {"kto": "książę Konstanty", "rola": "wydał rozkaz rozebrania Bramy Chińskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ogród Chiński w Łazienkach Królewskich", "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Chi%C5%84ski_w_%C5%81azienkach_Kr%C3%B3lewskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł przy współrzędnych ogrodu; historyczne Most i Brama Chińska znajdowały się przy Alei Chińskiej (ok. skrzyżowania z Promenadą)."
+  },
+  {
+    "id": "ogrod-krasinskich",
+    "nazwa": "Ogród Krasińskich w Warszawie",
+    "name_en": "Krasiński Garden",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Krasińskich (między ul. Świętojerską, gen. Andersa, Starymi Nalewkami i Długą)",
+    "adres_historyczny": null,
+    "lat": 52.248333,
+    "lon": 21.002222,
+    "lokalizacja": "przyblizona",
+    "okres": "1676–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ogród został założony w stylu barokowym w 1676 roku jako część założenia pałacu Krasińskich, wzniesionego dla wojewody płockiego Jana Dobrogosta Krasińskiego; początkowo miał 3,4 ha.",
+      "Po zakupie w 1765 roku przez państwo nieruchomości na siedzibę Komisji Skarbu Koronnego, 1 kwietnia 1768 park udostępniono do użytku publicznego.",
+      "Prace z lat 1891–1895 według projektu głównego ogrodnika Warszawy Franciszka Szaniora nadały parkowi zachowany do dziś styl krajobrazowy.",
+      "Wieczorem 29 listopada 1830 roku powstańcy listopadowi stoczyli na zachodnich krańcach ogrodu zwycięską walkę z Pułkiem Wołyńskim.",
+      "W 1965 roku ogród wraz z bramą od strony ul. Nalewki wpisano do rejestru zabytków.",
+      "W 2012 roku na terenie parku wycięto 337 drzew, co stanowiło ok. ⅓ dotychczasowej ich liczby.",
+      "Po wojnie obszar parku powiększono do 11,8 ha."
+    ],
+    "ciekawostki": [
+      "W latach 2013–2014 prace archeologiczne w północnej części parku odsłoniły piwnice kamienic pod adresami Świętojerska 38 i 40, choć archiwum Bundu nie odnaleziono."
+    ],
+    "summary_en": "The Krasiński Garden is a historic park in Muranów, founded in 1676 as part of the Krasiński Palace complex and opened to the public in 1768. Its 1891–1895 landscape redesign gave it the style it keeps today.",
+    "ludzie": [
+      {"kto": "Jan Dobrogost Krasiński", "rola": "wojewoda płocki, fundator założenia ogrodowo-pałacowego", "wiki": null},
+      {"kto": "Franciszek Szanior", "rola": "główny ogrodnik Warszawy, autor projektu z lat 1891–1895", "wiki": null},
+      {"kto": "Renata Kaznowska", "rola": "kierowała stołecznym Zarządem Terenów Publicznych przy konkursie na rewitalizację w 2011 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ogród Krasińskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Krasi%C5%84skich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ogrod-na-gorze",
+    "nazwa": "Ogród Na Górze",
+    "name_en": "Na Górze Garden",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "park Marszałka Edwarda Rydza-Śmigłego, na południe od ul. Książęcej",
+    "adres_historyczny": null,
+    "lat": 52.228888888,
+    "lon": 21.028611111,
+    "lokalizacja": "przyblizona",
+    "okres": "1779–dziś (zachowane budynki)",
+    "istnieje": false,
+    "fakty": [
+      "Park założono w 1779 roku według projektu Szymona Bogumiła Zuga dla Kazimierza Poniatowskiego jako rezydencjonalny ogród o charakterze sentymentalnym.",
+      "Według projektu Zuga powstały wówczas m.in. Oberża (ok. 1779), pałac Letni (1779–1781), budynek kuchni z jadalnią, Remiza (Maneż) i Ananasarnie.",
+      "Kazimierz Poniatowski mieszkał w siedzibie Na Górze do swojej śmierci w 1800 roku.",
+      "W 1815 roku posiadłość wydzierżawiono Ludwikowi Chovot, który założył w ogrodach restaurację i urządził miejsce zabaw publicznych pod nazwą Frascati.",
+      "Ostatnia przebudowa pałacu Letniego w latach 1934–1935 według projektu Bohdana Pniewskiego doprowadziła do jego obecnej formy, czyli willi Pniewskiego.",
+      "Budynek mieszkalny nazywany Oberżą został całkowicie przebudowany w latach 1836–1838; na jego fundamentach powstał Biały Pałacyk na Frascati.",
+      "Po II wojnie światowej teren dawnego ogrodu stał się częścią Centralnego Parku Kultury; od 1992 roku nosi nazwę parku Marszałka Edwarda Rydza-Śmigłego."
+    ],
+    "ciekawostki": [
+      "Oberża w niektórych źródłach nazywana jest Karczmą Holenderską."
+    ],
+    "summary_en": "Na Górze was a sentimental residential garden laid out in 1779 by Szymon Bogumił Zug for Kazimierz Poniatowski, on the Vistula escarpment. The garden no longer exists as such; its buildings survive, including the Pniewski villa and the Biały Pałacyk na Frascati, within Rydz-Śmigły Park.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu ogrodu z 1779 roku", "wiki": null},
+      {"kto": "Kazimierz Poniatowski", "rola": "fundator i mieszkaniec posiadłości do 1800 roku", "wiki": null},
+      {"kto": "Ludwik Chovot", "rola": "dzierżawca od 1815 roku, założyciel Frascati", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "autor przebudowy pałacu Letniego w latach 1934–1935", "wiki": null}
+    ],
+    "dawne_nazwy": ["Frascati"],
+    "zrodla": [{"tytul": "Wikipedia: Ogród Na Górze", "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Na_G%C3%B3rze"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ogród jako założenie nie istnieje; zachowane są pałac Letni (willa Pniewskiego) i Biały Pałacyk na Frascati. Nazwa Frascati to nazwa miejsca zabaw z 1815 roku."
+  },
+  {
+    "id": "ogrod-pomologiczny",
+    "nazwa": "Ogród Pomologiczny w Warszawie",
+    "name_en": "Pomological Garden in Warsaw",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Emilii Plater 29 (zabudowa na terenie dawnego ogrodu)",
+    "adres_historyczny": "między ulicami Nowogrodzką, Leopoldyny (Emilii Plater), Wspólną i Teodora (Tytusa Chałubińskiego)",
+    "lat": 52.226111,
+    "lon": 21.004167,
+    "lokalizacja": "przyblizona",
+    "okres": "1870–1944",
+    "istnieje": false,
+    "fakty": [
+      "Pierwszy ogród pomologiczny w Warszawie został założony w 1864 z inicjatywy Jerzego Aleksandrowicza na terenie Instytutu Agronomicznego na Marymoncie.",
+      "Po likwidacji ogrodu na Marymoncie w związku z rozbudową Cytadeli założono kolejny, na gruntach folwarku Świętokrzyskiego, który otwarto dla publiczności w 1870 roku.",
+      "Pierwotnie ogród miał ok. 10 ha i sięgał do ul. Hożej; po przebiciu ul. Wspólnej jego powierzchnię zmniejszono do 4 ha.",
+      "W 1886 roku w ogrodzie uprawiano ok. 1200 odmian drzew i krzewów owocowych; rosło tam ok. 12 tys. drzew owocowych, głównie jabłoni i grusz.",
+      "Naprzeciwko ogrodu w 1879 roku rozpoczęła działalność prywatna Szkoła Ogrodnicza, funkcjonująca do 1886 roku; od 1915 roku działała przy ogrodzie Państwowa Średnia Szkoła Ogrodnicza.",
+      "Ogród został zniszczony w czasie powstania warszawskiego; jego pozostałości zlikwidowano w latach 50. XX wieku."
+    ],
+    "ciekawostki": [
+      "Przy wejściu do ogrodu stała budka z wagą, w której sprzedawano uprawiane tam owoce."
+    ],
+    "summary_en": "The Pomological Garden was an orchard-park between Nowogrodzka and Emilii Plater streets, open to the public from 1870. It was destroyed during the Warsaw Uprising in 1944 and its remains were cleared in the 1950s.",
+    "ludzie": [
+      {"kto": "Jerzy Aleksandrowicz", "rola": "inicjator założenia ogrodu pomologicznego w 1864 roku", "wiki": null},
+      {"kto": "Edmund Jankowski", "rola": "główny ogrodnik ogrodu, współtwórca Szkoły Ogrodniczej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ogród Pomologiczny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Pomologiczny_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica Emilii Plater nosiła dawniej nazwę Leopoldyny (jak podaje artykuł); adres_dzis to zabudowa na terenie dawnego ogrodu, nie sam ogród."
+  },
+  {
+    "id": "ogrod-saski",
+    "nazwa": "Ogród Saski",
+    "name_en": "Saxon Garden",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac marsz. Józefa Piłsudskiego, między placem Żelaznej Bramy, ul. Marszałkowską i ul. Królewską",
+    "adres_historyczny": null,
+    "lat": 52.24055556,
+    "lon": 21.00861111,
+    "lokalizacja": "przyblizona",
+    "okres": "1724–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie geometryczny ogród francuski założono w latach 1724–1748 dla króla Augusta II Mocnego według projektu Matthäusa Daniela Pöppelmanna i Zachariasa Longuelune’a jako ogród pałacu Saskiego.",
+      "27 maja 1727 roku król udostępnił ogród mieszkańcom Warszawy; był to pierwszy park publiczny w mieście.",
+      "W 1748 roku August III wzniósł tam Opernhaus, pierwszy na terenie Polski wolno stojący budynek teatralny zbudowany specjalnie w tym celu.",
+      "W 1847 roku w ogrodzie wybudowano zaprojektowany przez Henryka Marconiego Instytut Wód Mineralnych.",
+      "16 czerwca 1855 roku uruchomiono pierwszy warszawski wodociąg miejski; wzniesiony w Ogrodzie Saskim wodozbiór pełnił funkcję wieży ciśnień i zachował się do dziś.",
+      "W 1935 roku przez zachodnią część parku przebito ul. Marszałkowską do placu Żelaznej Bramy i ul. Żabiej.",
+      "4 maja 1942 roku ogród zamknięto dla ludności polskiej; w okresie okupacji nosił niemiecką nazwę Sächsischengarten.",
+      "W 2023 roku spółka Pałac Saski poinformowała, że planowana odbudowa pałacu Saskiego koliduje z ok. 150 drzewami; 60 przeznaczono do wycięcia, a 90 do przesadzenia."
+    ],
+    "ciekawostki": [
+      "W XIX wieku do ogrodzonego parku nie były wpuszczane osoby niechlujnie ubrane lub nietrzeźwe, Żydzi w tradycyjnych strojach ani dzieci do lat 14 bez opieki; przy każdej bramie stał policjant.",
+      "W dniach 31 marca – 2 kwietnia 1902 roku Towarzystwo Udziałowe Pleograf Kazimierza Prószyńskiego zorganizowało pionierskie pokazy polskich filmów dokumentujących życie w Warszawie."
+    ],
+    "summary_en": "The Saxon Garden, founded in 1724–1748 for King Augustus II, was opened to Warsaw residents in 1727 as the city's first public park. It was damaged in the 1939 siege and Warsaw Uprising, and today it stands on the Saxon Axis.",
+    "ludzie": [
+      {"kto": "August II Mocny", "rola": "założyciel ogrodu dla pałacu Saskiego", "wiki": null},
+      {"kto": "Matthäus Daniel Pöppelmann", "rola": "autor projektu ogrodu francuskiego", "wiki": null},
+      {"kto": "Zachariasz Longuelune", "rola": "autor projektu ogrodu francuskiego", "wiki": null},
+      {"kto": "James Savage", "rola": "autor przekomponowania na ogród angielski w latach 1816–1827", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "autor projektu Instytutu Wód Mineralnych i wodociągu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sächsischengarten (nazwa okupacyjna)"],
+    "zrodla": [{"tytul": "Wikipedia: Ogród Saski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ogr%C3%B3d_Saski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w sekcji 'Najwa...' (nagłówek ucięty w paczce); fakty pochodzą z części dostępnej."
+  }
+]

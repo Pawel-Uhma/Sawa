@@ -2,6 +2,8 @@
 // więc tu nie ma żadnych tekstów Sawy. Miejsca i współrzędne pochodzą z docs/historia/sawa-historia.geojson,
 // trasa to przybliżenie po ulicach (OSRM) z makiet w docs/ui/propozycje/html, a nie prawdziwa linia ZTM.
 
+import { type Lang, pick } from "@/features/i18n";
+
 export type LngLat = [number, number];
 
 /** Kroki suwaka czasu (min). Do 1 h co 5 min, dalej co 15 min, żeby odstęp 30 min–1 h nie był ściśnięty. */
@@ -191,7 +193,17 @@ export const ROUTE_LINE: LngLat[] = [
 export type MockStop = MockPlace & {
   // Minuty od startu trasy do tego punktu.
   etaMin: number;
+  // Z planera: sekundy od startu do punktu i ile Sawa może o nim mówić (`RoutePlace.windowSec`).
+  etaSec?: number;
+  windowSec?: number;
+  // Odcinek, na którym jest punkt; "walk" to spacer (wtedy `line` jest pusty).
+  mode?: "tram" | "bus" | "walk";
 };
+
+/** Jak podpisać odcinek punktu: numer linii albo „pieszo”. */
+export function stopLineLabel(stop: Pick<MockStop, "line" | "mode">, lang: Lang = "pl"): string {
+  return stop.mode === "walk" ? pick(lang, "pieszo", "on foot") : stop.line;
+}
 
 // Placeholder planera: liczba punktów rośnie z czasem, preferowane są wybrane tematy,
 // a kolejność wynika z położenia na trasie.
@@ -216,6 +228,8 @@ export function buildMockRoute(durationMin: number, interests: string[]): MockSt
 export type RidePreview = {
   id: string;
   title: string;
+  /** Tytuł po angielsku (features/i18n). */
+  titleEn: string;
   /** Orientacyjny czas, tylko do opisu na karcie. */
   durationMin: number;
   line: LngLat[];
@@ -225,6 +239,7 @@ export const UPCOMING_RIDES: RidePreview[] = [
   {
     id: "srodmiescie",
     title: "Śródmieście tramwajem",
+    titleEn: "City centre by tram",
     durationMin: 70,
     line: [
       [20.9795, 52.23565],
@@ -275,6 +290,7 @@ export const UPCOMING_RIDES: RidePreview[] = [
   {
     id: "praga",
     title: "Praga za oknem",
+    titleEn: "Praga out the window",
     durationMin: 85,
     line: [
       [20.9795, 52.23565],

@@ -1,0 +1,259 @@
+"use client";
+
+import type { Leg } from "@sawa/shared";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { type ReactNode, type Ref, useEffect, useRef, useState } from "react";
+import { RollingText, SkeletonLines, Spinner } from "@/components/waiting";
+import { useT } from "@/features/i18n";
+import { SPRING } from "../lib/device";
+import { formatDuration } from "../lib/format";
+import type { MockStop } from "../lib/mock-data";
+import { useStoryWaitMessage } from "../lib/story-wait";
+import { Attribution, Itinerary } from "./departures";
+import { PinIcon } from "./icons";
+import { LiveDot } from "./podcast-controls";
+import { SawaMenuButton } from "./sawa-menu";
+
+/*
+ * Ekran trasy na żywo (wybrany wariant A, propozycje w docs/ui/README.md).
+ * Sawa sama przechodzi od tematu do tematu z zegarem jazdy, ale słuchacz może ją prowadzić:
+ * sterowanie (stop, wstecz, odtwarzanie, dalej, suwak przejażdżki) jest na górze arkusza,
+ * więc zwinięty arkusz pokazuje tylko je, a rozwinięty także zapis tego, co Sawa mówi,
+ * i dojazd (jedna lista odcinków, bez powtarzania linii).
+ */
+
+/** Fragment strumienia Sawy przypisany do punktu trasy (temat, o którym wtedy mówiła). */
+export type TranscriptPart = { stopIndex: number; text: string };
+
+export type RouteLiveProps = {
+  durationMin: number;
+  end: { label: string; reached: boolean } | null;
+  legs: Leg[];
+  /** Podpis źródeł danych trasy (`Route.attribution`). */
+  attribution: string[];
+  stops: MockStop[];
+  /** Punkt, przy którym jest użytkownik i o którym Sawa teraz mówi. */
+  activeIndex: number;
+  onBack: () => void;
+  isDesktop: boolean;
+  isPlaying: boolean;
+  /** Ile bieżącego tematu już padło (0–100). */
+  progress: number;
+  /** Za ile sekund pierwsze miejsce; do tego czasu Sawa milczy. Null, gdy już może mówić. */
+  waitSec: number | null;
+  storyText: string | null;
+  storyState: "loading" | "ready" | "failed";
+  /** Całe dotychczasowe opowiadanie, ostatni fragment jest na żywo. */
+  transcript: TranscriptPart[];
+  /** Sterowanie opowieścią (`PodcastControls`), na samej górze arkusza. */
+  controls: ReactNode;
+};
+
+/* ------------------------------------------------------------------ */
+/* Wspólne klocki                                                      */
+/* ------------------------------------------------------------------ */
+
+function EndPill({ end }: { end: RouteLiveProps["end"] }) {
+  if (!end) return null;
+  return (
+    <p
+      role={end.reached ? undefined : "status"}
+      className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[13px] font-semibold ${
+        end.reached ? "bg-mieta-jasna text-glebia" : "bg-koral/15 text-tekst"
+      }`}
+    >
+      <PinIcon className="size-4 shrink-0" />
+      {end.label}
+    </p>
+  );
+}
+
+/**
+ * Tekst na żywo: wypowiedziane słowa pełnym kolorem, reszta jaśniej (jak napisy karaoke).
+ * Przy strumieniu tekst rośnie, a granica idzie za głosem.
+ */
+function LiveText({
+  text,
+  progress,
+  state,
+  className = "",
+  edgeRef,
+}: {
+  text: string | null;
+  progress: number;
+  state: RouteLiveProps["storyState"];
+  className?: string;
+  /** Znacznik w miejscu, do którego doszedł głos (do przewijania za nim). */
+  edgeRef?: Ref<HTMLSpanElement>;
+}) {
+  const t = useT();
+  const waitText = useStoryWaitMessage(state === "loading");
+  if (state === "failed") {
+    return (
+      <p className={`text-tekst-3 ${className}`}>
+        {t(
+          "Tu Sawa milczy. Odezwie się przy następnym miejscu.",
+          "Sawa is quiet here. She'll speak up at the next place.",
+        )}
+      </p>
+    );
+  }
+  if (state === "loading" || !text) {
+    // Szkielet akapitu w miejscu tekstu, nad nim to, co Sawa teraz robi
+    return (
+      <div aria-live="polite" className="flex flex-col gap-3">
+        <p className="flex min-w-0 items-center gap-2 text-[14px] font-semibold text-tekst-3">
+          <Spinner className="size-3.5 text-glebia" />
+          <RollingText
+            text={waitText ?? t("Sawa zbiera myśli…", "Sawa is gathering her thoughts…")}
+          />
+        </p>
+        <SkeletonLines lines={3} className="[&>span]:h-3.5" />
+      </div>
+    );
+  }
+  const words = text.split(/(\s+)/);
+  const wordCount = words.filter((w) => w.trim()).length;
+  const spoken = Math.round((wordCount * progress) / 100);
+  let seen = 0;
+  let cut = words.length;
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].trim()) seen++;
+    if (seen > spoken) {
+      cut = i;
+      break;
+    }
+  }
+  return (
+    <p aria-live="off" className={className}>
+      <span className="text-tekst transition-colors">{words.slice(0, cut).join("")}</span>
+      <span ref={edgeRef} />
+      <span className="text-tekst-3/70">{words.slice(cut).join("")}</span>
+    </p>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Ekran: jeden ciągły zapis tego, co mówi Sawa, jak napisy w radiu   */
+/* ------------------------------------------------------------------ */
+
+export function RouteLive({
+  durationMin,
+  end,
+  legs,
+  attribution,
+  stops,
+  activeIndex,
+  isDesktop,
+  isPlaying,
+  progress,
+  waitSec,
+  storyText,
+  storyState,
+  transcript,
+  controls,
+}: RouteLiveProps) {
+  const t = useT();
+  const waiting = waitSec !== null;
+  const reduce = useReducedMotion();
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const edgeRef = useRef<HTMLSpanElement>(null);
+  const [following, setFollowing] = useState(true);
+  const stop = stops[activeIndex];
+  const past = transcript.filter((part) => part.stopIndex < activeIndex);
+
+  // Zapis jedzie za głosem (granica wypowiedzianych słów na ok. 2/3 wysokości),
+  // dopóki użytkownik sam nie przewinie
+  // biome-ignore lint/correctness/useExhaustiveDependencies: przewijamy przy każdym nowym słowie
+  useEffect(() => {
+    const el = scrollRef.current;
+    const edge = edgeRef.current;
+    if (!el || !following) return;
+    const top = edge
+      ? edge.getBoundingClientRect().top -
+        el.getBoundingClientRect().top +
+        el.scrollTop -
+        el.clientHeight * 0.66
+      : el.scrollHeight;
+    if (Math.abs(el.scrollTop - top) < 4) return;
+    el.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
+  }, [following, progress, storyText, activeIndex, reduce]);
+
+  // Ręczne przewinięcie (palec, kółko) odpina zapis od głosu; nasze scrollTo tego nie robi
+  function stopFollowing() {
+    setFollowing(false);
+  }
+
+  return (
+    <div className="flex flex-col gap-4">
+      {isDesktop && <SawaMenuButton variant="inline" />}
+      {controls}
+      <div className="relative">
+        <div
+          ref={scrollRef}
+          onTouchMove={stopFollowing}
+          onWheel={stopFollowing}
+          className="h-[max(160px,calc(var(--trasa-widoczne,60dvh)-400px))] touch-pan-y overflow-y-auto overscroll-contain [mask-image:linear-gradient(to_bottom,transparent,black_28px,black_calc(100%-24px),transparent)]"
+        >
+          <div className="pb-[40%] pt-6">
+            {past.map((part) => (
+              <section key={part.stopIndex} className="mb-4">
+                <p className="mb-1 text-xs font-bold text-tekst-3">
+                  {part.stopIndex + 1} · {stops[part.stopIndex]?.name}
+                </p>
+                <p className="text-[15px] leading-relaxed text-tekst-3">{part.text}</p>
+              </section>
+            ))}
+            {stop && (
+              <section>
+                {past.length > 0 && (
+                  <p className="mb-1 text-xs font-bold text-glebia">
+                    {activeIndex + 1} · {stop.name}
+                  </p>
+                )}
+                {waiting ? (
+                  <p className="text-[15px] leading-relaxed text-tekst-3">
+                    {t(
+                      "Tu pojawi się to, co mówi Sawa. Nie chcesz czekać? Stuknij odtwarzanie.",
+                      "What Sawa says will appear here. Don't want to wait? Tap play.",
+                    )}
+                  </p>
+                ) : (
+                  <LiveText
+                    text={storyText}
+                    progress={progress}
+                    state={storyState}
+                    edgeRef={edgeRef}
+                    className="text-[19px] font-medium leading-[1.5] tracking-[-0.005em]"
+                  />
+                )}
+              </section>
+            )}
+          </div>
+        </div>
+        <AnimatePresence>
+          {!following && (
+            <motion.button
+              type="button"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 8 }}
+              transition={SPRING}
+              onClick={() => setFollowing(true)}
+              className="szklo absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full px-3.5 py-2 text-[13px] font-bold"
+            >
+              <LiveDot on={isPlaying} />
+              {t("Wróć do Sawy", "Back to Sawa")}
+            </motion.button>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {activeIndex === stops.length - 1 && <EndPill end={end} />}
+
+      <Itinerary legs={legs} duration={formatDuration(durationMin)} />
+
+      <Attribution lines={attribution} />
+    </div>
+  );
+}

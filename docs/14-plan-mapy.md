@@ -19,10 +19,11 @@ Podkład: **OpenFreeMap**, styl `https://tiles.openfreemap.org/styles/positron` 
 
 - Strona `/mapa` (link „Otwórz mapę” na `/`). Kroki 1–6 i 5a z §10 zrobione.
 - Miejsca z `GET /v1/places` po kafelkach z widoku (od 16:07, niżej §3), karta ze szczegółami z `GET /v1/places/:id`: okres, adres, tagi, pierwsze zdjęcie z podpisem, fakty (3 + rozwiń), źródła. Bez kluczy Supabase API serwuje `fake`.
-- Zainteresowania w `?i=` to kategorie (`historical`, `cultural`, `sports`, `nature`). Miejsca mają tagi, filtr mapuje je przez `interestsOfTags` z `packages/shared`.
+- Zainteresowania z onboardingu to kategorie (`historical`, `cultural`, `sports`, `nature`). Wpływają na wybór trasy przez planer i na to, co Sawa opowiada. Na mapie nie filtrują niczego: zawsze widać wszystkie ikony miejsc.
 - Trasa: `useDemoRoute` w `features/planner` woła `GET /v1/routes/demo` (planer R1). Brak API → mapa bez trasy i komunikat.
 - Sprawdzone zrzutami w headless Chromium (375 px i desktop).
-- Do zrobienia: `fitBounds` nie uwzględnia otwartej karty (trasa bywa pod nią), ostrzeżenie „Expected number, found null” w konsoli (prawdopodobnie styl podkładu).
+- Otwarta karta miejsca doliczana jest do paddingu kamery (`paddingWithSheet`: 412 px z lewej od 768 px, niżej pół wysokości z dołu); otwarcie i zamknięcie karty dopasowuje widok od nowa (T-101).
+- Do zrobienia: ostrzeżenie „Expected number, found null” w konsoli (prawdopodobnie styl podkładu).
 
 ## API `SawaMap` dla ekranów (17.10, uzgodnione z Pawłem)
 
@@ -30,7 +31,6 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 
 | Prop | Typ | Co robi |
 |---|---|---|
-| `interests` | `Interest[]` | kategorie z onboardingu, pusta lista = wszystkie miejsca |
 | `route?` | `Route` | trasa z planera: linie, ponumerowane miejsca, podpis danych |
 | `camera?` | `{type:"center", center, zoom?}` · `{type:"fit", points, maxZoom?}` · `{type:"route"}` | widok; bez propsa mapa dopasowuje się do trasy. Rusza się tylko, gdy żądanie naprawdę się zmieni |
 | `padding?` | `{top,right,bottom,left}` (częściowo) | miejsce zajęte przez panele ekranu, np. `{ bottom: 380 }` pod arkusz |
@@ -42,11 +42,13 @@ Podział R3: Antek robi mapę (`features/map`, warstwy, karta miejsca, „za okn
 
 **Playground:** `/mapa/playground` (`features/map-playground`). Każdy prop ma kontrolkę, nakładka pokazuje obszar `padding`, dziennik zbiera `onStopClick`, a na dole jest gotowy JSX do skopiowania. Trasa demo albo prawdziwy planer (`POST /v1/routes/plan`).
 
-## Ciemny motyw (17.10, 17:05, T-105)
+## Ciemny motyw (17.10, 17:05, T-119; 17:52 T-120)
 
 - Wybór Jasny / Ciemny / Auto w `features/theme` (menu Sawy, grupa „Wygląd”). Wynik trafia do `<html data-theme>`, skrypt w `app/layout.tsx` ustawia go przed pierwszym malowaniem.
 - Mapa bierze motyw z `useTheme()`: podkład `BASEMAP_STYLE_URLS[theme]` (OpenFreeMap `positron` / `dark`) i kolory własnych warstw z `MAP_PALETTES[theme]` (obwódki, numery miejsc trasy, podpisy, dojścia, krycie przygaszonych miejsc). Kolory linii trasy zostają te same, w ciemnym motywie mają jasną obwódkę.
-- Tokeny z `globals.css` ciemnieją wewnątrz `.motyw` (kontener `SawaMap`), więc ciemne są karta miejsca, podpowiedzi i kontrolki MapLibre.
+- Tokeny z `globals.css` ciemnieją wewnątrz `.motyw`. Od T-120 ta klasa jest na `<body>`, więc ciemna jest cała aplikacja, nie tylko mapa.
+- Woda: podkłady rysują rzeki na szaro, więc `useBasemapOverrides` po każdym załadowaniu stylu przemalowuje warstwy `water`, `waterway` i podpisy wody na niebiesko (`waterPaintOverrides`, kolory `water` i `waterLabel` w `MapPalette`).
+- Ulice: w ciemnym podkładzie małe ulice miały `#181818` na tle `#0c0c0c`, a w jasnym szarość 88% na 95%, więc ledwo je było widać. `roadPaintOverrides` przemalowuje warstwy `highway_*` i podpisy ulic kolorami z `MapPalette.roads`: w ciemnym ulice jaśniejsze od tła, a większe jaśniejsze od mniejszych, w jasnym boczne ulice ciemniejsze od tła. Obie listy nadpisań składa `basemapPaintOverrides`.
 - Ciemny styl OpenFreeMap loguje „Image wood-pattern could not be loaded” (brak obrazka w sprite). To ostrzeżenie, mapa działa.
 
 ## 3. Przepływ danych
@@ -67,7 +69,7 @@ features/map (React)
 | Szczegóły miejsca | `GET /v1/places/:id` | po kliknięciu punktu, prefetch przy najechaniu na desktopie | per `id` |
 | Trasa | `POST /v1/routes/plan` (`origin`, `durationMin`, `interests`) | po „Generuj” | per parametry |
 
-**Bbox z widoku (17.10, 16:07, decyzja Antka).** Baza ma już ok. 1300 miejsc w całej Warszawie, a stały prostokąt wokół 42 Warsaw gubił ich większość. Widok dzielimy na stałą siatkę kafelków 0,04° × 0,025° (ok. 2,7 × 2,8 km, `lib/place-tiles.ts`) i o każdy kafelek pytamy osobno. Przesunięcie mapy dociąga tylko nowe kafelki, a powrót bierze je z cache. Poniżej zoomu 13 mapa nie pobiera miejsc i pokazuje „Przybliż mapę, żeby zobaczyć miejsca”. Na bardzo szerokim ekranie najwyżej 36 kafelków najbliżej środka. Karta z linku `?p=` działa także wtedy, gdy miejsce leży poza widokiem: nazwa przychodzi z `GET /v1/places/:id`.
+**Bbox z widoku (17.10, 16:07, decyzja Antka).** Baza ma już ok. 1300 miejsc w całej Warszawie, a stały prostokąt wokół 42 Warsaw gubił ich większość. Widok dzielimy na stałą siatkę kafelków 0,04° × 0,025° (ok. 2,7 × 2,8 km, `lib/place-tiles.ts`) i o każdy kafelek pytamy osobno. Przesunięcie mapy dociąga tylko nowe kafelki, a powrót bierze je z cache. Poniżej zoomu 13 mapa pyta raz o całe miasto (`CITY_BBOX`, ok. 3000 miejsc, ok. 110 kB po gzip), zamiast o dziesiątki kafelków (T-118). Przy przejściu między kafelkami a całym miastem zostają poprzednie punkty, dopóki nowe się nie wczytają. Na bardzo szerokim ekranie najwyżej 36 kafelków najbliżej środka. Karta z linku `?p=` działa także wtedy, gdy miejsce leży poza widokiem: nazwa przychodzi z `GET /v1/places/:id`.
 
 ## 4. Kontrakt (potrzebny z T-63)
 
@@ -100,12 +102,12 @@ apps/web/src/features/map/
     use-selected-place.ts # id wybranego miejsca w URL (?p=kercelak), link da się udostępnić
   lib/
     route-to-geojson.ts   # Route → FeatureCollection<LineString> (odcinki) + <Point> (miejsca z numerem)
-    visible-places.ts     # czysta funkcja: które miejsca pokazać (zainteresowania + MIN_PLACE_RICHNESS)
+    visible-places.ts     # czysta funkcja: które miejsca pokazać (MIN_PLACE_RICHNESS)
     map-style.ts          # stałe: styl podkładu, kolory wg kind/mode, środek i zoom startowy, MIN_PLACE_RICHNESS
   index.ts                # eksportuje SawaMap i typy propsów
 ```
 
-`SawaMap` dostaje trasę i zainteresowania przez propsy (`route?: Route`, `interests: Interest[]`). Planer (`features/planner`) jej nie importuje, a strona w `app/` składa obie funkcje. Dzięki temu `/demo` użyje tej samej mapy ze stałą trasą.
+`SawaMap` dostaje trasę przez propsy (`route?: Route`). Planer (`features/planner`) jej nie importuje, a strona w `app/` składa obie funkcje. Dzięki temu `/demo` użyje tej samej mapy ze stałą trasą.
 
 Mapa ładuje się tylko w przeglądarce: `next/dynamic` z `ssr: false`, bo MapLibre potrzebuje `window` i WebGL. Next 16 w repo ma zmiany względem starszych wersji. Przed kodem przeczytaj właściwy przewodnik w `node_modules/next/dist/docs/` ([apps/web/AGENTS.md](../apps/web/AGENTS.md)).
 
@@ -114,18 +116,19 @@ Mapa ładuje się tylko w przeglądarce: `next/dynamic` z `ssr: false`, bo MapLi
 | Warstwa | Źródło | Wygląd | Interakcja |
 |---|---|---|---|
 | `places-circle` | `places` (GeoJSON z API, `promoteId: "id"`) | koło 6–8 px, kolor wg `kind` (9 typów → 5 kolorów, np. budynek/ulica, pomnik/tablica, mural, świątynia/cmentarz, miejsce/zdarzenie); większe przy wyższym `richness` | klik → `?p=<id>` i karta; kursor `pointer`; `feature-state: selected` = obwódka |
+| `places-cluster`, `places-cluster-count` | `places` (`cluster: true`, do zoomu 14, promień 44 px, od 10 miejsc w grupie) | ciemne koło z liczbą miejsc w grupie, większe przy większej grupie (T-118) | klik → `getClusterExpansionZoom` i `easeTo`, grupa się rozpada |
 | `places-label` | `places` | nazwa od zoomu 16, `text-optional`, żeby etykiety się nie nakładały | — |
 | `route-casing` + `route-line` | `route-legs` (z `route-to-geojson`) | linia 5 px z białą obwódką; kolor wg `mode` (tramwaj czerwony, autobus granatowy); przesiadka = przerwa i kropka | — |
 | `route-places` | `route-places` | koło z numerem 1..n (kolejność `etaSec`), nad zwykłymi miejscami | klik → ta sama karta |
 | pozycja startu | `origin` | pinezka „Ty” albo 42 Warsaw (brak GPS) | — |
 
-**Które miejsca pokazujemy.** Decyduje jedna czysta funkcja `selectVisiblePlaces(places, { interests, minRichness })` w `lib/visible-places.ts`. Wynik idzie jako `data` do źródła `places`, a komponent wywołuje ją w `useMemo`.
+**Które miejsca pokazujemy.** Decyduje jedna czysta funkcja `selectVisiblePlaces(places, { minRichness })` w `lib/visible-places.ts`. Wynik idzie jako `data` do źródła `places`, a komponent wywołuje ją w `useMemo`.
 
-- **Zainteresowania użytkownika:** lista z onboardingu (T-31), trzymana w URL (`?i=war_uprising,architecture`, [11 §4](11-zasady-pracy-i-kodu.md#frontend-appsweb-nextjs)). Strona czyta ją z URL i podaje mapie w propsie `interests`. Mapa pokazuje miejsca, które mają **co najmniej jedno** z wybranych zainteresowań (OR, jak `&&` w `places_in_bbox`). Pusta lista oznacza wszystkie miejsca. Około 82 miejsca bez żadnego zainteresowania znikają, gdy filtr jest aktywny.
+- **Zainteresowania użytkownika:** nie filtrują mapy. Mapa zawsze pokazuje wszystkie miejsca (powyżej progu bogactwa). Zainteresowania z onboardingu (T-31) idą do planera trasy i do opowieści.
 - **Richness (decyzja Antka, 17.10):** pokazujemy wszystkie, także ubogie (`richness < 2`, rekordy `g-*` i `osm-*`). Próg siedzi w stałej `MIN_PLACE_RICHNESS = 0` w `map-style.ts`. Zmiana progu to zmiana jednej liczby, w UI nie ma przełącznika.
 - **Miejsca na trasie** pokazujemy zawsze, niezależnie od filtra, bo wybrał je planer.
 
-Filtrujemy w przeglądarce, nie w API. Mamy już wszystkie 326 punktów, więc zmiana zainteresowań działa od razu, bez nowego zapytania. Filtr warstwy MapLibre (`["in", key, ["get", "interests"]]`) odpuszczamy: tablice we właściwościach GeoJSON MapLibre potrafi zamieniać na tekst (np. w `queryRenderedFeatures`), a czystą funkcję łatwo przetestować. Gdy dane wyjdą poza 1 km, filtr przechodzi do parametru `interests` w `GET /v1/places`.
+Zainteresowań nie filtrujemy ani w przeglądarce, ani w API: mapa pokazuje wszystkie miejsca, a zainteresowania działają tylko w planerze i w opowieści. Dzięki temu nie ma filtra warstwy MapLibre ani parametru `interests` w `GET /v1/places`.
 
 
 Gdy jest trasa: miejsca spoza trasy bledną (`circle-opacity` 0,35), a mapa robi `fitBounds` do trasy z marginesem pod dolny panel. Klastrowanie na razie pomijamy: 326 punktów w 1 km przy zoomie 15 jest czytelne. Wracamy do niego, jeśli test na telefonie pokaże tłok **[Z]**.
@@ -146,7 +149,7 @@ Gdy jest trasa: miejsca spoza trasy bledną (`circle-opacity` 0,35), a mapa robi
 
 - `route-to-geojson.ts`: kolejność `[lng, lat]`, numeracja miejsc wg `etaSec`, pusta trasa. Testy Vitest, obowiązkowe (czysta logika).
 - `map-style.ts`: każdy `kind` z danych ma kolor (test na liście 9 typów).
-- `visible-places.ts`: pusta lista zainteresowań = wszystkie miejsca; jedno pasujące zainteresowanie wystarcza (OR); miejsca bez zainteresowań odpadają przy aktywnym filtrze; próg 0 przepuszcza wszystkie, próg 2 odcina ubogie.
+- `visible-places.ts`: bez zainteresowań, wszystkie miejsca; próg 0 przepuszcza wszystkie, próg 2 odcina ubogie.
 - Wygląd sprawdzamy ręcznie na telefonie (375 px) i w `/demo`, bez testów zrzutów.
 
 ## 10. Kolejność pracy

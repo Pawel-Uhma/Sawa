@@ -83,6 +83,17 @@ export function BubbleIcon(props: IconProps) {
   );
 }
 
+export function ListenerIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <circle cx="9" cy="6.5" r="2.5" />
+      <path d="M4 21v-2a5 5 0 0 1 10 0v2" />
+      <circle cx="17.5" cy="11" r="2" />
+      <path d="M14 21v-1a3.5 3.5 0 0 1 7 0v1" />
+    </svg>
+  );
+}
+
 export function ShareIcon(props: IconProps) {
   return (
     <svg aria-hidden="true" {...base} {...props}>
@@ -143,6 +154,14 @@ export function PauseIcon(props: IconProps) {
   );
 }
 
+export function StopIcon(props: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <rect x="6" y="6" width="12" height="12" rx="2.2" />
+    </svg>
+  );
+}
+
 export function SkipNextIcon(props: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
@@ -164,6 +183,39 @@ export function TramIcon(props: IconProps) {
     <svg aria-hidden="true" {...base} {...props}>
       <rect x="5" y="6" width="14" height="12" rx="3" />
       <path d="M9 3h6M12 3v3M5 13h14M8 21l1.5-3M16 21l-1.5-3" />
+    </svg>
+  );
+}
+
+export function WalkIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <circle cx="13" cy="4" r="2" />
+      <path d="M7 21l3-7 3 2v5M6 13l3-4 3 1 2 4M16 8l-2 4" />
+    </svg>
+  );
+}
+
+export function LoopIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4" />
+    </svg>
+  );
+}
+
+export function ForwardIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M5 12h12M13 6l6 6-6 6" />
+    </svg>
+  );
+}
+
+export function CloseIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M6 6l12 12M18 6 6 18" />
     </svg>
   );
 }

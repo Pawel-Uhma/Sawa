@@ -1,0 +1,411 @@
+[
+  {
+    "id": "cmentarz-przy-kosciele-sw-wawrzynca",
+    "nazwa": "Cmentarz przy kościele św. Wawrzyńca",
+    "name_en": "St. Lawrence Church Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Wolska 140",
+    "adres_historyczny": null,
+    "lat": 52.2272,
+    "lon": 20.9439,
+    "lokalizacja": "dokladna",
+    "okres": "początek XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz powstał jako parafialny przy kościele św. Wawrzyńca, gdy na początku XVII wieku erygowano parafię.",
+      "W 1656 roku pochowano na nim ofiary walk ze Szwedami podczas potopu szwedzkiego.",
+      "Cmentarz uszkodzono podczas oblężenia Warszawy w 1794 roku oraz podczas obrony Reduty Wolskiej w 1831 roku.",
+      "Pochowano tu poległych żołnierzy obu stron, wraz z generałem Józefem Sowińskim.",
+      "W 1834 roku, po przekształceniu kościoła w cerkiew, cmentarz utracił charakter nekropolii katolickiej.",
+      "W 1923 roku cmentarz zamknięto dla pochówków; wyjątek zrobiono dla zmarłego w 1929 roku proboszcza Witolda Prądzyńskiego.",
+      "Na początku lat 30. XX wieku ekshumowano i przeniesiono na cmentarz prawosławny ciała 50 zmarłych tego wyznania.",
+      "Cmentarz był miejscem walk we wrześniu 1939 roku i w Rzezi Woli; znajduje się tu masowa mogiła ok. 1500 ofiar zbrodni niemieckich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The parish cemetery of St. Lawrence's church in Wola, founded in the early 17th century, has been closed to burials since 1923. It holds a mass grave of about 1,500 victims of the 1944 Wola massacre and graves of soldiers from the 1831 defence of the Wola Redoubt.",
+    "ludzie": [
+      {"kto": "Józef Sowiński", "rola": "generał, pochowany na cmentarzu po walkach w 1831 roku", "wiki": null},
+      {"kto": "Witold Prądzyński", "rola": "proboszcz, który przyczynił się do odbudowy kościoła po I wojnie światowej, zmarł w 1929 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz przy kościele św. Wawrzyńca w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cmentarz_przy_ko%C5%9Bciele_%C5%9Bw._Wawrzy%C5%84ca_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "czarny-kot",
+    "nazwa": "Czarny Kot",
+    "name_en": "Czarny Kot hotel",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Okopowa 65 (rozebrany)",
+    "adres_historyczny": "ul. Okopowa 65, róg ul. Powązkowskiej",
+    "lat": 52.253865,
+    "lon": 20.980934,
+    "lokalizacja": "dokladna",
+    "okres": "koniec lat 80. XX w.–2021",
+    "istnieje": false,
+    "fakty": [
+      "Czarny Kot (właśc. Czarny Kot My Warsaw Residence) był hotelem przy ul. Okopowej 65, na rogu ul. Powązkowskiej.",
+      "Powstał pod koniec lat 80. XX wieku jako jednopiętrowy pawilon handlowy.",
+      "Był rozbudowywany bez pozwoleń na budowę, aż do siedmiu kondygnacji; jedna z dobudówek zajęła grunt sąsiedniego dzierżawcy.",
+      "W 2010 roku władze m.st. Warszawy podjęły działania, by odzyskać nieruchomość.",
+      "W 2018 roku Naczelny Sąd Administracyjny uznał, że umowa dzierżawy z 10 maja 1994 roku wygasła 14 maja 2009 roku.",
+      "W grudniu 2019 roku zawarto umowę na rozbiórkę nielegalnych pięter; częściową rozbiórkę przeprowadzono w lutym 2020 roku.",
+      "Prace rozbiórkowe resztek budynku zakończono pod koniec grudnia 2021 roku."
+    ],
+    "ciekawostki": [
+      "Hotel opisywano jako „najbrzydszy budynek w Warszawie”, a mimo to cieszył się wysokimi ocenami klientów.",
+      "W 2025 roku Stanisław Łubieński opublikował książkę „Drugie życie Czarnego Kota”, za którą otrzymał Paszport „Polityki”."
+    ],
+    "summary_en": "Czarny Kot was a hotel at ul. Okopowa 65 in Wola, extended to seven storeys without building permits. Its illegal floors were demolished in 2019–2020, and the remains were torn down by the end of 2021.",
+    "ludzie": [
+      {"kto": "Michał Krasucki", "rola": "stołeczny konserwator zabytków, cytowany w artykule (2019)", "wiki": null},
+      {"kto": "Stanisław Łubieński", "rola": "autor książki „Drugie życie Czarnego Kota” (2025)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Czarny Kot (samowola budowlana)", "url": "https://pl.wikipedia.org/wiki/Czarny_Kot_%28samowola_budowlana%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "centrum-handlowe-klif",
+    "nazwa": "Centrum handlowe Klif",
+    "name_en": "Klif shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Okopowa 58/72",
+    "adres_historyczny": null,
+    "lat": 52.2471,
+    "lon": 20.9789,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od lat 70. XIX wieku na tym terenie działała garbarnia należąca do Stanisława Fryderyka Pfeiffera, a później jego synów.",
+      "W 1909 roku fabryka Pfeifferów była największym przedsiębiorstwem garbarskim na terenie Polski.",
+      "W czasie powstania warszawskiego na terenie fabryki dokonano masowych egzekucji ok. 5000 Polaków i Żydów, a zakład został całkowicie zniszczony.",
+      "Po wojnie teren wykorzystywały Warszawskie Zakłady Garbarskie i Zakłady Wklęsłodrukowe; po ich wyburzeniu zbudowano Warszawskie Centrum Handlowe Klif.",
+      "Oficjalne otwarcie centrum nastąpiło 3 marca 1999 roku.",
+      "19 lutego 2009 roku warszawski i gdyński Klif otrzymały Grand Prix w konkursie Shopping Center Forum & Awards.",
+      "W 2020 roku w centrum działało 112 sklepów, trzy restauracje, dwie kawiarnie oraz klub fitness.",
+      "31 maja 2002 roku na terenie centrum doszło do strzelaniny, w której zginęło dwóch mężczyzn; zdarzenie było elementem wojny gangów."
+    ],
+    "ciekawostki": [
+      "W skład zespołu wchodzi 16-kondygnacyjny biurowiec o powierzchni użytkowej 9052 m²."
+    ],
+    "summary_en": "The Klif shopping centre at ul. Okopowa 58/72 stands on the site of the Pfeiffer tannery. During the Warsaw Uprising the tannery was the scene of mass executions of about 5,000 people, and the centre opened in 1999.",
+    "ludzie": [
+      {"kto": "Stanisław Fryderyk Pfeiffer", "rola": "właściciel garbarni na tym terenie od lat 70. XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["garbarnia Pfeifferów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom Mody Klif w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Mody_Klif_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dziki-zachod",
+    "nazwa": "Dziki Zachód",
+    "name_en": "Dziki Zachód (Wild West) area",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.229444444,
+    "lon": 20.990833333,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dziki Zachód to nieformalna nazwa obszaru na pograniczu Woli i Śródmieścia, która pojawiła się po II wojnie światowej.",
+      "Obszar ograniczały w najszerszym ujęciu ulice: Towarowa, al. „Solidarności”, al. Jana Pawła II, ul. Świętokrzyska, ul. Emilii Plater i Aleje Jerozolimskie.",
+      "Na jego terenie były ruiny, prowizorycznie odremontowane kamienice, baraki, warsztaty i gołębniki, a przy ul. Pańskiej prowizoryczne targowisko.",
+      "Przy skrzyżowaniu ulic Srebrnej i Żelaznej znajdowała się warszawska izba wytrzeźwień, tzw. żłobek.",
+      "W 1961 roku przyjęto program uporządkowania „Dzikiego Zachodu”; nowe osiedla, m.in. Złota, Miedziana i Srebrna, zrealizowano do 1969 roku.",
+      "W latach 1965–1972 północną część terenu częściowo zabudowano blokami osiedla Za Żelazną Bramą.",
+      "Obszar słynął z wysokiej przestępczości i obecności melin."
+    ],
+    "ciekawostki": [
+      "Obszar opisał Leopold Tyrmand w powieści „Zły” z 1955 roku."
+    ],
+    "summary_en": "Dziki Zachód (Wild West) is an informal name, used since World War II, for a rundown area between Wola and Śródmieście. A 1961 programme replaced much of its wartime and interwar housing with new estates, completed by 1969.",
+    "ludzie": [
+      {"kto": "Leopold Tyrmand", "rola": "autor powieści „Zły” (1955), która opisuje ten obszar", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dziki Zachód (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Dziki_Zach%C3%B3d_%28Warszawa%29"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Obszar nie ma jednoznacznych granic; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "expo-xxi",
+    "nazwa": "EXPO XXI",
+    "name_en": "EXPO XXI Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Prądzyńskiego 12/14",
+    "adres_historyczny": null,
+    "lat": 52.22522,
+    "lon": 20.96212,
+    "lokalizacja": "dokladna",
+    "okres": "po 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks powstał w miejscu dawnych elewatorów zbożowych przy ul. Bema, zniszczonych podczas obrony Warszawy we wrześniu 1939 roku.",
+      "Ma ponad 17 000 m² powierzchni: 13 500 m² w halach, 1500 m² w salach konferencyjnych i pokojach do rozmów oraz 2200 m² ekspozycji zewnętrznej.",
+      "Składa się z czterech hal; hala nr 2 to budynek główny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "EXPO XXI is an exhibition and conference complex at ul. Prądzyńskiego 12/14 in Wola, built on the site of grain elevators on Bema Street that were destroyed in September 1939. It has over 17,000 m² of space in four halls.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Expo XXI Warszawa", "url": "https://pl.wikipedia.org/wiki/Expo_XXI_Warszawa"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie podaje roku budowy kompleksu; okres ustawiono wg zniszczenia elewatorów w 1939 roku. Wydarzenia (m.in. Europejskie Nagrody Filmowe 2006) pominięto, bo nie mają historii miejsca."
+  },
+  {
+    "id": "fabryka-garbarska-temler-i-szwede",
+    "nazwa": "Fabryka Garbarska Temler i Szwede",
+    "name_en": "Temler and Szwede Tannery",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Okopowa 78",
+    "adres_historyczny": "ul. Okopowa 78",
+    "lat": 52.2516,
+    "lon": 20.981,
+    "lokalizacja": "dokladna",
+    "okres": "1819–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia zakładu sięga 1819 roku, gdy garbarnię w Warszawie założył Jan Gottfried (Gotfryd) Temler (1793–1885).",
+      "Początkowo zakład działał na posesji na rogu ulic Białej i Ogrodowej; w 1858 roku przeniesiono go na ul. Okopową.",
+      "W połowie XIX wieku firmę przejęli synowie założyciela, Karol Ludwik i Aleksander Ferdynand Temlerowie, którzy zawiązali spółkę z Ludwikiem Szwede.",
+      "Była jednym z największych tego typu zakładów w Królestwie Polskim, cieszącym się renomą także za granicą.",
+      "Od lat 20. XX wieku w zarządzie zasiadał przedstawiciel rodziny Pfeifferów, posiadającej de facto 51% akcji.",
+      "Po wojnie zakład połączono z sąsiednią garbarnią Pfeifferów i odbudowano jako jedno przedsiębiorstwo; w 1948 roku znacjonalizowano je.",
+      "W 2010 roku budynek główny garbarni, maszynownia i kotłownia zostały wpisane do rejestru zabytków.",
+      "Obecnie kompleks pozostaje opuszczony, a o odzyskanie obiektu starają się potomkowie rodziny Temlerów."
+    ],
+    "ciekawostki": [
+      "W ostatnich latach w nieużytkowanych budynkach garbarni kilkukrotnie wybuchały pożary."
+    ],
+    "summary_en": "The Temler and Szwede tannery was founded in 1819 by Jan Gottfried Temler and moved to ul. Okopowa 78 in 1858. It was one of the largest tanneries in the Kingdom of Poland, was nationalised in 1948 and now stands largely abandoned.",
+    "ludzie": [
+      {"kto": "Jan Gottfried Temler", "rola": "założyciel garbarni w 1819 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fabryka Garbarska Temler i Szwede w Warszawie", "url": "https://pl.wikipedia.org/wiki/Fabryka_Garbarska_Temler_i_Szwede_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w jednym miejscu nazywa zakład nieistniejącym, a w innym pisze o opuszczonym kompleksie, więc istnieje ustawione na true."
+  },
+  {
+    "id": "forest-wiezowiec",
+    "nazwa": "Forest",
+    "name_en": "Forest tower complex",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Burakowska 14",
+    "adres_historyczny": null,
+    "lat": 52.253997222,
+    "lon": 20.982361111,
+    "lokalizacja": "dokladna",
+    "okres": "2022–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zakończenie budowy i uzyskanie pozwolenia na użytkowanie kompleksu nastąpiło 28 marca 2022 roku.",
+      "Kampus powstał na 2-hektarowym terenie i składa się z 120-metrowego wieżowca oraz przyległych budynków o wysokości od 6 do 8 kondygnacji.",
+      "Projekt zaprojektowała pracownia HRA Architekci.",
+      "Już na etapie budowy uzyskał certyfikat BREEAM na poziomie „Excellent”.",
+      "Na dachu jednego z budynków znajduje się ogród publiczny; wokół kompleksu posadzono 200 drzew i 200 krzewów.",
+      "Inwestycję zrealizowała słowacka firma HB Reavis; jej koszt wyniósł 162 miliony euro.",
+      "W 2022 roku budynek nagrodzono Nagrodą Architektoniczną Prezydenta m.st. Warszawy w kategorii Najlepszy budynek komercyjny.",
+      "W 2023 roku drodze po południowej stronie kompleksu nadano nazwę ulica Żubra, na wniosek najemcy, Banku Polska Kasa Opieki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Forest is a campus of office buildings at ul. Burakowska 14 in Wola, completed in March 2022. Its 120-metre tower stands on a 2-hectare site and has a public rooftop garden and a BREEAM Excellent certificate.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Forest (wieżowiec)", "url": "https://pl.wikipedia.org/wiki/Forest_%28wie%C5%BCowiec%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje sam kompleks, bez historii terenu przed budową."
+  },
+  {
+    "id": "fort-w-twierdzy-warszawa",
+    "nazwa": "Fort W",
+    "name_en": "Fort W of the Warsaw Fortress",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "teren między ul. Człuchowską a cmentarzem Wolskim",
+    "adres_historyczny": null,
+    "lat": 52.2275,
+    "lon": 20.9283,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XIX w.–1997",
+    "istnieje": false,
+    "fakty": [
+      "Fort W, zwany też fortem Wola, był fortem pierścienia wewnętrznego Twierdzy Warszawa, wybudowanym w latach 80. XIX wieku.",
+      "Był typowym umocnieniem ceglano-ziemnym o rzucie regularnego pięciokąta z dwoma czołami.",
+      "W latach 90. XIX wieku, w ramach modernizacji twierdzy, przeznaczono go na cele magazynowe.",
+      "Po 1909 roku fort częściowo rozebrano w ramach likwidacji twierdzy; w 1916 roku okupanci zezwolili na dalszą rozbiórkę, a cegłę wykorzystano m.in. do budowy muru cmentarza Wolskiego.",
+      "W okresie międzywojennym mieściły się tu koszary 3 Batalionu Pancernego oraz oficerska i podoficerska szkoła wojsk samochodowych.",
+      "W 1945 roku istniały już tylko niewyraźne ślady, m.in. resztki fosy.",
+      "Na początku lat 50. XX wieku teren przeznaczono pod budowę Zakładów Mechanicznych „Wola”.",
+      "W 1997 roku uznano, że fort uległ całkowitemu zniszczeniu."
+    ],
+    "ciekawostki": [
+      "Miejsce upamiętnia nazwa ulicy Fort Wola; centrum handlowe Fort Wola stoi dalej na esplanadzie fortu, przy ul. Połczyńskiej."
+    ],
+    "summary_en": "Fort W, also known as Fort Wola, was an 1880s brick-and-earth fort of the inner ring of the Warsaw Fortress. It was largely dismantled after 1909, and in 1997 it was declared fully destroyed.",
+    "ludzie": [],
+    "dawne_nazwy": ["fort Wola"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort W Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_W_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fort-w-szcza-twierdzy-warszawa",
+    "nazwa": "Fort W-Szcza",
+    "name_en": "Fort W-Szcza (Odolany)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "rejon ul. Gniewkowskiej i ul. Potrzebnej",
+    "adres_historyczny": null,
+    "lat": 52.215,
+    "lon": 20.935,
+    "lokalizacja": "przyblizona",
+    "okres": "1886–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort W-Szcza, zwany także fortem Odolany, był punktem oporu pierścienia wewnętrznego Twierdzy Warszawa w Imperium Rosyjskim.",
+      "Powstał w latach 80. XIX wieku w rejonie ulic Gniewkowskiej i Potrzebnej.",
+      "Wraz z czterema innymi fortami pierścienia wewnętrznego został wzniesiony w latach 1886–1890.",
+      "Jedynym zachowanym fragmentem budowli jest betonowy schron.",
+      "Relikty fortu zajęły ogródki działkowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort W-Szcza, also called Fort Odolany, was part of the inner ring of the Warsaw Fortress, built in 1886–1890. Only a concrete bunker remains, and the site is now allotment gardens.",
+    "ludzie": [],
+    "dawne_nazwy": ["fort Odolany"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort W-Szcza Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_W-Szcza_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka artykułu, przybliżone; schron leży w ogródkach działkowych."
+  },
+  {
+    "id": "fort-wola-centrum-handlowe",
+    "nazwa": "Fort Wola (centrum handlowe)",
+    "name_en": "Fort Wola shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Połczyńska 4",
+    "adres_historyczny": null,
+    "lat": 52.2236,
+    "lon": 20.9268,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Centrum handlowe przy ul. Połczyńskiej 4 otwarto w październiku 2001 roku jako centrum handlowe tzw. pierwszej generacji.",
+      "Do października 2006 roku większość obiektu zajmował hipermarket Géant, a następnie Real; w 2016 roku zastąpił go Auchan.",
+      "Centrum miało 30 000 m² powierzchni handlowej, w tym 20 500 m² powierzchni najmu brutto.",
+      "W maju 2017 roku centrum zamknięto.",
+      "W 2021 roku ogłoszono, że plany rozbudowy i zmiany nazwy na Galeria na Woli, z salonem sieci Ikea, nie są już aktualne.",
+      "Przebudowa rozpoczęła się w 2022 roku, a działalność wznowiono 16 lutego 2023 roku."
+    ],
+    "ciekawostki": [
+      "Centrum stoi na esplanadzie dawnego fortu W."
+    ],
+    "summary_en": "Fort Wola is a shopping centre at ul. Połczyńska 4, opened in October 2001 on the esplanade of the former Fort W. It closed in May 2017 and reopened in February 2023 after a rebuild.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort Wola", "url": "https://pl.wikipedia.org/wiki/Fort_Wola"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "mur-getta-sienna-55",
+    "nazwa": "Mur getta na ul. Siennej 55",
+    "name_en": "Ghetto wall at Sienna 55",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Sienna 55",
+    "adres_historyczny": null,
+    "lat": 52.231,
+    "lon": 20.9984,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1940–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Mur między posesjami Sienna 53 i 55 wyznaczał granicę getta; istniał już przed 1940 rokiem.",
+      "Mur ma ok. 3 metrów wysokości.",
+      "Po jego zachodniej stronie znajduje się tablica pamiątkowa, umieszczona dzięki inicjatywie Mieczysława Jędruszczaka.",
+      "W 1989 roku dwie cegły z tego muru przewieziono do Muzeum Holocaustu w Waszyngtonie; tam można obejrzeć kopię fragmentu.",
+      "Po wschodniej stronie, na terenie XII LO im. Henryka Sienkiewicza, odsłonięto w styczniu 2010 roku pomnik granic getta.",
+      "W 2017 roku władze dzielnicy podjęły działania na rzecz remontu muru i jego otoczenia."
+    ],
+    "ciekawostki": [
+      "Dostęp do fragmentu muru jest możliwy od strony ul. Złotej 62."
+    ],
+    "summary_en": "A wall about 3 m high between Sienna 53 and 55 marked the boundary of the Warsaw Ghetto and predates 1940. Two of its bricks went to the US Holocaust Memorial Museum in 1989.",
+    "ludzie": [
+      {"kto": "Mieczysław Jędruszczak", "rola": "inicjator upamiętnienia miejsca", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fragmenty murów getta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Fragmenty_mur%C3%B3w_getta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu zbiorczego o murach getta, nie samego muru."
+  },
+  {
+    "id": "mur-getta-zlota-62",
+    "nazwa": "Mur getta na ul. Złotej 62",
+    "name_en": "Ghetto wall at Złota 62",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Złota 62",
+    "adres_historyczny": null,
+    "lat": 52.229261,
+    "lon": 20.9946411,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1940–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Murem getta jest fragment ściany przedwojennego budynku o wysokości ok. 6 metrów.",
+      "Tablicę pamiątkową odsłonięto 26 maja 1992 roku podczas oficjalnej wizyty prezydenta Izraela Chaima Herzoga w Polsce.",
+      "Na murze znajduje się także tablica z mapą warszawskiego getta.",
+      "Pojedyncze cegły z tego fragmentu trafiły do Muzeum Historii Holocaustu Jad Waszem w Jerozolimie oraz do muzeów w Houston i Melbourne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A section of a pre-war building wall, about 6 m high, on ul. Złota 62 formed part of the Warsaw Ghetto boundary. A plaque unveiled in 1992 by Israeli President Chaim Herzog marks the site.",
+    "ludzie": [
+      {"kto": "Chaim Herzog", "rola": "prezydent Izraela, który odsłonił tablicę 26 maja 1992 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fragmenty murów getta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Fragmenty_mur%C3%B3w_getta_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne ulicy Złotej (środek odcinka), nie samego muru."
+  }
+]

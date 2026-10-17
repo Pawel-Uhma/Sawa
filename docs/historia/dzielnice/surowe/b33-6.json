@@ -1,0 +1,221 @@
+[
+  {
+    "id": "tunel-trasy-w-z",
+    "nazwa": "Tunel Trasy W-Z w Warszawie",
+    "name_en": "Trasa W-Z Tunnel in Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Solidarności (pod ul. Krakowskim Przedmieściem, Senatorską i Miodową)",
+    "adres_historyczny": null,
+    "lat": 52.2466,
+    "lon": 21.0127,
+    "lokalizacja": "dokladna",
+    "okres": "1948–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tunel drogowo-tramwajowy Trasy W-Z ma 196 metrów długości i przebiega w ciągu al. Solidarności pod ulicami Krakowskim Przedmieściem, Senatorską i Miodową.",
+      "Tunel wzorowano na tunelu Saint-Cloud pod Paryżem, a nawiązywał do projektu Jana Chmielewskiego z okresu okupacji.",
+      "Wykonawcą było Państwowe Przedsiębiorstwo Budowlane „Beton-Stal”, odpowiedzialne za zachodni odcinek Trasy W-Z.",
+      "Zdecydowano o wykopie otwartym, a wyburzone kamienice odtworzono; zburzono pałac Teppera, bo jego pozostawienie wymagałoby wydłużenia tunelu o kilkanaście metrów.",
+      "Betonowanie tunelu prowadzono od czerwca do listopada 1948 roku; budowę ukończono 7 grudnia 1948 roku, 55 dni przed terminem.",
+      "11 grudnia 1948 roku w tunelu odbył się wiec z okazji zjednoczenia polskiego ruchu robotniczego i powstania PZPR.",
+      "Dzięki tunelowi ruch między wschodnimi i zachodnimi dzielnicami Warszawy ominął ul. Krakowskie Przedmieście i plac Zamkowy."
+    ],
+    "ciekawostki": [
+      "W podziemiach kamienicy Johna umieszczono górny hol pierwszych warszawskich schodów ruchomych, łączących poziom wylotu tunelu z poziomem placu Zamkowego."
+    ],
+    "summary_en": "The Trasa W-Z tunnel runs under Aleja Solidarności in Warsaw for 196 metres, passing beneath Krakowskie Przedmieście, Senatorska and Miodowa streets. It was built with an open cut in 1948 in about seven months, modelled on the Saint-Cloud tunnel in Paris.",
+    "ludzie": [
+      {"kto": "Jan Chmielewski", "rola": "autor projektu z okresu okupacji, do którego nawiązano", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Tunel Trasy W-Z w Warszawie", "url": "https://pl.wikipedia.org/wiki/Tunel_Trasy_W-Z_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W 2016 roku tunel wpisano do gminnej ewidencji zabytków (wg artykułu). Pomnik Karola Świerczewskiego z 1957 roku przy wylocie tunelu pominięto."
+  },
+  {
+    "id": "tecza-plac-zbawiciela",
+    "nazwa": "Tęcza (instalacja artystyczna) na placu Zbawiciela",
+    "name_en": "Rainbow (Tęcza) art installation on Plac Zbawiciela",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Zbawiciela",
+    "adres_historyczny": null,
+    "lat": 52.219861111,
+    "lon": 21.018194444,
+    "lokalizacja": "dokladna",
+    "okres": "2012–2015",
+    "istnieje": false,
+    "fakty": [
+      "Instalacja „Tęcza” Julity Wójcik była w 2011 roku eksponowana przed Parlamentem Europejskim w Brukseli; 8 czerwca 2012 roku przeniesiono ją na warszawski plac Zbawiciela.",
+      "Na placu ustawiono ją na wschodniej połowie wyspy centralnej, na osi północny wschód – południowy zachód.",
+      "Konstrukcja wysoka na 9 metrów i szeroka na 26 metrów była wykonana z 16 tys. sztucznych kwiatów na metalowym szkielecie.",
+      "W czasie ekspozycji na placu Zbawiciela instalację podpalano siedmiokrotnie.",
+      "W nocy z 26 na 27 sierpnia 2015 roku instalację zdemontowano.",
+      "Od sierpnia 2015 prawa do projektu należą do Centrum Sztuki Współczesnej Zamek Ujazdowski.",
+      "W 2025 roku projekt odtworzenia instalacji na placu Zbawiciela uzyskał finansowanie z budżetu obywatelskiego; realizację zaplanowano na 2026 rok."
+    ],
+    "ciekawostki": [
+      "Instalacja była przedmiotem sporów i protestów; artykuł przytacza różne interpretacje jej symboliki, a autorka mówiła, że ma być „całkowicie wolna od jakichkolwiek narzuconych znaczeń”."
+    ],
+    "summary_en": "Tęcza (Rainbow) is an art installation by Julita Wójcik that stood on Plac Zbawiciela in Warsaw from 2012 until it was dismantled in August 2015. The 9-metre arch of artificial flowers was set alight seven times during its display; a reconstruction was funded through the participatory budget in 2025.",
+    "ludzie": [
+      {"kto": "Julita Wójcik", "rola": "autorka instalacji", "wiki": null},
+      {"kto": "Instytut Adama Mickiewicza", "rola": "zleceniodawca i właściciel instalacji", "wiki": null},
+      {"kto": "Centrum Sztuki Współczesnej Zamek Ujazdowski", "rola": "posiadacz praw do projektu od 2015 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Tęcza (instalacja artystyczna)", "url": "https://pl.wikipedia.org/wiki/T%C4%99cza_%28instalacja_artystyczna%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy instalacji tymczasowej; istnienie odtworzonej instalacji w 2026 roku nie jest potwierdzone w artykule."
+  },
+  {
+    "id": "ufficio-primo",
+    "nazwa": "Ufficio Primo (dawniej Biurowiec Prezydium Rządu)",
+    "name_en": "Ufficio Primo (formerly the Government Presidium office building)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wspólna 62",
+    "adres_historyczny": null,
+    "lat": 52.22655,
+    "lon": 21.00897,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektował Marek Leykam, za konstrukcję odpowiadał J. Dowgiałło; projekt zaprezentowano na wystawie w Zachęcie w 1950 roku.",
+      "Biurowiec wybudowano ok. 1952 roku jako siedzibę Prezydium Rządu Bolesława Bieruta; funkcję tę pełnił tylko przez kilka posiedzeń, do 1953 roku.",
+      "Od 1990 roku budynek należał do FSO, a następnie do spółki Euro Invest z grupy Kulczyk Holding.",
+      "W latach 1993–2008 w podziemiach działał klub muzyczny „Ground Zero”, w którym koncertowali m.in. U2, Eiffel 65 i Bob Geldof.",
+      "Wcześniej w tym miejscu działało kino „Barbara”, założone po 1956 roku.",
+      "W latach 2010–2012 przeprowadzono generalny remont; koszt przebudowy wyniósł ponad 15 mln euro, a powierzchnia najmu z salą konferencyjną przekracza 6000 m².",
+      "W 2015 roku budynek wpisano do rejestru zabytków nieruchomych województwa mazowieckiego (nr A-1290 z 19 marca 2015 roku)."
+    ],
+    "ciekawostki": [
+      "Nowa nazwa handlowa biurowca nawiązuje do florenckiej Galerii Uffizi.",
+      "W 2015 roku przed wejściami ustawiono cztery rzeźby Barbary Falender pod wspólnym tytułem „Strażnicy”."
+    ],
+    "summary_en": "Ufficio Primo at Wspólna 62 in Warsaw was built around 1952 as the office of the Government Presidium, which sat there only until 1953. Designed by Marek Leykam, it is a listed example of modernist historicism and was renovated in 2010–2012.",
+    "ludzie": [
+      {"kto": "Marek Leykam", "rola": "architekt budynku", "wiki": null},
+      {"kto": "J. Dowgiałło", "rola": "odpowiedzialny za konstrukcję", "wiki": null},
+      {"kto": "Bolesław Bierut", "rola": "patron Prezydium Rządu, którego siedziba mieściła się tu w latach 1952–1953", "wiki": null},
+      {"kto": "Barbara Falender", "rola": "autorka rzeźb „Strażnicy” (2015)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biurowiec Prezydium Rządu", "kino „Barbara” (wcześniej w tym miejscu)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ufficio Primo", "url": "https://pl.wikipedia.org/wiki/Ufficio_Primo"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w jednym miejscu podaje „ok. 1952” jako rok budowy; pełna lista najemców i zabytkowe detale pominięte."
+  },
+  {
+    "id": "ujazdow-warszawa",
+    "nazwa": "Ujazdów (Warszawa)",
+    "name_en": "Ujazdów (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "wieś i folwark Ujazdów",
+    "lat": 52.215277777,
+    "lon": 21.04,
+    "lokalizacja": "przyblizona",
+    "okres": "XII/XIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ujazdów to dawny gród, wieś i folwark królewski; historia zaczyna się od grodu Jazdów, powstałego w XII lub XIII wieku.",
+      "12 stycznia 1578 roku w Jazdowie, w obecności króla Stefana Batorego, uświetniono wesele Jana Zamoyskiego i Krystyny Radziwiłłówny wystawieniem Odprawy posłów greckich Jana Kochanowskiego.",
+      "W 1624 roku powstał Zamek Ujazdowski, w którym obecnie znajduje się Centrum Sztuki Współczesnej.",
+      "W 1784 roku zlikwidowano wieś Ujazdów, składającą się z dwudziestu kilku zagród na terenie obecnego parku Ujazdowskiego, Ogrodu Botanicznego i Łazienek Królewskich; mieszkańców przesiedlono do nowo utworzonej Nowej Wsi.",
+      "W 1818 roku założono Ogród Botaniczny Uniwersytetu Warszawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ujazdów was a royal stronghold, village and estate on the Vistula escarpment in today's Śródmieście. Its Zamek Ujazdowski dates from 1624 and houses the Centre for Contemporary Art, and the village was cleared in 1784.",
+    "ludzie": [
+      {"kto": "Stefan Batory", "rola": "król obecny na uroczystościach weselnych w 1578 roku", "wiki": null},
+      {"kto": "Jan Kochanowski", "rola": "autor Odprawy posłów greckich wystawionej w Jazdowie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Jazdów", "Nowa Wieś (miejsce przesiedlenia mieszkańców wsi Ujazdów)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ujazdów (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Ujazd%C3%B3w_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord zbiorczy dla obszaru MSI Ujazdów; współrzędne z nagłówka artykułu, lokalizacja przyblizona."
+  },
+  {
+    "id": "uklekniecie-willy-ego-brandta",
+    "nazwa": "Uklęknięcie Willy’ego Brandta przy Pomniku Bohaterów Getta",
+    "name_en": "Willy Brandt's kneeling at the Warsaw Ghetto Heroes Monument",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "przy Pomniku Bohaterów Getta (Muranów)",
+    "adres_historyczny": null,
+    "lat": 52.2497272,
+    "lon": 20.9941839,
+    "lokalizacja": "dokladna",
+    "okres": "7 grudnia 1970",
+    "istnieje": true,
+    "fakty": [
+      "7 grudnia 1970 roku kanclerz RFN Willy Brandt uklęknął na stopniach Pomnika Bohaterów Getta w Warszawie, podczas pierwszej oficjalnej wizyty kanclerza Niemiec Zachodnich w powojennej Polsce.",
+      "Przed Grobem Nieznanego Żołnierza Brandt złożył wieniec i oddał hołd poległym Polakom; ok. godz. 10.30 pojechał na teren dawnego getta.",
+      "Wizyta odbyła się przed podpisaniem Układu między PRL a RFN o podstawach normalizacji ich stosunków.",
+      "Gest zinterpretowano jako publiczne wyznanie winy i uznanie moralnej odpowiedzialności narodu niemieckiego wobec pomordowanych Żydów.",
+      "Wieniec pod Pomnikiem Getta był mniejszy od tego złożonego przed Grobem Nieznanego Żołnierza, a z polskiej strony obecni byli tylko urzędnicy niskiej rangi.",
+      "Władze PRL odebrały gest jako hołd złożony pod „niewłaściwym” pomnikiem; zdjęcie w całości zaczęto publikować w Polsce dopiero po 1989 roku."
+    ],
+    "ciekawostki": [
+      "Po latach Brandt powiedział: „Nad otchłanią niemieckiej historii, pod ciężarem milionów zamordowanych, uczyniłem to, co robią ludzie, kiedy brakuje im słów”."
+    ],
+    "summary_en": "On 7 December 1970, during his visit to Warsaw, West German Chancellor Willy Brandt knelt on the steps of the Warsaw Ghetto Heroes Monument. The gesture, which went beyond protocol, was read as an admission of collective German guilt and was little noticed in Poland until after 1989.",
+    "ludzie": [
+      {"kto": "Willy Brandt", "rola": "kanclerz Republiki Federalnej Niemiec, uczestnik zdarzenia", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Uklęknięcie Willy’ego Brandta", "url": "https://pl.wikipedia.org/wiki/Ukl%C4%99kni%C4%99cie_Willy%E2%80%99ego_Brandta"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł kończy się w połowie opisu reakcji w Niemczech; wspomniany pomnik Bohaterów Getta jest osobnym rekordem poza tą paczką."
+  },
+  {
+    "id": "umschlagplatz-stawki-4-6",
+    "nazwa": "Umschlagplatz (rampa kolejowa przy ul. Stawki 4/6)",
+    "name_en": "Umschlagplatz (railway ramp at 4/6 Stawki Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Stawki 4/6",
+    "lat": 52.25230833,
+    "lon": 20.98907778,
+    "lokalizacja": "dokladna",
+    "okres": "1921–1943",
+    "istnieje": false,
+    "fakty": [
+      "Umschlagplatz, czyli plac przeładunkowy, była rampą kolejową przy ul. Stawki 4/6, wykorzystywaną w latach 1942–1943 jako miejsce koncentracji Żydów z getta przed wywiezieniem do Treblinki.",
+      "Po otwarciu kolei obwodowej (1876) do magazynów wojskowych przy ul. Stawki doprowadzono bocznicę; w 1921 roku utworzono tu Dom Składowy Miejskich Zakładów Zaopatrywania Warszawy.",
+      "W grudniu 1940 roku część terenu przejęła niemiecka instytucja Transferstelle; na rampie odprawiano towary dla getta, a rampa wyznaczała granicę celną getta.",
+      "W kwietniu 1942 roku przez Umschlagplatz do getta przywieziono ok. 4 tys. Żydów niemieckich.",
+      "Od 22 lipca 1942 roku budowle kolejowe i gmach szkół były miejscem selekcji, przetrzymywania i załadunku Żydów przed wywózką do obozu zagłady w Treblince.",
+      "Według Władysława Szpilmana na placu mogło pomieścić się do 8000 osób; bywało, że przetrzymywano tam nawet ok. 10 000.",
+      "Siedziba komendy SS nadzorującej deportacje mieściła się w gmachu szkół przy ul. Stawki 21 (obecnie nr 5/7)."
+    ],
+    "ciekawostki": [
+      "Obóz przejściowy Dulag przy ul. Leszno 112, po stronie „aryjskiej”, zajmowali m.in. młodzi mężczyźni kierowani z Umschlagplatzu do pracy."
+    ],
+    "summary_en": "Umschlagplatz was a railway ramp at Stawki 4/6 in Warsaw, used in 1942–1943 to gather Jews from the Warsaw Ghetto before deportation to the Treblinka extermination camp. The ramp no longer exists.",
+    "ludzie": [
+      {"kto": "Władysław Szpilman", "rola": "świadek; podał szacunkową pojemność placu", "wiki": null},
+      {"kto": "Jakub Lejkin", "rola": "operacyjne dowództwo Żydowskiej Służby Porządkowej", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac przeładunkowy (Umschlagplatz)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Umschlagplatz w Warszawie", "url": "https://pl.wikipedia.org/wiki/Umschlagplatz_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje nieistniejącą rampę; rekord zapisano jako nieistniejący obiekt. Fragment po 29 lipca 1942 roku jest w paczce urwany."
+  }
+]

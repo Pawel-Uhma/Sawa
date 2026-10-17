@@ -1,0 +1,342 @@
+[
+  {
+    "id": "ulica-gabriela-piotra-boduena",
+    "nazwa": "Ulica Gabriela Piotra Boduena",
+    "name_en": "Gabriel Piotr Boduen Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Gabriela Piotra Boduena",
+    "adres_historyczny": null,
+    "lat": 52.2337174,
+    "lon": 21.0130153,
+    "lokalizacja": "przyblizona",
+    "okres": "1902–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1902 roku w związku z parcelacją terenów należących wcześniej do Szpitala Dzieciątka Jezus.",
+      "Nazwa, nadana oficjalnie 1 stycznia 1903, upamiętnia założyciela szpitala, księdza Gabriela Boduena.",
+      "Pierwsza zabudowa pojawiła się około 1905 roku: Dom Dochodowy Warszawskiego Towarzystwa Ubezpieczeń od Ognia pod nr 3/5, u zbiegu z Jasną, według projektu Władysława Marconiego.",
+      "Jeszcze przed 1912 rokiem pod nr 4 wybudowano kamienicę Maksymiliana Seidenbeuthla, zaprojektowaną przez Leona Wolskiego, przykład wczesnego modernizmu.",
+      "W zbliżonym czasie powstała kamienica Lewenfisza, dom własny Centralnej Kasy Pożyczkowo-Oszczędnościowej „Zgoda”; autorami projektu byli Leon Wolski i Zenon Binduchowski.",
+      "Pozostała historyczna zabudowa – gmach Banku Towarzystw Spółdzielczych, zwany Domem pod Orłami – jest przypisana numeracji ulicy Jasnej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Gabriel Piotr Boduen Street was laid out in 1902 on land that had belonged to the Child Jesus Hospital, and named in 1903 after its founder. Its first buildings date from about 1905, and its only surviving pre-war building is the early-modernist tenement at no. 4 by Leon Wolski.",
+    "ludzie": [
+      {"kto": "Gabriel Piotr Boduen", "rola": "ksiądz, założyciel Szpitala Dzieciątka Jezus; patron ulicy", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "projektant domu dochodowego pod nr 3/5", "wiki": null},
+      {"kto": "Leon Wolski", "rola": "architekt kamienicy Seidenbeuthla i Lewenfisza", "wiki": null},
+      {"kto": "Zenon Binduchowski", "rola": "architekt kamienicy Lewenfisza", "wiki": null},
+      {"kto": "Maksymilian Seidenbeuthl", "rola": "inwestor kamienicy pod nr 4", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Gabriela Piotra Boduena w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Gabriela_Piotra_Boduena_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-garbarska",
+    "nazwa": "Ulica Garbarska",
+    "name_en": "Garbarska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Garbarska",
+    "adres_historyczny": null,
+    "lat": 52.2462898,
+    "lon": 21.0174681,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1740–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała po roku 1740; w 1762 roku znalazła się w obrębie nowo powstałej jurydyki Mariensztadt.",
+      "Nazwa, nadana oficjalnie w 1770 roku, nawiązywała do mieszkających tu garbarzy.",
+      "Przed rokiem 1770 przy Garbarskiej wznosiło się 12 dworów drewnianych oraz ratusz jurydyki Mariensztadt.",
+      "Po roku 1843 w pobliżu wzniesiono Wiadukt Pancera, który optycznie zamknął ulicę.",
+      "W latach 1910–15 u zbiegu z ul. Nowy Zjazd wybudowano olbrzymią kamienicę Taubenhausa, jedną z najwyższych w mieście.",
+      "W 1944 roku spłonęły kamienice pod nr 3 i 5.",
+      "W latach 1948–1949, przy budowie osiedla Mariensztat, rozebrano ocalałą kamienicę Trachtenberga.",
+      "W 1952 roku wmurowano tablicę pamiątkową na budynku nr 7, w którym urodził się poeta Teofil Lenartowicz."
+    ],
+    "ciekawostki": [
+      "Wejście do ośmiopiętrowej kamienicy Taubenhausa znajdowało się na wysokości czwartego piętra i wiódł do niego pomost z nasypu Wiaduktu Pancera."
+    ],
+    "summary_en": "A street on the Powiśle side of the Mariensztat market, named in 1770 after the tanners who lived there. Poet Teofil Lenartowicz was born in a house on the street in 1822. The pre-war buildings were largely replaced by the socialist-realist development of Mariensztat in 1948–1949.",
+    "ludzie": [
+      {"kto": "Teofil Lenartowicz", "rola": "poeta, urodzony w 1822 roku w jednym z domów przy ulicy; tablica z 1952", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Garbarska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Garbarska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-grodzka",
+    "nazwa": "Ulica Grodzka",
+    "name_en": "Grodzka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Grodzka",
+    "adres_historyczny": "dawna ul. Grodzka (przed 1945)",
+    "lat": 52.2472403,
+    "lon": 21.0161195,
+    "lokalizacja": "przyblizona",
+    "okres": "1949–dziś (dawna ulica przed 1945)",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1949 roku w miejscu dawnej drogi prowadzącej z dziedzińca pałacu Pod Blachą ku Wiśle.",
+      "W 1780 roku według projektu Dominika Merliniego powstał budynek koszar, rozbudowany dekadę później.",
+      "W 1843 roku rozebrano budynki gospodarcze pałacu Pod Blachą oraz kościół Bernardynek; ich miejsce zajął wiadukt Pancera, zjazd z placu Zamkowego na Powiśle.",
+      "Po roku 1856 ulica otrzymała bruk i gazowe latarnie.",
+      "Na początku XX wieku Grodzką skrócono; wschodni odcinek ulicy wchłonął rynek Mariensztacki.",
+      "W 1944 roku Niemcy spalili dawne stajnie, a Wiadukt Pancera wysadzili w powietrze."
+    ],
+    "ciekawostki": [
+      "Dawna Grodzka biegła z placu Zamkowego ku Wiśle; dziś jej dawnemu przebiegowi odpowiada zachodni odcinek ulicy Nowy Zjazd."
+    ],
+    "summary_en": "The present Grodzka Street was laid out in 1949 on the line of an old road from the Pod Blachą palace to the Vistula. The earlier street of the same name was cut by the Pancer viaduct, which the Germans blew up in 1944.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "autor projektu koszar z 1780 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["dawna ul. Grodzka (przed 1945)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Grodzka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Grodzka_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł opisuje też przedwojenną ulicę o tej samej nazwie; faktyczny przebieg dzisiejszej ulicy zmienił się po 1944. Współrzędne to środek odcinka."
+  },
+  {
+    "id": "ulica-gorno-slaska",
+    "nazwa": "Ulica Górnośląska",
+    "name_en": "Górnośląska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Górnośląska",
+    "adres_historyczny": "ul. Górna (1770–1922)",
+    "lat": 52.2255453,
+    "lon": 21.0388203,
+    "lokalizacja": "przyblizona",
+    "okres": "1740–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica po raz pierwszy pojawiła się na mapach w 1740 roku; biegła w wąwozie od ulicy Wiejskiej do ulicy Rozbrat.",
+      "Od 1770 roku nosiła nazwę Górna, realnie umotywowaną położeniem ulicy.",
+      "Od ok. 1775 roku u zbiegu z ul. Rozbrat działała wielka cegielnia królewska.",
+      "Od 1799 roku właścicielami rezydencji Ustronie byli Radziwiłłowie; w 1820 roku ostatni z nich, Dominik Radziwiłł, sprzedał pałac rządowi Królestwa Polskiego.",
+      "W 1922 roku nazwę ulicy zmieniono na Górnośląską, dla uczczenia przyłączenia do Rzeczypospolitej wschodniej części Górnego Śląska.",
+      "Od 1923 roku przy nieparzystej stronie powstało sześć willi Kolonii Profesorskiej, których projekty i mieszkańcy to profesorowie Wydziału Architektury Politechniki Warszawskiej.",
+      "W 1929 roku w budynkach pofabrycznych przy skrzyżowaniu z ul. Czerniakowską uruchomiono montownię samochodów Citroën.",
+      "W grudniu 1975 roku oddano do użytku kładkę nad ulicą przy Myśliwieckiej, zaprojektowaną przez Mariana Sokołowskiego i Józefa Sieczkowskiego.",
+      "Ostatnie miejsce zamieszkania i śmierci Władysława Reymonta to dom pod nr 16; tablicę odsłonięto w 1967 roku."
+    ],
+    "ciekawostki": [
+      "W latach 1967–1988 w bloku pod nr 9/11 mieszkał Jan Himilsbach, na budynku jest tablica pamiątkowa."
+    ],
+    "summary_en": "Górnośląska Street was called Górna from 1770 and renamed in 1922 to mark the incorporation of eastern Upper Silesia into Poland. Its villas of the 1920s, known as the Professors' Colony, were designed by Warsaw Polytechnic architecture professors. Władysław Reymont died at no. 16.",
+    "ludzie": [
+      {"kto": "Dominik Radziwiłł", "rola": "właściciel rezydencji Ustronie, sprzedał pałac w 1820 roku", "wiki": null},
+      {"kto": "Kazimierz Poniatowski", "rola": "właściciel rezydencji Ustronie", "wiki": null},
+      {"kto": "Stanisław Zawadzki", "rola": "projektant pałacu Ustronie", "wiki": null},
+      {"kto": "Władysław Reymont", "rola": "ostatnie miejsce zamieszkania i śmierci pod nr 16", "wiki": null},
+      {"kto": "Jan Himilsbach", "rola": "mieszkał w bloku pod nr 9/11 w latach 1967–1988", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "architekt willi i budynków przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Górna (1770–1922)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Górnośląska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_G%C3%B3rno%C5%9Bl%C4%85ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-gesia",
+    "nazwa": "Ulica Gęsia",
+    "name_en": "Gęsia Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Gęsia (osiedlowa, nazwana w 2025)",
+    "adres_historyczny": "ul. Gęsia (przed 1955)",
+    "lat": 52.250365,
+    "lon": 20.9983022,
+    "lokalizacja": "przyblizona",
+    "okres": "średniowiecze–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawna droga narolna pojawia się w średniowieczu jako droga Nowego Miasta; stanowiła przedłużenie późniejszej ul. Franciszkańskiej do Traktu Młocińskiego.",
+      "Pierwszą zabudową parzystej strony były koszary Artylerii Koronnej wybudowane w latach 1785–1789 według projektu Stanisława Zawadzkiego.",
+      "W 1826 roku według projektu Antonia Corazziego wybudowano budynek Szkoły Rabinów i Nauczycieli.",
+      "14 września 1907 roku oddano do użytku linię tramwaju konnego między ulicami Nalewki i Dziką.",
+      "5 maja 1917 roku w gmachu Koszar Artylerii Koronnej zorganizowano Areszt Polowy dla żołnierzy Legionów Polskich.",
+      "16 listopada 1940 roku ulica znalazła się w całości w granicach getta.",
+      "W 1943 roku dawna zabudowa ulicy uległa zniszczeniu.",
+      "31 grudnia 1955 roku nowej ulicy po śladzie Gęsiej nadano nazwę dowódcy powstania w getcie Mordechaja Anielewicza.",
+      "W styczniu 2025 roku Rada m. st. Warszawy nadała nazwę Gęsia osiedlowej ulicy łączącej Nalewki z ulicą Andersa."
+    ],
+    "ciekawostki": [
+      "2 sierpnia 1917 roku w Więzieniu Fortecznym przy ul. Dzikiej i Gęsiej przebywało 365 aresztantów."
+    ],
+    "summary_en": "A medieval road that became a street of Nowe Miasto, later part of the Warsaw Ghetto. The original street was largely destroyed in 1943, and a new residential street on its line was named Mordechaj Anielewicz in 1955. In 2025 the name Gęsia was restored to a housing street following the old route.",
+    "ludzie": [
+      {"kto": "Stanisław Zawadzki", "rola": "projektant koszar Artylerii Koronnej (1785–1789)", "wiki": null},
+      {"kto": "Antoni Corazzi", "rola": "projektant budynku Szkoły Rabinów i Nauczycieli (1826)", "wiki": null},
+      {"kto": "Mordechaj Anielewicz", "rola": "dowódca powstania w getcie warszawskim, patron nowej ulicy z 1955", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Mordechaja Anielewicza (1955–2025, nowa ulica po śladzie Gęsiej)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Gęsia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_G%C4%99sia_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współczesna ulica Gęsia to osiedlowa ulica pokrywająca się z niewielkim wschodnim fragmentem przebiegu historycznej Gęsiej. Współrzędne to środek odcinka z nagłówka."
+  },
+  {
+    "id": "gesiowka",
+    "nazwa": "Gęsiówka (Areszt Centralny dla dzielnicy żydowskiej)",
+    "name_en": "Gęsiówka (Central Prison for the Jewish District)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Gęsia 24 (dawny adres)",
+    "adres_historyczny": "ul. Gęsia 24",
+    "lat": 52.250365,
+    "lon": 20.9983022,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–po 1960",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1940–1942 w budynkach pod nr 24 mieścił się Areszt Centralny dla dzielnicy żydowskiej, nazywany „Gęsiówką”.",
+      "Areszt został następnie wraz z gmachem głównym (ul. Zamenhofa 19) włączony do kompleksu obozu koncentracyjnego KL Warschau.",
+      "Dawna zabudowa ulicy uległa zniszczeniu w 1943 roku, podczas i po powstaniu w getcie warszawskim.",
+      "Ocalałe wypalone budynki „Gęsiówki” rozebrano po 1960 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Gęsiówka was a prison in the Warsaw Ghetto at 24 Gęsia Street, used from 1940 to 1942 as the central detention facility for the Jewish district. It was later incorporated into the KL Warschau camp complex. The burnt-out buildings were demolished after 1960.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Gęsia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_G%C4%99sia_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Budynek nieistniejący. Lokalizacja przybliżona do środka ulicy Gęsiej."
+  },
+  {
+    "id": "ulica-gesta",
+    "nazwa": "Ulica Gęsta",
+    "name_en": "Gęsta Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Gęsta",
+    "adres_historyczny": null,
+    "lat": 52.2423869,
+    "lon": 21.0224362,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1750–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona na swym środkowym odcinku około 1750 roku wzdłuż koryta skanalizowanego wcześniej strumienia; obecną nazwę nadano w 1770 roku.",
+      "Pierwszą zabudowę stanowiło pięć drewnianych domów między ul. Browarną a skarpą.",
+      "Około 1822 roku pod nr 8/12 wybudowano niewielką kamieniczkę należącą do Gaduszewskiego; do połowy XIX wieku była jedynym murowanym budynkiem przy ulicy.",
+      "Około 1936 roku powstał zespół budynków sióstr urszulanek, tzw. Szary Dom, przypisany numeracji ul. Dobrej (nr 59), według projektu Wacława Wekera.",
+      "W 1944 roku spłonęła cała zabudowa ulicy; jej ostatnie relikty dotrwały na skarpie do lat pięćdziesiątych XX wieku.",
+      "Obecnie jedynym budynkiem z adresem ul. Gęsta jest fragment domu urszulanek pod nr 1; pozostałe zabudowania mają adresy ul. Wiślanej.",
+      "Na ulicy kręcono zdjęcia do filmu „Dziesięciu z Pawiaka”."
+    ],
+    "ciekawostki": [
+      "Parzystą pierzeję Gęstej w całości wypełnił po wojnie park, a stok skarpy nie został ponownie zabudowany."
+    ],
+    "summary_en": "Gęsta Street on Powiśle follows a stream channel laid out around 1750. Its buildings burned in 1944, and the even side was turned into a park. Today only one building still carries a Gęsta address, the Ursuline sisters' house at no. 1.",
+    "ludzie": [
+      {"kto": "Gaduszewski", "rola": "właściciel kamieniczki pod nr 8/12 (ok. 1822)", "wiki": null},
+      {"kto": "Wacław Weker", "rola": "autor projektu Szarego Domu (ok. 1936)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Gęsta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_G%C4%99sta_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-henryka-sienkiewicza",
+    "nazwa": "Ulica Henryka Sienkiewicza",
+    "name_en": "Henryk Sienkiewicz Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Henryka Sienkiewicza",
+    "adres_historyczny": "ul. Nowosienna (1902–1916)",
+    "lat": 52.2339406,
+    "lon": 21.0108982,
+    "lokalizacja": "przyblizona",
+    "okres": "1754–dziś (aleja ogrodowa przed 1754)",
+    "istnieje": true,
+    "fakty": [
+      "W pierwszej połowie XVIII wieku w miejscu ulicy biegła aleja ogrodowa, zlikwidowana w 1754 roku w związku z budową Szpitala Dzieciątka Jezus.",
+      "W 1902 roku w miejscu dawnej alei przeprowadzono ulicę, której nadano nazwę Nowosienna.",
+      "W listopadzie 1916 roku nazwę ulicy zmieniono na Henryka Sienkiewicza.",
+      "W czasie obrony Warszawy we wrześniu 1939 roku część zabudowy ulicy, m.in. gmach Filharmonii, została spalona.",
+      "W okresie okupacji przywrócono dawną polską nazwę Nowosienna i wprowadzono niemiecką Neuheustrasse.",
+      "W sierpniu 1944 roku w rejonie ulicy była koncentracja kompanii „Koszta”; zbudowano trzy barykady.",
+      "W 1944 roku Niemcy zniszczyli kamienice przy ulicy.",
+      "W latach 1950–1954 zachodnią pierzeję placu Napoleona wypełnił biurowiec Centrali Handlowej Materiałów Budowlanych."
+    ],
+    "ciekawostki": [
+      "Druga ulica o tej samej nazwie znajduje się w dzielnicy Wesoła; po przyłączeniu Wesołej w 2002 roku pozostawiono ponad 260 dublujących się nazw ulic i placów."
+    ],
+    "summary_en": "Named after Henryk Sienkiewicz in 1916, the street was earlier Nowosienna and grew out of a garden alley cut in 1754. The Warsaw Philharmonic building went up in 1900–1901, and the street was damaged in 1939 and 1944.",
+    "ludzie": [],
+    "dawne_nazwy": ["Nowosienna (1902–1916; okupacja: Neuheustrasse)", "aleja ogrodowa (przed 1754)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Henryka Sienkiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Henryka_Sienkiewicza_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "filharmonia-narodowa",
+    "nazwa": "Filharmonia Narodowa",
+    "name_en": "National Philharmonic Hall",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jasna (główne wejście od ul. Sienkiewicza)",
+    "adres_historyczny": null,
+    "lat": 52.2339406,
+    "lon": 21.0108982,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1900–1901 między ulicą Jasną a późniejszymi ulicami Nowosienną i Moniuszki wzniesiono gmach Filharmonii Warszawskiej.",
+      "W czasie obrony Warszawy we wrześniu 1939 roku gmach Filharmonii został spalony.",
+      "W odbudowanym po wojnie gmachu główne wejście przeniesiono z ul. Jasnej na stronę ul. Sienkiewicza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warsaw Philharmonic building was built in 1900–1901 between Jasna and what later became Nowosienna and Moniuszki streets. It was burned in September 1939 and rebuilt after the war, when its main entrance moved to Sienkiewicza Street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Henryka Sienkiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Henryka_Sienkiewicza_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie podaje numeru budynku; lokalizacja to środek ulicy Sienkiewicza."
+  },
+  {
+    "id": "ulica-hipoteczna",
+    "nazwa": "Ulica Hipoteczna",
+    "name_en": "Hipoteczna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Hipoteczna",
+    "adres_historyczny": "ul. Teatralna (do 1912)",
+    "lat": 52.2454597,
+    "lon": 21.0072441,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1900 roku jako droga dojazdowa do gmachu Teatru Nowości według projektu Feliksa Stępińskiego, przypisanego numeracji ul. Długiej.",
+      "Początek ulicy wyznaczył dziedziniec dworu podskarbiego nadwornego koronnego Jana Mikołaja Daniłowicza, wybudowany w 1621 roku.",
+      "W 1736 roku dwór przeszedł na własność biskupa Andrzeja Stanisława Kostki Załuskiego, który wraz z bratem Józefem Andrzejem utworzył tu pierwszą na ziemiach Rzeczypospolitej ogólnodostępną bibliotekę, zwaną Biblioteką Załuskich.",
+      "W 1794 roku zbiory liczące już 300 tys. tomów zostały wywiezione przez Rosjan do Petersburga.",
+      "W latach 1892–1900 pod nr 4 według projektu Stefana Szyllera powstał gmach IV Gimnazjum Żeńskiego.",
+      "W 1944 roku spłonęła cała zabudowa ulicy; dobrze zachowane budynki rozebrano w latach 1947–1948 w związku z budową Trasy W-Z."
+    ],
+    "ciekawostki": [
+      "Część zbioru Biblioteki Załuskich, od 1928 roku związana z Biblioteką Narodową, uległa w znacznej części zniszczeniu w 1944 roku."
+    ],
+    "summary_en": "Hipoteczna Street opened in 1900 as an access road to the Teatr Nowości, and its name comes from the Mortgage Office building. Its origin is the 1621 court of Jan Mikołaj Daniłowicz, where the Załuski Library, the first public library in the Commonwealth, was founded. The street was largely burned in 1944 and cleared for the Trasa W-Z expressway.",
+    "ludzie": [
+      {"kto": "Feliks Stępiński", "rola": "projektant gmachu Teatru Nowości (1900)", "wiki": null},
+      {"kto": "Jan Mikołaj Daniłowicz", "rola": "podskarbi nadworny koronny, inwestor dworu z 1621 roku", "wiki": null},
+      {"kto": "Andrzej Stanisław Kostka Załuski", "rola": "biskup, współzałożyciel Biblioteki Załuskich", "wiki": null},
+      {"kto": "Józef Andrzej Załuski", "rola": "współzałożyciel Biblioteki Załuskich", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "projektant gmachu IV Gimnazjum Żeńskiego", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatralna (do 1912)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Hipoteczna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Hipoteczna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  }
+]

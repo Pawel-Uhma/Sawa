@@ -1,0 +1,277 @@
+[
+  {
+    "id": "ulica-pulkowa",
+    "nazwa": "Ulica Pułkowa",
+    "name_en": "Pułkowa Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Pułkowa",
+    "adres_historyczny": null,
+    "lat": 52.3115381,
+    "lon": 20.9243663,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest częścią Wisłostrady i fragmentem drogi krajowej nr 7 oraz trasy europejskiej E77.",
+      "Biegnie od węzła z trasą mostu Marii Skłodowskiej-Curie do granicy z Łomiankami, gdzie przechodzi w ul. Kolejową.",
+      "Jej długość wynosi 3,13 km.",
+      "W czasach PRL, do reformy sieci drogowej w 1985 roku, była fragmentem drogi państwowej nr 10 i drogi międzynarodowej E81."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Pułkowa Street is part of the Wisłostrada expressway in Bielany, running 3.13 km from the Maria Skłodowska-Curie Bridge interchange to the Łomianki border. Until 1985 it was part of national road 10 and European route E81.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Pułkowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pu%C5%82kowa_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki, tylko opis przebiegu i dróg. Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-platnicza",
+    "nazwa": "Ulica Płatnicza",
+    "name_en": "Płatnicza Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Płatnicza",
+    "adres_historyczny": "Chełmżyńska (do 1951/1952)",
+    "lat": 52.2811566,
+    "lon": 20.9472127,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Do 1951 roku ulica nosiła nazwę Chełmżyńskiej, co upamiętnia tabliczka na placu Konfederacji.",
+      "Nazwę zmieniono w 1952 roku, formalnie zaś w 1954 roku.",
+      "Niskie budynki osiedla Zdobycz Robotnicza w stylu dworkowym powstały w latach 20. XX wieku dla pracowników Zakładów Amunicyjnych „Pocisk”; część z nich zaprojektował Janusz Dzierżawski.",
+      "Przy ulicy znajdują się zabytkowe latarnie gazowe, przeniesione tam w latach 30. XX wieku podczas elektryfikacji centrum Warszawy.",
+      "W grudniu 2018 roku na bocznej ścianie domu pod nr 59, w którym przez kilkanaście lat mieszkała Kora, odsłonięto neon „Miłość to wieczna tęsknota”, ufundowany przez Urząd Dzielnicy Warszawa-Bielany."
+    ],
+    "ciekawostki": [
+      "Wśród znanych mieszkańców ulicy byli m.in. Krystyna Sienkiewicz (nr 35/37), Włodzimierz Tarło-Maziński (dom pod nr 65) oraz varsavianista Jarosław Zieliński."
+    ],
+    "summary_en": "Płatnicza Street in Bielany was renamed in 1952 from Chełmżyńska. Its low houses of the Zdobycz Robotnicza estate were built in the 1920s for workers of the 'Pocisk' ammunition works, and a neon sign from 2018 commemorates singer Kora, who lived at No. 59.",
+    "ludzie": [
+      {"kto": "Kora", "rola": "wokalistka zespołu Maanam; mieszkała przy ulicy kilkanaście lat (dom nr 59)", "wiki": null},
+      {"kto": "Janusz Dzierżawski", "rola": "projektant części budynków osiedla Zdobycz Robotnicza", "wiki": null},
+      {"kto": "Krystyna Sienkiewicz", "rola": "mieszkanka (nr 35/37)", "wiki": null},
+      {"kto": "Włodzimierz Tarło-Maziński", "rola": "mieszkaniec (dom pod nr 65)", "wiki": null},
+      {"kto": "Jarosław Zieliński", "rola": "varsavianista, mieszkaniec ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Chełmżyńska (do 1951/1952)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Płatnicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_P%C5%82atnicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-skalbmierska",
+    "nazwa": "Ulica Skalbmierska",
+    "name_en": "Skalbmierska Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Skalbmierska",
+    "adres_historyczny": null,
+    "lat": 52.2820884,
+    "lon": 20.942973,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica nosi nazwę na cześć miejscowości Skalbmierz w powiecie kazimierskim, w województwie świętokrzyskim.",
+      "Ulica powstała podczas rozbudowy Starych Bielan w latach 30. XX wieku; plany związane z jej wytyczeniem przypadają na okres dwudziestolecia międzywojennego.",
+      "Obecne na ulicy bloki zaprojektowano w stylu wielkiej płyty, co odróżnia ją od reszty ulic powstałych w tamtym okresie.",
+      "Budynki zaklasyfikowane jako zabytki włączono do Gminnej Ewidencji Zabytków m.st. Warszawy 24 lipca 2012 roku.",
+      "W 2018 roku odnowiono dzięki środkom budżetu partycypacyjnego Dzielnicy Bielany Muszlę bielańską; zadeklarowany koszt inwestycji wyniósł 40 000 zł."
+    ],
+    "ciekawostki": [
+      "Betonowa rzeźba potocznie zwana „muszlą” powstała jako element placu zabaw; korzysta z niej już trzecie pokolenie mieszkańców Bielan."
+    ],
+    "summary_en": "Skalbmierska Street in Bielany is named after the town of Skalbmierz in Świętokrzyskie province. It was laid out during the 1930s expansion of Stare Bielany, and its blocks are in the large-panel style rather than the interwar style of the surrounding streets.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Skalbmierska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Skalbmierska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "W artykule w akapicie historii pojawia się nazwa Kleczewska (prawdopodobnie błąd kopiowania z artykułu o Kleczewskiej); fakt o latach 30. XX w. wzięto z tego akapitu, do weryfikacji. Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-wolumen",
+    "nazwa": "Ulica Wolumen",
+    "name_en": "Wolumen Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Wolumen",
+    "adres_historyczny": "droga bez nazwy (przed uregulowaniem ok. 1885)",
+    "lat": 52.2818604,
+    "lon": 20.9363102,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1885–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica, wtedy jeszcze droga bez nazwy, została uregulowana prawdopodobnie ok. 1885 roku.",
+      "W latach 20. XX wieku w rejonie ulic Wolumen i Dantego założono osadę Brzeziny, nazywaną zwyczajowo Kiełbasą, od Rowu Kiełbasa, którym płynął Potok Bielański.",
+      "W czasie okupacji niemieckiej, w związku z funkcjonowaniem lotniska bielańskiego, ulicę przedłużono do ul. Marymonckiej; odcinek ten został po wojnie zlikwidowany.",
+      "W 1973 roku na rogu ul. Kasprowicza otwarto targowisko, którego nazwa nawiązuje do nazwy ulicy.",
+      "Przy ulicy wzniesiono niewielkie bloki mieszkalne osiedli Wawrzyszew VII i Wawrzyszew IX."
+    ],
+    "ciekawostki": [
+      "Osada Brzeziny była zwyczajowo nazywana Kiełbasą."
+    ],
+    "summary_en": "Wolumen Street in Bielany was regulated around 1885. During the occupation it was extended to Marymoncka because of the Bielany airfield, and in 1973 a market named after the street opened at the junction with Kasprowicza.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Brzeziny (osada, nazywana Kiełbasą)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wolumen w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wolumen_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka). Artykuł krótki."
+  },
+  {
+    "id": "ulica-wybrzeze-gdynskie",
+    "nazwa": "Ulica Wybrzeże Gdyńskie",
+    "name_en": "Wybrzeże Gdyńskie Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Wybrzeże Gdyńskie (część Wisłostrady)",
+    "adres_historyczny": null,
+    "lat": 52.2629495,
+    "lon": 21.0054813,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została przeprowadzona w latach 1935–1938 od mostu przy Cytadeli do ul. Krasińskiego.",
+      "Po II wojnie światowej ulicę poszerzono i przedłużono na północ.",
+      "W latach 1972–1975 stała się częścią Wisłostrady i została przedłużona estakadą do ul. Pułkowej.",
+      "Ulica jest fragmentem trasy europejskiej E77 i drogi krajowej nr 7."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wybrzeże Gdyńskie runs along the left bank of the Vistula through Żoliborz, Śródmieście and Bielany. Built in 1935–1938, it became part of the Wisłostrada in 1972–1975.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wybrzeże Gdyńskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wybrze%C5%BCe_Gdy%C5%84skie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE: Bielany, Śródmieście, Żoliborz. Współrzędne z nagłówka (52.2629495, 21.0054813) różnią się od tych w treści (52°16′18,7″N 20°59′48,4″E, ok. 1 km); użyto nagłówka. Do sprawdzenia."
+  },
+  {
+    "id": "ulica-wladyslawa-broniewskiego",
+    "nazwa": "Ulica Władysława Broniewskiego",
+    "name_en": "Władysław Broniewski Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Władysława Broniewskiego",
+    "adres_historyczny": "dawne tereny wsi Buraków",
+    "lat": 52.2748735,
+    "lon": 20.9391658,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono po II wojnie światowej na terenach dawnej wsi Buraków.",
+      "Pierwszy odcinek, od placu Grunwaldzkiego do ul. Krasińskiego, oddano do użytku pod koniec lat 50. XX wieku.",
+      "Nazwę upamiętniającą Władysława Broniewskiego nadano w 1962 roku.",
+      "Przy ulicy powstały domy osiedli mieszkaniowych: Bielany (1952–1967), Sady Żoliborskie (1960–1972), Zatrasie (1961–1968), Rudawka (1969–1973) i Piaski (1970–1973).",
+      "W 1968 roku na ulicy zbudowano tory tramwajowe; na rogu ul. Galla Anonima znajduje się pętla tramwajowa Piaski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Władysław Broniewski Street was laid out after the Second World War on the former village of Buraków and named after the poet in 1962. Several housing estates were built along it in the 1950s–70s.",
+    "ludzie": [
+      {"kto": "Władysław Broniewski", "rola": "poeta, patron ulicy (nazwa z 1962 roku)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Buraków (dawna wieś, teren)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Władysława Broniewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_W%C5%82adys%C5%82awa_Broniewskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE: Bielany, Żoliborz; artykuł podaje Bielany i Żoliborz. Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "akademia-wychowania-fizycznego-jozefa-pilsudskiego",
+    "nazwa": "Akademia Wychowania Fizycznego Józefa Piłsudskiego",
+    "name_en": "Józef Piłsudski University of Physical Education in Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Marymoncka 34",
+    "adres_historyczny": "Centralny Instytut Wychowania Fizycznego (1929–1938)",
+    "lat": 52.28527778,
+    "lon": 20.95444444,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień węgielny pod budowę Instytutu położono 23 czerwca 1928 roku.",
+      "Projektantem był prof. Edgar Norwerth z Politechniki Warszawskiej, a kierownikiem budowy inż. Maksymilian Dudryk.",
+      "Akt erekcyjny i tablicę okolicznościową wmurowano 2 grudnia 1928 roku.",
+      "Działalność dydaktyczna rozpoczęła się 5 listopada 1929 roku.",
+      "30 września 1930 roku teren wyłączono z gminy Młociny i włączono do Warszawy.",
+      "Od 1935 roku uczelnia nosi imię Józefa Piłsudskiego.",
+      "W czasie II wojny światowej na terenie uczelni znajdowały się koszary Luftwaffe; wyposażenie uczelni zostało zniszczone lub wywiezione przez Niemców.",
+      "Zajęcia dla 108 studentów rozpoczęły się 2 grudnia 1946 roku.",
+      "Topola czarna, ok. 50-letnia w 1928 roku, została zabezpieczona podczas budowy; w 2009 roku uzyskała status pomnika przyrody."
+    ],
+    "ciekawostki": [
+      "Architekt Edgar Norwerth, wybierając teren na Bielanach, zobaczył w topoli osiową oś krajobrazową przyszłego dziedzińca; wokół drzewa utworzono dziedziniec."
+    ],
+    "summary_en": "The Józef Piłsudski University of Physical Education began as the Central Institute of Physical Education, with its cornerstone laid in June 1928 on Bielany. It was given the Marshal's name in 1935, became a military academy in 1938, and was reopened as a civilian university after the war.",
+    "ludzie": [
+      {"kto": "Józef Piłsudski", "rola": "patron uczelni (od 1935)", "wiki": null},
+      {"kto": "Edgar Norwerth", "rola": "projektant budynku, prof. Politechniki Warszawskiej", "wiki": null},
+      {"kto": "Maksymilian Dudryk", "rola": "kierownik budowy", "wiki": null},
+      {"kto": "Felicjan Sławoj-Składkowski", "rola": "kierował komitetem budowy uczelni jako minister Spraw Wewnętrznych", "wiki": null},
+      {"kto": "Władysław Leon Osmolski", "rola": "pierwszy dyrektor (płk dr)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Centralny Instytut Wychowania Fizycznego (1929–1938)",
+      "Akademia Wychowania Fizycznego im. gen. broni Karola Świerczewskiego (od 1949)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akademia Wychowania Fizycznego Józefa Piłsudskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Akademia_Wychowania_Fizycznego_J%C3%B3zefa_Pi%C5%82sudskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Instytucja, ale wpisana, bo artykuł opisuje historię budowy i terenu. Adres dzisiejszy (ul. Marymoncka 34) wzięto z artykułu o ul. Marymonckiej, nie z tego artykułu. Współrzędne z nagłówka."
+  },
+  {
+    "id": "akcja-bielany",
+    "nazwa": "Akcja Bielany",
+    "name_en": "Bielany Operation",
+    "typ": "zdarzenie",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "lotnisko bielańskie (niemieckie)",
+    "lat": 52.292777777,
+    "lon": 20.94,
+    "lokalizacja": "przyblizona",
+    "okres": "3/4 maja 1944",
+    "istnieje": false,
+    "fakty": [
+      "Akcja dywersyjno-bojowa przeprowadzona przez zespół z dyspozycyjnego oddziału Kedywu KG AK w nocy 3/4 maja 1944 roku na lotnisku bielańskim.",
+      "17-osobowy oddział AK podkradł się w nocy z 3 na 4 maja na lotnisko niemieckie na warszawskich Bielanach.",
+      "Na 5 samolotach założono małe ładunki plastiku ze zrzutów alianckich, umieszczone przy zbiornikach paliwa.",
+      "Ładunki odpalono, powodując eksplozję 5 samolotów; pożar spowodował eksplozję kolejnych 3 samolotów.",
+      "Grupie udało się wycofać z terenu lotniska bez strat własnych."
+    ],
+    "ciekawostki": [
+      "Niemcy byli przekonani, że alianci przeprowadzają nalot bombowy, i ogłoszono alarm lotniczy w mieście; w pobliskim AWF zawyły syreny."
+    ],
+    "summary_en": "On the night of 3/4 May 1944 a 17-person Home Army unit from the Kedyw sabotaged five German aircraft at the Bielany airfield with plastic charges, and destroyed three more in the fire, withdrawing without losses.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja Bielany", "url": "https://pl.wikipedia.org/wiki/Akcja_Bielany"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdarzenie jednorazowe; istnieje ustawione na false. Współrzędne z nagłówka (52.292777777, 20.94) różnią się od tych w treści (52°17′N 20°56′E = 52.283333, 20.933333); do weryfikacji. Artykuł nie mówi o dzisiejszym stanie lotniska. Artykuł Lotnisko bielańskie (w tej paczce) podaje, że atak wykonał oddział „Osjan”, a nie oddział Kedywu; do weryfikacji."
+  }
+]

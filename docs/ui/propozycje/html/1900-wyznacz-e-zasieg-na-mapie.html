@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Wyznacz E · zasięg na mapie</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .zasieg { left: 50%; top: 196px; transform: translateX(-50%); background: var(--glebia); color: #fff; box-shadow: 0 6px 16px rgba(23,112,111,.3); }
+  .ikonki { position: absolute; right: 16px; top: 108px; z-index: 20; display: flex; flex-direction: column; gap: 4px; padding: 4px; border-radius: 22px; }
+  .ikonki div { width: 40px; height: 40px; border-radius: 18px; display: grid; place-items: center; color: var(--tekst-2); }
+  .ikonki div.on { background: var(--glebia); color: #fff; }
+  .ikonki svg { width: 20px; height: 20px; }
+  .ikonki hr { border: 0; height: 1px; background: rgba(16,43,42,.1); margin: 2px 6px; }
+  .czasy { display: flex; align-items: baseline; justify-content: space-between; }
+  .czasy p { font-size: 13px; color: var(--tekst-2); font-weight: 600; }
+  .czasy p b { color: var(--koral); font-weight: 800; }
+  .suwak { position: relative; height: 34px; margin-top: 8px; }
+  .tor { position: absolute; top: 14px; left: 0; right: 0; height: 6px; border-radius: 3px; background: rgba(16,43,42,.08); }
+  .tor i { position: absolute; left: 0; top: 0; bottom: 0; width: 40%; border-radius: 3px; background: var(--glebia); }
+  .galka { position: absolute; top: 2px; left: calc(40% - 15px); width: 30px; height: 30px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 .5px rgba(0,0,0,.06), 0 3px 8px rgba(0,0,0,.2); }
+  .skala { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--tekst-3); font-weight: 700; padding: 0 2px; }
+</style></head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora"><div class="logo szklo">sawa<i>.</i></div></div>
+
+  <div class="ikonki szklo">
+    <div data-ikona="pieszo"></div><div class="on" data-ikona="tramwaj"></div><hr>
+    <div class="on" data-ikona="petla"></div><div data-ikona="cel"></div>
+  </div>
+  <div class="znak zasieg">Tu zdążysz w 1 h 30 i wrócić</div>
+
+  <div class="karta">
+    <div class="uchwyt"></div>
+    <div class="czasy"><span class="duzy">1 h 30</span><p><b>48 miejsc</b> z opowieściami w zasięgu</p></div>
+    <div class="suwak"><div class="tor"><i></i></div><div class="galka"></div></div>
+    <div class="skala"><span>30 min</span><span>1 h</span><span>1,5 h</span><span>2 h</span><span>3 h</span><span>4 h</span></div>
+    <div class="przycisk">Wyznacz pętlę komunikacją</div>
+  </div>
+
+  <div class="zakladki szklo"></div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script><script src="_wyznacz.js"></script>
+<script>sawaMapa('mapa', { center: nad(JA, 120, 13), zoom: 13, zasiegKm: 1.3, miejsca: true });</script>
+</body></html>

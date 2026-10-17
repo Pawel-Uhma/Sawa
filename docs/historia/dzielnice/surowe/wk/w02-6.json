@@ -1,0 +1,59 @@
+[
+  {
+    "id": "ulica-zelazna",
+    "nazwa": "Żelazna",
+    "name_en": "Żelazna Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Żelazna",
+    "adres_historyczny": null,
+    "lat": 52.2275258,
+    "lon": 20.9951362,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica zaczyna się przy pl. Starynkiewicza, odchodząc od Alei Jerozolimskich, a kończy przy ul. Nowolipki.",
+      "Ulica ma 1950 m długości; leży na Woli, a bardzo krótkim odcinkiem także na Ochocie.",
+      "Jej nazwa pochodzi od Żelaznej Karczmy, która w XVIII wieku znajdowała się w rejonie współczesnej ul. Twardej.",
+      "W okresie okupacji niemieckiej ulica znalazła się na terenie getta.",
+      "Od momentu utworzenia granicy getta po wschodniej stronie ulicy duże i małe getto łączyła drewniana kładka nad ul. Chłodną, przeprowadzona wzdłuż Żelaznej.",
+      "Przy ul. Żelaznej 90 mieści się Szpital Specjalistyczny Ginekologiczno-Położniczy św. Zofii."
+    ],
+    "ciekawostki": [
+      "Na chodniku na wysokości ul. Żelaznej 75 odtworzono zarys półokrągłego, betonowego bunkra Nordwachy, przylegającego do narożnego budynku przy ul. Chłodnej 25, o który toczyły się ciężkie walki w powstaniu warszawskim."
+    ],
+    "summary_en": "Żelazna Street in Wola, 1950 m long, running from pl. Starynkiewicza to Nowolipki Street. Its name comes from an 18th-century tavern near today's Twarda Street. During the occupation the street was inside the Warsaw ghetto, and the two parts of the ghetto were joined by a wooden footbridge over Chłodna Street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Żelazna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żelazna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka). Źródło w infoboksie podaje dzielnice Ochota i Wola; w nagłówku pierwsza to Wola."
+  },
+  {
+    "id": "zelazna-103-befehlstelle-sipo",
+    "nazwa": "Budynek przy ul. Żelaznej 103 (niemiecki areszt i Befehlstelle Sipo)",
+    "name_en": "Building at 103 Żelazna Street (German prison and Befehlstelle Sipo)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Żelazna 103",
+    "adres_historyczny": null,
+    "lat": 52.2275258,
+    "lon": 20.9951362,
+    "lokalizacja": "przyblizona",
+    "okres": "1942–1943 (funkcja okupacyjna)",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1942–1943 w budynku mieścił się niemiecki areszt oraz stacjonowała specjalna jednostka SS (Befehlstelle Sipo).",
+      "Jednostka ta kierowała w 1942 roku tzw. wielką akcją wysiedleńczą w getcie warszawskim.",
+      "Na fasadzie znajduje się tablica wzorowana na tablicach pamiątkowych Tchorka: „W tym domu w 1943 r. w lochach gestapo zamęczono na śmierć tysiące Żydów warszawskiego getta”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The building at 103 Żelazna Street in Wola housed a German prison and the SS Befehlstelle Sipo in 1942–1943. From here the unit directed the large deportation action in the Warsaw ghetto in 1942. A plaque on the façade commemorates the Jews who died in its cellars.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Żelazna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żelazna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord wyprowadzony z artykułu o ulicy; współrzędne to środek ulicy, nie budynku. Brak daty budowy w tekście."
+  }
+]

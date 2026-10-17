@@ -1,0 +1,546 @@
+[
+  {
+    "id": "intraco",
+    "nazwa": "Intraco I",
+    "name_en": "Intraco I skyscraper",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Stawki 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę wieżowca rozpoczęto w 1974 roku, a ukończono w 1975 roku.",
+      "Wieżowiec zaprojektowała szwedzka firma Byggnadsproduktion AB dla firmy Intraco S.A.",
+      "Budynek ma 39 kondygnacji nadziemnych; w infoboksie podano wysokość 135 m, a wysokość do dachu 107 m.",
+      "W czasie modernizacji w 1998 roku budynek otrzymał ciemnozieloną lustrzaną ścianę kurtynową.",
+      "Wraz z Hotelem Forum był jednym z pierwszych typowych drapaczy chmur w Warszawie.",
+      "Rozważane jest wyburzenie wieżowca i wybudowanie w jego miejscu nowego, ale niższego, wokół którego znajdzie się kompleks budynków biurowych."
+    ],
+    "ciekawostki": [
+      "Według projektantów pobliskiego wieżowca North Gate, Intraco ma wraz z nim tworzyć symboliczną bramę wjazdową z Żoliborza do Śródmieścia."
+    ],
+    "summary_en": "A 39-storey office tower at ul. Stawki 2, designed by the Swedish firm Byggnadsproduktion AB for Intraco S.A. and built in 1974–1975. It was one of Warsaw's first typical skyscrapers, and its demolition and replacement have been considered.",
+    "ludzie": [
+      {"kto": "Byggnadsproduktion AB", "rola": "szwedzki projektant wieżowca", "wiki": null}
+    ],
+    "dawne_nazwy": ["Intraco"],
+    "zrodla": [{"tytul": "Warszawikia: Intraco", "url": "https://warszawa.fandom.com/pl/wiki/Intraco"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z infoboksu. Artykuł podaje wysokość 135 m w infoboksie i 138 m w tekście; zapisano infobox."
+  },
+  {
+    "id": "kamienica-andrzeja-stronskiego",
+    "nazwa": "Kamienica Andrzeja Strońskiego",
+    "name_en": "Andrzej Stroński tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1784–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę kamienicy rozpoczęto już przed 1784 rokiem, a prace trwały jeszcze po 1790 roku.",
+      "Projektantem był najpewniej Szymon Bogumił Zug, a inwestorem Andrzej Stroński.",
+      "Od 1876 roku istniała tu cukiernia, w której na początku XX wieku spotykali się warszawscy literaci, w tym Władysław Reymont, Stefan Żeromski i Bolesław Leśmian.",
+      "W okresie międzywojennym na piętrze znajdował się Komisariat Policji Państwowej na Powiat Warszawski oraz redakcja „Zagadnienia Rasy”, która w 1938 roku zmieniła nazwę na „Eugenika Polska”.",
+      "Kamienica uległa zniszczeniu w 1944 roku, a w 1948 roku odbudowano ją według projektu Stanisława Marzyńskiego.",
+      "Dziś w kamienicy znajduje się klub Republica Latina oraz kawiarnia Santos."
+    ],
+    "ciekawostki": [
+      "W 1819 roku posesja należała do Jana Giertha, a w latach 30. XIX wieku do Franciszka Wołoskiego, który na sąsiedniej parceli od strony Brackiej wybudował browar."
+    ],
+    "summary_en": "A classicist tenement at Nowy Świat 1, begun before 1784 and rebuilt in 1948 after being destroyed in 1944. A pastry shop there was a meeting place for early-20th-century Warsaw writers, and the building now houses a club and a café.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "najpewniej projektant kamienicy", "wiki": null},
+      {"kto": "Andrzej Stroński", "rola": "inwestor", "wiki": null},
+      {"kto": "Stanisław Marzyński", "rola": "projektant odbudowy w 1948 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Andrzeja Strońskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Andrzeja_Strońskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-centralnego-towarzystwa-rolniczego",
+    "nazwa": "Kamienica Centralnego Towarzystwa Rolniczego",
+    "name_en": "Central Agricultural Society tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Kopernika 30",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w latach 1911–1912 jako sześciokondygnacyjną w stylu wczesnego modernizmu.",
+      "Zaprojektował ją Czesław Przybylski we współpracy z Alfonsem Gravierem.",
+      "Dekorację rzeźbiarską wykonali Zygmunt Otto oraz Józef Gardecki; głównym elementem jest rzeźba Siewcy.",
+      "Kamienica została nieznacznie uszkodzona podczas II wojny światowej i odbudowana w latach 1947–1948 dla Centrali Rolniczej Spółdzielni „Samopomoc Chłopska”.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków.",
+      "Dziś swoją siedzibę ma tu Krajowy Związek Rewizyjny Spółdzielni „Samopomoc Chłopska”."
+    ],
+    "ciekawostki": [
+      "Budynek ma rozległą oficynę biurową w głębi posesji, sięgającą aż do ul. Konopczyńskiego."
+    ],
+    "summary_en": "A six-storey early-modernist building at ul. Kopernika 30, designed by Czesław Przybylski with Alfons Graviere in 1911–1912. It is a listed monument with a sculpted Sower as its main decoration.",
+    "ludzie": [
+      {"kto": "Czesław Przybylski", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Alfons Graviere", "rola": "współprojektant kamienicy", "wiki": null},
+      {"kto": "Zygmunt Otto", "rola": "autor dekoracji rzeźbiarskiej", "wiki": null},
+      {"kto": "Józef Gardecki", "rola": "autor dekoracji rzeźbiarskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Centralnego Towarzystwa Rolniczego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Centralnego_Towarzystwa_Rolniczego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (w tekście „ul. Kopernika 30”)."
+  },
+  {
+    "id": "kamienica-domanskich",
+    "nazwa": "Kamienica Domańskich",
+    "name_en": "Domański tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 41",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w latach 1893–1894 dla Jana Sobierajskiego; później zamieszkała w niej rodzina Domańskich.",
+      "W latach 1938–1939 skuto z niej wszystkie detale architektoniczne, pozostawiając jedynie zdobienia parteru.",
+      "W latach 90. XX wieku usunięto grożące zawaleniem balkony.",
+      "10 września 2008 roku kamienicę wpisano do rejestru zabytków.",
+      "Planowany jest remont, wraz z odtworzeniem dekoracji."
+    ],
+    "ciekawostki": [
+      "Kamienica leży na rogu ul. Marszałkowskiej i placu Zbawiciela."
+    ],
+    "summary_en": "A late-19th-century tenement at Marszałkowska 41, on the corner of plac Zbawiciela. Its architectural details were removed in 1938–1939, and it was listed as a monument in 2008.",
+    "ludzie": [
+      {"kto": "Jan Sobierajski", "rola": "pierwszy właściciel, dla którego zbudowano kamienicę", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Jana Sobierajskiego"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Domańskich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Domańskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-duniewiczowej",
+    "nazwa": "Kamienica Duniewiczowej",
+    "name_en": "Duniewiczowa tenement house (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Elektoralna 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1821–1946",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica została wybudowana prawdopodobnie w 1821 roku; była jednopiętrowa, dziewięcioosiowa, z nieznacznym trzyosiowym ryzalitem.",
+      "Pierwszą właścicielką była Magdalena Duniewiczowa, która 24 stycznia 1822 roku została zamordowana przez służącą Mariannę Rozmuszewską uderzeniem siekierą w głowę.",
+      "Przed I wojną światową budynek przejął Szpigielglas, który w maju 1914 roku otrzymał pozwolenie na wybudowanie czteropiętrowej oficyny.",
+      "W 1940 roku budynek znalazł się w obrębie getta.",
+      "Kamienicę podpalono w 1943 roku; ruiny stały do 1946 roku, kiedy zdecydowano o jej rozbiórce."
+    ],
+    "ciekawostki": [
+      "Za kamienicą znajdował się ogród, biegnący do kamienic na Lesznie."
+    ],
+    "summary_en": "A one-storey Congress Poland-era house at Elektoralna 14, which was burned in 1943 and demolished after the war. Its first owner, Magdalena Duniewiczowa, was murdered there in 1822.",
+    "ludzie": [
+      {"kto": "Magdalena Duniewiczowa", "rola": "pierwsza właścicielka, zamordowana 24 stycznia 1822 roku", "wiki": null},
+      {"kto": "Marianna Rozmuszewska", "rola": "służąca, sprawczyni zabójstwa Duniewiczowej, skazana na karę śmierci", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Duniewiczowej", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Duniewiczowej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Kamienica nie istnieje."
+  },
+  {
+    "id": "kamienica-edwarda-raczynskiego",
+    "nazwa": "Kamienica Edwarda Raczyńskiego",
+    "name_en": "Edward Raczyński tenement house (Heurich house)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Małachowskiego 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1848–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początkowo stała tu kamienica Krasińskich, wybudowana w 1848 roku według projektu Franciszka Marii Lanciego.",
+      "Od 1901 roku mieściła się tu pierwsza warszawska świecka szkoła żeńska, założona w 1862 roku przez Annę Jasieńską.",
+      "Kamienicę rozebrano w 1907 roku; nową zbudowano w latach 1907–1910 według projektu Jana Heuricha młodszego i Artura Göbla.",
+      "Kamienica została spalona w 1939 roku, a podczas okupacji była siedzibą niemieckiego Arbeitsamtu.",
+      "Odbudowano ją w latach 1948–1949 według projektu Bohdana Pniewskiego dla Ministerstwa Poczty i Telegrafów.",
+      "W 1965 roku wpisano ją do rejestru zabytków.",
+      "W 2008 roku kamienicę za 100 mln złotych zakupiła firma deweloperska Dom Development."
+    ],
+    "ciekawostki": [
+      "W 1934 roku w sklepie fabryki mebli Z. Szczerbińskiego nagrano epizod filmu „Jego ekscelencja subiekt” z Eugeniuszem Bodo i Iną Benitą."
+    ],
+    "summary_en": "A modernist tenement at plac Małachowskiego 2 (alternative address Mazowiecka 20). It was built in 1907–1910 on the site of a Krasiński house, burned in 1939, rebuilt in 1948–1949, and listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "Edward Raczyński", "rola": "zleceniodawca nowej kamienicy", "wiki": null},
+      {"kto": "Jan Heurich młodszy", "rola": "projektant kamienicy (1907–1910)", "wiki": null},
+      {"kto": "Artur Göbel", "rola": "projektant kamienicy (1907–1910)", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "projektant odbudowy w 1948–1949", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Krasińskich", "Kamienica Heurichowska"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Edwarda Raczyńskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Edwarda_Raczyńskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku. Adres główny z tytułu/tekstu: plac Małachowskiego 2; alternatywny z tekstu: Mazowiecka 20."
+  },
+  {
+    "id": "kamienica-frenkentala",
+    "nazwa": "Kamienica Frenkentala",
+    "name_en": "Frenkental tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowogrodzka 44",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1903–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wybudowano w latach 1903–1904.",
+      "Jako jeden z nielicznych budynków przetrwała II wojnę światową bez żadnych zniszczeń.",
+      "W latach 1942–1945 mieszkali w niej hitlerowcy, mający szybki dostęp do poczty znajdującej się naprzeciwko.",
+      "16 stycznia 1978 roku kamienicę wpisano do rejestru zabytków.",
+      "Od 2010 roku wchodzi w skład zabytkowego zespołu budowlanego w kwadracie ulic Aleje Jerozolimskie – Poznańska – Nowogrodzka – Pankiewicza.",
+      "W 1993 roku przeprowadzono remont elewacji."
+    ],
+    "ciekawostki": [
+      "Piwnice kamienicy łączą się z tunelami i kanałami w całej Warszawie, wykorzystywanymi przez Akowców."
+    ],
+    "summary_en": "A listed tenement at Nowogrodzka 44, built in 1903–1904. It came through the Second World War undamaged and is part of a protected complex around Jerozolimskie, Poznańska, Nowogrodzka and Pankiewicza streets.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Frenkentala", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Frenkentala"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje, że właściciela kamienicy aktualnie się poszukuje."
+  },
+  {
+    "id": "kamienica-heleny-pal",
+    "nazwa": "Kamienica Heleny Pal",
+    "name_en": "Helena Pal tenement house (Teatr Rozmaitości)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 8",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w 1935 roku; projektowali go Maksymilian Goldberg i Hipolit Rutkowski.",
+      "Pierwszą właścicielką kamienicy była Helena Pal, wdowa po Adolfie Palu, właścicielu fabryki przetworów chemicznych „Dobrolin”.",
+      "Podczas II wojny światowej w budynku mieścił się Deutsches Filmtheater.",
+      "Nieuszkodzony budynek przetrwał powstanie warszawskie.",
+      "Mieści się w nim Teatr Rozmaitości."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A modernist building at Marszałkowska 8, designed in 1935 by Maksymilian Goldberg and Hipolit Rutkowski. It survived the Warsaw Uprising undamaged and houses the Teatr Rozmaitości.",
+    "ludzie": [
+      {"kto": "Maksymilian Goldberg", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Hipolit Rutkowski", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Helena Pal", "rola": "pierwsza właścicielka, wdowa po Adolfie Palu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Heleny Pal", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Heleny_Pal"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-higerow",
+    "nazwa": "Kamienica Higerów",
+    "name_en": "Higer tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Koszykowa 30",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w latach 1897–1898 według projektu Stefana Szyllera i przyjęto do użytkowania w 1902 roku.",
+      "Zbudowano ją jako kamienicę Henryka Higera, neurologa żydowskiego pochodzenia i uczonego, który zginął w getcie.",
+      "W latach 1946–1987 mieszkał w niej Artur Eisenbach, historyk żydowskiego pochodzenia, dyrektor Żydowskiego Instytutu Historycznego.",
+      "Budynek został mocno zniszczony w czasie powstania warszawskiego, lecz szybko odbudowany.",
+      "29 stycznia 2013 roku budynek wpisano do rejestru zabytków (nr ewid. A-1106).",
+      "Ma cztery kondygnacje nadziemne i jedną podziemną."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A four-storey tenement at Koszykowa 30, built in 1897–1898 to a design by Stefan Szyller for neurologist Henryk Higer. It was heavily damaged in 1944, rebuilt, and listed as a monument in 2013.",
+    "ludzie": [
+      {"kto": "Henryk Higer", "rola": "neurolog i uczony, właściciel kamienicy, zginął w getcie", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Artur Eisenbach", "rola": "historyk, mieszkaniec (1946–1987)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Higerów", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Higerów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Część północno-zachodnia budynku została wyłączona z eksploatacji."
+  },
+  {
+    "id": "kamienica-hoserow",
+    "nazwa": "Kamienica Braci Hoserów",
+    "name_en": "Hoser Brothers tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 51",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zbudowano w latach 1904–1905 na gruntach Zakładu Ogrodniczego Braci Hoser.",
+      "Autorstwo projektu nie jest pewne; najczęściej podaje się Pawła Hosera, a wymieniani są też Apoloniusz Nieniewski i Władysław Kozłowski.",
+      "Frontowa elewacja jest neobarokowa, w całości pokryta rustykalnym boniowaniem, a balkony podtrzymują korynckie kolumny.",
+      "Od 1905 roku w budynku znajduje się najstarszy czynny in situ w Europie i jedyny zachowany w Warszawie komercyjny fotoplastykon.",
+      "Swoją siedzibę ma tu Warszawski Oddział Przewodników PTTK."
+    ],
+    "ciekawostki": [
+      "Bracia Hoser uważani byli za jednych z najlepszych ogrodników w Warszawie; Piotr Hoser pełnił m.in. funkcję głównego ogrodnika Ogrodu Saskiego."
+    ],
+    "summary_en": "A Art Nouveau-titled building at Aleje Jerozolimskie 51, built in 1904–1905 by the Hoser nursery family. Its ground floor has held Warsaw's oldest working photoplasticon since 1905.",
+    "ludzie": [
+      {"kto": "Paweł Hoser", "rola": "najczęściej podawany projektant", "wiki": null},
+      {"kto": "Piotr Hoser", "rola": "ojciec Pawła, główny ogrodnik Ogrodu Saskiego", "wiki": null},
+      {"kto": "Apoloniusz Nieniewski", "rola": "możliwy projektant", "wiki": null},
+      {"kto": "Władysław Kozłowski", "rola": "możliwy projektant", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Braci Hoserów"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Hoserów", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Hoserów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (w tekście „Al. Jerozolimskich 51”). Artykuł nazywa budynek secesyjnym, a w opisie elewacji podaje styl neobarokowy; zapisano opis elewacji."
+  },
+  {
+    "id": "kamienica-jakuba-fontany",
+    "nazwa": "Kamienica Jakuba Fontany",
+    "name_en": "Jakub Fontana tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Zakroczymska 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trzypiętrową kamienicę wybudował w 1770 roku Jakub Fontana jako własną inwestycję.",
+      "Po raz pierwszy wprowadzono wówczas do krajobrazu miasta elementy wysokościowe.",
+      "Sam Fontana nigdy tam nie mieszkał, jedynie wynajmował lokale.",
+      "W 1944 roku kamienica została w znacznej mierze uszkodzona; zachowały się mury konstrukcyjne i elewacje.",
+      "Po wojnie została zrekonstruowana.",
+      "Dziś mieści siedzibę Warszawskiego Towarzystwa Muzycznego im. Stanisława Moniuszki; w bibliotece przechowywane są autografy najstarszych polskich oper z XVIII wieku oraz utworów Fryderyka Chopina, Stanisława Moniuszki i Mieczysława Karłowicza."
+    ],
+    "ciekawostki": [
+      "Kamienica bywa błędnie nazywana Pałacem Mokronowskich."
+    ],
+    "summary_en": "An 18th-century tenement at Zakroczymska 2, corner of Kościelna in Nowe Miasto, built in 1770 by Jakub Fontana. Heavily damaged in 1944 and rebuilt, it now houses the Warsaw Music Society named after Stanisław Moniuszko.",
+    "ludzie": [
+      {"kto": "Jakub Fontana", "rola": "inwestor, wybudował kamienicę w 1770 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Mokronowskich (błędne określenie)"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Jakuba Fontany", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Jakuba_Fontany"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł umieszcza ją na Nowym Mieście, a nagłówek DZIELNICE podaje Śródmieście (zapisano nagłówek)."
+  },
+  {
+    "id": "kamienica-jakuba-hoffmana",
+    "nazwa": "Kamienica Jakuba Hoffmana",
+    "name_en": "Jakub Hoffmann tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 37",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Bliźniacze kamienice pod nr 37 i 39 zaprojektował i wybudował w 1820 roku Fryderyk Lessel, budowniczy rządowy i miejski.",
+      "Inicjatorem budowy i pierwszym właścicielem był profesor botaniki i medycyny Jakub Fryderyk Hoffmann, który zamieszkał tu, a w oficynie założył wytwórnię octu winnego.",
+      "Około 1880 roku dokonano przebudowy i rozbudowy według projektu Adama Oczkowskiego, nadając elewacji eklektyczny wyraz.",
+      "Podczas II wojny światowej budynek został częściowo zniszczony w bombardowaniach w 1939 roku oraz podczas powstania warszawskiego.",
+      "Kamienicę odbudowano w latach 1946–1949.",
+      "W 1907 roku jednym z lokatorów był poeta Bolesław Leśmian, który zamieszkiwał lokal numer 10."
+    ],
+    "ciekawostki": [
+      "W okresie międzywojennym mieściły się tu m.in. sklep z wyrobami tytoniowymi Kair oraz biura wytwórni Kronika Filmowa."
+    ],
+    "summary_en": "A classicist tenement on Nowy Świat, built in 1820 as a twin of number 39 for botanist Jakub Fryderyk Hoffmann. It was damaged in the war, rebuilt in 1946–1949, and Bolesław Leśmian lived in it in 1907.",
+    "ludzie": [
+      {"kto": "Jakub Fryderyk Hoffmann", "rola": "profesor botaniki i medycyny, pierwszy właściciel", "wiki": null},
+      {"kto": "Fryderyk Lessel", "rola": "budowniczy rządowy i miejski, projektant kamienic", "wiki": null},
+      {"kto": "Adam Oczkowski", "rola": "projektant przebudowy około 1880 roku", "wiki": null},
+      {"kto": "Bolesław Leśmian", "rola": "poeta, lokator w 1907 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Jakuba Hoffmana", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Jakuba_Hoffmana"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje Jakuba Fryderyka Hoffmanna jako właściciela, a w tytule wpisano Jakuba Hoffmana."
+  },
+  {
+    "id": "kamienica-jana-kulikiewicza",
+    "nazwa": "Kamienica Jana Kulikiewicza",
+    "name_en": "Jan Kulikiewicz tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 49",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1828–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Późnoklasycystyczna kamienica wzniesiona w latach 1828–1829 według projektu Antonio Corazziego.",
+      "Jest to najlepiej zachowane z warszawskich dzieł tego architekta.",
+      "Na początku XX wieku była restaurowana pod kierunkiem Stefana Szyllera.",
+      "W 2013 roku odremontowano elewacje: zszyto pęknięcia stalowymi prętami, podklejono osłabione detale i odtworzono część z nich w mieszance gipsu z wapnem i stiukiem.",
+      "Prace trwały od końca lipca do początku listopada 2013 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A late-classicist tenement at Aleje Ujazdowskie 49, built in 1828–1829 to a design by Antonio Corazzi. It is the best-preserved of the architect's works in Warsaw and was restored in 2013.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "architekt kamienicy", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "kierował restauracją na początku XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Jana Kulikiewicza", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Jana_Kulikiewicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-jana-wernera-i-marii-lilpop",
+    "nazwa": "Kamienica Jana Wernera i Marii Lilpop",
+    "name_en": "Werner and Lilpop tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Chmielna 24",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wybudowano w 1877 roku według projektu Jana Lilpopa.",
+      "Na początku XX wieku mieściła się tu pracownia architekta Józefa Piusa Dziekońskiego, w której pracował architekt Józef Handzelewicz.",
+      "Po wojnie Handzelewicz zakupił zrujnowane w 80% budynki i odbudował je z małymi zmianami, bez wysokich skrzydeł oficyn w podwórzu.",
+      "Kamienice upaństwowiono; wróciły do spadkobierców właściciela dopiero w 2000 roku.",
+      "Dziś mieści się tu pracownia architektoniczna ARE."
+    ],
+    "ciekawostki": [
+      "Kamienica jest połączona przez podwórze z kamienicą przy ul. Zgoda 3."
+    ],
+    "summary_en": "A tenement at Chmielna 24, built in 1877 to a design by Jan Lilpop. After the war, it was rebuilt from 80% ruins, and it now houses an architecture studio.",
+    "ludzie": [
+      {"kto": "Jan Lilpop", "rola": "projektant kamienicy (1877)", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "architekt, prowadził pracownię w budynku", "wiki": null},
+      {"kto": "Józef Handzelewicz", "rola": "architekt, pracował w pracowni Dziekońskiego i odbudował budynki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Jana Wernera i Marii Lilpop", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Jana_Wernera_i_Marii_Lilpop"}],
+    "pewnosc": "średnia",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Zdanie o odbudowie 80% zrujnowanych budynków nie wskazuje wprost podmiotu; zapisano za tekstem, że zrobił to Handzelewicz."
+  },
+  {
+    "id": "kamienica-jasienczyka-jablonskiego",
+    "nazwa": "Kamienica Antoniego Jasieńczyka-Jabłońskiego",
+    "name_en": "Jasieńczyk-Jabłoński tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Mokotowska 12",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w latach 1909–1910 według projektu architekta Antoniego Jasieńczyka-Jabłońskiego jako kamienicę dochodową należącą do autora projektu.",
+      "Budynek miał około 38 metrów wysokości i osiem kondygnacji, co czyniło go przez krótki okres najwyższym budynkiem mieszkalnym w Warszawie.",
+      "W 1913 roku na ostatnim piętrze, pod przeszklonym dachem, uruchomiono atelier filmowe „Sfinks”, którego założycielem był Aleksander Hertz.",
+      "Po śmierci Aleksandra Hertza w 1928 roku działalność atelier stopniowo ograniczano; studio funkcjonowało do wybuchu II wojny światowej w 1939 roku.",
+      "Na parterze mieści się kaplica Kościoła Ewangelicko-Metodystycznego, działająca tu nieprzerwanie.",
+      "Kompleksowy remont elewacji przeprowadzono w latach 2014–2015 według projektu pracowni Grzegory & Partnerzy Architekci."
+    ],
+    "ciekawostki": [
+      "Dopiero rozpowszechnienie elektrycznych pomp umożliwiło bezpieczne zaopatrywanie wyższych budynków w bieżącą wodę."
+    ],
+    "summary_en": "An eight-storey, 38-metre tenement at Mokotowska 12, built in 1909–1910 by its architect-owner Antoni Jasieńczyk-Jabłoński. Its top floor housed the 'Sfinks' film studio from 1913, and the ground floor is a Methodist chapel.",
+    "ludzie": [
+      {"kto": "Antoni Jasieńczyk-Jabłoński", "rola": "architekt i właściciel kamienicy", "wiki": null},
+      {"kto": "Aleksander Hertz", "rola": "założyciel atelier filmowego „Sfinks”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Jasieńczyka-Jabłońskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Jasieńczyka-Jabłońskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-johna",
+    "nazwa": "Kamienica Johna",
+    "name_en": "John tenement house (Krakowskie Przedmieście 89)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 89",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1654–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza kamienica w tym miejscu powstała w 1654 roku jako własność muzyka Adameckiego.",
+      "Około 1754 roku budynek przebudowano według projektu Jana Deybla, realizowanej przez metrykanta koronnego Ignacego Ludwika Nowickiego; powstała dwupiętrowa kamienica czynszowa.",
+      "W 1909 roku nieruchomość nabył adwokat Aleksander John, który w 1910 roku ogłosił konkurs na projekt nowej fasady; zwycięzcą został architekt Konrad Kłos.",
+      "Budynek spłonął podczas obrony Warszawy we wrześniu 1939 roku, w 1944 roku został całkowicie zniszczony, a w 1947 roku pozostałości rozebrano w związku z budową tunelu Trasy W-Z.",
+      "Odbudowę przeprowadzono w latach 1949–1950 według projektów Włodzimierza Wapińskiego i Kazimierza Thora; fasadę z 1768 roku zrekonstruowano na podstawie obrazu Bernarda Bellotta (Canaletta).",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków.",
+      "Obecnie mieści siedziby Stowarzyszenia Pisarzy Polskich, PEN Clubu oraz Związku Literatów Polskich."
+    ],
+    "ciekawostki": [
+      "Ze względu na lokalizację maszynowni i wyjścia schodów ruchomych łączących Trasę W-Z z placem Zamkowym kamienicę poszerzono o 80 cm w stronę placu."
+    ],
+    "summary_en": "A rococo corner tenement at Krakowskie Przedmieście 89 by Plac Zamkowy. The building was destroyed in 1944 and rebuilt in 1949–1950, and its facade was reconstructed from a Canaletto painting. It now houses writers' associations.",
+    "ludzie": [
+      {"kto": "Jan Deybel", "rola": "projektant przebudowy około 1754 roku", "wiki": null},
+      {"kto": "Ignacy Ludwik Nowicki", "rola": "metrykant koronny, realizował przebudowę", "wiki": null},
+      {"kto": "Aleksander John", "rola": "adwokat, nabył nieruchomość w 1909 roku", "wiki": null},
+      {"kto": "Konrad Kłos", "rola": "architekt, zwycięzca konkursu na fasadę (1910)", "wiki": null},
+      {"kto": "Włodzimierz Wapiński", "rola": "projektant odbudowy 1949–1950", "wiki": null},
+      {"kto": "Kazimierz Thor", "rola": "projektant odbudowy 1949–1950", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Ignacego Nowickiego"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Johna", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Johna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje dla fasady 1768 rok i dla przebudowy około 1754 roku."
+  }
+]

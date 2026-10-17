@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ulica-zeusa",
+    "nazwa": "Ulica Zeusa",
+    "name_en": "Zeusa Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Zeusa",
+    "adres_historyczny": null,
+    "lat": 52.2514911,
+    "lon": 20.9108776,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Zeusa powstała w latach 80. XX wieku na terenach przyległych do Wojskowej Akademii Technicznej.",
+      "Nazwę ulicy nadano 26 maja 1988 roku; upamiętnia ona Zeusa, jednego z bogów starożytnej mitologii greckiej.",
+      "Jest jedną z ulic wspólnoty mieszkaniowej „Akropol”; wzdłuż niej znajdują się domy jednorodzinne i osiedla mieszkaniowe.",
+      "Krzyżuje się z ul. Hery (dwukrotnie), ul. Apollina, ul. Posejdona i ul. Elektry."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street of the Akropol housing community in Bemowo-Lotnisko, built in the 1980s next to the Military University of Technology. It is named after Zeus, the king of the Greek gods.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Zeusa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Zeusa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-zencow",
+    "nazwa": "Ulica Żeńców",
+    "name_en": "Żeńców Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Żeńców",
+    "adres_historyczny": "część ul. Gromadzkiej",
+    "lat": 52.2248084,
+    "lon": 20.8928227,
+    "lokalizacja": "przyblizona",
+    "okres": "2023–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie ulica Żeńców była drogą łączącą ul. Dywizjonu 303 z innymi drogami we wsi Górce i stanowiła część dłuższej ulicy Gromadzkiej.",
+      "W okresie międzywojennym w budynku pod numerem 3/5/7 znajdowała się szkoła powszechna; od sierpnia do grudnia 1944 roku mieścił się tam przytułek i szpital.",
+      "Nazwę ulicy nadano na mocy Uchwały nr 9 Rady Narodowej Miasta Stołecznego Warszawy z 12 kwietnia 1954 roku; odnosiła się ona do tytułu powieści Szymona Szymonowica „Żeńcy”.",
+      "Ulicę zlikwidowano ostatecznie w 2008 roku, a jej obszar zaadaptowano pod budowę alei Obrońców Grodna.",
+      "W 2023 roku Rada m.st. Warszawy nadała nazwę Żeńców nowej ulicy, odchodzącej od ul. Szeligowskiej na Chrzanowie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Chrzanów, Bemowo. The original Żeńców street, named in 1954, was closed in 2008 for Obrońców Grodna avenue, and the name was given in 2023 to a new street off Szeligowska.",
+    "ludzie": [
+      {"kto": "Szymon Szymonowic", "rola": "autor powieści „Żeńcy”, od której pochodziła pierwotna nazwa", "wiki": null}
+    ],
+    "dawne_nazwy": ["część ul. Gromadzkiej"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Żeńców", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żeńców"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka artykułu; artykuł opisuje też starą ulicę Żeńców, która zniknęła, więc współrzędne mogą wskazywać nowy odcinek."
+  },
+  {
+    "id": "ulica-zolnierzy-wyklietych",
+    "nazwa": "Ulica Żołnierzy Wyklętych",
+    "name_en": "Cursed Soldiers Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Żołnierzy Wyklętych",
+    "adres_historyczny": "fragment ul. Wrocławskiej",
+    "lat": 52.2610461,
+    "lon": 20.9185298,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na terenie dawnego lotniska wojskowego Babice w latach 80. XX wieku, wraz z osiedlem Nowe Bemowo; początkowo stanowiła fragment ul. Wrocławskiej.",
+      "Uchwałą Rady m.st. Warszawy nr LIV/1628/2009 z 28 kwietnia 2009 roku nazwę dziewięćsetmetrowego odcinka zmieniono na „Żołnierzy Wyklętych”; nadanie spotkało się z licznymi protestami.",
+      "26 listopada 2009 roku radni zdecydowali o skróceniu ulicy do ul. Zachodzącego Słońca na rzecz dawnej ul. Wrocławskiej; 21 października 2010 roku ulicę wydłużono do Pirenejskiej.",
+      "Pod koniec 2011 roku na rogu ul. Pirenejskiej i ul. Żołnierzy Wyklętych powstało miejsce pamięci poświęcone Żołnierzom Wyklętym.",
+      "Patronem ulicy są Żołnierze Wyklęci, walczący w podziemiu antykomunistycznym i niepodległościowym w latach 1944-1963, związani wcześniej najczęściej z Armią Krajową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 750-metre street of the Bemowo-Lotnisko estate, built in the 1980s on the former Babice airfield. Its 2009 renaming was contested and the street was shortened and then extended again in 2009-2010.",
+    "ludzie": [],
+    "dawne_nazwy": ["fragment ul. Wrocławskiej"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Żołnierzy Wyklętych", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Żołnierzy_Wyklętych"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  }
+]

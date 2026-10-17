@@ -9,10 +9,13 @@ import {
   factsStory,
   findingSources,
   fitWords,
+  isGentleForKids,
   parseStoryAnswer,
   pickFacts,
   placeFacts,
   storyCacheKey,
+  storyWords,
+  WORDS_PER_SEC,
 } from "./story";
 
 const place = {
@@ -34,13 +37,22 @@ const bowie: Finding = {
 
 describe("bandFor", () => {
   it.each([
-    [10, "short"],
-    [30, "short"],
-    [31, "medium"],
-    [75, "medium"],
-    [600, "long"],
+    [10, "20s"],
+    [45, "40s"],
+    [59, "40s"],
+    [119, "100s"],
+    [179, "150s"],
+    [600, "600s"],
   ])("%i s → %s", (sec, band) => {
     expect(bandFor(sec).id).toBe(band);
+  });
+
+  it("fits the window with a breath to spare", () => {
+    for (const sec of [20, 45, 90, 200, 600]) {
+      const band = bandFor(sec);
+      expect(band.words / WORDS_PER_SEC).toBeLessThanOrEqual(Math.max(sec, 20));
+      expect(band.words / WORDS_PER_SEC).toBeGreaterThan(sec * 0.5);
+    }
   });
 });
 
@@ -108,7 +120,7 @@ describe("pickFacts", () => {
   });
 
   it("keeps at least one fact even when the band is tiny", () => {
-    const pick = pickFacts(place, { heard: [], band: { id: "short", upToSec: 5, words: 2 } });
+    const pick = pickFacts(place, { heard: [], band: { id: "5s", sec: 5, words: 2 } });
     expect(pick.facts).toHaveLength(1);
   });
 
@@ -144,6 +156,28 @@ describe("findingSources", () => {
     expect(findingSources([bowie, other])).toEqual([
       { id: "w1", title: bowie.title, url: bowie.url },
     ]);
+  });
+});
+
+describe("storyWords", () => {
+  const band = bandFor(60);
+
+  it("gives a child a shorter story than an adult", () => {
+    const kids = storyWords(band, "deep", false, "kids");
+    expect(kids).toBeLessThan(storyWords(band, "deep", false, "adult"));
+    expect(storyWords(band, "deep", false)).toBe(band.words);
+  });
+
+  it("keeps trivia and reminders short for everyone", () => {
+    expect(storyWords(band, "trivia", false, "kids")).toBe(storyWords(band, "trivia", false));
+  });
+});
+
+describe("isGentleForKids", () => {
+  it("marks war and the ghetto, not the rest", () => {
+    expect(isGentleForKids({ interests: ["architecture", "war_uprising"] })).toBe(true);
+    expect(isGentleForKids({ interests: ["jewish_warsaw"] })).toBe(true);
+    expect(isGentleForKids({ interests: ["nature", "sport"] })).toBe(false);
   });
 });
 

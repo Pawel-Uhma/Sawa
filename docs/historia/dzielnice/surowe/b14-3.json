@@ -1,0 +1,329 @@
+[
+  {
+    "id": "ulica-mikolaja-kopernika",
+    "nazwa": "ulica Mikołaja Kopernika",
+    "name_en": "Mikołaj Kopernik Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mikołaja Kopernika",
+    "adres_historyczny": "Aleksandria",
+    "lat": 52.234936,
+    "lon": 21.0208588,
+    "lokalizacja": "przyblizona",
+    "okres": "1670–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1670 roku Aleksander Zasławski założył jurydykę przy drodze Zjawienie; jurydykę nazwano Aleksandrią, a droga również otrzymała tę nazwę.",
+      "W latach 1874–1875 przy ulicy zbudowano szpital dla dzieci.",
+      "W 1907 roku ulice Aleksandria i Wróbla (odcinek od Foksal do Ordynackiej) połączono w jedną ulicę, nazwaną Mikołaja Kopernika.",
+      "W latach 20. XX wieku zbudowano gmach zaprojektowany przez Antoniego Jawornickiego do pełnienia funkcji hotelowych; pierwszym właścicielem był Powszechny Zakład Ubezpieczeń Wzajemnych (nr 36/40).",
+      "W czasie powstania warszawskiego na odcinku między ulicami Szczygla i Foksal znajdowała się powstańcza barykada.",
+      "6 września 1944 roku zabudowa ulicy została częściowo zniszczona w wyniku bombardowań Luftwaffe.",
+      "W 2012 roku Rada Warszawy uściśliła brzmienie nazwy na Mikołaja Kopernika, a w 2013 roku wybudowano dwa ronda: przy ul. Tamka i ul. Świętokrzyskiej."
+    ],
+    "ciekawostki": [
+      "Według koncepcji z początku lat 50. XX wieku ulica miała odciążać Nowy Świat i połączyć się z Krakowskim Przedmieściem przy pomniku Kopernika."
+    ],
+    "summary_en": "Kopernika began as the Aleksandria street of a 1670 jurydyka, and in 1907 it was merged with Wróbla into one street named after Copernicus. A 1944 barricade and bombing damaged parts of its buildings, and two roundabouts were added in 2013.",
+    "ludzie": [
+      {"kto": "Aleksander Zasławski", "rola": "założył jurydykę Aleksandrię przy drodze w 1670 roku", "wiki": null},
+      {"kto": "Seweryn Uruski", "rola": "mieszkał przy Aleksandrii z rezydencją i sklepami", "wiki": null},
+      {"kto": "Antoni Jawornicki", "rola": "architekt gmachu hotelowego z lat 20. XX wieku (nr 36/40)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Aleksandria (jurydyka i droga)", "Wróbla (odcinek od Foksal do Ordynackiej)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mikołaja Kopernika w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Miko%C5%82aja_Kopernika_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-miodowa",
+    "nazwa": "ulica Miodowa",
+    "name_en": "Miodowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa",
+    "adres_historyczny": null,
+    "lat": 52.248477,
+    "lon": 21.0066455,
+    "lokalizacja": "przyblizona",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XV wieku ulica nosiła nazwę Przeczna, od jej poprzecznego kierunku względem dwóch ważnych traktów (Senatorskiej i Długiej).",
+      "W XVI wieku osiedlili się tu piekarze z Torunia, do czego nawiązuje obecna nazwa.",
+      "W 1829 roku po raz pierwszy zastosowano na ulicy asfalt, ułożony na chodnikach na koszt Edwarda Klopmanna; była to próba nieudana.",
+      "Połączenie z Krakowskim Przedmieściem otwarto dla ruchu kołowego w 1888 roku, po wyburzeniu w latach 1886–1887 czterech budynków, w tym Dworu pod Gwiazdą.",
+      "W 1907 roku uruchomiono na ulicy latarnie elektryczne, a w 1908 roku pojechały nią tramwaje elektryczne.",
+      "W 1965 roku ulica jako założenie urbanistyczne została w całości wpisana do rejestru zabytków.",
+      "W 2018 roku ulicę przebudowano i wymieniono latarnie na repliki warszawskich „pastorałów” z 1904 roku."
+    ],
+    "ciekawostki": [
+      "3 listopada 1771 roku w pobliżu ulicy Koziej konfederaci barscy porwali króla Stanisława Augusta Poniatowskiego.",
+      "W czasie Księstwa Warszawskiego, w latach 1808–1814, ulica nosiła nazwę ulicy Napoleona."
+    ],
+    "summary_en": "Miodowa is a historic street behind the Old Town walls, named after the Toruń bakers who settled there in the 16th century. It was linked to Krakowskie Przedmieście in 1888 and protected as a whole urban layout in 1965.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "król porwany przez konfederatów barskich 3 listopada 1771 roku w pobliżu ulicy Koziej", "wiki": null},
+      {"kto": "Edward Klopmann", "rola": "ułożył na własny koszt asfalt na chodnikach w 1829 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Przeczna (XV w.)", "Miodowniczą", "ulica Napoleona (1808–1814)", "ul. Nowo-Miodowa (odcinek przy Krakowskim Przedmieściu)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Miodowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Miodowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "zestrzelenie-liberatora-miodowa",
+    "nazwa": "zestrzelenie samolotu Liberator KG-836 na Miodowej",
+    "name_en": "Liberator KG-836 shot down over Miodowa",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa (na wysokości nr 22)",
+    "adres_historyczny": null,
+    "lat": 52.248477,
+    "lon": 21.0066455,
+    "lokalizacja": "przyblizona",
+    "okres": "15 sierpnia 1944",
+    "istnieje": true,
+    "fakty": [
+      "15 sierpnia 1944 roku, w czasie powstania warszawskiego, samolot Liberator KG-836 z 31. Dywizjonu South African Air Force, wykonujący zrzuty dla powstańców, został zestrzelony przez Niemców.",
+      "Samolot spadł na ulicę na wysokości domu nr 22.",
+      "Wszyscy kanadyjscy członkowie załogi zginęli.",
+      "Wydarzenie upamiętnia tablica pamiątkowa odsłonięta na fasadzie budynku w 1994 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 15 August 1944 a South African Air Force Liberator on a supply drop for the Uprising was shot down and crashed onto Miodowa Street near no. 22. All Canadian crew members died, and a plaque on the facade commemorates the event.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Miodowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Miodowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Miodowej."
+  },
+  {
+    "id": "ulica-miedzyparkowa",
+    "nazwa": "ulica Międzyparkowa",
+    "name_en": "Międzyparkowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Międzyparkowa",
+    "adres_historyczny": null,
+    "lat": 52.2568452,
+    "lon": 21.0001292,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono krótko przed 1926 rokiem na dawnych terenach pofortecznych Nowego Miasta.",
+      "Jej łukowy przebieg jest efektem omijania lunety Aleksiej, zwanej już wówczas fortem Traugutta.",
+      "W 1928 roku po przeciwnej stronie ulicy oddano część parku Romualda Traugutta oraz Stadion Polonii Warszawa.",
+      "W 1939 roku spłonęły drewniane zabudowania Polonii położone u zbiegu z ulicą Bonifraterską.",
+      "21 lipca 1959 roku oddano do użytku linię tramwajową wzdłuż ulicy, a ulicę poszerzono po północnej stronie kosztem obwałowań fortu Traugutta."
+    ],
+    "ciekawostki": [
+      "Wokół fortu Traugutta utworzono tereny rekreacyjne, zwane parkiem im. Janusza Kusocińskiego.",
+      "Przy ulicy, u zbiegu z Bonifraterską, stoi pomnik granic getta."
+    ],
+    "summary_en": "Międzyparkowa runs along the former Cytadela fortifications in Nowe Miasto. Its curved route follows the Traugutt fort, and the street was widened and given a tram line in 1959.",
+    "ludzie": [
+      {"kto": "Romuald Traugutt", "rola": "patron parku przy ulicy, jednym z obiektów jest jego park", "wiki": null},
+      {"kto": "Janusz Kusociński", "rola": "patron parku utworzonego wokół fortu Traugutta", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Międzyparkowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mi%C4%99dzyparkowa_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka artykułu. Artykuł wspomina o dzielnicy Nowe Miasto; w nagłówku paczki: Śródmieście."
+  },
+  {
+    "id": "ulica-mokotowska",
+    "nazwa": "ulica Mokotowska",
+    "name_en": "Mokotowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska",
+    "adres_historyczny": null,
+    "lat": 52.2185841,
+    "lon": 21.0171813,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XIV wieku była to droga łącząca Warszawę z wsią Mokotowo i część traktu do Czerska.",
+      "Nazwę nadano w 1770 roku, gdy w ramach Osi Stanisławowskiej ulicę uregulowano do wysokości ul. Polnej i obsadzono drzewami.",
+      "W 1829 roku w miejscu obecnego Kościoła Najświętszego Zbawiciela wybudowano parterową karczmę „Czerwona”, która stała tam do 1901 roku.",
+      "Na przełomie XIX i XX wieku powstało przy ulicy wiele kamienic secesyjnych.",
+      "W 1935 roku ulicę włączono w plan Dzielnicy Reprezentacyjnej Marszałka Józefa Piłsudskiego na Polu Mokotowskim, którego nie zrealizowano z powodu wojny.",
+      "W 1965 roku ulica jako założenie urbanistyczne została wpisana do rejestru zabytków.",
+      "We wrześniu 2016 roku na skrzyżowaniu z Koszykową zlikwidowano sygnalizację świetlną i zbudowano minirondo."
+    ],
+    "ciekawostki": [
+      "W 2007 roku podczas remontu odkryto przedwojenną kostkę bazaltową, która w 2010 roku została wykorzystana do wybrukowania podjazdów i miejsc parkingowych."
+    ],
+    "summary_en": "Mokotowska, named in 1770 during the Stanisławowska Axis project, follows an old road to the village of Mokotowo. It was home to Piłsudski's residence at no. 50 and is listed as a whole urban layout.",
+    "ludzie": [
+      {"kto": "Józef Piłsudski", "rola": "mieszkał w kamienicy pod nr 50 (wzniesionej w 1900 roku)", "wiki": null},
+      {"kto": "Karol Adamiecki", "rola": "mieszkał i działał w kamienicy nr 51/53 w latach 1927–1933; jeden z twórców Towarzystwa Naukowego Organizacji i Kierownictwa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mokotowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mokotowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "kamienica-mokotowska-48",
+    "nazwa": "kamienica przy ul. Mokotowskiej 48",
+    "name_en": "Mokotowska 48 tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 48",
+    "adres_historyczny": null,
+    "lat": 52.2185841,
+    "lon": 21.0171813,
+    "lokalizacja": "przyblizona",
+    "okres": "1860–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Niski, jednopiętrowy dom z 1860 roku, zaprojektowany przez Franciszka Marię Lanciego i sfinansowany przez Leopolda Kronenberga.",
+      "W domu mieszkali m.in. Józef Ignacy Kraszewski oraz Tytus Chałubiński.",
+      "Wpisany do rejestru zabytków pod nr 313, jest najstarszym zachowanym budynkiem przy ulicy Mokotowskiej.",
+      "W latach 60. XX wieku mieścił się tu Klub Hybrydy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A single-storey house of 1860 designed by Franciszek Maria Lanci for Leopold Kronenberg, now the oldest surviving building on Mokotowska. It was home to Józef Ignacy Kraszewski and Tytus Chałubiński.",
+    "ludzie": [
+      {"kto": "Franciszek Maria Lanci", "rola": "projektant domu", "wiki": null},
+      {"kto": "Leopold Kronenberg", "rola": "fundator budynku", "wiki": null},
+      {"kto": "Józef Ignacy Kraszewski", "rola": "mieszkał w domu", "wiki": null},
+      {"kto": "Tytus Chałubiński", "rola": "mieszkał w domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mokotowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mokotowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Mokotowskiej."
+  },
+  {
+    "id": "kamienica-krakowiacy-i-gorale",
+    "nazwa": "kamienica „Krakowiacy i górale” przy ul. Mokotowskiej 57",
+    "name_en": "Krakowiacy i górale tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 57",
+    "adres_historyczny": null,
+    "lat": 52.2185841,
+    "lon": 21.0171813,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Eklektyczna kamienica Rodryga Mroczkowskiego powstała w latach 1900–1904 według projektu Zygmunta Binduchowskiego.",
+      "Kamienica jest wpisana do rejestru zabytków pod nr 711.",
+      "Cztery posągi krakowiaków i górali podtrzymują jej balkony.",
+      "Charakterystyczne dla kamienicy są też dębowy bruk oraz żeliwne odbojniki w formie krasnali w bramie."
+    ],
+    "ciekawostki": [
+      "Od posągów krakowiaków i górali pochodzi nazwa kamienicy."
+    ],
+    "summary_en": "An eclectic tenement built in 1900–1904 for Rodryg Mroczkowski, known for four statues of highlanders and Krakowian peasants holding up its balconies, and for cast-iron gnome bollards in the gateway.",
+    "ludzie": [
+      {"kto": "Rodryg Mroczkowski", "rola": "nazwisko w nazwie kamienicy „Krakowiacy i górale” (1900–1904)", "wiki": null},
+      {"kto": "Zygmunt Binduchowski", "rola": "projektant kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mokotowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mokotowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Mokotowskiej."
+  },
+  {
+    "id": "ulica-mostowa",
+    "nazwa": "ulica Mostowa",
+    "name_en": "Mostowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mostowa",
+    "adres_historyczny": "Waliszew; ulica Przewoźna (XVI w.)",
+    "lat": 52.2517311,
+    "lon": 21.0114201,
+    "lokalizacja": "przyblizona",
+    "okres": "średniowiecze–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę stałego mostu na Wiśle, zwanego mostem Zygmunta Augusta, rozpoczęto w 1568 roku z fundacji króla; drewniany most ukończono w 1573 roku dzięki zabiegom Anny Jagiellonki.",
+      "Most przetrwał do 1603 roku, kiedy został zniesiony przez krę.",
+      "Pod koniec XVI wieku Bractwo Miłosierdzia, założone w 1584 roku przez Piotra Skargę, otworzyło przy Mostowej szpital św. Łazarza dla ubogiej ludności.",
+      "7 maja 1656 roku cała zabudowa ulicy została spalona przez Szwedów na rozkaz feldmarszałka Arvida Wittenberga.",
+      "W 1832 roku szpital św. Łazarza wyprowadził się z Mostowej na ulicę Brącką.",
+      "18 marca 1943 roku Gestapo w zasadzce na ulicy ujęło działaczy PPR Hankę Sawicką i Jana Strzeszewskiego, a Tadeusz Olszewski zginął na miejscu.",
+      "W 1944 roku wszystkie budynki przy ulicy zostały spalone."
+    ],
+    "ciekawostki": [
+      "W 1952 roku pod nr 2 wmurowano tablicę upamiętniającą aresztowanie z 18 marca 1943 roku.",
+      "W 1376 roku książę Janusz I Starszy wydał pierwszy znany przywilej dla Starej Warszawy, dotyczący łaźni publicznej przy moście nad potokiem spływającym parowem późniejszej ul. Mostowej."
+    ],
+    "summary_en": "Mostowa takes its name from the 16th-century Zygmunt Augustus bridge over the Vistula. Its buildings were burned by Swedes in 1656 and by the Germans in 1944, and it was rebuilt in 1951 along the old Town walls.",
+    "ludzie": [
+      {"kto": "Zygmunt August", "rola": "fundator stałego mostu na Wiśle (od 1568 roku)", "wiki": null},
+      {"kto": "Anna Jagiellonka", "rola": "wyjednała ukończenie drewnianego mostu w 1573 roku i fundowała Bramę Mostową", "wiki": null},
+      {"kto": "Piotr Skarga", "rola": "założyciel Bractwa Miłosierdzia, które otworzyło szpital św. Łazarza przy Mostowej", "wiki": null},
+      {"kto": "Arvid Wittenberg", "rola": "feldmarszałek, który w 1656 roku wydał rozkaz spalenia zabudowy ulicy", "wiki": null},
+      {"kto": "Hanka Sawicka", "rola": "działaczka PPR, ujęta przez Gestapo 18 marca 1943 roku", "wiki": null},
+      {"kto": "Jan Strzeszewski", "rola": "działacz PPR, ujęty przez Gestapo 18 marca 1943 roku", "wiki": null},
+      {"kto": "Tadeusz Olszewski", "rola": "zginął na miejscu podczas ujęcia 18 marca 1943 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Waliszew (XVI w.)", "ulica Przewoźna (XVI w.)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mostowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mostowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka). Szpital św. Łazarza przy Mostowej to inny obiekt niż szpital św. Łazarza przy Książęcej."
+  },
+  {
+    "id": "ulica-muranowska",
+    "nazwa": "ulica Muranowska",
+    "name_en": "Muranowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Muranowska",
+    "adres_historyczny": null,
+    "lat": 52.2536653,
+    "lon": 20.9990242,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono przed 1770 rokiem; jej nazwa pochodzi od pałacu Murano, wzniesionego przez Józefa Belottiego.",
+      "Od ok. 1820 roku ulica była zamieszkana głównie przez ludność żydowską, a od lat 20. XIX wieku do II wojny światowej działało przy niej kilkanaście domów modlitwy.",
+      "W 1881 roku uruchomiono linię tramwaju konnego od placu Muranowskiego; zajezdnię „Muranów” wybudowano przy ul. Sierakowskiej.",
+      "W 1908 roku pojechały tu pierwsze tramwaje elektryczne.",
+      "W listopadzie 1940 roku ulica w całości znalazła się w granicach warszawskiego getta.",
+      "W kwietniu 1943 roku ulica i plac Muranowski były miejscem walk w pierwszych dniach powstania w getcie; kwaterę główną ŻZW mieszczono w kamienicy nr 7/9.",
+      "Kamienica nr 7/9 była połączona podziemnym tunelem z kamienicą nr 6 po stronie aryjskiej, którym transportowano m.in. broń do getta.",
+      "W 1946 roku rozebrano wypalone kamienice, a tory tramwajowe zlikwidowano w 1953 roku."
+    ],
+    "ciekawostki": [
+      "W 1995 roku między jezdniami ulicy odsłonięto pomnik Poległym i Pomordowanym na Wschodzie."
+    ],
+    "summary_en": "Muranowska was laid out before 1770 and named after the Murano palace. It was a centre of Jewish life, lay inside the Ghetto from 1940, and saw the first fighting of the 1943 Ghetto Uprising, after which almost all its prewar buildings disappeared.",
+    "ludzie": [
+      {"kto": "Józef Belotti", "rola": "właściciel posesji, który wzniósł pałac Murano (w artykule również: Bellotti)", "wiki": null},
+      {"kto": "Chaim Kozen", "rola": "właściciel nowoczesnej kamienicy nr 2 (1937–1938), zniszczonej w 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Moranowska (dawniejszy zapis nazwy)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Muranowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Muranowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka). Artykuł podaje nazwisko Józefa Belottiego w różnych odmianach."
+  }
+]

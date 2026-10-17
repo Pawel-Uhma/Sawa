@@ -1,0 +1,69 @@
+[
+  {
+    "id": "slup-kilometrowy-rondo-dmowskiego",
+    "nazwa": "Słup kilometrowy w Warszawie",
+    "name_en": "Warsaw Kilometre Zero Post",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rondo Dmowskiego, u zbiegu Alej Jerozolimskich i ul. Marszałkowskiej",
+    "adres_historyczny": null,
+    "lat": 52.23,
+    "lon": 21.011111111,
+    "lokalizacja": "dokladna",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Słup kilometrowy, czyli warszawski kilometr zerowy, znajduje się przy rondzie Dmowskiego, u zbiegu Alej Jerozolimskich i ul. Marszałkowskiej.",
+      "Ustawiono go w latach 1952–1955 podczas budowy placu Defilad oraz porządkowania terenu i przebudowy ulic wokół Pałacu Kultury i Nauki.",
+      "Słup wykonano z polerowanych bloków granitowych, na których umieszczono odległości do stolic europejskich oraz do polskich miast wojewódzkich.",
+      "Jego budowa historycznie nawiązywała do polskiego znakownictwa drogowego.",
+      "W kwietniu 1971 roku słup-drogowskaz przeniesiono kilka metrów bliżej przebudowanego ronda."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warsaw kilometre zero post stands at the Dmowski roundabout. It was set up in 1952–1955 during the building of Plac Defilad around the Palace of Culture and Science, and is made of polished granite listing distances to European capitals and Polish provincial towns. It was moved a few metres in 1971.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Słup kilometrowy w Warszawie", "url": "https://pl.wikipedia.org/wiki/S%C5%82up_kilometrowy_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Krótki artykuł; brak danych o autorze projektu."
+  },
+  {
+    "id": "tr-warszawa-marszalkowska-8",
+    "nazwa": "TR Warszawa (dawniej Teatr Rozmaitości)",
+    "name_en": "TR Warszawa (formerly Teatr Rozmaitości)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 8",
+    "adres_historyczny": "ul. Marszałkowska 8",
+    "lat": 52.215,
+    "lon": 21.021111,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę przy ul. Marszałkowskiej 8 zbudowano w latach 1936–1937 według projektu Maksymiliana Goldberga i Hipolita Rutkowskiego dla Heleny Pal, wdowy po Ferdynandzie Adolfie Palu, właścicielu Fabryki Przetworów Chemicznych „Dobrolin”.",
+      "Podziemna sala, dzięki betonowej konstrukcji, miała w razie wojny pełnić rolę schronu dla ludności cywilnej.",
+      "W styczniu 1939 roku otworzył tu działalność prywatny Teatr Marii Malickiej, a od stycznia do czerwca 1939 roku wystawiano lekkie komedie i poważny repertuar, m.in. adaptację „Pani Bovary” Flauberta.",
+      "W czasie okupacji salę Teatru Malickiej zajął Deutsches Theater, w którym wystawiano spektakle operetkowe i pokazywano filmy dla niemieckich urzędników i żołnierzy.",
+      "4 grudnia 1945 roku wystawiono tu dwie jednoaktowe opery: „Verbum Nobile” Stanisława Moniuszki i „Pajace” Leoncavalla; była to pierwsza premiera operowa w wyzwolonej Warszawie.",
+      "Teatr Rozmaitości, założony w 1949 roku jako Państwowy Teatr Rozmaitości w Warszawie, działał w siedzibie przy Marszałkowskiej 8; w 1988 roku pożar zniszczył widownię i część sceny, a przedstawienia przeniesiono do Teatru Buffo.",
+      "Premiera „Bzika tropikalnego” Stanisława Ignacego Witkiewicza 18 stycznia 1997 roku, debiut Grzegorza Jarzyny, była początkiem nowego rozdziału w historii teatru; spektakl zagrano ponad 200 razy do 2005 roku."
+    ],
+    "ciekawostki": [
+      "Teatr w końcu przyjął nazwę Rozmaitości, jednego z najstarszych polskich teatrów, otwartego w 1779 roku Teatru Rozmaitości Wojciecha Bogusławskiego.",
+      "W latach 70. działał tu legendarny kabaret literacko-artystyczny Studencki Teatr Satyryków pod dyrekcją Andrzeja Jareckiego."
+    ],
+    "summary_en": "TR Warszawa is a theatre at 8 Marszałkowska Street, in a 1936–1937 tenement with a concrete underground hall meant as a civil shelter. The Rozmaitości theatre was founded in 1949, burned in 1988, and in 1997 staged Grzegorz Jarzyna's debut production of Witkacy's Bzik tropikalny.",
+    "ludzie": [
+      {"kto": "Maksymilian Goldberg", "rola": "współautor projektu kamienicy (1936–1937)", "wiki": null},
+      {"kto": "Hipolit Rutkowski", "rola": "współautor projektu kamienicy (1936–1937)", "wiki": null},
+      {"kto": "Maria Malicka", "rola": "aktorka, prowadziła prywatny Teatr Marii Malickiej w 1939 roku", "wiki": null},
+      {"kto": "Kazimierz Poreda", "rola": "śpiewak, kierował Sceną Muzyczno-Operową po wojnie", "wiki": null},
+      {"kto": "Grzegorz Jarzyna", "rola": "reżyser, debiut w teatrze premierą „Bzika tropikalnego” w 1997 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Państwowy Teatr Rozmaitości (1949)", "Teatr Rozmaitości", "Teatr Maria Malickiej (1939)"],
+    "zrodla": [{"tytul": "Wikipedia: TR Warszawa", "url": "https://pl.wikipedia.org/wiki/TR_Warszawa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w rozdziale o zespole po 1997 roku (koniec pliku paczki). Dane o dyrekcji po 1998 roku pominięte."
+  }
+]

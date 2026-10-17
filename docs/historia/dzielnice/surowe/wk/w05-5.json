@@ -1,0 +1,171 @@
+[
+  {
+    "id": "ulica-katowa",
+    "nazwa": "Ulica Kątowa",
+    "name_en": "Kątowa Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Kątowa",
+    "adres_historyczny": null,
+    "lat": 52.2700396,
+    "lon": 20.9836914,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Kątowa ma 150 metrów długości i biegnie bez przecznic od ul. Mickiewicza do ul. Słowackiego, na którą nie ma przejazdu.",
+      "Została zaplanowana w latach 30. XX wieku jako Bałtycka, jednak w praktyce nie została wyznaczona w terenie.",
+      "Najpewniej w latach 50. XX wieku nazwę zmieniono na Kątowa; na przełomie lat 50. i 60. ulicę wyprostowano w związku z budową budynku Dzielnicowej Rady Narodowej (Słowackiego 6/8) i Osiedla Mickiewicza (Mickiewicza 33/35).",
+      "W pobliżu południowego krańca ulicy znajduje się jedno z wejść na stację metra Plac Wilsona."
+    ],
+    "ciekawostki": [
+      "Pierwsze z dwóch planowanych załamań ulicy wyznaczał ogród Warszawskiej Kooperatywy Mieszkaniowej „Feniks” przy pl. Wilsona 4."
+    ],
+    "summary_en": "Kątowa is a 150-metre street in Stary Żoliborz, running from Mickiewicza to Słowackiego without any cross streets. It was planned in the 1930s as Bałtycka, but was laid out in the field only in the 1950s–60s and renamed Kątowa.",
+    "ludzie": [],
+    "dawne_nazwy": ["Bałtycka (plan z lat 30. XX wieku)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Kątowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kątowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-malogoska",
+    "nazwa": "Ulica Małogoska",
+    "name_en": "Małogoska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Małogoska",
+    "adres_historyczny": null,
+    "lat": 52.2751665,
+    "lon": 20.9842301,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Małogoska ma prawie 150 metrów długości i biegnie od ul. Mścisławskiej do ul. Dygasińskiego.",
+      "W swoim biegu krzyżuje się jedynie z ulicą Mysłowicką.",
+      "Nazwa pochodzi od Małogoszcza, 4-tysięcznego miasta w województwie świętokrzyskim, w powiecie jędrzejowskim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Małogoska is a street of almost 150 metres in Żoliborz, running from Mścisławska to Dygasińskiego. It is named after the town of Małogoszcz in the Świętokrzyskie Voivodeship.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Małogoska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Małogoska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "mieroslawskiego-9-galeria-wahl",
+    "nazwa": "Willa przy ul. Mierosławskiego 9 (galeria sztuki)",
+    "name_en": "Villa at Mierosławskiego 9 (private art gallery)",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Mierosławskiego 9",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1979–2002",
+    "istnieje": true,
+    "fakty": [
+      "W 1979 roku w willi Alicji i Bożeny Wahl przy ul. Mierosławskiego 9 otwarto jedną z pierwszych prywatnych galerii sztuki w Polsce.",
+      "W galerii wystawiano prace m.in. Henryka Tomaszewskiego, Teresy Pągowskiej, Piotra Potworowskiego, Franciszka Starowieyskiego i Jana Lebensteina.",
+      "Galeria działała do 2002 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A villa at Mierosławskiego 9 in Żoliborz housed one of Poland's first private art galleries, opened in 1979 and operating until 2002. Works by Tomaszewski, Pągowska, Potworowski, Starowieyski and Lebenstein were shown there.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Mierosławskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Mierosławskiego"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w artykule o ulicy; adres z tekstu, do geokodowania. Rekord wydzielony z artykułu o ulicy."
+  },
+  {
+    "id": "ulica-myslowicka",
+    "nazwa": "Ulica Mysłowicka",
+    "name_en": "Mysłowicka Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Mysłowicka",
+    "adres_historyczny": null,
+    "lat": 52.2739732,
+    "lon": 20.9849733,
+    "lokalizacja": "przyblizona",
+    "okres": "1935",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1935 roku, jako druga, po ulicy Bytomskiej, z ulic odchodzących od ul. Bohomolca w kierunku północnym.",
+      "Początkowo nazywała się Mysłowiecka; oficjalna nazwa Mysłowicka obowiązywała już przed 1939 rokiem.",
+      "Zabudowa częściowo uległa zniszczeniu podczas powstania warszawskiego.",
+      "Nazwa pochodzi od Mysłowic, miasta w województwie śląskim, w centrum Górnośląskiego Okręgu Przemysłowego.",
+      "Od ul. Bohomolca ulica biegnie bez przecznic do ul. Małogoskiej."
+    ],
+    "ciekawostki": [
+      "W latach 70. i 80. XX wieku w budynku przy Mysłowickiej 8 mieściła się rezydencja Ambasadora Brazylii.",
+      "Na masztach latarni pod koniec lat 80. XX wieku można było oglądać ślady po kulach i odłamkach z powstania warszawskiego, a obecne repliki przedwojennych latarń zastąpiły zniszczone oryginały w latach 90."
+    ],
+    "summary_en": "Mysłowicka is a villa-type street in Stary Żoliborz, built in 1935 and running from Bohomolca to Małogoska. Its name comes from the Silesian city of Mysłowice. The Brazilian ambassador's residence stood at No. 8 in the 1970s and 1980s.",
+    "ludzie": [],
+    "dawne_nazwy": ["Mysłowiecka"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Mysłowicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Mysłowicka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Długość: infobox podaje 250 m, a sekcja Przebieg około 200 m. Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "myslowicka-8-rezydencja-ambasadora-brazylii",
+    "nazwa": "Rezydencja Ambasadora Brazylii przy ul. Mysłowickiej 8",
+    "name_en": "Brazilian ambassador's residence at Mysłowicka 8",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Mysłowicka 8",
+    "adres_historyczny": null,
+    "lat": 52.2739732,
+    "lon": 20.9849733,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70.–80. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "W latach 70. i 80. XX wieku w budynku przy ul. Mysłowickiej 8 mieściła się rezydencja Ambasadora Brazylii.",
+      "Willa wielokrotnie gościła ówczesnych polityków i dyplomatów na przyjęciach wydawanych przez ambasadora.",
+      "W 1985 roku rezydencję odwiedzili Rubens de Falco i Lucelia Santos, odtwórcy głównych ról w serialu „Niewolnica Isaura” (Leoncio i Isaura)."
+    ],
+    "ciekawostki": [
+      "Aktorzy zostali entuzjastycznie powitani przez mieszkańców Żoliborza."
+    ],
+    "summary_en": "In the 1970s and 1980s, the villa at Mysłowicka 8 served as the residence of the Brazilian ambassador to Poland. In 1985 the stars of the popular series „Niewolnica Isaura”, Rubens de Falco and Lucelia Santos, visited it.",
+    "ludzie": [
+      {"kto": "Rubens de Falco", "rola": "aktor, odtwórca roli Leoncia Almeidy w „Niewolnicy Isaurze”; odwiedził rezydencję w 1985", "wiki": null},
+      {"kto": "Lucelia Santos", "rola": "aktorka, odtwórczyni roli Isaury; odwiedziła rezydencję w 1985", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Mysłowicka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Mysłowicka"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak numeru osobnych współrzędnych; współrzędne ulicy (środek odcinka). Okres z tekstu (lata 70.–80.)."
+  },
+  {
+    "id": "ulica-mscislawska",
+    "nazwa": "Ulica Mścisławska",
+    "name_en": "Mścisławska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Mścisławska",
+    "adres_historyczny": null,
+    "lat": 52.2753903,
+    "lon": 20.9837942,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Mścisławska ma prawie 200 metrów długości i biegnie od ul. Mickiewicza do ul. Drohickiej, która jest jej przedłużeniem w kierunku północno-wschodnim.",
+      "Krzyżuje się jedynie z ulicami Bytomską i Małogoską.",
+      "Nazwa pochodzi od Mścisławia, 12-tysięcznego miasta na Białorusi, stolicy rejonu mścisławskiego obwodu mohylewskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Mścisławska is a street of almost 200 metres in Żoliborz, running from Mickiewicza to Drohicka. It is named after the Belarusian town of Mścisław.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Mścisławska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Mścisławska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  }
+]

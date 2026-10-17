@@ -1,0 +1,190 @@
+[
+  {
+    "id": "amfiteatr-lazienki",
+    "nazwa": "Amfiteatr w Łazienkach Królewskich",
+    "name_en": "Amphitheatre in the Royal Baths Park (Łazienki)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Park Łazienkowski (Łazienki Królewskie)",
+    "adres_historyczny": null,
+    "lat": 52.2138,
+    "lon": 21.0365,
+    "lokalizacja": "dokladna",
+    "okres": "1785–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Amfiteatr powstał w 1785 roku jako ziemny; kamienną postać zyskał w 1790 roku wg projektu Jana Chrystiana Kamsetzera.",
+      "Teatr składa się z widowni i sceny, przedzielonych wypełnionym wodą kanałem; może pomieścić 950 widzów.",
+      "Amfiteatr był wzorowany na teatrze w Herkulanum.",
+      "Widownię wieńczy rząd kamiennych rzeźb szesnastu dramaturgów, w tym dwóch Polaków, Niemcewicza i Trembeckiego, którzy jako jedyni doczekali się wizerunków za życia.",
+      "Przez kilka lat po 1817 roku, gdy Łazienki przeszły na własność cara Aleksandra I, nie wystawiano w nim sztuk; w 1822 roku dyrektor Ludwik Osiński wznowił przedstawienia.",
+      "W 1916 roku amfiteatr przeszedł na własność miasta, a w 1926 został dokładnie wyremontowany.",
+      "W 2015 roku zakończył się remont obiektu, w ramach większych prac w Łazienkach."
+    ],
+    "ciekawostki": [
+      "Akwarela Jana Piotra Norblina przedstawia wystawienie baletu „Kleopatra” w 1791 roku; fosa była wtedy także używana w czasie spektakli.",
+      "Podczas okupacji w amfiteatrze kilkakrotnie wystawiano sztuki dla ludności niemieckiej."
+    ],
+    "summary_en": "The Łazienki amphitheatre, built in 1785 as an earthwork and given stone form in 1790 to designs by Jan Chrystian Kamsetzer, was modelled on the theatre at Herculaneum. It seats 950 and was renovated in 2015.",
+    "ludzie": [
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "autor projektu przebudowy amfiteatru (1790)", "wiki": null},
+      {"kto": "Ludwik Osiński", "rola": "dyrektor Łazienek, który w 1822 wznowił przedstawienia", "wiki": null},
+      {"kto": "Jan Piotr Norblin", "rola": "autor akwareli przedstawiającej baletu „Kleopatra”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Amfiteatr w Łazienkach Królewskich", "url": "https://pl.wikipedia.org/wiki/Amfiteatr_w_%C5%81azienkach_Kr%C3%B3lewskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "apartment-house",
+    "nazwa": "Apartment House",
+    "name_en": "Apartment House (modernist building, Nowowiejska 4)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowowiejska 4",
+    "adres_historyczny": "ul. 6 sierpnia 28",
+    "lat": 52.2201,
+    "lon": 21.0167,
+    "lokalizacja": "dokladna",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Modernistyczny dom wzniesiono w latach 1933–1935 wg projektu Juliusza Żórawskiego, zgodnie z pięcioma zasadami architektury nowoczesnej Le Corbusiera.",
+      "Budynek powstał pod adresem ul. 6 sierpnia 28.",
+      "Był to pierwszy w Warszawie dom z luksusowymi kawalerkami; charakteryzowały go szerokie okna i zaokrąglone balkony.",
+      "Podczas II wojny światowej budynek został uszkodzony i odbudowany po 1945 roku z zupełnie nową elewacją.",
+      "Po przywróceniu w 1949 roku dawnej nazwy ulicy Nowowiejskiej budynek uzyskał adres ul. Nowowiejska 4."
+    ],
+    "ciekawostki": [
+      "Na tyłach budynku wzniesiono oficyny utrzymane w stylu modernistycznym, również z zaokrąglonymi balkonami."
+    ],
+    "summary_en": "Apartment House at 4 Nowowiejska Street is a 1930s modernist block designed by Juliusz Żórawski in line with Le Corbusier's five points. Built as 28 6 Sierpnia, it was damaged in the war and rebuilt with a new façade.",
+    "ludzie": [
+      {"kto": "Juliusz Żórawski", "rola": "projektant budynku (1933–1935)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. 6 sierpnia 28 (przed 1949)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Apartment House w Warszawie", "url": "https://pl.wikipedia.org/wiki/Apartment_House_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "areszt-centralny",
+    "nazwa": "Areszt Centralny (Centralniak)",
+    "name_en": "Central Detention House (Centralniak), Warsaw",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Daniłowiczowska 7 (teren nieistniejącego budynku)",
+    "adres_historyczny": "ul. Daniłowiczowska 7",
+    "lat": 52.244556,
+    "lon": 21.006944,
+    "lokalizacja": "dokladna",
+    "okres": "1823–po 1945",
+    "istnieje": false,
+    "fakty": [
+      "Pierwszy budynek aresztu powstał w 1823 roku na tyłach pałacu Jabłonowskich, będącego wtedy siedzibą warszawskiego ratusza; architektem był prawdopodobnie Józef Grzegorz Lessel.",
+      "Między 1899 a 1901 miasto nabyło od rodziny Schuchów przyległą posesję; po 1909 roku wybudowano nowy, siedmiokondygnacyjny gmach, jednostkę pomocniczą dla X Pawilonu Cytadeli oraz Pawiaka.",
+      "Od 1915 do 1932 roku naczelnikiem więzienia był Tadeusz Ostrzeszewicz.",
+      "W nocy z 6 na 7 września 1939 administracja więzienia opuściła miasto, pozostawiając w celach więźniów komunistycznych, którzy później sami opuścili więzienie.",
+      "Po kapitulacji miasta budynek przejęli Niemcy, którzy urządzili tu więzienie sądowe.",
+      "Po aresztowaniu 27 października 1939 roku na krótko trafił tam Stefan Starzyński.",
+      "Budynek został zniszczony podczas powstania warszawskiego; jego pozostałości rozebrano w pierwszych latach po wojnie."
+    ],
+    "ciekawostki": [
+      "W latach 1936–1939 pod adresem ul. Daniłowiczowska 7 m. 4 mieściła się redakcja dwutygodnika „W Służbie Penitencjarnej”."
+    ],
+    "summary_en": "The Central Detention House, known as Centralniak, stood at 7 Daniłowiczowska Street in Warsaw. Built on the grounds of the former town hall, it was a police prison, was taken over by the Germans in 1939, and was destroyed in the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "Józef Grzegorz Lessel", "rola": "prawdopodobny architekt pierwszego budynku (1823)", "wiki": null},
+      {"kto": "Tadeusz Ostrzeszewicz", "rola": "naczelnik więzienia (1915–1932)", "wiki": null},
+      {"kto": "Stefan Starzyński", "rola": "więzień, aresztowany 27.10.1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Centralniak (nazwa zwyczajowa)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Areszt Centralny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Areszt_Centralny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje rocznej daty rozbiórki, tylko „pierwsze lata po zakończeniu wojny”."
+  },
+  {
+    "id": "arkady-kubickiego",
+    "nazwa": "Arkady Kubickiego",
+    "name_en": "Kubicki Arcades (Warsaw Royal Castle, river side)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "przy Zamku Królewskim, od strony Wisły",
+    "adres_historyczny": null,
+    "lat": 52.24833,
+    "lon": 21.01582,
+    "lokalizacja": "dokladna",
+    "okres": "1818–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Arkady wzniesiono w latach 1818–1821 według projektu Jakuba Kubickiego jako część większej przebudowy Zamku Królewskiego.",
+      "Budowla składała się z 7 ażurowych arkad w parterowym budynku długości 195 m i szerokości 9,5 m, na skarpie od wschodniej strony zamku.",
+      "Po przegranej powstania listopadowego w 1831 roku armia rosyjska przejęła budowlę, zamurowała arkady i urządziła tu stajnię i koszary.",
+      "II wojnę światową Arkady przetrwały w stanie nienaruszonym; do lat 80. były ponownie użytkowane przez wojsko.",
+      "W latach 1994–2009 przeprowadzono generalny remont, a 1 kwietnia 2009 Arkady zostały otwarte dla zwiedzających.",
+      "Projekt gruntownej odbudowy z lat 1995–2006 obejmował schody ruchome łączące arkady z zamkiem."
+    ],
+    "ciekawostki": [
+      "Po połączeniu sklepienia arkad z terenem przed elewacją zamku od strony Wisły powstał taras o wymiarach 195 na 24 metry, na którym posadzono drzewa i krzewy."
+    ],
+    "summary_en": "The Kubicki Arcades, built in 1818–1821 to designs by Jakub Kubicki, form a terrace on the river side of the Royal Castle in Warsaw. They were closed up by the Russian army after 1831, survived WWII intact, and were restored and reopened to visitors in 2009.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "architekt, autor projektu arkad (1816–1818)", "wiki": null},
+      {"kto": "Stanisław Fiszer", "rola": "prof., autor rewitalizacji (1994–2009)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Arkady Kubickiego", "url": "https://pl.wikipedia.org/wiki/Arkady_Kubickiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "arsenal-dluga-52",
+    "nazwa": "Arsenał",
+    "name_en": "Arsenal (Warsaw), Długa 52",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa 52",
+    "adres_historyczny": null,
+    "lat": 52.245871,
+    "lon": 21.002415,
+    "lokalizacja": "dokladna",
+    "okres": "1638–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wczesnobarokowy gmach wzniesiono w latach 1638–1643 z rozkazu króla Władysława IV, w miejscu dawnego przytułku dla weteranów założonego przez Stefana Batorego.",
+      "W połowie XVII wieku przechowywano tu ok. 100 dział oraz broń ręczną; we wrześniu 1655 roku budynek zdobyli Szwedzi.",
+      "W nocy z 29 na 30 listopada 1830 roku ludność Warszawy zdobyła budynek, wspierając tym samym rozpoczynające się powstanie listopadowe.",
+      "W 1938 roku zakończono przebudowę gmachu na siedzibę Archiwum Miejskiego Warszawy.",
+      "Od 5 do 23 sierpnia 1944 roku budynek zajęli i bronili powstańcy; 4 listopada 1944 został spalony przez Niemców i zniszczony w 80%.",
+      "W latach 1948–1950 odbudowano go według projektu Brunona Zborowskiego; od 1959 roku jest siedzibą Państwowego Muzeum Archeologicznego.",
+      "W 1965 roku gmach został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "26 marca 1943 roku w pobliżu gmachu przeprowadzono akcję Szarych Szeregów, znaną jako akcja pod Arsenałem.",
+      "31 sierpnia 2006 roku Rada Warszawy zmieniła nazwę stacji metra Ratusz na Ratusz Arsenał."
+    ],
+    "summary_en": "The Arsenal at 52 Długa Street was built in 1638–1643 as the royal arsenal of King Władysław IV. It was seized by Warsaw residents in 1830, burned by the Germans in 1944, rebuilt in 1948–1950, and has housed the State Archaeological Museum since 1959.",
+    "ludzie": [
+      {"kto": "Władysław IV", "rola": "król, z jego rozkazu wzniesiono gmach", "wiki": null},
+      {"kto": "Paweł Grodzicki", "rola": "kierownik budowy (1638–1643)", "wiki": null},
+      {"kto": "Krzysztof Arciszewski", "rola": "kierownik budowy (1638–1643)", "wiki": null},
+      {"kto": "Bruno Zborowski", "rola": "autor projektu odbudowy (1948–1950)", "wiki": null},
+      {"kto": "Stefan Batory", "rola": "założyciel przytułku dla weteranów, na którego miejscu stanął arsenał", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Arsenał w Warszawie", "url": "https://pl.wikipedia.org/wiki/Arsena%C5%82_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

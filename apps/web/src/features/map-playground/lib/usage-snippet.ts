@@ -1,9 +1,8 @@
-import type { Interest, LatLng } from "@sawa/shared";
+import type { LatLng } from "@sawa/shared";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { DEFAULT_PADDING } from "./playground-state";
 
 export type SnippetProps = {
-  interests: readonly Interest[];
   hasRoute: boolean;
   camera?: MapCamera;
   padding: MapPadding;
@@ -43,7 +42,7 @@ function paddingLiteral(padding: MapPadding): string | null {
 
 /** JSX for the current playground settings; props left at their defaults are omitted. */
 export function buildUsageSnippet(props: SnippetProps): string {
-  const lines = [`interests={${JSON.stringify(props.interests)}}`];
+  const lines: string[] = [];
   if (props.hasRoute) lines.push("route={route}");
   if (props.camera) lines.push(`camera={${cameraLiteral(props.camera)}}`);
   const padding = paddingLiteral(props.padding);
@@ -53,5 +52,5 @@ export function buildUsageSnippet(props: SnippetProps): string {
   if (props.isStopClickHandled) lines.push("onStopClick={(placeId) => setActiveStop(placeId)}");
   if (!props.hasPlaceSheet) lines.push("hasPlaceSheet={false}");
   if (!props.hasZoomControls) lines.push("hasZoomControls={false}");
-  return `<SawaMap\n${lines.map((line) => `  ${line}`).join("\n")}\n/>`;
+  return `<SawaMap${lines.map((line) => `\n  ${line}`).join("")}\n/>`;
 }

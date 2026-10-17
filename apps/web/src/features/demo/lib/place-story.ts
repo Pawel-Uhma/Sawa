@@ -48,7 +48,8 @@ export function usePlaceStory(placeId: string, listener: Listener) {
 
   useEffect(() => {
     if (state !== "playing") return;
-    const audio = voiceFailed ? null : audioRef.current;
+    // Bez `?voice=1` albo gdy głos padł, licznik z tekstu.
+    const audio = voiceFailed || !clip?.audioUrl ? null : audioRef.current;
     // Bez głosu licznik czeka na cały tekst, bo dopiero on mówi, ile czekać.
     if (!audio && !live.done) return;
     const words = live.text?.split(/\s+/).length ?? 0;
@@ -71,11 +72,11 @@ export function usePlaceStory(placeId: string, listener: Listener) {
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [state, live, voiceFailed]);
+  }, [state, live, voiceFailed, clip]);
 
   const start = useCallback((next: Clip) => {
     const audio = audioRef.current;
-    if (!audio) {
+    if (!audio || !next.audioUrl) {
       setState("playing");
       return;
     }
@@ -102,7 +103,7 @@ export function usePlaceStory(placeId: string, listener: Listener) {
         setProgress(0);
         if (audio && !voiceFailed) audio.currentTime = 0;
       }
-      if (voiceFailed) setState("playing");
+      if (voiceFailed || !clip.audioUrl) setState("playing");
       else start(clip);
       return;
     }

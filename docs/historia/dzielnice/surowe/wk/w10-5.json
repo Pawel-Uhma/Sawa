@@ -1,0 +1,268 @@
+[
+  {
+    "id": "teatr-wielki",
+    "nazwa": "Teatr Wielki",
+    "name_en": "Teatr Wielki (Grand Theatre)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Teatralny",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach wzniesiono w latach 1825–1833 według projektu włoskiego architekta Antonia Corazziego, wzorowanego na teatrze San Carlo w Neapolu.",
+      "Pierwsze przedstawienie odbyło się 24 lutego 1833 roku i obejmowało operę „Cyrulik sewilski” oraz balet „Zabawa tancerska”.",
+      "Po pożarze Teatru Rozmaitości w 1883 roku gmach gruntownie przebudowano: drewniane elementy konstrukcji zastąpiono stalowymi, a teatr zyskał centralne ogrzewanie.",
+      "Podczas obrony Warszawy w 1939 roku gmach został zbombardowany, a zniszczenia oszacowano na 75%.",
+      "Między 6 a 8 sierpnia 1944 roku w ruinach zamordowano ok. 350 polskich cywilów.",
+      "Odbudowę według projektu Bohdana Pniewskiego zakończono w 1965 roku; teatr otwarto 19 listopada 1965 roku operą „Straszny dwór” Stanisława Moniuszki.",
+      "W marcu 1985 roku gmach ponownie spłonął na skutek zwarcia w instalacji elektrycznej; teatr otwarto 19 listopada 1997 roku premierą „Nocy listopadowej” w reżyserii Jerzego Grzegorzewskiego."
+    ],
+    "ciekawostki": [
+      "W 2002 roku fasadę udekorowano Kwadrygą Apollina, monumentalną rzeźbą Adama Myjaka i Antoniego Janusza Pastwy, nawiązującą do pierwotnych planów Corazziego."
+    ],
+    "summary_en": "The Grand Theatre on Plac Teatralny, a neoclassical opera house designed by Antonio Corazzi in 1825–1833 after the Teatro San Carlo in Naples. Bombed in 1939 and burned in 1985, it was rebuilt twice and reopened in 1965 and 1997.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "architekt gmachu", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "autor projektu odbudowy i rozbudowy w latach 1950–1965", "wiki": null},
+      {"kto": "Adam Myjak", "rola": "współautor Kwadrygi Apollina na fasadzie", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "plac Marywilski"
+    ],
+    "zrodla": [
+      {"tytul": "Warszawikia: Teatr Wielki", "url": "https://warszawa.fandom.com/pl/wiki/Teatr_Wielki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru i współrzędnych w artykule; adres wg tekstu: pl. Teatralny. Artykuł nazywa plac przed gmachem dawniej placem Marywilskim."
+  },
+  {
+    "id": "teatr-na-wyspie",
+    "nazwa": "Teatr na Wyspie",
+    "name_en": "Theatre on the Island",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1791–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy teatr w tym miejscu powstał w 1786 roku według projektu Dominika Merliniego; w latach 1790–1791 zastąpiono go Teatrem na Wyspie, zaprojektowanym przez Jana Chrystiana Kamsetzera.",
+      "Był trzecim teatrem w Łazienkach, mógł pomieścić około 900 widzów; półkolista widownia wzorowana była na antycznym teatrze w Herkulanum.",
+      "Scenę zaprojektowano jako świątynię z częściowo połamanymi kolumnami, co było celową formą architektoniczną.",
+      "Uroczyste otwarcie nastąpiło 7 września 1791 roku, w rocznicę elekcji Stanisława Augusta Poniatowskiego; wystawiono balet historyczny „Kleopatra”.",
+      "Amfiteatr został uszkodzony podczas II wojny światowej i odrestaurowany w latach 1966–1967.",
+      "Na szczycie widowni stoi osiem figur nieokreślonych dramaturgów; na bocznych balkonach umieszczono rzeźby personifikacji komedii i tragedii."
+    ],
+    "ciekawostki": [
+      "Wydarzenie z 1791 roku uwieczniono na rysunkach Jana Piotra Norblina, a na scenie wprowadzono do akcji „okręty”."
+    ],
+    "summary_en": "A neoclassical amphitheatre in the Royal Łazienki Park beside the Southern Pond, designed by Jan Chrystian Kamsetzer and opened on 7 September 1791 with the ballet Cleopatra. It seats around 900 and was restored in 1966–1967 after war damage.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "projektant pierwszego teatru w tym miejscu (1786)", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "projektant Teatru na Wyspie", "wiki": null},
+      {"kto": "Tomasso Righi", "rola": "wykonawca rzeźb-personifikacji na balkonach", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Amfiteatr w Łazienkach"
+    ],
+    "zrodla": [
+      {"tytul": "Warszawikia: Teatr na Wyspie", "url": "https://warszawa.fandom.com/pl/wiki/Teatr_na_Wyspie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak numeru i współrzędnych w artykule; wg tekstu nad Stawem Łazienkowskim w Łazienkach Królewskich. Dawna nazwa „Amfiteatr” podana w tekście jako alternatywna."
+  },
+  {
+    "id": "tunel-srednicowy",
+    "nazwa": "Tunel średnicowy",
+    "name_en": "Warsaw Cross-City Rail Tunnel",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Powiśle – Śródmieście",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1924–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tunel kolejowy o całkowitej długości 2310 m biegnie pod centrum Warszawy na trasie linii średnicowej łączącej dworce Zachodni, Centralny i Wschodni.",
+      "Koncepcję płytkiego tunelu przedstawili w 1884 roku inżynierowie Rohan i Zieliński.",
+      "W lipcu 1919 roku Sejm podjął uchwałę o budowie linii średnicowej; projekt zatwierdzono w 1921 roku, a budowę rozpoczęto trzy lata później.",
+      "Uroczyste otwarcie tunelu nastąpiło 2 września 1933 roku; 15 grudnia 1936 roku tunelem przejechał pierwszy pociąg elektryczny.",
+      "Po odbudowie w czerwcu 1949 roku uroczyście otwarto ponownie kompletny, czterotorowy tunel.",
+      "W 2003 roku, ze względu na zły stan techniczny (ograniczenie prędkości do 20 km/h), podjęto decyzję o generalnym remoncie.",
+      "Otwarcie tunelu po remoncie części podmiejskiej nastąpiło 15 stycznia 2007 roku; remont części dalekobieżnej prowadzono od 9 lutego 2011 roku do 2013 roku."
+    ],
+    "ciekawostki": [
+      "Tunel ma cztery wyjścia osobowe, m.in. drzwi w przejściu podziemnym pod rondem Dmowskiego oraz oszklone zejście przy Muzeum Narodowym w pobliżu ronda de Gaulle’a."
+    ],
+    "summary_en": "A 2,310 m rail tunnel under central Warsaw, part of the cross-city line between the Zachodni, Centralny and Wschodni stations. Opened in 1933 and fully destroyed in 1944–1945, it was rebuilt by 1949 and renovated in 2006–2013.",
+    "ludzie": [
+      {"kto": "Rohan i Zieliński", "rola": "inżynierowie, autorzy koncepcji płytkiego tunelu z 1884 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Tunel średnicowy", "url": "https://warszawa.fandom.com/pl/wiki/Tunel_średnicowy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tunel nie ma adresu w artykule; podano odcinek Powiśle–Śródmieście. Brak współrzędnych w artykule."
+  },
+  {
+    "id": "tlomackie",
+    "nazwa": "Tłomackie",
+    "name_en": "Tłomackie",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tłomackie",
+    "adres_historyczny": "jurydyka Tłumackie",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1749–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tłomackie to dawna jurydyka w obrębie współczesnego Śródmieścia, leżąca między ul. Bielańską a Lesznem; w 1749 roku część pól należała do Eustachego Potockiego, starosty tłumackiego.",
+      "W 1779 roku bankier Karol Schultz nabył dworek przy ul. Bielańskiej i urządził w nim murowaną fabrykę; plany przebudowy jurydyki sporządzał Szymon Bogumił Zug.",
+      "Wodozbiór na środku dziedzińca, znany jako Gruba Kaśka, oddano do użytku w 1786 roku.",
+      "Po bankructwie Schultza w 1793 roku inwestycje na Tłomackiem wstrzymano; w 1801 roku większość posesji przeszła w ręce Teresy Miączyńskiej.",
+      "W 1814 roku dom „Pod Orłem Białym” kupił Ossoliński i urządził w nim jedyną w mieście publiczną galerię obrazów.",
+      "W 1872 roku warszawska gmina żydowska wykupiła modrzewiowy dworek od ul. Bielańskiej i ze składek zbudowała synagogę projektu Marconiego.",
+      "Ulica Tłomackie po II wojnie światowej zniknęła, zmniejszając się do niewielkiej uliczki."
+    ],
+    "ciekawostki": [
+      "Nazwa jurydyki wzięła się od miasta Tłumacz (Tłómacz) na Ukrainie, stąd pisownie Tłumackie i Tłomackie."
+    ],
+    "summary_en": "A former jurisdiction (jurydyka) in central Warsaw, between Bielańska Street and Leszno, known for its Gruba Kaśka well from 1786. In the 19th century it became a centre of the Jewish community and its streets disappeared after the Second World War.",
+    "ludzie": [
+      {"kto": "Karol Schultz", "rola": "bankier, inwestor w jurydyce Tłomackie", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "autor planów przebudowy jurydyki", "wiki": null},
+      {"kto": "Eustachy Potocki", "rola": "starosta tłumacki, właściciel części pól w 1749 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "jurydyka Tłumackie"
+    ],
+    "zrodla": [
+      {"tytul": "Warszawikia: Tłomackie", "url": "https://warszawa.fandom.com/pl/wiki/Tłomackie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak numeru i współrzędnych w artykule; adres_dzis to nazwa ulicy. Nazwiska przepisane wg tekstu."
+  },
+  {
+    "id": "ulica-29-listopada",
+    "nazwa": "ulica 29 Listopada",
+    "name_en": "29 Listopada Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. 29 Listopada",
+    "adres_historyczny": "ul. Huzarska",
+    "lat": 52.2149249,
+    "lon": 21.0430851,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach 30. XIX wieku jako droga dojazdowa do koszar Grodzieńskiego Huzarskiego Pułku Lejb-Gwardii i nieformalnie nazywała się Huzarską.",
+      "5 lipca 1921 roku nadano jej nazwę 29 Listopada, od dnia 29 listopada 1830 roku, gdy pułkownik Piotr Wysocki wyprowadził oficerów ze Szkoły Podchorążych, rozpoczynając powstanie listopadowe.",
+      "W 1904 roku na terenie koszar stanęła cerkiew św. Olgi, obok której ustawiono pomnik gen. Michaiła Skobielewa.",
+      "Około 1925 roku ulicę przebudowano; cerkiew i pomnik rosyjskiego generała zburzono, a na terenie koszar powstały pomniki Józefa Piłsudskiego i Józefa Bema.",
+      "Podczas powstania warszawskiego powstańcy 28 sierpnia próbowali zaatakować koszary od strony ul. Podchorążych, jednak atak się załamał.",
+      "W latach 1948–1949 ulicą kursowały autobusy linii 108.",
+      "Przy ulicy znajduje się m.in. siedziba 10 Warszawskiego Pułku Samochodowego (nr 1), a w nr 18a blok SMB „Nasza Chata”."
+    ],
+    "ciekawostki": [
+      "Przy ul. 29 Listopada 3b mieści się Hotel Łazienkowski, w gmachu dawnych koszar pułku gwardii."
+    ],
+    "summary_en": "A 600 m street in Ujazdów running from Czerniakowska to Szwoleżerów streets, laid out in the 1830s to reach a cavalry barracks and named on 5 July 1921 after the start of the November Uprising of 1830. The barracks area was rebuilt after the war with residential blocks.",
+    "ludzie": [
+      {"kto": "Piotr Wysocki", "rola": "pułkownik, który 29 listopada 1830 roku wyprowadził oficerów ze Szkoły Podchorążych", "wiki": null},
+      {"kto": "Michaił Skobielew", "rola": "rosyjski generał, którego pomnik stał przy cerkwi św. Olgi", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Huzarska"
+    ],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica 29 Listopada", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_29_Listopada"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (środek odcinka). Artykuł raz pisze „Huzarskiego”, a w spisie obiektów „Husarskiego” pułku. Z artykułu nie wydzielono osobnych rekordów budynków."
+  },
+  {
+    "id": "ulica-andersa",
+    "nazwa": "ulica gen. Władysława Andersa",
+    "name_en": "Gen. Władysław Anders Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. gen. Władysława Andersa",
+    "adres_historyczny": "ul. Marcelego Nowotki (1948–1990)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1946–1947–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica przebiega przez Muranów, łączy Śródmieście z Żoliborzem i ma około 1,8 km długości; biegnie od placu Bankowego do Mickiewicza.",
+      "Wytyczono ją w latach 1946–1947 przez ruiny Muranowa, w miejsce dawnych Nalewek; zatarła dawny układ ulic, m.in. Przejazd, Nalewki i plac Muranowski.",
+      "W latach 50. XX wieku ulicę zabudowano socrealistycznymi blokami wg projektu Stanisława Brukalskiego oraz Barbary Andrzejewskiej.",
+      "Z zabytków zachował się dawny Pałac Mostowskich oraz fontanna z 1866 roku przed Kinem Muranów, przeniesiona z placu Bankowego.",
+      "Patronem ulicy jest gen. Władysław Anders, dowódca polskich sił zbrojnych na Wschodzie, a w latach 1944–1945 Naczelny Wódz Polskich Sił Zbrojnych.",
+      "W 2008 roku planowano zbudowanie drugiej jezdni, ale inwestycji nie rozpoczęto.",
+      "Pod ulicą przebiega I linia metra."
+    ],
+    "ciekawostki": [
+      "Wcześniej ulicy patronował Marceli Nowotko, a w latach 1948–1961 także fragmentowi Marszałkowskiej między placem Bankowym a Królewską."
+    ],
+    "summary_en": "A roughly 1.8 km north-south road through Muranów, laid out in 1946–1947 across the ruins of the district and named after General Władysław Anders. It was lined with socialist-realist blocks in the 1950s and was long planned to get a second carriageway.",
+    "ludzie": [
+      {"kto": "Władysław Anders", "rola": "patron ulicy, dowódca Armii Polskiej na Wschodzie, Naczelny Wódz w latach 1944–1945", "wiki": null},
+      {"kto": "Marceli Nowotko", "rola": "dawny patron ulicy (1948–1990), przywódca PPR", "wiki": null},
+      {"kto": "Stanisław Brukalski", "rola": "autor projektu socrealistycznych bloków", "wiki": null},
+      {"kto": "Barbara Andrzejewska", "rola": "autorka projektu socrealistycznych bloków", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ul. Marcelego Nowotki (1948–1990)"
+    ],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Andersa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Andersa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku artykułu; adres wg tekstu, bez numeru (numery 1–35)."
+  },
+  {
+    "id": "ulica-bacciarellego",
+    "nazwa": "ulica Bacciarellego",
+    "name_en": "Bacciarelli Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bacciarellego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Uliczka o długości 25 m, będąca ślepym zaułkiem odchodzącym od ul. Klonowej w Śródmieściu Południowym.",
+      "Wytyczono ją na początku XX wieku; początkowo była bezimienna, a w 1938 roku nadano jej obecną nazwę.",
+      "Dziś należy do najkrótszych ulic w Warszawie.",
+      "Patron, włoski malarz nadworny Stanisława Augusta Marcello Bacciarelli, miał w pobliżu rezydencję przy Bagateli."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 25-metre dead-end lane off Klonowa Street in Śródmieście Południowe, named in 1938 after the court painter Marcello Bacciarelli, one of the shortest streets in Warsaw.",
+    "ludzie": [
+      {"kto": "Marcello Bacciarelli", "rola": "patron ulicy, nadworny malarz Stanisława Augusta", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Bacciarellego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bacciarellego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w artykule; numer domu nie podany."
+  }
+]

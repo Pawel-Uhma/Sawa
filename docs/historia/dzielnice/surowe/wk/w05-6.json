@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ulica-or-ota",
+    "nazwa": "Ulica Or-Ota",
+    "name_en": "Or-Ota Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Or-Ota",
+    "adres_historyczny": null,
+    "lat": 52.2621104,
+    "lon": 20.9849174,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 50. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Or-Ota ma prawie 250 metrów długości i ciągnie się od ul. Zajączka na południu do Al. Wojska Polskiego na północy.",
+      "Nie posiada żadnych przecznic; jej przedłużeniem w kierunku północnym jest ulica Kozietulskiego.",
+      "Patronem ulicy jest Artur Oppman (1867–1931), poeta polski okresu Młodej Polski, pisujący pod pseudonimem Or-Ot.",
+      "Przy ulicy mieści się Szkoła Podstawowa nr 68 z Oddziałami Integracyjnymi im. Artura Oppmana w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Or-Ota is a street of almost 250 metres in Stary Żoliborz, running from Zajączka to Aleja Wojska Polskiego. It is named after the Young Poland poet Artur Oppman, who wrote under the pen name Or-Ot.",
+    "ludzie": [
+      {"kto": "Artur Oppman", "rola": "poeta okresu Młodej Polski, pisujący jako Or-Ot; patron ulicy (1867–1931)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Or-Ota", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Or-Ota"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  }
+]

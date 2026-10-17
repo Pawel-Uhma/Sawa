@@ -1,0 +1,307 @@
+[
+  {
+    "id": "sala-posiedzen-sejmu",
+    "nazwa": "Sala Posiedzeń Sejmu",
+    "name_en": "Sejm Chamber",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "gmach C-D w kompleksie budynków Sejmu RP",
+    "adres_historyczny": null,
+    "lat": 52.22518,
+    "lon": 21.02807,
+    "lokalizacja": "dokladna",
+    "okres": "1925–dziś (budowa gmachu 1925–1928)",
+    "istnieje": true,
+    "fakty": [
+      "Budowę gmachu rozpoczęto w maju 1925 r., a zakończono w marcu 1928 r.; salę zaprojektował Kazimierz Skórewicz.",
+      "Pierwsze obrady Sejmu odbyły się w niej 27 marca 1928 r.",
+      "W czasie II wojny światowej sala uległa częściowemu zniszczeniu; odbudowano ją w latach 1946–1947, a rekonstrukcja trwała 9 miesięcy.",
+      "Pierwsze powojenne posiedzenie Sejmu Ustawodawczego odbyło się tu 4 lutego 1947 r.; w latach 1952–1989 była miejscem obrad Sejmu PRL.",
+      "4 lipca 1989 r. odbyło się tu inauguracyjne posiedzenie Senatu I kadencji.",
+      "W 1997 r. posłowie AWS Tomasz Wójcik i Piotr Krutul samowolnie powiesili w sali drewniany krzyż łaciński; w 2009 r. salę w pełni dostosowano dla osób na wózkach."
+    ],
+    "ciekawostki": [
+      "Od 1994 r. w Dzień Dziecka w tej sali zbierają się posłowie Sejmu Dzieci i Młodzieży.",
+      "Na balustradzie oddzielającej prezydium od ław poselskich jest 12 płaskorzeźb autorstwa Aleksandra Żurakowskiego."
+    ],
+    "summary_en": "The largest chamber in the Sejm complex, where the Polish parliament has sat since 1928. Damaged in the war, it was rebuilt in 1946–47 and has hosted the Sejm of both the PRL and the Republic.",
+    "ludzie": [
+      {"kto": "Kazimierz Skórewicz", "rola": "projektant sali", "wiki": null},
+      {"kto": "Stefan Sienicki", "rola": "projektant dębowych foteli, stołów i balustrady", "wiki": null},
+      {"kto": "Aleksander Żurakowski", "rola": "autor płaskorzeźb na balustradzie i orłów", "wiki": null},
+      {"kto": "Tomasz Wójcik", "rola": "poseł AWS, powiesił krzyż w 1997 r.", "wiki": null},
+      {"kto": "Piotr Krutul", "rola": "poseł AWS, powiesił krzyż w 1997 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Sala Posiedzeń Sejmu", "url": "https://pl.wikipedia.org/wiki/Sala_Posiedze%C5%84_Sejmu"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "mieszkanie-chopinow-palac-czapskich",
+    "nazwa": "Mieszkanie Chopinów w Pałacu Czapskich (Salonik Chopinów)",
+    "name_en": "Chopin Family Apartment in the Czapski Palace",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 5 (lewa oficyna Pałacu Czapskich)",
+    "adres_historyczny": "Pałac Krasińskich (dawna nazwa Pałacu Czapskich)",
+    "lat": 52.2395,
+    "lon": 21.015,
+    "lokalizacja": "dokladna",
+    "okres": "1827–1830 (mieszkanie); 1960–2014 (muzeum Salonik Chopinów)",
+    "istnieje": true,
+    "fakty": [
+      "Rodzina Chopinów przeprowadziła się do Pałacu Czapskich z gmachu porektorskiego Uniwersytetu Warszawskiego w czerwcu 1827 r., kilka tygodni po śmierci siostry Fryderyka, Emilii.",
+      "Mieszkanie było dwukondygnacyjne: obszerny lokal na II piętrze oficyny i pokoiki w facjacie, w których Mikołaj Chopin prowadził internat dla uczniów.",
+      "W tym mieszkaniu powstały i po raz pierwszy w gronie najbliższych zostały wykonane dwa jedyne koncerty fortepianowe Fryderyka Chopina: e-moll op. 11 i f-moll op. 21.",
+      "Bywali tu m.in. Józef Elsner, Samuel Bogumił Linde, Juliusz Kolberg, Kajetan Koźmian, Jan Ursyn Niemcewicz, Józef Bohdan Zaleski i Stefan Witwicki.",
+      "2 listopada 1930 r. odsłonięto tablicę między oknami pierwszego piętra oficyny: „W tym domu mieszkał i tworzył Fryderyk Chopin przed opuszczeniem w 1830 r. Warszawy na zawsze”.",
+      "Pałac Czapskich zniszczony w czasie wojny odbudowano w latach 1948–1959.",
+      "Muzeum Saloniku Chopinów otwarto w lutym 1960 r. w czasie Roku Chopinowskiego; zlikwidowano je w 2014 r. decyzją ASP podczas remontu oficyny."
+    ],
+    "ciekawostki": [
+      "Fryderyk Chopin wspomina o swoim pokoju w liście do Tytusa Wojciechowskiego z 27 grudnia 1828 r."
+    ],
+    "summary_en": "The Chopin family's flat in the wing of the Czapski Palace on Krakowskie Przedmieście, where the composer wrote his early piano concertos before leaving Warsaw in 1830. A museum room from 1960 to 2014.",
+    "ludzie": [
+      {"kto": "Fryderyk Chopin", "rola": "kompozytor, mieszkał w oficynie do 1830 r.", "wiki": null},
+      {"kto": "Mikołaj Chopin", "rola": "prowadził internat dla uczniów w mieszkaniu", "wiki": null},
+      {"kto": "Józef Elsner", "rola": "gość w mieszkaniu Chopinów", "wiki": null},
+      {"kto": "Juliusz Kolberg", "rola": "gość w mieszkaniu Chopinów", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Krasińskich (dawna nazwa Pałacu Czapskich)"],
+    "zrodla": [{"tytul": "Wikipedia: Salonik Chopinów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Salonik_Chopin%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy miejsca (mieszkania w oficynie), nie instytucji muzealnej. Mieszkanie nie zachowało się w oryginale; w tekście nie podano, czy pokój Fryderyka istnieje."
+  },
+  {
+    "id": "sheraton-grand-warsaw",
+    "nazwa": "Sheraton Grand Warsaw",
+    "name_en": "Sheraton Grand Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bolesława Prusa 2, róg placu Trzech Krzyży",
+    "adres_historyczny": "budynek Riunione Adriatica di Sicurtà z kinem „Napoleon” (w okupacji „Apollo”)",
+    "lat": 52.22796,
+    "lon": 21.02492,
+    "lokalizacja": "dokladna",
+    "okres": "międzywojnie–dziś (obecny budynek 1994–1996)",
+    "istnieje": true,
+    "fakty": [
+      "W okresie międzywojennym w tym miejscu stał budynek włoskiego towarzystwa ubezpieczeniowego Riunione Adriatica di Sicurtà, w którym mieściło się duże kino „Napoleon” (w okupacji niemieckiej przemianowane na „Apollo”).",
+      "Po II wojnie światowej na skwerze, urządzonym w miejscu zniszczonego budynku, ustawiono kamień z tablicą upamiętniającą Ładysława Buczyńskiego.",
+      "Obecny budynek, wzniesiony w latach 1994–1996 wg projektu Tadeusza Spychały i Piotra Szaroszyka, ma siedem kondygnacji naziemnych i dwie podziemne.",
+      "Na fasadzie umieszczono tablicę Buczyńskiego, zastępując dawne upamiętnienie; określenie „bojownik Gwardii Ludowej” zmieniono na „bojownik polskiego ruchu oporu”.",
+      "Hotel był tymczasową siedzibą ambasad Kuwejtu (2003), Luksemburga (2007), Kataru (2008) i Zjednoczonych Emiratów Arabskich (2009).",
+      "W 2019 r. zakończono modernizację wnętrz i hotel zmienił nazwę na Sheraton Grand."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A five-star hotel built in 1994–96 on the site of a pre-war insurance building with the Napoleon cinema. A memorial to the resistance fighter Ładysław Buczyński stands on the facade.",
+    "ludzie": [
+      {"kto": "Ładysław Buczyński", "rola": "bojownik ruchu oporu, upamiętniony tablicą", "wiki": null},
+      {"kto": "Tadeusz Spychała", "rola": "projektant budynku (1994–1996)", "wiki": null},
+      {"kto": "Piotr Szaroszyk", "rola": "projektant budynku (1994–1996)", "wiki": null}
+    ],
+    "dawne_nazwy": ["kino „Napoleon”", "kino „Apollo”"],
+    "zrodla": [{"tytul": "Wikipedia: Sheraton Grand Warsaw", "url": "https://pl.wikipedia.org/wiki/Sheraton_Grand_Warsaw"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "siatkarka-neon",
+    "nazwa": "Siatkarka (neon)",
+    "name_en": "Siatkarka Neon Sign",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "dach budynku przy pl. Konstytucji 5",
+    "adres_historyczny": null,
+    "lat": 52.22275,
+    "lon": 21.014833,
+    "lokalizacja": "dokladna",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Neon autorstwa Jana Mucharskiego, zaprojektowany w 1960 r. i zainstalowany w 1961 r. na dachu socrealistycznego domu przy placu Konstytucji 5.",
+      "Powstał jako reklama sklepu sportowego na parterze narożnego domu; sklep był udekorowany kołami olimpijskimi, tarczą z herbami, flagami, gołąbkami pokoju i fotografią szermierzy.",
+      "Neon wykonało Stołeczne Przedsiębiorstwo Instalacji Reklam Świetlnych; przedstawia kobietę w czerwonym stroju odbijającą piłkę, animowaną w 16 sekwencjach.",
+      "Od końca lat 70. stan techniczny neonu się pogarszał; po wprowadzeniu stanu wojennego w grudniu 1981 r. neony w Polsce wyłączono.",
+      "W 2006 r., z inicjatywy Pauliny Ołowskiej i Fundacji Galerii Foksal, neon odnowiono; uroczyste uruchomienie odbyło się 19 maja 2006 r.",
+      "W marcu 2025 r. neon wpisano do rejestru zabytków ruchomych województwa mazowieckiego."
+    ],
+    "ciekawostki": [
+      "W listopadzie 2020 r. Paulina Ołowska w ramach happeningu umieściła na kostiumie postaci z neonu czerwoną błyskawicę jako wyraz poparcia dla Strajku Kobiet."
+    ],
+    "summary_en": "A 1961 animated neon sign by Jan Mucharski, advertising a sports shop on Plac Konstytucji. Switched off after 1981, restored in 2006 and listed as a movable monument in 2025.",
+    "ludzie": [
+      {"kto": "Jan Mucharski", "rola": "autor neonu", "wiki": null},
+      {"kto": "Paulina Ołowska", "rola": "inicjatorka odnowienia w 2006 r.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Siatkarka (neon)", "url": "https://pl.wikipedia.org/wiki/Siatkarka_%28neon%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "skocznia-narciarska-agrykola",
+    "nazwa": "Skocznia narciarska na Agrykoli",
+    "name_en": "Agrykola Ski Jump",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Agrykola (w miejscu wieży i rozbiegu część Zamku Ujazdowskiego)",
+    "adres_historyczny": null,
+    "lat": 52.2174,
+    "lon": 21.0331,
+    "lokalizacja": "dokladna",
+    "okres": "1925–lata 70. XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Skocznia narciarska na Agrykoli, najmniejsza w Warszawie, o punkcie konstrukcyjnym K20, została wybudowana w 1925 r.",
+      "W latach 70. XX w. skocznię zburzono; w miejscu jej wieży i rozbiegu zajęła część odbudowanego Zamku Ujazdowskiego.",
+      "Jedyną pozostałością po skoczni jest stare zbocze zeskoku.",
+      "Rekord skoczni wynosi 25 m i należy do Władysława Gąsienicy-Roja (1957)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warsaw's smallest ski jump, built in 1925 on Agrykola with a K20 construction point. Demolished in the 1970s, it left only the old landing slope, now next to the rebuilt Ujazdów Castle.",
+    "ludzie": [
+      {"kto": "Władysław Gąsienica-Roj", "rola": "rekordzista skoczni (25 m, 1957)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Skocznia narciarska w Warszawie (Agrykola)", "url": "https://pl.wikipedia.org/wiki/Skocznia_narciarska_w_Warszawie_%28Agrykola%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wpis w paczce nie podaje dokładnego adresu skoczni."
+  },
+  {
+    "id": "skysawa",
+    "nazwa": "Skysawa",
+    "name_en": "Skysawa",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętokrzyska 36",
+    "adres_historyczny": "wyburzony 10-piętrowy biurowiec z lat 60. XX w.",
+    "lat": 52.233784,
+    "lon": 20.99945,
+    "lokalizacja": "dokladna",
+    "okres": "2019–2022 (budowa; terminy z artykułu)",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks biurowo-handlowy powstał w miejscu wyburzonego 10-piętrowego biurowca z lat 60. XX w.",
+      "Składa się z dwóch budynków: niższego budynku A (od 4 do 9 kondygnacji, 11 500 m²) i 155-metrowej wieży B (40 pięter, ok. 28 000 m²).",
+      "Budowa rozpoczęła się pod koniec czerwca 2019 r.; zgodnie z harmonogramem budynek A miał być gotowy w trzecim kwartale 2021 r., a budynek B w trzecim kwartale 2022 r.",
+      "Koszt inwestycji wyniósł 325,17 mln zł; inwestorem był Polski Holding Nieruchomości.",
+      "Skysawa jako jedna z pierwszych inwestycji w stolicy ma bezpośrednie połączenie z metrem: podziemny łącznik prowadzi do stacji Rondo ONZ."
+    ],
+    "ciekawostki": [
+      "Nazwa Skysawa łączy angielskie „sky” z „Sawą”, czyli syreną z warszawskiej legendy, która wraz z rybakiem Warsem miała założyć osadę Warszawa."
+    ],
+    "summary_en": "A mixed office and retail complex at Świętokrzyska 36 with a 155-metre tower, built in 2019–2022 on the site of a demolished 1960s office block and linked underground to Rondo ONZ metro station.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Skysawa", "url": "https://pl.wikipedia.org/wiki/Skysawa"}],
+    "pewnosc": "srednia",
+    "uwagi": "Terminy ukończenia podane w artykule są planowe; stan po 2022 r. nie wynika z paczki."
+  },
+  {
+    "id": "sobor-sw-aleksandra-newskiego",
+    "nazwa": "Sobór św. Aleksandra Newskiego",
+    "name_en": "St Alexander Nevsky Cathedral",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "plac Saski",
+    "lat": 52.241225,
+    "lon": 21.012761,
+    "lokalizacja": "dokladna",
+    "okres": "1894–1912 (budowa); rozebrany w latach 20. XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Prawosławny sobór katedralny został zbudowany w latach 1894–1912 według projektu Leontija (Leoncjusza) Benois; jego wolno stojąca dzwonnica miała 70 m wysokości.",
+      "Sobór stanął na placu Saskim, jednym z najważniejszych placów Warszawy; w zamierzeniu władz zaborczych miał być symbolem rosyjskiego panowania na ziemiach polskich.",
+      "Na miejscu soboru od 1841 r. stał pomnik polskich oficerów zabitych w Nocy Listopadowej; przed budową przeniesiono go na plac Zielony.",
+      "Z propozycją budowy wystąpił generał-gubernator Josif Hurko, który w liście do cara Aleksandra III twierdził, że 42 tys. prawosławnych mieszkańców potrzebuje nowej świątyni.",
+      "Sobór rozebrano w latach 20. XX w., mniej niż 15 lat po ukończeniu; decyzję uzasadniały nastroje antyrosyjskie i postrzeganie świątyni jako symbolu rusyfikacji.",
+      "Budowla została uszkodzona podczas I wojny światowej, a źle przeprowadzone naprawy dodatkowo pogorszyły jej stan."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A large Orthodox cathedral on plac Saski, built 1894–1912 to a design by Leontiy Benois as a symbol of Russian rule. Demolished in the 1920s, less than fifteen years after completion.",
+    "ludzie": [
+      {"kto": "Leontij Benois", "rola": "autor projektu soboru", "wiki": null},
+      {"kto": "Josif Hurko", "rola": "generał-gubernator, inicjator budowy", "wiki": null},
+      {"kto": "Aleksander III", "rola": "adresat listu Hurki, car", "wiki": null},
+      {"kto": "Paweł Giergoń", "rola": "cytowany historyk (ocena dysharmonii architektury)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Sobór św. Aleksandra Newskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Sob%C3%B3r_%C5%9Bw._Aleksandra_Newskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urywa się w części o okolicznościach wzniesienia soboru."
+  },
+  {
+    "id": "sofitel-warsaw-victoria",
+    "nazwa": "Sofitel Warsaw Victoria",
+    "name_en": "Sofitel Warsaw Victoria",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Królewska 11",
+    "adres_historyczny": "plac Zwycięstwa (dziś plac marsz. Józefa Piłsudskiego); miejsce pałacu Kronenberga",
+    "lat": 52.239903,
+    "lon": 21.013456,
+    "lokalizacja": "dokladna",
+    "okres": "1973–1976 (budowa)",
+    "istnieje": true,
+    "fakty": [
+      "Hotel zbudowano w latach 1973–1976 przez szwedzką spółkę Skanska Cementgjuteriet na miejscu pałacu Kronenberga, spalonego w 1939 r. i rozebranego w 1962 r.",
+      "W czerwcu 1975 r., w plebiscycie „Życia Warszawy”, hotel otrzymał nazwę Victoria, nawiązującą do ówczesnej nazwy placu.",
+      "Budynek zaprojektował polsko-szwedzki zespół architektów (m.in. Zbigniew Pawelski, Leszek Sołonowicz, Andrzej Dzierżawski, Derek Fraser, Kurt Hultin i Stanisław Kaim).",
+      "1 sierpnia 1981 r. w hotelu doszło do próby zabójstwa Abu Daouda, palestyńskiego działacza podejrzewanego przez Mosad o udział w zamachach w Monachium.",
+      "16 stycznia 1986 r. w hotelu rozpoczął obrady Kongres Intelektualistów w Obronie Pokojowej Przyszłości Świata.",
+      "We wrześniu 1989 r. otwarto tu pierwsze po 1945 r. kasyno w Warszawie; od 2001 r. hotel należy do sieci Sofitel."
+    ],
+    "ciekawostki": [
+      "Hotel pojawia się w wielu filmach i serialach okresu PRL, m.in. w „07 zgłoś się”, „Misiu”, „Zmiennikach” i „Kogel-mogel”."
+    ],
+    "summary_en": "A 1976 five-star hotel on Królewska, built by a Swedish company on the site of the Kronenberg Palace. It hosted a 1981 assassination attempt and the 1986 Congress of Intellectuals for Peace, and appears in many PRL-era films.",
+    "ludzie": [
+      {"kto": "Abu Daoud", "rola": "palestyński działacz, cel próby zabójstwa 1981", "wiki": null},
+      {"kto": "Zbigniew Pawelski", "rola": "architekt", "wiki": null},
+      {"kto": "Leszek Sołonowicz", "rola": "architekt", "wiki": null}
+    ],
+    "dawne_nazwy": ["Lux-Kongresowy (nazwa w umowie z grudnia 1973)", "Victoria Intercontinental"],
+    "zrodla": [{"tytul": "Wikipedia: Sofitel Warsaw Victoria", "url": "https://pl.wikipedia.org/wiki/Sofitel_Warsaw_Victoria"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu. Nazwa „Victoria Intercontinental” pochodzi z okresu przynależności do sieci InterContinental."
+  },
+  {
+    "id": "solec-warszawa",
+    "nazwa": "Solec",
+    "name_en": "Solec",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2248,
+    "lon": 21.0418,
+    "lokalizacja": "przyblizona",
+    "okres": "1381–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Solec, dawna wieś, a dziś osiedle i obszar MSI w Śródmieściu, po raz pierwszy wymieniony został w dokumencie z 1381 r.; w 1382 r. książę Janusz I Starszy potwierdził darowanie Solca mieszczanom Starej Warszawy.",
+      "W 1675 r. Stara Warszawa założyła na miejscu wsi jurydykę Solec, która otrzymała prawa miejskie.",
+      "W 1770 r. z zlecenia marszałka Stanisława Lubomirskiego zaczęto sypać wał wokół miasta, który wyznaczył południową granicę Solca.",
+      "W 1830 r. ukończono magazyn solny z wielkim dźwigiem, zwanym windugą, służącym do wyładunku soli ze statków.",
+      "29 listopada 1830 r. pchor. Wiktor Tylski podpalił browar Weissa na Solcu przy ul. Czerniakowskiej 189, co było sygnałem do wybuchu powstania listopadowego.",
+      "Po 1840 r. po wschodniej stronie ul. Solec urządzono rzeźnię, działającą do ok. 1930 r.; w 1856 r. ukończono pierwszą w Warszawie gazownię, zamkniętą w 1930 r."
+    ],
+    "ciekawostki": [
+      "W 1784 r. przy ul. Solec działało sześć browarów, żupa królewska, 22 magazyny i spichlerz."
+    ],
+    "summary_en": "A riverside district of Warsaw, formerly a village and then a jurisdiction with town rights. Its 19th-century industry included the November Uprising trigger fire at the Weiss brewery, a municipal slaughterhouse and the city's first gasworks.",
+    "ludzie": [
+      {"kto": "Janusz I Starszy", "rola": "książę mazowiecki, potwierdził darowanie Solca w 1382", "wiki": null},
+      {"kto": "Stanisław Lubomirski", "rola": "marszałek, zlecił budowę wału w 1770", "wiki": null},
+      {"kto": "Wiktor Tylski", "rola": "pchorąż, podpalił browar Weissa 29 listopada 1830", "wiki": null}
+    ],
+    "dawne_nazwy": ["jurydyka Solec"],
+    "zrodla": [{"tytul": "Wikipedia: Solec (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Solec_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Obszar osiedla, nie pojedynczy obiekt; współrzędne z nagłówka artykułu. Artykuł w paczce urywa się w XIX w."
+  }
+]

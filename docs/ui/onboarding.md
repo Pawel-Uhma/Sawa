@@ -35,13 +35,17 @@ Wzorce, które się powtarzają:
 
 | Krok | Sawa (poza, dymek) | Pytanie | Co użytkownik robi |
 |---|---|---|---|
-| 0. Powitanie | macha, „Cześć! Jestem Sawa, syrenka z herbu.” | „Opowiem Ci o mieście za oknem tramwaju.” | „Poznajmy się” |
-| 1. Znajomość | z mapą | Jak dobrze znasz Warszawę? Pierwszy raz / Trochę znam / Mieszkam tu | 1 tapnięcie, przejście samo; „Pomiń” |
-| 2. Zainteresowania | myśli, dymek podpowiada podobne | Co Cię ciekawi? 8 kafelków z ikonami, do 3 | 1–3 tapnięcia, „Dalej · 2 z 3” |
-| 3. Styl | mówi w sekrecie | Jak mam opowiadać? Krótko i z humorem / Z detalami / Same ciekawostki | 1 tapnięcie; „Pomiń” |
-| 4. Budowanie | radość | Układam Twoją Warszawę: 3 linie odhaczają się po kolei | czeka ok. 2,5 s albo „Pokaż mapę” |
+| 0. Powitanie | macha, „Cześć! Jestem Sawa, syrenka z herbu Warszawy.” | „Opowiem Ci o mieście za oknem tramwaju.” | „Poznajmy się” albo „Znam Sawę, przejdź do pytań” |
+| 1. Imię | w sekrecie | Skąd moje imię? Wars + Sawa = Warszawa, legenda i herb | „Dalej” albo przesunięcie palcem |
+| 2. Znajomość | z mapą | Jak dobrze znasz Warszawę? Pierwszy raz / Trochę znam / Mieszkam tu | 1 tapnięcie, przejście samo; „Pomiń” |
+| 3. Co Ci da Sawa | radość, dymek odpowiada na wybór | Treść zależy od odpowiedzi z kroku 2 (`WHY` w `onboarding-intro.tsx`): pierwszy raz „Wsiadaj do tramwaju”, trochę znam „Reszta czeka za oknem”, mieszkam „Mieszkasz tu, ale znasz trzy miejsca?”, pominięte: wersja ogólna | „Jak to działa?” |
+| 4. Jak to działa | z mapą | czas → przejazd ZTM → opowieść na głos; skąd dane i że tekst układa model | „Wybierzmy, o czym opowiem” |
+| 5. Zainteresowania | myśli, dymek reaguje na kategorię | Co Cię ciekawi? 4 kategorie | 1–4 tapnięcia, „Dalej” |
+| 6. Styl | mówi w sekrecie | Jak mam opowiadać? Krótko i z humorem / Z detalami / Same ciekawostki | 1 tapnięcie i od razu mapa; „Pomiń” |
 
-Nic się nie wpisuje z klawiatury. Minimum to 4 tapnięcia (powitanie, znajomość, jedno zainteresowanie i „Dalej”, styl).
+Nic się nie wpisuje z klawiatury. Po stylu od razu mapa: udawany ekran „Układam Twoją Warszawę” usunięty (17.10, wieczór), bo trasę i tak liczy planer dopiero po „Wyznacz trasę”.
+
+**Wstęp (17.10, wieczór):** aplikacja nie ma landing page'a, a jury zobaczy ją pierwszy raz, więc onboarding to rozmowa: kim jest Sawa, kim jesteś Ty, co Ci da, jak działa, a dopiero potem wybory do trasy. Ekran „co Ci da” mówi do konkretnej osoby, dlatego stoi po pytaniu o znajomość miasta. Kod w `components/onboarding-intro.tsx`. Strony bez pytań przewija się też palcem (`drag="x"`, próg 64 px albo rzut; bez przy reduced motion). „Znam Sawę, przejdź do pytań” na powitaniu pomija strony bez pytań. Onboarding idzie tylko przy pierwszym wejściu (albo po „Zacznij od nowa”). Zmiana zainteresowań, znajomości miasta i stylu idzie przez modal (`components/profile-modal.tsx`) z menu i z panelu tras (przycisk „Zmień”): zapisuje jedno pole i zostawia resztę profilu bez zmian. Wybory są we wspólnym `components/profile-choices.tsx`. Teksty o legendzie z [pitch](../pitch/sawa-pitch.html), problem z [PRD](../10-prd.md).
 
 ## Ruch (apple-design)
 

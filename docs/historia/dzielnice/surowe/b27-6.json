@@ -1,0 +1,293 @@
+[
+  {
+    "id": "pawiak",
+    "nazwa": "Pawiak",
+    "name_en": "Pawiak Prison",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzielna 24/26 (teren nieistniejącego więzienia)",
+    "adres_historyczny": "ul. Dzielna 24/26",
+    "lat": 52.246388888,
+    "lon": 20.990555555,
+    "lokalizacja": "dokladna",
+    "okres": "1835–1944",
+    "istnieje": false,
+    "fakty": [
+      "Więzienie Pawiak, zbudowane w latach 1830–1835 według projektu Henryka Marconiego, funkcjonowało przy ul. Dzielnej 24/26 do 1944 roku; zespół składał się z oddziału męskiego i kobiecego, zwanego Serbią.",
+      "Od 1863 roku Pawiak był więzieniem politycznym z oddziałami męskim i kobiecym.",
+      "W 1906 roku członkowie Organizacji Bojowej PPS pod dowództwem Jana Gorzechowskiego „Jur” uwolnili 24 kwietnia 1906 roku 10 więźniów zagrożonych karą śmierci.",
+      "Pierwszych Polaków osadzono w Pawiaku 2 października 1939 roku; 2 maja 1940 roku ponad ośmiuset więźniów wysłano do obozu Sachsenhausen, a 14 sierpnia 1940 roku odszedł stąd pierwszy transport do Auschwitz-Birkenau.",
+      "W latach 1939–1944 Pawiak był największym niemieckim więzieniem politycznym na terytorium okupowanej Polski; według szacunków przez więzienie przeszło ok. 100 tys. osób, z czego ok. 37 tys. zamordowano, a ok. 60 tys. wywieziono w 95 transportach.",
+      "Więzienie zniszczono 21 sierpnia 1944 roku; nie odbudowano go, a w latach 50. przez jego teren przeprowadzono aleję Juliana Marchlewskiego (obecnie aleja Jana Pawła II)."
+    ],
+    "ciekawostki": [
+      "W 1931 roku na podstawie wspomnień pułkownika Jana Jur-Gorzechowskiego zrealizowano film fabularny „Dziesięciu z Pawiaka”.",
+      "Pojemność Pawiaka wraz z oddziałem kobiecym wynosiła ok. 1000 więźniów."
+    ],
+    "summary_en": "Pawiak was Warsaw's main political prison from 1863 and, under German occupation (1939–1944), the largest German political prison in occupied Poland. The complex was destroyed on 21 August 1944 and never rebuilt.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "autor projektu więzienia (1830–1835)", "wiki": null},
+      {"kto": "Jan Gorzechowski „Jur”", "rola": "dowódca Organizacji Bojowej PPS, który w 1906 roku uwolnił 10 więźniów", "wiki": null},
+      {"kto": "Heinrich Himmler", "rola": "Reichsführer-SS, wizytował więzienie 29 kwietnia 1940 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Serbia (oddział kobiecy)"],
+    "zrodla": [{"tytul": "Wikipedia: Pawiak", "url": "https://pl.wikipedia.org/wiki/Pawiak"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie okresu okupacji (ostatnie zdanie niedokończone w paczce); fakty z części dostępnej."
+  },
+  {
+    "id": "pawilon-cepelii",
+    "nazwa": "Pawilon Cepelii w Warszawie",
+    "name_en": "Cepelia Pavilion, Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 99/101, rondo Dmowskiego",
+    "adres_historyczny": null,
+    "lat": 52.22892,
+    "lon": 21.01162,
+    "lokalizacja": "dokladna",
+    "okres": "1966–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwukondygnacyjny pawilon Centrali Przemysłu Ludowego i Artystycznego (Cepelii) zaprojektował Zygmunt Stępiński we współpracy z Andrzejem Milewskim i Aleksandrem Hawemanem; powstał obok ukończonego rok wcześniej hotelu Metropol.",
+      "Budynek ukończono 30 marca 1966 roku, uroczyste otwarcie nastąpiło 15 kwietnia 1966 roku, a następnego dnia rozpoczął działalność jeden z najbardziej znanych sklepów Cepelii w Warszawie.",
+      "Stalowa konstrukcja opierała się na 12 słupach, a ok. 80% powierzchni ścian przeszklono; budynek wyniesiono ponad poziom chodnika.",
+      "Nieprzeszkloną część elewacji (od strony hotelu Metropol) pokryto ręcznie wypalanymi turkusowymi płytkami z geometrycznymi wzorami Stanisława Kucharskiego, wyprodukowanymi przez Spółdzielnię „Kamionka” z Łysej Góry.",
+      "W 2017 roku budynek wpisano do gminnej ewidencji zabytków, a w 2019 roku do rejestru zabytków.",
+      "W 2023 roku wojewódzki konserwator zabytków nakazał remont i zdjęcie nośników reklamowych; prace rozpoczęto w lutym 2024 roku, a w grudniu 2024 roku otwarto w pawilonie sklep Empik."
+    ],
+    "ciekawostki": [
+      "Pawilon otrzymał Nagrodę Architektoniczną Prezydenta m.st. Warszawy XI edycji w kategorii Nowe Życie Budynków (2024).",
+      "W 2019 roku wojewódzki konserwator zabytków Jakub Lewicki odmówił uzgodnienia projektu inwestora, który planował lokal McDonald’s; decyzję uchylono w Ministerstwie Kultury."
+    ],
+    "summary_en": "The Cepelia Pavilion at Marszałkowska 99/101 by Zygmunt Stępiński opened in April 1966 as a glazed craft shop with turquoise ceramic tiles. It was listed as a monument in 2019 and reconstructed in 2024 after years of neglect.",
+    "ludzie": [
+      {"kto": "Zygmunt Stępiński", "rola": "główny projektant pawilonu", "wiki": null},
+      {"kto": "Andrzej Milewski", "rola": "współpracownik projektu", "wiki": null},
+      {"kto": "Aleksander Hawemann", "rola": "współpracownik projektu", "wiki": null},
+      {"kto": "Stanisław Kucharski", "rola": "autor geometrycznych wzorów płytek elewacji", "wiki": null},
+      {"kto": "Andrzej M. Chołdzyński", "rola": "autor nowego projektu odtwarzającego oryginalny kształt budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pawilon Cepelii w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pawilon_Cepelii_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pawilon-rekreacyjny-dawnego-internatu-wsns",
+    "nazwa": "Pawilon rekreacyjny dawnego internatu Wyższej Szkoły Nauk Społecznych",
+    "name_en": "Recreation pavilion of the former WSNS dormitory",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Szara 10a",
+    "adres_historyczny": null,
+    "lat": 52.228136111,
+    "lon": 21.034477777,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obiekt powstał prawdopodobnie w 1974 roku jako modernistyczny dwukondygnacyjny pawilon restauracyjny z mozaikami projektu Kazimierza Gąsiorowskiego; autorem projektu architektury był Adam Kowalewski.",
+      "Inwestorem i pierwszym właścicielem był Komitet Centralny PZPR; pierwotnie była to stołówka przy hotelu KC PZPR, w zespole z budynkiem biurowym przy ul. Rozbrat i ośmiopiętrowym hotelem od strony ul. Szarej.",
+      "W 2011 roku cały kompleks sprzedał Sojusz Lewicy Demokratycznej za 35 mln zł spółce Radius Projekt.",
+      "W 2014 roku wojewódzki konserwator zabytków Rafał Nadolny określił hotel i pawilon jako „obiekt burzący porządek urbanistyczny”; w 2016 roku właściciel wystąpił o rozbiórkę, na którą nowa konserwator Barbara Jezierska nie wyraziła zgody.",
+      "17 października 2016 roku pawilon wpisano do gminnej ewidencji zabytków, a w kwietniu 2017 roku do rejestru zabytków jako znakomicie zachowany dokument epoki modernizmu.",
+      "Klub „Syreni Śpiew”, który nazwał pawilon, otwarto w Sylwestra 2011 roku; w 2019 roku przeniósł się do kompleksu Centrum Praskie Koneser."
+    ],
+    "ciekawostki": [
+      "Pawilon znajduje się na tyłach ul. Rozbrat, w parku Marszałka Edwarda Rydza-Śmigłego.",
+      "Mozaiki i wnętrze odrestaurowali twórcy firmy restauratorskiej Grupa Warszawa."
+    ],
+    "summary_en": "The recreation pavilion at Szara 10a, a modernist restaurant with mosaics from about 1974, was built for the Central Committee of the PZPR. It was listed in 2017 after a demolition request in 2016 and later became the Syreni Śpiew club.",
+    "ludzie": [
+      {"kto": "Kazimierz Gąsiorowski", "rola": "autor mozaik", "wiki": null},
+      {"kto": "Adam Kowalewski", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Rafał Nadolny", "rola": "wojewódzki konserwator zabytków w 2014 roku", "wiki": null},
+      {"kto": "Barbara Jezierska", "rola": "wojewódzka konserwator zabytków, nie zgodziła się na rozbiórkę", "wiki": null}
+    ],
+    "dawne_nazwy": ["Syreni Śpiew (nazwa klubu, od którego nazywa się pawilon)"],
+    "zrodla": [{"tytul": "Wikipedia: Pawilon rekreacyjny dawnego internatu Wyższej Szkoły Nauk Społecznych", "url": "https://pl.wikipedia.org/wiki/Pawilon_rekreacyjny_dawnego_internatu_Wy%C5%BCszej_Szko%C5%82y_Nauk_Spo%C5%82ecznych"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok powstania podany z zastrzeżeniem ('prawdopodobnie 1974'). Nazwa 'Syreni Śpiew' to nazwa klubu, nie dawna nazwa budynku."
+  },
+  {
+    "id": "pawilony-nowy-swiat",
+    "nazwa": "Pawilony Nowy Świat",
+    "name_en": "Nowy Świat Pavilions",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "tyły ul. Nowy Świat 22/28",
+    "adres_historyczny": null,
+    "lat": 52.233075,
+    "lon": 21.020443,
+    "lokalizacja": "dokladna",
+    "okres": "1972–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pawilony powstały w latach 70. XX wieku głównie jako sklepiki i zakłady rzemieślnicze; inicjatorem ich budowy w 1972 roku był Zespół Budowy i Administracji Pawilonów Rzemieślniczych Nowy Świat.",
+      "W 1972 roku przedsiębiorstwo otrzymało 1,5 tys. m² gruntu na tyłach Nowego Światu w użytkowanie wieczyste na 40 lat.",
+      "Pod koniec lat 90. właściciele pawilonów i ich potomkowie zaczęli zastępować zakłady rzemieślnicze lokalami gastronomicznymi.",
+      "W 2002 roku Amerykanka Stella Yousem uznała się za spadkobierczynię terenu i wystąpiła o jego zwrot; nie dopełniła formalności i sprawę oddalono.",
+      "W 2012 roku wygasła umowa użytkowania gruntu; mimo wyroku sądu zobowiązującego miasto do przedłużenia umowy na 40 lat, do 2019 roku miasto nie podpisało nowej umowy.",
+      "Uchwalony w 2017 roku miejscowy plan dla rejonu ul. Foksal dopuszcza zabudowę miejsca zajmowanego przez pawilony."
+    ],
+    "ciekawostki": [
+      "Czytelnicy TVN Warszawa (2014) wyróżnili pawilony w głosowaniu na najlepsze zagłębie klubowe w Warszawie."
+    ],
+    "summary_en": "The Nowy Świat Pavilions are a group of small 1970s workshops and shops behind Nowy Świat, later turned into bars and pubs. The land lease expired in 2012, and a 2017 local plan allows development on the site.",
+    "ludzie": [
+      {"kto": "Stella Yousem", "rola": "Amerykanka, która w 2002 roku wystąpiła o zwrot terenu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pawilony Nowy Świat", "url": "https://pl.wikipedia.org/wiki/Pawilony_Nowy_%C5%9Awiat"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Miejsce bez budynku zabytkowego; pawilony to zabudowa z lat 70. XX wieku. W 2025 działało tu kilkanaście pubów (fakt z artykułu)."
+  },
+  {
+    "id": "palac-badenich",
+    "nazwa": "Pałac Badenich w Warszawie",
+    "name_en": "Badeni Palace, Warsaw",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Krasińskich 3",
+    "adres_historyczny": "pl. Krasińskich 3, między ul. Długą a pałacem Krasińskich",
+    "lat": 52.24888889,
+    "lon": 21.005,
+    "lokalizacja": "dokladna",
+    "okres": "1837–koniec lat 50. XX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Pałac wzniesiono w latach 1837–1838 w stylu klasycystycznym według projektu architekta rządowego Andrzeja Gołońskiego dla radcy stanu hrabiego Ignacego Badeniego.",
+      "W drugiej połowie XIX wieku ulokowało się tu Muzeum Przemysłu i Rolnictwa; w latach międzywojennych mieścił się Sąd Apelacyjny.",
+      "2 września 1944 roku gruzy trafionego bombami budynku zasypały właz do kanału, którym przed kapitulacją Starego Miasta kilka tysięcy osób ewakuowało się do Śródmieścia i na Żoliborz.",
+      "W czasie wojny budynek został zniszczony w ok. 60%; część murów stała do końca lat 50. XX wieku, kiedy podjęto decyzję o ich zburzeniu.",
+      "Autorem projektu placu był Henryk Marconi, a budowa pałacu zbiegła się z przebudową kościoła pijarów przy ul. Długiej na cerkiew.",
+      "Pałac miał 21-osiowy front, boniowaną elewację z portykiem jońskim; w tympanonie znajdowała się płaskorzeźba Psyche autorstwa Pawła Malińskiego."
+    ],
+    "ciekawostki": [
+      "Pałac ustawiono pod kątem, odsłaniając widok na pałac Krasińskich; był to jego charakterystyczny znak."
+    ],
+    "summary_en": "Badeni Palace stood at Plac Krasińskich 3 between Długa Street and the Krasiński Palace. Built in 1837–1838 to a design by Andrzej Gołoński, it housed the Court of Appeal between the wars and was ruined in 1944; the remains were demolished in the late 1950s.",
+    "ludzie": [
+      {"kto": "Andrzej Gołoński", "rola": "architekt rządowy, autor projektu pałacu (1837–1838)", "wiki": null},
+      {"kto": "Ignacy Badeni", "rola": "radca stanu, zleceniodawca pałacu", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "autor projektu placu", "wiki": null},
+      {"kto": "Paweł Maliński", "rola": "rzeźbiarz płaskorzeźby Psyche w tympanonie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Badenich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Badenich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zgodne z pozostałościami wzmiankowanymi w artykule o Ogrodzie Krasińskich (ceglane elementy pałacu Badenich)."
+  },
+  {
+    "id": "palac-biskupow-krakowskich",
+    "nazwa": "Pałac Biskupów Krakowskich w Warszawie",
+    "name_en": "Palace of the Bishops of Kraków, Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 5 (róg ul. Senatorskiej)",
+    "adres_historyczny": null,
+    "lat": 52.245833333,
+    "lon": 21.011666666,
+    "lokalizacja": "dokladna",
+    "okres": "1622–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę pałacu rozpoczęto w 1622 roku dla biskupa krakowskiego Jakuba Zadzika; był oficjalną rezydencją miejską biskupów krakowskich jako senatorów duchownych.",
+      "Po zniszczeniach w czasie potopu szwedzkiego pałac odbudowano w 1668 roku dla biskupa Andrzeja Trzebickiego.",
+      "W latach 1760–1762 pałac przebudowano z inicjatywy biskupa Kajetana Sołtyka, najprawdopodobniej według projektu Jakuba Fontany; przybrał szatę późnobarokową.",
+      "Po III rozbiorze Polski w 1795 roku stał się siedzibą prezydenta Prus Południowych von Hoyma.",
+      "Pałac spalono podczas obrony miasta we wrześniu 1939 roku, zburzono w 1944 roku, a odbudowano w latach 1948–1950 według projektu Ludwika Borawskiego i Wacława Podlewskiego.",
+      "W 1965 roku pałac wpisano do rejestru zabytków; w 2010 roku właścicielami zostali spadkobiercy Edwarda Piotrowskiego, ostatniego przedwojennego właściciela."
+    ],
+    "ciekawostki": [
+      "Pałac uwiecznił Canaletto w obrazie ulicy Miodowej z 1777 roku; przy odbudowie posłużono się tym obrazem.",
+      "W 1969 roku na bocznej ścianie pałacu odsłonięto tablicę upamiętniającą urodzonego tam Wacława Gąsiorowskiego."
+    ],
+    "summary_en": "The Palace of the Bishops of Kraków at Miodowa 5 was begun in 1622 as the Warsaw residence of the Kraków bishops. Rebuilt in the late 18th century and again after 1945, it was entered in the monument register in 1965.",
+    "ludzie": [
+      {"kto": "Jakub Zadzik", "rola": "biskup krakowski, inwestor budowy pałacu w 1622 roku", "wiki": null},
+      {"kto": "Andrzej Trzebicki", "rola": "biskup, dla którego odbudowano pałac w 1668 roku", "wiki": null},
+      {"kto": "Kajetan Sołtyk", "rola": "biskup, inicjator przebudowy w latach 1760–1762", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "prawdopodobny autor projektu przebudowy (1760–1762)", "wiki": null},
+      {"kto": "Ludwik Borawski, Wacław Podlewski", "rola": "autorzy projektu odbudowy (1948–1950)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Biskupów Krakowskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Biskup%C3%B3w_Krakowskich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-blanka",
+    "nazwa": "Pałac Blanka",
+    "name_en": "Blank Palace, Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Senatorska 14",
+    "adres_historyczny": null,
+    "lat": 52.245,
+    "lon": 21.010146,
+    "lokalizacja": "dokladna",
+    "okres": "1762–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wzniesiono w latach 1762–1764 według projektu Szymona Bogumiła Zuga dla Filipa Nereusza Szaniawskiego.",
+      "W 1777 roku właścicielem został bankier Piotr Blank, który przekształcił wnętrze i elewację w stylu klasycystycznym oraz dobudował bramę wjazdową.",
+      "Od 1915 roku w pałacu mieściła się Komenda Straży Obywatelskiej, a od 1919 roku Komenda Policji Państwowej; w okresie międzywojennym był reprezentacyjną siedzibą prezydenta miasta.",
+      "Pałac odbudowano w latach 1947–1949; w 1965 roku wpisano go do rejestru zabytków.",
+      "Podczas powstania warszawskiego w obronie budynku 4 sierpnia 1944 roku poległ poeta Krzysztof Kamil Baczyński; upamiętnia go tablica wmurowana w latach 50. w frontową ścianę pałacu.",
+      "Pałac wraz z sąsiednim pałacem Jabłonowskich był podczas powstania redutą powstańczą, bronioną przez żołnierzy batalionu „Kiliński”."
+    ],
+    "ciekawostki": [
+      "Pałac miał wewnętrzne połączenie z sąsiednim pałacem Jabłonowskich, pełniącym funkcję ratusza.",
+      "Obecnie w pałacu mieści się siedziba Ministerstwa Sportu i Turystyki."
+    ],
+    "summary_en": "Blank Palace at Senatorska 14 was built in 1762–1764 to a design by Szymon Bogumił Zug. It later served as Warsaw's city hall offices and was a stronghold during the 1944 uprising, when poet Krzysztof Kamil Baczyński was killed nearby.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu pałacu (1762–1764)", "wiki": null},
+      {"kto": "Filip Nereusz Szaniawski", "rola": "inwestor pałacu", "wiki": null},
+      {"kto": "Piotr Blank", "rola": "bankier, właściciel od 1777 roku, przebudowujący pałac", "wiki": null},
+      {"kto": "Krzysztof Kamil Baczyński", "rola": "poeta i żołnierz AK, zastrzelony 4 sierpnia 1944 roku w obronie budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Blanka", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Blanka"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-borchow",
+    "nazwa": "Pałac Borchów w Warszawie",
+    "name_en": "Borch Palace (Residence of the Archbishops of Warsaw)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 17/19",
+    "adres_historyczny": null,
+    "lat": 52.247222222,
+    "lon": 21.0075,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1732–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od 1843 roku pałac jest siedzibą arcybiskupów warszawskich; funkcję tę pełni do dziś, stąd nosi także nazwę Domu Arcybiskupów Warszawskich.",
+      "Ok. 1780 roku pałac przebudował w stylu klasycystycznym Dominik Merlini dla podkanclerzego koronnego Jana Borcha; korpus główny podwyższono do dwóch pięter.",
+      "Od 1800 roku właścicielem był cukiernik Ludwik Nesti, który otworzył tu hotel „Paryski” (później „Europejski”), restaurację i cukiernię.",
+      "Pałac został spalony w czasie powstania warszawskiego i odbudowany w latach 1949–1954 według projektu Stanisława Marzyńskiego; po odbudowie stał się rezydencją prymasa Polski.",
+      "W 1953 roku funkcjonariusze Urzędu Bezpieczeństwa zatrzymali w pałacu Stefana Wyszyńskiego; po powrocie z internowania w 1956 roku prymas mieszkał tu do śmierci w 1981 roku.",
+      "W 1962 roku, w związku z budową ul. Schillera, ogród pałacowy skrócono o połowę; w 2021 roku na dziedzińcu odsłonięto popiersie Stefana Wyszyńskiego."
+    ],
+    "ciekawostki": [
+      "Brama z czterofilarowym ażurowym ogrodzeniem i wazonami rokokowymi jest jedyną zachowaną w Warszawie tego typu."
+    ],
+    "summary_en": "Borch Palace at Miodowa 17/19 has been the residence of the Archbishops of Warsaw since 1843 and was the home of Cardinal Stefan Wyszyński from 1956 until his death in 1981. Rebuilt in 1949–1954 after the uprising, it keeps its 18th-century classicist form.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "architekt przebudowy w stylu klasycystycznym (ok. 1780)", "wiki": null},
+      {"kto": "Jan Borch", "rola": "podkanclerzy koronny, inwestor przebudowy", "wiki": null},
+      {"kto": "Ludwik Nesti", "rola": "cukiernik, właściciel od 1800 roku, który otworzył hotel", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "Prymas Polski, mieszkał w pałacu od 1956 roku do śmierci w 1981 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel „Paryski”, później „Europejski” (w budynku od 1800 roku)"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Borchów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Borch%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Pałac istniał przed 1732 (w jego miejscu wcześniej był dwór)."
+  }
+]

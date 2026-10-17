@@ -38,6 +38,11 @@ export type SearchOptions = {
   minLegRideSec: number;
   /** Transfers may walk this far to another stop group (straight line). */
   walkTransferM: number;
+  /**
+   * Cost of riding again between stops already ridden (either way), per budget share: going
+   * back the same way shows nothing new, so a loop prefers another way back when one exists.
+   */
+  backtrackPenalty: number;
 };
 
 export const DEFAULT_SEARCH_OPTIONS: SearchOptions = {
@@ -56,6 +61,7 @@ export const DEFAULT_SEARCH_OPTIONS: SearchOptions = {
   loopBeamWidth: 24,
   minLegRideSec: 180,
   walkTransferM: 300,
+  backtrackPenalty: 2,
 };
 
 export type ChosenLeg = {
@@ -101,6 +107,8 @@ type State = Omit<Ride, "endsAtStart" | "endsAtDestination"> & {
   finished: boolean;
   /** Fixed end: time still needed to reach the end point (0 otherwise). */
   backSec: number;
+  /** Seconds ridden between stop groups the ride already passed between (backtracking). */
+  retracedSec: number;
 };
 
 /** Per-search settings shared by every expansion. */
@@ -128,7 +136,10 @@ const transfersOf = (s: State) => Math.max(0, s.legs.length - 1);
 /** Higher is better. With a fixed end the expected total includes the time to reach it. */
 function objective(s: State, budgetSec: number, opts: SearchOptions): number {
   const budgetMiss = Math.abs(s.elapsedSec + s.backSec - budgetSec) / budgetSec;
-  return s.score - opts.transferPenalty * transfersOf(s) - budgetMiss;
+  const retraced = s.retracedSec / budgetSec;
+  return (
+    s.score - opts.transferPenalty * transfersOf(s) - budgetMiss - opts.backtrackPenalty * retraced
+  );
 }
 
 /** Deterministic order: best objective, then fewer transfers, then key. */
@@ -163,6 +174,7 @@ function originStates(input: SearchInput, opts: SearchOptions): State[] {
       key: stop.id,
       finished: false,
       backSec: 0,
+      retracedSec: 0,
     };
   });
 }
@@ -263,6 +275,23 @@ function turnsBack(network: Network, leg: ChosenLeg, pattern: Pattern, boardInde
   );
 }
 
+/** A hop between two stop groups, the same key in both directions. */
+const hopKey = (a: string, b: string) => (a < b ? `${a}~${b}` : `${b}~${a}`);
+
+/** Hops between consecutive stop groups on every leg of the ride so far. */
+function riddenHops(network: Network, legs: ChosenLeg[]): Set<string> {
+  const hops = new Set<string>();
+  for (const leg of legs) {
+    const stops = network.patterns.get(leg.patternId)?.stops ?? [];
+    for (let i = leg.boardIndex + 1; i <= leg.alightIndex; i++) {
+      const a = network.stops.get(stops[i - 1]?.stopId ?? "")?.groupId;
+      const b = network.stops.get(stops[i]?.stopId ?? "")?.groupId;
+      if (a && b && a !== b) hops.add(hopKey(a, b));
+    }
+  }
+  return hops;
+}
+
 function timeToEnd(ctx: Context, stopId: string): number {
   const group = ctx.groupOf(stopId);
   const sec = group === undefined ? undefined : ctx.endTimes.get(group);
@@ -277,6 +306,7 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
   const isLastLeg = state.legs.length + 1 >= opts.maxLegs;
   const legIndex = state.legs.length;
   const children: State[] = [];
+  const ridden = riddenHops(network, state.legs);
   // Board here, or after a transfer also at a stop group a short walk away.
   const lastLeg = state.legs[legIndex - 1];
   const lastPattern = lastLeg && network.patterns.get(lastLeg.patternId);
@@ -310,12 +340,19 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
     if (hitIndex < 0) hitIndex = hits.length;
 
     let gain = 0;
+    let retracedSec = state.retracedSec;
     const gained: CollectedPlace[] = [];
 
     for (let j = visit.index + 1; j < pattern.stops.length; j++) {
       const stop = pattern.stops[j] as PatternStop;
       const alightElapsedSec = boardElapsedSec + stop.atSec - board.atSec;
       if (alightElapsedSec > maxSec) break;
+      const prev = pattern.stops[j - 1] as PatternStop;
+      const fromGroup = ctx.groupOf(prev.stopId);
+      const toGroup = ctx.groupOf(stop.stopId);
+      if (fromGroup && toGroup && ridden.has(hopKey(fromGroup, toGroup))) {
+        retracedSec += stop.atSec - prev.atSec;
+      }
 
       for (
         ;
@@ -394,6 +431,7 @@ function expand(state: State, input: SearchInput, ctx: Context): State[] {
         key: `${state.key}|${pattern.id}:${visit.index}-${j}`,
         finished: finishes,
         backSec,
+        retracedSec,
       });
     }
   }

@@ -1,0 +1,151 @@
+[
+  {
+    "id": "mauzoleum-walki-i-meczenstwa",
+    "nazwa": "Mauzoleum Walki i Męczeństwa (dawna siedziba Gestapo)",
+    "name_en": "Mausoleum of Struggle and Martyrdom (former Gestapo headquarters)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Chrystiana Szucha 25",
+    "adres_historyczny": "Strasse der Polizei (al. Szucha w czasie okupacji)",
+    "lat": 52.21738889,
+    "lon": 21.02347222,
+    "lokalizacja": "dokladna",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Mauzoleum Walki i Męczeństwa mieści się w dawnej siedzibie Gestapo w alei Jana Chrystiana Szucha 25; jest filią Muzeum Więzienia Pawiak.",
+      "1 października 1939 roku część gmachu, w którym mieścił się Ministerstwo Wyznań Religijnych i Oświecenia Publicznego, zajęły na kilka dni oddziały Wehrmachtu.",
+      "7 października 1939 roku budynek został oficjalnie przejęty przez niemiecką służbę bezpieczeństwa, przekształconą w październiku z Einsatzgruppe IV w Urząd Komendanta Policji Bezpieczeństwa i Służby Bezpieczeństwa dystryktu warszawskiego.",
+      "Pierwszym szefem Urzędu był SS-Obersturmbannführer Josef Meisinger; w 1941 roku zastąpił go SS-Standartenführer Ludwig Hahn.",
+      "Drugie i trzecie piętro oraz część pokoi na parterze i pierwszym piętrze zajmował Wydział IV Geheime Staatspolizei (Gestapo), największy departament hitlerowskiej policji bezpieczeństwa.",
+      "W suterenie lewego skrzydła gmachu urządzono więzienie śledcze (Hausgefängnis), a do gmachu przywożono więźniów z Pawiaka, najczęściej dwa razy dziennie."
+    ],
+    "ciekawostki": [
+      "Odnaleziona po wojnie wewnętrzna książka telefoniczna z 1943 roku zawierała 235 numerów telefonów IV Wydziału.",
+      "Cele zbiorowe nazywano „tramwajami”, od ustawienia drewnianych ław w dwóch rzędach wzdłuż ścian.",
+      "Krzyki torturowanych więźniów zagłuszano odbiornikiem radiowym Telefunken nastawionym na maksymalną głośność."
+    ],
+    "summary_en": "The Warsaw Gestapo headquarters and interrogation prison at Szucha Avenue 25 during the occupation. It is now the Mausoleum of Struggle and Martyrdom, a branch of the Pawiak Prison Museum, and one of the best-preserved sites of Nazi terror in Warsaw.",
+    "ludzie": [
+      {"kto": "Josef Meisinger", "rola": "pierwszy szef Urzędu Komendanta Policji Bezpieczeństwa i SD dystryktu warszawskiego", "wiki": null},
+      {"kto": "Ludwig Hahn", "rola": "szef Urzędu od 1941 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Strasse der Polizei (w czasie okupacji)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mauzoleum Walki i Męczeństwa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Mauzoleum_Walki_i_M%C4%99cze%C5%84stwa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany przy opisie przesłuchań; rekord oparty wyłącznie na zdaniach kompletnych. Adres i współrzędne z artykułu i nagłówka."
+  },
+  {
+    "id": "mala-ziemianska",
+    "nazwa": "Mała Ziemiańska",
+    "name_en": "Mała Ziemiańska café",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mazowiecka 12 (kamienica nieistniejąca)",
+    "adres_historyczny": null,
+    "lat": 52.238126,
+    "lon": 21.013163,
+    "lokalizacja": "dokladna",
+    "okres": "1918–1944",
+    "istnieje": false,
+    "fakty": [
+      "Kawiarnię otwarto 14 kwietnia 1918 roku przy ul. Mazowieckiej 12, w kamienicy należącej do Salomona Neumana.",
+      "Jej właścicielami byli Karol Albrecht i Jan Skępski.",
+      "W 1939 roku filie „Ziemiańskiej” mieściły się m.in. przy ul. Marszałkowskiej 8, 66, 114 i 111, ul. Wierzbowej 7, ul. Filtrowej 60 i al. Ujazdowskich 22; filia w kamienicy Goldstanda przy ul. Kredytowej 9 nazywana była „Dużą Ziemiańską”.",
+      "W okresie międzywojennym kawiarnia była jednym z najważniejszych miejsc spotkań inteligencji warszawskiej: poetów, literatów, artystów malarzy, dziennikarzy i aktorów.",
+      "Kamienica, w której mieściła się „Mała Ziemiańska”, spłonęła w czasie powstania warszawskiego w 1944 roku i została rozebrana w 1946 roku.",
+      "Kawiarnię upamiętniono m.in. w wierszu „Śmierć poety” Konstantego Ildefonsa Gałczyńskiego (1930)."
+    ],
+    "ciekawostki": [
+      "Poeci grupy Skamander zajmowali specjalnie dla siebie przeznaczony stolik na półpiętrze, zwany „górką”.",
+      "Osobne miejsce dla malarzy zaznaczono malowidłem Tadeusza Gronowskiego: filiżanka z przyczepioną prawdziwą łyżeczką."
+    ],
+    "summary_en": "A pre-war literary café at Mazowiecka 12 in Warsaw, open from 1918 to 1944 and a meeting place for the Skamander poets and other Warsaw intellectuals. The tenement that housed it burned during the 1944 Uprising and was demolished in 1946.",
+    "ludzie": [
+      {"kto": "Karol Albrecht", "rola": "współwłaściciel kawiarni", "wiki": null},
+      {"kto": "Jan Skępski", "rola": "współwłaściciel kawiarni", "wiki": null},
+      {"kto": "Salomon Neuman", "rola": "właściciel kamienicy przy ul. Mazowieckiej 12", "wiki": null},
+      {"kto": "Julian Tuwim", "rola": "bywalec kawiarni (grupa Skamander)", "wiki": null},
+      {"kto": "Jan Lechoń", "rola": "bywalec kawiarni (grupa Skamander)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ziemiańska (właściwa nazwa kawiarni)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mała Ziemiańska", "url": "https://pl.wikipedia.org/wiki/Ma%C5%82a_Ziemia%C5%84ska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy kawiarni; rekord traktuje ją jako miejsce w nieistniejącej kamienicy przy ul. Mazowieckiej 12. Nazwa „Ziemiańska” pochodzi z artykułu."
+  },
+  {
+    "id": "memorial-wolnego-slowa",
+    "nazwa": "Memoriał Wolnego Słowa",
+    "name_en": "Memorial to Free Word",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skwer Wolnego Słowa, ul. Mysia",
+    "adres_historyczny": "ul. Mysia 5 – centrala Głównego Urzędu Kontroli Prasy, Publikacji i Widowisk (cenzury) w latach 1946–1990",
+    "lat": 52.230569444,
+    "lon": 21.020280555,
+    "lokalizacja": "dokladna",
+    "okres": "2010–2014",
+    "istnieje": true,
+    "fakty": [
+      "Memoriał Wolnego Słowa to pomnik upamiętniający podziemny ruch wydawniczy w PRL, znajdujący się na skwerze Wolnego Słowa przy ul. Mysiej.",
+      "Przy ul. Mysiej 5 znajdowała się w latach 1946–1990 centrala Głównego Urzędu Kontroli Prasy, Publikacji i Widowisk, czyli centrala cenzury.",
+      "Podziemny ruch wydawniczy rozwinął się w latach 1977–1989; ukazywało się ponad 3000 czasopism i wydano ponad 7000 książek.",
+      "6 stycznia 2010 roku marszałek Bronisław Komorowski objął honorowym patronatem budowę pomnika, a następnie patronował jej jako Prezydent Rzeczypospolitej Polskiej.",
+      "29 stycznia 2010 roku powołano Komitet Budowy Memoriału Wolnego Słowa, który 16 kwietnia 2012 roku uzyskał zgodę Ministra Spraw Wewnętrznych na publiczną zbiórkę pieniędzy.",
+      "Konkurs na projekt memoriału wygrali Katarzyna Brońska, Mikołaj Iwańczuk i Michał Kempiński.",
+      "Odsłonięcia pomnika dokonano 5 czerwca 2014 roku o godz. 12:00."
+    ],
+    "ciekawostki": [
+      "„Wolne słowo to był dynamit, który rozsadził system. Powinniśmy pamiętać i chcemy, aby pamiętali inni, że wolność zaczęła się w Polsce.” – powiedział Bronisław Komorowski podczas odsłonięcia."
+    ],
+    "summary_en": "A monument on Wolnego Słowa Square on Mysia Street in Warsaw, commemorating the underground publishing movement of the People's Republic of Poland. It was unveiled on 5 June 2014 near the site of the state censorship office at Mysia 5, which operated there from 1946 to 1990.",
+    "ludzie": [
+      {"kto": "Bronisław Komorowski", "rola": "bezpośredni inicjator budowy pomnika; honorowy patron", "wiki": null},
+      {"kto": "Katarzyna Brońska, Mikołaj Iwańczuk, Michał Kempiński", "rola": "autorzy zwycięskiego projektu memoriału", "wiki": null},
+      {"kto": "Jan Lityński", "rola": "przewodniczący Komitetu Honorowego Budowy Memoriału Wolnego Słowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Memoriał Wolnego Słowa", "url": "https://pl.wikipedia.org/wiki/Memoria%C5%82_Wolnego_S%C5%82owa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie formy pomnika; rekord oparty na zdaniach kompletnych. Z artykułu: zebrano 1 170 155 zł, wydano 1 025 386 zł (rozliczenie z 25.07.2014)."
+  },
+  {
+    "id": "metropolitan-warszawa",
+    "nazwa": "Metropolitan",
+    "name_en": "Metropolitan office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Piłsudskiego 1/3",
+    "adres_historyczny": "miejsce Hotelu Angielskiego (do 1939)",
+    "lat": 52.2425,
+    "lon": 21.0125,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Metropolitan to biurowiec przy Placu Piłsudskiego 1/3 w Warszawie, oddany do użytku w 2003 roku.",
+      "Biurowiec wzniesiono na tyłach Teatru Wielkiego; do 1939 roku w tym miejscu znajdował się Hotel Angielski.",
+      "Budynek zaprojektowano na planie zbliżonym do pięciokąta, z wyodrębnionymi, zaokrąglonymi narożnikami, gdzie znajdują się wejścia.",
+      "Początkowo do fasady przymocowane były prostopadle granitowe płyty; w 2006 roku zastąpiono je elementami betonowymi.",
+      "Zrealizowała go amerykańska firma Hines; budynek zaprojektował Norman Foster we współpracy z polskimi biurami JEMS Architekci i Grupa 5 Architekci."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An office building at Plac Piłsudskiego 1/3 in Warsaw, built behind the Grand Theatre on the former site of the Hotel Angielski. Designed by Norman Foster with Polish partner studios, it was completed in 2003.",
+    "ludzie": [
+      {"kto": "Norman Foster", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Hines", "rola": "realizator inwestycji (amerykańska firma)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Angielski (na miejscu, do 1939)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Metropolitan (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Metropolitan_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

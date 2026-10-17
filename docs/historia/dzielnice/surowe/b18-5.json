@@ -1,0 +1,264 @@
+[
+  {
+    "id": "cyrk-braci-staniewskich",
+    "nazwa": "Cyrk Braci Staniewskich",
+    "name_en": "Staniewski Brothers Circus building (destroyed)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rejon ul. Ordynackiej 1 (dziś zabudowa po PWSM)",
+    "adres_historyczny": "ul. Ordynacka 1 róg ul. Okólnik 2",
+    "lat": 52.235654,
+    "lon": 21.02227,
+    "lokalizacja": "dokladna",
+    "okres": "1883–1944",
+    "istnieje": false,
+    "fakty": [
+      "W 1883 Teodor Ciniselli zbudował na rogu Ordynackiej i Okólnik czteropiętrowy gmach cyrku projektu Wincentego Rakiewicza, z największą aż do II wojny światowej halą widowiskową w Warszawie.",
+      "Koszt budowy wyniósł 180 tysięcy rubli; widownia mogła pomieścić ok. 3000 widzów, a arenę można było wypełnić wodą.",
+      "Uroczyste otwarcie nastąpiło 6 maja 1883.",
+      "W 1929, z powodu bankructwa, cyrk został przejęty przez braci Staniewskich.",
+      "We wrześniu 1939 budynek został częściowo spalony podczas bombardowania Warszawy; cyrk wznowił działalność w czerwcu 1940 na placyku u zbiegu Kruczej i Mokotowskiej, a we wrześniu 1943 przeniósł się na ul. Ząbkowską.",
+      "6 września 1944 gmach został zbombardowany przez Luftwaffe podczas powstania warszawskiego, zabijając i raniąc wiele chroniących się tam osób.",
+      "Ruiny rozebrano po wojnie; w latach 1960–1966 wybudowano w tym miejscu siedzibę Państwowej Wyższej Szkoły Muzycznej."
+    ],
+    "ciekawostki": [
+      "Za zapaśnikiem występującym tu pod pseudonimem „Czarna Maska” organizatorzy obiecywali, że zdejmie maskę, jeśli przegra; jego tożsamości nigdy nie odkryto."
+    ],
+    "summary_en": "The Staniewski Brothers Circus stood at the corner of ul. Ordynacka and ul. Okólnik from 1883 to 1944. Built by Teodor Ciniselli, it was then the largest arena hall in Warsaw until WWII. It was damaged in 1939 and bombed during the Warsaw Uprising in 1944; the Music Academy was built on the site in 1960–1966.",
+    "ludzie": [
+      {"kto": "Teodor Ciniselli", "rola": "zbudował cyrk w 1883", "wiki": null},
+      {"kto": "Wincenty Rakiewicz", "rola": "autor projektu gmachu", "wiki": null},
+      {"kto": "Bracia Staniewscy", "rola": "przejęli cyrk w 1929", "wiki": null}
+    ],
+    "dawne_nazwy": ["Cyrk Ciniselliego (pierwszy właściciel)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cyrk Braci Staniewskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cyrk_Braci_Staniewskich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w lead podaje zniszczenie w 1939, a w historii jest też bombardowanie w 1944 – w rekordzie podano obie daty."
+  },
+  {
+    "id": "dolina-szwajcarska",
+    "nazwa": "Dolina Szwajcarska",
+    "name_en": "Szwajcarska Valley (garden and park)",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "okolice ul. Pięknej i al. Róż (fragment przy Alejach Ujazdowskich)",
+    "adres_historyczny": "od ul. Pięknej i al. Róż do ul. Fryderyka Chopina",
+    "lat": 52.222407,
+    "lon": 21.022176,
+    "lokalizacja": "dokladna",
+    "okres": "1786–do powstania warszawskiego",
+    "istnieje": true,
+    "fakty": [
+      "Dolina Szwajcarska to ogród wypoczynkowo-rozrywkowy założony w 1786, który istniał do powstania warszawskiego.",
+      "Dzieje doliny zaczęły się około 1768, gdy Stanisław August ofiarował tereny bazylianom pod budowę kościoła i konwiktu; zabrakło jednak pieniędzy.",
+      "7 października 1825 tereny w wieczystą dzierżawę przejął kapitan saperów Stanisław Śleszyński; piętrowy pałacyk z portykiem zaprojektował Antonio Corazzi.",
+      "Ogród otwarto dla publiczności w 1827 jako park z pawilonami kawiarnianymi w stylu „architektury szwajcarskiej”.",
+      "25 maja 1852 Śleszyński sprzedał dolinę dwóm małżeństwom; w 1855 zbudowano Salon Wielkiej Alei według projektu I. Leona Esmanowskiego, a inauguracja nastąpiła 9 lub 11 października 1856.",
+      "Po II wojnie światowej ocalał fragment ogródka, oddzielony od Alei Ujazdowskich budynkiem Ministerstwa Sprawiedliwości z 1948."
+    ],
+    "ciekawostki": [
+      "Według plotki Śleszyński odkrył pozostawione przez bazylianów składowisko wapna, a fundusze ze sprzedaży przeznaczył na budowę pałacyku i ogrodu."
+    ],
+    "summary_en": "Szwajcarska Valley was a pleasure garden founded in 1786 on the grounds of Ujazdów, between Piękna street and Aleja Róż. It was opened to the public as a park in 1827 and survived as a fragment after WWII, separated from Aleje Ujazdowskie by a 1948 building.",
+    "ludzie": [
+      {"kto": "Stanisław August", "rola": "ofiarował tereny bazylianom (ok. 1768)", "wiki": null},
+      {"kto": "Stanisław Śleszyński", "rola": "kapitan saperów, dzierżawca i twórca parku (1825)", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "projektant pałacyku", "wiki": null},
+      {"kto": "I. Leon Esmanowski", "rola": "projektant Salonu Wielkiej Alei (1855)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dolina Szwajcarska", "url": "https://pl.wikipedia.org/wiki/Dolina_Szwajcarska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w 1874 (Nowa Szwajcaria przy ul. Mokotowskiej)."
+  },
+  {
+    "id": "dom-bez-kantow",
+    "nazwa": "Dom Bez Kantów",
+    "name_en": "House Without Corners (Dom Bez Kantów)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 11 róg ul. Królewskiej",
+    "adres_historyczny": null,
+    "lat": 52.241118,
+    "lon": 21.015054,
+    "lokalizacja": "dokladna",
+    "okres": "1933–1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Modernistyczny budynek Funduszu Kwaterunku Wojskowego wzniesiono w latach 1933–1935 w miejscu rozebranych dawnych Kuźni Saskich według projektu Czesława Przybylskiego, wybranego w zamkniętym konkursie.",
+      "Konstrukcję zaprojektował Stefan Bryła; budynek powstał z inicjatywy Ministerstwa Spraw Wojskowych do kwaterunku dla oficerów i żonatych podoficerów zawodowych.",
+      "Przed 1939 rokiem na parterze budynku znajdowały się sklepy.",
+      "Budynek przetrwał II wojnę światową; na niektórych ścianach widać ślady kul.",
+      "W 1992 roku dom został wpisany do rejestru zabytków.",
+      "W 2019 przeszedł kompleksowy remont elewacji; zachowane ślady kul z okresu wojny poddano pracom konserwatorskim."
+    ],
+    "ciekawostki": [
+      "Zaokrąglone narożniki dały budynkowi nazwę; według anegdoty Józef Piłsudski, akceptując projekt, miał powiedzieć: „tylko mi Panowie budować bez kantów”."
+    ],
+    "summary_en": "Dom Bez Kantów (House Without Corners) is a 1933–1935 modernist housing building for Polish military officers at Krakowskie Przedmieście 11 and Królewska street. Designed by Czesław Przybylski with structural work by Stefan Bryła, it is listed as a monument since 1992 and is named after its rounded corners.",
+    "ludzie": [
+      {"kto": "Czesław Przybylski", "rola": "autor projektu (zamknięty konkurs)", "wiki": null},
+      {"kto": "Stefan Bryła", "rola": "autor konstrukcji", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "według anegdoty zainspirował nazwę i kształt budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["dawne Kuźnie Saskie (teren przed budową)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom Bez Kantów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Bez_Kant%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że remont z 2019 objął też ślady kul; w rekordzie to zapisano."
+  },
+  {
+    "id": "dom-chlopa",
+    "nazwa": "Dom Chłopa",
+    "name_en": "Dom Chłopa (House of the Peasant) hotel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Powstańców Warszawy",
+    "adres_historyczny": null,
+    "lat": 52.234331,
+    "lon": 21.014848,
+    "lokalizacja": "dokladna",
+    "okres": "1958–1961",
+    "istnieje": true,
+    "fakty": [
+      "Hotel przy placu Powstańców Warszawy wybudowano według projektu Bohdana Pniewskiego.",
+      "Pomysł „Domu Chłopa”, finansowanego ze składek, zgłosili chłopi na zjeździe kółek rolniczych w 1912 roku; w 1938 młodzież wiejska zaczęła wpłacać pierwsze pieniądze, ale wojna przerwała starania.",
+      "W 1956 Prezydium Rządu podjęło uchwałę o budowie; w konkursie wybrano projekt Bohdana Pniewskiego i Małgorzaty Handzelewicz-Wacławek.",
+      "Charakterystycznym elementem budynku jest falisty dach, który ma przypominać łany zboża.",
+      "W 1961 w budynku otwarto wzorcowy sklep zaopatrzenia ogrodniczego; w 1962 na dziedzińcu odsłonięto pomnik Marii Konopnickiej.",
+      "W latach 1998–2002 budynek zmodernizowano; część dekoracji Hanny i Gabriela Rechowiczów pokryto tynkiem, a w 2002 skuto wielką złotą mozaikę Władysława Zycha przy wejściu. W 2003 fasadę od ul. Wareckiej uzupełniono skrzydłem hotelu Gromada."
+    ],
+    "ciekawostki": [
+      "W realizacji budynku uczestniczyła architektka i pisarka Joanna Chmielewska."
+    ],
+    "summary_en": "Dom Chłopa is a hotel on Plac Powstańców Warszawy, built in 1958–1961 to a design by Bohdan Pniewski. The idea of a peasants' house dated to 1912, and the wavy roof was meant to suggest fields of grain.",
+    "ludzie": [
+      {"kto": "Bohdan Pniewski", "rola": "autor projektu, zwycięzca konkursu", "wiki": null},
+      {"kto": "Małgorzata Handzelewicz-Wacławek", "rola": "współautorka projektu", "wiki": null},
+      {"kto": "Joanna Chmielewska", "rola": "uczestniczyła w realizacji budynku", "wiki": null},
+      {"kto": "Hanna i Gabriel Rechowiczowie", "rola": "autorzy dekoracji eksperymentalnej (część pokryta tynkiem w 1998–2002)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom Chłopa", "url": "https://pl.wikipedia.org/wiki/Dom_Ch%C5%82opa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lead podaje budowę 1957–1962, a historia 1958–1961; w okresie wpisano wersję z historii."
+  },
+  {
+    "id": "dom-kraszewskiego",
+    "nazwa": "Dom Kraszewskiego",
+    "name_en": "Kraszewski House",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 48",
+    "adres_historyczny": null,
+    "lat": 52.2252,
+    "lon": 21.0218,
+    "lokalizacja": "dokladna",
+    "okres": "1860–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek w stylu neorenesansu włoskiego powstał w 1860 r. w wyniku przebudowy przyulicznego skrzydła wcześniejszego budynku, według projektu Franciszka Marii Lanciego.",
+      "Pisarz Józef Ignacy Kraszewski mieszkał tu w latach 1860–1863; od 1861 r. publikował w „Gazecie Polskiej” cykl felietonów „Listy z Mokotowskiej ulicy”.",
+      "W 1863 r. właścicielem nieruchomości został Leopold Kronenberg, a później m.in. Tytus Chałubiński.",
+      "Dom przetrwał II wojnę światową bez poważniejszych zniszczeń. Od 1957 r. był siedzibą studenckiego Klubu „Hybrydy”.",
+      "W 1965 r. budynek wpisano do rejestru zabytków; jest najstarszym zachowanym zabytkiem przy ul. Mokotowskiej.",
+      "Tablica poświęcona Kraszewskiemu została odsłonięta 19 marca 1961; druga tablica upamiętnia Tytusa Chałubińskiego, który mieszkał tu w latach 1877–1887."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Dom Kraszewskiego at ul. Mokotowska 48 is a neo-Renaissance building from 1860, designed by Franciszek Maria Lanci. The writer Józef Ignacy Kraszewski lived there in 1860–1863. It is the oldest surviving historic building on Mokotowska street.",
+    "ludzie": [
+      {"kto": "Józef Ignacy Kraszewski", "rola": "pisarz, mieszkał tu w latach 1860–1863", "wiki": null},
+      {"kto": "Franciszek Maria Lanci", "rola": "autor projektu z 1860", "wiki": null},
+      {"kto": "Leopold Kronenberg", "rola": "właściciel nieruchomości od 1863", "wiki": null},
+      {"kto": "Tytus Chałubiński", "rola": "późniejszy właściciel; mieszkał tu w latach 1877–1887", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom Kraszewskiego", "url": "https://pl.wikipedia.org/wiki/Dom_Kraszewskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-meblowy-emilia",
+    "nazwa": "Dom Meblowy „Emilia”",
+    "name_en": "Emilia furniture store (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Emilii Plater 51 (teren po rozbiórce)",
+    "adres_historyczny": "ul. Emilii Plater 51",
+    "lat": 52.23309,
+    "lon": 21.00221,
+    "lokalizacja": "dokladna",
+    "okres": "1966–2016/2017",
+    "istnieje": false,
+    "fakty": [
+      "Modernistyczny budynek wzniesiono w latach 1966–1969 według projektu Mariana Kuźniara, Czesława Wegnera i Hanny Lewickiej dla Wojewódzkiego Przedsiębiorstwa Handlu Meblami w Warszawie.",
+      "Dom Meblowy „Emilia” otwarto 16 stycznia 1970; w chwili rozpoczęcia działalności była największą placówką sprzedającą meble w Polsce.",
+      "Budynek miał szklane elewacje, szeroki otwarty plan z atrium i charakterystyczne zygzakowate załamania żelbetowego dachu; konstrukcję oparto na szesnastu filarach.",
+      "W latach 2008–2016 był tymczasową siedzibą Muzeum Sztuki Nowoczesnej w Warszawie.",
+      "W grudniu 2016 pawilon wpisano do rejestru zabytków, ale w lutym 2017 decyzję uchylił generalny konserwator zabytków; rozbiórkę zakończono w 2017 roku.",
+      "Planowano odbudowę pawilonu w pobliżu parku Świętokrzyskiego, w trybie partnerstwa publiczno-prywatnego."
+    ],
+    "ciekawostki": [
+      "Na pierwszym piętrze znajdowała się kawiarnia z mozaiką Kazimierza Gąsiorowskiego przedstawiającą ludzkie sylwetki."
+    ],
+    "summary_en": "Dom Meblowy „Emilia” was a modernist furniture store at ul. Emilii Plater 51, designed in 1966–1969 by Marian Kuźniar, Czesław Wegner and Hanna Lewicka. It opened in 1970 and was demolished in 2016–2017, despite a short-lived attempt to list it as a monument.",
+    "ludzie": [
+      {"kto": "Marian Kuźniar", "rola": "autor projektu i wnętrz", "wiki": null},
+      {"kto": "Czesław Wegner", "rola": "autor projektu", "wiki": null},
+      {"kto": "Hanna Lewicka", "rola": "autorka projektu i wnętrz", "wiki": null},
+      {"kto": "Tadeusz Spanili", "rola": "odpowiadał za konstrukcję", "wiki": null},
+      {"kto": "Kazimierz Gąsiorowski", "rola": "autor mozaiki w kawiarni", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom Meblowy „Emilia” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Meblowy_%E2%80%9EEmilia%E2%80%9D_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lead podaje rozbiórkę w 2016, a tekst główny – zakończenie w 2017; w okresie zapisano obie daty."
+  },
+  {
+    "id": "dom-narutowicza",
+    "nazwa": "Dom Narutowicza",
+    "name_en": "Narutowicz House in Łazienki Park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "wschodnia część Łazienek Królewskich",
+    "adres_historyczny": null,
+    "lat": 52.213944,
+    "lon": 21.039194,
+    "lokalizacja": "dokladna",
+    "okres": "lata 30. XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek we wschodniej części Łazienek Królewskich powstał w latach trzydziestych XIX wieku i prawdopodobnie był przeznaczony na mieszkania dla kantonistów lub wyższych wojskowych.",
+      "Autor projektu jest nieznany; możliwe, że był nim Andrzej Gołoński.",
+      "W latach 1920–1922 mieszkał tu Gabriel Narutowicz, pierwszy Prezydent Rzeczypospolitej Polskiej; tablicę wmurowano w 1923.",
+      "Budynek bywa mylony z willą Narutowicza przy ul. Parkowej 23, która była jego własnym domem i do której prezydent przeniósł się kilka dni po zaprzysiężeniu.",
+      "Budynek jest jednopiętrowy, ozdobiony w fasadzie okrągłymi płycinami, a od tyłu ma trójbocznie zamknięty ryzalit.",
+      "Obecnie w budynku mieści się przedszkole."
+    ],
+    "ciekawostki": [
+      "Tablica z 1923 głosi, że Gabriel Narutowicz mieszkał w tym domu od 7 IX 1920 r. do 14 XII 1922 r."
+    ],
+    "summary_en": "Dom Narutowicza is a single-storey building in the eastern part of Łazienki Park, built in the 1830s. Gabriel Narutowicz, Poland's first president, lived there from 1920 to 1922. It now houses a kindergarten.",
+    "ludzie": [
+      {"kto": "Gabriel Narutowicz", "rola": "pierwszy Prezydent RP, mieszkał tu w latach 1920–1922", "wiki": null},
+      {"kto": "Andrzej Gołoński", "rola": "możliwy autor projektu (nieustalony)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom Narutowicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Narutowicza_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Autor projektu nieustalony; zapisano jako możliwy."
+  }
+]

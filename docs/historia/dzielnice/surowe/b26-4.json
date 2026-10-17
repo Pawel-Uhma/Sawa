@@ -1,0 +1,345 @@
+[
+  {
+    "id": "muzeum-ziemi-pan",
+    "nazwa": "Muzeum Ziemi PAN w Warszawie",
+    "name_en": "Earth Museum of the Polish Academy of Sciences",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Na Skarpie 20/26",
+    "adres_historyczny": "al. Na Skarpie 27 (willa Pniewskiego, od 1966)",
+    "lat": 52.22898559,
+    "lon": 21.02863133,
+    "lokalizacja": "dokladna",
+    "okres": "1948–dziś (siedziba od 1950)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum powstało w 1948 roku, a stałą siedzibę, odbudowany Biały Pałacyk, otrzymało w 1950 roku.",
+      "W 1951 roku otwarto pierwszą stałą ekspozycję; w 1966 roku placówka powiększyła się o sąsiednią willę Pniewskiego przy al. Na Skarpie 27.",
+      "W 1781 roku zakończono budowę reprezentacyjnego budynku z kolumnadą, zbudowanego przez architekta Szymona Bogumiła Zuga jako rezydencję ogrodową księcia Kazimierza Poniatowskiego.",
+      "Ok. 1850 roku nieruchomość nabyli Braniccy, a wcześniejsze obiekty przebudowano na Biały Pałacyk na Frascati.",
+      "Willę przebudował w latach 1935–1938 Bohdan Pniewski, który mieszkał tu i tworzył do końca życia.",
+      "W 2023 roku prezes PAN podjął decyzję o likwidacji placówki z końcem roku; po rozmowach z Ministerstwem Kultury zdecydowano o przekształceniu jej w oddział Narodowego Muzeum Techniki."
+    ],
+    "ciekawostki": [
+      "W czasie powstania warszawskiego willa Pniewskiego była ważnym punktem oporu; na marmurowych schodach zachowały się plamy krwi powstańca, upamiętnione tablicą."
+    ],
+    "summary_en": "The Earth Museum of the Polish Academy of Sciences occupies the White Pavilion and the neighbouring Pniewski villa at Na Skarpie street, near Three Crosses Square. A 2023 decision placed it under the National Museum of Technology.",
+    "ludzie": [
+      {"kto": "Stanisław Małkowski", "rola": "pierwszy dyrektor muzeum (do 1950)", "wiki": null},
+      {"kto": "Antonina Halicka", "rola": "dyrektorka muzeum do 1973", "wiki": null},
+      {"kto": "Krzysztof Jakubowski", "rola": "dyrektor muzeum w latach 1974–2008", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "architekt, przebudował willę w latach 1935–1938 i w niej mieszkał", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "architekt pierwotnego założenia ogrodowego", "wiki": null},
+      {"kto": "Marek Konarzewski", "rola": "prezes PAN, który w 2023 roku zadecydował o likwidacji placówki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Ziemi"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Ziemi PAN w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Ziemi_PAN_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Stan z 2023 wg artykułu: decyzja o przekształceniu w oddział Narodowego Muzeum Techniki; dalszy status nieznany z tekstu."
+  },
+  {
+    "id": "muzeum-zimnej-wojny",
+    "nazwa": "Muzeum Zimnej Wojny w Warszawie",
+    "name_en": "Museum of the Cold War in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jezuicka 1/3",
+    "adres_historyczny": "ul. Kanonia (2006–2022, jako Izba Pamięci)",
+    "lat": 52.249388888,
+    "lon": 21.013972222,
+    "lokalizacja": "dokladna",
+    "okres": "2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało założone w 2006 roku przez Józefa Szaniawskiego jako Izba Pamięci Pułkownika Kuklińskiego; do 2022 roku mieściło się przy ul. Kanonia.",
+      "Po śmierci założyciela w 2012 roku prowadzenie placówki przejęła Fundacja Józefa Szaniawskiego, kierowana przez jego syna, Filipa Frąckowiaka.",
+      "W 2018 roku zmieniono nazwę na „Izba Pamięci Generała Kuklińskiego” i rozszerzono powierzchnię wystawienniczą.",
+      "W lutym 2022 roku zapowiedziano przekształcenie placówki w Muzeum Zimnej Wojny im. Generała Kuklińskiego i przeniesienie jej na ul. Jezuicką 1/3, na warszawskiej Starówce.",
+      "W stałej ekspozycji jest m.in. oryginał mapy sztabowej z 1970 roku oraz mundur pułkownika Kuklińskiego."
+    ],
+    "ciekawostki": [
+      "W grudniu 2021 roku muzeum pozyskało oryginał medalu Distinguished Intelligence Medal, który Kuklińskiemu wręczył dyrektor CIA William Casey w 1982 roku."
+    ],
+    "summary_en": "The Museum of the Cold War is a private historical museum that began in 2006 as a memorial room for Colonel Ryszard Kukliński. It moved from Kanonia street to Jezuicka 1/3 in the Old Town.",
+    "ludzie": [
+      {"kto": "Józef Szaniawski", "rola": "założyciel muzeum w 2006 roku, przyjaciel i pełnomocnik Ryszarda Kuklińskiego", "wiki": null},
+      {"kto": "Filip Frąckowiak", "rola": "syn założyciela, kierujący fundacją i muzeum", "wiki": null},
+      {"kto": "Ryszard Kukliński", "rola": "pułkownik, którego pamięci poświęcona jest placówka", "wiki": null}
+    ],
+    "dawne_nazwy": ["Izba Pamięci Pułkownika Kuklińskiego", "Izba Pamięci Generała Kuklińskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Zimnej Wojny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Zimnej_Wojny_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł z 2022 opisuje przeprowadzkę jako planowaną; dalszy przebieg nieznany z tekstu. Muzeum niepubliczne."
+  },
+  {
+    "id": "muzeum-i-instytut-zoologii-pan",
+    "nazwa": "Muzeum i Instytut Zoologii PAN",
+    "name_en": "Museum and Institute of Zoology of the Polish Academy of Sciences",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Twarda 51/55",
+    "adres_historyczny": "ul. Wilcza 64 (1935–2023)",
+    "lat": 52.22361111,
+    "lon": 21.00916667,
+    "lokalizacja": "dokladna",
+    "okres": "1819–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Geneza instytucji sięga Gabinetu Zoologicznego utworzonego w 1819 roku przy Królewskim Uniwersytecie Warszawskim.",
+      "W 1935 roku, po pożarze muzeum znajdującego się na terenie Uniwersytetu Warszawskiego, jego siedzibę przeniesiono do budynku przy ul. Wilczej 64.",
+      "W czasie obrony Warszawy we wrześniu 1939 roku budynek został poważnie uszkodzony, a po powstaniu warszawskim Niemcy podpalili go, co znacznie zniszczyło zbiory.",
+      "Po wojnie muzeum weszło w skład Instytutu Zoologii PAN, utworzonego w 1952 roku.",
+      "Stała wystawa była w Pałacu Kultury i Nauki do 1976 roku, a wznowiono ją w 1992 roku.",
+      "W 2023 roku siedzibę muzeum przeniesiono z ul. Wilczej 64 na ul. Twardą 51/55."
+    ],
+    "ciekawostki": [
+      "Wystawa „Zabójcy bez winy” o drapieżnikach, otwarta w 2007 roku, sąsiadowała z Muzeum Ewolucji w Pałacu Młodzieży; obecnie znajduje się na Wydziale Biologii Uniwersytetu Gdańskiego."
+    ],
+    "summary_en": "The Museum and Institute of Zoology of the Polish Academy of Sciences traces its origins to a zoological cabinet founded in 1819. Its building was at Wilcza 64 from 1935 until 2023, when it moved to Twarda 51/55.",
+    "ludzie": [
+      {"kto": "Feliks Paweł Jarocki", "rola": "kierownik Gabinetu Zoologicznego do 1862 roku", "wiki": null},
+      {"kto": "Władysław Taczanowski", "rola": "kierownik Gabinetu Zoologicznego po Jarockim, zmienił go w miejsce eksponowania zbiorów", "wiki": null},
+      {"kto": "Ksawery Branicki", "rola": "założyciel prywatnego Muzeum Zoologicznego (Muzeum hr. Branickich), otwartego w 1887 roku", "wiki": null},
+      {"kto": "Tadeusz Jaczewski", "rola": "dyrektor Instytutu Zoologii PAN w latach 1953–1959", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gabinet Zoologiczny", "Państwowe Muzeum Zoologiczne"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum i Instytut Zoologii Polskiej Akademii Nauk", "url": "https://pl.wikipedia.org/wiki/Muzeum_i_Instytut_Zoologii_Polskiej_Akademii_Nauk"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-lowiectwa-i-jezdziectwa",
+    "nazwa": "Muzeum Łowiectwa i Jeździectwa w Warszawie",
+    "name_en": "Museum of Hunting and Horse Riding in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Koszary Kantonistów i Stajnia Kubickiego (w Łazienkach Królewskich)",
+    "adres_historyczny": null,
+    "lat": 52.21355556,
+    "lon": 21.03905556,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Połączone muzeum powołano 1 lipca 1983 roku z połączenia dwóch inicjatyw: muzeum łowiectwa, działającego od 1977 roku, i muzeum jeździectwa.",
+      "Pierwsze małe wystawy urządzono w siedzibie Polskiego Związku Łowieckiego przy Nowym Świecie, a pierwszą stałą ekspozycję „Wiosna, lato, jesień, zima” otwarto w Koszarach Kantonistów w 1985 roku.",
+      "W 1995 roku muzeum uzyskało do dyspozycji część Stajni Kubickiego.",
+      "W 2017 roku minister kultury połączył placówkę z Muzeum Łazienki Królewskie; od 1 stycznia 2018 roku jest jego oddziałem.",
+      "W Stajni Kubickiego mieści się Powozownia im. Zbigniewa Prus-Niewiadomskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Museum of Hunting and Horse Riding was formed in 1983 from two initiatives and is housed in the Cantonists' Barracks and the Kubicki Stables in the Royal Baths Park. Since 2018 it has been a branch of the Royal Baths Museum.",
+    "ludzie": [
+      {"kto": "Tomasz Konarski", "rola": "artysta plastyk, kierował zespołem muzeum łowiectwa; dyrektor do 1993 roku", "wiki": null},
+      {"kto": "Piotr Hubert Świda", "rola": "dyrektor muzeum od 1993 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Łowiectwa i Jeździectwa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_%C5%81owiectwa_i_Je%C5%BAdziectwa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru budynków; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "rzezba-muzyka-koszykowa-34-50",
+    "nazwa": "Muzyka (rzeźba na budynku MDM)",
+    "name_en": "Muzyka (sculpture on the MDM building)",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koszykowa 34/50",
+    "adres_historyczny": null,
+    "lat": 52.2231,
+    "lon": 21.0142,
+    "lokalizacja": "dokladna",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Grupa rzeźbiarska Muzyka jest jedną z trzech, obok Sztuk Pięknych i Teatru, realizacji zdobiących warszawski MDM od 1952 roku.",
+      "Projekt wybrano w konkursie; autorem był Józef Gosławski, któremu w pracy pomagał brat Stanisław i żona Wanda.",
+      "Ze względu na krótki termin i brak rusztowań artyści napisali pismo do naczelnego architekta Warszawy Józefa Sigalina, co przyczyniło się do poprawy warunków i terminowej realizacji.",
+      "Grupa znalazła się na pocztówce wydanej w 1952 roku; z ceny 1,30 zł 0,08 zł przeznaczano na Społeczny Fundusz Odbudowy Stolicy."
+    ],
+    "ciekawostki": [
+      "W 1954 roku czasopismo „Stolica” oceniło grupy alegoryczne na MDM pozytywnie na tle ówczesnych rzeźb w Warszawie, krytykując jedynie zbyt duże wymiary."
+    ],
+    "summary_en": "Muzyka is a sculptural group by Józef Gosławski, made in 1952, that decorates a building at Koszykowa 34/50 as one of three allegorical works on the MDM housing block.",
+    "ludzie": [
+      {"kto": "Józef Gosławski", "rola": "autor rzeźby", "wiki": null},
+      {"kto": "Stanisław", "rola": "brat autora, pomagał przy realizacji", "wiki": null},
+      {"kto": "Wanda", "rola": "żona autora, pomagała przy realizacji", "wiki": null},
+      {"kto": "Józef Sigalin", "rola": "naczelny architekt Warszawy, adresat pisma o problemach z realizacją", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzyka (rzeźba)", "url": "https://pl.wikipedia.org/wiki/Muzyka_%28rze%C5%BAba%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje współrzędnych poza nagłówkiem; rekord to rzeźba na budynku, a nie wolnostojący pomnik."
+  },
+  {
+    "id": "mlotek-budynek-smolna-8",
+    "nazwa": "Młotek (wieżowiec przy ul. Smolnej 8)",
+    "name_en": "Młotek (high-rise at Smolna 8)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Smolna 8",
+    "adres_historyczny": "dawny Instytut Oftalmiczny (od 1870, do powstania warszawskiego)",
+    "lat": 52.233611111,
+    "lon": 21.025277777,
+    "lokalizacja": "dokladna",
+    "okres": "1870–1944 (Instytut); 1976–dziś (blok)",
+    "istnieje": true,
+    "fakty": [
+      "Działkę od 1870 roku zabudowywał budynek Instytutu Oftalmicznego, który przetrwał do powstania warszawskiego; mury przy ulicy Smolnej rozebrano po 1945 roku.",
+      "W 1964 roku architekci Jan Bogusławski i Bohdan Gniewiewski zaprojektowali 19-piętrowy budynek na miejscu przedwojennej placówki; w 1976 roku ukończono jego budowę.",
+      "Inwestorem było biuro obsługi cudzoziemców „PUMA”; budynek miał być hotelem polonijnym, ale szybko przekształcono go w blok mieszkalny z 140 mieszkaniami.",
+      "Na dachu, na 19. i 20. piętrze, działał dwukondygnacyjny lokal rozrywkowy: najpierw kawiarnia „Akropol”, a potem klub „Top Floor”.",
+      "W sierpniu 2016 roku budynek wpisano do gminnej ewidencji zabytków Warszawy."
+    ],
+    "ciekawostki": [
+      "Z powodu charakterystycznego kształtu ostatnich pięter blok nazwano potocznie „domem z opadłą szczęką” lub „młotkiem”.",
+      "Lokale w budynku kupowano za dewizy, a sam blok był jednym z najbardziej ekskluzywnych apartamentowców w PRL."
+    ],
+    "summary_en": "Młotek is a 1976 high-rise residential block at Smolna 8, built on the site of the prewar Ophthalmic Institute. It was designed as a hotel for Poles from abroad but became a block of flats with 140 apartments.",
+    "ludzie": [
+      {"kto": "Jan Bogusławski", "rola": "architekt projektu z 1964 roku", "wiki": null},
+      {"kto": "Bohdan Gniewiewski", "rola": "architekt projektu z 1964 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom z opadłą szczęką"],
+    "zrodla": [{"tytul": "Wikipedia: Młotek (budynek)", "url": "https://pl.wikipedia.org/wiki/M%C5%82otek_%28budynek%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "mlyn-parowy-na-solcu",
+    "nazwa": "Młyn Parowy na Solcu",
+    "name_en": "Steam Mill on Solec",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Solec",
+    "lat": 52.232817704,
+    "lon": 21.027408598,
+    "lokalizacja": "dokladna",
+    "okres": "1828–ok. 1945",
+    "istnieje": false,
+    "fakty": [
+      "W 1825 roku ziemianie i przemysłowcy założyli spółkę Towarzystwo Wyrobów Zbożowych, a rok później ruszyła budowa pierwszego młyna parowego na Solcu według projektu Adolfa Schucha.",
+      "Młyn zaczął działać w 1828 roku i zatrudniał wówczas 100 robotników.",
+      "W 1834 roku Bank Polski zajął zakład z powodu długów spółki; w 1837 roku młyn kupił Piotr Steinkeller.",
+      "Po upadku powstania styczniowego w młynie do 1865 roku ukrywał się Aleksander Waszkowski, naczelnik Warszawy i ostatni dyktator powstania.",
+      "W historii młyna były liczne pożary: w 1851, 1854, 1866 i 1869 roku.",
+      "Młyn podlegał stopniowej rozbiórce, a resztki zabudowań zniszczono w czasie II wojny światowej."
+    ],
+    "ciekawostki": [
+      "W 1899 roku Towarzystwo Akcyjne „Warszawski Młyn Parowy” jako pierwszy zakład młynarski w Warszawie zaczęło eksportować do Rosji."
+    ],
+    "summary_en": "The Steam Mill on Solec was the first steam mill in the Kingdom of Poland, started in 1828. It changed owners several times and was largely dismantled before being destroyed in the Second World War.",
+    "ludzie": [
+      {"kto": "Adolf Schuch", "rola": "autor projektu architektonicznego młyna", "wiki": null},
+      {"kto": "Piotr Steinkeller", "rola": "właściciel młyna od 1837 roku; ogłosił bankructwo w 1849", "wiki": null},
+      {"kto": "Aleksander Waszkowski", "rola": "naczelnik Warszawy, ukrywał się w młynie po powstaniu styczniowym", "wiki": null}
+    ],
+    "dawne_nazwy": ["Młyn „dawniej bankowy”"],
+    "zrodla": [{"tytul": "Wikipedia: Młyn Parowy na Solcu", "url": "https://pl.wikipedia.org/wiki/M%C5%82yn_Parowy_na_Solcu"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru budynku; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "narodowe-muzeum-techniki",
+    "nazwa": "Narodowe Muzeum Techniki w Warszawie",
+    "name_en": "National Museum of Technology in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Pałac Kultury i Nauki (południowo-zachodnie skrzydło)",
+    "adres_historyczny": null,
+    "lat": 52.230833333,
+    "lon": 21.005833333,
+    "lokalizacja": "dokladna",
+    "okres": "1950–dziś (w PKiN od 1955)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum historii techniki zostało założone w 1950 roku w Warszawie; od 1955 roku mieści się w południowo-zachodnim skrzydle Pałacu Kultury i Nauki.",
+      "Poprzednikiem było Muzeum Techniki i Przemysłu NOT działające w tym samym miejscu; w 2017 roku muzeum zamknięto i było nieczynne od czerwca 2017 do stycznia 2022 roku.",
+      "Tradycje sięgają Muzeum Przemysłu i Rolnictwa z 1875 roku oraz Muzeum Techniki i Przemysłu z 1929 roku, zlokalizowanego częściowo przy Krakowskim Przedmieściu i ul. Tamka 1.",
+      "9 czerwca 2017 roku porozumienie FSNT NOT, Ministerstwa Nauki i Szkolnictwa Wyższego oraz m.st. Warszawy utworzyło Narodowe Muzeum Techniki.",
+      "Muzeum zostało otwarte w styczniu 2022 roku bez wystawy głównej, a w grudniu 2022 roku udostępniono kolejne wystawy stałe."
+    ],
+    "ciekawostki": [
+      "Muzeum ma kolekcje motocykli, odbiorników radiowych, instrumentów geodezyjnych i komputerów; niektóre z nich są największe w Polsce."
+    ],
+    "summary_en": "The National Museum of Technology, founded in 1950, has been housed in the south-western wing of the Palace of Culture and Science since 1955. It succeeded the Museum of Technology and Industry, which closed in 2017, and reopened in 2022.",
+    "ludzie": [
+      {"kto": "Kazimierz Jackowski", "rola": "inżynier, dyrektor Muzeum Techniki i Przemysłu z 1929 roku; zginął w Katyniu w 1940 roku", "wiki": null},
+      {"kto": "Jerzy Jasiuk", "rola": "dyrektor muzeum w latach 1972–2013", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Techniki i Przemysłu NOT", "Muzeum Techniki i Przemysłu"],
+    "zrodla": [{"tytul": "Wikipedia: Narodowe Muzeum Techniki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Narodowe_Muzeum_Techniki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też poprzedników w innych budynkach (Muzeum Przemysłu i Rolnictwa, 1875; Muzeum Techniki i Przemysłu, 1929)."
+  },
+  {
+    "id": "narodowy-instytut-kultury-i-dziedzictwa-wsi",
+    "nazwa": "Narodowy Instytut Kultury i Dziedzictwa Wsi (dawny odwach przy Krakowskim Przedmieściu)",
+    "name_en": "National Institute of Rural Culture and Heritage (former guardhouse on Krakowskie Przedmieście)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "odwach przy Krakowskim Przedmieściu (dawny klasztor bernardynów)",
+    "lat": 52.245972,
+    "lon": 21.014278,
+    "lokalizacja": "dokladna",
+    "okres": "XVI w.–dziś (instytucja od 2019)",
+    "istnieje": true,
+    "fakty": [
+      "Działka, na której stoi budynek, od połowy XVI wieku należała do klasztoru bernardynów, który na sąsiedniej działce wybudował kościół św. Anny.",
+      "W 1820 roku na polecenie namiestnika Józefa Zajączka przebudowano fasadę odwachu od strony Krakowskiego Przedmieścia według projektu Piotra Aignera.",
+      "W 1881 roku Komitet Muzeum Przemysłu i Rolnictwa odkupił budynek od rządu rosyjskiego i w latach 1881–1884 przebudował go na muzeum.",
+      "W pracowni chemicznej, działającej tu od 1876 roku do 1939, pracowała m.in. Maria Skłodowska-Curie.",
+      "Gmach został zbombardowany i spalony we wrześniu 1939 roku, a w czasie powstania warszawskiego ponownie spalony; utracono ok. 10 tysięcy eksponatów.",
+      "W 1952 roku budynek przejął Centralny Instytut Rolniczy, a w 1955 roku powołano tu Centralną Bibliotekę Rolniczą."
+    ],
+    "ciekawostki": [
+      "Dwupiętrowa kolumnada arkadowa przed fasadą odwachu była wzorowana na Teatrze Marcellusa w Rzymie."
+    ],
+    "summary_en": "The National Institute of Rural Culture and Heritage occupies a building that began as a Bernardine monastery guesthouse and later served as a guardhouse. It was rebuilt as a museum in 1881–1884, destroyed in 1939 and 1944, and today hosts the Central Agricultural Library successor.",
+    "ludzie": [
+      {"kto": "Józef Zajączek", "rola": "namiestnik, który w 1820 roku polecił przebudowę fasady odwachu", "wiki": null},
+      {"kto": "Piotr Aigner", "rola": "autor projektu przebudowy fasady w 1820 roku", "wiki": null},
+      {"kto": "Beata Trylińska", "rola": "kierowała odbudową budynku w latach 1945–1947", "wiki": null},
+      {"kto": "Maria Skłodowska-Curie", "rola": "pracowała w pracowniach chemicznej i fizycznej muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": ["Państwowy Instytut Kultury Wsi", "Centralna Biblioteka Rolnicza"],
+    "zrodla": [{"tytul": "Wikipedia: Narodowy Instytut Kultury i Dziedzictwa Wsi", "url": "https://pl.wikipedia.org/wiki/Narodowy_Instytut_Kultury_i_Dziedzictwa_Wsi"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam budynek co dawne Muzeum Przemysłu i Rolnictwa przy Krakowskim Przedmieściu (rekord muzeum-przemyslu-i-rolnictwa-krakowskie-przedmiescie)."
+  },
+  {
+    "id": "neon-muzeum",
+    "nazwa": "Neon Muzeum (Muzeum Neonów)",
+    "name_en": "Neon Museum",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Defilad 1 (Pałac Kultury i Nauki)",
+    "adres_historyczny": "ul. Mińska 25 (hala Zakładów Amunicyjnych „Pocisk”, Soho Factory, 2012–2025)",
+    "lat": 52.2318779,
+    "lon": 21.0061135,
+    "lokalizacja": "dokladna",
+    "okres": "2012–dziś (otwarcie 19 maja 2012)",
+    "istnieje": true,
+    "fakty": [
+      "Historia muzeum zaczęła się w 2005 roku, gdy Ilona Karwińska uratowała przed zniszczeniem neon dawnego sklepu „Berlin” przy ul. Marszałkowskiej.",
+      "Muzeum otwarto 19 maja 2012 roku w czasie Nocy Muzeów.",
+      "W 2012 roku muzeum wprowadziło się do zabytkowej hali Zakładów Amunicyjnych „Pocisk” przy ul. Mińskiej 25, na terenie Soho Factory.",
+      "W zbiorach jest ok. 100 neonów z całej Polski, większość z lat 60. i 70. XX wieku.",
+      "W 2025 roku muzeum zmieniło siedzibę na Pałac Kultury i Nauki przy pl. Defilad 1."
+    ],
+    "ciekawostki": [
+      "W 2020 roku czytelnicy brytyjskiego dziennika „The Guardian” uznali muzeum za jedno z 12 najciekawszych miejskich muzeów w Europie."
+    ],
+    "summary_en": "The Neon Museum is a private gallery documenting post-war Polish neon signs. It opened in 2012 in the Pocisk ammunition hall at Soho Factory and in 2025 moved to the Palace of Culture and Science.",
+    "ludzie": [
+      {"kto": "Ilona Karwińska", "rola": "założycielka muzeum; w 2005 roku uratowała neon sklepu „Berlin”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Neonów"],
+    "zrodla": [{"tytul": "Wikipedia: Neon Muzeum", "url": "https://pl.wikipedia.org/wiki/Neon_Muzeum"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Muzeum prywatne (spółka z o.o.). Artykuł nie podaje adresu PKiN innego niż pl. Defilad 1."
+  }
+]

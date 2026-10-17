@@ -1,0 +1,29 @@
+[
+  {
+    "id": "aleja-harcerska",
+    "nazwa": "Aleja Harcerska",
+    "name_en": "Harcerska Avenue",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Aleja Harcerska",
+    "adres_historyczny": "ulica Harcerska",
+    "lat": 52.2696225,
+    "lon": 20.9774286,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja Harcerska, dawniej ulica Harcerska, ma prawie 250 metrów długości i jest ciągiem pieszo-rowerowym na Żoliborzu.",
+      "Biegnie północnym skrajem Parku Żołnierzy Żywiciela, łącząc ul. Sarmatów i ul. Czaki.",
+      "Ulica powstała w latach 20. XX wieku.",
+      "Nazwa pochodzi od harcerstwa, polskiego ruchu społecznego i wychowawczego dzieci i młodzieży, wzorowanego na skautingu i opartego na służbie, samodoskonaleniu i braterstwie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Aleja Harcerska is a pedestrian and cycle path of about 250 m in Żoliborz, on the northern edge of Park Żołnierzy Żywiciela. It was formerly called Harcerska Street and is named after the Polish Scouting movement.",
+    "ludzie": [],
+    "dawne_nazwy": ["ulica Harcerska"],
+    "zrodla": [{"tytul": "Warszawikia: Aleja Harcerska", "url": "https://warszawa.fandom.com/pl/wiki/Aleja_Harcerska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica wg nagłówka: Żoliborz. Artykuł nie zawiera historii budynków przy ulicy; rekord słabszy."
+  }
+]

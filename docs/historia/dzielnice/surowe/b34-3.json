@@ -1,0 +1,446 @@
+[
+  {
+    "id": "widok-towers",
+    "nazwa": "Widok Towers",
+    "name_en": "Widok Towers office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie (przy skrzyżowaniu z ul. Marszałkowską)",
+    "adres_historyczny": null,
+    "lat": 52.23065,
+    "lon": 21.01294,
+    "lokalizacja": "dokladna",
+    "okres": "2020–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek biurowy zbudowano w 2020 roku na miejscu biurowca spółki Universal, rozebranego w latach 2016–2017.",
+      "Budynek ma 28 kondygnacji nadziemnych i 3 podziemne, ze 158 miejscami parkingowymi, oraz osiem wind.",
+      "Wysokość całkowita i wysokość do dachu wynoszą 95 metrów.",
+      "Powierzchnia całkowita wynosi 28 600 m², a powierzchnia handlowo-usługowa 3600 m².",
+      "Budynek ma styl neomodernistyczny, z funkcją biurową jako główną oraz hotelarską i handlowo-usługową.",
+      "Powstał w ramach Ściany Wschodniej, nieopodal nowej rotundy PKO."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Widok Towers is a 95-metre neo-modernist office building on the north side of Aleje Jerozolimskie, completed in 2020 on the site of the demolished Universal office block. It has 28 storeys above ground and about 28,600 m² of floor space.",
+    "ludzie": [],
+    "dawne_nazwy": ["biurowiec Universal (rozebrany w 2016–2017)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Widok Towers", "url": "https://pl.wikipedia.org/wiki/Widok_Towers"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wielka-synagoga",
+    "nazwa": "Wielka Synagoga w Warszawie",
+    "name_en": "Great Synagogue of Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Tłomackie 7 (teren dawnej synagogi)",
+    "adres_historyczny": "pl. Tłomackie 7",
+    "lat": 52.244585,
+    "lon": 21.002398,
+    "lokalizacja": "dokladna",
+    "okres": "1878–1943",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga została uroczyście otwarta 26 września 1878 roku w święto Rosz ha-Szana.",
+      "Była symbolem judaizmu reformowanego Warszawy i jedną z najwspanialszych polskich budowli wzniesionych w XIX wieku.",
+      "Plac Tłomackie: 5 maja 1872 zakupiono od Józefa Simmlera dwie XVII-wieczne kamienice, które później wyburzono, oraz ok. 11 tysięcy łokci kwadratowych ogrodu pałacu Mniszchów.",
+      "Pierwszy konkurs architektoniczny rozpisano 22 maja 1872; termin nadsyłania prac upłynął 1 marca 1873, a przysłano 6 prac.",
+      "Pierwszą nagrodę w wysokości 750 rubli zdobył zespół Bronisław Żochowski i Teofil Lemke; drugą 300 rubli Jan Kacper Heurich.",
+      "Synagogę wysadził osobiście Jürgen Stroop 16 maja 1943, co było ostatnim aktem niszczenia getta żydowskiego w Warszawie."
+    ],
+    "ciekawostki": [
+      "Komitet budowy zamierzał wznieść synagogę przy ul. Bielańskiej, Świętojerskiej lub Długiej; ulica Długa odpadła ze względu na przepis z 1844 roku o odległości od cerkwi.",
+      "Władze zgodziły się w lutym 1861 roku na budowę pod warunkiem, że synagoga powstanie w pobliżu domów żydowskich."
+    ],
+    "summary_en": "The Great Synagogue of Warsaw stood at plac Tłomackie 7 and was solemnly opened on 26 September 1878. It was one of the finest 19th-century buildings in Poland and was blown up by Jürgen Stroop on 16 May 1943.",
+    "ludzie": [
+      {"kto": "Ludwik Natanson", "rola": "zgłosił propozycję budowy nowej synagogi (5 września 1859)", "wiki": null},
+      {"kto": "Bronisław Żochowski", "rola": "laureat I nagrody w konkursie z 1873 (wraz z Teofilem Lemke)", "wiki": null},
+      {"kto": "Teofil Lemke", "rola": "laureat I nagrody w konkursie z 1873 (wraz z Bronisławem Żochowskim)", "wiki": null},
+      {"kto": "Jan Kacper Heurich", "rola": "laureat II nagrody w konkursie z 1873", "wiki": null},
+      {"kto": "Jürgen Stroop", "rola": "wysadził synagogę 16 maja 1943", "wiki": null}
+    ],
+    "dawne_nazwy": ["Synagoga na placu Tłomackie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wielka Synagoga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wielka_Synagoga_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce ucięty w połowie zdania w części o drugim konkursie architektonicznym (1873); rekord oparty na treści, która jest. Stanisław Adamczewski, który w konkursie z czerwca 1873 początkowo wygrał projektem w stylu egipskim, pominięty jako nieistotny dla faktów."
+  },
+  {
+    "id": "wielki-salon-ogrod-saski",
+    "nazwa": "Wielki Salon (Altana) w Ogrodzie Saskim",
+    "name_en": "Great Salon (Altana) in the Saxon Garden",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Ogród Saski, Oś Saska, na tyłach Pałacu Saskiego (dziś trawnik)",
+    "adres_historyczny": null,
+    "lat": 52.23992,
+    "lon": 21.00451,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1724–1817",
+    "istnieje": false,
+    "fakty": [
+      "Wielki Salon wzniesiono na polecenie króla Augusta II Mocnego około 1724 roku.",
+      "Był to murowany gmach o wysokości ok. 21 metrów, z trzema dużymi prześwitami i lożami muzycznymi na piętrze.",
+      "Wejście na dach, będący jednocześnie tarasem, pozwalało podziwiać całą kompozycję Osi Saskiej.",
+      "Pawilon był wykorzystywany głównie do uroczystości dworskich, w czasie których rozsuwano dach i odpalano fajerwerki.",
+      "W 1775 i 1789 roku został wyremontowany; prawdopodobnie wtedy uproszczono jego architekturę i usunięto rzeźby z dachu i attyki.",
+      "Na początku XIX wieku był używany jako letni pawilon cukierni Lessla; w 1817 roku został zniszczony.",
+      "W 2017 inż. Radosław Gajda przedstawił w jednym ze swoich filmów pomysł odbudowy Wielkiego Salonu jako Pomnika Bitwy Warszawskiej."
+    ],
+    "ciekawostki": [
+      "Podczas jednego z występów doszło do niekontrolowanej eksplozji, która uszkodziła pawilon.",
+      "Projektant nie jest znany; przypuszczalnie mogli nim być Carl Friedrich Pöppelmann lub Zacharias Longuelune."
+    ],
+    "summary_en": "The Great Salon, known as the Altana, was a 21-metre garden pavilion in the Saxon Garden on the Saxon Axis, built for King Augustus II around 1724. It was destroyed in 1817, and today there is a lawn on the site.",
+    "ludzie": [
+      {"kto": "August II Mocny", "rola": "zlecił budowę pawilonu (ok. 1724)", "wiki": null},
+      {"kto": "Carl Friedrich Pöppelmann", "rola": "przypuszczalny projektant", "wiki": null},
+      {"kto": "Zacharias Longuelune", "rola": "przypuszczalny projektant", "wiki": null},
+      {"kto": "Radosław Gajda", "rola": "popularyzator architektury; pomysł odbudowy (2017)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Altana"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wielki Salon w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wielki_Salon_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wieza-biala",
+    "nazwa": "Wieża Biała",
+    "name_en": "White Tower (Wieża Biała)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "u wylotu ul. Kamienne Schodki (Stare Miasto)",
+    "adres_historyczny": "u wylotu ul. Kamienne Schodki, przy ujściu na Rybaki",
+    "lat": 52.2507,
+    "lon": 21.0125,
+    "lokalizacja": "dokladna",
+    "okres": "po 1379–połowa XIX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Wieża Biała była pierwotnie prostokątną basztą murów obronnych Starego Miasta, wybudowaną po roku 1379.",
+      "Bok baszty miał 4,5 metra szerokości, a wiodący ku niej odcinek ul. Kamienne Schodki – 3,5 metra.",
+      "W 1560 roku basztę przebudowano na bramę dla pieszych i podwyższono, dobudowując ośmiobocznej górnej części.",
+      "W końcu XVI wieku mieściła więzienie; w 1786 przeszła remont.",
+      "Ostatecznie wieżę rozebrano w połowie XIX wieku.",
+      "Dolne partie pierwotnej wieży odkryto podczas badań archeologicznych w latach 1952 i ok. 1960, a większość zniszczono podczas późniejszych remontów nawierzchni ul. Kamienne Schodki, ostatniego w 2002 roku."
+    ],
+    "ciekawostki": [
+      "Wieża nazywana była też Rybacką i Wiślaną.",
+      "Z roku 1496 pochodzi wzmianka o przejściu z Kamiennych Schodków na Rybaki, które wiodło zapewne przez Wieżę Białą lub prześwit w murze obok niej."
+    ],
+    "summary_en": "The White Tower was a gate-tower in the medieval walls of Warsaw's Old Town, at the foot of ul. Kamienne Schodki. It was turned into a pedestrian gate in 1560, used as a prison in the late 16th century, and dismantled in the mid-19th century.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wieża Rybacka", "Wieża Wiślana"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wieża Biała w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wie%C5%BCa_Bia%C5%82a_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "wieza-marszalkowska",
+    "nazwa": "Wieża Marszałkowska",
+    "name_en": "Marszałkowska Tower (Warsaw city walls)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "u zbiegu ul. Krzywe Koło i ul. Brzozowej",
+    "adres_historyczny": "u zbiegu ul. Krzywe Koło i ul. Brzozowej (północno-wschodni odcinek murów)",
+    "lat": 52.2512,
+    "lon": 21.0114,
+    "lokalizacja": "dokladna",
+    "okres": "po 1379–po 1808",
+    "istnieje": false,
+    "fakty": [
+      "Wieża powstała jako jeden z ostatnich elementów pierwszej, najstarszej linii murów Warszawy, wzniesiona po 1379 roku; pierwotnie nazywana Wieżą Okrągłą.",
+      "Flankowała ostatni odcinek podwójnego pierścienia murów miejskich, kończący się na Wieży Białej.",
+      "W 1591 roku w sąsiedztwie wieży powstał drewniany budynek szpitala św. Łazarza z kaplicą, od XVII wieku murowany.",
+      "Od 1627 roku wieża zmieniła nazwę na Marszałkowską; mieściło się w niej więzienie na Dekretowanych Sądem Marszałkowskim.",
+      "Po 1808 roku wieżę ostatecznie rozebrano; w 1832 roku sąsiedni szpital przeniesiono na plac Trzech Krzyży.",
+      "Po II wojnie światowej odtworzono dolne partie wieży jako dodatkowe wejście na Starówkę od strony ul. Brzozowej, z zakręconymi spiralnie schodkami."
+    ],
+    "ciekawostki": [
+      "Była najwyższą z wież tworzących system obronny Starej Warszawy.",
+      "Pomnik Syreny, rzeźba Konstantego Hegla, stanął na kamiennej przyporze Baszty Marszałkowskiej w lipcu 1972 roku; w 1999 przeniesiono go na Rynek Starego Miasta."
+    ],
+    "summary_en": "The Marszałkowska Tower was a city-wall tower at the north-eastern part of the old walls, near ul. Krzywe Koło and ul. Brzozowa. It was renamed in 1627 after a prison it housed and was dismantled after 1808; its lower part was partly reconstructed after WWII as a staircase into the Old Town.",
+    "ludzie": [
+      {"kto": "Konstanty Hegel", "rola": "autor rzeźby Syreny, która stanęła przy wieży w 1972", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wieża Okrągła"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wieża Marszałkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Wie%C5%BCa_Marsza%C5%82kowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-gawronskich",
+    "nazwa": "Willa Gawrońskich",
+    "name_en": "Gawroński Villa",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 23",
+    "adres_historyczny": null,
+    "lat": 52.22333333,
+    "lon": 21.02361111,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1924–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwupiętrowy budynek wzniesiono przed 1924 rokiem według projektu Marcina Weinfelda w stylu neobarokowym.",
+      "W okresie międzywojennym mieściło się tu Poselstwo i Konsulat Holenderski (1938–1939) oraz Poselstwo Belgii (1934–1939).",
+      "W czasie okupacji willa była siedzibą dowódcy SS i Policji na dystrykt warszawski.",
+      "1 lutego 1944 przed budynkiem żołnierze oddziału „Pegaz” Armii Krajowej dokonali udanego zamachu na Franza Kutscherę.",
+      "Budynek spłonął w 1944 roku; po wojnie został odbudowany, stracił część dekoracji i mansardowy dach.",
+      "Po odbudowie przekazano go ambasadzie Stanów Zjednoczonych (1948–1953), następnie ambasadzie Jugosławii (1953–2006).",
+      "W maju 2024 roku w willi odbyła się wystawa NADA Villa Warsaw; kilka miesięcy później willę kupili Katarzyna Jordan i Gregory Jankilevitsch."
+    ],
+    "ciekawostki": [
+      "Wystawa NADA Villa Warsaw w 2024 roku prezentowała prace sztuki współczesnej z zasobów 44 galerii z różnych państw."
+    ],
+    "summary_en": "The Gawroński Villa at Aleje Ujazdowskie 23 is a two-storey neo-baroque building designed by Marcin Weinfeld before 1924. It housed several embassies, was the seat of the SS and police chief in Warsaw during the occupation, and was burned in 1944.",
+    "ludzie": [
+      {"kto": "Marcin Weinfeld", "rola": "autor projektu budynku (przed 1924)", "wiki": null},
+      {"kto": "Franz Kutscher", "rola": "dowódca SS i Policji na dystrykt warszawski; cel zamachu z 1 lutego 1944", "wiki": null},
+      {"kto": "Helena Weinfeld i Szymon Syrkus", "rola": "być może autorzy projektu odbudowy (artykuł podaje to jako przypuszczenie)", "wiki": null},
+      {"kto": "Katarzyna Jordan i Gregory Jankilevitsch", "rola": "kupujący willę (2024)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Gawrońskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Gawro%C5%84skich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W tytule artykułu znak zapytania przy nazwie. Odbudowa po wojnie: autorstwo projektu podane w artykule jako „być może”."
+  },
+  {
+    "id": "willa-lilpopa",
+    "nazwa": "Willa Lilpopa",
+    "name_en": "Lilpop Villa",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Ujazdowskie 29 (na miejscu nowego budynku ambasady USA)",
+    "adres_historyczny": "al. Ujazdowskie 29",
+    "lat": 52.224503,
+    "lon": 21.02325,
+    "lokalizacja": "dokladna",
+    "okres": "1852–1963",
+    "istnieje": false,
+    "fakty": [
+      "Willę zaprojektował Jan Heurich w 1852 roku dla Stanisława Lilpopa.",
+      "Kolejnymi właścicielami były rodziny Radziwiłłów, Branickich i Czetwertyńskich.",
+      "W okresie międzywojennym willa mieściła ambasadę USA (1936–1939).",
+      "W czasie II wojny światowej działała jako pensjonat „Albert Freyer Haus”, w którym gościł m.in. Hans Frank (1940).",
+      "W 1956 roku, na mocy umowy PRL i USA, willę wraz z Willą Wernickiego przekazano stronie amerykańskiej.",
+      "W 1963 roku oba obiekty rozebrano i na ich miejscu wybudowano nowy budynek ambasady."
+    ],
+    "ciekawostki": [
+      "Hans Frank gościł w pensjonacie w 1940 roku."
+    ],
+    "summary_en": "The Lilpop Villa at Aleje Ujazdowskie 29 was designed by Jan Heurich in 1852. It housed the US embassy in 1936–1939 and was handed to the Americans in 1956; it was demolished in 1963 to make way for a new embassy building.",
+    "ludzie": [
+      {"kto": "Jan Heurich", "rola": "autor projektu willy (1852)", "wiki": null},
+      {"kto": "Stanisław Lilpop", "rola": "zleceniodawca willy (1852)", "wiki": null},
+      {"kto": "Hans Frank", "rola": "gość pensjonatu „Albert Freyer Haus” (1940)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Albert Freyer Haus"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Lilpopa", "url": "https://pl.wikipedia.org/wiki/Willa_Lilpopa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-muszynskiego-i-urbanowicza",
+    "nazwa": "Willa Muszyńskiego i Urbanowicza",
+    "name_en": "Muszyński and Urbanowicz Villa",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Klonowa 6/8",
+    "adres_historyczny": null,
+    "lat": 52.212722,
+    "lon": 21.024917,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwurodzinny budynek zaprojektował Bohdan Pniewski w latach 1935–1936 dla adwokata Stefana Urbanowicza i inżyniera Leszka Muszyńskiego.",
+      "Willa powstała w stylu „ekskluzywnego funkcjonalizmu”, zbliżonym do architektury Franka Lloyda Wrighta.",
+      "Elewację i ogrodzenie obłożono rustyką z piaskowca; we wnętrzach zastosowano marmury „Dębnik”, „Barwinek” i „Racławice”.",
+      "Po II wojnie światowej willę przejął Skarb Państwa; w 1989 roku znalazła się w zarządzie Kancelarii Prezydenta.",
+      "W czasie prezydentury Lecha Wałęsy połowę budynku (nr 8) zwrócono potomkom Urbanowicza.",
+      "W 1991 roku willa i ogrodzenie zostały wpisane do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na płaskim dachu budynku powstały tarasy rekreacyjne.",
+      "Pod nr 6 ulokowano biura Ministerstwa Obrony Narodowej."
+    ],
+    "summary_en": "The Muszyński and Urbanowicz Villa at ul. Klonowa 6/8 is a two-family functionalist house designed by Bohdan Pniewski in 1935–1936, with a sandstone-clad facade. It was listed as a historic monument in 1991.",
+    "ludzie": [
+      {"kto": "Bohdan Pniewski", "rola": "autor projektu (1935–1936)", "wiki": null},
+      {"kto": "Stefan Urbanowicz", "rola": "adwokat, pierwszy inwestor (właściciel połowy nr 8)", "wiki": null},
+      {"kto": "Leszek Muszyński", "rola": "inżynier, pierwszy inwestor", "wiki": null},
+      {"kto": "Lech Wałęsa", "rola": "prezydent, w czasie prezydentury zwrócono połowę budynku potomkom Urbanowicza", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Muszyńskiego i Urbanowicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Muszy%C5%84skiego_i_Urbanowicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-narutowicza",
+    "nazwa": "Willa Narutowicza",
+    "name_en": "Narutowicz Villa",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Parkowa 23",
+    "adres_historyczny": null,
+    "lat": 52.21,
+    "lon": 21.030639,
+    "lokalizacja": "dokladna",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willę zaprojektował w 1921 roku Marian Kontkiewicz dla Gabriela Narutowicza, pierwszego Prezydenta Rzeczypospolitej Polskiej.",
+      "Narutowicz mieszkał w niej od zaprzysiężenia 11 grudnia 1922 roku do swojej śmierci 16 grudnia 1922 roku.",
+      "W 1944 roku budynek uległ znacznemu zniszczeniu.",
+      "Po wojnie willa przeszła na własność Skarbu Państwa; w latach 1964–2000 mieściła się tu Szkoła Pielęgniarstwa nr 1.",
+      "Nieruchomość wpisano do rejestru zabytków w 2009 roku.",
+      "31 maja 2011 roku zarząd województwa podjął decyzję o wynajęciu nieruchomości fundacji Instytut Lecha Wałęsy na 15 lat; umowę podpisano 4 czerwca 2011 roku.",
+      "W kwietniu 2015 roku zarząd województwa rozwiązał umowę najmu w trybie natychmiastowym."
+    ],
+    "ciekawostki": [
+      "Na działce rośnie pomnik przyrody – topola czarna zwana „Topolą Narutowicza”.",
+      "Budynek bywa mylony z domem Narutowicza w Łazienkach Królewskich, gdzie mieszkał służbowo przed przeprowadzką w grudniu 1922 roku."
+    ],
+    "summary_en": "The Narutowicz Villa at ul. Parkowa 23 was designed by Marian Kontkiewicz in 1921 for Gabriel Narutowicz, Poland's first president, who lived there for the few days before his death in December 1922. The house was listed as a monument in 2009 and was later leased to the Lech Wałęsa Institute.",
+    "ludzie": [
+      {"kto": "Marian Kontkiewicz", "rola": "autor projektu (1921)", "wiki": null},
+      {"kto": "Gabriel Narutowicz", "rola": "pierwszy Prezydent RP, mieszkaniec willi", "wiki": null},
+      {"kto": "Adam Struzik", "rola": "marszałek województwa, podpisał umowę najmu (2011)", "wiki": null},
+      {"kto": "Lech Wałęsa", "rola": "patron Instytutu, który wynajął budynek w 2011", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Narutowicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Narutowicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Podobna, nieco mniejsza willa według projektu Kontkiewicza powstała w Rabce."
+  },
+  {
+    "id": "willa-pniewskiego",
+    "nazwa": "Willa Pniewskiego (Muzeum Ziemi PAN)",
+    "name_en": "Pniewski Villa (Museum of the Earth, PAS)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Na Skarpie 27",
+    "adres_historyczny": null,
+    "lat": 52.2289,
+    "lon": 21.0278,
+    "lokalizacja": "dokladna",
+    "okres": "1779–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie był to murowany pawilon nazywany „pałacem Letnim”, część założenia parkowego Na Górze, wzniesiony w latach 1779–1781 według projektu Szymona Bogumiła Zuga.",
+      "W późniejszym okresie, gdy właścicielami byli Radziwiłłowie, budynkowi przypisywano funkcję siedziby loży masońskiej.",
+      "Bohdan Pniewski kupił budynek od rodziny Branickich i gruntownie przebudował go w latach 1934–1935 na dom własny.",
+      "W 1944 roku w czasie powstania warszawskiego willa przechodziła z rąk do rąk; 12 września ostrzeliwał z niej czołgi niemieckie nieznany z nazwiska powstaniec z obsługi Piata.",
+      "W 1965 roku budynek wpisano do rejestru zabytków.",
+      "W 1966 roku willę kupiła Polska Akademia Nauk od spadkobierców Pniewskiego na cele muzealne."
+    ],
+    "ciekawostki": [
+      "Na klatce schodowej znaleziono zakrzepnięte ślady krwi powstańca; w 1980 roku PAN umieściła tablicę, w 2004 roku ślady przykryto szklaną taflą.",
+      "Napis na frontowej fasadzie został według artykułu odczytany jako „Pnący się przebudował świątynię masonów i zamieszkał w niej”."
+    ],
+    "summary_en": "The Pniewski Villa on al. Na Skarpie 27 began as an 18th-century pavilion called the Summer Palace. Architect Bohdan Pniewski rebuilt it in 1934–1935 as his own home, and since 1966 it has housed the Museum of the Earth of the Polish Academy of Sciences.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu pawilonu (1779–1781)", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "architekt; przebudowa na dom własny (1934–1935)", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Letni"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa Pniewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_Pniewskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-na-myslieckiej-12",
+    "nazwa": "Willa przy ul. Myśliwieckiej 12",
+    "name_en": "Villa at 12 Myśliwiecka Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Myśliwiecka 12",
+    "adres_historyczny": null,
+    "lat": 52.223694,
+    "lon": 21.032264,
+    "lokalizacja": "dokladna",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willę zbudowano w 1923 roku według projektu jej pierwszego właściciela, prof. Rudolfa Świerczyńskiego, który mieszkał w niej i miał tu swoją pracownię.",
+      "Łączy elementy modernizmu, np. stalowy balkon w stylu Le Corbusiera, z neogotyckimi sklepieniami w hallu wejściowym.",
+      "Dom stoi na skarpie wiślanej, po przeciwnej stronie ulicy jest park.",
+      "Spalony podczas II wojny światowej, został odbudowany w 1947 roku.",
+      "W 2007 roku willę pieczołowicie odrestaurowano z myślą o luksusowym mini hotelu butikowym.",
+      "Dom do dziś jest własnością rodziny Świerczyńskich."
+    ],
+    "ciekawostki": [
+      "Świerczyński założył wokół domu mały ogród botaniczny, słynący z tulipanów, róż i niezapominajek; przetrwały w nim rzadkie drzewa i krzewy."
+    ],
+    "summary_en": "The villa at 12 Myśliwiecka Street was built in 1923 to a design by architect and botanist Rudolf Świerczyński, who lived and worked there. It mixes modernist and neo-Gothic details, was burned in World War II, rebuilt in 1947, and is still owned by his family.",
+    "ludzie": [
+      {"kto": "Rudolf Świerczyński", "rola": "autor projektu i pierwszy właściciel (1923)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Willa przy ulicy Myśliwieckiej 12 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Willa_przy_ulicy_My%C5%9Bliwieckiej_12_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wodozbior-lazienki",
+    "nazwa": "Wodozbiór w Łazienkach Królewskich",
+    "name_en": "Water reservoir in the Royal Baths Park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Park Łazienkowski (Łazienki Królewskie)",
+    "adres_historyczny": null,
+    "lat": 52.215522222,
+    "lon": 21.029752777,
+    "lokalizacja": "dokladna",
+    "okres": "1777–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Architektoniczną obudowę w formie walca wzniesiono w 1777 roku; budynek służył jako zbiornik wody, ale mieścił też pomieszczenia mieszkalne otwierające się na dziedziniec.",
+      "Wodę spływającą z okolicznych źródeł gromadzono w miejscu, w którym stoi budynek, i drewnianymi rurami odprowadzano ją do fontanny oraz łaźni.",
+      "W 1827 roku budynek udekorowano według projektu Piotra Aignera na wzór grobowca Cecylii Metelli przy Via Appia pod Rzymem.",
+      "Architekt dodał mu dwukolumnowy portyk oraz gzyms ozdobiony motywem wolich czaszek.",
+      "W 2019 roku zakończono remont, podczas którego przywrócono historyczne wnętrza, m.in. odtworzono polichromie i odsłonięto drewnianą rynnę odprowadzającą wodę z dziedzińca."
+    ],
+    "ciekawostki": [
+      "Na dziedzińcu znajdowała się studnia, z której woda wypływała do kanału odprowadzającego ją do północnego stawu.",
+      "Wodozbiór z ceglaną elewacją uwieczniono na akwareli Zygmunta Vogla z lat 1794–1795."
+    ],
+    "summary_en": "The Water Reservoir in the Royal Baths Park is a cylindrical building from 1777 that collected spring water for the park's fountain and baths. It was given a classical portico and decoration in 1827 by Piotr Aigner and restored in 2019.",
+    "ludzie": [
+      {"kto": "Piotr Aigner", "rola": "autor projektu dekoracji z 1827 roku", "wiki": null},
+      {"kto": "Zygmunt Vogel", "rola": "autor akwareli z lat 1794–1795 przedstawiającej budynek", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wodozbiór w Łazienkach Królewskich", "url": "https://pl.wikipedia.org/wiki/Wodozbi%C3%B3r_w_%C5%81azienkach_Kr%C3%B3lewskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

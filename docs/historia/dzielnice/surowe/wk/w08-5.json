@@ -1,0 +1,31 @@
+[
+  {
+    "id": "katedra-sw-ducha-szwolezerow-2",
+    "nazwa": "Katedra św. Ducha (Kościół Polskokatolicki)",
+    "name_en": "Cathedral of the Holy Spirit (Polish National Catholic Church)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Szwoleżerów 2",
+    "adres_historyczny": "Hoża 39 (siedziba parafii przed II wojną światową)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia powstała tuż przed II wojną światową; jej siedziba znajdowała się przy ul. Hożej 39.",
+      "W 1945 roku siedzibę parafii przeniesiono do świątyni przy ul. Szwoleżerów 2.",
+      "Od 25 kwietnia 1945 roku parafia jest oficjalnie parafią katedralną.",
+      "Plebania parafii znajduje się przy ul. Szwoleżerów 4."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Cathedral of the Polish National Catholic Church at Szwoleżerów 2 in Śródmieście, the seat of the parish since 1945. The parish was formed just before the Second World War at Hoża 39, and its presbytery is at Szwoleżerów 4.",
+    "ludzie": [
+      {"kto": "Henryk Dąbrowski", "rola": "proboszcz parafii katedralnej (wg artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Parafia św. Ducha", "url": "https://warszawa.fandom.com/pl/wiki/Parafia_św._Ducha"}],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord dotyczy katedry opisanej w artykule o parafii; historia samego budynku w tekście jest skąpa. Brak współrzędnych, lat/lon null."
+  }
+]

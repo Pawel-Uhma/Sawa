@@ -1,0 +1,152 @@
+[
+  {
+    "id": "ulica-goluchowska",
+    "nazwa": "Ulica Gołuchowska",
+    "name_en": "Gołuchowska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Gołuchowska",
+    "adres_historyczny": null,
+    "lat": 52.2495409,
+    "lon": 20.9175029,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 80. XX wieku, kiedy zredukowano obszar lotniska Warszawa-Babice pod budowę pięciu osiedli mieszkaniowych.",
+      "Nazwę nadano Uchwałą nr 60 Rady Narodowej Miasta Stołecznego Warszawy z 22 lutego 1980 roku; odwołuje się ona do miejscowości Gołuchów lub Gołuchowo.",
+      "W latach 1984-1988 na 13. piętrze bloku przy ul. Gołuchowskiej 9 mieściła się prowizoryczna plebania księży michalitów z powstającej wówczas parafii Matki Bożej Królowej Aniołów przy ul. Markiewicza.",
+      "Ulica łączy ul. Wrocławską z ul. Radiową i krzyżuje się też z ul. Secemińską."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street of the Bemowo I estate in Bemowo-Lotnisko, laid out in the 1980s. Between 1984 and 1988 a temporary parish rectory of the Michalites was located on the 13th floor of a block at no. 9.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Gołuchowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Gołuchowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-grotowska",
+    "nazwa": "Ulica Grotowska",
+    "name_en": "Grotowska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Grotowska",
+    "adres_historyczny": "ul. Parkowa",
+    "lat": 52.2654946,
+    "lon": 20.8985035,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała pomiędzy lipcem a listopadem 1933 roku jako jedna z ulic nowo powstającego Osiedla Łączności Babice; nadano jej wówczas nazwę Parkowa, bo biegła wzdłuż granicy lasu, który w dwudziestoleciu międzywojennym był płatnym parkiem.",
+      "W willi przy ul. Parkowej 15 zamieszkał minister poczt i telegrafów Ignacy August Boerner wraz z żoną Zofią.",
+      "Na mocy Uchwały nr 15 Rady Narodowej Miasta Stołecznego Warszawy z 20 maja 1954 roku nazwę zmieniono na obecną, która nawiązuje do dawnej wsi Groty.",
+      "Przy skrzyżowaniach z ul. Kleeberga i ul. Westerplatte znajdują się wejścia do Lasu Bemowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street of Boernerowo in Bemowo, opened in 1933 as Parkowa, along the edge of the forest that was a paid park between the wars. In 1954 it was renamed after the former village of Groty.",
+    "ludzie": [
+      {"kto": "Ignacy August Boerner", "rola": "minister poczt i telegrafów RP, mieszkał w willi przy ul. Parkowej 15", "wiki": null},
+      {"kto": "Zofia Boerner", "rola": "żona ministra Ignacego Augusta Boernera", "wiki": null}
+    ],
+    "dawne_nazwy": ["Parkowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Grotowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Grotowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-hery",
+    "nazwa": "Ulica Hery",
+    "name_en": "Hery Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Hery",
+    "adres_historyczny": null,
+    "lat": 52.2477068,
+    "lon": 20.9106099,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 80. XX wieku na terenach przyległych do Wojskowej Akademii Technicznej.",
+      "Nazwę ulicy nadano 26 maja 1988 roku; upamiętnia ona Herę, jedną z bogiń starożytnej mitologii greckiej.",
+      "Jest to najważniejsza ulica wspólnoty mieszkaniowej „Akropol”.",
+      "Krzyżuje się z ul. Radiową, Apollina, Zeusa, Elektry, Posejdona, Prometeusza, Artemidy oraz z ul. Powstańców Śląskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The main street of the Akropol housing community in Bemowo-Lotnisko, built in the 1980s next to the Military University of Technology. It is named after Hera, the Greek goddess.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Hery", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Hery"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-himalajska",
+    "nazwa": "Ulica Himalajska",
+    "name_en": "Himalajska Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Himalajska",
+    "adres_historyczny": null,
+    "lat": 52.2544209,
+    "lon": 20.9098201,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 80. XX wieku, kiedy zredukowano obszar lotniska Warszawa-Babice pod budowę pięciu osiedli mieszkaniowych.",
+      "Nazwę nadano Uchwałą nr 60 Rady Narodowej Miasta Stołecznego Warszawy z 22 lutego 1980 roku; nawiązuje ona do łańcucha górskiego w Azji.",
+      "Ulica biegnie wzdłuż wschodniej granicy lotniska Babice; znajdują się przy niej wyłącznie garaże samochodowe oraz, pod adresem Himalajska 1, Stacja Kontroli Pojazdów.",
+      "Zaczyna się od skrzyżowania z ul. Radiową, krzyżuje się z ul. Andyjską, a na drugim końcu łączy się z ul. Zachodzącego Słońca."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street along the eastern boundary of the former Warsaw-Babice airport, now lined with garages and a vehicle inspection station at no. 1. It is named after the Himalayas.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Himalajska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Himalajska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu. Artykuł podaje nazwę „łańcuch górski w Azji”, nie wymienia Himalajów wprost."
+  },
+  {
+    "id": "ulica-kartezjusza",
+    "nazwa": "Ulica Kartezjusza",
+    "name_en": "Kartezjusza Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Kartezjusza",
+    "adres_historyczny": null,
+    "lat": 52.2540131,
+    "lon": 20.8938146,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica początkowo była bezimienna i stanowiła doprowadzenie połączenia między kotłownią na ul. Gąsiorowskiego a stadionem WAT-owskim.",
+      "Nazwę nadano 24 listopada 1961 roku; patronem jest Kartezjusz, francuski matematyk i filozof żyjący w latach 1596-1650.",
+      "Po upadku PRL ulica została wyremontowana i pełniła rolę objazdu w czasie remontu ul. Kaliskiego.",
+      "Obecnie ulica jest wyłożona asfaltem i prowadzi ruch do osiedli; ruch autobusowy został zdjęty po remontach i nie planuje się jego przywrócenia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street of the Fort Radiowo estate in Bemowo, bearing the name of René Descartes since 24 November 1961. It was once a detour route during repairs of ul. Kaliskiego.",
+    "ludzie": [
+      {"kto": "Kartezjusz", "rola": "patron ulicy, francuski matematyk i filozof (1596-1650)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Kartezjusza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kartezjusza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  }
+]

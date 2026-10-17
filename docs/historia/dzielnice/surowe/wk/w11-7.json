@@ -1,0 +1,178 @@
+[
+  {
+    "id": "ulica-piekarska",
+    "nazwa": "ulica Piekarska",
+    "name_en": "Piekarska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piekarska",
+    "adres_historyczny": null,
+    "lat": 52.2485289,
+    "lon": 21.011199,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIII i XIV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała równocześnie ze Starym Miastem i była drogą wychodzącą z południowo-zachodniego skraju rynku w kierunku murów miejskich i baszty.",
+      "W XV wieku ulicę opanowali piekarze, stąd nazwa związana z wypiekiem chleba.",
+      "Od XVI wieku na jej końcu znajdowało się tzw. Piekiełko, miejsce wymierzania kary śmierci.",
+      "26 listopada 1620 roku wykonano tam wyrok na Michale Piekarskim, który zamachnął się na króla Zygmunta III Wazę.",
+      "W 1772 roku pojawił się wyjazd na Podwale.",
+      "Cała zabudowa legła w gruzach w 1944 roku, a została odbudowana do 1961 roku.",
+      "Po wojnie przy wylocie ulicy stanął przeniesiony z placu Krasińskich Pomnik Jana Kilińskiego."
+    ],
+    "ciekawostki": [
+      "W czerwcu 2011 roku na ścianie kamienicy przy Piekarskiej 5 odsłonięto tablicę upamiętniającą Michalinę Wisłocką, lekarza-seksuologa i autorkę „Sztuki kochania”, która mieszkała tu przez wiele lat."
+    ],
+    "summary_en": "Piekarska is a 120-metre street in the Old Town running from Piwna to Podwale. It is named after the bakers who settled here in the 15th century. Its buildings were destroyed in 1944 and rebuilt by 1961, and a monument to Jan Kiliński stands at its western end.",
+    "ludzie": [
+      {"kto": "Michał Piekarski", "rola": "stracony 26 listopada 1620 roku za zamach na króla Zygmunta III Wazę", "wiki": null},
+      {"kto": "Zygmunt III Waza", "rola": "król, na którego zamachnął się Michał Piekarski", "wiki": null},
+      {"kto": "Michalina Wisłocka", "rola": "lekarz-seksuolog, autorka „Sztuki kochania”, mieszkała przy ulicy; tablica z 2011 roku", "wiki": null},
+      {"kto": "Jan Kiliński", "rola": "pomnik przeniesiony z placu Krasińskich stoi przy wylocie ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Piekarska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Piekarska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje Stare Miasto jako część miasta; rekord przypisany do Śródmieścia zgodnie z nagłówkiem DZIELNICE."
+  },
+  {
+    "id": "ulica-piwna",
+    "nazwa": "ulica Piwna",
+    "name_en": "Piwna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piwna",
+    "adres_historyczny": "Św. Marcina (część wschodnia do XVIII wieku); Marcinkańska; Mnichów; Szynkarska; Gołębia",
+    "lat": 52.2487366,
+    "lon": 21.0120947,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIII i XIV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica wytyczona została jednocześnie z lokacją Starej Warszawy.",
+      "Od 1354 roku przy ulicy mieści się kościół przyklasztorny św. Marcina (augustianów); faktycznie ulicą jest od około 1439 roku.",
+      "W 1478 roku ulicę nawiedził pożar, który strawił niemal wszystko oprócz klasztoru augustianów.",
+      "Od 1743 roku całość nazywana jest Piwną.",
+      "Zabudowania zniszczone w czasie II wojny światowej odbudowano w latach 1952–1954.",
+      "W 2013 roku nawierzchnię ulicy wyremontowano."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od istniejącego niegdyś przy ulicy browaru, produkującego piwo.",
+      "Przez blisko 50 lat w kamienicy nr 25 mieszkał Bronisław Geremek; upamiętnia to tablica odsłonięta w 2009 roku."
+    ],
+    "summary_en": "Piwna is a 260-metre street in the Old Town, running from Plac Zamkowy to Wąski Dunaj. It is the longest street in the Old Town and is closed to traffic. Its name comes from a brewery that once stood here, and it is lined with restored tenements and the St Martin's church.",
+    "ludzie": [
+      {"kto": "Tadeusz Łomnicki", "rola": "mieszkał w kamienicy nr 23 (tablica pamiątkowa)", "wiki": null},
+      {"kto": "Bronisław Geremek", "rola": "mieszkał przez blisko 50 lat w kamienicy nr 25 (tablica z 2009 roku)", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "mieszkał w kamienicy nr 31", "wiki": null}
+    ],
+    "dawne_nazwy": ["Św. Marcina (część wschodnia do XVIII wieku)", "Marcinkańska", "Mnichów", "Szynkarska", "Gołębia"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Piwna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Piwna"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-podwale",
+    "nazwa": "ulica Podwale",
+    "name_en": "Podwale Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Podwale",
+    "adres_historyczny": "Zawale; Na Wale; Przywale; Wał",
+    "lat": 52.2481781,
+    "lon": 21.0110332,
+    "lokalizacja": "przyblizona",
+    "okres": "XIII–XIV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała zapewne wraz z lokacją Starej Warszawy i usypaniem wałów obronnych, od których pochodzą pierwsze nazwy: Podwale, Zawale, Na Wale, Przywale, Wał.",
+      "Od 1388 roku na rogu ul. Nowomiejskiej znajdował się szpital św. Ducha.",
+      "Dopiero w 1638 roku przy południowej pierzei powstała jurydyka Kapitulna.",
+      "W 1794 roku na ulicy toczyły się walki insurekcji warszawskiej.",
+      "W latach 1881–1908 Podwalem biegła linia tramwaju konnego.",
+      "W 1916 roku w pałacu przy Podwalu 15 swój początek miało Muzeum Narodowe.",
+      "13 sierpnia 1944 roku na ul. Podwale wprowadzono zdobyczny pojazd pancerny, który eksplodował, zabijając około 300 osób.",
+      "Południową pierzeję zrekonstruowano w latach 1949–1953 według projektu Jana Redy."
+    ],
+    "ciekawostki": [
+      "Na rogu ul. Senatorskiej stoi kamień upamiętniający oficerów Wojska Polskiego zamordowanych w Katyniu i innych miejscach Związku Radzieckiego; po konserwacji w 2012 roku stanął bliżej pl. Zamkowego.",
+      "Dawniej podobną nazwę, Podwalna, nosiła ul. Brzozowa."
+    ],
+    "summary_en": "Podwale is a 500-metre street in the Old Town that follows the city walls from Senatorska to Nowomiejska. Its name comes from the earthen ramparts built with the town's founding. The explosion of a captured armoured vehicle here in August 1944 killed about 300 people, and the southern frontage was rebuilt in 1949–1953.",
+    "ludzie": [
+      {"kto": "Jan Reda", "rola": "projektant rekonstrukcji południowej pierzei w latach 1949–1953", "wiki": null},
+      {"kto": "Tadeusz Komorowski „Bór”", "rola": "przebywał w pobliskim pałacu Raczyńskich w czasie wybuchu pojazdu 13 sierpnia 1944 roku i został ranny", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zawale", "Na Wale", "Przywale", "Wał"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Podwale", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Podwale"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje okres powstania „XIII – XIV wiek”. Rekord przypisany do Śródmieścia zgodnie z nagłówkiem DZIELNICE."
+  },
+  {
+    "id": "ulica-pokorna",
+    "nazwa": "ulica Pokorna",
+    "name_en": "Pokorna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Pokorna",
+    "adres_historyczny": null,
+    "lat": 52.2539113,
+    "lon": 20.993653,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek lub wcześniej–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga na śladzie ul. Pokornej istniała już w XVIII wieku jako przedłużenie Nalewek do Cuchthauzu; nazwę Pokorna zatwierdzono w 1770 roku.",
+      "Nazwa pochodzi od domu poprawy dla moralnie zepsutych osób, który mieścił się przy Cuchthauzie.",
+      "W 1824 roku wzdłuż zachodniej części ulicy, na zapleczu Cuchthauzu, wytyczono plac Broni.",
+      "W 1833 roku ulokował się tu Szpital Starozakonnych, rozbudowany w latach 1835–1838 według projektu Henryka Marconiego.",
+      "W 1875 roku w trzeciej fazie wyburzeń zostawiono jedynie zabudowę na odcinku Muranowska–Stawki oraz budynek szpitala żydowskiego.",
+      "Zabudowa ul. Pokornej uległa niemal całkowitemu zniszczeniu podczas II wojny światowej.",
+      "W 2012 roku ulicę wyremontowano: historyczne kocie łby wymieniono na asfalt, a przy ul. Inflanckiej powstało rondo."
+    ],
+    "ciekawostki": [
+      "Pojawiła się propozycja, by przedłużeniu ulicy nadać nazwę „Braci Lothów”, współzałożycieli klubu Polonia Warszawa."
+    ],
+    "summary_en": "Pokorna is a 150-metre street on Muranów, running from Stawki to Inflancka. Its name comes from a house of correction at the Cuchthaus, approved in 1770. Most of its buildings were destroyed in the Second World War, and the street was resurfaced and given a roundabout in 2012.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant rozbudowy Szpitala Starozakonnych w latach 1835–1838", "wiki": null},
+      {"kto": "Stanisław Hempel", "rola": "projektant zajezdni autobusowej „Inflancka”, której budowę rozpoczęto w 1938 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Pokorna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Pokorna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje ulicę jako klasy drogi lokalnej, na Muranowie; rekord przypisany do Śródmieścia zgodnie z nagłówkiem DZIELNICE."
+  },
+  {
+    "id": "ulica-poznanska",
+    "nazwa": "ulica Poznańska",
+    "name_en": "Poznańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Poznańska",
+    "adres_historyczny": "Wielka (część ulicy, do 1922 roku)",
+    "lat": 52.2267429,
+    "lon": 21.0110373,
+    "lokalizacja": "przyblizona",
+    "okres": "II połowa XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w II połowie XIX wieku w związku z rozwojem południowej części Śródmieścia po otwarciu dworca kolei warszawsko-wiedeńskiej.",
+      "Pierwotnie była częścią ul. Wielkiej, którą w 1922 roku podzielono na trzy części, w tym ul. Poznańską.",
+      "W 2010 roku ulicę wyremontowano; podczas prac odkryto dawną kostkę brukową, którą przywrócono.",
+      "Nazwa pochodzi od miasta Poznań, ale nie jest z nim związana; ulica biegnie w układzie północ–południe.",
+      "Poznańska 21 to zrujnowana kamienica, najstarszy murowany budynek południowego Śródmieścia.",
+      "Poznańska 15 to zabytkowa kamienica Glassów, dawniej ambasada ZSRR."
+    ],
+    "ciekawostki": [
+      "Na rogu ul. Poznańskiej i Nowogrodzkiej znajdowała się dawniej stacja końcowa Elektrycznej Kolejki Dojazdowej."
+    ],
+    "summary_en": "Poznańska is a 700-metre one-way street in Śródmieście Południowe, running from Piękna and Lwowska to Aleje Jerozolimskie. It was laid out in the second half of the 19th century after the Warsaw-Vienna railway station opened, and was cut out of the older Wielka street in 1922.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wielka (część ulicy, do 1922 roku)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Poznańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Poznańska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek podaje Śródmieście Południowe; rekord przypisany do Śródmieścia zgodnie z nagłówkiem DZIELNICE."
+  }
+]

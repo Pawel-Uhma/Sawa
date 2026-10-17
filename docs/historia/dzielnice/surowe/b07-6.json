@@ -1,0 +1,330 @@
+[
+  {
+    "id": "kanal-mlocinski",
+    "nazwa": "Kanał Młociński",
+    "name_en": "Młociński Canal",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Rów Młociński (nazwa alternatywna)",
+    "lat": 52.318611111,
+    "lon": 20.929444444,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kanał został wykopany po II wojnie światowej.",
+      "Początek kanału znajduje się w okolicach bagna Łuże w gminie Izabelin, na terenie Kampinoskiego Parku Narodowego; przebiega głównie w kierunku wschodnim.",
+      "Kanał mija Laski i przechodzi pod ulicami Trenów i Estrady; na krótkim odcinku jest fragmentem administracyjnej granicy Warszawy, ustanowionej w 1951 roku.",
+      "W Warszawie przebiega przez Bielany i obszar MSI Młociny, przez Las Młociński, przepustem pod ulicą Pułkową, potem przez park Młociński, i uchodzi do Wisły.",
+      "W okolicach ujścia znajdował się Suchy Staw o powierzchni ok. 0,5 ha, osuszony na przełomie lat 70. i 80. XX wieku.",
+      "Długość kanału wynosi 5,5 km, z czego 3,15 km to odcinek warszawski.",
+      "W XXI wieku kanał zaczął często wysychać."
+    ],
+    "ciekawostki": [
+      "Według artykułu kanał miał wpływ na degradację cennych przyrodniczo bagien Puszczy Kampinoskiej i na osuszenie warszawskich terenów leśnych."
+    ],
+    "summary_en": "The Młociński Canal is a 5.5 km drainage ditch, 3.15 km of it in Warsaw, dug after the Second World War from the Łuże marsh near Laski to the Vistula. It drained forest land and the Kampinos bogs, and in the 21st century it often runs dry.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Rów Młociński (nazwa alternatywna)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kanał Młociński", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_M%C5%82oci%C5%84ski"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł głównie hydrologiczny (przepływ, zlewnia). Współrzędne z nagłówka (52.318611111, 20.929444444)."
+  },
+  {
+    "id": "kosciol-zeslania-ducha-swietego",
+    "nazwa": "Kościół Zesłania Ducha Świętego",
+    "name_en": "Church of the Descent of the Holy Spirit",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Władysława Broniewskiego 44",
+    "adres_historyczny": null,
+    "lat": 52.269,
+    "lon": 20.95683,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1983 roku, dzięki staraniom ks. Antoniego Piaścika, władze stolicy przyznały działkę pod budowę kościoła przy ul. Broniewskiego w pobliżu Parku Olszyna.",
+      "18 września 1983 roku odprawiono na tym terenie pierwszą mszę; 1 października 1983 roku bp Jerzy Modzelewski poświęcił plac.",
+      "W listopadzie 1983 roku wzniesiono tymczasową kaplicę; w 1984 roku erygowano parafię Zesłania Ducha Świętego.",
+      "Budowę kościoła rozpoczęto w 1987 roku, a zakończono w 2000 roku.",
+      "4 maja 2002 roku świątynię konsekrował kardynał Józef Glemp, prymas Polski.",
+      "Autorem projektu był Stanisław Sołtyk; wystrój rzeźbiarski wykonał Jerzy Machaj."
+    ],
+    "ciekawostki": [
+      "Przy świątyni wzniesiono wieżę z zegarem."
+    ],
+    "summary_en": "The Church of the Descent of the Holy Spirit on Władysław Broniewski Street in Bielany was built on land granted in 1983. The first Mass was held that September, the church was built between 1987 and 2000 and consecrated in 2002 by Cardinal Józef Glemp.",
+    "ludzie": [
+      {"kto": "Antoni Piaścik", "rola": "ksiądz, który zabiegał o działkę pod kościół (1983)", "wiki": null},
+      {"kto": "Jerzy Modzelewski", "rola": "biskup; poświęcił plac pod budowę (1983)", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "kardynał, prymas Polski; konsekrował kościół (2002)", "wiki": null},
+      {"kto": "Stanisław Sołtyk", "rola": "autor projektu kościoła", "wiki": null},
+      {"kto": "Jerzy Machaj", "rola": "rzeźbiarz; wykonał wystrój rzeźbiarski", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Zesłania Ducha Świętego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Zes%C5%82ania_Ducha_%C5%9Awi%C4%99tego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (52.269, 20.95683); w treści 52°16′08,4″N 20°57′24,6″E, zgodne."
+  },
+  {
+    "id": "kosciol-sw-marii-magdaleny-wawrzyszew",
+    "nazwa": "Kościół św. Marii Magdaleny",
+    "name_en": "St Mary Magdalene Church, Wawrzyszew",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": "osiedle Wawrzyszew, Bielany",
+    "adres_historyczny": null,
+    "lat": 52.2808,
+    "lon": 20.9285,
+    "lokalizacja": "dokladna",
+    "okres": "1543–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia została wzniesiona w latach 1543–1548 z fundacji Baltazara Smosarskiego.",
+      "W XVIII wieku przedłużono nawę główną; w 1830 roku dostawiono kruchtę, a w 1870 roku dobudowano zakrystię.",
+      "W latach 1959–1960 budowlę gruntownie wyremontowano: ponownie otynkowano, wymalowano wnętrze, pozłocono ołtarze i założono instalację elektryczną.",
+      "W 1965 roku kościół wpisano do rejestru zabytków.",
+      "Kościół jest filialny parafii św. Marii Magdaleny na Wawrzyszewie, należącej do dekanatu bielańskiego archidiecezji warszawskiej."
+    ],
+    "ciekawostki": [
+      "Wyposażenie obejmuje m.in. ołtarz główny z XVIII wieku oraz żyrandol flamandzki z 1894 roku."
+    ],
+    "summary_en": "St Mary Magdalene Church on the Wawrzyszew estate in Bielany was built in 1543–1548 with funds from Baltazar Smosarski. It is a heritage-listed church from 1965 with 18th-century altars and paintings.",
+    "ludzie": [
+      {"kto": "Baltazar Smosarski", "rola": "fundator kościoła (1543–1548)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Marii Magdaleny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marii_Magdaleny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (52.2808, 20.9285); w treści 52°16′51,01″N 20°55′42,64″E, zgodne. Adres dzisiejszy nie jest w artykule."
+  },
+  {
+    "id": "kosciol-sw-zygmunta",
+    "nazwa": "Kościół św. Zygmunta",
+    "name_en": "St Sigismund's Church",
+    "typ": "swiatynia",
+    "dzielnica": "Bielany",
+    "adres_dzis": "pl. Konfederacji",
+    "adres_historyczny": null,
+    "lat": 52.279333333,
+    "lon": 20.946583333,
+    "lokalizacja": "dokladna",
+    "okres": "1976–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynię wzniesiono w latach 1976–1980 według projektu architekta Zbigniewa Pawelskiego; budowę prowadził ks. Ryszard Grygielka.",
+      "Kościół poświęcono 8 grudnia 1980 roku; dokonał tego kardynał Stefan Wyszyński.",
+      "Zespół sakralny składa się z trzech brył: kościoła, dzwonnicy i plebanii; sam kościół jest dwupoziomowy.",
+      "Dolna świątynia może pomieścić ok. 600 osób i służy też do spotkań pozaliturgicznych, np. spektakli i wykładów; górna mieści do czterech tysięcy wiernych.",
+      "Układ świątyni oparty jest na planie sześciokąta foremnego o module trójkąta równobocznego o boku 7,5 metra."
+    ],
+    "ciekawostki": [
+      "Figury trójkąta i sześciokąta foremnego są symbolami kościoła i zostały umieszczone w logo parafii."
+    ],
+    "summary_en": "St Sigismund's Church stands by Konfederacji Square in Stare Bielany. Designed by Zbigniew Pawelski and built in 1976–1980, it is a two-level church whose plan is based on a regular hexagon, consecrated by Cardinal Stefan Wyszyński in December 1980.",
+    "ludzie": [
+      {"kto": "Zbigniew Pawelski", "rola": "architekt projektu kościoła", "wiki": null},
+      {"kto": "Ryszard Grygielka", "rola": "ksiądz, budowniczy kościoła", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał; poświęcił kościół 8 grudnia 1980", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Zygmunta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Zygmunta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Adres z opisu w artykule (przy placu Konfederacji)."
+  },
+  {
+    "id": "las-bielanski",
+    "nazwa": "Las Bielański",
+    "name_en": "Bielany Forest",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Park Kultury na Bielanach (1950–1986)",
+    "lat": 52.293584,
+    "lon": 20.958245,
+    "lokalizacja": "przyblizona",
+    "okres": "1639–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1639 roku król Władysław IV ufundował na Polkowej Górze eremu kamedulski, trzeci w I Rzeczypospolitej po krakowskich Bielanach i Wigrach.",
+      "W 1669 roku rozpoczęto budowę nowego, murowanego kościoła; wyposażenie zakończono w XVIII wieku.",
+      "1 maja 1821 roku w Lesie założono Narodowe Towarzystwo Patriotyczne.",
+      "W 1928 roku wmurowano kamień węgielny pod budowę AWF na obszarze 73 ha.",
+      "22 lipca 1950 roku Las Bielański otrzymał nazwę „Park Kultury na Bielanach”; powstały tu estrady, wypożyczalnie i place zabaw.",
+      "W 1973 roku utworzono rezerwat Las Bielański.",
+      "W październiku 1986 roku zlikwidowano Park Kultury na Bielanach.",
+      "3 września 1999 roku Sejm przyjął ustawę o utworzeniu Uniwersytetu Kardynała Stefana Wyszyńskiego w miejsce Akademii Teologii Katolickiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bielany Forest is a Warsaw forest area with a nature reserve since 1973. Its history includes a Camaldolese hermitage founded in 1639, the Park Kultury period from 1950 to 1986, and the site of the Józef Piłsudski Academy of Physical Education.",
+    "ludzie": [
+      {"kto": "Władysław IV Waza", "rola": "król; ufundował eremu kamedulski na Polkowej Górze (1639)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Park Kultury na Bielanach (1950–1986)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Las Bielański (obszar MSI)", "url": "https://pl.wikipedia.org/wiki/Las_Biela%C5%84ski_%28obszar_MSI%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł to oś chronologiczna, bez opisu przestrzeni. Współrzędne z nagłówka. Pole dzielnica z nagłówka."
+  },
+  {
+    "id": "las-lindego",
+    "nazwa": "Las Lindego",
+    "name_en": "Lindego Grove",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": "otoczony ulicami Lindego, Marymoncką, Twardowską i Kasprowicza",
+    "adres_historyczny": null,
+    "lat": 52.2864,
+    "lon": 20.9472,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Las o powierzchni ok. 20,34 ha, zwyczajowo Lasek Lindego, był pierwotnie parkiem założonym w okresie międzywojennym.",
+      "Nazwa pochodzi od pobliskiej ulicy, nazwanej na cześć polskiego językoznawcy Samuela Lindego.",
+      "W czasie okupacji niemieckiej większość drzew wycięto na opał; drzewostan odtworzono po 1945 roku.",
+      "Na terenie lasu znajduje się kilkumetrowy wał, pozostałość strzelnicy Bielańskiego Pola Wojennego (poligonu armii rosyjskiej z XIX wieku), oraz ruiny starej kotłowni Szpitala Bielańskiego.",
+      "Przez teren lasku okresowo przepływa Potok Bielański."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lindego Grove is a 20-hectare wooded park in Bielany, originally laid out between the wars. Most of its trees were cut for fuel during the occupation and replanted after 1945.",
+    "ludzie": [
+      {"kto": "Samuel Linde", "rola": "polski językoznawca; patron ulicy, od której pochodzi nazwa lasu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Las Lindego", "url": "https://pl.wikipedia.org/wiki/Las_Lindego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka."
+  },
+  {
+    "id": "las-mlocinski",
+    "nazwa": "Las Młociński",
+    "name_en": "Młociński Forest",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ograniczony ulicami Pułkową, Wóycickiego, Dziekanowską i Estrady",
+    "adres_historyczny": "Las Nowa Warszawa (nazwa alternatywna)",
+    "lat": 52.3119,
+    "lon": 20.9083,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Las Młociński, zwany też Las Nowa Warszawa, jest lasem miejskim w północnej części miasta, w dzielnicy Bielany; od północy graniczy z gminą Łomianki.",
+      "Powierzchnia lasu wynosi 138,83 ha; leży w otulinie Kampinoskiego Parku Narodowego i jest częścią korytarza ekologicznego łączącego dolinę środkowej Wisły z Puszczą Kampinoską.",
+      "Znajdują się tu ślady walk z 1939 i 1944 roku.",
+      "Przez las przechodzi niebieski szlak turystyczny z ul. Conrada na Cmentarz Północny.",
+      "Przez obszar lasu przebiega Kanał Młociński."
+    ],
+    "ciekawostki": [
+      "Po wschodniej stronie ulicy Pułkowej znajduje się inny kompleks leśny, zwany parkiem Młocińskim."
+    ],
+    "summary_en": "Młociński Forest is a 139-hectare municipal forest in northern Bielany, on the edge of the Kampinos National Park buffer zone. It bears traces of fighting in 1939 and 1944 and borders the Północny Cemetery.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Las Nowa Warszawa (nazwa alternatywna)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Las Młociński w Warszawie", "url": "https://pl.wikipedia.org/wiki/Las_M%C5%82oci%C5%84ski"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka. Artykuł ma mało historii (ślady walk 1939 i 1944 bez szczegółów)."
+  },
+  {
+    "id": "lotnisko-bielanskie",
+    "nazwa": "Lotnisko bielańskie",
+    "name_en": "Bielany Airfield",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Lotnisko Bielany",
+    "lat": 52.2833,
+    "lon": 20.9333,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec lat 30.–1950",
+    "istnieje": false,
+    "fakty": [
+      "Lotnisko istniało od końca lat 30. do początku lat 50. XX wieku w dzielnicy Bielany; pierwotnie planowano je jako sportowe.",
+      "W 1937 roku zapadła ostateczna decyzja o budowie lotniska na terenie dawnego poligonu armii rosyjskiej między Młocinami, Lasem Bielańskim i Wawrzyszewem.",
+      "Budowę rozpoczęto w 1938 roku od osuszenia, splantowania i utwardzenia terenu; wiosną 1939 roku zaczęto budować trzy hangary.",
+      "W czasie II wojny światowej Niemcy zajęli i rozbudowali lotnisko; w 1944 roku stacjonowały tu cztery jednostki rozpoznawcze Luftwaffe.",
+      "W nocy z 3 na 4 maja 1944 roku teren lotniska zaatakował oddział „Osjan” w tzw. akcji Bielany; zniszczono 5 samolotów Ju-52/3m.",
+      "Lotnisko zlikwidowano w 1950 roku, a w 1951 roku znalazło się w granicach administracyjnych miasta; w latach 60. wybudowano tam m.in. osiedle Wrzeciono."
+    ],
+    "ciekawostki": [
+      "Nie przewidywano betonowego pasa startowego, gdyż lekkim samolotom sportowym wystarczała trawiasta nawierzchnia."
+    ],
+    "summary_en": "The Bielany airfield operated from the late 1930s to the early 1950s on the site of a former Russian training ground. The Germans used it in the war, and on 3/4 May 1944 Polish partisans destroyed five aircraft there.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Lotnisko Bielany"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lotnisko bielańskie", "url": "https://pl.wikipedia.org/wiki/Lotnisko_biela%C5%84skie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Istnieje ustawione na false (zlikwidowane). Współrzędne z nagłówka (52.2833, 20.9333), które są inne niż w nagłówku artykułu Akcja Bielany. Artykuł podaje, że atak wykonał oddział „Osjan”, a artykuł Akcja Bielany – oddział Kedywu KG AK; do weryfikacji."
+  },
+  {
+    "id": "marymont-kaskada",
+    "nazwa": "Marymont-Kaskada",
+    "name_en": "Marymont-Kaskada",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Kaskada (zwierzyniec królewski); Marie Mont (Góra Marii)",
+    "lat": 52.27745,
+    "lon": 20.963396,
+    "lokalizacja": "przyblizona",
+    "okres": "1691–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obszar wiąże się z podmiejską rezydencją królewską w Marymoncie, zbudowaną na rozkaz Jana III Sobieskiego w latach 1691–1696; nieduży pałac dla żony króla, Marii Kazimiery, nazywano Marie Mont (Góra Marii), co stało się źródłem nazwy obszaru.",
+      "Sąsiadujący z pałacykiem zwierzyniec królewski nazywano Kaskadą od wodospadu spływającego z okolicznego stawu.",
+      "Po 1819 roku teren wydzierżawiono generałowi Józefowi Rautenstrauchowi, który przekształcił go w ogród rozrywki; dwór przerobiono na karczmę zwaną Na Cztery Fajerki.",
+      "Pod koniec XIX wieku obszar uległ degradacji; władze carskie przymusowo osiedlały tu przestępców.",
+      "W 1891 roku powstała farbiarnia jedwabiu Bera Wolfkowicza, a w 1908 roku uruchomiono farbiarnię Emila Kellera.",
+      "1 kwietnia 1916 roku Kaskada została przyłączona do Warszawy.",
+      "We wrześniu 1944 roku, w trakcie pacyfikacji Marymontu, wymordowano wielu mieszkańców Kaskady.",
+      "Na początku lat 50. XX wieku otwarto park Kaskada, zaprojektowany przez Ludwika Lawina."
+    ],
+    "ciekawostki": [
+      "W latach 80. XX wieku park został przecięty Trasą Armii Krajowej; obecnie leży w obszarze Marymont-Potok w dzielnicy Żoliborz."
+    ],
+    "summary_en": "Marymont-Kaskada is a Municipal Information System area in southeast Bielany on the Warsaw escarpment. It grew from a royal residence built for Jan III Sobieski's wife in 1691–1696, through a 19th-century pleasure garden and early industry, to the Kaskada park opened in the early 1950s.",
+    "ludzie": [
+      {"kto": "Jan III Sobieski", "rola": "król; rozkazał zbudować rezydencję w Marymoncie (1691–1696)", "wiki": null},
+      {"kto": "Maria Kazimiera", "rola": "żona Jana III Sobieskiego; pałacyk Marie Mont był dla niej", "wiki": null},
+      {"kto": "Józef Rautenstrauch", "rola": "generał; dzierżawca terenu po 1819 roku, przekształcił go w ogród rozrywki", "wiki": null},
+      {"kto": "Emil Keller", "rola": "właściciel farbiarni (1908) i wielu okolicznych terenów", "wiki": null},
+      {"kto": "Ludwik Lawin", "rola": "projektant parku Kaskada", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Marie Mont (Góra Marii)",
+      "Kaskada (zwierzyniec królewski, potem osada)",
+      "Na Cztery Fajerki (karczma)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Marymont-Kaskada", "url": "https://pl.wikipedia.org/wiki/Marymont-Kaskada"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł jest obszarem MSI, nie pojedynczym miejscem; współrzędne z nagłówka. Artykuł wspomina też budynek IMGW przy ul. Podleśnej 61 (1955–1964), który nie został wyodrębniony jako osobny rekord."
+  }
+]

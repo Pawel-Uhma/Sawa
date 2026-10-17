@@ -1,0 +1,227 @@
+[
+  {
+    "id": "centrum-lim",
+    "nazwa": "Centrum LIM",
+    "name_en": "LIM Centre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 65/79",
+    "adres_historyczny": null,
+    "lat": 52.227326,
+    "lon": 21.004615,
+    "lokalizacja": "dokladna",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa rozpoczęła się w 1977. Prowadziło ją przedsiębiorstwo Zjednoczenie Budownictwa Miejskiego Bydgoszcz (później Budopol) wraz z brytyjską spółką Cementation International.",
+      "W 1982 brytyjska spółka zerwała kontrakt i wycofała się z budowy; jej miejsce zajęła spółka Mostostal.",
+      "W 1987 PLL LOT, austriacka firma budowlana ILBAU GmbH i Marriott International utworzyły spółkę LIM Joint Venture, która dokończyła budowę.",
+      "Budynek zaprojektowali Tadeusz Stefański, Jerzy Skrzypczak i Andrzej Bielobradek; architektami byli Szmigielski Katten Associates we współpracy z Raglan Squire & Partners z Londynu.",
+      "Bez trzydziestometrowej anteny wieżowiec do dachu liczy 140 metrów; ma 42 kondygnacje naziemne i 2 podziemne.",
+      "Obiekt ukończono w 1989. Hotel Marriott działał w nim od oficjalnego otwarcia 2 października 1989 do 2024 roku; od 2024 roku jest tu Warsaw Presidential Hotel.",
+      "W kwietniu 2002 pierwszy w Polsce skok BASE z dachu budynku wykonał Felix Baumgartner.",
+      "6 sierpnia 2024 sieć Marriott International poinformowała, że odebrała LIM Center prawo do posługiwania się marką Marriott, bez okresu przejściowego."
+    ],
+    "ciekawostki": [
+      "W 1999 na budynek bez zabezpieczenia i pozwolenia wspiął się francuski wspinacz Alain Robert; 22 kwietnia 2009 budynek zdobył Bartłomiej Opiela.",
+      "Na dwóch najwyższych kondygnacjach urządzono bar koktajlowy Panorama Sky Bar z jednym z najwyższych publicznie dostępnych widoków na Warszawę."
+    ],
+    "summary_en": "LIM Centre is an office and hotel complex at Aleje Jerozolimskie 65/79. Construction began in 1977 with a British partner, which withdrew in 1982; the joint venture LIM finished the building after 1987. The 140-metre tower opened in 1989 with a Marriott hotel, renamed Warsaw Presidential Hotel in 2024.",
+    "ludzie": [
+      {"kto": "Tadeusz Stefański", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Jerzy Skrzypczak", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Andrzej Bielobradek", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Felix Baumgartner", "rola": "wykonał pierwszy w Polsce skok BASE z dachu (2002)", "wiki": null},
+      {"kto": "Bartłomiej Opiela", "rola": "zdobył budynek bez zabezpieczeń (2009)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum LIM", "url": "https://pl.wikipedia.org/wiki/Centrum_LIM"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w zdaniu o usunięciu hotelu z systemu rezerwacji; rekord kończy się na fakcie z 6 sierpnia 2024."
+  },
+  {
+    "id": "centrum-lutanskie",
+    "nazwa": "Centrum Luterańskie w Warszawie",
+    "name_en": "Lutheran Centre in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 21",
+    "adres_historyczny": null,
+    "lat": 52.248703,
+    "lon": 21.006625,
+    "lokalizacja": "dokladna",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks przy ul. Miodowej 21 jest siedzibą władz naczelnych Kościoła Ewangelicko-Augsburskiego.",
+      "Wcześniej w tym miejscu stała kamienica Stanisława barona Lessera, zniszczona we wrześniu 1939.",
+      "Budowę kompleksu rozpoczęto w 1963; 25 kwietnia 1965 wmurowano akt erekcyjny. We wrześniu 1965 oddano część mieszkalną przylegającą do Domu Arcybiskupów Warszawskich przy ul. Miodowej 17/19.",
+      "W 1968 rozpoczęto eksploatację budynku administracyjnego; 5 września 1968 został poświęcony.",
+      "17 października 1970 poświęcono gmach na potrzeby Chrześcijańskiej Akademii Teologicznej. Koszt budowy wyniósł 14 mln zł, z czego połowę pokryli luteranie z całego świata.",
+      "W latach 90. powiększono gmach o część mieszkalno-konferencyjną przy ul. Schillera, oddaną do użytku w 1997.",
+      "W 2007 zakończono przebudowę, w tym podwyższenie budynku głównego o jedno piętro; 22 września 2007 gmach poświęcił bp Janusz Jagucki.",
+      "Do 2018 gmach był też siedzibą Chrześcijańskiej Akademii Teologicznej, która w tym roku przeniosła się do budynku przy ul. Władysława Broniewskiego 48."
+    ],
+    "ciekawostki": [
+      "Sala Synodalna im. biskupa Andrzeja Wantuły służy jako sala posiedzeń plenarnych Synodu Kościoła Ewangelicko-Augsburskiego; stale odbywają się w niej też nabożeństwa Warsaw International Church."
+    ],
+    "summary_en": "The Lutheran Centre at ul. Miodowa 21 is a modernist complex housing the leadership of the Evangelical Church of the Augsburg Confession in Poland. It was built from 1963 on the site of a townhouse destroyed in 1939, dedicated in stages in 1968–1970, and extended in the 1990s and in 2007.",
+    "ludzie": [
+      {"kto": "Stanisław Lesser", "rola": "właściciel kamienicy, która stała wcześniej w tym miejscu", "wiki": null},
+      {"kto": "Andrzej Wantuła", "rola": "biskup; ogłosił koszt budowy gmachu w 1970 (sala jego imienia)", "wiki": null},
+      {"kto": "Janusz Jagucki", "rola": "biskup; poświęcił przekształcony gmach w 2007", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Luterańskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Centrum_Lutera%C5%84skie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "centrum-marszalkowska",
+    "nazwa": "Centrum Marszałkowska",
+    "name_en": "Centrum Marszałkowska office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 126/134",
+    "adres_historyczny": null,
+    "lat": 52.235,
+    "lon": 21.009167,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biurowiec zbudowany w latach 2016–2018 przy ul. Marszałkowskiej 126/134 jest zintegrowany ze stacją metra Świętokrzyska.",
+      "Nazywany „Nowym Sezamem”, bo stanął na miejscu zburzonego Spółdzielczego Domu Handlowego „Sezam”.",
+      "Budynek zbudowała spółka BBI Development; projekt przygotowało biuro Juvenes Projekt z Warszawy, a generalnym wykonawcą była Korporacja Budowlana Doraco z Gdańska.",
+      "Proces budowy rozpoczęto w kwietniu 2016, a zakończono w czerwcu 2018. Kamień węgielny wmurowano 7 grudnia 2016; 6 czerwca 2018 otwarto w podziemiu sklep „Sezam” oraz zrewitalizowany pasaż im. Witolda Rowickiego od strony wschodniej.",
+      "Koszt budowy wyniósł 83,53 mln zł netto.",
+      "Budynek ma 14 kondygnacji (11 nadziemnych i 3 podziemne), wysokość architektoniczną 40 m i 16 500 m² powierzchni użytkowej.",
+      "Jest to pierwszy w Warszawie obiekt zintegrowany ze stacją dwóch linii metra (stacja Świętokrzyska)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Centrum Marszałkowska is a 14-storey office building at ul. Marszałkowska 126/134, built in 2016–2018 on the site of the demolished Sezam department store. It is integrated with Świętokrzyska metro station, the first building in Warsaw to be linked with a station of two metro lines.",
+    "ludzie": [
+      {"kto": "BBI Development", "rola": "inwestor, spółka budująca obiekt", "wiki": null},
+      {"kto": "Juvenes Projekt", "rola": "biuro architektoniczne z Warszawy, projektant", "wiki": null},
+      {"kto": "Korporacja Budowlana Doraco", "rola": "generalny wykonawca (Gdańsk)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowy Sezam (nazwa nieoficjalna)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Marszałkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Centrum_Marsza%C5%82kowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "centrum-nauki-kopernik-stacja",
+    "nazwa": "Centrum Nauki Kopernik (stacja metra)",
+    "name_en": "Centrum Nauki Kopernik metro station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tamka i Wybrzeże Kościuszkowskie (pod tunelem Wisłostrady)",
+    "adres_historyczny": null,
+    "lat": 52.24,
+    "lon": 21.031667,
+    "lokalizacja": "dokladna",
+    "okres": "2015–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M2 znajduje się w pobliżu skrzyżowania ulic Tamki i Wybrzeża Kościuszkowskiego, pod tunelem Wisłostrady, w okolicach mostu Świętokrzyskiego i bulwarów wiślanych.",
+      "Prace na terenie budowy rozpoczęto 15 listopada 2010, a roboty związane z samą stacją ruszyły w kwietniu 2011.",
+      "Wykonawcą stacji zostało 28 października 2009 konsorcjum AGP Metro Polska; wybrano metodę odkrywkową, tzw. podstropową.",
+      "W sierpniu 2012 podczas budowy łącznika dwóch części stacji pod tunelem Wisłostrady doszło do wypadku; teren stacji został zalany, a prace wstrzymano do czerwca 2013.",
+      "30 września 2014 wykonawca zgłosił stację jako gotową do odbiorów technicznych. 20 lutego 2015 stacja otrzymała pozwolenie na użytkowanie, a 8 marca 2015 została otwarta.",
+      "26 listopada 2010 ustalono tymczasowe przeniesienie płyty Virtuti Militari i Kamienia Pamięci Obrońców Elektrowni Powiśle przy pomniku Syreny do parku Marszałka Edwarda Rydza-Śmigłego; 16 grudnia 2010 odbyło się ich uroczyste odsłonięcie."
+    ],
+    "ciekawostki": [
+      "15 czerwca 2011 w wykopie zachodnim natrafiono na 40-centymetrowy niewybuch, najprawdopodobniej pocisk moździerzowy z czasów II wojny światowej; saperzy wywieźli go na poligon, a robotnicy wznowili prace po trzech godzinach."
+    ],
+    "summary_en": "Centrum Nauki Kopernik is an M2 metro station near the junction of Tamka and Wybrzeże Kościuszkowskie, under the Wisłostrada tunnel. Construction began in 2010, a 2012 accident flooded the site, and the station opened on 8 March 2015. During construction it was known as Powiśle.",
+    "ludzie": [
+      {"kto": "Andrzej Chołdzyński", "rola": "projektant generalny centralnego odcinka II linii metra, w tym stacji", "wiki": null},
+      {"kto": "Wojciech Fangor", "rola": "autor opracowania graficznego", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Powiśle (robocza nazwa stacji, od 1 lutego 2010)",
+      "C13 (robocze oznaczenie stacji)",
+      "S11 (oznaczenie w projekcie z 2008)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Nauki Kopernik (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Centrum_Nauki_Kopernik_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w zdaniu o pracach z lipca 2011; rekord opiera się na części przed urwaniem."
+  },
+  {
+    "id": "centrum-nauki-kopernik",
+    "nazwa": "Centrum Nauki Kopernik w Warszawie",
+    "name_en": "Copernicus Science Centre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wybrzeże Kościuszkowskie 20",
+    "adres_historyczny": null,
+    "lat": 52.241944,
+    "lon": 21.028333,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomysłodawcą Centrum Nauki Kopernik był Łukasz Turski, profesor fizyki teoretycznej; instytucję powołano w 2005 roku.",
+      "W grudniu 2005 rozstrzygnięto międzynarodowy konkurs na projekt architektoniczny budynku; wygrało go przedsiębiorstwo RAr-2 Laboratorium Architektury z Rudy Śląskiej.",
+      "W lipcu 2008 podpisano umowę na wykonanie budynku między Stołecznym Zarządem Rozbudowy Miasta a Warbudem S.A.; odbyło się wbicie pierwszej łopaty i rozpoczęto budowę.",
+      "5 listopada 2010 otwarto dla publiczności pierwszy moduł budynku wraz z większością wystaw stałych.",
+      "19 czerwca 2011 otwarto planetarium „Niebo Kopernika”.",
+      "W latach 2007–2008 Centrum dwukrotnie wyróżniono nagrodą Popularyzator Nauki."
+    ],
+    "ciekawostki": [
+      "W 2025 obiekt zwiedził 14-milionowy zwiedzający."
+    ],
+    "summary_en": "The Copernicus Science Centre at ul. Wybrzeże Kościuszkowskie 20 was founded in 2005 on an idea by physicist Łukasz Turski. Its building was designed after a 2005 competition and built by Warbud from 2008; the first module opened to the public on 5 November 2010.",
+    "ludzie": [
+      {"kto": "Łukasz Turski", "rola": "pomysłodawca Centrum, profesor fizyki teoretycznej", "wiki": null},
+      {"kto": "RAr-2 Laboratorium Architektury", "rola": "zwycięzca konkursu na projekt architektoniczny (Ruda Śląska)", "wiki": null},
+      {"kto": "Warbud S.A.", "rola": "wykonawca budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Nauki Kopernik w Warszawie", "url": "https://pl.wikipedia.org/wiki/Centrum_Nauki_Kopernik_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy głównie instytucji; do rekordu wzięto tylko wątki budowy i otwarcia budynku."
+  },
+  {
+    "id": "centrum-systemow-telekomunikacyjnych",
+    "nazwa": "Centrum Systemów Telekomunikacyjnych",
+    "name_en": "Centre of Telecommunication Systems tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowogrodzka 47",
+    "adres_historyczny": null,
+    "lat": 52.227983,
+    "lon": 21.009947,
+    "lokalizacja": "dokladna",
+    "okres": "1975 lub połowa lat 80. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Warszawski wieżowiec przy ul. Nowogrodzkiej 47 wybudowano w 1975 lub w połowie lat 80. XX w.",
+      "Ma 73 m wysokości i 21 kondygnacji.",
+      "Wieżowiec należał do przedsiębiorstwa Polska Poczta, Telegraf i Telefon, a po jego podziale do Telekomunikacji Polskiej i jej następcy Orange Polska.",
+      "W 2019 wieżowiec kupiła firma Zeitgeist Asset Management."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Centre of Telecommunication Systems is a 73-metre, 21-storey tower at ul. Nowogrodzka 47, built in 1975 or the mid-1980s. It belonged to the Polish post and telecom company and its successors, and was bought by Zeitgeist Asset Management in 2019.",
+    "ludzie": [
+      {"kto": "Zeitgeist Asset Management", "rola": "nabywca wieżowca w 2019", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Systemów Telekomunikacyjnych", "url": "https://pl.wikipedia.org/wiki/Centrum_System%C3%B3w_Telekomunikacyjnych"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Data budowy niepewna (1975 lub połowa lat 80.), tak podaje artykuł."
+  }
+]

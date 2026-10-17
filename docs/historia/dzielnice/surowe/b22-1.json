@@ -1,0 +1,523 @@
+[
+  {
+    "id": "kamienica-banku-handlowego-i-abrama-wachsmachera",
+    "nazwa": "Kamienica Banku Handlowego i Abrama Wachsmachera",
+    "name_en": "Bank Handlowy and Abram Wachsmacher Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 3",
+    "adres_historyczny": null,
+    "lat": 52.2302, "lon": 21.0216,
+    "lokalizacja": "dokladna",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Funkcjonalistyczna kamienica wzniesiona w latach 1932–1933 przy ul. Nowy Świat 3.",
+      "W 1784 roku w głębi posesji stał dworek Jakuba Usarzewskiego; dworek rozebrano w 1819 roku.",
+      "W 1919 roku posesję zakupił Bank Handlowy i Abrama Wachsmachera.",
+      "Od strony ulicy zbudowano 6-kondygnacyjny budynek według projektu Jerzego Gelbarda i Romana Sigalina.",
+      "W 1939 roku udziały Banku Handlowego wykupili Abram i Cłuwa Offajerowie.",
+      "Na parterze i w podziemiach urządzono luksusowy lokal „Paradis” (kawiarnia i dansing).",
+      "Dom przetrwał wojnę niemal w nienaruszonym stanie; w 2004 roku przeszedł gruntowny remont."
+    ],
+    "ciekawostki": [
+      "Po upaństwowieniu lokal na parterze nazwano „Melodia”; ze względu na bliskość siedziby KC PZPR był popularny wśród nomenklatury komunistycznej."
+    ],
+    "summary_en": "A functionalist tenement at Nowy Świat 3, built in 1932–1933 to designs by Jerzy Gelbard and Roman Sigalin for the Bank Handlowy and Abram Wachsmacher. It was a luxury building with the Paradis café and dancing on the ground floor, and it survived the war almost intact.",
+    "ludzie": [
+      {"kto": "Jerzy Gelbard", "rola": "projektant budynku (wraz z Romanem Sigalinem)", "wiki": null},
+      {"kto": "Roman Sigalin", "rola": "projektant budynku (wraz z Jerzym Gelbardem)", "wiki": null},
+      {"kto": "Abram Wachsmacher", "rola": "współwłaściciel (Bank Handlowy i Abrama Wachsmachera)", "wiki": null},
+      {"kto": "Abram i Cłuwa Offajerowie", "rola": "wykupili udziały Banku Handlowego w 1939 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Paradis (lokal na parterze)", "Melodia (lokal na parterze po upaństwowieniu)"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Banku Handlowego i Abrama Wachsmachera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Banku_Handlowego_i_Abrama_Wachsmachera_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-baryczkowska",
+    "nazwa": "Kamienica Baryczkowska",
+    "name_en": "Baryczka Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 32",
+    "adres_historyczny": null,
+    "lat": 52.2496, "lon": 21.0119,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1440–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wzniesiona ok. 1440 roku przy Rynku Starego Miasta nr 32.",
+      "Na początku XV wieku należała do Anny, żony Piotra Pielgrzyma, wójta dziedzicznego Starej Warszawy.",
+      "Górczewscy byli właścicielami do 1501 roku; w 1683 roku rodzina Baryczków utraciła kamienicę.",
+      "W latach 1629–1633 kamienica przeszła gruntowną przebudowę za Wojciecha Baryczki, który nadał jej charakter późnorenesansowy.",
+      "W latach 1683–1808 właścicielami była ormiańska rodzina kupiecka Minasowiczów.",
+      "W 1937 roku budynek przeszedł w ręce Gminy m.st. Warszawy, która planowała umieścić w nim Muzeum Dawnej Warszawy.",
+      "W 1944 roku kamienica została spalona; odbudowano ją w latach 1947–1950 i 1952–1953.",
+      "W 1965 roku kamienica została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Pod koniec XVIII wieku w budynku znajdowała się fabryka skór Cadra."
+    ],
+    "summary_en": "A late-Gothic and late-Renaissance tenement on the Old Town Market Square at no. 32, first recorded around 1440. It was burned in 1944 and rebuilt in 1947–1953, and now houses the Warsaw Museum and the Warsaw State Archive.",
+    "ludzie": [
+      {"kto": "Wojciech Baryczka", "rola": "właściciel; przebudowa w latach 1629–1633", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "projekt prac konserwatorskich i adaptacyjnych (1938)", "wiki": null},
+      {"kto": "Stanisław Żaryn", "rola": "projekt odbudowy po 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Baryczkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Baryczkowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-bentkowskiego",
+    "nazwa": "Kamienica Bentkowskiego",
+    "name_en": "Bentkowski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 49",
+    "adres_historyczny": null,
+    "lat": 52.235111, "lon": 21.018333,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa klasycystyczna kamienica wzniesiona ok. 1820–1822 przy ul. Nowy Świat 49.",
+      "Projekt wykonał Hilary Szpilowski dla Feliksa Bentkowskiego.",
+      "W drugiej połowie XIX wieku mieszkał w niej rzeźbiarz Adam Zelt.",
+      "W 1939 roku budynek uległ spaleniu podczas II wojny światowej i został częściowo wyburzony.",
+      "W latach 1947–1949 odbudowano go według projektu Zygmunta Stępińskiego i Mieczysława Kuźmy.",
+      "W środkowej części fasady znajdują się cztery doryckie półkolumny; budynek jest 11-osiowy, 2-traktowy.",
+      "W 1965 roku kamienicę wraz z ogrodem i ogrodzeniem wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A classicist tenement at Nowy Świat 49, built around 1820–1822 to a design by Hilary Szpilowski for Feliks Bentkowski. It was burned in 1939 and rebuilt in 1947–1949, and it is a listed monument with a Doric portico in the centre of the façade.",
+    "ludzie": [
+      {"kto": "Hilary Szpilowski", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Feliks Bentkowski", "rola": "inwestor", "wiki": null},
+      {"kto": "Adam Zelt", "rola": "rzeźbiarz, mieszkaniec w drugiej połowie XIX wieku", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projekt odbudowy (1947–1949)", "wiki": null},
+      {"kto": "Mieczysław Kuźma", "rola": "projekt odbudowy (1947–1949)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Bentkowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Bentkowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-bornbachowska",
+    "nazwa": "Kamienica Bornbachowska",
+    "name_en": "Bornbach Tenement on the Old Town Market",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 2 (róg ul. Celnej)",
+    "adres_historyczny": null,
+    "lat": 52.2498, "lon": 21.013011,
+    "lokalizacja": "dokladna",
+    "okres": "2. poł. XV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Czterokondygnacyjna, trzytraktowa narożna kamienica przy Rynku Starego Miasta 2, róg ul. Celnej.",
+      "Kamienica została wzniesiona w drugiej połowie XV wieku.",
+      "W latach 1449–1650 znajdowała się w posiadaniu patrycjuszowskiej rodziny Burbachów.",
+      "W 1607 roku uległa spaleniu i została odbudowana w 1626 roku, nadano jej wtedy styl barokowy.",
+      "W 1752 roku została przebudowana; powstał wtedy konwikt jezuicki i szkoła Roberta, w której uczył A. Magier.",
+      "Od 1928 roku mieścił się w niej Policyjny Dom Zdrowia.",
+      "Podczas II wojny światowej kamienica została spalona i zburzona; w latach 1952–1953 odbudowano ją według projektu Anny Boyé Guerquin.",
+      "Obecnie jest siedzibą Staromiejskiego Domu Kultury."
+    ],
+    "ciekawostki": [
+      "W 1928 roku na budynku pojawiła się polichromia autorstwa Leonarda Pękalskiego."
+    ],
+    "summary_en": "A corner tenement on the Old Town Market Square at no. 2, built in the second half of the 15th century. It was burned in 1607 and during WWII, rebuilt in 1952–1953, and it now houses the Staromiejski Community Centre.",
+    "ludzie": [
+      {"kto": "Anna Boyé Guerquin", "rola": "projekt odbudowy (1952–1953)", "wiki": null},
+      {"kto": "Leonard Pękalski", "rola": "autor polichromii z 1928 roku", "wiki": null},
+      {"kto": "A. Magier", "rola": "nauczyciel w szkole Roberta, działającej w budynku po 1752 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Burbachowska", "Winklerowska", "Stary Konwikt"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Bornbachowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Bornbachowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł ma formę „Kamienica Bornbachowska (Burbachowska), Winklerowska, Stary Konwikt”; dawne nazwy wzięto stąd."
+  },
+  {
+    "id": "kamienica-bornbachow",
+    "nazwa": "Kamienica Bornbachów",
+    "name_en": "Bornbach Tenement on Brzozowa Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Brzozowa 5 (róg ul. Celnej)",
+    "adres_historyczny": null,
+    "lat": 52.25, "lon": 21.013375,
+    "lokalizacja": "dokladna",
+    "okres": "początek XVI wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica na Starym Mieście, róg ul. Brzozowej 5 i ul. Celnej.",
+      "Tylna część posesji, pozostająca w rękach rodziny Bornbachów, została zabudowana dopiero w początkach XVI wieku.",
+      "Być może w 1626 roku budynek spichlerza przebudowano na kamienicę mieszkalną.",
+      "Po 1752 roku kamienicę częściowo rozebrano i odbudowano dla Jana Ciecierskiego, regensa konwiktu Collegium Nobilium.",
+      "Po 1832 roku, w związku z poszerzeniem ulicy Celnej, rozebrano Bramę Gnojną, zachowując jej boczną ścianę jako część elewacji.",
+      "W 1944 roku kamienicę spalono; zachowały się jej mury magistralne wzdłuż ulic Brzozowej i Celnej.",
+      "Odbudowa w latach 1956–1961 częściowo zrekonstruowała gotyckie partie muru i przesklepienie dawnej uliczki podmurnej."
+    ],
+    "ciekawostki": [
+      "W elewacji bocznej do wysokości drugiego piętra wyeksponowano wewnętrzne lico bocznej ściany Bramy Gnojnej z końca XIV wieku."
+    ],
+    "summary_en": "An Old Town tenement at the corner of Brzozowa and Celna streets, built on the site of a granary near the old Gate of Gnojna. It was burned in 1944 and rebuilt in 1956–1961, and it keeps relics of the medieval gate in its side wall.",
+    "ludzie": [
+      {"kto": "Jan Ciecierski", "rola": "regens konwiktu Collegium Nobilium, dla którego kamienicę odbudowano po 1752 roku", "wiki": null},
+      {"kto": "Stanisław Żaryn", "rola": "kierował badaniami w latach 1956–1957", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Bornbachów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Bornbach%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Inna kamienica niż „Kamienica Bornbachowska” przy Rynku Starego Miasta 2."
+  },
+  {
+    "id": "kamienica-borucha-zyberta",
+    "nazwa": "Kamienica Borucha Zyberta",
+    "name_en": "Boruch Zybert Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Poznańska 37",
+    "adres_historyczny": null,
+    "lat": 52.22875, "lon": 21.00975,
+    "lokalizacja": "dokladna",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Poznańskiej 37, wzniesiona w 1904 roku.",
+      "W latach 1945–1958 mieszkał w niej poeta i pisarz Miron Białoszewski; upamiętnia go tablica na fasadzie.",
+      "W 2009 roku kamienica została zreprywatyzowana; zameldowanych było w niej wówczas 78 osób, z których część została eksmitowana.",
+      "W 2014 roku, dzięki działaniom członków Stowarzyszenia Miasto Jest Nasze, zachowano zabytkowy piec, o którym Białoszewski pisał w wierszu."
+    ],
+    "ciekawostki": [
+      "Piec, o którym pisał Białoszewski, znalazł się w wierszu „Ach gdyby nawet piec zabrali… Moja niewyczerpana oda do radości”."
+    ],
+    "summary_en": "A 1904 tenement at Poznańska 37 where the poet Miron Białoszewski lived from 1945 to 1958; a plaque on the façade commemorates him. After reprivatisation in 2009 residents were evicted, and in 2014 the historic stove he wrote about was saved.",
+    "ludzie": [
+      {"kto": "Miron Białoszewski", "rola": "poeta i pisarz, mieszkaniec w latach 1945–1958", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Borucha Zyberta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Borucha_Zyberta_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-branickich",
+    "nazwa": "Kamienica Branickich",
+    "name_en": "Branicki Tenement on Smolna Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Smolna 40",
+    "adres_historyczny": null,
+    "lat": 52.232611, "lon": 21.021194,
+    "lokalizacja": "dokladna",
+    "okres": "1903–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Eklektyczna kamienica przy ul. Smolnej 40, wzniesiona w 1903 roku jako miejska rezydencja rodziny Branickich.",
+      "Hrabia Ksawery Branicki, właściciel terenów przy pałacu Branickich, rozpoczął ich parcelację pod koniec XIX wieku.",
+      "Projekt pięciu budynków na wydzielonych placach powierzono Bronisławowi Brochwicz-Rogoyskiemu.",
+      "W 1944 roku kamienica została zbombardowana i ograbiona.",
+      "Od października 1945 roku, na mocy tzw. dekretu Bieruta, nieruchomość została znacjonalizowana.",
+      "Przez krótki czas mieścił się tu gabinet Pierwszego Sekretarza PZPR Bolesława Bieruta; od lat 70. XX wieku siedzibę miał tu Związek Socjalistycznej Młodzieży Polskiej.",
+      "W 1988 roku kamienicę wpisano do rejestru zabytków.",
+      "W maju 2017 roku otwarto tu czterogwiazdkowy hotel Indigo z grupy InterContinental."
+    ],
+    "ciekawostki": [
+      "Ostatnie piętro zajmował malarz Franciszek Żmurko."
+    ],
+    "summary_en": "A 1903 eclectic townhouse at Smolna 40, built for the Branicki family on land divided from the Branicki Palace estate. It was nationalised in 1945, briefly served as Bolesław Bierut's office, and since 2017 has housed an Indigo hotel.",
+    "ludzie": [
+      {"kto": "Ksawery Branicki", "rola": "hrabia, właściciel terenów i inwestor parcelacji", "wiki": null},
+      {"kto": "Bronisław Brochwicz-Rogoyski", "rola": "projektant budynków na wydzielonych placach", "wiki": null},
+      {"kto": "Franciszek Żmurko", "rola": "malarz, mieszkaniec ostatniego piętra", "wiki": null},
+      {"kto": "Bolesław Bierut", "rola": "Pierwszy Sekretarz PZPR; krótko mieścił się tu jego gabinet", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Branickich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Branickich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-bronislawa-krysztala",
+    "nazwa": "Kamienica Bronisława Kryształa",
+    "name_en": "Bronisław Kryształ Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 24",
+    "adres_historyczny": null,
+    "lat": 52.2216, "lon": 21.0193,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy ul. Mokotowskiej 24, wybudowana w 1913 roku dla Bronisława Kryształa.",
+      "Projekt wykonał Leon Wolski.",
+      "Posesję wydzielono w 1882 roku przez Mikołaja i Weronikę Nowakowskich z nieruchomości należącej do braci Władysława i Józefa Kaczyńskich.",
+      "W 1918 roku kamienicę zakupili Bernard-Berek i Estera z Głowińskich; w 1923 i 1929 roku udziały odziedziczyły ich córki.",
+      "Pięciopiętrowy dom frontowy z trzema jednakowymi oficynami tworzy zamknięte podwórze.",
+      "Po 1945 roku, po rozbiórce sąsiednich budynków, kamienicę poszerzono z obu stron.",
+      "Na piątym piętrze mieściły się redakcje „Świata Młodych” i „Przeglądu Sportowego”."
+    ],
+    "ciekawostki": [
+      "Attykę nad wykuszami ozdobiono płaskorzeźbami orłów z rozpostartymi skrzydłami i oplecionymi wieńcami."
+    ],
+    "summary_en": "A five-storey 1913 tenement at Mokotowska 24, designed by Leon Wolski for Bronisław Kryształ, with a late-classicist façade. It was widened on both sides after the war, and for a time the editorial offices of Świat Młodych and Przegląd Sportowy were on its fifth floor.",
+    "ludzie": [
+      {"kto": "Bronisław Kryształ", "rola": "inwestor", "wiki": null},
+      {"kto": "Leon Wolski", "rola": "projektant", "wiki": null},
+      {"kto": "Bernard-Berek Głowiński i Estera z Głowińskich", "rola": "właściciele od 1918 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Bronisława Kryształa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Bronis%C5%82awa_Kryszta%C5%82a_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-busserowska",
+    "nazwa": "Kamienica Busserowska",
+    "name_en": "Busser Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 24",
+    "adres_historyczny": null,
+    "lat": 52.250333, "lon": 21.012306,
+    "lokalizacja": "dokladna",
+    "okres": "poł. XV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Czterokondygnacyjna, trzytraktowa kamienica przy Rynku Starego Miasta 24, wzniesiona w połowie XV wieku.",
+      "Po raz pierwszy wzmiankowana w 1541 roku; w 1569 roku otrzymała nazwę Przewoźnikowska.",
+      "W latach 1600–1671 była własnością rodziny Busserów; na zlecenie Łukasza Bussera przebudowano ją w stylu barokowym.",
+      "W latach 1780–1796 mieściła się tu drukarnia Piotra Dufoura, a później Tomasza Le Bruna.",
+      "W połowie XIX wieku drukowano tu „Tygodnik Ilustrowany” w zakładzie J. Ungra.",
+      "Podczas II wojny światowej budynek spalono i zburzono; odbudowano go w latach 1952–1953 według projektu Teodora Burszego.",
+      "W 1965 roku kamienica została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Od 12 grudnia 1955 roku na parterze działa Klub Księgarza; od 1985 roku odbywa się tu Warszawska Premiera Literacka.",
+      "W 1983 roku na fasadzie umieszczono żeliwną tablicę upamiętniającą polskich księgarzy."
+    ],
+    "summary_en": "A mid-15th-century tenement at Old Town Market 24, first mentioned in 1541. It was baroque after the Busser family's rebuilding, burned in WWII, rebuilt in 1952–1953, and since 1955 has housed the Booksellers' Club.",
+    "ludzie": [
+      {"kto": "Łukasz Busser", "rola": "rajca; zlecił barokową przebudowę w XVII wieku", "wiki": null},
+      {"kto": "Piotr Dufour", "rola": "drukarz (drukarnia w budynku w latach 1780–1796)", "wiki": null},
+      {"kto": "Teodor Burszy", "rola": "projekt odbudowy (1952–1953)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Skwarczyńskich", "Ziembowiczowska", "Przewoźnikowska"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Busserowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Busserowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-cechu-krawcow",
+    "nazwa": "Kamienica Cechu Krawców",
+    "name_en": "Tailors' Guild Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 41",
+    "adres_historyczny": null,
+    "lat": 52.2444, "lon": 21.0137,
+    "lokalizacja": "dokladna",
+    "okres": "1. poł. XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy Krakowskim Przedmieściu 41, wzniesiona w pierwszej połowie XVIII wieku jako siedziba cechu krawców.",
+      "Pierwotnie była trzykondygnacyjna, trzyosiowa, z dachem mansardowym; przebudowa w połowie XIX wieku zatarła jej pierwotne cechy.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku uległa częściowemu zburzeniu, a w 1944 roku została całkowicie zniszczona.",
+      "W latach 1947–1949 odbudowano ją według projektu Kazimierza Biernackiego; uzyskała wtedy barokową dekorację.",
+      "Umieszczono w niej Dom Cechu Krawców m.st. Warszawy.",
+      "Na elewacji frontowej znajdują się emblematy cechu oraz tablica upamiętniająca Władysława Reymonta, odsłonięta w 1965 roku.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Władysław Reymont był członkiem cechu krawców, a jego tablica wisi na elewacji frontowej."
+    ],
+    "summary_en": "An 18th-century guild house on Krakowskie Przedmieście 41, built for the tailors' guild. It was destroyed in 1939 and 1944 and rebuilt in 1947–1949 by Kazimierz Biernacki, and it now houses the Dom Cechu Krawców m.st. Warszawy.",
+    "ludzie": [
+      {"kto": "Władysław Reymont", "rola": "członek cechu krawców, upamiętniony tablicą na elewacji", "wiki": null},
+      {"kto": "Kazimierz Biernacki", "rola": "projekt odbudowy (1947–1949)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Cechu Krawców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Cechu_Krawc%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-cechu-rzeznikow",
+    "nazwa": "Kamienica Cechu Rzeźników",
+    "name_en": "Butchers' Guild Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 29 i ul. Kozia 4",
+    "adres_historyczny": null,
+    "lat": 52.244, "lon": 21.0138,
+    "lokalizacja": "dokladna",
+    "okres": "koniec XVII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pod koniec XVII wieku kamienicę wraz z działką kupił Cech Rzeźników.",
+      "W latach 1743–1754 zbudowano ją na nowo.",
+      "W 1867 roku dobudowano drugie piętro, a w 1900 roku podwyższono ją o trzecie piętro i mansardy.",
+      "W okresie międzywojennym działały tu zakład fryzjerski i zakład fotograficzny Optofot.",
+      "W 1944 roku kamienicę spalono; w 1949 roku odbudowano ją z obniżeniem do dwóch pięter."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A guild-owned building at Krakowskie Przedmieście 29 and Kozia 4, bought by the butchers' guild in the late 17th century. It was burned in 1944 and rebuilt in 1949 with only two storeys.",
+    "ludzie": [
+      {"kto": "Mieczysław Kuzma", "rola": "architekt odbudowy (1949)", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "architekt odbudowy (1949)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Cechu Rzeźników w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Cechu_Rze%C5%BAnik%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-czulskiego",
+    "nazwa": "Kamienica Czulskiego",
+    "name_en": "Czulski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 12",
+    "adres_historyczny": null,
+    "lat": 52.23892, "lon": 21.01778,
+    "lokalizacja": "dokladna",
+    "okres": "II poł. XVIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa kamienica przy Krakowskim Przedmieściu 12, wzniesiona w drugiej połowie XVIII wieku.",
+      "Ok. 1743 roku stał tu murowany dom Bogusza; ok. 1754 roku stał się własnością sekretarza królewskiego Makowskiego, a mieścił się tu wtedy szynk Jana Arenta.",
+      "W 1790 roku kamienica przeszła na własność Johanna Ekierta.",
+      "Pod koniec XVIII wieku została uzupełniona o nową facjatę i nadbudowana o drugie piętro.",
+      "W 1944 roku kamienica została częściowo spalona; odbudowano ją w latach 1948–1949 w niezmienionym kształcie.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A late-18th-century townhouse at Krakowskie Przedmieście 12, built on the site of an earlier house once owned by a royal secretary. It was partly burned in 1944 and rebuilt unchanged in 1948–1949.",
+    "ludzie": [
+      {"kto": "Makowski", "rola": "sekretarz królewski, właściciel ok. 1754 roku", "wiki": null},
+      {"kto": "Johann Ekiert", "rola": "właściciel od 1790 roku (w tekście: Johanna Ekierta)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Czulskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Czulskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-domanskich",
+    "nazwa": "Kamienica Domańskich",
+    "name_en": "Domański Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 41 (róg pl. Zbawiciela)",
+    "adres_historyczny": null,
+    "lat": 52.220222, "lon": 21.017403,
+    "lokalizacja": "dokladna",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w latach 1893–1894 dla Jana Sobierajskiego, który był też głównym technikiem prowadzącym budowę.",
+      "W 1895 roku przeszła na własność Felicji i Włodzimierza Domańskich.",
+      "Pierwotnie miała bogatą eklektyczną dekorację sztukatorską; w latach 1938–1939 skuto z niej wszystkie detale architektoniczne, poza zdobieniami parteru.",
+      "Od 1924 roku na parterze mieściła się polska siedziba firmy Kempisty Company, zajmującej się naprawą i handlem maszynami do szycia.",
+      "W czasie powstania warszawskiego mieścił się tu posterunek kompanii kpt. Antoniego Kazimierza Dembowskiego „Lodeckiego” (batalion „Ruczaj”).",
+      "Firma naprawiająca maszyny działała pod tym adresem do końca lutego 2013 roku.",
+      "We wrześniu 2008 roku kamienicę wpisano do rejestru zabytków; w 2012 roku nadzór budowlany zakazał jej dalszego użytkowania.",
+      "W 2022 roku nieruchomość sprzedało miasto; w 2023 roku konserwator zabytków nakazał nowemu właścicielowi prace konserwatorskie."
+    ],
+    "ciekawostki": [
+      "W czasie okupacji w mieszkaniu nauczycielki Jadwigi Świerczyńskiej ukrywano żydowską dziewczynkę Wiktorię Śliwowską, późniejszą profesor historii. Świerczyńska otrzymała w 1990 roku medal Sprawiedliwy wśród Narodów Świata."
+    ],
+    "summary_en": "An 1893–1894 tenement at Marszałkowska 41 on the corner of Plac Zbawiciela, built for Jan Sobierajski. It had its ornament removed in 1938–1939, served as a sewing-machine workshop, and was closed as unsafe in 2012.",
+    "ludzie": [
+      {"kto": "Jan Sobierajski", "rola": "inwestor i główny technik budowy", "wiki": null},
+      {"kto": "Zbigniew Laskowski", "rola": "pediatra, mieszkaniec; aresztowany w marcu 1943 i wywieziony do Mauthausen-Gusen", "wiki": null},
+      {"kto": "Stefan Sterling-Okuniewski", "rola": "wykładowca Uniwersytetu Warszawskiego, mieszkał i prowadził tu praktykę", "wiki": null},
+      {"kto": "Jadwiga Świerczyńska", "rola": "nauczycielka, ukrywała Wiktorię Śliwowską w czasie okupacji", "wiki": null},
+      {"kto": "Antoni Kazimierz Dembowski „Lodecki”", "rola": "dowódca kompanii, której posterunek mieścił się w kamienicy w powstaniu", "wiki": null},
+      {"kto": "Jan Raczyński", "rola": "właściciel zakładu naprawy maszyn od 1928 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Domańskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Doma%C5%84skich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł zaznacza, że Kamienica Domańskich nazywana jest także kamienicą Jana Sobierajskiego."
+  },
+  {
+    "id": "kamienica-dulfusa",
+    "nazwa": "Kamienica Dulfusa",
+    "name_en": "Dulfus Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta 1 (róg ul. Długiej)",
+    "adres_historyczny": null,
+    "lat": 52.25091, "lon": 21.00869,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1525–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Najstarszy murowany dom przy ul. Freta; wybudowany przed 1525 rokiem przez Jurgę (Jerzego) Baryczkę na skład towarów i zajazd dla kupców.",
+      "W XVI i XVII wieku nazywano go Giełdą, ponieważ składowano w nim zboże i odbywał się tu handel zbożem.",
+      "W 1656 roku dom spalili Szwedzi.",
+      "Dom odbudowano przed 1733 rokiem dla kupieckiej rodziny Dulfusów.",
+      "Około 1754–1791 kamienica była własnością prezydenta Starej Warszawy Jana Feliksa Dulfusa i jego żony Marianny; została znacznie rozbudowana.",
+      "Podczas II wojny światowej budynek spalono; odbudowano go w 1950 roku według projektu Stanisławy i Jerzego Dutkiewiczów.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Przed 1939 rokiem w niszach na wysokości pierwszego piętra stały figury Najświętszej Marii Panny i św. Jana Nepomucena; w czasie odbudowy je usunięto, a w ich miejscu umieszczono rzeźby Cerery i Merkurego."
+    ],
+    "summary_en": "The oldest brick house on Freta Street, built before 1525 by Jerzy Baryczka as a warehouse and inn for merchants. It was burned by the Swedes in 1656 and in WWII, and rebuilt in 1950 to designs by Stanisława and Jerzy Dutkiewicz.",
+    "ludzie": [
+      {"kto": "Jurga (Jerzy) Baryczka", "rola": "fundator i pierwszy właściciel, przed 1525 rokiem", "wiki": null},
+      {"kto": "Jan Feliks Dulfus", "rola": "prezydent Starej Warszawy, właściciel ok. 1754–1791", "wiki": null},
+      {"kto": "Stanisława i Jerzy Dutkiewiczowie", "rola": "projekt odbudowy (1950)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Giełda (XVI–XVII w.)"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Dulfusa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Dulfusa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia też nazwę „Kamienica Dulfusowska”."
+  },
+  {
+    "id": "kamienica-dlugoszowa",
+    "nazwa": "Kamienica Długoszowa",
+    "name_en": "Długosz Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 9",
+    "adres_historyczny": null,
+    "lat": 52.249319, "lon": 21.012625,
+    "lokalizacja": "dokladna",
+    "okres": "poł. XV wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wzniesiona w pierwszej połowie XV wieku przy Rynku Starego Miasta nr 9; pierwszym właścicielem był Herman.",
+      "W latach 1579–1655 właścicielami byli Długoszowie, m.in. Paweł Długosz, burmistrz Starej Warszawy, zleceniodawca przebudowy w pierwszej połowie XVII wieku.",
+      "W 1578 i 1607 roku kamienica uległa spaleniu.",
+      "W 1928 roku ozdobiono ją polichromią autorstwa K. Ścińskiego.",
+      "W 1944 roku ponownie spalono i zburzono kamienicę; po wojnie odbudowano ją według projektu M. Kuzmy i J. Chodaczka.",
+      "Odbudowana kamienica ma wygląd z przebudowy w XVIII wieku.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Piwnice kamienicy były sklepione i handlowano w nich pieczywem, kaszą i opałem; wejście prowadziło stromymi schodami.",
+      "Obecnie w kamienicy mieści się bar i kawiarnia Bazyliszek."
+    ],
+    "summary_en": "A 15th-century tenement at Old Town Market 9, first owned by Herman and later by the Długosz family, whose member Paweł Długosz was mayor of the Old Town. It was burned in 1578, 1607 and 1944, and rebuilt after the war in its 18th-century form.",
+    "ludzie": [
+      {"kto": "Herman", "rola": "fundator i pierwszy właściciel", "wiki": null},
+      {"kto": "Paweł Długosz", "rola": "burmistrz Starej Warszawy; zleceniodawca przebudowy w XVII wieku", "wiki": null},
+      {"kto": "Aleksander Giza", "rola": "rajca, właściciel", "wiki": null},
+      {"kto": "M. Kuzma i J. Chodaczek", "rola": "projekt odbudowy po 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Długoszowska", "Długoszewska", "dom Hermanowski"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Długoszowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_D%C5%82ugoszowa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

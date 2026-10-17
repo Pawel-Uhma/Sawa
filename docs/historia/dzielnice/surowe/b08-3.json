@@ -1,0 +1,310 @@
+[
+  {
+    "id": "stare-bielany",
+    "nazwa": "Stare Bielany",
+    "name_en": "Stare Bielany (Old Bielany)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2812, "lon": 20.9508,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obszar obejmuje międzywojenne osiedle Zdobycz Robotnicza, wybudowane w latach 1926–1932.",
+      "Po II wojnie światowej w wolnej przestrzeni wzniesiono bloki mieszkalne.",
+      "W 2012 roku układ urbanistyczny i zespół budowlany Stare Bielany został wpisany do gminnej ewidencji zabytków (identyfikator BIE03888)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Stare Bielany is an area in Bielany bounded by ul. Marymoncka, ul. Samuela Lindego and ul. Broniewskiego. It contains the interwar Zdobycz Robotnicza estate (1926–1932), listed in the municipal register of monuments in 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Stare Bielany", "url": "https://pl.wikipedia.org/wiki/Stare_Bielany"}],
+    "pewnosc": "srednia",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt."
+  },
+  {
+    "id": "stacja-metro-stare-bielany",
+    "nazwa": "Stacja metra Stare Bielany",
+    "name_en": "Stare Bielany metro station",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Jana Kasprowicza (u zbiegu z al. Zjednoczenia)",
+    "adres_historyczny": "Bielany (do 2006)",
+    "lat": 52.281944444, "lon": 20.949444444,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M1 metra zbudowana w latach 2006–2008; pierwotnie nosiła nazwę Bielany, a nazwę Stare Bielany ma od 2006 roku.",
+      "Stacja ma jedną kondygnację podziemną i długość 182 m.",
+      "Przetarg na budowę tuneli i dwóch stacji (Stare Bielany oraz Wawrzyszew) rozstrzygnięto 29 listopada 2005 r.; wygrał go Mostostal Warszawa.",
+      "Umowę zawarto 31 maja 2006 r., a stację oddano do ruchu pasażerskiego 25 października 2008 r.",
+      "Koszt budowy dwóch stacji i tuneli wyniósł 217 697 410 zł.",
+      "Projekt stacji powstał w Biurze Projektowym AiB pod kierunkiem Zdzisława Kostrzewy; wnętrza zaprojektowali prof. Mirosław Duchowski i arch. Agnieszka Sadkowska-Penczonek."
+    ],
+    "ciekawostki": [
+      "Perony mają oryginalne drewniane wykończenie, a szare posadzki i ściany są przełamane panelami z jasnego drewna."
+    ],
+    "summary_en": "Stare Bielany is an M1 metro station at the junction of ul. Jana Kasprowicza and al. Zjednoczenia, built in 2006–2008 and opened on 25 October 2008. Its platforms have wooden finishes, and the station was designed by the AiB studio under Zdzisław Kostrzewa.",
+    "ludzie": [
+      {"kto": "Zdzisław Kostrzewa", "rola": "kierownik projektu w Biurze Projektowym AiB", "wiki": null},
+      {"kto": "prof. Mirosław Duchowski", "rola": "projektant wnętrz stacji", "wiki": null},
+      {"kto": "arch. Agnieszka Sadkowska-Penczonek", "rola": "projektantka wnętrz stacji", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bielany"],
+    "zrodla": [{"tytul": "Wikipedia: Stare Bielany (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Stare_Bielany_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "staw-w-parku-olszyna",
+    "nazwa": "Staw w Parku Olszyna",
+    "name_en": "Pond in Olszyna Park",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "w pobliżu ul. Władysława Broniewskiego i al. Armii Krajowej",
+    "adres_historyczny": null,
+    "lat": 52.268611111, "lon": 20.958611111,
+    "lokalizacja": "dokladna",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw jest pozostałością dawnego rozlewiska w dolinie Rudawki wraz z przylegającym systemem kanałów.",
+      "Leży na terenie zespołu przyrodniczo-krajobrazowego Olszyna, ustanowionego w 1994 roku w celu ochrony olsu kępowego.",
+      "Powierzchnia stawu wynosi 908 m²; według Geoportalu lustro wody znajduje się na wysokości 95,3 m n.p.m.",
+      "Na zbiorniku stwierdzono występowanie krzyżówki, krakwy i rożeńca."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 908 m² pond in the Olszyna landscape park in Bielany, a remnant of an old marsh in the Rudawka valley. The Olszyna complex was established in 1994 to protect a tussock alder swamp.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Staw w Parku Olszyna", "url": "https://pl.wikipedia.org/wiki/Staw_w_Parku_Olszyna"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stawy-brustmana",
+    "nazwa": "Stawy Brustmana",
+    "name_en": "Brustman Ponds",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "okolice ul. Wolumen i ul. Lwa Tołstoja",
+    "adres_historyczny": null,
+    "lat": 52.282777777, "lon": 20.931944444,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stawy powstały prawdopodobnie ok. 1820 roku, po przejęciu w 1819 roku tego terenu przez Instytut Agronomiczny w Marymoncie.",
+      "Są pozostałością zalanych wodą glinianek powstałych po eksploatacji iłów pliocenskich, które były surowcem dla cegielni.",
+      "W sąsiedztwie stawów osiedle WSM Wawrzyszew I–VI wybudowano w latach 1973–1978 według projektu Ryszarda Tomickiego.",
+      "14 maja 1951 roku rozporządzeniem Rady Ministrów Wawrzyszew włączono w granice administracyjne Warszawy wraz z gminą Młociny.",
+      "Stawy przeszły rewitalizację w 2000 roku, a w 2019 roku zostały wpisane do gminnej ewidencji zabytków (BIE35073)."
+    ],
+    "ciekawostki": [
+      "Według niektórych źródeł w okresie PRL w pawilonie między stawami rzekomo miały znajdować się urządzenia zagłuszające nadajniki Radia Wolna Europa."
+    ],
+    "summary_en": "Two ponds connected by a canal in Wawrzyszew, Bielany. They originate from flooded clay pits from about 1820, were revitalised in 2000, and were added to the municipal register of monuments in 2019.",
+    "ludzie": [
+      {"kto": "Ryszard Tomicki", "rola": "projektant osiedla WSM Wawrzyszew I–VI (1973–1978)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Stawy Brustmana", "url": "https://pl.wikipedia.org/wiki/Stawy_Brustmana"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul wskazuje, ze nazwa stawow pochodzi od jednego z dawnych wlascicieli terenu."
+  },
+  {
+    "id": "stawy-kellera",
+    "nazwa": "Stawy Kellera",
+    "name_en": "Keller Ponds",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "park Stawy Kellera, w pobliżu ul. Gdańskiej i ul. Kolektorskiej",
+    "adres_historyczny": null,
+    "lat": 52.2775, "lon": 20.9675,
+    "lokalizacja": "dokladna",
+    "okres": "1908–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa stawów i parku pochodzi od nazwiska Emila Kellera, przedsiębiorcy, który w 1908 roku otworzył w okolicy farbiarnię przy ul. Gdańskiej 33/37.",
+      "Stawy są zasilane stale wodami podziemnymi spływającymi ze Skarpy Marymonckiej; ich łączna powierzchnia wynosi 0,2284 ha.",
+      "Odpływ ma formę cieku (dawny potok Kaskada) i połączony jest krytym kanałem z Rudawką.",
+      "Nad brzegiem większego stawu rosną dwie olsze czarne, które są pomnikami przyrody."
+    ],
+    "ciekawostki": [
+      "Między zbiornikami nad małą kaskadą zbudowano mostek w stylu japońskim."
+    ],
+    "summary_en": "Two ponds linked by a cascade in the Stawy Kellera park in Bielany, named after the entrepreneur Emil Keller, who opened a dye works nearby in 1908. The ponds are fed by groundwater from the Marymont escarpment.",
+    "ludzie": [
+      {"kto": "Emil Keller", "rola": "przedsiębiorca, który w 1908 roku otworzył farbiarnię przy ul. Gdańskiej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Staw Kaskada"],
+    "zrodla": [{"tytul": "Wikipedia: Stawy Kellera", "url": "https://pl.wikipedia.org/wiki/Stawy_Kellera"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam obiekt co rekord park-stawy-kellera (park); tu rekord dotyczy stawow."
+  },
+  {
+    "id": "stawy-mlocinskie",
+    "nazwa": "Stawy Młocińskie",
+    "name_en": "Młociny Ponds",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "w pobliżu ul. Hieroglif i ul. Odysei",
+    "adres_historyczny": null,
+    "lat": 52.309444444, "lon": 20.935277777,
+    "lokalizacja": "dokladna",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stawy są gliniankami powstałymi w wyniku zalania wodą wyeksploatowanego wyrobiska iłów, które zaopatrywało w surowiec cegielnie.",
+      "Obiekt składa się z trzech stawów o powierzchniach 0,2817, 0,1193 i 0,0831 ha, łącznie 0,4841 ha.",
+      "Lustro wód znajduje się na wysokości ok. 78,4 m n.p.m.; głębokość stawów wynosi od 1,2 do 2 m.",
+      "Stawy leżą na obszarze Warszawskiego Obszaru Chronionego Krajobrazu, utworzonego rozporządzeniem Wojewody Warszawskiego z 29 sierpnia 1997 r."
+    ],
+    "ciekawostki": [
+      "W pobliżu rośnie topola czarna „Baba”, chroniona jako pomnik przyrody."
+    ],
+    "summary_en": "Three small clay-pit ponds (0.48 ha in total) in Młociny, next to the Rezydencje Parkowe Bielany estate and the Brühl Palace gardens. They lie in the Warsaw Protected Landscape Area.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Stawy Młocińskie", "url": "https://pl.wikipedia.org/wiki/Stawy_M%C5%82oci%C5%84skie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "szarza-pod-wolka-weglowa",
+    "nazwa": "Szarża pod Wólką Węglową",
+    "name_en": "Cavalry charge near Wólka Węglowa",
+    "typ": "zdarzenie",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Dąbrowa Leśna koło Wólki Węglowej",
+    "lat": 52.2959, "lon": 20.8839,
+    "lokalizacja": "przyblizona",
+    "okres": "1939 (19 września)",
+    "istnieje": true,
+    "fakty": [
+      "Szarża była jedną z kilku polskich szarż kawaleryjskich w kampanii wrześniowej i ostatnią w dziejach jazdy polskiej wykonaną przez cały pułk kawalerii; była epizodem bitwy nad Bzurą.",
+      "W dniach 9–20 września 1939 r. nad Bzurą rozegrała się największa bitwa kampanii wrześniowej.",
+      "Podolska Brygada Kawalerii przekroczyła Bzurę pod Brochowem w nocy z 14 na 15 września.",
+      "Dowódca 14. pułku Ułanów Jazłowieckich płk dypl. Edward Godlewski zdecydował się skrócić drogę do Warszawy i skręcić na południe do Mościsk.",
+      "W Dąbrowie Leśnej koło Wólki Węglowej oba pułki natknęły się na Niemców; ułanów do szarży poprowadził dowódca 3. szwadronu, por. Marian Walicki.",
+      "Straty wyniosły ok. 105 zabitych ułanów i 100 rannych, czyli ok. 20% stanu; por. M. Walicki zmarł w wyniku ran, a natarcie się powiodło."
+    ],
+    "ciekawostki": [
+      "Kpr. Bronisław Czech podjął drzewce sztandaru 14 pułku od rannego ułana, ratując sztandar, i został za to odznaczony Orderem Virtuti Militari."
+    ],
+    "summary_en": "The cavalry charge near Wólka Węglowa in September 1939 was the last charge of a whole Polish cavalry regiment. Units of the Podolska Cavalry Brigade broke through German positions in Dąbrowa Leśna and reached Warsaw, at a cost of about 20% of their strength.",
+    "ludzie": [
+      {"kto": "płk dypl. Edward Godlewski", "rola": "dowódca 14. pułku Ułanów Jazłowieckich", "wiki": null},
+      {"kto": "por. Marian Walicki", "rola": "dowódca 3. szwadronu 14 pułku, poprowadził szarżę, zmarł w wyniku ran", "wiki": null},
+      {"kto": "kpr. Bronisław Czech", "rola": "ocalił sztandar 14 pułku, odznaczony Orderem Virtuti Militari", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Szarża pod Wólką Węglową", "url": "https://pl.wikipedia.org/wiki/Szar%C5%BCa_pod_W%C3%B3lk%C4%85_W%C4%99glow%C4%85"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Data 19 wrzesnia 1939 za artykulem Wólka Węglowa (w tym artykule nie podano daty szarzy)."
+  },
+  {
+    "id": "szpital-bielanski",
+    "nazwa": "Szpital Bielański im. ks. Jerzego Popiełuszki",
+    "name_en": "Bielański Hospital (named after Fr. Jerzy Popiełuszko)",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2873, "lon": 20.9513,
+    "lokalizacja": "dokladna",
+    "okres": "1953–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szpital został zaprojektowany w stylu socrealistycznym przez architektów Juliana Sadłowskiego i Leopolda Koehlera.",
+      "Był największą inwestycją szpitalną w okresie Planu sześcioletniego w Warszawie; prace budowlane przy zespole o kubaturze 150 000 m³ i 600 łóżkach rozpoczęto w 1953 roku.",
+      "Szpital rozpoczął działalność w grudniu 1960 roku; budowa trwała ponad 10 lat od chwili, gdy dr Aleksander Pacho zatwierdził lokalizację.",
+      "W 1982 roku oddział okulistyki przeniesiono do Szpitala Praskiego.",
+      "14 grudnia 1999 roku szpitalowi nadano imię ks. Jerzego Popiełuszki.",
+      "W 2021 roku placówkę połączono ze Szpitalem Specjalistycznym „Inflancka”; w 2022 roku oddano do użytku nowe skrzydło."
+    ],
+    "ciekawostki": [
+      "Pierwszym dyrektorem szpitala był Andrzej Trojanowski.",
+      "Od 2007 roku dyrektorem szpitala jest Dorota Gałczyńska-Zych."
+    ],
+    "summary_en": "The Bielański Hospital, named after Fr. Jerzy Popiełuszko in 1999, was designed in the socialist-realist style and built from 1953. It opened in December 1960 as the largest hospital investment of the Six-Year Plan in Warsaw.",
+    "ludzie": [
+      {"kto": "Julian Sadłowski", "rola": "architekt projektu szpitala", "wiki": null},
+      {"kto": "Leopold Koehler", "rola": "architekt projektu szpitala", "wiki": null},
+      {"kto": "dr Aleksander Pacho", "rola": "pierwszy po wojnie kierownik Stołecznego Wydziału Zdrowia, zatwierdził lokalizację", "wiki": null},
+      {"kto": "Andrzej Trojanowski", "rola": "pierwszy dyrektor szpitala", "wiki": null},
+      {"kto": "Dorota Gałczyńska-Zych", "rola": "dyrektorka szpitala od 2007", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Szpital Bielański", "url": "https://pl.wikipedia.org/wiki/Szpital_Biela%C5%84ski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres nie podany w artykule; wspolrzedne z naglowka. Szpital to instytucja, ale rekord opisuje zespol budynkow."
+  },
+  {
+    "id": "slodowiec",
+    "nazwa": "Słodowiec",
+    "name_en": "Słodowiec (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.272947, "lon": 20.958053,
+    "lokalizacja": "przyblizona",
+    "okres": "1860–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od połowy XIX wieku Słodowiec stanowił odrębną osadę w rozwidleniu ulic Marymonckiej i Włościańskiej.",
+      "W 1860 roku uruchomiono tu wielki młyn parowy, znany później jako Słodowiecki Młyn Parowy.",
+      "W 1916 roku osada została przyłączona do Warszawy.",
+      "22 sierpnia 1944 roku Niemcy spalili część zabudowań; 16 września 1944 roku oddział własowców zaatakował z terenu Słodowca pozycje powstańcze przy ul. Włościańskiej.",
+      "W latach 60. XX wieku powstało tu osiedle Bielany III, zaprojektowane przez Marię i Kazimierza Piechotków.",
+      "W 2008 roku oddano do użytku stację metra Słodowiec; w latach 2014–2016 w miejscu zburzonego dworca PKS Marymont wzniesiono apartamentowiec Słodowiec City."
+    ],
+    "ciekawostki": [
+      "Nazwa osady wzięła się od produkcji słodu, jednego z surowców do produkcji piwa.",
+      "Słodowiec był częścią wsi Buraków; nad osadą płynęła Rudawka."
+    ],
+    "summary_en": "Słodowiec is a former settlement in Bielany, named after malt production. It had a steam mill from 1860, joined Warsaw in 1916, and gave its name to the metro station opened in 2008.",
+    "ludzie": [
+      {"kto": "Maria i Kazimierz Piechotek", "rola": "projektanci osiedla Bielany III (lata 60.)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Park Kaskada (nazwa stacji metra)"],
+    "zrodla": [{"tytul": "Wikipedia: Słodowiec", "url": "https://pl.wikipedia.org/wiki/S%C5%82odowiec"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt."
+  },
+  {
+    "id": "stacja-metro-slodowiec",
+    "nazwa": "Stacja metra Słodowiec",
+    "name_en": "Słodowiec metro station",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Jana Kasprowicza (w sąsiedztwie ul. Żeromskiego i ul. Marymonckiej)",
+    "adres_historyczny": "Park Kaskada",
+    "lat": 52.276388888, "lon": 20.961388888,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M1 metra została otwarta dla ruchu pasażerskiego 23 kwietnia 2008 r. o godzinie 10:25.",
+      "Stacja ma jedną kondygnację podziemną, długość 155 m i leży 7,3 m poniżej poziomu terenu.",
+      "Przetarg na budowę tuneli i stacji rozstrzygnięto 13 września 2005 r.; wygrało go konsorcjum PRG Metro/PeBeKa.",
+      "Umowę zawarto 5 kwietnia 2006 r.; budowa trwała od maja 2006 r. do lutego 2008 r.",
+      "Firma mogłaby zacząć prace pół roku wcześniej, gdyby nie protest Hydrobudowy 6; sąd okręgowy odrzucił go 28 marca 2006 r.",
+      "Koszt budowy stacji i tuneli wyniósł 241 901 534 zł."
+    ],
+    "ciekawostki": [
+      "Stacja jest położona najpłycej na pierwszej linii metra; za nią znajduje się zwrotnica umożliwiająca zawracanie pociągów."
+    ],
+    "summary_en": "Słodowiec is an M1 metro station on ul. Jana Kasprowicza, opened on 23 April 2008. It was built in an open excavation, about 7.3 m below ground, and originally named Park Kaskada.",
+    "ludzie": [],
+    "dawne_nazwy": ["Park Kaskada"],
+    "zrodla": [{"tytul": "Wikipedia: Słodowiec (stacja metra)", "url": "https://pl.wikipedia.org/wiki/S%C5%82odowiec_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

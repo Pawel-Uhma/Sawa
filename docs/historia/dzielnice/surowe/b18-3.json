@@ -1,0 +1,227 @@
+[
+  {
+    "id": "cerkiew-zasniecia-nmp-miodowa",
+    "nazwa": "Cerkiew i monaster Zaśnięcia Najświętszej Marii Panny w Warszawie",
+    "name_en": "Dormition Greek Catholic church and Basilian monastery",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 16",
+    "adres_historyczny": null,
+    "lat": 52.247778,
+    "lon": 21.009167,
+    "lokalizacja": "dokladna",
+    "okres": "1782–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Bazylianie przybyli do Warszawy w 1721 z monasteru w Supraślu; początkowo mieszkali przy ul. Podwale.",
+      "Król August III nadał bazylianom ok. 1760 działkę przy ul. Miodowej 16, na której zbudowali skromną kaplicę.",
+      "Budynek klasztoru wzniesiono w latach 1782–1784 z fundacji unickiego metropolity kijowsko-wileńskiego Jazona Smogorzewskiego; projekt wykonał architekt Dominik Merlini.",
+      "Cerkiew poświęcono 25 sierpnia 1784.",
+      "Pod zaborem rosyjskim klasztor zlikwidowano w 1872, a cerkiew w 1875 zamieniono na świątynię prawosławną.",
+      "Cerkiew została całkowicie zniszczona podczas powstania warszawskiego; odbudowano ją w latach 1946–1949 według projektu J. Grudzińskiego.",
+      "W 1965 roku klasztor i świątynia zostały wpisane do rejestru zabytków.",
+      "W świątyni dwukrotnie gościł papież Jan Paweł II: 14 czerwca 1987 i 11 czerwca 1999."
+    ],
+    "ciekawostki": [
+      "Po II wojnie światowej warszawski klasztor był jedynym legalnie działającym klasztorem bazyliańskim w Europie Środkowo-Wschodniej."
+    ],
+    "summary_en": "The Dormition church and Basilian monastery at ul. Miodowa 16 were built in 1782–1784 with funds from Metropolitan Jazon Smogorzewski, to a design by Dominik Merlini. The church was destroyed in the Warsaw Uprising, rebuilt in 1946–1949, and listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "August III Sas", "rola": "protektor zakonu, nadał działkę przy ul. Miodowej 16", "wiki": null},
+      {"kto": "Jazon Smogorzewski", "rola": "unicki metropolita kijowsko-wileński, fundator budynku", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "gościł w świątyni w 1987 i 1999", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cerkiew i monaster Zaśnięcia Najświętszej Marii Panny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cerkiew_i_monaster_Za%C5%9Bni%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Marii_Panny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w rozdziale o architekturze; w artykule jest też błąd w nawiasie daty kamienia węgielnego (12 maja 1781), pominięty."
+  },
+  {
+    "id": "cerkiew-swietej-troicy-na-podwalu",
+    "nazwa": "Cerkiew Świętej Trójcy na Podwalu",
+    "name_en": "Holy Trinity Church on Podwale",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Podwale 5",
+    "adres_historyczny": null,
+    "lat": 52.24753,
+    "lon": 21.01143,
+    "lokalizacja": "dokladna",
+    "okres": "1818–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Najstarsza historyczna cerkiew prawosławna w Warszawie mieści się w budynku przy ul. Podwale 5; obecnie jest kaplicą Polskiego Autokefalicznego Kościoła Prawosławnego.",
+      "Pierwsza cerkiew w Warszawie powstała w 1796 w pałacu Sapiehów; funkcjonowała do 1806.",
+      "W 1818 kupcy greccy Dobricz, Barącz i Dadani kupili kamienicę przy ul. Podwale 5; w jej podwórzu wybudowano kaplicę według projektu Jakuba Kubickiego.",
+      "Do wyświęcenia soboru w 1837 ta cerkiew pełniła funkcję katedry prawosławnego biskupa warszawskiego.",
+      "Podczas powstania warszawskiego cerkiew została doszczętnie zniszczona wraz z całą Starówką.",
+      "Starostwo warszawskie przekazało posesję Kościołowi Prawosławnemu z dniem 1 marca 2002; 25 listopada 2002 nastąpiło uroczyste poświęcenie odnowionej cerkwi.",
+      "W latach 2002–2012 cerkiew była akademicka."
+    ],
+    "ciekawostki": [
+      "Cerkiew nazywano popularnie „Podwałką”: to gra słów z nazwą ulicy i rosyjskim „podwał” (piwnica), nawiązująca do skromnego wyglądu świątyni."
+    ],
+    "summary_en": "The Holy Trinity church at Podwale 5 is Warsaw's oldest historic Orthodox church, a chapel built in 1818 in the courtyard of a townhouse. It was destroyed in the Warsaw Uprising, returned to the Orthodox Church in 2002, and now serves the Polish Autocephalous Orthodox Church.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "autor projektu kaplicy z 1818", "wiki": null},
+      {"kto": "Antoni Rudlewski", "rola": "proboszcz parafii po I wojnie światowej", "wiki": null}
+    ],
+    "dawne_nazwy": ["„Podwałka” (nazwa potoczna)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cerkiew Świętej Trójcy na Podwalu w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Awi%C4%99tej_Tr%C3%B3jcy_na_Podwalu_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w zdaniu o latach 2002–2012."
+  },
+  {
+    "id": "cerkiew-sw-aleksandra-newskiego-lazienki",
+    "nazwa": "Cerkiew św. Aleksandra Newskiego w Łazienkach Królewskich",
+    "name_en": "St Alexander Nevsky Church in Łazienki Park (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie, przy pałacu Na Wyspie",
+    "adres_historyczny": "zachodni pawilon pałacu Na Wyspie w Łazienkach Królewskich",
+    "lat": 52.2151,
+    "lon": 21.0352,
+    "lokalizacja": "dokladna",
+    "okres": "1846–1947",
+    "istnieje": false,
+    "fakty": [
+      "Cerkiew prawosławna powstała w 1846 w wyniku przebudowy zachodniego pawilonu pałacu Na Wyspie w Łazienkach Królewskich.",
+      "Łazienki od 1817 były własnością Romanowów; cerkiew polecił wybudować w 1844 Mikołaj I, który sfinansował prace.",
+      "Autorem projektu był Andrzej Gołoński, który w 1836 projektował także cerkiew w Cytadeli Warszawskiej.",
+      "W architekturze cerkiew miała łączyć się z pałacem; wybrano styl klasycystyczny i biały marmur, a w pomieszczeniu ołtarzowym Karol Briułłow wykonał monumentalny fresk „Chrystus w Getsemani”.",
+      "Po I wojnie światowej cerkiew przekształcono w kaplicę obrządku rzymskokatolickiego.",
+      "Budynek rozebrano w 1947."
+    ],
+    "ciekawostki": [
+      "W 1921 roku w tej kaplicy wzięli ślub Józef Piłsudski i Aleksandra Szczerbińska."
+    ],
+    "summary_en": "The St Alexander Nevsky Orthodox church in Łazienki Park was built in 1846 by converting the western pavilion of the Palace on the Isle. Commissioned by Nicholas I, it became a Catholic chapel after WWI and was demolished in 1947.",
+    "ludzie": [
+      {"kto": "Mikołaj I", "rola": "zlecił budowę i sfinansował prace (1844)", "wiki": null},
+      {"kto": "Andrzej Gołoński", "rola": "autor projektu", "wiki": null},
+      {"kto": "Karol Briułłow", "rola": "autor fresku w pomieszczeniu ołtarzowym", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "wziął ślub w kaplicy w 1921", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cerkiew św. Aleksandra Newskiego w Warszawie (Łazienki Królewskie)", "url": "https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Aleksandra_Newskiego_w_Warszawie_%28%C5%81azienki_Kr%C3%B3lewskie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "cerkiew-sw-michala-archaniola",
+    "nazwa": "Cerkiew św. Michała Archanioła w Warszawie",
+    "name_en": "St Michael the Archangel Orthodox church (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rejon pl. Na Rozdrożu, nad Trasą Łazienkowską",
+    "adres_historyczny": "Aleje Ujazdowskie 12",
+    "lat": 52.2203,
+    "lon": 21.0256,
+    "lokalizacja": "dokladna",
+    "okres": "1892–1923",
+    "istnieje": false,
+    "fakty": [
+      "Cerkiew wojskowa wzniesiona w latach 1892–1894 przy Alejach Ujazdowskich 12 na potrzeby Litewskiego Pułku Lejbgwardii.",
+      "Kamień węgielny położono 16 czerwca 1892 na miejscu starszej, tymczasowej świątyni wojskowej; konsekracja nastąpiła 21 grudnia 1894.",
+      "Na budowę przeznaczono 130 tys. rubli; projekt przygotowano specjalnie dla tego miejsca.",
+      "Cerkiew miała pięć kopuł z krzyżami oraz dzwonnicę z dodatkową kopułą nad wejściem; reprezentowała styl starorosyjski.",
+      "Po odwrocie wojsk rosyjskich w 1915 cerkiew zaczęła popadać w ruinę; zburzono ją w 1923 w ramach akcji rewindykacji cerkwi.",
+      "Współcześnie w miejscu, w którym stała świątynia, przebiega w wykopie Trasa Łazienkowska."
+    ],
+    "ciekawostki": [
+      "Na jej miejscu wzniesiono wkrótce pawilony wystawiennicze „Łobzowianki” i muszlę koncertową."
+    ],
+    "summary_en": "St Michael the Archangel was a Russian military Orthodox church on Aleje Ujazdowskie, built in 1892–1894 for the Lithuanian Life Guards Regiment. It was abandoned after 1915 and demolished in 1923; the Trasa Łazienkowska now runs through the site.",
+    "ludzie": [
+      {"kto": "Flawian", "rola": "arcybiskup chełmsko-warszawski, przewodniczył uroczystości kamienia węgielnego (1892)", "wiki": null},
+      {"kto": "Ryszard Mączewski", "rola": "historyk, który wskazał zły stan techniczny jako główną przyczynę rozbiórki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cerkiew św. Michała Archanioła w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Micha%C5%82a_Archanio%C5%82a_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Przyczyny rozbiórki artykuł podaje za Mączewskim (stan techniczny) oraz w kontekście akcji rewindykacji."
+  },
+  {
+    "id": "cerkiew-sw-olgi",
+    "nazwa": "Cerkiew św. Olgi w Warszawie",
+    "name_en": "St Olga Orthodox church (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. 29 Listopada",
+    "adres_historyczny": "teren koszar Grodzieńskiego Pułku Huzarów Lejbgwardii",
+    "lat": 52.211111,
+    "lon": 21.043417,
+    "lokalizacja": "dokladna",
+    "okres": "1902–przed 1935",
+    "istnieje": false,
+    "fakty": [
+      "Cerkiew wzniesiono w latach 1902–1903 na potrzeby Grodzieńskiego Pułku Huzarów Lejbgwardii; została rozebrana przed 1935.",
+      "Pomysł wzniesienia odrębnej świątyni pojawił się w 1901; car Mikołaj II poparł go i osobiście ofiarował 30 tys. rubli.",
+      "Kamień węgielny położono 24 maja 1902, a nie 21 października 1901, jak planowano.",
+      "Cerkiew przeznaczono dla 700 osób; miała oświetlenie elektryczne i ogrzewanie parowe.",
+      "Projektantem był architekt eparchialny Władimir Pokrowski; budynek miał 53 m wysokości.",
+      "W 1915 cerkiew porzucono, a na ortofotomapie Warszawy z 1935 miejsce po niej jest puste."
+    ],
+    "ciekawostki": [
+      "12 czerwca 1911 na placu przy cerkwi wzniesiono brązowe popiersie rosyjskiego generała Michaiła Skobielewa."
+    ],
+    "summary_en": "St Olga's Orthodox church stood on today's ul. 29 Listopada. Built in 1902–1903 for the Grodno Life Guards Hussar Regiment, with a 30,000-ruble gift from Nicholas II, it was abandoned in 1915 and gone by 1935.",
+    "ludzie": [
+      {"kto": "Mikołaj II", "rola": "ofiarował 30 tys. rubli na budowę", "wiki": null},
+      {"kto": "Władimir Pokrowski", "rola": "architekt eparchialny, autor projektu", "wiki": null},
+      {"kto": "Michaił Skobielew", "rola": "generał, którego popiersie wzniesiono przy cerkwi (1911)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cerkiew św. Olgi w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Olgi_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też wcześniejszą cerkiew tymczasową z 1867 w tym samym kompleksie koszarowym; w rekordzie jest tylko cerkiew z lat 1902–1903."
+  },
+  {
+    "id": "cerkiew-sw-tatiany-rzymianki",
+    "nazwa": "Cerkiew św. Tatiany Rzymianki w Pałacu Staszica",
+    "name_en": "St Tatiana Orthodox home church in the Staszic Palace (removed)",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Pałac Staszica",
+    "adres_historyczny": null,
+    "lat": 52.237889,
+    "lon": 21.017972,
+    "lokalizacja": "dokladna",
+    "okres": "1895–1924",
+    "istnieje": false,
+    "fakty": [
+      "Cerkiew domowa znajdowała się w budynku Pałacu Staszica po przebudowie w stylu bizantyjsko-rosyjskim w latach 90. XIX wieku; istniała do 1924.",
+      "Pomysłodawcą przebudowy był Aleksandr Apuchtin; nawiązywała ona do Kaplicy Moskiewskiej, miejsca pochówku cara Wasyla Szujskiego, jego brata Dymitra i żony Katarzyny.",
+      "Od 1862 w pałacu mieściło się gimnazjum męskie; komitet budowy cerkwi zawiązano w 1891.",
+      "Architektem był Władimir Pokrowski; cesarz Aleksander III zaakceptował projekt 2 grudnia 1893.",
+      "Prace rozpoczęto w lutym 1892 i trwały do 1895; 29 października 1895 metropolita Flawian poświęcił krzyż wieńczący budynek.",
+      "W 1924, w toku przebudowy Mariana Lalewicza, przywrócono dawny wygląd budynku."
+    ],
+    "ciekawostki": [
+      "Nową formę budynku porównywano do „kawiarni tureckiej” i „gdańskiego pieca”; Polacy przyjęli przebudowę niechętnie."
+    ],
+    "summary_en": "The St Tatiana Orthodox home church was built inside the Staszic Palace in Warsaw in the Russo-Byzantine style; its cross was blessed in 1895. It was removed in 1924, when the palace was restored to its earlier appearance.",
+    "ludzie": [
+      {"kto": "Aleksandr Apuchtin", "rola": "pomysłodawca przebudowy w stylu bizantyjsko-rosyjskim", "wiki": null},
+      {"kto": "Władimir Pokrowski", "rola": "architekt przebudowy", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "przeprowadził przebudowę w 1924 przywracającą dawny wygląd budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cerkiew św. Tatiany Rzymianki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Tatiany_Rzymianki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres ulicy nie wynika z artykułu; pałac stoi nadal, cerkiew już nie. Okres 1895 to data poświęcenia krzyża."
+  }
+]

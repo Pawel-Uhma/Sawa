@@ -1,4 +1,6 @@
 import {
+  AUDIENCES,
+  type Audience,
   FAMILIARITY,
   type Familiarity,
   type Interest,
@@ -7,6 +9,7 @@ import {
   type Route,
   STORY_STYLES,
   type StoryStyle,
+  type Travel,
 } from "@sawa/shared";
 import { api } from "@/lib/api";
 import { getMemory, heardCounts } from "./memory";
@@ -31,6 +34,7 @@ export type Listener = {
   interests: Interest[];
   familiarity?: Familiarity;
   storyStyle?: StoryStyle;
+  audience?: Audience;
 };
 
 export function listenerOf(profile: Profile): Listener {
@@ -38,20 +42,23 @@ export function listenerOf(profile: Profile): Listener {
     interests: toPlannerInterests(profile.interests),
     familiarity: oneOf(FAMILIARITY, profile.familiarity),
     storyStyle: oneOf(STORY_STYLES, profile.storyStyle),
+    audience: oneOf(AUDIENCES, profile.audience),
   };
 }
 
 /**
  * Plans a ride from `origin` (lib/start-point.ts) with `POST /v1/routes/plan`. Sends what Sawa
- * already told (lib/memory.ts), so places told in full give way to new ones.
+ * already told (lib/memory.ts), so places told in full give way to new ones. Without `durationMin`
+ * (only with a destination) the planner returns the fastest way there.
  */
 export async function planRoute(
   origin: LatLng,
-  durationMin: number,
+  durationMin: number | undefined,
   profile: Profile,
   end: RideEnd = { type: "loop" },
+  travel: Travel = "transit",
 ): Promise<Route> {
-  const { interests, familiarity, storyStyle } = listenerOf(profile);
+  const { interests, familiarity, storyStyle, audience } = listenerOf(profile);
   const heard = heardCounts(getMemory());
   const res = await api.v1.routes.plan.$post({
     json: {
@@ -59,8 +66,10 @@ export async function planRoute(
       durationMin,
       interests,
       ...rideEndRequest(end),
+      travel,
       familiarity,
       storyStyle,
+      audience,
       heard: Object.keys(heard).length > 0 ? heard : undefined,
     },
   });
@@ -93,8 +102,11 @@ export function routeStops(route: Route): MockStop[] {
     name: place.name,
     interest: "",
     line: route.legs[place.legIndex]?.line ?? "",
+    mode: route.legs[place.legIndex]?.mode,
     coord: [place.position.lng, place.position.lat],
     along: place.etaSec / totalSec,
     etaMin: Math.round(place.etaSec / 60),
+    etaSec: place.etaSec,
+    windowSec: place.windowSec,
   }));
 }

@@ -1,0 +1,181 @@
+[
+  {
+    "id": "ulica-zlota",
+    "nazwa": "ulica Złota",
+    "name_en": "Złota Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Złota",
+    "adres_historyczny": null,
+    "lat": 52.229261,
+    "lon": 20.9946411,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulica Złota została nadana w 1770 roku; wcześniej była dawną drogą narolną.",
+      "W 1784 roku przy ulicy stało 29 drewnianych zabudowań mieszkalnych, cegielnia oraz dwa browary.",
+      "27 lipca 1907 roku oddano linię tramwaju konnego; od 7 sierpnia 1908 roku ulicą kursowały tramwaje elektryczne.",
+      "Ruch tramwajowy wstrzymano 1 maja 1939 roku ze względu na małą szerokość ulicy i rosnący ruch samochodowy; przywrócono go 10 listopada 1941 roku, a ostatecznie zawieszono 1 czerwca 1944 roku.",
+      "W 1952 roku, w związku z budową Pałacu Kultury i Nauki, zlikwidowano środkowy odcinek ulicy.",
+      "31 grudnia 1970 roku oddano tunel drogowy o długości 80 m pod ulicą Marszałkowską, prowadzący do placu Defilad.",
+      "W czerwcu 2024 roku tunel zamknięto, a ulicę przebudowano na deptak: zasadzono 80 drzew, zamontowano fontanny, a tunel zamieniono w zbiornik retencyjny."
+    ],
+    "ciekawostki": [
+      "Część ulicy wypełniały luksusowe sklepy na parterach kamienic, ale mieściły się przy niej także zakłady przemysłowe, m.in. fabryka mydeł Karola Majewskiego."
+    ],
+    "summary_en": "Złota Street runs through the Wola and Śródmieście districts and was named in 1770. Its tram line ran from 1907 and 1908 until 1944, and in 2024 the street was rebuilt as a pedestrian promenade.",
+    "ludzie": [
+      {"kto": "Władysław Kniewski", "rola": "działacz komunistyczny, patron wschodniego odcinka ulicy w latach 1950–1990", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Władysława Kniewskiego (wschodni odcinek, 1950–1990)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Złota w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Z%C5%82ota_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-sliska",
+    "nazwa": "ulica Śliska",
+    "name_en": "Śliska Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Śliska",
+    "adres_historyczny": null,
+    "lat": 52.2315479,
+    "lon": 20.997314,
+    "lokalizacja": "przyblizona",
+    "okres": "1767–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona ok. 1767 roku od ulicy Wielkiej na zachód, w związku z parcelacją okolicznych gruntów; nazwę Śliska nadano w 1770 roku.",
+      "Po 1809 roku osiedlało się tu coraz więcej ludności żydowskiej; w XIX wieku w kamienicach działało kilka żydowskich domów modlitwy.",
+      "W latach 1876–1878 zbudowano zespół Szpitala Dziecięcego Bersohnów i Baumanów.",
+      "W 1886 roku w budynku nr 28 uruchomiono warsztaty dla młodzieży żydowskiej, pierwszą żydowską szkołę zawodową w Królestwie Polskim.",
+      "W latach 1912–1914 wzniesiono gmach Towarzystwa Wzajemnej Pomocy Pracowników Handlowych i Przemysłowych przy ul. Siennej 16 i ul. Śliskiej 9.",
+      "W listopadzie 1940 roku ulica znalazła się w warszawskim getcie.",
+      "W 1952 roku, w związku z budową Pałacu Kultury i Nauki, ulicę skrócono, wyburzając zachowaną zabudowę.",
+      "W latach 1961–1967 powstało osiedle Emilia, a z przedwojennej zabudowy zachowały się kamienice nr 52, 54 i 56 oraz budynki szpitala."
+    ],
+    "ciekawostki": [
+      "W 1955 roku na dawnym skrzyżowaniu z ul. Wielką wmurowano tablicę z napisem „Tu było skrzyżowanie ulic Wielkiej i Śliskiej”.",
+      "Według Franciszka Sobieszczańskiego nazwa ulicy mogła wiązać się z gładką nawierzchnią."
+    ],
+    "summary_en": "Śliska Street, in the Wola and Śródmieście districts, was laid out around 1767. In the 19th and early 20th centuries it was home to a Jewish community, a children's hospital and a vocational school, and it was inside the Warsaw Ghetto in 1940–1942.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Śliska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%9Aliska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "szpital-bersohnow-baumanow",
+    "nazwa": "Dawny Szpital Dziecięcy Bersohnów i Baumanów",
+    "name_en": "Former Bersohn and Bauman Children's Hospital",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Śliska 51",
+    "adres_historyczny": "ul. Śliska 51",
+    "lat": 52.2315479,
+    "lon": 20.997314,
+    "lokalizacja": "przyblizona",
+    "okres": "1876–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół szpitala zbudowano w latach 1876–1878 na działce między ulicami Śliską i Sienną.",
+      "Główny budynek szpitala powstał wzdłuż ul. Śliskiej (nr 51).",
+      "We wrześniu 1939 roku zabudowa ulicy ucierpiała w czasie obrony Warszawy.",
+      "W czasie powstania warszawskiego zorganizowano w budynku szpitala szpital zgrupowania „Chrobry II”.",
+      "Budynki szpitala należą do przedwojennej zabudowy ulicy, która zachowała się do dziś."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Built in 1876–1878 between Śliska and Sienna streets, the Bersohn and Bauman Children's Hospital was a Jewish charitable institution. During the Warsaw Uprising it served as a field hospital for the Chrobry II group.",
+    "ludzie": [
+      {"kto": "Paulina Baumanowa", "rola": "fundatorka budynku nr 28 przy ul. Śliskiej, do którego w 1886 roku przeniesiono warsztaty dla młodzieży żydowskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Śliska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%9Aliska_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne to środek ulicy Śliskiej, nie budynku. Artykuł nie podaje dokładnej lokalizacji szpitala; zachowanie budynku wynika z listy ważniejszych obiektów ulicy."
+  },
+  {
+    "id": "befehlstelle-zelazna-103",
+    "nazwa": "Befehlstelle",
+    "name_en": "Befehlstelle (Warsaw Ghetto)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Żelazna 103",
+    "adres_historyczny": "ul. Żelazna 103",
+    "lat": 52.24160583,
+    "lon": 20.985340665,
+    "lokalizacja": "dokladna",
+    "okres": "1942–1943",
+    "istnieje": null,
+    "fakty": [
+      "Kamienicę przy ul. Żelaznej 103 zbudowano pod koniec lat 30. XX wieku; w grudniu 1941 roku ten fragment ulicy włączono do getta warszawskiego.",
+      "22 lipca 1942 roku, w dniu rozpoczęcia wielkiej akcji deportacyjnej, zajęto budynek i ulokowano tu siedzibę niemieckiego „sztabu wysiedleńczego” przybyłego z Lublina.",
+      "Mieszkańcom dano 15 minut na opuszczenie budynku.",
+      "Przez następnych siedem tygodni SS-Hauptsturmführer Hermann Höfle i jego podwładni kierowali z tego miejsca wywózkami warszawskich Żydów do obozu zagłady w Treblince.",
+      "W Befehlstelle zatrudniono pewną liczbę Żydów jako pomocniczą siłę roboczą; w dniu wyjazdu lubelskiego sztabu większość z nich została zabita lub deportowana.",
+      "12 września 1942 roku do budynku przeniósł się warszawski sztab wysiedleńczy pod dowództwem SS-Untersturmführera Karla Georga Brandta.",
+      "Dziewięć dni później z Umschlagplatzu odjechał ostatni transport do Treblinki, a akcja deportacyjna została zakończona.",
+      "Befehlstelle było prowizorycznym aresztem i miejscem kaźni, a jego likwidacja nastąpiła w lipcu 1943 roku, niedługo po stłumieniu powstania w getcie."
+    ],
+    "ciekawostki": [
+      "Po godzinach „pracy” esesmani urządzali w budynku alkoholowe libacje."
+    ],
+    "summary_en": "Befehlstelle was an SS command post and makeshift prison in the Warsaw Ghetto, located at ul. Żelazna 103 from July 1942 to July 1943. From this building the SS directed the deportation of Warsaw Jews to the Treblinka extermination camp.",
+    "ludzie": [
+      {"kto": "Hermann Höfle", "rola": "SS-Hauptsturmführer, kierował wywózkami z Befehlstelle", "wiki": null},
+      {"kto": "Karl Georg Brandt", "rola": "SS-Untersturmführer, dowódca warszawskiego sztabu wysiedleńczego od 12 września 1942", "wiki": null},
+      {"kto": "Adam Czerniaków", "rola": "przewodniczący warszawskiego Judenratu, autor zapisu w dzienniku z 22 lipca 1942", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Befehlstelle (getto warszawskie)", "url": "https://pl.wikipedia.org/wiki/Befehlstelle_%28getto_warszawskie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje, czy kamienica zachowała się do dziś, więc istnieje ustawione na null."
+  },
+  {
+    "id": "centralny-dworzec-pocztowy",
+    "nazwa": "Centralny Dworzec Pocztowy",
+    "name_en": "Central Post Station",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Żelazna 21 (rozebrany)",
+    "adres_historyczny": "ul. Żelazna 21",
+    "lat": 52.227488888,
+    "lon": 20.994519444,
+    "lokalizacja": "dokladna",
+    "okres": "1936–2007",
+    "istnieje": false,
+    "fakty": [
+      "Dworzec wzniesiono częściowo na terenach dawnego Dworca Kaliskiego.",
+      "Budowę według projektu Józefa Szanajcy w stylu funkcjonalistycznym rozpoczęto w 1936 roku.",
+      "Konstrukcję żelbetową zaprojektował inż. Wenczesław Poniż.",
+      "Wybuch II wojny światowej przerwał budowę; w chwili wybuchu wojny jedno skrzydło było w stanie surowym, pozostałe w budowie.",
+      "Oddano go do użytku w połowie września 1941 roku i pomalowano w barwy maskujące.",
+      "W dniach 3–5 sierpnia 1944 roku zdobyli go powstańcy warszawscy; był lekko uszkodzony i mieściła się w nim reduta powstańcza.",
+      "Po wojnie został częściowo odbudowany, a częściowo rozebrany; ostatni fragment rozebrano w latach 2006–2007.",
+      "Nieruchomość jest własnością Poczty Polskiej, która planowała tam nową siedzibę, a następnie biurowiec."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Central Post Station was a functionalist railway station for mail traffic at ul. Żelazna 21, begun in 1936 on part of the former Kaliski Station site. Partly rebuilt after the war, it was demolished in 2006–2007.",
+    "ludzie": [
+      {"kto": "Józef Szanajca", "rola": "autor projektu w stylu funkcjonalistycznym", "wiki": null},
+      {"kto": "Wenczesław Poniż", "rola": "inżynier, projektant konstrukcji żelbetowej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dworzec Kaliski (teren, na którym częściowo wzniesiono dworzec)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centralny Dworzec Pocztowy", "url": "https://pl.wikipedia.org/wiki/Centralny_Dworzec_Pocztowy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "akcja-milke",
+    "nazwa": "Akcja Milke",
+    "name_en": "Milke operation (1943 failed assassination)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Szucha (dzielnica policyjna)",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "05.10.1943",
+    "istnieje": true,
+    "fakty": [
+      "Nieudany zamach 5 października 1943 przeprowadzili żołnierze oddziału „Agat” na volksdeutscha Alfreda Milkego, konfidenta i funkcjonariusza Gestapo.",
+      "Miejscem akcji była szczególnie chroniona dzielnica policyjna w Warszawie.",
+      "Milke nie przyszedł w miejsce planowanego zamachu.",
+      "Przechodzący w pobliżu SS-man wyciągnął pistolet i został natychmiast zastrzelony przez żołnierzy AK; w wymianie ognia zginął SS-Obersturmführer Joseph Lechner.",
+      "Z powodu dekonspiracji i alarmu żołnierze AK odstąpili od planowanej akcji bez strat własnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 5 October 1943 soldiers of the Agat unit tried to kill Alfred Milke, a volksdeutsch informer and Gestapo official, in the heavily guarded police district of Warsaw on Aleja Szucha. Milke did not appear, and a shootout with an SS man ended the attempt.",
+    "ludzie": [
+      {"kto": "Alfred Milke", "rola": "volksdeutsch, konfident i funkcjonariusz Gestapo, cel zamachu", "wiki": null},
+      {"kto": "Joseph Lechner", "rola": "SS-Obersturmführer, szef referatu w urzędzie Komendanta SD, zastrzelony w wymianie ognia", "wiki": null},
+      {"kto": "Tadeusz Wronowski ps. „Przygoda”", "rola": "dowódca akcji", "wiki": null},
+      {"kto": "Aleksander Kunicki ps. „Rayski”", "rola": "rozpoznanie akcji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja Milke", "url": "https://pl.wikipedia.org/wiki/Akcja_Milke"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka są identyczne dla kilku „Akcja …” (52.232222, 21.008333), więc to punkt ogólny. Artykuł nie podaje dokładnego adresu."
+  },
+  {
+    "id": "akcja-stamm",
+    "nazwa": "Akcja Stamm",
+    "name_en": "Stamm operation (1944 failed assassination)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. J. Ch. Szucha (przy nr 16 i 25)",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "06.05.1944",
+    "istnieje": true,
+    "fakty": [
+      "Nieudany zamach 6 maja 1944 w alei J. Ch. Szucha przeprowadzili żołnierze oddziału specjalnego Kedywu KG AK „Pegaz” na Waltera Stamma, kierownika Wydziału IV w urzędzie KdS na dystrykt warszawski.",
+      "Z powodu niedopracowanego planu i niefortunnych okoliczności AK nie uzyskała efektu zaskoczenia; Stamm wyszedł bez szwanku, a w walce poległo lub odniosło śmiertelne rany ośmiu żołnierzy dywersji.",
+      "Stamm mieszkał w kamienicy Spółdzielni Mieszkaniowej „Proporzec” przy al. Szucha 16, niemal naprzeciwko gmachu Gestapo.",
+      "Gmach Gestapo mieścił się przy al. Szucha 25.",
+      "Wydział IV, którym kierował Stamm, odpowiadał za planowanie i koordynację łapanek, wywózek do obozów oraz egzekucji w Warszawie."
+    ],
+    "ciekawostki": [
+      "Zygmunt Kaczyński ps. „Wesoły”, akwizytor firmy „E. Wedel”, miał stały dostęp do gmachu Gestapo i zdobył zdjęcie Stamma."
+    ],
+    "summary_en": "On 6 May 1944 soldiers of the Pegaz unit attacked SS-Sturmbannführer Walter Stamm, head of Department IV of the Warsaw Gestapo office, on Aleja Szucha in Warsaw. The surprise failed, Stamm survived, and eight Polish soldiers were killed or mortally wounded.",
+    "ludzie": [
+      {"kto": "Walter Stamm", "rola": "SS-Sturmbannführer, kierownik Wydziału IV w urzędzie KdS, cel zamachu", "wiki": null},
+      {"kto": "Zygmunt Kaczyński ps. „Wesoły”", "rola": "wywiadowca „Pegaza”, akwizytor firmy „E. Wedel”", "wiki": null},
+      {"kto": "Aleksander Kunicki ps. „Rayski”", "rola": "szef komórki wywiadowczej „Pegaza”", "wiki": null},
+      {"kto": "Adam Borys ps. „Pług”", "rola": "dowódca „Pegaza”, kapitan", "wiki": null},
+      {"kto": "Jerzy Zapadko ps. „Mirski”", "rola": "dowódca II plutonu „Pegaza”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja Stamm", "url": "https://pl.wikipedia.org/wiki/Akcja_Stamm"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Tekst w paczce urywa się w opisie kwietnia 1944 roku, przed ostatecznym planem akcji. Współrzędne z nagłówka są identyczne dla kilku „Akcja …” (punkt ogólny)."
+  },
+  {
+    "id": "akcja-weffels",
+    "nazwa": "Akcja Weffels",
+    "name_en": "Weffels operation (1943 assassination)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "róg ul. Koszykowej i al. Wyzwolenia (dawniej ul. 6 Sierpnia)",
+    "adres_historyczny": "róg ul. Koszykowej i ul. 6 Sierpnia",
+    "lat": 52.219722,
+    "lon": 21.020833,
+    "lokalizacja": "dokladna",
+    "okres": "01.10.1943",
+    "istnieje": true,
+    "fakty": [
+      "Udany zamach na gestapowca Ernsta Weffelsa przeprowadzili 1 października 1943 żołnierze harcerskiego oddziału „Agat”.",
+      "Weffels był kierownikiem zmiany oddziału kobiecego na Pawiaku, tzw. Serbii, znanym z sadyzmu wobec więźniów.",
+      "Po donosie konfidentki Sabiny Bykowskiej Weffels odkrył, że za przekazywanie grypsów odpowiadał polski personel szpitala więziennego.",
+      "Weffels mieszkał w domu przy ul. Koszykowej 6, przylegającym bezpośrednio do siedziby Kripo.",
+      "Wykonanie wyroku miało odbyć się na rogu Koszykowej i 6 Sierpnia; w okolicy znajdowały się główny gmach gestapo, dowództwo SS i policji oraz 2 bataliony Schutzpolizei.",
+      "Weffels został ranny przy wyjściu z domu, a potem dobity w parku przy ławce; wykonawcą był Kazimierz Kardaś ps. „Orkan”."
+    ],
+    "ciekawostki": [
+      "Odprawy prowadzono w mieszkaniu Kardasia przy ul. Świętojerskiej 18, a broń rozdysponowano w parku Ujazdowskim."
+    ],
+    "summary_en": "On 1 October 1943 Agat scouts shot Ernst Weffels, a Gestapo officer who ran a women's ward at the Pawiak prison, at the corner of Koszykowa and 6 Sierpnia (now Aleja Wyzwolenia) streets in Warsaw.",
+    "ludzie": [
+      {"kto": "Ernst Weffels", "rola": "gestapowiec, kierownik zmiany oddziału kobiecego na Pawiaku, cel zamachu", "wiki": null},
+      {"kto": "Sabina Bykowska", "rola": "konfidentka, której donos doprowadził do ustalenia celu", "wiki": null},
+      {"kto": "Kazimierz Kardaś ps. „Orkan”", "rola": "dowódca akcji i wykonawca", "wiki": null},
+      {"kto": "Ryszard Dulniak ps. „Daniel”", "rola": "wykonawca", "wiki": null},
+      {"kto": "Aleksander Kunicki ps. „Rayski”", "rola": "rozpoznanie", "wiki": null},
+      {"kto": "Ewa Prauss-Płoska ps. „Ewa”", "rola": "rozpoznanie", "wiki": null},
+      {"kto": "Maria Stypułkowska-Chojecka ps. „Kama”", "rola": "obserwacja i sygnalizacja", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. 6 Sierpnia (obecnie al. Wyzwolenia)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja Weffels", "url": "https://pl.wikipedia.org/wiki/Akcja_Weffels"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa się w opisie odwrotu. Współrzędne z nagłówka (52.219722, 21.020833) wskazują na skrzyżowanie, zgodnie z opisem miejsca wykonania wyroku."
+  },
+  {
+    "id": "akcja-panienka",
+    "nazwa": "Akcja „Panienka”",
+    "name_en": "\"Panienka\" operation (1944 attack at Warszawa Zachodnia station)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "dworzec Warszawa Zachodnia (posterunek Bahnschutzpolizei)",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "04.03.1944",
+    "istnieje": true,
+    "fakty": [
+      "Zamach 4 marca 1944 przeprowadził oddział Kedywu AK na dowódcę posterunku Bahnschutzpolizei na dworcu Warszawa Zachodnia, Karla Schmalza.",
+      "Akcja rozpoczęła się tuż przed godziną 11:00; uruchomione betoniarki zagłuszały strzały.",
+      "Zamachu dokonał 17-osobowy oddział Kedywu, w tym 10-osobowy oddział wykonawczy.",
+      "W wyniku akcji Polacy zlikwidowali pięciu Niemców, nie ponosząc strat w ludziach.",
+      "Schmalz był sadystą, za torturowanie i zamordowanie wielu Polaków zatrzymanych w rejonie przydworcowym (szacowana liczba ofiar to 100–200 osób) został skazany na śmierć przez podziemny sąd."
+    ],
+    "ciekawostki": [
+      "Kryptonim akcji pochodził od przezwiska Schmalza, „Panienki”, ze względu na jego specyficzną urodę.",
+      "Akcję, z drobnymi różnicami, przedstawiono w powieści Romana Bratnego „Kolumbowie. Rocznik 20” oraz w serialu telewizyjnym pod tym samym tytułem (odc. 2)."
+    ],
+    "summary_en": "On 4 March 1944 a Kedyw unit of the Home Army attacked the Bahnschutzpolizei post at Warszawa Zachodnia railway station and killed its commander, Karl Schmalz, and four other Germans without losses. The operation was later the basis of a novel and a TV series.",
+    "ludzie": [
+      {"kto": "Karl Schmalz", "rola": "feldfebel, dowódca posterunku Bahnschutzpolizei, cel zamachu", "wiki": null},
+      {"kto": "Kazimierz Jakubowski ps. „Kazik”", "rola": "dowódca akcji", "wiki": null},
+      {"kto": "Krzysztof Sobieszczański ps. „Kolumb”", "rola": "uczestnik akcji, prowadził rozmowę z załogą w mundurze", "wiki": null},
+      {"kto": "Jan Barszczewski ps. „Janek”", "rola": "uczestnik akcji w niemieckim mundurze", "wiki": null},
+      {"kto": "Stanisław Likiernik", "rola": "uczestnik akcji", "wiki": null},
+      {"kto": "Andrzej Englert", "rola": "uczestnik akcji", "wiki": null},
+      {"kto": "Leon Zubrzycki", "rola": "uczestnik akcji", "wiki": null},
+      {"kto": "Roman Bratny", "rola": "autor powieści „Kolumbowie. Rocznik 20”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Akcja „Panienka”", "url": "https://pl.wikipedia.org/wiki/Akcja_%E2%80%9EPanienka%E2%80%9D"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Dworzec Warszawa Zachodnia zwykle leży na Woli, a nagłówek podaje dzielnicę Śródmieście (przyjęto nagłówek). Współrzędne z nagłówka są identyczne dla kilku „Akcja …” i nie odpowiadają dworcowi, więc lokalizacja jest przybliżona lub błędna; do weryfikacji. Artykuł podaje też, że po akcji jeden ze świadków został później rozpoznany i zamordowany wraz z Kazimierzem Jakubowskim."
+  },
+  {
+    "id": "alhambra",
+    "nazwa": "Alhambra",
+    "name_en": "Alhambra (music-hall theatre, 1933)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karowa 18",
+    "adres_historyczny": "ul. Karowa 18",
+    "lat": 52.24286,
+    "lon": 21.01764,
+    "lokalizacja": "dokladna",
+    "okres": "1933",
+    "istnieje": false,
+    "fakty": [
+      "Alhambra była efemeryczną sceną music-hallową przy ul. Karowej 18, działającą w 1933 roku w niedawnej siedzibie Teatru Artystów ZASP.",
+      "Powstała w lutym 1933 roku jako kinoteatr, na 1700 miejsc, wzorowana na paryskich scenach tego rodzaju.",
+      "Miała być konkurencją dla rewii Morskie Oko; program inauguracyjny odbył się 17 lutego 1933 roku.",
+      "Teatr został rozwiązany w kwietniu 1933 roku, a konkurencyjne Morskie Oko upadło w lipcu.",
+      "Osiągnięciem teatru było zaprezentowanie Reri, tahitańskiej artystki znanej z filmu Tabu (1931); wystąpiła w programie z 17 marca."
+    ],
+    "ciekawostki": [
+      "Na deskach teatru pojawili się m.in. Maria Balcerkiewiczówna, Ina Ney, Władysław Walter i Tadeusz Olsza."
+    ],
+    "summary_en": "Alhambra was a short-lived music-hall stage at 18 Karowa Street in Warsaw, active in 1933 in the former seat of the ZASP Artists' Theatre. It seated about 1,700 and closed in April 1933.",
+    "ludzie": [
+      {"kto": "Reri", "rola": "tahitańska artystka, gwiazda programu", "wiki": null},
+      {"kto": "Ina Ney", "rola": "występowała na scenie", "wiki": null},
+      {"kto": "Władysław Walter", "rola": "występował na scenie", "wiki": null},
+      {"kto": "Tadeusz Olsza", "rola": "występował na scenie", "wiki": null},
+      {"kto": "Maria Balcerkiewiczówna", "rola": "występowała na scenie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Alhambra (teatr w Warszawie)", "url": "https://pl.wikipedia.org/wiki/Alhambra_%28teatr_w_Warszawie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie mówi, czy budynek przy ul. Karowej 18 przetrwał wojnę, stąd istnieje: false dotyczy sceny, a nie budynku."
+  }
+]

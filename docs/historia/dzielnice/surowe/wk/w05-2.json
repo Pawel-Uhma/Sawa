@@ -1,0 +1,173 @@
+[
+  {
+    "id": "ulica-bytomska",
+    "nazwa": "Ulica Bytomska",
+    "name_en": "Bytomska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Bytomska",
+    "adres_historyczny": null,
+    "lat": 52.2736687,
+    "lon": 20.9838645,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Bytomska ma długość ponad 250 metrów i leży na Żoliborzu.",
+      "Biegnie od ul. Bohomolca do ul. Mścisławskiej i nie ma żadnych przecznic.",
+      "Jej przedłużeniem w kierunku południowym jest ulica Tucholska.",
+      "Nazwa pochodzi od Bytomia, miasta w województwie śląskim, w centrum Górnośląskiego Okręgu Przemysłowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bytomska is a street of just over 250 metres in Żoliborz, running from Bohomolca to Mścisławska street. It was built in the 1930s and is named after the Silesian city of Bytom.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Bytomska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Bytomska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "cieszkowskiego-1-3-szpital-zywiciel",
+    "nazwa": "Kamienica Cieszkowskiego 1/3 (szpital AK „Żywiciel”)",
+    "name_en": "Tenement at Cieszkowskiego 1/3 (Home Army hospital „Żywiciel”)",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Cieszkowskiego 1/3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "istnieje": true,
+    "fakty": [
+      "W budynku przy Cieszkowskiego 1/3 podczas powstania warszawskiego mieścił się szpital nr 100 XXII obwodu AK „Żywiciel”.",
+      "W tym bloku mieszkali i tworzyli Łucja Krajewska (malarka, poetka, rzeźbiarka) oraz mgr inż. arch. Stanisław Skrypij, komendant Gwardii Ludowej w Warszawie, zamordowany przez gestapo w 1943 roku.",
+      "Przy budynku znajdują się tablice upamiętniające szpital „Żywiciela”, Łucję Krajewską i Stanisława Skrypija."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The tenement at Cieszkowskiego 1/3 housed a Home Army hospital (No. 100, „Żywiciel”) during the Warsaw Uprising of 1944. Painter and poet Łucja Krajewska and Gwardia Ludowa commander Stanisław Skrypij lived there; memorial plaques commemorate all three.",
+    "ludzie": [
+      {"kto": "Łucja Krajewska", "rola": "malarka, poetka, rzeźbiarka; mieszkała w budynku", "wiki": null},
+      {"kto": "Stanisław Skrypij", "rola": "komendant Gwardii Ludowej w Warszawie, zamordowany przez gestapo w 1943 roku; mieszkał w budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Cieszkowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Cieszkowskiego"}],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w artykule o ulicy; adres z tekstu, do geokodowania. Rekord wydzielony z artykułu o ulicy."
+  },
+  {
+    "id": "ulica-czujna",
+    "nazwa": "Ulica Czujna",
+    "name_en": "Czujna Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Czujna",
+    "adres_historyczny": null,
+    "lat": 52.2676491,
+    "lon": 21.0015656,
+    "lokalizacja": "przyblizona",
+    "okres": "1725",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Czujna ma ponad 250 metrów długości i odchodzi od ul. Wybrzeże Gdyńskie, prowadząc na teren Cytadeli przez Bramę Bielańską.",
+      "Ulica powstała już w 1725 roku jako jedna z lokalnych dróg w dzielnicy Fawory; jej wytyczenie wiązało się z budową Koszar Gwardii Pieszej Koronnej.",
+      "W pobliżu dawnej ulicy Czujnej znajdowały się browar i dworek Dominika Wagnera, willa Macieja Łyszkiewicza oraz niewielki cmentarz ewangelicki.",
+      "Ulica została zniszczona podczas budowy Cytadeli, a później jej nazwę otrzymał wjazd do twierdzy.",
+      "Ulica nie posiada żadnych przecznic; jej przedłużenie w kierunku południowym to ul. Gwardii, ale przejazd nie jest możliwy."
+    ],
+    "ciekawostki": [
+      "Obecnie nie ma budynków z adresem ul. Czujnej; przy ulicy znajdują się Brama Bielańska oraz zabudowania twierdzy."
+    ],
+    "summary_en": "Czujna Street is a short road leading from Wybrzeże Gdyńskie through the Bielańska Gate into the Citadel of Warsaw. It existed from 1725 as a local road in Fawory, was destroyed during the Citadel's construction, and its name later went to the fortress entrance.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Czujna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Czujna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Infobox podaje okres 'lata 30. XIX wieku', tekst podaje rok 1725 (wpisano 1725). Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-dyminska",
+    "nazwa": "Ulica Dymińska",
+    "name_en": "Dymińska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Dymińska",
+    "adres_historyczny": null,
+    "lat": 52.2620122,
+    "lon": 20.9992754,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Dymińska ma około 320 metrów długości i leży na Starym Żoliborzu.",
+      "Biegnie od ul. Fawory, położonej na terenie Cytadeli, przez Bramę Powązkowską Cytadeli w kierunku południowo-zachodnim.",
+      "Kończy się ślepo w pobliżu wiaduktu ul. Mickiewicza; jej przedłużeniem są schodki na ten wiadukt.",
+      "Jej przecznicami są ulice Zajączka i Krajewskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Dymińska is a short street of about 320 metres on Stary Żoliborz. It runs from Fawory street inside the Citadel through the Powązki Gate and ends at a dead end near the Mickiewicza overpass.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Dymińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Dymińska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-dziennikarska",
+    "nazwa": "Ulica Dziennikarska",
+    "name_en": "Dziennikarska Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Dziennikarska",
+    "adres_historyczny": null,
+    "lat": 52.2715123,
+    "lon": 20.9899377,
+    "lokalizacja": "przyblizona",
+    "okres": "od końca lat 20. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ma ponad 300 metrów długości i biegnie od ul. Krasińskiego do ul. Promyka.",
+      "Nazwa pochodzi od niewielkiej kolonii mieszkaniowej zbudowanej pod koniec lat 20. XX wieku przez Spółdzielnię Mieszkaniową Warszawskich Dziennikarzy.",
+      "Osiedle domów zaprojektował Kazimierz Tołłoczko; zawierało się w kwadracie ulic Krasińskiego, Sułkowskiego, Karpińskiego i Dziennikarskiej.",
+      "W 2011 roku ulica została wyremontowana, a podczas prac odkryto dawną nawierzchnię z kamienia polnego.",
+      "Domy pod numerami 11 i 12, wraz z ogrodami, są wpisane do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Od tej kolonii wzięła się przedwojenna nazwa tej części Starego Żoliborza: Żoliborz Dziennikarski."
+    ],
+    "summary_en": "Dziennikarska runs for over 300 metres in Stary Żoliborz, from Krasińskiego to Promyka street. It takes its name from a housing colony built in the late 1920s by the journalists' housing cooperative, designed by Kazimierz Tołłoczko.",
+    "ludzie": [
+      {"kto": "Kazimierz Tołłoczko", "rola": "architekt osiedla domów przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Dziennikarska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Dziennikarska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Infobox podaje 'lata 30. XX wieku', tekst podaje koniec lat 20. Współrzędne z artykułu, środek odcinka."
+  },
+  {
+    "id": "ulica-filarecka",
+    "nazwa": "Ulica Filarecka",
+    "name_en": "Filarecka Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Filarecka",
+    "adres_historyczny": null,
+    "lat": 52.2687746,
+    "lon": 20.9829049,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Filarecka ma ponad 150 metrów długości i leży na Żoliborzu.",
+      "Tworzy łuk między ulicami Krasińskiego i Słowackiego i nie posiada żadnych przecznic.",
+      "Przy ul. Filareckiej 3 mieści się urząd pocztowy nr 32."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Filarecka is a curved street of about 150 metres in Żoliborz, linking Krasińskiego and Słowackiego streets. Post office No. 32 is located at number 3.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Filarecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Filarecka"}],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z artykułu, środek odcinka. Mało faktów historycznych w artykule."
+  }
+]

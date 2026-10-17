@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ulica-laserowa",
+    "nazwa": "Ulica Laserowa",
+    "name_en": "Laserowa Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Laserowa",
+    "adres_historyczny": null,
+    "lat": 52.259927,
+    "lon": 20.9005268,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 60. XX wieku wg projektu mgr. inż. Jerzego Bogdana Raczka i połączyła ul. Ebro z ul. Sobczaka.",
+      "W latach 70. XX wieku wybudowano przy niej niewielkie osiedle mieszkaniowe wg projektu mgr inż. arch. Danuty Szafnickiej; inwestorem było Wojskowe Spółdzielcze Zrzeszenie Budowy Domów Jednorodzinnych przy Wojskowej Akademii Technicznej.",
+      "Ulica Laserowa jest najmłodszą ulicą na Boernerowie, gdyż jako jedyna nie powstała w latach 30. XX wieku, a o wiele później.",
+      "Na mocy Uchwały nr 31 Rady Narodowej Miasta Stołecznego Warszawy z 20 czerwca 1969 roku ulicy nadano nazwę Laserowa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street of Boernerowo in Bemowo, built in the 1960s to link ul. Ebro with ul. Sobczaka. It is the newest street on the estate, as it was not laid out in the 1930s like the others.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Laserowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Laserowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "kosciol-matki-bozej-krolowej-aniolow",
+    "nazwa": "Kościół pw. Matki Bożej Królowej Aniołów",
+    "name_en": "Church of Our Lady Queen of Angels",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Markiewicza 1",
+    "adres_historyczny": "Szareckiego 7",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1982–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1982-1996 przy ówczesnej ul. Szareckiego 7 (obecnie Markiewicza 1) stała kaplica.",
+      "Ulica Markiewicza otrzymała nazwę 16 listopada 1996 roku; wcześniej była częścią ul. Szareckiego.",
+      "9 grudnia 1996 roku oddano do użytku murowany kościół, który stał się siedzibą parafii pw. Matki Bożej Królowej Aniołów.",
+      "Pod nr 3 przy tej samej ulicy przypisana jest plebania parafii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A brick parish church at ul. Markiewicza 1 in Bemowo-Lotnisko, opened on 9 December 1996. It replaced a chapel that stood at the address from 1982 and serves the parish of Our Lady Queen of Angels.",
+    "ludzie": [
+      {"kto": "bł. ks. Bronisław Markiewicz", "rola": "patron ulicy, założyciel Zgromadzenia Świętego Michała Archanioła", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Szareckiego 7"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Markiewicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Markiewicza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord wyprowadzony z artykułu o ulicy Markiewicza. Brak współrzędnych w artykule; adres z tekstu."
+  }
+]

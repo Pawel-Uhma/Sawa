@@ -1,0 +1,336 @@
+[
+  {
+    "id": "dolinka-katynska",
+    "nazwa": "Dolinka Katyńska",
+    "name_en": "Katyń Valley (Dolinka Katyńska)",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Cmentarz Wojskowy na Powązkach",
+    "adres_historyczny": null,
+    "lat": 52.258,
+    "lon": 20.9534,
+    "lokalizacja": "dokladna",
+    "okres": "1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dolinka Katyńska na Cmentarzu Wojskowym na Powązkach upamiętnia ofiary zbrodni katyńskiej.",
+      "Uroczystości religijno-patriotyczne odbywały się tu corocznie od 1974 roku; organizował je Krąg Pamięci Narodowej założony przez ks. Wacława Karłowicza i Stefana Melaka.",
+      "31 lipca 1981 roku członkowie Komitetu ustawili w Dolince kamienny krzyż o wysokości 4,5 metra z datą 1940; tej samej nocy krzyż został zdemontowany i wywieziony przez Służbę Bezpieczeństwa.",
+      "1 sierpnia 1983 roku na Powązkach odbyła się manifestacja z udziałem kilkudziesięciu tysięcy osób, z czego kilka tysięcy zgromadziło się wokół Dolinki.",
+      "Po stanie wojennym, wprowadzonym 13 grudnia 1981 roku, tymczasowy krzyż brzozowy został usunięty przez władze PRL.",
+      "W 1983 roku Stołeczna Rada Narodowa rozpisała zamknięty konkurs; zwycięzcami zostali rzeźbiarze Adam Myjak i Janusz Pastwa, a ich granitowy pomnik zdemontowano, gdy nie zgodzili się zmienić napisu na fałszywy.",
+      "W 1985 roku władze PRL ustawiły w Dolince biały granitowy krzyż o wysokości 4 metrów, bez wcześniejszych zapowiedzi i bez uroczystości odsłonięcia.",
+      "Oficjalne odsłonięcie dwóch pomników-krzyży nastąpiło 31 lipca 1995 roku."
+    ],
+    "ciekawostki": [
+      "Ze względu na wspólny moment odsłonięcia pomniki są często traktowane jako jeden monument i nazywane Krzyżem Katyńskim."
+    ],
+    "summary_en": "Katyń Valley at the Military Cemetery in Powązki commemorates the victims of the Katyń massacre. Commemorations began here in 1974, and the crosses were erected and removed several times by the communist authorities before two monuments were officially unveiled in 1995.",
+    "ludzie": [
+      {"kto": "ks. Wacław Karłowicz", "rola": "współzałożyciel Kręgu Pamięci Narodowej", "wiki": null},
+      {"kto": "Stefan Melak", "rola": "współzałożyciel Kręgu Pamięci Narodowej; inicjator postawienia krzyża w 1981 roku", "wiki": null},
+      {"kto": "ks. Stefan Niedzielak", "rola": "inicjator postawienia krzyża w 1981 roku", "wiki": null},
+      {"kto": "Andrzej Szomański", "rola": "przewodniczący Obywatelskiego Komitetu Budowy Pomnika Ofiar Katynia", "wiki": null},
+      {"kto": "Adam Myjak", "rola": "rzeźbiarz, zwycięzca konkursu z 1983 roku", "wiki": null},
+      {"kto": "Janusz Pastwa", "rola": "rzeźbiarz, zwycięzca konkursu z 1983 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dolinka Katyńska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dolinka_Katy%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście raz „Janusz”, raz „Józef” Pastwa (przy demontażu pomnika); artykuł urwany w opisie pomnika z 1985 roku."
+  },
+  {
+    "id": "fort-gieorgija",
+    "nazwa": "Fort Gieorgija",
+    "name_en": "Georgy Fort (Hauke-Bosak Fort)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Inwalidów (dawny teren fortu)",
+    "adres_historyczny": "Fort Gieorgija Cytadeli Warszawskiej (fort Hauke-Bosaka)",
+    "lat": 52.2639,
+    "lon": 20.9908,
+    "lokalizacja": "dokladna",
+    "okres": "1863–rozebrany (po 1921)",
+    "istnieje": false,
+    "fakty": [
+      "Fort Gieorgija (Hauke-Bosaka) był jednym z fortów Cytadeli Aleksandrowskiej.",
+      "Wzniesiono go w latach 1863–1864, pomiędzy już istniejącymi fortami Siergieja i Pawła.",
+      "Było to dzieło ziemno-ceglane o narysie lunety.",
+      "Fort był połączony z Cytadelą poterną (tunelem), który do dziś istnieje pod Aleją Wojska Polskiego.",
+      "W 1921 roku fort otrzymał imię generała Józefa Hauke-Bosaka, bohatera powstania styczniowego.",
+      "W latach późniejszych, w ramach rozbudowy Warszawy, fort został rozebrany; na jego miejscu znajduje się plac Inwalidów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Georgy Fort was one of the forts of the Warsaw Citadel, built in 1863–1864 and named after General Józef Hauke-Bosak in 1921. It was demolished during the expansion of the city, and Invalids Square now stands on its site.",
+    "ludzie": [
+      {"kto": "Józef Hauke-Bosak", "rola": "generał, bohater powstania styczniowego; patron fortu od 1921 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["fort Hauke-Bosaka"],
+    "zrodla": [{"tytul": "Wikipedia: Fort Gieorgija Cytadeli Warszawskiej", "url": "https://pl.wikipedia.org/wiki/Fort_Gieorgija_Cytadeli_Warszawskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fort-pawla",
+    "nazwa": "Fort Pawła",
+    "name_en": "Paweł Fort (Mierosławski Fort)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "dawny teren fortu; dziś budynek zespołu szkół elektronicznych",
+    "adres_historyczny": "Fort Pawła Cytadeli Warszawskiej (fort Mierosławskiego)",
+    "lat": 52.26,
+    "lon": 20.9931,
+    "lokalizacja": "dokladna",
+    "okres": "1854–rozebrany (po 1935)",
+    "istnieje": false,
+    "fakty": [
+      "Fort Pawła, zwany też fortem Mierosławskiego, był jednym z fortów Cytadeli Aleksandrowskiej.",
+      "Fort wzniesiono w 1854 roku.",
+      "Było to umocnienie ziemne o narysie lunety: dwa czoła, dwa barki i otwarta szyja od strony Cytadeli.",
+      "W 1921 roku fort otrzymał imię generała Ludwika Mierosławskiego, dowódcy kolejnych polskich zrywów patriotycznych w XIX wieku.",
+      "Fort został rozebrany po 1935 roku z powodu rozbudowy Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Paweł Fort, also known as Mierosławski Fort, was a 1854 earthwork of the Warsaw Citadel named after General Ludwik Mierosławski in 1921. It was demolished after 1935, and a school building now occupies the area.",
+    "ludzie": [
+      {"kto": "Ludwik Mierosławski", "rola": "generał, dowódca polskich zrywów patriotycznych w XIX wieku; patron fortu od 1921 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["fort Mierosławskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Fort Pawła Cytadeli Warszawskiej", "url": "https://pl.wikipedia.org/wiki/Fort_Paw%C5%82a_Cytadeli_Warszawskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fort-sokolnickiego",
+    "nazwa": "Fort Sokolnickiego",
+    "name_en": "Sokolnicki Fort",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "park im. Stefana Żeromskiego",
+    "adres_historyczny": "fort Siergieja",
+    "lat": 52.268361,
+    "lon": 20.989722,
+    "lokalizacja": "dokladna",
+    "okres": "1849–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort Sokolnickiego, pierwotnie fort Siergieja, znajduje się w parku im. Stefana Żeromskiego.",
+      "Fort Siergieja był jednym z sześciu obiektów, którymi w połowie XIX wieku uzupełniono lewobrzeżną część Cytadeli; zbudowano go w latach 1849–1851, a rozbudowano w latach 1864–1874.",
+      "W 1921 roku nazwę fortu zmieniono na fort Sokolnickiego.",
+      "W okresie międzywojennym obszar i niektóre elementy fortu włączono w skład parku Żeromskiego.",
+      "Od kwietnia 1944 roku, na podstawie umowy z władzami niemieckimi, przewożono tu ok. 20% zbiorów Archiwum Głównego Akt Dawnych.",
+      "W czasie powstania warszawskiego w forcie mieścił się szpital powstańczy, co upamiętnia tablica.",
+      "W 1965 roku fort wraz z zespołem Cytadeli wpisano do rejestru zabytków.",
+      "W 2023 roku fort odkupił od Wojska Polskiego Urząd Dzielnicy Żoliborz; użytkuje go Żoliborski Dom Kultury."
+    ],
+    "ciekawostki": [
+      "Po spaleniu w pierwszych dniach sierpnia 1944 roku baraków dla bezdomnych przy Dworcu Gdańskim fort wraz z parkiem stał się schronieniem dla ich mieszkańców."
+    ],
+    "summary_en": "Sokolnicki Fort, originally Siergiej Fort, is part of the Warsaw Citadel system and now sits inside Stefan Żeromski Park. It housed an uprising hospital in 1944 and has been used by the Żoliborz district cultural centre since it was bought back in 2023.",
+    "ludzie": [],
+    "dawne_nazwy": ["fort Siergieja"],
+    "zrodla": [{"tytul": "Wikipedia: Fort Sokolnickiego", "url": "https://pl.wikipedia.org/wiki/Fort_Sokolnickiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W tekście: archiwiści w listopadzie 1944 roku wywieźli z Warszawy do Częstochowy pięć wagonów dokumentów (akcja pruszkowska)."
+  },
+  {
+    "id": "galeria-sztuki-wahl",
+    "nazwa": "Galeria Sztuki Alicji i Bożeny Wahl",
+    "name_en": "Alicja and Bożena Wahl Art Gallery",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Żoliborz, w willi (adres nie podany w artykule)",
+    "adres_historyczny": null,
+    "lat": 52.265889,
+    "lon": 20.992222,
+    "lokalizacja": "przyblizona",
+    "okres": "1979–2002",
+    "istnieje": false,
+    "fakty": [
+      "Galeria została założona w 1979 roku przez malarkę Alicję Wahl i jej siostrę Bożenę Wahl w willi na warszawskim Żoliborzu.",
+      "Była jednym z nielicznych miejsc w komunistycznej Polsce, gdzie można było wystawiać lub kupić obrazy bez zgody władz.",
+      "Galeria organizowała wystawy indywidualne uznanych polskich artystów współczesnych oraz młodych twórców.",
+      "Wśród artystów prezentowanych w galerii byli m.in. Zdzisław Beksiński, Jerzy Adam Stajuda, Stanisław Ignacy Witkiewicz „Witkacy”, Bruno Schulz i Piotr Potworowski.",
+      "Galeria zakończyła działalność bez rozgłosu w 2002 roku; ostatnim prezentowanym artystą był Jan Lebenstein."
+    ],
+    "ciekawostki": [
+      "Galeria była miejscem otwartym dla pisarzy, artystów teatru i filmu oraz przedstawicieli dyplomacji."
+    ],
+    "summary_en": "The Wahl sisters' art gallery operated from 1979 to 2002 in a villa in Żoliborz. It was one of the few places in communist Poland where art could be shown or sold without official permission.",
+    "ludzie": [
+      {"kto": "Alicja Wahl", "rola": "malarka, założycielka galerii", "wiki": null},
+      {"kto": "Bożena Wahl", "rola": "malarka, założycielka galerii", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Galeria Sztuki Alicji i Bożeny Wahl", "url": "https://pl.wikipedia.org/wiki/Galeria_Sztuki_Alicji_i_Bo%C5%BCeny_Wahl"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje galerię jako „drugą (pierwszą)” prywatną galerię w Warszawie; nie podaje adresu."
+  },
+  {
+    "id": "glinianki-wloscianskie",
+    "nazwa": "Glinianki Włościańskie",
+    "name_en": "Włościańska Clay Ponds",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "okolice ul. Włościańskiej i ul. Stanisława Tołwińskiego",
+    "adres_historyczny": null,
+    "lat": 52.268333333,
+    "lon": 20.965833333,
+    "lokalizacja": "dokladna",
+    "okres": "dziś (data powstania nieznana)",
+    "istnieje": true,
+    "fakty": [
+      "Glinianki Włościańskie to dwa stawy w dzielnicy Żoliborz, na obszarze MSI Sady Żoliborskie, na terenie fortu Buraków.",
+      "Stawy powstały w wyniku zalania wodą wyeksploatowanego wyrobiska iłów, które zaopatrywało w surowiec cegielnie.",
+      "Łączna powierzchnia stawów wynosi 0,3988 ha (0,2829 ha i 0,1159 ha); lustro wody leży na wysokości ok. 99,5 m n.p.m.",
+      "Stawy są zasilane w wodę w sposób sztuczny.",
+      "Od 2013 roku glinianki i otaczający je teren są w gminnej ewidencji zabytków m.st. Warszawy (ID: ZOL22054) jako fortyfikacja pn. Dzieło flankujące pośrednie Buraków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Włościańska Clay Ponds are two artificial ponds in Żoliborz, formed by flooding a clay pit that supplied brickworks. Since 2013 the ponds and their surroundings have been on the municipal heritage register as part of the Buraków fortifications.",
+    "ludzie": [],
+    "dawne_nazwy": ["Stawy przy ul. Włościańskiej", "Glinianka Włościańska", "Staw Sady"],
+    "zrodla": [{"tytul": "Wikipedia: Glinianki Włościańskie", "url": "https://pl.wikipedia.org/wiki/Glinianki_W%C5%82o%C5%9Bcia%C5%84skie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "grob-jerzego-popieluszki",
+    "nazwa": "Grób ks. Jerzego Popiełuszki",
+    "name_en": "Grave of Fr Jerzy Popiełuszko",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Stanisława Hozjusza 2 (kościół św. Stanisława Kostki)",
+    "adres_historyczny": null,
+    "lat": 52.2674,
+    "lon": 20.9845,
+    "lokalizacja": "dokladna",
+    "okres": "1984–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ks. Jerzy Popiełuszko, kapelan „Solidarności”, był rezydentem i wikariuszem parafii św. Stanisława Kostki, gdzie w latach 1982–1984 odprawiał Msze za Ojczyznę.",
+      "Został zamordowany przez Służbę Bezpieczeństwa 19 października 1984 roku.",
+      "Pogrzeb odbył się 3 listopada 1984 roku.",
+      "Początkowo miał być pochowany na Powązkach; proboszcz ks. Teofil Bogucki, wierni i przyjaciele prosili prymasa Józefa Glempa, by został pochowany przy kościele, i tak się stało.",
+      "Pomnik-grób, według projektu Jerzego Kaliny, zaprojektowano w 1986 roku w miejscu, gdzie wcześniej stał drewniany krzyż.",
+      "14 czerwca 1987 roku kościół nawiedził papież Jan Paweł II.",
+      "19 października 2004 roku, w 20. rocznicę śmierci, odbyła się msza z udziałem ponad 20 tysięcy wiernych; w podziemiach kościoła otwarto muzeum poświęcone księdzu.",
+      "W kwietniu 2010 roku dokonano ekshumacji i kanonicznego rozeznania relikwii; grób odnowiono, a ciało złożono w nowej trumnie w tym samym miejscu."
+    ],
+    "ciekawostki": [
+      "Szacuje się, że w ciągu 10 lat po śmierci księdza miejsce odwiedziło ok. 18 mln ludzi."
+    ],
+    "summary_en": "The grave-monument of Fr Jerzy Popiełuszko stands by St Stanisław Kostka church at Hozjusza 2, designed by Jerzy Kalina in 1986. Buried there in 1984 after a request to the Primate, it became a pilgrimage site.",
+    "ludzie": [
+      {"kto": "Jerzy Popiełuszko", "rola": "kapelan „Solidarności”, zamordowany 19 października 1984 roku", "wiki": null},
+      {"kto": "Jerzy Kalina", "rola": "autor projektu pomnika-grobu", "wiki": null},
+      {"kto": "Teofil Bogucki", "rola": "proboszcz parafii św. Stanisława Kostki", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "prymas Polski, do którego zwrócono się o zgodę na pochowanie przy kościele", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "odwiedził kościół 14 czerwca 1987 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Grób Jerzego Popiełuszki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gr%C3%B3b_Jerzego_Popie%C5%82uszki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "hala-marymoncka",
+    "nazwa": "Hala Marymoncka",
+    "name_en": "Marymont Market Hall",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Słowackiego 45/47",
+    "adres_historyczny": "ul. Marymoncka 5",
+    "lat": 52.271355555,
+    "lon": 20.971586111,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa hali rozpoczęła się 1 grudnia 1938 roku, gdy z udziałem prezydenta miasta Stefana Starzyńskiego poświęcono i wmurowano kamień węgielny.",
+      "Pierwotnie działkę przeznaczono w rejonie ulic Mickiewicza i Potockiej, ale zrezygnowano z niej z powodu wysokiego poziomu wód gruntowych.",
+      "Hala o powierzchni 1311 m² miała pomóc uporządkować handel na Żoliborzu i Bielanach.",
+      "Do wybuchu II wojny światowej powstał trzykondygnacyjny żelbetowy szkielet budynku.",
+      "W czasie wojny nieukończoną halę wykorzystywano na potrzeby filii niemieckiego przedsiębiorstwa Adam Opel.",
+      "W czasie powstania warszawskiego hala została zajęta i broniona przez żołnierzy zgrupowania „Żniwiarz”; powstańcy wycofali się z terenu hali i fabryki Opla 29 września 1944 roku.",
+      "Hala została oddana do użytku 4 grudnia 1971 roku, po decyzji z 1970 roku o przywróceniu jej funkcji handlowych.",
+      "W wyniku remontu w latach 2007–2008 hala utraciła swój pierwotny charakter."
+    ],
+    "ciekawostki": [
+      "Po wojnie na terenie nieruchomości działała baza Miejskiego Przedsiębiorstwa Taksówkowego."
+    ],
+    "summary_en": "Marymont Market Hall at Słowackiego 45/47 was begun in 1938 and was meant to organise trade in Żoliborz and Bielany. Its frame was partly built before the war, and it was finally opened as a market hall in 1971.",
+    "ludzie": [
+      {"kto": "Stefan Starzyński", "rola": "prezydent miasta, uczestniczył w wmurowaniu kamienia węgielnego (1938)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Marymoncka 5 (współcześnie ul. Słowackiego)"],
+    "zrodla": [{"tytul": "Wikipedia: Hala Marymoncka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hala_Marymoncka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że wg innego źródła hala była gotowa w stanie surowym z planowanym otwarciem w październiku 1939 roku."
+  },
+  {
+    "id": "izba-pamieci-marii-kownackiej",
+    "nazwa": "Izba Pamięci Marii Kownackiej",
+    "name_en": "Maria Kownacka Memorial Room",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Słowackiego 5/13 m. 74",
+    "adres_historyczny": null,
+    "lat": 52.26954,
+    "lon": 20.98185,
+    "lokalizacja": "dokladna",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Mieszkanie należało do pisarki Marii Kownackiej, autorki m.in. „Plastusiowego pamiętnika”, które otrzymała w 1931 roku.",
+      "Po śmierci pisarki prawa autorskie do utworów literackich i teatralnych przekazano Warszawskiej Spółdzielni Mieszkaniowej, a mieszkanie przekształcono w Izbę Pamięci.",
+      "Placówkę udostępniono zwiedzającym w 1990 roku.",
+      "W mieszkaniu zgromadzone są przedmioty osobiste, zdjęcia, notatki, rękopisy oraz obszerny księgozbiór.",
+      "Izba jest oddziałem zamiejscowym Muzeum Książki Dziecięcej działu specjalnego i czytelni naukowej Biblioteki Publicznej m.st. Warszawy – Biblioteki Głównej Województwa Mazowieckiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Maria Kownacka Memorial Room is the writer's former flat at Słowackiego 5/13 in Żoliborz, kept as a branch of a Warsaw children's book museum since 1990.",
+    "ludzie": [
+      {"kto": "Maria Kownacka", "rola": "pisarka, autorka „Plastusiowego pamiętnika”, właścicielka mieszkania", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Izba Pamięci Marii Kownackiej", "url": "https://pl.wikipedia.org/wiki/Izba_Pami%C4%99ci_Marii_Kownackiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kino-wisla",
+    "nazwa": "Kino „Wisła”",
+    "name_en": "Wisła Cinema",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Wilsona 2",
+    "adres_historyczny": null,
+    "lat": 52.2692586,
+    "lon": 20.9865741,
+    "lokalizacja": "dokladna",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kino zaprojektowały Cezaria Iljin-Szymańska i Wiktoria Iljin; otwarto je w 1961 roku.",
+      "Planom powstania kina towarzyszyły protesty mieszkańców okolicznych budynków, kwestionujących jego lokalizację.",
+      "Wnętrze kina zostało nominowane do nagrody Komitetu Budownictwa, Urbanistyki i Architektury w 1961 roku.",
+      "W 1965 roku rozpoczęto rozmowy o zakupie aparatury do systemu Todd-AO; kino „Wisła” najlepiej nadawało się do panoramicznych filmów 70 mm, po zamontowaniu półkolistego ekranu 22×9 m.",
+      "Od 12 marca 1981 roku Okręgowe Przedsiębiorstwo Rozpowszechniania Filmów wprowadziło w kinie dodatkowe seanse Konfrontacji Filmowych; pierwsza edycja to „Konfrontacje-80”.",
+      "W 1989 roku podjęto decyzję o zainstalowaniu w kinie systemu dźwiękowego dolby-stereo.",
+      "Kino ma trzy sale o łącznej liczbie 738 miejsc."
+    ],
+    "ciekawostki": [
+      "W badaniach akustycznych przeprowadzanych w latach 1961–1962 wśród warszawskich sal kinowych „Wisła” uzyskała ocenę dobrą."
+    ],
+    "summary_en": "The Wisła Cinema on Wilson Square, opened in 1961, was designed by Cezaria Iljin-Szymańska and Wiktoria Iljin. It was one of the few Warsaw cinemas fitted for 70 mm Todd-AO films, and today it belongs to the Nove Kino chain.",
+    "ludzie": [
+      {"kto": "Cezaria Iljin-Szymańska", "rola": "projektantka kina", "wiki": null},
+      {"kto": "Wiktoria Iljin", "rola": "projektantka kina", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kino „Wisła”", "url": "https://pl.wikipedia.org/wiki/Kino_%E2%80%9EWis%C5%82a%E2%80%9D"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wspomina, że kino należy do sieci Nove Kino (stan z czasu powstania artykułu)."
+  }
+]

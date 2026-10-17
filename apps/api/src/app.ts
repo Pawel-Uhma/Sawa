@@ -3,6 +3,7 @@ import { cors } from "hono/cors";
 import { createFakePlacesRepository } from "./adapters/supabase/fake-places-repository";
 import { AppError, toErrorBody } from "./lib/errors";
 import { createDebugRoutes } from "./routes/debug";
+import { createDestinationRoutes } from "./routes/destinations";
 import { createHealthRoutes } from "./routes/health";
 import { placeRoutes } from "./routes/places";
 import { createRouteRoutes } from "./routes/routes";
@@ -13,6 +14,10 @@ import { createLiveStoryService } from "./services/live-story";
 import type { RoutePlanner } from "./services/plan-route";
 import type { LlmProvider, PlacesRepository } from "./services/ports";
 import type { PlaceResearch } from "./services/research-place";
+import {
+  createDisabledDestinationService,
+  type DestinationService,
+} from "./services/search-destinations";
 import { createDisabledSpeechService, type SpeechService } from "./services/speak";
 import { createStoryService } from "./services/tell-story";
 import { createDisabledVehicleTracker, type VehicleTracker } from "./services/track-vehicles";
@@ -27,6 +32,8 @@ export type AppServices = {
   research?: PlaceResearch;
   /** Missing → POST /v1/stories/audio (and debug /v1/speech) answer UPSTREAM_ERROR. */
   speech?: SpeechService;
+  /** Missing → GET /v1/destinations answers UPSTREAM_ERROR. */
+  destinations?: DestinationService;
   onLlmError?: (err: unknown, placeId: string) => void;
   /** Missing → POST /v1/vehicles/track answers `live: false` with no vehicles. */
   vehicles?: VehicleTracker;
@@ -76,6 +83,10 @@ export function createApp(config: AppConfig) {
     .route("/", createRouteRoutes(services.routePlanner))
     .route("/", placeRoutes(services.places ?? createFakePlacesRepository()))
     .route("/", createStoryRoutes(stories, speech, live))
+    .route(
+      "/",
+      createDestinationRoutes(services.destinations ?? createDisabledDestinationService()),
+    )
     .route("/", createVehicleRoutes(services.vehicles ?? createDisabledVehicleTracker()));
 
   // Speaking any text spends ElevenLabs credits for anyone (T-92); the player uses /v1/stories/audio.

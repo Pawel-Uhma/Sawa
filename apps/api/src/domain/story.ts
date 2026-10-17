@@ -1,22 +1,33 @@
-import { factId, type StoryStyle } from "@sawa/shared";
+import { type Audience, factId, type StoryStyle } from "@sawa/shared";
 import type { Place, PlaceSource } from "./place";
 import type { Finding } from "./research";
 
 /** Polish speech in ElevenLabs runs at about 2.5 words a second (docs/12-plan-mvp.md §8). */
 export const WORDS_PER_SEC = 2.5;
 
-export type StoryBand = { id: "short" | "medium" | "long"; upToSec: number; words: number };
+/**
+ * Share of the window Sawa fills with speech: the rest is a breath before the next place, and
+ * room for a voice slower than `WORDS_PER_SEC`. The story may end early, never run over.
+ */
+export const SPEECH_FILL = 0.85;
 
-/** Three lengths, so nearby `targetSec` values share one cached story. */
-export const STORY_BANDS: readonly StoryBand[] = [
-  { id: "short", upToSec: 30, words: 60 },
-  { id: "medium", upToSec: 75, words: 140 },
-  { id: "long", upToSec: Number.POSITIVE_INFINITY, words: 230 },
-];
+/** A story length: `sec` of the window it fills, `words` the model may use. */
+export type StoryBand = { id: string; sec: number; words: number };
 
+/** Windows are rounded down to these steps, so nearby `targetSec` values share one cached story. */
+const BAND_STEP_SEC = 20;
+const LONG_BAND_STEP_SEC = 30;
+const LONG_BAND_FROM_SEC = 120;
+const MIN_BAND_SEC = 20;
+
+/**
+ * The length that fits the time until the next place (`targetSec`): so Sawa talks about this
+ * place while passing it and starts the next story as the next place comes up.
+ */
 export function bandFor(targetSec: number): StoryBand {
-  const long = STORY_BANDS[STORY_BANDS.length - 1] as StoryBand;
-  return STORY_BANDS.find((b) => targetSec <= b.upToSec) ?? long;
+  const step = targetSec < LONG_BAND_FROM_SEC ? BAND_STEP_SEC : LONG_BAND_STEP_SEC;
+  const sec = Math.max(MIN_BAND_SEC, Math.floor(targetSec / step) * step);
+  return { id: `${sec}s`, sec, words: Math.round(sec * WORDS_PER_SEC * SPEECH_FILL) };
 }
 
 /** `placeId + sorted interests + band` (docs/12-plan-mvp.md §6), plus what makes the text differ. */
@@ -59,6 +70,17 @@ const RECAP_WORDS = 35;
  */
 const MATERIAL_STRETCH = 1.6;
 const MIN_STORY_WORDS = 25;
+/** A child listens to shorter stories: this share of an adult's words (#65). */
+const KIDS_WORD_SHARE = 0.7;
+
+/**
+ * War, the ghetto and the Holocaust: told to a child gently, without details of violence
+ * (decision in docs/stan.md, #65), and never read out plainly as facts.
+ */
+const KIDS_GENTLE_TAGS = ["war_uprising", "jewish_warsaw"];
+
+export const isGentleForKids = (place: Pick<Place, "interests">) =>
+  place.interests.some((tag) => KIDS_GENTLE_TAGS.includes(tag));
 
 const wordCount = (text: string) => text.split(/\s+/).filter(Boolean).length;
 const fact = (text: string): StoryFact => ({ id: factId(text), text, kind: "fact" });
@@ -97,10 +119,15 @@ export function placeFacts(
 }
 
 /** How many words the story may have: trivia and reminders are short whatever the window. */
-export function storyWords(band: StoryBand, style: StoryStyle | undefined, recap: boolean) {
+export function storyWords(
+  band: StoryBand,
+  style: StoryStyle | undefined,
+  recap: boolean,
+  audience?: Audience,
+) {
   if (recap) return Math.min(band.words, RECAP_WORDS);
   if (style === "trivia") return Math.min(band.words, TRIVIA_STYLE_WORDS);
-  return band.words;
+  return audience === "kids" ? Math.round(band.words * KIDS_WORD_SHARE) : band.words;
 }
 
 /** The length is a ceiling: with little to tell, the story is short instead of padded. */
@@ -120,6 +147,7 @@ export function pickFacts(
   opts: {
     heard: readonly string[];
     style?: StoryStyle;
+    audience?: Audience;
     band: StoryBand;
     reservedWords?: number;
     findings?: readonly Finding[];
@@ -130,7 +158,7 @@ export function pickFacts(
   const recap = fresh.length === 0 && all.length > 0;
   const pool = recap ? all : fresh;
   const maxCount = recap ? 1 : opts.style === "trivia" ? TRIVIA_STYLE_FACTS : MAX_OFFERED;
-  const words = storyWords(opts.band, opts.style, recap) - (opts.reservedWords ?? 0);
+  const words = storyWords(opts.band, opts.style, recap, opts.audience) - (opts.reservedWords ?? 0);
   const budget = words * OFFER_WORD_SHARE;
 
   const facts: StoryFact[] = [];

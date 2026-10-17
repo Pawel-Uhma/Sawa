@@ -1,0 +1,328 @@
+[
+  {
+    "id": "palac-na-wyspie",
+    "nazwa": "Pałac Na Wyspie",
+    "name_en": "Palace on the Isle",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie (sztuczna wyspa na stawie)",
+    "adres_historyczny": null,
+    "lat": 52.21512,
+    "lon": 21.03582,
+    "lokalizacja": "dokladna",
+    "okres": "1683–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie barokowy pawilon Łaźni (Hippokrene) zbudowano w latach 1683–1689 według projektu Tylmana z Gameren dla marszałka wielkiego koronnego Stanisława Herakliusza Lubomirskiego.",
+      "W latach 1772–1793 pawilon przebudowali Dominik Merlini i Jan Chrystian Kamsetzer dla króla Stanisława Augusta Poniatowskiego.",
+      "Od 1775 roku pałac był letnią rezydencją króla; od 1784 roku w sali jadalnej odbywały się czwartkowe obiady.",
+      "W 1817 roku pałac wraz z Łazienkami sprzedano carowi Aleksandrowi I za 1 mln 80 tys. zł.",
+      "W 1846 roku w wyniku przebudowy zachodniego pawilonu powstała cerkiew św. Aleksandra Newskiego, zaprojektowana przez Andrzeja Gołońskiego.",
+      "Jesienią 1944 roku Niemcy wywieźli sprzęty z pałacu do III Rzeszy, a po upadku powstania oblali wnętrza benzyną i podpalili.",
+      "Odbudowę pod kierownictwem architekta Jana Dąbrowskiego rozpoczęto po wojnie i zakończono w 1965 roku.",
+      "W latach 2012–2015 prowadzono prace renowacyjne; w dno pod tarasami nad stawem wbito 150 dębowych pali."
+    ],
+    "ciekawostki": [
+      "W ścianach spalonego w 1944 roku budynku Niemcy nawiercili ok. 1000 otworów na dynamit, ale nie zdołali go wysadzić."
+    ],
+    "summary_en": "A Baroque bathing pavilion of 1683–1689 by Tylman van Gameren, rebuilt as a Classicist palace for King Stanisław August Poniatowski on an artificial island in the Royal Baths Park. Burned by the Germans in 1944, it was restored by 1965.",
+    "ludzie": [
+      {"kto": "Stanisław Herakliusz Lubomirski", "rola": "marszałek wielki koronny, inwestor pawilonu z lat 1683–1689", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "projektant pawilonu z lat 1683–1689", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "przebudowa klasycystyczna w latach 1772–1793", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "współautor przebudowy w latach 1772–1793", "wiki": null},
+      {"kto": "Jan Dąbrowski", "rola": "architekt odbudowy po 1945 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hippokrene", "pałac na Wodzie", "pałac Łazienkowski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Na Wyspie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Na_Wyspie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-opalinskiego",
+    "nazwa": "Pałac Opalińskiego",
+    "name_en": "Opaliński Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "część gmachu Banku Gospodarstwa Krajowego przy Nowym Świecie",
+    "adres_historyczny": "ul. Nowy Świat 11/13",
+    "lat": 52.231388888,
+    "lon": 21.020277777,
+    "lokalizacja": "dokladna",
+    "okres": "1770–1935/1936",
+    "istnieje": false,
+    "fakty": [
+      "Pałac wzniesiono w latach 1762–1770 z inicjatywy Wojciecha Opalińskiego, wojewody sieradzkiego, jako późnobarokową rezydencję miejską.",
+      "W 1818 roku pałac w słabym stanie technicznym trafił w ręce mieszczanina Mateusza Zrazowskiego, który go odrestaurował.",
+      "W 1819 roku pałac odkupiono na siedzibę Generalnej Dyrekcji Dróg i Mostów i przebudowano w stylu klasycystycznym; największą zmianę przeszła elewacja od strony Nowego Światu.",
+      "W XIX wieku przy ul. Brackiej 14 powstała kamienica, która częściowo zabudowała przypałacowy ogród.",
+      "Około 1928 roku wyburzono oficyny łączące pałac z Nowym Światem, tworząc przestrzeń pod budowę gmachu Banku Gospodarstwa Krajowego.",
+      "Rozpadający się pałac rozebrano około 1935–1936 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A late-Baroque townhouse at Nowy Świat 11/13, built in 1762–1770 for Wojciech Opaliński. Remodelled in Classicist style for the Road and Bridge Directorate, it was demolished around 1935–1936 and part of the Bank Gospodarstwa Krajowego building now stands on its site.",
+    "ludzie": [
+      {"kto": "Wojciech Opaliński", "rola": "wojewoda sieradzki, inwestor pałacu", "wiki": null},
+      {"kto": "Mateusz Zrazowski", "rola": "mieszczanin, który odrestaurował pałac w 1818 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Opalińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Opali%C5%84skiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data rozbiórki podana jako przybliżona (ok. 1935–1936)."
+  },
+  {
+    "id": "palac-paca",
+    "nazwa": "Pałac Paca",
+    "name_en": "Pac Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 15",
+    "adres_historyczny": null,
+    "lat": 52.247083,
+    "lon": 21.008694,
+    "lokalizacja": "dokladna",
+    "okres": "1681–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac zbudowano w latach 1681–1687 w stylu barokowym na polecenie Dominika Mikołaja Radziwiłła według projektu Tylmana z Gameren.",
+      "Do początku XIX wieku pałac należał do Radziwiłłów, z przerwą w latach 1744–1759, kiedy był własnością biskupa Andrzeja Stanisława Załuskiego i Józefa Andrzeja, jego brata.",
+      "3 listopada 1771 roku, w drodze z tego pałacu na Zamek Królewski, Stanisław August Poniatowski został porwany przez konfederatów barskich.",
+      "W 1794 roku pałac został uszkodzony w walkach z wojskami rosyjskimi podczas insurekcji kościuszkowskiej.",
+      "W 1821 roku w pałacu odbyło się potajemne wprowadzenie Seweryna Goszczyńskiego i Józefa Bohdana Zaleskiego do Związku Wolnych Polaków.",
+      "W 1823 roku pałac kupił generał Ludwik Michał Pac; w latach 1824–1828 przebudował go Henryk Marconi w stylu klasycystycznym.",
+      "W 1835 roku majątek generała wraz z pałacem skonfiskowano za udział w powstaniu listopadowym.",
+      "W latach 1875–1939 pałac był siedzibą stołecznego Sądu Okręgowego; w grudniu 1922 roku w Sali Kolumnowej odbył się proces Eligiusza Niewiadomskiego.",
+      "Pałac został częściowo zniszczony w czasie II wojny światowej i odbudowany w latach 1948–1951; obecnie jest siedzibą Ministerstwa Zdrowia."
+    ],
+    "ciekawostki": [
+      "Fryz nad arkadami przed pałacem wykonał Ludwik Kauffmann; uchodzi za jedną z najwybitniejszych rzeźb neoklasycystycznych zrealizowanych w Warszawie."
+    ],
+    "summary_en": "A Baroque palace on Miodowa Street built in 1681–1687 by Tylman van Gameren for Dominik Mikołaj Radziwiłł. Rebuilt in Classicist style by Henryk Marconi for General Ludwik Pac, it became the Ministry of Health's seat after the war reconstruction.",
+    "ludzie": [
+      {"kto": "Dominik Mikołaj Radziwiłł", "rola": "inwestor pałacu z lat 1681–1687", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "bywał w pałacu; porwany przez konfederatów w 1771 roku", "wiki": null},
+      {"kto": "Ludwik Michał Pac", "rola": "generał, kupił pałac w 1823 roku", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "architekt przebudowy w latach 1824–1828", "wiki": null},
+      {"kto": "Seweryn Goszczyński i Józef Bohdan Zaleski", "rola": "poeci wprowadzeni do Związku Wolnych Polaków w pałacu w 1821 roku", "wiki": null},
+      {"kto": "Ludwik Kauffmann", "rola": "rzeźbiarz, autor fryzu przed pałacem", "wiki": null},
+      {"kto": "Eligiusz Niewiadomski", "rola": "sądzony w pałacu w grudniu 1922 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Paca w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Paca_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-pod-blacha",
+    "nazwa": "Pałac Pod Blachą",
+    "name_en": "Palace Under the Sheet Metal",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Zamkowy 2",
+    "adres_historyczny": null,
+    "lat": 52.247283,
+    "lon": 21.016186,
+    "lokalizacja": "dokladna",
+    "okres": "1651–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1651 roku królewski płatnerz Wawrzyniec Reffus rozpoczął budowę jednopiętrowej kamienicy w miejscu obecnego pałacu.",
+      "Po zniszczeniu w 1657 roku przez wojska Rakoczego budynek przebudowano w latach 1698–1701 dla podkomorzego wielkiego koronnego Jerzego Dominika Lubomirskiego na pałac.",
+      "W latach 1720–1730 przebudował go Jakub Fontana w stylu późnobarokowym; budynek nakryto blachą, która dała mu nazwę.",
+      "W 1776 roku pałac kupił Stanisław August Poniatowski na mieszkania dla dworzan.",
+      "Od 1798 roku pałac, w którym mieszkał książę Józef Poniatowski, stał się jednym z najsłynniejszych salonów Warszawy.",
+      "W 1820 roku Maria Teresa Tyszkiewiczowa sprzedała pałac carowi Aleksandrowi I.",
+      "W czasie II wojny światowej korpus główny i południowe skrzydło spalono; odbudowano je w latach 1948–1949 według projektu Stanisława Barana.",
+      "W latach 2004–2008 pałac przeszedł remont i został dostosowany do funkcji muzealnych i edukacyjnych."
+    ],
+    "ciekawostki": [
+      "W II połowie XVIII wieku pałac był pokryty dachówką, co uwiecznił na obrazie Bernardo Bellotto zwany Canaletto.",
+      "Piwnica tzw. Loży Masońskiej z II połowy XVII wieku nie ma dowodów na funkcję loży; mogła służyć do przechowywania wina."
+    ],
+    "summary_en": "A late-Baroque palace at the foot of the Royal Castle, named after the copper sheet roof it received in the 1720s–1730s. Burned in WWII, it was rebuilt in 1948–1949 and now serves museum and educational functions.",
+    "ludzie": [
+      {"kto": "Wawrzyniec Reffus", "rola": "królewski płatnerz, rozpoczął budowę w 1651 roku", "wiki": null},
+      {"kto": "Jerzy Dominik Lubomirski", "rola": "podkomorzy wielki koronny, zleceniodawca przebudowy z lat 1698–1701", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "przebudowa późnobarokowa w latach 1720–1730", "wiki": null},
+      {"kto": "Józef Poniatowski", "rola": "książę, mieszkał w pałacu od 1798 roku", "wiki": null},
+      {"kto": "Stanisław Baran", "rola": "autor projektu odbudowy w latach 1948–1949", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Lubomirskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Pod Blachą", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Pod_Blach%C4%85"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-pod-czterema-wiatrami",
+    "nazwa": "Pałac Pod Czterema Wiatrami",
+    "name_en": "Palace of the Four Winds",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa 38/40",
+    "adres_historyczny": null,
+    "lat": 52.24713889,
+    "lon": 21.00405556,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1680–po 1994",
+    "istnieje": true,
+    "fakty": [
+      "Budowa pałacu rozpoczęła się ok. 1680 roku; pierwszym właścicielem był Stanisław Kleinpoldt-Małopolski, metrykant skarbu koronnego.",
+      "W 1765 roku Piotr Riaucour sprzedał pałac Piotrowi Tepperowi; w latach 1769–1771 przebudował go dla Teppera Szymon Bogumił Zug.",
+      "W 1801 roku pałac wystawiono na licytację, którą wygrał Karol Fryderyk Dückert; rodzina Dückertów była jego właścicielem do 1891 roku.",
+      "W latach 1808–1914 mieścił się w nim Hôtel de Dresde, zwyczajowo nazywany Drezdeńskim.",
+      "W 1824 roku w ogrodzie pałacu rozpoczął działalność pierwszy w mieście Instytut Wód Mineralnych.",
+      "W 1927 roku pałac kupił Skarb Państwa; po odrestaurowaniu przeznaczono go na siedzibę Ministerstwa Pracy i Opieki Społecznej.",
+      "W 1944 roku w czasie powstania warszawskiego pałac spalono; odbudowano go w latach 1949–1951 według projektu Ludwika Borawskiego.",
+      "W 1965 roku pałac wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W marcu 1943 roku członkowie Kedywu OW AK nadali na Poczcie Głównej paczki z bombami zegarowymi; jedna była zaadresowana do szefa niemieckiego Arbeitsamtu Curta Hoffmanna. Sprowadzony przez Niemców pirotechnik zginął na miejscu, gdy próbował ustalić konstrukcję bomby."
+    ],
+    "summary_en": "A Baroque palace on Długa Street, named after the statues of the four winds on its gate. In WWII the German labour office was based here and was targeted by the Home Army; the palace burned in 1944 and was rebuilt in 1949–1951.",
+    "ludzie": [
+      {"kto": "Stanisław Kleinpoldt-Małopolski", "rola": "metrykant skarbu koronnego, pierwszy właściciel", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "udział w projekcie; jego wkład nie jest jasny", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "przebudowa dla Piotra Teppera w latach 1769–1771", "wiki": null},
+      {"kto": "Karol Fryderyk Dückert", "rola": "nabył pałac na licytacji w 1801 roku", "wiki": null},
+      {"kto": "Ludwik Borawski", "rola": "autor projektu odbudowy w latach 1949–1951", "wiki": null},
+      {"kto": "Curt Hoffmann", "rola": "szef niemieckiego Urzędu Pracy w pałacu, cel zamachów AK w 1943 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Dückerta"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Pod Czterema Wiatrami w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Pod_Czterema_Wiatrami_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje wprost bieżącego użytku budynku; ostatnia data z artykułu to 1994 rok."
+  },
+  {
+    "id": "palac-pod-karczochem",
+    "nazwa": "Pałac Pod Karczochem",
+    "name_en": "Palace Under the Artichoke",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 14",
+    "adres_historyczny": null,
+    "lat": 52.22575556,
+    "lon": 21.02397222,
+    "lokalizacja": "dokladna",
+    "okres": "1845–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1845–1846 według projektu Antonia Corazziego w stylu neogotyckim.",
+      "Na miejscu stał wcześniej pawilon ogrodowy z końca XVIII wieku, którego właścicielem był Szymon Bogumił Zug; jego pozostałości wkomponowano w bryłę pałacu.",
+      "Nazwa pochodzi od kształtu ozdoby dachu: kopuły zwieńczonej karczochem.",
+      "Pierwszym właścicielem był radca dworu Jan Kanty Sokołowski.",
+      "W latach 1884–1886 pałacyk rozbudował przez Leandra Marconiego dla syna Henryka.",
+      "W czasie okupacji niemieckiej mieściła się tu placówka NSDAP (1941–1945).",
+      "Po wojnie mieściła się tu ambasada Korei Północnej (1947–1984); od przemian ustrojowych budynek należy do rodziny Stanisława Komorowskiego.",
+      "W latach 1992–2002 mieściło się tu Przedstawicielstwo Unii Europejskiej; od 2006 roku jest siedzibą ambasady Litwy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small Neo-Gothic palace on Aleje Ujazdowskie designed by Antonio Corazzi in 1845–1846. Named after the artichoke finial on its dome, it housed the NSDAP, the North Korean embassy and an EU office, and since 2006 the Lithuanian embassy.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "projektant pałacu z lat 1845–1846", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "właściciel wcześniejszego pawilonu ogrodowego z końca XVIII wieku", "wiki": null},
+      {"kto": "Jan Kanty Sokołowski", "rola": "pierwszy właściciel pałacu, radca dworu", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "rozbudowa w latach 1884–1886", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Marconich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Pod Karczochem w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Pod_Karczochem_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-potockich",
+    "nazwa": "Pałac Potockich",
+    "name_en": "Potocki Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 15",
+    "adres_historyczny": null,
+    "lat": 52.2425,
+    "lon": 21.013889,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1669–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przed 1643 rokiem wzniesiono tu drewniany dwór należący do Kacpra Denhoffa; spalono go podczas potopu szwedzkiego, a ok. 1669 roku wystawiono murowany dwór dla Ernesta Denhoffa.",
+      "W 1731 roku August Aleksander Czartoryski poślubił Zofię z Sieniawskich Denhoffową i został współwłaścicielem dworu; w 1760 roku Czartoryscy przekształcili go w pałac późnobarokowy i rokokowy.",
+      "W 1799 roku pałac przeszedł na córkę Izabeli Lubomirskiej, Aleksandrę, żonę Stanisława Kostki Potockiego.",
+      "Po 1824 roku pałac, zamieszkiwany sporadycznie przez właścicieli, zaczął pełnić funkcje dochodowe; wynajmowano w nim pomieszczenia.",
+      "W 1881 roku na dziedzińcu pałacu wzniesiono pawilon wystawienniczy Leandra Marconiego; pokazano tam m.in. Hołd pruski i Bitwę pod Grunwaldem Jana Matejki.",
+      "W okresie międzywojennym siedziby w pałacu miały m.in. Brytyjska Misja Wojskowa (1923) i ambasada Stanów Zjednoczonych (1932).",
+      "Pałac spalono w sierpniu 1944 roku; odbudowano go w latach 1948–1949 w formie z końca XVIII wieku, a następnie został siedzibą Ministerstwa Kultury i Sztuki.",
+      "W 1965 roku pałac wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W oficynie w latach 20. XIX wieku mieszkał Julian Ursyn Niemcewicz; w pałacu zatrzymywała się Maria Kalergis."
+    ],
+    "summary_en": "A Baroque-Rococo palace on Krakowskie Przedmieście, originally a Denhoff manor. Acquired by the Czartoryski family, it hosted commercial tenants in the 19th century and was rebuilt in 1948–1949 after burning in 1944; it now houses the Ministry of Culture.",
+    "ludzie": [
+      {"kto": "Kacper Denhoff", "rola": "właściciel drewnianego dworu przed 1643 rokiem", "wiki": null},
+      {"kto": "Ernest Denhoff", "rola": "inwestor murowanego dworu ok. 1669 roku", "wiki": null},
+      {"kto": "August Aleksander Czartoryski", "rola": "współwłaściciel dworu po 1731 roku", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "przebudowa niektórych wnętrz w stylu klasycystycznym", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "projektant pawilonu wystawienniczego z 1881 roku", "wiki": null},
+      {"kto": "Julian Ursyn Niemcewicz", "rola": "mieszkał w oficynie w latach 20. XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Czartoryskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Potockich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Potockich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-prezydencki",
+    "nazwa": "Pałac Prezydencki",
+    "name_en": "Presidential Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 46/48",
+    "adres_historyczny": null,
+    "lat": 52.242777777,
+    "lon": 21.015833333,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1643–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę korpusu głównego rozpoczął ok. 1643 roku hetman wielki koronny Stanisław Koniecpolski; prace dokończył jego syn Aleksander.",
+      "Projektantem pałacu był prawdopodobnie Constantino Tencalla, nadworny architekt króla Władysława IV.",
+      "Pałac kupili w 1685 roku Radziwiłłowie; w latach 1694–1705 przebudowano go pod kierunkiem Augustyna Locciego, Karola Ceroniego i Andrzeja Jeziornickiego.",
+      "W 1773 roku gmach został wynajęty na cele teatralne; w 1778 roku odbyła się tu premiera polskiej opery „Nędza uszczęśliwiona” Macieja Kamieńskiego.",
+      "Od 1773 roku w gmachu odbywały się posiedzenia delegacji wyłonionej przez Sejm Rozbiorowy, która przygotowywała traktaty I rozbioru Polski.",
+      "W styczniu 1807 roku na przedstawieniu „Andromedy” gościł w pałacu Napoleon Bonaparte.",
+      "W latach 1918–1939 pałac był oficjalną siedzibą Rady Ministrów i Prezesa Rady Ministrów; od 1994 roku oficjalną siedzibą Prezydenta Rzeczypospolitej Polskiej."
+    ],
+    "ciekawostki": [
+      "Pałac Prezydencki jest największym pałacem w Warszawie; w 1705 roku mieszkał w nim Stanisław Leszczyński."
+    ],
+    "summary_en": "The largest palace in Warsaw, begun around 1643 by Stanisław Koniecpolski. Owned by the Radziwiłł family and later a theatre venue, it housed the Council of Ministers between the wars and has been the official seat of the Polish President since 1994.",
+    "ludzie": [
+      {"kto": "Stanisław Koniecpolski", "rola": "hetman wielki koronny, rozpoczął budowę ok. 1643 roku", "wiki": null},
+      {"kto": "Aleksander Koniecpolski", "rola": "syn, dokończył budowę", "wiki": null},
+      {"kto": "Constantino Tencalla", "rola": "prawdopodobny projektant pałacu", "wiki": null},
+      {"kto": "Karol Stanisław Radziwiłł („Panie Kochanku”)", "rola": "najzamożniejszy magnat II połowy XVIII wieku, mieszkał w pałacu", "wiki": null},
+      {"kto": "Józef von Kurz-Bernardon", "rola": "austriacki przedsiębiorca i aktor, wynajął gmach na teatr w 1773 roku", "wiki": null},
+      {"kto": "Maciej Kamieński", "rola": "kompozytor opery „Nędza uszczęśliwiona”", "wiki": null},
+      {"kto": "Napoleon Bonaparte", "rola": "gość pałacu w styczniu 1807 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koniecpolskich", "Radziwiłłów", "Lubomirskich", "Namiestnikowski", "Rady Ministrów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Prezydencki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Prezydencki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urywa się w 1815 roku, więc historia po tej dacie jest niepełna."
+  }
+]

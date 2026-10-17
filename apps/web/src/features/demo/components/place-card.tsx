@@ -1,9 +1,11 @@
 "use client";
 
-import type { Place, PlacePhoto } from "@sawa/shared";
+import type { Place } from "@sawa/shared";
 import { animate, motion, useMotionValue, useReducedMotion } from "motion/react";
 import { type ReactNode, useEffect, useLayoutEffect, useRef } from "react";
-import { PLACE_KIND_LABELS, placeKindColor } from "@/features/map";
+import { Skeleton, SkeletonLines, Spinner } from "@/components/waiting";
+import { useLang, useT } from "@/features/i18n";
+import { placeKindColor, placeKindLabel } from "@/features/map";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { PlaceStoryState } from "../lib/place-story";
@@ -80,7 +82,7 @@ export function PlaceCardShell({
   });
 
   return (
-    <div className="pointer-events-none absolute inset-x-0 top-0 bottom-[calc(max(1.25rem,env(safe-area-inset-bottom))+64px)] z-20 md:bottom-0">
+    <div className="pointer-events-none absolute inset-x-0 top-0 bottom-[env(safe-area-inset-bottom)] z-20 md:bottom-0">
       <motion.section
         aria-label={label}
         initial={reduce ? { opacity: 0 } : { opacity: 0, y: 56, scale: 0.98 }}
@@ -111,11 +113,12 @@ export function PlaceCardShell({
 }
 
 export function CloseButton({ onClick }: { onClick: () => void }) {
+  const t = useT();
   return (
     <button
       type="button"
       onClick={onClick}
-      aria-label="Zamknij"
+      aria-label={t("Zamknij", "Close")}
       className="flex size-9 shrink-0 items-center justify-center rounded-full bg-tlo-2 text-tekst-2 transition-[transform,background-color] hover:bg-mieta-jasna hover:text-tekst active:scale-[0.92]"
     >
       <svg aria-hidden="true" viewBox="0 0 20 20" className="size-4" fill="currentColor">
@@ -127,13 +130,14 @@ export function CloseButton({ onClick }: { onClick: () => void }) {
 
 /** Rodzaj miejsca w jego kolorze z mapy i okres, np. „miejsce · 1867–1947”. */
 export function KindLine({ place, className = "" }: { place: Place; className?: string }) {
-  const parts = [PLACE_KIND_LABELS[place.kind], place.period].filter(Boolean);
+  const lang = useLang();
+  const parts = [placeKindLabel(place.kind, place.subkind, lang), place.period].filter(Boolean);
   return (
     <p className={`etykieta flex items-center gap-2 ${className}`}>
       <span
         aria-hidden="true"
         className="inline-block size-2.5 shrink-0 rounded-full"
-        style={{ backgroundColor: placeKindColor(place.kind) }}
+        style={{ backgroundColor: placeKindColor(place.kind, place.subkind) }}
       />
       <span className="truncate">{parts.join(" · ")}</span>
     </p>
@@ -148,13 +152,14 @@ type ListenButtonProps = {
 
 /** „Posłuchaj Sawy”: tło przycisku wypełnia się w miarę opowieści, jak pasek postępu. */
 export function ListenButton({ state, progress, onToggle }: ListenButtonProps) {
+  const t = useT();
   const isPlaying = state === "playing";
   const label = {
-    idle: "Posłuchaj Sawy",
-    loading: "Sawa sobie przypomina…",
-    playing: "Pauza",
-    paused: progress >= 100 ? "Jeszcze raz" : "Słuchaj dalej",
-    failed: "Spróbuj jeszcze raz",
+    idle: t("Posłuchaj Sawy", "Listen to Sawa"),
+    loading: t("Sawa sobie przypomina…", "Sawa is remembering…"),
+    playing: t("Pauza", "Pause"),
+    paused: progress >= 100 ? t("Jeszcze raz", "Play again") : t("Słuchaj dalej", "Keep listening"),
+    failed: t("Spróbuj jeszcze raz", "Try again"),
   }[state];
 
   return (
@@ -164,18 +169,31 @@ export function ListenButton({ state, progress, onToggle }: ListenButtonProps) {
       whileTap={{ scale: 0.97 }}
       transition={SPRING}
       aria-label={label}
-      className="relative flex h-14 w-full items-center justify-center gap-2.5 overflow-hidden rounded-[18px] bg-glebia text-[17px] font-bold tracking-[-0.01em] text-white shadow-[0_6px_16px_rgba(23,112,111,0.28)] transition-colors hover:bg-glebia-ciemna"
+      className="relative flex h-14 w-full items-center justify-center gap-2.5 overflow-hidden rounded-[18px] bg-glebia px-4 text-[16px] font-bold tracking-[-0.01em] text-white shadow-[0_6px_16px_rgba(23,112,111,0.28)] transition-colors hover:bg-glebia-ciemna"
     >
       <span
         aria-hidden="true"
         className="absolute inset-y-0 left-0 w-full origin-left bg-white/15"
         style={{ transform: `scaleX(${state === "idle" ? 0 : progress / 100})` }}
       />
-      <span className={`relative ${state === "loading" ? "animate-pulse" : ""}`}>
-        {isPlaying ? <PauseIcon className="size-5" /> : <PlayIcon className="size-5" />}
+      <span className="relative shrink-0">
+        {state === "loading" ? (
+          <Spinner className="size-5" />
+        ) : isPlaying ? (
+          <PauseIcon className="size-5" />
+        ) : (
+          <PlayIcon className="size-5" />
+        )}
       </span>
-      <span className="relative">{label}</span>
-      {state === "idle" && <span className="relative font-semibold text-white/70">ok. 45 s</span>}
+      {/* Etykieta w jednej linii, czas pod nią: w wąskiej karcie obok „Jedź tutaj” nic się nie łamie. */}
+      <span className="relative flex min-w-0 flex-col items-start leading-tight">
+        <span className="max-w-full truncate whitespace-nowrap">{label}</span>
+        {state === "idle" && (
+          <span className="whitespace-nowrap text-[12px] font-semibold text-white/70">
+            {t("ok. 45 s", "about 45 s")}
+          </span>
+        )}
+      </span>
     </motion.button>
   );
 }
@@ -191,15 +209,12 @@ export function cleanFact(fact: string): string {
   return fact.replace(/\s*\([^()]*\)\s*$/, "");
 }
 
-export function photoCredit(photo: PlacePhoto): string {
-  return [photo.year, photo.author, photo.license].filter(Boolean).join(" · ");
-}
-
 export function Sources({ place }: { place: Place }) {
+  const t = useT();
   if (place.sources.length === 0) return null;
   return (
     <div>
-      <h3 className="etykieta">Źródła</h3>
+      <h3 className="etykieta">{t("Źródła", "Sources")}</h3>
       <ul className="mt-1.5 space-y-1 text-[13px]">
         {place.sources.map((source) => (
           <li key={source.id}>
@@ -219,10 +234,11 @@ export function Sources({ place }: { place: Place }) {
 }
 
 export function TodayNearby({ place }: { place: Place }) {
+  const t = useT();
   if (place.todayNearby.length === 0) return null;
   return (
     <div>
-      <h3 className="etykieta">Dziś w tym miejscu</h3>
+      <h3 className="etykieta">{t("Dziś w tym miejscu", "Here today")}</h3>
       <ul className="mt-1.5 divide-y divide-tlo-2">
         {place.todayNearby.slice(0, 4).map((item) => (
           <li key={item.placeId}>
@@ -238,19 +254,28 @@ export function TodayNearby({ place }: { place: Place }) {
           </li>
         ))}
       </ul>
-      <p className="mt-1 text-[11px] text-tekst-3">Dane: Google Maps</p>
+      <p className="mt-1 text-[11px] text-tekst-3">{t("Dane: Google Maps", "Data: Google Maps")}</p>
     </div>
   );
 }
 
-export function CardSkeleton() {
+/** Karta w budowie: układ jak w gotowej (etykieta, nazwa, zdjęcie, tekst), żeby nic nie skakało. */
+export function CardSkeleton({ onClose }: { onClose?: () => void }) {
+  const t = useT();
   return (
-    <div aria-hidden="true" className="space-y-3 p-5 pt-6">
-      <div className="h-3 w-1/3 animate-pulse rounded bg-tlo-2" />
-      <div className="h-6 w-4/5 animate-pulse rounded bg-tlo-2" />
-      <div className="aspect-[16/9] w-full animate-pulse rounded-2xl bg-tlo-2" />
-      <div className="h-3 w-full animate-pulse rounded bg-tlo-2" />
-      <div className="h-3 w-2/3 animate-pulse rounded bg-tlo-2" />
+    <div className="space-y-3 p-5 pt-6">
+      <div className="flex items-start gap-3">
+        <div className="flex-1 space-y-2.5">
+          <Skeleton className="h-3 w-1/3" />
+          <Skeleton className="h-6 w-4/5" />
+        </div>
+        {onClose && <CloseButton onClick={onClose} />}
+      </div>
+      <Skeleton className="aspect-[16/9] w-full rounded-2xl" />
+      <SkeletonLines lines={2} />
+      <span className="sr-only" aria-live="polite">
+        {t("Wczytuję miejsce…", "Loading the place…")}
+      </span>
     </div>
   );
 }

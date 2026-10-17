@@ -1,0 +1,373 @@
+[
+  {
+    "id": "blok-marszalkowska-74",
+    "nazwa": "Blok mieszkalny przy ul. Marszałkowskiej 74",
+    "name_en": "Residential block at 74 Marszałkowska Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 74 (skrzydło od ul. Hożej 29/31)",
+    "adres_historyczny": "na miejscu kamienicy „Pod Husarzem”, rozebranej po powstaniu warszawskim",
+    "lat": 52.226056,
+    "lon": 21.014583,
+    "lokalizacja": "dokladna",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Blok powstał w latach 60. XX wieku na planie litery „L”, w miejscu rozebranej po powstaniu warszawskim kamienicy „Pod Husarzem”.",
+      "Autorami projektu byli Zbigniew Karpiński oraz Halina Woźniak.",
+      "Skrzydło od ulicy Hożej ma adres z jej numeracją (29/31).",
+      "W 1998 roku na elewacji od ul. Marszałkowskiej umieszczono tablicę upamiętniającą miejsce, w którym w czasie powstania warszawskiego mieścił się sztab batalionu AK „Iwo”.",
+      "25 sierpnia 2016 roku blok został wpisany do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1960s L-shaped residential block at 74 Marszałkowska Street, built on the site of the tenement „Pod Husarzem”, which was demolished after the Warsaw Uprising. A plaque on its facade marks the headquarters of AK battalion „Iwo” during the Uprising. It was entered in the municipal heritage register in 2016.",
+    "ludzie": [
+      {"kto": "Zbigniew Karpiński", "rola": "autor projektu bloku", "wiki": null},
+      {"kto": "Halina Woźniak", "rola": "autorka projektu bloku", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica „Pod Husarzem”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Blok mieszkalny przy ul. Marszałkowskiej 74 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Blok_mieszkalny_przy_ul._Marsza%C5%82kowskiej_74_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule okres budowy: lata 60. XX wieku."
+  },
+  {
+    "id": "bombardowanie-warszawy-1914-1915",
+    "nazwa": "Bombardowanie Warszawy (1914–1915)",
+    "name_en": "Bombing of Warsaw (1914–1915)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "1914–1915",
+    "istnieje": null,
+    "fakty": [
+      "Naloty na Warszawę w latach 1914–1915 przeprowadzały niemieckie i rosyjskie siły powietrzne podczas I wojny światowej.",
+      "26 września 1914 roku o godzinie 5:00 nad miastem pojawił się niemiecki sterowiec; zrzucił dwie bomby, z których jedna nie wybuchła, a druga zniszczyła budkę i słup telefoniczny.",
+      "16 października 1914 roku bomby z zeppelina spadły m.in. na ulice Chłodną i Okopową oraz na nieistniejący dziś Dworzec Wiedeński; rannych zostało 46 osób.",
+      "19 października 1914 roku sterowiec zbombardował posesję przy ul. Pawiej 25; zginęło 18 osób, a 38 zostało rannych. Był to najtragiczniejszy nalot na miasto.",
+      "22 października 1914 roku bomba z zeppelina spadła przed budynkiem konsulatu amerykańskiego.",
+      "29 listopada 1914 roku zbombardowano plac Zielony (obecnie Dąbrowskiego), uszkadzając nieistniejący dziś pomnik oficerów-lojalistów poległych w Noc Listopadową.",
+      "Do sierpnia 1915 roku miasta broniła rosyjska artyleria przeciwlotnicza; po zajęciu Warszawy przez wojska niemieckie kilku nalotów dokonali Rosjanie."
+    ],
+    "ciekawostki": [
+      "Gazety informowały, że sterowiec z 26 września 1914 roku został zestrzelony w okolicach Ciechanowa; według meldunku komendanta Twierdzy Modlin forteczne baterie oddały kilkaset strzałów bez efektu."
+    ],
+    "summary_en": "German and Russian aircraft and airships bombed Warsaw between 1914 and 1915 during the First World War. The deadliest raid, on 19 October 1914, hit the property at Pawia 25, killing 18 people and injuring 38.",
+    "ludzie": [],
+    "dawne_nazwy": ["plac Zielony (obecnie plac Dąbrowskiego)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bombardowanie Warszawy (1914–1915)", "url": "https://pl.wikipedia.org/wiki/Bombardowanie_Warszawy_%281914%E2%80%931915%29"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdarzenie miejskie; współrzędne z nagłówka to przybliżony punkt w centrum. Szczegóły w artykule dotyczą głównie roku 1914."
+  },
+  {
+    "id": "bozydar-kaleczyn-jurydyka",
+    "nazwa": "Bożydar-Kałęczyn (jurydyka)",
+    "name_en": "Bożydar-Kałęczyn (jurisdictional district)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ratusz jurydyki: ul. Nowy Świat 8/10",
+    "lat": 52.230879,
+    "lon": 21.02131,
+    "lokalizacja": "przyblizona",
+    "okres": "1702–1791",
+    "istnieje": false,
+    "fakty": [
+      "Jurydyka Bożydar-Kałęczyn została założona w 1702 roku przez J. Szwarcenberga-Czernego; obejmowała pierwotnie rejon obecnych ulic Książęcej, Smolnej i Alei Jerozolimskich.",
+      "Ratusz jurydyki znajdował się przy ul. Nowy Świat 8/10.",
+      "W 1774 roku na terenie jurydyki należącej wówczas do Augusta Sułkowskiego powstało żydowskie osiedle Nowa Jerozolima, między obecnym placem Zawiszy a ul. Kaliską.",
+      "Osiedle powstało z naruszeniem przepisów, które zakazywały Żydom mieszkania i handlu w obrębie wałów miejskich; magistrat Starej Warszawy pozwał Sułkowskiego do sądów marszałkowskich.",
+      "23 stycznia 1776 roku domy w Nowej Jerozolimie zostały zburzone, mimo żydowskich protestów.",
+      "Jurydykę zlikwidowano w 1791 roku na podstawie prawa o miastach."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bożydar-Kałęczyn was a jurisdictional district founded in 1702, with its town hall at Nowy Świat 8/10. In 1774 a Jewish settlement called Nowa Jerozolima was founded on its land; its houses were demolished in 1776. The jurisdiction was abolished in 1791, but the settlement's name survives in Aleje Jerozolimskie.",
+    "ludzie": [
+      {"kto": "J. Szwarcenberg-Czerny", "rola": "założyciel jurydyki (1702)", "wiki": null},
+      {"kto": "August Sułkowski", "rola": "właściciel terenu, na którym powstało osiedle Nowa Jerozolima (1774)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kałęczyn", "Nowa Jerozolima (osiedle, 1774–1776)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bożydar-Kałęczyn", "url": "https://pl.wikipedia.org/wiki/Bo%C5%BCydar-Ka%C5%82%C4%99czyn"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Jurydyka nie istnieje od 1791 roku (istnieje: false); współrzędne z nagłówka."
+  },
+  {
+    "id": "brama-glowna-uw",
+    "nazwa": "Brama Główna Uniwersytetu Warszawskiego",
+    "name_en": "Main Gate of the University of Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 26/28",
+    "adres_historyczny": "ul. Krakowskie Przedmieście 26/28 (wcześniej brama w tym samym miejscu, do 1819)",
+    "lat": 52.23979,
+    "lon": 21.01718,
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Poprzednią bramę, zaprojektowaną przez Jana Zygmunta Deybla i Joachima Daniela Jaucha, około 1732 roku polecił zbudować August II Mocny; przetrwała do 12 czerwca 1819 roku.",
+      "W 1823 roku zbudowano skromniejszą bramę, ale nie na linii ulicy, lecz w głębi terenu uniwersyteckiego.",
+      "Obecną bramę w stylu neobarokowym zaprojektował około 1900 roku Stefan Szyller; oddano ją do użytku w 1911 roku, przekazując uniwersytetowi prowadzącą na kampus uliczkę zwaną „Uniwersytecką”.",
+      "Do 1916 roku bramę wieńczyła ukoronowana litera „A”, będąca symbolem uniwersytetu odwołującym się do imienia cara Aleksandra I.",
+      "Figury Uranii i Ateny zaprojektował Zygmunt Langman; zostały poważnie uszkodzone w czasie powstania warszawskiego i usunięte zaraz po wojnie, a na swoje miejsce wróciły po rekonstrukcji w 1982 roku.",
+      "W 1984 roku brama została wpisana do rejestru zabytków jako element zespołu Uniwersytetu Warszawskiego."
+    ],
+    "ciekawostki": [
+      "Dawną bramę uwiecznili na swoich obrazach m.in. Bernardo Bellotto i Zygmunt Vogel.",
+      "W okresie PRL na bramie umieszczono orła bez korony; dziś, tak jak w latach 1916–1944, widnieje na niej orzeł w koronie w otoczeniu pięciu gwiazd, oficjalne godło UW."
+    ],
+    "summary_en": "The main gate of the University of Warsaw at Krakowskie Przedmieście 26/28 is a neo-baroque gate designed by Stefan Szyller and opened in 1911. It replaced an earlier gate, built around 1732 at the order of Augustus II, which stood until 1819. The gate has been in the heritage register since 1984.",
+    "ludzie": [
+      {"kto": "Jan Zygmunt Deybel", "rola": "projektant dawnej bramy", "wiki": null},
+      {"kto": "Joachim Daniel Jauch", "rola": "projektant dawnej bramy", "wiki": null},
+      {"kto": "August II Mocny", "rola": "zlecił budowę dawnej bramy ok. 1732 roku", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "projektant obecnej bramy (ok. 1900)", "wiki": null},
+      {"kto": "Zygmunt Langman", "rola": "autor figur Uranii i Ateny", "wiki": null},
+      {"kto": "Bernardo Bellotto, Zygmunt Vogel", "rola": "malarze, którzy uwiecznili dawną bramę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Brama Główna Uniwersytetu Warszawskiego", "url": "https://pl.wikipedia.org/wiki/Brama_G%C5%82%C3%B3wna_Uniwersytetu_Warszawskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "brama-mostowa-stara-prochownia",
+    "nazwa": "Brama Mostowa (Stara Prochownia)",
+    "name_en": "Mostowa Gate (Old Powder Magazine)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Boleść 2",
+    "adres_historyczny": "ul. Poprawa (nazwa z czasów Domu Kary i Poprawy); mieszkańcy mówili: Boleść, Bolesna",
+    "lat": 52.252,
+    "lon": 21.0119,
+    "lokalizacja": "dokladna",
+    "okres": "1581–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Późnogotycka wieża bramna została wzniesiona w latach 1581–1582 z fundacji Anny Jagiellonki na przyczółku drewnianego mostu Zygmunta Augusta, aby chronić przeprawę przed pożarem.",
+      "W 1603 roku, po zniszczeniu mostu przez krę, budynek utracił pierwotną funkcję; w 1643 roku król Władysław IV przeznaczył go na prochownię.",
+      "Przebudowę w latach 1648–1649 prowadził armatni koronny Krzysztof Arciszewski; kosztowała 7000 zł polskich.",
+      "W 1767 roku stara prochownia została oddana marszałkowi wielkiemu koronnemu Stanisławowi Lubomirskiemu, który przekształcił ją w więzienie Dom Kary i Poprawy; w latach 1769–1770 dobudowano klasycystyczny budynek.",
+      "Od 8 do 28 sierpnia 1944 roku zespół stanowił bastion obrony Starego Miasta od strony Wisły; budynek został spalony i poważnie uszkodzony.",
+      "Brama Mostowa wraz z budynkiem więzienia odbudowano w latach 1961–1965 według projektu Jana Grudzińskiego.",
+      "W 1994 roku na ścianie frontowej odsłonięto tablicę upamiętniającą żołnierzy batalionu „Dzik”."
+    ],
+    "ciekawostki": [
+      "Ulicy nadano nazwę „Poprawa”, ale mieszkańcy nazywali ją „Boleść” lub „Bolesna”, bo nią rodziny odprowadzały aresztantów do więzienia."
+    ],
+    "summary_en": "The Mostowa Gate is a late-Gothic gatehouse at Boleść 2 in the New Town of Warsaw, built in 1581–1582 at the head of a bridge of Sigismund Augustus. It later served as a powder magazine and a prison, was badly damaged in the 1944 Uprising, and was rebuilt in 1961–1965.",
+    "ludzie": [
+      {"kto": "Anna Jagiellonka", "rola": "fundatorka wieży (1581–1582)", "wiki": null},
+      {"kto": "Władysław IV", "rola": "król, przeznaczył budynek na prochownię (1643)", "wiki": null},
+      {"kto": "Krzysztof Arciszewski", "rola": "armatni koronny, kierował przebudową 1648–1649", "wiki": null},
+      {"kto": "Stanisław Lubomirski", "rola": "marszałek wielki koronny, przekształcił budynek w więzienie (1767)", "wiki": null},
+      {"kto": "Joachim Daniel Jauch", "rola": "kierował przebudową w połowie XVIII wieku", "wiki": null},
+      {"kto": "Jan Grudziński", "rola": "projektant odbudowy 1961–1965", "wiki": null}
+    ],
+    "dawne_nazwy": ["Baszta Mostowa", "Dom Kary i Poprawy", "ul. Poprawa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Brama Mostowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Brama_Mostowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Most Zygmunta Augusta już nie istnieje; zachowany jest sam obiekt bramny (dziś Stara Prochownia SCEK)."
+  },
+  {
+    "id": "budynek-banku-polskiego-bielanska-10",
+    "nazwa": "Budynek Banku Polskiego (ul. Bielańska 10)",
+    "name_en": "Bank Polski Building (Bielańska 10)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bielańska 10",
+    "adres_historyczny": "w miejscu kompleksu Mennicy Warszawskiej",
+    "lat": 52.245,
+    "lon": 21.00558333,
+    "lokalizacja": "dokladna",
+    "okres": "1907–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1907–1911 według projektu Leontija Benois dla rosyjskiego Banku Państwa, w miejscu kompleksu Mennicy Warszawskiej.",
+      "Od 1918 roku mieściła się tu siedziba Polskiej Krajowej Kasy Pożyczkowej, a od 1926 roku Banku Polskiego S.A.",
+      "Budynek został uszkodzony w czasie obrony Warszawy we wrześniu 1939 roku.",
+      "3 sierpnia 1944 roku budynek zdobyli powstańcy; przez cztery tygodnie był reduktą. Żołnierze batalionu „Łukasiński” odpierali ataki Niemców. Powstańcy ewakuowali się kanałami 1 września 1944 roku.",
+      "W latach 60. XX wieku wyburzono znaczną część uszkodzonego budynku, pozostawiając głównie prawą część fasady.",
+      "W 1981 roku budynek wpisano do rejestru zabytków, a w 1993 roku został sprzedany.",
+      "W miejscu pozostałej części dawnego Banku Polskiego wzniesiono po 2010 roku, z zachowaniem zabytkowych elementów ścian i fundamentów, biurowiec Senator."
+    ],
+    "ciekawostki": [
+      "Planowano umieścić w zachowanej części Muzeum Powstania Warszawskiego i rozpoczęto jego nadbudowę, ale plan nie został zrealizowany."
+    ],
+    "summary_en": "The former Bank Polski building at Bielańska 10 was built in 1907–1911 for the Russian State Bank on the site of the Warsaw Mint. Insurgents held it as a redoubt for four weeks in August–September 1944. Most of it was demolished in the 1960s; the surviving facade is protected, and the Senator office building was added after 2010.",
+    "ludzie": [
+      {"kto": "Leontija Benois", "rola": "projektant budynku (1907–1911)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Banku Polskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_Banku_Polskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia dziś biurowiec Senator bez numeru adresu."
+  },
+  {
+    "id": "budynek-banku-zachodniego-fredry-6",
+    "nazwa": "Budynek Banku Zachodniego",
+    "name_en": "Bank Zachodni Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Aleksandra Fredry 6",
+    "adres_historyczny": "ul. Niecała 3 (oficyna z 1913 roku)",
+    "lat": 52.2421,
+    "lon": 21.0098,
+    "lokalizacja": "dokladna",
+    "okres": "1896–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiono w latach 1896–1897 według projektu Józefa Piusa Dziekońskiego na zlecenie pierwszego właściciela, Hipolita Wawelberga.",
+      "Bank Zachodni był czwartym pod względem wielkości bankiem w Królestwie Polskim, a w latach 1918–1939 zaliczano go do wielkiej szóstki prywatnych banków polskich.",
+      "W 1913 roku, również według projektu Józefa Piusa Dziekońskiego, zrealizowano nowe skrzydło na przedłużeniu oficyny północnej przy ul. Niecałej 3; inwestorem był Stanisław Rotwand, nowy właściciel banku.",
+      "Podczas II wojny światowej budynek przejęli Niemcy; działał tu m.in. Klub Niemiecki (Deutscher Club), a w czasie powstania warszawskiego Niemcy magazynowali tu amunicję i broń.",
+      "W kwietniu 1946 roku bank stracił licencję i był likwidowany do 1953 roku, po czym został przejęty przez Skarb Państwa.",
+      "W 1975 roku budynek wpisano do rejestru zabytków.",
+      "W 1989 roku mieścił się tu sztab wyborczy Komitetu Obywatelskiego „Solidarność”; upamiętnia to tablica odsłonięta w 2020 roku."
+    ],
+    "ciekawostki": [
+      "Po 1945 roku zniszczono lub zagrabiono wiele ozdób, m.in. ozdobną wstęgę fryzu, daszek nad głównym wejściem i odboje bramne zwane „krasnalami”."
+    ],
+    "summary_en": "A listed two-storey office building at Aleksandra Fredry 6, built in 1896–1897 by Józef Pius Dziekoński for Hipolit Wawelberg as the Bank Zachodni building. The Germans occupied it during the war, it was listed in 1975, and a plaque marks the 1989 election headquarters of Solidarity's Citizens' Committee.",
+    "ludzie": [
+      {"kto": "Józef Pius Dziekoński", "rola": "projektant budynku (1896–1897 i 1913)", "wiki": null},
+      {"kto": "Hipolit Wawelberg", "rola": "pierwszy właściciel", "wiki": null},
+      {"kto": "Stanisław Rotwand", "rola": "nowy właściciel banku, inwestor skrzydła z 1913 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Banku Zachodniego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_Banku_Zachodniego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-centrali-ogrodniczej",
+    "nazwa": "Budynek Centrali Ogrodniczej",
+    "name_en": "Horticultural Centre Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "róg ul. Marszałkowskiej i ul. Wilczej",
+    "adres_historyczny": null,
+    "lat": 52.224861111,
+    "lon": 21.014166666,
+    "lokalizacja": "dokladna",
+    "okres": "1948–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektowano w latach 1948–1949 przez zespół „Pingwinów” w składzie: Stefan Hołówka, Tadeusz Iskierka, Konstantego i Mikołaja Kokozowów, Bogumił Płachecki i Jerzy Wasilewski.",
+      "Miał być pierwszym budynkiem nową linią poszerzonej ulicy Marszałkowskiej i uzupełnić pierzeję między ulicami Wilczą i Hożą po stronie zachodniej.",
+      "Pierwotny projekt zakładał szkielet konstrukcji dzielony pasami piaskowca; w 1950 roku połowa budynku była w stanie surowym, a architektów zmuszono do dostosowania go do założeń Marszałkowskiej Dzielnicy Mieszkaniowej.",
+      "W efekcie pogrubiono wybudowane już mury o 70 cm, zrezygnowano z rzeźb figuralnych zwieńczających attykę i zrealizowano projekt w bardzo zredukowanej formie (z wyjątkiem segmentu od ul. Wilczej).",
+      "W październiku 2013 roku pod ten adres przeniosło się Biuro Architektury i Planowania Przestrzennego Urzędu m.st. Warszawy."
+    ],
+    "ciekawostki": [
+      "Zamiast cegły licówki zastosowano na elewacji luźno rozrzucone, wystające przed lico ceglane główki, tworzące układ ukośnej siatki."
+    ],
+    "summary_en": "An office building at the corner of Marszałkowska and Wilcza streets, designed in 1948–1949 by the 'Penguins' team. The design was scaled back to fit the Marszałkowska Residential District plan. In October 2013 the Warsaw city Office of Architecture and Spatial Planning moved into it.",
+    "ludzie": [
+      {"kto": "Stefan Hołówka", "rola": "członek zespołu „Pingwinów”, projektant", "wiki": null},
+      {"kto": "Tadeusz Iskierka", "rola": "członek zespołu „Pingwinów”, projektant", "wiki": null},
+      {"kto": "Konstanty Kokozow", "rola": "członek zespołu „Pingwinów”, projektant", "wiki": null},
+      {"kto": "Mikołaj Kokozow", "rola": "członek zespołu „Pingwinów”, projektant", "wiki": null},
+      {"kto": "Bogumił Płachecki", "rola": "członek zespołu „Pingwinów”, projektant", "wiki": null},
+      {"kto": "Jerzy Wasilewski", "rola": "członek zespołu „Pingwinów”, projektant", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biurowiec Centrali Ogrodniczej i Metrobudowy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Centrali Ogrodniczej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_Centrali_Ogrodniczej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-glownego-urzedu-miar",
+    "nazwa": "Budynek Głównego Urzędu Miar",
+    "name_en": "Central Office of Measures Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Elektoralna 2",
+    "adres_historyczny": "ul. Elektoralna 2a (róg Rymarskiej i Elektoralnej)",
+    "lat": 52.2417,
+    "lon": 21.0008,
+    "lokalizacja": "dokladna",
+    "okres": "1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach zaprojektowali Antonio Corazzi i Jan Jakub Gay; później rozbudował go Julian Ankiewicz, a oficyny zaprojektował Marian Lalewicz.",
+      "Na gruncie, który w XVII wieku należał do Czartoryskich, a na początku XIX wieku został wylicytowany przez Skarb Państwa, wzniesiono pałac Ministrów Skarbu i budynek Banku Polskiego.",
+      "W latach 1825-1928 (tak podano w artykule) Corazzi i Gay zbudowali na rogu Rymarskiej i Elektoralnej dwuskrzydłowy gmach w stylu klasycystycznym z narożną rotundą nakrytą kopułą.",
+      "Bank Polski został powołany 29 stycznia 1828 roku; 1 stycznia 1886 roku przemianowano go na Kantor Warszawski (Rosyjskiego) Banku Państwa.",
+      "W 1917 roku budynek wybrano na siedzibę Ministerstwa Przemysłu i Handlu, a jednym z podległych mu urzędów był Główny Urząd Miar.",
+      "W czasie powstania warszawskiego budynek został zniszczony przez Niemców; po odbudowie, którą prowadził Piotr Biegański, stał się w całości siedzibą GUM.",
+      "W 1965 roku budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Najważniejszym pomieszczeniem Banku Polskiego była rotunda, w której odbywały się sesje giełdowe."
+    ],
+    "summary_en": "The Central Office of Measures building at Elektoralna 2 in Warsaw was designed by Antonio Corazzi and Jan Jakub Gay for the Bank Polski, whose rotunda hosted stock exchange sessions. It was destroyed by the Germans during the 1944 Uprising, rebuilt by Piotr Biegański and listed in 1965.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "projektant gmachu", "wiki": null},
+      {"kto": "Jan Jakub Gay", "rola": "projektant i budowniczy gmachu", "wiki": null},
+      {"kto": "Julian Ankiewicz", "rola": "rozbudowa budynku", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "projektant oficyn", "wiki": null},
+      {"kto": "Piotr Biegański", "rola": "odbudowa po powstaniu warszawskim", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bank Polski (gmach przy Elektoralnej)", "Kantor Warszawski (Rosyjskiego) Banku Państwa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Głównego Urzędu Miar w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_G%C5%82%C3%B3wnego_Urz%C4%99du_Miar_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "W artykule data budowy gmachu to „1825-1928”; prawdopodobnie literówka, do weryfikacji. Ten sam artykuł podaje dla klasycystycznego gmachu Banku Polskiego lata 1828–1830."
+  },
+  {
+    "id": "budynek-instytutu-oftalmicznego-smolna-8",
+    "nazwa": "Budynek Instytutu Oftalmicznego (ul. Smolna 8)",
+    "name_en": "Ophthalmic Institute Building (Smolna 8)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Smolna 8",
+    "lat": 52.233611111,
+    "lon": 21.025277777,
+    "lokalizacja": "dokladna",
+    "okres": "1870–1944",
+    "istnieje": false,
+    "fakty": [
+      "Instytut Oftalmiczny, działający dotąd przy ul. Marszałkowskiej 119, otrzymał nową siedzibę przy ul. Smolnej 8: działkę kupiono w 1861 roku, budowę rozpoczęto w 1866 roku według projektu Henryka Marconiego, pod kierunkiem budowniczego Adolfa Wolińskiego, a zakończono w 1870 roku.",
+      "Dwupiętrowy budynek wzniesiono w stylu włoskiego odrodzenia; front od strony Smolnej pokryto pilastrami z datą budowy i popiersiem fundatora, a gmach wyposażono w windę i taras od strony Wisły.",
+      "2 sierpnia 1944 roku Melanowski otrzymał rozkaz ewakuacji chorych i personelu do gmachu Muzeum Narodowego; wieczorem tego dnia Niemcy podpalili budynek.",
+      "We wrześniu instytut ewakuowano do Milanówka, a następnie do Grodziska.",
+      "Mury przy ulicy Smolnej rozebrano po 1945 roku.",
+      "W 1976 roku na miejscu budynku szpitala zakończono budowę 19-piętrowego budynku mieszkalnego „Młotek”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ophthalmic Institute building at Smolna 8 was a two-storey Italian Renaissance-style hospital, built in 1866–1870 to designs by Henryk Marconi. The Germans set it on fire on 2 August 1944 during the Warsaw Uprising. Its walls were demolished after 1945, and the 19-storey „Młotek” block was built on the site in 1976.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Adolf Woliński", "rola": "budowniczy", "wiki": null},
+      {"kto": "Melanowski", "rola": "otrzymał rozkaz ewakuacji instytutu w sierpniu 1944 roku (imię nie podane w artykule)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek Instytutu Oftalmicznego przy ulicy Smolnej 8 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_Instytutu_Oftalmicznego_przy_ulicy_Smolnej_8_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "„Młotek” to inny obiekt, zbudowany na miejscu szpitala."
+  }
+]

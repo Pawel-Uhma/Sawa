@@ -1,37 +1,56 @@
 "use client";
 
-import { interestsOfTags, type Route } from "@sawa/shared";
+import { HACKATHON_VENUE, type Route, type Travel } from "@sawa/shared";
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import dynamic from "next/dynamic";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { LoadingCover } from "@/components/waiting";
+import { type Lang, pick, useLang, useT } from "@/features/i18n";
 import type { MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
+import { useDemoDrive } from "../lib/demo-drive";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
+import { shortestStopFor, useFastestRoute } from "../lib/fastest-route";
 import { forgetAll, useMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
+import { isAt, useRideClock } from "../lib/ride-clock";
 import {
   CUSTOM_DESTINATION_NAME,
+  CUSTOM_DESTINATION_NAME_EN,
   DESTINATION_PRESETS,
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
+import { useGpsClockSync } from "../lib/ride-sync";
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
 import { HomePanel } from "./home-panel";
-import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
+import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
+import { ProfileModal, type ProfileStep } from "./profile-modal";
 import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
-import { type ProfileStep, type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
+import { type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
+import { SawaSpeaking } from "./sawa-speaking";
 import { SawaTab } from "./sawa-tab";
-import { type Tab, TabBar } from "./tab-bar";
 import { TopBar } from "./top-bar";
+
+// Ekrany nad mapą. Paska zakładek nie ma: Przejażdżki i Sawa są w menu pod logo,
+// a gdy Sawa mówi poza trasą, do jej ekranu prowadzi pigułka w rogu (SawaSpeaking).
+type Tab = "map" | "rides" | "sawa";
 
 // Mapa Antka (features/map). MapLibre potrzebuje window i WebGL, więc tylko w przeglądarce.
 const SawaMap = dynamic(() => import("@/features/map").then((mod) => mod.SawaMap), {
   ssr: false,
+  loading: MapChunkLoading,
 });
+
+/** Póki kod mapy się ściąga: ta sama zasłona, którą potem pokazuje sama mapa, więc nic nie skacze. */
+function MapChunkLoading() {
+  const t = useT();
+  return <LoadingCover show label={t("Wczytuję mapę Warszawy…", "Loading the map of Warsaw…")} />;
+}
 
 // Karta miejsca czyta wybór z URL-a (`?p=`) i dane mapy, więc też tylko w przeglądarce.
 const PlaceCardHost = dynamic(() => import("./place-card-host").then((mod) => mod.PlaceCardHost), {
@@ -44,15 +63,28 @@ type Stage = "onboarding" | "map" | "route";
 const PANEL_PX = { tablet: 360, laptop: 400 };
 const DESKTOP_GAP_PX = 24;
 
-export function DemoApp() {
+// Podstrona /demo na scenę: bez onboardingu, start zawsze spod 42 Warsaw, trasa układa się sama.
+const DEMO_PROFILE: Profile = {
+  familiarity: "first_time",
+  interests: ["historical"],
+  storyStyle: "fun",
+  audience: "adult",
+};
+const DEMO_DURATION_MIN = 90;
+
+export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
+  const isStage = scenario === "stage";
+  const lang = useLang();
   const isDesktop = useIsDesktop();
   const isWide = useIsWide();
-  const [stage, setStage] = useState<Stage>("onboarding");
-  const [onboardingStep, setOnboardingStep] = useState<OnboardingStep>("welcome");
-  const [profile, setProfile] = useState<Profile>(EMPTY_PROFILE);
+  const [stage, setStage] = useState<Stage>(isStage ? "map" : "onboarding");
+  const [profile, setProfile] = useState<Profile>(isStage ? DEMO_PROFILE : EMPTY_PROFILE);
+  // Edycja jednego pola profilu idzie przez modal, nigdy przez onboarding.
+  const [editing, setEditing] = useState<ProfileStep | null>(null);
   const [tab, setTab] = useState<Tab>("map");
-  const [durationMin, setDurationMin] = useState(90);
+  const [durationMin, setDurationMin] = useState(isStage ? DEMO_DURATION_MIN : 90);
   const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "loop" });
+  const [travel, setTravel] = useState<Travel>("transit");
   // Ostatni wybrany cel wraca po przełączeniu „Wracam tu” → „Do celu”
   const [lastDestination, setLastDestination] = useState<Extract<RideEnd, { type: "destination" }>>(
     { type: "destination", ...DESTINATION_PRESETS[0] },
@@ -67,8 +99,21 @@ export function DemoApp() {
   const [selectedPlace, setSelectedPlace] = useState<PlaceSelection | null>(null);
   const [placeCoverPx, setPlaceCoverPx] = useState(360);
   // O zgodę na lokalizację pytamy dopiero po onboardingu
-  const start = useStartPoint(stage !== "onboarding");
-  const origin = start.point;
+  // Na scenie nie pytamy o lokalizację: stała pozycja pod 42 Warsaw
+  const start = useStartPoint(!isStage && stage !== "onboarding");
+  const origin = isStage ? HACKATHON_VENUE : start.point;
+  const fastest = useFastestRoute(origin, profile, rideEnd, travel);
+  // Suwak nie schodzi poniżej najszybszej drogi do celu (#43)
+  const minDurationMin =
+    fastest.status === "ready" ? shortestStopFor(fastest.route.totalMin) : null;
+
+  const fastestRoute = fastest.status === "ready" ? fastest.route : null;
+
+  // Każdy nowy cel (i zmiana startu albo sposobu jazdy): suwak sam staje na najszybszej drodze.
+  // Użytkownik może go potem przesunąć dalej, dłuższy czas to trasa krajoznawcza.
+  useEffect(() => {
+    if (fastestRoute) setDurationMin(shortestStopFor(fastestRoute.totalMin));
+  }, [fastestRoute]);
 
   const showRoute = useCallback((next: Route) => {
     setPlanned(next);
@@ -81,17 +126,41 @@ export function DemoApp() {
     setPlanning(true);
     setPlanError(null);
     try {
-      showRoute(await planRoute(origin, durationMin, profile, rideEnd));
+      // Na najkrótszym kroku to po prostu najszybsza droga, już pobrana
+      if (fastest.status === "ready" && durationMin === minDurationMin) {
+        showRoute(fastest.route);
+        return;
+      }
+      showRoute(await planRoute(origin, durationMin, profile, rideEnd, travel));
     } catch {
       setPlanError(
         start.status === "located"
-          ? "Nie udało się ułożyć trasy stąd. Może w pobliżu nie ma przystanku? Spróbuj startu spod 42 Warsaw w menu Sawy."
-          : "Nie udało się ułożyć trasy. Spróbuj jeszcze raz.",
+          ? pick(
+              lang,
+              "Nie udało się ułożyć trasy stąd. Może w pobliżu nie ma przystanku? Spróbuj startu spod 42 Warsaw w menu Sawy.",
+              "Couldn't plan a route from here. Maybe there's no stop nearby? Try starting from 42 Warsaw in the Sawa menu.",
+            )
+          : pick(
+              lang,
+              "Nie udało się ułożyć trasy. Spróbuj jeszcze raz.",
+              "Couldn't plan a route. Please try again.",
+            ),
       );
     } finally {
       setPlanning(false);
     }
-  }, [origin, start.status, durationMin, profile, rideEnd, showRoute]);
+  }, [
+    lang,
+    origin,
+    start.status,
+    durationMin,
+    profile,
+    rideEnd,
+    travel,
+    fastest,
+    minDurationMin,
+    showRoute,
+  ]);
 
   const changeRideEnd = useCallback((next: RideEnd) => {
     if (next.type === "destination") setLastDestination(next);
@@ -118,13 +187,21 @@ export function DemoApp() {
   // Do sprawdzenia localStorage onboarding się nie pokazuje, żeby nie mignął.
   const [restored, setRestored] = useState(false);
   useEffect(() => {
-    const saved = loadProfile();
+    const saved = isStage ? null : loadProfile();
     if (saved) {
       setProfile(saved);
       setStage("map");
     }
     setRestored(true);
-  }, []);
+  }, [isStage]);
+
+  // Na scenie trasa układa się sama raz, zaraz po wejściu (bez zapisu profilu w przeglądarce).
+  const autoPlanned = useRef(false);
+  useEffect(() => {
+    if (!isStage || autoPlanned.current) return;
+    autoPlanned.current = true;
+    generateRoute();
+  }, [isStage, generateRoute]);
 
   const finishOnboarding = useCallback((next: Profile) => {
     setProfile(next);
@@ -132,12 +209,16 @@ export function DemoApp() {
     setStage("map");
   }, []);
 
-  const editProfile = useCallback((step: ProfileStep) => {
-    setOnboardingStep(step);
-    setStage("onboarding");
-  }, []);
+  const editProfile = useCallback((step: ProfileStep) => setEditing(step), []);
 
-  const editInterests = useCallback(() => editProfile("interests"), [editProfile]);
+  const closeEditing = useCallback(() => setEditing(null), []);
+
+  // Zapis z modalu zmienia tylko profil, bez wracania do ekranów wstępu.
+  const saveEditing = useCallback((next: Profile) => {
+    setProfile(next);
+    saveProfile(next);
+    setEditing(null);
+  }, []);
 
   const restart = useCallback(() => {
     saveProfile(null);
@@ -146,7 +227,7 @@ export function DemoApp() {
     setRoute([]);
     setPlanned(null);
     setTab("map");
-    setOnboardingStep("welcome");
+    setEditing(null);
     setStage("onboarding");
   }, []);
 
@@ -155,7 +236,8 @@ export function DemoApp() {
   const activeStop = route[activeIndex];
   const isHome = stage === "map" && tab === "map";
   const destination = rideEnd.type === "destination" ? rideEnd : null;
-  const isPlaceOpen = isHome && selectedPlace !== null;
+  // Karta miejsca działa też na trasie: klik w pinezkę spoza trasy pokazuje to miejsce.
+  const isPlaceOpen = (isHome || isRoute) && selectedPlace !== null;
 
   const padding: MapPadding = useMemo(() => {
     if (isDesktop) {
@@ -166,9 +248,9 @@ export function DemoApp() {
         left: (isWide ? PANEL_PX.laptop : PANEL_PX.tablet) + DESKTOP_GAP_PX * 2,
       };
     }
+    if (isPlaceOpen) return { top: isRoute ? 88 : 120, right: 0, bottom: placeCoverPx, left: 0 };
     if (isRoute) return { top: 88, right: 0, bottom: sheetCoverPx, left: 0 };
-    if (isPlaceOpen) return { top: 120, right: 0, bottom: placeCoverPx, left: 0 };
-    return { top: 120, right: 0, bottom: panelCollapsed ? 200 : destination ? 560 : 480, left: 0 };
+    return { top: 88, right: 0, bottom: panelCollapsed ? 96 : destination ? 470 : 380, left: 0 };
   }, [
     isDesktop,
     isWide,
@@ -181,13 +263,13 @@ export function DemoApp() {
   ]);
 
   const camera: MapCamera = useMemo(() => {
-    if (isRoute && activeStop) {
-      const [lng, lat] = activeStop.coord;
-      return { type: "center", center: { lat, lng }, zoom: 15.4 };
-    }
     // Wybrane miejsce jedzie nad kartę; zoom zostaje taki, jaki ustawił użytkownik
     if (isPlaceOpen && selectedPlace.position) {
       return { type: "center", center: selectedPlace.position };
+    }
+    if (isRoute && activeStop) {
+      const [lng, lat] = activeStop.coord;
+      return { type: "center", center: { lat, lng }, zoom: 15.4 };
     }
     // Wybrany cel: mapa pokazuje start i cel naraz
     if (isHome && destination) {
@@ -201,22 +283,55 @@ export function DemoApp() {
   // Odtwarzacz jest tu, a nie w arkuszu trasy: zakładka Sawa steruje tą samą opowieścią.
   const player = useStoryPlayer(route, activeIndex, listener);
   const { setIsPlaying, rewind } = player;
-  // Sawa mówi na trasie; po wyjściu z niej pauza, a po wejściu wznowienie (jak wcześniej arkusz).
+  // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
+  // Pauza i stop Sawy zatrzymują też zegar (suwak i odliczanie).
+  const clock = useRideClock(route, player.isPlaying);
+  const { syncTo } = clock;
+  // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
+  const position = start.status === "located" ? start.point : null;
+  useGpsClockSync(route, position, clock);
+  const pickStop = useCallback(
+    (index: number) => {
+      syncTo(index);
+      setActiveIndex(index);
+    },
+    [syncTo],
+  );
+  // Na scenie autobus jedzie sam: aktywny punkt idzie po trasie w ok. 1,5 min (T-36)
+  useDemoDrive(isStage && isRoute, route, pickStop);
+  // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
+  // (zegar jazdy albo GPS). Po wyjściu z trasy pauza, a po wejściu wznowienie.
+  const waiting = clock.waitSec !== null;
+  const wasWaiting = useRef(false);
   useEffect(() => {
-    setIsPlaying(isRoute);
-  }, [isRoute, setIsPlaying]);
+    const arrived = wasWaiting.current && !waiting;
+    wasWaiting.current = waiting;
+    // Start z zakładki Sawa (poza ekranem trasy) zostaje, nie pauzujemy go od razu
+    if (arrived && !isRoute) return;
+    setIsPlaying(isRoute && !waiting);
+  }, [isRoute, waiting, setIsPlaying]);
+  const firstStop = route[0];
+  useEffect(() => {
+    if (waiting && firstStop && start.status === "located" && isAt(origin, firstStop)) syncTo(0);
+  }, [waiting, firstStop, start.status, origin, syncTo]);
+  // Stuknięcie w odtwarzanie przed pierwszym miejscem znaczy „opowiadaj już teraz”.
+  const ridePlayer = useMemo(() => {
+    if (!waiting) return player;
+    const toggle = () => {
+      syncTo(0);
+      player.toggle();
+    };
+    return { ...player, toggle };
+  }, [waiting, player, syncTo]);
   const playStop = useCallback(
     (index: number) => {
       if (index < 0 || index >= route.length) return;
       rewind();
       setIsPlaying(true);
-      setActiveIndex(index);
+      pickStop(index);
     },
-    [route.length, rewind, setIsPlaying],
+    [route.length, rewind, setIsPlaying, pickStop],
   );
-  // Na mapie pusta lista znaczy „wszystkie miejsca”, więc bez zapasowej kategorii z planera.
-  const mapInterests = useMemo(() => interestsOfTags(profile.interests), [profile.interests]);
-
   const menu: SawaMenuActions = useMemo(
     () => ({
       profile,
@@ -226,11 +341,20 @@ export function DemoApp() {
         setTab("map");
         setStage("route");
       },
+      onOpenRides: () => {
+        setStage("map");
+        setTab("rides");
+      },
+      onOpenSawa: () => {
+        setStage("map");
+        setPanelCollapsed(false);
+        setTab("sawa");
+      },
       onRestart: restart,
       rememberedPlaces: Object.keys(memory.places).length,
       onForget: forgetAll,
       startMode: start.mode,
-      startLabel: startLabel(start.status),
+      startLabel: startLabel(start.status, lang),
       onStartModeChange: start.setMode,
     }),
     [
@@ -243,6 +367,7 @@ export function DemoApp() {
       start.mode,
       start.status,
       start.setMode,
+      lang,
     ],
   );
 
@@ -252,8 +377,9 @@ export function DemoApp() {
         <div className="fixed inset-0 overflow-hidden bg-mapa">
           <div className="absolute inset-0">
             <SawaMap
-              interests={mapInterests}
-              route={isRoute ? (planned ?? undefined) : undefined}
+              route={
+                isRoute ? (planned ?? undefined) : isHome ? (fastestRoute ?? undefined) : undefined
+              }
               camera={camera}
               padding={padding}
               user={origin}
@@ -261,13 +387,18 @@ export function DemoApp() {
               onMapClick={
                 isHome && destination
                   ? (point) =>
-                      changeRideEnd({ type: "destination", name: CUSTOM_DESTINATION_NAME, point })
+                      changeRideEnd({
+                        type: "destination",
+                        name: pick(lang, CUSTOM_DESTINATION_NAME, CUSTOM_DESTINATION_NAME_EN),
+                        point,
+                      })
                   : undefined
               }
               activeStopId={isRoute ? activeStop?.id : undefined}
+              interests={profile.interests}
               onStopClick={(id) => {
                 const index = route.findIndex((stop) => stop.id === id);
-                if (index >= 0) setActiveIndex(index);
+                if (index >= 0) pickStop(index);
               }}
               // Ekrany mają własne karty nad mapą; wbudowana karta miejsca wjechałaby pod nie
               hasPlaceSheet={false}
@@ -285,18 +416,22 @@ export function DemoApp() {
             {isHome && !isPlaceOpen && (
               <HomePanel
                 key="home"
-                interests={profile.interests}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                fastestMin={fastestRoute?.totalMin ?? null}
+                isFindingFastest={fastest.status === "loading"}
+                minDurationMin={minDurationMin}
+                travel={travel}
+                onTravelChange={setTravel}
                 rideEnd={rideEnd}
                 onRideEndTypeChange={changeRideEndType}
                 onRideEndChange={changeRideEnd}
-                onEditInterests={editInterests}
                 collapsed={panelCollapsed}
                 onCollapsedChange={setPanelCollapsed}
                 onGenerate={generateRoute}
                 planning={planning}
                 planError={planError}
+                locating={!isStage && start.status === "locating"}
               />
             )}
             {stage === "map" && tab === "rides" && (
@@ -304,10 +439,13 @@ export function DemoApp() {
                 key="rides"
                 profile={profile}
                 origin={origin}
-                originLabel={startLabel(start.status)}
+                originLabel={startLabel(start.status, lang)}
                 durationMin={durationMin}
                 onDurationChange={setDurationMin}
+                rideEnd={rideEnd}
+                travel={travel}
                 lastRoute={route}
+                onClose={() => setTab("map")}
                 onOpenLastRoute={() => {
                   setTab("map");
                   setStage("route");
@@ -326,21 +464,27 @@ export function DemoApp() {
                 onCollapsedChange={setPanelCollapsed}
                 stops={route}
                 activeIndex={activeIndex}
-                player={player}
+                player={ridePlayer}
                 places={memory.places}
                 onPrev={() => playStop(activeIndex - 1)}
                 onNext={() => playStop(activeIndex + 1)}
+                onClose={() => setTab("map")}
               />
             )}
             {isRoute && (
               <RouteSheet
                 key="route"
                 durationMin={durationMin}
-                end={planned ? routeEnd(planned, rideEnd) : null}
+                end={planned ? routeEnd(planned, rideEnd, lang) : null}
+                legs={planned?.legs ?? []}
+                attribution={planned?.attribution ?? []}
                 stops={route}
-                player={player}
+                player={ridePlayer}
                 activeIndex={activeIndex}
                 onActiveChange={setActiveIndex}
+                onPlayStop={playStop}
+                clock={clock}
+                totalSec={(planned?.totalMin ?? 0) * 60}
                 onBack={() => setStage("map")}
                 isDesktop={isDesktop}
                 onCoverChange={setSheetCoverPx}
@@ -350,20 +494,29 @@ export function DemoApp() {
 
           {stage !== "onboarding" && (
             <PlaceCardHost
-              isActive={isHome}
+              isActive={isHome || isRoute}
               listener={listener}
               onSelectionChange={setSelectedPlace}
               onCoverChange={setPlaceCoverPx}
+              onRideTo={(name, point) => {
+                changeRideEnd({ type: "destination", name, point });
+                // Z trasy wracamy na ekran główny, żeby wyznaczyć przejazd do nowego celu
+                setStage("map");
+                setTab("map");
+                setPanelCollapsed(false);
+              }}
             />
           )}
 
           <AnimatePresence>
-            {stage === "map" && (
-              <TabBar
-                key="tabs"
-                active={tab}
-                onChange={setTab}
-                speaking={player.isPlaying && player.text !== null}
+            {stage === "map" && tab !== "sawa" && player.isPlaying && player.text !== null && (
+              <SawaSpeaking
+                key="mowi"
+                place={activeStop?.name ?? null}
+                onOpen={() => {
+                  setPanelCollapsed(false);
+                  setTab("sawa");
+                }}
               />
             )}
           </AnimatePresence>
@@ -377,14 +530,18 @@ export function DemoApp() {
                 exit={{ opacity: 0, scale: 1.02 }}
                 transition={SPRING}
               >
-                <OnboardingFlow
-                  initialStep={onboardingStep}
-                  initialProfile={profile}
-                  onDone={finishOnboarding}
-                />
+                <OnboardingFlow onDone={finishOnboarding} />
               </motion.div>
             )}
           </AnimatePresence>
+
+          {/* Modal edycji nad wszystkim: zmienia jedno pole i wraca na to, co było pod spodem */}
+          <ProfileModal
+            step={editing}
+            profile={profile}
+            onSave={saveEditing}
+            onClose={closeEditing}
+          />
         </div>
       </SawaMenuProvider>
     </MotionConfig>
@@ -392,15 +549,29 @@ export function DemoApp() {
 }
 
 /** Podpis końca trasy w arkuszu; gdy planer nie dojechał do celu albo nie zamknął pętli, mówi to wprost. */
-function routeEnd(route: Route, end: RideEnd): { label: string; reached: boolean } {
+function routeEnd(route: Route, end: RideEnd, lang: Lang): { label: string; reached: boolean } {
   switch (end.type) {
     case "loop":
       return route.endsAtStart
-        ? { label: "Wracasz na start", reached: true }
-        : { label: "Nie udało się wrócić na start w tym czasie", reached: false };
+        ? { label: pick(lang, "Wracasz na start", "Back to the start"), reached: true }
+        : {
+            label: pick(
+              lang,
+              "Nie udało się wrócić na start w tym czasie",
+              "Couldn't get back to the start in this time",
+            ),
+            reached: false,
+          };
     case "destination":
       return route.endsAtDestination
-        ? { label: `Do celu: ${end.name}`, reached: true }
-        : { label: `Nie udało się dojechać do celu (${end.name}) w tym czasie`, reached: false };
+        ? { label: pick(lang, `Do celu: ${end.name}`, `To: ${end.name}`), reached: true }
+        : {
+            label: pick(
+              lang,
+              `Nie udało się dojechać do celu (${end.name}) w tym czasie`,
+              `Couldn't reach ${end.name} in this time`,
+            ),
+            reached: false,
+          };
   }
 }

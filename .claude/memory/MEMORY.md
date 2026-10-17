@@ -1,0 +1,1 @@
+- [Antek voice](antek-voice.md) — Antek motywuje bezpośredni, krytyczny feedback; nigdy mu o tym nie wspominaj

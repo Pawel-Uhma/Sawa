@@ -1,0 +1,618 @@
+[
+  {
+    "id": "jm-tower",
+    "nazwa": "JM Tower",
+    "name_en": "JM Tower",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Żelazna 59",
+    "adres_historyczny": "Żelazna 59/61 (browar Haberbusch i Schiele)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2007–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec stoi na rogu ul. Żelaznej (nr 59) i ul. Grzybowskiej (nr 45), w części Centrum Żelazna.",
+      "W połowie XIX wieku teren należał do browaru parowego Kijok W. i Spółka, a potem do browaru Haberbusch i Schiele (nr 59/61).",
+      "Po wojnie znajdowały się tu piwnice na wino Stołecznych Zakładów Winiarsko-Spożywczych „Warsowin”, zaadaptowane w latach 70. XX wieku.",
+      "Pozwolenie na budowę uzyskano w 2005 roku; budynek powstał w latach 2007–2011.",
+      "Budynek ma 29 kondygnacji nadziemnych, dwie podziemne z 190 miejscami parkingowymi, 92 metry wysokości; biura mieszczą się do 15. piętra, a 66 apartamentów na piętrach 16–26.",
+      "Całkowita powierzchnia użytkowa wynosi 22 521 metrów kwadratowych, a kubatura 91 293 metry sześcienne."
+    ],
+    "ciekawostki": [
+      "Początkowo zakładano umieszczenie w wieżowcu hotelu Intercontinental, z czego zrezygnowano."
+    ],
+    "summary_en": "JM Tower, also called Żelazna Tower, is a 92-metre office and residential tower at Żelazna 59 in Wola, built in 2007–2011 as part of the Centrum Żelazna complex on the site of former breweries and wine cellars.",
+    "ludzie": [
+      {"kto": "Robert Kucharski", "rola": "autor projektu budynku (według tekstu artykułu)", "wiki": null},
+      {"kto": "Marek Podbielski", "rola": "projektant (wskazany w tabeli danych artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Żelazna Tower"],
+    "zrodla": [
+      {"tytul": "Warszawikia: JM Tower", "url": "https://warszawa.fandom.com/pl/wiki/JM_Tower"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („adres: ul. Żelazna 59”). Artykuł podaje dwóch różnych projektantów (tekst: Robert Kucharski; tabela: Marek Podbielski)."
+  },
+  {
+    "id": "kamienica-abrama-wlodawera",
+    "nazwa": "Kamienica Abrama Włodawera",
+    "name_en": "Abram Włodawer's Tenement",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Łucka 8",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1878–2024",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica powstała w 1878 roku jako jedna z pierwszych murowanych kamienic przy ul. Łuckiej i była najstarszą kamienicą czynszową na Woli.",
+      "Nie została zniszczona podczas II wojny światowej; po wojnie przeznaczono ją na mieszkania komunalne.",
+      "22 października 1992 roku wpisano ją do rejestru zabytków.",
+      "W nocy z 29 na 30 sierpnia 2015 roku kamienica spłonęła.",
+      "W kwietniu 2020 roku właściciel zburzył wpisaną do ewidencji zabytków oficynę.",
+      "21 grudnia 2024 roku kamienicę częściowo rozebrano; prace wstrzymano po interwencji Wojewódzkiego Konserwatora Zabytków, ale dwa dni później zburzono większość pozostałej części."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Abram Włodawer's tenement at Łucka 8 in Wola was built in 1878 and was once the oldest rental tenement in the district. It burned in 2015 and was largely demolished in December 2024 despite a conservator's order to stop.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Abrama Włodawera", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Abrama_Włodawera"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ulicy Łuckiej 8”)."
+  },
+  {
+    "id": "kamienica-antoniego-stradeckiego",
+    "nazwa": "Kamienica Antoniego Stradeckiego",
+    "name_en": "Antoni Stradecki's Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Grzybowska 46",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę czteropiętrowej kamienicy dla Antoniego Stradeckiego rozpoczęto w 1939 roku w miejscu fragmentu budynku sąsiedniej gorzelni.",
+      "Ze względu na wybuch II wojny światowej kamienica nigdy nie została ukończona; wykończono ją prowizorycznie i nigdy nie otynkowano.",
+      "Dzięki żelbetowej, ogniotrwałej konstrukcji kamienica dobrze przetrwała wojnę.",
+      "Z czasem w poddaszu przebito okna i zaadaptowano je na mieszkania.",
+      "Kamienica miała zostać rozebrana pod budowę osiedla Za Żelazną Bramą, jednak decyzji o rozbiórce nie podjęto do dziś."
+    ],
+    "ciekawostki": [
+      "Kamienica zagrała epizod w filmie „Poszukiwany, poszukiwana” z 1972 roku; w mieszkanku na ostatnim piętrze mieszkał główny bohater filmu, historyk sztuki Stanisław Maria Rohowicz."
+    ],
+    "summary_en": "Antoni Stradecki's tenement at Grzybowska 46 in Wola was started in 1939 and never completed because of the war. It was left roughly finished and unplastered, and it survived the war thanks to its reinforced concrete structure.",
+    "ludzie": [
+      {"kto": "Antoni Stradecki", "rola": "inwestor, dla którego budowano kamienicę (1939)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Antoniego Stradeckiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Antoniego_Stradeckiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Artykuł podaje Mirów jako lokalizację; w paczce nagłówek DZIELNICE: Wola."
+  },
+  {
+    "id": "kamienica-bema-69",
+    "nazwa": "Kamienica Bema 69",
+    "name_en": "Tenement at Bema 69",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Bema 69",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała około 1898 roku w czasie ożywionego ruchu budowlanego, po uregulowaniu i wybrukowaniu ul. Bema.",
+      "To ceglany, dwupiętrowy budynek z okrągłym ryzalitem w fasadzie od strony podwórza; należy do zasobów Zakładu Gospodarowania Nieruchomościami dzielnicy Wola.",
+      "Według części varsavianistów budynek był domem lub budynkiem administracyjnym intendentury magazynów carskich po przeciwnej stronie ulicy; według innych był domem pracowniczym robotników z zakładów Lilpop-Rau-Loewensteina.",
+      "W latach 50. XX wieku rozebrano znajdujące się na posesji dwa zniszczone w czasie wojny budynki parterowe bliżej linii kolei obwodowej.",
+      "Przy budynku dawniej znajdowała się górka, połączona podziemnym korytarzem z budynkiem; zejście do podziemi zachowało się do dziś."
+    ],
+    "ciekawostki": [
+      "Według jednej z hipotez podziemia mogły pierwotnie służyć jako areszt."
+    ],
+    "summary_en": "The brick tenement at Bema 69 in Wola dates from around 1898, when Bema Street was paved and regulated. Its original purpose is uncertain: it may have served the tsarist supply depot opposite or workers from nearby factories.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Bema 69", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Bema_69"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tytułu i tekstu („Kamienica przy Bema 69”). Pochodzenie budynku w artykule oparte na hipotezach."
+  },
+  {
+    "id": "kamienica-ciepla-3",
+    "nazwa": "Kamienica Ciepła 3",
+    "name_en": "Ciepła 3 Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Ciepła 3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "po 1881–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono po 1881 roku jako frontowy, trzypiętrowy dom o dziewięciu osiach; północna oficyna była czteropiętrowa.",
+      "Ok. 1910 roku dobudowano zachodnią i południową oficynę, zamykając podwórze.",
+      "31 lipca 1893 roku w tej kamienicy urodził się ks. Ignacy Skorupka, który później wsławił się podczas bitwy warszawskiej 1920 roku.",
+      "Kamienica nie została zniszczona podczas II wojny światowej; w czasie okupacji odsłonięta północna ściana szczytowa była przez pewien czas granicą getta.",
+      "W 2010 roku zagrożono jej wyburzeniem, a w 2016 roku wpisano do rejestru zabytków, choć ostatecznie chroniona jest tylko elewacja frontowa."
+    ],
+    "ciekawostki": [
+      "Na podwórku nagrano pierwszą z czterech scen do wideoklipu piosenki „Bo tutaj jest jak jest” Pawła Kukiza i Jana Borysewicza."
+    ],
+    "summary_en": "The Ciepła 3 tenement in Wola, built after 1881, is the only pre-war building left on Ciepła Street. It was the birthplace of Father Ignacy Skorupka, a hero of the 1920 Battle of Warsaw.",
+    "ludzie": [
+      {"kto": "Ignacy Skorupka", "rola": "ksiądz, urodzony w kamienicy w 1893 roku; bohater bitwy warszawskiej 1920", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Ciepła 3", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Ciepła_3"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Ciepłej 3”). Artykuł podaje Mirów; w paczce nagłówek DZIELNICE: Wola."
+  },
+  {
+    "id": "kamienica-lejba-osmosa",
+    "nazwa": "Kamienica Lejba Osmosa",
+    "name_en": "Leib Osmos's Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Twarda 28",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Czteropiętrowa kamienica przy ul. Twardej 28, narożna z ul. Ciepłą 1, powstała na początku XX wieku, około 1910 roku.",
+      "Do II wojny światowej większość mieszkańców stanowili Żydzi; w 1936 roku kamienica dawała z czynszów ponad 5 tysięcy złotych.",
+      "Na parterze znajdowały się sklepy: wędliniarnia, jatka, sklep nabiałowy, zakład fryzjerski i skład wina.",
+      "W latach 60. XX wieku przebudowano zbieg ulicy Prostej i ul. Marchlewskiego, tworząc rondo ONZ; kamienica znalazła się w nietypowym położeniu, a jej numer przypisano do Twardej, która tamtędy już nie biegnie.",
+      "W styczniu 2009 roku z parteru wyprowadziły się wszystkie punkty usługowe, a mieszkańcy zostali wykwaterowani; w 2017 roku rozpoczęto rozbiórkę, którą w lutym 2019 roku przerwano po wpisaniu kamienicy do rejestru zabytków.",
+      "Większość kamienicy została później zburzona, a część stoi do dziś."
+    ],
+    "ciekawostki": [
+      "Według Jerzego Kasprzyckiego w III tomie „Korzeni Miasta” za mieszkanie czteropokojowe z kuchnią i łazienką pobierano w 1936 roku 180 złotych."
+    ],
+    "summary_en": "Leib Osmos's tenement at Twarda 28 corner of Ciepła in Wola was built around 1910. Once home to many Jewish residents and shops on the ground floor, it was largely demolished after 2017, with part of the facade still standing.",
+    "ludzie": [
+      {"kto": "Jerzy Kasprzycki", "rola": "autor III tomu „Korzeni Miasta”, na który powołuje się artykuł", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Lejba Osmosa", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Lejba_Osmosa"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Twardej 28”). Stan obecny opisany w artykule niejednoznacznie (większość zburzona, część stoi)."
+  },
+  {
+    "id": "kamienica-ordowskich",
+    "nazwa": "Kamienica Ordowskich",
+    "name_en": "Ordowski Brothers' Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Wolska 109",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę zbudowano w 1939 roku dla braci Ordowskich, właścicieli sąsiednich Warsztatów Karoseryjnych (nr 111), w miejscu dawnego budynku drewnianego.",
+      "W czasie II wojny światowej stacjonowali w niej Niemcy, którzy wypalili lokale od wewnątrz; budynek przetrwał i został odremontowany.",
+      "Pięciopiętrowa kamienica ma stropy stalowo-ceglane typu Kleina i dwie symetryczne osie klatek schodowych.",
+      "Brama, istniejąca do lat 60. XX wieku, została zamurowana i przeznaczona na sklep.",
+      "W 1962 roku dobudowano do kamienicy blok mieszkalny pod numerem 105/107."
+    ],
+    "ciekawostki": [
+      "Tylne wejście do bramy, zadaszone balkonem na I piętrze, przez wiele lat było siedzibą marginesu społecznego, zwaną przez mieszkańców „Świetlicą”."
+    ],
+    "summary_en": "The Ordowski Brothers' tenement at Wolska 109 in Wola was built in 1939 for the owners of the neighbouring body shop. It survived the war despite being burned by German occupiers from the inside.",
+    "ludzie": [
+      {"kto": "Bracia Ordowscy", "rola": "właściciele sąsiednich Warsztatów Karoseryjnych (nr 111), inwestorzy kamienicy (1939)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Ordowskich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Ordowskich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Wolskiej 109”)."
+  },
+  {
+    "id": "kamienica-panska-112",
+    "nazwa": "Kamienica Pańska 112",
+    "name_en": "Pańska 112 Tenement",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Pańska 112",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1912–2013",
+    "istnieje": false,
+    "fakty": [
+      "Kamienicę wybudowano około 1912 roku między ul. Pańską 112 a ul. Prostą 63, w pobliżu ul. Towarowej; wcześniej na posesji (hip. 1243) były zabudowania z końca XIX wieku.",
+      "Nieznacznie uszkodzona w czasie II wojny światowej, została ponownie zamieszkana, ale przez lata niszczała.",
+      "Ostatnie rodziny mieszkały w niej jeszcze w 2004 roku.",
+      "Na początku lutego 2013 roku kamienicę ostatecznie wyburzono.",
+      "W 2021 roku w jej miejscu otwarto wieżowiec Warsaw Unit."
+    ],
+    "ciekawostki": [
+      "Latem 2008 roku z inicjatywy Mariusza Libela i Grupy Twożywo na szczytowej ścianie od ul. Towarowej powstał mural z drogowskazem, żelazną kulą i napisem „JESZCZE / ŚWIA / DOMY”; prace były elementem spektaklu „Hamlet '44”."
+    ],
+    "summary_en": "The tenement at Pańska 112 in Wola, built around 1912, stood empty for years and was demolished in February 2013. The Warsaw Unit tower was opened on the site in 2021.",
+    "ludzie": [
+      {"kto": "Mariusz Libel", "rola": "inicjator muralu na szczytowej ścianie kamienicy (2008)", "wiki": null},
+      {"kto": "Grupa Twożywo", "rola": "autorzy muralu na szczytowej ścianie kamienicy (2008)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Pańska 112", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Pańska_112"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt nieistniejący. Brak współrzędnych w nagłówku; lat/lon null. Adres z tytułu i tekstu („przy Pańskiej 112”)."
+  },
+  {
+    "id": "kamienica-tomasza-niemyjskiego",
+    "nazwa": "Kamienica Tomasza Niemyjskiego",
+    "name_en": "Tomasz Niemyjski's Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Śliska 52",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "przełom XIX i XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę zbudowano na przełomie XIX i XX wieku w miejscu wcześniejszych zabudowań; początkowo należała do Edwarda Otto.",
+      "W latach 20. XX wieku stała się własnością Tomasza Niemyjskiego.",
+      "W okresie międzywojennym na parterze mieścił się VIII Komisariat Policji Państwowej.",
+      "W czasie II wojny światowej budynek znalazł się w getcie, a w 1942 roku został z niego wyłączony; komisariat działał dalej jako policja granatowa.",
+      "Po wojnie kamienicę obniżono o jedną kondygnację do trzech pięter, rozebrano też północną i wschodnią oficynę."
+    ],
+    "ciekawostki": [
+      "W 1932 roku kamienica trafiła do ksiąg kryminalnych po kradzieży suszonej bielizny; sprawców, Józefa Skibę i Janinę Synkalską, wytropiły lokatorki wraz z wywiadowcami na pl. Kercelego."
+    ],
+    "summary_en": "Tomasz Niemyjski's tenement at Śliska 52 in Wola was built around 1900 and housed a pre-war police station on its ground floor. It was cut down to three storeys after the war, and a Społem advertisement on its gable still survives.",
+    "ludzie": [
+      {"kto": "Edward Otto", "rola": "pierwszy właściciel kamienicy", "wiki": null},
+      {"kto": "Tomasz Niemyjski", "rola": "właściciel kamienicy od lat 20. XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Tomasza Niemyjskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Tomasza_Niemyjskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Śliskiej 52”). Artykuł podaje Mirów; w paczce nagłówek DZIELNICE: Wola."
+  },
+  {
+    "id": "kamienica-towarzystwa-akcyjnego-wola",
+    "nazwa": "Kamienica Towarzystwa Akcyjnego Wola",
+    "name_en": "Tenement of the Wola Joint-Stock Company",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Bema 81",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w 1893 roku jako dom mieszkalny dla robotników przędzalni bawełny i farbiarni Towarzystwa Akcyjnego „Wola”, założonej przez Edwarda Heimana-Jareckiego.",
+      "Projekt wykonał Jan Lilpop; budynek był początkowo dwupiętrowy i miał długość około 50 metrów.",
+      "W 1914 roku dobudowano piętro i mansardę.",
+      "Gmach nie został zniszczony podczas II wojny światowej.",
+      "W październiku 2009 roku kamienicę wraz z rosnącym na podwórzu starodrzewem wpisano do rejestru zabytków.",
+      "Sama przędzalnia znajdowała się przy ul. Bema 70/72, lecz jej zabudowania nie przetrwały."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The brick workers' tenement at Bema 81 in Wola was built in 1893 for the workers of the Wola cotton-spinning mill. It survived the war and was listed as a monument in 2009.",
+    "ludzie": [
+      {"kto": "Edward Heiman-Jarecki", "rola": "założyciel przędzalni Towarzystwa Akcyjnego „Wola”", "wiki": null},
+      {"kto": "Jan Lilpop", "rola": "autor projektu kamienicy (1893)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Towarzystwa Akcyjnego Wola", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Towarzystwa_Akcyjnego_Wola"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ulicy Bema 81”)."
+  },
+  {
+    "id": "kamienica-traktorzystki-9",
+    "nazwa": "Kamienica Traktorzystki 9",
+    "name_en": "Traktorzystki 9 Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Traktorzystki 9",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała zapewne w 1937 roku i nie została zniszczona podczas II wojny światowej.",
+      "Pierwotnie była piętrowa; w 2007 roku została wyremontowana i nadbudowana.",
+      "Od strony wschodniej dobudowano ryzalit z klatką schodową.",
+      "Na budynku umieszczono tablicę pamiątkową z datami 1937 i 2007 oraz wizerunkiem Matki Boskiej.",
+      "Kamienica jest połączona z kamienicą nr 11."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The tenement at Traktorzystki 9 in Wola was probably built in 1937, survived the war, and was renovated and extended in 2007. A plaque on its facade shows both dates and an image of the Virgin Mary.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Traktorzystki 9", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Traktorzystki_9"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Traktorzystki 9”). Datę budowy artykuł podaje z zastrzeżeniem („zapewne”)."
+  },
+  {
+    "id": "kamienica-twarda-29",
+    "nazwa": "Kamienica Twarda 29",
+    "name_en": "Twarda 29 Tenement",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Twarda 29",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1930–ok. 1963",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica stała w wschodniej pierzei ul. Twardej, niedaleko narożnika z ul. Pańską; powstała około 1930 roku, najpewniej przy przebudowie lub zabudowie fragmentu budynku Pańska 54.",
+      "Była czteropiętrowa, z siedmiopokojowymi mieszkaniami na każdym piętrze, marmurowymi schodami, posadzkami i dużymi lustrami na klatce schodowej.",
+      "Częściowo uszkodzona w czasie II wojny światowej; w powojennej inwentaryzacji uznano ją za dobrze zachowaną.",
+      "Około 1963 roku rozebrano ją w związku z budową ronda ONZ i przebudową ul. Prostej.",
+      "W miejscu kamienicy znajduje się dziś zieleniec między ulicami Pańską, Twardą i Prostą."
+    ],
+    "ciekawostki": [
+      "Fragmenty sąsiedniej kamienicy przy Pańskiej 54 były w powojennych latach popularnym miejscem zabaw dzieci."
+    ],
+    "summary_en": "The four-storey tenement at Twarda 29 in Wola, built around 1930, was demolished around 1963 for the construction of the ONZ roundabout. Today the site is a green area.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Twarda 29", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Twarda_29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt nieistniejący. Brak współrzędnych w nagłówku; lat/lon null. Adres z tytułu („ul. Twardej 29”)."
+  },
+  {
+    "id": "kamienica-wolfa-krongolda",
+    "nazwa": "Kamienica Wolfa Krongolda",
+    "name_en": "Wolf Krongold's Tenement (Pekin)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Złota 83",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1896–2022",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w latach 1896–1899 dla żydowskiego przedsiębiorcy i inwestora nieruchomości Wolfa Krongolda; stoi na rogu z ul. Żelazną.",
+      "Projekt przypisuje się Bronisławowi Brochwiczowi-Rogóyskiemu, choć autorstwo nie jest potwierdzone.",
+      "Początkowo budynek miał trzy piętra, dwa kolejne dodano kilka lat później; attykę zdobiły rzeźby półnagiego starca i młodzieńca.",
+      "W 1933 roku, z powodu problemów finansowych właścicieli, kamienicę wystawiono na licytację.",
+      "Po 1945 roku odbudowano ją jako mieszkania komunalne; w latach 60. usunięto balkony i kutą, ozdobną bramę. W 1989 roku wpisano ją do rejestru zabytków.",
+      "W lutym 2015 roku sprzedano ją spółce Czerwone Maki z grupy AFI Europe; 15 listopada 2015 roku w opuszczonym budynku wybuchł pożar.",
+      "Kamienicę przebudowano na luksusowy apartamentowiec z parkingiem podziemnym; remont zakończono w 2022 roku."
+    ],
+    "ciekawostki": [
+      "Budynek jest potocznie nazywany „Pekinem”."
+    ],
+    "summary_en": "Wolf Krongold's tenement at Złota 83 on the corner of Żelazna was built in 1896–1899 and is nicknamed Pekin. After a fire in 2015 it was converted into a luxury apartment building, completed in 2022.",
+    "ludzie": [
+      {"kto": "Wolf Krongold", "rola": "żydowski przedsiębiorca i inwestor nieruchomości, zleceniodawca kamienicy", "wiki": null},
+      {"kto": "Bronisław Brochwicz-Rogóyski", "rola": "przypisywany autor projektu (nie potwierdzone)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pekin (nazwa potoczna)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Wolfa Krongolda", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Wolfa_Krongolda"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Złotej 83”)."
+  },
+  {
+    "id": "kamienica-zdzislawa-grocholskiego",
+    "nazwa": "Kamienica Zdzisława Grocholskiego",
+    "name_en": "Zdzisław Grocholski's Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Wolska 54",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1912 roku przy ul. Wolskiej 54 wybudowano na zamówienie hrabiego Zdzisława Grocholskiego z Pietczan na Podolu kamienicę czynszową zaprojektowaną przez Wacława Heppena.",
+      "Na tyłach budynku właściciel wzniósł fabrykę ornamentacji budowlanych i posadzek oraz pałacyk.",
+      "W czasie Powstania Warszawskiego była tu silna placówka powstańcza; po upadku powstania gmach został częściowo zniszczony.",
+      "Po wojnie odbudowano go, usuwając większość elementów wystroju elewacji, m.in. monumentalnych pseudokolumn.",
+      "W latach 1919–1934 mieszkał tu poeta robotniczy Edward Szymański, urodzony na Woli 9 września 1907 roku, zamordowany przez hitlerowców 15 grudnia 1943 roku w Oświęcimiu.",
+      "W grudniu 1918 roku w tym domu odbyło się pierwsze posiedzenie Komitetu Dzielnicowego Wola Komunistycznej Partii Robotniczej Polski."
+    ],
+    "ciekawostki": [
+      "Kamienica bywa nazywana Kamienicą Hrabiego lub „hrabiniec”."
+    ],
+    "summary_en": "The Zdzisław Grocholski tenement at Wolska 54 was built in 1912 for a count, with a workshop and small palace behind it. It housed a Warsaw Uprising outpost and is known for plaques commemorating poet Edward Szymański and the first meeting of the Wola district communist committee in 1918.",
+    "ludzie": [
+      {"kto": "Zdzisław Grocholski", "rola": "hrabia z Pietczan na Podolu, zamawiający kamienicy (1912)", "wiki": null},
+      {"kto": "Wacław Heppen", "rola": "architekt kamienicy", "wiki": null},
+      {"kto": "Edward Szymański", "rola": "poeta robotniczy, mieszkał w kamienicy w latach 1919–1934", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Hrabiego", "hrabiniec"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Zdzisława Grocholskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Zdzisława_Grocholskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Wolskiej 54”). Artykuł podaje Młynów; w paczce nagłówek DZIELNICE: Wola."
+  },
+  {
+    "id": "kamienica-zlota-65a",
+    "nazwa": "Kamienica Złota 65a",
+    "name_en": "Złota 65a Tenement",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Złota 65a",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica przy ul. Złotej 65a powstała około 1912 roku; zaprojektował ją najprawdopodobniej Józef Huss jako budynek modernistyczny.",
+      "Pierwotnie była pięciopiętrowa i dwupodwórzowa, a podwórka otaczały oficyny.",
+      "Budynek został znacznie uszkodzony w czasie II wojny światowej; po 1945 roku rozebrano zniszczone oficyny, poza ocalałą oficyną tylną drugiego podwórza, a frontowy budynek odbudowano w pełnym kształcie.",
+      "Pięciopiętrowa fasada ma dwa zaokrąglone wykusze z balkonami i zaokrąglony szczyt z eliptycznym okienkiem.",
+      "Tylna, sześciokondygnacyjna oficyna nosi dziś adres Złota 65b."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The modernist-style tenement at Złota 65a in Wola dates from about 1912, probably designed by Józef Huss. Its front building was rebuilt in full after the war, while the rear wings were largely removed.",
+    "ludzie": [
+      {"kto": "Józef Huss", "rola": "prawdopodobny projektant kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kamienica Złota 65a", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Złota_65a"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Złotej 65a”). Autorstwo projektu podane z zastrzeżeniem („najprawdopodobniej”)."
+  },
+  {
+    "id": "kino-w-z",
+    "nazwa": "Kino W-Z",
+    "name_en": "W-Z Cinema",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Leszno 17",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1949–2010",
+    "istnieje": false,
+    "fakty": [
+      "Kino powstało w latach 1949–1950 według projektu Mieczysława Pipreka, na zachodnim końcu Trasy W-Z, przy ul. Leszno 17.",
+      "Było częścią założenia urbanistycznego zamykającego trasę, wraz z barem „Wenecja” i wolskim Pedetem.",
+      "Modernistyczna budowla na planie rotundy miała falujący dach ze sklepień kolebkowych i fasadę z płyt piaskowca.",
+      "Kino działało do 1991 roku; potem mieściły się tu klub „Fugazi Music Pub”, klub „Dekadent” i sklep dyskontowy „Grosz”.",
+      "W 1998 roku działkę przejęło województwo mazowieckie, a w 2005 roku sprzedano ją spółce Artbau Development pod zabudowę mieszkaniową.",
+      "Próby wpisania do rejestru zabytków oraz wykupu gruntu przez burmistrza Woli Zbigniewa Sipierę zawiodły; w 2010 roku zrujnowany budynek rozebrano."
+    ],
+    "ciekawostki": [
+      "Kina projektu Pipreka, takie jak Ochota, Stolica, 1 Maj i W-Z, były architektonicznie bardzo podobne."
+    ],
+    "summary_en": "The modernist W-Z Cinema on Leszno Street in Wola was designed by Mieczysław Piprek and built in 1949–1950. It closed in 1991 and was demolished in 2010 after attempts to protect it failed.",
+    "ludzie": [
+      {"kto": "Mieczysław Piprek", "rola": "architekt projektu kina", "wiki": null},
+      {"kto": "Zbigniew Sipiera", "rola": "burmistrz Woli, który starał się o wykup gruntu pod kino", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kino W-Z", "url": "https://warszawa.fandom.com/pl/wiki/Kino_W-Z"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obiekt nieistniejący. Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy ul. Leszno 17”)."
+  },
+  {
+    "id": "kosciol-dobrego-pasterza",
+    "nazwa": "Kościół Dobrego Pasterza",
+    "name_en": "Church of the Good Shepherd",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "Szczecińskiego 5",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1995–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół parafialny Dobrego Pasterza, siedziba parafii rzymskokatolickiej, znajduje się przy ul. Szczecińskiego 5 w Ulrychowie na Woli.",
+      "Wybudowano go w latach 1995–2000 według projektu architekta Konrada Kuczy-Kuczyńskiego.",
+      "Konsekracji dokonał 7 maja 2006 roku kard. Józef Glemp.",
+      "W prezbiterium na ścianie namalowano nietypowych rozmiarów fresk przedstawiający Dobrego Pasterza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of the Good Shepherd at Szczecińskiego 5 in Ulrychów, Wola, was built in 1995–2000 to a design by Konrad Kucza-Kuczyński. It was consecrated in 2006 by Cardinal Józef Glemp.",
+    "ludzie": [
+      {"kto": "Konrad Kucza-Kuczyński", "rola": "architekt kościoła", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "kardynał, dokonał konsekracji kościoła (2006)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kościół Dobrego Pasterza", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_Dobrego_Pasterza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu (ul. Szczecińskiego 5)."
+  },
+  {
+    "id": "kosciol-sw-augustyna",
+    "nazwa": "Kościół św. Augustyna",
+    "name_en": "Church of St. Augustine",
+    "typ": "swiatynia",
+    "dzielnica": "Wola",
+    "adres_dzis": "Nowolipki 18",
+    "adres_historyczny": "Nowolipki 48/50 (w 1905 roku)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1890–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół zbudowano w latach 1890–1896 według projektu Edwarda Cichockiego i Józefa Hussa, z fundacji Aleksandry Potockiej, wdowy po Auguście Potockim.",
+      "Kamień węgielny poświęcił 20 października 1892 roku abp Wincenty Popiel; pierwszą mszę odprawiono 10 grudnia 1896 roku.",
+      "W 1903 roku erygowano przy kościele parafię św. Augustyna, a w 1905 roku kościół konsekrowano.",
+      "Podczas II wojny światowej kościół znalazł się w obrębie getta; od 1941 roku służył jako magazyn zrabowanych żydowskich mebli, później jako stajnie.",
+      "Pociski z powstania w getcie i powstania warszawskiego zniszczyły wieżę, organy i część wyposażenia; po wojnie odbudowano go.",
+      "Wieża o wysokości 78,4 metra była w chwili budowy najwyższym obiektem w Warszawie.",
+      "W 2009 roku przeprowadzono remont wieży za 730 000 zł."
+    ],
+    "ciekawostki": [
+      "Na wieży zachowało się około 60 napisów ryci przez mieszkańców wspinających się na nią jak na punkt widokowy; najstarszy pochodzi z 1895 roku.",
+      "Na tle pozłacanej kuli wieży 7 października 1959 roku pojawiła się Matka Boska, co przeszło do historii jako Cud na Nowolipkach."
+    ],
+    "summary_en": "St. Augustine's Neo-Romanesque church at Nowolipki 18 in Muranów was built in 1890–1896 and consecrated in 1905. It survived the ghetto and uprisings with damage and was rebuilt after the war; its 78-metre tower was the tallest in Warsaw when built.",
+    "ludzie": [
+      {"kto": "Edward Cichocki", "rola": "architekt projektu kościoła", "wiki": null},
+      {"kto": "Józef Huss", "rola": "architekt projektu kościoła", "wiki": null},
+      {"kto": "Aleksandra Potocka", "rola": "fundatorka świątyni, wdowa po Auguście Potockim", "wiki": null},
+      {"kto": "Wincenty Popiel", "rola": "arcybiskup, poświęcił kamień węgielny (1892) i odprawił pierwszą mszę (1896)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowolipki 48/50"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kościół św. Augustyna", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_św._Augustyna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; lat/lon null. Adres z tekstu („przy Nowolipkach 18”). Artykuł podaje Muranów; w paczce nagłówek DZIELNICE: Wola."
+  }
+]

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Wyznacz C · krok po kroku</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .kroki { display: flex; gap: 5px; justify-content: center; margin-bottom: 14px; }
+  .kroki i { width: 22px; height: 5px; border-radius: 3px; background: var(--glebia); }
+  .kroki i.nie { background: rgba(16,43,42,.12); }
+  .odp { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+  .odp div { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 10px 0 9px; border-radius: 16px;
+    background: var(--mieta-jasna); color: var(--glebia-ciemna); font-size: 13px; font-weight: 700; }
+  .odp svg { width: 15px; height: 15px; }
+  .odp div svg:last-child { width: 13px; height: 13px; opacity: .55; margin-left: 2px; }
+  .siatka { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
+  .siatka div { height: 64px; border-radius: 16px; background: rgba(16,43,42,.05); display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-size: 19px; font-weight: 800; letter-spacing: -.02em; color: var(--tekst); }
+  .siatka div small { font-size: 11px; font-weight: 600; color: var(--tekst-3); letter-spacing: 0; margin-top: 1px; }
+  .siatka div.on { background: var(--glebia); color: #fff; box-shadow: 0 6px 16px rgba(23,112,111,.28); }
+  .siatka div.on small { color: rgba(255,255,255,.75); }
+  .wstecz { text-align: center; margin-top: 10px; font-size: 13.5px; font-weight: 700; color: var(--tekst-2); }
+</style></head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="mgla"></div>
+  <div class="status"></div>
+  <div class="gora"><div class="logo szklo">sawa<i>.</i></div></div>
+
+  <div class="karta">
+    <div class="uchwyt"></div>
+    <div class="kroki"><i></i><i></i><i></i></div>
+    <div class="naglowek">
+      <img class="awatar" src="../../../pitch/img/ikona-sawa.jpg">
+      <div><p style="font-weight:700;color:var(--tekst-3)">3 z 3</p><h1>Ile masz czasu?</h1></div>
+    </div>
+    <div class="odp">
+      <div><span data-ikona="petla"></span>Pętla, wracam tu<span data-ikona="edytuj"></span></div>
+      <div><span data-ikona="tramwaj"></span>Komunikacją<span data-ikona="edytuj"></span></div>
+    </div>
+    <div class="siatka">
+      <div>30 min<small>krótko</small></div>
+      <div>1 h<small>5 opowieści</small></div>
+      <div class="on">1,5 h<small>8 opowieści</small></div>
+      <div>2 h<small>10 opowieści</small></div>
+      <div>3 h<small>pół dnia</small></div>
+      <div>4 h+<small>cały dzień</small></div>
+    </div>
+    <div class="przycisk">Wyznacz trasę</div>
+  </div>
+
+  <div class="zakladki szklo"></div>
+  <div class="home"></div>
+</div>
+<script src="_ui.js"></script><script src="_wyznacz.js"></script>
+<script>sawaMapa('mapa', { center: nad(JA, 175, 14.2), zoom: 14.2 });</script>
+</body></html>

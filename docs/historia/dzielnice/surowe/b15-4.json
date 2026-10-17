@@ -1,0 +1,277 @@
+[
+  {
+    "id": "szwolezerow",
+    "nazwa": "ul. Szwoleżerów",
+    "name_en": "Szwoleżerów Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Szwoleżerów",
+    "adres_historyczny": "ul. Ułańska (1901–1919, dla odcinka dawnej ul. Agrykoli)",
+    "lat": 52.217026,
+    "lon": 21.0379842,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś (nazwa)",
+    "istnieje": true,
+    "fakty": [
+      "Dawna droga narolna wsi Solec została uregulowana w końcu XVIII wieku jako przedłużenie ul. Agrykoli; w 1818 roku zbudowano tu koszary rosyjskiego Lejbgwardyjskiego Pułku Ułanów.",
+      "W 1907 roku przy ulicy wzniesiono cerkiew błogosławionego Martyniana według projektu Leontija Benois; w okresie międzywojennym była to rzymskokatolicka świątynia polowa 1 Pułku Szwoleżerów Józefa Piłsudskiego.",
+      "W 1935 roku nazwą Szwoleżerów nazwano odcinek ul. Myśliwieckiej od Agrykoli do ul. Łazienkowskiej.",
+      "W czasie okupacji niemieckiej koszary 1 Pułku Szwoleżerów służyły jako punkt zborny osób zatrzymywanych podczas łapanek; w 1944 roku większość budynków koszar została zniszczona.",
+      "W 1945 roku przy ulicy, w pobliżu Łazienek, powstała niezachowana kolonia 160 domków fińskich, przekazanych w darze przez Związek Radziecki.",
+      "Ok. 1952 roku nazwą Szwoleżerów objęto odcinek ul. Agrykola od ul. Myśliwieckiej do ul. Czerniakowskiej.",
+      "W latach 1972–1974 wzniesiono osiedle Szwoleżerów według projektu Haliny Skibniewskiej; zostało nagrodzone w konkursie „Mister Warszawy” na najlepszy obiekt oddany do użytku w 1974 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Szwoleżerów is a Śródmieście street that grew out of the old Agrykola road near the Łazienki Park. Its name refers to the 1st Cavalry (Szwoleżerów) Regiment stationed here, whose barracks were largely destroyed in 1944, and it hosts a housing estate from the 1970s.",
+    "ludzie": [
+      {"kto": "Leontij Benois", "rola": "projektant cerkwi błogosławionego Martyniana (1907)", "wiki": null},
+      {"kto": "Halina Skibniewska", "rola": "projektantka osiedla Szwoleżerów (1972–1974)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ułańska (1901–1919, odcinek dawnej ul. Agrykoli)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Szwoleżerów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Szwole%C5%BCer%C3%B3w_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł opisuje przede wszystkim historię odcinka dawnej ul. Agrykoli; współrzędne wg nagłówka, a nie środka całej ulicy."
+  },
+  {
+    "id": "czackiego",
+    "nazwa": "ul. Tadeusza Czackiego",
+    "name_en": "Tadeusz Czacki Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tadeusza Czackiego",
+    "adres_historyczny": "ul. Włodzimierska (do 1884)",
+    "lat": 52.2377329,
+    "lon": 21.014842,
+    "lokalizacja": "przyblizona",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1866 roku na gruntach należących wcześniej do księży misjonarzy; do 1884 roku nazywała się Włodzimierską na cześć Włodzimierza I Wielkiego.",
+      "Obecną nazwę nadano w październiku 1916 roku.",
+      "Pierwszymi zabudowaniami były gmach Banku Handlowego, trzypiętrowa kamienica projektowana przez Juliana Ankiewicza oraz pałac Natansonów.",
+      "W latach 1878–1880 przy ulicy wybudowano gmach Towarzystwa Kredytowego Miasta Warszawy, zaprojektowany również przez Juliana Ankiewicza.",
+      "Ostatnim budynkiem wzniesionym przy ulicy był gmach Stowarzyszenia Techników, zaprojektowany przez Jana Fijałkowskiego w latach 1903–1905.",
+      "W 1906 roku ulica znalazła się w grupie pierwszych kilku ulic, przy których uruchomiono latarnie elektryczne.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku zniszczeniu uległa cała zabudowa narożnika z ul. Świętokrzyską; pozostałe obiekty spalono po upadku powstania warszawskiego.",
+      "Po wojnie rozebrano wypalony pałac Natansonów i kilka kamienic; przetrwały tylko gmachy Towarzystwa Kredytowego i Stowarzyszenia Techników."
+    ],
+    "ciekawostki": [
+      "Kamienica pod nr 23 miała wystrój rzeźbiarski autorstwa Faustyna Cenglera."
+    ],
+    "summary_en": "Tadeusz Czacki Street was laid out in 1866 on former Mission Fathers' land and was called Włodzimierska until 1884. Most of its prewar buildings were destroyed in 1939 and during the 1944 uprising, and only two buildings survived the postwar clearance.",
+    "ludzie": [
+      {"kto": "Julian Ankiewicz", "rola": "projektant kamienicy i gmachu Towarzystwa Kredytowego Miasta Warszawy", "wiki": null},
+      {"kto": "Faustyn Cengler", "rola": "autor rzeźbiarskiego wystroju kamienicy pod nr 23", "wiki": null},
+      {"kto": "Jan Fijałkowski", "rola": "projektant gmachu Stowarzyszenia Techników (1903–1905)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Włodzimierska (do 1884)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Tadeusza Czackiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Tadeusza_Czackiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wspomina też o zaułku Dowcip (przebitym w latach 1882–1884) jako o ślepym zaułku przy ul. Czackiego; nie wyodrębniono osobnego rekordu."
+  },
+  {
+    "id": "tamka",
+    "nazwa": "ul. Tamka",
+    "name_en": "Tamka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tamka",
+    "adres_historyczny": null,
+    "lat": 52.2365185,
+    "lon": 21.020919,
+    "lokalizacja": "przyblizona",
+    "okres": "1743–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy, wymieniana w 1743 roku, pochodzi od grobli (tam) budowanych na brzegach Wisły.",
+      "W 1965 roku ulica jako założenie urbanistyczne została wpisana do rejestru zabytków.",
+      "15 stycznia 1975 roku oddano do użytku 42-metrową kładkę nad ulicą, zaprojektowaną przez Łucję Bogaczyk i Zenona Franza.",
+      "Zamek Ostrogskich pod nr 41 jest siedzibą Muzeum Fryderyka Chopina; Centrum Chopinowskie działa pod nr 43."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Tamka runs along the Vistula embankment in Powiśle, named after the river dams from the 1740s. It was listed as a historic urban layout in 1965 and is now home to the Chopin Museum in the Ostrogski Castle.",
+    "ludzie": [
+      {"kto": "Łucja Bogaczyk", "rola": "projektantka kładki nad ulicą (1975)", "wiki": null},
+      {"kto": "Zenon Franz", "rola": "projektant kładki nad ulicą (1975)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Tamka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Tamka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia też nieistniejącą Elektrownię Warszawską i pomnik Zgrupowania „Krybar”; nie wyodrębniono ich w osobnych rekordach."
+  },
+  {
+    "id": "trebacka",
+    "nazwa": "ul. Trębacka",
+    "name_en": "Trębacka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Trębacka",
+    "adres_historyczny": "Dziekańska, Dziekanowska, Trębalska",
+    "lat": 52.2432631,
+    "lon": 21.0122813,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś (nazwa od 1770)",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie ulica nosiła nazwę Dziekańska lub Dziekanowska, bo leżała w jurydyce Dziekanka po obu stronach Krakowskiego Przedmieścia; od I połowy XVIII wieku nazywano ją Trębalską.",
+      "Obecną nazwę nadano w 1770 roku; prawdopodobnie nawiązuje do domów trębaczy i poczty w pobliskim Marywilu.",
+      "W 1772 roku dom nr 8 zakupił August Sułkowski i urządził w nim zajazd Nowa Rydzyna; po przebudowie ok. 1840 roku otwarto tu Hotel Rzymski.",
+      "W 1781 roku Komisja Brukowa utworzyła ulicę biegnącą od Senatorskiej do Trębackiej, nazwaną Nowosenatorską (od 1953 roku ulica Moliera).",
+      "W 1882 roku ulicę poszerzono, wyburzając zabudowę po jej północnej stronie; wybudowano kamienicę Karola Scheiblera (nr 4) według projektu Edwarda Lilpopa i Józefa Piusa Dziekońskiego.",
+      "W 1898 roku na odcinku między Nowosenatorską a Wierzbową ułożono pierwszy w Warszawie bruk klinkierowy.",
+      "W latach 1902–1905 na rogu Trębackiej i Wierzbowej wzniesiono Dom Dochodowy Warszawskich Teatrów Rządowych, zaprojektowany przez Stefana Szyllera."
+    ],
+    "ciekawostki": [
+      "W 1827 roku zaprojektowany przez Antonia Corazziego dom nr 11 zakupił Piotr Steinkeller, który umieścił w nim ekspedycję karet nazywanych steinkellerkami."
+    ],
+    "summary_en": "Trębacka links Wierzbowa with Krakowskie Przedmieście and got its present name in 1770, probably from the trumpeters' houses near Marywil. A horse tram ran here from 1883, and the street saw Warsaw's first clinker-brick paving in 1898.",
+    "ludzie": [
+      {"kto": "August Sułkowski", "rola": "zakupił dom nr 8 w 1772 roku i urządził w nim zajazd Nowa Rydzyna", "wiki": null},
+      {"kto": "Piotr Steinkeller", "rola": "zakupił dom nr 11 w 1827 roku; jego przedsiębiorstwo produkowało karety steinkellerki", "wiki": null},
+      {"kto": "Karol Scheibler", "rola": "zbudował wielką kamienicę pod nr 4 (1882)", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "projektant Domu Dochodowego Warszawskich Teatrów Rządowych (1902–1905)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dziekańska", "Dziekanowska", "Trębalska"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Trębacka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Tr%C4%99backa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Według innego źródła nazwa mogła pochodzić od nazwiska Trembalskich (wg artykułu)."
+  },
+  {
+    "id": "chalubinskiego",
+    "nazwa": "ul. Tytusa Chałubińskiego",
+    "name_en": "Tytus Chałubiński Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tytusa Chałubińskiego",
+    "adres_historyczny": "ul. Teodora (początkowa nazwa)",
+    "lat": 52.2240693,
+    "lon": 21.004276,
+    "lokalizacja": "przyblizona",
+    "okres": "1881–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę zaprojektowano w 1871 roku i wytyczono w 1881 roku; początkowo nosiła nazwę Teodora, na cześć carskiego namiestnika Teodora Berga.",
+      "Obecną nazwę nadano w październiku 1916 roku.",
+      "Między ul. Hożą a Nowogrodzką rozciągał się założony w 1870 roku Ogród Pomologiczny.",
+      "Naprzeciwko, w latach 1897–1902, powstał kompleks Szpitala Dzieciątka Jezus według projektu Józefa Piusa Dziekońskiego.",
+      "W 1902 roku u zbiegu z ul. Oczki wybudowano budynek Anatomicum według projektu Antoniego Jabłońskiego-Jasieńczyka.",
+      "W 1911 roku według projektu Józefa Napoleona Czerwińskiego i Wacława Heppena pod nr 13 wzniesiono wielką kamienicę rodziny Burchardów; została rozebrana w 1973 roku pod pretekstem budowy estakady przy Dworcu Centralnym.",
+      "W 1930 roku poprowadzono tu linię tramwajową; w okresie międzywojennym powstały Gmach Ministerstwa Komunikacji i siedziba Warszawskiej Szkoły Pielęgniarek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Tytus Chałubiński Street runs from Koszykowa to Aleje Jerozolimskie and was planned as part of a north-south route. A hospital complex built in 1897–1902 and the Ministry of Communications building from the interwar period shape its character.",
+    "ludzie": [
+      {"kto": "Teodor Berg", "rola": "carski namiestnik, na cześć którego pierwotnie nazwano ulicę Teodora", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "projektant kompleksu Szpitala Dzieciątka Jezus; współprojektant kamienicy Scheiblera przy Trębackiej", "wiki": null},
+      {"kto": "Antoni Jabłoński-Jasieńczyk", "rola": "projektant budynku Anatomicum (1902)", "wiki": null},
+      {"kto": "Marek Leykam", "rola": "projektant gmachu Informacji Wojskowej (nr 3a, 1947–1950)", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "rozbudował gmach Ministerstwa Komunikacji (1948–1950)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teodora"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Tytusa Chałubińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Tytusa_Cha%C5%82ubi%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że ulica leży w dzielnicach Śródmieście i Ochota; dzielnica wg nagłówka DZIELNICE."
+  },
+  {
+    "id": "tlomackie",
+    "nazwa": "ul. Tłomackie",
+    "name_en": "Tłomackie Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "zaułek za Błękitnym Wieżowcem (nazwa od 1983)",
+    "adres_historyczny": "ul. Tłomackie (ok. 1879–1945)",
+    "lat": 52.2441556,
+    "lon": 21.0027711,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś (nazwa)",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pojawiła się w XVIII wieku i pochodzi od jurydyki Tłumackie, założonej przez starostę Eustachego Potockiego na wykupionym fragmencie Leszna.",
+      "W 1878 roku wzniesiono tu Wielką Synagogę zaprojektowaną przez Leandra Marconiego w stylu klasycystycznym z elementami renesansowymi.",
+      "W latach 1928–1936 pod nr 3/5 wzniesiono według projektu Edwarda Ebera budynek Głównej Biblioteki Judaistycznej oraz Instytutu Nauk Judaistycznych.",
+      "W czasie II wojny światowej w gmachu biblioteki mieściła się Żydowska Samopomoc Społeczna i jeden z ośrodków konspiracji z Emanuelem Ringelblumem.",
+      "16 maja 1943 roku Wielka Synagoga została wysadzona w powietrze przez Jürgena Stroopa jako symbol likwidacji getta warszawskiego.",
+      "Po wojnie ulica znalazła się w ciągu Trasy W–Z i zniknęła z planów Warszawy.",
+      "W 1983 roku nazwę Tłomackie nadano zaułkowi na tyłach Błękitnego Wieżowca, łączącemu al. Świerczewskiego z ul. Corazziego."
+    ],
+    "ciekawostki": [
+      "Odrestaurowany wodozbiór Gruba Kaśka stoi na dawnym miejscu, które dziś jest środkiem jezdni al. „Solidarności”."
+    ],
+    "summary_en": "Tłomackie was the heart of Warsaw's Jewish cultural life, home to the Great Synagogue, destroyed by the SS on 16 May 1943. The historic street disappeared after the war, and its name now belongs to a lane behind the Blue Skyscraper.",
+    "ludzie": [
+      {"kto": "Eustachy Potocki", "rola": "starosta, założyciel jurydyki Tłumackie", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "projektant Wielkiej Synagogi (1878)", "wiki": null},
+      {"kto": "Edward Eber", "rola": "projektant budynku Głównej Biblioteki Judaistycznej (1928–1936)", "wiki": null},
+      {"kto": "Jürgen Stroop", "rola": "dowódca, który wysadził Wielką Synagogę 16 maja 1943", "wiki": null},
+      {"kto": "Emanuel Ringelblum", "rola": "twórca konspiracyjnego archiwum getta warszawskiego; związany z ośrodkiem konspiracji w budynku biblioteki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Tłomacka", "Nowe Tłomackie (nazwa projektowana 1960)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Tłomackie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_T%C5%82omackie_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wielka Synagoga (nr 7) i kamienice nr 4 i 6 są wymienione jako nieistniejące; nie wyodrębniono ich w osobnych rekordach. Współrzędne wg nagłówka artykułu."
+  },
+  {
+    "id": "warecka",
+    "nazwa": "ul. Warecka",
+    "name_en": "Warecka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Warecka",
+    "adres_historyczny": "droga narolna Kałęczyna",
+    "lat": 52.2352043,
+    "lon": 21.0164142,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś (nazwa od 1770)",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą narolną Kałęczyna; pierwotnie prowadziła przez jurydykę Szpitala św. Ducha.",
+      "W końcu XVIII wieku u zbiegu z Nowym Światem wzniesiono drewniany dwór Wareckie, należący do starosty wareckiego Józefa Pułaskiego; od tej posesji pochodzi nazwa ulicy, oficjalnie nadana w 1770 roku.",
+      "Naprzeciwko dworu powstał pałac Jabłonowskich, później Sanguszków.",
+      "W połowie XIX wieku przy placu Wareckim zbudowano stajnie i powozownie poczty konnej, a później gmach Poczty Głównej, który przetrwał do powstania warszawskiego.",
+      "W 1906 roku ulica znalazła się w grupie pierwszych kilku ulic, przy których uruchomiono latarnie elektryczne.",
+      "Po zniszczeniach w 1944 roku odbudowano w latach 50. m.in. Dom Spółdzielczości Rolniczej (nr 11a), kamienicę Wedegisa (nr 11) oraz pałacyk Sanguszków.",
+      "W latach 1948–1955 wzniesiono gmach Narodowego Banku Polskiego, którego głównym projektantem był Bohdan Pniewski; w latach 1958–1961 po przeciwległej stronie ulicy powstał hotel Dom Chłopa."
+    ],
+    "ciekawostki": [
+      "Przy ul. Kubusia Puchatka ulica przechodzi przez dwa sklepione łukowo prześwity, a jezdnia ma zachowany przedwojenny bruk z kostki granitowej."
+    ],
+    "summary_en": "Warecka runs from Nowy Świat toward plac Powstańców Warszawy and took its name from the Wareckie manor of Józef Pułaski. Its postwar buildings include the National Bank of Poland headquarters, designed by Bohdan Pniewski.",
+    "ludzie": [
+      {"kto": "Józef Pułaski", "rola": "starosta warecki; dwór Wareckie przy zbiegu z Nowym Światem należał do niego", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "główny projektant gmachu Narodowego Banku Polskiego i hotelu Dom Chłopa", "wiki": null},
+      {"kto": "Małgorzata Handzelewicz-Wacławek", "rola": "współprojektantka hotelu Dom Chłopa (1958–1961)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kałęczyn (droga narolna)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Warecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Warecka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "wenedow",
+    "nazwa": "ul. Wenedów",
+    "name_en": "Wenedów Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wenedów",
+    "adres_historyczny": "ul. Spadek (nieistniejąca, wytyczona w 1772)",
+    "lat": 52.2586779,
+    "lon": 21.0053858,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nieistniejąca już ulica Spadek została wytyczona w 1772 roku przez Komisję Brukową w miejscu starszej drogi, która korytem rzeczki Bełczącej prowadziła z ul. Zakroczymskiej nad brzeg Wisły.",
+      "Ok. 1925 roku, w trakcie zagospodarowywania terenów esplanady Cytadeli, wytyczono ulicę Wenedów jako zjazd z mostu przy Cytadeli na ul. Zakroczymską.",
+      "Ulicę przebudowano w latach 1958–1959 podczas budowy mostu Gdańskiego.",
+      "W 1991 roku przy ulicy powstał 30-miejscowy dom-kontener „Przytulisko” dla narkomanów będących nosicielami wirusa HIV oraz chorych na AIDS; przeciwko temu protestowali lokalni mieszkańcy.",
+      "Nazwa ulicy pochodzi od ludu Wenedów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wenedów is a short Nowe Miasto street that serves as the descent from the Citadel bridge to Zakroczymska. It was rebuilt for the Gdański Bridge in 1958–1959.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Spadek (nieistniejąca, wytyczona 1772)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Wenedów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wened%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia park Romualda Traugutta i Zdrój Królewski jako ważne obiekty; nie wyodrębniono ich w osobnych rekordach."
+  }
+]

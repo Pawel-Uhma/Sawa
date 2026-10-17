@@ -1,0 +1,393 @@
+[
+  {
+    "id": "powazki",
+    "nazwa": "Powązki",
+    "name_en": "Powązki",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.252233, "lon": 20.974103,
+    "lokalizacja": "przyblizona",
+    "okres": "1367–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze wzmianki o wsi Mostki w parafii Stare Babice pochodzą z 1367 roku.",
+      "Przywilej Janusza I z 1413 roku rozgraniczał tereny miejskie od książęcych w pasie wsi Marymont, Powązki i Wola Książęca.",
+      "W 1770 roku grunty rolne przypisane do Powązek wydzierżawiło małżeństwo: Adam Kazimierz i Izabela z Flemmingów książąt Czartoryskich.",
+      "W 1790 roku starosta Melchior Szymanowski podarował część swoich gruntów pod cmentarz katolicki, znany później jako Stare Powązki.",
+      "W 1792 roku gotowy był kościół św. Karola Boromeusza.",
+      "Prace trwające od 1771 do 1783 roku doprowadziły do tego, że zatrzymana tamami rzeczka rozlała się w staw, a wokół niego powstał zespół ogrodowy z letnią rezydencją.",
+      "Od połowy XIX wieku do rozszerzenia granic stolicy w 1916 roku Powązki leżały w granicach trzech obwodów administracyjnych.",
+      "Według podziału MSI Powązki leżą wyłącznie w dzielnicy Wola, a północno-zachodnia część wraz z Cmentarzem Wojskowym leży w dzielnicy Żoliborz."
+    ],
+    "ciekawostki": [
+      "Czasami na Powązkach gościł król Stanisław August.",
+      "Chiński dzwonek zwoływał mieszkańców na obiad w coraz to inne miejsce."
+    ],
+    "summary_en": "Powązki is an area in Wola, Warsaw, bounded by Ostroroga and Młynarska streets, Okopowa street and the cemetery walls. Its history starts with the village of Mostki, first mentioned in 1367, and includes 18th-century gardens of the Czartoryski family and the Stare Powązki cemetery from 1790. The northwestern part, with the Military Cemetery, lies in Żoliborz.",
+    "ludzie": [
+      {"kto": "Adam Kazimierz i Izabela z Flemmingów Czartoryscy", "rola": "dzierżawcy gruntów w Powązkach (1770), fundatorzy zespołu ogrodowego", "wiki": null},
+      {"kto": "Melchior Szymanowski", "rola": "starosta, który podarował grunty pod cmentarz (1790)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Mostki", "Powąski"],
+    "zrodla": [{"tytul": "Wikipedia: Powązki (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Pow%C4%85zki_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł opisuje obszar MSI, nie pojedynczy obiekt; współrzędne ogólne z nagłówka. Pole ciekawostek przepisane z tekstu o ogrodzie."
+  },
+  {
+    "id": "reduta-nr-56",
+    "nazwa": "Reduta nr 56",
+    "name_en": "Redoubt No. 56 (Sowiński Redoubt)",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Wolska 138–140",
+    "adres_historyczny": null,
+    "lat": 52.227222, "lon": 20.943333,
+    "lokalizacja": "dokladna",
+    "okres": "1794–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Reduta powstała w 1831 roku w miejscu wcześniejszych fortyfikacji z insurekcji kościuszkowskiej z 1794 roku.",
+      "W lipcu 1831 roku, w czasie powstania listopadowego, dowódcą reduty nr 56 na Woli mianowano Józefa Sowińskiego; w sierpniu awansowano go na generała brygady (22 sierpnia).",
+      "6 września 1831 roku główne uderzenie rosyjskie skierowano na Wolę, bronioną przez 1300 żołnierzy, mającą 12 dział.",
+      "Po stłumieniu powstania władze carskie urządziły na terenie reduty cmentarz prawosławny, a katolicki kościół św. Wawrzyńca zmieniły na cerkiew Włodzimierskiej Ikony Matki Bożej.",
+      "We wrześniu 1939 roku teren dawnej reduty wchodził w skład odcinka obsadzonego przez 8. kompanię 40. Pułku Piechoty „Dzieci Lwowskich”, dowodzoną przez por. Zdzisława Pacaka-Kuźmirskiego.",
+      "Na terenie reduty znajduje się zbiorowa mogiła mieszkańców Woli zamordowanych w czasie rzezi Woli w sierpniu 1944 roku.",
+      "Pomnik upamiętniający rzeź Woli wystawiono w 1949 roku."
+    ],
+    "ciekawostki": [
+      "Dokładne okoliczności śmierci generała Sowińskiego nie są znane; jedna z wersji mówi o śmierci przy armacie, ponieważ ugrzęzła drewniana noga generała.",
+      "Kule armatnie i lufy z 1831 roku wmurowano w ściany kościoła."
+    ],
+    "summary_en": "Redoubt No. 56 at Wolska and Redutowa streets is the remains of earthen fortifications from 1794 and 1831. Gen. Józef Sowiński died defending Wola here on 6 September 1831. The site holds a mass grave of soldiers from 1831, a 1939 grave, a mass grave of Wola massacre victims from 1944 and a monument from 1949.",
+    "ludzie": [
+      {"kto": "Józef Sowiński", "rola": "dowódca reduty nr 56 i obrony Woli, generał brygady", "wiki": null},
+      {"kto": "Jan Wodzyński", "rola": "mjr, dowódca 8. pułku piechoty liniowej, dostał się do niewoli", "wiki": null},
+      {"kto": "Piotr Wysocki", "rola": "mjr, dowódca 10. pułku piechoty liniowej, dostał się do niewoli", "wiki": null},
+      {"kto": "Zdzisław Pacak-Kuźmirski", "rola": "por., dowódca 8. kompanii 40. pułku piechoty (wrzesień 1939)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dzieło 56", "Reduta Wolska", "Reduta Sowińskiego", "fort Sowińskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Reduta nr 56", "url": "https://pl.wikipedia.org/wiki/Reduta_nr_56"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zajezdnia-redutowa",
+    "nazwa": "Zajezdnia Redutowa",
+    "name_en": "Redutowa bus depot",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Redutowa 27",
+    "adres_historyczny": null,
+    "lat": 52.2317, "lon": 20.9404,
+    "lokalizacja": "dokladna",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zajezdnia powstała 12 marca 1961 roku.",
+      "Początkowo eksploatowała autobusy marki Chausson, później Jelcz 272 MEX i Jelcz 021.",
+      "W sierpniu 1979 roku do zajezdni przybyły pierwsze Ikarusy 280, a we wrześniu 1983 roku Ikarusy 260.",
+      "Od września 2008 roku, w związku z dostawami Solarisów Urbino 12 III (20 szt.) i 18 III (50 szt.), 40 szt. Ikarusów musiało ustąpić miejsca nowym nabytkom.",
+      "W 2013 roku zajezdnia wstrzymała działalność.",
+      "W czerwcu 2019 roku na terenie zajezdni odbyła się seria koncertów w ramach H&M Loves Music 2019.",
+      "Zajezdnia po przebudowie ma zostać reaktywowana w związku z zakupem przez Miejskie Zakłady Autobusowe nowego taboru elektrycznego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Redutowa bus depot at ul. Redutowa 27 in Wola was opened in 1961 by the Miejskie Zakłady Autobusowe. It ran Chausson, Jelcz and Ikarus buses and stopped operating in 2013. After reconstruction it is due to reopen for electric buses.",
+    "ludzie": [],
+    "dawne_nazwy": ["Oddział Przewozów R-5 „Redutowa”"],
+    "zrodla": [{"tytul": "Wikipedia: Redutowa (zajezdnia autobusowa)", "url": "https://pl.wikipedia.org/wiki/Redutowa_%28zajezdnia_autobusowa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wpis 'nieczynna' z artykułu; czy budynek stoi do dziś, artykuł nie mówi wprost."
+  },
+  {
+    "id": "serbia-wiezienie",
+    "nazwa": "Serbia (oddział kobiecy Pawiaka)",
+    "name_en": "Serbia (women's wing of Pawiak prison)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "al. Jana Pawła II / ul. Dzielna (rejon)",
+    "adres_historyczny": "ul. Dzielna 24/26",
+    "lat": 52.24586944, "lon": 20.98977222,
+    "lokalizacja": "dokladna",
+    "okres": "1835–1944",
+    "istnieje": false,
+    "fakty": [
+      "Budynek Serbii wzniesiono najprawdopodobniej w latach 1830–1835 z przeznaczeniem na kryminalne więzienie dla kobiet.",
+      "Po 1863 roku w budynku znajdowało się więzienie polityczne dla kobiet; wśród osadzonych były m.in. Natalia Gąsiorowska, Wera Kostrzewa i Róża Luksemburg.",
+      "W latach 1877–1878, w czasie wojny rosyjsko-tureckiej, umieszczono tu szpital wojskowy; od niego oddział otrzymał swoją zwyczajową nazwę.",
+      "W latach 1939–1944 budynek razem z całym Pawiakiem przejęło Gestapo. Był przewidziany na 250 miejsc, a w czasie okupacji mieściło się w nim do 800 kobiet.",
+      "Szacuje się, że spośród ok. 100 tys. osób, które przeszły przez Pawiak, ok. 20 tys. więziono w Serbii.",
+      "21 sierpnia 1944 Niemcy wysadzili kompleks więzienny Pawiaka wraz z budynkiem Serbii.",
+      "W 1965 roku na rogu obecnej al. Jana Pawła II i ul. Dzielnej odsłonięto płytę upamiętniającą miejsce, gdzie znajdowała się Serbia."
+    ],
+    "ciekawostki": [
+      "Mieszkańcy Warszawy zwykle nazywali Pawiakiem cały kompleks więzienia, zarówno właściwy Pawiak (oddział męski), jak i Serbię (oddział kobiecy)."
+    ],
+    "summary_en": "Serbia was the women's wing of the Pawiak prison at ul. Dzielna 24/26 in Warsaw, probably built in 1830–1835. Under German occupation it held up to 800 women. The Germans blew up the prison complex on 21 August 1944, and a plaque marks the site from 1965.",
+    "ludzie": [
+      {"kto": "Ludwika Krysiak", "rola": "personel Serbii (wymieniona w artykule)", "wiki": null},
+      {"kto": "Wanda Gawryłow-Jankowska", "rola": "personel Serbii (wymieniona w artykule)", "wiki": null},
+      {"kto": "Natalia Gąsiorowska", "rola": "osadzona w więzieniu politycznym", "wiki": null},
+      {"kto": "Wera Kostrzewa", "rola": "osadzona w więzieniu politycznym", "wiki": null},
+      {"kto": "Róża Luksemburg", "rola": "osadzona w więzieniu politycznym", "wiki": null}
+    ],
+    "dawne_nazwy": ["Więzienie Pawiak – oddział kobiecy"],
+    "zrodla": [{"tytul": "Wikipedia: Serbia (więzienie)", "url": "https://pl.wikipedia.org/wiki/Serbia_%28wi%C4%99zienie%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres dzisiejszy przybliżony (rejon rogu al. JP II i Dzielnej), z artykułu."
+  },
+  {
+    "id": "sienna-center",
+    "nazwa": "Sienna Center",
+    "name_en": "Sienna Center office building",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Sienna 73",
+    "adres_historyczny": null,
+    "lat": 52.2301, "lon": 20.9944,
+    "lokalizacja": "dokladna",
+    "okres": "1998–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek biurowy zaprojektowali architekci Leszek Klajnert i Jerzy Czyż z Polsko-Belgijskiej Pracowni Architektury, w stylu późnego modernizmu.",
+      "Został oddany do użytku w 1998 roku.",
+      "Budynek ma dziewięć kondygnacji nadziemnych i dwie podziemne.",
+      "Elewacje wykonano z polerowanych płyt z jasnoszarego granitu.",
+      "Na działce zachowano istniejący starodrzew.",
+      "W listopadzie 2009 roku rozpoczęto generalny remont elewacji, zakończony we wrześniu 2010 bez zmiany wyglądu budynku."
+    ],
+    "ciekawostki": [
+      "Po przeciwległej stronie ulicy Twardej inwestor zamierzał wznieść drugi budynek biurowy, na miejscu nieczynnej szkoły podstawowej. Na razie brak informacji o dalszych losach tej inicjatywy."
+    ],
+    "summary_en": "Sienna Center at ul. Sienna 73 in Wola is a nine-storey office building in late modernist style, designed by Leszek Klajnert and Jerzy Czyż and opened in 1998. Its facade is polished light grey granite. The facade was renovated in 2009–2010.",
+    "ludzie": [
+      {"kto": "Leszek Klajnert", "rola": "architekt, Polsko-Belgijska Pracownia Architektury", "wiki": null},
+      {"kto": "Jerzy Czyż", "rola": "architekt, Polsko-Belgijska Pracownia Architektury", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Sienna Center", "url": "https://pl.wikipedia.org/wiki/Sienna_Center"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "feniks-dom-handlowy",
+    "nazwa": "Spółdzielczy Dom Handlowy „Feniks”",
+    "name_en": "Feniks cooperative department store",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Żelazna 32",
+    "adres_historyczny": "ul. Żelazna 32",
+    "lat": 52.230472, "lon": 20.993689,
+    "lokalizacja": "dokladna",
+    "okres": "1972–2009",
+    "istnieje": false,
+    "fakty": [
+      "Budynek wzniesiono w latach 1971–1972 wg projektu Jana Zdanowicza, na działce na rogu ulic Żelaznej i Siennej, jako część osiedla Pańska (zbudowanego w latach 1965–1969).",
+      "„Feniks” oddano do użytku w marcu 1972 roku; został wtedy wyróżniony w konkursie „Mister Warszawy” na najlepszy budynek oddany do użytku w stolicy w tym roku.",
+      "Budynek był własnością Warszawskiej Spółdzielni Spożywców „Społem”.",
+      "W „Feniksie” sprzedawano artykuły spożywcze i przemysłowe; funkcjonowały w nim również punkty usługowe.",
+      "W latach 90. XX wieku budynek zmodernizowano, m.in. elewację obłożono zielonymi i szarymi panelami.",
+      "„Feniks” został zburzony w 2009 roku. W 2012 roku, na jego miejscu i pod tym samym adresem, oddano do użytku ośmiokondygnacyjny biurowiec, nawiązujący nazwą do dawnego domu towarowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Feniks was a cooperative department store at ul. Żelazna 32 in Wola, built in 1971–1972 to a design by Jan Zdanowicz. It belonged to the Społem cooperative and was demolished in 2009. An eight-storey office building was put up on the same site in 2012.",
+    "ludzie": [
+      {"kto": "Jan Zdanowicz", "rola": "autor projektu budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Spółdzielczy Dom Towarowy „Feniks”"],
+    "zrodla": [{"tytul": "Wikipedia: Spółdzielczy Dom Handlowy „Feniks” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Sp%C3%B3%C5%82dzielczy_Dom_Handlowy_%E2%80%9EFeniks%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "osiedle-srebrna",
+    "nazwa": "Osiedle Srebrna",
+    "name_en": "Srebrna housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Platynowa 4, 6, 8, 10; ul. Srebrna 6 i 10",
+    "adres_historyczny": null,
+    "lat": 52.226944, "lon": 20.990278,
+    "lokalizacja": "przyblizona",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt budowy osiedla zatwierdzono w 1960 roku; osiedle wybudowano w technologii monolitycznej w latach 1963–1966 według projektu Jana Bogusławskiego i Bohdana Gniewiewskiego.",
+      "Zespół składa się z sześciu powtarzalnych budynków wielorodzinnych o 11 kondygnacjach; powierzchnia zespołu wynosi 4,6 hektara.",
+      "Osiedle powstało w miejscu, gdzie przed II wojną światową znajdowały się jedne z największych zakładów metalurgicznych Warszawy: B. Hantke, Bormann, Szwede i Spółka oraz Gerlach-Lampe, a także kamienice dla robotników.",
+      "Przed budową wyburzono pozostałości po przedwojennej zabudowie oraz prowizoryczne zabudowania i warsztaty, stanowiące część rejonu nazywanego „Dzikim Zachodem”.",
+      "Zaplanowano 660 mieszkań (1578 pomieszczeń) dla ok. 2100–2500 mieszkańców; zabudowę uzupełniły szkoła, przedszkole, pawilon handlowy i garaże.",
+      "Zabytkowy pałacyk Heurteuxa (ul. Srebrna 12), mieszczący Muzeum Woli, został zachowany i wyremontowany w ramach zagospodarowania osiedla.",
+      "Budynek przy ul. Platynowej 10 znalazł się wśród dziesięciu nominowanych obiektów w konkursie „Mister Warszawy” za 1965 rok."
+    ],
+    "ciekawostki": [
+      "Osiedle jest jednym z tzw. „metalowych” osiedli w Warszawie, obok pobliskich Złotej i Miedzianej. Nazwa wywodzi się od ulicy Srebrnej."
+    ],
+    "summary_en": "Srebrna is a housing estate in Wola, between Towarowa, Miedziana and Pańska streets. Built in 1963–1966 to designs by Jan Bogusławski and Bohdan Gniewiewski, it replaced prewar metal works and tenements. It consists of six eleven-storey blocks.",
+    "ludzie": [
+      {"kto": "Jan Bogusławski", "rola": "architekt projektu osiedla", "wiki": null},
+      {"kto": "Bohdan Gniewiewski", "rola": "architekt projektu osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Srebrna (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Srebrna_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka dotyczą środka osiedla; adresy budynków z artykułu."
+  },
+  {
+    "id": "staw-wolski",
+    "nazwa": "Staw Wolski",
+    "name_en": "Wola Pond",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "teren cmentarza Powstańców Warszawy, w pobliżu ul. Wolskiej i ul. Józefa Sowińskiego",
+    "adres_historyczny": null,
+    "lat": 52.225833, "lon": 20.935278,
+    "lokalizacja": "dokladna",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw leży w dzielnicy Wola, na obszarze MSI Ulrychów, na terenie cmentarza Powstańców Warszawy.",
+      "Cmentarz jest chroniony jako zabytek od 2012 roku (nr rej. A-1057 z 29.02.2012).",
+      "Staw jest glinianką, powstał w sposób sztuczny.",
+      "Powierzchnia stawu wynosi 0,1403 ha, a lustro wody znajduje się na wysokości 105,2 m n.p.m.",
+      "Miejscowy plan zagospodarowania przestrzennego rejonu cmentarza Powstańców Warszawy z 2018 roku nakazuje zachowanie zbiornika wodnego.",
+      "W 2021 roku stwierdzono tu występowanie różanki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Staw Wolski is a small artificial clay-pit pond of about 0.14 ha, located within the Warsaw Uprising Cemetery in Wola. The cemetery has been a protected monument since 2012, and the local plan of 2018 requires the pond to be kept.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Staw Wolski", "url": "https://pl.wikipedia.org/wiki/Staw_Wolski"}],
+    "pewnosc": "srednia",
+    "uwagi": "Krótki artykuł. W źródle zbiornik opisany też jako Park Powstańców Warszawy."
+  },
+  {
+    "id": "synagoga-szpitala-starozakonnych",
+    "nazwa": "Synagoga Szpitala Starozakonnych",
+    "name_en": "Synagogue of the Jewish Hospital",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Kasprzaka 17",
+    "adres_historyczny": "ul. Dworska (późniejsza ul. Kasprzaka 17)",
+    "lat": 52.2270635, "lon": 20.9717539,
+    "lokalizacja": "dokladna",
+    "okres": "1902–II wojna światowa",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga została zbudowana w 1902 roku, wraz z innymi budynkami wchodzącymi w skład szpitala.",
+      "Kamień węgielny pod budowę całego kompleksu szpitalnego wmurowano w fundament synagogi w maju 1894 roku.",
+      "22 czerwca 1902 roku odbyło się uroczyste otwarcie synagogi oraz szpitala.",
+      "Synagoga była przeznaczona głównie dla personelu i pacjentów szpitala, ale korzystali z niej również okoliczni mieszkańcy.",
+      "Murowany budynek wzniesiono na planie prostokąta, w stylu klasycystycznym; na zachodzie wsparta na kolumnach galeria dla kobiet, całość nakryta dachem dwuspadowym ze sterczynami w narożnikach.",
+      "Synagoga została spalona przez Niemców podczas II wojny światowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The synagogue of the Jewish Hospital (Szpital Starozakonnych) stood at Dworska street, later Kasprzaka 17, in Wola. It was built in 1902 and officially opened on 22 June 1902. The Germans burned it during World War II.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Dworska"],
+    "zrodla": [{"tytul": "Wikipedia: Synagoga Szpitala Starozakonnych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_Szpitala_Starozakonnych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "synagoga-cmentarna-okopowa",
+    "nazwa": "Synagoga cmentarna",
+    "name_en": "Cemetery Synagogue, Okopowa Street",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Okopowa 49/51",
+    "adres_historyczny": "ul. Okopowa 49/51",
+    "lat": 52.2450664, "lon": 20.9773098,
+    "lokalizacja": "dokladna",
+    "okres": "1877–1943",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga została zbudowana w 1877 roku według projektu architekta Adolfa Schimmelpfenniga.",
+      "Do synagogi dobudowano dwa parterowe domy przedpogrzebowe: lewy dla zmarłych mężczyzn, prawy dla kobiet. Na piętrze mieszkał rabin z rodziną.",
+      "15 maja 1943 roku Niemcy doszczętnie zniszczyli synagogę.",
+      "Po zakończeniu wojny budynku nie odbudowano; odkopano i odsłonięto jedynie fundamenty, a przedmioty z dawnej synagogi wyeksponowano na wystawie przy ul. Gibalskiego 21 oraz bezpośrednio na cmentarzu.",
+      "Gmina Starozakonnych w RP starała się o odbudowę synagogi, lecz warszawska gmina żydowska nie wyraziła na to zgody.",
+      "Fronton synagogi zdobił kolisty witraż wraz z umieszczonymi na szczycie tablicami Dekalogu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Cemetery Synagogue at Okopowa 49/51 in Wola, built in 1877 to a design by Adolf Schimmelpfenniga, stood on the Jewish cemetery. The Germans destroyed it on 15 May 1943. Only its foundations were uncovered after the war.",
+    "ludzie": [
+      {"kto": "Adolf Schimmelpfenniga", "rola": "architekt projektu synagogi (nazwisko w artykule w dopełniaczu)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Synagoga cmentarna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Synagoga_cmentarna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwisko architekta podane w artykule w formie zależnej; zapisać w mianowniku po weryfikacji."
+  },
+  {
+    "id": "syrenka-picasso",
+    "nazwa": "Syrenka Picassa (mural na Kole)",
+    "name_en": "Picasso's Mermaid mural, Koło",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. ks. J. Sitnika 4",
+    "adres_historyczny": "ul. Deotymy 48 m. 24",
+    "lat": 52.244189, "lon": 20.949481,
+    "lokalizacja": "dokladna",
+    "okres": "1948–1953; 2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pablo Picasso narysował węglem syrenkę na ścianie mieszkania na osiedlu Koło w 1948 roku, podczas pobytu w Polsce.",
+      "Picasso przyjechał w sierpniu 1948 roku na Światowy Kongres Intelektualistów w Obronie Pokoju we Wrocławiu; planowe trzy dni przedłużyły się do dwóch tygodni.",
+      "3 września 1948 roku architekci Helena i Szymon Syrkusowie zabrali go na budowane osiedle mieszkaniowe na Kole.",
+      "Mieszkanie z muralem miało adres ul. Deotymy 48 m. 24 (obecnie ul. ks. J. Sitnika 4).",
+      "W 1953 roku rysunek został zamalowany przez wynajętego w tym celu malarza pokojowego.",
+      "W 2019 roku rysunek odtworzono w pierwotnym miejscu, w oryginalnej wielkości, jednak farbą akrylową zamiast węglem.",
+      "Rysunek miał wymiary około 1,8 × 1,7 m i rozpościerał się od sufitu do podłogi."
+    ],
+    "ciekawostki": [
+      "Picasso nocował w Warszawie w Hotelu Bristol i został odznaczony przez prezydenta Bolesława Bieruta Krzyżem Komandorskim z Gwiazdą Orderu Odrodzenia Polski.",
+      "Picasso przekazał Muzeum Narodowemu w Warszawie komplet 20 własnoręcznie malowanych talerzy ceramicznych."
+    ],
+    "summary_en": "A mermaid (Syrenka) drawn in charcoal by Pablo Picasso in 1948 on a wall of a flat on the Koło estate in Wola. It was painted over in 1953 and recreated in acrylic in 2019 at its original place. The flat was at ul. Deotymy 48, now ul. ks. J. Sitnika 4.",
+    "ludzie": [
+      {"kto": "Pablo Picasso", "rola": "autor rysunku (1948)", "wiki": null},
+      {"kto": "Helena Syrkus", "rola": "architektka, przewodniczka Picassa po odbudowującej się Warszawie", "wiki": null},
+      {"kto": "Szymon Syrkus", "rola": "architekt, przewodnik Picassa po odbudowującej się Warszawie", "wiki": null},
+      {"kto": "Franciszka Sawicka-Prószyńska", "rola": "lokatorka mieszkania z muralem, przyjmowała odwiedzających", "wiki": null},
+      {"kto": "Nina Iżycka", "rola": "artystka, wsparcie przy odtworzeniu rysunku w 2019", "wiki": null},
+      {"kto": "Dobrochna Tulczyńska", "rola": "artystka, wsparcie przy odtworzeniu rysunku w 2019", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Deotymy 48 m. 24"],
+    "zrodla": [{"tytul": "Wikipedia: Syrenka (rysunek Pabla Picassa)", "url": "https://pl.wikipedia.org/wiki/Syrenka_%28rysunek_Pabla_Picassa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (osiedle Koło); dokładny adres z artykułu."
+  },
+  {
+    "id": "szkola-podstawowa-386",
+    "nazwa": "Szkoła Podstawowa nr 386 im. Marszałka Józefa Piłsudskiego",
+    "name_en": "Primary School No. 386 named after Marshal Józef Piłsudski",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2406, "lon": 20.9603,
+    "lokalizacja": "dokladna",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Szkoła została wybudowana w 1926 roku jako Szkoła Podstawowa nr 125.",
+      "Jej pierwszym dyrektorem był Zygmunt Czarniecki.",
+      "W 1944 roku, podczas powstania warszawskiego, szkoła została spalona, a jej wnętrze nie nadawało się do użytku.",
+      "Po wyzwoleniu w 1945 roku szkoła znów zaczęła funkcjonować.",
+      "W 1999 roku, wraz z reformą oświaty, szkoła podstawowa przekształciła się w gimnazjum.",
+      "18 maja 2004 roku w gimnazjum odbyła się uroczystość nadania placówce imienia marszałka Józefa Piłsudskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Primary School No. 386 in Wola was built in 1926 as School No. 125. It was burned during the Warsaw Uprising in 1944 and reopened after liberation. It has been named after Marshal Józef Piłsudski since 2004.",
+    "ludzie": [
+      {"kto": "Zygmunt Czarniecki", "rola": "pierwszy dyrektor szkoły", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szkoła Podstawowa nr 125"],
+    "zrodla": [{"tytul": "Wikipedia: Szkoła Podstawowa nr 386 im. Marszałka Józefa Piłsudskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Szko%C5%82a_Podstawowa_nr_386_im._Marsza%C5%82ka_J%C3%B3zefa_Pi%C5%82sudskiego_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Adres nie podany w artykule. Artykuł potwierdza przekształcenie w gimnazjum w 1999 roku; nie mówi, czy budynek nadal służy szkole."
+  }
+]

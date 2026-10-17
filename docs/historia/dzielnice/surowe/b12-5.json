@@ -1,0 +1,339 @@
+[
+  {
+    "id": "ulica-chocimska",
+    "nazwa": "Ulica Chocimska",
+    "name_en": "Chocimska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Chocimska",
+    "adres_historyczny": "Langerowska (od ok. 1875)",
+    "lat": 52.2127474, "lon": 21.0223197,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica, biegnąca pierwotnie od placu Unii Lubelskiej, powstała ok. 1820 roku jako droga podwalna, związana z pobliskimi okopami Lubomirskiego.",
+      "Około 1875 roku wał ziemny rozrzucono, a uliczkę wytyczono na nowo jako ulicę Langerowską, od nazwy kolonii Langerówka.",
+      "Od 1892 roku przy ulicy działał dworzec, a jej fragmentem biegły tory kolejki wilanowskiej.",
+      "Około 1908 roku ulicę wydłużono aż do ul. Humańskiej; po 1916 roku cała ulica została włączona do Warszawy.",
+      "W 1921 roku nazwę ulicy zmieniono na Chocimską.",
+      "W kamienicy pod nr 35 mieszkali m.in. Witold Rowicki, Witold Gombrowicz oraz Władysław Tatarkiewicz, o czym przypominają tablice pamiątkowe.",
+      "26 kwietnia 1944 roku oddział specjalny Kedywu KG AK „Pegaz” pod dowództwem Jerzego Zapadki ps. Mirski dokonał udanego zamachu na pułkownika Schutzpolizei Erwina Gressera.",
+      "Od 1945 roku w kamienicy przy ul. Chocimskiej 33 mieściło się Biuro Odbudowy Stolicy."
+    ],
+    "ciekawostki": [
+      "Ok. 1925 roku Chocimską wydłużono do ul. Willowej; w tym okresie powstały budynki zaprojektowane przez znanych architektów."
+    ],
+    "summary_en": "Chocimska Street runs from Unii Lubelskiej Square. It began around 1820 as a road beside the Lubomirski trenches and was extended to Humańska Street around 1908. Named Langerowska after the Langerówka estate in the 1870s, it became Chocimska in 1921. In April 1944 a Home Army Kedyw unit carried out a successful attack here on a Schutzpolizei colonel.",
+    "ludzie": [
+      {"kto": "Witold Rowicki", "rola": "mieszkał w kamienicy pod nr 35; tablica pamiątkowa na budynku", "wiki": null},
+      {"kto": "Witold Gombrowicz", "rola": "mieszkał w kamienicy pod nr 35; tablica pamiątkowa na budynku", "wiki": null},
+      {"kto": "Władysław Tatarkiewicz", "rola": "mieszkał w kamienicy pod nr 35; tablica pamiątkowa na budynku", "wiki": null},
+      {"kto": "Erwin Gresser", "rola": "pułkownik Schutzpolizei, cel zamachu Kedywu AK 26 kwietnia 1944 roku", "wiki": null},
+      {"kto": "Jerzy Zapadko", "rola": "ps. Mirski; dowodził oddziałem specjalnym Kedywu „Pegaz”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Langerowska (od ok. 1875 do 1921)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Chocimska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Chocimska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje ulicę jako część dzielnicy Mokotów; w rekordzie dzielnica z nagłówka (Śródmieście)."
+  },
+  {
+    "id": "ulica-ciasna",
+    "nazwa": "Ulica Ciasna",
+    "name_en": "Ciasna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Ciasna",
+    "adres_historyczny": null,
+    "lat": 52.2513348, "lon": 21.0063691,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1740–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała przed 1740 rokiem jako ślepy zaułek ul. Świętojerskiej, będący drogą dojazdową do zabudowań zespołu kościoła św. Jerzego i klasztoru Kanoników Regularnych.",
+      "Nazwa nawiązuje do jej niewielkiej szerokości.",
+      "Przed 1770 rokiem u zbiegu z ul. Świętojerską wystawiono kamienicę królewskiego sekretarza Franciszka Groszkowskiego, być może według projektu Bonawentury Solariego.",
+      "Po 1792 roku pod nr 1 powstała kamienica Kanoników Regularnych.",
+      "W latach 1913–14 pod nr 6 wybudowano gmach składów towarowych Gepera: czteropiętrowy, z elewacjami pierwotnie niemal w całości wypełnionymi oknami.",
+      "W 1944 roku zniszczeniu uległa niemal cała zabudowa ulicy; ocalały dwa najpóźniej wzniesione obiekty, w tym gmach Gepery.",
+      "W 1950 roku ulicę przedłużono do ul. Franciszkańskiej.",
+      "W II połowie lat 90. XX wieku dawny gmach Gepery przebudowano na budynek biurowy."
+    ],
+    "ciekawostki": [
+      "Na miejscu ruin wzniesiono m.in. gmach Szkoły Podstawowej nr 158 im. Jana Kilińskiego (nr 13)."
+    ],
+    "summary_en": "Ciasna Street in the Nowe Miasto area of Śródmieście runs from Świętojerska to Franciszkańska streets. Its name refers to its narrowness. Most of its buildings were destroyed in 1944; the Gepera warehouse of 1913–14, which survived thanks to its solid construction, was converted into offices in the late 1990s.",
+    "ludzie": [
+      {"kto": "Franciszek Groszkowski", "rola": "królewski sekretarz; kamienica przy zbiegu z ul. Świętojerską wystawiona przed 1770 rokiem", "wiki": null},
+      {"kto": "Bonawentura Solari", "rola": "być może autor projektu kamienicy Groszkowskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Ciasna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ciasna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-cicha",
+    "nazwa": "Ulica Cicha",
+    "name_en": "Cicha Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Cicha",
+    "adres_historyczny": null,
+    "lat": 52.2375461, "lon": 21.02451,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w XVIII wieku jako droga dojazdowa od Tamki do spichlerza, który wybudowano przed 1701 rokiem w miejscu obecnego skrzyżowania z ul. Zajęczą.",
+      "Inicjatorem budowy spichlerza był zapewne Józef Karol Lubomirski, właściciel jurydyki Aleksandria.",
+      "Spichlerz zmieniał funkcję: przed 1740 rokiem mieścił szpital, pod koniec XVIII wieku był kamienicą mieszkalną, a po 1837 roku działała w nim fabryka gumy elastycznej Józefa Wimera.",
+      "Uliczkę uregulowano przed 1817 rokiem; obecna nazwa weszła do obiegu w latach 60. XIX wieku.",
+      "Od 1916 roku po sąsiedzku, pod nr 4, działała znana Fabryka Czekolady i Cukierków Jana Domańskiego, zatrudniająca w 1931 roku ok. 350 pracowników.",
+      "Od 1845 roku właścicielem przeciwnej strony ulicy był hrabia Seweryn Uruski.",
+      "Po 1935 roku zabudowano nieparzystą stronę Cichej.",
+      "Podczas II wojny światowej zniszczeniu uległa drewniana zabudowa parzystej pierzei ulicy; relikty zabudowań fabrycznych dotrwały do lat 70. XX wieku."
+    ],
+    "ciekawostki": [
+      "Pierwszą nowoczesną kamienicę przy wschodniej pierzei wzniósł dla siebie znany architekt Artur Spitzbarth."
+    ],
+    "summary_en": "Cicha Street runs from Tamka to Zając Street. It was laid out in the 18th century as an access road to a granary built before 1701. The granary was later a hospital, a tenement and a rubber factory. The Domański chocolate factory operated at no. 4 from 1916, and the street was largely destroyed during World War II.",
+    "ludzie": [
+      {"kto": "Józef Karol Lubomirski", "rola": "właściciel jurydyki Aleksandria; zapewne inicjator budowy spichlerza", "wiki": null},
+      {"kto": "Józef Wimer", "rola": "właściciel fabryki gumy elastycznej działającej w dawnym spichlerzu po 1837 roku", "wiki": null},
+      {"kto": "Artur Spitzbarth", "rola": "architekt; wzniósł pierwszą nowoczesną kamienicę przy wschodniej pierzei", "wiki": null},
+      {"kto": "Seweryn Uruski", "rola": "hrabia; od 1845 roku właściciel przeciwnej strony ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Cicha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Cicha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł określa ulicę jako część dzielnicy Powiśle; w rekordzie dzielnica z nagłówka (Śródmieście)."
+  },
+  {
+    "id": "ulica-czerniakowska",
+    "nazwa": "Ulica Czerniakowska",
+    "name_en": "Czerniakowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Czerniakowska",
+    "adres_historyczny": null,
+    "lat": 52.2277975, "lon": 21.0367573,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest ukształtowanym przez stulecia pradawnym szlakiem od traktu ujazdowskiego do brodu na Wiśle i wsi Czerniaków.",
+      "W 1687 roku z fundacji Stanisława Herakliusza Lubomirskiego rozpoczęto w Czerniakowie, przy dzisiejszym placu Bernardyńskim, budowę kościoła św. Antoniego z Padwy.",
+      "Większość zabudowy ulicy zniszczyła wielka powódź w 1813 roku.",
+      "Przy ulicy powstały zakłady przemysłowe, m.in. Rządowa Fabryka Machin na Solcu; w 1874 roku przeszła na własność Towarzystwa Akcyjnego Lilpop, Rau, Loewenstein i sp.",
+      "W 1830 roku przy ulicy działał browar Weissa; jego podpalenie 29 listopada 1830 roku przez pchor. Wiktora Tylskiego było sygnałem do wybuchu powstania listopadowego.",
+      "16 maja 1891 roku oddano do użytku linię Kolei Konnej Wilanowskiej przebiegającą wzdłuż ulicy; 5 maja 1892 roku linię wydłużono do Wilanowa.",
+      "1 kwietnia 1916 roku ulica znalazła się w granicach Warszawy na całej długości; 19 listopada 1922 roku ruszył nią tramwaj linii 2.",
+      "18 września 1944 roku cała ulica znalazła się pod kontrolą Niemców; w dniach powstania spłonęła zabudowa północnego odcinka."
+    ],
+    "ciekawostki": [
+      "W 1862 roku powstał pierwszy dom Spółki Cywilnej Budowy Domów dla Rzemieślników i Robotników, zaprojektowany przez Henryka Marconiego.",
+      "Rok 1886 przyniósł zakończenie budowy Stacji Pomp Rzecznych Wodociągów Warszawskich pod nr 124."
+    ],
+    "summary_en": "Czerniakowska Street follows an ancient route from the Ujazdów road to a Vistula ford and the village of Czerniaków. A church of St Anthony of Padua was begun there in 1687 by Stanisław Herakliusz Lubomirski. A fire at the Weiss brewery on the street on 29 November 1830 was the signal for the November Uprising, and a horse-drawn railway to Wilanów ran along it from 1891.",
+    "ludzie": [
+      {"kto": "Stanisław Herakliusz Lubomirski", "rola": "fundator kościoła św. Antoniego z Padwy w Czerniakowie (1687)", "wiki": null},
+      {"kto": "Wiktor Tylski", "rola": "pchor.; podpalił browar Weissa 29 listopada 1830 roku", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "architekt pierwszego domu Spółki Cywilnej Budowy Domów dla Rzemieślników i Robotników (1862)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Czerniakowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Czerniakowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dzielnice Mokotów i Śródmieście; w rekordzie dzielnica z nagłówka. Tekst urwany w zdaniu o trolejbusach (1945)."
+  },
+  {
+    "id": "ulica-czerwonego-krzyza",
+    "nazwa": "Ulica Czerwonego Krzyża",
+    "name_en": "Czerwonego Krzyża Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Czerwonego Krzyża",
+    "adres_historyczny": null,
+    "lat": 52.2355182, "lon": 21.0302024,
+    "lokalizacja": "przyblizona",
+    "okres": "1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 1897–1898 jako przedłużenie ul. Rozbrat i droga dojazdowa do niewielkiego szpitala Rosyjskiego Czerwonego Krzyża, od którego pochodzi jej nazwa.",
+      "Główny gmach szpitalny powstał w latach 1896–1897; w 1914 roku jako ostatni w zespole wzniesiono budynek administracyjny.",
+      "Ulicę poszerzono w 1900 roku; powstały wtedy wielkomiejskie kamienice, będące pierwszą mieszkaniową zabudową ulicy.",
+      "W latach 1904–1914 powstał most Poniatowskiego, zwany wówczas mostem Mikołajewskim lub III Mostem, wraz z ok. 700-metrowym wiaduktem łączącym go z Al. Jerozolimskimi.",
+      "W 1933 roku tunelem i nasypem kolei średnicowej pojechały pierwsze pociągi; powstała stacja PKP Warszawa Powiśle.",
+      "W 1944 roku kilka domów legło w gruzach, szpital spłonął, a wiadukt wysadzili Niemcy.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 24 sierpnia 1951 roku wschodni odcinek ulicy przemianowano na ul. Stefana Jaracza.",
+      "W kamienicy Spółdzielni Domostwo przy ul. Czerwonego Krzyża 6 od 2002 roku do wyprowadzki do Pałacu Prezydenckiego w 2006 roku mieszkał przyszły prezydent RP Lech Kaczyński wraz z żoną Marią."
+    ],
+    "ciekawostki": [
+      "Z zabudowań szpitala ocalał pawilon chorób wewnętrznych im. cesarzowej Marii Aleksandrowny pod adresem Smolna 6."
+    ],
+    "summary_en": "Czerwonego Krzyża Street on the Powiśle side of Śródmieście was built in 1897–1898 as an access road to a small Russian Red Cross hospital, which gave the street its name. It was widened in 1900. After the Poniatowski Bridge and its viaduct were built (1904–1914), it became an important link to Aleje Jerozolimskie. Its eastern section was renamed after Stefan Jaracz in 1951.",
+    "ludzie": [
+      {"kto": "Lech Kaczyński", "rola": "przyszły prezydent RP; mieszkał z żoną w kamienicy Spółdzielni Domostwo przy ul. Czerwonego Krzyża 6 (2002–2006)", "wiki": null},
+      {"kto": "Stefan Jaracz", "rola": "patron wschodniego odcinka ulicy od 1951 roku", "wiki": null},
+      {"kto": "Jan Hinz", "rola": "architekt; wzniósł pierwszą z kamienic przy ulicy dla siebie", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Stefana Jaracza (wschodni odcinek, od 1951 roku)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Czerwonego Krzyża w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Czerwonego_Krzy%C5%BCa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-danilowiczowska",
+    "nazwa": "Ulica Daniłowiczowska",
+    "name_en": "Daniłowiczowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Daniłowiczowska",
+    "adres_historyczny": null,
+    "lat": 52.2447856, "lon": 21.0069891,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na początku XVII wieku jako droga dojazdowa do dworu Jana Mikołaja Daniłowicza, przypisanego numeracji ul. Hipotecznej.",
+      "Pierwszym istotnym obiektem przy ulicy był pałac Teodora Andrzeja Potockiego, późniejszego prymasa Polski, wybudowany przed 1732 rokiem.",
+      "W latach 1746–1795 pałac mieścił Bibliotekę Załuskich; w 1771 roku ulicę częściowo wybrukowano.",
+      "Od 1802 roku przy ulicy istniała synagoga Niemiecka, zlikwidowana po wybudowaniu Wielkiej Synagogi na Tłomackiem.",
+      "W 1900 roku przebito uliczkę do Teatru Nowości przy ul. Hipotecznej; popiersia królów zdobiące oficyny przeniesiono na fasadę, co dało budynkowi nazwę Domu pod Królami.",
+      "W latach 1912–1913 u zbiegu z ul. Hipoteczną wystawiono według projektu Karola Jankowskiego i Franciszka Lilpopa gmach biurowca i magazynów „Fabryki Płodów Chemicznych Ludwik Spiess i Syn”.",
+      "W latach 1913–1914 wzniesiono gmach miejskiego Aresztu Centralnego, na wprost wylotu ul. Hipotecznej.",
+      "Rok 1944 przyniósł zagładę większości zabudowy ulicy; w latach 1995–1997 odbudowano pałac Jabłonowskich wraz z odcinkiem ulicy."
+    ],
+    "ciekawostki": [
+      "Pałac Filipa Nereusza Szaniawskiego, znany od późniejszego właściciela jako pałac Blanka, powstał pod koniec XVII wieku z murowanych dworów przy zbiegu z Senatorską."
+    ],
+    "summary_en": "Daniłowiczowska Street in Śródmieście started at Senatorska Street in the early 17th century as an access road to an estate. Its Potocki palace, built before 1732, housed the Załuski Library from 1746 to 1795. The Aresztu Centralnego (Central Prison) was built in 1913–14, and most of the street was destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Teodor Andrzej Potocki", "rola": "późniejszy prymas Polski; pałac wybudowany przed 1732 rokiem", "wiki": null},
+      {"kto": "Karol Jankowski", "rola": "projektant gmachu Fabryki Płodów Chemicznych Ludwik Spiess i Syn (1912–1913)", "wiki": null},
+      {"kto": "Franciszek Lilpop", "rola": "współprojektant gmachu Fabryki Płodów Chemicznych Ludwik Spiess i Syn", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Daniłowiczowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dani%C5%82owiczowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-dawna",
+    "nazwa": "Ulica Dawna",
+    "name_en": "Dawna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dawna",
+    "adres_historyczny": null,
+    "lat": 52.249524, "lon": 21.0139361,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona zapewne pod koniec XVI wieku.",
+      "Po raz pierwszy wzmiankowana w 1743 roku jako „między tyłami Kanoniów y Szkołami Jezuickimi na Gnojową Górę idąca”; obecną nazwę nadano w 1772 roku.",
+      "Kapituła kolegiaty Świętego Jana samowolnie zabudowała ulicę od strony ul. Jezuickiej domem proboszcza, pozostawiając przejście pod arkadą; spór rozstrzygnięto wydzierżawieniem ulicy kanonikom.",
+      "Po 1831 roku koniec ulicy zajęły budynki gospodarcze, a na początku XX wieku arkadę zabudowano pomieszczeniem sklepu.",
+      "Od założenia Starej Warszawy do 1844 roku między wylotem Dawnej i Celnej a Wisłą funkcjonowało wysypisko śmieci – Góra Gnojna.",
+      "W 1944 roku cała zabudowa ulicy została spalona; wszystkie domy odbudowano w latach 1958–1960, z przywróceniem arkadowej bramy i wylotu na ul. Jezuicką."
+    ],
+    "ciekawostki": [
+      "Zabudowa ulicy jest przyporządkowana numeracji innych ulic: kamieniczki kanoników – ul. Kanonia, a zabudowania Gimnazjum Zaluscianum – ul. Jezuicka."
+    ],
+    "summary_en": "Dawna Street in the Old Town was laid out at the end of the 16th century and first recorded in 1743. Its name dates from 1772. A dispute over a house built by the collegiate chapter was settled by leasing the street to the canons. The Gnojna Góra rubbish dump lay at its end until 1844, and the street was rebuilt in 1958–1960 after its 1944 destruction.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dawna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dawna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-dobra",
+    "nazwa": "Ulica Dobra",
+    "name_en": "Dobra Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dobra",
+    "adres_historyczny": null,
+    "lat": 52.2439704, "lon": 21.0217322,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w XVII wieku w jurydyce Aleksandria jako droga biegnąca po wysypisku śmieci i gruzu.",
+      "Nazwa, poświadczona w 1771 roku, była ironiczna: ulica była nędznie zabudowana i często zalewana podczas powodzi.",
+      "W 1778 roku na dawnej drodze wytyczono ulicę Dobrą; w kolejnym roku uregulowano fragment od ul. Karowej do ul. Bednarskiej.",
+      "Do początku XIX wieku wszystkie zabudowania ulicy były drewniane; jedynymi murowanymi były łaźnia Jezierskiego i łaźnia Teodozji Majewskiej.",
+      "W latach 1853–1855 zbudowano nowy wodociąg projektu Henryka Marconiego; przy ul. Dobrej 74 powstała wtedy stacja filtrów.",
+      "W 1922 roku ulicą pojechał pierwszy tramwaj elektryczny linii P.",
+      "W okresie okupacji niemieckiej zniszczeniu uległa zabudowa środkowego odcinka ulicy, między ul. Drewnianą a ul. Karową.",
+      "W 1995 roku rozebrano ostatnie relikty magazynów Stacji Pomp Kanałowych „Warszawa” i wzniesiono na ich miejscu Bibliotekę Uniwersytecką."
+    ],
+    "ciekawostki": [
+      "W 1910 roku dla Augusta Bauma pod nr 56 wzniesiono kamienicę z narożnym wykuszem zwieńczonym kopułą – jedyne tego typu rozwiązanie na terenie dzielnicy."
+    ],
+    "summary_en": "Dobra Street in Śródmieście was laid out in the 17th century across a rubbish dump in the Aleksandria estate, and was officially marked on the map in 1778. Its name, recorded in 1771, was ironic because the street was poorly built up and often flooded. Its Marconi water-filtration station of 1853–55 and the first electric tram in 1922 are key points in its history.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant wodociągu z lat 1853–1855, przy którym powstała stacja filtrów przy ul. Dobrej 74", "wiki": null},
+      {"kto": "August Baum", "rola": "inwestor kamienicy pod nr 56 (1910)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dobra w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dobra_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-dowcip",
+    "nazwa": "Ulica Dowcip",
+    "name_en": "Dowcip Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dowcip",
+    "adres_historyczny": null,
+    "lat": 52.2373837, "lon": 21.0145945,
+    "lokalizacja": "przyblizona",
+    "okres": "1882–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została przeprowadzona w latach 1882–1884 na posesji Adolfa Szmidta przy ul. Czackiego.",
+      "Nazwę Dowcip nadano z racji sprytnego wykorzystania zapisu hipotecznego, dającego prawo do widoku na ogród księży misjonarzy po wschodniej stronie ul. Mazowieckiej.",
+      "Zabudowę ulicy w czasie jej wytyczenia stanowiły cztery kamienice według projektu Józefa Piusa Dziekońskiego, przyporządkowane numeracji ul. Czackiego.",
+      "Adolf Szmidt nie spłacił dużego kredytu zaciągniętego na budowę kamienic, więc zostały one wystawione na licytację.",
+      "Jedną z kamienic nabył minister spraw zagranicznych II Rzeczypospolitej, Eustachy Kajetan książę Sapieha.",
+      "Zabudowa ulicy została zniszczona w czasie II wojny światowej; w okresie powojennym ulicę obudowano współczesnymi domami.",
+      "W 2018 roku pod nr 4, w budynku należącym dawniej do Telekomunikacji Polskiej, otwarto Kapsuła Hostel – największy w Warszawie hotel kapsułowy."
+    ],
+    "ciekawostki": [
+      "Zapis hipoteczny dający prawo do widoku należał do posesji przy ul. Mazowieckiej 8, zamykającej zaułek."
+    ],
+    "summary_en": "Dowcip Street in Śródmieście was laid out in 1882–1884 on a plot owned by Adolf Szmidt. It was named for a clever use of a mortgage entry that gave a view over the Missionaries' garden. The four tenements were auctioned after Szmidt's default, and one was bought by the foreign minister Eustachy Sapieha. The buildings were destroyed in 1944, and a capsule hostel opened at no. 4 in 2018.",
+    "ludzie": [
+      {"kto": "Adolf Szmidt", "rola": "właściciel posesji, na której wytyczono ulicę; nie spłacił kredytu na budowę kamienic", "wiki": null},
+      {"kto": "Eustachy Kajetan Sapieha", "rola": "minister spraw zagranicznych II Rzeczypospolitej; nabył jedną z kamienic na licytacji", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "projektant czterech kamienic przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dowcip w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dowcip_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

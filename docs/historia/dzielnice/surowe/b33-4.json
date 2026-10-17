@@ -1,0 +1,188 @@
+[
+  {
+    "id": "teatr-polonia",
+    "nazwa": "Teatr Polonia (dawne kino Polonia)",
+    "name_en": "Polonia Theatre (former Polonia cinema)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 56",
+    "adres_historyczny": null,
+    "lat": 52.22376,
+    "lon": 21.015886,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Siedziba Teatru Polonia mieści się przy ul. Marszałkowskiej 56 w Marszałkowskiej Dzielnicy Mieszkaniowej; wcześniej mieściło się tu kino Polonia, a przed 1945 rokiem kino Imperial.",
+      "W lutym 2005 roku Fundacja Krystyny Jandy na rzecz Kultury przejęła salę kinową i rozpoczęła jej adaptację na salę teatralną.",
+      "W 2005 roku uruchomiono tzw. małą scenę (Fioletowe pończochy).",
+      "Pierwsza premiera na dużej scenie odbyła się 3 grudnia 2006 roku; był to dramat Trzy siostry Antona Czechowa.",
+      "Teatr rocznie odwiedza ok. 250 tys. widzów.",
+      "W 2010 roku Krystyna Janda otworzyła drugą scenę w dawnym kinie Ochota przy ul. Grójeckiej, Och-Teatr."
+    ],
+    "ciekawostki": [
+      "W miesiącach letnich teatr wystawia darmowe przedstawienia na placu Konstytucji."
+    ],
+    "summary_en": "The Polonia Theatre on Marszałkowska Street 56 in Warsaw was a cinema, the Imperial before 1945 and Polonia later, until the Krystyna Janda Foundation converted the hall into a theatre in 2005–2006. It receives about 250,000 visitors a year.",
+    "ludzie": [
+      {"kto": "Krystyna Janda", "rola": "założycielka Fundacji Krystyny Jandy na rzecz Kultury, dyrektor artystyczny", "wiki": null},
+      {"kto": "Alicja Przerazińska", "rola": "dyrektorka Teatru Polonia i Och-Teatru", "wiki": null}
+    ],
+    "dawne_nazwy": ["kino Polonia", "kino Imperial (przed 1945)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Polonia", "url": "https://pl.wikipedia.org/wiki/Teatr_Polonia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Druga scena, Och-Teatr, znajduje się przy ul. Grójeckiej (dzielnica Ochota), poza tym rekordem."
+  },
+  {
+    "id": "gmach-teatru-polskiego-karasia-2",
+    "nazwa": "Gmach Teatru Polskiego im. Arnolda Szyfmana (ul. Karasia 2)",
+    "name_en": "Teatr Polski building (Arnold Szyfman Theatre), 2 Karasia Street",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karasia 2",
+    "adres_historyczny": null,
+    "lat": 52.2385,
+    "lon": 21.0197,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Polski powstał z inicjatywy Arnolda Szyfmana; w 1909 roku utworzono Towarzystwo Akcyjne Budowy i Eksploatacji Teatrów w Królestwie Polskim, które za zebrane 100 tys. rubli kupiło plac przy ul. Oboźnej.",
+      "Budowę gmachu według projektu Czesława Przybylskiego rozpoczęto w kwietniu 1912 roku; teatr otwarto po dziewięciu miesiącach budowy, 29 stycznia 1913 roku, Irydionem Zygmunta Krasińskiego.",
+      "Był pierwszym nowoczesnym teatrem warszawskim; zainstalowano w nim pierwszą w Polsce scenę obrotową oraz żelazną kurtynę przeciwpożarową.",
+      "Od 6 października 1940 roku teatr nosił nazwę Theater der Stadt Warschau.",
+      "W 1944 roku budynek został nieznacznie uszkodzony, spłonęła jednak biblioteka, zbiory archiwaliów i scenografii.",
+      "Teatr wznowił działalność 17 stycznia 1946 roku spektaklem Lilla Weneda w reżyserii Juliusza Osterwy.",
+      "W 1988 roku przy budynku odsłonięto pomnik Leona Schillera.",
+      "Scena Kameralna została otwarta 7 listopada 2009 roku."
+    ],
+    "ciekawostki": [
+      "Elewacja frontowa stoi od strony ulicy, która początkowo nosiła imię Juliusza Słowackiego, a później Kazimierza Karasia."
+    ],
+    "summary_en": "The Teatr Polski building at Karasia 2 in Warsaw was opened on 29 January 1913 on an initiative of Arnold Szyfman, designed by Czesław Przybylski. It was the first modern theatre in Warsaw, with a rotating stage, and was renamed Theater der Stadt Warschau during the occupation.",
+    "ludzie": [
+      {"kto": "Arnold Szyfman", "rola": "inicjator budowy teatru", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "projektant gmachu", "wiki": null},
+      {"kto": "Juliusz Osterwa", "rola": "reżyser spektaklu wznawiającego teatr w 1946", "wiki": null},
+      {"kto": "Kazimierz Dejmek", "rola": "dyrektor od 1981 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Theater der Stadt Warschau (1940)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Polski im. Arnolda Szyfmana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Polski_im._Arnolda_Szyfmana_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urwany w opisie lat 2010–2016; fakty zebrano z części dostępnej."
+  },
+  {
+    "id": "teatr-rozrywki-powisle",
+    "nazwa": "Teatr Rozrywki na Powiślu (hala widowiskowa, cyrk na Powiślu)",
+    "name_en": "Teatr Rozrywki (Powiśle circus hall)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kruczkowskiego 6 (budynek wzniesiony na miejscu)",
+    "adres_historyczny": "ul. Kruczkowskiego 1",
+    "lat": 52.232388888,
+    "lon": 21.031416666,
+    "lokalizacja": "dokladna",
+    "okres": "1965–2002",
+    "istnieje": false,
+    "fakty": [
+      "Hala widowiskowa stała w Centralnym Parku Kultury, po wschodniej stronie ul. Leona Kruczkowskiego, między biurami gazowni przy ul. Ludnej a aleją 3 Maja.",
+      "Budowę prowadzono w latach 1965–1969, a otwarcia dokonano w czerwcu 1970 roku.",
+      "Hala funkcjonowała około roku i została zamknięta z powodów bezpieczeństwa: użyto w niej materiałów łatwopalnych, brakowało wyjść ewakuacyjnych i klimatyzacji.",
+      "W 1995 roku Ministerstwo Kultury sprzedało prawo wieczystej dzierżawy obiektu i 1,5-hektarowego terenu spółce Logoland.",
+      "Budynek wyburzono w 2002 roku; w 2006 roku wzniesiono na jego miejscu cztery sześciopiętrowe budynki mieszkalne „Apartamenty Patria”.",
+      "W czasie eliminacji do 8. Międzynarodowego Konkursu Chopinowskiego (6–25 października 1970) pianiści zagrali tu 20 koncertów.",
+      "Oficjalnym otwarciem hali był spektakl „Romeo i Julia” Baletu XX wieku Maurice'a Béjarta."
+    ],
+    "ciekawostki": [
+      "Wewnątrz budynku nagrano scenę w filmie „Miś” Stanisława Bareia, w której pracownik kotłowni mówi przez telefon: „Pani kierowniczko, ja palę przez cały czas, na okrągło!”.",
+      "Projekt bułgarskiego architekta Erosława Stankowa przewidywał, że hala może służyć jako cyrk, varieté, kino panoramiczne, hala sportowa, operetka, lodowisko lub basen."
+    ],
+    "summary_en": "The Teatr Rozrywki circus hall stood in the Central Park of Culture on Powiśle, Warsaw, from 1970. It was closed for safety reasons after about a year and demolished in 2002; housing blocks were built on the site in 2006.",
+    "ludzie": [
+      {"kto": "Erosław Stankow", "rola": "architekt hali (bułgarski)", "wiki": null},
+      {"kto": "Tadeusz Sutt", "rola": "dyrektor instytucji Teatr Rozrywki", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Kruczkowskiego 1 (adres z Atlasu architektury Warszawy z 1977)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Rozrywki (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Teatr_Rozrywki_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu. Adres z artykułu: ul. Kruczkowskiego 1 wg Atlasu z 1977 r.; budynek postawiony na jego miejscu ma adres ul. Kruczkowskiego 6."
+  },
+  {
+    "id": "teatr-sabat-foksal-16",
+    "nazwa": "Teatr Sabat (ul. Foksal 16)",
+    "name_en": "Sabat Revue Theatre (16 Foksal Street)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Foksal 16",
+    "adres_historyczny": null,
+    "lat": 52.233879,
+    "lon": 21.02124,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Sabat powstał w 2001 roku w dawnych wnętrzach Teatru Kameralnego przy ul. Foksal 16.",
+      "Wnętrze teatru zaprojektowali Marek Lewandowski i Marcin Stajewski.",
+      "Wnętrza nominowano do nagrody „Modernizacja 2001”.",
+      "Teatr otrzymał nagrodę „Warsaw Destination Alliance” za promocję Warszawy w świecie."
+    ],
+    "ciekawostki": [
+      "Teatr Sabat jest jedynym w Polsce teatrem rewiowym i działa w Warszawie."
+    ],
+    "summary_en": "Teatr Sabat is a revue theatre at Foksal 16 in Warsaw, opened in 2001 in the former interiors of the Teatr Kameralny. It is the only revue theatre in Poland, founded and owned by dancer and choreographer Małgorzata Potocka.",
+    "ludzie": [
+      {"kto": "Małgorzata Potocka", "rola": "twórczyni i właścicielka teatru, tancerka i choreografka", "wiki": null},
+      {"kto": "Marek Lewandowski", "rola": "współprojektant wnętrza", "wiki": null},
+      {"kto": "Marcin Stajewski", "rola": "współprojektant wnętrza", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Kameralny (wnętrza przed 2001)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Sabat", "url": "https://pl.wikipedia.org/wiki/Teatr_Sabat"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł zawiera mało informacji o historii budynku; rekord dotyczy głównie wnętrza teatru."
+  },
+  {
+    "id": "syrena-litewska-3",
+    "nazwa": "Budynek dawnej ujeżdżalni przy ul. Litewskiej 3 (Teatr Syrena)",
+    "name_en": "Former riding hall at 3 Litewska Street (Syrena Theatre)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Litewska 3",
+    "adres_historyczny": null,
+    "lat": 52.216523,
+    "lon": 21.022148,
+    "lokalizacja": "dokladna",
+    "okres": "1948–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Syrena zadebiutował 5 lipca 1945 roku sztuką Inne czasy; został założony w Łodzi przez artystów przedwojennego warszawskiego kabaretu z Jerzym Jurandotem na czele.",
+      "Od 1945 roku teatr gościnnie występował w Warszawie, korzystając z różnych sal po obu stronach Wisły.",
+      "11 grudnia 1948 roku Syrena zainaugurowała działalność w stałej siedzibie w Warszawie, w budynku dawnej ujeżdżalni przy ul. Litewskiej 3.",
+      "Pierwszą premierą w nowym miejscu były Nowe prorządki.",
+      "W 1950 roku teatr został upaństwowiony."
+    ],
+    "ciekawostki": [
+      "Na deskach Syreny występowali m.in. Stan Borys, Jerzy Połomski, Irena Santor, Izabela Trojanowska i Violetta Villas."
+    ],
+    "summary_en": "Syrena is a musical theatre at Litewska Street 3 in Warsaw. It was founded in Łódź in 1945 by former pre-war cabaret artists led by Jerzy Jurandot, and in December 1948 it opened in its permanent Warsaw home, a former riding hall.",
+    "ludzie": [
+      {"kto": "Jerzy Jurandot", "rola": "współzałożyciel teatru, czołowa postać przedwojennego kabaretu", "wiki": null},
+      {"kto": "Wiktor Osiecki", "rola": "kierownik muzyczny teatru 1958–1971", "wiki": null},
+      {"kto": "Barbara Borys-Damięcka", "rola": "dyrektorka teatru 1997–2008", "wiki": null},
+      {"kto": "Monika Walecka", "rola": "dyrektorka teatru od 2020", "wiki": null}
+    ],
+    "dawne_nazwy": ["dawna ujeżdżalnia przy ul. Litewskiej 3"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Syrena", "url": "https://pl.wikipedia.org/wiki/Teatr_Syrena"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie opisuje historii budynku przed przejęciem przez teatr; wymieniono tylko wybranych dyrektorów z listy."
+  }
+]

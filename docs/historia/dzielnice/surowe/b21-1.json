@@ -1,0 +1,295 @@
+[
+  {
+    "id": "hotel-polski",
+    "nazwa": "Hotel Polski",
+    "name_en": "Hotel Polski",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Długa 29",
+    "lat": 52.24666667,
+    "lon": 21.00472222,
+    "lokalizacja": "dokladna",
+    "okres": "1808–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel Polski działał w latach 1808–1944 w pałacu Witosławskiego przy ulicy Długiej 29.",
+      "Hotel został otwarty w 1808 roku.",
+      "Wiosną 1943 roku w budynku utworzono ośrodek internowania dla Żydów posiadających paszporty państw południowoamerykańskich.",
+      "Likwidacja ośrodka przy ul. Długiej nastąpiła 13 lipca 1943 r.; pozostających w hotelu 300 osób bez dokumentów zabrano na Pawiak i dwa dni później rozstrzelano.",
+      "Szacuje się, że przez Hotel Polski przeszło ok. 2500 osób; około 1900 osób wyjechało do obozów w Vittel i Bergen-Belsen.",
+      "24 sierpnia 1944 roku, w czasie powstania warszawskiego, zorganizowano tam silny punkt obrony nazywany „Redutą Matki Boskiej”.",
+      "Hotel został zniszczony w 1944 roku. Po odbudowie, po 1945 roku, budynek stał się siedzibą Zarządu Głównego Związku Zawodowego Metalowców.",
+      "1 listopada 1943 r. w „Gospodzie Warszawskiej” przy ul. Nowogrodzkiej 28 żołnierze kontrwywiadu Okręgu Warszawskiego AK zlikwidowali żydowskiego agenta Gestapo, Lolka Skosowskiego."
+    ],
+    "ciekawostki": [
+      "Na Długiej przebywali m.in. Menachem Kirszenbaum, Jehoszua Perle i Icchak Kacenelson."
+    ],
+    "summary_en": "Hotel Polski operated in Warsaw from 1808 until 1944 in the Witosławski palace at Długa 29. During the German occupation it housed an internment centre for Jews holding South American passports, and it was destroyed during the 1944 Warsaw Uprising. After the war the rebuilt building housed the head office of a trade union.",
+    "ludzie": [
+      {"kto": "Lolek Skosowski", "rola": "żydowski kolaborant, agent Gestapo; zlikwidowany 1 listopada 1943 r.", "wiki": null},
+      {"kto": "Wiera Gran", "rola": "piosenkarka, która pomagała w sprzedaży dokumentów; na nią wydano wyrok śmierci, którego nie wykonano", "wiki": null},
+      {"kto": "Menachem Kirszenbaum", "rola": "działacz syjonistyczny, przebywał w hotelu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Polski (Długa 29)"],
+    "zrodla": [{"tytul": "Wikipedia: Hotel Polski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Polski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres dzisiejszy nieustalony w artykule; w paczce podano tylko adres historyczny."
+  },
+  {
+    "id": "hotel-rzymski",
+    "nazwa": "Hotel Rzymski",
+    "name_en": "Hotel Rzymski",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Focha 1 (wcześniej ul. Nowosenatorska 1), róg ul. Trębackiej",
+    "lat": 52.243111,
+    "lon": 21.012667,
+    "lokalizacja": "dokladna",
+    "okres": "poł. XVIII w.–1939",
+    "istnieje": false,
+    "fakty": [
+      "Budynek powstał prawdopodobnie w połowie XVIII w. przy ul. Trębackiej jako pałac dla Antoniego Ostrowskiego.",
+      "W 1772 roku właścicielem budynku został August Sułkowski, który przekształcił go w zajazd Nowa Rydzyna.",
+      "W 1832 roku nieruchomość kupił Paweł Jaworski; po przebudowie i dobudowaniu nowego budynku zaprojektowanego przez Alfonsa Kropiwnickiego ok. 1840 roku uruchomił tam hotel, nazwany Hotelem Rzymskim.",
+      "W 1879 roku hotel kupił Aleksander Bocquet.",
+      "W latach 1921−1923 hotel stał się pierwszą siedzibą Poselstwa ZSRR w Polsce.",
+      "W 1938 roku hotel oferował gościom 80 pokoi. Został spalony przez Niemców w 1939 roku w czasie obrony miasta.",
+      "Budynek nie został odbudowany po 1945 roku; w jego miejscu znajduje się tylna elewacja rozbudowanego po II wojnie światowej Teatru Wielkiego."
+    ],
+    "ciekawostki": [
+      "W 1953 roku ulicę Focha przemianowano po raz kolejny, na ulicę Moliera."
+    ],
+    "summary_en": "Hotel Rzymski was a first-class hotel at the corner of Focha and Trębacka streets, opened around 1840 in a building that had earlier been a coaching inn. It was burned by the Germans in 1939 and was not rebuilt; its site is now occupied by the rear facade of the Teatr Wielki.",
+    "ludzie": [
+      {"kto": "Antoni Ostrowski", "rola": "pierwszy właściciel pałacu przy ul. Trębackiej", "wiki": null},
+      {"kto": "August Sułkowski", "rola": "właściciel od 1772 roku, przekształcił budynek w zajazd", "wiki": null},
+      {"kto": "Paweł Jaworski", "rola": "kupił nieruchomość w 1832 roku i uruchomił hotel", "wiki": null},
+      {"kto": "Alfons Kropiwnicki", "rola": "projektant nowego budynku dobudowanego ok. 1840 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Nowosenatorska 1", "ul. Focha 1", "ul. Moliera"],
+    "zrodla": [{"tytul": "Wikipedia: Hotel Rzymski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Rzymski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ciekawostka o zmianie nazwy ulicy na Moliera zgodnie z przypisem artykułu."
+  },
+  {
+    "id": "hotel-savoy",
+    "nazwa": "Hotel Savoy",
+    "name_en": "Savoy Hotel",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 58",
+    "adres_historyczny": "ul. Nowy Świat 58",
+    "lat": 52.2355,
+    "lon": 21.01861111,
+    "lokalizacja": "dokladna",
+    "okres": "1905–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hotel Savoy wybudowano w latach 1904–1905 przy Nowym Świecie 58 z myślą o przeznaczeniu hotelowym; inwestorem był Stanisław Fok.",
+      "Hotel posiadał 56 pokoi; wnętrze zdobiły młodopolskie freski Emila Lindemana i witraże Franciszka Białkowskiego.",
+      "Pierwszy właściciel niemal zbankrutował; w 1907 budynek trafił na licytację i sprzedano go za 165 tysięcy ówczesnych rubli. Nowymi nabywcami byli Stanisław i Józef Karszowie.",
+      "W początkach lat 20. XX wieku w restauracji hotelu ajent Szymański urządził pierwszy w Warszawie dansing.",
+      "W latach 30. dansing zamieniono na nocny klub Cordial z muzyką na żywo.",
+      "W pierwszych dniach niemieckiej okupacji hotelowy sejf zarekwirował Lothar Beutel, szef Einsatzgruppe IV.",
+      "W latach 50. XX wieku budynek obniżono z pięciu kondygnacji do dwóch (oficyny do trzech) i skuto secesyjną fasadę."
+    ],
+    "ciekawostki": [
+      "Lokal był pierwszym w Warszawie, do którego mogły wstępować także samotne kobiety, bez ryzyka, że zostaną uznane za prostytutki.",
+      "Savoy był jedynym w pełni secesyjnym budynkiem przy Nowym Świecie."
+    ],
+    "summary_en": "Hotel Savoy, built in 1904–1905 at Nowy Świat 58, was one of the largest and most ornate Art Nouveau hotels of prewar Warsaw. Its interior had Młoda Polska frescoes by Emil Lindeman. After the war it was lowered to two storeys and given a socialist-realist facade; the building now houses the Wańkowicz School of Journalism.",
+    "ludzie": [
+      {"kto": "Stanisław Fok", "rola": "inwestor i pierwszy właściciel hotelu", "wiki": null},
+      {"kto": "Bronisław Colonna-Czosnowski", "rola": "architekt, absolwent Politechniki Drezdeńskiej", "wiki": null},
+      {"kto": "Emil Lindeman", "rola": "malarz, autor młodopolskich ornamentów i fresków", "wiki": null},
+      {"kto": "Franciszek Białkowski", "rola": "autor witraży we wnętrzu", "wiki": null},
+      {"kto": "Lothar Beutel", "rola": "szef Einsatzgruppe IV, zarekwirował hotelowy sejf", "wiki": null}
+    ],
+    "dawne_nazwy": ["Savoy Hotel"],
+    "zrodla": [{"tytul": "Wikipedia: Hotel Savoy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Savoy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "hotel-victoria",
+    "nazwa": "Hotel Victoria",
+    "name_en": "Hotel Victoria",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Jasna 26 (do 1913 nr 8), obok pl. Zielonego",
+    "lat": 52.236569,
+    "lon": 21.010483,
+    "lokalizacja": "dokladna",
+    "okres": "1868–1944",
+    "istnieje": false,
+    "fakty": [
+      "Hotel Victoria prowadził działalność noclegową w latach 1868–1944 przy ul. Jasnej 26.",
+      "Budynek z mansardowym dachem wybudował w 1852 roku dla siebie architekt Piotr Frydrych; w 1866 przerobiła go na obiekt hotelowy spółka Mader&Jacobi.",
+      "W 1868 hotel miał 62 pokoje, centralne ogrzewanie oraz ogród letni i zimowy.",
+      "W latach 1939–1940 w obiekcie było 75 pokoi.",
+      "W latach 1920–1922 w budynku mieścił się konsulat łotewski, następnie poselstwo węgierskie (1922) i ukraińskie (1922–1923).",
+      "Od 1 sierpnia do 4 września 1944 w hotelu kwaterował sztab komendanta Okręgu Warszawskiego AK, płk. Antoniego Chruściela, ps. „Monter”, do czasu zbombardowania budynku przez Luftwaffe.",
+      "Po wojnie ruiny budynku zostały rozebrane."
+    ],
+    "ciekawostki": [
+      "Łazienki hotelu zdobiły olejne malowidła scen kąpieli dzieci będących personifikacjami pór roku, pędzla Wojciecha Gersona (1893)."
+    ],
+    "summary_en": "Hotel Victoria stood at Jasna 26, next to Plac Zielony, and operated from 1868 to 1944. It was built in 1852 by architect Piotr Frydrych and converted to a hotel in 1866. It was bombed by the Luftwaffe in September 1944 after serving as headquarters of the Home Army Warsaw District command, and its ruins were later demolished.",
+    "ludzie": [
+      {"kto": "Piotr Frydrych", "rola": "architekt, wybudował budynek w 1852 roku", "wiki": null},
+      {"kto": "Mader&Jacobi", "rola": "spółka, która przerobiła budynek na hotel w 1866 roku", "wiki": null},
+      {"kto": "Antoni Chruściel „Monter”", "rola": "komendant Okręgu Warszawskiego AK, kwaterował w hotelu w 1944 roku", "wiki": null},
+      {"kto": "Wojciech Gerson", "rola": "malarz, autor malowideł w łazienkach hotelu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wiktorja", "ul. Jasna 8 (do 1913)"],
+    "zrodla": [{"tytul": "Wikipedia: Hotel Victoria w Warszawie (1868–1944)", "url": "https://pl.wikipedia.org/wiki/Hotel_Victoria_w_Warszawie_%281868%E2%80%931944%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "hotel-warszawa-prudential",
+    "nazwa": "Hotel Warszawa (dawny Prudential)",
+    "name_en": "Hotel Warszawa (former Prudential building)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Powstańców Warszawy",
+    "adres_historyczny": "pl. Napoleona 9",
+    "lat": 52.235585,
+    "lon": 21.012654,
+    "lokalizacja": "dokladna",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wybudowano w latach 1931–1933 przy rogu pl. Napoleona 9 i ul. Świętokrzyskiej w stylu art déco jako siedzibę polskiej spółki brytyjskiego Towarzystwa Ubezpieczeń „Prudential”.",
+      "Budynek powstał w miejscu, które do 1901 r. zajmował Szpital Dzieciątka Jezus. Miał 66 metrów wysokości (16 pięter).",
+      "W 1937 na dachu umieszczono antenę telewizyjną, a 26 sierpnia 1939 wyemitowano stamtąd pierwszą próbną transmisję z udziałem Mieczysława Fogga.",
+      "Podczas powstania warszawskiego budynek został ostrzelany przez ok. 1000 pocisków; 28 sierpnia 1944 trafił go pocisk o masie 2 ton z moździerza Karl-Gerät (Ziu), co odchyliło go od pionu.",
+      "W latach 1950–1953 budynek odbudowano w socrealistycznym kostiumie (m.in. z kariatydami).",
+      "W 1954 otwarto w nim hotel Warszawa; hotel zakończył działalność w 2002 roku.",
+      "W listopadzie 2018 w budynku otwarto pięciogwiazdkowy hotel Warszawa."
+    ],
+    "ciekawostki": [
+      "Po wojnie na szczycie wypalonego wieżowca przez kilka lat gniazdował sokół wędrowny.",
+      "Sześć fotografii trafienia budynku wykonał z dachu kamienicy przy ul. Kopernika 28 Sylwester Braun ps. „Kris”."
+    ],
+    "summary_en": "The Prudential tower, built in 1931–1933 at Plac Napoleona 9 in art deco style, is a 16-storey, 66 m office and apartment block. It was shelled and hit by a 600 mm mortar shell during the 1944 Warsaw Uprising, but its steel frame survived. Rebuilt in 1950–1953 in socialist-realist style, it has housed the Hotel Warszawa since 1954, reopening as a five-star hotel in 2018.",
+    "ludzie": [
+      {"kto": "Marcin Weinfeld", "rola": "architekt budynku (1931–1933) i nowego projektu po wojnie", "wiki": null},
+      {"kto": "Stefan Bryła i Wenczesław Poniż", "rola": "zaprojektowali część biurową", "wiki": null},
+      {"kto": "Mieczysław Fogg", "rola": "uczestnik pierwszej próbnej transmisji telewizyjnej z dachu (1939)", "wiki": null},
+      {"kto": "Sylwester Braun „Kris”", "rola": "autor ikonicznych zdjęć trafionego budynku w czasie powstania", "wiki": null}
+    ],
+    "dawne_nazwy": ["Prudential House", "pl. Napoleona"],
+    "zrodla": [{"tytul": "Wikipedia: Hotel Warszawa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Warszawa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje adres przed zmianą nazwy placu; adres dzisiejszy to pl. Powstańców Warszawy (bez numeru w paczce)."
+  },
+  {
+    "id": "hotel-wiedenski",
+    "nazwa": "Hotel Wiedeński",
+    "name_en": "Hotel Wiedeński (Vienna Hotel)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska 102, róg ul. Widok",
+    "lat": 52.2305,
+    "lon": 21.0124,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1845–1944",
+    "istnieje": false,
+    "fakty": [
+      "Hotel Wiedeński, klasycystyczny hotel przy ul. Marszałkowskiej 102, wybudował ok. 1845 roku Gustaw Wiśniewski.",
+      "Początkowo hotel nosił nazwę Hotel Warszawsko-Wiedeński, nawiązującą do pobliskiego Dworca Wiedeńskiego Kolei Warszawsko-Wiedeńskiej.",
+      "Na kilka miesięcy przed wybuchem wojny w 1939 hotel stał się siedzibą centrali handlowej „Polskie Źródła Zakupów”.",
+      "Budynek uległ całkowitemu zniszczeniu w czasie powstania warszawskiego w 1944 roku.",
+      "W miejscu hotelu wybudowano rotundę PKO BP."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Hotel Wiedeński was a classicist hotel at Marszałkowska 102, built around 1845 and named after the nearby Vienna railway station. It was completely destroyed during the 1944 Warsaw Uprising, and a PKO BP rotunda now stands on the site.",
+    "ludzie": [
+      {"kto": "Gustaw Wiśniewski", "rola": "wybudował hotel ok. 1845 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hotel Warszawsko-Wiedeński"],
+    "zrodla": [{"tytul": "Wikipedia: Hotel Wiedeński w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Wiede%C5%84ski_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki; współrzędne z nagłówka. Ciekawostek brak w źródle."
+  },
+  {
+    "id": "hoza-69",
+    "nazwa": "Hoża 69 (gmach fizyki UW)",
+    "name_en": "Hoża 69 (University of Warsaw physics building)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Hoża 69",
+    "adres_historyczny": "ul. Hoża 69",
+    "lat": 52.223804,
+    "lon": 21.006289,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę budynku rozpoczęto w 1913 roku według projektu Piotra Feddersa; kierował nią Bronisław Colonna-Czosnowski w ramach przedsiębiorstwa „Czosnowscy i S-ka”. Budowę przerwała I wojna światowa.",
+      "Budowę wznowiono w 1919 roku, a za datę otwarcia uznaje się 30 stycznia 1921.",
+      "W 1932 roku dobudowano symetrycznie wschodnie skrzydło.",
+      "W 1939 rozpoczęto budowę cyklotronu, przerwaną wybuchem II wojny światowej.",
+      "W 1948 roku dobudowano Halę Atomową; w 1950 roku zainstalowano w niej milionwoltowy generator kaskadowy z rurą akceleracyjną.",
+      "W 1991 w kompleksie Wydziału Fizyki przy ul. Hożej 69 i 74 powstawała pierwsza polska sieć komputerowa mająca połączenie z internetem.",
+      "W 2011 Europejskie Towarzystwo Fizyczne nadało Hożej 69 tytuł historycznego miejsca fizyki; jako pierwsze miejsce otrzymało ten tytuł."
+    ],
+    "ciekawostki": [
+      "W 1939 roku w budynku umieszczono komorę Wilsona.",
+      "Ze względu na przywiązanie do ośrodka przy Hożej jedną z ulic wewnętrznych Kampusu Ochota nieformalnie nazwano Nową Hożą."
+    ],
+    "summary_en": "Hoża 69 is a neoclassical building of the University of Warsaw, begun in 1913 and opened in 1921 as the physics centre of the university. Its Atomic Hall housed a million-volt cascade generator from 1950, and in 2011 the European Physical Society named it the first European Historic Site of Physics.",
+    "ludzie": [
+      {"kto": "Piotr Fedders", "rola": "autor projektu budynku", "wiki": null},
+      {"kto": "Bronisław Colonna-Czosnowski", "rola": "kierował budową w 1913 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Hoża 69", "url": "https://pl.wikipedia.org/wiki/Ho%C5%BCa_69"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Budynek sąsiaduje z kampusem Politechniki Warszawskiej; artykuł wymienia też Wydział Fizyki i Instytut Anglistyki w różnych okresach."
+  },
+  {
+    "id": "ii-lo-batorego-myslwiecka-6",
+    "nazwa": "Gmach II Liceum im. Stefana Batorego (ul. Myśliwiecka 6)",
+    "name_en": "II Stefan Batory Secondary School building (Myśliwiecka 6)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Myśliwiecka 6",
+    "adres_historyczny": "ul. Myśliwiecka 6",
+    "lat": 52.222859,
+    "lon": 21.034965,
+    "lokalizacja": "dokladna",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1922 roku rozpoczęto budowę gmachu przy ul. Myśliwieckiej 6; projektantem był Tadeusz Tołwiński.",
+      "Czworokątny gmach z dziedzińcem powstał w inspiracji renesansowym palazzo in fortezza.",
+      "15 września 1924 odbyła się inauguracja roku szkolnego w nowym gmachu.",
+      "W podziemiach budynku znajdował się basen, przez wiele lat jedyna w Polsce wewnętrzna pływalnia szkoły średniej.",
+      "We wrześniu 1939 w gmachu umieszczono rannych i chorych, tworząc tymczasową filię pobliskiego Szpitala Ujazdowskiego.",
+      "W listopadzie 1939 roku w budynku otwarto niemiecką szkołę powszechną Deutsche Schule, pierwszą szkołę niemiecką w okupowanej Warszawie.",
+      "1 sierpnia 1944 powstańcy zaatakowali budynek od strony ul. Rozbrat, jednak zmasowany ogień niemieckiej załogi zmusił ich do wycofania się na ul. Przemysłową.",
+      "27 września 1933 na dziedzińcu odsłonięto pomnik Stefana Batorego dłuta Tadeusza Szadeberga, zniszczony w czasie wojny; w 1991 wzniesiono nowy."
+    ],
+    "ciekawostki": [
+      "Unikatowe było obserwatorium astronomiczne umieszczone w wieżyczce w północnym skrzydle budynku.",
+      "Gubernator Hans Frank osobiście otworzył niemiecką szkołę powszechną w budynku."
+    ],
+    "summary_en": "The main building of the II Stefan Batory Secondary School at Myśliwiecka 6 was designed by Tadeusz Tołwiński, begun in 1922 and opened in 1924 in a Renaissance-inspired courtyard plan. It was used by a German school during the occupation and was attacked by insurgents on 1 August 1944.",
+    "ludzie": [
+      {"kto": "Tadeusz Tołwiński", "rola": "projektant gmachu", "wiki": null},
+      {"kto": "Tadeusz Szadeberg", "rola": "autor pomnika Stefana Batorego (odsłoniętego w 1933)", "wiki": null},
+      {"kto": "Hans Frank", "rola": "gubernator, osobiście otworzył niemiecką szkołę w budynku", "wiki": null},
+      {"kto": "Zdzisław Rudzki", "rola": "pierwszy dyrektor szkoły", "wiki": null}
+    ],
+    "dawne_nazwy": ["Królewsko-Polskie Gimnazjum im. Stefana Batorego", "Państwowe Gimnazjum im. Stefana Batorego"],
+    "zrodla": [{"tytul": "Wikipedia: II Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Stefana Batorego w Warszawie", "url": "https://pl.wikipedia.org/wiki/II_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_z_Oddzia%C5%82ami_Dwuj%C4%99zycznymi_im._Stefana_Batorego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy szkoły; rekord ograniczony do historii gmachu przy Myśliwieckiej 6 (szkolne fakty pominięte)."
+  }
+]

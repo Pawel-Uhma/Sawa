@@ -1,0 +1,121 @@
+[
+  {
+    "id": "ulica-sosnowiecka",
+    "nazwa": "Ulica Sosnowiecka",
+    "name_en": "Sosnowiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Sosnowiecka",
+    "adres_historyczny": null,
+    "lat": 52.2629382,
+    "lon": 20.9159937,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 80. XX wieku; nazwę nadano 24 marca 1988 roku.",
+      "Nazwa odnosi się do miasta Sosnowiec w Zagłębiu Dąbrowskim.",
+      "Jest jedną z ulic rejonu Bemowo-Lotnisko; krzyżuje się z ul. Piastów Śląskich, ul. Rodła i ul. Korfantego.",
+      "Znajdują się przy niej osiedla domów jednorodzinnych i bloki mieszkaniowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in the Bemowo-Lotnisko estate, built in the 1980s and named in 1988 after the city of Sosnowiec in the Dąbrowa Basin.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Sosnowiecka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Sosnowiecka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-telefoniczna",
+    "nazwa": "Ulica Telefoniczna",
+    "name_en": "Telefoniczna Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Telefoniczna",
+    "adres_historyczny": null,
+    "lat": 52.2651832,
+    "lon": 20.9012491,
+    "lokalizacja": "przyblizona",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała wraz z osiedlem Boernerowo, budowanym w latach 1932-35; ulicę wyznaczono w 1932 roku.",
+      "Osiedle budowano dla pracowników łączności i telegrafów Ministerstwa Poczt i Telegrafów, w pobliżu Transatlantyckiej Centrali Radiotelegraficznej; nazwa nawiązuje też do telefonu.",
+      "Zabudowę tworzą częściowo drewniane domy z 1932 roku; obiekty pod numerami 8, 10, 14, 18, 20 i 22 są wpisane na listę zabytków Stołecznego Konserwatora Zabytków.",
+      "Do lipca 2026 roku ulica miała jedną nieutwardzoną jezdnię; na przełomie 2025 i 2026 roku wykonano remont nawierzchni, odwodnienia i oświetlenia oraz założono trawniki."
+    ],
+    "ciekawostki": [
+      "Przy ul. Telefonicznej 18, w domu generała Michała Tokarzewskiego-Karaszewicza, od 1940 roku działała tajna radiostacja."
+    ],
+    "summary_en": "A street of the Boernerowo estate in Bemowo, laid out in 1932 for telecommunications and telegraph workers of the Ministry of Posts and Telegraphs. Several of its wooden houses from 1932 are listed monuments.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Telefoniczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Telefoniczna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "telefoniczna-18-tajna-radiostacja",
+    "nazwa": "Tajna radiostacja przy Telefonicznej 18",
+    "name_en": "Secret radio station at Telefoniczna 18",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "Telefoniczna 18",
+    "adres_historyczny": null,
+    "lat": 52.2651832,
+    "lon": 20.9012491,
+    "lokalizacja": "przyblizona",
+    "okres": "1940–1978",
+    "istnieje": true,
+    "fakty": [
+      "Od 1940 roku w domu generała Michała Tokarzewskiego-Karaszewicza przy ul. Telefonicznej 18 działała tajna radiostacja.",
+      "Nie została odnaleziona przez Niemców w czasie licznych rewizji; odkryto ją dopiero podczas remontu domu w 1978 roku.",
+      "Znajdowała się w dużym pomieszczeniu ukrytym pod piwnicą; miała własną elektryczną wentylację i tunel ewakuacyjny.",
+      "W piwnicy, w celu zmylenia psa tropiącego, trzymano żywą kozę, co było wówczas nielegalne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A secret radio station hidden under the cellar of the house of General Michał Tokarzewski-Karaszewicz at Telefoniczna 18 in Boernerowo, in operation from 1940. The Germans never found it during repeated searches; it was discovered during renovation in 1978.",
+    "ludzie": [
+      {"kto": "Michał Tokarzewski-Karaszewicz", "rola": "generał, właściciel domu przy Telefonicznej 18", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Telefoniczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Telefoniczna"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Rekord wyprowadzony z artykułu o ulicy Telefonicznej; współrzędne to środek ulicy. Artykuł nie mówi, czy radiostacja zachowała się, ani czy adres jest aktualny."
+  },
+  {
+    "id": "ulica-telewizyjna",
+    "nazwa": "Ulica Telewizyjna",
+    "name_en": "Telewizyjna Street",
+    "typ": "ulica",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Telewizyjna",
+    "adres_historyczny": "ul. Łączności",
+    "lat": 52.2604662,
+    "lon": 20.9017294,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała pomiędzy lipcem a listopadem 1933 roku jako jedna z ulic Osiedla Łączności Babice; nadano jej wówczas nazwę Ulica Łączności, odnoszącą się do Transatlantyckiej Centrali Radiotelegraficznej.",
+      "Obecną nazwę nadano Uchwałą nr 9 Rady Narodowej Miasta Stołecznego Warszawy z 12 kwietnia 1954 roku; odnosi się ona do telewizji.",
+      "Krzyżuje się z ul. Kleeberga, Westerplatte, Thomméego, Ebro oraz Dostępną."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street of the Boernerowo estate in Bemowo, built in 1933 as Ulica Łączności after the Transatlantic Radiotelegraph Centre. It was renamed Telewizyjna in 1954.",
+    "ludzie": [],
+    "dawne_nazwy": ["Ulica Łączności"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Telewizyjna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Telewizyjna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  }
+]

@@ -18,6 +18,16 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /** dane.um.warszawa.pl or a proxy in front of it (Railway's IPs are blocked by the city, #63). */
+  WAW_API_BASE_URL: z
+    .string()
+    .optional()
+    .transform((v) => v || "https://dane.um.warszawa.pl"),
+  /** Sent as X-Proxy-Key when WAW_API_BASE_URL is the proxy. */
+  WAW_PROXY_KEY: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
   // Empty values (copied from .env.example) mean "not set": the API then serves fake places.
   SUPABASE_URL: z
     .string()
@@ -44,6 +54,11 @@ const EnvSchema = z.object({
     .transform((v) => v === "1"),
   /** ElevenLabs API key (Text to Speech permission); without it POST /v1/speech answers 502. */
   ELEVENLABS_KEY: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
+  /** Google Places API (New) key for finding a ride destination by name; without it GET /v1/destinations answers 502. */
+  GOOGLE_PLACES_API_KEY: z
     .string()
     .optional()
     .transform((v) => v || undefined),

@@ -1,0 +1,168 @@
+[
+  {
+    "id": "zaklad-wychowawczy-nasz-dom-zjednoczenia-34",
+    "nazwa": "Budynek zakładu wychowawczego „Nasz Dom” (al. Zjednoczenia 34)",
+    "name_en": "Building of the „Nasz Dom” childcare home (al. Zjednoczenia 34)",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "al. Zjednoczenia 34",
+    "adres_historyczny": null,
+    "lat": 52.279556, "lon": 20.949944,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zakład wychowawczy „Nasz Dom” został utworzony 15 listopada 1919 roku w Pruszkowie jako placówka dla sierot po robotnikach i działaczach poległych w I wojnie światowej.",
+      "Towarzystwo „Nasz Dom” zgromadziło fundusze na zakup działki na Bielanach i budowę siedziby przy al. Zjednoczenia 34; budynek wzniesiono w latach 1927–1929 według projektu Zygmunta Tarasina.",
+      "Współprojektantem budynku był Janusz Korczak; w 1928 roku zakład przeniesiono do nowego budynku.",
+      "W 1934–1935 część gmachu przystosowano dla najbiedniejszych dzieci z osiedla Zdobycz Robotnicza; przedszkole korzystało z niego każdego dnia z 160 dzieci.",
+      "7 września 1944 roku Niemcy nakazali ewakuację wychowanków i personelu do obozu w Pruszkowie; tego dnia zmarła Maryna Falska.",
+      "2 października 1944 roku mieszkańców ewakuowano do wsi Sokolniki koło Jędrzejowa.",
+      "Po wojnie majątek Towarzystwa przekazano w styczniu 1946 roku Robotniczemu Towarzystwu Przyjaciół Dzieci; towarzystwo reaktywowano w 1991 roku."
+    ],
+    "ciekawostki": [
+      "W budynku mieści się dziś Dom Dziecka nr 1 „Nasz Dom” im. Maryny Falskiej, który liczy ok. 50 podopiecznych.",
+      "W latach 1919–2009 „Nasz Dom” wychował 4 tysiące dzieci."
+    ],
+    "summary_en": "The „Nasz Dom” childcare home was founded in 1919 in Pruszków for children of workers killed in World War I. Its Bielany building at al. Zjednoczenia 34 was built in 1927–1929 to a design by Zygmunt Tarasin, with Janusz Korczak as co-designer; the home now operates as Dom Dziecka nr 1 'Nasz Dom'.",
+    "ludzie": [
+      {"kto": "Maryna Falska", "rola": "współorganizatorka zakładu; zmarła 7 września 1944 roku", "wiki": null},
+      {"kto": "Janusz Korczak", "rola": "organizator zakładu, współprojektant budynku", "wiki": null},
+      {"kto": "Maria Podwysocka", "rola": "organizatorka zakładu", "wiki": null},
+      {"kto": "Zygmunt Tarasin", "rola": "projektant budynku (1927–1929)", "wiki": null},
+      {"kto": "Aleksandra Staszewska", "rola": "kierowniczka po śmierci Maryny Falskiej", "wiki": null},
+      {"kto": "Zdzisław Sieradzki", "rola": "kierownik placówki po wojnie", "wiki": null},
+      {"kto": "Tomasz Polkowski", "rola": "przewodniczący reaktywowanego towarzystwa (1991)", "wiki": null},
+      {"kto": "Jolanta Jabłońska", "rola": "obecna dyrektorka Domu Dziecka nr 1", "wiki": null}
+    ],
+    "dawne_nazwy": ["Towarzystwo „Nasz Dom”"],
+    "zrodla": [{"tytul": "Wikipedia: Zakład wychowawczy „Nasz Dom” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zak%C5%82ad_wychowawczy_%E2%80%9ENasz_Dom%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Instytucja opiekuncza, ale rekord opisuje historie budynku przy al. Zjednoczenia 34."
+  },
+  {
+    "id": "zdobycz-robotnicza",
+    "nazwa": "Osiedle Zdobycz Robotnicza",
+    "name_en": "Zdobycz Robotnicza estate",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Przybyszewskiego, ul. Płatnicza, ul. Kleczewska, ul. Lipińska, ul. Schroegera, pl. Konfederacji",
+    "adres_historyczny": null,
+    "lat": 52.281368, "lon": 20.946578,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–1935",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle mieszkaniowe Zdobycz Robotnicza w Bielanach zostało wybudowane w latach 1926–1935 przez spółdzielnię mieszkaniową „Zdobycz Robotnicza”.",
+      "W 1926 roku spółdzielnia zaczęła zabudowywać pola bielańskie, pozostałości po carskim poligonie.",
+      "Domy zaprojektowano w stylu dworkowym; część prac wykonywali sami spółdzielcy, którzy dostawali częściowe wynagrodzenie lub odliczali pracę od czynszu bądź kredytu.",
+      "W 1931 roku Sąd Okręgowy, wskutek bankructwa, postanowił rozwiązać spółdzielnię na wniosek Banku Gospodarstwa Krajowego.",
+      "Budynek przy Efraima Schroegera 72–80 w 1931 roku był w stanie surowym; wykończono go około 1935 roku."
+    ],
+    "ciekawostki": [
+      "Radą Nadzorczą spółdzielni kierował Paweł Romocki, działacz i poseł Polskiego Stronnictwa Chrześcijańskiej Demokracji."
+    ],
+    "summary_en": "Zdobycz Robotnicza is a cooperative housing estate in Bielany, built from 1926 on the former tsarist firing range. The cooperative went bankrupt in 1931 and the estate was finished around 1935.",
+    "ludzie": [
+      {"kto": "Janusz Dzierżawski", "rola": "prezes zarządu spółdzielni, autor projektu domów", "wiki": null},
+      {"kto": "Paweł Romocki", "rola": "przewodniczący Rady Nadzorczej spółdzielni, działacz i poseł PSChD", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Zdobycz Robotnicza", "url": "https://pl.wikipedia.org/wiki/Zdobycz_Robotnicza"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul Stare Bielany podaje lata budowy 1926–1932; ten artykul 1926–1935 (przyjeto 1935 jako data wykonczenia)."
+  },
+  {
+    "id": "zespol-klasztorny-kamedulow-bielany",
+    "nazwa": "Zespół klasztorny kamedułów na Bielanach (ul. Dewajtis 3)",
+    "name_en": "Camaldolese monastery complex on Bielany",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Dewajtis 3",
+    "adres_historyczny": null,
+    "lat": 52.295556, "lon": 20.96,
+    "lokalizacja": "dokladna",
+    "okres": "1669–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół obejmuje kościół pw. Niepokalanego Poczęcia NMP, św. Józefa i św. Ambrożego oraz zabudowania klasztorne.",
+      "Kościół, pierwotnie drewniany, został wzniesiony w latach 1669–1710 dla zakonu kamedułów przybyłych z Bielan krakowskich.",
+      "W kościele znajduje się serce Michała Korybuta Wiśniowieckiego oraz jego matki; przy świątyni jest grób Stanisława Staszica.",
+      "Oprócz kościoła zachowały się refektarz, infirmeria, dom gościnny i 13 eremów kamedulskich.",
+      "30 września 1930 roku zespół wyłączono z gminy Młociny i włączono do Warszawy.",
+      "Zespół wpisano do rejestru zabytków w 1965 roku, a wpis zaktualizowano 10 maja 2008 roku."
+    ],
+    "ciekawostki": [
+      "Figura brata Jerzego, czyli pułkownika Jerzego Michała Wołodyjowskiego z powieści Henryka Sienkiewicza, znajduje się w otworze wieży kościoła.",
+      "Przy kościele znajdują się szopka ze zwierzętami oraz karuzela, dzieła Józefa Wilkonia."
+    ],
+    "summary_en": "The Camaldolese monastery complex at ul. Dewajtis 3, in the Las Bielański forest. The church was built in 1669–1710 and the complex, including 13 hermitages, is a listed monument; it was incorporated into Warsaw in 1930.",
+    "ludzie": [
+      {"kto": "Michał Korybut Wiśniowiecki", "rola": "serce spoczywa w kościele", "wiki": null},
+      {"kto": "Stanisław Staszic", "rola": "grób przy świątyni", "wiki": null},
+      {"kto": "Jan Kazimierz", "rola": "król, który odprawiał rekolekcje w jednym z eremów", "wiki": null},
+      {"kto": "Józef Wilkoń", "rola": "autor szopki i karuzeli przy kościele", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Zespół klasztorny kamedułów na Bielanach", "url": "https://pl.wikipedia.org/wiki/Zesp%C3%B3%C5%82_klasztorny_kamedu%C5%82%C3%B3w_na_Bielanach"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam kosciol co rekord kosciol-bl-detkensa-kamedulow-bielany (parafia); tu rekord dotyczy zespolu klasztornego."
+  },
+  {
+    "id": "zespol-przyrodniczo-krajobrazowy-olszyna",
+    "nazwa": "Zespół przyrodniczo-krajobrazowy Olszyna (park Olszyna)",
+    "name_en": "Olszyna landscape park",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": "między ul. Gąbińską, ul. Romaszewskiego, ul. Władysława Broniewskiego i trasą AK",
+    "adres_historyczny": null,
+    "lat": 52.2694, "lon": 20.9592,
+    "lokalizacja": "przyblizona",
+    "okres": "1994–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół przyrodniczo-krajobrazowy Olszyna, zwyczajowo park Olszyna, ma powierzchnię 2,23 ha i leży na skraju osiedla Słodowiec.",
+      "Zespół został objęty ochroną rozporządzeniem Wojewody Warszawskiego z 18 maja 1994 roku.",
+      "Przylega do niego park osiedlowy Olszyna o powierzchni 7,78 ha, urządzony w latach 1973–1975 w czynie społecznym mieszkańców Bielan.",
+      "Zespół stanowi fragment dawnej doliny Rudawki i ma chronić olsę kępową, której nazwa pochodzi od olchowego lasu w niecce rzeki.",
+      "W 2019 roku przeprowadzono szybką inwentaryzację przyrodniczą (bioblitz); w 2020 roku park odnowiono, a asfaltową alejkę zastąpiono drewnianym, podwieszanym chodnikiem."
+    ],
+    "ciekawostki": [
+      "Występują tu m.in. dwa gatunki kaczek: krakwa i rożeniec."
+    ],
+    "summary_en": "Olszyna is a 2.23 ha landscape park in Bielany on the edge of the Słodowiec estate, protected since 1994. It lies in the former Rudawka valley and was renovated in 2020.",
+    "ludzie": [],
+    "dawne_nazwy": ["Olszyna"],
+    "zrodla": [{"tytul": "Wikipedia: Zespół przyrodniczo-krajobrazowy Olszyna", "url": "https://pl.wikipedia.org/wiki/Zesp%C3%B3%C5%82_przyrodniczo-krajobrazowy_Olszyna"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zajezdnia-tramwajowa-zoliborz",
+    "nazwa": "Zajezdnia tramwajowa „Żoliborz” (R-4)",
+    "name_en": "Żoliborz tram depot (R-4)",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.299386, "lon": 20.929924,
+    "lokalizacja": "przyblizona",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zajezdnia tramwajowa „Żoliborz” (właściwie Zakład Realizacji Przewozów „Żoliborz” – R-4) została otwarta w 1963 roku na Młocinach.",
+      "Zajezdnia zastąpiła tymczasową remizę, która znajdowała się przy ul. Słowackiego.",
+      "W okresie działania zajezdnia dwukrotnie zmieniała nazwę.",
+      "Przez wiele lat w R-4 Żoliborz stacjonowały wagony 13N; w 1995 roku do zajezdni trafiły pierwsze stopiątki, co powodowało wycofywanie starszych wagonów 13N."
+    ],
+    "ciekawostki": [
+      "Przy zajezdni działała hala tokarki podtorowej; tory postojowe wcześniej nie miały zadaszenia."
+    ],
+    "summary_en": "The Żoliborz tram depot (R-4) opened in 1963 in Młociny, replacing a temporary depot on ul. Słowackiego. From 1995 it received the new 'stopiątki' trams, which pushed out the older 13N cars.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zakład Realizacji Przewozów „Żoliborz” – R-4"],
+    "zrodla": [{"tytul": "Wikipedia: Żoliborz (zajezdnia tramwajowa)", "url": "https://pl.wikipedia.org/wiki/%C5%BBoliborz_%28zajezdnia_tramwajowa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykul nie podaje adresu; wspolrzedne z naglowka. Artykul ma krotka tresc - 4 fakty."
+  }
+]

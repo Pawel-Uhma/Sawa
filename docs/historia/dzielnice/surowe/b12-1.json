@@ -1,0 +1,281 @@
+[
+  {
+    "id": "plac-zbawiciela",
+    "nazwa": "Plac Zbawiciela",
+    "name_en": "Zbawiciela Square",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Zbawiciela",
+    "adres_historyczny": null,
+    "lat": 52.2198616, "lon": 21.0181724,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1768–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczny plac wytyczono ok. 1768 jako jeden z placów gwiaździstych Osi Stanisławowskiej.",
+      "Plac nazywano Rotundą od jego okrągłego kształtu; obecną nazwę nadano w 1922, od pobliskiego kościoła Najświętszego Zbawiciela.",
+      "W 1829 przy placu wybudowano karczmę zwaną Czerwoną, należącą do rodziny Garnierów.",
+      "W 1901 rozebrano Czerwoną Karczmę i rozpoczęto budowę kościoła Najświętszego Zbawiciela.",
+      "Około 1881 poprowadzono tędy linię tramwaju konnego, a w 1908 tramwaju elektrycznego.",
+      "Po 1945 zrezygnowano z odbudowy torów tramwajowych w alei Wyzwolenia; w 1968 tory w ciągu ulicy Marszałkowskiej przesunięto na środek placu.",
+      "W kwietniu 2011 w trakcie prac remontowych odkopano niemiecki schron Ringstand 58c, jeden z ok. 60 „tobruków” zbudowanych w 1944 dla obrony Twierdzy Warszawa."
+    ],
+    "ciekawostki": [
+      "Plac jest nieformalnie nazywany placem Hipstera i Zbawixem.",
+      "W 1878 przy placu, w nieistniejącym drewnianym domu pod nr 27, mieszkał Ludwik Waryński, który tutaj pracował nad tzw. programem brukselskim."
+    ],
+    "summary_en": "Zbawiciela Square is a circular star-shaped square in Śródmieście, on the axis of Marszałkowska Street. It was laid out around 1768 as part of the Stanisław Axis and takes its name from the Church of the Most Holy Saviour, built on the site of a former tavern from 1901.",
+    "ludzie": [
+      {"kto": "Ludwik Waryński", "rola": "mieszkał przy placu w 1878 roku i pracował tu nad tzw. programem brukselskim", "wiki": null}
+    ],
+    "dawne_nazwy": ["Rotunda"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Zbawiciela w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Zbawiciela_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-jozefa-pilsudskiego",
+    "nazwa": "Plac marsz. Józefa Piłsudskiego",
+    "name_en": "Marshal Józef Piłsudski Square",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. marsz. Józefa Piłsudskiego",
+    "adres_historyczny": null,
+    "lat": 52.2411421, "lon": 21.0123451,
+    "lokalizacja": "przyblizona",
+    "okres": "1736–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac powstał jako dziedziniec pałacu Saskiego; został uregulowany w latach 1736–1745 i obudowany domami mieszkalnymi.",
+      "W latach 1815–1816, na rozkaz wielkiego księcia Konstantego, plac wybrukowano w celu urządzania na nim ćwiczeń musztry i defilad wojskowych.",
+      "W 1925 w trzech środkowych arkadach pałacu Saskiego wzniesiono Grób Nieznanego Żołnierza.",
+      "W okresie okupacji niemieckiej plac stał się centralnym punktem tzw. dzielnicy rządowej; Niemcy nazwali go Adolf-Hitler-Platz (wrzesień 1940).",
+      "Wycofujący się z Warszawy Niemcy wysadzili pałace Saski i Brühla.",
+      "2 czerwca 1979 na placu papież Jan Paweł II odprawił mszę świętą, w której wzięło udział ok. 0,5 mln osób.",
+      "13 czerwca 1999 podczas siódmej pielgrzymki do Polski Jan Paweł II beatyfikował na placu 108 polskich męczenników z czasów II wojny światowej."
+    ],
+    "ciekawostki": [
+      "28 lipca 1941 Czesław Zadrożny ps. Głowacki z Organizacji Małego Sabotażu „Wawer” spalił wielką makietę litery „V” z dykty, ustawioną przez Niemców na środku placu.",
+      "W 1841–1894 na placu stał pomnik Polaków poległych za wierność monarsze, zaprojektowany przez Antonia Corazziego; w 1894 przeniesiono go na plac Zielony."
+    ],
+    "summary_en": "Marshal Józef Piłsudski Square lies between the Saxon Garden and Królewska Street in Śródmieście. It began as the courtyard of the Saxon Palace, which was blown up together with the Brühl Palace by retreating Germans. Pope John Paul II celebrated Mass here in 1979 and beatified 108 Polish martyrs here in 1999.",
+    "ludzie": [
+      {"kto": "Jan Paweł II", "rola": "odprawił mszę na placu 2 czerwca 1979 roku; 13 czerwca 1999 beatyfikował tu 108 polskich męczenników", "wiki": null},
+      {"kto": "Ludwig Fischer", "rola": "gubernator dystryktu warszawskiego; siedziba w pałacu Brühla, centrum dzielnicy rządowej w czasie okupacji", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Plac Saski (1814–1928)",
+      "Plac Marszałka Józefa Piłsudskiego (1928–1940)",
+      "Sachsenplatz (maj–sierpień 1940)",
+      "Adolf-Hitler-Platz (wrzesień 1940–1945)",
+      "Plac Saski (1945–1946)",
+      "Plac Zwycięstwa (1946–1990)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac marsz. Józefa Piłsudskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_marsz._J%C3%B3zefa_Pi%C5%82sudskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-zelaznej-bramy",
+    "nazwa": "Plac Żelaznej Bramy",
+    "name_en": "Żelaznej Bramy Square",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Żelaznej Bramy",
+    "adres_historyczny": "Plac Targowicy Wielopolskiej",
+    "lat": 52.2400456, "lon": 21.0028233,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa placu pochodzi od Żelaznej Bramy, która stanowiła zachodnie wejście do Ogrodu Saskiego.",
+      "W 1693 na tym terenie utworzono jurydykę Wielopole; plac był rynkiem targowym tej miejscowości.",
+      "W 1841 wybudowano halę targową Gościnny Dwór zaprojektowaną przez Jakuba Gaya.",
+      "Od drugiej połowy XIX wieku plac był największym targowiskiem Warszawy.",
+      "W latach 1899–1902 po zachodniej stronie placu wybudowano Hale Mirowskie.",
+      "Od listopada 1940 do listopada 1941 południowo-zachodnim skrajem placu biegła granica warszawskiego getta.",
+      "W 1944 zburzono lub spalono wszystkie budynki znajdujące się na placu.",
+      "W 1965 wokół placu rozpoczęto budowę 16-kondygnacyjnych bloków osiedla Za Żelazną Bramą."
+    ],
+    "ciekawostki": [
+      "Według Benedykta Hertza największy targ odbywał się w piątki, najprawdopodobniej dlatego, że znaczna część straganów należała do Żydów, którzy nie pracowali w soboty.",
+      "9 sierpnia 1944 na placu zastrzelono zastępcę gubernatora Herberta Hummela, podczas ewakuacji niemieckiej administracji."
+    ],
+    "summary_en": "Żelazna Brama Square in Śródmieście takes its name from the Iron Gate, the western entrance to the Saxon Garden. From the second half of the 19th century it was Warsaw's largest market. Its buildings were destroyed in 1944, and in the 1960s the area was redeveloped with housing blocks.",
+    "ludzie": [
+      {"kto": "Herbert Hummel", "rola": "zastępca gubernatora dystryktu warszawskiego, zastrzelony na placu 9 sierpnia 1944 roku", "wiki": null},
+      {"kto": "Benedykt Hertz", "rola": "wspominał, że największy targ na placu odbywał się w piątki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Plac Targowicy Wielopolskiej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Żelaznej Bramy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_%C5%BBelaznej_Bramy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-lotnikow-polskich",
+    "nazwa": "Pomnik ku czci Lotników Polskich Poległych w latach 1939–1945",
+    "name_en": "Monument to Polish Airmen Fallen in 1939–1945",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Pole Mokotowskie przy Trasie Łazienkowskiej",
+    "adres_historyczny": null,
+    "lat": 52.2161473, "lon": 21.0092796,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Monument znajduje się na Polu Mokotowskim przy Trasie Łazienkowskiej.",
+      "Autorami pomnika są Marek Roger Dziewulski i jego ojciec, Tadeusz Antoni Dziewulski, były pilot 315. Dywizjonu Dęblińskiego.",
+      "Uroczyste odsłonięcie miało miejsce 27 sierpnia 2003 roku; aktu dokonał Prezydent RP Aleksander Kwaśniewski.",
+      "Na czele Komitetu Budowy Pomnika stali gen. bryg. pil. w st. spocz. Edward Hyra (ze strony polskiej) i Tadeusz Dziewulski (ze strony brytyjskiej).",
+      "Pomnikiem opiekuje się Zarząd Terenów Publicznych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The monument to Polish airmen who died in 1939–1945 stands on Pole Mokotowskie, next to the Łazienkowska Route. It was designed by Marek Roger Dziewulski and his father Tadeusz Antoni Dziewulski, a former pilot of the 315th Dęblin Squadron, and unveiled on 27 August 2003 by President Aleksander Kwaśniewski.",
+    "ludzie": [
+      {"kto": "Aleksander Kwaśniewski", "rola": "Prezydent RP, dokonał odsłonięcia pomnika 27 sierpnia 2003 roku", "wiki": null},
+      {"kto": "Edward Hyra", "rola": "gen. bryg. pil. w st. spocz., na czele Komitetu Budowy Pomnika (strona polska)", "wiki": null},
+      {"kto": "Tadeusz Dziewulski", "rola": "współautor pomnika, były pilot 315. Dywizjonu Dęblińskiego; na czele Komitetu Budowy Pomnika (strona brytyjska)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pomnik ku czci Lotników Polskich Poległych w latach 1939–1945 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_ku_czci_Lotnik%C3%B3w_Polskich_Poleg%C5%82ych_w_latach_1939%E2%80%931945_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rondo-czterdziestolatka",
+    "nazwa": "Rondo Czterdziestolatka",
+    "name_en": "Czterdziestolatek Roundabout",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie / al. Jana Pawła II",
+    "adres_historyczny": "Skrzyżowanie Alej Jerozolimskich, ul. Chałubińskiego i ul. Marchlewskiego",
+    "lat": 52.2278938, "lon": 21.0018296,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1962–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę nadano w 2014 roku, nawiązując do tytułowego bohatera polskiego serialu „Czterdziestolatek”.",
+      "Rondo jest czterowlotowe, z wyspą centralną przeciętą torami tramwajowymi; tramwaje mogą jechać wyłącznie na wprost.",
+      "Do przebudowy w 2020 ruch pieszy w całości odbywał się poprzez przejścia podziemne.",
+      "Na początku marca 2020 do przetargu na przebudowę zgłosiły się cztery firmy; prace rozpoczęto na przełomie kwietnia i maja 2020.",
+      "W grudniu 2020 ogłoszono zakończenie przebudowy; powstały m.in. dwa przejścia dla pieszych, po północnej i zachodniej stronie ronda."
+    ],
+    "ciekawostki": [
+      "Rondo leży na granicy Śródmieścia, Ochoty i Woli."
+    ],
+    "summary_en": "Czterdziestolatek Roundabout is a four-arm roundabout on the border of Śródmieście, Ochota and Wola, at the junction of Aleje Jerozolimskie and Jana Pawła II Avenue. It was named in 2014 after the Polish TV series Czterdziestolatek. Until its 2020 rebuild, pedestrians could cross only through underpasses.",
+    "ludzie": [],
+    "dawne_nazwy": ["Skrzyżowanie Alej Jerozolimskich, ul. Chałubińskiego i ul. Marchlewskiego"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo Czterdziestolatka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_Czterdziestolatka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data przebudowy w artykule podana bez roku w części zdań; rok 2020 wynika z kontekstu artykułu."
+  },
+  {
+    "id": "rondo-jazdy-polskiej",
+    "nazwa": "Rondo Jazdy Polskiej",
+    "name_en": "Polish Cavalry Roundabout",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Waryńskiego / al. Armii Ludowej (Trasa Łazienkowska)",
+    "adres_historyczny": null,
+    "lat": 52.2172781, "lon": 21.0152122,
+    "lokalizacja": "przyblizona",
+    "okres": "1971–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rondo powstało w latach 1971–1974 na osi ulicy Waryńskiego, nad dwupoziomowym skrzyżowaniem z Trasą Łazienkowską.",
+      "Jest to klasyczne rondo z czterema ulicami wlotowymi i okrągłą wyspą centralną, z wjazdami i zjazdami na Trasę.",
+      "Nazwę nadano w 1989 roku; jest poświęcona polskim kawalerzystom i nawiązuje do pomnika Tysiąclecia Jazdy Polskiej, usytuowanego obok ronda."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Polish Cavalry Roundabout is a four-arm roundabout built in 1971–1974 over a two-level junction of Waryński Street and the Łazienkowska Route in Śródmieście. It was named in 1989 in honour of Polish cavalrymen and lies next to the Millennium of the Polish Cavalry monument.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo Jazdy Polskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_Jazdy_Polskiej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rondo-romana-dmowskiego",
+    "nazwa": "Rondo Romana Dmowskiego",
+    "name_en": "Roman Dmowski Roundabout",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie / ul. Marszałkowska",
+    "adres_historyczny": null,
+    "lat": 52.2301299, "lon": 21.0117761,
+    "lokalizacja": "przyblizona",
+    "okres": "1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rondo oddano do użytku 30 grudnia 1970, po zakończeniu przebudowy skrzyżowania Alej Jerozolimskich i ulicy Marszałkowskiej.",
+      "29 kwietnia 1971 pod rondem otwarto podziemne przejście dla pieszych.",
+      "W 1995 Rada Warszawy nadała rondu imię Romana Dmowskiego.",
+      "Od 2011 z tego miejsca wyrusza organizowany co roku Marsz Niepodległości.",
+      "Z badań wynika, że w 2017 w porannym szczycie przez rondo przejeżdżało 7 tysięcy samochodów na godzinę, a po południu 6,6 tysiąca.",
+      "Pod rondem znajdują się podziemne przejścia z galerią handlową i wyjściem do stacji metra Centrum."
+    ],
+    "ciekawostki": [
+      "W 2017 ruch pieszy w porannym szczycie wynosił 14 tysięcy osób na godzinę, a po południu 22 tysiące."
+    ],
+    "summary_en": "Roman Dmowski Roundabout, at the crossing of Aleje Jerozolimskie and Marszałkowska in Śródmieście, opened on 30 December 1970. It was named after Roman Dmowski in 1995 and has been the starting point of the annual Independence March since 2011. Its planned replacement by a junction is tied to the rebuilding of the rail tunnel and the narrowing of Aleje Jerozolimskie, scheduled for 2027–2028.",
+    "ludzie": [
+      {"kto": "Roman Dmowski", "rola": "patron ronda od 1995 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo Romana Dmowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_Romana_Dmowskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rondo-de-gaulle-a",
+    "nazwa": "Rondo gen. Charles’a de Gaulle’a",
+    "name_en": "Charles de Gaulle Roundabout",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie / ul. Nowy Świat",
+    "adres_historyczny": null,
+    "lat": 52.2317145, "lon": 21.0205522,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa ronda była elementem przebudowy wschodniego odcinka Alej Jerozolimskich, zakończonej w sierpniu 1961; powstało w miejscu klasycznego skrzyżowania.",
+      "Nazwę nadała uchwałą z 28 września 1990 Rada Dzielnicy-Gminy Warszawa-Śródmieście.",
+      "Nazwa upamiętnia Charles’a de Gaulle’a, który w latach 1919–1920 jako członek misji wojskowej brał udział w wojnie polsko-bolszewickiej i mieszkał przy ulicy Nowy Świat.",
+      "Nazwę nadano w setną rocznicę urodzin de Gaulle’a; upamiętnia to tablica na budynku przy ul. Nowy Świat 15/17.",
+      "Od końca lat 90. obowiązuje zakaz skrętu z Alej Jerozolimskich w lewo w ul. Nowy Świat, z wyjątkiem autobusów komunikacji miejskiej.",
+      "Uchwałą z 8 listopada 2012 Rada m.st. Warszawy poprawiła pierwotnie nadaną, błędną nazwę na rondo gen. Charles’a de Gaulle’a."
+    ],
+    "ciekawostki": [
+      "Inicjatorką nadania nazwy była Halina Skibniewska, przewodnicząca Towarzystwa Przyjaźni Polsko-Francuskiej.",
+      "Na rondzie stoi artystyczna instalacja „Pozdrowienia z Alej Jerozolimskich” z główną rolą sztucznej palmy daktylowej."
+    ],
+    "summary_en": "Charles de Gaulle Roundabout in Śródmieście replaced a classic crossroads at the eastern end of Aleje Jerozolimskie, completed in August 1961. It was named in 1990, on the centenary of de Gaulle's birth, to commemorate his service in a French military mission during the Polish–Soviet War of 1919–1920.",
+    "ludzie": [
+      {"kto": "Charles de Gaulle", "rola": "prezydent Francji; w latach 1919–1920 członek misji wojskowej w wojnie polsko-bolszewickiej", "wiki": null},
+      {"kto": "Halina Skibniewska", "rola": "inicjatorka nadania nazwy; przewodnicząca Towarzystwa Przyjaźni Polsko-Francuskiej", "wiki": null}
+    ],
+    "dawne_nazwy": ["rondo Generała Charlesa de Golle’a (błędna nazwa do 2012)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo gen. Charles’a de Gaulle’a w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_gen._Charles%E2%80%99a_de_Gaulle%E2%80%99a_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

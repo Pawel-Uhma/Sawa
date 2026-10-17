@@ -1,0 +1,323 @@
+[
+  {
+    "id": "ulica-foksal",
+    "nazwa": "Ulica Foksal",
+    "name_en": "Foksal Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Foksal",
+    "adres_historyczny": "Vauxhall (ogród), Foksalstrasse (okupacja)",
+    "lat": 52.2334112,
+    "lon": 21.0195111,
+    "lokalizacja": "przyblizona",
+    "okres": "1772–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od spolszczonej nazwy angielskiej Vauxhall, czyli ogrodu spacerowego założonego w 1772 przez bankiera Fryderyka Kabryta.",
+      "15 maja 1776 roku otwarto w tutejszych ogrodach miejsce rozrywki o nazwie Vauxhall.",
+      "10 maja 1789 Jean-Pierre Blanchard dokonał w tym miejscu jednego z pierwszych w Warszawie lotów balonem.",
+      "W latach 1875–1877 w końcu ulicy wzniesiono pałac Konstantego Zamoyskiego.",
+      "17 czerwca 1934 roku nazwę ulicy zmieniono na Pierackiego, dla upamiętnienia ministra spraw wewnętrznych Bronisława Pierackiego, który dwa dni wcześniej zginął tam w zamachu ukraińskich nacjonalistów.",
+      "W latach 1946–1950 ulica nosiła nazwę Jugosłowiańskiej Brygady Pracy, dla upamiętnienia młodzieży pracującej przy odgruzowywaniu Nowego Światu.",
+      "W 1951 roku przywrócono ulicy nazwę Foksal.",
+      "W czasie powstania warszawskiego przebiegała tu II linia obrony Powiśla, a barykada znajdowała się na wysokości domu nr 11.",
+      "W okresie PRL w budynku pod nr 10 miał siedzibę Dom Radzieckiej Nauki i Kultury."
+    ],
+    "ciekawostki": [
+      "Wstęp do ogrodu kosztował w 1776 roku 4 złote, a do pawilonu z przedstawieniami 8 zł.",
+      "Doszczętnie zbombardowany w czasie wojny został tylko budynek pod numerami 14 i 12."
+    ],
+    "summary_en": "Foksal Street in Śródmieście takes its name from Vauxhall, a pleasure garden opened in 1776 on the site of a banker's estate. Balloon flights took off here from 1789, and in 1934 the street was briefly renamed after Interior Minister Bronisław Pieracki, who was assassinated nearby.",
+    "ludzie": [
+      {"kto": "Fryderyk Kabryt", "rola": "bankier, założyciel ogrodu Vauxhall (1772)", "wiki": null},
+      {"kto": "Jean-Pierre Blanchard", "rola": "przeprowadził jeden z pierwszych w Warszawie lotów balonem (10 maja 1789)", "wiki": null},
+      {"kto": "Bronisław Pieracki", "rola": "minister spraw wewnętrznych, zginął w zamachu w 1934, upamiętniony nazwą ulicy", "wiki": null},
+      {"kto": "Konstanty Zamoyski", "rola": "wzniósł pałac na końcu ulicy (1875–1877)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Vauxhall", "Pierackiego (1934)", "Foksalstrasse (okupacja)", "Jugosłowiańskiej Brygady Pracy (1946–1950)", "Foksal (przywrócona 1951)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Foksal w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Foksal_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "pałac-konstantego-zamoyskiego-foksal",
+    "nazwa": "Pałac Konstantego Zamoyskiego (Galeria Foksal)",
+    "name_en": "Konstanty Zamoyski Palace (Foksal Gallery)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Foksal 1/2/4",
+    "adres_historyczny": null,
+    "lat": 52.2334112,
+    "lon": 21.0195111,
+    "lokalizacja": "przyblizona",
+    "okres": "1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1875–1877 w końcu ulicy Foksal wzniesiono pałac Konstantego Zamoyskiego.",
+      "Obecnie pałac jest siedzibą Galerii Foksal."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A palace built for Konstanty Zamoyski in 1875–1877 at the end of Foksal Street. Today it houses the Foksal Gallery.",
+    "ludzie": [{"kto": "Konstanty Zamoyski", "rola": "inwestor pałacu", "wiki": null}],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Foksal w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Foksal_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Lokalizacja przybliżona do środka ulicy; numer z artykułu: nr 1/2/4."
+  },
+  {
+    "id": "ulica-dmochowskiego",
+    "nazwa": "Ulica Franciszka Ksawerego Dmochowskiego",
+    "name_en": "Franciszek Ksawery Dmochowski Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Franciszka Ksawerego Dmochowskiego",
+    "adres_historyczny": null,
+    "lat": 52.2257281,
+    "lon": 21.0349612,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona około 1927 roku jako odcinek ul. Miechowskiej wraz z parcelacją okolicznych gruntów.",
+      "Od 1931 roku odcinek od ul. Rozbrat do załamania biegu ulicy usamodzielnił się jako ulica Dmochowskiego.",
+      "W latach 1928–32 w parzystej pierzei wzniesiono gmachy II Miejskiego Gimnazjum Żeńskiego im. J. Kochanowskiego, przypisane numeracji ul. Rozbrat.",
+      "W latach 1935–1937 przeciwną stronę ulicy zabudowano utylitarnymi kamienicami.",
+      "24 września 1943 na rogu ulic Dmochowskiego i Rozbrat zastrzelony został zastępca komendanta Gęsiówki SS-Hauptscharführer August Kretschmann, przez żołnierzy Agatu mieszkających w kamienicy pod nr 2.",
+      "W roku 1944 częściowemu zburzeniu uległa zabudowa narożnych posesji u zbiegu z ul. Rozbrat."
+    ],
+    "ciekawostki": [
+      "Na przecięciu z ul. Koźmińską planowano wytyczenie placyku, ale realizacja tych planów nigdy nie doszła do skutku."
+    ],
+    "summary_en": "A street in the Solec district, laid out around 1927 as part of Miechowska Street. Its even side was built up in 1928–32 with the II Municipal Girls' Gymnasium. In September 1943 SS-Hauptscharführer August Kretschmann, deputy commandant of the Gęsiówka camp, was shot at the corner with Rozbrat Street.",
+    "ludzie": [
+      {"kto": "August Kretschmann", "rola": "SS-Hauptscharführer, zastępca komendanta Gęsiówki, zastrzelony 24.09.1943", "wiki": null},
+      {"kto": "Tadeusz Majewski", "rola": "projektant gmachów gimnazjum (1928–32)", "wiki": null},
+      {"kto": "Franciszek Eychhorn", "rola": "projektant gmachów gimnazjum (1928–32)", "wiki": null}
+    ],
+    "dawne_nazwy": ["odcinek ul. Miechowskiej (do 1931)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Franciszka Ksawerego Dmochowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Franciszka_Ksawerego_Dmochowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że zastrzelony został zastępca komendanta Gęsiówki; zdanie o wykonawcach zapisane wprost z tekstu."
+  },
+  {
+    "id": "ulica-franciszkanska",
+    "nazwa": "Ulica Franciszkańska",
+    "name_en": "Franciszkańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Franciszkańska",
+    "adres_historyczny": null,
+    "lat": 52.2533937,
+    "lon": 21.0064445,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza zabudowa pojawiła się tam na początku XVI wieku.",
+      "W latach 1646–1647 u zbiegu z ul. Zakroczymską wybudowano kościół św. Franciszka wraz z klasztorem franciszkanów; zabudowania spalili Szwedzi w 1656.",
+      "W latach 20. XIX wieku osiedliła się tu ludność żydowska i powstało 21 kamienic.",
+      "W listopadzie 1940 ulica na całej swej długości została włączona do warszawskiego getta.",
+      "W grudniu 1941 granicę getta przesunięto na środek ul. Bonifraterskiej.",
+      "Wypalone ruiny kamienic rozebrano w latach 1946–1947, a w ich miejscu wzniesiono nowe zabudowania."
+    ],
+    "ciekawostki": [
+      "Przed rokiem 1732 u zbiegu z ul. Sapieżyńską wybudowano zapewne według projektu Józefa Fontany pałac dla Jana Skarbka."
+    ],
+    "summary_en": "An old street in Nowe Miasto, with a Franciscan church and monastery built in 1646–1647 at the corner of Zakroczymska Street. It was inside the Warsaw Ghetto from November 1940, and the buildings were destroyed in the 1943 uprising and rebuilt after the war.",
+    "ludzie": [
+      {"kto": "Józef Fontana", "rola": "wg artykułu – autor projektu pałacu Jana Skarbka (przed 1732)", "wiki": null},
+      {"kto": "Henryk Galle", "rola": "architekt, twórca 12 realizacji przy ulicy w latach 20. XIX w.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Franciszkańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Franciszka%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-frascati",
+    "nazwa": "Ulica Frascati",
+    "name_en": "Frascati Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Frascati / ul. Frascati",
+    "adres_historyczny": null,
+    "lat": 52.2271095,
+    "lon": 21.0266582,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1779–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około 1779 roku, kiedy Kazimierz Poniatowski założył przy al. Na Skarpie ogród Na Górze, nazwany potem Frascati.",
+      "Autorem projektu założenia ogrodu był Szymon Bogumił Zug, który zaprojektował też Oberżę (ok. 1779) i pałac Letni (1779–1781).",
+      "W 1800 roku ogród został wydzierżawiony francuskiemu restauratorowi Szymonowi Chovotowi, który urządził tu ogród rozrywki zwany Frascati.",
+      "Od 1815 roku aleja Frascati weszła w skład rezydencji Nikołaja Nowosilcowa.",
+      "W latach 1873–1887 dla Władysława Branickiego pod nr. 22 powstał pałac zaprojektowany przez Leandra Marconiego.",
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "W lutym 1939 roku odsłonięto na przeciwległym skwerze pomnik Francesca Nulla dłuta Gianniego Remuzzi, dar Bergamo.",
+      "Zabudowa ulicy spłonęła w 1944 roku."
+    ],
+    "ciekawostki": [
+      "W budynku pałacu Letniego od 1887 roku mieściło się prywatne Muzeum Zoologiczne założone przez Ksawerego Branickiego.",
+      "Jedynym śladem rezydencji, który przetrwał do dziś, jest słupek ogrodzenia ze śladami po uderzeniach kul, stojący przy ogrodzeniu Białego Pałacyku."
+    ],
+    "summary_en": "Frascati Street grew out of a late-18th-century garden laid out by Kazimierz Poniatowski on the Na Skarpie alley. The garden was run as an entertainment venue under the name Frascati. The street was officially named in 1926 and its buildings burned in 1944.",
+    "ludzie": [
+      {"kto": "Kazimierz Poniatowski", "rola": "założyciel ogrodu Na Górze (Frascati), ok. 1779", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu założenia ogrodu i budynków", "wiki": null},
+      {"kto": "Szymon Chovot", "rola": "francuski restaurator, dzierżawca ogrodu rozrywki (od 1800)", "wiki": null},
+      {"kto": "Nikołaj Nowosilcow", "rola": "właściciel rezydencji od 1815", "wiki": null},
+      {"kto": "Władysław Branicki", "rola": "zlecił pałac pod nr 22 (1873–1887)", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "projektant pałacu Branickiego", "wiki": null},
+      {"kto": "Francesco Nullo", "rola": "upamiętniony pomnikiem z 1939 roku (dar Bergamo)", "wiki": null}
+    ],
+    "dawne_nazwy": ["aleja Frascati (1934)", "Na Górze (ogród)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Frascati w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Frascati_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też aleję Frascati jako ogrodową aleję; współrzędne to środek odcinka."
+  },
+  {
+    "id": "ulica-freta",
+    "nazwa": "Ulica Freta",
+    "name_en": "Freta Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta",
+    "adres_historyczny": null,
+    "lat": 52.2526206,
+    "lon": 21.0075699,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pod koniec XIV wieku wokół placu przed północną bramą obronną zaczęły powstawać budynki; miejsce nazwano Freta.",
+      "Nazwa ulicy po raz pierwszy wzmiankowana była w 1427 r.",
+      "W 1603 r. dominikanie kupili działkę przy ulicy (nr 8/10), by zbudować klasztor i kościół; kościół św. Jacka wznoszono w latach 1606–1638.",
+      "W 1656 r. część zabudowań spłonęła.",
+      "W czasie powstania warszawskiego w kapitularzu kościoła św. Jacka miało siedzibę dowództwo grupy „Północ”.",
+      "W listopadzie 1940 część budynków po nieparzystej stronie ulicy znalazła się w warszawskim getcie.",
+      "Obecna zabudowa ulicy pochodzi z lat 1950–1955 i jest rekonstrukcją kamienic z XVIII wieku, zniszczonych w 1944 r."
+    ],
+    "ciekawostki": [
+      "Oryginalny jest bruk z kostek z czerwonego granitu oraz chodniki z granitowymi krawężnikami.",
+      "Do połowy XVIII wieku część ulicy nazywano Dominikańską, od kościoła dominikanów."
+    ],
+    "summary_en": "One of the oldest streets of Nowe Miasto, running north from the Old Town towards Zakroczym. Its buildings were rebuilt in 1950–1955 as reconstructions of 18th-century townhouses destroyed in 1944. The Dominican church of St Jacek is on the street.",
+    "ludzie": [
+      {"kto": "Jan Włoch", "rola": "projektant kościoła św. Jacka (wg artykułu)", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projektant kamienicy Pod Opatrznością (nr 29)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dominikańska (część ulicy, do połowy XVIII w.)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Freta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Freta_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia wiele kamienic i kościołów przy ulicy; wybrano tylko część ogólnych faktów."
+  },
+  {
+    "id": "kamienica-pod-samsonem",
+    "nazwa": "Kamienica Pod Samsonem",
+    "name_en": "Pod Samsonem tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta 5",
+    "adres_historyczny": null,
+    "lat": 52.2526206,
+    "lon": 21.0075699,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1770 r., w stylu Ludwika XVI, dla prezydenta Starej Warszawy Jakuba Maraszewskiego.",
+      "W latach 1804–1806 mieszkał w niej Ernst Theodor Amadeus Hoffmann.",
+      "Po II wojnie światowej przetrwał fragment fasady wraz z wystrojem, m.in. płaskorzeźby z XVIII wieku (Samson z lwem, Dalila obcinająca włosy Samsonowi).",
+      "Od grudnia 2014 w kamienicy tymczasowo mieści się Muzeum Marii Skłodowskiej-Curie."
+    ],
+    "ciekawostki": [
+      "Fasada jest 6-osiowa i 3-kondygnacyjna, z pilastrami i półokrągłymi frontonami."
+    ],
+    "summary_en": "A 1770 tenement house at Freta 5, built for the president of Stara Warszawa. E.T.A. Hoffmann lived there in 1804–1806. Its 18th-century Samson reliefs survived the war, and the building has housed the Maria Skłodowska-Curie Museum since December 2014.",
+    "ludzie": [
+      {"kto": "Jakub Maraszewski", "rola": "prezydent Starej Warszawy, zleceniodawca kamienicy (1770)", "wiki": null},
+      {"kto": "Ernst Theodor Amadeus Hoffmann", "rola": "mieszkał w kamienicy w latach 1804–1806", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Freta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Freta_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Lokalizacja to środek ulicy Freta (współrzędne z artykułu o ulicy)."
+  },
+  {
+    "id": "ulica-fryderyka-chopina",
+    "nazwa": "Ulica Fryderyka Chopina",
+    "name_en": "Fryderyk Chopin Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Fryderyka Chopina",
+    "adres_historyczny": "ul. Szopena (1895–2012)",
+    "lat": 52.2227743,
+    "lon": 21.0221921,
+    "lokalizacja": "przyblizona",
+    "okres": "1891–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została przeprowadzona w 1891 roku w miejscu alei ogrodu zwanego Doliną Szwajcarską.",
+      "Brukowaną nawierzchnię otrzymała w 1895 roku, kiedy też nadano jej oficjalnie nazwę ulica Szopena.",
+      "W 1896 roku pod numerem 13 wzniesiono piętrową willę projektu Fryderyka Dietricha.",
+      "W latach 1899–1902 pod numerem 2 wybudowano willę hrabiego Zygmunta Rzyszczewskiego, wg projektu François Arveufa.",
+      "W latach 1903–1904 pod numerem 1 zbudowano kamienicę Maurycego Spokornego, projektowaną przez Dawida Landego, jedno z najwybitniejszych dzieł architektury secesyjnej w Polsce.",
+      "Podczas obrony Warszawy we wrześniu 1939 spłonęła część zabudowy ulicy w pobliżu Alej Ujazdowskich.",
+      "W 1949 roku willa Władysława Kiślańskiego pod nr 2a została przebudowana na Ambasadę Norwegii.",
+      "Na początku lat 50. XX wieku zabudowę uzupełniono tzw. małym domem partii, w którym mieścił się Komitet Warszawski PZPR (1952–1989).",
+      "W 2005 roku odsłonięto przed budynkiem pomnik Stefana Roweckiego „Grota”, autorstwa Zbigniewa Mikielewicza.",
+      "W listopadzie 2012 roku Rada Warszawy skorygowała nazwę z Szopena na Fryderyka Chopina."
+    ],
+    "ciekawostki": [
+      "Na terenie Doliny Szwajcarskiej wystawiono bogato zdobiony pałacyk należący do Warszawskiego Towarzystwa Łyżwiarskiego.",
+      "Zachowało się 9 charakterystycznych dla Warszawy słupów oświetleniowych, tzw. pastorałów."
+    ],
+    "summary_en": "Opened in 1891 on the former Dolina Szwajcarska garden and named Szopena in 1895, the street was renamed after Chopin in 2012. Its 1903–1904 Secession tenement at no. 1 was designed by Dawid Lande. Today the street hosts embassies and the Warsaw District Court.",
+    "ludzie": [
+      {"kto": "Maurycy Spokorny", "rola": "inwestor kamienicy pod nr 1 (1903–1904)", "wiki": null},
+      {"kto": "Dawid Lande", "rola": "projektant kamienicy Spokornego", "wiki": null},
+      {"kto": "Zygmunt Rzyszczewski", "rola": "hrabia, inwestor willi pod nr 2 (1899–1902)", "wiki": null},
+      {"kto": "François Arveuf", "rola": "autor projektu willi Rzyszczewskiego", "wiki": null},
+      {"kto": "Fryderyk Dietrich", "rola": "projektant willi pod nr 13 (1896)", "wiki": null},
+      {"kto": "Stefan Rowecki „Grot”", "rola": "upamiętniony pomnikiem z 2005 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica Szopena (1895–2012)", "aleja ogrodu Dolina Szwajcarska (przed 1891)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Fryderyka Chopina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Fryderyka_Chopina_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-furmanska",
+    "nazwa": "Ulica Furmańska",
+    "name_en": "Furmańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Furmańska",
+    "adres_historyczny": null,
+    "lat": 52.2444644,
+    "lon": 21.0189197,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w XVII wieku jako droga biegnąca wzdłuż płynącej tam wtedy Wisły.",
+      "Nazwa, nadana w 1770 roku, nawiązywała do licznych w okolicy wozowni i stajni.",
+      "W 1821 Fryderyk Albert Lessel rozbudował kamienicę Wawrzyńca Collina przy ul. Bednarskiej, wystawiając wzdłuż Furmańskiej jej nowe skrzydło.",
+      "Zabudowę ulicy kilkakrotnie niszczyły wody wielkich powodzi, m.in. z lat 1867 i 1884.",
+      "Do roku 1939 Furmańska była zamieszkana głównie przez ubogą ludność.",
+      "W 1944 roku cała zabudowa została spalona, a relikty rozebrano w 1946 roku."
+    ],
+    "ciekawostki": [
+      "Zachodnią stronę ulicy wypełniło zaplecze kościoła Wniebowzięcia NMP i św. Józefa Oblubieńca przy ul. Krakowskie Przedmieście."
+    ],
+    "summary_en": "A short street near the Vistula escarpment, named in 1770 after the carriage houses and stables in the area. Its buildings were repeatedly damaged by floods and burned in 1944. The site was cleared in 1946, opening a view of the church of the Assumption and St Joseph on Krakowskie Przedmieście.",
+    "ludzie": [
+      {"kto": "Fryderyk Albert Lessel", "rola": "architekt rozbudowy kamienicy Collina (1821)", "wiki": null},
+      {"kto": "Wawrzyniec Collin", "rola": "właściciel kamienicy przy ul. Bednarskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Furmańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Furma%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  }
+]

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kółka klastrów</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --glebia: #17706f; --mieta: #8ed1b5; --mieta-jasna: #ddf2e9; --tekst: #102b2a; --tekst-2: #4c6462; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #f4f6f5; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: var(--tekst); }
+  .siatka { display: grid; grid-template-columns: repeat(3, 387px); gap: 28px; padding: 28px; width: max-content; }
+  h2 { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
+  h2 span { color: #f2755f; margin-right: 6px; }
+  p { font-size: 12.5px; color: var(--tekst-2); line-height: 1.4; margin: 4px 0 12px; min-height: 52px; }
+  .ramka { position: relative; width: 387px; height: 358px; border-radius: 22px; overflow: hidden;
+    background: url(klastry-tlo.png) 0 0 / 387px 358px; box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 12px 32px rgba(16,43,42,.12); }
+  /* Zakrywa stare kółko ze zrzutu. */
+  .gumka { position: absolute; width: 40px; height: 40px; margin: -20px; border-radius: 50%; background: #efefec; filter: blur(3px); }
+  .k { position: absolute; transform: translate(-50%, -50%); display: grid; place-items: center; border-radius: 50%;
+    font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+
+  /* A: Głębia */
+  .a { width: 34px; height: 34px; background: var(--glebia); color: #fff; font-size: 13px;
+    border: 2.5px solid #fff; box-shadow: 0 2px 6px rgba(16,43,42,.28); }
+  .a.duzy { width: 40px; height: 40px; font-size: 14px; }
+
+  /* B: Szkło */
+  .b { width: 36px; height: 36px; background: rgba(255,255,255,.92); color: var(--glebia); font-size: 13.5px;
+    border: 1.5px solid rgba(23,112,111,.35); box-shadow: 0 3px 10px rgba(16,43,42,.18); }
+  .b.duzy { width: 42px; height: 42px; font-size: 15px; }
+
+  /* C: Halo */
+  .c { width: 28px; height: 28px; background: var(--glebia); color: #fff; font-size: 12.5px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 8px rgba(142,209,181,.55); }
+  .c.duzy { box-shadow: 0 0 0 2px #fff, 0 0 0 11px rgba(142,209,181,.55); }
+
+  /* D: Pierścień rodzajów */
+  .d { width: 38px; height: 38px; color: var(--tekst); font-size: 13px; box-shadow: 0 2px 6px rgba(16,43,42,.22); }
+  .d::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--pierscien);
+    -webkit-mask: radial-gradient(circle, transparent 12.5px, #000 13px); mask: radial-gradient(circle, transparent 12.5px, #000 13px); }
+  .d { background: #fff; border: 2px solid #fff; }
+  .d b { position: relative; }
+
+  /* E: Atrament */
+  .e { width: 32px; height: 32px; background: var(--tekst); color: var(--mieta); font-size: 13px;
+    border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(16,43,42,.15), 0 4px 10px rgba(16,43,42,.25); }
+  .e.duzy { width: 38px; height: 38px; }
+</style></head>
+<body>
+<div class="siatka" id="siatka"></div>
+<script>
+// Środki kółek ze zrzutu (css px przy 387 × 358) i liczby.
+const KLASTRY = [
+  { x: 72, y: 58, n: 14 }, { x: 129, y: 214, n: 11 }, { x: 205, y: 216, n: 13 },
+  { x: 11, y: 296, n: 10 }, { x: -2, y: 108, n: 52, duzy: true }, { x: 188, y: 360, n: 21 },
+];
+// Udziały rodzajów (architektura, pamięć, mural, sacrum, miejsce) dla wariantu D.
+const KOLORY = ['#4f6d9a', '#b5543c', '#d4902a', '#3f7d5a', '#8e4585'];
+const UDZIALY = [[.5,.2,.1,.1,.1], [.4,.3,0,.1,.2], [.6,.1,.1,0,.2], [.3,.4,0,.2,.1], [.5,.2,.1,.1,.1], [.45,.25,.1,.05,.15]];
+function pierscien(u) {
+  let kat = 0;
+  return 'conic-gradient(' + u.flatMap((w, i) => {
+    if (!w) return [];
+    const od = kat; kat += w * 360;
+    return [`${KOLORY[i]} ${od}deg ${kat - 4}deg`, `#fff ${kat - 4}deg ${kat}deg`];
+  }).join(',') + ')';
+}
+const WARIANTY = [
+  ['a', 'A', 'Głębia', 'Kolor marki zamiast szarości. Biała obwódka i miękki cień odrywają kółko od mapy i odróżniają je od kolorowych znaczników.'],
+  ['b', 'B', 'Szkło', 'Białe, prawie nieprzezroczyste kółko, liczba w Głębi. Najlżejsze, nie konkuruje z ikonami. W ciemnym motywie: grafit z miętową liczbą.'],
+  ['c', 'C', 'Halo', 'Małe pełne jądro i miętowa poświata, większa przy większej grupie. Czyta się jak „tu jest gęsto”, nie jak kolejny znacznik.'],
+  ['d', 'D', 'Pierścień rodzajów', 'Pierścień pokazuje skład grupy w kolorach znaczników (kamienice, pamięć, murale…). Najwięcej informacji, wymaga ikon generowanych w locie.'],
+  ['e', 'E', 'Atrament', 'Obecny styl dopracowany: głęboka zieleń‑czerń z tekstu zamiast szarości, miętowa liczba, pogrubiona, z cieniem.'],
+];
+const siatka = document.getElementById('siatka');
+for (const [cls, lit, nazwa, opis] of WARIANTY) {
+  const w = document.createElement('div');
+  w.innerHTML = `<h2><span>${lit}</span>${nazwa}</h2><p>${opis}</p><div class="ramka"></div>`;
+  const ramka = w.querySelector('.ramka');
+  KLASTRY.forEach((k, i) => {
+    const g = document.createElement('div');
+    g.className = 'gumka'; g.style.left = k.x + 'px'; g.style.top = k.y + 'px';
+    ramka.append(g);
+    const el = document.createElement('div');
+    el.className = `k ${cls}${k.duzy ? ' duzy' : ''}`;
+    el.style.left = k.x + 'px'; el.style.top = k.y + 'px';
+    if (cls === 'd') { el.style.setProperty('--pierscien', pierscien(UDZIALY[i])); el.innerHTML = `<b>${k.n}</b>`; }
+    else el.textContent = k.n;
+    ramka.append(el);
+  });
+  siatka.append(w);
+}
+</script>
+</body></html>

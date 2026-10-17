@@ -1,0 +1,168 @@
+[
+  {
+    "id": "pasta",
+    "nazwa": "PASTA",
+    "name_en": "PASTA (Telephone exchange buildings at Zielna 37 and 39)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zielna 37 i 39",
+    "adres_historyczny": null,
+    "lat": 52.23611111,
+    "lon": 21.00638889,
+    "lokalizacja": "dokladna",
+    "okres": "1904–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół dwóch budynków przy ul. Zielnej 37 i 39 wzniesiono w latach 1904–1910 dla Towarzystwa Akcyjnego Telefonów Cedergren.",
+      "Budynek przy ul. Zielnej 37 zbudowano w latach 1904–1905 wg projektu Izaaka Gustawa Clasona w stylu eklektycznym.",
+      "W latach 1908–1910 na sąsiedniej działce (nr 39) wzniesiono drugi, wyższy budynek, przeznaczony dla powiększonej centrali telefonicznej; jego wysokość od fundamentów do szczytu wynosiła 51,5 m, a miał osiem pięter.",
+      "Nazwa PASTA pochodzi od pierwszych liter Polskiej Akcyjnej Spółki Telefonicznej (PAST), która przejęła nieruchomość w 1922 roku.",
+      "W październiku 1939 roku PASTA została zajęta przez Niemców; od lipca 1941 centrala stanowiła jeden z węzłów łączności na zapleczu frontu wschodniego.",
+      "1 sierpnia 1944 roku powstańcy z 6 kompanii „Wawer” batalionu „Kiliński” podjęli pierwszą, nieudaną próbę zdobycia PAST-y; decydujący szturm przypuszczono w nocy z 19 na 20 sierpnia 1944 roku."
+    ],
+    "ciekawostki": [
+      "Przez około rok po ukończeniu drugiego budynku był to najwyższy wysokościowiec w Europie; w 1911 roku oddano wyższy Royal Liver Building w Liverpoolu.",
+      "Był to pierwszy w Europie wysokościowiec wzorowany na amerykańskich drapaczach chmur szkoły chicagowskiej."
+    ],
+    "summary_en": "PASTA is a pair of early-20th-century telephone exchange buildings at Zielna 37 and 39. The taller one, built in 1908–1910, was briefly the tallest skyscraper in Europe; during the Warsaw Uprising it was stormed by insurgents in August 1944.",
+    "ludzie": [
+      {"kto": "Izaak Gustaw Clason", "rola": "architekt budynku przy ul. Zielnej 37 (1904–1905) i projektant drugiego budynku", "wiki": null},
+      {"kto": "Bronisław Brochwicz-Rogoyski", "rola": "współpracownik przy projekcie drugiego budynku, odpowiadał za jego realizację w Warszawie", "wiki": null},
+      {"kto": "Henryk Leliwa-Roycewicz", "rola": "dowódca zespołów szturmowych batalionu „Kiliński” podczas szturmu na PAST-ę", "wiki": null},
+      {"kto": "Zofia Franio", "rola": "kierowniczka kobiecej drużyny minerskiej w szturmie na PAST-ę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: PASTA", "url": "https://pl.wikipedia.org/wiki/PASTA"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie szturmu (ostatnie zdanie niedokończone w paczce); fakty z części dostępnej."
+  },
+  {
+    "id": "pzu-tower",
+    "nazwa": "PZU Tower",
+    "name_en": "PZU Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Pawła II 24",
+    "adres_historyczny": null,
+    "lat": 52.23641111,
+    "lon": 20.997975,
+    "lokalizacja": "dokladna",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec powstał w miejscu, w którym do lat 50. XX wieku znajdował się budynek Głównego Gminy Żydowskiej.",
+      "Budowa trwała od 1997 do 2000 roku; pierwotnie przeznaczony był na funkcje hotelowe, a jego pierwsza nazwa to Les Tours Business Research Center.",
+      "Po zakupie przez PZU budynek zmieniono na biurowiec.",
+      "W 2006 roku, z powodu zagrożenia oderwaniem się tafli szklanych, budynek otoczono tymczasową drewnianą konstrukcją ochronną; zewnętrzna szklana elewacja została ostatecznie usunięta.",
+      "Budynek pełnił rolę siedziby centrali Grupy PZU do 2022 roku, kiedy centralę przeniesiono do budynku Y w kompleksie Generation Park.",
+      "W 2023 roku Towarzystwo Funduszy Inwestycyjnych PZU złożyło wniosek o ustalenie warunków przebudowy i rozbudowy wieżowca, polegającej na rozbiórce i zastąpieniu go nowym, wyższym budynkiem."
+    ],
+    "ciekawostki": [
+      "Według pierwotnego projektu z bocznego ramienia miał zwisać telebim o powierzchni ok. 100 m kw.; nigdy się nie pojawił, bo na konstrukcji zbierał się śnieg."
+    ],
+    "summary_en": "PZU Tower stands at Aleja Jana Pawła II 24 at the junction with Grzybowska Street, on the site of a pre-1950s Jewish community building. Built in 1997–2000, it housed the PZU Group headquarters until 2022, and in 2023 a plan to replace it with a taller building was filed.",
+    "ludzie": [],
+    "dawne_nazwy": ["Les Tours Business Research Center"],
+    "zrodla": [{"tytul": "Wikipedia: PZU Tower", "url": "https://pl.wikipedia.org/wiki/PZU_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku, w którym wieżowiec zastąpił budynek Gminy Żydowskiej; podano tylko 'do lat 50. XX wieku'."
+  },
+  {
+    "id": "pacyfikacja-powisla-czerniakowskiego",
+    "nazwa": "Pacyfikacja Powiśla Czerniakowskiego",
+    "name_en": "Pacification of Czerniaków Riverside",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Powiśle Czerniakowskie (Górny Czerniaków, Solec)",
+    "adres_historyczny": null,
+    "lat": 52.2298,
+    "lon": 21.0381,
+    "lokalizacja": "przyblizona",
+    "okres": "1944 (11–23 września)",
+    "istnieje": false,
+    "fakty": [
+      "Pacyfikacja Powiśla Czerniakowskiego to fala masowych mordów, grabieży i gwałtów na warszawskim Solcu w czasie powstania warszawskiego.",
+      "Podczas walk w dniach 11–23 września 1944 roku oddziały niemieckiej Grupy Bojowej „Reinefarth” zamordowały setki wziętych do niewoli żołnierzy AK, w tym wielu pacjentów powstańczych szpitali.",
+      "11 września 1944 roku Niemcy rozpoczęli natarcie na Górny Czerniaków; od północy nacierała część Grupy Bojowej „Reinefarth”, z południa Grupa Bojowa „Rohr”.",
+      "30 sierpnia 1944 roku rządy USA i Wielkiej Brytanii uznały AK za integralną część Polskich Sił Zbrojnych; 3 września Niemcy ogłosiły uznanie praw kombatanckich żołnierzy AK, ale wzięci do niewoli powstańcy byli niemal bez wyjątku mordowani.",
+      "13 września 1944 roku esesmani z pułku Dirlewangera zaatakowali powstańczą redutę w gmachu ZUS przy ul. Czerniakowskiej 231, gdzie mieścił się powstańczy szpital kierowany przez dr. Zdzisława Góreckiego.",
+      "Po bombardowaniu szpitala ok. godziny 17:00 wybuchł pożar w schronie, w którym ukrywała się część rannych i chorych; kilkudziesięciu pacjentów spłonęło żywcem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Pacification of Czerniaków Riverside was a series of mass murders, looting and rapes in the Solec district during the Warsaw Uprising, carried out by German units between 11 and 23 September 1944. Captured insurgents and patients of insurgent hospitals were killed.",
+    "ludzie": [
+      {"kto": "Andrzej Samsonowicz „Xięcie”", "rola": "podporucznik, dowódca plutonu broniącego reduty w gmachu ZUS przy ul. Czerniakowskiej 231", "wiki": null},
+      {"kto": "Zdzisław Górecki", "rola": "lekarz, kierownik powstańczego szpitala w gmachu ZUS", "wiki": null},
+      {"kto": "Erich von dem Bach-Zelewski", "rola": "SS-Obergruppenführer, planował zdobycie Górnego Czerniakowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pacyfikacja Powiśla Czerniakowskiego", "url": "https://pl.wikipedia.org/wiki/Pacyfikacja_Powi%C5%9Bla_Czerniakowskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie historyczne bez współrzędnych budynku; punkt z nagłówka to obszar Powiśla. Pole istnieje=false dotyczy zdarzenia. Artykuł urwany w opisie ZUS (fakty z części dostępnej)."
+  },
+  {
+    "id": "kosciol-swietej-trojcy-warszawa",
+    "nazwa": "Kościół Świętej Trójcy w Warszawie",
+    "name_en": "Holy Trinity Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Małachowskiego 1",
+    "adres_historyczny": null,
+    "lat": 52.2381,
+    "lon": 21.0106,
+    "lokalizacja": "dokladna",
+    "okres": "dziś (data budowy niepodana w paczce)",
+    "istnieje": true,
+    "fakty": [
+      "Kościół przy pl. Małachowskiego 1 jest głównym kościołem Parafii Ewangelicko-Augsburskiej Świętej Trójcy; budynek ma 58 m wysokości, a średnica rotundy wynosi 33,4 m.",
+      "W latach 1906–1951 parafia prowadziła męskie Gimnazjum im. Mikołaja Reya, a od 1925 roku żeńskie Gimnazjum im. Królewny Anny Wazówny.",
+      "Budynek kościoła znajduje się na liście tzw. „Miejsc Chopinowskich Warszawy”.",
+      "Dwukrotnie kazanie wygłaszali tu papieże: Jan Paweł II (1991) i Benedykt XVI (2006).",
+      "Od 2022 roku w kościele w każdą środę w południe odbywa się cykl koncertów „Lunch Time Concerts”.",
+      "W 2025 roku parafia liczyła 1958 wiernych, a szkółkę niedzielną odwiedzało 50 uczniów."
+    ],
+    "ciekawostki": [
+      "Od 2023 roku parafia uczestniczy w warszawskiej edycji Nocy Muzeów.",
+      "Co roku w kościele odbywa się koncert z okazji Dnia Świętej Łucji, organizowany we współpracy z Ambasadą Szwecji."
+    ],
+    "summary_en": "The Holy Trinity Lutheran Church at Plac Małachowskiego 1 is the main church of the Evangelical-Augsburg parish in Warsaw. It has a 58 m high building with a rotunda, and was visited by Pope John Paul II (1991) and Pope Benedict XVI (2006) for sermons.",
+    "ludzie": [
+      {"kto": "Jan Paweł II", "rola": "wygłosił kazanie w kościele w 1991 roku", "wiki": null},
+      {"kto": "Benedykt XVI", "rola": "wygłosił kazanie w kościele w 2006 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Ewangelicko-Augsburska Świętej Trójcy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Ewangelicko-Augsburska_%C5%9Awi%C4%99tej_Tr%C3%B3jcy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy budynku kościoła; artykuł o parafii opisuje też kościół filialny we Włochach i ośrodek Tabita w Konstancinie-Jeziornie, które pominięto (inne lokalizacje). Data budowy nie podana w paczce."
+  },
+  {
+    "id": "kamienica-mokotowska-12-dobrego-pasterza",
+    "nazwa": "Kamienica przy ul. Mokotowskiej 12 (zbór Dobrego Pasterza)",
+    "name_en": "Mokotowska 12 tenement (Good Shepherd Methodist chapel)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 12",
+    "adres_historyczny": null,
+    "lat": 52.2203,
+    "lon": 21.0184,
+    "lokalizacja": "dokladna",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1921 roku na potrzeby misji metodystycznej zakupiono budynek przy ul. Mokotowskiej 12.",
+      "Zbór (kaplica Dobrego Pasterza) oraz kancelaria parafialna mieszczą się w kamienicy Jasieńczyka-Jabłońskiego przy ul. Mokotowskiej 12.",
+      "Metodyzm pojawił się w Polsce w okresie dwudziestolecia międzywojennego, kiedy działalność rozpoczęła Misja Południowego Episkopalnego Kościoła Metodystycznego ze Stanów Zjednoczonych.",
+      "Pastorem zboru w latach 1948–1988 był ks. sup. Witold Benedyktowicz; w latach 1991–2018 ks. sup. Zbigniew Kamiński."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Mokotowska 12 tenement houses the Good Shepherd Methodist chapel and parish office. The building was bought in 1921 for the Methodist mission, which began work in Poland between the wars.",
+    "ludzie": [
+      {"kto": "Witold Benedyktowicz", "rola": "pastor zboru w latach 1948–1988", "wiki": null},
+      {"kto": "Zbigniew Kamiński", "rola": "pastor zboru w latach 1991–2018", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Parafia Ewangelicko-Metodystyczna Dobrego Pasterza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Ewangelicko-Metodystyczna_Dobrego_Pasterza_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł jest o parafii; rekord dotyczy budynku, w którym mieści się zbór. Brak opisu architektury budynku w paczce."
+  }
+]

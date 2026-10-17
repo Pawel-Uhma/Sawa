@@ -8,6 +8,7 @@ import {
   factsStory,
   findingSources,
   fitWords,
+  isGentleForKids,
   parseStoryAnswer,
   pickFacts,
   type StoryDraft,
@@ -15,7 +16,7 @@ import {
   storyWords,
 } from "../domain/story";
 import { AppError } from "../lib/errors";
-import { STORY_SYSTEM_PROMPT, storyUserPrompt } from "../prompts/story";
+import { KIDS_STORY_SYSTEM_PROMPT, STORY_SYSTEM_PROMPT, storyUserPrompt } from "../prompts/story";
 import type { LlmProvider, PlacesRepository } from "./ports";
 import type { PlaceResearch } from "./research-place";
 
@@ -84,7 +85,7 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
 
   /** Everything a story needs before the model writes it. */
   async function prepare(request: StoryRequestInput) {
-    const { placeId, targetSec, storyStyle, familiarity } = request;
+    const { placeId, targetSec, storyStyle, familiarity, audience } = request;
     const { interests = [], heardFacts = [], knownContexts = [] } = request;
     const place = await places.getById(placeId);
     if (!place) throw new AppError("NOT_FOUND", `Place "${placeId}" not found`);
@@ -96,11 +97,12 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
     const pick = pickFacts(place, {
       heard: heardFacts,
       style: storyStyle,
+      audience,
       band,
       reservedWords,
       findings,
     });
-    const words = fitWords(storyWords(band, storyStyle, pick.recap), pick, reservedWords);
+    const words = fitWords(storyWords(band, storyStyle, pick.recap, audience), pick, reservedWords);
     // What the listener remembers once the story was heard (apps/web lib/memory.ts).
     const answer = (draft: StoryDraft, cached: boolean): Story => ({
       placeId,
@@ -111,24 +113,33 @@ export function createStoryService({ places, llm, research, onLlmError }: StoryD
       contextIds: context ? [context.id] : [],
       recap: pick.recap,
     });
+    // Read plainly, war facts are too harsh for a child: the facts story keeps to the name.
+    const plainPick = audience === "kids" && isGentleForKids(place) ? { ...pick, facts: [] } : pick;
+    const plainDraft = factsStory(place, plainPick, sources, words);
     // The facts story does not explain the background, so it stays unexplained.
-    const plain = { ...answer(factsStory(place, pick, sources, words), false), contextIds: [] };
+    const plain = {
+      ...answer(plainDraft, false),
+      factIds: toldIds(plainPick, plainDraft),
+      contextIds: [],
+    };
     const key = storyCacheKey(placeId, interests, band, [
       storyStyle ?? "",
       familiarity ?? "",
+      audience === "kids" ? "kids" : "",
       pick.facts.map((f) => f.id).join("."),
       context?.id ?? "",
       String(pick.recap),
       ...knownContextsOf(place, knownContexts).map((c) => c.id),
     ]);
     const prompt = {
-      system: STORY_SYSTEM_PROMPT,
+      system: audience === "kids" ? KIDS_STORY_SYSTEM_PROMPT : STORY_SYSTEM_PROMPT,
       user: storyUserPrompt(place, interests, {
         pick,
         sources,
         words,
         style: storyStyle,
         familiarity,
+        audience,
         context,
         knownContexts: knownContextsOf(place, knownContexts),
       }),

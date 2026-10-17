@@ -1,0 +1,111 @@
+[
+  {
+    "id": "twierdza-warszawa",
+    "nazwa": "Twierdza Warszawa",
+    "name_en": "Warsaw Fortress",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.264722,
+    "lon": 20.999444,
+    "lokalizacja": "przyblizona",
+    "okres": "1879–1915",
+    "istnieje": true,
+    "fakty": [
+      "Twierdza Warszawa to zespół fortów i budowli fortyfikacyjnych wzniesionych przez władze Imperium Rosyjskiego wokół Warszawy w XIX wieku; określenie obowiązywało w latach 1879–1913.",
+      "Decyzję o przekształceniu Warszawy w twierdzę podjęto w 1879 roku; budowę fortów rozpoczęto na wiosnę 1883 roku, a zakończono w 1890 roku, wznosząc 20 fortów.",
+      "Łącznie twierdza składała się z 29 fortów i dużych punktów oporu, a jej jądrem była Cytadela Aleksandrowska.",
+      "Car wydał rozkaz w sprawie kasacji twierdzy 31 stycznia 1909 roku; likwidację zaczęto od kaponier fortów.",
+      "W sierpniu 1915 roku Warszawa została poddana bez walki; przed opuszczeniem miasta wojska rosyjskie wysadziły najważniejsze obiekty forteczne i mosty.",
+      "W 1939 roku forty obsadzili polscy obrońcy miasta; Fort IX („Czerniaków”) był miejscem bardzo ciężkich walk z Niemcami."
+    ],
+    "ciekawostki": [
+      "Twierdza zamknęła rozwijające się miasto na stosunkowo niewielkiej przestrzeni, co zahamowało jego rozwój terytorialny na kilkadziesiąt lat.",
+      "Elementami obronnymi były również naturalne mokradła, potoki i glinianki, uwzględniane przy projektowaniu umocnień."
+    ],
+    "summary_en": "A ring of 19th-century forts built by the Russian Empire around Warsaw between 1879 and 1913, with the Alexander Citadel at its core. Much of it was dismantled after 1909, and the forts saw fighting in 1939.",
+    "ludzie": [],
+    "dawne_nazwy": ["Cytadela Aleksandrowska (jądro twierdzy)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Twierdza Warszawa", "url": "https://pl.wikipedia.org/wiki/Twierdza_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zespół rozproszony na wielu terenach; współrzędne z nagłówka (okolica Cytadeli). Część umocnień rozebrano, część zachowano. Artykuł w zrzucie urywa się w opisie okresu okupacji."
+  },
+  {
+    "id": "osiedle-wyspianskiego",
+    "nazwa": "Wyspiańskiego",
+    "name_en": "Wyspiańskiego housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Henkla 2 i 6; ul. Wyspiańskiego 5, 6/8 i 7",
+    "adres_historyczny": null,
+    "lat": 52.265,
+    "lon": 20.979722,
+    "lokalizacja": "dokladna",
+    "okres": "1953–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zaprojektowali w latach 1951–1952 Jacek Nowicki we współpracy z Bogusławem Karczewskim.",
+      "W latach 1953–1956 powstało łącznie 500 mieszkań; realizację prowadziło przedsiębiorstwo ZBW-1.",
+      "Przed wojną w tym miejscu stała zabudowa willowa i jednorodzinna oraz korty tenisowe; wokół pl. Henkla budynki zaprojektował Romuald Gutt.",
+      "Budynki mają po trzy kondygnacje, wysokie mansardowe dachy z lukarnami i czerwoną dachówkę.",
+      "Osiedle powstało w schyłkowym okresie realizmu socjalistycznego i nawiązuje do przedwojennego stylu dworkowego.",
+      "Od lipca 2012 roku wszystkie budynki osiedla znajdują się w gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [
+      "Garaż podziemny miał wjazd od ul. Popiełuszki, wówczas ul. Stołecznej, i był przeznaczony na samochody oraz rowery."
+    ],
+    "summary_en": "A 1950s housing estate of five low buildings around Wyspiańskiego street and Plac Henkla in Old Żoliborz, designed by Jacek Nowicki. All its buildings have been listed in the Warsaw register of monuments since 2012.",
+    "ludzie": [
+      {"kto": "Jacek Nowicki", "rola": "autor projektu osiedla (z Bogusławem Karczewskim)", "wiki": null},
+      {"kto": "Bogusław Karczewski", "rola": "współautor projektu", "wiki": null},
+      {"kto": "Romuald Gutt", "rola": "projektant przedwojennych budynków wokół pl. Henkla", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Stołeczna (dziś ul. Popiełuszki)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wyspiańskiego", "url": "https://pl.wikipedia.org/wiki/Wyspia%C5%84skiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "x-pawilon-cytadeli-warszawskiej",
+    "nazwa": "X Pawilon Cytadeli Warszawskiej",
+    "name_en": "Pavilon X of the Warsaw Citadel",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": null,
+    "adres_historyczny": "Cytadela Warszawska",
+    "lat": 52.266667,
+    "lon": 21.000278,
+    "lokalizacja": "dokladna",
+    "okres": "1828–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pawilon powstał w 1828 roku w ramach rozbudowy koszar Cytadeli jako magazyn umundurowania.",
+      "Od 5 lipca 1833 roku przystosowano go na więzienie; zlokalizowano tu centralne więzienie śledcze dla więźniów politycznych.",
+      "Od 1834 roku działała tu Komisja Śledcza, centralny organ śledczy przestępstw politycznych w Królestwie Polskim.",
+      "Kilkuset więźniów stracono na stokach twierdzy, a tysiące wywieziono na katorgę lub zesłanie syberyjskie.",
+      "Budynek został doszczętnie zniszczony w wybuchu prochowni w Cytadeli 13 października 1923 roku.",
+      "Pawilon udostępniono zwiedzającym 22 stycznia 1963 roku w ramach obchodów setnej rocznicy powstania styczniowego.",
+      "W 2015 roku zakończono remont, odnowiono elewację i zainstalowano multimedia; w sierpniu 2015 roku przed budynkiem odsłonięto popiersia pięciu członków Rządu Narodowego skazanych na karę śmierci."
+    ],
+    "ciekawostki": [
+      "Wśród więźniów X Pawilonu byli m.in. Apollo Korzeniowski, Romuald Traugutt, Józef Piłsudski, Roman Dmowski i Róża Luksemburg."
+    ],
+    "summary_en": "A pavilon of the Warsaw Citadel, built in 1828 and used from 1833 as the central political prison of the Russian partition. It now houses a branch of the Museum of Independence, and the building was destroyed by an explosion in 1923.",
+    "ludzie": [
+      {"kto": "Romuald Traugutt", "rola": "więzień polityczny, członek Rządu Narodowego (stracony)", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "więzień polityczny", "wiki": null},
+      {"kto": "Róża Luksemburg", "rola": "więźniarka polityczna", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: X Pawilon Cytadeli Warszawskiej", "url": "https://pl.wikipedia.org/wiki/X_Pawilon_Cytadeli_Warszawskiej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje daty odbudowy po zniszczeniu w 1923 roku."
+  }
+]

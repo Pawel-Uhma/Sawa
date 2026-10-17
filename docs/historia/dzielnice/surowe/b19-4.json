@@ -1,0 +1,118 @@
+[
+  {
+    "id": "fotoplastikon-warszawski",
+    "nazwa": "Fotoplastikon Warszawski",
+    "name_en": "Warsaw Photoplasticon (Hoser tenement, Jerozolimskie 51)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 51 (kamienica Hoserów)",
+    "adres_historyczny": null,
+    "lat": 52.2288,
+    "lon": 21.0085,
+    "lokalizacja": "dokladna",
+    "okres": "1946–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fotoplastikon Warszawski, oddział Muzeum Powstania Warszawskiego, mieści się w kamienicy Hoserów w Alejach Jerozolimskich 51; jego głównym eksponatem jest zabytkowy fotoplastykon.",
+      "Dokładna data powstania urządzenia nie jest znana; w kamienicy Hoserów działa od października 1946 roku.",
+      "Urządzenie wcześniej działało we Lwowie i w Krakowie, gdzie nosiło nazwę „Panorama”.",
+      "Ludwik Krempa, mieszkający w kamienicy Hoserów od 1937 roku, odkupił fotoplastykon od Stefana Wicherskiego ze Lwowa.",
+      "Fotoplastykon został uruchomiony w miejscu, w którym do wybuchu powstania warszawskiego żona Ludwika Krempy prowadziła pracownię krawiecką.",
+      "W 1987 roku fotoplastykon został wpisany do rejestru zabytków ruchomych.",
+      "W 2008 roku Tomasz Chudy wydzierżawił fotoplastykon Muzeum Powstania Warszawskiego, a w grudniu 2012 roku muzeum go zakupiło i otworzyło w kamienicy swój oddział.",
+      "W 2016 roku kolekcja zdjęć liczyła 7 tys. sztuk, a w 2024 roku przekroczyła 10 tys."
+    ],
+    "ciekawostki": [
+      "Fotoplastykon ma 24 miejsca do oglądania zdjęć; obejrzenie 48 fotografii zajmuje 12 minut i 30 sekund.",
+      "Okolica fotoplastykonu posłużyła za plan filmów „Warszawa” i „Przystań” oraz seriali „Polskie drogi” i „Czas honoru”."
+    ],
+    "summary_en": "The Warsaw Photoplasticon is a branch of the Warsaw Uprising Museum in the Hoser tenement at Jerozolimskie 51. Its historic stereoscopic photo viewer has been operating there since October 1946, and the collection now holds over 10,000 photographs.",
+    "ludzie": [
+      {"kto": "Ludwik Krempa", "rola": "właściciel fotoplastykonu, uruchomił go w kamienicy Hoserów", "wiki": null},
+      {"kto": "Stefan Wicherski", "rola": "lwowski właściciel kilku fotoplastykonów, od którego Krempa odkupił urządzenie", "wiki": null},
+      {"kto": "Józef Chudy", "rola": "kupił fotoplastykon wraz ze zbiorem zdjęć w 1973 roku", "wiki": null},
+      {"kto": "Tomasz Chudy", "rola": "wnuk właściciela, ponownie uruchomił fotoplastykon w 1992 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Panorama (nazwa w Krakowie)"],
+    "zrodla": [{"tytul": "Wikipedia: Fotoplastikon Warszawski", "url": "https://pl.wikipedia.org/wiki/Fotoplastikon_Warszawski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje głównie historię urządzenia; rekord dotyczy miejsca, w którym działa."
+  },
+  {
+    "id": "frascati-warszawa",
+    "nazwa": "Frascati",
+    "name_en": "Frascati (historic area by the Vistula escarpment)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "park im. Marszałka Edwarda Rydza-Śmigłego (pozostałość Ogrodów Frascati)",
+    "adres_historyczny": null,
+    "lat": 52.2283,
+    "lon": 21.0283,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1779–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Frascati to historyczna nazwa obszaru na wschód od placu Trzech Krzyży, na tarasie nad skarpą wiślaną; nazwa pochodzi od włoskiego miasteczka Frascati.",
+      "Historia zaczyna się ok. 1779 roku, gdy wytyczono aleję od ul. Wiejskiej do rezydencji księcia podkomorzego Kazimierza Poniatowskiego.",
+      "Na początku XIX wieku francuski restaurator Szymon Chovot założył tu ogród rozrywkowy o nazwie Frascati, odkupiwszy teren od Poniatowskiego.",
+      "W latach 1912–1913 i w 1929 roku przeprowadzono parcelacje; powstała dzielnica willowa, a bliżej Sejmu zwarta zabudowa dużych luksusowych kamienic.",
+      "Willa Pniewskiego, przebudowana w latach 1935–1939, była domem znanego architekta Bohdana Pniewskiego.",
+      "W latach 50. XX wieku na terenie ogrodów urządzono park Kultury i Wypoczynku, którego główna aleja ciągnęła się od monumentalnych schodów na osi ul. Prusa po brzeg Wisły.",
+      "W latach 2005–2006 w parku odbywał się Festiwal Artystyczny „Ogrody Frascati”."
+    ],
+    "ciekawostki": [
+      "Po śmierci księcia Poniatowskiego teren wielokrotnie zmieniał właścicieli; mieszkał tu m.in. Nikołaj Nowosilcow, a w XIX wieku rodzina Branickich (właścicielem był Władysław Branicki)."
+    ],
+    "summary_en": "Frascati is the historic name of an area east of Plac Trzech Krzyży on the Vistula escarpment, begun around 1779 as the garden of Prince Kazimierz Poniatowski. It was partly built up with villas and tenements after the 1912–1929 parcelling and is now partly the Rydz-Śmigły Park.",
+    "ludzie": [
+      {"kto": "Kazimierz Poniatowski", "rola": "książę podkomorzy, właściciel ogrodów „Na Górze”", "wiki": null},
+      {"kto": "Szymon Chovot", "rola": "francuski restaurator, założyciel ogrodu rozrywkowego Frascati", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "architekt, właściciel przebudowanej willi", "wiki": null},
+      {"kto": "Nikołaj Nowosilcow", "rola": "mieszkaniec Frascati", "wiki": null},
+      {"kto": "Władysław Branicki", "rola": "właściciel Frascati w XIX w.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ogrody „Na Górze”", "Ogrody Frascati"],
+    "zrodla": [{"tytul": "Wikipedia: Frascati (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Frascati_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar, nie pojedynczy budynek; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "galeria-luxenburga",
+    "nazwa": "Galeria Luxenburga",
+    "name_en": "Luxenburg Gallery (passage at Senatorska 29)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Senatorska 29 (teren między ul. Senatorską a ul. Niecałą)",
+    "lat": 52.24335556,
+    "lon": 21.00692778,
+    "lokalizacja": "dokladna",
+    "okres": "1907–1944",
+    "istnieje": false,
+    "fakty": [
+      "Galeria Luxenburga, kompleks budynków przy ul. Senatorskiej 29, zajmował teren między ulicami Senatorską i Niecałą.",
+      "Obiekt powstał w latach 1907–1909, został rozbudowany w latach 20. XX wieku i całkowicie zniszczony w powstaniu warszawskim 1944.",
+      "Pierwotny projekt przewidywał zabudowę pasażu po obu stronach, ale zrealizowano go tylko od strony ul. Senatorskiej: powstał Grand Hotel, sala kinowa, sklepy, restauracje i kawiarnia Grand Café.",
+      "W latach 1919–1930 w galerii mieścił się kabaret Qui Pro Quo.",
+      "W latach 1931–1937 w salach po kabarecie działało Żydowskie Studio Eksperymentalne Teatr Młodych.",
+      "Wnętrza hotelu Grand zaprojektowali architekt Józef Gałęzowski i malarz Edward Trojanowski.",
+      "Galeria spłonęła całkowicie w powstaniu warszawskim; ruiny rozebrano, a w miejscu budynku w późniejszych latach powstała ulica Canaletta."
+    ],
+    "ciekawostki": [
+      "W pasażu działało założone przez Kazimierza Lisieckiego Ognisko Towarzystwa Przyjaciół Dzieci Ulicy."
+    ],
+    "summary_en": "The Luxenburg Gallery was a shopping and entertainment passage with the Grand Hotel at Senatorska 29, built in 1907–1909 for the entrepreneur Maximilian Luxenburg. It was completely destroyed in the 1944 uprising, and Canaletta Street now runs across its site.",
+    "ludzie": [
+      {"kto": "Maximilian Luxenburg", "rola": "przedsiębiorca, inwestor obiektu", "wiki": null},
+      {"kto": "Leon S. Drews", "rola": "architekt (1869–1920)", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "architekt", "wiki": null},
+      {"kto": "Józef Gałęzowski", "rola": "architekt wnętrz hotelu Grand", "wiki": null},
+      {"kto": "Edward Trojanowski", "rola": "malarz, autor wnętrz hotelu Grand", "wiki": null},
+      {"kto": "Kazimierz Lisiecki", "rola": "założyciel Ogniska Towarzystwa Przyjaciół Dzieci Ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Galeria Luxenburga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Galeria_Luxenburga_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

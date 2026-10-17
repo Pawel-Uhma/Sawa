@@ -1,0 +1,308 @@
+[
+  {
+    "id": "upper-one",
+    "nazwa": "Upper One",
+    "name_en": "Upper One (office tower and hotel, under construction)",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "al. Jana Pawła II / ul. Grzybowska (zbieg)",
+    "adres_historyczny": null,
+    "lat": 52.236255, "lon": 20.99635,
+    "lokalizacja": "dokladna",
+    "okres": "2023–dziś",
+    "istnieje": false,
+    "fakty": [
+      "Upper One to budowany kompleks z wieżowcem o wysokości 131,5 m i 34 kondygnacjach oraz hotelem o 17 kondygnacjach, na zbiegu alei Jana Pawła II i ul. Grzybowskiej.",
+      "Kompleks powstaje na miejscu dawnego budynku Atrium International z lat 90. XX wieku.",
+      "Rozbiórka Atrium trwała siedem miesięcy; odzyskano i zrecyklingowano m.in. 388 ton żelaza i stali oraz 25 ton kabli.",
+      "Budowa wieżowca rozpoczęła się 21 września 2023 roku od budowy pięciu kondygnacji podziemnych.",
+      "Całkowita powierzchnia biurowa wieżowca ma wynieść ponad 35 tys. m², a hotelowa 11 tys. m².",
+      "Za projekt odpowiada Medusa Group, a wykonawcą generalnym jest spółka Strabag."
+    ],
+    "ciekawostki": [
+      "Pięć przeszklonych wind wieżowca ma przypominać „pulsujący” ruch, a fasada jest asymetryczna."
+    ],
+    "summary_en": "Upper One is a complex under construction at the corner of al. Jana Pawła II and Grzybowska street in Wola: a 131.5 m, 34-storey office tower and a 17-storey hotel. It replaces the 1990s Atrium International building, which was dismantled over seven months. Construction began on 21 September 2023.",
+    "ludzie": [],
+    "dawne_nazwy": ["Atrium International"],
+    "zrodla": [{"tytul": "Wikipedia: Upper One", "url": "https://pl.wikipedia.org/wiki/Upper_One"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Budowa w toku wg artykułu; artykuł nie podaje stanu bieżącego, więc istnieje ustawione na false."
+  },
+  {
+    "id": "v-tower",
+    "nazwa": "V Tower",
+    "name_en": "V Tower office building",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Chmielna 85/87",
+    "adres_historyczny": null,
+    "lat": 52.2269, "lon": 20.9931,
+    "lokalizacja": "dokladna",
+    "okres": "1998–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biurowiec przy ul. Chmielnej 85/87 zaprojektowali Jerzy Czyż i Leszek Kazimierz Klajnert.",
+      "Ma 82 m wysokości i 22 kondygnacje. Powstał w latach 1998–2000.",
+      "Budynek był siedzibą ubezpieczyciela TUiR Warta; wcześniej nosił nazwę Warta Tower.",
+      "W 2019 roku Warta ogłosiła wynajęcie na 10 lat powierzchni w budowanym biurowcu Warsaw Unit, gdzie w 2021 roku miała skonsolidować działalność z trzech warszawskich lokalizacji.",
+      "Od 2023 roku wieżowiec jest własnością Cornerstone Investment Management.",
+      "W styczniu 2024 roku rozpoczęła się rewitalizacja budynku."
+    ],
+    "ciekawostki": [
+      "W holu budynku znajdują się rzeźby Barbary Falender, a ogrody na pięciu dziedzińcach wewnętrznych zajmują łącznie 1200 m²."
+    ],
+    "summary_en": "V Tower, formerly Warta Tower, is a 82 m, 22-storey office building at ul. Chmielna 85/87 in Wola, designed by Jerzy Czyż and Leszek Kazimierz Klajnert. Built in 1998–2000, it housed the Warta insurance company. Revitalisation began in January 2024.",
+    "ludzie": [
+      {"kto": "Jerzy Czyż", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Leszek Kazimierz Klajnert", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Barbara Falender", "rola": "autorka rzeźb w holu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warta Tower"],
+    "zrodla": [{"tytul": "Wikipedia: V Tower", "url": "https://pl.wikipedia.org/wiki/V_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje sprzeczne określenia właściciela w różnych miejscach; w rekordzie tylko stan z 2023 roku."
+  },
+  {
+    "id": "varso",
+    "nazwa": "Varso",
+    "name_en": "Varso office complex and Varso Tower",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Chmielna / al. Jana Pawła II",
+    "adres_historyczny": null,
+    "lat": 52.228626, "lon": 20.999175,
+    "lokalizacja": "dokladna",
+    "okres": "2011–2022",
+    "istnieje": true,
+    "fakty": [
+      "Inwestycję realizowano na działce o powierzchni 1,72 ha, zakupionej w 2011 roku od PKP przez słowacką firmę HB Reavis za 171 mln zł.",
+      "Planowany w tym miejscu wieżowiec miał roboczą nazwę Chmielna Business Center; nazwa Varso nawiązuje do łacińskiej nazwy Warszawy: Varsovia.",
+      "Pozwolenie na budowę inwestor uzyskał w grudniu 2016 roku, a w tym samym miesiącu ruszyły prace budowlane.",
+      "W październiku 2017 roku na terenie budowy wykopano 60-tonowy głaz narzutowy, który prawdopodobnie 1,5 mln lat wcześniej przyniósł tu lodowiec.",
+      "Kompleks tworzą trzy budynki: 230-metrowa wieża główna (łącznie z ażurową iglicą 310 m) oraz dwa wieżowce boczne o wysokości 90 i 81 m.",
+      "Docelową wysokość 310 metrów wieżowiec osiągnął 21 lutego 2021 roku; budowę zakończono we wrześniu 2022 roku.",
+      "Pierwsze testy nadawania radiowego z nadajnika w wieżowcu przeprowadzono w dniach 25–28 lipca 2023 roku."
+    ],
+    "ciekawostki": [
+      "Głaz narzutowy przewieziono na Pole Mokotowskie, gdzie stanął obok Biblioteki Narodowej; ma zostać wyeksponowany przed wejściem do wieżowca.",
+      "Iglica Varso Tower ma 80 metrów wysokości i waży 53 tony."
+    ],
+    "summary_en": "Varso is an office complex in Wola at the corner of Chmielna street and al. Jana Pawła II. Its 310 m Varso Tower is the tallest building in Poland and in the EU. HB Reavis bought the plot from PKP in 2011, construction started in December 2016, and the complex was completed in September 2022.",
+    "ludzie": [],
+    "dawne_nazwy": ["Chmielna Business Center"],
+    "zrodla": [{"tytul": "Wikipedia: Varso", "url": "https://pl.wikipedia.org/wiki/Varso"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje plany otwarcia tarasu widokowego na 230 m w 2025 roku; stanu z tego roku artykuł nie potwierdza."
+  },
+  {
+    "id": "warszawa-glowna",
+    "nazwa": "Warszawa Główna",
+    "name_en": "Warszawa Główna railway station",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Towarowa 1",
+    "adres_historyczny": null,
+    "lat": 52.2258, "lon": 20.9858,
+    "lokalizacja": "dokladna",
+    "okres": "1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Warszawa Główna (do 2021 Warszawa Główna Osobowa) to stacja PKP Polskich Linii Kolejowych przy ul. Towarowej 1 na Czystem.",
+      "Od 1945 roku do czasu oddania dworca Warszawa Centralna pełniła funkcję głównego dworca kolejowego stolicy.",
+      "2 lipca 1945 roku oddano do użytku prowizorycznie zaadaptowany budynek dawnych magazynów dawnego dworca towarowego Kolei Warszawsko-Wiedeńskiej.",
+      "Budynek dworcowy wg projektu Wiktora Ballogha wzniesiono w latach 1945–1946; oddano go do użytku 12 lipca 1946 roku.",
+      "W 1967 roku, dzięki rozbudowie warszawskiej linii średnicowej, część pociągów dalekobieżnych zaczęła ponownie kursować z pominięciem Warszawy Głównej.",
+      "Dworzec zamknięto dla ruchu osobowego 29 maja 1976 roku; ruch pasażerski ostatecznie wstrzymano w 1997 roku.",
+      "W 2016 roku na dawnych peronach pocztowych uruchomiono Nocny Market; w 2021 roku ruszył jego szósty sezon.",
+      "Ruch pasażerski przywrócono w 2021 roku; odbudowę stacji zlecono w marcu 2018 roku w projekcie o wartości 87 mln zł."
+    ],
+    "ciekawostki": [
+      "Podczas obrony Warszawy we wrześniu 1939 roku na stację wprowadzano (do 19 września) pociągi z amunicją z magazynów w Palmirach.",
+      "Do 1944 roku najważniejszym dworcem Warszawy był Dworzec Główny, który Niemcy zniszczyli po upadku powstania warszawskiego."
+    ],
+    "summary_en": "Warszawa Główna (formerly Warszawa Główna Osobowa) is a PKP PLK railway station at ul. Towarowa 1 on Czyste in Wola. It was the main station of Warsaw from 1945 until Warszawa Centralna opened, closed to passengers in 1976 and was rebuilt after 2018.",
+    "ludzie": [
+      {"kto": "Wiktor Ballogh", "rola": "autor projektu budynku dworcowego (1945–1946)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawa Główna Osobowa"],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Główna", "url": "https://pl.wikipedia.org/wiki/Warszawa_G%C5%82%C3%B3wna"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Stacja Muzeum (ul. Towarowa 3) pominięta jako instytucja. Artykuł podaje, że budowa była opóźniona przez relokację zabytkowego taboru."
+  },
+  {
+    "id": "warszawa-jelonki",
+    "nazwa": "Warszawa Jelonki (stacja)",
+    "name_en": "Warszawa Jelonki (railway junction)",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.231833, "lon": 20.922722,
+    "lokalizacja": "dokladna",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Warszawa Jelonki to stacja węzłowa powstała w 1951 roku, o przeznaczeniu towarowym.",
+      "Stacja ma 4 tory główne.",
+      "W 2010 roku część układu torowego przeszła wymianę nawierzchni i semaforów.",
+      "Docelowo stacja ma być zdalnie sterowana ze stacji Warszawa Główna Towarowa.",
+      "W latach 70. i 80. XX wieku przez stację przejeżdżały pociągi międzynarodowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Jelonki is a freight-oriented junction station in Wola, opened in 1951, with four main tracks. Its track was partly renewed in 2010, and it is planned for remote control from Warszawa Główna Towarowa. International trains ran through it in the 1970s and 1980s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Jelonki", "url": "https://pl.wikipedia.org/wiki/Warszawa_Jelonki"}],
+    "pewnosc": "srednia",
+    "uwagi": "Krótki artykuł, bez adresu."
+  },
+  {
+    "id": "warszawa-kaliska",
+    "nazwa": "Warszawa Kaliska",
+    "name_en": "Warszawa Kaliska station (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": "róg al. Jerozolimskich i ul. Żelaznej",
+    "lat": 52.226944, "lon": 20.995,
+    "lokalizacja": "dokladna",
+    "okres": "1902–1915",
+    "istnieje": false,
+    "fakty": [
+      "Dworzec, wybudowany w 1902 roku według projektu Józefa Hussa, znajdował się na rogu Alej Jerozolimskich i ul. Żelaznej.",
+      "Jego budowę wymusił szerszy od Kolei Warszawsko-Wiedeńskiej rozstaw szyn Kolei Warszawsko-Kaliskiej.",
+      "Dworzec został zniszczony podczas wycofywania się Rosjan z Warszawy w sierpniu 1915 roku.",
+      "Po I wojnie światowej Kolej Warszawsko-Kaliska została przystosowana do normalnego rozstawu szyn, w związku z czym dworca nie odbudowano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Kaliska was the initial station of the broad-gauge Warsaw–Kalisz railway, located at the corner of Aleje Jerozolimskie and Żelazna street in Wola. Built in 1902, it was destroyed during the Russian withdrawal in August 1915 and was not rebuilt.",
+    "ludzie": [
+      {"kto": "Józef Huss", "rola": "autor projektu dworca (1902)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Kaliska", "url": "https://pl.wikipedia.org/wiki/Warszawa_Kaliska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwisko architekta w artykule w dopełniaczu („Józefa Hussa”)."
+  },
+  {
+    "id": "warszawa-kolo-przystanek",
+    "nazwa": "Warszawa Koło (przystanek)",
+    "name_en": "Warszawa Koło railway stop",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Obozowa (od strony Obozowej; wejścia od strony ul. Zawiszy)",
+    "adres_historyczny": null,
+    "lat": 52.246389, "lon": 20.959056,
+    "lokalizacja": "dokladna",
+    "okres": "2018–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek osobowy PKP PLK na osiedlu Koło przy ul. Obozowej, na kolei obwodowej, został wybudowany w latach 2017–2018 podczas modernizacji odcinka między stacjami Warszawa Gdańska i Warszawa Zachodnia.",
+      "Umowę na modernizację, wraz z budową tego przystanku, zawarto w lutym 2017 roku.",
+      "Przystanek oddano do użytku 21 października 2018 roku po zakończeniu remontu.",
+      "W 2022 roku dzienna wymiana pasażerska na przystanku wyniosła 300–399 osób.",
+      "Wcześniej tę samą nazwę nosił przystanek przy ul. Górczewskiej, przemianowany w 2018 roku na Warszawa Młynów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Koło is a PKP railway stop on the Koło estate at ul. Obozowa, on the Warsaw circular line. Built in 2017–2018 during the line's modernisation, it opened on 21 October 2018 and had 300–399 daily passengers in 2022.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Koło", "url": "https://pl.wikipedia.org/wiki/Warszawa_Ko%C5%82o"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres ogólny z artykułu (ul. Obozowa, dostęp od ul. Zawiszy)."
+  },
+  {
+    "id": "warszawa-mlynow-przystanek",
+    "nazwa": "Warszawa Młynów (przystanek)",
+    "name_en": "Warszawa Młynów railway stop",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Sokołowska",
+    "adres_historyczny": "ul. Górczewska (dawny przystanek Warszawa Koło)",
+    "lat": 52.239167, "lon": 20.958611,
+    "lokalizacja": "dokladna",
+    "okres": "1988–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek do 2018 roku nazywał się Warszawa Koło; położony jest przy ul. Sokołowskiej na kolei obwodowej.",
+      "Dawny przystanek Warszawa Koło przy ul. Górczewskiej oddano do użytku w 1988 roku, dwa lata po elektryfikacji odcinka kolei obwodowej.",
+      "Od 3 września 2012 roku przystanek obsługiwała linia S9 SKM Warszawa.",
+      "12 marca 2017 roku przystanek zamknięto w celu przebudowy, obejmującej węzeł przesiadkowy ze stacją metra Młynów linii M2.",
+      "Po przebudowie nazwę zmieniono na Warszawa Młynów, aby ujednolicić ją z nazwą przyległej stacji metra.",
+      "Przystanek oddano do użytku po remoncie 21 października 2018 roku."
+    ],
+    "ciekawostki": [
+      "Przy wejściu na wiadukt i przystanek po stronie południowej ul. Górczewskiej zachował się niemiecki schron Ringstand 58c, zwany Tobrukiem, zbudowany przez Niemców w 1944 roku."
+    ],
+    "summary_en": "Warszawa Młynów is a railway stop on the Warsaw circular line at ul. Sokołowska in Wola, next to the Młynów metro station on Line M2. It was called Warszawa Koło until 2018, when it was rebuilt and renamed.",
+    "ludzie": [],
+    "dawne_nazwy": ["Warszawa Koło (do 2018, przy ul. Górczewskiej)"],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Młynów", "url": "https://pl.wikipedia.org/wiki/Warszawa_M%C5%82yn%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy przystanku Młynów; dawny przystanek Koło przy ul. Górczewskiej to odrębne miejsce."
+  },
+  {
+    "id": "warszawa-ochota-dworzec",
+    "nazwa": "Warszawa Ochota (dworzec)",
+    "name_en": "Warszawa Ochota railway station and stop",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Aleje Jerozolimskie 58, pl. Artura Zawiszy",
+    "adres_historyczny": null,
+    "lat": 52.225833, "lon": 20.991111,
+    "lokalizacja": "dokladna",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1954–1962 Arseniusz Romanowicz i Piotr Szymaniak wraz z zespołem opracowali projekt przystanku, roboczo nazywanego Warszawa Zawisza.",
+      "Dworzec i peron 1 uruchomiono 29 września 1963 roku, a peron 2 (przystanek WKD) 8 grudnia 1963 roku.",
+      "Pawilon dworca zaprojektował Wacław Zalewski; rzut oparto na planie kwadratu o boku 17,25 m.",
+      "Łupinowy dach o grubości 8 cm wykonano z żelbetu w kształcie paraboloidy hiperbolicznej i pokryto mozaiką z czarnych i białych pasów.",
+      "Schody ruchome uruchomiono na początku 1965 roku; w latach 80. zostały zdemontowane po awarii.",
+      "We wrześniu 2007 roku ogłoszono przetarg na remont dworca; do początku 2009 roku wymieniono materiały wykończeniowe, instalacje i oświetlenie.",
+      "24 lipca 2012 roku obiekt wpisano do gminnej ewidencji zabytków; w 2019 roku pawilon kasowy wraz z kładką zachodnią i zejściami na perony wpisano do rejestru zabytków.",
+      "W 2022 roku dzienna wymiana pasażerska na przystanku wyniosła 6500 osób, a na przystanku WKD 2000–3000."
+    ],
+    "ciekawostki": [
+      "W 2017 roku, przy przygotowaniach do przebudowy linii średnicowej, zapowiedziano, że przystanek zostanie przykryty.",
+      "Ze względu na problemy z własnością gruntu nie doszło do odbudowy słupa z neonem PKP i WKD."
+    ],
+    "summary_en": "Warszawa Ochota is a historic railway station and stop at Aleje Jerozolimskie 58 in Wola, opened in 1963. Its modernist pavilion has a hyperbolic-paraboloid roof. It was entered in the municipal register of monuments in 2012, and its ticket pavilion in the national register in 2019.",
+    "ludzie": [
+      {"kto": "Arseniusz Romanowicz", "rola": "współautor projektu przystanku", "wiki": null},
+      {"kto": "Piotr Szymaniak", "rola": "współautor projektu przystanku", "wiki": null},
+      {"kto": "Wacław Zalewski", "rola": "projektant pawilonu dworca", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawa Zawisza (roboczo)"],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Ochota (przystanek kolejowy)", "url": "https://pl.wikipedia.org/wiki/Warszawa_Ochota_%28przystanek_kolejowy%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie dachu dworca; fakty z zachowanej części. Pominięto powiązanie z dworcem Powiśle (w artykule wspomniane tylko ogólnie)."
+  },
+  {
+    "id": "warszawa-powazki-przystanek",
+    "nazwa": "Warszawa Powązki (przystanek)",
+    "name_en": "Warszawa Powązki railway stop",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Duchnicka (przy granicy Żoliborza i Woli)",
+    "adres_historyczny": null,
+    "lat": 52.255944, "lon": 20.971417,
+    "lokalizacja": "dokladna",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwuperonowy przystanek osobowy PKP PLK położony na osiedlu Powązki, na granicy Żoliborza i Woli, wzdłuż ul. Duchnickiej, na kolei obwodowej.",
+      "Przystanek oddano do użytku 1 listopada 2019 roku.",
+      "Wejście na przystanek jest możliwe z wiaduktu w ciągu ul. Powązkowskiej oraz z kładki dla pieszych łączącej Żoliborz i Wolę, na wysokości ulic Przasnyskiej i Słodowieckiej.",
+      "Wiaty pokrywają 70% długości peronów, na których ustawiono ławki i gabloty informacyjne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Powązki is a two-platform PKP railway stop on the Warsaw circular line, on the border of Żoliborz and Wola along ul. Duchnicka. It opened on 1 November 2019 and is reached by a footbridge linking the two districts.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Powązki", "url": "https://pl.wikipedia.org/wiki/Warszawa_Pow%C4%85zki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki; przystanek leży na granicy dzielnic, dzielnica z nagłówka: Wola."
+  }
+]

@@ -1,0 +1,286 @@
+[
+  {
+    "id": "auditorium-minus",
+    "nazwa": "Auditorium Minus",
+    "name_en": "Auditorium Minus",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 26/28",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1888–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawny gmach Biblioteki Uniwersyteckiej (BUW) wzniesiono według projektu Stefana Szyllera i Antoniego Jabłońskiego-Jasieńczyka w 1888 roku.",
+      "Budynek był siedzibą Biblioteki Carskiego Uniwersytetu.",
+      "W latach 1901-1902 przeprowadzono pierwszą modernizację pod kierunkiem Antoniego Jabłońskiego, m.in. zainstalowano oświetlenie elektryczne i windę.",
+      "W latach 1929-1931 przebudowano wnętrze według projektów Aleksandra Biernackiego.",
+      "W czasie II wojny światowej biblioteki Narodową, Uniwersytecką i Ordynacji Krasińskich połączono, tworząc Staatsbibliothek Warschau.",
+      "W 1999 roku BUW przeniósł się na Powiśle do nowego gmachu, a budynek po gruntownym remoncie oddano ponownie do użytku w 2005 roku jako budynek dydaktyczny.",
+      "Aula mieści około 400 osób."
+    ],
+    "ciekawostki": [
+      "W dawnej części magazynowej zachowano fragmenty stalowych konstrukcji magazynu bibliotecznego z przełomu XIX i XX wieku."
+    ],
+    "summary_en": "The former main building of the University of Warsaw Library, designed in 1888 by Stefan Szyller and Antoni Jabłoński-Jasieńczyk. After the library moved to Powiśle in 1999 it was renovated and reopened in 2005 as a teaching building of the University of Warsaw campus.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "architekt projektu z 1888 roku", "wiki": null},
+      {"kto": "Antoni Jabłoński-Jasieńczyk", "rola": "architekt projektu z 1888 roku", "wiki": null},
+      {"kto": "Antoni Jabłoński", "rola": "kierownik modernizacji 1901-1902", "wiki": null},
+      {"kto": "Aleksander Biernacki", "rola": "autor projektów przebudowy wnętrza 1929-1931", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dawny BUW (Biblioteka Uniwersytecka w Warszawie)"],
+    "zrodla": [{"tytul": "Warszawikia: Auditorium Minus", "url": "https://warszawa.fandom.com/pl/wiki/Auditorium_Minus"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "babka-tower",
+    "nazwa": "Babka Tower",
+    "name_en": "Babka Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Jana Pawła II 80",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1999–2001",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec w Śródmieściu o wysokości 105 metrów i 28 kondygnacjach nadziemnych.",
+      "Wysokość do dachu wynosi 96 metrów.",
+      "Budowę rozpoczęto w 1999 roku, a ukończono w 2001 roku.",
+      "Projektantem był zespół JEMS Architekci.",
+      "Budynek znajduje się w pobliżu ronda Zgrupowania AK „Radosław” (d. Babka) i centrum handlowego Westfield Arkadia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 105-metre skyscraper with 28 above-ground floors on Aleja Jana Pawła II in Śródmieście, built in 1999-2001 to a design by JEMS Architekci.",
+    "ludzie": [
+      {"kto": "JEMS Architekci", "rola": "projektant", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Babka Tower", "url": "https://warszawa.fandom.com/pl/wiki/Babka_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z nagłówka artykułu."
+  },
+  {
+    "id": "zbor-baptystyczny-walicow-25",
+    "nazwa": "Baptystyczny Zbór Centralny",
+    "name_en": "Baptist Central Congregation",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Waliców 25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsze spotkania baptystyczne w Warszawie zainicjował Józef Herb w swoim mieszkaniu przy ul. Nowolipie 54.",
+      "W 1884 roku wynajęto nową salę zborową przy ul. Chłodnej 12.",
+      "W 1945 roku na sobór w Warszawie powołano Polski Kościół Ewangelicznych Chrześcijan Baptystów, którego prezesem został Aleksander Kircun.",
+      "Pomysł wybudowania Centrum Baptystycznego w Warszawie zrodził się w 1958 roku, podczas jubileuszu 100-lecia Kościoła Baptystów.",
+      "Uroczyste otwarcie obiektu nastąpiło w sobotę 9 września 1961 roku; kaplica miała 300 miejsc siedzących.",
+      "W latach 60. i 70. zbór prowadził pracę misyjną głównie w oparciu o obiekt przy ul. Waliców.",
+      "Kielce (1982) i Żyrardów (1984) usamodzielniły się jako zbory."
+    ],
+    "ciekawostki": [
+      "Następnego dnia po otwarciu odbył się chrzest 26 osób."
+    ],
+    "summary_en": "The central congregation of the Baptist Church in Warsaw, with about 400 members, located at Waliców 25. Its building was opened in 1961 and it served as the base for missionary work that founded new congregations, including in Kielce and Żyrardów.",
+    "ludzie": [
+      {"kto": "Józef Herb", "rola": "zainicjował pierwsze spotkania baptystyczne w Warszawie", "wiki": null},
+      {"kto": "Aleksander Kircun", "rola": "prezes Polskiego Kościoła Ewangelicznych Chrześcijan Baptystów od 1945", "wiki": null},
+      {"kto": "Oskar Truderung", "rola": "kaznodzieja zboru zaproszony we wrześniu 1905 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zbór w Warszawie (zbór baptystów), Nowolipie 54, Chłodna 12, Żelazna 54"],
+    "zrodla": [{"tytul": "Warszawikia: Baptystyczny Zbór Centralny", "url": "https://warszawa.fandom.com/pl/wiki/Baptystyczny_Zbór_Centralny"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu. Artykuł nie podaje roku poświęcenia świątyni przy Żelaznej 54."
+  },
+  {
+    "id": "baszta-mostowa",
+    "nazwa": "Baszta Mostowa",
+    "name_en": "Mostowa Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Boleść 2",
+    "adres_historyczny": "brama wjazdowa na most Zygmunta Augusta",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1581–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Baszta została wzniesiona w latach 1581–1582 z polecenia królowej Anny Jagiellonki jako brama wjazdowa na drewniany most Zygmunta Augusta.",
+      "Most Zygmunta Augusta istniał w latach 1573–1603 i uległ zniszczeniu w 1603 roku.",
+      "W latach 1648–1649, z inicjatywy króla Władysława IV, budynek przekształcono w prochownię, a przejazd zamurowano.",
+      "W 1769 roku zaczęto przekształcać budynek w więzienie zwane Domem Kary i Poprawy.",
+      "W 1835 roku więzienie przeniesiono na Pawiak, a w 1838 roku budynek przekształcono w kamienicę czynszową.",
+      "Budynek spłonął w 1944 roku, a odbudowano go w latach 1961–1967.",
+      "W 1972 roku w budynku umieszczono Teatr Stara Prochownia."
+    ],
+    "ciekawostki": [
+      "Na fasadzie znajduje się tablica upamiętniająca żołnierzy batalionu „Dzik” zgrupowania „Róg”, którzy walczyli w czasie powstania warszawskiego w tym rejonie.",
+      "Część murów baszty znajduje się pod ziemią, nawet do głębokości półtora metra."
+    ],
+    "summary_en": "A former gate tower at the entrance to the Zygmunt Augustus Bridge, later a powder magazine, prison and tenement house. Rebuilt in 1961-1967, it has housed the Stara Prochownia theatre since 1972.",
+    "ludzie": [
+      {"kto": "Anna Jagiellonka", "rola": "zleciła budowę baszty w latach 1581–1582", "wiki": null},
+      {"kto": "Władysław IV", "rola": "zainicjował przekształcenie budynku w prochownię w latach 1648–1649", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "przygotował projekt rozbudowy budynku na więzienie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Brama wjazdowa na most Zygmunta Augusta", "Dom Kary i Poprawy", "Prochownia"],
+    "zrodla": [{"tytul": "Warszawikia: Baszta Mostowa", "url": "https://warszawa.fandom.com/pl/wiki/Baszta_Mostowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "archikatedra-sw-jana",
+    "nazwa": "Bazylika Archikatedralna św. Jana Chrzciciela",
+    "name_en": "Archcathedral Basilica of St. John the Baptist",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Świętojańska 8",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "XIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki katedry sięgają XIII wieku, kiedy w tym miejscu powstał prawdopodobnie drewniany kościół parafialny książąt mazowieckich.",
+      "W 1406 roku świątynię podniesiono do rangi kolegiaty.",
+      "W 1602 roku podczas huraganu obalony został hełm wieży kościelnej, która nigdy nie została odbudowana.",
+      "W 1798 roku, po erygowaniu Biskupstwa Warszawskiego, świątynia otrzymała godność katedry, a w 1818 roku – archikatedry.",
+      "W 1861 roku w tej świątyni ogłoszono uwłaszczenie chłopów bez ciężarów względem szlachty.",
+      "W 1944 roku katedrę zniszczono w czasie powstania warszawskiego, a ruiny wysadzono w powietrze.",
+      "Archikatedrę zrekonstruowano w latach 1947–1956, a w 1961 roku podniesiono do rangi bazyliki mniejszej."
+    ],
+    "ciekawostki": [
+      "W ścianę boczną od strony Dziekanii wmurowano fragment gąsienicy niemieckiego czołgu-miny SdKfz 301 Borgward, którego wybuch uszkodził mury katedry."
+    ],
+    "summary_en": "One of Warsaw's oldest churches and the seat of the archbishops of Warsaw, on Świętojańska Street in the Old Town. Destroyed in 1944 and rebuilt in 1947-1956, it was raised to the rank of minor basilica in 1961.",
+    "ludzie": [
+      {"kto": "August Hlond", "rola": "kardynał prymas, który podjął decyzję o odbudowie katedry w pierwotnej formie", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "autor opracowań i projektu rekonstrukcji", "wiki": null},
+      {"kto": "Adam Idźkowski", "rola": "architekt przebudowy w połowie XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kolegiata św. Jana"],
+    "zrodla": [{"tytul": "Warszawikia: Bazylika Archikatedralna św. Jana Chrzciciela", "url": "https://warszawa.fandom.com/pl/wiki/Bazylika_Archikatedralna_św._Jana_Chrzciciela"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "bazylika-sw-krzyza",
+    "nazwa": "Bazylika św. Krzyża",
+    "name_en": "Basilica of the Holy Cross",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1510–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki kościoła w tym miejscu sięgają 1510 roku, kiedy powstała kapliczka, później drewniany kościółek.",
+      "W 1626 roku erygowano tu parafię, a w 1653 roku księża Misjonarze otrzymali ten kościół.",
+      "Drewniany kościół zniszczono w czasie potopu szwedzkiego; w 1679 roku przystąpiono do odbudowy w murowanej formie.",
+      "Kościół górny konsekrowano w 1696 roku; w 1757 roku ukończono fasadę z wieżami według projektu Jakuba Fontany.",
+      "Pierwszą mszę gorzkich żali odprawiono tu w 1707 roku.",
+      "W czasie powstania warszawskiego Niemcy 6 września wysadzili m.in. północną wieżę.",
+      "Od 1981 roku Polskie Radio w każdą niedzielę transmituje mszę z kościoła św. Krzyża.",
+      "W 2002 roku kościół podniesiono do godności bazyliki mniejszej."
+    ],
+    "ciekawostki": [
+      "W kościele pochowano serce Fryderyka Chopina oraz Władysława Reymonta.",
+      "Odprawiono tu msze pogrzebowe m.in. Józefa Poniatowskiego (1814), Stanisława Staszica (1826) i Stanisława Moniuszki (1872)."
+    ],
+    "summary_en": "A baroque basilica of the Congregation of the Mission on Krakowskie Przedmieście, built in the 1680s-1750s and rebuilt after the war. It holds the heart of Frédéric Chopin and the tomb of Władysław Reymont.",
+    "ludzie": [
+      {"kto": "Józef Szymon Bellotti", "rola": "zaprojektował halę kościoła", "wiki": null},
+      {"kto": "Józef Fontana", "rola": "projekt dolnej części fasady (1737)", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projekt fasady z wieżami (1757)", "wiki": null},
+      {"kto": "Fryderyk Chopin", "rola": "serce pochowane w kościele", "wiki": null},
+      {"kto": "Władysław Reymont", "rola": "pochowany w kościele", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kościół Misjonarzy"],
+    "zrodla": [{"tytul": "Warszawikia: Bazylika św. Krzyża", "url": "https://warszawa.fandom.com/pl/wiki/Bazylika_św._Krzyża"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu. Dane o pochowanych i mszach pogrzebowych wzięte wprost z artykułu."
+  },
+  {
+    "id": "belweder",
+    "nazwa": "Belweder",
+    "name_en": "Belweder Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Belwederska 54/56",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "połowa XVII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał w połowie XVII wieku jako własność Kazimierza Paca.",
+      "W pierwszej połowie XVIII wieku przebudowano go w stylu barokowym.",
+      "Od 1764 roku pałac był własnością króla Stanisława Augusta Poniatowskiego.",
+      "W latach 1818–1830 Belweder był siedzibą naczelnego wodza wojska polskiego w Królestwie Polskim.",
+      "Niegdyś był pierwszą siedzibą Prezydenta II Rzeczypospolitej.",
+      "Dziś jest honorową siedzibą Prezydenta Rzeczypospolitej Polskiej, także prezydenta III Rzeczypospolitej (1989–1994 i od 2010 roku)."
+    ],
+    "ciekawostki": [
+      "Przed bramą Belwederu kończy się akcja powieści Stefana Żeromskiego „Przedwiośnie”."
+    ],
+    "summary_en": "A small classicist palace in Ujazdów, built in the mid-17th century and later owned by King Stanisław August Poniatowski. It is the honorary seat of the President of Poland.",
+    "ludzie": [
+      {"kto": "Kazimierz Pac", "rola": "pierwszy właściciel pałacu w połowie XVII wieku", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "właściciel od 1764 roku", "wiki": null},
+      {"kto": "Stefan Żeromski", "rola": "akcja „Przedwiośnia” kończy się przed bramą Belwederu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Belweder", "url": "https://warszawa.fandom.com/pl/wiki/Belweder"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  },
+  {
+    "id": "bialy-palacyk-na-frascati",
+    "nazwa": "Biały Pałacyk na Frascati",
+    "name_en": "White Palace on Frascati",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Na Skarpie 20/26",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1779–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1779 roku według projektu Szymona Bogumiła Zuga wybudowano tu letni pałacyk, w miejscu ogrodu „Na Górze” założonego przez księcia Kazimierza Poniatowskiego.",
+      "Na początku XIX wieku posiadłość należała do francuskiego restauratora Szymona Chovota.",
+      "W drugiej połowie XIX wieku ogrody kupiła hrabina Róża z Potockich Branicka.",
+      "W 1893 roku hrabina Maria poślubiła księcia Zdzisława Lubomirskiego, który otrzymał pałacyk w darze.",
+      "Pałacyk wynajęło poselstwo Chin i użytkowało go do 1939 roku.",
+      "Od 1948 roku mieści się tu Muzeum Ziemi PAN."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A summer palace built in 1779 to a design by Szymon Bogumił Zug, belonging to the Branicki-Lubomirski family. It has housed the Museum of the Earth of the Polish Academy of Sciences since 1948.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu z 1779 roku", "wiki": null},
+      {"kto": "Kazimierz Poniatowski", "rola": "założył ogród „Na Górze”, na którego miejscu powstał pałacyk", "wiki": null},
+      {"kto": "Zdzisław Lubomirski", "rola": "otrzymał pałacyk w darze po ślubie z Marią Branicką", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ogród „Na Górze”"],
+    "zrodla": [{"tytul": "Warszawikia: Biały Pałacyk na Frascati", "url": "https://warszawa.fandom.com/pl/wiki/Biały_Pałacyk_na_Frascati"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne brak w paczce; adres z tekstu artykułu."
+  }
+]

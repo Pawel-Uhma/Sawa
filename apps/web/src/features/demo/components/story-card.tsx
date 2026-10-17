@@ -1,8 +1,9 @@
 "use client";
 
 import { AnimatePresence, motion, type PanInfo } from "motion/react";
+import { useLang, useT } from "@/features/i18n";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
-import type { MockStop } from "../lib/mock-data";
+import { type MockStop, stopLineLabel } from "../lib/mock-data";
 import { PauseIcon, PlayIcon, SkipNextIcon, SkipPrevIcon } from "./icons";
 
 type StoryCardProps = {
@@ -44,6 +45,8 @@ export function StoryCard({
   onNext,
   onTogglePlay,
 }: StoryCardProps) {
+  const t = useT();
+  const lang = useLang();
   const hasPrev = index > 0;
   const hasNext = index < total - 1;
 
@@ -75,22 +78,29 @@ export function StoryCard({
           dragElastic={{ left: hasNext ? 0.9 : 0.15, right: hasPrev ? 0.9 : 0.15 }}
           dragTransition={{ bounceStiffness: 500, bounceDamping: 40 }}
           onDragEnd={handleDragEnd}
-          aria-roledescription="opowieść"
-          aria-label={`Opowieść ${index + 1} z ${total}: ${stop.name}`}
-          className="cursor-grab touch-pan-y rounded-3xl bg-white p-4 shadow-[0_1px_2px_rgba(16,43,42,0.06),0_10px_30px_rgba(16,43,42,0.10)] active:cursor-grabbing md:p-5"
+          aria-roledescription={t("opowieść", "story")}
+          aria-label={t(
+            `Opowieść ${index + 1} z ${total}: ${stop.name}`,
+            `Story ${index + 1} of ${total}: ${stop.name}`,
+          )}
+          className="cursor-grab touch-pan-y rounded-3xl bg-powierzchnia p-4 shadow-[0_1px_2px_rgba(16,43,42,0.06),0_10px_30px_rgba(16,43,42,0.10)] active:cursor-grabbing md:p-5"
         >
           <div className="flex items-start gap-3">
             <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-koral text-[15px] font-extrabold text-white shadow-[0_3px_8px_rgba(242,117,95,0.35)]">
               {index + 1}
             </span>
             <div className="min-w-0 flex-1">
-              <p className="etykieta">Opowieść z okna</p>
+              <p className="etykieta">
+                {stop.mode === "walk"
+                  ? t("Opowieść po drodze", "A story on the way")
+                  : t("Opowieść z okna", "A story from the window")}
+              </p>
               <h3 className="truncate text-[17px] font-extrabold leading-snug tracking-[-0.01em]">
                 {stop.name}
               </h3>
             </div>
             <span className="shrink-0 rounded-full bg-mieta-jasna px-2.5 py-1 text-xs font-bold text-glebia-ciemna">
-              {stop.line}
+              {stopLineLabel(stop, lang)}
             </span>
           </div>
 
@@ -101,15 +111,21 @@ export function StoryCard({
             }`}
           >
             {state === "loading"
-              ? "Sawa przypomina sobie, co wie o tym miejscu…"
+              ? t(
+                  "Sawa przypomina sobie, co wie o tym miejscu…",
+                  "Sawa is recalling what she knows about this place…",
+                )
               : state === "failed"
-                ? "Tym razem Sawa nic nie powie. Jedziemy dalej."
+                ? t(
+                    "Tym razem Sawa nic nie powie. Jedziemy dalej.",
+                    "Sawa won't say anything this time. On we go.",
+                  )
                 : text}
           </p>
 
           <div
             role="progressbar"
-            aria-label="Postęp opowieści"
+            aria-label={t("Postęp opowieści", "Story progress")}
             aria-valuemin={0}
             aria-valuemax={100}
             aria-valuenow={Math.round(progress)}
@@ -121,10 +137,8 @@ export function StoryCard({
             />
           </div>
           <div className="mt-1.5 flex justify-between text-xs font-semibold text-tekst-3 tabular-nums">
-            <span>
-              {index + 1} z {total}
-            </span>
-            <span>po ok. {stop.etaMin} min</span>
+            <span>{t(`${index + 1} z ${total}`, `${index + 1} of ${total}`)}</span>
+            <span>{t(`po ok. ${stop.etaMin} min`, `after about ${stop.etaMin} min`)}</span>
           </div>
         </motion.article>
       </AnimatePresence>
@@ -134,7 +148,7 @@ export function StoryCard({
           type="button"
           onClick={onPrev}
           disabled={!hasPrev}
-          aria-label="Poprzednia opowieść"
+          aria-label={t("Poprzednia opowieść", "Previous story")}
           className="flex size-12 items-center justify-center rounded-full text-tekst transition-[transform,opacity,background-color] hover:bg-tlo-2 active:scale-[0.92] disabled:opacity-30"
         >
           <SkipPrevIcon className="size-6" />
@@ -142,7 +156,7 @@ export function StoryCard({
         <motion.button
           type="button"
           onClick={onTogglePlay}
-          aria-label={isPlaying ? "Pauza" : "Odtwarzaj"}
+          aria-label={isPlaying ? t("Pauza", "Pause") : t("Odtwarzaj", "Play")}
           whileTap={{ scale: 0.92 }}
           transition={SPRING}
           className="flex size-16 items-center justify-center rounded-full bg-glebia text-white shadow-[0_6px_16px_rgba(23,112,111,0.3)] transition-colors hover:bg-glebia-ciemna"
@@ -167,7 +181,7 @@ export function StoryCard({
           type="button"
           onClick={onNext}
           disabled={!hasNext}
-          aria-label="Następna opowieść"
+          aria-label={t("Następna opowieść", "Next story")}
           className="flex size-12 items-center justify-center rounded-full text-tekst transition-[transform,opacity,background-color] hover:bg-tlo-2 active:scale-[0.92] disabled:opacity-30"
         >
           <SkipNextIcon className="size-6" />

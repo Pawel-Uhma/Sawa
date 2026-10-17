@@ -1,0 +1,111 @@
+[
+  {
+    "id": "pozdrowienia-z-alej-jerozolimskich",
+    "nazwa": "Pozdrowienia z Alej Jerozolimskich",
+    "name_en": "Greetings from Jerozolimskie Avenue",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rondo gen. Charles’a de Gaulle’a",
+    "adres_historyczny": null,
+    "lat": 52.23167,
+    "lon": 21.02083,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Instalacja artystyczna Joanny Rajkowskiej, której centralnym elementem jest sztuczna palma daktylowa ustawiona w 2002 r. na rondzie gen. Charles’a de Gaulle’a; instalacja jest częścią kolekcji Muzeum Sztuki Nowoczesnej w Warszawie.",
+      "Inspiracją była wizyta Joanny Rajkowskiej i Artura Żmijewskiego w Izraelu w 2001 r.; pierwotny pomysł zakładał szpaler palm.",
+      "Palmę wykonała amerykańska firma Soul-utions.Com z tworzyw sztucznych i naturalnych materiałów; odsłonięto ją 12 grudnia 2002 r. Ma ok. 15 m wysokości.",
+      "Pierwotnie palma miała stać rok, na co wydano pozwolenie na zajęcie pasa drogowego.",
+      "W październiku 2003 r. w sondażu SMG/KRC 75% mieszkańców stolicy opowiedziało się za pozostawieniem palmy.",
+      "W 2007 r. autorka w zamian za 40 tys. zł dotacji na remont odstąpiła miastu majątkowe prawa autorskie; umowa wygasła w 2011 r.",
+      "Zgodnie z planem miejscowym z lipca 2017 r. rondo miało zostać zlikwidowane, a plan dopuszcza zachowanie palmy bez wskazania nowego miejsca.",
+      "W czerwcu 2019 r., z okazji Światowego Dnia Środowiska, palmę symbolicznie „uśmiercono”, zastępując zielone liście martwymi."
+    ],
+    "ciekawostki": [
+      "W lutym 2011 r. na palmie zawieszono palestyńską chustę w proteście przeciw wizycie polskiego rządu w Izraelu.",
+      "W 2012 r., w przeddzień Euro 2012, Joanna Rajkowska powiesiła na palmie transparent „Chleba zamiast igrzysk” i usunęła wszystkie liście."
+    ],
+    "summary_en": "An art installation by Joanna Rajkowska: a 15-metre artificial date palm on the de Gaulle roundabout, unveiled on 12 December 2002. Part of the Museum of Modern Art collection, it was the subject of a long public debate about its cost, ownership and future.",
+    "ludzie": [
+      {"kto": "Joanna Rajkowska", "rola": "autorka instalacji", "wiki": null},
+      {"kto": "Artur Żmijewski", "rola": "uczestnik wyjazdu do Izraela w 2001 (inspiracja projektu)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pozdrowienia z Alej Jerozolimskich", "url": "https://pl.wikipedia.org/wiki/Pozdrowienia_z_Alej_Jerozolimskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urywa się przy opisie akcji z 2019 r. Stan obiektu po 2021 r. nie wynika z tekstu. Typ „pomnik” przyjęty dla instalacji w przestrzeni publicznej."
+  },
+  {
+    "id": "poludnik-warszawski",
+    "nazwa": "Południk Warszawski",
+    "name_en": "Warsaw Meridian Column",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Teatralny",
+    "adres_historyczny": null,
+    "lat": 52.2439,
+    "lon": 21.0091,
+    "lokalizacja": "dokladna",
+    "okres": "1872–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zabytkowa marmurowa kolumna na placu Teatralnym została ustawiona w 1872 r. (dawniej błędnie podawano 1880) przed pałacem Jabłonowskich, ówczesną siedzibą władz miejskich.",
+      "Na szczycie kolumny umieszczono metalowy blat z współrzędnymi punktu pomiarowego i jego wysokością nad poziomem Bałtyku oraz zerem Wisły.",
+      "Kolumna powstała w związku z pomiarami triangulacyjnymi łuku równoleżnika 52°N, prowadzonymi w latach 1870–1885 przez Józefa Ippolitowicza Żylińskiego.",
+      "Na ścianach ratusza i Teatru Wielkiego umieszczono miedziane listwy (miry południkowe) do kalibracji instrumentów; w nawierzchni placu wmurowano szyny wyznaczające południk wieży ratuszowej.",
+      "W 1873 r., na zlecenie namiestnika Królestwa Polskiego, hrabiego Fiodora Berga, kolumnę otoczono żelazną balustradą.",
+      "W 1965 r. w nawierzchni umieszczono tabliczkę z błędną nazwą „południk warszawski” i datą 1880; tabliczkę usunięto po pracach archeologicznych w 2013 r.",
+      "We wrześniu 2022 r. kolumnę odrestaurowano, a 14 września 2022 r. odsłonięto ją jako pomnik Geodezji Europejskiej, w związku z Międzynarodowym Kongresem Geodetów FIG w Warszawie."
+    ],
+    "ciekawostki": [
+      "Warszawski południk zerowy jest związany z instrumentem przejściowym w Obserwatorium Astronomicznym UW, wyznaczonym w 1825 r. przez założyciela obserwatorium, astronoma Franciszka Armińskiego, a nie z kolumną."
+    ],
+    "summary_en": "A marble geodetic survey column on Plac Teatralny, erected in 1872 for triangulation of the 52nd parallel. Mistakenly called the 'Warsaw Meridian' for decades, it was restored in 2022 and officially unveiled as a monument to European Geodesy.",
+    "ludzie": [
+      {"kto": "Józef Ippolitowicz Żyliński", "rola": "generał w służbie rosyjskiej, geodeta, prowadził pomiary łuku 52°N", "wiki": null},
+      {"kto": "Fiodor Berg", "rola": "namiestnik Królestwa Polskiego, zlecił balustradę w 1873", "wiki": null},
+      {"kto": "Franciszek Armiński", "rola": "astronom, założyciel Obserwatorium Astronomicznego UW", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Południk Warszawski", "url": "https://pl.wikipedia.org/wiki/Po%C5%82udnik_Warszawski"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-szkoly-plater-zyberkowny-piekna-24-26",
+    "nazwa": "Budynek Szkoły im. Cecylii Plater-Zyberkówny",
+    "name_en": "Building of the Cecylia Plater-Zyberk School",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piękna 24/26",
+    "adres_historyczny": null,
+    "lat": 52.2236,
+    "lon": 21.0178,
+    "lokalizacja": "dokladna",
+    "okres": "1883–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Neorenesansowy gmach został zbudowany w 1883 r.; był pierwszym budynkiem w Warszawie wystawionym na potrzeby szkoły zawodowej.",
+      "Projekt wykonał architekt Władysław Hirszel; skrzydło od strony dziedzińca powstało według koncepcji Adama Oczkowskiego.",
+      "Całość rozbudowano ok. 1896 r., aby pomieścić również gimnazjum żeńskie.",
+      "Kompleks składa się z czterech budynków tworzących kwadrat z wewnętrznym dziedzińcem.",
+      "W 1882 r. w budynku frontowym na parterze, ze składek nauczycieli i rodziców, wybudowano kaplicę pod wezwaniem Matki Bożej.",
+      "Podczas okupacji Niemcy zajęli gmachy przy Pięknej; szkoła działała w domach uczennic. Szkołę zlikwidowano po 1950 r., a budynki zwrócono w 1990 r. zniszczone."
+    ],
+    "ciekawostki": [
+      "Uczennice, czyli „Platerki”, brały udział w powstaniu warszawskim."
+    ],
+    "summary_en": "A neo-Renaissance school building from 1883 at Piękna 24/26, built for the Cecylia Plater-Zyberk private girls' school. Restored after the war, it is still used by the school.",
+    "ludzie": [
+      {"kto": "Cecylia Plater-Zyberkówna", "rola": "założycielka szkoły (1883)", "wiki": null},
+      {"kto": "Władysław Hirszel", "rola": "architekt gmachu", "wiki": null},
+      {"kto": "Adam Oczkowski", "rola": "autor koncepcji skrzydła od strony dziedzińca", "wiki": null},
+      {"kto": "Jadwiga Reutt", "rola": "dyrektorka szkoły po śmierci założycielki", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Prywatna Żeńska Szkoła im. Cecylii Plater-Zyberkówny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Prywatna_%C5%BBe%C5%84ska_Szko%C5%82a_im._Cecylii_Plater-Zyberk%C3%B3wny_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy budynku, nie instytucji (artykuł w paczce jest o szkole). Ciekawostka dotyczy uczennic, nie budynku."
+  }
+]

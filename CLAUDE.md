@@ -7,6 +7,7 @@ Repozytorium zespołu (4 osoby, każda z własnym agentem) na hackathon 17–18.
 ## Praca zespołowa: jak agent się odnajduje
 
 - **Start sesji:** hook `.claude/hooks/session-start.sh` podaje Ci rolę według `git config user.name` (wiersz w `docs/zespol.md`), kartę roli z `docs/role/` i otwarte zadania z `docs/todo.md`. Jeśli roli nie ma, zapytaj użytkownika, jaka jest jego rola, i zaproponuj wpis w `docs/zespol.md`.
+- **Issues:** na starcie sprawdź otwarte issues na GitHubie przypisane do Ciebie (`gh issue list --assignee @me`); zgłoszenia od zespołu często lecą tam, nie do `todo.md`.
 - **Mapa:** `docs/README.md` mówi, gdzie co leży. `docs/stan.md` to teraz, zablokowane i otwarte decyzje. `docs/todo.md` to zadania.
 - **Zadania:** pracujesz nad zadaniami swojej roli (tag `R1`–`R4`; dawna R5 należy do R2). Zanim zaczniesz, zmień `[ ]` na `[~]` i dopisz, kto i od kiedy. Po skończeniu zmień na `[x]` i dopisz godzinę. Zadanie z cudzej roli bierz tylko, gdy właściciel je oddał w `todo.md` albo użytkownik to zlecił. Wtedy zmień tag i zapisz to.
 - **Aktualizacja mózgu:** po każdej istotnej zmianie uaktualnij `todo.md` (statusy), `stan.md` (1–3 linie: co zrobione, co zablokowane) i dokument tematyczny, jeśli zmieniła się wiedza. `todo.md` jest źródłem prawdy dla całego zespołu, więc nie zostawiaj go nieaktualnego.

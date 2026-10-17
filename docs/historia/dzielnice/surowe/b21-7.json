@@ -1,0 +1,239 @@
+[
+  {
+    "id": "insurekcja-warszawska-1794",
+    "nazwa": "Insurekcja warszawska (1794)",
+    "name_en": "Warsaw Uprising of 1794 (Kościuszko Uprising)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.23,
+    "lon": 21.0108,
+    "lokalizacja": "przyblizona",
+    "okres": "17–19 kwietnia 1794",
+    "istnieje": true,
+    "fakty": [
+      "Insurekcja warszawska, zbrojne powstanie armii koronnej i mieszkańców Warszawy przeciwko rosyjskiemu garnizonowi, rozpoczęła się 17 kwietnia 1794 roku, wkrótce po wieści o zwycięstwie Tadeusza Kościuszki pod Racławicami.",
+      "Ignacy Józef Działyński oraz wysłannik Kościuszki Tomasz Maruszewski przygotowywali powstanie w Warszawie od końca 1793 roku.",
+      "Walki uliczne, zaczęte na jednej ulicy na zachodnich obrzeżach warszawskiej Starówki, w ciągu kilku godzin objęły całe miasto.",
+      "Uzbrojone w broń zdobytą w Arsenale Królewskim regularne jednostki i ochotnicze milicje już w pierwszych godzinach zdołały rozproszyć wojska carskie.",
+      "W chwili wybuchu powstania w Arsenale znajdowało się ok. 60 dział i przeszło 15.000 karabinów.",
+      "Większość wojsk rosyjskich pozostała uwięziona w mieście i broniła się w izolowanych punktach oporu do 19 kwietnia.",
+      "Insurekcja uznawana jest za największy sukces militarny powstania kościuszkowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warsaw Uprising of 17 April 1794 was a rising of the Polish army and city residents against the Russian garrison during the Kościuszko Uprising. Fighting that began on one street on the western edge of the Old Town spread across the city within hours, and the Russian troops were largely defeated by 19 April.",
+    "ludzie": [
+      {"kto": "Ignacy Józef Działyński", "rola": "przygotowywał powstanie w Warszawie od końca 1793 roku", "wiki": null},
+      {"kto": "Tomasz Maruszewski", "rola": "wysłannik Tadeusza Kościuszki, przygotowywał powstanie", "wiki": null},
+      {"kto": "Osip Igelström", "rola": "rosyjski ambasador; część podległych mu wojsk wysłano na spotkanie z Kościuszką", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król, sprzeciwiał się insurekcji i 2 kwietnia wydał proklamację ją potępiającą", "wiki": null}
+    ],
+    "dawne_nazwy": ["Powstanie warszawskie 1794 roku"],
+    "zrodla": [{"tytul": "Wikipedia: Insurekcja warszawska", "url": "https://pl.wikipedia.org/wiki/Insurekcja_warszawska"}],
+    "pewnosc": "srednia",
+    "uwagi": "Zdarzenie w skali całego miasta; współrzędne z nagłówka są przybliżone i nie wskazują konkretnego miejsca."
+  },
+  {
+    "id": "intercontinental-warszawa",
+    "nazwa": "InterContinental Warszawa",
+    "name_en": "InterContinental Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Emilii Plater 49",
+    "adres_historyczny": null,
+    "lat": 52.232307,
+    "lon": 21.002544,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek hotelu wzniesiono w latach 2001–2003 według projektu Tadeusza Spychały, Wojciecha Popławskiego i Willibanda Fürsta.",
+      "Hotel powstał na niewielkiej działce, na której wcześniej znajdował się pierwszy w Polsce klub jazzowy Akwarium.",
+      "Całkowity koszt budowy wieżowca wyniósł 113 mln euro.",
+      "Pomiędzy piątą a dwudziestą kondygnacją zaprojektowano wcięcie, które zapewnia nasłonecznienie mieszkań w sąsiednim bloku; było to efektem porozumienia z inwestorem i protestującymi mieszkańcami.",
+      "W hotelu urządzono 414 pokoi, w tym 76 apartamentów, oraz 14 sal konferencyjnych.",
+      "Na 43. i 44. piętrze (150 metrów nad ziemią) znajduje się centrum rekreacji z basenem o wymiarach 6 × 14 metrów, najwyżej położony basen w Polsce.",
+      "W 2016 roku hotel, jako jedyny w Polsce, otrzymał pięć gwiazdek w przewodniku Michelina „Main Cities of Europe”."
+    ],
+    "ciekawostki": [
+      "Z okien centrum rekreacji widać Wisłę, do czego nawiązuje angielska nazwa RiverView Wellness Centre."
+    ],
+    "summary_en": "The InterContinental Warsaw is a five-star hotel at Emilii Plater 49, built in 2001–2003 on the site of Poland's first jazz club, Akwarium. Its slender tower was set back between the fifth and twentieth floors to preserve sunlight for a neighbouring block, and its 43rd-floor wellness centre has the highest pool in Poland.",
+    "ludzie": [
+      {"kto": "Tadeusz Spychała", "rola": "współautor projektu budynku", "wiki": null},
+      {"kto": "Wojciech Popławski", "rola": "współautor projektu budynku", "wiki": null},
+      {"kto": "Willibald Fürst", "rola": "współautor projektu budynku (w artykule: Willibanda Fürsta)", "wiki": null},
+      {"kto": "Johann Meyer i Jerzy Błażeczek", "rola": "zaprojektowali konstrukcję żelbetową", "wiki": null}
+    ],
+    "dawne_nazwy": ["klub jazzowy Akwarium (na działce wcześniej)"],
+    "zrodla": [{"tytul": "Wikipedia: InterContinental Warszawa", "url": "https://pl.wikipedia.org/wiki/InterContinental_Warszawa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwisko architekta Willibanda Fürsta zapisane tak, jak w źródle (w zapisie polskim: Willibald Fürst)."
+  },
+  {
+    "id": "international-business-center",
+    "nazwa": "International Business Center (IBC)",
+    "name_en": "International Business Center (IBC)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rondo Jazdy Polskiej (między ul. Polną a Trasą Łazienkowską)",
+    "adres_historyczny": null,
+    "lat": 52.217816666,
+    "lon": 21.013894444,
+    "lokalizacja": "dokladna",
+    "okres": "2001–2007",
+    "istnieje": true,
+    "fakty": [
+      "International Business Center to kompleks dwóch budynków biurowych przy rondzie Jazdy Polskiej, między ul. Polną a Trasą Łazienkowską.",
+      "Budowa pierwszego obiektu, IBC I, ruszyła w marcu 2001 roku, a zakończyła się w drugim kwartale 2007 roku.",
+      "Kolejny biurowiec, IBC II, wybudowany w latach 2006–2007, otrzymał nagrodę Best Office Project Award 2008 w konkursie The Cepif & International Herald Tribune CEE Best Office Awards."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The International Business Center is a two-building office complex by the Jazdy Polskiej roundabout, between Polna street and the Łazienkowska Route. Construction of the first building began in 2001 and finished in 2007; the second, built in 2006–2007, won a 2008 CEE office award.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: International Business Center (Warszawa)", "url": "https://pl.wikipedia.org/wiki/International_Business_Center_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Krótki artykuł, bez nazwisk projektantów. Okres podano od rozpoczęcia budowy IBC I do zakończenia IBC II."
+  },
+  {
+    "id": "intraco",
+    "nazwa": "Intraco (wieżowiec)",
+    "name_en": "Intraco tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "róg ul. Stawki i ul. gen. Władysława Andersa",
+    "adres_historyczny": "róg ul. Stawki i ul. Marcelego Nowotki",
+    "lat": 52.254444444,
+    "lon": 20.996666666,
+    "lokalizacja": "dokladna",
+    "okres": "1973–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Intraco (pierwotnie Intraco I) to jeden z pierwszych drapaczy chmur w Warszawie, zbudowany w latach 1973–1975 na Muranowie przez szwedzką spółkę BPA Byggproduktion AB dla Przedsiębiorstwa Handlu Zagranicznego „Intraco”.",
+      "Wieżowiec ma 138 metrów wysokości i 39 kondygnacji.",
+      "W latach 1975–1978 Intraco I był najwyższym biurowcem Warszawy.",
+      "W 1975 roku w budynku miało siedzibę 60 zagranicznych przedsiębiorstw.",
+      "W 1998 roku oryginalną elewację ceramiczną, według projektu Mirosława Duchowskiego, zastąpiono ciemnozieloną lustrzaną ścianą kurtynową ze względu na jej zużycie.",
+      "W czerwcu 2025 roku właściciel, Polski Holding Nieruchomości (PHN), ogłosił decyzję o wyburzeniu Intraco i budowie nowego wieżowca o tej samej wysokości.",
+      "W 2026 roku społecznicy bezskutecznie zabiegali o wpisanie budynku do rejestru zabytków; po negatywnej decyzji Mazowieckiego Konserwatora Zabytków właściciel przygotowuje wyburzenie."
+    ],
+    "ciekawostki": [
+      "Dla pracowników budujących Intraco I szwedzka firma wybudowała przy ul. Lektykarskiej cztery dwupiętrowe budynki o błękitnych zewnętrznych klatkach schodowych."
+    ],
+    "summary_en": "Intraco, originally Intraco I, is one of Warsaw's first skyscrapers, a 138 m, 39-storey office tower in Muranów built in 1973–1975 for the state foreign trade company Intraco. It was the city's tallest office building in 1975–1978; its owner announced its demolition in 2025, and in 2026 preservation efforts failed.",
+    "ludzie": [
+      {"kto": "Peter Diebitsch", "rola": "szwedzki architekt, projektant wieżowca", "wiki": null},
+      {"kto": "Mirosław Duchowski", "rola": "autor pierwotnej elewacji ceramicznej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Intraco I", "ul. Marcelego Nowotki"],
+    "zrodla": [{"tytul": "Wikipedia: Intraco (wieżowiec)", "url": "https://pl.wikipedia.org/wiki/Intraco_%28wie%C5%BCowiec%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Według artykułu wieżowiec miał zostać wyburzony; stan na 2026 rok wg źródła: przygotowania do wyburzenia."
+  },
+  {
+    "id": "kamienica-adolfa-witta",
+    "nazwa": "Kamienica Adolfa Witta (ul. Emilii Plater 9/11)",
+    "name_en": "Adolf Witt tenement (Emilii Plater 9/11)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Emilii Plater 9/11",
+    "adres_historyczny": "ul. Leopoldyny (obecnie ul. Emilii Plater)",
+    "lat": 52.22375,
+    "lon": 21.007555555,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1891–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na początku lat 90. XIX wieku rodzina Wittów zakupiła działkę przy ul. Leopoldyny, na której wybudowała nowy zakład produkcyjny i kamienicę.",
+      "Fabryka działała do 1939 roku pod nazwą „Adolf Witt i syn – Fabryka Aparatów Laboratoryjnych, Armatur i Odlewnia”.",
+      "Budynek główny postawiono ok. 1891 roku, a oficynę kamienicy frontowej ok. 1904 roku.",
+      "Kamienica jest murowana z czerwonej, nietynkowanej cegły.",
+      "Oba obiekty przetrwały II wojnę światową w stanie nienaruszonym; w latach 60. XX wieku właścicieli wywłaszczono, a potomkowie Wittów odzyskali nieruchomość w 2005 roku.",
+      "W 2019 roku na wniosek stowarzyszenia Miasto Jest Nasze kamienicę wraz z oficyną wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Wyroby firmy nagradzano m.in. w 1905 roku przez Warszawskie Towarzystwo Higieniczne oraz w 1927 roku złotym medalem Ministerstwa Przemysłu i Handlu."
+    ],
+    "summary_en": "The Adolf Witt tenement at Emilii Plater 9/11 is the oldest surviving industrial building in the southern Śródmieście district. It belonged to the Witt family's factory, which made laboratory apparatus and bathroom fittings until 1939. The building was listed as a monument in 2019.",
+    "ludzie": [
+      {"kto": "Adolf Witt", "rola": "właściciel fabryki „Adolf Witt i syn”, której nazwą nazwano kamienicę", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Leopoldyny"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Adolfa Witta przy ul. Emilii Plater 9/11 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Adolfa_Witta_przy_ul._Emilii_Plater_9/11_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok ok. 1891 dotyczy budynku głównego; rok 1904 oficyny kamienicy frontowej."
+  },
+  {
+    "id": "kamienica-andrzeja-stronskiego",
+    "nazwa": "Kamienica Andrzeja Strońskiego",
+    "name_en": "Andrzej Stroński tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 1",
+    "adres_historyczny": "ul. Nowy Świat 1",
+    "lat": 52.23005556,
+    "lon": 21.02175,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1784–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczna kamienica pałacowa przy Nowym Świecie 1 została uwieczniona na akwareli Zygmunta Vogla z 1784 roku.",
+      "W 1784 roku wprowadzono numerację ulicy.",
+      "W pierwszej połowie XIX wieku właścicielami byli kolejno Jan Gierth (1819), Franciszek Wołowski (lata 30.) i Józef Zdzietowiecki (przed 1850 rokiem).",
+      "Od ok. 1852 roku do pierwszych lat XX wieku kamienica należała do rodziny Wołłowiczów; do II wojny światowej należała do Salomona Neumana.",
+      "Od 1876 roku na parterze działała znana cukiernia, w której na początku XX wieku spotykali się m.in. Władysław Reymont, Stefan Żeromski i Bolesław Leśmian.",
+      "W okresie międzywojennym na I piętrze mieściła się Komenda Policji Państwowej na powiat warszawski oraz redakcja periodyku „Zagadnienia Rasy”.",
+      "W czasie powstania warszawskiego kamienica została spalona; w latach 1947–1948 wyremontowano ją według projektu Stanisława Marzyńskiego."
+    ],
+    "ciekawostki": [
+      "Dziś na parterze znajdują się sklepy odzieżowe."
+    ],
+    "summary_en": "The Andrzej Stroński tenement at Nowy Świat 1 is a neoclassical palace-type building depicted in a 1784 watercolour by Zygmunt Vogel. It housed a well-known pastry shop from 1876, and it was burned during the 1944 uprising and rebuilt in 1947–1948.",
+    "ludzie": [
+      {"kto": "Zygmunt Vogel", "rola": "autor akwareli z 1784 roku, na której uwieczniono kamienicę", "wiki": null},
+      {"kto": "Stanisław Marzyński", "rola": "autor projektu odbudowy w latach 1947–1948", "wiki": null},
+      {"kto": "Władysław Reymont, Stefan Żeromski, Bolesław Leśmian", "rola": "pisarze, bywalcy cukierni na parterze na początku XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Andrzeja Strońskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Andrzeja_Stro%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że kamienica styka się z kamienicą na rogu placu Trzech Krzyży 16. Data budowy nieznana z tekstu; okres podano od przedstawienia na akwareli z 1784 r."
+  },
+  {
+    "id": "kamienica-balcerowska",
+    "nazwa": "Kamienica Balcerowska (Rynek Starego Miasta 20)",
+    "name_en": "Balcer tenement (Old Town Square 20)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 20",
+    "adres_historyczny": "Rynek Starego Miasta 20",
+    "lat": 52.25024,
+    "lon": 21.01244,
+    "lokalizacja": "dokladna",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Czterokondygnacyjna i trzytraktowa kamienica przy Rynku Starego Miasta nr 20 wzniesiona została w XV wieku jako budynek jednotraktowy z piwnicą.",
+      "W XVI wieku budynek przebudowała i powiększyła rodzina Baltazar (Balcer); w 1599 roku dobudowano nową ścianę od kamienicy nr 18 oraz tylny trakt.",
+      "Kupił ją podskarbi koronny Maciej Grabowski za sumę 27 000 florenów; w 1752 roku otwarto w niej Collegium Nobilium jezuitów w Warszawie.",
+      "W 1928 roku usunięto balkon na I piętrze, a Felicjan Szczęsny Kowarski wykonał polichromie.",
+      "Kamienica częściowo zniszczona w czasie II wojny światowej została odbudowana w latach 1952–1953 według projektu Anny Boye-Guerquin.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na parterze zachowały się fragmenty malowideł z pierwszej połowy XVI wieku (Oblicze Chrystusa adorowane przez dwa anioły)."
+    ],
+    "summary_en": "The Balcer tenement at Old Town Square 20 dates from the 15th century and was enlarged in the 16th. In 1752 it housed a Jesuit Collegium Nobilium, and it was rebuilt after World War II in 1952–1953. It is listed as a monument and houses the Adam Mickiewicz Museum of Literature.",
+    "ludzie": [
+      {"kto": "Maciej Grabowski", "rola": "podskarbi koronny, kupił kamienicę", "wiki": null},
+      {"kto": "Anna Boye-Guerquin", "rola": "autorka projektu odbudowy w latach 1952–1953", "wiki": null},
+      {"kto": "Felicjan Szczęsny Kowarski", "rola": "wykonał polichromie w 1928 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Winklerowska"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Balcerowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Balcerowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wg artykułu budynek mieści Muzeum Literatury im. Adama Mickiewicza; wnętrze połączone z budynkiem nr 18."
+  }
+]

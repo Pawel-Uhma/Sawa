@@ -1,0 +1,333 @@
+[
+  {
+    "id": "klub-karuzela",
+    "nazwa": "Klub Karuzela",
+    "name_en": "Karuzela student club",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Stanisława Konarskiego 85, osiedle Przyjaźń",
+    "adres_historyczny": null,
+    "lat": 52.236819,
+    "lon": 20.919311,
+    "lokalizacja": "dokladna",
+    "okres": "1955–2021",
+    "istnieje": false,
+    "fakty": [
+      "W 1955 roku budynki osiedla Przyjaźń przekazano warszawskim uczelniom na akademiki.",
+      "W budynku, który później zajął klub, działał wcześniej także teatr.",
+      "W 1955 roku budynek przejęło Ministerstwo Edukacji Narodowej i powstał Centralny Klub Akademicki Karuzela.",
+      "W latach 80. XX wieku wyświetlano tu filmy; trwało to nadal, mimo upadku sąsiedniego kina na początku lat 90.",
+      "Klub podupadł w latach 90.; po 2000 roku wrócił do cyklicznych imprez – kabaretów, festiwali, dyskotek i koncertów.",
+      "Od marca 2015 roku najemcą większości pomieszczeń było Stowarzyszenie im. Jana Macieja Zembatego „Zgryz”.",
+      "W 2021 roku klub został zamknięty."
+    ],
+    "ciekawostki": [
+      "Z klubem była związana cykliczna impreza Jelonkalia, czyli studenckie juwenalia na Jelonkach.",
+      "W latach 90. w klubie wystąpił zespół Fugazi."
+    ],
+    "summary_en": "Karuzela was a student club on the Przyjaźń estate in Bemowo, housed in a building from the 1955 student-housing transfer. It hosted films, concerts and the Jelonkalia student festival. It was closed in 2021.",
+    "ludzie": [],
+    "dawne_nazwy": ["Centralny Klub Akademicki Karuzela"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Klub Karuzela", "url": "https://pl.wikipedia.org/wiki/Klub_Karuzela"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Klub zamknięty w 2021 wg artykułu; stan budynku nieznany (istnieje: false). Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "kosciol-sw-lukasza-ewangelisty",
+    "nazwa": "Kościół św. Łukasza Ewangelisty",
+    "name_en": "St. Luke the Evangelist Church",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "ul. Górczewska 176",
+    "adres_historyczny": null,
+    "lat": 52.2399,
+    "lon": 20.9174,
+    "lokalizacja": "dokladna",
+    "okres": "1990–dziś",
+    "istnieje": true,
+    "fakty": [
+      "18 października 1990 roku poświęcono tu kaplicę; 1 stycznia 1993 roku erygowano parafię w drewnianym kościele wzniesionym przez górali w 1991 roku, na bazie obiektu przeniesionego z Jedlińska koło Radomia.",
+      "W nocy z 23 na 24 września 2004 roku drewniany kościół całkowicie spłonął; przyczyną pożaru było najprawdopodobniej podpalenie.",
+      "Z pożaru uratowały się jeden kielich, niewielki krzyżyk i relikwiarz z cząstką relikwii św. ojca Pio.",
+      "W 2001 roku parafia otrzymała zgodę na budowę nowej świątyni; budowę rozpoczęto w czerwcu 2001 roku według projektu Aleksego Dworczaka.",
+      "Od 2004 roku msze odbywały się w tymczasowej kaplicy na zadaszonym dziedzińcu domu parafialnego.",
+      "W 2009 roku mieszkańcy sąsiedniego bloku protestowali przeciwko hałasowi od kościelnego dzwonu i nagłośnienia.",
+      "Po poprzednim kościele pozostała drewniana dzwonnica od strony ul. Górczewskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "St. Luke the Evangelist Church at Górczewska 176 stands in Górce, Bemowo. Its wooden predecessor, a relocated church from near Radom, burned in 2004. A new brick church was under construction from 2001, and worship was held in a temporary chapel in the parish house.",
+    "ludzie": [
+      {"kto": "Zenon Trzaskowski", "rola": "pierwszy proboszcz parafii (od 1992 roku)", "wiki": null},
+      {"kto": "Aleksy Dworczak", "rola": "projektant nowego kościoła", "wiki": null}
+    ],
+    "dawne_nazwy": ["drewniany kościół z Jedlińska (przeniesiony w 1991)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Łukasza Ewangelisty w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._%C5%81ukasza_Ewangelisty_w_Warszawie"},
+      {"tytul": "Wikipedia: Parafia św. Łukasza Ewangelisty w Warszawie (Bemowo)", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._%C5%81ukasza_Ewangelisty_w_Warszawie_%28Bemowo%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dwa artykuły o tym samym kościele/parafii połączono w jeden rekord. Daty erygowania parafii różnią się: 1 stycznia 1993 (artykuł o kościele) i 8 grudnia 1992 dekret (artykuł o parafii)."
+  },
+  {
+    "id": "stacja-metra-lazurowa",
+    "nazwa": "Stacja metra Lazurowa",
+    "name_en": "Lazurowa metro station (under construction)",
+    "typ": "budynek",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "skrzyżowanie ul. Górczewskiej i ul. Lazurowej",
+    "adres_historyczny": null,
+    "lat": 52.23838,
+    "lon": 20.89587,
+    "lokalizacja": "dokladna",
+    "okres": "2018–dziś (planowane otwarcie 2027)",
+    "istnieje": false,
+    "fakty": [
+      "W 2018 roku podpisano umowę na budowę stacji wraz z ostatnim odcinkiem linii M2 z konsorcjum Gülermak i Astaldi.",
+      "W 2020 roku inwestycja uzyskała komplet decyzji administracyjnych; w sierpniu 2022 roku wojewoda mazowiecki wydał pozwolenie na budowę stacji.",
+      "Prace przygotowawcze rozpoczęły się w grudniu 2022 roku, po porozumieniu miasta ze spółką Gülermak co do kontynuowania budowy II linii metra na Bemowie.",
+      "Planowana data otwarcia stacji to początek 2027 roku.",
+      "Przy stacji ma powstać centrum przesiadkowe do tramwajów i autobusów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lazurowa is a planned metro station on line M2 at the junction of Górczewska and Lazurowa streets in Bemowo. The construction permit was issued in August 2022, and opening is planned for early 2027.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lazurowa (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Lazurowa_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Stacja w budowie wg stanu z artykułu (istnieje: false). Status aktualny do sprawdzenia."
+  },
+  {
+    "id": "lotnisko-msi",
+    "nazwa": "Lotnisko (osiedle, Bemowo)",
+    "name_en": "Lotnisko estate (Bemowo)",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "osiedle Lotnisko (MSI) między ul. Księżycową, ul. Radiową, ul. Piastów Śląskich i ul. Powstańców Śląskich",
+    "adres_historyczny": "Piaski, Szwedzkie Wzgórza",
+    "lat": 52.272608,
+    "lon": 20.897376,
+    "lokalizacja": "przyblizona",
+    "okres": "1918–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na początku XX wieku teren ten był znany jako Piaski lub Szwedzkie Wzgórza.",
+      "W 1918 roku powstała tu jedna z filii Instytutu Badań Techniki Lotniczej (IBTL), przekształconego następnie w Instytut Techniczny Lotnictwa (ITL).",
+      "W okresie II wojny światowej teren wykorzystywano jako lotnisko trawiaste, choć dane są niepewne.",
+      "Po II wojnie światowej wojsko wybudowało tu duże lotnisko dla samolotów odrzutowych; obszar pojawił się na mapach Warszawy dopiero na przełomie lat 70. i 80. XX wieku.",
+      "Część lotniska przekazano pod zabudowę mieszkaniową; stąd takie rejony jak Bemowo-Lotnisko i Fort Bema."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Lotnisko is a residential MSI area in Bemowo built on the former military airfield. It was known as Piaski or Szwedzkie Wzgórza before the 20th century. The airfield was the site of a research institute and was partly released for housing from the 1980s.",
+    "ludzie": [],
+    "dawne_nazwy": ["Piaski", "Szwedzkie Wzgórza"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lotnisko (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Lotnisko_%28Warszawa%29"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł o obszarze MSI, nie o samym lotnisku (to osobny rekord). Współrzędne z nagłówka artykułu (przybliżone)."
+  },
+  {
+    "id": "lotnisko-warszawa-babice",
+    "nazwa": "Lotnisko Warszawa-Babice",
+    "name_en": "Warsaw-Babice Airport",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": "teren lotniska, przy granicy z dzielnicą Bielany",
+    "adres_historyczny": "Lotnisko Bemowo",
+    "lat": 52.269183,
+    "lon": 20.907217,
+    "lokalizacja": "dokladna",
+    "okres": "po 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Miejsce obecnego lotniska użytkowano wcześniej jako lądowisko dla samolotów rosyjskich i niemieckich; po 1918 roku była tu jedna z siedzib IBTL.",
+      "Lotnisko powstało po II wojnie światowej na tzw. Szwedzkich Górach, między fortem Bema a Boernerowem, poza granicami Warszawy.",
+      "8 września 1957 roku, z okazji Tygodnia Lotnictwa, prawie 300-tysięczna publiczność obserwowała pokazy z udziałem 400 jednostek latających.",
+      "20 września 1996 roku odbył się tu jedyny polski koncert Michaela Jacksona, część trasy HIStory World Tour.",
+      "W 2019 roku prezydent Warszawy wydał decyzję ograniczającą loty od 30 marca 2020; w 2022 roku Samorządowe Kolegium Odwoławcze uchyliło ją w całości.",
+      "Na lotnisku odbywały się m.in. koncerty Madonny (2009), AC/DC (2010) i Sonisphere Festival (2010–2012)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warsaw-Babice Airport, popularly known as Lotnisko Bemowo, was built after World War II on the Szwedzkie Góry hills near Bemowo. It hosted a large air show in 1957 and a concert by Michael Jackson in 1996. Its flight restrictions from 2019 were overturned in 2022.",
+    "ludzie": [
+      {"kto": "Michael Jackson", "rola": "wykonawca koncertu na lotnisku, 20 września 1996 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Lotnisko Bemowo"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lotnisko Warszawa-Babice", "url": "https://pl.wikipedia.org/wiki/Lotnisko_Warszawa-Babice"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że lotnisko zarządza Centrum Usług Logistycznych (instytucja) — pominięte jako organizacja. Współrzędne z infoboksu artykułu."
+  },
+  {
+    "id": "kosciol-bogurodzicy-maryi",
+    "nazwa": "Kościół Bogurodzicy Maryi (Jelonki Północne)",
+    "name_en": "Church of the Mother of God (Jelonki Północne)",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2343,
+    "lon": 20.9133,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia została erygowana w 1984 roku, a kościół parafialny wybudowano w latach 90. XX wieku.",
+      "Bryła kościoła ma kształt korony i jest inspirowana częściowo romanizmem oraz protestanckim budownictwem sakralnym, z wewnętrzną galerią.",
+      "W kościele znajduje się obraz Matki Boskiej Łaskawej z Jelonek z 1920 roku, autorstwa Marii z Wendorffów Kraskowskiej.",
+      "Zespół witraży obejmuje m.in. „Zwiastowanie”, „Hołd Trzech Króli” i „Testament z Krzyża”.",
+      "Najważniejszą pamiątką historyczną jest witrażowy baldachim z Duchem Świętym, pochodzący z wizyty Benedykta XVI w Warszawie; pierwotnie stał nad ołtarzem polowym na placu Piłsudskiego.",
+      "Na galerii kościoła zawieszono drogę krzyżową – serię obrazów namalowanych przez Elżbietę Ostrowską-Łysak."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of the Mother of God in Jelonki Północne was founded in 1984 and built in the 1990s. Its crown-shaped design has a gallery and stained glass. It keeps a canopy that came from a papal Mass in Piłsudski Square.",
+    "ludzie": [
+      {"kto": "Maria z Wendorffów Kraskowska", "rola": "autorka obrazu Matki Boskiej Łaskawej z Jelonek (1920)", "wiki": null},
+      {"kto": "Elżbieta Ostrowska-Łysak", "rola": "autorka drogi krzyżowej na galerii kościoła", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Parafia Bogurodzicy Maryi w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Bogurodzicy_Maryi_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł o parafii; rekord dotyczy kościoła parafialnego. Adres kościoła nie podany w artykule. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "kosciol-matki-bozej-krolowej-aniolow",
+    "nazwa": "Kościół Matki Bożej Królowej Aniołów (Bemowo-Lotnisko)",
+    "name_en": "Church of Our Lady Queen of Angels (Bemowo-Lotnisko)",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "adres_historyczny": "plac pod kościół przy Bemowie-Lotnisku",
+    "lat": 52.2553,
+    "lon": 20.9211,
+    "lokalizacja": "przyblizona",
+    "okres": "1982–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1981 roku abp Józef Glemp mianował ks. Józefa Żaka, michalitę, wikariuszem parafii św. Józefa na Kole i polecił mu organizowanie ośrodka duszpasterskiego na Bemowie Lotnisku.",
+      "5 września 1982 roku na placu przeznaczonym pod kościół stanął krzyż i barak pełniący rolę prowizorycznej kaplicy; pierwszą mszę odprawił bp Jerzy Modzelewski.",
+      "W grudniu 1983 roku powstała kaplica umożliwiająca nabożeństwa pod dachem; przetrwała do 1998 roku.",
+      "Prace budowlane przy kościele rozpoczęto w 1984 roku.",
+      "1 marca 1988 roku kard. Józef Glemp specjalnym dekretem erygował parafię.",
+      "26 maja 2013 roku obchodzono 25-lecie parafii; poświęcono figury w głównej ścianie ołtarzowej, autorstwa prof. Wincentego Kućmy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of Our Lady Queen of Angels on Bemowo-Lotnisko began with a cross and a barracks chapel in 1982, put up on the plot set aside for the church. The parish was erected in 1988, and building works started in 1984.",
+    "ludzie": [
+      {"kto": "Józef Żak", "rola": "michalita, pierwszy organizator ośrodka duszpasterskiego (od 1981)", "wiki": null},
+      {"kto": "Jerzy Modzelewski", "rola": "biskup, odprawił pierwszą mszę w prowizorycznej kaplicy (1982)", "wiki": null},
+      {"kto": "Wincenty Kućma", "rola": "prof., autor figur w ścianie ołtarzowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Parafia Matki Bożej Królowej Aniołów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Matki_Bo%C5%BCej_Kr%C3%B3lowej_Anio%C5%82%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł o parafii; rekord opisuje miejsce kościoła (plac, barak, kaplice). Adres nie podany. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "kosciol-podwyzszenia-krzyza-swietego",
+    "nazwa": "Kościół Podwyższenia Krzyża Świętego (Jelonki)",
+    "name_en": "Church of the Exaltation of the Holy Cross (Jelonki)",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2254,
+    "lon": 20.9113,
+    "lokalizacja": "przyblizona",
+    "okres": "1951–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafię erygowano 24 września 1951 roku przez prymasa Stefana Wyszyńskiego.",
+      "Budowę kościoła parafialnego rozpoczęto w 1959 roku według projektu architekta Zbigniewa Rzepeckiego z Katowic, pod nadzorem inż. Tadeusza Dębińskiego.",
+      "Świątynię konsekrowano 15 czerwca 1968 roku.",
+      "Prezbiterium ozdobiono polichromiami zaprojektowanymi i wykonanymi przez prof. Akademii Sztuk Pięknych w Krakowie Jerzego Nowosielskiego.",
+      "W 1973 roku zrealizowano projekt artystycznego rozwiązania ściany frontowej architekta Jerzego Grochowskiego; fronton ozdobiła rzeźba Chrystusa Króla Pokoju Jerzego Nachaja."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of the Exaltation of the Holy Cross in Jelonki was founded in 1951 and built from 1959 to a design by Zbigniew Rzepecki. It was consecrated in 1968. Its interior and front wall were decorated by Jerzy Nowosielski and others in the 1970s.",
+    "ludzie": [
+      {"kto": "Stefan Wyszyński", "rola": "prymas, erygował parafię w 1951 roku", "wiki": null},
+      {"kto": "Zbigniew Rzepecki", "rola": "architekt z Katowic, autor projektu kościoła", "wiki": null},
+      {"kto": "Tadeusz Dębiński", "rola": "inż., nadzór budowy", "wiki": null},
+      {"kto": "Jerzy Nowosielski", "rola": "prof. ASP w Krakowie, autor polichromii prezbiterium", "wiki": null},
+      {"kto": "Jerzy Grochowski", "rola": "architekt projektu ściany frontowej (1973)", "wiki": null},
+      {"kto": "Jerzy Nachaj", "rola": "rzeźbiarz, autor rzeźby Chrystusa Króla Pokoju", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Parafia Podwyższenia Krzyża Świętego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_Podwy%C5%BCszenia_Krzy%C5%BCa_%C5%9Awi%C4%99tego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o parafii; rekord dotyczy kościoła parafialnego. Adres nie podany. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "kosciol-matki-boskiej-ostrobramskiej",
+    "nazwa": "Kościół Matki Boskiej Ostrobramskiej (parafia wojskowo-cywilna)",
+    "name_en": "Our Lady of Ostra Brama Church (military-civil parish)",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2625,
+    "lon": 20.8972,
+    "lokalizacja": "przyblizona",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół parafialny wybudowano w latach 1968–1971 na miejscu drewnianej kaplicy z 1936 roku.",
+      "W okresie II RP komitetowi budowy kościoła przewodniczył ppłk dypl. Leopold Gebel, który w 1936 roku ofiarował obraz Matki Boskiej Ostrobramskiej jako dar wotywny.",
+      "Parafię erygowano w 1984 roku jako cywilną, a w 1993 roku jako wojskową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Our Lady of Ostra Brama parish church in Bemowo replaced a wooden chapel from 1936 with a new church built in 1968–1971. In the interwar period a lieutenant colonel donated a votive painting of the Ostra Brama Madonna.",
+    "ludzie": [
+      {"kto": "Leopold Gebel", "rola": "ppłk dypl., przewodniczący komitetu budowy kościoła w okresie II RP", "wiki": null}
+    ],
+    "dawne_nazwy": ["drewniana kaplica z 1936 roku"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Parafia wojskowo-cywilna Matki Boskiej Ostrobramskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_wojskowo-cywilna_Matki_Boskiej_Ostrobramskiej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o parafii; rekord dotyczy kościoła. Adres nie podany. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "kosciol-sw-jozafata",
+    "nazwa": "Kościół św. Jozafata Kuncewicza",
+    "name_en": "St. Josaphat Kuntsevych Church",
+    "typ": "swiatynia",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2622,
+    "lon": 20.9513,
+    "lokalizacja": "przyblizona",
+    "okres": "1922–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia pw. św. Jozafata Kuncewicza została erygowana w 1922 roku i zajmowała pierwotnie drewniany budynek.",
+      "Według niektórych źródeł drewniany budynek był dawną cerkwią prawosławną św. Mikołaja Cudotwórcy, wzniesioną w 1872 roku; w 1920 roku przebudowano go na potrzeby kościoła katolickiego.",
+      "Budynek nie został zniszczony w czasie II wojny światowej, ale szybko okazał się za mały na potrzeby parafii.",
+      "W latach 1964–1966 na miejscu drewnianego zbudowano nowy kościół murowany według projektu Mariana Laurmana."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The St. Josaphat Kuntsevych church began as a wooden building that may have been an Orthodox church from 1872. It was converted for Catholic use in 1920. It was replaced in 1964–1966 by a brick church designed by Marian Laurman.",
+    "ludzie": [
+      {"kto": "Marian Laurman", "rola": "architekt nowego kościoła murowanego (1964–1966)", "wiki": null}
+    ],
+    "dawne_nazwy": ["dawna cerkiew św. Mikołaja Cudotwórcy (wg niektórych źródeł)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Parafia św. Jozafata w Warszawie", "url": "https://pl.wikipedia.org/wiki/Parafia_%C5%9Bw._Jozafata_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Uwaga: artykuł podaje dekanat żoliborski, a w nagłówku DZIELNICE pierwsza jest Bemowo (reguła pierwszej dzielnicy). Do sprawdzenia przy składaniu. Współrzędne z nagłówka artykułu."
+  }
+]

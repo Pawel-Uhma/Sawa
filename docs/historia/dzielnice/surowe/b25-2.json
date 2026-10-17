@@ -1,0 +1,167 @@
+[
+  {
+    "id": "latawiec",
+    "nazwa": "Osiedle Latawiec",
+    "name_en": "Latawiec housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Wyzwolenia (centralna ulica osiedla), między pl. Na Rozdrożu a ul. Marszałkowską",
+    "adres_historyczny": "Osi Stanisławowskiej (zabudowa po II wojnie światowej)",
+    "lat": 52.220277777,
+    "lon": 21.020833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1953–1962",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle Latawiec zostało zbudowane w latach 1953–1957 w miejscu zabudowy prawie całkowicie zniszczonej w czasie II wojny światowej, na tzw. Osi Stanisławowskiej.",
+      "Główną projektantką założenia architektonicznego, o powierzchni około 18 hektarów, była Eleonora Sekrecka; współpracowali z nią Stanisław Jankowski, Jan Knothe i Zygmunt Stępiński z pracowni Miastoprojekt Stolica.",
+      "Osiedle, zbudowane na planie pięciokąta, nazwano od kształtu przypominającego latawiec; jest nazywane także MDM III.",
+      "Wybudowano łącznie 2794 mieszkania; osiedle było w większości gotowe do zamieszkania w 1955, a ostatni budynek projektu Sekreckiej oddano do użytku w 1962.",
+      "W praktyce osiedle przeznaczono głównie dla osób zasłużonych: kierowników, pracowników związanych z partią rządzącą i dyrektorów państwowych przedsiębiorstw.",
+      "Centralny, ośmioboczny plac-skwer (70 m szerokości i 215 m długości) w koncepcji urbanistycznej z 1950 roku nazywano roboczo Nowym Placem.",
+      "W podziemiach budynków urządzono 14 schronów przeciwlotniczych."
+    ],
+    "ciekawostki": [
+      "Otwarto tu dwusalowe kino „Luna”, a swoją siedzibę znalazł Teatr Lalek „Guliwer”.",
+      "W okolicy placu Zbawiciela znajdowała się jadłodajnia „Salus”, która w momencie otwarcia była jedyną w Warszawie placówką z menu dla osób przestrzegających określonych rodzajów diet zdrowotnych."
+    ],
+    "summary_en": "A housing estate in Warsaw's Śródmieście built in 1953–1957 on the Stanisławowska Axis, designed by Eleonora Sekrecka as part of the Marszałkowska Residential District (MDM III). Its pentagon plan gives it the name 'Kite'; it had 2,794 flats and a central octagonal square.",
+    "ludzie": [
+      {"kto": "Eleonora Sekrecka", "rola": "główna projektantka założenia architektonicznego", "wiki": null},
+      {"kto": "Stanisław Jankowski, Jan Knothe, Zygmunt Stępiński", "rola": "współpracownicy projektu w pracowni Miastoprojekt Stolica", "wiki": null}
+    ],
+    "dawne_nazwy": ["MDM III", "Nowy Plac (roboczo, dla skweru centralnego)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Latawiec (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Latawiec_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (ogólne dla całego osiedla, ok. 18 ha). Artykuł podaje, że przedwojenne kamienice uzupełniały zabudowę do drugiej połowy lat 60."
+  },
+  {
+    "id": "likwidacja-hugo-dietza",
+    "nazwa": "Likwidacja Hugo Dietza",
+    "name_en": "Liquidation of Hugo Dietz",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "13.04.1943",
+    "istnieje": null,
+    "fakty": [
+      "Hugo Dietz był kierownikiem grupy „D” w warszawskim Arbeitsamcie (Urzędzie Pracy) i jednocześnie szefem Arbeitsamtu w Otwocku, organizującego wywózki Polaków na roboty przymusowe do Niemiec.",
+      "Akcję likwidacyjną przeprowadziła w Warszawie Organizacja Specjalnych Akcji Bojowych, oddział Armii Krajowej do zadań specjalnych, 13 kwietnia 1943."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An Armia Krajowa special action in Warsaw on 13 April 1943 that killed Hugo Dietz, head of group 'D' at the Warsaw Labour Office and head of the Otwock Labour Office, which organised forced labour deportations of Poles to Germany.",
+    "ludzie": [
+      {"kto": "Hugo Dietz", "rola": "kierownik grupy „D” w warszawskim Arbeitsamcie, szef Arbeitsamtu w Otwocku; zlikwidowany 13.04.1943", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Likwidacja Hugo Dietza", "url": "https://pl.wikipedia.org/wiki/Likwidacja_Hugo_Dietza"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł nie podaje adresu ani konkretnego miejsca akcji, tylko Warszawę. Współrzędne z nagłówka. Rekord ma małą wartość przestrzenną; do weryfikacji, czy zostawić."
+  },
+  {
+    "id": "likwidacja-nadwywiadu-rzadu-londynskiego",
+    "nazwa": "Likwidacja Nadwywiadu Rządu Londyńskiego",
+    "name_en": "Liquidation of the 'Nadwywiad' of the London Government",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 81",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "1942",
+    "istnieje": null,
+    "fakty": [
+      "Na początku 1942 roku niemiecki wywiad wojskowy (Abwehra) zorganizował prowokację: z pomocą polskich kolaborantów powołał fałszywą organizację konspiracyjną „Nadwywiad Rządu Londyńskiego”, której zadaniem była infiltracja Polskiego Państwa Podziemnego.",
+      "Po rozszyfrowaniu prowokacji przez kontrwywiad AK oddziałowi 993/W powierzono zadanie zlikwidowania konfidentów.",
+      "1 sierpnia 1942 żołnierze „Wapiennika” zastrzelili na Tamce szefa „Nadwywiadu” – Józefa Hammer-Baczewskiego (vel Henryk Szweycer).",
+      "13 września 1942 żołnierze 993/W przeprowadzili akcję bojową w lokalu przy ul. Marszałkowskiej 81, gdzie zlikwidowali Edwarda Zajączkowskiego (następcę Hammer-Baczewskiego) oraz jego współpracownika Stanisława Szczepańskiego.",
+      "Efektem obu akcji było faktyczne rozbicie „Nadwywiadu Rządu Londyńskiego”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In summer 1942 the Home Army (AK) liquidated German informers in Warsaw. The Abwehr had created a fake underground organisation, the 'Nadwywiad of the London Government'. Its leader was shot on Tamka Street on 1 August 1942, and his successor and an associate were killed at Marszałkowska 81 on 13 September 1942.",
+    "ludzie": [
+      {"kto": "Józef Hammer-Baczewski (vel Henryk Szweycer)", "rola": "szef „Nadwywiadu”, zastrzelony na Tamce 1.08.1942 przez żołnierzy „Wapiennika”", "wiki": null},
+      {"kto": "Edward Zajączkowski", "rola": "następca Hammer-Baczewskiego, zlikwidowany 13.09.1942", "wiki": null},
+      {"kto": "Stanisław Szczepański", "rola": "współpracownik Zajączkowskiego, zlikwidowany 13.09.1942", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Likwidacja Nadwywiadu Rządu Londyńskiego", "url": "https://pl.wikipedia.org/wiki/Likwidacja_Nadwywiadu_Rz%C4%85du_Londy%C5%84skiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (ogólne dla zdarzenia); adres ul. Marszałkowska 81 z tekstu, bez dokładnych współrzędnych tego adresu."
+  },
+  {
+    "id": "ladowisko-sokol",
+    "nazwa": "Lądowisko Sokół",
+    "name_en": "Sokół heliport",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karowa 10 (dach budynku Biura Bezpieczeństwa Narodowego)",
+    "adres_historyczny": null,
+    "lat": 52.2436,
+    "lon": 21.0186,
+    "lokalizacja": "dokladna",
+    "okres": "2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Lądowisko Sokół to śmigłowcowe lądowisko wielofunkcyjne w Warszawie, zlokalizowane na dachu budynku Biura Bezpieczeństwa Narodowego (tzw. lądowisko wyniesione) przy ul. Karowej 10.",
+      "Lądowisko należy do Kancelarii Prezydenta Rzeczypospolitej Polskiej.",
+      "Lądowisko powstało w 2005 roku.",
+      "W 2012 roku zostało ujęte w wykazie cywilnych lądowisk prowadzonym przez Urząd Lotnictwa Cywilnego pod numerem 138."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A multi-purpose helicopter landing pad on the roof of the National Security Bureau building at Karowa 10 in Warsaw, built in 2005. It belongs to the Chancellery of the President of Poland and has been on the Civil Aviation Authority's list of civil heliports since 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Lądowisko Sokół", "url": "https://pl.wikipedia.org/wiki/L%C4%85dowisko_Sok%C3%B3%C5%82"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-harcerza-lazienkowska-7",
+    "nazwa": "Dom Harcerza (dziś MDK Łazienkowska)",
+    "name_en": "Scouts' House (today MDK Łazienkowska)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Łazienkowska 7",
+    "adres_historyczny": null,
+    "lat": 52.221527777,
+    "lon": 21.036527777,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek Domu Harcerza, dziś Młodzieżowego Domu Kultury im. Władysława Broniewskiego, przy ul. Łazienkowskiej 7 powstał w 1938 roku.",
+      "Budynek wybudowano dzięki publicznej zbiórce pieniędzy.",
+      "W czasie okupacji mieściło się tu Centrum Kształcenia Instruktorów Sportu dla żołnierzy Wehrmachtu, które prowadził Wilm Hozenfeld.",
+      "Po wojnie obiekt został odbudowany.",
+      "W 1951 roku budynek stał się siedzibą Związku Młodzieży Polskiej.",
+      "W 1963 roku patronem MDK został Władysław Broniewski.",
+      "W 1979 roku MDK otrzymał nową nieruchomość przy ul. Fabrycznej, gdzie zaczęło działać Miasteczko Ruchu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Built in 1938 from public donations as the Scouts' House at Łazienkowska 7 in Warsaw. During the occupation it housed a Wehrmacht sports instructors' school; today it is home to the Władysław Broniewski Youth Culture Centre (MDK).",
+    "ludzie": [
+      {"kto": "Wilm Hozenfeld", "rola": "prowadził Centrum Kształcenia Instruktorów Sportu dla żołnierzy Wehrmachtu w tym budynku w czasie okupacji", "wiki": null},
+      {"kto": "Władysław Broniewski", "rola": "patron MDK od 1963", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Harcerza"],
+    "zrodla": [
+      {"tytul": "Wikipedia: MDK Łazienkowska", "url": "https://pl.wikipedia.org/wiki/MDK_%C5%81azienkowska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy placówki (MDK); rekord opisuje budynek, w którym ona działa. Artykuł pisze „Wladysław” w jednym miejscu; poprawiono na „Władysław”."
+  }
+]

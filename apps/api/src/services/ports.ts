@@ -1,4 +1,4 @@
-import type { LatLng, TrackLeg } from "@sawa/shared";
+import type { Destination, LatLng, TrackLeg } from "@sawa/shared";
 import type { BBox, Place, PlaceAlongLine, PlaceSummary } from "../domain/place";
 import type { Network } from "../domain/routing/types";
 import type { SpeechAudio } from "../domain/speech";
@@ -79,4 +79,9 @@ export interface SpeechSynthesizer {
    * several pieces keeps one tone.
    */
   stream?(text: string, opts: { previousText: string }): AsyncIterable<Uint8Array>;
+}
+
+/** Finds a ride destination by name (Google Places). Throws AppError on upstream failure or timeout. */
+export interface DestinationSearch {
+  search(query: string): Promise<Destination[]>;
 }

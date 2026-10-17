@@ -1,0 +1,296 @@
+[
+  {
+    "id": "ulica-gdanska",
+    "nazwa": "Ulica Gdańska",
+    "name_en": "Gdańska Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Gdańska",
+    "adres_historyczny": null,
+    "lat": 52.2795473,
+    "lon": 20.9664614,
+    "lokalizacja": "przyblizona",
+    "okres": "brak danych–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica ma 1,3 kilometra długości.",
+      "Swój bieg rozpoczyna skrzyżowaniem z ul. Juliusza Słowackiego, tuż obok placu Jacka Kuronia, a kończy (w formie deptaku) na skrzyżowaniu z ulicą Władysława Smoleńskiego.",
+      "Ulica wzdłuż Parku Kaskada biegnie dawnym kanałem parkowym.",
+      "Gdańska 4a: od strony ul. J.Ch. Paska – Miejsce Pamięci Narodowej oznaczone tablicą projektu Karola Tchorka.",
+      "Gdańska 6a: zabytkowy Kościół Matki Bożej Królowej Polski, parafia pod opieką księży Marianów.",
+      "Gdańska 12/14: Miejsce Pamięci Narodowej oznaczone tablicą projektu K. Tchorka.",
+      "Na zachodniej stronie ulicy, naprzeciw Skweru Wołyńskiego, odsłonięto w 2013 roku w 70. rocznicę Rzezi Wołyńskiej pomnik Rzezi Wołyńskiej.",
+      "W gminnej ewidencji zabytków znajdują się m.in. adresy Gdańska 20–27/31."
+    ],
+    "ciekawostki": [
+      "Przy Skwerze Wołyńskim, w tunelu pod al. Armii Krajowej, stoi pomnik 27 Wołyńskiej Dywizji Piechoty AK."
+    ],
+    "summary_en": "Gdańska Street is a 1.3 km street in Warsaw's Żoliborz and Bielany area, running from Słowackiego past Jacka Kuroń Square to a pedestrian section near Smoleńskiego. Along it are several memorial plaques and a 2013 monument to the Volhynia massacre.",
+    "ludzie": [
+      {"kto": "Karol Tchorek", "rola": "autor tablic Miejsc Pamięci Narodowej przy Gdańskiej 4a i 12/14", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Gdańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Gda%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł zawiera głównie listę obiektów, bez historii przebiegu ulicy. Współrzędne z nagłówka (środek odcinka). Pole dzielnica: pierwsza pozycja nagłówka (Bielany, Żoliborz)."
+  },
+  {
+    "id": "kamienice-gdanska-2",
+    "nazwa": "Kamienice przy Gdańskiej 2",
+    "name_en": "Tenement houses at 2 Gdańska Street",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Gdańska 2 (i 2a)",
+    "adres_historyczny": null,
+    "lat": 52.2795473,
+    "lon": 20.9664614,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół kamienic z roku 1935, zaprojektowany przez Adama Paprockiego, dawnej Spółdzielni Stowarzyszenia Urzędników Państwowych, położony między ulicami Gdańską, Bieniewicką, Potocką i placem Jacka Kuronia.",
+      "Zespół jest wpisany do gminnego rejestru zabytków.",
+      "Do momentu aresztowania i wywiezienia do KL Dachau autor projektu, Adam Paprocki, był mieszkańcem kamienicy przy Gdańskiej 2.",
+      "Na budynku znajduje się tablica upamiętniająca Mariana Rejewskiego, kryptologa, który złamał kod „Enigmy”; mieszkał on w jednym z budynków pod adresem Gdańska 2.",
+      "Na jednym z budynków znajduje się tablica upamiętniająca walki powstania warszawskiego w dniu 14 września 1944."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A group of 1935 tenement houses at 2 and 2a Gdańska Street, built for a cooperative of state officials and designed by Adam Paprocki, who lived here until he was arrested and sent to Dachau. Plaques commemorate cryptologist Marian Rejewski, who lived in one of the buildings.",
+    "ludzie": [
+      {"kto": "Adam Paprocki", "rola": "autor projektu kamienic (1935); mieszkaniec Gdańskiej 2 do aresztowania i wywiezienia do KL Dachau", "wiki": null},
+      {"kto": "Marian Rejewski", "rola": "kryptolog, który złamał kod „Enigmy”; mieszkaniec jednego z budynków przy Gdańskiej 2", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Gdańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Gda%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord dodatkowy z artykułu o ulicy; współrzędne ulicy (środek odcinka), lokalizacja przyblizona."
+  },
+  {
+    "id": "ulica-jana-iii-sobieskiego",
+    "nazwa": "Ulica Jana III Sobieskiego",
+    "name_en": "Jan III Sobieski Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Jana III Sobieskiego",
+    "adres_historyczny": "Droga Królewska; Szosa Wilanowska (do 1919)",
+    "lat": 52.3237285,
+    "lon": 20.9194989,
+    "lokalizacja": "przyblizona",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga, znajdująca się do 1916 roku w całości poza granicami Warszawy, nazywana była dawniej Drogą Królewską lub Szosą Wilanowską i stanowiła główny trakt łączący Warszawę z Wilanowem.",
+      "15 maja 1914 oddano do użytku linię wąskotorowej kolei wilanowskiej po wschodniej stronie drogi, na odcinku między Drogą Książęcą a Bernardyńską Wodą.",
+      "W 1919 roku ulicy nadano obecną nazwę, upamiętniającą króla Jana III Sobieskiego.",
+      "19 lipca 1957 zamknięto ruch pociągów na linii kolei wilanowskiej, a tory rozebrano; obsługę połączeń do Wilanowa przejęła linia tramwajowa.",
+      "W lipcu 1975 oddano do użytku przebudowany dwujezdniowy odcinek ulicy z 3 pasami w każdym kierunku od ul. Chełmskiej do al. Wilanowskiej.",
+      "W latach 1976–1978 prace archeologiczne u zbiegu ulicy i al. Wilanowskiej odkryły relikty osady z przełomu XI i XII do XIII wieku (40 obiektów, m.in. chaty z paleniskami).",
+      "Linię tramwajową do Miasteczka Wilanów oddano do użytku w październiku 2024."
+    ],
+    "ciekawostki": [
+      "Dawny budynek mieszkalny pracowników Biur Radcy Handlowego i Ambasady ZSRR przy ulicy nr 100 nazywany jest „Szpiegowo” (Rosijskij żiłoj dom)."
+    ],
+    "summary_en": "Jan III Sobieski Street is part of the Royal Route (Trakt Królewski) and was known as the Royal Road or Wilanów Highway until 1916. The article describes it as a Mokotów street; the header lists Bielany and coordinates that do not match the text.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Droga Królewska",
+      "Szosa Wilanowska"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana III Sobieskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_III_Sobieskiego_w_Warszawie"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "DO WERYFIKACJI: artykuł opisuje ulicę na Mokotowie (część Traktu Królewskiego), a współrzędne w treści to 52°11′07,5″N 21°03′07,1″E (52.185417, 21.051972). Nagłówek podaje Bielany i współrzędne 52.3237285, 20.9194989, które wyglądają na błędne dopasowanie. Rekord ma współrzędne z nagłówka zgodnie z zasadą, ale nie nadaje się do mapy bez poprawki."
+  },
+  {
+    "id": "ulica-jana-kasprowicza",
+    "nazwa": "Ulica Jana Kasprowicza",
+    "name_en": "Jan Kasprowicz Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Jana Kasprowicza",
+    "adres_historyczny": null,
+    "lat": 52.2842567,
+    "lon": 20.9436027,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano w 1928 roku.",
+      "Ulica zaczyna się przy tzw. Serku Bielańskim, na skrzyżowaniu z ulicami Marymoncką i Stefana Żeromskiego, przy stacji metra Słodowiec, i biegnie na północny zachód do skrzyżowania z ul. Zgrupowania „AK Kampinos”.",
+      "Pod ulicą biegnie linia M1 metra z czterema stacjami: Słodowiec, Stare Bielany, Wawrzyszew i Młociny.",
+      "Budynki przy ulicy zostały włączone do Gminnej Ewidencji Zabytków m.st. Warszawy 24 lipca 2012 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Jan Kasprowicz Street is one of the main streets of Bielany, running northwest from the Serek Bielański junction to the Młociny area. The M1 metro line runs beneath it with four stations.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana Kasprowicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Kasprowicza_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł ma mało historii (nazwa z 1928 i wpis do GEZ); lista obiektów nie została przepisana jako fakty. Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-juliusza-slowackiego",
+    "nazwa": "Ulica Juliusza Słowackiego",
+    "name_en": "Juliusz Słowacki Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Juliusza Słowackiego",
+    "adres_historyczny": "część ul. Marymonckiej (do 1939); Modlinerstrasse (1941–1945)",
+    "lat": 52.2742451,
+    "lon": 20.9649837,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono przed II wojną światową. Do 1939 roku była częścią ulicy Marymonckiej, następnie przez dwa lata nosiła imię Juliusza Słowackiego, a w latach 1941–1945 nazywano ją Modlinerstrasse. Po wojnie przywrócono dawną nazwę.",
+      "Pierwsza linia autobusowa przez ulicę pojawiła się 20 grudnia 1920 roku (linia nr 2, od Dworca Gdańskiego do Marymontu).",
+      "W 1932 roku uruchomiono pierwszą linię nocną łączącą Żoliborz ze Śródmieściem; była to linia nr 30 z Placu Wilsona na Plac Trzech Krzyży.",
+      "Pierwsza linia tramwajowa przez ulicę, nr 15, łączyła Żoliborz ze Śródmieściem.",
+      "Pierwsza linia tramwajowa w okresie wojny pojawiła się 18 października 1939 roku; 1 sierpnia 1944 roku wszystkie linie zostały zlikwidowane wskutek wybuchu powstania warszawskiego.",
+      "Przy ulicy Słowackiego 6/8 mieści się urząd Dzielnicy Żoliborz.",
+      "Budynek Spółdzielczego Domu Handlowego „Merkury” przy ul. Słowackiego 16/18, zaprojektowany przez Jacka Nowickiego, oddano do użytku w 1964 roku.",
+      "Teatr Komedia przy ul. Słowackiego 19a: budynek wybudowano w 1952 roku dla Społecznego Domu Kultury WSM; pięć lat później oficjalnie założono teatr.",
+      "Pierwszą wystawioną w Teatrze Komedia sztuką był musical Kiss me Kate w reżyserii Jerzego Rakowieckiego, premiera 14 września 1957 roku."
+    ],
+    "ciekawostki": [
+      "W styczniu 2015 roku nowy najemca zniszczył ceramiczną dekorację autorstwa Krzysztofa Henisza w budynku „Merkury”, która przetrwała kilka dekad mimo zmieniających się najemców.",
+      "W mieszkaniu przy Słowackiego 5/13 m. 74 mieści się Izba Pamięci Marii Kownackiej, oddział Muzeum Książki Dziecięcej."
+    ],
+    "summary_en": "Juliusz Słowacki Street runs through Żoliborz and Bielany from Plac Wilsona to Marymoncka. Its buildings include the Merkury department store (1964) and the Komedia theatre (1952 building, 1957 first show), and it was renamed Modlinerstrasse during the occupation.",
+    "ludzie": [
+      {"kto": "Jacek Nowicki", "rola": "architekt budynku Merkury (1964)", "wiki": null},
+      {"kto": "Krzysztof Henisz", "rola": "autor ceramicznych dekoracji w budynku Merkury", "wiki": null},
+      {"kto": "Jerzy Rakowiecki", "rola": "reżyser musicalu Kiss me Kate (premiera 1957) w Teatrze Komedia", "wiki": null},
+      {"kto": "Kazimierz Tołwiński", "rola": "założyciel biblioteki z 1929 roku, której zbiory przeniesiono do Wypożyczalni jego imienia przy Słowackiego 5/13", "wiki": null},
+      {"kto": "Maria Kownacka", "rola": "pisarka, mieszkanka przy Słowackiego 5/13", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "część ul. Marymonckiej (do 1939)",
+      "Modlinerstrasse (1941–1945)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Juliusza Słowackiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Juliusza_S%C5%82owackiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka). Artykuł podaje Żoliborz i Bielany; pole dzielnica to pierwsza pozycja nagłówka."
+  },
+  {
+    "id": "ulica-kazimierza-grodeckiego",
+    "nazwa": "Ulica Kazimierza Grodeckiego",
+    "name_en": "Kazimierz Grodecki Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Kazimierza Grodeckiego",
+    "adres_historyczny": "przejściowo: mjr. Adolfa Pilcha „Doliny” (2017)",
+    "lat": 52.2831799,
+    "lon": 20.9440337,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1942–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica nosi nazwę na cześć Kazimierza Grodeckiego, działacza robotniczego, który w 1942 roku zginął na Pawiaku.",
+      "W ramach dekomunizacji nazw ulic, zarządzeniem zastępczym Wojewody Mazowieckiego z 9 listopada 2017 roku, ulica nosiła przejściowo nazwę mjr. Adolfa Pilcha „Doliny”.",
+      "Dotychczasową nazwę przywrócono decyzją Wojewódzkiego Sądu Administracyjnego w Warszawie.",
+      "Budynek mieszkalny przy ulicy Kazimierza Grodeckiego 4 został włączony do Gminnej Ewidencji Zabytków m.st. Warszawy 24 lipca 2012 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kazimierz Grodecki Street in Bielany is named after a labour activist who died in Pawiak prison in 1942. In 2017 a provincial order briefly renamed it after Major Adolf Pilch 'Dolina', but the original name was restored by a court decision.",
+    "ludzie": [
+      {"kto": "Kazimierz Grodecki", "rola": "działacz robotniczy, patron ulicy; zginął na Pawiaku w 1942 roku", "wiki": null},
+      {"kto": "Adolf Pilch „Dolina”", "rola": "major; nazwa zastępcza ulicy w 2017 roku, przywrócona przez WSA", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "mjr. Adolfa Pilcha „Doliny” (zarządzenie zastępcze z 2017, uchylone)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kazimierza Grodeckiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kazimierza_Grodeckiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-kleczewska",
+    "nazwa": "Ulica Kleczewska",
+    "name_en": "Kleczewska Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Kleczewska",
+    "adres_historyczny": null,
+    "lat": 52.2757079,
+    "lon": 20.942923,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała podczas rozbudowy Starych Bielan oraz osiedla Zdobycz Robotnicza w latach 30. XX wieku.",
+      "Zabudowa ulicy to domy w stylu modernistycznym, z których większość stoi do dziś.",
+      "Zespół domów wybudowanych w latach 1930–1936 najprawdopodobniej według projektu Aleksandra Kodelskiego.",
+      "Zespół modernistycznych kamieniczek wybudowanych do roku 1939 w oparciu o projekt Edwarda Straussa.",
+      "Modernistyczne domy projektu A. Kafarskiego, wybudowane w 1939 roku, zostały wykończone dopiero około roku 1949.",
+      "Zespół domów w stylu neoklasycyzmu narodowego, wybudowanych około 1927 według projektu Janusza Dzierżawskiego na potrzebę osiedla Zdobycz Robotnicza.",
+      "Budynki zaklasyfikowane jako zabytki włączono do Gminnej Ewidencji Zabytków m.st. Warszawy 24 lipca 2012 roku."
+    ],
+    "ciekawostki": [
+      "Jeden z domów projektu Czesława Perzanowskiego, wzniesiony w 1939 roku, jest opisany w artykule jako modernistyczny."
+    ],
+    "summary_en": "Kleczewska Street in Bielany was built in the 1930s during the expansion of Stare Bielany and the Zdobycz Robotnicza estate. Most of its modernist houses survive and many are on the municipal heritage list.",
+    "ludzie": [
+      {"kto": "Aleksander Kodelski", "rola": "prawdopodobny projektant zespołu domów z lat 1930–1936", "wiki": null},
+      {"kto": "Edward Strauss", "rola": "projektant zespołu modernistycznych kamieniczek (do 1939)", "wiki": null},
+      {"kto": "A. Kafarski", "rola": "projektant modernistycznych domów z 1939 roku", "wiki": null},
+      {"kto": "Janusz Dzierżawski", "rola": "projektant domów neoklasycyzmu narodowego (ok. 1927) dla osiedla Zdobycz Robotnicza", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kleczewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kleczewska_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dane o datach i projektantach pochodzą z przypisów do zabudowy i są przybliżone (np. 'najprawdopodobniej'). Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-marymoncka",
+    "nazwa": "Ulica Marymoncka",
+    "name_en": "Marymoncka Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Marymoncka",
+    "adres_historyczny": "Szosa Zakroczymska (pierwsza część drogi, 1819); Mikołajewska (część do Rogatek Marymonckich); Modlinerstrasse (okupacja niemiecka)",
+    "lat": 52.3015728,
+    "lon": 20.9394189,
+    "lokalizacja": "przyblizona",
+    "okres": "1819–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia ulicy sięga 1819 roku, kiedy ukończono budowę Szosy Zakroczymskiej, która w części przebiegu pokrywa się z obecną ul. Marymoncką.",
+      "W latach 1926–1932 na terenach dawnego carskiego poligonu powstało osiedle Zdobycz Robotnicza.",
+      "W 1927 rozpoczęto budowę torowiska kolei młocińskiej, która kursowała tędy do 1943.",
+      "Po podjęciu w 1938 roku decyzji o likwidacji lotniska mokotowskiego na polach południowych Młocin rozpoczęto budowę lotniska bielańskiego.",
+      "Linię tramwajową po wschodniej stronie ulicy uruchomiono 7 listopada 1953 roku; początkowo kursowała nią linia „28” z pętli przy ul. Potockiej do krańca Młociny.",
+      "W czasie okupacji niemieckiej nazwę ulicy zmieniono na Modlinerstrasse, mieszkańcy jednak nie używali tej nazwy.",
+      "W czasach PRL, do reformy sieci drogowej w 1985 roku, ulica była fragmentem drogi państwowej nr 10 i drogi międzynarodowej E81."
+    ],
+    "ciekawostki": [
+      "Do 1939 roku początkowym odcinkiem ulicy Marymonckiej była obecna ul. Juliusza Słowackiego.",
+      "W II połowie lat 50. na terenach dawnego lotniska rozpoczęła się budowa osiedla Wrzeciono (tzw. Młociny-Brzeziny)."
+    ],
+    "summary_en": "Marymoncka Street in Bielany runs from Słowackiego and Żeromskiego to the Northern Bridge route. Its history goes back to the 1819 Zakroczym road, and it was later shaped by the Zdobycz Robotnicza estate, a tram line from 1953 and the Bielany airfield project.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Szosa Zakroczymska (część przebiegu, od 1819)",
+      "Mikołajewska (część ulicy do Rogatek Marymonckich)",
+      "Modlinerstrasse (okupacja niemiecka)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Marymoncka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Marymoncka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  }
+]
