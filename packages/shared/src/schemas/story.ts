@@ -5,6 +5,10 @@ import { PlaceSourceSchema } from "./place";
 // MAX_STORY_SEC lives in route.ts with the planner windows it bounds (one import direction).
 import { AUDIENCES, FAMILIARITY, MAX_STORY_SEC, STORY_STYLES } from "./route";
 
+/** Which side of the vehicle the place is on, as the rider faces forward. */
+export const SIDES = ["left", "right"] as const;
+export type Side = (typeof SIDES)[number];
+
 /** POST /v1/stories body. `targetSec` is how long Sawa may talk before the next place. */
 export const StoryRequestSchema = z.object({
   placeId: z.string().min(1),
@@ -15,6 +19,8 @@ export const StoryRequestSchema = z.object({
   familiarity: z.enum(FAMILIARITY).optional(),
   /** "kids": simpler words, shorter, a question at the end; war told gently. Missing: "adult". */
   audience: z.enum(AUDIENCES).optional(),
+  /** Missing: the side is unknown (e.g. a place tapped on the map), Sawa does not name it. */
+  side: z.enum(SIDES).optional(),
   /** `factId`s of this place the listener already heard; Sawa tells the others first. */
   heardFacts: z.array(z.string().max(16)).max(MAX_HEARD_FACTS).default([]),
   /** Background stories already explained (`Story.contextIds`), never explained again. */
