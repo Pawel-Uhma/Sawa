@@ -2,6 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Interest, LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
+import type { Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -12,6 +13,7 @@ import {
 } from "react-map-gl/maplibre";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
   DEFAULT_MAP_PADDING,
@@ -20,6 +22,7 @@ import {
   resolveCamera,
 } from "../lib/camera";
 import { BASEMAP_STYLE_URL, MIN_PLACE_RICHNESS, START_VIEW } from "../lib/map-style";
+import { MIN_PLACES_ZOOM, tilesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
@@ -71,11 +74,13 @@ export function SawaMap({
   const mapRef = useRef<MapRef>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [cursor, setCursor] = useState<string>("grab");
-  const places = usePlaces();
+  const [view, setView] = useState<MapView | null>(null);
+  const tiles = useMemo(() => (view ? tilesInView(view.bounds, view.zoom) : []), [view]);
+  const places = usePlaces(tiles);
   const { selectedId, select } = useSelectedPlace();
 
   const visiblePlaces = useMemo(
-    () => selectVisiblePlaces(places.data ?? [], { interests, minRichness: MIN_PLACE_RICHNESS }),
+    () => selectVisiblePlaces(places.data, { interests, minRichness: MIN_PLACE_RICHNESS }),
     [places.data, interests],
   );
 
@@ -105,7 +110,7 @@ export function SawaMap({
   }, [moveKey, isLoaded]);
 
   const selected = useMemo(
-    () => (hasPlaceSheet ? findPlace(selectedId, places.data ?? [], route) : null),
+    () => (hasPlaceSheet ? findPlace(selectedId, places.data, route) : null),
     [hasPlaceSheet, selectedId, places.data, route],
   );
 
@@ -142,8 +147,10 @@ export function SawaMap({
             .getContainer()
             .querySelector(".maplibregl-ctrl-attrib")
             ?.classList.remove("maplibregl-compact-show");
+          setView(viewOf(event.target));
           setIsLoaded(true);
         }}
+        onMoveEnd={(event) => setView(viewOf(event.target))}
         attributionControl={false}
         style={{ width: "100%", height: "100%" }}
       >
@@ -162,11 +169,33 @@ export function SawaMap({
           </button>
         </p>
       )}
+      {view && view.zoom < MIN_PLACES_ZOOM && (
+        <p className="pointer-events-none absolute top-4 left-1/2 z-10 -translate-x-1/2 rounded-full bg-white/90 px-3 py-1.5 text-sm text-zinc-700 shadow">
+          Przybliż mapę, żeby zobaczyć miejsca
+        </p>
+      )}
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );
 }
 
+type MapView = { bounds: LngLatBounds; zoom: number };
+
+function viewOf(map: MapLibre): MapView {
+  const bounds = map.getBounds();
+  return {
+    bounds: [
+      [bounds.getWest(), bounds.getSouth()],
+      [bounds.getEast(), bounds.getNorth()],
+    ],
+    zoom: map.getZoom(),
+  };
+}
+
+/**
+ * Summary for the card. The place may sit in a tile that is out of view (panned away, or opened
+ * from a `?p=` link), then the card shows the name once the detail loads.
+ */
 function findPlace(
   id: string | null,
   places: PlaceSummaryFeature[],
@@ -175,10 +204,9 @@ function findPlace(
   if (!id) return null;
   const onRoute = route && routePlacesToGeoJson(route).features.find((f) => f.properties.id === id);
   const summary = places.find((p) => p.properties.id === id)?.properties;
-  if (!summary && !onRoute) return null;
   return {
     id,
-    name: summary?.name ?? onRoute?.properties.name ?? id,
+    name: summary?.name ?? onRoute?.properties.name,
     kind: summary?.kind,
     tags: summary?.interests,
     order: onRoute?.properties.order,

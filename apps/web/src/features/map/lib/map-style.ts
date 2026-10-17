@@ -7,17 +7,6 @@ export const BASEMAP_STYLE_URL = "https://tiles.openfreemap.org/styles/positron"
 /** Fonts available in the OpenFreeMap glyph server. */
 export const LABEL_FONT = ["Noto Sans Regular"];
 
-/**
- * Area the places are fetched for: the seed covers ~1 km around 42 Warsaw (12-plan-mvp Z5),
- * so one request with a slightly larger box gets them all.
- */
-export const PLACES_BBOX = {
-  minLng: HACKATHON_VENUE.lng - 0.025,
-  minLat: HACKATHON_VENUE.lat - 0.015,
-  maxLng: HACKATHON_VENUE.lng + 0.025,
-  maxLat: HACKATHON_VENUE.lat + 0.015,
-};
-
 export const START_VIEW = {
   longitude: HACKATHON_VENUE.lng,
   latitude: HACKATHON_VENUE.lat,

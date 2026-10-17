@@ -18,7 +18,7 @@ Podkład: **OpenFreeMap**, styl `https://tiles.openfreemap.org/styles/positron` 
 ## Stan wdrożenia (15:00, PR z gałęzi `r3/maplibre-map`)
 
 - Strona `/mapa` (link „Otwórz mapę” na `/`). Kroki 1–6 i 5a z §10 zrobione.
-- Miejsca z `GET /v1/places` (bbox obszaru danych, `PLACES_BBOX`), karta ze szczegółami z `GET /v1/places/:id`: okres, adres, tagi, pierwsze zdjęcie z podpisem, fakty (3 + rozwiń), źródła. Bez kluczy Supabase API serwuje `fake`.
+- Miejsca z `GET /v1/places` po kafelkach z widoku (od 16:07, niżej §3), karta ze szczegółami z `GET /v1/places/:id`: okres, adres, tagi, pierwsze zdjęcie z podpisem, fakty (3 + rozwiń), źródła. Bez kluczy Supabase API serwuje `fake`.
 - Zainteresowania w `?i=` to kategorie (`historical`, `cultural`, `sports`, `nature`). Miejsca mają tagi, filtr mapuje je przez `interestsOfTags` z `packages/shared`.
 - Trasa: `useDemoRoute` w `features/planner` woła `GET /v1/routes/demo` (planer R1). Brak API → mapa bez trasy i komunikat.
 - Sprawdzone zrzutami w headless Chromium (375 px i desktop).
@@ -56,11 +56,11 @@ features/map (React)
 
 | Dane | Skąd | Kiedy pobieramy | Cache (Query) |
 |---|---|---|---|
-| Miejsca na mapie | `GET /v1/places` z bbox całego obszaru 1 km wokół 42 Warsaw | raz przy wejściu na mapę (326 punktów to ok. 60 kB) **[Z]** | `staleTime: Infinity` |
+| Miejsca na mapie | `GET /v1/places?bbox=` osobno dla każdego kafelka siatki w widoku | po zatrzymaniu mapy (`moveend`), tylko nowe kafelki | per kafelek, `staleTime: Infinity`, `gcTime` 30 min |
 | Szczegóły miejsca | `GET /v1/places/:id` | po kliknięciu punktu, prefetch przy najechaniu na desktopie | per `id` |
 | Trasa | `POST /v1/routes/plan` (`origin`, `durationMin`, `interests`) | po „Generuj” | per parametry |
 
-Pobieranie miejsc po ruchu mapy (bbox z widoku) robimy dopiero wtedy, gdy dane wyjdą poza 1 km. Endpoint już przyjmuje `bbox`, więc zmiana będzie mała.
+**Bbox z widoku (17.10, 16:07, decyzja Antka).** Baza ma już ok. 1300 miejsc w całej Warszawie, a stały prostokąt wokół 42 Warsaw gubił ich większość. Widok dzielimy na stałą siatkę kafelków 0,04° × 0,025° (ok. 2,7 × 2,8 km, `lib/place-tiles.ts`) i o każdy kafelek pytamy osobno. Przesunięcie mapy dociąga tylko nowe kafelki, a powrót bierze je z cache. Poniżej zoomu 13 mapa nie pobiera miejsc i pokazuje „Przybliż mapę, żeby zobaczyć miejsca”. Na bardzo szerokim ekranie najwyżej 36 kafelków najbliżej środka. Karta z linku `?p=` działa także wtedy, gdy miejsce leży poza widokiem: nazwa przychodzi z `GET /v1/places/:id`.
 
 ## 4. Kontrakt (potrzebny z T-63)
 

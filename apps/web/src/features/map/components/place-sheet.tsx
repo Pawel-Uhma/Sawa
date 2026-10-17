@@ -8,7 +8,8 @@ const FACTS_PREVIEW = 3;
 
 export type PlaceSheetPlace = {
   id: string;
-  name: string;
+  /** Unknown until the detail loads when the place is not among the places in view. */
+  name?: string;
   kind?: string;
   tags?: string[];
   /** Position on the route, when the place is one of its stops for a story. */
@@ -26,11 +27,12 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
   const kind = detail.data?.kind ?? place.kind;
   const tags = detail.data?.interests ?? place.tags ?? [];
   const kindLabel = kind ? PLACE_KIND_LABELS[kind] : undefined;
+  const name = detail.data?.name ?? place.name;
   const eyebrow = [kindLabel, place.order && `${place.order}. na trasie`].filter(Boolean);
 
   return (
     <section
-      aria-label={place.name}
+      aria-label={name ?? "Miejsce"}
       className="absolute inset-x-0 bottom-0 z-10 max-h-[50dvh] overflow-y-auto rounded-t-2xl bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-[0_-4px_24px_rgba(0,0,0,0.12)] md:inset-x-auto md:top-4 md:bottom-auto md:left-4 md:max-h-[calc(100dvh-2rem)] md:w-[380px] md:rounded-2xl"
     >
       <div className="flex items-start justify-between gap-3">
@@ -48,7 +50,7 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
             </p>
           )}
           <h2 className="mt-1 text-lg font-semibold leading-snug text-zinc-900">
-            {detail.data?.name ?? place.name}
+            {name ?? <span className="inline-block h-5 w-40 animate-pulse rounded bg-zinc-100" />}
           </h2>
           {detail.data && <PlaceMeta place={detail.data} />}
         </div>
@@ -82,6 +84,9 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
             Spróbuj ponownie
           </button>
         </p>
+      )}
+      {detail.data === null && (
+        <p className="mt-4 text-sm text-zinc-600">Nie ma takiego miejsca.</p>
       )}
       {detail.data && <PlaceDetail key={detail.data.id} place={detail.data} />}
     </section>
