@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#475569"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <!-- long, narrow, rounded body with a white halo -->
+  <rect x="22" y="3" width="20" height="58" rx="9" fill="url(#body)" stroke="#ffffff" stroke-width="3"/>
+  <!-- front windshield -->
+  <rect x="25" y="8" width="14" height="10" rx="3.5" fill="url(#glass)"/>
+  <path d="M28 10.5h4" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- headlights -->
+  <circle cx="27" cy="4.8" r="1.5" fill="#fef9c3"/>
+  <circle cx="37" cy="4.8" r="1.5" fill="#fef9c3"/>
+  <!-- side windows, three per side -->
+  <rect x="23.5" y="21" width="2.8" height="9" rx="1" fill="url(#glass)"/>
+  <rect x="23.5" y="33" width="2.8" height="9" rx="1" fill="url(#glass)"/>
+  <rect x="37.7" y="21" width="2.8" height="9" rx="1" fill="url(#glass)"/>
+  <rect x="37.7" y="33" width="2.8" height="9" rx="1" fill="url(#glass)"/>
+  <!-- roof line and articulation joint -->
+  <rect x="30.5" y="21" width="3" height="24" rx="1.5" fill="#ffffff" fill-opacity="0.2"/>
+  <path d="M24 31.5h16" stroke="#7f1d1d" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- rear window -->
+  <rect x="25" y="48" width="14" height="7" rx="2.5" fill="url(#glass)"/>
+</svg>

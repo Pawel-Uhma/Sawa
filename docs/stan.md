@@ -2,6 +2,8 @@
 
 **Ostatnia aktualizacja:** 17.10.2026, ok. 19:10 (Szczepan, z agentem)
 
+- 16:45 (Paweł, z agentem R3): pojazdy na mapie (T-100, issue #30) w gałęzi `r3/pojazdy-na-zywo`: hook co 10 s, ikony tramwaju i autobusu z `public/icons/`, płynny ruch w `requestAnimationFrame`. Typecheck, lint i testy zielone; zmergowane do `main` (PR, typecheck, lint i testy zielone). Do sprawdzenia na mapie z `WAW_TOKEN`.
+
 ## Teraz
 
 - Jasiek (16:57, R2 z agentem, za zgodą R1): T-106. Odcinki `walk` idą po ulicach i chodnikach: planer liczy jak dotąd (prosto × 1,3), a potem `Leg.lngLats` każdego odcinka pieszego bierze z OSRM (profil pieszy, `WALK_ROUTER_URL`, domyślnie FOSSGIS, bez klucza, timeout 3 s, przy awarii proste odcinki). Czasy i `etaSec` bez zmian. **Dla R3:** mapa rysuje to bez zmian w kodzie; w T-102 interpoluj po długości łamanej, nie po indeksie punktu.
