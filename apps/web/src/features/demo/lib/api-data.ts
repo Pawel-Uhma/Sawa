@@ -50,7 +50,7 @@ export async function planRoute(
   origin: LatLng,
   durationMin: number,
   profile: Profile,
-  end: RideEnd = { type: "open" },
+  end: RideEnd = { type: "loop" },
   travel: Travel = "transit",
 ): Promise<Route> {
   const { interests, familiarity, storyStyle } = listenerOf(profile);

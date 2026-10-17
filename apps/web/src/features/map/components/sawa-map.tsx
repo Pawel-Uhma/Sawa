@@ -21,6 +21,7 @@ import {
   DEFAULT_MAP_PADDING,
   type MapCamera,
   type MapPadding,
+  paddingWithSheet,
   resolveCamera,
 } from "../lib/camera";
 import { loadMapIcons } from "../lib/map-icons";
@@ -97,9 +98,16 @@ export function SawaMap({
     [places.data, interests],
   );
 
+  const selected = useMemo(
+    () => (hasPlaceSheet ? findPlace(selectedId, places.data, route) : null),
+    [hasPlaceSheet, selectedId, places.data, route],
+  );
+
   const fullPadding = { ...DEFAULT_MAP_PADDING, ...padding };
+  const isSheetOpen = Boolean(selected);
   const move = resolveCamera(camera, route);
-  const moveKey = cameraMoveKey(move, fullPadding);
+  // Opening or closing the card refits the view, so the route does not end up under it.
+  const moveKey = `${cameraMoveKey(move, fullPadding)}|${isSheetOpen}`;
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: moveKey holds move and padding by value; the objects themselves are new on every render
   useEffect(() => {
@@ -107,7 +115,14 @@ export function SawaMap({
     if (!isLoaded || !map || !move) return;
     // MapLibre reads an explicit `zoom: undefined` / `maxZoom: undefined` as a value (camera goes NaN),
     // so optional options are only passed when set.
-    const options = { padding: fullPadding, duration: CAMERA_DURATION_MS };
+    const container = map.getContainer();
+    const cameraPadding = isSheetOpen
+      ? paddingWithSheet(fullPadding, {
+          width: container.clientWidth,
+          height: container.clientHeight,
+        })
+      : fullPadding;
+    const options = { padding: cameraPadding, duration: CAMERA_DURATION_MS };
     if (move.type === "fit") {
       map.fitBounds(
         move.bounds,
@@ -121,11 +136,6 @@ export function SawaMap({
       );
     }
   }, [moveKey, isLoaded]);
-
-  const selected = useMemo(
-    () => (hasPlaceSheet ? findPlace(selectedId, places.data, route) : null),
-    [hasPlaceSheet, selectedId, places.data, route],
-  );
 
   function handleClick(event: MapLayerMouseEvent) {
     const feature = event.features?.[0];

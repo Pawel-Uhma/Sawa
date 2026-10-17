@@ -129,6 +129,7 @@ export function buildRoute({
       toStop: toStop(network, alight.stopId),
       departAt: at(now, leg.boardElapsedSec),
       ...(leg.realDeparture ? { realDeparture: true } : {}),
+      ...(leg.delaySec === undefined ? {} : { delaySec: leg.delaySec }),
       durationMin: Math.round((leg.alightElapsedSec - leg.boardElapsedSec) / 6) / 10,
       lngLats: slicePolyline(pattern.lngLats, cumDistM, board.alongM, alight.alongM),
     };

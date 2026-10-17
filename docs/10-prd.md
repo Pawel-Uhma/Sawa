@@ -53,7 +53,7 @@ Sawa, syrenka-przewodniczka, planuje przejazd komunikacją miejską dopasowany d
 | Wikipedia / Wikidata (cała Warszawa) | Miejsca i fakty; trasa wychodzi poza 1 km wokół 42 Warsaw |
 | [historia/](historia/README.md) (1 km wokół 42 Warsaw) | Gęste dane do demo |
 | Google Places | Uzupełnienie miejsc; agresywny cache, bo darmowy limit to 1000 zapytań na klucz |
-| Toalety | Do ustalenia: brak zbioru w portalu |
+| Toalety | Poza zakresem (spotkanie 17.10, 19:30): brak zbioru w portalu i potrzeby |
 
 ## Architektura (zmiany wobec [05](05-plan-architektury.md))
 

@@ -51,7 +51,6 @@ const TRAVEL_OPTIONS: { type: Travel; label: string }[] = [
 ];
 
 const END_OPTIONS: { type: RideEndType; label: string }[] = [
-  { type: "open", label: "Przed siebie" },
   { type: "loop", label: "Wracam tu" },
   { type: "destination", label: "Do celu" },
 ];

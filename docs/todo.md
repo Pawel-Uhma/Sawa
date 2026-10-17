@@ -1,6 +1,6 @@
 # Todo zespołu
 
-**Ostatnia aktualizacja:** 17.10.2026, ok. 16:40
+**Ostatnia aktualizacja:** 17.10.2026, ok. 19:30
 
 **Źródło prawdy dla zadań.** Każdy agent i każda osoba czyta tę listę przed pracą i aktualizuje ją po pracy.
 
@@ -36,12 +36,13 @@
 - [x] **T-77** Odpowiedzi z onboardingu w planerze: znajomość miasta, styl opowieści; web wysyła je z `planRoute` — `R1` — (Szczepan, 16:30, PR #22; 17:20 bez kafelków `tags`, front ma tylko 4 kategorie)
 - [x] **T-78** Pamięć słuchacza (opowiedziane fakty i tło w telefonie, `heard` w planerze, `heardFacts`/`knownContexts` w opowieściach) i onboarding z 4 kategoriami — `R3` — (Paweł z agentem, 16:40; zmiana w `score.ts` R1 na polecenie Pawła, zaakceptowana przez Szczepana 16:54)
 - [x] **T-79** Trasy od 5 min i odcinki piesze (`Leg.mode` `walk`, spacer poniżej 30 min, dojścia do i z przystanków) — `R1` — (Szczepan, 17:50, PR w toku)
-- [ ] **T-10** Adapter `apps/api/src/adapters/waw` (przystanki, linie, odjazdy) z cache w pamięci i fixtures z curl — `R1` — 15:00 (do przeglądu: mapa bierze miejsca z `/v1/places`, planer jedzie na GTFS, w MVP może zostać tylko odjazdy z T-17)
+- [x] **T-10** Adapter `apps/api/src/adapters/waw` (przystanki, linie, odjazdy) z cache w pamięci i fixtures z curl — `R1` — 15:00 (do przeglądu: mapa bierze miejsca z `/v1/places`, planer jedzie na GTFS, w MVP może zostać tylko odjazdy z T-17) (Szczepan, 19:40: niepotrzebne; planer jedzie na GTFS, z API miasta zostały odjazdy (T-76) i pozycje pojazdów (T-99))
 - [x] **T-15** Skąd kolejność przystanków linii (GTFS / stare API / kształt z pozycji pojazdów), decyzja w `stan.md` (P1 w planie MVP) — `R1` — 13:30 (Szczepan, 13:15: GTFS z mkuran.pl, skompresowany do pliku w repo)
 - [x] **T-16** Mock `POST /v1/routes/plan` z fixture zgodnej z kontraktem, żeby R3 i R4 nie czekali — `R1` — 14:30 (Szczepan, 13:20, PR #2; od 14:00 zastąpiony prawdziwym planerem)
-- [ ] **T-11** Odjazdy z przystanku i linie na przystanku (endpointy z [api/](api/)) — `R1` — 15:00
+- [x] **T-11** Odjazdy z przystanku i linie na przystanku (endpointy z [api/](api/)) — `R1` — 15:00 (Szczepan, 19:40: niepotrzebne, odjazdy są w planerze (T-76))
 - [x] **T-13** Planer: trasa z przesiadkami, czas 30 min – 4 h, lista punktów — `R1` — 22:00 (Szczepan, 14:00: GTFS + beam search, podgląd `/debug/planner`, PR #4)
-- [~] **T-17** `WAW_TOKEN` w `apps/api/.env.local` i na Railway, sprawdzić odjazdy na żywo (format odpowiedzi API nie był testowany z tokenem) — `R1` — 17:00 (Szczepan, 15:40: lokalnie działa; API zwraca gołą tablicę wierszy, nie `{ result }`, poprawka parsera w PR; zostało: `WAW_TOKEN` na Railway)
+- [x] **T-17** `WAW_TOKEN` w `apps/api/.env.local` i na Railway, sprawdzić odjazdy na żywo (format odpowiedzi API nie był testowany z tokenem) — `R1` — 17:00 (Szczepan, 15:40: lokalnie działa; API zwraca gołą tablicę wierszy, nie `{ result }`, poprawka parsera w PR; zostało: `WAW_TOKEN` na Railway) (19:40: token na Railway jest, ale każde zapytanie z produkcji do API miasta pada: `/v1/vehicles/track` daje `live: true, stale: true`, odjazdy szacowane; lokalnie ten sam kod działa. Sprawdzić w logach Railway „vehicle positions failed”: HTTP 500 = zła wartość tokenu, „did not answer” = sieć; po poprawce restart, bo pusty wynik odjazdów jest w cache 1 h) (spotkanie 19:30: `WAW_TOKEN` dodany na Railway, wcześniej zmienna miała inną nazwę)
+- [ ] **T-113** Trasa kończy się dziwną pętlą (zgłaszane kilka razy przy teście) — `R1`
 - [ ] **T-18** Przed demo: przebudować graf na niedzielę (`pnpm --filter @sawa/scripts transit --date 2026-10-18`) i zapisać trasę demo jako fixture do trybu offline — `R1` — niedziela 08:00
 - [x] **T-99** Pojazdy na żywo pod mapę: pojazd użytkownika + po jednym przed i za nim, tor do płynnej animacji, prędkość z przejazdu poprzednika tej samej linii; `POST /v1/vehicles/track`, kontrakt w `packages/shared/src/schemas/vehicles.ts`. Opis: [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R1` (zrobił Jasiek na prośbę użytkownika, gałąź `r1/live-vehicles`) — (Jasiek, 16:30; na Railway potrzebne `WAW_TOKEN` (T-17) i w dniu demo `VEHICLES_ALWAYS_ON=1`, wpisane w [przed-demo.md](przed-demo.md))
 
@@ -57,6 +58,8 @@
 
 ## R3 · Frontend i mapa
 
+- [ ] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3`
+- [ ] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3`
 - [x] **T-30** Mapa MapLibre z jednym zbiorem punktów (miejsca z `/v1/places`, nie z T-10) — `R3` — 13:00 (Antek, 16:40; plan w [14-plan-mapy.md](14-plan-mapy.md); `/mapa` z kartą miejsca i trasą PR #12, API `SawaMap` dla ekranów PR #16, miejsca z kafelków widoku na całą Warszawę PR #27)
 - [x] **T-105** Ciemny motyw: przełącznik Jasny / Ciemny / Auto w menu Sawy, ciemna mapa i karta miejsca, syrenka bez białych pól pod pachami, ciemna ikonka — `R3` — (Antek, 17:05; ekrany demo zostają jasne, dopóki nie przejdą na tokeny)
 - [x] **T-30b** Mapa w demo (ekran główny) z jednym zbiorem punktów — `R3` — 13:00 (Paweł z agentem, 13:51: prawdziwa mapa MapLibre + OpenFreeMap; 14:54: demo na `SawaMap` Antka, piny z `/v1/places`, trasa z `POST /v1/routes/plan`, zob. `stan.md`)
@@ -71,11 +74,17 @@
 - [x] **T-106** Trasy piesze po ulicach i chodnikach zamiast linii prostej: geometria odcinków `walk` z OSRM (profil pieszy, FOSSGIS), przy awarii proste odcinki; czasy bez zmian — `R1` (zlecone Jaśkowi, R2, za zgodą R1) — (Jasiek z agentem, 16:57)
 - [x] **T-107** Start przejażdżki z prawdziwej lokalizacji (GPS) z 42 Warsaw jako zapasem (brak zgody, poza Warszawą, w trakcie szukania); przełącznik „Skąd ruszamy” w menu Sawy, wybór w `localStorage` (`lib/start-point.ts`) — `R3` → `R1` — (zlecił Szczepan swojemu agentowi, 16:58, PR #40, zaakceptował Paweł, scalone 17:16)
 - [x] **T-104** Najszybsza trasa do celu: `POST /v1/routes/plan` z `destination` bez `durationMin`; trasa z czasem, która nie dojeżdża do celu, przechodzi na najszybszy przejazd — `R1` — (Szczepan, 19:10, PR w toku)
+- [x] **T-108** Czasy na żywo: opóźnienie pierwszego pojazdu z pozycji (`Leg.delaySec`), podpis danych miasta w trasie, `/health` z datą grafu GTFS — `R1` — (Szczepan, 19:40, PR w toku)
+- [x] **T-109** Słabe punkty planera: bez dobijania czasu czekaniem, przesiadki pieszo do 300 m, wiązka bez kopii — `R1` — (Szczepan, 19:40, PR w toku)
 - [x] **T-100** Pojazdy na mapie trasy (PR, Paweł, 17.10, ok. 16:45): hook `useLiveVehicles` (co 10 s), osobne ikony tramwaju i autobusu, płynny ruch przez `positionOnTrack` w `requestAnimationFrame`, wyróżniony pojazd `ride`. Gotowe przykłady kodu w [15-pojazdy-na-zywo.md](15-pojazdy-na-zywo.md) — `R3` (Paweł, issue #30) — po T-99 (PR #29)
-- [ ] **T-101** Mapa: `fitBounds` trasy z uwzględnieniem otwartej karty miejsca (trasa chowa się pod kartą) i ostrzeżenie „Expected number, found null” w konsoli — `R3` (Antek)
+- [~] **T-101** Mapa: `fitBounds` trasy z uwzględnieniem otwartej karty miejsca (trasa chowa się pod kartą) i ostrzeżenie „Expected number, found null” w konsoli — `R3` (Antek, 16:55: karta doliczana do paddingu kamery, `paddingWithSheet`, gałąź `r3/fit-place-sheet`; ostrzeżenie zostaje)
 - [ ] **T-102** Pozycja „za oknem”: znacznik jedzie wzdłuż `Leg.lngLats` w czasie odtwarzania (krok 8 w [14-plan-mapy.md](14-plan-mapy.md) §10, M2 planu MVP); potrzebne do T-36 — `R3` (Antek) — niedziela 08:00
 - [ ] **T-103** Mapa na 2 prawdziwych telefonach: karta miejsca z przeciąganiem, 16 px marginesu, bez poziomego scrolla (krok 7 w [14-plan-mapy.md](14-plan-mapy.md) §10) — `R3` (Antek)
 - [ ] **T-107** Mapa: przy oddaleniu punkty miejsc grupują się w kółka z liczbą punktów zamiast znikać (`cluster: true` w źródle, stuknięcie w kółko przybliża i rozbija grupę) — `R3` (issue #42)
+- [ ] **T-115** Ekrany demo na tokeny kolorów (`bg-powierzchnia`, `bg-tlo-2`) zamiast `bg-white` i hexów, potem klasa `.motyw` na `<body>`, żeby ciemny motyw działał wszędzie (dziś w trybie jazdy syrenka ma ciemne pachy na jasnym tle) — `R3` (Paweł)
+- [ ] **T-116** Usunąć „Przed siebie” z wyboru końca trasy (wywozi w przypadkowe miejsce); zostają „Wracam tu” i „Do celu” — `R3` (Paweł)
+- [ ] **T-117** „Do celu” ze startu z GPS nie wyznacza trasy; 5 min do odległego celu wysypało produkcję (powinien być najszybszy przejazd albo komunikat) — `R3` (Paweł) + `R1`
+- [ ] **T-112** Śledzenie lokalizacji na żywo: z pozycji użytkownika wybierać opowieść (`activeIndex` do ekranu „Na żywo”) — `R3` (Antek)
 - [x] **T-60** Pierwszy deploy na Vercel — `R3` — 22:00 (Paweł, 13:20: https://sawa-hackathon.vercel.app; auto-deploy z GitHuba czeka na dostęp aplikacji Vercel do repo)
 
 ## R4 · AI i głos
@@ -92,6 +101,7 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-51** Zaktualizować pitch deck w [pitch/](pitch/) pod MVP — `R2` — 22:00
 - [ ] **T-52** Test na telefonie co 2 h: wszystkie ścieżki z PRD, zgłoszenia w tym pliku (robią wszyscy na zmianę, R2 pilnuje) — `R2` — od 17:00
 - [ ] **T-55** Nagranie wideo demo jako zapas — `R2` — 22:00
+- [ ] **T-114** Pitch pod „Warszawa 2076” według uwag mentorów (spotkanie 19:30): kto jest odbiorcą, co miasto zyska za 50 lat, dowód, że dane miasta dają wartość; sprawdzić źródło liczby „20% warszawiaków spoza Warszawy”; z gotową prezentacją do Bartka (Play) — `R2` (z T-50)
 - [ ] **T-53** Opis zakresu użycia AI (z historii git, PR-ów i archiwum `ai-log.md`) i dokumentacja na oddanie (`README.md`, regulamin §4 ust. 4) — `R2` — niedziela 10:30
 - [ ] **T-54** Checklista z [06-plan-dnia.md](06-plan-dnia.md): repo, deck, dokumentacja, nagranie — `R2` — niedziela 10:30
 
@@ -116,10 +126,10 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 
 Zakres to tylko lista MVP z [10-prd.md](10-prd.md), zob. [12-plan-mvp.md](12-plan-mvp.md) §10.
 
-- [ ] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00
+- [x] **T-05** Decyzja o toaletach (OSM czy rezygnacja) — `R1` — 14:00 (Szczepan, 19:40: rezygnacja w MVP, brak zbioru w portalu)
 - [x] **T-06** Decyzja o Google Places (klucz każdego czy tylko Wikipedia) — `R2` — 14:00 (Jasiek, 13:43: używamy danych Google pobranych 15–16.10, bez zapytań na żywo i bez klucza; warstwa `dzis` → `places.today_nearby`, `Place.todayNearby`)
-- [ ] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00
-- [ ] **T-14** Przewidywanie, co będzie za oknem za X s (pozycja + rozkład); przy korku dłuższa historia — `R1` — po 22:00
+- [x] **T-12** Kalendarz wydarzeń i pogoda (zbiory z [03-dane.md](03-dane.md)) — `R1` — 17:00 (Szczepan, 19:40: R1 nie robi, poza MVP; do wzięcia, jeśli ktoś ma czas)
+- [ ] **T-14** Przewidywanie, co będzie za oknem za X s (pozycja + rozkład); przy korku dłuższa historia — `R1` — po 22:00 (19:40: część jest w T-99 Jaśka i w opóźnieniu na żywo T-108; reszta po MVP)
 - [x] **T-23** ~~Cache Google Places w Supabase~~ niepotrzebne: nie odpytujemy Google na żywo (T-06) — `R2` — (Jasiek, 13:43)
 - [x] **T-34** Zakładka czatu z Sawą (UI, podpięcie do T-40) — `R3` — (Paweł z agentem, 17.10 ok. 17:00: zamiast czatu zakładka Sawa na środku paska z głową, która świeci się, gdy mówi; transkrypcja, sterowanie, „opowiedz więcej”, lista „co już opowiedziała”. Rozmowa w wolnym tekście wciąż czeka na T-40)
 - [x] **T-75** Zakładka Przejażdżki (makieta D): przełącznik czasu, karta trasy z podglądem z planera, zapowiedzi Śródmieścia i Pragi — `R3` — (Paweł z agentem, 17.10 14:46)

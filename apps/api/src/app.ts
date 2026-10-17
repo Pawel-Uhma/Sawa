@@ -4,7 +4,7 @@ import { createFakePlacesRepository } from "./adapters/supabase/fake-places-repo
 import { AppError, toErrorBody } from "./lib/errors";
 import { createDebugRoutes } from "./routes/debug";
 import { createDestinationRoutes } from "./routes/destinations";
-import { healthRoutes } from "./routes/health";
+import { createHealthRoutes } from "./routes/health";
 import { placeRoutes } from "./routes/places";
 import { createRouteRoutes } from "./routes/routes";
 import { createSpeechRoutes } from "./routes/speech";
@@ -40,6 +40,8 @@ export type AppConfig = {
   corsPreviewPattern?: string;
   /** Mounts /debug/* pages (route planner preview) and POST /v1/speech for any text. */
   debugPages?: boolean;
+  /** Service day of the transit graph, reported by /health. */
+  transitDate?: string;
   services: AppServices;
   onUnexpectedError?: (err: unknown) => void;
 };
@@ -71,7 +73,7 @@ export function createApp(config: AppConfig) {
       return c.json(toErrorBody("INTERNAL", "Unexpected error"), 500);
     })
     .notFound((c) => c.json(toErrorBody("NOT_FOUND", "Route not found"), 404))
-    .route("/", healthRoutes)
+    .route("/", createHealthRoutes(config.transitDate))
     .route("/", createRouteRoutes(services.routePlanner))
     .route("/", placeRoutes(services.places ?? createFakePlacesRepository()))
     .route("/", createStoryRoutes(stories, speech))
