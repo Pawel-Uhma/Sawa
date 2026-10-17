@@ -68,7 +68,7 @@ features/map (React)
 | Szczegóły miejsca | `GET /v1/places/:id` | po kliknięciu punktu, prefetch przy najechaniu na desktopie | per `id` |
 | Trasa | `POST /v1/routes/plan` (`origin`, `durationMin`, `interests`) | po „Generuj” | per parametry |
 
-**Bbox z widoku (17.10, 16:07, decyzja Antka).** Baza ma już ok. 1300 miejsc w całej Warszawie, a stały prostokąt wokół 42 Warsaw gubił ich większość. Widok dzielimy na stałą siatkę kafelków 0,04° × 0,025° (ok. 2,7 × 2,8 km, `lib/place-tiles.ts`) i o każdy kafelek pytamy osobno. Przesunięcie mapy dociąga tylko nowe kafelki, a powrót bierze je z cache. Poniżej zoomu 13 mapa nie pobiera miejsc i pokazuje „Przybliż mapę, żeby zobaczyć miejsca”. Na bardzo szerokim ekranie najwyżej 36 kafelków najbliżej środka. Karta z linku `?p=` działa także wtedy, gdy miejsce leży poza widokiem: nazwa przychodzi z `GET /v1/places/:id`.
+**Bbox z widoku (17.10, 16:07, decyzja Antka).** Baza ma już ok. 1300 miejsc w całej Warszawie, a stały prostokąt wokół 42 Warsaw gubił ich większość. Widok dzielimy na stałą siatkę kafelków 0,04° × 0,025° (ok. 2,7 × 2,8 km, `lib/place-tiles.ts`) i o każdy kafelek pytamy osobno. Przesunięcie mapy dociąga tylko nowe kafelki, a powrót bierze je z cache. Poniżej zoomu 13 mapa pyta raz o całe miasto (`CITY_BBOX`, ok. 3000 miejsc, ok. 110 kB po gzip), zamiast o dziesiątki kafelków (T-118). Przy przejściu między kafelkami a całym miastem zostają poprzednie punkty, dopóki nowe się nie wczytają. Na bardzo szerokim ekranie najwyżej 36 kafelków najbliżej środka. Karta z linku `?p=` działa także wtedy, gdy miejsce leży poza widokiem: nazwa przychodzi z `GET /v1/places/:id`.
 
 ## 4. Kontrakt (potrzebny z T-63)
 
@@ -115,6 +115,7 @@ Mapa ładuje się tylko w przeglądarce: `next/dynamic` z `ssr: false`, bo MapLi
 | Warstwa | Źródło | Wygląd | Interakcja |
 |---|---|---|---|
 | `places-circle` | `places` (GeoJSON z API, `promoteId: "id"`) | koło 6–8 px, kolor wg `kind` (9 typów → 5 kolorów, np. budynek/ulica, pomnik/tablica, mural, świątynia/cmentarz, miejsce/zdarzenie); większe przy wyższym `richness` | klik → `?p=<id>` i karta; kursor `pointer`; `feature-state: selected` = obwódka |
+| `places-cluster`, `places-cluster-count` | `places` (`cluster: true`, do zoomu 14, promień 44 px, od 10 miejsc w grupie) | ciemne koło z liczbą miejsc w grupie, większe przy większej grupie (T-118) | klik → `getClusterExpansionZoom` i `easeTo`, grupa się rozpada |
 | `places-label` | `places` | nazwa od zoomu 16, `text-optional`, żeby etykiety się nie nakładały | — |
 | `route-casing` + `route-line` | `route-legs` (z `route-to-geojson`) | linia 5 px z białą obwódką; kolor wg `mode` (tramwaj czerwony, autobus granatowy); przesiadka = przerwa i kropka | — |
 | `route-places` | `route-places` | koło z numerem 1..n (kolejność `etaSec`), nad zwykłymi miejscami | klik → ta sama karta |
