@@ -102,6 +102,7 @@ Każda ma właściciela (kto rozstrzyga). Po decyzji przenieś ją do właściwe
 
 ## Ostatnie decyzje
 
+- 17.10, 16:54: najkrótsza przejażdżka to 5 min (`MIN_DURATION_MIN`, wcześniej 30). Krótkie trasy mogą być samym spacerem (T-79). Nowość miejsca (`heard`, `HEARD_FLOOR` w `score.ts`) od Pawła zaakceptowana. Zdecydował Szczepan (R1).
 - 17.10, 13:37: zainteresowania to 4 ogólne kategorie `historical`, `cultural`, `sports`, `nature` (`packages/shared/src/interests.ts`, PR #7); szczegółowe tagi zostają w danych. Zastępuje listę 8 kluczy z [13-plan-bazy.md §5](13-plan-bazy.md). Zdecydował Szczepan (R1).
 
 - 17.10, 13:43: Google Places tylko z danych pobranych 15–16.10 (warstwa `dzis`, 506 obiektów przy 224 miejscach, i 55 rekordów `g-*`), **bez zapytań na żywo i bez klucza**. W API jako `Place.todayNearby`; w UI podpis „Google Maps”. Warunki Google: treść max 30 dni, po hackathonie usunąć albo odświeżyć. Zdecydował Jasiek (R2). T-23 odpada.
