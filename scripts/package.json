@@ -2,8 +2,15 @@
   "name": "@sawa/scripts",
   "private": true,
   "type": "module",
+  "scripts": {
+    "seed:historia": "node --env-file-if-exists=../.env.local --import tsx seed-historia.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
   "dependencies": {
     "@sawa/shared": "workspace:*",
-    "tsx": "^4.23.15"
+    "@supabase/supabase-js": "^2.118.0",
+    "tsx": "^4.23.15",
+    "zod": "^4.6.7"
   }
 }
