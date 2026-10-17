@@ -1,0 +1,119 @@
+[
+  {
+    "id": "szkola-powszechna-nasza-szkola-rysia-1",
+    "nazwa": "Szkoła powszechna „Nasza Szkoła” przy ul. Rysiej 1",
+    "name_en": "\"Nasza Szkoła\" primary school at 1 Rysia Street",
+    "typ": "budynek",
+    "dzielnica": null,
+    "adres_dzis": "Rysia 1",
+    "adres_historyczny": "Rysia 1",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1937",
+    "istnieje": null,
+    "fakty": [
+      "W 1937 r. istniała w Warszawie, przy ul. Rysiej 1, prywatna szkoła powszechna i przedszkole, pod nazwą „Nasza Szkoła”.",
+      "Dyrektorką była Cecylia Oderfeld, a jako upoważnieni do konta PKO wymienieni zostali także Chana Lichtenbaumowa i Antoni Jerzy Kelter."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A private primary school and kindergarten called \"Nasza Szkoła\" operated at 1 Rysia Street in Warsaw in 1937. Cecylia Oderfeld was its director.",
+    "ludzie": [
+      {"kto": "Cecylia Oderfeld", "rola": "dyrektorka szkoły", "wiki": null},
+      {"kto": "Chana Lichtenbaumowa", "rola": "upoważniona do konta PKO", "wiki": null},
+      {"kto": "Antoni Jerzy Kelter", "rola": "upoważniony do konta PKO", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła powszechna „Nasza Szkoła” w Warszawie II", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139130-szkola-powszechna-nasza-szkola-w-warszawie-ii"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie jest podana w tekście, pole puste; sprawdzić, czy to nie Śródmieście (wtedy pominąć). Tekst podaje tylko adres z 1937 r., więc wpisany w obu polach adresu. Czy szkoła istnieje dziś, tekst nie mówi."
+  },
+  {
+    "id": "szkola-religijna-przy-ul-czerniakowskiej-105",
+    "nazwa": "Szkoła religijna przy ul. Czerniakowskiej 105",
+    "name_en": "Religious school at 105 Czerniakowska Street",
+    "typ": "budynek",
+    "dzielnica": null,
+    "adres_dzis": "Czerniakowska 105",
+    "adres_historyczny": "Czerniakowska 105",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Czerniakowskiej 105 funkcjonowała siedmioklasowa żydowska żeńska szkoła religijna z językami nauczanymi polskim, hebrajskim i jidysz.",
+      "Posiadała 4 sale lekcyjne, 16 nauczycieli i 217 uczennic.",
+      "Wyróżniała się wielkością na tle innych szkół religijnych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A seven-grade religious school for Jewish girls, with Polish, Hebrew and Yiddish instruction, operated at 105 Czerniakowska Street in the 1930/1931 school year. It had 4 classrooms, 16 teachers and 217 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Czerniakowskiej 105 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/183609-szkola-religijna-przy-ul-czerniakowskiej-105-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie jest podana w tekście, pole puste; sprawdzić, czy to nie Śródmieście (wtedy pominąć). Tekst podaje tylko adres z 1930/1931, więc wpisany w obu polach adresu. Źródło: Szkoły w Rzeczpospolitej Polskiej w roku szkolnym 1930/1931, Warszawa 1933, s. 41."
+  },
+  {
+    "id": "szkola-religijna-przy-ul-wolskiej-129",
+    "nazwa": "Szkoła religijna przy ul. Wolskiej 129",
+    "name_en": "Religious school at 129 Wolska Street",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "Wolska 129",
+    "adres_historyczny": "Wolska 129",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Wolskiej 129 funkcjonowała trzyklasowa męska szkoła religijna, z językami nauczania polskim i jidysz.",
+      "Siedziba posiadała 3 sale lekcyjne (96 m kw., wynajem).",
+      "Zatrudniano 5 nauczycieli.",
+      "Uczęszczało 99 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-class religious school for boys, with Polish and Yiddish instruction, operated at 129 Wolska Street in the 1930/1931 school year. It rented 3 classrooms (96 m²), employed 5 teachers and had 99 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Wolskiej 129 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139141-szkola-religijna-przy-ul-wolskiej-129-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko adres z 1930/1931, więc wpisany w obu polach adresu. Dzielnica (Wola) wynika z adresu, nie z tekstu."
+  },
+  {
+    "id": "szkola-religijna-przy-ul-wolynskiej-10",
+    "nazwa": "Szkoła religijna przy ul. Wołyńskiej 10",
+    "name_en": "Religious school at 10 Wołyńska Street (today Marka Edelmana Street)",
+    "typ": "budynek",
+    "dzielnica": null,
+    "adres_dzis": "Marka Edelmana 10",
+    "adres_historyczny": "Wołyńska 10",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1930/1931",
+    "istnieje": null,
+    "fakty": [
+      "W roku szkolnym 1930/1931 przy ul. Wołyńskiej 10 (obecnie Marka Edelmana) funkcjonowała dwuklasowa męska szkoła religijna, z językami nauczania polskim i jidysz.",
+      "Siedziba posiadała 5 sal lekcyjnych (117 m kw., wynajem).",
+      "Zatrudniano 6 nauczycieli.",
+      "Uczęszczało 80 uczniów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A two-class religious school for boys, with Polish and Yiddish instruction, operated at 10 Wołyńska Street (today Marka Edelmana Street) in the 1930/1931 school year. It rented 5 classrooms (117 m²), employed 6 teachers and had 80 pupils.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wołyńska"],
+    "zrodla": [
+      {"tytul": "Wirtualny Sztetl: Szkoła religijna przy ul. Wołyńskiej 10 w Warszawie", "url": "https://sztetl.org.pl/pl/miejscowosci/w/18-warszawa/102-oswiata-i-kultura/139142-szkola-religijna-przy-ul-wolynskiej-10-w-warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica nie jest podana w tekście, pole puste; sprawdzić, czy to nie Śródmieście (wtedy pominąć). adres_dzis: tekst podaje nową nazwę ulicy (Marka Edelmana), numer przyjęty z tekstu bez zmiany; adres_historyczny to przedwojenny adres."
+  }
+]
