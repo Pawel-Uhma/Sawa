@@ -9,9 +9,9 @@ import type { StoryService } from "../services/tell-story";
 
 /**
  * Each miss costs LLM and ElevenLabs credits (T-92). A ride asks for about 30 (story + voice
- * per place); the venue Wi-Fi shares one IP, so the limit leaves room for a few phones.
+ * per place); the venue Wi-Fi shares one IP, so the limit leaves room for ~100 phones at the demo.
  */
-export const STORY_RATE_LIMIT: RateLimitOpts = { limit: 300, windowMs: 10 * 60_000 };
+export const STORY_RATE_LIMIT: RateLimitOpts = { limit: 3000, windowMs: 10 * 60_000 };
 
 const MP3_HEADERS = { "Content-Type": "audio/mpeg", "Cache-Control": "no-store" };
 

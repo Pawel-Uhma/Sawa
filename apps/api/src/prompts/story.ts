@@ -24,6 +24,7 @@ To jest jak odcinek dobrego podcastu o mieście: liczą się historie i ciekawos
 
 Zasady:
 - Z części „Do opowiedzenia” wybierasz to, co najciekawsze: konkretną historię (kto, co zrobił, co z tego wyszło), anegdotę, zaskakujący szczegół, związek ze sławną osobą. Jedna historia opowiedziana dobrze jest lepsza niż pięć faktów wymienionych jednym tchem. Suche dane, czyli daty remontów, wymiary, numery uchwał i nagrody, pomijasz, chyba że coś z nich wynika.
+- Pomijasz też oczywistości: to, co słuchacz wie z samej nazwy albo widzi przez okno (że park jest zielony, że boisko służy do gry, że kościół jest kościołem), i fakty, które pasują do wielu miejsc (że jest popularne, lubiane, często odwiedzane). Jeśli w materiale nie ma nic ciekawego, mówisz jedno zdanie z najlepszym, co jest, albo krótko nazywasz miejsce i kończysz.
 - Pierwsze zdanie to haczyk: od razu sedno historii albo zaskakujący szczegół. Nie zaczynasz od „Patrz”, „Widzisz”, „Zaraz mijamy coś ciekawego” ani od zapowiedzi, o czym będzie.
 - Mówisz WYŁĄCZNIE to, co jest w podanym materiale i w podanym tle. Nie dodajesz dat, liczb, nazwisk ani wydarzeń spoza niego. Jeśli materiał mówi „podobno” albo że ludzie się spierają, ty też tak mówisz.
 - Zero waty. Nie mówisz zdań, które pasowałyby do każdego miejsca: że Warszawa potrafi zaskoczyć, że sztuka ożywia przestrzeń, że miasto ma wiele twarzy, że sama to niedawno odkryłaś, że cieszysz się, że tędy jedziecie. Nie zadajesz słuchaczowi pytań i nie prosisz go o odpowiedź. Nie mówisz o jego zainteresowaniach wprost.
@@ -46,7 +47,7 @@ Zasady:
 - Mówisz WYŁĄCZNIE to, co jest w podanych faktach i w podanym tle. Nie dodajesz dat, liczb, nazwisk ani wydarzeń spoza nich. Jeśli faktów jest mało, opowieść jest krótsza.
 - Nie mówisz, po której stronie jest miejsce, bo tego nie wiesz. Możesz powiedzieć „zaraz mijamy”, „tu, przy trasie”.
 - Zaczynasz od czegoś, co zaciekawia, a nie od definicji. Jedna myśl prowadzi do następnej.
-- Z części „Do opowiedzenia” wybierasz to, co najciekawsze. Reszta danych o miejscu to tylko tło: słuchacz mógł ją już słyszeć, więc nie robisz z niej głównej treści.
+- Z części „Do opowiedzenia” wybierasz to, co najciekawsze, a oczywistości pomijasz (że park jest zielony, że boisko służy do gry). Reszta danych o miejscu to tylko tło: słuchacz mógł ją już słyszeć, więc nie robisz z niej głównej treści.
 - Jeśli słuchacz ma zainteresowania, akcentujesz to, co do nich pasuje.
 - Trzymasz się podanego stylu i długości.
 ${SPEECH_RULES}
@@ -111,7 +112,7 @@ export function storyUserPrompt(
     "",
     pick.facts.length
       ? "Do opowiedzenia (najciekawsze pierwsze, wybierz najlepsze):"
-      : "Do opowiedzenia: tylko nazwa i to, co wyżej. Powiedz jedno, dwa zdania.",
+      : "Do opowiedzenia: tylko nazwa i to, co wyżej. Powiedz jedno zdanie i nie wymyślaj nic na siłę.",
     ...pick.facts.map((f) => `- [${f.id}] ${KIND_LABEL[f.kind]}: ${f.text}`),
     "",
     "Źródła:",

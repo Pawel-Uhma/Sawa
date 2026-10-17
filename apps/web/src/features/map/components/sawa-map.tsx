@@ -2,7 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
-import type { Map as MapLibre } from "maplibre-gl";
+import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   AttributionControl,
@@ -36,6 +36,7 @@ import {
   START_VIEW,
   WARSAW_MAX_BOUNDS,
 } from "../lib/map-style";
+import { registerPlaceStickers } from "../lib/place-stickers";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { isStreetPlace } from "../lib/street-highlight";
@@ -43,12 +44,18 @@ import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
-import { PLACES_LAYER_ID, PlacesLayer } from "./places-layer";
+import {
+  PLACES_CLUSTER_LAYER_ID,
+  PLACES_LAYER_ID,
+  PLACES_SOURCE_ID,
+  PlacesLayer,
+} from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { StreetLayer } from "./street-layer";
+import { TopicLegend } from "./topic-legend";
 import { UserLayer } from "./user-layer";
 
-const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID];
+const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
 
 const CAMERA_DURATION_MS = 800;
 
@@ -71,9 +78,11 @@ export type SawaMapProps = {
   hasZoomControls?: boolean;
   /** Click on the map outside any place (e.g. to pick a destination). */
   onMapClick?: (point: LatLng) => void;
-  /** Topics the user picked; unused while places show only their kind icon (no topic ring). */
+  /** Topics the user picked, in their order; they decide the colour of places with several. */
   interests?: readonly string[];
 };
+
+const NO_INTERESTS: readonly string[] = [];
 
 export function SawaMap({
   route,
@@ -86,6 +95,7 @@ export function SawaMap({
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
+  interests = NO_INTERESTS,
 }: SawaMapProps) {
   const t = useT();
   const mapRef = useRef<MapRef>(null);
@@ -168,6 +178,11 @@ export function SawaMap({
 
   function handleClick(event: MapLayerMouseEvent) {
     const feature = event.features?.[0];
+    if (feature?.layer.id === PLACES_CLUSTER_LAYER_ID) {
+      const center = feature.geometry.type === "Point" ? feature.geometry.coordinates : null;
+      expandCluster(event.target, feature.properties?.cluster_id, center ?? event.lngLat.toArray());
+      return;
+    }
     const id = feature?.properties?.id;
     if (typeof id !== "string") {
       select(null);
@@ -206,6 +221,8 @@ export function SawaMap({
             ?.classList.remove("maplibregl-compact-show");
           setView(viewOf(event.target));
           setIsLoaded(true);
+          // Place markers are drawn on demand in their topic colour; the map lives as long as this listener.
+          registerPlaceStickers(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
@@ -219,6 +236,8 @@ export function SawaMap({
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
+            interests={interests}
+            theme={theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
             hasIcons={icons === "ready"}
@@ -270,12 +289,31 @@ export function SawaMap({
               : null}
         </StatusPill>
       </div>
-      {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
+      <TopicLegend hasZoomControls={hasZoomControls} />
+      {selected && (
+        <PlaceSheet
+          key={selected.id}
+          place={selected}
+          interests={interests}
+          onClose={() => select(null)}
+        />
+      )}
     </div>
   );
 }
 
 type MapView = { bounds: LngLatBounds; zoom: number };
+
+/**
+ * Zooms in on a cluster just far enough for it to split.
+ * MapLibre skips the animation itself under reduced motion.
+ */
+async function expandCluster(map: MapLibre, clusterId: unknown, center: number[]) {
+  const source = map.getSource<GeoJSONSource>(PLACES_SOURCE_ID);
+  if (typeof clusterId !== "number" || !source || center.length < 2) return;
+  const zoom = await source.getClusterExpansionZoom(clusterId);
+  map.easeTo({ center: [center[0], center[1]], zoom, duration: CAMERA_DURATION_MS });
+}
 
 function viewOf(map: MapLibre): MapView {
   const bounds = map.getBounds();

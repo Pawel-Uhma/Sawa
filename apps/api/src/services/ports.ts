@@ -83,5 +83,8 @@ export interface SpeechSynthesizer {
 
 /** Finds a ride destination by name (Google Places). Throws AppError on upstream failure or timeout. */
 export interface DestinationSearch {
-  search(query: string): Promise<Destination[]>;
+  search(query: string): Promise<DestinationSearchResult>;
 }
+
+/** `partial`: one of the lookups failed (e.g. the street), so the answer must not be cached. */
+export type DestinationSearchResult = { results: Destination[]; partial: boolean };

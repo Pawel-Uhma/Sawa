@@ -1,10 +1,11 @@
 "use client";
 
-import type { Leg } from "@sawa/shared";
+import type { Leg, Place } from "@sawa/shared";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { type ReactNode, type Ref, useEffect, useRef, useState } from "react";
-import { RollingText, SkeletonLines, Spinner } from "@/components/waiting";
-import { useT } from "@/features/i18n";
+import { FadeImage, RollingText, SkeletonLines, Spinner } from "@/components/waiting";
+import { useLang, useT } from "@/features/i18n";
+import { usePlace } from "@/features/map";
 import { SPRING } from "../lib/device";
 import { formatDuration } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
@@ -133,6 +134,72 @@ function LiveText({
   );
 }
 
+const PREVIEW_FACTS = 3;
+
+/**
+ * Zanim Sawa zacznie mówić: to, co baza wie o miejscu (zdjęcie, epoka, adres, kilka faktów),
+ * żeby arkusz nie był pusty. Sawa milczy, aż dojedziesz albo stukniesz odtwarzanie.
+ */
+function PlacePreview({ placeId }: { placeId: string }) {
+  const t = useT();
+  const detail = usePlace(placeId);
+  const hint = (
+    <p className="text-[15px] leading-relaxed text-tekst-3">
+      {t(
+        "Sawa opowie więcej na miejscu. Nie chcesz czekać? Stuknij odtwarzanie.",
+        "Sawa will tell you more when you get there. Don't want to wait? Tap play.",
+      )}
+    </p>
+  );
+  if (detail.isPending) {
+    return (
+      <div aria-hidden className="flex flex-col gap-3">
+        <SkeletonLines lines={3} className="[&>span]:h-3.5" />
+      </div>
+    );
+  }
+  if (!detail.data) return hint;
+  return (
+    <div className="flex flex-col gap-4">
+      <PlaceFacts place={detail.data} />
+      {hint}
+    </div>
+  );
+}
+
+function PlaceFacts({ place }: { place: Place }) {
+  const lang = useLang();
+  const photo = place.photos[0];
+  const meta = [place.period, place.addressToday].filter(Boolean).join(" · ");
+  // Fakty są po polsku; po angielsku pokazujemy krótki opis, jeśli jest
+  const facts =
+    lang === "en" && place.summaryEn ? [place.summaryEn] : place.facts.slice(0, PREVIEW_FACTS);
+  return (
+    <>
+      {photo && (
+        <figure>
+          <FadeImage
+            src={photo.url}
+            alt={photo.caption ?? place.name}
+            className="aspect-[16/9] w-full rounded-xl"
+          />
+          <figcaption className="mt-1 text-xs text-tekst-3">
+            {[photo.caption, photo.year, photo.author, photo.license].filter(Boolean).join(" · ")}
+          </figcaption>
+        </figure>
+      )}
+      {meta && <p className="text-[13px] font-semibold text-tekst-3">{meta}</p>}
+      {facts.length > 0 && (
+        <ul className="flex flex-col gap-2.5 text-[15px] leading-relaxed text-tekst">
+          {facts.map((fact) => (
+            <li key={fact}>{fact}</li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
+
 /* ------------------------------------------------------------------ */
 /* Ekran: jeden ciągły zapis tego, co mówi Sawa, jak napisy w radiu   */
 /* ------------------------------------------------------------------ */
@@ -169,15 +236,18 @@ export function RouteLive({
     const el = scrollRef.current;
     const edge = edgeRef.current;
     if (!el || !following) return;
-    const top = edge
-      ? edge.getBoundingClientRect().top -
-        el.getBoundingClientRect().top +
-        el.scrollTop -
-        el.clientHeight * 0.66
-      : el.scrollHeight;
+    // Zanim Sawa zacznie mówić, podgląd miejsca czyta się od góry
+    const top = waiting
+      ? 0
+      : edge
+        ? edge.getBoundingClientRect().top -
+          el.getBoundingClientRect().top +
+          el.scrollTop -
+          el.clientHeight * 0.66
+        : el.scrollHeight;
     if (Math.abs(el.scrollTop - top) < 4) return;
     el.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
-  }, [following, progress, storyText, activeIndex, reduce]);
+  }, [following, waiting, progress, storyText, activeIndex, reduce]);
 
   // Ręczne przewinięcie (palec, kółko) odpina zapis od głosu; nasze scrollTo tego nie robi
   function stopFollowing() {
@@ -212,12 +282,7 @@ export function RouteLive({
                   </p>
                 )}
                 {waiting ? (
-                  <p className="text-[15px] leading-relaxed text-tekst-3">
-                    {t(
-                      "Tu pojawi się to, co mówi Sawa. Nie chcesz czekać? Stuknij odtwarzanie.",
-                      "What Sawa says will appear here. Don't want to wait? Tap play.",
-                    )}
-                  </p>
+                  <PlacePreview placeId={stop.id} />
                 ) : (
                   <LiveText
                     text={storyText}
