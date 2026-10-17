@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import { createFakePlacesRepository } from "../adapters/supabase/fake-places-repository";
 import { AppError } from "../lib/errors";
+import { KIDS_STORY_SYSTEM_PROMPT, STORY_SYSTEM_PROMPT } from "../prompts/story";
 import type { LlmProvider } from "./ports";
 import { createStoryService } from "./tell-story";
 
@@ -63,6 +64,37 @@ describe("createStoryService", () => {
     expect(llm.complete.mock.calls[0]?.[0].user).toContain("pierwszy raz");
     expect((await ask(["powstanie-1944"])).contextIds).not.toContain("powstanie-1944");
     expect(llm.complete.mock.calls[1]?.[0].user).toContain("słyszał już ode mnie o");
+  });
+
+  it("tells a child its own, shorter story", async () => {
+    const placeId = await anyPlace();
+    const llm = fakeLlm();
+    const service = createStoryService({ places, llm });
+    await service.tell({ placeId, targetSec: 60, storyStyle: "deep" });
+    await service.tell({ placeId, targetSec: 60, storyStyle: "deep", audience: "kids" });
+
+    expect(llm.complete).toHaveBeenCalledTimes(2);
+    const [adult, kids] = llm.complete.mock.calls.map(([call]) => call);
+    expect(adult?.system).toBe(STORY_SYSTEM_PROMPT);
+    expect(kids?.system).toBe(KIDS_STORY_SYSTEM_PROMPT);
+    expect(kids?.system).toContain("WYŁĄCZNIE to, co jest w podanych faktach");
+    const words = (user = "") => Number(user.match(/około (\d+) słów/)?.[1]);
+    expect(words(kids?.user)).toBeLessThan(words(adult?.user));
+  });
+
+  it("tells a child about the war gently and never reads war facts plainly", async () => {
+    const all = await places.listInBBox({ minLng: -180, minLat: -90, maxLng: 180, maxLat: 90 });
+    const uprising = all.find((p) => p.interests.includes("war_uprising"));
+    if (!uprising) throw new Error("no uprising place in the fake repository");
+    const llm = fakeLlm();
+    const kids = { placeId: uprising.id, targetSec: 60, audience: "kids" as const };
+
+    await createStoryService({ places, llm }).tell(kids);
+    expect(llm.complete.mock.calls[0]?.[0].user).toContain("mów o tym delikatnie");
+
+    const plain = await createStoryService({ places }).tell(kids);
+    expect(plain.text).toBe(`Mijamy: ${uprising.name}.`);
+    expect(plain.factIds).toEqual([]);
   });
 
   it("asks once for the same place, interests and length band", async () => {

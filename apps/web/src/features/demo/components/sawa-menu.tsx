@@ -24,13 +24,21 @@ import { type Lang, LangSwitch, pick, useLang, useT } from "@/features/i18n";
 import { ThemeSwitch } from "@/features/theme";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
-import { type Choice, FAMILIARITY, INTERESTS, type Profile, STORY_STYLES } from "../lib/onboarding";
+import {
+  AUDIENCES,
+  type Choice,
+  FAMILIARITY,
+  INTERESTS,
+  type Profile,
+  STORY_STYLES,
+} from "../lib/onboarding";
 import type { StartMode } from "../lib/start-point";
 import {
   BubbleIcon,
   ChevronRightIcon,
   CompassIcon,
   InfoIcon,
+  ListenerIcon,
   LocateIcon,
   PinIcon,
   RestartIcon,
@@ -383,6 +391,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
 
   const familiarity = labelOf(FAMILIARITY, profile.familiarity, lang);
   const style = labelOf(STORY_STYLES, profile.storyStyle, lang);
+  const audience = labelOf(AUDIENCES, profile.audience, lang);
   const interests = profile.interests.map((key) => labelOf(INTERESTS, key, lang) ?? key);
 
   async function share() {
@@ -467,6 +476,12 @@ function MenuContent({ actions, run }: MenuContentProps) {
           label={t("Styl opowieści", "Story style")}
           value={style ?? t("Nie wybrano", "Not chosen")}
           onClick={() => run(() => actions.onEditProfile("style"))}
+        />
+        <Row
+          Icon={ListenerIcon}
+          label={t("Kto słucha", "Who's listening")}
+          value={audience ?? t("Dorośli", "Adults")}
+          onClick={() => run(() => actions.onEditProfile("audience"))}
         />
         <Row
           Icon={PinIcon}

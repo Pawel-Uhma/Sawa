@@ -130,13 +130,13 @@ export function CloseButton({ onClick }: { onClick: () => void }) {
 /** Rodzaj miejsca w jego kolorze z mapy i okres, np. „miejsce · 1867–1947”. */
 export function KindLine({ place, className = "" }: { place: Place; className?: string }) {
   const lang = useLang();
-  const parts = [placeKindLabel(place.kind, lang), place.period].filter(Boolean);
+  const parts = [placeKindLabel(place.kind, place.subkind, lang), place.period].filter(Boolean);
   return (
     <p className={`etykieta flex items-center gap-2 ${className}`}>
       <span
         aria-hidden="true"
         className="inline-block size-2.5 shrink-0 rounded-full"
-        style={{ backgroundColor: placeKindColor(place.kind) }}
+        style={{ backgroundColor: placeKindColor(place.kind, place.subkind) }}
       />
       <span className="truncate">{parts.join(" · ")}</span>
     </p>

@@ -22,7 +22,10 @@ const context = await browser.newContext({
   isMobile: true,
   hasTouch: true,
   locale: "pl-PL",
-  recordVideo: { dir: `${OUT}/raw`, size: { width: VIEWPORT.width * 2, height: VIEWPORT.height * 2 } },
+  recordVideo: {
+    dir: `${OUT}/raw`,
+    size: { width: VIEWPORT.width * 2, height: VIEWPORT.height * 2 },
+  },
 });
 
 const t0 = Date.now();
@@ -43,7 +46,11 @@ await context.route(/railway\.app/, async (route) => {
   } else if (!res.ok()) {
     console.warn(`${res.status()} ${path}: ${body.toString().slice(0, 160)}`);
   }
-  await route.fulfill({ response: res, body, headers: { ...res.headers(), "access-control-allow-origin": "*" } });
+  await route.fulfill({
+    response: res,
+    body,
+    headers: { ...res.headers(), "access-control-allow-origin": "*" },
+  });
 });
 
 // Każde odtworzenie klipu zapisujemy z rozmiarem blobu, żeby dopasować je do pliku mp3.
@@ -63,9 +70,16 @@ await context.addInitScript(() => {
     if (!watched.has(this)) {
       watched.add(this);
       this.addEventListener("playing", () =>
-        window.__plays.push({ src: this.currentSrc, bytes: sizes.get(this.currentSrc) ?? null, at: Date.now(), offset: this.currentTime }),
+        window.__plays.push({
+          src: this.currentSrc,
+          bytes: sizes.get(this.currentSrc) ?? null,
+          at: Date.now(),
+          offset: this.currentTime,
+        }),
       );
-      this.addEventListener("pause", () => window.__plays.push({ src: this.currentSrc, pausedAt: Date.now() }));
+      this.addEventListener("pause", () =>
+        window.__plays.push({ src: this.currentSrc, pausedAt: Date.now() }),
+      );
     }
     return play.apply(this, args);
   };
@@ -96,7 +110,17 @@ const pauses = plays.filter((p) => p.pausedAt).map((p) => (p.pausedAt - t0) / 10
 
 writeFileSync(
   join(OUT, "timeline.json"),
-  JSON.stringify({ recordSec: RECORD_MS / 1000, timeline, pauses, clips, stories: stories.map((s) => ({ placeId: s.placeId, text: s.text })) }, null, 2),
+  JSON.stringify(
+    {
+      recordSec: RECORD_MS / 1000,
+      timeline,
+      pauses,
+      clips,
+      stories: stories.map((s) => ({ placeId: s.placeId, text: s.text })),
+    },
+    null,
+    2,
+  ),
 );
 console.log(`klipy: ${clips.length}, odtworzenia: ${timeline.length}`);
 console.log(timeline);

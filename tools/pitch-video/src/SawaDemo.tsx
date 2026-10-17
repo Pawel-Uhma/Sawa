@@ -15,8 +15,14 @@ import {
 import capture from "../public/capture/timeline.json";
 import { cues } from "./cues";
 
-const { fontFamily: jakarta } = loadJakarta("normal", { weights: ["400", "800"], subsets: ["latin", "latin-ext"] });
-const { fontFamily: fredoka } = loadFredoka("normal", { weights: ["600"], subsets: ["latin", "latin-ext"] });
+const { fontFamily: jakarta } = loadJakarta("normal", {
+  weights: ["400", "800"],
+  subsets: ["latin", "latin-ext"],
+});
+const { fontFamily: fredoka } = loadFredoka("normal", {
+  weights: ["600"],
+  subsets: ["latin", "latin-ext"],
+});
 
 // Marka z docs/awatar/README.md
 const GLEBIA = "#17706F";
@@ -44,7 +50,15 @@ function useFadeIn(delayFrames = 0) {
 
 function Logo({ size }: { size: number }) {
   return (
-    <span style={{ fontFamily: fredoka, fontWeight: 600, fontSize: size, color: "white", letterSpacing: "-0.02em" }}>
+    <span
+      style={{
+        fontFamily: fredoka,
+        fontWeight: 600,
+        fontSize: size,
+        color: "white",
+        letterSpacing: "-0.02em",
+      }}
+    >
       sawa<span style={{ color: KORAL }}>.</span>
     </span>
   );
@@ -54,7 +68,9 @@ function Intro() {
   const logo = useFadeIn(4);
   const line = useFadeIn(22);
   return (
-    <AbsoluteFill style={{ background: "black", alignItems: "center", justifyContent: "center", gap: 28 }}>
+    <AbsoluteFill
+      style={{ background: "black", alignItems: "center", justifyContent: "center", gap: 28 }}
+    >
       <div style={logo}>
         <Logo size={180} />
       </div>
@@ -69,8 +85,21 @@ function Outro() {
   const a = useFadeIn(6);
   const b = useFadeIn(36);
   return (
-    <AbsoluteFill style={{ background: "black", alignItems: "center", justifyContent: "center", gap: 40 }}>
-      <div style={{ ...a, fontFamily: jakarta, fontWeight: 800, fontSize: 76, color: "white", letterSpacing: "-0.02em", textAlign: "center", lineHeight: 1.15 }}>
+    <AbsoluteFill
+      style={{ background: "black", alignItems: "center", justifyContent: "center", gap: 40 }}
+    >
+      <div
+        style={{
+          ...a,
+          fontFamily: jakarta,
+          fontWeight: 800,
+          fontSize: 76,
+          color: "white",
+          letterSpacing: "-0.02em",
+          textAlign: "center",
+          lineHeight: 1.15,
+        }}
+      >
         Za oknem jest historia.
         <br />
         <span style={{ color: MIETA }}>Sawa ją opowiada.</span>
@@ -87,10 +116,21 @@ function Caption({ kicker, text }: { kicker: string; text: string }) {
   const style = useFadeIn(0);
   return (
     <div style={{ ...style, fontFamily: jakarta, color: "white", maxWidth: 560 }}>
-      <div style={{ fontSize: 26, fontWeight: 800, letterSpacing: "0.08em", textTransform: "uppercase", color: MIETA, marginBottom: 14 }}>
+      <div
+        style={{
+          fontSize: 26,
+          fontWeight: 800,
+          letterSpacing: "0.08em",
+          textTransform: "uppercase",
+          color: MIETA,
+          marginBottom: 14,
+        }}
+      >
         {kicker}
       </div>
-      <div style={{ fontSize: 52, fontWeight: 800, lineHeight: 1.12, letterSpacing: "-0.02em" }}>{text}</div>
+      <div style={{ fontSize: 52, fontWeight: 800, lineHeight: 1.12, letterSpacing: "-0.02em" }}>
+        {text}
+      </div>
     </div>
   );
 }
@@ -110,7 +150,16 @@ function Screen() {
   return (
     <AbsoluteFill style={{ background: "black", opacity: exit }}>
       {/* Lewa kolumna: co się właśnie dzieje i skąd są dane */}
-      <div style={{ position: "absolute", left: 120, top: 0, bottom: 0, display: "flex", alignItems: "center" }}>
+      <div
+        style={{
+          position: "absolute",
+          left: 120,
+          top: 0,
+          bottom: 0,
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
         {caption && <Caption key={caption.atSec} kicker={caption.kicker} text={caption.text} />}
       </div>
 
@@ -138,7 +187,16 @@ function Screen() {
       </div>
 
       {/* Stopka ze źródłami danych */}
-      <div style={{ position: "absolute", left: 120, bottom: 56, fontFamily: jakarta, fontSize: 22, color: "rgba(255,255,255,0.45)" }}>
+      <div
+        style={{
+          position: "absolute",
+          left: 120,
+          bottom: 56,
+          fontFamily: jakarta,
+          fontSize: 22,
+          color: "rgba(255,255,255,0.45)",
+        }}
+      >
         {cues.footer}
       </div>
     </AbsoluteFill>
@@ -160,8 +218,14 @@ export function SawaDemo() {
       {capture.timeline
         .filter((c) => c.startSec >= TRIM_START_SEC && c.startSec < cues.trimEndSec)
         .map((c) => (
-          <Sequence key={`${c.file}-${c.startSec}`} from={screenFrom + Math.round((c.startSec - TRIM_START_SEC) * fps)}>
-            <Audio src={staticFile(`capture/${c.file}`)} startFrom={Math.round(c.offsetSec * fps)} />
+          <Sequence
+            key={`${c.file}-${c.startSec}`}
+            from={screenFrom + Math.round((c.startSec - TRIM_START_SEC) * fps)}
+          >
+            <Audio
+              src={staticFile(`capture/${c.file}`)}
+              startFrom={Math.round(c.offsetSec * fps)}
+            />
           </Sequence>
         ))}
       <Sequence from={screenFrom + Math.round(SCREEN_SEC * fps)} durationInFrames={OUTRO_SEC * fps}>

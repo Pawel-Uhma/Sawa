@@ -4,37 +4,41 @@ import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useId, useRef, useState } from "react";
 import { useT } from "@/features/i18n";
 import { haptic, SPRING } from "../lib/device";
-import { FAMILIARITY, type Profile, STORY_STYLES } from "../lib/onboarding";
+import { AUDIENCES, FAMILIARITY, type Profile, STORY_STYLES } from "../lib/onboarding";
 import { PrimaryButton } from "./primary-button";
 import { ChoiceList, InterestPicker } from "./profile-choices";
 
 // Edycja jednego pola profilu z menu albo z panelu tras. Modal nie uruchamia onboardingu:
 // zmienia tylko wskazane pole i zapisuje je, a reszta profilu zostaje taka, jaka była.
 
-export type ProfileStep = "familiarity" | "interests" | "style";
+export type ProfileStep = "familiarity" | "interests" | "style" | "audience";
 
 const TITLES: Record<ProfileStep, string> = {
   interests: "Zainteresowania",
   familiarity: "Znajomość miasta",
   style: "Styl opowieści",
+  audience: "Kto słucha",
 };
 
 const HINTS: Record<ProfileStep, string> = {
   interests: "Od tego zależy, które miejsca wybiorę i o czym opowiem.",
   familiarity: "Od tego zależy, czy na trasie będą znane miejsca, czy mniej oczywiste.",
   style: "Jak długo i z jakim szczegółem opowiadam.",
+  audience: "Dziecku opowiadam prościej i krócej, a o wojnie delikatnie.",
 };
 
 const TITLES_EN: Record<ProfileStep, string> = {
   interests: "Interests",
   familiarity: "Knowing the city",
   style: "Story style",
+  audience: "Who's listening",
 };
 
 const HINTS_EN: Record<ProfileStep, string> = {
   interests: "This decides which places I pick and what I talk about.",
   familiarity: "This decides whether your route has famous places or less obvious ones.",
   style: "How long and how detailed my stories are.",
+  audience: "For a child I keep it simpler and shorter, and gentle about the war.",
 };
 
 type ProfileModalProps = {
@@ -87,7 +91,7 @@ function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
     }));
   }
 
-  function pick(field: "familiarity" | "storyStyle", key: string) {
+  function pick(field: "familiarity" | "storyStyle" | "audience", key: string) {
     haptic();
     setDraft((current) => ({ ...current, [field]: key }));
   }
@@ -171,6 +175,14 @@ function ProfileDialog({ step, profile, onSave, onClose }: ProfileDialogProps) {
               options={STORY_STYLES}
               value={draft.storyStyle}
               onPick={(key) => pick("storyStyle", key)}
+            />
+          )}
+          {step === "audience" && (
+            <ChoiceList
+              label={titles.audience}
+              options={AUDIENCES}
+              value={draft.audience}
+              onPick={(key) => pick("audience", key)}
             />
           )}
         </div>

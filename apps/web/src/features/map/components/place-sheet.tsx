@@ -12,6 +12,7 @@ export type PlaceSheetPlace = {
   /** Unknown until the detail loads when the place is not among the places in view. */
   name?: string;
   kind?: string;
+  subkind?: string | null;
   tags?: string[];
   /** Position on the route, when the place is one of its stops for a story. */
   order?: number;
@@ -28,8 +29,9 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
   const lang = useLang();
   const detail = usePlace(place.id);
   const kind = detail.data?.kind ?? place.kind;
+  const subkind = detail.data?.subkind ?? place.subkind;
   const tags = detail.data?.interests ?? place.tags ?? [];
-  const kindLabel = kind ? placeKindLabel(kind, lang) : undefined;
+  const kindLabel = kind ? placeKindLabel(kind, subkind, lang) : undefined;
   const name = detail.data?.name ?? place.name;
   const eyebrow = [
     kindLabel,
@@ -49,7 +51,7 @@ export function PlaceSheet({ place, onClose }: PlaceSheetProps) {
                 <span
                   aria-hidden
                   className="inline-block size-2.5 rounded-full"
-                  style={{ backgroundColor: placeKindColor(kind) }}
+                  style={{ backgroundColor: placeKindColor(kind, subkind) }}
                 />
               )}
               {eyebrow.join(" · ")}

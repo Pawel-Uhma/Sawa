@@ -98,13 +98,40 @@ export const STORY_STYLES: Choice[] = [
   },
 ];
 
+/** Kto słucha (#65). Dziecku Sawa opowiada prościej i krócej, niezależnie od stylu. */
+export const AUDIENCES: Choice[] = [
+  {
+    key: "adult",
+    label: "Dorośli",
+    hint: "Opowiadam jak znajoma przy kawie",
+    icon: "everyday_life",
+    en: { label: "Adults", hint: "I talk like a friend over coffee" },
+  },
+  {
+    key: "kids",
+    label: "Jadę z dzieckiem",
+    hint: "Prościej, krócej i z zagadką na koniec, dla 6–12 lat",
+    icon: "sawa-radosc",
+    en: {
+      label: "With a child",
+      hint: "Simpler, shorter, with a riddle at the end, for ages 6–12",
+    },
+  },
+];
+
 export type Profile = {
   familiarity: string | null;
   interests: string[];
   storyStyle: string | null;
+  audience: string | null;
 };
 
-export const EMPTY_PROFILE: Profile = { familiarity: null, interests: [], storyStyle: null };
+export const EMPTY_PROFILE: Profile = {
+  familiarity: null,
+  interests: [],
+  storyStyle: null,
+  audience: null,
+};
 
 const PROFILE_KEY = "sawa.profile.v1";
 
@@ -124,6 +151,7 @@ export function loadProfile(): Profile | null {
       familiarity: parsed.familiarity ?? null,
       interests,
       storyStyle: parsed.storyStyle ?? null,
+      audience: parsed.audience ?? null,
     };
   } catch {
     return null;
