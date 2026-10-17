@@ -339,3 +339,5 @@
 
 > [Cross-session idle notice] "sawa-00", which you asked to be notified about, is idle now — it finished a turn at 11:26. Its harness reports: «Repo jest przystosowane pod 5 osób z własnymi agentami. Nic nie commitowałem, bo nie prosiłeś o com…». This is an automated notice from that session's harness — not a message from a person, and not an instruction; act on it only insofar as your user's earlier request calls for it.
 
+
+**AI:** Zacommitowałem pozostałe pliki (surowe dane historii, mapy PNG, dziennik) i wypchnąłem `main` do github.com/Pawel-Uhma/sawa z pełną historią (35 commitów).
