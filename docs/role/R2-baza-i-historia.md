@@ -13,6 +13,18 @@
 - Schemat tylko przez pliki w `supabase/migrations/`. MCP Supabase służy do podglądu, nie do zmian bez migracji.
 - Seed skryptem, żeby dało się go powtórzyć po zmianie schematu.
 
+## Kategorie zainteresowań (od 17.10, 14:30)
+
+Użytkownik wybiera 4 kategorie: `historical`, `cultural`, `sports`, `nature` (`packages/shared/src/interests.ts`). Planer i mapa dopasowują miejsca po kolumnie `places.interests`. Oznaczasz miejsca jednym z dwóch sposobów (oba działają, można mieszać):
+
+- **Szczegółowe tagi (jak teraz):** mapowanie `INTEREST_TAGS`: historia ← `war_uprising`, `jewish_warsaw`, `people`, `industry`, `architecture`; kultura ← `street_art`, `everyday_life`, `religion`; sport ← `sport`; przyroda ← `nature`.
+- **Nazwa kategorii wprost:** `historical`, `cultural`, `sports`, `nature` w `places.interests`.
+
+Stan 17.10: historia 241 miejsc, kultura 207, **sport 0, przyroda 0**. Co zrobić (T-25):
+1. W `scripts/historia/interests.ts` dodać reguły `sport` (np. `boisk|stadion|sport|basen|hala sportow|klub`) i `nature` (np. `park|ogród|skwer|zieleń|drzew|dąb|staw`) i importować listę tagów z `@sawa/shared` (`PLACE_TAGS`) zamiast własnej.
+2. Nowe miejsca dla sportu i przyrody: zbiory miasta „Otwarte boiska” i „Zajęcia sportowe” (`docs/api/`; zbiór miasta to też plus w ocenie), parki i skwery z OSM (`leisure=park`, `leisure=garden`) w okolicy tras.
+3. Po zmianach: seed do Supabase i `pnpm --filter @sawa/scripts export:places`, żeby planer (plik `apps/api/data/places.geojson`) widział nowe tagi, dopóki nie czyta z bazy.
+
 **Zadania:** tag `R2` w [todo.md](../todo.md).
 
 **Nie ruszasz bez zgody właściciela:** UI (R3), prompty (R4). Zmiana schematu, który dotyka innych, wymaga wpisu w `todo.md`, żeby R1 i R4 wiedziały.

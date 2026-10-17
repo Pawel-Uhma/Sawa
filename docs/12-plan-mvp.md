@@ -81,7 +81,7 @@ Warstwy i zależności: [11-zasady-pracy-i-kodu.md §4](11-zasady-pracy-i-kodu.m
 
 ```ts
 type LatLng = { lat: number; lng: number };
-type Interest = string; // lista ok. 8 pozycji w packages/shared, do potwierdzenia przez R3 i R2 [Z]
+type Interest = "historical" | "cultural" | "sports" | "nature"; // wybór użytkownika; miejsca mają drobniejsze tagi, mapowanie INTEREST_TAGS w packages/shared
 type Leg = { line: string; mode: "tram" | "bus"; fromStopId: string; toStopId: string; departAt: string; durationMin: number; lngLats: [number, number][] };
 type RoutePlace = { placeId: string; name: string; position: LatLng; etaSec: number; windowSec: number };
 type Route = { id: string; legs: Leg[]; places: RoutePlace[]; totalMin: number };
@@ -102,22 +102,28 @@ place_photos  (id bigserial pk, place_id text fk, url text, caption text, year t
 story_cache   (key text pk, place_id text fk, text text, sources jsonb, model text, created_at timestamptz)
 ```
 
-- Indeks GIST na `places.geom`. Funkcja RPC `places_near_line(line, radius_m, interests)` zwraca miejsca w buforze trasy z położeniem wzdłuż linii (`ST_LineLocatePoint`).
+- Indeks GIST na `places.geom`. RPC `places_in_bbox` daje GeoJSON miejsc w prostokącie: z tego korzysta mapa (R3) i planer (R1). RPC `places_near_line` jest w bazie, ale planer go nie używa (dopasowanie w pamięci, §7).
 - Dane: [historia/sawa-historia.geojson](historia/sawa-historia.geojson) (326 punktów w promieniu 1 km od 42 Warsaw). Trasy MVP planujemy w tym obszarze **[Z]**.
 - `interests` przypisuje skrypt seed (reguły po `typ` i słowach kluczowych).
 - Klucz `story_cache` = `placeId + posortowane interests + przedział długości`.
 
-## 7. Planer trasy (R1, M4)
+## 7. Planer trasy (R1, M4), zbudowany 17.10
 
-Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiadania poza przesiadkami.
+Celem jest **przejażdżka obok ciekawych miejsc w zadanym czasie**, bez wysiadania poza przesiadkami. Kod: `apps/api/src/domain/routing/` (czyste funkcje z testami), `services/plan-route.ts`, podgląd na `/debug/planner` (`DEBUG_PAGES=1`).
 
-1. Przystanki w promieniu 500 m od `origin` (API miasta, cache 24 h).
-2. Dla każdej linii z przystanku (`get_ztm_lista_linii_na_przystanku`): kolejne przystanki i kształt linii z rozkładu statycznego **[Z]**, najbliższy odjazd z `get_ztm_odjazdy_linii_z_przystanku`.
-3. Ocena odcinka: punkty za miejsca w buforze 150 m, waga za pasujące zainteresowania, kara za powtórzenie. Liczona na minutę jazdy.
-4. Beam search (szerokość 5): na przystankach przesiadkowych kolejny odcinek, maks. 2 przesiadki, aż czas ≈ `durationMin` (±10%).
-5. Wynik: `Route` z `legs` i `places` posortowanymi po `etaSec`.
+**Dane:**
+- Sieć: GTFS Warszawy z [mkuran.pl/gtfs](https://mkuran.pl/gtfs/) (licencja ZTM + ODbL dla kształtów, podpis w `Route.attribution`). Skrypt `pnpm --filter @sawa/scripts transit` buduje `apps/api/data/transit-graph.json.gz` (ok. 0,4 MB: 575 wariantów tras tramwajów i autobusów z ruchem w dzień, 6384 przystanki, mediana czasów przejazdu, częstotliwość 10–20). Metro i kolej pominięte, bo pod ziemią nic nie widać. Plik jest na jeden dzień (domyślnie dziś); przed niedzielnym demo przebudować z `--date 2026-10-18`.
+- Miejsca: GeoJSON w formacie RPC `places_in_bbox` (`id, name, kind, interests, richness`). Teraz z pliku `apps/api/data/places.geojson` (`pnpm --filter @sawa/scripts export:places`, mapper R2), potem z Supabase: ten sam port `PlacesRepository.listInBBox` (R2), tylko inny adapter.
+- Odjazdy na żywo: `get_ztm_odjazdy_linii_z_przystanku` dla pierwszego odcinka (wymaga `WAW_TOKEN`); bez tokenu czekanie = połowa częstotliwości.
 
-Ocena i wyszukiwanie to czyste funkcje w `domain/routing/` z testami na małym sztucznym grafie. Pozycja „za oknem” w MVP liczona z rozkładu (postęp wzdłuż `lngLats` w czasie), bez śledzenia pojazdu na żywo.
+**Algorytm:**
+1. Miejsca w zasięgu (bbox wokół startu) dopasowane do każdego wariantu trasy: do 150 m od linii, z czasem od pierwszego przystanku (`place-hits.ts`). Liczone w pamięci, bez PostGIS.
+2. Wartość miejsca: `waga(richness) × (1 + 1,5 × pasujące zainteresowania) × (1 − odległość/300 m)`, każde miejsce liczy się raz.
+3. Beam search (szerokość 8, maks. 2 per wariant): start z przystanków do 500 m (dojście 1,2 m/s), czekanie połowa częstotliwości, przesiadka +120 s w obrębie zespołu przystanków, maks. 2 przesiadki, czas trasy 90–110% budżetu.
+4. Z trasy wybierane są miejsca do opowieści: najlepsze punktowo, co najmniej 45 s od siebie (`select-stories.ts`). `windowSec` = czas do następnego miejsca.
+5. Wynik: `Route` z kontraktu (`packages/shared/src/schemas/route.ts`), ok. 0,2 s na zapytanie.
+
+**Ograniczenie danych:** miejsca są tylko do 1 km od 42 Warsaw, więc po ok. 20 min jazdy nie ma już o czym opowiadać (ostatnie okno jest długie). Rozwiązuje to więcej miejsc w Supabase.
 
 ## 8. Opowieść i tryb demo (R4 + R3, M5–M6)
 
@@ -146,7 +152,7 @@ Synchronizacja (10 min): **13:30, 15:00, 17:00, 22:00, 08:00**.
 | Rola | Zadanie |
 |---|---|
 | R1 | Adapter `waw` (przystanki, linie, odjazdy), adapter rozkładu, mock `/v1/routes/plan` |
-| R2 | `/v1/places`, `/v1/places/:id`, `places_near_line`. Licencje zdjęć. Scenariusz demo 1,5 min do 15:00 |
+| R2 | `/v1/places`, `/v1/places/:id`. Licencje zdjęć. Scenariusz demo 1,5 min do 15:00 |
 | R3 | M1 ekran startowy, M2 onboarding, M3 mapa z miejscami i slider, „Generuj” na mocku, lista punktów trasy |
 | R4 | `/v1/stories` z cache i walidacją |
 
@@ -194,7 +200,7 @@ Nie budujemy przed oddaniem MVP, nawet jeśli zostanie czas, bez decyzji zespoł
 | Z3 | Przeglądarka nie łączy się z Supabase; wszystko idzie przez API | R2 |
 | Z4 | Kolejność przystanków i kształty linii bierzemy z publicznego rozkładu statycznego Warszawy (GTFS), bo 19 zbiorów portalu tego nie daje | R1 |
 | Z5 | Trasy MVP i demo w promieniu ok. 1 km od 42 Warsaw (52.2359, 20.9789), bo tam mamy dane | zespół |
-| Z6 | Lista ok. 8 zainteresowań w `packages/shared` | R3 + R2 |
+| Z6 | Użytkownik wybiera 4 ogólne kategorie (`historical`, `cultural`, `sports`, `nature`, decyzja Szczepana 17.10). Miejsca zachowują 8 tagów z seedu R2; mapowanie `INTEREST_TAGS` w `packages/shared/src/interests.ts`. Dla `sports` i `nature` nie ma jeszcze miejsc | R3 + R2 |
 | Z7 | Opowieść jako tekst (głos jest w „Po MVP”) | — |
 | Z8 | Podglądy z Vercela łączą się z produkcyjnym API | R1 + R3 |
 | Z9 | Biome zamiast ESLint + Prettier; Zustand do stanu odtwarzacza; podkład OpenFreeMap | R3 |

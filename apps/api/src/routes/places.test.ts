@@ -1,10 +1,11 @@
-import { ApiErrorSchema, PlaceSchema, PlacesResponseSchema } from "@sawa/shared";
+import { ApiErrorSchema, interestsOfTags, PlaceSchema, PlacesResponseSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { createApp } from "../app";
 import { AppError } from "../lib/errors";
+import { createFakeRoutePlanner } from "../services/fake-route-planner";
 import type { PlacesRepository } from "../services/ports";
 
-const app = createApp({ corsOrigins: [] });
+const app = createApp({ corsOrigins: [], services: { routePlanner: createFakeRoutePlanner() } });
 const AROUND_VENUE = "20.97,52.23,20.99,52.24";
 
 describe("GET /v1/places", () => {
@@ -18,11 +19,19 @@ describe("GET /v1/places", () => {
     expect(kercelak?.geometry.coordinates).toEqual([20.9801911, 52.2370217]);
   });
 
-  it("keeps only places with one of the interests", async () => {
-    const res = await app.request(`/v1/places?bbox=${AROUND_VENUE}&interests=jewish_warsaw`);
+  it("keeps only places whose tags fall into one of the categories", async () => {
+    const res = await app.request(`/v1/places?bbox=${AROUND_VENUE}&interests=cultural`);
     const body = PlacesResponseSchema.parse(await res.json());
     expect(body.features.length).toBeGreaterThan(0);
-    expect(body.features.every((f) => f.properties.interests.includes("jewish_warsaw"))).toBe(true);
+    expect(body.features.length).toBeLessThan(5);
+    expect(
+      body.features.every((f) => interestsOfTags(f.properties.interests).includes("cultural")),
+    ).toBe(true);
+  });
+
+  it("returns no places for a category without data", async () => {
+    const res = await app.request(`/v1/places?bbox=${AROUND_VENUE}&interests=sports`);
+    expect(PlacesResponseSchema.parse(await res.json()).features).toHaveLength(0);
   });
 
   it.each([
@@ -65,9 +74,10 @@ describe("GET /v1/places/:id", () => {
       listNearLine: () => Promise.reject(new Error("unused")),
       getById: () => Promise.reject(new AppError("UPSTREAM_ERROR", "Supabase place_detail failed")),
     };
-    const res = await createApp({ corsOrigins: [], placesRepository: failing }).request(
-      "/v1/places/kercelak",
-    );
+    const res = await createApp({
+      corsOrigins: [],
+      services: { routePlanner: createFakeRoutePlanner(), places: failing },
+    }).request("/v1/places/kercelak");
     expect(res.status).toBe(502);
     expect(ApiErrorSchema.parse(await res.json()).error.code).toBe("UPSTREAM_ERROR");
   });

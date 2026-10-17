@@ -4,6 +4,8 @@
 
 ## Teraz
 
+- R1 (Szczepan, ok. 14:30): planer jest w `main` (PR #5). Wybór zainteresowań zmieniony na 4 ogólne kategorie: `historical`, `cultural`, `sports`, `nature` (PR w toku). **R3:** onboarding pokazuje te 4 (etykiety PL: historia, kultura, sport, przyroda). **R2:** oznaczyć miejsca kategoriami (T-25, instrukcja w karcie R2): szczegółowe tagi zostają, można też wpisać nazwę kategorii wprost; do `sports` i `nature` potrzebne nowe miejsca (otwarte boiska z API miasta, parki z OSM). Dziś: historia 241 miejsc, kultura 207, sport 0, przyroda 0.
+
 - Sobota 17.10, po 11:00: kod aplikacji wolno pisać.
 - Zrobione: mózg zespołu (mapa w `README.md`, `todo.md`, `zespol.md`, karty ról w `role/`), zasady pracy w `CLAUDE.md`.
 - Nowe: [11-zasady-pracy-i-kodu.md](11-zasady-pracy-i-kodu.md) (zasady kodu i współpracy) i [12-plan-mvp.md](12-plan-mvp.md) (stack, kontrakt API, harmonogram). Każdy czyta i zgłasza niezgodę z założeniami [Z] (T-64).
@@ -12,6 +14,8 @@
 - Plan bazy miejsc w [13-plan-bazy.md](13-plan-bazy.md) (Jasiek, 13:00): baza Supabase pusta, PostGIS do włączenia; 13:10: schemat i RPC w Supabase (T-20), 13:08: dane załadowane (326 miejsc, 351 zdjęć, T-21). R3 i R4 mogą czytać przez RPC `places_in_bbox`, `place_detail`, R1 przez `places_near_line` (Jasiek). 13:24: port `PlacesRepository` i adapter w `apps/api/src/adapters/supabase/` (T-24); następne: kontrakt `Place`/`PlaceSummary` i `/v1/places`.
 
 - R1 (Szczepan, 13:15): kolejność przystanków i kształty linii z GTFS mkuran.pl (licencja ZTM + ODbL, wymagany podpis), skompresowane do `apps/api/data/`. Planer dopasowuje miejsca do tras **w pamięci API**, wejście to GeoJSON w formacie RPC `places_in_bbox` (teraz z pliku `apps/api/data/places.geojson`, potem z Supabase). **Dla R2 (Jasiek):** RPC `places_near_line` nie będzie używane przez planer; lista `INTERESTS` przenosi się do `packages/shared/src/interests.ts` (te same klucze), `scripts/historia/interests.ts` może ją stamtąd importować; dodaję `scripts/export-places-geojson.ts`, które używa Twojego `mapPlace`.
+
+- R1 (Szczepan, 14:00): planer działa na prawdziwych danych (GTFS + 326 miejsc z pliku), `POST /v1/routes/plan` i `GET /v1/routes/demo` w PR #4, podgląd na `http://localhost:8787/debug/planner` (`DEBUG_PAGES=1`). `Route.places` to już miejsca do opowieści, co najmniej 45 s od siebie (dla R4). Po ok. 20 min trasa wychodzi poza obszar z danymi.
 
 - R2 (Jasiek, 13:38): `GET /v1/places` i `GET /v1/places/:id` gotowe (kontrakt PR #6, trasy na nim). **R3:** mapa może brać `/v1/places?bbox=…`; **R4:** fakty i źródła z `/v1/places/:id` (`sources[].id` do cytowania, `unverifiedFacts` pomijać). **R1:** dodać `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY` na Railway.
 

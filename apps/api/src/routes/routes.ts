@@ -1,11 +1,19 @@
-import { PlanRouteRequestSchema, type Route, RouteSchema } from "@sawa/shared";
+import { HACKATHON_VENUE, type PlanRouteRequest, PlanRouteRequestSchema } from "@sawa/shared";
 import { Hono } from "hono";
 import { jsonBody } from "../lib/validate";
-import mockRoute from "./__fixtures__/route-mock.json";
+import type { RoutePlanner } from "../services/plan-route";
 
-// TODO(T-13): replace the fixture with the planner service.
-const MOCK_ROUTE: Route = RouteSchema.parse(mockRoute);
+/** The ride shown on /demo: from 42 Warsaw, one hour, what the area has data for. */
+export const DEMO_REQUEST: PlanRouteRequest = {
+  origin: HACKATHON_VENUE,
+  durationMin: 60,
+  interests: ["historical", "cultural"],
+};
 
-export const routeRoutes = new Hono()
-  .post("/v1/routes/plan", jsonBody(PlanRouteRequestSchema), (c) => c.json(MOCK_ROUTE))
-  .get("/v1/routes/demo", (c) => c.json(MOCK_ROUTE));
+export function createRouteRoutes(planner: RoutePlanner, clock: () => Date = () => new Date()) {
+  return new Hono()
+    .post("/v1/routes/plan", jsonBody(PlanRouteRequestSchema), async (c) =>
+      c.json(await planner.plan(c.req.valid("json"), clock())),
+    )
+    .get("/v1/routes/demo", async (c) => c.json(await planner.plan(DEMO_REQUEST, clock())));
+}

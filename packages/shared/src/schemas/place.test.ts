@@ -6,11 +6,11 @@ describe("PlacesQuerySchema", () => {
     expect(
       PlacesQuerySchema.parse({
         bbox: "20.96,52.22,21.0,52.25",
-        interests: "war_uprising, people",
+        interests: "historical, cultural",
       }),
     ).toEqual({
       bbox: { minLng: 20.96, minLat: 52.22, maxLng: 21.0, maxLat: 52.25 },
-      interests: ["war_uprising", "people"],
+      interests: ["historical", "cultural"],
     });
   });
 
