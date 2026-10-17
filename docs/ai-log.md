@@ -3134,3 +3134,5 @@
 > add node and pnpm setup to the README
 
 **AI:** Utworzyłem główny `README.md`: opis Sawy, linki do dokumentacji, instalacja Node 24 (macOS, Windows, nvm) i pnpm 12.14.0 (npm lub Corepack), uruchomienie lokalne, tabela poleceń, struktura repo i typowe problemy.
+
+**AI:** Scaliłem origin/main (monorepo Szczepana) z lokalnymi zmianami. Konflikty w CLAUDE.md, stan.md, todo.md, zespol.md i ai-log.md rozwiązane bez kasowania wpisów. Mapbox czy MapLibre trafiło do otwartych decyzji w stan.md. Aplikacja uruchomiona lokalnie: web :3000, api :8787/health.
