@@ -69,9 +69,9 @@ export function toSegment(p: LatLng, a: LatLng, b: LatLng): { distanceM: number;
 }
 
 /** A walk this close to a segment walked before goes along it again. */
-export const RETRACE_M = 30;
+const RETRACE_M = 30;
 /** Sample spacing along a new segment when checking it against the way so far. */
-export const RETRACE_STEP_M = 20;
+const RETRACE_STEP_M = 20;
 
 /**
  * Share (0–1) of the straight walk `from` → `to` that runs within `RETRACE_M` of the walk
@@ -229,20 +229,12 @@ export function walkThrough(
  * Returns null when not even the walk to the end fits.
  */
 export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): Walk | null {
-  return planWalks(input, options, 1)[0] ?? null;
-}
-
-/**
- * The best `count` walks of `planWalk`, best first, each through a different set of places
- * (straight lines can miss a railway or a park; the caller compares them on real paths).
- */
-export function planWalks(input: WalkInput, options: Partial<WalkOptions> = {}, count = 1): Walk[] {
   const opts = { ...DEFAULT_WALK_OPTIONS, ...options };
   const maxSec = opts.maxBudgetShare * input.budgetSec;
   const secBetween = (a: LatLng, b: LatLng) =>
     (haversineM(a, b) * opts.detourFactor) / opts.walkSpeedMps;
   const toEnd = (p: LatLng) => (input.end ? secBetween(p, input.end) : 0);
-  if (toEnd(input.origin) > maxSec) return [];
+  if (toEnd(input.origin) > maxSec) return null;
 
   // Places that can be reached and still leave time to get to the end.
   const reachable = input.places.filter(
@@ -336,20 +328,7 @@ export function planWalks(input: WalkInput, options: Partial<WalkOptions> = {}, 
     beam = open.sort(byObjective).slice(0, opts.beamWidth);
   }
 
-  const picked: Walk[] = [];
-  const stopSets = new Set<string>();
-  for (const state of done.sort(byObjective)) {
-    if (picked.length >= count) break;
-    const stops = state.key
-      .split("|")
-      .slice(1)
-      .filter((k) => k !== "end")
-      .sort()
-      .join("|");
-    if (stopSets.has(stops)) continue;
-    stopSets.add(stops);
-    const { waypoints, places, elapsedSec, score, lastPlaceId } = state;
-    picked.push({ waypoints, places, elapsedSec, score, ...(lastPlaceId ? { lastPlaceId } : {}) });
-  }
-  return picked;
+  const best = done.sort(byObjective)[0] as State;
+  const { waypoints, places, elapsedSec, score, lastPlaceId } = best;
+  return { waypoints, places, elapsedSec, score, ...(lastPlaceId ? { lastPlaceId } : {}) };
 }

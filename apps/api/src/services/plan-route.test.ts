@@ -317,26 +317,6 @@ describe("route planner on real data", () => {
     expect(onRides(route).map((p) => p.placeId)).toEqual(onRides(straight).map((p) => p.placeId));
   });
 
-  it("compares a few walks along their real paths and draws the one it picked", async () => {
-    const asked: LatLng[][] = [];
-    const walkPaths: WalkPathSource = {
-      path: async (points) => {
-        asked.push(points);
-        return points.map(toLngLat);
-      },
-    };
-    const route = await createRoutePlanner({ transit, places, walkPaths }).plan(
-      { origin: HACKATHON_VENUE, durationMin: 20, interests: ["historical"], travel: "walk" },
-      NOW,
-    );
-    // The walks compared, then the one picked asked again to draw it.
-    const compared = asked.slice(0, -1);
-    const drawn = asked[asked.length - 1];
-    expect(compared.length).toBeGreaterThan(1);
-    expect(compared).toContainEqual(drawn);
-    expect(route.legs[0]?.lngLats).toEqual(drawn?.map(toLngLat));
-  });
-
   it("keeps straight walking legs when the walk router has no path", async () => {
     const walkPaths: WalkPathSource = { path: async () => undefined };
     const request: PlanRouteRequest = {

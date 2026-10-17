@@ -6,6 +6,8 @@
 
 ## Teraz
 
+- 22:40 (Szczepan, z agentem R1): **planer spaceru z #121 cofnięty, własny OSRM zostaje.** #121 wszedł w całości; wybór spaceru po ścieżkach OSRM (`walk-on-paths.ts`, `planWalks`) wraca do stanu sprzed #121 na prośbę Szczepana: spacer planowany jak dotąd, miejsca wzdłuż ścieżki (#100). `osrm-routed` w kontenerze `api` bez zmian. **Na Railway:** `WALK_ROUTER_URL=http://127.0.0.1:5000` i redeploy.
+
 - 22:22 (Jasiek, z agentem R2, zgłoszenie Antka): **kropka lokalizacji nie ruszała się na bieżąco** (pokazywała start planera, zmieniany co 50 m) i bez zgody na GPS stała pod 42 Warsaw, co wyglądało jak zamrożona lokalizacja. Teraz kropka i zegar jazdy biorą każdy odczyt GPS (`useStartPoint().position`), planer i kamera dalej co 50 m; bez lokalizacji kropki nie ma (zostaje na `/demo` i przy starcie „Spod 42 Warsaw”). Pliki R3 (`features/demo`), zmergowane za zgodą Jaśka. Brak pytania o zgodę: przeglądarka pamięta wcześniejszą decyzję albo strona szła przez `http://`; do sprawdzenia na telefonie.
 - 21:45 (Paweł, z agentem, za zgodą R1, #118, T-126): **własny OSRM w kontenerze `api` i spacer wybierany po ścieżkach OSRM** (gałąź `r3/own-osrm`). `apps/api/Dockerfile` liczy graf pieszy Warszawy (build lokalnie ok. 1,5 min, obraz 1,09 GB, RAM po starcie i kilku planach ok. 600 MB: node ok. 290 + osrm-routed ok. 305). **Po merge na Railway (człowiek):** w serwisie `api` ustawić `WALK_ROUTER_URL=http://127.0.0.1:5000` (Valhalla zostaje jako `WALK_ROUTER_FALLBACK_URL`, domyślna), redeploy ręczny (T-148), w logach szukać `running and waiting for requests` z osrm-routed i `api listening` z `walkPaths: http://127.0.0.1:5000`, brak `walk path request failed` z `router: osrm`; `version` w `/health`. Zostaje test na telefonie.
 
