@@ -3883,3 +3883,47 @@
 > new file: apps/web/src/features/demo/index.ts
 
 **AI:** Zbudowałem mockowe demo frontendu w `apps/web` (ekran startowy, onboarding z 8 zainteresowaniami, mapa szkicowa z suwakiem 30 min–4 h, trasa z listą punktów i odtwarzaczem opowieści), bez API i bez Mapbox, z danymi placeholder; układ mobilny i desktopowy. Zmieniłem `todo.md` (T-31, T-32, T-33, T-66, T-67) i `stan.md`. Branch `r3/demo-mock`.
+
+### 2026-10-17 13:22 · Pawel
+
+> sorry kliucz wkleilem na railway
+
+
+> sorry kliucz wkleilem na railway
+
+**AI:** Korekta: klucz jest w Railway (api), czyli zgodnie z planem. Do ustalenia zostaje tylko nazwa zmiennej (ELEVENLABS_KEY czy ELEVENLABS_API_KEY) z R4.
+
+### 2026-10-17 13:22 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md | 9 +++++++++
+>  1 file changed, 9 insertions(+)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index c72da0a..2c3b3db 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -3883,3 +3883,12 @@
+>  > new file: apps/web/src/features/demo/index.ts
+>  
+>  **AI:** Zbudowałem mockowe demo frontendu w `apps/web` (ekran startowy, onboarding z 8 zainteresowaniami, mapa szkicowa z suwakiem 30 min–4 h, trasa z listą punktów i odtwarzaczem opowieści), bez API i bez Mapbox, z danymi placeholder; układ mobilny i desktopowy. Zmieniłem `todo.md` (T-31, T-32, T-33, T-66, T-67) i `stan.md`. Branch `r3/demo-mock`.
+> +
+> +### 2026-10-17 13:22 · Pawel
+> +
+> +> sorry kliucz wkleilem na railway
+> +
+> +
+> +> sorry kliucz wkleilem na railway
+> +
+> +**AI:** Korekta: klucz jest w Railway (api), czyli zgodnie z planem. Do ustalenia zostaje tylko nazwa zmiennej (ELEVENLABS_KEY czy ELEVENLABS_API_KEY) z R4.
+
