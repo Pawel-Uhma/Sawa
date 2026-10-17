@@ -32,6 +32,7 @@ import {
   type Profile,
   STORY_STYLES,
 } from "../lib/onboarding";
+import { setMusicOn, useMusicOn } from "../lib/ride-music-player";
 import type { StartMode } from "../lib/start-point";
 import { topicStyle } from "../lib/topic-style";
 import {
@@ -41,6 +42,7 @@ import {
   InfoIcon,
   ListenerIcon,
   LocateIcon,
+  MusicIcon,
   PinIcon,
   RestartIcon,
   RoutesIcon,
@@ -390,6 +392,7 @@ function MenuContent({ actions, run }: MenuContentProps) {
     actions.onForget();
   }
 
+  const musicOn = useMusicOn();
   const familiarity = labelOf(FAMILIARITY, profile.familiarity, lang);
   const style = labelOf(STORY_STYLES, profile.storyStyle, lang);
   const audience = labelOf(AUDIENCES, profile.audience, lang);
@@ -526,6 +529,26 @@ function MenuContent({ actions, run }: MenuContentProps) {
           onClick={() => {
             haptic();
             actions.onStartModeChange(actions.startMode === "gps" ? "venue" : "gps");
+          }}
+          chevron={false}
+        />
+      </Group>
+
+      <Group title={t("Dźwięk", "Sound")}>
+        <Row
+          Icon={MusicIcon}
+          label={t("Muzyka w tle", "Background music")}
+          value={
+            musicOn
+              ? t(
+                  "Lo-fi i puls miasta, ciszej, gdy mówię · stuknij, żeby wyłączyć",
+                  "Lo-fi and city pulse, quieter while I talk · tap to turn off",
+                )
+              : t("Wyłączona · stuknij, żeby włączyć", "Off · tap to turn on")
+          }
+          onClick={() => {
+            haptic();
+            setMusicOn(!musicOn);
           }}
           chevron={false}
         />
