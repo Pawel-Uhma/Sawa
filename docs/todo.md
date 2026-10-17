@@ -144,7 +144,8 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-142** Stany czekania (spinner, kółka) w czcionce i kolorach Sawy — `R3`
 - [ ] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł)
 - [ ] **T-144** Głos czyta lata źle („1099” zamiast 1939, „1090” zamiast 1940, „5355” zamiast 53/55): sprawdzić, czy prompt pisze liczby słownie (T-98) — `R4`
-- [ ] **T-145** Przetestować proxy z home labu (#63) na produkcji: API miasta, pojazdy — `R1` + Antek
+- [x] **T-145** Przetestować proxy z home labu (#63) na produkcji: API miasta, pojazdy — `R1` + Antek — (Jasiek, 20:15: PR #86, `WAW_API_BASE_URL` i `WAW_PROXY_KEY` na Railway; `/v1/vehicles/track` `stale: false` z pojazdami, odjazdy `realDeparture: true`)
+- [ ] **T-148** Railway nie wdraża merge'ów do `main` sam (stał na `2829bf3` z 18:52 mimo zmian w `apps/api/**`): sprawdzić trigger GitHub w serwisie `api`; do tego czasu po merge'u `railway redeploy --from-source --service api --yes` i `version` w `/health` — `R1`
 - [ ] **T-146** Firecrawl: klucz z drugiego konta, kolejne miejsca rzadziej i po całej Warszawie (poza Śródmieściem i Wolą) — `R2`
 - [ ] **T-147** Pitch wg mentorów: problem → rozwiązanie, lista wymagań funkcjonalnych, aktorzy systemu (np. emeryci, biuro miasta, lokalny przewoźnik) — `R2`
 
