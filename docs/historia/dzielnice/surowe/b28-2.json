@@ -1,0 +1,464 @@
+[
+  {
+    "id": "palac-holowczyca",
+    "nazwa": "Pałac Hołowczyca",
+    "name_en": "Hołowczyc Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 31 (róg Chmielnej)",
+    "adres_historyczny": "ul. Nowy Świat 31, u zbiegu z ul. Chmielną",
+    "lat": 52.23377778,
+    "lon": 21.01883889,
+    "lokalizacja": "dokladna",
+    "okres": "1820–1912",
+    "istnieje": false,
+    "fakty": [
+      "Budynek został wzniesiony ok. 1820 roku według projektu Antonia Corazziego na działce, którą w 1818 roku nabył późniejszy arcybiskup Szczepan Hołowczyc.",
+      "Wcześniej działka należała do Szpitala Świętego Ducha.",
+      "W XIX wieku budynek tracił pałacowy charakter i stał się kamienicą czynszową ze sklepami na parterze; w oficynach działały manufaktury.",
+      "Na początku XX wieku lokal na parterze u zbiegu z Chmielną zajmował główny skład Krajowej Fabryki Tytoniowej „Union”.",
+      "W 1912 roku kamienicę kupił Marian Malinowski i w ciągu kilku miesięcy ją rozebrał."
+    ],
+    "ciekawostki": [
+      "Sąsiednia kamienica Bürgera była błędnie nazywana pałacem Hołowczyca."
+    ],
+    "summary_en": "A two-storey Classicist building at the corner of Nowy Świat and Chmielna, designed by Antonio Corazzi around 1820. It was demolished in 1912 and replaced by a seven-storey tenement built by pharmacist Marian Malinowski.",
+    "ludzie": [
+      {"kto": "Szczepan Hołowczyc", "rola": "późniejszy arcybiskup, właściciel posesji od 1818 roku", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "projektant budynku, ok. 1820 (ustalenie Marka Kwiatkowskiego)", "wiki": null},
+      {"kto": "Marian Malinowski", "rola": "kupił kamienicę w 1912 roku i rozebrał ją", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Hołowczyca", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Ho%C5%82owczyca"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też dom Malinowskiego z lat 1913–1914; ma osobny rekord."
+  },
+  {
+    "id": "dom-malinowskiego-pod-biustonoszami",
+    "nazwa": "Dom Malinowskiego („pod biustonoszami”)",
+    "name_en": "Malinowski House (\"under the bras\")",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 31 (róg Chmielnej)",
+    "adres_historyczny": null,
+    "lat": 52.23377778,
+    "lon": 21.01883889,
+    "lokalizacja": "dokladna",
+    "okres": "1913–1939; od 1948",
+    "istnieje": true,
+    "fakty": [
+      "W 1913–1914 Marian Malinowski wzniósł tu siedmiopiętrowy dom dochodowy z apteką na parterze; projektowali go architekci Adam Oczkowski i Feliks Michalski.",
+      "Budowa stała się zatargiem inwestora z magistratem: Malinowski odmówił oddania części gruntu na poszerzenie wylotu ul. Chmielnej i domagał się 800 tys. rubli; władze uzyskały z Petersburga nakaz wstrzymania budowy, ale stało się to kilka tygodni przed wybuchem I wojny światowej.",
+      "Apteka zajmowała dwie kondygnacje na narożniku Nowego Światu z Chmielną i była jedną z największych w międzywojennej Warszawie.",
+      "Pod koniec września 1939 na budynek frontowy spadła bomba lotnicza; kamienica została doszczętnie zburzona.",
+      "W 1948 roku w miejscu dawnej kamienicy stanął nowy, niższy budynek, dostosowany wysokością do pierzei Nowego Światu; autorstwa Bohdana Lacherta i Juliana Puterman-Sadłowskiego.",
+      "Warszawiacy nazwali budynek z 1948 roku „domem pod biustonoszami” ze względu na wybrzuszenia ponad sklepami parteru; w domu przez wiele lat mieściły się komisy i prywatne sklepy z butami."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A seven-storey Modernist tenement built in 1913–1914 by pharmacist Marian Malinowski at the corner of Nowy Świat and Chmielna. It was destroyed in 1939 and replaced in 1948 by a lower building nicknamed 'the house under the bras'.",
+    "ludzie": [
+      {"kto": "Marian Malinowski", "rola": "właściciel apteki i inwestor kamienicy; zmarł w 1950 roku", "wiki": null},
+      {"kto": "Adam Oczkowski i Feliks Michalski", "rola": "architekci kamienicy z 1913–1914", "wiki": null},
+      {"kto": "Bohdan Lachert i Julian Puterman-Sadłowski", "rola": "autorzy budynku z 1948 roku", "wiki": null},
+      {"kto": "Jerzy Jarnuszkiewicz", "rola": "autor skromnej dekoracji rzeźbiarskiej budynku z 1948 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["dom „pod biustonoszami”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Hołowczyca", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Ho%C5%82owczyca"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł nie mówi wprost, czy budynek z 1948 roku stoi dziś."
+  },
+  {
+    "id": "palac-jablonowskich",
+    "nazwa": "Pałac Jabłonowskich",
+    "name_en": "Jabłonowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Senatorska 14/16 (pl. Teatralny)",
+    "adres_historyczny": null,
+    "lat": 52.24472222,
+    "lon": 21.00972222,
+    "lokalizacja": "dokladna",
+    "okres": "1773–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zbudowany w latach 1773–1785 dla Antoniego Jabłonowskiego według projektu Jakuba Fontany i Domenico Merliniego.",
+      "W latach 1817–1819 przebudowano go na ratusz miejski według projektu Fryderyka Alberta Lessla i Józefa Grzegorza Lessla; pałac pełnił funkcję ratusza Warszawy w latach 1819–1944.",
+      "W 1863, w czasie powstania styczniowego, pałac uległ pożarowi; odbudowano go w stylu neorenesansowym w latach 1864–1868 według projektu Józefa Orłowskiego.",
+      "We wrześniu 1939 z ratusza cywilną obroną Warszawy dowodził Stefan Starzyński; 25 września 1939 w trakcie bombardowania zginął wiceprezydent Jan Około-Kułak.",
+      "W czasie powstania warszawskiego pałac wraz z pałacem Blanka był redutą powstańczą „Ratusz”, bronioną przez żołnierzy batalionu „Kiliński”.",
+      "W 1952 rozebrano wypalone ruiny; w latach 1995–1997 budynek zrekonstruowano na siedziby Banku Rozwoju Eksportu i Citibanku (Poland).",
+      "W 1964 w miejscu pałacu odsłonięto pomnik Bohaterów Warszawy."
+    ],
+    "ciekawostki": [
+      "Podczas odbudowy w latach 90. wydobyto fragmenty wyposażenia pałacu, w tym żeliwne podpory i kolumnę z sali balowej, które wyeksponowano na dziedzińcu."
+    ],
+    "summary_en": "An 18th-century palace on Plac Teatralny that served as Warsaw's city hall from 1819 to 1944. Destroyed in the war and demolished in 1952, it was reconstructed in 1995–1997 for banking use.",
+    "ludzie": [
+      {"kto": "Antoni Jabłonowski", "rola": "inwestor pałacu z lat 1773–1785", "wiki": null},
+      {"kto": "Stefan Starzyński", "rola": "dowodził cywilną obroną Warszawy z ratusza we wrześniu 1939", "wiki": null},
+      {"kto": "Jan Około-Kułak", "rola": "wiceprezydent Warszawy, zginął w bombardowaniu 25 września 1939", "wiki": null},
+      {"kto": "Fryderyk Albert Lessel i Józef Grzegorz Lessel", "rola": "projektanci przebudowy na ratusz w latach 1817–1819", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Jabłonowskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Jab%C5%82onowskich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-janaszow",
+    "nazwa": "Pałac Janaszów",
+    "name_en": "Janasz Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zielna 49",
+    "adres_historyczny": null,
+    "lat": 52.237282,
+    "lon": 21.005629,
+    "lokalizacja": "dokladna",
+    "okres": "1870–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wzniesiono w latach 1870–1880 (według innego źródła 1874–1875) dla Jakuba Janasza według projektu Jana Heuricha starszego, w stylu neobarokowym.",
+      "W 1893 posiadłość odziedziczyła żona Janasza, Róża z Goldstandów, i córki; w tym samym roku sprzedały pałac hr. Feliksowi i Zofii z Ledóchowskich Czackim.",
+      "W 1939 roku budynek stał się własnością Polskiego Związku Przemysłowców Metalowych i zaczął pełnić funkcję kamienicy czynszowej.",
+      "Podczas II wojny światowej budynek został nieznacznie uszkodzony; po zniszczeniach stał się budynkiem wolnostojącym.",
+      "W latach 1970–1973 przeprowadzono gruntowną renowację, w czasie której przywrócono mansardowy dach.",
+      "W 1965 roku pałac wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Pałac ma wysokie pierwsze piętro z balkonem, którego żeliwna krata biegnie wzdłuż całej elewacji frontowej."
+    ],
+    "summary_en": "A Neo-Baroque palace on Zielna Street built for Jakub Janasz, styled after Parisian townhouses. It was converted into a rental block after 1939 and restored in 1970–1973.",
+    "ludzie": [
+      {"kto": "Jakub Janasz", "rola": "inwestor pałacu", "wiki": null},
+      {"kto": "Jan Heurich starszy", "rola": "architekt pałacu", "wiki": null},
+      {"kto": "Feliks i Zofia z Ledóchowskich Czaccy", "rola": "nabyli pałac w 1893 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Czackich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Janaszów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Janasz%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-karasia",
+    "nazwa": "Pałac Karasia",
+    "name_en": "Karaś Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 2 (teren zabudowany po rozbiórce)",
+    "adres_historyczny": "Krakowskie Przedmieście 2",
+    "lat": 52.2382,
+    "lon": 21.0184,
+    "lokalizacja": "dokladna",
+    "okres": "1772–ok. 1914",
+    "istnieje": false,
+    "fakty": [
+      "W 1769 roku król Stanisław August podarował marszałkowi Kazimierzowi Karasiowi dobra położone poniżej i na południe od Pałacu Kazimierzowskiego.",
+      "Pałac zaprojektowany przez Jakuba Fontanę ukończono w 1772 roku; była to dwupiętrowa rezydencja z piętnastoosiową elewacją i zaokrąglonymi narożnikami.",
+      "Od 1800 roku, po kolejnych zmianach własności, pałac stopniowo zamieniał się w kamienicę czynszową; od połowy XIX wieku stał się zwykłą kamienicą.",
+      "W 1823 pracownię w budynku otworzył Ludwik Kauffmann, klasycystyczny rzeźbiarz.",
+      "11 maja 1830 roku przed pałacem odsłonięto pomnik Mikołaja Kopernika.",
+      "Od połowy 1891 do 1913 roku w budynku mieściła się redakcja i drukarnia „Gazety Warszawskiej”.",
+      "W 1905 budynek kupił Władysław Taubenhaus; w 1912 roku na terenie oficyny wzniesiono Teatr Polski.",
+      "Pałac został rozebrany; nowy właściciel planował w tym miejscu wysoką kamienicę, której budowy nie ukończono z powodu wybuchu I wojny światowej."
+    ],
+    "ciekawostki": [
+      "W 1810 roku w pałacu urodził się Konstanty Julian Ordon, bohater wiersza Adama Mickiewicza „Reduta Ordona”.",
+      "W 1794 roku pałac był ponoć kwaterą naczelnika Tadeusza Kościuszki w czasie insurekcji."
+    ],
+    "summary_en": "A Baroque-Classicist palace on Krakowskie Przedmieście designed by Jakub Fontana and finished in 1772. It became a rental building, housed Gazeta Warszawska in the 1890s–1910s, and was demolished around 1910–1914.",
+    "ludzie": [
+      {"kto": "Kazimierz Karaś", "rola": "marszałek prywatny króla, inwestor pałacu", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Ludwik Kauffmann", "rola": "rzeźbiarz, miał tu pracownię od 1823 roku", "wiki": null},
+      {"kto": "Władysław Taubenhaus", "rola": "inwestor, który kupił budynek w 1905 roku", "wiki": null},
+      {"kto": "Konstanty Julian Ordon", "rola": "urodzony w pałacu w 1810 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Karasia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Karasia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data rozbiórki nie jest w artykule podana wprost; okres przybliżony."
+  },
+  {
+    "id": "palac-kazanowskich",
+    "nazwa": "Pałac Kazanowskich",
+    "name_en": "Kazanowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 62",
+    "adres_historyczny": null,
+    "lat": 52.245,
+    "lon": 21.015,
+    "lokalizacja": "dokladna",
+    "okres": "1632–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teren przy klasztorze bernardynów przekazano królowi Zygmuntowi III Wazie w 1617 roku; w istniejącym tu wcześniej dworze okazjonalnie działała mennica królewska.",
+      "W 1632 roku nieruchomość otrzymał w darze od królewicza Władysława jego przyjaciel Adam Kazanowski; w latach 1632–1643 przeprowadzono rozbudowę dworu.",
+      "Pałac opisał Adam Jarzębski w pierwszym wierszowanym przewodniku po Warszawie z 1643 roku.",
+      "Pałac został zniszczony w 1656 roku w czasie potopu szwedzkiego i nie został odbudowany w dawnym kształcie.",
+      "W 1663 Lubomirscy przekazali połowę budynku od strony Krakowskiego Przedmieścia karmelitankom bosym na klasztor i kościół; w 1664 zakonnice rozebrały część pałacu.",
+      "W latach 1801–1804 mieszkał tu francuski król na wygnaniu Ludwik XVIII z rodziną i dworem.",
+      "W 1818 roku zakon uległ kasacie, a budynek przeszedł na własność Warszawskiego Towarzystwa Dobroczynności Res Sacra Miser.",
+      "Zabudowania odbudowano po zniszczeniach wojennych w latach 1945–1975."
+    ],
+    "ciekawostki": [
+      "Historyk francuski Jean Le Laboureur pisał o rezydencji: „Włochy (...) nie mają nic tak pompatycznego i wielkoksiążęcego”."
+    ],
+    "summary_en": "A palace founded by Adam Kazanowski in the 1630s and destroyed in the Swedish Deluge in 1656. Later it became a Carmelite convent and in 1818 the Warsaw Charity Society's seat, which still operates Caritas there today.",
+    "ludzie": [
+      {"kto": "Adam Kazanowski", "rola": "właściciel i budowniczy rezydencji w 1 połowie XVII wieku", "wiki": null},
+      {"kto": "Adam Jarzębski", "rola": "autor wierszowanego przewodnika po Warszawie z 1643 roku, opisał pałac", "wiki": null},
+      {"kto": "Ludwik XVIII", "rola": "mieszkał w pałacu w latach 1801–1804 jako król na wygnaniu", "wiki": null},
+      {"kto": "Jean Le Laboureur", "rola": "historyk francuski, opisał rezydencję", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Kazanowskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Kazanowskich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urywa się w opisie remontu po 1960 roku; dalsza historia niepełna."
+  },
+  {
+    "id": "palac-kazimierzowski",
+    "nazwa": "Pałac Kazimierzowski",
+    "name_en": "Kazimierz Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 26/28",
+    "adres_historyczny": null,
+    "lat": 52.24069444,
+    "lon": 21.02027778,
+    "lokalizacja": "dokladna",
+    "okres": "1637–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac został wzniesiony w latach 1637–1642 z inicjatywy króla Władysława IV jako letnia rezydencja Villa Regia, według projektu Giovanniego Trevano.",
+      "W 1656 pałac zniszczyły wojska szwedzkie; w 1660 roku wyremontowano go w uproszczonej formie.",
+      "Pałac nazwano Kazimierzowskim od imienia króla Jana Kazimierza, dla którego stał się ulubioną siedzibą.",
+      "W 1695 roku poważnie zniszczył go pożar; do 1727 roku nie został odbudowany.",
+      "W 1765 pałac kupił Stanisław August Poniatowski i przekazał go Skarbowi Państwa na siedzibę Szkoły Rycerskiej.",
+      "W 1816 roku pałac stał się siedzibą Uniwersytetu Warszawskiego.",
+      "Podczas II wojny światowej pałac został zniszczony w około 50%; odbudowano go w latach 1945–1954 według projektu Piotra Biegańskiego.",
+      "Dziś jest siedzibą rektoratu Uniwersytetu Warszawskiego."
+    ],
+    "ciekawostki": [
+      "Na skarpie za pałacem stoi trzytonowa armata upamiętniająca udział studentów w walkach o niepodległość w latach 1918–1920."
+    ],
+    "summary_en": "A Villa Regia built for King Władysław IV in 1637–1642 on the Krakowskie Przedmieście campus of the University of Warsaw. It was renamed after Jan Kazimierz and is now the rectorate of the university.",
+    "ludzie": [
+      {"kto": "Władysław IV", "rola": "inicjator budowy pałacu", "wiki": null},
+      {"kto": "Giovanni Trevano", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Jan Kazimierz", "rola": "przebudował pałac; od jego imienia nazwa", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "kupił pałac w 1765 roku", "wiki": null},
+      {"kto": "Piotr Biegański", "rola": "autor projektu odbudowy w latach 1945–1954", "wiki": null}
+    ],
+    "dawne_nazwy": ["Villa Regia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Kazimierzowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Kazimierzowski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w lidzie podaje start Uniwersytetu w 1824 roku, a w części historycznej 1816; w rekordzie użyto 1816."
+  },
+  {
+    "id": "palac-komisji-rzadowej-przychodow-i-skarbu",
+    "nazwa": "Pałac Komisji Rządowej Przychodów i Skarbu",
+    "name_en": "Palace of the Government Commission for Revenue and Treasury",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Bankowy 3/5",
+    "adres_historyczny": "ul. Rymarska 3/5 (adres z okresu międzywojennego)",
+    "lat": 52.242999,
+    "lon": 21.00062,
+    "lokalizacja": "dokladna",
+    "okres": "1823–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wzniesiono w latach 1823–1825 w stylu klasycystycznym w wyniku przebudowy barokowego pałacu Leszczyńskich dla Komisji Rządowej Przychodów i Skarbu Królestwa Polskiego.",
+      "W tympanonie znajduje się płaskorzeźba Pawła Malińskiego przedstawiająca Minerwę, Merkurego i Jazona oraz alegorie Wisły i Bugu.",
+      "W latach 1829–1831 jako aplikant Komisji pracował tu Juliusz Słowacki; upamiętniają go popiersie i tablica.",
+      "W dwudziestoleciu międzywojennym gmach, przebudowany w latach 1919–1921 przez Mariana Lalewicza, był wraz z sąsiednim pałacem Ministra Skarbu siedzibą Ministerstwa Skarbu.",
+      "We wrześniu 1939 pałac został zniszczony przez niemieckie lotnictwo; odbudowano go w latach 1950–1954.",
+      "Obecnie mieści się tu siedziba Prezydenta m.st. Warszawy i Mazowiecki Urząd Wojewódzki; miasto zajmuje ok. 15% powierzchni.",
+      "9 kwietnia 2016 na dziedzińcu odsłonięto głaz z tablicą upamiętniającą Lecha Kaczyńskiego; wzbudziło to kontrowersje z powodu braku zgody stołecznego konserwatora zabytków."
+    ],
+    "ciekawostki": [
+      "Pałac jest połączony z sąsiednim pałacem Ministra Skarbu i oba budynki mają wspólny adres."
+    ],
+    "summary_en": "A Classicist palace on Plac Bankowy built in 1823–1825 on the site of the Leszczyński Baroque palace. Juliusz Słowacki worked there as a clerk; today it houses the Warsaw city president and the Masovian voivodeship office.",
+    "ludzie": [
+      {"kto": "Juliusz Słowacki", "rola": "aplikant Komisji w latach 1829–1831", "wiki": null},
+      {"kto": "Paweł Maliński", "rola": "autor płaskorzeźby w tympanonie", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "autor adaptacji z lat 1919–1921", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Leszczyńskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Komisji Rządowej Przychodów i Skarbu", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Komisji_Rz%C4%85dowej_Przychod%C3%B3w_i_Skarbu"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-konstantego-zamoyskiego",
+    "nazwa": "Pałac Konstantego Zamoyskiego",
+    "name_en": "Konstanty Zamoyski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Foksal 1/2/4",
+    "adres_historyczny": null,
+    "lat": 52.2344669,
+    "lon": 21.02398,
+    "lokalizacja": "dokladna",
+    "okres": "1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przed budową pałacu teren był ogrodem spacerowym stylizowanym na londyński Vauxhall; w 1870 roku terenami zawładnął Konstanty Zamoyski.",
+      "Pałac wybudowano w latach 1875–1877 według projektu Leandra Marconiego w stylu neorenesansowym.",
+      "W 1944 pałac został zdewastowany; był własnością Zamoyskich do 1945 roku.",
+      "W 1949 roku przekazano go Stowarzyszeniu Architektów Rzeczypospolitej Polskiej na siedzibę Zarządu Głównego SARP.",
+      "W latach 1964–1968 dobudowano przeszklony pawilon wystawowy o stalowej konstrukcji.",
+      "Od 2017 roku pałac jest również siedzibą Narodowego Instytutu Architektury i Urbanistyki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A Neo-Renaissance palace on Foksal Street built in 1875–1877 for Konstanty Zamoyski. After the war it became the seat of the Association of Polish Architects, and since 2017 it has also housed the National Institute of Architecture and Urban Planning.",
+    "ludzie": [
+      {"kto": "Konstanty Zamoyski", "rola": "właściciel terenu od 1870 roku, inwestor pałacu", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "architekt pałacu z lat 1875–1877", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Zamoyskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Konstantego Zamoyskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Konstantego_Zamoyskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-kossakowskich",
+    "nazwa": "Pałac Kossakowskich",
+    "name_en": "Kossakowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 19",
+    "adres_historyczny": null,
+    "lat": 52.23222222,
+    "lon": 21.01972222,
+    "lokalizacja": "dokladna",
+    "okres": "1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1780 kupiec Izaak Ollier kupił od Augusta Sułkowskiego posesję i wystawił na niej pałac w stylu klasycystycznym, najprawdopodobniej według projektu Efraima Schrögera; budowę ukończono w 1784.",
+      "W 1848 Władysław Pusłowski zlecił przebudowę Henrykowi Marconiemu; architekt dodał piętro, trzy oficyny, balkony i attykę.",
+      "W 1853 pałac przeszedł na własność hrabiny Aleksandry z Lavalów Kossakowskiej; jej mąż zgromadził tu zbiory malarstwa i broni oraz okazałą bibliotekę.",
+      "Od 1874 roku Stanisław Kazimierz Kossakowski organizował w pałacu piątkowe wieczory literackie.",
+      "W belwederze pałacu znajdowała się pracownia Władysława Podkowińskiego, w której w 1894 roku powstał obraz „Szał uniesień”.",
+      "W 1930 pałac kupiło Warszawskie Towarzystwo Ubezpieczeń.",
+      "Pałac został poważnie uszkodzony podczas obrony Warszawy we wrześniu 1939 i ucierpiał w powstaniu warszawskim; odbudowano go w latach 1949–1950 według projektu Mieczysława Kuzmy.",
+      "W 1965 roku budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W 1851 ustawiono w pałacu rzeźby muz: Klio, Uranii, Erato i Talii, wykonane przez Pawła Malińskiego."
+    ],
+    "summary_en": "A Classicist palace on Nowy Świat built in 1780–1784 and remodelled by Henryk Marconi in 1848. It hosted literary evenings and a painter's studio, and was rebuilt in 1949–1950 after war damage.",
+    "ludzie": [
+      {"kto": "Izaak Ollier", "rola": "kupiec, inwestor pałacu z lat 1780–1784", "wiki": null},
+      {"kto": "Władysław Pusłowski", "rola": "zlecił przebudowę w 1848 roku", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "architekt przebudowy z 1848 roku", "wiki": null},
+      {"kto": "Stanisław Kazimierz Kossakowski", "rola": "organizował piątkowe wieczory literackie", "wiki": null},
+      {"kto": "Władysław Podkowiński", "rola": "malarz, obraz „Szał uniesień” (1894) powstał w pałacu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Kossakowskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Kossakowskich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-krasinskich",
+    "nazwa": "Pałac Krasińskich",
+    "name_en": "Krasiński Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "między ul. Długą a Świętojerską",
+    "adres_historyczny": null,
+    "lat": 52.249167,
+    "lon": 21.003889,
+    "lokalizacja": "dokladna",
+    "okres": "1677–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac zbudowano w latach 1677–1695 dla wojewody płockiego Jana Dobrogosta Krasińskiego według projektu Tylmana z Gameren.",
+      "W 1689 gdański rzeźbiarz Andreas Schlüter rozpoczął prace nad płaskorzeźbami tympanonów.",
+      "W marcu 1699 roku w pałacu odbył się bal z udziałem Augusta II Mocnego, a następnie uroczystość z okazji podpisania pokoju w Karłowicach.",
+      "W 1702 roku Szwedzi obrabowali i zdewastowali pałac.",
+      "5 grudnia 1765 roku pałac kupiła Rzeczpospolita na siedzibę Komisji Skarbowej Koronnej i od tej pory nosił nazwę pałacu Rzeczypospolitej.",
+      "W kwietniu 1766 roku rozpoczęła się przebudowa pod kierunkiem Jakuba Fontany; w 1766 roku uporządkowany Ogród Krasińskich udostępniono publiczności.",
+      "Do 2019 roku w pałacu mieściły się zbiory specjalne Biblioteki Narodowej."
+    ],
+    "ciekawostki": [
+      "Rezydencję zaprojektowano tak, by nawiązywać do legendy o antycznym pochodzeniu rodu Krasińskich od Marka Waleriusza Korwinusa."
+    ],
+    "summary_en": "A Baroque palace designed by Tylman van Gameren for Jan Dobrogost Krasiński between 1677 and 1695. Bought by the Commonwealth in 1765 and known as the Palace of the Republic, it housed the National Library's special collections until 2019.",
+    "ludzie": [
+      {"kto": "Jan Dobrogost Krasiński", "rola": "wojewoda płocki, inwestor pałacu", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Andreas Schlüter", "rola": "gdański rzeźbiarz, płaskorzeźby tympanonów od 1689 roku", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "prowadził przebudowę od 1766 roku", "wiki": null},
+      {"kto": "August II Mocny", "rola": "uczestniczył w balu w pałacu w marcu 1699 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Rzeczypospolitej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Krasińskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Krasi%C5%84skich_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł urywa się w połowie XVIII wieku; stan po 2019 roku wynika tylko z lidu. Adres podany ogólnie, bo artykuł nie podaje numeru."
+  },
+  {
+    "id": "palac-kronenberga",
+    "nazwa": "Pałac Kronenberga",
+    "name_en": "Kronenberg Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "w miejscu dzisiejszego hotelu Sofitel Victoria",
+    "adres_historyczny": "u zbiegu ul. Królewskiej i pl. Małachowskiego (dawny plac Ewangelicki)",
+    "lat": 52.23950556,
+    "lon": 21.01259722,
+    "lokalizacja": "dokladna",
+    "okres": "1867–1962",
+    "istnieje": false,
+    "fakty": [
+      "W 1867 bankier Leopold Stanisław Kronenberg nabył posesję nr 1348 przy dawnym placu Ewangelickim, a w 1868 dokupił część posesji nr 1076.",
+      "Projekt zamówił u berlińskiego architekta Friedricha Hitziga; budowę ukończono w 1871.",
+      "W pałacu mieściły się m.in. Kasa im. Józefa Mianowskiego (1881–1924), Ministerstwo Spraw Zagranicznych (1918–1922), Gdynia–Ameryka Linie Żeglugowe (1934–1939) i Stowarzyszenie Elektryków Polskich.",
+      "W 1930 roku odbyło się tu pierwsze w Warszawie Walne Zgromadzenie SEP.",
+      "18 marca 1939 w pałacu wybuchł pożar; na początku września 1939 został zbombardowany bombami zapalającymi.",
+      "W 1959 Pałac Kronenberga został skreślony z rejestru zabytków.",
+      "Gmach rozebrano w 1962 roku; w jego miejscu wybudowano hotel Sofitel Victoria."
+    ],
+    "ciekawostki": [
+      "Z pałacu po rozbiórce ocalały cztery granitowe trzony kolumn: trzy wykorzystała Zofia Woźna do rzeźby „Samotność” w parku im. Romualda Traugutta, czwarty do pomnika „Electio Viritim”."
+    ],
+    "summary_en": "An eclectic palace of banker Leopold Kronenberg, built in 1867–1871 and burned in 1939. It was demolished in 1962, and the Sofitel Victoria hotel now stands on the site.",
+    "ludzie": [
+      {"kto": "Leopold Stanisław Kronenberg", "rola": "bankier, inwestor pałacu", "wiki": null},
+      {"kto": "Friedrich Hitzig", "rola": "berliński architekt, autor projektu", "wiki": null},
+      {"kto": "Zofia Woźna", "rola": "rzeźbiarka, wykorzystała kamienie z pałacu do rzeźby „Samotność”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Kronenberga"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pałac Kronenberga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Kronenberga_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

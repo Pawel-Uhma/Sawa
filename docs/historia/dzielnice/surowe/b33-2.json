@@ -1,0 +1,217 @@
+[
+  {
+    "id": "teatr-capitol-w-warszawie",
+    "nazwa": "Teatr Capitol w Warszawie",
+    "name_en": "Capitol Theatre in Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 115",
+    "adres_historyczny": null,
+    "lat": 52.241111,
+    "lon": 21.003056,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Capitol rozpoczął działalność we wrześniu 2008 roku na miejscu dawnego Kina Capitol.",
+      "Duża Scena przy ul. Marszałkowskiej ma 350 miejsc; Scena Mniejsza, otwarta od września 2012 roku, przy ul. Przechodniej ma 250 miejsc.",
+      "Przy teatrze działa również Club Capitol.",
+      "Teatr prowadzą Anna Gornostaj i Stanisław Mączyński; dyrektorem artystycznym od początku istnienia teatru jest aktorka Anna Gornostaj.",
+      "Teatr organizuje spektakle wyjazdowe przez działający wewnątrz impresariat."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Teatr Capitol is a private theatre on Marszałkowska Street in Warsaw, opened in September 2008 on the site of the former Capitol cinema. It runs a 350-seat main stage and, since 2012, a 250-seat smaller stage on Przechodnia Street.",
+    "ludzie": [
+      {"kto": "Anna Gornostaj", "rola": "współprowadząca teatr, dyrektorka artystyczna od początku", "wiki": null},
+      {"kto": "Stanisław Mączyński", "rola": "współprowadzący teatr", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Capitol w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Capitol_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje roku zamknięcia kina Capitol ani daty jego powstania; fakty dotyczą wyłącznie teatru."
+  },
+  {
+    "id": "teatr-collegium-nobilium",
+    "nazwa": "Teatr Collegium Nobilium",
+    "name_en": "Collegium Nobilium Theatre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 22/24",
+    "adres_historyczny": null,
+    "lat": 52.248378,
+    "lon": 21.00705,
+    "lokalizacja": "dokladna",
+    "okres": "1743–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek teatru konwiktowego zbudowano w latach 1743–1750 według projektu Jakuba Fontany, architekta królewskiego; oddano go jako pierwszą część Collegium Nobilium pijarów w Warszawie.",
+      "W XIX wieku budynek przebudowano na kaplicę.",
+      "Budynek został całkowicie zniszczony podczas II wojny światowej i odbudowany w latach 1950–1956.",
+      "W latach 1989–1999 teatr zmodernizowano dzięki staraniom rektorów Akademii Teatralnej, profesorów Andrzeja Łapickiego i Jana Englerta.",
+      "Odnowiony teatr otwarto podczas inauguracji roku akademickiego 30 września 1999 roku.",
+      "W teatrze są dwie sceny: Scena Główna i Scena im. Jana Kreczmara."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Collegium Nobilium theatre at ul. Miodowa 22/24 is part of the Warsaw Theatre Academy. Its building, designed by Jakub Fontana and completed in 1750 as the first part of the Piarist Collegium Nobilium, was destroyed in the Second World War, rebuilt in 1950–1956 and reopened after modernisation in 1999.",
+    "ludzie": [
+      {"kto": "Jakub Fontana", "rola": "architekt projektu budynku (XVIII w.)", "wiki": null},
+      {"kto": "Andrzej Łapicki", "rola": "rektor Akademii Teatralnej, jeden z inicjatorów modernizacji 1989–1999", "wiki": null},
+      {"kto": "Jan Englert", "rola": "rektor Akademii Teatralnej, jeden z inicjatorów modernizacji 1989–1999", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Collegium Nobilium", "url": "https://pl.wikipedia.org/wiki/Teatr_Collegium_Nobilium"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "teatr-comoedia",
+    "nazwa": "Teatr Comoedia",
+    "name_en": "Comoedia Theatre",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Karowa 18A",
+    "adres_historyczny": null,
+    "lat": 52.2425,
+    "lon": 21.0169,
+    "lokalizacja": "dokladna",
+    "okres": "1934–1935",
+    "istnieje": false,
+    "fakty": [
+      "Teatr Comoedia działał od 29 grudnia 1934 do 30 lipca 1935 roku przy ul. Karowej 18A, w rotundzie zbudowanej przez Ignacego Paderewskiego.",
+      "Dyrektorem, reżyserem i scenarzystą teatru był Eugeniusz Poreda.",
+      "W teatrze wystawiano współczesne polskie sztuki o tematyce społecznej.",
+      "Po II wojnie światowej teatr reaktywowano jako część Miejskich Teatrów Dramatycznych w sali przy ul. Szwedzkiej 2."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Comoedia was a theatre in Warsaw's Śródmieście that operated from December 1934 to July 1935 in a rotunda on Karowa Street, a building Ignacy Paderewski had put up. It staged contemporary Polish plays on social themes under director Eugeniusz Poreda.",
+    "ludzie": [
+      {"kto": "Eugeniusz Poreda", "rola": "dyrektor, reżyser i scenarzysta teatru", "wiki": null},
+      {"kto": "Ignacy Paderewski", "rola": "zbudował rotundę przy ul. Karowej (wg artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Comoedia", "url": "https://pl.wikipedia.org/wiki/Teatr_Comoedia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Istnienie rotundy przy ul. Karowej 18A dziś nie wynika z artykułu; pole istnieje oznacza tu zakończenie działalności teatru (1935). Adres dzisiejszy to adres z artykułu."
+  },
+  {
+    "id": "budynek-konopnickiej-6-teatr-imka",
+    "nazwa": "Budynek przy ul. Marii Konopnickiej 6 (pierwsza scena Teatru IMKA)",
+    "name_en": "Building at 6 Maria Konopnicka Street (first stage of Teatr IMKA)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marii Konopnickiej 6",
+    "adres_historyczny": null,
+    "lat": 52.22835,
+    "lon": 21.026019,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939–2020",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza scena Teatru IMKA mieściła się w przedwojennej siedzibie międzynarodowej organizacji YMCA w budynku przy ul. Marii Konopnickiej 6, przy placu Trzech Krzyży.",
+      "Teatr IMKA, prywatny teatr założony w marcu 2010 roku przez aktora Tomasza Karolaka, miał swoją pierwszą siedzibę w tym budynku.",
+      "W 2020 roku teatr stracił siedzibę przy ul. Konopnickiej 6 na rzecz Teatru Garnizon Sztuki, w wyniku wypowiedzenia umowy najmu przez właściciela budynku, z końcem czerwca 2020 roku.",
+      "Wypowiedzenie najmu wywołało skrajne emocje medialne.",
+      "Od czerwca 2020 roku scenę Teatru IMKA przeniesiono do budynku przy ul. Kocjana 3 w dzielnicy Bemowo."
+    ],
+    "ciekawostki": [
+      "W 2014 roku w koprodukcji powstał spektakl „Cienie. Eurydyka mówi:”, na deskach teatru zadebiutowała wtedy Kasia Nosowska, wokalistka zespołu Hey."
+    ],
+    "summary_en": "A pre-war building at 6 Maria Konopnicka Street, near Plac Trzech Krzyży in Warsaw, once housed the YMCA. It was the first stage of the private Teatr IMKA, founded in 2010 by actor Tomasz Karolak, until the company lost the lease in June 2020 and moved to Bemowo.",
+    "ludzie": [
+      {"kto": "Tomasz Karolak", "rola": "założyciel Teatru IMKA i jego dyrektor artystyczny", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Imka", "url": "https://pl.wikipedia.org/wiki/Teatr_Imka"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord opisuje budynek, a nie zespół teatralny; współrzędne pochodzą z nagłówka artykułu o teatrze (lokalizacja przyblizona). Obecna siedziba teatru to ul. Kocjana 3 w dzielnicy Bemowo, poza zakresem Śródmieścia w tej paczce."
+  },
+  {
+    "id": "kamienica-aleja-solidarnosci-93",
+    "nazwa": "Kamienica przy al. Solidarności 93 (Teatr Kamienica)",
+    "name_en": "Tenement at 93 Solidarności Avenue (Teatr Kamienica)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Solidarności 93",
+    "adres_historyczny": "ul. Leszno 13",
+    "lat": 52.243252,
+    "lon": 20.998424,
+    "lokalizacja": "dokladna",
+    "okres": "1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została zbudowana w 1910 roku w stylu secesyjnym; dawnym adresem był ul. Leszno 13.",
+      "Początkowo należała do bogatego żydowskiego handlarza skórą, Miszy Roga.",
+      "W listopadzie 1940 roku kamienica znalazła się w granicach warszawskiego getta; w latach 1940–1941 mieścił się w niej Urząd do Walki z Lichwą i Spekulacją.",
+      "W sierpniu 1942 roku kamienica, wraz z całą południową stroną ulicy, została wyłączona z getta.",
+      "Budynek został uszkodzony podczas II wojny światowej i odbudowany po 1945 roku do czwartego piętra; kamienica straciła oryginalną fasadę.",
+      "W miejscu jednej ze scen odnaleziono pozostałości Aron ha-kodesz, czyli szafy ołtarzowej służącej do przechowywania Tory.",
+      "W piwnicach, w miejscu dzisiejszej Piwnicy Warsza i sal restauracyjnych, Armia Krajowa w czasie powstania transportowała ludność żydowską z getta.",
+      "Teatr Kamienica otwarto 27 marca 2009 roku, w setną rocznicę wybudowania kamienicy."
+    ],
+    "ciekawostki": [
+      "Podczas budowy Piwnicy Warsza odkryto ponad stuletnie kafelki Villeroy Boch.",
+      "W 1988 roku broadwayowski reżyser Joseph Papp, rozmawiając z Emilianem Kamińskim, zapytał go, dlaczego nie założy własnego teatru. Na odpowiedź „W PRL-u?” usłyszał radę: „Jak się PRL skończy, to załóż teatr”."
+    ],
+    "summary_en": "This tenement at Solidarności Avenue 93 in Warsaw was built in 1910 in Art Nouveau style under the address Leszno 13. It was part of the Warsaw ghetto from late 1940, was damaged in the war and rebuilt, and since 2009 houses the Teatr Kamienica.",
+    "ludzie": [
+      {"kto": "Emilian Kamiński", "rola": "założyciel Teatru Kamienica (2009) wraz z żoną", "wiki": null},
+      {"kto": "Justyna Sieńczyłło", "rola": "współzałożycielka Teatru Kamienica", "wiki": null},
+      {"kto": "Joseph Papp", "rola": "broadwayowski reżyser, który zachęcił Emiliana Kamińskiego do założenia teatru", "wiki": null},
+      {"kto": "Misza Róg", "rola": "pierwszy właściciel kamienicy, bogaty żydowski handlarz skórą", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Leszno 13"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Kamienica", "url": "https://pl.wikipedia.org/wiki/Teatr_Kamienica"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy kamienicy; artykuł opisuje też teatr, który w niej działa."
+  },
+  {
+    "id": "teatr-kwadrat",
+    "nazwa": "Teatr Kwadrat im. Edwarda Dziewońskiego",
+    "name_en": "Kwadrat Theatre (named after Edward Dziewoński)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 138",
+    "adres_historyczny": null,
+    "lat": 52.236005,
+    "lon": 21.00863,
+    "lokalizacja": "dokladna",
+    "okres": "1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr Kwadrat powstał w 1974 roku z inicjatywy Komitetu ds. Radia i Telewizji; pierwszym dyrektorem został Edward Dziewoński.",
+      "W 1982 roku, podczas stanu wojennego, teatr przestał działać, a potem stał się drugą sceną Teatru Na Woli.",
+      "W 1985 roku, gdy Teatr Na Woli został zlikwidowany i oddał scenę Teatrowi Narodowemu, decyzją prezydenta Warszawy Mieczysława Dębickiego Teatr Kwadrat reaktywowano.",
+      "Dyrektorem był Edmund Karwański do 30 czerwca 2010 roku; od 15 lipca 2010 roku dyrektorem został Andrzej Nejman.",
+      "W konkursie na dyrektora (kadencja na 5 sezonów, od września 2023) zwyciężyła Ewa Wencel.",
+      "W 2022 roku Scenie Kameralnej teatru nadano imię Jana Kobuszewskiego."
+    ],
+    "ciekawostki": [
+      "W teatrze występowały m.in. Ewa Wiśniewska, Stanisława Celińska, Irena Kwiatkowska, Małgorzata Foremniak i Janusz Gajos."
+    ],
+    "summary_en": "Teatr Kwadrat, named after Edward Dziewoński, is a Warsaw theatre at Marszałkowska Street 138. Founded in 1974 under the Radio and Television Committee, it was suspended in 1982 and reactivated in 1985. Its repertoire is mainly comedies and farces.",
+    "ludzie": [
+      {"kto": "Edward Dziewoński", "rola": "pierwszy dyrektor teatru", "wiki": null},
+      {"kto": "Edmund Karwański", "rola": "dyrektor do 30 czerwca 2010", "wiki": null},
+      {"kto": "Andrzej Nejman", "rola": "dyrektor od 15 lipca 2010, odszedł w czerwcu 2023", "wiki": null},
+      {"kto": "Ewa Wencel", "rola": "dyrektorka wybrana w konkursie od września 2023", "wiki": null},
+      {"kto": "Mieczysław Dębicki", "rola": "prezydent Warszawy, który w 1985 roku zdecydował o reaktywacji teatru", "wiki": null},
+      {"kto": "Jan Kobuszewski", "rola": "patron Sceny Kameralnej od 2022", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Kwadrat", "url": "https://pl.wikipedia.org/wiki/Teatr_Kwadrat"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

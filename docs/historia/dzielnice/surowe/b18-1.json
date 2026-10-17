@@ -1,0 +1,146 @@
+[
+  {
+    "id": "centrum-stacja-metra",
+    "nazwa": "Centrum (stacja metra)",
+    "name_en": "Centrum metro station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Defilad",
+    "adres_historyczny": null,
+    "lat": 52.231389,
+    "lon": 21.010556,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa stacji została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983.",
+      "Stacja linii M1 metra znajduje się na placu Defilad, przy rondzie Romana Dmowskiego.",
+      "Jest najgłębszą stacją linii M1 (15 metrów od poziomu gruntu) i jest dwukondygnacyjna.",
+      "Ma dwa perony, każdy o szerokości 7 m, po bokach stacji, a tory metra pośrodku.",
+      "Architektem stacji była Jasna Strzałkowska-Ryszka.",
+      "Razem ze stacją metra pod placem Defilad powstał parking podziemny na 266 miejsc.",
+      "W październiku 2018 na stacji doszło do awarii schodów ruchomych, w wyniku której ranne zostały cztery osoby. Transportowy Dozór Techniczny orzekł, że przyczyną było zużycie materiałów i bieganie pasażerów po schodach."
+    ],
+    "ciekawostki": [
+      "Betonowa ściana na placyku przed południowym wejściem, nazywanym zwyczajowo patelnią, służy artystom do prezentacji prac (m.in. graffiti).",
+      "Projektowany tunel dla pasażerów z dworca Warszawa Śródmieście do stacji Centrum nie został zrealizowany."
+    ],
+    "summary_en": "Centrum is a metro station on line M1, under Plac Defilad next to Rondo Dmowskiego. It is the deepest station on the line, 15 metres below ground, with two levels and two platforms. Its name was set by a city council resolution in December 1983.",
+    "ludzie": [
+      {"kto": "Jasna Strzałkowska-Ryszka", "rola": "architekt stacji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Centrum_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje datę nadania nazwy (1983), nie datę otwarcia stacji."
+  },
+  {
+    "id": "centrum-chopinowskie",
+    "nazwa": "Centrum Chopinowskie",
+    "name_en": "Chopin Centre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tamka 43",
+    "adres_historyczny": null,
+    "lat": 52.2364,
+    "lon": 21.0225,
+    "lokalizacja": "dokladna",
+    "okres": "2004–dziś",
+    "istnieje": true,
+    "fakty": [
+      "2 kwietnia 2004 r. Minister Kultury Waldemar Dąbrowski oficjalnie ogłosił powołanie Centrum Chopinowskiego, którego stworzeniem miał zająć się Narodowy Instytut Fryderyka Chopina.",
+      "Instytut nabył działkę pod budowę Centrum w 2004 r.",
+      "9 lutego 2005 r. rozstrzygnięto międzynarodowy konkurs SARP na koncepcję architektoniczną; złożono 43 oferty, a wygrało biuro „Stelmach i Partnerzy Biuro Architektoniczne” z Lublina.",
+      "Uzyskanie pozwolenia na budowę trwało półtora roku. W kwietniu 2007 r. rozstrzygnięto przetarg; wygrała oferta Polimeksu-Mostostalu.",
+      "Budowa została sfinansowana z budżetu państwa i funduszy unijnych. Budynek oddano do użytku w marcu 2010 r.",
+      "Budynek stoi naprzeciwko Zamku Ostrogskich, w którym mieści się Muzeum Chopina.",
+      "Dolna część budynku została obłożona betonowymi prefabrykatami imitującymi fasadę dwupiętrowej kamienicy z połowy XIX w.; górna część jest przeszklona.",
+      "W 2016 r. budynek otrzymał Nagrodę Architektoniczną Prezydenta m.st. Warszawy w kategorii Budynek użyteczności publicznej 2001–2014."
+    ],
+    "ciekawostki": [
+      "Jury konkursu doceniło w koncepcji „niebanalność, ponadczasowość oraz dopasowanie do kontekstu architektonicznego miejsca”."
+    ],
+    "summary_en": "The Chopin Centre at ul. Tamka 43, opposite the Ostrogski Castle, houses Chopin heritage institutions. Its design was chosen in a 2005 competition, and the building opened in March 2010. The lower part imitates a 19th-century tenement facade in precast concrete, and the upper part is glazed.",
+    "ludzie": [
+      {"kto": "Waldemar Dąbrowski", "rola": "Minister Kultury, ogłosił powołanie Centrum (2004)", "wiki": null},
+      {"kto": "Stelmach i Partnerzy Biuro Architektoniczne", "rola": "autor zwycięskiej koncepcji architektonicznej (Lublin)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Chopinowskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Centrum_Chopinowskie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "centrum-gieldowe",
+    "nazwa": "Centrum Giełdowe",
+    "name_en": "Stock Exchange Centre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Książęca 4",
+    "adres_historyczny": null,
+    "lat": 52.230236,
+    "lon": 21.023436,
+    "lokalizacja": "dokladna",
+    "okres": "1998–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek biurowy zaprojektował Stanisław Fiszer wspólnie z Andrzejem M. Chołdzyńskim, wygrywając konkurs architektoniczny w 1994.",
+      "Budowa została zrealizowana w latach 1998–2000.",
+      "Od 2000 roku budynek jest siedzibą Giełdy Papierów Wartościowych w Warszawie.",
+      "Biurowiec był nominowany m.in. do nagrody Unii Europejskiej w konkursie architektury współczesnej im. Miesa van der Rohe.",
+      "W budynku mają siedzibę Giełda Papierów Wartościowych, Krajowy Depozyt Papierów Wartościowych i Towarowa Giełda Energii.",
+      "Budynkiem zarządza spółka Centrum Giełdowe S.A.; udziały w niej należą do Centrum Bankowo–Finansowego „Nowy Świat” S.A. (59,49%), GPW w Warszawie S.A. (24,79%) i KDPW S.A. (15,72%)."
+    ],
+    "ciekawostki": [
+      "Projekt wywodzi się z osobistych przekonań Fiszera na temat formy architektonicznej i sposobu budowania."
+    ],
+    "summary_en": "Centrum Giełdowe is an office building at ul. Książęca 4, designed by Stanisław Fiszer with Andrzej M. Chołdzyński after a 1994 competition. Built in 1998–2000, it has housed the Warsaw Stock Exchange since 2000.",
+    "ludzie": [
+      {"kto": "Stanisław Fiszer", "rola": "architekt, autor projektu", "wiki": null},
+      {"kto": "Andrzej M. Chołdzyński", "rola": "współautor projektu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Giełdowe", "url": "https://pl.wikipedia.org/wiki/Centrum_Gie%C5%82dowe"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "centrum-krolewska",
+    "nazwa": "Centrum Królewska",
+    "name_en": "Centrum Królewska office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 142",
+    "adres_historyczny": null,
+    "lat": 52.23807,
+    "lon": 21.00747,
+    "lokalizacja": "dokladna",
+    "okres": "1999–dziś",
+    "istnieje": true,
+    "fakty": [
+      "14-kondygnacyjny budynek biurowy przy ul. Marszałkowskiej 142.",
+      "Zbudowany w latach 1999–2002 według projektu pracowni Kuryłowicz & Associates, w miejscu budynku Orbisu, który stał tu w latach 1976–1999.",
+      "W 2018 roku wymieniono elewację: kamienne płyty zastąpiono nowym materiałem, spiekiem ceramicznym.",
+      "W budynku mają siedziby m.in. Ambasada Danii, Ministerstwo Sportu i Turystyki oraz Santander Bank Polska (od 2026 Erste Bank Polska).",
+      "W 2003 r. budynek dostał wyróżnienie na konferencji „Inteligentny Budynek – realizacja potrzeb inwestorów i użytkowników” oraz Nagrodę Specjalną Stowarzyszenia Producentów Betonu Towarowego w plebiscycie Polski Cement w Architekturze.",
+      "W 2004 r. zdobył nagrodę Życie w Architekturze w kategorii Ulubieniec Warszawy 2002–2003 (plebiscyt mieszkańców Warszawy)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Centrum Królewska is a 14-storey office building at ul. Marszałkowska 142. It was built in 1999–2002 on the site of an Orbis building that stood there from 1976 to 1999. Its facade was re-clad with ceramic material in 2018.",
+    "ludzie": [
+      {"kto": "Kuryłowicz & Associates", "rola": "pracownia projektowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Królewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Centrum_Kr%C3%B3lewska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule jest pisownia „Ministerstwo Sportu i Turystki”; tutaj poprawiono na „Turystyki”."
+  }
+]

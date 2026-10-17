@@ -1,0 +1,409 @@
+[
+  {
+    "id": "dom-prasy-w-warszawie",
+    "nazwa": "Dom Prasy w Warszawie",
+    "name_en": "Dom Prasy (Press House)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 3/5",
+    "adres_historyczny": null,
+    "lat": 52.2148,
+    "lon": 21.0206,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Około 1892 na działce między ulicami Marszałkowską a Polną wzniesiono zespół zabudowań fabryki dywanów Towarzystwa Akcyjnego Markus Baender i S-ka.",
+      "W 1926 na zlecenie koncernu wydawniczego „Dom Prasy” S.A. opracowano projekt przebudowy kompleksu fabryki na drukarnię i biura.",
+      "Budynek wzniesiono w latach 1927–1929 w stylu skrajnego funkcjonalizmu według wybranego w konkursie projektu Maksymiliana Goldberga i Hipolita Rutkowskiego.",
+      "Do 1939 przy Marszałkowskiej 3/5 mieściły się m.in. redakcje „Przeglądu Sportowego”, „Kina”, „Expressu Porannego” oraz „Kuriera Czerwonego-Dobrego Wieczoru”.",
+      "W listopadzie 1939 do budynku wprowadziła się redakcja „Nowego Kuriera Warszawskiego”.",
+      "24 października 1942 członkowie Gwardii Ludowej wrzucili przez okno granaty do hali drukarni; zamach był odwetem za egzekucję 50 więźniów Pawiaka.",
+      "Uroczyste uruchomienie drukarni i maszyny rotacyjnej odbyło się 8 kwietnia 1945 w obecności prezydenta Bolesława Bieruta.",
+      "W 2010 roku budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Pierwsza maszyna rotacyjna po wojnie została wydobyta z gruzów Drukarni Polskiej przy ul. Szpitalnej 12 i uruchomiona 6 kwietnia 1945.",
+      "W budynku drukowano „Życie Warszawy” od maja 1945; redakcja i drukarnia mieściły się tu do 1992."
+    ],
+    "summary_en": "Dom Prasy is a listed interwar functionalist print and office building at Marszałkowska 3/5, built in 1927–1929 for the Dom Prasy publishing concern on the site of a former carpet factory. It housed several Warsaw newspapers, including the wartime collaborationist paper Nowy Kurier Warszawski, and was the target of a 1942 resistance grenade attack.",
+    "ludzie": [
+      {"kto": "Maksymilian Goldberg", "rola": "architekt projektu (wybranego w konkursie)", "wiki": null},
+      {"kto": "Hipolit Rutkowski", "rola": "architekt projektu (wybranego w konkursie)", "wiki": null},
+      {"kto": "Mieczysław Ferszt ps. „Młot”", "rola": "dowódca oddziału Gwardii Ludowej, organizator zamachu z 24.10.1942", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Prasy Polskiej", "Prasa Polska (nazwa spółki od 1934)"],
+    "zrodla": [{"tytul": "Wikipedia: Dom Prasy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Prasy_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-studencki-riviera",
+    "nazwa": "Dom Studencki „Riviera”",
+    "name_en": "Riviera student hall",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Waryńskiego 12",
+    "adres_historyczny": null,
+    "lat": 52.2163,
+    "lon": 21.0161,
+    "lokalizacja": "dokladna",
+    "okres": "1962–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks domu studenckiego Politechniki Warszawskiej wzniesiono w latach 1962–1964 według projektu Kazimierza Thora, Józefa Bubicza i Czesława Molendy.",
+      "„Riviera” była pierwszym w Polsce „wysokościowcem” pełniącym funkcje akademika.",
+      "Zaprojektowano ją dla ok. 1200 studentów mieszkających w 2- i 3-osobowych pokojach.",
+      "W latach 70. XX w. na parterze mieściła się galeria sztuki Remont, a w latach 1983–1989 Galeria RR.",
+      "Od 1973 roku w kompleksie (ul. Waryńskiego 12a) mieści się klub Riviera Remont.",
+      "W latach 1992–1994 w budynku mieścił się nadajnik prywatnej telewizji Top Canal.",
+      "W 1999 zakończono modernizację: podwyższono standard pokoi, a budynek obłożono okładziną ze szkła refleksyjnego w kolorach granatowym i błękitnym; zmiana elewacji wzbudziła kontrowersje."
+    ],
+    "ciekawostki": [
+      "W podziemiach na początku lat 90. mieścił się klub Hades, a następnie studio nagraniowe Złota Skała."
+    ],
+    "summary_en": "Riviera, a student hall of the Warsaw University of Technology at Waryńskiego 12, was built in 1962–1964 as the first high-rise dormitory in Poland. It was later home to art galleries, a club and a television transmitter, and its 1999 glass cladding caused controversy.",
+    "ludzie": [
+      {"kto": "Kazimierz Thor", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Józef Bubicz", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Czesław Molenda", "rola": "architekt projektu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dom Studencki „Riviera” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Studencki_%E2%80%9ERiviera%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-towarowy-bracia-jablkowscy",
+    "nazwa": "Dom Towarowy Bracia Jabłkowscy",
+    "name_en": "Bracia Jabłkowscy department store",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Brackiej 25",
+    "adres_historyczny": null,
+    "lat": 52.232097,
+    "lon": 21.015389,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom towarowy przy ul. Brackiej 25 wzniesiono w latach 1913–1914; przedsiębiorstwo przeniosło się do niego 7 listopada 1914 roku z sąsiedniej kamienicy przy ul. Brackiej 23.",
+      "Do 1939 roku był jedynym tego typu obiektem w Warszawie oraz największym domem towarowym w Polsce; przedsiębiorstwo zatrudniało ok. 200 osób.",
+      "W czasie powstania warszawskiego przedsiębiorstwo wspierało powstańców odzieżą, obuwiem i żywnością; produkowano tu także amunicję.",
+      "W maju 1950 roku odebrano budynek rodzinie Jabłkowskich, a przedsiębiorstwo upaństwowiono.",
+      "W listopadzie 1951 w budynku otwarto Centralny Dom Dziecka.",
+      "W 1971 budynek domu towarowego został wpisany do rejestru zabytków.",
+      "W czerwcu 1996 roku spadkobiercy ostatnich właścicieli reaktywowali przedsiębiorstwo Bracia Jabłkowscy i po latach odzyskali budynek.",
+      "W czasie remontu elewacji w 2017 zmieniono kolor fasady z brązowego na pierwotny szary."
+    ],
+    "ciekawostki": [
+      "W obiekcie zainstalowano pierwszą szklaną windę w Warszawie.",
+      "Na trzecim piętrze otwarto kawiarnię, a w sezonie letnim na dachu serwowano kefiry i soki owocowe."
+    ],
+    "summary_en": "The Bracia Jabłkowscy department store at Bracka 25, built in 1913–1914, was for a time the largest department store in Poland. It was nationalised in 1950, and its heirs regained the building after 1996.",
+    "ludzie": [
+      {"kto": "Karol Jankowski", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Franciszek Lilpop", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Edmund Bartłomiejczyk", "rola": "autor projektu witraży na klatce schodowej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Heca (szczwalnia, teatr walk zwierząt) na tym miejscu przed budową"],
+    "zrodla": [{"tytul": "Wikipedia: Dom Towarowy Bracia Jabłkowscy", "url": "https://pl.wikipedia.org/wiki/Dom_Towarowy_Bracia_Jab%C5%82kowscy"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też nowy budynek biurowy przy rogu Brackiej i Chmielnej (2010–2011); nie wydzielono go jako osobnego rekordu."
+  },
+  {
+    "id": "dom-towarzystwa-ubezpieczeniowego-rosja",
+    "nazwa": "Dom Towarzystwa Ubezpieczeniowego „Rosja”",
+    "name_en": "Rosja insurance company building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska 124",
+    "lat": 52.2341,
+    "lon": 21.0097,
+    "lokalizacja": "przyblizona",
+    "okres": "1898–1944",
+    "istnieje": false,
+    "fakty": [
+      "Budynek wzniesiono w latach 1898–1899 według projektu Władysława Marconiego, który przerobił konkursowy projekt Piotra Brukalskiego i Ottona Gehliga, wyróżniony I nagrodą.",
+      "Gmach skomponowano z elementów włoskiego i francuskiego renesansu; do jego budowy użyto stali i betonu.",
+      "Na fasadzie umieszczono rzeźby Leopolda Wasilkowskiego: kobiety ślącej promienie, symbolu Elektryczności, oraz chłopa i robotnika, symbolizujących Rolnictwo i Przemysł.",
+      "Budynek nie ucierpiał w czasie obrony Warszawy we wrześniu 1939; został podpalony przez Niemców w 1944 roku po zakończeniu powstania warszawskiego.",
+      "W latach 1948–1950 na jego miejscu wzniesiono tzw. dom pod sedesami według projektu Bohdana Lacherta.",
+      "Pod koniec lat 90. zmieniono elewację budynku, likwidując powojenne „sedesowe” otwory.",
+      "Pozostałością po dawnym gmachu jest klatka schodowa z marmurowymi schodami i kutymi żelaznymi poręczami."
+    ],
+    "ciekawostki": [
+      "Nagość rzeźby kobiety wzbudzała kontrowersje wśród części mieszkańców.",
+      "Przez ok. dwie dekady był to jedyny odbudowany budynek na Marszałkowskiej między Alejami Jerozolimskimi a ul. Świętokrzyską."
+    ],
+    "summary_en": "The Rosja insurance company building at Marszałkowska 124 was a monumental Renaissance-style tenement from 1898–1899. It was burned by the Germans in 1944, and the postwar block built on its site was nicknamed 'Dom Pod Sedesami' because of its perforated facade.",
+    "ludzie": [
+      {"kto": "Władysław Marconi", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Piotr Brukalski", "rola": "autor konkursowego projektu (wyróżnionego I nagrodą)", "wiki": null},
+      {"kto": "Otto Gehlig", "rola": "autor konkursowego projektu (wyróżnionego I nagrodą)", "wiki": null},
+      {"kto": "Leopold Wasilkowski", "rola": "autor rzeźb na fasadzie", "wiki": null},
+      {"kto": "Bohdan Lachert", "rola": "architekt powojennego domu pod sedesami", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom pod Sedesami (nazwa powojennego budynku na tym miejscu)"],
+    "zrodla": [{"tytul": "Wikipedia: Dom Towarzystwa Ubezpieczeniowego „Rosja” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Towarzystwa_Ubezpieczeniowego_%E2%80%9ERosja%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu; budynek zniszczony, brak dzisiejszego adresu w artykule."
+  },
+  {
+    "id": "dom-firmy-gebethner-i-wolff",
+    "nazwa": "Dom firmy Gebethner i Wolff",
+    "name_en": "Gebethner and Wolff publishing house building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Zgoda 12 i ul. Sienkiewicza 9",
+    "lat": 52.2339,
+    "lon": 21.011,
+    "lokalizacja": "dokladna",
+    "okres": "1906–koniec lat 50. XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Budowę kamienicy rozpoczęto w 1904, jesienią 1905 uzyskano stan surowy, a w kwietniu 1906 oddano ją do użytku.",
+      "Na parterze mieściła się księgarnia, wyżej biura i wydawnictwo firmy Gebethner i Wolff – jednego z największych domów wydawniczych w Polsce.",
+      "Nakładem firmy ukazywały się m.in. „Tygodnik Illustrowany” i „Kurier Warszawski”.",
+      "Pod koniec września 1939 spłonęła górna część wieży oraz dach kamienicy, a podczas powstania warszawskiego gmach został zniszczony.",
+      "Po zakończeniu II wojny światowej ruiny zabezpieczono i odbudowano, z wyjątkiem narożnej wieży; otwarto też dawną księgarnię firmową.",
+      "Pod koniec lat 50. decyzją BOS kamienicę wyburzono, a na jej miejscu zbudowano blok mieszkalny z księgarnią „Nike” na parterze."
+    ],
+    "ciekawostki": [
+      "Wieża w narożniku stała nie na murze, lecz na potężnym metalowym słupie.",
+      "Do mieszkań prowadziła reprezentacyjna klatka schodowa z białymi marmurowymi schodami i windą elektryczną."
+    ],
+    "summary_en": "The Gebethner and Wolff building, a neo-Gothic and Renaissance-inspired corner tenement with an eight-storey tower, housed the publishing firm's bookshop and offices from 1906. It was damaged in 1939 and during the Warsaw Uprising, and was demolished in the late 1950s.",
+    "ludzie": [
+      {"kto": "Bronisław Brochwicz-Rogoyski", "rola": "architekt budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dom firmy Gebethner i Wolff w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_firmy_Gebethner_i_Wolff_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-im-wojciecha-sawickiego",
+    "nazwa": "Dom im. Wojciecha Sawickiego",
+    "name_en": "Wojciech Sawicki House",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zagórna 3",
+    "adres_historyczny": "ul. Zagórna 9",
+    "lat": 52.226389,
+    "lon": 21.041292,
+    "lokalizacja": "dokladna",
+    "okres": "1915–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom wzniesiono w 1915 z inicjatywy dyrektora Banku Handlowego w Warszawie Wojciecha Sawickiego jako sierociniec dla ubogich dzieci (przede wszystkim dziewcząt) z Powiśla.",
+      "Od 1919 w budynku, podarowanym magistratowi przez Wojciecha Sawickiego, mieściła się Szkoła Powszechna nr 29, uważana za jedną z najlepszych w mieście.",
+      "W 1940 nieruchomość zajęła zmotoryzowana jednostka Wehrmachtu.",
+      "W sierpniu 1944 w budynku zorganizowano szpital powstańczy (szpital polowy nr 2), którego organizatorem i komendantem był chirurg dr Jerzy Nowakowski.",
+      "16 września 1944, w czasie pacyfikacji Czerniakowa, Niemcy wtargnęli do budynku, w którym znajdowało się ok. 200 rannych; wielu z ok. 80 rannych, którzy pozostali w budynku, zamordowano.",
+      "Od 1991 nieruchomość znajduje się w trwałym zarządzie Kancelarii Sejmu.",
+      "W 1991 roku budynek został wpisany do rejestru zabytków.",
+      "W 2018 na działce przylegającej od wschodu i południa powstał budynek hotelu Ibis Styles Warszawa Centrum."
+    ],
+    "ciekawostki": [
+      "W latach 1930–1931 uczniem Szkoły Powszechnej nr 29 był Jan Bytnar, który dojeżdżał do niej z Piastowa.",
+      "Na fasadzie zachowały się dwie tablice: z napisem „Dom Imienia Wojciecha Sawickiego 1915” oraz z wizerunkiem Matki Boskiej Częstochowskiej."
+    ],
+    "summary_en": "The Wojciech Sawicki House at Zagórna 3 was built in 1915 as an orphanage for poor girls from Powiśle. It later housed a well-regarded school, served as a hospital during the Warsaw Uprising, and since 1991 has been used by the Chancellery of the Sejm.",
+    "ludzie": [
+      {"kto": "Wojciech Sawicki", "rola": "dyrektor Banku Handlowego, fundator domu", "wiki": null},
+      {"kto": "Jerzy Nowakowski", "rola": "chirurg, organizator i komendant szpitala powstańczego", "wiki": null},
+      {"kto": "Jan Bytnar", "rola": "uczeń Szkoły Powszechnej nr 29 (1930–1931)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zagórna 9 (adres przed zmianą numeru po II wojnie światowej)"],
+    "zrodla": [{"tytul": "Wikipedia: Dom im. Wojciecha Sawickiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_im._Wojciecha_Sawickiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-przy-alei-3-maja-2",
+    "nazwa": "Dom przy alei 3 Maja 2",
+    "name_en": "House at 3 Maja Avenue 2",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. 3 Maja 2",
+    "adres_historyczny": "aleja 3 Maja 2/4/6",
+    "lat": 52.2354,
+    "lon": 21.0351,
+    "lokalizacja": "dokladna",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Spółdzielnia Budowlano-Mieszkaniowa „Domy Spółdzielcze” powstała 4 maja 1923 roku z inicjatywy działaczy PPS: Kazimierza Pużaka, Tomasza Arciszewskiego i Jana Kwapińskiego.",
+      "Budowę domu, pod nazwą „Powiśle”, rozpoczęto w 1929 roku, a zakończono w 1931; projektantem był Wincenty Oczykowski, a kierownikiem budowy Jan Zacharzewski.",
+      "Dom ma 6–8 kondygnacji, 196 mieszkań w 11 klatkach schodowych i formę nierównobocznego bastionu.",
+      "W domu mieściło się archiwum PPS prowadzone przez Teresę Perlową oraz Robotnicze Towarzystwo Przyjaciół Dzieci.",
+      "W pierwszym dniu powstania warszawskiego, po załamaniu ataku na przyczółek mostu Poniatowskiego, w budynku odcięci zostali żołnierze AK 1138 i 1139 plutonu 3 kompanii zgrupowania „Konrad”; zostali rozstrzelani pod arkadami wiaduktu 2 sierpnia 1944.",
+      "W nocy 13 grudnia 1981 roku Milicja Obywatelska wyłamała drzwi mieszkania Elżbiety Regulskiej, w którym drukowano niezależne wydawnictwa, i internowała właścicielkę wraz ze Stanisławem Kusińskim.",
+      "11 listopada 2020 uczestnicy Marszu Niepodległości obrzucili dom płonącymi racami, próbując podpalić lokal Wydawnictwa „Dwie Siostry”; podpalono drzwi balkonowe lokalu dwa piętra niżej.",
+      "W 2009 roku dom uzyskał tytuł „Mister kwiatów 2009” w XXVI edycji konkursu „Warszawa w kwiatach”."
+    ],
+    "ciekawostki": [
+      "Do października 1943 w domu mieszkał Marek Hłasko ze swoją matką Marią.",
+      "W każdej z 11 klatek działa stylowa winda szwajcarskiej firmy Stigler; budynek jest znany z odtworzonych, zabytkowych wind."
+    ],
+    "summary_en": "The house at Aleja 3 Maja 2, built in 1929–1931 by the PPS-linked housing cooperative 'Domy Spółdzielcze', has 196 flats and an unusual bastion-shaped plan. It was home to the PPS archive and to underground publishing in the 1970s and 1980s, and was the site of a 1944 execution of Home Army soldiers.",
+    "ludzie": [
+      {"kto": "Kazimierz Pużak", "rola": "działacz PPS, inicjator spółdzielni", "wiki": null},
+      {"kto": "Tomasz Arciszewski", "rola": "działacz PPS, inicjator spółdzielni", "wiki": null},
+      {"kto": "Jan Kwapiński", "rola": "działacz PPS, inicjator spółdzielni", "wiki": null},
+      {"kto": "Wincenty Oczykowski", "rola": "architekt, projektant domu", "wiki": null},
+      {"kto": "Jan Zacharzewski", "rola": "kierownik budowy", "wiki": null},
+      {"kto": "Teresa Perlowa", "rola": "prowadziła archiwum PPS w domu", "wiki": null},
+      {"kto": "Elżbieta Regulska", "rola": "właścicielka mieszkania, w którym drukowano niezależne wydawnictwa", "wiki": null},
+      {"kto": "Marek Hłasko", "rola": "mieszkaniec do października 1943", "wiki": null},
+      {"kto": "Zbigniew Religa", "rola": "mieszkaniec w latach 1962–2009", "wiki": null}
+    ],
+    "dawne_nazwy": ["aleja 3 Maja 2/4/6 (przedwojenny adres)", "„Powiśle” (pierwotna nazwa domu)"],
+    "zrodla": [{"tytul": "Wikipedia: Dom przy alei 3 Maja 2 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_przy_alei_3_Maja_2_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w wyliczeniu mieszkańców podaje Teresę Perl (zastrzeliła się w domu 18/19 czerwca 1939) i Elżbietę Regulską-Chlebowską; w rekordzie nie wszystkie nazwiska."
+  },
+  {
+    "id": "domek-holenderski",
+    "nazwa": "Domek Holenderski",
+    "name_en": "Dutch House (Domek Holenderski)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Trzech Krzyży 4/6",
+    "adres_historyczny": null,
+    "lat": 52.2292,
+    "lon": 21.0263,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia budowli rozpoczyna się około 1776, kiedy Kazimierz Poniatowski rozpoczął realizację założeń ogrodowych przy dzisiejszej ul. Książęcej.",
+      "Posiadłość należała od 1776 do architekta Dominika Merliniego, który wzniósł na niej willę według własnego projektu, prawdopodobnie na początku lat 80. XVIII wieku.",
+      "Willa składała się z trzech członów: piętrowego środkowego z dachem dwuspadowym oraz dwóch niższych po bokach.",
+      "W połowie XIX wieku budynek został przebudowany, najprawdopodobniej według projektu Franciszka Marii Lanciego, i pełnił funkcję zaplecza warsztatowo-magazynowo-internatowego Instytutu Głuchoniemych.",
+      "W 1965 budynek został wpisany do rejestru zabytków.",
+      "Budynek pełni funkcję rezydencji ambasadora Irlandii."
+    ],
+    "ciekawostki": [
+      "Budynek wyróżnia się typowo neorenesansową, nieregularną bryłą."
+    ],
+    "summary_en": "The Dutch House, a palace on Plac Trzech Krzyży behind the Institute for the Deaf and Mute, began as an 18th-century villa of architect Dominik Merlini. In the mid-19th century it was remodelled into a neo-Renaissance workshop and dormitory block, and today it is the Irish ambassador's residence.",
+    "ludzie": [
+      {"kto": "Kazimierz Poniatowski", "rola": "rozpoczął założenia ogrodowe przy ul. Książęcej (ok. 1776)", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "architekt, autor willi", "wiki": null},
+      {"kto": "Franciszek Maria Lanci", "rola": "prawdopodobny projektant przebudowy w XIX w.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Domek Holenderski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Domek_Holenderski_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Datowania budowy i autorstwo przebudowy podane w artykule z zastrzeżeniem „prawdopodobnie”."
+  },
+  {
+    "id": "dotleniacz",
+    "nazwa": "Dotleniacz",
+    "name_en": "Dotleniacz (oxygenating art installation)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Grzybowski",
+    "adres_historyczny": null,
+    "lat": 52.2358,
+    "lon": 21.0031,
+    "lokalizacja": "dokladna",
+    "okres": "2007–2008",
+    "istnieje": false,
+    "fakty": [
+      "Dotleniacz – instalacja Joanny Rajkowskiej, wystawa Centrum Sztuki Współczesnej Zamek Ujazdowski – pojawił się na placu Grzybowskim w 2007.",
+      "Instalację stanowił sztuczny staw o powierzchni 150 m² i głębokości metra, wkomponowany w trawnik, z bulgoczącymi bąbelkami gazu i sztuczną mgiełką nad taflą wody.",
+      "Dotleniacz wygrał plebiscyt Wydarzenie Roku 2007 w Warszawie według jury dziennikarzy „Gazety Wyborczej”, a Joanna Rajkowska została nominowana do Człowieka Roku 2007.",
+      "Jesienią 2007 instalację rozebrano na zimę, a miasto obiecało jej powrót na wiosnę 2008.",
+      "Władze przygotowały plany zagospodarowania placu, na których nie było Dotleniacza, wbrew opiniom mieszkańców i protestom specjalistów od przestrzeni miejskiej.",
+      "Tomasz Gamdzyk, naczelnik wydziału estetyki przestrzeni publicznej w Biurze Architektury, uznał, że „mieszkańcy okolicy nie mogą zawłaszczać placu”.",
+      "W opisie konkursu na zagospodarowanie placu z 2008 znalazł się warunek umieszczenia oczka wodnego."
+    ],
+    "ciekawostki": [
+      "Woń ozonu, który w wodzie stawu rozkładał się na zwykły tlen, była charakterystyczna dla instalacji."
+    ],
+    "summary_en": "Dotleniacz was an oxygenated artificial pond installed by artist Joanna Rajkowska on Plac Grzybowski in 2007. It became a popular public space and won a 2007 'Event of the Year' vote, but the city dismantled it for winter and later planned the square without it.",
+    "ludzie": [
+      {"kto": "Joanna Rajkowska", "rola": "autorka instalacji", "wiki": null},
+      {"kto": "Wojciech Bartelski", "rola": "burmistrz dzielnicy Śródmieście, opinia przeciwko planom bez instalacji", "wiki": null},
+      {"kto": "Tomasz Gamdzyk", "rola": "naczelnik wydziału estetyki przestrzeni publicznej, Biuro Architektury", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dotleniacz", "url": "https://pl.wikipedia.org/wiki/Dotleniacz"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie mówi wprost, czy instalacja jest dziś na placu; pewne jest, że rozebrano ją jesienią 2007 (stąd istnieje: false)."
+  },
+  {
+    "id": "dworek-wojciecha-grabowskiego",
+    "nazwa": "Dworek Wojciecha Grabowskiego",
+    "name_en": "Wojciech Grabowski manor house",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska",
+    "lat": 52.224306,
+    "lon": 21.015556,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1835–1895",
+    "istnieje": false,
+    "fakty": [
+      "Murowany dworek przy ul. Marszałkowskiej wzniesiono ok. 1835 jako niemal dokładną, ale zmniejszoną replikę XVIII-wiecznego dworku „Pod filarkami”.",
+      "Był parterowy i dwutraktowy, miał dziewięcioosiową elewację frontową z gankiem wspartym na dwóch szeroko rozstawionych parach okrągłych filarów.",
+      "Pod koniec XIX wieku W. Adamski otworzył tu restaurację „Pod nowymi filarami”, nazwaną przez sentyment do nieistniejącego już dworku „Pod filarkami”, którego był ostatnim restauratorem.",
+      "W latach 1895–1897 na miejscu dworku wybudowano kamienicę Wiktoryna Kosmowskiego."
+    ],
+    "ciekawostki": [
+      "Dwór miał łamany dach ceramiczny z lukarnami, a środkowa lukarna była usytuowana na osi ganku."
+    ],
+    "summary_en": "The Wojciech Grabowski manor house on Marszałkowska was built around 1835 as a reduced replica of the 18th-century 'Pod filarkami' manor. It became a restaurant in the late 19th century and was replaced by a tenement house in 1895–1897.",
+    "ludzie": [
+      {"kto": "W. Adamski", "rola": "ostatni restaurator dworku „Pod filarkami”, założyciel restauracji „Pod nowymi filarami”", "wiki": null}
+    ],
+    "dawne_nazwy": ["„Pod filarkami” (XVIII-wieczny dworek, pierwowzór)", "„Pod nowymi filarami” (restauracja)"],
+    "zrodla": [{"tytul": "Wikipedia: Dworek Wojciecha Grabowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dworek_Wojciecha_Grabowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dworzec-centralny-im-stanislawa-moniuszki",
+    "nazwa": "Dworzec Centralny im. Stanisława Moniuszki",
+    "name_en": "Warsaw Central railway station",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jerozolimskie 54",
+    "adres_historyczny": null,
+    "lat": 52.228778,
+    "lon": 21.003333,
+    "lokalizacja": "dokladna",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dworzec Centralny to główny dworzec kolejowy w Warszawie i największy dworzec w Polsce; według kategoryzacji PKP ma najwyższą kategorię, Premium.",
+      "Dziennie korzysta z niego ok. 60 tys. osób, a rocznie ponad 24 mln.",
+      "Dworzec ukończono 5 grudnia 1975 i wkrótce przejął obsługę większości pociągów dalekobieżnych w Warszawskim Węźle Kolejowym.",
+      "Projekt Arseniusza Romanowicza powstał przy współpracy Piotra Szymaniaka; w trakcie budowy był wielokrotnie zmieniany, co odbiło się na jakości robót i funkcjonalności.",
+      "Budowę przyspieszono w związku z planowaną wizytą Leonida Breżniewa, a przy pracach pomagali też żołnierze Ludowego Wojska Polskiego.",
+      "Budowę sfinansowano m.in. kredytami od państw zachodnich, zaciągniętymi dzięki staraniom przywódcy PRL Edwarda Gierka.",
+      "Do 1944 centralnym dworcem Warszawy był Dworzec Główny, zniszczony przez Niemców po powstaniu warszawskim."
+    ],
+    "ciekawostki": [
+      "W czasie budowy dworca znaleziono bunkier pod Alejami Jerozolimskimi, o czym informowały media, w tym PAP.",
+      "Dach i niektóre instalacje wodnokanalizacyjne wykonano w pośpiechu, co wymagało późniejszych napraw."
+    ],
+    "summary_en": "Warsaw Central is the largest railway station in Poland and the main hub of the Warsaw rail network. Its monumental canopy-covered hall opened in December 1975 after a rushed construction timed to a Brezhnev visit, and it sits above the Warsaw Central tunnel.",
+    "ludzie": [
+      {"kto": "Arseniusz Romanowicz", "rola": "architekt projektu dworca", "wiki": null},
+      {"kto": "Piotr Szymaniak", "rola": "współpracownik projektu", "wiki": null},
+      {"kto": "Leonid Breżniew", "rola": "planowana wizyta, dla której przyspieszono budowę", "wiki": null},
+      {"kto": "Edward Gierek", "rola": "przywódca PRL, uzyskał kredyty na budowę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dworzec Centralny im. Stanisława Moniuszki", "url": "https://pl.wikipedia.org/wiki/Dworzec_Centralny_im._Stanis%C5%82awa_Moniuszki"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

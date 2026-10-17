@@ -1,0 +1,71 @@
+[
+  {
+    "id": "teatr-6-pietro",
+    "nazwa": "Teatr 6. piętro",
+    "name_en": "Teatr 6. piętro",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.231666666,
+    "lon": 21.006388888,
+    "lokalizacja": "dokladna",
+    "okres": "2010–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr mieści się w Pałacu Kultury i Nauki, w dawnej Sali Koncertowej na szóstym piętrze o powierzchni 840 m², z widownią na 476 foteli.",
+      "Teatr został założony w 2009 roku jako prywatna spółka Żebrowski & Korin ProSkene.",
+      "Działalność teatr rozpoczął 6 marca 2010 roku premierą komedii Woody’ego Allena Zagraj to jeszcze raz, Sam.",
+      "Pierwszy spektakl dla dzieci i młodzieży, Bromba w sieci w reżyserii Macieja Wojtyszki, miał premierę 8 marca 2014 roku.",
+      "Oprócz spektakli teatr realizuje projekty specjalne, m.in. cykl koncertów Wyższy Poziom Muzyki i cykl Teatr 6.piętro Koncertowo."
+    ],
+    "ciekawostki": [
+      "Nazwa teatru odnosi się do położenia na szóstym piętrze Pałacu Kultury i Nauki, co według artykułu uzasadnia tę nazwę."
+    ],
+    "summary_en": "Teatr 6. piętro is a private theatre in the former concert hall on the sixth floor of the Palace of Culture and Science in Warsaw's Śródmieście. It was founded in 2009 as a private company by Michał Żebrowski and Eugeniusz Korin and opened on 6 March 2010.",
+    "ludzie": [
+      {"kto": "Michał Żebrowski", "rola": "współwłaściciel, dyrektor naczelny", "wiki": null},
+      {"kto": "Eugeniusz Korin", "rola": "współwłaściciel, dyrektor artystyczny", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr 6. piętro", "url": "https://pl.wikipedia.org/wiki/Teatr_6._pi%C4%99tro"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł opisuje głównie zespół teatralny; rekord dotyczy sali w PKiN, w której teatr działa. Adres ulicy nie podany w artykule (siedziba w PKiN)."
+  },
+  {
+    "id": "teatr-ateneum-w-warszawie",
+    "nazwa": "Teatr Ateneum w Warszawie",
+    "name_en": "Ateneum Theatre in Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Stefana Jaracza",
+    "adres_historyczny": "ul. Czerwonego Krzyża 20",
+    "lat": 52.23722,
+    "lon": 21.03278,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teatr został założony w 1928 roku z inicjatywy Stefana Jaracza.",
+      "Siedzibą teatru stał się nowo wybudowany gmach Związku Zawodowego Pracowników Kolejowych przy ul. Czerwonego Krzyża 20 (współcześnie ul. Stefana Jaracza).",
+      "Budynek nie został zniszczony podczas obrony Warszawy we wrześniu 1939.",
+      "W październiku 1943 zaczął tam działać niemiecki teatr Kleines Theater der Stadt Warschau.",
+      "W październiku 2020 teatr uzyskał nową, czwartą scenę: Scena 20 z 222 fotelami na widowni, w budynku Związku Nauczycielstwa Polskiego przy ul. Wybrzeże Kościuszkowskie 35.",
+      "Od 2021 roku funkcje dyrektora teatru i dyrektora artystycznego pełni Artur Tyszkiewicz."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Teatr Ateneum im. Stefana Jaracza is a drama theatre in Warsaw, founded in 1928 on the initiative of Stefan Jaracz in a newly built railway workers' union building. The building survived the defence of Warsaw in September 1939, and from October 1943 a German theatre, Kleines Theater der Stadt Warschau, operated there. A fourth stage, Scena 20, opened in October 2020.",
+    "ludzie": [
+      {"kto": "Stefan Jaracz", "rola": "inicjator założenia teatru w 1928 roku", "wiki": null},
+      {"kto": "Artur Tyszkiewicz", "rola": "dyrektor teatru i dyrektor artystyczny od 2021", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kleines Theater der Stadt Warschau"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Teatr Ateneum w Warszawie", "url": "https://pl.wikipedia.org/wiki/Teatr_Ateneum_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Pominięto listy aktorów z artykułu. Numer domu obecnej siedziby nie podany w artykule."
+  }
+]

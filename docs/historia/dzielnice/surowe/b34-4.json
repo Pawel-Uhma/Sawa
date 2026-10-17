@@ -1,0 +1,46 @@
+[
+  {
+    "id": "wolf-zielna",
+    "nazwa": "Wolf Zielna (dawniej Zielna Point)",
+    "name_en": "Wolf Zielna office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zielna 41/43 (róg ul. Próżnej)",
+    "adres_historyczny": "dwie kamienice przed II wojną światową (na tym samym miejscu)",
+    "lat": 52.236527777,
+    "lon": 21.006111111,
+    "lokalizacja": "dokladna",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biurowiec na rogu ulic Zielnej i Próżnej przylega do dolnej części wieżowca PAST-y.",
+      "Przed II wojną światową w tym miejscu znajdowały się dwie kamienice.",
+      "Budynek zaprojektowano w 1996 roku w pracowni APA Kuryłowicz & Associates; architektami byli Stefan Kuryłowicz, Piotr Kuczyński, Katarzyna Flasińska-Rubik, Maria Saloni-Sadowska i Fryderyk Szymański.",
+      "Budynek powstał w latach 1997–1998; inwestorem było przedsiębiorstwo Wolf Immobilien Polska, a generalnym wykonawcą Por-Bud.",
+      "Pierwotnie budynek nosił nazwę handlową Zielna Point.",
+      "Od 2012 roku budynek jest siedzibą polskiego oddziału Bank of China.",
+      "Budynek ma 8 kondygnacji nadziemnych i 2 podziemne z 35 miejscami parkingowymi; powierzchnia całkowita wynosi 6110 m².",
+      "Marta Leśniakowska wybrała budynek do katalogu 800 najbardziej reprezentatywnych budynków Warszawy."
+    ],
+    "ciekawostki": [
+      "Ze względu na zaokrąglony narożnik, według Andrzeja Kicińskiego, budynek należy do grupy warszawskich budynków określanych jako „brzuchacze”.",
+      "Znalazł się też w katalogu wystawy „Plany na przyszłość” z 2000 roku."
+    ],
+    "summary_en": "Wolf Zielna, formerly Zielna Point, is an eight-storey office building at ul. Zielna 41/43 and Próżna, designed in 1996 by APA Kuryłowicz & Associates and built in 1997–1998. Since 2012 it has housed the Polish branch of Bank of China.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "architekt projektu (APA Kuryłowicz & Associates)", "wiki": null},
+      {"kto": "Piotr Kuczyński", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Katarzyna Flasińska-Rubik", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Maria Saloni-Sadowska", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Fryderyk Szymański", "rola": "architekt projektu", "wiki": null},
+      {"kto": "Marta Leśniakowska", "rola": "autorka wyboru budynku do katalogu 800 reprezentatywnych budynków Warszawy", "wiki": null},
+      {"kto": "Andrzej Kiciński", "rola": "cytowany krytyk architektury (określenie „brzuchacze”)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zielna Point"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wolf Zielna", "url": "https://pl.wikipedia.org/wiki/Wolf_Zielna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł przytacza opinie krytyków i ocenę architektoniczną; w rekordzie tylko fakty i cytowane określenia."
+  }
+]

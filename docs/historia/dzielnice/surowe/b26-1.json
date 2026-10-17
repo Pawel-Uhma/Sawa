@@ -1,0 +1,312 @@
+[
+  {
+    "id": "mury-obronne-warszawy",
+    "nazwa": "Mury obronne Warszawy",
+    "name_en": "Warsaw City Walls",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.249778,
+    "lon": 21.009528,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1280–dziś (odbudowa 1950–1963)",
+    "istnieje": true,
+    "fakty": [
+      "Prace nad pierwszymi odcinkami murów rozpoczęły się prawdopodobnie około 1280 roku za księcia mazowieckiego Konrada II.",
+      "Najwcześniejsza wzmianka w dokumencie pisanym o murach pochodzi z 1326 roku.",
+      "Wydany 23 listopada 1379 roku przywilej księcia Janusza I zobowiązał mieszkańców do otoczenia Warszawy murem.",
+      "Mury o długości około 1200 metrów zamknęły obszar o powierzchni ok. 8,5 ha.",
+      "W latach 1621–1624 powstał Wał Zygmuntowski, znacznie oddalony od murów miejskich.",
+      "W XVII wieku rozpoczęła się rozbiórka murów; w II połowie XIX wieku zostały prawie całkowicie zakryte przybudówkami i kamienicami czynszowymi.",
+      "Mury odbudowano w latach 1950–1963; najlepiej zachowane fragmenty biegną równolegle do ulicy Podwale."
+    ],
+    "ciekawostki": [
+      "Wieża Marszałkowska była najwyższa i miała kształt okrągły, a Wieża Biała była wieloboczna; pozostałe wieże i baszty były prostokątne."
+    ],
+    "summary_en": "The Warsaw City Walls were a double line of defensive walls around the Old Town, built from the 13th to the 16th century. The best-preserved fragments run parallel to Podwale street, and the walls were rebuilt in 1950–1963.",
+    "ludzie": [
+      {"kto": "Konrad II", "rola": "książę mazowiecki, za którego rządów zaczęto budowę pierwszych odcinków murów (ok. 1280)", "wiki": null},
+      {"kto": "Bolesław II", "rola": "książę, za którego rządów kończono budowę murów", "wiki": null},
+      {"kto": "Trojden I", "rola": "książę, za którego rządów kończono budowę murów", "wiki": null},
+      {"kto": "Janusz I", "rola": "książę; przywilej z 23 listopada 1379 zobowiązał mieszkańców do budowy murów", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Mury obronne w Warszawie", "url": "https://pl.wikipedia.org/wiki/Mury_obronne_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy całej sieci murów, nie jednego punktu; współrzędne z nagłówka artykułu (przybliżone dla rozciągłego obiektu). Adres dzisiejszy nie wynika z tekstu."
+  },
+  {
+    "id": "muzeum-adwokatury-polskiej",
+    "nazwa": "Muzeum Adwokatury Polskiej",
+    "name_en": "Museum of the Polish Bar",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętojerska 16",
+    "adres_historyczny": "ul. Lekarska 7 (pierwsza siedziba muzeum)",
+    "lat": 52.2503,
+    "lon": 21.0042,
+    "lokalizacja": "dokladna",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało powołane 20 listopada 1975 uchwałą Naczelnej Rady Adwokackiej z inicjatywy adwokata Witolda Bayera.",
+      "Pierwsza siedziba muzeum mieściła się przy ul. Lekarskiej 7.",
+      "Zbiory prezentowane są w dwóch salach w siedzibie Naczelnej Rady Adwokackiej przy ul. Świętojerskiej 16.",
+      "Zbiory gromadzą materiały dotyczące historii zawodu adwokata w Polsce od końca XVIII wieku.",
+      "Większość eksponatów przekazali adwokaci i ich rodziny.",
+      "Zwiedzanie jest możliwe po wcześniejszym telefonicznym uzgodnieniu terminu wizyty."
+    ],
+    "ciekawostki": [
+      "Jednym z najciekawszych eksponatów jest oryginał pozwu sądowego z 1756 roku skierowanego do podstarosty sądowego województwa mińskiego Kazimierza Mikołaja Święcickiego.",
+      "Muzeum ma egzemplarz Dziennika Ustaw RP nr 2 z 1 sierpnia 1944 roku, pierwszego dnia powstania warszawskiego, z ustawą o adwokaturze."
+    ],
+    "summary_en": "The Museum of the Polish Bar is one of the smallest museums in Warsaw. It was founded in 1975 and its collection on the history of the legal profession in Poland is displayed in two rooms at the seat of the National Bar Council on Świętojerska street.",
+    "ludzie": [
+      {"kto": "Witold Bayer", "rola": "adwokat, z jego inicjatywy powołano muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Adwokatury Polskiej", "url": "https://pl.wikipedia.org/wiki/Muzeum_Adwokatury_Polskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy siedziby muzeum (budynek NRA), a nie samej instytucji."
+  },
+  {
+    "id": "muzeum-archidiecezji-warszawskiej",
+    "nazwa": "Muzeum Archidiecezji Warszawskiej",
+    "name_en": "Museum of the Archdiocese of Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dziekania 1",
+    "adres_historyczny": "trzy kamienice przy ul. Kanonia (pierwsza siedziba, 1938)",
+    "lat": 52.24894,
+    "lon": 21.01414,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Placówka została założona w 1938 roku; pierwsza siedziba znajdowała się w trzech kamieniczkach przy ul. Kanonia.",
+      "Zbiory muzeum uległy zniszczeniu podczas powstania warszawskiego.",
+      "Placówka reaktywowała działalność w 1978 roku z inicjatywy prymasa Stefana Wyszyńskiego.",
+      "W 1980 roku otrzymała siedzibę w poklasztornym budynku ojców Trynitarzy przy kościele Świętej Trójcy.",
+      "W 2014 roku rozpoczęto przenoszenie zbiorów do pałacu Dziekana należącego do parafii archikatedralnej św. Jana Chrzciciela; w styczniu 2016 muzeum rozpoczęło działalność w nowej siedzibie.",
+      "W zbiorach jest ponad 20 tysięcy eksponatów, zgromadzonych wyłącznie drogą darowizn i depozytów."
+    ],
+    "ciekawostki": [
+      "W latach stanu wojennego muzeum było miejscem spotkań i imprez wspierających wolność słowa."
+    ],
+    "summary_en": "The Museum of the Archdiocese of Warsaw was founded in 1938 and reactivated in 1978 on the initiative of Cardinal Stefan Wyszyński. Since 2016 it has occupied the Dziekan Palace at ul. Dziekania 1, which was renovated for this purpose.",
+    "ludzie": [
+      {"kto": "Stefan Wyszyński", "rola": "prymas Polski; z jego inicjatywy muzeum reaktywowano w 1978", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Archidiecezji Warszawskiej", "url": "https://pl.wikipedia.org/wiki/Muzeum_Archidiecezji_Warszawskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy siedziby muzeum przy Dziekania; artykuł opisuje też wcześniejsze siedziby."
+  },
+  {
+    "id": "muzeum-azji-i-pacyfiku",
+    "nazwa": "Muzeum Azji i Pacyfiku im. Andrzeja Wawrzyniaka",
+    "name_en": "Museum of Asia and the Pacific",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Solec 24",
+    "adres_historyczny": "dawna rzeźnia miejska przy ul. Solec 24",
+    "lat": 52.23305556,
+    "lon": 21.03722222,
+    "lokalizacja": "dokladna",
+    "okres": "1854 (budynki) / 1973–dziś (muzeum)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało założone w 1973 roku i jest jedynym w Polsce posiadającym wyłącznie zbiory poświęcone kulturom Azji, Oceanii i Australii.",
+      "Muzeum mieści się w dwóch zabytkowych dwupiętrowych budynkach dawnej rzeźni miejskiej przy ul. Solec 24 oraz na parterze sąsiadującego apartamentowca.",
+      "Dwa bliźniacze, późnoklasycystyczne budynki z 1854 roku zaprojektował Piotr Frydrych.",
+      "Historia muzeum zaczęła się od prywatnej kolekcji Andrzeja Wawrzyniaka, który jako dyplomata pracował w Ambasadzie w Dżakarcie w latach 1961–1971.",
+      "Aktem notarialnym z 26 lutego 1973 roku Andrzej Wawrzyniak przekazał kolekcję na rzecz skarbu państwa.",
+      "W 1983 roku oddano do użytku pierwszy odremontowany budynek przy ul. Solec 24, a rok później drugi.",
+      "29 sierpnia 2017 roku Sejmik Województwa Mazowieckiego nadał muzeum imię Andrzeja Wawrzyniaka."
+    ],
+    "ciekawostki": [
+      "Główny punkt Oazy Azjatyckiej, ogrodu z obiektami o azjatyckim charakterze, to kopia wietnamskiej „Pagody na Jednej Nóżce”, buddyjskiej świątyni."
+    ],
+    "summary_en": "The Museum of Asia and the Pacific was founded in 1973 on the basis of a private collection from Indonesia. It occupies two 19th-century former municipal slaughterhouse buildings on Solec street and a 2013 residential building next to them.",
+    "ludzie": [
+      {"kto": "Andrzej Wawrzyniak", "rola": "założyciel kolekcji i dyrektor muzeum w latach 1973–2013", "wiki": null},
+      {"kto": "Janusz Kamocki", "rola": "etnograf-kustosz z Muzeum Etnograficznego w Krakowie, który podsunął pomysł przekształcenia kolekcji w muzeum", "wiki": null},
+      {"kto": "Piotr Frydrych", "rola": "projektant dwóch budynków z 1854 roku przy ul. Solec 24", "wiki": null},
+      {"kto": "Joanna Wasilewska", "rola": "dyrektorka muzeum w latach 2013–2023", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Archipelagu Nusantary"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Azji i Pacyfiku im. Andrzeja Wawrzyniaka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Azji_i_Pacyfiku_im._Andrzeja_Wawrzyniaka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-cechu-rzemiosl-skorzanych",
+    "nazwa": "Muzeum Cechu Rzemiosł Skórzanych im. Jana Kilińskiego",
+    "name_en": "Museum of the Leather Craftsmen's Guild",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wąski Dunaj 10",
+    "adres_historyczny": null,
+    "lat": 52.2494,
+    "lon": 21.0106,
+    "lokalizacja": "dokladna",
+    "okres": "1973–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało utworzone w 1973 roku z inicjatywy Cechu Rzemiosł Skórzanych.",
+      "Mieści się w kamienicy Szewców przy ul. Wąski Dunaj 10, z wejściem od Szerokiego Dunaju.",
+      "Wieloletnim kierownikiem muzeum była Lidia Lwow-Eberle.",
+      "Muzeum prezentuje dwa warsztaty, szewski i rymarski, wyposażone w pełne zestawy narzędzi z XIX wieku.",
+      "Wśród dokumentów cechowych jest Statut Cechu Rymarzy podpisany przez króla Stanisława Augusta Poniatowskiego oraz Księga przyjęć do prawa miejskiego z lat 1506–1638.",
+      "W zbiorach znajduje się klamra noszona przy pasie przez Jana Kilińskiego, znaleziona w piwnicach jego domu przy Szerokim Dunaju 5."
+    ],
+    "ciekawostki": [
+      "Muzeum posiada replikę tablicy, która znajdowała się nad wejściem do kamienicy nr 5, należącej do Jana Kilińskiego."
+    ],
+    "summary_en": "The Leather Craftsmen's Guild Museum in the Old Town was founded in 1973. It presents two historical leather workshops, guild documents and items connected to Jan Kiliński, housed in the Shoemakers' tenement at Wąski Dunaj 10.",
+    "ludzie": [
+      {"kto": "Jan Kiliński", "rola": "patron muzeum; jego dom stał przy Szerokim Dunaju 5, z którego pochodzą część eksponatów", "wiki": null},
+      {"kto": "Lidia Lwow-Eberle", "rola": "wieloletnia kierowniczka muzeum", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król, który podpisał Statut Cechu Rymarzy znajdujący się w zbiorach", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Cechu Rzemiosł Skórzanych", "url": "https://pl.wikipedia.org/wiki/Muzeum_Cechu_Rzemios%C5%82_Sk%C3%B3rzanych"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-domkow-lalek-gier-i-zabawek",
+    "nazwa": "Muzeum Domków Lalek, Gier i Zabawek",
+    "name_en": "Museum of Dollhouses, Games and Toys",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Podwale 15",
+    "adres_historyczny": "Pałac Kultury i Nauki (do końca października 2020)",
+    "lat": 52.248055555,
+    "lon": 21.009722222,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum mieści się przy ul. Podwale 15, gdzie eksponowane są dwie wystawy stałe: kolekcja kilku tysięcy zabawek oraz ponad 100 historycznych domów, szpitali, szkół i sklepików dla lalek.",
+      "Pierwotna siedziba muzeum została otwarta 1 czerwca 2016 roku (w Dzień Dziecka) w gmachu Pałacu Kultury i Nauki i działała tam do końca października 2020 roku.",
+      "Oddział wystaw czasowych przy ul. Krzywe Koło 2/4 był prowadzony do 21.06.2024 roku i został na stałe zamknięty.",
+      "Organizatorem muzeum jest Fundacja Belle Époque, a jego inicjatorka, Aneta Popiel-Machnicka, zajmuje się kolekcjonowaniem i konserwacją domków dla lalek od 2006 roku.",
+      "W 2021 roku muzeum otrzymało certyfikat „Najlepszy Produkt Turystyczny Mazowsza”."
+    ],
+    "ciekawostki": [
+      "Muzeum posiada jedną z większych w Europie kolekcji zabawek sakralnych."
+    ],
+    "summary_en": "The Museum of Dollhouses, Games and Toys has been at Podwale 15 since moving out of the Palace of Culture and Science in 2020. It displays several thousand toys and more than 100 historic dollhouses and miniature shops.",
+    "ludzie": [
+      {"kto": "Aneta Popiel-Machnicka", "rola": "założycielka i prezes Fundacji Belle Époque, inicjatorka powstania muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Domków dla Lalek"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Domków Lalek, Gier i Zabawek w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Domk%C3%B3w_Lalek%2C_Gier_i_Zabawek_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje głównie muzeum jako instytucję; rekord dotyczy jego siedziby przy Podwale 15."
+  },
+  {
+    "id": "muzeum-ewolucji-ipan",
+    "nazwa": "Muzeum Ewolucji Instytutu Paleobiologii PAN",
+    "name_en": "Museum of Evolution of the Institute of Paleobiology PAS",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Pałac Kultury i Nauki w Warszawie (Pałac Młodzieży)",
+    "adres_historyczny": null,
+    "lat": 52.23166667,
+    "lon": 21.00638889,
+    "lokalizacja": "dokladna",
+    "okres": "1968–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1968–1984 w salach Pałacu Kultury i Nauki była otwarta wystawa „Dinozaury z Pustyni Gobi”, zainicjowana przez Zofię Kielan-Jaworowską.",
+      "W 1984 roku Instytut Paleobiologii PAN przejął sale wystawowe w Pałacu Młodzieży i utworzył oddział Muzeum Ewolucji.",
+      "W 1985 roku otwarto stałą wystawę „Ewolucja na lądach”, prezentującą większość okazów z wypraw do Mongolii.",
+      "W 2001 roku otwarto wystawę o odkryciach paleontologicznych z Krasiejowa koło Opola.",
+      "W 2009 roku, z okazji 150-lecia pierwszego wydania dzieła Darwina, otwarto wystawę o wyjściu kręgowców na ląd.",
+      "Od 2009 roku wydawany jest popularnonaukowy „Rocznik Muzeum Ewolucji”."
+    ],
+    "ciekawostki": [
+      "Muzeum ma szkielety i jaja dinozaurów z Mongolii, zarówno oryginalne, jak i odlewy, m.in. Tarbosaurus i Deinocheirus."
+    ],
+    "summary_en": "The Museum of Evolution is a branch of the Institute of Paleobiology of the Polish Academy of Sciences, located in the Palace of Youth inside the Palace of Culture and Science. It grew out of an exhibition of dinosaur finds from the Gobi Desert shown there from 1968.",
+    "ludzie": [
+      {"kto": "Zofia Kielan-Jaworowska", "rola": "paleontolożka; zainicjowała wystawę „Dinozaury z Pustyni Gobi” i stałą ekspozycję z 1985", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Ewolucji Instytutu Paleobiologii Polskiej Akademii Nauk", "url": "https://pl.wikipedia.org/wiki/Muzeum_Ewolucji_Instytutu_Paleobiologii_Polskiej_Akademii_Nauk"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy sal w Pałacu Młodzieży w PKiN; adres PKiN nie występuje w artykule."
+  },
+  {
+    "id": "muzeum-farmacji",
+    "nazwa": "Muzeum Farmacji im. mgr Antoniny Leśniewskiej",
+    "name_en": "Museum of Pharmacy named after Antonina Leśniewska",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piwna 31/33",
+    "adres_historyczny": "ul. Marszałkowska 72 (kamienica Taubenhausa, do 1996); ul. Skierniewicka 16/20 (1996–2006)",
+    "lat": 52.2490349,
+    "lon": 21.0113414,
+    "lokalizacja": "dokladna",
+    "okres": "1985–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało otwarte 26 stycznia 1985 roku z inicjatywy Kazimierza Radeckiego, prezesa Oddziału Warszawskiego Polskiego Towarzystwa Farmaceutycznego.",
+      "Pierwotnie muzeum mieściło się w kamienicy Mathiasa Taubenhausa przy ul. Marszałkowskiej 72, gdzie od 1933 roku działała apteka Antoniny Leśniewskiej.",
+      "W 1996 roku przeniesiono je do siedziby CEFARM-u przy ul. Skierniewickiej 16/20.",
+      "Od kwietnia 2006 roku muzeum mieści się na parterze kamienicy przy ul. Piwnej 31/33, w której mieszkał m.in. architekt Tylman z Gameren.",
+      "Od 2002 roku placówka jest oddziałem Muzeum Warszawy.",
+      "W 2011 roku muzeum weszło w posiadanie najstarszych zachowanych w Warszawie mebli aptecznych z przełomu XVIII i XIX wieku, pochodzących z nieistniejącej kamienicy Ambroszkiewicza przy placu Trzech Krzyży."
+    ],
+    "ciekawostki": [
+      "Muzeum posiada kolekcję naczyń aptecznych z apteki działającej od 1602 roku przy Zamku Królewskim, odkrytych podczas badań archeologicznych."
+    ],
+    "summary_en": "The Museum of Pharmacy opened in 1985 and has been a branch of the Warsaw Museum since 2002. It is housed on the ground floor of a tenement at Piwna 31/33, where the architect Tylman van Gameren once lived.",
+    "ludzie": [
+      {"kto": "Antonina Leśniewska", "rola": "patronka muzeum; prekursorka emancypacji kobiet w farmacji, pierwsza Polka z tytułem prowizora, a potem magistra farmacji", "wiki": null},
+      {"kto": "Kazimierz Radecki", "rola": "prezes Oddziału Warszawskiego PTFarm, inicjator powstania muzeum", "wiki": null},
+      {"kto": "Marcin Olechowski", "rola": "prowizor; na jego zamówienie wykonano wyposażenie apteki z okresu międzywojennego", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "architekt, mieszkał w kamienicy przy ul. Piwnej 31/33", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Farmacji im. mgr Antoniny Leśniewskiej", "url": "https://pl.wikipedia.org/wiki/Muzeum_Farmacji_im._mgr_Antoniny_Le%C5%9Bniewskiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy kamienicy przy Piwnej, obecnej siedziby muzeum."
+  },
+  {
+    "id": "muzeum-fryderyka-chopina",
+    "nazwa": "Muzeum Fryderyka Chopina w Warszawie",
+    "name_en": "Fryderyk Chopin Museum",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Okólnik 1",
+    "adres_historyczny": null,
+    "lat": 52.236648,
+    "lon": 21.022962,
+    "lokalizacja": "dokladna",
+    "okres": "1955–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało utworzone w 1955 roku przez Towarzystwo im. Fryderyka Chopina i jest działem Narodowego Instytutu Fryderyka Chopina.",
+      "Mieści się w Zamku Ostrogskich przy ul. Okólnik 1.",
+      "Zbiory liczą ok. 7000 obiektów, w tym największy na świecie zbiór rękopisów kompozytora.",
+      "W 1999 roku część kolekcji została wpisana na listę UNESCO Pamięć Świata.",
+      "1 marca 2010 roku, z okazji 200. rocznicy urodzin kompozytora, otwarto nową multimedialną ekspozycję; koszt projektu wyniósł 81,5 mln zł.",
+      "W latach 1960–2014 oddziałem muzeum był Salonik Chopinów w Warszawie, a muzeum ma też oddział w Żelazowej Woli."
+    ],
+    "ciekawostki": [
+      "W sali Paryż znajduje się ostatni fortepian kompozytora firmy Pleyel (nr 14 810), na którym grał i komponował w latach 1848–1849."
+    ],
+    "summary_en": "The Fryderyk Chopin Museum, founded in 1955, is housed in the Ostrogski Castle at Okólnik 1 and is part of the National Fryderyk Chopin Institute. It holds one of the largest collections of Chopin's manuscripts and personal memorabilia.",
+    "ludzie": [
+      {"kto": "Fryderyk Chopin", "rola": "kompozytor; muzeum dokumentuje jego życie i twórczość", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Fryderyka Chopina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Fryderyka_Chopina_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy Zamku Ostrogskich, w którym mieści się muzeum."
+  }
+]

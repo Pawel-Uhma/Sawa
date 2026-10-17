@@ -1,0 +1,224 @@
+[
+  {
+    "id": "ulica-klonowa",
+    "nazwa": "Ulica Klonowa",
+    "name_en": "Klonowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Klonowa",
+    "adres_historyczny": "ul. Okopowa (1770–1876)",
+    "lat": 52.2126276,
+    "lon": 21.0228644,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1770 roku jako silnie załamana droga biegnąca wzdłuż usypywanych wtedy okopów Lubomirskiego; stąd pierwotna nazwa Okopowa.",
+      "Od 1772 roku od strony miasta wzdłuż drogi rozciągał się ogród królewskiego malarza Marcella Bacciarellego.",
+      "W latach 1819–20 zabudowano placyk pawilonem stajni i wozowni wielkiego księcia Konstantego; budowa manežu w latach 1823–24 wymusiła odsunięcie odcinka wału.",
+      "Okopowa od początku obsadzona była klonami; po 1876 roku od ich nazwy nadano obecną nazwę ulicy.",
+      "W 1884 roku Józef Maurycy Kamiński urządził na terenie dawnego ogrodu Bacciarellego (Bagateli) ogród zoologiczny.",
+      "W latach 1912–1913 według konkursowego projektu Henryka Juliana Gaya wzniesiono pod nr 16 gmach gimnazjum męskiego Towarzystwa Szkoły Mazowieckiej.",
+      "W okresie okupacji ulica znalazła się w obrębie wydzielonej szlabanami tzw. dzielnicy niemieckiej i jako jedna z niewielu ulic w centrum uniknęła strat w zabudowie.",
+      "W 1967 roku zakończono budowę hotelu Urzędu Rady Ministrów."
+    ],
+    "ciekawostki": [
+      "Stajnie belwederskie około 1930 roku przebudowano na rezydencję marszałka Edwarda Śmigłego-Rydza i hotel Urzędu Rady Ministrów."
+    ],
+    "summary_en": "Klonowa Street was laid out in 1770 along the Lubomirski entrenchments as Okopowa and renamed after its maples in 1876. It sits beside the Belweder palace grounds. The street was one of the few central streets to escape damage during the occupation.",
+    "ludzie": [
+      {"kto": "Marcello Bacciarelli", "rola": "królewski malarz, właściciel ogrodu wzdłuż ulicy od 1772", "wiki": null},
+      {"kto": "Jan Christian Kamsetzer", "rola": "projektant pawilonu w formie rotundy na terenie ogrodu", "wiki": null},
+      {"kto": "Jakub Kubicki", "rola": "architekt dwóch budynków przy ulicy (1819–1824)", "wiki": null},
+      {"kto": "Józef Maurycy Kamiński", "rola": "właściciel Bagateli, urządził ogród zoologiczny (1884)", "wiki": null},
+      {"kto": "Henryk Julian Gay", "rola": "autor konkursowego projektu gimnazjum (1912–1913)", "wiki": null},
+      {"kto": "Edward Śmigły-Rydz", "rola": "marszałek, rezydencja w przebudowanych stajniach belwederskich (ok. 1930)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Okopowa (1770–1876)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Klonowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Klonowa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-konwiktorska",
+    "nazwa": "Ulica Konwiktorska",
+    "name_en": "Konwiktorska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Konwiktorska",
+    "adres_historyczny": null,
+    "lat": 52.2556737,
+    "lon": 21.0050286,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na terenach należących w XVIII wieku do konwiktu jezuitów, założonego w 1752 roku jako szkoła dla młodzieży szlacheckiego pochodzenia; nazwę nadano oficjalnie w 1770 roku.",
+      "Po kasacie zakonu jezuitów konwikt został w 1777 roku rozwiązany przez Komisję Edukacji Narodowej, a grunty rozparcelowano.",
+      "Ok. 1780 roku ulicę przebito do ul. Bonifraterskiej.",
+      "Ok. 1780 roku kasztelan płocki Maksymilian Sierakowski wystawił pałac, zwany pałacem Sierakowskiego.",
+      "W latach 1854–56 wszystkie budynki parzystej strony zburzono w związku z poszerzeniem esplanady Cytadeli Warszawskiej.",
+      "W latach 1928–1935 u zbiegu z ul. Zakroczymską wzniesiono gmach Szkoły Przemysłu Graficznego im. Marszałka J. Piłsudskiego według projektu Czesława Przybylskiego.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku pałac Sierakowskiego został zburzony w wyniku bombardowań.",
+      "Pałac Sierakowskiego odbudowano w latach 1951–1954."
+    ],
+    "ciekawostki": [
+      "Stadion Polonii Warszawa powstał w 1928 roku; planowano go od 1916 roku."
+    ],
+    "summary_en": "Konwiktorska Street in Nowe Miasto took its name from the Jesuit boarding school (konwikt) founded in 1752. Its Sierakowski Palace, built around 1780, was destroyed in 1939 and rebuilt in 1951–1954. The Polonia Warsaw stadium is on the street.",
+    "ludzie": [
+      {"kto": "Antoni Maciej Sierakowski", "rola": "biskup inflancki, który kupił działkę przy ulicy", "wiki": null},
+      {"kto": "Maksymilian Sierakowski", "rola": "kasztelan płocki, inwestor pałacu (ok. 1780)", "wiki": null},
+      {"kto": "Efraim Schröger", "rola": "projektant siedziby konwiktu przy Bonifraterskiej (1772)", "wiki": null},
+      {"kto": "Czesław Przybylski", "rola": "projektant gmachu Szkoły Przemysłu Graficznego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Konwiktorska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Konwiktorska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-koszykowa",
+    "nazwa": "Ulica Koszykowa",
+    "name_en": "Koszykowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koszykowa",
+    "adres_historyczny": "ul. Koszyki (do ok. 1885)",
+    "lat": 52.2230183,
+    "lon": 21.0047542,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki ulicy wiążą się z założeniem urbanistycznym Osi Stanisławowskiej; polny trakt przekształcono w jedną z ulic odchodzących promieniście od placu Na Rozdrożu.",
+      "Ulica o nazwie Koszyki stanowiła odcinek drogi na terenie posiadłości i pałacu Koszyki, od którego wzięła nazwę.",
+      "W 1770 roku bieg ulicy od ul. Polnej wyznaczył wał Lubomirskiego.",
+      "Nazwę Koszyki na Koszykową zmieniono ok. 1885 roku.",
+      "W okresie okupacji niemieckiej ulicy nadano nazwę Lückstrasse, upamiętniającą Kurta Lücka.",
+      "Po wojnie, wraz z wytyczaniem placu Konstytucji, ulicę załamano; jej część zachodnia została włączona w ciąg ulicy Pięknej."
+    ],
+    "ciekawostki": [
+      "Dom oficerski Funduszu Kwaterunku Wojskowego przy Koszykowej 79a, w stylu funkcjonalnym, powstał w 1931 roku wg projektu Romualda Gutta i Józefa Jankowskiego."
+    ],
+    "summary_en": "Koszykowa Street runs west from Na Rozdrożu, one of the streets radiating from the square that formed the Stanisław Axis. It was named after the Koszyki palace estate and renamed in about 1885. Under the occupation it was called Lückstrasse.",
+    "ludzie": [
+      {"kto": "Kurt Lück", "rola": "patron niemieckiej nazwy Lückstrasse (okupacja)", "wiki": null},
+      {"kto": "Romuald Gutt", "rola": "autor projektu domu oficerskiego (1931)", "wiki": null},
+      {"kto": "Józef Jankowski", "rola": "autor projektu domu oficerskiego (1931)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koszyki (do ok. 1885)", "Lückstrasse (okupacja)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Koszykowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Koszykowa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-kozia",
+    "nazwa": "Ulica Kozia",
+    "name_en": "Kozia Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kozia",
+    "adres_historyczny": null,
+    "lat": 52.2436673,
+    "lon": 21.0140199,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w XIV wieku jako połączenie Traktu Czerskiego, czyli obecnego Krakowskiego Przedmieścia, i późniejszej ul. Senatorskiej.",
+      "W początkach XVI wieku przy ulicy zbudowano spichrze; drugą stronę stanowił ogród pałacu Prymasowskiego.",
+      "W latach 1779–1785 wzniesiono altanę pałacu Prymasowskiego (nr 11), autorstwa Efraima Szregera i Szymona Bogumiła Zuga; dziś mieści się w niej Muzeum Karykatury.",
+      "W latach 20. XIX wieku u zbiegu z Krakowskim Przedmieściem działała kawiarnia „Kawa u Brzezińskiej”, a jej częstym gościem był Fryderyk Chopin.",
+      "W XIX wieku na ulicy działało wiele hoteli, m.in. Zajazd Berdyczowski od 1815 roku (nr 3) oraz Hotel de Saxe od 1847 roku.",
+      "Do obecnej nazwy powrócono w 1919 roku.",
+      "10 sierpnia 1944 roku w Hotelu Saskim Niemcy rozstrzelali ponad 100 mieszkańców okolicznych domów.",
+      "Odbudowane po 1945 roku kamienice tworzą kameralne osiedle mieszkaniowe Zakładu Osiedli Robotniczych."
+    ],
+    "ciekawostki": [
+      "Nazwa ulicy w XIX wieku brzmiała także Junkierska (1900–1915), od szkoły junkrów rosyjskich w pałacu Prymasowskim."
+    ],
+    "summary_en": "Kozia Street links Krakowskie Przedmieście with the Senatorska area and has been part of the city since the 14th century. The Prymas Palace gazebo of 1779–1785 is now home to the Caricature Museum. Chopin frequented a café at its mouth in the 1820s.",
+    "ludzie": [
+      {"kto": "Fryderyk Chopin", "rola": "częsty gość kawiarni „Kawa u Brzezińskiej” (lata 20. XIX w.)", "wiki": null},
+      {"kto": "Efraim Szreger", "rola": "współautor altany pałacu Prymasowskiego (1779–1785)", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "współautor altany pałacu Prymasowskiego (1779–1785)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kozła", "Kozłowa", "Ku Pałacowi Księcia Prymasa", "Junkierska (1900–1915)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Kozia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kozia_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu. Artykuł podaje nazwisko architekta jako Efraim Szreger."
+  },
+  {
+    "id": "ulica-koscielna",
+    "nazwa": "Ulica Kościelna",
+    "name_en": "Kościelna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kościelna",
+    "adres_historyczny": null,
+    "lat": 52.2537049,
+    "lon": 21.0077558,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1408–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościelna jest jedną z ulic wytyczonych podczas lokacji Nowej Warszawy po roku 1408, kiedy to książę mazowiecki Janusz I Starszy nadał jej przywilej lokacyjny.",
+      "Początkowo ulica biegła jedynie wzdłuż kościoła Nawiedzenia Najświętszej Marii Panny, od którego wzięła nazwę.",
+      "Pierwsze domy murowane przy ulicy powstały w I połowie XVIII wieku; były to niewielka kamieniczka oraz pałac Mokronowskich.",
+      "Około 1770 roku u zbiegu z ul. Zakroczymską powstała wielka kamienica Jakuba Fontany.",
+      "W 1776 roku według projektu Szymona Bogumiła Zuga wybudowano przyuliczny pałacyk Teofili Dunin-Brzezińskiej.",
+      "W 1845 roku wybudowano drewniane schody łączące ulicę z ul. Rybaki.",
+      "Rok 1944 przyniósł całkowite zniszczenie zabudowy; ocalał jedynie fragment kościoła Nawiedzenia NMP."
+    ],
+    "ciekawostki": [
+      "Ulica wyróżniała się wysokim odsetkiem mieszkańców chrześcijan w porównaniu do sąsiednich ulic Nowego Miasta, zdominowanych przez ubogich Żydów."
+    ],
+    "summary_en": "Kościelna Street in Nowe Miasto was laid out after 1408 under a charter of Duke Janusz I the Elder and named after the Visitation church. Its buildings were destroyed in 1944, with only part of the church surviving.",
+    "ludzie": [
+      {"kto": "Janusz I Starszy", "rola": "książę mazowiecki, nadał ulicy przywilej lokacyjny po 1408 roku", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "autor wielkiej kamienicy na rogu z ul. Zakroczymską (ok. 1770)", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu pałacyku Teofili Dunin-Brzezińskiej (1776)", "wiki": null},
+      {"kto": "Teofila Dunin-Brzezińska", "rola": "inwestorka pałacyku (1776)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Kościelna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ko%C5%9Bcielna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-kozla",
+    "nazwa": "Ulica Koźla",
+    "name_en": "Koźla Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koźla",
+    "adres_historyczny": null,
+    "lat": 52.2520528,
+    "lon": 21.0071601,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1621–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w miejscu dawnego traktu do Zakroczymia, którego funkcję przejął ciąg ulic Freta i Zakroczymskiej.",
+      "W 1621 roku ulica została odcięta od Traktu Zakroczymskiego po usypaniu Wału Zygmuntowskiego.",
+      "Ulicę skrócono po osiedleniu się w 1647 roku franciszkanów na posesji u zbiegu Franciszkańskiej i Zakroczymskiej.",
+      "Nazwa, nadana urzędowo w 1770 roku, najprawdopodobniej wiąże się z nieruchomością kamedułów, gdzie trzymali oni kozy.",
+      "W 1819 roku posesję nr 9 nabyli książęta Józef i Leon Czetwertyńscy, którzy 10 lat później urządzili na niej popularny Hotel Płocki.",
+      "W latach 1914–16 z wykorzystaniem części murów kościoła św. Jerzego wzniesiono ogromną halę targową, zwaną Halą Świętojerską lub Bazarem Feinkinda; projekt wykonał Artur Friedman.",
+      "W listopadzie 1940 roku ulica znalazła się w granicach getta; w grudniu 1941 roku wyłączono ją wraz z całym Nowym Miastem.",
+      "Cała zabudowa została spalona podczas powstania warszawskiego i wyburzona po roku 1946."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Koźla Street in Nowe Miasto was cut off from the Zakroczym road in 1621 and shortened in 1647 when the Franciscans settled at its end. The Świętojerska Hall, built in 1914–16 on the walls of St George's church, stood on the street. The buildings were burned in 1944 and demolished after 1946.",
+    "ludzie": [
+      {"kto": "Artur Friedman", "rola": "autor projektu hali targowej (1914–16)", "wiki": null},
+      {"kto": "Józef Czetwertyński", "rola": "książę, nabywca posesji nr 9 (1819)", "wiki": null},
+      {"kto": "Leon Czetwertyński", "rola": "książę, nabywca posesji nr 9 (1819)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Koźla w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ko%C5%BAla_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  }
+]

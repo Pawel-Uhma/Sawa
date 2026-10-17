@@ -1,0 +1,306 @@
+[
+  {
+    "id": "ulica-agrykola",
+    "nazwa": "Ulica Agrykola",
+    "name_en": "Agrykola Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Agrykola",
+    "adres_historyczny": null,
+    "lat": 52.2187648, "lon": 21.0255056,
+    "lokalizacja": "przyblizona",
+    "okres": "1778–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w latach 1778–1779 jako nową drogę dojazdową do Łazienek Królewskich.",
+      "Podczas budowy wzniesiono w jej ciągu kamienny most, przedłużony w 1788 roku o dwa przęsła.",
+      "W 1788 roku, w 105. rocznicę odsieczy wiedeńskiej, przy moście odsłonięto pomnik Jana III Sobieskiego z fundacji króla Stanisława Augusta.",
+      "Nazwa pochodzi od nazwiska podpułkownika Karola Ludwika Agricoli, który kierował pracami przy budowie ulicy.",
+      "W 1819 roku u zbiegu z Alejami Ujazdowskimi utworzono Ogród Botaniczny.",
+      "Po 1907 roku w górnym odcinku ulicy zainstalowano latarnie gazowe, działające do dziś.",
+      "W 1945 w burzowcu pod ulicą znaleziono zwłoki 42 osób, które zginęły tam w 1944 roku w czasie powstania warszawskiego.",
+      "W 1973 roku ulica jako założenie urbanistyczne została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Nachylenie ulicy sprawiało, że przez wiele lat po wojnie służyła mieszkańcom Warszawy za naturalny tor saneczkowy.",
+      "Około 1952 roku odcinek od ul. Myśliwieckiej do ul. Czerniakowskiej nazwano ulicą Szwoleżerów."
+    ],
+    "summary_en": "Agrykola Street in Śródmieście was laid out in 1778–1779 as a new access road to the Royal Łazienki Park and named after the lieutenant colonel Karol Ludwik Agricola, who supervised its construction. A monument to John III Sobieski was unveiled beside its stone bridge in 1788, and the street was listed as a historic urban layout in 1973.",
+    "ludzie": [
+      {"kto": "Karol Ludwik Agricola", "rola": "podpułkownik, kierował budową ulicy; od jego nazwiska pochodzi nazwa", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król; fundator pomnika Jana III Sobieskiego przy moście w 1788 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Agrykola w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Agrykola_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-aleksandra-fredry",
+    "nazwa": "Ulica Aleksandra Fredry",
+    "name_en": "Aleksander Fredro Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Aleksandra Fredry",
+    "adres_historyczny": null,
+    "lat": 52.242112, "lon": 21.0098805,
+    "lokalizacja": "przyblizona",
+    "okres": "1876–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1876 roku na terenach dawnej posesji pałacu Brühla; biegnie od ul. Wierzbowej i kończy się ślepo w Ogrodzie Saskim.",
+      "Zwana początkowo Brylowską, od 1879 roku nosiła imię Pawła Kotzebue, namiestnika Królestwa Polskiego.",
+      "Obecna nazwa została nadana w październiku 1916 roku.",
+      "W 1885–1886 pałac Brühla otrzymał od strony ulicy nowe wejście, wiodące do biur urzędu telegraficznego.",
+      "W latach 1896–1897 pod nr 6 powstał gmach Banku Zachodniego, zachowany do dziś.",
+      "W latach 1932–1936 pałac Brühla zaadaptowano na siedzibę Ministerstwa Spraw Zagranicznych, co zmieniło otoczenie ulicy.",
+      "W 1944 Niemcy spalili przy ulicy cztery kamienice, wysadzili w powietrze pałac Brühla oraz willę ministra Becka."
+    ],
+    "ciekawostki": [
+      "W maju 1940 okupacyjne władze niemieckie zmieniły nazwę ulicy na Parkstrasse.",
+      "Od 1932 roku w willi przy pałacu Brühla rezydował minister Józef Beck."
+    ],
+    "summary_en": "Aleksander Fredro Street is a short street opened in 1876 on the former grounds of the Brühl Palace; it ends blindly in the Saxon Garden. Its banks, telegraph office and hotel gave it an upscale urban character before the German occupation, when it was largely destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Paweł Kotzebue", "rola": "namiestnik Królestwa Polskiego, de facto pierwszy generał-gubernator warszawski; patron ulicy od 1879 roku", "wiki": null},
+      {"kto": "Józef Beck", "rola": "minister, rezydował w willi dobudowanej do pałacu Brühla", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Brylowska (od 1876)",
+      "ulica Pawła Kotzebue (od 1879)",
+      "Parkstrasse (maj 1940)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Aleksandra Fredry w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Aleksandra_Fredry_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bagatela",
+    "nazwa": "Ulica Bagatela",
+    "name_en": "Bagatela Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bagatela",
+    "adres_historyczny": null,
+    "lat": 52.213673, "lon": 21.0224925,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XVIII/XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na przełomie XVIII/XIX wieku jako droga od traktu mokotowskiego do wąwozu przy Belwederze; pierwotnie nosiła nazwę Okopowa.",
+      "Ok. 1780 roku Marcello Bacciarelli zbudował przy ulicy pawilon ogrodowy, przebudowany w latach 1789–1793 na willę według projektu Jana Chrystiana Kamsetzera.",
+      "W 1818 roku willę odkupił Szymon Chovot i założył tu rezydencję ogródkową „Bagatela”, która w 1870 roku dała nazwę całej ulicy.",
+      "W latach 1884–1890 zachodnia część ulicy została przekształcona w ogród zoologiczny, później park.",
+      "W 1908 roku ulicą pojechały tramwaje elektryczne.",
+      "W 1921 roku w kamienicy Wildera urodził się Krzysztof Kamil Baczyński; tablicę upamiętniającą odsłonięto w 1981 roku.",
+      "W 1938 roku władze Szwecji wybudowały pod nr 3 poselstwo."
+    ],
+    "ciekawostki": [
+      "W okresie PRL w kamienicy Adama Bromke (nr 14) mieścił się pierwszy w Polsce Klub Międzynarodowej Prasy i Książki.",
+      "Tablica Tchorka na trawniku u zbiegu z Alejami Ujazdowskimi upamiętnia egzekucje ludności cywilnej w pierwszych dniach powstania warszawskiego."
+    ],
+    "summary_en": "Bagatela Street in Śródmieście ran from the Mokotów road toward the Belweder ravine. It took its name in 1870 from the garden residence 'Bagatela', established in 1818 in a villa that Marcello Bacciarelli had begun around 1780. Most of its buildings survived World War II, and the Swedish embassy was built here in 1938.",
+    "ludzie": [
+      {"kto": "Marcello Bacciarelli", "rola": "zbudował przy ulicy pawilon ogrodowy ok. 1780 roku", "wiki": null},
+      {"kto": "Szymon Chovot", "rola": "w 1818 roku odkupił willę i założył rezydencję „Bagatela”", "wiki": null},
+      {"kto": "Krzysztof Kamil Baczyński", "rola": "urodził się w 1921 roku w kamienicy Wildera", "wiki": null}
+    ],
+    "dawne_nazwy": ["Okopowa (pierwotna nazwa)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bagatela w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bagatela_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-bagno",
+    "nazwa": "Ulica Bagno",
+    "name_en": "Bagno Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bagno",
+    "adres_historyczny": null,
+    "lat": 52.2360025, "lon": 21.0067052,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w XVIII wieku na terenie po osuszonych mokradłach; nazwę oficjalnie nadano w 1770 roku.",
+      "Od połowy XIX wieku do II wojny światowej działało przy ulicy targowisko ze starzyzną i żelastwem, nazywane Pociejowem.",
+      "W listopadzie 1940 ulica w całości znalazła się w granicach warszawskiego getta.",
+      "W marcu 1941 z dzielnicy zamkniętej wyłączono parzystą stronę ulicy, a mur getta przesunięto na jej środek.",
+      "W sierpniu 1942 w czasie wielkiej akcji deportacyjnej ulica wraz z tzw. małym gettem została włączona do „aryjskiej” części miasta.",
+      "W 1962 roku zapadła decyzja o wyburzeniu całej zabudowy ulicy; na jej miejscu powstało osiedle Grzybów I.",
+      "W czasach PRL ulica dała nazwę kwartałowi kamienic i pawilonów handlowych, będącemu rzadkim skupieniem małych prywatnych sklepów i warsztatów."
+    ],
+    "ciekawostki": [
+      "W kawiarence w pawilonach zbierali się tzw. cinkciarze; Bagno było głównym ośrodkiem nielegalnego wówczas handlu walutami.",
+      "W powieści „Zły” (1955) Leopolda Tyrmanda przy ulicy znajdowały się magazyny Spółdzielni Pracy „Woreczek”; ulicę Bagno widać też w scenie komedii „Miś” (1981) Stanisława Barei."
+    ],
+    "summary_en": "Bagno Street in Śródmieście was laid out in the 18th century on drained marshland and officially named in 1770. Almost entirely within the Warsaw Ghetto from 1940, it was cleared in the 1960s for the Grzybów I housing estate. In the PRL era the surrounding block of small shops and workshops was a known centre of illegal currency trading.",
+    "ludzie": [
+      {"kto": "Leopold Tyrmand", "rola": "autor powieści „Zły” (1955), której akcja toczy się m.in. przy tej ulicy", "wiki": null},
+      {"kto": "Bohdan Gniewiewski", "rola": "autor projektu osiedla Grzybów I, które powstało na miejscu ulicy", "wiki": null},
+      {"kto": "Jan Bogusławski", "rola": "autor projektu osiedla Grzybów I", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bagno w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bagno_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-barokowa",
+    "nazwa": "Ulica Barokowa",
+    "name_en": "Barokowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Barokowa",
+    "adres_historyczny": null,
+    "lat": 52.2477187, "lon": 21.0047746,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona około 1937 roku jako uliczka wiodąca do Ogrodu Krasińskich.",
+      "Jej początek wyznacza kamienica Antoniego Lasockiego, wybudowana w 1780 roku, znana jako Na Lasockiem (ul. Długa 28).",
+      "W 1938 roku wzniesiono gmach Miejskich Szkół Powszechnych (nr 7) według projektu Karola Jankowskiego i Romualda Gutta.",
+      "W czasie okupacji Niemcy zaadaptowali gmach szkół na szpital Wehrmachtu (Reserve Lazarett IV).",
+      "6 sierpnia 1944 do gmachu szkoły przy ul. Barokowej 7 przeniosła się Komenda Główna AK; 13 sierpnia przeniosła się stamtąd do pałacu Raczyńskich.",
+      "1 września 1944 ulicę opanowali Niemcy.",
+      "Cała zabudowa ulicy została zniszczona w 1944 roku; kamienicę Na Lasockiem odbudowano z licznymi zmianami."
+    ],
+    "ciekawostki": [
+      "Pierwszego dnia powstania warszawskiego szpital na ulicy stał się celem ataku oddziałów polskich; natarcie zostało odparte, a Niemcy w nocy z 1 na 2 sierpnia wycofali się do pałacu Krasińskich."
+    ],
+    "summary_en": "Barokowa Street in Śródmieście was laid out around 1937 as a short street leading to the Krasiński Garden. During the occupation its school buildings became a Wehrmacht hospital, and in August 1944 the Home Army Main Command was based here for about a week before moving to the Raczyński Palace. The street was destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Antoni Lasocki", "rola": "właściciel kamienicy Na Lasockiem z 1780 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Barokowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Barokowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule błędnie 'do wybuchu I wojny światowej' przy opisie zabudowy z lat 1937–1939; w rekordzie zapisano tak, jak wynika z kontekstu (przed II wojną)."
+  },
+  {
+    "id": "ulica-bednarska",
+    "nazwa": "Ulica Bednarska",
+    "name_en": "Bednarska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bednarska",
+    "adres_historyczny": null,
+    "lat": 52.245838, "lon": 21.0205036,
+    "lokalizacja": "przyblizona",
+    "okres": "XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W miejscu ulicy był wąwóz, którym płynął strumień i biegła droga do Wisły; gdy w XV wieku powstały tu pierwsze zabudowania, drogę nazwano ulicą Gnojową.",
+      "Obecną nazwę ulica otrzymała przed 1743 rokiem; oficjalnie nadano ją w 1770 roku.",
+      "W 1755 roku Komisja Brukowa wybudowała u wylotu ulicy groblę i drewniany pomost; wzdłuż niego wykopano basen portowy długości ponad 140 metrów.",
+      "W latach 1775–1864 ulica była ważną arterią, drogą dojazdową do budowanych u jej wylotu mostów łyżwowych.",
+      "Na początku XIX wieku wzniesiono tu klasycystyczne kamienice, w których otwarto kilka hoteli, m.in. Bawarski pod nr 7.",
+      "Punktem zwrotnym w historii ulicy było otwarcie w 1864 roku mostu Kierbedzia; po zlikwidowaniu mostu łyżwowego ulica stała się spokojna i położona na uboczu.",
+      "1 sierpnia 1944 Niemcy na placu przed budynkiem nr 1/3 rozstrzelali 25 mieszkańców tego domu, a ich zwłoki wrzucili do Wisły.",
+      "W latach 1948–1949 zabudowę ulicy odtworzono w ramach budowy osiedla Mariensztat."
+    ],
+    "ciekawostki": [
+      "W 1775 roku nad samą Wisłą wybudowano łaźnie należące do kasztelana łukowskiego Jacka Jezierskiego, które stały się popularnym miejscem schadzek.",
+      "W latach 1832–1835 przy ulicy wzniesiono zachowany do dziś budynek łaźni należący do Teodozji Majewskiej."
+    ],
+    "summary_en": "Bednarska Street in Śródmieście runs down toward the Vistula, where a ravine with a stream once lay. Its name, probably after the coopers who lived along it, was in use before 1743 and officially given in 1770. A 1864 bridge left the street quiet, and on 1 August 1944 Germans executed 25 residents of no. 1/3.",
+    "ludzie": [
+      {"kto": "Jacek Jezierski", "rola": "kasztelan łukowski, właściciel łaźni z 1775 roku", "wiki": null},
+      {"kto": "Teodozja Majewska", "rola": "właścicielka budynku łaźni z lat 1832–1835", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica Gnojowa (w XV wieku)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Bednarska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bednarska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-belwederska",
+    "nazwa": "Ulica Belwederska",
+    "name_en": "Belwederska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Belwederska",
+    "adres_historyczny": null,
+    "lat": 52.2068599, "lon": 21.0307319,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w XVII wieku jako droga z Warszawy do Wilanowa; w 1593 roku wzniesiono przy niej drewniany kościół św. Anny i Małgorzaty, istniejący do 1818 roku.",
+      "Tuż obok kościoła stała willa Krzysztofa Zygmunta Paca zwana Belwederem; od nazwy tej posiadłości w latach 80. XVIII wieku utworzono nazwę ulicy.",
+      "W 1780 roku w rejonie ul. Grottgera powstał Zameczek z Salonem, pawilon w formie ruiny, którego autorem projektu był Szymon Bogumił Zug.",
+      "Od drugiej połowy XIX wieku przy ulicy działały liczne fabryki; do większych należała Fabryka Naczyń Mleczarskich „K. Miller i S-ka”, zatrudniająca ponad 100 osób.",
+      "W 1881 roku u zbiegu z ul. Sułkowicką wybudowano schronisko dla paralityków należące do gminy Ewangelicko-Augsburskiej.",
+      "W 1952 roku wyburzono XVIII-wieczny Zameczek z Salonem Szustrów, a po 1966 roku willę gen. Władysława Sikorskiego.",
+      "W 1955 roku przy ulicy wzniesiono monumentalny gmach Ambasady ZSSR, zaprojektowany przez Wielikanowa i Rożena.",
+      "W październiku 2024 roku oddano do użytku linię tramwajową do Wilanowa, której budowę zakontraktowano w marcu 2022 roku."
+    ],
+    "ciekawostki": [
+      "Kolejka wilanowska, zaczątek której powstał w pobliżu Promenady, kursowała ulicą Belwederską i dalej przez Sadybę do Wilanowa w latach 1892–1957.",
+      "Uchwałą z 13 października 2022 roku część ciągu pieszo-jezdnego po zachodniej stronie ulicy, między ul. Spacerową a ul. Bagatela, nazwano aleją Ofiar Rosyjskiej Agresji."
+    ],
+    "summary_en": "Belwederska Street runs through Śródmieście and Mokotów from central Warsaw toward Wilanów. Its name comes from the Belweder estate of Krzysztof Zygmunt Pac, established in the 17th century. After 1830 the area was built up with brickworks and workers' houses, and a tram line to Wilanów opened in October 2024.",
+    "ludzie": [
+      {"kto": "Krzysztof Zygmunt Pac", "rola": "właściciel willi Belweder przy kościele św. Anny i Małgorzaty; od jego posiadłości nazwa ulicy", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "autor projektu Zameczka z Salonem z 1780 roku", "wiki": null},
+      {"kto": "Władysław Sikorski", "rola": "generał; willa przy ulicy wyburzona po 1966 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sonnenstrasse (nazwa okupacyjna od maja 1940)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Belwederska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Belwederska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dzielnice Śródmieście i Mokotów; w rekordzie dzielnica z nagłówka (Śródmieście)."
+  },
+  {
+    "id": "ulica-bialoskornicza",
+    "nazwa": "Ulica Białoskórnicza",
+    "name_en": "Białoskórnicza Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Białoskórnicza",
+    "adres_historyczny": null,
+    "lat": 52.2465812, "lon": 21.0181823,
+    "lokalizacja": "przyblizona",
+    "okres": "1762–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona wraz z utworzeniem jurydyki Mariensztat w 1762 roku; jej nazwę oficjalnie nadano w 1770 roku.",
+      "Nazwa pochodzi od białoskórników, czyli garbarzy wyprawiających delikatne białe skóry.",
+      "W 1844 roku przy ul. Białoskórniczej 3 August Piskorski założył pierwszy polski zakład białoskórniczy w Warszawie.",
+      "Zakład, dziedziczony przez syna Wacława Piskorskiego i wnuka Leonarda Piskorskiego, mieścił się tu przez 100 lat.",
+      "Wszystkie domy przy ulicy zostały spalone w 1939 roku i podczas powstania warszawskiego.",
+      "Relikty zabudowy rozebrano po wojnie w związku z budową Trasy W-Z i osiedla Mariensztat.",
+      "Dzisiejsza ulica została zdegradowana do chodnika między nową zabudową a nasypem ulicy Nowy Zjazd."
+    ],
+    "ciekawostki": [
+      "Krótko po nadaniu nazwy pojawiła się okazała kamienica Kwiecińskiego, zbudowana tuż nad Wisłą.",
+      "W pierwszej połowie XIX wieku działała tu duża fabryka białoskórnicza Michała Grosse."
+    ],
+    "summary_en": "Białoskórnicza Street is part of the Mariensztat estate in Śródmieście, named after the white-leather tanners (białoskórnicy) who worked here. The first Polish white-leather tannery in Warsaw opened at no. 3 in 1844. The street was destroyed in 1939 and during the 1944 Uprising, and after the war its remains were cleared for the Mariensztat estate and the W-Z route.",
+    "ludzie": [
+      {"kto": "August Piskorski", "rola": "w 1844 roku założył przy ul. Białoskórniczej 3 pierwszy polski zakład białoskórniczy w Warszawie", "wiki": null},
+      {"kto": "Michał Grosse", "rola": "właściciel dużej fabryki białoskórniczej w pierwszej połowie XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Białoskórnicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Bia%C5%82osk%C3%B3rnicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

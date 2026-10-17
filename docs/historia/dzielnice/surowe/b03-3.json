@@ -1,0 +1,409 @@
+[
+  {
+    "id": "miedziana-osiedle",
+    "nazwa": "Miedziana (osiedle)",
+    "name_en": "Miedziana housing estate, Wola",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Miedziana (między ulicami Miedzianą, Sienną, Żelazną i Twardą)",
+    "adres_historyczny": "ul. Twarda (wcześniej Krajowej Rady Narodowej)",
+    "lat": 52.229166666,
+    "lon": 20.992777777,
+    "lokalizacja": "przyblizona",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało wybudowane w latach 1963–1967 według projektu Zygmunta Stępińskiego i Andrzeja Milewskiego.",
+      "Położone jest na 4-hektarowym terenie między ulicami: Miedzianą, Sienną, Żelazną i Twardą (wcześniej Krajowej Rady Narodowej). Nazwa osiedla pochodzi od nazwy ulicy.",
+      "Powstało w miejscu prowizorycznych zabudowań i warsztatów stanowiących część rejonu nazywanego po II wojnie światowej „Dzikim Zachodem”.",
+      "Nowo wybudowane budynki pomieściły 788 mieszkań, przy 1869 pomieszczeniach; całość zaplanowano dla ok. 3500 mieszkańców.",
+      "Za realizację osiedla odpowiedzialne było Przedsiębiorstwo Budownictwa Mieszkaniowego „Centrum”.",
+      "W wyniku budowy osiedla przeniesiono warszawską izbę wytrzeźwień tzw. „żłobek”, która mieściła się w baraku przy skrzyżowaniu ulic Srebrnej i Żelaznej; nową siedzibę znalazła przy ulicy Kolskiej.",
+      "Osiedle jest jednym z tzw. metalowych osiedli w Warszawie, obok pobliskich Złotej i Srebrnej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Miedziana is a housing estate in Wola, built in 1963–1967 to designs by Zygmunt Stępiński and Andrzej Milewski on a 4-hectare site. It replaced makeshift workshops from the postwar 'Wild West' area. Its taller blocks supplied around 3,500 residents with 788 flats.",
+    "ludzie": [
+      {
+        "kto": "Zygmunt Stępiński",
+        "rola": "autor projektu osiedla (1963–1967)",
+        "wiki": null
+      },
+      {
+        "kto": "Andrzej Milewski",
+        "rola": "autor projektu osiedla (1963–1967)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "ul. Krajowej Rady Narodowej (dziś ul. Twarda)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Miedziana (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Miedziana_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy osiedla (zespołu bloków), nie pojedynczego budynku; współrzędne to przybliżony środek z nagłówka."
+  },
+  {
+    "id": "miejsce-pamieci-gorczewska",
+    "nazwa": "Miejsce pamięci na ulicy Górczewskiej w Warszawie",
+    "name_en": "Memorial site on Górczewska Street, Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Górczewska 32",
+    "adres_historyczny": null,
+    "lat": 52.2382,
+    "lon": 20.9571,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W pierwszych dniach sierpnia 1944 roku w miejscu tym mogło zostać zamordowanych nawet do 12 tys. polskich mężczyzn, kobiet i dzieci.",
+      "Masowe egzekucje w rejonie ul. Górczewskiej i Moczydła prawdopodobnie rozpoczęły się 4 sierpnia i trwały do 8 sierpnia 1944, a ich największe natężenie przypadło na sobotę 5 sierpnia.",
+      "Historycy oceniają, że w pobliżu obecnego miejsca pamięci zostało rozstrzelanych od 4,5 tys. do 10 tys. Polaków.",
+      "Niemcy zamordowali tam również ok. 360 pacjentów i pracowników Szpitala Wolskiego przy ul. Płockiej oraz trzech katolickich księży pełniących posługę w kościele św. Stanisława Biskupa przy ul. Wolskiej.",
+      "5 sierpnia 1945 odbyła się pierwsza uroczystość ku czci zamordowanych; drewniany krzyż wkopano na miejscu straceń nieopodal torów kolejowych.",
+      "W 2003 roku zmurszały krzyż został usunięty decyzją władz dzielnicy Wola. Rok później ustawiono w tym miejscu nowy dębowy krzyż."
+    ],
+    "ciekawostki": [
+      "W 2003 roku władze dzielnicy wydzierżawiły niezabudowany plac, na którym leżały krzyż i tablica, i wyraziły zgodę na budowę salonu samochodowego Nissan; w czasie prac ziemnych odkryto ślady spalenizny."
+    ],
+    "summary_en": "The memorial on Górczewska Street marks one of the largest mass executions carried out by the Germans during the Wola massacre in August 1944. Historians estimate that between 4,500 and 10,000 people were shot nearby. The first commemoration took place in August 1945, and a new oak cross was placed there in 2004.",
+    "ludzie": [
+      {
+        "kto": "Karol Tchorek",
+        "rola": "autor wzoru wolno stojącej tablicy pamiątkowej z lat 50.",
+        "wiki": null
+      },
+      {
+        "kto": "Bernard Filipiuk",
+        "rola": "ksiądz, ocalały z egzekucji, odprawił nabożeństwo żałobne w 1945",
+        "wiki": null
+      },
+      {
+        "kto": "Marian Chwilczyński",
+        "rola": "ksiądz, ocalały z egzekucji, odprawił nabożeństwo żałobne w 1945",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Zieliński",
+        "rola": "prof., dzięki jego staraniom w 2004 ustawiono nowy dębowy krzyż",
+        "wiki": null
+      },
+      {
+        "kto": "Erich von dem Bach-Zelewski",
+        "rola": "SS-Obergruppenführer, który zakazał mordowania kobiet i dzieci",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Miejsce pamięci na ulicy Górczewskiej w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Miejsce_pami%C4%99ci_na_ulicy_G%C3%B3rczewskiej_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rozbieżne szacunki liczby ofiar (do 12 tys. i 4,5–10 tys.); oba przepisano. Artykuł nie podaje, kto konkretnie wykonywał egzekucje poza wspomnianymi strukturami SS i policji."
+  },
+  {
+    "id": "moczydlo-osiedle",
+    "nazwa": "Moczydło (osiedle)",
+    "name_en": "Moczydło housing estate, Wola",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Wieluńska 1–18, al. Prymasa Tysiąclecia 95–99, ul. Kasprzaka 96",
+    "adres_historyczny": null,
+    "lat": 52.231944444,
+    "lon": 20.955,
+    "lokalizacja": "przyblizona",
+    "okres": "1968–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle składa się z 12 bloków mieszkalnych: jednego bloku liczącego 15 kondygnacji naziemnych, pięciu bloków z 11 kondygnacjami oraz sześciu bloków z 5 kondygnacjami; łącznie 945 lokali mieszkalnych zaprojektowanych dla ponad 4 tysięcy mieszkańców.",
+      "Większość bloków powstała w latach 1968–1971; tylko jeden, najwyższy, jest z 1983 roku.",
+      "Architektem najstarszej części osiedla był Lech Zahorski. Inwestorem była Spółdzielnia Mieszkaniowa „Starówka”.",
+      "Zarządza nim utworzona w 1991 roku Spółdzielnia Mieszkaniowa im. gen. Józefa Sowińskiego, powstała w wyniku podziału Spółdzielni Mieszkaniowej „Starówka”.",
+      "W 1972 uzupełniono zabudowę osiedla o pawilon handlowo-usługowy przy ul. Wolskiej 94.",
+      "Na osiedlu, przy ul. Wolskiej na rogu ul. Wieluńskiej, ustawiono w latach 50. tablicę pamiątkową Tchorka upamiętniającą 2,5 tys. okolicznych mieszkańców zamordowanych podczas rzezi Woli w pierwszych dniach sierpnia 1944."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Moczydło, also called Osiedle Wieluńska, is a housing estate of 12 blocks in Wola, with 945 flats for over 4,000 residents. Most blocks went up in 1968–1971, and the architect of the oldest part was Lech Zahorski. A memorial plaque on Wolska Street commemorates 2,500 residents murdered in the 1944 Wola massacre.",
+    "ludzie": [
+      {
+        "kto": "Lech Zahorski",
+        "rola": "architekt najstarszej części osiedla",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Osiedle Wieluńska (nazwa alternatywna)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Moczydło (Wola)",
+        "url": "https://pl.wikipedia.org/wiki/Moczyd%C5%82o_%28Wola%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy osiedla; adres to zestawienie numerów bloków z artykułu. Współrzędne to środek z nagłówka."
+  },
+  {
+    "id": "muranow-poludniowy",
+    "nazwa": "Muranów Południowy",
+    "name_en": "Muranów Południowy housing estate, Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "w granicach ulic: Andersa, al. „Solidarności”, Dzielna, Bellottiego, Wolność, Żytnia i Żelazna",
+    "adres_historyczny": null,
+    "lat": 52.243802,
+    "lon": 20.991653,
+    "lokalizacja": "przyblizona",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zbudowano w latach 1949–1956 na gruzach getta. Budowa rozpoczęła się w 1949 roku.",
+      "W zamierzeniu głównego architekta Bohdana Lacherta miało to być osiedle-pomnik, przypominające tragedię getta; budynki planowano pozostawić nieotynkowane, nawiązując do czerwonej, surowej cegły powojennych gruzów.",
+      "Do budowy bloków wykorzystywano gruzobeton, uzyskiwany na miejscu przez mielenie gruzu i cegieł; gruz posłużył też do ukształtowania tarasów i nasypów.",
+      "Po 1949 roku bloki mieszkalne dopasowywano do wymogów architektury socrealizmu. Pod adresem ul. Andersa 3/5 powstała trzypiętrowa brama zwieńczona łukiem.",
+      "Ze względu na negatywne opinie pierwszych mieszkańców o mało reprezentacyjnych elewacjach z bordowoszarego gruzobetonu Bohdan Lachert otrzymał polecenie otynkowania bloków.",
+      "W 2012 roku osiedle wpisano do gminnej ewidencji zabytków, a w 2023 roku do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Muranów Południowy was built in 1949–1956 on the rubble of the Warsaw Ghetto. Chief architect Bohdan Lachert first intended it as a memorial estate with bare brick walls, but residents disliked the rubble-concrete facades and he was ordered to plaster the blocks. The estate was listed as a monument in 2023.",
+    "ludzie": [
+      {
+        "kto": "Bohdan Lachert",
+        "rola": "główny architekt osiedla",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Muranów Południowy",
+        "url": "https://pl.wikipedia.org/wiki/Muran%C3%B3w_Po%C5%82udniowy"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle leży w dwóch dzielnicach (Śródmieście, obszar MSI Muranów, i Wola, Nowolipki); dzielnica w rekordzie to pierwsza z nagłówka."
+  },
+  {
+    "id": "szpital-dzieciecy-bersohnow-i-baumanow",
+    "nazwa": "Szpital Dziecięcy Bersohnów i Baumanów",
+    "name_en": "Bersohn and Bauman Children's Hospital, Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Śliska 51 / ul. Sienna 60",
+    "adres_historyczny": null,
+    "lat": 52.23131,
+    "lon": 20.9973,
+    "lokalizacja": "dokladna",
+    "okres": "dziś (data budowy nie podana w artykule)",
+    "istnieje": true,
+    "fakty": [
+      "Siedzibą Muzeum Getta Warszawskiego będzie kompleks dawnego Szpitala Dziecięcego Bersohnów i Baumanów przy ul. Śliskiej 51 / ul. Siennej 60.",
+      "W październiku 2018 samorząd województwa mazowieckiego wydzierżawił Muzeum kompleks szpitala na 30 lat.",
+      "W 2018 roku Mazowiecki Wojewódzki Konserwator Zabytków wpisał na listę zabytków oba budynki dawnego szpitala – pawilon główny i pawilon południowy.",
+      "W listopadzie 2020, w 80. rocznicę zamknięcia getta, samorząd województwa mazowieckiego sprzedał budynek muzeum za kwotę 22,7 mln zł; środki na ten cel przekazało Ministerstwo Kultury i Dziedzictwa Narodowego.",
+      "Wystawa stała będzie w budynku głównym dawnego szpitala; piętrowy pawilon południowy, gdzie dawniej mieścił się oddział okulistyczny, ma być siedzibą Działu Edukacji Muzeum.",
+      "Według informacji z 2025 roku otwarcie stałej siedziby zaplanowano na wrzesień 2027, chociaż wcześniej jako termin zakończenia inwestycji podawano 2026 rok."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The former Bersohn and Bauman Children's Hospital on Śliska and Sienna streets is to host the Warsaw Ghetto Museum. Both of its main pavilions were listed as monuments in 2018. The regional government leased the complex for 30 years and sold the building in 2020 for 22.7 million zloty.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Muzeum Getta Warszawskiego",
+        "url": "https://pl.wikipedia.org/wiki/Muzeum_Getta_Warszawskiego"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord wyciągnięty z artykułu o muzeum (sam artykuł o instytucji pominięto); dotyczy budynku, który jest jego siedzibą. Współrzędne z nagłówka artykułu o muzeum. Artykuł nie podaje daty budowy szpitala."
+  },
+  {
+    "id": "muzulmanski-cmentarz-kaukaski",
+    "nazwa": "Muzułmański Cmentarz Kaukaski",
+    "name_en": "Caucasian Muslim Cemetery, Warsaw",
+    "typ": "cmentarz",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Młynarska 60",
+    "adres_historyczny": null,
+    "lat": 52.24333333,
+    "lon": 20.96972222,
+    "lokalizacja": "dokladna",
+    "okres": "1838–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W lipcu 2014 cmentarz, razem z pięcioma innymi nekropoliami tworzącymi zespół zabytkowych cmentarzy wyznaniowych na Powązkach, został uznany za pomnik historii.",
+      "Powstał na gruntach zakupionych w 1830 roku za 2152 ruble od warszawskiej parafii ewangelicko-augsburskiej. Został założony w latach 1838–1839.",
+      "Jest starszym z dwóch istniejących w Warszawie cmentarzy muzułmańskich; drugim jest Muzułmański Cmentarz Tatarski.",
+      "Nekropolia była użytkowana do 1867. Chowano na niej żołnierzy wyznania muzułmańskiego z wojska rosyjskiego oraz przyjezdnych kupców i mieszkańców Warszawy.",
+      "Podczas powstania warszawskiego cmentarz wraz z sąsiadującymi cmentarzami ewangelickimi był terenem ciężkich walk. Broniły go bataliony „Wigry” i „Antoni” Armii Krajowej.",
+      "Obecnie cmentarz ponownie jest czynny; chowani są tu uchodźcy z Czeczenii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Caucasian Muslim Cemetery on Młynarska Street is the older of Warsaw's two Muslim cemeteries, founded in 1838–1839 and used until 1867. It fought over during the 1944 Uprising and has been active again in recent years, with Chechen refugees buried there. It is part of a group of historic denominational cemeteries declared a monument in 2014.",
+    "ludzie": [
+      {
+        "kto": "Jan Buczacki",
+        "rola": "pochowany na cmentarzu (zm. 1851), polski Tatar, uważany kiedyś za pierwszego tłumacza Koranu na język polski",
+        "wiki": null
+      },
+      {
+        "kto": "Zachariasz Kieński",
+        "rola": "pochowany na cmentarzu (zm. 1857), generał",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Muzułmański Cmentarz Kaukaski",
+        "url": "https://pl.wikipedia.org/wiki/Muzu%C5%82ma%C5%84ski_Cmentarz_Kaukaski"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje powierzchnię ok. 1000 m²."
+  },
+  {
+    "id": "muzulmanski-cmentarz-tatarski",
+    "nazwa": "Muzułmański Cmentarz Tatarski",
+    "name_en": "Tatar Muslim Cemetery, Warsaw",
+    "typ": "cmentarz",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Tatarska 8",
+    "adres_historyczny": null,
+    "lat": 52.253056,
+    "lon": 20.965,
+    "lokalizacja": "dokladna",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został założony w 1867 po zamknięciu z powodu zapełnienia Muzułmańskiego Cmentarza Kaukaskiego, z inicjatywy warszawskiego imama Seifetdina Chosianowa Sinnajewa.",
+      "Pierwotnie miał powierzchnię około 0,5 ha, zaś obecnie zajmuje około 1 ha.",
+      "Jest miejscem spoczynku polskich Tatarów, głównie wywodzących się z obszaru Wielkiego Księstwa Litewskiego.",
+      "Podczas II wojny światowej cmentarz został zniszczony przez Niemców; w 1942 na jego teren wjechały niemieckie czołgi i inne pojazdy pancerne.",
+      "W 1984 nekropolia została wpisana do rejestru zabytków.",
+      "W lipcu 2014 cmentarz, razem z pięcioma innymi nekropoliami na Powązkach, został uznany za pomnik historii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Tatar Muslim Cemetery on Tatarska Street was founded in 1867 after the Caucasian cemetery filled up, on the initiative of Warsaw imam Seifetdin Sinnajew. It was damaged in the Second World War and was entered in the heritage register in 1984. Many Polish Tatar officers and public figures are buried there.",
+    "ludzie": [
+      {
+        "kto": "Seifetdin Chosianow Sinnajew",
+        "rola": "warszawski imam, z jego inicjatywy założono cmentarz w 1867",
+        "wiki": null
+      },
+      {
+        "kto": "Aleksander Achmatowicz",
+        "rola": "pochowany na cmentarzu (zm. 1944), prawnik, minister sprawiedliwości w rządach Krymu i Litwy Środkowej, senator II RP",
+        "wiki": null
+      },
+      {
+        "kto": "Osman Achmatowicz",
+        "rola": "pochowany na cmentarzu (zm. 1988), chemik, profesor Uniwersytetu Warszawskiego",
+        "wiki": null
+      },
+      {
+        "kto": "Jerzy Edigey",
+        "rola": "pochowany na cmentarzu (zm. 1983), adwokat, autor powieści kryminalnych",
+        "wiki": null
+      },
+      {
+        "kto": "Jakub Romanowicz",
+        "rola": "pochowany na cmentarzu (zm. 1964), międzywojenny zastępca muftiego RP",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Muzułmański Cmentarz Tatarski",
+        "url": "https://pl.wikipedia.org/wiki/Muzu%C5%82ma%C5%84ski_Cmentarz_Tatarski"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje cmentarz jako 'zabytkowy mizar'. Lista pochowanych w artykule jest dłuższa; przepisano wybrane osoby."
+  },
+  {
+    "id": "mlynow-osiedle",
+    "nazwa": "Młynów (osiedle)",
+    "name_en": "Młynów estate, Wola",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.239221,
+    "lon": 20.960061,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle leży między koleją obwodową, ul. Ostroroga (granica z Powązkami), murami cmentarzy powązkowskich i ul. Okopową (granica z Nowolipkami), al. „Solidarności” i ul. Wolską.",
+      "Osiedle zajmuje północną część centralnej części dzielnicy; rejon MSI o tej samej nazwie obejmuje południową część Woli właściwej, której nie wyodrębniono, aby nie dublowała się z nazwą dzielnicy.",
+      "Nazwa osiedla wywodzi się od tradycji młynarskich tej części miasta – w XIX w. znajdowały się tu liczne wiatraki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Młynów is an estate in northern central Wola, between the Warsaw Cemeteries and the Okopowa Street border with Nowolipki. Its name comes from the many windmills that stood here in the 19th century.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Młynów (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/M%C5%82yn%C3%B3w_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Krótki artykuł, bez dat budowy ani opisu zabudowy. Rekord dotyczy osiedla/obszaru MSI."
+  },
+  {
+    "id": "stacja-mlynow",
+    "nazwa": "Młynów (stacja metra)",
+    "name_en": "Młynów metro station",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "skrzyżowanie ul. Górczewskiej i ul. Syreny",
+    "adres_historyczny": null,
+    "lat": 52.2377,
+    "lon": 20.9599,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja została otwarta 4 kwietnia 2020 roku, wraz ze stacjami Płocka i Księcia Janusza.",
+      "Stacja figurowała pod roboczą nazwą Moczydło (oznaczenie C7). Początkowo miała powstać przy Parku Moczydło, później dwukrotnie zmieniano lokalizację; ostatecznie powstała przy ul. Syreny.",
+      "We wrześniu 2013 Rada Miasta zatwierdziła nazwę Młynów, odrzucając proponowaną nazwę Koło-Młynów.",
+      "Stacja tworzy węzeł przesiadkowy z przystankiem kolejowym Warszawa Młynów, który został przebudowany w latach 2017–2018.",
+      "19 września 2016 wojewoda mazowiecki Zdzisław Sipiera wydał pozwolenie na budowę stacji z rygorem natychmiastowej wykonalności.",
+      "Prace budowlane rozpoczęto 26 listopada 2016, po zamknięciu dla ruchu ulicy Górczewskiej.",
+      "Długość stacji wynosi 168,2 m, a kubatura obiektu – 56 636 m³. Kolor niebieski w wystroju odnosi się do pobliskiego basenu na Moczydle.",
+      "W 2021 stacja otrzymała nagrodę w kategorii duży obiekt użyteczności publicznej w konkursie „Lider Dostępności”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Młynów is a metro station on Line M2 at the junction of Górczewska and Syreny streets in Wola. Construction began on 26 November 2016, and the station opened on 4 April 2020 together with Płocka and Księcia Janusza. Its blue décor refers to the nearby swimming pool at Moczydło.",
+    "ludzie": [
+      {
+        "kto": "Zdzisław Sipiera",
+        "rola": "wojewoda mazowiecki, wydał pozwolenie na budowę stacji w 2016",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Moczydło (robocza nazwa)",
+      "Koło-Młynów (odrzucona propozycja nazwy)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Młynów (stacja metra)",
+        "url": "https://pl.wikipedia.org/wiki/M%C5%82yn%C3%B3w_%28stacja_metra%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Pierwotnie stacja miała powstać przy Parku Moczydło (stąd robocza nazwa). Współrzędne z nagłówka."
+  }
+]

@@ -1,0 +1,396 @@
+[
+  {
+    "id": "aleja-3-maja",
+    "nazwa": "Aleja 3 Maja",
+    "name_en": "3 May Avenue",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "al. 3 Maja",
+    "adres_historyczny": "Nowa Droga Jerozolimska (od 1823–1824); Aleja 3 Maja (od 3 maja 1916)",
+    "lat": 52.2339497,
+    "lon": 21.0301965,
+    "lokalizacja": "przyblizona",
+    "okres": "1823–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga od Solca do Nowego Światu została przeprowadzona w latach 1823–1824 i nazwana Nową Drogą Jerozolimską.",
+      "Nieoficjalnie zwana była Drogą Steinkellera od nazwiska właściciela młyna parowego Towarzystwa Wyrobów Zbożowych, który zbudowano tu w latach 1826–1827.",
+      "W 1845 roku ulica została przecięta torami kolejki łączącej fabrykę wagonów z portem.",
+      "Nad ulicą w latach 1904–1913 wybudowano 700-metrowy wiadukt mostu Poniatowskiego.",
+      "W dniu 3 maja 1916 roku władze Warszawy postanowiły, że przedłużenie Alej Jerozolimskich od Nowego Światu do mostu Poniatowskiego będzie nosić nazwę Aleja 3 Maja.",
+      "W 1946 roku wzdłuż ulicy ułożono tory tramwajowe, a pod wiaduktem mostu Poniatowskiego powstała prowizoryczna zajezdnia tramwajowa „Solec”, istniejąca do przełomu lutego i marca 1961 roku.",
+      "Od 22 czerwca 1949 zasięg nazwy alei 3 Maja ograniczono do fragmentu od ulicy Smolnej do linii Wisły.",
+      "W 2005 roku przedwojenny bruk zastąpiono asfaltem; przed kamienicą nr 5 zachowano fragment historycznego bruku z torem tramwajowym."
+    ],
+    "ciekawostki": [
+      "Aleja 3 Maja była sceną akcji polskich filmów i seriali, m.in. kryminału Kobra, serialu Ekstradycja 3 i komedii Co mi zrobisz, jak mnie złapiesz (1978)."
+    ],
+    "summary_en": "3 May Avenue is a street on Warsaw's Powiśle, running on both sides of the Poniatowski Bridge viaduct from Wisłostrada to the foot of the Warsaw escarpment. It was built in 1823–1824 as New Jerusalem Road and renamed on 3 May 1916, the 125th anniversary of the Constitution.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Nowa Droga Jerozolimska",
+      "Droga Steinkellera (nieoficjalnie)",
+      "Dworcowa (okupacja niemiecka)",
+      "Bahnhofstrasse, później Ostlandstrasse (okupacja niemiecka)",
+      "Al. Generała Władysława Sikorskiego (od 27 listopada 1946, fragment od Nowego Światu do wiaduktu)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja 3 Maja w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_3_Maja_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE: Bielany, Śródmieście. Artykuł opisuje Powiśle (Śródmieście); w polu dzielnica wpisano pierwszą pozycję z nagłówka."
+  },
+  {
+    "id": "dom-przy-alei-3-maja-5",
+    "nazwa": "Dom przy alei 3 Maja 5",
+    "name_en": "Building at 5 3 May Avenue",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "al. 3 Maja 5",
+    "adres_historyczny": null,
+    "lat": 52.2339497,
+    "lon": 21.0301965,
+    "lokalizacja": "przyblizona",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1931 roku dla Spółdzielni Mieszkaniowej „3-ego Maja”.",
+      "Zaprojektował ją w duchu funkcjonalizmu Wacław Weker, który był członkiem spółdzielni.",
+      "Do dziś zachowała m.in. schody z lastriko, metalową balustradę z drewnianym uchwytem, windę z kryształowymi lustrami i ławeczką obitą skórą oraz elementy zabytkowej stolarki.",
+      "Oryginalny projekt budynku do dziś przechowywany jest w archiwum spółdzielni.",
+      "Podczas okupacji budynek zasiedlili lokatorzy niemieccy.",
+      "W czasie powstania warszawskiego bomba trafiła w jedną z klatek, jednak pozostałe dwie zachowały się w dobrym stanie, umożliwiając powrót mieszkańców.",
+      "W lipcu 2011 dom został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W latach 1934–1944 mieszkała w tym budynku Mieczysława Ćwiklińska."
+    ],
+    "summary_en": "A 1931 functionalist apartment block on 3 May Avenue, built for the 3 May housing cooperative and designed by Wacław Weker, who was a member of the cooperative. It kept much of its original interior, including its elevator, and was entered in the heritage register in July 2011.",
+    "ludzie": [
+      {"kto": "Wacław Weker", "rola": "architekt, autor projektu; członek spółdzielni", "wiki": null},
+      {"kto": "Mieczysława Ćwiklińska", "rola": "mieszkanka w latach 1934–1944", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja 3 Maja w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_3_Maja_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dodatkowy z artykułu o ulicy; współrzędne ulicy (środek odcinka), lokalizacja przyblizona."
+  },
+  {
+    "id": "aleja-rozy",
+    "nazwa": "Aleja Róż",
+    "name_en": "Roses Avenue",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "al. Róż",
+    "adres_historyczny": null,
+    "lat": 52.2476595,
+    "lon": 20.9378785,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVIII wieku w miejscu dzisiejszej ulicy biegła droga narolna gruntów Ujazdowa.",
+      "W połowie XIX wieku droga przekształciła się w ogrodową aleję.",
+      "W 1827 r. na północ od późniejszej ulicy otwarto publicznie dostępny park Dolina Szwajcarska, w którym w 1857 r. wybudowano budynek salonu.",
+      "Ulicę wytyczono ok. 1880 r.; w 1877 r. wybudowano przy niej pierwsze trzy domy, m.in. willę Nagórnego zaprojektowaną przez Józefa Hussa na rogu Alej Ujazdowskich.",
+      "Nazwa pochodzi od znajdującego się w tym rejonie ogrodu obfitującego w krzewy róż.",
+      "W latach 1919–1939 pałacyki i domy w al. Róż zajęły poselstwa i ambasady.",
+      "W 1944 r. część zabudowy została zniszczona.",
+      "Przy ulicy znajdują się m.in. Pałacyk Wielopolskich, Ambasada Serbii i Ambasada Czech."
+    ],
+    "ciekawostki": [
+      "Ulica zamieszkana była przez arystokrację i plutokrację, uchodziła za jedną z najelegantszych ulic Warszawy.",
+      "Po wojnie w kamienicy pod numerem 6 osiedliła się liczna grupa artystów i dygnitarzy PZPR."
+    ],
+    "summary_en": "Roses Avenue is a street in Warsaw's Śródmieście district, named after a garden of roses in the area. It was laid out around 1880 and in the interwar period it housed embassies and legations in its villas and palaces.",
+    "ludzie": [
+      {"kto": "Józef Huss", "rola": "architekt willi Nagórnego, pierwszej zabudowy przy ulicy (1877)", "wiki": null},
+      {"kto": "Konstanty Ildefons Gałczyński", "rola": "mieszkaniec kamienicy nr 6 (1948–1953)", "wiki": null},
+      {"kto": "Władysław Broniewski", "rola": "mieszkaniec kamienicy nr 6 po wojnie", "wiki": null},
+      {"kto": "Antoni Słonimski", "rola": "mieszkaniec kamienicy nr 6 po wojnie", "wiki": null},
+      {"kto": "Leon Kruczkowski", "rola": "mieszkaniec kamienicy nr 6 po wojnie", "wiki": null},
+      {"kto": "Adam Ważyk", "rola": "mieszkaniec kamienicy nr 8", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Róż w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_R%C3%B3%C5%BC_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne z nagłówka (52.2476595, 20.9378785) różnią się od tych w treści artykułu (52°13′18,2″N 21°01′21,7″E); użyto nagłówka. Nagłówek DZIELNICE: Bielany, Wola, Śródmieście; artykuł podaje Śródmieście. W polu dzielnica wpisano pierwszą pozycję z nagłówka."
+  },
+  {
+    "id": "most-marii-sklodowskiej-curie",
+    "nazwa": "Most Marii Skłodowskiej-Curie",
+    "name_en": "Maria Skłodowska-Curie Bridge",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "Most Marii Skłodowskiej-Curie",
+    "adres_historyczny": "Most Północny (roboczo, do 2011)",
+    "lat": 52.3052043,
+    "lon": 20.9485232,
+    "lokalizacja": "przyblizona",
+    "okres": "2012–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Most został otwarty w marcu 2012 roku; trzecią część mostu, z torami tramwajowymi, drogą dla rowerów i chodnikiem, otwarto w styczniu 2013.",
+      "Jest najdalej na północ wysuniętą przeprawą rzeczną w stolicy.",
+      "21 kwietnia 2009 władze Warszawy podpisały umowę na budowę mostu z polsko-hiszpańskim konsorcjum firm Pol-Aqua, Sando oraz Kromiss-Bis.",
+      "Pierwszego symbolicznego wbicia łopaty dokonali 3 czerwca 2009 prezydent Warszawy Hanna Gronkiewicz-Waltz i minister infrastruktury Cezary Grabarczyk.",
+      "Nasuwanie konstrukcji mostu rozpoczęto na przełomie stycznia i lutego 2010.",
+      "Opóźnienie budowy spowodowało m.in. zalanie terenu budowy falą powodziową latem 2010.",
+      "Pierwsza linia tramwajowa została uruchomiona 21 stycznia 2013.",
+      "1 grudnia 2011 Rada Warszawy przegłosowała, że patronką mostu zostanie Maria Skłodowska-Curie."
+    ],
+    "ciekawostki": [
+      "W konsultacjach internetowych latem 2011 wzięło udział 7433 respondentów; większość opowiadała się za pozostawieniem nazwy „most Północny”.",
+      "Szerokość rzeki w miejscu przeprawy wynosi około 650 m."
+    ],
+    "summary_en": "The Maria Skłodowska-Curie Bridge is the northernmost road crossing of the Vistula in Warsaw, part of the Trasa Mostu Marii Skłodowskiej-Curie. It was opened in March 2012 and was known as the 'Northern Bridge' until 2011.",
+    "ludzie": [
+      {"kto": "Hanna Gronkiewicz-Waltz", "rola": "prezydent Warszawy; wbiła pierwszą łopatę w 2009 r.", "wiki": null},
+      {"kto": "Cezary Grabarczyk", "rola": "minister infrastruktury; wbił pierwszą łopatę w 2009 r.", "wiki": null},
+      {"kto": "Witold Chodakiewicz", "rola": "pełnomocnik ds. budowy mostu Północnego (od połowy stycznia 2004)", "wiki": null},
+      {"kto": "Bronisław Komorowski", "rola": "prezydent; wyraził opinię, że Warszawa powinna uhonorować Marię Skłodowską-Curie", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "most Północny (nazwa robocza, do 2011)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Marii Skłodowskiej-Curie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Most_Marii_Sk%C5%82odowskiej-Curie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek przeprawy)."
+  },
+  {
+    "id": "plac-konfederacji",
+    "nazwa": "Plac Konfederacji",
+    "name_en": "Konfederacji Square",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "pl. Konfederacji",
+    "adres_historyczny": null,
+    "lat": 52.2796661,
+    "lon": 20.9473643,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac położony jest u zbiegu ulic Schroegera, Lipińskiej, Daniłowskiego i Płatniczej.",
+      "W 1928 roku wzniesiono przy nim piętrowe domy szeregowe osiedla Zdobycz Robotnicza w stylu dworkowym.",
+      "W latach 1976–1980 przy placu wniesiono kościół św. Zygmunta zaprojektowany przez Zbigniewa Pawelskiego.",
+      "W 1999 roku na skwerze znajdującym się pośrodku placu odsłonięto głaz upamiętniający żołnierzy 77. pułku piechoty oraz mieszkańców ziemi lidzkiej, którzy zginęli w latach 1939–1945."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Konfederacji Square is a small square in Bielany, with 1928 workers' housing in the manorial style, a church of St Sigismund built in 1976–1980, and a 1999 memorial boulder to soldiers of the 77th Infantry Regiment.",
+    "ludzie": [
+      {"kto": "Zbigniew Pawelski", "rola": "projektant kościoła św. Zygmunta", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Konfederacji w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Konfederacji_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-11-listopada",
+    "nazwa": "Ulica 11 Listopada",
+    "name_en": "11 November Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. 11 Listopada",
+    "adres_historyczny": "Esplanadowa (do 1921)",
+    "lat": 52.3246198,
+    "lon": 20.9208281,
+    "lokalizacja": "przyblizona",
+    "okres": "1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica, pierwotnie nosząca nazwę Esplanadowa, została wytyczona w 1875 roku po wykupieniu okolicznych parcel przez Zarząd Wojskowy Okręgu Warszawskiego.",
+      "Obecna nazwa została nadana w 1921 roku.",
+      "Ulicę przyłączono do Warszawy w roku 1899; u zbiegu z ul. Szwedzką wybudowano rogatki Bródnowskie.",
+      "Na terenach wykupionych przez wojsko powstała bocznica kolejowa i zespół koszar 2 Orenburskiego Pułku Kozaków, zaprojektowany przez Wiktora Junoszę-Piotrowskiego; liczył 124 budynki murowane i drewniane.",
+      "W roku 1908 przy rozbudowie linii kolei obwodowej i budowie tzw. drugiego mostu kolejowego wybudowano kamienny wiadukt nad ulicą.",
+      "Od 1918 roku w dawnych kozackich koszarach stacjonowało Wojsko Polskie; w koszarach przy 11 Listopada siedzibę znalazł 36 Pułk Piechoty Legii Akademickiej.",
+      "W 1928 roku ulicą pojechał pierwszy tramwaj linii 21.",
+      "W 1993 roku zespół koszar wpisano do rejestru zabytków.",
+      "Przy ulicy znajdują się m.in. Dawna Fabryka Cukrów Anczewskiego (nr 10), Dawna Fabryka Wyrobów Gumowych Brage (nr 22) i Rogatka Bródnowska."
+    ],
+    "ciekawostki": [
+      "Łukowaty kształt ulicy wynikał z przebiegu granicy esplanady fortu Śliwickiego, od której pochodziła pierwsza nazwa.",
+      "Ulicą przechodziły wszystkie kondukty pogrzebowe z Pragi na cmentarz Bródnowski i cmentarz żydowski."
+    ],
+    "summary_en": "11 November Street runs through Praga-Północ and Targówek. It was laid out in 1875 as Esplanadowa, along the border of the Śliwice fort's esplanade, and renamed in 1921. Its Russian-era Cossack barracks were taken over by the Polish Army after 1918.",
+    "ludzie": [
+      {"kto": "Wiktor Junosza-Piotrowski", "rola": "projektant zespołu koszar 2 Orenburskiego Pułku Kozaków", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Esplanadowa (do 1921)",
+      "Esplanadenstrasse (okupacja niemiecka)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica 11 Listopada w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_11_Listopada_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE: Bielany; artykuł podaje Praga-Północ i Targówek. W polu dzielnica wpisano pierwszą pozycję z nagłówka. Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-adama-mickiewicza",
+    "nazwa": "Ulica Adama Mickiewicza",
+    "name_en": "Adam Mickiewicz Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Adama Mickiewicza",
+    "adres_historyczny": "Invalidenstrasse (okupacja niemiecka, od maja 1940; mieszkańcy jej nie używali)",
+    "lat": 52.2791113,
+    "lon": 20.9765627,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona według planu z 1925 roku, którego autorami byli Józef Jankowski, Tadeusz Tołwiński oraz Antoni Jawornicki.",
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Na przecięciu z aleją Wojska Polskiego utworzono plac Inwalidów.",
+      "Pierwszą inwestycją przy ulicy była budowa Hotelu Oficerskiego przy placu Inwalidów 10 według projektu Romualda Gutta.",
+      "Na pierwszym piętrze budynku przy placu Inwalidów 10 działało od roku 1935 XVI Gimnazjum Państwowe Żeńskie im. Aleksandry Piłsudskiej.",
+      "W latach 1930–31 przy Mickiewicza 27 powstał czteropiętrowy dom „Warszawa 1” według projektu Józefa Szanajcy i Stanisława Brukalskiego; jego przyuliczna elewacja ma 245 metrów.",
+      "W 1924 roku ulicą Mickiewicza pojechały tramwaje.",
+      "W 1936 roku w pobliżu wejścia do parku Stefana Żeromskiego od strony pl. Wilsona stanęła rzeźba Henryka Kuny Dziewczyna z dzbanem, zwana Aliną.",
+      "W drugiej połowie lat 50. na odcinku pl. Wilsona – ul. Żółkowskich powstało Osiedle Mickiewicza według projektu Barbary Konarskiej i Jerzego Paciorkowskiego."
+    ],
+    "ciekawostki": [
+      "W 1948 roku na dachu Szklanego Domu odbyło się przyjęcie z udziałem Pabla Picassa.",
+      "Ulica miała być jedną z głównych osi nowej dzielnicy, obok ulicy Zygmunta Krasińskiego i alei Wojska Polskiego."
+    ],
+    "summary_en": "Adam Mickiewicz Street is a Żoliborz street laid out to a 1925 plan as one of the main axes of a new district. Its interwar buildings include the Szklany Dom and the 245-metre 'Warszawa 1' block; the street was renamed by the occupying authorities in 1940.",
+    "ludzie": [
+      {"kto": "Romuald Gutt", "rola": "architekt Hotelu Oficerskiego przy placu Inwalidów 10", "wiki": null},
+      {"kto": "Józef Szanajca", "rola": "architekt domu „Warszawa 1” (1930–31)", "wiki": null},
+      {"kto": "Stanisław Brukalski", "rola": "architekt domu „Warszawa 1” (1930–31)", "wiki": null},
+      {"kto": "Henryk Kuna", "rola": "autor rzeźby Dziewczyna z dzbanem (Alina), 1936", "wiki": null},
+      {"kto": "Pablo Picasso", "rola": "gość przyjęcia na dachu Szklanego Domu w 1948 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Invalidenstrasse (okupacja niemiecka, od maja 1940)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Adama Mickiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Adama_Mickiewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE: Bielany, Żoliborz; artykuł podaje Żoliborz. W polu dzielnica wpisano pierwszą pozycję z nagłówka. Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "szklany-dom-w-warszawie",
+    "nazwa": "Szklany Dom",
+    "name_en": "Glass House",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Adama Mickiewicza 34/36",
+    "adres_historyczny": null,
+    "lat": 52.2791113,
+    "lon": 20.9765627,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W podobnym czasie (ok. 1935) Państwowy Zakład Ubezpieczeń Wzajemnych Pracowników Umysłowych wybudował pod nr 34/36 przy ul. Mickiewicza budynek zwany Szklanym Domem.",
+      "Budynek zaprojektował Juliusz Żórawski, który uwzględnił pięć punktów nowoczesnej architektury sformułowanych przez Le Corbusiera.",
+      "W 1948 roku na dachu Szklanego Domu odbyło się przyjęcie z udziałem Pabla Picassa."
+    ],
+    "ciekawostki": [
+      "Juliusz Żórawski zastosował w projekcie pięć punktów nowoczesnej architektury Le Corbusiera."
+    ],
+    "summary_en": "The Glass House at 34/36 Mickiewicza Street in Żoliborz was built around 1935 for a state insurance institution, designed by Juliusz Żórawski following Le Corbusier's five points of modern architecture.",
+    "ludzie": [
+      {"kto": "Juliusz Żórawski", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Le Corbusier", "rola": "autor pięciu punktów nowoczesnej architektury, uwzględnionych w projekcie", "wiki": null},
+      {"kto": "Pablo Picasso", "rola": "gość przyjęcia na dachu w 1948 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Adama Mickiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Adama_Mickiewicza_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord dodatkowy z artykułu o ulicy; współrzędne ulicy (środek odcinka), lokalizacja przyblizona. Dedykowanego artykułu o Szklanym Domu nie było w tej paczce."
+  },
+  {
+    "id": "ulica-barcicka",
+    "nazwa": "Ulica Barcicka",
+    "name_en": "Barcicka Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Barcicka",
+    "adres_historyczny": null,
+    "lat": 52.2808572,
+    "lon": 20.9534843,
+    "lokalizacja": "przyblizona",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica na warszawskich Bielanach biegnie od ul. Bolesława Podczaszyńskiego do ul. Stanisława Przybyszewskiego.",
+      "Od włączenia dzielnicy Bielany w obręb Warszawy (1930 r.) ulica znacznie się rozwinęła, głównie za sprawą powstania pilotażowego osiedla.",
+      "Na zlecenie spółdzielni „Związkowiec” powstał koncept pojedynczych domów autorstwa Romualda Millera, który zajął ulicę Barcicką wraz z kilkoma sąsiednimi ulicami.",
+      "Całość tworzyła zorganizowaną w 1932 roku wystawę „Tani Dom Własny”.",
+      "Domy miały ok. 50 mkw. powierzchni, wraz z ogródkiem do 500 mkw.",
+      "Domy zachowały się do dziś."
+    ],
+    "ciekawostki": [
+      "Osiedle powstało w myśl idei „wygodnie, tanio, solidnie”."
+    ],
+    "summary_en": "Barcicka Street, in Bielany, is part of a pilot estate of single-family houses designed by Romuald Miller for the Związkowiec cooperative. The houses were shown at the 1932 exhibition 'Tani Dom Własny' ('Cheap Own Home') and survive today.",
+    "ludzie": [
+      {"kto": "Romuald Miller", "rola": "autor koncepcji pojedynczych domów na osiedlu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Barcicka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Barcicka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-brzozowa",
+    "nazwa": "Ulica Brzozowa",
+    "name_en": "Brzozowa Street",
+    "typ": "ulica",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Brzozowa",
+    "adres_historyczny": "Podwalna; Między Spichlerzami",
+    "lat": 52.251372,
+    "lon": 21.0118213,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy, nadana oficjalnie w 1770, pochodzi od brzóz rosnących na cmentarzu szpitala św. Łazarza, znajdującym się u zbiegu z Mostową.",
+      "Dawniej była zwana Podwalną, ze względu na położenie pod murami obronnymi miasta, oraz Między Spichlerzami – od spichlerzy po stronie parzystej.",
+      "W 1773 roku utworzono Komisję Edukacji Narodowej; jej biura znajdowały się częściowo w domu przy ulicy Brzozowej.",
+      "Około 1921–1923 między ulicami Brzozową i Bugaj wybudowano monumentalny gmach mieszkalny Pocztowej Kasy Oszczędności, zaprojektowany przez Mariana Lalewicza.",
+      "Dwudziestolecie międzywojenne: dawny spichlerz Strubiczów przebudowano w dom profesorski według projektu Kazimierza Tołłoczki; w 1944 roku został zniszczony, odbudowano go w latach 1959–1962.",
+      "W 1965 roku założenie urbanistyczne ulicy wpisano do rejestru zabytków.",
+      "Brzozowa 12 to dawny spichlerz Baltazara Strubicza z 1633 roku; nad wejściem zachowana jest tablica fundacyjna z roku 1637 z herbami Brochwicz i Doliwa."
+    ],
+    "ciekawostki": [
+      "Góra Gnojna to dawne wysypisko śmieci na końcu ulic Celnej i Brzozowej od strony Wisły.",
+      "Brzozowa 6/8a to tzw. Lengrenówka, dawne mieszkanie i pracownia Zbigniewa Lengrena, część Muzeum Karykatury im. Eryka Lipińskiego."
+    ],
+    "summary_en": "Brzozowa Street in Warsaw's Old Town runs from Celna to Mostowa. Its name dates from 1770 and comes from birches growing in the cemetery of St Lazarus Hospital. The street's 17th-century granaries were converted to houses, and the whole urban layout was entered in the heritage register in 1965.",
+    "ludzie": [
+      {"kto": "Baltazar Strubicz", "rola": "właściciel spichlerza z 1633 roku (Brzozowa 12)", "wiki": null},
+      {"kto": "Kazimierz Tołłoczko", "rola": "architekt przebudowy spichlerza Strubiczów (dom profesorski) i kamienicy Brzozowa 12 (1921)", "wiki": null},
+      {"kto": "Marian Lalewicz", "rola": "architekt gmachu Pocztowej Kasy Oszczędności", "wiki": null},
+      {"kto": "Zbigniew Lengren", "rola": "mieszkaniec i twórca pracowni w Brzozowa 6/8a", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Podwalna",
+      "Między Spichlerzami"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Brzozowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Brzozowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek DZIELNICE: Bielany, Śródmieście; artykuł opisuje Stare Miasto. W polu dzielnica wpisano pierwszą pozycję z nagłówka. Współrzędne z nagłówka (środek odcinka)."
+  }
+]

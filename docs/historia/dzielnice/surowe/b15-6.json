@@ -1,0 +1,234 @@
+[
+  {
+    "id": "wybrzeze-kosciuszkowskie",
+    "nazwa": "ul. Wybrzeże Kościuszkowskie",
+    "name_en": "Wybrzeże Kościuszkowskie Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wybrzeże Kościuszkowskie",
+    "adres_historyczny": null,
+    "lat": 52.2339605,
+    "lon": 21.0387996,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś (nazwa od 1917)",
+    "istnieje": true,
+    "fakty": [
+      "Dawny bulwar między mostami Śląsko-Dąbrowskim i Poniatowskiego; w XVIII i XIX wieku miejsce składowania gruzu i śmieci oraz rozładunku piasku i towarów przewożonych Wisłą.",
+      "Na początku XX wieku powstały tu liczne przystanie.",
+      "Nazwę nadano 15 października 1917 roku, w setną rocznicę śmierci Tadeusza Kościuszki.",
+      "1 listopada 1930 roku przy ulicy, u wylotu ul. Karowej, odsłonięto pomnik Dowborczyków.",
+      "W czerwcu 1939 roku nad Wisłą, na osi ul. Tamka, odsłonięto pomnik Syreny.",
+      "5 sierpnia 1934 roku na Wybrzeżu Kościuszkowskim odbyły się zaślubiny Rodła z Wisłą: 3000 Polaków z zagranicy przeszło ulicami Warszawy nad Wisłę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wybrzeże Kościuszkowskie is a riverside promenade in Powiśle, once a dumping and unloading place on the Vistula. It was named in 1917 for the centenary of Tadeusz Kościuszko's death, and its monuments include the Syrenka statue unveiled in 1939.",
+    "ludzie": [
+      {"kto": "Tadeusz Kościuszko", "rola": "patron ulicy (nazwa 1917, setna rocznica śmierci)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Wybrzeże Kościuszkowskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wybrze%C5%BCe_Ko%C5%9Bciuszkowskie_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia też Szpital im. ks. Anny Mazowieckiej, Centrum Nauki Kopernik, Szarą Willę i inne obiekty bez osobnych rekordów."
+  },
+  {
+    "id": "wojtowska",
+    "nazwa": "ul. Wójtowska",
+    "name_en": "Wójtowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wójtowska",
+    "adres_historyczny": null,
+    "lat": 52.2553676,
+    "lon": 21.0073351,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała pod koniec XIV wieku na gruntach wójta Nowego Miasta, jako granica Nowej Warszawy i połączenie ul. Przyrynek z ul. Zakroczymską.",
+      "W połowie XVII wieku część terenów przy ulicy zakupił kanclerz litewski Jan Fryderyk Sapieha, by rozbudować swój pałac przy ul. Zakroczymskiej.",
+      "Po uregulowaniu strumienia ulica otrzymała nawierzchnię brukową, ale wciąż była słabo zabudowana.",
+      "Cztery pozostałe domy przy Wójtowskiej wyburzono w 1851 roku w związku z powiększeniem esplanady Cytadeli Warszawskiej.",
+      "W okresie międzywojennym na zajmowanym terenie wybudowano gmach Polskiej Wytwórni Papierów Wartościowych, przyporządkowany numeracji ul. Romana Sanguszki.",
+      "Cała zabudowa mieszkalna ulicy została zniszczona w 1944 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wójtowska was laid out at the end of the 14th century as the border of Nowe Miasto, linking Przyrynek with Zakroczymska. Its interwar wing of the Security Printing Works and its residential buildings were destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Jan Fryderyk Sapieha", "rola": "kanclerz litewski, który w połowie XVII wieku zakupił tereny przy ulicy na rozbudowę pałacu przy Zakroczymskiej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bełcząca lub Nalewka (rzeczka płynąca środkiem ulicy)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Wójtowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_W%C3%B3jtowska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wśród budynków wyróżniała się kamienica Langowskiego z połowy XVIII wieku, narożna z ul. Przyrynek (dotrwała do 1944 roku)."
+  },
+  {
+    "id": "wasko-dunaj",
+    "nazwa": "ul. Wąski Dunaj",
+    "name_en": "Wąski Dunaj Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wąski Dunaj",
+    "adres_historyczny": "Dunay (wspólna nazwa z Szerokim Dunajem, XIX w.)",
+    "lat": 52.2490906,
+    "lon": 21.0097343,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotna nazwa Dunay była wspólnym określeniem zarówno ul. Wąskiego, jak i ul. Szerokiego Dunaju; wzięła się od strumienia Dunaj, który wypływał ze źródełka na dzisiejszym Szerokim Dunaju.",
+      "U zbiegu Szerokiego Dunaju z murami obronnymi stała baszta, zastąpiona w latach 1598–1612 Bramą Nową, nazywaną od połowy XVII wieku Bramą Poboczną.",
+      "W 1765 roku na rogu Wąskiego Dunaju i ul. Podwale, w międzymurzu, uruchomiono ludwisarnię założoną przez króla Stanisława Augusta Poniatowskiego.",
+      "Wyburzenie Bramy Pobocznej w 1804 roku pozwoliło połączyć Wąski Dunaj z ul. Podwale.",
+      "Cała zabudowa ulicy została zniszczona w 1944 roku; powojenna rekonstrukcja w latach 1949–1962 nie objęła domu nr 7/9.",
+      "Pod numerem 8 znajduje się kamienica pod Chrystusem, pierwotnie z 1632 roku, której wystrój rzeźbiarski zmieniono w czasie rekonstrukcji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wąski Dunaj is a narrow Old Town street running from the Old Town market to Podwale, named after a stream that rose on today's Szeroki Dunaj. The 1804 demolition of the Side Gate allowed the street to reach Podwale.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "król, który założył ludwisarnię w międzymurzu przy ulicy (1765)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dunay (XIX w., wspólna nazwa z Szerokim Dunajem)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Wąski Dunaj w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_W%C4%85ski_Dunaj_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wspomina murowaną synagogę z XIV wieku na rogu z ul. Żydowską (nieistniejącą); nie wyodrębniono osobnego rekordu."
+  },
+  {
+    "id": "zagorna",
+    "nazwa": "ul. Zagórna",
+    "name_en": "Zagórna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zagórna",
+    "adres_historyczny": null,
+    "lat": 52.2267236,
+    "lon": 21.0409257,
+    "lokalizacja": "przyblizona",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę nadano w 1919 roku; ma charakter topograficzny i nawiązuje do sąsiedztwa z ul. Górną (od 1922 roku ul. Górnośląską).",
+      "Niegdyś w miejscu ulicy znajdowały się duże składy drewna spławianego Wisłą; ulicę przebito po I wojnie światowej, a w latach 1935–1939 była intensywnie zabudowywana.",
+      "W latach 1929–1945 u wylotu ulicy, na terenie Klubu Sportowego Pracowników Miejskich „Syrena” (ul. Solec 8), stał pomnik Syreny.",
+      "1 sierpnia 1944 roku Niemcy zatrzymali tramwaj jadący ul. Czerniakowską, wyciągnęli z niego dwóch młodych Polaków i rozstrzelali ich przy ogrodzeniu Szkoły Powszechnej nr 29.",
+      "W czasie powstania batalion „Parasol” kwaterował przy ulicy; w domu im. Wojciecha Sawickiego zorganizowano powstańczy szpital polowy nr 2.",
+      "19 września 1944 roku ok. 200 powstańców ze zgrupowania „Radosław” ewakuowało się kanałem na Mokotów; tablicę upamiętniającą to wydarzenie umieszczono na budynku nr 2/4.",
+      "We wrześniu 1973 roku pod nr 1 otwarto hotel „Solec”; w 2006 roku został zburzony, a w jego miejscu powstał hotel Etap, późniejszy Ibis Budget."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zagórna is a short Solec-side street named in 1919 after its neighbour, the former Górna street. It was a combat area during the Warsaw Uprising, when about 200 insurgents escaped through a sewer on 19 September 1944.",
+    "ludzie": [
+      {"kto": "Wojciech Sawicki", "rola": "patron domu im. Wojciecha Sawickiego przy ulicy (nr 3)", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "adaptował projekt szwedzkich architektów dla hotelu „Solec” (1973)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zagórna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zag%C3%B3rna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Pole dawne_nazwy zawiera nazwę sąsiedniej ulicy, którą artykuł podaje jako punkt odniesienia; nie jest to dawna nazwa Zagórnej."
+  },
+  {
+    "id": "zakroczymska",
+    "nazwa": "ul. Zakroczymska",
+    "name_en": "Zakroczymska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zakroczymska",
+    "adres_historyczny": "Trakt Zakroczymski, ul. Toruńska lub Błońska",
+    "lat": 52.257834,
+    "lon": 21.0043604,
+    "lokalizacja": "przyblizona",
+    "okres": "średniowiecze–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na miejscu średniowiecznego traktu do Zakroczymia i dalej do Torunia; zwano ją Traktem Zakroczymskim, ulicą Toruńską lub Błońską.",
+      "W 1621 roku została rozdzielona na dwie części po usypaniu Wału Zygmuntowskiego z rozkazu króla Zygmunta III Wazy.",
+      "W 1646 roku franciszkanie osiedlili się u zbiegu z obecną ul. Franciszkańską; kościół św. Franciszka wzniesiono w latach 1679–1691 według projektu Jana Chrzciciela Ceroniego.",
+      "W latach 1810–1816 pałac Sapiehów wynajęto na koszary, a w 1817 roku nabyto go w tym celu; przebudowę kierował Wilhelm Henryk Minter, który zmienił wystrój na klasycystyczny.",
+      "W latach 1750–1760 staraniem Komisji Brukowej ulica otrzymała brukowaną nawierzchnię, a nad rzeczką Bełczącą przerzucono most.",
+      "Większość zabudowy ulicy została zburzona w 1944 roku; kościół św. Franciszka odbudowano w latach 1945–1956.",
+      "Uchwałą Rady Narodowej z 16 listopada 1989 roku odcinkowi między ul. Mariana Buczka a Bramą Nowomiejską Cytadeli nadano ponownie nazwę ul. Jana Jeziorańskiego."
+    ],
+    "ciekawostki": [
+      "Barokowe płótno z 1664 roku w kościele św. Franciszka przedstawiające św. Antoniego Padewskiego namalował najprawdopodobniej malarz królewski Mathias Kargen."
+    ],
+    "summary_en": "Zakroczymska was the medieval road to Zakroczym and Toruń, running from Freta, Kościelna and Franciszkańska streets toward the Citadel. The Franciscan church of St Francis, designed by Jan Chrzciciel Ceroni, was rebuilt after 1945.",
+    "ludzie": [
+      {"kto": "Zygmunt III Waza", "rola": "król, z jego rozkazu usypano Wał Zygmuntowski (1621), który przeciął ulicę", "wiki": null},
+      {"kto": "Jan Chrzciciel Ceroni", "rola": "projektant kościoła św. Franciszka (1679–1691)", "wiki": null},
+      {"kto": "Wilhelm Henryk Minter", "rola": "architekt przebudowy pałacu Sapiehów na koszary (1817)", "wiki": null},
+      {"kto": "Hieronim Wołłowicz", "rola": "starosta generalny żmudzki, który zbudował tu dwór w XVII wieku", "wiki": null},
+      {"kto": "Mathias Kargen", "rola": "malarz królewski, prawdopodobny autor barokowego obrazu w kościele św. Franciszka (1664)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Trakt Zakroczymski", "ul. Toruńska", "ul. Błońska"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zakroczymska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zakroczymska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wspomina też Kamienicę Jakuba Fontany (nr 2), Zdrój Królewski i Park Traugutta; nie wyodrębniono ich w osobnych rekordach."
+  },
+  {
+    "id": "zapiecek",
+    "nazwa": "ul. Zapiecek",
+    "name_en": "Zapiecek Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zapiecek",
+    "adres_historyczny": "Poprzeczna (po 1743); fragment ul. Piekarskiej",
+    "lat": 52.2490617,
+    "lon": 21.0120895,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1743–dziś (nazwa od 1770)",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie ulica Zapiecek była fragmentem ulicy Piekarskiej; po 1743 roku pojawiła się jej osobna nazwa – Poprzeczna.",
+      "Obecną nazwę, o charakterze topograficzno-metaforycznym, nadano w 1770 roku.",
+      "Po rozebraniu w 1831 roku dwóch kamienic przy ul. Świętojańskiej i Piwnej powstał placyk w zachowanej do dziś formie.",
+      "W XIX wieku na Zapiecku odbywał się popularny w Warszawie targ na gołębie i ptaki śpiewające.",
+      "W 1944 roku cała zabudowa ulicy została zniszczona.",
+      "We wrześniu 1985 roku w bruk ulicy wmurowano płytę granitową upamiętniającą wpisanie warszawskiego Starego Miasta na listę światowego dziedzictwa UNESCO."
+    ],
+    "ciekawostki": [
+      "Na rogu Zapiecka i ul. Piwnej Stefan Wiechecki umiejscowił po wojnie książkową „Cafe pod Minogą”; w tym miejscu działa dziś restauracja „Zapiecek”."
+    ],
+    "summary_en": "Zapiecek is a tiny Old Town lane between Świętojańska and Piwna, named in 1770 with a topographic-metaphoric name. A pigeon market was held here in the 19th century, and the whole street was destroyed in 1944.",
+    "ludzie": [
+      {"kto": "Stefan Wiechecki", "rola": "umiejscowił po wojnie na rogu z ul. Piwną „Cafe pod Minogą”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Poprzeczna (po 1743)", "fragment ul. Piekarskiej"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zapiecek w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zapiecek_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zielna",
+    "nazwa": "ul. Zielna",
+    "name_en": "Zielna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zielna",
+    "adres_historyczny": "Ogrodowa (nazwa ulicy Próżnej); Zielona (nazwa oboczna)",
+    "lat": 52.2377638,
+    "lon": 21.0055815,
+    "lokalizacja": "przyblizona",
+    "okres": "1757–dziś (nazwa od 1770)",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona na terenie jurydyki Bielino, utworzonej w 1757 roku; biegła od ul. Próżnej na południe, a przy ulicy (pod nr 23) znajdował się ratusz jurydyki.",
+      "Oficjalnie nadano jej nazwę Zielna w 1770 roku; funkcjonowała też nazwa oboczna Zielona.",
+      "W 1904 roku pod nr 37 oddano budynek Towarzystwa Akcyjnego Telefonów „Cedergren”; w 1910 roku na sąsiedniej działce (nr 39) zakończono budowę pierwszego w Warszawie wysokościowca z centralą telefoniczną.",
+      "W 1929 roku do budynku pod nr 25 przeniesiono siedzibę Polskiego Radia, które pełniło funkcję stołecznej rozgłośni do kapitulacji miasta w 1939 roku.",
+      "1 sierpnia 1944 roku powstańcy z batalionu „Kiliński” podjęli pierwszą, nieudaną próbę zdobycia PAST-y, ważnego węzła łączności niemieckiej; budynek zdobyto 20 sierpnia 1944 roku.",
+      "W 1952 roku w związku z budową Pałacu Kultury i Nauki zlikwidowano odcinek ulicy na południe od ul. Świętokrzyskiej; w 1955 roku wmurowano tablicę „Tu było skrzyżowanie ulic Chmielnej i Zielnej”.",
+      "Z przedwojennej zabudowy zachowano kompleks PAST-y i pałac Janaszów, wpisane do rejestru zabytków w 1965 roku."
+    ],
+    "ciekawostki": [
+      "Według Franciszka Sobieszczańskiego nazwa miała związek z tym, że ulica odznaczała się licznie rosnącym na niej zielem."
+    ],
+    "summary_en": "Zielna runs from Próżna to Świętokrzyska and was the site of the PAST telephone exchange, which Polish insurgents tried to capture in August 1944. Much of the street was cleared in 1952 for the Palace of Culture and Science.",
+    "ludzie": [
+      {"kto": "Lars Magnus Ericsson", "rola": "twórca technologii centrali telefonicznej „Cedergrenu” (nr 37)", "wiki": null},
+      {"kto": "Franciszek Sobieszczański", "rola": "historyk, według którego nazwa wzięła się od zieleni rosnącej przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Ogrodowa (nazwa ulicy Próżnej)", "Zielona (nazwa oboczna)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Zielna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zielna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule odnotowano też gimnazja im. Leonii Rudzkiej (nr 13) i Leona Okręta i Antoniego Paprockiego (nr 27), a także pawilony z lat 50. i osiedle Grzybów; nie wyodrębniono ich w osobnych rekordach. Pawilony handlowe rozebrano w 2019 roku."
+  }
+]

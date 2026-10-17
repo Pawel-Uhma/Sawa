@@ -1,0 +1,227 @@
+[
+  {
+    "id": "gdanski-business-center",
+    "nazwa": "Gdański Business Center",
+    "name_en": "Gdański Business Center",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rejon ulic Inflanckiej i Andersa",
+    "adres_historyczny": "dawna zajezdnia Miejskich Zakładów Autobusowych „Inflancka”",
+    "lat": 52.257,
+    "lon": 20.994,
+    "lokalizacja": "dokladna",
+    "okres": "2014–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół czterech budynków biurowych powstał na terenie dawnej zajezdni Miejskich Zakładów Autobusowych „Inflancka”.",
+      "Inwestorem zespołu była spółka HB Reavis.",
+      "Pierwsza faza, zaprojektowana przez E&L Architects, powstała w 2014 roku.",
+      "Za projekt ukończonego w 2016 drugiego etapu odpowiadała pracownia Hermanowicz Rewski Architekci.",
+      "Gdański Business Center został zrealizowany zgodnie z wymogami certyfikatu ekologicznego BREEAM na poziomie Excellent.",
+      "Na co dzień pracuje tu ponad 9 600 osób."
+    ],
+    "ciekawostki": [
+      "Między budynkiem A a wejściem do stacji Dworzec Gdański zbudowano schody, które znacznie skracają dojście do pierwszej linii metra.",
+      "Na miejscu działa przedszkole z własnym placem zabaw."
+    ],
+    "summary_en": "Gdański Business Center is a complex of four office buildings in Muranów, Warsaw, built on the site of the former Inflancka bus depot. The first phase was completed in 2014 and the second in 2016, and the complex holds BREEAM Excellent certification.",
+    "ludzie": [
+      {"kto": "HB Reavis", "rola": "inwestor", "wiki": null},
+      {"kto": "E&L Architects", "rola": "projekt pierwszej fazy (2014)", "wiki": null},
+      {"kto": "Hermanowicz Rewski Architekci", "rola": "projekt drugiego etapu (ukończony 2016)", "wiki": null}
+    ],
+    "dawne_nazwy": ["zajezdnia Miejskich Zakładów Autobusowych „Inflancka”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gdański Business Center", "url": "https://pl.wikipedia.org/wiki/Gda%C5%84ski_Business_Center"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-gimnazjum-wojciecha-gorskiego-hortensji-2",
+    "nazwa": "Budynek Gimnazjum Wojciecha Górskiego (ul. Hortensji 2)",
+    "name_en": "Building of the Wojciech Górski Gymnasium (Hortensji 2)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Hortensji 2 (na tyłach Nowego Światu)",
+    "lat": 52.234079,
+    "lon": 21.017146,
+    "lokalizacja": "przyblizona",
+    "okres": "1883–1944",
+    "istnieje": false,
+    "fakty": [
+      "W 1883 szkoła Wojciecha Górskiego została przeniesiona do budynku przy ulicy Hortensji 2 na tyłach Nowego Światu.",
+      "Gmach, którego autorami byli Artur Göbel i Józef Pius Dziekoński, otrzymał trzy piętra i został wzniesiony z dużą ilością elementów odlanych z żeliwa.",
+      "Od 1903 placówka działała jako szkoła realna, a od 1905 jako ośmioklasowe gimnazjum filologiczne z językiem polskim wykładowym.",
+      "5 września 1944 bomba przebiła się przez 4 kondygnacje i kompletnie zniszczyła budynek szkoły, zabijając wiele osób chroniących się w piwnicach."
+    ],
+    "ciekawostki": [
+      "Popiersie Wojciecha Górskiego, ocalałe ze zniszczeń, w 1957 roku ustawiono w miejscu istnienia budynku, na rogu obecnych ulic Wojciecha Górskiego i Juliana Tuwima."
+    ],
+    "summary_en": "The building at Hortensji 2, behind Nowy Świat, housed the Wojciech Górski gymnasium from 1883. A bomb destroyed it on 5 September 1944 during the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Wojciech Górski", "rola": "pedagog, założyciel szkoły", "wiki": null},
+      {"kto": "Artur Göbel", "rola": "autor projektu budynku", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "autor projektu budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gimnazjum Wojciecha Górskiego w Warszawie", "Gimnazjum pod wezwaniem św. Wojciecha w Warszawie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gimnazjum Wojciecha Górskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gimnazjum_Wojciecha_G%C3%B3rskiego_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord o budynku, nie o szkole. Współrzędne z nagłówka artykułu o szkole. Artykuł nie podaje dzisiejszego adresu ani tego, co stoi na miejscu budynku."
+  },
+  {
+    "id": "budynek-hoza-88",
+    "nazwa": "Budynek przy ul. Hożej 88 (dawna Szkoła Budowlana, „Samochodówka”)",
+    "name_en": "Building at Hoża 88 (former Building School, “Samochodówka”)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Hoża 88",
+    "adres_historyczny": null,
+    "lat": 52.2268,
+    "lon": 21.0054,
+    "lokalizacja": "dokladna",
+    "okres": "1919–2017",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 1919–1920 dla prowadzonej przez Alfonsa Graviera Szkoły Budowlanej.",
+      "Pod koniec lat 30. w budynku mieściły się także szkoły: Chemiczno-Przemysłowa, Drogowa i Miernicza.",
+      "Podczas II wojny światowej funkcjonowała tu Państwowa Szkoła Techniczno-Mechaniczna, a następnie stacjonował Frontleitstelle, niemiecki ośrodek zaopatrzenia frontu.",
+      "Po wojnie Państwowa Szkoła Techniczna została w 1975 roku przekształcona w Zespół Szkół Samochodowych i Licealnych Nr 1, popularną „Samochodówkę”.",
+      "Od września 2013 roku w tym budynku miał siedzibę Zespół Szkół nr 125, w skład którego weszło Gimnazjum nr 43 wraz z IX Liceum im. Hoffmanowej.",
+      "1 września 2017 roku gimnazjum włączono do Liceum im. Hoffmanowej, a Zespół Szkół nr 125 zlikwidowano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Built in 1919–1920 for a building trade school at Hoża 88 in Śródmieście. Over the decades it housed technical schools, a German front-supply centre during the occupation, and from 2013 to 2017 Zespół Szkół nr 125.",
+    "ludzie": [
+      {"kto": "Alfons Gravier", "rola": "prowadził Szkołę Budowlaną, dla której powstał budynek", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szkoła Budowlana Alfonsa Graviera", "Państwowa Szkoła Techniczno-Mechaniczna", "Zespół Szkół Samochodowych i Licealnych Nr 1 („Samochodówka”)", "Zespół Szkół nr 125"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gimnazjum nr 43 im. Wojska Polskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gimnazjum_nr_43_im._Wojska_Polskiego_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Rekord o budynku, nie o szkole. Artykuł podaje „końca lat 30. XIX w.”, zapewne chodzi o XX w. Artykuł nie mówi, co dzieje się z budynkiem po 2017 roku."
+  },
+  {
+    "id": "gmach-banku-gospodarstwa-krajowego",
+    "nazwa": "Gmach Banku Gospodarstwa Krajowego",
+    "name_en": "Bank of National Economy (BGK) Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 7",
+    "adres_historyczny": null,
+    "lat": 52.2314,
+    "lon": 21.0203,
+    "lokalizacja": "dokladna",
+    "okres": "1928–1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę rozpoczęto 21 maja 1928 roku, a gmach oddano do użytku 6 grudnia 1931 roku.",
+      "Modernistyczny, monumentalny gmach wzniesiono według projektu Rudolfa Świerczyńskiego, wybranego spośród 26 złożonych projektów konkursowych.",
+      "W latach 1957–2001 był siedzibą Polskiej Agencji Prasowej.",
+      "W 1965 roku gmach został wpisany do rejestru zabytków.",
+      "W 2020 roku rozpoczęła się gruntowna modernizacja wnętrz według projektu biura JEMS Architekci.",
+      "Gmach nie został zniszczony w czasie II wojny światowej, a w czasie powstania warszawskiego był zajmowany przez Niemców."
+    ],
+    "ciekawostki": [
+      "Niemcy nie wysadzili gmachu w powietrze, ale zrabowali wyposażenie i ok. 30 mln złotych z rozbitego skarbca.",
+      "Pierwotny projekt konkursowy przewidywał wspólną siedzibę z Ministerstwem Robót Publicznych; ministerstwo zrezygnowało i w lutym 1929 roku rozpoczęło budowę nowej siedziby przy ul. Tytusa Chałubińskiego."
+    ],
+    "summary_en": "A monumental modernist bank building at Aleje Jerozolimskie 7, by the Charles de Gaulle roundabout, designed by Rudolf Świerczyński and built in 1928–1931. It housed the Polish Press Agency from 1957 to 2001 and has been a listed monument since 1965.",
+    "ludzie": [
+      {"kto": "Rudolf Świerczyński", "rola": "autor projektu (wygrał konkurs)", "wiki": null},
+      {"kto": "Jan Szczepkowski", "rola": "płaskorzeźby zdobiące gmach", "wiki": null},
+      {"kto": "Ludwik Tylbor", "rola": "projektant konstrukcji żelbetowej", "wiki": null},
+      {"kto": "JEMS Architekci", "rola": "projekt modernizacji wnętrz (od 2020)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gmach Banku Gospodarstwa Krajowego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gmach_Banku_Gospodarstwa_Krajowego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-biblioteki-ordynacji-krasinskich",
+    "nazwa": "Gmach Biblioteki Ordynacji Krasińskich",
+    "name_en": "Krasiński Entail Library Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Okólnik 9",
+    "adres_historyczny": null,
+    "lat": 52.235287,
+    "lon": 21.021636,
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zasadnicza część obiektu powstała w latach 1911–1913, a właściwe prace budowlane rozpoczęły się w 1912 roku.",
+      "Działkę zakupiono w 1910 roku od Marii Wodzińskiej; wcześniej znajdowała się na niej ujeżdżalnia.",
+      "Uroczyste otwarcie biblioteki miało miejsce 2 grudnia 1930 roku.",
+      "W 1941 roku budynek stał się jedną z siedzib Staatsbibliothek Warschau; Niemcy zaczęli podpalać zbiory we wrześniu 1944 roku.",
+      "W 1958 roku budynek otrzymała Biblioteka Narodowa.",
+      "1 lipca 1965 roku budynek został wpisany do rejestru zabytków pod numerem 729.",
+      "W 2023 roku minister rozwoju i technologii umorzył postępowanie w sprawie zwrotu budynku spadkobiercom przedwojennych właścicieli."
+    ],
+    "ciekawostki": [
+      "Fasadę zdobią cztery kolumny, nad którymi umieszczono kamienne zbroje i łaciński napis AMOR PATRIÆ NOSTRA LEX (Miłość ojczyzny naszym prawem).",
+      "Nad głównym wejściem znajduje się kartusz z herbem Krasińskich, Ślepowronem."
+    ],
+    "summary_en": "An early-modernist former library of the Krasiński Entail at Okólnik 9, built in 1911–1913 and officially opened as a library in 1930. The building was damaged in 1944, later used by the National Library, and has been a listed monument since 1965.",
+    "ludzie": [
+      {"kto": "Edward Krasiński", "rola": "ordynat, zamawiający gmach", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "pierwotne plany budynku", "wiki": null},
+      {"kto": "Henryk Julian Gay", "rola": "dopracował projekt", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biblioteka Ordynacji Krasińskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gmach Biblioteki Ordynacji Krasińskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gmach_Biblioteki_Ordynacji_Krasi%C5%84skich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "gmach-centrali-pko-marszalkowska-134",
+    "nazwa": "Gmach Centrali Pocztowej Kasy Oszczędności",
+    "name_en": "Postal Savings Bank (PKO) Headquarters Building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska 134 (róg ul. Świętokrzyskiej 37)",
+    "lat": 52.2348,
+    "lon": 21.0095,
+    "lokalizacja": "dokladna",
+    "okres": "1938–1944",
+    "istnieje": false,
+    "fakty": [
+      "Gmach wzniesiono w latach 1938–1939 według projektu Bolesława Szmidta i Józefa Vogtmana jako siedzibę zarządu Pocztowej Kasy Oszczędności (PKO).",
+      "Wzniesiono go na placu po dwupiętrowej kamienicy Grzegorza Stiagatowa, wyburzonej w 1936 lub 1938 roku.",
+      "Od 17 września 1939 roku mieściła się tu siedziba Dowództwa Obrony Warszawy, przeniesiona z pałacu Zamoyskich przy ul. Nowy Świat.",
+      "Podczas okupacji niemieckiej obiekt służył Miejskim Zakładom Komunikacyjnym.",
+      "W 1944 roku gmach został zrujnowany podczas powstania warszawskiego.",
+      "Szkielet budynku stał do lat 60., kiedy został rozebrany.",
+      "W 2013 roku w tym miejscu wzniesiono betonową wiatę, osłaniającą południowo-wschodnie wejście do stacji metra Świętokrzyska.",
+      "W latach 2016–2018 zbudowano na części posesji gmach biurowy Centrum Marszałkowska."
+    ],
+    "ciekawostki": [
+      "Według relacji Aleksandra Kamińskiego z książki „Kamienie na szaniec” na budynku wisiała wielka flaga hitlerowska, którą zerwał harcerz Szarych Szeregów Alek Dawidowski."
+    ],
+    "summary_en": "The PKO headquarters at Marszałkowska 134 and Świętokrzyska 37 was built in 1938–1939 and ruined in the Warsaw Uprising in 1944. Its skeleton was demolished in the 1960s, and a concrete shelter over the Świętokrzyska metro entrance now marks part of the site.",
+    "ludzie": [
+      {"kto": "Bolesław Szmidt", "rola": "współprojektant gmachu", "wiki": null},
+      {"kto": "Józef Vogtman", "rola": "projektant gmachu", "wiki": null},
+      {"kto": "Grzegorz Stiagatow", "rola": "właściciel wyburzonej kamienicy", "wiki": null},
+      {"kto": "Aleksander Kamiński", "rola": "autor relacji o fladze w książce „Kamienie na szaniec”", "wiki": null},
+      {"kto": "Alek Dawidowski", "rola": "harcerz Szarych Szeregów, który zerwał flagę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gmach Centrali Pocztowej Kasy Oszczędności w Warszawie", "url": "https://pl.wikipedia.org/wiki/Gmach_Centrali_Pocztowej_Kasy_Oszcz%C4%99dno%C5%9Bci_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres nieokreślony w artykule. Na części posesji w 2016–2018 powstał gmach biurowy Centrum Marszałkowska."
+  }
+]

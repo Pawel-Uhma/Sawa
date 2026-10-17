@@ -1,0 +1,357 @@
+[
+  {
+    "id": "zegar-sloneczny-ogrod-saski",
+    "nazwa": "Zegar słoneczny w Ogrodzie Saskim",
+    "name_en": "Sundial in the Saxon Garden",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Ogród Saski, aleja Główna przy fontannie",
+    "adres_historyczny": null,
+    "lat": 52.24073,
+    "lon": 21.0099,
+    "lokalizacja": "dokladna",
+    "okres": "1863–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fundatorem zegaru był Antoni Szeliga Magier, co potwierdza napis na tarczy: ERECTUM EX LEGATO ANTONI MAGIER. A.D. MDCCCLXIII.",
+      "Zegar ustawiono w parku w 1863 roku, 26 lat po śmierci fundatora, dzięki jego zapisowi testamentowemu w wysokości 1000 zł.",
+      "Zegar, z dawna nazywany kompasem, został częściowo zniszczony podczas II wojny światowej.",
+      "W 1969 roku zegar odrestaurował Tadeusz Łopieński: zrekonstruował gnomon (igłę kompasu) i uzupełnił ubytki marmuru w tarczy.",
+      "Zegar stoi w alei Głównej Ogrodu, obok fontanny, patrząc od strony Grobu Nieznanego Żołnierza.",
+      "Tarcza o średnicy ok. 80 cm jest wyeksponowana na żłobionej kolumnie otoczonej ozdobnym ogrodzeniem."
+    ],
+    "ciekawostki": [
+      "Na tarczy wyryto siatkę linii wskazujących godziny, kwadranse i pięciominutowe odstępy; w centrum umieszczono półksiężyc nawiązujący do zegara słonecznego w Łazienkach Królewskich.",
+      "Na kompasie widnieje niewielki i niekompletny napis „A. SIKORSKI W WAR.”, wskazujący prawdopodobnego wykonawcę zegara."
+    ],
+    "summary_en": "The sundial in the Saxon Garden, next to the fountain, was set up in 1863 with a bequest from Antoni Szeliga Magier, 26 years after his death. It was damaged in World War II and restored in 1969.",
+    "ludzie": [
+      {"kto": "Antoni Szeliga Magier", "rola": "fundator zegara, zapis testamentowy 1000 zł", "wiki": null},
+      {"kto": "Tadeusz Łopieński", "rola": "odrestaurował zegar w 1969 roku", "wiki": null},
+      {"kto": "A. Sikorski", "rola": "prawdopodobny wykonawca zegara (napis na kompasie)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "kompas (dawna nazwa zegara słonecznego)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zegar słoneczny w Ogrodzie Saskim", "url": "https://pl.wikipedia.org/wiki/Zegar_s%C5%82oneczny_w_Ogrodzie_Saskim"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "klasztor-kapucynow-kapucynska-4",
+    "nazwa": "Zespół klasztorny kapucynów w Warszawie",
+    "name_en": "Capuchin monastery and church complex, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kapucyńska 4 (klasztor), ul. Miodowa 13 (kościół)",
+    "adres_historyczny": null,
+    "lat": 52.24672,
+    "lon": 21.00904,
+    "lokalizacja": "dokladna",
+    "okres": "1683–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół kościelno-klasztorny został zbudowany w latach 1683–1694 jako fundacja Jana III Sobieskiego, wotum dziękczynne za zwycięstwo pod Chocimiem i Wiedniem.",
+      "Budowę zaczęto 16 lipca 1683 r.; 11 lipca 1683 roku król wystawił dyplom fundacyjny.",
+      "16 lipca 1683 r., w obecności królowej Marysieńki i synów królewskich, król osobiście położył kamień węgielny.",
+      "W 1864 r., w wyniku ukazu kasacyjnego, klasztor kapucynów został zamknięty, a kościół przekazano władzy diecezjalnej.",
+      "W 1888 roku rozebrano budynki klasztorne; w ich miejscu powstała ulica Kapucyńska.",
+      "Podczas powstania warszawskiego w 1944 r. kościół uległ znacznym zniszczeniom; spaliły się ołtarze (z wyjątkiem jednego) i obrazy Szymona Czechowicza.",
+      "Poświęcenie odbudowanego kościoła odbyło się 8 września 1946 r.; w 1965 kościół i klasztor wpisano do rejestru zabytków.",
+      "W 1983 roku, 17 czerwca, papież Jan Paweł II odwiedził świątynię i nawiedził urnę z sercem króla Jana III."
+    ],
+    "ciekawostki": [
+      "Projekt zlecono Tylmanowi z Gameren; przy budowie pracowali też Izydor Affaita, Augustyn Locci i Carlo Ceroni, a ostateczny projekt realizacyjny przygotował Augustyn Locci.",
+      "Kapucyni wrócili do swojej warszawskiej siedziby po odzyskaniu niepodległości w 1918 roku."
+    ],
+    "summary_en": "The Capuchin church and monastery were founded by King Jan III Sobieski in 1683–1694 as thanks for his victories at Chocim and Vienna. The monastery was closed in 1864, the church was badly damaged in 1944 and reconsecrated in 1946.",
+    "ludzie": [
+      {"kto": "Jan III Sobieski", "rola": "fundator, położył kamień węgielny 16 lipca 1683 roku", "wiki": null},
+      {"kto": "Jakub z Rawenny", "rola": "kapucyn, który w 1681 roku przybył do Warszawy z trzema zakonnikami", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "architekt, do którego zlecono projekt", "wiki": null},
+      {"kto": "Augustyn Locci", "rola": "architekt, autor ostatecznego projektu realizacyjnego", "wiki": null},
+      {"kto": "Szymon Czechowicz", "rola": "malarz, którego obrazy spłonęły w 1944 roku", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "papież, odwiedził kościół w 1983 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zespół klasztorny kapucynów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zesp%C3%B3%C5%82_klasztorny_kapucyn%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "klasztor-sakramentek-rynek-nowego-miasta-2",
+    "nazwa": "Zespół klasztorny sakramentek w Warszawie",
+    "name_en": "Sacramentine convent at Nowe Miasto Market Square",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Nowego Miasta 2",
+    "adres_historyczny": null,
+    "lat": 52.2532,
+    "lon": 21.0089,
+    "lokalizacja": "dokladna",
+    "okres": "1687–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1687 roku Maria Kazimiera sprowadziła z Francji sakramentki; zakonnice osadzono w pałacu wzniesionym w 1684 r. według projektu Tylmana z Gameren dla Adama i Małgorzaty Kotowskich.",
+      "Pałac przebudowano na klasztor w 1688 r.; 27 czerwca 1688 zakonnice przeprowadzono do nowej siedziby w procesji z Najświętszym Sakramentem, z udziałem króla Sobieskiego.",
+      "W 1865 r. car zadecydował o zamknięciu pensjonatu, skonfiskowaniu posagów zakonnic i zakazał przyjmowania do nowicjatu.",
+      "Kościół św. Kazimierza wzniesiono w latach 1688–1692 w stylu barokowym.",
+      "31 sierpnia 1944 niemieckie lotnictwo całkowicie zniszczyło klasztor i kościół; pod gruzami zginęło 34 siostry, 4 księży i około 1000 osób cywilnych.",
+      "2 września 1944 Niemcy powtórnie zbombardowali kościół, całkowicie go rujnując.",
+      "Przy życiu pozostało 9 zakonnic, które przebywały w opactwie w Staniątkach; w 1952 roku kościół oddano do użytku.",
+      "14 listopada 1974 r. kard. Prymas Wyszyński poświęcił pomnik ku czci poległych pod gruzami; 31 sierpnia odprawiana jest w rocznicę Msza św."
+    ],
+    "ciekawostki": [
+      "W czasie powstania klasztor umożliwiał łączność między Starówką a Rybakami; na prośbę powstańców przeorysza Janina Byszewska otworzyła nieprzerwaną od początku istnienia klauzurę.",
+      "Siostry znane są z wypiekania opłatków i hostii, a ich adoracja Najświętszego Sakramentu trwa nieustannie, dzień i noc."
+    ],
+    "summary_en": "The Sacramentine convent at Rynek Nowego Miasta 2 was founded in 1687 by Queen Maria Kazimiera. On 31 August 1944 German bombing destroyed the convent and the church of St. Casimir, killing 34 nuns and about 1,000 civilians sheltering there; the church reopened in 1952.",
+    "ludzie": [
+      {"kto": "Maria Kazimiera", "rola": "królowa, fundatorka klasztoru, sprowadziła sakramentki z Francji", "wiki": null},
+      {"kto": "Jan III Sobieski", "rola": "król, uczestniczył w przeprowadzce zakonnic w 1688 roku", "wiki": null},
+      {"kto": "Janina Jadwiga Byszewska", "rola": "przeorysza, otworzyła klauzurę dla powstańców w 1944 roku", "wiki": null},
+      {"kto": "Celestyna Wielowieyska", "rola": "przeorysza po matce Byszewskiej", "wiki": null},
+      {"kto": "Wyszyński", "rola": "kard. Prymas, poświęcił pomnik w 1974 roku", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "projektant pałacu z 1684 roku, w którym osadzono zakonnice", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Benedyktynki od Nieustającej Adoracji Najświętszego Sakramentu (oficjalna nazwa zakonu)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zespół klasztorny sakramentek w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zesp%C3%B3%C5%82_klasztorny_sakramentek_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł mówi też o osadzeniu sióstr „na zamku”; wpis podaje pałac z 1684 r. jako miejsce osadzenia. Liczba 9 zakonnic po wojnie wg artykułu."
+  },
+  {
+    "id": "zlota-44",
+    "nazwa": "Złota 44",
+    "name_en": "Złota 44 residential tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Złota 44",
+    "adres_historyczny": null,
+    "lat": 52.23111111,
+    "lon": 21.0025,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "10 maja 2006 roku władze miasta wydały pozytywną decyzję o warunkach zabudowy pod inwestycję; w 2007 roku rozebrano budynek City Center.",
+      "5 grudnia 2007 roku inwestor uzyskał pozwolenie na budowę; budowę rozpoczęto w marcu 2008.",
+      "16 marca 2009 roku, po wybudowaniu 17 kondygnacji, budowę wstrzymano z powodu problemów prawnych; wznowiono ją w styczniu 2011 roku.",
+      "2 lutego 2012 roku na szczycie budynku zawieszono wiechę, oznaczającą zakończenie konstrukcji.",
+      "Na początku kwietnia 2014 roku Orco Property Group wypowiedziało finansowanie, a 28 sierpnia 2014 budynek nabyło konsorcjum Amstar i BBI Development.",
+      "Uroczyste otwarcie budynku odbyło się 13 marca 2017 roku.",
+      "Budynek o wysokości 192 metrów jest najwyższym budynkiem mieszkalnym w Polsce oraz w Unii Europejskiej; apartamenty mieszczą się na piętrach 9–52.",
+      "Wyrokiem z 15 kwietnia 2008 roku Wojewódzki Sąd Administracyjny w Warszawie oddalił skargę sąsiadów na decyzję o warunkach zabudowy."
+    ],
+    "ciekawostki": [
+      "Budynek nazywany jest Żaglem, ale inspiracją dla Daniela Libeskinda było skrzydło orła, symbol zmieniającej się Warszawy, Polski i wolności.",
+      "W budynku po raz pierwszy w Polsce zastosowano trójszybową fasadę modułową Triple Glazed Unit."
+    ],
+    "summary_en": "Złota 44 is a 192-metre residential tower designed by Daniel Libeskind. Construction started in 2008, stopped in 2009 for legal problems and resumed in 2011; after the developer's financing ended in 2014 the building was sold, and it opened in March 2017.",
+    "ludzie": [
+      {"kto": "Daniel Libeskind", "rola": "główny autor projektu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Złota 44", "url": "https://pl.wikipedia.org/wiki/Z%C5%82ota_44"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie sporów prawnych (wyrok z 29 lipca 2009 roku bez treści)."
+  },
+  {
+    "id": "zlote-tarasy",
+    "nazwa": "Złote Tarasy",
+    "name_en": "Złote Tarasy shopping centre",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Złota 59",
+    "adres_historyczny": null,
+    "lat": 52.230139,
+    "lon": 21.002641,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę Złotych Tarasów rozpoczęto w październiku 2002 r., po sześciu latach przygotowań.",
+      "Inwestorem kompleksu był ING Real Estate, a głównym wykonawcą Skanska; miasto Warszawa wniosło aportem do spółki Złote Tarasy Sp. z o.o. grunt.",
+      "Wartość inwestycji oszacowano na około 1,5 miliarda złotych.",
+      "Część handlowa obiektu została otwarta 7 lutego 2007.",
+      "W 2013 roku miasto sprzedało ostatnie 23,15 procenta udziałów w spółce Złote Tarasy Sp. z o.o. za 217,6 mln zł.",
+      "Właścicielem centrum jest spółka Unibail-Rodamco-Westfield.",
+      "W 2020 roku w centrum działało 200 sklepów i 30 restauracji, kawiarni i barów."
+    ],
+    "ciekawostki": [
+      "Kompleks zaprojektowała kalifornijska pracownia Jerde Partnership; centralna część przykryta jest wielkim szklanym dachem.",
+      "Wieżowiec Skylight o wysokości ok. 105 metrów pełni funkcję biurowca, a dwa wygięte w łuk budynki biurowe noszą wspólną nazwę Lumen."
+    ],
+    "summary_en": "Złote Tarasy, a shopping, office and entertainment complex at Złota 59, was designed by the Jerde Partnership and built by Skanska from October 2002. Its shopping part opened on 7 February 2007.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Złote Tarasy", "url": "https://pl.wikipedia.org/wiki/Z%C5%82ote_Tarasy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "lawka-jana-karskiego-muranow",
+    "nazwa": "Ławeczka Jana Karskiego w Warszawie",
+    "name_en": "Jan Karski memorial bench, Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skwer przy Muzeum Historii Żydów Polskich, ul. Anielewicza (Muranów)",
+    "adres_historyczny": null,
+    "lat": 52.249355833,
+    "lon": 20.99444,
+    "lokalizacja": "dokladna",
+    "okres": "2013–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik zaprojektował Karol Badyna; upamiętnia Jana Karskiego, kuriera władz Polskiego Państwa Podziemnego, który jako jeden z pierwszych poinformował świat o zagładzie Żydów w okupowanej Polsce.",
+      "Ławeczkę odsłonięto 11 czerwca 2013 na skwerze przy Muzeum Historii Żydów Polskich, w pobliżu pierwszego pomnika Bohaterów Getta.",
+      "Inicjatorem powstania monumentu było Muzeum Historii Polski, a prace sfinansowało miasto stołeczne Warszawa.",
+      "Jest to trzecia ławeczka pomnikowa upamiętniająca Karskiego w Polsce (po Łodzi i Kielcach) oraz szósta na świecie (po Waszyngtonie, Nowym Jorku i Tel Awiwie).",
+      "Warszawska ławeczka jest pierwszą Karskiego wyposażoną w aparaturę dźwiękową: po naciśnięciu przycisku w fotelu rzeźby można wysłuchać jego wspomnień o latach przedwojennych i pracy w MSZ."
+    ],
+    "ciekawostki": [
+      "Na poręczy ławeczki leży egzemplarz książki Karskiego „Story of a Secret State” (Tajne Państwo).",
+      "Napis na ścianie pomnika podaje, że Karski był profesorem Uniwersytetu Georgetown w Waszyngtonie i został nominowany do Pokojowej Nagrody Nobla."
+    ],
+    "summary_en": "A bench monument to Jan Karski, courier of the Polish Underground State, designed by Karol Badyna. It was unveiled on 11 June 2013 beside the Museum of the History of Polish Jews. It is the first Karski bench in Warsaw with an audio recording of his memories.",
+    "ludzie": [
+      {"kto": "Jan Karski (Kozielewski)", "rola": "kurier Polskiego Państwa Podziemnego, upamiętniony", "wiki": null},
+      {"kto": "Karol Badyna", "rola": "autor projektu pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ławeczka Jana Karskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%81aweczka_Jana_Karskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "lawka-jana-nowaka-jezioranskiego",
+    "nazwa": "Ławeczka Jana Nowaka-Jeziorańskiego w Warszawie",
+    "name_en": "Jan Nowak-Jeziorański memorial bench, Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Czerniakowska 178 A, na skraju parku Marszałka Edwarda Rydza-Śmigłego",
+    "adres_historyczny": null,
+    "lat": 52.2274,
+    "lon": 21.0398,
+    "lokalizacja": "dokladna",
+    "okres": "2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "19 października 2006 roku pomnik odsłonili przed Biblioteką i Centrum Informacji im. Jana Nowaka-Jeziorańskiego Władysław Bartoszewski i prezydent Warszawy Kazimierz Marcinkiewicz.",
+      "W uroczystości wzięli udział m.in. ambasador USA Victor Ashe, minister Kancelarii Prezydenta Elżbieta Jakubiak oraz dyrektor Muzeum Powstania Warszawskiego Jan Ołdakowski.",
+      "Rzeźbę w brązie wykonał Wojciech Gryniewicz.",
+      "Inicjatorami budowy pomnika byli Hanna i Jacek Fedorowiczowie.",
+      "Pomnik stoi na skraju parku Marszałka Edwarda Rydza-Śmigłego."
+    ],
+    "ciekawostki": [
+      "W uroczystości uczestniczył prezes Związku Powstańców Warszawskich gen. Zbigniew Ścibor-Rylski."
+    ],
+    "summary_en": "A bronze bench monument to Jan Nowak-Jeziorański by Wojciech Gryniewicz stands at Czerniakowska 178A, beside the library named after him. It was unveiled on 19 October 2006 by Władysław Bartoszewski and Warsaw Mayor Kazimierz Marcinkiewicz.",
+    "ludzie": [
+      {"kto": "Jan Nowak-Jeziorański", "rola": "patron biblioteki, upamiętniony pomnikiem", "wiki": null},
+      {"kto": "Władysław Bartoszewski", "rola": "odsłonił pomnik w 2006 roku", "wiki": null},
+      {"kto": "Kazimierz Marcinkiewicz", "rola": "prezydent Warszawy, odsłonił pomnik w 2006 roku", "wiki": null},
+      {"kto": "Wojciech Gryniewicz", "rola": "autor rzeźby w brązie", "wiki": null},
+      {"kto": "Hanna i Jacek Fedorowiczowie", "rola": "inicjatorzy budowy pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ławeczka Jana Nowaka-Jeziorańskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%81aweczka_Jana_Nowaka-Jeziora%C5%84skiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "lawka-williama-heerleina-lindleya",
+    "nazwa": "Ławeczka Williama Heerleina Lindleya w Warszawie",
+    "name_en": "William Heerlein Lindley memorial bench, Warsaw",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Multimedialny Park Fontann, skwer 1 Dywizji Pancernej WP",
+    "adres_historyczny": null,
+    "lat": 52.2542,
+    "lon": 21.0107,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik odsłonięto 7 maja 2011 roku w Multimedialnym Parku Fontann na skwerze 1 Dywizji Pancernej WP.",
+      "Odsłonięcie zbiegło się z 125. rocznicą działalności Miejskiego Przedsiębiorstwa Wodociągów i Kanalizacji w Warszawie.",
+      "Projekt wybrano w konkursie ogłoszonym 28 stycznia 2011 roku.",
+      "Autorem pomnika jest poznański rzeźbiarz Norbert Sarnecki, przy współpracy Anny Sarneckiej.",
+      "Lindley, zasłużony dla powstania i rozwoju miejskich wodociągów, przedstawiony jest stojący, opierający się o zawór wodociągowy, zamiast siedzący na ławce."
+    ],
+    "ciekawostki": [
+      "Ławka została zbudowana z dwóch pomp oraz rur wodociągowych, które tworzą siedzisko i oparcie."
+    ],
+    "summary_en": "A bench made of two pumps and water pipes honours William Heerlein Lindley, who was credited with founding Warsaw's municipal waterworks. Sculptor Norbert Sarnecki's work was unveiled on 7 May 2011 in the Multimedia Fountain Park.",
+    "ludzie": [
+      {"kto": "William Heerlein Lindley", "rola": "upamiętniony, zasłużony dla miejskich wodociągów w Warszawie", "wiki": null},
+      {"kto": "Norbert Sarnecki", "rola": "poznański rzeźbiarz, autor pomnika", "wiki": null},
+      {"kto": "Anna Sarnecka", "rola": "współpracowała przy projekcie pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ławeczka Williama Heerleina Lindleya w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%81aweczka_Williama_Heerleina_Lindleya_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "lazienki-krolewskie",
+    "nazwa": "Łazienki Królewskie w Warszawie",
+    "name_en": "Royal Baths Park (Łazienki Królewskie)",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Ujazdów (zwierzyniec)",
+    "lat": 52.212777777,
+    "lon": 21.032777777,
+    "lokalizacja": "dokladna",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 80. XVII wieku Stanisław Herakliusz Lubomirski zbudował tam dwa pawilony: Ermitaż i pawilon Łaźni, oba według projektu Tylmana z Gameren.",
+      "We wrześniu 1764 Ujazdów wraz ze zwierzyńcem kupił Stanisław August Poniatowski, wtedy jeszcze stolnik litewski.",
+      "Przekształcanie zwierzyńca w letnią rezydencję królewską rozpoczęto w 1774 roku, po zarzuceniu projektu przebudowy Zamku Ujazdowskiego.",
+      "Pierwszym budynkiem zbudowanym przez króla był Biały Dom.",
+      "W 1767 do Łazienek przyłączono Belweder, a w 1768 uruchomiono w nim Królewską Fabrykę Farfurów.",
+      "W 1784 król przekazał magistratowi Starej Warszawy jurydyki Mariensztat i Stanisławów w zamian za część Solca.",
+      "Po śmierci Stanisława Augusta (1798) Łazienki przeszły na własność jego bratanka Józefa Poniatowskiego; w 1817 Maria Teresa Tyszkiewiczowa sprzedała je carowi Aleksandrowi I."
+    ],
+    "ciekawostki": [
+      "W latach 1801–1805 w Białym Domu w okresie letnim mieszkał przebywający na wygnaniu król Francji Ludwik XVIII.",
+      "W XIX wieku park miał największy w Europie zbiór drzew pomarańczowych (ponad 100 sztuk, z czego ok. 70 liczyło 300–400 lat)."
+    ],
+    "summary_en": "The Royal Baths is a palace and garden complex developed by Stanisław August Poniatowski from 1764 as his summer residence. It has housed the Łazienki Royal Museum since 1960.",
+    "ludzie": [
+      {"kto": "Stanisław Herakliusz Lubomirski", "rola": "marszałek wielki koronny, zbudował pawilony w latach 80. XVII wieku", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "projektant pawilonów Ermitaż i Łaźni", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król, przekształcił zwierzyniec w letnią rezydencję", "wiki": null},
+      {"kto": "Józef Poniatowski", "rola": "bratanek króla, właściciel po 1798 roku", "wiki": null},
+      {"kto": "Ludwik XVIII", "rola": "król Francji na wygnaniu, mieszkał w Białym Domu w latach 1801–1805", "wiki": null},
+      {"kto": "Aleksander I", "rola": "car, kupił Łazienki w 1817 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "zwierzyniec ujazdowski"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Łazienki Królewskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%81azienki_Kr%C3%B3lewskie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie XIX-wiecznych kolekcji roślin. Adres dzisiejszy nie występuje w paczce, dlatego null."
+  }
+]

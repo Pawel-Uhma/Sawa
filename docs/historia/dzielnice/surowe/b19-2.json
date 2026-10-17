@@ -1,0 +1,367 @@
+[
+  {
+    "id": "dworzec-gdanski-stacja-metra",
+    "nazwa": "Dworzec Gdański (stacja metra)",
+    "name_en": "Dworzec Gdański metro station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Słomińskiego",
+    "adres_historyczny": null,
+    "lat": 52.257777777,
+    "lon": 20.994444444,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dworzec Gdański to stacja linii M1 metra w Warszawie, przy ul. Słomińskiego, przy dworcu kolejowym Warszawa Gdańska.",
+      "Stacja jest dwukondygnacyjna: ma peron-wyspę o szerokości 12 m i długości 120 m oraz galerię na antresoli.",
+      "W maju 2008 roku Metro Warszawskie i PKP Polskie Linie Kolejowe podpisały porozumienie w sprawie budowy przejścia podziemnego pod torami stacji Warszawa Gdańska.",
+      "Przejście zbudowano na jesieni 2010 roku, ale przedłużające się odbiory techniczne i braki w dokumentacji sprawiły, że udostępniono je dla pieszych dopiero 28 lutego 2011 r.",
+      "Stacja ma długość 156 m, szerokość 20,4 m i zagłębienie 11,5 m poniżej poziomu terenu.",
+      "Przejście podziemne pod ul. Słomińskiego ma 5 wejść (3 z ruchomymi schodami) i 4 windy."
+    ],
+    "ciekawostki": [
+      "Za stacją od strony południowej jest połączenie między torem 1 i 2, które służy do odholowania zepsutego składu."
+    ],
+    "summary_en": "Dworzec Gdański is a two-level metro station on line M1 next to the Warszawa Gdańska railway station. An underground pedestrian passage beneath the tracks was opened in February 2011 after delays with technical inspections.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "projektant stacji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dworzec Gdański (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Dworzec_Gda%C5%84ski_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Data 2011 to udostępnienie przejścia dla pieszych wspomniane w artykule; data otwarcia samej stacji nie wynika z fragmentu. Generalnym wykonawcą było Konsorcjum BEBK-17 (Budimex, Budexport, BE Energobudowa, Kuryłowicz & Associates)."
+  },
+  {
+    "id": "dworzec-glowny-przedwojenny",
+    "nazwa": "Dworzec Główny (przedwojenny)",
+    "name_en": "Prewar Warsaw Główny railway station (unfinished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "Aleje Jerozolimskie między ul. Marszałkowską a ul. Emilii Plater",
+    "lat": 52.228888888,
+    "lon": 21.003333333,
+    "lokalizacja": "dokladna",
+    "okres": "1932–1945",
+    "istnieje": false,
+    "fakty": [
+      "Dworzec Główny był przedwojenną główną stacją pasażerską aglomeracji warszawskiej; nigdy nie został ukończony.",
+      "W 1932 roku ruszyła budowa dworca zaprojektowanego przez Czesława Przybylskiego i Andrzeja Pszenickiego.",
+      "W 1938 roku część budynku oddano do użytku jako główną stację położoną na linii średnicowej.",
+      "W czerwcu 1939 roku, w wyniku zaprószenia ognia przez ekipy budowlane, nieukończony dworzec został poważnie uszkodzony, a część spłonęła.",
+      "Dworzec odbudowany przez niemieckie władze okupacyjne działał do wybuchu powstania warszawskiego w 1944 roku.",
+      "W styczniu 1945 roku gmach został wysadzony przez wojska niemieckie, a po wojnie jego pozostałości rozebrano.",
+      "W miejscu dawnego dworca znajduje się podziemny przystanek Warszawa Śródmieście."
+    ],
+    "ciekawostki": [
+      "Perony miały być pod ziemią i obsługiwać 12 torów, w tym wszystkie cztery tory linii średnicowej.",
+      "Koncepcja wspólnej stacji dla wszystkich linii kolejowych przebiegających przez Warszawę powstała w drugiej połowie XIX wieku."
+    ],
+    "summary_en": "The prewar Dworzec Główny on Aleje Jerozolimskie was Warsaw's main passenger station in the interwar period, designed as a monumental art deco hall above underground platforms. Construction began in 1932, the building was damaged by fire in 1939, and the Germans blew it up in January 1945.",
+    "ludzie": [
+      {"kto": "Czesław Przybylski", "rola": "architekt projektu dworca", "wiki": null},
+      {"kto": "Andrzej Pszenicki", "rola": "architekt projektu dworca", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dworzec Główny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dworzec_G%C5%82%C3%B3wny_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu; nazwa „Dworzec Główny” występowała też wcześniej dla Dworca Wiedeńskiego (osobny rekord)."
+  },
+  {
+    "id": "dworzec-wiedenski",
+    "nazwa": "Dworzec Wiedeński",
+    "name_en": "Vienna Station (Dworzec Wiedeński)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "róg Alei Jerozolimskich i ul. Marszałkowskiej",
+    "lat": 52.229722,
+    "lon": 21.009444,
+    "lokalizacja": "dokladna",
+    "okres": "1845–1952",
+    "istnieje": false,
+    "fakty": [
+      "Dworzec Wiedeński, pierwszy dworzec w historii Warszawy, budowano od 14 lipca 1844 do 14 czerwca 1845 dla Kolei Warszawsko-Wiedeńskiej według projektu Henryka Marconiego.",
+      "14 czerwca 1845 dokonano otwarcia dworca i pierwszego odcinka linii kolejowej do Grodziska.",
+      "Dworzec miał 160 m długości i zaprojektowano go tak, aby przypominał dwa stykające się parowozy.",
+      "Pod koniec XIX wieku projekt nowego dworca Józefa Hussa nie został zaakceptowany, a władze zażądały zmiany elewacji z neorenesansowej na bizantyjską, na co projektant się nie zgodził.",
+      "W 1900 dobudowano od strony ul. Chmielnej niewielki eklektyczny dworzec przyjazdowy, nazwany „Nową Poczekalnią”.",
+      "W 1919 roku dworzec otrzymał nazwę Dworzec Główny.",
+      "W latach 1920–1921 od strony ul. Chmielnej wzniesiono drewniany, tymczasowy Dworzec Główny, który dotrwał do końca II wojny światowej."
+    ],
+    "ciekawostki": [
+      "Po zajęciu Warszawy przez wojska niemieckie w sierpniu 1915 dworzec nazwano Haupt-Bahnhof Warschau, a we wrześniu 1915 Wiener Bahnhof.",
+      "Ruiny wieży zegarowej dworca wysadzono w maju 1947; upamiętniła ją tablica z 1955 (niezachowana)."
+    ],
+    "summary_en": "The Vienna Station was Warsaw's first railway station, opened in 1845 at the corner of Aleje Jerozolimskie and Marszałkowska. It later took the name Główny (Main Station), and its remains were demolished in 1952 after the Second World War.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant dworca (1844–1845)", "wiki": null},
+      {"kto": "Józef Huss", "rola": "autor projektu nowego dworca pod koniec XIX w.", "wiki": null},
+      {"kto": "Tadeusz Zieliński", "rola": "projektant drewnianego dworca tymczasowego (1919)", "wiki": null},
+      {"kto": "Maksymilian Bystydzieński", "rola": "projektant drewnianego dworca tymczasowego (1919)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dworzec Warszawsko-Wiedeński", "Wiener Bahnhof (nazwa z 1915)", "Haupt-Bahnhof Warschau (nazwa z 1915)", "Dworzec Główny (od 1919)"],
+    "zrodla": [{"tytul": "Wikipedia: Dworzec Wiedeński w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dworzec_Wiede%C5%84ski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dynasy",
+    "nazwa": "Dynasy",
+    "name_en": "Dynasy (Powiśle slope area)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dynasy",
+    "adres_historyczny": null,
+    "lat": 52.2389,
+    "lon": 21.0228,
+    "lokalizacja": "przyblizona",
+    "okres": "1776–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od nazwiska księcia Karla Otto de Nassau-Siegen, znanego z „Pana Tadeusza” jako książę Denassów.",
+      "W 1780 książę poślubił Karolinę Sanguszkową z domu Gozdzką, właścicielkę posiadłości i pałacu w jurydyce Aleksandria.",
+      "Modrzewiowy pałac Gozdzkich, wcześniej Lubomirskich, spłonął w 1776 lub 1777, a nowo wybudowany spłonął w 1788.",
+      "W połowie XIX wieku hrabia Seweryn Uruski zorganizował tu targowisko Sewerynów, które splajtowało; budynek z lat 1846–1848 rozebrano w 1937.",
+      "W 1892 w ogrodach popałacowych wzniesiono siedzibę Warszawskiego Towarzystwa Cyklistów według projektu Stefana Szyllera i urządzono tor kolarski.",
+      "W 1896 architekt Karol Kozłowski wzniósł przy ul. Oboźnej rotundę mieszczącą panoramy; w 1913 otwarto w niej teatr.",
+      "W 1937 rotundę przebudowała spółka Chevrolet na garaż, warsztaty i stację benzynową.",
+      "W czasie II wojny światowej zabudowa Dynasów uległa zniszczeniu; z rotundy zostały ruiny przyziemia."
+    ],
+    "ciekawostki": [
+      "Panorama Tatr Stanisława Janowskiego, pokazywana w rotundzie, przyniosła straty.",
+      "Ślad po dawnych Dynasach to dziś ulica Dynasy, wytyczona na początku XX wieku."
+    ],
+    "summary_en": "Dynasy is a historic area on the Powiśle escarpment named after Prince Karl Otto de Nassau-Siegen. It had a palace, a cycling track and a 1896 panorama rotunda, which was converted into a garage in 1937 and ruined during the Second World War.",
+    "ludzie": [
+      {"kto": "Karl Otto de Nassau-Siegen", "rola": "książę, patron nazwy obszaru", "wiki": null},
+      {"kto": "Karolina Sanguszkowa z d. Gozdzka", "rola": "właścicielka posiadłości i pałacu, żona księcia", "wiki": null},
+      {"kto": "Seweryn Uruski", "rola": "hrabia, organizator targowiska Sewerynów", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "projektant siedziby Warszawskiego Towarzystwa Cyklistów", "wiki": null},
+      {"kto": "Karol Kozłowski", "rola": "architekt rotundy z 1896", "wiki": null},
+      {"kto": "Franciszek Maria Lanci", "rola": "projektant budynku z lat 1846–1848", "wiki": null}
+    ],
+    "dawne_nazwy": ["Góry de Nassau", "Góry Dynasowskie", "Wzgórza Denassowskie", "targowisko Sewerynów"],
+    "zrodla": [{"tytul": "Wikipedia: Dynasy", "url": "https://pl.wikipedia.org/wiki/Dynasy"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dzielnica-polnocna-nalewki",
+    "nazwa": "Dzielnica północna (Nalewki)",
+    "name_en": "Northern District (Nalewki), former Jewish district",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "osiedle Muranów (na terenie dawnej dzielnicy)",
+    "adres_historyczny": "ulice Nalewki, Karmelicka, Franciszkańska, Gęsia, Dzika, Nowolipie i Nowolipki",
+    "lat": 52.250477,
+    "lon": 20.996655,
+    "lokalizacja": "przyblizona",
+    "okres": "1809–1943",
+    "istnieje": false,
+    "fakty": [
+      "Dzielnica północna, zwana też Nalewkami, była zwyczajową nazwą dawnej żydowskiej dzielnicy Warszawy, położonej na północny zachód od Starego Miasta.",
+      "Powstała w 1809, kiedy władze Księstwa Warszawskiego zakazały Żydom zamieszkiwania Starego Miasta i głównych ulic; wyznaczono dla nich „rewir żydowski”.",
+      "Główne ulice to Nalewki, Karmelicka, Franciszkańska, Gęsia, Dzika, Nowolipie i Nowolipki, a największym placem był plac Muranowski.",
+      "W latach 1940–1943 dzielnica znalazła się w granicach getta warszawskiego; po powstaniu w getcie w 1943 Niemcy zdecydowali o jej całkowitym zburzeniu.",
+      "Prawie wszyscy jej mieszkańcy zginęli w latach 1942–1943 w getcie lub w obozie zagłady w Treblince.",
+      "W latach 1948–1953 na zburzonym terenie zbudowano osiedle mieszkaniowe Muranów."
+    ],
+    "ciekawostki": [
+      "Przed I wojną światową dominowały tu trzypiętrowe kamienice czynszowe z podwórkami studniami, a przed 1939 była to jedna z najgęściej zaludnionych części Warszawy.",
+      "Nazwa „dzielnica północna” odnosiła się do położenia sprzed zmian granic miasta w 1916 roku."
+    ],
+    "summary_en": "The Northern District, known as Nalewki, was the Jewish quarter of Warsaw north-west of the Old Town, created in 1809. It became part of the Warsaw Ghetto in 1940 and was razed after the 1943 uprising, and the Muranów housing estate was built on its ruins in 1948–1953.",
+    "ludzie": [],
+    "dawne_nazwy": ["dzielnica nalewkowska", "dzielnica nalewkowsko-muranowska", "Nalewki"],
+    "zrodla": [{"tytul": "Wikipedia: Dzielnica północna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dzielnica_p%C3%B3%C5%82nocna_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar bez osobnej jednostki administracyjnej; współrzędne z nagłówka artykułu (przybliżone dla całego obszaru)."
+  },
+  {
+    "id": "egzekucje-w-dzielnicy-policyjnej-1944",
+    "nazwa": "Egzekucje w „dzielnicy policyjnej” (1944)",
+    "name_en": "Executions in the 'police district' (August 1944)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Szucha",
+    "adres_historyczny": null,
+    "lat": 52.222869,
+    "lon": 21.015817,
+    "lokalizacja": "przyblizona",
+    "okres": "sierpień 1944",
+    "istnieje": true,
+    "fakty": [
+      "Masowe egzekucje mieszkańców Śródmieścia i południowych dzielnic Warszawy przeprowadzali Niemcy podczas powstania na terenie tzw. dzielnicy policyjnej w Śródmieściu Południowym.",
+      "Najwięcej egzekucji dokonano w pierwszych dniach sierpnia 1944 w okolicy siedziby Sicherheitspolizei przy al. Szucha; w ciągu dwóch miesięcy zamordowano w tym rejonie od 5 tys. do 10 tys. warszawiaków.",
+      "1 sierpnia 1944 o godz. 17:00 żołnierze AK uderzyli na „dzielnicę policyjną”, zdobywając m.in. oficerskie kasyno garnizonowe przy al. Szucha 29; po dwóch godzinach walki atak został odparty.",
+      "Wieczorem 1 sierpnia Niemcy wkroczyli do opuszczonych domów przy ul. Flory 5 i 9 i rozstrzelali wszystkich mężczyzn powyżej 14. roku życia.",
+      "Masowe egzekucje zazwyczaj rozpoczęły się 2 sierpnia 1944.",
+      "Paul Otto Geibel zeznał po wojnie, że już wieczorem 1 sierpnia Heinrich Himmler polecił mu telefonicznie: „niech pan zniszczy dziesiątki tysięcy”.",
+      "Egzekucje w Śródmieściu Południowym poprzedziły rzeź Woli."
+    ],
+    "ciekawostki": [
+      "Według jednego ze świadków w ruinach GISZ przy Al. Ujazdowskich 1/3 miało zostać zamordowanych blisko 980 osób już 1 sierpnia wieczorem."
+    ],
+    "summary_en": "In August 1944 German SS and police units executed between 5,000 and 10,000 residents of southern Śródmieście in the so-called police district around Szucha Avenue, after an AK attack on the district failed. The killings preceded the Wola massacre.",
+    "ludzie": [
+      {"kto": "Paul Otto Geibel", "rola": "SS-Oberführer, dowódca SS i Policji na dystrykt warszawski, obrona „dzielnicy policyjnej”", "wiki": null},
+      {"kto": "Ludwig Hahn", "rola": "SS-Standartenführer, komendant SD i policji bezpieczeństwa na dystrykt warszawski", "wiki": null},
+      {"kto": "Heinrich Himmler", "rola": "Reichsführer-SS, wydał polecenia", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Egzekucje w „dzielnicy policyjnej” w Warszawie (1944)", "url": "https://pl.wikipedia.org/wiki/Egzekucje_w_%E2%80%9Edzielnicy_policyjnej%E2%80%9D_w_Warszawie_%281944%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie historyczne; pole istnieje dotyczy miejsca (al. Szucha). Liczby ofiar podane jako szacunki z artykułu. Artykuł w paczce urwany w opisie egzekucji na ul. Szucha."
+  },
+  {
+    "id": "eksplozja-czolgu-pulapki-kilinskiego",
+    "nazwa": "Eksplozja „czołgu pułapki” na ul. Kilińskiego",
+    "name_en": "Explosion of the 'trap tank' on Kilińskiego Street (1944)",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Jana Kilińskiego",
+    "adres_historyczny": null,
+    "lat": 52.2495,
+    "lon": 21.0089,
+    "lokalizacja": "przyblizona",
+    "okres": "13 sierpnia 1944",
+    "istnieje": true,
+    "fakty": [
+      "13 sierpnia 1944 przy ul. Jana Kilińskiego na Starym Mieście wybuchł zdobyty przez powstańców niemiecki pojazd Sd.Kfz.301 (Borgward IV).",
+      "W wyniku wybuchu zginęło ponad trzystu powstańców i cywilów, którzy zbiegli się podziwiać zdobyty „czołg”.",
+      "Pojazd nie był czołgiem, lecz ciężkim transporterem ładunków z 302. Batalionu Pancernego, którego pierwotnym przeznaczeniem było zniszczenie barykady na Podwalu.",
+      "Około godziny 8:00 lub 9:00 batalion „Gustaw” zatrzymał pojazd na barykadzie, obrzucając go butelkami z benzyną.",
+      "Około godziny 17:00 inna grupa powstańców przejęła pojazd, powołując się na rzekome polecenie dowództwa, i wjechała nim w uliczki Starówki.",
+      "Około godziny 18:00, przy pokonywaniu małej barykady przy ul. Kilińskiego, z pancerza zsunęła się skrzynia z ładunkiem wybuchowym.",
+      "Najwięcej strat poniosła kompania „Orląt”, tracąc 80 ludzi; wszystkie kompanie batalionu „Gustaw” straciły łącznie 26 zabitych."
+    ],
+    "ciekawostki": [
+      "Jedną z ofiar śmiertelnych był aktor Józef Orwid.",
+      "Od 1992 rocznica wybuchu jest obchodzona jako Dzień Pamięci Starówki."
+    ],
+    "summary_en": "On 13 August 1944 a captured German Borgward IV transporter loaded with explosives blew up in Kilińskiego Street in the Old Town, killing over 300 insurgents and civilians. The event became known as the 'trap tank' explosion and is remembered as Old Town Memorial Day.",
+    "ludzie": [
+      {"kto": "Witold Piasecki ps. „Wiktor”", "rola": "weteran batalionu AK „Gustaw”, relacja o zdobyciu pojazdu", "wiki": null},
+      {"kto": "Wiktor Trzeciakowski ps. „Tur”", "rola": "podchorąży, jako pierwszy zbadał zdobyczną maszynę", "wiki": null},
+      {"kto": "Ludwik Gawrych ps. „Gustaw”", "rola": "dowódca batalionu „Gustaw”", "wiki": null},
+      {"kto": "Stanisław Błaszczak ps. „Róg”", "rola": "major, dowódca zgrupowania na Starym Mieście", "wiki": null},
+      {"kto": "Józef Orwid", "rola": "aktor, jedna z ofiar wybuchu", "wiki": null}
+    ],
+    "dawne_nazwy": ["„wybuch czołgu pułapki”"],
+    "zrodla": [{"tytul": "Wikipedia: Eksplozja „czołgu pułapki” na ulicy Kilińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Eksplozja_%E2%80%9Eczo%C5%82gu_pu%C5%82apki%E2%80%9D_na_ulicy_Kili%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Miejsce leży na Starym Mieście, a nagłówek artykułu podaje dzielnicę Śródmieście. Artykuł podaje różne relacje przebiegu wydarzeń."
+  },
+  {
+    "id": "elektrownia-warszawska",
+    "nazwa": "Elektrownia Warszawska",
+    "name_en": "Warsaw Power Station (Elektrownia Powiśle)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Wybrzeże Kościuszkowskie 41 (budynek administracyjny z lat 1937–1939)",
+    "lat": 52.2397,
+    "lon": 21.0286,
+    "lokalizacja": "dokladna",
+    "okres": "1904–wczesne lata 90. XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Elektrownia uruchomiona w 1904 roku na Powiślu została zbudowana przez prywatną spółkę na podstawie koncesji z 1902 wydanej przez władze miejskie i rząd rosyjski.",
+      "Koncesję otrzymało niemieckie Towarzystwo Schuckert i Ska, przejęte po dwóch latach przez Compagnie d'Electricite de Varsovie; koncesjonariusz miał wyłączne prawo do oświetlania miasta elektrycznością na 35 lat.",
+      "W latach 1922–1924 do elektrowni doprowadzono bocznicę kolejową z Dworca Gdańskiego.",
+      "W 1937 Zarząd Miejski przejął elektrownię na mocy wyroku sądowego, za odszkodowaniem; po przejęciu ceny energii elektrycznej obniżono o połowę.",
+      "W latach 1937–1939 przy ul. Wybrzeże Kościuszkowskie 41 wzniesiono nowy budynek administracyjny elektrowni.",
+      "Elektrownia działała w czasie obrony Warszawy w 1939 roku i w powstaniu do września 1944; zniszczony w 1944 turbozespół Tz7 nie został odbudowany.",
+      "Ponownie uruchomiona w kwietniu 1945, została zamknięta na początku lat 90.; część zachowanych budynków zaadaptowano na kompleks handlowo-usługowy Elektrownia Powiśle (otwarty w 2020)."
+    ],
+    "ciekawostki": [
+      "Działała jako Elektrownia Miejska i Elektrownia „Powiśle”."
+    ],
+    "summary_en": "The Warsaw Power Station on Powiśle began operating in 1904 under a private concession and was taken over by the city in 1937. It ran through the 1939 siege and the Warsaw Uprising, reopened in 1945 and closed in the early 1990s; some of its buildings now house the Elektrownia Powiśle shopping complex.",
+    "ludzie": [
+      {"kto": "Roman Umiastowski", "rola": "7 września 1939 wezwał mężczyzn zdolnych do noszenia broni do udania się na wschód", "wiki": null}
+    ],
+    "dawne_nazwy": ["Elektrownia Miejska", "Elektrownia „Powiśle”"],
+    "zrodla": [{"tytul": "Wikipedia: Elektrownia Warszawska", "url": "https://pl.wikipedia.org/wiki/Elektrownia_Warszawska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urwany w części o wojnie (7 września 1939)."
+  },
+  {
+    "id": "elizeum",
+    "nazwa": "Elizeum",
+    "name_en": "Elizeum rotunda in Książęce Park",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "park im. Marszałka Edwarda Rydza-Śmigłego (Na Książęcem), w pobliżu ul. Książęcej i ul. Kruczkowskiego",
+    "adres_historyczny": null,
+    "lat": 52.230778,
+    "lon": 21.027778,
+    "lokalizacja": "dokladna",
+    "okres": "1776–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Elizeum to podziemna rotunda wykonana z cegły, usytuowana w stoku skarpy warszawskiej w parku na Książęcem.",
+      "Budowla powstała w latach 1776–1778 według projektu Szymona Bogumiła Zuga.",
+      "Elizeum jest jedynym z zachowanych pawilonów ogrodu romantycznego na „Książęcem”, założonego przez podkomorzego Kazimierza Poniatowskiego, brata króla Stanisława Augusta.",
+      "Kopuła ma rozpiętość 763 cm; dekoracje sztukatorskie się nie zachowały.",
+      "Pierwotnie Elizeum miało trzy wejścia.",
+      "Po krótkim okresie świetności, pozostawione bez właściciela, zostało splądrowane i zniszczone w XIX i XX wieku.",
+      "W 2008 roku zorganizowano warsztaty dla młodych architektów, którzy proponowali m.in. restaurację, galerię, salę koncertową, teatr i łaźnię."
+    ],
+    "ciekawostki": [
+      "Budowla odznacza się bardzo dobrą akustyką.",
+      "W badaniach stwierdzono, że w niektórych miejscach wilgotność cegły sięga 18–19%."
+    ],
+    "summary_en": "The Elizeum is an underground brick rotunda in the slope of the Warsaw escarpment in Książęce Park, built in 1776–1778 by Szymon Bogumił Zug. It is the only surviving garden pavilion of the romantic garden of Kazimierz Poniatowski, and its restoration has been discussed since 2008.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "architekt budowli", "wiki": null},
+      {"kto": "Kazimierz Poniatowski", "rola": "podkomorzy, założyciel ogrodu romantycznego na Książęcem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Elizeum w Warszawie", "url": "https://pl.wikipedia.org/wiki/Elizeum_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urwany w części o rewitalizacji."
+  },
+  {
+    "id": "osiedle-emilia",
+    "nazwa": "Osiedle Emilia",
+    "name_en": "Emilia housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Pańska 3, 5 i 7; ul. Śliska 3 i 10; ul. Emilii Plater 47",
+    "adres_historyczny": null,
+    "lat": 52.232777777,
+    "lon": 21.001111111,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle mieszkaniowe Emilia w Śródmieściu zbudowano w latach 1961–1967 według projektu Lecha Robaczyńskiego, Czesława Wegnera, Anny Koseckiej, Jerzego Sobiepana i Stanisława Jankowskiego.",
+      "Nazwa osiedla pochodzi od ulicy Emilii Plater.",
+      "Osiedle składa się z sześciu budynków mieszkalnych od ośmiu do szesnastu kondygnacji, w których jest 783 mieszkania dla ok. 2500 osób.",
+      "W budynku przy ul. Emilii Plater 47 mieściły się m.in. Cepelia, salon Desy i liczne warsztaty rzemieślnicze.",
+      "W 1969 roku wybudowano pawilon domu meblowego „Emilia”, który był największym sklepem w Warszawie zaopatrującym mieszkańców w meble.",
+      "Osiedle miało mieć charakter tymczasowy, gdyż w tym miejscu zaplanowano tzw. Centrum Zachodnie.",
+      "Przed 2001 rokiem zburzono pawilon „Akwarium”, a na jego miejscu powstał wieżowiec hotelu InterContinental Warszawa.",
+      "Na przełomie 2016 i 2017 roku rozebrano pawilon salonu meblowego."
+    ],
+    "ciekawostki": [
+      "Przed budową osiedla trzeba było wyburzyć pozostałości przedwojennej zabudowy i prowizorycznych warsztatów, część rejonu nazywanego „Dzikim Zachodem”.",
+      "W pawilonie na północ od budynku przy Emilii Plater 47 działała najpierw kawiarnia „Barbara”, a potem klub jazzowy „Akwarium”."
+    ],
+    "summary_en": "The Emilia housing estate in Śródmieście was built in 1961–1967 on the site of prewar buildings and makeshift workshops. It was intended as a temporary development to make way for a planned Central Western district, and its later pavilions were replaced by the InterContinental hotel and other high-rise buildings.",
+    "ludzie": [
+      {"kto": "Lech Robaczyński", "rola": "architekt osiedla", "wiki": null},
+      {"kto": "Czesław Wegner", "rola": "architekt osiedla", "wiki": null},
+      {"kto": "Anna Kosecka", "rola": "architekt osiedla", "wiki": null},
+      {"kto": "Jerzy Sobiepan", "rola": "architekt osiedla", "wiki": null},
+      {"kto": "Stanisław Jankowski", "rola": "architekt osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": ["„Dziki Zachód” (rejon prowizorycznych zabudowań przed osiedlem)"],
+    "zrodla": [{"tytul": "Wikipedia: Emilia (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Emilia_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wymienia też sąsiednie osiedle Mariańska (wraz z nim „Emilia-Mariańska”); rekord dotyczy osiedla Emilia."
+  }
+]

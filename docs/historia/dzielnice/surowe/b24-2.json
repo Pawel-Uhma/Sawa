@@ -1,0 +1,364 @@
+[
+  {
+    "id": "koszary-lazienkowskie",
+    "nazwa": "Koszary Łazienkowskie",
+    "name_en": "Łazienkowski Barracks",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "okolice ul. Szwoleżerów i ul. Myśliwieckiej",
+    "adres_historyczny": null,
+    "lat": 52.21627,
+    "lon": 21.04174,
+    "lokalizacja": "przyblizona",
+    "okres": "1818–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przed I wojną światową stacjonowały tu rosyjskie pułki kawalerii lejbgwardii, a w okresie II Rzeczypospolitej między innymi 1 pułk szwoleżerów i 1 dywizjon artylerii konnej.",
+      "Kompleks koszarowy wzniesiony przez Rosjan w 1818 roku, a następnie modernizowany do 1914; jego układ i architekturę zaprojektował Wilhelm Henryk Minter.",
+      "Pierwsze wybudowano koszary kirasjerskie – około 1820 roku, następnie ułańskie, a ostatnie – przed 1830 rokiem huzarskie.",
+      "Stadion WKS Legia i basen zostały oddane do użytku w roku 1930.",
+      "3 marca 1927 roku koszary huzarskie nazwano Koszarami im. Gen. Józefa Bema.",
+      "Od 1936 roku przy ul. Podchorążych 38 stacjonował Dywizjon Konny Policji Państwowej w m.st. Warszawie, utworzony 28 sierpnia 1936 roku.",
+      "Po ogłoszeniu kapitulacji Warszawy w 1939 roku dawne koszary 1. Pułku Szwoleżerów przeznaczono na hitlerowski obóz przejściowy.",
+      "Duże i Małe Koszary Ułańskie zostały bardzo silnie zniszczone w czasie powstania warszawskiego i zdobywania Warszawy, a po wojnie w większości rozebrane."
+    ],
+    "ciekawostki": [
+      "Dawna cerkiew pułku ułanów Lejbgwardii została przekształcona w rzymskokatolicki wojskowy kościół parafialny pw. św. Teresy."
+    ],
+    "summary_en": "Russian-built barracks complex in Warsaw's Łazienki area, erected in 1818 and designed by Wilhelm Henryk Minter. The cavalry barracks were heavily damaged during the Warsaw Uprising and largely demolished after the war.",
+    "ludzie": [
+      {"kto": "Wilhelm Henryk Minter", "rola": "projektant układu i architektury kompleksu", "wiki": null},
+      {"kto": "Kazimierz Tołłoczko", "rola": "przebudował główny budynek (nr 123) według projektu", "wiki": null},
+      {"kto": "Józef Bem", "rola": "patron koszar huzarskich (od 1927) i dywizjonu artylerii konnej", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koszary Huzarskie im. Gen. Józefa Bema"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Koszary Łazienkowskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Koszary_%C5%81azienkowskie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje kilka kwartałów koszar; rekord zbiorczy, współrzędne z nagłówka. Nazwa „Koszarami im. Gen. Józefa Bema” jest z artykułu; w drugiej części przyjęto ją jako dawną nazwę."
+  },
+  {
+    "id": "koszykowa-54",
+    "nazwa": "Koszykowa 54",
+    "name_en": "Koszykowa 54 office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koszykowa 54",
+    "adres_historyczny": null,
+    "lat": 52.22283,
+    "lon": 21.01304,
+    "lokalizacja": "dokladna",
+    "okres": "1992–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek biurowy został zaprojektowany w 1991 roku przez pracownie SAP Projekt i Ilbau Austria; głównymi architektami byli Ivo Majorinc, Barbara Targowska i Janusz Targowski.",
+      "Budynek powstał w latach 1992–1993.",
+      "Powstał w miejscu neomodernistycznej narożnej kamienicy nr 54, którą zburzono w latach 70. XX wieku w celu poszerzenia odcinka ulicy Koszykowej u zbiegu z ul. Lwowską.",
+      "W latach 2012–2013 przeprowadzono modernizację budynku, która m.in. obejmowała zmianę wyglądu elewacji.",
+      "Budynek ma 8 kondygnacji nadziemnych i 3 podziemne; jego kubatura to 50 148 m³.",
+      "Został wybrany przez Martę Leśniakowską do katalogu 800 budynków z ogólnej liczby ok. 20 000 z okresu od początku do sierpnia 1998, które są najbardziej reprezentatywne dla Warszawy.",
+      "Najemcami powierzchni biurowej są m.in. Ambasada Południowej Afryki, British Council, Sollers Consulting i Konsulat Generalny Republiki Kosowa."
+    ],
+    "ciekawostki": [
+      "Urbanista Andrzej Kiciński nazwał zaokrąglony narożnik budynku banalnym, a Jeremi Królikowski porównał wygląd budynku do statku kosmicznego UFO."
+    ],
+    "summary_en": "An office building at ul. Koszykowa 54 and ul. Poznańska 2/4, designed in 1991 and built in 1992–1993 on the site of an older corner tenement. It was modernised in 2012–2013.",
+    "ludzie": [
+      {"kto": "Ivo Majorinc", "rola": "główny architekt", "wiki": null},
+      {"kto": "Barbara Targowska", "rola": "główna architekt", "wiki": null},
+      {"kto": "Janusz Targowski", "rola": "główny architekt", "wiki": null},
+      {"kto": "Jerzy Błażeczek", "rola": "odpowiedzialny za konstrukcję", "wiki": null},
+      {"kto": "Andrzej Kiciński", "rola": "urbanista, ocenił elewację i narożnik", "wiki": null},
+      {"kto": "Marta Leśniakowska", "rola": "wybrała budynek do katalogu reprezentatywnych obiektów", "wiki": null}
+    ],
+    "dawne_nazwy": ["IPC Business Centre", "Ilbau Pax Centre (IPC)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Koszykowa 54", "url": "https://pl.wikipedia.org/wiki/Koszykowa_54"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-imienia-jezus",
+    "nazwa": "Kościół Imienia Jezus",
+    "name_en": "Holy Name of Jesus Church",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Stanisława Moniuszki 3a",
+    "lat": 52.2349,
+    "lon": 21.0124,
+    "lokalizacja": "dokladna",
+    "okres": "1762–1953",
+    "istnieje": false,
+    "fakty": [
+      "Kościół powstał jako kaplica Szpitala Dzieciątka Jezus, wzniesionego wzdłuż pl. Wareckiego.",
+      "Świątynia powstała w 1762 roku według projektu Jakuba Fontany.",
+      "Pomimo przeniesienia szpitala do nowych budynków przy ul. Nowogrodzkiej kaplica nadal funkcjonowała.",
+      "W 1904 roku dokonano przebudowy kościoła według projektu Stanisława Grochowicza: skrócono go, przeorientowano nawę o 90 stopni, a dawną ścianę boczną przekształcono w fasadę.",
+      "Kościół uszkodzony podczas II wojny światowej został rozebrany w 1953 roku, zamiast planowanej odbudowy.",
+      "W końcu lat 90. XX wieku częściowo na jego miejscu powstał wieżowiec Telekomunikacji Polskiej."
+    ],
+    "ciekawostki": [
+      "Plac Warecki, wzdłuż którego stał szpital, to późniejszy pl. Napoleona i dzisiejszy pl. Powstańców Warszawy."
+    ],
+    "summary_en": "The Holy Name of Jesus Church stood at ul. Stanisława Moniuszki 3a. It began in 1762 as the chapel of a hospital and was demolished in 1953. A Telekomunikacja Polska tower was later built partly on its site.",
+    "ludzie": [
+      {"kto": "Jakub Fontana", "rola": "autor projektu kościoła z 1762 roku", "wiki": null},
+      {"kto": "Stanisław Grochowicz", "rola": "autor przebudowy z 1904 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["kaplica Szpitala Dzieciątka Jezus"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Imienia Jezus w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Imienia_Jezus_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-matki-bozej-jerozolimskiej",
+    "nazwa": "Kościół Matki Bożej Jerozolimskiej w Warszawie",
+    "name_en": "Our Lady of Jerusalem Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Łazienkowska",
+    "adres_historyczny": null,
+    "lat": 52.221888888,
+    "lon": 21.038388888,
+    "lokalizacja": "dokladna",
+    "okres": "1912–1983",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia została zaprojektowana w 1912 roku przez architekta Hugona Kuderę.",
+      "W 1916 roku rozpoczęła się budowa kościoła.",
+      "W 1917 roku erygowano nową parafię, która otrzymała wezwanie Matki Boskiej Częstochowskiej.",
+      "Świątynia została konsekrowana w 1933 roku, ale inwestycja nie została zakończona przed wybuchem II wojny światowej.",
+      "Podczas powstania warszawskiego świątynia Matki Boskiej Częstochowskiej pełniła funkcję szpitala powstańczego; została zniszczona przez nalot hitlerowskiego lotnictwa, grzebiąc w ruinach rannych.",
+      "Na początku lat 70. XX wieku rozebrano fasadę frontową dawnej świątyni parafialnej; odbudowę i rozbudowę prowadzono według projektu Tomasza Turczynowicza, Anny Bieleckiej i Piotra Walkowiaka.",
+      "Budowa kościoła, który otrzymał nowe wezwanie Matki Bożej Jerozolimskiej, została zakończona w 1983 roku."
+    ],
+    "ciekawostki": [
+      "Autorzy nadali świątyni i towarzyszącym budynkom kształt średniowiecznego zamku, w duchu postmodernizmu; wkomponowano przedwojenne fragmenty (wieżę i kolumnadę)."
+    ],
+    "summary_en": "A Roman Catholic church on Łazienkowska street, belonging to the Jerusalem Monastic Communities. Begun in 1916 and consecrated in 1933, it was destroyed in the Warsaw Uprising and rebuilt in the 1970s–1983 in a postmodern, castle-like form.",
+    "ludzie": [
+      {"kto": "Hugo Kudera", "rola": "architekt projektu z 1912 roku (w tekście: Hugon Kudera)", "wiki": null},
+      {"kto": "Tomasz Turczynowicz", "rola": "architekt odbudowy i rozbudowy", "wiki": null},
+      {"kto": "Anna Bielecka", "rola": "architektka odbudowy i rozbudowy", "wiki": null},
+      {"kto": "Piotr Walkowiak", "rola": "architekt odbudowy i rozbudowy", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół Matki Boskiej Częstochowskiej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Matki Bożej Jerozolimskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Bo%C5%BCej_Jerozolimskiej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje „Hugona Kuderę” w dopełniaczu/bierniku; w ludziach zapisano mianownik."
+  },
+  {
+    "id": "kosciol-matki-bozej-laskawej",
+    "nazwa": "Kościół Matki Bożej Łaskawej w Warszawie",
+    "name_en": "Our Lady of Mercy Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Świętojańska 10",
+    "adres_historyczny": null,
+    "lat": 52.248888888,
+    "lon": 21.013055555,
+    "lokalizacja": "dokladna",
+    "okres": "1609–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół został zbudowany w latach 1609–1626.",
+      "Inicjatorem jego powstania był ks. Piotr Skarga, który przeznaczał pieniądze z jałmużny na kupno domu dla zakonu jezuitów w 1597 roku.",
+      "W 1656 roku świątynia została zniszczona i splądrowana przez najazd wojsk szwedzkich.",
+      "W 1660 roku zakon założył przy kościele aptekę; była po aptece zamkowej najstarszą apteką warszawską.",
+      "W 1668 roku jezuici założyli szkołę z wykładami m.in. z teologii i filozofii na poziomie akademickim.",
+      "W 1773 roku, po kasacie zakonu, świątynia stała się kościołem szkolnym podległym Komisji Edukacji Narodowej.",
+      "W 1944 roku świątynia została prawie doszczętnie zniszczona na skutek podpalenia i wysadzenia w powietrze.",
+      "W 1965 roku świątynia została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Obraz Matki Bożej Łaskawej w absydzie nawy głównej jest kopią renesansowej polichromii z Faenzy we Włoszech.",
+      "Z tyłu do budowli asymetrycznie dostawiono 65-metrową wieżę."
+    ],
+    "summary_en": "A historic church on Świętojańska street in Warsaw, built in 1609–1626 for the Jesuits. It houses a sanctuary of Our Lady of Mercy, patroness of Warsaw. The church was destroyed in 1944 and is listed as a historic monument.",
+    "ludzie": [
+      {"kto": "Piotr Skarga", "rola": "inicjator budowy kościoła", "wiki": null},
+      {"kto": "Zygmunt III Waza", "rola": "fundator świątyni", "wiki": null},
+      {"kto": "Andrzej Bobola", "rola": "fundator (podkomorzy)", "wiki": null},
+      {"kto": "Jan Frankiewicz", "rola": "prawdopodobny projektant kościoła", "wiki": null},
+      {"kto": "Ludwik Bartłomiej Załuski", "rola": "biskup płocki; inicjator budowy dwupiętrowego budynku na tyłach kościoła w 1720", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół klasztorny Narodzenia NMP i św. Ignacego Loyoli"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Matki Bożej Łaskawej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Matki_Bo%C5%BCej_%C5%81askawej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł przypisuje kościół do Starego Miasta; w nagłówku dzielnica to Śródmieście."
+  },
+  {
+    "id": "kosciol-najswietszego-zbawiciela",
+    "nazwa": "Kościół Najświętszego Zbawiciela w Warszawie",
+    "name_en": "Church of the Holy Saviour in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Zbawiciela",
+    "adres_historyczny": null,
+    "lat": 52.219166666,
+    "lon": 21.017777777,
+    "lokalizacja": "dokladna",
+    "okres": "1899–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1899 roku ukonstytuował się Komitet Budowy Kościoła pod przewodnictwem ks. prałata Jakuba Siemca.",
+      "12 października 1901 roku odbyła się uroczystość wmurowania kamienia węgielnego.",
+      "Konkurs na projekt kościoła wygrał Stefan Szyller, ale realizację powierzono Józefowi Piusowi Dziekońskiemu.",
+      "Parafię pod wezwaniem Najświętszego Zbawiciela erygowano 1 stycznia 1911 roku, a 23 października 1927 roku świątynia została konsekrowana przez biskupa Stanisława Galla.",
+      "We wrześniu 1939 roku podczas bombardowań Warszawy pociski zniszczyły sygnaturkę, zachodnią wieżę i dach.",
+      "Po upadku powstania warszawskiego Niemcy założyli miny w dolnym kościele; wybuch zniszczył jego sklepienie oraz kaplicę nad nim.",
+      "6 sierpnia 1946 roku w kościele odbył się pogrzeb ponad 5 ton prochów ofiar powstania warszawskiego, które przetransportowano na Cmentarz Powstańców Warszawy przy ul. Wolskiej.",
+      "3 grudnia 2006 roku kard. Józef Glemp podniósł kościół do rangi sanktuarium diecezjalnego."
+    ],
+    "ciekawostki": [
+      "W 1822 Piotr Garnier zbudował na tym terenie murowaną karczmę zwaną „czerwoną”.",
+      "Nabożeństwa po wojnie przeniesiono do domu parafialnego na ul. Mokotowskiej 13, gdzie w sali widowiskowej urządzono ołtarz; od 1949 mieści się tam Teatr Współczesny."
+    ],
+    "summary_en": "A historic Roman Catholic church on plac Zbawiciela in Warsaw, begun in 1901 and consecrated in 1927. Heavily damaged in 1939 and 1944, it was restored after the war and became a diocesan sanctuary in 2006.",
+    "ludzie": [
+      {"kto": "Jakub Siemiec", "rola": "prałat, przewodniczący Komitetu Budowy Kościoła (w tekście: Jakub Siemiec)", "wiki": null},
+      {"kto": "Stefan Szyller", "rola": "zwycięzca konkursu na projekt kościoła", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "architekt realizacji", "wiki": null},
+      {"kto": "Stanisław Gall", "rola": "biskup, konsekrował świątynię w 1927", "wiki": null},
+      {"kto": "Roman Rembeliński", "rola": "pierwszy proboszcz", "wiki": null},
+      {"kto": "Wiesław Konowicz", "rola": "autor projektu odbudowy po wojnie", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "kardynał, podniósł kościół do rangi sanktuarium diecezjalnego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Najświętszego Zbawiciela w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Naj%C5%9Bwi%C4%99tszego_Zbawiciela_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje „Jakuba Siemca”; w ludziach zapisano mianownik."
+  },
+  {
+    "id": "kosciol-narodzenia-nmp-leszno",
+    "nazwa": "Kościół Narodzenia Najświętszej Maryi Panny w Warszawie",
+    "name_en": "Church of the Nativity of the Virgin Mary in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. „Solidarności” 80",
+    "adres_historyczny": "ul. Leszno 32",
+    "lat": 52.242944,
+    "lon": 20.995044,
+    "lokalizacja": "dokladna",
+    "okres": "1682–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół zbudowany w latach 1682–1732 jako kościół przylegający do klasztoru karmelitów trzewiczkowych.",
+      "Pierwsze nabożeństwo odbyło się 8 września 1682 roku w kaplicy urządzonej w nabytej posiadłości.",
+      "Kościół został poświęcony 27 kwietnia 1732 roku przez legata papieskiego w Polsce Camillo Paolucciego.",
+      "W 1704 roku, w czasie wojny północnej, klasztor był zajęty przez Szwedów, skąd 28 lipca 1704 wyruszyło ich poselstwo do Stanisława Leszczyńskiego.",
+      "W 1818 klasztor został częściowo przejęty przez władze i przeznaczony na więzienie; w 1822 osadzono tu m.in. Waleriana Łukasińskiego.",
+      "W latach 1940–1942 był jednym z dwóch czynnych kościołów w granicach getta.",
+      "Po wojnie kościół i budynki dawnego klasztoru były zniszczone w ok. 45%; świątynię odbudowano w latach 1951–1956."
+    ],
+    "ciekawostki": [
+      "Warszawski obraz Matki Boskiej Białynickiej, znany od 1641 roku, zaginął w powstaniu warszawskim; wiszący w kościele wizerunek jest jego kopią.",
+      "W 1968 roku zbudowano 25-głosowe organy."
+    ],
+    "summary_en": "A Baroque church on al. Solidarności 80 (formerly ul. Leszno 32), built in 1682–1732 beside a Carmelite monastery. It was held by the authorities as a prison in the 19th century and rebuilt after WWII, when about 45% of the complex was destroyed.",
+    "ludzie": [
+      {"kto": "Marcin Charzewicz", "rola": "prowincjał polsko-litewski karmelitów trzewiczkowych", "wiki": null},
+      {"kto": "Stefan Wierzbowski", "rola": "biskup poznański; w 1682 zezwolił na podniesienie krzyża i odprawianie nabożeństw", "wiki": null},
+      {"kto": "Camillo Paolucci", "rola": "legat papieski w Polsce, poświęcił kościół w 1732", "wiki": null},
+      {"kto": "Walerian Łukasiński", "rola": "więzień klasztoru od 1822 roku", "wiki": null},
+      {"kto": "Szymon Czechowicz", "rola": "namalował obrazy do ołtarzy bocznych", "wiki": null}
+    ],
+    "dawne_nazwy": ["Leszno 32"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Narodzenia Najświętszej Maryi Panny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Narodzenia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł z sekcją o przesunięciu budynku w 1962 roku, urwaną w pliku; tej części nie wykorzystano."
+  },
+  {
+    "id": "kosciol-nawiedzenia-nmp",
+    "nazwa": "Kościół Nawiedzenia Najświętszej Marii Panny w Warszawie",
+    "name_en": "Church of the Visitation of the Virgin Mary in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Przyrynek 2",
+    "adres_historyczny": null,
+    "lat": 52.254166666,
+    "lon": 21.009166666,
+    "lokalizacja": "dokladna",
+    "okres": "1411–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół został zbudowany w 1411 w stylu gotyckim i jest jedną z najstarszych świątyń Warszawy.",
+      "Został ufundowany w 1409 przez księcia Janusza Starszego i jego żonę Danutę Annę; w 1411 poświęcił go biskup Wojciech Jastrzębiec.",
+      "14 stycznia 1562 roku król Zygmunt August nadał kapitule kościoła św. Jana prawo zarządzania kościołem Nawiedzenia NMP.",
+      "Podczas wojny ze Szwedami w 1656 roku kościół został spalony.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku został uszkodzony, a w 1944 roku spalony przez Niemców.",
+      "Odbudowano go w latach 1947–1966; w tekście podano też, że podczas odbudowy w latach 1947–1952 przywrócono jego pierwotny wygląd.",
+      "W 1965 roku świątynia (wraz z dzwonnicą, plebanią i organistówką) została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Podczas stanu wojennego działało tu Duszpasterstwo Środowisk Twórczych, a najwybitniejsi literaci i aktorzy przygotowywali programy o charakterze patriotycznym, które ściągały tłumy."
+    ],
+    "summary_en": "A Gothic church at ul. Przyrynek 2 in Nowe Miasto, one of the oldest churches in Warsaw, built in 1411. Damaged in 1939 and burned by the Germans in 1944, it was rebuilt after the war and listed as a historic monument in 1965.",
+    "ludzie": [
+      {"kto": "Janusz Starszy", "rola": "książę, ufundował kościół w 1409", "wiki": null},
+      {"kto": "Danuta Anna", "rola": "żona Janusza Starszego, współfundatorka kościoła", "wiki": null},
+      {"kto": "Wojciech Jastrzębiec", "rola": "biskup, poświęcił kościół w 1411", "wiki": null},
+      {"kto": "Zygmunt August", "rola": "król, nadał kapitule kościoła św. Jana prawo zarządzania kościołem", "wiki": null},
+      {"kto": "Bolesław IV", "rola": "książę warszawski i zakroczymski; przyczynił się do przekształcenia kościoła w trójnawową bazylikę w II poł. XV w.", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Nawiedzenia Najświętszej Marii Panny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Nawiedzenia_Naj%C5%9Bwi%C4%99tszej_Marii_Panny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dwie różne daty odbudowy: 1947–1966 oraz 1947–1952 (przywrócenie wyglądu); obie przytoczono."
+  },
+  {
+    "id": "kosciol-niepokalanego-poczecia-res-sacra-miser",
+    "nazwa": "Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny (Res Sacra Miser)",
+    "name_en": "Res Sacra Miser Church",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście",
+    "adres_historyczny": null,
+    "lat": 52.245,
+    "lon": 21.0146,
+    "lokalizacja": "dokladna",
+    "okres": "1663–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie była to kaplica klasztoru karmelitanek bosych, założonego w 1663 roku w miejscu zniszczonego podczas potopu szwedzkiego pałacu Kazanowskich.",
+      "Od 1818 roku kaplica należała do domu Warszawskiego Towarzystwa Dobroczynności, a świątynią opiekowały się szarytki.",
+      "Podczas powstania warszawskiego budynek szpitala oraz przylegająca do niego kaplica zostały uszkodzone; zachowało się wyposażenie i ołtarz.",
+      "W 1955 roku wydano nakaz rozbiórki kościoła, ale wobec licznych protestów decyzja została cofnięta.",
+      "W 1965 roku budynek, w którym znajduje się świątynia, został wpisany do rejestru zabytków.",
+      "W 1979 roku jako duszpasterz pielęgniarek posługę w kaplicy pełnił ks. Jerzy Popiełuszko.",
+      "1 grudnia 2009 roku przy kościele powołano parafię ormiańskokatolicką; jej proboszczem został ks. Artur Avdalyan.",
+      "Wewnątrz znajduje się barokowy ołtarz z unikatowym systemem zmiany obrazów."
+    ],
+    "ciekawostki": [
+      "Pod kaplicą znajdują się katakumby, krypta z XVIII wieku, w której pochowano ponad 100 osób, m.in. dzieci magnackich."
+    ],
+    "summary_en": "The Res Sacra Miser church on Krakowskie Przedmieście, originally the chapel of a Discalced Carmelite convent founded in 1663. Its 19th-century exterior was designed by Antonio Corazzi, and the building has been used by several denominations since the 1990s.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "przebudował barokową elewację w stylu klasycznym w XIX wieku", "wiki": null},
+      {"kto": "Jerzy Popiełuszko", "rola": "duszpasterz pielęgniarek w kaplicy (1979)", "wiki": null},
+      {"kto": "Artur Avdalyan", "rola": "pierwszy proboszcz parafii ormiańskokatolickiej (2009)", "wiki": null},
+      {"kto": "Kazimierz Nycz", "rola": "arcybiskup, ordynariusz wiernych obrządku ormiańskiego; wydał dekret o powołaniu parafii", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Kazanowskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Niepokalanego Poczęcia Najświętszej Maryi Panny w Warszawie (Res Sacra Miser)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Niepokalanego_Pocz%C4%99cia_Naj%C5%9Bwi%C4%99tszej_Maryi_Panny_w_Warszawie_%28Res_Sacra_Miser%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z artykułu: „przy Krakowskim Przedmieściu”, bez numeru."
+  }
+]

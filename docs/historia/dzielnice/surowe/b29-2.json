@@ -1,0 +1,361 @@
+[
+  {
+    "id": "palac-uruskich",
+    "nazwa": "Pałac Uruskich",
+    "name_en": "Uruski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 30",
+    "adres_historyczny": null,
+    "lat": 52.24015572,
+    "lon": 21.01711392,
+    "lokalizacja": "dokladna",
+    "okres": "1844–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W miejscu obecnego pałacu stał późnobarokowy pałac przypisywany Janowi Zygmuntowi Deyblowi, należący do kasztelana krakowskiego Stanisława Poniatowskiego, ojca króla Stanisława Augusta.",
+      "W 1843 roku pałac stał się własnością Seweryna Uruskiego, marszałka szlachty guberni warszawskiej; stary pałac kazał on zburzyć.",
+      "Projekt nowego pałacu zlecono architektowi Andrzejowi Gołońskiemu; roboty trwały od 1844 do 1847 roku.",
+      "Nad częścią środkową elewacji frontowej widnieje wielki kartusz z herbem fundatora Sas dłuta Ludwika Kaufmana.",
+      "Po śmierci Seweryna Uruskiego w 1890 roku pałac przeszedł najpierw na jego żonę, a potem na córkę Marię zamężną z ks. Włodzimierzem Światopełk-Czetwertyńskim.",
+      "W latach 1893–1895 pałac odnowiono pod kierunkiem Józefa Hussa.",
+      "Pałac został spalony podczas powstania warszawskiego; po wojnie zniszczenia oszacowano na ok. 50%. Odbudowano go w latach 1948–1951 według projektu Jana Dąbrowskiego.",
+      "Obecnie mieści się tu Wydział Geografii i Studiów Regionalnych."
+    ],
+    "ciekawostki": [
+      "Wieża pałacu w XVII wieku pełniła funkcję wieży ciśnień lokalnego wodociągu Tytusa Liwiusza Boratiniego.",
+      "Pałac uwiecznił Canaletto na obrazie przedstawiającym Krakowskie Przedmieście od strony Nowego Światu."
+    ],
+    "summary_en": "The Uruski Palace on Krakowskie Przedmieście replaced an 18th-century Baroque residence that belonged to the father of King Stanisław August. Built in 1844–1847 for Seweryn Uruski in a Renaissance style, it was burned in 1944 and rebuilt in 1948–1951. Today it houses the Faculty of Geography and Regional Studies of the University of Warsaw.",
+    "ludzie": [
+      {"kto": "Seweryn Uruski", "rola": "marszałek szlachty guberni warszawskiej, inwestor pałacu z lat 1844–1847", "wiki": null},
+      {"kto": "Andrzej Gołoński", "rola": "architekt projektu z lat 1844–1847", "wiki": null},
+      {"kto": "Józef Huss", "rola": "kierował odnową w latach 1893–1895", "wiki": null},
+      {"kto": "Jan Dąbrowski", "rola": "autor projektu odbudowy w latach 1948–1951", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Czetwertyńskich"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Uruskich", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Uruskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce pomija część opisu historii po 1947 (dotyczącą IGiPZ PAN); fakty z tej części pominięte."
+  },
+  {
+    "id": "palac-zamoyskich-nowy-swiat",
+    "nazwa": "Pałac Zamoyskich (ul. Nowy Świat)",
+    "name_en": "Zamoyski Palace (Nowy Świat Street)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 67 i 69",
+    "adres_historyczny": null,
+    "lat": 52.2375,
+    "lon": 21.0175,
+    "lokalizacja": "dokladna",
+    "okres": "1667–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od 1667 właścicielem posesji był Jan Wielopolski, który wkrótce wybudował tu pałac i założył ogród.",
+      "W 1802 pałac kupiła Anna z Zamoyskich Sapieżyna; zamieszkał w nim Stanisław Staszic, tu też zmarł w 1826 roku.",
+      "W latach 1843–1846 pałac przebudowano pod kierunkiem Henryka Marconiego; fasadę zaakcentowano tympanonem z płaskorzeźbami Pawła Malińskiego.",
+      "19 września 1863 członkowie Żandarmerii Narodowej dokonali z okna pałacu zamachu na namiestnika carskiego Fiodora Berga; w odwecie pałac został splądrowany przez żołnierzy rosyjskich.",
+      "W 1863 pałac skonfiskowano i zamieniono na gmach rządowy; od 1867 roku mieściła się tu siedziba Zarządu Inżynierii Warszawskiego Wojennego Okręgu.",
+      "Podczas obrony Warszawy, od 8 do 17 września 1939 roku, w budynku nr 69 mieściło się Dowództwo Obrony Warszawy.",
+      "Pałac odbudowano w latach 1948–1950 ze zmianami według projektu Mieczysława Kuzmy."
+    ],
+    "ciekawostki": [
+      "Z mieszkania siostry Fryderyka Chopina, Izabeli Barcińskiej, wyrzucono fortepian kompozytora, co opisał Cyprian Kamil Norwid w wierszu Fortepian Szopena.",
+      "23 sierpnia 1944 pałac został zdobyty przez powstańców; wcześniej był umocnionym ośrodkiem oporu Niemców."
+    ],
+    "summary_en": "The Zamoyski Palace at Nowy Świat 67 and 69 was owned by the Wielopolski and then Zamoyski families. Staszic lived and died there. It was the site of a 1863 assassination attempt on the Russian governor, was burned by the Russians in reprisal, and was rebuilt after World War II.",
+    "ludzie": [
+      {"kto": "Jan Wielopolski", "rola": "właściciel posesji od 1667 roku", "wiki": null},
+      {"kto": "Stanisław Staszic", "rola": "zamieszkał w pałacu, zmarł tu w 1826 roku", "wiki": null},
+      {"kto": "Andrzej Zamoyski", "rola": "właściciel od 1839 roku, zlecił przebudowę w latach 1843–1846", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "kierował przebudową w latach 1843–1846", "wiki": null},
+      {"kto": "Mieczysław Kuzma", "rola": "autor projektu odbudowy z lat 1948–1950", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Andrzeja hr. Zamoyskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Zamoyskich w Warszawie (ul. Nowy Świat)", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Zamoyskich_w_Warszawie_%28ul._Nowy_%C5%9Awiat%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-wesslow",
+    "nazwa": "Pałac Wesslów",
+    "name_en": "Wessel Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 25",
+    "adres_historyczny": "pałac Franciszka Jana Załuskiego",
+    "lat": 52.24363,
+    "lon": 21.013798,
+    "lokalizacja": "dokladna",
+    "okres": "1746–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wzniesiono między 1746 a 1752 rokiem; jego projektantem mógł być Jakub Fontana.",
+      "Pierwotnie należał do generała Franciszka Jana Załuskiego, starosty grójeckiego; w 1761 sprzedał go Teodorowi Wesslowi, a w 1764 Antoniemu Ostrowskiemu, biskupowi kujawskiemu.",
+      "W 1780 budynek kupił Franciszek Ignacy Przebendowski na użytek poczty; do 1874 roku mieścił się tu urząd pocztowy, stąd popularna nazwa Poczta Saska.",
+      "2 listopada 1830 roku Fryderyk Chopin nadał na poczcie swój bagaż i pożegnał się z najbliższymi przed opuszczeniem Warszawy na zawsze.",
+      "W latach 1883–1884 pałac gruntownie przebudowano według projektu Aleksandra Woydego i Władysława Marconiego.",
+      "W 1944 budynek został spalony; odbudowano go w 1947 roku według projektu Jana Bieńkowskiego."
+    ],
+    "ciekawostki": [
+      "Od 1887 roku w pałacu przez czas jakiś mieściła się redakcja „Kuriera Codziennego” i „Tygodnika Ilustrowanego”."
+    ],
+    "summary_en": "The Wessel Palace on Krakowskie Przedmieście, also known as the Saxon Post Palace, housed a royal post office from 1780 to 1874. Frédéric Chopin sent his luggage from there before leaving Warsaw in 1830. It was burned in 1944 and rebuilt in 1947.",
+    "ludzie": [
+      {"kto": "Franciszek Jan Załuski", "rola": "generał, starosta grójecki, pierwszy właściciel", "wiki": null},
+      {"kto": "Franciszek Ignacy Przebendowski", "rola": "wojewoda pomorski i dyrektor poczt, który kupił budynek w 1780 roku", "wiki": null},
+      {"kto": "Fryderyk Chopin", "rola": "pożegnał się z Warszawą na poczcie w 1830 roku", "wiki": null},
+      {"kto": "Jan Bieńkowski", "rola": "autor projektu odbudowy w 1947 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Poczta Saska", "pałac Franciszka Jana Załuskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Wesslów", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Wessl%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palacyk-cukrownikow",
+    "nazwa": "Pałacyk Cukrowników",
+    "name_en": "Sugar Industry Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 25",
+    "adres_historyczny": null,
+    "lat": 52.221111,
+    "lon": 21.018139,
+    "lokalizacja": "dokladna",
+    "okres": "1878–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1878 roku powstał tu parterowy dworek Kazimiery z Kaczyńskich Ćwierciakiewiczowej.",
+      "W 1907 roku dworek wraz z oficynami przejął Mieczysław Kaczyński, który założył tu drukarnię, zakład litograficzny oraz wytwórnię toreb.",
+      "W 1910 roku budynek wynajęto na siedzibę zarządu spółek akcyjnych lubelskich cukrowni.",
+      "W 1922 roku Zarząd Cukrowni Lubelskich zakupił nieruchomość; dworek rozbudowano i całkowicie przekształcono według projektu Tadeusza Zielińskiego.",
+      "W 1935 roku pałacyk kupił Mieczysław Broniewski, specjalista z dziedziny cukrownictwa, który zaadaptował go na rodzinną rezydencję według projektu Antoniego Jawornickiego.",
+      "W 1977 roku pałacyk wraz z dziedzińcem i ogrodzeniem wpisano do rejestru zabytków.",
+      "Od 2005 roku pałacyk jest własnością Instytutu Adama Mickiewicza."
+    ],
+    "ciekawostki": [
+      "W 2010 roku na bramie wjazdowej odsłonięto tablicę upamiętniającą założycieli Instytutu: Andrzeja Zakrzewskiego i Bronisława Geremka."
+    ],
+    "summary_en": "The Sugar Industry Palacyk on Mokotowska Street began as a small manor house built in 1878. It was converted into a company headquarters and a family residence in the 1920s and 1930s. Since 2005 it has housed the Adam Mickiewicz Institute.",
+    "ludzie": [
+      {"kto": "Kazimiera z Kaczyńskich Ćwierciakiewiczowa", "rola": "właścicielka parterowego dworku z 1878 roku", "wiki": null},
+      {"kto": "Mieczysław Kaczyński", "rola": "przejął dworek w 1907 roku", "wiki": null},
+      {"kto": "Tadeusz Zieliński", "rola": "autor przebudowy z lat 1915–1922", "wiki": null},
+      {"kto": "Mieczysław Broniewski", "rola": "kupił pałacyk w 1935 roku", "wiki": null},
+      {"kto": "Antoni Jawornicki", "rola": "autor adaptacji z 1935 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałacyk Zjednoczenia Cukrownictwa", "pałac Zjednoczenia Cukrowników"],
+    "zrodla": [{"tytul": "Wikipedia: Pałacyk Cukrowników", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_Cukrownik%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palacyk-dziewulskich",
+    "nazwa": "Pałacyk Dziewulskich",
+    "name_en": "Dziewulski Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 33/35",
+    "adres_historyczny": null,
+    "lat": 52.225,
+    "lon": 21.02305556,
+    "lokalizacja": "dokladna",
+    "okres": "1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XIX wieku w miejscu pałacyku znajdował się pałac należący do księcia Eugeniusza Lubomirskiego.",
+      "W 1909 roku nieruchomość kupił Stefan Dziewulski.",
+      "W 1910 roku pałac Lubomirskiego rozebrano, a na jego miejscu wybudowano nowy budynek w stylu neorenesansowym według projektu Władysława Marconiego.",
+      "Pałacyk nie został zniszczony podczas II wojny światowej.",
+      "W 1946 roku spadkobiercy Dziewulskiego sprzedali nieruchomość przedstawicielstwu dyplomatycznemu Bułgarii."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Dziewulski Palacyk on Aleje Ujazdowskie was built in 1910 in a Neo-Renaissance style, to a design by Władysław Marconi, on the site of an earlier palace of prince Eugeniusz Lubomirski. It survived the war and was sold to the Bulgarian diplomatic mission in 1946.",
+    "ludzie": [
+      {"kto": "Eugeniusz Lubomirski", "rola": "książę, właściciel wcześniejszego pałacu na tej działce", "wiki": null},
+      {"kto": "Stefan Dziewulski", "rola": "kupił nieruchomość w 1909 roku", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "autor projektu z 1910 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałacyk Dziewulskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_Dziewulskich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Krótki artykuł; brak opisu wnętrz i dalszych właścicieli."
+  },
+  {
+    "id": "palacyk-rusieckiego",
+    "nazwa": "Pałacyk Rusieckiego",
+    "name_en": "Rusiecki Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Lwowska 13a",
+    "adres_historyczny": null,
+    "lat": 52.22189,
+    "lon": 21.0118,
+    "lokalizacja": "dokladna",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Mały pałacyk wybudowano w 1912 roku w podwórzu, tuż za kamienicą; jest zbudowany na planie prostokąta w stylu eklektycznym.",
+      "Fundatorem pałacyku był warszawski kolekcjoner Stanisław Ursyn Rusiecki; najprawdopodobniej twórcą obu budowli była spółka Józefa Napoleona Czerwińskiego i Wacława Heppena.",
+      "W 1944 roku pałacyk miał być podarowany zgodnie z wolą Rusieckiego Polskiej Akademii Umiejętności, która nie miała możliwości przejęcia daru.",
+      "Podczas powstania warszawskiego mieścił się tu powstańczy szpital.",
+      "Od 1954 roku mieściła się tu siedziba Zarządu Głównego Związku Zawodowego Pracowników Kultury i Sztuki.",
+      "W 2011 roku pałacyk przeszedł w posiadanie PAU."
+    ],
+    "ciekawostki": [
+      "Rusiecki przechowywał w pałacyku zbiory (miniatury, malarstwo, rękopisy, starodruki, porcelanę, ryciny, tkaniny, militaria); dużą ich część przekazał do krakowskiego Muzeum Narodowego."
+    ],
+    "summary_en": "The Rusiecki Palacyk at Lwowska 13a, built in 1912 in a courtyard behind a tenement, was a private collector's house. During the Warsaw Uprising it served as an insurgent hospital, and in 2011 it passed to the Polish Academy of Arts and Sciences.",
+    "ludzie": [
+      {"kto": "Stanisław Ursyn Rusiecki", "rola": "warszawski kolekcjoner, fundator pałacyku", "wiki": null},
+      {"kto": "Józef Napoleon Czerwiński", "rola": "współtwórca obu budowli, spółka z Wacławem Heppenem", "wiki": null},
+      {"kto": "Wacław Heppen", "rola": "współtwórca obu budowli, spółka z Józefem Napoleonem Czerwińskim", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałacyk Rusieckiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_Rusieckiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palacyk-sanguszkow",
+    "nazwa": "Pałacyk Sanguszków",
+    "name_en": "Sanguszko Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowy Świat 51",
+    "adres_historyczny": "dawny nr hip. 1253 (1770)",
+    "lat": 52.235413,
+    "lon": 21.01809293,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1750–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę pałacyku rozpoczęto około 1750 roku dla zamożnego kupca Krystiana Teycha; nie znamy nazwiska architekta.",
+      "W 1765 roku był już własnością kuchmistrza koronnego, księcia Adama Ponińskiego; w 1770 roku posesja miała numer hipoteczny 1253.",
+      "W połowie lat 70. XVIII wieku pałacyk za długi karciane przeszedł w ręce Carla Alessandra Tomatisa.",
+      "Około 1784 roku Tomatis odsprzedał pałacyk księciu Hieronimowi Januszowi Sanguszce (1743–1812), ostatniemu wojewodzie wołyńskiemu.",
+      "W połowie XIX wieku pałacyk stracił rezydencjonalny charakter i notowany był już jako zwykła kamienica.",
+      "W 1902 roku otwarto tu cukiernię Semadeniego pod nazwą „Café Louvre”, urządzoną w stylu Ludwika XVI."
+    ],
+    "ciekawostki": [
+      "We wrześniu 1781 roku w domu Tomatisów koncertował Gaetano Pugnani wraz z uczniem Giovannim Battistą Viottim; w 1781 roku odwiedził ich też szambelan pruski Ernst von Lehndorff."
+    ],
+    "summary_en": "The Sanguszko Palacyk on Nowy Świat began as a Rococo townhouse built around 1750 for the merchant Krystian Teych. It passed through several noble owners, including the Sanguszko family from about 1784, and became a tenement with a famous café in 1902.",
+    "ludzie": [
+      {"kto": "Krystian Teych", "rola": "kupiec warszawski, inwestor pałacyku z ok. 1750 roku", "wiki": null},
+      {"kto": "Adam Poniński", "rola": "kuchmistrz koronny, właściciel w 1765 i 1770 roku", "wiki": null},
+      {"kto": "Carl Alessandro Tomatis", "rola": "hrabia i gracz, właściciel w latach 70. XVIII wieku", "wiki": null},
+      {"kto": "Hieronim Janusz Sanguszko", "rola": "ostatni wojewoda wołyński, właściciel od ok. 1784 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałacyk Teycha", "pałacyk Ponińskiego", "pałacyk Tomatisa"],
+    "zrodla": [{"tytul": "Wikipedia: Pałacyk Sanguszków w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_Sanguszk%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urwany w zdaniu o cukierni (po 1902 roku); dalsze dzieje pominięte."
+  },
+  {
+    "id": "palacyk-wielopolskich",
+    "nazwa": "Pałacyk Wielopolskich",
+    "name_en": "Wielopolski Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 15 (róg al. Róż)",
+    "adres_historyczny": null,
+    "lat": 52.221694,
+    "lon": 21.023778,
+    "lokalizacja": "dokladna",
+    "okres": "1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałacyk powstał w latach 1875–1876 według projektu Józefa Hussa w stylu eklektycznym dla Antoniego Nagórnego, dyrektora Wydziału Przemysłu i Handlu Banku Polskiego.",
+      "W latach 1898–1932 był własnością rodziny Wielopolskich.",
+      "W 1904 roku z inicjatywy Elizy Wielopolskiej przeprowadzono przebudowę wnętrz.",
+      "Budynek został wypalony podczas II wojny światowej i częściowo przebudowany w 1948 roku.",
+      "W latach 1945–2008 mieściła się tu siedziba ambasady Wielkiej Brytanii (al. Róż 1).",
+      "W 1965 i 2004 roku pałacyk wraz z ogrodem i ogrodzeniem wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Wielopolski Palacyk at the corner of Aleje Ujazdowskie and Aleja Róż was designed by Józef Huss in 1875–1876 in an eclectic style. It belonged to the Wielopolski family from 1898 to 1932 and housed the British Embassy after the war until 2008.",
+    "ludzie": [
+      {"kto": "Józef Huss", "rola": "autor projektu z lat 1875–1876", "wiki": null},
+      {"kto": "Antoni Nagórny", "rola": "dyrektor Wydziału Przemysłu i Handlu Banku Polskiego, pierwszy inwestor", "wiki": null},
+      {"kto": "Eliza Wielopolska", "rola": "zainicjowała przebudowę wnętrz w 1904 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałacyk Elizy Wielopolskiej"],
+    "zrodla": [{"tytul": "Wikipedia: Pałacyk Wielopolskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_Wielopolskich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palacyk-wilhelma-ellisa-raua",
+    "nazwa": "Pałacyk Wilhelma Ellisa Raua",
+    "name_en": "Wilhelm Ellis Rau Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Al. Ujazdowskie 27 (róg ul. Pięknej)",
+    "adres_historyczny": null,
+    "lat": 52.22401069,
+    "lon": 21.02350295,
+    "lokalizacja": "dokladna",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałacyk zaprojektował Leander Marconi dla Wilhelma Ellisa Raua, warszawskiego przemysłowca, współzałożyciela zakładów „Lilpop, Rau i Loewenstein”.",
+      "Wybudowano go w latach 1866–1868 w stylu włoskiego renesansu.",
+      "W narożach ryzalitów elewacji frontowej znajdowały się figury Architektury i Rzeźby wykonane przez Marconiego oraz posągi Malarstwa i Mechaniki dłuta Andrzeja Pruszyńskiego.",
+      "W 1906 roku właścicielką została Maria z Sapiehów Branicka; po jej śmierci w 1919 roku pałacyk odziedziczyła córka, Maria Radziwiłłowa.",
+      "W drugiej połowie dwudziestolecia międzywojennego pałac wynajmowało Ministerstwo Spraw Zagranicznych; pełnił funkcję rezydencji wiceministra Jana Szembeka.",
+      "Budynek spłonął w 1944 roku; w latach 1948–1949 odbudowano go ze zmianami według projektu Szymona Syrkusa i szwajcarskiego architekta Hansa Schmidt na siedzibę Ambasady Szwajcarii.",
+      "W 1965 roku pałac wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Rau Palacyk on Aleje Ujazdowskie was designed by Leander Marconi for the industrialist Wilhelm Ellis Rau and built in 1866–1868 in an Italian Renaissance style. It burned in 1944 and was rebuilt in 1948–1949 as the seat of the Swiss Embassy.",
+    "ludzie": [
+      {"kto": "Wilhelm Ellis Rau", "rola": "warszawski przemysłowiec, inwestor pałacyku", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "projektant pałacyku, który w 1865 został zatrudniony przez Raua", "wiki": null},
+      {"kto": "Andrzej Pruszyński", "rola": "autor posągów Malarstwa i Mechaniki w elewacji", "wiki": null},
+      {"kto": "Ludwik Kucharzewski", "rola": "autor dekoracji fontanny i dwóch grup rzeźbiarskich", "wiki": null},
+      {"kto": "Jan Szembek", "rola": "wiceminister spraw zagranicznych, którego rezydencją był pałacyk", "wiki": null},
+      {"kto": "Szymon Syrkus", "rola": "autor projektu odbudowy w latach 1948–1949", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałacyk Wilhelma Ellisa Raua w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_Wilhelma_Ellisa_Raua_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palacyk-sleszynskich",
+    "nazwa": "Pałacyk Śleszyńskich",
+    "name_en": "Śleszyński Palacyk",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 25",
+    "adres_historyczny": null,
+    "lat": 52.22361111,
+    "lon": 21.02369444,
+    "lokalizacja": "dokladna",
+    "okres": "1826–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wybudowano w 1826 roku według projektu Antonia Corazziego dla kapitana batalionu saperów Stanisława Śleszyńskiego i jego żony Gertrudy Emilii z Jakubowskich.",
+      "Śleszyński był również dzierżawcą i pomysłodawcą pobliskiej Doliny Szwajcarskiej.",
+      "Nieruchomość należała do rodziny Śleszyńskich do 1852 roku; w 1840 roku mieścił się tu konsulat Wielkiej Brytanii.",
+      "Najbardziej charakterystycznym elementem dwukondygnacyjnego, pięcioosiowego budynku jest monumentalny portyk zwieńczony frontonem.",
+      "Budynek został zniszczony podczas II wojny światowej i odbudowany w latach 1947–1948 według projektu Heleny i Szymona Syrkusów.",
+      "W 1965 roku budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Śleszyński Palacyk on Aleje Ujazdowskie was designed by Antonio Corazzi in 1826 for a sapper captain. It has a monumental portico, was destroyed in World War II and rebuilt in 1947–1948. Later it was combined with the neighbouring Gawroński villa and housed the Serbian Embassy.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "autor projektu z 1826 roku", "wiki": null},
+      {"kto": "Stanisław Śleszyński", "rola": "kapitan batalionu saperów, inwestor pałacu", "wiki": null},
+      {"kto": "Helena Syrkus", "rola": "autorka projektu odbudowy w latach 1947–1948", "wiki": null},
+      {"kto": "Szymon Syrkus", "rola": "autor projektu odbudowy w latach 1947–1948", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałacyk Śleszyńskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82acyk_%C5%9Aleszy%C5%84skich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

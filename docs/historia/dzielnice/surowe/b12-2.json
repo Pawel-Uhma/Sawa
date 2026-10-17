@@ -1,0 +1,277 @@
+[
+  {
+    "id": "rynek-mariensztacki",
+    "nazwa": "Rynek Mariensztacki",
+    "name_en": "Mariensztat Market Square",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Mariensztacki",
+    "adres_historyczny": null,
+    "lat": 52.2463524, "lon": 21.0169472,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1865–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Po 1843 magistrat wykupił kilka posesji na terenie dawnej jurydyki Mariensztat, tworząc niewielki placyk targowy.",
+      "W 1853 plac powiększono, wyburzając domy przy wschodniej pierzei ul. Garbarskiej.",
+      "Ukształtowany ok. 1865 plac stał się głównym miejscem targowym na Powiślu.",
+      "Na początku XX wieku przy placu wybudowano kilka wysokich kamienic.",
+      "W 1949 roku na nowo wytyczony plac stał się centrum osiedla Mariensztat, zbudowanego w latach 1948–1949, i otrzymał obecną nazwę.",
+      "W lipcu 1950 roku zorganizowano na placu wiec pod hasłem „Ręce precz od Korei”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Mariensztat Market Square is the centre of the Mariensztat housing estate in Śródmieście, built in 1948–1949. The square was earlier a market place from around 1865 and is known for its fountain with sculptures of boys by Jerzy Jarnuszkiewicz.",
+    "ludzie": [
+      {"kto": "Jerzy Jarnuszkiewicz", "rola": "autor rzeźb chłopców przy fontannie na placu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rynek Mariensztacki", "url": "https://pl.wikipedia.org/wiki/Rynek_Mariensztacki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rynek-nowego-miasta",
+    "nazwa": "Rynek Nowego Miasta",
+    "name_en": "New Town Market Square",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Nowego Miasta",
+    "adres_historyczny": null,
+    "lat": 52.2528954, "lon": 21.0082098,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIV i XV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rynek powstał na przełomie XIV i XV wieku jako centralny punkt nowo lokowanego miasta przylegającego od północy do Starej Warszawy.",
+      "Na Rynku w 1544 roku spłonęła większość drewnianych domów; od ok. 1497 roku istniał tu drewniany ratusz, zastąpiony murowanym w latach trzydziestych XVIII wieku.",
+      "W 1818 roku rozebrano ratusz, ponieważ Warszawa stała się jednym organizmem miejskim.",
+      "W 1868 roku dwie pierzeje Rynku oficjalnie przemianowano na ulice: część pierzei zachodniej stała się przedłużeniem ulicy Freta, a północna przedłużeniem ulicy Kościelnej.",
+      "W 1944 roku nastąpiło prawie całkowite zniszczenie zabudowy Rynku.",
+      "Odbudowa Rynku i całego Nowego Miasta zakończyła się 1 września 1956 roku."
+    ],
+    "ciekawostki": [
+      "Kamienica Kajetana Jurkowskiego przy Rynku nr 4, wzniesiona w 1784 roku, jako jedna z nielicznych na Nowym Mieście przetrwała II wojnę światową w stanie w zasadzie nienaruszonym.",
+      "W południowo-zachodniej części Rynku stoi eklektyczna studnia żeliwna z 2. połowy XIX wieku, ustawiona ok. 1957 roku, z herbem Nowego Miasta – panną z jednorożcem."
+    ],
+    "summary_en": "New Town Market Square in Śródmieście was the centre of the New Town founded at the turn of the 14th and 15th centuries. It was almost entirely destroyed in 1944, and its reconstruction, with façades recalling 18th-century classicism, was completed on 1 September 1956.",
+    "ludzie": [
+      {"kto": "Klemens Hofbauer", "rola": "w 1930 roku przy kościele sakramentek odsłonięto jego figurę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rynek Nowego Miasta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rynek_Nowego_Miasta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rynek-starego-miasta",
+    "nazwa": "Rynek Starego Miasta",
+    "name_en": "Old Town Market Square",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta",
+    "adres_historyczny": null,
+    "lat": 52.2497932, "lon": 21.0121851,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIII i XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rynek o wymiarach 90 na 73 metry wytyczono na przełomie XIII i XIV wieku w czasie lokacji Starej Warszawy.",
+      "Od początku XV wieku na środku placu stał murowany ratusz z wysoką wieżą; rozebrano go w 1817 roku.",
+      "Podczas wielkiego pożaru miasta w 1607 roku spłonęło 22 kamienice przy rynku.",
+      "3 stycznia 1665 przed ratuszem ścięto Konstantego Kotowskiego i trzech innych przywódców Związku Braterskiego.",
+      "9 maja 1794 przed ratuszem powieszono przywódców konfederacji targowickiej: Piotra Ożarowskiego, Józefa Ankwicza i Józefa Zabiełłę.",
+      "W 1855 roku, w związku z uruchomieniem pierwszego nowoczesnego wodociągu miejskiego, na środku rynku wzniesiono wodotrysk z posągiem Syreny.",
+      "Rynek oddano do użytku po odbudowie 22 lipca 1953 roku.",
+      "W 1965 roku rynek jako założenie urbanistyczne został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W 1915 roku stronom rynku nadano nazwy: Barssa, Kołłątaja, Dekerta i Zakrzewskiego.",
+      "Rynek Starego Miasta jest głównym miejscem akcji utworu Bolesława Prusa „Widziadła”."
+    ],
+    "summary_en": "The Old Town Market Square is a rectangular square in Warsaw's Old Town, laid out at the turn of the 13th and 14th centuries. It was the administrative and trade centre of the Old Town and the site of executions and political events. After the 1944 destruction, its houses were rebuilt in 1949–1953 and the square reopened on 22 July 1953.",
+    "ludzie": [
+      {"kto": "Konstanty Kotowski", "rola": "ścięty przed ratuszem 3 stycznia 1665 roku wraz z innymi przywódcami Związku Braterskiego", "wiki": null},
+      {"kto": "Konstanty Hegel", "rola": "autor posągu Syreny z 1855 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rynek Starego Miasta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rynek_Starego_Miasta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "skwer-willy-ego-brandta",
+    "nazwa": "Skwer Willy’ego Brandta",
+    "name_en": "Willy Brandt Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "u zbiegu ul. Karmelickiej i ul. Józefa Lewartowskiego",
+    "adres_historyczny": null,
+    "lat": 52.2494756, "lon": 20.9913909,
+    "lokalizacja": "przyblizona",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "7 grudnia 1970 w Pałacu Namiestnikowskim podpisano układ między PRL a RFN o podstawach normalizacji ich wzajemnych stosunków.",
+      "Dokument podpisali Willy Brandt i Józef Cyrankiewicz w obecności I Sekretarza KC PZPR Władysława Gomułki.",
+      "Przed podpisaniem traktatu Willy Brandt złożył wieniec pod Pomnikiem Bohaterów Getta i niespodziewanie ukląkł na stopniach monumentu.",
+      "Gest został zrozumiany jako wyrażona w imieniu Niemiec prośba o wybaczenie zbrodni wobec narodu żydowskiego.",
+      "6 grudnia 2000, w przeddzień 30. rocznicy tego gestu, na skwerze odsłonięto pomnik Willy’ego Brandta.",
+      "W listopadzie 2012 Rada Warszawy zmieniła pierwotną, niepoprawną gramatycznie nazwę na skwer Willy’ego Brandta."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Willy Brandt Square is a small square at the junction of Karmelicka and Józef Lewartowski streets in Muranów. It is named after the German chancellor whose unplanned kneeling at the Warsaw Ghetto Heroes Monument in December 1970 was read as a plea for forgiveness; a monument to him was unveiled here in 2000.",
+    "ludzie": [
+      {"kto": "Willy Brandt", "rola": "kanclerz Niemiec; podpisał układ z 7 grudnia 1970 roku, przy Pomniku Bohaterów Getta uklęknął", "wiki": null},
+      {"kto": "Józef Cyrankiewicz", "rola": "podpisał układ z 7 grudnia 1970 roku", "wiki": null},
+      {"kto": "Władysław Gomułka", "rola": "I Sekretarz KC PZPR; obecny przy podpisaniu układu", "wiki": null}
+    ],
+    "dawne_nazwy": ["skwer Willy Brandta (pierwotna, niepoprawna nazwa do 2012 roku)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Skwer Willy’ego Brandta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Skwer_Willy%E2%80%99ego_Brandta_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "tunel-wislostrady",
+    "nazwa": "Tunel Wisłostrady",
+    "name_en": "Wisłostrada Tunnel",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Wisłostrada, pod mostem Świętokrzyskim",
+    "adres_historyczny": null,
+    "lat": 52.2412884, "lon": 21.0298581,
+    "lokalizacja": "przyblizona",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Tunel powstał w związku z budową mostu Świętokrzyskiego, którego jezdnia została zaprojektowana tuż nad poziomem Wisłostrady.",
+      "Budowę tunelu rozpoczęto w kwietniu 2001 roku, a zakończono w następnym roku.",
+      "Budowa kosztowała ok. 210 mln zł, czyli o ok. 30 mln zł więcej niż planowano.",
+      "Otwarcie nastąpiło w sierpniu 2003 roku; w latach 2003–2016 był to najdłuższy drogowy tunel w Polsce.",
+      "W sierpniu 2012 roku tunel zamknięto z powodu wypłukania ziemi pod nim; awaria nastąpiła w trakcie budowy stacji metra Centrum Nauki Kopernik.",
+      "Ponowne otwarcie nastąpiło 23 czerwca 2013 roku."
+    ],
+    "ciekawostki": [
+      "Przez niemal rok po zakończeniu budowy tunel był nieużywany, ze względu na niespełnianie wymogów bezpieczeństwa i kilkakrotne odkładanie terminu otwarcia.",
+      "Na czas budowy wybudowano jezdnię na nabrzeżu Wisły, popularną wśród rolkarzy i rowerzystów; po otwarciu tunelu służyła jako jego objazd w razie awarii."
+    ],
+    "summary_en": "The Wisłostrada Tunnel runs under the Świętokrzyski Bridge on the left bank of the Vistula in Powiśle, about 900 m long. It was built in 2001–2002 and opened in August 2003, and until 2016 it was Poland's longest road tunnel. It was closed in August 2012 after ground washout during metro station works and reopened on 23 June 2013.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Tunel Wisłostrady", "url": "https://pl.wikipedia.org/wiki/Tunel_Wis%C5%82ostrady"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-29-listopada",
+    "nazwa": "Ulica 29 Listopada",
+    "name_en": "29 Listopada Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. 29 Listopada",
+    "adres_historyczny": null,
+    "lat": 52.2149249, "lon": 21.0430851,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1831–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono krótko po roku 1831 jako drogę dojazdową do koszar Grodzieńskiego Huzarskiego Pułku Lejb-Gwardii.",
+      "Przed rokiem 1893 drewniane baraki koszarowe zaczęto zastępować zabudową murowaną.",
+      "Po odzyskaniu niepodległości zabudowania przebudowano ok. 1925 roku według projektu Kazimierza Tołłoczki na koszary Oddziału Przybocznego Prezydenta RP.",
+      "W latach 1902–1904 przy ulicy wzniesiono cerkiew św. Olgi, a w 1911 obok niej pomnik Michaiła Dmitriewicza Skobielewa; w okresie międzywojennym oba obiekty zburzono.",
+      "Nazwa nawiązuje do Nocy Listopadowej (noc z 29 na 30 listopada 1830 roku) i została oficjalnie nadana 5 lipca 1921 roku.",
+      "W 2017 roku historyczna nawierzchnia ulicy została wpisana do gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [
+      "W Wojsku Polskim 29 listopada obchodzony jest Dzień Podchorążego."
+    ],
+    "summary_en": "29 Listopada Street in Ujazdów, Śródmieście, runs from Czerniakowska Street to Szwoleżerów Street. It was laid out soon after 1831 to serve the barracks of a Guards hussar regiment, and was officially named after the November Night uprising of 1830 on 5 July 1921.",
+    "ludzie": [
+      {"kto": "Kazimierz Tołłoczko", "rola": "autor projektu przebudowy zabudowań na koszary Oddziału Przybocznego Prezydenta RP", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Huzarska (nazwa nieoficjalna przed 1921)",
+      "Husarska (nazwa polska w okresie okupacji)",
+      "Husarenstrasse (nazwa niemiecka w okresie okupacji)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica 29 Listopada w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_29_Listopada_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-adama-idzkowskiego",
+    "nazwa": "Ulica Adama Idźkowskiego",
+    "name_en": "Adam Idźkowski Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Adama Idźkowskiego",
+    "adres_historyczny": null,
+    "lat": 52.227269, "lon": 21.0413905,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nadana w 1928 roku nazwa upamiętnia architekta Adama Idźkowskiego.",
+      "Ulicę zaprojektowano w latach 1928–1930 jako przecznicę ul. Zagórnej; do wybuchu II wojny światowej zdołano wykonać tylko krótkie fragmenty.",
+      "W miejscu planowanego przebiegu ulicy powstał Centralny Park Kultury, od 1992 roku park Marszałka Edwarda Rydza-Śmigłego.",
+      "We wrześniu 1944 w rejonie ulicy toczyły się ciężkie walki; budynek nr 4, zwany przez powstańców „Białym Domem”, był redutą powstańczą.",
+      "Obrona budynku umożliwiła 19 września 1944 roku ewakuację kanałami ok. 200 powstańców na Mokotów.",
+      "Kamienica nr 4, zaprojektowana przez Adolfa Inatowicza-Łubiańskiego, ma dwie odmiennie skomponowane fasady i stylistykę ekspresyjnego funkcjonalizmu."
+    ],
+    "ciekawostki": [
+      "We wschodniej pierzei ulicy stoi pałacyk Symonowicza, przypisany numeracji ul. Solec."
+    ],
+    "summary_en": "Adam Idźkowski Street in the Solec estate, Śródmieście, is a dead-end street named in 1928 after the architect Adam Idźkowski. Its no. 4, the so-called White House, was an insurgent stronghold in the 1944 Warsaw Uprising, and its surviving pre-war building was designed by Adolf Inatowicz-Łubiański.",
+    "ludzie": [
+      {"kto": "Adam Idźkowski", "rola": "architekt, patron ulicy od 1928 roku", "wiki": null},
+      {"kto": "Adolf Inatowicz-Łubiański", "rola": "autor projektu kamienicy nr 4", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Adama Idźkowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Adama_Id%C5%BAkowskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "bialy-dom-idzkowskiego-4",
+    "nazwa": "Biały Dom przy ul. Idźkowskiego 4",
+    "name_en": "White House at Idźkowski Street 4",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Adama Idźkowskiego 4",
+    "adres_historyczny": null,
+    "lat": 52.227269, "lon": 21.0413905,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica nr 4 przy ulicy została zaprojektowana przez Adolfa Inatowicza-Łubiańskiego.",
+      "We wrześniu 1944 roku budynek, nazywany przez powstańców „Białym Domem”, był redutą powstańczą blokującą Niemcom drogę w kierunku Wisły.",
+      "Jego obrona umożliwiła 19 września 1944 roku ewakuację kanałami ok. 200 powstańców na Mokotów.",
+      "Budynek utrzymany jest w stylistyce ekspresyjnego funkcjonalizmu i ma dwie odmiennie skomponowane fasady."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The White House at 4 Adam Idźkowski Street is an Expressionist-functionalist tenement designed by Adolf Inatowicz-Łubiański, with two differently composed façades. In September 1944 insurgents held it as a redoubt blocking German access to the Vistula, and its defence allowed about 200 insurgents to be evacuated through the sewers to Mokotów.",
+    "ludzie": [
+      {"kto": "Adolf Inatowicz-Łubiański", "rola": "architekt kamienicy nr 4", "wiki": null}
+    ],
+    "dawne_nazwy": ["„Biały Dom” (nazwa powstańcza)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Adama Idźkowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Adama_Id%C5%BAkowskiego_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Współrzędne ulicy (środek odcinka); rekord wyprowadzony z artykułu o ulicy. Data powstania budynku w artykule niepodana, przyjęto „przed 1939” z kontekstu."
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "kolumna-zygmunta-iii-wazy",
+    "nazwa": "Kolumna Zygmunta III Wazy",
+    "name_en": "Sigismund III Vasa Column",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Plac Zamkowy",
+    "adres_historyczny": "plac przed Bramą Krakowską",
+    "lat": 52.24725,
+    "lon": 21.013388888,
+    "lokalizacja": "dokladna",
+    "okres": "1643–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik został wzniesiony w latach 1643–1644 z fundacji Władysława IV Wazy według projektu Augustyna Locciego i Constantino Tencalli.",
+      "Pomnik został uroczyście odsłonięty 24 listopada 1644 roku.",
+      "Wzniesiona w 1644 roku Kolumna Zygmunta jest najstarszym świeckim pomnikiem w Warszawie.",
+      "Projekt wywołał konflikt Władysława IV z nuncjuszem Mariem Filonardim, który protestował przeciwko umieszczeniu na kolumnie posągu króla (osoby świeckiej).",
+      "Kolumnę przetransportowano do Warszawy Wisłą; z przystani przetoczono ją, prawdopodobnie ul. Mostową, na plac w ciągu jednego dnia, przez około 300 osób, wspieranych przez 200 żołnierzy z gwardii królewskiej.",
+      "Trzon kolumny wykonano z jednego bloku zlepieńca zygmuntowskiego z kamieniołomu w Czerwonej Górze.",
+      "Kolumna została uszkodzona w czasie wojen szwedzkich w latach 1656–1657 i na początku XVIII wieku.",
+      "Pomnik był restaurowany w latach 1885–1887 i 1929–1931. Został zniszczony przez Niemców we wrześniu 1944 i zrekonstruowany w latach 1948–1949."
+    ],
+    "ciekawostki": [
+      "W 1854 Henryk Marconi zaprojektował wokół pomnika wodotrysk; uruchomiono go w kwietniu 1855.",
+      "Według relacji Albrychta Radziwiłła decyzją króla rozebrano domy klasztorne panien bernardynek, które król wcześniej wykupił w celu budowy pomnika."
+    ],
+    "summary_en": "The Sigismund III Vasa Column stands on Plac Zamkowy in Warsaw. It was built in 1643–1644 by King Władysław IV Vasa and is the oldest secular monument in the city. It was destroyed by the Germans in September 1944 and rebuilt in 1948–1949.",
+    "ludzie": [
+      {"kto": "Augustyn Locci", "rola": "autor koncepcji kolumny", "wiki": null},
+      {"kto": "Constantino Tencalla", "rola": "autor koncepcji kolumny", "wiki": null},
+      {"kto": "Clemente Molli", "rola": "wykonał brązowy posąg króla", "wiki": null},
+      {"kto": "Daniel Tym", "rola": "królewski giser; wykonał odlew z brązu i cztery tablice inskrypcyjne", "wiki": null},
+      {"kto": "Władysław IV Waza", "rola": "fundator pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kolumna Zygmunta III Wazy", "url": "https://pl.wikipedia.org/wiki/Kolumna_Zygmunta_III_Wazy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kompleks-urbanistyczny-wymiaru-sprawiedliwosci",
+    "nazwa": "Kompleks Urbanistyczny Wymiaru Sprawiedliwości",
+    "name_en": "Justice Administration Urban Complex",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Krasińskich 2/4/6",
+    "adres_historyczny": null,
+    "lat": 52.2498,
+    "lon": 21.0052,
+    "lokalizacja": "dokladna",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Kompleks budynków przy placu Krasińskich 2/4/6 jest siedzibą Sądu Najwyższego, warszawskiego Sądu Apelacyjnego oraz oddziału Instytutu Pamięci Narodowej.",
+      "Kompleks administruje Biuro Administracyjno-Gospodarcze Kancelarii Pierwszego Prezesa Sądu Najwyższego.",
+      "Na 76 filarach kompleksu umieszczono osiemdziesiąt sześć paremii prawniczych w językach polskim i łacińskim.",
+      "Paremie przygotowali romaniści pod kierunkiem prof. Witolda Wołodkiewicza, a ich głównymi źródłami były pisma jurystów rzymskich oraz konstytucje cesarskie.",
+      "Na głowicach kolumn widnieje motyw wagi, atrybut bogini sprawiedliwości Temidy.",
+      "Na filarach w pobliżu pomnika Powstańców Warszawskich umieszczono symbol Polski Walczącej.",
+      "Planowana jest rozbudowa Kompleksu."
+    ],
+    "ciekawostki": [
+      "Na szczytach filarów rośnie zieleń, co według architektów było elementem powstałym z inspiracji miastami Inków."
+    ],
+    "summary_en": "A group of buildings at plac Krasińskich 2/4/6 in Warsaw, housing the Supreme Court, the Warsaw Court of Appeal and a branch of the Institute of National Remembrance. Its 76 pillars carry 86 Latin and Polish legal maxims.",
+    "ludzie": [
+      {"kto": "Witold Wołodkiewicz", "rola": "prof.; kierował zespołem romanistów, który przygotował paremie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kompleks Urbanistyczny Wymiaru Sprawiedliwości", "url": "https://pl.wikipedia.org/wiki/Kompleks_Urbanistyczny_Wymiaru_Sprawiedliwo%C5%9Bci"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku powstania kompleksu."
+  },
+  {
+    "id": "kompleks-budynkow-sejmu-rp",
+    "nazwa": "Kompleks budynków Sejmu Rzeczypospolitej Polskiej",
+    "name_en": "Polish Parliament Buildings Complex",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wiejska 4/6/8",
+    "adres_historyczny": "ul. Wiejska 2/4/6 (według innego źródła ul. Wiejska 8)",
+    "lat": 52.225667,
+    "lon": 21.028611,
+    "lokalizacja": "dokladna",
+    "okres": "1851–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek główny Instytutu Aleksandryjsko-Maryjskiego, wzniesiony w latach 1851−1853 dla Instytutu Szlacheckiego według projektu Antoniego Sulimowskiego i Bolesława Podczaszyńskiego, był jednym z nielicznych obiektów w mieście z salą obrad odpowiedniej wielkości.",
+      "W 1918 podjęto decyzję o adaptacji kompleksu instytutu na potrzeby parlamentu.",
+      "10 lutego 1919 roku w tym gmachu zebrał się na pierwszym posiedzeniu Sejm Ustawodawczy II RP.",
+      "23 kwietnia 1935 roku w Sali Posiedzeń Sejmu uchwalono konstytucję kwietniową.",
+      "2 września 1939 roku przy ul. Wiejskiej odbyło się ostatnie w historii II Rzeczypospolitej wspólne posiedzenie Sejmu i Senatu.",
+      "4 lutego 1947 roku odbyło się pierwsze po wojnie posiedzenie Sejmu.",
+      "22 lipca 1952 roku uchwalono konstytucję Polskiej Rzeczypospolitej Ludowej.",
+      "Konkurs na rozbudowę kompleksu sejmowego, rozpisany w 1946 roku przez Stowarzyszenie Architektów Polskich, wygrał Bohdan Pniewski."
+    ],
+    "ciekawostki": [
+      "Sejm walny powstał na początku XV wieku, a aż do początku XX wieku Sejm nie posiadał własnej stałej siedziby.",
+      "Do sierpnia 2016 roku obszar kompleksu nie był ogrodzony i był dostępny dla spacerowiczów."
+    ],
+    "summary_en": "The seat of the Sejm and Senate of Poland at Wiejska street in Warsaw. The main building dates from 1851–1853 and was adapted for parliament from 1918. The first session of the Sejm of the Second Republic met here on 10 February 1919.",
+    "ludzie": [
+      {"kto": "Antoni Sulimowski", "rola": "projektant budynku głównego instytutu (1851–1853)", "wiki": null},
+      {"kto": "Bolesław Podczaszyński", "rola": "projektant budynku głównego instytutu (1851–1853)", "wiki": null},
+      {"kto": "Kazimierz Tołłoczko", "rola": "architekt przebudowy na potrzeby parlamentu", "wiki": null},
+      {"kto": "Romuald Miller", "rola": "architekt przebudowy na potrzeby parlamentu", "wiki": null},
+      {"kto": "Tadeusz Szanior", "rola": "architekt przebudowy na potrzeby parlamentu", "wiki": null},
+      {"kto": "Kazimierz Skórewicz", "rola": "kurator Zamku Królewskiego; w 1925 wykonał projekt rozbudowy budynku parlamentu", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "zwycięzca konkursu na rozbudowę kompleksu sejmowego (1946)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Aleksandryjsko-Maryjski Instytut Wychowania Panien"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kompleks budynków Sejmu Rzeczypospolitej Polskiej", "url": "https://pl.wikipedia.org/wiki/Kompleks_budynk%C3%B3w_Sejmu_Rzeczypospolitej_Polskiej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "konwikt-teatynow-w-warszawie",
+    "nazwa": "Konwikt Teatynów w Warszawie",
+    "name_en": "Theatine Convict in Warsaw",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Długa",
+    "lat": 52.2502,
+    "lon": 21.0076,
+    "lokalizacja": "dokladna",
+    "okres": "1737–1939",
+    "istnieje": false,
+    "fakty": [
+      "Teatyni sprowadzeni zostali do Polski na początku XVIII wieku i w 1737 roku założyli w Warszawie nowoczesną szkołę szlachecką kształcącą zamożną młodzież.",
+      "Szkoła była ekskluzywna i nie cieszyła się dobrą opinią w patriotycznych kręgach społeczeństwa, bo większość nauczycieli pochodziła z Włoch.",
+      "Wychowankami tej szkoły byli m.in. Stanisław August Poniatowski, Kazimierz Pułaski czy Karol Maurycy Lelewel (ojciec Joachima Lelewela).",
+      "Budynek zbudowany był na planie czworoboku z wewnętrznym dziedzińcem i kaplicą w skrzydle od strony ul. Długiej.",
+      "W 1783 roku teatyni sprzedali swoje budynki i opuścili Polskę.",
+      "Konwikt znajdował się przy ul. Długiej do 1939 roku.",
+      "Budynki zniszczone w czasie II wojny światowej nie zostały odbudowane."
+    ],
+    "ciekawostki": [
+      "Podczas budowy domów przy ul. Długiej przez spółdzielnię prawników natrafiono na fundament kaplicy i krypty grobowe zakonników."
+    ],
+    "summary_en": "The Theatines' convict, a noble boarding school on ul. Długa in Warsaw, founded in 1737. The order sold its buildings in 1783, and they were not rebuilt after the Second World War.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "wychowanek szkoły teatynów", "wiki": null},
+      {"kto": "Kazimierz Pułaski", "rola": "wychowanek szkoły teatynów", "wiki": null},
+      {"kto": "Karol Maurycy Lelewel", "rola": "wychowanek szkoły teatynów; ojciec Joachima Lelewela", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Konwikt Teatynów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Konwikt_Teatyn%C3%B3w_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "koszary-kantonistow",
+    "nazwa": "Koszary Kantonistów",
+    "name_en": "Cantonists' Barracks",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "teren Łazienek Królewskich",
+    "adres_historyczny": null,
+    "lat": 52.21353,
+    "lon": 21.03904,
+    "lokalizacja": "dokladna",
+    "okres": "1826–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek na planie wydłużonego prostokąta został wzniesiony w latach 1826–1828.",
+      "Projektantem był Jakub Kubicki lub Henryk Minter.",
+      "Jest to podpiwniczony budynek koszarowy o dwóch kondygnacjach i strychu użytkowym, o prostym, klasycystycznym wyglądzie.",
+      "Od 1 lipca 1983 roku w budynku mieści się Muzeum Łowiectwa i Jeździectwa."
+    ],
+    "ciekawostki": [
+      "Według Encyklopedii Orgelbranda kantonista to kandydat do służby wojskowej, wybierany jako rekrut z pewnego okręgu, czyli kantonu. Znaczenie to odnosi się do zasad poboru do armii pruskiej wprowadzonych w 1733 roku przez Fryderyka I i obowiązujących do 1813 roku."
+    ],
+    "summary_en": "A two-storey classicist barracks in the Royal Łazienki Park, built in 1826–1828. Since 1983 it has housed the Museum of Hunting and Horse Riding.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "możliwy projektant budynku", "wiki": null},
+      {"kto": "Henryk Minter", "rola": "możliwy projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koszary Inwalidów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Koszary Kantonistów", "url": "https://pl.wikipedia.org/wiki/Koszary_Kantonist%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

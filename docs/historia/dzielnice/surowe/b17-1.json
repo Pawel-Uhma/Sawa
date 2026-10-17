@@ -1,0 +1,237 @@
+[
+  {
+    "id": "bialy-dom-lazienki",
+    "nazwa": "Biały Dom (Łazienki Królewskie)",
+    "name_en": "White Cottage (Łazienki Royal Park)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.21527778,
+    "lon": 21.03138889,
+    "lokalizacja": "dokladna",
+    "okres": "1774–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wzniesiony w latach 1774–1776 według projektu Dominika Merliniego; jest pierwszym obiektem zbudowanym w Łazienkach przez Stanisława Augusta Poniatowskiego.",
+      "Ściany fundamentowe są bardzo grube, w niektórych miejscach mają 2,5 metra; miało to uchronić konstrukcję stojącą na bagnistym terenie przed rozsunięciem.",
+      "W 1778 według projektu Jana Chrystiana Kamsetzera wytyczono Promenadę Królewską, aleję łączącą Biały Domek z pałacem Na Wyspie.",
+      "W latach 1801–1805 (według innego źródła 1801–1804) w okresie letnim mieszkał tu, przebywający na wygnaniu pod nazwiskiem hrabiego de Lille, król Francji Ludwik XVIII.",
+      "Budynek nie został zniszczony w czasie II wojny światowej. Po remoncie udostępniono go do zwiedzania w 1968.",
+      "8 maja 2013, w dniu imienin króla, w pobliżu Białego Domku ustawiono popiersie Stanisława Augusta Poniatowskiego (odlew rzeźby André Le Bruna z 1992).",
+      "W 2019 zakończono remont, podczas którego odsłonięto oryginalne partie polichromii i fragmenty malowideł w sypialni."
+    ],
+    "ciekawostki": [
+      "Przed południową fasadą stoi zegar słoneczny z 1776 roku, wsparty na postaci Fauna."
+    ],
+    "summary_en": "The White Cottage is a classicist building in Łazienki Royal Park, designed by Dominik Merlini and built in 1774–1776 as the first object there commissioned by King Stanisław August Poniatowski. Louis XVIII of France lived there in exile in 1801–1805 under the name Comte de Lille. It survived the Second World War and was opened to visitors in 1968.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "autor projektu Promenady Królewskiej (1778)", "wiki": null},
+      {"kto": "Ludwik XVIII", "rola": "król Francji, mieszkał w Białym Domku na wygnaniu (1801–1805)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biały Domek"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biały Dom (Łazienki Królewskie)", "url": "https://pl.wikipedia.org/wiki/Bia%C5%82y_Dom_%28%C5%81azienki_Kr%C3%B3lewskie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje adresu; lokalizacja z nagłówka."
+  },
+  {
+    "id": "bialy-palacyk-frascati",
+    "nazwa": "Biały Pałacyk na Frascati",
+    "name_en": "White Palace at Frascati",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Na Skarpie 20/26",
+    "adres_historyczny": null,
+    "lat": 52.22888889,
+    "lon": 21.02861111,
+    "lokalizacja": "dokladna",
+    "okres": "1779–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pod koniec XVIII wieku w tym miejscu był założony przez księcia Kazimierza Poniatowskiego ogród „Na Górze”, zaprojektowany przez Szymona Bogumiła Zuga; w 1779 według jego projektu wybudowano tu zespół budynków, w tym drewnianą Oberżę (zwaną „karczmą Holenderską”) i kuchnię z jadalnią.",
+      "Na początku XIX wieku posiadłość kupił francuski restaurator Szymon Chovot, który przekształcił ogród w park zwany Frascati.",
+      "W 1893 roku córka Władysława Branickiego, Maria, poślubiła księcia Zdzisława Lubomirskiego i otrzymała pałacyk w darze.",
+      "Władysław Branicki wzniósł nieopodal starych budynków Czerwony Pałac w stylu renesansu holenderskiego z fasadą z klinkieru; zaprojektował go Leandro Marconi.",
+      "W czasie I wojny światowej w Czerwonym Pałacu był lazaret wojskowy; po odzyskaniu niepodległości do 1939 roku mieściła się w nim ambasada francuska.",
+      "Pałacyk wynajęło chińskie poselstwo na rezydencję dla posła i użytkowało go do 1939 roku.",
+      "Pałacyk ucierpiał podczas II wojny światowej, ale nie został zburzony; odbudowano go w 1948 roku według projektu Tadeusza Zielińskiego i Zbigniewa Karpińskiego. Od tego czasu użytkuje go Muzeum Ziemi PAN."
+    ],
+    "ciekawostki": [
+      "Pałacyk żartobliwie nazywano „Córkarnią”, bo rodzice Braniccy rezydowali w Czerwonym Pałacu, a ich cztery córki w Białym Pałacyku."
+    ],
+    "summary_en": "The White Palace at Frascati is a classicist villa on Aleja Na Skarpie in Warsaw, built on the site of a garden laid out by Prince Kazimierz Poniatowski. It was a gift to Maria Branicka on her 1893 marriage to Prince Zdzisław Lubomirski, served as a Chinese legation residence until 1939 and was rebuilt in 1948 after the war. Today it houses the Museum of the Polish Academy of Sciences' Earth Museum.",
+    "ludzie": [
+      {"kto": "Kazimierz Poniatowski", "rola": "książę, założyciel ogrodu „Na Górze”", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "projektant ogrodu i zespołu budynków (1779)", "wiki": null},
+      {"kto": "Szymon Chovot", "rola": "francuski restaurator, przekształcił ogród w park Frascati", "wiki": null},
+      {"kto": "Władysław Branicki", "rola": "wzniósł Czerwony Pałac", "wiki": null},
+      {"kto": "Leandro Marconi", "rola": "projektant Czerwonego Pałacu", "wiki": null},
+      {"kto": "Zdzisław Lubomirski", "rola": "książę, mąż Marii Branickiej, właściciel pałacyku", "wiki": null},
+      {"kto": "Tadeusz Zieliński, Zbigniew Karpiński", "rola": "projektanci odbudowy w 1948", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałacyk Branickich-Lubomirskich", "ogród Na Górze", "park Frascati"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biały Pałacyk na Frascati", "url": "https://pl.wikipedia.org/wiki/Bia%C5%82y_Pa%C5%82acyk_na_Frascati"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres historyczny Czerwonego Pałacu: al. Frascati 22 (wg artykułu)."
+  },
+  {
+    "id": "biblioteka-krolewska-zamek",
+    "nazwa": "Biblioteka Królewska w Warszawie",
+    "name_en": "Royal Library in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2475,
+    "lon": 21.015833055,
+    "lokalizacja": "dokladna",
+    "okres": "1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Biblioteka powstała w 1764 roku po wprowadzeniu się Stanisława Augusta Poniatowskiego na Zamek Królewski, na bazie jego prywatnych zbiorów i zakupionych księgozbiorów.",
+      "W latach 1780–1784 dla biblioteki wzniesiono nowy budynek, przylegający do północnego skrzydła pałacu Pod Blachą; wnętrze zaprojektował włoski architekt królewski Dominik Merlini.",
+      "Budynek miał 56 metrów długości i 9 metrów szerokości; na jego dachu mieścił się taras widokowy, na który król z gośćmi wychodził z Sali Canaletta.",
+      "W 1778 roku zbiory liczyły ok. 5 tys. woluminów, a w 1793 roku ok. 13 tys.",
+      "Po śmierci króla zbiory kupił w 1803 lub 1809 roku Tadeusz Czacki za 25 tysięcy złotych; przewieziono je do Krzemieńca.",
+      "Biblioteka Królewska jest jedynym ocalałym w czasie II wojny światowej budynkiem w zespole Zamku Królewskiego; w jej wnętrzu zachowała się oryginalna stanisławowska dekoracja architektoniczna."
+    ],
+    "ciekawostki": [
+      "Wartość zgromadzonych dzieł po śmierci króla wyceniono na 222 354 złp."
+    ],
+    "summary_en": "The Royal Library was founded in 1764 by King Stanisław August Poniatowski when he moved into the Royal Castle in Warsaw. Its building, added in 1780–1784 to the north wing of the Pod Blachą palace and designed by Dominik Merlini, is the only building in the Royal Castle complex that survived the Second World War, with its original Stanisław August-era decoration intact.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "król, założyciel biblioteki", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "projektant wnętrza budynku", "wiki": null},
+      {"kto": "Tadeusz Czacki", "rola": "kupił zbiory po śmierci króla (1803 lub 1809)", "wiki": null},
+      {"kto": "Józef Poniatowski", "rola": "właściciel zbiorów po śmierci króla", "wiki": null},
+      {"kto": "Jan Chrzciciel Albertrandi", "rola": "bibliotekarz od 1790, autor katalogu systematycznego", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biblioteka Stanisława Augusta"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biblioteka Królewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Biblioteka_Kr%C3%B3lewska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje adresu budynku; położenie w zespole Zamku Królewskiego, współrzędne z nagłówka."
+  },
+  {
+    "id": "gmach-biblioteki-krasinskich-okolnik-9",
+    "nazwa": "Gmach Biblioteki Ordynacji Krasińskich (ul. Okólnik 9)",
+    "name_en": "Krasiński Library Building (Okólnik 9)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Okólnik 9",
+    "adres_historyczny": "ul. Okólnik 9 (od 1914); wcześniej pałac Krasińskich/Czapskich przy Krakowskim Przedmieściu, do 1913",
+    "lat": 52.23527778,
+    "lon": 21.02166667,
+    "lokalizacja": "dokladna",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nowy gmach biblioteki i muzeum Ordynacji Krasińskich przy ul. Okólnik 9, ufundowany przez Edwarda Krasińskiego, powstał w latach 1912–1914 według projektu Juliusza Nagórskiego.",
+      "Jesienią 1913 roku przeniesiono tu zbiory z pałacu Krasińskich/Czapskich przy Krakowskim Przedmieściu; od stycznia 1914 udostępniano je w tymczasowej czytelni.",
+      "Całkowicie wykończony gmach uroczyście przekazano do użytku w grudniu 1930 roku.",
+      "We wrześniu 1939 roku, podczas obrony Warszawy, zburzono część wystawową gmachu i czytelnię.",
+      "W maju 1941 niemieckie władze okupacyjne włączyły bibliotekę do Staatsbibliothek Warschau, a gmach przeznaczono na zbiory specjalne trzech stołecznych bibliotek.",
+      "25 października 1944, po kapitulacji powstania warszawskiego, Niemcy spalili zbiory na Okólniku, wbrew warunkom układu kapitulacyjnego; unicestwiono m.in. 26 000 rękopisów, 2500 inkunabułów i 80 000 starych druków.",
+      "Odbudowany gmach w czerwcu 1948 roku przekazano Bibliotece Narodowej."
+    ],
+    "ciekawostki": [
+      "Nad wrotami wejściowymi po wojnie umieszczono napis „Przebywanie w budynku zabronione. Budynek grozi zawaleniem”.",
+      "Na fasadzie znajduje się maksyma Amor Patriae Nostra Lex (Miłość Ojczyzny naszym prawem), dewiza rodowa Krasińskich."
+    ],
+    "summary_en": "The Krasiński Library building at Okólnik 9 in Warsaw was built in 1912–1914 by Edward Krasiński to house the family's library and museum collections. It was burned by the Germans in October 1944 after the Warsaw Uprising, and the rebuilt building was handed to the National Library in June 1948.",
+    "ludzie": [
+      {"kto": "Wincenty Krasiński", "rola": "twórca Ordynacji Krasińskich i biblioteki (1844)", "wiki": null},
+      {"kto": "Edward Krasiński", "rola": "ostatni ordynat opinogórski, ufundował gmach; zmarł w KL Dachau (1940)", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "autor projektu gmachu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biblioteka i Muzeum Ordynacji Krasińskich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biblioteka Ordynacji Krasińskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Biblioteka_Ordynacji_Krasi%C5%84skich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dotyczy biblioteki, ale jej historia jest ściśle związana z gmachem przy Okólniku 9. Artykuł nie mówi, kto dziś zajmuje gmach poza przekazaniem BN w 1948 roku."
+  },
+  {
+    "id": "palac-przezdzieckich-rymarska-2",
+    "nazwa": "Pałac Przezdzieckich przy Rymarskiej (Biblioteka Ordynacji Przezdzieckich)",
+    "name_en": "Przezdziecki Palace on Rymarska Street",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Rymarska 2; od strony ówczesnej ul. Foksal",
+    "lat": 52.234444,
+    "lon": 21.023111,
+    "lokalizacja": "dokladna",
+    "okres": "1852–1939",
+    "istnieje": false,
+    "fakty": [
+      "W 1852 Aleksander Przezdziecki zakupił przy ul. Rymarskiej 2 plac i przebudował znajdujący się tam dawny pałac Walickich według projektu Bolesława Podczaszyńskiego; przeniesiono tu bibliotekę.",
+      "W 1892 ukończono prace przy pałacu od strony ówczesnej ul. Foksal: dobudowano neorenesansowe skrzydło z dwukondygnacyjną salą biblioteczną.",
+      "W 1892 do księgozbioru dołączono bibliotekę Józefa Łepkowskiego, a w 1913 utworzono ordynację Przezdzieckich.",
+      "W 1939 stan biblioteki określano na 60 tysięcy woluminów, 500 rękopisów i 10 tysięcy rycin i rysunków.",
+      "25 września 1939 pałac wraz z biblioteką został spalony i zburzony.",
+      "W 1940 ocalałe resztki zbiorów przeniesiono do kamienicy przy ul. Szczyglej 3; w czasie powstania warszawskiego kamienica spłonęła, ocalała jedynie piwnica."
+    ],
+    "ciekawostki": [
+      "Księgozbiór zawierał też książki z bibliotek królewskich Zygmunta Augusta, Jana Kazimierza i Jana III Sobieskiego oraz ok. 600 inkunabułów."
+    ],
+    "summary_en": "The Przezdziecki library was housed in a palace at Rymarska 2 in Warsaw, rebuilt in 1852 and extended in 1892 with a neo-Renaissance wing on Foksal Street. On 25 September 1939, during the defence of Warsaw, the palace and its library were burned and demolished. The surviving remnants were moved to a tenement at Szczygla 3, which burned during the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "Aleksander Przezdziecki", "rola": "mecenas, założyciel biblioteki, przeniósł ją do pałacu w Warszawie", "wiki": null},
+      {"kto": "Bolesław Podczaszyński", "rola": "projektant przebudowy pałacu (1852)", "wiki": null},
+      {"kto": "Zygmunt Wdowiszewski", "rola": "dyrektor biblioteki, ratował archiwa z piwnicy w 1944", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Walickich"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biblioteka Ordynacji Przezdzieckich", "url": "https://pl.wikipedia.org/wiki/Biblioteka_Ordynacji_Przezdzieckich"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje aktualnego adresu; współrzędne z nagłówka."
+  },
+  {
+    "id": "palac-blekitny-biblioteka-zamojskich",
+    "nazwa": "Biblioteka Ordynacji Zamojskiej w Pałacu Błękitnym",
+    "name_en": "Zamoyski Entailed Estate Library in the Blue Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.242256,
+    "lon": 21.004911,
+    "lokalizacja": "dokladna",
+    "okres": "1868–1944",
+    "istnieje": null,
+    "fakty": [
+      "Biblioteka Ordynacji Zamojskiej powstała z inicjatywy ordynata Stanisława Kostki Zamoyskiego, a w latach 1866–1868 przebudowano Pałac Błękitny w stylu neorenesansowym; jego nowy gmach biblioteki (pawilon pałacu) wzniesiono w 1868 roku według projektu Juliana Ankiewicza.",
+      "Biblioteka została otwarta dla publiczności w nowym gmachu 19 marca 1868 roku; czytelnia miała 48 miejsc.",
+      "W 1939 roku biblioteka liczyła ok. 120 000 woluminów.",
+      "25 września 1939 zbiory artystyczne zgromadzone w pałacu uległy niemal całkowitej zagładzie; według ostatniego bibliotekarza zniszczeniu uległo ok. 50 000 dzieł.",
+      "8 września 1944 w czasie powstania Niemcy celowo spalili Pałac Błękitny i zbiory biblioteki prawie całkowicie; ocalało 1848 inkunabułów i druków z XVI wieku.",
+      "Ocalałe zbiory wywieziono zimą 1944 roku do Görbitsch, a następnie do Moskwy, skąd wróciły do Polski w 1947 roku."
+    ],
+    "ciekawostki": [
+      "Bibliotekarzami byli m.in. Józef Przyborowski, Tadeusz Korzon i Stefan Żeromski."
+    ],
+    "summary_en": "The Zamoyski Entailed Estate Library opened to the public in a new wing of the Blue Palace in Warsaw on 19 March 1868. In 1939 it held about 120,000 volumes; the palace was burned by the Germans in September 1944 during the Warsaw Uprising, and most of the collection was lost. About 1,800 incunabula and 16th-century prints survived.",
+    "ludzie": [
+      {"kto": "Stanisław Kostka Zamoyski", "rola": "ordynat, twórca biblioteki", "wiki": null},
+      {"kto": "Julian Ankiewicz", "rola": "autor projektu nowego gmachu biblioteki (1868)", "wiki": null},
+      {"kto": "Ludwik Kolankowski", "rola": "ostatni dyrektor biblioteki", "wiki": null},
+      {"kto": "Stefan Żeromski", "rola": "bibliotekarz", "wiki": null},
+      {"kto": "Tadeusz Korzon", "rola": "bibliotekarz", "wiki": null},
+      {"kto": "Józef Przyborowski", "rola": "bibliotekarz", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Błękitny"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Biblioteka Ordynacji Zamojskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Biblioteka_Ordynacji_Zamojskiej_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie podaje adresu ani losu budynku po 1944 roku (istnieje: null). Współrzędne są takie same jak w artykule o Bibliotece Akademii Zamojskiej, więc mogą być przybliżone do budynku."
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ilmet",
+    "nazwa": "Ilmet",
+    "name_en": "Ilmet office building",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "al. Jana Pawła II 15",
+    "adres_historyczny": null,
+    "lat": 52.2319,
+    "lon": 20.9978,
+    "lokalizacja": "dokladna",
+    "okres": "1995–2026",
+    "istnieje": true,
+    "fakty": [
+      "Biurowiec wzniesiono w latach 1995–1997; inwestorem była austriacka firma Ilbau, a projektantami Miljenko Dumenčić i Mirosław Kartowicz.",
+      "W holu głównym znajduje się tuba z aktem położenia kamienia węgielnego z 12 czerwca 1995 roku, polskimi i austriackimi dziennikami oraz kilkoma polskimi banknotami sprzed denominacji.",
+      "W marcu 2011 roku pojawiły się informacje o planach szwajcarskiego UBS, właściciela budynku, dotyczących zburzenia go; w listopadzie 2011 roku zwycięski projekt duńskiej pracowni Schmidt Hammer Lassen przewidywał 188-metrowy wieżowiec Warsaw One.",
+      "W 2016 roku nieruchomość kupiła spółka Skanska.",
+      "Od 2016 roku powierzchnia biurowa nie była wynajmowana; w lipcu 2021 roku rozpoczęły się wyburzenia wewnątrz budynku.",
+      "W 2022 roku w budynku powstał Ośrodek Wsparcia Uchodźców Rondo ONZ w związku z ukraińskim kryzysem uchodźczym.",
+      "Rozbiórka wieżowca rozpoczęła się w marcu 2026 roku."
+    ],
+    "ciekawostki": [
+      "Na dachu budynku obracało się logo spółki Mercedes-Benz; zdemontowano je w 2021 roku.",
+      "Na fasadzie znajduje się tablica upamiętniająca 50-lecie Organizacji Narodów Zjednoczonych, co nawiązuje do nazwy ronda."
+    ],
+    "summary_en": "Ilmet is an office block at al. Jana Pawła II 15 by Rondo ONZ, built in 1995–1997 for the Austrian firm Ilbau. It was not leased from 2016, housed a refugee support centre in 2022, and demolition of the tower began in March 2026.",
+    "ludzie": [
+      {"kto": "Miljenko Dumenčić", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Mirosław Kartowicz", "rola": "projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ilmet", "url": "https://pl.wikipedia.org/wiki/Ilmet"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje, czy rozbiórka została zakończona; istnieje ustawione na true, bo budynek stał do rozpoczęcia prac w 2026 roku."
+  }
+]

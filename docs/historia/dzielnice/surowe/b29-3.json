@@ -1,0 +1,198 @@
+[
+  {
+    "id": "plac-broni",
+    "nazwa": "Plac Broni",
+    "name_en": "Plac Broni (Arms Square)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "obszar między ul. Stawki, Pokorną i Dziką (dziś osiedle Stawki)",
+    "adres_historyczny": "plac Broni (nazwa w użyciu do 1945)",
+    "lat": 52.254204,
+    "lon": 20.990073,
+    "lokalizacja": "dokladna",
+    "okres": "1824–ok. 1890",
+    "istnieje": false,
+    "fakty": [
+      "Plac Broni wytyczono w 1824 roku na rozkaz wielkiego księcia Konstantego Pawłowicza, gdy plac Saski stał się zbyt mały na przeglądy dużej ilości wojska.",
+      "Plac miał kształt kwadratu o boku 420 metrów (według innego źródła 440 metrów) i był największym placem XIX-wiecznej Warszawy.",
+      "Do 1830 roku był miejscem musztry i pokazów wojska Królestwa Polskiego; po upadku powstania listopadowego ćwiczyła na nim armia rosyjska, a istniejące tu koszary nazwano Koszarami Mikołajewskimi.",
+      "W 1890 roku zachodnią część placu zajęto pod magazyny i bocznice kolejowe; pozostała część zaczęła pełnić funkcję targowiska.",
+      "W 1894 roku powstało tu targowisko Wołówka, a w 1900 roku wybudowano drewnianą halę targową.",
+      "W czasie okupacji z położonych na dawnym placu bocznic (tzw. Umschlagplatz) odchodziły transporty ludności żydowskiej z getta warszawskiego do obozów zagłady.",
+      "Po 1945 roku na miejscu bocznic kolejowych i magazynów zbudowano osiedle Stawki."
+    ],
+    "ciekawostki": [
+      "W literaturze z epoki plac nazywano także Placem Marsowym; na placu Marsowym rozgrywa się ostatnia scena dramatu Juliusza Słowackiego Kordian."
+    ],
+    "summary_en": "Plac Broni was laid out in 1824 on the orders of Grand Duke Konstanty as the largest square in 19th-century Warsaw. It was a parade ground, then a Russian army training ground, and from the 1890s a market area. Its western part was used for railway sidings, and it was replaced by the Stawki housing estate after the war.",
+    "ludzie": [
+      {"kto": "Konstanty Pawłowicz", "rola": "wielki książę, z jego rozkazu wytyczono plac w 1824 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Plac Marsowy"],
+    "zrodla": [{"tytul": "Wikipedia: Plac Broni w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Broni_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwa Placu Marsowego występuje w artykule jako nazwa literacka z epoki."
+  },
+  {
+    "id": "plac-konstytucji-stacja-metra",
+    "nazwa": "Plac Konstytucji (stacja metra)",
+    "name_en": "Plac Konstytucji metro station (planned)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska, w ciągu od pl. Konstytucji do skrzyżowania z ul. Hożą",
+    "adres_historyczny": null,
+    "lat": 52.225277777,
+    "lon": 21.014166666,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś (planowana)",
+    "istnieje": false,
+    "fakty": [
+      "Nazwę stacji nadano uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983 roku; wstępne prace w rejonie stacji rozpoczęły się w 1986 roku.",
+      "Stację Plac Konstytucji wraz ze stacją Muranów wyłączono z budowy w 1989 roku ze względu na oszczędności.",
+      "Według pierwotnych planów stacja miała znajdować się między stacją Politechnika (592 metry) a stacją Centrum (858 metrów).",
+      "W miejscu planowanej stacji znajduje się szyb wentylacyjny; jego wylot umieszczono na pl. Konstytucji.",
+      "24 stycznia 2006 roku władze Warszawy podjęły decyzję o budowie obu pominiętych stacji metra (Plac Konstytucji i Muranów).",
+      "W 2019 roku ogłoszono i rozstrzygnięto przetarg na dokumentację przedprojektową i projekty budowlane obu stacji.",
+      "19 grudnia 2024 roku wydano pozwolenia na budowę stacji Plac Konstytucji oraz stacji Muranów."
+    ],
+    "ciekawostki": [
+      "Wybudowana, lecz niewykończona stacja Plac Konstytucji pojawia się w postapokaliptycznej powieści Kompleks 7215 (2014) Bartka Biedrzyckiego."
+    ],
+    "summary_en": "Plac Konstytucji is a planned station on Warsaw Metro Line M1. The station was named in 1983 and dropped from construction in 1989 for cost reasons. Building permits were issued in December 2024. A ventilation shaft already stands on the site.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Plac Konstytucji (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Plac_Konstytucji_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Stacja nieistniejąca (planowana); rekord dotyczy miejsca."
+  },
+  {
+    "id": "plac-muranowski",
+    "nazwa": "Plac Muranowski",
+    "name_en": "Muranów Square",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rejon skrzyżowania ul. gen. Władysława Andersa z ul. Stawki",
+    "adres_historyczny": "u wylotu ul. Nalewki, na osi ul. Muranowskiej",
+    "lat": 52.253572222,
+    "lon": 20.997047222,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1770–lata 40. XX wieku",
+    "istnieje": false,
+    "fakty": [
+      "Plac wytyczono ok. 1770 roku w miejscu dziedzińca przed pałacem Murano, wzniesionym w 1686 roku przez Józefa Szymona Bellottiego.",
+      "Od 1818 roku w piątki organizowano na placu targ koński, przeniesiony z ul. Królewskiej.",
+      "W 1881 roku uruchomiono linię tramwaju konnego z placu Muranowskiego do rogatek Mokotowskich.",
+      "Około 1900 roku pałac Murano rozebrano, a na jego miejscu powstały kamienice czynszowe.",
+      "W listopadzie 1940 roku plac w całości znalazł się w warszawskim getcie.",
+      "Podczas powstania w getcie w kwietniu 1943 roku plac był miejscem walk między powstańcami z Żydowskiego Związku Wojskowego a oddziałami niemieckimi.",
+      "Plac zlikwidowano w latach 1947–1948 podczas budowy ulicy Nowomarszałkowskiej."
+    ],
+    "ciekawostki": [
+      "W latach 1941–1942 z placu kursowała wewnętrzna linia tramwajowa oznaczona Gwiazdą Dawida."
+    ],
+    "summary_en": "Muranów Square was laid out around 1770 in front of the Murano Palace, a market place on the northern edge of Warsaw. It became part of the Warsaw Ghetto in 1940, was a site of fighting during the Ghetto Uprising in 1943, and was removed in 1947–1948 when Nowomarszałkowska Street was built.",
+    "ludzie": [
+      {"kto": "Józef Szymon Bellotti", "rola": "wzniósł w 1686 roku pałac Murano przed którym powstał plac", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica Nowomarszałkowska (dziś ul. gen. Władysława Andersa)"],
+    "zrodla": [{"tytul": "Wikipedia: Plac Muranowski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Muranowski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-zamkowy-1-13",
+    "nazwa": "Plac Zamkowy 1/13",
+    "name_en": "Plac Zamkowy 1/13 tenements",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Plac Zamkowy 1/13",
+    "adres_historyczny": "nr 9 (Szpitalna), 11 (Krzysztofowiczów), 13a (Dyndy), 13b (Pod Pelikanem)",
+    "lat": 52.2478,
+    "lon": 21.0131,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1583–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac Zamkowy 1/13 to kompleks czterech kamienic na warszawskim Starym Mieście: Szpitalnej, Krzysztofowiczów, Dyndy oraz Pod Pelikanem.",
+      "W 1944 roku kamienice zostały zburzone do piwnic; odbudowano je w latach 1957–1960.",
+      "Kamienica Szpitalna była początkowo drewnianym domem; w 1583 roku została spalona, w 1670 roku gruntownie przebudowana, a w 1960 roku odbudowana z przywróceniem postaci z pierwszej połowy XIX wieku.",
+      "Kamienica Krzysztofowiczów została przebudowana w pierwszej połowie XVIII wieku i odbudowana w 1960 roku w nawiązaniu do stanu sprzed 1944 roku.",
+      "Kamienica Dyndy należała w końcu XVIII wieku do kupca Michała Roeslera; od końca XVII wieku mieściła się tu gospoda.",
+      "Kamienica Pod Pelikanem została zbudowana przed 1705 rokiem, początkowo jako drewniana; odbudowano ją w 1960 roku.",
+      "Kamienice Szpitalna, Krzysztofowiczów i Dyndy są wpisane do rejestru zabytków (nr 625, 626, 627)."
+    ],
+    "ciekawostki": [
+      "Obecnie w kamienicach mieszczą się Warszawskie Centrum Informacji Turystycznej, Galeria Sztuki oraz Pub&Restaurant Królewski."
+    ],
+    "summary_en": "Plac Zamkowy 1/13 is a group of four tenement houses in Warsaw's Old Town. They were destroyed to their cellars in 1944 and rebuilt in 1957–1960 in their pre-war form. Three of them are listed as historic monuments.",
+    "ludzie": [
+      {"kto": "Michał Roesler", "rola": "kupiec, właściciel kamienicy Dyndy pod koniec XVIII wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Szpitalna", "kamienica Krzysztofowiczów", "kamienica Dyndy", "kamienica Pod Pelikanem"],
+    "zrodla": [{"tytul": "Wikipedia: Plac Zamkowy 1/13 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Zamkowy_1/13_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "planetarium-niebo-kopernika",
+    "nazwa": "Planetarium Niebo Kopernika",
+    "name_en": "Niebo Kopernika Planetarium",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "nad Wisłą, na północ od Mostu Świętokrzyskiego (łącznik z Centrum Nauki Kopernik)",
+    "adres_historyczny": null,
+    "lat": 52.242111,
+    "lon": 21.029364,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Planetarium działa od 19 czerwca 2011 roku jako część Centrum Nauki Kopernik.",
+      "Budynek zaprojektowało Laboratorium Architektury Gilner + Kubec z Rudy Śląskiej; bryłą przypomina wielki głaz narzutowy i jest oparty na konstrukcji stalowej pokrytej bursztynowym szkłem.",
+      "Sferyczny ekran o średnicy 16 m (Spitz NanoSeam) waży niemal trzy tony; sala mieści 139 widzów.",
+      "W centrum sali projekcyjnej znajduje się optyczny projektor gwiazdowy Megastar IIA, który wyświetla blisko 16 milionów gwiazd.",
+      "Studio planetarium wyprodukowało filmy „Na skrzydłach marzeń” i „Halo, Ziemia”.",
+      "W planetarium przedstawia się około 50 projekcji w tygodniu."
+    ],
+    "ciekawostki": [
+      "Na skrzydłach marzeń to pierwszy polski film w technologii fulldome, opowiadający o historii lotnictwa, nagrodzony wieloma nagrodami."
+    ],
+    "summary_en": "The Niebo Kopernika Planetarium opened in June 2011 as part of the Copernicus Science Centre on the Vistula embankment. Its spherical 16 m screen holds 139 viewers, and the building was designed by Gilner + Kubec to resemble a glacial boulder.",
+    "ludzie": [
+      {"kto": "Laboratorium Architektury Gilner + Kubec", "rola": "biuro z Rudy Śląskiej, autor projektu budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Planetarium Niebo Kopernika", "url": "https://pl.wikipedia.org/wiki/Planetarium_Niebo_Kopernika"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje adresu ulicznego; w adres_dzis wpisano opis lokalizacji z artykułu."
+  },
+  {
+    "id": "pogrom-w-warszawie-1805",
+    "nazwa": "Pogrom w Warszawie (1805)",
+    "name_en": "1805 Warsaw pogrom",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Senatorska (okolice skrzyżowania z ul. Bielańską)",
+    "adres_historyczny": "ulica Senatorska; posiadłość Gołubskie",
+    "lat": 52.243839,
+    "lon": 21.007679,
+    "lokalizacja": "przyblizona",
+    "okres": "16–18 czerwca 1805",
+    "istnieje": false,
+    "fakty": [
+      "Antyżydowskie zamieszki wybuchły w Warszawie 16 czerwca 1805 roku, w oktawie Bożego Ciała.",
+      "Według relacji katolików procesję idącą ulicą Senatorską miano obrzucić kamieniami z żydowskich lokali.",
+      "Według Gazety Warszawskiej zamieszki zakończyły się około godziny 22, na co wpłynęło aresztowanie 95 sprawców; spokój przywrócono ostatecznie 18 czerwca.",
+      "W czasie zamieszek zaatakowano kamienicę Sodera w Pociejowie oraz Pałac Jabłonowskich.",
+      "Przywilej de non tolerandis Judaeis przestał obowiązywać 6 lutego 1802 roku.",
+      "W 1790 roku doszło do dwóch wcześniejszych pogromów: 17 kwietnia i 16 maja."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 16 June 1805, during the Corpus Christi octave, anti-Jewish riots broke out in Warsaw along Senatorska Street. Christian craftsmen looted and attacked Jewish homes and shops, and order was restored by 18 June after 95 arrests.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pogrom w Warszawie (1805)", "url": "https://pl.wikipedia.org/wiki/Pogrom_w_Warszawie_%281805%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Relacje o przebiegu są sprzeczne (źródło w artykule); lokalizacja przybliżona."
+  }
+]

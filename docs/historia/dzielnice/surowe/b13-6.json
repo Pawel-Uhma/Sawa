@@ -1,0 +1,147 @@
+[
+  {
+    "id": "krakowskie-przedmiescie",
+    "nazwa": "Ulica Krakowskie Przedmieście",
+    "name_en": "Krakowskie Przedmieście Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście",
+    "adres_historyczny": "Krakauer Strasse (okupacja)",
+    "lat": 52.24484,
+    "lon": 21.013924,
+    "lokalizacja": "przyblizona",
+    "okres": "XIV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przedmieścia przy Bramie Krakowskiej zaczęły się tworzyć już w XIV wieku; w 1454 roku przy nich powstał kościół bernardynów.",
+      "Ulica była początkiem traktu łączącego Warszawę pierwotnie z Czerskiem, a następnie z Krakowem.",
+      "W 1683 roku przy ulicy ustawiono figurę Matki Boskiej Pasawskiej.",
+      "Około 1762 roku ulica była już całkowicie wybrukowana, a do 1855 roku uzyskała oświetlenie gazowe.",
+      "27 lutego 1861 roku rosyjskie wojsko zaczęło strzelać do uczestników manifestacji na Krakowskim Przedmieściu, zabijając pięć osób.",
+      "W 1866 roku ruszyła tędy linia tramwaju konnego łączącego dworce Wiedeński i Petersburski.",
+      "W 1907 roku na ulicy uruchomiono latarnie elektryczne, a w 1908 roku pojechały nią tramwaje elektryczne.",
+      "Największe straty ulica poniosła w czasie powstania warszawskiego; kościoły wizytek i karmelitów, Pałac Namiestnikowski i Hotel Bristol odniosły tylko niewielkie uszkodzenia.",
+      "W 1994 roku ulica wraz z Traktem Królewskim został uznany za pomnik historii.",
+      "Prace nad przebudową na deptak trwały od września 2006 do lipca 2008 roku; projektantem był Krzysztof Domaradzki."
+    ],
+    "ciekawostki": [
+      "Krakowskie Przedmieście jest centralną ulicą Lalki Bolesława Prusa."
+    ],
+    "summary_en": "Krakowskie Przedmieście is the northern stretch of the Royal Route, starting at the Krakowska Gate area and leading towards the Old Town. Demonstrations were shot at here in 1861. It was largely damaged in the 1944 uprising, and in 2006–2008 it was rebuilt as a pedestrian boulevard.",
+    "ludzie": [
+      {"kto": "Krzysztof Domaradzki", "rola": "projektant przebudowy ulicy na deptak (2006–2008)", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "cytowany w artykule jako autor tłumaczenia względów wojskowych przy zachowaniu budynków", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czerskie Przedmieście", "Krakauer Strasse (okupacja)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Krakowskie Przedmieście w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Krakowskie_Przedmie%C5%9Bcie_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu. Artykuł jest długi; wybrano ogólne fakty, pominięto listę obiektów."
+  },
+  {
+    "id": "ulica-kredytowa",
+    "nazwa": "Ulica Kredytowa",
+    "name_en": "Kredytowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kredytowa",
+    "adres_historyczny": "ul. Erywańska (ok. 1865–1916)",
+    "lat": 52.2379161,
+    "lon": 21.0104689,
+    "lokalizacja": "przyblizona",
+    "okres": "1852–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na gruntach należących od 1843 roku do Banku Polskiego (tzw. Łubieńszczyzny); w 1851 roku magistrat zobowiązał się wybrukować ulicę łączącą ul. Mazowiecką z Marszałkowską.",
+      "Ulica została przeprowadzona w 1852 lub 1853 roku; pierwotnie nosiła nazwę Nowa (według innego źródła Nowopróżna).",
+      "Około 1865 roku zmieniono jej nazwę na Erywańska, dla upamiętnienia namiestnika Królestwa Polskiego Iwana Paskiewicza.",
+      "W latach 1853–1858 w miejscu rozebranego Czerwonego Pałacu wzniesiono gmach Towarzystwa Kredytowego Ziemskiego.",
+      "W 1906 roku ulica znalazła się w grupie pierwszych kilku ulic z latarniami elektrycznymi.",
+      "W 1916 roku zmieniono nazwę ulicy na obecną, pochodzącą od gmachu Towarzystwa Kredytowego Ziemskiego.",
+      "W czasie powstania warszawskiego ulica była miejscem walk o gmach Towarzystwa Kredytowego Ziemskiego, w którym od lata 1943 roku mieściła się siedziba Arbeitsamtu; ruiny broniło zgrupowanie „Bartkiewicza” do października 1944 roku.",
+      "W czasie okupacji w budynku w 1940 roku rozpoczął działalność koncesjonowany teatr Komedia, prowadzony przez Igo Syma."
+    ],
+    "ciekawostki": [
+      "Blok mieszkalny pod nr 8 jako pierwszy uzyskał w 1959 roku tytuł Mistera Warszawy."
+    ],
+    "summary_en": "Kredytowa Street was opened in 1852–1853 on land owned by the Polish Bank and was called Erywańska after Paskevich from about 1865. It took its present name in 1916 from the Land Credit Society building. The ruins of that building were defended during the 1944 uprising.",
+    "ludzie": [
+      {"kto": "Iwan Paskiewicz", "rola": "namiestnik Królestwa Polskiego, patron nazwy Erywańska", "wiki": null},
+      {"kto": "Igo Sym", "rola": "prowadził teatr Komedia w okupowanej Warszawie (1940)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowa (lub Nowopróżna), od 1852/1853", "Erywańska (ok. 1865–1916)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Kredytowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kredytowa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-krucza",
+    "nazwa": "Ulica Krucza",
+    "name_en": "Krucza Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krucza",
+    "adres_historyczny": null,
+    "lat": 52.230805,
+    "lon": 21.016282,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona ok. 1770 roku; biegła od zbiegu ulic Mokotowskiej i Pięknej i kończyła się ślepo za ul. Nowogrodzką.",
+      "Przedłużenie ulicy do Szpitalnej utrudniał podmokły grunt, nazywany potocznie krukiem, stąd nazwa ulicy.",
+      "W 1823 roku ulicę połączono z nowo przeprowadzoną Drogą Jerozolimską (Alejami Jerozolimskimi).",
+      "W czasie II wojny światowej zabudowa ulicy została zniszczona w blisko 100%.",
+      "W 1949 roku ulicę poszerzono do 34 metrów; wyburzono ruiny wschodniej pierzei i zabudowano ją budynkami biurowymi ministerstw (tzw. dzielnica ministerstw).",
+      "1 października 1957 roku otwarto „Grand Hotel” Orbisu z 416 pokojami (obecnie Mercure Grand Hotel).",
+      "W latach 1950–1972 ulica stanowiła ciąg trasy trolejbusowej, którą kursowały linie 51, 53 i 54."
+    ],
+    "ciekawostki": [
+      "Pod nr 26 znajdowała się kamienica Łęckich, uwieczniona przez Bolesława Prusa w powieści „Lalka”."
+    ],
+    "summary_en": "Krucza Street was laid out around 1770 and named after the marshy ground called kruk. It was almost wholly destroyed in 1944. In 1949 it was widened to 34 metres and lined with ministry offices, and the Grand Hotel opened in 1957.",
+    "ludzie": [
+      {"kto": "Bolesław Prus", "rola": "autor powieści „Lalka”, w której opisał kamienicę Łęckich pod nr 26", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Krucza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Krucza_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  },
+  {
+    "id": "ulica-krzywe-kolo",
+    "nazwa": "Ulica Krzywe Koło",
+    "name_en": "Krzywe Koło Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krzywe Koło",
+    "adres_historyczny": null,
+    "lat": 52.2505297,
+    "lon": 21.0114078,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1300–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica wytyczona około 1300 roku, wzmiankowana jako Curvae Rotae, Curva Rota, Crzive Colo, była początkowo uliczką gospodarczą dla posesji przy Rynku Starego Miasta.",
+      "W pierwszej połowie XIV wieku powstał tu pierwszy murowany dom w Starej Warszawie, będący zapewne siedzibą wójta.",
+      "Po 1379 roku u zbiegu ulic Krzywe Koło i Brzozowej wybudowano Wieżę Marszałkowską, zwaną też Okrągłą.",
+      "Od 1647 roku w kamienicy nr 14 znajdowała się poczta i zajazd wozów pocztowych; była to pierwsza poczta w Warszawie.",
+      "W 1652 roku kamienica nr 6 przeszła we władanie benonitów, którzy urządzili w niej działającą niemal przez 200 lat szkołę dla sierot.",
+      "Zagładę ulicy przyniósł 1944 rok; ocalały tylko domy 7 i 9.",
+      "W latach 1952–1956 rekonstruowano tylko domy frontowe; w odbudowanych według projektu Stanisława Żaryna kamienicach 7, 9 i 11 mieści się Archiwum Państwowe w Warszawie."
+    ],
+    "ciekawostki": [
+      "Według legendy w piwnicy jednej z kamienic przy Krzywym Kole mieszkał Bazyliszek.",
+      "Pod nr 2 mieściła się pierwsza w Warszawie sztycharnia nut, należąca do kompozytora Jana Engela."
+    ],
+    "summary_en": "Krzywe Koło is a bent medieval lane on the Old Town square, named after its right-angled bend. Its first stone house may have been the mayor's, and Warsaw's first post office operated here from 1647. The street was destroyed in 1944 and rebuilt in 1952–1956.",
+    "ludzie": [
+      {"kto": "Jan Engel", "rola": "kompozytor, właściciel sztycharni nut pod nr 2", "wiki": null},
+      {"kto": "Karol Wedel", "rola": "warszawski cukiernik, mieszkaniec ulicy w XIX wieku", "wiki": null},
+      {"kto": "Stanisław Żaryn", "rola": "projektant odbudowanych kamienic nr 7, 9 i 11", "wiki": null}
+    ],
+    "dawne_nazwy": ["Curvae Rotae, Curva Rota, Crzive Colo (średniowiecze)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Krzywe Koło w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Krzywe_Ko%C5%82o_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka ulicy z nagłówka artykułu."
+  }
+]

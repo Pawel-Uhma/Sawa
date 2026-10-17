@@ -1,0 +1,142 @@
+[
+  {
+    "id": "cmentarz-zydowski-wola",
+    "nazwa": "Cmentarz żydowski w Warszawie (Wola)",
+    "name_en": "Warsaw Jewish Cemetery (Okopowa Street)",
+    "typ": "cmentarz",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Okopowa 49/51",
+    "adres_historyczny": null,
+    "lat": 52.2475,
+    "lon": 20.974722222,
+    "lokalizacja": "dokladna",
+    "okres": "1806–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1806 roku zarząd warszawskiej gminy żydowskiej wystąpił do rządu o zgodę na cmentarz za rogatkami Wolskimi; zgodę wydano tego samego roku i cmentarz otwarto pod koniec 1806 roku.",
+      "Nekropolią administrowało bractwo pogrzebowe Chewra Kadisza, niezależne i w pełni autonomiczne w swoich decyzjach.",
+      "W 1828 roku wzniesiono pierwszy dom przedpogrzebowy, który w 1831 roku doszczętnie spaliły wojska rosyjskie; rok później postawiono nowy, murowany.",
+      "W 1877 roku z inicjatywy zamożnych członków gminy wybudowano późnoklasycystyczny budynek z synagogą i dwoma domami przedpogrzebowymi; projektował go Adolf Schimmelpfennig.",
+      "Po zniwelowaniu w 1875 roku wału Lubomirskiego i przeprowadzeniu w jego miejscu ulicy Okopowej, w 1887 roku nekropolię włączono w granice administracyjne Warszawy.",
+      "W 1913 roku potwierdzono zapis dzielący cmentarz na cztery części.",
+      "Po zapełnieniu cmentarza po I wojnie światowej stosowano nasypy: usuwano nagrobki w kwaterze dziecięcej i sypano minimum metr ziemi na miejscach sprzed ponad 50 lat; wykonano tak 14 nasypów.",
+      "Cmentarz ma powierzchnię ok. 33,5 ha i około 200 tysięcy nagrobków; jest największym cmentarzem żydowskim w województwie mazowieckim."
+    ],
+    "ciekawostki": [
+      "Pierwszą oficjalnie pochowaną osobą był Nachum, syn Nachuma z Siemiatycz, zmarły 6 grudnia 1806 roku.",
+      "W 1885 roku bezpłatne pogrzeby przeniesiono na cmentarz na Bródnie."
+    ],
+    "summary_en": "The Warsaw Jewish Cemetery at ul. Okopowa 49/51, opened in 1806, covers about 33.5 ha and holds around 200,000 tombstones. It is the largest Jewish cemetery in the Mazovian voivodeship and remains in use.",
+    "ludzie": [
+      {"kto": "Adolf Schimmelpfennig", "rola": "architekt budynku z 1877 roku z synagogą i domami przedpogrzebowymi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz żydowski w Warszawie (Wola)", "url": "https://pl.wikipedia.org/wiki/Cmentarz_%C5%BCydowski_w_Warszawie_%28Wola%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w zrzucie urywa się w opisie okresu międzywojennego; rekord obejmuje tylko to, co jest w tekście."
+  },
+  {
+    "id": "gazownia-na-woli",
+    "nazwa": "Gazownia na Woli",
+    "name_en": "Gasworks in Wola",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Kasprzaka 25",
+    "adres_historyczny": "ul. Dworska (obecnie ul. Kasprzaka)",
+    "lat": 52.2281,
+    "lon": 20.9647,
+    "lokalizacja": "dokladna",
+    "okres": "1886–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1856 roku Komitet Gazowy podpisał z Niemieckim Kontynentalnym Towarzystwem Gazowym w Dessau umowę koncesyjną na budowę gazowni; pierwsza powstała przy ul. Ludnej na Powiślu.",
+      "W latach 1886–1888 zbudowano znacznie większą gazownię przy ul. Dworskiej, z dostępem do bocznic kolejowych; w 1892 roku uruchomiono przy niej destylarnię smoły.",
+      "W 1925 roku gazownia stała się własnością miasta, które utworzyło spółkę Gazownia Miejska m.st. Warszawy.",
+      "W czasie obrony Warszawy we wrześniu 1939 roku, po pożarze 8 września wywołanym przez niemiecki nalot na jeden ze zbiorników z gazem, przerwano dostawy gazu dla miasta.",
+      "W 1970 roku gazownia zakończyła produkcję gazu z węgla; do 1978 roku wytwarzano gaz miejski z mieszaniny gazu ziemnego i gazu z rozkładni.",
+      "Od 1978 roku w Warszawie dostarczany jest tylko gaz ziemny.",
+      "W latach 1975 i 2005 zachowane obiekty zespołu gazowni wpisano do rejestru zabytków.",
+      "Muzeum Gazowni Warszawskiej, działające w dawnym budynku aparatowni i tłoczni, otwarto w 1977 roku, a 13 października 2022 roku ponownie po modernizacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The former Warsaw gasworks at ul. Kasprzaka 25 in Wola was built in 1886–1888. Coal-gas production ended in 1970 and the city's gas came only from natural gas from 1978. The listed complex houses the Warsaw Gasworks Museum, reopened in 2022.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Dworska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Gazownia na Woli", "url": "https://pl.wikipedia.org/wiki/Gazownia_na_Woli"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "glinki-stawy",
+    "nazwa": "Glinki (stawy w Warszawie)",
+    "name_en": "Glinki ponds in Moczydło Park",
+    "typ": "park",
+    "dzielnica": "Wola",
+    "adres_dzis": "park Moczydło, w pobliżu ul. Czorsztyńskiej i ul. Deotymy",
+    "adres_historyczny": null,
+    "lat": 52.2425,
+    "lon": 20.951388888,
+    "lokalizacja": "dokladna",
+    "okres": "1968–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stawy są pozostałością zalanych wodą glinianek powstałych po eksploatacji iłów plioceńskich, które służyły jako surowiec dla cegielni.",
+      "W tym miejscu działała cegielnia Kohen i Oppenheim.",
+      "Teren uporządkowano w czynie społecznym po II wojnie światowej, a w latach 1968–1970 powstał tu park Moczydło, zaprojektowany przez Marię Szczypiorską i Alinę Scholtz.",
+      "Łączna powierzchnia stawów wynosi 1,1367 ha; maksymalna zmierzona głębokość w największym zbiorniku to 3,45 m.",
+      "Ok. 2001 roku stawy wyposażono w przepompownię, dzięki której można regulować poziom wody.",
+      "Według pierwotnego projektu stawy pełniły rolę zbiorników retencyjnych, z wodą przelewającą się przez groble przy wysokich stanach wód."
+    ],
+    "ciekawostki": [
+      "Nazwa „Glinki” jest nieoficjalnie używana także wobec innych obiektów związanych z wydobyciem gliny, np. parku Szczęśliwickiego."
+    ],
+    "summary_en": "The Glinki ponds, about 1.14 ha in total, lie in Moczydło Park in Wola. They formed in clay pits that supplied the Kohen and Oppenheim brickworks, and the park was laid out in 1968–1970.",
+    "ludzie": [
+      {"kto": "Maria Szczypiorska", "rola": "projektantka parku Moczydło", "wiki": null},
+      {"kto": "Alina Scholtz", "rola": "projektantka parku Moczydło", "wiki": null}
+    ],
+    "dawne_nazwy": ["Glinianki na Moczydle (nazwa zwyczajowa)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Glinki (stawy w Warszawie)", "url": "https://pl.wikipedia.org/wiki/Glinki_%28stawy_w_Warszawie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że stawów jest trzy lub cztery; okres ustawiono wg daty parku, a nie samych glinianek."
+  },
+  {
+    "id": "gorczewska-park",
+    "nazwa": "Górczewska Park",
+    "name_en": "Górczewska Park housing estate",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Górczewska 181 (róg ul. Olbrachta)",
+    "adres_historyczny": null,
+    "lat": 52.236772,
+    "lon": 20.925558,
+    "lokalizacja": "dokladna",
+    "okres": "2007–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle powstało na terenie dawnej giełdy budowlanej; budowę rozpoczęto w 2007 roku, ukończono w czerwcu 2009, a zespół oddano do użytku w 2010 roku.",
+      "Na wąskiej działce o długości niemal kilometra powstało 12 obiektów, w których jest 886 mieszkań.",
+      "Architektonicznie projekt wykonała pracownia JEMS Architekci; zespół otrzymał wyróżnienie w konkursie Nagroda Roku SARP za rok 2010.",
+      "W 2009 roku Rada Warszawy uchwaliła plan, który wytyczył na wysokości osiedla rezerwę pod trasę N–S.",
+      "16 października 2020 roku w garażu podziemnym osiedla wybuchł pożar, w którym spłonęło 47 samochodów; nikt nie został ranny.",
+      "Po pożarze wyłączono z użytkowania budynek H; zakaz przebywania w nim został uchylony po zakończeniu remontu w grudniu 2021 roku."
+    ],
+    "ciekawostki": [
+      "Osiedle było nominowane do nagrody ECOLA Award 2010."
+    ],
+    "summary_en": "Górczewska Park is a housing estate of 886 flats at ul. Górczewska 181, built in 2007–2009 on the former site of a builders' market. A garage fire in October 2020 destroyed 47 cars; the damaged building reopened in December 2021.",
+    "ludzie": [],
+    "dawne_nazwy": ["giełda budowlana (teren przed budową osiedla)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Górczewska Park", "url": "https://pl.wikipedia.org/wiki/G%C3%B3rczewska_Park"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,381 @@
+[
+  {
+    "id": "park-mlocinski",
+    "nazwa": "Park Młociński (Las Młociny)",
+    "name_en": "Młociński Park (Młociny Forest)",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.3156, "lon": 20.925,
+    "lokalizacja": "przyblizona",
+    "okres": "1907–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1907 roku magistrat miasta Warszawy zakupił teren tzw. Budek i Gór Burakowskich pod planowany park miejski.",
+      "Od 1913 roku w sąsiedztwie parku powstawał plan miasta-ogrodu Młociny według projektu architekta Ignacego Miśkiewicza; wybuch I wojny światowej udaremnił budowę kilkuset willi.",
+      "W 1929 roku otwarto w sąsiedztwie parku linię kolejową Warszawa Gdańska – Palmiry, zlikwidowaną w latach 40. XX wieku.",
+      "W 1939 roku 30 Pułk Strzelców Kaniowskich dowodzony przez mjr. Bolesława Kamińskiego toczył tu opóźniający bój z Niemcami.",
+      "W lesie znajdują się groby polskich żołnierzy z 21 Pułku Ułanów Nadwiślańskich poległych w bitwie pod Łomiankami.",
+      "Na obszarze około 1 ha zasobność drzewostanu wynosi 720–730 m³/ha przy średniej w Polsce ok. 250 m³/ha."
+    ],
+    "ciekawostki": [
+      "Park jest mylony z Lasem Nowa Warszawa (Lasem Młocińskim), który leży po drugiej stronie ul. Pułkowej.",
+      "Ulica Dziwożony od strony lasu ma tylko jedną zabudowę – leśniczówkę; po drugiej stronie nosi nazwę ulicy Parkowej i należy do Łomianek."
+    ],
+    "summary_en": "Młociński Park, also called Las Młociny, is a forest park on the Vistula bank at the northern edge of Warsaw. The city bought the land in 1907 for a planned urban park, and the forest has traces of the 1939 and 1944 fighting.",
+    "ludzie": [
+      {"kto": "Ignacy Miśkiewicz", "rola": "architekt projektu miasta-ogrodu Młociny (od 1913)", "wiki": null},
+      {"kto": "mjr Bolesław Kamiński", "rola": "dowódca 30 Pułku Strzelców Kaniowskich w bitwie 1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Młociński Park Miejski", "Las Młociny"],
+    "zrodla": [{"tytul": "Wikipedia: Park Młociński w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_M%C5%82oci%C5%84ski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Park jest po czesci w Lomiankach; wspolrzedne z naglowka."
+  },
+  {
+    "id": "park-stawy-kellera",
+    "nazwa": "Park Stawy Kellera",
+    "name_en": "Stawy Kellera Park",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Gdańska 33 (teren między ul. Gdańską a ul. Kolektorską)",
+    "adres_historyczny": "Kaskada Fabryczna",
+    "lat": 52.277611111, "lon": 20.968194444,
+    "lokalizacja": "dokladna",
+    "okres": "1908–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki założenia parkowego na tym terenie pochodzą z XVII wieku, gdy obszar ten był parkiem przy pałacu Marysieńki Sobieskiej na Marymoncie.",
+      "W 1908 roku parcelę przy ul. Gdańskiej 33 zakupił przemysłowiec Emil Keller i wybudował farbiarnię, która działała do końca 1937 roku.",
+      "Po licytacji komorniczej nieruchomość nabył Stefan Norblin, który przebudował część budynku fabrycznego na willę „Kaskada”.",
+      "Norblin z żoną, aktorką Leną Żelichowską, opuścił Polskę we wrześniu 1939 roku.",
+      "1 września 1944 teren zdobyli powstańcy ze zgrupowania „Żubr”, którzy znaleźli w magazynach ok. 40 ton oleju rzepakowego i rozdali go mieszkańcom; zabudowania stały się Redutą Olejarnia, broniącą się do 14 września.",
+      "W 2012 roku, w 60. rocznicę śmierci i 120. urodziny, sprowadzono do Polski prochy Stefana Norblina i Leny Żelichowskiej; odsłonięto wówczas głaz z tablicą."
+    ],
+    "ciekawostki": [
+      "W XIX wieku gen. Józef Rautenstrauch wybudował tu dwór nad stawem, w którym po jego śmierci mieściła się Gospoda Na Cztery Fajerki, przy której założono osadę Kaskada.",
+      "Obecną nazwę parku nadano w 2010 roku."
+    ],
+    "summary_en": "Stawy Kellera is a park in the Marymont-Kaskada estate in Bielany, centred on two ponds. In 1908 Emil Keller built a dye works here; later the Norblin family owned the villa Kaskada, and in September 1944 insurgents held the site as the Olejarnia redoubt.",
+    "ludzie": [
+      {"kto": "Emil Keller", "rola": "przemysłowiec, kupił parcelę i zbudował farbiarnię (1908)", "wiki": null},
+      {"kto": "Stefan Norblin", "rola": "nabywca po licytacji, przebudował budynek na willę „Kaskada”", "wiki": null},
+      {"kto": "Lena Żelichowska", "rola": "aktorka, żona Stefana Norblina", "wiki": null},
+      {"kto": "gen. Józef Rautenstrauch", "rola": "wybudował w XIX wieku dwór nad stawem", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kaskada Fabryczna", "Kaskada"],
+    "zrodla": [{"tytul": "Wikipedia: Park Stawy Kellera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Stawy_Kellera_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-bruhla-mlociny",
+    "nazwa": "Pałac Brühla na Młocinach",
+    "name_en": "Brühl Palace in Młociny",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Muzealna 1",
+    "adres_historyczny": null,
+    "lat": 52.30861111, "lon": 20.93722222,
+    "lokalizacja": "dokladna",
+    "okres": "1752–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac został wzniesiony jako rezydencja podmiejska w latach 1752–1758 dla ministra Henryka von Brühla według projektu Johanna Friedricha Knöbla.",
+      "W 1786 roku pałac przebudował Szymon Bogumił Zug dla Alojzego Fryderyka von Brühla.",
+      "Od 1876 roku pałac należał do bankierów Hipolita Wawelberga i Stanisława Rotwanda, a w 1898 roku został znacznie przebudowany na letnią rezydencję.",
+      "W 1934 roku budynek został uszkodzony przez pożar.",
+      "Pałac został odrestaurowany w latach 1947–1949; po wojnie był siedzibą Muzeum Kultur Ludowych, późniejszego Państwowego Muzeum Etnograficznego.",
+      "W 2008 roku pałac kupił Sylwester Gardocki, który zbudował wokół parku ogrodzenie, włączając fragment wału przeciwpowodziowego."
+    ],
+    "ciekawostki": [
+      "Pałac nazywano „Wilanowem Północy”.",
+      "W pałacu bywali królowie August III Sas i Stanisław August Poniatowski.",
+      "Muzeum przeniesiono w 1973 roku na ul. Kredytową 1."
+    ],
+    "summary_en": "The Brühl Palace in Młociny, at ul. Muzealna 1, was built in 1752–1758 for minister Henryk von Brühl on the Vistula escarpment. It served as the Museum of Folk Cultures after the war and was restored in 1947–1949.",
+    "ludzie": [
+      {"kto": "Henryk von Brühl", "rola": "minister, zleceniodawca pałacu (1752–1758)", "wiki": null},
+      {"kto": "Johann Friedrich Knöbel", "rola": "autor projektu pałacu", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "przebudowa pałacu w 1786 roku", "wiki": null},
+      {"kto": "Sławomir Tomaszewski", "rola": "przejął pałac od spadkobierców Grodzickich", "wiki": null},
+      {"kto": "Sylwester Gardocki", "rola": "właściciel od połowy 2008 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Brühla na Młocinach", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Br%C3%BChla_na_M%C5%82ocinach"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule nazwisko Brühl pisane jest jako Brühla; zachowano formę z tytułu."
+  },
+  {
+    "id": "piaski-warszawa",
+    "nazwa": "Piaski",
+    "name_en": "Piaski (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Młociny B",
+    "lat": 52.268547, "lon": 20.943547,
+    "lokalizacja": "przyblizona",
+    "okres": "1916–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawniej miejscowość nazywała się Młociny B i należała do gminy Młociny.",
+      "1 kwietnia 1916 roku włączono ją do Warszawy.",
+      "W 1918 roku Młociny B przemianowano na Piaski od tutejszych piasków, by uniknąć mylenia z Młocinami.",
+      "Po przyłączeniu zabudowę mieszkaniową wzniosła Warszawska Spółdzielnia Mieszkaniowa, która zajmuje większą część tego rejonu, w tym nowe osiedla po 1991 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Piaski is a housing area in Bielany, between al. Armii Krajowej, ul. gen. Maczka, ul. W. Broniewskiego and al. W. Reymonta. It was called Młociny B until 1918 and was incorporated into Warsaw in 1916.",
+    "ludzie": [],
+    "dawne_nazwy": ["Młociny B"],
+    "zrodla": [{"tytul": "Wikipedia: Piaski (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Piaski_%28Warszawa%29"}],
+    "pewnosc": "srednia",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt; wspolrzedne z naglowka."
+  },
+  {
+    "id": "placowka-warszawa",
+    "nazwa": "Placówka",
+    "name_en": "Placówka (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.295736, "lon": 20.904364,
+    "lokalizacja": "przyblizona",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Placówka jako samodzielna osada powstała w 1921 roku na gruntach rozparcelowanego folwarku.",
+      "21 września 1939 roku na jej terenie doszło do walk, w wyniku których zniszczono dużą część zabudowań; Niemcy rozstrzelali sześcioro mieszkańców.",
+      "Symboliczna mogiła, w formie nadrzewnej kapliczki, stoi na rogu ulic Palisadowej i Kabaretowej.",
+      "1 sierpnia 1944 roku oddział kpt. „Janusza” został zatrzymany na przedpolach Placówki podczas pierwszego ataku na lotnisko bielańskie.",
+      "W 1951 roku miejscowość włączono do Warszawy; w latach 1952–1954 na obszarze 150 ha zbudowano Hutę Warszawa.",
+      "W 1973 roku oddano do użytku 49 ha nekropolii Komunalnego Cmentarza Północnego.",
+      "W 1986 wydano pozwolenie na budowę kościoła późniejszej parafii św. Ignacego Loyoli; parafię erygowano w 1998 roku, a kościół parafialny działa od 2005 roku."
+    ],
+    "ciekawostki": [
+      "Po bitwie Niemcy dobijali rannych polskich żołnierzy, a rozstrzelani mieszkańcy zostali oskarżeni o posiadanie scyzoryków lub brzytew."
+    ],
+    "summary_en": "Placówka is a district of Bielany between the Huta Warszawa steelworks and the Komunalny Cemetery Północny. It was incorporated into Warsaw in 1951 and was the scene of fighting in September 1939 and August 1944.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Placówka (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Plac%C3%B3wka_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykul podaje w jednym miejscu dzielnice Zoliborz przy wlaczeniu w 1951; w naglowku podano Bielany."
+  },
+  {
+    "id": "potok-bielanski",
+    "nazwa": "Potok Bielański",
+    "name_en": "Bielański Stream",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "początek przy ul. Conrada",
+    "adres_historyczny": null,
+    "lat": 52.2912, "lon": 20.9523,
+    "lokalizacja": "przyblizona",
+    "okres": "do lat 80. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Potok Bielański ma swoje źródła w okolicy dzisiejszego Wawrzyszewa i spływał wąwozem w kierunku Wisły, w pobliżu Polkowej Góry.",
+      "W wyniku melioracji źródliska na Wawrzyszewie zostały osuszone i współcześnie potok zaczyna się przy ul. Conrada.",
+      "W miejscu dawnych źródlisk znajdują się Stawy Brustmana, zasilane również wodą wodociągową.",
+      "Do lat 80. XX wieku potok prowadził wodę przez cały rok; po melioracjach w XX wieku stał się ciekiem okresowym.",
+      "Potok jest najważniejszym ciekiem powierzchniowym Bielan i na terenie lasu Bielańskiego został skanalizowany i ujęty kolektorem."
+    ],
+    "ciekawostki": [
+      "W rejonie dawnego klasztoru kamedułów i Góry Polkowej w dolinie potoku znajdowało się kilka stawów oraz młyny."
+    ],
+    "summary_en": "The Bielański Stream, the main surface watercourse of Bielany, rose near Wawrzyszew and flowed to the Vistula. After drainage works in the 20th century it became seasonal and is now mostly culverted.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Potok Bielański", "url": "https://pl.wikipedia.org/wiki/Potok_Biela%C5%84ski"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "osiedle-radiowo",
+    "nazwa": "Radiowo",
+    "name_en": "Radiowo (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Gać",
+    "lat": 52.284475, "lon": 20.897883,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teren współczesnego Radiowa nosił kiedyś nazwę Gać; pierwsze nazwy to „Gorczewska Gaca” lub „Gać Górcowska”.",
+      "Współczesna nazwa „Radiowo” została przyjęta w 1938 roku i pochodzi od Transatlantyckiej Centrali Radiotelegraficznej.",
+      "Na obszarze Radiowa znajduje się kompostownia oraz użytkowane składowisko odpadów.",
+      "W okresie listopad 2013 – listopad 2014 mieszkańcy protestowali przeciw ponownemu uruchomieniu składowiska.",
+      "Od początku lat 90. XX wieku powoli wchodzi tu niska zabudowa podmiejska."
+    ],
+    "ciekawostki": [
+      "Nazwa Florianów, Floryanów i Florianowo również pojawiała się w odniesieniu do tego terenu."
+    ],
+    "summary_en": "Radiowo is a district of Bielany, named in 1938 after the Transatlantic Radiotelegraph Centre. It is home to a compost plant and a landfill, and low suburban housing has been built since the early 1990s.",
+    "ludzie": [],
+    "dawne_nazwy": ["Gać", "Gorczewska Gaca", "Gać Górcowska", "Florianów"],
+    "zrodla": [{"tytul": "Wikipedia: Radiowo", "url": "https://pl.wikipedia.org/wiki/Radiowo"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stacja-kolejowa-radiowo",
+    "nazwa": "Stacja kolejowa Radiowo",
+    "name_en": "Radiowo railway station",
+    "typ": "budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "osiedle Radiowo, przed wjazdem na teren Huty Warszawa",
+    "adres_historyczny": null,
+    "lat": 52.287492805, "lon": 20.898364388,
+    "lokalizacja": "dokladna",
+    "okres": "1952–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja towarowa Radiowo powstała w latach 1951–1952 i została otwarta pod koniec 1952 roku.",
+      "Zbudowało ją Polskie Przedsiębiorstwo Robót Kolejowych nr 7 na kilometrze 9,154, przed bramą wjazdową do huty.",
+      "Do 1960 roku na terenie zakładu powstała sieć torowisk wewnętrznych o długości ok. 20 km wraz z czterotorową stacją Buraków.",
+      "W 1976 roku wykonano dodatkowy tor bocznicowy z kilkoma rozgałęzieniami do wschodniej strony osiedla Placówka.",
+      "W marcu 1973 roku pociąg z parowozem TKp 5051 uderzył w śmieciarkę marki Škoda; nie było ofiar śmiertelnych.",
+      "W 1988 roku stacja miała sześć torów, z czego tor nr 1 wchodził na teren huty główną bramą kolejową przy ul. Wólczyńskiej."
+    ],
+    "ciekawostki": [
+      "Stacja jest ostatnią na linii nr 938 z Warszawy Jelonek, przed wjazdem na teren Huty Warszawa."
+    ],
+    "summary_en": "Radiowo is a freight railway station in Warsaw at the entrance to the Huta Warszawa steelworks, the last stop on line 938 from Warszawa Jelonki. It was built in 1951–1952.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Radiowo (stacja kolejowa)", "url": "https://pl.wikipedia.org/wiki/Radiowo_%28stacja_kolejowa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rezerwat-las-bielanski",
+    "nazwa": "Rezerwat przyrody Las Bielański",
+    "name_en": "Las Bielański nature reserve",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.292222222, "lon": 20.96,
+    "lokalizacja": "przyblizona",
+    "okres": "1973–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Las Bielański jest pozostałością dawnej średniowiecznej Puszczy Mazowieckiej.",
+      "W 1930 roku las włączono do miasta i powstał tu Park Kultury z karuzelą; zamknięto go na wniosek władz Warszawy w październiku 1986 roku.",
+      "W 1973 roku utworzono rezerwat, by chronić unikatową przyrodę.",
+      "Wisłostradę budowaną w latach 1972–1974 poprowadzono na estakadach o długości ok. 850 m.",
+      "Powierzchnia rezerwatu wynosi 132,5915 ha; akt powołujący podawał 130,35 ha.",
+      "6 marca 2008 Mazowiecki Urząd Wojewódzki stwierdził, że koncert w ramach Juwenaliów 2007 r. naruszał przepisy o ochronie przyrody.",
+      "14 kwietnia 2006 na ul. Dewajtis ustanowiono zakaz zatrzymywania się (znak B-36)."
+    ],
+    "ciekawostki": [
+      "W lesie stwierdzono gniazdowanie 40 gatunków ptaków; symbolem lasu jest dzięcioł czarny.",
+      "W XVII wieku powstał tu zespół klasztorny kamedułów na Bielanach, od którego pochodzi nazwa dzielnicy."
+    ],
+    "summary_en": "Las Bielański is a nature reserve of about 132 ha in Bielany, a remnant of the medieval Mazovian Forest. It was established in 1973 to protect the forest from the pressure of visitors and the Wisłostrada motorway was carried on viaducts past it.",
+    "ludzie": [],
+    "dawne_nazwy": ["Las Bielany"],
+    "zrodla": [{"tytul": "Wikipedia: Rezerwat przyrody Las Bielański", "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Las_Biela%C5%84ski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urywa sie w opisie tarasu pradoliny Wisly; rekord oparty na pelnej czesci historycznej."
+  },
+  {
+    "id": "rudawka-doplyw-wisly",
+    "nazwa": "Rudawka",
+    "name_en": "Rudawka (Vistula tributary)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ujście przy ul. Wybrzeże Gdyńskie (pod Wisłostradą)",
+    "adres_historyczny": null,
+    "lat": 52.2904, "lon": 20.971,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rudawka, dawniej Rudawa, w górnym biegu nazywana Pisią, ma pierwotnie źródła w dzielnicach Wola i Bemowo i wpada do Wisły w Lesie Bielańskim.",
+      "W XVIII i XIX wieku nad Rudawką działały młyny, a jej spiętrzone wody tworzyły liczne stawy do hodowli ryb.",
+      "W 1974 roku, w związku z budową osiedli na Marymoncie, rozpoczęto budowę nowego, 1,5-kilometrowego koryta Rudawki.",
+      "W kwietniu 2021 roku prace ziemne przy układaniu kabla wysokiego napięcia uszkodziły podziemny kanał Rudawki, co spowodowało podtopienia okolicznych budynków.",
+      "Od nazwy rzeki wzięło nazwę osiedle Rudawka."
+    ],
+    "ciekawostki": [
+      "Topograficzna nazwa rzeki wiąże się z rudą, a w efekcie z bagnami rudej barwy."
+    ],
+    "summary_en": "The Rudawka is a partly culverted stream that rises in Wola and Bemowo and reaches the Vistula in Las Bielański. Its historic valley was straightened and covered in the 20th century, and a 1.5 km artificial channel was dug in 1974.",
+    "ludzie": [],
+    "dawne_nazwy": ["Rudawa", "Pisia"],
+    "zrodla": [{"tytul": "Wikipedia: Rudawka (dopływ Wisły)", "url": "https://pl.wikipedia.org/wiki/Rudawka_%28dop%C5%82yw_Wis%C5%82y%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Wspolrzedne z naglowka artykulu; ciek, nie budynek."
+  },
+  {
+    "id": "stadion-hutnika-warszawa",
+    "nazwa": "Stadion Hutnika Warszawa",
+    "name_en": "Hutnik Warsaw Stadium",
+    "typ": "sport",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Marymonckiej 42",
+    "adres_historyczny": null,
+    "lat": 52.300167, "lon": 20.943833,
+    "lokalizacja": "dokladna",
+    "okres": "1985–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stadion Hutnika Warszawa przy ul. Marymonckiej 42 został otwarty w 1985 roku.",
+      "W 1978 roku przy ul. Marymonckiej otwarto Ośrodek Wypoczynkowo-Sportowy, na którym stadion otrzymał własne boisko, zbudowane częściowo w czynie społecznym przez pracowników Huty Warszawa.",
+      "Stadion mógł pomieścić 6 240 osób, z czego 538 miejsc siedzących na krzesełkach i 5 702 na ławeczkach i stojących.",
+      "Na początku XXI wieku stadion przeszedł na własność miasta.",
+      "Po modernizacji w 2021 roku powstały trzy nowe boiska piłkarskie, zadaszone trybuny na 1328 miejsc i cztery korty tenisowe z mączki ceglanej.",
+      "Od 2022 roku na stadionie trenują i rozgrywają domowe mecze piłkarze KTS Weszło."
+    ],
+    "ciekawostki": [
+      "Foteliki w kolorach pomarańczowym i czarnym nawiązują do barw klubów hutniczych.",
+      "Rewitalizacja obiektu została wyróżniona nagrodą II stopnia w konkursie Budowa Roku."
+    ],
+    "summary_en": "Hutnik Warszawa stadium at ul. Marymonckiej 42, opened in 1985 and rebuilt in 2021 as a year-round training base with a 1328-seat main stand. Since 2022 it has also hosted home matches of KTS Weszło.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Stadion Hutnika Warszawa", "url": "https://pl.wikipedia.org/wiki/Stadion_Hutnika_Warszawa"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stadion-lekkoatletyczny-zygmunta-szelesta",
+    "nazwa": "Stadion lekkoatletyczny im. Zygmunta Szelesta (AWF)",
+    "name_en": "Zygmunt Szeles Athletics Stadium (AWF)",
+    "typ": "sport",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Marymonckiej 34",
+    "adres_historyczny": null,
+    "lat": 52.286666666, "lon": 20.958888888,
+    "lokalizacja": "dokladna",
+    "okres": "1929–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stadion powstał w 1929 roku jako część kompleksu Centralnego Instytutu Wychowania Fizycznego zaprojektowanego przez Edgara Norwertha.",
+      "Pierwotnie miał nawierzchnię żużlową; odbywały się tu zgrupowania przedolimpijskie lekkoatletów przed Los Angeles 1932 i Berlinem 1936.",
+      "Obiekt był modernizowany m.in. w 1973 roku oraz w latach 2014–2015.",
+      "Po rozbudowie w 2015 roku otrzymał najwyższy certyfikat bieżni lekkoatletycznych IAAF (1st Class).",
+      "W 2017 roku uchwałą Senatu uczelni nadano stadionowi imię oszczepnika, trenera i wykładowcy Zygmunta Szelesta.",
+      "Stadion leży na terenie wpisanym do rejestru zabytków w 2001 roku jako układ urbanistyczny AWF."
+    ],
+    "ciekawostki": [
+      "Obiekt ma ośmiotorową bieżnię tartanową i 2800 miejsc siedzących.",
+      "Stadion sąsiaduje z halą lekkoatletyczną im. Janusza Kusocińskiego."
+    ],
+    "summary_en": "The Zygmunt Szelest athletics stadium belongs to the University of Physical Education (AWF) at ul. Marymonckiej 34. Built in 1929 as part of the Central Institute of Physical Education complex, it has an eight-lane track and 2800 seats.",
+    "ludzie": [
+      {"kto": "Edgar Norwerth", "rola": "projektant kompleksu Centralnego Instytutu Wychowania Fizycznego", "wiki": null},
+      {"kto": "Zygmunt Szelest", "rola": "oszczepnik, trener i wykładowca; patron stadionu od 2017", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stadion lekkoatletyczny AWF"],
+    "zrodla": [{"tytul": "Wikipedia: Stadion lekkoatletyczny im. Zygmunta Szelesta", "url": "https://pl.wikipedia.org/wiki/Stadion_lekkoatletyczny_im._Zygmunta_Szelesta"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule Szelest zapisany jest jako Szelest i Szelesta (dopelniacz); zachowano brzmienie z tytulu."
+  }
+]

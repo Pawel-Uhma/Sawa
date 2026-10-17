@@ -1,0 +1,594 @@
+[
+  {
+    "id": "kamienica-pod-pelikanem",
+    "nazwa": "Kamienica Pod Pelikanem",
+    "name_en": "Pod Pelikanem Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Zamkowy 1/13",
+    "adres_historyczny": "u zbiegu ulic Piwnej i Grodzkiej",
+    "lat": 52.247906672,
+    "lon": 21.013350349,
+    "lokalizacja": "dokladna",
+    "okres": "2. poł. XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona w drugiej połowie XVII w. u zbiegu ulic Piwnej i Grodzkiej (obecnie plac Zamkowy).",
+      "Nazwa pochodzi od wyrzeźbionego pelikana, który znajduje się na rogu budynku.",
+      "W XVIII w. stanowiła własność kupieckiej rodziny Makinich, a potem Karola Fryderyka Pöppelmana, nadwornego architekta Wettinów.",
+      "W roku 1944 została zburzona do piwnic.",
+      "Pod koniec lat 50. została odbudowana według projektu Tadeusza Makarskiego, który nawiązuje do wyglądu sprzed zniszczenia z XVIII w.",
+      "Od 1 lipca 1965 razem z kamienicą sąsiadującą (przy pl. Zamkowym 13A) jest wpisana do rejestru zabytków (nr 627)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Pod Pelikanem is a five-storey tenement at 1/13 Plac Zamkowy in the Old Town, named after a pelican carved on its corner. Built in the second half of the 17th century, it was destroyed to the cellars in 1944 and rebuilt in the late 1950s to a design by Tadeusz Makarski. It has been a listed monument since 1965.",
+    "ludzie": [
+      {"kto": "Karol Fryderyk Pöppelman", "rola": "właściciel w XVIII w.; nadworny architekt Wettinów", "wiki": null},
+      {"kto": "Tadeusz Makarski", "rola": "projekt odbudowy (koniec lat 50. XX w.)", "wiki": null},
+      {"kto": "Edmund Burke", "rola": "wykonał sgraffito fasady", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulice Piwna i Grodzka (zbieg)"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Pod Pelikanem w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Pod_Pelikanem_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-prazmowskich",
+    "nazwa": "Kamienica Prażmowskich",
+    "name_en": "Prażmowski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 87",
+    "adres_historyczny": null,
+    "lat": 52.246847,
+    "lon": 21.013028,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1660–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zbudowana ok. 1660 dla Joachima Pastoriusa, lekarza i historiografa królewskiego, jako dwupiętrowa z czteroosiową fasadą.",
+      "Od 1666 była własnością Mikołaja Prażmowskiego, kanclerza wielkiego koronnego i prymasa Polski.",
+      "W 1754, po przejęciu przez rodzinę Leszczyńskich, przebudowana na rokokowy pałacyk z pięcioosiową fasadą według projektu Jakuba Fontany.",
+      "W 1804 została kupiona przez kupca Stefana Dobrycza.",
+      "Spalona podczas obrony Warszawy we wrześniu 1939.",
+      "Odbudowana w latach 1948–1949 według wyglądu z końca XVIII wieku, na podstawie projektu Zygmunta Stępińskiego.",
+      "Kamienica jest połączona z sąsiednią kamienicą Johna i jest siedzibą Domu Literatury."
+    ],
+    "ciekawostki": [
+      "Nad wejściem znajduje się jedna z dwóch odtworzonych po wojnie w Warszawie tablic libertacyjnych.",
+      "Mariusz Karpowicz zaliczył ją do najpiękniejszych kamienic rokokowych w Polsce."
+    ],
+    "summary_en": "A Rococo-Classicist tenement at Krakowskie Przedmieście 87 in the Old Town, first built around 1660 for physician and royal historiographer Joachim Pastorius. Rebuilt as a Rococo palace in 1754 by the Leszczyński family, it was burned in 1939 and reconstructed in 1948–1949. It now houses the House of Literature.",
+    "ludzie": [
+      {"kto": "Joachim Pastorius", "rola": "pierwszy właściciel; lekarz i historiograf królewski", "wiki": null},
+      {"kto": "Mikołaj Prażmowski", "rola": "właściciel od 1666; kanclerz wielki koronny i prymas Polski", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "projekt przebudowy w 1754", "wiki": null},
+      {"kto": "Stefan Dobrycz", "rola": "kupiec, właściciel od 1804", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "projekt odbudowy 1948–1949", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Pastoriusa", "kamienica Leszczyńskich", "kamienica Dobrycza"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Prażmowskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Pra%C5%BCmowskich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-prochnickich",
+    "nazwa": "Kamienica Próchnickich",
+    "name_en": "Próchnicki Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koszykowa 70 (róg ul. Emilii Plater)",
+    "adres_historyczny": null,
+    "lat": 52.2229,
+    "lon": 21.008,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona w latach 1913–1914 według projektu Mariana Kontkiewicza.",
+      "Po wyborze Gabriela Narutowicza na prezydenta, 13 grudnia 1922 roku marszałek Józef Piłsudski przeprowadził się z Belwederu z żoną Aleksandrą i córkami Wandą i Jadwigą do mieszkania żony w tej kamienicy.",
+      "Budynek przetrwał II wojnę światową.",
+      "Został pozbawiony ostatniego piętra i licznych ozdób, które usunięto podczas remontu w latach 60. XX wieku.",
+      "Tablica Norberta Barlickiego została wmurowana w październiku 1957 roku.",
+      "Tablica Józefa Piłsudskiego została wmurowana w maju 2006 roku."
+    ],
+    "ciekawostki": [
+      "Tablica Józefa Piłsudskiego głosi, że mieszkał w tym domu w latach 1922–1923."
+    ],
+    "summary_en": "A tenement at Koszykowa 70, on the corner of Emilii Plater, built in 1913–1914 to a design by Marian Kontkiewicz. Marshal Józef Piłsudski lived here in 1922–1923, and the building still has a commemorative plaque; it remains a residential building.",
+    "ludzie": [
+      {"kto": "Marian Kontkiewicz", "rola": "projektant (1913–1914)", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "mieszkaniec w latach 1922–1923 (tablica z 2006)", "wiki": null},
+      {"kto": "Norbert Barlicki", "rola": "mieszkaniec w czasie okupacji; zamordowany w Oświęcimiu 27 października 1941", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Próchnickich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Pr%C3%B3chnickich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-rodryga-mroczkowskiego",
+    "nazwa": "Kamienica Rodryga Mroczkowskiego",
+    "name_en": "Rodryg Mroczkowski Tenement (Krakowiacy i Górale)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mokotowska 57",
+    "adres_historyczny": null,
+    "lat": 52.2254,
+    "lon": 21.0214,
+    "lokalizacja": "dokladna",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zaprojektowana przez Zygmunta Binduchowskiego, wraz z sąsiednią kamienicą powstała w latach 1900–1904 dla hrabiego Rodryga Mroczkowskiego.",
+      "W czasie II wojny światowej sąsiednia kamienica pod adresem Mokotowska 59 uległa zniszczeniu; kamienica pod numerem 57 ocalała w dobrym stanie, zniszczone zostały jedynie jej oficyny.",
+      "Charakterystycznym elementem są rzeźby Krakowiaków oraz Górali w strojach ludowych, podtrzymujące loggie.",
+      "Po 1945 roku balkon między atlantami z prawej strony bramy zlikwidowano i w jego miejsce wykonano drzwi wejściowe.",
+      "W bramie zachował się przedwojenny dębowy bruk."
+    ],
+    "ciekawostki": [
+      "W narożnikach bramy znajdują się żeliwne odboje w formie krasnali."
+    ],
+    "summary_en": "An eclectic tenement at Mokotowska 57, designed by Zygmunt Binduchowski and built in 1900–1904 for Count Rodryg Mroczkowski. It is known as the Krakowiacy i Górale building after its folk-costumed sculptures holding up the loggias, and it kept its original oak paving in the gateway.",
+    "ludzie": [
+      {"kto": "Zygmunt Binduchowski", "rola": "projektant", "wiki": null},
+      {"kto": "Rodryg Mroczkowski", "rola": "hrabia, inwestor (1900–1904)", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Krakowiacy i Górale (nazwa zwyczajowa)"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Rodryga Mroczkowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Rodryga_Mroczkowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-roeslera-i-hurtiga",
+    "nazwa": "Kamienica Roeslera i Hurtiga",
+    "name_en": "Roesler and Hurtig Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 79",
+    "adres_historyczny": "dziedziniec pałacu Małachowskich",
+    "lat": 52.246361,
+    "lon": 21.013178,
+    "lokalizacja": "dokladna",
+    "okres": "1784–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona na dziedzińcu pałacu Małachowskich w latach 1784–1785 według projektu Szymona Bogumiła Zuga.",
+      "Powstał tu pierwszy na ziemiach polskich nowoczesny dom handlowo-mieszkalny, ze specjalnie zaprojektowanymi witrynami wystawowymi.",
+      "W 1839 na parterze otwarto piwiarnię „Pod Nadzieją”, która jako pierwsza w mieście serwowała piwo bawarskie.",
+      "W latach 1887–1888 kamienicę przebudowano w związku z przebiciem do Krakowskiego Przedmieścia ul. Miodowej.",
+      "Podczas obrony Warszawy we wrześniu 1939 budynek spłonął; w czasie II wojny światowej kamienica została zniszczona w 70%.",
+      "W latach 1948–1949 odbudowano ją według projektu Zygmunta Stępińskiego, zasadniczo do stanu z XVIII wieku.",
+      "W 1965 budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Piwiarnia „Pod Nadzieją” była jednym z ulubionych lokali grupy młodych literatów i malarzy nazywanych Cyganerią Warszawską.",
+      "Od 2020 w budynku mieści się siedziba Radia Wnet."
+    ],
+    "summary_en": "A late-18th-century commercial and residential building at Krakowskie Przedmieście 79, built in the courtyard of the Małachowski Palace in 1784–1785 by Szymon Bogumił Zug. It is one of the first modern shopping-and-residential buildings in Poland, was largely destroyed in 1939 and 1944, and was rebuilt in 1948–1949.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "projektant (1784–1785)", "wiki": null},
+      {"kto": "Jan Michał Roesler, Franciszek Leopold Roesler i Gaspar (Kacper) Hurtig", "rola": "kupcy z Czech i Moraw, właściciele od 1784", "wiki": null},
+      {"kto": "Józef Huss", "rola": "projekt elewacji przy przebiciu ul. Miodowej (1887–1888)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Roeslera i Hurtiga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Roeslera_i_Hurtiga_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-salomona-peretza",
+    "nazwa": "Kamienica Salomona Peretza (Rubinlichta)",
+    "name_en": "Salomon Peretz Tenement (Rubinlicht)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Stanisława Noakowskiego 4",
+    "adres_historyczny": null,
+    "lat": 52.22055,
+    "lon": 21.011652777,
+    "lokalizacja": "dokladna",
+    "okres": "1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wczesnomodernistyczną kamienicę zbudowano w latach 1910–1911 według projektu Stanisława Weissa i Henryka Stifelmana dla Salomona Peretza, razem z podobną kamienicą przy ul. Lwowskiej 3.",
+      "W 1914 roku kamienica przeszła w ręce Teofilii Młodzianowskiej, a w 1936 odziedziczył ją jej syn Stanisław.",
+      "Mieszkał tu m.in. płk Kazimierz Młodzianowski, komendant Szkoły Podchorążych, późniejszy minister spraw wewnętrznych.",
+      "Kamienica spłonęła w czasie II wojny światowej.",
+      "Została odbudowana z uproszczeniem elewacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An early-modernist tenement at Noakowskiego 4, built in 1910–1911 for Salomon Peretz to a design by Stanisław Weiss and Henryk Stifelman. It burned during the Second World War and was rebuilt with a simplified facade.",
+    "ludzie": [
+      {"kto": "Stanisław Weiss i Henryk Stifelman", "rola": "projektanci (1910–1911)", "wiki": null},
+      {"kto": "Salomon Peretz", "rola": "inwestor", "wiki": null},
+      {"kto": "Teofilia Młodzianowska", "rola": "właścicielka od 1914", "wiki": null},
+      {"kto": "Stanisław Młodzianowski", "rola": "właściciel od 1936", "wiki": null},
+      {"kto": "Kazimierz Młodzianowski", "rola": "płk, komendant Szkoły Podchorążych, mieszkaniec; późniejszy minister spraw wewnętrznych", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Rubinlichta"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Salomona Peretza (Rubinlichta) w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Salomona_Peretza_%28Rubinlichta%29_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-kacperskich",
+    "nazwa": "Kamienica Stanisława i Kazimiery Kacperskich",
+    "name_en": "Kacperski Tenement (The Iron)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Unii Lubelskiej (u zbiegu ul. Marszałkowskiej i ul. Polnej)",
+    "adres_historyczny": null,
+    "lat": 52.214319,
+    "lon": 21.020875,
+    "lokalizacja": "dokladna",
+    "okres": "1911–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wybudowana w latach 1911–1913 dla Stanisława Kowalskiego, kupca z prowincji; nazwisko architekta nie jest znane.",
+      "W momencie oddania do użytku w 1914 roku dziewięciokondygnacyjna budowla była jednym z dwóch najwyższych domów mieszkalnych w Warszawie (obok kamienicy na Mariensztacie przy ul. Nowy Zjazd 7).",
+      "Miała centralne ogrzewanie, elektryczność, centralne odkurzacze, kuchnie gazowe i trzy windy.",
+      "Podczas wojny mieściła się tu Komórka Biura Studiów Oddziału II Informacyjno-Wywiadowczego Armii Krajowej.",
+      "Krótko przed wybuchem II wojny światowej Stanisław i Kazimiera Kacperscy sprzedali kamienicę za 1,3 miliona złotych Państwowemu Zakładowi Emerytalnemu.",
+      "W 1970 roku podwórko zostało zabudowane na wysokości drugiego piętra podłogą z luksferów."
+    ],
+    "ciekawostki": [
+      "Dom był zwyczajowo nazwany „żelazkiem” ze względu na trapezowy kształt i budził porównania do nowojorskiego Flatiron Building.",
+      "W 1933 kamienicę ukazano w filmie fabularnym „Dwanaście krzeseł”."
+    ],
+    "summary_en": "A nine-storey trapezoidal tenement on Plac Unii Lubelskiej, built in 1911–1913 for merchant Stanisław Kowalski and known as the Iron (Żelazko). It was one of Warsaw's two tallest residential buildings when completed in 1914, and later became known as the 'suicide tenement' because of social problems in the 1990s.",
+    "ludzie": [
+      {"kto": "Stanisław Kowalski", "rola": "kupiec z prowincji, inwestor (1911–1913)", "wiki": null},
+      {"kto": "Stanisław i Kazimiera Kacperscy", "rola": "długoletni właściciele przed 1939", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Stanisława i Kazimiery Kacperskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Stanis%C5%82awa_i_Kazimiery_Kacperskich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też lata 90. (mieszkania socjalne, problemy społeczne) i potoczną nazwę „kamienica samobójców”; pominięte w faktach."
+  },
+  {
+    "id": "kamienica-sukertow",
+    "nazwa": "Kamienica Sukertów",
+    "name_en": "Sukiert Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Hoża 1 (róg ul. Mokotowskiej, pl. Trzech Krzyży)",
+    "adres_historyczny": null,
+    "lat": 52.227806,
+    "lon": 21.022194,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została zaprojektowana przez Henryka Sifelmana i Stanisława Weissa i wzniesiona w latach 1913–1914 w stylu wczesnego modernizmu.",
+      "Wzniesiona równocześnie z kamienicą przy ul. Hożej 1a, również ich autorstwa.",
+      "Pierwotnie traktowane były jako jeden budynek; podział na dwa budynki nastąpił w 1919 roku.",
+      "Budynek posiada osiem kondygnacji, z czego ósma jest ukryta w mansardowym dachu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An early-modernist tenement at the corner of Hoża and Mokotowska streets, on Plac Trzech Krzyży, built in 1913–1914 by Henryk Sifelman and Stanisław Weiss. It was originally one building with the neighbouring house at Hoża 1a and was split in two in 1919.",
+    "ludzie": [
+      {"kto": "Henryk Sifelman", "rola": "projektant (1913–1914)", "wiki": null},
+      {"kto": "Stanisław Weiss", "rola": "projektant (1913–1914)", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Bronisława Sukierta"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Sukertów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Sukert%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "W tym artykule nazwisko to Sifelman; w artykule o kamienicy Salomona Peretza pisze się Stifelman."
+  },
+  {
+    "id": "kamienica-taubenhausa",
+    "nazwa": "Kamienica Taubenhausa",
+    "name_en": "Taubenhaus Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 72",
+    "adres_historyczny": null,
+    "lat": 52.2256,
+    "lon": 21.0147,
+    "lokalizacja": "dokladna",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony w 1898 roku.",
+      "Kamienica została częściowo zniszczona w czasie II wojny światowej i odbudowana ze zmianami.",
+      "Na przełomie XX i XXI wieku przeprowadzono remont, który przywrócił pierwotny wygląd budynku.",
+      "W 1965 roku kamienica została wpisana do rejestru zabytków.",
+      "Budynek jest siedzibą m.in. Włoskiego Instytutu Kultury."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A neo-Gothic tenement at Marszałkowska 72, built in 1898. It was partly destroyed in the Second World War and restored with changes; a renovation at the turn of the 21st century brought back its original look. It is listed as a monument (1965) and houses the Italian Cultural Institute.",
+    "ludzie": [
+      {"kto": "Józef Pius Dziekoński", "rola": "projektant wg Encyklopedii Warszawy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Taubenhausa w Warszawie (ul. Marszałkowska)", "url": "https://pl.wikipedia.org/wiki/Kamienica_Taubenhausa_w_Warszawie_%28ul._Marsza%C5%82kowska%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Projektant podany z przypisu („według Encyklopedii Warszawy”)."
+  },
+  {
+    "id": "kamienica-warszawskiego-towarzystwa-dobroczynnosci",
+    "nazwa": "Kamienica Warszawskiego Towarzystwa Dobroczynności",
+    "name_en": "Warsaw Charity Society Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bednarska 28/30",
+    "adres_historyczny": null,
+    "lat": 52.2449,
+    "lon": 21.0158,
+    "lokalizacja": "dokladna",
+    "okres": "1840–1841–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona w latach 1840–1841 według projektu Jana Jakuba Gaya.",
+      "Stanowi część kompleksu budynków, które powstały z częściowym wykorzystaniem murów pałacu Kazanowskich.",
+      "Przy długości fasady 54,8 m ma tylko 5 osi okiennych o rozstawie ok. 9 m.",
+      "W dachu wygospodarowano pomieszczenia użytkowe, dzięki czemu pojawił się rząd dziesięciu lukarn.",
+      "Kamienica przetrwała II wojnę światową i powstanie warszawskie bez większych uszkodzeń."
+    ],
+    "ciekawostki": [
+      "W Warszawie jest jeszcze jeden budynek o podobnej architekturze: łącznik między budynkami Głównego Urzędu Miar przy ul. Elektoralnej, również dzieło Jakuba Gaya."
+    ],
+    "summary_en": "A 1840–1841 tenement at Bednarska 28/30 designed by Jan Jakub Gay. Its monumental facade, about 55 m long, recalls early-Renaissance palaces in Florence, and it came through the Second World War and the Warsaw Uprising with little damage.",
+    "ludzie": [
+      {"kto": "Jan Jakub Gay", "rola": "architekt (1840–1841)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Warszawskiego Towarzystwa Dobroczynności", "url": "https://pl.wikipedia.org/wiki/Kamienica_Warszawskiego_Towarzystwa_Dobroczynno%C5%9Bci"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-wiktoryna-kosmowskiego",
+    "nazwa": "Kamienica Wiktoryna Kosmowskiego",
+    "name_en": "Wiktor Kosmowski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 62",
+    "adres_historyczny": null,
+    "lat": 52.224366666,
+    "lon": 21.015947222,
+    "lokalizacja": "dokladna",
+    "okres": "1895–1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zbudowana w latach 1895–1897 jako czteropiętrowa, w stylu eklektycznym, na miejscu dworku Wojciecha Grabowskiego.",
+      "W ostatnich latach przed wybuchem I wojny światowej została nadbudowana o trzy piętra.",
+      "Prawdopodobnie we wrześniu 1939 kamienica utraciła ostatnie, szóste piętro.",
+      "Podczas powstania warszawskiego w budynku funkcjonował lazaret.",
+      "Pod koniec lat 40. XX wieku budynek dostosowano do sąsiedniej zabudowy Marszałkowskiej Dzielnicy Mieszkaniowej, wyrównując go do sześciu pięter.",
+      "24 lipca 2012 została wpisana do gminnej ewidencji zabytków m.st. Warszawy."
+    ],
+    "ciekawostki": [
+      "Między 1939 a 1945 rokiem na podwórku kamienicy ustawiono kapliczkę."
+    ],
+    "summary_en": "An eclectic tenement at Marszałkowska 62, built in 1895–1897 and raised by three storeys before the First World War. It was used as a field hospital during the Warsaw Uprising and was levelled to six storeys in the late 1940s to match the street's new buildings.",
+    "ludzie": [
+      {"kto": "Wojciech Grabowski", "rola": "właściciel dworku, na którego miejscu wzniesiono kamienicę", "wiki": null}
+    ],
+    "dawne_nazwy": ["kamienica Józefa Rotbarda"],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Wiktoryna Kosmowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Wiktoryna_Kosmowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-wildera",
+    "nazwa": "Kamienica Wildera",
+    "name_en": "Wilder Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bagatela 10",
+    "adres_historyczny": null,
+    "lat": 52.213833,
+    "lon": 21.023139,
+    "lokalizacja": "dokladna",
+    "okres": "1911–1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Sześciopiętrowa kamienica została wzniesiona w latach 1911–1912 według projektu Józefa Napoleona Czerwińskiego i Wacława Heppena.",
+      "Wyróżnia ją jednorodność secesyjnego opracowania bryły, fasady i detalu architektonicznego.",
+      "W 1921 roku w kamienicy urodził się Krzysztof Kamil Baczyński, który mieszkał tu do 1936 roku; upamiętnia to tablica odsłonięta w 1981 roku.",
+      "W czasie remontu w 1989 roku zniszczono część secesyjnej florystycznej ornamentyki.",
+      "W 1989 roku kamienica została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na frontowej ścianie budynku znajduje się napis upamiętniający projektantów."
+    ],
+    "summary_en": "A six-storey Art Nouveau tenement at Bagatela 10, designed by Józef Napoleon Czerwiński and Wacław Heppen in 1911–1912. Poet Krzysztof Kamil Baczyński was born here in 1921 and lived here until 1936; a plaque from 1981 marks it.",
+    "ludzie": [
+      {"kto": "Józef Napoleon Czerwiński", "rola": "projektant (1911–1912)", "wiki": null},
+      {"kto": "Wacław Heppen", "rola": "projektant (1911–1912)", "wiki": null},
+      {"kto": "Krzysztof Kamil Baczyński", "rola": "poeta; urodzony w kamienicy w 1921, mieszkał tu do 1936", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Wildera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Wildera_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-wilhelma-rakmana",
+    "nazwa": "Kamienica Wilhelma Rakmana",
+    "name_en": "Wilhelm Rakman Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 47 (róg ul. Poznańskiej)",
+    "adres_historyczny": null,
+    "lat": 52.22901,
+    "lon": 21.00938,
+    "lokalizacja": "dokladna",
+    "okres": "1905–1906–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Secesyjna, pięciopiętrowa kamienica została wybudowana w latach 1905–1906 według projektu Ludwika Panczakiewicza.",
+      "Jej charakterystycznym elementem jest duża kopuła nad narożnikiem, z latarnią i nerkowatymi oknami w tamburze.",
+      "Przed 1939 rokiem ze szczytu budynku usunięto metalową barierkę oraz fragmenty murowane.",
+      "Jest jednym z najlepiej zachowanych w Warszawie budynków z jednolitą secesyjną ornamentyką.",
+      "W 1965 roku została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An Art Nouveau tenement at Aleje Jerozolimskie 47, corner of Poznańska, built in 1905–1906 to a design by Ludwik Panczakiewicz. It is topped by a large dome with a lantern and is one of the best-preserved Art Nouveau buildings in Warsaw; listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "Ludwik Panczakiewicz", "rola": "projektant (1905–1906)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Wilhelma Rakmana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Wilhelma_Rakmana_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-wolfa-gutgelda",
+    "nazwa": "Kamienica Wolfa Gutgelda",
+    "name_en": "Wolf Gutgeld Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Rozbrat 28/30 oraz ul. Dmochowskiego 6",
+    "adres_historyczny": null,
+    "lat": 52.22578,
+    "lon": 21.03459,
+    "lokalizacja": "dokladna",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wybudowana w 1935 roku przez architekta Stanisława Rothberga dla Wolfa Gutgelda.",
+      "Była to jedna z luksusowych kamienic czynszowych lat 30., która jako jedna z pierwszych charakteryzowała się funkcjonalizmem i modernizmem.",
+      "W czasie II wojny światowej od strony ul. Rozbrat zniszczone zostało skrzydło wraz z narożnikiem, przez jedną z bomb zrzuconych na Warszawę.",
+      "Odbudowa nastąpiła w 1989 roku według projektu Andrzeja Kicińskiego.",
+      "Kamienica pełni funkcję mieszkalną, a mała część parteru funkcję przemysłową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A pre-war modernist tenement on Rozbrat and Dmochowskiego streets, built in 1935 by Stanisław Rothberg for Wolf Gutgeld. A bomb destroyed one wing during the war, and it was rebuilt in 1989 to a design by Andrzej Kiciński.",
+    "ludzie": [
+      {"kto": "Stanisław Rothberg", "rola": "architekt (1935)", "wiki": null},
+      {"kto": "Wolf Gutgeld", "rola": "inwestor", "wiki": null},
+      {"kto": "Andrzej Kiciński", "rola": "projekt odbudowy (1989)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Wolfa Gutgelda w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Wolfa_Gutgelda_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-zalmana-nozyka",
+    "nazwa": "Kamienica Zalmana Nożyka",
+    "name_en": "Zalman Nożyk Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Próżna 9",
+    "adres_historyczny": null,
+    "lat": 52.236194,
+    "lon": 21.004444,
+    "lokalizacja": "dokladna",
+    "okres": "brak danych w artykule",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została zaprojektowana przez Franciszka Braumanna.",
+      "Jej właścicielem był Zalman Nożyk, fundator pobliskiej synagogi przy ul. Twardej 6.",
+      "Kamienica przetrwała zagładę warszawskiego getta.",
+      "W 1987 roku kamienica została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement at Próżna 9 designed by Franciszek Braumann. It belonged to Zalman Nożyk, founder of the nearby synagogue at Twarda 6, and survived the destruction of the Warsaw Ghetto. It was listed as a monument in 1987.",
+    "ludzie": [
+      {"kto": "Franciszek Braumann", "rola": "projektant", "wiki": null},
+      {"kto": "Zalman Nożyk", "rola": "właściciel; fundator synagogi przy ul. Twardej 6", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Zalmana Nożyka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Zalmana_No%C5%BCyka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje daty budowy."
+  },
+  {
+    "id": "kamienica-zofii-kiersnowskiej",
+    "nazwa": "Kamienica Zofii Kiersnowskiej",
+    "name_en": "Zofia Kiersnowska Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bracka 18",
+    "adres_historyczny": null,
+    "lat": 52.23173,
+    "lon": 21.01721,
+    "lokalizacja": "dokladna",
+    "okres": "koniec XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała pod koniec XIX wieku na podstawie projektu Edwarda Lilpopa; w 1900 roku została nadbudowana według projektu Teofila Wiśniewskiego.",
+      "W latach 1910–1915 mieściło się w niej Gimnazjum im. św. Stanisława Kostki, a w dwudziestoleciu międzywojennym Gimnazjum Ludwika Lorentza.",
+      "Podczas powstania warszawskiego kamienica została częściowo wypalona i nieznacznie uszkodzona; straciła jedynie hełm, a fasada pozostała w niemal niezmienionym stanie.",
+      "W 2020 roku kamienica została wpisana do rejestru zabytków.",
+      "W 1908 roku nieruchomość została podzielona między Zofię i Jadwigę Kiersnowskie, córki Eugenii Kiersnowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An eclectic tenement at Bracka 18, designed by Edward Lilpop in the late 19th century and raised in 1900. It housed two gymnasiums in the 1910s and 1920s and was partly burned during the Warsaw Uprising, but its facade survived almost unchanged. Listed as a monument in 2020.",
+    "ludzie": [
+      {"kto": "Edward Lilpop", "rola": "projektant (koniec XIX w.)", "wiki": null},
+      {"kto": "Teofil Wiśniewski", "rola": "projekt nadbudowy (1900)", "wiki": null},
+      {"kto": "Zofia Kiersnowska", "rola": "właścicielka od 1905 (wraz z matką Eugenią); od 1908 nieruchomość podzielona między nią a siostrę Jadwigę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Zofii Kiersnowskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Zofii_Kiersnowskiej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-zwiazku-emerytow-banku-polskiego",
+    "nazwa": "Kamienica Związku Emerytów Banku Polskiego",
+    "name_en": "Pension Association of the Polish Bank Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 18",
+    "adres_historyczny": null,
+    "lat": 52.21625,
+    "lon": 21.02061,
+    "lokalizacja": "dokladna",
+    "okres": "1935–1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony w latach 1935–1936 jako luksusowa kamienica funkcjonalistyczna, z fasadą oblicowaną płytami żółtego piaskowca.",
+      "Bramę wjazdową w portalu wykonano z czarnego bazaltu, a drzwi z miedzi.",
+      "Budowę rozpoczęto dla rodziny Robinsonów, ale przed ukończeniem budynek przeszedł na własność Związku Emerytów Banku Polskiego.",
+      "W 2012 roku budynek został wpisany do gminnej ewidencji zabytków m.st. Warszawy, a w 2015 roku do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A luxury Functionalist tenement at Marszałkowska 18, built in 1935–1936 with yellow sandstone cladding. It was started for the Robinson family but was completed for the Pension Association of the Polish Bank and was designed by Lucjan Korngold.",
+    "ludzie": [
+      {"kto": "Lucjan Korngold", "rola": "projektant", "wiki": null},
+      {"kto": "Rodzina Robinsonów", "rola": "inwestorzy, dla których rozpoczęto budowę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Związku Emerytów Banku Polskiego", "url": "https://pl.wikipedia.org/wiki/Kamienica_Zwi%C4%85zku_Emeryt%C3%B3w_Banku_Polskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kamienica-zygmunta-regelmana",
+    "nazwa": "Kamienica Zygmunta Regelmana",
+    "name_en": "Zygmunt Regelman Tenement",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 27",
+    "adres_historyczny": null,
+    "lat": 52.2302,
+    "lon": 21.01486,
+    "lokalizacja": "dokladna",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wzniesiona w 1893 roku dla Zygmunta Regelmana według projektu Stefana Szyllera.",
+      "Pierwotnie był to trzypiętrowy budynek w układzie jednopodwórzowym zamkniętym, z trzema oficynami.",
+      "Jedenastoosiowa fasada miała trzy pseudoryzality ujęte kolumnami w wielkim porządku.",
+      "W czasie II wojny światowej znacznie ucierpiała fasada, jednak sama kamienica przetrwała.",
+      "Do 1971 roku wysiedlono mieszkańców i rozebrano oficyny.",
+      "W drugiej połowie lat 80. kamienicę nadbudowano o 2 piętra, aby zrównać ją z resztą zabudowy południowej pierzei Alej Jerozolimskich.",
+      "W 2012 roku budynek został wpisany do gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An eclectic tenement at Aleje Jerozolimskie 27, built in 1893 for Zygmunt Regelman to a design by Stefan Szyller. It lost its facade ornament and courtyard wings over the following decades and was raised by two storeys in the late 1980s to match the street.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "projektant (1893)", "wiki": null},
+      {"kto": "Zygmunt Regelman", "rola": "inwestor (1893)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kamienica Zygmunta Regelmana", "url": "https://pl.wikipedia.org/wiki/Kamienica_Zygmunta_Regelmana"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

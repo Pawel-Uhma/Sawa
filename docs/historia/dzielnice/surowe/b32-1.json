@@ -1,0 +1,415 @@
+[
+  {
+    "id": "spektrum-tower",
+    "nazwa": "Spektrum Tower",
+    "name_en": "Spektrum Tower",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Twarda 18",
+    "adres_historyczny": "ul. Twarda 18",
+    "lat": 52.235,
+    "lon": 20.999166666,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec biurowy przy ul. Twardej 18, dawna siedziba Telekomunikacji Polskiej.",
+      "Pierwotnie budynek miał być ukończony na podstawie umowy z 1 sierpnia 1997 roku z firmą PIA Piasecki na dzień 30 czerwca 2002 roku.",
+      "Pod koniec 2002 roku umowę zerwano, a na początku 2003 roku TP zawarła umowę na dokończenie budynku z firmą PORR Polska.",
+      "Wybudowanie i wykończenie wieżowca w 2003 roku kosztowało łącznie około 350 milionów złotych.",
+      "W lipcu 2008 roku TP sprzedała siedzibę duńskiemu funduszowi Baltic Property Trust Optima, podpisując jednocześnie umowę na jej wynajem.",
+      "W 2012 roku duńczycy sprzedali biurowiec londyńskiemu funduszowi Europa Capital LLP, należącemu do globalnej korporacji Rockefeller Group.",
+      "TP przestała użytkować biurowiec przy ul. Twardej 18 we wrześniu 2013 roku."
+    ],
+    "ciekawostki": [
+      "Cechą charakterystyczną budynku jest zewnętrzna panoramiczna winda jeżdżąca z prędkością 2,5 m/s w szybie odchylonym o 14° od pionu.",
+      "Konstrukcja nie jest zwieńczona masztem; na dachu znajduje się lądowisko dla śmigłowców."
+    ],
+    "summary_en": "Spektrum Tower is an office skyscraper at 18 Twarda Street, formerly the headquarters of Telekomunikacja Polska. Completed in 2003 at a cost of about 350 million zloty after the original contractor failed to finish it, it was sold to investors several times and vacated by TP in 2013.",
+    "ludzie": [],
+    "dawne_nazwy": ["TP S.A. Tower", "Twarda Tower"],
+    "zrodla": [{"tytul": "Wikipedia: Spektrum Tower", "url": "https://pl.wikipedia.org/wiki/Spektrum_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sezam-dom-handlowy",
+    "nazwa": "Spółdzielczy Dom Handlowy „Sezam”",
+    "name_en": "Sezam Cooperative Department Store",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 126/134 (dziś biurowiec Centrum Marszałkowska)",
+    "adres_historyczny": "ul. Marszałkowska 126/134",
+    "lat": 52.2346,
+    "lon": 21.0093,
+    "lokalizacja": "dokladna",
+    "okres": "1969–2014",
+    "istnieje": false,
+    "fakty": [
+      "Dom towarowy „Sezam” przy ul. Marszałkowskiej 126/134 został otwarty 11 października 1969 roku.",
+      "Budynek powstał według projektu Andrzeja Sierakowskiego, Tadeusza Błażejewskiego, Jana Kopciowskiego i Romana Widery jako jeden z elementów Ściany Wschodniej.",
+      "Został zbudowany ze środków spółdzielczych i należał do WSS „Społem” Śródmieście.",
+      "W 1973 roku zatrudniał 300 pracowników.",
+      "W 1992 roku w nowej części budynku, dobudowanej od strony ul. Świętokrzyskiej, otwarto pierwszą w Polsce restaurację McDonald’s.",
+      "Ostatnim dniem działalności domu handlowego był 10 sierpnia 2014 roku.",
+      "W latach 2016–2018 na jego miejscu wzniesiono biurowiec Centrum Marszałkowska, zintegrowany ze stacją metra."
+    ],
+    "ciekawostki": [
+      "W styczniu 1989 roku „Sezam” otrzymał złoty „Znak Wzorowej Pracy” w konkursie „Stolicy” i WSS Społem.",
+      "Budynek zagrał w filmie kryminalnym „Przepraszam, czy tu biją” (1976) Marka Piwowskiego, a zdjęcia końcowej pogoni kręcono na jego dachu.",
+      "Neony z rozebranego budynku przekazano do Neon Muzeum."
+    ],
+    "summary_en": "Sezam was a cooperative department store at 126/134 Marszałkowska Street, open from 1969 to 2014 and once the largest cooperative department store in Warsaw. It was home to the first McDonald’s in Poland, opened in 1992. The building was demolished and replaced by the Centrum Marszałkowska office block in 2016–2018.",
+    "ludzie": [
+      {"kto": "Jacek Kuroń", "rola": "były minister pracy i polityki socjalnej, uczestniczył w otwarciu restauracji McDonald’s w 1992 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sezam"],
+    "zrodla": [{"tytul": "Wikipedia: Spółdzielczy Dom Handlowy „Sezam” w Warszawie", "url": "https://pl.wikipedia.org/wiki/Sp%C3%B3%C5%82dzielczy_Dom_Handlowy_%E2%80%9ESezam%E2%80%9D_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stadion-agrykola",
+    "nazwa": "Stadion Agrykola",
+    "name_en": "Agrykola Stadium",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.220533723,
+    "lon": 21.034229433,
+    "lokalizacja": "dokladna",
+    "okres": "1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stadion został otwarty w 1912 roku i może pomieścić 1000 widzów.",
+      "W okresie międzywojennym odbywały się na nim wielokrotnie lekkoatletyczne Mistrzostwa Polski.",
+      "Piłkarska reprezentacja Polski rozegrała tu cztery spotkania towarzyskie w okresie międzywojennym.",
+      "W latach 1911–1928 mecze rozgrywała na nim drużyna Polonii Warszawa, w latach 1917–1930 Legii Warszawa, a w latach 1921–1932 zespół Warszawianki.",
+      "W latach 2000–2013 rozgrywano na stadionie finał pucharu Z podwórka na Stadion o Puchar Tymbarku.",
+      "Obecnie stadion jest użytkowany przez klub Agrykola Warszawa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Agrykola Stadium is a multi-purpose stadium opened in 1912 with capacity for 1000 spectators. In the interwar period it hosted Polish athletics championships and home matches of Polonia, Legia and Warszawianka, and it is now used by Agrykola Warszawa.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Stadion Agrykola", "url": "https://pl.wikipedia.org/wiki/Stadion_Agrykola"}],
+    "pewnosc": "srednia",
+    "uwagi": "Adres nie podany w artykule. Artykuł krótki."
+  },
+  {
+    "id": "stadion-polonii-warszawa",
+    "nazwa": "Stadion Polonii Warszawa",
+    "name_en": "Polonia Warsaw Stadium",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Konwiktorska 6",
+    "adres_historyczny": "ul. Konwiktorska 6 (od strony ul. Bonifraterskiej wejście z trybuną)",
+    "lat": 52.255517,
+    "lon": 21.001322,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stadion im. gen. Kazimierza Sosnkowskiego znajduje się na Nowym Mieście przy ul. Konwiktorskiej 6; jest własnością miasta stołecznego Warszawy, a jego pojemność wynosi 7150 miejsc.",
+      "Klub otrzymał prawie 5-hektarową działkę przy ul. Konwiktorskiej; prasowe doniesienia o placu pod budowę pochodzą z 1923 roku.",
+      "Pierwotny plan zakładał stadion na 20 tys. miejsc według projektu Juliusza Nagórskiego, ale koszty okazały się zbyt duże i zbudowano prowizoryczny obiekt.",
+      "15 sierpnia 1928 roku stadion był gotowy i rozegrano tu pierwszy mecz (Polonia–Hasmonea Lwów 5:0); oficjalne otwarcie nastąpiło 30 września 1928 roku.",
+      "W nocy z 21 na 22 sierpnia 1944 roku oddziały batalionów „Zośka” i Czata „49” wyprowadziły przez boisko uderzenie w stronę Dworca Gdańskiego; natarcie nie powiodło się, a w walkach zginęło 12 powstańców.",
+      "Proces o prawa do obiektu, który wszczęła komunistyczna młodzieżówka Związek Walki Młodych, zakończył się 27 listopada 1947 roku wyrokiem przywracającym stadion klubowi."
+    ],
+    "ciekawostki": [
+      "Podczas oficjalnego otwarcia rozegrano mecz koszykówki, pokaz lotniczy oraz mecz Polonia – Wisła Kraków 2:7.",
+      "Resztki betonowej bariery oddzielającej boisko od publiczności są widoczne na stadionie do dziś."
+    ],
+    "summary_en": "Polonia Warsaw Stadium at 6 Konwiktorska Street has a capacity of 7150 and has been used by Polonia Warsaw since its opening in 1928. During the Warsaw Uprising, the field was crossed by an unsuccessful attack by Zośka and Czata 49 battalions in August 1944.",
+    "ludzie": [
+      {"kto": "Juliusz Ulrych", "rola": "pułkownik, wygłosił przemówienie podczas oficjalnego otwarcia stadionu w 1928 roku", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "architekt, autor pierwotnego projektu stadionu na 20 tys. miejsc", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Stadion Polonii Warszawa", "url": "https://pl.wikipedia.org/wiki/Stadion_Polonii_Warszawa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w opisie powojennych lat; dalsze fakty z lat 1950+ niewykorzystane."
+  },
+  {
+    "id": "stadion-wojska-polskiego",
+    "nazwa": "Stadion Wojska Polskiego w Warszawie",
+    "name_en": "Polish Army Stadium in Warsaw",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Łazienkowska 3",
+    "adres_historyczny": "teren między ul. Łazienkowską a Myśliwiecką",
+    "lat": 52.220461,
+    "lon": 21.040628,
+    "lokalizacja": "dokladna",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stadion przy ul. Łazienkowskiej 3, formalnie Stadion Legii Warszawa im. Marszałka Józefa Piłsudskiego, stanowi własność miasta stołecznego Warszawy.",
+      "Od 1 sierpnia 2002 roku obiekt jest dzierżawiony przez spółkę Legia Warszawa S.A.",
+      "Legia po przeprowadzce do Warszawy w 1917 roku grała na Agrykoli; pierwszy mecz tam, z Polonią (1-1), odbył się 29 kwietnia 1917 roku.",
+      "Pod koniec 1921 roku klub wydzierżawił teren między ul. Łazienkowską a Myśliwiecką; plan budowy stworzył kpt. Wanicki, rozszerzony przez inż. Jana Nagórskiego.",
+      "Basen Północny, zaprojektowany przez inż. Wacława Paszkowskiego z 10-metrową skocznią i trybunami na 2500 osób, otwarto 14 listopada 1928 roku.",
+      "Stadion zaprojektował Maksymilian Dudryk-Darlewski; pod główną trybuną na 5000 osób znajdowały się pomieszczenia klubowe, a bieżnia liczyła 400 m.",
+      "Koniec budowy nastąpił w 1930 roku; pierwszy mecz inauguracyjny to Legia – CD Europa Barcelona 1:1 z 9 sierpnia 1930 roku."
+    ],
+    "ciekawostki": [
+      "Pierwszą imprezą wojskową na nowych obiektach były igrzyska z pokazem bitwy powietrznej i lądowej, które zgromadziły ok. 15 tys. widzów.",
+      "Pierwszego gola dla Legii w meczu inauguracyjnym zdobył Henryk Martyna."
+    ],
+    "summary_en": "The Polish Army Stadium on Łazienkowska Street, owned by the city of Warsaw and leased to Legia Warszawa since 2002, opened in 1930 after a long build-up that began on the Agrykola grounds in 1917. Its inaugural match was Legia against CD Europa Barcelona on 9 August 1930.",
+    "ludzie": [
+      {"kto": "Maksymilian Dudryk-Darlewski", "rola": "autor projektu stadionu", "wiki": null},
+      {"kto": "Wacław Paszkowski", "rola": "inżynier, projektant Basenu Północnego", "wiki": null},
+      {"kto": "Jan Nagórski", "rola": "inżynier, rozszerzył plan kpt. Wanickiego", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stadion Wojskowy"],
+    "zrodla": [{"tytul": "Wikipedia: Stadion Wojska Polskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Stadion_Wojska_Polskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w zdaniu o pierwszym golu; podano tylko to, co jest w tekście."
+  },
+  {
+    "id": "stajnie-kubickiego",
+    "nazwa": "Stajnie Kubickiego",
+    "name_en": "Kubicki Stables",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.214536111,
+    "lon": 21.039241666,
+    "lokalizacja": "dokladna",
+    "okres": "1825–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek w stylu klasycystycznym wzniesiono w latach 1825–1826 według projektu Jakuba Kubickiego na terenie folwarku za pałacem Myślewickim.",
+      "Przebudowę folwarku rozpoczęto w 1825 roku z rozkazu wielkiego księcia Konstantego Romanowa; nowy budynek zajął miejsce drewnianej stajni o tym samym przeznaczeniu.",
+      "W parterowych skrzydłach mieściły się stajnie na 48 koni, a w bocznych wozownie na 8 pojazdów konnych.",
+      "W latach 70. XX wieku mieściły się tu pracownia fotograficzna Ministerstwa Handlu Zagranicznego i pracownia konserwatorska Muzeum Narodowego w Warszawie.",
+      "Od 1995 roku mieści się tu część ekspozycji Muzeum Łowiectwa i Jeździectwa.",
+      "W latach 2019–2021 przeprowadzono remont w ramach projektu „Stajnie Pegaza”; po nim udostępniono dwie wystawy stałe: Powozownię im. Zbigniewa Prusa-Niewiadomskiego i Królewską manufakturę tkacką."
+    ],
+    "ciekawostki": [
+      "W manufakturze tkackiej działają wciąż krosna żakardowe należące do Spółdzielni Ład.",
+      "Budynek przetrwał II wojnę światową bez większych zniszczeń."
+    ],
+    "summary_en": "Kubicki Stables is a Neoclassical building in the eastern part of the Royal Baths Park, built in 1825–1826 to a design by Jakub Kubicki. After a 2019–2021 restoration it houses two permanent exhibitions, a carriage collection and a weaving manufacture.",
+    "ludzie": [
+      {"kto": "Jakub Kubicki", "rola": "autor projektu budynku", "wiki": null},
+      {"kto": "Konstanty Romanow", "rola": "wielki książę, z jego rozkazu rozpoczęto przebudowę folwarku w 1825 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Folwark łazienkowski (zespół budynków)"],
+    "zrodla": [{"tytul": "Wikipedia: Stajnie Kubickiego", "url": "https://pl.wikipedia.org/wiki/Stajnie_Kubickiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres nie podany; lokalizacja: wschodnia część Łazienek Królewskich."
+  },
+  {
+    "id": "stara-kordegarda",
+    "nazwa": "Stara Kordegarda",
+    "name_en": "Old Guardhouse (Eastern Guardhouse)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie, wschodni brzeg południowego stawu",
+    "adres_historyczny": "wschodnia droga do pałacu Na Wyspie",
+    "lat": 52.216208,
+    "lon": 21.036609,
+    "lokalizacja": "dokladna",
+    "okres": "1791–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek kordegardy powstał w latach 1791–1792 jako część kompleksu pałacowego Łazienek; zaprojektował go Jan Christian Kamsetzer.",
+      "Kordegardę wzniesiono na polecenie króla Stanisława Augusta i nazwano „Nową”, by odróżnić ją od Starej Kordegardy po drugiej stronie Stawu Północnego.",
+      "Kiedy dawną Starą Kordegardę przebudowano w 1830 roku, zamieniono nazwy kordegard – starsza nosi od tej pory nazwę „Nowej”, a nowsza „Starej”.",
+      "Budynek ozdobiono kamienną kolumnadą toskańską z czterech kolumn, zwieńczoną balustradowo-cokołową attyką.",
+      "W 1958 roku usunięto strop, łącząc dwie kondygnacje, odnowiono front i elewacje boczne oraz zamurowano tylne wejścia; budowlę zniszczono podczas II wojny światowej.",
+      "Obecnie Stara Kordegarda jest obszarem działań Ośrodka Edukacji Muzealnej Muzeum Łazienki Królewskie."
+    ],
+    "ciekawostki": [
+      "Przed budynkiem w XVII wieku znajdował się brukowany plac z 32 „kołkami” na broń.",
+      "Budynek zbudowano tak, by wyglądem wiązał się z północną fasadą Pałacu na Wyspie."
+    ],
+    "summary_en": "The Old Guardhouse in the Royal Baths Park was built in 1791–1792 to a design by Jan Christian Kamsetzer, originally as the “New” guardhouse. Rebuilt in 1958 after war damage, it is now used by the Museum Łazienki Królewskie education centre.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "król, zlecił budowę kordegardy", "wiki": null},
+      {"kto": "Jan Christian Kamsetzer", "rola": "projektant kordegardy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowa Kordegarda (do 1830)", "Kordegarda Wschodnia"],
+    "zrodla": [{"tytul": "Wikipedia: Stara Kordegarda w Warszawie", "url": "https://pl.wikipedia.org/wiki/Stara_Kordegarda_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stara-niemiecka-synagoga",
+    "nazwa": "Stara Niemiecka Synagoga",
+    "name_en": "Old German Synagogue",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Daniłowiczowska 12",
+    "lat": 52.24484305,
+    "lon": 21.00678205,
+    "lokalizacja": "dokladna",
+    "okres": "1802–?",
+    "istnieje": null,
+    "fakty": [
+      "Pierwsza, reformowana synagoga w Warszawie znajdowała się przy ul. Daniłowiczowskiej 12.",
+      "Synagogę założono w 1802 roku z inicjatywy i na fundusze Izaaka Flatau.",
+      "W latach 30. XIX wieku dążono do wzniesienia nowej, większej synagogi, na którą zgromadzono znaczną sumę.",
+      "Nowa synagoga stanęła w 1849 roku przy Daniłowiczowskiej 8/10 i jest znana jako Niemiecka Synagoga w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The first reformed synagogue in Warsaw, founded in 1802 with funds from Izaak Flatau at 12 Daniłowiczowska Street. A larger synagogue, the Niemiecka Synagoga, was built on the same street in 1849.",
+    "ludzie": [
+      {"kto": "Izaak Flatau", "rola": "fundator i inicjator założenia synagogi w 1802 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Niemiecka Synagoga w Warszawie (nowsza, 1849)"],
+    "zrodla": [{"tytul": "Wikipedia: Stara Niemiecka Synagoga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Stara_Niemiecka_Synagoga_w_Warszawie"}],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł bardzo krótki; tekst nie mówi, czy budynek istnieje, ani co się z nim stało. istnieje = null do weryfikacji. Współrzędne z nagłówka."
+  },
+  {
+    "id": "stara-pomaranczarnia",
+    "nazwa": "Stara Pomarańczarnia",
+    "name_en": "Old Orangery",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie",
+    "adres_historyczny": null,
+    "lat": 52.2165,
+    "lon": 21.0303,
+    "lokalizacja": "dokladna",
+    "okres": "1786–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczną pomarańczarnię w Łazienkach Królewskich wzniesiono w latach 1786–1788 według projektu Dominika Merliniego; pierwotnie nazywała się Wielką Oranżerią.",
+      "Przechowywano w niej drzewa pomarańczowe, które latem zdobiły alejki parkowe.",
+      "We wschodnim skrzydle mieścił się teatr dworski – Teatr Stanisławowski (Królewski).",
+      "Budynek nie został zniszczony w czasie II wojny światowej.",
+      "W latach 1952–1965 przed budynkiem stał pomnik księcia Józefa Poniatowskiego.",
+      "W latach 2012–2014 odsłonięto, poddano konserwacji i uzupełniono malowidła Jana Chrystiana Kamsetzera, pokrywające ok. 60% powierzchni ścian w foyer Teatru Stanisławowskiego i w Ogrodzie Zimowym.",
+      "W 2015 roku przed Starą Oranżerią powstał Ogród Holenderski zaprojektowany przez holenderskiego architekta krajobrazu Nieka Roozena."
+    ],
+    "ciekawostki": [
+      "Przez wiele lat realistyczne malowidła w teatrze przypisywano Antoniemu Smuglewiczowi; w raportach budowy wymieniono jednak Antoniego Gerżabka.",
+      "Pomarańczarnia jest jedynym budynkiem obok pałacu, który ma elewacje w późniejszym, surowszym stylu klasycznym."
+    ],
+    "summary_en": "The Old Orangery in the Royal Baths Park, built in 1786–1788 to a design by Dominik Merlini, housed orange trees for the park in summer and contained the Royal Theatre (Teatr Stanisławowski). It survived the Second World War intact and was restored in 2012–2014, when Kamsetzer’s painted decorations were revealed.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "projektant i budowniczy pomarańczarni i teatru", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "autor dekoracji i malowideł wewnątrz", "wiki": null},
+      {"kto": "Józef Poniatowski", "rola": "książę, którego pomnik stał przed budynkiem w latach 1952–1965", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wielka Oranżeria"],
+    "zrodla": [{"tytul": "Wikipedia: Stara Pomarańczarnia", "url": "https://pl.wikipedia.org/wiki/Stara_Pomara%C5%84czarnia"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stare-miasto",
+    "nazwa": "Stare Miasto w Warszawie",
+    "name_en": "Warsaw Old Town",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.249722222,
+    "lon": 21.012222222,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1300–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stara Warszawa uzyskała lokację miejską około 1300 roku; założona na skarpie nad Kamionką, obok zamku książąt mazowieckich.",
+      "Miasto lokowano na prawie chełmińskim; założycielem uważa się Bolesława II, księcia mazowieckiego i płockiego.",
+      "W XIII wieku miasto otaczał wał ziemny, który pod koniec XIV wieku zastąpił mur obronny.",
+      "W 1427 roku pochodzą pierwsze udokumentowane wiadomości o Żydach mieszkających w Starej Warszawie.",
+      "W 1527 roku Zygmunt I Stary potwierdził przywilej zakazujący Żydom mieszkać w Starej i Nowej Warszawie.",
+      "W 1607 roku wielki pożar, prawdopodobnie zaprószony przez uczestników sejmu, strawił m.in. 22 kamienice przy rynku.",
+      "Od 1980 roku Stare Miasto znajduje się na liście światowego dziedzictwa UNESCO."
+    ],
+    "ciekawostki": [
+      "W średniowieczu miasto miało dwa place targowe (przy Rynku i przy Szerokim Dunaju), 12 ulic i ok. 150 domów.",
+      "U wylotu obecnej ul. Celnej urządzono wysypisko śmieci zwane Gnojną Górą."
+    ],
+    "summary_en": "The Old Town of Warsaw, originally founded around 1300 on an escarpment above the Kamionka stream, is the oldest part of the city. Surrounded by medieval walls and listed by UNESCO since 1980, it was the seat of the Masovian princes from 1413.",
+    "ludzie": [
+      {"kto": "Bolesław II", "rola": "książę mazowiecki i płocki, uważany za założyciela miasta", "wiki": null},
+      {"kto": "Zygmunt I Stary", "rola": "król, który w 1527 roku potwierdził zakaz osiedlania się Żydów", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stara Warszawa"],
+    "zrodla": [{"tytul": "Wikipedia: Stare Miasto w Warszawie", "url": "https://pl.wikipedia.org/wiki/Stare_Miasto_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł dłuższy, urwany w XVII wieku; wybrano fakty ze średniowiecza i wczesnej nowożytności. Jest to obszar, nie pojedyncze miejsce; lokalizacja przyblizona."
+  },
+  {
+    "id": "staromiejski-dom-kultury",
+    "nazwa": "Staromiejski Dom Kultury",
+    "name_en": "Staromiejski Culture Centre",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Starego Miasta 2",
+    "adres_historyczny": null,
+    "lat": 52.2498,
+    "lon": 21.01307,
+    "lokalizacja": "dokladna",
+    "okres": "1953–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staromiejski Dom Kultury mieści się w kamienicy Bornbachowskiej przy Rynku Starego Miasta 2.",
+      "Placówkę otwarto 22 lipca 1953 roku w ramach oficjalnego otwarcia I części tzw. Traktu Starej Warszawy przez Bolesława Bieruta.",
+      "W latach 1962–1987 działał pod patronatem Związku Młodzieży Socjalistycznej oraz Związku Socjalistycznej Młodzieży Polskiej.",
+      "Klub Krzywego Koła (1955–1962) wywarł duży wpływ na kształtowanie się opozycji wobec władzy komunistycznej; jego członkami byli m.in. Jan Józef Lipski, Jan Olszewski, Jacek Kuroń, Adam Michnik i Melchior Wańkowicz.",
+      "Galeria założona przez Mariana Bogusza istniała w latach 1956–1965 jako „Galeria Krzywego Koła”, w latach 1965–1987 jako „Galeria Sztuki Współczesnej”, a od 1987 jako „Galeria Promocyjna”.",
+      "Jazz Club Rynek działał w latach 1974–1983 i został reaktywowany w 1995 roku.",
+      "Od 1976 roku SDK prowadzi stałą działalność wydawniczą; od stycznia 1989 wydaje miesięcznik Krzywe Koło Literatury, a od stycznia 1990 kwartalnik EXIT."
+    ],
+    "ciekawostki": [
+      "W przyziemiu kamienicy w latach 60.–70. działała kawiarnia (winiarnia) Manekin, od 1963 roku Largaktil, którą opisywał Leopold Tyrmand.",
+      "Na przełomie lat 70. i 80. działał w SDK „Fan Club The Beatles”."
+    ],
+    "summary_en": "The Staromiejski Culture Centre occupies the Bornbach tenement at 2 Rynek Starego Miasta. Opened in 1953 during the first stage of the Trakt Starej Warszawy, it hosted the Klub Krzywego Koła, a 1950s–60s dissident discussion club, and a long-running literary and jazz scene.",
+    "ludzie": [
+      {"kto": "Jacek Kuroń", "rola": "członek Klubu Krzywego Koła", "wiki": null},
+      {"kto": "Adam Michnik", "rola": "członek Klubu Krzywego Koła", "wiki": null},
+      {"kto": "Marian Bogusz", "rola": "założyciel galerii w SDK", "wiki": null},
+      {"kto": "Leopold Tyrmand", "rola": "pisarz, opisywał kawiarnię Manekin w kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Galeria Krzywego Koła (1956–1965)", "Galeria Sztuki Współczesnej (1965–1987)"],
+    "zrodla": [{"tytul": "Wikipedia: Staromiejski Dom Kultury", "url": "https://pl.wikipedia.org/wiki/Staromiejski_Dom_Kultury"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stary-cmentarz-ewangelicki",
+    "nazwa": "Stary cmentarz ewangelicki w Warszawie",
+    "name_en": "Old Protestant Cemetery in Warsaw",
+    "typ": "cmentarz",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "między dawną ul. Leszno (obecnie al. „Solidarności”), Mylną i Karmelicką",
+    "lat": 52.243722222,
+    "lon": 20.996416666,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–koniec XVIII w.",
+    "istnieje": false,
+    "fakty": [
+      "Pierwsza wzmianka o cmentarzu pochodzi z lat 1624–1625, gdy Warszawę nawiedziła ogromna epidemia i teren za Arsenałem stał się cmentarzem epidemicznym.",
+      "Cmentarz znajdował się między dawną ul. Leszno (obecnie al. „Solidarności”), Mylną a Karmelicką, poza linią okopów i poza jurydyką Leszno.",
+      "Na początku lat 80. XVIII wieku luteranie wyrugowali kalwinów z zarządu cmentarzem; spór o podział trwał aż do 1807 roku.",
+      "10 sierpnia 1807 roku Trybunał Rewizyjny w Berlinie przydzielił luteranom 2/3, a kalwinom 1/3 terenu.",
+      "W XIX wieku szczątki pochowanych przeniesiono na cmentarz ewangelicko-augsburski i ewangelicko-reformowany przy ul. Młynarskiej.",
+      "Do 1955 roku zachował się nagrobek z 1771 roku Jerzego Henryka Bützau, hajduka Stanisława Augusta Poniatowskiego, zabitego podczas porwania króla przez konfederatów barskich."
+    ],
+    "ciekawostki": [
+      "Pozostałością cmentarza jest budynek Warszawskiej Opery Kameralnej."
+    ],
+    "summary_en": "The Old Protestant Cemetery stood between Leszno, Mylna and Karmelicka streets from the 17th to the late 18th century. It began as an epidemic burial ground, and after the closure its land was divided between Lutherans and Calvinists by a Berlin court in 1807. Today the Warsaw Chamber Opera stands on part of the site.",
+    "ludzie": [
+      {"kto": "Jerzy Henryk Bützau", "rola": "hajduk Stanisława Augusta, zabity podczas porwania króla przez konfederatów barskich; jego nagrobek z 1771 roku zachował się do 1955", "wiki": null}
+    ],
+    "dawne_nazwy": ["Cmentarz przy dawnej ul. Leszno"],
+    "zrodla": [{"tytul": "Wikipedia: Stary cmentarz ewangelicki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Stary_cmentarz_ewangelicki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Lokalizacja: środek odcinka z nagłówka, cmentarz zamknięty w XVIII w. Dzisiejszy adres nieustalony w tekście."
+  }
+]

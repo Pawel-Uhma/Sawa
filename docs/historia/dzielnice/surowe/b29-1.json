@@ -1,0 +1,390 @@
+[
+  {
+    "id": "palac-saski",
+    "nazwa": "Pałac Saski",
+    "name_en": "Saxon Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Józefa Piłsudskiego",
+    "adres_historyczny": null,
+    "lat": 52.241111,
+    "lon": 21.011389,
+    "lokalizacja": "dokladna",
+    "okres": "1661–1944",
+    "istnieje": false,
+    "fakty": [
+      "Pałac był własnością królów Augusta II i Augusta III (1713–1763).",
+      "Był siedzibą Liceum Warszawskiego (1804–1817) oraz rosyjskiego Dowództwa III Warszawskiego Okręgu Wojskowego (1864–1915).",
+      "Mieścił Sztab Generalny Wojska Polskiego (1918–1939) i Biuro Szyfrów (1930–1937).",
+      "W 1733 pałac, po nieudanym szturmie, został zmuszony do kapitulacji przez polski oddział strażnika polnego Bazylego Zagwojskiego.",
+      "17 kwietnia 1794 podczas insurekcji warszawskiej pod pałacem stoczono jedną z dwóch największych bitew w stolicy.",
+      "Pałac został wysadzony przez okupacyjne wojska niemieckie w grudniu 1944 w ramach burzenia Warszawy.",
+      "W 2021 podjęto decyzję o odbudowie pałacu."
+    ],
+    "ciekawostki": [
+      "W 1812 na drugim piętrze prawego skrzydła, w mieszkaniu służbowym, zamieszkali Mikołaj i Justyna Chopinowie wraz z dziećmi; urodziła się tam ich córka Emilia. Chopinowie mieszkali w pałacu do 1817."
+    ],
+    "summary_en": "The Saxon Palace stood on today's Piłsudski Square. Built by the Morsztyn family and rebuilt for August II in the early 18th century, it later housed the Warsaw Lyceum and military offices. It was blown up by German troops in December 1944.",
+    "ludzie": [
+      {"kto": "August II Mocny", "rola": "elektor saski i król Polski, który w 1713 kupił pałac i rozpoczął jego przebudowę", "wiki": null},
+      {"kto": "Carl Friedrich Pöppelmann", "rola": "współkierownik przebudowy pałacu", "wiki": null},
+      {"kto": "Bazyli Zagwojski", "rola": "strażnik polny, który w 1733 zmusił pałac do kapitulacji", "wiki": null},
+      {"kto": "Mikołaj Chopin", "rola": "nauczyciel języka francuskiego w Liceum Warszawskim, mieszkał w pałacu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Saski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Saski_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urwany w sekcji o przebudowie z 1837 roku; fakty z tej części pominięte."
+  },
+  {
+    "id": "palac-sierakowskiego",
+    "nazwa": "Pałac Sierakowskiego",
+    "name_en": "Sierakowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Konwiktorska 3/5",
+    "adres_historyczny": null,
+    "lat": 52.25513889,
+    "lon": 21.00486111,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek pałacu wzniesiono ok. 1780 roku dla kasztelana płockiego Maksymiliana Sierakowskiego.",
+      "W 1818 pałac kupiła Komisja Rządowa Wojny na mieszkania dla wojskowych; w latach 1819–1820 zaadaptowano budynki na koszary.",
+      "Po powstaniu listopadowym koszary zajęło wojsko rosyjskie, nieprzerwanie aż do 1915 roku, z przerwą w latach 1852–1861.",
+      "Od 1919 roku stacjonował tu 1 Dywizjon Samochodowy; w 1933 roku utworzono 3 Batalion Czołgów i Samochodów Pancernych.",
+      "W 1931 roku w koszarach zorganizowano Doświadczalną Grupę Pancerno-Motorową.",
+      "Pałac ucierpiał w 1939 roku; w 1944 w czasie powstania warszawskiego zniszczono resztę zabudowań. Odbudowano go w latach 1951–1954.",
+      "W 1965 roku pałac wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Sierakowski Palace on Konwiktorska Street was built around 1780 and turned into barracks in 1819–1820. It served the Russian army and later the Polish armoured units, was destroyed in 1939 and 1944, and was rebuilt in 1951–1954. Today it houses a district social welfare centre.",
+    "ludzie": [
+      {"kto": "Maksymilian Sierakowski", "rola": "kasztelan płocki, dla którego wzniesiono pałac", "wiki": null},
+      {"kto": "Barbara Andrzejewska", "rola": "autorka projektu odbudowy pałacu w latach 1951–1954", "wiki": null}
+    ],
+    "dawne_nazwy": ["koszary sierakowskie"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Sierakowskiego", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Sierakowskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że budowę kierował Jakub Kubicki lub Wilhelm Henryk Minter (niepewne); w budynku mieści się Centrum Pomocy Społecznej Dzielnicy Śródmieście."
+  },
+  {
+    "id": "palac-sobanskich",
+    "nazwa": "Pałac Sobańskich",
+    "name_en": "Sobański Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 13",
+    "adres_historyczny": null,
+    "lat": 52.221361,
+    "lon": 21.023972,
+    "lokalizacja": "dokladna",
+    "okres": "1852–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1852–1854 na miejscu obecnego pałacu wzniesiono renesansową willę według projektu Juliana Ankiewicza.",
+      "W 1876 roku wzniesiono nowy budynek według projektu Leandra Marconiego dzięki właścicielce, hrabinie Emilii Łubieńskiej.",
+      "W latach 30. XX wieku rozparcelowano ogród za pałacem i wytyczono w jego miejscu aleję Przyjaciół.",
+      "W 1965 roku pałac i dwa pawilony wpisano do rejestru zabytków, a w 1999 roku także ogród.",
+      "Na początku lat 90. XX wieku była tu siedziba Komitetu Obywatelskiego, później Instytutu Lecha Wałęsy.",
+      "Obecnie mieści się tu m.in. Klub Polskiej Rady Biznesu."
+    ],
+    "ciekawostki": [
+      "W początkowych scenach filmu Znachor (1982, reż. Jerzy Hoffman) pałac pełnił funkcję rezydencji profesora Rafała Wilczura.",
+      "Przy pałacu rośnie dąb szypułkowy będący pomnikiem przyrody."
+    ],
+    "summary_en": "The Sobański Palace on Aleje Ujazdowskie began as a Renaissance-style villa in 1852–1854 and was rebuilt as a neo-Renaissance palace in 1876. It was the seat of the Civic Committee and later the Lech Wałęsa Institute in the early 1990s.",
+    "ludzie": [
+      {"kto": "Julian Ankiewicz", "rola": "autor projektu willi z lat 1852–1854", "wiki": null},
+      {"kto": "Leander Marconi", "rola": "architekt budynku z 1876 roku", "wiki": null},
+      {"kto": "Emilia Łubieńska", "rola": "hrabina, właścicielka, dzięki której powstał budynek z 1876", "wiki": null},
+      {"kto": "Karol Jaroszyński", "rola": "rezydent pałacu w latach 1921–1923", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Sobańskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Soba%C5%84skich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-stanislawa-wolowskiego",
+    "nazwa": "Pałac Stanisława Wołowskiego",
+    "name_en": "Stanisław Wołowski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Foksal 3/5",
+    "adres_historyczny": null,
+    "lat": 52.23416667,
+    "lon": 21.02333333,
+    "lokalizacja": "dokladna",
+    "okres": "1878–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac wzniesiono w 1878 według projektu Bronisława Brodzic Żochowskiego dla bankiera i kupca Stanisława Wołowskiego.",
+      "W 1900 roku przeszedł w ręce księżnej Marii Radziwiłłowej, która go rozbudowała.",
+      "W latach 1922–1939 wynajmowały go m.in. poselstwo amerykańskie (1922–1930) i norweskie (1930–1939).",
+      "W 1934 roku w bramie, obecnie nieistniejącej, zastrzelono ministra spraw wewnętrznych Bronisława Pierackiego.",
+      "W czasie powstania warszawskiego w pałacu działał szpital powstańczy; budynek zniszczono w ponad 70%.",
+      "W latach 1947–1951 odbudowano i znacznie przebudowano obiekt; w styczniu 1952 otwarto tu Dom Dziennikarza, któremu w tym samym roku nadano imię Juliana Bruna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Built in 1878 for the banker Stanisław Wołowski on Foksal Street, the palace was rented to foreign legations in the 1920s and 1930s. It was badly damaged in 1944 and rebuilt after the war. Today it houses journalists' associations and a press centre.",
+    "ludzie": [
+      {"kto": "Stanisław Wołowski", "rola": "bankier i kupiec, inwestor budynku z 1878", "wiki": null},
+      {"kto": "Bronisław Pieracki", "rola": "minister spraw wewnętrznych, zastrzelony w 1934 w bramie pałacu", "wiki": null},
+      {"kto": "Julian Brun", "rola": "patron Domu Dziennikarza od 1952", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Stanisława Wołowskiego", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Stanis%C5%82awa_Wo%C5%82owskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-staszica",
+    "nazwa": "Pałac Staszica",
+    "name_en": "Staszic Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "u zbiegu ul. Krakowskie Przedmieście i Nowy Świat",
+    "adres_historyczny": null,
+    "lat": 52.2375,
+    "lon": 21.018055555,
+    "lokalizacja": "dokladna",
+    "okres": "1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczny budynek wzniesiono w latach 1820–1823 z inicjatywy Stanisława Staszica według projektu Antonia Corazziego dla Królewskiego Towarzystwa Przyjaciół Nauk.",
+      "Powstał w miejscu zburzonego w 1818 roku kościoła dominikanów obserwantów.",
+      "11 maja 1830 roku Julian Ursyn Niemcewicz odsłonił przed wejściem pomnik Mikołaja Kopernika dłuta Bertela Thorvaldsena.",
+      "W 1890 zdecydowano umieścić w pałacu cerkiew św. Tatiany Rzymianki; budynek przebudowano w latach 1892–1895 w stylu bizantyjsko-rosyjskim.",
+      "W latach 1924–1926 na podstawie projektu Mariana Lalewicza przywrócono budynkowi klasycystyczny wygląd.",
+      "Po zniszczeniach w 1944 pałac odbudowano w latach 1946–1950 pod kierunkiem Piotra Biegańskiego."
+    ],
+    "ciekawostki": [
+      "22 sierpnia 1897 roku przebudowany gmach odwiedził car Mikołaj II z żoną Aleksandrą."
+    ],
+    "summary_en": "The Staszic Palace at the corner of Krakowskie Przedmieście and Nowy Świat was designed by Antonio Corazzi for the Royal Society of Friends of Learning and built in 1820–1823. It was converted into an Orthodox church complex in 1890s and restored to its classicist look in the 1920s. It is now the seat of the Polish Academy of Sciences institutes.",
+    "ludzie": [
+      {"kto": "Stanisław Staszic", "rola": "inicjator budowy pałacu", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "autor projektu z lat 1820–1823", "wiki": null},
+      {"kto": "Julian Ursyn Niemcewicz", "rola": "prezes Towarzystwa, który odsłonił pomnik Kopernika w 1830", "wiki": null},
+      {"kto": "Władimir Pokrowski", "rola": "rosyjski architekt przebudowy w latach 1892–1895", "wiki": null},
+      {"kto": "Piotr Biegański", "rola": "kierował odbudową po 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Staszica w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Staszica_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje w leadzie odbudowę 1947–1950, w treści 1946–1950; w rekordzie przyjęto wersję z treści."
+  },
+  {
+    "id": "palac-symonowiczow",
+    "nazwa": "Pałac Symonowiczów",
+    "name_en": "Symonowicz Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Solec 37",
+    "adres_historyczny": null,
+    "lat": 52.22772384,
+    "lon": 21.0414201,
+    "lokalizacja": "dokladna",
+    "okres": "przed 1762–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał przed 1762 rokiem; zbudowano go w stylu barokowym według projektu francuskiego architekta Pierre’a Ricaud de Tirregaile.",
+      "W 1770 roku jego właścicielem został nobilitowany w 1768 roku Ormianin baron Simon de Symonowicz.",
+      "W XIX wieku często zmieniali się właściciele, przez co pałac znacznie podupadł.",
+      "Podczas powstania warszawskiego w jego rejonie toczyły się ciężkie walki, a pałac służył jako szpital powstańczy.",
+      "Zniszczony podczas wojny, został odbudowany w 1951 roku.",
+      "Obecnie mieści się w nim przedszkole nr 122."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Symonowicz Palace on Solec Street is a Baroque building that existed before 1762. It was owned by the Armenian baron Simon de Symonowicz from 1770. It served as an insurgent hospital in 1944, was rebuilt in 1951, and now houses a kindergarten.",
+    "ludzie": [
+      {"kto": "Simon de Symonowicz", "rola": "ormiański baron, właściciel od 1770 roku", "wiki": null},
+      {"kto": "Pierre Ricaud de Tirregaile", "rola": "francuski architekt, autor barokowego projektu", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Szymonowiczów", "dom Szymonowicza"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Symonowiczów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Symonowicz%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dokładna data budowy nieznana."
+  },
+  {
+    "id": "palac-szaniawskich",
+    "nazwa": "Pałac Szaniawskich",
+    "name_en": "Szaniawski Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 8",
+    "adres_historyczny": "hipoteczny nr 481",
+    "lat": 52.24697222,
+    "lon": 21.01091667,
+    "lokalizacja": "dokladna",
+    "okres": "początek XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na początku XVIII wieku na posesji pod numerem hipotecznym 481, należącej do podkomorzego liwskiego Szaniawskiego, wybudowano pałac.",
+      "Przebudowany w 1782 roku według projektu Stanisława Zawadzkiego.",
+      "W 1812 roku Ostrowscy zlecili architektowi Fryderykowi Albertowi Lesselowi przebudowę w stylu klasycystycznym.",
+      "W latach 1832–1897 w pałacu mieściła się księgarnia i skład nut Gustawa Sennewalda.",
+      "Podczas II wojny światowej pałac został zniszczony; odbudowano go w 1950 według projektu Borysa Zinserlinga.",
+      "W 1965 roku pałac wpisano do rejestru zabytków.",
+      "W 2022 roku w pałacu, połączonym z sąsiednim pałacem Branickich, otwarto 5-gwiazdkowy hotel Verte z 94 pokojami, pierwszy w Polsce pod marką Autograph Collection."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Szaniawski Palace on Miodowa Street was built in the early 18th century and remodelled in the classicist style in 1812. It was destroyed in World War II and rebuilt in 1950. Since 2022 it has housed the Verte hotel, connected to the neighbouring Branicki Palace.",
+    "ludzie": [
+      {"kto": "Fryderyk Albert Lessel", "rola": "architekt przebudowy z 1812 roku", "wiki": null},
+      {"kto": "Stanisław Zawadzki", "rola": "autor przebudowy z 1782 roku", "wiki": null},
+      {"kto": "Gustaw Sennewald", "rola": "prowadził księgarnię i skład nut w pałacu w latach 1832–1897", "wiki": null},
+      {"kto": "Borys Zinserling", "rola": "autor projektu odbudowy z 1950 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Szaniawskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Szaniawskich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-szlenkierow",
+    "nazwa": "Pałac Szlenkierów",
+    "name_en": "Szlenkier Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Jana Henryka Dąbrowskiego 6",
+    "adres_historyczny": "plac Zielony, posesja hip. nr 5294",
+    "lat": 52.23723,
+    "lon": 21.010053,
+    "lokalizacja": "dokladna",
+    "okres": "1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Karol Jan Szlenkier około 1880 roku chciał wybudować siedzibę w centrum miasta, na placu Zielonym (dawnym rynku jurydyki Bielino).",
+      "Konkurs na projekt ogłoszono 1 września 1880 roku; wyniki ogłoszono 1 stycznia 1881 roku.",
+      "Pierwszą nagrodę zdobył projekt Józefa Piusa Dziekońskiego, Władysława Marconiego i Zygmunta Twardowskiego, a drugą projekt Adama Oczkowskiego.",
+      "Karol Jan Szlenkier wybrał ostatecznie projekt Witolda Lanciego.",
+      "Wpisany do rejestru zabytków jako pałac Schlenkera; data budowy 1890, nr rej.: 657 z 1.07.1965.",
+      "Pałac zajmuje obecnie Ambasada Republiki Włoskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Szlenkier Palace on Plac Dąbrowskiego was commissioned by Karol Jan Szlenkier, who held a design competition in 1880 and chose Witold Lanci's project. It is listed as a historic monument and is now the seat of the Italian Embassy.",
+    "ludzie": [
+      {"kto": "Karol Jan Szlenkier", "rola": "inwestor, który ostatecznie wybrał projekt Witolda Lanciego", "wiki": null},
+      {"kto": "Witold Lanci", "rola": "autor projektu realizowanego przy placu Zielonym", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Schlenkera"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Szlenkierów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Szlenkier%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rejestr podaje datę budowy 1890; artykuł w paczce nie podaje daty ukończenia. Okres w rekordzie przyjęty na podstawie konkursu z 1880."
+  },
+  {
+    "id": "palac-tarnowskich",
+    "nazwa": "Pałac Tarnowskich",
+    "name_en": "Tarnowski Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 42/44 (róg ul. Karowej)",
+    "adres_historyczny": null,
+    "lat": 52.24222222,
+    "lon": 21.01611111,
+    "lokalizacja": "dokladna",
+    "okres": "1655–1898",
+    "istnieje": false,
+    "fakty": [
+      "Pałac wzniesiono w 1655 roku dla starosty tczewskiego Franciszka Andraulta.",
+      "Od 1802 roku był własnością Tarnowskich.",
+      "W 1809 roku, od bitwy raszyńskiej do końca maja, Warszawę okupowały wojska austriackie; pałac zajęto na kwaterę gen. Maiersfelda.",
+      "W nocy z 31 maja na 1 czerwca 1809 roku władzę nad miastem przekazano mjr. Józefowi Krasińskiemu.",
+      "W czasie powstania listopadowego mieszkanie w pałacu przyjął wódz naczelny gen. Jan Skrzynecki.",
+      "W 1897 roku w pałacowych ogrodach powstała Panorama, a w 1898 roku pałac rozebrano pod budowę Hotelu Bristol."
+    ],
+    "ciekawostki": [
+      "Dekoracja Sali z pałacu Tarnowskich była eksponowana w Muzeum Narodowym, a po odbudowie Zamku Królewskiego jest prezentowana na 1. piętrze w południowym skrzydle Zamku.",
+      "Część dekoracji wnętrz i intarsjowany parkiet trafiły do Kamienicy pod Gigantami."
+    ],
+    "summary_en": "The Tarnowski Palace stood on the corner of Krakowskie Przedmieście and Karowa Street. Built in 1655, it was the headquarters of General Skrzynecki during the November Uprising and was demolished in 1898 to make way for the Hotel Bristol. Some of its interiors survive in museum collections.",
+    "ludzie": [
+      {"kto": "Franciszek Andrault", "rola": "starosta tczewski, pierwszy właściciel (wzniesienie w 1655)", "wiki": null},
+      {"kto": "Józef Krasiński", "rola": "major warszawskiej gwardii narodowej, któremu przekazano władzę nad miastem w 1809", "wiki": null},
+      {"kto": "Jan Skrzynecki", "rola": "wódz naczelny w czasie powstania listopadowego, mieszkał w pałacu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Tarnowskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Tarnowskich_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-teppera",
+    "nazwa": "Pałac Teppera",
+    "name_en": "Tepper Palace",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Miodowa 7",
+    "adres_historyczny": "ul. Miodowa 495",
+    "lat": 52.245833333,
+    "lon": 21.011666666,
+    "lokalizacja": "dokladna",
+    "okres": "1774–1948",
+    "istnieje": false,
+    "fakty": [
+      "Budynek wzniesiono w 1774 roku według projektu Efraima Schroegera w miejscu dawnego dworu Firlejów.",
+      "Właścicielem był Piotr Tepper, najbogatszy i najbardziej wpływowy bankier w okresie panowania Stanisława Augusta Poniatowskiego.",
+      "W 1807 roku odbył się w pałacu bal wydany przez Charles’a Talleyranda na cześć cesarza Napoleona I.",
+      "W latach 1856–1862 mieszkała tam Narcyza Żmichowska; w 1899 roku w pałacu urodził się Jan Lechoń.",
+      "Pałac spłonął podczas obrony Warszawy we wrześniu 1939 roku.",
+      "W 1948 roku mury rozebrano w związku z budową Trasy W-Z."
+    ],
+    "ciekawostki": [
+      "W czasie rozbiórki piwnic odnaleziono znaczne ilości wysokogatunkowych win i wódek zmagazynowanych przed wojną przez przedsiębiorstwo „Simon i Stecki”.",
+      "Pałac został uwieczniony na obrazie Bernarda Bellotta Ulica Miodowa w Warszawie z 1777 roku."
+    ],
+    "summary_en": "The Tepper Palace on Miodowa Street was built in 1774 for the banker Piotr Tepper. It burned in the defence of Warsaw in 1939 and was demolished in 1948 because it stood on the route of the W-Z Route tunnel.",
+    "ludzie": [
+      {"kto": "Piotr Tepper", "rola": "bankier, właściciel pałacu", "wiki": null},
+      {"kto": "Efraim Schroeger", "rola": "autor projektu z 1774 roku", "wiki": null},
+      {"kto": "Narcyza Żmichowska", "rola": "mieszkała w pałacu w latach 1856–1862", "wiki": null},
+      {"kto": "Jan Lechoń", "rola": "urodził się w pałacu w 1899 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Teppera w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Teppera_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "palac-tyszkiewiczow",
+    "nazwa": "Pałac Tyszkiewiczów",
+    "name_en": "Tyszkiewicz Palace",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 32",
+    "adres_historyczny": null,
+    "lat": 52.240555555,
+    "lon": 21.017222222,
+    "lokalizacja": "dokladna",
+    "okres": "1785–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę zaczęto w 1785 roku dla Ludwika Tyszkiewicza, hetmana polnego litewskiego, i jego żony Konstancji Poniatowskiej.",
+      "Budynek zaprojektował Stanisław Zawadzki; wnętrza, sztukaterie i wyposażenie projektował Jan Chrystian Kamsetzer, który nadzorował wykończenie do 1792 roku.",
+      "W 1820 roku pałac stał się siedzibą i wyłączną własnością Anny z Tyszkiewiczów.",
+      "W 1840 roku pałac zakupił od matki syn z pierwszego małżeństwa, August Potocki; Potoccy pozostawali właścicielami do 1923 roku.",
+      "W 1923 roku pałac zakupił Bank Gospodarstwa Krajowego; ulokowano tu Polską Akademię Literatury oraz zbiory starodruków Biblioteki Narodowej.",
+      "W czasie powstania warszawskiego pałac został celowo zbombardowany przez wojska niemieckie pociskami zapalającymi.",
+      "Po wojnie pałac włączono do głównego kampusu Uniwersytetu Warszawskiego i odbudowano w latach 1949–1956 według projektu Jana Dąbrowskiego."
+    ],
+    "ciekawostki": [
+      "Atlanty podtrzymujące kamienny balkon od strony ulicy wykuł w 1787 roku Andrzej Le Brun.",
+      "Na ścianach i sklepieniu dawnej łazienki na I piętrze wciąż widać różowe stiuki i resztki malowideł rodzajowych w stylu rzymskim."
+    ],
+    "summary_en": "The Tyszkiewicz Palace on Krakowskie Przedmieście was begun in 1785 for hetman Ludwik Tyszkiewicz. It was owned by the Potocki family until 1923, was bombed in 1944, and after the war was rebuilt as part of the University of Warsaw campus.",
+    "ludzie": [
+      {"kto": "Ludwik Tyszkiewicz", "rola": "hetman polny litewski, fundator pałacu", "wiki": null},
+      {"kto": "Stanisław Zawadzki", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "projektant wnętrz, sztukaterii i wyposażenia", "wiki": null},
+      {"kto": "August Potocki", "rola": "kupił pałac w 1840 roku", "wiki": null},
+      {"kto": "Jan Dąbrowski", "rola": "autor projektu odbudowy z lat 1949–1956", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Tyszkiewiczów-Potockich"],
+    "zrodla": [{"tytul": "Wikipedia: Pałac Tyszkiewiczów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pa%C5%82ac_Tyszkiewicz%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

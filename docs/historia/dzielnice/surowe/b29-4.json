@@ -1,0 +1,66 @@
+[
+  {
+    "id": "politechnika-stacja-metra",
+    "nazwa": "Politechnika (stacja metra)",
+    "name_en": "Politechnika metro station",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Waryńskiego, między al. Armii Ludowej a ul. Nowowiejską",
+    "adres_historyczny": null,
+    "lat": 52.218333333,
+    "lon": 21.015277777,
+    "lokalizacja": "dokladna",
+    "okres": "1982–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M1 metra została uruchomiona 7 kwietnia 1995 roku.",
+      "Według harmonogramu z 1982 roku stacja miała zostać uruchomiona w 1990 roku jako przystanek końcowy I etapu linii; w 1985 roku rozpoczęto drążenie tuneli do stacji.",
+      "Termin ukończenia był kilkukrotnie przekładany; w 1993 roku określono go na koniec 1994, a odbiory techniczne przedłużyły się na początek 1995 roku.",
+      "Tunel B11 był pierwszym tunelem na całej linii drążonym metodą tarczową; tarczę uruchomiono 11 stycznia 1985 roku.",
+      "3 grudnia 1987 roku uruchomiono maszynę drążącą tunel zachodni pod Trasą Łazienkowską.",
+      "Hala peronowa powstała metodą stropową (mediolańską).",
+      "16 grudnia 1983 roku uchwałą Rady Narodowej m.st. Warszawy planowanej stacji nadano oznaczenie A11 oraz nazwę Politechnika.",
+      "Projekt stacji Politechnika z koncepcji M′90 (1990) nie został ostatecznie zrealizowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Politechnika is a station on Warsaw Metro Line M1, opened on 7 April 1995. It was planned in 1982 under the name Wawelska for the first stage of the line. Its tunnels were bored with shield machines under the Łazienkowska Route.",
+    "ludzie": [
+      {"kto": "Jasna Strzałkowska-Ryszka", "rola": "główna projektantka stacji i autorka koncepcji M′83 i M′90", "wiki": null},
+      {"kto": "Jerzy Blancard", "rola": "autor architektury obiektu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wawelska"],
+    "zrodla": [{"tytul": "Wikipedia: Politechnika (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Politechnika_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst w paczce urwany przy opisie wnętrz stacji; fakty z tej części pominięte."
+  },
+  {
+    "id": "polska-synagoga",
+    "nazwa": "Polska Synagoga w Warszawie",
+    "name_en": "Polish Synagogue, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nalewki (nie podano numeru)",
+    "adres_historyczny": "ul. Nalewki",
+    "lat": 52.2499509,
+    "lon": 20.996818,
+    "lokalizacja": "dokladna",
+    "okres": "1852–II wojna światowa (1939–1945)",
+    "istnieje": false,
+    "fakty": [
+      "Synagoga została założona w 1852 roku z inicjatywy Zeliga Natansona.",
+      "Uroczyste otwarcie nastąpiło 10 kwietnia; kazanie wygłosił rabin Izaak Kramsztyk.",
+      "Służyła Żydom postępowym, głównie bogaczom, zaawansowanym w asymilacji i integracji z ludnością polską; kazania głoszono w języku polskim.",
+      "Podczas II wojny światowej Niemcy zburzyli synagogę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Polish Synagogue on Nalewki Street was founded in 1852 by Zelig Natanson for assimilated Jews. Sermons were given in Polish. The Germans demolished it during World War II.",
+    "ludzie": [
+      {"kto": "Zelig Natanson", "rola": "inicjator założenia synagogi w 1852 roku", "wiki": null},
+      {"kto": "Izaak Kramsztyk", "rola": "rabin, który wygłosił kazanie na otwarciu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Polska Synagoga w Warszawie", "url": "https://pl.wikipedia.org/wiki/Polska_Synagoga_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki; rok otwarcia nie jest podany wprost (założona w 1852)."
+  }
+]

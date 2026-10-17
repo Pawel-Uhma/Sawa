@@ -1,0 +1,386 @@
+[
+  {
+    "id": "kosciol-swietej-trojcy-srodmiescie",
+    "nazwa": "Kościół Świętej Trójcy w Warszawie (Śródmieście)",
+    "name_en": "Holy Trinity Evangelical Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Stanisława Małachowskiego 1",
+    "adres_historyczny": null,
+    "lat": 52.23861111,
+    "lon": 21.01166667,
+    "lokalizacja": "dokladna",
+    "okres": "1777–dziś",
+    "istnieje": true,
+    "fakty": [
+      "15 stycznia 1777 roku ewangelicy otrzymali przywilej królewski zezwalający na budowę kościoła.",
+      "Spośród trzech projektów (Dominika Merliniego, Jana Chrystiana Kamsetzera i Szymona Zuga) król Stanisław August Poniatowski wybrał projekt Zuga.",
+      "Inspiracją dla architekta był rzymski Panteon oraz drezdeński kościół Najświętszej Marii Panny.",
+      "Budowę rozpoczęto 24 kwietnia 1777 roku; 30 grudnia 1781 roku nastąpiło uroczyste otwarcie i poświęcenie świątyni.",
+      "Budynek miał wysokość 58 m, a średnica rotundy wynosiła 33,4 m.",
+      "W 1825 roku w kościele odbył się koncert Fryderyka Chopina dla cara Aleksandra I; Chopin zagrał na eolomelodikonie.",
+      "W czasie obrony Warszawy 16 września 1939 roku kościół został zbombardowany; po wojnie zniszczenia oszacowano na ok. 70%.",
+      "Rekonstrukcja odbywała się w latach 1949–1957; 18 listopada 1956 roku odbyło się pierwsze nabożeństwo. W 2019 roku zakończył się remont generalny."
+    ],
+    "ciekawostki": [
+      "Krzyż kopuły kościoła przyjęto za punkt główny sieci triangulacyjnej utworzonej dla potrzeb projektowania kanalizacji i wodociągów przez Williama i Williama Heerleina Lindleyów.",
+      "W 1857 roku warszawski fotograf Karol Beyer wykonał serię 12 fotografii pokrywającą dookólny widok z kopuły kościoła."
+    ],
+    "summary_en": "The Evangelical Holy Trinity Church on plac Stanisława Małachowskiego, a rotunda designed by Szymon Zug after the Pantheon in Rome. Built in 1777–1781, it was about 70% destroyed in 1939–1945 and rebuilt in 1949–1957.",
+    "ludzie": [
+      {"kto": "Szymon Zug", "rola": "architekt; jego projekt wybrał król Stanisław August Poniatowski", "wiki": null},
+      {"kto": "Dominik Merlini", "rola": "autor jednego z trzech projektów konkursowych", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "autor jednego z trzech projektów konkursowych", "wiki": null},
+      {"kto": "Stanisław August Poniatowski", "rola": "król, wybrał projekt Zuga", "wiki": null},
+      {"kto": "Fryderyk Chopin", "rola": "koncert w kościele w 1825 roku", "wiki": null},
+      {"kto": "Teodor Burschego", "rola": "architekt planów odbudowy po 1945 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Świętej Trójcy w Warszawie (Śródmieście)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Awi%C4%99tej_Tr%C3%B3jcy_w_Warszawie_%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Początek artykułu (ok. 1500 linii pliku) znajduje się w części 3; rekord dokończony tutaj."
+  },
+  {
+    "id": "kosciol-swietych-apostolow-piotra-i-pawla",
+    "nazwa": "Kościół Świętych Apostołów Piotra i Pawła w Warszawie",
+    "name_en": "Church of Saints Peter and Paul in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Wspólna",
+    "adres_historyczny": null,
+    "lat": 52.2265,
+    "lon": 21.0072,
+    "lokalizacja": "dokladna",
+    "okres": "1883–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy kościół pod tym wezwaniem powstał z funduszy Tekli Rapackiej na terenach dawnego cmentarza Świętokrzyskiego.",
+      "Budowę rozpoczęto w marcu 1883 roku, a ukończono w czerwcu 1886 roku.",
+      "Kościół zbudowano w stylu romańskim z cegły, bez tynku, w kształcie krzyża łacińskiego; na przecięciu ramion wznosiła się kopuła.",
+      "W wielkim ołtarzu, zbudowanym przez Gustawa Wernera kosztem Marii hrabiny Przeździeckiej, znajdowały się obrazy mozaikowe św. Piotra i Pawła oraz św. Leona X, sprowadzone z Wenecji.",
+      "W 1939 roku uległ zniszczeniu dach kościoła i częściowo sklepienie; w 1944 roku po upadku powstania warszawskiego niemieckie oddziały zniszczyły kościół, detonując ładunki pod posadzką.",
+      "7 września 1946 roku arcybiskup Antoni Szlagowski poświęcił i położył „pierwszą cegłę” na fundamentach nowego kościoła.",
+      "Prace zakończono 17 listopada 1957 roku; 4 października 1979 roku kard. Stefan Wyszyński dokonał konsekracji świątyni."
+    ],
+    "ciekawostki": [
+      "Projektantem nowego kościoła był architekt Stanisław Marzyński, profesor Politechniki Warszawskiej, znany m.in. z odbudowy archikatedry św. Jana."
+    ],
+    "summary_en": "The Church of Saints Peter and Paul on ul. Wspólna, built in 1883–1886 in Romanesque Revival style. Destroyed in 1944, it was rebuilt from 1945 to 1957 and consecrated in 1979.",
+    "ludzie": [
+      {"kto": "Tekla Rapacka", "rola": "ofiarodawczyni funduszy na pierwszy kościół", "wiki": null},
+      {"kto": "Wincenty Popiel", "rola": "arcybiskup warszawski, dokonał konsekracji aktu", "wiki": null},
+      {"kto": "Edward Cichocki", "rola": "budowniczy pierwszego kościoła", "wiki": null},
+      {"kto": "Józef Dziekoński", "rola": "współudział w pracach budowlanych", "wiki": null},
+      {"kto": "Gustaw Werner", "rola": "wykonawca wielkiego ołtarza", "wiki": null},
+      {"kto": "Antoni Szlagowski", "rola": "arcybiskup, położył pierwszą cegłę w 1946", "wiki": null},
+      {"kto": "Stanisław Marzyński", "rola": "projektant nowego kościoła po wojnie", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "prymas, konsekrował świątynię w 1979", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół Świętych Apostołów Piotra i Pawła w Warszawie (Śródmieście)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Awi%C4%99tych_Aposto%C5%82%C3%B3w_Piotra_i_Paw%C5%82a_w_Warszawie_%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł pisze 'Wincety Popiel' (literówka); w rekordzie zapisano Wincenty."
+  },
+  {
+    "id": "kosciol-sw-aleksandra",
+    "nazwa": "Kościół św. Aleksandra w Warszawie",
+    "name_en": "St Alexander's Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Trzech Krzyży",
+    "adres_historyczny": null,
+    "lat": 52.228889,
+    "lon": 21.022222,
+    "lokalizacja": "dokladna",
+    "okres": "1818–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół został zbudowany w latach 1818–1826 w stylu klasycystycznym według projektu Piotra Aignera, w miejscu pięciu zabudowanych posesji między wylotami ulic Wspólnej i Żurawiej.",
+      "Wezwanie upamiętnia cara Aleksandra I, który wskrzesił Królestwo Polskie i nadał mu konstytucję.",
+      "Miasto chciało powitać cara bramą triumfalną na placu pod trzema krzyżami, ale car nakazał przeznaczyć zebrane fundusze na budowę kościoła.",
+      "Kamień węgielny położono 15 czerwca 1818 roku; w zastępstwie chorego namiestnika gen. Józefa Zajączka kamień wmurował minister Jan Węgliński.",
+      "18 czerwca 1826 roku świątynię poświęcił arcybiskup warszawski, prymas Królestwa Polskiego Wojciech Józef Skarszewski.",
+      "W latach 1841–1844 powstał dom parafialny; w nocy z 16 na 17 stycznia 1863 roku w mieszkaniu wikariusza zebrał się Komitet Centralny Narodowy, który ustalił termin wybuchu powstania styczniowego.",
+      "W latach 1886–1895 kościół przebudowano w stylu neorenesansowym według projektu Józefa Piusa Dziekońskiego.",
+      "W 1965 roku świątynia została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Według Bartoszewicza wnętrze miało cymboryjum i świeczniki z brązu roboty Norblina; kościół mógł objąć 900 ludzi."
+    ],
+    "summary_en": "A Neoclassical church on plac Trzech Krzyży, built in 1818–1826 to designs by Piotr Aigner and named after Tsar Alexander I. Its parish house was the meeting place of the Central National Committee before the January Uprising. The church was rebuilt after the Second World War.",
+    "ludzie": [
+      {"kto": "Piotr Aigner", "rola": "autor projektu kościoła", "wiki": null},
+      {"kto": "Jan Węgliński", "rola": "minister przychodu i skarbu, wmurował kamień węgielny", "wiki": null},
+      {"kto": "Józef Zajączek", "rola": "namiestnik Królestwa Polskiego (chory w 1818)", "wiki": null},
+      {"kto": "Wojciech Józef Skarszewski", "rola": "arcybiskup warszawski, poświęcił kościół w 1826", "wiki": null},
+      {"kto": "Jakub Falkowski", "rola": "pierwszy proboszcz parafii", "wiki": null},
+      {"kto": "Józef Lessel", "rola": "autor projektu domu parafialnego", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "budowniczy domu parafialnego (1841–1844)", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "autor przebudowy w stylu neorenesansowym", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Aleksandra w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Aleksandra_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku przebudowy po wojnie poza 1949–1952 wspomnianym przy zniszczeniu 1944 (opis wnętrza z 1818 roku pochodzi z cytatu Bartoszewicza)."
+  },
+  {
+    "id": "kosciol-sw-anny-krakowskie-przedmiescie",
+    "nazwa": "Kościół św. Anny w Warszawie",
+    "name_en": "St Anne's Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 68",
+    "adres_historyczny": null,
+    "lat": 52.246189468,
+    "lon": 21.014217961,
+    "lokalizacja": "dokladna",
+    "okres": "1454–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół powstał przy klasztorze bernardynów ufundowanym przez księżną Annę Fiodorównę, która w 1454 roku za pośrednictwem Jana Kapistrana sprowadziła do Warszawy pierwszych zakonników.",
+      "Budowę rozpoczęto w 1454 roku w stylu gotyckim; biskup poznański Andrzej Bniński wprowadził zakonników 4 grudnia 1454 roku.",
+      "Był to drugi, po krakowskim, klasztor bernardynów w Polsce.",
+      "W 1507 roku spaliły się kościół i klasztor; w 1515 roku kolejny pożar, spowodowany umyślnym podpaleniem, zniszczył prawie całe przedmieście wraz z kościołem.",
+      "Odbudowę zakończono w 1533 roku.",
+      "Bullą papieską Sykstusa V z 22 października 1586 roku wprowadzono do kościoła arcybractwo św. Anny.",
+      "W 1657 roku, według cytowanego świadectwa, kościół został podpalony przez zbrojnych wysłanych przez władzę miejską."
+    ],
+    "ciekawostki": [
+      "20 lutego 1578 roku przed kościołem św. Anny margrabia Jerzy Fryderyk von Ansbach złożył hołd lenny Stefanowi Batoremu."
+    ],
+    "summary_en": "St Anne's Church at Krakowskie Przedmieście 68, founded in 1454 beside a Bernardine monastery, the second of its kind in Poland. It was rebuilt after fires in 1507 and 1515, and today it is the main academic chaplaincy in Warsaw.",
+    "ludzie": [
+      {"kto": "Anna Fiodorówna", "rola": "księżna, fundatorka klasztoru bernardynów", "wiki": null},
+      {"kto": "Jan Kapistran", "rola": "sprowadził pierwszych zakonników", "wiki": null},
+      {"kto": "Andrzej Bniński", "rola": "biskup poznański, wprowadził zakonników w 1454", "wiki": null},
+      {"kto": "Anna Jagiellonka", "rola": "królowa, ufundowała dzwonnicę w 1578", "wiki": null},
+      {"kto": "Jan Lubrański", "rola": "biskup poznański, fundator chóru", "wiki": null},
+      {"kto": "Zygmunt III Waza", "rola": "król, dodał zakonnikom sól z żup warszawskich (1590)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kościół św. Anny w Warszawie (pobernardyński, akademicki)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Anny w Warszawie (Śródmieście)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Anny_w_Warszawie_%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł przytacza relację z 1657 roku w długim cytacie, w którym zdarzenia opisano z perspektywy autorów kroniki; rekord zawiera tylko wprost przytoczone fakty."
+  },
+  {
+    "id": "kosciol-sw-antoniego-z-padwy",
+    "nazwa": "Kościół św. Antoniego z Padwy w Warszawie",
+    "name_en": "St Anthony of Padua Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Senatorska 31/33",
+    "adres_historyczny": null,
+    "lat": 52.242778,
+    "lon": 21.0065,
+    "lokalizacja": "dokladna",
+    "okres": "1623–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy kościół powstał z fundacji króla Zygmunta III Wazy jako sanktuarium dziękczynne za zdobycie Smoleńska 13 czerwca 1611 roku.",
+      "Budowę świątyni zainicjowano w obecności monarchy 4 października 1623 roku; powierzono ją franciszkanom reformatom.",
+      "Nową świątynię konsekrował 13 sierpnia 1635 roku wrocławski biskup Jan Baltazar Liesch.",
+      "W 1657 roku, podczas potopu szwedzkiego, klasztor wraz z kościołem uległ całkowitemu zniszczeniu przez wojska Jerzego Rakoczego, sprzymierzonego ze Szwedami.",
+      "W latach 1668–1680, z fundacji kasztelana Stanisława Leszczyc-Skarszewskiego, wzniesiono pod kierunkiem Franciszka Czosłowicza nowy, murowany kościół, konsekrowany w 1679 roku przez biskupa poznańskiego Stefana Wierzbowskiego.",
+      "W 1866 roku erygowano parafię; w 1867 kościół przejęli księża diecezjalni w związku z kasatą zakonu franciszkanów.",
+      "W 1944 roku kościół został w znacznym stopniu zniszczony podczas walk powstańczych; świątynię odbudowano w latach 1950–1956 według projektu Karola Szymańskiego."
+    ],
+    "ciekawostki": [
+      "W 1766 roku w klasztorze miał ukrywać się Giacomo Casanova, poszukiwany po pojedynku przez stronnictwo Branickich.",
+      "W kaplicy Najświętszego Serca Jezusowego, w czasie powstania, znaleziono zwłoki 30 rozstrzelanych osób oraz kilkadziesiąt ciał oblanych benzyną i częściowo spalonych."
+    ],
+    "summary_en": "St Anthony of Padua Church at ul. Senatorska 31/33, begun in 1623 as a Franciscan thanksgiving church founded by King Zygmunt III Vasa. It was destroyed in 1657 and again in 1944, and rebuilt in 1950–1956.",
+    "ludzie": [
+      {"kto": "Zygmunt III Waza", "rola": "król, fundator sanktuarium dziękczynnego", "wiki": null},
+      {"kto": "Jan Baltazar Liesch", "rola": "biskup wrocławski, konsekrował świątynię w 1635", "wiki": null},
+      {"kto": "Stanisław Leszczyc-Skarszewski", "rola": "kasztelan, fundator kościoła z lat 1668–1680", "wiki": null},
+      {"kto": "Franciszek Czosłowicz", "rola": "kierował budową kościoła z lat 1668–1680", "wiki": null},
+      {"kto": "Stefan Wierzbowski", "rola": "biskup poznański, konsekrował kościół w 1679", "wiki": null},
+      {"kto": "Karol Szymański", "rola": "autor projektu odbudowy 1950–1956", "wiki": null},
+      {"kto": "Andrzej Romocki", "rola": "dowódca kompanii, która przebijała się przez kościół w 1944 (ps. Morro)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Antoniego z Padwy w Warszawie (Śródmieście)", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Antoniego_z_Padwy_w_Warszawie_%28%C5%9Ar%C3%B3dmie%C5%9Bcie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany pod koniec opisu odbudowy (ołtarz główny konsekrowany przez kard. Wyszyńskiego); pominięto zdanie niedokończone."
+  },
+  {
+    "id": "kosciol-sw-benona",
+    "nazwa": "Kościół św. Benona w Warszawie",
+    "name_en": "St Benno's Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piesza 1",
+    "adres_historyczny": null,
+    "lat": 52.253611,
+    "lon": 21.009444,
+    "lokalizacja": "dokladna",
+    "okres": "1669–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki kościoła w tym miejscu sięgają II połowy XVII wieku, kiedy Bractwo św. Benona podjęło inicjatywę zbudowania świątyni.",
+      "Członkowie bractwa, w większości murarze, uzyskali pozwolenie na budowę własnymi siłami; według Jana Stanisława Bystronia pracowali dobrowolnie po nocach, przy świetle pochodni.",
+      "Budowę zakończono w 1669 roku.",
+      "Pod koniec XVIII wieku kościół przejęli redemptoryści, co zbiegło się z przybyciem do Warszawy w 1787 roku św. Klemensa.",
+      "Na początku czerwca 1808 roku Fryderyk August podpisał dekret o usunięciu redemptorystów z Warszawy; 20 czerwca 1808 roku zostali oni wywiezieni.",
+      "W 1938 roku budynek odkupiła Maria Biernacka i przekazała go Warszawskiej Kurii Metropolitalnej, by przywrócić mu funkcje sakralne.",
+      "W czasie II wojny światowej kościół został zburzony; redemptoryści rozpoczęli odbudowę w 1956 roku, a wstępna odbudowa zakończyła się w 1958 roku poświęceniem przez kard. Stefana Wyszyńskiego.",
+      "W 1965 roku świątynia została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Od 1822 roku w budynku świątyni, przeznaczonym na użytek świecki, mieściły się zakłady produkcyjne.",
+      "W 1966 roku redemptoryści zwrócili się do Jerzego Nowosielskiego o projekt dekoracji wnętrza; projekt nie został zrealizowany, bo nie pasował do odtworzonej barokowej budowli."
+    ],
+    "summary_en": "St Benno's Church at ul. Piesza 1 in Nowe Miasto, built by a brotherhood of masons and completed in 1669. Taken over by the Redemptorists in the 1790s, it was destroyed in the Second World War and reopened in 1958.",
+    "ludzie": [
+      {"kto": "Jan Stanisław Bystroń", "rola": "historyk, opisał pracę członków bractwa po nocach", "wiki": null},
+      {"kto": "Klemens", "rola": "św. Klemens, przybył do Warszawy w 1787 roku (w tekście: św. Klemens)", "wiki": null},
+      {"kto": "Fryderyk August", "rola": "podpisał dekret o usunięciu redemptorystów w 1808", "wiki": null},
+      {"kto": "Maria Biernacka", "rola": "odkupiła budynek w 1938 i przekazała kurii", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał prymas, poświęcił odbudowany kościół w 1958", "wiki": null},
+      {"kto": "Jerzy Nowosielski", "rola": "artysta, zaproszony do zaprojektowania wnętrza w 1966", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół św. Benona (redemptorystów)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Benona w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Benona_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-sw-brata-alberta-i-sw-andrzeja",
+    "nazwa": "Kościół św. Brata Alberta i św. Andrzeja Apostoła w Warszawie",
+    "name_en": "Church of St Brother Albert and St Andrew the Apostle in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Senatorska 18B, pl. Teatralny",
+    "adres_historyczny": null,
+    "lat": 52.2441,
+    "lon": 21.0082,
+    "lokalizacja": "dokladna",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVII wieku jezuici wybudowali w miejscu obecnego kościoła niewielki kościół pw. Świętego Krzyża.",
+      "W XVIII wieku na jego miejscu wzniesiono kościół św. Andrzeja; obok powstał kompleks budynków zakonnych panien kanoniczek.",
+      "W 1819 roku świątynię przebudował Chrystian Piotr Aigner.",
+      "Podczas powstania warszawskiego w kościele zorganizowano szpital powstańczy.",
+      "Po II wojnie światowej w uszkodzonym budynku nabożeństwa odprawiano do 1953 roku, kiedy władze zadecydowały o rozbiórce świątyni.",
+      "Kościół został odbudowany w 1999 roku jako element zrekonstruowanej północnej pierzei placu Teatralnego; 13 czerwca 1999 roku poświęcił go papież Jan Paweł II.",
+      "23 marca 2008 roku w kaplicy Grobu Pańskiego podczas nabożeństwa w Niedzielę Wielkanocną doszło do pożaru; spłonęły dekoracje i kilka obrazów."
+    ],
+    "ciekawostki": [
+      "W głównym ołtarzu umieszczono obraz Sebastiana del Piomba z XVI wieku.",
+      "Drzwi kościoła wykonane są z przezroczystego szkła."
+    ],
+    "summary_en": "A Roman Catholic church at ul. Senatorska 18B on plac Teatralny. Its predecessors date from the 17th century; the building was demolished in 1953 and rebuilt in 1999, when Pope John Paul II consecrated it.",
+    "ludzie": [
+      {"kto": "Chrystian Piotr Aigner", "rola": "przebudował świątynię w 1819", "wiki": null},
+      {"kto": "Jan Paweł II", "rola": "poświęcił odbudowany kościół 13 czerwca 1999", "wiki": null},
+      {"kto": "Wojciech Pobudkowski", "rola": "ksiądz IBP, celebrans mszy trydenckich od końca 2017", "wiki": null},
+      {"kto": "Grzegorz Michalczyk", "rola": "rektor kościoła i krajowy duszpasterz środowisk twórczych", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół pw. Świętego Krzyża"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Brata Alberta i św. Andrzeja Apostoła w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Brata_Alberta_i_%C5%9Bw._Andrzeja_Aposto%C5%82a_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku budowy kościoła św. Andrzeja; 'XVII w.' oznacza najwcześniejszy wspomniany poprzednik."
+  },
+  {
+    "id": "kosciol-sw-ducha",
+    "nazwa": "Kościół św. Ducha w Warszawie",
+    "name_en": "Holy Spirit Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Długa 3",
+    "adres_historyczny": null,
+    "lat": 52.250483,
+    "lon": 21.009008,
+    "lokalizacja": "dokladna",
+    "okres": "XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy kościół został zbudowany z drewna wraz z miejskim szpitalem św. Ducha w XIV wieku; szpital ufundował książę Janusz Starszy i przekazał go miastu w 1388 roku.",
+      "Pierwszym proboszczem znanym z nazwiska był Jędrzej Pronobis, w 1473 roku.",
+      "W 1629 roku biskup poznański Maciej Łubieński połączył parafię Św. Trójcy, której zabudowania na polecenie króla oddano brygidkom, z parafią św. Ducha.",
+      "Świątynia ucierpiała w czasie potopu szwedzkiego; uchwałą magistratu z 22 sierpnia 1664 roku kościół z dochodami oddano paulinom.",
+      "W 1699 roku położono kamień węgielny pod nowy kościół, zbudowany w latach 1707–1717 w stylu baroku według projektu Józefa Pioli i Bellottiego.",
+      "Wykończeniowe prace i budowę ołtarzy prowadzono do 1746 roku, kiedy wybudowano kaplicę Najświętszej Panny Częstochowskiej."
+    ],
+    "ciekawostki": [
+      "W aktach urzędowych szpital nazywano różnie: domem gościnnym dla ubogich, oraculum, xenodochium, a kościółek „dodatkiem” do szpitala nazywano cenobium (1473)."
+    ],
+    "summary_en": "The Holy Spirit Church at ul. Długa 3 in Nowe Miasto, the successor of a 14th-century wooden church that was part of a city hospital. The Baroque church built in 1707–1717 was held by the Pauline order from 1664.",
+    "ludzie": [
+      {"kto": "Janusz Starszy", "rola": "książę, fundator szpitala św. Ducha", "wiki": null},
+      {"kto": "Mikołaj Panczatka", "rola": "ofiarował kościołowi trzeci denar z jatek, kramów i straganów", "wiki": null},
+      {"kto": "Jędrzej Pronobis", "rola": "pierwszy znany z nazwiska proboszcz (1473)", "wiki": null},
+      {"kto": "Maciej Łubieński", "rola": "biskup poznański, połączył parafie w 1629", "wiki": null},
+      {"kto": "Józef Pioli", "rola": "autor projektu baroku kościoła (z Bellottim)", "wiki": null},
+      {"kto": "Innocenty Pokorski", "rola": "przeor, kierował budową kościoła i jego wystrojem", "wiki": null},
+      {"kto": "Augustyn Kordecki", "rola": "prowincjał paulinów, przyjmował ofiarę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Ducha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Ducha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też szpital, który w 1664 roku odłączono od kościoła; rekord dotyczy świątyni. Artykuł ma sformułowania 'wprost' z cytatów kronikarskich."
+  },
+  {
+    "id": "kosciol-sw-franciszka",
+    "nazwa": "Kościół św. Franciszka w Warszawie",
+    "name_en": "St Francis Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Zakroczymska",
+    "adres_historyczny": null,
+    "lat": 52.253611,
+    "lon": 21.006667,
+    "lokalizacja": "dokladna",
+    "okres": "1646–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Franciszkanie pojawili się w Warszawie dopiero w 1646 roku, dzięki nadwornemu kapelanowi i kapelmistrzowi Władysława IV, włoskiemu franciszkaninowi Wincentemu Skapicie.",
+      "Król zgodził się na fundację 6 listopada 1645 roku, a biskup poznański Jędrzej (Andrzej) Szołdrski wydał kanoniczne pozwolenie 16 kwietnia 1646 roku.",
+      "Kościółek drewniany, zbudowany w 1646 roku, spalono w czasie potopu szwedzkiego; po odbudowie w latach 1662–1663 stary kościół ustąpił miejsca kolejnemu, zachowanemu do dziś.",
+      "Według pierwszego projektu Jana Chrzciciela Ceroniego zrealizowano w latach 1679–1691 tylko prezbiterium z zakrystią i kaplicą Matki Boskiej Pocieszenia.",
+      "Budowę wznowiono w 1713 roku; kierownictwo powierzono Józefowi Fontanie i jego synowi Jakubowi.",
+      "W 1737 roku kościół poświęcił biskup poznański Stanisław Hozjusz.",
+      "Likwidacja klasztoru w 1864 roku wiązała się z przekształceniem świątyni w kościół garnizonowy dla katolików służących w armii rosyjskiej.",
+      "Po wybuchu powstania warszawskiego kościół został zbombardowany, a w jego podziemiach zginęło ok. 40 osób, które szukały tam schronienia."
+    ],
+    "ciekawostki": [
+      "Od listopada 1940 do grudnia 1941 roku kościół znajdował się przy północno-wschodnim krańcu warszawskiego getta.",
+      "21 stycznia 1945 roku przed obrazem św. Antoniego odprawiono mszę świętą w budynku, który nadawał się do użytku."
+    ],
+    "summary_en": "The St Francis Church of the Franciscan Friars Minor, founded in 1646 in Nowe Miasto. The present church was built in several stages from the 1660s; its Baroque interior survived the 1944 bombing in part.",
+    "ludzie": [
+      {"kto": "Wincenty Skapita", "rola": "franciszkanin, nadworny kapelan Władysława IV; pierwszy przełożony klasztoru", "wiki": null},
+      {"kto": "Jakub Sosnowski", "rola": "sekretarz królewski, podarował plac", "wiki": null},
+      {"kto": "Zygmunt Wybranowski", "rola": "stolnik warszawski, ufundował kapitał", "wiki": null},
+      {"kto": "Jan Chrzciciel Ceroni", "rola": "autor pierwszego projektu kościoła", "wiki": null},
+      {"kto": "Karol Bay", "rola": "zmodyfikował projekt Ceroniego", "wiki": null},
+      {"kto": "Józef Fontana", "rola": "kierownik budowy od 1713", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "kierownik budowy od 1713; autor rokokowego ogrodzenia cmentarza", "wiki": null},
+      {"kto": "Stanisław Hozjusz", "rola": "biskup poznański, poświęcił kościół w 1737", "wiki": null},
+      {"kto": "Józef Boretti", "rola": "przebudował fasadę w 1788", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Franciszka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Franciszka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł kończy się w trakcie opisu lat 2006–2007 (osuszanie murów); końcówka urwana w pliku."
+  }
+]

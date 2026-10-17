@@ -1,0 +1,258 @@
+[
+  {
+    "id": "kosciol-sw-jacka-freta",
+    "nazwa": "Kościół św. Jacka w Warszawie",
+    "name_en": "St Hyacinth (Jacek) Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta 8/10",
+    "adres_historyczny": null,
+    "lat": 52.251341609,
+    "lon": 21.009352774,
+    "lokalizacja": "dokladna",
+    "okres": "1603–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół został zbudowany w latach 1603–1639 z fundacji mieszczan warszawskich w stylu barokowym z elementami postgotyku, prawdopodobnie według projektu Giovanniego Battisty Trevana; budowniczym był murator Jan Włoch.",
+      "W 1603 roku kapituła prowincjalna w Poznaniu postanowiła zbudować kościół i klasztor dominikanów w Warszawie; zadanie zlecono o. Abrahamowi Bzowskiemu.",
+      "Biskup poznański Wawrzyniec Goślicki 4 sierpnia 1603 roku wydał pozwolenie na budowę kościoła i klasztoru.",
+      "22 września 1605 roku Goślicki położył kamień węgielny pod kościół.",
+      "Pierwszą mszę w nowym kościele o. Bzowski odprawił 22 października 1606 roku.",
+      "Kościół poświęcił biskup poznański Wojciech Tolibowski 26 czerwca 1661 roku; nadano mu wezwanie polskiego świętego Jacka Odrowąża.",
+      "W czasie potopu szwedzkiego, 8 września 1655 roku, w wielkim refektarzu klasztoru odbyły się rokowania w sprawie poddania miasta; Szwedzi okupowali klasztor do 1 lipca 1656 roku."
+    ],
+    "ciekawostki": [
+      "Podanie głosi, że żołnierz szwedzki strzelił z pistoletu do obrazu Najświętszej Panny Łaskawej; kula odbiła się od obrazu i ugodziła śmiertelnie świętokradcę."
+    ],
+    "summary_en": "St Hyacinth's Church, the Dominican church on ul. Freta in Nowe Miasto, built in 1603–1639 with funds from Warsaw burghers. Its Baroque interior was consecrated in 1661, and the Swedes occupied the monastery in 1655–1656.",
+    "ludzie": [
+      {"kto": "Giovanni Battista Trevano", "rola": "prawdopodobny autor projektu kościoła", "wiki": null},
+      {"kto": "Jan Włoch", "rola": "murator, budowniczy kościoła", "wiki": null},
+      {"kto": "Abraham Bzowski", "rola": "dominikanin, zakonnik zlecony do budowy; dwukrotnie przeor", "wiki": null},
+      {"kto": "Wawrzyniec Goślicki", "rola": "biskup poznański, wydał pozwolenie na budowę (1603)", "wiki": null},
+      {"kto": "Wojciech Tolibowski", "rola": "biskup poznański, poświęcił kościół w 1661", "wiki": null},
+      {"kto": "Jacek Baryczka", "rola": "przeor, zaczął budowę klasztoru murowanego", "wiki": null},
+      {"kto": "Wojciech Baryczka", "rola": "kuchmistrz królewski, fundator ołtarza św. Jacka", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Jacka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jacka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Początek artykułu w części 3 pliku; rekord dokończony tutaj. Część opisu pochodzi z cytatów Bartoszewicza."
+  },
+  {
+    "id": "kosciol-sw-jana-bozego-bonifratrow",
+    "nazwa": "Kościół św. Jana Bożego w Warszawie",
+    "name_en": "St John of God Church (Bonifratrians) in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Bonifraterska 12",
+    "adres_historyczny": null,
+    "lat": 52.253611,
+    "lon": 21.000556,
+    "lokalizacja": "dokladna",
+    "okres": "1650–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Bogusław Leszczyński w 1650 roku, w swoim miasteczku dziedzicznym Leszno pod Warszawą, ufundował kościół i klasztor bonifratrów.",
+      "Pierwszym przeorem klasztoru był neapolitańczyk ks. Modest Genoino, popularny w Warszawie chirurg.",
+      "Tobiasz Morsztyn w testamencie spisanym w 1664 roku zapisał bonifratrom 30 000 złotych polskich na przeniesienie klasztoru i zmurowanie kościoła.",
+      "Budowę kościoła i klasztoru ukończono w 1673 roku.",
+      "W 1713 roku król August II Mocny zakupił pałac Morsztyna na swoją rezydencję i przeznaczył 12 000 talarów na budowę nowego kościoła; prace rozpoczęto w 1728 roku, a kilka lat później biskup poznański Jan Tarło poświęcił kościół i klasztor.",
+      "W czasie zaborów bonifratrzy byli represjonowani przez władze carskie za pomoc powstańcom z 1831 i 1863 roku.",
+      "Podczas powstania warszawskiego kościół, szpital i budynki przyklasztorne były bronione przez żołnierzy batalionów „Zośka”, „Parasol” i „Czata 49” do 25 sierpnia 1944 roku.",
+      "W 1965 roku świątynia wraz z zespołem klasztornym bonifratrów została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Jakub Fontana, budowniczy kościoła, w testamencie z 20 marca 1773 roku zapisał 74 000 złp. na utrzymanie i lekarstwa dla chorych."
+    ],
+    "summary_en": "St John of God Church at ul. Bonifraterska 12, founded in 1650 by Bogusław Leszczyński for the Brothers Hospitallers (Bonifratrians). The present church was begun in 1728, and the monastery fought in the Warsaw Uprising until 25 August 1944.",
+    "ludzie": [
+      {"kto": "Bogusław Leszczyński", "rola": "fundator kościoła i klasztoru (1650)", "wiki": null},
+      {"kto": "Modest Genoino", "rola": "pierwszy przeor klasztoru, chirurg", "wiki": null},
+      {"kto": "Tobiasz Morsztyn", "rola": "łowczy wielki koronny, ofiarodawca w testamencie (1664)", "wiki": null},
+      {"kto": "August II Mocny", "rola": "król, przeznaczył 12 000 talarów na nowy kościół (1713)", "wiki": null},
+      {"kto": "Jan Tarło", "rola": "biskup poznański, poświęcił kościół i klasztor", "wiki": null},
+      {"kto": "Jakub Fontana", "rola": "budowniczy kościoła; zapisał fundusz w testamencie (1773)", "wiki": null},
+      {"kto": "Paschal Stirzelheimer", "rola": "były prowincjał zakonu; uzyskał doktorat z medycyny w 1765", "wiki": null},
+      {"kto": "Serafin Kloc", "rola": "zakonnik, umożliwił i wspierał odbudowę kościoła", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Jana Bożego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jana_Bo%C5%BCego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-sw-jerzego-swietojerska",
+    "nazwa": "Kościół św. Jerzego w Warszawie",
+    "name_en": "St George's Church on Świętojerska Street (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Świętojerska, na początkowym odcinku, w pobliżu ul. Freta",
+    "lat": 52.2516,
+    "lon": 21.0076,
+    "lokalizacja": "dokladna",
+    "okres": "po 1313–koniec XIX w.",
+    "istnieje": false,
+    "fakty": [
+      "Kościół powstał z fundacji książęcej już po roku 1313 przy azylu rycerskim za murami Starej Warszawy, który służył za nocleg dla tych, którzy nie zdążyli wejść do miasta przed zamknięciem bram.",
+      "Później kościół przejęło opactwo czerwińskie i utworzono przy nim prepozyturę kanoników regularnych.",
+      "Około roku 1454 z fundacji księcia Bolesława IV zwanego warszawskim wzniesiono na miejscu drewnianej świątyni murowany, gotycki kościół i klasztor kanoników.",
+      "W latach 1547–48 kościół przebudował murator Jan Baptysta Wenecjanin, chętnie sięgający do motywów włoskiego renesansu.",
+      "Po kasacie zakonu kanoników regularnych w 1818 roku jego nieruchomości przeszły na własność Skarbu Państwa.",
+      "Około 1860 roku zburzono wieżę dawnego kościoła św. Jerzego, a w 1862 roku ulicę Świętojerską poszerzono i uregulowano.",
+      "Podczas modernizacji i rozbudowy siedziby w latach 1893–1896 Feinkindowie rozebrali większą część murów kościoła.",
+      "Po wojnie, w latach 1945–1947, odsłonięto fragment gotyckich murów północno-zachodniego narożnika; zostały one rozebrane w 1962 roku."
+    ],
+    "ciekawostki": [
+      "Dzwon z wieży kościoła św. Jerzego trafił ostatecznie na Służew, do kościoła św. Katarzyny.",
+      "W budynkach przykościelnych działały zakłady przemysłowe: od 1820 roku spółka Józefa Morissa i Tomasza Evansa, a później Lilpop, Rau i Loewenstein."
+    ],
+    "summary_en": "St George's Church on Świętojerska street in Nowe Miasto, founded after 1313 at a knights' refuge beyond the city walls. Its Gothic church was partly demolished in the 19th century, after the buildings had been used by industrial firms. The last remnants of its walls were removed in 1962.",
+    "ludzie": [
+      {"kto": "Bolesław IV", "rola": "książę warszawski; fundator murowanego kościoła i klasztoru ok. 1454", "wiki": null},
+      {"kto": "Jan Baptysta Wenecjanin", "rola": "murator, przebudowa 1547–48", "wiki": null},
+      {"kto": "Józef Moriss", "rola": "dzierżawca zabudowań, współzałożyciel spółki", "wiki": null},
+      {"kto": "Tomasz Evans", "rola": "dzierżawca zabudowań, współzałożyciel spółki", "wiki": null},
+      {"kto": "Stanisław Lilpop", "rola": "współwłaściciel przedsiębiorstwa po 1866 roku", "wiki": null},
+      {"kto": "Wilhelm Rau", "rola": "współwłaściciel przedsiębiorstwa po 1866 roku", "wiki": null},
+      {"kto": "Seweryn Loewenstein", "rola": "belgijski baron, udziałowiec od 1868 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Jerzego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jerzego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje dokładnej daty powstania kościoła poza 'po 1313'; współrzędne z nagłówka (artykuł ma nieco dokładniejsze)."
+  },
+  {
+    "id": "kosciol-sw-kazimierza-sakramentek",
+    "nazwa": "Kościół św. Kazimierza w Warszawie",
+    "name_en": "St Casimir Church (Sacramentine) in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Rynek Nowego Miasta 2",
+    "adres_historyczny": null,
+    "lat": 52.2533,
+    "lon": 21.0086,
+    "lokalizacja": "dokladna",
+    "okres": "1688–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rezydencję na terenie posiadłości stolnika wyszogrodzkiego Adama Kotowskiego kupiła w 1688 roku królowa Maria Kazimiera Sobieska; przeznaczyła ją na kościół i klasztor dla zakonu sakramentek.",
+      "Projekt zlecono holenderskiemu architektowi Tylmanowi van Gameren; budowlą opiekował się nadworny architekt Jana III Sobieskiego Augustyn Locci.",
+      "W 1692 roku kościół przykryto kopułą i oddano do użytku w stanie surowym.",
+      "W 1740 roku wybudowano utrzymany w barokowym stylu budynek klasztorny, ufundowany przez rodzinę Radziwiłłów; autorem projektu był włoski architekt Antonio Solar.",
+      "W 1794 klasztor stracił większość dóbr, m.in. 73 srebrne elementy dekoracyjne i 4 figury aniołów z ołtarza głównego.",
+      "Kościół został mocno uszkodzony w wyniku pożaru spowodowanego uderzeniem pioruna w 1855 roku.",
+      "Kościół został zniszczony 31 sierpnia 1944 roku; pod gruzami straciło życie ok. 1000 osób. Remonty po wojnie trwały w latach 1948–1952.",
+      "W 1965 roku świątynia wraz z zespołem klasztornym sakramentek została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W świątyni wzbogacono się o dwa cenne nagrobki: Marii Karoliny z Sobieskich oraz Marii Józefy Sobieskiej.",
+      "Po zabraniu blachy z dachu w 1794 roku dzięki zapobiegliwości przeoryszy dach pokryto innym rodzajem blachy, a całość odnowiono pod okiem Bonawentury Solariego."
+    ],
+    "summary_en": "St Casimir's Church at Rynek Nowego Miasta 2, built for the Sacramentine nuns founded by Queen Maria Kazimiera Sobieska, to designs by Tylman van Gameren. Destroyed on 31 August 1944, it was restored in 1948–1952.",
+    "ludzie": [
+      {"kto": "Maria Kazimiera Sobieska", "rola": "królowa, fundatorka kościoła i klasztoru", "wiki": null},
+      {"kto": "Adam Kotowski", "rola": "stolnik wyszogrodzki, dawny właściciel posiadłości", "wiki": null},
+      {"kto": "Tylman van Gameren", "rola": "holenderski architekt, autor projektu", "wiki": null},
+      {"kto": "Augustyn Locci", "rola": "nadworny architekt Jana III Sobieskiego, opiekował się budową", "wiki": null},
+      {"kto": "Antonio Solar", "rola": "włoski architekt, autor projektu budynku klasztornego (1740)", "wiki": null},
+      {"kto": "Bonawentura Solari", "rola": "odnowił kościół po 1794 roku", "wiki": null},
+      {"kto": "Władysław Kosmowski", "rola": "kierował remontem w latach 1882–1884", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Kazimierza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Kazimierza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też XVIII-wieczne przeróbki wnętrza (ołtarze, ambona, organy 1745–1748); pominięto je w rekordzie."
+  },
+  {
+    "id": "kosciol-sw-marcina-piwna",
+    "nazwa": "Kościół św. Marcina w Warszawie",
+    "name_en": "St Martin's Church (Augustinian) in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Piwna",
+    "adres_historyczny": null,
+    "lat": 52.248333333,
+    "lon": 21.0125,
+    "lokalizacja": "dokladna",
+    "okres": "1353–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół został ufundowany wraz z klasztorem augustianów; papież Innocenty VI wydał 5 lipca 1356 roku księciu Ziemowitowi III i jego żonie Eufemii przywilej sprowadzenia augustianów na Mazowsze.",
+      "Pierwszy kościół powstał ok. 1380 roku pod wezwaniem św. Marcina i św. Doroty.",
+      "Dzięki wsparciu księcia Ziemowita augustianie znaleźli się w posiadaniu siedmiu wiosek oraz miasteczka Cegłów.",
+      "Pożar w 1478 roku, który strawił całą ulicę Piwną aż po zamek, całkowicie zniszczył wnętrze kościoła.",
+      "W XVI wieku w świątyni odbywały się sejmiki generalne i relacyjne województwa mazowieckiego.",
+      "W 1695 roku sejmikująca szlachta sprofanowała świątynię rozlewem krwi, w wyniku czego musiała ona zostać ponownie poświęcona.",
+      "W 1744 roku nową barokową fasadę zaprojektował architekt Karol Bay.",
+      "Zniszczona w 1944 roku świątynia została po wojnie odbudowana; wnętrze jest w dużej mierze nowoczesne, według projektu siostry Almy Skrzydlewskiej."
+    ],
+    "ciekawostki": [
+      "Aby zapobiec pijackim burdom i przyspieszyć obrady, szlachta uczestniczyła w sejmikach w kościele na czczo, a obrady rozpoczynały się rano."
+    ],
+    "summary_en": "St Martin's Church on ul. Piwna in the Old Town, founded with an Augustinian monastery in the 14th century. It hosted provincial assemblies of the Mazovian nobility in the 16th century and was rebuilt after the war with a modern interior.",
+    "ludzie": [
+      {"kto": "Innocenty VI", "rola": "papież, wydał przywilej sprowadzenia augustianów (1356)", "wiki": null},
+      {"kto": "Ziemowit III", "rola": "książę mazowiecki, fundator klasztoru augustianów", "wiki": null},
+      {"kto": "Kacper Rzepcha", "rola": "mieszczanin warszawski, kolator, odnowił ołtarz po pożarze", "wiki": null},
+      {"kto": "Karol Bay", "rola": "architekt, autor barokowej fasady (1744)", "wiki": null},
+      {"kto": "Alipi Niedzielski", "rola": "przeor, przeprowadził restaurację kościoła w 1824–1825", "wiki": null},
+      {"kto": "Alma Skrzydlewska", "rola": "siostra, autorka projektu wnętrza po 1944", "wiki": null}
+    ],
+    "dawne_nazwy": ["kościół św. Marcina i św. Doroty"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Marcina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marcina_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł podaje rok 1353, ale zaznacza, że data może być nieścisła; pierwszy kościół wg źródeł ok. 1380."
+  },
+  {
+    "id": "kosciol-sw-teresy-od-dzieciatka-jezus",
+    "nazwa": "Kościół św. Teresy od Dzieciątka Jezus w Warszawie",
+    "name_en": "St Thérèse of the Child Jesus Church in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tamka 4",
+    "adres_historyczny": null,
+    "lat": 52.239186,
+    "lon": 21.029447,
+    "lokalizacja": "dokladna",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień węgielny pod budowę kościoła został poświęcony w październiku 1931 roku.",
+      "Parafię erygowano w 1938 roku przez arcybiskupa Aleksandra Kakowskiego; 17 kwietnia 1938 roku poświęcono nową świątynię pod wezwaniem Zmartwychwstania Pańskiego.",
+      "Świątynię wzniesiono w stylu modernistycznym według projektu Konstantego Jakimowicza.",
+      "Na pierwszego proboszcza wyznaczono ks. Stanisława Żelazowskiego.",
+      "We wrześniu 1939 roku świątynia uległa poważnym zniszczeniom w trakcie działań obronnych.",
+      "27 sierpnia 1944 roku świątynia została zbombardowana przez Luftwaffe; pod gruzami zginęło kilkadziesiąt osób.",
+      "Po wojnie odbudowę świątyni prowadzono przez wiele lat z datków wiernych; 3 października 1969 roku kard. Stefan Wyszyński dokonał jej konsekracji i nadał kościołowi i parafii tytuł św. Teresy od Dzieciątka Jezus."
+    ],
+    "ciekawostki": [
+      "Proboszczem parafii w latach 1991–2015 był ks. prałat Ryszard Kazimierz Lewandowski."
+    ],
+    "summary_en": "St Thérèse of the Child Jesus Church at ul. Tamka 4 on Powiśle. Blessed in 1938 to a Modernist design by Konstanty Jakimowicz, it was bombed in 1944 and reconsecrated after its restoration by Cardinal Stefan Wyszyński in 1969.",
+    "ludzie": [
+      {"kto": "Aleksander Kakowski", "rola": "arcybiskup metropolita warszawski, erygował parafię w 1938", "wiki": null},
+      {"kto": "Konstanty Jakimowicz", "rola": "autor projektu w stylu modernistycznym", "wiki": null},
+      {"kto": "Stanisław Żelazowski", "rola": "pierwszy proboszcz (1938–1944)", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał prymas, konsekrował odbudowany kościół w 1969", "wiki": null},
+      {"kto": "Ryszard Kazimierz Lewandowski", "rola": "ks. prałat, proboszcz 1991–2015", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Teresy od Dzieciątka Jezus w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Teresy_od_Dzieci%C4%85tka_Jezus_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru domu przy ul. Tamka poza '4' z opisu; adres z treści artykułu."
+  }
+]

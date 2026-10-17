@@ -1,0 +1,237 @@
+[
+  {
+    "id": "marianska",
+    "nazwa": "Osiedle Mariańska",
+    "name_en": "Mariańska housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Pawła II 18; ul. Świętokrzyska 36; ul. Emilii Plater 55",
+    "adres_historyczny": "część Grzybowa przed II wojną światową",
+    "lat": 52.234722222,
+    "lon": 21.001111111,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle Mariańska zbudowano w latach 1961–1967 według projektu Hanny Lewickiej i Wojciecha Piotrowskiego; za konstrukcję odpowiadał R. Pakosz.",
+      "Osiedle powstało w miejscu będącym przed II wojną światową częścią Grzybowa, po wyburzeniu reliktów przedwojennej zabudowy oraz prowizorycznych obiektów i warsztatów z rejonu nazywanego „Dzikim Zachodem”.",
+      "Za realizację inwestycji odpowiadał Stołeczny Zarząd Rozbudowy Miasta.",
+      "Pierwotnie w osiedle wchodziły trzy budynki mieszkalne: al. Jana Pawła II 18, ul. Świętokrzyska 36 i ul. Emilii Plater 55; łącznie 329 mieszkań z 622 izbami.",
+      "Powierzchnia osiedla wynosi blisko 1,5 hektara (według innego źródła 1,8 hektara); jego plan miał kształt trójkąta.",
+      "Budynek przy ul. Emilii Plater 55, tzw. Igrek (zwany także „Wiatrakiem”), ma 12 pięter i w chwili wybudowania był największym budynkiem mieszkalnym w Warszawie.",
+      "Rozbiórka budynku przy ul. Świętokrzyskiej 36 zaczęła się w 2017 roku, a w 2020 roku rozpoczęto na jego miejscu budowę wieżowca Skysawa."
+    ],
+    "ciekawostki": [
+      "Igrek zaplanowano dla 920 mieszkańców; w parterze działała pijalnia piwa „Jantar”, która przez pewien czas była jedynym tego typu lokalem w Warszawie, a protesty mieszkańców doprowadziły do jej zamknięcia.",
+      "Budynek przy ul. Świętokrzyskiej 36 nazywano „zagraniczniakiem”, bo wynajmowano w nim mieszkania cudzoziemcom i przedstawicielstwom zagranicznych podmiotów.",
+      "Przez pewien czas osiedle nazywano najmniejszym osiedlem w stolicy."
+    ],
+    "summary_en": "A small housing estate in Warsaw's Śródmieście, built in 1961–1967 on the site of the former Grzybów district. Its best-known building is the 12-storey 'Igrek' (Windmill) at Emilii Plater 55, which was the largest residential building in Warsaw when completed.",
+    "ludzie": [
+      {"kto": "Hanna Lewicka", "rola": "projektantka osiedla", "wiki": null},
+      {"kto": "Wojciech Piotrowski", "rola": "projektant osiedla", "wiki": null},
+      {"kto": "R. Pakosz", "rola": "odpowiadał za konstrukcję", "wiki": null}
+    ],
+    "dawne_nazwy": ["Grzybów (część przed II wojną światową)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mariańska", "url": "https://pl.wikipedia.org/wiki/Maria%C5%84ska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (ogólne dla osiedla). Według niektórych źródeł osiedle tworzy wraz z sąsiednim Emilią większy zespół Emilia-Mariańska."
+  },
+  {
+    "id": "mariensztat",
+    "nazwa": "Mariensztat",
+    "name_en": "Mariensztat",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "rynek Mariensztacki; ul. Mariensztat; ul. Bednarska; ul. Sowia",
+    "adres_historyczny": "jurydyka Mariensztat (od 1762)",
+    "lat": 52.24555,
+    "lon": 21.01731,
+    "lokalizacja": "przyblizona",
+    "okres": "1762–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1762 Eustachy i Maria Potoccy za zgodą króla Augusta III Sasa utworzyli na dawnym terenie pozalewowym u podnóża skarpy wiślanej jurydykę Mariensztat.",
+      "Nazwa pochodzi od imienia właścicielki i z języka niemieckiego (Marienstadt, pol. miasto Marii).",
+      "W 1844 część budynków dawnej jurydyki zburzono w związku z budową wiaduktu Pancera.",
+      "W latach 1861–1863 przy ul. Bednarskiej powstały zakłady drukarskie Samuela Orgelbranda, uznawane za największy i najnowocześniejszy zakład tej branży w Królestwie Polskim.",
+      "W latach 1948–1949, w związku z budową Trasy W–Z i mostu Śląsko-Dąbrowskiego, w miejscu zniszczonej zabudowy wzniesiono osiedle mieszkaniowe według projektu Zygmunta Stępińskiego.",
+      "Osiedle oddano do użytku wraz z Trasą W–Z 22 lipca 1949; było to pierwsze warszawskie osiedle mieszkaniowe zbudowane po II wojnie światowej.",
+      "W 2009 układ urbanistyczny kolonii mieszkaniowej Mariensztat został wpisany do rejestru zabytków (nr rej. A-872)."
+    ],
+    "ciekawostki": [
+      "Dom przy ul. Mariensztat 19 na rogu ul. Sowiej wybudowano w stanie surowym, od wylania fundamentów do pokrycia dachówką, w ciągu 19 dni, pracując na trzy zmiany.",
+      "Na Mariensztacie toczy się akcja filmu „Przygoda na Mariensztacie” (1953)."
+    ],
+    "summary_en": "An old suburb (jurydyka) founded in 1762 at the foot of the Vistula escarpment, rebuilt in 1948–1949 as the first post-war housing estate in Warsaw. It has a rectangular market square and townhouse-style buildings designed by Zygmunt Stępiński; the urban layout was entered in the monument register in 2009.",
+    "ludzie": [
+      {"kto": "Eustachy i Maria Potoccy", "rola": "właściciele, założyciele jurydyki Mariensztat (1762)", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "autor projektu osiedla (1948–1949)", "wiki": null},
+      {"kto": "Samuel Orgelbrand", "rola": "właściciel zakładów drukarskich przy ul. Bednarskiej (1861–1863)", "wiki": null},
+      {"kto": "Jerzy Jarnuszkiewicz", "rola": "autor rzeźb chłopców w fontannie na rynku", "wiki": null}
+    ],
+    "dawne_nazwy": ["jurydyka Mariensztat", "Marienstadt"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mariensztat", "url": "https://pl.wikipedia.org/wiki/Mariensztat"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (ogólne dla osiedla)."
+  },
+  {
+    "id": "marszalkowska-76-office-center",
+    "nazwa": "Marszałkowska 76 Office Center",
+    "name_en": "Marszałkowska 76 Office Center",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska 76",
+    "adres_historyczny": null,
+    "lat": 52.2265,
+    "lon": 21.014361111,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Marszałkowska 76 Office Center (M76) to budynek biurowy przy ul. Marszałkowskiej 76, ukończony w 2002 roku.",
+      "Budynek zaprojektował Waldemar Szczerba.",
+      "Biurowiec uzupełnił brakujący fragment wschodniej pierzei ulicy Marszałkowskiej i północnej pierzei ulicy Hożej, na działce o powierzchni 614 m².",
+      "Elewacje wykonano z naturalnego kamienia (piaskowca i granitu), w kompozycji z oknami w ramach z drewna mahoniowego oraz fragmentem przeszklonej ściany strukturalnej.",
+      "M76 wraz z Centrum Królewska były jedynymi biurowcami w śródmieściu, które oddano w 2002 roku."
+    ],
+    "ciekawostki": [
+      "W biurowcu swoje studio nagrań ma poranny magazyn „Dzień dobry TVN”."
+    ],
+    "summary_en": "An office building at Marszałkowska 76 in Warsaw, designed by Waldemar Szczerba and completed in 2002. Faced in natural stone, it filled a gap in the eastern frontage of Marszałkowska Street, and it houses the studio of the TVN morning show.",
+    "ludzie": [
+      {"kto": "Waldemar Szczerba", "rola": "projektant budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Marszałkowska 76 Office Center w Warszawie", "url": "https://pl.wikipedia.org/wiki/Marsza%C5%82kowska_76_Office_Center_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "marszalkowska-dzielnica-mieszkaniowa",
+    "nazwa": "Marszałkowska Dzielnica Mieszkaniowa (MDM)",
+    "name_en": "Marszałkowska Residential District (MDM)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska między ul. Wilczą a pl. Unii Lubelskiej; pl. Konstytucji",
+    "adres_historyczny": null,
+    "lat": 52.22103009,
+    "lon": 21.01701736,
+    "lokalizacja": "przyblizona",
+    "okres": "1950–1952",
+    "istnieje": true,
+    "fakty": [
+      "Marszałkowska Dzielnica Mieszkaniowa to socrealistyczny wielki zespół mieszkaniowy w Śródmieściu Warszawy, wzniesiony w latach 1950–1952 według projektu zespołu architektów pod kierunkiem Józefa Sigalina (1950–1951) i Stanisława Jankowskiego (1951–1952).",
+      "Budowa rozpoczęła się 1 sierpnia 1950, a oddano ją do użytku 22 lipca 1952.",
+      "Pierwsi lokatorzy wprowadzili się do mieszkań w budynku 6B 21 lipca 1951, po 9 miesiącach budowy.",
+      "Zdecydowano się poszerzyć ulicę Marszałkowską przez wyburzenie zabudowy po stronie zachodniej na odcinku od ulicy Królewskiej do Koszykowej.",
+      "W 2015 roku MDM został wpisany do rejestru zabytków; w kwietniu 2015 ochroną objęto 70 budynków, w tym także obiekty poza MDM."
+    ],
+    "ciekawostki": [
+      "Inwestycji nadano rozgłos pod hasłem „lud wejdzie do Śródmieścia”.",
+      "Nazwę Marszałkowskiej Dzielnicy Mieszkaniowej nadano, bo budowa licznych budynków dla ministerstw i centralnych zarządów spotykała się z niechęcią warszawiaków; nazwa miała podkreślać mieszkaniowe przeznaczenie inwestycji."
+    ],
+    "summary_en": "A socialist-realist residential complex in Warsaw's Śródmieście, built in 1950–1952 along Marszałkowska Street to designs led by Józef Sigalin and Stanisław Jankowski. Entered in the monument register in 2015, it also includes the Latawiec estate (MDM III).",
+    "ludzie": [
+      {"kto": "Józef Sigalin", "rola": "kierownik zespołu projektowego (1950–1951)", "wiki": null},
+      {"kto": "Stanisław Jankowski", "rola": "kierownik zespołu projektowego (1951–1952)", "wiki": null},
+      {"kto": "Jan Knothe", "rola": "autor z zespołu; w jednym z projektów postulował rozebranie wież kościoła Najświętszego Zbawiciela", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "autor z zespołu projektowego", "wiki": null},
+      {"kto": "Eleonora Sekrecka", "rola": "współpracowniczka zespołu; projektantka osiedla Latawiec (MDM III)", "wiki": null}
+    ],
+    "dawne_nazwy": ["MDM"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Marszałkowska Dzielnica Mieszkaniowa", "url": "https://pl.wikipedia.org/wiki/Marsza%C5%82kowska_Dzielnica_Mieszkaniowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (ogólne dla zespołu). Artykuł podaje budowę osiedla Latawiec w latach 1953–1955; artykuł o Latawcu podaje 1953–1957. Rozbieżność zostawiona bez rozstrzygania."
+  },
+  {
+    "id": "marywil",
+    "nazwa": "Marywil",
+    "name_en": "Marywil",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "okolice ul. Senatorskiej i ul. Wierzbowej",
+    "adres_historyczny": "plac Marywilski (do ok. 1840, dziś plac Teatralny)",
+    "lat": 52.24366111,
+    "lon": 21.00975278,
+    "lokalizacja": "przyblizona",
+    "okres": "1685–1825",
+    "istnieje": false,
+    "fakty": [
+      "Marywil był XVII-wiecznym kompleksem handlowo-usługowo-hotelowym w rejonie dzisiejszych ulic Senatorskiej i Wierzbowej.",
+      "Na miejscu zabudowań Żupy Solnej, zniszczonych podczas potopu szwedzkiego, królowa Maria Kazimiera poleciła wznieść budowlę w kształcie pięciokąta: apartamenty królewskie, kaplicę Matki Boskiej Zwycięskiej oraz kilkadziesiąt sklepów.",
+      "Obiekt zaprojektowany przez Tylmana z Gameren wzniesiono w latach 1685–1696.",
+      "Główny wjazd znajdował się od strony ulicy Senatorskiej, na osi założenia, i prowadził na dziedziniec otoczony arkadami o powierzchni 5100 m².",
+      "W 1742 roku do Marywilu przeniesiono zarząd poczty, pocztamt i poczthalterię.",
+      "W 1819 nieruchomość zakupiło miasto.",
+      "Marywil rozebrano w 1825 roku w związku z budową Teatru Wielkiego, który częściowo znajduje się na jego miejscu."
+    ],
+    "ciekawostki": [
+      "Nazwa kompleksu (fr. Marie Ville, Miasto Marii) pochodzi od imienia inicjatorki przedsięwzięcia.",
+      "W 1738 kompleks stał się własnością Andrzeja Stanisława Załuskiego; zimą tego roku złożono tu jego księgozbiór wraz z księgozbiorem Józefa Andrzeja Załuskiego, a w 1742 roku przeniesiono go do pałacu Daniłowiczowskiego."
+    ],
+    "summary_en": "A 17th-century royal trading and hotel complex near today's Senatorska and Wierzbowa streets in Warsaw, designed by Tylman van Gameren (1685–1696). It was demolished in 1825 to make way for the Grand Theatre.",
+    "ludzie": [
+      {"kto": "Maria Kazimiera", "rola": "królowa, inicjatorka przedsięwzięcia", "wiki": null},
+      {"kto": "Tylman z Gameren", "rola": "projektant budowli (1685–1696)", "wiki": null},
+      {"kto": "Piotr Aigner", "rola": "przebudował wschodnie skrzydło (1817–1821) i wbudował kościół św. Andrzeja w nowy klasztor Kanoniczek", "wiki": null}
+    ],
+    "dawne_nazwy": ["Marie Ville", "plac Marywilski"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Marywil (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Marywil_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Artykuł podaje, że ostatnim reliktem Marywilu był pawilon Komory Celnej, rozebrany ok. 1902 roku."
+  },
+  {
+    "id": "masakry-w-warszawie-1861",
+    "nazwa": "Masakry w Warszawie 1861",
+    "name_en": "Massacres in Warsaw, 1861",
+    "typ": "zdarzenie",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście (ostrzał 27.02.1861); Plac Zamkowy (8.04.1861)",
+    "adres_historyczny": null,
+    "lat": 52.232222,
+    "lon": 21.008333,
+    "lokalizacja": "przyblizona",
+    "okres": "27.02.1861–8.04.1861",
+    "istnieje": null,
+    "fakty": [
+      "27 lutego 1861 roku studenci Szkoły Sztuk Pięknych i Akademii Medyko-Chirurgicznej zorganizowali demonstrację pod hasłami przeprowadzenia reform społecznych i zagwarantowania praw obywatelskich.",
+      "Na Krakowskim Przedmieściu do uczestników manifestacji ogień otworzyło wojsko rosyjskie; zginęło pięciu uczestników protestu.",
+      "Zginęli: czeladnik krawiecki Filip Adamkiewicz, uczeń gimnazjum Michał Arcichiewicz, robotnik Karol Brendel oraz dwaj ziemianie z Towarzystwa Rolniczego – Marceli Paweł Karczewski i Zdzisław Rutkowski.",
+      "Ciała zamordowanych przeniesiono do Hotelu Europejskiego, gdzie odbywał się zjazd Towarzystwa Rolniczego; jego uczestnicy pełnili przy zwłokach wartę.",
+      "Delegacja obywatelska udała się z poselstwem do namiestnika ks. Michaiła Gorczakowa; władze rosyjskie zgodziły się m.in. na uroczysty pochówek ofiar oraz na usunięcie wojska i policji z miasta.",
+      "Masakra odbiła się szerokim echem i była jednym z wydarzeń, które przyczyniło się do wybuchu powstania styczniowego w 1863 roku.",
+      "8 kwietnia 1861 roku na Placu Zamkowym Rosjanie ostrzelali bezbronny tłum w czasie manifestacji patriotycznej; dokładna liczba ofiar jest nieznana."
+    ],
+    "ciekawostki": [
+      "Na znak protestu zamknięto kościoły, a na znak solidarności z katolikami rabin Izaak Kramsztyk nakazał zamknąć wszystkie warszawskie synagogi.",
+      "Delegację obywatelską tworzyło 14 przedstawicieli wszystkich stanów, m.in. Józef Ignacy Kraszewski, Leopold Kronenberg i fotograf Karol Beyer."
+    ],
+    "summary_en": "On 27 February 1861 Russian troops fired on a patriotic demonstration on Krakowskie Przedmieście in Warsaw, killing five people. Further shootings followed on 8 April at Plac Zamkowy. The massacres are considered one of the events that led to the January Uprising of 1863.",
+    "ludzie": [
+      {"kto": "Filip Adamkiewicz", "rola": "czeladnik krawiecki, zabity 27.02.1861", "wiki": null},
+      {"kto": "Michał Arcichiewicz", "rola": "uczeń gimnazjum, zabity 27.02.1861", "wiki": null},
+      {"kto": "Karol Brendel", "rola": "robotnik, zabity 27.02.1861", "wiki": null},
+      {"kto": "Marceli Paweł Karczewski", "rola": "ziemianin z Towarzystwa Rolniczego, zabity 27.02.1861", "wiki": null},
+      {"kto": "Zdzisław Rutkowski", "rola": "ziemianin z Towarzystwa Rolniczego, zabity 27.02.1861", "wiki": null},
+      {"kto": "ks. Michaił Gorczakow", "rola": "namiestnik, do którego udała się delegacja obywatelska", "wiki": null},
+      {"kto": "Izaak Kramsztyk", "rola": "rabin, nakazał zamknięcie warszawskich synagog", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Masakry w Warszawie 1861", "url": "https://pl.wikipedia.org/wiki/Masakry_w_Warszawie_1861"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (ogólne dla wydarzenia). Artykuł urwany przy opisie masakry 8 kwietnia; w rekordzie tylko zdania kompletne."
+  }
+]

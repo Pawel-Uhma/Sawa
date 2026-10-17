@@ -1,0 +1,393 @@
+[
+  {
+    "id": "aleja-armii-ludowej",
+    "nazwa": "Aleja Armii Ludowej",
+    "name_en": "Aleja Armii Ludowej (Army Ludowa Avenue)",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Armii Ludowej (część Trasy Łazienkowskiej)",
+    "adres_historyczny": "aleja Piłsudskiego (do 1949)",
+    "lat": 52.2172453,
+    "lon": 21.005064,
+    "lokalizacja": "przyblizona",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja jest częścią Trasy Łazienkowskiej; zaczyna się jako przedłużenie mostu Łazienkowskiego przy skrzyżowaniu z Wisłostradą.",
+      "Pierwsze plany arterii na południu Warszawy powstały w latach 30. XX wieku; nowej arterii planowano nadać nazwę upamiętniającą Józefa Piłsudskiego.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 19 grudnia 1949 roku aleję Piłsudskiego przemianowano na aleję Armii Ludowej.",
+      "Prace nad Trasą Łazienkowską rozpoczęto w 1968 roku, przerwano z braku pieniędzy i wznowiono w 1971 roku; uroczyste otwarcie nastąpiło 22 lipca 1974 roku, w dniu trzydziestolecia PRL.",
+      "W 2018 roku Wojewódzki Sąd Administracyjny uchylił zarządzenie zastępcze wojewody z 9 listopada 2017 roku, które zmieniało nazwę na ul. Lecha Kaczyńskiego; 7 grudnia 2018 roku Naczelny Sąd Administracyjny oddalił skargę kasacyjną wojewody.",
+      "Do końca 2013 roku aleja miała kategorię drogi krajowej; od 1 stycznia 2014 roku jest drogą powiatową."
+    ],
+    "ciekawostki": [
+      "Po 1989 roku proponowano patrona w osobie płk. Ryszarda Kuklińskiego; ostatecznie upamiętniono go ulicą na Białołęce, a aleja zachowała nazwę."
+    ],
+    "summary_en": "A southern Warsaw arterial road forming part of the Łazienki Route (Trasa Łazienkowska). It was named after the Polish People's Army in 1949, and its name was contested in court in 2017–2018.",
+    "ludzie": [
+      {"kto": "Zdzisław Sipiera", "rola": "wojewoda mazowiecki, który wydał zarządzenie zastępcze o zmianie nazwy (2017)", "wiki": null},
+      {"kto": "Ryszard Kukliński", "rola": "proponowany patron alei, upamiętniony ulicą na Białołęce", "wiki": null}
+    ],
+    "dawne_nazwy": ["aleja Piłsudskiego (do 1949)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Armii Ludowej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Armii_Ludowej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka."
+  },
+  {
+    "id": "aleja-chinska-lazienki",
+    "nazwa": "Aleja Chińska (Łazienki Królewskie)",
+    "name_en": "Chinese Avenue (Łazienki Royal Park)",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleja Chińska w Łazienkach Królewskich",
+    "adres_historyczny": "Droga Wilanowska",
+    "lat": 52.2094847,
+    "lon": 21.0326812,
+    "lokalizacja": "przyblizona",
+    "okres": "1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja Chińska powstała w latach 80. XVIII wieku na bazie dawnej Drogi Wilanowskiej; jej inicjatorem był król Stanisław II August.",
+      "Pod wpływem mody na chinoiserie drogę przemianowano na Aleję Chińską i ozdobiono ją chińskimi elementami, a po obu stronach stanęły altany, mostki i pergole.",
+      "Nad aleją, przy skrzyżowaniu z Promenadą Królewską, wybudowano Most Chiński według projektu Jana Chrystiana Kamsetzera; zachował się do 1823 roku.",
+      "W XX wieku nawierzchnię gruntową zastąpiono asfaltową, a aleja stopniowo traciła orientalny charakter.",
+      "W 2011 roku z inicjatywy Fundacji Chińsko-Polskiej Wymiany Gospodarczej i Kulturalnej podpisano porozumienie; KGHM Polska Miedź i China Minmetals Corporation sfinansowały w dużej mierze rewitalizację.",
+      "Prace nad rewitalizacją alei i budową Ogrodu Chińskiego trwały w latach 2012–2014; obecna długość alei wynosi 1130 metrów."
+    ],
+    "ciekawostki": [
+      "Ogród Chiński w północnej części alei, w pobliżu dawnej lokalizacji Mostu Chińskiego, zaprojektował prof. Edward Bartman we współpracy z Muzeum Rezydencji Księcia Gonga w Pekinie."
+    ],
+    "summary_en": "The main axial avenue of Łazienki Royal Park, created in the 1780s from the old Wilanów Road in the Chinese style fashionable at the time. It was restored in 2012–2014 with funding from KGHM and China Minmetals.",
+    "ludzie": [
+      {"kto": "Stanisław II August", "rola": "król Polski, inicjator utworzenia alei", "wiki": null},
+      {"kto": "Jan Chrystian Kamsetzer", "rola": "autor projektu Mostu Chińskiego", "wiki": null},
+      {"kto": "Edward Bartman", "rola": "projektant Ogrodu Chińskiego (rewitalizacja)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Wilanowska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Chińska (Łazienki Królewskie)", "url": "https://pl.wikipedia.org/wiki/Aleja_Chi%C5%84ska_%28%C5%81azienki_Kr%C3%B3lewskie%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka."
+  },
+  {
+    "id": "aleja-ireny-sendlerowej",
+    "nazwa": "Aleja Ireny Sendlerowej",
+    "name_en": "Irena Sendlerowa Avenue (pedestrian promenade)",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "u zbiegu ul. Anielewicza i ul. Zamenhofa",
+    "adres_historyczny": null,
+    "lat": 52.2495391,
+    "lon": 20.9936678,
+    "lokalizacja": "przyblizona",
+    "okres": "2013–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Deptak znajduje się u zbiegu ulic Anielewicza i Zamenhofa, między Muzeum Historii Żydów Polskich a pomnikiem Bohaterów Getta na Muranowie.",
+      "Alejkę otwarto 15 maja 2013 roku z udziałem m.in. córki Ireny Sendlerowej Janiny Zgrzembskiej oraz prezydenta Bronisława Komorowskiego.",
+      "Oprócz Ireny Sendlerowej proponowano patronat szwedzkiego dyplomaty Raoula Wallenberga; kompromisowe rozwiązanie znalazł Zygmunt Stępiński, wicedyrektor Muzeum Historii Żydów Polskich.",
+      "W maju 2013 roku grupa działaczy społecznych zakwestionowała uhonorowanie Wallenberga i wskazała zamiast tego Stefanię Wilczyńską.",
+      "Prezydent Hanna Gronkiewicz-Waltz wskazała, że z getta uratowano blisko dwa i pół tysiąca dzieci."
+    ],
+    "ciekawostki": [
+      "Raoul Wallenberg jako ambasador Szwecji w Budapeszcie ocalił ok. 100 tys. węgierskich Żydów."
+    ],
+    "summary_en": "A pedestrian promenade in Muranów, between the POLIN Museum and the Ghetto Heroes Monument, named after Irena Sendlerowa, who saved Jewish children from the Warsaw Ghetto. It opened on 15 May 2013.",
+    "ludzie": [
+      {"kto": "Irena Sendlerowa", "rola": "patronka alei, ratowniczka dzieci z getta", "wiki": null},
+      {"kto": "Stefania Wilczyńska", "rola": "współpracowniczka Janusza Korczaka, proponowana jako alternatywny patron", "wiki": null},
+      {"kto": "Raoul Wallenberg", "rola": "szwedzki dyplomata, kandydat na patrona", "wiki": null},
+      {"kto": "Zygmunt Stępiński", "rola": "wicedyrektor Muzeum Historii Żydów Polskich, autor kompromisu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Ireny Sendlerowej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Ireny_Sendlerowej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Deptak; współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "aleja-jana-chrystiana-szucha",
+    "nazwa": "Aleja Jana Chrystiana Szucha",
+    "name_en": "Jana Chrystiana Szucha Avenue",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Chrystiana Szucha",
+    "adres_historyczny": "Strasse der Polizei (1941–1945)",
+    "lat": 52.213926,
+    "lon": 21.0219173,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1773–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja powstała ok. 1773 roku jako element Osi Stanisławowskiej; nazwa upamiętnia Jana Chrystiana Szucha, architekta ogrodów królewskich Stanisława Augusta Poniatowskiego, i jest oficjalnie używana od 1877 roku.",
+      "Po kapitulacji Warszawy jesienią 1939 roku monumentalne gmachy przejęły Gestapo, SD i Ordnungspolizei; 1 grudnia 1941 roku ulicę nazwano Strasse der Polizei i była zamknięta dla Polaków.",
+      "1 sierpnia 1944 roku powstańcy z 1109 plutonu dywizjonu „Jeleń” atakowali wzdłuż alei od strony placu Unii Lubelskiej; zatrzymani ogniem z broni maszynowej stracili 13 zabitych.",
+      "Od 17 stycznia 1946 roku do kwietnia 1992 roku ulica nosiła nazwę al. 1 Armii Wojska Polskiego.",
+      "W 1968 roku, w związku z budową Trasy Łazienkowskiej, rozebrano budynek kasyna wojskowego (nr 29), ostatni relikt dawnych koszar piechoty rosyjskiej.",
+      "W listopadzie 2012 roku Rada m.st. Warszawy skorygowała nazwę na aleja Jana Chrystiana Szucha."
+    ],
+    "ciekawostki": [
+      "W 1922 roku ulicę nazwano Batorego, ale ta nazwa się nie przyjęła."
+    ],
+    "summary_en": "A Warsaw avenue created around 1773 as part of the Stanisław Axis. Under German occupation it was the centre of the Nazi police district, and its main buildings at nos. 16 and 25 are described separately.",
+    "ludzie": [
+      {"kto": "Jan Chrystian Szuch", "rola": "architekt założeń ogrodowych Stanisława Augusta, patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Strasse der Polizei (1941–1945)", "al. 1 Armii Wojska Polskiego (1946–1992)", "aleja Batorego (1922, nie przyjęła się)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Jana Chrystiana Szucha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Jana_Chrystiana_Szucha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka."
+  },
+  {
+    "id": "al-szucha-25-gmach-ministerstwa-oswiaty",
+    "nazwa": "Gmach Ministerstwa Wyznań Religijnych i Oświecenia Publicznego (al. Szucha 25)",
+    "name_en": "Former Ministry of Religious Denominations and Public Enlightenment building (Szucha 25)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Chrystiana Szucha 25",
+    "adres_historyczny": null,
+    "lat": 52.213926,
+    "lon": 21.0219173,
+    "lokalizacja": "przyblizona",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach z lat 1925–1930 wzniesiono dla Ministerstwa Wyznań Religijnych i Oświecenia Publicznego według projektu Zdzisława Mączeńskiego.",
+      "Wystrój rzeźbiarski w stylu art déco z 1928 roku zaprojektował Wojciech Jastrzębowski; na portyku kolumnowym znajduje się godło Polski w typie art déco.",
+      "W budynku mieściła się siedziba hitlerowskiej policji bezpieczeństwa (Sipo) i SD na Warszawę oraz dystrykt warszawski, a w podziemiach działało więzienie śledcze Gestapo.",
+      "Od 1945 roku siedziba Ministerstwa Edukacji Narodowej, a od 2021 roku Ministerstwa Edukacji i Nauki.",
+      "W 1952 roku w przyziemiu gmachu utworzono muzeum – Mauzoleum Walki i Męczeństwa, upamiętniające tysiące przetrzymywanych, torturowanych i zamordowanych."
+    ],
+    "ciekawostki": [
+      "Architektura gmachu jest bliska realizacjom z faszystowskich Włoch i Niemiec lat 30.; w tym stylu zaprojektowano prestiżowe budynki publiczne."
+    ],
+    "summary_en": "A 1920s prestige government building on Szucha Avenue, which served as the Gestapo and SD headquarters in Warsaw during the occupation with a prison in its basement. Since 1952 a memorial museum, the Mauzoleum Walki i Męczeństwa, has been housed in the ground floor.",
+    "ludzie": [
+      {"kto": "Zdzisław Mączeński", "rola": "autor projektu gmachu", "wiki": null},
+      {"kto": "Wojciech Jastrzębowski", "rola": "autor rzeźbiarskiego wystroju (1928)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Jana Chrystiana Szucha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Jana_Chrystiana_Szucha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych budynku w artykule; podano środek alei z nagłówka."
+  },
+  {
+    "id": "al-szucha-16-kamienica-proporzec",
+    "nazwa": "Kamienica Spółdzielni Mieszkaniowej „Proporzec” (al. Szucha 16)",
+    "name_en": "Proporzec housing cooperative building (Szucha 16)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Jana Chrystiana Szucha 16",
+    "adres_historyczny": null,
+    "lat": 52.213926,
+    "lon": 21.0219173,
+    "lokalizacja": "przyblizona",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę z lat 1934–1937 zaprojektował Edgar Aleksander Norwerth; to przykład luksusowego funkcjonalizmu lat 30.",
+      "Ze względu na profil członków spółdzielni, oficerów wyższych szarż, budynek nazywano „domem generalskim”.",
+      "Przed wojną mieszkali tu m.in. Bogusław Miedziński i Walery Sławek, który w 1939 roku popełnił tu samobójstwo.",
+      "W czasie wojny po wysiedleniu ludności polskiej mieszkali tu wysocy urzędnicy Gestapo.",
+      "6 maja 1944 roku żołnierze oddziału Kedywu „Pegaz” dokonali przy alei Szucha 16 nieudanego zamachu na kierownika Wydziału IV w urzędzie Komendanta SD, Waltera Stamma.",
+      "Po 1945 roku mieszkali tu m.in. Józef Ozga-Michalski i Marian Rybicki oraz Stefan Kisielewski.",
+      "Na budynku znajdują się tablice upamiętniające akcję Stamm oraz Walerego Sławka."
+    ],
+    "ciekawostki": [
+      "Stolarka drzwi wejściowych nawiązuje do geometrycznej ornamentyki Franka Lloyda Wrighta, inspirowanej sztuką japońską."
+    ],
+    "summary_en": "A 1930s functionalist apartment block at Szucha 16, nicknamed the General's House because its cooperative members were senior officers. It was occupied by Gestapo officials during the war and later by figures of the People's Republic.",
+    "ludzie": [
+      {"kto": "Edgar Aleksander Norwerth", "rola": "autor projektu kamienicy", "wiki": null},
+      {"kto": "Walery Sławek", "rola": "mieszkaniec, popełnił tu samobójstwo w 1939 roku", "wiki": null},
+      {"kto": "Bogusław Miedziński", "rola": "mieszkaniec przed wojną", "wiki": null},
+      {"kto": "Walter Stamm", "rola": "kierownik Wydziału IV w urzędzie Komendanta SD, cel zamachu z 1944 roku", "wiki": null},
+      {"kto": "Stefan Kisielewski", "rola": "mieszkaniec po 1945 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Jana Chrystiana Szucha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Jana_Chrystiana_Szucha_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych budynku w artykule; podano środek alei z nagłówka."
+  },
+  {
+    "id": "glaz-zamach-19-maja-1942-szucha",
+    "nazwa": "Głaz upamiętniający zamach z 19 maja 1942 roku (al. Szucha)",
+    "name_en": "Boulder commemorating the 19 May 1942 assassination (Szucha Avenue)",
+    "typ": "pomnik",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skwer między al. Jana Chrystiana Szucha a Trasą Łazienkowską",
+    "adres_historyczny": "w miejscu kasyna garnizonowego (nr 29)",
+    "lat": 52.213926,
+    "lon": 21.0219173,
+    "lokalizacja": "przyblizona",
+    "okres": "1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Głaz ustawiono w 1974 roku w miejscu nieistniejącego budynku kasyna garnizonowego (nr 29).",
+      "Upamiętnia zamach przeprowadzony przez Polskich Socjalistów 19 maja 1942 roku.",
+      "Kasyno rozebrano w 1968 roku w związku z budową Trasy Łazienkowskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A stone set up in 1974 on a small square between Szucha Avenue and the Łazienki Route, commemorating a Polish Socialist assassination carried out on 19 May 1942.",
+    "ludzie": [],
+    "dawne_nazwy": ["kasyno garnizonowe (nr 29)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Jana Chrystiana Szucha w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Jana_Chrystiana_Szucha_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie mówi wprost, czy głaz nadal stoi; współrzędne to środek alei z nagłówka."
+  },
+  {
+    "id": "aleja-niepodleglosci",
+    "nazwa": "Aleja Niepodległości",
+    "name_en": "Niepodległości Avenue",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Niepodległości (Mokotów, Ochota, Śródmieście)",
+    "adres_historyczny": "Nordsüdallee (okupacja)",
+    "lat": 52.2158,
+    "lon": 21.0056939,
+    "lokalizacja": "przyblizona",
+    "okres": "1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę zaprojektowano w 1933 roku; jej budowę umożliwiło przeniesienie w 1934 roku lotniska mokotowskiego na Okęcie, a inwestycję ukończono w 1938 roku.",
+      "Nazwę Aleja Niepodległości nadano w 1935 roku; aleja wchłonęła wcześniejsze ulice Topolową i Włodarzewską.",
+      "Ulica miała być pierwszym etapem Trasy N-S; jej przebicie przez Pole Mokotowskie połączyło zachodni Mokotów ze Śródmieściem.",
+      "16 października 1943 roku przed domem pod nr 141 odbyła się pierwsza egzekucja uliczna w Warszawie.",
+      "W 1956 roku na ulicy, która stała się częścią przedłużonej Trasy N-S, ułożono tory tramwajowe.",
+      "W latach 1962–1976 pod nr 213 wzniesiono kompleks Biblioteki Narodowej według projektu Stanisława Fijałkowskiego.",
+      "W 1977 roku nad ulicą zbudowano kładkę dla pieszych łączącą obie części Pola Mokotowskiego."
+    ],
+    "ciekawostki": [
+      "Przed wojną przy ul. Dąbrowskiego mieszkał Stefan Starzyński, a w czasie okupacji w mieszkaniu przy al. Niepodległości 131 mieszkał Czesław Miłosz.",
+      "W okresie okupacji niemieckiej nosiła nazwę Nordsüdallee."
+    ],
+    "summary_en": "A Warsaw avenue running through Mokotów, Ochota and Śródmieście, built in 1933–1938 and named in 1935. It was a battle line in 1944 and became a tram route in 1956.",
+    "ludzie": [
+      {"kto": "Stefan Starzyński", "rola": "prezydent Warszawy, mieszkaniec willi na rogu z ul. Dąbrowskiego", "wiki": null},
+      {"kto": "Stanisław Fijałkowski", "rola": "projektant kompleksu Biblioteki Narodowej", "wiki": null},
+      {"kto": "Czesław Miłosz", "rola": "mieszkaniec przy al. Niepodległości 131 w czasie okupacji", "wiki": null}
+    ],
+    "dawne_nazwy": ["Topolowa (wchłonięta)", "Włodarzewska (wchłonięta)", "Nordsüdallee (okupacja)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Niepodległości w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Niepodleg%C5%82o%C5%9Bci_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka. Rekordy budynków z tej ulicy pominięte w tej paczce."
+  },
+  {
+    "id": "aleja-przyjaciol",
+    "nazwa": "Aleja Przyjaciół",
+    "name_en": "Aleja Przyjaciół (Friends Avenue)",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Przyjaciół (między al. Róż, ul. Koszykową i al. Ujazdowskimi)",
+    "adres_historyczny": null,
+    "lat": 52.2211849,
+    "lon": 21.0227871,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w latach 30. XX wieku; domy budowano według zasad funkcjonalizmu przez architektów z kręgów awangardy.",
+      "Według wspomnień Jerzego Waldorffa na początku XIX wieku goście rodziny Sobańskich sadzili przy alei po kasztanowcu, stąd nazwa „Aleja Przyjaciół”.",
+      "Po wojnie przy ulicy zamieszkali przedstawiciele elit, m.in. Stefania Woytowicz-Rudnicka, Stanisław Rudnicki, Jakub Berman i Józef Cyrankiewicz.",
+      "W mieszkaniu przy al. Przyjaciół 1 w latach 1973–1999 mieszkał Jerzy Waldorff, pisarz i krytyk sztuki."
+    ],
+    "ciekawostki": [
+      "Od nazwy tej ulicy Jarosław Iwaszkiewicz zatytułował swoją książkę wspomnień o przyjaciołach."
+    ],
+    "summary_en": "A short street in a triangle between Aleja Róż, Koszykowa and Aleje Ujazdowskie, lined with 1930s functionalist houses. After the war it was home to many prominent figures of the People's Republic.",
+    "ludzie": [
+      {"kto": "Jerzy Waldorff", "rola": "pisarz, krytyk sztuki, mieszkaniec przy al. Przyjaciół 1", "wiki": null},
+      {"kto": "Stefania Woytowicz-Rudnicka", "rola": "śpiewaczka, mieszkanka ulicy", "wiki": null},
+      {"kto": "Stanisław Rudnicki", "rola": "neurochirurg, mieszkaniec ulicy", "wiki": null},
+      {"kto": "Jakub Berman", "rola": "były wicepremier PRL, mieszkaniec ulicy", "wiki": null},
+      {"kto": "Józef Cyrankiewicz", "rola": "premier PRL, mieszkaniec ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Przyjaciół w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Przyjaci%C3%B3%C5%82_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka."
+  },
+  {
+    "id": "dom-z-zaglem-aleja-przyjaciol-3",
+    "nazwa": "Dom z Żaglem (al. Przyjaciół 3)",
+    "name_en": "House with a Sail (Przyjaciół Avenue 3)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Przyjaciół 3",
+    "adres_historyczny": null,
+    "lat": 52.2211849,
+    "lon": 21.0227871,
+    "lokalizacja": "przyblizona",
+    "okres": "1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek z 1937 roku zaprojektował Juliusz Żórawski; jest typowym przykładem funkcjonalistycznej zabudowy ulicy.",
+      "Wejście główne z podwójnymi drzwiami ma falisty zarys, nawiązujący do zewnętrznej roślinności.",
+      "Schody są odgrodzone przepierzeniem i nie łączą się bezpośrednio z wejściem głównym.",
+      "Eleganckie wykończenie klatki schodowej i inne cechy skłoniły Niemców do rekwirowania mieszkań w czasie wojny.",
+      "Na fasadzie pod nr 3 znajduje się tablica upamiętniająca Stefanię Woytowicz-Rudnicką i Stanisława Rudnickiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1937 functionalist apartment block on Aleja Przyjaciół, designed by Juliusz Żórawski and known as the House with a Sail. Its elegant staircase led the Germans to requisition flats here during the war.",
+    "ludzie": [
+      {"kto": "Juliusz Żórawski", "rola": "autor projektu budynku (1937)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Przyjaciół w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Przyjaci%C3%B3%C5%82_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych budynku w artykule; podano środek ulicy z nagłówka."
+  },
+  {
+    "id": "aleja-wyzwolenia",
+    "nazwa": "Aleja Wyzwolenia",
+    "name_en": "Wyzwolenia Avenue",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Wyzwolenia (między placami Na Rozdrożu i Zbawiciela)",
+    "adres_historyczny": "Droga Królewska",
+    "lat": 52.2198283,
+    "lon": 21.0190608,
+    "lokalizacja": "przyblizona",
+    "okres": "1946–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleja łączy place Na Rozdrożu i Zbawiciela; historycznie jest częścią ulicy Nowowiejskiej, fragmentem Osi Stanisławowskiej z II połowy XVIII wieku.",
+      "Ulica, nazywana pierwotnie Drogą Królewską, biegła od Zamku Ujazdowskiego do wsi Wielka Wola.",
+      "W grudniu 1933 roku nazwano ją al. 6 Sierpnia, upamiętniając wymarsz w 1914 roku Pierwszej Kompanii Kadrowej.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 17 stycznia 1946 roku przemianowano ją na aleję Wyzwolenia.",
+      "Według projektu Eleonory Sekreckiej w latach 1949–1955 powstało wzdłuż alei osiedle mieszkaniowe MDM Latawiec, nazwane od kształtu widzianego z lotu ptaka.",
+      "Ostateczne zamknięcie kształtu alei nastąpiło wraz z budową Trasy Łazienkowskiej."
+    ],
+    "ciekawostki": [
+      "Przed 1875 rokiem po południowej stronie ulicy wybudowano koszary dla rosyjskiego Litewskiego Pułku Lejbgwardii."
+    ],
+    "summary_en": "A Warsaw avenue on the historic Stanisław Axis linking Na Rozdrożu and Zbawiciela squares. Its post-war layout centred on the MDM Latawiec estate designed by Eleonora Sekrecka.",
+    "ludzie": [
+      {"kto": "Eleonora Sekrecka", "rola": "autorka projektu osiedla MDM Latawiec", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Królewska", "al. 6 Sierpnia (1933–1946)", "część ul. Nowowiejskiej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Aleja Wyzwolenia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Wyzwolenia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica: współrzędne to środek odcinka z nagłówka."
+  }
+]

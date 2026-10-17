@@ -1,0 +1,332 @@
+[
+  {
+    "id": "aleja-wojska-polskiego",
+    "nazwa": "Aleja Wojska Polskiego",
+    "name_en": "Wojska Polskiego Avenue",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "al. Wojska Polskiego",
+    "adres_historyczny": null,
+    "lat": 52.2644124,
+    "lon": 20.99251,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Aleję zaprojektował w latach 20. XX wieku Antoni Jawornicki.",
+      "Aleja miała połączyć plac Gwardii na Cytadeli z placem Grunwaldzkim.",
+      "Od 1923 wzdłuż niej zaczęła powstawać luźna zabudowa willowa i jednopiętrowa.",
+      "Nazwa alei została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Była to najszersza ulica w przedwojennej Warszawie (ok. 80 metrów).",
+      "Podczas II wojny światowej częściowemu zniszczeniu uległa zabudowa przy narożu placu Inwalidów oraz między ulicami: Felińskiego i Stołeczną (obecnie ul. ks. Jerzego Popiełuszki).",
+      "W latach 1955–1961 zaczęto wznosić wzdłuż niej piętrowe budynki.",
+      "Układ alei, jej historyczna nawierzchnia oraz zieleń w okolicy placu Inwalidów wpisane są do gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [
+      "W okresie okupacji niemieckiej ulicy nadano nowe nazwy, ale mieszkańcy ich nie używali."
+    ],
+    "summary_en": "Wojska Polskiego Avenue in Żoliborz was designed in the 1920s by Antoni Jawornicki and was once the widest street in prewar Warsaw, about 80 m across. Its name dates from a City Council resolution of 27 September 1926.",
+    "ludzie": [
+      {"kto": "Artur Oppman", "rola": "pułkownik Wojska Polskiego, poeta, publicysta, pamiętnikarz; mieszkał pod nr 11", "wiki": null},
+      {"kto": "Kazimierz Jeżewski", "rola": "pedagog, twórca Towarzystwa Gniazd Sierocych; mieszkał pod nr 20 w latach 1940–1948", "wiki": null},
+      {"kto": "Konrad Millak", "rola": "pułkownik Wojska Polskiego, historyk weterynarii; mieszkał pod nr 23 w latach 1929–1969", "wiki": null},
+      {"kto": "Witold Zawadowski", "rola": "pułkownik Wojska Polskiego, profesor medycyny, pionier polskiej szkoły radiologicznej; mieszkał pod nr 3 w latach 1941–1980", "wiki": null},
+      {"kto": "Krzysztof Komeda", "rola": "pianista i kompozytor jazzowy; mieszkał pod nr 12 w latach 1961–1969", "wiki": null}
+    ],
+    "dawne_nazwy": ["aleja Sportowa (nazwa okupacyjna)", "Sportallee (nazwa okupacyjna)"],
+    "zrodla": [{"tytul": "Wikipedia: Aleja Wojska Polskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Wojska_Polskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "most-krasinskiego",
+    "nazwa": "Most Krasińskiego",
+    "name_en": "Krasiński Bridge (planned)",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Krasińskiego (planowana przeprawa przez Wisłę)",
+    "adres_historyczny": null,
+    "lat": 52.2745981,
+    "lon": 21.0049178,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś (projekt)",
+    "istnieje": false,
+    "fakty": [
+      "Budowę mostu na osi ul. Krasińskiego planowano już w okresie międzywojennym.",
+      "Po wojnie zbudowano czteropasmową ul. Krasińskiego od placu Wilsona do Wisłostrady oraz bezkolizyjne skrzyżowanie z Wisłostradą.",
+      "W 2006 uruchomiono na tym skrzyżowaniu sygnalizację świetlną.",
+      "22 listopada 2006 roku miasto ogłosiło przetarg na projekt mostu; wygrała firma Schüssler Düsseldorf z ofertą na 11,75 mln zł, a po protestach firmy Systra projekt przyznano Francuzom.",
+      "8 marca 2011 roku wydano decyzję środowiskową; jej ważność upłynęła 31 października 2016.",
+      "25 listopada 2015 roku Rada Dzielnicy Żoliborz jednogłośnie przyjęła uchwałę wzywającą Prezydenta m.st. Warszawy do odstąpienia od inwestycji.",
+      "W listopadzie 2016 roku procedura wydawania zezwolenia na tę inwestycję została umorzona."
+    ],
+    "ciekawostki": [
+      "Projekt przewiduje budowę pierwszego w Warszawie mostu łukowego."
+    ],
+    "summary_en": "The Krasiński Bridge was planned over the Vistula to link Krasińskiego Street in Żoliborz with Matki Teresy z Kalkuty Street in Targówek. It has been repeatedly postponed, and the environmental decision expired in 2016.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Most Krasińskiego", "url": "https://pl.wikipedia.org/wiki/Most_Krasi%C5%84skiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Most niezrealizowany (planowany). Artykuł opisuje stan planów sprzed kilku lat, nie aktualny status."
+  },
+  {
+    "id": "most-grota-roweckiego",
+    "nazwa": "Most gen. Stefana Grota-Roweckiego",
+    "name_en": "Gen. Stefan Grot-Rowecki Bridge",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Trasa Toruńska (S8), most nad Wisłą",
+    "adres_historyczny": null,
+    "lat": 52.2871076,
+    "lon": 20.9944761,
+    "lokalizacja": "dokladna",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Most został zbudowany w latach 1977–1981 jako część Trasy Toruńskiej.",
+      "Pierwotnie nosił nazwę most Toruński.",
+      "Pierwsze projekty mostu powstały w latach 60. XX wieku i zakładały most podwieszony na dwóch pylonach; projekt zmieniono ze względu na wysokie koszty.",
+      "Otwarcie mostu dla ruchu nastąpiło 27 listopada 1981 roku, a poświęcenie 28 listopada 1981 roku przez bp. Jerzego Modzelewskiego.",
+      "Most otrzymał imię komendanta głównego Armii Krajowej Stefana Roweckiego „Grota” w drodze ustępstw ze strony państwa.",
+      "Uroczystości poświęcenia mostu stały się masową manifestacją środowisk kombatanckich AK i opozycji demokratycznej.",
+      "Most ma 645 m długości.",
+      "We wrześniu 2009 roku GDDKiA rozpoczęła przebudowę Trasy Toruńskiej wraz z mostem; most poszerzono do dziesięciu pasów ruchu, a prace ostatecznie wykonano w latach 2013–2015."
+    ],
+    "ciekawostki": [
+      "Łożysko zdemontowane podczas remontu mostu w 2015 roku umieszczono w Pontiseum na terenie Instytutu Badawczego Dróg i Mostów."
+    ],
+    "summary_en": "The Gen. Stefan Grot-Rowecki Bridge over the Vistula was built in 1977–1981 as part of the Trasa Toruńska. Its 1981 opening and blessing turned into a mass gathering of veterans and the democratic opposition.",
+    "ludzie": [
+      {"kto": "Jerzy Modzelewski", "rola": "biskup, który 28 listopada 1981 roku poświęcił most", "wiki": null},
+      {"kto": "Witold Witkowski", "rola": "kierował zespołem inżynierów biura projektowego „Stolica” przy projekcie mostu", "wiki": null}
+    ],
+    "dawne_nazwy": ["most Toruński"],
+    "zrodla": [{"tytul": "Wikipedia: Most gen. Stefana Grota-Roweckiego", "url": "https://pl.wikipedia.org/wiki/Most_gen._Stefana_Grota-Roweckiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-dionizego-henkla",
+    "nazwa": "Plac Dionizego Henkla",
+    "name_en": "Dionizy Henkiel Square",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Henkla",
+    "adres_historyczny": null,
+    "lat": 52.2658125,
+    "lon": 20.9792381,
+    "lokalizacja": "dokladna",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa placu została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Patronem placu został dziennikarz i krytyk literacki Dionizy Henkiel.",
+      "Plac zaprojektował Romuald Gutt.",
+      "Wokół placu wybudowano w latach 1922–1925 według projektu Gutta szeregowe wille o dwóch kondygnacjach i czterospadowych dachach w stylu dworkowym.",
+      "Zabudowa ta uległa całkowitemu zniszczeniu w wyniku powstania warszawskiego.",
+      "W 1944 roku działało tu zgrupowanie „Żyrafa”. Powstańcy wycofali się z placu 29 września 1944 roku, dzień przed kapitulacją dzielnicy.",
+      "Nową zabudowę placu zaprojektowali w latach 1951–1952 Jacek Nowicki i Bogusław Karczewski; budynki wzniesione w latach 1953–1956 mają trzy kondygnacje i mansardowe dachy.",
+      "W 2003 roku plac znalazł się na liście dóbr kultury współczesnej Warszawy; od lipca 2012 roku budynki przy nim są w gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [
+      "Inspiracją przy projektowaniu powojennej zabudowy była zabudowa małych miast."
+    ],
+    "summary_en": "Dionizy Henkiel Square is a round square in Żoliborz, laid out by Romuald Gutt with interwar manor-style villas that were destroyed in the 1944 Uprising. The postwar housing around it was designed by Jacek Nowicki and Bogusław Karczewski.",
+    "ludzie": [
+      {"kto": "Dionizy Henkiel", "rola": "patron placu, dziennikarz i krytyk literacki", "wiki": null},
+      {"kto": "Romuald Gutt", "rola": "projektant placu i przedwojennej zabudowy", "wiki": null},
+      {"kto": "Jacek Nowicki", "rola": "projektant powojennej zabudowy placu i ul. Wyspiańskiego", "wiki": null},
+      {"kto": "Bogusław Karczewski", "rola": "współpracował przy powojennej zabudowie placu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Plac Dionizego Henkla w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Dionizego_Henkla_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-grunwaldzki",
+    "nazwa": "Plac Grunwaldzki",
+    "name_en": "Grunwald Square",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Grunwaldzki",
+    "adres_historyczny": null,
+    "lat": 52.2625335,
+    "lon": 20.9798429,
+    "lokalizacja": "dokladna",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa placu została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Przy placu zbiega się 5 ulic: al. Jana Pawła II, al. Wojska Polskiego, ul. ks. Jerzego Popiełuszki, ul. Władysława Broniewskiego i ul. Krystyny Matysiakówny.",
+      "Przy placu znajduje się Pomnik Czynu Zbrojnego Polonii Amerykańskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grunwald Square in Żoliborz is a junction of five streets. Its name comes from a City Council resolution of 27 September 1926, and the Monument to the Armed Deed of Polish Americans stands here.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Plac Grunwaldzki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Grunwaldzki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Krótki artykuł, mało faktów historycznych."
+  },
+  {
+    "id": "plac-inwalidow",
+    "nazwa": "Plac Inwalidów",
+    "name_en": "Invalids Square",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Inwalidów",
+    "adres_historyczny": null,
+    "lat": 52.2644078,
+    "lon": 20.9914108,
+    "lokalizacja": "dokladna",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na miejscu dzisiejszego placu znajdował się wzniesiony w latach 60. XIX wieku fort Gieorgija, jeden z fortów Cytadeli.",
+      "Plac wytyczono w 1923 roku na osi ulicy Mickiewicza, przy przecięciu z ulicą Czarnieckiego i aleją Wojska Polskiego, jako jeden z dwóch wielkich placów powstającego Żoliborza.",
+      "Pierwszy budynek przy placu (nr 10, tzw. dom zbiorowy lub Dom Oficerski) ukończono w 1924 roku.",
+      "20 grudnia 1924 roku oddano do użytku linię tramwajową wybudowaną przez plac w ciągu ul. Mickiewicza.",
+      "Nazwa placu, nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926, upamiętnia inwalidów I wojny światowej.",
+      "W latach 20. i 30. plac został otoczony budynkami Mieszkaniowego Stowarzyszenia Spółdzielni Oficerów i Warszawskiej Spółdzielni Mieszkaniowej.",
+      "Zabudowa placu nie została zniszczona podczas II wojny światowej."
+    ],
+    "ciekawostki": [
+      "Po 1945 roku w budynku nr 10 działało kino „Światowid”."
+    ],
+    "summary_en": "Invalids Square in Żoliborz was laid out in 1923 on the site of the 1860s Fort Gieorgija of the Citadel. Its name honours the invalids of the First World War, and its surrounding buildings survived the Second World War intact.",
+    "ludzie": [
+      {"kto": "Romuald Gutt", "rola": "projektant budynku dawnego hotelu oficerskiego (nr 10), wzniesionego w latach 1922–1925", "wiki": null}
+    ],
+    "dawne_nazwy": ["fort Gieorgija (wcześniejsze miejsce)"],
+    "zrodla": [{"tytul": "Wikipedia: Plac Inwalidów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Inwalid%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "plac-wilsona",
+    "nazwa": "Plac Thomasa Woodrowa Wilsona",
+    "name_en": "Woodrow Wilson Square",
+    "typ": "miejsce",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Thomasa Woodrowa Wilsona",
+    "adres_historyczny": null,
+    "lat": 52.2686064,
+    "lon": 20.9870075,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac został wytyczony ok. 1923 roku według projektu Józefa Jankowskiego, Tadeusza Tołwińskiego i Antoniego Jawornickiego w ciągu ulicy Adama Mickiewicza; nazwano go wtedy placem Stefana Żeromskiego.",
+      "21 lutego 1924 roku Rada Miasta postanowiła uczcić pamięć prezydenta Thomasa Woodrowa Wilsona, zmarłego 3 lutego.",
+      "Nazwę placu upamiętniającą amerykańskiego prezydenta nadano uchwałą Rady Miejskiej z dnia 27 września 1926.",
+      "W 1940 roku okupacyjne władze niemieckie zmieniły nazwę placu na Danziger Platz (plac Gdański).",
+      "Uchwałą Rady Narodowej z dnia 5 kwietnia 1951 roku nazwę zmieniono na plac Komuny Paryskiej; historyczną nazwę przywrócono 28 lutego 1990 roku.",
+      "3 maja 1943 roku o godz. 18.00 ze znajdującego się na placu głośnika ulicznego nadano audycję patriotyczną Kierownictwa Walki Cywilnej, zakończoną hymnem narodowym.",
+      "W 1944 roku zabudowa placu została częściowo zniszczona, a I kolonia Warszawskiej Spółdzielni Mieszkaniowej została zniszczona całkowicie.",
+      "W 1961 roku w budynku wzniesionym w miejscu I kolonii WSM otwarto kino „Wisła”."
+    ],
+    "ciekawostki": [
+      "W opinii Rady Języka Polskiego nazwa placu jest tradycyjnie wymawiana w wersji spolszczonej, z głoską w’ na początku.",
+      "Do nazwy placu nawiązuje tytuł lokalnego miesięcznika „Wilsoniak”."
+    ],
+    "summary_en": "Woodrow Wilson Square in Żoliborz was laid out around 1923 and named in 1926 after the US president who died in 1924. It was renamed by the German occupiers in 1940 and by the communist authorities in 1951, and the historic name returned in 1990.",
+    "ludzie": [
+      {"kto": "Józef Jankowski", "rola": "autor projektu placu (ok. 1923)", "wiki": null},
+      {"kto": "Tadeusz Tołwiński", "rola": "autor projektu placu (ok. 1923)", "wiki": null},
+      {"kto": "Antoni Jawornicki", "rola": "autor projektu placu (ok. 1923)", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Stefana Żeromskiego (ok. 1923)", "Danziger Platz / plac Gdański (1940)", "plac Komuny Paryskiej (1951–1990)"],
+    "zrodla": [{"tytul": "Wikipedia: Plac Thomasa Woodrowa Wilsona w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Thomasa_Woodrowa_Wilsona_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "trasa-armii-krajowej",
+    "nazwa": "Trasa Armii Krajowej",
+    "name_en": "Home Army Route",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "Trasa Armii Krajowej (od ul. Wybrzeże Gdyńskie do al. Prymasa Tysiąclecia)",
+    "adres_historyczny": null,
+    "lat": 52.2630266,
+    "lon": 20.9534693,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trasę zaczęto budować w latach 80. XX w., likwidując dawne ulice.",
+      "Wraz z budową arterii przedłużono ulicę Adama Mickiewicza do ulicy Rudzkiej.",
+      "Odcinek od ulicy Wybrzeże Gdyńskie (Wisłostrada) do ulicy Słowackiego oddano w 1986 roku, a odcinek do ul. Broniewskiego w 1995 roku.",
+      "W 2001 roku trasę przedłużono do alei Prymasa Tysiąclecia.",
+      "W 2011 roku oddano do ruchu al. Obrońców Grodna, stanowiącą przedłużenie Trasy AK w kierunku zachodnim.",
+      "Umowę z przedsiębiorstwem Metrostav na przebudowę trasy do parametrów drogi ekspresowej podpisano 18 lipca 2013 roku.",
+      "Przebudowaną arterię oddano do użytku 21 września 2015 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Home Army Route is an expressway-standard artery linking the northern districts of left-bank Warsaw. It was built from the 1980s onward and rebuilt to expressway standards in 2013–2015.",
+    "ludzie": [],
+    "dawne_nazwy": ["aleja Armii Krajowej"],
+    "zrodla": [{"tytul": "Wikipedia: Trasa Armii Krajowej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Trasa_Armii_Krajowej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Trasa należy do S8 i S7; współrzędne to środek odcinka wg nagłówka."
+  },
+  {
+    "id": "ulica-pawla-suzina",
+    "nazwa": "Ulica Pawła Suzina",
+    "name_en": "Paweł Suzin Street",
+    "typ": "ulica",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Pawła Suzina",
+    "adres_historyczny": null,
+    "lat": 52.2678954,
+    "lon": 20.9808337,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926.",
+      "Jej patronem jest Paweł Suzin – powstaniec styczniowy.",
+      "W latach 1945–1947 wzdłuż ulicy biegły tory wąskotorowej kolejki gruzowej.",
+      "Na budynku nr 3 znajduje się tablica upamiętniająca miejsce urodzenia Lecha Kaczyńskiego.",
+      "Przy ulicy znajdowały się dawne kino „Tęcza” i teatr TrzyRzecze."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Paweł Suzin Street in Żoliborz is named after a January Uprising veteran. It is the site of the first fights of the 1944 Warsaw Uprising, and a plaque on building no. 3 marks the birthplace of Lech Kaczyński.",
+    "ludzie": [
+      {"kto": "Paweł Suzin", "rola": "patron ulicy, powstaniec styczniowy", "wiki": null},
+      {"kto": "Lech Kaczyński", "rola": "urodzony na terenie budynku nr 3 (upamiętnione tablicą)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Pawła Suzina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Paw%C5%82a_Suzina_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kotlownia-wsm-ul-suzina",
+    "nazwa": "Dawna kotłownia Warszawskiej Spółdzielni Mieszkaniowej",
+    "name_en": "Former WSM boiler house",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "ul. Suzina przy ul. Próchnika",
+    "adres_historyczny": null,
+    "lat": 52.2678954,
+    "lon": 20.9808337,
+    "lokalizacja": "przyblizona",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1 sierpnia 1944 roku, ok. 15.30, niemieckie pogotowie policyjne zaskoczyło na ulicy grupę powstańców pobierających broń w kotłowni Warszawskiej Spółdzielni Mieszkaniowej.",
+      "W czasie walki poległo 12 powstańców, wśród nich dowódca SOB Włodzimierz Kaczanowski.",
+      "Na ścianie kotłowni odsłonięto w 1957 roku tablicę upamiętniającą pierwsze walki powstania warszawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The former boiler house of the Warsaw Housing Cooperative at Suzin and Próchnika streets is where insurgents collected weapons on the first day of the 1944 Uprising, and a plaque on its wall commemorates the fighting.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Pawła Suzina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Paw%C5%82a_Suzina_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy (artykuł o ulicy); miejsce przybliżone."
+  }
+]

@@ -1,0 +1,325 @@
+[
+  {
+    "id": "cmentarz-wawrzyszewski",
+    "nazwa": "Cmentarz Wawrzyszewski",
+    "name_en": "Wawrzyszew Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Wólczyńska, Bielany (cmentarz rzymskokatolicki)",
+    "adres_historyczny": "wiejski cmentarz Wawrzyszewa",
+    "lat": 52.2789,
+    "lon": 20.9269,
+    "lokalizacja": "przyblizona",
+    "okres": "1830–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nekropolia została założona jako wiejski cmentarz dla mieszkańców Wawrzyszewa; zajmuje 6,5 ha i była dwukrotnie powiększana.",
+      "Najstarszy grób pochodzi z 1830 roku i należy do sztabskapitana Konstantego Brzozowskiego z 2 batalionu saperów, zmarłego we wsi Wawrzyszew 8 lipca 1830 roku.",
+      "Na cmentarzu znajduje się grób Barbary z Chomiczów Jahołkowskiej; od jej rodowego nazwiska pochodzi nazwa Chomiczówki.",
+      "Kwatera wojenna mieści ok. 500 żołnierzy 30 Pułku Strzelców Kaniowskich, poległych w obronie północnych granic Warszawy we wrześniu 1939 roku, pochowanych wraz z dowódcą, majorem Bronisławem Kamińskim.",
+      "Obok mogił żołnierzy września 1939 znajdują się groby żołnierzy powstania warszawskiego oraz ludności cywilnej rozstrzelanej w 1939 roku na Wawrzyszewie.",
+      "Większa część cmentarza to groby powojenne; gdy zapełnił się cmentarz Powązkowski, chowano tu również mieszkańców z innych części miasta. Obecnie cmentarz jest zapełniony.",
+      "Rolę kaplicy cmentarnej pełni kościół św. Marii Magdaleny, położony po drugiej stronie ul. Wólczyńskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wawrzyszew Cemetery in Bielany began as a village cemetery; its oldest grave dates from 1830. It holds a war grave of about 500 soldiers of the 30th Rifle Regiment who fell in September 1939, and it is now full.",
+    "ludzie": [
+      {"kto": "Konstanty Brzozowski", "rola": "sztabskapitan, 2 batalion saperów; najstarszy grób (1830)", "wiki": null},
+      {"kto": "Bronisław Kamiński", "rola": "major, dowódca 30 Pułku Strzelców Kaniowskich; pochowany wraz z żołnierzami", "wiki": null},
+      {"kto": "Anna Jantar", "rola": "piosenkarka (1950–1980), pochowana na cmentarzu", "wiki": null},
+      {"kto": "Józef Below", "rola": "artysta rzeźbiarz (1904–1939), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Władysław Jania", "rola": "rzeźbiarz (1913–2008), pochowany na cmentarzu", "wiki": null},
+      {"kto": "Kazimierz Kalinowski", "rola": "kolarz szosowy, uczestnik I i II Tour de Pologne (grób symboliczny)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz Wawrzyszewski", "url": "https://pl.wikipedia.org/wiki/Cmentarz_Wawrzyszewski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Lista pochowanych w artykule jest długa; wybrano sześć nazwisk. Współrzędne z nagłówka. Adres dzisiejszy nie jest w artykule (wpisano z ogólnej lokalizacji), do weryfikacji."
+  },
+  {
+    "id": "cmentarz-zolnierzy-wloskich",
+    "nazwa": "Cmentarz Żołnierzy Włoskich",
+    "name_en": "Italian Soldiers' Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Marymoncka 40",
+    "adres_historyczny": null,
+    "lat": 52.298545,
+    "lon": 20.943393,
+    "lokalizacja": "dokladna",
+    "okres": "1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na cmentarzu o powierzchni 0,8 ha pochowano 898 żołnierzy włoskich wziętych do niewoli przez wojska Cesarstwa Niemieckiego na froncie włoskim i zmarłych w obozach jenieckich w Polsce podczas I wojny światowej, w szesnastu rzędach.",
+      "Pochowano tu też 1415 obywateli Włoch poległych lub zamordowanych w hitlerowskich obozach jenieckich i koncentracyjnych podczas II wojny światowej; ich prochy złożono na cmentarzu w latach 1957–1967.",
+      "Cmentarz zaprojektowało Biuro Techniczne Komisariatu Głównego ds. Cmentarzy Wojskowych w Rzymie; realizację sfinansował rząd włoski.",
+      "Z Włoch dostarczono kamienie nagrobne oraz elementy ogrodzenia; projekt utrzymano w monumentalnym stylu czasów Mussoliniego.",
+      "Na środku cmentarza stoi tablica ku czci sześciu włoskich generałów zamordowanych przez oddział Waffen-SS 28 stycznia 1945 roku w Kuźnicy Żelichowskiej.",
+      "W 1970 roku cmentarz gruntownie odremontowano; usunięto pierwotną monumentalną bramę z piaskowca, zastąpioną kutą żelazną furtką.",
+      "Nekropolia znajduje się pod opieką Ambasady Włoch w Polsce."
+    ],
+    "ciekawostki": [
+      "Niewysokie kamienne ogrodzenie zdobią gałęzie wawrzynu i panoplia, czyli tarcze legionów rzymskich."
+    ],
+    "summary_en": "The Italian Soldiers' Cemetery on Marymoncka Street holds about 900 Italian prisoners of war from the First World War and some 1,400 Italian citizens who died in German camps in the Second World War. Its monumental Mussolini-era design was funded by the Italian government.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz Żołnierzy Włoskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cmentarz_%C5%BBo%C5%82nierzy_W%C5%82oskich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z treści artykułu (przy ul. Marymonckiej 40). Współrzędne z nagłówka."
+  },
+  {
+    "id": "dom-grebalowska-11",
+    "nazwa": "Dom przy ul. Grębałowskiej 11",
+    "name_en": "House at 11 Grębałowska Street",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Grębałowska 11",
+    "adres_historyczny": null,
+    "lat": 52.283611111,
+    "lon": 20.9525,
+    "lokalizacja": "dokladna",
+    "okres": "lata 30. XX wieku–2023",
+    "istnieje": false,
+    "fakty": [
+      "Jednorodzinny budynek mieszkalny wybudowany w latach 30. XX wieku według projektu Romualda Millera, na Starych Bielanach.",
+      "Pierwszy z domów według tego projektu prezentowano w 1932 roku na wystawie budowlano-mieszkaniowej „Tani Dom Własny”; wzniesione wtedy domy dały początek osiedlu „Związkowiec”.",
+      "Romuald Miller za swój projekt, nazwany wówczas domem nr 12, otrzymał nagrodę główną.",
+      "Od 2010 roku obiekt był ujęty w wojewódzkiej ewidencji zabytków, a od 2012 roku w gminnej ewidencji zabytków.",
+      "6 września 2023 roku mazowiecki wojewódzki konserwator zabytków prof. Jakub Lewicki rozpoczął procedurę wpisu do rejestru zabytków dawnego terenu wystawy „Tani Dom Własny” (ograniczonego ulicami Barcicką, Twardowską i Cegłowską).",
+      "W tym samym miesiącu ówczesny właściciel rozpoczął rozbiórkę obiektu; rozpoczęcie procedury wpisu uniemożliwia prace budowlane.",
+      "25 września 2023 roku przedstawiciele wojewódzkiego konserwatora zabytków, w asyście policji, skontrolowali miejsce rozbiórki i zawiadomili Prokuraturę Rejonową Warszawa-Żoliborz o popełnieniu przestępstwa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1930s single-family house on Grębałowska Street in Stare Bielany, designed by Romuald Miller for the 'Tani Dom Własny' exhibition. The owner began demolishing it in September 2023 while the heritage listing was being initiated, and the prosecutor was notified.",
+    "ludzie": [
+      {"kto": "Romuald Miller", "rola": "architekt projektu; dom nagrodzony główną nagrodą na wystawie Tani Dom Własny (1932)", "wiki": null},
+      {"kto": "Jakub Lewicki", "rola": "mazowiecki wojewódzki konserwator zabytków, który rozpoczął procedurę wpisu (2023)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom przy ul. Grębałowskiej 11 w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_przy_ul._Gr%C4%99ba%C5%82owskiej_11_w_Warszawie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł nie potwierdza, czy budynek został w całości rozebrany; istnieje ustawione na false, do weryfikacji. Współrzędne z nagłówka."
+  },
+  {
+    "id": "deby-mlocinskie",
+    "nazwa": "Dęby Młocińskie",
+    "name_en": "Młociny Oaks",
+    "typ": "park",
+    "dzielnica": "Bielany",
+    "adres_dzis": "rejon ulic Encyklopedycznej i Michaliny, Młociny",
+    "adres_historyczny": "Lasy Młocińskie",
+    "lat": 52.305556,
+    "lon": 20.922778,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół przyrodniczo-krajobrazowy o powierzchni 9,26 ha w rejonie Młocin ustanowiono rozporządzeniem wojewody mazowieckiego z 1 lipca 2002 roku.",
+      "Zespół jest pozostałością dawnych Lasów Młocińskich należących do starosty warszawskiego.",
+      "W XVIII wieku obszar był własnością Henryka Brühla, który założył tam bażantarnię i zwierzyniec.",
+      "Ostatni właściciel przed I wojną światową, pułkownik carski, założył park; pozostałością są dwie aleje – grabowa i kasztanowcowa.",
+      "Od lat 50. XX wieku teren ochronny w większości należał do Huty Warszawa, a od 2005 roku do spółki ArcelorMittal.",
+      "W grudniu 2018 roku nieruchomość została sprzedana przez spółkę miastu stołecznemu Warszawie.",
+      "We wschodniej części zespołu, przy ul. Michaliny, znajduje się upamiętnienie żołnierzy AK poległych podczas ataku na lotnisko bielańskie podczas powstania warszawskiego w sierpniu 1944 roku.",
+      "W 2019 roku miasto odkupiło prawa do działki w rejonie ulic Encyklopedycznej i Michaliny."
+    ],
+    "ciekawostki": [
+      "Po pracach porządkowych i pielęgnacyjnych prowadzonych przez Lasy Miejskie las zyskał status ogólnodostępnego; w zespole chroniony jest m.in. drzewostan z pomnikowymi dębami szypułkowymi."
+    ],
+    "summary_en": "Młociny Oaks is a 9.26 ha nature and landscape complex in Młociny, protected since 2002. It is a remnant of the old Młociny forests, once owned by Henryk Brühl, with a Russian colonel's park from before the First World War and a memorial to Home Army soldiers.",
+    "ludzie": [
+      {"kto": "Henryk Brühl", "rola": "właściciel obszaru w XVIII wieku; założył bażantarnię i zwierzyniec", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Lasy Młocińskie"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dęby Młocińskie", "url": "https://pl.wikipedia.org/wiki/D%C4%99by_M%C5%82oci%C5%84skie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Adres ogólny (wzięty z opisu lokalizacji w artykule), do weryfikacji."
+  },
+  {
+    "id": "egzekucja-w-wolce-weglowej",
+    "nazwa": "Egzekucja w Wólce Węglowej",
+    "name_en": "Execution in Wólka Węglowa",
+    "typ": "zdarzenie",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "okolice wsi Wólka Węglowa, na obrzeżach Puszczy Kampinoskiej",
+    "lat": 52.300733,
+    "lon": 20.893336,
+    "lokalizacja": "przyblizona",
+    "okres": "wiosna 1943",
+    "istnieje": false,
+    "fakty": [
+      "Zbrodnia dokonana przez okupantów niemieckich wiosną 1943 roku; w okolicach Wólki Węglowej, na obrzeżach Puszczy Kampinoskiej, rozstrzelano 15 osób.",
+      "Podczas ekshumacji prowadzonych przez Polski Czerwony Krzyż w dniach 14 i 16 maja 1947 roku odnaleziono pojedynczą zbiorową mogiłę z szczątkami 15 ofiar, w tym jednej kobiety.",
+      "Według informacji od miejscowej ludności Niemcy mieli dokonać mordu na początku maja 1943 roku.",
+      "Zbrodnia w Wólce Węglowej jest zaliczana do tzw. „egzekucji pierścienia warszawskiego”, podobnie jak egzekucje w pobliskich Laskach i na Wydmach Łuże.",
+      "Szczątki 15 ofiar pochowano na cmentarzu w Palmirach, gdzie spoczywają wraz z ponad 2000 ofiar niemieckiego terroru odnalezionych po wojnie w innych miejscach kaźni nieopodal Warszawy."
+    ],
+    "ciekawostki": [
+      "Nie udało się zidentyfikować żadnego z ciał ani ustalić, czy ofiary przywieziono z jednego z warszawskich więzień."
+    ],
+    "summary_en": "In spring 1943 German occupiers shot 15 people near Wólka Węglowa on the edge of the Kampinos Forest. The remains were exhumed in May 1947 and buried at Palmiry; none of the victims was identified.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Egzekucja w Wólce Węglowej", "url": "https://pl.wikipedia.org/wiki/Egzekucja_w_W%C3%B3lce_W%C4%99glowej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie jednorazowe; istnieje ustawione na false. Współrzędne z nagłówka (52.300733, 20.893336)."
+  },
+  {
+    "id": "fort-i-twierdzy-warszawa",
+    "nazwa": "Fort I Twierdzy Warszawa",
+    "name_en": "Fort I of the Warsaw Fortress",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Fort I „Bielany”",
+    "lat": 52.2981,
+    "lon": 20.9486,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort I („Bielany”) jest jednym z fortów Twierdzy Warszawa, wybudowanym w latach 80. XIX wieku na terenie obecnej dzielnicy Bielany.",
+      "Fort posiadał wały ziemne osobno dla piechoty i artylerii, otoczone suchą fosą.",
+      "W ramach likwidacji twierdzy zniszczono wszystkie elementy bojowe fortu.",
+      "W okresie międzywojennym w forcie mieściła się strzelnica wojskowa.",
+      "Po 1947 roku zniszczono ceglane koszary szyjowe fortu, pierwotnie o długości ok. 100 metrów.",
+      "Podczas budowy Wisłostrady w latach 70. XX wieku zniwelowano wschodnią część wałów fortu.",
+      "Teren fortu wykorzystywany jest obecnie do celów sportowych; najlepiej zachowana jest jego północna część, przylegająca do cmentarza Żołnierzy Włoskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort I 'Bielany' was one of the forts of the Warsaw Fortress, built in the 1880s. Its combat elements were removed in the liquidation of the fortress, and the Wisłostrada construction in the 1970s cut into its eastern ramparts.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Fort I „Bielany”"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort I Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_I_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka."
+  },
+  {
+    "id": "fort-ii-twierdzy-warszawa",
+    "nazwa": "Fort II Twierdzy Warszawa",
+    "name_en": "Fort II of the Warsaw Fortress",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Fort II „Wawrzyszew”",
+    "lat": 52.277778,
+    "lon": 20.9075,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Fort II („Wawrzyszew”) jest jednym z fortów Twierdzy Warszawa, wybudowanym w latach 80. XIX wieku.",
+      "Fort miał zamknąć lukę między terenami leśnymi Puszczy Kampinoskiej a Wisłą; zaprojektowano go jako dzieło nieregularne, co było rzadkością w rosyjskiej fortyfikacji na ziemiach polskich.",
+      "Fort miał ok. 400 metrów szerokości u podstawy i ok. 250 metrów głębokości; otoczony był mokrą fosą.",
+      "Głównym obiektem zaplecza były ceglane koszary o długości ok. 130 metrów.",
+      "Po 1909 roku fort został rozbrojony i częściowo rozebrany.",
+      "W czasie II wojny światowej mieściły się tu niemieckie magazyny; 13–14 czerwca 1943 roku oddział bojowy Milicji Ludowej RPPS dokonał na nie wypadu, niszcząc część zgromadzonych materiałów.",
+      "W 1993 roku fort został wpisany do rejestru zabytków; jest własnością Agencji Mienia Wojskowego."
+    ],
+    "ciekawostki": [
+      "Poprzedni w kolejności był Fort I „Bielany”, a następny, wysunięty przed linię, fort IIA „Babice”."
+    ],
+    "summary_en": "Fort II 'Wawrzyszew' was built in the 1880s to close the gap between the Kampinos Forest and the Vistula. It was disarmed after 1909, used as a German depot in the Second World War, and entered in the heritage register in 1993.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Fort II „Wawrzyszew”"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort II Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_II_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Artykuł podaje, że umocnienie leży na północ od lotniska na Bemowie, co nie pasuje do położenia na Bielanach; do weryfikacji."
+  },
+  {
+    "id": "hala-lekkoatletyczna-janusza-kusocinskiego",
+    "nazwa": "Hala lekkoatletyczna im. Janusza Kusocińskiego",
+    "name_en": "Janusz Kusociński Athletics Hall",
+    "typ": "sport",
+    "dzielnica": "Bielany",
+    "adres_dzis": "ul. Marymoncka 34",
+    "adres_historyczny": "Wielka hala ćwiczeń (Hala AWF)",
+    "lat": 52.286388888,
+    "lon": 20.958055555,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Halę zaprojektował Edgar Norwerth; konstrukcję wykonał Stanisław Hempel, a kierownikiem budowy był Maksymilian Dudryk.",
+      "Hala była największym budynkiem Centralnego Instytutu Wychowania Fizycznego im. Józefa Piłsudskiego; zamawiającym był Departament Budownictwa Ministerstwa Spraw Wojskowych.",
+      "Wymiary: 136 m długości, 22 m szerokości i 10 m wysokości; powierzchnia użytkowa 2999 m², kubatura 39 600 m³.",
+      "Konstrukcja żelbetowa składa się z 26 żeber ustawionych co 6 metrów.",
+      "Wielka hala ćwiczeń została wybudowana w latach 1928–1930 wraz z resztą kompleksu; prace wykończeniowe trwały do 1935 roku.",
+      "W czasie II wojny światowej budynek uległ częściowemu zniszczeniu; odbudowano go w latach 1945–1948.",
+      "W 1954 roku odbył się tu II Zjazd Polskiej Zjednoczonej Partii Robotniczej.",
+      "W hali rozgrywano Zimowe Mistrzostwa Polski Seniorów w Lekkoatletyce w 1955 i 1956 roku oraz halowe mistrzostwa Polski seniorów w latach 1973–1987.",
+      "W 2014 roku odbyły się tu mistrzostwa świata w pięcioboju nowoczesnym.",
+      "Hala została wpisana do rejestru zabytków jako część zespołu AWF pod nr 11-A z 24 maja 2001 roku."
+    ],
+    "ciekawostki": [
+      "W 1930 roku węgierskie czasopismo „Térés forma” skrytykowało użycie konstrukcji żelbetowej zamiast żelaznej.",
+      "Hala została wybrana przez Martę Leśniakowską do katalogu 299 najbardziej reprezentatywnych obiektów Warszawy z lat 1918–1939."
+    ],
+    "summary_en": "The Janusz Kusociński Athletics Hall at the Józef Piłsudski University of Physical Education is a reinforced concrete hall built in 1928–1930. It was the largest building of the original institute, hosted Polish championships and a 2014 world modern pentathlon championship, and is on the heritage register.",
+    "ludzie": [
+      {"kto": "Edgar Norwerth", "rola": "projektant hali", "wiki": null},
+      {"kto": "Stanisław Hempel", "rola": "odpowiadał za konstrukcję hali", "wiki": null},
+      {"kto": "Maksymilian Dudryk", "rola": "kierownik budowy", "wiki": null},
+      {"kto": "Janusz Kusociński", "rola": "patron hali; absolwent AWF i olimpijczyk", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Wielka hala ćwiczeń",
+      "Hala AWF"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hala lekkoatletyczna im. Janusza Kusocińskiego", "url": "https://pl.wikipedia.org/wiki/Hala_lekkoatletyczna_im._Janusza_Kusoci%C5%84skiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Adres z treści artykułu (ul. Marymoncka 34)."
+  },
+  {
+    "id": "huta-warszawa",
+    "nazwa": "Huta (Warszawa)",
+    "name_en": "Huta, Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "adres_historyczny": "Placówka (obrońcy „Placówki”, wrzesień 1939)",
+    "lat": 52.29603,
+    "lon": 20.916732,
+    "lokalizacja": "przyblizona",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "21 września 1939 roku na tym terenie rozegało się wydarzenie określane jako Warszawskie Termopile.",
+      "1. batalion 30. Pułku Strzelców Kaniowskich powstrzymał natarcie niemieckiej 24. Dywizji Piechoty, wspartej czołgami i ogniem 70 dział.",
+      "Obrońcy Placówki, tracąc ok. 600 żołnierzy, ułatwili przedostanie się do Warszawy niedobitkom armii „Pomorze” i „Poznań”, rozbitym w bitwie nad Bzurą."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Huta is a Bielany housing area and urban-monitoring zone. On 21 September 1939 the 1st Battalion of the 30th Rifle Regiment held back a German attack here, a defence known as the Warsaw Thermopylae.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Huta (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Huta_%28Warszawa%29"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki. Nie mylić z zakładem ArcelorMittal Warszawa (ten artykuł pominięto jako firmę). Nazwa Placówka w tekście wskazuje na sąsiednią miejscowość; do weryfikacji."
+  }
+]

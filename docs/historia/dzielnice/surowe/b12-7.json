@@ -1,0 +1,77 @@
+[
+  {
+    "id": "ulica-filtrowa",
+    "nazwa": "Ulica Filtrowa",
+    "name_en": "Filtrowa Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Filtrowa",
+    "adres_historyczny": null,
+    "lat": 52.2186842, "lon": 21.0058864,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę przeprowadzono około 1893 roku, początkowo na odcinku od ul. Suchej (obecnie Krzywickiego) do Raszyńskiej, przy okazji powiększania terenów Stacji Filtrów.",
+      "Fragment między Topolową (dziś al. Niepodległości) a Suchą powstał przed 1914 rokiem; uregulowano go w związku z budową Kolonii Staszica około 1922 roku.",
+      "Końcowy fragment wytyczono ok. 1922 roku do pl. Narutowicza; początkowy, między al. Niepodległości a Polem Mokotowskim, powstał ok. 1927 roku.",
+      "W 1926 roku ulicą pojechał pierwszy tramwaj, łączący ul. Suchą z pl. Narutowicza.",
+      "W 1938 roku przy ulicy założono park Wielkopolski.",
+      "Jedynym budynkiem służącym ogółowi społeczeństwa w okresie międzywojennym stał się gmach Urzędu Województwa Warszawskiego, wybudowany w 1938 roku pod nr 57.",
+      "W 1944 roku zabudowa ulicy spłonęła; dzięki późnemu okresowi jej powstania i nowoczesnej konstrukcji wszystkie domy odbudowano do 1950 roku.",
+      "W okresie powojennym we wschodniej części ulicy, w miejscu dawnego toru wyścigów konnych, powstały nowe zabudowania Politechniki Warszawskiej."
+    ],
+    "ciekawostki": [
+      "Tereny od Filtrowej po ul. Wawelską zajmowały drewniane baraki koszarowe, użytkowane do 1915 roku przez wojska rosyjskie; samą ulicę przecinała wiodąca do nich bocznica kolejowa."
+    ],
+    "summary_en": "Filtrowa Street, on the border of Ochota and Śródmieście, takes its name from the water filtration station complex on its north side. It was laid out around 1893 with the expansion of the station and became a major transport link. Its prewar buildings burned in 1944 and were rebuilt by 1950; the Warsaw Voivodeship Office at no. 57 dates from 1938.",
+    "ludzie": [
+      {"kto": "Lubecki", "rola": "patron Spółdzielni Budowlano-Mieszkaniowej im. Lubeckiego, która zabudowywała tereny przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Filtrowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Filtrowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dzielnice Ochota i Śródmieście; w rekordzie dzielnica z nagłówka (Śródmieście)."
+  },
+  {
+    "id": "ulica-flory",
+    "nazwa": "Ulica Flory",
+    "name_en": "Flory Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Flory",
+    "adres_historyczny": null,
+    "lat": 52.2130111, "lon": 21.0239154,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1900 roku podczas parcelacji zachodniej części posiadłości „Bagatela”, należącej niegdyś do malarza Marcella Bacciarellego.",
+      "W 1912 roku ulicę skanalizowano; do 1914 roku wybudowano pięć kamienic po nieparzystej stronie ulicy.",
+      "Jedną z kamienic (nr 1) zaprojektowali Karol Jankowski i Franciszek Lilpop.",
+      "Nazwa, pochodząca prawdopodobnie od imienia Flory, bogini kwiatów, została nadana w 1933 roku i najpewniej wiązała się z pobliską siedzibą Towarzystwa Ogrodniczego Warszawskiego przy ul. Bagatela.",
+      "W latach 1934–1935 u zbiegu z Klonową wybudowano kamienicę dr. Jana Edmunda Reymana, współzałożyciela Warszawskiej Kooperatywy Mieszkaniowej.",
+      "Autorem projektu kamienicy Reymana był Romuald Gutt; dom jako jedyny przy ulicy został całkowicie zburzony podczas ostatniej wojny.",
+      "Pozostałe kamienice do dziś stanowią cenny przykład zwartej zabudowy śródmieścia Warszawy."
+    ],
+    "ciekawostki": [
+      "Przy ulicy znajduje się Zespół Rezydencji Belweder Klonowa Kancelarii Prezydenta RP (nr 2) oraz kamienica Gessnera (nr 3)."
+    ],
+    "summary_en": "Flory Street in Ujazdów, Śródmieście, runs from Klonowa to Bagatela streets. It was laid out in 1900 on part of the Bagatela estate once owned by the painter Marcello Bacciarelli. It was named in 1933, probably after Flora, goddess of flowers, and possibly in reference to the nearby Warsaw Horticultural Society.",
+    "ludzie": [
+      {"kto": "Marcello Bacciarelli", "rola": "malarz; posiadłość Bagatela należała niegdyś do niego", "wiki": null},
+      {"kto": "Karol Jankowski", "rola": "współprojektant kamienicy nr 1", "wiki": null},
+      {"kto": "Franciszek Lilpop", "rola": "współprojektant kamienicy nr 1", "wiki": null},
+      {"kto": "Jan Edmund Reyman", "rola": "dr; współzałożyciel Warszawskiej Kooperatywy Mieszkaniowej i wykładowca Wyższej Szkoły Handlowej; kamienica na zbiegu z Klonową (1934–1935)", "wiki": null},
+      {"kto": "Romuald Gutt", "rola": "autor projektu kamienicy Reymana", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Flory w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Flory_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje dzielnicę Ujazdów; w rekordzie dzielnica z nagłówka (Śródmieście)."
+  }
+]

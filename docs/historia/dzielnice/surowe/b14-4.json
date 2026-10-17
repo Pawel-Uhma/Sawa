@@ -1,0 +1,287 @@
+[
+  {
+    "id": "ulica-mysia",
+    "nazwa": "ulica Mysia",
+    "name_en": "Mysia Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mysia",
+    "adres_historyczny": "Mysza (XVIII w.)",
+    "lat": 52.2306147,
+    "lon": 21.0204061,
+    "lokalizacja": "przyblizona",
+    "okres": "1790–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą narolną; w XVIII wieku była małą i wąską uliczką, stąd nazwa Mysza.",
+      "Obecna nazwa jest stosowana od 1790 roku.",
+      "W 1824 roku wylot ulicy zabudowano kamienicami.",
+      "Po zakończeniu II wojny światowej ulicę wytyczono ponownie, znacznie szerszą.",
+      "W maju 2012 roku terenowi po obu stronach ulicy nadano nazwę skwer Wolnego Słowa, a w czerwcu 2014 roku odsłonięto tu Memoriał Wolnego Słowa."
+    ],
+    "ciekawostki": [
+      "W 2001–2003 w miejscu zburzonego gmachu cenzury wzniesiono biurowiec Liberty Corner, którego nazwa żartobliwie nawiązuje do działalności urzędu."
+    ],
+    "summary_en": "Mysia is a short street in Śródmieście, named after a narrow 18th-century lane. In the People's Republic its north side held the central press censorship office, and it now has a Free Word memorial.",
+    "ludzie": [],
+    "dawne_nazwy": ["Mysza (XVIII w.)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mysia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mysia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "gmach-gukppiw-mysia-3",
+    "nazwa": "gmach Głównego Urzędu Kontroli Prasy, Publikacji i Widowisk",
+    "name_en": "Main Office of Press, Publications and Entertainment Control building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Mysia 3 (wg innych źródeł nr 5) i ul. Bracka 6/8",
+    "lat": 52.2306147,
+    "lon": 21.0204061,
+    "lokalizacja": "przyblizona",
+    "okres": "1947–1950 do 2001",
+    "istnieje": false,
+    "fakty": [
+      "Gmach wzniesiono w latach 1947–1950 w stylu realizmu socjalistycznego według projektu Marcina Weinfelda.",
+      "W okresie PRL mieściła się tu siedziba centralnego urzędu cenzury, Głównego Urzędu Kontroli Prasy, Publikacji i Widowisk.",
+      "W latach 2001–2003 w miejscu zburzonego gmachu wzniesiono biurowiec Liberty Corner."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A socialist-realist building of 1947–1950 on Mysia, home to the Polish state censorship office during the PRL period. It was demolished and replaced by the Liberty Corner office block in 2001–2003.",
+    "ludzie": [
+      {"kto": "Marcin Weinfeld", "rola": "autor projektu gmachu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mysia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mysia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Mysiej."
+  },
+  {
+    "id": "ulica-mysliwiecka",
+    "nazwa": "ulica Myśliwiecka",
+    "name_en": "Myśliwiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Myśliwiecka",
+    "adres_historyczny": null,
+    "lat": 52.2232253,
+    "lon": 21.0318787,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica była dawną drogą, zjazdem z traktu Ujazdowskiego (dziś ul. Wiejska) do ul. Czerniakowskiej.",
+      "Do połowy XIX wieku nosiła nazwę Zdrowej, zmienioną na Zdrowia, ponieważ biegła wśród ogrodów.",
+      "W końcu XVIII wieku przy ulicy znajdował się pałac Stanisława Poniatowskiego.",
+      "Obecna nazwa, pochodząca od pałacu Myślewickiego w Łazienkach, została nadana w II połowie XIX wieku.",
+      "Przed 1901 rokiem pod nr 3/7 wzniesiono pawilon ujeżdżalni wojsk rosyjskich; w 1924 roku przebudowano go dla Państwowego Urzędu Wychowania Fizycznego, a w 1950 roku dla Polskiego Radia.",
+      "W latach 1991–1994 przy ulicy wzniesiono licowany białym marmurem gmach Ambasady Hiszpanii, zaprojektowany przez Javiera Carvajala Ferrera.",
+      "W 2018 roku park po zachodniej stronie ulicy nazwano parkiem Tadeusza Mazowieckiego."
+    ],
+    "ciekawostki": [
+      "W latach 30. XX wieku przy ulicy działała Miejska Szkoła Sztuk Zdobniczych i Malarstwa."
+    ],
+    "summary_en": "Myśliwiecka was once a country road that became a street in Śródmieście, named after the Myślewicki Palace in Łazienki in the late 19th century. It is now home to the Polish Radio studios and the Spanish Embassy.",
+    "ludzie": [
+      {"kto": "Stanisław Poniatowski", "rola": "właściciel pałacu przy ulicy pod koniec XVIII wieku", "wiki": null},
+      {"kto": "Javier Carvajal Ferrer", "rola": "architekt gmachu Ambasady Hiszpanii (1991–1994)", "wiki": null},
+      {"kto": "Tadeusz Mazowiecki", "rola": "patron parku przy ulicy od 2018 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zdrowa", "Zdrowia"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Myśliwiecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_My%C5%9Bliwiecka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-nalewki",
+    "nazwa": "ulica Nalewki",
+    "name_en": "Nalewki Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nalewki (mała uliczka między Zamenhofa a Dubois)",
+    "adres_historyczny": "Nalewki (dawna główna ulica dzielnicy żydowskiej)",
+    "lat": 52.2502259,
+    "lon": 20.9958908,
+    "lokalizacja": "przyblizona",
+    "okres": "XVII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historyczna nazwa Nalewki pochodziła od płynącej tędy rzeczki Bełczącej, zwanej też Nalewką.",
+      "Przed 1943 rokiem Nalewki stanowiły główną ulicę żydowskiej dzielnicy północnej.",
+      "Gwałtowny rozwój ulicy nastąpił w latach 20. XIX wieku, związany z osiedleniem się tu warszawskich Żydów.",
+      "Wieczorem 29 listopada 1830 roku powstańcy listopadowi, przy znacznym udziale ludności cywilnej, zdobyli Arsenał.",
+      "W 1913 roku przy ulicy działało 329 placówek handlowych różnych branż.",
+      "W listopadzie 1939 roku Niemcy zamordowali 53 mężczyzn z kamienicy pod nr 9 w odwecie za zastrzelenie polskiego policjanta przez Pinkusa Zylberrynga.",
+      "19 kwietnia 1943 roku przez bramę przy Nalewkach wkroczyły na teren getta oddziały niemieckie, co stało się początkiem powstania w getcie warszawskim.",
+      "Od 1959 roku nazwa Nalewki należy do małej, 260-metrowej uliczki między ul. Zamenhofa a ul. Dubois."
+    ],
+    "ciekawostki": [
+      "Największe kamienice wielopodwórkowe w Warszawie przy Nalewkach nazywano babilonami."
+    ],
+    "summary_en": "Nalewki was the main street of Warsaw's northern Jewish district before 1943. Its prewar buildings were destroyed in the 1943 Ghetto Uprising, and the current short street took the name in 1959.",
+    "ludzie": [
+      {"kto": "Pinkus Zylberryng", "rola": "zastrzelił na tej posesji polskiego policjanta, co w listopadzie 1939 roku wywołało odwet niemiecki", "wiki": null},
+      {"kto": "Ferdinand von Sammern-Frankenegg", "rola": "dowódca niemieckich oddziałów, które 19 kwietnia 1943 roku wkroczyły przez bramę przy Nalewkach", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nalewki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nalewki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu odpowiadają obecnej, krótkiej uliczce Nalewki. Historyczna, dłuższa ulica zachowała się tylko jako Stare Nalewki (do 2019 ul. Bohaterów Getta); rekord opisuje historię całej ulicy."
+  },
+  {
+    "id": "ulica-nowiniarska",
+    "nazwa": "ulica Nowiniarska",
+    "name_en": "Nowiniarska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowiniarska",
+    "adres_historyczny": null,
+    "lat": 52.2513259,
+    "lon": 21.0040388,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1795–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie ulica była ślepym zaułkiem ul. Świętojerskiej, powstałym przed 1795 rokiem; dalszy odcinek od Franciszkańskiej przeprowadzono przed 1819 rokiem.",
+      "Nazwa pochodzi od nowiniarzy, czyli osób zbierających i rozgłaszających nowiny, oraz mieszczących się tu redakcji gazet.",
+      "Pierwszym budynkiem przy ulicy była kamienica kupca Nuchima Brünera pod nr 15, zaprojektowana przez Karola Henryka Galle.",
+      "W 1827 roku pod nr 13 powstała druga kamienica Nuchima Brünera, jedna z największych kamienic warszawskich tamtych czasów, z fasadą liczącą 21 osi.",
+      "W 1896 roku pod nr 1/5 wzniesiono kamienicę Doby Nowińskiej według projektu Edwarda Goldberga; jej fasada liczyła 34 osie.",
+      "Po 1908 roku ulicą kursowała pierwsza w Warszawie linia tramwaju elektrycznego z placu Krasińskich na plac Muranowski.",
+      "W 1939 roku całkowicie spłonęła kamienica Doby Nowińskiej; jej ruiny rozebrano do 1941 roku.",
+      "Od listopada 1940 do grudnia 1941 roku odcinek między Świętojerską a Franciszkańską znajdował się w obrębie getta."
+    ],
+    "ciekawostki": [
+      "W 1943 roku na placu po rozbiórce kamienicy Nowińskiej ustawiono karuzelę i huśtawki; motyw ten pojawia się u Czesława Miłosza (Campo di Fiori), Kazimierza Moczarskiego (Rozmowy z katem) i Tadeusza Borowskiego (Pożegnanie z Marią)."
+    ],
+    "summary_en": "Nowiniarska took its name from the newsmen and newspaper offices that worked there. Its large tenements of the 1820s–1890s were destroyed in 1939–44, and the street was largely erased after the war.",
+    "ludzie": [
+      {"kto": "Nuchim Brüner", "rola": "kupiec, zbudował dwie kamienice przy ulicy (nr 15 i nr 13)", "wiki": null},
+      {"kto": "Karol Henryk Galle", "rola": "projektant pierwszej kamienicy Brünera (nr 15)", "wiki": null},
+      {"kto": "Edward Goldberg", "rola": "architekt kamienicy Doby Nowińskiej (1896)", "wiki": null},
+      {"kto": "Adelajda Lesznowska", "rola": "właścicielka posesji 10/16, która przed 1829 rokiem wystawiła długie budynki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowo-Winiarska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowiniarska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowiniarska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-nowogrodzka",
+    "nazwa": "ulica Nowogrodzka",
+    "name_en": "Nowogrodzka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowogrodzka",
+    "adres_historyczny": "Nowo Grodzka",
+    "lat": 52.2285294,
+    "lon": 21.0110587,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jest jedną z najstarszych warszawskich dróg narolnych; wytyczono ją w drugiej połowie XVIII wieku dla utworzonej tu jurydyki Nowogrodzkiej.",
+      "Nazwę nadano w 1770 roku; dawniej zapisywano ją jako Nowo Grodzka.",
+      "W 1770 roku ulicę na wysokości obecnej ul. Raszyńskiej przecięto okopami Lubomirskiego.",
+      "W latach 1897–1901 na terenie dawnego folwarku świętokrzyskiego wzniesiono kompleks Szpitala Dzieciątka Jezus, przeniesionego z placu Wareckiego.",
+      "W 1927 roku przy ulicy uruchomiono Elektryczną Kolej Dojazdową, której przystanek końcowy znajdował się między ulicami Poznańską i Marszałkowską.",
+      "W czasie powstania warszawskiego była silnie bombardowana, a odcinek między Marszałkowską a Kruczą stanowił linię frontu do kapitulacji powstania.",
+      "W 2020 roku zbudowano przejazd dla rowerzystów i przejście dla pieszych pod wiaduktem nad ul. Chałubińskiego."
+    ],
+    "ciekawostki": [
+      "W kamienicy pod nr 15 w czasie wojny mieściła się restauracja Bar Podlaski, dla Niemców („Nur für Deutsche”); w 1943 roku była celem dwóch zamachów Gwardii Ludowej."
+    ],
+    "summary_en": "Nowogrodzka is one of Warsaw's oldest country roads, laid out for the Nowogrodzka jurydyka and named in 1770. Its key sites include the 1928–1933 Telecommunications Office building, the 1897–1901 Dzieciątko Jezus hospital and the 1944 front line.",
+    "ludzie": [
+      {"kto": "Julian Puterman-Sadłowski", "rola": "projektant gmachu Urzędu Telekomunikacyjnego (nr 45)", "wiki": null},
+      {"kto": "Waldemar Radlow", "rola": "projektant gmachu Urzędu Telekomunikacyjnego (nr 45)", "wiki": null},
+      {"kto": "Stefan Bryła", "rola": "konstruktor gmachu Urzędu Telekomunikacyjnego (nr 45)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowo Grodzka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowogrodzka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowogrodzka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "gmach-urzedu-telekomunikacyjnego-nowogrodzka-45",
+    "nazwa": "Gmach Urzędu Telekomunikacyjnego i Telegraficznego",
+    "name_en": "Telecommunications and Telegraph Office building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowogrodzka 45",
+    "adres_historyczny": null,
+    "lat": 52.2285294,
+    "lon": 21.0110587,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–1933–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Modernistyczny gmach wzniesiono w latach 1928–1933 na działce między ulicami Nowogrodzką, Poznańską i św. Barbary.",
+      "Projekt wykonali Julian Puterman-Sadłowski i Waldemar Radlow, konstrukcję zaprojektował Stefan Bryła.",
+      "Był to pierwszy w Polsce budynek o stalowej konstrukcji szkieletowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A modernist Telecommunications and Telegraph Office building on Nowogrodzka, designed in 1928–1933. It was the first steel-framed building in Poland.",
+    "ludzie": [
+      {"kto": "Julian Puterman-Sadłowski", "rola": "architekt gmachu", "wiki": null},
+      {"kto": "Waldemar Radlow", "rola": "architekt gmachu", "wiki": null},
+      {"kto": "Stefan Bryła", "rola": "konstruktor gmachu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowogrodzka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowogrodzka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Nowogrodzkiej."
+  },
+  {
+    "id": "ulica-nowomiejska",
+    "nazwa": "ulica Nowomiejska",
+    "name_en": "Nowomiejska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Nowomiejska",
+    "adres_historyczny": null,
+    "lat": 52.2505843,
+    "lon": 21.0099006,
+    "lokalizacja": "przyblizona",
+    "okres": "1408–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona przy lokacji miasta w 1408 roku jako droga do traktu zakroczymskiego (dziś ul. Zakroczymska).",
+      "Pierwotnie kończyła się na linii murów miejskich i zespołu Bramy Nowomiejskiej.",
+      "Pierwszy dom murowany pojawił się przy ulicy w 1505 roku.",
+      "1 lipca 1656 roku, podczas walk ze Szwedami, poważnie uszkodzono odcinek murów miejskich i Bramę Nowomiejską, która została potem odbudowana w innym kształcie.",
+      "W 1818 roku zburzono niezabudowany bok Barbakanu oraz obie Bramy Nowomiejskie, tworząc na ich miejscu targ.",
+      "W 1937 roku wyburzono dom handlowy, aby odsłonić mury, barbakan i fosę; odsłonięte mury zakonserwowano i częściowo zrekonstruowano pod kierunkiem Jana Zachwatowicza.",
+      "Podczas powstania warszawskiego zabudowa ulicy została unicestwiona; w latach 1953–1954 odbudowano ją według projektów Stanisława Żaryna."
+    ],
+    "ciekawostki": [
+      "W pierwszej połowie XVIII wieku we wnętrzu barbakanu powstała Piwnica Gdańska, skład towarów kupców z Gdańska."
+    ],
+    "summary_en": "Nowomiejska was laid out in 1408 as the road to the Zakroczym gate and was rebuilt after the Uprising in 1953–54 with the Barbican. The Barbican itself was reconstructed on the site of the Gdańsk cellar.",
+    "ludzie": [
+      {"kto": "Jan Zachwatowicz", "rola": "kierował konserwacją i rekonstrukcją murów w 1937 roku", "wiki": null},
+      {"kto": "Stanisław Żaryn", "rola": "autor projektów odbudowy zabudowy w latach 1953–1954", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowomiejska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowomiejska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  }
+]

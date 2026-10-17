@@ -1,0 +1,250 @@
+[
+  {
+    "id": "ulica-ludwika-waryniskiego",
+    "nazwa": "ulica Ludwika Waryńskiego",
+    "name_en": "Ludwik Waryński Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Ludwika Waryńskiego",
+    "adres_historyczny": null,
+    "lat": 52.2162757,
+    "lon": 21.0152073,
+    "lokalizacja": "przyblizona",
+    "okres": "1950–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w dwóch etapach: wraz z wytyczeniem placu Konstytucji i Marszałkowskiej Dzielnicy Mieszkaniowej w latach 1950–1952, a w latach 1966–1967 jako przedłużenie między ulicami Nowowiejską i Puławską.",
+      "Nazwę upamiętniającą działacza socjalistycznego Ludwika Waryńskiego nadano w maju 1951 roku.",
+      "W latach 1971–1974 na osi ulicy zbudowano dwupoziomowe skrzyżowanie z Trasą Łazienkowską, czyli rondo Jazdy Polskiej.",
+      "Ulica stała się dwukierunkowa na całej długości w latach 90. XX wieku.",
+      "Po 2010 roku zlikwidowano przejście podziemne pod ulicą, na wysokości Pola Mokotowskiego i Domu Studenckiego „Riviera”."
+    ],
+    "ciekawostki": [
+      "W 2010 roku oddano do użytku biurowiec Zebra Tower, który częściowo uzupełnił zabudowę na odcinku od ulicy Nowowiejskiej do ronda Jazdy Polskiej."
+    ],
+    "summary_en": "Ludwika Waryńskiego was built in two stages, in 1950–1952 with the Marszałkowska Housing District and in 1966–1967 as an extension to Puławska. It became a two-way street in the 1990s and has a junction with Trasa Łazienkowska at the Jazdy Polskiej roundabout.",
+    "ludzie": [
+      {"kto": "Ludwik Waryński", "rola": "działacz socjalistyczny, patron ulicy od 1951 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Ludwika Waryńskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ludwika_Wary%C5%84skiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu. Artykuł podaje dzielnice Śródmieście i Mokotów; rekord przypisany do Śródmieścia wg nagłówka paczki."
+  },
+  {
+    "id": "ulica-ludwika-zamenhofa",
+    "nazwa": "ulica Ludwika Zamenhofa",
+    "name_en": "Ludwik Zamenhof Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Ludwika Zamenhofa",
+    "adres_historyczny": "ul. Dzika (część)",
+    "lat": 52.2476372,
+    "lon": 20.9965367,
+    "lokalizacja": "przyblizona",
+    "okres": "1930–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano 27 listopada 1930 roku, przemianowując południowy odcinek ulicy Dzikiej między Nowolipkami a Niską.",
+      "Przed 1939 rokiem rejon ulicy należał do najgęściej zaludnionych części miasta.",
+      "W listopadzie 1940 roku ulica w całości znalazła się w granicach warszawskiego getta.",
+      "W dniach 6–11 września 1942 roku, podczas wielkiej akcji deportacyjnej, zgromadzono na terenie przy ulicach Smoczej, Gęsiej, Zamenhofa, Szczęśliwej i placu Parysowskim ok. 100 tys. mieszkańców getta.",
+      "W wyniku selekcji 32 tys. osób otrzymało „numerki na życie”, 2,6 tys. zastrzelono, a ponad 54 tys. wywieziono do obozu zagłady w Treblince.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 25 marca 1959 roku skróconej ulicy nadano nazwę ulica Ludwika Zamenhoffa.",
+      "W listopadzie 2012 roku Rada Warszawy skorygowała nazwę na Ludwika Zamenhofa."
+    ],
+    "ciekawostki": [
+      "Patron ulicy, Ludwik Zamenhof, mieszkał podczas pobytu w Warszawie w jednym z domów przy tej ulicy."
+    ],
+    "summary_en": "Named in 1930 after Ludwik Zamenhof, creator of Esperanto, the street lay inside the Warsaw Ghetto from 1940. The September 1942 deportation action gathered about 100,000 residents in the area, and the name was later corrected in 2012.",
+    "ludzie": [
+      {"kto": "Ludwik Zamenhof", "rola": "polski lekarz żydowskiego pochodzenia, twórca esperanto, patron ulicy; mieszkał w jednym z domów przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["ulica Dzika (południowy odcinek przed 1930)", "Wildstrasse (nazwa okupacyjna)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Ludwika Zamenhofa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ludwika_Zamenhofa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka). Ulica przebiega w dzielnicy Muranów."
+  },
+  {
+    "id": "ulica-lwowska",
+    "nazwa": "ulica Lwowska",
+    "name_en": "Lwowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Lwowska",
+    "adres_historyczny": "część ulicy Wielkiej (Nowowielka)",
+    "lat": 52.2212377,
+    "lon": 21.0123911,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1820–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica biegnie od placu Politechniki na północ do ulicy Pięknej i krzyżuje się z Koszykową; jest jednokierunkowa.",
+      "Odcinek między ulicami Piękną a Koszykową istniał już ok. 1820 roku.",
+      "Odcinek południowy zaczęto przebijać ok. 1900 roku w związku z parcelacją folwarku Koszyki.",
+      "Obecną nazwę nadano w 1922 roku.",
+      "W latach 1904–1914 ulicę zabudowano przeważnie pięciopiętrowymi kamienicami.",
+      "Reduta broniona przez batalion „Golski” podczas powstania warszawskiego nie została zdobyta przez Niemców.",
+      "Zniszczeniu uległy jedynie dwa domy przy placu Politechniki, dzięki czemu przetrwało kilka kamienic wpisanych do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Pod koniec XIX wieku przy ulicy powstały nowoczesne wodociągi, kompleks budynków Warszawskiego Instytutu Politechnicznego oraz hala targowa Koszyki."
+    ],
+    "summary_en": "Lwowska runs north from Plac Politechniki to Piękna and is one of the few Warsaw streets that kept its early-20th-century form through the war. The Golski battalion's redoubt held out here during the 1944 Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": ["Nowowielka (część ulicy Wielkiej)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Lwowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Lwowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-marcella-bacciarellego",
+    "nazwa": "ulica Marcella Bacciarellego",
+    "name_en": "Marcello Bacciarelli Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marcella Bacciarellego",
+    "adres_historyczny": null,
+    "lat": 52.2128091,
+    "lon": 21.0252384,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1935 roku podczas parcelacji resztek dawnego ogrodu „Bagatela”, założonego po 1772 roku przez Marcella Bacciarellego.",
+      "Ulica biegnie od ulicy Klonowej na północ i kończy się ślepo.",
+      "Nazwę nadano w 1938 roku.",
+      "W latach 1936–1937 pod nr 4 wzniesiono willę dla Marii hrabiny Hutten-Czapskiej według projektu Zygmunta Plater-Zyberka.",
+      "W 1992 roku willa wraz z ogrodzeniem została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short dead-end street in Śródmieście laid out in 1935 on part of the former Bagatela garden. Its one notable building, a villa at no. 4, was designed by Zygmunt Plater-Zyberk and is now a listed monument.",
+    "ludzie": [
+      {"kto": "Marcello Bacciarelli", "rola": "założył ogród „Bagatela” po 1772 roku; patron ulicy (w artykule w dopełniaczu: Marcella Bacciarellego)", "wiki": null},
+      {"kto": "Maria hrabina Hutten-Czapska", "rola": "zleceniodawczyni willi pod nr 4", "wiki": null},
+      {"kto": "Zygmunt Plater-Zyberk", "rola": "architekt willi pod nr 4", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Marcella Bacciarellego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Marcella_Bacciarellego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu. Artykuł podaje nazwisko w dopełniaczu, w rekordzie w mianowniku."
+  },
+  {
+    "id": "centrala-pko-marszalkowska",
+    "nazwa": "Centrala PKO",
+    "name_en": "PKO Head Office building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Marszałkowska 134",
+    "lat": 52.2139509,
+    "lon": 21.0214847,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–1959",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1938–1939 pod numerem 134, przy skrzyżowaniu z ulicą Świętokrzyską, wybudowano modernistyczny gmach Centrali PKO.",
+      "Gmach został zniszczony w 1944 roku podczas powstania warszawskiego; zrujnowany szkielet pozostał na miejscu.",
+      "W 1959 roku w ramach przygotowań do budowy Ściany Wschodniej wyburzono zniszczony gmach Centrali PKO."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The modernist head office of the PKO savings bank at the corner of Marszałkowska and Świętokrzyska, built in 1938–1939. Destroyed in the 1944 Uprising, its ruin was demolished in 1959 to make way for the East Wall.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Marszałkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Marsza%C5%82kowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Marszałkowskiej."
+  },
+  {
+    "id": "ulica-marszalkowska",
+    "nazwa": "ulica Marszałkowska",
+    "name_en": "Marszałkowska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marszałkowska",
+    "adres_historyczny": null,
+    "lat": 52.2139509,
+    "lon": 21.0214847,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od urzędu marszałka wielkiego koronnego Franciszka Bielińskiego, którego pałac stał przy początku ulicy, w pobliżu skrzyżowania z Królewską.",
+      "W latach 70. XVIII wieku ulicę przedłużono do okopów Lubomirskiego, tworząc na jej końcu plac Unii Lubelskiej.",
+      "W latach 1844–1845 zbudowano Dworzec Wiedeński przy skrzyżowaniu z Alejami Jerozolimskimi.",
+      "W 1903 roku pod nr 114 otwarto kino Bioskop, pierwsze kino w Warszawie.",
+      "W 1908 roku ulicą pojechały tramwaje elektryczne.",
+      "W 1945 roku straty ulicy szacowano nawet na 80% substancji.",
+      "W latach 1960–1969 zbudowano tzw. Ścianę Wschodnią wg projektu Zbigniewa Karpińskiego.",
+      "W latach 90. XX wieku powstały przy ulicy stacje metra A13 Centrum i A14 Świętokrzyska."
+    ],
+    "ciekawostki": [
+      "Po wojnie w budynku nr 119 działała kawiarnia Cafe Fogg prowadzona przez Mieczysława Fogga, a ulica zyskała przydomek „parterowej Marszałkowskiej”.",
+      "W 1972–1973 szwedzka firma Skanska zbudowała w narożniku Alej Jerozolimskich i Marszałkowskiej hotel Forum."
+    ],
+    "summary_en": "Marszałkowska is one of Warsaw's main north-south arteries, named after Franciszek Bieliński. Most of it was destroyed in 1944-45, and it was rebuilt with socialist-realist blocks and the 1960s East Wall. It is now also the line of metro lines and stations.",
+    "ludzie": [
+      {"kto": "Franciszek Bieliński", "rola": "marszałek wielki koronny, od którego urzędu pochodzi nazwa ulicy", "wiki": null},
+      {"kto": "Sokrates Starynkiewicz", "rola": "prezydent miasta, który w XIX wieku stanął po stronie obrońców Ogrodu Saskiego przeciw przebiciu ulicy", "wiki": null},
+      {"kto": "Mieczysław Fogg", "rola": "prowadził kawiarnię Cafe Fogg w budynku nr 119 po wojnie", "wiki": null},
+      {"kto": "Zbigniew Karpiński", "rola": "projektant Ściany Wschodniej (lata 1960–1969)", "wiki": null},
+      {"kto": "Marek Leykam", "rola": "architekt gmachu Ministerstwa Hutnictwa (nr 82, „żyletkowiec”)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Marszałkowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Marsza%C5%82kowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka). Ulica jest długa, więc rekord dotyczy całości, a rekordy budynków w paczce mogą wymagać osobnej weryfikacji."
+  },
+  {
+    "id": "ulica-mazowiecka",
+    "nazwa": "ulica Mazowiecka",
+    "name_en": "Mazowiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Mazowiecka",
+    "adres_historyczny": null,
+    "lat": 52.2399045,
+    "lon": 21.0122073,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1730–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest odcinkiem dawnego traktu biegnącego w miejscu współczesnych ulic Wierzbowej, Mazowieckiej, Szpitalnej, Brackiej i Wiejskiej do Ujazdowa.",
+      "Przed 1730 rokiem przy ulicy wzniesiono pałac należący do Kazimierza Rudzińskiego, wojewody mazowieckiego, od którego urzędu pochodzi jej nazwa; nazwę nadano w 1770 roku.",
+      "W 1831 roku przy ulicy wybudowano fabrykę sprzętów żelaznych Braci Jana i Leona Drewsów.",
+      "W 1906 roku znalazła się w grupie pierwszych kilku ulic, przy których uruchomiono latarnie elektryczne.",
+      "Ulicę wyasfaltowano ok. 1928 roku jako jedną z pierwszych w Warszawie.",
+      "7 marca 1941 roku w kamienicy pod nr 10 zespół bojowy ZWZ wykonał wyrok śmierci na aktorze Igo Symie, którego artykuł określa jako kolaboranta III Rzeszy.",
+      "10 maja 1943 roku zespół Kedywu zastrzelił na ulicy kierownika grupy „E” Arbeitsamtu Fritza Geista.",
+      "Po 2000 roku ulica stała się największym zagłębiem klubowym miasta; w 2018 roku działało przy niej 11 klubów nocnych."
+    ],
+    "ciekawostki": [
+      "Relikt zniszczeń wojennych to trójprzęsłowy portyk bramny pod nr 13, zachowany przed Domem Artysty Plastyka."
+    ],
+    "summary_en": "Mazowiecka follows part of an old road to Ujazdów and was named in 1770 after a Masovian voivode's palace. It was asphalted around 1928, saw wartime resistance killings in 1941 and 1943, and later became the city's main club district.",
+    "ludzie": [
+      {"kto": "Kazimierz Rudziński", "rola": "wojewoda mazowiecki, właściciel pałacu przy ulicy przed 1730 rokiem", "wiki": null},
+      {"kto": "Igo Sym", "rola": "aktor, wyrok wykonany w kamienicy pod nr 10 przez ZWZ w 1941 roku", "wiki": null},
+      {"kto": "Fritz Geist", "rola": "kierownik grupy „E” Arbeitsamtu, zastrzelony na ulicy 10 maja 1943 roku", "wiki": null},
+      {"kto": "Józef Staszauer", "rola": "konfident Gestapo, zlikwidowany przez AK w barze „Za Kotarą” (nr 2) 8 października 1943 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mazowiecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Mazowiecka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  }
+]

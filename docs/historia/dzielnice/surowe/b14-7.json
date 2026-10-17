@@ -1,0 +1,173 @@
+[
+  {
+    "id": "ulica-pokorna",
+    "nazwa": "ulica Pokorna",
+    "name_en": "Pokorna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Pokorna",
+    "adres_historyczny": null,
+    "lat": 52.2539113,
+    "lon": 20.993653,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano oficjalnie w 1770 roku; ma związek z zakładem dla włóczęgów i drobnych przestępców, zwanym Cuchthauzem (Domem Poprawy), który od 1737 roku działał u zbiegu z ul. Kłopot.",
+      "Pod koniec XVII wieku droga stanowiąca późniejszą ulicę została wyprostowana w związku z powstaniem ogrodów pałacu Murano.",
+      "W 1824 roku na rozkaz wielkiego księcia Konstantego między ulicami Dziką, Stawki i Pokorną powstał plac musztry i przeglądów wojska, nazwany placem Broni; miał bok 420 metrów i był największym placem XIX-wiecznej Warszawy.",
+      "W 1891 roku na teren u zbiegu Pokornej i Stawek przeniesiono z ul. Wałowej targowisko nazywane Wołówką.",
+      "Stary Szpital Starozakonnych działał przy ulicy od 1834 roku do 1902 roku.",
+      "W latach 1943–1944 większość zabudowy ulicy została zburzona, a przetrwała jedynie brukowana nawierzchnia.",
+      "Do 2003 roku otoczenie ulicy stanowiły rozległe tereny zajezdni autobusowej; po jej likwidacji powstała zabudowa mieszkalno-usługowa, w tym kompleks Gdański Business Center."
+    ],
+    "ciekawostki": [
+      "Przed II wojną światową funkcję północnej trasy wylotowej przejął wiadukt łączący ulice Bonifraterską i Mickiewicza, a Pokorna została skrócona do skrzyżowania z Inflancką."
+    ],
+    "summary_en": "Pokorna was named in 1770 after a house of correction at its junction with Kłopot, and it ran along the gardens of the Murano palace. The Old Hospital for Jews stood here until 1902, and the street was largely destroyed in 1943–44 before its later redevelopment.",
+    "ludzie": [
+      {"kto": "Wielki książę Konstanty", "rola": "zarządził budowę placu Broni w 1824 roku", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projektant rozbudowy Starego Szpitala Starozakonnych (1835–1838)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Pokorna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pokorna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "stary-szpital-starozakonnych-pokorna",
+    "nazwa": "Stary Szpital Starozakonnych przy Pokornej",
+    "name_en": "Old Jewish Hospital on Pokorna Street",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Pokorna 12 (róg Inflanckiej)",
+    "lat": 52.2539113,
+    "lon": 20.993653,
+    "lokalizacja": "przyblizona",
+    "okres": "1834–1902",
+    "istnieje": false,
+    "fakty": [
+      "Gmach główny szpitala, dawna kamienica Stanisława Sorettiego wzniesiona w latach 20. XIX wieku, mieścił od 1834 roku Szpital Starozakonnych.",
+      "W latach 1835–1838 szpital rozbudowano wg projektu Henryka Marconiego; dobudowano północne skrzydło i ogród.",
+      "Szpital miał 400 łóżek na pięciu oddziałach: wewnętrznym, chirurgicznym, ocznym, psychiatrycznym i skórno-wenerycznym.",
+      "Stary Szpital Starozakonnych funkcjonował na Pokornej do 1902 roku."
+    ],
+    "ciekawostki": [
+      "W 1914–1916 w budynkach przy Pokornej mieścił się szpital Czerwonego Krzyża, a od 1918 roku Wojskowy Szpital Epidemiczny."
+    ],
+    "summary_en": "The Old Jewish Hospital, housed in a 1820s building on the corner of Pokorna and Inflancka. It was expanded in 1835–38 by Henryk Marconi and ran until 1902.",
+    "ludzie": [
+      {"kto": "Stanisław Soretti", "rola": "właściciel kamienicy, w której od 1834 roku mieścił się szpital", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "projektant rozbudowy szpitala w latach 1835–1838", "wiki": null}
+    ],
+    "dawne_nazwy": ["Szpital Starozakonnych"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Pokorna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pokorna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Pokornej. Artykuł podaje adres róg Inflanckiej."
+  },
+  {
+    "id": "ulica-polna",
+    "nazwa": "ulica Polna",
+    "name_en": "Polna Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Polna",
+    "adres_historyczny": null,
+    "lat": 52.2183124,
+    "lon": 21.0147162,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała jako droga biegnąca wzdłuż usypanego w 1770 roku wału Lubomirskiego, który zniwelowano w 1875 roku.",
+      "W 1887 roku na dawnym placu ćwiczeń rosyjskiej kawalerii powstał tor wyścigów konnych, który tuż przed II wojną światową przeniósł się na Służewiec.",
+      "Na początku XX wieku wschodnia pierzeja została zabudowana nowoczesnymi kamienicami, a kolejne powstawały w okresie międzywojennym.",
+      "W 1930 roku północny fragment ulicy wyodrębniono jako ulicę Noakowskiego.",
+      "W 1953 roku przy ulicy powstał bazar; w latach 60. część terenu zajął budynek Wydziału Elektroniki i Technik Informacyjnych Politechniki Warszawskiej.",
+      "Przebicie ulicy Waryńskiego, a później Trasy Łazienkowskiej rozcięło ulicę na dwie części."
+    ],
+    "ciekawostki": [
+      "Bazar z 1953 roku sprzedawał m.in. owoce, warzywa, nabiał i drób, a także po wysokich cenach produkty nieosiągalne w sklepach."
+    ],
+    "summary_en": "Polna runs north from Plac Unii Lubelskiej, built on the Lubomirski rampart. The 1887 racecourse moved to Służewiec before WWII, and the 1953 bazaar was partly replaced by a Politechnika building. Trasa Łazienkowska and Waryńskiego cut the street in two.",
+    "ludzie": [
+      {"kto": "Maksymilian Goldberg", "rola": "współautor projektu Domu Prasy (1927–1929)", "wiki": null},
+      {"kto": "Hipolit Rutkowski", "rola": "współautor projektu Domu Prasy (1927–1929)", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "architekt rotundy pod nr 30 (ok. 1925)", "wiki": null},
+      {"kto": "Maria Dąbrowska", "rola": "pisarka, której dawne mieszkanie (nr 40 m. 31) jest dziś muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": ["Noakowskiego (północny odcinek od 1930)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Polna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Polna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "ulica-poznanska",
+    "nazwa": "ulica Poznańska",
+    "name_en": "Poznańska Street",
+    "typ": "ulica",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Poznańska",
+    "adres_historyczny": "południowy odcinek ulicy Wielkiej (do ok. 1870)",
+    "lat": 52.2267429,
+    "lon": 21.0110373,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1870–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest południowym odcinkiem ul. Wielkiej, przedłużonej ok. 1870 roku do ul. Nowogrodzkiej.",
+      "Biegnie od ul. Pięknej do al. Jerozolimskich; nazwę nadano w 1922 roku.",
+      "W okresie międzywojennym w domu nr 13 mieścił się XI komisariat Policji Państwowej.",
+      "Od 1924 do 1941 roku w kamienicy Glassów (nr 15) mieściło się poselstwo, ambasada, a następnie przedstawicielstwo ZSRR.",
+      "Od 4 września 1944 roku w tym budynku działała Stacja Nadawcza Armii Krajowej „Błyskawica”."
+    ],
+    "ciekawostki": [
+      "Poeta Miron Białoszewski mieszkał w 1945–1958 w mieszkaniu nr 5 w kamienicy Zyberta z 1904 roku (nr 37)."
+    ],
+    "summary_en": "Poznańska is the southern stretch of Wielka, extended to Nowogrodzka around 1870 and named in 1922. Its house at no. 15 held a legation, an embassy and then a Soviet representation in 1924–41, and was the AK radio station Błyskawica during the Uprising.",
+    "ludzie": [
+      {"kto": "Miron Białoszewski", "rola": "poeta, mieszkał w kamienicy Zyberta (nr 37) w latach 1945–1958", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wielka (południowy odcinek, do ok. 1870)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Poznańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pozna%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu (środek odcinka)."
+  },
+  {
+    "id": "kamienica-glassow-poznanska-15",
+    "nazwa": "kamienica Glassów (ul. Poznańska 15)",
+    "name_en": "Glass tenement at Poznańska 15",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Poznańska 15",
+    "adres_historyczny": null,
+    "lat": 52.2267429,
+    "lon": 21.0110373,
+    "lokalizacja": "przyblizona",
+    "okres": "1892–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w 1892 roku, a w 1920 roku została przebudowana.",
+      "W latach 1924–1941 mieściło się tu poselstwo, a następnie ambasada i przedstawicielstwo ZSRR.",
+      "Od 4 września 1944 roku w czasie powstania budynek wykorzystywała Stacja Nadawcza Armii Krajowej „Błyskawica”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A tenement built in 1892 and rebuilt in 1920. It housed the Soviet mission in 1924–41 and was the AK radio transmitter Błyskawica during the Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Poznańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pozna%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Położenie przybliżone: współrzędne ulicy Poznańskiej."
+  }
+]

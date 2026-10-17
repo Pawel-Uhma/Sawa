@@ -1,0 +1,297 @@
+[
+  {
+    "id": "muzeum-harcerstwa-w-warszawie",
+    "nazwa": "Muzeum Harcerstwa w Warszawie",
+    "name_en": "Museum of Scouting in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Konopnickiej 6",
+    "adres_historyczny": "Świątynia Egipska w Łazienkach Królewskich (siedziba 2005–2010)",
+    "lat": 52.22833333,
+    "lon": 21.02611111,
+    "lokalizacja": "dokladna",
+    "okres": "2001–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało utworzone 6 czerwca 2001 roku decyzją Naczelnika ZHP, zgodnie z postanowieniem XXXI Zjazdu ZHP.",
+      "Idea muzeum zajmującego się harcerstwem sięga początków ruchu harcerskiego; pierwsza wzmianka o niej pochodzi z 1916 roku.",
+      "W latach 2005–2010 siedzibą muzeum była Świątynia Egipska w Łazienkach Królewskich.",
+      "W 2010 roku zbiory przeniesiono do budynku Głównej Kwatery ZHP przy ul. Konopnickiej 6.",
+      "Muzeum ma filie w Pruszkowie (otwarta we wrześniu 2011, status filii od września 2012) i w Ursusie (powstała w 2003 roku z inicjatywy instruktorów Harcerskiego Kręgu Seniorów)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Museum of Scouting was created in 2001 by the Chief Scout of the Polish Scouting Association. It was housed in the Egyptian Temple in the Royal Baths Park from 2005 to 2010 and has since been located at the ZHP headquarters on Konopnicka street.",
+    "ludzie": [
+      {"kto": "Wiesław Maślanka", "rola": "Naczelnik ZHP, który decyzją z 6 czerwca 2001 powołał muzeum", "wiki": null},
+      {"kto": "Wacław Błażejewski", "rola": "orędownik idei muzeum harcerstwa w dwudziestoleciu międzywojennym", "wiki": null},
+      {"kto": "Hanna Murawska", "rola": "kierowniczka filii w Ursusie", "wiki": null},
+      {"kto": "Monika Pawełczyńska-Ślusarczyk", "rola": "kierowniczka filii w Pruszkowie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Harcerstwa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Harcerstwa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy siedziby muzeum przy ul. Konopnickiej 6."
+  },
+  {
+    "id": "muzeum-historii-zydow-polskich-polin",
+    "nazwa": "Muzeum Historii Żydów Polskich POLIN",
+    "name_en": "POLIN Museum of the History of Polish Jews",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Anielewicza 6",
+    "adres_historyczny": "ul. Warecka 4/6 (tymczasowa siedziba)",
+    "lat": 52.249444444,
+    "lon": 20.993055555,
+    "lokalizacja": "dokladna",
+    "okres": "2005–dziś (gmach otwarty 2013)",
+    "istnieje": true,
+    "fakty": [
+      "Gmach przy ul. Anielewicza 6 wzniesiono w latach 2009–2013 według projektu zespołu fińskich architektów pod kierownictwem Rainera Mahlamäkiego; został otwarty w kwietniu 2013 roku.",
+      "Stała wystawa została otwarta w październiku 2014 roku.",
+      "Instytucja powstała na mocy umowy podpisanej 25 stycznia 2005 roku przez Ministerstwo Kultury i Dziedzictwa Narodowego, samorząd m.st. Warszawy oraz Stowarzyszenie Żydowski Instytut Historyczny.",
+      "W 1995 roku miasto przekazało pod budowę muzeum działkę na Muranowie.",
+      "Tymczasowa siedziba muzeum mieściła się przy ul. Wareckiej 4/6.",
+      "We wrześniu 2014 roku muzeum dodało do nazwy słowo „Polin” („Polska” w języku hebrajskim)."
+    ],
+    "ciekawostki": [
+      "Nazwa „Polin” nawiązuje do legendy o pojawieniu się na ziemiach polskich pierwszych Żydów.",
+      "Muzeum przedstawia historię Żydów od ok. 960 roku, czyli od przybycia pierwszych żydowskich kupców na ziemie polskie."
+    ],
+    "summary_en": "The POLIN Museum of the History of Polish Jews is in the Muranów district of Warsaw, in a building at Anielewicza 6 designed by a Finnish team and opened in 2013. It presents a thousand years of Jewish history in Poland, and its name means 'Poland' in Hebrew.",
+    "ludzie": [
+      {"kto": "Rainer Mahlamäki", "rola": "architekt; kierował zespołem fińskich architektów projektujących gmach", "wiki": null},
+      {"kto": "Marcin Święcicki", "rola": "przewodniczący Komitetu Budowy Muzeum", "wiki": null},
+      {"kto": "Grażyna Pawlak", "rola": "pomysłodawczyni muzeum, ówczesna dyrektor Stowarzyszenia Żydowski Instytut Historyczny", "wiki": null},
+      {"kto": "Aleksander Kwaśniewski", "rola": "prezydent, objął patronat nad tworzeniem muzeum", "wiki": null},
+      {"kto": "Szimon Peres", "rola": "przewodniczący Międzynarodowego Komitetu Honorowego Muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Historii Żydów Polskich Polin", "url": "https://pl.wikipedia.org/wiki/Muzeum_Historii_%C5%BByd%C3%B3w_Polskich_Polin"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "koszary-artylerii-koronnej-wolynskie",
+    "nazwa": "Koszary Artylerii Koronnej (Koszary Wołyńskie)",
+    "name_en": "Crown Artillery Barracks (Volhynian Barracks)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Anielewicza 6 (teren Muzeum POLIN)",
+    "adres_historyczny": "ul. Zamenhofa 19",
+    "lat": 52.249444444,
+    "lon": 20.993055555,
+    "lokalizacja": "przyblizona",
+    "okres": "1784–1965",
+    "istnieje": false,
+    "fakty": [
+      "W latach 1784–1792 wzniesiono monumentalny gmach Koszar Artylerii Koronnej, zaprojektowany przez Stanisława Zawadzkiego.",
+      "W latach 1815–1830 stacjonował tu rosyjski Lejb-Gwardyjski Wołyński Pułk, od czego budynek nazywano Koszarami Wołyńskimi.",
+      "Później mieściło się tu więzienie wojskowe.",
+      "Od listopada 1940 roku do końca istnienia getta warszawskiego ten teren znajdował się w granicach dzielnicy zamkniętej; w dawnych koszarach mieściły się m.in. siedziba V Rejonu Żydowskiej Służby Porządkowej i gettowe Biuro Przyjmowania Przesyłek Pocztowych.",
+      "W sierpniu 1942 roku, podczas wielkiej akcji deportacyjnej do Treblinki, do tego gmachu przeniósł się warszawski Judenrat.",
+      "Po powstaniu w getcie budynek znalazł się na terenie obozu KL Warschau; został rozebrany w 1965 roku, a w jego miejscu powstał skwer.",
+      "Pierwszy pomnik Bohaterów Getta odsłonięto w tym miejscu w 1946 roku, drugi w 1948 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Crown Artillery Barracks, built in 1784–1792, were also called the Volhynian Barracks. They were in the Warsaw Ghetto area, and the building was demolished in 1965; the POLIN Museum now stands on the site.",
+    "ludzie": [
+      {"kto": "Stanisław Zawadzki", "rola": "architekt gmachu koszar (1784–1792)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Koszary Wołyńskie"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Historii Żydów Polskich Polin", "url": "https://pl.wikipedia.org/wiki/Muzeum_Historii_%C5%BByd%C3%B3w_Polskich_Polin"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord wyprowadzony z artykułu o POLIN. Współrzędne to środek miejsca wskazanego w artykule (w miejscu muzeum), stąd lokalizacja przybliżona."
+  },
+  {
+    "id": "muzeum-karykatury-im-eryka-lipinskiego",
+    "nazwa": "Muzeum Karykatury im. Eryka Lipińskiego",
+    "name_en": "Eryk Lipiński Museum of Caricature",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Kozia 11",
+    "adres_historyczny": null,
+    "lat": 52.245,
+    "lon": 21.01305556,
+    "lokalizacja": "dokladna",
+    "okres": "1978–dziś (w obecnym budynku od 1983)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum Karykatury powstało 15 września 1978 roku jako oddział Muzeum Literatury.",
+      "Inicjatorem powołania muzeum był Eryk Lipiński, który został jego pierwszym dyrektorem.",
+      "Przez pierwsze pięć lat wystawy odbywały się głównie w galerii tygodnika Szpilki, a macierzysty Muzeum Literatury udostępniał dla muzeum miejsce.",
+      "W 1983 roku instytucja przeniosła się do dawnej oranżerii pałacu Prymasowskiego przy ul. Koziej 11; pierwszą wystawę otwarto 27 października 1983 roku.",
+      "Na koniec pierwszego roku samodzielnej działalności zbiory liczyły blisko 2500 obiektów, a w 2022 roku ponad 25 tysięcy prac."
+    ],
+    "ciekawostki": [
+      "W 2022 roku w ul. Brzozowej 6/8a otwarto Lengrenówkę, edukacyjno-artystyczną przestrzeń w dawnej pracowni i mieszkaniu Zbigniewa Lengrena."
+    ],
+    "summary_en": "The Caricature Museum named after Eryk Lipiński was founded in 1978 as a branch of the Museum of Literature. Since 1983 it has been in a former orangery of the Primate's Palace at Kozia 11, and its collection now holds more than 25,000 works.",
+    "ludzie": [
+      {"kto": "Eryk Lipiński", "rola": "dziennikarz, grafik i scenograf; inicjator muzeum i jego pierwszy dyrektor (1978–1991)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Karykatury"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Karykatury im. Eryka Lipińskiego", "url": "https://pl.wikipedia.org/wiki/Muzeum_Karykatury_im._Eryka_Lipi%C5%84skiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-kolekcji-jana-pawla-ii-carroll-porczynskich",
+    "nazwa": "Muzeum Kolekcji im. Jana Pawła II Fundacji Carroll-Porczyńskich",
+    "name_en": "John Paul II Collection Museum (Carroll-Porczyński Foundation)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Bankowy 1 (gmach Giełdy i Banku Polskiego)",
+    "adres_historyczny": null,
+    "lat": 52.24215,
+    "lon": 21.002275,
+    "lokalizacja": "przyblizona",
+    "okres": "1989/1990–dziś (status niejasny)",
+    "istnieje": true,
+    "fakty": [
+      "Obrazy kolekcji, zgromadzone przez Zbigniewa Carroll-Porczyńskiego i Janinę Porczyńską, były gromadzone od 1981 roku.",
+      "Zbiory zostały pokazane po raz pierwszy w Warszawie w Muzeum Archidiecezji Warszawskiej 5 listopada 1987 roku.",
+      "Pod koniec 1989 roku władze miasta przekazały na stałą siedzibę kolekcji gmach Giełdy i Banku Polskiego przy placu Bankowym 1, zajmowany w czasach PRL przez Muzeum Historii Polskiego Ruchu Rewolucyjnego.",
+      "Obrazy były eksponowane w tym gmachu od 1990 roku; obecne miejsce ich przechowywania nie jest znane.",
+      "W 1992 roku przy wejściu do muzeum odsłonięto pomnik Jana Pawła II zaprojektowany przez Gustawa Zemłę.",
+      "Od 2019 roku muzeum jest oddziałem Muzeum Jana Pawła II i Prymasa Wyszyńskiego."
+    ],
+    "ciekawostki": [
+      "Wiele obrazów okazało się kopiami lub falsyfikatami; w kolekcji był też jeden oryginalny obraz van Gogha z cyklu „Wiejskie chaty”."
+    ],
+    "summary_en": "The John Paul II Collection Museum was housed in the former Warsaw Stock Exchange and Polish Bank building at Plac Bankowy 1 from 1990. Its paintings were later found to be largely copies or forgeries, and their current location is unknown.",
+    "ludzie": [
+      {"kto": "Zbigniew Carroll-Porczyński", "rola": "współtwórca kolekcji obrazów, właściciel kolekcji", "wiki": null},
+      {"kto": "Janina Porczyńska", "rola": "współtwórczyni kolekcji obrazów", "wiki": null},
+      {"kto": "Mieczysław Morka", "rola": "historyk sztuki z Instytutu Sztuki PAN, który podważył autentyczność dzieł", "wiki": null},
+      {"kto": "Gustaw Zemła", "rola": "autor pomnika Jana Pawła II przy wejściu do muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kolekcja Porczyńskich"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Kolekcji im. Jana Pawła II Fundacji Carroll-Porczyńskich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Kolekcji_im._Jana_Paw%C5%82a_II_Fundacji_Carroll-Porczy%C5%84skich_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł podaje, że obecne miejsce przechowywania obrazów nie jest znane, a status muzeum jest niejasny. Współrzędne z nagłówka artykułu (przybliżone)."
+  },
+  {
+    "id": "muzeum-legii-warszawa-im-wiktora-bolby",
+    "nazwa": "Muzeum Legii Warszawa im. Wiktora Bołby",
+    "name_en": "Legia Warsaw Museum named after Wiktor Bołba",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Łazienkowska 3 (Stadion Wojska Polskiego)",
+    "adres_historyczny": "dawna świetlica na stadionie (początki muzeum)",
+    "lat": 52.2215,
+    "lon": 21.0405,
+    "lokalizacja": "dokladna",
+    "okres": "2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum powstało w 2005 roku z inicjatywy Wiktora Bołby i początkowo mieściło się w dawnej świetlicy.",
+      "Zainaugurowało działalność 21 kwietnia 2006 roku w ramach obchodów 90. rocznicy utworzenia klubu Legia Warszawa.",
+      "W październiku 2010 roku muzeum przeniesiono na parter części biurowo-usługowej nowego Stadionu Wojska Polskiego, pod jego trybuną północną („Żyletą”).",
+      "Wśród kilkuset eksponatów są pamiątki po Lucjanie Brychczym, Kazimierzu Deynie i Kazimierzu Górskim, puchary, piłki i stroje.",
+      "W styczniu 2023 roku placówce nadano imię Wiktora Bołby."
+    ],
+    "ciekawostki": [
+      "Na wystawie poświęconej „Żylecie” są dwie ławki i kilka krzesełek z trybuny rozebranej podczas budowy nowego stadionu."
+    ],
+    "summary_en": "The Legia Warsaw Museum was founded in 2005 by Wiktor Bołba and opened in 2006 for the club's 90th anniversary. Since 2010 it has been located under the north stand of the new Stadion Wojska Polskiego.",
+    "ludzie": [
+      {"kto": "Wiktor Bołba", "rola": "inicjator powstania muzeum; patron od 2023", "wiki": null},
+      {"kto": "Kazimierz Deyna", "rola": "zawodnik Legii, którego pamiątki są w muzeum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Legii Warszawa im. Wiktora Bołby", "url": "https://pl.wikipedia.org/wiki/Muzeum_Legii_Warszawa_im._Wiktora_Bo%C5%82by"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-lenina-w-warszawie",
+    "nazwa": "Muzeum Lenina w Warszawie (pałac Przebendowskich)",
+    "name_en": "Lenin Museum in Warsaw (Przebendowski Palace)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "al. Solidarności 62",
+    "adres_historyczny": "al. gen. Karola Świerczewskiego 62",
+    "lat": 52.245403,
+    "lon": 21.004261,
+    "lokalizacja": "dokladna",
+    "okres": "1955–1990 (muzeum)",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum rozpoczęło działalność w kwietniu 1955 roku w pałacu Przebendowskich.",
+      "Wystawa stała składała się z trzech części: lata 1870–1912, 1912–1914 (pobyt Lenina w Polsce) oraz 1914–1924.",
+      "W 1984 roku muzeum uznano za instytucję upowszechniania kultury o znaczeniu ogólnokrajowym.",
+      "Muzeum zostało zlikwidowane 30 stycznia 1990 roku, a pałac stał się siedzibą Muzeum Historii Polskich Ruchów Niepodległościowych i Społecznych, które zmieniło nazwę na Muzeum Niepodległości."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Lenin Museum operated from 1955 to 1990 in the Przebendowski Palace on today's Solidarności Avenue. After its closure the building became the home of the Museum of Independence.",
+    "ludzie": [],
+    "dawne_nazwy": ["al. gen. Karola Świerczewskiego 62"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Lenina w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Lenina_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy pałacu; muzeum zlikwidowano w 1990 roku. Adres dzisiejszy z artykułu („obecnie al. Solidarności”), numer 62 zakładany na podstawie artykułu."
+  },
+  {
+    "id": "muzeum-literatury-im-adama-mickiewicza",
+    "nazwa": "Muzeum Literatury im. Adama Mickiewicza",
+    "name_en": "Adam Mickiewicz Museum of Literature",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.25025,
+    "lon": 21.01238,
+    "lokalizacja": "dokladna",
+    "okres": "1950–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało powołane w 1950 roku z inicjatywy bibliografa i miłośnika literatury Adama Mickiewicza oraz senatora Aleksandra Semkowicza jako Muzeum Adama Mickiewicza i Juliusza Słowackiego.",
+      "Pierwszą ekspozycję udostępniono w 1953 roku.",
+      "W 1971 roku muzeum otrzymało nazwę Muzeum Literatury im. Adama Mickiewicza.",
+      "Muzeum mieści się w 6 kamienicach zrekonstruowanych po II wojnie światowej, m.in. w Kamienicy Balcerowskiej i Kamienicy Orlemusowskiej z XV wieku.",
+      "Cztery kamienice przy ul. Brzozowej zostały przystosowane na użytek muzealny w 1962 roku."
+    ],
+    "ciekawostki": [
+      "W zbiorach muzeum znajduje się jedyny ocalały film z udziałem Witkacego, zrekonstruowany cyfrowo w 2015 roku."
+    ],
+    "summary_en": "The Adam Mickiewicz Museum of Literature was founded in 1950 and operates in six reconstructed tenement houses, including two 15th-century ones, and four houses on Brzozowa street.",
+    "ludzie": [
+      {"kto": "Aleksander Semkowicz", "rola": "senator, współinicjator powołania muzeum w 1950 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Adama Mickiewicza i Juliusza Słowackiego"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Literatury im. Adama Mickiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Literatury_im._Adama_Mickiewicza_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje adresu głównej siedziby; rekord ma współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "muzeum-marii-sklodowskiej-curie",
+    "nazwa": "Muzeum Marii Skłodowskiej-Curie w Warszawie",
+    "name_en": "Maria Skłodowska-Curie Museum in Warsaw",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Freta 16",
+    "adres_historyczny": null,
+    "lat": 52.251532337,
+    "lon": 21.008545875,
+    "lokalizacja": "dokladna",
+    "okres": "1867 (urodziny) / 1967–dziś (muzeum)",
+    "istnieje": true,
+    "fakty": [
+      "W zrekonstruowanej kamienicy Macieja Łyszkiewicza przy ul. Freta 16 w 1867 roku urodziła się Maria Skłodowska-Curie.",
+      "Maria Skłodowska przebywała w tym domu niecały rok; w 1868 roku przeniosła się z rodzicami do kamienicy przy ulicy Nowolipki, która została zniszczona w czasie II wojny światowej.",
+      "Muzeum utworzyło w 1967 roku Polskie Towarzystwo Chemiczne z inicjatywy jego prezesa, prof. Józefa Hurwica, i od początku mieściło się w kamienicy przy ul. Freta 16.",
+      "W lipcu 2018 roku Rada m.st. Warszawy utworzyła muzeum jako wspólną instytucję kultury; placówka rozpoczęła działalność 1 sierpnia 2018 roku.",
+      "Wystawa prezentuje głównie rzeczy osobiste noblistki, jej ojca Władysława Skłodowskiego i męża Piotra Curie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Maria Skłodowska-Curie Museum is in a reconstructed tenement at Freta 16 where the scientist was born in 1867. It has been a city cultural institution since 2018 and shows her personal belongings and those of her family.",
+    "ludzie": [
+      {"kto": "Maria Skłodowska-Curie", "rola": "noblistka, urodzona w kamienicy przy Freta 16 w 1867 roku", "wiki": null},
+      {"kto": "Józef Hurwic", "rola": "prezes Polskiego Towarzystwa Chemicznego, inicjator powstania muzeum w 1967 roku", "wiki": null},
+      {"kto": "Maria Wróblewska", "rola": "pierwsza kustosz muzeum (od 1967)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muzeum Marii Skłodowskiej-Curie Polskiego Towarzystwa Chemicznego"],
+    "zrodla": [{"tytul": "Wikipedia: Muzeum Marii Skłodowskiej-Curie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Marii_Sk%C5%82odowskiej-Curie_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

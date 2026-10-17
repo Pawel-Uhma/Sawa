@@ -1,0 +1,280 @@
+[
+  {
+    "id": "gora-gnojna",
+    "nazwa": "Góra Gnojna",
+    "name_en": "Góra Gnojna (Gnojna Hill)",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "taras widokowy na skarpie wiślanej, między ulicami Celną, Dawną i Bugaj",
+    "adres_historyczny": null,
+    "lat": 52.25,
+    "lon": 21.0139,
+    "lokalizacja": "dokladna",
+    "okres": "1691–1844 (wysypisko), dziś taras widokowy",
+    "istnieje": true,
+    "fakty": [
+      "Wzniesienie na skarpie wiślanej na Starym Mieście było dawnym wysypiskiem śmieci i nieczystości Starej Warszawy, funkcjonującym do 1844 roku.",
+      "W 1691 roku wysypisko osiągnęło tak duże rozmiary, że magistrat uchwalił jego zlikwidowanie; uchwała nie przyniosła skutku.",
+      "W 1834 roku inżynier miasta Klopmann opracował projekt zjazdu do Wisły przez ulicę Celną, który odrzucono w 1843 roku; zrealizowano projekt Feliksa Pancera.",
+      "Wysypisko zamknięto w 1844 roku, a stok góry obłożono ziemią; miąższość odpadów wynosi około 23 metrów.",
+      "W 1923 roku na górze wzniesiono zespół domów mieszkalnych i magazynowych Pocztowej Kasy Oszczędności, zaprojektowany przez Mariana Lalewicza.",
+      "Kompleks uszkodzony w 1939 roku i zniszczony w 1944 roku nie został odbudowany, gdyż jego górny budynek zasłaniał panoramę Starego Miasta.",
+      "W 2007 roku górę zabezpieczono przed odkształcaniem matą antyerozyjną i obsianiem trawą."
+    ],
+    "ciekawostki": [
+      "Według artykułu w wysypisku zakopywano po szyję ludzi chorych na syfilis, bo wierzono, że ma to właściwości zdrowotne.",
+      "W południowej części tarasu stoi posąg Siłacza, wykonany w 1908 roku przez Stanisława Czarnowskiego, ustawiony tu w 1972 roku."
+    ],
+    "summary_en": "Góra Gnojna is a hill on the Vistula escarpment in the Old Town, a city dump until 1844 and now a viewing terrace. A 1923 Postal Savings Bank complex on the slope was destroyed in 1944 and not rebuilt.",
+    "ludzie": [
+      {"kto": "Marian Lalewicz", "rola": "projektant zespołu PKO z 1923 roku", "wiki": null},
+      {"kto": "Feliks Pancer", "rola": "zrealizowany projekt zjazdu do Wisły", "wiki": null},
+      {"kto": "Stanisław Czarnowski", "rola": "autor posągu Siłacza (1908)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Góra Gnojowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Góra Gnojna", "url": "https://pl.wikipedia.org/wiki/G%C3%B3ra_Gnojna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-glownej-biblioteki-judaistycznej",
+    "nazwa": "Budynek Głównej Biblioteki Judaistycznej (ul. Tłomackie 3/5)",
+    "name_en": "Building of the Main Judaic Library (Tłomackie 3/5)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Tłomackie 3/5",
+    "adres_historyczny": "al. Świerczewskiego 79 (adres w okresie do lat 80. XX w.)",
+    "lat": 52.2442,
+    "lon": 21.0028,
+    "lokalizacja": "dokladna",
+    "okres": "1928–1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nowy gmach biblioteki wzniesiono w latach 1928–1936 przy ul. Tłomackie 3/5 według projektu Edwarda Ebera.",
+      "Gmach zaprojektowano w stylu zmodernizowanego historyzmu (półmodernizmu) i nawiązano w nim do znajdującej się obok Wielkiej Synagogi.",
+      "Od listopada 1940 do marca 1942 roku budynek znajdował się w warszawskim getcie; mieściły się w nim m.in. siedziba Żydowskiej Samopomocy Społecznej i magazyn mebli zrabowanych w getcie.",
+      "Budynek przetrwał, choć uszkodzony, powstanie w getcie i powstanie warszawskie.",
+      "16 maja 1943 roku, po wysadzeniu Wielkiej Synagogi, w budynku wybuchł pożar; jego ślady widać w posadzce w holu na parterze.",
+      "W maju 2016 roku nad głównym wejściem odtworzono przedwojenny napis Główna Biblioteka Judaistyczna w języku polskim i hebrajskim.",
+      "Obecnie w budynku mieści się Żydowski Instytut Historyczny."
+    ],
+    "ciekawostki": [
+      "Od 2008 roku jeden z pomników granic getta przy ul. Bielańskiej, na rogu ul. A. Corazziego, upamiętnia fragment getta, w którym znajdowały się biblioteka i Wielka Synagoga."
+    ],
+    "summary_en": "The 1928–1936 building of the Main Judaic Library at Tłomackie 3/5, next to the Great Synagogue. It was in the ghetto, survived the uprisings and today houses the Jewish Historical Institute.",
+    "ludzie": [
+      {"kto": "Edward Eber", "rola": "autor projektu gmachu", "wiki": null},
+      {"kto": "Mojżesz Schorr", "rola": "inicjator budowy nowej siedziby (1927)", "wiki": null},
+      {"kto": "Ludwik Natanson", "rola": "inicjator założenia biblioteki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Biblioteka Wielkiej Synagogi (1879–1880)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Główna Biblioteka Judaistyczna", "url": "https://pl.wikipedia.org/wiki/G%C5%82%C3%B3wna_Biblioteka_Judaistyczna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord o budynku; sama biblioteka jest nieistniejąca jako instytucja (działalność kontynuuje portal Centralna Biblioteka Judaistyczna)."
+  },
+  {
+    "id": "hala-koszyki",
+    "nazwa": "Hala Koszyki",
+    "name_en": "Koszyki Market Hall",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Koszykowa 61/63",
+    "adres_historyczny": "folwark Koszyki",
+    "lat": 52.2222,
+    "lon": 21.0108,
+    "lokalizacja": "dokladna",
+    "okres": "1906–1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Halę targową wzniesiono w latach 1906–1909 przy ul. Koszykowej 61/63 na terenie dawnego folwarku Koszyki; była trzecim kompleksem hal targowych w Warszawie, po Halach Mirowskich i halach na placu Witkowskiego.",
+      "Inwestorem było miasto; magistrat nabył na ten cel dwie parcele za 185 205 rubli.",
+      "Zespół zaprojektował w stylu secesyjnym Juliusz Dzierżanowski, pracujący w Wydziale Budowlanym Zarządu Miejskiego.",
+      "Hala rozpoczęła działalność 2 marca 1909 roku, ale wszystkie stoiska wynajęto dopiero po I wojnie światowej.",
+      "W czasie obrony Warszawy we wrześniu 1939 roku uruchomiono w hali ośrodek sanitarno-weterynaryjny Straży Obywatelskiej do uboju koni na mięso.",
+      "W czasie powstania warszawskiego hala została spalona i w większości zniszczona; w 1965 roku wpisano ją do rejestru zabytków.",
+      "W 2009 roku firma Avestus Real Estate przeprowadziła rozbiórkę, pozostawiając dwie oficyny bramne; odbudowaną halę otwarto w październiku 2016 roku."
+    ],
+    "ciekawostki": [
+      "Autorem ozdób rzeźbiarskich na elewacjach był Zygmunt Otto; nad wejściami do oficyn bramnych umieszczono łeb wołu i kartusz z Syrenką.",
+      "W hali było 4 duże sklepy piętrowe, 24 mniejsze sklepy, 60 jatek mięsnych, 12 rybnych i 144 stragany."
+    ],
+    "summary_en": "A 1906–1909 Art Nouveau market hall at Koszykowa 61/63, the third major market complex in Warsaw. Burned in 1944, it was demolished in 2009 except for the gate wings and reopened as a market and restaurant hall in 2016.",
+    "ludzie": [
+      {"kto": "Juliusz Dzierżanowski", "rola": "autor projektu", "wiki": null},
+      {"kto": "Zygmunt Otto", "rola": "autor ozdób rzeźbiarskich", "wiki": null},
+      {"kto": "Avestus Real Estate", "rola": "właściciel, który przeprowadził rozbiórkę w 2009 roku", "wiki": null},
+      {"kto": "Griffin Group", "rola": "nabywca nieruchomości w 2012 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hala Targowa na Koszykach", "Spółdzielczy Dom Handlowy „Koszyki” (od 1963)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hala Koszyki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hala_Koszyki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst urwany w zdaniu o materiałach izolacyjnych (koniec sekcji rewitalizacji)."
+  },
+  {
+    "id": "hala-torwar",
+    "nazwa": "Hala Torwar",
+    "name_en": "Torwar Arena",
+    "typ": "sport",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Łazienkowska 6a",
+    "adres_historyczny": null,
+    "lat": 52.2225,
+    "lon": 21.042222,
+    "lokalizacja": "dokladna",
+    "okres": "1953–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Decyzję o budowie pierwszego sztucznego lodowiska w Warszawie podjęto w styczniu 1953 roku; wybrano dawną część parku Agrykola przy ul. Łazienkowskiej.",
+      "Obiekt wzniesiono w latach 1953–1957 według projektu Juliana Brzuchowskiego i Danuty Bredy-Brzuchowskiej jako pierwsze w Warszawie kryte lodowisko.",
+      "Pierwsze mrożenie sztucznej tafli odbyło się 18 listopada 1953 roku; oficjalne otwarcie 12 grudnia 1953 roku meczem CWKS Warszawa z Gwardią Bydgoszcz (12:3).",
+      "7 października 1954 roku odbył się premierowy mecz międzypaństwowy, w którym seniorska reprezentacja Polski uległa Związkowi Radzieckiemu 1:7.",
+      "Do lat 90. obiekt nie miał dachu; zadaszono tylko trybuny, od 1967 roku według projektu zespołu W. Humnickiego, R. Piekarskiego i W. Stockiego.",
+      "W latach 1998–1999 halę przebudowano; w 2009 roku Torwar był jedną z 7 aren mistrzostw Europy koszykarzy.",
+      "Obok, pod tym samym adresem, zbudowano w 1997 roku halę COS Torwar Lodowisko."
+    ],
+    "ciekawostki": [
+      "Na elewacji umieszczono mozaikę „Łyżwiarze” Hanny Żuławskiej, usuniętą podczas modernizacji w latach 90.",
+      "Nazwa Torwar miała łączyć przeznaczenie budynku (tor łyżwiarski) z miastem (Warszawa)."
+    ],
+    "summary_en": "The Torwar arena at Łazienkowska 6a, Warsaw's first covered ice rink, built in 1953–1957 on part of the former Agrykola park. It was roofed in 1967, rebuilt in 1998–1999, and hosted the first games of the national teams.",
+    "ludzie": [
+      {"kto": "Julian Brzuchowski", "rola": "autor projektu lodowiska", "wiki": null},
+      {"kto": "Danuta Breda-Brzuchowska", "rola": "autorka projektu lodowiska", "wiki": null},
+      {"kto": "Hanna Żuławska", "rola": "autorka mozaiki „Łyżwiarze”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hala COS Torwar", "Hala Torwar I"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hala Torwar", "url": "https://pl.wikipedia.org/wiki/Hala_Torwar"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "hala-mirowska",
+    "nazwa": "Hale Mirowskie",
+    "name_en": "Mirów Halls",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "pl. Mirowski 1 (hala zachodnia), pl. Żelaznej Bramy 1 (hala wschodnia)",
+    "adres_historyczny": null,
+    "lat": 52.23888889,
+    "lon": 20.99833333,
+    "lokalizacja": "dokladna",
+    "okres": "1899–1902–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hale wybudowano w latach 1899–1902 w miejscu częściowo rozebranego zespołu Koszar Mirowskich; kamień węgielny położono 15 października 1899 roku.",
+      "Projektantami byli Bolesław Miłkowski (konstrukcja), Ludwik Panczakiewicz (elewacje) oraz Apoloniusz Nieniewski i Władysław Kozłowski (oprawa architektoniczna).",
+      "Były to dwa budynki o długości 95,4 m i szerokości 42,8 m; koszt budowy wyniósł 1,4 mln rubli.",
+      "Przed wojną w halach działało ok. 900 punktów sprzedaży; do zniszczenia w 1944 roku były największym w Warszawie obiektem handlowym.",
+      "5 i 6 sierpnia 1944 roku obie hale spalono; 6 sierpnia zdobyli je oddziały Oskara Dirlewangera, a okolicznych mieszkańców zamordowano.",
+      "Hala zachodnia po odbudowie od listopada 1962 roku ponownie pełniła funkcje handlowe; w 1986 roku wpisano ją do rejestru zabytków.",
+      "Hala wschodnia po odbudowie w 1948 roku została w 1953 roku przekazana klubowi MKS „Gwardia”; w 1953 roku odbyły się tu X Mistrzostwa Europy w Boksie."
+    ],
+    "ciekawostki": [
+      "Cały obszar wokół hal żartobliwie nazywano „brzuchem Warszawy”.",
+      "W 1959 roku w hali wschodniej odbyły się Mistrzostwa Świata w Podnoszeniu Ciężarów."
+    ],
+    "summary_en": "Two twin market halls at Mirów, built in 1899–1902 as the first large trade complex in Warsaw. Burned in August 1944, both were rebuilt and still serve as markets.",
+    "ludzie": [
+      {"kto": "Bolesław Miłkowski", "rola": "projekt konstrukcji", "wiki": null},
+      {"kto": "Ludwik Panczakiewicz", "rola": "projekt elewacji", "wiki": null},
+      {"kto": "Apoloniusz Nieniewski", "rola": "oprawa architektoniczna", "wiki": null},
+      {"kto": "Władysław Kozłowski", "rola": "oprawa architektoniczna", "wiki": null},
+      {"kto": "Oskar Dirlewanger", "rola": "dowódca oddziałów, które zdobyły hale 6 sierpnia 1944", "wiki": null},
+      {"kto": "Zbigniew Pawlak", "rola": "projekt odbudowy hali zachodniej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hale Mirowskie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hale_Mirowskie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst urwany w opisie hali wschodniej (2017 r.)."
+  },
+  {
+    "id": "hotel-angielski-wierzbowa-6",
+    "nazwa": "Hotel Angielski",
+    "name_en": "Hotel Angielski (English Hotel)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Wierzbowa 6",
+    "lat": 52.24246495,
+    "lon": 21.01142764,
+    "lokalizacja": "dokladna",
+    "okres": "1792–1939",
+    "istnieje": false,
+    "fakty": [
+      "Od 1792 roku hotel mieścił się w dawnym pałacu z 1666 roku, zbudowanym przez Stefana Wierzbowskiego, biskupa poznańskiego.",
+      "Od 1797 roku hotel nazywał się Hôtel d’Prusse, a od 1803 roku Hôtel d’Angleterre.",
+      "W nocy z 10 na 11 grudnia 1812 roku w apartamencie nr 4 na parterze zatrzymał się Napoleon Bonaparte; wydarzenie upamiętniono później tablicą na budynku.",
+      "W 1873 roku hotel miał już wanny.",
+      "Budynek hotelu został zniszczony we wrześniu 1939 roku."
+    ],
+    "ciekawostki": [
+      "Apartament nr 4, w którym nocował Napoleon, mieścił się na parterze od strony ul. Czystej (obecnie ul. Ossolińskich).",
+      "We współczesnym układzie w tym miejscu znajduje się biurowiec Metropolitan."
+    ],
+    "summary_en": "The Hotel Angielski at Wierzbowa 6, housed in a 1666 palace from 1792 and known for Napoleon's overnight stay in 1812. It was destroyed in September 1939.",
+    "ludzie": [
+      {"kto": "Stefan Wierzbowski", "rola": "biskup poznański, fundator pałacu z 1666 roku", "wiki": null},
+      {"kto": "Napoleon Bonaparte", "rola": "gość hotelu w 1812 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Hôtel d’Prusse", "Hôtel d’Angleterre"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Angielski w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hotel_Angielski_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "hotel-bristol",
+    "nazwa": "Hotel Bristol",
+    "name_en": "Hotel Bristol",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Krakowskie Przedmieście 42/44",
+    "adres_historyczny": null,
+    "lat": 52.242222,
+    "lon": 21.016111,
+    "lokalizacja": "dokladna",
+    "okres": "1898–1901–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W miejscu hotelu w drugiej połowie XIX wieku stał pałac Tarnowskich; w 1895 roku nieruchomość kupiła spółka Ignacego Paderewskiego, Stanisława Roszkowskiego i Edmunda Zaremby.",
+      "W 1895 roku na części gruntu powstała rotunda, w której pokazywano Panoramę Golgota Jana Styki.",
+      "Na konkurs projektu hotelu wpłynęło 17 prac; laureatami zostali Tadeusz Stryjeński i Franciszek Mączyński, a projekt przerobił Władysław Marconi na neorenesansowy.",
+      "Kamień węgielny wmurowano 22 kwietnia 1899 roku.",
+      "Hotel otwarto w listopadzie 1901 roku; 19 listopada 1901 roku powitano pierwszego gościa.",
+      "W budynku po raz pierwszy w Warszawie zastosowano stropy żelbetowe.",
+      "Hotel miał 11 wind, w tym jedną kryształową dla gości, zezłomowaną w 1969 roku."
+    ],
+    "ciekawostki": [
+      "Przy budowie hotelu zlikwidowano stojącą przy wylocie ul. Karowej bramę z rzeźbą Syrenki Konstantego Hegla z 1856 roku.",
+      "W 1912 roku apartament Paderewskiego kosztował około 25 rubli za noc."
+    ],
+    "summary_en": "A five-star hotel on Krakowskie Przedmieście 42/44 next to the Presidential Palace. Built in 1898–1901 on the site of the Tarnowski Palace, it was designed by Tadeusz Stryjeński and Franciszek Mączyński and reworked by Władysław Marconi.",
+    "ludzie": [
+      {"kto": "Ignacy Paderewski", "rola": "współwłaściciel spółki kupującej nieruchomość (1895)", "wiki": null},
+      {"kto": "Stanisław Roszkowski", "rola": "inicjator inwestycji hotelowej", "wiki": null},
+      {"kto": "Edmund Zaremba", "rola": "współwłaściciel spółki kupującej nieruchomość (1895)", "wiki": null},
+      {"kto": "Tadeusz Stryjeński", "rola": "laureat konkursu na projekt hotelu", "wiki": null},
+      {"kto": "Franciszek Mączyński", "rola": "laureat konkursu na projekt hotelu", "wiki": null},
+      {"kto": "Władysław Marconi", "rola": "przeróbka projektu na neorenesansowy", "wiki": null},
+      {"kto": "Otto Wagner młodszy", "rola": "zamówiony secesyjny wystrój wnętrz", "wiki": null},
+      {"kto": "Jan Styka", "rola": "autor Panoramy Golgota (rotunda z 1895)", "wiki": null}
+    ],
+    "dawne_nazwy": ["pałac Tarnowskich (przed hotelem)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hotel Bristol", "url": "https://pl.wikipedia.org/wiki/Hotel_Bristol"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst urwany w zdaniu o debatach politycznych po odzyskaniu niepodległości; dalsza historia hotelu (po 1918) nieuwzględniona."
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "xxxiii-lo-bema-76",
+    "nazwa": "Budynek XXXIII Liceum Ogólnokształcącego przy ul. Józefa Bema 76",
+    "name_en": "Building of the 33rd General Secondary School, Józef Bem Street 76",
+    "typ": "budynek",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Józefa Bema 76",
+    "adres_historyczny": null,
+    "lat": 52.230833, "lon": 20.959444,
+    "lokalizacja": "dokladna",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek szkoły przy ul. Józefa Bema 76 oddano do użytku w 1927 roku; zaprojektowali go Teodor Łapiński i Józef Krupa.",
+      "W 1939 roku mieścił się w nim szpital; w okresie okupacji niemieckiej wielu nauczycieli pracowało społecznie na tajnych kompletach.",
+      "W 1942 roku nauka odbywała się w baraku przy ul. Wolskiej, dzielonym między kilka szkół.",
+      "W 1949 roku w budynku przy ul. Bema 76 powołano szkołę nr IV TPD.",
+      "13 czerwca 1975 roku, w trakcie wymiany dachu, wybuchł pożar, w wyniku którego zniszczeniu uległ cały dach liceum.",
+      "1 września 2012 roku utworzono w tym budynku, wraz z Gimnazjum Dwujęzycznym nr 50, Zespół Szkół nr 117."
+    ],
+    "ciekawostki": [
+      "1 września 1993 roku rozpoczęła naukę pierwsza w Polsce, równolegle z III LO w Gdyni, klasa z programem International Baccalaureate."
+    ],
+    "summary_en": "The building at ul. Józefa Bema 76 in Wola was opened in 1927, designed by Teodor Łapiński and Józef Krupa. It served as a hospital in 1939, was partly burned when its roof was destroyed by fire in 1975, and houses the 33rd General Secondary School (named after Copernicus).",
+    "ludzie": [
+      {"kto": "Teodor Łapiński", "rola": "architekt budynku szkoły (1927)", "wiki": null},
+      {"kto": "Józef Krupa", "rola": "architekt budynku szkoły (1927)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: XXXIII Liceum Ogólnokształcące Dwujęzyczne im. Mikołaja Kopernika w Warszawie", "url": "https://pl.wikipedia.org/wiki/XXXIII_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_Dwuj%C4%99zyczne_im._Miko%C5%82aja_Kopernika_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł dotyczy szkoły; rekord opisuje budynek przy ul. Bema 76, bo większość dat dotyczy budynku. Pogranicze: szkoły jako instytucje pomijam (np. XL LO, XLV LO)."
+  },
+  {
+    "id": "zbrodnia-przy-ul-dzikiej",
+    "nazwa": "Zbrodnia przy ul. Dzikiej 17",
+    "name_en": "Massacre at ul. Dzika 17",
+    "typ": "zdarzenie",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Dzika 17",
+    "adres_historyczny": null,
+    "lat": 52.2535, "lon": 20.9835,
+    "lokalizacja": "dokladna",
+    "okres": "1944",
+    "istnieje": true,
+    "fakty": [
+      "21 sierpnia 1944 roku na podwórzu kamienicy Goldbandów przy ul. Dzikiej 17 zamordowano około 200 Polaków.",
+      "Wśród ofiar byli przede wszystkim mężczyźni z Muranowa oraz starcy z domu opieki przy ul. Przebieg.",
+      "20 sierpnia 1944 roku Niemcy uderzyli na pozycje Grupy „Północ” w rejonie Muranowa; wyczerpana ludność cywilna zaczęła domagać się przerwania walki, a 21 sierpnia powstańcy wycofali się z Muranowa.",
+      "Po zajęciu Muranowa Niemcy przeprowadzili na Stawkach „selekcję” mężczyzn; po wojnie ustalono, że zaprowadzono ich na podwórze przy ul. Dzikiej 17 i tam rozstrzelano.",
+      "Ciała zamordowanych oblano benzyną i spalono.",
+      "Maja Motyl i Stanisław Rutkowski ocenili liczbę ofiar na około 200; ustalono nazwiska zaledwie dwóch zamordowanych.",
+      "W latach 50. miejsce masakry upamiętniono wolno stojącą tablicą w podwórzu, przy ścianie budynku."
+    ],
+    "ciekawostki": [
+      "Niemcy zwerbowali podstępem bądź pod przymusem około 100 ocalałych mężczyzn do rozbierania barykad, grzebania zwłok i transportu amunicji; większość z nich zaginęła."
+    ],
+    "summary_en": "On 21 August 1944, during the Warsaw Uprising, the Germans shot about 200 Poles in the courtyard of the Goldband tenement at ul. Dzika 17. The victims were mainly men from Muranów and residents of a care home. The building survived the war, and a plaque from the 1950s marks the site.",
+    "ludzie": [
+      {"kto": "Marian Lalewicz", "rola": "znany architekt, wśród ofiar masakry", "wiki": null},
+      {"kto": "Maja Motyl", "rola": "autorka oceny liczby ofiar (z Stanisławem Rutkowskim)", "wiki": null},
+      {"kto": "Stanisław Rutkowski", "rola": "autor oceny liczby ofiar (z Mają Motyl)", "wiki": null},
+      {"kto": "Franciszek Rataj „Paweł”", "rola": "podpułkownik, dowódca północnego odcinka obrony Starego Miasta; zarządził odwrót z Muranowa", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Zbrodnia przy ulicy Dzikiej", "url": "https://pl.wikipedia.org/wiki/Zbrodnia_przy_ulicy_Dzikiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w dużej części opisuje walki na Muranowie i Starym Mieście; rekord to samo miejsce masakry (ul. Dzika 17). Współrzędne z nagłówka."
+  }
+]

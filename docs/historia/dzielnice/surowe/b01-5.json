@@ -1,0 +1,278 @@
+[
+  {
+    "id": "ulica-niska",
+    "nazwa": "Ulica Niska",
+    "name_en": "Niska Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Niska",
+    "adres_historyczny": null,
+    "lat": 52.2496217,
+    "lon": 20.983028,
+    "lokalizacja": "przyblizona",
+    "okres": "1771–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie była drogą narolną biegnącą między dołami po gliniankach, łączącą ul. Pokorną z wałem miejskim (ulicą Okopową); nazwa ulicy, nadana w 1771 roku, wiązała się z jej położeniem wśród glinianek i stawów.",
+      "W 1784 roku przy ulicy znajdowały się nieliczne drewniane domy oraz trzy niewielkie browary; w jednym z nich podczas insurekcji kościuszkowskiej produkowano amunicję.",
+      "W drugiej połowie lat 50. XIX wieku ulica, wybrukowana kamieniem polnym, otrzymała oświetlenie gazowe.",
+      "W 1910 roku przy ulicy znajdowało się ok. 50 kamienic frontowych i domów murowanych; Niska należała do najuboższych ulic żydowskiej dzielnicy północnej.",
+      "W listopadzie 1940 roku ulica Niska w całości znalazła się w obrębie getta; w dniach 6–11 września 1942 roku w okolicy zgromadzono ok. 100 tys. mieszkańców getta („kocioł na Miłej” lub „kocioł na Niskiej”).",
+      "Prawie cała zabudowa ulicy uległa zniszczeniu w 1943 roku."
+    ],
+    "ciekawostki": [
+      "W 2023 roku na ogrodzeniu przy Wydziale Psychologii Uniwersytetu Warszawskiego umieszczono tablicę ze zdjęciem nieistniejących kamienic pod numerami 23 i 25, wykonanym w czasie powstania w getcie.",
+      "Blok mieszkalny pod nr 11, „Mister Warszawy” z 1960 roku, jest jednym z obiektów opisanych przy ulicy."
+    ],
+    "summary_en": "Niska Street in Wola and Śródmieście began as a road between clay pits, named in 1771. It was a poor Jewish district street with many small breweries and tenements. In 1940 it was placed inside the Warsaw ghetto, and almost all its buildings were destroyed in 1943. Post-war housing estates of Muranów now stand along it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Niska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Niska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich. Elektryczna podstacja z ok. 1931 roku (jedyny przedwojenny obiekt przy ulicy) pominięta jako osobny rekord."
+  },
+  {
+    "id": "ulica-nowolipie",
+    "nazwa": "Ulica Nowolipie",
+    "name_en": "Nowolipie Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Nowolipie",
+    "adres_historyczny": "ul. Nowo Lipie (pierwotna nazwa)",
+    "lat": 52.2424324,
+    "lon": 20.9903167,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica to dawna droga narolna na terenie jurydyki Nowolipie, utworzonej w XVII wieku i należącej do klasztoru brygidek.",
+      "Pierwotna nazwa ulicy to Nowo Lipie, na pamiątkę nazwy wsi Lipie, gdzie znajdowała się pierwsza siedziba zakonu.",
+      "Nazwę ulicy nadano w 1770 roku.",
+      "5 listopada 1923 roku oddano do użytku linię tramwajową przebiegającą wzdłuż ulicy między skrzyżowaniami z ulicami Smoczą i Żelazną.",
+      "Zabudowa ulicy ucierpiała w czasie obrony Warszawy we wrześniu 1939 roku; w listopadzie 1940 roku ulica w całości znalazła się w granicach getta.",
+      "26 listopada 1940 roku z ulicy wycofano linie tramwajowe przeznaczone dla ludności nieżydowskiej; torowisko było nadal wykorzystywane przez tramwaje dla Żydów do lipca 1942 roku.",
+      "Zabudowa ulicy została zniszczona po upadku powstania w getcie."
+    ],
+    "ciekawostki": [
+      "8 listopada 1923 roku w nieistniejącej już kamienicy pod nr 53 urodził się Józef Hen; pisarz wychował się pod tym adresem i upamiętnił nazwę ulicy w tytule jednej ze swoich książek.",
+      "Przy ulicy znajduje się Pałac Mostowskich, siedziba Komendy Stołecznej Policji, oraz V Liceum Ogólnokształcące im. Księcia Józefa Poniatowskiego."
+    ],
+    "summary_en": "Nowolipie Street in Wola and Śródmieście was a country road on the land of a Brigidine convent, named in 1770 after the former Nowo Lipie estate. It was fully inside the Warsaw ghetto from November 1940, and most of its buildings were destroyed after the ghetto uprising.",
+    "ludzie": [
+      {"kto": "Józef Hen", "rola": "pisarz, urodzony w 1923 roku w kamienicy pod nr 53; upamiętnił ulicę w tytule jednej ze swoich książek", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Nowo Lipie (pierwotna nazwa)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowolipie w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowolipie_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich."
+  },
+  {
+    "id": "ulica-nowolipki",
+    "nazwa": "Ulica Nowolipki",
+    "name_en": "Nowolipki Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Nowolipki (od ul. Nalewki do ul. Smoczej)",
+    "adres_historyczny": "Nowolipska; nieoficjalnie Ogrodniki",
+    "lat": 52.2430481,
+    "lon": 20.9862355,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1624–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica to dawna droga narolna, wytyczona po 1624 roku na gruntach posiadłości brygidek zwanej Nowe Lipie, biegnąca od Nalewek na zachód.",
+      "Obecną nazwę zatwierdzono w 1770 roku; tego samego roku geometra Maciej Deutsch uregulował ulicę i przedłużył ją do ul. Wolność.",
+      "W 1775 roku pobudowano nowe skrzydła pałacu Konstancji Hilzenowej; po 1795 roku pałac przeszedł na własność Tadeusza Mostowskiego, ministra spraw wewnętrznych Księstwa Warszawskiego.",
+      "W 1824 roku Antonio Corazzi przebudował pałac Mostowskich na siedzibę Komisji Rządzącej Spraw Wewnętrznych i Duchownych.",
+      "W latach 1840–1843 powstał pod nr 11/15 gmach II Gimnazjum Męskiego; w jego budynku mieszkała w pierwszych latach życia Maria Skłodowska-Curie.",
+      "W latach 1892–1896 według projektu Józefa Hussa i Edwarda Cichockiego wybudowano kościół św. Augustyna, z 70-metrową wieżą.",
+      "W 1914 roku do kamienicy nr 53, na rogu ul. Smoczej, wprowadził się z rodziną Józef Rotblat, laureat Pokojowej Nagrody Nobla w 1995 roku.",
+      "W sierpniu 1942 roku i w lutym 1943 roku w piwnicach szkoły Bera Borochowa (nr 68) ukryto pierwszą i drugą część archiwum Ringelbluma."
+    ],
+    "ciekawostki": [
+      "Od 2018 roku skwer na rogu z Smoczą nosi imię Józefa Rotblata.",
+      "W 2021 roku na skwerze między blokami nr 28 i 30 odsłonięto upamiętnienie miejsca odnalezienia w 1946 roku pierwszej części archiwum Ringelbluma."
+    ],
+    "summary_en": "Nowolipki Street in Wola and Śródmieście began as a country road on Brigidine land and was named in 1770. It was home to the Mostowski palace, a Corazzi-designed seat of government administration, and Maria Skłodowska-Curie spent her early years in the II Men's Gymnasium building. The Ringelblum archive was hidden in a school cellar at number 68.",
+    "ludzie": [
+      {"kto": "Maciej Deutsch", "rola": "geometra; w 1770 roku uregulował ulicę i przedłużył ją do ul. Wolność", "wiki": null},
+      {"kto": "Tadeusz Mostowski", "rola": "minister spraw wewnętrznych Księstwa Warszawskiego; właściciel pałacu po 1795 roku", "wiki": null},
+      {"kto": "Antonio Corazzi", "rola": "architekt; przebudował pałac Mostowskich w 1824 roku", "wiki": null},
+      {"kto": "Maria Skłodowska-Curie", "rola": "mieszkała w budynku II Gimnazjum Męskiego w pierwszych latach życia; rodzina wyprowadziła się stamtąd w 1873 roku", "wiki": null},
+      {"kto": "Józef Rotblat", "rola": "laureat Pokojowej Nagrody Nobla w 1995 roku; wprowadził się z rodziną do kamienicy nr 53 w 1914 roku", "wiki": null},
+      {"kto": "Ber Borochow", "rola": "patron szkoły pod nr 68, w której piwnicach ukryto archiwum Ringelbluma", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Nowolipska (określenie obok nazwy od 1770)",
+      "Ogrodniki (nieoficjalna nazwa)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Nowolipki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Nowolipki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich."
+  },
+  {
+    "id": "ulica-obozowa",
+    "nazwa": "Ulica Obozowa",
+    "name_en": "Obozowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Obozowa",
+    "adres_historyczny": "Obozowa Średnia (ul. Ożarowska) i Obozowa Tylna (ul. Czorsztyńska), do 1919",
+    "lat": 52.2466439,
+    "lon": 20.9393389,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica to dawna droga do wsi Babice; w czasie Królestwa Polskiego prowadziła do obozu artylerii pieszej, a od 1831 roku do obozu wojska rosyjskiego, z czym związana jest jej nazwa.",
+      "W 1876 roku ulicę przecięły tory kolei obwodowej.",
+      "W 1912 roku wschodni odcinek ulicy, do linii kolei obwodowej, a w 1916 roku pozostała część, włączono do Warszawy.",
+      "W 1924 roku oddano do użytku wiadukt nad ulicą, zbudowany w latach 1921–1923.",
+      "W 1932 roku przy zachodnim krańcu ulicy powstało wielkie osiedle dla bezdomnych, składające się z 54 parterowych drewnianych domów.",
+      "W latach 1935–1937 Towarzystwo Osiedli Robotniczych wybudowało przy ulicy dwie kolonie osiedla im. Stefana Żeromskiego.",
+      "1 września 1939 roku Niemcy zbombardowali Koło; bomba trafiła w budynek nr 76, a w 1949 roku ofiary nalotu upamiętniono tablicą.",
+      "W 2000 roku oddano do użytku aleję Prymasa Tysiąclecia, przechodzącą wiaduktem nad ulicą."
+    ],
+    "ciekawostki": [
+      "Pod nr 99 działa targowisko bazar na Kole, na którym w dni powszednie sprzedawane są głównie produkty spożywcze, a od lat 80. XX wieku w weekendy – starocie."
+    ],
+    "summary_en": "Obozowa Street in Wola took its name from the artillery and Russian army camps that stood beside it from 1831. The railway cut through it in 1876, and in the 1930s the Towarzystwo Osiedli Robotniczych built two housing colonies here. Much of the pre-war eastern section was destroyed during the 1944 Uprising.",
+    "ludzie": [
+      {"kto": "Stefan Żeromski", "rola": "patron osiedla TOR wzniesionego przy ulicy w latach 1935–1937", "wiki": null},
+      {"kto": "Ludwika Nowak-Białostocka-Markiewiczowa", "rola": "projektantka drugiej kolonii TOR (1937)", "wiki": null},
+      {"kto": "Roman Piotrowski", "rola": "jeden z projektantów pierwszej kolonii TOR (1935–1936)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Obozowa Średnia (dziś ul. Ożarowska; do 1919)",
+      "Obozowa Tylna (dziś ul. Czorsztyńska; do 1919)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Obozowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obozowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. Pomnik Electio Viritim i stacja Warszawa Koło pominięte jako osobne rekordy."
+  },
+  {
+    "id": "ulica-pawia",
+    "nazwa": "Ulica Pawia",
+    "name_en": "Pawia Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Pawia (odcinek od ul. Zamenhofa do ul. Smoczej)",
+    "adres_historyczny": "ul. Pawia (przedwojenna, trasa do 1959)",
+    "lat": 52.244031,
+    "lon": 20.9828503,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą narolną; po raz pierwszy wymieniono ją i nadano nazwę Pawia w 1770 roku.",
+      "Ulica początkowo nie dochodziła do ul. Smoczej; dopiero w latach 1775–1776 doprowadzono ją do okopów Lubomirskiego.",
+      "Od nazwy ulicy pochodzi zwyczajowa nazwa więzienia Pawiak, wzniesionego przy ulicy w latach 1830–1835.",
+      "W 1864 roku ulica została wybrukowana.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 25 marca 1959 roku nadano nazwę ulica Pawia ulicy biegnącej po trasie przedwojennej ul. Pawiej, na odcinku od ul. Ludwika Zamenhofa do ul. Smoczej.",
+      "W związku z budową osiedla Muranów zlikwidowano fragment ulicy między ulicami Karmelicką i Smoczą; obecnie składa się ona z dwóch odcinków.",
+      "W listopadzie 1940 roku ulica w całości znalazła się w obrębie getta; jej zabudowa została zniszczona w 1943 i 1944 roku."
+    ],
+    "ciekawostki": [
+      "Przy wschodniej części ulicy znajduje się pomnik przyrody – aleja bożodrzewów gruczołowatych.",
+      "Biedny żydowski krawiec Izaak Gutkind, mieszkaniec ulicy, został upamiętniony w wierszu Władysława Broniewskiego „Księżyc ulicy Pawiej”."
+    ],
+    "summary_en": "Pawia Street in the Muranów area of Wola and Śródmieście was named in 1770 and extended to the Lubomirski ramparts in 1775-1776. It gave its name to the Pawiak prison, built nearby in 1830-1835. It was inside the Warsaw ghetto from 1940, and it was shortened after the Muranów estate was built.",
+    "ludzie": [
+      {"kto": "Izaak Gutkind", "rola": "biedny żydowski krawiec, mieszkaniec ulicy; postać wiersza Władysława Broniewskiego", "wiki": null},
+      {"kto": "Władysław Broniewski", "rola": "poeta, autor wiersza „Księżyc ulicy Pawiej”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Pawia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pawia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich. Muzeum Więzienia Pawiak i Ogród Sprawiedliwych z listy obiektów pominięto jako osobne rekordy."
+  },
+  {
+    "id": "ulica-panska",
+    "nazwa": "Ulica Pańska",
+    "name_en": "Pańska Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Pańska (od ul. Emilii Plater do ul. Towarowej)",
+    "adres_historyczny": "Nowa i Wspaniała (przed 1770)",
+    "lat": 52.2310918,
+    "lon": 20.9913185,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1757–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona ok. 1757 roku na terenie jurydyki Bielino; biegła od ul. Wielkiej na zachód i pierwotnie nosiła nazwy Nowa i Wspaniała.",
+      "Obecną nazwę nadano w 1770 roku; nawiązywała albo do właściciela jurydyki Franciszka Bielińskiego, albo do wspaniałej zabudowy ulicy.",
+      "W 1864 roku ulica została w całości wybrukowana; w latach 1870–1890 zabudowano ją kamienicami czynszowymi i domami rzemieślników.",
+      "W latach 1924–1925 na rogu ulic Pańskiej i Mariańskiej wzniesiono trzypiętrowy budynek Kasy Chorych, istniejący do dziś.",
+      "Od grudnia 1942 do sierpnia 1944 roku pod nr 104 ukrywał się Calek Perechodnik, który tam napisał swoje wspomnienia.",
+      "31 lipca 1944 roku, podczas odprawy Komendy Głównej Armii Krajowej w nieistniejącej kamienicy nr 67, Tadeusz Komorowski ps. „Bór” wydał rozkaz rozpoczęcia akcji „Burza” na 1 sierpnia 1944 roku o godz. 17.00.",
+      "W związku z budową Pałacu Kultury i Nauki zlikwidowano wschodni odcinek ulicy do Wielkiej i Mariańskiej; w jego miejscu urządzono park (obecny park Świętokrzyski)."
+    ],
+    "ciekawostki": [
+      "W kamienicy nr 85 nakręcono pierwsze 12 odcinków serialu telewizyjnego „Dom”.",
+      "Na osiedlu Pańska kręcono sceny do komedii „Nie lubię poniedziałku” oraz serialu „Czterdziestolatek”."
+    ],
+    "summary_en": "Pańska Street in Wola and Śródmieście was laid out around 1757 on the Bielino estate. It was renamed in 1770 and became built up with tenements by 1890. During the 1944 Uprising, the Home Army command in the Kamienica nr 67 gave the order to start Operation Burza, and Calek Perechodnik hid at number 104.",
+    "ludzie": [
+      {"kto": "Franciszek Bieliński", "rola": "właściciel jurydyki Bielino; możliwe źródło nazwy ulicy (obok wspaniałej zabudowy)", "wiki": null},
+      {"kto": "Calek Perechodnik", "rola": "ukrywał się pod nr 104 od grudnia 1942 do sierpnia 1944; autor wspomnień wydanych w 1993 roku", "wiki": null},
+      {"kto": "Tadeusz Komorowski ps. „Bór”", "rola": "wydał rozkaz rozpoczęcia akcji „Burza” w Warszawie podczas odprawy KG AK w nieistniejącej kamienicy nr 67", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Nowa (przed 1770)",
+      "Wspaniała (przed 1770)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Pańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pa%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich. Artykuł opisuje też Elektrim i osiedla z lat 60.; pominięto je jako osobne rekordy."
+  },
+  {
+    "id": "ulica-redutowa",
+    "nazwa": "Ulica Redutowa",
+    "name_en": "Redutowa Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Redutowa (od ul. Wolskiej do ul. Jana Olbrachta)",
+    "adres_historyczny": null,
+    "lat": 52.2271183,
+    "lon": 20.9426749,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 20. XX wieku; zamykała od zachodu teren wolskiego cmentarza prawosławnego, biegnąc od ul. Wolskiej do ul. Pustola.",
+      "Nazwa ulicy pochodzi od Reduty nr 56.",
+      "Przedłużenie ulicy do ul. Jana Olbrachta planowano od 1935 roku, a zrealizowano je już po wojnie, w latach 50.",
+      "W 1964 roku ulicę przebudowano; stała się arterią łączącą ul. Wolską z ul. Górczewską przez ul. Jana Olbrachta, a ruch z ul. Sowińskiego, przebiegającej przez cmentarz Wolski, przeniesiono na nią.",
+      "W 1964 roku tą ulicą pojechał pierwszy autobus, linii nr 159.",
+      "W 2006 roku skrzyżowanie z ul. Jana Olbrachta przebudowano na rondo, a w 2019 roku skrzyżowanie z ul. Nakielską wyposażono w sygnalizację świetlną.",
+      "W ramach budowy trasy tramwajowej w ciągu ul. Marcina Kasprzaka, trwającej od 2021 roku, skrzyżowanie ulic Redutowej, Wolskiej i Kasprzaka ma zostać przebudowane wraz z zagłębieniem linii tramwajowej."
+    ],
+    "ciekawostki": [
+      "Przy skrzyżowaniu z ul. Wolską stoi Pomnik Pamięci Pilotów RAF.",
+      "Przy ulicy działa cmentarz karaimski oraz cmentarz prawosławny."
+    ],
+    "summary_en": "Redutowa Street in Wola runs from Wolska to Jana Olbrachta streets and was named after Redoubt no. 56 of the November Uprising. It was built in the 1920s beside the Orthodox cemetery and became a main road to Górczewska in 1964, taking traffic away from Sowińskiego Street.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Redutowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Redutowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. Szkoła nr 238, zajezdnia MZA i kościół św. Wawrzyńca z listy obiektów pominięto jako osobne rekordy."
+  }
+]

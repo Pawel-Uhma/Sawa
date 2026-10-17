@@ -1,0 +1,258 @@
+[
+  {
+    "id": "staw-belwederski",
+    "nazwa": "Staw Belwederski",
+    "name_en": "Belweder Pond",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Łazienki Królewskie (u podnóża skarpy warszawskiej)",
+    "adres_historyczny": null,
+    "lat": 52.213055555,
+    "lon": 21.03,
+    "lokalizacja": "dokladna",
+    "okres": "1819–1822 – dziś",
+    "istnieje": true,
+    "fakty": [
+      "Sztuczny staw w Łazienkach Królewskich powstał w latach 1819–1822 jako element urządzenia Ogrodu Romantycznego u podnóża Belwederu.",
+      "Ogród powstał na zlecenie Konstantego Romanowa, który mieszkał w pałacu kupionym w 1818 roku przez rząd Królestwa Polskiego.",
+      "Architektem przebudowy pałacu i ogrodu był Jakub Kubicki.",
+      "Staw powstał w miejscu dawnego prostokątnego zbiornika na wodę; w tym samym czasie wybudowano pawilony Świątyni Egipskiej i Świątyni Sybilli.",
+      "Pierwotnie na stawie była zadrzewiona wyspa z popiersiem Marii Fiodorowny, matki Konstantego i cara Aleksandra I; na wyspę prowadziła drewniana kładka. Później wyspę zlikwidowano.",
+      "W 2012 roku zbiornik uzyskał oprawę oświetleniową.",
+      "Oficjalna nazwa obiektu fizjograficznego została wprowadzona do państwowego rejestru nazw geograficznych w 2011 roku."
+    ],
+    "ciekawostki": [
+      "Staw wraz z Belwederem tworzy malowniczą perspektywę; artykuł określa ją jako jedno z najpiękniejszych rozwiązań krajobrazowych w Polsce.",
+      "Nazwa „Belweder” pochodzi z włoskiego i można ją przetłumaczyć jako „miejsce z pięknym widokiem”."
+    ],
+    "summary_en": "The Belweder Pond in the Royal Baths Park was created in 1819–1822 as part of a Romantic garden laid out for Grand Duke Konstanty Romanov at the foot of the Belweder palace. Designed with architect Jakub Kubicki, it sits beside the Temple of Egypt and the Temple of the Sibyl.",
+    "ludzie": [
+      {"kto": "Konstanty Romanow", "rola": "zleceniodawca ogrodu romantycznego powstałego przy pałacu Belweder", "wiki": null},
+      {"kto": "Jakub Kubicki", "rola": "architekt przebudowy pałacu i ogrodu", "wiki": null},
+      {"kto": "Maria Fiodorowna", "rola": "matka Konstantego i cara Aleksandra I; jej popiersie stało pierwotnie na wyspie na stawie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Staw Belwederski", "url": "https://pl.wikipedia.org/wiki/Staw_Belwederski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o stawie; zawiera historię całego założenia ogrodowego."
+  },
+  {
+    "id": "staw-ujazdowski",
+    "nazwa": "Staw Ujazdowski",
+    "name_en": "Ujazdów Park Pond",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Park Ujazdowski, południowa część",
+    "adres_historyczny": null,
+    "lat": 52.221111111,
+    "lon": 21.026111111,
+    "lokalizacja": "dokladna",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw został zaplanowany w 1893 roku przez ówczesnego głównego ogrodnika miejskiego Franciszka Szaniora jako element nowego parku w stylu angielskim.",
+      "Układ wodny parku, w tym sam staw, zaprojektował William Heerlein Lindley.",
+      "Prace wykonawcze zakończono w 1896 roku; uroczyste otwarcie odbyło się 10 sierpnia.",
+      "Mostek nad przewężeniem zbiornika zbudowano w konstrukcji betonowej w systemie „Monnier”; projektowało go i wykonało Biuro Techniczne Arnold Bronikowski & S-ka, a budowę zakończono w 1898 roku.",
+      "Mostek był jedną z pierwszych konstrukcji wykonanych w technologii żelbetowej na ziemiach polskich.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku, po przerwaniu 24 września dostarczania wody przez zbombardowaną Stację Filtrów, okoliczni mieszkańcy czerpali wodę wiadrami ze stawu.",
+      "W latach 2000–2002 przeprowadzono rewaloryzację parku (autorzy: Tomasz Zwiech i Jakub Zemła), odrestaurowano kaskadę wodną i wybudowano altanę na punkcie widokowym."
+    ],
+    "ciekawostki": [
+      "Przy północno-wschodnim brzegu rośnie klon pospolity odmiany Schwedlera o średnicy pnia ponad 358 cm, chroniony jako pomnik przyrody.",
+      "Od 2002 roku zbiornik jest zarybiany karasiem, amurem i karpiem."
+    ],
+    "summary_en": "The Ujazdów Park Pond was planned in 1893 by city gardener Franciszek Szanior as part of an English-style park, with a water system designed by William Heerlein Lindley. Its concrete footbridge, finished in 1898, was among the first reinforced-concrete structures in Polish lands. During the 1939 siege residents drew water from the pond after the city's water station was bombed.",
+    "ludzie": [
+      {"kto": "Franciszek Szanior", "rola": "ówczesny główny ogrodnik miejski, zaplanował staw w 1893 roku", "wiki": null},
+      {"kto": "William Heerlein Lindley", "rola": "projektant układu wodnego parku", "wiki": null},
+      {"kto": "Tomasz Zwiech", "rola": "autor rewaloryzacji parku w latach 2000–2002", "wiki": null},
+      {"kto": "Jakub Zemła", "rola": "autor rewaloryzacji parku w latach 2000–2002", "wiki": null}
+    ],
+    "dawne_nazwy": ["Staw w Parku Ujazdowskim"],
+    "zrodla": [{"tytul": "Wikipedia: Staw Ujazdowski (staw)", "url": "https://pl.wikipedia.org/wiki/Staw_Ujazdowski_%28staw%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "staw-przy-ksiazecej",
+    "nazwa": "Staw przy Książęcej",
+    "name_en": "Pond at Książęca Street",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Park Na Książęcem, w pobliżu ul. Książęcej",
+    "adres_historyczny": null,
+    "lat": 52.230277777,
+    "lon": 21.028333333,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1776–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw leży na terenie dawnej glinianki, powstałej w wyniku zalania wodą wyeksploatowanego wyrobiska iłów, które zaopatrywało w surowiec cegielnie.",
+      "Cegielnie w dolinie Żurawki istniały od XVII wieku.",
+      "Około 1776 roku zbiornik stał się częścią założenia parkowego Szymona Bogumiła Zuga.",
+      "Na wyspie na stawie przez pewien czas hodowano małpy (tzw. Małpia Kolonia).",
+      "Staw zlikwidowano w związku z potrzebami Szpitala św. Łazarza, istniejącego na tym terenie do 1939 roku; odtworzono go w zmienionym kształcie podczas przebudowy parku po 1956 roku.",
+      "Staw stanowi część dawnego ogrodu księcia Poniatowskiego, wpisanego do rejestru zabytków (nr rej. 278 z 1.07.1965).",
+      "W 1958 roku w pobliżu stawu ustawiono popiersie Elizy Orzeszkowej autorstwa Romualda Zerycha."
+    ],
+    "ciekawostki": [
+      "W XXI wieku w zbiorniku zaobserwowano występowanie ropuchy zielonej i traszki zwyczajnej."
+    ],
+    "summary_en": "The pond at Książęca Street, also called Staw Żurawka, sits in a park on the site of a former clay pit that supplied local brickworks. Converted into a pond with the Zug landscape garden around 1776, it was drained for a hospital in the 19th century and rebuilt after 1956.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "autor założenia parkowego, którego częścią stał się zbiornik około 1776 roku", "wiki": null},
+      {"kto": "Romuald Zerych", "rola": "autor popiersia Elizy Orzeszkowej ustawionego w 1958 roku", "wiki": null},
+      {"kto": "Eliza Orzeszkowa", "rola": "pisarka, której popiersie ustawiono przy stawie w 1958 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Staw Żurawka"],
+    "zrodla": [{"tytul": "Wikipedia: Staw przy Książęcej", "url": "https://pl.wikipedia.org/wiki/Staw_przy_Ksi%C4%85%C5%BC%C4%99cej"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "staw-w-ogrodzie-krasinskich",
+    "nazwa": "Staw w Ogrodzie Krasińskich",
+    "name_en": "Pond in the Krasiński Garden",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Ogród Krasińskich",
+    "adres_historyczny": null,
+    "lat": 52.248055555,
+    "lon": 21.001388888,
+    "lokalizacja": "dokladna",
+    "okres": "1891–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Staw wybudowano w latach 1891–1895.",
+      "Zaprojektował go ówczesny starszy ogrodnik miejski Franciszek Szanior jako element przekształcenia wcześniejszych założeń Ogrodu Krasińskich w park krajobrazowy.",
+      "Woda z miejskich wodociągów doprowadzana jest krótkim strumieniem spływającym z pagórka widokowego przez głazowisko z kaskadą.",
+      "W projekcie Szaniora staw symbolizował Morze Bałtyckie, strumień Wisłę, a głazowisko góry.",
+      "Na akwenie zlokalizowano wyspę, a na zbiorniku posadowiono rzeźbę Leona Machowskiego przedstawiającą rybaków.",
+      "Staw wraz z dopływem został poddany pracom konserwatorskim i modernizacji w latach 2012–2014, podobnie jak cały ogród."
+    ],
+    "ciekawostki": [
+      "Podobnie jak inne elementy ogrodu, staw nawiązuje do polskich krajobrazów i symboli narodowych."
+    ],
+    "summary_en": "The pond in the Krasiński Garden was built in 1891–1895 by city gardener Franciszek Szanior, who turned the garden into a landscape park. Its water symbolises the Baltic, the stream the Vistula and the rock cascade the mountains, and it was restored in 2012–2014.",
+    "ludzie": [
+      {"kto": "Franciszek Szanior", "rola": "projektant stawu i przekształcenia ogrodu w park krajobrazowy", "wiki": null},
+      {"kto": "Leon Machowski", "rola": "autor rzeźby rybaków na zbiorniku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Staw w Ogrodzie Krasińskich", "url": "https://pl.wikipedia.org/wiki/Staw_w_Ogrodzie_Krasi%C5%84skich"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "staw-w-ogrodzie-saskim",
+    "nazwa": "Staw w Ogrodzie Saskim",
+    "name_en": "Pond in the Saxon Garden",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Ogród Saski, północna część (w pobliżu ul. Niecałej i ul. Aleksandra Fredry)",
+    "adres_historyczny": null,
+    "lat": 52.241111111,
+    "lon": 21.008333333,
+    "lokalizacja": "dokladna",
+    "okres": "1852–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Sztuczny zbiornik wybudowano w latach 1852–1854 przy okazji budowy wodozbioru w formie kopii świątyni Westy z Tivoli, projektu Henryka Marconiego.",
+      "Wodozbiór był częścią pierwszego systemu wodociągów w Warszawie.",
+      "Staw urządzono w miejscu wykopu, który posłużył do usypania wzgórza, na którym stanął wodozbiór.",
+      "Po napełnieniu stawu zalewane były piwnice sąsiednich budynków; wodę spuszczono, a w jego miejscu urządzono klomby kwiatowe.",
+      "W 1862 roku na środku postawiono fontannę i rzeźbę będącą kopią dzieła Theodora Erdmanna Kalidego.",
+      "W 1878 roku sadzawkę ponownie napełniono wodą po wzmocnieniu boków ziemią i gliną oraz wybrukowaniu dna."
+    ],
+    "ciekawostki": [
+      "Na wyspie stoi jedna z kilku kopii „Chłopca z Łabędziem” Kalidego.",
+      "Zimą sadzawka zmieniała się w lodowisko.",
+      "Cztery miłorzęby dwuklapowe rosnące nad brzegiem są pomnikami przyrody."
+    ],
+    "summary_en": "The pond in the Saxon Garden was dug in 1852–1854 for the water reservoir, a copy of the Temple of Vesta at Tivoli designed by Henryk Marconi that was part of Warsaw's first waterworks. Later drained, refilled in 1878 and fitted with a Kalide sculpture, it is now a park pond with a historic reservoir on its west bank.",
+    "ludzie": [
+      {"kto": "Henryk Marconi", "rola": "projektant wodozbioru w formie kopii świątyni Westy", "wiki": null},
+      {"kto": "Theodor Erdmann Kalide", "rola": "autor rzeźby, której kopię postawiono przy stawie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Staw w Ogrodzie Saskim", "url": "https://pl.wikipedia.org/wiki/Staw_w_Ogrodzie_Saskim"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w rozdziale Położenie podaje obecne cztery miłorzęby; w rozdziale Historia brak informacji, czy staw jest dziś zbiornikiem wodnym w pełni."
+  },
+  {
+    "id": "stawki-osiedle",
+    "nazwa": "Osiedle Stawki",
+    "name_en": "Stawki Housing Estate",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Dzika 6, ul. Inflancka 15, ul. Inflancka 19",
+    "adres_historyczny": "ul. Stawki 4 (dawne magazyny przy bocznicach kolejowych)",
+    "lat": 52.254444444,
+    "lon": 20.9875,
+    "lokalizacja": "dokladna",
+    "okres": "1974–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle powstało w miejscu magazynów przy bocznicach kolejowych przy ul. Stawki 4, rozebranych w 1974 roku.",
+      "Zespół ma powierzchnię 5,47 ha i składa się z trzech budynków o 11 i 13 kondygnacjach.",
+      "Budynki wzniesiono w technologii ramy H w latach 1974–1978 według projektu Zofii Hamanowej i Zbigniewa Panka.",
+      "Całość zaplanowano na 1000 mieszkań dla ok. 3500 mieszkańców (według innego źródła ok. 2500 mieszkańców).",
+      "W 1980 roku osiedle otrzymało wyróżnienie w konkursie „Mister Warszawy” dziennika „Życie Warszawy” za 1979 rok w kategorii budownictwa mieszkaniowego.",
+      "Osiedle pojawiło się w trzech filmach Krzysztofa Kieślowskiego z cyklu „Dekalog”: I, IV i VI.",
+      "Osiedlem zarządza Spółdzielnia Mieszkaniowa „Stawki”, utworzona w 1990 roku przez wydzielenie ze Śródmiejskiej Spółdzielni Mieszkaniowej."
+    ],
+    "ciekawostki": [
+      "Osiedle zwyczajowo nazywane jest „Manhattanem”.",
+      "Charakterystyczne podpory pod balkony o wysokości całych budynków mają także budynki na osiedlach Służew nad Dolinką i Wrzeciono.",
+      "Pawilon handlowo-usługowy „zagrał” w filmie „Kogel-mogel” (1988) w reżyserii Romana Załuskiego."
+    ],
+    "summary_en": "Stawki, nicknamed “Manhattan”, is a Warsaw housing estate in Muranów built in 1974–1978 on the site of railway-siding warehouses. Three 11- and 13-storey blocks were designed by Zofia Hamanowa and Zbigniew Pank, and the estate appeared in three Kieślowski Decalogue films.",
+    "ludzie": [
+      {"kto": "Zofia Hamanowa", "rola": "współautorka projektu osiedla", "wiki": null},
+      {"kto": "Zbigniew Pank", "rola": "współautor projektu osiedla", "wiki": null},
+      {"kto": "Maja Komorowska", "rola": "mieszkanka osiedla (wg artykułu)", "wiki": null},
+      {"kto": "Wiesław Gołas", "rola": "mieszkaniec osiedla (wg artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Osiedle Stawki"],
+    "zrodla": [{"tytul": "Wikipedia: Stawki (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Stawki_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Lista znanych mieszkańców w artykule jest długa; w rekordzie tylko dwie osoby."
+  },
+  {
+    "id": "studio-buffo",
+    "nazwa": "Studio Buffo",
+    "name_en": "Studio Buffo Theatre Building",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "ul. Marii Konopnickiej 6",
+    "adres_historyczny": "ul. Marii Konopnickiej 6",
+    "lat": 52.228,
+    "lon": 21.0261,
+    "lokalizacja": "dokladna",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek przy ul. Marii Konopnickiej 6 oddano do użytku w 1934 roku jako siedzibę Głównej Kwatery Związku Harcerstwa Polskiego.",
+      "W okresie II Rzeczypospolitej mieściła się tu polska siedziba organizacji YMCA (Young Men's Christian Association).",
+      "W 1956 roku w przyziemiu budynku powstał teatr Buffo, którego twórcą był Zenon Wiktorczyk.",
+      "W 1992 roku Janusz Stokłosa i Janusz Józefowicz powołali spółkę Studio Buffo sp. z o.o., po wielkim sukcesie musicalu „Metro”.",
+      "Pierwszą premierą wystawioną przez założycieli na deskach teatru 4 września 1993 roku był spektakl „Do grającej szafy grosik wrzuć”.",
+      "Teatr jest pierwszym po II wojnie światowej i przez wiele lat jedynym prywatnym teatrem w Warszawie."
+    ],
+    "ciekawostki": [
+      "W premierowym spektaklu z 1993 roku wystąpili m.in. Edyta Górniak, Krzysztof Materna i Wojciech Mann.",
+      "Historia teatru to także seria widowisk „Wieczory w Buffo” i spektakle gościnne, m.in. „Boeing Boeing”."
+    ],
+    "summary_en": "The Studio Buffo building at 6 Marii Konopnickiej Street was completed in 1934 as the headquarters of the Polish Scouting Association. It later hosted the Buffo musical theatre, founded in 1956, and since 1992 the private Studio Buffo company.",
+    "ludzie": [
+      {"kto": "Zenon Wiktorczyk", "rola": "twórca teatru Buffo (1956)", "wiki": null},
+      {"kto": "Janusz Stokłosa", "rola": "współzałożyciel spółki Studio Buffo (1992), prezes", "wiki": null},
+      {"kto": "Janusz Józefowicz", "rola": "współzałożyciel spółki Studio Buffo (1992), reżyser i choreograf", "wiki": null}
+    ],
+    "dawne_nazwy": ["Teatr Buffo (od 1956)"],
+    "zrodla": [{"tytul": "Wikipedia: Studio Buffo", "url": "https://pl.wikipedia.org/wiki/Studio_Buffo"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o teatrze; rekord dotyczy historii budynku przy ul. Konopnickiej 6 (teatr to instytucja w tym budynku)."
+  }
+]

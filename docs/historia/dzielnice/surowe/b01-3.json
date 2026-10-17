@@ -1,0 +1,345 @@
+[
+  {
+    "id": "ulica-dzika",
+    "nazwa": "Ulica Dzika",
+    "name_en": "Dzika Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Dzika",
+    "adres_historyczny": null,
+    "lat": 52.2533768,
+    "lon": 20.9830421,
+    "lokalizacja": "przyblizona",
+    "okres": "1770–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest częścią dawnego gościńca z Warszawy do wsi Buraków, Młociny, Powązki i Wawrzyszew; nazwa została nadana w 1770 roku.",
+      "Po założeniu w 1792 roku cmentarza Powązkowskiego ulicą zaczęły przechodzić kondukty pogrzebowe.",
+      "W 1824 roku, na rozkaz wielkiego księcia Konstantego, pomiędzy ulicami Dziką, Stawki i Pokorną powstał plac musztry i przeglądów wojska, nazwany placem Broni; miał kształt kwadratu o boku 420 metrów i był największym placem XIX-wiecznej Warszawy.",
+      "W 1895 roku u zbiegu ulic Dzikiej i Stawki powstało schronisko dla bezdomnych zwane „Cyrkiem”, prowadzone przez braci Albertynów.",
+      "W latach 1930–1933 przy Dzikiej działał teatr żydowski z salą na 1000 miejsc.",
+      "W sierpniu 1944 roku przy Dzikiej 17 Niemcy dokonali egzekucji ok. 200 osób; wśród zamordowanych był architekt Marian Lalewicz.",
+      "Ocalała czteropiętrowa kamienica braci Goldbandów (nr 17), wzniesiona w 1939 roku według projektu Edwarda Hersteina.",
+      "W latach 1974–1978 przy ulicy wzniesiono osiedle Stawki."
+    ],
+    "ciekawostki": [
+      "W domu pod numerem 102 mieszka Jerzy Kiler, główny bohater polskiej komedii kryminalnej „Kiler” w reżyserii Juliusza Machulskiego.",
+      "Południowy odcinek Dzikiej przemianowano 27 listopada 1930 roku na ul. Ludwika Zamenhofa."
+    ],
+    "summary_en": "Dzika Street ran along an old road to Powązki cemetery, which was founded in 1792, and funeral processions passed along it. In the 19th century it bordered the Plac Broni, the largest square of 19th-century Warsaw. The street was inside the Warsaw ghetto in 1942-1943, and in August 1944 about 200 people were executed at number 17.",
+    "ludzie": [
+      {"kto": "Marian Lalewicz", "rola": "architekt, zamordowany wśród ok. 200 osób straconych przy Dzikiej 17 w sierpniu 1944 roku", "wiki": null},
+      {"kto": "Edward Herstein", "rola": "autor projektu kamienicy braci Goldbandów (nr 17), wzniesionej w 1939 roku", "wiki": null},
+      {"kto": "Bracia Albertyni", "rola": "prowadzili schronisko dla bezdomnych „Cyrk” u zbiegu z ul. Stawki (1895)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Dzika w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Dzika_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich. Artykuł wymienia też pomniki granic getta i fragment Traktu Pamięci; pominięto je jako osobne rekordy."
+  },
+  {
+    "id": "ulica-elektoralna",
+    "nazwa": "Ulica Elektoralna",
+    "name_en": "Elektoralna Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Elektoralna",
+    "adres_historyczny": "ul. Wielopolska (przed 1770)",
+    "lat": 52.2395039,
+    "lon": 20.9956209,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1720–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica zwana wówczas Wielopolską została uregulowana około 1720 roku przy wytyczaniu zaprojektowanej przez Matthäusa Pöppelmanna Osi Saskiej.",
+      "Obecna nazwa, Elektoralna, została nadana w 1770 roku i pochodzi od drogi na pole elekcyjne na Woli.",
+      "W latach 1829–1831 mieszkał tam Juliusz Słowacki; upamiętniono to tablicą z 1909 roku i kamieniem pamiątkowym z 1959 roku.",
+      "Od 1831 roku na miejscu dawnej manufaktury Dangla mieściła się Komora Główna Celna.",
+      "Szpital Św. Ducha, wybudowany w latach 1859–1861 według projektu Józefa Orłowskiego, był w tym czasie najnowocześniejszą placówką w mieście.",
+      "W listopadzie 1940 ulica znalazła się w obrębie warszawskiego getta; nieparzystą stronę wyłączono z niego w grudniu 1941, a parzystą w sierpniu 1942.",
+      "W latach 1959–1960 przy Elektoralnej 5/7 wzniesiono pierwszą szkołę „tysiąclatkę” w Warszawie, XVII Liceum Ogólnokształcące im. Andrzeja Frycza Modrzewskiego."
+    ],
+    "ciekawostki": [
+      "W kamienicy Ksawerego Brzostowskiego pod nr 3 mieszkał i zmarł poeta Antoni Malczewski.",
+      "Przewodniczący warszawskiej Rady Żydowskiej Adam Czerniaków mieszkał przy Elektoralnej 11 od 11 listopada 1940 do 13 grudnia 1941 roku."
+    ],
+    "summary_en": "Elektoralna Street in Wola and Śródmieście dates from around 1720, when it was laid out as part of the Saxon Axis. Its name comes from the electoral field in Wola. Juliusz Słowacki lived here in 1829-1831, and the street was inside the Warsaw ghetto from 1940. Much of its pre-war architecture was lost in 1944 and in later demolitions.",
+    "ludzie": [
+      {"kto": "Juliusz Słowacki", "rola": "poeta, mieszkał przy ulicy w latach 1829–1831; tablica z 1909 roku, kamień z 1959 roku", "wiki": null},
+      {"kto": "Adam Czerniaków", "rola": "przewodniczący warszawskiej Rady Żydowskiej; mieszkał przy Elektoralnej 11 w latach 1940–1941", "wiki": null},
+      {"kto": "Jan Twardowski", "rola": "uczeń szkoły powszechnej nr 22, funkcjonującej w jednej z kamienic przy ulicy (1922)", "wiki": null},
+      {"kto": "Antoni Malczewski", "rola": "poeta, mieszkał i zmarł w kamienicy Ksawerego Brzostowskiego pod nr 3", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ulica Wielopolska (przed 1770)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Elektoralna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Elektoralna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola, Śródmieście; w rekordzie pierwsza z nich. Obiekty z listy ważniejszych (m.in. Główny Urząd Miar, Szpital Św. Ducha) pominięto jako osobne rekordy."
+  },
+  {
+    "id": "ulica-gliniana",
+    "nazwa": "Ulica Gliniana",
+    "name_en": "Gliniana Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Gliniana",
+    "adres_historyczny": "ul. Jana Paszyna (1964–2014)",
+    "lat": 52.2466607,
+    "lon": 20.9831694,
+    "lokalizacja": "przyblizona",
+    "okres": "1775–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została poświadczona po raz pierwszy w 1775 roku; nawiązywała do znajdujących się na tym terenie glinianek.",
+      "W 1871 roku na terenie między ulicami Smoczą, Glinianą, Okopową i Niską rozpoczęto budowę garbarni, działającej od lat 80. XIX wieku pod firmą Bracia Pfeiffer.",
+      "Po 1874 roku pod nr 5 powstała fabryka Tow. Akc. Warszawska Fabryka Śrub i Drutu, założona przez Majera Wolanowskiego; w 1914 roku zatrudniała ok. 600 pracowników.",
+      "W listopadzie 1940 roku ulica znalazła się w granicach warszawskiego getta.",
+      "Obecny przebieg ulicy wytyczono po II wojnie światowej na gruzach getta, na południe od ulicy istniejącej do 1943 roku.",
+      "29 czerwca 1964 roku ulicy nadano nazwę działacza komunistycznego Jana Paszyna.",
+      "28 sierpnia 2014 roku Rada m.st. Warszawy nadała ulicy obecną nazwę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Gliniana Street in Wola is named after the clay pits that were on the site. A tanning works and a screw and wire factory were built here in the 19th century. The street was inside the Warsaw ghetto from 1940, and its present course was laid out after the war on the ruins of the ghetto. It was named after Jan Paszyn from 1964 until 2014.",
+    "ludzie": [
+      {"kto": "Jan Paszyn", "rola": "działacz komunistyczny; patron nazwy ulicy w latach 1964–2014", "wiki": null},
+      {"kto": "Majer Wolanowski", "rola": "założyciel Towarzystwa Akcyjnego Warszawskiej Fabryki Śrub i Drutu przy ul. Glinianej 5", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ulica Jana Paszyna (1964–2014)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Gliniana w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Gliniana_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Artykuł krótki; pozycje o garbarni i fabryce pochodzą z jednej sekcji."
+  },
+  {
+    "id": "ulica-grabowska",
+    "nazwa": "Ulica Grabowska",
+    "name_en": "Grabowska Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Grabowska (od ul. Marcina Kasprzaka do ul. Wolskiej)",
+    "adres_historyczny": "ul. Grabowskich (przed 1919)",
+    "lat": 52.2291078,
+    "lon": 20.9542331,
+    "lokalizacja": "przyblizona",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica łączy ul. Marcina Kasprzaka z ul. Wolską.",
+      "Nazwę ulicy nadano w 1919 roku; nawiązuje do wcześniejszej nazwy ul. Grabowskich, pochodzącej prawdopodobnie od nazwiska rodziny Grabowskich, właścicieli lokalnych nieruchomości.",
+      "U wylotu ulicy, przy budynku Wolska 113, stoi brzozowy krzyż upamiętniający Ignacego Grabowskiego, dawnego właściciela lokalnych terenów i działacza społecznego.",
+      "Ignacy Grabowski został zamordowany wraz z 11-osobową rodziną w swoim domu w tym miejscu podczas powstania warszawskiego.",
+      "Od 2020 roku, w związku z rozszerzeniem strefy płatnego parkowania, ulica jest jednokierunkowa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grabowska Street in Wola links Marcina Kasprzaka and Wolska streets. It was named in 1919 after the Grabowski family, local landowners. A birch cross at its entrance marks the place where Ignacy Grabowski and his family were murdered during the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Ignacy Grabowski", "rola": "dawny właściciel lokalnych terenów i działacz społeczny; zamordowany z 11-osobową rodziną w swoim domu podczas powstania warszawskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ul. Grabowskich (przed 1919)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Grabowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Grabowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Artykuł krótki."
+  },
+  {
+    "id": "ulica-icchoka-lejba-pereca",
+    "nazwa": "Ulica Icchoka Lejba Pereca",
+    "name_en": "Icchok Lejb Perec Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Icchoka Lejba Pereca",
+    "adres_historyczny": "ul. Ceglana (do 1951)",
+    "lat": 52.2336961,
+    "lon": 20.9941464,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą narolną, wytyczoną w XVIII wieku; pierwotnie nosiła nazwę Ceglanej.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z 27 października 1951 roku ulicy Ceglanej nadano nazwę ulica I. L. Pereca, upamiętniającą pisarza i publicystę Icchoka Lejba Pereca.",
+      "W 1805 roku Johann Gottlieb Ulrich nabył część folwarku miejskiego i urządził ogród; posesja obejmowała obszar między ulicami Ceglaną, Ciepłą, Twardą, Prostą i Waliców.",
+      "W listopadzie 1940 roku część ulicy znalazła się w granicach getta, z wyjątkiem budynków nr 4, 6, 8, 11, 13, 14 i 21; w sierpniu 1942 roku ulica została w całości wyłączona z getta.",
+      "1 sierpnia 1944 roku powstańcy zajęli magazyny browaru Haberbusch i Schiele pod nr 4/6, które były źródłem zapasów żywności dla powstańców i ludności cywilnej.",
+      "W latach 1950–1952 pod nr 21 wzniesiono dwa socrealistyczne budynki Mennicy Państwowej według projektu Józefa Jaszuńskiego; pierwsze monety wyprodukowano tam w 1953 roku.",
+      "W 1994 roku pozostałości budynków browaru Hermana Junga przy ulicach Pereca i Waliców wpisano do rejestru zabytków.",
+      "W 2014 roku budynki Mennicy Polskiej zburzono; w ich miejscu powstał kompleks biurowy Mennica Legacy Tower."
+    ],
+    "ciekawostki": [
+      "Icchok Lejb Perec mieszkał i tworzył aż do śmierci w nieistniejącej już dziś kamienicy pod nr 1.",
+      "Uchwałą z 8 listopada 2012 roku Rada m.st. Warszawy skorygowała pierwotną nazwę ulicy I. L. Pereca na Icchoka Lejba Pereca."
+    ],
+    "summary_en": "Icchok Lejb Perec Street in Wola was called Ceglana until 1951, when it was renamed after the Yiddish writer Icchok Lejb Perec. It was inside the Warsaw ghetto, and during the 1944 Uprising the Haberbusch and Schiele brewery warehouses were taken by insurgents. The Mint building was erected here in 1950-1952 and later replaced by an office complex.",
+    "ludzie": [
+      {"kto": "Icchok Lejb Perec", "rola": "pisarz i publicysta, jeden z najważniejszych żydowskich twórców literatury w języku jidysz; patron nazwy ulicy od 1951 roku, mieszkał pod nr 1", "wiki": null},
+      {"kto": "Johann Gottlieb Traugott Ulrich", "rola": "ogrodnik, który w 1805 roku nabył część folwarku miejskiego i urządził ogród", "wiki": null},
+      {"kto": "Józef Jaszuński", "rola": "autor projektu dwóch budynków Mennicy Państwowej pod nr 21 (1950–1952)", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ulica Ceglana (do 1951)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Icchoka Lejba Pereca w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Icchoka_Lejba_Pereca_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. Rekord nie obejmuje browaru Herman Jung jako osobnego obiektu."
+  },
+  {
+    "id": "ulica-jana-kazimierza",
+    "nazwa": "Ulica Jana Kazimierza",
+    "name_en": "Jan Kazimierz Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Jana Kazimierza",
+    "adres_historyczny": null,
+    "lat": 52.2209714,
+    "lon": 20.9283718,
+    "lokalizacja": "przyblizona",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica w całości znajduje się na terenie obszaru MSI Odolany; rozpoczyna się przy ul. Juliana Konstantego Ordona, a kończy się ślepo przy linii kolejowej nr 509.",
+      "Nazwa upamiętnia króla Polski Jana II Kazimierza Wazę i została nadana w 1921 roku.",
+      "Po II wojnie światowej ulica przebiegała przez tereny o charakterze przemysłowym; od 2007 roku powstają przy niej budynki mieszkalne oraz usługowe.",
+      "W 2018 roku, z powodu intensywnego ruchu pojazdów ciężarowych, wprowadzono na całej długości ulicy strefę ograniczenia prędkości do 30 km/h oraz zakaz ruchu ciężarówek od 20 do 8 rano.",
+      "We wrześniu 2022 roku Prezydent m.st. Warszawy wydał decyzję o zezwoleniu na realizację przebudowy ulicy."
+    ],
+    "ciekawostki": [
+      "Ulica ma status drogi powiatowej o numerze 5538W."
+    ],
+    "summary_en": "Jan Kazimierz Street in the Odolany area of Wola runs from Ordon Street to a dead end at railway line no. 509. It was named in 1921 after King Jan II Kazimierz Waza. Residential and service buildings have been built along it since 2007, and a rebuilding project was approved in 2022.",
+    "ludzie": [
+      {"kto": "Jan II Kazimierz Waza", "rola": "król Polski; patron nazwy ulicy od 1921 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Jana Kazimierza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Jana_Kazimierza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Artykuł w większości opisuje obecne inwestycje i budynki; historia ograniczona do nazwy i kilku dat."
+  },
+  {
+    "id": "ulica-juliana-konstantego-ordona",
+    "nazwa": "Ulica Juliana Konstantego Ordona",
+    "name_en": "Julian Konstanty Ordon Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Juliana Konstantego Ordona",
+    "adres_historyczny": null,
+    "lat": 52.2257977,
+    "lon": 20.952179,
+    "lokalizacja": "przyblizona",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica rozpoczyna się przy skrzyżowaniu z ul. Gumińską i Armatnią na terenie MSI Odolany, a kończy się przy skrzyżowaniu z ulicami Wolską i Elekcyjną na terenie MSI Ulrychów.",
+      "Nazwa upamiętnia Juliana Konstantego Ordona, oficera Wojska Polskiego i powstańca listopadowego; została nadana w 1921 roku.",
+      "Do 2016 roku ulica nosiła niepoprawną nazwę Juliusza Konstantyna Ordona.",
+      "Na odcinku od początku ulicy do skrzyżowania z ul. Wschowską ulica ma dwie jezdnie z miejscami parkingowymi w pasie rozdziału.",
+      "Historyczna brukowana nawierzchnia ulicy jest ujęta w gminnej ewidencji zabytków jako Układ ulicy J. K. Ordona – historyczna nawierzchnia (nr WOL34635).",
+      "Przy ulicy znajduje się fortyfikacja z okresu powstania listopadowego – reduta nr 55 (nr 2, 2A)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Julian Konstanty Ordon Street in Wola runs through the Odolany and Ulrychów areas. It was named in 1921 after Julian Konstanty Ordon, an officer and November Uprising insurgent. Its historic paving is listed as a monument, and a fortification from the November Uprising, Redoubt no. 55, stands on it.",
+    "ludzie": [
+      {"kto": "Julian Konstanty Ordon", "rola": "oficer Wojska Polskiego, powstaniec listopadowy; patron nazwy ulicy od 1921 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "nazwa niepoprawna: Juliusza Konstantyna Ordona (do 2016)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Juliana Konstantego Ordona w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Juliana_Konstantego_Ordona_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. Rekord nie obejmuje pozostałych budynków z listy zabytków."
+  },
+  {
+    "id": "ulica-jozefa-bema",
+    "nazwa": "Ulica Józefa Bema",
+    "name_en": "Józef Bem Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Józefa Bema",
+    "adres_historyczny": "Droga Kościelna i Droga Parafialna (do 1919)",
+    "lat": 52.2316359,
+    "lon": 20.9589598,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1876–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawniej ulica była drogą narolną biegnącą przed 1876 rokiem od ul. Opaczewskiej we wsi Warszawa do wsi Wola Wielka, przecinającą tory kolei warszawsko-wiedeńskiej.",
+      "W 1876 roku ulicę przecięły tory kolei obwodowej, a w okolicy powstały bocznice kolejowe wiodące do carskich magazynów wojskowych wzniesionych po 1893 roku pod nr 60.",
+      "Od 1908 roku pod nr 65 działała wielka fabryka spółki Lilpop, Rau i Loewenstein.",
+      "W 1916 roku ulica na całej swojej długości została włączona w granice Warszawy.",
+      "W 1919 roku dotychczasowej Drodze Parafialnej i Drodze Kościelnej nadano nazwę upamiętniającą generała Józefa Bema.",
+      "21 sierpnia 1963 roku zlikwidowano trasę tramwajową na ulicy od ul. Wolskiej do pętli przed kościołem św. Stanisława Biskupa i Męczennika.",
+      "Od 1974 roku początkowy odcinek ulicy, należący przed wojną do dzielnicy Ochota, nosi nazwę al. Bohaterów Września.",
+      "W 1973 roku oddano do użytku nowy odcinek al. Rewolucji Październikowej, w którego ciąg włączono odbudowany tunel pod stacją Warszawa Zachodnia."
+    ],
+    "ciekawostki": [
+      "Długość ulicy skrócono z 2330 m do 1010 m, a po zmianach dokonanych w 2014 roku do 780 m.",
+      "11 września 1939 roku, podczas obrony Warszawy, spłonęły zbombardowane przez Luftwaffe elewatory zbożowe."
+    ],
+    "summary_en": "Józef Bem Street in Wola was an old country road to Wola Wielka that became a city street in 1916 and was named after General Józef Bem in 1919. It was cut by railway lines and was shortened several times after 1974, when its eastern end was renamed Bohaterów Września.",
+    "ludzie": [
+      {"kto": "Józef Bem", "rola": "generał; patron nazwy ulicy od 1919 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Droga Kościelna (do 1919)",
+      "Droga Parafialna (do 1919)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Józefa Bema w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_J%C3%B3zefa_Bema_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. Obiekt Lilpop, Rau i Loewenstein (nr 65) występuje w artykule jako nieistniejący; osobny rekord fabryki pominięto."
+  },
+  {
+    "id": "ulica-jozefa-sowinskiego",
+    "nazwa": "Ulica Józefa Sowińskiego",
+    "name_en": "Józef Sowiński Street",
+    "typ": "ulica",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Józefa Sowińskiego",
+    "adres_historyczny": "ul. Bateryjna i ul. Cmentarna (koniec XIX w.)",
+    "lat": 52.2252409,
+    "lon": 20.9360418,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą narolną wsi Wielka Wola; pod koniec XIX wieku powstały w jej miejscu dwie ulice: Bateryjna (od pobliskiego fortu) i Cmentarna (od cmentarza Wolskiego), które później połączono.",
+      "W 1916 roku ulica znalazła się w granicach administracyjnych Warszawy; nadana w tym samym roku nazwa upamiętnia gen. Józefa Longina Sowińskiego, poległego w 1831 roku na pobliskiej Reducie Wolskiej.",
+      "W latach 1935–1939 pod nr 35, przy skrzyżowaniu z ul. Kacpra Karlińskiego, znajdowała się synagoga.",
+      "W czasie II wojny światowej zabudowa ulicy została zniszczona.",
+      "W 1945 roku przy ulicy założono cmentarz Powstańców Warszawy.",
+      "Pomiędzy ul. Wolską a przedłużeniem drogi wewnętrznej na przedłużeniu ul. Nakielskiej ulica jest wyłączona z ruchu kołowego i przebiega przez cmentarz Powstańców Warszawy."
+    ],
+    "ciekawostki": [
+      "Ulica przecina cmentarz Wolski, dzieląc go na dwie części."
+    ],
+    "summary_en": "Józef Sowiński Street in Wola was formed from two late 19th-century roads, Bateryjna and Cmentarna, and was named in 1916 after General Józef Longin Sowiński, who fell at the nearby Wola Redoubt in 1831. It runs through the Powstańców Warszawy Cemetery and divides the Wola Cemetery in two.",
+    "ludzie": [
+      {"kto": "Józef Longin Sowiński", "rola": "generał, poległ w 1831 roku na Reducie Wolskiej; patron nazwy ulicy od 1916 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "ulica Bateryjna (koniec XIX w.)",
+      "ulica Cmentarna (koniec XIX w.)"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Józefa Sowińskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_J%C3%B3zefa_Sowi%C5%84skiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka (nagłówek WSPÓŁRZĘDNE). Nagłówek DZIELNICE: Wola. Cmentarz Powstańców Warszawy i Izba Pamięci mają w artykule osobne wpisy, pominięte jako rekordy w tej paczce."
+  }
+]

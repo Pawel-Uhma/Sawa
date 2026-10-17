@@ -1,0 +1,196 @@
+[
+  {
+    "id": "mieszkanie-zeromskiego-zamek-krolewski",
+    "nazwa": "Mieszkanie Stefana Żeromskiego na Zamku Królewskim",
+    "name_en": "Stefan Żeromski's apartment at the Royal Castle",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Zamek Królewski w Warszawie (wejście z pierwszego zamkowego podwórza, schody w Wieży Władysławowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.24777778,
+    "lon": 21.01416667,
+    "lokalizacja": "dokladna",
+    "okres": "1924–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Mieszkanie to apartament liczący 120 m² na Zamku Królewskim w Warszawie, w którym Stefan Żeromski spędził wraz z rodziną ostatni rok swojego życia (1924–1925).",
+      "W listopadzie 1924 roku rodzina przeprowadziła się z Konstancina do Zamku Królewskiego; mieszkanie przyznał pisarzowi prezydent Stanisław Wojciechowski jako wyraz szacunku dla zasług artysty.",
+      "Do mieszkania wchodziło się z pierwszego zamkowego podwórza na schody w Wieży Władysławowskiej.",
+      "W tym apartamencie odbywały się spotkania kulturalne z udziałem m.in. Reymonta, Lorentowicza, Limanowskiego, Tuwima i Stryjewskiego.",
+      "Żeromski wystąpił z inicjatywą założenia polskiej sekcji PEN Clubu.",
+      "Pisarz zmarł 20 listopada 1925 roku o godzinie 11 przed południem w swoim mieszkaniu, w którym wówczas była jedynie jego żona.",
+      "Mieszkanie zostało dokładnie odtworzone według wskazówek córki pisarza, Moniki Żeromskiej, konsultującej się z żoną artysty Anną Żeromską (zmarła w 1983)."
+    ],
+    "ciekawostki": [
+      "Pokój na górce, należący do żony i córki pisarza, mieścił się na wieży i był tak niski, że nie miał górnego światła; zamiast tego na ścianach były kinkiety.",
+      "Sąsiadami państwa Żeromskich byli państwo Kuźmińscy: on był lotnikiem, a jego żona siostrzenicą prezydenta Wojciechowskiego."
+    ],
+    "summary_en": "The 120 m² apartment in the Royal Castle in Warsaw where Stefan Żeromski lived with his family during his last year (1924–1925) and where he died on 20 November 1925. Reconstructed according to his daughter's recollections, it now contains exhibitions of his work and a bronze bust of the writer.",
+    "ludzie": [
+      {"kto": "Stefan Żeromski", "rola": "pisarz, lokator apartamentu (1924–1925)", "wiki": null},
+      {"kto": "Stanisław Wojciechowski", "rola": "prezydent RP, który przyznał pisarzowi mieszkanie", "wiki": null},
+      {"kto": "Monika Żeromska", "rola": "córka pisarza, autorka Wspomnień; konsultowała odtworzenie mieszkania", "wiki": null},
+      {"kto": "Anna Żeromska", "rola": "żona pisarza (zmarła w 1983)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mieszkanie Stefana Żeromskiego na Zamku Królewskim w Warszawie", "url": "https://pl.wikipedia.org/wiki/Mieszkanie_Stefana_%C5%BBeromskiego_na_Zamku_Kr%C3%B3lewskim_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje też zmianę kształtu pokoju stołowego przy odtwarzaniu; w rekordzie pominięto szczegóły techniczne."
+  },
+  {
+    "id": "most-zygmunta-augusta",
+    "nazwa": "Most Zygmunta Augusta",
+    "name_en": "King Sigismund Augustus Bridge",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "przeprawa przez Wisłę przy ul. Mostowej (strona Śródmieścia); po stronie praskiej wylot dzisiejszej ul. Ratuszowej",
+    "adres_historyczny": null,
+    "lat": 52.253,
+    "lon": 21.016,
+    "lokalizacja": "dokladna",
+    "okres": "1573–1603",
+    "istnieje": false,
+    "fakty": [
+      "Most Zygmunta Augusta był drewnianym mostem przez Wisłę istniejącym w latach 1573–1603; była to pierwsza stała przeprawa przez Wisłę w Warszawie.",
+      "Most miał 500 metrów długości i był najdłuższą drewnianą przeprawą ówczesnej Europy.",
+      "Budowę rozpoczęto w 1568 roku na mocy rozporządzenia króla Zygmunta Augusta; pierwszy pal w dno Wisły wbito 25 czerwca 1568.",
+      "Budową kierował Erazm Giotto z Zakroczymia, nadzór sprawował Zygmunt Wolski; budowa kosztowała 100 tys. florenów.",
+      "Po śmierci króla budowę dokończyła Anna Jagiellonka, w dużej mierze z własnych środków; most otwarto dla ruchu 5 kwietnia 1573.",
+      "W 1582 roku oddano do użytku dwupiętrową Bramę Mostową, odgradzającą most od drewnianych zabudowań miasta; w bramie stacjonowała straż 50 ludzi.",
+      "Most został zerwany przez krę wiosną 1603 roku i nigdy nie zbudowano kolejnego mostu w tym miejscu."
+    ],
+    "ciekawostki": [
+      "W 1595 roku Paulo Mucante, sekretarz kardynała Henryka Gaetano, odnotował łaciński napis umieszczony na moście.",
+      "Od mostu pochodzi nazwa prowadzącej do przeprawy ulicy Mostowej."
+    ],
+    "summary_en": "A wooden bridge across the Vistula built in 1568–1573 on the order of King Sigismund Augustus and completed by Queen Anna Jagiellon. At 500 m it was the longest wooden crossing in Europe at the time; it was destroyed by ice in 1603 and never rebuilt on the same spot.",
+    "ludzie": [
+      {"kto": "Zygmunt August", "rola": "król; wydał rozporządzenie o budowie mostu (1568)", "wiki": null},
+      {"kto": "Erazm Giotto z Zakroczymia", "rola": "kierownik budowy", "wiki": null},
+      {"kto": "Zygmunt Wolski", "rola": "nadzór nad budową; kasztelan czerski i starosta warszawski", "wiki": null},
+      {"kto": "Anna Jagiellonka", "rola": "dokończyła budowę po śmierci króla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most Zygmunta Augusta", "url": "https://pl.wikipedia.org/wiki/Most_Zygmunta_Augusta"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy mostu, a nie budynku (typ najbliższy z listy). Współrzędne z nagłówka. Artykuł podaje daty 1573–1603 jako czas istnienia mostu."
+  },
+  {
+    "id": "most-przy-cytadeli",
+    "nazwa": "Most przy Cytadeli",
+    "name_en": "Citadel Bridges",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "most kolejowy na Wiśle przy Cytadeli (w Warszawie)",
+    "adres_historyczny": "II most (1875) i drugi most kolejowy (1908)",
+    "lat": 52.2606,
+    "lon": 21.0092,
+    "lokalizacja": "dokladna",
+    "okres": "1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy most o nazwie Most przy Cytadeli, nazywany II mostem, oddano do użytku w listopadzie 1875 jako część linii obwodowej; był to most kolejowo-drogowy.",
+      "Most był budowany od kwietnia 1873 i został zaprojektowany przez Tadeusza Chrzanowskiego; przetarg na budowę wygrała warszawska firma Lilpop, Rau i Loewenstein.",
+      "W latach 1905–1908 poniżej tego mostu powstał drugi, wyłącznie kolejowy most, zaprojektowany przez Nikołaja Bielelubskiego; most z 1875 został przystosowany do ruchu drogowego i pieszego.",
+      "Oba mosty zostały wysadzone przez wycofujących się Rosjan 5 sierpnia 1915, a w 1944 roku przez Niemców (13 września 1944).",
+      "Most kolejowy z 1908 roku został odbudowany w 1946 roku jako pierwszy stały most na Wiśle w Warszawie po II wojnie światowej.",
+      "Na filarach mostu drogowego z 1875 roku w latach 1957–1959 zbudowano most Gdański."
+    ],
+    "ciekawostki": [
+      "Warszawiacy nazywali most Poniatowskiego Trzecim Mostem, bo mosty pod Cytadelą traktowali jako jeden.",
+      "W latach 1945–1947 radzieccy saperzy wznieśli obok mostu jednotorowy most kolejowy na drewnianych podporach; został zniesiony przez krę 20 marca 1947 roku."
+    ],
+    "summary_en": "A pair of railway bridges across the Vistula near the Citadel, built in 1875 and 1908 as part of the Warsaw circular railway. Both were blown up in the wars; the 1908 railway bridge was rebuilt in 1946 as the first permanent Vistula bridge in Warsaw after the Second World War.",
+    "ludzie": [
+      {"kto": "Tadeusz Chrzanowski", "rola": "projektant mostu z 1875 roku", "wiki": null},
+      {"kto": "Nikołaj Bielelubski", "rola": "projektant mostu z 1908 roku", "wiki": null},
+      {"kto": "Lilpop, Rau i Loewenstein", "rola": "wykonawca mostu z 1875 roku (wygrała przetarg)", "wiki": null},
+      {"kto": "K. Rudzki i S-ka", "rola": "przedsiębiorstwo prowadzące budowę mostu z 1908 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["II most", "most kolejowy pod Cytadelą"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Most przy Cytadeli", "url": "https://pl.wikipedia.org/wiki/Most_przy_Cytadeli"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy kompleksu mostów; typ „miejsce” zamiast „budynek”. Współrzędne z nagłówka."
+  },
+  {
+    "id": "multimedialny-park-fontann",
+    "nazwa": "Multimedialny Park Fontann",
+    "name_en": "Multimedia Fountain Park",
+    "typ": "park",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "skwer 1 Dywizji Pancernej WP, między ulicami Boleść, Wybrzeże Gdańskie, Sanguszki i Rybaki (Nowe Miasto)",
+    "adres_historyczny": "Podzamcze (teren pierwotnego parku)",
+    "lat": 52.2536,
+    "lon": 21.0118,
+    "lokalizacja": "dokladna",
+    "okres": "1971–dziś (fontanny od 2011)",
+    "istnieje": true,
+    "fakty": [
+      "Multimedialny Park Fontann to kompleks czterech fontann na skwerze 1 Dywizji Pancernej WP na warszawskim Nowym Mieście.",
+      "Teren nazywa się Podzamczem, w nawiązaniu do pierwotnego parku ze stawem-brodzianką, który rozciągał się od Góry Gnojnej do ul. Sanguszki.",
+      "Park o powierzchni 12,9 ha zaprojektował Longin Majdecki; zbudowała go młodzież w czynie społecznym w czasie odbudowy Zamku Królewskiego, a urządzanie ukończono 30 lipca 1971.",
+      "W maju 1988 roku części parku położonej na północ od ul. Boleść nadano nazwę Skweru 1 Dywizji Pancernej.",
+      "Zespół fontann uruchomiono 7 maja 2011 roku, w związku z jubileuszem 125-lecia Miejskiego Przedsiębiorstwa Wodociągów i Kanalizacji (MPWiK).",
+      "Koszt inwestycji wyniósł 11,5 mln zł; sfinansowano ją z budżetu m.st. Warszawy, MPWiK oraz środków Unii Europejskiej."
+    ],
+    "ciekawostki": [
+      "Obok fontann odsłonięto ławeczkę Williama Heerleina Lindleya, który zaprojektował sieć kanalizacyjną Warszawy i w 1886 roku uruchomił miejskie wodociągi.",
+      "Pokazy 30-minutowe „woda-światło-dźwięk” z reflektorami LED i laserami odbywają się w piątkowe i sobotnie wieczory oraz czasami w inne dni."
+    ],
+    "summary_en": "A park with a four-fountain multimedia light and water show in Warsaw's Nowe Miasto, on the site of the older Podzamcze park. The 12.9 ha park was built by volunteer youth during the reconstruction of the Royal Castle and finished in 1971; the fountain complex opened in 2011.",
+    "ludzie": [
+      {"kto": "Longin Majdecki", "rola": "projektant parku", "wiki": null},
+      {"kto": "William Heerlein Lindley", "rola": "inżynier, autor sieci kanalizacyjnej Warszawy; ławeczka obok fontann", "wiki": null},
+      {"kto": "Stefan Starzyński", "rola": "przedwojenna wizja skierowania stolicy w stronę Wisły (wg artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Podzamcze", "Skwer 1 Dywizji Pancernej (część parku, od 1988)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Multimedialny Park Fontann w Warszawie", "url": "https://pl.wikipedia.org/wiki/Multimedialny_Park_Fontann_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Artykuł zawiera informacje techniczne (dysze, reflektory, pompy), pominięte jako nieistotne dla historii miejsca."
+  },
+  {
+    "id": "muranow",
+    "nazwa": "Muranów",
+    "name_en": "Muranów",
+    "typ": "miejsce",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "osiedle Muranów: między al. Solidarności, ul. Lesznem, ul. Okopową i torami kolejowymi (część w dzielnicy Śródmieście; część w dzielnicy Wola)",
+    "adres_historyczny": "jurydyki: Wielądka, Parysowska, Świętojerska, Leszno, Nowolipie, Szymanowska",
+    "lat": 52.251386,
+    "lon": 20.994459,
+    "lokalizacja": "przyblizona",
+    "okres": "1686–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1686 roku Włoch Józef Szymon Bellotti, nadworny architekt królów Michała Korybuta Wiśniowieckiego i Jana III Sobieskiego, zbudował pałac Murano, nazwany tak na pamiątkę wyspy Murano w Wenecji.",
+      "Od początku XIX wieku tereny zaczęła zasiedlać ludność żydowska; w 1806 roku władze pruskie wydały zarządzenie o wysiedleniu Żydów z Starego i Nowego Miasta na zachód od ulic Bielańskiej, Miodowej i Freta.",
+      "W 1916 roku zabudowa była bardzo gęsta; na terenie dzielnicy znajdowały się m.in. Pałac Mostowskich, Pawiak i jego oddział kobiecy na ul. Dzielnej (zwany Serbią), zajezdnia tramwajowa przy ul. Sierakowskiej i szpital św. Zofii.",
+      "Przed wybuchem II wojny światowej mieszkało tu ćwierć miliona osób, z czego Żydzi stanowili około 90%.",
+      "16 listopada 1940 roku getto zostało zamknięte, odcięte od świata i otoczone murem; przebywało w nim 450 000 mieszkańców.",
+      "W 1943 roku, w wigilię żydowskiego święta Paschy, Żydowska Organizacja Bojowa z przywódcą Mordechajem Anielewiczem doprowadziła do wybuchu powstania w getcie."
+    ],
+    "ciekawostki": [
+      "W Miejskim Systemie Informacji obszar podzielono na dwie części: zachodnią (na Woli) nazwano Nowolipki, a wschodnią Muranów, bo nie chciano tej samej nazwy w dwóch dzielnicach.",
+      "Osiedle Muranów II, potężny blok z wczesnego okresu powojennego, ma wewnątrz trzy podwórka: Milicyjniak, Okrąglak i Trzecie podwórko."
+    ],
+    "summary_en": "A historic district of Warsaw on the border of Wola and Śródmieście. Before the Second World War it was the densest part of the city and home to about 250,000 people, roughly 90% of them Jews. In 1940 the Nazis sealed it off as the Warsaw Ghetto, and it was the site of the 1943 ghetto uprising.",
+    "ludzie": [
+      {"kto": "Józef Szymon Bellotti", "rola": "architekt, zbudował pałac Murano (1686)", "wiki": null},
+      {"kto": "Mordechaj Anielewicz", "rola": "przywódca Żydowskiej Organizacji Bojowej w getcie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Muranów (jurydyki: Wielądka, Parysowska, Świętojerska, Leszno, Nowolipie, Szymanowska)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muranów", "url": "https://pl.wikipedia.org/wiki/Muran%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (ogólne dla dzielnicy historycznej). Artykuł urwany po opisie powstania w getcie; rekord oparty na pełnych zdaniach. Artykuł „Muranów (obszar MSI)” pominięty jako definicja tego samego obszaru."
+  }
+]

@@ -1,0 +1,412 @@
+[
+  {
+    "id": "park-kepa-potocka",
+    "nazwa": "Park Kępa Potocka",
+    "name_en": "Kępa Potocka Park",
+    "typ": "park",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "wzdłuż ul. Gwiaździstej, nad Wisłą",
+    "adres_historyczny": null,
+    "lat": 52.2802,
+    "lon": 20.9976,
+    "lokalizacja": "dokladna",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park został założony w 1961 roku nad Wisłą, wzdłuż ul. Gwiaździstej.",
+      "Projektantami założenia byli Karol Kozłowski i Elżbieta Jankowska; przy urządzaniu parku w czynie społecznym pracowali mieszkańcy Warszawy.",
+      "Centralnym elementem parku jest starorzecze Wisły – Łacha Potocka, nazywane przez okolicznych mieszkańców „kanałkiem”.",
+      "Na południowym krańcu parku znajduje się odsłonięty w 2009 roku neon „Światłotrysk” projektu Maurycego Gomulickiego.",
+      "Park wraz z Łachą Kępa Potocka leży na terenie Warszawskiego Obszaru Chronionego Krajobrazu (uchwała z 30 października 2008 roku)."
+    ],
+    "ciekawostki": [
+      "Nazwa parku pochodzi od licznych płynących kiedyś na tym terenie potoków."
+    ],
+    "summary_en": "Kępa Potocka Park was laid out in 1961 along Gwiaździsta Street on the Vistula bank, partly by volunteers. Its centre is the old river branch Łacha Potocka, which locals call the 'little canal'.",
+    "ludzie": [
+      {"kto": "Karol Kozłowski", "rola": "projektant założenia parku", "wiki": null},
+      {"kto": "Elżbieta Jankowska", "rola": "projektantka założenia parku", "wiki": null},
+      {"kto": "Maurycy Gomulicki", "rola": "autor neonu „Światłotrysk”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Park Kępa Potocka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_K%C4%99pa_Potocka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "park-romualda-traugutta",
+    "nazwa": "Park Romualda Traugutta",
+    "name_en": "Romuald Traugutt Park",
+    "typ": "park",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "okolice ul. Zakroczymskiej, Wenedów, Sanguszki i Międzyparkowej (między Cytadelą a Nowym Miastem)",
+    "adres_historyczny": null,
+    "lat": 52.2607,
+    "lon": 21.003,
+    "lokalizacja": "dokladna",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park został założony w latach 1925–1929 według projektu Leona Danilewicza i Stanisława Zadory-Życieńskiego, na terenie pofortecznym między Cytadelą a Nowym Miastem.",
+      "Na tym terenie znajdowało się m.in. miejsce stracenia Romualda Traugutta.",
+      "Nazwę parku nadano uchwałą Rady Miejskiej z dnia 27 września 1926 roku.",
+      "Pierwotnie park zajmował 22 ha; po wydzieleniu w latach 50. XX wieku zachodniej części, nazwanej imieniem Janusza Kusocińskiego, ma 10,4 ha.",
+      "W miejscu stracenia Romualda Traugutta, Rafała Krajewskiego, Józefa Toczyskiego, Romana Żulińskiego i Jana Jeziorańskiego stoi krzyż i głaz pamiątkowy, odsłonięty 5 sierpnia 1916 roku.",
+      "W 2023 roku trzem alejom parkowym nadano imiona: Heleny Kirkorowej, Józefy Gudzińskiej i Marii Ilnickiej."
+    ],
+    "ciekawostki": [
+      "Rzeźba Samotność (Trzy cienie) Zofii Woźnej z 1965 roku powstała z trzech kolumn rozebranego pałacu Kronenberga."
+    ],
+    "summary_en": "Romuald Traugutt Park lies between the Citadel and the Nowe Miasto. Laid out in 1925–1929, it covers the site where Romuald Traugutt and other insurgents were executed.",
+    "ludzie": [
+      {"kto": "Romuald Traugutt", "rola": "przywódca powstania styczniowego, stracony na terenie późniejszego parku", "wiki": null},
+      {"kto": "Leon Danilewicz", "rola": "projektant parku", "wiki": null},
+      {"kto": "Stanisław Zadora-Życieński", "rola": "projektant parku", "wiki": null},
+      {"kto": "Janusz Kusociński", "rola": "patron zachodniej części parku", "wiki": null},
+      {"kto": "Wacław Szymanowski", "rola": "autor rzeźby „Macierzyństwo” (1903), ustawionej w parku w 1929 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Park Romualda Traugutta w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Romualda_Traugutta_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje park jako położony w dzielnicy Śródmieście; w nagłówku wpisano Żoliborz (rekord według nagłówka)."
+  },
+  {
+    "id": "park-stefana-zeromskiego",
+    "nazwa": "Park Stefana Żeromskiego",
+    "name_en": "Stefan Żeromski Park",
+    "typ": "park",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "rejon ul. Mickiewicza, Krasińskiego, Czarnieckiego i Mierosławskiego",
+    "adres_historyczny": null,
+    "lat": 52.2685,
+    "lon": 20.9886,
+    "lokalizacja": "dokladna",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Park został założony w latach 1925–1932 (wg innego źródła 1930–1932) z inicjatywy Towarzystwa Przyjaciół Żoliborza, na terenach wokół fortu Sokolnickiego.",
+      "Przy urządzaniu parku zatrudniono ok. 600 bezrobotnych; pozostałe koszty, w tym ogrodzenia, pokryło Towarzystwo ze składek członków.",
+      "Park został otwarty 23 czerwca 1932 roku.",
+      "Na skwerze przy głównym wejściu od strony placu Wilsona ustawiono fontannę z rzeźbą „Dziewczyna z dzbanem” Henryka Kuny, nazywaną przez mieszkańców Aliną.",
+      "W maju 1943 roku park zamknięto dla ludności polskiej; w 1944 roku stał się prowizorycznym cmentarzem dla ofiar walk i bombardowań i został częściowo zniszczony.",
+      "W latach 2003–2005 przeprowadzono modernizację parku w oparciu o jego pierwotny projekt; w 2020 roku wpisano go do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W 2023 roku, podczas pierwszej w Polsce inwentaryzacji nietoperzy na terenie miejskim, po raz pierwszy w Warszawie stwierdzono w parku obecność borowca leśnego."
+    ],
+    "summary_en": "Stefan Żeromski Park in Żoliborz was founded in 1925–1932 on the grounds of the Sokolnicki Fort. It opened in 1932, held a cemetery for the 1944 victims, and is home to the Alina fountain sculpture.",
+    "ludzie": [
+      {"kto": "Leon Danielewicz", "rola": "projektant parku (w artykule o parku Traugutta: Danilewicz)", "wiki": null},
+      {"kto": "Stanisław Zadora-Życieński", "rola": "projektant parku", "wiki": null},
+      {"kto": "Henryk Kuna", "rola": "autor rzeźby „Alina, dziewczyna z dzbanem”", "wiki": null},
+      {"kto": "Jacek Kuroń", "rola": "upamiętniony w parku kamieniem; mieszkał w pobliskim budynku przy ul. Mickiewicza", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Park Stefana Żeromskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_Stefana_%C5%BBeromskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "park-zolnierzy-zywiciela",
+    "nazwa": "Park im. Żołnierzy Żywiciela",
+    "name_en": "Żołnierze Żywiciela Park",
+    "typ": "park",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "między ul. ks. Jerzego Popiełuszki, ul. Adama Próchnika, ul. Sarmatów i ul. Harcerską",
+    "adres_historyczny": "prochownia Głównych Składów Materiałów Wybuchowych",
+    "lat": 52.269,
+    "lon": 20.9773,
+    "lokalizacja": "dokladna",
+    "okres": "1950–dziś (przed wojną prochownia)",
+    "istnieje": true,
+    "fakty": [
+      "Przed II wojną światową na terenie parku znajdowała się prochownia, obiekt wojskowy Głównych Składów Materiałów Wybuchowych w Warszawie.",
+      "Prochownia składała się z siedmiu budynków otoczonych wałami ziemnymi, laboratorium, domu mieszkalnego i stajni.",
+      "Ostatni budynek prochowni, z czerwonej cegły, znajdował się na terenie parku jeszcze w 1971 roku.",
+      "Park założono w latach 50. XX wieku między kolonią Warszawskiej Spółdzielni Mieszkaniowej a Teatrem Komedia.",
+      "W parku znajduje się pomnik Żołnierzy AK Obwód „Żywiciel”.",
+      "W 2012 roku odsłonięto tu odnowioną rzeźbę „Kobieta z dzieckiem (Macierzyństwo)” Aliny Szapocznikow; w 2025 roku uszkodzoną rzeźbę przekazano w depozyt Muzeum Sztuki Nowoczesnej."
+    ],
+    "ciekawostki": [
+      "Przy pomniku Żołnierzy „Żywiciela” rosną dwa pomniki przyrody – platany klonolistne."
+    ],
+    "summary_en": "Park Żołnierzy Żywiciela in Żoliborz stands on the site of a pre-war gunpowder depot. It was laid out in the 1950s and holds a monument to the Home Army 'Żywiciel' unit and a sculpture by Alina Szapocznikow.",
+    "ludzie": [
+      {"kto": "Alina Szapocznikow", "rola": "autorka rzeźby „Kobieta z dzieckiem (Macierzyństwo)”", "wiki": null}
+    ],
+    "dawne_nazwy": ["prochownia Głównych Składów Materiałów Wybuchowych"],
+    "zrodla": [{"tytul": "Wikipedia: Park im. Żołnierzy Żywiciela w Warszawie", "url": "https://pl.wikipedia.org/wiki/Park_im._%C5%BBo%C5%82nierzy_%C5%BBywiciela_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stacja-metra-plac-wilsona",
+    "nazwa": "Stacja metra Plac Wilsona",
+    "name_en": "Plac Wilsona metro station",
+    "typ": "budynek",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "przy ul. Słowackiego i w północnej części placu Wilsona, przy ul. Krasińskiego",
+    "adres_historyczny": null,
+    "lat": 52.269166666,
+    "lon": 20.984166666,
+    "lokalizacja": "dokladna",
+    "okres": "2005–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja linii M1 została oddana do użytku 8 kwietnia 2005 roku.",
+      "Pierwsza nazwa stacji – plac Komuny Paryskiej – została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983 roku.",
+      "Obecna nazwa stacji oraz placu pochodzi od nazwiska 28. prezydenta USA Woodrowa Wilsona; nazwę stacji oficjalnie nadano we wrześniu 2013 roku.",
+      "Stacja jest dwukondygnacyjna, zaprojektowana przez Andrzeja Chołdzyńskiego; peron wyspowy ma 11 m szerokości i 120 m długości.",
+      "Kopuła po południowej stronie stacji, w kształcie elipsy, pełni funkcję lampionu; w zależności od pory dnia świeci na czerwono, fioletowo, niebiesko lub zielono.",
+      "Po otwarciu stacji Marymont między Placem Wilsona a Marymontem kursował pociąg wahadłowy z częstotliwością 9–12 minut."
+    ],
+    "ciekawostki": [
+      "Pod stacją znajduje się pusta komora techniczna, tzw. pustka technologiczna, której nie zagospodarowano ze względu na wysokie koszty adaptacji."
+    ],
+    "summary_en": "Plac Wilsona metro station on line M1 opened on 8 April 2005 at Słowackiego Street and the north end of Wilson Square. Its name was changed from Plac Komuny Paryskiej and the station is known for its illuminated elliptical dome.",
+    "ludzie": [
+      {"kto": "Andrzej Chołdzyński", "rola": "architekt stacji (biuro AMC)", "wiki": null},
+      {"kto": "Ksawery Jasieński", "rola": "lektor zapowiedzi stacji w pociągach metra", "wiki": null}
+    ],
+    "dawne_nazwy": ["plac Komuny Paryskiej (nazwa stacji do 1990 roku)"],
+    "zrodla": [{"tytul": "Wikipedia: Plac Wilsona (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Plac_Wilsona_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dane techniczne w artykule: długość 150 m, szerokość 21 m (rozbieżne z opisem peronu 120 × 11 m). Artykuł urwany w sekcji „Nagrody i wyróżnienia”."
+  },
+  {
+    "id": "pomnik-1-dywizji-pancernej",
+    "nazwa": "Pomnik 1 Dywizji Pancernej",
+    "name_en": "1st Armoured Division Monument",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "pl. Inwalidów, na osi al. Wojska Polskiego",
+    "adres_historyczny": null,
+    "lat": 52.2641,
+    "lon": 20.9922,
+    "lokalizacja": "dokladna",
+    "okres": "1995–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik 1 Dywizji Pancernej gen. Stanisława Maczka stoi na placu Inwalidów.",
+      "Autorami pomnika są Jerzy Sikorski (rzeźba) i Andrzej Kiciński (oprawa architektoniczna).",
+      "Monument odsłonięto 30 września 1995 roku na osi al. Wojska Polskiego.",
+      "Fundatorami pomnika było 40 miast Belgii, Holandii, Francji i Szkocji oraz polscy weterani II wojny światowej z całego świata.",
+      "Monument ma formę kolumny na cokole, zwieńczonej trzema symbolami 1 Dywizji: szyszakiem, skrzydłami husarskimi i fragmentem gąsienicy czołgu.",
+      "Na cokole znajduje się napis: „Żołnierz polski walczy na wszystkich frontach o wolność wszystkich narodów, ale życie oddaje tylko za własną ojczyznę”."
+    ],
+    "ciekawostki": [
+      "Na 1/3 wysokości monumentu umieszczono orła z rozpostartymi skrzydłami."
+    ],
+    "summary_en": "The monument to the 1st Armoured Division of Gen. Stanisław Maczek stands on Invalids Square on the axis of Wojska Polskiego Avenue. Unveiled in 1995, it was funded by 40 towns in Belgium, the Netherlands, France and Scotland.",
+    "ludzie": [
+      {"kto": "Stanisław Maczek", "rola": "generał, patron pomnika 1 Dywizji Pancernej", "wiki": null},
+      {"kto": "Jerzy Sikorski", "rola": "autor rzeźby", "wiki": null},
+      {"kto": "Andrzej Kiciński", "rola": "autor oprawy architektonicznej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik 1 Dywizji Pancernej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_1_Dywizji_Pancernej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-27-wolynskiej-dywizji-piechoty-ak",
+    "nazwa": "Pomnik 27 Wołyńskiej Dywizji Piechoty AK",
+    "name_en": "27th Volhynian Infantry Division Home Army Monument",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "skwer Wołyński, przy Trasie Armii Krajowej, w pobliżu ul. Gdańskiej",
+    "adres_historyczny": null,
+    "lat": 52.2757,
+    "lon": 20.9716,
+    "lokalizacja": "dokladna",
+    "okres": "1993–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik projektu rzeźbiarza Kazimierza Danilewicza stoi na skwerze Wołyńskim przy Trasie Armii Krajowej, w pobliżu ul. Gdańskiej.",
+      "Został odsłonięty 12 września 1993 roku.",
+      "Ma kształt wielkiego kamiennego miecza.",
+      "13 lipca 2003 roku ustawiono 11 kamiennych kolumn-świec upamiętniających ofiary rzezi wołyńskiej z 11 wołyńskich powiatów; na każdej umieszczono herb i nazwę powiatu.",
+      "Kolumny są podświetlane reflektorami ukrytymi w bruku.",
+      "Na prawo od pomnika znajduje się popiersie gen. Jana Wojciecha Kiwerskiego."
+    ],
+    "ciekawostki": [
+      "W pobliżu znajduje się inne upamiętnienie – pomnik Rzezi Wołyńskiej."
+    ],
+    "summary_en": "The monument to the 27th Volhynian Infantry Division of the Home Army stands on Volhynia Square by the Home Army Route. Unveiled in 1993, it has a stone sword shape and eleven memorial candle-columns added in 2003.",
+    "ludzie": [
+      {"kto": "Kazimierz Danilewicz", "rola": "rzeźbiarz, autor projektu pomnika", "wiki": null},
+      {"kto": "Jan Wojciech Kiwerski", "rola": "generał, upamiętniony popiersiem obok pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik 27 Wołyńskiej Dywizji Piechoty AK w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_27_Wo%C5%82y%C5%84skiej_Dywizji_Piechoty_AK_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-czynu-zbrojnego-polonii-amerykanskiej",
+    "nazwa": "Pomnik Czynu Zbrojnego Polonii Amerykańskiej",
+    "name_en": "Monument to the Armed Deed of American Polonia",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "al. Wojska Polskiego, pas zieleni przy pl. Grunwaldzkim",
+    "adres_historyczny": null,
+    "lat": 52.2631,
+    "lon": 20.9814,
+    "lokalizacja": "dokladna",
+    "okres": "1998–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik upamiętnia udział Polonii amerykańskiej w odzyskaniu przez Polskę niepodległości.",
+      "Polonia z USA i Kanady dostarczyła 20 tys. ochotników do Błękitnej Armii gen. Józefa Hallera; ok. 14,5 tys. z nich wróciło do Ameryki po zakończeniu walk.",
+      "W maju 1921 roku powołano Stowarzyszenie Weteranów Armii Polskiej w Ameryce (SWAP), które zainicjowało wzniesienie pomnika.",
+      "Pomnik odsłonięto i poświęcono 14 sierpnia 1998 roku, w przeddzień święta Wojska Polskiego.",
+      "Autorami pomnika byli mgr inż. arch. Baltazar Brukalski (BPK „Stolica” Warszawa) oraz autor rzeźby Andrzej Pityński z Nowego Jorku.",
+      "Pomnik przekazano władzom Warszawy 7 listopada 2002 roku."
+    ],
+    "ciekawostki": [
+      "Andrzej Pityński wykonał też Pomnik Katyński w Jersey City i Narodowy Pomnik Katyński w Baltimore."
+    ],
+    "summary_en": "The Monument to the Armed Deed of American Polonia, also called the Haller's Soldiers monument, stands in the green strip of Wojska Polskiego Avenue by Grunwald Square. It honours American volunteers who joined Gen. Haller's Blue Army.",
+    "ludzie": [
+      {"kto": "Józef Haller", "rola": "generał, dowódca Błękitnej Armii", "wiki": null},
+      {"kto": "Baltazar Brukalski", "rola": "współautor projektu pomnika", "wiki": null},
+      {"kto": "Andrzej Pityński", "rola": "autor rzeźby z Nowego Jorku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik Czynu Zbrojnego Polonii Amerykańskiej", "url": "https://pl.wikipedia.org/wiki/Pomnik_Czynu_Zbrojnego_Polonii_Ameryka%C5%84skiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-gloria-victis",
+    "nazwa": "Pomnik Gloria Victis",
+    "name_en": "Gloria Victis Monument",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "kwatera A-26, cmentarz Wojskowy na Powązkach",
+    "adres_historyczny": null,
+    "lat": 52.2580581,
+    "lon": 20.9518132,
+    "lokalizacja": "dokladna",
+    "okres": "1946–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik upamiętnia żołnierzy Armii Krajowej poległych w czasie powstania warszawskiego i okupacji niemieckiej; stoi w kwaterze A-26 na cmentarzu Wojskowym na Powązkach.",
+      "Inicjatorami budowy byli żołnierze i członkowie rodzin żołnierzy zgrupowania „Radosław”, którzy jako pierwsi zaczęli grzebać poległych powstańców w kwaterach zbiorowych.",
+      "W lutym 1946 roku rozpisano konkurs; do realizacji wybrano projekt Heleny Kłosowicz ps. „Monika” z batalionu „Łukasiński”.",
+      "Pomnik odsłonięto 1 sierpnia 1946 roku, w drugą rocznicę wybuchu powstania warszawskiego.",
+      "Monument ma formę graniastosłupa z czarnego granitu na szerokim cokole; na czołowej ścianie znajduje się sentencja Gloria Victis.",
+      "Co roku 1 sierpnia o godz. 17.00 (w godzinę „W”) przy pomniku odbywają się uroczystości rocznicowe.",
+      "W 2022 roku opiekę nad pomnikiem przejęło Muzeum Powstania Warszawskiego na podstawie porozumienia z Okręgiem Warszawa Światowego Związku Żołnierzy Armii Krajowej."
+    ],
+    "ciekawostki": [
+      "Na czołowej ścianie pomnika znajduje się też znak Krzyża Virtuti Militari."
+    ],
+    "summary_en": "The Gloria Victis monument in quarter A-26 of Powązki Military Cemetery honours Home Army soldiers killed in the Warsaw Uprising and the German occupation. It was unveiled on 1 August 1946, and the Warsaw Rising Museum has cared for it since 2022.",
+    "ludzie": [
+      {"kto": "Helena Kłosowicz", "rola": "autorka wybranego projektu, ps. „Monika”, batalion „Łukasiński”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik Gloria Victis w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_Gloria_Victis_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-rzezi-wolynskiej",
+    "nazwa": "Pomnik Rzezi Wołyńskiej",
+    "name_en": "Volhynia Massacre Monument",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "skwer Wołyński",
+    "adres_historyczny": null,
+    "lat": 52.2758,
+    "lon": 20.9731,
+    "lokalizacja": "dokladna",
+    "okres": "2013–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik na skwerze Wołyńskim został odsłonięty 11 lipca 2013 roku, w 70. rocznicę rzezi wołyńskiej.",
+      "Autorem pomnika jest Marek Moderau.",
+      "Dominującym elementem jest siedmiometrowy krzyż z figurą Jezusa Chrystusa bez rąk; monument zajmuje 160 m².",
+      "Przed krzyżem znajduje się 18 tablic z nazwami miejscowości z siedmiu przedwojennych województw II Rzeczypospolitej.",
+      "Napis na jednej z tablic upamiętnia ofiary masowej zbrodni o znamionach ludobójstwa dokonanej przez OUN-UPA w latach 1942–1947.",
+      "W sarkofagu u stóp krzyża gromadzona będzie ziemia z 2136 miejscowości, których nazwy widnieją na tablicach."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Volhynia Massacre Monument on Volhynia Square in Żoliberz was unveiled on 11 July 2013. It is dominated by a seven-metre cross and lists the names of places on 18 plaques.",
+    "ludzie": [
+      {"kto": "Marek Moderau", "rola": "autor pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik Rzezi Wołyńskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_Rzezi_Wo%C5%82y%C5%84skiej_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-witolda-pileckiego",
+    "nazwa": "Pomnik Witolda Pileckiego",
+    "name_en": "Witold Pilecki Monument",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "al. Wojska Polskiego, na przedłużeniu osi ul. Bitwy pod Rokitną",
+    "adres_historyczny": null,
+    "lat": 52.263694444,
+    "lon": 20.986055555,
+    "lokalizacja": "dokladna",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik stoi w pobliżu miejsca, w którym Witold Pilecki został aresztowany 19 września 1940 roku.",
+      "Stowarzyszenie Młodzi dla Polski zwróciło się do Rady m.st. Warszawy o pomnik pismem z 23 sierpnia 2013 roku.",
+      "12 września 2013 roku radni podjęli jednogłośnie uchwałę o wzniesieniu pomnika; lokalizację zaproponował burmistrz Żoliborza Krzysztof Bugla.",
+      "W grudniu 2014 roku rozstrzygnięto konkurs, który wygrała pracownia „Morfenes” (Jacek Kiciński i Rafał Stachowicz) z Siemianowic Śląskich.",
+      "16 września 2016 roku Stołeczny Zarząd Rozbudowy Miasta ogłosił przetarg na roboty budowlane.",
+      "Pomnik odsłonięto 13 maja 2017 roku, w 116. rocznicę urodzin Witolda Pileckiego; odsłonięcia dokonały jego dzieci, Andrzej i Zofia.",
+      "W uroczystości wzięli udział m.in. wicepremier Mateusz Morawiecki oraz prezydent Warszawy Hanna Gronkiewicz-Waltz."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Witold Pilecki Monument on Wojska Polskiego Avenue stands near the place where Pilecki was arrested in 1940. Proposed by a youth association, it was approved by the City Council in 2013 and unveiled in 2017.",
+    "ludzie": [
+      {"kto": "Witold Pilecki", "rola": "rotmistrz, patron pomnika, aresztowany 19 września 1940 roku", "wiki": null},
+      {"kto": "Krzysztof Bugla", "rola": "burmistrz Żoliborza, zaproponował lokalizację", "wiki": null},
+      {"kto": "Jacek Kiciński", "rola": "współautor zwycięskiej koncepcji (pracownia „Morfenes”)", "wiki": null},
+      {"kto": "Rafał Stachowicz", "rola": "współautor zwycięskiej koncepcji (pracownia „Morfenes”)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik Witolda Pileckiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_Witolda_Pileckiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-gen-stanislawa-sosabowskiego",
+    "nazwa": "Pomnik gen. Stanisława Sosabowskiego",
+    "name_en": "Gen. Stanisław Sosabowski Monument",
+    "typ": "pomnik",
+    "dzielnica": "Żoliborz",
+    "adres_dzis": "al. Wojska Polskiego, na tyłach pomnika 1 Dywizji Pancernej przy pl. Inwalidów",
+    "adres_historyczny": null,
+    "lat": 52.264128,
+    "lon": 20.992436,
+    "lokalizacja": "dokladna",
+    "okres": "2017–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik upamiętnia gen. Stanisława Sosabowskiego, organizatora i dowódcę 1 Samodzielnej Brygady Spadochronowej.",
+      "Powstał z inicjatywy Ambasady Królestwa Niderlandów w Polsce oraz Fundacji Driel-Polen według projektu holenderskiego rzeźbiarza Martina Abspoela.",
+      "Stoi na tyłach pomnika 1 Dywizji Pancernej przy placu Inwalidów.",
+      "Odsłonięcie nastąpiło 23 września 2017 roku w ramach obchodów Dnia Spadochroniarza."
+    ],
+    "ciekawostki": [
+      "W uroczystości odsłonięcia wzięli udział m.in. sekretarz stanu w MON Michał Dworczyk oraz charge d'affaires ambasady Królestwa Niderlandów Raphael Varga."
+    ],
+    "summary_en": "The monument to Gen. Stanisław Sosabowski stands on Wojska Polskiego Avenue behind the 1st Armoured Division monument. It was made by Dutch sculptor Martin Abspoel and unveiled on 23 September 2017.",
+    "ludzie": [
+      {"kto": "Stanisław Sosabowski", "rola": "generał, organizator i dowódca 1 Samodzielnej Brygady Spadochronowej", "wiki": null},
+      {"kto": "Martin Abspoel", "rola": "holenderski rzeźbiarz, autor projektu pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Pomnik gen. Stanisława Sosabowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_gen._Stanis%C5%82awa_Sosabowskiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]
