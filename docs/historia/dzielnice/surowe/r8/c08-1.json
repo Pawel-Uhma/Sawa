@@ -1,0 +1,108 @@
+[
+  {
+    "id": "plac-artura-zawiszy",
+    "nazwa": "Plac Artura Zawiszy",
+    "name_en": "Artur Zawisza Square",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.22444444,
+    "lon": 20.98888889,
+    "lokalizacja": "przyblizona",
+    "okres": "1823–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1833 w miejscu obecnego placu odbyła się egzekucja Artura Zawiszy.",
+      "Nazwę nadano w czerwcu 1929.",
+      "W 1818 na placu wzniesiono dwa klasycystyczne pawilony rogatkowe (rogatki Jerozolimskie) według projektu Jakuba Kubickiego.",
+      "7 września 1831, w czasie powstania listopadowego, stoczono tutaj walkę z wojskami Imperium Rosyjskiego pod dowództwem Iwana Paskiewicza.",
+      "W 1942 rogatki Jerozolimskie zostały rozebrane przez Niemców.",
+      "W latach 1962–1963 przebudowano całkowicie układ komunikacyjny placu, tworząc rondo."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Artur Zawisza Square in the Ochota district, at the junction of Aleje Jerozolimskie, Raszyńska, Grójecka and Towarowa streets. Built on the site of the Jerozolimskie toll gates after the 1823 layout, it was the scene of an 1831 battle of the November Uprising and of Artur Zawisza's execution in 1833. A roundabout replaced the layout in 1962–1963.",
+    "ludzie": [
+      {"kto": "Artur Zawisza", "rola": "stracony w egzekucji w miejscu obecnego placu (1833)", "wiki": null},
+      {"kto": "Jakub Kubicki", "rola": "autor projektu klasycystycznych pawilonów rogatkowych (1818)", "wiki": null},
+      {"kto": "Iwan Paskiewicz", "rola": "dowodzący wojskami Imperium Rosyjskiego w walce na placu (1831)", "wiki": null}
+    ],
+    "dawne_nazwy": ["rogatki Jerozolimskie (plac postojowy od 1770)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Artura Zawiszy w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Artura_Zawiszy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres nie jest podany w artykule."
+  },
+  {
+    "id": "plac-gabriela-narutowicza",
+    "nazwa": "Plac Gabriela Narutowicza",
+    "name_en": "Gabriel Narutowicz Square",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.21888889,
+    "lon": 20.98361111,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac został wytyczony w 1923.",
+      "Nazwę, upamiętniającą zamordowanego w grudniu 1922 pierwszego Prezydenta Rzeczypospolitej Polskiej Gabriela Narutowicza, nadano w styczniu 1923.",
+      "W 1930 na placu Narutowicza zbudowano pętlę tramwajową.",
+      "9 września 1939 roku pojedyncze niemieckie czołgi zdołały dotrzeć do placu, jednak zostały zmuszone do odwrotu.",
+      "31 lipca 1944 w kwaterze swego sztabu mieszczącej się w domu dochodowym Pocztowej Kasy Oszczędności Antoni Chruściel „Monter” podpisał rozkaz o rozpoczęciu następnego dnia powstania warszawskiego.",
+      "3 października 1957 na placu miały miejsce studenckie protesty przeciwko zamknięciu tygodnika „Po prostu”; w starciach z milicją zostało rannych 50 osób.",
+      "W grudniu 2002 na placu odsłonięto pomnik Gabriela Narutowicza."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Gabriel Narutowicz Square in the Ochota district, laid out in 1923 and named after Poland's first president, who was murdered in December 1922. The square is the centre of the Akademicka Colony and of the Church of the Immaculate Conception, and it was damaged during the Warsaw Uprising in 1944.",
+    "ludzie": [
+      {"kto": "Gabriel Narutowicz", "rola": "patron placu, pierwszy Prezydent Rzeczypospolitej Polskiej, zamordowany w grudniu 1922", "wiki": null},
+      {"kto": "Antoni Chruściel „Monter”", "rola": "podpisał w kwaterze sztabu w domu dochodowym PKO rozkaz o rozpoczęciu powstania warszawskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Gabriela Narutowicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Gabriela_Narutowicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres nie jest podany w artykule."
+  },
+  {
+    "id": "plac-sokratesa-starynkiewicza",
+    "nazwa": "Plac Sokratesa Starynkiewicza",
+    "name_en": "Socrates Starynkiewicz Square",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.224166666,
+    "lon": 20.996111111,
+    "lokalizacja": "przyblizona",
+    "okres": "1893–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac wytyczono w 1893.",
+      "W 1902 po wschodniej stronie placu zbudowano Szpital Dzieciątka Jezus.",
+      "W 1926 przez plac przeprowadzono tory Warszawskiej Kolei Dojazdowej.",
+      "W latach 1928–1930 pod nr 5 wzniesiono monumentalny gmach Dyrekcji Przedsiębiorstwa Wodociągów i Kanalizacji.",
+      "W latach 1936–1936 na rogu placu Starynkiewicza (nr 7) i Alej Jerozolimskich wzniesiono Dom Turystyczny zaprojektowany przez Władysława Borawskiego.",
+      "Poważnie uszkodzony, został odbudowany w 1947.",
+      "15 września 1945 pomiędzy placem a Okęciem uruchomiono pierwszą po wojnie w lewobrzeżnej Warszawie linię tramwajową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Socrates Starynkiewicz Square in the Ochota district, laid out in 1893 and named after Warsaw's city president in 1875–1892. The square's buildings include the Child Jesus Hospital (1902) and the 1928–1930 headquarters of the city water and sewage company. The Tourist Hotel at its corner with Aleje Jerozolimskie was heavily damaged in 1944 and rebuilt in 1947.",
+    "ludzie": [
+      {"kto": "Sokrates Starynkiewicz", "rola": "patron placu, pełniący w latach 1875–1892 obowiązki prezydenta miasta", "wiki": null},
+      {"kto": "Władysław Borawski", "rola": "projektant Domu Turystycznego (1936)", "wiki": null},
+      {"kto": "Alfons Grotowski", "rola": "twórca Wodociągu Praskiego, patron skweru na placu", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Żelazna (przez teren placu od 1842)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Sokratesa Starynkiewicza w Warszawie", "url": "https://pl.wikipedia.org/wiki/Plac_Sokratesa_Starynkiewicza_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejszy adres nie jest podany w artykule; Dom Turystyczny i gmach pod nr 5 to obiekty przy placu, nie osobne rekordy."
+  }
+]

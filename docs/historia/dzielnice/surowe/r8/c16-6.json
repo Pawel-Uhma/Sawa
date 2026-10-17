@@ -1,0 +1,338 @@
+[
+  {
+    "id": "trasa-torunska",
+    "nazwa": "Trasa Toruńska",
+    "name_en": "Trasa Toruńska (Toruń Route)",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "od ul. Modlińskiej/ul. Jagiellońskiej do Marek",
+    "adres_historyczny": null,
+    "lat": 52.2985,
+    "lon": 21.0283,
+    "lokalizacja": "przyblizona",
+    "okres": "1976–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę Trasy Toruńskiej rozpoczęto w 1976, według projektu zespołu architektów pod kierunkiem Wiesława Piątkowskiego.",
+      "Część trasy otwarto w 1981 r., a ok. 1983 przerwano prace.",
+      "W związku ze złą jakością wykonania estakady tranzytowe zamknięto w 1982, tuż po wybudowaniu dwóch pozostałych.",
+      "W 1994 przedłużono istniejący odcinek do Marek, do ówczesnej drogi krajowej nr 18.",
+      "7 czerwca 2012 oddano do użytku jezdnie główne drogi ekspresowej.",
+      "Umowa z przedsiębiorstwem Metrostav na przebudowę mostu gen. Stefana Grota-Roweckiego została podpisana 18 lipca 2013 roku; przebudowany fragment oddano do użytku 21 września 2015 roku."
+    ],
+    "ciekawostki": [
+      "Nazwa pochodzi od ulicy Toruńskiej na Bródnie, która przebiegała w miejscu obecnej trasy."
+    ],
+    "summary_en": "A high-speed route linking the northern districts of right-bank Warsaw, part of the Warsaw expressway ring and road S8. Construction began in 1976 and was interrupted in the 1980s; the expressway was completed in the 2010s.",
+    "ludzie": [
+      {"kto": "Wiesław Piątkowski", "rola": "kierował zespołem architektów, który projektował trasę (od 1976)", "wiki": null}
+    ],
+    "dawne_nazwy": ["most Toruński (dziś most gen. Stefana Grota-Roweckiego)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Trasa Toruńska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Trasa_Toru%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł wspomina też o węźle IKEA (2006–2007) i o rozbiórce estakad w 2005 r.; pominięto, bo to inne obiekty."
+  },
+  {
+    "id": "stacja-metra-trocka",
+    "nazwa": "Stacja metra Trocka",
+    "name_en": "Trocka metro station",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "w pobliżu skrzyżowania ul. Trockiej z ul. Pratulińską",
+    "adres_historyczny": null,
+    "lat": 52.275427777,
+    "lon": 21.055761111,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Konkurs na koncepcję architektoniczno-budowlaną I etapu odcinka zachodniego i wschodniego-północnego II linii metra ogłoszono 26 listopada 2011.",
+      "Stacja nosiła oznaczenie C18 oraz roboczą nazwę Targówek II, mimo że w 2010 Zespół Nazewnictwa Miejskiego proponował dla obiektu nazwę Targówek Północny.",
+      "29 października 2015 wybrano wykonawcę stacji, którą nazwano wówczas Trocka; wybrało go przedsiębiorstwo Astaldi.",
+      "15 listopada 2016 na budowie stacji wmurowano kamień węgielny z kapsułą z aktem erekcyjnym.",
+      "Stacja została otwarta 15 września 2019."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A metro station on Line M2 near the junction of Trocka and Pratulińska streets in Targówek. Construction began in 2016 and the station opened on 15 September 2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["Targówek II", "Targówek-Trocka (propozycja z 2016 r.)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Trocka (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Trocka_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje w jednym miejscu „16 lutego 2016” jako datę pozwolenia na budowę, w innym miejscu 8 marca 2016 dotyczy wentylatorni V18."
+  },
+  {
+    "id": "ulica-biruty",
+    "nazwa": "Ulica Biruty",
+    "name_en": "Biruty Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Biruty (od ul. Świdnickiej do bramy cmentarza żydowskiego)",
+    "adres_historyczny": "ul. Mławska",
+    "lat": 52.26867,
+    "lon": 21.04042,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na przełomie XIX i XX wieku na rozparcelowanych gruntach przedmieścia Targówek należących do spadkobierców Marcelego Zyznowskiego.",
+      "Pierwotnie nosiła nazwę Mławska; obecna nazwa pochodzi z 1921 roku i upamiętnia księżniczkę litewską Birutę, żonę Kiejstuta.",
+      "W czasie walk we wrześniu 1939 roku zniszczeniu uległy domy u zbiegu z ulicą św. Wincentego.",
+      "Podczas powstania warszawskiego w domu Paprockich (nr 18) mieścił się szpital polowy dla rannych.",
+      "1 sierpnia 1944 roku w rejonie ulic Praskiej i Biruty zginęło 17 powstańców.",
+      "W 1987 roku, w ramach porządkowania cmentarza żydowskiego, na końcu ulicy Biruty wzniesiono monumentalną bramę cmentarną."
+    ],
+    "ciekawostki": [
+      "Zgliszcza po wrześniu 1939 roku na tej ulicy sfotografował Julien Bryan."
+    ],
+    "summary_en": "A short street in Targówek leading to the gate of the Jewish cemetery in Bródno. It was named Biruty in 1921 after the Lithuanian princess, and the Paprocki house at no. 18 served as a field hospital during the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Marceli Zyznowski", "rola": "właściciel gruntów na przedmieściu Targówek (spadkobiercy rozparcelowali grunty)", "wiki": null},
+      {"kto": "Julien Bryan", "rola": "amerykański dokumentalista; sfotografował zgliszcza po wrześniu 1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Mławska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Biruty w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Biruty_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka. Okres: od powstania ulicy (przełom XIX i XX w.)."
+  },
+  {
+    "id": "ulica-borzymowska",
+    "nazwa": "Ulica Borzymowska",
+    "name_en": "Borzymowska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Borzymowska (od ul. św. Wincentego do ul. Trockiej)",
+    "adres_historyczny": "ul. Łączna",
+    "lat": 52.276236,
+    "lon": 21.047708,
+    "lokalizacja": "przyblizona",
+    "okres": "XVIII w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVIII wieku, w rejonie dzisiejszej ulicy Borzymowskiej, znajdowała się austeria, widoczna na planie z 1779 roku; obiekt został spalony w czasie Powstania Kościuszkowskiego.",
+      "Ulica została wytyczona na terenie kolonii Adolfówka należącej do Adolfa i Gustawa Dirksów; pierwotnie nosiła nazwę Łączna.",
+      "Na mocy planu regulacyjnego dzielnicy uchwalonego w 1931 r. ulicę przedłużono do Trockiej.",
+      "W 1945 r. pod numerem 34/36 wzniesiono barak, w którym uruchomiono pierwszą nową szkołę w powojennej Warszawie.",
+      "W 2003 r. rozpoczęto budowę wieżowca Targówek Plaza (nr 43)."
+    ],
+    "ciekawostki": [
+      "Przy ulicy powstało pierwsze schronisko dla psów, kotów i chorych koni, ufundowane przez lokalnego ziemianina Adolfa Hipsza, zwanego Hipciem."
+    ],
+    "summary_en": "A street in Targówek Mieszkaniowy, running from St. Vincent Street to Trocka Street. It began as a colony road, was extended in 1931, and was built up largely after the Second World War.",
+    "ludzie": [
+      {"kto": "Adolf Dirks", "rola": "właściciel kolonii Adolfówka, na której wytyczono ulicę", "wiki": null},
+      {"kto": "Gustaw Dirks", "rola": "właściciel kolonii Adolfówka, na której wytyczono ulicę", "wiki": null},
+      {"kto": "Adolf Hipsz", "rola": "lokalny właściciel ziemski, donator pierwszego schroniska dla zwierząt przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Łączna"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Borzymowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Borzymowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje też, że budynek fabryki Polam-MEOS (nr 26) zburzono w 2006 r. pod budowę marketu Lidl; fakt pominięto jako dotyczący innego obiektu."
+  },
+  {
+    "id": "ulica-handlowa",
+    "nazwa": "Ulica Handlowa",
+    "name_en": "Handlowa Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Handlowa (od ul. Myszkowskiej i Gorzykowskiej do ul. Kołowej i Michała Ossowskiego)",
+    "adres_historyczny": null,
+    "lat": 52.2738,
+    "lon": 21.05186,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie była to droga gruntowa prowadząca przez Dobra Ziemskie Targówek od Szosy Radzymińskiej do Drogi Lampego (ul. Pratulińska).",
+      "Obecna nazwa ulicy pojawia się po raz pierwszy na planie Warszawy w 1919 roku.",
+      "Przed 1939 rokiem działały tu prywatne przedsiębiorstwa: fabryka masy smołowcowej „Gudronit” Władysława Ciszewskiego oraz tuczarnia gęsi „Poldrób” należąca do rodziny Gothelfów.",
+      "Arteria została wybrukowana oraz podłączona do sieci gazowej i wodociągowej po 1936 roku, kiedy u zbiegu z ulicą Stojanowską wystawiono gmach szkoły powszechnej.",
+      "W 1977 roku, w związku z budową nowych osiedli mieszkaniowych na Targówku, zmieniły się przebieg i charakter arterii; najstarszy odcinek od Radzymińskiej do Szczepanika od 2016 roku nosi nazwę Fragment."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Targówek that was once a country road leading to Pratulińska Street. It was rebuilt in 1977 as part of the district ring road, and its oldest section has since become a dead-end called Fragment.",
+    "ludzie": [
+      {"kto": "Władysław Ciszewski", "rola": "właściciel fabryki masy smołowcowej „Gudronit” przy ulicy przed 1939 rokiem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Handlowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Handlowa_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Okres „przed 1919” wynika z pierwszej wzmianki o nazwie na planie, nie z daty powstania drogi."
+  },
+  {
+    "id": "ulica-kolowa",
+    "nazwa": "Ulica Kołowa",
+    "name_en": "Kołowa Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Kołowa (od ul. św. Wincentego i Obwodowej do ul. Prałatowskiej)",
+    "adres_historyczny": null,
+    "lat": 52.27267,
+    "lon": 21.04808,
+    "lokalizacja": "przyblizona",
+    "okres": "przed I wojną–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie była to droga gruntowa dawnej kolonii Jasiówka, prowadząca od dzisiejszej ulicy św. Wincentego do Drogi Lampego (ul. Pratulińska).",
+      "Przed I wojną światową kolonista Karol Lampe częściowo zagospodarował obszar w rejonie dzisiejszego parku, urządzając prywatny park z wesołym miasteczkiem i sceną estradową (Ogrody Lampego).",
+      "W 1952 roku założono Dzielnicowy Klub Sportowy „Targówek”.",
+      "W latach 1953−1956 wzniesiono Dom Kultury Targówek.",
+      "W 1975 roku gmach zajął Teatr na Targówku (od 1987 roku Teatr Rampa)."
+    ],
+    "ciekawostki": [
+      "Budowa Domu Kultury Targówek była jednym z tematów filmu dokumentalnego Kazimierza Karabasza „Gdzie diabeł mówi dobranoc”."
+    ],
+    "summary_en": "A street in Targówek Mieszkaniowy running to the Stefan Wiechecki \"Wiech\" park, once the site of a private amusement park of colonist Karol Lampe. It is home to the Targówek Theatre (later Teatr Rampa) and a 1950s cultural centre.",
+    "ludzie": [
+      {"kto": "Karol Lampe", "rola": "kolonista; przed I wojną urządził prywatny park z wesołym miasteczkiem (Ogrody Lampego)", "wiki": null},
+      {"kto": "Kazimierz Karabasz", "rola": "reżyser filmu dokumentalnego, którego tematem była budowa Domu Kultury Targówek", "wiki": null}
+    ],
+    "dawne_nazwy": ["kolonia Jasiówka", "Ogrody Lampego"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kołowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ko%C5%82owa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-oszmianska",
+    "nazwa": "Ulica Oszmiańska",
+    "name_en": "Oszmiańska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Oszmiańska (od ul. Plantowej i II Rejonu AK do ul. św. Wincentego)",
+    "adres_historyczny": "ul. Graniczna",
+    "lat": 52.26857,
+    "lon": 21.04266,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XIX i XX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała na przełomie XIX i XX wieku w związku z parcelacją dóbr ziemskich Przedmieście Targówek i Folwark Targówek; pierwotnie nosiła nazwę Graniczna.",
+      "Obecna nazwa pochodzi od miejscowości Oszmiana na Białorusi i pojawia się po raz pierwszy na planie Warszawy w 1920 roku.",
+      "W 1936 roku przy ulicy, pod nr 23/25, wzniesiono budynek szkół powszechnych.",
+      "1 sierpnia 1944 roku porucznicy Apoloniusz Zbigniew Dobrzyński ps. „Kruk” i Czesław Mażek ps. „Rokita”, ranni podczas osłaniania odwrotu, zostali rozstrzelani przy punkcie opatrunkowym przy ul. św. Wincentego 18.",
+      "W latach 1951–1965 w gmachu szkolnym działało XXIX Liceum Ogólnokształcące im. Henryka Sienkiewicza."
+    ],
+    "ciekawostki": [
+      "Symboliczna mogiła dowódców Dobrzyńskiego i Mażka stoi w miejscu kaźni."
+    ],
+    "summary_en": "A street in Targówek named after the town of Oszmiana in Belarus. In August 1944 two Home Army officers were executed here after being wounded, and a symbolic grave marks the spot.",
+    "ludzie": [
+      {"kto": "Apoloniusz Zbigniew Dobrzyński", "rola": "porucznik AK, dowódca zgrupowania; ranny i rozstrzelany 1 sierpnia 1944 r. (ps. „Kruk”)", "wiki": null},
+      {"kto": "Czesław Mażek", "rola": "porucznik AK, dowódca zgrupowania; ranny i rozstrzelany 1 sierpnia 1944 r. (ps. „Rokita”)", "wiki": null},
+      {"kto": "Piotr Rothein", "rola": "urzędnik Policji Komunalnej, który nadawał nazwy okolicznym ulicom", "wiki": null}
+    ],
+    "dawne_nazwy": ["Graniczna"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Oszmiańska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Oszmia%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-pratulinska",
+    "nazwa": "Ulica Pratulińska",
+    "name_en": "Pratulińska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Pratulińska",
+    "adres_historyczny": "Droga Lampego",
+    "lat": 52.274,
+    "lon": 21.05376,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w miejscu bezimiennej drogi, biegnącej łukiem przez grunta Targówka od Szosy Radzymińskiej do obecnej ulicy św. Wincentego.",
+      "W 1890 roku pojawił się po raz pierwszy projekt jej uregulowania i wybrukowania.",
+      "Obecna nazwa pochodzi od miejscowości Pratulin na Lubelszczyźnie i pojawia się na planie Warszawy dopiero w 1923 roku.",
+      "W 1932 r. na placu u zbiegu ulic Pratulińskiej i Tykocińskiej rozpoczęto budowę kościoła pod wezwaniem Chrystusa Króla.",
+      "W maju 2016 roku pod ulicą Pratulińską ruszyła budowa dwóch stacji II linii metra: Targówek Mieszkaniowy i Trocka; zostały one oddane do użytku 15 września 2019."
+    ],
+    "ciekawostki": [
+      "W pierwszych latach po przyłączeniu Targówka do Warszawy ulica nosiła nazwę Drogi Lampego."
+    ],
+    "summary_en": "A street in Targówek that was named after Pratulin in eastern Poland in 1923. Its pre-war houses were demolished after the war, and metro stations Targówek Mieszkaniowy and Trocka were built under it from 2016.",
+    "ludzie": [
+      {"kto": "Karol Lampe", "rola": "kolonista na przełomie XIX i XX w.; właściciel willi letniskowej „Paulinów”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Lampego"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Pratulińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Pratuli%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord o ulicy; wzmianka o kościele Chrystusa Króla dotyczy placu przy ulicy."
+  },
+  {
+    "id": "ulica-radzyminska",
+    "nazwa": "Ulica Radzymińska",
+    "name_en": "Radzymińska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Radzymińska",
+    "adres_historyczny": "szosa radzymińska",
+    "lat": 52.277444444,
+    "lon": 21.067638888,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1899–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica stanowi fragment dawnej drogi do Wilna i na Litwę; około 1875 została przecięta torami Kolei Nadwiślańskiej.",
+      "Została przekształcona w ulicę w 1899, tj. po włączeniu do Warszawy Szmulowizny.",
+      "W 1941 roku została przemianowana przez Niemców na Wilnaer Strasse.",
+      "W październiku 1944 w domku pod numerem 102 uruchomiono pierwszy w wyzwolonym spod okupacji niemieckiej mieście oddział Poczty Polskiej.",
+      "W latach 1948−1949 w związku z budową trasy W-Z nad ulicą powstał wiadukt linii kolejowej nr 9."
+    ],
+    "ciekawostki": [
+      "Od 1954 do 1991 północny odcinek od ul. Trockiej do granicy miasta nosił nazwę ul. Generalskiej."
+    ],
+    "summary_en": "An arterial road in Targówek and Praga-Północ, part of the old road to Wilno and Lithuania. It was named after the nearby town of Radzymin and was a main exit road from the city centre.",
+    "ludzie": [],
+    "dawne_nazwy": ["szosa radzymińska", "Wilnaer Strasse (1941)", "ul. Generalska (1954–1991, odcinek)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Radzymińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Radzymi%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka."
+  },
+  {
+    "id": "ulica-smolenska",
+    "nazwa": "Ulica Smoleńska",
+    "name_en": "Smoleńska Street",
+    "typ": "ulica",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Smoleńska (od ul. Heleny Junkiewicz do ul. św. Wincentego)",
+    "adres_historyczny": "ul. Piaskowska",
+    "lat": 52.27009,
+    "lon": 21.04291,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1920–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie była to jedna z dróg gruntowych na skraju Folwarku Targówek, prowadząca od Drogi Lampego do obecnej ulicy św. Wincentego.",
+      "Przed przyłączeniem Targówka do Warszawy była nazywana Piaskowską, ponieważ dochodziła do złóż piasku.",
+      "Obecna nazwa pojawiła się na planie Warszawy w 1920 roku i wywodzi się od miejscowości Smoleńsk w Rosji.",
+      "W 1963 roku jako pierwsza arteria w dzielnicy otrzymała nawierzchnię z asfaltu.",
+      "U zbiegu ulic św. Wincentego i Smoleńskiej mieściła się pierwsza powojenna przychodnia zdrowia dla mieszkańców Targówka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Targówek Mieszkaniowy named after the Russian city of Smolensk. It was the first street in the district to get an asphalt surface, in 1963, and once housed the first postwar health clinic in the area.",
+    "ludzie": [],
+    "dawne_nazwy": ["Piaskowska", "Piaszczysta", "Warszawska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Smoleńska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Smole%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

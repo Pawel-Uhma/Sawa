@@ -1,0 +1,324 @@
+[
+  {
+    "id": "ulica-juliana-ochorowicza",
+    "nazwa": "Ulica Juliana Ochorowicza",
+    "name_en": "Julian Ochorowicz street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Juliana Ochorowicza",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2024–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została otwarta 7 lutego 2024 roku.",
+      "Ulica ma około 190 metrów długości i leży na Białołęce, w obszarze MSI Żerań.",
+      "Ulica rozpoczyna się na nieposiadającym nazwy wale spacerowym, a kończy na skrzyżowaniu z ul. Myśliborską.",
+      "Patronem ulicy jest Julian Ochorowicz, polski psycholog, filozof i publicysta."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Julian Ochorowicz Street is a 190 m street in the Żerań area of Białołęka, opened on 7 February 2024. It runs from an unnamed promenade embankment to Myśliborska street and is named after the Polish psychologist, philosopher and journalist Julian Ochorowicz.",
+    "ludzie": [
+      {"kto": "Julian Ochorowicz", "rola": "patron ulicy, polski psycholog, filozof i publicysta", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Ochorowicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Ochorowicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-oczary",
+    "nazwa": "Ulica Oczary",
+    "name_en": "Oczary street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Oczary",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Ulica uzyskała swoją nazwę wraz z pobliską ul. Zagaje 13 maja 2004 roku.",
+      "Nazwa ulicy pochodzi od oczaru, rośliny z rzędu skalnicowych, przedstawiciela rodziny oczarowatych.",
+      "Południowa część ulicy ma nawierzchnię z płyt betonowych, a pozostała część jest gruntowa.",
+      "Ulica po wyjściu z ul. Książkowej krzyżuje z nienazwaną ulicą i kończy się skrzyżowaniem z ul. Ordonówny.",
+      "W planie zagospodarowania przestrzennego Nowodworów Południowych ulica widnieje jako droga publiczna lokalna ze ścieżką rowerową i przystankami autobusowymi."
+    ],
+    "ciekawostki": [
+      "Pod jedynym adresem, Oczary 9, znajduje się pobliski blok przy nienazwanej odnodze ul. Książkowej."
+    ],
+    "summary_en": "Oczary is a 400 m street in the Nowodwory estate of Białołęka, running from Książkowa to Ordonówny street. It received its name on 13 May 2004, together with Zagaje street, after the oczar plant.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Oczary", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Oczary"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Numer z nagłówka: 9; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-olsztynska",
+    "nazwa": "Ulica Olsztyńska",
+    "name_en": "Olsztyńska street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Olsztyńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wybudowana w 2019 roku.",
+      "Początkowo nie posiadała nazwy, która została nadana latem 2020 roku.",
+      "Obecnie do ulicy przypisane są tylko dwa adresy – Olsztyńska 2 i Olsztyńska 5, oba należą do bloków mieszkalnych.",
+      "Ulica łączy ulice Ostródzką i Berensona; na ulicy znajduje się zespół przystankowy Berensona-Kanał, w którym zatrzymują się autobusy linii 152 i 204."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Olsztyńska is a 170 m single-lane street in the Grodzisk area of Białołęka, linking Ostródzka and Berensona streets. Built in 2019, it received its name in summer 2020.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Olsztyńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Olsztyńska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka (2-5) pominięty; w adres_dzis sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-hanki-ordonowny",
+    "nazwa": "Ulica Hanki Ordonówny",
+    "name_en": "Hanka Ordonówna street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Hanki Ordonówny",
+    "adres_historyczny": "Topolowa",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2001/2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa pierwszego odcinka ulicy, od ul. Odkrytej do Strumykowej, wraz z nieistniejącym dziś rondem Ligi Morskiej i Rzecznej została ukończona w 2001 lub 2002 roku.",
+      "3 grudnia 2003 roku otwarto nowy, 800-metrowy odcinek z dwoma rondami, doprowadzający ulicę do ul. Mehoffera.",
+      "Do 8 lipca 2004 roku ulica nosiła nazwę Topolowa, jednak została przemianowana, aby zlikwidować absurd drogowy, jakim było skrzyżowanie Topolowa-Topolowa.",
+      "Pierwszy autobus linii 302 ruszył ulicą 22 listopada 2004 roku.",
+      "Przy ulicy znajduje się Galeria pod Dębami i filia Szkoły Podstawowej nr 342 (pod adresem Topolowa 15)."
+    ],
+    "ciekawostki": [
+      "Ulica krzyżuje się trzykrotnie ze Strumykową, a jedno z tych skrzyżowań to rondo László Osvátha."
+    ],
+    "summary_en": "Hanka Ordonówna Street is a 1,500 m street in the Nowodwory estate, running from Odkryta to Mehoffera. Its first section opened in 2001 or 2002, and until July 2004 it was called Topolowa.",
+    "ludzie": [],
+    "dawne_nazwy": ["Topolowa"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Ordonówny", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Ordonówny"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwa w tekście: Hanki Ordonówny (tytuł: Ulica Ordonówny). Zakres numerów: brak (bd.)."
+  },
+  {
+    "id": "ulica-antoniego-pajdaka",
+    "nazwa": "Ulica Antoniego Pajdaka",
+    "name_en": "Antoni Pajdak street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Antoniego Pajdaka",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom lat 80. i 90. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała wraz z blokami osiedla Pajdaka, jednego z pierwszych osiedli na Nowodworach, powstałego na przełomie lat 80. i 90. XX wieku na miejscu dawnych terenów rolnych.",
+      "Nazwa ulicy została nadana 4 lipca 1991 roku przez Radę Dzielnicy-Gminy Praga Północ.",
+      "Ulica została nazwana po Antonim Pajdaku, pseudonim Traugutt, działaczu socjalistycznym i niepodległościowym.",
+      "Ulica jest 400-metrową jednokierunkową ulicą, która wychodzi z ul. Stefanika i kończy bieg ponownie na ul. Stefanika."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Antoni Pajdak Street is a 400 m one-way loop street in the Nowodwory estate of Białołęka, named on 4 July 1991 after the socialist and independence activist Antoni Pajdak, known as Traugutt.",
+    "ludzie": [
+      {"kto": "Antoni Pajdak (pseud. Traugutt)", "rola": "patron ulicy, działacz socjalistyczny i niepodległościowy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Pajdaka", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Pajdaka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: 5-10; nazwę nadała Rada Dzielnicy-Gminy Praga Północ."
+  },
+  {
+    "id": "ulica-luciana-pavarottiego",
+    "nazwa": "Ulica Luciana Pavarottiego",
+    "name_en": "Luciano Pavarotti street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Luciana Pavarottiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2018–2019",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 2018-2019 w miejscu dawnych pól uprawnych i nieużytków, podczas budowy osiedla budynków wielorodzinnych Miasteczko Greenwood.",
+      "Przy ulicy znajduje się 10 bloków osiedla.",
+      "Patronem ulicy jest Luciano Pavarotti, włoski śpiewak operowy, uważany za jednego z najwybitniejszych śpiewaków XX wieku.",
+      "Nazwa ulicy została nadana 13 grudnia 2018 roku zgodnie z „operowym” kluczem nazewniczym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Luciano Pavarotti Street is a 200 m street on the Augustówek estate in Kobiałka, Białołęka, running from Verdiego street towards the Długa river. It was built in 2018-2019 and named after the tenor Luciano Pavarotti.",
+    "ludzie": [
+      {"kto": "Luciano Pavarotti", "rola": "patron ulicy, włoski śpiewak operowy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Pavarottiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Pavarottiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Nagłówek: „Luciana”, patron w tekście: „Luciano”; zakres numerów 1-10 pominięty."
+  },
+  {
+    "id": "ulica-podroznicza",
+    "nazwa": "Ulica Podróżnicza",
+    "name_en": "Podróżnicza street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Podróżnicza",
+    "adres_historyczny": "Bolesława Chrobrego",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 20. XX wieku wraz z zabudową Wiśniewa i Henrykowa po parcelacji majątków Srebrna Góra i Wiśniewo.",
+      "Ulica została przyłączona do miasta w 1951 roku i nosiła wtedy nazwę „Bolesława Chrobrego”.",
+      "12 kwietnia 1954 roku nadano ulicy dzisiejszą nazwę.",
+      "Bieg ulicy został przerwany w połowie lat 50. XX wieku przez budowę ówczesnej Szkoły Podstawowej nr 113, czyli dzisiejszej Szkoły Podstawowej nr 257.",
+      "Uchwałą nr 95 rady miasta z 12 lutego 2015 roku odcinek od ul. Modlińskiej do ul. Marchołta przemianowano na Braci Zawadzkich."
+    ],
+    "ciekawostki": [
+      "Przy ulicy dominuje zabudowa jednorodzinna, a przy niej znajduje się Szkoła Podstawowa nr 257 im. Mariana Falskiego (ul. Podróżnicza 11)."
+    ],
+    "summary_en": "Podróżnicza is a 740 m street in the Henryków and Wiśniewo area of Białołęka. Built in the 1920s, it was called Bolesława Chrobrego after 1951 and received its present name in 1954. In 2015 its western section was renamed Braci Zawadzkich.",
+    "ludzie": [],
+    "dawne_nazwy": ["Bolesława Chrobrego"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Podróżnicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Podróżnicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: 5-28; długość 740 m (łącznie odcinki)."
+  },
+  {
+    "id": "ulica-przy-kanale",
+    "nazwa": "Ulica Przy Kanale",
+    "name_en": "Przy Kanale street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Przy Kanale",
+    "adres_historyczny": "Zdziarska (zachodni odcinek)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Do 2016 roku ulica stanowiła fragment ul. Zdziarskiej.",
+      "Ten odcinek był częścią drogi co najmniej od XIX wieku, widocznej na mapie z 1891 roku jako część drogi łączącej wsie Szamocin, Mańki, Wojdy i Augustów.",
+      "Przy budowie Kanału Żerańskiego bieg ulicy Zdziarskiej został przerwany i ulica znalazła się po obu stronach kanału.",
+      "20 października 2016 roku rada miasta przemianowała zachodni fragment na Przy Kanale.",
+      "Ulica ma nawierzchnię ziemną; przy niej znajdują się zabudowania mieszkalne jednorodzinne oraz przemysłowe."
+    ],
+    "ciekawostki": [
+      "Przy skrzyżowaniu z ul. Płochocińską znajduje się kapliczka."
+    ],
+    "summary_en": "Przy Kanale is a 250 m unpaved street in the Szamocin area of Białołęka, running from Płochocińska east to the Kanał Żerański. It was part of Zdziarska street until 2016.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zdziarska (zachodni odcinek)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Przy Kanale", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Przy_Kanale"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: 5-8."
+  },
+  {
+    "id": "ulica-przykoszarowa",
+    "nazwa": "Ulica Przykoszarowa",
+    "name_en": "Przykoszarowa street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Przykoszarowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XIX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od koszar wojskowych, które były zlokalizowane w tym rejonie od czasów przedwojennych.",
+      "Ulica otrzymała nazwę 15 grudnia 1997 roku.",
+      "Ulica istniała już na początku XIX wieku, będąc częścią traktu łączącego Tarchomin i Świdry z Białołęką i Brzezinami.",
+      "Ciągłość traktu przerwała budowa linii kolejowej do Gdańska, ukończonej w 1877 roku.",
+      "W maju 2020 roku pod numerem 16 uruchomiono przychodnię zdrowia zbudowaną w miejscu dawnych zrujnowanych zabudowań koszarowych; budowa trwała od maja 2018 roku."
+    ],
+    "ciekawostki": [
+      "Na rogu ulicy z ul. Białołęcką znajduje się krzyż przydrożny."
+    ],
+    "summary_en": "Przykoszarowa is a 500 m street in Brzeziny, Białołęka, running from Białołęcka to Szlachecka street. Its name comes from prewar army barracks, and it was part of an early 19th-century route linking Tarchomin with Białołęka and Brzeziny.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Przykoszarowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Przykoszarowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: 10-29."
+  },
+  {
+    "id": "ulica-przyrzecze",
+    "nazwa": "Ulica Przyrzecze",
+    "name_en": "Przyrzecze street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Przyrzecze",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica pojawia się na mapach w okresie międzywojennym, wraz z wytyczeniem siatki ulic na terenie osady Buków (Kalenica).",
+      "W 1977 roku, tak jak cały Buków, ulica znalazła się w granicach Warszawy.",
+      "Obecną nazwę, nawiązującą do położenia ulicy nad rzekami (Wisła i Skurcza), nadano około 1980 roku.",
+      "Ulica ma 1 100 metrów długości i biegnie od ul. Kępa Tarchomińska do ul. Modlińskiej."
+    ],
+    "ciekawostki": [
+      "Na ul. Przyrzecze znajduje się pętla autobusowa Buków."
+    ],
+    "summary_en": "Przyrzecze is a 1,100 m street crossing the Buchnik, Buków and Kępa Tarchomińska areas of Białołęka, from Kępa Tarchomińska to Modlińska. It was joined into one street in the 1970s and named around 1980, after its position by the Vistula and the Skurcza river.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Przyrzecze", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Przyrzecze"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: 1-18; nagłówek podaje osiedle Nowodwory, tekst: Buchnik, Buków, Kępa Tarchomińska."
+  },
+  {
+    "id": "ulica-giacomo-pucciniego",
+    "nazwa": "Ulica Giacomo Pucciniego",
+    "name_en": "Giacomo Puccini street",
+    "typ": "ulica",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Giacomo Pucciniego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2011–2013",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 2011-2013 w miejscu dawnych pól uprawnych i nieużytków, podczas budowy osiedla budynków wielorodzinnych Zielona Dolina.",
+      "Przy ulicy znajduje się 10 bloków osiedla, które są jednak przypisane adresami do ul. Rossiniego.",
+      "Patronem ulicy jest Giacomo Puccini, włoski kompozytor muzyki operowej, jeden z najwybitniejszych kompozytorów operowych wszech czasów.",
+      "Nazwa ulicy została nadana 14 grudnia 2012 roku zgodnie z „operowym” kluczem nazewniczym."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Giacomo Puccini Street is a 350 m street on the Augustówek estate in Kobiałka, Białołęka, running west from Verdiego street. It was built in 2011-2013 and named after the opera composer Giacomo Puccini.",
+    "ludzie": [
+      {"kto": "Giacomo Puccini", "rola": "patron ulicy, włoski kompozytor muzyki operowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Pucciniego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Pucciniego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Zakres numerów z nagłówka: brak."
+  }
+]

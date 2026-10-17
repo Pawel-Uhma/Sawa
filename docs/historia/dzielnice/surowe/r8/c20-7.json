@@ -1,0 +1,61 @@
+[
+  {
+    "id": "wolka-zerzenska",
+    "nazwa": "Wólka Zerzeńska",
+    "name_en": "Wólka Zerzeńska",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.185,
+    "lon": 21.144444,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś (w Warszawie od 1951)",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1867–1939 Wólka Zerzeńska była wsią w gminie Zagóźdź; w 1921 roku wieś liczyła 126 stałych mieszkańców, a folwark Zerzeńska Wólka – 42.",
+      "20 października 1933 roku utworzono gromadę Błota w granicach gminy Zagóźdź, składającą się ze wsi Wólka Zerzeńska, folwarku Wólka Zerzeńska, kolonii Borków Dworski i wsi Kuligów.",
+      "1 kwietnia 1939 roku gromadę Wólka Zerzeńska włączono do gminy Letnisko Falenica.",
+      "W 1943 roku gromada Wólka Zerzeńska (w gminie Falenica) liczyła 368 mieszkańców.",
+      "15 maja 1951 roku, w związku ze zniesieniem gminy Falenica Letnisko, gromadę włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wólka Zerzeńska was a village in Wawer, now part of the Nadwiśle estate, east of Wał Miedzeszyński. It belonged to the Zagóźdź commune until 1939 and was incorporated into Warsaw in 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zerzeńska Wólka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wólka Zerzeńska", "url": "https://pl.wikipedia.org/wiki/W%C3%B3lka_Zerze%C5%84ska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka dotyczą całej miejscowości; rekord to obszar."
+  },
+  {
+    "id": "zagozdz",
+    "nazwa": "Zagóźdź",
+    "name_en": "Zagóźdź",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.178701,
+    "lon": 21.173096,
+    "lokalizacja": "przyblizona",
+    "okres": "XV wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zagóźdź była dawniej wsią szlachecką, wzmiankowaną w XV wieku.",
+      "W XX wieku istniała gmina Zagóźdź, na której terenie znajdowały się wsie między Saską Kępą a Świdrem.",
+      "Części gminy przyłączano do Warszawy sukcesywnie od lat 20. XX wieku.",
+      "Nazwa osiedla oznacza teren położony za lasem, od staropolskiego wyrazu gozd („młody, gęsty las”)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zagóźdź is a housing estate in Wawer, formerly a noble village mentioned in the 15th century. It takes its name from the Old Polish word for a young dense forest and was part of the Zagóźdź commune in the 20th century.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Zagóźdź (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Zag%C3%B3%C5%BAd%C5%BA_%28Warszawa%29"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł jest krótki; daty ogólne (XV w., lata 20. XX w.)."
+  }
+]

@@ -20,6 +20,10 @@ export const SOURCE_FILES = [
   // Address sentences from Wikipedia biographies ("lived here") and Virtual Shtetl (POLIN) objects.
   new URL("../../docs/historia/dzielnice/wikipedia-adresy-dzielnice.geojson", import.meta.url),
   new URL("../../docs/historia/dzielnice/sztetl-dzielnice.geojson", import.meta.url),
+  // Pozostałe 13 dzielnic: Wikipedia (ZIM + Wikidata), Warszawikia, Wirtualny Sztetl.
+  new URL("../../docs/historia/dzielnice/wikipedia-pozostale-dzielnice.geojson", import.meta.url),
+  new URL("../../docs/historia/dzielnice/warszawikia-pozostale-dzielnice.geojson", import.meta.url),
+  new URL("../../docs/historia/dzielnice/sztetl-pozostale-dzielnice.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {

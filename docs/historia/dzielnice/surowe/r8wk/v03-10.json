@@ -1,0 +1,35 @@
+[
+  {
+    "id": "uniwersus",
+    "nazwa": "Uniwersus",
+    "name_en": "Uniwersus office building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Belwederska 20/22",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wybudowany w latach 1975–1980 według projektu Leszka Sołonowicza, Ryszarda Lisiewicza i Arkadiusza Starskiego.",
+      "Powstał w miejscu zburzonej XIX-wiecznej, neorenesansowej willi, gdzie przez długi czas mieściło się schronisko dla paralityków.",
+      "Uniwersus otwarto w 1980 roku; początkowo miał być pawilonem ekspozycyjnym radzieckiej myśli technicznej, stał się jednak księgarnią Domu Książki, jedną z najlepszych w tym okresie.",
+      "W 2008 roku pojawiły się plany wyburzenia budynku i zastąpienia go biurowcem z 55-metrowym wieżowcem, jednak plan miejscowy oraz SARP przeciwstawiają się takiemu posunięciu.",
+      "Obiekt znalazł się na zatwierdzonej przez Hannę Gronkiewicz-Waltz liście współczesnych obiektów godnych zachowania."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Uniwersus is a three-storey office building at Belwederska 20/22 in Mokotów, at the junction with Gagarina. It was built in 1975–1980 on the site of a 19th-century villa and opened as the Dom Książki bookshop.",
+    "ludzie": [
+      {"kto": "Leszek Sołonowicz", "rola": "architekt, autor projektu budynku (1975–1980)", "wiki": null},
+      {"kto": "Ryszard Lisiewicz", "rola": "architekt, autor projektu budynku (1975–1980)", "wiki": null},
+      {"kto": "Arkadiusz Starski", "rola": "architekt, autor projektu budynku (1975–1980)", "wiki": null},
+      {"kto": "Hanna Gronkiewicz-Waltz", "rola": "zatwierdziła budynek na liście współczesnych obiektów godnych zachowania", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Książki Uniwersus"],
+    "zrodla": [{"tytul": "Warszawikia: Uniwersus", "url": "https://warszawa.fandom.com/pl/wiki/Uniwersus"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

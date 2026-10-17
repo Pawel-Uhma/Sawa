@@ -1,0 +1,286 @@
+[
+  {
+    "id": "ulica-konopacka",
+    "nazwa": "Ulica Konopacka",
+    "name_en": "Konopacka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Konopacka",
+    "adres_historyczny": null,
+    "lat": 52.25851,
+    "lon": 21.0398,
+    "lokalizacja": "przyblizona",
+    "okres": "1863–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Od 1863 nosiła nazwę Graniczna, a od ok. 1875 Praska.",
+      "Trzecia z kolei nazwa, nadana w 1891, upamiętnia założyciela Nowej Pragi.",
+      "W 1908 przez początkowy odcinek Konopackiej pojechały tramwaje elektryczne.",
+      "W latach 1909–1918 pod numerem 19 działała jedna z filii lipskich Zakładów Mechanicznych Budowy Dźwigów „Unruh i Liebig”.",
+      "W 1915 do kamienicy Jana Modzelewskiego (nr 4) przeniosła się żeńska szkoła należąca do Heleny Rzeszotarskiej.",
+      "W 1950, przy przekuwaniu torów z szerokiego na normalny rozstaw, przeniesiono tramwaje z ulic Wileńskiej i Konopackiej na ulice Targową i 11 Listopada.",
+      "W 2018 zlikwidowano pozostałości zabudowy przemysłowej pod numerem 19, a dwa lata później wybudowano na ich miejscu budynek mieszkalny."
+    ],
+    "ciekawostki": [
+      "Ulica „zagrała” ulicę Żelazną w filmie Romana Polańskiego Pianista."
+    ],
+    "summary_en": "Konopacka is a street in the Praga-Północ district of Warsaw, running through the former Nowa Praga. It was known as Graniczna and then Praska before being renamed in 1891 after the founder of Nowa Praga. Trams ran along its initial section from 1908, and the street served as a film location for Polański's The Pianist.",
+    "ludzie": [
+      {"kto": "Helena Rzeszotarska", "rola": "zasłużona dla praskiej oświaty; jej żeńska szkoła działała od 1915 w kamienicy nr 4", "wiki": null}
+    ],
+    "dawne_nazwy": ["Graniczna", "Praska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Konopacka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Konopacka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-kowelska",
+    "nazwa": "Ulica Kowelska",
+    "name_en": "Kowelska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kowelska",
+    "adres_historyczny": null,
+    "lat": 52.26225,
+    "lon": 21.040583333,
+    "lokalizacja": "przyblizona",
+    "okres": "1861–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została przeprowadzona w 1861 jako jedna z ulic Nowej Pragi.",
+      "Pierwotnie nosiła nazwę Wspólna.",
+      "W 1891 ulica wraz z całą Nową Pragą została przyłączona do Warszawy i zmieniono jej nazwę na Kowelska, gdyż w śródmieściu istniała już ulica Wspólna.",
+      "W 1924 większość terenu między ulicami Kowelską i Środkową, na którym wcześniej znajdowały się składy drewna spółki „Endelman i Papierny”, przejął magistrat z przeznaczeniem na budowę szkoły.",
+      "Do wzniesionego w latach 1934−1935 nowoczesnego budynku przeniesiono z czynszowych kamienic szkoły powszechne nr 48, 89 i 136.",
+      "W 1945 roku w kamienicy nr 4 mieściła się pierwsza siedziba Biura Odbudowy Stolicy."
+    ],
+    "ciekawostki": [
+      "Wzniesiona w latach 1911−1912 kamienica Marii Kossakowskiej (nr 6) „zagrała” filmową kamienicę przy ul. Złotej 25 w drugiej części serialu Dom."
+    ],
+    "summary_en": "Kowelska is a street in Praga-Północ, laid out in 1861 as part of Nowa Praga. It was renamed when Nowa Praga joined Warsaw in 1891, and in 1934–1935 a school building was erected on its site.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wspólna"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kowelska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Kowelska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-kepna",
+    "nazwa": "Ulica Kępna",
+    "name_en": "Kępna Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kępna",
+    "adres_historyczny": null,
+    "lat": 52.2498,
+    "lon": 21.0374,
+    "lokalizacja": "przyblizona",
+    "okres": "1765–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plan Macieja Deutscha z roku 1765 ukazuje ją jako ulicę biegnącą od Wisły do ul. Targowej.",
+      "W roku 1796 drewniana zabudowa znajdowała się po obu stronach ulicy i liczyła około 30 domów; wszystkie zostały wyburzone w roku 1807 w związku z budową napoleońskich fortyfikacji Pragi.",
+      "Obecną nazwę – Kępna – przeniesiono w roku 1864 podczas prac regulacyjnych z niewielkiej uliczki.",
+      "W latach 1910–11 ulica Kępna otrzymała bruk z kamieni polnych oraz gazowe latarnie.",
+      "Pod nr. 17A działało od roku 1918 gimnazjum żeńskie Zofii Łabusiewicz, po jej tragicznej śmierci prowadzone przez jej siostry.",
+      "12 listopada 1943 na ul. Kępnej róg Jagiellońskiej Niemcy dokonali ulicznej egzekucji grupy więźniów Pawiaka."
+    ],
+    "ciekawostki": [
+      "W końcu lat sześćdziesiątych XIX wieku na posesji pod nr. 10 zatrzymywali się handlarze bydła z Włodawy i rosyjskich guberni."
+    ],
+    "summary_en": "Kępna is one of the oldest streets in Praga, shown on Maciej Deutscher's 1765 plan. Its name dates from 1864, and during the German occupation a public execution of Pawiak prisoners took place at its junction with Jagiellońska Street.",
+    "ludzie": [
+      {"kto": "Zofia Łabusiewicz", "rola": "założycielka gimnazjum żeńskiego działającego pod nr. 17A od 1918", "wiki": null}
+    ],
+    "dawne_nazwy": ["Słodowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Kępna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_K%C4%99pna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-letnia",
+    "nazwa": "Ulica Letnia",
+    "name_en": "Letnia Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Letnia",
+    "adres_historyczny": null,
+    "lat": 52.26574,
+    "lon": 21.03964,
+    "lokalizacja": "przyblizona",
+    "okres": "1861–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została przeprowadzona w 1861 jako jedna z ulic Nowej Pragi; pierwotnie nosiła nazwę Grodzka.",
+      "W 1891 ulica wraz z Nową Pragą została przyłączona do Warszawy, w związku z czym zmieniono jej nazwę na Letnia, gdyż w śródmieściu istniała już ulica Grodzka.",
+      "Na początku XX wieku na działce między ulicami Stolarską, Letnią i Szwedzką wzniesiono zespół Warszawskiej Piekarni Mechanicznej.",
+      "Przed 1939 przy ulicy działała m.in. niewielka odlewnia metali Maksymiliana Bogusławskiego.",
+      "W czasie remontu ulicy w 2005 na całej jej długości zachowano oryginalny bruk z kamienia polnego.",
+      "W 2017 roku historyczna nawierzchnia ulicy została ujęta w gminnej ewidencji zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Letnia is a street in Praga-Północ laid out in 1861 as part of Nowa Praga. It keeps its original field-stone paving from the turn of the 19th and 20th centuries, and the historic surface was entered into the municipal register of monuments in 2017.",
+    "ludzie": [
+      {"kto": "Maksymilian Bogusławski", "rola": "właściciel niewielkiej odlewni metali przy ulicy przed 1939", "wiki": null}
+    ],
+    "dawne_nazwy": ["Grodzka"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Letnia w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Letnia_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-markowska",
+    "nazwa": "Ulica Markowska",
+    "name_en": "Markowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Markowska",
+    "adres_historyczny": null,
+    "lat": 52.25475,
+    "lon": 21.042638888,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1896–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwszy odcinek ulicy, między ulicami Białostocką i Ząbkowską, wytyczono przed 1896, a do 1900 przedłużono ją na południe do ul. Kijowskiej.",
+      "Nadana nazwa pochodzi od podwarszawskiej miejscowości Marki.",
+      "Największym zakładem produkcyjnym przypisanym do numeracji ulicy była fabryka Waberski i S-ka, wytwarzająca urządzenia wentylacyjne, klimatyzacyjne oraz centralnego ogrzewania.",
+      "W 1924 pod nr 18 uruchomiono nowy zakład produkcyjny Mennicy Państwowej, który wytwarzał m.in. monety wprowadzone w wyniku reformy walutowej Władysława Grabskiego.",
+      "1 sierpnia 1944 przy zbiegu z ul. Ząbkowską doszło do potyczki oddziału powstańców z patrolem Schutzpolizei; zginęło trzech powstańców, a pięciu zostało rannych.",
+      "We wrześniu 1944 Niemcy wysadzili w powietrze budynki Mennicy Państwowej.",
+      "Produkcję wznowiono w czerwcu 1946, a później przeniesiono ją na Wolę, do zbudowanego w latach 1950–1952 budynku na rogu ulic Żelaznej i Prostej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Markowska is a street in Praga-Północ, named after the nearby town of Marki. It was home to the State Mint, which operated at number 18 from 1924 until the German destruction of its buildings in September 1944. The site is now part of Koneser.",
+    "ludzie": [
+      {"kto": "Stefan Dmochowski", "rola": "właściciel wytwórni cukrów i czekolady pod nr 15 w latach 30. XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Markowska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Markowska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-mala",
+    "nazwa": "Ulica Mała",
+    "name_en": "Mała Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Mała",
+    "adres_historyczny": null,
+    "lat": 52.2584,
+    "lon": 21.0376,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wytyczona w roku 1877 na gruntach przejętych od prywatnego właściciela, Ludwika Walusińskiego.",
+      "Kamienica pod nr. 1 z roku 1880 została wybudowana dla Teodora Kozłowskiego.",
+      "Kamienica pod nr. 10 z roku 1896 została wybudowana dla Stanisława Runda.",
+      "Neoklasycystyczna kamienica pod nr. 11 z roku 1901 została wybudowana dla Rosjanina Anisima Puguńca.",
+      "Kamienica pod nr. 13 A z roku 1911 została wybudowana dla Romualda Nazimka, właściciela innej kamienicy przy pobliskiej ul. Inżynierskiej.",
+      "Zabudowa ulicy ocalała w czasie II wojny światowej.",
+      "W 2006 roku układ urbanistyczny oraz zespół budowlany przy ulicy zostały wpisane do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Z powodu zachowania niemal całej dawnej zabudowy ulica wielokrotnie służyła za plan filmowy, udając przedwojenną Warszawę; plenerem były m.in. filmy Pianista Romana Polańskiego, Pokolenie i Korczak Andrzeja Wajdy."
+    ],
+    "summary_en": "Mała is a street in Praga-Północ, laid out in 1877 and built up in four phases between 1880 and 1913. Almost all of its prewar buildings survived the war, and it was entered into the historic monuments register in 2006. It has often served as a film set for prewar Warsaw.",
+    "ludzie": [
+      {"kto": "Teodor Kozłowski", "rola": "inwestor kamienicy pod nr. 1 (1880)", "wiki": null},
+      {"kto": "Stanisław Rund", "rola": "inwestor kamienicy pod nr. 10 (1896)", "wiki": null},
+      {"kto": "Anisim Puguńc", "rola": "rosyjski właściciel kamienicy pod nr. 11 (1901)", "wiki": null},
+      {"kto": "Romuald Nazimek", "rola": "właściciel kamienicy pod nr. 13 A (1911), która dała nazwę Kamienicy Nazimków", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Mała w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ma%C5%82a_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-olszowa",
+    "nazwa": "Ulica Olszowa",
+    "name_en": "Olszowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Olszowa",
+    "adres_historyczny": null,
+    "lat": 52.250472,
+    "lon": 21.025667,
+    "lokalizacja": "przyblizona",
+    "okres": "1792–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa Olszowa została nadana w 1792 roku drodze biegnącej wzdłuż brzegu Wisły; wcześniej występowała także jako Olchowa.",
+      "Według Jarosława Zielińskiego ulica powstała w roku 1775, kiedy zbudowano most Ponińskiego.",
+      "W 1826 roku odnotowano żydowski dom modlitwy, którego utrzymującym i przełożonym był Chaim Hersz Kayler.",
+      "W 1888 roku powstała przy Olszowej 12 wytwórnia mydła i perfum Kwiecińskiego wraz ze sklepem „Flora”.",
+      "W latach 1859–1864 trwała budowa mostu Aleksandrowskiego, potocznie zwanego mostem Kierbedzia.",
+      "W 1900 roku (prace rozpoczęto w 1899) przeprowadzono po nieparzystej stronie ulicy wąskotorową Kolej Jabłonowską.",
+      "W latach 1944–1945 prawie cała zabudowa ulicy uległa zniszczeniu.",
+      "21 lutego 1980 roku w skład ulicy Olszowej włączono ulicę Dębową."
+    ],
+    "ciekawostki": [
+      "Na krótkim odcinku ulicy, przed domem Olszowa 12, zachowała się pierwotna nawierzchnia brukowa z kamienia polnego z drugiej połowy XIX wieku."
+    ],
+    "summary_en": "Olszowa runs along the Vistula in Praga-Północ, once a riverside road that began with the 1775 Poniński bridge. The 1859–1864 Kierbedź bridge works and the Jabłonowska narrow-gauge railway shaped it in the 19th century, and most of its buildings were destroyed in 1944–1945.",
+    "ludzie": [
+      {"kto": "Chaim Hersz Kayler", "rola": "utrzymujący i przełożony żydowskiego domu modlitwy odnotowanego w 1826", "wiki": null},
+      {"kto": "Cezary Skoryna", "rola": "właściciel firmy produkującej kamienie i maszyny młyńskie przy Olszowej 14; zmarł w 1903", "wiki": null}
+    ],
+    "dawne_nazwy": ["Olchowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Olszowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Olszowa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwa Olszowa nadana 1792; w tekście data powstania drogi 1775 podana wg Zielińskiego."
+  },
+  {
+    "id": "ulica-panienska",
+    "nazwa": "Ulica Panieńska",
+    "name_en": "Panieńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Panieńska",
+    "adres_historyczny": null,
+    "lat": 52.25,
+    "lon": 21.028055555,
+    "lokalizacja": "przyblizona",
+    "okres": "1792–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pojawiła się po raz pierwszy w 1792; pochodzi od istniejącego w latach 1666–1808 drewnianego klasztoru sióstr bernardynek.",
+      "W 1868 w piętrowym budynku między ulicami Panieńską i Zygmuntowską utworzono Szpital Najświętszej Marii Panny na Pradze, obecny Szpital Praski.",
+      "W latach 1921–1934 w kamienicy Szeroka 5 miało siedzibę IV Miejskie Gimnazjum Męskie im. gen. Jakuba Jasińskiego.",
+      "Między wrześniem 1944 roku a styczniem 1945 roku zabudowa ulicy została częściowo zniszczona w wyniku niemieckiego ostrzału artyleryjskiego z lewego brzegu Wisły.",
+      "W latach 1964–1969 zbudowano osiedle Panieńska, zaprojektowane przez Teresę Tyszyńską i Gabriela Rekwirowicza.",
+      "W latach 1997–1999 na rogu ulic Okrzei i Panieńskiej wzniesiono neomodernistyczny budynek biurowy Dominanta Praska."
+    ],
+    "ciekawostki": [
+      "Na rogu Panieńskiej i Jasińskiego, przy murze Szpitala Praskiego, znajduje się zachowany niemiecki schron obserwacyjno-wartowniczy z okresu II wojny światowej."
+    ],
+    "summary_en": "Panieńska in Praga-Północ takes its name from a Bernardine convent that stood there in 1666–1808. The Szpital Praski (Prague Hospital) was founded on the street in 1868, and the Panieńska housing estate was built in the 1960s.",
+    "ludzie": [
+      {"kto": "Teresa Tyszyńska", "rola": "współprojektantka osiedla Panieńska (1964–1969)", "wiki": null},
+      {"kto": "Gabriel Rekwirowicz", "rola": "współprojektant osiedla Panieńska (1964–1969)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Panieńska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Panie%C5%84ska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,417 @@
+[
+  {
+    "id": "stacja-warszawa-most",
+    "nazwa": "Stacja Warszawa Most",
+    "name_en": "Warszawa Most railway station",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": "przy moście Kierbedzia, po południowej stronie przyczółka",
+    "lat": 52.25,
+    "lon": 21.025,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–1956 (budynek rozebrany w 1969)",
+    "istnieje": false,
+    "fakty": [
+      "W maju 1899 magistrat wydał koncesję na budowę i eksploatację kolejki wąskotorowej na trasie Jabłonna – Wawer ze stacją początkową Stacja Most przy moście Kierbedzia.",
+      "Komunikacja do Jabłonny została uruchomiona w 1900, a do Wawra w 1901.",
+      "W latach 1905–1906 podwyższono tory o ok. 2 metry, ze względu na wysoki stan wód.",
+      "W 1923 roku Konstanty Jakimowicz zaprojektował docelowy niewielki dworzec, budowany w latach 1923–1925.",
+      "W 1943 nazwę stacji zmieniono na Warschau Weischelbahnhof (pol. Warszawa Wisła).",
+      "Nazwę stacji przywrócono po wyzwoleniu Warszawy w styczniu 1945.",
+      "Likwidacji ostatnich połączeń ze stacji Most do Karczewa dokonano w lipcu 1952, a do Jabłonny w lutym 1956; budynek dworcowy rozebrano w grudniu 1969."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Most was the first station of the narrow-gauge Jabłonna–Wawer line, on the Prague bank by the Kierbedź Bridge. It operated from 1900 until the last connections closed in 1952–1956, and the station building was demolished in 1969.",
+    "ludzie": [
+      {
+        "kto": "Konstanty Jakimowicz",
+        "rola": "projektant docelowego dworca stacji (1923)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Stacja Most",
+      "Warschau Weischelbahnhof (1943–1945)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawa Most",
+        "url": "https://pl.wikipedia.org/wiki/Warszawa_Most"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka WSPÓŁRZĘDNE (przybliżone, przy przyczółku mostu Kierbedzia)."
+  },
+  {
+    "id": "stacja-warszawa-praga",
+    "nazwa": "Stacja Warszawa Praga",
+    "name_en": "Warszawa Praga railway station",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Pożarowa",
+    "adres_historyczny": null,
+    "lat": 52.275833,
+    "lon": 21.023056,
+    "lokalizacja": "przyblizona",
+    "okres": "1877–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stacja powstała w czasie budowy Kolei Nadwiślańskiej.",
+      "W latach 1877–1998 przy stacji znajdowała się lokomotywownia i warsztaty remontowe (do 1974 trakcji parowej, od 1971 trakcji spalinowej i od 1984 elektrycznej).",
+      "Zabytkowa hala wachlarzowa została wyburzona w latach 2006−2007, wraz z likwidacją torów, obrotnic i przesuwnic.",
+      "W 2009 stacja została zmodernizowana, a stary peron przy torach dla linii dalekobieżnych rozebrano."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Praga is a rail hub on the Praga side of the Vistula, built during the construction of the Kolej Nadwiślańska. It was one of Warsaw's three marshalling yards, and its locomotive depot and fan-shaped engine shed were demolished in 2006–2007.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawa Praga (stacja kolejowa)",
+        "url": "https://pl.wikipedia.org/wiki/Warszawa_Praga_%28stacja_kolejowa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje rok powstania jako czas budowy Kolei Nadwiślańskiej bez daty; okres od 1877 wzięty z daty lokomotywowni."
+  },
+  {
+    "id": "stacja-warszawa-targowek",
+    "nazwa": "Przystanek Warszawa Targówek",
+    "name_en": "Warszawa Targówek railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.262797,
+    "lon": 21.048892,
+    "lokalizacja": "przyblizona",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek powstał w ramach modernizacji magistrali kolejowej E20 i linii na wschód od Warszawy, w pobliżu wiaduktu kolejowego nad ulicą Radzymińską.",
+      "PKP PLK ogłosiły przetarg na przebudowę linii wraz z budową przystanku w lutym 2017; prace rozpoczęły się 15 grudnia 2019.",
+      "Przystanek oddano do użytku 12 grudnia 2021."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Targówek is a commuter stop on line 9, opened on 12 December 2021 as part of the modernisation of the Warsaw–Gdańsk main line. Its working name during construction was Warszawa Stalowa.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "Warszawa Stalowa (robocza nazwa)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawa Targówek",
+        "url": "https://pl.wikipedia.org/wiki/Warszawa_Targ%C3%B3wek"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stacja-warszawa-torunska",
+    "nazwa": "Przystanek Warszawa Toruńska",
+    "name_en": "Warszawa Toruńska railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.291667,
+    "lon": 21.013333,
+    "lokalizacja": "przyblizona",
+    "okres": "1989–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek powstał w 1989 roku.",
+      "Przystanek leży pod wiaduktem Trasy Toruńskiej i tworzy tzw. węzeł nadwiślański.",
+      "W 2026 przystanek wyposażono w system informacji pasażerskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Toruńska is a rail stop under the Trasa Toruńska viaduct, on the boundary of Targówek and Białołęka, opened in 1989.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawa Toruńska",
+        "url": "https://pl.wikipedia.org/wiki/Warszawa_Toru%C5%84ska"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że przystanek leży częściowo na Targówku, częściowo na Białołęce; w rekordzie dzielnica wg nagłówka DZIELNICE (Praga-Północ)."
+  },
+  {
+    "id": "stacja-warszawa-wilenska",
+    "nazwa": "Dworzec Warszawa Wileńska",
+    "name_en": "Warszawa Wileńska station",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": "przy ul. Wileńskiej (Dworzec Petersburski)",
+    "lat": 52.2553,
+    "lon": 21.0375,
+    "lokalizacja": "przyblizona",
+    "okres": "1863–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dworzec Wileński, nazywany pierwotnie Petersburskim, powstał w 1863 r. jako czołowa stacja początkowa Kolei Warszawsko-Petersburskiej.",
+      "Projektantem dworca był absolwent cesarskiej Akademii Sztuk Pięknych w Petersburgu, Narcyz Zborzewski.",
+      "W 1915 wycofujący się z Pragi Rosjanie spalili budynek dworca.",
+      "W 1920 w ciągu trzech miesięcy wzniesiono prowizoryczny budynek dworca według projektu Wacława Szuszkiewicza.",
+      "W 1949 przedłużono tu linię kolei wąskotorowej radzymińskiej, której stacja końcowa nosiła nazwę Warszawa Targowa.",
+      "Inwestycja, czyli centrum handlowe z nowym dworcem, została ukończona w kwietniu 2002."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Wileńska began in 1863 as the Petersburg railway's terminus, a station named after the Vilnius route. The original building burned in 1915, a temporary station followed in 1920, and the current hall was completed in 2002 within the Galeria Wileńska mall.",
+    "ludzie": [
+      {
+        "kto": "Narcyz Zborzewski",
+        "rola": "projektant pierwszego dworca Petersburskiego (1863)",
+        "wiki": null
+      },
+      {
+        "kto": "Wacław Szuszkiewicz",
+        "rola": "projektant prowizorycznego budynku dworca z 1920",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Dworzec Petersburski",
+      "Warszawa Targowa (stacja kolejki radzymińskiej, 1949)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawa Wileńska",
+        "url": "https://pl.wikipedia.org/wiki/Warszawa_Wile%C5%84ska"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "stacja-warszawa-zoo",
+    "nazwa": "Przystanek Warszawa Zoo",
+    "name_en": "Warszawa Zoo railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.263611,
+    "lon": 21.017778,
+    "lokalizacja": "przyblizona",
+    "okres": "1989–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek otwarto w 1989 roku.",
+      "Nazwa przystanku pochodzi od pobliskiego Ogrodu Zoologicznego przy ul. Ratuszowej 1/3.",
+      "W październiku 2016 roku, ze względu na zamknięcie jednego toru mostu przy Cytadeli, tor nr 1 obsługiwał pociągi kończące i zaczynające tu bieg.",
+      "23 maja 2012 roku o godzinie 5:45 przy stacji zderzyły się czołowo dwa pociągi osobowe; 2 osoby zostały lekko ranne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Warszawa Zoo is a commuter stop at Rondo Stefana Starzyńskiego, named after the nearby zoo and opened in 1989. A head-on collision of two passenger trains occurred here on 23 May 2012.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawa Zoo",
+        "url": "https://pl.wikipedia.org/wiki/Warszawa_Zoo"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "warszawska-piekarnia-mechaniczna",
+    "nazwa": "Warszawska Piekarnia Mechaniczna",
+    "name_en": "Warsaw Mechanical Bakery",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Stolarska 2/4",
+    "adres_historyczny": null,
+    "lat": 52.266027777,
+    "lon": 21.039958333,
+    "lokalizacja": "dokladna",
+    "okres": "1900/1908–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ceglany budynek piekarni z dwoma kominami oraz dwupiętrowa oficyna mieszkalna powstały w 1900 lub 1908 między ulicami Stolarską, Letnią i Szwedzką.",
+      "W 1925 budynek piekarni i oficyna stały się własnością Marcelego i Marii Wiechowiczów oraz Stanisława i Zofii Morawskich.",
+      "W wyborach w 1930 Marceli Wiechowicz został wybrany do Senatu III kadencji (1930−1935).",
+      "Przedsiębiorstwo prowadziło działalność pod firmą III Warszawska Piekarnia Mechaniczna i zaopatrywało w pieczywo głównie sklepy na Pradze oraz wojsko.",
+      "Zespół przetrwał bez większych zniszczeń II wojnę światową.",
+      "Piekarnia została zamknięta w 2010.",
+      "W 2020 zespół został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warsaw Mechanical Bakery at Stolarska 2/4 in Praga-Północ is a brick bakery with a residential wing, built in 1900 or 1908. It survived the Second World War, closed in 2010, and was entered in the monuments register in 2020.",
+    "ludzie": [
+      {
+        "kto": "Marceli Wiechowicz",
+        "rola": "mistrz piekarski, właściciel w 1925, senator III kadencji (1930−1935)",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Morawski",
+        "rola": "współwłaściciel piekarni i oficyny od 1925",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "III Warszawska Piekarnia Mechaniczna"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawska Piekarnia Mechaniczna",
+        "url": "https://pl.wikipedia.org/wiki/Warszawska_Piekarnia_Mechaniczna"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok budowy 1900 lub 1908 (wg artykułu niepewny)."
+  },
+  {
+    "id": "wytwornia-wodek-koneser",
+    "nazwa": "Warszawska Wytwórnia Wódek „Koneser”",
+    "name_en": "Warsaw Vodka Distillery Koneser",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2544,
+    "lon": 21.0439,
+    "lokalizacja": "przyblizona",
+    "okres": "1895–2007 (od 2006 zagospodarowanie jako Centrum Praskie Koneser)",
+    "istnieje": true,
+    "fakty": [
+      "Najstarsze zabudowania Warszawskiej Wytwórni Wódek „Koneser” powstały w latach 1895–1897.",
+      "W 1919 roku zwierzchnictwo nad całym kompleksem przejął Państwowy Monopol Spirytusowy; formalnie w 1936 roku wykupiono z prywatnych rąk Rektyfikację Warszawską.",
+      "W latach 20. XX wieku zakład wytwarzał marki wódek: Wyborową, Luksusową, Żubrówkę, Żytniówkę, CTAPKA oraz Siwuchę.",
+      "Produkcję wstrzymano w 1944 roku.",
+      "Proces produkcyjny trwał nieprzerwanie od lat 50. aż do likwidacji fabryki w 2007 roku.",
+      "Po przejęciu terenu fabryki przez BBI Development w 2006 roku zmieniono pomysł na zagospodarowanie dawnego zakładu.",
+      "W 2017 placowi w centralnej części kompleksu nadano nazwę plac Konesera; w 2018 w budynku rektyfikacji otwarto Muzeum Polskiej Wódki."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Koneser vodka distillery complex in Praga-Północ, about 50,000 m², was built in 1895–1897 and run by the state monopoly from 1919. It closed in 2007 and was converted into the Centrum Praskie Koneser, which includes the Museum of Polish Vodka.",
+    "ludzie": [
+      {
+        "kto": "Emil Bruhl",
+        "rola": "sprzedał teren pod budowę nowej fabryki; jego rodzina odkupiła ziemię od potomków Szmula Zbytkowera",
+        "wiki": null
+      },
+      {
+        "kto": "L. Iwanowski",
+        "rola": "przypisywany autor projektu architektonicznego zabudowań",
+        "wiki": null
+      },
+      {
+        "kto": "K. Loewe",
+        "rola": "przypisywany autor projektu architektonicznego zabudowań",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Państwowy Monopol Spirytusowy – Rektyfikacja Spirytusu i Wytwórnia Wódek (Monopol)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawska Wytwórnia Wódek „Koneser”",
+        "url": "https://pl.wikipedia.org/wiki/Warszawska_Wytw%C3%B3rnia_W%C3%B3dek_%E2%80%9EKoneser%E2%80%9D"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres: między ulicami Ząbkowską, Nieporęcką, Białostocką i Markowską; w artykule brak jednego adresu."
+  },
+  {
+    "id": "warszawskie-muzeum-chleba",
+    "nazwa": "Warszawskie Muzeum Chleba",
+    "name_en": "Warsaw Bread Museum",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Jadowska 2",
+    "adres_historyczny": null,
+    "lat": 52.2616,
+    "lon": 21.0575,
+    "lokalizacja": "przyblizona",
+    "okres": "2000–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum powstało w 2000 z inicjatywy Mariana Pozorka, piekarza od 1959 i członka stołecznego Cechu Piekarzy.",
+      "Zbiory gromadzone od lat 80. XX wieku prezentowane są w trzech salach w garażu budynku, w którym mieści się piekarnia Mariana Pozorka.",
+      "Najstarszy eksponat to kwit na sól piekarniczą opłacony w talarach z 1867.",
+      "Założyciel muzeum zmarł 7 grudnia 2015."
+    ],
+    "ciekawostki": [
+      "W zbiorach jest maszyna do mielenia ziarna z 1890 roku (Wielka Brytania) oraz rogalikarka z 1916 (Austro-Węgry)."
+    ],
+    "summary_en": "The Warsaw Bread Museum at Jadowska 2 in Praga-Północ is a small private collection of bakery and confectionery equipment, founded in 2000 by baker Marian Pozorek. Its exhibits are shown in three rooms in the garage of his bakery.",
+    "ludzie": [
+      {
+        "kto": "Marian Pozorek",
+        "rola": "piekarz od 1959, założyciel muzeum (2000), zmarł 7 grudnia 2015",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Warszawskie Muzeum Chleba",
+        "url": "https://pl.wikipedia.org/wiki/Warszawskie_Muzeum_Chleba"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwisko w tekście: Mariana Pozorka (dopełniacz); tu mianownik Pozorek. Artykuł głównie o muzeum, nie o budynku."
+  },
+  {
+    "id": "wiezienie-toledo-nr-iii",
+    "nazwa": "Więzienie karno-śledcze nr III (Toledo)",
+    "name_en": "Penitentiary No. III (Toledo), Warsaw",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Namysłowska 6",
+    "adres_historyczny": "ul. Ratuszowa 11",
+    "lat": 52.263611,
+    "lon": 21.035278,
+    "lokalizacja": "przyblizona",
+    "okres": "1944–1956",
+    "istnieje": false,
+    "fakty": [
+      "Więzienie powstało w 1944 roku na terenach koszar 36. Pułku Piechoty Legii Akademickiej, wybudowanych za czasów carskiej Rosji.",
+      "Więzienie działało w latach 1944–1956; początkowo było więzieniem NKWD, a później UB.",
+      "Od 1951 roku cele śmierci mieściły się na pierwszym piętrze.",
+      "Naczelnikiem więzienia był Kazimierz Szymonowicz (właśc. Kopel Klejman), nazywany przez więźniów „Krwawym Kaziem”.",
+      "Po 1956 roku „Toledo” zamieniono na zakład karny dla kobiet; w 1975 roku zostało przeniesione na Grochów.",
+      "W 2001 roku w miejscu więzienia stanął pomnik „Ku Czci Pomordowanych w Praskich Więzieniach 1944–1956”."
+    ],
+    "ciekawostki": [
+      "Zwłoki pomordowanych grzebano w rowie na terenie więzienia; część więźniów pochowano na Powązkach w kwaterze na Łączce oraz na cmentarzu Bródnowskim."
+    ],
+    "summary_en": "Toledo was the Warsaw Security Office and NKVD prison for members of the Home Army and other underground groups, operating in 1944–1956 at Ratuszowa 11 in Praga-Północ. Its interrogators were notorious, and a memorial to the murdered prisoners stands on the site since 2001.",
+    "ludzie": [
+      {
+        "kto": "Kazimierz Szymonowicz",
+        "rola": "naczelnik więzienia; właśc. Kopel Klejman, zwany „Krwawym Kaziem”",
+        "wiki": null
+      },
+      {
+        "kto": "Julia Brystygier",
+        "rola": "śledcza, uczestniczyła w przesłuchaniach i znęcaniu się nad więźniami",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Gózik",
+        "rola": "jeden z najbardziej brutalnych śledczych",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Toledo"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Więzienie karno-śledcze nr III w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Wi%C4%99zienie_karno-%C5%9Bledcze_nr_III_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł opisuje represje wobec żołnierzy podziemia; treść przepisana wprost z artykułu. Zdanie o numerze 1975 podaje przeniesienie na Grochów."
+  }
+]

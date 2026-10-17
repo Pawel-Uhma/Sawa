@@ -1,0 +1,88 @@
+[
+  {
+    "id": "ulica-dzieci-warszawy",
+    "nazwa": "Ulica Dzieci Warszawy",
+    "name_en": "Dzieci Warszawy Street",
+    "typ": "ulica",
+    "dzielnica": "Ursus",
+    "adres_dzis": "Dzieci Warszawy",
+    "adres_historyczny": "Jana III Sobieskiego",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica istniała jako główna droga wsi Skorosze, łącząc ją z Czechowicami i Salomeą.",
+      "Ulica została przyłączona do Warszawy wraz z Ursusem w 1977 roku; 4 września 1978 roku uzyskała dzisiejszą nazwę, wcześniej nazywała się Jana III Sobieskiego.",
+      "Połączenie z Alejami Jerozolimskimi i ul. Badylarską ulica utraciła w 2012 roku podczas budowy Al. 4 Czerwca 1989 roku; zlikwidowano wówczas ok. 200-metrowy odcinek ulicy z zabudową.",
+      "Ulica poświęcona jest Dzieciom Warszawy, przedstawicielom młodocianego oddziału partyzanckiego mającego na celu odbicie więźniów z Cytadeli."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A long street in Skorosze, Ursus, once the main road of the village of Skorosze. Renamed in 1978 after the Children of Warsaw, a youth partisan unit that tried to free prisoners from the Citadel.",
+    "ludzie": [],
+    "dawne_nazwy": ["Jana III Sobieskiego"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Dzieci Warszawy", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Dzieci_Warszawy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru w tekście historycznym; adres to sama nazwa ulicy. Brak współrzędnych."
+  },
+  {
+    "id": "ulica-jacka-i-agatki",
+    "nazwa": "Ulica Jacka i Agatki",
+    "name_en": "Jacek i Agatka Street",
+    "typ": "ulica",
+    "dzielnica": "Ursus",
+    "adres_dzis": "Jacka i Agatki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 70. XX wieku w obszarze MSI Skorosze.",
+      "Nazwa ulicy, nadana w 1977 roku, nawiązuje do dobranocki „Jacek i Agatka”.",
+      "„Jacek i Agatka” był jednym z pierwszych polskich seriali telewizyjnych dla dzieci, produkowanym i emitowanym przez TVP w latach 1962–1972."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in Skorosze, Ursus, built in the 1970s. Its 1977 name refers to Jacek i Agatka, one of the first Polish children's TV series, broadcast by TVP from 1962 to 1972.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Jacka i Agatki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Jacka_i_Agatki"}
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Artykuł krótki: data powstania, nazwa i opis serialu. Adres to sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-prawnicza",
+    "nazwa": "Ulica Prawnicza",
+    "name_en": "Prawnicza Street",
+    "typ": "ulica",
+    "dzielnica": "Ursus",
+    "adres_dzis": "Prawnicza",
+    "adres_historyczny": "Bracka",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica dawniej, przed włączeniem do granic Warszawy, nosiła nazwę Bracka.",
+      "1 czerwca 1977 roku Ursus przyłączono do Warszawy (jako składnik dzielnicy Ochota) „za karę” po strajkach robotniczych.",
+      "Dokument o nadaniu ulicom w Ursusie nowych nazw został opublikowany w Dzienniku Urzędowym Rady Narodowej m.st. Warszawy z 28 października 1978 roku.",
+      "Nazwę Prawnicza nadano, aby nie myliła się z ulicą Bracką na Ochocie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1.2 km street in Czechowice, Ursus, that was called Bracka before Ursus joined Warsaw in 1977. It was renamed in 1978 so it would not be confused with Bracka street in Ochota.",
+    "ludzie": [],
+    "dawne_nazwy": ["Bracka"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Prawnicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Prawnicza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru; adres to sama nazwa ulicy. Okres powstania w infoboksie: lata 60. XX wieku."
+  }
+]

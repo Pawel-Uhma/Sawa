@@ -1,0 +1,39 @@
+[
+  {
+    "id": "central-tower",
+    "nazwa": "Central Tower",
+    "name_en": "Central Tower",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "Aleje Jerozolimskie 81",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1992–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieżowiec FIM Tower powstał w miejscu, gdzie w latach 1911-1973 znajdowała się kamienica Burcharda, rozebrana pod pretekstem ułożenia tymczasowego torowiska na czas budowy Dworca Centralnego i estakad w ciągu ul. Marchlewskiego.",
+      "W latach 1992-1996 na pustym placu wzniesiono wieżowiec FIM Tower.",
+      "Nowy budynek w całości został przeznaczony na pomieszczenia biurowe, a jednym z jego głównych najemców została firma Polkomtel.",
+      "Budynek wzorowany na późnomodernistycznych amerykańskich wieżowcach z lat 80. XX wieku uznano wówczas za jeden z najbrzydszych wieżowców Warszawy.",
+      "14 lipca 2006 roku nowym właścicielem budynku został fundusz inwestycyjny przynależący do luksemburskiej firmy deweloperskiej ORCO Property Group, wobec czego biurowiec przemianowano na ORCO Tower.",
+      "Modernizacja rozpoczęła się w 2006 roku, a zakończyła w lipcu 2008 roku.",
+      "W grudniu 2014 roku nowym właścicielem wieżowca został czeski fundusz inwestycyjny CPI, a w styczniu 2015 roku zmieniono nazwę budynku na Central Tower.",
+      "Wieżowiec ma 115 metrów wysokości i 26 kondygnacji."
+    ],
+    "ciekawostki": [
+      "Początkowo wieżowiec miał mieć 20 kondygnacji, bo na tyle pozwalały ustalenia z ówczesnymi władzami Warszawy; podczas projektowania limit został zniesiony, a do projektu dodano kilka pięter."
+    ],
+    "summary_en": "Central Tower at Aleje Jerozolimskie 81, on the corner of Chałubińskiego in Ochota, was built in 1992–1996 as the FIM Tower on the site of the Burchard tenement. It is 115 m tall with 26 storeys, and was renamed ORCO Tower in 2006 and Central Tower in 2015.",
+    "ludzie": [
+      {"kto": "Lorenzo Martinoia", "rola": "projektant wieżowca", "wiki": null},
+      {"kto": "Jacek Sokalski", "rola": "projektant wieżowca", "wiki": null},
+      {"kto": "Amadeo Strada", "rola": "projektant wieżowca", "wiki": null}
+    ],
+    "dawne_nazwy": ["FIM Tower", "ORCO Tower"],
+    "zrodla": [{"tytul": "Warszawikia: Central Tower", "url": "https://warszawa.fandom.com/pl/wiki/Central_Tower"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord w dzielnicy Ochota (nagłówek DZIELNICE), poza zakresem Mokotów; zapisany, bo należy do paczki."
+  }
+]

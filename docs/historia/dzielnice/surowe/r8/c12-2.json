@@ -1,0 +1,698 @@
+[
+  {
+    "id": "ulica-obroncow",
+    "nazwa": "ulica Obrońców",
+    "name_en": "Obrońców Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926 r.",
+      "W latach 1934–1938 pod ulicą Spółka Wodna Obwodu Wawerskiego przeprowadziła kryty kanał.",
+      "We wrześniu 1939 roku ulica stała się areną walk.",
+      "W sierpniu 1948 roku w siedzibie Biura Zarządu Głównego ZPAP (nr 28/30) złożył wizytę Pablo Picasso.",
+      "Konstanty Ildefons Gałczyński dedykował swój wiersz „Toast na Saskiej Kępie” w mieszkaniu Henryka Ładosza, który mieszkał przy ulicy."
+    ],
+    "ciekawostki": [
+      "Kawiarenka Sułtan, o której śpiewała Kalina Jędrusik w piosence Kabaretu Starszych Panów, była związana z ulicą."
+    ],
+    "summary_en": "Obrońców Street on Saska Kępa was named in 1926. Pablo Picasso visited the Polish Artists' Association building at No. 28/30 in 1948, and the street was a battleground in September 1939.",
+    "ludzie": [
+      {"kto": "Pablo Picasso", "rola": "odwiedził siedzibę ZPAP przy nr 28/30 w sierpniu 1948", "wiki": null},
+      {"kto": "Konstanty Ildefons Gałczyński", "rola": "poeta, dedykował wiersz „Toast na Saskiej Kępie”", "wiki": null},
+      {"kto": "Henryk Ładosz", "rola": "mieszkaniec, u którego Gałczyński pisał wiersz", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka). Ciekawostka o kawiarence Sułtan wzięta z tekstu, ale brak wskazania numeru."
+  },
+  {
+    "id": "dom-obroncow-28-30-zpap",
+    "nazwa": "Dom przy ul. Obrońców 28/30 (siedziba ZPAP)",
+    "name_en": "House at 28/30 Obrońców Street (ZPAP headquarters)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców 28/30",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "1948–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W sierpniu 1948 roku w siedzibie Biura Zarządu Głównego ZPAP złożył wizytę Pablo Picasso.",
+      "W latach 1946–2000 mieściła się tu pracownia rzeźbiarska Stanisława Sikory.",
+      "Obecnie w gmachu mieści się Doświadczalna Pracownia Litografii (filia Centrum Promocji Kultury)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The building at 28/30 Obrońców Street housed the Polish Artists' Association (ZPAP) headquarters in 1948, when Pablo Picasso visited it. Sculptor Stanisław Sikora worked here from 1946 to 2000.",
+    "ludzie": [
+      {"kto": "Pablo Picasso", "rola": "odwiedził siedzibę ZPAP w sierpniu 1948", "wiki": null},
+      {"kto": "Stanisław Sikora", "rola": "rzeźbiarz i medalier, pracownia w budynku 1946–2000", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "willa-trebickiej-obroncow-25",
+    "nazwa": "Willa Felicji Trębickiej (ul. Obrońców 25)",
+    "name_en": "Felicja Trębicka Villa (25 Obrońców Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców 25",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa Felicji Trębickiej, projektu Stanisława Nowickiego, została ukończona w 1934 roku.",
+      "Jest przykładem stylu Art déco z elementami, np. baszty, nawiązującymi do architektury obronnej.",
+      "Od września do końca listopada 1939 roku w środku działał punkt sanitarny PCK nr 307.",
+      "W czasie powstania warszawskiego przez pięć dni mieścił się tu szpital wojenny."
+    ],
+    "ciekawostki": [
+      "Obecnie budynek pełni funkcje biurowe."
+    ],
+    "summary_en": "A 1934 Art Deco villa at 25 Obrońców Street, designed by Stanisław Nowicki. During the 1939 siege it housed a Red Cross first-aid post, and during the Warsaw Uprising a field hospital for five days.",
+    "ludzie": [
+      {"kto": "Stanisław Nowicki", "rola": "projektant willi", "wiki": null},
+      {"kto": "Felicja Trębicka", "rola": "właścicielka willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "dom-z-termometrem-obroncow-26",
+    "nazwa": "Dom Juliana Ambroziewicza „z termometrem” (ul. Obrońców 26)",
+    "name_en": "Juliusz Ambroziewicz House 'with the thermometer' (26 Obrońców Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców 26",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom własny Juliana Ambroziewicza, zbudowany w 1938 roku.",
+      "Przezroczysta pionowa szczelina z luksferami daje mu nazwę „domu z termometrem”.",
+      "W lipcu 1949 roku, po aresztowaniu właściciela, mieszkanie czasowo przekształcono w tzw. kocioł, gdzie przez kilka dni funkcjonariusze UB przetrzymywali osoby uznane za podejrzane.",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Wyróżnia go też wysoka żelbetowa pergola."
+    ],
+    "summary_en": "A 1938 house at 26 Obrońców Street built by architect Julian Ambroziewicz for himself, known as the 'house with the thermometer' because of its glass-block slit. In July 1949 it was used by the security service as a holding cell after the owner's arrest. It is a listed monument.",
+    "ludzie": [
+      {"kto": "Julian Ambroziewicz", "rola": "architekt, właściciel domu; aresztowany w 1949", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "willa-brzezinskich-obroncow-10",
+    "nazwa": "Willa Brzezińskich (ul. Obrońców 10, róg Katowickiej)",
+    "name_en": "Brzeziński Villa (10 Obrońców Street, corner of Katowicka)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców 10 (róg ul. Katowickiej)",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa Brzezińskich, projektu Piotra Kwieka, powstała po 1935 roku.",
+      "Określana jest mianem jednej z najbardziej ekstrawaganckich willi na Saskiej Kępie.",
+      "Charakterystyczne są położony na dachu taras z daszkiem z okrągłym otworem, bulaje, cienkie słupy i falująca linia elewacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Brzeziński villa at the corner of Obrońców and Katowicka streets, designed by Piotr Kwiek after 1935 and described as one of the most extravagant villas on Saska Kępa.",
+    "ludzie": [
+      {"kto": "Piotr Kwiek", "rola": "projektant willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam obiekt opisany w artykule o ul. Katowickiej. Współrzędne ulicy Obrońców."
+  },
+  {
+    "id": "willa-wolskich-obroncow-14",
+    "nazwa": "Willa rodziny Wolskich (ul. Obrońców 14)",
+    "name_en": "Wolski family villa (14 Obrońców Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców 14",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa rodziny Wolskich z 1927 roku, zaprojektowana przez Aleksandra Więckowskiego.",
+      "Główne wejście ocienia arkadowy krużganek.",
+      "Od strony ogrodu znajduje się oranżeria.",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1927 villa at 14 Obrońców Street for the Wolski family, designed by Aleksander Więckowski, with an arcaded entrance and a conservatory on the garden side. It is a listed monument.",
+    "ludzie": [
+      {"kto": "Aleksander Więckowski", "rola": "projektant willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "dom-obroncow-31-dawne-liceum",
+    "nazwa": "Dom przy ul. Obrońców 31",
+    "name_en": "House at 31 Obrońców Street",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców 31",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dawniej była tu siedziba żeńskiego liceum im. Marii Skłodowskiej-Curie.",
+      "Obecnie mieści się tu gmach Kolegium Pracowników Służb Społecznych.",
+      "W domu mieszkali m.in. hrabia Ludgard Grocholski, przemysłowiec Karol Meyerhoff oraz inżynier Anatol Minkowski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "At 31 Obrońców Street a former girls' high school named after Maria Skłodowska-Curie, now a college of social service workers. Count Ludgard Grocholski, industrialist Karol Meyerhoff and engineer Anatol Minkowski lived here.",
+    "ludzie": [
+      {"kto": "Ludgard Grocholski", "rola": "hrabia, mieszkaniec domu", "wiki": null},
+      {"kto": "Karol Meyerhoff", "rola": "przemysłowiec, mieszkaniec domu", "wiki": null},
+      {"kto": "Anatol Minkowski", "rola": "inżynier, mieszkaniec domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka. Tekst nie podaje dat dla tych mieszkańców."
+  },
+  {
+    "id": "kolonia-laskiego-obroncow-5-23",
+    "nazwa": "Kolonia Łaskiego (ul. Obrońców 5–23)",
+    "name_en": "Łaski Colony (Obrońców Street 5–23)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Obrońców 5–23",
+    "adres_historyczny": null,
+    "lat": 52.233, "lon": 21.0533,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Domy jednorodzinne od ul. Obrońców 5 do 23 są częścią kolonii Łaskiego z 1926 roku, powstałej według projektu Włodzimierza Galla.",
+      "Według jednej z wersji do budowy domów wykorzystano materiały z rozebranego w latach 20. soboru Św. Aleksandra Newskiego.",
+      "W 1930 roku „Kurier Warszawski” pisał, że ulica Obrońców „otwiera prostą perspektywę w stronę Wawra”, a całość kolonii daje przedsmak przyszłej dzielnicy willowej."
+    ],
+    "ciekawostki": [
+      "Nazwa kolonii pochodzi od nazwiska Jana Łaskiego, właściciela terenu.",
+      "Pozostała część kolonii to domy przy ul. Katowickiej (17–23) i ul. Dąbrowieckiej (18–28)."
+    ],
+    "summary_en": "The Łaski Colony is a row of terraced houses built in 1926 to a design by Włodzimierz Gall, with pediments and balconies. One version holds that materials came from the demolished St Alexander Nevsky Cathedral.",
+    "ludzie": [
+      {"kto": "Włodzimierz Gall", "rola": "projektant kolonii Łaskiego (1926)", "wiki": null},
+      {"kto": "Jan Łaski", "rola": "właściciel terenu, patron nazwy kolonii", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Obrońców w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Obro%C5%84c%C3%B3w_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Tekst podaje różne domy kolonii pod różnymi numerami; rekord obejmuje odcinek 5–23 z artykułu o Obrońców."
+  },
+  {
+    "id": "ulica-ostrobramska",
+    "nazwa": "ulica Ostrobramska",
+    "name_en": "Ostrobramska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Ostrobramska",
+    "adres_historyczny": null,
+    "lat": 52.234333333, "lon": 21.102472222,
+    "lokalizacja": "przyblizona",
+    "okres": "międzywojnie–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa została nadana w okresie międzywojennym, kiedy na splantowanym terenie byłego fortu XI carskiej twierdzy Warszawa powstawało osiedle willowe.",
+      "W latach 1971–1974 ulicę przedłużono na zachodzie i połączono z Trasą Łazienkowską podczas jej budowy.",
+      "Od lat 70. do reformy sieci drogowej w 1985 roku ulica była częścią drogi międzynarodowej E8.",
+      "Do końca 2013 roku była fragmentem miejskiego odcinka drogi krajowej nr 2 i trasy europejskiej E30."
+    ],
+    "ciekawostki": [
+      "Osiedlający się na terenie członkowie oficerskiej spółdzielni mieszkaniowej, wielu z Wileńszczyzny, dostali zgodę na wileńskie nazwy ulic."
+    ],
+    "summary_en": "Ostrobramska Street in Praga-Południe was named in the interwar period after the Ostra Brama gate in Vilnius, in the officers' villa district built on the levelled former fort XI. It was extended and linked to the Łazienkowska Route in 1971–1974.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Ostrobramska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Ostrobramska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-paryska",
+    "nazwa": "ulica Paryska",
+    "name_en": "Paryska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Paryska",
+    "adres_historyczny": null,
+    "lat": 52.2276, "lon": 21.0587,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę ulicy nadano uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926 r.",
+      "Do roku 1973 na początku ulicy znajdowała się pętla autobusowa; obecnie jest tam rondo.",
+      "W PRL-u na początku ulicy działała jedna z nielicznych automatycznych myjni samochodowych.",
+      "Na tym terenie obecnie stoi budynek Centrum Promocji Kultury – Klub Kultury „Saska Kępa”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Paryska Street on Saska Kępa was named in 1926. Until 1973 a bus loop stood at its start, where a rare automatic car wash operated in the PRL era; the site now holds the Saska Kępa Culture Club.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Paryska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Paryska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-podskarbinska",
+    "nazwa": "ulica Podskarbińska",
+    "name_en": "Podskarbińska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Podskarbińska",
+    "adres_historyczny": null,
+    "lat": 52.252083333, "lon": 21.07425,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest odcinkiem dawnej linii granicznej dóbr Grochowa i Kamionka; pierwotnie nazywana drogą forteczną, szosą wojskową, szosą wojenną lub ulicą Fortową.",
+      "Obecną nazwę nadano ok. 1919 roku.",
+      "W 1927 roku przy ulicy oddano do użytku pierwszy z sześciu domów przeznaczonych dla bezdomnych, wzniesionych ze środków miasta; zachował się jeden dom (ul. Kobielska 91).",
+      "W 1928 roku oddano do użytku stadion Robotniczego Klubu Sportowego „Orzeł”.",
+      "Ok. 1933 roku przy ulicy powstało targowisko miejskie, w miejscu którego w 1953 roku urządzono Park Hanki Sawickiej.",
+      "W latach 1935–1938 przy ulicy powstało Osiedle Towarzystwa Osiedli Robotniczych.",
+      "W 1972 roku przy ulicy otwarto tor kolarski Nowe Dynasy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Podskarbińska Street was the old boundary between the Grochów and Kamionek estates and was named around 1919. In the late 1920s the city built homeless shelters here, a sports stadium opened in 1928, and in 1935–1938 a workers' housing estate was built.",
+    "ludzie": [],
+    "dawne_nazwy": ["droga forteczna", "szosa wojskowa", "szosa wojenna", "ulica Fortowa"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Podskarbińska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Podskarbi%C5%84ska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "ulica-saska",
+    "nazwa": "ulica Saska",
+    "name_en": "Saska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Saska",
+    "adres_historyczny": null,
+    "lat": 52.232, "lon": 21.061,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy nawiązuje do dynastii Sasów, którzy dzierżawili tereny Saskiej Kępy; do 1847 roku tę samą nazwę nosiła ulica sąsiadująca z Ogrodem Saskim.",
+      "W projekcie Wydziału Technicznego magistratu z 1925 roku planowano u zbiegu ulic Zwycięzców i Saskiej teren handlowy.",
+      "Podwójne szpalery drzew i szerokie chodniki ułożono w roku 1938.",
+      "W latach 30. XX wieku powstało kilka domów, w tym dom przy ul. Saskiej 101, wskazywany jako prawdopodobna lokalizacja powstańczego szpitala polowego na Saskiej Kępie (sierpień–październik 1944).",
+      "Budynek przy ul. Saskiej 105 powstał w latach 1995–1998."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Saska Street on Saska Kępa takes its name from the Sas dynasty that leased the area. Tree-lined avenues were laid out in 1938, and a field hospital of the 1944 uprising may have operated at No. 101.",
+    "ludzie": [],
+    "dawne_nazwy": ["ulica przy Ogrodzie Saskim (do 1847)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Saska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Saska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "budynek-saska-101",
+    "nazwa": "Dom przy ul. Saskiej 101",
+    "name_en": "House at 101 Saska Street",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Saska 101",
+    "adres_historyczny": null,
+    "lat": 52.232, "lon": 21.061,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom z 1935 roku, wpisany do rejestru zabytków pod numerem 1282-A.",
+      "Widoczne są elementy stylu dworkowego, jak białe balustrady, wsparte na kolumnach balkony i trójkątne zwieńczenia.",
+      "Jest prawdopodobną lokalizacją powstańczego szpitala polowego, funkcjonującego na Saskiej Kępie między sierpniem a październikiem 1944 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1935 house at 101 Saska Street with manor-house style details. It is a listed monument and probably the site of a field hospital during the 1944 Warsaw Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Saska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Saska_w_Warszawie"}],
+    "pewnosc": "srednia",
+    "uwagi": "Lokalizacja szpitala jest „prawdopodobna” wg tekstu. Współrzędne ulicy Saskiej."
+  },
+  {
+    "id": "budynek-saska-109-gomulka",
+    "nazwa": "Dom przy ul. Saskiej 109",
+    "name_en": "House at 109 Saska Street",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Saska 109",
+    "adres_historyczny": null,
+    "lat": 52.232, "lon": 21.061,
+    "lokalizacja": "przyblizona",
+    "okres": "1955–1965",
+    "istnieje": null,
+    "fakty": [
+      "W latach 1955–1965 mieszkał tu Władysław Gomułka.",
+      "Od 30 kwietnia 1985 roku fakt ten upamiętniała tablica.",
+      "Tablica została z czasem usunięta."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Władysław Gomułka lived at 109 Saska Street from 1955 to 1965. A commemorative plaque unveiled in 1985 was later removed.",
+    "ludzie": [
+      {"kto": "Władysław Gomułka", "rola": "mieszkaniec domu w latach 1955–1965", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Saska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Saska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst nie mówi, czy budynek stoi dziś. Współrzędne ulicy."
+  },
+  {
+    "id": "kosciol-sw-andrzeja-boboli-nobla-16",
+    "nazwa": "Kościół św. Andrzeja Boboli (ul. Nobla 16)",
+    "name_en": "St Andrew Bobola Church (16 Nobla Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Nobla 16 (wejście także od ul. Saskiej)",
+    "adres_historyczny": null,
+    "lat": 52.232, "lon": 21.061,
+    "lokalizacja": "przyblizona",
+    "okres": "1938–1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie w latach 1938–1939 wznoszono go według projektu Piotra Marii Lubińskiego i Henryka Wąsowicza.",
+      "Ostatecznie powstał według projektu Józefa Łowińskiego i Jana Bogusławskiego z 1948–1949.",
+      "Fasada i wnętrze nawiązują do architektury gotyckiej.",
+      "Wnętrze zdobią malowidła ścienne Marii i Jerzego Ostrowskich oraz rzeźby Tadeusza Świerczka.",
+      "Obiekt jest wpisany do rejestru zabytków pod numerem 956 A."
+    ],
+    "ciekawostki": [
+      "Pod tym samym adresem działa także przedszkole Ecole Française privée Antoine de Saint-Exupéry."
+    ],
+    "summary_en": "The Catholic church of St Andrew Bobola on Nobla Street was started in 1938 to a design by Piotr Lubiński and Henryk Wąsowicz, but completed in 1948–1949 to a design by Józef Łowiński and Jan Bogusławski. Its façade and interior show Gothic references, and it is a listed monument.",
+    "ludzie": [
+      {"kto": "Piotr Maria Lubiński", "rola": "projektant pierwotnej wersji kościoła (1938–1939)", "wiki": null},
+      {"kto": "Henryk Wąsowicz", "rola": "projektant pierwotnej wersji kościoła (1938–1939)", "wiki": null},
+      {"kto": "Józef Łowiński", "rola": "projektant kościoła (1948–1949)", "wiki": null},
+      {"kto": "Jan Bogusławski", "rola": "projektant kościoła (1948–1949)", "wiki": null},
+      {"kto": "Maria Ostrowska", "rola": "autorka malowideł ściennych, wspólnie z Jerzym Ostrowskim", "wiki": null},
+      {"kto": "Jerzy Ostrowski", "rola": "autor malowideł ściennych, wspólnie z Marią Ostrowską", "wiki": null},
+      {"kto": "Tadeusz Świerczek", "rola": "autor rzeźb we wnętrzu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Saska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Saska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy Saskiej. Wejście także od ul. Nobla; tekst nie podaje osobnych współrzędnych kościoła."
+  },
+  {
+    "id": "gmach-iv-lo-saska-59",
+    "nazwa": "Gmach IV Liceum Ogólnokształcącego (ul. Saska 59)",
+    "name_en": "Building of the 4th Secondary School (59 Saska Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Saska 59",
+    "adres_historyczny": null,
+    "lat": 52.232, "lon": 21.061,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Gmach zaprojektował Mieczysław Krwawicz.",
+      "IV Liceum Ogólnokształcące im. Adama Mickiewicza kontynuuje tradycje szkoły założonej w XIX wieku przez Emiliana Konopczyńskiego.",
+      "Jest to jedna z najstarszych szkół średnich w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The building at 59 Saska Street, designed by Mieczysław Krwawicz, houses the 4th Secondary School named after Adam Mickiewicz. The school continues a 19th-century school founded by Emilian Konopczyński and is one of the oldest secondary schools in Warsaw.",
+    "ludzie": [
+      {"kto": "Mieczysław Krwawicz", "rola": "projektant gmachu", "wiki": null},
+      {"kto": "Emilian Konopczyński", "rola": "założyciel szkoły z XIX wieku, której tradycje kontynuuje liceum", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Saska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Saska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne ulicy Saskiej. Tekst nie podaje daty budowy gmachu."
+  },
+  {
+    "id": "ulica-skaryszewska",
+    "nazwa": "ulica Skaryszewska",
+    "name_en": "Skaryszewska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Skaryszewska",
+    "adres_historyczny": null,
+    "lat": 52.249667, "lon": 21.049861,
+    "lokalizacja": "przyblizona",
+    "okres": "1883–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulicę wytyczono w 1883 roku jako drogę dojazdową do Dworca Kolei Terespolskiej.",
+      "W 1927 roku Stowarzyszenie Księży Pallotynów przejęło istniejącą przy ulicy kapliczkę i przekształciło ją w kaplicę Chrystusa Króla Pokoju.",
+      "W 1934 roku w nowym budynku pod nr 8 rozpoczęło działalność IV Miejskie Gimnazjum Męskie im. gen. Jasińskiego oraz szkoła powszechna nr 91.",
+      "Pod koniec lat 50. na plac u zbiegu ulic Skaryszewskiej i Lubelskiej przeniesiono bazar „Ciuchy”, który funkcjonował tam do 1973 roku.",
+      "W 2012 roku, w związku z Euro 2012, ulica przeszła rewitalizację."
+    ],
+    "ciekawostki": [
+      "Ulica i obóz przejściowy nawiązują do piosenki „Siekiera, motyka”."
+    ],
+    "summary_en": "Skaryszewska Street was laid out in 1883 to serve the Terespol railway station. The Pallottines turned a roadside chapel into a church. In 1941 the German occupiers set up a transit camp for forced labourers in the school building, and a bazaar nicknamed 'Ciuchy' operated here until 1973.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Skaryszewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Skaryszewska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "oboz-przejsciowy-skaryszewska-8",
+    "nazwa": "Obóz przejściowy na Skaryszewskiej (budynek szkolny, ul. Skaryszewska 8)",
+    "name_en": "Transit camp on Skaryszewska Street (school building, 8 Skaryszewska Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Skaryszewska 8",
+    "adres_historyczny": null,
+    "lat": 52.249667, "lon": 21.049861,
+    "lokalizacja": "przyblizona",
+    "okres": "1941–1944",
+    "istnieje": true,
+    "fakty": [
+      "W lutym 1941 roku Niemcy utworzyli w budynku szkolnym obóz przejściowy dla wywożonych na przymusowe roboty do Niemiec.",
+      "Komendantem obozu był Eugen Bollongino.",
+      "8 czerwca 1944 roku przeprowadzono na niego udany zamach w ramach akcji „Główki”.",
+      "27 sierpnia 1944 roku obóz został zamknięty.",
+      "W budynku, który przetrwał wojnę, znajduje się obecnie Izba Pamięci."
+    ],
+    "ciekawostki": [
+      "Obóz nazywano też obozem na Skaryszewskiej lub Dulagiem na Skaryszewskiej (od niemieckiego Durchgangslager)."
+    ],
+    "summary_en": "The school building at Skaryszewska 8 served as a German transit camp for forced labourers from February 1941 until August 1944. Its commandant Eugen Bollongino was the target of a successful assassination in June 1944. Today the building houses a memorial room.",
+    "ludzie": [
+      {"kto": "Eugen Bollongino", "rola": "komendant obozu przejściowego", "wiki": null}
+    ],
+    "dawne_nazwy": ["obóz na Skaryszewskiej", "Dulag na Skaryszewskiej"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Skaryszewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Skaryszewska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Numer 8 wynika z tekstu o gimnazjum z 1934 roku, który wskazuje ten sam budynek. Tekst nie podaje wprost, że to ten sam budynek; traktować jako prawdopodobne."
+  },
+  {
+    "id": "kosciol-chrystusa-krola-pokoju-skaryszewska",
+    "nazwa": "Kościół Chrystusa Króla Pokoju (przy ul. Skaryszewskiej)",
+    "name_en": "Church of Christ the King of Peace (Skaryszewska Street)",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Skaryszewska",
+    "adres_historyczny": null,
+    "lat": 52.249667, "lon": 21.049861,
+    "lokalizacja": "przyblizona",
+    "okres": "1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1927 roku Stowarzyszenie Księży Pallotynów przejęło istniejącą przy ulicy kapliczkę i przekształciło ją w kaplicę.",
+      "Podczas obrony Warszawy we wrześniu 1939 roku kaplica została niemal całkowicie zniszczona.",
+      "Pallotyni odbudowali znacznie większy kościół, który został poświęcony w listopadzie 1941 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A chapel taken over by the Pallottines in 1927 on Skaryszewska Street. It was almost destroyed in September 1939 and replaced by a larger church consecrated in November 1941.",
+    "ludzie": [],
+    "dawne_nazwy": ["kaplica Chrystusa Króla Pokoju"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Skaryszewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Skaryszewska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak adresu w tekście. Współrzędne ulicy."
+  },
+  {
+    "id": "ulica-walecznych",
+    "nazwa": "ulica Walecznych",
+    "name_en": "Walecznych Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Walecznych",
+    "adres_historyczny": null,
+    "lat": 52.2351, "lon": 21.0566,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jej nazwę nadano uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926 r.",
+      "Drewniany dom pod nr 37 jest pamiątką z czasów osadnictwa olęderskiego.",
+      "Po zakończeniu okupacji niemieckiej Biuro Odbudowy Stolicy zdecydowało się zachować dotychczasowy charakter ulicy w zakresie jej roli komunikacyjnej.",
+      "Po II wojnie światowej przy ulicy mieszkali i pracowali m.in. malarz Jan Cybis, fotografik Leonard Sempoliński i jego syn, malarz Jacek Sempoliński.",
+      "W ulicy znalazła się także kolekcja mebli, broni, malarstwa i rzemiosła artystycznego Tadeusza Wierzejskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Walecznych Street on Saska Kępa was named in 1926. A wooden house at No. 37 recalls the Dutch settlement period. After WWII several painters and photographers lived and worked here, including Jan Cybis and Leonard Sempoliński.",
+    "ludzie": [
+      {"kto": "Jan Cybis", "rola": "malarz, mieszkał i pracował przy ulicy", "wiki": null},
+      {"kto": "Leonard Sempoliński", "rola": "fotografik, mieszkał i pracował przy ulicy", "wiki": null},
+      {"kto": "Jacek Sempoliński", "rola": "malarz, syn Leonarda Sempolińskiego", "wiki": null},
+      {"kto": "Tadeusz Wierzejski", "rola": "kolekcjoner, którego kolekcja znalazła miejsce przy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Walecznych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Walecznych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek odcinka)."
+  },
+  {
+    "id": "dom-krzymuskich-walecznych-12",
+    "nazwa": "Dom Krzymuskich (ul. Walecznych 12)",
+    "name_en": "Krzymuski House (12 Walecznych Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Walecznych 12",
+    "adres_historyczny": null,
+    "lat": 52.2351, "lon": 21.0566,
+    "lokalizacja": "przyblizona",
+    "okres": "1935–1937–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom Krzymuskich z lat 1935–1937 zaprojektowali Helena i Szymon Syrkusowie.",
+      "Podłużny budynek ustawiono w linii północ–południe, co zapewniło mieszkaniom optymalne warunki oświetleniowe.",
+      "Parter jest niski i lekko cofnięty, wyłożony klinkierowymi płytami, podobnie jak willa Kiltynowicza przy ul. Katowickiej 26."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Krzymuski House at 12 Walecznych Street, built in 1935–1937 to a design by Helena and Szymon Syrkus, is aligned north–south for good daylight and faced with clinker brick.",
+    "ludzie": [
+      {"kto": "Helena Syrkusowa", "rola": "projektantka domu", "wiki": null},
+      {"kto": "Szymon Syrkus", "rola": "projektant domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Walecznych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Walecznych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "walecznych-37-drewniany-dom",
+    "nazwa": "Drewniany dom (ul. Walecznych 37)",
+    "name_en": "Wooden house (37 Walecznych Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Walecznych 37",
+    "adres_historyczny": null,
+    "lat": 52.2351, "lon": 21.0566,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1880–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Drewniany dom z ok. 1880 roku, wpisany do rejestru zabytków, wzniesiony na tzw. terpie.",
+      "Początkowo był własnością rodziny Przybytkowskich, następnie Szenków.",
+      "Zwyczajowo nazywany jest najstarszym domem na Saskiej Kępie.",
+      "Przeprowadzony w latach 70. remont był de facto rekonstrukcją budynku.",
+      "Jego charakterystyczne ustawienie świadczy o wybudowaniu przed wytyczeniem ulic."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A wooden house from about 1880 at 37 Walecznych Street, built on a mound and listed as a monument. Its 1970s renovation was in fact a reconstruction. It is usually called the oldest house on Saska Kępa.",
+    "ludzie": [
+      {"kto": "Przybytkowscy", "rola": "pierwsi właściciele domu (rodzina)", "wiki": null},
+      {"kto": "Szenkowie", "rola": "właściciele domu po Przybytkowskich", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Walecznych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Walecznych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje „najstarszy dom” jako zwyczajowe określenie. Brak własnych współrzędnych."
+  },
+  {
+    "id": "walecznych-11-willa-miejska",
+    "nazwa": "Czynszowa willa miejska (ul. Walecznych 11)",
+    "name_en": "Rental town villa (11 Walecznych Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Walecznych 11",
+    "adres_historyczny": null,
+    "lat": 52.2351, "lon": 21.0566,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Czynszowa willa miejska z ok. 1936 roku, zaprojektowana przez Bolesława Szmidta i Remigiusza Ostoję Chodkowskiego.",
+      "Ma elementy funkcjonalizmu, m.in. przeszkloną klatkę schodową oraz balustrady z siatki i rurek.",
+      "Z monumentalizmu zaczerpnięto wysoki parter i symetryczną kompozycję.",
+      "Budynek jest wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A rental town villa from about 1936 at 11 Walecznych Street by Bolesław Szmidt and Remigiusz Ostoja Chodkowski. It combines functionalist and monumentalist features and is a listed monument.",
+    "ludzie": [
+      {"kto": "Bolesław Szmidt", "rola": "projektant willi", "wiki": null},
+      {"kto": "Remigiusz Ostoja Chodkowski", "rola": "projektant willi", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Walecznych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Walecznych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak własnych współrzędnych: środek ulicy z nagłówka."
+  },
+  {
+    "id": "apartamentowiec-walecznych-62",
+    "nazwa": "Villa Daglezja (ul. Walecznych 62)",
+    "name_en": "Apartment building (62 Walecznych Street)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Walecznych 62",
+    "adres_historyczny": null,
+    "lat": 52.235980555, "lon": 21.060394444,
+    "lokalizacja": "przyblizona",
+    "okres": "2007–2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Trzypiętrowy budynek mieszkalny powstał w latach 2007–2008 według projektu pracowni Bulanda Mucha Architekci.",
+      "Jego forma nawiązuje do międzywojennych willi.",
+      "Obiekt otrzymał wyróżnienie w konkursie Nagroda Roku SARP 2007.",
+      "W 2009 roku był nominowany do Europejskiej Nagrody Architektonicznej Fundacji Miesa van der Rohe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A three-storey residential building at 62 Walecznych Street, completed in 2007–2008 by Bulanda Mucha Architekci. It recalls interwar villas and was commended in the 2007 SARP Architect of the Year awards and nominated for the Mies van der Rohe European Architecture Prize in 2009.",
+    "ludzie": [
+      {"kto": "Bulanda Mucha Architekci", "rola": "pracownia projektująca budynek", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Walecznych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Walecznych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ten sam obiekt jest w artykule „Villa Daglezja” (WSPÓŁRZĘDNE tego artykułu użyte). Pierwsze dwa fakty pochodzą z artykułu o ulicy Walecznych."
+  }
+]

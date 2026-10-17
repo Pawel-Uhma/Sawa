@@ -1,0 +1,264 @@
+[
+  {
+    "id": "grod-brodnowski",
+    "nazwa": "Gród Bródnowski (grodzisko na Starym Bródnie)",
+    "name_en": "Bródno stronghold (Stare Bródno)",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.29681719,
+    "lon": 21.05964571,
+    "lokalizacja": "przyblizona",
+    "okres": "IX/X–XI w.",
+    "istnieje": false,
+    "fakty": [
+      "Założone zapewne już w IX wieku Bródno ulokowane jest na terenie dzisiejszego Lasku Bródnowskiego.",
+      "Gród został spalony na początku XI wieku i prawdopodobnie w powstaniu Masława, i odtąd nie był już odbudowywany.",
+      "Grodzisko odkrył na początku XX w. Roman Jakimowicz, dyrektor P.M.A. w latach 1929–1940.",
+      "Kompleksowe badania zostały przeprowadzone między 1949 a 1966 rokiem przez dr. Krystynę Musianowicz wraz z zespołem.",
+      "Ostatnie badania prowadzono w 2002 w związku z budową przedłużenia ulicy św. Wincentego.",
+      "W 2020 r. w ramach projektu sfinansowanego przez miasto stołeczne Warszawę wykonano wirtualną rekonstrukcję grodziska."
+    ],
+    "ciekawostki": [
+      "Gród był umocniony drewniano-ziemnymi wałami o wysokości 6 m; w jego wnętrzu, majdanie 47x40 m, nie było zabudowań."
+    ],
+    "summary_en": "The site of an early medieval fortified settlement on the Bródno marshes, one of the oldest known settlements on the territory of present-day Warsaw. It was burned in the early 11th century and has since been studied through excavations and a virtual reconstruction.",
+    "ludzie": [
+      {"kto": "Roman Jakimowicz", "rola": "odkrył grodzisko na początku XX w.; dyrektor P.M.A. w latach 1929–1940", "wiki": null},
+      {"kto": "Krystyna Musianowicz", "rola": "dr; prowadziła kompleksowe badania grodziska w latach 1949–1966", "wiki": null}
+    ],
+    "dawne_nazwy": ["Bródno Stare"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bródno-Podgrodzie", "url": "https://pl.wikipedia.org/wiki/Br%C3%B3dno-Podgrodzie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Rekord dotyczy grodziska z artykułu o obszarze Bródno-Podgrodzie. Współrzędne z nagłówka obszaru, nie dokładne położenie grodziska. „P.M.A.” rozwinięte w tekście nie jest."
+  },
+  {
+    "id": "cmentarz-epidemiczny-warszawa",
+    "nazwa": "Cmentarz epidemiczny w Warszawie (Bródno)",
+    "name_en": "Epidemic cemetery in Warsaw",
+    "typ": "cmentarz",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2953,
+    "lon": 21.0491,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1708",
+    "istnieje": false,
+    "fakty": [
+      "Cmentarz epidemiczny, zwany też cmentarzem zadżumionych, został założony ok. 1708 na Bródnie.",
+      "Położony był pomiędzy ulicami św. Wincentego, Ostródzką i Malborską.",
+      "Zachował się tylko jeden nagrobek – Michała Walembergera z 1708 – najstarszy zachowany cmentarny pomnik nagrobny w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An 18th-century cemetery for plague and epidemic victims on Bródno, of which only one tombstone survives. That stone, for Michał Walemberger who died in 1708, is the oldest surviving cemetery monument in Warsaw.",
+    "ludzie": [
+      {"kto": "Michał Walemberger", "rola": "zmarł w 1708 roku; jego nagrobek jest najstarszym zachowanym cmentarnym pomnikiem nagrobnym w Warszawie", "wiki": null}
+    ],
+    "dawne_nazwy": ["cmentarz zadżumionych"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz epidemiczny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Cmentarz_epidemiczny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka, przybliżone."
+  },
+  {
+    "id": "cmentarz-zydowski-brodno",
+    "nazwa": "Cmentarz żydowski na Bródnie",
+    "name_en": "Bródno Jewish Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Targówek",
+    "adres_dzis": "u zbiegu ul. Odrowąża i ul. św. Wincentego",
+    "adres_historyczny": null,
+    "lat": 52.2703,
+    "lon": 21.0383,
+    "lokalizacja": "dokladna",
+    "okres": "1780–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został oficjalnie założony w 1780 na gruntach wsi Targówek przez Szmula Jakubowicza Zbytkowera.",
+      "Pierwszy odnotowany pochówek odbył się jeszcze przed oficjalnym otwarciem cmentarza, w 1743.",
+      "W 1794 na cmentarzu pochowano żołnierzy dowodzonego przez Berka Joselewicza Pułku Lekkokonnego Starozakonnego, którzy polegli w walkach z Rosjanami.",
+      "W 1842 pochowano tam wynalazcę Abrahama Sterna, twórcę pierwszego na świecie arytmometru wykonującego pięć podstawowych działań.",
+      "W 1870 zarząd cmentarza został przejęty przez Gminę Żydowską w Warszawie.",
+      "W czasie powstania warszawskiego w sierpniu 1944 Niemcy rozstrzelali pod murem cmentarza 40 Polaków.",
+      "Nekropolia została wpisana do rejestru zabytków pod nr A-856 w dniu 5 września 2009."
+    ],
+    "ciekawostki": [
+      "Na terenie nekropolii kręcono sceny do filmu „Pokolenie” w reżyserii Andrzeja Wajdy i „Europa, Europa” w reżyserii Agnieszki Holland."
+    ],
+    "summary_en": "A Jewish cemetery in Bródno, founded in 1780 by the merchant Szmul Zbytkower. It was damaged during and after the Second World War and restored from the 1980s; it was entered in the heritage register in 2009 and is open to visitors for a fee.",
+    "ludzie": [
+      {"kto": "Szmul Jakubowicz Zbytkower", "rola": "kupiec, założyciel cmentarza w 1780 roku", "wiki": null},
+      {"kto": "Berek Joselewicz", "rola": "dowódca Pułku Lekkokonnego Starozakonnego; jego żołnierze pochowani na cmentarzu w 1794", "wiki": null},
+      {"kto": "Abraham Stern", "rola": "wynalazca, pochowany na cmentarzu w 1842; twórca arytmometru", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz żydowski w Warszawie (Bródno)", "url": "https://pl.wikipedia.org/wiki/Cmentarz_%C5%BCydowski_w_Warszawie_%28Br%C3%B3dno%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że w 2024 r. liczba macew szacowana była na ok. 40 tys. sztuk."
+  },
+  {
+    "id": "dom-paprockich",
+    "nazwa": "Dom Paprockich",
+    "name_en": "Paprocki House",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Biruty 18",
+    "adres_historyczny": null,
+    "lat": 52.269669444,
+    "lon": 21.039391666,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1912–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek został wzniesiony ok. 1912 przez mieszkające we wsi Targówek małżeństwo Antoninę i Baltazara Paprockich.",
+      "Dwukondygnacyjny drewniany dom z dwiema klatkami schodowymi od podwórka mieścił lokale mieszkalne na wynajem.",
+      "W pierwszych dniach powstania warszawskiego w sierpniu 1944 w budynku mieścił się szpital powstańczy.",
+      "Dom był własnością spadkobierców Paprockich do 1945, później przejął go kwaterunek.",
+      "W 2021 budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "W serialu „Alternatywy 4” w domu mieszkał profesor prawa Ryszard Dąb-Rozwadowski (w tej roli Mieczysław Voit), zanim przeprowadził się na Ursynów."
+    ],
+    "summary_en": "A two-storey wooden tenement house at Biruty 18 in Targówek, built around 1912 by the Paprocki couple. It served as a field hospital during the Warsaw Uprising and was entered in the heritage register in 2021.",
+    "ludzie": [
+      {"kto": "Antonina Paprocka", "rola": "wraz z mężem Baltazarem wzniosła dom ok. 1912 roku", "wiki": null},
+      {"kto": "Baltazar Paprocki", "rola": "wraz z żoną Antoniną wzniósł dom ok. 1912 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Dom Paprockich w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Paprockich_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "elsnerow",
+    "nazwa": "Elsnerów",
+    "name_en": "Elsnerów",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.277285,
+    "lon": 21.086674,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1830–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa osiedla pochodzi od nazwiska Józefa Elsnera, dawnego właściciela tych gruntów.",
+      "Józef Elsner ukończył w 1837 roku oratorium pasyjne „Męka Pana Naszego Jezusa Chrystusa” i zadedykował je carowi Mikołajowi I.",
+      "Józef Elsner zmarł 18 kwietnia 1854 roku w majątku.",
+      "Rodzina Elsnerów kupiła kamienicę przy ulicy Długiej 28, gdzie mieszkała do 1944 roku.",
+      "W 1917 r. Elsnerów posiadał 142 morgi 103 pręty ziemi (około 80 hektarów).",
+      "W 1946 roku ziemie Folwarku Elsnerów zostały przejęte przez skarb państwa na cele reformy rolnej.",
+      "W 2013 roku w ramach osiedla Wilno wybudowano przystanek kolejowy Warszawa Zacisze Wilno."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Elsnerów is a housing estate and MSI area in Targówek, named after the composer Józef Elsner, who leased a state farm here before 1830. The estate was taken over by the state under land reform in 1946.",
+    "ludzie": [
+      {"kto": "Józef Elsner", "rola": "kompozytor; przed 1830 r. dzierżawił tu folwark państwowy; zmarł w majątku 18 kwietnia 1854 r.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Folwark Elsnerów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Elsnerów", "url": "https://pl.wikipedia.org/wiki/Elsner%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł mówi też o osiedlu Wilno (od 2010 r. budowa przez dewelopera); pominięto dla zwięzłości."
+  },
+  {
+    "id": "fort-xii-twierdzy-warszawa",
+    "nazwa": "Fort XII Twierdzy Warszawa („Antoninów”)",
+    "name_en": "Fort XII of the Warsaw Fortress (Antoninów)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2692,
+    "lon": 21.0922,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XIX w.–1909",
+    "istnieje": false,
+    "fakty": [
+      "Fort XII („Antoninów”) był jednym z fortów pierścienia zewnętrznego Twierdzy Warszawa, wybudowanym w latach 80. XIX wieku.",
+      "Fort został zniszczony – jak większość fortów prawobrzeżnej Warszawy – na mocy rozkazu z 1909 roku.",
+      "Jeszcze w 1945 istniała oryginalna droga dojazdowa do fortu (w przedłużeniu ul. Nieświeskiej), dziś już nieistniejąca.",
+      "Obecnie to teren częściowo zalesiony, a w części zajęty przez bocznice kolejowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort XII was part of the outer ring of the Warsaw Fortress, built in the 1880s. It was demolished by order of 1909 and the site is now partly forest and partly railway sidings.",
+    "ludzie": [],
+    "dawne_nazwy": ["Antoninów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort XII Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_XII_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "fort-xiia-twierdzy-warszawa",
+    "nazwa": "Fort XIIA Twierdzy Warszawa („Lewinów”)",
+    "name_en": "Fort XIIA of the Warsaw Fortress (Lewinów)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2836,
+    "lon": 21.0853,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 90. XIX w.–dziś (nieistnieje)",
+    "istnieje": false,
+    "fakty": [
+      "Fort XIIA („Lewinów”, „Zacisze”, „Ząbki”) był punktem oporu pierścienia zewnętrznego Twierdzy Warszawa, położonym na prawym brzegu Wisły.",
+      "Fort został wybudowany w latach 90. XIX wieku i jest obecnie nieistniejący.",
+      "Jeszcze w latach 70. XX wieku na terenie ogródków działkowych pomiędzy ul. Łodygową a linią kolejową znajdowały się dwa półkoliste rowy wypełnione wodą, będące zachowanymi resztkami fosy.",
+      "Obecnie resztki fosy są już niewidoczne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Fort XIIA was a point of resistance in the outer ring of the Warsaw Fortress on the right bank of the Vistula, built in the 1890s. Traces of its moat were visible in allotment gardens until the 1970s and have since disappeared.",
+    "ludzie": [],
+    "dawne_nazwy": ["Lewinów", "Zacisze", "Ząbki"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort XIIA Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_XIIA_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka, przybliżone."
+  },
+  {
+    "id": "fort-xiii-twierdzy-warszawa",
+    "nazwa": "Fort XIII Twierdzy Warszawa („Lewicpol”)",
+    "name_en": "Fort XIII of the Warsaw Fortress (Lewicpol)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2964,
+    "lon": 21.0733,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XIX w.–1909",
+    "istnieje": false,
+    "fakty": [
+      "Fort XIII („Lewicpol”, „Lewiopol”) był fortem pierścienia zewnętrznego Twierdzy Warszawa, położonym na prawym brzegu Wisły, wybudowanym w latach 80. XIX wieku.",
+      "Fort został całkowicie zniszczony na podstawie rozkazu z 1909 roku.",
+      "Fort ten widnieje jeszcze na zdjęciach lotniczych z 1945 roku.",
+      "Obecnie jest to teren pomiędzy ogrodzeniem jednostki wojskowej a leśną częścią ul. Malborskiej."
+    ],
+    "ciekawostki": [
+      "Na planach i mapach wojskowych w okresie międzywojennym zaznaczano kontur tego fortu, mimo jego zniszczenia."
+    ],
+    "summary_en": "Fort XIII was part of the outer ring of the Warsaw Fortress on the right bank of the Vistula, built in the 1880s. It was completely destroyed by order of 1909, although it still appears on aerial photographs from 1945.",
+    "ludzie": [],
+    "dawne_nazwy": ["Lewicpol", "Lewiopol"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort XIII Twierdzy Warszawa", "url": "https://pl.wikipedia.org/wiki/Fort_XIII_Twierdzy_Warszawa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka, przybliżone."
+  }
+]

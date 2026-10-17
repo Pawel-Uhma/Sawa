@@ -1,0 +1,317 @@
+[
+  {
+    "id": "kosciol-sw-rafala-kalinowskiego",
+    "nazwa": "Kościół św. Rafała Kalinowskiego w Warszawie",
+    "name_en": "Church of St. Raphael Kalinowski in Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "al. gen. Chruściela „Montera” 103",
+    "adres_historyczny": null,
+    "lat": 52.266111,
+    "lon": 21.174292,
+    "lokalizacja": "dokladna",
+    "okres": "koniec XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Świątynia została wzniesiona pod koniec XIX wieku jako cerkiew prawosławna pod wezwaniem świętego Jakuba Apostoła.",
+      "Cerkiew uroczyście konsekrowano 11 stycznia 1896 roku.",
+      "Po zakończeniu I wojny światowej cerkiew i garnizon zostały przekazane Wojsku Polskiemu; świątynię przebudowano na rzymskokatolicki kościół garnizonowy i nadano jej nowe wezwanie.",
+      "W 1950 roku obiekt został zamknięty dla celów kultu religijnego, by umieścić w nim magazyn sprzętu hydraulicznego.",
+      "W październiku 1991 roku powołano rzymskokatolicką parafię garnizonową i przywrócono obiektowi funkcje sakralne.",
+      "15 listopada 1992 roku Prymas Polski Józef Glemp dokonał rekoncyliacji świątyni.",
+      "W 2010 roku świątynia została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Built at the end of the 19th century as an Orthodox garrison church dedicated to St. James the Apostle, the building became a Roman Catholic garrison church after World War I. It was closed for worship in 1950 and returned to sacred use in 1991.",
+    "ludzie": [
+      {"kto": "Józef Glemp", "rola": "Prymas Polski; 15 listopada 1992 roku dokonał rekoncyliacji świątyni", "wiki": null}
+    ],
+    "dawne_nazwy": ["cerkiew pw. św. Jakuba Apostoła"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kościół św. Rafała Kalinowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Rafa%C5%82a_Kalinowskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "magenta-warszawa",
+    "nazwa": "Magenta (Warszawa)",
+    "name_en": "Magenta (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.276389,
+    "lon": 21.168333,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Magenta należała w latach 1867–1930 do gminy Okuniew w powiecie warszawskim.",
+      "W 1921 roku Magenta liczyła 142 mieszkańców.",
+      "1 kwietnia 1930 Magentę włączono do gminy Wawer w tymże powiecie.",
+      "20 października 1933 utworzono gromadę Zygmuntów-Magenta w granicach gminy Wawer.",
+      "1 kwietnia 1939 gromadę Zygmuntów-Magenta włączono do nowo utworzonego miasta Rembertów.",
+      "1 kwietnia 1957 miasto Rembertów, wraz z Zygmuntowem-Magentą, włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Magenta is a former village, now a housing estate in the Rembertów district of Warsaw, in the Stary Rembertów area. It belonged to the Okuniew commune until 1930 and was incorporated into Warsaw in 1957.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Magenta (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Magenta_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka dotyczą osiedla, nie konkretnego budynku."
+  },
+  {
+    "id": "mokry-lug-warszawa",
+    "nazwa": "Mokry Ług (Warszawa)",
+    "name_en": "Mokry Ług (Warsaw)",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.281667,
+    "lon": 21.171667,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś Mokry Ług należała w latach 1867–1930 do gminy Okuniew w powiecie warszawskim.",
+      "W 1921 roku Mokry Ług liczył 123 mieszkańców.",
+      "1 kwietnia 1930 Mokry Ług włączono do gminy Wawer w tymże powiecie.",
+      "20 października 1933 utworzono gromadę Mokry-Ług w granicach gminy Wawer.",
+      "1 kwietnia 1939 gromadę Mokry Ług włączono do nowo utworzonego miasta Rembertów.",
+      "1 kwietnia 1957 miasto Rembertów, wraz z Mokrym Ługiem, włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Mokry Ług is a former village and today a housing estate in the Rembertów district, forming the northernmost part of the district. It was part of the Okuniew commune until 1930 and was incorporated into Warsaw in 1957.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Mokry Ług (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Mokry_%C5%81ug_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "park-militarny-rembertow",
+    "nazwa": "Park Militarny Rembertów",
+    "name_en": "Rembertów Military Park",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.264655,
+    "lon": 21.17089,
+    "lokalizacja": "przyblizona",
+    "okres": "2013–2016",
+    "istnieje": false,
+    "fakty": [
+      "Park został otwarty w 2013 roku z inicjatywy rektora uczelni gen. Bogusława Packa.",
+      "Ekspozycja miała formę ścieżki edukacyjnej, przy której znajdowały się pojazdy bojowe, artyleria, samoloty bojowe oraz śmigłowiec.",
+      "Część eksponatów przekazało Muzeum Wojska Polskiego w Warszawie, a część stanowił wycofany z użytku sprzęt bojowy lub jego makiety.",
+      "Wśród eksponatów znajdowały się m.in. czołgi T-34/85, T-54, T-55U i PT-76 oraz śmigłowiec Mi-2.",
+      "W 2016, po zmianie nazwy uczelni na Akademię Sztuki Wojennej, park został zlikwidowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An open-air military museum opened in 2013 on the grounds of the Academy of National Defence in Rembertów. It displayed tanks, artillery, aircraft and a helicopter until it was dismantled in 2016, when the university was renamed the Academy of Military Arts.",
+    "ludzie": [
+      {"kto": "Bogusław Pacek", "rola": "rektor uczelni, z jego inicjatywy otwarto park w 2013 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Park Militarny Rembertów", "url": "https://pl.wikipedia.org/wiki/Park_Militarny_Rembert%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule nazwisko zapisane jako „Bogusława Packa”; w mianowniku: Bogusław Pacek. Sprawdzić przed użyciem."
+  },
+  {
+    "id": "pomnik-bitwy-pod-grochowem",
+    "nazwa": "Pomnik bitwy pod Grochowem",
+    "name_en": "Monument to the Battle of Grochów",
+    "typ": "pomnik",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.252029793,
+    "lon": 21.121502767,
+    "lokalizacja": "dokladna",
+    "okres": "1846–lata 20. XX w.",
+    "istnieje": false,
+    "fakty": [
+      "Monument został wzniesiony w 1846 jako jeden z elementów kompleksu pomnikowego na polu bitwy, na specjalne polecenie cara Mikołaja I.",
+      "Pomnik w Olszynce Grochowskiej był jedną z dwóch identycznych budowli w Królestwie Polskim; drugi, odsłonięty rok później, upamiętniał bitwę pod Ostrołęką.",
+      "Pomnik wykonano według standardowego projektu pomników wojskowych II kategorii przygotowanego przez Antonio Adaminiego.",
+      "Miał formę ośmiobocznej piramidy zwieńczonej cebulastą kopułką z krzyżem łacińskim.",
+      "Pomnik został zniszczony po odzyskaniu niepodległości przez Polskę, w latach 20. XX wieku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A monument commemorating the Battle of Olszynka Grochowska during the November Uprising, erected in 1846 on the order of Tsar Nicholas I. It was destroyed in the 1920s, after Poland regained independence.",
+    "ludzie": [
+      {"kto": "Mikołaj I", "rola": "car; na jego specjalne polecenie wzniesiono pomnik w 1846 roku", "wiki": null},
+      {"kto": "Antonio Adamini", "rola": "autor standardowego projektu pomników wojskowych II kategorii", "wiki": null}
+    ],
+    "dawne_nazwy": ["pomnik w Olszynce Grochowskiej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pomnik bitwy pod Grochowem w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_bitwy_pod_Grochowem_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Pomnik stał w Olszynce Grochowskiej; dzielnica wg nagłówka to Rembertów."
+  },
+  {
+    "id": "pomnik-ofiar-egzekucji-niemieckich-w-lasach-kaweczyna",
+    "nazwa": "Pomnik ofiar egzekucji niemieckich dokonywanych w Lasach Kawęczyna",
+    "name_en": "Monument to the Victims of German Executions in the Kawęczyn Forests",
+    "typ": "pomnik",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "las między ul. Żołnierską a ul. Chełmżyńską",
+    "adres_historyczny": null,
+    "lat": 52.2531,
+    "lon": 21.1364,
+    "lokalizacja": "dokladna",
+    "okres": "1940–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przypuszczalnie już wiosną 1940 r. hitlerowcy zaczęli wykorzystywać wyrobiska piasku w kawęczyńskich lasach do pochówków ofiar terroru.",
+      "W latach 1940–1944 w Kawęczynie rozstrzelano co najmniej kilkadziesiąt osób.",
+      "Wśród pomordowanych znaleźli się m.in. harcerze „Zawiszacy” oraz inżynier Roman Węgrowicz, major artylerii i oficer Armii Krajowej, zamordowany w maju 1944.",
+      "Jesienią 1944 r. przeprowadzono częściową ekshumację, a wydobyte ciała ofiar pogrzebano na cmentarzu parafialnym.",
+      "Dzięki staraniom profesora Lucjana Węgrowicza w 1995 na wyrobisku stanął krzyż upamiętniający tamte wydarzenia.",
+      "Pomnik (kamień w kształcie serca) został odsłonięty 2 września 2005."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A memorial and symbolic grave in a forest pit in Rembertów, where the Nazis executed at least several dozen people between 1940 and 1944. A cross was placed there in 1995 and a heart-shaped stone monument was unveiled in 2005.",
+    "ludzie": [
+      {"kto": "Roman Węgrowicz", "rola": "inżynier, major artylerii i oficer AK, zamordowany w maju 1944 r.", "wiki": null},
+      {"kto": "Lucjan Węgrowicz", "rola": "profesor; dzięki jego staraniom w 1995 roku postawiono krzyż", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pomnik ofiar egzekucji niemieckich dokonywanych w Lasach Kawęczyna", "url": "https://pl.wikipedia.org/wiki/Pomnik_ofiar_egzekucji_niemieckich_dokonywanych_w_Lasach_Kaw%C4%99czyna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "rembertow",
+    "nazwa": "Rembertów",
+    "name_en": "Rembertów",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.258888888,
+    "lon": 21.161111111,
+    "lokalizacja": "przyblizona",
+    "okres": "1866–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W roku 1866 na linii Kolei Warszawsko-Terespolskiej powstała stacja Rembertów.",
+      "Ok. 1888 Rosjanie zbudowali tam poligon artyleryjski, przy którym powstała osada Rembertów.",
+      "1 kwietnia 1939 Rembertów uzyskał prawa miejskie; miasto zamieszkiwało wtedy ok. 24 tys. osób.",
+      "Oddziały Wehrmachtu zajęły miasto 14 września 1939.",
+      "20 sierpnia 1942 mieszkańcy getta w Rembertowie zostali pognani pieszo na stację kolejową w Falenicy, a następnie wywiezieni do obozu zagłady w Treblince.",
+      "1 kwietnia 1957 Rembertów został włączony do Warszawy jako część dzielnicy Praga-Południe."
+    ],
+    "ciekawostki": [
+      "Jest najmniejszą dzielnicą Warszawy pod względem liczby ludności."
+    ],
+    "summary_en": "Rembertów grew around a station on the Warsaw–Terespol railway and a Russian artillery range built in the late 19th century. It received town rights in 1939 and was incorporated into Warsaw in 1957, and today is the smallest district of Warsaw by population.",
+    "ludzie": [],
+    "dawne_nazwy": ["Rembertau (niem.)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rembertów", "url": "https://pl.wikipedia.org/wiki/Rembert%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł o całej dzielnicy; współrzędne z nagłówka to środek dzielnicy."
+  },
+  {
+    "id": "ulica-marsa",
+    "nazwa": "Ulica Marsa",
+    "name_en": "Marsa Street",
+    "typ": "ulica",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "ul. Marsa",
+    "adres_historyczny": null,
+    "lat": 52.240666666,
+    "lon": 21.134194444,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Marsa jest ulicą w dzielnicach Praga-Południe i Rembertów w Warszawie.",
+      "Trudno jest precyzyjnie podać datę powstania ulicy; najprawdopodobniej powstała w związku z budową fortu Kawęczyn i późniejszym poligonem artyleryjskim założonym przez Rosjan.",
+      "Przecina dwukrotnie tory kolejowe i kończy swój bieg przy stacji kolejowej Warszawa Rembertów.",
+      "Na odcinku od ul. Płowieckiej do ul. Rekruckiej jest ulicą dwujezdniową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Marsa Street is a main road leaving central and eastern Warsaw towards Sulejówek, Okuniew and Nieporęt. Its origin is probably linked to the Kawęczyn fort and the Russian artillery range in Rembertów.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Marsa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Marsa_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka to przybliżony środek odcinka. Data „przed 1939” to wnioskowana z artykułu, nie podana wprost."
+  },
+  {
+    "id": "ulica-zolnierska",
+    "nazwa": "Ulica Żołnierska",
+    "name_en": "Żołnierska Street",
+    "typ": "ulica",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "ul. Żołnierska",
+    "adres_historyczny": "ul. Piaskowa",
+    "lat": 52.260861111,
+    "lon": 21.143333333,
+    "lokalizacja": "przyblizona",
+    "okres": "1957–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy, wcześniej nazywanej ulicą Piaskową, została nadana uchwałą Rady Narodowej m.st. Warszawy z dnia 18 maja 1957.",
+      "Ulica przebiega od ul. Marsa w Warszawie do granic miasta z Zielonką i jest częścią Obwodnicy Etapowej Centrum.",
+      "Ulica przecina tory kolejowe linii relacji Warszawa-Biała Podlaska.",
+      "Dawniej wzdłuż ulicy przebiegały tory kolejowe łączące fort Suworowa z fortem Beniaminów; pozostałości tej linii to dwa wały i szyny na skrzyżowaniu z ul. Marsa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Żołnierska Street in Rembertów was renamed from Piaskowa Street in 1957 to recall the district's soldier tradition. It runs through forest from Marsa Street to the city boundary with Zielonka.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Piaskowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Żołnierska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%BBo%C5%82nierska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka. Okres od daty nadania nazwy."
+  },
+  {
+    "id": "rezerwat-przyrody-kaweczyn",
+    "nazwa": "Rezerwat przyrody Kawęczyn",
+    "name_en": "Kawęczyn Nature Reserve",
+    "typ": "park",
+    "dzielnica": "Rembertów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2528,
+    "lon": 21.1442,
+    "lokalizacja": "przyblizona",
+    "okres": "1998–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rezerwat został powołany rozporządzeniem Ministra Ochrony Środowiska, Zasobów Naturalnych i Leśnictwa z dnia 21 grudnia 1998 r.",
+      "Pierwotnie obejmował obszar leśny o powierzchni 69,54 ha; obecnie podawana wielkość to 69,71 ha.",
+      "Obszar jest ograniczony ulicami Marsa, Żołnierską i torami kolejowymi linii Warszawa Zachodnia–Terespol.",
+      "Celem ochrony jest zachowanie ze względów naukowych i dydaktycznych ciepłolubnych gatunków roślin naczyniowych i ich stanowisk."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A forest nature reserve in Rembertów, established by ministerial regulation on 21 December 1998. It protects heat-loving vascular plant species and their habitats.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rezerwat przyrody Kawęczyn", "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Kaw%C4%99czyn"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

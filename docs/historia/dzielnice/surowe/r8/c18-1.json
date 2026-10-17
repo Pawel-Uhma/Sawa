@@ -1,0 +1,262 @@
+[
+  {
+    "id": "kanal-imielinski",
+    "nazwa": "Kanał Imieliński",
+    "name_en": "Imieliński Canal",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.146666666,
+    "lon": 21.007777777,
+    "lokalizacja": "przyblizona",
+    "okres": null,
+    "istnieje": true,
+    "fakty": [
+      "Kanał ma całkowitą długość ok. 950 m i jest prawobrzeżnym dopływem Kanału Grabowskiego.",
+      "Ostatni odcinek o długości 495 metrów zaliczany jest do urządzeń melioracji podstawowych Warszawy.",
+      "Jego położenie zostało prawdopodobnie zaznaczone na mapie Warszawy i okolic z 1838 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Imieliński Canal is a right-bank tributary of the Grabowski Canal in the Ursynów district of Warsaw, about 950 m long. Its starting section runs along the Imieliński Lake ecological reserve.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kanał Imieliński", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Imieli%C5%84ski"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres i data powstania kanału nie są podane w artykule."
+  },
+  {
+    "id": "katastrofa-lotnicza-w-lesie-kabackim",
+    "nazwa": "Katastrofa lotnicza w Lesie Kabackim",
+    "name_en": "1987 Kabaty Forest air crash",
+    "typ": "zdarzenie",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1134,
+    "lon": 21.0442,
+    "lokalizacja": "dokladna",
+    "okres": "1987",
+    "istnieje": true,
+    "fakty": [
+      "9 maja 1987 roku samolot Ił-62M SP-LBG „Tadeusz Kościuszko” Polskich Linii Lotniczych LOT, lot LO 5055 na trasie Warszawa–Nowy Jork, rozbił się na południowym skraju Lasu Kabackiego.",
+      "Zginęło 183 osoby, wszyscy znajdujący się na pokładzie.",
+      "Samolot został zakupiony w grupie siedmiu tego typu samolotów w Związku Radzieckim w 1983 roku.",
+      "Zniszczone zostały drzewa w Lesie Kabackim na obszarze prostokąta o wymiarach około 370 × 50 metrów.",
+      "Pod względem liczby ofiar była to największa katastrofa lotnicza w historii polskiego lotnictwa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 9 May 1987 an Il-62M of LOT Polish Airlines crashed on the southern edge of the Kabaty Forest after engine failures on departure from Warsaw. All 183 people on board died; it remains the deadliest air disaster in Polish aviation history.",
+    "ludzie": [{"kto": "Kapitan Pawlaczyk", "rola": "dowódca statku powietrznego w locie LO 5055", "wiki": null}],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Katastrofa lotnicza w Lesie Kabackim", "url": "https://pl.wikipedia.org/wiki/Katastrofa_lotnicza_w_Lesie_Kabackim"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kopa-cwila",
+    "nazwa": "Kopa Cwila",
+    "name_en": "Cwil Mound",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.164444444,
+    "lon": 21.022222222,
+    "lokalizacja": "dokladna",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wzniesienie powstało w latach 70. XX wieku z ziemi z wykopów pod budowę bloków i dróg.",
+      "Pierwotnie w tym miejscu planowano park, którego centralną częścią miało być wzgórze.",
+      "Na pomysł usypania górki wpadł inż. Henryk Cwil (1920–1990), główny inspektor w Stołecznej Dyrekcji Inwestycji Spółdzielczych; od jego nazwiska wzięła się nazwa wzniesienia.",
+      "W 1983 roku Oddział Zamknięty na stokach Kopy Cwila nakręcił teledysk do utworu „Ten wasz świat”.",
+      "W 1998 roku ukazał się teledysk Molesta Ewenement do utworu „Wiedziałem, że tak będzie”, w którym wykorzystano ujęcia z Kopy Cwila.",
+      "W styczniu i lutym 2021 roku SPInka Film Studio wyemitowało 3 kolejne odcinki (221–223) serialu „Blok Ekipa” o Kopie Cwila."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kopa Cwila is an artificial hill built in the 1970s from excavation spoil in Ursynów, in Roman Kozłowski Park. It was named after engineer Henryk Cwil and has appeared in several music videos and a TV series.",
+    "ludzie": [{"kto": "Henryk Cwil (1920–1990)", "rola": "główny inspektor w Stołecznej Dyrekcji Inwestycji Spółdzielczych, autor pomysłu usypania wzniesienia", "wiki": null}],
+    "dawne_nazwy": ["Góra Cwyla (wg PRNG)"],
+    "zrodla": [{"tytul": "Wikipedia: Kopa Cwila", "url": "https://pl.wikipedia.org/wiki/Kopa_Cwila"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "konski-jar-nutki",
+    "nazwa": "Osiedle Koński Jar-Nutki",
+    "name_en": "Koński Jar-Nutki estate",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Koński Jar 1–10 i ul. Nutki 1–3/5 (osiedle)",
+    "adres_historyczny": null,
+    "lat": 52.163333333,
+    "lon": 21.025833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1977–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1960 w ramach rozbudowy Służewa wytyczono kilkanaście ulic i nadano im nazwy związane z muzyką, w tym ulicę Nutki.",
+      "Oficjalnie nazwę Koński Jar nadano w 1975.",
+      "Oddane do użytkowania w 1977 roku budynki przy ul. Koński Jar były jednymi z pierwszych w ramach pasma Ursynów-Natolin.",
+      "W 1977 roku osiedle było częścią ursynowskiego pleneru rzeźbiarskiego.",
+      "Dwa głazy narzutowe na terenie osiedla są chronione od 1982 roku jako pomniki przyrody.",
+      "Osiedlem zarządza Spółdzielnia Mieszkaniowa „Koński Jar-Nutki”, która powstała w grudniu 1991 roku."
+    ],
+    "ciekawostki": [
+      "Budynki oddane w 1977 roku zostały początkowo przekazane mieszkańcom bez ogrzewania.",
+      "Dom Rodzinny przy ul. Koński Jar 6 był pierwszym domem kultury na Ursynowie."
+    ],
+    "summary_en": "The Koński Jar-Nutki estate in northern Ursynów was built in large-panel technology as part of the Ursynów-Natolin development. Its buildings were completed in 1977 and it is managed by a housing cooperative founded in 1991.",
+    "ludzie": [
+      {"kto": "Marek Budzyński", "rola": "główny projektant osiedla", "wiki": null},
+      {"kto": "Jerzy Szczepanik-Dzikowski", "rola": "projektant osiedla", "wiki": null},
+      {"kto": "Andrzej Szkop", "rola": "autor planu parku Północnego i przebiegu ulic Koński Jar i Nutki, autor nazwy „Koński Jar”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Koński Jar-Nutki", "url": "https://pl.wikipedia.org/wiki/Ko%C5%84ski_Jar-Nutki"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres obejmuje wszystkie budynki osiedla; współrzędne to środek osiedla."
+  },
+  {
+    "id": "kosciol-ofiarowania-panskiego",
+    "nazwa": "Kościół Ofiarowania Pańskiego w Warszawie",
+    "name_en": "Church of the Presentation of the Lord, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Stryjeńskich 21",
+    "adres_historyczny": null,
+    "lat": 52.1379,
+    "lon": 21.048,
+    "lokalizacja": "dokladna",
+    "okres": "1993–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę świątyni rozpoczęto w 1993.",
+      "24 października 1994 kard. Józef Glemp wmurował kamień węgielny.",
+      "Konsekracja kościoła nastąpiła 1 czerwca 2003.",
+      "Projektantem kościoła był architekt Krzysztof Kasperski.",
+      "Figura Matki Bożej z Luján została koronowana 16 września 2001 roku.",
+      "Organy wybudował Dariusz Zych w 2021 roku.",
+      "Na wieży wiszą cztery dzwony odlane w 1996 roku, w Ludwisarni Felczyńskich, w Taciszowie."
+    ],
+    "ciekawostki": [
+      "Figura Matki Bożej z Luján jest kopią cudownej figury czczonej w argentyńskim sanktuarium w Luján; przekazał ją parafii w 1987 roku kard. Józef Glemp, który otrzymał ją w Argentynie w 1983 roku."
+    ],
+    "summary_en": "The Church of the Presentation of the Lord on ul. Stryjeńskich in Ursynów was built from 1993, with the cornerstone laid in 1994 and consecration on 1 June 2003. It is designed in a Romanesque-inspired style.",
+    "ludzie": [
+      {"kto": "Józef Glemp", "rola": "kardynał; wmurował kamień węgielny w 1994", "wiki": null},
+      {"kto": "Krzysztof Kasperski", "rola": "architekt, projektant kościoła", "wiki": null},
+      {"kto": "Dariusz Zych", "rola": "wykonawca organów (2021)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół Ofiarowania Pańskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_Ofiarowania_Pa%C5%84skiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-bl-wladyslawa-z-gielniowa",
+    "nazwa": "Kościół bł. Władysława z Gielniowa w Warszawie",
+    "name_en": "Church of Bl. Władysław of Gielniów, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Przy Bażantarni 3",
+    "adres_historyczny": null,
+    "lat": 52.137,
+    "lon": 21.0649,
+    "lokalizacja": "dokladna",
+    "okres": "1992–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początek budowy fundamentów miał miejsce w 1992.",
+      "W październiku 1993 kardynał Józef Glemp wmurował kamień węgielny pochodzący ze zrębów kościoła św. Katarzyny na Służewie.",
+      "17 grudnia 2000 konsekracji kościoła dokonał kardynał Józef Glemp.",
+      "Organy zostały wybudowane przez Dariusza Zycha w 2008 roku.",
+      "Dzwon Władysław, wykonany przez Witolda Sobola i Waldemara Olszewskiego w Odlewni Dzwonów Jana Felczyńskiego w Przemyślu, waży wraz z sercem i zawieszeniem około 11 ton."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The parish church of Bl. Władysław of Gielniów in the Natolin area of Ursynów was built from 1992 on a cross plan with four domes. Its cornerstone was laid in 1993 and it was consecrated on 17 December 2000.",
+    "ludzie": [
+      {"kto": "ks. kanonik Eugeniusz Ledwoch (zm. w kwietniu 2002)", "rola": "budowniczy kościoła, organizator i pierwszy proboszcz parafii", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "kardynał; wmurował kamień węgielny w 1993 i dokonał konsekracji w 2000", "wiki": null},
+      {"kto": "Dariusz Zych", "rola": "wykonawca organów (2008)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół bł. Władysława z Gielniowa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_b%C5%82._W%C5%82adys%C5%82awa_z_Gielniowa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kosciol-sw-katarzyny",
+    "nazwa": "Kościół św. Katarzyny w Warszawie",
+    "name_en": "St. Catherine's Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Fosa 17",
+    "adres_historyczny": null,
+    "lat": 52.17194444,
+    "lon": 21.04472222,
+    "lokalizacja": "dokladna",
+    "okres": "1238–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Parafia św. Katarzyny została ufundowana w 1238 przez księcia Konrada mazowieckiego, erygowana przez biskupa poznańskiego Pawła z Bnina (Bnińskiego).",
+      "W 1603 roku kościół w Służewie wizytował Goślicki, ówczesny biskup poznański.",
+      "W 1742 roku kościół przebudował książę Augusta Aleksandra Czartoryski.",
+      "W 1848 roku kościół przebudowano według utrzymanego w stylu neoromańskim projektu Franciszka Lanciego.",
+      "W 1965 roku świątynia została wpisana do rejestru zabytków.",
+      "Obecna dzwonnica została wzniesiona na miejscu poprzedniej w 1881 roku."
+    ],
+    "ciekawostki": [
+      "Budynek plebanii pochodzi z 1640 roku; w jego holu zachowała się ceglana posadzka mazowiecka z XVII w.",
+      "Najstarszy dzwon w dzwonnicy pochodzi z nieistniejącego kościoła św. Jerzego."
+    ],
+    "summary_en": "St. Catherine's Church on ul. Fosa in Ursynów stands on the site of the former village of Służew, where a Benedictine mission existed already in 1065. The parish was founded in 1238 and the church is a registered historic monument since 1965.",
+    "ludzie": [
+      {"kto": "Konrad mazowiecki", "rola": "książę; ufundował parafię w 1238", "wiki": null},
+      {"kto": "Paweł z Bnina (Bnińskiego)", "rola": "biskup poznański; erygował parafię", "wiki": null},
+      {"kto": "Franciszek Lanci", "rola": "autor projektu przebudowy w 1848 w stylu neoromańskim", "wiki": null}
+    ],
+    "dawne_nazwy": ["Służew (wieś)"],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Katarzyny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Katarzyny_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że już w 1065 istniał na terenie Służewa ośrodek misyjny benedyktynów."
+  },
+  {
+    "id": "kosciol-sw-tomasza-apostola",
+    "nazwa": "Kościół św. Tomasza Apostoła w Warszawie",
+    "name_en": "St. Thomas the Apostle Church, Warsaw",
+    "typ": "swiatynia",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Dereniowa 12",
+    "adres_historyczny": null,
+    "lat": 52.1478,
+    "lon": 21.0436,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Początki kościoła wiążą się z budową tymczasowej kaplicy w sierpniu 1983, ukończonej w grudniu tego roku i poświęconej przez kardynała Glempa w roku następnym.",
+      "Kamień węgielny pod nową świątynię, w tym miejscu, wmurował 15 czerwca 1995 prymas Polski kardynał Józef Glemp.",
+      "Budowę obiektu zaprojektowali architekci Andrzej Fabierkiewicz i Stanisław Stefanowicz.",
+      "23 grudnia 2001 prymas Polski poświęcił nowo wybudowany kościół.",
+      "W czerwcu 1994 w domu katechetycznym Betania otwarto pierwszy w Polsce Dom Dziennego Pobytu Fundacji Alzheimerowskiej.",
+      "13 września 2006 około godziny 18 doszło do pożaru dachu kościoła, w wyniku którego zniszczeniu uległo około 150 m² powierzchni dachu.",
+      "10 października 2007 abp Carlo Ghidelli przekazał część relikwii św. Tomasza Apostoła."
+    ],
+    "ciekawostki": [
+      "Początkowy projekt kościoła na skarpie wiślanej nie spotkał się z przychylnością władz, dlatego budowę zlokalizowano w centrum osiedla Ursynów Południowy."
+    ],
+    "summary_en": "St. Thomas the Apostle Church on ul. Dereniowa in Ursynów Południowy began as a temporary chapel in 1983. The permanent church was built over several years and consecrated on 23 December 2001.",
+    "ludzie": [
+      {"kto": "Józef Glemp", "rola": "prymas Polski; poświęcił tymczasową kaplicę w 1984 i wmurował kamień węgielny w 1995", "wiki": null},
+      {"kto": "Andrzej Fabierkiewicz", "rola": "architekt, projektant kościoła", "wiki": null},
+      {"kto": "Stanisław Stefanowicz", "rola": "architekt, projektant kościoła", "wiki": null},
+      {"kto": "Carlo Ghidelli", "rola": "arcybiskup archidiecezji Lanciano–Ortona; przekazał relikwie w 2007", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Kościół św. Tomasza Apostoła w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Tomasza_Aposto%C5%82a_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "id": "warszawa-jeziorki",
+    "nazwa": "Przystanek Warszawa Jeziorki",
+    "name_en": "Warszawa Jeziorki railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.109444,
+    "lon": 20.993333,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Po raz pierwszy przystanek osobowy pojawia się w rozkładzie jazdy w roku 1936 i nosił wówczas nazwę „Iwiczna”. Do wybuchu II wojny światowej nie został jednak uruchomiony.",
+      "Przystanek Jeziorki jest ostatnim położonym na tej linii w granicach miasta Warszawy.",
+      "W 2022 przy przystanku oddano do użytku parking „Parkuj i Jedź”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A passenger stop on railway line no. 8 near the Jeziorki estate. It first appeared in a timetable in 1936 under the name Iwiczna, but was not opened before World War II.",
+    "ludzie": [],
+    "dawne_nazwy": ["Iwiczna (w rozkładzie 1936)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Jeziorki", "url": "https://pl.wikipedia.org/wiki/Warszawa_Jeziorki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł w paczce urwany na końcu; wpis oparty na jego treści."
+  },
+  {
+    "id": "warszawski-szpital-poludniowy",
+    "nazwa": "Warszawski Szpital Południowy",
+    "name_en": "Warsaw Southern Hospital",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. rtm. Witolda Pileckiego 99",
+    "adres_historyczny": null,
+    "lat": 52.146356506,
+    "lon": 21.035248609,
+    "lokalizacja": "dokladna",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa szpitala rozpoczęła się w listopadzie 2016 r., a zakończyła na początku 2021 r. Szacowany koszt jego budowy i wyposażenia wyniósł ok. 400 mln zł.",
+      "Szpital otwarto 15 lutego 2021 r. Budynek składa się z trzech pięciopiętrowych modułów.",
+      "W marcu 2021 r., w czasie pandemii COVID-19, szpital został przejęty przez Ministerstwo Zdrowia i przekształcony w jednoimienny szpital zakaźny.",
+      "W sierpniu 2021 r. Wojewódzki Sąd Administracyjny w Warszawie unieważnił tę decyzję, wskazując na rażące naruszenie prawa.",
+      "W 2022 r. do placówki przeniesiono część oddziałów ze Szpitala Solec, znajdującego się w dzielnicy Śródmieście."
+    ],
+    "ciekawostki": [
+      "W 2022 r. oddziałowi neonatologii nadano imię Wielkiej Orkiestry Świątecznej Pomocy, która przekazała szpitalowi sprzęt do leczenia i ratowania życia noworodków."
+    ],
+    "summary_en": "A clinical hospital in Ursynów at ul. Pileckiego 99, built in 2016–2021 at an estimated cost of about 400 million PLN. It opened on 15 February 2021 and has a helicopter landing pad.",
+    "ludzie": [],
+    "dawne_nazwy": ["Szpital Południowy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawski Szpital Południowy", "url": "https://pl.wikipedia.org/wiki/Warszawski_Szpital_Po%C5%82udniowy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z opisów ulicy Pileckiego i Indiry Gandhi w tej paczce, nie z tego artykułu. Pominięto sekcję „Kontrowersje” (zarzuty wobec konkretnych osób, nieprawomocne i nieuznane w tekście za ustalone)."
+  },
+  {
+    "id": "wolica-warszawa",
+    "nazwa": "Wolica",
+    "name_en": "Wolica (former village)",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.142263888,
+    "lon": 21.061886111,
+    "lokalizacja": "przyblizona",
+    "okres": "2. poł. XIV w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza wzmianka o wsi Sluzevska Vola pochodzi z 1424 roku; wieś założono prawdopodobnie w drugiej połowie XIV wieku.",
+      "W 1725 roku część Wolicy należącą do Dąbrowskich, wraz z Moczydłem, zakupiła Elżbieta Helena Sieniawska i włączyła do dóbr wilanowskich.",
+      "W 1948 roku uruchomiono linię autobusową nr 104, łączącą Dworzec Południowy z Wolicą.",
+      "W 2001 roku na terenie Wolicy została erygowana parafia bł. Edmunda Bojanowskiego.",
+      "W 2017 roku przez teren dawnej wsi przeprowadzono Południową Obwodnicę Warszawy. Z zabudowy Wolicy pozostało kilka domów."
+    ],
+    "ciekawostki": [
+      "Najstarszy dom w Wolicy, przy ul. Kokosowej 27/29, został wybudowany w 1897 roku i znajduje się w gminnej ewidencji zabytków."
+    ],
+    "summary_en": "A former village, now part of Ursynów and Wilanów, first mentioned in 1424 as Sluzevska Vola. Its historic houses were largely lost to the southern bypass built in 2017.",
+    "ludzie": [
+      {"kto": "Elżbieta Helena Sieniawska", "rola": "kupiła część Wolicy w 1725 i włączyła do dóbr wilanowskich", "wiki": null},
+      {"kto": "Edmund Bojanowski", "rola": "patron parafii erygowanej w Wolicy w 2001 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wola Służewska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wolica (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wolica_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Miejsce o charakterze osady; współrzędne to przybliżony środek dawnej wsi."
+  },
+  {
+    "id": "wyczolki-warszawa",
+    "nazwa": "Wyczółki",
+    "name_en": "Wyczółki (former village and estate)",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.158888888,
+    "lon": 20.999166666,
+    "lokalizacja": "przyblizona",
+    "okres": "1483–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwsza wzmianka o wsi Vyczolkovo pochodzi z 1483.",
+      "W 1580 wieś szlachecka Wiczółki znajdowała się w powiecie warszawskim ziemi warszawskiej województwa mazowieckiego.",
+      "W okresie międzywojennym Wyczółki wchodziły w skład gminy Falenty. W styczniu 1951, podobnie jak wiele innych wsi i osad na przedmieściach Warszawy, zostały włączone do stolicy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former village and farm in the northwest of Ursynów, first mentioned in 1483 as Vyczolkovo. It was incorporated into Warsaw in January 1951.",
+    "ludzie": [],
+    "dawne_nazwy": ["Vyczolkovo", "Wiczółki"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wyczółki (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Wycz%C3%B3%C5%82ki_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedlowy; współrzędne to przybliżony środek."
+  }
+]

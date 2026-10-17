@@ -1,0 +1,183 @@
+[
+  {
+    "id": "ulica-koprowskiego",
+    "nazwa": "Ulica Hilarego Koprowskiego",
+    "name_en": "Hilary Koprowski Street (Wyczółki)",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Koprowskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica w tym przebiegu widoczna jest od lat 80. XX wieku, gdy jako ścieżka prowadziła między zabudową przemysłową Fabryki Domów Służewiec a ogródkami działkowymi i nieużytkami.",
+      "Ścieżka przekształciła się w drogę w 2017/2018 roku, gdy zyskała jezdnię wraz z chodnikiem, w celu utworzenia dojazdu do siedziby firmy farmaceutycznej przy nowo utworzonym placu Farmacji oraz budowanych osiedli mieszkaniowych.",
+      "Nazwa ulicy została nadana 28 listopada 2019 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street on Wyczółki that began as a footpath in the 1980s and became a road in 2017-2018. It is named after the Polish-born virologist Hilary Koprowski, developer of an effective polio vaccine.",
+    "ludzie": [
+      {"kto": "Hilary Koprowski", "rola": "patron ulicy; polski lekarz, wirusolog i immunolog, twórca pierwszej skutecznej szczepionki przeciwko wirusowi polio", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Koprowskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Koprowskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru; adres to nazwa ulicy."
+  },
+  {
+    "id": "ulica-kulczynskiego",
+    "nazwa": "Ulica Stanisława Kulczyńskiego",
+    "name_en": "Stanisław Kulczyński Street (Na Skraju)",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Kulczyńskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "koniec lat 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy to koniec lat 70. XX wieku.",
+      "Patronem ulicy jest Stanisław Kulczyński, znany polski botanik i działacz społeczny, były rektor Uniwersytetu Wrocławskiego.",
+      "Przed budynkiem mieszkalnym Kulczyńskiego 8 stoi pomnik przyrody, głaz narzutowy „Głaz im. Stanisława Zwierza”, granit różowy grubokrystaliczny ze strefami mikowymi."
+    ],
+    "ciekawostki": [
+      "Adam Miauczyński, główny bohater „Dnia Świra”, mieszkał przy ul. Kulczyńskiego 7."
+    ],
+    "summary_en": "A residential street on the Na Skraju estate in Ursynów, running from Płaskowickiej Street. It is named after the botanist and former rector of the University of Wrocław, Stanisław Kulczyński.",
+    "ludzie": [
+      {"kto": "Stanisław Kulczyński", "rola": "patron ulicy; botanik, działacz społeczny, były rektor Uniwersytetu Wrocławskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Stanisława Kulczyńskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kulczyńskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru; adres to nazwa ulicy."
+  },
+  {
+    "id": "ulica-lokajskiego",
+    "nazwa": "Ulica Eugeniusza Zenona Lokajskiego",
+    "name_en": "Eugeniusz Zenon Lokajski Street (Natolin)",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Lokajskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 80. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica po raz pierwszy pojawia się na planie PPWK z 1988 roku.",
+      "Okres powstania ulicy to lata 80. XX wieku.",
+      "Przy ul. Lokajskiego zlokalizowane jest Gimnazjum nr 95 im. Ignacego Jana Paderewskiego, połączone ze szkołą podstawową.",
+      "Patronem ulicy jest Eugeniusz Zenon Lokajski – polski lekkoatleta, olimpijczyk, fotograf amator; autor ponad 1000 zdjęć dokumentujących powstanie warszawskie oraz uczestnik kampanii wrześniowej."
+    ],
+    "ciekawostki": [
+      "Lokajski był mistrzem Polski w rzucie oszczepem, pięcioboju i dziesięcioboju, wicemistrzem w skoku wzwyż."
+    ],
+    "summary_en": "A residential street on Natolin, first shown on a 1988 city plan. It is named after the Olympian athlete and amateur photographer Eugeniusz Zenon Lokajski, who documented the Warsaw Uprising.",
+    "ludzie": [
+      {"kto": "Eugeniusz Zenon Lokajski", "rola": "patron ulicy; polski lekkoatleta, olimpijczyk, fotograf amator, autor ponad 1000 zdjęć z powstania warszawskiego", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Lokajskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Lokajskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru; adres to nazwa ulicy."
+  },
+  {
+    "id": "ulica-muslinowa",
+    "nazwa": "Ulica Muślinowa",
+    "name_en": "Muślinowa Street (Natolin)",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Muślinowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XXI wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W maju 2019 roku na skrzyżowaniu ulicy z ul. Stryjeńskich uruchomiono sygnalizację świetlną.",
+      "Nazwa ulicy została nadana uchwałą Rady m.st. Warszawy z 18 października 2018 roku.",
+      "Ulica biegnie od ul. Stryjeńskich w kierunku ul. Wełnianej i jest przedłużeniem ul. Przy Bażantarni."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 240-metre street on Natolin, running from Stryjeńskich Street towards Wełniana. Its name, after a fine cotton fabric, was adopted by the city council in October 2018.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Muślinowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Muślinowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru; adres to nazwa ulicy."
+  },
+  {
+    "id": "ulica-otomanska",
+    "nazwa": "Ulica Otomańska",
+    "name_en": "Otomańska Street (Wyczółki)",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Otomańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Droga została wytyczona w latach 2007-2008 jako część nowego układu drogowego na Wyczółkach, w związku z poszerzeniem ulicy Poleczki i budową wiaduktu w jej ciągu.",
+      "Ulica otrzymała obecną nazwę 16 stycznia 2014 roku uchwałą rady miasta nr LXXIV/1927/2014.",
+      "Nazwa ulicy nawiązuje do Imperium Osmańskiego, tak jak inne nazwy w okolicy (Osmańska, Półksiężyca)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short street in Wyczółki, built in 2007-2008 to reconnect Kłobucka with Poleczki Street after the widening of Poleczki. It received its present name on 16 January 2014.",
+    "ludzie": [],
+    "dawne_nazwy": [
+      "łącznik Zatorze (nazwa nieoficjalna)"
+    ],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Otomańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Otomańska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru; adres to nazwa ulicy."
+  },
+  {
+    "id": "ulica-panoramiczna",
+    "nazwa": "Ulica Panoramiczna",
+    "name_en": "Panoramiczna Street (Ursynów Centrum)",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Panoramiczna",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przełom XX i XXI wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Swoją nazwę ulica otrzymała 21 października 1996 roku, dla odcinka od ul. Nowoursynowskiej do ul. Kokosowej.",
+      "27 lutego 2020 roku nazwę „Panoramiczna” otrzymał dotychczas bezimienny odcinek łączący ul. Rosoła z ul. Nowoursynowską.",
+      "Pozytywną opinię w sprawie nadania nazwy wydały Zespół Nazewnictwa Miejskiego, Komisja ds. Nazewnictwa Miejskiego i Rada Dzielnicy Ursynów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Ursynów Centrum that runs parallel to Bulwarowa Street. Its name was given in 1996 for one section and extended to another section in 2020.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Panoramiczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Panoramiczna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica bez numeru; adres to nazwa ulicy."
+  }
+]

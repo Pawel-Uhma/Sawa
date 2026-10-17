@@ -1,0 +1,231 @@
+[
+  {
+    "id": "jezioro-sieleckie",
+    "nazwa": "Jezioro Sieleckie",
+    "name_en": "Sielce Lake",
+    "typ": "park",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.198611111,
+    "lon": 21.040833333,
+    "lokalizacja": "dokladna",
+    "okres": "1775–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jezioro było częścią parku krajobrazowego założonego przez Stanisława Augusta Poniatowskiego w 1775 roku, a zbiornik wodny był jego dominantą.",
+      "Od 1820 roku park był częścią posiadłości belwederskiej.",
+      "W 1863 roku w okolicy zbiornika wodnego rozpoczęto hodowlę jedwabników.",
+      "W 1916 roku obszar został włączony do Warszawy.",
+      "Części parku uległy zniszczeniu w czasie I wojny światowej, a w czasie II wojny światowej w wyniku powstania warszawskiego.",
+      "Renowację parku, a także stawu, przeprowadzono w latach 60. XX w. według projektu Longina Majdeckiego."
+    ],
+    "ciekawostki": [
+      "W bezpośrednim sąsiedztwie południowo-zachodniego brzegu jeziora stoi budynek pod adresem ul. Sobieskiego 100, który w czasach PRL był we władaniu radzieckich służb dyplomatycznych."
+    ],
+    "summary_en": "Sielce Lake lies in Sielce Park in Mokotów. Stanisław August Poniatowski's landscape park, created in 1775, was built around it. The park became part of the Belweder estate in 1820 and was restored in the 1960s.",
+    "ludzie": [
+      {"kto": "Stanisław August Poniatowski", "rola": "założył park krajobrazowy, którego dominantą był zbiornik wodny (1775)", "wiki": null},
+      {"kto": "Longin Majdecki", "rola": "autor projektu renowacji parku i stawu w latach 60. XX w.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Staw Sielecki", "Staw w Parku Sieleckim", "Jezioro Węgrzyna"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Jezioro Sieleckie", "url": "https://pl.wikipedia.org/wiki/Jezioro_Sieleckie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawne nazwy: Staw Sielecki, Staw w Parku Sieleckim, Jezioro Węgrzyna (z nagłówka artykułu)."
+  },
+  {
+    "id": "kamienica-broniewskiego-narbutta-22",
+    "nazwa": "Kamienica Mieczysława Broniewskiego",
+    "name_en": "Mieczysław Broniewski Tenement",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Narbutta 22",
+    "adres_historyczny": null,
+    "lat": 52.2064,
+    "lon": 21.0164,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek projektu Antoniego Jawornickiego został wzniesiony w 1938 roku.",
+      "Styl budynku to funkcjonalizm, z bramą oraz balustradami w stylu art déco i elementami inspirowanymi barokiem.",
+      "Budynek nie odniósł większych zniszczeń w czasie II wojny światowej, ale od strony podwórza wciąż widoczne są ślady po kulach."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1938 functionalist tenement at ul. Narbutta 22 in Mokotów, designed by Antoni Jawornicki. It has Art Deco gates and balustrades, and bullet marks on the courtyard side survive from the war.",
+    "ludzie": [
+      {"kto": "Antoni Jawornicki", "rola": "autor projektu budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kamienica Mieczysława Broniewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kamienica_Mieczys%C5%82awa_Broniewskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst nie mówi, że poeta Mieczysław Broniewski mieszkał tu; wiąże z nim jedynie nazwę kamienicy."
+  },
+  {
+    "id": "kanal-czerniakowski",
+    "nazwa": "Kanał Czerniakowski",
+    "name_en": "Czerniaków Canal",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.194166666,
+    "lon": 21.070277777,
+    "lokalizacja": "dokladna",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kanał zaprojektowano wraz z Kanałem Siekierkowskim w 1934 roku w Oddziale Wodno-Melioracyjnym.",
+      "Jego celem miało być odwodnienie i osuszenie terenów podwarszawskich wsi Czerniaków i Siekierki, które miały być przeznaczone pod zabudowę willową.",
+      "Budowa, którą realizował Wydział Techniczny Zarządu Miejskiego, zakończyła się przed 1937 rokiem.",
+      "W pobliżu kanału, na terenie osiedla „Mokotów Park”, wybudowano zbiornik retencyjny, ponieważ kanał bywa przepełniony."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Czerniaków Canal, also called Main Canal \"A\", runs through Mokotów and Śródmieście. It was designed in 1934 to drain the villages of Czerniaków and Siekierki and was finished before 1937.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kanał Główny „A”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kanał Czerniakowski", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Czerniakowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rów wodny, nie budynek; rekord zostawiam, bo artykuł podaje historię budowy."
+  },
+  {
+    "id": "kanal-siekierkowski",
+    "nazwa": "Kanał Siekierkowski",
+    "name_en": "Siekierki Canal",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.204722222,
+    "lon": 21.0525,
+    "lokalizacja": "dokladna",
+    "okres": "1934–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kanał zaprojektowano wraz z Kanałem Czerniakowskim w 1934 roku w Oddziale Wodno-Melioracyjnym.",
+      "Jego celem miało być odwodnienie i osuszenie terenów podwarszawskich wsi Czerniaków i Siekierki, które miały być przeznaczone pod zabudowę willową.",
+      "Budowa, którą realizował Wydział Techniczny Zarządu Miejskiego, zakończyła się przed 1937 rokiem.",
+      "W przeszłości kanał był połączony z Jeziorkiem Czerniakowskim; wody deszczowe zaczęto później odprowadzać bezpośrednio do Kanału Czerniakowskiego, z pominięciem jeziora."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Siekierki Canal in Mokotów was designed in 1934 together with the Czerniaków Canal to drain the Czerniaków and Siekierki villages. It was completed before 1937.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kanał Siekierkowski", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Siekierkowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rów wodny, nie budynek; rekord zostawiam, bo artykuł podaje historię budowy."
+  },
+  {
+    "id": "kino-moskwa",
+    "nazwa": "Kino Moskwa",
+    "name_en": "Moskwa Cinema",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": "ul. Puławska 19",
+    "lat": 52.21,
+    "lon": 21.0219,
+    "lokalizacja": "dokladna",
+    "okres": "1950–1996",
+    "istnieje": false,
+    "fakty": [
+      "Kino „Moskwa” działało w latach 1950–1996 przy ulicy Puławskiej 19 w Warszawie.",
+      "Budynek kina wzniesiono według projektu Kazimierza Marczewskiego i Stefana Putowskiego.",
+      "Kino oddano do użytku 22 lipca 1950 roku, w Święto Odrodzenia Polski.",
+      "Kino miało 1012 miejsc dla widzów (według innego źródła – 1260).",
+      "We wrześniu 1951 roku przed budynkiem ustawiono dwa kamienne lwy dłuta Józefa Trenarowskiego.",
+      "Ostatni seans filmowy odbył się 30 kwietnia 1996 roku; wyświetlono film „Dziwne dni”.",
+      "Rozbiórkę kina rozpoczęto w 1996 roku, a na jego miejscu wzniesiono biurowiec Europlex."
+    ],
+    "ciekawostki": [
+      "W 1981 roku budynek kina został uwieczniony przez Chrisa Niedenthala na zdjęciu transportera SKOT stojącego na tle reklamy filmu „Czas apokalipsy”.",
+      "Z dawnego gmachu zachowały się tylko rzeźby dwóch lwów Józefa Trenarowskiego, umieszczone na chodniku przed biurowcem od strony ulicy Puławskiej."
+    ],
+    "summary_en": "Moskwa was the largest cinema in postwar Warsaw, open from 1950 to 1996 at ul. Puławska 19 in Mokotów. It was demolished in 1996 and replaced by the Europlex office building. Two stone lions by Józef Trenarowski survive in front of it.",
+    "ludzie": [
+      {"kto": "Kazimierz Marczewski", "rola": "współautor projektu budynku kina", "wiki": null},
+      {"kto": "Stefan Putowski", "rola": "współautor projektu budynku kina", "wiki": null},
+      {"kto": "Józef Trenarowski", "rola": "autor dwóch kamiennych lwów przed budynkiem", "wiki": null},
+      {"kto": "Chris Niedenthal", "rola": "autor zdjęcia z 1981 roku przedstawiającego budynek kina", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wieczór (pierwotna nazwa)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kino Moskwa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Kino_Moskwa_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Budynek rozebrany w 1996; dzisiejszy adres nie jest podany w tekście. Pierwotnie miało nosić nazwę „Wieczór”."
+  },
+  {
+    "id": "klasztor-dominikanow-sluzew",
+    "nazwa": "Klasztor dominikanów na Służewie",
+    "name_en": "Dominican Monastery in Służew",
+    "typ": "swiatynia",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Dominikańska 2",
+    "adres_historyczny": null,
+    "lat": 52.1756,
+    "lon": 21.0364,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamień węgielny pod budowę klasztoru poświęcono 20 kwietnia 1936 roku.",
+      "Klasztor został wzniesiony z inicjatywy o. Jacka Woronieckiego jako ośrodek studiów braci dominikanów pochodzących z krajów Europy Wschodniej.",
+      "Po 1993 roku w klasztorze została umieszczona filia zakonnego Kolegium Filozoficzno-Teologicznego.",
+      "W latach 70. XX wieku podjęto decyzję o budowie przy klasztorze nowej świątyni; kamień węgielny pod kościół św. Dominika wmurowano w 1985 roku, a budowę ukończono w 1994 roku.",
+      "W kościele znajduje się obraz Matki Boskiej Żółkiewskiej, koronowany w 1929 roku, przywieziony do Warszawy po II wojnie światowej z dawnego kościoła dominikanów w Żółkwi."
+    ],
+    "ciekawostki": [
+      "Parafia, której powołanie uratowało klasztor przed zamknięciem w czasach PRL."
+    ],
+    "summary_en": "The Dominican monastery on Służew, at ul. Dominikańska 2 in Mokotów, had its cornerstone laid in 1936. The Church of St. Dominic beside it was built from 1985 and completed in 1994.",
+    "ludzie": [
+      {"kto": "o. Jacek Woroniecki", "rola": "inicjator budowy klasztoru", "wiki": null},
+      {"kto": "Władysław Pieńkowski", "rola": "kierował zespołem architektów projektującym kościół św. Dominika", "wiki": null},
+      {"kto": "Michał Czartoryski", "rola": "związany z klasztorem; błogosławiony, jeden ze 108 błogosławionych polskich męczenników II wojny światowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Klasztor dominikanów w Warszawie (Służew)", "url": "https://pl.wikipedia.org/wiki/Klasztor_dominikan%C3%B3w_w_Warszawie_%28S%C5%82u%C5%BCew%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "klasztor-karmelitow-bosych-raclawicka-31",
+    "nazwa": "Klasztor karmelitów bosych przy ul. Racławickiej",
+    "name_en": "Discalced Carmelite Monastery at Racławicka 31",
+    "typ": "swiatynia",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Racławicka 31",
+    "adres_historyczny": null,
+    "lat": 52.1983,
+    "lon": 21.0161,
+    "lokalizacja": "dokladna",
+    "okres": "1947–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Karmelici byli obecni w Warszawie od 1639 roku i mieli klasztor przy ul. Krakowskie Przedmieście, skasowany przez władze rosyjskie po stłumieniu powstania styczniowego w 1864 roku.",
+      "W 1944 roku nowy klasztor karmelicki powstał przy ul. Czeczota, a po zniszczeniu jego siedziby w czasie powstania warszawskiego zakonnicy założyli kolejny przy ul. Ursynowskiej.",
+      "Od września 1947 roku karmelici zamieszkują budynek przy ul. Racławickiej 31, który jest siedzibą Kurii Prowincjonalnej Warszawskiej Prowincji Karmelitów Bosych.",
+      "Obiekt został w niewielkim stopniu rozbudowany w 1982 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Discalced Carmelites have lived at ul. Racławicka 31 in Mokotów since September 1947, when the building became the seat of the Warsaw Province Curia. It was slightly extended in 1982.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Klasztor karmelitów bosych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Klasztor_karmelit%C3%B3w_bosych_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

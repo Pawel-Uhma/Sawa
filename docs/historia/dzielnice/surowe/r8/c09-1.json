@@ -1,0 +1,153 @@
+[
+  {
+    "id": "ulica-williama-heerleina-lindleya",
+    "nazwa": "Ulica Williama Heerleina Lindleya",
+    "name_en": "William Heerlein Lindley Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Williama Heerleina Lindleya",
+    "adres_historyczny": "ul. Żelazna (odcinek na południe od Al. Jerozolimskich)",
+    "lat": 52.224422,
+    "lon": 20.997182,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1842–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała przed 1842 rokiem jako przedłużenie ul. Żelaznej od Al. Jerozolimskich na południe, początkowo do ul. Nowogrodzkiej.",
+      "Po utworzeniu w 1893 roku placu Starynkiewicza ulica stała się jego wschodnią pierzeją.",
+      "W 1933 roku odcinkowi ulicy Żelaznej na południe od Al. Jerozolimskich nadano nazwę Williama Heerleina Lindleya, głównego inżyniera budowy wodociągów i kanalizacji w Warszawie.",
+      "W latach 1897−1901 wzniesiono na terenie dawnego folwarku świętokrzyskiego kompleks Szpitala Dzieciątka Jezus, przeniesionego tam z placu Wareckiego.",
+      "W 1956 roku w miejscu budynku administracyjnego ukończono budowę gmachu Kliniki Ortopedycznej Szpitala Dzieciątka Jezus zaprojektowanego przez Władysława Borawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in the Ochota district of Warsaw, running south from Aleje Jerozolimskie. Named in 1933 after William Heerlein Lindley, chief engineer of Warsaw's water and sewage works. It is home to the Child Jesus Hospital complex.",
+    "ludzie": [
+      {"kto": "William Heerlein Lindley", "rola": "główny inżynier budowy wodociągów i kanalizacji w Warszawie, patron ulicy od 1933 r.", "wiki": null},
+      {"kto": "Władysław Borawski", "rola": "projektant gmachu Kliniki Ortopedycznej Szpitala Dzieciątka Jezus (ukończony 1956)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Żelazna (odcinek na południe od Al. Jerozolimskich)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Williama Heerleina Lindleya w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Williama_Heerleina_Lindleya_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne: środek odcinka z nagłówka WSPÓŁRZĘDNE."
+  },
+  {
+    "id": "ulica-wojciecha-oczki",
+    "nazwa": "Ulica Wojciecha Oczki",
+    "name_en": "Wojciech Oczko Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Wojciecha Oczki",
+    "adres_historyczny": null,
+    "lat": 52.224278,
+    "lon": 21.000778,
+    "lokalizacja": "przyblizona",
+    "okres": "1865–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w 1865 roku jako przedłużenie na zachód ulicy Wspólnej.",
+      "Obecna nazwa została nadana w 1921 roku.",
+      "W latach 1897–1901 po północnej stronie ulicy, na terenie dawnego folwarku świętokrzyskiego, wybudowano kompleks Szpitala Dzieciątka Jezus.",
+      "W latach 1899–1901 u zbiegu z ul. Chałubińskiego wybudowano gmach Collegium Anatomicum według projektu Antoniego Jabłońskiego-Jasieńczyka.",
+      "W latach 1921–1925 Tadeusz Zieliński rozbudował w stylu neoklasycystycznym pawilon rosyjskich koszar kawalerii z przeznaczeniem na Gmach Medycyny Sądowej (nr 1).",
+      "W latach 1937–1938 pod nr 5 wybudowano gmach Ambulatorium, późniejszy Dom Medyka, zaprojektowany przez Stanisława Odyńca-Dobrowolskiego.",
+      "Po upadku powstania warszawskiego Niemcy wysadzili narożny segment Collegium Anatomicum, szpitalny pawilon kotłowni i maszynowni oraz podpalili Gmach Medycyny Sądowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in the Ochota district running from Chałubińskiego Street to Lindley Street. It was laid out in 1865 and named after Wojciech Oczko in 1921. Its buildings include the Child Jesus Hospital complex and the Collegium Anatomicum, both damaged in 1944.",
+    "ludzie": [
+      {"kto": "Antoni Jabłoński-Jasieńczyk", "rola": "autor projektu gmachu Collegium Anatomicum (1899–1901)", "wiki": null},
+      {"kto": "Tadeusz Zieliński", "rola": "rozbudował pawilon koszar na Gmach Medycyny Sądowej (1921–1925)", "wiki": null},
+      {"kto": "Stanisław Odyniec-Dobrowolski", "rola": "projektant gmachu Ambulatorium, późniejszego Domu Medyka (1937–1938)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Wspólna (przedłużenie na zachód)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Wojciecha Oczki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wojciecha_Oczki_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne: środek odcinka z nagłówka. Nazwisko architekta w tekście odmienione (Odyńca-Dobrowolskiego); w rekordzie podane w mianowniku."
+  },
+  {
+    "id": "ulica-wlodarzewska",
+    "nazwa": "Ulica Włodarzewska",
+    "name_en": "Włodarzewska Street",
+    "typ": "ulica",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Włodarzewska",
+    "adres_historyczny": null,
+    "lat": 52.20213,
+    "lon": 20.955727,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1916–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Włodarzewska biegnie śladem dawnej drogi wiejskiej, wzdłuż której położona była wieś Szczęśliwice.",
+      "W 1916 roku w obręb XXIII okręgu miasta włączono Rakowiec; nowe ulice nazwano Grójecką i Solipsowską.",
+      "12 kwietnia 1954 roku zmieniono nazwę ulicy na Włodarzewską.",
+      "Od lat 90. XX wieku wzdłuż ulicy zaczęto budować bloki mieszkalne.",
+      "W 2015 roku rozpoczęto przebudowę ulicy, co wiąże się z jej poszerzeniem i wyposażeniem w kanalizację burzową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in the Ochota district, following an old rural road that led to the village of Szczęśliwice. Renamed Włodarzewska in 1954, it was lined with housing blocks from the 1990s onward.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Solipsowska (część odcinka do 1954 r.)"],
+    "zrodla": [{"tytul": "Wikipedia: Ulica Włodarzewska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_W%C5%82odarzewska_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne: środek odcinka z nagłówka. Artykuł opisuje ulicę przecinającą kilka dzielnic; w rekordzie tylko Ochota, zgodnie z nagłówkiem."
+  },
+  {
+    "id": "vii-liceum-slowackiego-wawelska",
+    "nazwa": "Gmach VII Liceum Ogólnokształcącego im. Juliusza Słowackiego",
+    "name_en": "Building of the 7th Juliusz Słowacki Secondary School",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Wawelska 46",
+    "adres_historyczny": null,
+    "lat": 52.2172,
+    "lon": 20.9961,
+    "lokalizacja": "dokladna",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1931–1933 zbudowano gmach przy ul. Wawelskiej 46 według projektu inż. architekta Tadeusza Nowakowskiego.",
+      "W roku szkolnym 1933/34 uczennice rozpoczęły naukę w nowym budynku o nowoczesnym i pięknym wyposażeniu jak na owe czasy.",
+      "W 1922 roku gimnazjum zostało upaństwowione i otrzymało patrona, Juliusza Słowackiego.",
+      "W latach 1939–1944 liceum zostało oficjalnie zamknięte przez władze niemieckie; konspiracyjnie przyznano 244 świadectwa dojrzałości.",
+      "W wyniku działań wojennych zginęło 5 nauczycieli, 6 członków Zarządu Tow. Przyjaciół Gimnazjum i 74 uczennice."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The school building at 46 Wawelska Street in Ochota, built in 1931–1933 to a design by Tadeusz Nowakowski. The school, named after the poet Juliusz Słowacki since 1922, was closed by the German authorities during the occupation.",
+    "ludzie": [
+      {"kto": "Tadeusz Nowakowski", "rola": "inżynier architekt, autor projektu gmachu przy ul. Wawelskiej 46", "wiki": null},
+      {"kto": "Juliusz Słowacki", "rola": "patron szkoły od 1922 r.", "wiki": "https://pl.wikipedia.org/wiki/Juliusz_S%C5%82owacki"}
+    ],
+    "dawne_nazwy": ["Żeńskie Gimnazjum Państwowe im. Juliusza Słowackiego w Warszawie"],
+    "zrodla": [{"tytul": "Wikipedia: VII Liceum Ogólnokształcące im. Juliusza Słowackiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/VII_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_im._Juliusza_S%C5%82owackiego_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord o budynku szkoły; historia szkoły sama w sobie pominięta poza faktami dotyczącymi gmachu i okupacji."
+  },
+  {
+    "id": "warszawa-aleje-jerozolimskie-przystanek",
+    "nazwa": "Przystanek Warszawa Aleje Jerozolimskie",
+    "name_en": "Warszawa Aleje Jerozolimskie railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "al. Jerozolimskie",
+    "adres_historyczny": null,
+    "lat": 52.206111,
+    "lon": 20.940833,
+    "lokalizacja": "dokladna",
+    "okres": "2008–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Przystanek został wybudowany pod koniec lipca i oddany do użytku na początku września 2008 roku.",
+      "Od 2012 roku zatrzymują się tu pociągi SKM na trasach Warszawa Lotnisko Chopina – Sulejówek Miłosna i Warszawa Lotnisko Chopina – Legionowo oraz pociągi Kolei Mazowieckich relacji Warszawa Lotnisko Chopina – Modlin.",
+      "Od 2023 roku na przystanku zatrzymują się pociągi relacji Piaseczno – Wieliszew/Zegrze Południowe i Piaseczno – Radzymin/Wieliszew.",
+      "Przystanek WKD ma jeden peron wyspowy, zadaszony wiaduktem Al. Jerozolimskich."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A railway stop on the Radom line at Aleje Jerozolimskie in Ochota, opened in September 2008. Served by the SKM, Koleje Mazowieckie and WKD services.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Warszawa Aleje Jerozolimskie", "url": "https://pl.wikipedia.org/wiki/Warszawa_Aleje_Jerozolimskie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres podany tylko jako ulica, bez numeru."
+  }
+]

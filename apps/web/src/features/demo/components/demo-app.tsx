@@ -18,7 +18,6 @@ import { isAt, useRideClock } from "../lib/ride-clock";
 import {
   CUSTOM_DESTINATION_NAME,
   CUSTOM_DESTINATION_NAME_EN,
-  DESTINATION_PRESETS,
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
@@ -83,12 +82,19 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const [editing, setEditing] = useState<ProfileStep | null>(null);
   const [tab, setTab] = useState<Tab>("map");
   const [durationMin, setDurationMin] = useState(isStage ? DEMO_DURATION_MIN : 90);
-  const [rideEnd, setRideEnd] = useState<RideEnd>({ type: "loop" });
+  const [endType, setEndType] = useState<RideEndType>("loop");
   const [travel, setTravel] = useState<Travel>("transit");
-  // Ostatni wybrany cel wraca po przełączeniu „Wracam tu” → „Do celu”
-  const [lastDestination, setLastDestination] = useState<Extract<RideEnd, { type: "destination" }>>(
-    { type: "destination", ...DESTINATION_PRESETS[0] },
+  // Celu nie podsuwamy: do wyboru użytkownika. Wybrany wraca po przełączeniu „Wracam tu” → „Do celu”
+  const [chosenDestination, setChosenDestination] = useState<Extract<
+    RideEnd,
+    { type: "destination" }
+  > | null>(null);
+  // „Do celu” bez wybranego celu: trasy jeszcze nie liczymy, przycisk czeka na cel
+  const rideEnd: RideEnd = useMemo(
+    () => (endType === "destination" && chosenDestination ? chosenDestination : { type: "loop" }),
+    [endType, chosenDestination],
   );
+  const needsDestination = endType === "destination" && chosenDestination === null;
   const [route, setRoute] = useState<MockStop[]>([]);
   const [planned, setPlanned] = useState<Route | null>(null);
   const [planning, setPlanning] = useState(false);
@@ -162,15 +168,11 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     showRoute,
   ]);
 
-  const changeRideEnd = useCallback((next: RideEnd) => {
-    if (next.type === "destination") setLastDestination(next);
-    setRideEnd(next);
+  const changeRideEnd = useCallback((next: RideEnd | null) => {
+    if (next?.type === "destination") setChosenDestination(next);
+    else if (next === null) setChosenDestination(null);
+    setEndType(next?.type ?? "destination");
   }, []);
-
-  const changeRideEndType = useCallback(
-    (type: RideEndType) => setRideEnd(type === "destination" ? lastDestination : { type }),
-    [lastDestination],
-  );
 
   // Safari na iOS pomija user-scalable=no, więc szczypanie strony blokujemy wprost. Mapa ma własny zoom na dotyku.
   useEffect(() => {
@@ -236,6 +238,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const activeStop = route[activeIndex];
   const isHome = stage === "map" && tab === "map";
   const destination = rideEnd.type === "destination" ? rideEnd : null;
+  const isPickingEnd = endType === "destination";
   // Karta miejsca działa też na trasie: klik w pinezkę spoza trasy pokazuje to miejsce.
   const isPlaceOpen = (isHome || isRoute) && selectedPlace !== null;
 
@@ -250,7 +253,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     }
     if (isPlaceOpen) return { top: isRoute ? 88 : 120, right: 0, bottom: placeCoverPx, left: 0 };
     if (isRoute) return { top: 88, right: 0, bottom: sheetCoverPx, left: 0 };
-    return { top: 88, right: 0, bottom: panelCollapsed ? 96 : destination ? 470 : 380, left: 0 };
+    return { top: 88, right: 0, bottom: panelCollapsed ? 96 : isPickingEnd ? 470 : 380, left: 0 };
   }, [
     isDesktop,
     isWide,
@@ -259,7 +262,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     sheetCoverPx,
     placeCoverPx,
     panelCollapsed,
-    destination,
+    isPickingEnd,
   ]);
 
   const camera: MapCamera = useMemo(() => {
@@ -409,7 +412,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               user={origin}
               destination={isRoute || isHome ? destination?.point : undefined}
               onMapClick={
-                isHome && destination
+                isHome && isPickingEnd
                   ? (point) =>
                       changeRideEnd({
                         type: "destination",
@@ -448,11 +451,13 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 travel={travel}
                 onTravelChange={setTravel}
                 rideEnd={rideEnd}
-                onRideEndTypeChange={changeRideEndType}
+                endType={endType}
+                onRideEndTypeChange={setEndType}
                 onRideEndChange={changeRideEnd}
                 collapsed={panelCollapsed}
                 onCollapsedChange={setPanelCollapsed}
                 onGenerate={generateRoute}
+                canGenerate={!needsDestination}
                 planning={planning}
                 planError={planError}
                 locating={!isStage && start.status === "locating"}

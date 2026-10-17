@@ -1,0 +1,156 @@
+[
+  {
+    "id": "zespol-stacji-filtrow",
+    "nazwa": "Zespół Stacji Filtrów",
+    "name_en": "Water Filtration Station Complex",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Koszykowa 81",
+    "adres_historyczny": null,
+    "lat": 52.22027778,
+    "lon": 20.995,
+    "lokalizacja": "dokladna",
+    "okres": "1883–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Zespół został zbudowany w latach 1883–1886 z inicjatywy prezydenta miasta Sokrata Starynkiewicza według projektu Williama Lindleya i jego syna Williama Heerleina Lindleya.",
+      "Pierwsza oczyszczona woda popłynęła do mieszkańców Warszawy ze Stacji Filtrów 3 lipca 1886 roku.",
+      "5 sierpnia 1915 roku wycofujące się wojska rosyjskie wysadziły środkowe przęsła mostu Kierbedzia; dostawy wody ze Stacji Filtrów wznowiono 30 września 1915 roku.",
+      "W latach 1929–1933 na licencji kanadyjskiej zbudowano Zakład Filtrów Pospiesznych.",
+      "W 1973 i 2008 roku większość obiektów zespołu wpisano do rejestru zabytków, a w 2012 roku zespół uznano za pomnik historii."
+    ],
+    "ciekawostki": [
+      "Łączny obszar zajmowany przez Stację Filtrów wynosił ok. 36 ha; w związku z jej budową zlikwidowano południowy odcinek ul. Żelaznej (między ulicami Nowowiejską i Koszykową)."
+    ],
+    "summary_en": "The Warsaw Water Filtration Station on Koszykowa Street, built in 1883–1886 to designs by William Lindley and his son William Heerlein Lindley. It was declared a historic monument in 2012.",
+    "ludzie": [
+      {"kto": "Sokrat Starynkiewicz", "rola": "prezydent Warszawy, inicjator budowy wodociągów i kanalizacji", "wiki": null},
+      {"kto": "William Lindley", "rola": "autor projektu wodociągów (1879)", "wiki": null},
+      {"kto": "William Heerlein Lindley", "rola": "naczelny inżynier budowy, do śmierci w 1917", "wiki": null},
+      {"kto": "Alfons Grotowski", "rola": "bezpośredni kierownik prac i zastępca głównego inżyniera", "wiki": null}
+    ],
+    "dawne_nazwy": ["Stacja Filtrów (wodociąg Lindleya)"],
+    "zrodla": [{"tytul": "Wikipedia: Zespół Stacji Filtrów w Warszawie", "url": "https://pl.wikipedia.org/wiki/Zesp%C3%B3%C5%82_Stacji_Filtr%C3%B3w_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Ciekawostka o ul. Żelaznej pochodzi z opisu budowy, nie z osobnego wpisu historycznego."
+  },
+  {
+    "id": "sciezka-edukacyjna-marii-sklodowskiej-curie",
+    "nazwa": "Ścieżka edukacyjna Marii Skłodowskiej-Curie",
+    "name_en": "Maria Skłodowska-Curie educational trail",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "park im. Marii Skłodowskiej-Curie, u zbiegu ul. Wawelskiej i ul. Marii Skłodowskiej-Curie",
+    "adres_historyczny": null,
+    "lat": 52.215213888,
+    "lon": 20.983883333,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ścieżka edukacyjna została otwarta 26 maja 2011 roku w parku u zbiegu ulicy Wawelskiej i ulicy Marii Skłodowskiej-Curie.",
+      "Składa się z pięciu tablic z informacjami o życiu Marii Skłodowskiej-Curie, tzw. atomów, które początkowo otaczały półkoliście pomnik w parku.",
+      "Otwarcie było związane z ogłoszeniem roku 2011 Rokiem Marii Skłodowskiej-Curie i odbyło się podczas pikniku naukowego.",
+      "Rok później, ze względu na częste wandalizmy, „atomy” ścieżki przeniesiono z powszechnie dostępnej części parku do ogrodu Centrum Onkologii."
+    ],
+    "ciekawostki": [
+      "Drzewo posadzone przez noblistkę w ogrodzie Instytutu ma od 2012 roku status pomnika przyrody i nazwę „Maria”."
+    ],
+    "summary_en": "An educational trail in the Maria Skłodowska-Curie park in Ochota, opened on 26 May 2011 during the Year of Marie Curie. Its information panels were moved to the Oncology Centre garden in 2012 after repeated vandalism.",
+    "ludzie": [
+      {"kto": "Ludwika Nitschowa", "rola": "autorka pomnika chemiczki w parku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Ścieżka edukacyjna Marii Skłodowskiej-Curie w Warszawie", "url": "https://pl.wikipedia.org/wiki/%C5%9Acie%C5%BCka_edukacyjna_Marii_Sk%C5%82odowskiej-Curie_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje roku przeniesienia wprost poza zdaniem „Rok później”; rok 2012 wynika z daty otwarcia (2011)."
+  },
+  {
+    "id": "aleja-jerzego-waszyngtona",
+    "nazwa": "Aleja Jerzego Waszyngtona",
+    "name_en": "George Washington Avenue",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "al. Jerzego Waszyngtona",
+    "adres_historyczny": "Czerwona Droga (pierwotna nazwa)",
+    "lat": 52.240555555,
+    "lon": 21.064166666,
+    "lokalizacja": "przyblizona",
+    "okres": "1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie była to kręta Czerwona Droga usypana w 1914 roku w celach wojskowych jako łącznik do Traktu Brzeskiego.",
+      "W 1928 roku wytyczono w miejscu dawnej polnej Czerwonej Drogi nową ulicę, a w 1939 roku po wydłużeniu do 2430 m stała się trzecią co do długości arterią stolicy.",
+      "W kwietniu 1932 roku ulicy nadano nazwę pierwszego prezydenta Stanów Zjednoczonych, Jerzego Waszyngtona.",
+      "Latem 1939 roku na ulicy rozpoczęto budowę torów tramwajowych; inwestycję dokończono wiosną 1942 roku w czasie okupacji niemieckiej.",
+      "W latach 1962–1963 pod numerem 2b wzniesiono 13-piętrowy wieżowiec zaprojektowany przez Marka Leykama; był to pierwszy wieżowiec w prawobrzeżnej Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A long avenue in the Praga-Południe district, once the Red Road built in 1914. Named after George Washington in 1932, it was the third-longest street in Warsaw by 1939.",
+    "ludzie": [
+      {"kto": "Marek Leykam", "rola": "projektant 13-piętrowego wieżowca przy al. Jerzego Waszyngtona 2b (1962–1963)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czerwona Droga"],
+    "zrodla": [{"tytul": "Wikipedia: Aleja Jerzego Waszyngtona w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Jerzego_Waszyngtona_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne: środek odcinka z nagłówka. Wieżowiec z 1962–1963 ma tylko jeden fakt w artykule, więc nie wydzielono go osobnym rekordem."
+  },
+  {
+    "id": "aleja-stanow-zjednoczonych",
+    "nazwa": "Aleja Stanów Zjednoczonych",
+    "name_en": "United States Avenue",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "al. Stanów Zjednoczonych",
+    "adres_historyczny": null,
+    "lat": 52.2314,
+    "lon": 21.0728,
+    "lokalizacja": "przyblizona",
+    "okres": "1926–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana uchwałą Rady Miejskiej Warszawy z dnia 27 września 1926 roku.",
+      "Ulica została wytyczona pod koniec lat 20. XX wieku do ul. Saskiej.",
+      "W 1974 roku została przedłużona do ronda Wiatraczna, z poprowadzeniem odcinka od ul. Saskiej do mostu Łazienkowskiego na estakadzie.",
+      "Od lat 70. do reformy sieci drogowej w 1985 roku odcinek od mostu Łazienkowskiego do węzła z ul. Ostrobramską był częścią drogi międzynarodowej E8.",
+      "W latach 2015–2016 wybudowano drogę dla rowerów po obydwu stronach całej alei."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A dual-carriageway road in Praga-Południe, part of the Łazienkowska route. Named by the Warsaw City Council in 1926, it was extended to Wiatraczna roundabout in 1974.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Aleja Stanów Zjednoczonych w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Stan%C3%B3w_Zjednoczonych_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne: środek odcinka z nagłówka."
+  },
+  {
+    "id": "aleja-zieleniecka",
+    "nazwa": "Aleja Zieleniecka",
+    "name_en": "Zieleniecka Avenue",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "al. Zieleniecka",
+    "adres_historyczny": null,
+    "lat": 52.2428,
+    "lon": 21.0494,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona około 1909–1911 na wale łączącym Kamionek i Pragę z Saską Kępą w związku z budową tzw. Trzeciego Mostu (most Poniatowskiego).",
+      "Nazwa upamiętnia wygraną wojsk polskich nad rosyjskimi w bitwie pod Zieleńcami w 1792 roku; przy rondzie Waszyngtona stoi głaz z tablicą upamiętniającą bitwę.",
+      "W latach 1901–1952 w pobliżu skrzyżowania z ul. Zamoyskiego znajdował się przystanek kolejki jabłonowskiej Park Paderewskiego.",
+      "W latach 1905–1922 po wschodniej stronie ulicy założono park Skaryszewski.",
+      "Od 1934 roku przy ulicy działało boisko piłkarskie z bieżnią lekkoatletyczną należące do żydowskiego klubu sportowego Makabi Warszawa."
+    ],
+    "ciekawostki": [
+      "Pod ulicą znajduje się tzw. kolektor stadionowy, którym przepływają wody z Jeziora Kamionkowskiego do środkowego basenu Portu Praskiego."
+    ],
+    "summary_en": "A street in Praga-Południe running along the embankment between Kamionek and Saska Kępa. Named after the 1792 Battle of Zieleńce, it runs past the Skaryszewski Park and the National Stadium.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Aleja Zieleniecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Aleja_Zieleniecka_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne: środek odcinka z nagłówka."
+  }
+]

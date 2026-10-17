@@ -1,0 +1,243 @@
+[
+  {
+    "id": "cmentarz-wilanowski",
+    "nazwa": "Cmentarz Wilanowski",
+    "name_en": "Wilanów Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Biedronki 1a",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1816–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz w Wilanowie został założony w polu w 1816 roku z inicjatywy Aleksandry z Lubomirskich Potockiej, żony Stanisława Kostki Potockiego.",
+      "W latach 1823-1826 Chrystian Piotr Aigner wzniósł neogotycką kapliczkę dla Stanisława Kostki Potockiego i jego brata, Ignacego Potockiego.",
+      "W 1860 roku Henryk Marconi powiększył cmentarz, nadając mu kształt krzyża greckiego.",
+      "W 1867 roku szczątki Stanisława Kostki Potockiego i Ignacego Potockiego zostały przeniesione do kościoła św. Anny.",
+      "W czasie II wojny światowej nekropolia zapełniła się mogiłami powstańców, a po wojnie także ofiar Służby Bezpieczeństwa.",
+      "W latach 1948-1953 cmentarz uporządkowano według projektu Gerarda Ciołka. Od 1973 roku jest zabytkiem.",
+      "W 1997 roku cmentarz został odnowiony. Dziś ma 2,5 hektara."
+    ],
+    "ciekawostki": [
+      "Na cmentarzu pochowani są m.in. Roman Wilhelmi (1936-1991) – aktor oraz Jan Wejchert (1950-2009) – przedsiębiorca.",
+      "Obok bramy znajduje się kamień upamiętniający przebicie się oddziałów powstańczych do Wilanowa – odsłonięto go 27 września 1998 roku."
+    ],
+    "summary_en": "Wilanów Cemetery is a Catholic parish cemetery founded in 1816 at the initiative of Aleksandra Potocka. Its neo-Gothic Potocki family chapel was built in 1823-1826 and the cemetery has been a historic monument since 1973.",
+    "ludzie": [
+      {"kto": "Aleksandra z Lubomirskich Potocka", "rola": "inicjatorka założenia cmentarza w 1816 roku", "wiki": null},
+      {"kto": "Chrystian Piotr Aigner", "rola": "wzniósł neogotycką kapliczkę Potockich (1823-1826)", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "powiększył cmentarz w 1860 roku, autor głównej bramy", "wiki": null},
+      {"kto": "Gerard Ciołek", "rola": "autor projektu uporządkowania cmentarza (1948-1953)", "wiki": null},
+      {"kto": "Roman Wilhelmi", "rola": "pochowany na cmentarzu (1936-1991), aktor", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Cmentarz Wilanowski", "url": "https://warszawa.fandom.com/pl/wiki/Cmentarz_Wilanowski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z tekstu to adres zarządu cmentarza, nie bramy. Wejście główną bramą od ul. Przyczółkowej, bez numeru w tekście."
+  },
+  {
+    "id": "cmentarz-na-kepie-zawadowskiej",
+    "nazwa": "Cmentarz na Kępie Zawadowskiej",
+    "name_en": "Kępa Zawadowska Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Sytej",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1832–1944",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz został założony w 1832 roku i wykorzystywany był do 1944 roku, kiedy to osadnicy zostali ewakuowani przed zbliżającą się Armią Czerwoną.",
+      "Był to historyczny cmentarz ewangelicko-augsburski osadników niemieckich i holenderskich (Olędrów) zamieszkujących Kępę Zawadowską w latach 1819-1944.",
+      "W 2002 roku staraniem Urzędu Dzielnicy Wilanów teren cmentarza został uporządkowany."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A historic Evangelical-Augsburg cemetery of German and Dutch (Olędrzy) settlers on Kępa Zawadowska, used from 1832 until 1944. The district office tidied the site in 2002.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Cmentarz na Kępie Zawadowskiej", "url": "https://warszawa.fandom.com/pl/wiki/Cmentarz_na_Kępie_Zawadowskiej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko nazwę ulicy (ul. Sytej, przy skrzyżowaniu z ul. Bruzdową), bez numeru."
+  },
+  {
+    "id": "figura-sw-jana-nepomucena-na-augustowce",
+    "nazwa": "Figura św. Jana Nepomucena na Augustówce",
+    "name_en": "Statue of St. John of Nepomuk at Augustówka",
+    "typ": "pomnik",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Wiertnicza",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Figura ustawiona została w tym miejscu w XIX wieku.",
+      "Figura została zapewne ustawiona, by chronić okolicę przed powodzią, bo wysokie wody Wisły często zalewały okolice.",
+      "W 1981 roku wierną kopię figury wykonała Maria Owczarczyk. Kopia stanęła w tym miejscu, a oryginał trafił do kościoła św. Anny w Wilanowie.",
+      "Kiedy w 2002 roku obok figury powstał Media Business Centre z siedzibą TVN, święty przybrał nową funkcję."
+    ],
+    "ciekawostki": [
+      "Jan Nepomucen jest uważany za patrona zachowania tajemnicy i dobrego imienia, bo zginął nie wyjawiwszy tajemnicy spowiedzi."
+    ],
+    "summary_en": "A 19th-century statue of St. John of Nepomuk at the junction of Wiertnicza and Augustówka in Wilanów. The original was replaced in 1981 by a copy made by Maria Owczarczyk.",
+    "ludzie": [
+      {"kto": "Maria Owczarczyk", "rola": "wykonała wierną kopię figury w 1981 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Figura św. Jana Nepomucena na Augustówce", "url": "https://warszawa.fandom.com/pl/wiki/Figura_św._Jana_Nepomucena_na_Augustówce"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje tylko ulicę (u zbiegu ul. Wiertniczej i Augustówki, przed budynkiem TVN), bez numeru."
+  },
+  {
+    "id": "jezioro-pod-morgami",
+    "nazwa": "Jezioro Pod Morgami",
+    "name_en": "Pod Morgami Lake",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Zastruże",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jezioro Pod Morgami powstało ze spiętrzenia wód kanałów irygacyjnych znajdujących się na terenie Wilanowa oraz podziału Jeziora Lisowskiego.",
+      "Zalew położony jest w Powsinie (obszar Zamość) wzdłuż ul. Zastruże.",
+      "Jezioro jest połączone z rzeką Wilanówką za pomocą rowu Latoszka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A reservoir in Powsin formed by damming irrigation canals in Wilanów and splitting Lisowskie Lake. It is connected to the Wilanówka river by the Latoszka ditch.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Jezioro Pod Morgami", "url": "https://warszawa.fandom.com/pl/wiki/Jezioro_Pod_Morgami"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Krótki artykuł, bez dat. Tekst podaje tylko ulicę (wzdłuż ul. Zastruże), bez numeru."
+  },
+  {
+    "id": "kosciol-sw-elzbiety-turynskiej",
+    "nazwa": "Kościół św. Elżbiety Turyńskiej",
+    "name_en": "St. Elizabeth of Thuringia Church",
+    "typ": "swiatynia",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Przyczółkowa 29",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1398–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia kościoła sięga 1398 roku, kiedy to z inicjatywy Elżbiety Ciołkowej, wdowy po kasztelanie czerskim Andrzeju, wzniesiono we wsi Powsin pierwszy drewniany kościół.",
+      "28 czerwca 1410 roku przy kościele erygowano parafię św. Elżbiety Turyńskiej; dokonał tego biskup poznański Wojciech (Adalbert).",
+      "W 1725 roku Elżbieta z Lubomirskich Sieniawska ufundowała nowy, murowany kościół pw. św. Elżbiety według projektu Józefa Fontany.",
+      "W latach 1803-1815 proboszczem parafii był późniejszy arcybiskup warszawski, Jan Paweł Woronicz.",
+      "2 czerwca 1891 roku nowy kościół konsekrował ks. bp Kazimierz Ruszkiewicz.",
+      "W 1921 roku z inicjatywy ks. proboszcza Teofila Mierzejewskiego rozebrano wieże. Przebudowę zaprojektował Józef Pius Dziekoński.",
+      "28 czerwca 1998 roku, podczas obchodów sześćsetlecia kościoła, prymas Glemp ukoronował Matkę Bożą Powsińską koroną papieską."
+    ],
+    "ciekawostki": [
+      "W 1675 roku mówiono o cudownym obrazie Matki Boskiej Powsińskiej, że „przez wieki ciągnąć tu będą pielgrzymki z całego Mazowsza”."
+    ],
+    "summary_en": "A Baroque church in Powsin with a parish founded in 1410, rebuilt in brick in 1725. It houses the miraculous image of Our Lady Longing, crowned in 1998 with a papal crown.",
+    "ludzie": [
+      {"kto": "Elżbieta Ciołkowa", "rola": "inicjatorka pierwszego drewnianego kościoła (1398)", "wiki": null},
+      {"kto": "Elżbieta z Lubomirskich Sieniawska", "rola": "ufundowała murowany kościół (1725)", "wiki": null},
+      {"kto": "Józef Fontana", "rola": "autor projektu kościoła z 1725 roku", "wiki": null},
+      {"kto": "Jan Paweł Woronicz", "rola": "proboszcz parafii (1803-1815), późniejszy arcybiskup warszawski", "wiki": null},
+      {"kto": "Kazimierz Ruszkiewicz", "rola": "konsekrował nowy kościół w 1891 roku", "wiki": null},
+      {"kto": "Teofil Mierzejewski", "rola": "proboszcz, z jego inicjatywy rozebrano wieże w 1921 roku", "wiki": null},
+      {"kto": "Józef Pius Dziekoński", "rola": "zaprojektował przebudowę w 1921 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Kościół św. Elżbiety Turyńskiej", "url": "https://warszawa.fandom.com/pl/wiki/Kościół_św._Elżbiety_Turyńskiej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-jana-pawla-ii-i-prymasa-wyszynskiego",
+    "nazwa": "Muzeum Jana Pawła II i Prymasa Wyszyńskiego",
+    "name_en": "John Paul II and Primate Wyszyński Museum",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Hlonda 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2016–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum zostało powołane 15 kwietnia 2016 roku, po przekształceniu z instytucji prowadzonej przez Archidiecezję Warszawską.",
+      "Uroczyste otwarcie muzeum miało miejsce 16 października 2019 roku, z udziałem Prezydenta RP Andrzeja Dudy.",
+      "Ekspozycja położona jest w kopule Świątyni na wysokości 26 metrów, na powierzchni ok. 2000 m².",
+      "Ramy czasowe ekspozycji zamknięte są w przedziale lat 1901 (rok urodzin Prymasa Wyszyńskiego) – 2005 (rok śmierci św. Jana Pawła II)."
+    ],
+    "ciekawostki": [
+      "Hasłem przewodnim muzeum jest cytat z Ewangelii św. Mateusza (Mt 5,14): „Wy jesteście światłem świata. Nie może się ukryć miasto położone na górze”."
+    ],
+    "summary_en": "A museum under the dome of the Temple of Divine Providence in Wilanów, dedicated to John Paul II and Cardinal Stefan Wyszyński. It was created in 2016 and officially opened on 16 October 2019.",
+    "ludzie": [
+      {"kto": "Andrzej Duda", "rola": "Prezydent RP, uczestniczył w uroczystym otwarciu muzeum (2019)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Muzeum Jana Pawła II i Prymasa Wyszyńskiego", "url": "https://warszawa.fandom.com/pl/wiki/Muzeum_Jana_Pawła_II_i_Prymasa_Wyszyńskiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "osiedle-krolewskie",
+    "nazwa": "Osiedle Królewskie",
+    "name_en": "Królewskie Housing Estate",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Aleja Rzeczypospolitej 25",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2013–2015",
+    "istnieje": true,
+    "fakty": [
+      "Budowę pierwszego budynku wielorodzinnego z usługami na osiedlu rozpoczęto w czerwcu 2013 roku, a uroczysta inauguracja budowy wraz z wmurowaniem kamienia węgielnego odbyła się 29 sierpnia.",
+      "Pierwszy etap osiedla został zrealizowany w trzecim kwartale 2014 roku; w pierwszym frontowym budynku (nr 27) znalazło się 110 mieszkań.",
+      "W budynku nr 27a, ukończonym w trzecim kwartale 2014 roku, znalazło się 140 lokali mieszkalnych.",
+      "W styczniu 2014 roku deweloper uzyskał pozwolenia na budowę trzeciego i czwartego etapu, budynków nr 27b i 27c, z 99 oraz 76 lokalami mieszkalnymi.",
+      "Budowa etapu piątego (nr 25) w południowo-zachodnim narożniku skrzyżowania Al. Rzeczypospolitej z ul. Oś Królewska rozpoczęła się w czerwcu 2014 roku; powstanie w nim 83 lokale mieszkalne.",
+      "Pod koniec 2014 roku rozpoczęła się budowa ostatniego, szóstego etapu, w którym powstało 120 lokali mieszkalnych; inwestycję ukończono w 2015 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential estate in the north-west of Miasteczko Wilanów on Aleja Rzeczypospolitej, built by Robyg Development in stages between 2013 and 2015. The design was by the Atelier 3 Girtler & Girtler studio.",
+    "ludzie": [
+      {"kto": "Ryszard Girtler", "rola": "autor projektu osiedla (pracownia Atelier 3 Girtler & Girtler)", "wiki": null},
+      {"kto": "Marta Girtler-Szymborska", "rola": "autorka projektu osiedla (Atelier 3 Girtler & Girtler)", "wiki": null},
+      {"kto": "Jerzy Ossoliński", "rola": "autor projektu osiedla (Atelier 3 Girtler & Girtler)", "wiki": null},
+      {"kto": "Robyg Development", "rola": "inwestor osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Osiedle Królewskie", "url": "https://warszawa.fandom.com/pl/wiki/Osiedle_Królewskie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje adres al. Rzeczypospolitej 25/27, a w rekordzie wpisany jest pierwszy numer. Osiedle obejmuje też budynki nr 27a, 27b, 27c."
+  }
+]

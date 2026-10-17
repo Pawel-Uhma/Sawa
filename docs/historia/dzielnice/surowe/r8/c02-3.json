@@ -1,0 +1,404 @@
+[
+  {
+    "id": "osiedle-chelmska",
+    "nazwa": "Osiedle Chełmska",
+    "name_en": "Chełmska estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Chełmska 25A, 27, 31; ul. Sobieskiego 114",
+    "adres_historyczny": null,
+    "lat": 52.201388888, "lon": 21.036388888,
+    "lokalizacja": "przyblizona",
+    "okres": "1960–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 1960–1963 według projektu Zygmunta Lewańskiego i Włodzimierza Witkowskiego z „Miastoprojektu Stolica Południe”.",
+      "Składa się z czterech dziewięciokondygnacyjnych bloków mieszkalnych, w których jest 231 mieszkań.",
+      "Do wznoszenia użyto technologii cegły żerańskiej.",
+      "Budynek przy ul. Sobieskiego 114, wzniesiony w latach 1962–1963, uzyskał tytuł Mistera Warszawy za 1963 rok w konkursie organizowanym przez „Życie Warszawy”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1960s housing estate in Mokotów at the corner of Chełmska and Jana III Sobieskiego, built by the Warsaw South development office. Its block at Sobieskiego 114 won the Mister Warszawa award for 1963.",
+    "ludzie": [
+      {"kto": "Zygmunt Lewański", "rola": "autor projektu osiedla", "wiki": null},
+      {"kto": "Włodzimierz Witkowski", "rola": "autor projektu osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": ["Chełmska-Sobieskiego"],
+    "zrodla": [{"tytul": "Wikipedia: Chełmska (osiedle)", "url": "https://pl.wikipedia.org/wiki/Che%C5%82mska_%28osiedle%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne: środek osiedla, z nagłówka."
+  },
+  {
+    "id": "zajezdnia-chelmska",
+    "nazwa": "Zajezdnia autobusowa Chełmska",
+    "name_en": "Chełmska bus depot",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Chełmska",
+    "adres_historyczny": null,
+    "lat": 52.199965, "lon": 21.049037,
+    "lokalizacja": "dokladna",
+    "okres": "1960–2006",
+    "istnieje": false,
+    "fakty": [
+      "Zajezdnia została zbudowana na przełomie 1959 i 1960 roku jako jedyna w mieście zajezdnia trolejbusowa.",
+      "Po pierwszej likwidacji trolejbusów w Warszawie stała się zajezdnią autobusową Miejskich Zakładów Autobusowych, działającą w latach 1960–2006.",
+      "W latach 70. była największym skupiskiem Jelczy-Berlietów PR100.",
+      "20 maja 2006 roku na terenie zajezdni odbył się zlot, zorganizowany przez warszawski Klub Miłośników Komunikacji Miejskiej, „I Międzynarodowy Zlot Ogórków”.",
+      "22 listopada 2006 roku licytację terenu wygrał hiszpański deweloper Sando Inmobiliaria, przebijając ING Real Estate ceną 371 mln 450 tys. zł.",
+      "W grudniu 2018 r. poinformowano, że Sando sfinalizowało sprzedaż terenu zajezdni; nabywcą zostało Przedsiębiorstwo Budowlane Konstanty Strus."
+    ],
+    "ciekawostki": [
+      "Recesja finansowa na rynkach europejskich spowodowała problemy hiszpańskiego dewelopera i zatrzymała budowę osiedla, a teren po wyburzonej zajezdni był wciąż niezabudowany."
+    ],
+    "summary_en": "A Warsaw trolleybus and then bus depot at Chełmska Street, operating 1960–2006. Sold at auction in 2006 for a record land price, it was never built on and was later sold again in 2018.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zajezdnia trolejbusowa Chełmska"],
+    "zrodla": [{"tytul": "Wikipedia: Chełmska (zajezdnia autobusowa)", "url": "https://pl.wikipedia.org/wiki/Che%C5%82mska_%28zajezdnia_autobusowa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Teren obecnie niezabudowany (stan z artykułu); współrzędne z nagłówka."
+  },
+  {
+    "id": "cmentarz-czerniakowski",
+    "nazwa": "Cmentarz Czerniakowski",
+    "name_en": "Czerniaków Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Powsińska 44/46",
+    "adres_historyczny": null,
+    "lat": 52.188333333, "lon": 21.063055555,
+    "lokalizacja": "dokladna",
+    "okres": "1907–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz powstał w 1907 roku i został ufundowany przez małżeństwo Józefa i Józefy Wardeckich.",
+      "Został poświęcony w sierpniu 1907 roku przez biskupa Kazimierza Ruszkiewicza.",
+      "Cmentarz był powiększany w 1916, 1945 i 1951 roku.",
+      "Na cmentarzu znajdują się m.in. groby sześćdziesięciu żołnierzy batalionu „Oaza” – uczestników powstania warszawskiego.",
+      "Nekropolia jest nadal czynna."
+    ],
+    "ciekawostki": [
+      "Wśród nagrobków wyróżnia się kaplica-mauzoleum rodziny Stanisława Chmielarza z 1927."
+    ],
+    "summary_en": "A Roman Catholic cemetery at Powsińska 44/46 in Sadyba, founded in 1907 by the Wardecki couple. It holds graves of Warsaw Uprising soldiers and of many public figures, and it is still in use.",
+    "ludzie": [
+      {"kto": "Janusz Albrecht ps. Wojciech", "rola": "żołnierz, szef sztabu Komendy Głównej AK; pochowany (1892–1941)", "wiki": null},
+      {"kto": "Stanisław Bareja", "rola": "reżyser filmowy; pochowany (1929–1987)", "wiki": null},
+      {"kto": "Ryszard Kulesza", "rola": "piłkarz, trener, selekcjoner reprezentacji Polski; pochowany (1929–2008)", "wiki": null},
+      {"kto": "Władysława Papis", "rola": "wizjonerka z Siekierek (objawienia maryjne 1943–1956); pochowana (1930–2016)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Cmentarz Czerniakowski", "url": "https://pl.wikipedia.org/wiki/Cmentarz_Czerniakowski"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "curtis-plaza",
+    "nazwa": "Curtis Plaza",
+    "name_en": "Curtis Plaza office building",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Wołoska 18 (rozebrany)",
+    "adres_historyczny": null,
+    "lat": 52.182441666, "lon": 21.003016666,
+    "lokalizacja": "dokladna",
+    "okres": "1992–2024",
+    "istnieje": false,
+    "fakty": [
+      "Budynek biurowy przy ul. Wołoskiej 18 został zaprojektowany w 1991 roku w pracowni Geokart Projekt, a powstał w latach 1991–1992.",
+      "Inwestorem było przedsiębiorstwo Curtis Polska należące do Zbigniewa Niemczyckiego.",
+      "W 1992 roku biurowiec został nagrodzony tytułem „Budowa Roku” w konkursie organizowanym przez Polski Związek Inżynierów i Techników Budownictwa.",
+      "Najemcami powierzchni biurowej były m.in. Biuro Reklamy TVP i Biuro Maklerskie Pekao.",
+      "W 2024 roku wydana została zgoda na rozbiórkę budynku, a 28 maja rozpoczęły się prace związane z wyburzeniem."
+    ],
+    "ciekawostki": [
+      "Był pierwszym biurowcem, który zaczął tworzyć poprzemysłową część Warszawy zwaną nieformalnie „Mordorem”."
+    ],
+    "summary_en": "A postmodern office building at Wołoska 18 in Mokotów, built in 1991–1992 and one of the first open-plan offices in Warsaw. It was demolished in 2024.",
+    "ludzie": [
+      {"kto": "Mirosław Kartowicz", "rola": "główny architekt", "wiki": null},
+      {"kto": "Romuald Welder", "rola": "główny architekt", "wiki": null},
+      {"kto": "Zbigniew Niemczycki", "rola": "właściciel inwestora Curtis Polska", "wiki": null}
+    ],
+    "dawne_nazwy": ["Przystanki Curtis Plaza (do 2011, potem Domaniewska)"],
+    "zrodla": [{"tytul": "Wikipedia: Curtis Plaza", "url": "https://pl.wikipedia.org/wiki/Curtis_Plaza"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "czerniakowska-wschodnia",
+    "nazwa": "Czerniakowska Wschodnia",
+    "name_en": "Czerniakowska Wschodnia estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Czerniakowska (wschodnia strona), między ul. Wolicką a ul. Bartycką",
+    "adres_historyczny": null,
+    "lat": 52.206388888, "lon": 21.05,
+    "lokalizacja": "przyblizona",
+    "okres": "1970–1980",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle powstało w dwóch etapach: pierwszy w latach 1970–1975 według projektu Wacława Eytnera i Zbigniewa Pawlaka, drugi w latach 1978–1980 według projektu A. Gerulewicza.",
+      "Całość zaplanowano na 2633 mieszkania dla ok. 9000 mieszkańców.",
+      "W granicach osiedla znalazła się kapliczka maryjna ufundowana w 1942 po relokacji, ustawiona przed blokiem przy Czerniakowskiej 42."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A housing estate on the east side of Czerniakowska Street in Mokotów, built in two stages in 1970–1980 for about 9000 residents. A Marian wayside shrine dating from 1942 stands within its bounds.",
+    "ludzie": [
+      {"kto": "Wacław Eytner", "rola": "autor projektu pierwszego etapu", "wiki": null},
+      {"kto": "Zbigniew Pawlak", "rola": "autor projektu pierwszego etapu", "wiki": null},
+      {"kto": "A. Gerulewicz", "rola": "autor projektu drugiego etapu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Czerniakowska Wschodnia", "url": "https://pl.wikipedia.org/wiki/Czerniakowska_Wschodnia"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek osiedla)."
+  },
+  {
+    "id": "czerwona-willa",
+    "nazwa": "Czerwona willa (willa Friedbergów)",
+    "name_en": "Red Villa (Friedberg villa)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Sułkowicka 3; wejście od ul. Belwederskiej 18",
+    "adres_historyczny": null,
+    "lat": 52.206014, "lon": 21.032222,
+    "lokalizacja": "dokladna",
+    "okres": "1925–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willę zbudowano w latach 1925–1928 dla Michała Friedberga, kupca i filantropa.",
+      "W czasie okupacji niemieckiej Michał Friedberg był dyrektorem szpitala w warszawskim getcie.",
+      "Budynek przetrwał II wojnę światową bez poważniejszych uszkodzeń.",
+      "Po wojnie willa przeszła na własność Skarbu Państwa; w pierwszych powojennych latach mieściła się tam jedna z siedzib Urzędu Bezpieczeństwa.",
+      "W 2002 została zwrócona rodzinie pierwszego właściciela, która sprzedała ją firmie deweloperskiej Gant Development.",
+      "W 2009 roku willa została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Nazwę zawdzięcza elewacji koloru różu pompejańskiego."
+    ],
+    "summary_en": "A modernist art deco villa in Sielce, Mokotów, built in 1925–1928 for the merchant Michał Friedberg, who led a ghetto hospital during the occupation. After the war it housed a Security Office unit. It was returned to the family in 2002 and entered the heritage register in 2009.",
+    "ludzie": [
+      {"kto": "Michał Friedberg", "rola": "kupiec, filantrop, właściciel willi; w okupacji dyrektor szpitala w getcie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Willa Friedbergów"],
+    "zrodla": [{"tytul": "Wikipedia: Czerwona willa w Warszawie", "url": "https://pl.wikipedia.org/wiki/Czerwona_willa_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł mówi też, że w 2008 willa uznana za dobro kultury współczesnej w planie Starego Mokotowa."
+  },
+  {
+    "id": "osiedle-dolna-belwederska",
+    "nazwa": "Osiedle Dolna-Belwederska",
+    "name_en": "Dolna-Belwederska estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Dolna 2A i 4; ul. Belwederska 3, 5/7, 14; ul. Nabielaka 2; ul. Turecka 3",
+    "adres_historyczny": null,
+    "lat": 52.2025, "lon": 21.034166666,
+    "lokalizacja": "przyblizona",
+    "okres": "1965–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 1965–1967 według projektu Kazimierza Goławskiego i Eleonory Sekreckiej, w technologii wielkoblokowej „Ż”.",
+      "Powstało siedem jedenastokondygnacyjnych punktowców.",
+      "Ostatni z nich, przy ul. Tureckiej 3, powstał w miejscu rozebranych ruin willi Władysława Sikorskiego.",
+      "Cały zespół Dolna-Piaseczyńska-Sobieskiego składa się z 2830 mieszkań, zaprojektowanych dla ok. 10 tys. osób.",
+      "Budynek przy ul. Belwederskiej 3 znalazł się wśród dziesięciu nominowanych obiektów w konkursie Mister Warszawy za 1965 rok."
+    ],
+    "ciekawostki": [
+      "Przed budynkiem przy Tureckiej ustawiono popiersie generała."
+    ],
+    "summary_en": "A 1965–1967 large-panel housing estate in Mokotów, with seven eleven-storey tower blocks. It is part of a complex of about 2830 flats for around 10,000 people. A building at Belwederska 3 was nominated for the Mister Warszawa award for 1965.",
+    "ludzie": [
+      {"kto": "Kazimierz Goławski", "rola": "projektant osiedla", "wiki": null},
+      {"kto": "Eleonora Sekrecka", "rola": "projektantka osiedla", "wiki": null},
+      {"kto": "Władysław Sikorski", "rola": "właściciel willi, której ruiny rozebrano pod budowę", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dolna-Belwederska", "url": "https://pl.wikipedia.org/wiki/Dolna-Belwederska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. W artykule nie wiadomo, czy „Władysław Sikorski” to premier; podano tylko nazwisko właściciela willi."
+  },
+  {
+    "id": "osiedle-dolna-piaseczynska",
+    "nazwa": "Osiedle Dolna-Piaseczyńska",
+    "name_en": "Dolna-Piaseczyńska estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Konduktorska 1, 1A, 3, 3A, 3B",
+    "adres_historyczny": null,
+    "lat": 52.199444444, "lon": 21.030833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1964–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 1964–1966 według projektu Leszka Kołacza.",
+      "W jego skład wchodzi 5 identycznych budynków wielorodzinnych o 5 kondygnacjach, zbudowanych w technologii wielkoblokowej „Ż”.",
+      "Osiedle stanowi część zespołu Dolna-Piaseczyńska-Sobieskiego o łącznej powierzchni 20 ha, z 2830 mieszkaniami dla ok. 10 tys. osób."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A small 1964–1966 housing estate in Mokotów between Dolna, Piaseczyńska and Konduktorska streets, designed by Leszek Kołacz. Five identical five-storey blocks form part of a 20-hectare complex.",
+    "ludzie": [
+      {"kto": "Leszek Kołacz", "rola": "autor projektu osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Dolna-Piaseczyńska", "url": "https://pl.wikipedia.org/wiki/Dolna-Piaseczy%C5%84ska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka."
+  },
+  {
+    "id": "osiedle-dolna-sobieskiego",
+    "nazwa": "Osiedle Dolna-Sobieskiego",
+    "name_en": "Dolna-Sobieskiego estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana Feliksa Piwarskiego; ul. Aleksandra Gierymskiego; ul. Braci Pillatich; ul. Franciszka Kostrzewskiego",
+    "adres_historyczny": null,
+    "lat": 52.2, "lon": 21.035555555,
+    "lokalizacja": "przyblizona",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle powstało na terenach wcześniej zajmowanych przez osadę Marcelin.",
+      "Cztery ulice osiedla nazwano 12 kwietnia 1962 roku, zastępując robocze nazwy Zachodnia, Wschodnia, Północna i Południowa; patronami są malarze i rysownicy.",
+      "Osiedle wybudowano w latach 1963–1967 według projektu Ireny i Tadeusza Brygiewiczów, w miejscu ogrodów i pól uprawnych.",
+      "Zbudowana przy ul. Piaseczyńskiej 114/116 szkoła projektu Zofii Fafiusowej, Tadeusza Węglarskiego i Adolfa Derentowicza została uhonorowana tytułem Mistera Warszawy 1967.",
+      "W 1974 roku uznano za pomnik przyrody dąb szypułkowy rosnący na osiedlu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1963–1967 housing estate in Mokotów on the site of gardens and fields, previously the Marcelin settlement. Its streets are named after painters and draughtsmen. A school here won the Mister Warszawa award for 1967, and a pedunculate oak is a protected monument.",
+    "ludzie": [
+      {"kto": "Irena Brygiewicz", "rola": "projektantka osiedla", "wiki": null},
+      {"kto": "Tadeusz Brygiewicz", "rola": "projektant osiedla", "wiki": null},
+      {"kto": "Zofia Fafiusowa", "rola": "projektantka szkoły przy Piaseczyńskiej 114/116", "wiki": null}
+    ],
+    "dawne_nazwy": ["Marcelin (osada)", "Zachodnia, Wschodnia, Północna, Południowa (robocze nazwy ulic)"],
+    "zrodla": [{"tytul": "Wikipedia: Dolna-Sobieskiego", "url": "https://pl.wikipedia.org/wiki/Dolna-Sobieskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Artykuł: „Irena i Tadeusz Brygiewiczowie”."
+  },
+  {
+    "id": "dom-pod-skarabeuszami",
+    "nazwa": "Dom Pod Skarabeuszami (willa Malinowskich)",
+    "name_en": "House Under the Scarabs (Malinowski villa)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Puławska 101",
+    "adres_historyczny": null,
+    "lat": 52.197639, "lon": 21.024472,
+    "lokalizacja": "dokladna",
+    "okres": "1932–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa powstała w latach 1932–1934 i została zaprojektowana przez Adolfa Inatowicza-Łubiańskiego dla Władysława Malinowskiego.",
+      "Władysław Malinowski w latach 1919–1920 był wiceprezydentem Warszawy.",
+      "Na fasadzie znajduje się płycina w stylu egipskim z płaskorzeźbami sów i skarabeusza; są to symbole korporacji Arkonia, do której właściciel i architekt należeli w czasie studenckich.",
+      "Po 1945 wnętrza willi zostały przebudowane.",
+      "W 2013 roku willa została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1932–1934 villa at Puławska 101 in Mokotów, designed by Adolf Inatowicz-Łubiański for Władysław Malinowski, a former deputy mayor of Warsaw. Its Egyptian-style facade carries owl and scarab reliefs, symbols of the Arkonia student fraternity.",
+    "ludzie": [
+      {"kto": "Adolf Inatowicz-Łubiański", "rola": "architekt willi", "wiki": null},
+      {"kto": "Władysław Malinowski", "rola": "właściciel willi, wiceprezydent Warszawy (1919–1920)", "wiki": null},
+      {"kto": "Jadwiga Malinowska", "rola": "współwłaścicielka willi", "wiki": null}
+    ],
+    "dawne_nazwy": ["Willa Władysława i Jadwigi Malinowskich"],
+    "zrodla": [{"tytul": "Wikipedia: Dom Pod Skarabeuszami w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Pod_Skarabeuszami_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-wedla",
+    "nazwa": "Dom Wedla (kamienica Jana Wedla)",
+    "name_en": "Wedel House",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Puławska 28 (róg ul. Madalińskiego)",
+    "adres_historyczny": null,
+    "lat": 52.2056, "lon": 21.0222,
+    "lokalizacja": "dokladna",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została zbudowana w 1936 roku i zaprojektowana przez Juliusza Żórawskiego.",
+      "W czasie powstania warszawskiego, w sierpniu 1944, zajmowany przez Niemców budynek był atakowany przez żołnierzy zgrupowania pułku „Baszta”, jednak powstańcom nie udało się go zdobyć.",
+      "W latach 60. XX w. parter budynku został zabudowany i umieszczono w nim sklepy, a ogród wraz z rzeźbami zniszczono.",
+      "W 1996 budynek został wpisany do rejestru zabytków.",
+      "W 2019 staraniem wspólnoty mieszkaniowej odtworzono na dachu przedwojenny neon E. WEDEL CZEKOLADA, wykonany przez Muzeum Neonów."
+    ],
+    "ciekawostki": [
+      "W holu umieszczono malowidło ścienne Zofii Stryjeńskiej „Taniec góralski”."
+    ],
+    "summary_en": "A functionalist 1936 apartment block at Puławska 28 in Mokotów, designed by Juliusz Żórawski on Le Corbusier's principles. It was attacked during the Warsaw Uprising and listed as a monument in 1996. A pre-war neon sign was restored on the roof in 2019.",
+    "ludzie": [
+      {"kto": "Juliusz Żórawski", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Zofia Stryjeńska", "rola": "autorka malowidła w holu („Taniec góralski”)", "wiki": null},
+      {"kto": "Stanisław Komaszewski", "rola": "autor płaskorzeźby „Tygrys”", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Jana Wedla"],
+    "zrodla": [{"tytul": "Wikipedia: Dom Wedla w Warszawie", "url": "https://pl.wikipedia.org/wiki/Dom_Wedla_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "osiedle-domaniewska",
+    "nazwa": "Osiedle Domaniewska",
+    "name_en": "Domaniewska estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Langego 2–8; ul. Bryły 1–4 i 3; al. Niepodległości 9/11–21A; al. Wilanowska 364–368; ul. Domaniewska 9/11–17/19",
+    "adres_historyczny": null,
+    "lat": 52.181111111, "lon": 21.016388888,
+    "lokalizacja": "przyblizona",
+    "okres": "1972–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle zostało wybudowane w latach 1972–1977 przez Spółdzielnię Mieszkaniową „Mokotów”.",
+      "Generalnym projektantem całego osiedla był Tadeusz Mrówczyński.",
+      "Zachodnia część osiedla została wybudowana w latach 1972–1974 i składa się z ośmiu jedenastokondygnacyjnych budynków, w tym 1640 mieszkań.",
+      "Wschodnia część powstała w latach 1973–1977; łącznie powstało tam 825 mieszkań dla ok. 3,5 tys. mieszkańców.",
+      "Pierwotnie planowana trzecia część osiedla nie została zrealizowana ze względu na zajęcie terenów przez rozbudowujące się zakłady przedsiębiorstwa Tewa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A large-panel housing estate in Mokotów, built in 1972–1977 by the Mokotów housing cooperative to a design by Tadeusz Mrówczyński. It takes its name from Domaniewska Street. Its planned third section was never built because of the expansion of the Tewa factory.",
+    "ludzie": [
+      {"kto": "Tadeusz Mrówczyński", "rola": "generalny projektant osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": ["Domaniewska I (plan niezrealizowany)"],
+    "zrodla": [{"tytul": "Wikipedia: Domaniewska", "url": "https://pl.wikipedia.org/wiki/Domaniewska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek osiedla). Adresy w artykule są mieszane (część osiedla leży przy al. Wilanowskiej)."
+  },
+  {
+    "id": "dwor-ksawerow",
+    "nazwa": "Dwór Ksawerów",
+    "name_en": "Ksawerów Manor",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Ksawerów 13",
+    "adres_historyczny": null,
+    "lat": 52.186624, "lon": 21.020404,
+    "lokalizacja": "dokladna",
+    "okres": "1840–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwór został zaprojektowany przez Wojciecha Bobińskiego i wybudowany w 1840 roku dla szlachcica Ksawerego Pusłowskiego.",
+      "Przy dworze została też wybudowana droga, obecna ulica Ksawerów.",
+      "Podczas II wojny światowej dwór został uszkodzony w czasie obrony Warszawy we wrześniu 1939 i zniszczony w 1944.",
+      "Odbudowano go w 1945 roku."
+    ],
+    "ciekawostki": [
+      "Dwór w stylu klasycystycznym, na planie litery T, ma portyk z czterema kolumnami w porządku jońskim."
+    ],
+    "summary_en": "A classicist manor house at Ksawerów 13 in Mokotów, built in 1840 for Ksawery Pusłowski. It was damaged in 1939, destroyed in 1944 and rebuilt in 1945. It now houses the Department of Monument Protection of the Ministry of Culture.",
+    "ludzie": [
+      {"kto": "Wojciech Bobiński", "rola": "projektant dworu", "wiki": null},
+      {"kto": "Ksawery Pusłowski", "rola": "szlachcic, zleceniodawca dworu (1840)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wieś Ksawerów (w południowej części wsi Wierzbno)"],
+    "zrodla": [{"tytul": "Wikipedia: Dwór Ksawerów", "url": "https://pl.wikipedia.org/wiki/Dw%C3%B3r_Ksawer%C3%B3w"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

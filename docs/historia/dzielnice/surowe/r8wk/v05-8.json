@@ -1,0 +1,307 @@
+[
+  {
+    "id": "ulica-rapperswilska",
+    "nazwa": "Ulica Rapperswilska",
+    "name_en": "Rapperswilska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Rapperswilska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy pochodzi od miasta Rapperswil w Szwajcarii, w kantonie Sankt Gallen, nad jeziorem Zuryskim.",
+      "W 1869 roku W. N. Plater założył w średniowiecznym zamku w Rapperswilu Muzeum Narodowe Polskie, zawierające pamiątki i materiały dotyczące emigracji oraz polskie dzieła sztuki.",
+      "Ulica Rapperswilska planowana była jako ulica znacznie większa i przejezdna, od al. Stanów Zjednoczonych do ulicy Brukselskiej.",
+      "Obecnie to niewielka uliczka rozpoczynająca się od Argentyńskiej, stykająca się z Kanadyjską, kończąca swój bieg ślepo przed aleją Stanów Zjednoczonych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rapperswilska is a 165-metre residential street on Saska Kępa in Praga-Południe, named after the Swiss town of Rapperswil. Its planned length was never built; today it is a short dead-end street.",
+    "ludzie": [
+      {"kto": "W. N. Plater", "rola": "założyciel Muzeum Narodowego Polskiego w Rapperswilu (1869)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Rapperswilska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rapperswilska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwa w infoboksie i na większości planów: Raperswilska."
+  },
+  {
+    "id": "ulica-rumunska",
+    "nazwa": "Ulica Rumuńska",
+    "name_en": "Rumuńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Rumuńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została nazwana na cześć sojusznika PRL, Rumunii, rządzonej przez kilkadziesiąt lat przez Nicolae Ceausescu.",
+      "Ceausescu, zwany »Słońcem Karpat«, był jedynym dyktatorem grupy państw będących pod wpływem ZSRR straconym przez rozstrzelanie w czasie przemian 1989 roku.",
+      "Uliczka została wytyczona i nazwana w 1963 roku; zabudowana jest obustronnie szeregowymi jednorodzinnymi domkami.",
+      "Rozpoczyna się od Lotaryńskiej, styka się z Koreańską i kończy się na Argentyńskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rumuńska is a 115-metre residential street on Saska Kępa in Praga-Południe, named in 1963 after Romania, a PRL ally. The name refers to Nicolae Ceausescu, executed in 1989.",
+    "ludzie": [
+      {"kto": "Nicolae Ceausescu", "rola": "rządzący Rumunią przez kilkadziesiąt lat, patron nazwy ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Rumuńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rumuńska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-rzymska",
+    "nazwa": "Ulica Rzymska",
+    "name_en": "Rzymska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Rzymska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy nadana została na cześć stolicy Włoch, Rzymu.",
+      "Ulica biegnie od ulicy Ateńskiej do Lotaryńskiej, równolegle do Wału Miedzeszyńskiego.",
+      "Ulica została zaplanowana przed wojną, a początek zabudowy przypada na okres międzywojenny.",
+      "Obecnie dominują tu domy jednorodzinne, nierzadko szeregowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rzymska is a street on Saska Kępa in Praga-Południe, named after Rome. It was planned before World War II, built from the interwar years, and is now lined mainly with single-family and terraced houses.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Rzymska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rzymska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "dom-andrzeja-zalewskiego-rzymska-13",
+    "nazwa": "Dom Andrzeja Zalewskiego przy ul. Rzymskiej 13/19",
+    "name_en": "House of Andrzej Zalewski at Rzymska 13/19",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Rzymska 13",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dom Andrzeja Zalewskiego został wybudowany w 1931 roku wg projektu Bohdana Pniewskiego (modernizm historyczny).",
+      "Był jednym z pierwszych, obok nieistniejącej już willi Szyllerów przy Wale Miedzeszyńskim, modernistycznych domów na Saskiej Kępie.",
+      "Inwestor dał architektowi całkowitą swobodę w projektowaniu i nieograniczone środki finansowe do realizacji jego planów."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rzymska 13/19 on Saska Kępa is a 1931 modernist house designed by Bohdan Pniewski for investor Andrzej Zalewski. It was one of the first modernist houses on the estate.",
+    "ludzie": [
+      {"kto": "Andrzej Zalewski", "rola": "inwestor, właściciel domu", "wiki": null},
+      {"kto": "Bohdan Pniewski", "rola": "architekt, projektant domu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Rzymska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Rzymska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Numer 13/19 w tekście; adres podano od numeru 13."
+  },
+  {
+    "id": "ulica-skaryszewska",
+    "nazwa": "Ulica Skaryszewska",
+    "name_en": "Skaryszewska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Skaryszewska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1870–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około 1870 roku jako dojazd do nowego wówczas Dworca Terespolskiego.",
+      "Jej nazwa została usankcjonowana około 1878 roku w nawiązaniu do dawnej wsi Skaryszew.",
+      "8 czerwca 1944 roku w wyniku akcji Armii Krajowej na rogu Targowej i Skaryszewskiej został zastrzelony komendant obozu przejściowego Eugen Bollongino.",
+      "W okresie PRL-u między ul. Skaryszewską i ul. Lubelską funkcjonował od 1959 roku słynny bazar „Ciuchy”, który w 1973 roku został przeniesiony do Rembertowa."
+    ],
+    "ciekawostki": [
+      "Piosenka z okresu wojennego „Siekiera, motyka” wymienia ulicę Skaryszewską w odniesieniu do budynku nr 8, gdzie za czasów okupacji znajdował się obóz przejściowy, tzw. Dulag."
+    ],
+    "summary_en": "Skaryszewska is a 200-metre street in Kamionek, Praga-Południe, near Warszawa Wschodnia station. It is named after the former village of Skaryszew, and during the occupation a transit camp operated at number 8.",
+    "ludzie": [
+      {"kto": "Eugen Bollongino", "rola": "komendant obozu przejściowego, zastrzelony 8 czerwca 1944 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Skaryszewska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Skaryszewska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-jana-styki",
+    "nazwa": "Ulica Jana Styki",
+    "name_en": "Jan Styka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Styki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Jana Styki biegnie na północ od ulicy Zwycięzców i, przecinając ulicę Obrońców, dochodzi do Walecznych.",
+      "Ulica powstała wraz z osiedlem Saska Kępa na początku lat 30. XX wieku.",
+      "Nazwa ulicy upamiętnia Jana Stykę, polskiego malarza.",
+      "W 2013 roku ulica została prowizorycznie odremontowana; bez zgody stołecznego konserwatora zabytków część płyt chodnikowych wymieniono na betonową kostkę."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Styki is a 375-metre one-way street on Saska Kępa in Praga-Południe, named after the painter Jan Styka. It was built with the estate in the early 1930s, and its houses include 1930s functionalist and modernist designs.",
+    "ludzie": [
+      {"kto": "Jan Styka", "rola": "polski malarz, patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Jana Styki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Styki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-szczuczynska",
+    "nazwa": "Ulica Szczuczyńska",
+    "name_en": "Szczuczyńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Szczuczyńska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w 1936 roku wraz z osiedlem Saska Kępa.",
+      "Jej nazwa pochodzi od 18-tysięcznego miasta Szczuczyn, które dziś leży w granicach Białorusi, ale w momencie nadawania nazwy należało do Rzeczypospolitej.",
+      "Ulica biegnie na zachód od ulicy Paryskiej i, krzyżując się z ulicą Radziłowską, dochodzi do Zakopiańskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Szczuczyńska is a 150-metre one-way street on Saska Kępa in Praga-Południe, built in 1936. It is named after the town of Szczuczyn, which lies in Belarus today.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Szczuczyńska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Szczuczyńska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-ks-jana-sztuki",
+    "nazwa": "Ulica ks. Jana Sztuki",
+    "name_en": "Father Jan Sztuka Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Sztuki",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Odcinek znany dziś jako ulica ks. Jana Sztuki powstał ok. 1935 roku jako przedłużenie wcześniej istniejącej ul. Zalęże.",
+      "W 1996 roku zmieniono nazwę odcinka od kościoła do ul. Boremlowskiej, uczczono ks. Jana Sztukę, wieloletniego proboszcza parafii Najczystszego Serca Maryi Panny.",
+      "Najważniejszym obiektem przy ulicy jest Kościół Najczystszego Serca Maryi Panny."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ulica ks. Jana Sztuki is a 480-metre street in the Grochów area of Praga-Południe. It dates from about 1935 and was named in 1996 after long-serving parish priest Jan Sztuka.",
+    "ludzie": [
+      {"kto": "Jan Sztuka", "rola": "ksiądz, wieloletni proboszcz parafii Najczystszego Serca Maryi Panny", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zalęże"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica ks. Jana Sztuki", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Sztuki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-targowa",
+    "nazwa": "Ulica Targowa",
+    "name_en": "Targowa Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe, Praga-Północ",
+    "adres_dzis": "Targowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. XII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Historia ulicy sięga XII i XIII wieku, kiedy ten trakt stanowił jedną z głównych osi wsi Targowe Wielkie.",
+      "W 1791 roku ulice Rynkowa i Zarwańska zostały połączone w jedną, której nadano nazwę Targowa.",
+      "W 1901 roku założony został Bazar Różyckiego, a w 1908 roku ulicą pojechały tramwaje elektryczne.",
+      "Zaraz po wojnie ulica Targowa, jako stosunkowo mało zniszczona, stała się główną siedzibą władz miasta.",
+      "W 2009 roku do rejestru zabytków wpisano układ urbanistyczny ulicy na odcinku pl. Wileński – wiadukt linii średnicowej.",
+      "W 2011 roku pod ulicą rozpoczęła się budowa II linii metra oraz stacji Dworzec Wileński."
+    ],
+    "ciekawostki": [
+      "W okresie międzywojennym ulicę nazywano czasem „Praską Marszałkowską”."
+    ],
+    "summary_en": "Targowa is a 1.6 km street running through Praga from Aleja Zieleniecka to Ratuszowa. Its history goes back to the 12th century, and it became a main city street in the 19th century and the seat of city authorities after the war.",
+    "ludzie": [],
+    "dawne_nazwy": ["Zarwańska", "Wołowa", "Rynkowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Targowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Targowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnice z nagłówka: Praga-Południe, Praga-Północ."
+  },
+  {
+    "id": "ulica-urugwajska",
+    "nazwa": "Ulica Urugwajska",
+    "name_en": "Urugwajska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "Urugwajska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w latach 70. XX wieku jako nienazwany łącznik Al. Stanów Zjednoczonych z ul. Lizbońską.",
+      "Nazwę Urugwajska otrzymała dopiero w 2002 roku.",
+      "Nazwa pochodzi od południowoamerykańskiego państwa, Urugwaju."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Urugwajska is a 130-metre street on Saska Kępa in Praga-Południe. It began in the 1970s as an unnamed link to Lizbońska and received its name, after Uruguay, only in 2002.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Urugwajska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Urugwajska"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

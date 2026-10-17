@@ -1,0 +1,329 @@
+[
+  {
+    "id": "libretto-park",
+    "nazwa": "Libretto Park",
+    "name_en": "Libretto Park (planned complex)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Czerniakowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2007–2022",
+    "istnieje": false,
+    "fakty": [
+      "Zamysł kompleksu pojawił się w 2007 roku z inicjatywy firmy Mayland Real Estate, która chciała wybudować dwa 140-metrowe wieżowce.",
+      "Pierwsze projekty przygotowała hiszpańska pracownia L35 Arquitectos oraz polskie studio B&G.",
+      "W lipcu 2011 roku inwestor otrzymał pozytywną decyzję środowiskową dla 55-metrowego biurowca zamiast 140-metrowych wież.",
+      "W październiku 2013 roku uchylono decyzję środowiskową dla inwestycji.",
+      "W grudniu 2014 roku inwestor ponownie złożył raport w sprawie warunków środowiskowych.",
+      "Rozpoczęcie budowy zaplanowano na 2018 rok, a zaczęła się ona w 2022 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Libretto Park was a planned office and residential complex on the corner of Czerniakowska Street and Aleja Becka in Mokotów. Proposed in 2007, it was scaled down after environmental protests, and construction is said to have started in 2022.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Libretto Park", "url": "https://warszawa.fandom.com/pl/wiki/Libretto_Park"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Adres z opisu położenia: na rogu ul. Czerniakowskiej i al. Becka, bez numeru. Artykuł podaje sprzeczne sygnały co do statusu (decyzja z 2013 r. i rozpoczęcie budowy w 2022 r.). Nagłówek WSPÓŁRZĘDNE ma „brak”."
+  },
+  {
+    "id": "marsz-mokotowa",
+    "nazwa": "Marsz Mokotowa (tablica na Domku Gotyckim)",
+    "name_en": "Marsz Mokotowa plaque on the Gothic House",
+    "typ": "tablica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Puławska 59",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Marsz Mokotowa powstał 20 sierpnia 1944 roku podczas powstania warszawskiego.",
+      "Muzykę napisał Jan Markowski, żołnierz z kompanii saperów pułku AK „Baszta” z Mokotowa; słowa napisał Mirosław „Karnisz” Jezierski.",
+      "Od 1969 roku pieśń rozbrzmiewa codziennie o godzinie 17.00, z wieży zegarowej Domku Gotyckiego przy ul. Puławskiej 59, na pamiątkę godziny „W”.",
+      "Obecnie jest też hymnem Hufca ZHP Warszawa Mokotów im. Szarych Szeregów."
+    ],
+    "ciekawostki": [
+      "Na Domku Gotyckim znajduje się tablica informująca o historii piosenki."
+    ],
+    "summary_en": "The Mokotów March was written during the 1944 Uprising by Jan Markowski, with lyrics by Mirosław „Karnisz” Jezierski. Since 1969 it has been played daily at 17:00 from the clock tower of the Gothic House at 59 Puławska Street.",
+    "ludzie": [
+      {"kto": "Jan Markowski", "rola": "autor muzyki, żołnierz kompanii saperów pułku AK „Baszta”", "wiki": null},
+      {"kto": "Mirosław „Karnisz” Jezierski", "rola": "autor słów", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Marsz Mokotowa", "url": "https://warszawa.fandom.com/pl/wiki/Marsz_Mokotowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy tablicy i zegara na Domku Gotyckim; artykuł nie jest o budynku, ale o pieśni z nim związanej."
+  },
+  {
+    "id": "biurowiec-nefryt",
+    "nazwa": "Biurowiec Nefryt",
+    "name_en": "Nefryt Office Building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Domaniewska 39",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał w latach 2006-2008.",
+      "Siedmiokondygnacyjny biurowiec oferuje na wynajem około 15 200 m2 powierzchni biurowej.",
+      "Na dwupoziomowym parkingu podziemnym znajduje się 264 miejsca parkingowe."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Nefryt is a seven-storey office building on Służewiec Przemysłowy at 39 Domaniewska Street, on the corner of Rodziny Hiszpańskich Street. It was built in 2006–2008 and offers about 15,200 m2 of office space.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Nefryt", "url": "https://warszawa.fandom.com/pl/wiki/Nefryt"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki, głównie opis parametrów budynku. Nagłówek WSPÓŁRZĘDNE ma „brak”."
+  },
+  {
+    "id": "osiedle-prototypow",
+    "nazwa": "Osiedle prototypów",
+    "name_en": "Prototypes Housing Estate",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Jadźwingów 20",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 60. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 60. XX wieku na Służewcu, w rejonie ulic Rzymowskiego, Orzyckiej, alei Lotników i Modzelewskiego.",
+      "Osiedle wyrosło z socrealistycznego osiedla hoteli robotniczych z lat 50., zbudowanego dla robotników Dzielnicy Przemysłowej Służewiec.",
+      "W ramach osiedla zbudowano bloki mieszkalne na podstawie blisko dwudziestu różnych projektów.",
+      "Osiedle stało się poligonem doświadczalnym dla wprowadzanego powszechnie budownictwa z wielkiej płyty.",
+      "W 1967 roku na terenie osiedla powstała szkoła podstawowa i przedszkole, publiczna biblioteka oraz pawilony handlowo-usługowe."
+    ],
+    "ciekawostki": [
+      "Osiedle nazywano też „awaryjnym”, bo w razie awarii w zakładzie pracownika szybko można było wezwać do pracy, ponieważ większość bloków była blokami zakładowymi."
+    ],
+    "summary_en": "The Prototypes Housing Estate on Służewiec was built in the 1960s on the site of a 1950s workers' hostel complex. It was a testing ground for prefabricated panel construction, with about twenty different block designs.",
+    "ludzie": [],
+    "dawne_nazwy": ["Osiedle prototypów (nazwa od różnorodnych projektów bloków)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Osiedle prototypów", "url": "https://warszawa.fandom.com/pl/wiki/Osiedle_prototypów"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Osiedle nie ma jednego adresu; podano adres bloku z nagłówka artykułu (ul. Jadźwingów 20)."
+  },
+  {
+    "id": "palac-szustra",
+    "nazwa": "Pałac Szustra",
+    "name_en": "Szuster Palace",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Morskie Oko 2",
+    "adres_historyczny": "Puławska 55/57",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1772–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pałac powstał z inicjatywy księżnej Izabeli z Czartoryskich Lubomirskiej i Stanisława Lubomirskiego; budowę prowadzono w latach 1772-1775 według projektu Efraima Szregera.",
+      "Dalsze prace prowadzono do 1783 roku we współpracy z Szymonem Bogumiłem Zugiem.",
+      "W 1820 roku Anna z Tyszkiewiczów Potocka zleciła Henrykowi Marconiemu przebudowę pałacyku w stylu neogotyckim, wykonaną w latach 1822-1825.",
+      "W 1845 roku rezydencję wraz z otoczeniem kupił litograf Franciszek Szuster.",
+      "Fasada pałacu została uszkodzona we wrześniu 1939 roku, a pałacyk został spalony w 1944 roku.",
+      "Odbudowę powojenną wykonano w stylu neogotyckim w latach 1962-1965 według projektu Jerzego Brabandera."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Szuster Palace in Morskie Oko Park, formerly at 55/57 Puławska Street, was built in 1772–1783 for the Lubomirski family, remodelled by Henryk Marconi, and burned in 1944. It was rebuilt in the 1960s and now houses the Moniuszko Music Society.",
+    "ludzie": [
+      {"kto": "Izabela z Czartoryskich Lubomirska", "rola": "księżna, inicjatorka budowy pałacu", "wiki": null},
+      {"kto": "Stanisław Lubomirski", "rola": "współinicjator budowy pałacu", "wiki": null},
+      {"kto": "Efraim Szreger", "rola": "projektant pałacu", "wiki": null},
+      {"kto": "Szymon Bogumił Zug", "rola": "współpracownik przy pracach do 1783 roku", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "autor przebudowy pałacyku w latach 1822-1825", "wiki": null},
+      {"kto": "Franciszek Szuster", "rola": "litograf, nabywca rezydencji w 1845 roku", "wiki": null},
+      {"kto": "Jerzy Brabander", "rola": "autor projektu odbudowy po wojnie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Mon Coteau", "Puławska 55/57"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pałac Szustra", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_Szustra"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obecnie w pałacyku mieści się siedziba Warszawskiego Towarzystwa Muzycznego im. Stanisława Moniuszki. Pałac stoi w Parku Morskie Oko."
+  },
+  {
+    "id": "palac-na-henrykowie",
+    "nazwa": "Pałac na Henrykowie",
+    "name_en": "Henryków Palace",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Puławska 107a",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1830–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Dwór na Henrykowie był od około 1830 roku posiadłością Jerzego Fanshave, pułkownika w służbie rosyjskiej i szambelana.",
+      "Podejrzewa się, że autorem pałacyku mógł być Henryk Marconi.",
+      "Później dwór przeszedł w ręce Potockich.",
+      "Jak pisał Jerzy Kasprzycki, nigdy nie była to reprezentacyjna siedziba rodu; dożywały tu swych dni różne ciotki i szwagierki, ubogie krewne magnackiej rodziny.",
+      "Dziś budynek jest reprezentacyjną siedzibą firmy Dr. Irena Eris."
+    ],
+    "ciekawostki": [
+      "Pałac nazywany jest też Pałacem Henryków i Pałacem Fanshawów."
+    ],
+    "summary_en": "The Henryków Palace at 107a Puławska Street on Mokotów is a listed small palace. It was owned from around 1830 by Jerzy Fanshave, later passed to the Potocki family, and today is the representative seat of the Dr Irena Eris company.",
+    "ludzie": [
+      {"kto": "Jerzy Fanshave", "rola": "pułkownik w służbie rosyjskiej i szambelan, właściciel od około 1830 roku", "wiki": null},
+      {"kto": "Henryk Marconi", "rola": "podejrzewany autor pałacyku", "wiki": null},
+      {"kto": "Jerzy Kasprzycki", "rola": "autor opisu historii posiadłości", "wiki": null}
+    ],
+    "dawne_nazwy": ["Pałac Henryków", "Pałac Fanshawów"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pałac na Henrykowie", "url": "https://warszawa.fandom.com/pl/wiki/Pałac_na_Henrykowie"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Artykuł krótki; w tekście brak dat budowy i dokładnej daty przejęcia przez Potockich."
+  },
+  {
+    "id": "pomnik-jana-matejki",
+    "nazwa": "Pomnik Jana Matejki",
+    "name_en": "Jan Matejko Monument",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Puławska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1994–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt pomnika wykonał w 1989 roku Marian Konieczny.",
+      "Pierwotnie planowano ustawienie pomnika w Alejach Ujazdowskich i odsłonięcie 24 czerwca 1993 roku, czego nie udało się zrealizować.",
+      "28 grudnia 1993 roku wmurowano kamień węgielny pod pomnik w parku Morskie Oko.",
+      "Pomnik odsłonięto 3 maja 1994 roku, a w 1995 roku uzupełniono go o figurę Stańczyka.",
+      "Pomnik odlano w zakładach GZUT w Gliwicach; inicjatorem jego ustawienia był Feliks Ptaszyński."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Jan Matejko Monument stands near Morskie Oko Park on Puławska Street in Mokotów. Unveiled on 3 May 1994, it shows Matejko holding a palette and brush, with the seated Stańczyk at the base.",
+    "ludzie": [
+      {"kto": "Marian Konieczny", "rola": "autor projektu pomnika", "wiki": null},
+      {"kto": "Feliks Ptaszyński", "rola": "inicjator ustawienia pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Jana Matejki", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Jana_Matejki"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres w artykule to sama ulica (Puławska), bez numeru; pomnik stoi w pobliżu ul. Morskie Oko."
+  },
+  {
+    "id": "pomnik-miguela-de-cervantesa",
+    "nazwa": "Pomnik Miguela de Cervantesa",
+    "name_en": "Miguel de Cervantes Monument",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Zakrzewska 24",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "2004–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik odsłonięto 24 kwietnia 2004 roku na dziedzińcu przed XXXIV Liceum Ogólnokształcącym im. Miguela de Cervantesa.",
+      "Jest to ponad dwumetrowy granitowy pomnik, właściwie popiersie pisarza.",
+      "Na cokole znajdują się pełne imię hiszpańskiego pisarza, Miguel de Cervantes Saavedra, oraz daty jego urodzenia (1547) i śmierci (1616)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Miguel de Cervantes Monument, a granite bust over two metres high, stands in the courtyard of XXXIV Liceum at 24 Zakrzewska Street on Mokotów. It was unveiled on 24 April 2004.",
+    "ludzie": [
+      {"kto": "Miguel de Cervantes Saavedra", "rola": "pisarz, patron liceum, którego popiersie stoi w pomniku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Miguela de Cervantesa", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Miguela_de_Cervantesa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "pomnik-polski-walczacej",
+    "nazwa": "Pomnik Polski Walczącej",
+    "name_en": "Fighting Poland Monument",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Aleja Godziny „W”",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1994–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik postawiono w 1994 roku z inicjatywy powstańców.",
+      "Zaprojektował go Eugeniusz Ajewski „Kotwa”, żołnierz pułku AK „Baszta”.",
+      "Od 2004 roku na szczyt kopca można wejść po schodach, których odcinek nosi nazwę Al. Godziny „W”.",
+      "Od 2004 roku pod pomnikiem odbywają się coroczne obchody wybuchu powstania warszawskiego.",
+      "1 sierpnia każdego roku w pobliżu odpalany jest ogień z Grobu Nieznanego Żołnierza, który świeci przez kolejne sześćdziesiąt trzy dni."
+    ],
+    "ciekawostki": [
+      "Na tylnej stronie pomnika znajduje się tablica upamiętniająca poległych w powstaniu, a w zachodniej części tablica upamiętniająca Eugeniusza Ajewskiego."
+    ],
+    "summary_en": "The Fighting Poland Monument, a metal sculpture bearing the year 1944, stands on top of the Warsaw Uprising Mound. It was erected in 1994 at the initiative of insurgents and designed by Eugeniusz Ajewski „Kotwa”.",
+    "ludzie": [
+      {"kto": "Eugeniusz Ajewski „Kotwa”", "rola": "projektant pomnika, żołnierz pułku AK „Baszta”", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Pomnik Polski Walczącej", "url": "https://warszawa.fandom.com/pl/wiki/Pomnik_Polski_Walczącej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje numeru ani adresu pomnika; podano nazwę alei prowadzącej na szczyt kopca."
+  },
+  {
+    "id": "potoki-residence",
+    "nazwa": "Potoki Residence",
+    "name_en": "Potoki Residence",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Cichy Potok",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "2013–2014",
+    "istnieje": true,
+    "fakty": [
+      "Historycznie w tym miejscu znajdowały się niezabudowane tereny rolne poniżej skarpy wiślanej, w granicach wsi Potok.",
+      "Pierwsza planowana inwestycja w tym rejonie pojawiła się w połowie 2013 roku, a pierwsze prace budowlane ruszyły we wrześniu 2013 roku.",
+      "Inwestorem osiedla był deweloper Nasze Miasteczko.",
+      "Osiedle powstało na terenie objętym miejscowym planem zagospodarowania przestrzennego uchwalonym w 2008 roku.",
+      "Budowa osiedla zakończyła się w grudniu 2014 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Potoki Residence is a residential estate on Mokotów, along Cichy Potok Street below the Vistula escarpment. Construction ran from September 2013 to December 2014 on former farmland of the village of Potok.",
+    "ludzie": [],
+    "dawne_nazwy": ["wieś Potok"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Potoki Residence", "url": "https://warszawa.fandom.com/pl/wiki/Potoki_Residence"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres w artykule: wzdłuż ul. Cichy Potok, w rejonie ul. Potoki; osiedle nie ma jednego numeru."
+  }
+]

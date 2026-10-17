@@ -1,0 +1,206 @@
+[
+  {
+    "id": "cmentarz-pomnik-w-wawrze",
+    "nazwa": "Cmentarz-Pomnik w Wawrze",
+    "name_en": "Cmentarz-Pomnik in Wawer",
+    "typ": "cmentarz",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.223148756,
+    "lon": 21.14551874,
+    "lokalizacja": "dokladna",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W grudniu 1939 Niemcy dokonali w Wawrze zbrodni; spośród 107 ofiar większość pochowano w miejscu egzekucji, w sześciu rowach.",
+      "W czerwcu 1940 przeniesiono 76 ciał na cmentarz Ofiar II Wojny Światowej w Wawrze, 11 ciał na cmentarz żydowski na Woli w Warszawie, a pozostałe do grobów rodzinnych na okolicznych nekropoliach.",
+      "Jesienią 1944 z polecenia prezydenta Warszawy Mariana Spychalskiego oraz starosty Stanisława Krupki teren egzekucji ogrodzono, a w grudniu powstał pierwszy pomnik.",
+      "W 1946 zawiązało się Stowarzyszenie Rodzin po Rozstrzelanych w Wawrze 27 grudnia 1939.",
+      "W 1949 upamiętnienie otwarto: plac otoczony lipami, sarkofag z napisem „Poległym za niepodległość Polski” i rzeźby dłuta Józefa Gazy.",
+      "Cokoły rzeźb zawierają nazwiska ofiar; w głębi zachował się fragment płotu, przy którym miała miejsce egzekucja."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A cemetery-memorial in Wawer marking the site where the Germans executed 107 people in December 1939. The graves were partly moved in 1940 after the German authorities ordered the cemetery closed, and the memorial was opened in 1949.",
+    "ludzie": [
+      {"kto": "Marian Spychalski", "rola": "prezydent Warszawy, polecenie ogrodzenia terenu egzekucji (jesień 1944)", "wiki": null},
+      {"kto": "Stanisław Krupka", "rola": "starosta, współdecydował o ogrodzeniu terenu (jesień 1944)", "wiki": null},
+      {"kto": "Józef Gaza", "rola": "autor rzeźb Polonii i Bojownika z faszyzmem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Cmentarz-Pomnik w Wawrze", "url": "https://pl.wikipedia.org/wiki/Cmentarz-Pomnik_w_Wawrze"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "droga-wojewodzka-628",
+    "nazwa": "Droga wojewódzka nr 628",
+    "name_en": "Voivodeship Road 628",
+    "typ": "ulica",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.22484,
+    "lon": 21.19142,
+    "lokalizacja": "przyblizona",
+    "okres": "2020–dziś (w obecnym kształcie od 2023)",
+    "istnieje": true,
+    "fakty": [
+      "Droga wojewódzka nr 628 znajduje się od stycznia 2023 roku w całości na terenie Warszawy.",
+      "Na początku lutego 2023 roku, na mocy Uchwały nr 9/23 Sejmiku Województwa Mazowieckiego z dnia 17 stycznia 2023 r., odcinek między węzłem Puławska a ulicą Wał Miedzeszyński został pozbawiony kategorii drogi wojewódzkiej i przemianowany na drogę powiatową.",
+      "Początkowo trasa poprowadzona była starym przebiegiem drogi krajowej nr 2, od węzła Puławska ulicami: Puławską, Doliną Służewiecką, aleją gen. Sikorskiego, aleją Wincentego Witosa, Trasą Siekierkowską, Płowiecką, Bronisława Czecha i Traktem Brzeskim do węzła Warszawa Wschód.",
+      "Wcześniej trasa biegła wzdłuż ul. Legionów w Wołominie; drogę w całości pozbawiono kategorii drogi wojewódzkiej we wrześniu 2020 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Voivodeship Road 628 runs along the old route of national road 2 through Warsaw's south-east, including the Siekierkowska Route and Traktu Brzeski. Since 2023 it lies entirely within Warsaw, after the section toward the southern bypass lost its voivodeship status.",
+    "ludzie": [],
+    "dawne_nazwy": ["Dawny przebieg: ul. Legionów w Wołominie"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Droga wojewódzka nr 628", "url": "https://pl.wikipedia.org/wiki/Droga_wojew%C3%B3dzka_nr_628"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to środek odcinka."
+  },
+  {
+    "id": "falenica",
+    "nazwa": "Falenica",
+    "name_en": "Falenica",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1673,
+    "lon": 21.2105,
+    "lokalizacja": "przyblizona",
+    "okres": "1924–dziś (w granicach Warszawy od 1951)",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1924–1951 Falenica była samodzielnym miastem i siedzibą gminy Falenica Letnisko.",
+      "W sierpniu 1920 roku ludność żydowska Falenicy została wysiedlona rozkazem polskich władz wojskowych.",
+      "W 1938 roku wybudowano synagogę przy ul. Bambusowej 9.",
+      "W 1940 roku w Falenicy utworzono getto, przez które przeszło około 6,5 tys. Żydów; zlikwidowano je 20 sierpnia 1942, a mieszkańców wywieziono do obozu zagłady w Treblince.",
+      "Od 1942 roku na terenie tartaku Rubena Najwera funkcjonował obóz pracy dla ludności żydowskiej; więźniowie, poza jedną osobą, zostali zamordowani podczas likwidacji obozu 7 maja 1943 roku.",
+      "Przedwojenny pałacyk Mon Plaisir Tadeusza Karszo-Siedlewskiego, wybudowany dla tancerki Olgi Sławskiej, był miejscem ostatniego przemówienia do narodu prezydenta Ignacego Mościckiego; w czasie okupacji mieszkał w nim gubernator dystryktu warszawskiego Ludwig Fischer.",
+      "W 1951 roku Falenica znalazła się w granicach administracyjnych Warszawy."
+    ],
+    "ciekawostki": [
+      "Według miejscowej legendy nazwa pochodzi od powodzi, gdy „fale nic” nie zrobiły wsi; to jednak etymologia ludowa."
+    ],
+    "summary_en": "Falenica is a housing estate in Wawer, once an independent town (1924–1951). It was home to a Jewish population destroyed during the German occupation, when a ghetto was liquidated in 1942 and a labour camp operated until 1943.",
+    "ludzie": [
+      {"kto": "Ignacy Mościcki", "rola": "prezydent, wygłosił tu ostatnie przemówienie do narodu", "wiki": null},
+      {"kto": "Ludwig Fischer", "rola": "gubernator dystryktu warszawskiego, mieszkał w pałacyku w czasie okupacji", "wiki": null},
+      {"kto": "Tadeusz Karszo-Siedlewski", "rola": "wybudował pałacyk Mon Plaisir", "wiki": null},
+      {"kto": "Olga Sławska", "rola": "tancerka, dla której wybudowano pałacyk Mon Plaisir", "wiki": null},
+      {"kto": "Ruben Najwer", "rola": "właściciel tartaku, na którego terenie działał obóz pracy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Falencice", "Falęcice", "Wille Falenickie (Falenica-Wille)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Falenica", "url": "https://pl.wikipedia.org/wiki/Falenica"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka dotyczą całego osiedla; rekord to obszar, nie punkt."
+  },
+  {
+    "id": "fort-wawer",
+    "nazwa": "Fort Wawer",
+    "name_en": "Fort Wawer",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.23305556,
+    "lon": 21.14555556,
+    "lokalizacja": "dokladna",
+    "okres": "1892–1936",
+    "istnieje": false,
+    "fakty": [
+      "Fort Wawer został wzniesiony w latach 90. XIX wieku jako jeden z fortów Twierdzy Warszawa; z badań archiwalnych wynika, że powstał w latach 1892–1893.",
+      "31 stycznia 1909 r. fort został skasowany w ramach likwidacji Twierdzy Warszawa, a latem 1919 r. rozebrany.",
+      "Latem 1920 r. rozbiórkę przerwano; 13 sierpnia 1920 r. fort był gotowy do obrony.",
+      "22 października 1920 r. gen. Wacław Iwaszkiewicz-Rudoszański wydał rozkaz opuszczenia obiektu, po czym nastąpiła ostateczna rozbiórka fortu.",
+      "W 1936 r. Prezydent Rzeczypospolitej przekazał bezpłatnie tereny fortu gminie Wawer (7 ha) z przeznaczeniem na cele ogólne."
+    ],
+    "ciekawostki": [
+      "Na obszarze fortu dawniej znajdował się cmentarz gminy ewangelicko-augsburskiej."
+    ],
+    "summary_en": "Fort Wawer was a fort of the Warsaw Fortress built in the 1890s on the right bank of the Vistula. It was dismantled after 1920 and today its area is a park named Matki Mojej.",
+    "ludzie": [
+      {"kto": "Wacław Iwaszkiewicz-Rudoszański", "rola": "generał, wydał rozkaz opuszczenia fortu (22 października 1920)", "wiki": null},
+      {"kto": "Władysław Wejtko", "rola": "generał, nadzorował budowę fortu w 1920 r.", "wiki": null},
+      {"kto": "Konstanty Wieliczko", "rola": "wskazywany w publikacjach jako autor projektu (datowanie 1904)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Fort Suworowa"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Fort Wawer", "url": "https://pl.wikipedia.org/wiki/Fort_Wawer"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Autor projektu i data budowy nie są w artykule jednoznacznie ustalone; podano dwie wersje datowania."
+  },
+  {
+    "id": "hala-widowiskowo-sportowa-ul-poezji",
+    "nazwa": "Hala widowiskowo-sportowa przy ul. Poezji",
+    "name_en": "Sports Hall on Poezji Street",
+    "typ": "sport",
+    "dzielnica": "Wawer",
+    "adres_dzis": "ul. Poezji 5",
+    "adres_historyczny": null,
+    "lat": 52.156111,
+    "lon": 21.202222,
+    "lokalizacja": "dokladna",
+    "okres": "2009–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Hala widowiskowo-sportowa przy ul. Poezji została otwarta w 2009 roku i może pomieścić 290 widzów.",
+      "Hala jest największym obiektem sportowym w Wawrze; stoi przy Szkole Podstawowej nr 76 im. 13 Dywizji Piechoty Strzelców Kresowych.",
+      "Nowa sala ma wymiary 40 × 20 m i wysokość 8,5 m; stałe trybuny mają pojemność 150 widzów, a rozsuwane teleskopowe trybuny 140 miejsc.",
+      "Poprzednia sala gimnastyczna SP 76, oddana do użytku w 1964 roku, była znacznie mniejsza.",
+      "W 2018 roku oddano do użytku ściankę wspinaczkową.",
+      "Hala była wielokrotnie gospodarzem międzynarodowych zawodów w sumo: mistrzostw świata (2010), mistrzostw Europy (2013, 2014) oraz mistrzostw Europy młodzików, kadetów i juniorów (2017)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A sports hall opened in 2009 next to Primary School No. 76 in Falenica, Wawer. It is the largest sports facility in Wawer and has hosted several international sumo championships.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Hala widowiskowo-sportowa przy ul. Poezji w Warszawie", "url": "https://pl.wikipedia.org/wiki/Hala_widowiskowo-sportowa_przy_ul._Poezji_w_Warszawie"},
+      {"tytul": "Wikipedia: Falenica", "url": "https://pl.wikipedia.org/wiki/Falenica"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "i-bitwa-pod-wawrem",
+    "nazwa": "I bitwa pod Wawrem",
+    "name_en": "First Battle of Wawer",
+    "typ": "zdarzenie",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.213888888,
+    "lon": 21.158055555,
+    "lokalizacja": "przyblizona",
+    "okres": "19–20 lutego 1831",
+    "istnieje": false,
+    "fakty": [
+      "I bitwa pod Wawrem była jedną z bitew powstania listopadowego, toczoną od 19 do 20 lutego 1831 roku.",
+      "W bitwie starły się wojska polskie dowodzone przez Franciszka Żymirskiego i Piotra Szembeka z I korpusem armii Iwana Dybicza.",
+      "Polscy dowódcy nie otrzymali posiłków i nie mogli w pełni wykorzystać zwycięstwa."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The First Battle of Wawer was fought on 19–20 February 1831 during the November Uprising, between Polish forces under Franciszek Żymirski and Piotr Szembek and the I Corps of Ivan Dybich.",
+    "ludzie": [
+      {"kto": "Franciszek Żymirski", "rola": "dowódca wojsk polskich", "wiki": null},
+      {"kto": "Piotr Szembek", "rola": "dowódca wojsk polskich", "wiki": null},
+      {"kto": "Iwan Dybicz", "rola": "dowódca I korpusu armii rosyjskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: I bitwa pod Wawrem", "url": "https://pl.wikipedia.org/wiki/I_bitwa_pod_Wawrem"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł ma jeden akapit; współrzędne to środek pola bitwy z nagłówka."
+  }
+]

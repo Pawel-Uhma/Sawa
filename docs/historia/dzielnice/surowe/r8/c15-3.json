@@ -1,0 +1,369 @@
+[
+  {
+    "id": "ulica-wilenska",
+    "nazwa": "Ulica Wileńska",
+    "name_en": "Wileńska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Wileńska",
+    "adres_historyczny": null,
+    "lat": 52.2581,
+    "lon": 21.0401,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1860–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała ok. 1860 w związku z założeniem Nowej Pragi; jej nazwa nawiązuje do Wilna, do którego odchodziły pociągi z Dworca Petersburskiego wybudowanego w 1865.",
+      "W 1908 ulicą Wileńską i dalej ulicami Konopacką i Stalową pojechały tramwaje elektryczne.",
+      "W kamienicy nr 11 mieścił się XIV komisariat Policji Państwowej.",
+      "Ul. Wileńska 9 – w budynku mieścił się komisariat carskiej policji; 26 marca 1905 nieudanego zamachu na ten komisariat dokonał Stefan Okrzeja.",
+      "Ul. Wileńska 13 – kamienica Arona Balfisza z 1890, w której mieściła się pierwsza powojenna siedziba ambasady ZSRR (1945–1946).",
+      "Parowozownia z 1860 (nr 14), najstarszy na terenie Warszawy obiekt architektury kolejowej, została zburzona w 2009.",
+      "W 1950, przy przekuwaniu torów z szerokiego na normalny rozstaw, tramwaje przeniesiono z ulic Wileńskiej i Konopackiej na ulice Targową i 11 Listopada."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wileńska in Praga-Północ, opened around 1860 with New Praga, took its name from Vilnius, the destination of trains from the Petersburg station. It was the site of the 1905 attempt on a police station by Stefan Okrzeja.",
+    "ludzie": [
+      {
+        "kto": "Stefan Okrzeja",
+        "rola": "dokonał nieudanego zamachu na komisariat przy ul. Wileńskiej 9 (26 marca 1905)",
+        "wiki": null
+      },
+      {
+        "kto": "Aron Balfisz",
+        "rola": "właściciel kamienicy przy ul. Wileńskiej 13 z 1890",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wileńska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wile%C5%84ska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-wybrzeze-helskie",
+    "nazwa": "Ulica Wybrzeże Helskie",
+    "name_en": "Wybrzeże Helskie Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Wybrzeże Helskie",
+    "adres_historyczny": null,
+    "lat": 52.255861111,
+    "lon": 21.02025,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie była to droga bez nazwy, biegnąca wzdłuż torów kolejki jabłonowskiej.",
+      "Nazwę nadano w latach 30. XX wieku.",
+      "W latach 2020−2021 wzdłuż ulicy zbudowano betonowy mur przeciwpowodziowy, połączony z tzw. wałem golędzinowskim za mostem Gdańskim i bramą przeciwpowodziową w Porcie Praskim."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wybrzeże Helskie runs along the Vistula in Praga-Północ, from the Śląsko-Dąbrowski Bridge to the Gdański Bridge. It began as an unnamed road beside the Jabłonowska railway, and a flood wall was built along it in 2020–2021.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wybrzeże Helskie w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wybrze%C5%BCe_Helskie_w_Warszawie"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł krótki, bez dat budowy samej ulicy."
+  },
+  {
+    "id": "ulica-wybrzeze-puckie",
+    "nazwa": "Ulica Wybrzeże Puckie",
+    "name_en": "Wybrzeże Puckie Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Wybrzeże Puckie",
+    "adres_historyczny": null,
+    "lat": 52.275833333,
+    "lon": 21.009444444,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 70. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona w latach 70. XX wieku jako północne przedłużenie ulicy Wybrzeże Helskie.",
+      "Stanowi część nigdy nie zrealizowanej tzw. Praskiej Wisłostrady, która miała biec wzdłuż prawego brzegu Wisły.",
+      "Podczas budowy mostu gen. Grota-Roweckiego wybudowano przejazd przygotowany do budowy dwupasmowej ulicy razem z torowiskiem tramwajowym."
+    ],
+    "ciekawostki": [
+      "Jej drugą, nieformalną nazwą jest Szlak Golędzinowski."
+    ],
+    "summary_en": "Wybrzeże Puckie is the northern continuation of Wybrzeże Helskie, running through Golędzinów. It was built as part of the never-completed Praga riverside expressway, and its tram-ready section was prepared during the construction of the Grot-Rowecki Bridge.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wybrzeże Puckie w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wybrze%C5%BCe_Puckie_w_Warszawie"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-wybrzeze-szczecinskie",
+    "nazwa": "Ulica Wybrzeże Szczecińskie",
+    "name_en": "Wybrzeże Szczecińskie Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Wybrzeże Szczecińskie",
+    "adres_historyczny": null,
+    "lat": 52.244002,
+    "lon": 21.037623,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 20.–połowa lat 50. XX wieku (budowa etapami)",
+    "istnieje": true,
+    "fakty": [
+      "Ulica była budowana etapami od lat 20. do połowy lat 50. XX wieku.",
+      "Około 1928 roku nad ulicą przeprowadzono wiadukt linii średnicowej.",
+      "Ulica stanowi fragment drogi krajowej nr 61.",
+      "Wzdłuż ulicy przebiega droga rowerowa, zbudowana w trakcie remontu w latach 2010−2011."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Wybrzeże Szczecińskie is a road on the border of Praga-Północ and Praga-Południe, built in stages between the 1920s and the mid-1950s. It carries part of national road 61 and gained a bike path during a 2010–2011 renovation.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Wybrzeże Szczecińskie w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wybrze%C5%BCe_Szczeci%C5%84skie_w_Warszawie"
+      }
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł wymienia też Pragę-Południe; dzielnica w rekordzie wg nagłówka DZIELNICE."
+  },
+  {
+    "id": "ulica-zabkowska",
+    "nazwa": "Ulica Ząbkowska",
+    "name_en": "Ząbkowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Ząbkowska",
+    "adres_historyczny": null,
+    "lat": 52.2542,
+    "lon": 21.0434,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI–XVIII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W XVI–XVIII wieku ulica stanowiła granicę między Pragą i Skaryszewem; znajdowały się przy niej ratusz Skaryszewa i folwark Szmula Zbytkowera.",
+      "W 1770 ulicę w rejonie dzisiejszej ul. Markowskiej przecięto okopem Lubomirskiego, przy którym zbudowano rogatki Ząbkowskie.",
+      "W 1882 na posesji między ulicami Targową, Ząbkowską i Brzeską otwarto bazar Różyckiego.",
+      "W 1919 ulicą poprowadzono linię tramwajową, którą wycofano w 2000.",
+      "Przed II wojną światową ok. połowy mieszkańców ulicy stanowili Żydzi; z tego powodu ulica była nazywana „praskimi Nalewkami”.",
+      "1 sierpnia 1944 przy zbiegu z ul. Ząbkowską doszło do potyczki oddziału powstańców z patrolem Schutzpolizei; zginęło trzech powstańców, a pięciu zostało rannych.",
+      "W 2006 odcinek ulicy między ulicami Targową i Brzeską został wpisany do rejestru zabytków jako założenie urbanistyczne."
+    ],
+    "ciekawostki": [
+      "W 2010 przy skrzyżowaniu z ul. Targową ustawiono grupę rzeźbiarską przedstawiającą niebieskie aniołki, zaprojektowaną przez Marka Sułka."
+    ],
+    "summary_en": "Ząbkowska in Praga-Północ, named after the village of Wola Ząbkowska, was a border street between Praga and Skaryszew. Before the war about half its residents were Jewish, and in 1944 it was the scene of an uprising skirmish.",
+    "ludzie": [
+      {
+        "kto": "Szmula Zbytkowera",
+        "rola": "właściciel folwarku przy ul. Ząbkowskiej",
+        "wiki": null
+      },
+      {
+        "kto": "Icka Hersza Jahrmana",
+        "rola": "właściciel kamienicy nr 11 z reliktami żydowskiego domu modlitwy",
+        "wiki": null
+      },
+      {
+        "kto": "Marek Sułek",
+        "rola": "autor rzeźb niebieskich aniołków przy skrzyżowaniu z Targową (2010)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Ząbkowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Z%C4%85bkowska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Imię i nazwisko podane w brzmieniu z artykułu."
+  },
+  {
+    "id": "ulica-ignacego-klopotowskiego",
+    "nazwa": "Ulica ks. Ignacego Kłopotowskiego",
+    "name_en": "Ignacy Kłopotowski Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. ks. Ignacego Kłopotowskiego",
+    "adres_historyczny": "Brukowa, Szeroka",
+    "lat": 52.2504,
+    "lon": 21.0316,
+    "lokalizacja": "przyblizona",
+    "okres": "1765–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1765 ulica pojawiła się po raz pierwszy na planie geometry Macieja Deutscha jako wąska droga od ul. Targowej do ul. Senatorskiej (obecnie Sierakowskiego).",
+      "W latach 1806−1809 z rozkazu Napoleona I w związku z budową fortyfikacji wyburzono większość zabudowań dzielnicy.",
+      "W 1836 przy skrzyżowaniu z ul. Petersburską (obecnie Jagiellońską) zakończono budowę Synagogi Praskiej zaprojektowanej przez Józefa Lessela.",
+      "Po otwarciu mostu Kierbedzia w 1864 roku, po dziesięciu latach od tego wydarzenia Brukowej nadano nazwę Szeroka.",
+      "W latach 1903−1904 wzniesiono pierwszy miejski Zespół Szkół Powszechnych nr 49 i 51 pod nr. 17; budynek zaprojektował Apoloniusz Nieniewski, a budowę ukończył Henryk Julian Gay.",
+      "W marcu 1949 ulicy nadano nazwę Karola Wójcika, którą zmieniono na obecną w styczniu 1991.",
+      "Od marca 2009 przy wejściu do Domu Generalnego Sióstr Loretanek (nr 18) działa okno życia."
+    ],
+    "ciekawostki": [
+      "Budynek mykwy (żydowskiej łaźni rytualnej) przy nr. 31, wzniesiony przed 1914 wg projektu Nauma Hornsteina, jest jedynym tego typu obiektem w mieście."
+    ],
+    "summary_en": "Ignacy Kłopotowski Street in Praga-Północ, first shown on Deutscher's 1765 plan, was called Brukowa and Szeroka before the 1949 and 1991 renamings. The Praga Synagogue was completed here in 1836, and the mikveh at No. 31 is the only one of its kind in Warsaw.",
+    "ludzie": [
+      {
+        "kto": "Maciej Deutsch",
+        "rola": "geometra; jego plan z 1765 roku pokazuje ulicę",
+        "wiki": null
+      },
+      {
+        "kto": "Józef Lessel",
+        "rola": "autor Synagogi Praskiej (ukończonej w 1836)",
+        "wiki": null
+      },
+      {
+        "kto": "Apoloniusz Nieniewski",
+        "rola": "projektant Zespołu Szkół Powszechnych nr 49 i 51 (1903–1904)",
+        "wiki": null
+      },
+      {
+        "kto": "Henryk Julian Gay",
+        "rola": "ukończył budowę Zespołu Szkół Powszechnych nr 49 i 51",
+        "wiki": null
+      },
+      {
+        "kto": "Naum Hornstein",
+        "rola": "projektant budynku mykwy pod nr 31 (przed 1914)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Brukowa",
+      "Szeroka",
+      "Karola Wójcika (1949–1991)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica ks. Ignacego Kłopotowskiego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_ks._Ignacego_K%C5%82opotowskiego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-lochowska",
+    "nazwa": "Ulica Łochowska",
+    "name_en": "Łochowska Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Łochowska",
+    "adres_historyczny": null,
+    "lat": 52.25925,
+    "lon": 21.054833,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1875–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Najstarszy fragment ulicy, między Kawęczyńską a Siedlecką, według części opracowań wytyczono około 1875 roku.",
+      "Około 1890 roku Łochowską przedłużono w kierunku późniejszej ulicy Otwockiej; w latach 1911–1914 nastąpiło dalsze wydłużenie w kierunku Grajewskiej.",
+      "W 1909 roku u zbiegu z ulicą Siedlecką wzniesiono kamienicę Jana Klatczyńskiego, którą mieszkańcy nazywali „Bristolem”.",
+      "We wrześniu 1939 roku część zabudowy w pobliżu początku ulicy została zniszczona podczas niemieckiego oblężenia Warszawy.",
+      "W pierwszych miesiącach 1945 roku redakcja dziennika „Życie Warszawy” mieściła się w mieszkaniu przy ul. Łochowskiej 37.",
+      "W latach 1972–1975 powstał m.in. jedenastokondygnacyjny blok przy Łochowskiej 1/29; projektantem zespołu był architekt Jan Kalinowski."
+    ],
+    "ciekawostki": [
+      "Kamienica Jana Klatczyńskiego miała na elewacji zegar, a nad oknami drugiej kondygnacji niszę z popiersiem Adama Mickiewicza."
+    ],
+    "summary_en": "Łochowska runs through the Szmulowizna quarter of Praga-Północ, built up from the 1870s and largely surviving the war. Its 1909 'Bristol' tenement and its interwar apartment blocks are now part of a revitalisation programme; 1970s housing estates broke the old street line.",
+    "ludzie": [
+      {
+        "kto": "Jan Klatczyński",
+        "rola": "inwestor kamienicy z 1909 przy zbiegu z ul. Siedlecką",
+        "wiki": null
+      },
+      {
+        "kto": "Franciszek Karwowski",
+        "rola": "przedsiębiorca budowlany inwestujący na Szmulowiźnie na początku XX wieku",
+        "wiki": null
+      },
+      {
+        "kto": "Szmul Jakubowicz Zbytkower",
+        "rola": "zamożny kupiec i właściciel gruntów, od którego nazwa Szmulowizny",
+        "wiki": null
+      },
+      {
+        "kto": "Jan Kalinowski",
+        "rola": "projektant zespołu Szmulowizna Wschodnia i Szmulowizna II (1972–1975)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Łochowska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%81ochowska_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w części o okresie PRL; fakty z dostępnego tekstu."
+  },
+  {
+    "id": "ulica-swietych-cyryla-i-metodego",
+    "nazwa": "Ulica Świętych Cyryla i Metodego",
+    "name_en": "Saints Cyril and Methodius Street",
+    "typ": "ulica",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Świętych Cyryla i Metodego",
+    "adres_historyczny": null,
+    "lat": 52.2549,
+    "lon": 21.032,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1868–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała około 1868 wraz z budową soboru metropolitalnego Świętej Równej Apostołom Marii Magdaleny.",
+      "W latach 1927–1930 pod nr 4 wzniesiono budynek na internat studentów Studium Teologii Prawosławnej Uniwersytetu Warszawskiego.",
+      "Jesienią 1944 budynek zajęło Ministerstwo Bezpieczeństwa Publicznego i stał się miejscem przesłuchań i tortur żołnierzy Polski Podziemnej.",
+      "1 sierpnia 1944 Niemcy zamordowali na ulicy 17 cywilów, co upamiętnia tablica pod nr 4.",
+      "Po 1945 roku ulicę skrócono w związku z poszerzeniem północnego odcinka ul. Targowej.",
+      "W latach 1948−1952 na dawnych terenach wojskowych powstało osiedle Praga I, zaprojektowane przez Szymona Syrkusa i Helenę Syrkus.",
+      "Budynek zwrócono Cerkwi w lutym 2010, a następnie powstało w nim Centrum Kultury Prawosławnej."
+    ],
+    "ciekawostki": [
+      "Z okresu przesłuchań pochodzi popularne powiedzenie: „Cyryl jak Cyryl, ale te metody...”."
+    ],
+    "summary_en": "Saints Cyril and Methodius Street in Praga-Północ was laid out around 1868 to frame the Orthodox metropolitan cathedral. In 1944 the building at No. 4 served as a security police interrogation site, and it was returned to the Orthodox Church in 2010.",
+    "ludzie": [
+      {
+        "kto": "Szymon Syrkus",
+        "rola": "projektant osiedla Praga I",
+        "wiki": null
+      },
+      {
+        "kto": "Helena Syrkus",
+        "rola": "projektantka osiedla Praga I",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Ulica Świętych Cyryla i Metodego w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_%C5%9Awi%C4%99tych_Cyryla_i_Metodego_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

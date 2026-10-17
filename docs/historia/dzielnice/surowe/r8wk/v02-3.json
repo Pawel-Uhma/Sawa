@@ -1,0 +1,224 @@
+[
+  {
+    "id": "urzad-dzielnicy-bialoleka",
+    "nazwa": "Ratusz Dzielnicy Białołęka",
+    "name_en": "Białołęka District Town Hall",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Modlińska 197",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1997–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek będący siedzibą Urzędu Dzielnicy Białołęka został wybudowany w 1997 roku.",
+      "W styczniu 1998 roku, w konkursie „Życie w architekturze” zorganizowanym przez miesięcznik Architektura – Murator, ratusz został uznany za najlepszy budynek użyteczności publicznej lat 1996-1997 w stolicy.",
+      "Projektantami ratusza byli Grzegorz Stiasny i Jakub Wacławek z Pracowni Aré.",
+      "Kubatura obiektu wynosi 21.077 m3, a całkowita powierzchnia użytkowa: 4.482,9 m2 (w tym 2.949,7 m2 powierzchni biurowej)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Białołęka district office is housed in a town hall at 197 Modlińska Street, built in 1997. In January 1998 it was named the best public utility building of 1996–1997 in Warsaw. It was designed by Grzegorz Stiasny and Jakub Wacławek of Pracownia Aré.",
+    "ludzie": [
+      {"kto": "Grzegorz Stiasny", "rola": "projektant ratusza", "wiki": null},
+      {"kto": "Jakub Wacławek", "rola": "projektant ratusza", "wiki": null},
+      {"kto": "Anna Majchrzak", "rola": "burmistrz dzielnicy Białołęka (stan z artykułu)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Urząd Dzielnicy Białołęka", "url": "https://warszawa.fandom.com/pl/wiki/Urząd_Dzielnicy_Białołęka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy budynku siedziby urzędu. Brak współrzędnych w artykule."
+  },
+  {
+    "id": "warszawska-drukarnia-akcydensowa",
+    "nazwa": "Warszawska Drukarnia Akcydensowa",
+    "name_en": "Warsaw Commercial Printing House",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Kowalczyka 21a",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1966–2015",
+    "istnieje": false,
+    "fakty": [
+      "Drukarnia powstała w 1966 roku, a jej pierwsza siedziba mieściła się przy ul. Podskarbińskiej 11 na Grochowie.",
+      "W latach 70. XX wieku drukarnię przeniesiono na znacznie większą działkę na Żeraniu.",
+      "W 1991 roku drukarnia weszła w stan upadłości.",
+      "5 stycznia 2000 roku Zarząd PPWK wypowiedział umowę o współpracy z drukarnią.",
+      "26 sierpnia 2002 roku sąd gospodarczy ogłosił upadłość Warszawskiej Drukarni Akcydensowej.",
+      "Na przełomie 2014 i 2015 roku wszelkie zabudowania na terenie dawnej drukarni zburzono, a na działce powstało 9 mieszkalnych budynków wielorodzinnych."
+    ],
+    "ciekawostki": [
+      "W zbiorach Muzeum Drukarstwa Warszawskiego znajduje się księga pamiątkowa z 1975 roku oraz sztandar drukarni, a do Muzeum Neonów przekazano neon z napisem „Drukarnia”."
+    ],
+    "summary_en": "The Warsaw Commercial Printing House was a printing works in Żerań that printed posters, theatre bills, record sleeves and maps. It went bankrupt in 2002, and its buildings were demolished in 2014–2015 to make way for nine residential blocks.",
+    "ludzie": [
+      {"kto": "Jan Wiśniewski", "rola": "udziałowiec drukarni (29,2%)", "wiki": null},
+      {"kto": "Dariusz Stefańczyk", "rola": "udziałowiec drukarni (16,3%)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Warszawska Drukarnia Akcydensowa (WDA)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Warszawska Drukarnia Akcydensowa", "url": "https://warszawa.fandom.com/pl/wiki/Warszawska_Drukarnia_Akcydensowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres to adres zakładu z artykułu (ul. Kowalczyka 21a); artykuł nie podaje dzisiejszego adresu osiedla na działce."
+  },
+  {
+    "id": "warszawska-fabryka-tworzyw-sztucznych-pollena",
+    "nazwa": "Warszawska Fabryka Tworzyw Sztucznych Pollena",
+    "name_en": "Warsaw Plastics Factory Pollena",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Marywilska 58",
+    "adres_historyczny": "Marywilska 58",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "1954–2018",
+    "istnieje": false,
+    "fakty": [
+      "27 marca 1954 roku na kanwie wytwórni powstała Warszawska Fabryka Tworzyw Sztucznych, powołana decyzją ministra przemysłu chemicznego Bolesława Rumińskiego.",
+      "W 1958 roku rozpoczęto pierwszą w kraju produkcję folii polietylowej.",
+      "W 1971 roku fabryka otrzymała nagrodę Złotego Kasztana I stopnia za produkcję butelek.",
+      "W 1976 roku produkcja, w porównaniu z 1954 rokiem, wzrosła sześćdziesięciokrotnie, do 10 tysięcy ton, a zatrudnienie wzrosło pięciokrotnie, do 900 osób.",
+      "W 2012 roku hale produkcyjne zostały wyburzone, a w 2018 roku rozpoczęto na ich terenie budowę osiedla mieszkaniowego Osiedle Moje, a następnie osiedla Osiedle Kameralne.",
+      "W latach 1998-2000 fabryka jako przedsiębiorstwo państwowe uległa likwidacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Warsaw Plastics Factory Pollena was founded in 1954 on the basis of an earlier plastics workshop and had its seat at 58 Marywilska Street in Żerań. Its production halls were demolished in 2012, and a residential estate was built on the site from 2018.",
+    "ludzie": [
+      {"kto": "Stanisław Pawłowski", "rola": "właściciel przedwojennego zakładu mechanicznego, który po wojnie otworzył wytwórnię Plastmas", "wiki": null},
+      {"kto": "Bolesław Rumiński", "rola": "minister przemysłu chemicznego, który powołał fabrykę", "wiki": null},
+      {"kto": "Jan Antosiewicz", "rola": "dyrektor fabryki (1957-1966)", "wiki": null},
+      {"kto": "Stanisław Puławski", "rola": "dyrektor fabryki (1966-1970)", "wiki": null},
+      {"kto": "Waldemar Furmaniak", "rola": "dyrektor fabryki (od 1970)", "wiki": null},
+      {"kto": "Lesław Kula", "rola": "likwidator fabryki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Plastmas"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Warszawska Fabryka Tworzyw Sztucznych Pollena", "url": "https://warszawa.fandom.com/pl/wiki/Warszawska_Fabryka_Tworzyw_Sztucznych_Pollena"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z artykułu (Marywilska 58) to adres fabryki; artykuł nie podaje dzisiejszego adresu osiedla. Data 2018 dotyczy rozpoczęcia budowy osiedla, nie zakończenia."
+  },
+  {
+    "id": "willa-fletniowa-2",
+    "nazwa": "Willa Fletniowa 2",
+    "name_en": "Villa at 2 Fletniowa Street",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Fletniowa 2",
+    "adres_historyczny": "Długa",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek powstał na początku XX wieku, przed I wojną światową.",
+      "Jego właścicielką była Rosjanka Natalia Śmiernicka.",
+      "Budynek powstał wraz z rozbudową Płudów, którą planował rejent i filantrop Krzysztof Kiersnowski, przekształcając folwark w letnisko.",
+      "Po wojnie dom został przejęty przez lokalne władze i przekazany na kwaterunek.",
+      "W 1991 roku nieruchomość na własność kupiła jedna z mieszkających w budynku rodzin, a w 2009 roku wyprowadziła się stąd ostatnia osoba.",
+      "22 stycznia 2010 roku willa została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Wzdłuż ówczesnej ulicy Długiej, czyli dzisiejszej Fletniowej, przy willi planowano nawet budowę linii tramwajowej."
+    ],
+    "summary_en": "Villa at 2 Fletniowa Street in Płudy is a two-storey Świdermajer-style summer house from the early 20th century. It was entered in the monument register on 22 January 2010 after residents and local associations opposed its demolition.",
+    "ludzie": [
+      {"kto": "Natalia Śmiernicka", "rola": "właścicielka willi", "wiki": null},
+      {"kto": "Krzysztof Kiersnowski", "rola": "rejent i filantrop, autor planów przekształcenia Płudów w letnisko", "wiki": null},
+      {"kto": "Paweł Karpiński", "rola": "obecny właściciel działki", "wiki": null}
+    ],
+    "dawne_nazwy": ["Długa (dawna nazwa ulicy Fletniowej)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Fletniowa 2", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Fletniowa_2"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawna nazwa „Długa” dotyczy ulicy, nie numeru budynku."
+  },
+  {
+    "id": "willa-topolanka",
+    "nazwa": "Willa Topolanka",
+    "name_en": "Topolanka Villa",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Leśnej Polanki 30",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "dokladna",
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Willa jest wpisana do gminnej ewidencji zabytków jako powstała na początku XX wieku (typowane lata 1901-1925).",
+      "Budynek został dwukrotnie strawiony przez pożary: w 1954 roku oraz 22 czerwca 2011 roku.",
+      "W ramach decyzji numer 59490 z dnia 11 sierpnia 2000 roku budynek został nabyty przez miasto.",
+      "Decyzją burmistrza Białołęki Jerzego Smoczyńskiego z 2005 roku willa została przeznaczona do sprzedaży po zapewnieniu lokali osobom tam mieszkającym.",
+      "Dzielnicy przekazano budynek dopiero w 2015 roku.",
+      "W grudniu 2015 roku teren budowli został otoczony ogrodzeniem z płyt pilśniowych, a okna zabito dyktami."
+    ],
+    "ciekawostki": [
+      "Nazwa willi pochodzi od dwóch wielkich topoli, z których pierwszą powaliła wichura w 1972 roku, a druga padła około 2005 roku.",
+      "Obok budynku rośnie dwudziestometrowy dąb szypułkowy, pomnik przyrody nr 153; po drugiej stronie ulicy rośnie szesnastometrowy dąb „Michałek” (nr 154)."
+    ],
+    "summary_en": "Topolanka is an eclectic villa at 30 Leśnej Polanki Street in Winnica, probably built in the early 20th century. It was damaged by fires in 1954 and 2011, passed to the city in 2000 and to the district in 2015, and has stood abandoned since.",
+    "ludzie": [
+      {"kto": "Henryk Stryjewski", "rola": "według przekazów jeden z właścicieli willi, prokurent zakładów chemicznych w Winnicy", "wiki": null},
+      {"kto": "Jerzy Smoczyński", "rola": "burmistrz Białołęki, który w 2005 roku zdecydował o sprzedaży budynku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Willa Topolanka", "url": "https://warszawa.fandom.com/pl/wiki/Willa_Topolanka"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "zaklady-chemiczne-w-winnicy",
+    "nazwa": "Zakłady Chemiczne w Winnicy",
+    "name_en": "Winnica Chemical Works",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Leśnej Polanki",
+    "adres_historyczny": "Leśna",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1901–ok. 1966",
+    "istnieje": false,
+    "fakty": [
+      "Pierwsza fabryka pod nazwą Towarzystwo Akcyjne Przetworów Chemicznych „Winnica” rozpoczęła działalność w 1901 roku.",
+      "W 1904 roku fabryka zatrudniała 50 osób.",
+      "W 1929 roku na miejscu poprzedniej fabryki powstał nowy zakład, Zakłady Chemiczne w Winnicy (Winchem), którego twórcą i dyrektorem do wybuchu wojny był doktor Alfred Hirszowski.",
+      "W 1939 roku fabryka była zaliczana do najważniejszych firm chemicznych w Polsce i zatrudniała 66 pracowników.",
+      "12 lutego 1948 roku fabryka została znacjonalizowana.",
+      "13 września 1967 roku Szkoła Podstawowa nr 154 rozpoczęła działalność w nowej siedzibie zbudowanej na terenach pofabrycznych w 1966 roku."
+    ],
+    "ciekawostki": [
+      "Zakłady odprowadzały ścieki specjalnie wybudowanym kolektorem wprost do Wisły; w zależności od barwnika woda w Wiśle była tego koloru, a niektóre ścieki powodowały śnięcie ryb."
+    ],
+    "summary_en": "Winnica Chemical Works in Winnica, Białołęka, was a dye and chemical factory founded in 1901 as a company with a plant near Henryków. Nationalised in 1948, its site now hosts Primary School No. 154.",
+    "ludzie": [
+      {"kto": "Alfred Hirszowski", "rola": "twórca i dyrektor fabryki do wybuchu wojny", "wiki": null},
+      {"kto": "Henryk Stryjewski", "rola": "zarządzał fabryką razem z Hirszowskim", "wiki": null},
+      {"kto": "Hermann Schwab", "rola": "dyrektor fabryki w okresie okupacji niemieckiej", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Towarzystwo Akcyjne Przetworów Chemicznych „Winnica”",
+      "Kalle & Co. AG Warszawa",
+      "Winnicaer Chemische Werke"
+    ],
+    "zrodla": [
+      {"tytul": "Warszawikia: Zakłady Chemiczne w Winnicy", "url": "https://warszawa.fandom.com/pl/wiki/Zakłady_Chemiczne_w_Winnicy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje tylko ulicę (przy obecnej ul. Leśnej Polanki), bez numeru. Na miejscu działa Szkoła Podstawowa nr 154."
+  }
+]

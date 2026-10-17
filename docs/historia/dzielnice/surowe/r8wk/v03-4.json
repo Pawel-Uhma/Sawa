@@ -1,0 +1,140 @@
+[
+  {
+    "id": "ulica-marsylska",
+    "nazwa": "Ulica Marsylska",
+    "name_en": "Marsylska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Marsylska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 70. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica pojawia się po raz pierwszy na planie Warszawy z roku 1973.",
+      "Powstała wraz z zabudową osiedla Stegny na dawnych terenach rolniczych.",
+      "28 listopada 2019 uruchomiono szlaban mający na celu ograniczenie ilości samochodów, których właścicielami nie są mieszkańcy ulicy Marsylskiej.",
+      "Przy wejściu do budynku Marsylska 3 tablica upamiętnia powstanie milionowego mieszkania spółdzielczego w Polskiej Rzeczypospolitej Ludowej, zarazem 150-tysięcznego mieszkania oddanego w tamtym czasie przez spółdzielczość mieszkaniową w Warszawie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Marsylska is a dead-end street in Stegny, Mokotów, that first appears on a 1973 city plan. It was built with the Stegny estate, and since 2019 a barrier limits traffic to residents.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Marsylska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Marsylska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-merliniego",
+    "nazwa": "Ulica Merliniego",
+    "name_en": "Merliniego Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Merliniego",
+    "adres_historyczny": "Wierzbińska; planowana obecna ulica Maczka (w latach 30. XX w.)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "1936",
+    "istnieje": true,
+    "fakty": [
+      "Obecna linia ulicy Dominika Merliniego pojawia się na mapach stolicy od 1936 roku, jednak nazywana była wtedy ulicą Wierzbińską.",
+      "W latach 50. ulica uzyskała obecnego patrona.",
+      "W latach 30. XX wieku ulicą Merliniego nazywano planowaną wówczas obecną ulicę Maczka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Merliniego is a street of over 350 metres in Wierzbno, Mokotów. The line appears on maps from 1936 under the name Wierzbińska, and in the 1950s it received its current patron, the architect Dominik Merlini.",
+    "ludzie": [
+      {"kto": "Dominik Merlini", "rola": "włoski architekt działający w Polsce, patron ulicy; autor Pałacu na Wodzie w Łazienkach Królewskich", "wiki": null}
+    ],
+    "dawne_nazwy": ["Wierzbińska"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Merliniego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Merliniego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-naruszewicza",
+    "nazwa": "Ulica Naruszewicza",
+    "name_en": "Naruszewicza Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Naruszewicza",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 30. XX w.",
+    "istnieje": true,
+    "fakty": [
+      "Pod numerem 10 znajduje się kamienica Wróblewskich z lat 1920-1921.",
+      "Pod numerem 20 znajduje się willa z 1939 roku, zaprojektowana i zbudowana dla siebie przez Jana Koszczyc-Witkiewicza, architekta okresu przedwojennego.",
+      "Podczas prac remontowych w 2010 roku pod asfaltem odkryto dawną kostkę brukową, w związku z czym pojawiły się plany jej zachowania."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Naruszewicza is an east-west street in Wierzbno, Mokotów, named after the Enlightenment historian and poet Adam Stanisław Naruszewicz. Its prewar villa at no. 20 was built in 1939 by the architect Jan Koszczyc-Witkiewicz for himself.",
+    "ludzie": [
+      {"kto": "Adam Stanisław Naruszewicz", "rola": "polski historyk i poeta doby Oświecenia, patron ulicy", "wiki": null},
+      {"kto": "Jan Koszczyc-Witkiewicz", "rola": "architekt okresu przedwojennego, zaprojektował i zbudował dla siebie willę przy ul. Naruszewicza 20", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Naruszewicza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Naruszewicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-niegocinska",
+    "nazwa": "Ulica Niegocińska",
+    "name_en": "Niegocińska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Niegocińska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "początek lat 60. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała w pierwszej połowie lat 60. XX wieku, w ramach budowy osiedla mieszkaniowego (tzw. osiedla prototypów) dla Służewca Przemysłowego.",
+      "Ulica nazwę zyskała w 1965 roku.",
+      "Nazwa ulicy pochodzi od leżącego na południe od Giżycka jeziora Niegocin."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Niegocińska is a dead-end, C-shaped street in Służew, Mokotów. It was built in the early 1960s as part of the so-called prototype housing estate for Służewiec Przemysłowy and received its name in 1965.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Niegocińska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Niegocińska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje też, że ulica leży na Służewcu, choć MSI przypisuje ją do Służewa."
+  },
+  {
+    "id": "ulica-odolanska",
+    "nazwa": "Ulica Odolańska",
+    "name_en": "Odolańska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Odolańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 30. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Okres powstania ulicy: lata 30. XX wieku.",
+      "Podczas powstania warszawskiego jedna z piwnic na Odolańskiej miała opinię bardzo pewnej i bezpiecznej.",
+      "Gdy ludzie wyszli z tej piwnicy, w budynek trafił pocisk, który zniszczył go doszczętnie i zasypał tych, którzy nie posłuchali ostrzeżenia."
+    ],
+    "ciekawostki": [
+      "Przed wyjściem z piwnicy pojawiła się szara postać kobieca i nalegała na natychmiastowe opuszczenie schronu; gdy ludzie wyszli, jej sylwetka nagle się rozwiała."
+    ],
+    "summary_en": "Odolańska is an 800-metre street in Stary Mokotów, running from Aleja Niepodległości to Puławska. During the 1944 Uprising, one cellar here was considered especially safe; a shell destroyed the building after people had left it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Odolańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Odolańska"}],
+    "pewnosc": "srednia",
+    "uwagi": "Opowieść „Cud z Odolańskiej” jest anegdotą z artykułu; zapisana jako ciekawostka."
+  }
+]

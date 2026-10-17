@@ -1,0 +1,129 @@
+[
+  {
+    "id": "garaz-zajezdni-sluzby-zdrowia",
+    "nazwa": "Garaż Zajezdni Służby Zdrowia",
+    "name_en": "Health Service Depot Garage",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jana Pawła Woronicza 19",
+    "adres_historyczny": null,
+    "lat": 52.188364, "lon": 21.005692,
+    "lokalizacja": "dokladna",
+    "okres": "1956–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Garaż wybudowano w latach 1956–1958 według projektu Wiesława Żochowskiego, Mariusza Dałka i Janusza Czajkowskiego z Centralnego Biura Studiów i Projektów Transportu Drogowego i Lotniczego.",
+      "Pierwotnie miał służyć jako baza samochodowa Komitetu Centralnego PZPR, ale od oddania do użytku pełnił rolę zajezdni pojazdów służby zdrowia dla Stołecznej Kolumny Transportu Sanitarnego.",
+      "Był pierwszym garażem wielopoziomowym wzniesionym w Warszawie po II wojnie światowej.",
+      "W 2003 roku został umieszczony na liście dóbr kultury współczesnej w Warszawie przez Stowarzyszenie Architektów Polskich; w 2012 wpisano go do gminnej ewidencji zabytków.",
+      "W grudniu 2022 roku wpisano go do rejestru zabytków przez Mazowieckiego Wojewódzkiego Konserwatora Zabytków."
+    ],
+    "ciekawostki": [
+      "Mimo obowiązującego socrealizmu architekci stworzyli projekt w duchu funkcjonalizmu, inspirowany myślą Le Corbusiera i Waltera Gropiusa; z tego powodu był krytykowany za rzekomy kosmopolityzm."
+    ],
+    "summary_en": "A modernist multi-storey garage at Woronicza 19 in Mokotów, built in 1956–1958 for the Warsaw health-service vehicle depot. It was the first multi-level garage built in Warsaw after the war and was entered in the register of monuments in 2022.",
+    "ludzie": [
+      {"kto": "Wiesław Żochowski", "rola": "projektant garażu", "wiki": null},
+      {"kto": "Mariusz Dałka", "rola": "projektant garażu", "wiki": null},
+      {"kto": "Janusz Czajkowski", "rola": "projektant garażu", "wiki": null}
+    ],
+    "dawne_nazwy": ["Zajezdnia pojazdów służby zdrowia"],
+    "zrodla": [{"tytul": "Wikipedia: Garaż Zajezdni Służby Zdrowia", "url": "https://pl.wikipedia.org/wiki/Gara%C5%BC_Zajezdni_S%C5%82u%C5%BCby_Zdrowia"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "willa-neumanow-grupa-narew-kgb",
+    "nazwa": "Willa Neumanów (siedziba Grupy „Narew” KGB)",
+    "name_en": "Neumann Villa (seat of the KGB \"Narew\" group)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Sułkowicka / ul. Belwederska 18a",
+    "adres_historyczny": null,
+    "lat": 52.206193, "lon": 21.032059,
+    "lokalizacja": "dokladna",
+    "okres": "1929–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Grupa „Narew” KGB działała w Polsce w latach 1971–1993 jako grupa łącznikowa KGB, na mocy porozumienia z 27 listopada 1971 między KGB ZSRR a MSW PRL.",
+      "Grupa mieściła się w Warszawie w willi Neumanów z 1929 roku (proj. Marcin Weinfeld) przy ul. Sułkowickiej / ul. Belwederskiej 18a.",
+      "W latach 1990–1993 grupa mieściła się w siedzibie ambasady ZSRR/Rosji przy ul. Belwederskiej 49.",
+      "W grudniu 1990 roku personel grupy liczył około 10 osób.",
+      "Po 1990 w willi Neumanów mieściły się kolejno: spółka Interster, ambasada RPA oraz restauracje Tradycja Polska, Różana, Biała Gęś i Dom Polski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A 1929 villa at Sułkowicka / Belwederska 18a in Mokotów, used as the Warsaw base of the KGB 'Narew' liaison group from 1971 to 1993. After 1990 it housed a company, the South African embassy and several restaurants.",
+    "ludzie": [
+      {"kto": "Jakow Pawłowicz Skomorochin", "rola": "szef przedstawicielstwa grupy, 1971–1973 (gen. mjr)", "wiki": null},
+      {"kto": "W.G. Pawłow", "rola": "szef przedstawicielstwa grupy, IV 1973–XI 1982 (gen. mjr)", "wiki": null},
+      {"kto": "W.A. Dożdalew", "rola": "szef przedstawicielstwa grupy, 1982–1986 (gen. mjr)", "wiki": null},
+      {"kto": "A.T. Kiriejew", "rola": "szef przedstawicielstwa grupy, IX 1987–V 1990 (gen. mjr)", "wiki": null},
+      {"kto": "W.K. Smirnow", "rola": "szef przedstawicielstwa grupy, IX 1990–1993 (gen. mjr)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Willa Neumanów", "Siedziba ambasady ZSRR/Rosji przy ul. Belwederskiej 49 (1990–1993)"],
+    "zrodla": [{"tytul": "Wikipedia: Grupa „Narew” KGB w Warszawie", "url": "https://pl.wikipedia.org/wiki/Grupa_%E2%80%9ENarew%E2%80%9D_KGB_w_Warszawie"}],
+    "pewnosc": "średnia",
+    "uwagi": "Artykuł o grupie KGB; rekord dotyczy budynku, w którym grupa się mieściła. Nie podano, czy willa stoi dziś (pozostawiono istnieje: true, sprawdzić). Współrzędne z nagłówka."
+  },
+  {
+    "id": "glaz-podchorazych",
+    "nazwa": "Głaz Podchorążych",
+    "name_en": "Podchorążych Erratic Boulder",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Rakowiecka 4 (przed siedzibą PIG)",
+    "adres_historyczny": "ul. Podchorążych (miejsce odkrycia, 1938)",
+    "lat": 52.209161111, "lon": 21.013677777,
+    "lokalizacja": "dokladna",
+    "okres": "1938–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Głaz odkryto w 1938 roku podczas budowy kolektora przy ulicy Podchorążych.",
+      "23 kwietnia 1959 roku przeniesiono go przed nowo wybudowaną siedzibę Państwowego Instytutu Geologicznego przy ulicy Wiśniowej (adres Rakowiecka 4).",
+      "Głaz waży około 30 t, ma objętość około 10 m³, wysokość 290 cm i obwód 850 cm.",
+      "W 2011 roku podczas budowy garażu podziemnego przy ul. Próżnej znaleziono głaz o wadze około 40 ton; jego wydobycie w całości uznano za zbyt trudne, więc został pofragmentowany.",
+      "W 2017 roku na budowie biurowca Varso znaleziono jeszcze cięższy głaz, który przemieszczono na Pole Mokotowskie."
+    ],
+    "ciekawostki": [
+      "Przez kilkadziesiąt lat był to największy znany głaz narzutowy w Warszawie; jest pomnikiem przyrody."
+    ],
+    "summary_en": "A large Scandinavian erratic boulder in front of the Polish Geological Institute on Rakowiecka Street in Mokotów. Found in 1938, it was moved in 1959 and is a protected natural monument.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Głaz Podchorążych", "url": "https://pl.wikipedia.org/wiki/G%C5%82az_Podchor%C4%85%C5%BCych"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje, że głaz jest zbudowany z gnejsu lub granitu (dwa źródła)."
+  },
+  {
+    "id": "henrykow-mokotow",
+    "nazwa": "Henryków (Mokotów)",
+    "name_en": "Henryków (Mokotów)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Puławska 107a (pałacyk)",
+    "adres_historyczny": null,
+    "lat": 52.196666666, "lon": 21.025277777,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XIX w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa Henrykowa pochodzi od imienia francuskiego emigranta Henryka Bonneta, który na początku XIX wieku zakupił tu grunt i założył posiadłość.",
+      "Na terenie po obu stronach późniejszej ul. Antoniego Malczewskiego powstał folwark, początkowo zamieszkiwany tylko przez Francuzów.",
+      "Ok. 1850 roku kolejny właściciel, George Fanshave, wniósł przy ul. Puławskiej 107a pałacyk, zachowany do dzisiaj.",
+      "W 1900 roku pałacyk otrzymał na drodze spadkowej hrabia August Potocki."
+    ],
+    "ciekawostki": [
+      "Tę samą nazwę nosi również inne osiedle w Warszawie, w dzielnicy Białołęka."
+    ],
+    "summary_en": "A historic district of Mokotów named after the French émigré Henryk Bonnet, who bought land here in the early 19th century. Its surviving palace at Puławska 107a was built around 1850 by George Fanshave.",
+    "ludzie": [
+      {"kto": "Henryk Bonnet", "rola": "francuski emigrant, założyciel posiadłości na początku XIX w.", "wiki": null},
+      {"kto": "George Fanshave", "rola": "właściciel, wniósł pałacyk ok. 1850", "wiki": null},
+      {"kto": "August Potocki", "rola": "hrabia, otrzymał pałacyk w 1900 na drodze spadkowej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Henryków (Mokotów)", "url": "https://pl.wikipedia.org/wiki/Henryk%C3%B3w_%28Mokot%C3%B3w%29"}],
+    "pewnosc": "średnia",
+    "uwagi": "Współrzędne z nagłówka (przybliżone do części dzielnicy)."
+  }
+]

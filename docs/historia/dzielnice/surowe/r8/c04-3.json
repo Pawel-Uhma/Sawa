@@ -1,0 +1,242 @@
+[
+  {
+    "id": "plac-unii",
+    "nazwa": "Plac Unii",
+    "name_en": "Plac Unii (office and retail complex)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Puławska 2",
+    "adres_historyczny": null,
+    "lat": 52.2128,
+    "lon": 21.01980278,
+    "lokalizacja": "dokladna",
+    "okres": "1962–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks powstał w miejscu pawilonu handlowo-gastronomicznego Supersam, wyburzonego w 2006 roku.",
+      "Supersam działał w tej samej lokalizacji w latach 1962–2006.",
+      "W 2010 roku rozpoczęły się prace budowlane, a głównym wykonawcą była firma Warbud; w 2012 roku ukończono konstrukcję, a rok później kompleks został ukończony i otwarty.",
+      "Część handlowa została otwarta dla klientów 12 października 2013 roku.",
+      "Najwyższy z trzech budynków (A, B, C) to 90-metrowa wieża.",
+      "W 2023 roku obie części kompleksu otrzymały certyfikat ekologiczny BREEAM na poziomie Excellent oraz Outstanding.",
+      "Wysoki budynek oszpecił panoramę Belwederu widzianego z Łazienek Królewskich."
+    ],
+    "ciekawostki": [
+      "Pamiątkową tablicę z okazji otwarcia budynku poświęcił ksiądz Rafał Markowski."
+    ],
+    "summary_en": "Office and retail complex at ul. Puławska 2 in Mokotów, built in 2010–2013 on the site of the Supersam shop (1962–2006). Its 90-metre tower is the tallest of the three buildings.",
+    "ludzie": [
+      {"kto": "Stefan Kuryłowicz", "rola": "profesor; pracownia APA Kuryłowicz & Associates, autorzy projektu wyłonionego w konkursie", "wiki": null},
+      {"kto": "Marc Lebbe", "rola": "dyrektor zarządzający Liebrecht & wooD; uczestnik otwarcia", "wiki": null},
+      {"kto": "Michał Skotnicki", "rola": "prezes BBI Development S.A.; uczestnik otwarcia", "wiki": null},
+      {"kto": "Jacek Wojciechowicz", "rola": "wiceprezydent Warszawy; uczestnik otwarcia", "wiki": null}
+    ],
+    "dawne_nazwy": ["Supersam (pawilon handlowo-gastronomiczny, 1962–2006)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Plac Unii", "url": "https://pl.wikipedia.org/wiki/Plac_Unii"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Okres od 1962 dotyczy poprzedniego Supersamu na tej działce; kompleks istnieje od 2013 roku."
+  },
+  {
+    "id": "stacja-pole-mokotowskie",
+    "nazwa": "Stacja metra Pole Mokotowskie",
+    "name_en": "Pole Mokotowskie metro station",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "zbieg al. Niepodległości i ul. Rakowieckiej",
+    "adres_historyczny": null,
+    "lat": 52.208611111,
+    "lon": 21.007777777,
+    "lokalizacja": "dokladna",
+    "okres": "1986–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę stacji nadano uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983 roku.",
+      "Budowa stacji linii M1 metra rozpoczęła się w 1986 roku.",
+      "Stacja jest jednokondygnacyjna, łukowa, bez słupów; peron-wyspa ma 10 m szerokości i 120 m długości.",
+      "W styczniu 2024 roku na stacji oddano do użytku trzy windy, w tym jedną łączącą bezpośrednio peron z północną antresolą."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Metro line M1 station at the junction of Aleja Niepodległości and Rakowiecka street. Named by Warsaw's People's Council decision of 1983, construction began in 1986.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pole Mokotowskie (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Pole_Mokotowskie_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data otwarcia stacji nie pada w artykule."
+  },
+  {
+    "id": "pomnik-jana-matejki",
+    "nazwa": "Pomnik Jana Matejki",
+    "name_en": "Jan Matejko Monument",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Puławska (w pobliżu ul. Morskie Oko)",
+    "adres_historyczny": null,
+    "lat": 52.2037,
+    "lon": 21.0236,
+    "lokalizacja": "dokladna",
+    "okres": "1994–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt pomnika wykonał w 1989 roku Marian Konieczny.",
+      "Pomnik wykonano w 1995 roku w Gliwickich Zakładach Urządzeń Technicznych w Gliwicach.",
+      "Inicjatorem ustawienia pomnika było Towarzystwo Opieki nad Zabytkami.",
+      "Monument odsłonięto 3 maja 1994 roku.",
+      "Przedstawia Jana Matejkę stojącego na cokole z paletą w lewej i pędzlem w prawej dłoni oraz siedzącego przy cokole Stańczyka."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Monument to painter Jan Matejko on Puławska street in Mokotów, unveiled on 3 May 1994. It shows Matejko on a plinth with a palette and brush, with Stańczyk seated at its base.",
+    "ludzie": [
+      {"kto": "Marian Konieczny", "rola": "autor projektu pomnika (1989)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pomnik Jana Matejki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_Jana_Matejki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł podaje wykonanie w 1995 roku przy odsłonięciu w 1994; daty zapisano tak, jak w źródle."
+  },
+  {
+    "id": "pomnik-tarasa-szewczenki",
+    "nazwa": "Pomnik Tarasa Szewczenki",
+    "name_en": "Taras Shevchenko Monument",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "skwer im. Tarasa Szewczenki, u zbiegu ul. Goworka, Chocimskiej i Spacerowej",
+    "adres_historyczny": null,
+    "lat": 52.211608333,
+    "lon": 21.023466666,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik upamiętnia pobyt Tarasa Szewczenki w Warszawie w 1830 roku.",
+      "Pomnik powstał z inicjatywy ambasadora Ukrainy w Polsce Dmytra Pawłyczki.",
+      "Pomnik odsłonięto 13 marca 2002 roku.",
+      "Autorem rzeźby jest Anatolij Kuszcz, a cokół jest dziełem Baltazara Brukalskiego.",
+      "Odlew wykonano w Kijowie; sfinansowała go Rada Miejska Kijowa."
+    ],
+    "ciekawostki": [
+      "Na cokole znajduje się fragment wiersza Szewczenki „Do Polaków”."
+    ],
+    "summary_en": "Monument to Taras Shevchenko on a small square at the junction of Goworka, Chocimska and Spacerowa streets in Mokotów. It commemorates his stay in Warsaw in 1830 and was unveiled on 13 March 2002.",
+    "ludzie": [
+      {"kto": "Dmytro Pawłyczko", "rola": "ambasador Ukrainy w Polsce; zainicjował powstanie pomnika (w tekście: Dmytra Pawłyczki)", "wiki": null},
+      {"kto": "Anatolij Kuszcz", "rola": "autor rzeźby", "wiki": null},
+      {"kto": "Baltazar Brukalski", "rola": "autor cokołu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pomnik Tarasa Szewczenki w Warszawie", "url": "https://pl.wikipedia.org/wiki/Pomnik_Tarasa_Szewczenki_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Imię ambasadora w nagłówku tekstu: Dmytro Pawłyczko; w treści artykułu „Dmytra Pawłyczki”."
+  },
+  {
+    "id": "pomnik-zolnierzy-batalionow-chlopskich",
+    "nazwa": "Pomnik Żołnierzy Batalionów Chłopskich i Ludowego Związku Kobiet",
+    "name_en": "Monument to the Soldiers of the Peasant Battalions and the People's Women's Union",
+    "typ": "pomnik",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "u zbiegu ul. Czerniakowskiej i al. Polski Walczącej",
+    "adres_historyczny": null,
+    "lat": 52.206519444,
+    "lon": 21.04965,
+    "lokalizacja": "dokladna",
+    "okres": "2019–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pomnik upamiętnia Bataliony Chłopskie i Ludowy Związek Kobiet.",
+      "Pomnik zaprojektowali Agnieszka Świerzowicz-Maślaniec i Marek Maślaniec.",
+      "Powstał z inicjatywy Ogólnopolskiego Związku Żołnierzy Batalionów Chłopskich.",
+      "Pomnik odsłonięto 8 października 2019 roku.",
+      "Rzeźba przedstawia grupę kroczących żołnierzy i sanitariuszek; postacie w tylnej części grupy rozmywają się w ogromnym kłosie zboża."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Sculpture group of marching soldiers and nurses at the junction of Czerniakowska street and Aleja Polski Walczącej in Mokotów. It honours the Peasant Battalions and the People's Women's Union and was unveiled on 8 October 2019.",
+    "ludzie": [
+      {"kto": "Agnieszka Świerzowicz-Maślaniec", "rola": "autorka projektu pomnika", "wiki": null},
+      {"kto": "Marek Maślaniec", "rola": "autor projektu pomnika", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pomnik Żołnierzy Batalionów Chłopskich i Ludowego Związku Kobiet", "url": "https://pl.wikipedia.org/wiki/Pomnik_%C5%BBo%C5%82nierzy_Batalion%C3%B3w_Ch%C5%82opskich_i_Ludowego_Zwi%C4%85zku_Kobiet"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "W artykule nazwisko drugiego autora zapisano jako „Marka Maślańca”."
+  },
+  {
+    "id": "potok-sluzewiecki",
+    "nazwa": "Potok Służewiecki",
+    "name_en": "Służewiecki Stream",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1676,
+    "lon": 21.0296,
+    "lokalizacja": "przyblizona",
+    "okres": "od XIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Potok stanowi fragment dawnej rzeki Sadurki; prawdopodobnie dopiero w 1681 roku Locci skierował go do Wilanowa.",
+      "W okresie międzywojennym po regulacji górny odcinek cieku nazwano kanałem Wola-Okęcie, a całość kanałem Wola-Okęcie-Wilanów (WOW).",
+      "W 1998 roku Państwowy Inspektor Ochrony Środowiska uznał potok za ciek powierzchniowy.",
+      "Długość potoku do Jeziorka Wilanowskiego razem z odcinkami zamkniętymi wynosi 15,8 km.",
+      "W latach 1997–2000 dochodziło do wylewów powodziowych spowodowanych przez ścieki deszczowe.",
+      "W 2004 roku odbudowano Stawy Berensewicza, aby wykorzystać je jako zbiornik retencyjny wód potoku.",
+      "W maju 2009 roku uproszczono przebieg odcinka koryta wzdłuż al. Wilanowskiej w ramach inwestycji związanej z budową mostu dla al. Rzeczypospolitej."
+    ],
+    "ciekawostki": [
+      "Zanieczyszczony potok ze względu na nieprzyjemną woń zyskał zwyczajową nazwę Smródka."
+    ],
+    "summary_en": "Stream flowing from the Szczęśliwice area through Służewiec and Służew to Wilanów, where it joins the Wilanów Lake. It is a fragment of the old Sadurka river and has a long history of flood problems and drainage changes.",
+    "ludzie": [
+      {"kto": "Locci", "rola": "skierował potok do Wilanowa (prawdopodobnie w 1681 roku)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Sadurka (dawna rzeka)", "Kanał Wola-Okęcie-Wilanów (WOW)", "Potok Służewski (od 1995 roku, alternatywna nazwa)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Potok Służewiecki", "url": "https://pl.wikipedia.org/wiki/Potok_S%C5%82u%C5%BCewiecki"}
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Ciek, nie budynek; współrzędne z nagłówka artykułu (nie ma w nim punktu konkretnego odcinka). Artykuł nie podaje adresu."
+  },
+  {
+    "id": "promenada-stawy",
+    "nazwa": "Promenada (stawy)",
+    "name_en": "Promenada ponds",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "park Morskie Oko, południowa część (Promenada), w pobliżu ul. Belwederskiej",
+    "adres_historyczny": null,
+    "lat": 52.203888888,
+    "lon": 21.030555555,
+    "lokalizacja": "dokladna",
+    "okres": "1772–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stawy są gliniankami, pozostałością po eksploatacji iłów plioceńskich.",
+      "W latach 1772–1774 staw był częścią ogrodu założonego dla Izabeli Lubomirskiej; urządzono na nim wyspy i połączono je mostkami.",
+      "Następnie staw był częścią letniska „Promenada”, stworzonego w 1845 roku przez Franciszka Szustera.",
+      "W okolicach stawu do 1925 roku odbywały się zabawy ludowe i widowiska na świeżym powietrzu.",
+      "Ostatnia przebudowa parku Morskie Oko miała miejsce w 1955 roku według projektu E. Jankowskiej i Z. Gnosa.",
+      "Nad północno-wschodnim brzegiem większego zbiornika rośnie lipa drobnolistna chroniona jako pomnik przyrody."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Two connected ponds in the southern part of Morskie Oko park in Mokotów, known as Promenada. They are old clay pits that became part of an 18th-century garden and an 1845 summer resort.",
+    "ludzie": [
+      {"kto": "Izabela Lubomirska", "rola": "dla niej założono ogród, którego częścią był staw (1772–1774)", "wiki": null},
+      {"kto": "Franciszek Szuster", "rola": "stworzył w 1845 roku letnisko „Promenada”", "wiki": null},
+      {"kto": "E. Jankowska i Z. Gnoś", "rola": "projekt ostatniej przebudowy parku Morskie Oko (1955)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Letnisko „Promenada” (1845)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Promenada (stawy)", "url": "https://pl.wikipedia.org/wiki/Promenada_%28stawy%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

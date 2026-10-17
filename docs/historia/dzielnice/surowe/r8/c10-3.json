@@ -1,0 +1,288 @@
+[
+  {
+    "id": "instytut-weterynaryjny-sggw-grochowska-272",
+    "nazwa": "Instytut Weterynaryjny SGGW w Warszawie (ul. Grochowska 272)",
+    "name_en": "Veterinary Institute of WULS-SGGW in Warsaw (Grochowska 272)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Grochowska 272",
+    "adres_historyczny": null,
+    "lat": 52.247278,
+    "lon": 21.070917,
+    "lokalizacja": "dokladna",
+    "okres": "1898–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kompleks zajmujący ok. dwa hektary powstał na pograniczu Grochowa i Kamionka w latach 1898–1900 według projektu Władimira Nikołajewicza Pokrowskiego.",
+      "Kompleks rozbudowano w 1930 r.",
+      "W 2008 roku kompleks (budynek główny, dwa pawilony i dwie oficyny) został wpisany do rejestru zabytków.",
+      "W kwietniu 2009 Urząd m.st. Warszawy odkupił nieruchomość od SGGW.",
+      "Od 2010 roku kompleks jest siedzibą samorządowej instytucji kultury Sinfonia Varsovia.",
+      "W 2010 roku laureatem konkursu architektonicznego na salę koncertową został projekt Atelier Thomas Pucher ZT GMBH z Grazu."
+    ],
+    "ciekawostki": [
+      "Prezydent Warszawy Hanna Gronkiewicz-Waltz wyraziła nadzieję, że na pierwszy koncert w nowo wybudowanej sali zaprosimy warszawiaków na początku października 2021 roku."
+    ],
+    "summary_en": "A complex of brick buildings of about two hectares at Grochowska 272, built in 1898–1900 for the Warsaw Veterinary Institute. Since 2010 it has housed the Sinfonia Varsovia cultural institution, after the city bought it from SGGW in 2009.",
+    "ludzie": [
+      {
+        "kto": "Władimir Nikołajewicz Pokrowski",
+        "rola": "autor projektu kompleksu (1898–1900)",
+        "wiki": null
+      },
+      {
+        "kto": "Thomas Pucher",
+        "rola": "Atelier Thomas Pucher ZT GMBH, laureat konkursu w 2010 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Hanna Gronkiewicz-Waltz",
+        "rola": "prezydent Warszawy",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Warszawski Instytut Weterynarii",
+      "Szkoła Główna Gospodarstwa Wiejskiego (instytut, do 2005)"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Instytut Weterynaryjny SGGW w Warszawie (ul. Grochowska 272)",
+        "url": "https://pl.wikipedia.org/wiki/Instytut_Weterynaryjny_SGGW_w_Warszawie_%28ul._Grochowska_272%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ciekawostka z 2010 r. o planowanym terminie koncertu (2021) to zapowiedź, nie fakt dokonany; przepisana wprost. Dawne nazwy wzięte z listy okresów użytkowania w artykule."
+  },
+  {
+    "id": "jezioro-goclawskie",
+    "nazwa": "Jezioro Gocławskie",
+    "name_en": "Gocławskie Lake",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.231388888,
+    "lon": 21.076666666,
+    "lokalizacja": "dokladna",
+    "okres": "ok. 1935–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Jezioro powstało w sposób sztuczny około 1935 roku w wyniku celowego spiętrzenia wód Kanału Wystawowego.",
+      "Jego dzierżawcą był przez pewien czas ojciec Romana Dmowskiego – Walenty Dmowski.",
+      "Wraz z kilkudziesięcioma hektarami okolicznych terenów jezioro zostało przejęte po II wojnie światowej przez Skarb Państwa na podstawie tzw. dekretu Bieruta.",
+      "W 2000 roku jezioro wraz z przyległymi terenami zostało zwrócone spadkobiercom rodziny Potockich.",
+      "W 2014 roku, po sprzedaży terenu deweloperowi, nad jeziorem rozpoczęła się budowa budynków mieszkalnych.",
+      "W 2019 Komisja do spraw reprywatyzacji nieruchomości warszawskich uchyliła decyzję o reprywatyzacji jeziora; w 2024 NSA podtrzymał orzeczenie WSA w Warszawie, które się z tym nie zgodziło."
+    ],
+    "ciekawostki": [
+      "Zgodnie z badaniem z 2009 roku zbiornikowi przyznano I klasę czystości wody według metody BMWP-PL."
+    ],
+    "summary_en": "Gocławskie Lake is an artificial lake of about 1.47 hectares between the Gocław and Saska Kępa estates, created around 1935 by damming the Wystawowy Canal. Its ownership was returned to the Potocki heirs in 2000, and the dispute over reprivatisation continued into the 2020s.",
+    "ludzie": [
+      {
+        "kto": "Walenty Dmowski",
+        "rola": "dzierżawca jeziora przez pewien czas, ojciec Romana Dmowskiego",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Jeziorko Gocławskie"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Jezioro Gocławskie",
+        "url": "https://pl.wikipedia.org/wiki/Jezioro_Goc%C5%82awskie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ciekawostka: artykuł podaje rok 2009 dla klasy czystości wody. Spór o własność (sprawa sądowa) opisany wprost, bez oceny."
+  },
+  {
+    "id": "jezioro-kamionkowskie",
+    "nazwa": "Jezioro Kamionkowskie",
+    "name_en": "Kamionkowskie Lake",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.245277777,
+    "lon": 21.054722222,
+    "lokalizacja": "dokladna",
+    "okres": "XX wiek–dziś (dawne starorzecze Wisły)",
+    "istnieje": true,
+    "fakty": [
+      "Jezioro jest częścią dawnego starorzecza Wisły i do początku XX wieku miało bezpośrednie połączenie z rzeką.",
+      "W okresie międzywojennym na jeziorze znajdowały się przystań i wytyczony na lustrze wody basen Akademickiego Związku Sportowego.",
+      "14 sierpnia 1944 niemiecka obrona przeciwlotnicza zestrzeliła samolot Liberator ze 178 dywizjonu RAF, który spadł do jeziora.",
+      "W katastrofie zginęła cała załoga oprócz Henry'ego Leyne'a, który ranny dostał się do niewoli.",
+      "Kamień pamiątkowy upamiętniający to wydarzenie został odsłonięty w 1988 roku w parku Skaryszewskim przez Margaret Thatcher."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kamionkowskie Lake is a long former branch of the Vistula in Skaryszewski Park. On 14 August 1944 a British Liberator bomber of 178 Squadron RAF was shot down and crashed into the lake; a memorial stone was unveiled in 1988.",
+    "ludzie": [
+      {
+        "kto": "Henry Leyne",
+        "rola": "członek załogi Liberatora RAF, jedyny, który przeżył i dostał się do niewoli",
+        "wiki": null
+      },
+      {
+        "kto": "Margaret Thatcher",
+        "rola": "odsłoniła kamień pamiątkowy w 1988 roku",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Jeziorko Kamionkowskie",
+      "Łacha Kamionkowska"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Jezioro Kamionkowskie (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Jezioro_Kamionkowskie_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka artykułu o jeziorze."
+  },
+  {
+    "id": "kamionek-warszawa",
+    "nazwa": "Kamionek",
+    "name_en": "Kamionek",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.244722222,
+    "lon": 21.055833333,
+    "lokalizacja": "przyblizona",
+    "okres": "XI–XII wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Istniejąca w XI–XII wieku osada Kamion (Kamień), która dała nazwę obecnemu Kamionkowi, jest wymieniana w falsyfikacie mogileńskim.",
+      "Na polach Kamiona miały miejsce elekcje dwóch królów polskich: Henryka Walezego (1573) oraz Augusta III (1733).",
+      "W 1890 roku (według innego źródła w 1889 roku) Kamionek przyłączono do Warszawy.",
+      "W okresie międzywojennym powstały na Kamionku m.in. Państwowe Zakłady Tele- i Radiotechniczne, Zakłady Amunicyjne „Pocisk” i Fabryka Aparatów Elektrycznych „Szpotański”.",
+      "Zabudowa Kamionka ucierpiała w czasie obrony Warszawy we wrześniu 1939.",
+      "W 1864 na Kamionku urodził się Roman Dmowski."
+    ],
+    "ciekawostki": [
+      "W domku loretańskim w kościele Matki Bożej Loretańskiej znajduje się figura Matki Boskiej Kamionkowskiej, pochodząca pierwotnie z kościoła na Kamionku."
+    ],
+    "summary_en": "Kamionek is an old settlement on the right bank of the Vistula, named after the medieval village Kamion, joined to Warsaw in 1890. It saw industrial growth between the wars and damage in September 1939.",
+    "ludzie": [
+      {
+        "kto": "Roman Dmowski",
+        "rola": "urodził się na Kamionku w 1864 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Henryk Walezy",
+        "rola": "elekcja króla na polach Kamiona w 1573",
+        "wiki": null
+      },
+      {
+        "kto": "August III",
+        "rola": "elekcja króla na polach Kamiona w 1733",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Kamion",
+      "Kamień"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kamionek (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Kamionek_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedla, współrzędne z nagłówka. Kościół i cmentarz na Kamionku mają osobne rekordy."
+  },
+  {
+    "id": "kosciol-matki-boskiej-zwycieskiej-kamionek",
+    "nazwa": "Kościół Matki Boskiej Zwycięskiej na Kamionku",
+    "name_en": "Church of Our Lady of Victory in Kamionek",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.244722222,
+    "lon": 21.055833333,
+    "lokalizacja": "przyblizona",
+    "okres": "1656–dziś (obecny kościół 1929–1931)",
+    "istnieje": true,
+    "fakty": [
+      "Dawny kościół na Kamionku został zniszczony w 1656 roku i rozebrany w połowie XVII wieku.",
+      "Obecny kościół pod wezwaniem Matki Boskiej Zwycięskiej wzniesiono w latach 1929−1931 według projektu Konstantego Jakimowicza.",
+      "Ziemie kościoła i jego parafii należały przez wieki do kapituły płockiej, aż do wykupienia ich przez Stanisława Augusta w 1780 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Church of Our Lady of Victory stands on the site of an older church on Kamionek, destroyed in 1656. The present church was built in 1929–1931 to a design by Konstanty Jakimowicz.",
+    "ludzie": [
+      {
+        "kto": "Konstanty Jakimowicz",
+        "rola": "autor projektu kościoła (1929–1931)",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław August Poniatowski",
+        "rola": "wykupił ziemie kościoła i parafii w 1780 roku",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kamionek (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Kamionek_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord wyciągnięty z artykułu o Kamionku; współrzędne osiedla, nie kościoła. Nazwa kościoła w tekście: „Matki Boskiej Zwycięskiej”."
+  },
+  {
+    "id": "cmentarz-kamionkowski",
+    "nazwa": "Cmentarz Kamionkowski",
+    "name_en": "Kamionek Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.244722222,
+    "lon": 21.055833333,
+    "lokalizacja": "przyblizona",
+    "okres": "XIII wiek–1887 (zamknięty)",
+    "istnieje": true,
+    "fakty": [
+      "Cmentarz przykościelny na Kamionku funkcjonował od XIII wieku, a zamknięto go w 1887 roku w związku z otwarciem cmentarza Bródnowskiego.",
+      "Jest najstarszą zachowaną nekropolią w Warszawie i jedną z najstarszych w Polsce oraz jedynym zachowanym cmentarzem przykościelnym w Warszawie.",
+      "Znajdują się tam m.in. symboliczne groby obrońców Warszawy z 1794, generała i poety Jakuba Jasińskiego oraz Tadeusza Korsaka.",
+      "Obok cmentarza katolickiego, pod adresem ul. Grochowska 307, znajdował się cmentarz staroobrzędowców, zlikwidowany po II wojnie światowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Kamionek Cemetery next to the Church of Our Lady of Victory is one of the oldest in Poland, in use from the 13th century until 1887. It holds symbolic graves of the defenders of Warsaw of 1794 and of General Jakub Jasiński.",
+    "ludzie": [
+      {
+        "kto": "Jakub Jasiński",
+        "rola": "generał i poeta, symboliczny grób na cmentarzu",
+        "wiki": null
+      },
+      {
+        "kto": "Tadeusz Korsak",
+        "rola": "symboliczny grób na cmentarzu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Kamionek (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Kamionek_%28Warszawa%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres ul. Grochowska 307 w tekście dotyczy cmentarza staroobrzędowców, nie katolickiego; współrzędne osiedla Kamionek. Nazwisko w tekście: „Tadeusza Korsaka”, tu zapisane w mianowniku."
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "pacyfikacja-ochoty-1944",
+    "nazwa": "Pacyfikacja Ochoty",
+    "name_en": "Pacification of Ochota (August 1944)",
+    "typ": "zdarzenie",
+    "dzielnica": "Ochota",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.21,
+    "lon": 20.971,
+    "lokalizacja": "przyblizona",
+    "okres": "sierpień 1944",
+    "istnieje": false,
+    "fakty": [
+      "Pacyfikacja Ochoty to masowe mordy, gwałty, grabieże oraz podpalenia, których żołnierze różnych formacji niemieckich i kolaboracyjnych dopuścili się na Ochocie w sierpniu 1944 roku, w czasie tłumienia powstania warszawskiego.",
+      "4 lub 5 sierpnia 1944 roku na Ochotę przybył pułk zbiorczy ze składu kolaboracyjnej Brygady Szturmowej SS RONA.",
+      "Symbolem okrucieństwa ronowców stało się targowisko Zieleniak, które w pierwszych dniach sierpnia przekształcono w punkt zborny dla wypędzanej ludności Warszawy.",
+      "11 sierpnia upadł ostatni polski punkt oporu na Ochocie, Reduta Wawelska.",
+      "Historycy szacują, że pacyfikacja Ochoty przyniosła około 10 tys. ofiar, z czego blisko tysiąc poniosło śmierć na Zieleniaku."
+    ],
+    "ciekawostki": [
+      "Zbrodnie żołnierzy RONA objęły również Instytut Radowy przy ul. Wawelskiej oraz teren Kolonii Staszica."
+    ],
+    "summary_en": "The massacre of civilians in Ochota during the 1944 Warsaw Uprising, carried out by German and collaborationist units, mainly the RONA brigade from 4–5 August. The Zieleniak market became a collection point, and the last Polish stronghold, the Wawelska Redoubt, fell on 11 August. Historians estimate about 10,000 victims.",
+    "ludzie": [
+      {"kto": "Antoni Chruściel", "rola": "płk AK, dowódca Okręgu Warszawa; jego rozkaz wyznaczał wybuch powstania na 1 sierpnia 1944 (ps. „Monter”)", "wiki": null},
+      {"kto": "Mieczysław Sokołowski", "rola": "ppłk AK (ps. „Grzymała”), zarządził w nocy 1/2 sierpnia odwrót z Ochoty do Lasów Sękocińskich", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Pacyfikacja Ochoty", "url": "https://pl.wikipedia.org/wiki/Pacyfikacja_Ochoty"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdarzenie, nie obiekt; współrzędne z nagłówka przybliżone. Tekst w paczce urywa się w opisie walk 3 sierpnia, więc rekord opiera się na jego dostępnej części."
+  }
+]

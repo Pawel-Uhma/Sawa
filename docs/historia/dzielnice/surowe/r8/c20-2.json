@@ -1,0 +1,152 @@
+[
+  {
+    "id": "jezioro-zabie",
+    "nazwa": "Jezioro Żabie",
+    "name_en": "Żabie Lake",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.204441666,
+    "lon": 21.123375,
+    "lokalizacja": "dokladna",
+    "okres": "od co najmniej 1891–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Na mapach zbiornik jest zaznaczany nie później niż od 1891 roku.",
+      "Długość zbiornika wynosi 120 m, szerokość maksymalna 40 m, powierzchnia 0,36 ha.",
+      "W Państwowym Rejestrze Nazw Geograficznych zbiornik zaklasyfikowano jako staw.",
+      "Jezioro zasilają wody Kanału (Rowu) Zerzeńskiego; z jeziora uchodzi rów zwany „Rowem (Kanałem) Żabim”."
+    ],
+    "ciekawostki": [
+      "Jezioro i „Rów Żabi” są ważnym miejscem rozrodu płazów; w czasie godów przybywa tu około 1000 ropuch szarych."
+    ],
+    "summary_en": "Żabie Lake is a small pond on the southern edge of the Zakole Wawerskie bend in Wawer, first marked on maps in 1891. Its status as natural or artificial is disputed, and it is an important amphibian breeding site.",
+    "ludzie": [],
+    "dawne_nazwy": ["Moczydło"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Jezioro Żabie (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Jezioro_%C5%BBabie_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Według niektórych źródeł zbiornik jest sztuczny, według innych zachował naturalny charakter; teren jest prywatny."
+  },
+  {
+    "id": "julianow",
+    "nazwa": "Julianów",
+    "name_en": "Julianów",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.166389,
+    "lon": 21.163611,
+    "lokalizacja": "przyblizona",
+    "okres": "1867–1951 (wieś), od 1951 w Warszawie",
+    "istnieje": true,
+    "fakty": [
+      "W latach 1867–1939 Julianów był wsią w gminie Zagóźdź; w 1921 roku liczył 50 stałych mieszkańców.",
+      "20 października 1933 utworzono gromadę Juljanów w granicach gminy Zagóźdź, składającą się z wsi Juljanów, Karolew, Skrzypki i Falenica Stara.",
+      "1 kwietnia 1939 w związku ze zniesieniem gminy Zagóźdź gromadę Julianów włączono do gminy Letnisko Falenica.",
+      "W 1943 gromada Julianów (w gminie Falenica) liczyła 309 mieszkańców.",
+      "15 maja 1951, w związku ze zniesieniem gminy Falenica Letnisko, gromadę Julianów włączono do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Julianów was a village in Wawer, now part of the Nadwiśle estate in Warsaw. It was merged into Warsaw in 1951 after the Falenica commune was dissolved.",
+    "ludzie": [],
+    "dawne_nazwy": ["Juljanów"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Julianów (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Julian%C3%B3w_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka dotyczą całej miejscowości; rekord to obszar."
+  },
+  {
+    "id": "kanal-nowa-ulga",
+    "nazwa": "Kanał Nowa Ulga",
+    "name_en": "Nowa Ulga Canal",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.227563888,
+    "lon": 21.111977777,
+    "lokalizacja": "przyblizona",
+    "okres": "okres międzywojenny–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kanał Nowa Ulga wraz ze stacją pomp we wsi Las – Bluszcze wybudowano w okresie międzywojennym, aby skrócić drogę ujścia wody z Kanału Kamionkowsko-Wawerskiego do Wisły.",
+      "Istniejący wcześniej Kanał Ulgi biegł na Gocławiu w pobliżu Saskiej Kępy.",
+      "Wzdłuż kanału poprowadzono granicę między dzielnicami Wawer i Praga-Południe; obok biegnie Trasa Siekierkowska."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Nowa Ulga Canal is an interwar drainage channel in Wawer, continuing the Wawer Canal towards the Vistula. It was built together with a pumping station at Las-Bluszcze to shorten the outflow of the Kamionek-Wawer canal.",
+    "ludzie": [],
+    "dawne_nazwy": ["Kanał Ulgi (na Gocławiu)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kanał Nowa Ulga", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Nowa_Ulga"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to środek odcinka; w części źródeł nazwa obejmuje też końcowy odcinek Kanału Wawerskiego."
+  },
+  {
+    "id": "kanal-nowe-ujscie",
+    "nazwa": "Kanał Nowe Ujście",
+    "name_en": "Nowe Ujście Canal",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2063,
+    "lon": 21.1295,
+    "lokalizacja": "przyblizona",
+    "okres": "po 1945–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kanał powstał po II wojnie światowej.",
+      "Kanał ma źródło w Kanale Wawerskim na jego zakręcie w okolicach ulicy Lucerny i uchodzi do łachy Stara Wisła połączonej z Wisłą.",
+      "Kanał Zerzeński (Rów Zerzeński) przepływa pod jego dnem syfonem w okolicy ulicy Wodniaków.",
+      "Woda jest odprowadzana grawitacyjnie nawet przy stanach powodziowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Nowe Ujście Canal is a post-war drainage channel in Wawer that branches off the Wawer Canal and drains into the old Vistula channel Stara Wisła.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kanał Nowe Ujście", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Nowe_Uj%C5%9Bcie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "kanal-wawerski",
+    "nazwa": "Kanał Wawerski",
+    "name_en": "Wawer Canal",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2156,
+    "lon": 21.1463,
+    "lokalizacja": "przyblizona",
+    "okres": "1924 (plan) – dziś",
+    "istnieje": true,
+    "fakty": [
+      "25 sierpnia 1924 roku osiemset właścicieli zabagnionych gruntów założyło Spółkę Wodną Obwodu Wawerskiego, która miała odwadniać Nizinę Wawerską.",
+      "Planowano kanał zbiorczy Kanał Kamionkowsko-Wawerski o długości 19 km, kierujący wodę do Jeziorka Kamionkowskiego.",
+      "Najpóźniej do 1928 roku wykonano 6 km kanału, licząc od ujścia, aż do Gocławka.",
+      "Nie później niż od 1938 roku kanał zbierał już wody spływające od strony Miłosny i Kawęczyna.",
+      "Ciąg wodny obejmujący końcowy odcinek kanału istniał wcześniej jako Struga Drojowska, zaznaczona na planie Hennequina z 1779 r. (bez tej nazwy)."
+    ],
+    "ciekawostki": [
+      "Przy pracach melioracyjnych i drogowych na początku XX wieku na polach Wawra i Zastowa wydobyto kości ludzkie oraz szczątki umundurowania żołnierzy powstania listopadowego z 1831 r.; złożono je pod krzyżem powstańczym."
+    ],
+    "summary_en": "The Wawer Canal is a drainage channel in Wawer, whose lower section was part of a larger interwar plan to drain the Wawer Lowland. Its mouth lies at the junction of Trasa Siekierkowska and Ostrobramska street.",
+    "ludzie": [],
+    "dawne_nazwy": ["Struga Drojowska", "Kanał Kamionkowsko-Wawerski (plan z 1924, końcowy odcinek)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Kanał Wawerski", "url": "https://pl.wikipedia.org/wiki/Kana%C5%82_Wawerski"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka to ujście kanału; w źródłach występują rozbieżności co do przebiegu końcowego odcinka."
+  }
+]

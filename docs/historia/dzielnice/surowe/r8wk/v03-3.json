@@ -1,0 +1,181 @@
+[
+  {
+    "id": "ulica-gierymskiego",
+    "nazwa": "Ulica Gierymskiego",
+    "name_en": "Gierymskiego Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Gierymskiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "I połowa lat 60. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona i zabudowana blokami osiedla Dolna-Sobieskiego w I połowie lat 60. XX wieku na gruntach dawnego Marcelina.",
+      "Ulica oficjalnie otrzymała swoją nazwę 12 kwietnia 1962 roku według klucza „malarzy warszawskich”.",
+      "Dom nr 99 został zniszczony całkowicie, a spalony dom nr 101 (d. 105) został odbudowany i zachował się do dzisiaj.",
+      "Otoczenie ulicy nie uległo zmianie do dnia dzisiejszego.",
+      "Przy ul. Gierymskiego mieszkali dawniej Ryszard Bojar, Hanna Gronkiewicz-Waltz oraz Tadeusz Haluch."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Gierymskiego Street in Sielce, Mokotów, was laid out in the first half of the 1960s among the blocks of the Dolna-Sobieskiego estate. It was named on 12 April 1962 after Warsaw painters, in honour of Aleksander Gierymski.",
+    "ludzie": [
+      {"kto": "Aleksander Gierymski", "rola": "warszawski malarz, patron ulicy", "wiki": null},
+      {"kto": "Ryszard Bojar", "rola": "dawny mieszkaniec ulicy", "wiki": null},
+      {"kto": "Hanna Gronkiewicz-Waltz", "rola": "dawna mieszkanka ulicy", "wiki": null},
+      {"kto": "Tadeusz Haluch", "rola": "dawny mieszkaniec ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Gierymskiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Gierymskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-grabowa",
+    "nazwa": "Ulica Grabowa",
+    "name_en": "Grabowa Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Grabowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "przed II wojną światową",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała przed II wojną światową. Posiadała wówczas swoją nazwę i była 200-metrową „pełnoprawną” ulicą.",
+      "W 1945 roku znajdowało się przy niej 11 działek, z czego 5 zabudowanych.",
+      "W 1945 roku ulica dochodziła od ul. Bukowińskiej do stacji Grójeckiej Kolei Dojazdowej.",
+      "Nazwę „Grabowa” nosiła dawniej ul. Druciana na Żeraniu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grabowa is a short street in Ksawerów, Mokotów, that existed already before the Second World War. In 1945 it had 11 plots, five of them built up.",
+    "ludzie": [],
+    "dawne_nazwy": ["Druciana (na Żeraniu, dawniej)"],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Grabowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Grabowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ostatnie zdanie faktów dotyczy innej ulicy (Druciana na Żeraniu), zapisane wprost z artykułu."
+  },
+  {
+    "id": "ulica-grazyny",
+    "nazwa": "Ulica Grażyny",
+    "name_en": "Grażyny Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Grażyny",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "wytyczona w 1900",
+    "istnieje": true,
+    "fakty": [
+      "Ulica wytyczona została w 1900 roku podczas parcelacji gruntów na przedmieściu Mokotów, przed 1918 rokiem otrzymała twardą nawierzchnię.",
+      "Jeszcze przed II wojną światową ulica została zabudowana nowoczesnymi kamienicami.",
+      "Sama nazwa została nadana w 1916 roku i upamiętnia główną bohaterkę poematu Adama Mickiewicza „Grażyna”.",
+      "Przy ulicy nr 22 znajduje się pamiątkowa tablica poświęcona Stanisławowi „Orszy” Broniewskiemu, harcmistrzowi, dowódcy „Akcji pod Arsenałem”, naczelnikowi „Szarych Szeregów” (1943-1944), który mieszkał tutaj przez wiele lat, aż do śmierci."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grażyny is a one-way street in Stary Mokotów, laid out in 1900 and named in 1916 after the heroine of Mickiewicz's poem Grażyna. Stanisław Broniewski „Orsza” lived here for many years.",
+    "ludzie": [
+      {"kto": "Stanisław Broniewski „Orsza”", "rola": "harcmistrz, dowódca Akcji pod Arsenałem, naczelnik Szarych Szeregów (1943-1944), mieszkał przy ulicy", "wiki": null},
+      {"kto": "Adam Mickiewicz", "rola": "autor poematu Grażyna, od którego pochodzi nazwa ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Grażyny", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Grażyny"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-gwintowa",
+    "nazwa": "Ulica Gwintowa",
+    "name_en": "Gwintowa Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Gwintowa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "ok. 1920",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Gwintowa na początku XX wieku była małą wiejską drogą przebiegającą przez wieś Siekierki Duże.",
+      "Po odzyskaniu niepodległości droga została nazwana ulicą Gwintową.",
+      "Od 2001 roku przy ulicy znajduje się pętla linii 167 o nazwie Siekierki-Sanktuarium.",
+      "Od 2002 roku nad ulicą Gwintową przebiega wiadukt Trasy Siekierkowskiej (pod nazwą al. Becka).",
+      "W 1946 r. przy ul. Gwintowej 3 wzniesiono niewielką kapliczkę, a 8 maja 1949 r. została ona poświęcona."
+    ],
+    "ciekawostki": [
+      "W latach 30. XX wieku planowano na terenie Siekierek zbudować wioskę i stadion olimpijski – Polska miała starać się o organizację igrzysk w 1944 roku."
+    ],
+    "summary_en": "Gwintowa is a 250-metre street in Siekierki, Mokotów. It was a village road before the 1920s, and today it passes under the Trasa Siekierkowska viaduct and has the loop of line 167, Siekierki-Sanktuarium.",
+    "ludzie": [
+      {"kto": "Władzia Papis", "rola": "osoba, której przy ul. Gwintowej ukazała się Matka Boża, a w 1949 r. Jezus Chrystus", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Gwintowa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Gwintowa"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-kazimierzowska",
+    "nazwa": "Ulica Kazimierzowska",
+    "name_en": "Kazimierzowska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Kazimierzowska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "bd.",
+    "istnieje": true,
+    "fakty": [
+      "Do lat 70. XX wieku Kazimierzowską jeździły trolejbusy, których pętla znajdowała się przy południowym krańcu ulicy, przy parku Dreszera.",
+      "Pętla autobusowa przy Kazimierzowskiej została zlikwidowana 28 kwietnia 1985 roku.",
+      "W okresie okupacji hitlerowskiej przy skrzyżowaniu z Narbutta stacjonował batalion SS (w Szkole Rękodzielniczej, obecnie mieści się tam Zespół Szkół Odzieżowych i Licealnych nr 22).",
+      "Po nadejściu „godziny W” był to jeden z pierwszych celów mokotowskich powstańców.",
+      "Obecnie przy skrzyżowaniu z Narbutta znajduje się tablica upamiętniająca pierwszy bój baonu „Bałtyk” pułku „Baszta” (w dniu 1 sierpnia 1944).",
+      "Przy rogu z Madalińskiego znajduje się tablica upamiętniająca żołnierzy kompanii K-2 pułku „Baszta”, poległych 14 sierpnia 1944 (Powstanie warszawskie) w nocnym natarciu na silnie bronioną pozycję oddziałów SS."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Kazimierzowska runs north to south between Rakowiecka and Ursynowska in Stary Mokotów. Trolleybuses ran here until the 1970s, and the street has several plaques commemorating the 1944 Warsaw Uprising.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Kazimierzowska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kazimierzowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "ulica-korsykanska",
+    "nazwa": "Ulica Korsykańska",
+    "name_en": "Korsykańska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Korsykańska",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": null,
+    "okres": "lata 70. XX wieku",
+    "istnieje": true,
+    "fakty": [
+      "Ulica pojawia się po raz pierwszy na planie Warszawy z roku 1973 na dawnych terenach rolniczych.",
+      "W roku 2021 planowany był montaż szlabanów na początku i końcu ulicy.",
+      "W ankiecie przeprowadzonej wśród mieszkańców budynków przy ulicy: 193 mieszkańców było za montażem szlabanów, 45 mieszkańców było przeciw, a 171 mieszkańców nie wypowiedziało się.",
+      "W roku 2024 odbyła się ponowna ankieta w sprawie montażu szlabanu, tym razem większa ilość mieszkańców zagłosowała za montażem szlabanu.",
+      "Szlaban został zainstalowany, aczkolwiek nie został uruchomiony ze względu na przebudowę ulicy Świętego Bonifacego, a planowane uruchomienie jest na 08.09.2025."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Korsykańska is a one-way street in Stegny, Mokotów, running from Śródziemnomorska to Świętego Bonifacego. It first appears on a 1973 city plan, and in 2024 residents voted for a barrier that was installed but not yet switched on.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Ulica Korsykańska", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Korsykańska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Ostatnia data (08.09.2025) to planowane uruchomienie z artykułu; stan obecny niezweryfikowany."
+  }
+]

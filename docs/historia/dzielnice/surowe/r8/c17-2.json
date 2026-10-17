@@ -1,0 +1,229 @@
+[
+  {
+    "id": "xiii-liceum-lisa-kula",
+    "nazwa": "XIII Liceum Ogólnokształcące im. płk. Leopolda Lisa-Kuli",
+    "name_en": "XIII Lisa-Kula Secondary School",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Oszmiańska 23/25",
+    "adres_historyczny": null,
+    "lat": 52.268611,
+    "lon": 21.041666,
+    "lokalizacja": "dokladna",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1928 roku powstało na Bródnie V Męskie Gimnazjum im. płk. Leopolda Lisa-Kuli, którym opiekował się wywodzący się z Legionów 36 Pułk Piechoty.",
+      "W 1937 roku w uroczystości poświęcenia sztandaru szkoły uczestniczył marszałek Edward Rydz-Śmigły.",
+      "Po II wojnie światowej, w 1949 roku, szkoła utraciła swego patrona i otrzymała nazwę XIII Liceum Ogólnokształcące im. Ludwika Waryńskiego.",
+      "Przywrócenie imienia pierwszego patrona nastąpiło 10 listopada 1990 roku.",
+      "W latach 1987–2007 placówką kierowała mgr Alicja Kolmas.",
+      "W 2008 i 2009 roku w ramach cyklów „Spotkania z literaturą, spotkania z kulturą” i „Spotkania z polityką” szkołę odwiedzili m.in. Bronisław Komorowski, Jolanta Kwaśniewska, Julia Pitera, Henryk Hoser i Andrzej Markowski.",
+      "Szkoła plasuje się w drugiej pięćdziesiątce rankingu „Perspektyw”."
+    ],
+    "ciekawostki": [
+      "Wśród absolwentów są m.in. Jan Olszewski, premier RP w latach 1991–1992, i Wojciech Kozak, prezydent m.st. Warszawy w 2002."
+    ],
+    "summary_en": "A general secondary school at Oszmiańska 23/25 in Targówek, founded in 1928 as the V Boys' Gymnasium named after Colonel Leopold Lis-Kula. It lost its patron in 1949 and regained the name in 1990.",
+    "ludzie": [
+      {"kto": "Leopold Lis-Kula (płk)", "rola": "patron szkoły", "wiki": null},
+      {"kto": "Edward Rydz-Śmigły", "rola": "marszałek, uczestniczył w poświęceniu sztandaru szkoły w 1937 roku", "wiki": null},
+      {"kto": "Alicja Kolmas", "rola": "dyrektor (placówką kierowała w latach 1987–2007)", "wiki": null}
+    ],
+    "dawne_nazwy": ["V Męskie Gimnazjum im. płk. Leopolda Lisa-Kuli", "XIII Liceum Ogólnokształcące im. Ludwika Waryńskiego (1949–1990)"],
+    "zrodla": [{"tytul": "Wikipedia: XIII Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. płk. Leopolda Lisa-Kuli w Warszawie", "url": "https://pl.wikipedia.org/wiki/XIII_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_z_Oddzia%C5%82ami_Dwuj%C4%99zycznymi_im._p%C5%82k._Leopolda_Lisa-Kuli_w_Warszawie"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord dotyczy budynku szkoły przy ul. Oszmiańskiej, nie samej instytucji."
+  },
+  {
+    "id": "stacja-metra-zacisze",
+    "nazwa": "Stacja metra Zacisze",
+    "name_en": "Zacisze metro station",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "ul. Figara",
+    "adres_historyczny": null,
+    "lat": 52.28381,
+    "lon": 21.06212,
+    "lokalizacja": "dokladna",
+    "okres": "2022–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa stacji metra Zacisze rozpoczęła się w 2019 roku.",
+      "Nazwa stacji została nadana przez Radę m.st. Warszawy w sierpniu 2020 roku.",
+      "Stacja została otwarta dla ruchu pasażerskiego 28 września 2022 roku.",
+      "Stacja C19 Zacisze została zaprojektowana przez firmę ILF Consulting Engineers Polska.",
+      "Całkowita kubatura obiektu wynosi 74 199 m³, co czyni ją najmniejszą stacją wschodniego odcinka linii M2.",
+      "Stacja była krytykowana ze względu na położenie na terenie osiedla domów jednorodzinnych i związaną z tym niewielką liczbę podróżnych.",
+      "Według danych z marca 2024 roku ze stacji korzystało ok. 1500 pasażerów dziennie."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A station on the M2 metro line in the Zacisze estate, Targówek, at Figara street. Construction began in 2019 and the station opened on 28 September 2022.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Zacisze (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Zacisze_%28stacja_metra%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres przybliżony: stacja w ciągu ul. Figara, przy skrzyżowaniu z ul. Codzienną, Rolanda i Spójni."
+  },
+  {
+    "id": "bitwa-pod-bialolaka",
+    "nazwa": "Bitwa pod Białołęką",
+    "name_en": "Battle of Białołęka",
+    "typ": "zdarzenie",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1929,
+    "lon": 20.8897,
+    "lokalizacja": "przyblizona",
+    "okres": "1831",
+    "istnieje": true,
+    "fakty": [
+      "Bitwa pod Białołęką była jedną z bitew powstania listopadowego stoczonych w dniach 24–25 lutego 1831.",
+      "Zdecydowana postawa Polaków w I bitwie pod Wawrem w dniu 19 lutego oraz w czasie pierwszego starcia w Olszynce Grochowskiej (20 lutego) zaskoczyła głównodowodzącego rosyjskiego, Iwana Dybicza Zabałkańskiego.",
+      "W dniu 23 lutego pułkownik Antoni Jankowski otrzymał zadanie rozpoznania sił generała Iwana Szachowskiego; pod Nieporętem doznał porażki i musiał się wycofać.",
+      "24 lutego w kierunku Białołęki wysłana została II Brygada 1 Dywizji Piechoty pod dowództwem generała Kazimierza Małachowskiego (4200 piechoty, 6 dział).",
+      "Straty po pierwszym dniu walk: strona rosyjska – 650 zabitych i rannych; strona polska – 450.",
+      "Nad ranem drugiego dnia walk Szachowski zarządził odwrót w kierunku Marek.",
+      "Według Wacława Tokarza starcie na bagnety w trakcie zwycięskiej dla Polaków bitwy było najbardziej zaciętym w czasie powstania listopadowego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A battle of the November Uprising fought on 24–25 February 1831 at Białołęka, near Warsaw, between Polish troops and the Russian army under Iwan Szachowski. The Poles won, and the bayonet fighting in the village was among the fiercest of the uprising.",
+    "ludzie": [
+      {"kto": "Iwan Dybicz Zabałkański", "rola": "głównodowodzący armii rosyjskiej", "wiki": null},
+      {"kto": "Iwan Szachowski", "rola": "generał dowodzący rosyjską grupą (11 tys. ludzi, 56 dział)", "wiki": null},
+      {"kto": "Antoni Jankowski", "rola": "pułkownik, polski rozpoznanie sił Szachowskiego", "wiki": null},
+      {"kto": "Kazimierz Małachowski", "rola": "generał, dowódca II Brygady 1 Dywizji Piechoty", "wiki": null},
+      {"kto": "Jan Krukowiecki", "rola": "generał, naczelne dowództwo nad ugrupowaniem polskim w bitwie", "wiki": null},
+      {"kto": "Wacław Tokarz", "rola": "historyk, cytowany o starciu na bagnety", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Bitwa pod Białołęką", "url": "https://pl.wikipedia.org/wiki/Bitwa_pod_Bia%C5%82o%C5%82%C4%99k%C4%85"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzielnica z nagłówka DZIELNICE (Ursus); współrzędne z nagłówka WSPÓŁRZĘDNE dotyczą miejsca bitwy, nie budynku."
+  },
+  {
+    "id": "czechowice-warszawa",
+    "nazwa": "Czechowice",
+    "name_en": "Czechowice (Ursus)",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.18823,
+    "lon": 20.87773,
+    "lokalizacja": "przyblizona",
+    "okres": "1407–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Najstarsza wzmianka o wsi pod nazwą Czachowicze pochodzi z roku 1407; wymieniony w niej jest szlachcic Mikołaj, trzymający sporną część Czechowic od 1392 roku.",
+      "W XVI wieku wieś szlachecka Czechowicze położona była w powiecie błońskim ziemi warszawskiej.",
+      "W 1580 r. Czechowice należały do parafii Żbików.",
+      "W latach 1952−1954 miasto utworzone z Czechowic, Szamot, Gołąbek oraz Skorosz; w 1954 roku nazwę miasta zmieniono na Ursus.",
+      "Od 1977 roku część Warszawy wchodząca najpierw w skład dzielnicy Ochota, a później dzielnicy Ursus."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Czechowice is an area in the Ursus district of Warsaw, first mentioned in 1407. In 1952 it became part of the new town of Czechowice, renamed Ursus in 1954, and it joined Warsaw in 1977.",
+    "ludzie": [
+      {"kto": "Mikołaj (szlachcic)", "rola": "wymieniony w najstarszej wzmiance z 1407 roku, trzymał sporną część Czechowic", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czachowicze"],
+    "zrodla": [{"tytul": "Wikipedia: Czechowice (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Czechowice_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "golabki-warszawa",
+    "nazwa": "Gołąbki",
+    "name_en": "Gołąbki (Ursus)",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.201379,
+    "lon": 20.862372,
+    "lokalizacja": "przyblizona",
+    "okres": "XVI w.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wieś szlachecka Gołembki w drugiej połowie XVI wieku znajdowała się w powiecie błońskim ziemi warszawskiej województwa mazowieckiego.",
+      "W 1923 Władysław Grabski nabył od Sulimierskich jeden z folwarków Gołąbek, o powierzchni ok. 40 hektarów, i nazwał go Grabkowo.",
+      "1 kwietnia 1930 część Gołąbek włączono do nowo utworzonej Piastów.",
+      "1 lipca 1952 gromady Gołąbki i Grabkowo w granicach gminy Blizne weszły w skład nowo utworzonego miasta Czechowice (przemianowanego 8 maja 1954 na Ursus).",
+      "31 grudnia 1961 z miasta Piastów wyłączono osiedle mieszkaniowe Gołąbki, włączając je do miasta Ursus.",
+      "1 sierpnia 1977 miasto Ursus (z Gołąbkami) włączono do Warszawy."
+    ],
+    "ciekawostki": [
+      "Ulica Czerwona Droga, wybudowana w latach 30. XX w. przez Grabskich, pochodzi od koloru klinkieru z Zakładów Ceramicznych w Ołtarzewie, którym została wybrukowana."
+    ],
+    "summary_en": "Gołąbki is a housing estate and area in the Ursus district of Warsaw, once a noble village with several manor farms. It passed through Piastów and Ursus before joining Warsaw in 1977.",
+    "ludzie": [
+      {"kto": "Władysław Grabski", "rola": "premier RP, autor reformy walutowej z 1924, nabył folwark w 1923 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["Gołembki"],
+    "zrodla": [{"tytul": "Wikipedia: Gołąbki (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Go%C5%82%C4%85bki_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł Grabkowo podaje dla włączenia do Warszawy datę 1 stycznia 1977 (rozbieżność z 1 sierpnia 1977 w tym artykule)."
+  },
+  {
+    "id": "grabkowo-warszawa",
+    "nazwa": "Grabkowo",
+    "name_en": "Grabkowo (Ursus)",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.200555,
+    "lon": 20.867778,
+    "lokalizacja": "przyblizona",
+    "okres": "1923–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Grabkowo było początkowo jednym z folwarków (40 ha) pod Gołąbkami, nabytym w 1923 od Sulimierskich przez Władysława Grabskiego.",
+      "Władysław Grabski wkrótce rozpoczął parcelację, chcąc stworzyć zgodnie z ówczesną tendencją willowe „Osiedle Ogród”.",
+      "W 1933 roku gminę Grabkowo utworzyła od Gołąbek odrębna gromada Grabkowo w gminie Blizne.",
+      "1 lipca 1952 gromadę Grabkowo zniesiono, stając się częścią nowo utworzonego miasta Czechowice, któremu z dniem 8 maja 1954 roku zmieniono nazwę na Ursus.",
+      "1 stycznia 1977, jako część Ursusa, Grabkowo włączono wraz z nim do Warszawy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Grabkowo is a former village and garden-city estate in the Ursus district of Warsaw, created in 1923 from a manor farm bought by Władysław Grabski. It has been part of Warsaw since 1977.",
+    "ludzie": [
+      {"kto": "Władysław Grabski", "rola": "premier RP, nabył folwark w 1923 roku i założył na nim osiedle Ogród", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Grabkowo (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Grabkowo_%28Warszawa%29"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Dawna wieś; obszar w granicach MSI Gołąbki. Data włączenia do Warszawy (1 stycznia 1977) różni się od podanej w artykule Gołąbki (1 sierpnia 1977)."
+  },
+  {
+    "id": "dom-grabowka-grabkowo",
+    "nazwa": "Dom „Grabówka” na Grabkowie",
+    "name_en": "\"Grabówka\" house in Grabkowo",
+    "typ": "budynek",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.200555,
+    "lon": 20.867778,
+    "lokalizacja": "przyblizona",
+    "okres": "ok. 1927–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Władysław Grabski wybudował dom dla syna Władysława Jana Grabskiego, pisarza, który w 1927 poślubił Zofię Wojciechowską, malarkę, córkę Stanisława Wojciechowskiego (prezydenta RP).",
+      "Po powstaniu warszawskim w tym domu zamieszkał wraz z żoną Stanisław Wojciechowski.",
+      "Dom „Grabówka” zachował się na Grabkowie do dziś."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The \"Grabówka\" house in Grabkowo, Ursus, was built by Władysław Grabski for his son, the writer Władysław Jan Grabski, and his wife, the painter Zofia Wojciechowska. After the Warsaw Uprising her father, President Stanisław Wojciechowski, lived there.",
+    "ludzie": [
+      {"kto": "Władysław Grabski", "rola": "premier i minister skarbu II RP, zlecił budowę domu", "wiki": null},
+      {"kto": "Władysław Jan Grabski", "rola": "pisarz, syn Władysława Grabskiego, mieszkaniec domu", "wiki": null},
+      {"kto": "Zofia Wojciechowska", "rola": "malarka, żona Władysława Jana Grabskiego", "wiki": null},
+      {"kto": "Stanisław Wojciechowski", "rola": "prezydent RP, po powstaniu warszawskim zamieszkał w domu z żoną", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Wikipedia: Grabkowo (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Grabkowo_%28Warszawa%29"}],
+    "pewnosc": "średnia",
+    "uwagi": "Adres i dokładna lokalizacja domu nie są podane; współrzędne to środek Grabkowa."
+  }
+]

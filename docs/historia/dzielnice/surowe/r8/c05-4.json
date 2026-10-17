@@ -1,0 +1,293 @@
+[
+  {
+    "id": "ulica-rakowiecka",
+    "nazwa": "Ulica Rakowiecka",
+    "name_en": "Rakowiecka Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Rakowiecka",
+    "adres_historyczny": null,
+    "lat": 52.207916666,
+    "lon": 21.010222222,
+    "lokalizacja": "przyblizona",
+    "okres": "1897–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1900: 20 budynków koszar Lejb-Gwardyjskiego Keksholmskiego Pułku Piechoty i obok cerkiew – obecnie Kościół Wniebowstąpienia Pańskiego.",
+      "1904: Więzienie Mokotowskie.",
+      "W 1916 roku ulica została włączona w granice administracyjne Warszawy.",
+      "W 1924 roku rozpoczęto budowę gmachów Szkoły Głównej Gospodarstwa Wiejskiego i Szkoły Głównej Handlowej (pierwszy pawilon SGH oddano do użytku w 1925 roku).",
+      "28 listopada 1930 roku przy ulicy Rakowieckiej 6 otworzono nowe pomieszczenia reaktywowanej dwa lata wcześniej Biblioteki Narodowej.",
+      "W pierwszych dniach powstania warszawskiego w koszarach Stauferkaserne przy Rakowieckiej 4 Niemcy utworzyli prowizoryczne więzienie.",
+      "Po II wojnie światowej ul. Rakowiecka okryła się ponurą sławą, przede wszystkim z powodu okrucieństw popełnianych przez komunistów w więzieniu mokotowskim przy ul. Rakowieckiej 37."
+    ],
+    "ciekawostki": [
+      "3 listopada 1944 Niemcy spalili Archiwum Akt Nowych znajdujące się w gmachu Szkoły Głównej Handlowej; zniszczeniu uległo 95% zasobów archiwum."
+    ],
+    "summary_en": "Rakowiecka Street in Mokotów was built up before World War I with a Guards barracks, a prison and the first tenement houses. During the Warsaw Uprising the Stauferkaserne barracks at number 4 held civilians and prisoners, and after the war the Mokotów prison at number 37 became notorious.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Rakowiecka w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Rakowiecka_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-rolna",
+    "nazwa": "Ulica Rolna",
+    "name_en": "Rolna Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Rolna",
+    "adres_historyczny": null,
+    "lat": 52.176,
+    "lon": 21.026666666,
+    "lokalizacja": "przyblizona",
+    "okres": "1939–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica Rolna prowadziła od 1939 na południe od alei Wilanowskiej.",
+      "W latach 60. przedłużono ją do Lasu Kabackiego.",
+      "W następstwie budowy osiedla bloków mieszkalnych Ursynów ulica została podzielona na kilka odcinków.",
+      "W 2015 formalnie zniesiono nazwę ulicy Rolnej dla odcinków wówczas nieistniejących."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rolna Street runs south of Aleja Wilanowska in Mokotów and Ursynów. It was opened in 1939, extended in the 1960s to Las Kabacki, and split into several sections when the Ursynów housing estate was built.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Rolna w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Rolna_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy). Ulica leży w dzielnicach Mokotów i Ursynów."
+  },
+  {
+    "id": "ulica-tarniny",
+    "nazwa": "Ulica Tarniny",
+    "name_en": "Tarniny Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Tarniny",
+    "adres_historyczny": null,
+    "lat": 52.17077,
+    "lon": 21.01097,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1970–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plany miasta sprzed lat 70. XX wieku przedstawiają odcinki ulicy Tarniny po obu stronach Potoku Służewieckiego, na wysokości obecnego parku Dolina Służewska oraz parku wokół Stawu Służewieckiego.",
+      "W 2012 roku, w ramach porządkowania nazewnictwa ulic na Mokotowie, stwierdzono, że nie jest znana podstawa prawna funkcjonowania nazwy ulicy Tarniny; Rada miasta nadała ją kilkudziesięciometrowemu odcinkowi dawnego przebiegu.",
+      "Przy odcinku pod adresem Tarniny 7 znajdują się resztki zabudowań jednego z gospodarstw dawnej wsi Służew."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Tarniny Street in Służew is a name that survives only in two disconnected fragments of the old road, which was broken up when the Służew nad Dolinką estate was built in the 1970s. The official section is a few dozen metres of park path.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Tarniny w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Tarniny_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. Oficjalna nazwa obejmuje tylko jeden, kilkudziesięciometrowy odcinek."
+  },
+  {
+    "id": "ulica-wiktorska",
+    "nazwa": "Ulica Wiktorska",
+    "name_en": "Wiktorska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Wiktorska",
+    "adres_historyczny": null,
+    "lat": 52.199666666,
+    "lon": 21.014888888,
+    "lokalizacja": "przyblizona",
+    "okres": "1944–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od imienia Wiktora Magnusa, właściciela gruntów na Mokotowie, jednego z założycieli spółki akcyjnej Drogi Żelaznej Wąskotorowej Wilanowskiej.",
+      "Przy ulicy znajduje się właz do kanału, którym 20 września 1944 ewakuowało się z Górnego Czerniakowa ok. 200 powstańców ze zgrupowania „Radosław”.",
+      "W 1948 roku między ulicami Madalińskiego, Wołoską, Wiktorską i al. Niepodległości rozpoczęto budowę osiedla Warszawskiej Spółdzielni Mieszkaniowej."
+    ],
+    "ciekawostki": [
+      "Przy ulicy Wiktorskiej 3 znajduje się kamienica wpisana do gminnej ewidencji zabytków."
+    ],
+    "summary_en": "Wiktorska Street in Mokotów is named after Wiktor Magnus, a landowner and co-founder of the Wilanów narrow-gauge railway company. During the Warsaw Uprising about 200 insurgents left Górny Czerniaków through a sewer manhole here on 20 September 1944.",
+    "ludzie": [
+      {"kto": "Wiktor Magnus", "rola": "właściciel gruntów na Mokotowie, współzałożyciel spółki Drogi Żelaznej Wąskotorowej Wilanowskiej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wiktorska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wiktorska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-wincentego-rzymowskiego",
+    "nazwa": "Ulica Wincentego Rzymowskiego",
+    "name_en": "Wincenty Rzymowski Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Wincentego Rzymowskiego",
+    "adres_historyczny": "Nowo-Wołoska (robocza nazwa przed 1961)",
+    "lat": 52.16923,
+    "lon": 21.01033,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana przez Radę Narodową m.st. Warszawy w 1961 roku; patronem został literat, dziennikarz i polityk Wincenty Rzymowski.",
+      "W okresie od 2000 do 2014 roku ulica była fragmentem drogi krajowej nr 7.",
+      "W 2017 roku Wojewoda Mazowiecki wydał zarządzenie zastępcze zmieniające patrona ulicy na kompozytora Przemysława Gintrowskiego.",
+      "W 2018 roku Wojewódzki Sąd Administracyjny w Warszawie uchylił zarządzenie wojewody, a Naczelny Sąd Administracyjny stanowisko to podtrzymał."
+    ],
+    "ciekawostki": [
+      "Wcześniej ulica była określana roboczą nazwą Nowo-Wołoska."
+    ],
+    "summary_en": "Wincenty Rzymowski Street in Służewiec Południowy was named in 1961 after the writer and politician. In 2017 the voivode tried to replace the patron, a move that was overturned by the courts in 2018.",
+    "ludzie": [
+      {"kto": "Wincenty Rzymowski", "rola": "literat, dziennikarz i polityk, patron ulicy od 1961", "wiki": null},
+      {"kto": "Przemysław Gintrowski", "rola": "kompozytor, którego wojewoda w 2017 wyznaczył na patrona ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowo-Wołoska"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wincentego Rzymowskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wincentego_Rzymowskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-wolska",
+    "nazwa": "Ulica Wołoska",
+    "name_en": "Wołoska Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Wołoska",
+    "adres_historyczny": "Droga Rakowiecka (do końca XIX wieku)",
+    "lat": 52.190364,
+    "lon": 21.001745,
+    "lokalizacja": "przyblizona",
+    "okres": "XIX wiek–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica jest dawną drogą rozgraniczającą grunty wsi Mokotów i folwarku Rakowiec; do końca XIX wieku była wąską drogą nazywaną Drogą Rakowiecką.",
+      "W 1916 roku ulica znalazła się w granicach Warszawy.",
+      "Jej obecna nazwa, nadana w 1919 roku, pochodzi od Wołoszczyzny.",
+      "W latach 1966–1967 na odcinku między ul. Rakowiecką a ul. Woronicza wybudowano linię tramwajową.",
+      "Uchwałą Rady Narodowej m.st. Warszawy z dnia 28 kwietnia 1967 ulicy nadano imię Władimira Komarowa (cztery dni po jego śmierci). Historyczną nazwę przywrócono uchwałą Rady Dzielnicy-Gminy Warszawa-Mokotów z dnia 18 grudnia 1992."
+    ],
+    "ciekawostki": [
+      "Dom Studencki Politechniki Warszawskiej „Żaczek” znajduje się pod numerem 141a."
+    ],
+    "summary_en": "Wołoska Street in Mokotów was a boundary road between the Mokotów village and the Rakowiec farm, renamed after Wołoszczyzna in 1919. It was named after Władimir Komarow in 1967 and got its historic name back in 1992.",
+    "ludzie": [
+      {"kto": "Władimir Komarow", "rola": "patron ulicy w latach 1967–1992", "wiki": null}
+    ],
+    "dawne_nazwy": ["Droga Rakowiecka", "Władimira Komarowa (1967–1992)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Wołoska w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Wo%C5%82oska_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "ulica-zygmunta-modzelewskiego",
+    "nazwa": "Ulica Zygmunta Modzelewskiego",
+    "name_en": "Zygmunt Modzelewski Street",
+    "typ": "ulica",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Zygmunta Modzelewskiego",
+    "adres_historyczny": "al. Niepodległości-Bis (robocza nazwa przed 1961)",
+    "lat": 52.17895,
+    "lon": 21.01398,
+    "lokalizacja": "przyblizona",
+    "okres": "1961–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa ulicy została nadana przez Radę Narodową m.st. Warszawy w 1961 roku; patronem został ekonomista, dyplomata i polityk komunistyczny Zygmunt Modzelewski (1900–1954).",
+      "Wzdłuż ulicy wybudowano osiedla mieszkaniowe: Służewiec Mieszkaniowy (1952–1956), osiedle Prototypów (1960–1965), Służew Fort (1972–1977), Ksawerów (1962–1968), Domaniewska (1970–1977) i Wierzbno (1955–1970).",
+      "W 2017 roku Wojewoda Mazowiecki wydał zarządzenie zastępcze zmieniające patrona ulicy na muzyka, poetę i autora tekstów Jacka Kaczmarskiego (1957–2004).",
+      "W 2018 roku Wojewódzki Sąd Administracyjny w Warszawie uchylił zarządzenie wojewody ze względu na wady prawne, a Naczelny Sąd Administracyjny podtrzymał wyrok sądu I instancji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Zygmunt Modzelewski Street runs through the Służewiec, Ksawerów and Wierzbno areas of Mokotów and is about 2.9 km long. It was named in 1961, and the 2017 attempt to rename it after Jacek Kaczmarski was overturned in 2018.",
+    "ludzie": [
+      {"kto": "Zygmunt Modzelewski", "rola": "ekonomista, dyplomata i polityk komunistyczny (1900–1954), patron ulicy", "wiki": null},
+      {"kto": "Jacek Kaczmarski", "rola": "muzyk, poeta, proponowany w 2017 patron ulicy (1957–2004)", "wiki": null}
+    ],
+    "dawne_nazwy": ["al. Niepodległości-Bis"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica Zygmunta Modzelewskiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_Zygmunta_Modzelewskiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka (środek ulicy)."
+  },
+  {
+    "id": "uniwersus",
+    "nazwa": "Uniwersus",
+    "name_en": "Uniwersus building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Belwederska 20/22",
+    "adres_historyczny": null,
+    "lat": 52.206512,
+    "lon": 21.032,
+    "lokalizacja": "dokladna",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek wzniesiony w latach 1975–1980 pierwotnie mieścił księgarnię, współcześnie pełni funkcje biurowe.",
+      "Centralny Dom Handlowy „Dom Książki Uniwersus” powstał na miejscu wyburzonej XIX-wiecznej willi, pełniącej od 1881 roku funkcję schroniska dla paralityków.",
+      "Od 1975 roku zespół architektów kierowany przez Leszka Sołonowicza projektował dla tej działki nowy budynek, który wybudowano w latach 1980–1981.",
+      "Budynek zdobył tytuł Mister Warszawy za rok 1980, jako ostatni budynek.",
+      "Pełnił funkcję domu książki do czasów transformacji ustrojowej lat 90.; po tamtym czasie jego przeznaczenie zmieniło się na biurowe.",
+      "1 lipca 2025 budynek wpisano do rejestru zabytków pod nazwą Centralny Dom Handlowy Domu Książki „Universus”."
+    ],
+    "ciekawostki": [
+      "Pierwotnie budynek miał pełnić funkcję pawilonu do eksponowania zdobyczy radzieckiej myśli technicznej, ale otwarto go jako księgarnię.",
+      "Do budynku przylegała drewniana kaplica ewangelicka, która według plotek była realnym powodem wyburzenia kompleksu."
+    ],
+    "summary_en": "Uniwersus at Belwederska 20/22 in Mokotów was built in 1975–1981 as a modernist bookshop, the Dom Książki Uniwersus, on the site of a demolished 19th-century villa. It later became an office building and was entered in the heritage register in 2025.",
+    "ludzie": [
+      {"kto": "Leszek Sołonowicz", "rola": "kierownik zespołu architektów projektującego budynek (od 1975)", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Książki Uniwersus", "Universus"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Uniwersus", "url": "https://pl.wikipedia.org/wiki/Uniwersus"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne z nagłówka. W tekście nazwa występuje jako Uniwersus i Universus."
+  },
+  {
+    "id": "warszawa-poludniowa",
+    "nazwa": "Warszawa Południowa (dworzec)",
+    "name_en": "Warszawa Południowa railway station",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.179722,
+    "lon": 21.022506,
+    "lokalizacja": "dokladna",
+    "okres": "1889–2000",
+    "istnieje": false,
+    "fakty": [
+      "Kolej funkcjonowała od 30 października 1889 na trasie od stacji „Warszawa Mokotów”, zlokalizowanej przy placu Unii Lubelskiej, do stacji „Piaseczno Miasto Wąskotorowe”.",
+      "W 1938 skrócono linię do stacji „Warszawa Południe” (wówczas jeszcze pod nazwą „Warszawa Szopy”).",
+      "Stację skasowano dwuetapowo: w 1969 do przystanku Warszawa Dąbrówka.",
+      "W latach 1983–1995 na trasie z Dworca Południowego (pętli Wilanowska) do Piaseczna funkcjonowała linia trolejbusowa.",
+      "Budynek dworca został zburzony w grudniu 2000 roku."
+    ],
+    "ciekawostki": [
+      "Nazwa osiedla Szopy została w latach 1937–1939 nadana stacji jako „Warszawa Szopy”; od 1939 do 1943 nazwa brzmiała Warschau Szopy."
+    ],
+    "summary_en": "Warszawa Południowa was the southern terminus of the Piaseczno-Grójec narrow-gauge railway, opened in 1889 at the site of today's Wilanowska bus loop. The station building was demolished in December 2000.",
+    "ludzie": [],
+    "dawne_nazwy": ["Warszawa Szopy", "Warschau Szopy", "Warschau Süd", "Dworzec Południowy"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Południowa", "url": "https://pl.wikipedia.org/wiki/Warszawa_Po%C5%82udniowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dzisiejsze miejsce to pętla autobusowa Wilanowska i częściowo stacja metra Wilanowska. Tekst podaje nazwę przystanku jako „Warszawa Dąbrówka”; druga część zdania o 1969/1970 jest w tekście niejasna, pominięta."
+  }
+]

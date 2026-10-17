@@ -1,0 +1,188 @@
+[
+  {
+    "id": "ulica-rtm-witolda-pileckiego",
+    "nazwa": "Ulica rtm. Witolda Pileckiego",
+    "name_en": "Captain Witold Pilecki Street",
+    "typ": "ulica",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. rtm. Witolda Pileckiego",
+    "adres_historyczny": null,
+    "lat": 52.148666666,
+    "lon": 21.033722222,
+    "lokalizacja": "przyblizona",
+    "okres": "1975–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Pierwotnie (od marca 1975) ulica nosiła nazwę działacza robotniczego Pawła Findera.",
+      "Obecną nazwę, upamiętniającą rotmistrza Witolda Pileckiego, nadano w październiku 1995.",
+      "W 2015 na odcinku Ciszewskiego – Płaskowickiej ulica została poszerzona do dwóch pasów ruchu.",
+      "Dodano także cztery sygnalizacje świetlne, m.in. na skrzyżowaniu z Indiry Gandhi.",
+      "Jest najważniejszą drogą łączącą tzw. Wysoki Ursynów bezpośrednio z ulicą Puławską."
+    ],
+    "ciekawostki": [
+      "Rondo na skrzyżowaniu z ulicą Filipiny Płaskowickiej nosi nazwę Polskich Kryptologów Enigmy."
+    ],
+    "summary_en": "A street in Ursynów running from ul. Puławska to ul. Kazury. Named Paweł Finder Street from 1975, it has been named after Captain Witold Pilecki since October 1995.",
+    "ludzie": [
+      {"kto": "Witold Pilecki", "rola": "patron ulicy, rotmistrz", "wiki": null},
+      {"kto": "Paweł Finder", "rola": "patron ulicy w latach 1975–1995, działacz robotniczy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Paweł Finder (od marca 1975)", "Poleczki-Kwiczołów (robocza)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ulica rtm. Witolda Pileckiego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Ulica_rtm._Witolda_Pileckiego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Współrzędne to przybliżony środek ulicy; wpis ogólny."
+  },
+  {
+    "id": "ursynowski-fortepian",
+    "nazwa": "Ursynowski Fortepian",
+    "name_en": "Ursynowski Fortepian shopping centre (unfinished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "skrzyżowanie ul. Indiry Gandhi i ul. Cynamonowej (osiedle Na Skraju)",
+    "adres_historyczny": null,
+    "lat": 52.1503,
+    "lon": 21.0481,
+    "lokalizacja": "dokladna",
+    "okres": "1997–2023",
+    "istnieje": false,
+    "fakty": [
+      "Kupcy z targowiska Na Skraju zawiązali w czerwcu 1997 roku spółkę „Pasaż Handlowy Na Skraju” Sp. z o.o.",
+      "W 1998 roku rozpoczęły się prace budowlane, które miały trwać do końca lata 2000 roku; głównym wykonawcą był Zakład Budowlano-Remontowy „Budrem” z Ostrowa Wielkopolskiego, a za projekt odpowiadał poznański architekt Sławomir Rosolski.",
+      "Dokonano montażu stalowej konstrukcji, po czym budowa obiektu została wstrzymana ze względu na brak środków finansowych.",
+      "W 2014 roku nieukończona konstrukcja została rozebrana.",
+      "W 2021 działka, na której miało powstać centrum, została zwrócona miastu, a w 2023 sprzedana."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A shopping centre planned by merchants from the Na Skraju market at the junction of Indiry Gandhi and Cynamonowa streets. Construction started in 1998 and stalled after the steel frame was erected; the unfinished structure was demolished in 2014.",
+    "ludzie": [
+      {"kto": "Sławomir Rosolski", "rola": "poznański architekt, autor projektu obiektu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ursynowski Fortepian", "url": "https://pl.wikipedia.org/wiki/Ursynowski_Fortepian"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres podany w artykule opisowo, bez numeru."
+  },
+  {
+    "id": "ursynow-stacja-metra",
+    "nazwa": "Stacja metra Ursynów",
+    "name_en": "Ursynów metro station",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "zbieg al. Komisji Edukacji Narodowej, ul. Surowieckiego i ul. Beli Bartoka",
+    "adres_historyczny": null,
+    "lat": 52.161944444,
+    "lon": 21.027777777,
+    "lokalizacja": "dokladna",
+    "okres": "1983–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowa stacji rozpoczęła się w lipcu 1983.",
+      "Nazwa stacji została nadana uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983.",
+      "Peron-wyspa ma szerokość 11 m i długość 120 m.",
+      "Stacja przystosowana jest do pełnienia w razie konieczności funkcji schronu dla ludności cywilnej.",
+      "W 2023 roku ceramiczna okładzina zatorowa stacji oraz ceramiczna okładzina dojść do wind na poziomie peronu zostały wpisane do rejestru zabytków ruchomych."
+    ],
+    "ciekawostki": [
+      "Ursynów to stacja pierwszej linii metra w Warszawie."
+    ],
+    "summary_en": "The first station of Warsaw's first metro line, at the junction of al. KEN, ul. Surowieckiego and ul. Beli Bartoka. Construction began in July 1983.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Ursynów (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Ursyn%C3%B3w_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "warszawa-dawidy",
+    "nazwa": "Przystanek Warszawa Dawidy",
+    "name_en": "Warszawa Dawidy railway stop",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "przy ul. Baletowej",
+    "adres_historyczny": null,
+    "lat": 52.128611,
+    "lon": 20.991111,
+    "lokalizacja": "dokladna",
+    "okres": "przebudowany 2015–2017, czynny",
+    "istnieje": true,
+    "fakty": [
+      "Warszawa Dawidy to przystanek osobowy na linii kolejowej nr 8 Warszawa Zachodnia−Kraków Główny, w pobliżu osiedla Jeziorki, przy ul. Baletowej.",
+      "W latach 2015–2017 przystanek został przebudowany.",
+      "Przy południowym krańcu znajduje się przejazd kolejowo-drogowy kategorii A wyposażony w sygnalizację świetlno-dźwiękową, rogatki i strażnicę przejazdową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A passenger stop on railway line no. 8 near the Jeziorki estate, at ul. Baletowa. It was rebuilt in 2015–2017.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Dawidy", "url": "https://pl.wikipedia.org/wiki/Warszawa_Dawidy"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł krótki; historia ograniczona do przebudowy."
+  },
+  {
+    "id": "warszawa-dabrowka-waskotorowa",
+    "nazwa": "Warszawa Dąbrówka Wąskotorowa",
+    "name_en": "Warszawa Dąbrówka Narrow-Gauge Station",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.114093,
+    "lon": 21.018483,
+    "lokalizacja": "dokladna",
+    "okres": "od 1898 (dawna stacja)",
+    "istnieje": false,
+    "fakty": [
+      "Została otwarta w 1898 roku.",
+      "W latach 1918–1939 stacja nosiła nazwę Dąbrówka, a od 1949 do 1959 Dąbrówka Wąskotorowa.",
+      "Funkcjonowała w Piaseczyńskiej Kolei Wąskotorowej na trasie Warszawa Mokotów – Nowe Miasto nad Pilicą."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former railway station and passenger stop opened in 1898 on the Piaseczno narrow-gauge railway (Piaseczyńska Kolej Wąskotorowa), serving the route from Warsaw Mokotów towards Nowe Miasto nad Pilicą.",
+    "ludzie": [],
+    "dawne_nazwy": ["Dąbrówka", "Dąbrówka Wąskotorowa", "Dabrowka (1939–1945)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Warszawa Dąbrówka Wąskotorowa", "url": "https://pl.wikipedia.org/wiki/Warszawa_D%C4%85br%C3%B3wka_W%C4%85skotorowa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł urwany w tekście; brak danych o likwidacji stacji."
+  },
+  {
+    "id": "vitaparc",
+    "nazwa": "VitaParc",
+    "name_en": "VitaParc housing estate",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "ul. Stryjeńskich 13, 13A, 13B, 13C, 13D",
+    "adres_historyczny": null,
+    "lat": 52.132777777,
+    "lon": 21.053888888,
+    "lokalizacja": "dokladna",
+    "okres": "2003–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle wybudowano w latach 2003–2005 na działce o powierzchni 11 820 m², według projektu pracowni JEMS Architekci.",
+      "VitaParc składa się z pięciu budynków o pięciu kondygnacjach nadziemnych i jednej podziemnej.",
+      "Mieszczą one 235 mieszkań i tyle samo miejsc postojowych garażowych.",
+      "Osiedle otrzymało nagrodę Srebrnego Żurawia 2004 w ramach dorocznego konkursu architektonicznego organizowanego przez tygodnik „Pasmo”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential estate of five five-storey buildings at ul. Stryjeńskich 13 in Ursynów, built in 2003–2005 to a design by JEMS Architekci. It won the Srebrny Żuraw award in 2004.",
+    "ludzie": [
+      {"kto": "Olgierd Jagiełło", "rola": "współtwórca projektu (pracownia JEMS Architekci)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: VitaParc", "url": "https://pl.wikipedia.org/wiki/VitaParc"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

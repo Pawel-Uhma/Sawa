@@ -1,0 +1,114 @@
+[
+  {
+    "id": "muzeum-ikon-lelechowska-5",
+    "nazwa": "Muzeum Ikon w Warszawie",
+    "name_en": "Icon Museum in Warsaw",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Lelechowska 5",
+    "adres_historyczny": null,
+    "lat": 52.216638888,
+    "lon": 20.975166666,
+    "lokalizacja": "dokladna",
+    "okres": "2011–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Muzeum jest filią Muzeum Warszawskiej Metropolii Prawosławnej.",
+      "Muzeum powstało z inicjatywy prawosławnego metropolity warszawskiego i całej Polski abpa Sawy oraz znawcy kultury obrządków wschodnich Michała Boguckiego.",
+      "Jest to pierwsza w Warszawie, a trzecia w Polsce po Sanoku i Supraślu, placówka muzealna tego typu.",
+      "Muzeum powstało w budynku dawnej kotłowni; autorami przebudowy i aranżacji wnętrz byli Michał Bogucki i Andrzej Markowski.",
+      "29 listopada 2011 wieczorem otwarcia muzeum dokonał prawosławny metropolita warszawski i całej Polski abp Sawa.",
+      "W latach 2012–2015 przy muzeum działała Akademia Ikony."
+    ],
+    "ciekawostki": [
+      "Muzeum nie posiada ekspozycji stałej; główną częścią jest kaplica św. męcz. arch. Grzegorza."
+    ],
+    "summary_en": "An Orthodox icon museum at Lelechowska 5, a branch of the Warsaw Orthodox Metropolitan Museum. It opened on 29 November 2011 in a converted former boiler room, and its main part is the St. Gregory the Martyr Archbishop chapel.",
+    "ludzie": [
+      {"kto": "abp Sawa", "rola": "prawosławny metropolita warszawski i całej Polski, inicjator muzeum, dokonał otwarcia", "wiki": null},
+      {"kto": "Michał Bogucki", "rola": "inicjator muzeum, autor przebudowy i aranżacji wnętrz", "wiki": null},
+      {"kto": "Andrzej Markowski", "rola": "autor przebudowy i aranżacji wnętrz", "wiki": null},
+      {"kto": "ks. mitrat dr Henryk Paprocki", "rola": "duszpasterz miejscowej parafii prawosławnej, przewodniczył molebieniowi przed otwarciem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Ikon w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Ikon_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "muzeum-motoryzacji-filtrowa-62",
+    "nazwa": "Muzeum Motoryzacji w Warszawie",
+    "name_en": "Warsaw Motoring Museum",
+    "typ": "miejsce",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Filtrowa 62",
+    "adres_historyczny": null,
+    "lat": 52.220097222,
+    "lon": 20.988530555,
+    "lokalizacja": "dokladna",
+    "okres": "2009–2014",
+    "istnieje": false,
+    "fakty": [
+      "Muzeum Motoryzacji, mieszczące się w zabytkowej kamienicy przy ul. Filtrowej 62, działało w latach 2009–2014 jako filia stołecznego Muzeum Techniki.",
+      "Muzeum zostało otwarte 21 marca 2009. Powstało z części zbiorów Muzeum Przemysłu, które musiało opuścić swoją siedzibę w Fabryce Norblina.",
+      "W zbiorach znalazły się m.in. Packard z kolumny prezydenckiej Ignacego Mościckiego oraz opancerzony Cadillac zbudowany dla marszałka Józefa Piłsudskiego.",
+      "W styczniu 2014 placówka została zamknięta."
+    ],
+    "ciekawostki": [
+      "Wystawa była ułożona przekrojowo; wśród najstarszych pojazdów były Humber z 1908 roku i Ford T z 1926 roku."
+    ],
+    "summary_en": "A motoring museum in a listed tenement at Filtrowa 62, open from March 2009 as a branch of the Warsaw Museum of Technology. It closed in January 2014.",
+    "ludzie": [
+      {"kto": "Ignacy Mościcki", "rola": "prezydent, właściciel Packarda z kolumny prezydenckiej (w zbiorach muzeum)", "wiki": null},
+      {"kto": "Józef Piłsudski", "rola": "marszałek, dla którego zbudowano opancerzonego Cadillaca (w zbiorach muzeum)", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Muzeum Motoryzacji w Warszawie", "url": "https://pl.wikipedia.org/wiki/Muzeum_Motoryzacji_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Placówka zamknięta w styczniu 2014; rekord historyczny."
+  },
+  {
+    "id": "mow-orionistow-barska-4",
+    "nazwa": "Młodzieżowy Ośrodek Wychowawczy Księży Orionistów (dawny „Antonin”)",
+    "name_en": "Orionist Youth Educational Centre (former „Antonin”)",
+    "typ": "budynek",
+    "dzielnica": "Ochota",
+    "adres_dzis": "ul. Barska 4",
+    "adres_historyczny": null,
+    "lat": 52.219477777,
+    "lon": 20.981822222,
+    "lokalizacja": "dokladna",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek ośrodka zaprojektował Oskar Sosnowski, równolegle ze wznoszonym obok kościołem Niepokalanego Poczęcia NMP.",
+      "Początkowo był to Dom Izb Rzemieślniczych św. Antoniego Padewskiego („Antonin”), utworzony z inicjatywy ks. Franciszka Toporskiego w 1913 roku.",
+      "W 1939 roku ośrodek został przekazany Księżom Orionistom.",
+      "W czasie II wojny światowej budynek Antonina był obsadzony przez oddział SS, który został wyparty przez powstańców 1 sierpnia 1944 roku.",
+      "W nocy 26 na 27 sierpnia 1954 r. na teren ośrodka wkroczyło UB, zagarniając część własności.",
+      "Orioniści odzyskali ją w 1990 roku i wznowili działalność ośrodka."
+    ],
+    "ciekawostki": [
+      "Przy ośrodku działa szkoła podstawowa i niepubliczne gimnazjum, w których uczą się tylko wychowankowie placówki."
+    ],
+    "summary_en": "A youth educational centre for boys at Barska 4, run by the Orionist Fathers. The building was designed by Oskar Sosnowski, began as the Antonin craftsmen's house in 1913, and was seized by the security police in 1954 before the Orionists regained it in 1990.",
+    "ludzie": [
+      {"kto": "Oskar Sosnowski", "rola": "architekt budynku", "wiki": null},
+      {"kto": "ks. Franciszek Toporski", "rola": "inicjator Domu Izb Rzemieślniczych w 1913 roku", "wiki": null},
+      {"kto": "ks. Bronisław Dąbrowski", "rola": "dyrektor ośrodka od 1948 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [
+      "Dom Izb Rzemieślniczych św. Antoniego Padewskiego („Antonin”)",
+      "Młodzieżowy Ośrodek Wychowawczy im. ks. Franciszka Toporskiego"
+    ],
+    "zrodla": [
+      {"tytul": "Wikipedia: Młodzieżowy Ośrodek Wychowawczy Księży Orionistów", "url": "https://pl.wikipedia.org/wiki/M%C5%82odzie%C5%BCowy_O%C5%9Brodek_Wychowawczy_Ksi%C4%99%C5%BCy_Orionist%C3%B3w"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

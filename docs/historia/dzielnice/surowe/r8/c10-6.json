@@ -1,0 +1,193 @@
+[
+  {
+    "id": "pekin-budynek",
+    "nazwa": "Pekin",
+    "name_en": "Pekin (Hansen housing block)",
+    "typ": "budynek",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2325,
+    "lon": 21.08,
+    "lokalizacja": "przyblizona",
+    "okres": "1969–1974",
+    "istnieje": true,
+    "fakty": [
+      "Galeriowiec zaprojektowali w latach 1963–1969 architekci Oskar Hansen i Zofia Garlińska-Hansen.",
+      "Budynek wybudowano w latach 1969–1974.",
+      "Składa się z ciągu 22 bloków o wysokości 3–7 pięter, załamanych osiem razy pod kątem prostym, o łącznej powierzchni mieszkań 85 000 m².",
+      "Znajduje się tam ok. 2 tys. lokali, w których mieszka ok. 7 tys. osób.",
+      "Galeriowiec ma łączną długość 1,5 km (z załamaniami) i leży w kwartale ulic: Ostrzyckiej, Motorowej, Żymirskiego, Kwarcianej, Bracławskiej i Opinogórskiej."
+    ],
+    "ciekawostki": [
+      "Pekinem nazywa się także kamienicę Wolfa Krongolda przy ul. Złotej 83, a potocznie tak określa się też Pałac Kultury i Nauki (PKiN)."
+    ],
+    "summary_en": "Pekin is the popular name of a 1.5 km long gallery housing estate of 22 blocks in the Przyczółek Grochowski area, designed by Oskar Hansen and Zofia Garlińska-Hansen and built in 1969–1974. It has about 2,000 flats for roughly 7,000 people.",
+    "ludzie": [
+      {
+        "kto": "Oskar Hansen",
+        "rola": "architekt, projektant (1963–1969)",
+        "wiki": null
+      },
+      {
+        "kto": "Zofia Garlińska-Hansen",
+        "rola": "architektka, projektantka (1963–1969)",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [
+      "Osiedle Hansenów"
+    ],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Pekin (budynek)",
+        "url": "https://pl.wikipedia.org/wiki/Pekin_%28budynek%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Nazwa „osiedle Hansenów” z tekstu. Brak adresu w artykule, współrzędne z nagłówka."
+  },
+  {
+    "id": "plac-piotra-szembeka",
+    "nazwa": "Plac Piotra Szembeka",
+    "name_en": "Piotr Szembek Square",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.243205,
+    "lon": 21.102159,
+    "lokalizacja": "dokladna",
+    "okres": "1919–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Plac został wytyczony w 1919 roku; jego patronem został gen. Piotr Szembek, który dowodził dywizjami wojsk polskich w 1831 roku.",
+      "15 września 1939 roku, w czasie obrony Warszawy, plac został opanowany przez Niemców.",
+      "W latach 2011–2012 plac został poddany rewitalizacji, m.in. powstały tam fontanny i lampiony."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Piotr Szembek Square at the junction of Grochowska, Kordeckiego, Zaliwskiego, Zamieniecka, Sztuki and Chłopickiego streets was laid out in 1919, named after General Piotr Szembek. It was taken by the Germans on 15 September 1939 and revitalised in 2011–2012.",
+    "ludzie": [
+      {
+        "kto": "Piotr Szembek",
+        "rola": "gen., dowodził dywizjami wojsk polskich w 1831 roku, patron placu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Plac Piotra Szembeka w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Plac_Piotra_Szembeka_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ważniejszy obiekt przy placu z artykułu: Kościół Najczystszego Serca Maryi Panny (bez osobnego rekordu)."
+  },
+  {
+    "id": "plac-przymierza",
+    "nazwa": "Plac Przymierza",
+    "name_en": "Przymierza Square",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.2307,
+    "lon": 21.0565,
+    "lokalizacja": "dokladna",
+    "okres": "1963–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1963 roku przy placu otwarto kino „Sawa”, które było jedynym kinem na Saskiej Kępie.",
+      "Na skwerze przed kinem ustawiono rzeźbę syrenki-dziewczyny dłuta Jerzego Chojnackiego.",
+      "W 2000 roku kino zostało zburzone, a na jego miejscu wzniesiono wielki budynek mieszkalno-usługowy.",
+      "Popiersie Stefana Żeromskiego wykonane przez Stanisława Sikorę odsłonięto w 1987 roku przed kinem „Sawa”; po rozbiórce kina przeniesiono je kilkadziesiąt metrów i ponownie odsłonięto w 2001 roku."
+    ],
+    "ciekawostki": [
+      "Na skutek wybudowania dwóch dużych budynków na początku XXI wieku plac przestał być placem, mimo zachowania nazwy."
+    ],
+    "summary_en": "Przymierza Square on Saska Kępa, named after the Allied victory in World War I and the Polish-French alliance. The Sawa cinema opened there in 1963 and was demolished in 2000; new buildings replaced it.",
+    "ludzie": [
+      {
+        "kto": "Jerzy Chojnacki",
+        "rola": "autor rzeźby syrenki-dziewczyny na skwerze",
+        "wiki": null
+      },
+      {
+        "kto": "Stanisław Sikora",
+        "rola": "autor popiersia Stefana Żeromskiego",
+        "wiki": null
+      },
+      {
+        "kto": "Stefan Żeromski",
+        "rola": "pisarz, którego popiersie stoi na placu",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Plac Przymierza w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Plac_Przymierza_w_Warszawie"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Kino „Sawa” zburzone w 2000 r. Współrzędne z nagłówka artykułu."
+  },
+  {
+    "id": "plon-plaskorzezba",
+    "nazwa": "Plon",
+    "name_en": "Plon (bas-relief)",
+    "typ": "pomnik",
+    "dzielnica": "Praga-Południe",
+    "adres_dzis": "ul. Katowicka (narożnik ul. Zwycięzców)",
+    "adres_historyczny": null,
+    "lat": 52.2311,
+    "lon": 21.0532,
+    "lokalizacja": "dokladna",
+    "okres": "po II wojnie światowej–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Płaskorzeźba Plon powstała w ramach zmian wprowadzanych przez Biuro Odbudowy Stolicy po II wojnie światowej; jej autorem jest Jerzy Jarnuszkiewicz.",
+      "10 listopada 2010 roku pod Plonem zorganizowano happening, w którym wzięła udział m.in. aktorka Magdalena Gnatowska.",
+      "W styczniu 2011 roku wojewódzka konserwator Barbara Jezierska zdecydowała o wpisaniu płaskorzeźby do rejestru zabytków.",
+      "Na początku lipca 2011 roku płaskorzeźbę zdjęto ze ściany i przekazano do konserwacji; po renowacji wróciła na swoje miejsce w październiku tego samego roku.",
+      "Koszt prac, które objęły też renowację całego narożnika domu, wyniósł ostatecznie ok. 50 tys. zł."
+    ],
+    "ciekawostki": [
+      "Płaskorzeźba jest wykonana z cementu i przedstawia dwie kobiety niosące plon, chłopca trzymającego dwie ryby oraz baranka."
+    ],
+    "summary_en": "Plon is a cement bas-relief by Jerzy Jarnuszkiewicz on a house corner at Katowicka and Zwycięzców streets in Saska Kępa. Made in the post-war Warsaw reconstruction, it was listed in 2011 and restored after a citizens' campaign.",
+    "ludzie": [
+      {
+        "kto": "Jerzy Jarnuszkiewicz",
+        "rola": "autor płaskorzeźby",
+        "wiki": null
+      },
+      {
+        "kto": "Magdalena Gnatowska",
+        "rola": "aktorka, uczestniczka happeningu w 2010 roku",
+        "wiki": null
+      },
+      {
+        "kto": "Barbara Jezierska",
+        "rola": "wojewódzka konserwator, zdecydowała o wpisie do rejestru zabytków",
+        "wiki": null
+      },
+      {
+        "kto": "Ewa Brykowska-Liniecka",
+        "rola": "zainicjowała akcję ratowania płaskorzeźby",
+        "wiki": null
+      }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {
+        "tytul": "Wikipedia: Plon (płaskorzeźba)",
+        "url": "https://pl.wikipedia.org/wiki/Plon_%28p%C5%82askorze%C5%BAba%29"
+      }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rok powstania nie jest podany wprost (artykuł mówi o zmianach po II wojnie i o pracach z lat 40. jako podstawie rekonstrukcji). Adres: odcinek ul. Katowickiej między ul. Zwycięzców a Obrońców."
+  }
+]

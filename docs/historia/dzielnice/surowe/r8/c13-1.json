@@ -1,0 +1,155 @@
+[
+  {
+    "id": "bazar-rozyckiego",
+    "nazwa": "Bazar Różyckiego",
+    "name_en": "Różycki Bazaar",
+    "typ": "miejsce",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Targowa 54",
+    "adres_historyczny": null,
+    "lat": 52.253055555,
+    "lon": 21.04125,
+    "lokalizacja": "dokladna",
+    "okres": "1882–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Teren, na którym znajduje się bazar, zakupił w 1874 r. Julian Józef Różycki od Wincentego Wodzińskiego i Gotlieba Langnera.",
+      "Oficjalne otwarcie bazaru miało miejsce w 1882.",
+      "Administratorem bazaru był Manas Ryba, który od 1885 r. stał się właścicielem domu przy dzisiejszej ul. Targowej 56, skąd zarządzał targowiskiem.",
+      "W 1915 Niemcy rozpoczęli masowe rekwirowanie żywności i wprowadzili ograniczenia handlowe.",
+      "W 1944, podczas powstania warszawskiego, bazar spłonął.",
+      "W 1950 r. nastąpiło upaństwowienie bazaru, jednak nie zlikwidowało to prywatnego handlu.",
+      "W 1957 w murowanym budynku w głębi bazaru otwarto cieszący się dużym powodzeniem komis.",
+      "W 2008 roku na bazarze handlowało około 250 kupców. W 2017 na bazarze pozostało 111 straganów."
+    ],
+    "ciekawostki": [
+      "Prawdopodobnie ok. 1901 roku właściciel bazaru zbudował przy bramie od ul. Targowej siedmiometrowy błękitny kiosk w kształcie syfonu, w którym mieścił się punkt sprzedaży własnych wód gazowanych. Stał się on symbolem targowiska i jedną z praskich ikon.",
+      "Najbardziej znanymi daniami sprzedawanymi na bazarze Różyckiego były gorące flaki i pyzy."
+    ],
+    "summary_en": "Różycki Bazaar is a market at ul. Targowa 54 in Praga-Północ, founded by pharmacist Julian Józef Różycki on land he bought in 1874 and officially opened in 1882. It was burned during the Warsaw Uprising in 1944 and was entered in the municipal register of monuments in 2019.",
+    "ludzie": [
+      {"kto": "Julian Józef Różycki", "rola": "farmaceuta, właściciel kilku aptek, inwestor; założyciel bazaru", "wiki": null},
+      {"kto": "Manas Ryba", "rola": "administrator bazaru", "wiki": null}
+    ],
+    "dawne_nazwy": ["Różyc"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bazar Różyckiego", "url": "https://pl.wikipedia.org/wiki/Bazar_R%C3%B3%C5%BCyckiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "bazylika-najswietszego-serca-jezusowego",
+    "nazwa": "Bazylika Najświętszego Serca Jezusowego",
+    "name_en": "Basilica of the Sacred Heart of Jesus",
+    "typ": "swiatynia",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Kawęczyńska 53",
+    "adres_historyczny": null,
+    "lat": 52.25875,
+    "lon": 21.059444,
+    "lokalizacja": "dokladna",
+    "okres": "1907–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kościół wybudowany został w latach 1907–1923 według projektu Łukasza Wolskiego.",
+      "Fundatorem kościoła był Michał Piotr Radziwiłł (od którego imienia tę część Pragi nazywano Michałowem).",
+      "Dnia 30 czerwca 1904 księżna Maria otrzymała błogosławieństwo papieża Piusa X na budowę bazyliki pod wezwaniem Najświętszego Serca Jezusa.",
+      "Pierwszy etap prac związanych z budową przerwał w 1914 wybuch I wojny światowej.",
+      "23 sierpnia 1923 papież Pius XI nadał tytuł bazyliki mniejszej. 16 września tego samego roku Aleksander Kakowski dokonał jej konsekracji.",
+      "Od 1931, zgodnie z wolą fundatorki kościoła, opiekę nad nim zaczęli pełnić i pracę duszpasterską prowadzić salezjanie.",
+      "W 1965 została wpisana do rejestru zabytków.",
+      "8 czerwca 1991 podczas IV podróży apostolskiej papież Jan Paweł II otworzył w bazylice obrady II Synodu Plenarnego Kościoła w Polsce.",
+      "W 2018 świątynia została ogłoszona sanktuarium diecezji warszawsko-praskiej."
+    ],
+    "ciekawostki": [
+      "Papież Pius XI powiedział kiedyś o tej świątyni La piú bella chiesa in Polonia (pol. Najpiękniejszy kościół w Polsce).",
+      "Ten odręcznie pisany przez papieża dokument jest do dzisiaj przechowywany w archiwum parafii."
+    ],
+    "summary_en": "The Basilica of the Sacred Heart of Jesus at ul. Kawęczyńska 53 in Praga-Północ was built in 1907–1923 to a design by Łukasz Wolski, with funding from Michał Piotr Radziwiłł and his wife Maria. It was granted the title of minor basilica by Pope Pius XI in 1923 and has been run by the Salesians since 1931.",
+    "ludzie": [
+      {"kto": "Łukasz Wolski", "rola": "autor projektu kościoła", "wiki": null},
+      {"kto": "Michał Piotr Radziwiłł", "rola": "fundator kościoła", "wiki": null},
+      {"kto": "Maria z Kieżgajłłów-Zawiszów Radziwiłłowa", "rola": "inicjatorka budowy świątyni", "wiki": null},
+      {"kto": "Kazimierz Grabowski", "rola": "inżynier, projekt konstrukcji bazyliki", "wiki": null},
+      {"kto": "Hugo Kuder", "rola": "kierował pracami budowlanymi od 1919", "wiki": null},
+      {"kto": "Aleksander Kakowski", "rola": "kardynał, erygował parafię i dokonał konsekracji bazyliki", "wiki": null},
+      {"kto": "Pius XI", "rola": "papież, nadał tytuł bazyliki mniejszej", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Bazylika Najświętszego Serca Jezusowego w Warszawie", "url": "https://pl.wikipedia.org/wiki/Bazylika_Naj%C5%9Bwi%C4%99tszego_Serca_Jezusowego_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "budynek-dawnej-komory-wodnej",
+    "nazwa": "Budynek dawnej Komory Wodnej",
+    "name_en": "Former Water Chamber Building",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. ks. Ignacego Kłopotowskiego 1/3",
+    "adres_historyczny": null,
+    "lat": 52.2489,
+    "lon": 21.0278,
+    "lokalizacja": "dokladna",
+    "okres": "1824–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Klasycystyczny budynek został wybudowany w latach 1824–1825 według projektu Antonia Corazziego jako miejsce poboru opłat za przejazd przez most łyżwowy na Wiśle, łączący ulice Bednarską i Brukową.",
+      "Budynek przestał pełnić swoją pierwotną funkcję w 1864, po oddaniu do użytku stałego mostu Aleksandryjskiego (mostu Kierbedzia).",
+      "W II poł. XIX wieku budynek z powodu złego stanu technicznego przebudowano i podwyższono. Pierwotną formę przywrócono podczas renowacji w latach 1975−1978.",
+      "Budynek został uszkodzony w czasie II wojny światowej. W 1945 zajmowali go saperzy radzieccy budujący most wysokowodny.",
+      "Po 1945 został odbudowany na siedzibę Biura Turystyki Zagranicznej „Juventur”.",
+      "W latach 1964–1967 w sąsiedztwie wzniesiono osiedle Panieńska.",
+      "W 1965 budynek został wpisany do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Na budynku zachowały się tabliczki informujące o rekordowo wysokich stanach Wisły, m.in. w latach 1813 i 1844."
+    ],
+    "summary_en": "The former Water Chamber building at ul. ks. Ignacego Kłopotowskiego 1/3 in Praga-Północ is a neoclassical building designed by Antonio Corazzi in 1824–1825 to collect tolls for crossing a bridge over the Vistula. It is entered in the register of monuments since 1965 and today houses the civil registry office of the Praga-Północ district.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "autor projektu budynku", "wiki": null},
+      {"kto": "Tomasz Accardi", "rola": "autor płaskorzeźby w tympanonie", "wiki": null}
+    ],
+    "dawne_nazwy": ["Dom Mostowy", "Dom Pod Kolumnami"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Budynek dawnej Komory Wodnej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Budynek_dawnej_Komory_Wodnej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "centrum-edukacji-i-historii-warszawskiej-strazy-pozarnej",
+    "nazwa": "Centrum Edukacji i Historii Warszawskiej Straży Pożarnej",
+    "name_en": "Warsaw Fire Service Education and History Centre",
+    "typ": "budynek",
+    "dzielnica": "Praga-Północ",
+    "adres_dzis": "ul. Marcinkowskiego 2",
+    "adres_historyczny": null,
+    "lat": 52.248112,
+    "lon": 21.040387,
+    "lokalizacja": "dokladna",
+    "okres": "2018–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Centrum zostało otwarte w 2018.",
+      "Przejęło eksponaty dawnego Muzeum Pożarnictwa, które mieściło się w Koszarach Mirowskich przy ul. Chłodnej 3.",
+      "Ta utworzona w 1983 roku placówka kontynuowała z kolei tradycje Muzeum Pożarnictwa utworzonego w 1907 roku.",
+      "Na potrzeby Centrum zaadaptowano część powierzchni w zespole dawnego V Oddziału Straży Ogniowej, zrewitalizowanego w latach 2008−2018.",
+      "W sąsiednim, odbudowanym budynku kuźni i stajni zgromadzono kolekcję zabytkowych samochodów pożarniczych, m.in. samochód De Dion-Bouton z 1928 roku z wysuwaną mechanicznie drabiną o rozpiętości 25 metrów."
+    ],
+    "ciekawostki": [
+      "Powstała również sala kinowa na 60 miejsc."
+    ],
+    "summary_en": "The Warsaw Fire Service Education and History Centre at ul. Marcinkowskiego 2 in Praga-Północ opened in 2018 in the complex of the former V Fire Brigade Division. Its collection includes historic fire engines, among them a 1928 De Dion-Bouton with a 25-metre extending ladder.",
+    "ludzie": [],
+    "dawne_nazwy": ["V Oddział Straży Ogniowej"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Centrum Edukacji i Historii Warszawskiej Straży Pożarnej", "url": "https://pl.wikipedia.org/wiki/Centrum_Edukacji_i_Historii_Warszawskiej_Stra%C5%BCy_Po%C5%BCarnej"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  }
+]

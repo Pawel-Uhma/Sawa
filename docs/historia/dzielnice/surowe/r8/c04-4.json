@@ -1,0 +1,309 @@
+[
+  {
+    "id": "stacja-raclawicka",
+    "nazwa": "Stacja metra Racławicka",
+    "name_en": "Racławicka metro station",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "w pobliżu ul. Racławickiej, Wiktorskiej i al. Niepodległości",
+    "adres_historyczny": null,
+    "lat": 52.198611111,
+    "lon": 21.012222222,
+    "lokalizacja": "dokladna",
+    "okres": "1986–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwę stacji nadano uchwałą Rady Narodowej m.st. Warszawy 16 grudnia 1983 roku.",
+      "Budowa stacji linii M1 metra rozpoczęła się w 1986 roku.",
+      "Stacja jest jednokondygnacyjna, łukowa, bez słupów; peron-wyspa ma 10 m szerokości i 120 m długości.",
+      "Boczne ściany stacji były dawniej podświetlane zza tablic z nazwą stacji."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Line M1 metro station near Racławicka, Wiktorska and Aleja Niepodległości in Mokotów. Named by a Warsaw People's Council resolution of 1983, construction began in 1986.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Racławicka (stacja metra)", "url": "https://pl.wikipedia.org/wiki/Rac%C5%82awicka_%28stacja_metra%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Data otwarcia stacji nie pada w artykule."
+  },
+  {
+    "id": "rezerwat-jeziorko-czerniakowskie",
+    "nazwa": "Rezerwat przyrody Jeziorko Czerniakowskie",
+    "name_en": "Jeziorko Czerniakowskie nature reserve",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Jeziorna 4 (plaża i kąpielisko)",
+    "adres_historyczny": null,
+    "lat": 52.193469444,
+    "lon": 21.071669444,
+    "lokalizacja": "dokladna",
+    "okres": "1987–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Rezerwat utworzono zarządzeniem Ministra Ochrony Środowiska i Zasobów Naturalnych z 18 lutego 1987 roku na powierzchni 46,83 ha.",
+      "W 2012 roku przyjęto plan ochrony dla rezerwatu.",
+      "Jeziorko Czerniakowskie ma powierzchnię ok. 19,5 ha i jest największym naturalnym zbiornikiem wodnym na terenie Warszawy.",
+      "Od lat 60. XX wieku poziom wody w jeziorze obniżył się o ok. 1 metr, według badań naukowców ze Szkoły Głównej Gospodarstwa Wiejskiego.",
+      "Od 2019 roku kąpielisko przy ul. Jeziornej 4 jest wyznaczone zgodnie z wymogami dyrektywy kąpieliskowej i jako jedyne w Warszawie.",
+      "24 września 2009 roku władze Warszawy wydały zgodę na budowę 6-piętrowego budynku w otulinie rezerwatu."
+    ],
+    "ciekawostki": [
+      "Zimą kąpielisko jest popularnym miejscem morsowania; 19 stycznia prawosławna parafia św. Sofii Mądrości Bożej organizuje tam uroczystości święta Jordanu."
+    ],
+    "summary_en": "Water nature reserve in Mokotów centred on Jeziorko Czerniakowskie, the largest natural lake in Warsaw, a former Vistula oxbow. Established in 1987, it has a bathing area on ul. Jeziorna and has lost about a metre of water level since the 1960s.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rezerwat przyrody Jeziorko Czerniakowskie", "url": "https://pl.wikipedia.org/wiki/Rezerwat_przyrody_Jeziorko_Czerniakowskie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Artykuł nie podaje wyniku sprawy zgody z 2009 roku."
+  },
+  {
+    "id": "rondo-unii-europejskiej",
+    "nazwa": "Rondo Unii Europejskiej",
+    "name_en": "European Union Roundabout",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "skrzyżowanie ul. Wołoskiej, al. Wilanowskiej, ul. Rzymowskiego i ul. Marynarskiej",
+    "adres_historyczny": null,
+    "lat": 52.178111111,
+    "lon": 21.002166666,
+    "lokalizacja": "dokladna",
+    "okres": "2006–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Skrzyżowanie było pierwotnie jednopoziomowe; modernizacja w latach 2004–2006 objęła utworzenie ronda oraz budowę estakady łączącej ul. Rzymowskiego z ul. Marynarską.",
+      "Rondo oddano do użytku 23 czerwca 2006 roku, a estakadę 18 lipca 2006 roku.",
+      "Od listopada 2011 roku rondo nosi nazwę Unii Europejskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Major junction in Mokotów where Wołoska, Aleja Wilanowska, Rzymowskiego and Marynarska streets meet. It was rebuilt as a roundabout with a flyover in 2004–2006 and named after the European Union in 2011.",
+    "ludzie": [],
+    "dawne_nazwy": ["Skrzyżowanie jednopoziomowe (przed 2004–2006)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Rondo Unii Europejskiej w Warszawie", "url": "https://pl.wikipedia.org/wiki/Rondo_Unii_Europejskiej_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sadyba",
+    "nazwa": "Sadyba",
+    "name_en": "Sadyba",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.188747222,
+    "lon": 21.068766666,
+    "lokalizacja": "przyblizona",
+    "okres": "1921–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Nazwa pochodzi od założonej w 1923 roku Oficerskiej Spółdzielni Budowlano-Mieszkaniowej „Sadyba”, która budowała domy dla kadry oficerskiej wzdłuż fortu „Czerniaków”.",
+      "Od 1921 roku budowano Miasto-Ogród Czerniaków, osiedle z willami dla wyższej kadry urzędniczej, rozplanowane w latach 20. XX wieku według angielskiej idei miasta-ogrodu.",
+      "Osiedle Sadyba powołano w 1997 roku przez Radę Gminy Warszawa-Centrum.",
+      "Obraz Sadyby z lat 60. XX wieku został utrwalony w powieści dla młodzieży „Uwaga! Czarny parasol!” Adama Bahdaja."
+    ],
+    "ciekawostki": [
+      "W serialu TVP „Klan” dom rodzinny Lubiczów znajduje się na Sadybie, choć w rzeczywistości willa „Renata” mieści się w Podkowie Leśnej."
+    ],
+    "summary_en": "Mokotów district and housing area named after the officers' housing cooperative Sadyba (1923), which built homes near Fort Czerniaków. The area was previously known as Czerniaków and includes the Czerniaków Cemetery and Sadyba Best Mall.",
+    "ludzie": [
+      {"kto": "Adam Bahdaj", "rola": "autor powieści „Uwaga! Czarny parasol!”, w której przedstawiono Sadybę z lat 60.", "wiki": null}
+    ],
+    "dawne_nazwy": ["Czerniaków"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Sadyba (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Sadyba_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI i osiedle, nie pojedynczy obiekt; współrzędne z nagłówka."
+  },
+  {
+    "id": "sadyba-best-mall",
+    "nazwa": "Sadyba Best Mall",
+    "name_en": "Sadyba Best Mall",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Powsińska 31",
+    "adres_historyczny": null,
+    "lat": 52.1877,
+    "lon": 21.0609,
+    "lokalizacja": "dokladna",
+    "okres": "1999–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Prawomocne pozwolenie na budowę obiektu o powierzchni 55 000 m² uzyskano w sierpniu 1997 roku.",
+      "W 1998 roku nowym właścicielem obiektu została spółka I.T. International Ltd.",
+      "Budowa rozpoczęła się latem 1999 roku i trwała 13 miesięcy; centrum oddano do użytku we wrześniu 2000 roku.",
+      "Było pierwszym centrum handlowym w Europie Środkowej i Wschodniej, w którym otwarto kino 3D IMAX.",
+      "W 2002 roku centrum otrzymało nagrodę Międzynarodowej Rady Centrów Handlowych (ICSC) w kategorii innowacyjny projekt."
+    ],
+    "ciekawostki": [
+      "Według artykułu centrum odwiedza rocznie ok. 7 mln osób."
+    ],
+    "summary_en": "Shopping and entertainment centre at ul. Powsińska 31 in Mokotów, built in 1999–2000 by architect Paweł Graliński, with 55,000 m² of floor area and a 3D IMAX cinema. It was the first such centre in Central and Eastern Europe to open a 3D IMAX.",
+    "ludzie": [
+      {"kto": "Paweł Graliński", "rola": "architekt obiektu; projekt, zarządzanie projektem i inwestorstwo zastępcze", "wiki": null},
+      {"kto": "Thor Bjørdal", "rola": "prezes grupy inwestycyjnej Pol Nordic Group; zaprosił architekta do współpracy", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Sadyba Best Mall", "url": "https://pl.wikipedia.org/wiki/Sadyba_Best_Mall"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": null
+  },
+  {
+    "id": "sanktuarium-matki-bozej-nauczycielki-mlodziezy",
+    "nazwa": "Sanktuarium Matki Bożej Nauczycielki Młodzieży",
+    "name_en": "Sanctuary of Our Lady, Teacher of Youth",
+    "typ": "swiatynia",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.20786,
+    "lon": 21.0828,
+    "lokalizacja": "dokladna",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Objawienia maryjne, których doświadczała nastoletnia Władysława Fronczak, trwały od 3 maja 1943 do 15 września 1949 roku.",
+      "Kapliczkę zbudowaną z gruzów powojennej Warszawy poświęcono 8 maja 1949 roku.",
+      "Pierwsza msza na miejscu objawień odprawiona została 3 maja 1977 roku za pozwoleniem kardynała Stefana Wyszyńskiego.",
+      "Od stycznia 1980 roku w kaplicy regularnie odprawiano nabożeństwa; opiekę nad nimi sprawował pijar ks. Edward Szajor.",
+      "Prace projektowe nad kompleksem klasztoru i kościoła rozpoczęto w 1984 roku pod kierownictwem architekta Janusza Tofila.",
+      "Kościół Matki Bożej Królowej Wyznawców poświęcił kardynał Józef Glemp 17 września 1994 roku; od 1997 roku ma rangę sanktuarium."
+    ],
+    "ciekawostki": [
+      "Według tekstu Maryja określiła siebie jako Nauczycielkę Młodzieży i nakazała wzniesienie świątyni na terenie Siekierek."
+    ],
+    "summary_en": "Marian sanctuary on Siekierki, linked to apparitions reported by Władysława Fronczak in 1943–1949. A chapel built from postwar rubble in 1949 was later replaced by a church consecrated in 1994, and the site was made a sanctuary in 1997.",
+    "ludzie": [
+      {"kto": "Władysława Fronczak", "rola": "nastoletnia widząca objawień maryjnych (1943–1949)", "wiki": null},
+      {"kto": "Stefan Wyszyński", "rola": "kardynał; zezwolił na pierwszą mszę na miejscu objawień (1977)", "wiki": null},
+      {"kto": "Edward Szajor", "rola": "ks., pijar; inicjator rozbudowy kaplicy", "wiki": null},
+      {"kto": "Janusz Tofil", "rola": "architekt; kierował pracami projektowymi od 1984 roku", "wiki": null},
+      {"kto": "Józef Glemp", "rola": "kardynał; poświęcił kościół 17 września 1994 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Sanktuarium Matki Bożej Nauczycielki Młodzieży w Warszawie", "url": "https://pl.wikipedia.org/wiki/Sanktuarium_Matki_Bo%C5%BCej_Nauczycielki_M%C5%82odzie%C5%BCy_w_Warszawie"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres ulicy nie pada w artykule (sanktuarium na Siekierkach)."
+  },
+  {
+    "id": "siedziba-jems-architekci",
+    "nazwa": "Siedziba JEMS Architekci",
+    "name_en": "JEMS Architekci office building",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Gagarina 28a",
+    "adres_historyczny": null,
+    "lat": 52.207222,
+    "lon": 21.036822,
+    "lokalizacja": "dokladna",
+    "okres": "2002–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Projekt budynku biurowego powstał w latach 1999–2002, a realizację przeprowadzono w latach 2002–2004.",
+      "Jednym z głównych założeń projektowych było wykreowanie przestrzeni integrującej zespół poprzez otwartość wnętrz.",
+      "Stanowiska pracy są odseparowane od pomieszczeń obsługujących żelbetowymi podciągami biegnącymi przez całą długość budynku; poprzecznie usytuowano ażurową klatkę schodową o stalowej konstrukcji.",
+      "Uliczna fasada jest podwójnie szklona; projekt wielokrotnie publikowano m.in. w miesięczniku „Architektura-Murator”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Office building at ul. Gagarina 28a designed and owned by the JEMS Architekci studio. Designed in 1999–2002 and built in 2002–2004, it uses concrete, steel, glass and wooden floors.",
+    "ludzie": [
+      {"kto": "Olgierd Jagiełło", "rola": "autor projektu (JEMS Architekci)", "wiki": null},
+      {"kto": "Maciej Miłobędzki", "rola": "autor projektu (JEMS Architekci)", "wiki": null},
+      {"kto": "Marcin Sadowski", "rola": "autor projektu (JEMS Architekci)", "wiki": null},
+      {"kto": "Jerzy Szczepanik-Dzikowski", "rola": "autor projektu (JEMS Architekci)", "wiki": null},
+      {"kto": "Izabela Leple", "rola": "autorka projektu (JEMS Architekci)", "wiki": null},
+      {"kto": "Marta Świątek-Piziorska", "rola": "współpraca przy projekcie", "wiki": null},
+      {"kto": "Kasper Mączeński", "rola": "współpraca przy projekcie", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Wikipedia: Siedziba JEMS Architekci", "url": "https://pl.wikipedia.org/wiki/Siedziba_JEMS_Architekci"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Budynek biurowy firmy; w rekordzie tylko historia projektu i budowy."
+  },
+  {
+    "id": "siekierki",
+    "nazwa": "Siekierki",
+    "name_en": "Siekierki",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.208211111,
+    "lon": 21.083527777,
+    "lokalizacja": "przyblizona",
+    "okres": "od XIII wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Najwcześniejsze osadnictwo na terenie Siekierek stanowiła znana od XIII wieku wieś Czarnów (Czarnowo); w XVI wieku wzmiankowano wieś Siekierki.",
+      "W XVII wieku osada stała się własnością Stanisława Herakliusza Lubomirskiego, który wzniósł tu pawilon rozrywkowy.",
+      "Z dniem 1 kwietnia 1916 roku Siekierki Wielkie i Siekierki Małe włączono w granice Warszawy.",
+      "W 1926 roku ukończono budowę wału przeciwpowodziowego wzdłuż lewego brzegu Wisły.",
+      "W trakcie powstania warszawskiego naziści dokonywali zbiorowych mordów mieszkańców i systematycznych podpaleń osiedla; zniszczeniu uległa większość zabudowy.",
+      "W 1961 roku w sąsiedztwie powstała Elektrociepłownia Siekierki, największa elektrociepłownia w Polsce.",
+      "W 2002 roku oddano do użytku Trasę Siekierkowską oraz Most Siekierkowski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Riverside district of Mokotów along the Vistula bend, historically the villages of Czarnów and Siekierki. Devastated in 1944, it later hosted the Siekierki power plant and a sanctuary of Our Lady, Teacher of Youth.",
+    "ludzie": [
+      {"kto": "Stanisław Herakliusz Lubomirski", "rola": "właściciel osady w XVII wieku", "wiki": null},
+      {"kto": "August II Mocny", "rola": "w XVIII wieku wydzierżawił okoliczne tereny w celach łowieckich", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kępa Bełt", "Czarnów (Czarnowo)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Siekierki (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Siekierki_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar osiedla i MSI, nie pojedynczy obiekt."
+  },
+  {
+    "id": "sielce",
+    "nazwa": "Sielce",
+    "name_en": "Sielce",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.201333333,
+    "lon": 21.039566666,
+    "lokalizacja": "przyblizona",
+    "okres": "1412–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W 1412 roku książę Janusz I Starszy przekazał Siedlce dziekanowi kapituły kolegiackiej św. Jana; majątek pozostawał własnością Kościoła aż do konfiskaty przez rząd pruski po III rozbiorze Polski.",
+      "16 maja 1891 roku oddano do użytku odcinek Kolei Konnej Wilanowskiej przecinający wieś.",
+      "19 listopada 1922 roku oddano do użytku jednotorową linię tramwajową łączącą Sielce z ul. Książęcą wzdłuż ul. Czerniakowskiej.",
+      "W 1949 roku przy ul. Chełmskiej 21 powstała Wytwórnia Filmów Dokumentalnych i Fabularnych.",
+      "W latach 1953–1966 powstało osiedle Sielce według projektu Zofii Fafiusowej z zespołem, Jerzego Baumillera i Jana Zdanowicza.",
+      "W 2024 roku oddano do użytku linię tramwajową na ul. Gagarina z końcowym przystankiem Sielce."
+    ],
+    "ciekawostki": [
+      "Sielce kilkukrotnie pojawiały się jako tło filmowe; przed wjazdem na teren Wytwórni kręcono sceny filmu „Miś” Stanisława Barei."
+    ],
+    "summary_en": "Area of lower Mokotów named after the medieval village of Siedlce. It was a rural estate until the late 19th century, became urban after 1916, and gained the Sielce housing estate in 1953–1966.",
+    "ludzie": [
+      {"kto": "Janusz I Starszy", "rola": "książę; w 1412 roku przekazał Siedlce kapitule kolegiackiej", "wiki": null},
+      {"kto": "Zofia Fafiusowa", "rola": "autorka projektu osiedla Sielce z zespołem", "wiki": null},
+      {"kto": "Jerzy Baumiller", "rola": "współautor projektu osiedla Sielce", "wiki": null},
+      {"kto": "Jan Zdanowicz", "rola": "współautor projektu osiedla Sielce", "wiki": null}
+    ],
+    "dawne_nazwy": ["Siedlce"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Sielce (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Sielce_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Obszar MSI, nie pojedynczy obiekt; artykuł nie podaje punktu adresowego."
+  }
+]

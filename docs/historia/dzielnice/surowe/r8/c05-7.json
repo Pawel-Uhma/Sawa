@@ -1,0 +1,66 @@
+[
+  {
+    "id": "wytwornia-filmow-dokumentalnych-i-fabularnych",
+    "nazwa": "Wytwórnia Filmów Dokumentalnych i Fabularnych",
+    "name_en": "Documentary and Feature Film Studio (WFDiF)",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "ul. Chełmska 21",
+    "adres_historyczny": null,
+    "lat": 52.2014,
+    "lon": 21.0435,
+    "lokalizacja": "dokladna",
+    "okres": "1949–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Wytwórnia Filmów Dokumentalnych i Fabularnych powstała w 1949 jako Wytwórnia Filmów Dokumentalnych.",
+      "W 1960 wytwórnia rozszerzyła działalność i uruchomiła dwie nowe hale zdjęciowe do realizacji filmów fabularnych.",
+      "W 1989 przedsiębiorstwo zmieniło nazwę na obecną.",
+      "W 2019 dokonano połączenia państwowych instytucji kultury: Studio Filmowe „Kadr”, Studio Filmowe „Tor”, Studio Filmowe „Zebra”, Wytwórnia Filmów Dokumentalnych i Fabularnych oraz Studio Miniatur Filmowych.",
+      "Wytwórnia posiada archiwum, w którym przechowuje m.in. materiały filmowe od 1916 oraz dokumenty wojenne."
+    ],
+    "ciekawostki": [
+      "Wytwórnia realizowała filmy dokumentalne oraz Polską Kronikę Filmową, rocznie kilkadziesiąt filmów."
+    ],
+    "summary_en": "The Documentary and Feature Film Studio at Chełmska 21 is one of Poland's oldest film studios, founded in 1949 as a documentary studio. It added two shooting halls for feature films in 1960 and merged with other studios in 2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["Wytwórnia Filmów Dokumentalnych (do 1989)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Wytwórnia Filmów Dokumentalnych i Fabularnych", "url": "https://pl.wikipedia.org/wiki/Wytw%C3%B3rnia_Film%C3%B3w_Dokumentalnych_i_Fabularnych"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Instytucja kultury z kompleksem budynków; rekord opisuje kompleks, nie instytucję. Współrzędne z nagłówka."
+  },
+  {
+    "id": "xlix-lo-goethego",
+    "nazwa": "XLIX Liceum Ogólnokształcące im. Johanna Wolfganga Goethego",
+    "name_en": "XLIX Secondary School named after Goethe",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "adres_historyczny": null,
+    "lat": 52.1919,
+    "lon": 21.0097,
+    "lokalizacja": "przyblizona",
+    "okres": "1956–dziś",
+    "istnieje": true,
+    "fakty": [
+      "1956 – na bazie Korpusu Kadetów powstało Liceum Ogólnokształcące im. gen. broni Karola Świerczewskiego.",
+      "1962 – Liceum przeniosło się do nowego budynku (szkoła tysiąclecia) i zmieniło nazwę na XLIX Liceum Ogólnokształcące im. Zygmunta Modzelewskiego.",
+      "1991 – nowym patronem szkoły wybrano Johanna Wolfganga von Goethe; zmiana odzwierciedlała nacisk kładziony w szkole na naukę języka niemieckiego, już od lat sześćdziesiątych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The XLIX Secondary School in Mokotów was founded in 1956 on the base of a cadet corps and moved into a new 'millennium school' building in 1962. In 1991 it took Goethe as its patron, reflecting its long German-language teaching.",
+    "ludzie": [
+      {"kto": "Karol Świerczewski", "rola": "generał broni, patron szkoły w 1956", "wiki": null},
+      {"kto": "Zygmunt Modzelewski", "rola": "patron szkoły po 1962", "wiki": null},
+      {"kto": "Johann Wolfgang von Goethe", "rola": "patron szkoły od 1991", "wiki": null}
+    ],
+    "dawne_nazwy": ["Liceum Ogólnokształcące im. gen. broni Karola Świerczewskiego (1956)", "Liceum Ogólnokształcące im. Zygmunta Modzelewskiego (1962)"],
+    "zrodla": [
+      {"tytul": "Wikipedia: XLIX Liceum Ogólnokształcące im. Johanna Wolfganga Goethego w Warszawie", "url": "https://pl.wikipedia.org/wiki/XLIX_Liceum_Og%C3%B3lnokszta%C5%82c%C4%85ce_im._Johanna_Wolfganga_Goethego_w_Warszawie"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Adres niepodany w tekście; współrzędne z nagłówka. Sekcja „Historia” w artykule jest pusta, fakty z kalendarium."
+  }
+]

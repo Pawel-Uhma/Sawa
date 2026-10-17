@@ -1,0 +1,245 @@
+[
+  {
+    "id": "stawy-cietrzewia",
+    "nazwa": "Stawy Cietrzewia",
+    "name_en": "Cietrzewia Ponds",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Cietrzewia",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "bd.–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Stawy powstały na skutek wydobycia gliny na potrzeby okolicznych cegielni, stąd popularna nazwa Glinianki.",
+      "Po zaprzestaniu wydobycia teren wykorzystywano do przechowywania lodu w okresie letnim (tzw. lodownie); po zaprzestaniu eksploatacji obiekty zostały zalane wodą.",
+      "W latach dziewięćdziesiątych XX wieku teren stawów został zagospodarowany, stworzono alejki i tereny zabaw dla dzieci.",
+      "W 2011 roku dzielnica Włochy rozpoczęła rewitalizację otoczenia stawów, co spotkało się z interwencją ekologów.",
+      "Nurkowanie przeprowadzone w 2012 roku ujawniło wypłycenie akwenu do 9,5 metra oraz brak zatopionych pojazdów."
+    ],
+    "ciekawostki": [
+      "Największy zbiornik to „Ocean”, mniejszy staw przy ul. Cietrzewiej nazywany jest „Szkolnym”, a najmniejszy nosi nazwę „Karpiówka”."
+    ],
+    "summary_en": "A group of four artificial ponds in Włochy, formed by clay extraction for local brickworks. Used for summer ice storage and later developed into a public recreation area.",
+    "ludzie": [],
+    "dawne_nazwy": ["Glinianki"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Stawy Cietrzewia", "url": "https://warszawa.fandom.com/pl/wiki/Stawy_Cietrzewia"}
+    ],
+    "pewnosc": "średnia",
+    "uwagi": "Tekst podaje ulicę Cietrzewią (widok od ul. Cietrzewiej), bez numeru. Stawy leżą między ulicami Cietrzewią, Zbocze, Pana Tadeusza, Dukatową i Konewki."
+  },
+  {
+    "id": "ulica-cietrzewia",
+    "nazwa": "Ulica Cietrzewia",
+    "name_en": "Cietrzewia Street",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Cietrzewia",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "początek XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica powstała najpewniej około 1900 roku, gdy we Włochach zaczęli osiedlać się kolejarze, rzemieślnicy i kupcy.",
+      "W czasach, gdy Włochy były samodzielnym miastem, ulica nosiła nazwę Parkowej.",
+      "Nazwa ulicy pochodzi od nazwy ptaka – cietrzewia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Stare Włochy, about 650 metres long, probably built around 1900. It was called Parkowa when Włochy was still an independent town and takes its name from the black grouse.",
+    "ludzie": [],
+    "dawne_nazwy": ["Parkowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Cietrzewia", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Cietrzewia"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru."
+  },
+  {
+    "id": "ulica-borsucza",
+    "nazwa": "Ulica Borsucza",
+    "name_en": "Borsucza Street",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Borsucza",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica zarysowuje się na planach w latach 30. XX wieku i od początku planowano ją jako istotną drogę komunikacyjną.",
+      "Ulica została zabudowana ściślej tylko w pierzei nieparzystej; domy te powstały zapewne pod koniec lat 30. XX wieku lub na początku lat 40. XX wieku.",
+      "W 1951 roku ulica znalazła się wraz z osadą Raków w granicach Warszawy; biegła wówczas od ul. Łopuszańskiej i krzyżowała się z ulicami Podborską, Bakalarską, Głuszycką i Asnyka.",
+      "Nazwę ulica otrzymała w 1953 roku.",
+      "Połączenie z ul. Łopuszańską ulica straciła około 1970 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential and workshop street on the Raków estate in Włochy. It was planned in the 1930s and received its name in 1953.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Borsucza", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Borsucza"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. Przed wojną zachowały się domy nr 3, 7, 9 (zburzona w 2014), 11, 15 i 45."
+  },
+  {
+    "id": "kino-ada",
+    "nazwa": "Kino „Ada” (dziś Klub ADA)",
+    "name_en": "Ada Cinema (today the ADA Club)",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Chrościckiego 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 30. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "W latach 30. XX wieku w budynku przy ul. Chrościckiego 14 powstało kino „Ada”.",
+      "Po II wojnie światowej władze Olsztyna przekazały wyposażenie kinowe i w podzięce zmieniono nazwę kina na „Olsztyn”.",
+      "Kino działało do końca lat 70. XX wieku.",
+      "Po całkowitej przebudowie budynku w listopadzie 2009 roku obiekt został ponownie otwarty pod obecną nazwą; mieści klub ADA (Artystyczny Dom Animacji), filię Domu Kultury Włochy."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former cinema at Chrościckiego 14 in Włochy, opened in the 1930s as the Ada. After the war it was renamed Olsztyn, and it reopened in November 2009 as the ADA artistic club.",
+    "ludzie": [],
+    "dawne_nazwy": ["kino „Ada”", "kino „Olsztyn”"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Chrościckiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Chrościckiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Rekord wyciągnięty z artykułu o ul. Chrościckiego (obiekty przy ulicy)."
+  },
+  {
+    "id": "ulica-chroscickiego",
+    "nazwa": "Ulica Chrościckiego",
+    "name_en": "Chrościckiego Street",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Chrościckiego",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1928–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Powstanie ulicy związane jest z budową na rozparcelowanych terenach Koelichenów miasta-ogrodu Włochy; zaczęła się ona w 1928 roku.",
+      "Ulica została wytyczona w 1928 roku i na początku nazywała się Mickiewicza; po przyłączeniu Włoch do Warszawy w 1951 roku aż do lat 90. XX wieku nosiła nazwę Mikowa.",
+      "Od 11 października 2013 roku ulica ma połączenie z przedłużeniem ulicy Lazurowej, czyli aleją 4 Czerwca 1989 roku.",
+      "Patronem ulicy jest ksiądz Julian Chrościcki, inicjator budowy pierwszego kościoła we Włochach oraz długoletni proboszcz; więziony podczas II wojny światowej w Pawiaku i Majdanku, zmarł w 1973 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The main axis of the Nowe Włochy garden town, about 1.6 km long, first named after Mickiewicz and later Mikowa. It is named after the priest Julian Chrościcki, who was imprisoned during the war and died in 1973.",
+    "ludzie": [
+      {"kto": "Julian Chrościcki", "rola": "ksiądz, patron ulicy; inicjator budowy pierwszego kościoła we Włochach; zmarł w 1973 roku", "wiki": null},
+      {"kto": "Koelichenowie", "rola": "właściciele rozparcelowanych terenów, na których powstała ulica", "wiki": null}
+    ],
+    "dawne_nazwy": ["Mickiewicza", "Mikowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Chrościckiego", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Chrościckiego"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. Dawna nazwa Mickiewicza jest w artykule podana jako ulica Adama Mickiewicza."
+  },
+  {
+    "id": "ulica-flisa",
+    "nazwa": "Ulica Flisa",
+    "name_en": "Flisa Street",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Flisa",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "lata 50. XX wieku–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Ulica została wytyczona śladem dawnej drogi polnej w latach 50. XX wieku w związku z budową osiedla Okęcie II; zrealizowano z niego w ostateczności jedynie trzy budynki (nr 7, 9 i 11).",
+      "Ulica otrzymała roboczą nazwę „Nowoprojektowana”, a obecną nazwę nadano jej w 1962 roku.",
+      "Otoczenie nie uległo zmianie aż do lat 90. XX wieku, kiedy po drugiej stronie ulicy powstały budynki biurowe kompleksu Flanders Business Park (nr 2 i nr 4).",
+      "Patronem ulicy jest Marcin Flis (? – ok. 1548), mieszczanin warszawski, burmistrz Starej Warszawy, jeden z przywódców tumultu warszawskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A short dead-end street in Okęcie and Raków, Włochy, laid out in the 1950s for the Okęcie II housing estate. It was named in 1962 after Marcin Flis, mayor of Old Warsaw.",
+    "ludzie": [
+      {"kto": "Marcin Flis", "rola": "mieszczanin warszawski, burmistrz Starej Warszawy, przywódca tumultu warszawskiego; patron ulicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["Nowoprojektowana"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Flisa", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Flisa"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje ulicę (ul. Flisa 2/4 – Flanders Business Park, 7/9/11 – bloki osiedla Okęcie II), w rekordzie wpisana jest sama nazwa ulicy."
+  },
+  {
+    "id": "ulica-janka-muzykanta",
+    "nazwa": "Ulica Janka Muzykanta",
+    "name_en": "Janek Muzykant Street",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Janka Muzykanta",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed XIX wiekiem–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Patronem ulicy był Henryk Sienkiewicz do 1960 roku; ulica nosiła wcześniej jego nazwisko.",
+      "W 1951 roku ulica została włączona w granice Warszawy; początkowo nazywała się Sienkiewicza i biegła od ul. Na Skraju do ul. Ruchliwej. Nową nazwę wprowadzono w 1960 roku.",
+      "Ze względu na sąsiedztwo lotniska zabudowa ulicy została praktycznie zrównana z ziemią podczas II wojny światowej.",
+      "W 2015 roku fragment ulicy zmienił nazwę na „Absurd”."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A street in Okęcie and Załuski, Włochy, named after the novella Janko Muzykant by Henryk Sienkiewicz until 1960. Its buildings were levelled during the Second World War due to the nearby airport.",
+    "ludzie": [
+      {"kto": "Henryk Sienkiewicz", "rola": "autor noweli „Janko Muzykant”, patron ulicy do 1960 roku", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Henryka Sienkiewicza (do 1960 roku)"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Janka Muzykanta", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Janka_Muzykanta"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Tekst podaje nazwę ulicy bez numeru. Przy ulicy zachował się prawdopodobnie przedwojenny dom nr 56."
+  },
+  {
+    "id": "ulica-kotwiczna",
+    "nazwa": "Ulica Kotwiczna",
+    "name_en": "Kotwiczna Street",
+    "typ": "ulica",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Kotwiczna",
+    "adres_historyczny": "Kotwiczna",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "przed 1945–2019",
+    "istnieje": false,
+    "fakty": [
+      "Ulica została przyłączona do Warszawy 10 maja 1951 roku, a 12 kwietnia 1954 roku uzyskała nazwę Kotwiczna.",
+      "Wcześniej ulica nosiła nazwę Portowa i biegła od Al. Krakowskiej na wschód, krzyżując się z ob. ul. Skrzydlatą.",
+      "Ulica przetrwała do lat 90. XX wieku, gdy zaczęły tu powstawać zabudowania handlowe, przemysłowe i towarzyszące lotnisku Okęcie.",
+      "W 2007 roku w jej miejscu powstał salon samochodowy Toyota Okęcie.",
+      "Ulicę wykreślono z rejestru ulic Warszawy uchwałą rady miasta z dnia 28 listopada 2019 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A former 150-metre street in Okęcie, Włochy, running from Aleja Krakowska toward Skrzydlata. It was renamed Kotwiczna in 1954 and removed from the register of Warsaw streets in 2019.",
+    "ludzie": [],
+    "dawne_nazwy": ["Portowa"],
+    "zrodla": [
+      {"tytul": "Warszawikia: Ulica Kotwiczna", "url": "https://warszawa.fandom.com/pl/wiki/Ulica_Kotwiczna"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Ulica nieistniejąca, wykreślona z rejestru w 2019 roku. Brak dzisiejszego adresu, w adres_dzis wpisana dawna nazwa."
+  }
+]
