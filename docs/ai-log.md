@@ -406,3 +406,23 @@
 > list roles and what they cover
 
 **AI:** Wypisałem 4 role (R1 dane i planer, R2 baza, historia i produkt z dawną R5, R3 frontend i mapa, R4 AI) z zakresem, plikami i punktami MVP według `zespol.md`, kart ról i planu MVP. Osoby nie są jeszcze przypisane. Bez zmian w plikach poza tym wpisem.
+
+### 2026-10-17 · Szczpan
+
+> summmarize plainly what will be wokring after route planning algorith mock is finished
+
+**AI:** Podsumowałem, co działa po mocku planera (T-16): `POST /v1/routes/plan` i `GET /v1/routes/demo` zwracają stałą trasę z fixture zgodną z kontraktem zod, więc R3 i R4 mogą budować mapę, odtwarzacz i opowieści. Beam search jest w `domain/routing/` z testami na danych syntetycznych, ale nie jest podpięty (brak GTFS, miejsc, serwisu i deployu). Bez zmian w kodzie.
+
+### 2026-10-17 · Szczpan
+
+> will this be the end product of that agents run or just whats currently done?
+
+**AI:** Wyjaśniłem, że poprzednie podsumowanie opisuje stan obecny (mock T-16 gotowy, beam search niepodpięty), a nie efekt końcowy T-13; wypisałem, co ma działać po ukończeniu planera. Bez zmian w kodzie.
+
+### 2026-10-17 12:25 · Szczpan
+
+> assign me to R1 in zespol.md. lets start with an algorithm for planning the routes
+>
+> (doprecyzowania w trybie planu) for now work with the data from the geojson, later there will be more points in supabase and there will be a way to export a geojson in a box · also create at the end a simple way to verify if it works, can be an artifact or integrate into app, whichever easier · check the r2 branch if the database plan fits this plan
+
+**AI:** Szczepan wpisany jako R1. Sprawdziłem plan bazy R2 (`13-plan-bazy.md`, migracje): planer bierze miejsca w formacie RPC `places_in_bbox`, `places_near_line` nie jest potrzebne. Zrobiłem kontrakt trasy i mock (PR #2), a potem planer (PR #3): skrypt GTFS → `apps/api/data/transit-graph.json.gz`, eksport miejsc → `places.geojson` (mapper R2), beam search z dopasowaniem miejsc w pamięci, wybór miejsc do opowieści co 45 s, odjazdy z API miasta dla pierwszego odcinka (przy `WAW_TOKEN`), strona `/debug/planner`. 65 testów przechodzi, zapytanie trwa ok. 0,2 s. Zaktualizowałem `12-plan-mvp.md` §6–7, `todo.md` (T-13, T-16 zrobione, nowe T-17, T-18), `stan.md`.
