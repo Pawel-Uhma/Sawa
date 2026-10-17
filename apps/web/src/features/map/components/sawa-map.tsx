@@ -34,6 +34,7 @@ import {
   MAP_PALETTES,
   MIN_PLACE_RICHNESS,
   START_VIEW,
+  WARSAW_MAX_BOUNDS,
 } from "../lib/map-style";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
@@ -170,6 +171,7 @@ export function SawaMap({
       <MapLibreMap
         ref={mapRef}
         initialViewState={START_VIEW}
+        maxBounds={WARSAW_MAX_BOUNDS}
         mapStyle={BASEMAP_STYLE_URLS[theme]}
         interactiveLayerIds={INTERACTIVE_LAYERS}
         cursor={cursor}
