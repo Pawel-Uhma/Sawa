@@ -95,13 +95,13 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 
 - [x] **T-90** Railway nie wdraża `main` (stoi na `19c97a1`): sprawdzić auto-deploy i watch paths serwisu, wdrożyć `main`, potwierdzić `version` w `/health`; bez tego odtwarzacz na produkcji daje 404 — `R3` (Paweł, konto Railway) — (16:10, Jasiek: sprawdzone, `/health` pokazuje 01ed0e3)
 - [x] **T-91** Zmienne na Railway: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `OPENROUTER_KEY`, `ELEVENLABS_KEY`; sprawdzić w logach `api listening` i `planner places loaded` (`isFallback: false`) — `R3` (Paweł) — (16:10, Jasiek: sprawdzone z zewnątrz: `/v1/places` 1303 miejsc z bazy, `/v1/stories` z LLM, `/v1/speech` daje mp3)
-- [ ] **T-92** `POST /v1/speech` przyjmuje dowolny tekst bez limitu zapytań (każdy może zużyć kredyty ElevenLabs): web na `/v1/stories/audio`, a `/v1/speech` wyłączyć albo dodać rate limit — `R4`
-- [ ] **T-93** Odtwarzacz (`story-player.ts`) trzyma klipy po samym `stop.id`: po zmianie zainteresowań lub czasu gra starą opowieść o złej długości; klucz z zainteresowaniami i `targetSec` — `R3`
+- [x] **T-92** `POST /v1/speech` przyjmuje dowolny tekst bez limitu zapytań (każdy może zużyć kredyty ElevenLabs): web na `/v1/stories/audio`, a `/v1/speech` wyłączyć albo dodać rate limit — `R4` → `R2` (Jasiek, z polecenia użytkownika, 18:15: odtwarzacz bierze głos z `/v1/stories/audio`; `/v1/speech` tylko przy `DEBUG_PAGES=1`; `/v1/stories*` mają limit 300 zapytań na 10 min na IP, potem 429 `RATE_LIMITED`)
+- [x] **T-93** Odtwarzacz (`story-player.ts`) trzyma klipy po samym `stop.id`: po zmianie zainteresowań lub czasu gra starą opowieść o złej długości; klucz z zainteresowaniami i `targetSec` — `R3` → `R2` (Jasiek, z polecenia użytkownika, 18:15: klucz `clipKey` = punkt + `targetSec` + cały profil słuchacza, z testem)
 - [ ] **T-94** Cache opowieści i głosu jest w pamięci, restart Railway go czyści: przed pitchem rozgrzać trasę demo albo zapisać ją jako fixture (z T-18, T-36) — `R1` + `R3` — niedziela 08:00
 - [ ] **T-95** Pokazać zbiór z dane.um.warszawa.pl na scenie: dziś tylko „Otwarte boiska” (sport), transport idzie z GTFS mkuran.pl, `WAW_TOKEN` nieustawiony (T-17). Ścieżka demo musi go zawierać, pitch musi go nazwać — `R2` (z T-50) + `R1`
 - [x] **T-96** Dwie mapy (`features/demo/` Pawła na `/` i `features/map/` Antka na `/mapa`): zdecydować, która idzie na demo, drugą zamrozić — `R3` — (Paweł, 14:54: demo używa `SawaMap` Antka, stara mapa usunięta)
 - [ ] **T-97** Zdjęcia bez sprawdzonej licencji (T-22 zamknięte decyzją „pomijamy”): na demo i w decku tylko zdjęcia z licencją i autorem albo z podpisem źródła — `R2`
-- [ ] **T-98** Opowieść z produkcji ma cyfry („założone w 1867 roku”), a TTS czyta je źle (decyzja 13:55: LLM pisze liczby słownie): dopisać to do promptu albo zamieniać cyfry przed `/v1/speech` — `R4`
+- [x] **T-98** Opowieść z produkcji ma cyfry („założone w 1867 roku”), a TTS czyta je źle (decyzja 13:55: LLM pisze liczby słownie): dopisać to do promptu albo zamieniać cyfry przed `/v1/speech` — `R4` → `R2` (Jasiek, z polecenia użytkownika, 18:15: prompt mówił „Lata zapisujesz cyframi”, teraz liczby, lata i daty słownie; do sprawdzenia na produkcji, czy model słucha)
 
 ## Wszyscy · końcówka
 
