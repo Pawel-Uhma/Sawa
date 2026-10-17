@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* dark: idzie za wyborem motywu w aplikacji (<html data-theme>, features/theme), nie tylko za systemem */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /* Marka Sawy (docs/awatar/README.md): Głębia, Mięta, Koral */
 @theme inline {
   --color-glebia: var(--glebia);

@@ -18,7 +18,7 @@ export function SawaHead({ className = "" }: { className?: string }) {
         width={192}
         height={192}
         draggable={false}
-        className="size-full object-cover"
+        className="size-full object-cover dark:brightness-[0.82]"
       />
     </span>
   );
