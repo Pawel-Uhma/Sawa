@@ -9,6 +9,7 @@
     "transit": "node --import tsx transit/build-graph.ts",
     "export:places": "node --import tsx export-places-geojson.ts",
     "fetch:osm": "node --import tsx fetch-osm-places.ts",
+    "fetch:osm-historia": "node --import tsx fetch-osm-historia.ts",
     "fetch:boiska": "node --env-file-if-exists=../.env.local --import tsx fetch-otwarte-boiska.ts"
   },
   "dependencies": {
