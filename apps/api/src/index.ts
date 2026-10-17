@@ -3,13 +3,14 @@ import { createElevenLabsSynthesizer } from "./adapters/elevenlabs/speech-synthe
 import { createGoogleDestinationSearch } from "./adapters/google-places/destination-search";
 import { loadTransitData } from "./adapters/gtfs/load-transit";
 import { createOpenRouterProvider } from "./adapters/llm/openrouter";
-import { createOsrmWalkPathSource } from "./adapters/osrm/walk-paths";
+import { createOsrmWalkPathSource, firstWalkPath } from "./adapters/osrm/walk-paths";
 import { createFilePlacesRepository } from "./adapters/places-file/file-places-repository";
 import { createCachedPlacesRepository } from "./adapters/supabase/cached-places-repository";
 import {
   createSupabaseClient,
   createSupabasePlacesRepository,
 } from "./adapters/supabase/places-repository";
+import { createValhallaWalkPathSource } from "./adapters/valhalla/walk-paths";
 import { createWawDepartureSource } from "./adapters/waw/departures";
 import { createWawVehiclePositionSource } from "./adapters/waw/vehicle-positions";
 import { createApp } from "./app";
@@ -65,6 +66,14 @@ const vehicles = createVehicleTracker({
 });
 vehicles.start();
 
+// Walking paths: OSRM, then Valhalla when OSRM fails (both public, both block busy IPs).
+const walkPathSources = [
+  ...(env.WALK_ROUTER_URL ? [createOsrmWalkPathSource(env.WALK_ROUTER_URL, logger)] : []),
+  ...(env.WALK_ROUTER_FALLBACK_URL
+    ? [createValhallaWalkPathSource(env.WALK_ROUTER_FALLBACK_URL, logger)]
+    : []),
+];
+
 // The planner reads Supabase; the committed export is its fallback when Supabase fails.
 const placesFile = createFilePlacesRepository(new URL("../data/places.geojson", import.meta.url));
 const routePlanner = createRoutePlanner({
@@ -73,7 +82,7 @@ const routePlanner = createRoutePlanner({
   fallbackPlaces: placesRepository ? placesFile : undefined,
   departures: createWawDepartureSource(env.WAW_TOKEN, wawApi),
   live: env.WAW_TOKEN ? createTrackerBoardingSource(vehicles) : undefined,
-  walkPaths: env.WALK_ROUTER_URL ? createOsrmWalkPathSource(env.WALK_ROUTER_URL) : undefined,
+  walkPaths: walkPathSources.length > 0 ? firstWalkPath(walkPathSources) : undefined,
   logger,
 });
 
@@ -122,6 +131,7 @@ serve({ fetch: app.fetch, port: env.PORT }, ({ port }) => {
       port,
       departures: Boolean(env.WAW_TOKEN),
       walkPaths: env.WALK_ROUTER_URL ?? null,
+      walkPathsFallback: env.WALK_ROUTER_FALLBACK_URL ?? null,
       llm: llm?.model ?? null,
       research: Boolean(research),
       speech: Boolean(speech),
