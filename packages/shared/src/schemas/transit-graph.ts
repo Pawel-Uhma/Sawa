@@ -2,7 +2,7 @@ import { z } from "zod";
 
 /**
  * Compact tram + bus network for one service day, built from the Warsaw GTFS by
- * scripts/transit/build-graph.ts and read by the API (apps/api/data/transit-graph.json.gz).
+ * scripts/transit/build-graph.ts and read by the API (apps/api/data/transit/YYYY-MM-DD.json.gz).
  */
 export const TransitGraphSchema = z.object({
   version: z.literal(1),

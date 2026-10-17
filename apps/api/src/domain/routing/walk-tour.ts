@@ -25,6 +25,11 @@ export type WalkOptions = {
   maxBudgetShare: number;
   /** Cost of walking back along the way already walked, per budget share (see beam search). */
   backtrackPenalty: number;
+  /**
+   * Value of a loop's shape (`roundness`, 0–1): a walk that comes back around, not out and
+   * back along the same or a parallel street. Loops only.
+   */
+  loopRoundnessBonus: number;
 };
 
 export const DEFAULT_WALK_OPTIONS: WalkOptions = {
@@ -35,6 +40,7 @@ export const DEFAULT_WALK_OPTIONS: WalkOptions = {
   maxCandidates: 40,
   maxBudgetShare: 1.1,
   backtrackPenalty: 2,
+  loopRoundnessBonus: 2,
 };
 
 export type Walk = {
@@ -69,9 +75,9 @@ export function toSegment(p: LatLng, a: LatLng, b: LatLng): { distanceM: number;
 }
 
 /** A walk this close to a segment walked before goes along it again. */
-export const RETRACE_M = 30;
+const RETRACE_M = 30;
 /** Sample spacing along a new segment when checking it against the way so far. */
-export const RETRACE_STEP_M = 20;
+const RETRACE_STEP_M = 20;
 
 /**
  * Share (0–1) of the straight walk `from` → `to` that runs within `RETRACE_M` of the walk
@@ -94,6 +100,40 @@ export function retracedShare(waypoints: LatLng[], from: LatLng, to: LatLng): nu
     }
   }
   return near / samples;
+}
+
+/** An end this close to the origin makes the walk a loop. */
+export const LOOP_END_M = 50;
+
+/** Whether a walk from `origin` to `end` is a loop (it comes back to the start). */
+export function isLoop(origin: LatLng, end: LatLng | undefined): boolean {
+  return end !== undefined && haversineM(origin, end) <= LOOP_END_M;
+}
+
+/**
+ * How round the walk through `points` is, closed back to the first point: 4π·area / perimeter²
+ * (isoperimetric quotient), 1 for a circle, about 0.8 for a square, 0 for out and back along
+ * one line. A loop that comes back a street over (a "lollipop") encloses little and scores low,
+ * though no stretch of it is walked twice.
+ */
+export function roundness(points: LatLng[]): number {
+  const first = points[0];
+  if (!first || points.length < 3) return 0;
+  const kx = M_PER_DEG_LAT * Math.cos((first.lat * Math.PI) / 180);
+  const toXY = (p: LatLng) => ({
+    x: (p.lng - first.lng) * kx,
+    y: (p.lat - first.lat) * M_PER_DEG_LAT,
+  });
+  let twiceArea = 0;
+  let perimeterM = 0;
+  points.forEach((p, i) => {
+    const a = toXY(p);
+    const b = toXY(points[(i + 1) % points.length] as LatLng);
+    twiceArea += a.x * b.y - b.x * a.y;
+    perimeterM += Math.hypot(b.x - a.x, b.y - a.y);
+  });
+  if (perimeterM === 0) return 0;
+  return Math.min(1, (2 * Math.PI * Math.abs(twiceArea)) / perimeterM ** 2);
 }
 
 /** A turn back this close (degrees) to the way just walked goes back along the same street. */
@@ -229,20 +269,12 @@ export function walkThrough(
  * Returns null when not even the walk to the end fits.
  */
 export function planWalk(input: WalkInput, options: Partial<WalkOptions> = {}): Walk | null {
-  return planWalks(input, options, 1)[0] ?? null;
-}
-
-/**
- * The best `count` walks of `planWalk`, best first, each through a different set of places
- * (straight lines can miss a railway or a park; the caller compares them on real paths).
- */
-export function planWalks(input: WalkInput, options: Partial<WalkOptions> = {}, count = 1): Walk[] {
   const opts = { ...DEFAULT_WALK_OPTIONS, ...options };
   const maxSec = opts.maxBudgetShare * input.budgetSec;
   const secBetween = (a: LatLng, b: LatLng) =>
     (haversineM(a, b) * opts.detourFactor) / opts.walkSpeedMps;
   const toEnd = (p: LatLng) => (input.end ? secBetween(p, input.end) : 0);
-  if (toEnd(input.origin) > maxSec) return [];
+  if (toEnd(input.origin) > maxSec) return null;
 
   // Places that can be reached and still leave time to get to the end.
   const reachable = input.places.filter(
@@ -298,10 +330,13 @@ export function planWalks(input: WalkInput, options: Partial<WalkOptions> = {}, 
   }
 
   const finish = (s: State) => (input.end ? walkTo(s, input.end, "end") : s);
+  // A loop's shape counts as if it were already closed back to the origin.
+  const roundnessBonus = isLoop(input.origin, input.end) ? opts.loopRoundnessBonus : 0;
   const objective = (s: State) =>
     s.score -
     Math.abs(s.elapsedSec - input.budgetSec) / input.budgetSec -
-    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec;
+    (opts.backtrackPenalty * s.retracedSec) / input.budgetSec +
+    (roundnessBonus > 0 ? roundnessBonus * roundness(s.waypoints) : 0);
   const byObjective = (a: State, b: State) =>
     objective(b) - objective(a) || a.key.localeCompare(b.key);
 
@@ -336,20 +371,7 @@ export function planWalks(input: WalkInput, options: Partial<WalkOptions> = {}, 
     beam = open.sort(byObjective).slice(0, opts.beamWidth);
   }
 
-  const picked: Walk[] = [];
-  const stopSets = new Set<string>();
-  for (const state of done.sort(byObjective)) {
-    if (picked.length >= count) break;
-    const stops = state.key
-      .split("|")
-      .slice(1)
-      .filter((k) => k !== "end")
-      .sort()
-      .join("|");
-    if (stopSets.has(stops)) continue;
-    stopSets.add(stops);
-    const { waypoints, places, elapsedSec, score, lastPlaceId } = state;
-    picked.push({ waypoints, places, elapsedSec, score, ...(lastPlaceId ? { lastPlaceId } : {}) });
-  }
-  return picked;
+  const best = done.sort(byObjective)[0] as State;
+  const { waypoints, places, elapsedSec, score, lastPlaceId } = best;
+  return { waypoints, places, elapsedSec, score, ...(lastPlaceId ? { lastPlaceId } : {}) };
 }
