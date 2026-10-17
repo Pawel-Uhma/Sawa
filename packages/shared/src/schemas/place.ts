@@ -86,6 +86,18 @@ export const PlacePhotoSchema = z.object({
 });
 export type PlacePhoto = z.infer<typeof PlacePhotoSchema>;
 
+/**
+ * What stands at the place today (within 25 m), from Google Places downloaded on 15–16.10.2026.
+ * Never queried live. Show "Google Maps" as the source next to it.
+ */
+export const TodayNearbySchema = z.object({
+  name: z.string(),
+  type: z.string().nullable(),
+  googleMapsUrl: z.string(),
+  placeId: z.string(),
+});
+export type TodayNearby = z.infer<typeof TodayNearbySchema>;
+
 /** Response of `GET /v1/places/:id`: everything the story and a place card need. */
 export const PlaceSchema = z.object({
   id: z.string(),
@@ -112,5 +124,6 @@ export const PlaceSchema = z.object({
   confidence: z.enum(["high", "medium", "low"]).nullable(),
   locationPrecision: z.enum(["exact", "approx"]).nullable(),
   photos: z.array(PlacePhotoSchema),
+  todayNearby: z.array(TodayNearbySchema),
 });
 export type Place = z.infer<typeof PlaceSchema>;
