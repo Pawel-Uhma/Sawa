@@ -7,16 +7,23 @@ import { planFastest } from "../domain/routing/fastest";
 import { computePlaceHits } from "../domain/routing/place-hits";
 import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
 import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
+import { shiftRide } from "../domain/routing/shift-ride";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
 import { placesAlong, planWalk } from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
-import type { DepartureSource, PlacesRepository, TransitData } from "./ports";
+import type { DepartureSource, LiveBoardingSource, PlacesRepository, TransitData } from "./ports";
 
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
 /** Below this duration a walk may be planned instead of a ride. */
 const WALK_UNDER_MIN = 30;
+/** Live delays outside this range are ignored (likely the wrong vehicle or a stale position). */
+const MAX_LIVE_DELAY_SEC = 20 * 60;
+/** Smaller differences are noise of the position-based estimate. */
+const MIN_LIVE_DELAY_SEC = 30;
+const CITY_TRANSIT_CREDIT =
+  "Rozkład jazdy i pozycje pojazdów: Zarząd Transportu Miejskiego, dane.um.warszawa.pl (CC BY)";
 const CACHE_SIZE = 20;
 /** Places come from Supabase; refetched this often so new places reach routes without a restart. */
 const PLACES_TTL_MS = 10 * 60_000;
@@ -70,6 +77,8 @@ export function createRoutePlanner(deps: {
   /** Used when `places` fails or times out (apps/api/data/places.geojson). */
   fallbackPlaces?: PlacesSource;
   departures?: DepartureSource;
+  /** Live delay of the first vehicle to board, from ZTM positions. */
+  live?: LiveBoardingSource;
   logger?: PlannerLogger;
   /** Milliseconds; for the cache TTL. */
   clock?: () => number;
@@ -175,20 +184,67 @@ export function createRoutePlanner(deps: {
   }
 
   /** Puts each leg on a real departure from the ZTM timetable, when there is a source. */
-  async function withDepartures(ride: Ride, now: Date): Promise<Ride> {
+  /**
+   * Real times for the ride: each leg on a departure from the ZTM timetable, then the first
+   * vehicle's live delay from its position (the GTFS graph is a snapshot of one day with
+   * median times; only these two know about today and about traffic). The legs after it are
+   * put back on the timetable from the new arrival.
+   */
+  async function withTimes(ride: Ride, now: Date): Promise<Ride> {
     const source = deps.departures;
-    if (!source) return ride;
+    const transferSec = DEFAULT_SEARCH_OPTIONS.transferSec;
     // All legs at once; applyDepartures then picks the right one for each in order.
-    const perLeg = await Promise.all(
-      ride.legs.map(async (leg) => {
-        const pattern = network.patterns.get(leg.patternId);
-        const stop = pattern?.stops[leg.boardIndex];
-        if (!pattern || !stop) return undefined;
-        const times = await source.departures(stop.stopId, pattern.line, now);
-        return times?.map((d) => (d.getTime() - now.getTime()) / 1000);
-      }),
-    );
-    return applyDepartures(ride, perLeg, DEFAULT_SEARCH_OPTIONS.transferSec);
+    const perLeg = source
+      ? await Promise.all(
+          ride.legs.map(async (leg) => {
+            const pattern = network.patterns.get(leg.patternId);
+            const stop = pattern?.stops[leg.boardIndex];
+            if (!pattern || !stop) return undefined;
+            const times = await source.departures(stop.stopId, pattern.line, now);
+            return times?.map((d) => (d.getTime() - now.getTime()) / 1000);
+          }),
+        )
+      : [];
+    const timed = applyDepartures(ride, perLeg, transferSec);
+
+    const delaySec = await liveDelaySec(timed, now);
+    if (delaySec === undefined) return timed;
+    const shifted = shiftRide(timed, delaySec, 0);
+    const late: Ride = {
+      ...shifted,
+      legs: shifted.legs.map((l, i) => (i === 0 ? { ...l, delaySec } : l)),
+    };
+    // Leg 0 keeps its live time; the next legs take the first departure after the new arrival.
+    return applyDepartures(late, [undefined, ...perLeg.slice(1)], transferSec);
+  }
+
+  /** Seconds the first vehicle to board is late (negative: early), when it can still be caught. */
+  async function liveDelaySec(ride: Ride, now: Date): Promise<number | undefined> {
+    const first = ride.legs[0];
+    const pattern = first && network.patterns.get(first.patternId);
+    const from = pattern?.stops[first.boardIndex];
+    const to = pattern?.stops[first.alightIndex];
+    if (!deps.live || !first || !pattern || !from || !to) return undefined;
+    const boardAtMs = await deps.live.boardAtMs({
+      line: pattern.line,
+      fromStopId: from.stopId,
+      toStopId: to.stopId,
+      departAt: new Date(now.getTime() + first.boardElapsedSec * 1000).toISOString(),
+    });
+    if (boardAtMs === undefined) return undefined;
+    const boardSec = (boardAtMs - now.getTime()) / 1000;
+    const delaySec = Math.round(boardSec - first.boardElapsedSec);
+    // Gone before the rider gets there, or a guess too far off to trust: keep the timetable.
+    if (boardSec < ride.walkSec || Math.abs(delaySec) > MAX_LIVE_DELAY_SEC) return undefined;
+    return Math.abs(delaySec) < MIN_LIVE_DELAY_SEC ? undefined : delaySec;
+  }
+
+  /** Credits the city's open data when the route uses its timetable or live positions. */
+  function credited(route: Route): Route {
+    const usesCityData = route.legs.some((l) => l.realDeparture || l.delaySec !== undefined);
+    return usesCityData
+      ? { ...route, attribution: [...route.attribution, CITY_TRANSIT_CREDIT] }
+      : route;
   }
 
   return {
@@ -231,15 +287,17 @@ export function createRoutePlanner(deps: {
             destination,
           });
         }
-        const ride = await withDepartures(fastest.ride, now);
-        return buildRoute({
-          ...story,
-          ride,
-          network,
-          origin: request.origin,
-          end: destination,
-          walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
-        });
+        const ride = await withTimes(fastest.ride, now);
+        return credited(
+          buildRoute({
+            ...story,
+            ride,
+            network,
+            origin: request.origin,
+            end: destination,
+            walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
+          }),
+        );
       };
 
       // No duration with a destination: the fastest way there.
@@ -260,7 +318,7 @@ export function createRoutePlanner(deps: {
         destination: request.destination,
       });
 
-      const ride = planned && (await withDepartures(planned, now));
+      const ride = planned && (await withTimes(planned, now));
 
       // Short rides: walking to a stop and waiting can take the whole time, so a walk
       // past places competes with the ride (a ride counts only if it fits the time).
@@ -299,14 +357,16 @@ export function createRoutePlanner(deps: {
       const end = request.returnToStart
         ? ride.endsAtStart && request.origin
         : ride.endsAtDestination && request.destination;
-      return buildRoute({
-        ...story,
-        ride,
-        network,
-        origin: request.origin,
-        end: end || undefined,
-        walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
-      });
+      return credited(
+        buildRoute({
+          ...story,
+          ride,
+          network,
+          origin: request.origin,
+          end: end || undefined,
+          walkInPlaces: walkInPlacesOf(ride, request.origin, interests, prefs, placesById),
+        }),
+      );
     },
   };
 }

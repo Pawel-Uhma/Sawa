@@ -17,5 +17,9 @@ export type ApiError = z.infer<typeof ApiErrorSchema>;
 export const HealthSchema = z.object({
   ok: z.literal(true),
   version: z.string(),
+  /** Service day of the transit graph (GTFS snapshot), YYYY-MM-DD. */
+  transitDate: z.string().optional(),
+  /** False when the graph is for another day than today in Warsaw: rebuild it (T-18). */
+  transitIsToday: z.boolean().optional(),
 });
 export type Health = z.infer<typeof HealthSchema>;

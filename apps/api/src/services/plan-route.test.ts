@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
 import { createRoutePlanner } from "./plan-route";
-import type { DepartureSource } from "./ports";
+import type { DepartureSource, LiveBoardingSource } from "./ports";
 
 // Integration test on the committed data files (real Warsaw network and places).
 const transit = loadTransitData(new URL("../../data/transit-graph.json.gz", import.meta.url));
@@ -237,5 +237,42 @@ describe("route planner on real data", () => {
       NOW,
     );
     expect(route.legs.every((l) => l.realDeparture === undefined)).toBe(true);
+  });
+
+  describe("live delay of the first vehicle", () => {
+    const REQUEST = {
+      origin: HACKATHON_VENUE,
+      durationMin: 60,
+      interests: ["historical" as const],
+    };
+    /** The vehicle reaches the boarding stop `sec` after the planned departure. */
+    const late = (sec: number): LiveBoardingSource => ({
+      boardAtMs: async (leg) => Date.parse(leg.departAt) + sec * 1000,
+    });
+    const firstRide = (route: Route) => rideLegs(route)[0];
+
+    it("moves the ride by the delay and credits the city's data", async () => {
+      const onTime = await createRoutePlanner({ transit, places }).plan(REQUEST, NOW);
+      const delayed = await createRoutePlanner({ transit, places, live: late(240) }).plan(
+        REQUEST,
+        NOW,
+      );
+      expect(firstRide(delayed)?.delaySec).toBe(240);
+      const shiftMs =
+        Date.parse(firstRide(delayed)?.departAt ?? "") -
+        Date.parse(firstRide(onTime)?.departAt ?? "");
+      expect(shiftMs).toBe(240_000);
+      expect(delayed.attribution.some((a) => a.includes("dane.um.warszawa.pl"))).toBe(true);
+    });
+
+    it.each([
+      ["no live estimate", { boardAtMs: async () => undefined }],
+      ["a delay too large to trust", late(45 * 60)],
+      ["a difference within the noise", late(10)],
+      ["a vehicle gone before the rider gets there", late(-30 * 60)],
+    ] as const)("keeps the timetable for %s", async (_, live) => {
+      const route = await createRoutePlanner({ transit, places, live }).plan(REQUEST, NOW);
+      expect(firstRide(route)?.delaySec).toBeUndefined();
+    });
   });
 });

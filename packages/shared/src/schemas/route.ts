@@ -76,6 +76,11 @@ export const LegSchema = z.object({
    * Missing: estimated as half the headway (no token, API down or no data for the stop).
    */
   realDeparture: z.boolean().optional(),
+  /**
+   * Live: by its reported position, the vehicle to board is this many seconds late (negative:
+   * early); `departAt` and the legs after it already include it. Missing: no live estimate.
+   */
+  delaySec: z.number().int().optional(),
   durationMin: z.number().nonnegative(),
   /** Shape of the ride, [lng, lat] pairs for MapLibre. */
   lngLats: z.array(z.tuple([z.number(), z.number()])),

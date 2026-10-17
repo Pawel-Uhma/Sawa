@@ -1,4 +1,4 @@
-import type { LatLng } from "@sawa/shared";
+import type { LatLng, TrackLeg } from "@sawa/shared";
 import type { BBox, Place, PlaceAlongLine, PlaceSummary } from "../domain/place";
 import type { Network } from "../domain/routing/types";
 import type { SpeechAudio } from "../domain/speech";
@@ -19,6 +19,14 @@ export interface PlacesRepository {
 export interface DepartureSource {
   /** Departures of `line` from the platform on the Warsaw service day of `day`. */
   departures(stopId: string, line: string, day: Date): Promise<Date[] | undefined>;
+}
+
+/**
+ * Live estimate of when the vehicle for a leg reaches its boarding stop (from ZTM positions).
+ * Undefined when unknown: no token, stale positions, vehicle not found or too slow to answer.
+ */
+export interface LiveBoardingSource {
+  boardAtMs(leg: TrackLeg): Promise<number | undefined>;
 }
 
 /** Live tram and bus positions (ZTM, refreshed every 10 s). Throws AppError when ZTM fails. */

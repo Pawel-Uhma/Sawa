@@ -63,6 +63,8 @@ export type ChosenLeg = {
   alightElapsedSec: number;
   /** Boarding time comes from the ZTM timetable, not from the half-headway estimate. */
   realDeparture?: boolean;
+  /** Live delay of the vehicle to board (seconds, from its position), already in the times. */
+  delaySec?: number;
 };
 
 export type CollectedPlace = {
