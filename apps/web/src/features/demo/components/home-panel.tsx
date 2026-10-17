@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import type { Travel } from "@sawa/shared";
 import {
@@ -26,9 +26,9 @@ type HomePanelProps = {
   onDurationChange: (durationMin: number) => void;
   /** Najszybsza droga do celu (min), gdy wybrany jest cel. */
   fastestMin: number | null;
-  /** NajkrÃ³tszy dozwolony krok suwaka: krok najszybszej drogi do celu. */
+  /** Najkrótszy dozwolony krok suwaka: krok najszybszej drogi do celu. */
   minDurationMin: number | null;
-  /** Planer liczy jeszcze najszybszÄ… drogÄ™ do wybranego celu. */
+  /** Planer liczy jeszcze najszybszą drogę do wybranego celu. */
   isFindingFastest: boolean;
   travel: Travel;
   onTravelChange: (travel: Travel) => void;
@@ -43,17 +43,17 @@ type HomePanelProps = {
   onCollapsedChange: (collapsed: boolean) => void;
 };
 
-/** Podpisy pod suwakiem w miejscach ich wartoÅ›ci (suwak jest liniowy, wiÄ™c 1 h nie leÅ¼y w 1/4). */
+/** Podpisy pod suwakiem w miejscach ich wartości (suwak jest liniowy, więc 1 h nie leży w 1/4). */
 const SCALE = [5, 30, 60, 120, 180, 240];
 
-/** Åšrodek gaÅ‚ki suwaka (30 px) dla danej wartoÅ›ci: tor zaczyna siÄ™ i koÅ„czy pÃ³Å‚ gaÅ‚ki od krawÄ™dzi. */
+/** Środek gałki suwaka (30 px) dla danej wartości: tor zaczyna się i kończy pół gałki od krawędzi. */
 function thumbCenter(durationMin: number): string {
   return `calc(15px + (100% - 30px) * ${sliderPercent(durationMin) / 100})`;
 }
 
 const TRAVEL_OPTIONS: { type: Travel; label: string }[] = [
   { type: "walk", label: "Pieszo" },
-  { type: "transit", label: "KomunikacjÄ…" },
+  { type: "transit", label: "Komunikacją" },
 ];
 
 const END_OPTIONS: { type: RideEndType; label: string }[] = [
@@ -61,7 +61,7 @@ const END_OPTIONS: { type: RideEndType; label: string }[] = [
   { type: "destination", label: "Do celu" },
 ];
 
-/** Ekran gÅ‚Ã³wny A6: pÅ‚ywajÄ…ca karta nad paskiem zakÅ‚adek, Sawa wychyla siÄ™ zza karty i pyta w dymku. */
+/** Ekran główny A6: pływająca karta nad paskiem zakładek, Sawa wychyla się zza karty i pyta w dymku. */
 export function HomePanel({
   interests,
   durationMin,
@@ -85,7 +85,7 @@ export function HomePanel({
   const lastStep = useRef(durationMin);
   const minIndex = minDurationMin === null ? 0 : DURATION_STOPS_MIN.indexOf(minDurationMin);
   const isFastest = fastestMin !== null && durationMin === minDurationMin;
-  // Na najkrÃ³tszym kroku nagÅ‚Ã³wek pokazuje prawdziwy czas najszybszej drogi, nie zaokrÄ…glony krok
+  // Na najkrótszym kroku nagłówek pokazuje prawdziwy czas najszybszej drogi, nie zaokrąglony krok
   const shownMin =
     isFastest && fastestMin !== null ? Math.max(1, Math.round(fastestMin)) : durationMin;
 
@@ -94,7 +94,7 @@ export function HomePanel({
     .filter(Boolean)
     .join(", ");
 
-  // DotkniÄ™cie Sawy: krÃ³tkie, sprÄ™Å¼yste przechylenie (reakcja, nie dekoracja)
+  // Dotknięcie Sawy: krótkie, sprężyste przechylenie (reakcja, nie dekoracja)
   function poke() {
     haptic(6);
     sawa.start({
@@ -115,7 +115,7 @@ export function HomePanel({
     >
       <Grabber />
       <div className="flex items-baseline justify-between">
-        <span className="etykieta">PrzejaÅ¼dÅ¼ka</span>
+        <span className="etykieta">Przejażdżka</span>
         <span className="relative h-[42px] overflow-hidden">
           <AnimatePresence mode="popLayout" initial={false}>
             <motion.strong
@@ -133,12 +133,12 @@ export function HomePanel({
       </div>
 
       {isFindingFastest ? (
-        <p className="-mt-1 text-[13px] text-tekst-2">Szukam najszybszej drogi do celuâ€¦</p>
+        <p className="-mt-1 text-[13px] text-tekst-2">Szukam najszybszej drogi do celu…</p>
       ) : (
         fastestMin !== null && (
           <p className="-mt-1 text-[13px] text-tekst-2">
             {isFastest
-              ? "Najszybsza droga do celu. PrzesuÅ„, Å¼eby pojechaÄ‡ dÅ‚uÅ¼ej i krajoznawczo."
+              ? "Najszybsza droga do celu. Przesuń, żeby pojechać dłużej i krajoznawczo."
               : `Krajoznawczo. Najszybciej dojedziesz w ${formatDuration(Math.round(fastestMin))}.`}
           </p>
         )
@@ -148,14 +148,14 @@ export function HomePanel({
         <input
           type="range"
           className="suwak mt-2"
-          aria-label="Czas przejaÅ¼dÅ¼ki"
+          aria-label="Czas przejażdżki"
           aria-valuetext={formatDuration(durationMin)}
           min={0}
           max={DURATION_STOPS_MIN.length - 1}
           step={1}
           value={DURATION_STOPS_MIN.indexOf(durationMin)}
           onChange={(event) => {
-            // KrÃ³cej niÅ¼ najszybsza droga do celu siÄ™ nie da: gaÅ‚ka zatrzymuje siÄ™ na jej kroku
+            // Krócej niż najszybsza droga do celu się nie da: gałka zatrzymuje się na jej kroku
             const value = DURATION_STOPS_MIN[Math.max(Number(event.target.value), minIndex)];
             if (value !== lastStep.current) haptic(4);
             lastStep.current = value;
@@ -164,7 +164,7 @@ export function HomePanel({
           style={{ "--postep": thumbCenter(durationMin) } as CSSProperties}
         />
         {minIndex > 0 && minDurationMin !== null && (
-          // Wyszarzony odcinek toru poniÅ¼ej najszybszej drogi
+          // Wyszarzony odcinek toru poniżej najszybszej drogi
           <span
             aria-hidden
             className="pointer-events-none absolute top-[21px] left-0 h-1.5 rounded-l-full bg-powierzchnia/60"
@@ -176,7 +176,7 @@ export function HomePanel({
         {SCALE.map((value, index) => (
           <span
             key={value}
-            // Skrajne podpisy przy krawÄ™dziach, Å¼eby nie wystawaÅ‚y poza kartÄ™.
+            // Skrajne podpisy przy krawędziach, żeby nie wystawały poza kartę.
             style={
               index === 0
                 ? { left: 0 }
@@ -211,12 +211,12 @@ export function HomePanel({
           onClick={onEditInterests}
           className="-mr-2 ml-auto shrink-0 rounded-full px-2 py-1.5 font-bold text-glebia transition-[opacity,background-color] hover:bg-mieta-jasna active:opacity-60"
         >
-          ZmieÅ„
+          Zmień
         </button>
       </div>
 
       <PrimaryButton onClick={onGenerate} disabled={planning} className="mt-4">
-        {planning ? "UkÅ‚adam trasÄ™â€¦" : "Wyznacz trasÄ™"}
+        {planning ? "Układam trasę…" : "Wyznacz trasę"}
         <ArrowRightIcon className="size-5" />
       </PrimaryButton>
       {planError && (
@@ -233,7 +233,7 @@ type TravelPickerProps = {
   onChange: (travel: Travel) => void;
 };
 
-/** Pieszo albo komunikacjÄ…: przeÅ‚Ä…cznik segmentowy jak koniec trasy. */
+/** Pieszo albo komunikacją: przełącznik segmentowy jak koniec trasy. */
 function TravelPicker({ travel, onChange }: TravelPickerProps) {
   return (
     <div
@@ -244,7 +244,7 @@ function TravelPicker({ travel, onChange }: TravelPickerProps) {
       {TRAVEL_OPTIONS.map((option) => {
         const isActive = option.type === travel;
         return (
-          // biome-ignore lint/a11y/useSemanticElements: segmentowy przeÅ‚Ä…cznik, nie lista radio
+          // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
           <button
             key={option.type}
             type="button"
@@ -280,7 +280,7 @@ type RideEndPickerProps = {
   onChange: (end: RideEnd) => void;
 };
 
-/** Koniec trasy: przeÅ‚Ä…cznik segmentowy, a przy â€žDo celuâ€ cele do stukniÄ™cia i podpowiedÅº o mapie. */
+/** Koniec trasy: przełącznik segmentowy, a przy „Do celu” cele do stuknięcia i podpowiedź o mapie. */
 function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) {
   const destination = rideEnd.type === "destination" ? rideEnd : null;
   const isCustom =
@@ -290,13 +290,13 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
     <div className="mt-4">
       <div
         role="radiogroup"
-        aria-label="Gdzie koÅ„czysz"
+        aria-label="Gdzie kończysz"
         className="flex rounded-[14px] bg-tekst/[0.06] p-[3px]"
       >
         {END_OPTIONS.map((option) => {
           const isActive = option.type === rideEnd.type;
           return (
-            // biome-ignore lint/a11y/useSemanticElements: segmentowy przeÅ‚Ä…cznik, nie lista radio
+            // biome-ignore lint/a11y/useSemanticElements: segmentowy przełącznik, nie lista radio
             <button
               key={option.type}
               type="button"
@@ -362,9 +362,7 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
                 );
               })}
             </div>
-            <p className="mt-1.5 text-xs text-tekst-3">
-              Albo stuknij w mapÄ™, Å¼eby wybraÄ‡ punkt.
-            </p>
+            <p className="mt-1.5 text-xs text-tekst-3">Albo stuknij w mapę, żeby wybrać punkt.</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -372,7 +370,7 @@ function RideEndPicker({ rideEnd, onTypeChange, onChange }: RideEndPickerProps) 
   );
 }
 
-/** Pole â€žDokÄ…d jedziesz?â€: miejsce z Google Places po nazwie, wynik od razu staje siÄ™ celem. */
+/** Pole „Dokąd jedziesz?”: miejsce z Google Places po nazwie, wynik od razu staje się celem. */
 function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
   const [text, setText] = useState("");
   const { results, isSearching, isError, hasQuery } = useDestinationSearch(text);
@@ -385,8 +383,8 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
           type="search"
           value={text}
           onChange={(event) => setText(event.target.value)}
-          placeholder="DokÄ…d jedziesz?"
-          aria-label="DokÄ…d jedziesz"
+          placeholder="Dokąd jedziesz?"
+          aria-label="Dokąd jedziesz"
           enterKeyHint="search"
           autoComplete="off"
           className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
@@ -413,10 +411,10 @@ function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
           {results.length === 0 && (
             <li className="px-3 py-2 text-[13px] text-tekst-3">
               {isSearching
-                ? "Szukamâ€¦"
+                ? "Szukam…"
                 : isError
-                  ? "Nie udaÅ‚o siÄ™ wyszukaÄ‡. Wybierz cel niÅ¼ej albo na mapie."
-                  : "Nie znalazÅ‚am takiego miejsca w Warszawie."}
+                  ? "Nie udało się wyszukać. Wybierz cel niżej albo na mapie."
+                  : "Nie znalazłam takiego miejsca w Warszawie."}
             </li>
           )}
         </ul>
@@ -431,7 +429,7 @@ type SawaAboveProps = {
   sawa: ReturnType<typeof useAnimationControls>;
 };
 
-/** Sawa i dymek nad kartÄ…. Przy zwijaniu karty znikajÄ… szybciej niÅ¼ karta jedzie w dÃ³Å‚. */
+/** Sawa i dymek nad kartą. Przy zwijaniu karty znikają szybciej niż karta jedzie w dół. */
 function SawaAbove({ progress, onPoke, sawa }: SawaAboveProps) {
   const opacity = useTransform(progress, [0, 0.5], [1, 0]);
   const scale = useTransform(progress, [0, 0.5], [1, 0.9]);
@@ -471,10 +469,10 @@ function SawaAbove({ progress, onPoke, sawa }: SawaAboveProps) {
         className="szklo absolute bottom-6 left-[130px] right-1 rounded-[20px_20px_20px_6px] px-4 py-3 md:left-[142px]"
       >
         <p className="text-[19px] font-extrabold leading-tight tracking-[-0.02em]">
-          Ile masz dziÅ› czasu?
+          Ile masz dziś czasu?
         </p>
         <p className="mt-0.5 text-[13px] leading-snug text-tekst-2">
-          UÅ‚oÅ¼Ä™ przejazd i opowiem, co mijasz za oknem.
+          Ułożę przejazd i opowiem, co mijasz za oknem.
         </p>
       </motion.div>
     </motion.div>
