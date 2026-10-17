@@ -1,0 +1,659 @@
+[
+  {
+    "id": "kamienica-juliana-glassa",
+    "nazwa": "Kamienica Juliana Glassa",
+    "name_en": "Julian Glass tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Lwowska 7",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1936–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wybudowana w latach 1936–1937 dla pracowników Banku Polskiego.",
+      "Architektami byli stali współpracownicy Roman Sigalin i Jerzy Gelbard.",
+      "Budynek w bardzo dobrym stanie przetrwał II wojnę światową.",
+      "Po wojnie mieszkał w niej profesor Jan Zachwatowicz, znany warszawski konserwator zabytków.",
+      "Dziś budynek należy do Politechniki Warszawskiej, a mieszkają w nim jej profesorowie."
+    ],
+    "ciekawostki": [
+      "W kamienicy mieszkało wielu znanych ludzi związanych z Politechniką Warszawską, m.in. Antoni Ponikowski, dwukrotny premier RP i trzykrotny rektor Politechniki Warszawskiej.",
+      "Według artykułu mieszkał tu podobno wysokiej rangi przedstawiciel Urzędu Bezpieczeństwa, pilnowany przez agenta, którego ślady fotela są widoczne na posadzce półpiętra."
+    ],
+    "summary_en": "A six-storey modernist tenement at ul. Lwowska 7, built in 1936–1937 for Bank Polski employees by Gelbard and Sigalin. It survived the war in good condition and is now owned by the Warsaw University of Technology.",
+    "ludzie": [
+      {"kto": "Roman Sigalin", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Jerzy Gelbard", "rola": "architekt budynku", "wiki": null},
+      {"kto": "Jan Zachwatowicz", "rola": "konserwator zabytków, mieszkaniec po wojnie", "wiki": null},
+      {"kto": "Antoni Ponikowski", "rola": "dwukrotny premier RP, mieszkaniec", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Juliana Glassa", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Juliana_Glassa"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Ciekawostka o agencie UB podana w artykule bez nazwiska."
+  },
+  {
+    "id": "kamienica-jozefa-rogozinskiego",
+    "nazwa": "Kamienica Józefa Rogozińskiego",
+    "name_en": "Józef Rogoziński tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 40",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1827–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1827 roku dla radcy kolegium Prokuratorii Jeneralnej Józefa Rogozińskiego według projektu Józefa Grzegorza Lessla.",
+      "W 1854 roku otwarto tu zakład piwa bawarskiego W. Brzezińskiego oraz zakład Józefa Ćwierlikowskiego, a potem działał ogródek z alkoholami „Walhalla”.",
+      "Od 1910 roku na terenie kamienicy mieścił się garaż na 40 pojazdów wraz z warsztatem.",
+      "W latach 30. XX wieku działało tu kino „Pan” na 850 miejsc.",
+      "Kamienica spłonęła w 1944 roku, jednak przetrwała w murach; odbudowano ją w 1949 roku według projektu Teodora Burszego."
+    ],
+    "ciekawostki": [
+      "Na szczycie budynku umieszczona jest data MDCCCXXVII (1827), najprawdopodobniej data budowy."
+    ],
+    "summary_en": "A classicist building at Nowy Świat 40, designed in 1827 by Józef Grzegorz Lessel for Józef Rogoziński. It burned in 1944, was rebuilt in 1949, and now houses the Sphinx restaurant.",
+    "ludzie": [
+      {"kto": "Józef Rogoziński", "rola": "radca kolegium Prokuratorii Jeneralnej, inwestor", "wiki": null},
+      {"kto": "Józef Grzegorz Lessel", "rola": "projektant kamienicy (1827)", "wiki": null},
+      {"kto": "Teodor Burszy", "rola": "projektant odbudowy w 1949 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Józefa Rogozińskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Józefa_Rogozińskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-kacperskich",
+    "nazwa": "Kamienica Kacperskich",
+    "name_en": "Kacperski tenement house (the Iron)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 1",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w latach 1909–1913 na bardzo wąskiej działce między Marszałkowską a Polną.",
+      "Przed I wojną światową była jedną z dwu najwyższych budowli w Warszawie, obok kamienicy na Mariensztacie przy ul. Nowy Zjazd 7.",
+      "Budynek potocznie nazwano „żelazkiem” ze względu na trapezowy kształt; budził porównania do nowojorskiego Flatiron Building.",
+      "W dniu otwarcia były w niej trzy kryształowe windy, centralne ogrzewanie i centralne odkurzacze.",
+      "Krótko przed II wojną światową Stanisław i Kazimiera Kacperscy sprzedali kamienicę za 1,3 miliona złotych Państwowemu Zakładowi Emerytalnemu.",
+      "Podczas wojny mieściła się tu Komórka Biura Studiów Oddziału II Informacyjno-Wywiadowczego Armii Krajowej.",
+      "W 1970 roku podwórko zostało zabudowane na wysokości drugiego piętra podłogą z luksferów."
+    ],
+    "ciekawostki": [
+      "Kamienica ma najmniejsze w Warszawie podwórko-studnię, o wymiarach 2 na 8 na 4 metry."
+    ],
+    "summary_en": "A nine-storey wedge-shaped tenement at Marszałkowska 1, corner of Polna and plac Unii Lubelskiej, built in 1909–1913. Nicknamed the 'Iron', it had the smallest courtyard-well in Warsaw and was one of the city's tallest buildings before WWI.",
+    "ludzie": [
+      {"kto": "Stanisław Kacperski", "rola": "właściciel, z żoną Kazimierą dał nazwę budynkowi", "wiki": null},
+      {"kto": "Kazimiera Kacperska", "rola": "właścicielka, z mężem Stanisławem", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Kacperskich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Kacperskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-kazimierza-spinka",
+    "nazwa": "Kamienica Kazimierza Spinka",
+    "name_en": "Kazimierz Spinek tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Wojciecha Górskiego 3",
+    "adres_historyczny": "ul. Hortensja (dziś Górskiego)",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1909–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w latach 1909–1912 według projektu Józefa Napoleona Czerwińskiego.",
+      "Została zbudowana jako sześciopiętrowa i dwupodwórzowa, a oficyny były siedmiopiętrowe.",
+      "Kamienica została uszkodzona podczas II wojny światowej; budynek frontowy odbudowano z bardzo znacznym uproszczeniem fasady i obniżono o mansardę do pięciu pięter.",
+      "Wszystkie oficyny zachowano bez zmian; dziś w pełnej wysokości skupiają się wokół dwóch podwórek."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A six-storey tenement built in 1909–1912 to a design by Józef Napoleon Czerwiński. The street front was simplified after the war, but the courtyard wings survive largely intact.",
+    "ludzie": [
+      {"kto": "Józef Napoleon Czerwiński", "rola": "projektant kamienicy", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Hortensja"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Kazimierza Spinka", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Kazimierza_Spinka"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-kestnerow",
+    "nazwa": "Kamienica Kestnerów",
+    "name_en": "Kestner tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Krakowskie Przedmieście 27",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1836–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Obecny budynek wzniesiono w latach 1836–1840 według projektu Józefa Lessela.",
+      "Kamienica została zbudowana na zlecenie rękawicznika Kestnera.",
+      "W XIX wieku działała tu cukiernia Laurentego Tosiego, która organizowała wystawy i koncerty.",
+      "W 1944 roku budynek został spalony, a po wojnie rozebrany do poziomu fundamentów; odbudowano go w 1949 roku w formie nawiązującej do historycznego wyglądu.",
+      "Po wojnie mieściła się tu kawiarnia Telimena, wielokrotnie przywoływana w literaturze okresu PRL, m.in. w powieści „Zły” Leopolda Tyrmanda."
+    ],
+    "ciekawostki": [
+      "Dziś lokal jest jedną z warszawskich kawiarni sieci Green Caffè Nero."
+    ],
+    "summary_en": "A tenement at Krakowskie Przedmieście 27, built in 1836–1840 to a design by Józef Lessel. It burned in 1944 and was rebuilt in 1949; after the war it housed the Telimena café, later a Green Caffè Nero.",
+    "ludzie": [
+      {"kto": "Józef Lessel", "rola": "projektant kamienicy (1836–1840)", "wiki": null},
+      {"kto": "Kestner", "rola": "rękawicznik, zleceniodawca kamienicy", "wiki": null},
+      {"kto": "Laurenty Tosi", "rola": "prowadził cukiernię w XIX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Kestnerów", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Kestnerów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-lipinskich",
+    "nazwa": "Kamienica Lipińskich",
+    "name_en": "Lipiński tenement house (Bednarska 14)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Bednarska 14",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1830–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1830 roku według projektu Antonia Corazziego dla Tadeusza i Teodory Lipińskich.",
+      "Pierwotnie była jednopiętrowym, neoklasycystycznym, narożnym budynkiem; została zniszczona w czasie II wojny światowej.",
+      "Ruiny rozebrano w 1948 roku, a odbudowano w latach 1949–1951 z dodatkowym piętrem i dachem łamanym.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków.",
+      "Gruntowny remont w latach 2000–2009 odtworzył dawny wystrój, w tym półokrągłe zwieńczenia okien parteru."
+    ],
+    "ciekawostki": [
+      "Data 1830 na fasadzie została przeniesiona ze zlikwidowanej attyki; wcześniej widniała niepoprawna data 1831."
+    ],
+    "summary_en": "A neoclassical corner tenement at Bednarska 14 on Powiśle, built in 1830 by Antonio Corazzi for the Lipiński family. Destroyed in the war, it was rebuilt in 1949–1951 and listed as a monument in 1965.",
+    "ludzie": [
+      {"kto": "Antonio Corazzi", "rola": "projektant kamienicy (1830)", "wiki": null},
+      {"kto": "Tadeusz Lipiński", "rola": "zleceniodawca kamienicy", "wiki": null},
+      {"kto": "Teodora Lipińska", "rola": "zleceniodawczyni kamienicy", "wiki": null},
+      {"kto": "Jarosław Zieliński", "rola": "varsavianista, duży udział w renowacji", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Lipińskich", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Lipińskich"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (na rogu ul. Sowiej)."
+  },
+  {
+    "id": "kamienica-lothego",
+    "nazwa": "Kamienica Pinkusa Lothego",
+    "name_en": "Pinkus Lothe tenement house (Żywiec restaurant; demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Jerozolimskie 34/36",
+    "adres_historyczny": "Marszałkowska 100",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1865–1944",
+    "istnieje": false,
+    "fakty": [
+      "Kamienicę wzniesiono w latach 1865–1866 dla Pinkusa Jakuba Lothego, przedsiębiorcy, który otrzymał teren jako rekompensatę za straty przy budowie mostów dla kolei warszawsko-wiedeńskiej.",
+      "Mieściła się w niej m.in. restauracja Żywiec, udekorowana freskiem Bolesława Cybisa i Stanisława Łuckiewicza przedstawiającym zwycięstwo polskiej floty w bitwie pod Oliwą.",
+      "Kamienica była czterokondygnacyjna, o fasadzie wzorowanej na paryskim Luwrze; w okresie międzywojennym na szczycie umieszczono reklamę piwa Żywiec.",
+      "Kamienica została całkowicie zniszczona w 1944 roku, broniona przez batalion Iwo, i nie została odbudowana."
+    ],
+    "ciekawostki": [
+      "Po wojnie w odbudowanym przyziemiu mieścił się przedwojenny bar „Pod Setką”."
+    ],
+    "summary_en": "A four-storey Louvre-style building at the corner of Aleje Jerozolimskie and Marszałkowska, built in 1865–1866 for Pinkus Lothe. It was destroyed in 1944 and is now the site of plac Dmowskiego and the Rotunda.",
+    "ludzie": [
+      {"kto": "Pinkus Jakub Lothe", "rola": "przedsiębiorca, inwestor kamienicy", "wiki": null},
+      {"kto": "Bolesław Cybis", "rola": "autor fresku w restauracji Żywiec", "wiki": null},
+      {"kto": "Stanisław Łuckiewicz", "rola": "autor fresku w restauracji Żywiec", "wiki": null}
+    ],
+    "dawne_nazwy": ["Marszałkowska 100"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Lothego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Lothego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu (nr 34/36 przy Alejach Jerozolimskich). Kamienicy już nie ma."
+  },
+  {
+    "id": "kamienica-ludwika-malholme-a",
+    "nazwa": "Kamienica Ludwika Malholme'a",
+    "name_en": "Ludwik Malholme tenement house (demolished)",
+    "typ": "nieistniejacy-budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Królewska 6",
+    "adres_historyczny": "pl. Saski (ob. pl. Piłsudskiego) róg Królewskiej 6",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1851–1944",
+    "istnieje": false,
+    "fakty": [
+      "Kamienica powstała w latach 1851–1852 według projektu Alfonsa Kropiwnickiego jako dwupiętrowa z pięcioma środkowymi osiami wyróżnionymi pilastrami.",
+      "Na przełomie XIX i XX wieku została nadbudowana o jedno piętro.",
+      "Na początku XX wieku w parterze od strony pl. Saskiego mieścił się bank Adama Piędzickiego.",
+      "W 1939 roku w kamienicy działały m.in. magazyn jubilerski Teodora Szymańskiego oraz sklep „Sztuka Huculska”.",
+      "Kamienica została zniszczona podczas powstania warszawskiego, a jej ruiny rozebrano zaraz po wojnie."
+    ],
+    "ciekawostki": [
+      "W miejscu kamienicy jest dziś południowo-wschodni narożnik Ogrodu Saskiego; powraca pomysł jej odbudowy w ramach rekonstrukcji pałacu Saskiego."
+    ],
+    "summary_en": "A mid-19th-century tenement at Królewska 6, corner of plac Saski (now plac Piłsudskiego). Destroyed in the Warsaw Uprising, its ruins were cleared after the war; the site is now part of the Saxon Garden.",
+    "ludzie": [
+      {"kto": "Alfons Kropiwnicki", "rola": "projektant kamienicy (1851–1852)", "wiki": null},
+      {"kto": "Adam Piędzicki", "rola": "właściciel banku w parterze na początku XX wieku", "wiki": null}
+    ],
+    "dawne_nazwy": ["pl. Saski"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Ludwika Malholme'a", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Ludwika_Malholme'a"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Kamienicy już nie ma. Adres_dzis podano jako Królewska 6 (plac Piłsudskiego przy Ogrodzie Saskim)."
+  },
+  {
+    "id": "kamienica-ludwiki-trebickiej",
+    "nazwa": "Kamienica Ludwiki Trębickiej",
+    "name_en": "Ludwika Trębicka tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleje Ujazdowskie 18",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1900–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała około 1900 roku; jej projekt przypisywany jest Stefanowi Szyllerowi.",
+      "Przed wojną fasada była eklektyczna, z motywami sztuki renesansu; boczne trzypiętrowe wykusze z logiami podpierały po dwie hermy-atlanty.",
+      "Elewacja przetrwała wojnę, ale dawny wystrój został w większości usunięty w czasach stalinowskich.",
+      "W 2012 roku administrator zdemontował część balkonów; kilka miesięcy później swoje biuro poselskie przeniósł tu Donald Tusk.",
+      "W lutym 2013 roku budynek wpisano do rejestru zabytków."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A turn-of-the-century tenement at Aleje Ujazdowskie 18 on the Royal Route, attributed to Stefan Szyller. Its balconies and decoration were the subject of a dispute, and it was listed as a monument in February 2013.",
+    "ludzie": [
+      {"kto": "Stefan Szyller", "rola": "przypisywany projektant kamienicy", "wiki": null},
+      {"kto": "Donald Tusk", "rola": "przeniósł tu swoje biuro poselskie w 2012 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Ludwiki Trębickiej", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Ludwiki_Trębickiej"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-m-trachtenberga",
+    "nazwa": "Kamienica M. Trachtenberga",
+    "name_en": "M. Trachtenberg tenement house (Jana Pawła II 38)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Aleja Jana Pawła II 38",
+    "adres_historyczny": "Solna 16",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1913–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1913 roku przy ulicy Solnej, pod adresem Solna 16; była pięciopiętrowa, zwieńczona półkolistym szczytem.",
+      "Spalona w 1944 roku, została odrestaurowana zaraz po wojnie z obniżeniem o dwa piętra.",
+      "Jest jedyną pozostałością dawnej ulicy Solnej i jedynym przedwojennym budynkiem wzdłuż całej alei Jana Pawła II.",
+      "W latach 1985–1986 kamienicę przebudowano i wyremontowano, otrzymała nowy, mansardowy dach z wystawkami.",
+      "Kamienica Solna 16 od co najmniej 1854 do 1911 roku należała do rodziny Melechin."
+    ],
+    "ciekawostki": [
+      "Na fasadzie przez długi czas były cztery izolatory, pozostałość po dawnej trakcji tramwajowej w ulicy Solnej."
+    ],
+    "summary_en": "A tenement at Aleja Jana Pawła II 38, built in 1913 on former ul. Solna 16. It is the last pre-war building on the avenue and the only remnant of the old Solna street.",
+    "ludzie": [
+      {"kto": "Melechin", "rola": "rodzina właścicieli kamienicy Solna 16 (do 1911)", "wiki": null}
+    ],
+    "dawne_nazwy": ["ul. Solna 16"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica M. Trachtenberga", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_M._Trachtenberga"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje, że kamienica należy do dzielnicy Śródmieście."
+  },
+  {
+    "id": "kamienica-macieja-lyszkiewicza",
+    "nazwa": "Kamienica Macieja Łyszkiewicza",
+    "name_en": "Maciej Łyszkiewicz tenement house (Maria Skłodowska-Curie Museum)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Freta 16",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1790–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienicę wzniesiono w 1790 roku po scaleniu dwóch wcześniejszych kamienic przez Szymona Bogumiła Zuga z inicjatywy bankiera Macieja Łyszkiewicza.",
+      "W latach 1858–1874 kamienica należała do Wilhelma Gerlacha, założyciela warszawskiej fabryki sztućców.",
+      "7 listopada 1867 roku w tym domu urodziła się Maria Skłodowska-Curie, ponieważ jej rodzice prowadzili tu szkołę.",
+      "Podczas powstania warszawskiego budynek był siedzibą Armii Ludowej; został zbombardowany 26 sierpnia 1944 roku.",
+      "Dziś w kamienicy mieści się Muzeum Marii Skłodowskiej-Curie."
+    ],
+    "ciekawostki": [
+      "W kamienicy zachował się autentyczny przejazd bramny z XVIII wieku, dziś częściowo zabudowany."
+    ],
+    "summary_en": "An 18th-century tenement at Freta 16 in Nowe Miasto, where Maria Skłodowska-Curie was born on 7 November 1867. It was bombed in August 1944 and now houses the Maria Skłodowska-Curie Museum.",
+    "ludzie": [
+      {"kto": "Szymon Bogumił Zug", "rola": "projektant kamienicy (1790)", "wiki": null},
+      {"kto": "Maciej Łyszkiewicz", "rola": "warszawski bankier, inicjator budowy", "wiki": null},
+      {"kto": "Wilhelm Gerlach", "rola": "właściciel 1858–1874, założyciel fabryki sztućców", "wiki": null},
+      {"kto": "Maria Skłodowska-Curie", "rola": "urodzona w tym domu 7 listopada 1867 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Macieja Łyszkiewicza", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Macieja_Łyszkiewicza"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-mansjonaria",
+    "nazwa": "Kamienica Mansjonaria",
+    "name_en": "Mansjonaria tenement house (Kamienica nad Kanałem)",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Świętojańska 2",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1433–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała najpewniej w latach 1433–1478 na działce nadanej księżom mansjonarzom przez księżną Annę Holszańską, na kolegium przy kolegiackiej kaplicy NMP.",
+      "W tej kamienicy w 1524 roku zmarł przedostatni książę mazowiecki, Stanisław.",
+      "Około 1575 roku przebudowano ją w stylu renesansowym, najpierw przez murarza Antonio Vasconti, a następnie przez architekta Bernarda Morando.",
+      "W 1918 roku nowy właściciel, hrabia Władysław Kościelski, zlecił gruntowny remont w latach 1918–1920 według projektu Juliusza Nagórskiego.",
+      "Kamienica spłonęła w 1944 roku, ale mury zachowały się w dobrym stanie; odbudowano ją w latach 1950–1953 według projektu Władysława Jastrzębskiego.",
+      "W 1965 roku została wpisana do rejestru zabytków."
+    ],
+    "ciekawostki": [
+      "Numer hipoteczny tej kamienicy wynosi 2 i jest wyższy jedynie od Zamku Królewskiego (nr hip. 1).",
+      "Od strony Świętojańskiej znajduje się kamienny portal z datą 1688."
+    ],
+    "summary_en": "A Renaissance-rebuilt tenement at Świętojańska 2, corner of plac Zamkowy, begun as a canons' college house between 1433 and 1478. Burned in 1944, it was rebuilt in 1950–1953 and is listed as a monument.",
+    "ludzie": [
+      {"kto": "Anna Holszańska", "rola": "księżna, nadała działkę mansjonarzom", "wiki": null},
+      {"kto": "Antonio Vasconti", "rola": "murarz, przebudowa około 1575 roku", "wiki": null},
+      {"kto": "Bernardo Morando", "rola": "architekt, przebudowa około 1575 roku", "wiki": null},
+      {"kto": "Władysław Kościelski", "rola": "hrabia, księgarz i wydawca, zlecił remont 1918–1920", "wiki": null},
+      {"kto": "Juliusz Nagórski", "rola": "projektant remontu 1918–1920", "wiki": null},
+      {"kto": "Władysław Jastrzębski", "rola": "projektant odbudowy 1950–1953", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica nad Kanałem", "Kamienica Kościelskich"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Mansjonaria", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Mansjonaria"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje Stanisława jako przedostatniego księcia mazowieckiego; nazwisko zapisano jako w tekście."
+  },
+  {
+    "id": "kamienica-mierkowska",
+    "nazwa": "Kamienica Mierkowska",
+    "name_en": "Mierka tenement house, Piwna 5",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Piwna 5",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1540–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Do połowy XVI wieku w miejscu kamienicy stał dom drewniany; w 1540 roku zbudowano ścianę wspólną z kamienicą nr 7.",
+      "Nazwa pochodzi od Macieja Mierki, który zdecydował się wznieść tu murowaną kamienicę.",
+      "W latach 1743–1754 kamienica należała do aptekarskiej rodziny Fryzów i została przebudowana do czterech kondygnacji.",
+      "W 1944 roku kamienicę zniszczono do poziomu piwnic; po wojnie odbudowano ją w latach 1949–1952 według projektu Jana Grudzińskiego, o kondygnację niżej.",
+      "1 lipca 1965 roku kamienicę wpisano do rejestru zabytków pod numerem 389.",
+      "Potem wprowadził się tu malarz i poeta Władysław Popielarczyk, który mieszkał tu do śmierci w 1987 roku."
+    ],
+    "ciekawostki": [
+      "W czasie powstania warszawskiego w kamienicy przechowywano broń dla powstańców."
+    ],
+    "summary_en": "An Old Town tenement at Piwna 5 (house number 115 in the land register), whose name comes from Maciej Mierka, who built it in the 16th century. Destroyed in 1944, it was rebuilt in 1949–1952 and listed in 1965.",
+    "ludzie": [
+      {"kto": "Maciej Mierka", "rola": "zleceniodawca murowanej kamienicy w XVI wieku", "wiki": null},
+      {"kto": "Jan Grudziński", "rola": "projektant odbudowy 1949–1952", "wiki": null},
+      {"kto": "Władysław Popielarczyk", "rola": "malarz i poeta, mieszkaniec do śmierci w 1987 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Mierkowska", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Mierkowska"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje 'nr hip. 115'; kamienica ma obecnie trzy kondygnacje po odbudowie."
+  },
+  {
+    "id": "kamienica-nowy-swiat-3",
+    "nazwa": "Kamienica Nowy Świat 3",
+    "name_en": "Nowy Świat 3 tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Nowy Świat 3",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1931–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w latach 1931–1933 według projektu Jerzego Gelbarda i Romana Sigalina, w miejscu XVIII-wiecznej kamienicy Jakuba Usarzewskiego.",
+      "Była architektonicznym przykładem funkcjonalizmu.",
+      "W nowo wybudowanej kamienicy znalazł się popularny lokal „Paradis”.",
+      "Kamienica nie została zniszczona podczas II wojny światowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A functionalist tenement at Nowy Świat 3, built in 1931–1933 by Jerzy Gelbard and Roman Sigalin on the site of an 18th-century house. It was not destroyed in the Second World War.",
+    "ludzie": [
+      {"kto": "Jerzy Gelbard", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Roman Sigalin", "rola": "projektant kamienicy", "wiki": null},
+      {"kto": "Jakub Usarzewski", "rola": "właściciel XVIII-wiecznej kamienicy na tym miejscu", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Nowy Świat 3", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Nowy_Świat_3"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-opelewskiego",
+    "nazwa": "Kamienica Opelewskiego",
+    "name_en": "Opelewski tenement house, Freta 13",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Freta 13",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1772–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica została wybudowana około 1772 roku, prawdopodobnie w miejscu wcześniejszej kamienicy z połowy XVII wieku.",
+      "Wraz z sąsiednią kamienicą Franciszka Salwatora tworzy jedną posesję nr 13/15 i jest dziś jedyną przy Freta jednopiętrową kamienicą.",
+      "Została zniszczona w 1944 roku, ale zachowała autentyczne mury.",
+      "Podczas powojennej renowacji usunięto XVIII-wieczne rzeźby Chrystusa Zbawiciela i św. Jana Chrzciciela, a w ich miejsce ustawiono figury Hutnika i Rybaka."
+    ],
+    "ciekawostki": [
+      "Dziś puste nisze po usuniętych rzeźbach znów stoją puste."
+    ],
+    "summary_en": "A one-storey 18th-century building at Freta 13 in Nowe Miasto, damaged in 1944 but built on surviving walls. Its original niche sculptures were replaced after the war and the niches now stand empty.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Opelewskiego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Opelewskiego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-oppenheimow-i-regirerow",
+    "nazwa": "Kamienica Oppenheimów i Regirerów",
+    "name_en": "Oppenheim and Regirer tenement house, Noakowskiego 16",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Noakowskiego 16",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1910–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1910 lub 1913 roku jako siedmiokondygnacyjny budynek modernistyczny z elementami secesji, na polecenie Arona Oppenheima.",
+      "Aron Oppenheim był jednym z inicjatorów parcelacji działek w tej części ulicy Polnej, dokonanej w 1905 roku.",
+      "28 marca 1940 roku w tej kamienicy Gestapo aresztowało Janusza Kusocińskiego, polskiego złotego medalistę olimpijskiego w biegu na 10 km z Los Angeles.",
+      "Podczas II wojny światowej budynek nie odniósł większych uszkodzeń.",
+      "Kamienica została wpisana do rejestru zabytków; MWKZ poinformował o tym 20 lutego 2015 roku."
+    ],
+    "ciekawostki": [
+      "Dawniej w podwórku znajdowała się kapliczka, zdemontowana przez właściciela, firmę Felix Capital, podczas remontu."
+    ],
+    "summary_en": "A seven-storey modernist building at ul. Noakowskiego 16, built in 1910 or 1913 for Aron Oppenheim. The Gestapo arrested Olympic athlete Janusz Kusociński here in 1940, and the building was listed in 2015.",
+    "ludzie": [
+      {"kto": "Aron Oppenheim", "rola": "zleceniodawca kamienicy, inicjator parcelacji 1905", "wiki": null},
+      {"kto": "Janusz Kusociński", "rola": "olimpijczyk, działacz ruchu oporu, aresztowany w tym budynku w 1940 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Oppenheimów i Regirerów", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Oppenheimów_i_Regirerów"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu. Artykuł podaje datę wpisu do rejestru zabytków (20 lutego 2015) i jednocześnie zaznacza, że budynek nie jest wpisany; zapisano datę z końca tekstu."
+  },
+  {
+    "id": "kamienica-piotra-hawermana",
+    "nazwa": "Kamienica Piotra Hawermana",
+    "name_en": "Piotr Hawerman tenement house, Freta 27",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Freta 27",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1772–1952",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica powstała w 1772 roku dla prezydenta Nowej Warszawy, Piotra Hawermana, i liczyła wówczas dwa piętra.",
+      "W latach 1910–1914 właściciel Stanisław Drzewiecki nadbudował cztery piętra, osiągając siedem kondygnacji.",
+      "Po 1944 roku zachowały się jedynie mury magistralne w pełnej wysokości.",
+      "W 1946 roku kamienicę rozebrano; w 1952 roku zrekonstruowano ją, odbudowując jedynie parter i dwa piętra."
+    ],
+    "ciekawostki": [],
+    "summary_en": "An 18th-century building at Freta 27 in Nowe Miasto, built in 1772 for Piotr Hawerman. It was raised to seven storeys in 1910–1914, was demolished in 1946 and reconstructed in 1952 at a lower height.",
+    "ludzie": [
+      {"kto": "Piotr Hawerman", "rola": "prezydent Nowej Warszawy, zleceniodawca kamienicy (1772)", "wiki": null},
+      {"kto": "Stanisław Drzewiecki", "rola": "właściciel, nadbudował cztery piętra w 1910–1914", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Piotra Hawermana", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Piotra_Hawermana"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-pod-gryfami",
+    "nazwa": "Kamienica Pod Gryfami",
+    "name_en": "House under the Griffins, plac Trzech Krzyży 18",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "plac Trzech Krzyży 18",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1884–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budynek zaprojektował Józef Huss i wzniesiono go w latach 1884–1886 dla rodziny Fuchsów.",
+      "Narożniki zdobią kopuły na dachu, inspirowane Królikarnią, oraz rzeźby gryfów, wzorowane na nieistniejącym budynku Banku Rzeszy w Berlinie.",
+      "W 1918 roku w budynku otwarto Prywatną Średnią i Wyższą Szkołę żeńską prowadzoną przez Annę Jakubowską.",
+      "W 1944 roku kamienica uległa pożarowi i została częściowo zniszczona; odbudowano ją w latach 50. XX wieku bez kopuł na trzech rogach.",
+      "W 1955 roku mieściło się tu Węgierskie Centrum Kultury, znane jako Instytut Liszta.",
+      "W 1965 roku kamienicę wpisano do rejestru zabytków.",
+      "Kamienicę wyremontowano w latach 2005–2006, przywracając kopuły, dekorację i rzeźby gryfów."
+    ],
+    "ciekawostki": [
+      "W 1983 roku Annę Jakubowską upamiętniono tablicą odsłoniętą na fasadzie kamienicy."
+    ],
+    "summary_en": "A listed building at plac Trzech Krzyży 18, designed by Józef Huss in 1884–1886 for the Fuchs family. Its corner domes and griffin sculptures were restored in 2005–2006.",
+    "ludzie": [
+      {"kto": "Józef Huss", "rola": "projektant budynku", "wiki": null},
+      {"kto": "Anna Jakubowska", "rola": "prowadziła szkołę żeńską w budynku od 1918 roku", "wiki": null}
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Pod Gryfami", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Pod_Gryfami"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-poszepnego",
+    "nazwa": "Kamienica Poszepnego",
+    "name_en": "Poszepny tenement house, Marszałkowska 17",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Marszałkowska 17",
+    "adres_historyczny": null,
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1914–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Budowę kamienicy w miejscu fabryki maszyn Poszepnego rozpoczęto w 1914 roku, a ukończono po 1920 roku.",
+      "Projektant budynku jest nieznany.",
+      "W okresie międzywojennym w jednym z mieszkań żył Bolesław Leśmian.",
+      "Kamienica przetrwała II wojnę światową; po niej została podwyższona o jedno piętro, a częściowo zbito jej dekoracje.",
+      "W latach 50. XX wieku została wkomponowana w zabudowę Marszałkowskiej Dzielnicy Mieszkaniowej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A modernist tenement at Marszałkowska 17, begun in 1914 on the site of the Poszepny machine factory and finished after 1920. Poet Bolesław Leśmian lived there between the wars.",
+    "ludzie": [
+      {"kto": "Bolesław Leśmian", "rola": "poeta, mieszkaniec w okresie międzywojennym", "wiki": null}
+    ],
+    "dawne_nazwy": ["Kamienica Posępnego", "Kamienica Poszepnego (Pošepnego)"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Poszepnego", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Poszepnego"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  },
+  {
+    "id": "kamienica-poznanska-21",
+    "nazwa": "Kamienica Poznańska 21",
+    "name_en": "Poznańska 21 tenement house",
+    "typ": "budynek",
+    "dzielnica": "Śródmieście",
+    "adres_dzis": "Poznańska 21",
+    "adres_historyczny": "ul. Wielka",
+    "lat": null,
+    "lon": null,
+    "lokalizacja": "przyblizona",
+    "okres": "1879–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Kamienica wzniesiona w 1879 roku przy ówczesnej ulicy Wielkiej była pierwszym murowanym domem przy tej ulicy.",
+      "Dziś obiekt należy do miasta i nie nadaje się do zamieszkania ze względu na zły stan techniczny.",
+      "Pierwszy wniosek o wpisanie do rejestru zabytków złożył Zarząd Główny Towarzystwa Przyjaciół Warszawy 14 marca 1978 roku.",
+      "Kolejny wniosek wpłynął 27 lipca 2007 roku, jednak dom nadal nie ma statusu zabytku.",
+      "Trwa sprawa sądowa ze spadkobiercami budynku, zawieszona od dziesięciolecia."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A brick tenement built in 1879 at Poznańska 21, once Ulica Wielka. It is city-owned and in poor condition, and it is not yet a listed monument despite two applications.",
+    "ludzie": [],
+    "dawne_nazwy": ["ul. Wielka"],
+    "zrodla": [{"tytul": "Warszawikia: Kamienica Poznańska 21", "url": "https://warszawa.fandom.com/pl/wiki/Kamienica_Poznańska_21"}],
+    "pewnosc": "wysoka",
+    "uwagi": "Brak współrzędnych w nagłówku; adres z tekstu artykułu."
+  }
+]
