@@ -1,8 +1,9 @@
 import { ApiErrorSchema, HACKATHON_VENUE, RouteSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { createApp } from "../app";
+import { createFakeRoutePlanner } from "../services/fake-route-planner";
 
-const app = createApp({ corsOrigins: [] });
+const app = createApp({ corsOrigins: [], services: { routePlanner: createFakeRoutePlanner() } });
 
 const plan = (body: unknown) =>
   app.request("/v1/routes/plan", {
@@ -16,7 +17,7 @@ describe("POST /v1/routes/plan", () => {
     const res = await plan({
       origin: HACKATHON_VENUE,
       durationMin: 60,
-      interests: ["war_uprising"],
+      interests: ["historical"],
     });
     expect(res.status).toBe(200);
     const route = RouteSchema.parse(await res.json());
@@ -24,7 +25,7 @@ describe("POST /v1/routes/plan", () => {
   });
 
   it.each([
-    ["a too short ride", { origin: HACKATHON_VENUE, durationMin: 10, interests: ["war_uprising"] }],
+    ["a too short ride", { origin: HACKATHON_VENUE, durationMin: 10, interests: ["historical"] }],
     ["an unknown interest", { origin: HACKATHON_VENUE, durationMin: 60, interests: ["pizza"] }],
     ["no interests", { origin: HACKATHON_VENUE, durationMin: 60, interests: [] }],
   ])("rejects %s with a VALIDATION error", async (_, body) => {
