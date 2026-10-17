@@ -163,7 +163,7 @@ for (const w of WARIANTY) {
     <div class="naglowek"><h2><span>${w.id.toUpperCase()}</span>${w.tytul}</h2><p>${w.opis}</p></div>
     <div class="ramka">
       <div class="mapa"></div><div class="zoom">zoom 15</div>
-      <div class="lupa-podpis">zbliżenie · zoom 17</div>
+      <div class="lupa-podpis">zbliżenie · zoom 16,8</div>
       <div class="lupa"><div class="mapa"></div></div>
     </div>
     <div class="legenda"></div>`;
@@ -178,7 +178,7 @@ for (const w of WARIANTY) {
 
   const [duza, mala] = kol.querySelectorAll('.mapa');
   const opcje = { style: 'https://tiles.openfreemap.org/styles/positron', attributionControl: false, interactive: false, preserveDrawingBuffer: true, fadeDuration: 0 };
-  for (const [el, center, zoom] of [[duza, SRODEK, 15], [mala, [20.9772, 52.2357], 17.3]]) {
+  for (const [el, center, zoom] of [[duza, SRODEK, 15], [mala, [20.9871, 52.2400], 16.8]]) {
     const m = new maplibregl.Map({ ...opcje, container: el, center, zoom });
     window.MAPY = (window.MAPY || 0) + 1;
     m.on('load', async () => {
