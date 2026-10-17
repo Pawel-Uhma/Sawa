@@ -4,6 +4,7 @@
 
 ## Teraz
 
+- 16:10 (Paweł, z agentem R3): pogoda z górnego paska usunięta. Lewy górny róg: na telefonie głowa Sawy, na desktopie głowa + „sawa.”. Klik otwiera menu (`features/demo/components/sawa-menu.tsx`): arkusz od dołu na telefonie, popover spod logo na desktopie. W menu: zainteresowania, znajomość miasta, styl opowieści (wracają do kroku onboardingu), ostatnia przejażdżka, polecenie Sawy (share/schowek), źródła danych, „Zacznij od nowa”.
 - 16:00 (Paweł, z agentem R3): mapa rysuje każdą linię trasy innym kolorem (`LINE_COLORS` w `map-style.ts`, kolejne odcinki tej samej linii dzielą kolor), start i przesiadki to kółka w kolorze linii z jej numerem, a przejście między przystankami to kropkowana linia. Zamiast koloru wg `mode` (`LEG_MODE_COLORS` usunięte; Antek: do akceptacji, `features/map`). Suwak czasu: podpisy stoją w miejscach swoich wartości.
 - 15:54 (Paweł, z agentem R3): karta miejsca: wybrany wariant A (arkusz jak w Mapach Apple), B i C oraz przełącznik usunięte. Kod: `features/demo/components/place-card.tsx` (powłoka i części), `place-details.tsx` (treść), `place-card-host.tsx`.
 

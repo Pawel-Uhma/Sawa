@@ -20,6 +20,7 @@ import { OnboardingFlow, type OnboardingStep } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
 import { RidesPanel } from "./rides-panel";
 import { RouteSheet } from "./route-sheet";
+import { type ProfileStep, type SawaMenuActions, SawaMenuProvider } from "./sawa-menu";
 import { type Tab, TabBar } from "./tab-bar";
 import { TabPlaceholder } from "./tab-placeholder";
 import { TopBar } from "./top-bar";
@@ -110,8 +111,19 @@ export function DemoApp() {
     setStage("map");
   }, []);
 
-  const editInterests = useCallback(() => {
-    setOnboardingStep("interests");
+  const editProfile = useCallback((step: ProfileStep) => {
+    setOnboardingStep(step);
+    setStage("onboarding");
+  }, []);
+
+  const editInterests = useCallback(() => editProfile("interests"), [editProfile]);
+
+  const restart = useCallback(() => {
+    setProfile(EMPTY_PROFILE);
+    setRoute([]);
+    setPlanned(null);
+    setTab("map");
+    setOnboardingStep("welcome");
     setStage("onboarding");
   }, []);
 
@@ -165,130 +177,146 @@ export function DemoApp() {
   // Na mapie pusta lista znaczy „wszystkie miejsca”, więc bez zapasowej kategorii z planera.
   const mapInterests = useMemo(() => interestsOfTags(profile.interests), [profile.interests]);
 
+  const menu: SawaMenuActions = useMemo(
+    () => ({
+      profile,
+      onEditProfile: editProfile,
+      lastRouteStops: planned && route.length > 0 ? route.length : null,
+      onOpenLastRoute: () => {
+        setTab("map");
+        setStage("route");
+      },
+      onRestart: restart,
+    }),
+    [profile, editProfile, planned, route.length, restart],
+  );
+
   return (
     <MotionConfig reducedMotion="user">
-      <div className="fixed inset-0 overflow-hidden bg-mapa">
-        <div className="absolute inset-0">
-          <SawaMap
-            interests={mapInterests}
-            route={isRoute ? (planned ?? undefined) : undefined}
-            camera={camera}
-            padding={padding}
-            user={USER}
-            destination={isRoute || isHome ? destination?.point : undefined}
-            onMapClick={
-              isHome && destination
-                ? (point) =>
-                    changeRideEnd({ type: "destination", name: CUSTOM_DESTINATION_NAME, point })
-                : undefined
-            }
-            activeStopId={isRoute ? activeStop?.id : undefined}
-            onStopClick={(id) => {
-              const index = route.findIndex((stop) => stop.id === id);
-              if (index >= 0) setActiveIndex(index);
-            }}
-            // Ekrany mają własne karty nad mapą; wbudowana karta miejsca wjechałaby pod nie
-            hasPlaceSheet={false}
-          />
-        </div>
-
-        {/* Mgiełka pod paskiem statusu na telefonie */}
-        <div className="mgla pointer-events-none absolute inset-x-0 top-0 z-10 h-28 md:hidden" />
-
-        <AnimatePresence>
-          {stage !== "onboarding" && <TopBar key="top" hideLogoOnDesktop={isRoute} />}
-        </AnimatePresence>
-
-        <AnimatePresence>
-          {isHome && !isPlaceOpen && (
-            <HomePanel
-              key="home"
-              interests={profile.interests}
-              durationMin={durationMin}
-              onDurationChange={setDurationMin}
-              rideEnd={rideEnd}
-              onRideEndTypeChange={changeRideEndType}
-              onRideEndChange={changeRideEnd}
-              onEditInterests={editInterests}
-              collapsed={panelCollapsed}
-              onCollapsedChange={setPanelCollapsed}
-              onGenerate={generateRoute}
-              planning={planning}
-              planError={planError}
-            />
-          )}
-          {stage === "map" && tab === "rides" && (
-            <RidesPanel
-              key="rides"
-              interests={profile.interests}
-              durationMin={durationMin}
-              onDurationChange={setDurationMin}
-              lastRoute={route}
-              onOpenLastRoute={() => {
-                setTab("map");
-                setStage("route");
+      <SawaMenuProvider value={menu}>
+        <div className="fixed inset-0 overflow-hidden bg-mapa">
+          <div className="absolute inset-0">
+            <SawaMap
+              interests={mapInterests}
+              route={isRoute ? (planned ?? undefined) : undefined}
+              camera={camera}
+              padding={padding}
+              user={USER}
+              destination={isRoute || isHome ? destination?.point : undefined}
+              onMapClick={
+                isHome && destination
+                  ? (point) =>
+                      changeRideEnd({ type: "destination", name: CUSTOM_DESTINATION_NAME, point })
+                  : undefined
+              }
+              activeStopId={isRoute ? activeStop?.id : undefined}
+              onStopClick={(id) => {
+                const index = route.findIndex((stop) => stop.id === id);
+                if (index >= 0) setActiveIndex(index);
               }}
-              onStart={(preview) => {
-                setTab("map");
-                if (preview) showRoute(preview);
-                else generateRoute();
-              }}
+              // Ekrany mają własne karty nad mapą; wbudowana karta miejsca wjechałaby pod nie
+              hasPlaceSheet={false}
             />
-          )}
-          {stage === "map" && tab === "sawa" && (
-            <TabPlaceholder
-              key="sawa"
-              collapsed={panelCollapsed}
-              onCollapsedChange={setPanelCollapsed}
-            />
-          )}
-          {isRoute && (
-            <RouteSheet
-              key="route"
-              durationMin={durationMin}
-              end={planned ? routeEnd(planned, rideEnd) : null}
-              stops={route}
-              interests={storyInterests}
-              activeIndex={activeIndex}
-              onActiveChange={setActiveIndex}
-              onBack={() => setStage("map")}
-              isDesktop={isDesktop}
-              onCoverChange={setSheetCoverPx}
-            />
-          )}
-        </AnimatePresence>
+          </div>
 
-        {stage !== "onboarding" && (
-          <PlaceCardHost
-            isActive={isHome}
-            interests={storyInterests}
-            onSelectionChange={setSelectedPlace}
-            onCoverChange={setPlaceCoverPx}
-          />
-        )}
+          {/* Mgiełka pod paskiem statusu na telefonie */}
+          <div className="mgla pointer-events-none absolute inset-x-0 top-0 z-10 h-28 md:hidden" />
 
-        <AnimatePresence>
-          {stage === "map" && <TabBar key="tabs" active={tab} onChange={setTab} />}
-        </AnimatePresence>
+          <AnimatePresence>
+            {stage !== "onboarding" && <TopBar key="top" hideOnDesktop={isRoute} />}
+          </AnimatePresence>
 
-        {/* Onboarding to warstwa nad mapą. Po wyjściu mapa „wyjeżdża” spod spodu. */}
-        <AnimatePresence>
-          {stage === "onboarding" && (
-            <motion.div
-              key="onboarding"
-              className="fixed inset-0 z-40"
-              exit={{ opacity: 0, scale: 1.02 }}
-              transition={SPRING}
-            >
-              <OnboardingFlow
-                initialStep={onboardingStep}
-                initialProfile={profile}
-                onDone={finishOnboarding}
+          <AnimatePresence>
+            {isHome && !isPlaceOpen && (
+              <HomePanel
+                key="home"
+                interests={profile.interests}
+                durationMin={durationMin}
+                onDurationChange={setDurationMin}
+                rideEnd={rideEnd}
+                onRideEndTypeChange={changeRideEndType}
+                onRideEndChange={changeRideEnd}
+                onEditInterests={editInterests}
+                collapsed={panelCollapsed}
+                onCollapsedChange={setPanelCollapsed}
+                onGenerate={generateRoute}
+                planning={planning}
+                planError={planError}
               />
-            </motion.div>
+            )}
+            {stage === "map" && tab === "rides" && (
+              <RidesPanel
+                key="rides"
+                interests={profile.interests}
+                durationMin={durationMin}
+                onDurationChange={setDurationMin}
+                lastRoute={route}
+                onOpenLastRoute={() => {
+                  setTab("map");
+                  setStage("route");
+                }}
+                onStart={(preview) => {
+                  setTab("map");
+                  if (preview) showRoute(preview);
+                  else generateRoute();
+                }}
+              />
+            )}
+            {stage === "map" && tab === "sawa" && (
+              <TabPlaceholder
+                key="sawa"
+                collapsed={panelCollapsed}
+                onCollapsedChange={setPanelCollapsed}
+              />
+            )}
+            {isRoute && (
+              <RouteSheet
+                key="route"
+                durationMin={durationMin}
+                end={planned ? routeEnd(planned, rideEnd) : null}
+                stops={route}
+                interests={storyInterests}
+                activeIndex={activeIndex}
+                onActiveChange={setActiveIndex}
+                onBack={() => setStage("map")}
+                isDesktop={isDesktop}
+                onCoverChange={setSheetCoverPx}
+              />
+            )}
+          </AnimatePresence>
+
+          {stage !== "onboarding" && (
+            <PlaceCardHost
+              isActive={isHome}
+              interests={storyInterests}
+              onSelectionChange={setSelectedPlace}
+              onCoverChange={setPlaceCoverPx}
+            />
           )}
-        </AnimatePresence>
-      </div>
+
+          <AnimatePresence>
+            {stage === "map" && <TabBar key="tabs" active={tab} onChange={setTab} />}
+          </AnimatePresence>
+
+          {/* Onboarding to warstwa nad mapą. Po wyjściu mapa „wyjeżdża” spod spodu. */}
+          <AnimatePresence>
+            {stage === "onboarding" && (
+              <motion.div
+                key="onboarding"
+                className="fixed inset-0 z-40"
+                exit={{ opacity: 0, scale: 1.02 }}
+                transition={SPRING}
+              >
+                <OnboardingFlow
+                  initialStep={onboardingStep}
+                  initialProfile={profile}
+                  onDone={finishOnboarding}
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </SawaMenuProvider>
     </MotionConfig>
   );
 }

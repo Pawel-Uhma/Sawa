@@ -237,8 +237,6 @@ export function buildMockRoute(durationMin: number, interests: string[]): MockSt
   });
 }
 
-export const PLACEHOLDER_WEATHER = { tempC: 12, place: "Wola" } as const;
-
 // Zakładka Przejażdżki (makieta D). Grywalna jest tylko trasa po Woli, bo historia miejsc
 // obejmuje 1 km od 42 Warsaw. Pozostałe dwie to zapowiedzi: linie uproszczone z makiet (OSRM), bez punktów.
 export type RidePreview = {

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "zlota",
+    "nazwa": "Złota (osiedle)",
+    "name_en": "Złota housing estate",
+    "typ": "miejsce",
+    "dzielnica": "Wola",
+    "adres_dzis": "ul. Złota (osiedle Złota)",
+    "adres_historyczny": null,
+    "lat": 52.230278,
+    "lon": 20.996944,
+    "lokalizacja": "przyblizona",
+    "okres": "1959–dziś",
+    "istnieje": true,
+    "fakty": [
+      "Osiedle Złota zostało wybudowane w latach 1959–1963 według projektu Stanisława Bieńkuńskiego.",
+      "Powstało w miejscu prowizorycznych zabudowań i warsztatów, stanowiących część rejonu nazywanego „Dzikim Zachodem”.",
+      "Wcześniej w tym miejscu znajdowały się m.in. kamienice czynszowe, kilka małych fabryk, Państwowa Szkoła Techniczna i kino „Uciecha”.",
+      "Zabudowa bardzo ucierpiała w czasie powstania warszawskiego.",
+      "Złota była pierwszym powojennym osiedlem powstałym na terenie „Dzikiego Zachodu”.",
+      "Jej nazwa pochodzi od nazwy ulicy Złotej, która przebiega przez osiedle.",
+      "Realizację zleciła Nauczycielska Spółdzielnia Mieszkaniowa; wykonało ją Przedsiębiorstwo Budownictwa Mieszkaniowego „Centrum”.",
+      "Stanowi jedno z tzw. metalowych osiedli w Warszawie, obok pobliskich Miedzianej i Srebrnej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Złota is a housing estate in Wola, Warsaw, built in 1959–1963 to a design by Stanisław Bieńkuński. It was erected on the site of makeshift buildings in the so-called Wild West area, badly damaged during the Warsaw Uprising, and was the first postwar estate built there. It is one of the so-called metal estates in Warsaw, together with nearby Miedziana and Srebrna.",
+    "ludzie": [
+      {"kto": "Stanisław Bieńkuński", "rola": "projektant osiedla", "wiki": null}
+    ],
+    "dawne_nazwy": ["rejon nazywany „Dzikim Zachodem”"],
+    "zrodla": [
+      {"tytul": "Wikipedia: Złota (Warszawa)", "url": "https://pl.wikipedia.org/wiki/Z%C5%82ota_%28Warszawa%29"}
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Z paczki b05 (5 artykułów) pominięto 4: trzy szkoły i zbór religijny, jako instytucje."
+  }
+]

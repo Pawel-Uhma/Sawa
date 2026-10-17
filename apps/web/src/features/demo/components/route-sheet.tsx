@@ -9,7 +9,7 @@ import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { useStoryPlayer } from "../lib/story-player";
 import { ChevronLeftIcon, PinIcon, TramIcon } from "./icons";
-import { Logo } from "./logo";
+import { SawaMenuButton } from "./sawa-menu";
 import { StoryCard } from "./story-card";
 
 type RouteSheetProps = {
@@ -257,7 +257,11 @@ function SheetContent({
   return (
     <div className="flex flex-col gap-5">
       <header>
-        {isDesktop && <Logo className="mb-5 block text-[28px]" />}
+        {isDesktop && (
+          <div className="mb-4">
+            <SawaMenuButton variant="inline" />
+          </div>
+        )}
         <div className="flex items-start justify-between gap-3">
           <h2 className="pt-1 text-[22px] font-extrabold leading-tight tracking-[-0.02em] md:text-[26px]">
             Twoja przejażdżka
