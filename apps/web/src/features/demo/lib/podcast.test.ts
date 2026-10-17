@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { backTarget, formatClock, inMinutes } from "./podcast";
+import { backTarget, formatClock, inMinutes, splitName } from "./podcast";
 
 describe("formatClock", () => {
   it("formats minutes and padded seconds", () => {
@@ -36,5 +36,19 @@ describe("backTarget", () => {
 
   it("restarts the first story, there is nothing before it", () => {
     expect(backTarget(0, 0)).toBe(0);
+  });
+});
+
+describe("splitName", () => {
+  it("moves a trailing address in brackets to its own line", () => {
+    expect(splitName("Szpital Specjalistyczny św. Zofii (ul. Żelazna 90)")).toEqual({
+      title: "Szpital Specjalistyczny św. Zofii",
+      sub: "ul. Żelazna 90",
+    });
+  });
+
+  it("leaves names without brackets alone", () => {
+    expect(splitName("Ulica Smocza")).toEqual({ title: "Ulica Smocza", sub: null });
+    expect(splitName("(bez nazwy)")).toEqual({ title: "(bez nazwy)", sub: null });
   });
 });
