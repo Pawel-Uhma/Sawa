@@ -9,7 +9,7 @@ import type { MockStop } from "../lib/mock-data";
 import { formatClock, inMinutes, splitName } from "../lib/podcast";
 import { dueIndex, storyStartSec } from "../lib/ride-clock";
 import {
-  ChevronLeftIcon,
+  CloseIcon,
   PauseIcon,
   PlayIcon,
   SkipNextIcon,
@@ -151,20 +151,21 @@ export function PodcastHeader({ podcast, onLeave }: { podcast: Podcast; onLeave:
   return (
     <div className="flex flex-col">
       <div className="flex items-center gap-2.5">
-        <button
-          type="button"
-          onClick={onLeave}
-          aria-label={t("Zmień plan", "Change plan")}
-          className="-ml-2.5 flex size-9 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[transform,background-color] hover:bg-tlo-2 active:scale-[0.92]"
-        >
-          <ChevronLeftIcon className="size-[18px]" />
-        </button>
-        <p className="etykieta flex min-w-0 items-center gap-2" aria-live="polite">
+        <p className="etykieta flex min-w-0 flex-1 items-center gap-2" aria-live="polite">
           {buffering ? <Spinner className="size-3 text-koral" /> : <LiveDot on={isPlaying} />}
           <span className="truncate">
             {status} · {index + 1} {t("z", "of")} {stops.length}
           </span>
         </p>
+        {/* Krzyżyk anuluje trasę i wraca do planu, jak zamknięcie arkusza w Mapach */}
+        <button
+          type="button"
+          onClick={onLeave}
+          aria-label={t("Anuluj trasę", "Cancel route")}
+          className="-mr-1.5 flex size-9 shrink-0 items-center justify-center rounded-full bg-tlo-2 text-tekst-2 transition-[transform,background-color] hover:bg-tekst/10 active:scale-[0.92]"
+        >
+          <CloseIcon className="size-[18px]" />
+        </button>
       </div>
 
       <AnimatePresence mode="popLayout" initial={false}>
