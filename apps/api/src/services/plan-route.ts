@@ -159,7 +159,6 @@ export function createRoutePlanner(deps: {
       const budgetSec = request.durationMin * 60;
       const interests = new Set(request.interests);
       const prefs = {
-        tags: request.tags && new Set(request.tags),
         richnessExponent: request.familiarity && RICHNESS_EXPONENT[request.familiarity],
       };
       const storyGapSec = request.storyStyle && STORY_GAP_SEC[request.storyStyle];

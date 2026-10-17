@@ -1,4 +1,4 @@
-import { HACKATHON_VENUE, haversineM, type Route, RouteSchema } from "@sawa/shared";
+import { HACKATHON_VENUE, haversineM, INTERESTS, type Route, RouteSchema } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { loadTransitData } from "../adapters/gtfs/load-transit";
 import { createFilePlacesRepository } from "../adapters/places-file/file-places-repository";
@@ -67,17 +67,12 @@ describe("route planner on real data", () => {
     expect(Math.min(...gaps)).toBeGreaterThanOrEqual(89);
   });
 
-  it("narrates more places with a chosen tile than without it", async () => {
-    const all = await places.listInBBox({ minLng: 20, minLat: 52, maxLng: 22, maxLat: 53 });
-    const tagsOf = new Map(all.map((p) => [p.id, p.interests]));
-    const tagged = async (tags?: ["jewish_warsaw"]) => {
-      const route = await planner.plan(
-        { origin: HACKATHON_VENUE, durationMin: 60, interests: ["historical"], tags },
-        NOW,
-      );
-      return route.places.filter((p) => tagsOf.get(p.placeId)?.includes("jewish_warsaw")).length;
-    };
-    expect(await tagged(["jewish_warsaw"])).toBeGreaterThan(await tagged());
+  it.each(INTERESTS)("finds places for a single category: %s", async (interest) => {
+    const route = await planner.plan(
+      { origin: HACKATHON_VENUE, durationMin: 60, interests: [interest] },
+      NOW,
+    );
+    expect(route.places.length).toBeGreaterThan(0);
   });
 
   it.each([5, 10])("plans a %i-minute walk past places", async (durationMin) => {
