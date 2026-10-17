@@ -2445,3 +2445,160 @@
 > +> You:  Że nie, że skupiamy się stricte na tym, żeby was oprowadził, tak?
 > +> You:  No.
 
+
+**AI:** Paweł wybrał kierunek A. 5 wariacji A (A1 kropki historii, A2 dymek Sawy, A3 podgląd trasy, A4 Sawa na krawędzi, A5 pływająca karta): HTML w `docs/ui/propozycje/html/a1…a5`, wspólny szkielet `_a.css`, zrzuty i zestawienie w `docs/ui/propozycje/`, wpisy w `docs/ui/README.md`.
+
+### 2026-10-17 12:18 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md                                   | 2 ++
+>  docs/ui/README.md                                | 8 +++++++-
+>  docs/ui/propozycje/html/_mapa.js                 | 6 +++++-
+>  docs/ui/propozycje/html/_wspolne.css             | 4 ++++
+>  docs/ui/propozycje/html/a2-dymek-sawy.html       | 7 ++++---
+>  docs/ui/propozycje/html/a3-podglad-trasy.html    | 4 ++--
+>  docs/ui/propozycje/html/a4-sawa-na-krawedzi.html | 2 +-
+>  7 files changed, 25 insertions(+), 8 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index 6158c12..94500d7 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -2445,3 +2445,5 @@
+>  > +> You:  Że nie, że skupiamy się stricte na tym, żeby was oprowadził, tak?
+>  > +> You:  No.
+>  
+> +
+> +**AI:** Paweł wybrał kierunek A. 5 wariacji A (A1 kropki historii, A2 dymek Sawy, A3 podgląd trasy, A4 Sawa na krawędzi, A5 pływająca karta): HTML w `docs/ui/propozycje/html/a1…a5`, wspólny szkielet `_a.css`, zrzuty i zestawienie w `docs/ui/propozycje/`, wpisy w `docs/ui/README.md`.
+> diff --git a/docs/ui/README.md b/docs/ui/README.md
+> index d88fe19..7814e0f 100644
+> --- a/docs/ui/README.md
+> +++ b/docs/ui/README.md
+> @@ -21,7 +21,13 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
+>  
+>  | Plik | Co pokazuje | Zadanie | Decyzja |
+>  |---|---|---|---|
+> -| [1150-ekran-glowny-00-zestawienie.jpg](propozycje/1150-ekran-glowny-00-zestawienie.jpg) | 5 propozycji ekranu głównego obok siebie | ekran główny | czeka na wybór |
+> +| [1218-ekran-glowny-a-wariacje-00-zestawienie.jpg](propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg) | 5 wariacji A obok siebie | ekran główny | czeka na wybór |
+> +| [1218-…-a1-kropki-historii](propozycje/1218-ekran-glowny-a1-kropki-historii-mobile.png) | A1: A + 326 punktów historii na mapie, licznik i karta najbliższego miejsca (Kercelak, 120 m) | ekran główny | |
+> +| [1218-…-a2-dymek-sawy](propozycje/1218-ekran-glowny-a2-dymek-sawy-mobile.png) | A2: Sawa obok kropki lokalizacji mówi w dymku na mapie; niski arkusz z 5 przyciskami czasu zamiast suwaka | ekran główny | |
+> +| [1218-…-a3-podglad-trasy](propozycje/1218-ekran-glowny-a3-podglad-trasy-mobile.png) | A3: suwak od razu rysuje szkic trasy z numerami opowieści; podsumowanie (czas, linie, opowieści), „Jedziemy tą trasą” i losowanie innej | ekran główny | |
+> +| [1218-…-a4-sawa-na-krawedzi](propozycje/1218-ekran-glowny-a4-sawa-na-krawedzi-mobile.png) | A4: Sawa (obraz 32) wychyla się zza arkusza i pyta w dymku | ekran główny | |
+> +| [1218-…-a5-plywajaca-karta](propozycje/1218-ekran-glowny-a5-plywajaca-karta-mobile.png) | A5: oderwana szklana karta nad pływającym paskiem zakładek (Mapa, Przejażdżki, Sawa), więcej mapy | ekran główny | |
+> +| [1150-ekran-glowny-00-zestawienie.jpg](propozycje/1150-ekran-glowny-00-zestawienie.jpg) | 5 propozycji ekranu głównego obok siebie | ekran główny | Paweł wybrał A (17.10) |
+>  | [1150-…-a-arkusz-na-mapie](propozycje/1150-ekran-glowny-a-arkusz-na-mapie-mobile.png) | A: mapa na cały ekran, szklany arkusz z pytaniem Sawy, suwak 30 min–4 h+, tematy, „Wyznacz trasę”. Najbliżej Apple Maps, najbezpieczniejsza | ekran główny | |
+>  | [1150-…-b-zasieg-historii](propozycje/1150-ekran-glowny-b-zasieg-historii-mobile.png) | B: krąg zasięgu z 326 prawdziwymi punktami z `historia/`, linijka czasu przewijana palcem, statystyki trasy | ekran główny | |
+>  | [1150-…-c-rozmowa-z-sawa](propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png) | C: Sawa w całej postaci pyta w czacie, odpowiedzi jednym dotknięciem, mapa w dymku, mikrofon. Łączy ekran główny z zakładką czatu | ekran główny | |
+> diff --git a/docs/ui/propozycje/html/_mapa.js b/docs/ui/propozycje/html/_mapa.js
+> index 15208f4..1df4458 100644
+> --- a/docs/ui/propozycje/html/_mapa.js
+> +++ b/docs/ui/propozycje/html/_mapa.js
+> @@ -82,13 +82,17 @@ function sawaMapa(el, o = {}) {
+>        m.addLayer({ id: 'trasa-obw', type: 'line', source: 'trasa', layout: { 'line-join': 'round', 'line-cap': 'round' },
+>          paint: { 'line-color': o.noc ? '#0C2423' : '#fff', 'line-width': (o.gruboscTrasy || 5) + 4 } });
+>        m.addLayer({ id: 'trasa', type: 'line', source: 'trasa', layout: { 'line-join': 'round', 'line-cap': 'round' },
+> -        paint: { 'line-color': kolor, 'line-width': o.gruboscTrasy || 5 } });
+> +        paint: { 'line-color': kolor, 'line-width': o.gruboscTrasy || 5, ...(o.przerywana ? { 'line-dasharray': [1.2, 1.4] } : {}) } });
+>      }
+>    });
+>    if (o.ja !== false) {
+>      const d = document.createElement('div'); d.className = 'ja' + (o.noc ? ' noc' : '');
+>      new maplibregl.Marker({ element: d }).setLngLat(JA).addTo(m);
+>    }
+> +  for (const p of o.numery || []) {
+> +    const d = document.createElement('div'); d.className = 'nr'; d.textContent = p.nr;
+> +    new maplibregl.Marker({ element: d }).setLngLat(p.c).addTo(m);
+> +  }
+>    for (const p of o.pins || []) {
+>      const d = document.createElement('div'); d.className = 'pin'; d.innerHTML = p.prawo ? `${p.n}<b></b>` : `<b></b>${p.n}`;
+>      if (p.prawo) d.style.padding = '4px 4px 4px 10px';
+> diff --git a/docs/ui/propozycje/html/_wspolne.css b/docs/ui/propozycje/html/_wspolne.css
+> index 1fcda27..764eb39 100644
+> --- a/docs/ui/propozycje/html/_wspolne.css
+> +++ b/docs/ui/propozycje/html/_wspolne.css
+> @@ -106,3 +106,7 @@ body {
+>  .mgla { position: absolute; top: 0; left: 0; right: 0; height: 120px; z-index: 10; pointer-events: none;
+>    background: linear-gradient(rgba(238, 243, 240, .95) 30%, rgba(238, 243, 240, 0)); }
+>  .mgla.noc { background: linear-gradient(rgba(12, 36, 35, .95) 30%, rgba(12, 36, 35, 0)); }
+> +
+> +/* Numerowany punkt opowieści na trasie */
+> +.nr { width: 26px; height: 26px; border-radius: 50%; background: var(--koral); color: #fff; border: 2.5px solid #fff;
+> +  display: grid; place-items: center; font-size: 12px; font-weight: 800; box-shadow: 0 3px 8px rgba(16,43,42,.25); }
+> diff --git a/docs/ui/propozycje/html/a2-dymek-sawy.html b/docs/ui/propozycje/html/a2-dymek-sawy.html
+> index 21c1251..4247bb7 100644
+> --- a/docs/ui/propozycje/html/a2-dymek-sawy.html
+> +++ b/docs/ui/propozycje/html/a2-dymek-sawy.html
+> @@ -18,7 +18,7 @@
+>    .arkusz { top: 528px; }
+>    .arkusz h2 { font-size: 20px; font-weight: 800; letter-spacing: -.02em; }
+>    .presety { display: flex; gap: 8px; margin-top: 14px; }
+> -  .presety span { flex: 1; height: 54px; border-radius: 16px; background: var(--tlo-2); display: flex; flex-direction: column; align-items: center; justify-content: center;
+> +  .presety span { flex: 1; height: 48px; white-space: nowrap; font-size: 15px; border-radius: 16px; background: var(--tlo-2); display: flex; flex-direction: column; align-items: center; justify-content: center;
+>      font-weight: 800; font-size: 16px; letter-spacing: -.02em; }
+>    .presety span small { font-size: 11px; font-weight: 600; color: var(--tekst-3); letter-spacing: 0; }
+>    .presety span.on { background: var(--glebia); color: #fff; box-shadow: 0 6px 14px rgba(23,112,111,.28); }
+> @@ -47,9 +47,10 @@
+>      <div class="uchwyt"></div>
+>      <h2>Ile masz czasu?</h2>
+>      <div class="presety">
+> -      <span>30<small>min</small></span><span>1 h<small>&nbsp;</small></span><span class="on">1,5 h<small>9 opowieści</small></span><span>2 h<small>&nbsp;</small></span><span>4 h+<small>&nbsp;</small></span>
+> +      <span>30 min</span><span>1 h</span><span class="on">1,5 h</span><span>2 h</span><span>4 h+</span>
+>      </div>
+> -    <div class="tematy-linia">Tematy: <b>Powstanie ’44, Dawne kina, Bazary</b><em>Zmień</em></div>
+> +    <div class="tematy-linia" style="margin-top:12px;color:var(--glebia);font-weight:600">≈ 9 opowieści po drodze, 1 przesiadka</div>
+> +    <div class="tematy-linia" style="margin-top:8px">Tematy: <b>Powstanie ’44, Dawne kina, Bazary</b><em>Zmień</em></div>
+>      <div class="dol">
+>        <div class="przycisk">Wyznacz trasę <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+>      </div>
+> diff --git a/docs/ui/propozycje/html/a3-podglad-trasy.html b/docs/ui/propozycje/html/a3-podglad-trasy.html
+> index a16c6c0..00bcbb2 100644
+> --- a/docs/ui/propozycje/html/a3-podglad-trasy.html
+> +++ b/docs/ui/propozycje/html/a3-podglad-trasy.html
+> @@ -6,7 +6,7 @@
+>  <link href="_wspolne.css" rel="stylesheet"><link href="_a.css" rel="stylesheet">
+>  <script src="_dane.js"></script><script src="_mapa.js"></script>
+>  <style>
+> -  .pierwszy { position: absolute; left: 236px; top: 214px; z-index: 20; border-radius: 14px; padding: 7px 11px; font-size: 12.5px; line-height: 1.3; }
+> +  .pierwszy { position: absolute; right: 16px; top: 108px; z-index: 20; border-radius: 14px; padding: 7px 11px; font-size: 12.5px; line-height: 1.3; }
+>    .pierwszy strong { display: block; font-size: 13.5px; }
+>    .pierwszy span { color: var(--tekst-2); }
+>    .podsumowanie { display: flex; gap: 6px; margin-top: 16px; }
+> @@ -55,7 +55,7 @@
+>  </div>
+>  <script src="_ui.js"></script>
+>  <script>
+> -  sawaMapa('mapa', { zoom: 13.55, center: nad([20.9735, 52.2325], 168, 13.55), trasa: 'wola', przerywana: true, gruboscTrasy: 5,
+> +  sawaMapa('mapa', { trasa: 'wola', dopasuj: { top: 150, bottom: 440, left: 28, right: 28 }, przerywana: true, gruboscTrasy: 5,
+>      numery: [
+>        { nr: 1, c: [20.9806, 52.2356] }, { nr: 2, c: [20.981, 52.2345] }, { nr: 3, c: [20.97274, 52.22927] },
+>        { nr: 4, c: [20.96892, 52.23367] }, { nr: 5, c: [20.97408, 52.23496] },
+> diff --git a/docs/ui/propozycje/html/a4-sawa-na-krawedzi.html b/docs/ui/propozycje/html/a4-sawa-na-krawedzi.html
+> index a42b1c3..8bef77b 100644
+> --- a/docs/ui/propozycje/html/a4-sawa-na-krawedzi.html
+> +++ b/docs/ui/propozycje/html/a4-sawa-na-krawedzi.html
+> @@ -48,6 +48,6 @@
+>  <script src="_ui.js"></script>
+>  <script>
+>    sawaMapa('mapa', { zoom: 14, center: nad(JA, 190, 14), pins: [
+> -    { c: [20.98019, 52.23702], n: 'Kercelak' }, { c: [20.97306, 52.23944], n: 'Cmentarz kalwiński' } ] });
+> +    { c: [20.98019, 52.23702], n: 'Kercelak' } ] });
+>  </script>
+>  </body></html>
+> new file: docs/ui/propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg
+> new file: docs/ui/propozycje/1218-ekran-glowny-a1-kropki-historii-mobile.png
+> new file: docs/ui/propozycje/1218-ekran-glowny-a2-dymek-sawy-mobile.png
+> new file: docs/ui/propozycje/1218-ekran-glowny-a3-podglad-trasy-mobile.png
+> new file: docs/ui/propozycje/1218-ekran-glowny-a4-sawa-na-krawedzi-mobile.png
+> new file: docs/ui/propozycje/1218-ekran-glowny-a5-plywajaca-karta-mobile.png
+> new file: docs/ui/propozycje/html/_a.css
+

@@ -82,12 +82,16 @@ function sawaMapa(el, o = {}) {
       m.addLayer({ id: 'trasa-obw', type: 'line', source: 'trasa', layout: { 'line-join': 'round', 'line-cap': 'round' },
         paint: { 'line-color': o.noc ? '#0C2423' : '#fff', 'line-width': (o.gruboscTrasy || 5) + 4 } });
       m.addLayer({ id: 'trasa', type: 'line', source: 'trasa', layout: { 'line-join': 'round', 'line-cap': 'round' },
-        paint: { 'line-color': kolor, 'line-width': o.gruboscTrasy || 5 } });
+        paint: { 'line-color': kolor, 'line-width': o.gruboscTrasy || 5, ...(o.przerywana ? { 'line-dasharray': [1.2, 1.4] } : {}) } });
     }
   });
   if (o.ja !== false) {
     const d = document.createElement('div'); d.className = 'ja' + (o.noc ? ' noc' : '');
     new maplibregl.Marker({ element: d }).setLngLat(JA).addTo(m);
+  }
+  for (const p of o.numery || []) {
+    const d = document.createElement('div'); d.className = 'nr'; d.textContent = p.nr;
+    new maplibregl.Marker({ element: d }).setLngLat(p.c).addTo(m);
   }
   for (const p of o.pins || []) {
     const d = document.createElement('div'); d.className = 'pin'; d.innerHTML = p.prawo ? `${p.n}<b></b>` : `<b></b>${p.n}`;

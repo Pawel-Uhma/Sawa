@@ -21,7 +21,13 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 
 | Plik | Co pokazuje | Zadanie | Decyzja |
 |---|---|---|---|
-| [1150-ekran-glowny-00-zestawienie.jpg](propozycje/1150-ekran-glowny-00-zestawienie.jpg) | 5 propozycji ekranu głównego obok siebie | ekran główny | czeka na wybór |
+| [1218-ekran-glowny-a-wariacje-00-zestawienie.jpg](propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg) | 5 wariacji A obok siebie | ekran główny | czeka na wybór |
+| [1218-…-a1-kropki-historii](propozycje/1218-ekran-glowny-a1-kropki-historii-mobile.png) | A1: A + 326 punktów historii na mapie, licznik i karta najbliższego miejsca (Kercelak, 120 m) | ekran główny | |
+| [1218-…-a2-dymek-sawy](propozycje/1218-ekran-glowny-a2-dymek-sawy-mobile.png) | A2: Sawa obok kropki lokalizacji mówi w dymku na mapie; niski arkusz z 5 przyciskami czasu zamiast suwaka | ekran główny | |
+| [1218-…-a3-podglad-trasy](propozycje/1218-ekran-glowny-a3-podglad-trasy-mobile.png) | A3: suwak od razu rysuje szkic trasy z numerami opowieści; podsumowanie (czas, linie, opowieści), „Jedziemy tą trasą” i losowanie innej | ekran główny | |
+| [1218-…-a4-sawa-na-krawedzi](propozycje/1218-ekran-glowny-a4-sawa-na-krawedzi-mobile.png) | A4: Sawa (obraz 32) wychyla się zza arkusza i pyta w dymku | ekran główny | |
+| [1218-…-a5-plywajaca-karta](propozycje/1218-ekran-glowny-a5-plywajaca-karta-mobile.png) | A5: oderwana szklana karta nad pływającym paskiem zakładek (Mapa, Przejażdżki, Sawa), więcej mapy | ekran główny | |
+| [1150-ekran-glowny-00-zestawienie.jpg](propozycje/1150-ekran-glowny-00-zestawienie.jpg) | 5 propozycji ekranu głównego obok siebie | ekran główny | Paweł wybrał A (17.10) |
 | [1150-…-a-arkusz-na-mapie](propozycje/1150-ekran-glowny-a-arkusz-na-mapie-mobile.png) | A: mapa na cały ekran, szklany arkusz z pytaniem Sawy, suwak 30 min–4 h+, tematy, „Wyznacz trasę”. Najbliżej Apple Maps, najbezpieczniejsza | ekran główny | |
 | [1150-…-b-zasieg-historii](propozycje/1150-ekran-glowny-b-zasieg-historii-mobile.png) | B: krąg zasięgu z 326 prawdziwymi punktami z `historia/`, linijka czasu przewijana palcem, statystyki trasy | ekran główny | |
 | [1150-…-c-rozmowa-z-sawa](propozycje/1150-ekran-glowny-c-rozmowa-z-sawa-mobile.png) | C: Sawa w całej postaci pyta w czacie, odpowiedzi jednym dotknięciem, mapa w dymku, mikrofon. Łączy ekran główny z zakładką czatu | ekran główny | |

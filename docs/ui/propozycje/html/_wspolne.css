@@ -106,3 +106,7 @@ body {
 .mgla { position: absolute; top: 0; left: 0; right: 0; height: 120px; z-index: 10; pointer-events: none;
   background: linear-gradient(rgba(238, 243, 240, .95) 30%, rgba(238, 243, 240, 0)); }
 .mgla.noc { background: linear-gradient(rgba(12, 36, 35, .95) 30%, rgba(12, 36, 35, 0)); }
+
+/* Numerowany punkt opowieści na trasie */
+.nr { width: 26px; height: 26px; border-radius: 50%; background: var(--koral); color: #fff; border: 2.5px solid #fff;
+  display: grid; place-items: center; font-size: 12px; font-weight: 800; box-shadow: 0 3px 8px rgba(16,43,42,.25); }
