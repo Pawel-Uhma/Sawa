@@ -5132,3 +5132,265 @@
 >  | [1218-ekran-glowny-a-wariacje-00-zestawienie.jpg](propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg) | 5 wariacji A obok siebie | ekran główny | Paweł: najlepsze A4 i A5, połączone w A6 |
 >  | [1218-…-a1-kropki-historii](propozycje/1218-ekran-glowny-a1-kropki-historii-mobile.png) | A1: A + 326 punktów historii na mapie, licznik i karta najbliższego miejsca (Kercelak, 120 m) | ekran główny | |
 
+
+### 2026-10-17 13:48 · Pawel
+
+> <cross-session-message from="uds:/tmp/cc-socks/40495.sock" from-name="sawa-72" from-mode="prompting">
+> OnboardingFlow skończony i przetestowany (Playwright, 390×844 i 1440×900, bez poziomego scrolla, profil wraca poprawnie). Kontrakt bez zmian względem poprzedniej wiadomości. Doszły ikony stylu (public/onboarding/style_*.webp). Możesz podpinać w demo-app.tsx i usunąć start-screen.tsx oraz onboarding-screen.tsx. Strony testowej nie zostawiłem w repo.
+> </cross-session-message>
+
+
+### 2026-10-17 13:49 · Pawel
+
+> dodaj tez odrazu onboarding na live
+
+
+### 2026-10-17 · Pawel
+
+> Ale nie dziala dobrze na desktopie (...) / UI w stylu makiety A6 / ma działać mobile native, gesty, przejścia, animacje / dodaj też od razu onboarding na live
+
+**AI:** Przebudowałem apps/web na wzór A6: jedna mapa MapLibre + OpenFreeMap pod wszystkimi ekranami (sawa-map.tsx), ekran główny z Sawą i dymkiem, pasek zakładek, arkusz trasy z gestami (motion: punkty zatrzymania, rzut z projekcją, swipe opowieści), desktop jako pływający panel; onboarding sawa-72 podpięty w demo-app.tsx. Wdrożone na https://sawa-hackathon.vercel.app; zaktualizowane todo.md (T-30, T-35, T-66, T-67), stan.md i ui/README.md ze zrzutami w ui/wyniki.
+
+### 2026-10-17 13:51 · Pawel
+
+> <cross-session-message from="uds:/tmp/cc-socks/60179.sock" from-name="sawa-9b" from-mode="prompting">
+> OnboardingFlow jest podpięty w demo-app.tsx zgodnie z Twoim kontraktem i wdrożony na https://sawa-hackathon.vercel.app (Paweł prosił). Po „Pokaż mapę” przechodzi na ekran główny A6, a „Zmień” w karcie otwiera initialStep="interests" z bieżącym profilem. start-screen.tsx i onboarding-screen.tsx są usunięte.
+> 
+> Dwie rzeczy w Twoich plikach: 1) mój `biome check --write apps/web/src` przeformatował onboarding-flow.tsx (tylko formatowanie, logika bez zmian), przepraszam za wejście w Twój plik. 2) `pnpm lint` zgłasza jeszcze noArrayIndexKey w onboarding-flow.tsx:225, zostawiam to Tobie. Niczego nie commitowałem, wszystko leży w drzewie roboczym na gałęzi r3/demo-mock.
+> </cross-session-message>
+
+
+### 2026-10-17 13:52 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  apps/web/src/features/demo/components/onboarding-flow.tsx | 110 ++++++++++++++++++++++++++++++++++++++++++++--------------
+>  docs/ai-log.md                                            |  27 ++++++++++++++
+>  docs/stan.md                                              |   2 ++
+>  3 files changed, 113 insertions(+), 26 deletions(-)
+> ----- patch (truncated) -----
+> diff --git a/apps/web/src/features/demo/components/onboarding-flow.tsx b/apps/web/src/features/demo/components/onboarding-flow.tsx
+> index 6c4f3ec..d54305a 100644
+> --- a/apps/web/src/features/demo/components/onboarding-flow.tsx
+> +++ b/apps/web/src/features/demo/components/onboarding-flow.tsx
+> @@ -42,7 +42,11 @@ type OnboardingFlowProps = {
+>    onDone: (profile: Profile) => void;
+>  };
+>  
+> -export function OnboardingFlow({ initialStep = "welcome", initialProfile, onDone }: OnboardingFlowProps) {
+> +export function OnboardingFlow({
+> +  initialStep = "welcome",
+> +  initialProfile,
+> +  onDone,
+> +}: OnboardingFlowProps) {
+>    const reduce = useReducedMotion();
+>    const [step, setStep] = useState<OnboardingStep>(initialStep);
+>    const [dir, setDir] = useState(1);
+> @@ -79,7 +83,9 @@ export function OnboardingFlow({ initialStep = "welcome", initialProfile, onDone
+>        if (!has && current.interests.length >= MAX_INTERESTS) return current;
+>        return {
+>          ...current,
+> -        interests: has ? current.interests.filter((item) => item !== key) : [...current.interests, key],
+> +        interests: has
+> +          ? current.interests.filter((item) => item !== key)
+> +          : [...current.interests, key],
+>        };
+>      });
+>    }
+> @@ -98,7 +104,10 @@ export function OnboardingFlow({ initialStep = "welcome", initialProfile, onDone
+>    return (
+>      // Pełnoekranowa warstwa nad mapą: mapa prześwituje przez matowe szkło, więc onboarding i mapa to jedna przestrzeń.
+>      <div className="fixed inset-0 z-40 overflow-y-auto bg-[#eef3f0]/95 backdrop-blur-2xl [@media(prefers-reduced-transparency:reduce)]:bg-[#eef3f0]">
+> -      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_45%_at_20%_15%,rgba(142,209,181,0.35),transparent_70%),radial-gradient(50%_40%_at_90%_90%,rgba(242,117,95,0.10),transparent_70%)]" />
+> +      <div
+> +        aria-hidden="true"
+> +        className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_45%_at_20%_15%,rgba(142,209,181,0.35),transparent_70%),radial-gradient(50%_40%_at_90%_90%,rgba(242,117,95,0.10),transparent_70%)]"
+> +      />
+>        <main className="relative mx-auto flex min-h-dvh w-full max-w-md flex-col px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[max(1rem,env(safe-area-inset-top))] md:grid md:max-w-6xl md:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] md:items-center md:gap-12 md:px-10 md:py-10 lg:gap-20 lg:px-16">
+>          {/* Lewa kolumna na desktopie, górny pas na telefonie: Sawa prowadzi rozmowę */}
+>          <div className="flex flex-col gap-4 md:h-full md:justify-center md:gap-10">
+> @@ -111,7 +120,13 @@ export function OnboardingFlow({ initialStep = "welcome", initialProfile, onDone
+>                  className="-ml-2 flex size-11 shrink-0 items-center justify-center rounded-full text-tekst-2 transition-[background-color,transform] duration-100 hover:bg-white active:scale-90 active:bg-white"
+>                >
+>                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+> -                  <path d="M15 5l-7 7 7 7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+> +                  <path
+> +                    d="M15 5l-7 7 7 7"
+> +                    stroke="currentColor"
+> +                    strokeWidth="2.2"
+> +                    strokeLinecap="round"
+> +                    strokeLinejoin="round"
+> +                  />
+>                  </svg>
+>                </button>
+>              ) : (
+> @@ -185,7 +200,9 @@ function sawaLine(step: OnboardingStep, profile: Profile): string {
+>        if (!last) return "Co Cię ciekawi? Wybierz do trzech.";
+>        if (profile.interests.length >= MAX_INTERESTS) return "Komplet! Mam już pomysł na trasę.";
+>        const tip = (SIMILAR_INTERESTS[last] ?? []).find((key) => !profile.interests.includes(key));
+> -      return tip ? `Dobry wybór! Może jeszcze ${labelOf(tip).toLowerCase()}?` : "Dobry wybór! Coś jeszcze?";
+> +      return tip
+> +        ? `Dobry wybór! Może jeszcze ${labelOf(tip).toLowerCase()}?`
+> +        : "Dobry wybór! Coś jeszcze?";
+>      }
+>      case "style":
+>        return "I ostatnie: jak mam opowiadać?";
+> @@ -204,8 +221,8 @@ function Progress({ index, total }: { index: number; total: number }) {
+>        aria-valuenow={index + 1}
+>        className="flex flex-1 gap-1.5"
+>      >
+> -      {Array.from({ length: total }, (_, i) => (
+> -        <div key={i} className="h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10">
+> +      {QUESTIONS.slice(0, total).map((segment, i) => (
+> +        <div key={segment} className="h-1.5 flex-1 overflow-hidden rounded-full bg-tekst/10">
+>            <motion.div
+>              className="h-full origin-left rounded-full bg-glebia"
+>              initial={false}
+> @@ -240,12 +257,12 @@ function Welcome({ onStart }: { onStart: () => void }) {
+>    return (
+>      <div className="flex flex-1 flex-col gap-8 md:gap-10">
+>        <div className="flex flex-col items-center gap-3 text-center md:items-start md:text-left">
+> -        <h1 className="text-[32px] font-extrabold leading-[1.08] tracking-[-0.025em] md:text-[clamp(2.75rem,4.6vw,4.25rem)] md:leading-[1.03]">
+> +        <h1 className="text-[32px] font-extrabold leading-[1.08] tracking-[-0.025em] md:text-[clamp(2.5rem,3.8vw,3.75rem)] md:leading-[1.04]">
+>            Opowiem Ci o mieście za oknem tramwaju.
+>          </h1>
+>          <p className="max-w-md text-[15px] leading-relaxed text-tekst-2 md:text-lg">
+> -          Powiedz, co Cię ciekawi i ile masz czasu. Ułożę przejazd komunikacją miejską i opowiem
+> -          o miejscach, które mijasz.
+> +          Powiedz, co Cię ciekawi i ile masz czasu. Ułożę przejazd komunikacją miejską i opowiem o
+> +          miejscach, które mijasz.
+>          </p>
+>        </div>
+>  
+> @@ -254,8 +271,17 @@ function Welcome({ onStart }: { onStart: () => void }) {
+>            { icon: "tram", text: "Tramwaje i autobusy ZTM" },
+>            { icon: "know_a_bit", text: "Historie miejsc z danych miasta" },
+>          ].map((item) => (
+> -          <li key={item.icon} className="flex items-center gap-2.5 rounded-2xl bg-white/70 py-2 pl-2 pr-4 text-sm font-semibold text-tekst-2">
+> -            <Image src={`/onboarding/${item.icon}.webp`} alt="" width={36} height={36} className="size-9" />
+> +          <li
+> +            key={item.icon}
+> +            className="flex items-center gap-2.5 rounded-2xl bg-white/70 py-2 pl-2 pr-4 text-sm font-semibold text-tekst-2"
+> +          >
+> +            <Image
+> +              src={`/onboarding/${item.icon}.webp`}
+> +              alt=""
+> +              width={36}
+> +              height={36}
+> +              className="size-9"
+> +            />
+>              {item.text}
+>            </li>
+>          ))}
+> @@ -265,7 +291,9 @@ function Welcome({ onStart }: { onStart: () => void }) {
+>          <PrimaryButton onClick={onStart} className="md:w-auto md:px-12">
+>            Poznajmy się
+>          </PrimaryButton>
+> -        <p className="text-center text-sm text-tekst-3 md:text-left">3 pytania · ok. 15 sekund · bez logowania</p>
+> +        <p className="text-center text-sm text-tekst-3 md:text-left">
+> +          3 pytania · ok. 15 sekund · bez logowania
+> +        </p>
+>        </div>
+>      </div>
+>    );
+> @@ -299,13 +327,19 @@ function SingleChoice({ title, options, value, onPick, onSkip }: SingleChoicePro
+>                  isOn ? "border-glebia bg-mieta-jasna" : "border-transparent"
+>                }`}
+>              >
+> -              {option.icon ? (
+> -                <Image src={`/onboarding/${option.icon}.webp`} alt="" width={56} height={56} className="size-12 shrink-0 md:size-14" />
+> -              ) : (
+> -                <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-tlo-2 text-xl md:size-14" aria-hidden="true">
+> -                  {option.key === "fun" ? "😄" : option.key === "deep" ? "📜" : "✨"}
+> -                </span>
+> -              )}
+> +              <motion.span
+> +                className="block shrink-0"
+> +                animate={{ scale: isOn ? 1.08 : 1, rotate: isOn ? -4 : 0 }}
+> +                transition={SPRING}
+> +              >
+> +                <Image
+> +                  src={`/onboarding/${option.icon}.webp`}
+> +                  alt=""
+> +                  width={64}
+> +                  height={64}
+> +                  className="size-12 md:size-14"
+> +                />
+> +              </motion.span>
+>                <span className="flex min-w-0 flex-1 flex-col">
+>                  <span className="text-base font-bold md:text-lg">{option.label}</span>
+>                  <span className="text-sm text-tekst-2">{option.hint}</span>
+> @@ -346,7 +380,13 @@ function Check({ on }: { on: boolean }) {
+>              exit={{ scale: 0.4, opacity: 0 }}
+>              transition={{ type: "spring", bounce: 0, duration: 0.3 }}
+>            >
+> -            <path d="M5 12.5l4.5 4.5L19 7.5" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+> +            <path
+> +              d="M5 12.5l4.5 4.5L19 7.5"
+> +              stroke="white"
+> +              strokeWidth="3"
+> +              strokeLinecap="round"
+> +              strokeLinejoin="round"
+> +            />
+>            </motion.svg>
+>          )}
+>        </AnimatePresence>
+> @@ -364,7 +404,9 @@ function Interests({ picked, onToggle, onNext }: InterestsProps) {
+>    const isFull = picked.length >= MAX_INTERESTS;
+>    const last = picked.at(-1);
+>    // „Podobne” jak przy pierwszym uruchomieniu TikToka: podpowiedź pojawia się na kafelkach, nie w osobnej sekcji.
+> -  const similar = new Set(last ? (SIMILAR_INTERESTS[last] ?? []).filter((key) => !picked.includes(key)) : []);
+> +  const similar = new Set(
+> +    last ? (SIMILAR_INTERESTS[last] ?? []).filter((key) => !picked.includes(key)) : [],
+> +  );
+>  
+>    return (
+>      <div className="flex flex-1 flex-col gap-6 md:gap-8">
+> @@ -385,7 +427,11 @@ function Interests({ picked, onToggle, onNext }: InterestsProps) {
+>                  whileTap={isDisabled ? undefined : { scale: 0.95 }}
+>                  transition={{ type: "spring", bounce: 0, duration: 0.2 }}
+>                  className={`relative flex h-full min-h-[68px] w-full items-center gap-2.5 rounded-3xl border-2 bg-white p-2.5 pr-3 text-left transition-[border-color,background-color,opacity,box-shadow] duration-200 hover:shadow-[0_6px_20px_rgba(16,43,42,0.08)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-glebia disabled:opacity-40 disabled:hover:shadow-none md:min-h-20 md:gap-3 md:p-3 ${
+> -                  isOn ? "border-glebia bg-mieta-jasna" : isSimilar ? "border-koral/50" : "border-transparent"
+> +                  isOn
+> +                    ? "border-glebia bg-mieta-jasna"
+> +                    : isSimilar
+> +                      ? "border-koral/50"
+> +                      : "border-transparent"
+>                  }`}
+>                >
+>                  <motion.span
+> @@ -393,7 +439,13 @@ function Interests({ picked, onToggle, onNext }: InterestsProps) {
+>                    animate={{ scale: isOn ? 1.08 : 1, rotate: isOn ? -4 : 0 }}
+>                    transition={SPRING}
+>                  >
+> -                  <Image src={interestIcon(item.key)} alt="" width={64} height={64} className="size-11 md:size-14" />
+> +                  <Image
+> +                    src={interestIcon(item.key)}
+> +                    alt=""
+> +                    width={64}
+> +                    height={64}
+> +                    className="size-11 md:size-14"
+> +                  />
+>                  </motion.span>
+>                  <span className="text-sm font-bold leading-tight md:text-base">{item.label}</span>
+>  
+> @@ -418,8 +470,14 @@ function Interests({ picked, onToggle, onNext }: InterestsProps) {
+>  
+>        {/* Na telefonie przycisk przyklejony do dołu, ż
+
+
+### 2026-10-17 13:52 · Pawel
+
+> <cross-session-message from="uds:/tmp/cc-socks/40495.sock" from-name="sawa-72" from-mode="prompting">
+> Dzięki za podpięcie. Poprawiłem noArrayIndexKey w onboarding-flow.tsx: segmenty paska postępu mają teraz klucze z nazw kroków. biome check na moich 3 plikach jest czysty, tsc --noEmit dla całego apps/web też. Formatowanie z biome jest OK. Nic nie commitowałem.
+> </cross-session-message>
+

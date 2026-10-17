@@ -19,6 +19,8 @@
 
 - 13:47 (Paweł, z agentem R3): nowy onboarding (`OnboardingFlow`, 5 kroków, 3 pytania, Sawa w 5 pozach i 15 ikon 3D z fal.ai, sprężyny `motion`). Analiza i projekt: [ui/onboarding.md](ui/onboarding.md). Czeka na podpięcie w `demo-app.tsx` (sesja R3 od mapy). Pytania o znajomość miasta i styl opowieści: R1 + R4 decydują, czy trafią do planera i promptów.
 
+- 13:51 (Paweł, R3): na https://sawa-hackathon.vercel.app działa mock: onboarding sawa-72, ekran główny A6 i trasa z gestami na prawdziwej mapie (MapLibre + OpenFreeMap, bez tokenu). Dane wciąż mockowe (`lib/mock-data.ts`), podpięcie API to T-30/T-10. Zmiany na gałęzi `r3/demo-mock` (część już w commitach, reszta w drzewie roboczym), jeszcze nie w `main`.
+
 ## Zablokowane
 
 - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.
