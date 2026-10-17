@@ -6,6 +6,7 @@
 
 ## Teraz
 
+- 22:45 (Paweł, z agentem R3): **zapis opowieści nadąża za głosem.** Podświetlenie liczone po znakach (17,2 zn./s, zmierzone whisperem na 3 klipach Sawy), świeci słowo wypowiadane teraz; średni błąd ok. 0,4 s zamiast do 3,6 s spóźnienia. Przewinięcie z powrotem do głosu (albo na sam dół) znowu przypina autoprzewijanie (`route-live.tsx`).
 - 22:20 (Szczepan, z agentem R1): **graf transportu na każdy dzień sam (T-18).** Skrypt buduje 7 dni (`apps/api/data/transit/RRRR-MM-DD.json.gz`), API bierze graf na dzisiejszą datę i o północy przełącza się bez restartu. Niedziela ma 560 wariantów tras zamiast 575 w sobotę. Gałąź `r1/transit-multi-day`, do merge'u i ręcznego deployu przed północą (T-148). Plan do pitchu: [sciezka-krytyczna.md](sciezka-krytyczna.md).
 - 22:40 (Szczepan, z agentem R1): **planer spaceru z #121 cofnięty, własny OSRM zostaje.** #121 wszedł w całości; wybór spaceru po ścieżkach OSRM (`walk-on-paths.ts`, `planWalks`) wraca do stanu sprzed #121 na prośbę Szczepana: spacer planowany jak dotąd, miejsca wzdłuż ścieżki (#100). `osrm-routed` w kontenerze `api` bez zmian. **Na Railway:** `WALK_ROUTER_URL=http://127.0.0.1:5000` i redeploy.
 - 22:45 (Paweł, z agentem, za zgodą R1, #131, T-156): **spacer w pętli wraca po okręgu.** Planer dolicza pętli premię za kształt (pole/obwód², kwadrat ok. 0,8, „lizak” wzdłuż równoległej ulicy ok. 0,4, tam i z powrotem 0), w beam search i przy wyborze po ścieżkach OSRM. Spacery do celu bez zmian. Po merge'u #130 premia działa tylko w beam search (`walk-on-paths.ts` usunięty).

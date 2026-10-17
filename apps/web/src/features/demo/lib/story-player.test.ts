@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { MockStop } from "./mock-data";
-import { clipKey, targetSecFor } from "./story-player";
+import { clipKey, spokenLength, targetSecFor } from "./story-player";
 
 describe("clipKey", () => {
   const listener = { interests: ["historical" as const], storyStyle: "fun" as const };
@@ -25,5 +25,23 @@ describe("targetSecFor", () => {
 
   it("else talks until the next stop", () => {
     expect(targetSecFor([stop(30), stop(170)], 0)).toBe(140);
+  });
+});
+
+describe("spokenLength", () => {
+  const text = "Pałac Kultury stoi tu od 1955 roku.";
+
+  it("lights nothing before Sawa starts", () => {
+    expect(spokenLength(text, 0)).toBe(0);
+  });
+
+  it("lights the word Sawa is saying now, whole", () => {
+    // 30% to środek „Kultury”: słowo świeci w całości, nie dopiero po wypowiedzeniu
+    expect(text.slice(0, spokenLength(text, 30))).toBe("Pałac Kultury");
+  });
+
+  it("lights everything at the end", () => {
+    expect(spokenLength(text, 100)).toBe(text.length);
+    expect(spokenLength(text, 97)).toBe(text.length);
   });
 });

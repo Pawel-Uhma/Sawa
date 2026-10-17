@@ -2,11 +2,17 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Listener } from "./api-data";
-import { audioProgress, type Clip, fetchClip, useLiveText, useRememberHeard } from "./story-player";
+import {
+  audioProgress,
+  type Clip,
+  fetchClip,
+  speakingMs,
+  useLiveText,
+  useRememberHeard,
+} from "./story-player";
 
 /** Poza trasą nikt nie wyznacza okna, więc Sawa mówi krótko: jak zajawka. */
 export const PLACE_STORY_SEC = 45;
-const WORDS_PER_SEC = 2.5;
 
 export type PlaceStoryState = "idle" | "loading" | "playing" | "paused" | "failed";
 
@@ -52,8 +58,7 @@ export function usePlaceStory(placeId: string, listener: Listener) {
     const audio = voiceFailed || !clip?.audioUrl ? null : audioRef.current;
     // Bez głosu licznik czeka na cały tekst, bo dopiero on mówi, ile czekać.
     if (!audio && !live.done) return;
-    const words = live.text?.split(/\s+/).length ?? 0;
-    const timerMs = (words / WORDS_PER_SEC) * 1000;
+    const timerMs = speakingMs(live.text);
     let frame = 0;
     let last = performance.now();
     const tick = (now: number) => {
