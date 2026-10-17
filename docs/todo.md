@@ -49,7 +49,7 @@
 - [ ] **T-30** Mapa Mapbox z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00
 - [x] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — (Paweł z agentem, 17.10 13:25: mock bez API, mapa szkicowa zamiast Mapbox)
 - [x] **T-67** Wersja desktopowa (ten sam UI na szerokim ekranie) — `R3` — (Paweł z agentem, 17.10 13:25: panel boczny od 768 px, mock)
-- [x] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — (Paweł z agentem, 17.10 13:25: mock, lista 8 kluczy z 13-plan-bazy §5)
+- [x] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — (Paweł z agentem, 17.10 13:25: mock, lista 8 kluczy z 13-plan-bazy §5; 13:47: nowy przepływ z Sawą, 3 pytania i grafikami z fal.ai, [ui/onboarding.md](ui/onboarding.md); do podpięcia w demo-app przez sesję R3 od mapy)
 - [x] **T-32** Slider czasu (30 min – 4 h) i przycisk „generuj” — `R3` — (Paweł z agentem, 17.10 13:25: mock)
 - [x] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — (Paweł z agentem, 17.10 13:25: mock, tekst opowieści to placeholder, czeka na T-42)
 - [ ] **T-35** Wersja mobilna: 16 px marginesu, bez poziomego scrolla — `R3` — 22:00

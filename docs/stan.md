@@ -17,6 +17,8 @@
 
 - 13:30 (spotkanie): podział Szczepan R1 planer, Jasiek R2 baza, Paweł R3, Antek R4 głos. Scraping kolejnych miejsc czeka na stabilny schemat bazy. Bazę zmienia tylko agent Jaśka. [Podsumowanie](spotkania/2026-10-17-1330-postep-i-podzial.md)
 
+- 13:47 (Paweł, z agentem R3): nowy onboarding (`OnboardingFlow`, 5 kroków, 3 pytania, Sawa w 5 pozach i 15 ikon 3D z fal.ai, sprężyny `motion`). Analiza i projekt: [ui/onboarding.md](ui/onboarding.md). Czeka na podpięcie w `demo-app.tsx` (sesja R3 od mapy). Pytania o znajomość miasta i styl opowieści: R1 + R4 decydują, czy trafią do planera i promptów.
+
 ## Zablokowane
 
 - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.

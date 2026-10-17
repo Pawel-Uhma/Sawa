@@ -4000,6 +4000,8 @@
 
 > przanalizuj jakie sa najlepsze i najladniejsze onboardingi aplikacji ktore przyciagaja najwiecej uzytkownikow, porownaj z Sawa - jakie powinien miec kroki , jakie pytania , co wpisywac, jakie animacje - wszystko ma wygladac profesjonalnie w stylu sawy. Uzyj fal.ai do generowania grafik i syrenny na ten onboarding oraz innych ikon jezeli potrzebne , wszystko ma dzialac plynnie na telefonie i desktopie z animacjami /apple-design
 
+**AI:** Analiza onboardingów (Duolingo, TikTok, Spotify, Headspace, Revolut) i projekt w `docs/ui/onboarding.md`. Nowy przepływ `OnboardingFlow` w `apps/web` (powitanie, znajomość Warszawy, zainteresowania z „podobne”, styl opowieści, ekran budowania), sprężyny `motion` wg apple-design; na fal.ai 5 póz Sawy i 15 ikon 3D w stylu obrazu 32 (`public/onboarding/`). Zrzuty w `docs/ui/wyniki/1347-*`; podpięcie w `demo-app.tsx` robi sesja R3 od mapy.
+
 
 ### 2026-10-17 13:27 · Pawel
 
@@ -5026,4 +5028,107 @@
 > +> podoba mi sie Asia ale ma problem z liczbami - daj w przykladach liczby napisane po polsku nie liczbami - oraz dodaj typowe dla elevenlabs westchniecia akcenty glosu w danych momentach
 > +
 > +**AI:** Pawlowi pasuje głos Asia, ale cyfry czyta źle. W stroiku kwestie mają teraz liczby słownie, tagi v3 ([sighs], [laughs], [whispers] itd.) i wielokropki jako pauzy. Doszły przyciski do wstawiania tagów, a dla modeli innych niż v3 tagi są wycinane. Wniosek dla R4: prompt Sawy musi pisać liczby i daty słownie.
+
+
+### 2026-10-17 13:48 · Pawel
+
+> <task-notification>
+> <task-id>bppki14ki</task-id>
+> <tool-use-id>toolu_01JLYTGBGbr2Ww9yFLAxFKWV</tool-use-id>
+> <output-file>/private/tmp/claude-501/-Users-pawel-Desktop-Sawa/26b32a67-6583-4744-8b1f-287211ec6ffc/tasks/bppki14ki.output</output-file>
+> <status>failed</status>
+> <summary>Background command "Run dev server for onboarding preview" failed with exit code 144</summary>
+> </task-notification>
+
+
+### 2026-10-17 13:48 · Pawel
+
+> [Image #2] na razie takie ustawienia, chyba te efekty [] nie dzialaja wiec usun. zaimplementuj do backendu czesc kodu odpowiedzialna za tts zgodnie z tym
+
+
+### 2026-10-17 13:48 · Pawel
+
+> You are a pragmatic engineer about to commit your uncommitted changes.
+> 
+> If they are NOT worth committing on their own (only whitespace, a stray debug
+> line, clearly half-finished, or pure noise), reply with exactly: SKIP
+> 
+> Otherwise reply with ONE commit message the way a normal engineer dashes it off:
+> lower-case, casual, to the point. No conventional-commit prefix (no feat:/fix:/
+> chore:), no file names, no stats, no quotes, no trailing period. ~50 chars, max 70.
+> Reply with ONLY the message, or SKIP. Nothing else.
+> 
+> Changes:
+>  docs/ai-log.md    | 13 +++++++++++++
+>  docs/stan.md      |  2 ++
+>  docs/todo.md      |  2 +-
+>  docs/ui/README.md |  1 +
+>  4 files changed, 17 insertions(+), 1 deletion(-)
+> ----- patch (truncated) -----
+> diff --git a/docs/ai-log.md b/docs/ai-log.md
+> index ac1b8f2..3ab7937 100644
+> --- a/docs/ai-log.md
+> +++ b/docs/ai-log.md
+> @@ -4000,6 +4000,8 @@
+>  
+>  > przanalizuj jakie sa najlepsze i najladniejsze onboardingi aplikacji ktore przyciagaja najwiecej uzytkownikow, porownaj z Sawa - jakie powinien miec kroki , jakie pytania , co wpisywac, jakie animacje - wszystko ma wygladac profesjonalnie w stylu sawy. Uzyj fal.ai do generowania grafik i syrenny na ten onboarding oraz innych ikon jezeli potrzebne , wszystko ma dzialac plynnie na telefonie i desktopie z animacjami /apple-design
+>  
+> +**AI:** Analiza onboardingów (Duolingo, TikTok, Spotify, Headspace, Revolut) i projekt w `docs/ui/onboarding.md`. Nowy przepływ `OnboardingFlow` w `apps/web` (powitanie, znajomość Warszawy, zainteresowania z „podobne”, styl opowieści, ekran budowania), sprężyny `motion` wg apple-design; na fal.ai 5 póz Sawy i 15 ikon 3D w stylu obrazu 32 (`public/onboarding/`). Zrzuty w `docs/ui/wyniki/1347-*`; podpięcie w `demo-app.tsx` robi sesja R3 od mapy.
+> +
+>  
+>  ### 2026-10-17 13:27 · Pawel
+>  
+> @@ -5027,3 +5029,14 @@
+>  > +
+>  > +**AI:** Pawlowi pasuje głos Asia, ale cyfry czyta źle. W stroiku kwestie mają teraz liczby słownie, tagi v3 ([sighs], [laughs], [whispers] itd.) i wielokropki jako pauzy. Doszły przyciski do wstawiania tagów, a dla modeli innych niż v3 tagi są wycinane. Wniosek dla R4: prompt Sawy musi pisać liczby i daty słownie.
+>  
+> +
+> +### 2026-10-17 13:48 · Pawel
+> +
+> +> <task-notification>
+> +> <task-id>bppki14ki</task-id>
+> +> <tool-use-id>toolu_01JLYTGBGbr2Ww9yFLAxFKWV</tool-use-id>
+> +> <output-file>/private/tmp/claude-501/-Users-pawel-Desktop-Sawa/26b32a67-6583-4744-8b1f-287211ec6ffc/tasks/bppki14ki.output</output-file>
+> +> <status>failed</status>
+> +> <summary>Background command "Run dev server for onboarding preview" failed with exit code 144</summary>
+> +> </task-notification>
+> +
+> diff --git a/docs/stan.md b/docs/stan.md
+> index 56796e7..c4d70ce 100644
+> --- a/docs/stan.md
+> +++ b/docs/stan.md
+> @@ -17,6 +17,8 @@
+>  
+>  - 13:30 (spotkanie): podział Szczepan R1 planer, Jasiek R2 baza, Paweł R3, Antek R4 głos. Scraping kolejnych miejsc czeka na stabilny schemat bazy. Bazę zmienia tylko agent Jaśka. [Podsumowanie](spotkania/2026-10-17-1330-postep-i-podzial.md)
+>  
+> +- 13:47 (Paweł, z agentem R3): nowy onboarding (`OnboardingFlow`, 5 kroków, 3 pytania, Sawa w 5 pozach i 15 ikon 3D z fal.ai, sprężyny `motion`). Analiza i projekt: [ui/onboarding.md](ui/onboarding.md). Czeka na podpięcie w `demo-app.tsx` (sesja R3 od mapy). Pytania o znajomość miasta i styl opowieści: R1 + R4 decydują, czy trafią do planera i promptów.
+> +
+>  ## Zablokowane
+>  
+>  - Auto-deploy weba z GitHuba: aplikacja Vercel nie ma dostępu do repo `Pawel-Uhma/Sawa`. Odblokowuje Paweł (GitHub → Settings → Applications → Vercel). Do tego czasu deploy przez `npx vercel deploy --prod`.
+> diff --git a/docs/todo.md b/docs/todo.md
+> index d4ae0b3..f197d54 100644
+> --- a/docs/todo.md
+> +++ b/docs/todo.md
+> @@ -49,7 +49,7 @@
+>  - [ ] **T-30** Mapa Mapbox z jednym zbiorem punktów, dane z T-10 — `R3` — 13:00
+>  - [x] **T-66** Ekran główny według wariantu A (arkusz na mapie), mobile-first — `R3` — (Paweł z agentem, 17.10 13:25: mock bez API, mapa szkicowa zamiast Mapbox)
+>  - [x] **T-67** Wersja desktopowa (ten sam UI na szerokim ekranie) — `R3` — (Paweł z agentem, 17.10 13:25: panel boczny od 768 px, mock)
+> -- [x] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — (Paweł z agentem, 17.10 13:25: mock, lista 8 kluczy z 13-plan-bazy §5)
+> +- [x] **T-31** Onboarding: ekran startowy i wybór ok. 3 zainteresowań — `R3` — (Paweł z agentem, 17.10 13:25: mock, lista 8 kluczy z 13-plan-bazy §5; 13:47: nowy przepływ z Sawą, 3 pytania i grafikami z fal.ai, [ui/onboarding.md](ui/onboarding.md); do podpięcia w demo-app przez sesję R3 od mapy)
+>  - [x] **T-32** Slider czasu (30 min – 4 h) i przycisk „generuj” — `R3` — (Paweł z agentem, 17.10 13:25: mock)
+>  - [x] **T-33** Widok trasy: lista punktów i odtwarzacz opowieści (pauza, przejście do następnego; „dalej” wg decyzji) — `R3` — (Paweł z agentem, 17.10 13:25: mock, tekst opowieści to placeholder, czeka na T-42)
+>  - [ ] **T-35** Wersja mobilna: 16 px marginesu, bez poziomego scrolla — `R3` — 22:00
+> diff --git a/docs/ui/README.md b/docs/ui/README.md
+> index aa5f5ba..8328322 100644
+> --- a/docs/ui/README.md
+> +++ b/docs/ui/README.md
+> @@ -21,6 +21,7 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
+>  
+>  | Plik | Co pokazuje | Zadanie | Decyzja |
+>  |---|---|---|---|
+> +| [1347-onboarding-00-zestawienie-mobile](wyniki/1347-onboarding-00-zestawienie-mobile.jpg), [desktop](wyniki/1347-onboarding-00-zestawienie-desktop.jpg) | Nowy onboarding: powitanie z Sawą, znajomość Warszawy, zainteresowania z ikonami 3D i „podobne”, styl opowieści, „Układam Twoją Warszawę”. Opis i analiza: [onboarding.md](onboarding.md) | T-31 | do akceptacji Pawła |
+>  | [1249-…-a6-karta-z-sawa](propozycje/1249-ekran-glowny-a6-karta-z-sawa-mobile.png) | A6: połączenie A4 i A5. Pływająca karta z czasem, tematami i „Wyznacz trasę” nad paskiem zakładek (Mapa, Przejażdżki, Sawa); Sawa wychyla się zza karty i pyta w dymku | ekran główny | kandydat do wdrożenia |
+>  | [1218-ekran-glowny-a-wariacje-00-zestawienie.jpg](propozycje/1218-ekran-glowny-a-wariacje-00-zestawienie.jpg) | 5 wariacji A obok siebie | ekran główny | Paweł: najlepsze A4 i A5, połączone w A6 |
+>  | [1218-…-a1-kropki-historii](propozycje/1218-ekran-glowny-a1-kropki-historii-mobile.png) | A1: A + 326 punktów historii na mapie, licznik i karta najbliższego miejsca (Kercelak, 120 m) | ekran główny | |
 
