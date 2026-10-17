@@ -19,6 +19,8 @@
 
 - R2 (Jasiek, 13:38): `GET /v1/places` i `GET /v1/places/:id` gotowe (kontrakt PR #6, trasy na nim). **R3:** mapa może brać `/v1/places?bbox=…`; **R4:** fakty i źródła z `/v1/places/:id` (`sources[].id` do cytowania, `unverifiedFacts` pomijać). **R1:** dodać `SUPABASE_URL` i `SUPABASE_SERVICE_ROLE_KEY` na Railway.
 
+- R2 (Jasiek, 14:08): sport i przyroda mają miejsca (T-25): +102 z OSM (parki, skwery, obiekty sportowe), w bazie 428 miejsc (historia 242, kultura 113, sport 33, przyroda 75). `apps/api/data/places.geojson` odświeżony dla planera. Następne: zbiór miasta „Otwarte boiska” (T-27, potrzebny token).
+
 ## Zablokowane
 
 - Nic zgłoszonego. Dopisz tu blokadę od razu, z nazwiskiem osoby, która może ją odblokować.

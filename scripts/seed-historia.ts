@@ -1,12 +1,11 @@
-// Loads docs/historia/sawa-historia.geojson into Supabase (places, place_photos).
+// Loads docs/historia/*.geojson (historia/sources.ts) into Supabase (places, place_photos).
 // Idempotent: upserts by places.id and (place_id, url). Usage:
 //   pnpm --filter @sawa/scripts seed:historia            # needs SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
 //   pnpm --filter @sawa/scripts seed:historia --dry-run  # map and report only
 
-import { readFile } from "node:fs/promises";
+import { PLACE_TAGS } from "@sawa/shared";
 import { createClient } from "@supabase/supabase-js";
 import { z } from "zod";
-import { INTERESTS } from "./historia/interests";
 import {
   FeatureSchema,
   mapPhotos,
@@ -14,18 +13,18 @@ import {
   type PhotoRow,
   type PlaceRow,
 } from "./historia/map-place";
+import { readSourceFeatures } from "./historia/sources";
 
-const GEOJSON_PATH = new URL("../docs/historia/sawa-historia.geojson", import.meta.url);
 const BATCH = 100;
 
 async function main() {
   const dryRun = process.argv.includes("--dry-run");
-  const collection = JSON.parse(await readFile(GEOJSON_PATH, "utf8")) as { features: unknown[] };
+  const features = await readSourceFeatures();
 
   const now = new Date();
   const places: PlaceRow[] = [];
   const photos: PhotoRow[] = [];
-  for (const [i, raw] of collection.features.entries()) {
+  for (const [i, raw] of features.entries()) {
     const parsed = FeatureSchema.safeParse(raw);
     if (!parsed.success) {
       console.warn(`skip feature #${i}: ${z.prettifyError(parsed.error)}`);
@@ -39,7 +38,7 @@ async function main() {
     }
   }
 
-  report(places, photos, collection.features.length);
+  report(places, photos, features.length);
   if (dryRun) return;
 
   const url = process.env.SUPABASE_URL;
@@ -68,7 +67,7 @@ function report(places: PlaceRow[], photos: PhotoRow[], total: number) {
   console.log(
     "interests:",
     Object.fromEntries(
-      INTERESTS.map((k) => [k, places.filter((p) => p.interests.includes(k)).length]),
+      PLACE_TAGS.map((k) => [k, places.filter((p) => p.interests.includes(k)).length]),
     ),
   );
   console.log("without interests:", places.filter((p) => p.interests.length === 0).length);

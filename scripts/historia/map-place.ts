@@ -1,8 +1,9 @@
 // Anti-corruption layer: GeoJSON from docs/historia (Polish keys) → rows of public.places
 // and public.place_photos. Pure functions, no IO.
 
+import { PLACE_TAGS, type PlaceTag } from "@sawa/shared";
 import { z } from "zod";
-import { assignInterests, type Interest } from "./interests";
+import { assignInterests } from "./interests";
 
 const SourceSchema = z.object({ tytul: z.string(), url: z.string() });
 const PersonSchema = z.object({ kto: z.string(), rola: z.string(), wiki: z.string().nullish() });
@@ -48,6 +49,8 @@ const PropertiesSchema = z.looseObject({
   do_weryfikacji: z.array(UnverifiedSchema).nullish(),
   zrodlo_rekordu: z.string().nullish(),
   dzis: z.array(TodaySchema).nullish(),
+  /** Tags known from the source (e.g. OSM leisure=park → nature), added to the rule-based ones. */
+  tagi: z.array(z.enum(PLACE_TAGS)).nullish(),
 });
 
 export const FeatureSchema = z.object({
@@ -94,7 +97,7 @@ export type PlaceRow = {
   sources: { id: string; title: string; url: string }[];
   unverified_facts: { text: string; reason: string }[];
   today_nearby: { name: string; type: string | null; googleMapsUrl: string; placeId: string }[];
-  interests: Interest[];
+  interests: PlaceTag[];
   confidence: string | null;
   location_precision: string | null;
   origin: string;
@@ -158,11 +161,15 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
       googleMapsUrl: x.google_maps,
       placeId: x.place_id,
     })),
-    interests: assignInterests({
-      kind,
-      text: [p.nazwa, ...p.fakty, ...trivia].join(" "),
-      hasPeople: people.length > 0,
-    }),
+    interests: withTags(
+      assignInterests({
+        kind,
+        name: p.nazwa,
+        text: [p.nazwa, ...p.fakty, ...trivia].join(" "),
+        hasPeople: people.length > 0,
+      }),
+      p.tagi ?? [],
+    ),
     confidence: (p.pewnosc && CONFIDENCE[p.pewnosc]) ?? null,
     location_precision: (p.lokalizacja && PRECISION[p.lokalizacja]) ?? null,
     origin: p.zrodlo_rekordu ?? "curated",
@@ -171,6 +178,10 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
     raw: p,
     updated_at: now.toISOString(),
   };
+}
+
+function withTags(assigned: PlaceTag[], given: PlaceTag[]): PlaceTag[] {
+  return PLACE_TAGS.filter((tag) => assigned.includes(tag) || given.includes(tag));
 }
 
 // Licences are ignored for now (internal use, T-22); the licence text is kept as given.
