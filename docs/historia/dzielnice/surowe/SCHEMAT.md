@@ -70,3 +70,7 @@ Paczki `vNN.txt`, wyniki do `surowe/r8wk/vNN-K.json`. Zasady jak w rundzie 5 (be
 ## Runda 10: Wirtualny Sztetl, druga partia
 
 Paczki `tNN.txt`, wyniki do `surowe/r8sz/tNN-K.json`. Zasady jak w rundzie 7, ale pomijasz obiekty w Śródmieściu (z Muranowem i Powiślem); bierzesz Wolę, Żoliborz, Bielany, Bemowo i 13 pozostałych dzielnic (Praga, Mokotów, Rembertów itd.). Wpisz `dzielnica`, jeśli tekst ją wskazuje albo wynika z adresu.
+
+## Runda 12: adresy z Wikipedii dla dzielnic o małej gęstości
+
+Paczka `zab2/b01.txt` (Wawer, Białołęka, Wesoła, Rembertów, Wilanów, Włochy, Ursynów, Targówek, Ursus), wyniki do `surowe/r12/b01-1.json`. Zasady jak w rundzie 6. Nazwy ulic się powtarzają w innych miastach i dzielnicach: zdanie bierzesz tylko, gdy wyraźnie dotyczy Warszawy i tego miejsca (np. wymienia osiedle z nagłówka albo artykuł jest o warszawskim obiekcie). Zdania o Krakowie, Sanoku, Rawie Mazowieckiej itp. odrzucasz, a adres bez żadnego pewnego zdania pomijasz.

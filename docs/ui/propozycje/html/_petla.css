@@ -1,0 +1,21 @@
+/* Makiety 0110-petla-*: pętla jako główny wybór, wygodny czas */
+.tryb2 { display: flex; gap: 8px; }
+.tryb2 > div { flex: 1; border-radius: 18px; padding: 12px; background: var(--tlo-2); display: flex; align-items: center; gap: 10px; }
+.tryb2 > div.on { background: var(--glebia); color: #fff; box-shadow: 0 6px 16px rgba(23,112,111,.28); }
+.tryb2 > div > svg { width: 30px; height: 30px; flex: none; }
+.tryb2 b { display: block; font-size: 16px; font-weight: 800; letter-spacing: -.01em; }
+.tryb2 span { display: block; font-size: 12px; font-weight: 600; opacity: .75; }
+/* Linijka czasu przewijana palcem: wartość zawsze pod środkowym znacznikiem */
+.linijka { position: relative; height: 64px; margin: 6px -16px 0; overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent); mask: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent); }
+.linijka .kreski { position: absolute; left: 0; right: 0; top: 0; height: 30px;
+  background: repeating-linear-gradient(90deg, rgba(16,43,42,.22) 0 2px, transparent 2px 13px); background-position: 6px 0; -webkit-mask: linear-gradient(#000 60%, transparent); }
+.linijka .liczby { position: absolute; top: 36px; left: 0; right: 0; height: 20px; font-size: 13px; font-weight: 700; color: var(--tekst-3); font-variant-numeric: tabular-nums; }
+.linijka .liczby span { position: absolute; transform: translateX(-50%); }
+.linijka .igla { position: absolute; left: 50%; top: -2px; width: 4px; height: 38px; margin-left: -2px; border-radius: 2px; background: var(--koral); }
+.stepper { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.stepper .btn { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--tlo-2); color: var(--glebia); font-size: 28px; font-weight: 600; }
+.stepper .w { text-align: center; }
+.stepper .w strong { display: block; font-size: 40px; font-weight: 800; letter-spacing: -.04em; line-height: 1; color: var(--glebia); font-variant-numeric: tabular-nums; }
+.stepper .w span { font-size: 12.5px; color: var(--tekst-2); font-weight: 600; }
+.wartosc { font-weight: 800; letter-spacing: -.04em; line-height: 1; color: var(--glebia); font-variant-numeric: tabular-nums; }

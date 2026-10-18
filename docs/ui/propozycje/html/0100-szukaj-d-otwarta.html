@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Szukaj D · otwarta wyszukiwarka</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .pelny{position:absolute;inset:0;z-index:45;background:#fff;padding:54px 16px 0}
+  .pelny .szukaj{position:static;box-shadow:none;background:var(--tlo-2);height:50px}
+  .pelny .szukaj .tekst{color:var(--tekst)} .kursor{display:inline-block;width:2px;height:20px;background:var(--glebia);vertical-align:-4px;margin-left:1px}
+  .sekcja{margin:18px 2px 4px}
+  .wiersz .ik.glebia{background:var(--glebia);color:#fff}
+  .wiersz .ik.koral{background:#FDE3DD;color:var(--koral)}
+  .siatka{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}
+  .siatka div{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--tekst-2)}
+  .siatka img{width:52px;height:52px;border-radius:16px;background:var(--tlo-2);padding:6px}
+</style>
+</head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="pelny">
+    <div class="szukaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--tekst-2)"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      <div class="tekst">Ł<span class="kursor"></span></div><span class="glos" data-i="mikrofon"></span></div>
+    <div class="wiersz" style="margin-top:10px"><div class="ik glebia" data-i="petla"></div><div class="tresc"><b>Pętla stąd</b><span>Bez celu, Sawa wybierze miejsca i wrócisz tu</span></div></div>
+    <div class="wiersz"><div class="ik koral" data-i="pin"></div><div class="tresc"><b>Łazienki Królewskie</b><span>Śródmieście · 4,8 km · 31 opowieści</span></div></div>
+    <div class="wiersz"><div class="ik koral" data-i="pin"></div><div class="tresc"><b>Łucka</b><span>Wola · 0,9 km · 3 opowieści</span></div></div>
+    <div class="wiersz"><div class="ik" data-i="zegarek"></div><div class="tresc"><b>Plac Zamkowy</b><span>Ostatnio · Stare Miasto</span></div></div>
+    <div class="etykieta sekcja">Odkryj w pobliżu</div>
+    <div class="siatka">
+      <div><img src="../../ikony-mapy/00-kamienica.png">Kamienice</div>
+      <div><img src="../../ikony-mapy/01-pomnik.png">Pomniki</div>
+      <div><img src="../../ikony-mapy/05-mural.png">Murale</div>
+      <div><img src="../../ikony-mapy/07-kosciol.png">Kościoły</div>
+    </div>
+    <div class="etykieta sekcja">Polecane przez Sawę</div>
+    <div class="wiersz"><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg" style="width:40px;height:40px"><div class="tresc"><b>Kercelak</b><span>Największy bazar przedwojennej Warszawy · 150 m</span></div></div>
+  </div>
+  <div class="status" style="z-index:60"></div>
+  <div class="home"></div>
+</div>
+<script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', {});</script>
+</body></html>

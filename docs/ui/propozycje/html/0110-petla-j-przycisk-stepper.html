@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Pętla J · przycisk pętli i stepper</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet"><link href="_petla.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .szukaj{right:84px}
+  .petlabtn{position:absolute;top:54px;right:16px;z-index:30;width:60px;height:52px;border-radius:26px;background:var(--glebia);color:#fff;display:grid;place-items:center;box-shadow:0 6px 16px rgba(23,112,111,.35)}
+  .petlabtn svg{width:24px;height:24px}
+  .dym{position:absolute;top:116px;right:16px;z-index:30;max-width:230px}
+</style></head><body><div class="telefon">
+  <div class="mapa" id="mapa"></div><div class="status"></div>
+  <div class="szukaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><div class="tekst">Dokąd jedziesz?</div></div>
+  <div class="petlabtn" data-i="petla"></div>
+  <div class="dym dymek" style="border-radius:16px 4px 16px 16px">Bez celu? Dotknij pętli, oprowadzę Cię i wrócisz tu.</div>
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <div style="display:flex;align-items:center;gap:8px"><span data-i="petla" style="display:flex;width:20px;color:var(--glebia)"></span><h2 style="flex:1">Pętla stąd</h2><span class="pod">Komunikacją ▾</span></div>
+    <div class="stepper" style="margin-top:14px">
+      <div class="btn">−</div><div class="w"><strong>1 h 30</strong><span>6 opowieści · wracasz o 15:40</span></div><div class="btn">+</div>
+    </div>
+    <div class="wybor" style="margin-top:14px"><div>30 min</div><div>1 h</div><div class="on">1 h 30</div><div>2 h</div><div>3 h</div></div>
+    <div class="przycisk">Ułóż pętlę <span data-i="strzalka" style="display:flex;width:20px"></span></div>
+  </div>
+  <div class="home"></div>
+</div><script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { trasa: 'wola', przerywana: true, dopasuj: { top: 190, bottom: 400, left: 50, right: 50 } });</script>
+</body></html>

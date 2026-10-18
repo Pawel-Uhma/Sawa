@@ -196,36 +196,16 @@ button {
   font-family: inherit;
 }
 
+/* Na telefonie zoom jest szczypaniem, przyciski +/- tylko zasłaniają mapę */
 .maplibregl-ctrl-top-right {
-  top: calc(max(1rem, env(safe-area-inset-top)) + 52px);
-  right: 8px;
+  display: none;
 }
 
 @media (min-width: 768px) {
   .maplibregl-ctrl-top-right {
+    display: block;
     top: 80px;
     right: 16px;
-  }
-}
-
-/* Legenda kolorów tematów (T-151): pod przyciskami zoomu (2 × 29 px + marginesy 10 px), wyrównana do nich */
-.legenda-mapy {
-  top: calc(max(1rem, env(safe-area-inset-top)) + 52px + 10px + 58px + 10px);
-  right: 18px;
-}
-
-.legenda-mapy--bez-zoomu {
-  top: calc(max(1rem, env(safe-area-inset-top)) + 52px + 10px);
-}
-
-@media (min-width: 768px) {
-  .legenda-mapy {
-    top: calc(80px + 10px + 58px + 10px);
-    right: 26px;
-  }
-
-  .legenda-mapy--bez-zoomu {
-    top: 90px;
   }
 }
 

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Pętla F · dwa kafle i linijka</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet"><link href="_petla.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+</head><body><div class="telefon">
+  <div class="mapa" id="mapa"></div><div class="status"></div>
+  <div class="szukaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><div class="tekst">Szukaj miejsca</div><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg"></div>
+  <div class="fab" style="bottom:404px" data-i="lok"></div>
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <div class="tryb2">
+      <div class="on" data-i="petla"><div><b>Pętla stąd</b><span>wracasz w to miejsce</span></div></div>
+      <div data-i="pin"><div><b>Do celu</b><span>kończysz gdzie indziej</span></div></div>
+    </div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:16px">
+      <div class="wartosc" style="font-size:38px">1 h 30 min</div><span class="pod">6 opowieści</span></div>
+    <div class="linijka"><div class="kreski"></div>
+      <div class="liczby"><span style="left:4%">45 min</span><span style="left:26%">1 h</span><span style="left:50%;color:var(--glebia)">1 h 30</span><span style="left:74%">2 h</span><span style="left:96%">2 h 30</span></div>
+      <div class="igla"></div></div>
+    <div class="przycisk" style="margin-top:4px">Ułóż pętlę <span data-i="strzalka" style="display:flex;width:20px"></span></div>
+  </div>
+  <div class="home"></div>
+</div><script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { trasa: 'wola', przerywana: true, dopasuj: { top: 140, bottom: 440, left: 50, right: 50 } });</script>
+</body></html>
