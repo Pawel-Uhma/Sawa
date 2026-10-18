@@ -281,8 +281,9 @@ function MobileSheet({
   const height = useViewportHeight();
   const { headerBottom, dockHeight } = useChrome(headerRef, dockRef);
   const controlsBottom = headerBottom + CONTROLS_GAP_PX + dockHeight;
+  // Wyciągnięty do końca arkusz zajmuje cały ekran, jak pełny arkusz w Mapach
   const detents = {
-    full: 64,
+    full: 0,
     controls: Math.max(Math.round(height * 0.35), height - controlsBottom),
   };
   const y = useMotionValue(height);
@@ -366,11 +367,11 @@ function MobileSheet({
           ["--trasa-glowa" as string]: `${headerBottom}px`,
           ["--trasa-dok" as string]: `${dockHeight}px`,
         }}
-        className={`karta absolute inset-x-0 top-0 z-20 flex h-dvh flex-col rounded-t-[28px] border-b-0 ${
-          isFull ? "" : "touch-none"
+        className={`karta absolute inset-x-0 top-0 z-20 flex h-dvh flex-col border-b-0 transition-[border-radius] duration-300 ${
+          isFull ? "rounded-t-none" : "touch-none rounded-t-[28px]"
         }`}
       >
-        <div className="flex shrink-0 cursor-grab justify-center pb-2 pt-2.5 active:cursor-grabbing">
+        <div className="flex shrink-0 cursor-grab justify-center pb-2 pt-[max(10px,env(safe-area-inset-top))] active:cursor-grabbing">
           <button
             type="button"
             aria-label={
@@ -390,7 +391,10 @@ function MobileSheet({
         {/* Stała wysokość (widoczna część przy pełnym rozmiarze): arkusz jedzie transformem, bez przeliczania układu w każdej klatce */}
         <div
           ref={scrollRef}
-          style={{ height: height - detents.full - 34, paddingBottom: dockHeight + 24 }}
+          style={{
+            height: `calc(${height - detents.full - 34}px - max(0px, env(safe-area-inset-top) - 10px))`,
+            paddingBottom: dockHeight + 24,
+          }}
           className={`overscroll-contain px-4 ${
             isFull ? "touch-pan-y overflow-y-auto" : "overflow-hidden"
           }`}
