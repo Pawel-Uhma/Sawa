@@ -7,10 +7,15 @@ import type { PlacesRepository } from "../../services/ports";
 const TTL_MS = 5 * 60_000;
 /** The asked box is widened to this grid, so nearby map views share one Supabase query. */
 const GRID_DEG = 0.02;
-/** ~1100 places in the base: every detail fits. */
-const MAX_PLACES = 2000;
+/** ~4500 places in the base: every detail fits. */
+const MAX_PLACES = 5000;
 /** One grid box holds at most every place (~200 kB), so this stays a few MB. */
 const MAX_BOXES = 100;
+/**
+ * Supabase queries in flight at once. 100 at once queued in Supabase's small pool for ~3 s
+ * each (23 ms alone) and hit the 5 s timeout; waiting here, the last one is done in ~0.5 s.
+ */
+const MAX_PARALLEL = 8;
 
 type Entry<T> = { value: Promise<T>; expiresAt: number; isRefreshing: boolean };
 
@@ -60,6 +65,24 @@ function createTtlCache<T>(maxSize: number, clock: () => number) {
   };
 }
 
+/** Runs at most `max` tasks at once; the others wait in order. */
+function createLimiter(max: number) {
+  let running = 0;
+  const waiting: (() => void)[] = [];
+  return async <T>(task: () => Promise<T>): Promise<T> => {
+    // A finished task hands its slot straight to the next waiting one.
+    if (running >= max) await new Promise<void>((resolve) => waiting.push(resolve));
+    else running += 1;
+    try {
+      return await task();
+    } finally {
+      const next = waiting.shift();
+      if (next) next();
+      else running -= 1;
+    }
+  };
+}
+
 function snapOut(bbox: BBox): BBox {
   const down = (v: number) => Math.floor(v / GRID_DEG) * GRID_DEG;
   const up = (v: number) => Math.ceil(v / GRID_DEG) * GRID_DEG;
@@ -77,6 +100,7 @@ export function createCachedPlacesRepository(
 ): PlacesRepository {
   const boxes = createTtlCache<PlaceSummary[]>(MAX_BOXES, clock);
   const places = createTtlCache<Place | null>(MAX_PLACES, clock);
+  const limit = createLimiter(MAX_PARALLEL);
 
   return {
     async listInBBox(bbox, interests) {
@@ -84,7 +108,7 @@ export function createCachedPlacesRepository(
       // places_in_bbox has no limit, so the result equals the direct query, richest first.
       const grid = snapOut(bbox);
       const key = `${grid.minLng},${grid.minLat},${grid.maxLng},${grid.maxLat}`;
-      const all = await boxes(key, () => repo.listInBBox(grid));
+      const all = await boxes(key, () => limit(() => repo.listInBBox(grid)));
       return all.filter(
         ({ position: { lat, lng }, interests: tags }) =>
           lng >= bbox.minLng &&
@@ -96,7 +120,7 @@ export function createCachedPlacesRepository(
     },
 
     getById(id) {
-      return places(id, () => repo.getById(id));
+      return places(id, () => limit(() => repo.getById(id)));
     },
 
     // Not used by any route yet; every line is different, so caching would not help.

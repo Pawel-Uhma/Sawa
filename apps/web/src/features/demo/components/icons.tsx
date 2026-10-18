@@ -219,3 +219,13 @@ export function CloseIcon(props: IconProps) {
     </svg>
   );
 }
+
+export function MusicIcon(props: IconProps) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <path d="M9 18V5l11-2v13" />
+      <circle cx="6" cy="18" r="3" />
+      <circle cx="17" cy="16" r="3" />
+    </svg>
+  );
+}
