@@ -28,6 +28,8 @@ export type MapPalette = {
   selected: string;
   /** Fill of the start and transfer rings. */
   boardingFill: string;
+  /** Empty part of the countdown ring at a boarding stop. */
+  timerTrack: string;
   label: string;
   labelHalo: string;
   walk: string;
@@ -68,6 +70,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopText: "#ffffff",
     selected: "#18181b",
     boardingFill: "#ffffff",
+    timerTrack: "#e3e7e6",
     label: "#27272a",
     labelHalo: "#ffffff",
     walk: "#52525b",
@@ -100,6 +103,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopText: "#0e1615",
     selected: "#e6efed",
     boardingFill: "#0e1615",
+    timerTrack: "#2a3634",
     label: "#d5dfdd",
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
@@ -405,7 +409,7 @@ export function paleColor(hex: string, share = PALE_SHARE): string {
  * Map icons in `public/map-icons/`, 96 px PNGs registered with pixelRatio 2, so icon-size 1 is 48 css px.
  * Place markers are not here: they are drawn in the browser in their topic colour (place-stickers.ts).
  */
-export const MAP_ICONS = ["stop", "tram", "bus"] as const;
+export const MAP_ICONS = ["tram", "bus"] as const;
 export const MAP_ICON_PIXEL_RATIO = 2;
 
 export function mapIconId(name: string): string {

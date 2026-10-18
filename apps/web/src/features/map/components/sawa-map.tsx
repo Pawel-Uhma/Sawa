@@ -27,6 +27,7 @@ import {
   paddingWithSheet,
   resolveCamera,
 } from "../lib/camera";
+import { registerBoardingTimers } from "../lib/boarding-timers";
 import { registerClusterBadges } from "../lib/cluster-badges";
 import { loadMapIcons } from "../lib/map-icons";
 import {
@@ -234,6 +235,7 @@ export function SawaMap({
           // Place markers are drawn on demand; the map lives as long as this listener.
           registerPlaceStickers(event.target);
           registerClusterBadges(event.target);
+          registerBoardingTimers(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
@@ -263,7 +265,7 @@ export function SawaMap({
             route={route}
             selectedId={selectedId}
             activeId={activeStopId}
-            hasIcons={icons === "ready"}
+            theme={theme}
             palette={palette}
           />
         )}
