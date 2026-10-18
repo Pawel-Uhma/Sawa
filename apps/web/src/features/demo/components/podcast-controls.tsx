@@ -1,13 +1,14 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { type ReactNode, useState } from "react";
+import { type ReactNode, useEffect, useRef, useState } from "react";
 import { Spinner } from "@/components/waiting";
-import { useLang, useT } from "@/features/i18n";
+import { LANG_LOCALES, useLang, useT } from "@/features/i18n";
 import { haptic, SPRING } from "../lib/device";
+import { placesLabel } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
-import { formatClock, inMinutes, splitName } from "../lib/podcast";
-import { dueIndex, storyStartSec } from "../lib/ride-clock";
+import { inMinutes, splitName } from "../lib/podcast";
+import { storyStartSec } from "../lib/ride-clock";
 import {
   CloseIcon,
   PauseIcon,
@@ -18,15 +19,10 @@ import {
   StopIcon,
 } from "./icons";
 
-// Połowa kciuka suwaka (20 px, `.suwak-cienki` w globals.css): kropki i wypełnienie liczymy do jego środka
-const THUMB_HALF_PX = 10;
-// Przy gęstszej trasie kropki zlewają się w kreskę, więc ich nie rysujemy
-const MAX_DOTS = 24;
-
-/** Środek kciuka dla ułamka 0–1, jak `thumbCenter` w home-panel.tsx. */
-function thumbAt(fraction: number): string {
-  return `calc(${THUMB_HALF_PX}px + (100% - ${2 * THUMB_HALF_PX}px) * ${fraction})`;
-}
+// Szerokość jednego miejsca na linii; bieżące stoi na środku, jak na wyświetlaczu w tramwaju
+const STOP_W = 76;
+// Co ile przeliczamy godziny dojazdu przy miejscach
+const WALL_TICK_MS = 30_000;
 
 export type PodcastProps = {
   stops: MockStop[];
@@ -64,10 +60,7 @@ export function LiveDot({ on }: { on: boolean }) {
   );
 }
 
-/**
- * Wspólny stan nagłówka i doku. Przeciąganie suwaka tylko pokazuje cel (nazwa w nagłówku
- * zmienia się już w trakcie), przeskok następuje po puszczeniu.
- */
+/** Wspólny stan nagłówka i doku. */
 export function usePodcast({
   stops,
   activeIndex,
@@ -80,19 +73,15 @@ export function usePodcast({
 }: PodcastProps) {
   const lang = useLang();
   const t = useT();
-  const [dragSec, setDragSec] = useState<number | null>(null);
   const total = Math.max(totalSec, 1);
-  const sec = Math.min(total, dragSec ?? rideSec);
-  const dragging = dragSec !== null;
-  const index = dragging ? dueIndex(stops, dragSec) : activeIndex;
+  const sec = Math.min(total, rideSec);
+  const index = activeIndex;
   const stop = stops[index];
-  const next = stops[index + 1];
 
   // Odtwarzanie włączone, a opowieści jeszcze nie ma: jak „buforowanie” w Podcastach
-  const buffering = isPlaying && loading && !waiting && !dragging;
-  const status = dragging
-    ? t("Przejdź do", "Go to")
-    : waiting && !held
+  const buffering = isPlaying && loading && !waiting;
+  const status =
+    waiting && !held
       ? t("Najpierw", "First up")
       : buffering
         ? t("Sawa szykuje opowieść", "Sawa is getting ready")
@@ -100,25 +89,14 @@ export function usePodcast({
           ? t("Teraz", "Now")
           : t("Wstrzymane", "Paused");
 
-  // Jedno zdanie nad suwakiem: przed pierwszym miejscem kiedy Sawa zacznie, potem co dalej
+  // Przed pierwszym miejscem jedno zdanie, kiedy Sawa zacznie; potem ile miejsc zostało
+  const left = stops.length - 1 - index;
   const hint =
-    waiting && !dragging && stop
-      ? {
-          lead: t("Sawa zacznie na miejscu", "Sawa will start once you're there"),
-          name: null,
-          when: inMinutes(storyStartSec(stop) - sec, lang),
-        }
-      : next
-        ? {
-            lead: t("Dalej", "Next"),
-            name: splitName(next.name).title,
-            when: inMinutes(storyStartSec(next) - sec, lang),
-          }
-        : {
-            lead: t("Ostatnie miejsce tej przejażdżki", "Last place on this ride"),
-            name: null,
-            when: null,
-          };
+    waiting && stop
+      ? `${t("Sawa zacznie na miejscu", "Sawa will start once you're there")} · ${inMinutes(storyStartSec(stop) - sec, lang)}`
+      : left > 0
+        ? t(`Jeszcze ${placesLabel(left, "pl")}`, `${placesLabel(left, "en")} to go`)
+        : t("Ostatnie miejsce tej przejażdżki", "Last place on this ride");
 
   return {
     stops,
@@ -126,8 +104,6 @@ export function usePodcast({
     stop,
     sec,
     total,
-    dragSec,
-    setDragSec,
     isPlaying,
     waiting,
     held,
@@ -189,88 +165,58 @@ export function PodcastHeader({ podcast, onLeave }: { podcast: Podcast; onLeave:
 
 export type PodcastDockProps = {
   podcast: Podcast;
+  /** Postęp bieżącej opowieści, 0–100: pierścień wokół przycisku odtwarzania. */
+  progress: number;
   onToggle: () => void;
   onStop: () => void;
   onBack: () => void;
   onNext: () => void;
   onMore: () => void;
-  /** Puszczenie suwaka: przejażdżka przeskakuje do tej sekundy. */
-  onSeek: (sec: number) => void;
+  /** Stuknięcie w miejsce na linii: jego opowieść od początku. */
+  onJump: (index: number) => void;
 };
 
 /**
- * Dok przy dolnej krawędzi, pod kciukiem: co dalej, suwak całej przejażdżki i jeden rząd
- * przycisków. Rzadsze akcje („Więcej”, stop) są ikonami po bokach transportu, jak w Muzyce.
+ * Dok przy dolnej krawędzi, pod kciukiem: linia miejsc jak w tramwaju (gdzie jestem, co dalej
+ * i o której), pod nią ile zostało i jeden rząd przycisków. Postęp opowieści jest w pierścieniu
+ * wokół odtwarzania, bo oś czasu całej jazdy nic pasażerowi nie mówi.
  */
 export function PodcastDock({
   podcast,
+  progress,
   onToggle,
   onStop,
   onBack,
   onNext,
   onMore,
-  onSeek,
+  onJump,
 }: PodcastDockProps) {
   const t = useT();
-  const { stops, stop, sec, total, dragSec, setDragSec, hint, buffering, isPlaying } = podcast;
-
-  function commit() {
-    if (dragSec === null) return;
-    haptic();
-    onSeek(dragSec);
-    setDragSec(null);
-  }
+  const lang = useLang();
+  const { stops, index, sec, total, hint, buffering, isPlaying, waiting } = podcast;
+  const now = useWallClock();
+  const at = (rideSec: number) =>
+    now === null
+      ? null
+      : new Intl.DateTimeFormat(LANG_LOCALES[lang], { hour: "2-digit", minute: "2-digit" }).format(
+          now + (rideSec - sec) * 1000,
+        );
+  const arrival = at(total);
 
   return (
     <div className="flex flex-col">
-      <p className="flex min-w-0 items-baseline gap-1.5 text-[13px] text-tekst-2">
-        <span className="min-w-0 truncate">
-          {hint.lead}
-          {hint.name && (
-            <>
-              : <span className="font-semibold text-tekst">{hint.name}</span>
-            </>
-          )}
-        </span>
-        {hint.when && <span className="shrink-0 tabular-nums text-tekst-3">· {hint.when}</span>}
+      <StopLine stops={stops} index={index} waiting={waiting} at={at} onJump={onJump} />
+      <p className="mt-2 flex justify-between gap-3 text-[12px] font-semibold text-tekst-3">
+        <span className="min-w-0 truncate">{hint}</span>
+        {arrival && (
+          <span className="shrink-0 tabular-nums">
+            {t("Na miejscu ok. ", "Arriving about ")}
+            <span className="text-tekst-2">{arrival}</span>
+          </span>
+        )}
       </p>
 
-      <div className="mt-2">
-        <div className="relative">
-          {stops.length <= MAX_DOTS &&
-            stops.map((s) => (
-              <span
-                key={s.id}
-                aria-hidden="true"
-                className={`pointer-events-none absolute top-[14px] z-10 size-1 -translate-x-1/2 rounded-full ${
-                  storyStartSec(s) <= sec ? "bg-white/90" : "bg-tekst/25"
-                }`}
-                style={{ left: thumbAt(storyStartSec(s) / total) }}
-              />
-            ))}
-          <input
-            type="range"
-            min={0}
-            max={total}
-            step={1}
-            value={Math.round(sec)}
-            aria-label={t("Miejsce w przejażdżce", "Position in the ride")}
-            aria-valuetext={`${stop?.name ?? ""}, ${formatClock(sec)}`}
-            onChange={(event) => setDragSec(Number(event.target.value))}
-            onPointerUp={commit}
-            onKeyUp={commit}
-            onBlur={commit}
-            style={{ ["--postep" as string]: thumbAt(sec / total) }}
-            className="suwak suwak-cienki relative block"
-          />
-        </div>
-        <div className="-mt-0.5 flex justify-between text-[11px] font-semibold tabular-nums text-tekst-3">
-          <span>{formatClock(sec)}</span>
-          <span>−{formatClock(total - sec)}</span>
-        </div>
-      </div>
-
-      <div className="mt-1 flex items-center justify-between">
+      <div className="mt-2 flex items-center justify-between">
         <button
           type="button"
           onClick={() => {
@@ -305,6 +251,7 @@ export function PodcastDock({
             transition={SPRING}
             className="relative flex size-[68px] items-center justify-center rounded-full bg-glebia text-white shadow-[0_8px_20px_rgba(23,112,111,0.3)] transition-colors hover:bg-glebia-ciemna"
           >
+            <ProgressRing progress={progress} show={!buffering && !waiting} />
             <BufferRing show={buffering} />
             <AnimatePresence mode="popLayout" initial={false}>
               <motion.span
@@ -347,6 +294,159 @@ export function PodcastDock({
         </button>
       </div>
     </div>
+  );
+}
+
+/**
+ * Linia miejsc jak wyświetlacz w tramwaju: minione wyszarzone, bieżące w koralu na środku,
+ * następne z godziną dojazdu. Przewija się palcem w bok; po zmianie miejsca wraca na środek.
+ */
+function StopLine({
+  stops,
+  index,
+  waiting,
+  at,
+  onJump,
+}: {
+  stops: MockStop[];
+  index: number;
+  waiting: boolean;
+  at: (rideSec: number) => string | null;
+  onJump: (index: number) => void;
+}) {
+  const t = useT();
+  const reduce = useReducedMotion();
+  const listRef = useRef<HTMLOListElement>(null);
+  const placed = useRef(false);
+
+  useEffect(() => {
+    const list = listRef.current;
+    if (!list) return;
+    // Pierwszy raz bez animacji, potem płynnie do nowego miejsca
+    list.scrollTo({
+      left: index * STOP_W,
+      behavior: reduce || !placed.current ? "auto" : "smooth",
+    });
+    placed.current = true;
+  }, [index, reduce]);
+
+  return (
+    <ol
+      ref={listRef}
+      aria-label={t("Miejsca na trasie", "Places on the route")}
+      className="-mx-4 flex snap-x overflow-x-auto overscroll-x-contain px-[calc(50%-38px)] [mask-image:linear-gradient(to_right,transparent,#000_24px,#000_calc(100%-24px),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+    >
+      {stops.map((s, i) => {
+        const past = i < index;
+        const current = i === index;
+        const when = current
+          ? waiting
+            ? at(storyStartSec(s))
+            : t("teraz", "now")
+          : at(storyStartSec(s));
+        return (
+          <li key={s.id} className="relative w-[76px] shrink-0 snap-center">
+            {i > 0 && (
+              <span
+                aria-hidden="true"
+                className={`absolute top-[10px] left-0 h-1 w-1/2 ${i <= index ? "bg-glebia/40" : "bg-tekst/10"}`}
+              />
+            )}
+            {i < stops.length - 1 && (
+              <span
+                aria-hidden="true"
+                className={`absolute top-[10px] right-0 h-1 w-1/2 ${past ? "bg-glebia/40" : "bg-tekst/10"}`}
+              />
+            )}
+            <button
+              type="button"
+              aria-current={current ? "step" : undefined}
+              aria-label={`${i + 1}. ${s.name}${when ? `, ${when}` : ""}`}
+              onClick={() => {
+                if (current) return;
+                haptic(4);
+                onJump(i);
+              }}
+              className="relative flex w-full flex-col items-center px-1 text-center transition-transform active:scale-[0.94]"
+            >
+              <span className="flex h-6 items-center">
+                <span
+                  className={`rounded-full transition-[width,height,background-color] ${
+                    current
+                      ? "size-[22px] border-4 border-powierzchnia bg-koral shadow-[0_0_0_2px_var(--koral),0_4px_10px_rgba(242,117,95,0.35)]"
+                      : past
+                        ? "size-3.5 bg-glebia/45"
+                        : "size-3.5 border-[3px] border-tekst/20 bg-powierzchnia"
+                  }`}
+                />
+              </span>
+              <span
+                className={`mt-1.5 line-clamp-2 text-[11.5px] leading-[1.25] ${
+                  current
+                    ? "font-bold text-koral"
+                    : past
+                      ? "font-semibold text-tekst-3"
+                      : "font-bold text-tekst"
+                }`}
+              >
+                {splitName(s.name).title}
+              </span>
+              {when && (
+                <span className="mt-0.5 text-[11px] font-semibold tabular-nums text-tekst-3">
+                  {when}
+                </span>
+              )}
+            </button>
+          </li>
+        );
+      })}
+    </ol>
+  );
+}
+
+/** Teraz w ms, co pół minuty; null przed pierwszym efektem (Date.now() w renderze psuje prerender). */
+function useWallClock(): number | null {
+  const [now, setNow] = useState<number | null>(null);
+  useEffect(() => {
+    setNow(Date.now());
+    const timer = setInterval(() => setNow(Date.now()), WALL_TICK_MS);
+    return () => clearInterval(timer);
+  }, []);
+  return now;
+}
+
+/** Ile zostało z bieżącej opowieści: cienki łuk wokół przycisku odtwarzania. */
+function ProgressRing({ progress, show }: { progress: number; show: boolean }) {
+  if (!show) return null;
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 80 80"
+      className="pointer-events-none absolute -inset-[6px] size-[80px] -rotate-90"
+    >
+      <circle
+        cx="40"
+        cy="40"
+        r="37"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="3"
+        className="text-glebia/15"
+      />
+      <circle
+        cx="40"
+        cy="40"
+        r="37"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+        pathLength={100}
+        strokeDasharray="100"
+        strokeDashoffset={100 - Math.min(100, Math.max(0, progress))}
+        className="text-glebia transition-[stroke-dashoffset] duration-500 ease-linear"
+      />
+    </svg>
   );
 }
 
