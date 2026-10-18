@@ -157,6 +157,7 @@ export const MAP_CONTRAST_PALETTE: MapPalette = {
   stopFill: CONTRAST_YELLOW,
   stopText: "#000000",
   selected: CONTRAST_YELLOW,
+  activeLabel: CONTRAST_YELLOW,
   boardingFill: "#000000",
   timerTrack: "#3a3a3a",
   label: "#ffffff",

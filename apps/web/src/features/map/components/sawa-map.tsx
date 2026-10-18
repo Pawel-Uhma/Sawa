@@ -281,6 +281,7 @@ export function SawaMap({
             hasIcons={icons === "ready"}
             knownPlaces={places.data}
             theme={theme}
+            stickerLook={isHighContrast ? "contrast" : theme}
             palette={palette}
           />
         )}
