@@ -97,8 +97,20 @@ async function* timedPieces(body: ReadableStream<Uint8Array>): AsyncGenerator<Ti
   }
 }
 
+/** Answers about the key, not the text: quota spent, bad key, no permission, rate limit. */
+const KEY_REFUSED = new Set([401, 402, 403, 429]);
+
+/** Still UPSTREAM_ERROR for the caller; `send` tries the fallback key on it. */
+class KeyRefused extends AppError {
+  constructor(message: string) {
+    super("UPSTREAM_ERROR", message);
+  }
+}
+
 export type ElevenLabsOptions = {
   apiKey: string;
+  /** Tried when `apiKey` is refused (no credits, revoked, rate limit); stays in use from then. */
+  fallbackApiKey?: string;
   voiceId?: string;
   modelId?: string;
 };
@@ -106,8 +118,28 @@ export type ElevenLabsOptions = {
 export function createElevenLabsSynthesizer(options: ElevenLabsOptions): SpeechSynthesizer {
   const voiceId = options.voiceId ?? SAWA_VOICE_ID;
   const modelId = options.modelId ?? SAWA_MODEL_ID;
+  const keys = [options.apiKey, options.fallbackApiKey].filter((k): k is string => Boolean(k));
+  // Index of the key in use: once the first runs out of credits, the next asks go to the second.
+  let current = 0;
 
   async function send(
+    path: string,
+    body: Record<string, unknown>,
+    accept = "audio/mpeg",
+  ): Promise<Response> {
+    for (;;) {
+      const key = current;
+      try {
+        return await sendWith(keys[key] ?? "", path, body, accept);
+      } catch (err) {
+        if (!(err instanceof KeyRefused) || key + 1 >= keys.length) throw err;
+        if (current === key) current = key + 1;
+      }
+    }
+  }
+
+  async function sendWith(
+    apiKey: string,
     path: string,
     body: Record<string, unknown>,
     accept = "audio/mpeg",
@@ -117,7 +149,7 @@ export function createElevenLabsSynthesizer(options: ElevenLabsOptions): SpeechS
       res = await fetch(`${ENDPOINT}/${voiceId}${path}?output_format=${OUTPUT_FORMAT}`, {
         method: "POST",
         headers: {
-          "xi-api-key": options.apiKey,
+          "xi-api-key": apiKey,
           "Content-Type": "application/json",
           Accept: accept,
         },
@@ -133,7 +165,9 @@ export function createElevenLabsSynthesizer(options: ElevenLabsOptions): SpeechS
     if (!res.ok) {
       // The body explains quota and permission errors; it never contains the key.
       const detail = (await res.text()).slice(0, 300);
-      throw new AppError("UPSTREAM_ERROR", `ElevenLabs answered ${res.status}: ${detail}`);
+      const message = `ElevenLabs answered ${res.status}: ${detail}`;
+      if (KEY_REFUSED.has(res.status)) throw new KeyRefused(message);
+      throw new AppError("UPSTREAM_ERROR", message);
     }
     return res;
   }
