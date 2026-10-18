@@ -551,3 +551,25 @@ input[type="range"].suwak.suwak-cienki::-moz-range-thumb {
     background-image: none;
   }
 }
+
+/* Kropka „na żywo”: pierścień z rdzeniem, który oddycha w tę i z powrotem, bez skoku na początku pętli */
+@keyframes oddech {
+  from {
+    opacity: 0.35;
+    transform: scale(0.55);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.kropka-oddech {
+  animation: oddech 1.4s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kropka-oddech {
+    animation: none;
+  }
+}

@@ -45,20 +45,17 @@ export type Podcast = ReturnType<typeof usePodcast>;
 
 type SawaMode = "waiting" | "thinking" | "telling" | "paused";
 
-/** Pulsująca kropka „na żywo”; przy pauzie stoi i szarzeje. */
+/**
+ * Kropka „na żywo”: koralowy pierścień, w środku rdzeń, który płynnie oddycha (animacja CSS
+ * w obie strony, więc nie skacze przy pętli ani przy rerenderze). Przy pauzie stoi i szarzeje.
+ */
 export function LiveDot({ on }: { on: boolean }) {
-  const reduce = useReducedMotion();
   return (
-    <span className="relative flex size-2 shrink-0">
-      {on && !reduce && (
-        <motion.span
-          className="absolute inset-0 rounded-full bg-koral"
-          animate={{ scale: [1, 2.2], opacity: [0.5, 0] }}
-          transition={{ duration: 1.6, repeat: Number.POSITIVE_INFINITY, ease: "easeOut" }}
-        />
-      )}
+    <span
+      className={`relative flex size-2.5 shrink-0 items-center justify-center rounded-full border-[1.5px] transition-colors ${on ? "border-koral" : "border-tekst-3"}`}
+    >
       <span
-        className={`relative size-2 rounded-full transition-colors ${on ? "bg-koral" : "bg-tekst-3"}`}
+        className={`size-1 rounded-full transition-colors ${on ? "kropka-oddech bg-koral" : "bg-tekst-3"}`}
       />
     </span>
   );
@@ -84,14 +81,6 @@ export function usePodcast({
 
   // Odtwarzanie włączone, a opowieści jeszcze nie ma: jak „buforowanie” w Podcastach
   const buffering = isPlaying && loading && !waiting;
-  const status =
-    waiting && !held
-      ? t("Najpierw", "First up")
-      : buffering
-        ? t("Sawa szykuje opowieść", "Sawa is getting ready")
-        : isPlaying
-          ? t("Teraz", "Now")
-          : t("Wstrzymane", "Paused");
 
   // Co Sawa robi teraz: czeka na miejsce, myśli nad opowieścią, mówi albo stoi
   const mode: SawaMode =
@@ -115,7 +104,6 @@ export function usePodcast({
     waiting,
     held,
     buffering,
-    status,
     mode,
     waitIn,
     hint,
@@ -130,18 +118,16 @@ export function usePodcast({
 export function PodcastHeader({ podcast, onLeave }: { podcast: Podcast; onLeave: () => void }) {
   const reduce = useReducedMotion();
   const t = useT();
-  const { stop, stops, index, status, buffering, isPlaying } = podcast;
+  const { stop, stops, index, mode, waitIn } = podcast;
   const name = stop ? splitName(stop.name) : null;
 
   return (
     <div className="flex flex-col">
       <div className="flex items-center gap-2.5">
-        <p className="etykieta flex min-w-0 flex-1 items-center gap-2" aria-live="polite">
-          {buffering ? <Spinner className="size-3 text-koral" /> : <LiveDot on={isPlaying} />}
-          <span className="truncate">
-            {status} · {index + 1} {t("z", "of")} {stops.length}
-          </span>
-        </p>
+        <SawaStatus mode={mode} waitIn={waitIn} />
+        <span className="etykieta shrink-0 tabular-nums">
+          {index + 1} {t("z", "of")} {stops.length}
+        </span>
         {/* Krzyżyk anuluje trasę i wraca do planu, jak zamknięcie arkusza w Mapach */}
         <button
           type="button"
@@ -214,7 +200,6 @@ export function PodcastDock({
 
   return (
     <div className="flex flex-col">
-      <SawaStatus mode={mode} waitIn={podcast.waitIn} />
       <StopLine stops={stops} index={index} mode={mode} at={at} onJump={onJump} />
       <p className="mt-2 flex justify-between gap-3 text-[12px] font-semibold text-tekst-3">
         <span className="min-w-0 truncate">{hint}</span>
@@ -344,7 +329,7 @@ function StopLine({
     <ol
       ref={listRef}
       aria-label={t("Miejsca na trasie", "Places on the route")}
-      className="-mx-4 mt-3 flex snap-x overflow-x-auto overscroll-x-contain px-[calc(50%-48px)] [mask-image:linear-gradient(to_right,transparent,#000_24px,#000_calc(100%-24px),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      className="-mx-4 mt-1 flex snap-x overflow-x-auto overscroll-x-contain px-[calc(50%-48px)] [mask-image:linear-gradient(to_right,transparent,#000_24px,#000_calc(100%-24px),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
       {stops.map((s, i) => {
         const past = i < index;
@@ -420,7 +405,7 @@ function StopLine({
 }
 
 /**
- * Jedno zdanie nad linią, co Sawa teraz robi, żeby cisza nie wyglądała na zawieszenie:
+ * Wiersz stanu w nagłówku, co Sawa teraz robi, żeby cisza nie wyglądała na zawieszenie:
  * czeka, aż podjedziesz (z czasem), myśli nad opowieścią (kolejne kroki), opowiada albo stoi.
  */
 function SawaStatus({ mode, waitIn }: { mode: SawaMode; waitIn: string | null }) {
@@ -434,33 +419,23 @@ function SawaStatus({ mode, waitIn }: { mode: SawaMode; waitIn: string | null })
         ? (thinking ?? t("Sawa zbiera myśli…", "Sawa is gathering her thoughts…"))
         : mode === "telling"
           ? t("Sawa opowiada", "Sawa is telling the story")
-          : t("Wstrzymane. Stuknij, a Sawa mówi dalej", "Paused. Tap play and Sawa goes on");
+          : t("Wstrzymane", "Paused");
 
   return (
-    <div
-      aria-live="polite"
-      className={`flex min-h-9 items-center gap-2.5 rounded-2xl px-3 py-2 text-[13px] font-semibold transition-colors ${
-        mode === "waiting" || mode === "thinking"
-          ? "bg-mieta-jasna text-glebia-ciemna"
-          : "bg-tlo-2 text-tekst-2"
-      }`}
-    >
-      <span className="flex size-4 shrink-0 items-center justify-center">
+    <p className="etykieta flex min-w-0 flex-1 items-center gap-2" aria-live="polite">
+      <span className="flex size-3 shrink-0 items-center justify-center">
         {mode === "thinking" ? (
-          <Spinner className="size-3.5 text-glebia" />
+          <Spinner className="size-3 text-koral" />
         ) : mode === "waiting" ? (
           <WaitDots reduce={Boolean(reduce)} />
         ) : (
           <LiveDot on={mode === "telling"} />
         )}
       </span>
-      <span className="min-w-0 flex-1 truncate">
-        <RollingText text={text} />
+      <span className="min-w-0 truncate">
+        <RollingText text={waitIn && mode === "waiting" ? `${text} · ${waitIn}` : text} />
       </span>
-      {mode === "waiting" && waitIn && (
-        <span className="shrink-0 tabular-nums text-glebia">{waitIn}</span>
-      )}
-    </div>
+    </p>
   );
 }
 
@@ -471,7 +446,7 @@ function WaitDots({ reduce }: { reduce: boolean }) {
       {[0, 1, 2].map((i) => (
         <motion.span
           key={i}
-          className="size-[4px] rounded-full bg-glebia"
+          className="size-[3px] rounded-full bg-koral"
           animate={reduce ? undefined : { opacity: [0.25, 1, 0.25] }}
           transition={{
             duration: 1.2,
