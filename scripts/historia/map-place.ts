@@ -4,6 +4,7 @@
 import {
   INTERESTS,
   type Interest,
+  isDryFact,
   PLACE_TAGS,
   type PlaceSubkind,
   type PlaceTag,
@@ -187,7 +188,8 @@ export function mapPlace(feature: HistoriaFeature, now: Date): PlaceRow {
     confidence: (p.pewnosc && CONFIDENCE[p.pewnosc]) ?? null,
     location_precision: (p.lokalizacja && PRECISION[p.lokalizacja]) ?? null,
     origin: p.zrodlo_rekordu ?? "curated",
-    richness: p.fakty.length + trivia.length,
+    // Story lines only: map data ("w OSM opisany jako…") gives Sawa nothing to tell.
+    richness: [...p.fakty, ...trivia].filter((t) => !isDryFact(t)).length,
     notes: p.uwagi ?? null,
     raw: p,
     updated_at: now.toISOString(),
