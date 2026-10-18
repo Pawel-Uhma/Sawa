@@ -1,3 +1,4 @@
+export type { LocateStatus } from "./components/locate-button";
 export { SawaMap, type SawaMapProps } from "./components/sawa-map";
 export { usePlace } from "./hooks/use-place";
 export { useSelectedPlace } from "./hooks/use-selected-place";

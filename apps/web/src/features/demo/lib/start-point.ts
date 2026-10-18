@@ -82,47 +82,142 @@ export function startLabel(status: StartStatus, lang: Lang = "pl"): string {
   }
 }
 
+/** Bez nowego odczytu przez tyle czasu Safari zwykle przestał śledzić, więc zaczynamy od nowa. */
+export const GPS_STALL_MS = 20_000;
+
+/** Po błędzie innym niż brak zgody pytamy o pozycję znowu po chwili. */
+const GPS_RETRY_MS = 3_000;
+
 /**
  * Start przejażdżki. Lokalizację śledzi dopiero, gdy `enabled` (po onboardingu),
  * żeby przeglądarka nie pytała o zgodę na pierwszym ekranie. `position` to każdy odczyt
  * GPS (kropka na mapie, zegar jazdy), `point` rusza się dopiero o `MIN_START_MOVE_M`.
+ *
+ * Safari na iOS po zgaszeniu ekranu, przejściu w tło albo po błędzie potrafi po cichu
+ * zatrzymać `watchPosition`. Dlatego śledzenie startuje od nowa po powrocie na stronę,
+ * po błędzie i gdy odczyty stoją dłużej niż `GPS_STALL_MS`. `retry()` pyta o zgodę jeszcze raz.
  */
 export function useStartPoint(enabled: boolean) {
   const [mode, setModeState] = useState<StartMode>("gps");
   const [fix, setFix] = useState<LatLng | null>(null);
   const [position, setPosition] = useState<LatLng | null>(null);
   const [error, setError] = useState<GeoError | null>(null);
+  const [attempt, setAttempt] = useState(0);
 
   useEffect(() => setModeState(loadStartMode()), []);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: attempt only restarts the watch (retry)
   useEffect(() => {
     if (!enabled || mode !== "gps") return;
     if (!("geolocation" in navigator)) {
       setError("unavailable");
       return;
     }
-    const id = navigator.geolocation.watchPosition(
-      ({ coords }) => {
-        const next = { lat: coords.latitude, lng: coords.longitude };
-        setPosition(next);
-        setFix((current) =>
-          current && haversineM(current, next) < MIN_START_MOVE_M ? current : next,
-        );
-        setError(null);
-      },
-      (err) => setError(err.code === err.PERMISSION_DENIED ? "denied" : "unavailable"),
-      { enableHighAccuracy: true, maximumAge: 30_000, timeout: 20_000 },
-    );
-    return () => navigator.geolocation.clearWatch(id);
-  }, [enabled, mode]);
+    const geo = navigator.geolocation;
+    let watchId: number | null = null;
+    let retryTimer: number | undefined;
+    // Zero, dopóki przeglądarka nic nie odpowiedziała: wtedy może jeszcze czekać na zgodę
+    let lastFixAt = 0;
+    let isDenied = false;
+
+    const stop = () => {
+      window.clearTimeout(retryTimer);
+      if (watchId !== null) geo.clearWatch(watchId);
+      watchId = null;
+    };
+    const watch = () => {
+      stop();
+      isDenied = false;
+      watchId = geo.watchPosition(
+        ({ coords }) => {
+          lastFixAt = Date.now();
+          const next = { lat: coords.latitude, lng: coords.longitude };
+          setPosition(next);
+          setFix((current) =>
+            current && haversineM(current, next) < MIN_START_MOVE_M ? current : next,
+          );
+          setError(null);
+        },
+        (err) => {
+          if (err.code === err.PERMISSION_DENIED) {
+            stop();
+            isDenied = true;
+            // Bez zgody nie trzymamy starej pozycji, bo wyglądałaby jak żywy GPS
+            setFix(null);
+            setPosition(null);
+            setError("denied");
+            return;
+          }
+          if (lastFixAt === 0) lastFixAt = Date.now();
+          setError("unavailable");
+          window.clearTimeout(retryTimer);
+          retryTimer = window.setTimeout(watch, GPS_RETRY_MS);
+        },
+        { enableHighAccuracy: true, maximumAge: 5_000, timeout: GPS_STALL_MS },
+      );
+    };
+
+    // Po powrocie na stronę śledzenie zaczyna się od nowa. Po odmowie tylko wtedy, gdy zgoda
+    // jest już w ustawieniach, bo inaczej Safari pytałby przy każdym przełączeniu karty.
+    const resume = async () => {
+      if (document.visibilityState !== "visible") return;
+      if (isDenied && (await permissionState()) !== "granted") return;
+      watch();
+    };
+    const checkStall = () => {
+      if (document.visibilityState !== "visible" || isDenied || lastFixAt === 0) return;
+      if (Date.now() - lastFixAt > GPS_STALL_MS) watch();
+    };
+
+    watch();
+    const stallTimer = window.setInterval(checkStall, 5_000);
+    document.addEventListener("visibilitychange", resume);
+    window.addEventListener("pageshow", resume);
+    // Zgoda włączona w ustawieniach strony (Chrome, Safari 16+) od razu wraca na mapę
+    let permission: PermissionStatus | null = null;
+    const onPermission = () => {
+      if (permission?.state === "granted" && isDenied) watch();
+    };
+    navigator.permissions
+      ?.query({ name: "geolocation" })
+      .then((status) => {
+        permission = status;
+        status.addEventListener("change", onPermission);
+      })
+      .catch(() => {});
+    return () => {
+      stop();
+      window.clearInterval(stallTimer);
+      document.removeEventListener("visibilitychange", resume);
+      window.removeEventListener("pageshow", resume);
+      permission?.removeEventListener("change", onPermission);
+    };
+  }, [enabled, mode, attempt]);
 
   const setMode = useCallback((next: StartMode) => {
     saveStartMode(next);
     setModeState(next);
   }, []);
 
-  const start = useMemo(() => resolveStart(mode, fix, error), [mode, fix, error]);
+  /** Pyta o lokalizację jeszcze raz (przycisk po odmowie albo gdy GPS zamilkł). */
+  const retry = useCallback(() => {
+    setError(null);
+    setAttempt((n) => n + 1);
+  }, []);
+
+  // Z pozycją w ręku błąd kolejnego odczytu nic nie zmienia; nie przeliczamy wtedy startu (i trasy)
+  const startError = fix ? null : error;
+  const start = useMemo(() => resolveStart(mode, fix, startError), [mode, fix, startError]);
   // Poza trasą (start spod 42 Warsaw, brak zgody, poza Warszawą) nie udajemy, że wiemy, gdzie jest telefon
   const live = start.status === "located" ? position : null;
-  return { ...start, position: live, mode, setMode };
+  return { ...start, position: live, mode, setMode, retry };
+}
+
+/** Stan zgody z Permissions API; null, gdy przeglądarka go nie zna. */
+async function permissionState(): Promise<PermissionState | null> {
+  try {
+    return (await navigator.permissions?.query({ name: "geolocation" }))?.state ?? null;
+  } catch {
+    return null;
+  }
 }

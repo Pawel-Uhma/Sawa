@@ -1,7 +1,7 @@
 "use client";
 
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { LatLng, PlaceSummaryFeature, Route } from "@sawa/shared";
+import { type LatLng, type PlaceSummaryFeature, type Route, toLngLat } from "@sawa/shared";
 import type { GeoJSONSource, Map as MapLibre } from "maplibre-gl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -44,6 +44,7 @@ import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
+import { LocateButton, type LocateProps } from "./locate-button";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import {
   PLACES_CLUSTER_LAYER_ID,
@@ -59,6 +60,9 @@ import { UserLayer } from "./user-layer";
 const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
 
 const CAMERA_DURATION_MS = 800;
+
+/** Zoom the "back to me" button goes to at least. */
+const LOCATE_ZOOM = 15.5;
 
 export type SawaMapProps = {
   route?: Route;
@@ -81,6 +85,11 @@ export type SawaMapProps = {
   onMapClick?: (point: LatLng) => void;
   /** Topics the user picked; unused while places are coloured by kind group, not topic. */
   interests?: readonly string[];
+  /**
+   * "Back to me" button in the bottom right corner. While it follows the dot, screen camera
+   * moves wait; a drag or a new `followResetKey` (e.g. the user picked a place) ends following.
+   */
+  locate?: LocateProps & { followResetKey?: string; bottomPx?: number };
 };
 
 export function SawaMap({
@@ -94,6 +103,7 @@ export function SawaMap({
   hasPlaceSheet = true,
   hasZoomControls = true,
   onMapClick,
+  locate,
 }: SawaMapProps) {
   const t = useT();
   const mapRef = useRef<MapRef>(null);
@@ -139,21 +149,71 @@ export function SawaMap({
   const move = resolveCamera(camera, route);
   // Opening or closing the card refits the view, so the route does not end up under it.
   const moveKey = `${cameraMoveKey(move, fullPadding)}|${isSheetOpen}`;
+  const [isFollowing, setIsFollowing] = useState(false);
+  const followRef = useRef(false);
+  followRef.current = isFollowing && Boolean(user);
+  const [mapHeight, setMapHeight] = useState(0);
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: moveKey holds move and padding by value; the objects themselves are new on every render
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!isLoaded || !map || !move) return;
-    // MapLibre reads an explicit `zoom: undefined` / `maxZoom: undefined` as a value (camera goes NaN),
-    // so optional options are only passed when set.
+  function cameraPaddingOf(map: MapRef): MapPadding {
     const container = map.getContainer();
-    const cameraPadding = isSheetOpen
+    return isSheetOpen
       ? paddingWithSheet(fullPadding, {
           width: container.clientWidth,
           height: container.clientHeight,
         })
       : fullPadding;
-    const options = { padding: cameraPadding, duration: CAMERA_DURATION_MS };
+  }
+
+  function easeToUser(zoomAtLeast?: number) {
+    const map = mapRef.current;
+    if (!map || !user) return;
+    const zoom = zoomAtLeast === undefined ? map.getZoom() : Math.max(map.getZoom(), zoomAtLeast);
+    map.easeTo({
+      center: toLngLat(user),
+      zoom,
+      padding: cameraPaddingOf(map),
+      duration: CAMERA_DURATION_MS,
+    });
+  }
+
+  // A choice the user made on screen (a place, a stop) wins over following the dot.
+  // Runs before the camera effect, so that move is not skipped.
+  const followResetKey = locate?.followResetKey;
+  // biome-ignore lint/correctness/useExhaustiveDependencies: only a new key ends following
+  useEffect(() => {
+    followRef.current = false;
+    setIsFollowing(false);
+  }, [followResetKey]);
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: follows the dot by value, not by object
+  useEffect(() => {
+    if (isLoaded && followRef.current) easeToUser();
+  }, [user?.lat, user?.lng, isLoaded]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!isLoaded || !map) return;
+    const container = map.getContainer();
+    const measure = () => setMapHeight(container.clientHeight);
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, [isLoaded]);
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: moveKey holds move and padding by value; the objects themselves are new on every render
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!isLoaded || !map) return;
+    // Following: the screen's own move waits, a new padding only shifts the dot
+    if (followRef.current) {
+      easeToUser();
+      return;
+    }
+    if (!move) return;
+    // MapLibre reads an explicit `zoom: undefined` / `maxZoom: undefined` as a value (camera goes NaN),
+    // so optional options are only passed when set.
+    const options = { padding: cameraPaddingOf(map), duration: CAMERA_DURATION_MS };
     if (move.type === "fit") {
       map.fitBounds(
         move.bounds,
@@ -225,6 +285,7 @@ export function SawaMap({
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
+        onDragStart={() => setIsFollowing(false)}
         // The map stays flat. Two-finger pitch also hijacks a pinch that starts mid-pan and blocks the zoom.
         touchPitch={false}
         attributionControl={false}
@@ -288,6 +349,22 @@ export function SawaMap({
         </StatusPill>
       </div>
       <TopicLegend hasZoomControls={hasZoomControls} />
+      {/* Bez kropki (start spod 42 Warsaw, gdy jesteś poza Warszawą) nie ma do czego wracać */}
+      {locate && (user || locate.status !== "found") && (
+        <LocateButton
+          status={locate.status}
+          onRetry={locate.onRetry}
+          isFollowing={followRef.current}
+          onLocate={() => {
+            followRef.current = true;
+            setIsFollowing(true);
+            easeToUser(LOCATE_ZOOM);
+          }}
+          bottomPx={(locate.bottomPx ?? fullPadding.bottom) + 12}
+          rightPx={Math.max(fullPadding.right, 16)}
+          mapHeightPx={mapHeight}
+        />
+      )}
       {selected && <PlaceSheet key={selected.id} place={selected} onClose={() => select(null)} />}
     </div>
   );

@@ -49,6 +49,7 @@ type HomePanelProps = {
   locating: boolean;
   collapsed: boolean;
   onCollapsedChange: (collapsed: boolean) => void;
+  onCoverChange?: (px: number) => void;
 };
 
 /** Podpisy pod suwakiem w miejscach ich wartości (suwak jest liniowy, więc 1 h nie leży w 1/4). */
@@ -92,6 +93,7 @@ export function HomePanel({
   locating,
   collapsed,
   onCollapsedChange,
+  onCoverChange,
 }: HomePanelProps) {
   const sawa = useAnimationControls();
   const t = useT();
@@ -135,6 +137,7 @@ export function HomePanel({
       collapsed={collapsed}
       onCollapsedChange={onCollapsedChange}
       peekPx={64}
+      onCoverChange={onCoverChange}
       className="rounded-[28px] px-4 pb-4 pt-5 md:rounded-[32px] md:px-6 md:pb-6 md:pt-6"
     >
       <Grabber />
