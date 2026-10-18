@@ -92,6 +92,8 @@ describe("createVehicleTracker", () => {
     const ride = vehicles[1];
     expect(ride?.track.at(-1)?.[2]).toBe(NOW_MS + 120_000);
     expect(Date.parse(ride?.boardAt ?? "")).toBeGreaterThan(NOW_MS);
+    // The whole route of the line, not only the stretch the tracks cover.
+    expect(res.legs[0]?.shape?.length).toBeGreaterThanOrEqual(2);
   });
 
   it("marks a leg whose stops are not on the line", async () => {

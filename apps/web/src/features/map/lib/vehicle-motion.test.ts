@@ -8,7 +8,6 @@ import {
   type VehicleMotionState,
   type VehicleOnLeg,
   vehicleCollection,
-  vehicleTrails,
 } from "./vehicle-motion";
 
 const T0 = Date.parse("2026-10-17T16:00:00Z");
@@ -173,25 +172,5 @@ describe("vehicleCollection", () => {
     const [feature] = vehicleCollection(state, T0 + 5_000, REDUCED_MOTION_TIMING, false).features;
     // Driving east is a bearing of about 90°.
     expect(feature?.properties.bearingDeg).toBeCloseTo(90, 0);
-  });
-});
-
-describe("vehicleTrails", () => {
-  it("draws the track ahead of the previous and next vehicle, not of the rider's", () => {
-    const state = applyVehicles(
-      new Map(),
-      [vehicle("bus-1", east(20, T0)), vehicle("bus-2", east(20.002, T0), "behind")],
-      T0,
-      REDUCED_MOTION_TIMING,
-    );
-    const now = T0 + 10_000;
-    const [behind] = vehicleCollection(state, now, REDUCED_MOTION_TIMING, false).features.slice(1);
-    const { features } = vehicleTrails(state, now, REDUCED_MOTION_TIMING, false);
-    expect(features).toHaveLength(1);
-    const [trail] = features;
-    expect(trail?.properties).toMatchObject({ id: "bus-2", legIndex: 1, opacity: 1 });
-    // It starts at the vehicle and runs to the end of its track.
-    expect(trail?.geometry.coordinates[0]).toEqual(behind?.geometry.coordinates);
-    expect(trail?.geometry.coordinates.at(-1)).toEqual([20.008, 52]);
   });
 });

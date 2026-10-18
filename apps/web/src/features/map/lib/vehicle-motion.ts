@@ -65,15 +65,6 @@ export type VehicleCollection = {
   }[];
 };
 
-export type TrailCollection = {
-  type: "FeatureCollection";
-  features: {
-    type: "Feature";
-    geometry: { type: "LineString"; coordinates: LngLat[] };
-    properties: { id: string; legIndex: number; opacity: number };
-  }[];
-};
-
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
 const clamp01 = (t: number) => clamp(t, 0, 1);
 
@@ -273,40 +264,6 @@ export function vehicleCollection(
         mode: vehicle.mode,
         role: vehicle.role,
         bearingDeg: place.bearingDeg,
-        opacity: fadeOf(tracked, now, timing) * (stale ? STALE_OPACITY : 1),
-      },
-    });
-  }
-  return { type: "FeatureCollection", features };
-}
-
-/**
- * Where the previous and next vehicle of the line are going: their track from the drawn spot
- * to its end (about 2 minutes ahead). Call it after `vehicleCollection` for the same frame.
- */
-export function vehicleTrails(
-  state: VehicleMotionState,
-  now: number,
-  timing: MotionTiming,
-  stale: boolean,
-): TrailCollection {
-  const features: TrailCollection["features"] = [];
-  for (const tracked of state.values()) {
-    if (tracked.vehicle.role === "ride") continue;
-    const { path, alongM } = tracked;
-    const start = placeAlong(path, alongM);
-    if (!start) continue;
-    const coordinates: LngLat[] = [start.lngLat];
-    path.points.forEach(([lng, lat], i) => {
-      if ((path.cumM[i] as number) > alongM) coordinates.push([lng, lat]);
-    });
-    if (coordinates.length < 2) continue;
-    features.push({
-      type: "Feature",
-      geometry: { type: "LineString", coordinates },
-      properties: {
-        id: tracked.vehicle.id,
-        legIndex: tracked.legIndex,
         opacity: fadeOf(tracked, now, timing) * (stale ? STALE_OPACITY : 1),
       },
     });

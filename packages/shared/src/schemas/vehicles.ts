@@ -59,6 +59,8 @@ export const LegVehiclesSchema = z.object({
   line: z.string(),
   /** The leg's line/stops are not in the network; `vehicles` is then empty. */
   unknownLeg: z.boolean().optional(),
+  /** The whole route of the line in the direction ridden, terminus to terminus, [lng, lat] (GTFS shape). */
+  shape: z.array(z.tuple([z.number(), z.number()])).optional(),
   /** Ordered from the farthest ahead to the farthest behind. */
   vehicles: z.array(LiveVehicleSchema),
 });

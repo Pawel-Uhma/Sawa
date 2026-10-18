@@ -1,4 +1,4 @@
-import { type Leg, type Route, toLngLat } from "@sawa/shared";
+import { type Leg, type Route, type TrackVehiclesResponse, toLngLat } from "@sawa/shared";
 import { boundsOf, type LngLat, type LngLatBounds } from "./bounds";
 import { lineColor } from "./map-style";
 
@@ -82,6 +82,37 @@ export function lineIndexes(route: Route): number[] {
     previous = leg;
     return index;
   });
+}
+
+/** The whole route of a line ridden on a leg (`LegVehicles.shape`), in the leg's line colour. */
+export type LineShapeFeature = {
+  type: "Feature";
+  geometry: { type: "LineString"; coordinates: LngLat[] };
+  properties: { legIndex: number; line: string; color: string };
+};
+
+/**
+ * Whole routes of the lines on the route, from `POST /v1/vehicles/track`. A line ridden on two
+ * legs in a row is drawn once.
+ */
+export function lineShapesToGeoJson(
+  route: Route,
+  vehicles: TrackVehiclesResponse | undefined,
+): FeatureCollection<LineShapeFeature> {
+  const lines = lineIndexes(route);
+  const seen = new Set<number>();
+  const features: LineShapeFeature[] = [];
+  for (const leg of vehicles?.legs ?? []) {
+    const lineIndex = lines[leg.legIndex] ?? -1;
+    if (!leg.shape || leg.shape.length < 2 || lineIndex < 0 || seen.has(lineIndex)) continue;
+    seen.add(lineIndex);
+    features.push({
+      type: "Feature",
+      geometry: { type: "LineString", coordinates: leg.shape },
+      properties: { legIndex: leg.legIndex, line: leg.line, color: lineColor(lineIndex) },
+    });
+  }
+  return { type: "FeatureCollection", features };
 }
 
 export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeature> {
