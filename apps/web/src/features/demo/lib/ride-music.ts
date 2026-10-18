@@ -196,6 +196,27 @@ export function shouldSwitchTrack(playedSec: number, speaking: boolean): boolean
   return playedSec >= TRACK_MAX_SEC || (speaking && playedSec >= TRACK_MIN_SEC);
 }
 
+/** Krok spóźniony o mniej niż tyle jeszcze gra (ledwo po czasie); starsze pomijamy. */
+export const LATE_TOLERANCE_SEC = 0.05;
+
+/**
+ * Ile kroków pominąć, zanim zaplanujemy dalsze nuty. Gdy karta była w tle albo ekran zgaszony,
+ * timer stoi, a zegar audio biegnie: bez tego wszystkie zaległe nuty zagrałyby naraz po powrocie.
+ */
+export function lateSteps(nextSec: number, nowSec: number, stepSec: number): number {
+  const lateSec = nowSec - LATE_TOLERANCE_SEC - nextSec;
+  return lateSec > 0 ? Math.ceil(lateSec / stepSec) : 0;
+}
+
+/**
+ * Głośność utworu w trakcie wejścia (0–1) po `elapsedSec` od startu. Liczona, a nie czytana z
+ * `gain.value`, bo Safari w trakcie przejścia podaje tam nieaktualną wartość.
+ */
+export function fadeInLevel(elapsedSec: number, fadeSec: number): number {
+  if (fadeSec <= 0) return 1;
+  return Math.min(1, Math.max(0, elapsedSec / fadeSec));
+}
+
 /** Stan odtwarzacza opowieści, z którego wynika, czy Sawa właśnie mówi. */
 export type SpeechState = {
   isPlaying: boolean;
@@ -210,6 +231,14 @@ export type SpeechState = {
  */
 export function isSawaSpeaking({ isPlaying, loading, failed, progress }: SpeechState): boolean {
   return isPlaying && !loading && !failed && progress < 100;
+}
+
+/**
+ * Muzyka cichnie pod każdy głos Sawy: opowieść trasy albo dygresję z karty miejsca. Dygresja
+ * w oczekiwaniu na pierwsze miejsce szła wcześniej pod pełną muzyką.
+ */
+export function musicDucked(speech: SpeechState, aside: boolean): boolean {
+  return aside || isSawaSpeaking(speech);
 }
 
 export type RideSound = { onRoute: boolean; held: boolean; waiting: boolean; isPlaying: boolean };
