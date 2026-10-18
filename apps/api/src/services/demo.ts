@@ -1,4 +1,12 @@
-import type { Destination, PlanRouteRequest, Route, Story } from "@sawa/shared";
+import {
+  type Destination,
+  HACKATHON_VENUE,
+  haversineM,
+  type LatLng,
+  type PlanRouteRequest,
+  type Route,
+  type Story,
+} from "@sawa/shared";
 import type { SpeechAudio } from "../domain/speech";
 import { AppError } from "../lib/errors";
 import type { RoutePlanner } from "./plan-route";
@@ -160,37 +168,143 @@ export function createFixedDestinationSearch(
 const ORIGIN_DECIMALS = 3;
 const PLAN_TTL_MS = 60_000;
 const MAX_CACHED_PLANS = 200;
+/** A phone in 42 Warsaw starts at its door: the whole hall then shares one plan per setting. */
+export const VENUE_RADIUS_M = 100;
+/** A ride asked from the venue is re-planned in the background for this long after the last ask. */
+const WARM_FOR_MS = 15 * 60_000;
+/** Re-plan a warm ride this old; while that runs, the previous plan still answers. */
+const REFRESH_AFTER_MS = 45_000;
+const STALE_MAX_MS = 3 * 60_000;
+/** One Node thread plans everything: refresh only the rides asked most recently. */
+const MAX_WARM_RIDES = 24;
+
+/**
+ * The stage ride (apps/web demo-app.tsx `DEMO_PROFILE`, loop from 42 Warsaw) at the durations the
+ * pitch shows. Planned at start and kept fresh, so not even the first phone waits.
+ */
+export const DEMO_WARM_RIDES: PlanRouteRequest[] = [30, 60, 90].map((durationMin) => ({
+  origin: HACKATHON_VENUE,
+  durationMin,
+  interests: ["historical"],
+  returnToStart: true,
+  familiarity: "first_time",
+  storyStyle: "fun",
+  travel: "transit",
+}));
+
+export type CachedRoutePlanner = RoutePlanner & {
+  /** Re-plans warm rides from the venue; index.ts calls it on a timer. */
+  refresh(): Promise<void>;
+};
+
+type CachedPlan = {
+  at: number;
+  route: Promise<Route>;
+  request: PlanRouteRequest;
+  /** Until when the background refresh keeps it fresh; 0 for rides not from the venue. */
+  warmUntil: number;
+  refreshing?: boolean;
+};
 
 /**
  * Same ride asked again within a minute → the same plan. A room of phones starting together
  * would otherwise run the beam search once each, one after another on one Node thread.
+ * Rides from 42 Warsaw (within VENUE_RADIUS_M) start at its door and stay planned in the
+ * background, so on the pitch a phone gets its ride without waiting for the planner.
  */
 export function createCachedRoutePlanner(
   planner: RoutePlanner,
-  clock: () => number = Date.now,
-): RoutePlanner {
-  const cache = new Map<string, { at: number; route: Promise<Route> }>();
+  opts: { clock?: () => number; keepWarm?: readonly PlanRouteRequest[] } = {},
+): CachedRoutePlanner {
+  const clock = opts.clock ?? Date.now;
+  const cache = new Map<string, CachedPlan>();
   const round = (v: number) => Number(v.toFixed(ORIGIN_DECIMALS));
+  const atVenue = (p: LatLng) => haversineM(p, HACKATHON_VENUE) <= VENUE_RADIUS_M;
+
+  // The audience does not change the plan (#65), and interests are a set.
+  const keyOf = (r: PlanRouteRequest) =>
+    JSON.stringify([
+      round(r.origin.lat),
+      round(r.origin.lng),
+      r.destination && [round(r.destination.lat), round(r.destination.lng)],
+      r.durationMin,
+      [...r.interests].sort(),
+      r.returnToStart ?? false,
+      r.familiarity,
+      r.storyStyle,
+      r.travel,
+      r.heard,
+    ]);
+
+  function evict() {
+    if (cache.size <= MAX_CACHED_PLANS) return;
+    for (const [key, entry] of cache) {
+      if (entry.warmUntil !== Number.POSITIVE_INFINITY) {
+        cache.delete(key);
+        return;
+      }
+    }
+  }
+
+  function launch(key: string, request: PlanRouteRequest, now: Date, warmUntil: number) {
+    const route = planner.plan(request, now);
+    cache.set(key, { at: clock(), route, request, warmUntil });
+    route.catch(() => {
+      if (cache.get(key)?.route === route) cache.delete(key);
+    });
+    evict();
+    return route;
+  }
+
+  for (const request of opts.keepWarm ?? []) {
+    const ride = launch(keyOf(request), request, new Date(clock()), Number.POSITIVE_INFINITY);
+    ride.catch(() => {});
+  }
 
   return {
-    plan(request: PlanRouteRequest, now) {
-      const { origin, destination } = request;
-      const key = JSON.stringify({
-        ...request,
-        origin: { lat: round(origin.lat), lng: round(origin.lng) },
-        destination: destination && { lat: round(destination.lat), lng: round(destination.lng) },
-      });
+    plan(asked, now) {
+      const request = atVenue(asked.origin) ? { ...asked, origin: HACKATHON_VENUE } : asked;
+      const key = keyOf(request);
       const t = clock();
       const hit = cache.get(key);
-      if (hit && t - hit.at < PLAN_TTL_MS) return hit.route;
-      const route = planner.plan(request, now);
-      cache.set(key, { at: t, route });
-      route.catch(() => cache.delete(key));
-      if (cache.size > MAX_CACHED_PLANS) {
-        const oldest = cache.keys().next().value;
-        if (oldest !== undefined) cache.delete(oldest);
+      const warm = request.origin === HACKATHON_VENUE;
+      if (hit) {
+        if (warm) hit.warmUntil = Math.max(hit.warmUntil, t + WARM_FOR_MS);
+        const fresh = t - hit.at < (hit.warmUntil > t ? STALE_MAX_MS : PLAN_TTL_MS);
+        if (fresh) {
+          // Most recently asked last: the refresh keeps the newest MAX_WARM_RIDES.
+          cache.delete(key);
+          cache.set(key, hit);
+          return hit.route;
+        }
       }
-      return route;
+      const warmUntil = Math.max(hit?.warmUntil ?? 0, warm ? t + WARM_FOR_MS : 0);
+      return launch(key, request, now, warmUntil);
+    },
+
+    async refresh() {
+      const t = clock();
+      const warm = [...cache].filter(([, e]) => e.warmUntil > t);
+      const pinned = warm.filter(([, e]) => e.warmUntil === Number.POSITIVE_INFINITY);
+      const asked = warm.filter(([, e]) => e.warmUntil !== Number.POSITIVE_INFINITY);
+      const due = [...pinned, ...asked.slice(-MAX_WARM_RIDES)].filter(
+        ([, e]) => !e.refreshing && t - e.at >= REFRESH_AFTER_MS,
+      );
+      // One at a time: requests from phones get the thread between two plans.
+      for (const [key, entry] of due) {
+        entry.refreshing = true;
+        try {
+          const started = clock();
+          const route = await planner.plan(entry.request, new Date(started));
+          if (cache.get(key) === entry) {
+            Object.assign(entry, { at: started, route: Promise.resolve(route) });
+          }
+        } catch {
+          // The previous plan answers until it is STALE_MAX_MS old.
+        } finally {
+          entry.refreshing = false;
+        }
+      }
     },
   };
 }
