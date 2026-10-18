@@ -303,7 +303,9 @@ const BADGE_PAINT = {
   "circle-color": placeKindColorExpression(),
   "circle-stroke-color": "#ffffff",
   "circle-stroke-width": 2,
-};
+  // Offset on screen like the sticker and the number; "map" turned the badge away when rotated.
+  "circle-translate-anchor": "viewport",
+} as const;
 
 /** Without icons: numbered circles, the active one in the accent colour. */
 function NumberedStops({ palette, isActive, selectedId }: StopsProps) {
