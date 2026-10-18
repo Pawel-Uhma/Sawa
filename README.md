@@ -12,9 +12,9 @@ Warsaw Open Data Hackathon 2026 · 17–18.10 · 42 Warsaw
 
 </div>
 
-| Poznaj Sawę | Ile masz czasu? | Trasa i opowieść | Przesiadki i odjazdy |
+| Poznaj Sawę | Ile masz czasu? | Trasa na mapie | Opowieść na żywo |
 |:---:|:---:|:---:|:---:|
-| <img src="docs/img/readme-1-start.png" width="200" alt="Ekran powitalny z Sawą" /> | <img src="docs/img/readme-2-czas.png" width="200" alt="Wybór czasu przejażdżki" /> | <img src="docs/img/readme-3-trasa.png" width="200" alt="Trasa na mapie i odtwarzacz opowieści" /> | <img src="docs/img/readme-4-odjazdy.png" width="200" alt="Przebieg trasy i godziny odjazdów" /> |
+| <img src="docs/img/readme-1-start.png" width="200" alt="Ekran powitalny z Sawą" /> | <img src="docs/img/readme-2-czas.png" width="200" alt="Wybór czasu przejażdżki" /> | <img src="docs/img/readme-3-trasa.png" width="200" alt="Trasa na mapie i odtwarzacz opowieści" /> | <img src="docs/img/readme-4-opowiesc.png" width="200" alt="Tekst opowieści z podświetlonym fragmentem" /> |
 
 ## Problem
 
@@ -29,7 +29,24 @@ Sawa to aplikacja na telefon dla nowych mieszkańców, dojeżdżających i każd
 1. **Onboarding:** wybierasz zainteresowania (historia, kultura, sport, przyroda), to, jak dobrze znasz miasto, styl opowieści i kto słucha (dorosły czy dziecko). Bez konta, profil zostaje w telefonie. Aplikacja działa po polsku i po angielsku.
 2. **Trasa:** podajesz czas albo cel. Planer układa przejazd tramwajami i autobusami ZTM (z odcinkami pieszymi) tak, żeby po drodze było jak najwięcej miejsc pasujących do Ciebie.
 3. **Jazda:** mapa pokazuje trasę, przystanki i pojazdy na żywo, a Sawa milczy, dopóki nie zbliżysz się do pierwszego miejsca.
-4. **Opowieść:** przy każdym miejscu LLM układa krótką opowieść wyłącznie z faktów z naszej bazy (każdy ze źródłem). Opcjonalnie czyta ją głos Sawy. Sawa pamięta, co już słyszałeś, i nie powtarza się.
+4. **Opowieść:** przy każdym miejscu LLM układa krótką opowieść wyłącznie z faktów z naszej bazy (każdy ze źródłem). Opcjonalnie czyta ją głos Sawy. Sawa pamięta, co już słyszałeś, i nie powtarza się. Między miejscami może grać cicha muzyka w tle, składana na żywo w przeglądarce, bez plików nagrań (włącza się w menu Sawy).
+
+## Założenia i ograniczenia
+
+**Założenia:**
+
+- Słuchacz jedzie tramwajem albo autobusem ZTM (albo idzie pieszo) i ma telefon, najlepiej ze słuchawkami.
+- Bez konta: profil, ustawienia i historia wysłuchanych opowieści zostają w pamięci przeglądarki na telefonie.
+- Sawa mówi tylko to, co jest w bazie faktów. Gdy o miejscu nie ma nic ciekawego, milczy, zamiast zmyślać.
+- Długość opowieści wynika z czasu dojazdu do następnego miejsca, a ten z rozkładu i pozycji pojazdów.
+
+**Ograniczenia:**
+
+- Planer układa trasy z tramwajów, autobusów i odcinków pieszych. Metra, SKM i Kolei Mazowieckich nie obejmuje.
+- Najwięcej miejsc ma baza na Woli i w Śródmieściu (wokół 42 Warsaw). W dalszych dzielnicach punktów jest mniej.
+- Fakty sprawdzał automatycznie skrypt, ale tylko pod kątem lat. Nazwisk i liczb nikt nie zweryfikował ręcznie (szczegóły w sekcji „Użycie AI”).
+- Gdy API miasta nie odpowiada, godziny odjazdów są szacowane z rozkładu GTFS, a pozycje pojazdów mogą być nieaktualne.
+- Głos Sawy jest domyślnie wyłączony, bo każda nowa opowieść kosztuje. Włącza go `?voice=1` w adresie.
 
 ## Dane
 
