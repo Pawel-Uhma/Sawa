@@ -82,7 +82,7 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 | [2240-odtwarzacz-uklad-zestawienie](propozycje/2240-odtwarzacz-uklad-zestawienie.png) | Odtwarzacz na trasie: obecny i 3 warianty (A zwarty, B napisy na górze ze sterowaniem w doku, C karta miejsca ze zdjęciem i suwakiem na odcinki), HTML w `propozycje/html/odtwarzacz-uklad.html` | odtwarzacz | |
 | [0850-punkty-trasy-00-zestawienie](propozycje/0850-punkty-trasy-00-zestawienie.png) | Punkty trasy z glifem podrodzaju zamiast czarnych numerków: A moneta z numerkiem w rogu, B kolorowy medal, C pinezka, D pigułka numer + glif (aktywna z nazwą), E same naklejki bez numerów; HTML w `propozycje/html/punkty-trasy.html` | mapa, trasa | |
 | [0900-punkty-trasy-2-zestawienie](propozycje/0900-punkty-trasy-2-zestawienie.png) | Runda 2 (połączenie B i E z numerami): F medal z plakietką, G naklejka z numerem, H medal z zakładką, I kafelek numer + glif, J naklejka na krążku; aktywny punkt z nazwą; HTML w `propozycje/html/punkty-trasy-2.html` | mapa, trasa | |
-| [0852-ikona-budynku-00-zestawienie](propozycje/0852-ikona-budynku-00-zestawienie.png) | Ikona „budynek” (`building` w `place-glyphs.json`): obecny domek i 5 wariantów (A gmach z gzymsem, B dwie bryły, C brama, D bryła 3D, E narożnik z wieżyczką), na mapie i obok sąsiadów z grupy; HTML w `propozycje/html/ikona-budynku.html` | mapa, znaczniki | |
+| [0852-ikona-budynku-00-zestawienie](propozycje/0852-ikona-budynku-00-zestawienie.png) | Ikona „budynek” (`building` w `place-glyphs.json`): obecny domek i 5 wariantów (A gmach z gzymsem, B dwie bryły, C brama, D bryła 3D, E narożnik z wieżyczką), na mapie i obok sąsiadów z grupy; HTML w `propozycje/html/ikona-budynku.html` | mapa, znaczniki | Paweł wybrał B (18.10) |
 
 ## Źródła makiet
 
