@@ -31,5 +31,163 @@
       "1jlyaxh"
     ],
     "contextIds": []
+  },
+  "osiedle-czyste": {
+    "placeId": "osiedle-czyste",
+    "text": "Mijamy obszar dawnej wsi Czyste. Czy wiesz, że w dawnej wsi Czyste stało ponad 90 wiatraków zaopatrujących warszawskie piekarnie? W 1827 roku wieś liczyła 16 domostw i 223 mieszkańców. Z czasem teren ten bardzo się zmienił, a w latach 30. dwudziestego wieku nazwa Ochota zyskała większe znaczenie niż Czyste.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Czyste (Warszawa)",
+        "url": "https://pl.wikipedia.org/wiki/Czyste_(Warszawa)"
+      },
+      {
+        "id": "s3",
+        "title": "Fotopolska: Wola – Czyste",
+        "url": "https://fotopolska.eu/Warszawa/d2526,Wola_-_Czyste.html"
+      },
+      {
+        "id": "s4",
+        "title": "Wikipedia: Czyste",
+        "url": "https://en.wikipedia.org/wiki/Czyste"
+      }
+    ],
+    "factIds": [
+      "1rz8y66",
+      "kyvplz",
+      "ez4mfm"
+    ],
+    "contextIds": []
+  },
+  "okopy-lubomirskiego": {
+    "placeId": "okopy-lubomirskiego",
+    "text": "Tam, gdzie dzisiaj biegną ulice Okopowa i Towarowa, ciągnęły się kiedyś Okopy Lubomirskiego. Powstały w 1770 roku z rozkazu marszałka wielkiego koronnego Stanisława Lubomirskiego, a pierwotnie miały chronić miasto przed dżumą i kontrolować osoby wjeżdżające do Warszawy. Na szczęście dżuma nie dotarła, a epidemię zakończyła ostra zima 1771 roku. Z czasem wał zaczął pełnić funkcję celną, aż ostatecznie zlikwidowano go w 1875 roku. W ciągu dawnych okopów znajdowały się między innymi rogatki Wolskie. To właśnie tam, 2 listopada 1830 roku, Fryderyk Chopin opuścił Warszawę, a przyjaciele i uczniowie Konserwatorium odśpiewali mu na pożegnanie kantatę pod tytułem Zrodzony w polskiej krainie.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia pl: Okopy Lubomirskiego",
+        "url": "https://pl.wikipedia.org/wiki/Okopy_Lubomirskiego"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia pl: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "elz9ok",
+      "1ckhs53",
+      "8ckdgm",
+      "ftp7i3",
+      "ankohh"
+    ],
+    "contextIds": []
+  },
+  "dziki-zachod-chlodna": {
+    "placeId": "dziki-zachod-chlodna",
+    "text": "Tam, gdzie dziś stoją bloki osiedla Mirów, po 1945 roku rozciągał się tak zwany Dziki Zachód. Tak nazywano ten zniszczony fragment przy ulicy Chłodnej i Ogrodowej. Zamiast ratować to, co zostało, w 1946 roku Biuro Odbudowy Stolicy nakazało rozebrać większość wypalonych budynków, w tym nadające się do remontu i zachowane zabytki. Pod kilof poszła większość uszkodzonych kamienic z XIX wieku, a relikty dawnej zabudowy przemysłowej po prostu wyburzono.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "wyy9py",
+      "1g76cw",
+      "fydi3l"
+    ],
+    "contextIds": []
+  },
+  "kercelak-hala-targowa": {
+    "placeId": "kercelak-hala-targowa",
+    "text": "Tam, gdzie dziś jest rondo Kercelak, stała kiedyś hala targowa z placu Kercelego, znana ze zdjęcia opublikowanego w książce pod tytułem Wola ongi i dziś z 1938 roku.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "warszawa1939.pl: pl. Kercelego - Hala Targowa (?)",
+        "url": "https://www.warszawa1939.pl/obiekt/kercelego-hala"
+      }
+    ],
+    "factIds": [
+      "1kznnmq"
+    ],
+    "contextIds": []
+  },
+  "wolska": {
+    "placeId": "wolska",
+    "text": "To ulica Wolska, której nazwa nadana oficjalnie w 1771 roku pochodzi od wsi Wielka Wola, do której prowadziła jako trakt, czyli droga wychodzący ze Starej Warszawy na zachód. Około 1820 roku jako pierwsza w tej części miasta otrzymała nawierzchnię z bruku na swoim wschodnim odcinku, a w 1908 roku po raz pierwszy pojechały nią tramwaje elektryczne.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Wolska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wolska_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1cyoo19",
+      "1sm7x0e",
+      "gvsty3"
+    ],
+    "contextIds": []
+  },
+  "okopowa": {
+    "placeId": "okopowa",
+    "text": "Mijamy ulicę Okopową, której początki sięgają 1784 roku, kiedy powstała jako droga wewnętrzna przy okopach Lubomirskiego z 1770 roku. W 1875 roku na miejscu dawnego wału i fosy wytyczono szeroką ulicę o nazwie Przedokopowa, a obecna nazwa utrwaliła się później. Po pierwszej wojnie światowej działy się tu ciekawe rzeczy, bo przy ulicy funkcjonowały dwa skrajnie różne schroniska dla bezdomnych: pod numerem 5 dla osób eksmitowanych za długi, a pod numerem 59 dla agresywnych i zdemoralizowanych. Z kolei w 1926 roku pod numerem 43 zakończono budowę stadionu Skry Warszawa, a pierwsze mecze rozegrano na początku sezonu 1927 roku.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Okopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Okopowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "147he5a",
+      "1h4quua",
+      "e3k8vv",
+      "18phkfs"
+    ],
+    "contextIds": []
+  },
+  "trasa-w-z": {
+    "placeId": "trasa-w-z",
+    "text": "Mijamy aleję Solidarności, w której miejscu biegła kiedyś główna droga jurydyki Leszno, czyli prywatnego miasteczka tuż za murami Warszawy, z własnymi prawami. Ta droga stała się potem częścią Trasy W-Z. To była pierwsza większa inwestycja komunikacyjna po wojnie w Warszawie, budowana od 1947 do 1949 roku i oddana 22 lipca 1949 roku. Trasa poprowadziła ze wschodu na zachód, od ulicy Radzymińskiej aż do zbiegu ulic Wolskiej i Młynarskiej, po drodze przecinając między innymi ulicę Wronią w 1948 roku. Przez jej budowę zlikwidowano w 1947 roku słynne targowisko na Kercelaku, przez które również przeprowadzono nową trasę.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Trasa W-Z w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Trasa_W-Z_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Kercelak",
+        "url": "https://pl.wikipedia.org/wiki/Kercelak"
+      },
+      {
+        "id": "s3",
+        "title": "Wikipedia: Ulica Wronia w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Wronia_w_Warszawie"
+      },
+      {
+        "id": "s4",
+        "title": "SARP: H. Radziejowska, Wola – ulice (PDF)",
+        "url": "https://sarp.warszawa.pl/wordpress/wp-content/uploads/2015/10/H.-Radziejowska_Wola_ulice.pdf"
+      }
+    ],
+    "factIds": [
+      "94blq2",
+      "1amupl7",
+      "o69by9",
+      "ppe97s",
+      "1tkpz96",
+      "t7g8n9"
+    ],
+    "contextIds": []
   }
 }
