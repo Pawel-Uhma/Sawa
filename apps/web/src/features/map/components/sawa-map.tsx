@@ -37,6 +37,7 @@ import {
   START_VIEW,
   WARSAW_MAX_BOUNDS,
 } from "../lib/map-style";
+import { isParkPlace } from "../lib/park-highlight";
 import { registerPlaceStickers } from "../lib/place-stickers";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
@@ -44,6 +45,7 @@ import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
+import { ParkLayer, type ParkSelection } from "./park-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import {
   PLACES_CLUSTER_LAYER_ID,
@@ -128,10 +130,21 @@ export function SawaMap({
     [hasPlaceSheet, selectedId, places.data, route],
   );
 
-  const selectedStreet = useMemo(() => {
-    const summary = places.data.find((p) => p.properties.id === selectedId)?.properties;
-    return summary && isStreetPlace(summary) ? summary.name : null;
-  }, [selectedId, places.data]);
+  const selectedSummary = useMemo(
+    () => places.data.find((p) => p.properties.id === selectedId),
+    [selectedId, places.data],
+  );
+  const selectedStreet =
+    selectedSummary && isStreetPlace(selectedSummary.properties)
+      ? selectedSummary.properties.name
+      : null;
+  const selectedPark = useMemo<ParkSelection | null>(
+    () =>
+      selectedSummary && isParkPlace(selectedSummary.properties)
+        ? { name: selectedSummary.properties.name, lngLat: selectedSummary.geometry.coordinates }
+        : null,
+    [selectedSummary],
+  );
 
   const fullPadding = { ...DEFAULT_MAP_PADDING, ...padding };
   const isSheetOpen = Boolean(selected);
@@ -241,6 +254,7 @@ export function SawaMap({
             palette={palette}
           />
         )}
+        {icons !== "loading" && <ParkLayer selected={selectedPark} color={palette.park} />}
         {icons !== "loading" && (
           <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
         )}
@@ -253,7 +267,9 @@ export function SawaMap({
             palette={palette}
           />
         )}
-        {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
+        {isLoaded && route && (
+          <LiveVehiclesLayer data={vehicles.data} route={route} casing={palette.casing} />
+        )}
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>

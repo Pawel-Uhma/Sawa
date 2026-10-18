@@ -8,18 +8,11 @@ import { placeTopic } from "@/features/map";
 import { placeTagLabel } from "@/lib/interest-labels";
 import type { Listener } from "../lib/api-data";
 import { haptic } from "../lib/device";
+import { factPlainText, factSegments } from "../lib/fact-markup";
 import { usePlaceStory } from "../lib/place-story";
 import { topicStyle } from "../lib/topic-style";
 import { PinIcon } from "./icons";
-import {
-  CloseButton,
-  cleanFact,
-  KindLine,
-  ListenButton,
-  Sources,
-  splitName,
-  TodayNearby,
-} from "./place-card";
+import { CloseButton, KindLine, ListenButton, Sources, splitName, TodayNearby } from "./place-card";
 
 const FACTS_PREVIEW = 3;
 
@@ -37,7 +30,9 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
   const lang = useLang();
   const story = usePlaceStory(place.id, listener);
   const [showAll, setShowAll] = useState(false);
-  const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW)).map(cleanFact);
+  const facts = (showAll ? place.facts : place.facts.slice(0, FACTS_PREVIEW))
+    .map((fact) => ({ key: factPlainText(fact), segments: factSegments(fact) }))
+    .filter((fact) => fact.key);
   const { title, aside } = splitName(place.name);
   const address = [aside, place.addressToday ?? place.addressHistoric].filter(Boolean).join(" · ");
 
@@ -123,12 +118,28 @@ export function PlaceDetails({ place, listener, onClose, onRideTo }: PlaceDetail
           <h3 className="etykieta">{t("Co tu się działo", "What happened here")}</h3>
           <ul className="mt-2 space-y-2.5">
             {facts.map((fact) => (
-              <li key={fact} className="flex gap-2.5 text-[15px] leading-relaxed text-tekst">
+              <li key={fact.key} className="flex gap-2.5 text-[15px] leading-relaxed text-tekst">
                 <span
                   aria-hidden="true"
                   className="mt-[9px] size-1.5 shrink-0 rounded-full bg-koral"
                 />
-                {fact}
+                <span>
+                  {fact.segments.map((segment, index) =>
+                    segment.strong ? (
+                      // biome-ignore lint/suspicious/noArrayIndexKey: fragmenty jednego faktu się nie przestawiają
+                      <strong key={index} className="font-semibold">
+                        {segment.text}
+                      </strong>
+                    ) : segment.em ? (
+                      // biome-ignore lint/suspicious/noArrayIndexKey: jw.
+                      <em key={index} className="text-tekst-2">
+                        {segment.text}
+                      </em>
+                    ) : (
+                      segment.text
+                    ),
+                  )}
+                </span>
               </li>
             ))}
           </ul>
