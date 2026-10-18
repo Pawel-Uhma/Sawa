@@ -10,6 +10,8 @@
 
 Warsaw Open Data Hackathon 2026 · 17–18.10 · 42 Warsaw
 
+Zespół nr 1 „Sawa” · Paweł, Antek, Szczepan, Janek · wyzwanie 1 „Warszawa 2076”
+
 </div>
 
 | Poznaj Sawę | Ile masz czasu? | Trasa na mapie | Opowieść na żywo |
