@@ -1,6 +1,26 @@
 import { describe, expect, it } from "vitest";
 import type { MockStop } from "./mock-data";
-import { clipKey, spokenCut, spokenLength, spokenWordCount, targetSecFor } from "./story-player";
+import {
+  clipKey,
+  knownContextsWith,
+  spokenCut,
+  spokenLength,
+  spokenWordCount,
+  targetSecFor,
+} from "./story-player";
+
+describe("knownContextsWith", () => {
+  it("dodaje tło opowiedziane na trasie, zanim trafiło do pamięci", () => {
+    expect(knownContextsWith([], new Set(["powstanie-1944"]))).toEqual(["powstanie-1944"]);
+  });
+
+  it("nie powtarza tła, które już jest w pamięci", () => {
+    expect(knownContextsWith(["powstanie-1944"], ["powstanie-1944", "getto-warszawskie"])).toEqual([
+      "powstanie-1944",
+      "getto-warszawskie",
+    ]);
+  });
+});
 
 describe("clipKey", () => {
   const listener = { interests: ["historical" as const], storyStyle: "fun" as const };

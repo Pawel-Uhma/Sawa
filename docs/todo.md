@@ -157,6 +157,14 @@ Paweł robi frontend i generowanie głosu (T-43). Opowieści (T-45, T-41, T-42) 
 - [ ] **T-141** Ciemny motyw: jaśniejsze ulice na mapie, syrenka czytelna na ciemnym tle — `R3` (Antek)
 - [ ] **T-142** Stany czekania (spinner, kółka) w czcionce i kolorach Sawy — `R3`
 - [x] **T-157** Modal „Co już Ci opowiedziałam” z menu: miejsca od najnowszych, stuknięcie zaznacza miejsce na mapie (`?p=`), „Zapomnij wszystko” w modalu (`told-modal.tsx`) — `R3` — (Paweł z agentem, 18.10 00:05)
+- [x] **T-162** Opowieść: bez „Pamiętasz…”, fraza czasu („trzy miesiące temu opowiadałam ci…”), planer omija słyszane miejsca, „Więcej” bez nowych faktów proponuje miejsce obok — `R3` (+ prompt R4, planer R1 na prośbę Pawła) — (Paweł z agentem, 18.10 00:55)
+- [x] **T-163** Liczby w zapisie cyframi, w TTS słownie z odmianą (`spoken-numbers.ts`), zakaz „dziesięciokondygnacyjny” — `R3` + `R4` — (Paweł z agentem, 18.10 00:55)
+- [x] **T-164** Nudne miejsca: filtr suchych faktów (`dry-facts.ts`), research szuka historii działki, `Story.silent` — `R3` + `R4` — (Paweł z agentem, 18.10 00:55)
+- [x] **T-165** Podświetlanie słowa z czasów ElevenLabs (`LiveStory.wordTimes`), zgadywanie jako zapas — `R3` — (Paweł z agentem, 18.10 00:55)
+- [x] **T-166** Zdjęcia miejsca przy opowieści, powiększenie po stuknięciu (`story-photos.tsx`) — `R3` — (Paweł z agentem, 18.10 00:55)
+- [ ] **T-167** Test na żywo T-162–T-166 z LLM i `?voice=1`: fraza czasu w opowieści, trafienie podświetlenia (czy czasy ElevenLabs liczą się od początku klipu) — `R3` + `R4`
+- [ ] **T-168** Seed: `richness` bez suchych faktów (filtr z `apps/api/src/domain/dry-facts.ts`), usunąć logo stopki warszawa1939.pl ze zdjęć (132 wiersze), poprawić licencje „sprawdzić na Commons” (136) — `R2`
+- [ ] **T-169** `live-vehicles-layer.tsx:45`: `map.hasImage` rzuca „reading 'getImage'”, gdy styl mapy nie gotowy / zniszczony (po hot reload) — `R3` (Antek)
 - [x] **T-143** Suwak czasu: rzadsze podziałki (np. co 30 min), gęste się nakładają — `R3` (Paweł, 23:10: podziałki 5 min, 1 h, 2 h, 3 h, 4 h; wartość czasu w osobnym wierszu nad suwakiem, bo ucinała „Ile masz czasu?”, wariant 2300-A)
 - [x] **T-148** Stop i pauza zatrzymują zegar jazdy także przed pierwszym miejscem: osobny stan „zatrzymane przez użytkownika” (`held` w `useRideClock`), wznowienie od tego samego miejsca, GPS (`useGpsClockSync`) nie przesuwa zegara przy zatrzymanej Sawie (#93) — `R3` — (Paweł z agentem, 17.10, 20:11, PR w toku)
 - [ ] **T-144** Głos czyta lata źle („1099” zamiast 1939, „1090” zamiast 1940, „5355” zamiast 53/55): sprawdzić, czy prompt pisze liczby słownie (T-98) — `R4`

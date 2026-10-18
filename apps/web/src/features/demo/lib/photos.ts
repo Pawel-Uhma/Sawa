@@ -35,6 +35,12 @@ export function showablePhotos(photos: readonly PlacePhoto[]): PlacePhoto[] {
   });
 }
 
+/** Opis zdjęcia bez dopisków z importu w nawiasie kwadratowym („[lokalizacja: przybliżona…]”). */
+export function photoCaption(photo: PlacePhoto): string | null {
+  const caption = photo.caption?.replace(/\s*\[[^\]]*\]\s*$/, "").trim();
+  return caption || null;
+}
+
 /** Licencja do podpisu; notatka seeda w rodzaju „sprawdzić na Commons” to nie licencja. */
 function licenseLabel(photo: PlacePhoto): string | null {
   const license = photo.license?.trim();
