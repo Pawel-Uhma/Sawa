@@ -80,7 +80,43 @@ export function RouteLayer({ route, selectedId, activeId, theme, palette }: Rout
           }}
         />
       </Source>
-      {/* Start and transfers: a countdown ring in the colour of the line boarded there, its number above. */}
+      <Source id="route-places" type="geojson" data={places}>
+        <Layer
+          id={ROUTE_PLACES_LAYER_ID}
+          type="circle"
+          paint={{
+            "circle-radius": ["case", isActive, 14, 11],
+            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, palette.stopFill],
+            "circle-stroke-color": palette.ring,
+            "circle-stroke-width": 2,
+          }}
+        />
+        <Layer
+          id="route-places-selected"
+          type="circle"
+          filter={["==", ["get", "id"], selectedId ?? ""]}
+          paint={{
+            "circle-radius": 15,
+            "circle-opacity": 0,
+            "circle-stroke-color": palette.selected,
+            "circle-stroke-width": 3,
+          }}
+        />
+        <Layer
+          id="route-places-order"
+          type="symbol"
+          layout={{
+            "text-field": ["to-string", ["get", "order"]],
+            "text-font": LABEL_FONT,
+            "text-size": 12,
+            "text-allow-overlap": true,
+            "text-ignore-placement": true,
+          }}
+          paint={{ "text-color": ["case", isActive, "#ffffff", palette.stopText] }}
+        />
+      </Source>
+      {/* Start and transfers: a countdown ring in the colour of the line boarded there, its number above;
+          over the route places, the countdown matters more while walking to the stop. */}
       <Source id="route-boardings" type="geojson" data={boardings}>
         <Layer
           id="route-boarding-timer"
@@ -130,41 +166,6 @@ export function RouteLayer({ route, selectedId, activeId, theme, palette }: Rout
             "text-halo-color": palette.labelHalo,
             "text-halo-width": 1.5,
           }}
-        />
-      </Source>
-      <Source id="route-places" type="geojson" data={places}>
-        <Layer
-          id={ROUTE_PLACES_LAYER_ID}
-          type="circle"
-          paint={{
-            "circle-radius": ["case", isActive, 14, 11],
-            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, palette.stopFill],
-            "circle-stroke-color": palette.ring,
-            "circle-stroke-width": 2,
-          }}
-        />
-        <Layer
-          id="route-places-selected"
-          type="circle"
-          filter={["==", ["get", "id"], selectedId ?? ""]}
-          paint={{
-            "circle-radius": 15,
-            "circle-opacity": 0,
-            "circle-stroke-color": palette.selected,
-            "circle-stroke-width": 3,
-          }}
-        />
-        <Layer
-          id="route-places-order"
-          type="symbol"
-          layout={{
-            "text-field": ["to-string", ["get", "order"]],
-            "text-font": LABEL_FONT,
-            "text-size": 12,
-            "text-allow-overlap": true,
-            "text-ignore-placement": true,
-          }}
-          paint={{ "text-color": ["case", isActive, "#ffffff", palette.stopText] }}
         />
       </Source>
     </>
