@@ -1,20 +1,22 @@
 "use client";
 
-import type { Travel } from "@sawa/shared";
+import type { Destination, Travel } from "@sawa/shared";
 import { AnimatePresence, motion, useAnimationControls, useReducedMotion } from "motion/react";
 import {
   type CSSProperties,
+  type KeyboardEvent,
   type ReactNode,
   type RefObject,
+  useEffect,
   useLayoutEffect,
   useRef,
   useState,
 } from "react";
-import { createPortal } from "react-dom";
+import { createPortal, flushSync } from "react-dom";
 import { RollingText, Spinner, useDelayed, useWaitMessage } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { useDestinationSearch } from "../lib/destination-search";
-import { haptic, SPRING } from "../lib/device";
+import { haptic, SPRING, useIsDesktop } from "../lib/device";
 import { formatDuration, sliderPercent } from "../lib/format";
 import { DURATION_STOPS_MIN } from "../lib/mock-data";
 import type { RideEnd, RideEndType } from "../lib/ride-end";
@@ -483,124 +485,382 @@ function ChosenDestination({
   );
 }
 
-/** Pole „Dokąd jedziesz?”: miejsce z Google Places po nazwie, wynik od razu staje się celem. */
+/** Wynik z Google Places jako koniec trasy. */
+function toRideEnd(result: Destination): RideEnd {
+  return {
+    type: "destination",
+    name: result.name,
+    address: result.address,
+    point: result.position,
+  };
+}
+
+/**
+ * Pole „Dokąd jedziesz?”: miejsce z Google Places po nazwie, wynik od razu staje się celem.
+ * Na telefonie stuknięcie otwiera wyszukiwanie na cały ekran (jak w Mapach Apple), bo karta
+ * stoi na dole i z klawiaturą nie zostaje miejsca na wyniki.
+ */
 function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
+  const isDesktop = useIsDesktop();
+  return isDesktop ? (
+    <InlineDestinationSearch onPick={onPick} />
+  ) : (
+    <SheetDestinationSearch onPick={onPick} />
+  );
+}
+
+function MapHint() {
+  const t = useT();
+  return (
+    <p className="pt-2 text-xs text-tekst-3">
+      {t("Albo stuknij w mapę, żeby wybrać punkt.", "Or tap the map to pick a point.")}
+    </p>
+  );
+}
+
+/** Desktop: pole w karcie, wyniki w nakładce obok. Enter bierze pierwszy wynik. */
+function InlineDestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
   const [text, setText] = useState("");
   const [focused, setFocused] = useState(false);
   const fieldRef = useRef<HTMLDivElement>(null);
-  const t = useT();
-  const { results, isSearching, isError, hasQuery } = useDestinationSearch(text);
-  const open = focused && hasQuery;
+  const search = useDestinationSearch(text);
+  const open = focused && search.hasQuery;
+
+  function pick(result: Destination) {
+    haptic(4);
+    onPick(toRideEnd(result));
+    setText("");
+  }
 
   return (
     <div>
       <div ref={fieldRef} className="relative">
-        <PinIcon className="pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2 text-tekst-3" />
-        <input
-          type="text"
-          role="combobox"
-          value={text}
-          onChange={(event) => setText(event.target.value)}
+        <SearchField
+          text={text}
+          onTextChange={setText}
+          isSearching={search.isSearching && search.hasQuery}
+          expanded={open}
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
-          onKeyDown={(event) => event.key === "Escape" && event.currentTarget.blur()}
-          placeholder={t("Dokąd jedziesz?", "Where are you going?")}
-          aria-label={t("Dokąd jedziesz", "Where are you going")}
-          aria-expanded={open}
-          aria-controls="cele-wyniki"
-          enterKeyHint="search"
-          autoComplete="off"
-          className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-10 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
+          onKeyDown={(event) => {
+            if (event.key === "Escape") event.currentTarget.blur();
+            if (event.key === "Enter" && !search.isSearching && search.results[0]) {
+              event.preventDefault();
+              pick(search.results[0]);
+            }
+          }}
         />
-        {/* Stała ramka po prawej: spinner i krzyżyk podmieniają się w miejscu, nic nie drga */}
-        <div className="absolute right-1.5 top-1/2 grid size-8 -translate-y-1/2 place-items-center">
-          {isSearching && hasQuery ? (
-            <Spinner className="pointer-events-none size-4 text-tekst-3" />
-          ) : (
-            text && (
-              <button
-                type="button"
-                onPointerDown={(event) => event.preventDefault()}
-                onClick={() => setText("")}
-                aria-label={t("Wyczyść", "Clear")}
-                className="grid size-8 place-items-center rounded-full text-tekst-3 active:scale-90"
-              >
-                <CloseIcon className="size-4" />
-              </button>
-            )
-          )}
-        </div>
       </div>
-      <p className="pt-2 text-xs text-tekst-3">
-        {t("Albo stuknij w mapę, żeby wybrać punkt.", "Or tap the map to pick a point.")}
-      </p>
+      <MapHint />
 
       {typeof document !== "undefined" &&
         createPortal(
           <AnimatePresence>
             {open && (
               <ResultsOverlay key="wyniki" anchorRef={fieldRef}>
-                <ul id="cele-wyniki" aria-label={t("Wyniki", "Results")}>
-                  {results.slice(0, 5).map((result) => (
-                    <li key={result.id}>
-                      <button
-                        type="button"
-                        // Fokus zostaje w polu: inaczej blur zamknąłby nakładkę przed kliknięciem
-                        onPointerDown={(event) => event.preventDefault()}
-                        onClick={() => {
-                          haptic(4);
-                          onPick({
-                            type: "destination",
-                            name: result.name,
-                            address: result.address,
-                            point: result.position,
-                          });
-                          setText("");
-                        }}
-                        className="flex min-h-12 w-full items-center gap-2.5 rounded-[12px] px-2.5 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
-                      >
-                        <PinIcon className="size-[18px] shrink-0 text-glebia" />
-                        <span className="flex min-w-0 flex-col">
-                          <span className="truncate text-[14px] font-bold text-tekst">
-                            {result.name}
-                          </span>
-                          <span className="truncate text-xs text-tekst-3">{result.address}</span>
-                        </span>
-                      </button>
-                    </li>
-                  ))}
-                  {results.length === 0 && (
-                    <li
-                      aria-live="polite"
-                      className="flex min-h-12 items-center gap-2.5 px-2.5 py-2 text-[13px] text-tekst-3"
-                    >
-                      <span className="grid size-[18px] shrink-0 place-items-center">
-                        {isSearching ? (
-                          <Spinner className="size-3.5" />
-                        ) : (
-                          <PinIcon className="size-[18px]" />
-                        )}
-                      </span>
-                      {isSearching
-                        ? t("Szukam w Warszawie…", "Searching Warsaw…")
-                        : isError
-                          ? t(
-                              "Nie udało się wyszukać. Wybierz cel na mapie.",
-                              "Search failed. Pick a destination on the map.",
-                            )
-                          : t(
-                              "Nie znalazłam takiego miejsca w Warszawie.",
-                              "I couldn't find that place in Warsaw.",
-                            )}
-                    </li>
-                  )}
-                </ul>
+                <DestinationResults {...search} onPick={pick} />
               </ResultsOverlay>
             )}
           </AnimatePresence>,
           document.body,
         )}
     </div>
+  );
+}
+
+/** Telefon: w karcie tylko „pole”, które otwiera wyszukiwanie na cały ekran. */
+function SheetDestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
+  const [open, setOpen] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const t = useT();
+
+  return (
+    <div>
+      <button
+        type="button"
+        onClick={() => {
+          haptic(4);
+          // iOS pokaże klawiaturę tylko po fokusie w tym samym dotknięciu: arkusz musi już stać w DOM
+          flushSync(() => setOpen(true));
+          inputRef.current?.focus({ preventScroll: true });
+        }}
+        aria-haspopup="dialog"
+        className="relative flex h-11 w-full items-center rounded-[14px] bg-tekst/[0.06] pl-9 pr-3 text-left text-[16px] text-tekst-3 transition-transform active:scale-[0.98]"
+      >
+        <PinIcon className="pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2" />
+        {t("Dokąd jedziesz?", "Where are you going?")}
+      </button>
+      <MapHint />
+
+      {typeof document !== "undefined" &&
+        createPortal(
+          <AnimatePresence>
+            {open && (
+              <SearchSheet
+                key="szukaj"
+                inputRef={inputRef}
+                onPick={(end) => {
+                  onPick(end);
+                  setOpen(false);
+                }}
+                onClose={() => setOpen(false)}
+              />
+            )}
+          </AnimatePresence>,
+          document.body,
+        )}
+    </div>
+  );
+}
+
+/** Widoczna część ekranu: na iOS klawiatura nie zmniejsza layoutu, tylko visualViewport. */
+function useVisibleViewport() {
+  const [box, setBox] = useState<{ top: number; height: number } | null>(null);
+  useLayoutEffect(() => {
+    const viewport = window.visualViewport;
+    if (!viewport) return;
+    const update = () => setBox({ top: viewport.offsetTop, height: viewport.height });
+    update();
+    viewport.addEventListener("resize", update);
+    viewport.addEventListener("scroll", update);
+    return () => {
+      viewport.removeEventListener("resize", update);
+      viewport.removeEventListener("scroll", update);
+    };
+  }, []);
+  return box;
+}
+
+/**
+ * Wyszukiwanie na cały ekran: pole u góry, „Anuluj” obok, wyniki do samej klawiatury.
+ * Ptaszek nad klawiaturą i „Szukaj” biorą pierwszy wynik; gdy jeszcze szukamy, biorą go po odpowiedzi.
+ */
+function SearchSheet({
+  inputRef,
+  onPick,
+  onClose,
+}: {
+  inputRef: RefObject<HTMLInputElement | null>;
+  onPick: (end: RideEnd) => void;
+  onClose: () => void;
+}) {
+  const [text, setText] = useState("");
+  const [pickWhenReady, setPickWhenReady] = useState(false);
+  const closing = useRef(false);
+  const search = useDestinationSearch(text);
+  const viewport = useVisibleViewport();
+  const reduce = useReducedMotion();
+  const t = useT();
+
+  function close() {
+    closing.current = true;
+    onClose();
+  }
+
+  function pick(result: Destination) {
+    haptic(4);
+    closing.current = true;
+    onPick(toRideEnd(result));
+  }
+
+  // Ptaszek nad klawiaturą to blur pola; dotknięcia w arkuszu blura nie robią (preventDefault niżej)
+  function confirm() {
+    if (closing.current) return;
+    if (!search.hasQuery) {
+      if (!text.trim()) close();
+      return;
+    }
+    if (search.isSearching) setPickWhenReady(true);
+    else if (search.results[0]) pick(search.results[0]);
+  }
+
+  // biome-ignore lint/correctness/useExhaustiveDependencies: pick czyta bieżące wyniki
+  useEffect(() => {
+    if (!pickWhenReady || search.isSearching) return;
+    setPickWhenReady(false);
+    if (search.results[0]) pick(search.results[0]);
+  }, [pickWhenReady, search.isSearching, search.results]);
+
+  const hidden = reduce ? { opacity: 0 } : { opacity: 0, y: 24 };
+  return (
+    <motion.div
+      role="dialog"
+      aria-modal="true"
+      aria-label={t("Dokąd jedziesz", "Where are you going")}
+      initial={hidden}
+      animate={{ opacity: 1, y: 0 }}
+      exit={hidden}
+      transition={reduce ? { duration: 0.15 } : SPRING}
+      style={{ top: viewport?.top ?? 0, height: viewport?.height ?? "100dvh" }}
+      onPointerDown={(event) => {
+        if (event.target !== inputRef.current) event.preventDefault();
+      }}
+      className="fixed inset-x-0 z-50 flex flex-col bg-powierzchnia"
+    >
+      <div className="flex shrink-0 items-center gap-1 px-4 pt-[max(env(safe-area-inset-top),12px)] pb-2">
+        <div className="relative min-w-0 flex-1">
+          <SearchField
+            inputRef={inputRef}
+            text={text}
+            onTextChange={(next) => {
+              setPickWhenReady(false);
+              setText(next);
+            }}
+            isSearching={search.isSearching && search.hasQuery}
+            expanded={search.hasQuery}
+            onBlur={confirm}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") close();
+              if (event.key === "Enter") {
+                event.preventDefault();
+                event.currentTarget.blur();
+              }
+            }}
+          />
+        </div>
+        <button
+          type="button"
+          onClick={close}
+          className="h-11 shrink-0 px-2 text-[16px] font-semibold text-glebia active:opacity-50"
+        >
+          {t("Anuluj", "Cancel")}
+        </button>
+      </div>
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-2 pb-[max(env(safe-area-inset-bottom),8px)]">
+        {search.hasQuery ? (
+          <DestinationResults {...search} onPick={pick} />
+        ) : (
+          <p className="px-2.5 py-3 text-[13px] text-tekst-3">
+            {t(
+              "Wpisz nazwę miejsca albo adres w Warszawie.",
+              "Type a place name or an address in Warsaw.",
+            )}
+          </p>
+        )}
+      </div>
+    </motion.div>
+  );
+}
+
+type SearchFieldProps = {
+  inputRef?: RefObject<HTMLInputElement | null>;
+  text: string;
+  onTextChange: (text: string) => void;
+  isSearching: boolean;
+  expanded: boolean;
+  onFocus?: () => void;
+  onBlur: () => void;
+  onKeyDown: (event: KeyboardEvent<HTMLInputElement>) => void;
+};
+
+/** Pole wyszukiwania z pinezką; po prawej spinner albo krzyżyk. Rodzic daje `relative`. */
+function SearchField({
+  inputRef,
+  text,
+  onTextChange,
+  isSearching,
+  expanded,
+  onFocus,
+  onBlur,
+  onKeyDown,
+}: SearchFieldProps) {
+  const t = useT();
+  return (
+    <>
+      <PinIcon className="pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2 text-tekst-3" />
+      <input
+        ref={inputRef}
+        type="text"
+        role="combobox"
+        value={text}
+        onChange={(event) => onTextChange(event.target.value)}
+        onFocus={onFocus}
+        onBlur={onBlur}
+        onKeyDown={onKeyDown}
+        placeholder={t("Dokąd jedziesz?", "Where are you going?")}
+        aria-label={t("Dokąd jedziesz", "Where are you going")}
+        aria-expanded={expanded}
+        aria-controls="cele-wyniki"
+        enterKeyHint="search"
+        autoComplete="off"
+        autoCorrect="off"
+        className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-10 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
+      />
+      {/* Stała ramka po prawej: spinner i krzyżyk podmieniają się w miejscu, nic nie drga */}
+      <div className="absolute right-1.5 top-1/2 grid size-8 -translate-y-1/2 place-items-center">
+        {isSearching ? (
+          <Spinner className="pointer-events-none size-4 text-tekst-3" />
+        ) : (
+          text && (
+            <button
+              type="button"
+              onPointerDown={(event) => event.preventDefault()}
+              onClick={() => onTextChange("")}
+              aria-label={t("Wyczyść", "Clear")}
+              className="grid size-8 place-items-center rounded-full text-tekst-3 active:scale-90"
+            >
+              <CloseIcon className="size-4" />
+            </button>
+          )
+        )}
+      </div>
+    </>
+  );
+}
+
+function DestinationResults({
+  results,
+  isSearching,
+  isError,
+  onPick,
+}: {
+  results: Destination[];
+  isSearching: boolean;
+  isError: boolean;
+  onPick: (result: Destination) => void;
+}) {
+  const t = useT();
+  return (
+    <ul id="cele-wyniki" aria-label={t("Wyniki", "Results")}>
+      {results.slice(0, 5).map((result) => (
+        <li key={result.id}>
+          <button
+            type="button"
+            // Fokus zostaje w polu: inaczej blur zamknąłby wyniki przed kliknięciem
+            onPointerDown={(event) => event.preventDefault()}
+            onClick={() => onPick(result)}
+            className="flex min-h-12 w-full items-center gap-2.5 rounded-[12px] px-2.5 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
+          >
+            <PinIcon className="size-[18px] shrink-0 text-glebia" />
+            <span className="flex min-w-0 flex-col">
+              <span className="truncate text-[14px] font-bold text-tekst">{result.name}</span>
+              <span className="truncate text-xs text-tekst-3">{result.address}</span>
+            </span>
+          </button>
+        </li>
+      ))}
+      {results.length === 0 && (
+        <li
+          aria-live="polite"
+          className="flex min-h-12 items-center gap-2.5 px-2.5 py-2 text-[13px] text-tekst-3"
+        >
+          <span className="grid size-[18px] shrink-0 place-items-center">
+            {isSearching ? <Spinner className="size-3.5" /> : <PinIcon className="size-[18px]" />}
+          </span>
+          {isSearching
+            ? t("Szukam w Warszawie…", "Searching Warsaw…")
+            : isError
+              ? t(
+                  "Nie udało się wyszukać. Wybierz cel na mapie.",
+                  "Search failed. Pick a destination on the map.",
+                )
+              : t(
+                  "Nie znalazłam takiego miejsca w Warszawie.",
+                  "I couldn't find that place in Warsaw.",
+                )}
+        </li>
+      )}
+    </ul>
   );
 }
 

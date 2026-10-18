@@ -9,9 +9,8 @@ import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { backTarget } from "../lib/podcast";
-import { dueIndex as placeAt, type RideClock, storyStartSec } from "../lib/ride-clock";
+import { type RideClock, storyStartSec } from "../lib/ride-clock";
 import type { StoryPlayer } from "../lib/story-player";
-import { claimVoice, ROUTE_VOICE } from "../lib/voice";
 import { RoutesIcon } from "./icons";
 import { PodcastDock, PodcastHeader, usePodcast } from "./podcast-controls";
 import { RouteLive } from "./route-live";
@@ -34,9 +33,9 @@ type RouteSheetProps = {
   onActiveChange: (index: number) => void;
   /** Przejście do miejsca z przycisków: zegar jazdy staje przy nim, opowieść gra od początku. */
   onPlayStop: (index: number) => void;
-  /** Zegar jazdy: który punkt już powinien mieć opowieść, ile trwa jazda i przeskok suwakiem. */
-  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "held" | "seekTo">;
-  /** Długość przejażdżki z planera (s), zakres suwaka. */
+  /** Zegar jazdy: który punkt już powinien mieć opowieść i ile trwa jazda. */
+  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "held">;
+  /** Długość przejażdżki z planera (s): z niej godzina dojazdu. */
   totalSec: number;
   onBack: () => void;
   isDesktop: boolean;
@@ -50,7 +49,6 @@ export function RouteSheet(props: RouteSheetProps) {
   const { setIsPlaying, rewind, restart, more, skip } = player;
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
-  const { seekTo } = clock;
 
   // Po końcu opowieści Sawa czeka, aż zbliżysz się do następnego punktu (zegar jazdy, do czasu
   // lokalizacji). Gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
@@ -87,20 +85,6 @@ export function RouteSheet(props: RouteSheetProps) {
   const goNext = useCallback(() => {
     if (hasNext) onPlayStop(activeIndex + 1);
   }, [hasNext, activeIndex, onPlayStop]);
-  // Suwak przesuwa zegar jazdy; inne miejsce pod suwakiem znaczy nową opowieść od początku.
-  const seek = useCallback(
-    (sec: number) => {
-      seekTo(sec);
-      const index = placeAt(stops, sec);
-      if (index === activeIndex) return;
-      claimVoice(ROUTE_VOICE);
-      rewind();
-      setIsPlaying(true);
-      onActiveChange(index);
-    },
-    [seekTo, stops, activeIndex, rewind, setIsPlaying, onActiveChange],
-  );
-
   // Klawiatura na desktopie: spacja wstrzymuje, strzałki przechodzą między miejscami.
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -119,7 +103,7 @@ export function RouteSheet(props: RouteSheetProps) {
     return () => window.removeEventListener("keydown", onKey);
   }, [togglePlay, goBack, goNext]);
 
-  // Suwak obejmuje całą jazdę, a co najmniej start ostatniej opowieści
+  // Jazda trwa co najmniej do startu ostatniej opowieści
   const last = stops[stops.length - 1];
   const totalSec = Math.max(props.totalSec, last ? storyStartSec(last) + 60 : 0);
   const headerRef = useRef<HTMLDivElement>(null);
@@ -164,12 +148,13 @@ export function RouteSheet(props: RouteSheetProps) {
   const dock = (
     <PodcastDock
       podcast={podcast}
+      progress={progress}
       onToggle={togglePlay}
       onStop={() => restart(false)}
       onBack={goBack}
       onNext={goNext}
       onMore={more}
-      onSeek={seek}
+      onJump={onPlayStop}
       onSkip={player.canSkip ? skip : undefined}
     />
   );
@@ -297,8 +282,9 @@ function MobileSheet({
   const height = useViewportHeight();
   const { headerBottom, dockHeight } = useChrome(headerRef, dockRef);
   const controlsBottom = headerBottom + CONTROLS_GAP_PX + dockHeight;
+  // Wyciągnięty do końca arkusz zajmuje cały ekran, jak pełny arkusz w Mapach
   const detents = {
-    full: 64,
+    full: 0,
     controls: Math.max(Math.round(height * 0.35), height - controlsBottom),
   };
   const y = useMotionValue(height);
@@ -382,11 +368,11 @@ function MobileSheet({
           ["--trasa-glowa" as string]: `${headerBottom}px`,
           ["--trasa-dok" as string]: `${dockHeight}px`,
         }}
-        className={`karta absolute inset-x-0 top-0 z-20 flex h-dvh flex-col rounded-t-[28px] border-b-0 ${
-          isFull ? "" : "touch-none"
+        className={`karta absolute inset-x-0 top-0 z-20 flex h-dvh flex-col border-b-0 transition-[border-radius] duration-300 ${
+          isFull ? "rounded-t-none" : "touch-none rounded-t-[28px]"
         }`}
       >
-        <div className="flex shrink-0 cursor-grab justify-center pb-2 pt-2.5 active:cursor-grabbing">
+        <div className="flex shrink-0 cursor-grab justify-center pb-2 pt-[max(10px,env(safe-area-inset-top))] active:cursor-grabbing">
           <button
             type="button"
             aria-label={
@@ -406,7 +392,10 @@ function MobileSheet({
         {/* Stała wysokość (widoczna część przy pełnym rozmiarze): arkusz jedzie transformem, bez przeliczania układu w każdej klatce */}
         <div
           ref={scrollRef}
-          style={{ height: height - detents.full - 34, paddingBottom: dockHeight + 24 }}
+          style={{
+            height: `calc(${height - detents.full - 34}px - max(0px, env(safe-area-inset-top) - 10px))`,
+            paddingBottom: dockHeight + 24,
+          }}
           className={`overscroll-contain px-4 ${
             isFull ? "touch-pan-y overflow-y-auto" : "overflow-hidden"
           }`}

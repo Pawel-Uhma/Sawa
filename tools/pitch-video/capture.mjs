@@ -6,7 +6,7 @@ import { existsSync, linkSync, mkdirSync, readFileSync, rmSync, writeFileSync } 
 import { join } from "node:path";
 import { chromium } from "playwright";
 
-const APP_URL = process.env.APP_URL ?? "http://localhost:3101/demo?voice=1";
+const APP_URL = process.env.APP_URL ?? "http://localhost:3101/demo";
 const RECORD_MS = Number(process.env.RECORD_MS ?? 100_000);
 const SKIP_FFMPEG = process.env.SKIP_FFMPEG === "1";
 const OUT = "public/capture";

@@ -23,6 +23,7 @@ import { createPortal } from "react-dom";
 import { type Lang, LangSwitch, pick, useLang, useT } from "@/features/i18n";
 import { ContrastSwitch, ThemeSwitch } from "@/features/theme";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
+import { placesLabel } from "../lib/format";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import {
   AUDIENCES,
@@ -483,8 +484,8 @@ function MenuContent({ actions, run }: MenuContentProps) {
                   "Nothing yet. I'll remember what you hear",
                 )
               : t(
-                  `${placesLabel(actions.rememberedPlaces)} · od najnowszych`,
-                  `${placesLabelEn(actions.rememberedPlaces)} · newest first`,
+                  `${placesLabel(actions.rememberedPlaces, "pl")} · od najnowszych`,
+                  `${placesLabel(actions.rememberedPlaces, "en")} · newest first`,
                 )
           }
           onClick={() => run(actions.onOpenTold)}
@@ -624,18 +625,6 @@ function Group({ title, children }: { title?: string; children: ReactNode }) {
       </div>
     </section>
   );
-}
-
-function placesLabel(n: number) {
-  const tens = n % 100;
-  const ones = n % 10;
-  if (n === 1) return "1 miejsce";
-  if (ones >= 2 && ones <= 4 && (tens < 12 || tens > 14)) return `${n} miejsca`;
-  return `${n} miejsc`;
-}
-
-function placesLabelEn(n: number) {
-  return `${n} ${n === 1 ? "place" : "places"}`;
 }
 
 type RowProps = {

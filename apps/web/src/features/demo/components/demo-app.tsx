@@ -14,7 +14,7 @@ import { shortestStopFor, useFastestRoute } from "../lib/fastest-route";
 import { forgetAll, useMemory } from "../lib/memory";
 import type { MockStop } from "../lib/mock-data";
 import { EMPTY_PROFILE, loadProfile, type Profile, saveProfile } from "../lib/onboarding";
-import { isAt, useRideClock } from "../lib/ride-clock";
+import { isAt, isNearRoute, useRideClock } from "../lib/ride-clock";
 import {
   CUSTOM_DESTINATION_NAME,
   CUSTOM_DESTINATION_NAME_EN,
@@ -320,7 +320,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const { setIsPlaying, rewind } = player;
   // Kolejne opowieści ruszają z zegarem jazdy; wybór punktu ręcznie znaczy „jestem tutaj”.
   // Pauza i stop Sawy zatrzymują też zegar (suwak i odliczanie), także przed pierwszym miejscem.
-  const clock = useRideClock(route, player.isPlaying);
+  // Z GPS przy trasie zegar sam nie wychodzi poza bieżący punkt: dalej prowadzi lokalizacja.
+  const clock = useRideClock(route, player.isPlaying, isNearRoute(route, start.position));
   const { syncTo, held, setHeld } = clock;
   const heldRef = useRef(held);
   heldRef.current = held;

@@ -1,4 +1,4 @@
-import type { Route, Story } from "@sawa/shared";
+import { HACKATHON_VENUE, type Route, type Story } from "@sawa/shared";
 import { describe, expect, it, vi } from "vitest";
 import {
   createCachedRoutePlanner,
@@ -93,6 +93,14 @@ describe("createRecordingStoryService", () => {
     await createRecordingStoryService(real, store, failed).tell(request("p1") as never);
     expect(store.story("p1")).toBeUndefined();
   });
+
+  it("does not save a silent place, which replay would read out as its name", async () => {
+    const store = memoryStore();
+    const real = fakeStories();
+    real.tell.mockResolvedValueOnce({ ...story("p1", "Kapliczka"), factIds: [], silent: true });
+    await createRecordingStoryService(real, store, new Set()).tell(request("p1") as never);
+    expect(store.story("p1")).toBeUndefined();
+  });
 });
 
 describe("createFixtureSynthesizer", () => {
@@ -143,7 +151,7 @@ describe("createCachedRoutePlanner", () => {
   it("plans once for the same ride asked from the same room", async () => {
     const real: RoutePlanner = { plan: vi.fn(async () => ({}) as Route) };
     let t = 0;
-    const planner = createCachedRoutePlanner(real, () => t);
+    const planner = createCachedRoutePlanner(real, { clock: () => t });
     const now = new Date();
     await Promise.all([
       planner.plan(plan as never, now),
@@ -162,8 +170,47 @@ describe("createCachedRoutePlanner", () => {
         .mockRejectedValueOnce(new Error("boom"))
         .mockResolvedValue({} as Route),
     };
-    const planner = createCachedRoutePlanner(real, () => 0);
+    const planner = createCachedRoutePlanner(real, { clock: () => 0 });
     await expect(planner.plan(plan as never, new Date())).rejects.toThrow("boom");
     await expect(planner.plan(plan as never, new Date())).resolves.toEqual({});
+  });
+
+  const atVenue = { ...plan, origin: { lat: 52.2363, lng: 20.9795 } }; // ~60 m from the door
+
+  it("starts every phone in 42 Warsaw at its door, so the hall shares one plan", async () => {
+    const real: RoutePlanner = { plan: vi.fn(async () => ({}) as Route) };
+    const planner = createCachedRoutePlanner(real, { clock: () => 0 });
+    await planner.plan(atVenue as never, new Date());
+    await planner.plan({ ...plan, origin: { lat: 52.2355, lng: 20.9783 } } as never, new Date());
+    expect(real.plan).toHaveBeenCalledTimes(1);
+    expect(vi.mocked(real.plan).mock.calls[0]?.[0].origin).toEqual(HACKATHON_VENUE);
+  });
+
+  it("keeps rides from the venue planned in the background", async () => {
+    let n = 0;
+    const real: RoutePlanner = { plan: vi.fn(async () => ({ totalMin: ++n }) as Route) };
+    let t = 0;
+    const planner = createCachedRoutePlanner(real, { clock: () => t });
+    await planner.plan(atVenue as never, new Date());
+
+    t = 50_000;
+    await planner.refresh();
+    expect(real.plan).toHaveBeenCalledTimes(2);
+    // Two minutes on, the refreshed plan answers at once.
+    t = 120_000;
+    await expect(planner.plan(atVenue as never, new Date())).resolves.toEqual({ totalMin: 2 });
+    expect(real.plan).toHaveBeenCalledTimes(2);
+  });
+
+  it("plans the stage rides before anyone asks and keeps them", async () => {
+    const real: RoutePlanner = { plan: vi.fn(async () => ({}) as Route) };
+    let t = 0;
+    const stage = { ...plan, origin: HACKATHON_VENUE, interests: ["historical"] };
+    const planner = createCachedRoutePlanner(real, { clock: () => t, keepWarm: [stage as never] });
+    expect(real.plan).toHaveBeenCalledTimes(1);
+    t = 60 * 60_000;
+    await planner.refresh();
+    await planner.plan({ ...stage, audience: "kids" } as never, new Date());
+    expect(real.plan).toHaveBeenCalledTimes(2);
   });
 });

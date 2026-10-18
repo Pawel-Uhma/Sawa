@@ -2,10 +2,13 @@ import { describe, expect, it } from "vitest";
 import type { MockStop } from "./mock-data";
 import {
   ARRIVE_M,
+  capSecFor,
   dueIndex,
   isAt,
   isClockRunning,
+  isNearRoute,
   LEAD_SEC,
+  NEAR_ROUTE_M,
   storyStartSec,
   waitSec,
 } from "./ride-clock";
@@ -65,5 +68,28 @@ describe("isClockRunning", () => {
 
   it("does not run without a route", () => {
     expect(isClockRunning([], 0, true)).toBe(false);
+  });
+
+  it("with GPS stops just before the next place, so a long story does not jump places ahead", () => {
+    expect(capSecFor(stops, 0)).toBe(300 - LEAD_SEC - 1);
+    expect(dueIndex(stops, capSecFor(stops, 100) ?? 0)).toBe(0);
+    expect(capSecFor(stops, 300 - LEAD_SEC)).toBeNull();
+  });
+});
+
+describe("isNearRoute", () => {
+  const at = (lng: number) => ({ coord: [lng, 52.23] }) as MockStop;
+  const metresEast = (m: number) => m / (111_320 * Math.cos((52.23 * Math.PI) / 180));
+
+  it("lets GPS lead only near the route, not without location or far from it", () => {
+    const route = [at(21.0), at(21.02)];
+    expect(isNearRoute(route, { lat: 52.23, lng: 21.0 + metresEast(NEAR_ROUTE_M - 50) })).toBe(
+      true,
+    );
+    expect(isNearRoute(route, { lat: 52.23, lng: 21.02 + metresEast(NEAR_ROUTE_M + 50) })).toBe(
+      false,
+    );
+    expect(isNearRoute(route, null)).toBe(false);
+    expect(isNearRoute([], { lat: 52.23, lng: 21.0 })).toBe(false);
   });
 });

@@ -57,6 +57,11 @@ const EnvSchema = z.object({
     .string()
     .optional()
     .transform((v) => v || undefined),
+  /** Second ElevenLabs key, used when the first is refused (credits spent). */
+  ELEVENLABS_KEY_2: z
+    .string()
+    .optional()
+    .transform((v) => v || undefined),
   /** Google Places API (New) key for finding a ride destination by name; without it GET /v1/destinations answers 502. */
   GOOGLE_PLACES_API_KEY: z
     .string()
