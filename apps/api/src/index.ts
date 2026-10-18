@@ -18,9 +18,11 @@ import { createApp } from "./app";
 import { loadEnv } from "./lib/env";
 import { createLogger } from "./lib/logger";
 import { warsawDate } from "./routes/health";
+import { DEMO_REQUEST } from "./routes/routes";
 import {
   createCachedRoutePlanner,
   createFixedDestinationSearch,
+  DEMO_WARM_RIDES,
   createFixtureSynthesizer,
   createRecordingStoryService,
   createReplayStoryService,
@@ -111,7 +113,13 @@ const livePlanner = createRoutePlanner({
   walkPaths: walkPathSources.length > 0 ? firstWalkPath(walkPathSources) : undefined,
   logger,
 });
-const routePlanner = demo === "off" ? livePlanner : createCachedRoutePlanner(livePlanner);
+// Demo: rides from 42 Warsaw stay planned in the background, so phones in the hall do not wait.
+const cachedPlanner =
+  demo === "off"
+    ? undefined
+    : createCachedRoutePlanner(livePlanner, { keepWarm: [...DEMO_WARM_RIDES, DEMO_REQUEST] });
+if (cachedPlanner) setInterval(() => void cachedPlanner.refresh(), 15_000).unref();
+const routePlanner = cachedPlanner ?? livePlanner;
 
 // Replay never calls the LLM: a place without a saved story gets its facts read plainly.
 const llm =
