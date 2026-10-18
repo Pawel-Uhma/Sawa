@@ -189,5 +189,173 @@
       "t7g8n9"
     ],
     "contextIds": []
+  },
+  "rogatki-wolskie": {
+    "placeId": "rogatki-wolskie",
+    "text": "Mijamy dawne rogatki Wolskie, czyli budki, w których pobierano opłaty od osób wjeżdżających do miasta i od pędzonego bydła. Te murowane pawilony zaprojektował w 1818 roku Jakub Kubicki. To tutaj, 2 listopada 1830 roku, zatrzymał się do kontroli dokumentów i bagażu dyliżans pocztowy. Wsiadł do niego Fryderyk Chopin, który opuścił wtedy Warszawę na zawsze, a żegnali go uczniowie Konserwatorium.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Rogatki Wolskie",
+        "url": "https://pl.wikipedia.org/wiki/Rogatki_Wolskie"
+      }
+    ],
+    "factIds": [
+      "1j35ex7",
+      "lnhio4",
+      "g2v1go"
+    ],
+    "contextIds": []
+  },
+  "osm-way-1136176426": {
+    "placeId": "osm-way-1136176426",
+    "text": "Skwer Hanki Bielickiej",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "aleja-solidarnosci": {
+    "placeId": "aleja-solidarnosci",
+    "text": "Mijamy aleję Solidarności. Pierwszy odcinek wytyczono w 1862 roku po stronie praskiej jako ulicę Aleksandrowską na cześć cara Aleksandra II, łącząc ją z wiaduktem Pancera. Zanim powstała Trasa W-Z, ruch między dworcem Petersburskim a Wiedeńskim miała przejąć kolej, ale zrezygnowano z niej ze względu na nachylenie skarpy wiślanej. Ostatecznie ruch przejęła kolej konna, czyli tramwaj konny, który jechał ulicą Aleksandrowską, Nowym Zjazdem, Krakowskim Przedmieściem, Królewską i Marszałkowską.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Aleja „Solidarności” w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Aleja_%E2%80%9ESolidarno%C5%9Bci%E2%80%9D_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "v6rpx",
+      "14nssik"
+    ],
+    "contextIds": []
+  },
+  "chlodna": {
+    "placeId": "chlodna",
+    "text": "Mijamy ulicę Chłodną, która wyrosła z dawnej drogi narolnej prowadzącej z placu Mirowskiego do wsi Wola. W XVIII wieku włączono ją w Oś Saską, czyli założenie przestrzenne zaprojektowane jako rezydencjonalna oś Warszawy. Przez lata pod numerem 20 stała kamienica pod Zegarem, w której na pierwszym piętrze od 13 grudnia 1941 roku do swojej śmierci mieszkał Adam Czerniaków, prezes Judenratu. Podczas okupacji, 26 stycznia 1942 roku, między kamienicami wzniesiono drewnianą kładkę dla pieszych łączącą obie części getta, największą z czterech takich konstrukcji, rozebraną w sierpniu tego samego roku. Dziś w tym miejscu stoi Kładka Pamięci, upamiętniająca tamto przejście za pomocą dwóch par stalowych masztów połączonych linami, odsłonięta 1 października 2011 roku. Ulica ta zyskała też sławę filmową, bo miała pojawić się w filmie Pianista Romana Polańskiego, jednak w rzeczywistości sceny nakręcono gdzie indziej, a drewniany most zbudowano przy ulicy Konopackiej.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ch%C5%82odna_w_Warszawie"
+      },
+      {
+        "id": "s3",
+        "title": "Wikipedia pl: Ulica Chłodna w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Chłodna_w_Warszawie"
+      },
+      {
+        "id": "s4",
+        "title": "Wikipedia PL: Getto warszawskie",
+        "url": "https://pl.wikipedia.org/wiki/Getto_warszawskie"
+      }
+    ],
+    "factIds": [
+      "1e70tjl",
+      "h0o25z",
+      "1g98rtm",
+      "1wkwsh9",
+      "1pnv7xc"
+    ],
+    "contextIds": []
+  },
+  "przytulek-starozakonnych-karolkowa-wolska": {
+    "placeId": "przytulek-starozakonnych-karolkowa-wolska",
+    "text": "U zbiegu z ulicą Wolską mieścił się dawniej przytułek dla starozakonnych, który miał oddziały dla starców i sierot. W ulicy Karolkowej działały też inne instytucje dobroczynne.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Karolkowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Karolkowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "156935n",
+      "19xonsa"
+    ],
+    "contextIds": []
+  },
+  "g-mural-wolska-tytusa-brzozowskiego": {
+    "placeId": "g-mural-wolska-tytusa-brzozowskiego",
+    "text": "Mural \"Wolska\" Tytusa Brzozowskiego",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "tablica-tchorka-karolkowa-solidarnosci": {
+    "placeId": "tablica-tchorka-karolkowa-solidarnosci",
+    "text": "Mijamy wolno stojącą tablicę projektu rzeźbiarza Karola Tchorka, upamiętniającą masową egzekucję, która odbyła się w tym miejscu 6 sierpnia 1944 roku. W pobliżu dawnego szpitala świętego Łazarza, czyli placówki medycznej działającej na Woli, policjanci z grupy Reinefartha, czyli niemieckiej formacji pacyfikacyjnej, rozstrzelali wtedy wielu mieszkańców. Na piaskowcowej tablicy widnieje napis: Tu w dniu 6 sierpnia 1944 w masowej egzekucji hitlerowcy rozstrzelali wielu Polaków. Po wojnie zinwentaryzowano miejsca straceń w tej dzielnicy, oznaczając je właśnie takimi projektami, które wygrały w konkursie z przełomu lat 1948 i 1949 roku.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Tablice pamiątkowe Tchorka w Warszawie (lista tablic, wiersz Karolkowa róg al. Solidarności)",
+        "url": "https://pl.wikipedia.org/wiki/Tablice_pamiątkowe_Tchorka_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "Wikipedia: Rzeź Woli",
+        "url": "https://pl.wikipedia.org/wiki/Rzeź_Woli"
+      },
+      {
+        "id": "s3",
+        "title": "OpenStreetMap: węzeł 1774816928 (tablica, współrzędne i napis)",
+        "url": "https://www.openstreetmap.org/node/1774816928"
+      },
+      {
+        "id": "s4",
+        "title": "Wikidata Q15103929",
+        "url": "https://www.wikidata.org/wiki/Q15103929"
+      }
+    ],
+    "factIds": [
+      "j1mnx5",
+      "1yxu3p7",
+      "w3gyte",
+      "1pzb2ex",
+      "1fma7os"
+    ],
+    "contextIds": []
+  },
+  "leszno": {
+    "placeId": "leszno",
+    "text": "Mijamy ulicę Leszno, która powstała w miejscu dawnego traktu do Błonia, czyli miasteczka na zachód od Warszawy. Nazwa pochodzi od jurydyki Leszno, czyli prywatnego miasteczka tuż za murami Warszawy, z własnymi prawami, założonego 8 stycznia 1648 roku przez podskarbiego wielkiego koronnego Bogusława Leszczyńskiego i jego stryja, kanclerza Jana Leszczyńskiego. Ta jurydyka była zamożna i osiedlała się tu głównie ludność ewangelickia, która przybyła z wielkopolskiego Leszna.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Leszno w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Leszno_w_Warszawie"
+      },
+      {
+        "id": "s4",
+        "title": "1943.pl: spacer varsavianistyczny „Dawna ulica Leszno”",
+        "url": "https://1943.pl/wp-content/uploads/pdf/fotorelacja-spacer-varsavianistyczny-dawna-ulica-leszno_pl.pdf"
+      },
+      {
+        "id": "s6",
+        "title": "Wikipedia: Leszno (jurydyka)",
+        "url": "https://pl.wikipedia.org/wiki/Leszno_(jurydyka)"
+      }
+    ],
+    "factIds": [
+      "1q71y3",
+      "shsqjh",
+      "4w7u32"
+    ],
+    "contextIds": []
+  },
+  "okopowa-5": {
+    "placeId": "okopowa-5",
+    "text": "Mijamy budynek przy ulicy Okopowej 5. Pomiędzy 1919 a 1939 rokiem działało tu schronisko dla bezdomnych, którzy zostali eksmitowani za niepłacenie czynszu.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Okopowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Okopowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "f7ccg5"
+    ],
+    "contextIds": []
   }
 }
