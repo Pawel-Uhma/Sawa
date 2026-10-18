@@ -2860,5 +2860,119 @@
       "anocu7"
     ],
     "contextIds": []
+  },
+  "g-cosmos-muzeum-warszawa": {
+    "placeId": "g-cosmos-muzeum-warszawa",
+    "text": "Cosmos Muzeum Warszawa",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "panska-112": {
+    "placeId": "panska-112",
+    "text": "Tam, gdzie dziś stoi biurowiec, stała kiedyś kamienica przy dawnej ulicy Pańskiej 112, wybudowana krótko przed II wojną światową. W 2008 roku na jej ślepej ścianie od strony ronda Daszyńskiego powstał mural Jeszcze świadomy. Z inicjatywy Mariusza Libela z Grupy Twożywo i Muzeum Powstania Warszawskiego ozdobiono ścianę dziełem, które prawdopodobnie było wtedy największym muralem w Warszawie.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Kamienica przy ul. Pańskiej 112 w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Kamienica_przy_ul._Pa%C5%84skiej_112_w_Warszawie"
+      },
+      {
+        "id": "s2",
+        "title": "Warszawa.wikia.com: opis kamienicy (cytowane w artykule)",
+        "url": "https://warszawa.fandom.com"
+      }
+    ],
+    "factIds": [
+      "1liu6z9",
+      "35aks8",
+      "8wcf2u"
+    ],
+    "contextIds": []
+  },
+  "osm-kamienica-tomasza-lisowskiego-6819": {
+    "placeId": "osm-kamienica-tomasza-lisowskiego-6819",
+    "text": "Kamienica Tomasza Lisowskiego",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "hotel-polonia-palace-jerozolimskie-45": {
+    "placeId": "hotel-polonia-palace-jerozolimskie-45",
+    "text": "Mijamy hotel Polonia Palace, który jest drugim najstarszym hotelem działającym w stolicy. Otwarto go 14 lipca 1913 roku. W czasach zaborów nazwa Polonia miała pokrzepiać serca i była silnym akcentem patriotycznym. Hotelem zarządzał do 1939 roku hrabia Konstanty Przeździecki. W 1924 roku kosztem garaży dobudowano nową salę dancingową, a w 1946 roku odbył się tu pierwszy w Warszawie pokaz mody.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Hotel Polonia Palace",
+        "url": "https://pl.wikipedia.org/wiki/Hotel_Polonia_Palace"
+      },
+      {
+        "id": "s2",
+        "title": "Warszawikia: Hotel Polonia Palace",
+        "url": "https://warszawa.fandom.com/pl/wiki/Hotel_Polonia_Palace"
+      }
+    ],
+    "factIds": [
+      "106w826",
+      "bpa60j",
+      "1nqv4jz",
+      "jx9uxa",
+      "9cjnen",
+      "fpfxna",
+      "ty5kvp"
+    ],
+    "contextIds": []
+  },
+  "osm-way-330496954": {
+    "placeId": "osm-way-330496954",
+    "text": "Skwer Duśki Trafankowskiej",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "centrum-krolewska": {
+    "placeId": "centrum-krolewska",
+    "text": "Mijamy Centrum Królewska, czyli nowoczesny budynek przy ulicy Marszałkowskiej 142. Powstał w latach 1999 do 2002, a w miejscu, gdzie dziś stoi, stał wcześniej budynek Orbisu działający od 1976 do 1999 roku.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Centrum Królewska w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Centrum_Kr%C3%B3lewska_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1a8f4f6",
+      "1hpy11z"
+    ],
+    "contextIds": []
+  },
+  "osm-mur-getta-5672": {
+    "placeId": "osm-mur-getta-5672",
+    "text": "Mur Getta",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "wiadukt-pancera": {
+    "placeId": "wiadukt-pancera",
+    "text": "Tam, gdzie dziś biegnie ulica Nowy Zjazd, stał kiedyś Wiadukt Pancera, zbudowany w latach 1844 do 1846 roku. Powstał po to, by ułatwić dojazd do mostu łyżwowego na Wiśle. Trzeba było na to poświęcić dawne budynki, bo w związku z jego budową zburzono klasztor i kościół bernardynek oraz część zabudowy Mariensztatu. Konstrukcja miała 7 łukowych sklepieniach z cegły, wspartych na 6 filarach i 2 przyczółkach. Z czasem wiadukt zaczął służyć także jako dojazd do oddanego w 1864 roku mostu Kierbedzia, a na jego jezdni ułożono tory tramwajowe. Pod koniec wojennej historii, gdy wycofywały się wojska niemieckie po powstaniu warszawskim, zniszczono przedostatni filar, co spowodowało zawalenie się 2 przęseł. Ostatecznie pozostałości rozebrano na przełomie stycznia i lutego 1948 roku podczas budowy trasy W-Z. Do dziś ocalał tylko jeden element dawnej budowli: żelazna tablica z napisem w językach rosyjskim i polskim, którą w 2007 roku ustawiono przy Bramie Grodzkiej Zamku Królewskiego.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Wiadukt Pancera w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Wiadukt_Pancera_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "14187es",
+      "gfy2op",
+      "66llwz",
+      "nvb5xk",
+      "7fcs19",
+      "c8cqu0",
+      "fr57w9",
+      "1t7tidg"
+    ],
+    "contextIds": []
   }
 }
