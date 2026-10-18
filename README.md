@@ -112,7 +112,7 @@ Kontrakt API (zod) jest w `packages/shared` i jest wspólny dla web i api. Przeg
 | Kontrakt API | zod w `packages/shared` | frontend i backend korzystają z tych samych definicji danych, więc nie rozjeżdżają się |
 | Baza | Supabase (Postgres + PostGIS) | szybko wyszukuje miejsca w danym obszarze mapy |
 | Model językowy | OpenRouter, `google/gemini-3.5-flash-lite` | tani i szybki; model zmienia się jedną zmienną środowiskową (`OPENROUTER_MODEL`) |
-| Głos | ElevenLabs `eleven_multilingual_v2` | naturalnie brzmiący polski; domyślnie wyłączony, włącza go `?voice=1` w adresie |
+| Głos | ElevenLabs `eleven_multilingual_v2` | naturalnie brzmiący polski |
 | Jakość kodu | TypeScript w trybie `strict`, testy Vitest, Biome, GitHub Actions | każdy PR automatycznie przechodzi sprawdzenie typów, testy i lint, zanim trafi do `main` |
 
 ## Użycie AI
