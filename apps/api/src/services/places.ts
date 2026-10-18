@@ -1,6 +1,7 @@
 import {
   INTEREST_TAGS,
   type Interest,
+  isDryFact,
   type PlacesQuery,
   type PlacesResponse,
   toLngLat,
@@ -16,11 +17,14 @@ export async function listPlaces(
   const found = await places.listInBBox(bbox, interests && tagsOf(interests));
   return {
     type: "FeatureCollection",
-    features: found.map(({ position, id, name, kind, subkind, interests, richness }) => ({
-      type: "Feature",
-      geometry: { type: "Point", coordinates: toLngLat(position) },
-      properties: { id, name, kind, subkind, interests, richness },
-    })),
+    // Richness counts story lines only (the seed skips map data), so 0 is a place with nothing to tell.
+    features: found
+      .filter((p) => p.richness > 0)
+      .map(({ position, id, name, kind, subkind, interests, richness }) => ({
+        type: "Feature",
+        geometry: { type: "Point", coordinates: toLngLat(position) },
+        properties: { id, name, kind, subkind, interests, richness },
+      })),
   };
 }
 
@@ -32,5 +36,10 @@ function tagsOf(interests: readonly Interest[]): string[] {
 export async function getPlace(places: PlacesRepository, id: string): Promise<Place> {
   const place = await places.getById(id);
   if (!place) throw new AppError("NOT_FOUND", `Place "${id}" not found`);
-  return place;
+  // "W Google Maps opisany jako „Kapliczka”" says nothing on a place card.
+  return {
+    ...place,
+    facts: place.facts.filter((t) => !isDryFact(t)),
+    trivia: place.trivia.filter((t) => !isDryFact(t)),
+  };
 }

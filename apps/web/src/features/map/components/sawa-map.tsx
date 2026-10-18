@@ -18,6 +18,7 @@ import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import { registerBoardingTimers } from "../lib/boarding-timers";
 import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
@@ -37,14 +38,17 @@ import {
   START_VIEW,
   WARSAW_MAX_BOUNDS,
 } from "../lib/map-style";
+import { isParkPlace } from "../lib/park-highlight";
 import { registerPlaceStickers } from "../lib/place-stickers";
 import { placeBBoxesInView } from "../lib/place-tiles";
 import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
+import { LineShapesLayer } from "./line-shapes-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { LocateButton, type LocateProps } from "./locate-button";
+import { ParkLayer, type ParkSelection } from "./park-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
 import {
   PLACES_CLUSTER_LAYER_ID,
@@ -54,7 +58,6 @@ import {
 } from "./places-layer";
 import { ROUTE_PLACES_LAYER_ID, RouteLayer } from "./route-layer";
 import { StreetLayer } from "./street-layer";
-import { TopicLegend } from "./topic-legend";
 import { UserLayer } from "./user-layer";
 
 const INTERACTIVE_LAYERS = [ROUTE_PLACES_LAYER_ID, PLACES_LAYER_ID, PLACES_CLUSTER_LAYER_ID];
@@ -139,10 +142,21 @@ export function SawaMap({
     [hasPlaceSheet, selectedId, places.data, route],
   );
 
-  const selectedStreet = useMemo(() => {
-    const summary = places.data.find((p) => p.properties.id === selectedId)?.properties;
-    return summary && isStreetPlace(summary) ? summary.name : null;
-  }, [selectedId, places.data]);
+  const selectedSummary = useMemo(
+    () => places.data.find((p) => p.properties.id === selectedId),
+    [selectedId, places.data],
+  );
+  const selectedStreet =
+    selectedSummary && isStreetPlace(selectedSummary.properties)
+      ? selectedSummary.properties.name
+      : null;
+  const selectedPark = useMemo<ParkSelection | null>(
+    () =>
+      selectedSummary && isParkPlace(selectedSummary.properties)
+        ? { name: selectedSummary.properties.name, lngLat: selectedSummary.geometry.coordinates }
+        : null,
+    [selectedSummary],
+  );
 
   const fullPadding = { ...DEFAULT_MAP_PADDING, ...padding };
   const isSheetOpen = Boolean(selected);
@@ -282,6 +296,7 @@ export function SawaMap({
           // Place markers are drawn on demand; the map lives as long as this listener.
           registerPlaceStickers(event.target);
           registerClusterBadges(event.target);
+          registerBoardingTimers(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
@@ -303,15 +318,19 @@ export function SawaMap({
             palette={palette}
           />
         )}
+        {icons !== "loading" && <ParkLayer selected={selectedPark} color={palette.park} />}
         {icons !== "loading" && (
           <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
         )}
+        {icons !== "loading" && route && <LineShapesLayer route={route} data={vehicles.data} />}
         {icons !== "loading" && route && (
           <RouteLayer
             route={route}
             selectedId={selectedId}
             activeId={activeStopId}
             hasIcons={icons === "ready"}
+            knownPlaces={places.data}
+            theme={theme}
             palette={palette}
           />
         )}
@@ -348,7 +367,6 @@ export function SawaMap({
               : null}
         </StatusPill>
       </div>
-      <TopicLegend hasZoomControls={hasZoomControls} />
       {/* Bez kropki (start spod 42 Warsaw, gdy jesteś poza Warszawą) nie ma do czego wracać */}
       {locate && (user || locate.status !== "found") && (
         <LocateButton

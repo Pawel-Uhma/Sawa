@@ -1,4 +1,4 @@
-import { isDryFact } from "./dry-facts";
+import { isDryFact } from "@sawa/shared";
 import { cleanForSpeech } from "./story";
 
 /** A story or trivia about a place found on the web, with the page it comes from. */

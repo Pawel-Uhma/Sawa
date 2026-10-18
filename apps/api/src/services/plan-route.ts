@@ -13,24 +13,42 @@ import {
   alongWalkPaths,
   buildRoute,
   buildWalkRoute,
+  scoreAlongPath,
 } from "../domain/routing/build-route";
 import { DEFAULT_FASTEST_OPTIONS, planFastest } from "../domain/routing/fastest";
+import { cumulativeDistancesM } from "../domain/routing/geometry";
 import { computePlaceHits } from "../domain/routing/place-hits";
 import { RICHNESS_EXPONENT, type ScorePrefs } from "../domain/routing/score";
 import { STORY_GAP_SEC, STORY_MAX_SEC } from "../domain/routing/select-stories";
 import { shiftRide } from "../domain/routing/shift-ride";
 import { toPlacePoints } from "../domain/routing/to-place-points";
 import type { PlaceHit, PlacePoint } from "../domain/routing/types";
-import { pickWalkOnPaths } from "../domain/routing/walk-on-paths";
-import { placesAlong, planWalks, type Walk, type WalkInput } from "../domain/routing/walk-tour";
+import {
+  DEFAULT_WALK_OPTIONS,
+  isLoop,
+  LOOP_TIME_SLACK,
+  loopObjective,
+  placesAlong,
+  planBeamWalk,
+  planSquareLoop,
+  planSquareLoops,
+  planWalk,
+  polylineM,
+  resizeLoop,
+  squareness,
+  type Walk,
+  type WalkInput,
+} from "../domain/routing/walk-tour";
 import { AppError } from "../lib/errors";
 import type {
   DepartureSource,
   LiveBoardingSource,
   PlacesRepository,
+  TransitCalendar,
   TransitData,
   WalkPathSource,
 } from "./ports";
+import { transitOn } from "./transit-day";
 
 const M_PER_DEG_LAT = 111_320;
 const GRID_DEG = 0.05; // bbox snapped to a grid so nearby requests share the cache
@@ -43,12 +61,21 @@ const MIN_LIVE_DELAY_SEC = 30;
 const CITY_TRANSIT_CREDIT =
   "Rozkład jazdy i pozycje pojazdów: Zarząd Transportu Miejskiego, dane.um.warszawa.pl (CC BY)";
 const CACHE_SIZE = 20;
-/** Walks compared along their real paths (one walk router request each). */
-const WALK_ALTERNATIVES = 4;
 /** Places come from Supabase; refetched this often so new places reach routes without a restart. */
 const PLACES_TTL_MS = 10 * 60_000;
 /** After a failed fetch (fallback in use) Supabase is retried sooner. */
 const RETRY_TTL_MS = 60_000;
+/** A loop walk's real path this close (share) to the budget is not planned again. */
+const LOOP_PATH_SLACK = LOOP_TIME_SLACK;
+/**
+ * A loop walk whose real path is off the budget by more than this share is not taken (a river
+ * or railway in the way): the walk goes from place to place instead.
+ */
+const LOOP_MAX_OFF = 0.5;
+/** Most times a loop walk is planned again with the detour measured on its path. */
+const LOOP_REPLANS = 2;
+/** Different loops measured on real paths at first (requests to the walk router at once). */
+const LOOP_CANDIDATES = 3;
 /** A tram covers ~15 km/h on average; a ride rarely gets farther than this from the origin. */
 const reachKm = (durationMin: number) => Math.min(20, Math.max(4, durationMin * 0.15));
 
@@ -90,8 +117,9 @@ function reachableBbox(points: LatLng[], durationMin: number): BBox {
   };
 }
 
-export function createRoutePlanner(deps: {
-  transit: TransitData;
+type PlannerDeps = {
+  /** One service day (tests) or the calendar of built days (production). */
+  transit: TransitData | TransitCalendar;
   /** Supabase in production; the file repository when Supabase is not configured. */
   places: PlacesSource;
   /** Used when `places` fails or times out (apps/api/data/places.geojson). */
@@ -104,7 +132,25 @@ export function createRoutePlanner(deps: {
   logger?: PlannerLogger;
   /** Milliseconds; for the cache TTL. */
   clock?: () => number;
-}): RoutePlanner {
+};
+
+/** Plans on the graph of the request's Warsaw day; the planner of the previous day is dropped. */
+export function createRoutePlanner(deps: PlannerDeps): RoutePlanner {
+  let current: { serviceDate: string; planner: RoutePlanner } | undefined;
+  return {
+    plan(request, now) {
+      const transit = transitOn(deps.transit, now);
+      if (current?.serviceDate !== transit.serviceDate)
+        current = {
+          serviceDate: transit.serviceDate,
+          planner: createDayPlanner({ ...deps, transit }),
+        };
+      return current.planner.plan(request, now);
+    },
+  };
+}
+
+function createDayPlanner(deps: PlannerDeps & { transit: TransitData }): RoutePlanner {
   const { network, attribution } = deps.transit;
   const clock = deps.clock ?? Date.now;
   const cache = new Map<string, CacheEntry>();
@@ -286,17 +332,75 @@ export function createRoutePlanner(deps: {
   }
 
   /**
-   * The walk to take: the planner's best few walks (planned on straight lines) compared along
-   * their real paths (`pickWalkOnPaths`), so a walk that needs a long way round loses. Without
-   * paths the planner's best.
+   * A walk; a loop is chosen on real paths. The `LOOP_CANDIDATES` best squares are measured on
+   * the paths drawn through them. When none is within `LOOP_PATH_SLACK` of the budget, the
+   * closest has its bare corners moved (the places at its corners stay), or, with none, a square
+   * is planned for a budget scaled by how far off it was; a loop already measured is not asked
+   * for again. Of the loops within the slack, the best by places along its real path and shape
+   * is taken (`loopObjective`); else the closest, if within `LOOP_MAX_OFF`; else the walk from
+   * place to place (`planBeamWalk`). Times are as long as the path drawn and the score is that
+   * of the places along it.
    */
-  async function planWalkOnPaths(input: WalkInput): Promise<Walk | null> {
-    const walks = planWalks(input, {}, WALK_ALTERNATIVES);
+  async function walkFor(input: WalkInput): Promise<Walk | null> {
     const source = deps.walkPaths;
-    if (!source || walks.length === 0) return walks[0] ?? null;
-    const paths = await Promise.all(walks.map((walk) => source.path(walk.waypoints)));
-    const onPaths = walks.map((walk, i) => ({ walk, path: paths[i] }));
-    return pickWalkOnPaths(onPaths, input) ?? walks[0] ?? null;
+    if (!isLoop(input.origin, input.end) || !source) return planWalk(input);
+    /** `plannedSec`: the budget the loop was planned for. */
+    type Measured = { walk: Walk; plannedSec: number; pathSec: number; score: number };
+    const tried = new Set<string>();
+    const measure = async (walk: Walk, plannedSec: number): Promise<Measured | undefined> => {
+      const key = walk.waypoints.map((p) => `${p.lat},${p.lng}`).join("|");
+      if (walk.waypoints.length <= 2 || tried.has(key)) return undefined;
+      tried.add(key);
+      const path = await source.path(walk.waypoints);
+      if (!path) return undefined;
+      const pathSec = (cumulativeDistancesM(path).at(-1) ?? 0) / DEFAULT_WALK_OPTIONS.walkSpeedMps;
+      const score = scoreAlongPath(path, input.places, input.interests, input.prefs);
+      return { walk, plannedSec, pathSec, score };
+    };
+    const off = (m: Measured) => Math.abs(m.pathSec / input.budgetSec - 1);
+    const closest = (all: Measured[]) =>
+      all.reduce<Measured | undefined>((a, b) => (!a || off(b) < off(a) ? b : a), undefined);
+
+    const first = planSquareLoops(input, {}, LOOP_CANDIDATES);
+    const measured = (await Promise.all(first.map((w) => measure(w, input.budgetSec)))).filter(
+      (m): m is Measured => m !== undefined,
+    );
+    for (let i = 0; i < LOOP_REPLANS && !measured.some((m) => off(m) <= LOOP_PATH_SLACK); i++) {
+      const near = closest(measured);
+      if (!near) break;
+      const offBy = near.pathSec / input.budgetSec;
+      const plannedSec = near.plannedSec / offBy;
+      const next =
+        resizeLoop(input, near.walk, polylineM(near.walk.corners ?? near.walk.waypoints) / offBy) ??
+        planSquareLoop({ ...input, budgetSec: plannedSec });
+      const m = await measure(next, plannedSec);
+      if (!m) break;
+      measured.push(m);
+    }
+
+    const value = (m: Measured) =>
+      loopObjective(m.score, squareness((m.walk.corners ?? m.walk.waypoints).slice(0, -1)), off(m));
+    const fitting = measured.filter((m) => off(m) <= LOOP_PATH_SLACK);
+    const near = closest(measured);
+    const best = fitting.length
+      ? fitting.reduce((a, b) => (value(b) > value(a) ? b : a))
+      : near && off(near) <= LOOP_MAX_OFF
+        ? near
+        : undefined;
+    if (!best) return measured.length > 0 ? planBeamWalk(input) : (first[0] ?? null);
+    return {
+      ...withDetour(best.walk, best.pathSec / best.walk.elapsedSec),
+      score: best.score,
+    };
+  }
+
+  /** `walk` with its times stretched by `k` (a path longer than estimated). */
+  function withDetour(walk: Walk, k: number): Walk {
+    return {
+      ...walk,
+      elapsedSec: walk.elapsedSec * k,
+      places: walk.places.map((p) => ({ ...p, etaSec: p.etaSec * k })),
+    };
   }
 
   /** Plans with straight walking legs, then `drawn` puts them on real paths. */
@@ -328,7 +432,7 @@ export function createRoutePlanner(deps: {
           : request.destination
             ? (haversineM(request.origin, request.destination) * walkDetourFactor) / walkSpeedMps
             : 0;
-      const walk = await planWalkOnPaths({
+      const walk = await walkFor({
         places: [...placesById.values()],
         origin: request.origin,
         end: request.returnToStart ? request.origin : request.destination,
@@ -412,7 +516,7 @@ export function createRoutePlanner(deps: {
     // past places competes with the ride (a ride counts only if it fits the time).
     // Picked "transit" skips this; no pick (auto) walks only under WALK_UNDER_MIN.
     if (request.travel === undefined && request.durationMin < WALK_UNDER_MIN) {
-      const walk = await planWalkOnPaths({
+      const walk = await walkFor({
         places: [...placesById.values()],
         origin: request.origin,
         end: request.returnToStart ? request.origin : request.destination,
@@ -420,11 +524,11 @@ export function createRoutePlanner(deps: {
         interests,
         prefs,
       });
-      const rideFits =
-        !!ride &&
-        ride.elapsedSec <= DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec &&
-        ride.endsAtDestination !== false;
-      if (walk && (!ride || !rideFits || walk.score > ride.score)) {
+      const maxSec = DEFAULT_SEARCH_OPTIONS.maxBudgetShare * budgetSec;
+      const rideFits = !!ride && ride.elapsedSec <= maxSec && ride.endsAtDestination !== false;
+      // Both on the same terms: within the time, scored by the places they pass.
+      const walkFits = !!walk && walk.elapsedSec <= maxSec;
+      if (walk && (!ride || !rideFits || (walkFits && walk.score > ride.score))) {
         return drawn(
           buildWalkRoute({
             ...story,

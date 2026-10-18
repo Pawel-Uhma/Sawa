@@ -26,13 +26,19 @@ export type MapPalette = {
   stopText: string;
   /** Ring around the selected place. */
   selected: string;
+  /** Name under the route place the story is about. */
+  activeLabel: string;
   /** Fill of the start and transfer rings. */
   boardingFill: string;
+  /** Empty part of the countdown ring at a boarding stop. */
+  timerTrack: string;
   label: string;
   labelHalo: string;
   walk: string;
   /** Whole street drawn under its icon when the street is hovered or selected. */
   street: string;
+  /** Whole park, square or garden drawn under its icon when it is selected. */
+  park: string;
   /** Group of places drawn as one circle with their count when zoomed out ("glass" style, 17.10). */
   clusterFill: string;
   clusterStroke: string;
@@ -65,11 +71,14 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopFill: "#18181b",
     stopText: "#ffffff",
     selected: "#18181b",
+    activeLabel: "#17706f",
     boardingFill: "#ffffff",
+    timerTrack: "#e3e7e6",
     label: "#27272a",
     labelHalo: "#ffffff",
     walk: "#52525b",
     street: "#4f6d9a",
+    park: "#2f7a34",
     clusterFill: "rgba(255, 255, 255, 0.92)",
     clusterStroke: "rgba(23, 112, 111, 0.35)",
     clusterText: "#17706f",
@@ -96,11 +105,14 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopFill: "#e6efed",
     stopText: "#0e1615",
     selected: "#e6efed",
+    activeLabel: "#8ed1b5",
     boardingFill: "#0e1615",
+    timerTrack: "#2a3634",
     label: "#d5dfdd",
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
     street: "#8fa9d4",
+    park: "#93cf96",
     clusterFill: "rgba(23, 33, 32, 0.92)",
     clusterStroke: "rgba(142, 209, 181, 0.4)",
     clusterText: "#8ed1b5",
@@ -383,11 +395,14 @@ export function lineColor(lineIndex: number): string {
   return LINE_COLORS[lineIndex % LINE_COLORS.length];
 }
 
+/** How much white goes into the icon of the previous and next vehicle of the line. */
+export const PALE_SHARE = 0.4;
+
 /**
  * Map icons in `public/map-icons/`, 96 px PNGs registered with pixelRatio 2, so icon-size 1 is 48 css px.
  * Place markers are not here: they are drawn in the browser in their topic colour (place-stickers.ts).
  */
-export const MAP_ICONS = ["stop", "tram", "bus"] as const;
+export const MAP_ICONS = ["tram", "bus"] as const;
 export const MAP_ICON_PIXEL_RATIO = 2;
 
 export function mapIconId(name: string): string {

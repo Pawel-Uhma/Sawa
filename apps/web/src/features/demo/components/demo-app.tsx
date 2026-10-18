@@ -21,11 +21,13 @@ import {
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
+import { musicDucked, musicPlays } from "../lib/ride-music";
+import { useMusicOn, useRideMusic } from "../lib/ride-music-player";
 import { useGpsClockSync } from "../lib/ride-sync";
 import { screenCamera } from "../lib/screen-camera";
 import { type StartStatus, startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
-import { claimVoice, ROUTE_VOICE } from "../lib/voice";
+import { claimVoice, isAside, ROUTE_VOICE, useVoiceOwner } from "../lib/voice";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
@@ -255,6 +257,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const isPickingEnd = endType === "destination";
   // Karta miejsca działa też na trasie: klik w pinezkę spoza trasy pokazuje to miejsce.
   const isPlaceOpen = (isHome || isRoute) && selectedPlace !== null;
+  // Po zamknięciu karty kamera stoi, dopóki nie zmieni się przystanek, cel albo ekran.
+  const [placeClosed, setPlaceClosed] = useState(false);
+  useEffect(() => {
+    if (isPlaceOpen) setPlaceClosed(true);
+  }, [isPlaceOpen]);
+  // biome-ignore lint/correctness/useExhaustiveDependencies: reset on screen, stop or destination change
+  useEffect(() => {
+    setPlaceClosed(false);
+  }, [stage, tab, activeIndex, destination]);
 
   const padding: MapPadding = useMemo(() => {
     if (isDesktop) {
@@ -284,12 +295,23 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       isRoute && activeStop ? { lat: activeStop.coord[1], lng: activeStop.coord[0] } : null;
     return screenCamera({
       place: isPlaceOpen ? { position: selectedPlace.position } : null,
+      placeClosed,
       activeStop: stop,
       destination: isHome && destination ? destination.point : null,
       origin,
       isDesktop,
     });
-  }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace, origin]);
+  }, [
+    isRoute,
+    activeStop,
+    isDesktop,
+    isHome,
+    destination,
+    isPlaceOpen,
+    selectedPlace,
+    placeClosed,
+    origin,
+  ]);
 
   const listener = useMemo(() => listenerOf(profile), [profile]);
   const memory = useMemory();
@@ -302,6 +324,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const { syncTo, held, setHeld } = clock;
   const heldRef = useRef(held);
   heldRef.current = held;
+  const musicOn = useMusicOn();
+  const voiceOwner = useVoiceOwner();
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
   useGpsClockSync(route, start.position, clock);
   const pickStop = useCallback(
@@ -329,6 +353,11 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
   // (zegar jazdy albo GPS). Po wyjściu z trasy pauza, a po wejściu wznowienie.
   const waiting = clock.waitSec !== null;
+  // Muzyka w tle przez całą jazdę, także w oczekiwaniu na pierwsze miejsce; pauza Sawy zatrzymuje też ją.
+  useRideMusic(
+    musicOn && musicPlays({ onRoute: isRoute, held, waiting, isPlaying: player.isPlaying }),
+    musicDucked(player, isAside(voiceOwner)),
+  );
   const wasWaiting = useRef(false);
   useEffect(() => {
     const arrived = wasWaiting.current && !waiting;

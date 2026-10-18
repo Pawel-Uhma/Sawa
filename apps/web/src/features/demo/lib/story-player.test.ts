@@ -3,6 +3,8 @@ import type { MockStop } from "./mock-data";
 import {
   clipKey,
   knownContextsWith,
+  pausedFromOutside,
+  playFailed,
   spokenCut,
   spokenLength,
   spokenWordCount,
@@ -95,5 +97,32 @@ describe("spokenCut", () => {
     expect(spokenCut("Tu  stoi dom.", 2)).toBe("Tu  stoi".length);
     expect(spokenCut("Tu stoi", 0)).toBe(0);
     expect(spokenCut("Tu stoi", 5)).toBe(7);
+  });
+});
+
+describe("playFailed", () => {
+  it("pauses Sawa when the browser blocks or cannot play the voice", () => {
+    expect(playFailed({ name: "NotAllowedError" })).toBe(true);
+    expect(playFailed({ name: "NotSupportedError" })).toBe(true);
+    expect(playFailed(undefined)).toBe(true);
+  });
+
+  it("ignores our own interruption (pause or a new clip while the voice loads)", () => {
+    expect(playFailed({ name: "AbortError" })).toBe(false);
+  });
+});
+
+describe("pausedFromOutside", () => {
+  const stopped = { speaking: true, loaded: true, paused: true, ended: false };
+
+  it("catches the lock screen, unplugged headphones or a call pausing the voice", () => {
+    expect(pausedFromOutside(stopped)).toBe(true);
+  });
+
+  it("is not our own pause, the end of a story or the previous clip", () => {
+    expect(pausedFromOutside({ ...stopped, speaking: false })).toBe(false);
+    expect(pausedFromOutside({ ...stopped, ended: true })).toBe(false);
+    expect(pausedFromOutside({ ...stopped, loaded: false })).toBe(false);
+    expect(pausedFromOutside({ ...stopped, paused: false })).toBe(false);
   });
 });

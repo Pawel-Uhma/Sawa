@@ -2,7 +2,15 @@
 
 import type { Travel } from "@sawa/shared";
 import { AnimatePresence, motion, useAnimationControls, useReducedMotion } from "motion/react";
-import { type CSSProperties, type ReactNode, useLayoutEffect, useRef, useState } from "react";
+import {
+  type CSSProperties,
+  type ReactNode,
+  type RefObject,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
+import { createPortal } from "react-dom";
 import { RollingText, Spinner, useDelayed, useWaitMessage } from "@/components/waiting";
 import { useT } from "@/features/i18n";
 import { useDestinationSearch } from "../lib/destination-search";
@@ -478,103 +486,210 @@ function ChosenDestination({
 /** Pole „Dokąd jedziesz?”: miejsce z Google Places po nazwie, wynik od razu staje się celem. */
 function DestinationSearch({ onPick }: { onPick: (end: RideEnd) => void }) {
   const [text, setText] = useState("");
+  const [focused, setFocused] = useState(false);
+  const fieldRef = useRef<HTMLDivElement>(null);
   const t = useT();
   const { results, isSearching, isError, hasQuery } = useDestinationSearch(text);
+  const open = focused && hasQuery;
 
   return (
     <div>
-      <div className="relative">
+      <div ref={fieldRef} className="relative">
         <PinIcon className="pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2 text-tekst-3" />
         <input
           type="text"
+          role="combobox"
           value={text}
           onChange={(event) => setText(event.target.value)}
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
+          onKeyDown={(event) => event.key === "Escape" && event.currentTarget.blur()}
           placeholder={t("Dokąd jedziesz?", "Where are you going?")}
           aria-label={t("Dokąd jedziesz", "Where are you going")}
+          aria-expanded={open}
+          aria-controls="cele-wyniki"
           enterKeyHint="search"
           autoComplete="off"
           className="h-11 w-full rounded-[14px] bg-tekst/[0.06] pl-9 pr-10 text-[16px] text-tekst outline-none transition-shadow placeholder:text-tekst-3 focus:bg-powierzchnia focus:ring-2 focus:ring-glebia"
         />
-        {isSearching && hasQuery ? (
-          <Spinner className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-tekst-3" />
-        ) : (
-          text && (
-            <button
-              type="button"
-              onClick={() => setText("")}
-              aria-label={t("Wyczyść", "Clear")}
-              className="absolute right-1.5 top-1/2 grid size-8 -translate-y-1/2 place-items-center rounded-full text-tekst-3 active:scale-90"
-            >
-              <CloseIcon className="size-4" />
-            </button>
-          )
-        )}
+        {/* Stała ramka po prawej: spinner i krzyżyk podmieniają się w miejscu, nic nie drga */}
+        <div className="absolute right-1.5 top-1/2 grid size-8 -translate-y-1/2 place-items-center">
+          {isSearching && hasQuery ? (
+            <Spinner className="pointer-events-none size-4 text-tekst-3" />
+          ) : (
+            text && (
+              <button
+                type="button"
+                onPointerDown={(event) => event.preventDefault()}
+                onClick={() => setText("")}
+                aria-label={t("Wyczyść", "Clear")}
+                className="grid size-8 place-items-center rounded-full text-tekst-3 active:scale-90"
+              >
+                <CloseIcon className="size-4" />
+              </button>
+            )
+          )}
+        </div>
       </div>
-      <AnimatePresence initial={false}>
-        {hasQuery ? (
-          <AutoHeight key="wyniki">
-            <ul
-              aria-label={t("Wyniki", "Results")}
-              className="mt-1.5 divide-y divide-tekst/[0.06] overflow-hidden rounded-[14px] bg-powierzchnia"
-            >
-              {results.slice(0, 5).map((result) => (
-                <li key={result.id}>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      haptic(4);
-                      onPick({
-                        type: "destination",
-                        name: result.name,
-                        address: result.address,
-                        point: result.position,
-                      });
-                      setText("");
-                    }}
-                    className="flex w-full items-center gap-2.5 px-3 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
-                  >
-                    {result.kind === "address" && (
-                      <PinIcon className="size-[18px] shrink-0 text-glebia" />
-                    )}
-                    <span className="flex min-w-0 flex-col">
-                      <span className="truncate text-[14px] font-bold text-tekst">
-                        {result.name}
-                      </span>
-                      <span className="truncate text-xs text-tekst-3">{result.address}</span>
-                    </span>
-                  </button>
-                </li>
-              ))}
-              {results.length === 0 && (
-                <li
-                  aria-live="polite"
-                  className="flex items-center gap-2 px-3 py-2.5 text-[13px] text-tekst-3"
-                >
-                  {isSearching && <Spinner className="size-3.5" />}
-                  {isSearching
-                    ? t("Szukam w Warszawie…", "Searching Warsaw…")
-                    : isError
-                      ? t(
-                          "Nie udało się wyszukać. Wybierz cel na mapie.",
-                          "Search failed. Pick a destination on the map.",
-                        )
-                      : t(
-                          "Nie znalazłam takiego miejsca w Warszawie.",
-                          "I couldn't find that place in Warsaw.",
+      <p className="pt-2 text-xs text-tekst-3">
+        {t("Albo stuknij w mapę, żeby wybrać punkt.", "Or tap the map to pick a point.")}
+      </p>
+
+      {typeof document !== "undefined" &&
+        createPortal(
+          <AnimatePresence>
+            {open && (
+              <ResultsOverlay key="wyniki" anchorRef={fieldRef}>
+                <ul id="cele-wyniki" aria-label={t("Wyniki", "Results")}>
+                  {results.slice(0, 5).map((result) => (
+                    <li key={result.id}>
+                      <button
+                        type="button"
+                        // Fokus zostaje w polu: inaczej blur zamknąłby nakładkę przed kliknięciem
+                        onPointerDown={(event) => event.preventDefault()}
+                        onClick={() => {
+                          haptic(4);
+                          onPick({
+                            type: "destination",
+                            name: result.name,
+                            address: result.address,
+                            point: result.position,
+                          });
+                          setText("");
+                        }}
+                        className="flex min-h-12 w-full items-center gap-2.5 rounded-[12px] px-2.5 py-2 text-left transition-colors hover:bg-mieta-jasna active:bg-mieta-jasna"
+                      >
+                        <PinIcon className="size-[18px] shrink-0 text-glebia" />
+                        <span className="flex min-w-0 flex-col">
+                          <span className="truncate text-[14px] font-bold text-tekst">
+                            {result.name}
+                          </span>
+                          <span className="truncate text-xs text-tekst-3">{result.address}</span>
+                        </span>
+                      </button>
+                    </li>
+                  ))}
+                  {results.length === 0 && (
+                    <li
+                      aria-live="polite"
+                      className="flex min-h-12 items-center gap-2.5 px-2.5 py-2 text-[13px] text-tekst-3"
+                    >
+                      <span className="grid size-[18px] shrink-0 place-items-center">
+                        {isSearching ? (
+                          <Spinner className="size-3.5" />
+                        ) : (
+                          <PinIcon className="size-[18px]" />
                         )}
-                </li>
-              )}
-            </ul>
-          </AutoHeight>
-        ) : (
-          <AutoHeight key="podpowiedz">
-            <p className="pt-2 text-xs text-tekst-3">
-              {t("Albo stuknij w mapę, żeby wybrać punkt.", "Or tap the map to pick a point.")}
-            </p>
-          </AutoHeight>
+                      </span>
+                      {isSearching
+                        ? t("Szukam w Warszawie…", "Searching Warsaw…")
+                        : isError
+                          ? t(
+                              "Nie udało się wyszukać. Wybierz cel na mapie.",
+                              "Search failed. Pick a destination on the map.",
+                            )
+                          : t(
+                              "Nie znalazłam takiego miejsca w Warszawie.",
+                              "I couldn't find that place in Warsaw.",
+                            )}
+                    </li>
+                  )}
+                </ul>
+              </ResultsOverlay>
+            )}
+          </AnimatePresence>,
+          document.body,
         )}
-      </AnimatePresence>
     </div>
+  );
+}
+
+// Odstęp nakładki od krawędzi ekranu i od pola.
+const EDGE_PX = 16;
+const FIELD_GAP_PX = 8;
+
+type Placement = { left: number; width: number; maxHeight: number } & (
+  | { up: true; bottom: number }
+  | { up: false; top: number }
+);
+
+/**
+ * Gdzie postawić nakładkę: po tej stronie pola, gdzie jest więcej miejsca (karta stoi na dole,
+ * więc zwykle nad polem), w granicach widocznej części ekranu, także z otwartą klawiaturą.
+ */
+function placeNear(rect: DOMRect): Placement {
+  const viewport = window.visualViewport;
+  const viewTop = viewport?.offsetTop ?? 0;
+  const viewBottom = viewTop + (viewport?.height ?? window.innerHeight);
+  const { clientWidth, clientHeight } = document.documentElement;
+  const left = Math.max(EDGE_PX, rect.left);
+  const width = Math.min(rect.right, clientWidth - EDGE_PX) - left;
+  const above = Math.round(rect.top - viewTop - FIELD_GAP_PX - EDGE_PX);
+  const below = Math.round(viewBottom - rect.bottom - FIELD_GAP_PX - EDGE_PX);
+  return above >= below
+    ? { up: true, bottom: clientHeight - rect.top + FIELD_GAP_PX, left, width, maxHeight: above }
+    : { up: false, top: rect.bottom + FIELD_GAP_PX, left, width, maxHeight: below };
+}
+
+/**
+ * Wyniki jako nakładka nad mapą, a nie lista w karcie: karta nie rośnie i nie podskakuje
+ * przy każdym znaku. Idzie za polem co klatkę, bo kartę i klawiaturę przesuwają sprężyny.
+ */
+function ResultsOverlay({
+  anchorRef,
+  children,
+}: {
+  anchorRef: RefObject<HTMLDivElement | null>;
+  children: ReactNode;
+}) {
+  const reduce = useReducedMotion();
+  const [place, setPlace] = useState<Placement | null>(null);
+
+  useLayoutEffect(() => {
+    let frame = 0;
+    let last = "";
+    const follow = () => {
+      const anchor = anchorRef.current;
+      if (anchor) {
+        const next = placeNear(anchor.getBoundingClientRect());
+        const key = JSON.stringify(next);
+        if (key !== last) {
+          last = key;
+          setPlace(next);
+        }
+      }
+      frame = requestAnimationFrame(follow);
+    };
+    follow();
+    return () => cancelAnimationFrame(frame);
+  }, [anchorRef]);
+
+  if (!place) return null;
+  const hidden = reduce ? { opacity: 0 } : { opacity: 0, scale: 0.96, y: place.up ? 8 : -8 };
+
+  return (
+    <motion.div
+      initial={hidden}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      exit={hidden}
+      transition={reduce ? { duration: 0.15 } : { type: "spring", bounce: 0, duration: 0.3 }}
+      style={{
+        left: place.left,
+        width: place.width,
+        ...(place.up ? { bottom: place.bottom } : { top: place.top }),
+        transformOrigin: place.up ? "50% 100%" : "50% 0%",
+      }}
+      className="karta fixed z-50 overflow-hidden rounded-[18px] bg-powierzchnia!"
+    >
+      <AutoHeight>
+        <div
+          style={{ maxHeight: place.maxHeight }}
+          className="overflow-y-auto overscroll-contain p-1.5"
+        >
+          {children}
+        </div>
+      </AutoHeight>
+    </motion.div>
   );
 }
 

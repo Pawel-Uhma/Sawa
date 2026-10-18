@@ -1,3 +1,4 @@
+export * from "./dry-facts";
 export * from "./geo";
 export * from "./interests";
 export * from "./memory";

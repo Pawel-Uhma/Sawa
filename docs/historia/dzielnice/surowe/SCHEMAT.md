@@ -70,3 +70,11 @@ Paczki `vNN.txt`, wyniki do `surowe/r8wk/vNN-K.json`. Zasady jak w rundzie 5 (be
 ## Runda 10: Wirtualny Sztetl, druga partia
 
 Paczki `tNN.txt`, wyniki do `surowe/r8sz/tNN-K.json`. Zasady jak w rundzie 7, ale pomijasz obiekty w Śródmieściu (z Muranowem i Powiślem); bierzesz Wolę, Żoliborz, Bielany, Bemowo i 13 pozostałych dzielnic (Praga, Mokotów, Rembertów itd.). Wpisz `dzielnica`, jeśli tekst ją wskazuje albo wynika z adresu.
+
+## Runda 12: adresy z Wikipedii dla dzielnic o małej gęstości
+
+Paczka `zab2/b01.txt` (Wawer, Białołęka, Wesoła, Rembertów, Wilanów, Włochy, Ursynów, Targówek, Ursus), wyniki do `surowe/r12/b01-1.json`. Zasady jak w rundzie 6. Nazwy ulic się powtarzają w innych miastach i dzielnicach: zdanie bierzesz tylko, gdy wyraźnie dotyczy Warszawy i tego miejsca (np. wymienia osiedle z nagłówka albo artykuł jest o warszawskim obiekcie). Zdania o Krakowie, Sanoku, Rawie Mazowieckiej itp. odrzucasz, a adres bez żadnego pewnego zdania pomijasz.
+
+## Runda 13: osiedla, „mieszkał/urodził się w Aninie”
+
+Paczka `osb/o01.txt`: blok na osiedle (`OSIEDLE`, `DZIELNICA`, `WSPÓŁRZĘDNE` środka osiedla z OSM) i zdania z różnych artykułów Wikipedii. Wynik do `surowe/r13/o01-1.json`, schemat jak w rundzie 4. Jeden rekord na osiedle: `nazwa` „<Osiedle>: ludzie i wydarzenia”, `typ` „miejsce”, `lokalizacja` „przyblizona”, `lat`/`lon` z nagłówka. `fakty`: do 15 najciekawszych zdań, każde z osobą lub wydarzeniem i datą, wprost ze zdania („W 1926 r. w Falenicy zamieszkał Ignacy Mościcki…”); `ludzie` z `wiki` = artykuł, jeśli jest o tej osobie; `zrodla` = użyte artykuły. Odrzucasz zdania o innej miejscowości o tej samej nazwie (np. Radość pod Pruszkowem) i suche wzmianki bez treści. Osiedle bez żadnego dobrego zdania pomijasz.
