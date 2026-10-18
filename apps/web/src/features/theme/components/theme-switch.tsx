@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useId } from "react";
 import { useT } from "@/features/i18n";
+import { useHighContrast } from "../hooks/use-contrast";
 import { setThemePreference, useThemePreference } from "../hooks/use-theme";
 import {
   THEME_PREFERENCE_LABELS,
@@ -18,16 +19,21 @@ export function ThemeSwitch({ className = "" }: { className?: string }) {
   const preference = useThemePreference();
   const isReducedMotion = useReducedMotion();
   const groupName = useId();
+  // High contrast forces the dark theme, so the choice waits until it is off.
+  const isLocked = useHighContrast();
 
   return (
-    <fieldset className={`grid grid-cols-3 rounded-[11px] bg-tekst/[0.07] p-0.5 ${className}`}>
+    <fieldset
+      disabled={isLocked}
+      className={`grid grid-cols-3 rounded-[11px] bg-tekst/[0.07] p-0.5 transition-opacity duration-200 disabled:opacity-40 ${className}`}
+    >
       <legend className="sr-only">{t("Wygląd", "Appearance")}</legend>
       {THEME_PREFERENCES.map((option) => {
         const isSelected = option === preference;
         return (
           <label
             key={option}
-            className={`relative flex h-8 cursor-pointer items-center justify-center rounded-[9px] text-[13px] font-semibold transition-colors duration-150 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-glebia ${
+            className={`relative flex h-8 cursor-pointer items-center in-disabled:cursor-default justify-center rounded-[9px] text-[13px] font-semibold transition-colors duration-150 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-glebia ${
               isSelected ? "text-tekst" : "text-tekst-2"
             }`}
           >

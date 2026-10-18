@@ -13,7 +13,7 @@ import {
 } from "react-map-gl/maplibre";
 import { LoadingCover, StatusPill, useDelayed } from "@/components/waiting";
 import { useT } from "@/features/i18n";
-import { useTheme } from "@/features/theme";
+import { useHighContrast, useTheme } from "@/features/theme";
 import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
@@ -33,6 +33,9 @@ import { loadMapIcons } from "../lib/map-icons";
 import {
   BASEMAP_STYLE_URLS,
   basemapPaintOverrides,
+  CONTRAST_BASEMAP_OVERRIDES,
+  CONTRAST_STYLE_URL,
+  MAP_CONTRAST_PALETTE,
   MAP_PALETTES,
   MIN_PLACE_RICHNESS,
   START_VIEW,
@@ -127,8 +130,16 @@ export function SawaMap({
     [route?.attribution, vehicles.data?.attribution],
   );
   const theme = useTheme();
-  const palette = MAP_PALETTES[theme];
-  const basemapOverrides = useMemo(() => basemapPaintOverrides(palette), [palette]);
+  // High contrast always resolves to the dark theme (features/theme) and repaints it black and yellow.
+  const isHighContrast = useHighContrast();
+  const palette = isHighContrast ? MAP_CONTRAST_PALETTE : MAP_PALETTES[theme];
+  const basemapOverrides = useMemo(
+    () => [
+      ...basemapPaintOverrides(palette),
+      ...(isHighContrast ? CONTRAST_BASEMAP_OVERRIDES : []),
+    ],
+    [palette, isHighContrast],
+  );
   useBasemapOverrides(mapRef, isLoaded, basemapOverrides);
   const { selectedId, select } = useSelectedPlace();
 
@@ -274,7 +285,7 @@ export function SawaMap({
         ref={mapRef}
         initialViewState={START_VIEW}
         maxBounds={WARSAW_MAX_BOUNDS}
-        mapStyle={BASEMAP_STYLE_URLS[theme]}
+        mapStyle={isHighContrast ? CONTRAST_STYLE_URL : BASEMAP_STYLE_URLS[theme]}
         interactiveLayerIds={INTERACTIVE_LAYERS}
         cursor={cursor}
         onMouseEnter={() => setCursor("pointer")}
@@ -308,19 +319,19 @@ export function SawaMap({
       >
         {hasZoomControls && <NavigationControl position="top-right" showCompass={false} />}
         <AttributionControl compact customAttribution={attribution} />
+        {icons !== "loading" && <ParkLayer selected={selectedPark} color={palette.park} />}
+        {icons !== "loading" && (
+          <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
+        )}
         {icons !== "loading" && (
           <PlacesLayer
             places={visiblePlaces}
-            theme={theme}
+            theme={isHighContrast ? "contrast" : theme}
             selectedId={selectedId}
             isDimmed={Boolean(route)}
             hasIcons={icons === "ready"}
             palette={palette}
           />
-        )}
-        {icons !== "loading" && <ParkLayer selected={selectedPark} color={palette.park} />}
-        {icons !== "loading" && (
-          <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
         )}
         {icons !== "loading" && route && <LineShapesLayer route={route} data={vehicles.data} />}
         {icons !== "loading" && route && (
@@ -331,6 +342,7 @@ export function SawaMap({
             hasIcons={icons === "ready"}
             knownPlaces={places.data}
             theme={theme}
+            stickerLook={isHighContrast ? "contrast" : theme}
             palette={palette}
           />
         )}

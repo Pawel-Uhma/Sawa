@@ -8,6 +8,7 @@ import {
   ACTIVE_STOP_COLOR,
   LABEL_FONT,
   LABEL_FONT_BOLD,
+  type MapLook,
   type MapPalette,
   type MapTheme,
   placeKindColorExpression,
@@ -43,6 +44,8 @@ type RouteLayerProps = {
   /** Loaded place summaries: route places among them get their subkind sticker, the rest a pin. */
   knownPlaces: PlaceSummaryFeature[];
   theme: MapTheme;
+  /** Stickers of route places: the theme, or high contrast (timers stay on the theme). */
+  stickerLook?: MapLook;
   palette: MapPalette;
 };
 
@@ -56,6 +59,7 @@ export function RouteLayer({
   hasIcons,
   knownPlaces,
   theme,
+  stickerLook = theme,
   palette,
 }: RouteLayerProps) {
   const lang = useLang();
@@ -119,7 +123,7 @@ export function RouteLayer({
       <Source id={ROUTE_PLACES_SOURCE_ID} type="geojson" data={places}>
         {hasIcons ? (
           <StickerStops
-            theme={theme}
+            theme={stickerLook}
             palette={palette}
             isActive={isActive}
             selectedId={selectedId}
@@ -195,7 +199,7 @@ type StopsProps = {
  * Route places as the sticker of their subkind (as regular places, but larger) with the order
  * number in a badge of the group colour. The place the story is about gets a halo and its name.
  */
-function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { theme: MapTheme }) {
+function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { theme: MapLook }) {
   const inactive: FilterSpecification = ["!", isActive];
   return (
     <>

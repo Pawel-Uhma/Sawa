@@ -9,12 +9,16 @@ const GLYPH_OFFSET = { x: 6.5, y: 5.5 };
 const GLYPH_SCALE = 1.12;
 const OUTLINE_WIDTH = 3.2 / GLYPH_SCALE;
 const SHADOW = { color: "rgba(16, 43, 42, 0.3)", offsetY: 1.5, blur: 1.4 };
+/** High contrast: black outline and white edge widths relative to the regular outline. */
+const CONTRAST_OUTLINE_SCALE = 1.25;
+const CONTRAST_HALO_SCALE = 1.9;
 
 const GLYPHS: Record<string, string> = PLACE_GLYPHS;
 
 /**
  * Draws one place sticker for an image id from placeStickerId: the subkind glyph filled with its
- * group colour over a white outline, with a soft shadow. Null for other ids.
+ * group colour over a white outline, with a soft shadow (high contrast: black outline, white edge,
+ * no shadow). Null for other ids.
  */
 export function drawPlaceSticker(id: string): ImageData | null {
   const sticker = parsePlaceStickerId(id);
@@ -26,18 +30,25 @@ export function drawPlaceSticker(id: string): ImageData | null {
   const ctx = canvas.getContext("2d");
   if (!ctx) return null;
 
-  const { fill, outline } = placeStickerColors(sticker.marker);
+  const { fill, outline, halo } = placeStickerColors(sticker.marker, sticker.theme);
   const unit = SIZE_PX / BOX;
   const glyph = new Path2D(path);
   ctx.scale(unit, unit);
   ctx.translate(GLYPH_OFFSET.x, GLYPH_OFFSET.y);
   ctx.scale(GLYPH_SCALE, GLYPH_SCALE);
-  // Shadow only under the outline, so it does not darken the glyph's own edges.
-  ctx.shadowColor = SHADOW.color;
-  ctx.shadowOffsetY = SHADOW.offsetY * unit;
-  ctx.shadowBlur = SHADOW.blur * 2 * unit;
   ctx.lineJoin = "round";
-  ctx.lineWidth = OUTLINE_WIDTH;
+  if (halo) {
+    // High contrast: no shadow, a white edge outside a thicker black outline.
+    ctx.lineWidth = OUTLINE_WIDTH * CONTRAST_HALO_SCALE;
+    ctx.strokeStyle = halo;
+    ctx.stroke(glyph);
+  } else {
+    // Shadow only under the outline, so it does not darken the glyph's own edges.
+    ctx.shadowColor = SHADOW.color;
+    ctx.shadowOffsetY = SHADOW.offsetY * unit;
+    ctx.shadowBlur = SHADOW.blur * 2 * unit;
+  }
+  ctx.lineWidth = halo ? OUTLINE_WIDTH * CONTRAST_OUTLINE_SCALE : OUTLINE_WIDTH;
   ctx.strokeStyle = outline;
   ctx.fillStyle = outline;
   ctx.stroke(glyph);

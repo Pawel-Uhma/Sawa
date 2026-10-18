@@ -1,6 +1,12 @@
 import type { ExpressionSpecification, Map as MapLibreMap } from "maplibre-gl";
 import { appFont, imageCanvas, registerCanvasImages } from "./canvas-images";
-import { MAP_ICON_PIXEL_RATIO, MAP_PALETTES, type MapTheme } from "./map-style";
+import {
+  isMapLook,
+  MAP_CONTRAST_PALETTE,
+  MAP_ICON_PIXEL_RATIO,
+  MAP_PALETTES,
+  type MapLook,
+} from "./map-style";
 
 /**
  * Cluster circles ("glass" style, docs/ui/propozycje/2015-klastry-2-5-wariantow.png, variant 0) drawn
@@ -18,21 +24,21 @@ const SHADOW = { offsetY: 3, blur: 10 };
 /** Room around the circle for the shadow. */
 const PADDING = 10;
 
-export function clusterBadgeId(theme: MapTheme, count: string): string {
+export function clusterBadgeId(theme: MapLook, count: string): string {
   return `${CLUSTER_BADGE_PREFIX}-${theme}-${count}`;
 }
 
 /** Inverse of clusterBadgeId; null for any other image id. */
-export function parseClusterBadgeId(id: string): { theme: MapTheme; count: string } | null {
+export function parseClusterBadgeId(id: string): { theme: MapLook; count: string } | null {
   const prefix = `${CLUSTER_BADGE_PREFIX}-`;
   if (!id.startsWith(prefix)) return null;
   const [theme, count, ...rest] = id.slice(prefix.length).split("-");
-  if ((theme !== "light" && theme !== "dark") || !count || rest.length > 0) return null;
+  if (!isMapLook(theme) || !count || rest.length > 0) return null;
   return { theme, count };
 }
 
 /** MapLibre expression: badge id by the abbreviated point count of a cluster. */
-export function clusterBadgeExpression(theme: MapTheme): ExpressionSpecification {
+export function clusterBadgeExpression(theme: MapLook): ExpressionSpecification {
   return [
     "concat",
     `${CLUSTER_BADGE_PREFIX}-${theme}-`,
@@ -54,7 +60,7 @@ export function drawClusterBadge(id: string): ImageData | null {
   const { canvas, ctx } = imageCanvas(sizeCss);
   if (!ctx) return null;
 
-  const palette = MAP_PALETTES[badge.theme];
+  const palette = badge.theme === "contrast" ? MAP_CONTRAST_PALETTE : MAP_PALETTES[badge.theme];
   const center = sizeCss / 2;
   ctx.beginPath();
   ctx.arc(center, center, radius, 0, 2 * Math.PI);
@@ -64,7 +70,7 @@ export function drawClusterBadge(id: string): ImageData | null {
   ctx.fillStyle = palette.clusterFill;
   ctx.fill();
   ctx.shadowColor = "transparent";
-  ctx.lineWidth = STROKE_WIDTH;
+  ctx.lineWidth = badge.theme === "contrast" ? STROKE_WIDTH * 2 : STROKE_WIDTH;
   ctx.strokeStyle = palette.clusterStroke;
   ctx.stroke();
 

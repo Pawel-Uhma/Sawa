@@ -8,7 +8,6 @@ import {
   parkAreaFilter,
 } from "../lib/park-highlight";
 import { STREET_LINES_SOURCE } from "../lib/street-highlight";
-import { PLACES_LAYER_ID } from "./places-layer";
 
 export type ParkSelection = { name: string; lngLat: LngLat };
 
@@ -52,7 +51,10 @@ function useParkFeatureId(park: ParkSelection | null): number | null {
   return id;
 }
 
-/** Whole area of a park, square or garden, drawn from the basemap under the place icons. */
+/**
+ * Whole area of a park, square or garden, drawn from the basemap under the place icons. Like
+ * StreetLayer, SawaMap renders it before PlacesLayer instead of using beforeId (theme switch).
+ */
 export function ParkLayer({ selected, color }: ParkLayerProps) {
   const filter = parkAreaFilter(useParkFeatureId(selected));
 
@@ -65,7 +67,6 @@ export function ParkLayer({ selected, color }: ParkLayerProps) {
           type="fill"
           source={STREET_LINES_SOURCE}
           source-layer={sourceLayer}
-          beforeId={PLACES_LAYER_ID}
           filter={filter}
           paint={{ "fill-color": color, "fill-opacity": 0.22 }}
         />
@@ -77,7 +78,6 @@ export function ParkLayer({ selected, color }: ParkLayerProps) {
           type="line"
           source={STREET_LINES_SOURCE}
           source-layer={sourceLayer}
-          beforeId={PLACES_LAYER_ID}
           filter={filter}
           layout={{ "line-join": "round" }}
           paint={{ "line-color": color, "line-opacity": 0.9, "line-width": 2 }}

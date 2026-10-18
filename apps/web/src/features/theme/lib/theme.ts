@@ -25,13 +25,38 @@ export function parseThemePreference(value: unknown): ThemePreference {
   return value === "light" || value === "dark" ? value : "system";
 }
 
-export function resolveTheme(preference: ThemePreference, isSystemDark: boolean): Theme {
+/** High contrast (black and yellow) always runs on the dark theme, so the map is dark too. */
+export function resolveTheme(
+  preference: ThemePreference,
+  isSystemDark: boolean,
+  isHighContrast = false,
+): Theme {
+  if (isHighContrast) return "dark";
   if (preference === "system") return isSystemDark ? "dark" : "light";
   return preference;
 }
 
+/** High contrast: black and yellow on top of the dark theme; "system" follows prefers-contrast. */
+export type ContrastPreference = "system" | "more" | "normal";
+
+export const CONTRAST_STORAGE_KEY = "sawa-contrast";
+
+export const MORE_CONTRAST_MEDIA_QUERY = "(prefers-contrast: more)";
+
+export function parseContrastPreference(value: unknown): ContrastPreference {
+  return value === "more" || value === "normal" ? value : "system";
+}
+
+export function resolveHighContrast(
+  preference: ContrastPreference,
+  isSystemMoreContrast: boolean,
+): boolean {
+  if (preference === "system") return isSystemMoreContrast;
+  return preference === "more";
+}
+
 /**
  * Runs in <head> before React, so the first paint already has the right theme (no light flash).
- * Mirrors parseThemePreference + resolveTheme; keep the three in sync.
+ * Mirrors parseThemePreference + resolveTheme (and the contrast pair); keep them in sync.
  */
-export const THEME_INIT_SCRIPT = `try{var p=localStorage.getItem("${THEME_STORAGE_KEY}");var d=p==="dark"||(p!=="light"&&matchMedia("${DARK_MEDIA_QUERY}").matches);document.documentElement.dataset.theme=d?"dark":"light"}catch(e){}`;
+export const THEME_INIT_SCRIPT = `try{var c=localStorage.getItem("${CONTRAST_STORAGE_KEY}");var m=c==="more"||(c!=="normal"&&matchMedia("${MORE_CONTRAST_MEDIA_QUERY}").matches);document.documentElement.dataset.contrast=m?"more":"normal"}catch(e){}try{var p=localStorage.getItem("${THEME_STORAGE_KEY}");var d=m||p==="dark"||(p!=="light"&&matchMedia("${DARK_MEDIA_QUERY}").matches);document.documentElement.dataset.theme=d?"dark":"light"}catch(e){}`;

@@ -21,7 +21,7 @@ import {
 } from "react";
 import { createPortal } from "react-dom";
 import { type Lang, LangSwitch, pick, useLang, useT } from "@/features/i18n";
-import { ThemeSwitch } from "@/features/theme";
+import { ContrastSwitch, ThemeSwitch } from "@/features/theme";
 import { haptic, project, SPRING, SPRING_FLICK, useIsDesktop } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import {
@@ -534,6 +534,9 @@ function MenuContent({ actions, run }: MenuContentProps) {
       <Group title={t("Wygląd", "Appearance")}>
         <div className="p-3">
           <ThemeSwitch />
+        </div>
+        <div className="px-3 py-1.5">
+          <ContrastSwitch />
         </div>
       </Group>
 

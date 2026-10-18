@@ -10,6 +10,13 @@ import type { Lang } from "@/features/i18n";
 
 export type MapTheme = "light" | "dark";
 
+/** What drawn map images (place stickers, cluster badges) are made for: a theme or high contrast. */
+export type MapLook = MapTheme | "contrast";
+
+export function isMapLook(value: string): value is MapLook {
+  return value === "light" || value === "dark" || value === "contrast";
+}
+
 /** OpenFreeMap basemaps: no API key, OSM data. The theme follows the system setting. */
 export const BASEMAP_STYLE_URLS: Record<MapTheme, string> = {
   light: "https://tiles.openfreemap.org/styles/positron",
@@ -133,6 +140,74 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     },
   },
 };
+
+/**
+ * High contrast (black and yellow, features/theme): on top of the dark basemap. Black ground, white
+ * streets with yellow main roads, strong blue water, white names with a black halo, yellow rings.
+ * Its own style URL (the fragment is not sent), so turning it off reloads the basemap and drops
+ * CONTRAST_BASEMAP_OVERRIDES, which the overrides hook never undoes.
+ */
+export const CONTRAST_STYLE_URL = `${BASEMAP_STYLE_URLS.dark}#kontrast`;
+
+const CONTRAST_YELLOW = "#ffe600";
+
+export const MAP_CONTRAST_PALETTE: MapPalette = {
+  casing: "#ffffff",
+  ring: CONTRAST_YELLOW,
+  stopFill: CONTRAST_YELLOW,
+  stopText: "#000000",
+  selected: CONTRAST_YELLOW,
+  activeLabel: CONTRAST_YELLOW,
+  boardingFill: "#000000",
+  timerTrack: "#3a3a3a",
+  label: "#ffffff",
+  labelHalo: "#000000",
+  walk: "#ffffff",
+  street: CONTRAST_YELLOW,
+  park: "#2ef07a",
+  clusterFill: "#000000",
+  clusterStroke: CONTRAST_YELLOW,
+  clusterText: CONTRAST_YELLOW,
+  clusterShadow: "rgba(0, 0, 0, 0)",
+  dimmedOpacity: 0.75,
+  water: "#0057b8",
+  waterLabel: "#bfe0ff",
+  roads: {
+    minor: "#b8b8b8",
+    path: "#7a7a7a",
+    majorCasing: "#000000",
+    majorInner: "#ffffff",
+    motorwayCasing: "#000000",
+    motorwayInner: CONTRAST_YELLOW,
+    label: "#ffffff",
+    labelHalo: "#000000",
+  },
+};
+
+const PLACE_NAME_LAYERS = [
+  "place_other",
+  "place_suburb",
+  "place_village",
+  "place_town",
+  "place_city",
+  "place_city_large",
+];
+const RAILWAY_LAYERS = ["railway_transit", "railway_minor", "railway"];
+
+/** Ground, greenery, buildings, rails and district names of the dark basemap, repainted for high contrast. */
+export const CONTRAST_BASEMAP_OVERRIDES: readonly PaintOverride[] = [
+  { layerId: "background", property: "background-color", value: "#000000" },
+  { layerId: "landuse_residential", property: "fill-color", value: "#000000" },
+  { layerId: "landcover_wood", property: "fill-color", value: "#0c2e14" },
+  { layerId: "landuse_park", property: "fill-color", value: "#0c2e14" },
+  { layerId: "building", property: "fill-color", value: "#161616" },
+  { layerId: "building", property: "fill-outline-color", value: "#6b6b6b" },
+  ...RAILWAY_LAYERS.map((layerId) => ({ layerId, property: "line-color", value: "#a3a3a3" })),
+  ...PLACE_NAME_LAYERS.flatMap((layerId) => [
+    { layerId, property: "text-color", value: "#ffffff" },
+    { layerId, property: "text-halo-color", value: "#000000" },
+  ]),
+];
 
 /** Water layers of the OpenFreeMap basemaps (positron and dark name them the same, labels differ). */
 const WATER_FILL_LAYERS = ["water"];
@@ -422,7 +497,7 @@ export const PLACE_ICON_KINDS = PLACE_SUBKINDS;
 export const FALLBACK_PLACE_ICON: PlaceSubkind = "site";
 const PLACE_STICKER_PREFIX = "sawa-place";
 
-export type PlaceSticker = { theme: MapTheme; marker: PlaceSubkind };
+export type PlaceSticker = { theme: MapLook; marker: PlaceSubkind };
 
 export function placeStickerId({ theme, marker }: PlaceSticker): string {
   return `${PLACE_STICKER_PREFIX}-${theme}-${marker}`;
@@ -432,7 +507,7 @@ export function placeStickerId({ theme, marker }: PlaceSticker): string {
 export function parsePlaceStickerId(id: string): PlaceSticker | null {
   const [prefix, name, theme, marker, ...rest] = id.split("-");
   if (`${prefix}-${name}` !== PLACE_STICKER_PREFIX || rest.length > 0) return null;
-  if (theme !== "light" && theme !== "dark") return null;
+  if (!isMapLook(theme)) return null;
   if (!(PLACE_SUBKINDS as readonly string[]).includes(marker)) return null;
   return { theme, marker: marker as PlaceSubkind };
 }
@@ -440,9 +515,38 @@ export function parsePlaceStickerId(id: string): PlaceSticker | null {
 /** White outline in both themes, as on the sticker sheet. */
 const PLACE_STICKER_OUTLINE = "#ffffff";
 
-/** Glyph in its group colour with a white outline. */
-export function placeStickerColors(marker: PlaceSubkind): { fill: string; outline: string } {
-  return { fill: PLACE_GROUP_COLORS[PLACE_SUBKIND_GROUPS[marker]], outline: PLACE_STICKER_OUTLINE };
+/**
+ * Group colours for high contrast: fully saturated, at least 7:1 on black, drawn inside a black
+ * outline with a thin white edge, so the sticker reads on the black ground and on white streets.
+ */
+export const CONTRAST_GROUP_COLORS: Record<PlaceGroup, string> = {
+  living: "#5c9dff",
+  institutions: "#00e0f0",
+  culture: "#ffc000",
+  work: "#ff9a3c",
+  memory: "#ff6a52",
+  sacred: "#ff5ce1",
+  nature: "#2ef07a",
+  other: "#c4ccd4",
+};
+
+export type PlaceStickerColors = {
+  fill: string;
+  outline: string;
+  /** Thin edge around the outline (high contrast only). */
+  halo: string | null;
+};
+
+/** Glyph in its group colour with a white outline; high contrast: light colour, black outline, white edge. */
+export function placeStickerColors(
+  marker: PlaceSubkind,
+  look: MapLook = "light",
+): PlaceStickerColors {
+  const group = PLACE_SUBKIND_GROUPS[marker];
+  if (look === "contrast") {
+    return { fill: CONTRAST_GROUP_COLORS[group], outline: "#000000", halo: "#ffffff" };
+  }
+  return { fill: PLACE_GROUP_COLORS[group], outline: PLACE_STICKER_OUTLINE, halo: null };
 }
 
 export function placeKindColor(kind: string, subkind?: string | null): string {
@@ -457,7 +561,7 @@ const MARKER: ExpressionSpecification = ["coalesce", ["get", "subkind"], ["get",
  * MapLibre expression: sticker id by subkind, the pin shape for unknown kinds.
  * The images are drawn on demand (`styleimagemissing`).
  */
-export function placeStickerExpression(theme: MapTheme): ExpressionSpecification {
+export function placeStickerExpression(theme: MapLook): ExpressionSpecification {
   return [
     "concat",
     `${PLACE_STICKER_PREFIX}-${theme}-`,
