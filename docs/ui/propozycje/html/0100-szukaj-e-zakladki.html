@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Szukaj E · zakładki i miejsce</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .arkusz{bottom:84px;border-radius:24px;left:8px;right:8px;padding-bottom:14px;box-shadow:0 6px 24px rgba(16,43,42,.16)}
+  .zdj{width:76px;height:76px;border-radius:14px;flex:none;background:url('../../ikony-mapy/00-kamienica.png') center/60px no-repeat,var(--mieta-jasna)}
+</style>
+</head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="status"></div>
+  <div class="szukaj" style="padding-left:6px"><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg">
+    <div class="tekst">Zapytaj Sawę albo szukaj</div><span class="glos" data-i="mikrofon" style="margin-right:10px"></span></div>
+  <div class="chipy">
+    <div class="chip wybrany" data-i="historia">Wszystko</div>
+    <div class="chip" data-i="kamienica">Kamienice</div>
+    <div class="chip" data-i="pomnik">Pomniki</div>
+    <div class="chip" data-i="mural">Murale</div>
+  </div>
+  <div class="fab duzy" style="bottom:316px" data-i="przejazdzki">Ułóż przejażdżkę</div>
+  <div class="fab" style="bottom:316px;right:auto;left:16px" data-i="lok"></div>
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <div style="display:flex;gap:12px">
+      <div class="zdj"></div>
+      <div style="flex:1;min-width:0"><h2>Kercelak</h2><div class="pod">Plac Kercelego · 150 m stąd</div>
+        <div class="pod" style="margin-top:4px;color:var(--tekst)">Bazar, na którym przed wojną kupiłeś wszystko: od śledzia po pistolet.</div></div>
+    </div>
+    <div class="akcje"><div class="glowna" data-i="graj">Opowiedz</div><div data-i="cel">Jedź tam</div><div data-i="gwiazda">Zapisz</div></div>
+  </div>
+  <div class="nawi">
+    <div class="aktywna" data-i="odkrywaj">Odkrywaj</div>
+    <div data-i="przejazdzki">Przejażdżki</div>
+    <div><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg">Sawa</div>
+  </div>
+</div>
+<script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { center: nad([20.98019,52.23702], -20, 15.4), zoom: 15.4, miejsca: true, miejscaR: 5, pins: [{c:[20.98019,52.23702], n:'Kercelak'}] });</script>
+</body></html>

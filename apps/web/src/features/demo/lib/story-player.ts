@@ -149,6 +149,17 @@ export function voiceOn(): boolean {
 }
 
 /**
+ * Tło znane słuchaczowi: z pamięci i z opowieści, które już padły na tej trasie, choć jeszcze
+ * ich nie zapamiętano (następną opowieść pobieramy, zanim słuchacz dosłucha bieżącej).
+ */
+export function knownContextsWith(
+  remembered: readonly string[],
+  toldOnRoute: Iterable<string>,
+): string[] {
+  return [...new Set([...remembered, ...toldOnRoute])];
+}
+
+/**
  * Starts a story with what Sawa already told this listener, so it tells something new.
  * With the voice it answers at once: the voice starts on the first sentence while the rest is
  * still written. Without it the whole text comes in one answer, and no credits are spent.
@@ -160,7 +171,7 @@ export async function fetchClip(
   placeName?: string,
   side?: Side,
   /** „Więcej o tym miejscu”: gdy nic nowego nie zostało, Sawa poleca miejsce obok. */
-  { more = false }: { more?: boolean } = {},
+  { more = false, toldContexts = [] }: { more?: boolean; toldContexts?: Iterable<string> } = {},
 ): Promise<Clip> {
   const memory = getMemory();
   const heardAt = memory.places[placeId]?.at;
@@ -170,7 +181,7 @@ export async function fetchClip(
     side,
     ...listener,
     heardFacts: memory.places[placeId]?.facts ?? [],
-    knownContexts: memory.contexts,
+    knownContexts: knownContextsWith(memory.contexts, toldContexts),
     // Sawa mówi „tydzień temu opowiadałam ci…”, a nie „pamiętasz…”.
     heardAgoSec:
       heardAt === undefined ? undefined : Math.max(0, Math.floor((Date.now() - heardAt) / 1000)),
@@ -366,6 +377,12 @@ export function useStoryPlayer(
   // Where the voice of this clip is (seconds); another clip's position does not count.
   const [voiceAt, setVoiceAt] = useState<{ clipId: string; sec: number } | null>(null);
   const live = useLiveText(clip);
+  // Tło wyjaśnione na tej trasie: następna opowieść nie tłumaczy go drugi raz.
+  // Efekt stoi przed pobieraniem następnej opowieści, więc ta już widzi nowe tło.
+  const toldContexts = useRef(new Set<string>());
+  useEffect(() => {
+    for (const id of live.told?.contextIds ?? []) toldContexts.current.add(id);
+  }, [live.told]);
   const failed = startFailed || live.failed;
   const hasVoice = Boolean(clip?.audioUrl) && !voiceFailed;
   // Id punktu, który jest teraz aktywny: spóźniona odpowiedź z innego punktu nie może nadpisać klipu.
@@ -440,7 +457,10 @@ export function useStoryPlayer(
       const key = clipKey(stop.id, listener, targetSec);
       let pending = cache.current.get(key);
       if (!pending) {
-        pending = fetchClip(stop.id, listener, targetSec, stop.name, stop.side, { more });
+        pending = fetchClip(stop.id, listener, targetSec, stop.name, stop.side, {
+          more,
+          toldContexts: toldContexts.current,
+        });
         cache.current.set(key, pending);
         pending.catch(() => cache.current.delete(key));
       }
