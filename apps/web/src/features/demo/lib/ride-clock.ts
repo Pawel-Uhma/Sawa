@@ -43,6 +43,25 @@ export function isAt(point: LatLng, stop: Pick<MockStop, "coord">): boolean {
   return haversineM(point, { lat, lng }) <= ARRIVE_M;
 }
 
+/** GPS this close to some place on the route means the user really rides it (not testing at home). */
+export const NEAR_ROUTE_M = 1000;
+
+/** Whether the phone is near the route: then location, not time, says which place is next. */
+export function isNearRoute(stops: readonly MockStop[], position: LatLng | null): boolean {
+  if (!position) return false;
+  return stops.some(({ coord: [lng, lat] }) => haversineM(position, { lat, lng }) <= NEAR_ROUTE_M);
+}
+
+/**
+ * The furthest the clock may go on its own while location leads the ride: just before the
+ * next place's story. The next place comes from GPS (`useGpsClockSync`) or the user, so a long
+ * story or a slow ride does not move Sawa places ahead of the user. Null after the last place.
+ */
+export function capSecFor(stops: readonly MockStop[], rideSec: number): number | null {
+  const next = stops[dueIndex(stops, rideSec) + 1];
+  return next ? storyStartSec(next) - 1 : null;
+}
+
 /**
  * Whether the ride clock runs: before the first place it runs alone (Sawa waits for it),
  * after that only while Sawa plays. `held` is a stop or pause by the user: it stops the clock
@@ -58,10 +77,12 @@ export function isClockRunning(
 }
 
 /**
- * Time on the ride, until location replaces it: starts with a new route, stops while Sawa is
- * paused or stopped by the user (`isClockRunning`) and goes on from there. `syncTo` moves it to a place the user picked.
+ * Time on the ride: starts with a new route, stops while Sawa is paused or stopped by the user
+ * (`isClockRunning`) and goes on from there. `syncTo` moves it to a place the user picked.
+ * With `gpsLeads` (phone near the route) it stops before the next place (`capSecFor`):
+ * only GPS or the user moves it there.
  */
-export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
+export function useRideClock(stops: readonly MockStop[], isPlaying: boolean, gpsLeads = false) {
   // Set in the effect: Date.now() during render breaks the prerender with cacheComponents.
   const startedAt = useRef(0);
   // Time belongs to its route: in the render with a new route the old ride's time is not used.
@@ -74,6 +95,8 @@ export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
   // Where the clock stood when it stopped, so it goes on from there and not from the start
   const secRef = useRef(rideSec);
   secRef.current = rideSec;
+  const gpsLeadsRef = useRef(gpsLeads);
+  gpsLeadsRef.current = gpsLeads;
 
   useEffect(() => {
     setTick({ stops, sec: 0 });
@@ -82,10 +105,16 @@ export function useRideClock(stops: readonly MockStop[], isPlaying: boolean) {
   useEffect(() => {
     if (!running) return;
     startedAt.current = Date.now() - secRef.current * 1000;
-    const id = setInterval(
-      () => setTick({ stops, sec: Math.floor((Date.now() - startedAt.current) / 1000) }),
-      TICK_MS,
-    );
+    const id = setInterval(() => {
+      let sec = Math.floor((Date.now() - startedAt.current) / 1000);
+      const cap = gpsLeadsRef.current ? capSecFor(stops, secRef.current) : null;
+      if (cap !== null && sec > cap) {
+        // Stands at the cap, so without GPS later it goes on from here and does not jump ahead
+        sec = cap;
+        startedAt.current = Date.now() - cap * 1000;
+      }
+      setTick((prev) => (prev.stops === stops && prev.sec === sec ? prev : { stops, sec }));
+    }, TICK_MS);
     return () => clearInterval(id);
   }, [running, stops]);
 
