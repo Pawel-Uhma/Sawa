@@ -44,6 +44,7 @@ import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
+import { LineShapesLayer } from "./line-shapes-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { ParkLayer, type ParkSelection } from "./park-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
@@ -258,6 +259,7 @@ export function SawaMap({
         {icons !== "loading" && (
           <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
         )}
+        {icons !== "loading" && route && <LineShapesLayer route={route} data={vehicles.data} />}
         {icons !== "loading" && route && (
           <RouteLayer
             route={route}
@@ -267,9 +269,7 @@ export function SawaMap({
             palette={palette}
           />
         )}
-        {isLoaded && route && (
-          <LiveVehiclesLayer data={vehicles.data} route={route} casing={palette.casing} />
-        )}
+        {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>

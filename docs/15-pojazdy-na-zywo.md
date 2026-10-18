@@ -39,6 +39,7 @@ Odpowiedź `TrackVehiclesResponse`:
 | `refreshSec` | co ile pytać ponownie (10) |
 | `legs[i].vehicles[]` | od najdalej z przodu do najdalej z tyłu; puste, gdy nie wiadomo, który to pojazd (patrz Ograniczenia) |
 | `legs[i].unknownLeg` | linii/przystanków nie ma w grafie GTFS |
+| `legs[i].shape` | cała trasa linii w jechanym kierunku, od pętli do pętli, `[lng, lat]` (kształt wzorca GTFS); brak przy `unknownLeg` |
 | `vehicle.id` | stały między odpowiedziami (`bus-5855`, `tram-3187`), klucz do animacji |
 | `vehicle.mode` | `bus` / `tram`: **po tym wybierasz ikonę** |
 | `vehicle.role` | `ride` (nasz), `ahead`, `behind` |
@@ -133,7 +134,7 @@ Gdy przychodzi nowa odpowiedź, tor się zmienia i pojazd mógłby przeskoczyć 
 
 Nowy pojazd (nowe `id`) pojawia się z fade-in (`icon-opacity` przez feature-state albo osobna właściwość), znikający z fade-out. Przy `prefers-reduced-motion`: bez przejścia, pozycja aktualizowana raz na sekundę zamiast co klatkę.
 
-**4. Puste i błędy:** `live: false` albo puste `vehicles`: warstwa pusta, bez komunikatu (trasa działa i bez pojazdów). `stale: true`: ikony przygaszone. Poprzedni i następny pojazd (`ahead`, `behind`) mają ten sam rozmiar co nasz i tę samą ikonę rozjaśnioną o 40% (generowaną na canvasie), nasz jest rysowany na wierzchu. Przed poprzednim i następnym pojazdem rysujemy jego tor do końca prognozy (ok. 2 min): ta sama grubość i obwódka co linia trasy, kolor linii odcinka rozjaśniony o 40% (`paleColor`). Pokaż `attribution` w podpisie mapy.
+**4. Puste i błędy:** `live: false` albo puste `vehicles`: warstwa pusta, bez komunikatu (trasa działa i bez pojazdów). `stale: true`: ikony przygaszone. Poprzedni i następny pojazd (`ahead`, `behind`) mają ten sam rozmiar co nasz i tę samą ikonę rozjaśnioną o 40% (generowaną na canvasie), nasz jest rysowany na wierzchu. Pod trasą rysujemy całą trasę każdej jechanej linii, od pętli do pętli (`LegVehicles.shape`, kształt wzorca GTFS, od 18.10): cienka linia (1,5–3 px wg zoomu) w kolorze odcinka, krycie 35%, bez obwódki; zaplanowany odcinek leży na wierzchu (`line-shapes-layer.tsx`). Pokaż `attribution` w podpisie mapy.
 
 ## Ograniczenia
 
