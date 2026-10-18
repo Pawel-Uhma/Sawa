@@ -1,8 +1,9 @@
-import type { Route } from "@sawa/shared";
+import type { Route, TrackVehiclesResponse } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { lineColor } from "./map-style";
 import {
   lineIndexes,
+  lineShapesToGeoJson,
   routeBoardingsToGeoJson,
   routeBounds,
   routeLegsToGeoJson,
@@ -79,6 +80,39 @@ describe("routeLegsToGeoJson", () => {
   it("skips legs without a drawable shape", () => {
     const route = { ...ROUTE, legs: [{ ...ROUTE.legs[0], lngLats: [[20.96, 52.23]] }] } as Route;
     expect(routeLegsToGeoJson(route).features).toEqual([]);
+  });
+});
+
+describe("lineShapesToGeoJson", () => {
+  const shape: [number, number][] = [
+    [20.9, 52.2],
+    [21.1, 52.3],
+  ];
+  const vehicles = (legs: TrackVehiclesResponse["legs"]): TrackVehiclesResponse => ({
+    generatedAt: "2026-10-17T12:00:00Z",
+    live: true,
+    stale: false,
+    refreshSec: 10,
+    legs,
+    attribution: [],
+  });
+
+  it("draws the whole route of each line in its leg's colour", () => {
+    const { features } = lineShapesToGeoJson(
+      ROUTE,
+      vehicles([
+        { legIndex: 0, line: "10", shape, vehicles: [] },
+        { legIndex: 1, line: "520", shape, vehicles: [] },
+      ]),
+    );
+    expect(features.map((f) => f.properties.color)).toEqual([lineColor(0), lineColor(1)]);
+    expect(features[0]?.geometry.coordinates).toEqual(shape);
+  });
+
+  it("skips legs without a shape and has nothing before the first answer", () => {
+    expect(lineShapesToGeoJson(ROUTE, undefined).features).toEqual([]);
+    const legs = [{ legIndex: 0, line: "10", unknownLeg: true, vehicles: [] }];
+    expect(lineShapesToGeoJson(ROUTE, vehicles(legs)).features).toEqual([]);
   });
 });
 
