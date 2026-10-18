@@ -91,7 +91,7 @@ Czas na kryteria: innowacyjność ok. 115 s (film i demo), dane ok. 70 s (demo i
 
 ## 6. Demo na żywo: ustawienia i zapasy
 
-**Wideo zapasowe (plan B) jest gotowe:** [wideo/sawa-demo.mp4](wideo/sawa-demo.mp4), ok. 87 s, Remotion ([tools/pitch-video](../../tools/pitch-video/README.md)). Na scenie `/demo` otwieramy z `?voice=1`, bez tego Sawa nie mówi.
+**Wideo zapasowe (plan B) jest gotowe:** [wideo/sawa-demo.mp4](wideo/sawa-demo.mp4), ok. 87 s, Remotion ([tools/pitch-video](../../tools/pitch-video/README.md)). Na scenie `/demo` Sawa mówi domyślnie (`?voice=0` ją wycisza).
 
 - **Plan A:** `/demo` na telefonie, z kopią obrazu na projektor. Stała lokalizacja w 42 Warsaw, symulowana jazda (T-36, T-102), opowieści i głos rozgrzane w cache (T-94).
 - **Plan B:** nagranie ekranu tego samego przebiegu 1:1, z dźwiękiem, gotowe na drugim laptopie. D przełącza bez słowa i nikt nie przeprasza.
