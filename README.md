@@ -12,9 +12,9 @@ Warsaw Open Data Hackathon 2026 · 17–18.10 · 42 Warsaw
 
 </div>
 
-| Poznaj Sawę | Ile masz czasu? | Trasa i opowieść | Przesiadki i odjazdy |
+| Poznaj Sawę | Ile masz czasu? | Trasa na mapie | Opowieść na żywo |
 |:---:|:---:|:---:|:---:|
-| <img src="docs/img/readme-1-start.png" width="200" alt="Ekran powitalny z Sawą" /> | <img src="docs/img/readme-2-czas.png" width="200" alt="Wybór czasu przejażdżki" /> | <img src="docs/img/readme-3-trasa.png" width="200" alt="Trasa na mapie i odtwarzacz opowieści" /> | <img src="docs/img/readme-4-odjazdy.png" width="200" alt="Przebieg trasy i godziny odjazdów" /> |
+| <img src="docs/img/readme-1-start.png" width="200" alt="Ekran powitalny z Sawą" /> | <img src="docs/img/readme-2-czas.png" width="200" alt="Wybór czasu przejażdżki" /> | <img src="docs/img/readme-3-trasa.png" width="200" alt="Trasa na mapie i odtwarzacz opowieści" /> | <img src="docs/img/readme-4-opowiesc.png" width="200" alt="Tekst opowieści z podświetlonym fragmentem" /> |
 
 ## Problem
 
@@ -29,7 +29,22 @@ Sawa to aplikacja na telefon dla nowych mieszkańców, dojeżdżających i każd
 1. **Onboarding:** wybierasz zainteresowania (historia, kultura, sport, przyroda), to, jak dobrze znasz miasto, styl opowieści i kto słucha (dorosły czy dziecko). Bez konta, profil zostaje w telefonie. Aplikacja działa po polsku i po angielsku.
 2. **Trasa:** podajesz czas albo cel. Planer układa przejazd tramwajami i autobusami ZTM (z odcinkami pieszymi) tak, żeby po drodze było jak najwięcej miejsc pasujących do Ciebie.
 3. **Jazda:** mapa pokazuje trasę, przystanki i pojazdy na żywo, a Sawa milczy, dopóki nie zbliżysz się do pierwszego miejsca.
-4. **Opowieść:** przy każdym miejscu LLM układa krótką opowieść wyłącznie z faktów z naszej bazy (każdy ze źródłem). Opcjonalnie czyta ją głos Sawy. Sawa pamięta, co już słyszałeś, i nie powtarza się.
+4. **Opowieść:** przy każdym miejscu LLM układa krótką opowieść wyłącznie z faktów z naszej bazy (każdy ze źródłem). Opcjonalnie czyta ją głos Sawy. Sawa pamięta, co już słyszałeś, i nie powtarza się. Między miejscami może grać cicha muzyka w tle, składana na żywo w przeglądarce, bez plików nagrań (włącza się w menu Sawy).
+
+## Założenia i ograniczenia
+
+**Założenia:**
+
+- Słuchacz jedzie tramwajem albo autobusem ZTM (albo idzie pieszo) i ma telefon, najlepiej ze słuchawkami.
+- Bez konta: profil, ustawienia i historia wysłuchanych opowieści zostają w pamięci przeglądarki na telefonie.
+- Sawa mówi tylko to, co jest w bazie faktów. Gdy o miejscu nie ma nic ciekawego, milczy, zamiast zmyślać.
+- Długość opowieści wynika z czasu dojazdu do następnego miejsca, a ten z rozkładu i pozycji pojazdów.
+
+**Ograniczenia:**
+
+- Planer układa trasy z tramwajów, autobusów i odcinków pieszych. Metra, SKM i Kolei Mazowieckich nie obejmuje.
+- Najwięcej miejsc ma baza na Woli i w Śródmieściu (wokół 42 Warsaw). W dalszych dzielnicach punktów jest mniej.
+- Gdy API miasta nie odpowiada, godziny odjazdów są szacowane z rozkładu GTFS, a pozycje pojazdów mogą być nieaktualne.
 
 ## Dane
 
@@ -51,7 +66,6 @@ Zapytania do API miasta idą tylko z naszego backendu (token `WAW_TOKEN`), przeg
 | OpenStreetMap | zabytki, kościoły, muzea, teatry, parki, obiekty sportowe; geokodowanie (Nominatim) | ODbL |
 | Wikipedia, Warszawikia | fakty o miejscach | CC BY-SA |
 | [warszawa1939.pl](https://warszawa1939.pl) | karty przedwojennych budynków (Śródmieście, Wola) | CC BY-NC |
-| [Wirtualny Sztetl](https://sztetl.org.pl) (POLIN) | 155 miejsc żydowskiej Warszawy (synagogi, szkoły, miejsca pamięci) | do potwierdzenia |
 | Wikimedia Commons | zdjęcia archiwalne, z autorem i licencją przy każdym | licencja przy zdjęciu |
 | OpenFreeMap | podkład mapy | ODbL |
 | OSRM (FOSSGIS) | odcinki piesze po chodnikach | ODbL |
@@ -98,7 +112,7 @@ Kontrakt API (zod) jest w `packages/shared` i jest wspólny dla web i api. Przeg
 | Kontrakt API | zod w `packages/shared` | frontend i backend korzystają z tych samych definicji danych, więc nie rozjeżdżają się |
 | Baza | Supabase (Postgres + PostGIS) | szybko wyszukuje miejsca w danym obszarze mapy |
 | Model językowy | OpenRouter, `google/gemini-3.5-flash-lite` | tani i szybki; model zmienia się jedną zmienną środowiskową (`OPENROUTER_MODEL`) |
-| Głos | ElevenLabs `eleven_multilingual_v2` | naturalnie brzmiący polski; domyślnie wyłączony, włącza go `?voice=1` w adresie |
+| Głos | ElevenLabs `eleven_multilingual_v2` | naturalnie brzmiący polski |
 | Jakość kodu | TypeScript w trybie `strict`, testy Vitest, Biome, GitHub Actions | każdy PR automatycznie przechodzi sprawdzenie typów, testy i lint, zanim trafi do `main` |
 
 ## Użycie AI
