@@ -64,6 +64,56 @@
   }
 }
 
+/* Wysoki kontrast: <html data-contrast="more"> ustawia features/theme (przełącznik w menu Sawy albo
+   systemowe „Zwiększ kontrast”). Jedna paleta niezależnie od motywu: czarne tło, żółty tekst i krawędzie,
+   żółte przyciski z czarnym napisem (kontrast ok. 17:1). Wymusza też ciemny motyw, więc mapa jest ciemna.
+   Szkło bez przezroczystości i rozmycia, bez cieni; karty i pola dostają żółtą obwódkę. */
+:root[data-contrast="more"] {
+  .motyw {
+    color-scheme: dark;
+    --glebia: #ffe600;
+    --glebia-ciemna: #ffe600;
+    --mieta: #ffe600;
+    --mieta-jasna: #000000;
+    --koral: #ffe600;
+    --tekst: #ffe600;
+    --tekst-2: #ffe600;
+    --tekst-3: #ffe600;
+    --tlo-2: #000000;
+    --mapa: #000000;
+    --powierzchnia: #000000;
+    --szklo-tlo: #000000;
+    --karta-tlo: #000000;
+    --szklo-krawedz: #ffe600;
+    --cien: transparent;
+  }
+
+  .motyw :is(.szklo, .karta) {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .motyw :is(.bg-tlo-2, .bg-powierzchnia) {
+    outline: 1.5px solid #ffe600;
+    outline-offset: -1.5px;
+  }
+
+  /* Na żółtym tle napis i ikony czarne (zamiast białych) */
+  .motyw :is(.bg-glebia, .bg-koral, .mapa-nr),
+  .motyw :is(.bg-glebia, .bg-koral) .text-white {
+    color: #000;
+  }
+
+  .motyw .mapa-nr {
+    border-color: #000;
+  }
+
+  .motyw :focus-visible {
+    outline: 3px solid #ffe600;
+    outline-offset: 2px;
+  }
+}
+
 /* Aplikacja na cały ekran: strona się nie przewija, nie odbija i nie powiększa (szczypanie i podwójne tapnięcie).
    Przewijają się tylko konkretne listy, a mapa ma własny zoom. */
 html,

@@ -23,10 +23,16 @@ function readPreference(): ThemePreference {
 }
 
 function readTheme(): Theme {
-  return resolveTheme(readPreference(), window.matchMedia(DARK_MEDIA_QUERY).matches);
+  // data-contrast is set first (init script, use-contrast), so the theme can follow it.
+  return resolveTheme(
+    readPreference(),
+    window.matchMedia(DARK_MEDIA_QUERY).matches,
+    document.documentElement.dataset.contrast === "more",
+  );
 }
 
-function applyTheme() {
+/** Re-resolves the theme; use-contrast calls it after high contrast changes. */
+export function applyTheme() {
   document.documentElement.dataset.theme = readTheme();
   for (const listener of listeners) listener();
 }

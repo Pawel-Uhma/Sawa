@@ -5,7 +5,6 @@ import {
   STREET_LINES_SOURCE_LAYER,
   streetLineFilter,
 } from "../lib/street-highlight";
-import { PLACES_LAYER_ID } from "./places-layer";
 
 /** Soft band under the street, wider than the basemap road at every zoom. */
 const BAND_WIDTH: ExpressionSpecification = [
@@ -41,7 +40,9 @@ type StreetLayerProps = {
 
 /**
  * Whole street of a street place, drawn from the basemap's named road lines. Sits under the place
- * icons (and so under the route), so the icon stays where it was.
+ * icons (and so under the route), so the icon stays where it was. SawaMap renders it before
+ * PlacesLayer instead of using beforeId: after a basemap swap (theme change) MapLibre re-adds layers in
+ * mount order, and a beforeId pointing at places-circle failed while that layer was not back yet.
  */
 export function StreetLayer({ selected, hovered, color }: StreetLayerProps) {
   const line = { source: STREET_LINES_SOURCE, "source-layer": STREET_LINES_SOURCE_LAYER } as const;
@@ -54,7 +55,6 @@ export function StreetLayer({ selected, hovered, color }: StreetLayerProps) {
         id="street-hover-band"
         type="line"
         {...line}
-        beforeId={PLACES_LAYER_ID}
         filter={streetLineFilter(hoveredOnly)}
         layout={layout}
         paint={{
@@ -68,7 +68,6 @@ export function StreetLayer({ selected, hovered, color }: StreetLayerProps) {
         id="street-selected-band"
         type="line"
         {...line}
-        beforeId={PLACES_LAYER_ID}
         filter={streetLineFilter(selected)}
         layout={layout}
         paint={{
@@ -82,7 +81,6 @@ export function StreetLayer({ selected, hovered, color }: StreetLayerProps) {
         id="street-selected-core"
         type="line"
         {...line}
-        beforeId={PLACES_LAYER_ID}
         filter={streetLineFilter(selected)}
         layout={layout}
         paint={{ "line-color": color, "line-opacity": 0.9, "line-width": CORE_WIDTH }}

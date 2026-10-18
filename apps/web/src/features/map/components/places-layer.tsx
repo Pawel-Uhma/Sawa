@@ -9,8 +9,8 @@ import { Layer, Source } from "react-map-gl/maplibre";
 import { clusterBadgeExpression } from "../lib/cluster-badges";
 import {
   LABEL_FONT,
+  type MapLook,
   type MapPalette,
-  type MapTheme,
   placeKindColorExpression,
   placeStickerExpression,
 } from "../lib/map-style";
@@ -32,15 +32,20 @@ const UNCLUSTERED: FilterSpecification = ["!", CLUSTERED];
  * About 24 css px at zoom 15 (#90): the shapes stay readable, but icons no longer cover
  * the route line and its numbered stops (22 px), and fewer of them collide and hide.
  */
-const ICON_SIZE: ExpressionSpecification = [
-  "interpolate",
-  ["linear"],
-  ["zoom"],
-  12,
-  ["interpolate", ["linear"], ["get", "richness"], 1, 0.36, 40, 0.42],
-  17,
-  ["interpolate", ["linear"], ["get", "richness"], 1, 0.6, 40, 0.68],
-];
+function iconSize(scale: number): ExpressionSpecification {
+  return [
+    "interpolate",
+    ["linear"],
+    ["zoom"],
+    12,
+    ["interpolate", ["linear"], ["get", "richness"], 1, 0.36 * scale, 40, 0.42 * scale],
+    17,
+    ["interpolate", ["linear"], ["get", "richness"], 1, 0.6 * scale, 40, 0.68 * scale],
+  ];
+}
+const ICON_SIZE = iconSize(1);
+/** High contrast: a fifth larger, at the cost of a few more icons hiding each other. */
+const CONTRAST_ICON_SIZE = iconSize(1.2);
 
 /** Ring around the selected place, just outside the icon at every zoom. */
 const SELECTED_RADIUS: ExpressionSpecification = [
@@ -73,7 +78,8 @@ function labelPaint(palette: MapPalette) {
 
 type PlacesLayerProps = {
   places: PlaceSummaryFeature[];
-  theme: MapTheme;
+  /** Theme of the drawn stickers and badges, or high contrast. */
+  theme: MapLook;
   selectedId: string | null;
   /** Fade regular places while a route is shown, so its places stand out. */
   isDimmed: boolean;
@@ -123,7 +129,7 @@ export function PlacesLayer({
           filter={UNCLUSTERED}
           layout={{
             "icon-image": placeStickerExpression(theme),
-            "icon-size": ICON_SIZE,
+            "icon-size": theme === "contrast" ? CONTRAST_ICON_SIZE : ICON_SIZE,
             // Overlapping icons hide each other; richer places are placed first and win.
             "icon-padding": 1,
             "symbol-sort-key": ["-", 0, ["get", "richness"]],

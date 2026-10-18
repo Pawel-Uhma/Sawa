@@ -3,6 +3,7 @@ import { join } from "node:path";
 import { PLACE_KINDS, PLACE_SUBKINDS } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import {
+  CONTRAST_GROUP_COLORS,
   FALLBACK_PLACE_ICON,
   MAP_ICONS,
   MAP_PALETTES,
@@ -73,6 +74,10 @@ describe("map style", () => {
     expect(parsePlaceStickerId("sawa-stop")).toBeNull();
     expect(parsePlaceStickerId("sawa-place-dark-ufo")).toBeNull();
     expect(parsePlaceStickerId("sawa-place-sepia-site")).toBeNull();
+    expect(parsePlaceStickerId("sawa-place-contrast-site")).toEqual({
+      theme: "contrast",
+      marker: "site",
+    });
     expect(parsePlaceStickerId("sawa-place-dark-site-none")).toBeNull();
   });
 
@@ -84,6 +89,12 @@ describe("map style", () => {
       expect(placeStickerColors(subkind)).toEqual({
         fill: PLACE_GROUP_COLORS[PLACE_SUBKIND_GROUPS[subkind]],
         outline: "#ffffff",
+        halo: null,
+      });
+      expect(placeStickerColors(subkind, "contrast")).toEqual({
+        fill: CONTRAST_GROUP_COLORS[PLACE_SUBKIND_GROUPS[subkind]],
+        outline: "#000000",
+        halo: "#ffffff",
       });
     }
   });
