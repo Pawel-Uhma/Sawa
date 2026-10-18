@@ -1,0 +1,2467 @@
+{
+ "type": "FeatureCollection",
+ "name": "wikipedia-adresy-pozostale-dzielnice",
+ "metadata": {
+  "zebrano": "2026-10-17"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.170334,
+     52.216671
+    ]
+   },
+   "properties": {
+    "id": "dom-przy-ul-zorzy-19",
+    "nazwa": "Dom przy ul. Zorzy 19",
+    "name_en": "House at 19 Zorzy Street",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Zorzy 19",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "po wojnie–1992",
+    "fakty": [
+     "Alicja Solska-Jaroszewicz i jej mąż zostali zamordowani w ich domu w warszawskim Aninie przy ulicy Zorzy 19 w nocy z 31 sierpnia na 1 września 1992.",
+     "Po wojnie Tuwimowie otrzymali dom w Aninie przy ul. Zorzy 19, gdzie mieszkali wraz z Ireną Tuwim (siostrą poety).",
+     "Został zamordowany razem z żoną Alicją Solską w niewyjaśnionych okolicznościach, w nocy z 31 sierpnia na 1 września 1992, w swoim domu w Aninie przy ul. Zorzy 19 (pod tym adresem po wojnie mieszkał Julian Tuwim)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A house in Anin where Alicja Solska-Jaroszewicz and Piotr Jaroszewicz were murdered in the night of 31 August to 1 September 1992. After the war the house was given to the Tuwim family, and Julian Tuwim lived there.",
+    "ludzie": [
+     {
+      "kto": "Alicja Solska-Jaroszewicz",
+      "rola": "zamordowana w domu przy Zorzy 19 (noc z 31.08 na 1.09.1992)",
+      "wiki": "https://pl.wikipedia.org/wiki/Alicja_Solska-Jaroszewicz"
+     },
+     {
+      "kto": "Piotr Jaroszewicz",
+      "rola": "zamordowany w domu przy Zorzy 19 (noc z 31.08 na 1.09.1992)",
+      "wiki": "https://pl.wikipedia.org/wiki/Piotr_Jaroszewicz"
+     },
+     {
+      "kto": "Julian Tuwim",
+      "rola": "po wojnie mieszkał w tym domu",
+      "wiki": "https://pl.wikipedia.org/wiki/Julian_Tuwim"
+     },
+     {
+      "kto": "Irena Tuwim",
+      "rola": "siostra poety, mieszkała z Tuwimami w tym domu",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Alicja Solska-Jaroszewicz",
+      "url": "https://pl.wikipedia.org/wiki/Alicja_Solska-Jaroszewicz"
+     },
+     {
+      "tytul": "Wikipedia: Zabójstwo małżeństwa Jaroszewiczów",
+      "url": "https://pl.wikipedia.org/wiki/Zabójstwo_małżeństwa_Jaroszewiczów"
+     },
+     {
+      "tytul": "Wikipedia: Julian Tuwim",
+      "url": "https://pl.wikipedia.org/wiki/Julian_Tuwim"
+     },
+     {
+      "tytul": "Wikipedia: Piotr Jaroszewicz",
+      "url": "https://pl.wikipedia.org/wiki/Piotr_Jaroszewicz"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.886795,
+     52.194277
+    ]
+   },
+   "properties": {
+    "id": "dom-przy-ul-rynkowej-7",
+    "nazwa": "Dom przy ul. Rynkowej 7",
+    "name_en": "House at 7 Rynkowa Street",
+    "typ": "budynek",
+    "dzielnica": "Ursus",
+    "adres_dzis": "Rynkowa 7",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Józef Ładowski, przy ul. Rynkowej 7 w Warszawie (dawnej ulicy Gnojnej), prowadził restaurację U Grubego Joska.",
+     "Cała rodzina mieszkała przy ulicy Rynkowej 7."
+    ],
+    "ciekawostki": [
+     "Starostwo Grodzkie Północno-Warszawskie skazało właścicielkę sklepu spożywczego przy ul. Rynkowej 7, Marjem Ładowską, na 3 dni bezwzględnego aresztu i 50 zł grzywny z zamianą na 5 dni aresztu za nieprzestrzeganie godzin handlu."
+    ],
+    "summary_en": "Józef Ładowski ran the restaurant U Grubego Joska at Rynkowa 7 in Warsaw, the former Gnojna Street. The Ładowski family lived at the same address.",
+    "ludzie": [
+     {
+      "kto": "Józef Ładowski",
+      "rola": "prowadził restaurację U Grubego Joska; rodzina mieszkała przy Rynkowej 7",
+      "wiki": "https://pl.wikipedia.org/wiki/Józef_Ładowski"
+     },
+     {
+      "kto": "Marjem Ładowska",
+      "rola": "właścicielka sklepu spożywczego przy Rynkowej 7",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [
+     "ulica Gnojna"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Józef Ładowski",
+      "url": "https://pl.wikipedia.org/wiki/Józef_Ładowski"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.067878,
+     52.127609
+    ]
+   },
+   "properties": {
+    "id": "budynek-przy-ul-kabacki-dukt-2",
+    "nazwa": "Budynek przy ul. Kabacki Dukt 2",
+    "name_en": "Building at 2 Kabacki Dukt Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Kabacki Dukt 2",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "W serialu „Dylemat 5” budynek przy ul. Kabacki Dukt 2 na warszawskim Ursynowie, w pobliżu Lasu Kabackiego, zagrał blok."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A residential building in Ursynów near the Kabacki Forest that was used as the block in the TV series Dylemat 5.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Dylemat 5",
+      "url": "https://pl.wikipedia.org/wiki/Dylematu_5"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie z artykułu o serialu, w zdaniu użyto „go” (blok z serialu). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.035118,
+     52.143025
+    ]
+   },
+   "properties": {
+    "id": "blok-przy-ul-alternatywy-4",
+    "nazwa": "Blok przy ul. Alternatywy 4",
+    "name_en": "Block at 4 Alternatywy Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Alternatywy 4",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Akcja serialu „Dylemat 5” rozpoczyna się w bloku przy ul. Alternatywy 4, który z powodu wybuchu w piwnicy zostaje zniszczony."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Alternatywy 4 block in Ursynów, which in the series Dylemat 5 is destroyed by an explosion in the cellar.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Dylemat 5",
+      "url": "https://pl.wikipedia.org/wiki/Dylematu_5"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Blok z fikcji serialu, adres z bloku. Zdanie o Zmiennikach w paczce urwane, pominięte. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.056686,
+     52.149306
+    ]
+   },
+   "properties": {
+    "id": "mural-przy-ul-grzegorzewskiej-1",
+    "nazwa": "Murale przy ul. Marii Grzegorzewskiej 1 i 3",
+    "name_en": "Murals at 1 and 3 Maria Grzegorzewska Street",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Marii Grzegorzewskiej 1",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Dwa murale przy ul. Marii Grzegorzewskiej 1 i 3 przedstawiają bohaterów serialu oraz mapę fragmentu Ursynowa z zaznaczonymi na niej niektórymi scenami z serialu."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Two murals on Ursynów buildings show the characters of the TV series Alternatywy 4 and a map of the district with scenes from the show marked on it.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Alternatywy 4",
+      "url": "https://pl.wikipedia.org/wiki/Alternatywy_4"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Nazwa serialu w zdaniu urwana, przyjęto z kontekstu artykułu (Alternatywy 4). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.056083,
+     52.149631
+    ]
+   },
+   "properties": {
+    "id": "budynek-przy-ul-grzegorzewskiej-3",
+    "nazwa": "Budynek przy ul. Marii Grzegorzewskiej 3",
+    "name_en": "Building at 3 Maria Grzegorzewska Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Marii Grzegorzewskiej 3",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "istnieje": true,
+    "fakty": [
+     "Na budynku przy ul. Marii Grzegorzewskiej 3 na ursynowskim osiedlu Na Skraju, w którym kręcono część zdjęć, znajduje się tabliczka adresowa z jego „filmowym” adresem."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A building on the Na Skraju estate in Ursynów, where part of the TV series Alternatywy 4 was filmed. It has a plaque with the fictional address from the series.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Alternatywy 4",
+      "url": "https://pl.wikipedia.org/wiki/Alternatywy_4"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie w paczce urwane przy „(d.” - fragment o filmowym adresie niepełny. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.045121,
+     52.141211
+    ]
+   },
+   "properties": {
+    "id": "blok-przy-ul-kazury-10",
+    "nazwa": "Blok przy ul. Stanisława Kazury 10",
+    "name_en": "Block at 10 Stanisław Kazury Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Stanisława Kazury 10",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2016",
+    "istnieje": true,
+    "fakty": [
+     "W listopadzie 2016 roku na bloku przy ul. Kazury 10 w Warszawie odsłonięto mural upamiętniający postać Stanisława Anioła."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In November 2016 a mural commemorating the character Stanisław Anioł was unveiled on this Ursynów block.",
+    "ludzie": [
+     {
+      "kto": "Stanisław Anioł",
+      "rola": "postać filmowa upamiętniona muralem",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Anioł_(postać_filmowa)"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Anioł (postać filmowa)",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Anioł_(postać_filmowa)"
+     },
+     {
+      "tytul": "Wikipedia: Alternatywy 4",
+      "url": "https://pl.wikipedia.org/wiki/Alternatywy_4"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.045838,
+     52.140354
+    ]
+   },
+   "properties": {
+    "id": "mural-przy-ul-kazury-6",
+    "nazwa": "Mural przy ul. Stanisława Kazury 6",
+    "name_en": "Mural at 6 Stanisław Kazury Street",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Stanisława Kazury 6",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "istnieje": true,
+    "fakty": [
+     "Przy ulicy Kazury 6 na Ursynowie powstał mural poświęcony Zofii Stryjeńskiej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A mural dedicated to the painter Zofia Stryjeńska was created on this Ursynów building.",
+    "ludzie": [
+     {
+      "kto": "Zofia Stryjeńska",
+      "rola": "patronka muralu",
+      "wiki": "https://pl.wikipedia.org/wiki/Zofia_Stryjeńska"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zofia Stryjeńska",
+      "url": "https://pl.wikipedia.org/wiki/Zofia_Stryjeńska"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.027743,
+     52.158561
+    ]
+   },
+   "properties": {
+    "id": "rzezba-abstrakcja-geometryczna-wiolinowa-1",
+    "nazwa": "Abstrakcja Geometryczna (rzeźba) przy ul. Wiolinowej 1",
+    "name_en": "Geometric Abstraction (sculpture) at 1 Wiolinowa Street",
+    "typ": "pomnik",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Wiolinowa 1",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 1977",
+    "fakty": [
+     "Na Ursynowie od 1977 przy ul. Wiolinowej 1 znajdowała się jeszcze jedna rzeźba, metalowa Abstrakcja Geometryczna Tadeusza Siekluckiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A metal sculpture Abstrakcja Geometryczna by Tadeusz Sieklucki stood at Wiolinowa 1 in Ursynów from 1977.",
+    "ludzie": [
+     {
+      "kto": "Tadeusz Sieklucki",
+      "rola": "autor rzeźby Abstrakcja Geometryczna",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Rzeźby ursynowskie",
+      "url": "https://pl.wikipedia.org/wiki/Rzeźby_ursynowskie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie mówi „znajdowała się” - stan obecny nieznany. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.034321,
+     52.160461
+    ]
+   },
+   "properties": {
+    "id": "napad-na-konwoj-zamiany-13",
+    "nazwa": "Napad na konwój przy ul. Zamiany 13",
+    "name_en": "Convoy robbery at 13 Zamiany Street",
+    "typ": "zdarzenie",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Zamiany 13",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1995",
+    "fakty": [
+     "28 listopada 1995: napad na konwój przy ulicy Zamiany 13 na Ursynowie w Warszawie: ukradziono wówczas 1 201 988 złotych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 28 November 1995 a convoy was robbed at Zamiany 13 in Ursynów, Warsaw, with 1,201,988 zloty stolen.",
+    "ludzie": [
+     {
+      "kto": "Marek Janusz Czarnecki",
+      "rola": "wymieniony w artykule w związku z napadem na konwój",
+      "wiki": "https://pl.wikipedia.org/wiki/Marek_Janusz_Czarnecki"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Marek Janusz Czarnecki",
+      "url": "https://pl.wikipedia.org/wiki/Marek_Janusz_Czarnecki"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.243822,
+     52.249693
+    ]
+   },
+   "properties": {
+    "id": "dom-przy-ul-zolkiewskiego-28",
+    "nazwa": "Dom przy ul. Stanisława Żółkiewskiego 28",
+    "name_en": "House at 28 Stanisław Żółkiewski Street",
+    "typ": "budynek",
+    "dzielnica": "Wesoła",
+    "adres_dzis": "Stanisława Żółkiewskiego 28",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Mieszkał w Wesołej przy ul. Żółkiewskiego 28."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Ludwik Maciąg lived at Żółkiewskiego 28 in Wesoła.",
+    "ludzie": [
+     {
+      "kto": "Ludwik Maciąg",
+      "rola": "mieszkał przy ul. Żółkiewskiego 28",
+      "wiki": "https://pl.wikipedia.org/wiki/Ludwik_Maciąg"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ludwik Maciąg",
+      "url": "https://pl.wikipedia.org/wiki/Ludwik_Maciąg"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Miasta nie podano wprost; Wesoła to dzielnica Warszawy (nagłówek). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.017835,
+     52.333158
+    ]
+   },
+   "properties": {
+    "id": "budynek-przy-alei-przyjaciol-1",
+    "nazwa": "Budynek przy alei Przyjaciół 1",
+    "name_en": "Building at 1 Aleja Przyjaciół",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Ogrody Przyjaciół 1",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1973–1999",
+    "fakty": [
+     "W mieszkaniu przy alei Przyjaciół 1 w latach 1973–1999, aż do śmierci, mieszkał Jerzy Waldorff, pisarz, publicysta, krytyk sztuki, opiekun Starych Powązek i innych zabytków (tablica pamiątkowa na rogu budynku przy alei Przyjaciół i Koszykowej)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Writer and art critic Jerzy Waldorff lived in an apartment at Aleja Przyjaciół 1 from 1973 until his death in 1999. A memorial plaque is on the corner with Koszykowa.",
+    "ludzie": [
+     {
+      "kto": "Jerzy Waldorff",
+      "rola": "mieszkał w tym budynku 1973–1999",
+      "wiki": "https://pl.wikipedia.org/wiki/Jerzy_Waldorff"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Aleja Przyjaciół w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Aleja_Przyjaciół_w_Warszawie"
+     },
+     {
+      "tytul": "Wikipedia: Jerzy Waldorff",
+      "url": "https://pl.wikipedia.org/wiki/Jerzy_Waldorff"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Adres z bloku (Ogrody Przyjaciół 1) różni się od adresu w zdaniu (aleja Przyjaciół 1). Dzielnica z nagłówka: Białołęka. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.060127,
+     52.288774
+    ]
+   },
+   "properties": {
+    "id": "kamienica-przy-ul-golebiej-4",
+    "nazwa": "Kamienica Ligęzów przy ul. Gołębiej 4",
+    "name_en": "Ligęza Tenement at 4 Gołębia Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Gołębia 4",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1912",
+    "fakty": [
+     "Potem kilkakrotnie zmieniał lokalizację, aż do 1912 roku, gdy zakład mieścił się na ulicy Gołębiej 4 w zakupionej w tym roku Kamienicy Ligęzów.",
+     "Najpierw przy Lelewela 10, a następnie w większej kamienicy przy ul. Gołębiej 4 (początek zdania urwany w paczce)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Robert Jahoda's workshop was at Gołębia 4 in the Ligęza tenement, bought in 1912. Franciszek Rawita-Gawroński later worked in a larger tenement at the same street.",
+    "ludzie": [
+     {
+      "kto": "Robert Jahoda",
+      "rola": "zakład w kamienicy przy Gołębiej 4 w 1912",
+      "wiki": "https://pl.wikipedia.org/wiki/Robert_Jahoda"
+     },
+     {
+      "kto": "Franciszek Rawita-Gawroński",
+      "rola": "później w większej kamienicy przy Gołębiej 4",
+      "wiki": "https://pl.wikipedia.org/wiki/Franciszek_Rawita-Gawroński"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Robert Jahoda",
+      "url": "https://pl.wikipedia.org/wiki/Robert_Jahoda"
+     },
+     {
+      "tytul": "Wikipedia: Franciszek Rawita-Gawroński",
+      "url": "https://pl.wikipedia.org/wiki/Franciszek_Rawita-Gawroński"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Miasta nie podano w zdaniach; przyjęto Warszawę z nagłówka (Targówek). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.061809,
+     52.288888
+    ]
+   },
+   "properties": {
+    "id": "szkola-malarstwa-golebia-14",
+    "nazwa": "Szkoła malarstwa dla kobiet przy ul. Gołębiej 14",
+    "name_en": "Women's painting school at 14 Gołębia Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Gołębia 14",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1897",
+    "fakty": [
+     "W 1897 założył szkołę malarstwa dla kobiet przy ul. Gołębiej 14, w której uczyli także Stanisławski i Wyczółkowski."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1897 Teodor Axentowicz founded a painting school for women at Gołębia 14, where Stanisławski and Wyczółkowski also taught.",
+    "ludzie": [
+     {
+      "kto": "Teodor Axentowicz",
+      "rola": "założył szkołę malarstwa dla kobiet (1897)",
+      "wiki": "https://pl.wikipedia.org/wiki/Teodor_Axentowicz"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Teodor Axentowicz",
+      "url": "https://pl.wikipedia.org/wiki/Teodor_Axentowicz"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Miasta nie podano w zdaniu; przyjęto Warszawę z nagłówka (Targówek). Do sprawdzenia. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.062657,
+     52.288847
+    ]
+   },
+   "properties": {
+    "id": "sia-zbrojna-narodowa-golebia-20",
+    "nazwa": "Instytut Techniki przy ul. Gołębiej 20",
+    "name_en": "Institute of Technology at 20 Gołębia Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Gołębia 20",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Siła Zbrojna Narodowa urządzano w Instytucie Techniki przy ul. Gołębiej 20 (zdanie w paczce bez podmiotu, dotyczy organizacji Siła Zbrojna Narodowa)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Siła Zbrojna Narodowa organisation was set up at the Institute of Technology at Gołębia 20.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Siła Zbrojna Narodowa",
+      "url": "https://pl.wikipedia.org/wiki/Siła_Zbrojna_Narodowa"
+     }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Zdanie niepełne (brak podmiotu w paczce). Miasta nie podano; przyjęto Warszawę z nagłówka (Targówek). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.08854,
+     52.169095
+    ]
+   },
+   "properties": {
+    "id": "budynek-ambasady-panamy-biedronki-13a",
+    "nazwa": "Budynek ambasady przy ul. Biedronki 13a",
+    "name_en": "Embassy building at 13a Biedronki Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Biedronki 13a",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2009–2021",
+    "fakty": [
+     "Ambasadę w Warszawie Panama otworzyła w 2007 z siedzibą przy ul. Biedronki 13a (2009–2021)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Panamanian embassy in Warsaw was based at Biedronki 13a from 2009 to 2021.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Panamy w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Panamy_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie w paczce urwane na końcu („obecnie mieści się przy ul.”), pominięty ciąg dalszy. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.084527,
+     52.175005
+    ]
+   },
+   "properties": {
+    "id": "ambasada-senegalu-biedronki-63",
+    "nazwa": "Budynek ambasady przy ul. Biedronki 63",
+    "name_en": "Embassy building at 63 Biedronki Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Biedronki 63",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Ambasada Senegalu w Polsce: najpierw ul. Biedronki 59A, następnie przy ul. Biedronki 63 (początek zdania urwany w paczce)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Senegalese embassy moved from Biedronki 59A to Biedronki 63.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Senegalu w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Senegalu_w_Polsce"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Początek zdania urwany w paczce. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.023796,
+     52.132209
+    ]
+   },
+   "properties": {
+    "id": "ambasada-drk-bogatki-3",
+    "nazwa": "Budynek ambasady przy ul. Bogatki 3",
+    "name_en": "Embassy building at 3 Bogatki Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Bogatki 3",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2020–",
+    "istnieje": true,
+    "fakty": [
+     "Ambasada Demokratycznej Republiki Konga w Polsce przeniosła się z ul. Wołodyjowskiego 48a (2020) do ul. Bogatki 3 (2020–)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The embassy of the Democratic Republic of the Congo has been at Bogatki 3 since 2020, moving from Wołodyjowskiego 48a.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Demokratycznej Republiki Konga w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Demokratycznej_Republiki_Konga_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Sformułowanie „przeniosła się” to skrót zdania „obecnie przy ul. Bogatki 3”. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.073792,
+     52.170783
+    ]
+   },
+   "properties": {
+    "id": "ambasada-drk-kubickiego-11",
+    "nazwa": "Budynek ambasady przy ul. Jakuba Kubickiego 11",
+    "name_en": "Embassy building at 11 Jakuba Kubickiego Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Jakuba Kubickiego 11",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1981–1993",
+    "fakty": [
+     "Ambasada Demokratycznej Republiki Konga w Polsce: Niegolewskiego 14 (1981–1990), ul. Kubickiego 11 (1991–1993)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Congolese embassy was at Kubickiego 11 from 1991 to 1993, after Niegolewskiego 14.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Demokratycznej Republiki Konga w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Demokratycznej_Republiki_Konga_w_Polsce"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie w paczce urwane na końcu. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.073418,
+     52.170774
+    ]
+   },
+   "properties": {
+    "id": "ambasada-afganistanu-kubickiego-13",
+    "nazwa": "Budynek ambasady przy ul. Jakuba Kubickiego 13",
+    "name_en": "Embassy building at 13 Jakuba Kubickiego Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Jakuba Kubickiego 13",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1981–1991",
+    "fakty": [
+     "Ambasada Afganistanu w Warszawie: Obrońców 33 (1981–1990), ul. Kubickiego 13 (1991)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Afghan embassy in Warsaw was at Kubickiego 13 in 1991, after Obrońców 33.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Afganistanu w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Afganistanu_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie w paczce urwane na końcu. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.072898,
+     52.17125
+    ]
+   },
+   "properties": {
+    "id": "ambasada-korei-kubickiego-3",
+    "nazwa": "Budynek ambasady przy ul. Jakuba Kubickiego 3",
+    "name_en": "Embassy building at 3 Jakuba Kubickiego Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Jakuba Kubickiego 3",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1990–1991",
+    "fakty": [
+     "Ambasada Republiki Korei w Polsce: Jerozolimskich 65/79 (1990), kolejne – przy ul. Kubickiego 3 (1991)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The South Korean embassy in Poland moved to Kubickiego 3 in 1991, after Jerozolimskie 65/79 in 1990.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Republiki Korei w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Republiki_Korei_w_Polsce"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie w paczce urwane na końcu. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.073274,
+     52.171317
+    ]
+   },
+   "properties": {
+    "id": "ambasada-norwegii-kubickiego-5",
+    "nazwa": "Budynek przy ul. Jakuba Kubickiego 5",
+    "name_en": "Building at 5 Jakuba Kubickiego Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Jakuba Kubickiego 5",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1991",
+    "fakty": [
+     "Sekcja Wizowa ambasady Norwegii mieściła się przy ul. Kubickiego 5 (1991)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The visa section of the Norwegian embassy was at Kubickiego 5 in 1991.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Norwegii w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Norwegii_w_Polsce"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Dalsza część zdania (adresy Biura Radcy Handlowego) pominięta. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.079766,
+     52.171021
+    ]
+   },
+   "properties": {
+    "id": "ambasada-nigerii-kosiarzy-22b",
+    "nazwa": "Budynek ambasady przy ul. Kosiarzy 22b",
+    "name_en": "Embassy building at 22b Kosiarzy Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Kosiarzy 22b",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2009–2013, od 2013",
+    "fakty": [
+     "Ambasada Nigerii w Polsce: Starościńskiej 1b (2009–2013), od 2013 przy ul. Kosiarzy 22b."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Nigerian embassy has been at Kosiarzy 22b since 2013, after Starościńska 1b.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Nigerii w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Nigerii_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.023964,
+     52.150654
+    ]
+   },
+   "properties": {
+    "id": "ambasada-uzbekistanu-kraski-21",
+    "nazwa": "Budynek ambasady przy ul. Kraski 21",
+    "name_en": "Embassy building at 21 Kraski Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Kraski 21",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2009",
+    "istnieje": true,
+    "fakty": [
+     "Ambasada Uzbekistanu w Polsce mieści się przy ul. Kraski 21 od 2009 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Uzbek embassy in Poland has been located at Kraski 21 since 2009.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Uzbekistanu w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Uzbekistanu_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Przeredagowane zdanie „Obecnie mieści przy ul. Kraski 21 (2009–)” (w paczce brak słowa „się”). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.07746,
+     52.168951
+    ]
+   },
+   "properties": {
+    "id": "ambasada-kazachstanu-krolowej-marysienki-14",
+    "nazwa": "Budynek ambasady przy ul. Królowej Marysieńki 14",
+    "name_en": "Embassy building at 14 Królowej Marysieńki Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Królowej Marysieńki 14",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2002",
+    "istnieje": true,
+    "fakty": [
+     "Ambasada Kazachstanu w Polsce: Starościńskiej 1 (2001), od 2002 mieści się przy ul. Królowej Marysieńki 14."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Kazakh embassy in Poland has been at Królowej Marysieńki 14 since 2002, after Starościńska 1.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Kazachstanu w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Kazachstanu_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.073427,
+     52.172909
+    ]
+   },
+   "properties": {
+    "id": "ambasada-macedonii-krolowej-marysienki-40",
+    "nazwa": "Budynek ambasady przy ul. Królowej Marysieńki 40",
+    "name_en": "Embassy building at 40 Królowej Marysieńki Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Królowej Marysieńki 40",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Ambasada Macedonii Północnej w Warszawie: najpierw Dominikańska 15, następnie przy ul. Królowej Marysieńki 40 (początek zdania urwany w paczce)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The North Macedonian embassy in Warsaw moved to Królowej Marysieńki 40 from Dominikańska 15.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Macedonii Północnej w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Macedonii_Północnej_w_Warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Początek zdania urwany w paczce. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.071667,
+     52.174592
+    ]
+   },
+   "properties": {
+    "id": "centrum-kultury-bialorusi-krolowej-marysienki-66",
+    "nazwa": "Budynek Centrum Kulturalnego Białorusi przy ul. Królowej Marysieńki 66",
+    "name_en": "Building of the Belarusian Cultural Centre at 66 Królowej Marysieńki Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Królowej Marysieńki 66",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2011",
+    "fakty": [
+     "W 2011 Centrum Kulturalne Białorusi przeniesiono do Warszawy, gdzie mieściło się przy ul. Królowej Marysieńki 66."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 2011 the Belarusian Cultural Centre was moved to Warsaw, where it was located at Królowej Marysieńki 66.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Centrum Kulturalne Białorusi w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Centrum_Kulturalne_Białorusi_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie w paczce dalej mówi o budynku ambasady przy ul. (urwane). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.073227,
+     52.170454
+    ]
+   },
+   "properties": {
+    "id": "ambasada-jemenu-marconich-8",
+    "nazwa": "Budynek ambasady przy ul. Marconich 8",
+    "name_en": "Embassy building at 8 Marconich Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Marconich 8",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1991–1993",
+    "fakty": [
+     "W latach 1991–1993 Ambasada Jemenu w Warszawie mieściła się przy ul. Marconich 8."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Yemeni embassy in Warsaw was at Marconich 8 in 1991–1993.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Jemenu w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Jemenu_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Dalsza część zdania (1996, kolejny adres) urwana w paczce, pominięta. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.070306,
+     52.16992
+    ]
+   },
+   "properties": {
+    "id": "ambasada-ekwadoru-marconich-11",
+    "nazwa": "Budynek ambasady przy ul. Marconich 11",
+    "name_en": "Embassy building at 11 Marconich Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Marconich 11",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1991",
+    "fakty": [
+     "W 1991 r. ambasada Ekwadoru w Warszawie mieściła się przy ul. Marconich 11."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ecuadorian embassy in Warsaw was at Marconich 11 in 1991.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Ekwadoru w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Ekwadoru_w_Warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie w paczce urwane („(gł.”), sens z początku zdania. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.067171,
+     52.173123
+    ]
+   },
+   "properties": {
+    "id": "ambasada-wietnamu-resorowa-36",
+    "nazwa": "Budynek ambasady przy ul. Resorowej 36",
+    "name_en": "Embassy building at 36 Resorowa Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Resorowa 36",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2009",
+    "fakty": [
+     "Ambasada Wietnamu w Polsce: Kazimierzowska 14, od 2009 przy ul. Resorowej 36."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Vietnamese embassy in Poland has been at Resorowa 36 since 2009, after Kazimierzowska 14.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Wietnamu w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Wietnamu_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0792,
+     52.169608
+    ]
+   },
+   "properties": {
+    "id": "ambasada-angoli-urodzajna-12",
+    "nazwa": "Budynek ambasady przy ul. Urodzajnej 12",
+    "name_en": "Embassy building at 12 Urodzajna Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Urodzajna 12",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2017",
+    "istnieje": true,
+    "fakty": [
+     "Ambasada Angoli w Polsce: Goszczyńskiego 12, następnie przy ul. Urodzajnej 12 (2017–)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Angolan embassy has been at Urodzajna 12 since 2017, after Goszczyńskiego 12.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Angoli w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Angoli_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.094433,
+     52.127518
+    ]
+   },
+   "properties": {
+    "id": "rezydencja-libanu-zaplocie-27",
+    "nazwa": "Rezydencja ambasadora Libanu przy ul. Zapłocie 27",
+    "name_en": "Residence of the Lebanese ambassador at 27 Zapłocie Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Zapłocie 27",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2019",
+    "istnieje": true,
+    "fakty": [
+     "Rezydencja ambasadora Libanu mieści się przy ul. Zapłocie 27 (od 2019)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The residence of the Lebanese ambassador has been at Zapłocie 27 since 2019.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Libanu w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Libanu_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.084644,
+     52.17055
+    ]
+   },
+   "properties": {
+    "id": "ambasada-sri-lanki-choragwi-pancernej-8",
+    "nazwa": "Budynek ambasady przy ul. Chorągwi Pancernej 8",
+    "name_en": "Embassy building at 8 Chorągwi Pancernej Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Chorągwi Pancernej 8",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2003–2017, od 2017",
+    "istnieje": true,
+    "fakty": [
+     "Ambasada Sri Lanki w Polsce: Wilanowska 313a (2003–2017), obecnie przy ul. Chorągwi Pancernej 8 (od 2017)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Sri Lankan embassy in Poland has been at Chorągwi Pancernej 8 since 2017, after Wilanowska 313a.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Sri Lanki w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Sri_Lanki_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.13173,
+     52.151255
+    ]
+   },
+   "properties": {
+    "id": "ambasada-meksyku-bruzdowa-29",
+    "nazwa": "Budynek ambasady przy ul. Bruzdowej 29",
+    "name_en": "Embassy building at 29 Bruzdowa Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Bruzdowa 29",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1964–1966, od 2013",
+    "istnieje": true,
+    "fakty": [
+     "Ambasada Meksyku w Polsce: Słoneczna 25 (1964–1966), obecnie na Kępie Zawadowskiej przy ul. Bruzdowej 29 (2013)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Mexican embassy in Poland was at Słoneczna 25 in 1964–1966 and has been at Bruzdowa 29 on Kępa Zawadowska since 2013.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Meksyku w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Meksyku_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.142367,
+     52.143911
+    ]
+   },
+   "properties": {
+    "id": "kaplicza-bijaka-bruzdowa-3",
+    "nazwa": "Kapliczka Matki Bożej przy ul. Bruzdowej 3",
+    "name_en": "Chapel of Our Lady at 3 Bruzdowa Street",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Bruzdowa 3",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Bogusław Bijak wybudował również przy ulicy Bruzdowej 3 kapliczkę Matki Bożej."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bogusław Bijak also built a chapel of Our Lady at Bruzdowa 3.",
+    "ludzie": [
+     {
+      "kto": "Bogusław Bijak",
+      "rola": "wybudował kapliczkę Matki Bożej",
+      "wiki": "https://pl.wikipedia.org/wiki/Bogusław_Bijak"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Bogusław Bijak",
+      "url": "https://pl.wikipedia.org/wiki/Bogusław_Bijak"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Miasta nie podano; przyjęto Warszawę z nagłówka (Wilanów). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.073094,
+     52.128446
+    ]
+   },
+   "properties": {
+    "id": "szkola-podstawowa-399-zaruby-7",
+    "nazwa": "Mural Ludwiki i Henryka Wujców przy Szkole Podstawowej nr 399",
+    "name_en": "Mural of Ludwika and Henryk Wujec at Primary School No. 399",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Jerzego Zaruby 7",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2025",
+    "istnieje": true,
+    "fakty": [
+     "W 2025 na murze przy wejściu do Szkoły Podstawowej nr 399 przy ul. Zaruby 7 w Warszawie odsłonięto mural upamiętniający Ludwikę i Henryka Wujców autorstwa Marcina Maciejowskiego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 2025 a mural commemorating Ludwika and Henryk Wujec, painted by Marcin Maciejowski, was unveiled on the wall at the entrance of Primary School No. 399 in Warsaw.",
+    "ludzie": [
+     {
+      "kto": "Ludwika Wujec",
+      "rola": "upamiętniona muralem",
+      "wiki": "https://pl.wikipedia.org/wiki/Ludwika_Wujec"
+     },
+     {
+      "kto": "Henryk Wujec",
+      "rola": "upamiętniony muralem",
+      "wiki": null
+     },
+     {
+      "kto": "Marcin Maciejowski",
+      "rola": "autor muralu",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ludwika Wujec",
+      "url": "https://pl.wikipedia.org/wiki/Ludwika_Wujec"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.0722,
+     52.129082
+    ]
+   },
+   "properties": {
+    "id": "budynek-edbud-zaruby-9",
+    "nazwa": "Budynek wielorodzinny przy ul. Jerzego Zaruby 9",
+    "name_en": "Apartment block at 9 Jerzego Zaruby Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Jerzego Zaruby 9",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1998–2000",
+    "istnieje": true,
+    "fakty": [
+     "Od października 1998 roku do stycznia 2000 roku deweloper budował mieszkalny budynek wielorodzinny przy ul. Zaruby 9, który zaprojektował Janusz Faron."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Developer Edbud built a multi-family residential building at Zaruby 9 between October 1998 and January 2000, designed by Janusz Faron.",
+    "ludzie": [
+     {
+      "kto": "Janusz Faron",
+      "rola": "projektant budynku",
+      "wiki": null
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Edbud",
+      "url": "https://pl.wikipedia.org/wiki/Edbud"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie z artykułu o deweloperze Edbud. Miasta nie podano; przyjęto Warszawę z nagłówka (Ursynów). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.128526,
+     52.246514
+    ]
+   },
+   "properties": {
+    "id": "palacyk-szymanskiego-jozefa-szymanskiego-2",
+    "nazwa": "Pałacyk Szymańskiego",
+    "name_en": "Szymański Palace",
+    "typ": "budynek",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "Józefa Szymańskiego 2",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "istnieje": true,
+    "fakty": [
+     "W tym samym roku rozpoczął budowę swojej willi (do dzisiaj zwanej „Pałacykiem Szymańskiego”) przy ówczesnej ulicy Franciszka Szymańskiego 2."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Engineer Stanisław Szymański began building his villa, still called the Szymański Palace, at the then Franciszek Szymański Street 2.",
+    "ludzie": [
+     {
+      "kto": "Stanisław Szymański (inżynier)",
+      "rola": "inwestor, budowa willi",
+      "wiki": "https://pl.wikipedia.org/wiki/Stanisław_Szymański_(inżynier)"
+     }
+    ],
+    "dawne_nazwy": [
+     "ulica Franciszka Szymańskiego"
+    ],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Stanisław Szymański (inżynier)",
+      "url": "https://pl.wikipedia.org/wiki/Stanisław_Szymański_(inżynier)"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie zaczyna się od „W tym samym roku” - rok z poprzedniego zdania niedostępny w paczce. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.152118,
+     52.252854
+    ]
+   },
+   "properties": {
+    "id": "oboz-nkwd-w-rembertowie",
+    "nazwa": "Obóz NKWD w Rembertowie",
+    "name_en": "NKVD camp in Rembertów",
+    "typ": "miejsce",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "Marsa 110",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od grudnia 1944",
+    "istnieje": true,
+    "fakty": [
+     "Obóz NKWD w Rembertowie – obóz specjalny NKWD Nr 10, założony w grudniu 1944, po wkroczeniu Armii Czerwonej do Rembertowa (12 września 1944), na terenie rembertowskiej fabryki Zakładów Amunicyjnych „Pocisk” przy ul. Marsa 110, pełniący rolę punktu zbornego przed deportacją w głąb ZSRR.",
+     "Na terenie dawnego obozu przy ul. Marsa 110 znajduje się obecnie 2 Regionalna Baza Logistyczna."
+    ],
+    "ciekawostki": [],
+    "summary_en": "NKVD special camp No. 10 was set up in December 1944 at the Pocisk ammunition plant in Rembertów as a transit point before deportation to the USSR. The site now houses the 2nd Regional Logistics Base.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Obóz NKWD w Rembertowie",
+      "url": "https://pl.wikipedia.org/wiki/Obóz_NKWD_w_Rembertowie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Teren istnieje, obóz już nie. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.161531,
+     52.254396
+    ]
+   },
+   "properties": {
+    "id": "klasztor-klasztorna-3",
+    "nazwa": "Kościół i dom zakonny przy ul. Klasztornej 3",
+    "name_en": "Church and convent at 3 Klasztorna Street",
+    "typ": "swiatynia",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "Klasztorna 3",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1929",
+    "istnieje": true,
+    "fakty": [
+     "W 1929 podziemia kościoła zostały otwarte w związku z pracami przy zakładaniu ogrzewania i kości zostały przeniesione do oratorium domu zakonnego przy ul. Klasztornej 3."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1929, while heating was being installed, the crypt of the church at Klasztorna 3 was opened and the bones were moved to the convent oratory.",
+    "ludzie": [
+     {
+      "kto": "Regina Protmann",
+      "rola": "w tekście o kościele i domu zakonnym przy Klasztornej 3",
+      "wiki": "https://pl.wikipedia.org/wiki/Regina_Protmann"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Regina Protmann",
+      "url": "https://pl.wikipedia.org/wiki/Regina_Protmann"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Miasta nie podano; przyjęto Warszawę z nagłówka (Rembertów). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.161435,
+     52.25222
+    ]
+   },
+   "properties": {
+    "id": "klasztor-klasztorna-19",
+    "nazwa": "Dom generalny zakonu przy ul. Klasztornej 19",
+    "name_en": "Religious order's general house at 19 Klasztorna Street",
+    "typ": "budynek",
+    "dzielnica": "Rembertów",
+    "adres_dzis": "Klasztorna 19",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1924",
+    "fakty": [
+     "Zwolniona w listopadzie 1924, służyła następnie siostrom w infirmerii zakonnej domu generalnego przy ul. Klasztornej 19."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Hilaria Emilia Główczyńska served the sisters in the convent infirmary of the general house at Klasztorna 19 after her release in November 1924.",
+    "ludzie": [
+     {
+      "kto": "Hilaria Emilia Główczyńska",
+      "rola": "służyła siostrom w infirmerii zakonnej",
+      "wiki": "https://pl.wikipedia.org/wiki/Hilaria_Emilia_Główczyńska"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Hilaria Emilia Główczyńska",
+      "url": "https://pl.wikipedia.org/wiki/Hilaria_Emilia_Główczyńska"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Początek zdania nie wskazuje, skąd zwolniona. Miasta nie podano; przyjęto Warszawę z nagłówka (Rembertów). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.067841,
+     52.173584
+    ]
+   },
+   "properties": {
+    "id": "centrum-edukacji-radosna-11",
+    "nazwa": "Międzypokoleniowe Centrum Edukacji przy ul. Radosnej 11",
+    "name_en": "Intergenerational Education Centre at 11 Radosna Street",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Radosna 11",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od października 2018",
+    "istnieje": true,
+    "fakty": [
+     "W październiku 2018 ze Społeczności Chrześcijańskiej „Południe” została wydzielona nowa Społeczność Chrześcijańska „Wilanów”, spotykająca się w pomieszczeniach Międzypokoleniowego Centrum Edukacji przy ul. Radosnej 11."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In October 2018 the Wilanów Christian community split from the Południe community and began meeting in the premises of the Intergenerational Education Centre at Radosna 11.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Społeczność Chrześcijańska Południe w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Społeczność_Chrześcijańska_Południe_w_Warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie dotyczy wspólnoty, nie samego budynku; miasto wnioskowane z nazwy wspólnoty (Wilanów). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.145338,
+     52.173498
+    ]
+   },
+   "properties": {
+    "id": "klub-dyplomatyczny-romantyczna-3",
+    "nazwa": "Klub Dyplomatyczny w Miedzeszynie (ul. Romantyczna 3)",
+    "name_en": "Diplomatic Club in Miedzeszyn at 3 Romantyczna Street",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Romantyczna 3",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "XX wiek",
+    "fakty": [
+     "W XX wieku ambasada utrzymywała Klub Dyplomatyczny w Miedzeszynie przy ul. Romantycznej 3."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In the 20th century the British embassy ran a diplomatic club at Romantyczna 3 in Miedzeszyn.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Wielkiej Brytanii w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Wielkiej_Brytanii_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.1447,
+     52.175234
+    ]
+   },
+   "properties": {
+    "id": "ambasada-iraku-romantyczna-7",
+    "nazwa": "Budynek ambasady przy ul. Romantycznej 7",
+    "name_en": "Embassy building at 7 Romantyczna Street",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Romantyczna 7",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1991–2017",
+    "fakty": [
+     "Ambasada Iraku w Warszawie: Berneńskiej 6 (1991), ul. Romantycznej 7 (2017)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Iraqi embassy in Warsaw was at Berneńska 6 in 1991 and at Romantyczna 7 from 2017.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Iraku w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Iraku_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie w paczce urwane („szkoła przy ul.”). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.064586,
+     52.262566
+    ]
+   },
+   "properties": {
+    "id": "fabryka-kijewski-scholtze-siarczana-6",
+    "nazwa": "Fabryka Kijewski, Scholtze i Spółka przy ul. Siarczanej 6",
+    "name_en": "Kijewski, Scholtze & Co. factory at 6 Siarczana Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Siarczana 6",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1943",
+    "fakty": [
+     "Szedyt – z fabryki Kijewski, Scholtze i Spółka znajdującej się przy ul. Siarczanej 6 na Targówku w Warszawie, będącej jedynym producentem tej substancji na terenie Generalnego Gubernatorstwa.",
+     "27 maja 1943 Bronisław Pietraszewicz uczestniczył w akcji „Sól”, której celem było zdobycie z magazynów fabryki Kijewski, Scholtze i Spółka przy ul. Siarczanej 6 na Targówku chloranu potasu, niezbędnego do produkcji materiałów wybuchowych."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Kijewski, Scholtze & Co. factory at Siarczana 6 in Targówek was the only producer of szedyt in the General Government. In May 1943 the Sól action aimed to seize potassium chlorate from its warehouses.",
+    "ludzie": [
+     {
+      "kto": "Bronisław Pietraszewicz",
+      "rola": "uczestniczył w akcji „Sól” (27.05.1943) na magazyny fabryki",
+      "wiki": "https://pl.wikipedia.org/wiki/Bronisław_Pietraszewicz"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Szedyt",
+      "url": "https://pl.wikipedia.org/wiki/Szedyt"
+     },
+     {
+      "tytul": "Wikipedia: Bronisław Pietraszewicz",
+      "url": "https://pl.wikipedia.org/wiki/Bronisław_Pietraszewicz"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.027434,
+     52.282359
+    ]
+   },
+   "properties": {
+    "id": "budynek-vi-osrodka-opieki-siedzibna-25",
+    "nazwa": "Budynek VI Ośrodka Opieki i Zdrowia przy ul. Siedzibnej 25",
+    "name_en": "Building of the 6th Care and Health Centre at 25 Siedzibna Street",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Siedzibna 25",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2019",
+    "istnieje": true,
+    "fakty": [
+     "W lutym 2019 na budynku przy ul. Siedzibnej 25 w Warszawie, w którym mieścił się VI Ośrodek Opieki i Zdrowia, w którym pracowała Irena Sendlerowa, odsłonięto tablicę pamiątkową."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In February 2019 a memorial plaque to Irena Sendlerowa was unveiled on the building at Siedzibna 25 in Warsaw, which housed the 6th Care and Health Centre where she worked.",
+    "ludzie": [
+     {
+      "kto": "Irena Sendlerowa",
+      "rola": "pracowała w VI Ośrodku Opieki i Zdrowia w tym budynku",
+      "wiki": "https://pl.wikipedia.org/wiki/Irena_Sendlerowa"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Irena Sendlerowa",
+      "url": "https://pl.wikipedia.org/wiki/Irena_Sendlerowa"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Pierwsze zdanie o Sendlerowej w paczce urwane („tam opiekowała się m.”), pominięte. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.017892,
+     52.293262
+    ]
+   },
+   "properties": {
+    "id": "pawilon-sklepowy-wysockiego-26",
+    "nazwa": "Pawilon sklepowy przy ul. Piotra Wysockiego 26",
+    "name_en": "Shop pavilion at 26 Piotra Wysockiego Street",
+    "typ": "zdarzenie",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Piotra Wysockiego 26",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "2007",
+    "fakty": [
+     "2 kwietnia 2007 w pawilonie sklepowym na warszawskim Targówku przy ul. Wysockiego 26 policja znalazła ciało Grobelnego."
+    ],
+    "ciekawostki": [],
+    "summary_en": "On 2 April 2007 police found the body of Lech Grobelny in a shop pavilion at Wysockiego 26 in Targówek, Warsaw.",
+    "ludzie": [
+     {
+      "kto": "Lech Grobelny",
+      "rola": "ciało znalezione w pawilonie (2.04.2007)",
+      "wiki": "https://pl.wikipedia.org/wiki/Lech_Grobelny"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Lech Grobelny",
+      "url": "https://pl.wikipedia.org/wiki/Lech_Grobelny"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.074992,
+     52.28191
+    ]
+   },
+   "properties": {
+    "id": "zbor-wyborna-20",
+    "nazwa": "Sala zboru w budynku WSTS przy ul. Wybornej 20",
+    "name_en": "Congregation hall at 20 Wyborna Street",
+    "typ": "miejsce",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Wyborna 20",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Nabożeństwa zboru prowadzone były w sali zlokalizowanej w budynku Wyższej Szkoły Teologiczno-Społecznej przy ul. Wybornej 20."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Services of the evangelical congregation were held in a hall in the building of the Higher School of Theology and Social Studies at Wyborna 20.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zbór Kościoła Chrześcijan Wiary Ewangelicznej „Spichlerz” w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Zbór_Kościoła_Chrześcijan_Wiary_Ewangelicznej_„Spichlerz”_w_Warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Miasta nie podano; przyjęto Warszawę z nagłówka (Targówek). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.907892,
+     52.20747
+    ]
+   },
+   "properties": {
+    "id": "kino-ada-chroscickiego-14",
+    "nazwa": "Kino Ada przy ul. Księdza Juliana Chrościckiego 14",
+    "name_en": "Ada cinema at 14 Father Julian Chrościcki Street",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Księdza Juliana Chrościckiego 14",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Kino Ada – znajdowało się w warszawskich Włochach przy ul. Chrościckiego 14."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Ada cinema was located at Chrościckiego 14 in Włochy, Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Kina w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Kina_w_Warszawie"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.89351,
+     52.210889
+    ]
+   },
+   "properties": {
+    "id": "koszary-jrg-2-chroscickiego-76",
+    "nazwa": "Koszary Jednostki Ratowniczo-Gaśniczej nr 2 przy ul. Chrościckiego 76",
+    "name_en": "Barracks of Rescue and Fire Unit No. 2 at 76 Chrościckiego Street",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Księdza Juliana Chrościckiego 76",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "istnieje": true,
+    "fakty": [
+     "Jednostka Ratowniczo-Gaśnicza nr 2 przenosi się do nowo wybudowanych koszar przy ul. Chrościckiego 76."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Rescue and Fire Unit No. 2 moved into newly built barracks at Chrościckiego 76 in Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Warszawska Straż Ogniowa",
+      "url": "https://pl.wikipedia.org/wiki/Warszawska_Straż_Ogniowa"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.96447,
+     52.18865
+    ]
+   },
+   "properties": {
+    "id": "grunty-radarowa-1",
+    "nazwa": "Grunty przy ul. Radarowej 1",
+    "name_en": "Land at 1 Radarowa Street",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Radarowa 1",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Miasto Warszawa częściowo wypowiedziało klubowi (Okęcie Warszawa) prawo użytkowania gruntów przy ul. Radarowej 1 z powodu wykorzystywania ich bez zgody miasta na cele komercyjne."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The City of Warsaw partly terminated the football club Okęcie Warszawa's right to use land at Radarowa 1, because the land was used for commercial purposes without the city's consent.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Okęcie Warszawa (piłka nożna)",
+      "url": "https://pl.wikipedia.org/wiki/Okęcie_Warszawa_(piłka_nożna)"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Początek zdania w paczce urwany („Warszawy częściowo wypowiedział”), podmiot uzupełniony z kontekstu. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.887744,
+     52.187323
+    ]
+   },
+   "properties": {
+    "id": "ambasada-wloch-michala-drzymaly-1",
+    "nazwa": "Budynek ambasady przy ul. Michała Drzymały 1",
+    "name_en": "Embassy building at 1 Michała Drzymały Street",
+    "typ": "budynek",
+    "dzielnica": "Ursus",
+    "adres_dzis": "Michała Drzymały 1",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1926",
+    "fakty": [
+     "Ambasada Włoch w Polsce: Mickiewicza 18, ul. Drzymały 1 (1926)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Italian embassy in Poland was at Drzymały 1 from 1926, after Mickiewicza 18.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Włoch w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Włoch_w_Polsce"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie w paczce urwane („ul.”), pominięty ciąg dalszy. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.00796,
+     52.334548
+    ]
+   },
+   "properties": {
+    "id": "zaklad-karny-ciupagi-1b",
+    "nazwa": "Zakład Karny w Warszawie-Białołęce (ul. Ciupagi 1b)",
+    "name_en": "Prison in Warsaw-Białołęka at 1b Ciupagi Street",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Ciupagi 1b",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "istnieje": true,
+    "fakty": [
+     "Następnie został przewieziony do Zakładu Karnego w Warszawie-Białołęce przy ul. Ciupagi 1b."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Sławomir Sikora was transferred to the prison in Warsaw-Białołęka at Ciupagi 1b.",
+    "ludzie": [
+     {
+      "kto": "Sławomir Sikora (ur. 1964)",
+      "rola": "przewieziony do zakładu karnego",
+      "wiki": "https://pl.wikipedia.org/wiki/Sławomir_Sikora_(ur._1964)"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Sławomir Sikora (ur. 1964)",
+      "url": "https://pl.wikipedia.org/wiki/Sławomir_Sikora_(ur._1964)"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.068498,
+     52.133398
+    ]
+   },
+   "properties": {
+    "id": "budynek-bronikowskiego-55",
+    "nazwa": "Budynek przy ul. Ksawerego Bronikowskiego 55",
+    "name_en": "Building at 55 Ksawery Bronikowski Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Ksawerego Bronikowskiego 55",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Początkowo spółka urzędowała przy ul. Bronikowskiego 55, a jej ostatnią siedzibą był budynek przy al. (dalsza część zdania urwana w paczce)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The developer Edbud first had its office at Bronikowskiego 55 in Ursynów; its last seat was another building.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Edbud",
+      "url": "https://pl.wikipedia.org/wiki/Edbud"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Zdanie dotyczy firmy (siedziby z historią), nie budynku mieszkalnego. Zdanie urwane. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.953272,
+     52.188995
+    ]
+   },
+   "properties": {
+    "id": "gimnazjum-startowa-9",
+    "nazwa": "Gimnazjum przy ul. Startowej 9",
+    "name_en": "Lower secondary school at 9 Startowa Street",
+    "typ": "budynek",
+    "dzielnica": "Włochy",
+    "adres_dzis": "Startowa 9",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "od 2007",
+    "istnieje": true,
+    "fakty": [
+     "W 2007 powstało gimnazjum przy ul. Startowej 9."
+    ],
+    "ciekawostki": [],
+    "summary_en": "A lower secondary school was established at Startowa 9 in 2007 as part of the Bednarska school complex.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Zespół Społecznych Szkół Ogólnokształcących Bednarska",
+      "url": "https://pl.wikipedia.org/wiki/Zespół_Społecznych_Szkół_Ogólnokształcących_Bednarska"
+     }
+    ],
+    "pewnosc": "srednia",
+    "uwagi": "Miasta nie podano; przyjęto Warszawę z nagłówka (Włochy). CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.044073,
+     52.278628
+    ]
+   },
+   "properties": {
+    "id": "cmentarz-brodnowski",
+    "nazwa": "Cmentarz Bródnowski",
+    "name_en": "Bródno Cemetery",
+    "typ": "cmentarz",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Świętego Wincentego 83",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "istnieje": true,
+    "fakty": [
+     "Cmentarz Bródnowski lub cmentarz Bródzieński, zwyczajowo cmentarz na Bródnie – zabytkowy cmentarz znajdujący się w Warszawie przy ul. św. Wincentego 83."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Bródno Cemetery, also called Bródzieński, is a historic cemetery at św. Wincentego 83 in Warsaw.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Cmentarz Bródnowski",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_Bródnowski"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.979894,
+     52.305731
+    ]
+   },
+   "properties": {
+    "id": "portowa-4-skladnica-broni",
+    "nazwa": "Lokal przy ul. Portowej 4",
+    "name_en": "Premises at 4 Portowa Street",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Portowa 4",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1918",
+    "fakty": [
+     "W 1918 w lokalu przy Portowej 4 urządzono składnicę broni kupowanej przez różne osoby, w tym przez Marię.",
+     "Józef Trzeciak zmarł w mieszkaniu swojej siostry przy ul. Portowej 4."
+    ],
+    "ciekawostki": [],
+    "summary_en": "In 1918 a weapons depot for arms bought by various people, including Maria Trzeciak, was set up in premises at Portowa 4.",
+    "ludzie": [
+     {
+      "kto": "Maria Trzeciak",
+      "rola": "kupowała broń, składnica w lokalu przy Portowej 4 (1918)",
+      "wiki": "https://pl.wikipedia.org/wiki/Maria_Trzeciak"
+     },
+     {
+      "kto": "Józef Trzeciak",
+      "rola": "zmarł w mieszkaniu siostry przy Portowej 4",
+      "wiki": "https://pl.wikipedia.org/wiki/Józef_Trzeciak"
+     }
+    ],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Maria Trzeciak",
+      "url": "https://pl.wikipedia.org/wiki/Maria_Trzeciak"
+     },
+     {
+      "tytul": "Wikipedia: Józef Trzeciak",
+      "url": "https://pl.wikipedia.org/wiki/Józef_Trzeciak"
+     }
+    ],
+    "pewnosc": "niska",
+    "uwagi": "Miasta nie podano w zdaniach; przyjęto Warszawę z nagłówka (Białołęka). Do sprawdzenia. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.028432,
+     52.137647
+    ]
+   },
+   "properties": {
+    "id": "ambasada-libii-zolny-26",
+    "nazwa": "Budynek ambasady przy ul. Żołny 26",
+    "name_en": "Embassy building at 26 Żołny Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Żołny 26",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1978–2006, od 2009",
+    "istnieje": true,
+    "fakty": [
+     "Ambasada Libii w Polsce: Krynicznej 2 (1978–2006), obecnie przy ul. Żołny 26/26b (2009–)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The Libyan embassy was at Krynicznej 2 from 1978 to 2006 and has been at Żołny 26/26b since 2009.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Ambasada Libii w Polsce",
+      "url": "https://pl.wikipedia.org/wiki/Ambasada_Libii_w_Polsce"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.051854,
+     52.141572
+    ]
+   },
+   "properties": {
+    "id": "studio-ursynat-meander-15",
+    "nazwa": "Lokal Telewizji Ursynat przy ul. Meander 15",
+    "name_en": "Ursynat TV premises at 15 Meander Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Meander 15",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "brak dat w tekście",
+    "fakty": [
+     "Telewizja Ursynat przeniosła się do lokalu przy ul. Meander 15, programy tworzono także w studiu przy ul. (dalsza część zdania urwana w paczce)."
+    ],
+    "ciekawostki": [],
+    "summary_en": "Telewizja Ursynat moved into premises at Meander 15 in Ursynów.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Studio Ursynat",
+      "url": "https://pl.wikipedia.org/wiki/Studio_Ursynat"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Zdanie urwane na końcu. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.034658,
+     52.162787
+    ]
+   },
+   "properties": {
+    "id": "studio-muza-okaryny-1",
+    "nazwa": "Studio Polskich Nagrań „Muza” przy ul. Okaryny 1",
+    "name_en": "Polish Recordings 'Muza' studio at 1 Okaryny Street",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Okaryny 1",
+    "adres_historyczny": null,
+    "lokalizacja": "dokladna",
+    "okres": "1981",
+    "istnieje": true,
+    "fakty": [
+     "Zespół dokonał nagrań w studiu Polskich Nagrań Muza przy ul. Okaryny 1, w ciągu dwóch sesji w lutym, maju i czerwcu 1981 roku."
+    ],
+    "ciekawostki": [],
+    "summary_en": "The band Perfect recorded in two sessions at the Polskie Nagrania Muza studio at Okaryny 1 in February, May and June 1981.",
+    "ludzie": [],
+    "dawne_nazwy": [],
+    "zrodla": [
+     {
+      "tytul": "Wikipedia: Perfect (album)",
+      "url": "https://pl.wikipedia.org/wiki/Perfect_(album)"
+     },
+     {
+      "tytul": "Wikipedia: Polskie Nagrania „Muza”",
+      "url": "https://pl.wikipedia.org/wiki/Polskie_Nagrania_„Muza”"
+     }
+    ],
+    "pewnosc": "wysoka",
+    "uwagi": "Drugie zdanie o siedzibie (Ursynów, obecnie) pominięte jako siedziba bez historii. CC BY-SA 4.0",
+    "zrodlo_rekordu": "wikipedia-adresy-dzielnice"
+   }
+  }
+ ]
+}

@@ -29,6 +29,8 @@ export const SOURCE_FILES = [
   new URL("../../docs/historia/dzielnice/wikidata-zabytki-dzielnice.geojson", import.meta.url),
   // Pomniki przyrody, rezerwaty i nazwane obiekty z OSM w dzielnicach poniżej 15 miejsc na km².
   new URL("../../docs/historia/dzielnice/osm-przyroda-dzielnice.geojson", import.meta.url),
+  // Zdania adresowe z Wikipedii ("tu mieszkał") dla dzielnic o małej gęstości.
+  new URL("../../docs/historia/dzielnice/wikipedia-adresy-pozostale-dzielnice.geojson", import.meta.url),
 ];
 
 export async function readSourceFeatures(): Promise<unknown[]> {
