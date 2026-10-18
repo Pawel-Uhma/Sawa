@@ -9,6 +9,10 @@ import { AUDIENCES, FAMILIARITY, MAX_STORY_SEC, STORY_STYLES } from "./route";
 export const SIDES = ["left", "right"] as const;
 export type Side = (typeof SIDES)[number];
 
+/** Language of the story and its voice: the interface's language. */
+export const STORY_LANGS = ["pl", "en"] as const;
+export type StoryLang = (typeof STORY_LANGS)[number];
+
 /** POST /v1/stories body. `targetSec` is how long Sawa may talk before the next place. */
 export const StoryRequestSchema = z.object({
   placeId: z.string().min(1),
@@ -19,6 +23,8 @@ export const StoryRequestSchema = z.object({
   familiarity: z.enum(FAMILIARITY).optional(),
   /** "kids": simpler words, shorter, a question at the end; war told gently. Missing: "adult". */
   audience: z.enum(AUDIENCES).optional(),
+  /** "en": Sawa tells the story and reads it in English. Missing: "pl". */
+  lang: z.enum(STORY_LANGS).optional(),
   /** Missing: the side is unknown (e.g. a place tapped on the map), Sawa does not name it. */
   side: z.enum(SIDES).optional(),
   /** `factId`s of this place the listener already heard; Sawa tells the others first. */

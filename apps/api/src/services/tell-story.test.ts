@@ -150,6 +150,19 @@ describe("createStoryService", () => {
     expect(plain.factIds).toEqual([]);
   });
 
+  it("tells the story in English when the listener uses the app in English", async () => {
+    const placeId = await anyPlace();
+    const llm = fakeLlm();
+    const service = createStoryService({ places, llm });
+    await service.tell({ placeId, targetSec: 40 });
+    await service.tell({ placeId, targetSec: 40, lang: "en" });
+
+    expect(llm.complete).toHaveBeenCalledTimes(2);
+    const [pl, en] = llm.complete.mock.calls.map(([call]) => call);
+    expect(pl?.user).not.toContain("po angielsku");
+    expect(en?.user).toContain("piszesz po angielsku");
+  });
+
   it("asks once for the same place, interests and length band", async () => {
     const placeId = await anyPlace();
     const llm = fakeLlm();

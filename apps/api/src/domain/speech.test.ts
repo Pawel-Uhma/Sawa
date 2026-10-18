@@ -49,3 +49,18 @@ describe("normalizeSpeechText with years", () => {
     );
   });
 });
+
+describe("normalizeSpeechText in English", () => {
+  it("keeps the digits, which the voice reads well in English", () => {
+    expect(normalizeSpeechText("Built  in 1648,\n70 000 people.", "en")).toBe(
+      "Built in 1648, 70 000 people.",
+    );
+  });
+
+  it("chunks without spelling the numbers out", () => {
+    const chunker = createSentenceChunker("en");
+    expect(chunker.push("On the left there is a church built in 1648. ")[0]?.spoken).toBe(
+      "On the left there is a church built in 1648.",
+    );
+  });
+});
