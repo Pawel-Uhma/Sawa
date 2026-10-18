@@ -357,5 +357,93 @@
       "f7ccg5"
     ],
     "contextIds": []
+  },
+  "ogrodowa-67-mural-lityn": {
+    "placeId": "ogrodowa-67-mural-lityn",
+    "text": "Na ścianie domu przy ulicy Ogrodowej 67 w 2021 roku odsłonięto mural poświęcony Janowi Lityńskiemu, upamiętniający tę ważną dla historii postać.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      }
+    ],
+    "factIds": [
+      "1xoylr9"
+    ],
+    "contextIds": []
+  },
+  "g-kapliczka": {
+    "placeId": "g-kapliczka",
+    "text": "Kapliczka",
+    "sources": [],
+    "factIds": [],
+    "contextIds": []
+  },
+  "okopowa-7-7a": {
+    "placeId": "okopowa-7-7a",
+    "text": "Mijamy budynki przy ulicy Okopowej 7 i 7A. Pod numerem 7 stoi dom zbudowany w 1949 roku, a tuż obok, pod numerem 7A, od 1959 roku stoi drugi budynek, w którym dziś działa Przedszkole numer 133.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "sonarhome.pl: ul. Okopowa 7, Warszawa",
+        "url": "https://sonarhome.pl/ceny-mieszkan/warszawa/wola/ul-okopowa/7"
+      },
+      {
+        "id": "s2",
+        "title": "sonarhome.pl: ul. Okopowa 7A, Warszawa",
+        "url": "https://sonarhome.pl/ceny-mieszkan/warszawa/wola/ul-okopowa/7a"
+      }
+    ],
+    "factIds": [
+      "5iysy0",
+      "115duvu",
+      "1c3g08a"
+    ],
+    "contextIds": []
+  },
+  "ogrodowa-65-kamienica-wegielka": {
+    "placeId": "ogrodowa-65-kamienica-wegielka",
+    "text": "Mijamy kamienicę Węgiełka, która powstała w 1938 roku na miejscu dawnych drewnianych zabudowań. Właściciel znanej warszawskiej firmy przeprowadzkowej Władysław Węgiełek kazał ją postawić, żeby mieć gwarancję kredytową dla swojego biznesu, a naprzeciwko trzymał magazyny i stajnie. Niestety, w 1940 roku Węgiełek z rodziną został aresztowany przez gestapo. On sam zginął w obozie w Mauthausen, jego żona Kazimiera została rozstrzelana w Palmirach, a syn Jerzy zginął w Dachau.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Ogrodowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Ogrodowa_w_Warszawie"
+      },
+      {
+        "id": "s3",
+        "title": "warszawa1939.pl: Kamienica W. Węgiełka",
+        "url": "https://www.warszawa1939.pl/obiekt/ogrodowa-65"
+      }
+    ],
+    "factIds": [
+      "10spa2",
+      "kjr1uu"
+    ],
+    "contextIds": []
+  },
+  "towarowa": {
+    "placeId": "towarowa",
+    "text": "Mijamy ulicę Towarową. Powstała w miejscu dawnej drogi biegnącej wzdłuż usypanych w 1770 roku okopów Lubomirskiego, czyli wałów obronnych wokół miasta. Nazwę nadano w 1890 roku od pobliskiej stacji towarowej Kolei Warszawsko-Wiedeńskiej. Do lat 50. XX wieku wzdłuż ulicy ciągnęły się bocznice kolejowe i magazyny, które nazywano Syberią. Z tą ulicą mocno związany był poeta Konstanty Ildefons Gałczyński, który w 1929 roku napisał wiersz pod tytułem Ulica Towarowa. Poeta mieszkał w nieistniejącej już kamienicy, a dziś w tym miejscu stoi kamień pamiątkowy.",
+    "sources": [
+      {
+        "id": "s1",
+        "title": "Wikipedia: Ulica Towarowa w Warszawie",
+        "url": "https://pl.wikipedia.org/wiki/Ulica_Towarowa_w_Warszawie"
+      },
+      {
+        "id": "s3",
+        "title": "Wikipedia pl: Okopy Lubomirskiego",
+        "url": "https://pl.wikipedia.org/wiki/Okopy_Lubomirskiego"
+      }
+    ],
+    "factIds": [
+      "459j13",
+      "18unnjm",
+      "19kng1g",
+      "j4gin"
+    ],
+    "contextIds": []
   }
 }
