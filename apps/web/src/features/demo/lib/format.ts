@@ -25,3 +25,13 @@ export function formatWhen(at: number, now = Date.now(), lang: Lang = "pl"): str
   const today = lang === "en" ? "today" : "dziś";
   return sameDay ? `${today}, ${clock.format(date)}` : `${day.format(date)}, ${clock.format(date)}`;
 }
+
+/** „1 miejsce”, „3 miejsca”, „40 miejsc” („1 place”, „40 places”). */
+export function placesLabel(n: number, lang: Lang = "pl"): string {
+  if (lang === "en") return `${n} ${n === 1 ? "place" : "places"}`;
+  const tens = n % 100;
+  const ones = n % 10;
+  if (n === 1) return "1 miejsce";
+  if (ones >= 2 && ones <= 4 && (tens < 12 || tens > 14)) return `${n} miejsca`;
+  return `${n} miejsc`;
+}

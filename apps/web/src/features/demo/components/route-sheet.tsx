@@ -9,9 +9,8 @@ import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
 import { rubberband, useVerticalDrag } from "../lib/gesture";
 import type { MockStop } from "../lib/mock-data";
 import { backTarget } from "../lib/podcast";
-import { dueIndex as placeAt, type RideClock, storyStartSec } from "../lib/ride-clock";
+import { type RideClock, storyStartSec } from "../lib/ride-clock";
 import type { StoryPlayer } from "../lib/story-player";
-import { claimVoice, ROUTE_VOICE } from "../lib/voice";
 import { RoutesIcon } from "./icons";
 import { PodcastDock, PodcastHeader, usePodcast } from "./podcast-controls";
 import { RouteLive } from "./route-live";
@@ -34,9 +33,9 @@ type RouteSheetProps = {
   onActiveChange: (index: number) => void;
   /** Przejście do miejsca z przycisków: zegar jazdy staje przy nim, opowieść gra od początku. */
   onPlayStop: (index: number) => void;
-  /** Zegar jazdy: który punkt już powinien mieć opowieść, ile trwa jazda i przeskok suwakiem. */
-  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "held" | "seekTo">;
-  /** Długość przejażdżki z planera (s), zakres suwaka. */
+  /** Zegar jazdy: który punkt już powinien mieć opowieść i ile trwa jazda. */
+  clock: Pick<RideClock, "dueIndex" | "waitSec" | "rideSec" | "held">;
+  /** Długość przejażdżki z planera (s): z niej godzina dojazdu. */
   totalSec: number;
   onBack: () => void;
   isDesktop: boolean;
@@ -50,7 +49,6 @@ export function RouteSheet(props: RouteSheetProps) {
   const { setIsPlaying, rewind, restart, more } = player;
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
-  const { seekTo } = clock;
 
   // Po końcu opowieści Sawa czeka, aż zbliżysz się do następnego punktu (zegar jazdy, do czasu
   // lokalizacji). Gdy opowieść się przeciągnęła, od razu bierze punkt, przy którym już jesteś.
@@ -87,20 +85,6 @@ export function RouteSheet(props: RouteSheetProps) {
   const goNext = useCallback(() => {
     if (hasNext) onPlayStop(activeIndex + 1);
   }, [hasNext, activeIndex, onPlayStop]);
-  // Suwak przesuwa zegar jazdy; inne miejsce pod suwakiem znaczy nową opowieść od początku.
-  const seek = useCallback(
-    (sec: number) => {
-      seekTo(sec);
-      const index = placeAt(stops, sec);
-      if (index === activeIndex) return;
-      claimVoice(ROUTE_VOICE);
-      rewind();
-      setIsPlaying(true);
-      onActiveChange(index);
-    },
-    [seekTo, stops, activeIndex, rewind, setIsPlaying, onActiveChange],
-  );
-
   // Klawiatura na desktopie: spacja wstrzymuje, strzałki przechodzą między miejscami.
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -119,7 +103,7 @@ export function RouteSheet(props: RouteSheetProps) {
     return () => window.removeEventListener("keydown", onKey);
   }, [togglePlay, goBack, goNext]);
 
-  // Suwak obejmuje całą jazdę, a co najmniej start ostatniej opowieści
+  // Jazda trwa co najmniej do startu ostatniej opowieści
   const last = stops[stops.length - 1];
   const totalSec = Math.max(props.totalSec, last ? storyStartSec(last) + 60 : 0);
   const headerRef = useRef<HTMLDivElement>(null);
@@ -164,12 +148,13 @@ export function RouteSheet(props: RouteSheetProps) {
   const dock = (
     <PodcastDock
       podcast={podcast}
+      progress={progress}
       onToggle={togglePlay}
       onStop={() => restart(false)}
       onBack={goBack}
       onNext={goNext}
       onMore={more}
-      onSeek={seek}
+      onJump={onPlayStop}
     />
   );
 
