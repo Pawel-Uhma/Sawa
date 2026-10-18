@@ -18,7 +18,7 @@ Na pitchu ok. 100 telefonów z jednego Wi-Fi (jedno IP). Bez trybu demo każdy t
 | Limit `/v1/stories*` | 20 000 / 10 min na IP | 300 / 10 min |
 | Baza, ZTM, OSRM | na żywo (baza z cache #112) | na żywo |
 
-`/health` zwraca `demoMode`. Web: `NEXT_PUBLIC_VOICE=1` na Vercelu włącza głos domyślnie (`?voice=0` wyłącza), ma sens tylko przy `replay`.
+`/health` zwraca `demoMode`. Web: głos jest domyślnie włączony, `?voice=0` w adresie go wyłącza.
 
 ## Jak nagrać
 

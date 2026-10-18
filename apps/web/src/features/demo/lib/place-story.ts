@@ -72,7 +72,7 @@ export function usePlaceStory(placeId: string, listener: Listener) {
 
   useEffect(() => {
     if (state !== "playing") return;
-    // Bez `?voice=1` albo gdy głos padł, licznik z tekstu.
+    // Z `?voice=0` albo gdy głos padł, licznik z tekstu.
     const audio = voiceFailed || !clip?.audioUrl ? null : audioRef.current;
     // Bez głosu licznik czeka na cały tekst, bo dopiero on mówi, ile czekać.
     if (!audio && !live.done) return;
