@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><title>Ikona budynku</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;padding:28px;background:#eef3ef;font-family:"Plus Jakarta Sans",sans-serif;color:#102b2a;width:1180px}
+h1{font-size:22px;margin:0 0 4px}p.sub{margin:0 0 20px;color:#5b6b69;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.card{background:#fff;border-radius:18px;padding:16px 14px;text-align:center;box-shadow:0 1px 3px rgba(16,43,42,.08)}
+.card.now{background:#f6f7f6;outline:2px dashed #c9d2d0}
+.big{width:120px;height:120px}
+.tag{font-weight:700;font-size:15px;margin:6px 0 2px}.desc{font-size:12px;color:#5b6b69;min-height:48px}
+.map{margin-top:10px;height:92px;border-radius:12px;background:#dfe8e2 linear-gradient(115deg,transparent 46%,#fff 46%,#fff 54%,transparent 54%);position:relative}
+.map svg{position:absolute;width:30px;height:30px}
+.row{display:flex;justify-content:center;gap:6px;margin-top:10px;align-items:center}
+.row svg{width:30px;height:30px}.row .sep{width:1px;height:22px;background:#d5dcda;margin:0 2px}
+.small{font-size:11px;color:#8a9795;margin-top:4px}
+</style></head><body>
+<h1>Ikona „budynek” — 5 propozycji</h1>
+<p class="sub">Styl „Naklejka” jak na mapie (glif 24 × 24, biała obwódka, cień, kolor grupy Mieszkać #4f6d9a). Pod spodem: na mapie i obok sąsiadów z grupy (kamienica · pałac · dwór · blok).</p>
+<div class="grid" id="g"></div>
+<script>
+const C="#4f6d9a";
+const N={
+ tenement:"M5 21V6l2-3h10l2 3v15h-5v-4h-4v4Z M8 7.5h2v2.5H8Z M14 7.5h2v2.5h-2Z M8 12h2v2.5H8Z M14 12h2v2.5h-2Z",
+ palace:"M1.5 21v-9h3.5V9.5L12 4l7 5.5V12h3.5v9Z M12 7.4a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8Z M4 14h2v3H4Z M18 14h2v3h-2Z M8 13h2v3H8Z M14 13h2v3h-2Z M10.6 16.5h2.8V21h-2.8Z",
+ manor:"M1.5 12.5 12 5l10.5 7.5H20V21H4v-8.5Z M6.5 14.5h2.5V17H6.5Z M15 14.5h2.5V17H15Z M10.6 15h2.8v6h-2.8Z",
+ housing:"M6 21V2.5h12V21Z M8 4.5h3v2H8Z M13 4.5h3v2h-3Z M8 8.5h3v2H8Z M13 8.5h3v2h-3Z M8 12.5h3v2H8Z M13 12.5h3v2h-3Z M10.5 17h3v4h-3Z"};
+const V=[
+ {k:"Obecna",d:"Domek ze spadzistym dachem. Myli się z dworem i wygląda jak „dom jednorodzinny”.",now:1,
+  p:"M4.5 21V8l7.5-5 7.5 5v13h-5.5v-5h-4v5Z M8 9.5h2.5v2.5H8Z M13.5 9.5H16v2.5h-2.5Z"},
+ {k:"A · Gmach",d:"Płaski dach z gzymsem, rząd okien, drzwi pośrodku. Miejski, neutralny.",
+  p:"M2 4.5h20V7H2Z M3.5 8.5h17V21h-6v-4.5h-5V21h-6Z M5.5 10.5h2V13h-2Z M11 10.5h2V13h-2Z M16.5 10.5h2V13h-2Z M5.5 15h2v3h-2Z M16.5 15h2v3h-2Z"},
+ {k:"B · Dwie bryły",d:"Wyższy i niższy budynek obok siebie. Czyta się jak „zabudowa”, nie jeden dom.",
+  p:"M3 21V3h9.5v18Z M13.5 21V9.5H21V21Z M5.3 5.5h1.8v2H5.3Z M8.6 5.5h1.8v2H8.6Z M5.3 9.5h1.8v2H5.3Z M8.6 9.5h1.8v2H8.6Z M5.3 13.5h1.8v2H5.3Z M8.6 13.5h1.8v2H8.6Z M6.8 17.5h2.4V21H6.8Z M15.4 12h1.5v2h-1.5Z M17.9 12h1.5v2h-1.5Z M15.4 16h1.5v2h-1.5Z M17.9 16h1.5v2h-1.5Z"},
+ {k:"C · Brama",d:"Fasada z dużą łukową bramą. Warszawski motyw przejazdu na podwórko.",
+  p:"M4 21V4.5h16V21h-4.5v-4a3.5 3.5 0 0 0-7 0v4Z M6.5 7h2.5v3H6.5Z M10.75 7h2.5v3h-2.5Z M15 7h2.5v3H15Z M6.5 12h2.2v2.5H6.5Z M15.3 12h2.2v2.5h-2.2Z"},
+ {k:"D · Bryła 3D",d:"Sześcian w rzucie izometrycznym, ściany rozdzielone obwódką. Najprostszy, „obiekt”.",
+  p:"M12 2.6 20.2 7.1 12 11.6 3.8 7.1Z M3.2 8.3 11.4 12.8V21.4L3.2 16.9Z M12.6 12.8 20.8 8.3v8.6l-8.2 4.5Z M5.6 12.2l1.8 1v2.2l-1.8-1Z M8.4 13.7l1.8 1v2.2l-1.8-1Z"},
+ {k:"E · Narożnik z wieżyczką",d:"Budynek z kopułką na rogu, jak przedwojenne narożne kamienice.",
+  p:"M3 21V9h11.5v-.5a3 3 0 0 1 2.5-2.96V5.4h1v.14a3 3 0 0 1 2.5 2.96V21Z M17.05 2.3h.9v2.6h-.9Z M5.3 11.5h2.4V14H5.3Z M9.6 11.5H12V14H9.6Z M5.3 16h2.4v2.5H5.3Z M9.6 16.5H12V21H9.6Z M16.5 11h2v3h-2Z M16.5 16h2v3h-2Z"}];
+const svg=(p,c=C)=>`<svg viewBox="-2 -2 28 28"><defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy=".9" stdDeviation=".7" flood-color="rgb(16,43,42)" flood-opacity=".3"/></filter></defs><path d="${p}" fill="#fff" stroke="#fff" stroke-width="2.86" stroke-linejoin="round" fill-rule="evenodd" filter="url(#s)"/><path d="${p}" fill="${c}" fill-rule="evenodd"/></svg>`;
+document.getElementById("g").innerHTML=V.map(v=>`<div class="card${v.now?" now":""}">
+<div class="big">${svg(v.p)}</div><div class="tag">${v.k}</div><div class="desc">${v.d}</div>
+<div class="map"><span style="position:absolute;left:18px;top:14px">${svg(v.p)}</span><span style="position:absolute;right:22px;bottom:12px">${svg(N.tenement)}</span><span style="position:absolute;left:50%;top:48px">${svg(v.p)}</span></div>
+<div class="row">${svg(v.p)}<span class="sep"></span>${svg(N.tenement)}${svg(N.palace)}${svg(N.manor)}${svg(N.housing)}</div>
+</div>`).join("");
+document.querySelectorAll(".big svg").forEach(s=>{s.style.width="120px";s.style.height="120px"});
+</script></body></html>

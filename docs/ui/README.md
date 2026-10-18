@@ -81,6 +81,7 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 | [1150-…-e-wieczor](propozycje/1150-ekran-glowny-e-wieczor-mobile.png) | E: tryb ciemny, mapa z punktami historii, wybór czasu kółkami jak w minutniku iOS, koralowe „Jedziemy” | ekran główny | |
 | [2240-odtwarzacz-uklad-zestawienie](propozycje/2240-odtwarzacz-uklad-zestawienie.png) | Odtwarzacz na trasie: obecny i 3 warianty (A zwarty, B napisy na górze ze sterowaniem w doku, C karta miejsca ze zdjęciem i suwakiem na odcinki), HTML w `propozycje/html/odtwarzacz-uklad.html` | odtwarzacz | |
 | [0850-punkty-trasy-00-zestawienie](propozycje/0850-punkty-trasy-00-zestawienie.png) | Punkty trasy z glifem podrodzaju zamiast czarnych numerków: A moneta z numerkiem w rogu, B kolorowy medal, C pinezka, D pigułka numer + glif (aktywna z nazwą), E same naklejki bez numerów; HTML w `propozycje/html/punkty-trasy.html` | mapa, trasa | |
+| [0900-punkty-trasy-2-zestawienie](propozycje/0900-punkty-trasy-2-zestawienie.png) | Runda 2 (połączenie B i E z numerami): F medal z plakietką, G naklejka z numerem, H medal z zakładką, I kafelek numer + glif, J naklejka na krążku; aktywny punkt z nazwą; HTML w `propozycje/html/punkty-trasy-2.html` | mapa, trasa | |
 
 ## Źródła makiet
 

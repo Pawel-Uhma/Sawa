@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Punkty trasy 2</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  html, body { width: auto; height: auto; overflow: auto; background: #F4F6F5; }
+  .siatka { display: flex; gap: 24px; padding: 28px; width: max-content; }
+  .wariant { width: 340px; }
+  .naglowek { height: 104px; }
+  .naglowek h2 { font-size: 19px; font-weight: 800; letter-spacing: -.02em; }
+  .naglowek h2 span { color: var(--koral); margin-right: 6px; }
+  .naglowek p { font-size: 13px; color: var(--tekst-2); margin-top: 4px; line-height: 1.4; }
+  .ramka { position: relative; width: 340px; height: 560px; border-radius: 28px; overflow: hidden;
+    box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 12px 32px rgba(16,43,42,.12); background: #EEF3F0; }
+  .ramka .mapa { position: absolute; inset: 0; }
+  .ja { width: 16px; height: 16px; border-radius: 50%; background: #2563eb; border: 3px solid #fff; box-shadow: 0 0 0 6px rgba(37,99,235,.18); }
+  .podpis { position: absolute; left: 14px; top: 14px; font-size: 11.5px; font-weight: 700; color: var(--tekst-2);
+    background: rgba(255,255,255,.88); padding: 3px 9px; border-radius: 10px; }
+
+  /* Punkt trasy: wspólne */
+  .pkt { display: grid; place-items: center; font-weight: 800; line-height: 1; }
+  .pkt svg { display: block; }
+  .nr { position: absolute; min-width: 17px; height: 17px; padding: 0 4px; border-radius: 9px; font-size: 10.5px;
+    display: grid; place-items: center; background: var(--tekst); color: #fff; border: 2px solid #fff; }
+  .medal { width: 30px; height: 30px; border-radius: 50%; background: var(--k); border: 2.5px solid #fff; box-shadow: 0 2px 6px rgba(16,43,42,.3); }
+  .akt.medal { width: 40px; height: 40px; box-shadow: 0 0 0 5px rgba(23,112,111,.25), 0 3px 10px rgba(16,43,42,.3); }
+  .etyk { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin-top: 6px; white-space: nowrap; font-size: 12px; font-weight: 800;
+    color: #fff; background: var(--glebia); padding: 3px 9px; border-radius: 10px; box-shadow: 0 2px 6px rgba(16,43,42,.25); }
+
+  /* F: medal, numer w ciemnej plakietce w rogu */
+  .f .nr { top: -7px; right: -8px; }
+  .f.akt .nr { background: var(--glebia); }
+
+  /* G: naklejka (glif z obwódką), numer w kółku w kolorze grupy pod glifem */
+  .g { width: 32px; height: 32px; }
+  .g .nr { bottom: -6px; right: -7px; background: var(--k); }
+  .g.akt::before { content: ''; position: absolute; inset: -8px; border-radius: 50%; background: rgba(23,112,111,.16); border: 2px solid rgba(23,112,111,.45); }
+
+  /* H: medal z numerem w białej zakładce u góry */
+  .h .nr { top: -11px; left: 50%; transform: translateX(-50%); background: #fff; color: var(--k); border: 0; box-shadow: 0 1px 3px rgba(16,43,42,.3); }
+  .h.akt .nr { top: -12px; font-size: 11.5px; height: 19px; min-width: 19px; border-radius: 10px; }
+
+  /* I: zaokrąglony kwadrat w kolorze grupy, numer z boku w tym samym kształcie */
+  .i { display: flex; align-items: center; width: max-content; height: 28px; border-radius: 9px; background: var(--k); border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(16,43,42,.3); padding: 0 6px 0 5px; gap: 4px; color: #fff; font-size: 12px; }
+  .i .sep { width: 1px; height: 14px; background: rgba(255,255,255,.45); }
+  .i.akt { height: 36px; border-radius: 11px; padding: 0 9px 0 7px; font-size: 14px; box-shadow: 0 0 0 4px rgba(23,112,111,.25), 0 3px 10px rgba(16,43,42,.3); }
+
+  /* J: naklejka na jasnym krążku w odcieniu grupy, numer w rogu */
+  .j { width: 32px; height: 32px; border-radius: 50%; background: var(--t); border: 2px solid #fff; box-shadow: 0 2px 6px rgba(16,43,42,.25); }
+  .j .nr { top: -7px; right: -8px; }
+  .j.akt { width: 42px; height: 42px; box-shadow: 0 0 0 5px rgba(23,112,111,.22), 0 3px 10px rgba(16,43,42,.3); }
+  .j.akt .nr { background: var(--glebia); }
+</style></head>
+<body>
+<div class="siatka" id="siatka"></div>
+<script>
+// Glify i kolory grup jak w docs/ui/ikony-mapy/znaczniki (PLACE_GROUP_COLORS).
+const RODZ = {
+  tenement: { k: '#4f6d9a', g: 'M5 21V6l2-3h10l2 3v15h-5v-4h-4v4Z M8 7.5h2v2.5H8Z M14 7.5h2v2.5h-2Z M8 12h2v2.5H8Z M14 12h2v2.5h-2Z' },
+  church:   { k: '#8e4585', g: 'M10.4 2h3.2v5h5v3.2h-5V22h-3.2V10.2h-5V7h5Z' },
+  monument: { k: '#b5543c', g: 'M10 4.5 12 2l2 2.5V16h-4Z M6.5 17h11v4h-11Z' },
+  mural:    { k: '#d4902a', g: 'M12 2.5C9 7 5.8 10.6 5.8 14.6a6.2 6.2 0 0 0 12.4 0c0-4-3.2-7.6-6.2-12.1Z' },
+  museum:   { k: '#2b7c8c', g: 'M2.5 3.5h19v17h-19Z M5 6v12h14V6Z M6.5 16.5l4-5.5 3 3.8 2-2.3 2 4Z M15.5 7.2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z' },
+  park:     { k: '#3f7d5a', g: 'M12 2a6 6 0 0 1 5.7 7.9A4.6 4.6 0 0 1 15.2 18H13.2v4h-2.4v-4H8.8A4.6 4.6 0 0 1 6.3 9.9 6 6 0 0 1 12 2Z' },
+};
+const MIEJSCA = [
+  ['tenement', 'Kamienica Hoserów', .08],
+  ['church', 'Kościół św. Klemensa', .22],
+  ['monument', 'Pomnik Pamięci Woli', .4],
+  ['mural', 'Mural „Wolska 1944”', .56],
+  ['museum', 'Muzeum Woli', .72],
+  ['park', 'Park Sowińskiego', .9],
+];
+const AKTYWNY = 2; // trzeci punkt: o nim teraz opowieść
+
+// Pętla po Woli wraca na siebie: bierzemy jej pierwsze 3 km i stawiamy punkty co ok. 450 m drogi
+const km = (a, b) => Math.hypot((a[0] - b[0]) * 68.2, (a[1] - b[1]) * 111.2);
+const dl = [0];
+for (let i = 1; i < SAWA.wola.length; i++) dl.push(dl[i - 1] + km(SAWA.wola[i - 1], SAWA.wola[i]));
+const koniec = dl.findIndex(d => d > 3.8);
+SAWA.odcinek = SAWA.wola.slice(0, koniec);
+const punkty = [];
+for (let i = 0, cel = 0.25; i < koniec && punkty.length < MIEJSCA.length; i++) {
+  const c = SAWA.wola[i];
+  if (dl[i] < cel || punkty.some(p => km(p.c, c) < 0.3)) continue;
+  const [t, n] = MIEJSCA[punkty.length];
+  punkty.push({ t, n, nr: punkty.length + 1, c, ...RODZ[t] });
+  cel = dl[i] + 0.5;
+}
+
+const svg = (g, kolor, px, obrys) => `<svg width="${px}" height="${px}" viewBox="0 0 24 24"><path d="${g}" fill="${kolor}" fill-rule="evenodd"${obrys ? ` stroke="#fff" stroke-width="${obrys}" stroke-linejoin="round" paint-order="stroke"` : ''}/></svg>`;
+const krotka = n => n.replace(/^(Kamienica|Kościół|Pomnik|Mural|Muzeum|Park)\s/, '');
+
+// Jasny odcień koloru grupy na tło krążka
+const odcien = (hex, a) => {
+  const n = parseInt(hex.slice(1), 16), m = c => Math.round(255 - (255 - c) * a);
+  return `rgb(${m(n >> 16)},${m((n >> 8) & 255)},${m(n & 255)})`;
+};
+const etyk = (p, akt) => akt ? `<span class="etyk">${krotka(p.n)}</span>` : '';
+
+const WARIANTY = [
+  {
+    id: 'f', tytul: 'Medal z plakietką',
+    opis: 'B z numerem jak w A: ciemna plakietka w prawym górnym rogu. Aktywny większy, plakietka w Głębi, pod spodem nazwa jak w E.',
+    el: (p, akt) => `<div class="pkt medal f${akt ? ' akt' : ''}" style="--k:${p.k}">${svg(p.g, '#fff', akt ? 22 : 16)}<span class="nr">${p.nr}</span>${etyk(p, akt)}</div>`,
+  },
+  {
+    id: 'g', tytul: 'Naklejka z numerem',
+    opis: 'E z numerem: sam glif z białą obwódką, numer w kółku w kolorze grupy w prawym dolnym rogu. Najlżejszy, najbliżej znaczników miejsc.',
+    el: (p, akt) => `<div class="pkt g${akt ? ' akt' : ''}" style="--k:${p.k}">${svg(p.g, p.k, akt ? 34 : 28, 3.4)}<span class="nr">${p.nr}</span>${etyk(p, akt)}</div>`,
+  },
+  {
+    id: 'h', tytul: 'Medal z zakładką',
+    opis: 'Medal w kolorze grupy, numer na białej zakładce nad nim, w tym samym kolorze. Numer i ikona czytają się jako jeden znak.',
+    el: (p, akt) => `<div class="pkt medal h${akt ? ' akt' : ''}" style="--k:${p.k}">${svg(p.g, '#fff', akt ? 22 : 16)}<span class="nr">${p.nr}</span>${etyk(p, akt)}</div>`,
+  },
+  {
+    id: 'i', tytul: 'Kafelek',
+    opis: 'Zaokrąglony kwadrat w kolorze grupy z numerem i glifem w środku, oddzielonymi kreską. Nie wygląda jak przystanek (kółko), więc nie myli się z wsiadaniem.',
+    el: (p, akt) => `<div class="pkt i${akt ? ' akt' : ''}" style="--k:${p.k}"><span>${p.nr}</span><span class="sep"></span>${svg(p.g, '#fff', akt ? 20 : 15)}${etyk(p, akt)}</div>`,
+  },
+  {
+    id: 'j', tytul: 'Naklejka na krążku',
+    opis: 'Pośrodku między B i E: glif w pełnym kolorze z białą obwódką na jasnym krążku w odcieniu grupy, numer w ciemnej plakietce. Spokojniejszy od B.',
+    el: (p, akt) => `<div class="pkt j${akt ? ' akt' : ''}" style="--t:${odcien(p.k, .22)}">${svg(p.g, p.k, akt ? 28 : 22, 2.6)}<span class="nr">${p.nr}</span>${etyk(p, akt)}</div>`,
+  },
+];
+
+const siatka = document.getElementById('siatka');
+for (const w of WARIANTY) {
+  const d = document.createElement('div'); d.className = 'wariant';
+  d.innerHTML = `<div class="naglowek"><h2><span>${w.id.toUpperCase()}</span>${w.tytul}</h2><p>${w.opis}</p></div>
+    <div class="ramka"><div class="mapa"></div><div class="podpis">opowieść o punkcie ${AKTYWNY + 1}</div></div>`;
+  siatka.appendChild(d);
+  const m = sawaMapa(d.querySelector('.mapa'), { trasa: 'odcinek', kolorTrasy: '#d62828', dopasuj: { top: 80, bottom: 70, left: 50, right: 50 }, ja: false });
+  punkty.forEach((p, i) => {
+    const el = document.createElement('div'); el.innerHTML = w.el(p, i === AKTYWNY);
+    const node = el.firstElementChild; if (i === AKTYWNY) node.style.zIndex = 2;
+    new maplibregl.Marker({ element: node, anchor: w.kotwica || 'center' }).setLngLat(p.c).addTo(m);
+  });
+}
+</script>
+</body></html>
