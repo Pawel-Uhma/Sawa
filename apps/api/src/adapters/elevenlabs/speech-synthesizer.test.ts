@@ -36,6 +36,39 @@ describe("createElevenLabsSynthesizer", () => {
     expect(err).toMatchObject({ code: "UPSTREAM_ERROR", message: expect.stringContaining("401") });
   });
 
+  it("falls back to the second key when the first has no credits, and keeps it", async () => {
+    const keys: (string | null)[] = [];
+    vi.stubGlobal("fetch", async (_url: string, init: RequestInit) => {
+      const key = new Headers(init.headers).get("xi-api-key");
+      keys.push(key);
+      return key === "first"
+        ? new Response('{"detail":"quota_exceeded"}', { status: 401 })
+        : new Response(new Uint8Array([9]));
+    });
+    const both = createElevenLabsSynthesizer({ apiKey: "first", fallbackApiKey: "second" });
+
+    await expect(both.synthesize("Raz")).resolves.toMatchObject({ audio: new Uint8Array([9]) });
+    await both.synthesize("Dwa");
+    expect(keys).toEqual(["first", "second", "second"]);
+  });
+
+  it("does not try the second key for an error about the text", async () => {
+    const fetchMock = vi.fn(async () => new Response("bad text", { status: 400 }));
+    vi.stubGlobal("fetch", fetchMock);
+    const both = createElevenLabsSynthesizer({ apiKey: "first", fallbackApiKey: "second" });
+    await expect(both.synthesize("Cześć")).rejects.toMatchObject({ code: "UPSTREAM_ERROR" });
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+  });
+
+  it("reports the second key's error when both are refused", async () => {
+    vi.stubGlobal("fetch", async () => new Response("invalid_api_key", { status: 401 }));
+    const both = createElevenLabsSynthesizer({ apiKey: "first", fallbackApiKey: "placeholder" });
+    await expect(both.synthesize("Cześć")).rejects.toMatchObject({
+      code: "UPSTREAM_ERROR",
+      message: expect.stringContaining("401"),
+    });
+  });
+
   it("turns a timeout into UPSTREAM_TIMEOUT", async () => {
     vi.stubGlobal("fetch", async () => {
       throw new DOMException("timed out", "TimeoutError");
