@@ -1,8 +1,5 @@
-import type {
-  ExpressionSpecification,
-  Map as MapLibreMap,
-  MapStyleImageMissingEvent,
-} from "maplibre-gl";
+import type { ExpressionSpecification, Map as MapLibreMap } from "maplibre-gl";
+import { appFont, imageCanvas, registerCanvasImages } from "./canvas-images";
 import { MAP_ICON_PIXEL_RATIO, MAP_PALETTES, type MapTheme } from "./map-style";
 
 /**
@@ -20,7 +17,6 @@ const STROKE_WIDTH = 1.5;
 const SHADOW = { offsetY: 3, blur: 10 };
 /** Room around the circle for the shadow. */
 const PADDING = 10;
-const FONT_FALLBACK = "system-ui, sans-serif";
 
 export function clusterBadgeId(theme: MapTheme, count: string): string {
   return `${CLUSTER_BADGE_PREFIX}-${theme}-${count}`;
@@ -50,26 +46,16 @@ function sizeOf(count: string) {
   return SIZES.findLast((size) => value >= size.from) ?? SIZES[0];
 }
 
-/** The app font from next/font (its family name is generated), with a fallback. */
-function fontOf(fontSize: number): string {
-  const family = getComputedStyle(document.body).getPropertyValue("--font-plus").trim();
-  return `800 ${fontSize}px ${family ? `${family}, ` : ""}${FONT_FALLBACK}`;
-}
-
 export function drawClusterBadge(id: string): ImageData | null {
   const badge = parseClusterBadgeId(id);
   if (!badge) return null;
   const { radius, fontSize } = sizeOf(badge.count);
   const sizeCss = 2 * (radius + PADDING);
-  const canvas = document.createElement("canvas");
-  canvas.width = sizeCss * MAP_ICON_PIXEL_RATIO;
-  canvas.height = sizeCss * MAP_ICON_PIXEL_RATIO;
-  const ctx = canvas.getContext("2d");
+  const { canvas, ctx } = imageCanvas(sizeCss);
   if (!ctx) return null;
 
   const palette = MAP_PALETTES[badge.theme];
   const center = sizeCss / 2;
-  ctx.scale(MAP_ICON_PIXEL_RATIO, MAP_ICON_PIXEL_RATIO);
   ctx.beginPath();
   ctx.arc(center, center, radius, 0, 2 * Math.PI);
   ctx.shadowColor = palette.clusterShadow;
@@ -82,7 +68,7 @@ export function drawClusterBadge(id: string): ImageData | null {
   ctx.strokeStyle = palette.clusterStroke;
   ctx.stroke();
 
-  ctx.font = fontOf(fontSize);
+  ctx.font = appFont(800, fontSize);
   if ("letterSpacing" in ctx) ctx.letterSpacing = `${-0.02 * fontSize}px`;
   ctx.fillStyle = palette.clusterText;
   ctx.textAlign = "center";
@@ -93,33 +79,9 @@ export function drawClusterBadge(id: string): ImageData | null {
 }
 
 /**
- * Adds cluster badges to the style when a layer first asks for them. If the app font is
- * not loaded yet, the badges drawn so far are redrawn once it is. Returns the cleanup.
+ * Adds cluster badges to the style when a layer first asks for them, redrawn once the app font
+ * loads. Returns the cleanup.
  */
 export function registerClusterBadges(map: MapLibreMap): () => void {
-  const drawn = new Set<string>();
-  const onMissing = ({ id }: MapStyleImageMissingEvent) => {
-    if (map.hasImage(id)) return;
-    const image = drawClusterBadge(id);
-    if (!image) return;
-    map.addImage(id, image, { pixelRatio: MAP_ICON_PIXEL_RATIO });
-    drawn.add(id);
-  };
-  map.on("styleimagemissing", onMissing);
-
-  let isActive = true;
-  const font = fontOf(SIZES[0].fontSize);
-  if (!document.fonts.check(font)) {
-    document.fonts.load(font).then(() => {
-      if (!isActive) return;
-      for (const id of drawn) {
-        const image = drawClusterBadge(id);
-        if (image && map.hasImage(id)) map.updateImage(id, image);
-      }
-    });
-  }
-  return () => {
-    isActive = false;
-    map.off("styleimagemissing", onMissing);
-  };
+  return registerCanvasImages(map, drawClusterBadge, appFont(800, SIZES[0].fontSize));
 }

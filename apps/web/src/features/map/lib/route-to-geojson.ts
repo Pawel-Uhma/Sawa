@@ -1,4 +1,4 @@
-import { type Leg, type Route, toLngLat } from "@sawa/shared";
+import { type Leg, type Route, type TrackVehiclesResponse, toLngLat } from "@sawa/shared";
 import { boundsOf, type LngLat, type LngLatBounds } from "./bounds";
 import { lineColor } from "./map-style";
 
@@ -27,6 +27,12 @@ export type RouteBoardingFeature = {
     stopName: string;
     /** When the line is boarded, Warsaw time: "14:05", or "ok. 14:05" when estimated. */
     boardAt: string;
+    /** Same, Warsaw time without "ok.", for the ring when it shows no countdown. */
+    clock: string;
+    /** Departure in ms since the epoch, for the countdown. */
+    departAtMs: number;
+    /** Minutes of walking right before boarding (to the first stop or across a transfer). */
+    walkMin: number;
     isTransfer: boolean;
   };
 };
@@ -84,6 +90,37 @@ export function lineIndexes(route: Route): number[] {
   });
 }
 
+/** The whole route of a line ridden on a leg (`LegVehicles.shape`), in the leg's line colour. */
+export type LineShapeFeature = {
+  type: "Feature";
+  geometry: { type: "LineString"; coordinates: LngLat[] };
+  properties: { legIndex: number; line: string; color: string };
+};
+
+/**
+ * Whole routes of the lines on the route, from `POST /v1/vehicles/track`. A line ridden on two
+ * legs in a row is drawn once.
+ */
+export function lineShapesToGeoJson(
+  route: Route,
+  vehicles: TrackVehiclesResponse | undefined,
+): FeatureCollection<LineShapeFeature> {
+  const lines = lineIndexes(route);
+  const seen = new Set<number>();
+  const features: LineShapeFeature[] = [];
+  for (const leg of vehicles?.legs ?? []) {
+    const lineIndex = lines[leg.legIndex] ?? -1;
+    if (!leg.shape || leg.shape.length < 2 || lineIndex < 0 || seen.has(lineIndex)) continue;
+    seen.add(lineIndex);
+    features.push({
+      type: "Feature",
+      geometry: { type: "LineString", coordinates: leg.shape },
+      properties: { legIndex: leg.legIndex, line: leg.line, color: lineColor(lineIndex) },
+    });
+  }
+  return { type: "FeatureCollection", features };
+}
+
 export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeature> {
   const lines = lineIndexes(route);
   return {
@@ -103,6 +140,15 @@ export function routeLegsToGeoJson(route: Route): FeatureCollection<RouteLegFeat
         },
       })),
   };
+}
+
+/** Minutes of the walk legs right before `legIndex`. */
+function walkBefore(legs: readonly Leg[], legIndex: number): number {
+  let minutes = 0;
+  for (let i = legIndex - 1; i >= 0 && legs[i].mode === "walk"; i -= 1) {
+    minutes += legs[i].durationMin;
+  }
+  return minutes;
 }
 
 /** Boarding points: the first stop of the ride and every stop where the line changes. */
@@ -125,6 +171,9 @@ export function routeBoardingsToGeoJson(route: Route): FeatureCollection<RouteBo
           color: lineColor(lines[legIndex]),
           stopName: [leg.fromStop.name, stopPost(leg.fromStop.id)].filter(Boolean).join(" "),
           boardAt: `${leg.realDeparture ? "" : "ok. "}${CLOCK.format(new Date(leg.departAt))}`,
+          clock: CLOCK.format(new Date(leg.departAt)),
+          departAtMs: Date.parse(leg.departAt),
+          walkMin: walkBefore(route.legs, legIndex),
           isTransfer: lines[legIndex] > 0,
         },
       })),

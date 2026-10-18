@@ -1,8 +1,9 @@
-import type { Route } from "@sawa/shared";
+import type { Route, TrackVehiclesResponse } from "@sawa/shared";
 import { describe, expect, it } from "vitest";
 import { lineColor } from "./map-style";
 import {
   lineIndexes,
+  lineShapesToGeoJson,
   routeBoardingsToGeoJson,
   routeBounds,
   routeLegsToGeoJson,
@@ -82,6 +83,39 @@ describe("routeLegsToGeoJson", () => {
   });
 });
 
+describe("lineShapesToGeoJson", () => {
+  const shape: [number, number][] = [
+    [20.9, 52.2],
+    [21.1, 52.3],
+  ];
+  const vehicles = (legs: TrackVehiclesResponse["legs"]): TrackVehiclesResponse => ({
+    generatedAt: "2026-10-17T12:00:00Z",
+    live: true,
+    stale: false,
+    refreshSec: 10,
+    legs,
+    attribution: [],
+  });
+
+  it("draws the whole route of each line in its leg's colour", () => {
+    const { features } = lineShapesToGeoJson(
+      ROUTE,
+      vehicles([
+        { legIndex: 0, line: "10", shape, vehicles: [] },
+        { legIndex: 1, line: "520", shape, vehicles: [] },
+      ]),
+    );
+    expect(features.map((f) => f.properties.color)).toEqual([lineColor(0), lineColor(1)]);
+    expect(features[0]?.geometry.coordinates).toEqual(shape);
+  });
+
+  it("skips legs without a shape and has nothing before the first answer", () => {
+    expect(lineShapesToGeoJson(ROUTE, undefined).features).toEqual([]);
+    const legs = [{ legIndex: 0, line: "10", unknownLeg: true, vehicles: [] }];
+    expect(lineShapesToGeoJson(ROUTE, vehicles(legs)).features).toEqual([]);
+  });
+});
+
 describe("lines and transfers", () => {
   const sameLineAgain = { ...ROUTE.legs[0], departAt: "2026-10-17T14:20:00+02:00" };
   const stayOn = {
@@ -132,6 +166,16 @@ describe("lines and transfers", () => {
       ["a", "14:00"],
       ["b", "ok. 14:10"],
     ]);
+  });
+
+  it("gives each boarding its departure and the walk right before it", () => {
+    const walk = { ...ROUTE.legs[0], line: "", mode: "walk" as const, durationMin: 3.5 };
+    const { features } = routeBoardingsToGeoJson({ ...ROUTE, legs: [walk, ...ROUTE.legs] });
+    expect(features.map((f) => [f.properties.walkMin, f.properties.clock])).toEqual([
+      [3.5, "14:00"],
+      [0, "14:10"],
+    ]);
+    expect(features[0].properties.departAtMs).toBe(Date.parse("2026-10-17T14:00:00+02:00"));
   });
 
   it("adds the ZTM post number to the stop name", () => {

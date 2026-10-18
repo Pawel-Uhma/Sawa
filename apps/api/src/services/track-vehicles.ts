@@ -55,7 +55,11 @@ type LegContext = {
   /** All patterns of the line, this one included. */
   siblings: PatternGeometry[];
   board: PatternStop;
+  /** `LegVehicles.shape`: the pattern's shape, rounded to about a metre. */
+  shape: [number, number][];
 };
+
+const round5 = (v: number) => Math.round(v * 1e5) / 1e5;
 
 /** The pattern a planned leg rides: its line, calling at both stops in this order. */
 function findLeg(network: Network, leg: TrackLeg): LegContext | undefined {
@@ -66,7 +70,11 @@ function findLeg(network: Network, leg: TrackLeg): LegContext | undefined {
     const { stops } = geometry.pattern;
     const from = stops.findIndex((s) => s.stopId === leg.fromStopId);
     if (from < 0 || !stops.slice(from + 1).some((s) => s.stopId === leg.toStopId)) continue;
-    return { geometry, siblings, board: stops[from] as PatternStop };
+    const shape = geometry.pattern.lngLats.map(([lng, lat]): [number, number] => [
+      round5(lng),
+      round5(lat),
+    ]);
+    return { geometry, siblings, board: stops[from] as PatternStop, shape };
   }
   return undefined;
 }
@@ -212,7 +220,12 @@ export function createVehicleTracker(deps: {
         const legIndex = leg.legIndex ?? i;
         const ctx = legContext(transit, leg);
         if (!ctx) return { legIndex, line: leg.line, unknownLeg: true, vehicles: [] };
-        return { legIndex, line: leg.line, vehicles: trackLeg(histories, ctx, leg, nowMs) };
+        return {
+          legIndex,
+          line: leg.line,
+          shape: ctx.shape,
+          vehicles: trackLeg(histories, ctx, leg, nowMs),
+        };
       });
       return {
         generatedAt: new Date(nowMs).toISOString(),

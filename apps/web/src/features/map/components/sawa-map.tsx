@@ -18,6 +18,7 @@ import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import { registerBoardingTimers } from "../lib/boarding-timers";
 import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
@@ -44,6 +45,7 @@ import { routePlacesToGeoJson } from "../lib/route-to-geojson";
 import { isStreetPlace } from "../lib/street-highlight";
 import { selectVisiblePlaces } from "../lib/visible-places";
 import { DestinationLayer } from "./destination-layer";
+import { LineShapesLayer } from "./line-shapes-layer";
 import { LiveVehiclesLayer } from "./live-vehicles-layer";
 import { ParkLayer, type ParkSelection } from "./park-layer";
 import { PlaceSheet, type PlaceSheetPlace } from "./place-sheet";
@@ -234,6 +236,7 @@ export function SawaMap({
           // Place markers are drawn on demand; the map lives as long as this listener.
           registerPlaceStickers(event.target);
           registerClusterBadges(event.target);
+          registerBoardingTimers(event.target);
           loadMapIcons(event.target).then((isOk) => setIcons(isOk ? "ready" : "failed"));
         }}
         onMoveEnd={(event) => setView(viewOf(event.target))}
@@ -258,6 +261,7 @@ export function SawaMap({
         {icons !== "loading" && (
           <StreetLayer selected={selectedStreet} hovered={hoveredStreet} color={palette.street} />
         )}
+        {icons !== "loading" && route && <LineShapesLayer route={route} data={vehicles.data} />}
         {icons !== "loading" && route && (
           <RouteLayer
             route={route}
@@ -269,9 +273,7 @@ export function SawaMap({
             palette={palette}
           />
         )}
-        {isLoaded && route && (
-          <LiveVehiclesLayer data={vehicles.data} route={route} casing={palette.casing} />
-        )}
+        {isLoaded && route && <LiveVehiclesLayer data={vehicles.data} />}
         {destination && <DestinationLayer position={destination} ring={palette.ring} />}
         {user && <UserLayer position={user} ring={palette.ring} />}
       </MapLibreMap>
