@@ -66,7 +66,6 @@ Zapytania do API miasta idą tylko z naszego backendu (token `WAW_TOKEN`), przeg
 | OpenStreetMap | zabytki, kościoły, muzea, teatry, parki, obiekty sportowe; geokodowanie (Nominatim) | ODbL |
 | Wikipedia, Warszawikia | fakty o miejscach | CC BY-SA |
 | [warszawa1939.pl](https://warszawa1939.pl) | karty przedwojennych budynków (Śródmieście, Wola) | CC BY-NC |
-| [Wirtualny Sztetl](https://sztetl.org.pl) (POLIN) | 155 miejsc żydowskiej Warszawy (synagogi, szkoły, miejsca pamięci) | do potwierdzenia |
 | Wikimedia Commons | zdjęcia archiwalne, z autorem i licencją przy każdym | licencja przy zdjęciu |
 | OpenFreeMap | podkład mapy | ODbL |
 | OSRM (FOSSGIS) | odcinki piesze po chodnikach | ODbL |
