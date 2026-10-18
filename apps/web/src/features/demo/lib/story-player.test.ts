@@ -5,6 +5,7 @@ import {
   knownContextsWith,
   pausedFromOutside,
   playFailed,
+  seekTarget,
   spokenCut,
   spokenLength,
   spokenWordCount,
@@ -124,5 +125,31 @@ describe("pausedFromOutside", () => {
     expect(pausedFromOutside({ ...stopped, ended: true })).toBe(false);
     expect(pausedFromOutside({ ...stopped, loaded: false })).toBe(false);
     expect(pausedFromOutside({ ...stopped, paused: false })).toBe(false);
+  });
+});
+
+describe("seekTarget", () => {
+  const done = { done: true, duration: 60, buffered: 60 };
+  const streaming = { done: false, duration: Number.POSITIVE_INFINITY, buffered: 20 };
+
+  it("przewija o 15 s w obie strony", () => {
+    expect(seekTarget(30, 15, done)).toBe(45);
+    expect(seekTarget(30, -15, done)).toBe(15);
+  });
+
+  it("wstecz nie schodzi poniżej początku", () => {
+    expect(seekTarget(5, -15, done)).toBe(0);
+  });
+
+  it("gotowa opowieść przewija się najdalej do końca", () => {
+    expect(seekTarget(50, 15, done)).toBe(60);
+  });
+
+  it("w trakcie pisania do przodu tylko w pobranym kawałku, z zapasem", () => {
+    expect(seekTarget(10, 15, streaming)).toBe(19);
+  });
+
+  it("w trakcie pisania nie cofa, gdy bufor jest tuż za głosem", () => {
+    expect(seekTarget(19.5, 15, streaming)).toBe(19.5);
   });
 });

@@ -288,6 +288,28 @@ function bufferedEnd(audio: HTMLAudioElement): number {
   return buffered.length ? buffered.end(buffered.length - 1) : 0;
 }
 
+/** O tyle sekund przewijają przyciski ±15 s. */
+export const SKIP_SEC = 15;
+/** Głos jeszcze się robi: „do przodu” staje tyle przed końcem pobranego kawałka, żeby nie zaciąć. */
+const STREAM_SLACK_SEC = 1;
+
+/**
+ * Dokąd przewinąć głos o `deltaSec`. Póki opowieść się pisze (`done: false`), strumień nie
+ * odpowiada na zakresy bajtów, więc do przodu tylko w obrębie pobranego kawałka. Gotowa opowieść
+ * przewija się do końca (`duration`), co kończy temat jak „Następne”.
+ */
+export function seekTarget(
+  at: number,
+  deltaSec: number,
+  { done, duration, buffered }: { done: boolean; duration: number; buffered: number },
+): number {
+  const end =
+    done && Number.isFinite(duration) && duration > 0
+      ? duration
+      : Math.max(at, buffered - STREAM_SLACK_SEC);
+  return Math.min(end, Math.max(0, at + deltaSec));
+}
+
 /** How long Sawa takes to read a text, for the timer when there is no voice. */
 export function speakingMs(text: string | null): number {
   return text ? (text.length / CHARS_PER_SEC) * 1000 : 0;
@@ -655,6 +677,40 @@ export function useStoryPlayer(
     [clip],
   );
 
+  /**
+   * ±`SKIP_SEC` w bieżącej opowieści. Z głosem przesuwa element, bez niego zegar tekstu.
+   * Do przodu za koniec kończy temat; wstecz po końcu opowieści wraca do niej i gra dalej.
+   */
+  const skip = useCallback(
+    (deltaSec: number) => {
+      if (aside || live.silent || (!live.text && !failed)) return;
+      const audio = audioRef.current;
+      if (hasVoice && audio && clip && isLoaded(audio, clip)) {
+        const at = seekTarget(audio.currentTime, deltaSec, {
+          done: live.done,
+          duration: audio.duration,
+          buffered: bufferedEnd(audio),
+        });
+        audio.currentTime = at;
+        const ended = live.done && at >= audio.duration;
+        // Pętla klatek stoi w pauzie, więc pasek i podświetlenie ustawiamy od razu.
+        setProgress(ended ? 100 : audioProgress(audio, live));
+        setVoiceAt({ clipId: clip.id, sec: at });
+        // Głos, który już dobiegł końca, stoi; w geście stuknięcia ruszamy go znowu.
+        if (!ended && speaking && audio.paused) {
+          fadeToken.current++;
+          audio.volume = 1;
+          audio.play().catch((error) => playFailed(error) && setIsPlaying(false));
+        }
+        return;
+      }
+      if (!hasVoice && !failed && !live.done) return;
+      const timerMs = speakingMs(live.text) || FAILED_STORY_MS;
+      setProgress((p) => Math.min(100, Math.max(0, p + ((deltaSec * 1000) / timerMs) * 100)));
+    },
+    [aside, live, failed, hasVoice, clip, speaking],
+  );
+
   const voiceSec = hasVoice && clip && voiceAt?.clipId === clip.id ? voiceAt.sec : null;
 
   return {
@@ -673,6 +729,9 @@ export function useStoryPlayer(
     rewind: useCallback(() => setProgress(0), []),
     toggle,
     restart,
+    skip,
+    /** Czy ±15 s ma co przewijać: opowieść jest i Sawa nie milczy. */
+    canSkip: !aside && !live.silent && live.text !== null,
     more,
     /** Po „Więcej”, gdy o tym miejscu nic nowego nie zostało: miejsce obok, o którym Sawa opowie. */
     suggestion: live.told?.suggestion ?? null,
