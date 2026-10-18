@@ -6,7 +6,9 @@
  * run out, the start of every ride is already recorded.
  *
  *   DEMO_MODE=record pnpm --filter @sawa/api dev       # in one terminal
- *   pnpm --filter @sawa/api demo:record                # in another; --max 40, --dry (plan only)
+ *   pnpm --filter @sawa/api demo:record                # in another
+ *
+ * --within 10 (only places heard in the first 10 min of a ride), --max 40, --parallel 3, --dry.
  *
  * PLAN_API_URL=<deployed API> plans the rides there, with the walking paths production has.
  *
@@ -27,6 +29,12 @@ const PLAN_API = process.env.PLAN_API_URL ?? API;
 const maxArg = process.argv.indexOf("--max");
 const MAX_PLACES = maxArg > 0 ? Number(process.argv[maxArg + 1]) : Number.POSITIVE_INFINITY;
 const DRY = process.argv.includes("--dry");
+const withinArg = process.argv.indexOf("--within");
+/** Only places heard this many minutes into some ride: the start of every ride from the venue. */
+const WITHIN_SEC =
+  withinArg > 0 ? Number(process.argv[withinArg + 1]) * 60 : Number.POSITIVE_INFINITY;
+const parallelArg = process.argv.indexOf("--parallel");
+const PARALLEL = parallelArg > 0 ? Number(process.argv[parallelArg + 1]) : 1;
 
 const ORIGINS: Record<string, LatLng> = {
   "42 Warsaw": HACKATHON_VENUE,
@@ -113,20 +121,32 @@ for (const [i, [label, request]] of all.entries()) {
   if ((i + 1) % 25 === 0) console.log(`planned ${i + 1}/${all.length}, ${places.size} places`);
 }
 
+for (const min of [2, 5, 10, 15, 20, 30]) {
+  const n = [...places.values()].filter((p) => p.firstSec <= min * 60).length;
+  console.log(`heard within ${min} min: ${n} places`);
+}
 const todo = [...places]
+  .filter(([, p]) => p.firstSec <= WITHIN_SEC)
   .sort(([, a], [, b]) => a.firstSec - b.firstSec || b.n - a.n)
   .slice(0, MAX_PLACES);
 console.log(`${places.size} places on ${all.length} rides, recording ${todo.length}`);
 if (DRY) process.exit(0);
-for (const [i, [placeId, { name, targetSec }]] of todo.entries()) {
-  const started = Date.now();
-  const res = await post("/v1/stories/audio", {
-    placeId,
-    targetSec,
-    interests: ["historical", "cultural"],
-  });
-  const kb = res.ok ? Math.round((await res.arrayBuffer()).byteLength / 1024) : 0;
-  const status = res.ok ? `${kb} KB` : `HTTP ${res.status}`;
-  console.log(`${i + 1}/${todo.length} ${name}: ${status}, ${Date.now() - started} ms`);
+let next = 0;
+async function worker() {
+  while (next < todo.length) {
+    const i = next++;
+    const [placeId, { name, targetSec }] = todo[i] ?? [];
+    if (!placeId || !targetSec) continue;
+    const started = Date.now();
+    const res = await post("/v1/stories/audio", {
+      placeId,
+      targetSec,
+      interests: ["historical", "cultural"],
+    });
+    const kb = res.ok ? Math.round((await res.arrayBuffer()).byteLength / 1024) : 0;
+    const status = res.ok ? `${kb} KB` : `HTTP ${res.status}`;
+    console.log(`${i + 1}/${todo.length} ${name}: ${status}, ${Date.now() - started} ms`);
+  }
 }
+await Promise.all(Array.from({ length: PARALLEL }, worker));
 console.log("Done: commit apps/api/data/demo/ and deploy with DEMO_MODE=replay.");
