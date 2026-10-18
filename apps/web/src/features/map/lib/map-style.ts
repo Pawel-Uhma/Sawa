@@ -33,6 +33,8 @@ export type MapPalette = {
   stopText: string;
   /** Ring around the selected place. */
   selected: string;
+  /** Name under the route place the story is about. */
+  activeLabel: string;
   /** Fill of the start and transfer rings. */
   boardingFill: string;
   /** Empty part of the countdown ring at a boarding stop. */
@@ -76,6 +78,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopFill: "#18181b",
     stopText: "#ffffff",
     selected: "#18181b",
+    activeLabel: "#17706f",
     boardingFill: "#ffffff",
     timerTrack: "#e3e7e6",
     label: "#27272a",
@@ -109,6 +112,7 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopFill: "#e6efed",
     stopText: "#0e1615",
     selected: "#e6efed",
+    activeLabel: "#8ed1b5",
     boardingFill: "#0e1615",
     timerTrack: "#2a3634",
     label: "#d5dfdd",

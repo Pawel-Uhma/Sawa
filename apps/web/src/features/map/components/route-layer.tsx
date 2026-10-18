@@ -1,11 +1,20 @@
-import type { Route } from "@sawa/shared";
-import type { ExpressionSpecification } from "maplibre-gl";
+import type { PlaceSummaryFeature, Route } from "@sawa/shared";
+import type { ExpressionSpecification, FilterSpecification } from "maplibre-gl";
 import { useEffect, useMemo, useState } from "react";
 import { Layer, Source } from "react-map-gl/maplibre";
 import { useLang } from "@/features/i18n";
 import { BOARDING_TIMER_IMAGE, boardingTimerId, countdownOf } from "../lib/boarding-timers";
-import { ACTIVE_STOP_COLOR, LABEL_FONT, type MapPalette, type MapTheme } from "../lib/map-style";
 import {
+  ACTIVE_STOP_COLOR,
+  LABEL_FONT,
+  LABEL_FONT_BOLD,
+  type MapPalette,
+  type MapTheme,
+  placeKindColorExpression,
+  placeStickerExpression,
+} from "../lib/map-style";
+import {
+  type PlaceMarkers,
   routeBoardingsToGeoJson,
   routeLegsToGeoJson,
   routePlacesToGeoJson,
@@ -13,12 +22,26 @@ import {
 } from "../lib/route-to-geojson";
 
 export const ROUTE_PLACES_LAYER_ID = "route-places-circle";
+/** Layers in the stop components below name it themselves: `<Source>` only passes it to direct children. */
+const ROUTE_PLACES_SOURCE_ID = "route-places";
+
+/** Sticker scale (1 = 48 css px): larger than regular places, the active one larger still. */
+const STICKER_SIZE = 0.8;
+const ACTIVE_STICKER_SIZE = 1;
+/** Number badge in the sticker's bottom-right corner, px from its centre. */
+const BADGE_OFFSET: [number, number] = [12, 12];
+const ACTIVE_BADGE_OFFSET: [number, number] = [15, 15];
+const BADGE_TEXT_SIZE = 11;
 
 type RouteLayerProps = {
   route: Route;
   selectedId: string | null;
   /** Place the story is about right now; drawn larger and in the accent colour. */
   activeId?: string;
+  /** Icons registered in the style; route places are drawn as subkind stickers. */
+  hasIcons: boolean;
+  /** Loaded place summaries: route places among them get their subkind sticker, the rest a pin. */
+  knownPlaces: PlaceSummaryFeature[];
   theme: MapTheme;
   palette: MapPalette;
 };
@@ -26,11 +49,24 @@ type RouteLayerProps = {
 /** How often the countdown at boarding stops is redrawn. */
 const COUNTDOWN_TICK_MS = 15_000;
 
-export function RouteLayer({ route, selectedId, activeId, theme, palette }: RouteLayerProps) {
+export function RouteLayer({
+  route,
+  selectedId,
+  activeId,
+  hasIcons,
+  knownPlaces,
+  theme,
+  palette,
+}: RouteLayerProps) {
   const lang = useLang();
   const isActive: ExpressionSpecification = ["==", ["get", "id"], activeId ?? ""];
   const legs = useMemo(() => routeLegsToGeoJson(route), [route]);
-  const places = useMemo(() => routePlacesToGeoJson(route), [route]);
+  const markers = useMemo<PlaceMarkers>(
+    () =>
+      new Map(knownPlaces.map(({ properties: p }) => [p.id, { kind: p.kind, subkind: p.subkind }])),
+    [knownPlaces],
+  );
+  const places = useMemo(() => routePlacesToGeoJson(route, markers), [route, markers]);
   const now = useNow(COUNTDOWN_TICK_MS);
   // Each boarding gets its countdown ring image and, while it counts minutes, the clock time below.
   const boardings = useMemo(() => {
@@ -80,40 +116,17 @@ export function RouteLayer({ route, selectedId, activeId, theme, palette }: Rout
           }}
         />
       </Source>
-      <Source id="route-places" type="geojson" data={places}>
-        <Layer
-          id={ROUTE_PLACES_LAYER_ID}
-          type="circle"
-          paint={{
-            "circle-radius": ["case", isActive, 14, 11],
-            "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, palette.stopFill],
-            "circle-stroke-color": palette.ring,
-            "circle-stroke-width": 2,
-          }}
-        />
-        <Layer
-          id="route-places-selected"
-          type="circle"
-          filter={["==", ["get", "id"], selectedId ?? ""]}
-          paint={{
-            "circle-radius": 15,
-            "circle-opacity": 0,
-            "circle-stroke-color": palette.selected,
-            "circle-stroke-width": 3,
-          }}
-        />
-        <Layer
-          id="route-places-order"
-          type="symbol"
-          layout={{
-            "text-field": ["to-string", ["get", "order"]],
-            "text-font": LABEL_FONT,
-            "text-size": 12,
-            "text-allow-overlap": true,
-            "text-ignore-placement": true,
-          }}
-          paint={{ "text-color": ["case", isActive, "#ffffff", palette.stopText] }}
-        />
+      <Source id={ROUTE_PLACES_SOURCE_ID} type="geojson" data={places}>
+        {hasIcons ? (
+          <StickerStops
+            theme={theme}
+            palette={palette}
+            isActive={isActive}
+            selectedId={selectedId}
+          />
+        ) : (
+          <NumberedStops palette={palette} isActive={isActive} selectedId={selectedId} />
+        )}
       </Source>
       {/* Start and transfers: a countdown ring in the colour of the line boarded there, its number above;
           over the route places, the countdown matters more while walking to the stop. */}
@@ -168,6 +181,166 @@ export function RouteLayer({ route, selectedId, activeId, theme, palette }: Rout
           }}
         />
       </Source>
+    </>
+  );
+}
+
+type StopsProps = {
+  palette: MapPalette;
+  isActive: ExpressionSpecification;
+  selectedId: string | null;
+};
+
+/**
+ * Route places as the sticker of their subkind (as regular places, but larger) with the order
+ * number in a badge of the group colour. The place the story is about gets a halo and its name.
+ */
+function StickerStops({ theme, palette, isActive, selectedId }: StopsProps & { theme: MapTheme }) {
+  const inactive: FilterSpecification = ["!", isActive];
+  return (
+    <>
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-halo"
+        type="circle"
+        filter={isActive}
+        paint={{
+          "circle-radius": 24,
+          "circle-color": ACTIVE_STOP_COLOR,
+          "circle-opacity": 0.16,
+          "circle-stroke-color": ACTIVE_STOP_COLOR,
+          "circle-stroke-opacity": 0.45,
+          "circle-stroke-width": 2,
+        }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id={ROUTE_PLACES_LAYER_ID}
+        type="symbol"
+        layout={{
+          "icon-image": placeStickerExpression(theme),
+          "icon-size": ["case", isActive, ACTIVE_STICKER_SIZE, STICKER_SIZE],
+          "icon-allow-overlap": true,
+          "icon-ignore-placement": true,
+          // The active sticker is drawn last, over its neighbours.
+          "symbol-sort-key": ["case", isActive, 1, 0],
+        }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-selected"
+        type="circle"
+        filter={["==", ["get", "id"], selectedId ?? ""]}
+        paint={{
+          "circle-radius": 22,
+          "circle-opacity": 0,
+          "circle-stroke-color": palette.selected,
+          "circle-stroke-width": 3,
+        }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-badge"
+        type="circle"
+        filter={inactive}
+        paint={{ ...BADGE_PAINT, "circle-translate": BADGE_OFFSET }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-badge-active"
+        type="circle"
+        filter={isActive}
+        paint={{ ...BADGE_PAINT, "circle-translate": ACTIVE_BADGE_OFFSET }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-order"
+        type="symbol"
+        layout={{
+          "text-field": ["to-string", ["get", "order"]],
+          "text-font": LABEL_FONT_BOLD,
+          "text-size": BADGE_TEXT_SIZE,
+          "text-offset": [
+            "case",
+            isActive,
+            ["literal", ACTIVE_BADGE_OFFSET.map((px) => px / BADGE_TEXT_SIZE)],
+            ["literal", BADGE_OFFSET.map((px) => px / BADGE_TEXT_SIZE)],
+          ],
+          "text-allow-overlap": true,
+          "text-ignore-placement": true,
+        }}
+        paint={{ "text-color": "#ffffff" }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-active-name"
+        type="symbol"
+        filter={isActive}
+        layout={{
+          "text-field": ["get", "name"],
+          "text-font": LABEL_FONT_BOLD,
+          "text-size": 12,
+          "text-anchor": "top",
+          "text-offset": [0, 2.2],
+          "text-max-width": 12,
+        }}
+        paint={{
+          "text-color": palette.activeLabel,
+          "text-halo-color": palette.labelHalo,
+          "text-halo-width": 2,
+        }}
+      />
+    </>
+  );
+}
+
+const BADGE_PAINT = {
+  "circle-radius": 8,
+  "circle-color": placeKindColorExpression(),
+  "circle-stroke-color": "#ffffff",
+  "circle-stroke-width": 2,
+};
+
+/** Without icons: numbered circles, the active one in the accent colour. */
+function NumberedStops({ palette, isActive, selectedId }: StopsProps) {
+  return (
+    <>
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id={ROUTE_PLACES_LAYER_ID}
+        type="circle"
+        paint={{
+          "circle-radius": ["case", isActive, 14, 11],
+          "circle-color": ["case", isActive, ACTIVE_STOP_COLOR, palette.stopFill],
+          "circle-stroke-color": palette.ring,
+          "circle-stroke-width": 2,
+        }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-selected"
+        type="circle"
+        filter={["==", ["get", "id"], selectedId ?? ""]}
+        paint={{
+          "circle-radius": 15,
+          "circle-opacity": 0,
+          "circle-stroke-color": palette.selected,
+          "circle-stroke-width": 3,
+        }}
+      />
+      <Layer
+        source={ROUTE_PLACES_SOURCE_ID}
+        id="route-places-order"
+        type="symbol"
+        layout={{
+          "text-field": ["to-string", ["get", "order"]],
+          "text-font": LABEL_FONT,
+          "text-size": 12,
+          "text-allow-overlap": true,
+          "text-ignore-placement": true,
+        }}
+        paint={{ "text-color": ["case", isActive, "#ffffff", palette.stopText] }}
+      />
     </>
   );
 }

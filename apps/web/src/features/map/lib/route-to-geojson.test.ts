@@ -243,6 +243,15 @@ describe("routePlacesToGeoJson", () => {
     ]);
     expect(features[0].geometry.coordinates).toEqual([20.961, 52.231]);
   });
+
+  it("adds kind and subkind of the places it knows", () => {
+    const markers = new Map([["late", { kind: "church", subkind: "church" }]]);
+    const { features } = routePlacesToGeoJson(ROUTE, markers);
+    expect(features.map((f) => [f.properties.kind, f.properties.subkind])).toEqual([
+      [undefined, undefined],
+      ["church", "church"],
+    ]);
+  });
 });
 
 describe("routeBounds", () => {

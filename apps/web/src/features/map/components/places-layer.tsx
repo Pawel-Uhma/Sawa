@@ -30,7 +30,7 @@ const UNCLUSTERED: FilterSpecification = ["!", CLUSTERED];
 /**
  * Icon scale (1 = 48 css px): grows with zoom, and richer places are a bit larger.
  * About 24 css px at zoom 15 (#90): the shapes stay readable, but icons no longer cover
- * the route line and its numbered stops (22 px), and fewer of them collide and hide.
+ * the route line and its stops (38 px stickers), and fewer of them collide and hide.
  */
 function iconSize(scale: number): ExpressionSpecification {
   return [
