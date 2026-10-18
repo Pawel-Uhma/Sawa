@@ -31,6 +31,10 @@ const FADE_OUT_MS = 350;
 const FADE_IN_MS = 500;
 /** Oddech Sawy między tematami, gdy poprzedni skończył się sam. */
 const BREATH_MS = 600;
+/** Po pauzie elementu tyle czekamy, zanim uznamy, że zatrzymał go ktoś z zewnątrz. */
+const PAUSE_CHECK_MS = 300;
+/** Pauza tak blisko końca głosu to koniec opowieści, a nie przerwanie. */
+const END_SLACK_SEC = 0.3;
 
 /**
  * Płynnie zmienia głośność. Na iOS `volume` jest tylko do odczytu, więc tam zostaje
@@ -58,6 +62,29 @@ function fadeVolume(
 }
 
 const wait = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
+
+/**
+ * Czy odrzucone `play()` znaczy, że głos nie gra (przeglądarka go zablokowała albo nie umie
+ * odtworzyć), więc odtwarzacz ma stanąć. `AbortError` to nasze przerwanie: `pause()` albo nowy
+ * klip w trakcie wczytywania. Wtedy nie pauzujemy, bo np. wybór kolejnego miejsca zatrzymywał Sawę.
+ */
+export function playFailed(error: unknown): boolean {
+  return (error as { name?: unknown } | null)?.name !== "AbortError";
+}
+
+/**
+ * Czy głos zatrzymał ktoś spoza odtwarzacza (ekran blokady, odłączone słuchawki, połączenie,
+ * system iOS): Sawa miała mówić, klip jest wczytany, a element stoi przed końcem. Wtedy
+ * odtwarzacz też staje, żeby przycisk, zegar jazdy i muzyka nie myślały, że Sawa mówi.
+ */
+export function pausedFromOutside(state: {
+  speaking: boolean;
+  loaded: boolean;
+  paused: boolean;
+  ended: boolean;
+}): boolean {
+  return state.speaking && state.loaded && state.paused && !state.ended;
+}
 
 /** Czy element gra właśnie ten klip (a nie poprzedni, który jeszcze cichnie). */
 function isLoaded(audio: HTMLAudioElement, clip: Clip | null): boolean {
@@ -357,11 +384,49 @@ export function useStoryPlayer(
     const onEnded = () => isLoaded(audio, clipRef.current) && setProgress(100);
     // No voice (ElevenLabs down, quota): the card still shows the text and runs on a timer.
     const onError = () => audio.getAttribute("src") && setVoiceFailed(true);
+    // Sprawdzamy chwilę po zdarzeniu: nasze pauzy mają już wtedy `speaking: false`, koniec
+    // opowieści ma `ended`, a nowy klip zdążył ruszyć. Zostaje pauza z zewnątrz.
+    let pauseCheck: ReturnType<typeof setTimeout> | undefined;
+    const onPause = () => {
+      clearTimeout(pauseCheck);
+      pauseCheck = setTimeout(() => {
+        const state = {
+          speaking: speakingRef.current,
+          loaded: isLoaded(audio, clipRef.current),
+          paused: audio.paused,
+          ended: audio.ended || audio.currentTime >= audio.duration - END_SLACK_SEC,
+        };
+        if (pausedFromOutside(state)) setIsPlaying(false);
+      }, PAUSE_CHECK_MS);
+    };
+    // iOS pozwala elementowi grać bez stuknięcia dopiero, gdy raz ruszył w stuknięciu. Pierwsza
+    // opowieść rusza z zegarem jazdy, poza stuknięciem, więc głos odblokowujemy przy pierwszym
+    // dotknięciu strony, póki element nie ma jeszcze klipu (wtedy nic nie zagra).
+    const gestures = ["touchend", "click"] as const;
+    const stopUnlocking = () => {
+      for (const type of gestures) window.removeEventListener(type, unlock, { capture: true });
+      audio.removeEventListener("playing", stopUnlocking);
+    };
+    const unlock = () => {
+      if (audio.getAttribute("src")) return;
+      stopUnlocking();
+      audio.play().catch(() => {});
+      audio.pause();
+    };
+    for (const type of gestures) {
+      window.addEventListener(type, unlock, { capture: true, passive: true });
+    }
+    // Głos, który już raz zagrał, jest odblokowany.
+    audio.addEventListener("playing", stopUnlocking);
     audio.addEventListener("ended", onEnded);
     audio.addEventListener("error", onError);
+    audio.addEventListener("pause", onPause);
     return () => {
+      clearTimeout(pauseCheck);
+      stopUnlocking();
       audio.removeEventListener("ended", onEnded);
       audio.removeEventListener("error", onError);
+      audio.removeEventListener("pause", onPause);
       audio.pause();
       audio.removeAttribute("src");
     };
@@ -456,9 +521,9 @@ export function useStoryPlayer(
         .then(() => {
           if (!cancelled) return fadeVolume(audio, 1, FADE_IN_MS, fadeToken);
         })
-        .catch(() => {
+        .catch((error) => {
           audio.volume = 1;
-          setIsPlaying(false);
+          if (playFailed(error)) setIsPlaying(false);
         });
     });
     return () => {
@@ -487,7 +552,7 @@ export function useStoryPlayer(
       .then(() => {
         if (fadeIn) return fadeVolume(audio, 1, FADE_IN_MS, fadeToken);
       })
-      .catch(() => setIsPlaying(false));
+      .catch((error) => playFailed(error) && setIsPlaying(false));
   }, [speaking, aside, hasVoice, clip]);
 
   // Nic ciekawego w tym miejscu: Sawa milczy, temat kończy się po krótkiej pauzie.
@@ -537,7 +602,7 @@ export function useStoryPlayer(
         fadeToken.current++;
         audio.volume = 1;
         if (restart) audio.currentTime = 0;
-        audio.play().catch(() => setIsPlaying(false));
+        audio.play().catch((error) => playFailed(error) && setIsPlaying(false));
       }
       setIsPlaying(true);
       return;
@@ -547,7 +612,7 @@ export function useStoryPlayer(
       audio.volume = 1;
       // Called inside the tap, so Safari lets the sound start.
       if (restart) audio.currentTime = 0;
-      audio.play().catch(() => setIsPlaying(false));
+      audio.play().catch((error) => playFailed(error) && setIsPlaying(false));
     }
     setIsPlaying(!isPlaying);
   }, [isPlaying, aside, progress, hasVoice, clip]);
@@ -563,7 +628,7 @@ export function useStoryPlayer(
         audio.volume = 1;
         audio.currentTime = 0;
         // W geście stuknięcia, żeby Safari pozwolił na dźwięk.
-        if (keepPlaying) audio.play().catch(() => setIsPlaying(false));
+        if (keepPlaying) audio.play().catch((error) => playFailed(error) && setIsPlaying(false));
       }
       setIsPlaying(keepPlaying);
     },

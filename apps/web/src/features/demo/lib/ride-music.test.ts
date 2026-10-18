@@ -1,7 +1,11 @@
 import { describe, expect, it } from "vitest";
 import {
+  fadeInLevel,
   isSawaSpeaking,
+  LATE_TOLERANCE_SEC,
+  lateSteps,
   type MusicEvent,
+  musicDucked,
   musicPlays,
   noteHz,
   parseMusicPreference,
@@ -157,5 +161,53 @@ describe("parseMusicPreference", () => {
     expect(parseMusicPreference(null)).toBe(true);
     expect(parseMusicPreference("on")).toBe(true);
     expect(parseMusicPreference("off")).toBe(false);
+  });
+});
+
+describe("lateSteps", () => {
+  const step = 0.25;
+
+  it("skips nothing while the timer keeps up", () => {
+    expect(lateSteps(10.5, 10, step)).toBe(0);
+    expect(lateSteps(10, 10, step)).toBe(0);
+  });
+
+  it("still plays a step that is only a hair late", () => {
+    expect(lateSteps(10 - LATE_TOLERANCE_SEC / 2, 10, step)).toBe(0);
+  });
+
+  it("drops the steps missed in a sleeping tab instead of playing them all at once", () => {
+    const next = 10;
+    const now = 70;
+    const skip = lateSteps(next, now, step);
+    const resumed = next + skip * step;
+    expect(resumed).toBeGreaterThanOrEqual(now - LATE_TOLERANCE_SEC);
+    expect(resumed - step).toBeLessThan(now - LATE_TOLERANCE_SEC);
+  });
+});
+
+describe("fadeInLevel", () => {
+  it("rises from silence to full over the fade", () => {
+    expect(fadeInLevel(0, 1.2)).toBe(0);
+    expect(fadeInLevel(0.6, 1.2)).toBeCloseTo(0.5);
+    expect(fadeInLevel(5, 1.2)).toBe(1);
+  });
+
+  it("stays in range for odd input", () => {
+    expect(fadeInLevel(-1, 1.2)).toBe(0);
+    expect(fadeInLevel(1, 0)).toBe(1);
+  });
+});
+
+describe("musicDucked", () => {
+  const quiet = { isPlaying: false, loading: false, failed: false, progress: 0 };
+
+  it("ducks under the route story", () => {
+    expect(musicDucked({ ...quiet, isPlaying: true }, false)).toBe(true);
+    expect(musicDucked(quiet, false)).toBe(false);
+  });
+
+  it("ducks under a story from a place card, also while waiting for the first place", () => {
+    expect(musicDucked(quiet, true)).toBe(true);
   });
 });
