@@ -22,10 +22,10 @@ import { DEMO_REQUEST } from "./routes/routes";
 import {
   createCachedRoutePlanner,
   createFixedDestinationSearch,
-  DEMO_WARM_RIDES,
   createFixtureSynthesizer,
   createRecordingStoryService,
   createReplayStoryService,
+  DEMO_WARM_RIDES,
 } from "./services/demo";
 import { createTrackerBoardingSource } from "./services/live-boarding";
 import { createRoutePlanner } from "./services/plan-route";
