@@ -18,6 +18,8 @@ Na pitchu ok. 100 telefonów z jednego Wi-Fi (jedno IP). Bez trybu demo każdy t
 | Limit `/v1/stories*` | 20 000 / 10 min na IP | 300 / 10 min |
 | Baza, ZTM, OSRM | na żywo (baza z cache #112) | na żywo |
 
+Głos ma zapasowy klucz: gdy `ELEVENLABS_KEY` dostanie 401/402/403/429 (brak kredytów, zły klucz, limit), API ponawia z `ELEVENLABS_KEY_2` i zostaje przy nim do restartu (`adapters/elevenlabs/speech-synthesizer.ts`). Na Railway `ELEVENLABS_KEY_2` to na razie placeholder.
+
 `/health` zwraca `demoMode`. Web: głos jest domyślnie włączony, `?voice=0` w adresie go wyłącza.
 
 ## Jak nagrać

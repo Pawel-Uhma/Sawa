@@ -137,7 +137,10 @@ const research =
     : undefined;
 
 const elevenLabs = env.ELEVENLABS_KEY
-  ? createElevenLabsSynthesizer({ apiKey: env.ELEVENLABS_KEY })
+  ? createElevenLabsSynthesizer({
+      apiKey: env.ELEVENLABS_KEY,
+      fallbackApiKey: env.ELEVENLABS_KEY_2,
+    })
   : undefined;
 const speech = fixtures
   ? createSpeechService(
