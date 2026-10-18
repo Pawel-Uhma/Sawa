@@ -21,13 +21,13 @@ import {
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
-import { isSawaSpeaking, musicPlays } from "../lib/ride-music";
+import { musicDucked, musicPlays } from "../lib/ride-music";
 import { useMusicOn, useRideMusic } from "../lib/ride-music-player";
 import { useGpsClockSync } from "../lib/ride-sync";
 import { screenCamera } from "../lib/screen-camera";
 import { startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
-import { claimVoice, ROUTE_VOICE } from "../lib/voice";
+import { claimVoice, isAside, ROUTE_VOICE, useVoiceOwner } from "../lib/voice";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
@@ -323,6 +323,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const heldRef = useRef(held);
   heldRef.current = held;
   const musicOn = useMusicOn();
+  const voiceOwner = useVoiceOwner();
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
   useGpsClockSync(route, start.position, clock);
   const pickStop = useCallback(
@@ -340,7 +341,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Muzyka w tle przez całą jazdę, także w oczekiwaniu na pierwsze miejsce; pauza Sawy zatrzymuje też ją.
   useRideMusic(
     musicOn && musicPlays({ onRoute: isRoute, held, waiting, isPlaying: player.isPlaying }),
-    isSawaSpeaking(player),
+    musicDucked(player, isAside(voiceOwner)),
   );
   const wasWaiting = useRef(false);
   useEffect(() => {
