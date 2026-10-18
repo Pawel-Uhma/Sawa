@@ -41,9 +41,15 @@ export type RouteWalkFeature = {
 export type RoutePlaceFeature = {
   type: "Feature";
   geometry: { type: "Point"; coordinates: LngLat };
-  /** `id` is the place id, so a click opens the same card as a regular place. */
-  properties: { id: string; name: string; order: number };
+  /**
+   * `id` is the place id, so a click opens the same card as a regular place.
+   * `kind` and `subkind` pick the sticker; absent when the place is not among the loaded places.
+   */
+  properties: { id: string; name: string; order: number; kind?: string; subkind?: string | null };
 };
+
+/** What a route place looks like on the map, by place id (from the loaded place summaries). */
+export type PlaceMarkers = ReadonlyMap<string, { kind: string; subkind?: string | null }>;
 
 // The ZTM timetable is in Warsaw time, whatever the phone's time zone
 const CLOCK = new Intl.DateTimeFormat("pl-PL", {
@@ -167,15 +173,26 @@ export function routeWalksToGeoJson(route: Route): FeatureCollection<RouteWalkFe
   };
 }
 
-/** Places along the route, numbered 1..n in the order they pass the window. */
-export function routePlacesToGeoJson(route: Route): FeatureCollection<RoutePlaceFeature> {
+/**
+ * Places along the route, numbered 1..n in the order they pass the window. With `markers`, each
+ * place also gets the kind and subkind its sticker follows.
+ */
+export function routePlacesToGeoJson(
+  route: Route,
+  markers?: PlaceMarkers,
+): FeatureCollection<RoutePlaceFeature> {
   const ordered = [...route.places].sort((a, b) => a.etaSec - b.etaSec);
   return {
     type: "FeatureCollection",
     features: ordered.map((place, i) => ({
       type: "Feature",
       geometry: { type: "Point", coordinates: toLngLat(place.position) },
-      properties: { id: place.placeId, name: place.name, order: i + 1 },
+      properties: {
+        id: place.placeId,
+        name: place.name,
+        order: i + 1,
+        ...markers?.get(place.placeId),
+      },
     })),
   };
 }

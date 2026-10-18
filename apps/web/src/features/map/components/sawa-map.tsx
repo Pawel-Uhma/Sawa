@@ -264,6 +264,8 @@ export function SawaMap({
             selectedId={selectedId}
             activeId={activeStopId}
             hasIcons={icons === "ready"}
+            knownPlaces={places.data}
+            theme={theme}
             palette={palette}
           />
         )}
