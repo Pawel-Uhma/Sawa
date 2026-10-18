@@ -112,7 +112,8 @@ describe("mapOsmElement", () => {
       origin: "osm",
       confidence: "high",
       location_precision: "approx",
-      richness: 2,
+      // The Wikipedia extract counts, the "w OpenStreetMap opisany jako…" line does not.
+      richness: 1,
     });
     expect(row.interests).toContain("nature");
     expect(row.sources.map((s) => s.url)).toEqual([

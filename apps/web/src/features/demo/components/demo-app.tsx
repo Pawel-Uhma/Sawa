@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import { type SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LoadingCover } from "@/components/waiting";
 import { type Lang, pick, useLang, useT } from "@/features/i18n";
-import type { MapCamera, MapPadding } from "@/features/map";
+import type { LocateStatus, MapCamera, MapPadding } from "@/features/map";
 import { listenerOf, planRoute, routeStops } from "../lib/api-data";
 import { useDemoDrive } from "../lib/demo-drive";
 import { SPRING, useIsDesktop, useIsWide } from "../lib/device";
@@ -21,13 +21,13 @@ import {
   type RideEnd,
   type RideEndType,
 } from "../lib/ride-end";
-import { isSawaSpeaking, musicPlays } from "../lib/ride-music";
+import { musicDucked, musicPlays } from "../lib/ride-music";
 import { useMusicOn, useRideMusic } from "../lib/ride-music-player";
 import { useGpsClockSync } from "../lib/ride-sync";
 import { screenCamera } from "../lib/screen-camera";
-import { startLabel, useStartPoint } from "../lib/start-point";
+import { type StartStatus, startLabel, useStartPoint } from "../lib/start-point";
 import { useStoryPlayer } from "../lib/story-player";
-import { claimVoice, ROUTE_VOICE } from "../lib/voice";
+import { claimVoice, isAside, ROUTE_VOICE, useVoiceOwner } from "../lib/voice";
 import { HomePanel } from "./home-panel";
 import { OnboardingFlow } from "./onboarding-flow";
 import type { PlaceSelection } from "./place-card-host";
@@ -114,6 +114,8 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const [panelCollapsed, setPanelCollapsed] = useState(false);
   const [selectedPlace, setSelectedPlace] = useState<PlaceSelection | null>(null);
   const [placeCoverPx, setPlaceCoverPx] = useState(360);
+  // Karta na dole (plan przejazdu, Sawa): przycisk lokalizacji staje nad nią
+  const [panelCoverPx, setPanelCoverPx] = useState(380);
   // O zgodę na lokalizację pytamy dopiero po onboardingu
   // Na scenie nie pytamy o lokalizację: stała pozycja pod 42 Warsaw
   const start = useStartPoint(!isStage && stage !== "onboarding");
@@ -255,6 +257,15 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const isPickingEnd = endType === "destination";
   // Karta miejsca działa też na trasie: klik w pinezkę spoza trasy pokazuje to miejsce.
   const isPlaceOpen = (isHome || isRoute) && selectedPlace !== null;
+  // Po zamknięciu karty kamera stoi, dopóki nie zmieni się przystanek, cel albo ekran.
+  const [placeClosed, setPlaceClosed] = useState(false);
+  useEffect(() => {
+    if (isPlaceOpen) setPlaceClosed(true);
+  }, [isPlaceOpen]);
+  // biome-ignore lint/correctness/useExhaustiveDependencies: reset on screen, stop or destination change
+  useEffect(() => {
+    setPlaceClosed(false);
+  }, [stage, tab, activeIndex, destination]);
 
   const padding: MapPadding = useMemo(() => {
     if (isDesktop) {
@@ -284,12 +295,23 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       isRoute && activeStop ? { lat: activeStop.coord[1], lng: activeStop.coord[0] } : null;
     return screenCamera({
       place: isPlaceOpen ? { position: selectedPlace.position } : null,
+      placeClosed,
       activeStop: stop,
       destination: isHome && destination ? destination.point : null,
       origin,
       isDesktop,
     });
-  }, [isRoute, activeStop, isDesktop, isHome, destination, isPlaceOpen, selectedPlace, origin]);
+  }, [
+    isRoute,
+    activeStop,
+    isDesktop,
+    isHome,
+    destination,
+    isPlaceOpen,
+    selectedPlace,
+    placeClosed,
+    origin,
+  ]);
 
   const listener = useMemo(() => listenerOf(profile, lang), [profile, lang]);
   const memory = useMemory();
@@ -303,6 +325,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   const heldRef = useRef(held);
   heldRef.current = held;
   const musicOn = useMusicOn();
+  const voiceOwner = useVoiceOwner();
   // Z lokalizacją zegar staje przy punkcie, do którego naprawdę dojechaliśmy.
   useGpsClockSync(route, start.position, clock);
   const pickStop = useCallback(
@@ -312,6 +335,19 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     },
     [syncTo],
   );
+  // Punkt wybrany ręcznie kończy śledzenie kropki (przycisk lokalizacji); ten z zegara jazdy nie
+  const [stopPicks, setStopPicks] = useState(0);
+  const userPickStop = useCallback(
+    (index: number) => {
+      setStopPicks((n) => n + 1);
+      pickStop(index);
+    },
+    [pickStop],
+  );
+  const userSetActive = useCallback((index: number) => {
+    setStopPicks((n) => n + 1);
+    setActiveIndex(index);
+  }, []);
   // Na scenie autobus jedzie sam: aktywny punkt idzie po trasie w ok. 1,5 min (T-36)
   useDemoDrive(isStage && isRoute, route, pickStop);
   // Sawa nie zaczyna zaraz po wyznaczeniu trasy: czeka, aż dojedziesz do pierwszego miejsca
@@ -320,7 +356,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
   // Muzyka w tle przez całą jazdę, także w oczekiwaniu na pierwsze miejsce; pauza Sawy zatrzymuje też ją.
   useRideMusic(
     musicOn && musicPlays({ onRoute: isRoute, held, waiting, isPlaying: player.isPlaying }),
-    isSawaSpeaking(player),
+    musicDucked(player, isAside(voiceOwner)),
   );
   const wasWaiting = useRef(false);
   useEffect(() => {
@@ -372,9 +408,9 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
       rewind();
       setHeld(false);
       setIsPlaying(true);
-      pickStop(index);
+      userPickStop(index);
     },
-    [route.length, rewind, setHeld, setIsPlaying, pickStop],
+    [route.length, rewind, setHeld, setIsPlaying, userPickStop],
   );
   const menu: SawaMenuActions = useMemo(
     () => ({
@@ -442,10 +478,27 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
               interests={profile.interests}
               onStopClick={(id) => {
                 const index = route.findIndex((stop) => stop.id === id);
-                if (index >= 0) pickStop(index);
+                if (index >= 0) userPickStop(index);
               }}
               // Ekrany mają własne karty nad mapą; wbudowana karta miejsca wjechałaby pod nie
               hasPlaceSheet={false}
+              locate={
+                isStage || stage === "onboarding" || (stage === "map" && tab === "rides")
+                  ? undefined
+                  : {
+                      status: locateStatus(start.status),
+                      onRetry: start.retry,
+                      // Na telefonie nad tym, co naprawdę zasłania dół mapy
+                      bottomPx: isDesktop
+                        ? undefined
+                        : isPlaceOpen
+                          ? placeCoverPx
+                          : isRoute
+                            ? sheetCoverPx
+                            : panelCoverPx,
+                      followResetKey: `${stage}|${tab}|${selectedPlace?.id ?? ""}|${stopPicks}`,
+                    }
+              }
             />
           </div>
 
@@ -478,6 +531,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 planning={planning}
                 planError={planError}
                 locating={!isStage && start.status === "locating"}
+                onCoverChange={setPanelCoverPx}
               />
             )}
             {stage === "map" && tab === "rides" && (
@@ -515,6 +569,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 onPrev={() => playStop(activeIndex - 1)}
                 onNext={() => playStop(activeIndex + 1)}
                 onClose={() => setTab("map")}
+                onCoverChange={setPanelCoverPx}
               />
             )}
             {isRoute && (
@@ -528,7 +583,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
                 stops={route}
                 player={ridePlayer}
                 activeIndex={activeIndex}
-                onActiveChange={setActiveIndex}
+                onActiveChange={userSetActive}
                 onPlayStop={playStop}
                 clock={clock}
                 totalSec={(planned?.totalMin ?? 0) * 60}
@@ -628,5 +683,20 @@ function routeEnd(route: Route, end: RideEnd, lang: Lang): { label: string; reac
             ),
             reached: false,
           };
+  }
+}
+
+/** Stan przycisku lokalizacji: start spod 42 Warsaw (pokaz, poza Warszawą) też ma kropkę, do której wraca. */
+function locateStatus(status: StartStatus): LocateStatus {
+  switch (status) {
+    case "located":
+    case "venue":
+    case "outside":
+      return "found";
+    case "locating":
+      return "locating";
+    case "denied":
+    case "unavailable":
+      return status;
   }
 }

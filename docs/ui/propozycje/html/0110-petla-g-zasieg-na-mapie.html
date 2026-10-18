@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Pętla G · zasięg na mapie</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet"><link href="_petla.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .uch{position:absolute;z-index:25;left:145px;top:450px;white-space:nowrap;display:flex;align-items:center;gap:6px;padding:0 12px 0 4px;height:40px;border-radius:20px;background:var(--glebia);color:#fff;font-weight:800;font-size:15px;box-shadow:0 6px 16px rgba(23,112,111,.35)}
+  .uch i{width:32px;height:32px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--glebia);font-style:normal;font-size:14px}
+  .podp{position:absolute;z-index:25;left:0;right:0;top:126px;text-align:center}
+  .podp span{display:inline-block;padding:6px 12px;border-radius:14px;background:rgba(255,255,255,.9);font-size:13px;font-weight:700;color:var(--glebia-ciemna)}
+</style></head><body><div class="telefon">
+  <div class="mapa" id="mapa"></div><div class="status"></div>
+  <div class="szukaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><div class="tekst">Pętla stąd · <b>albo dokąd?</b></div><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg"></div>
+  <div class="podp"><span>Przeciągnij, żeby pojechać dalej</span></div>
+  <div class="uch"><i>↔</i>1 h 30</div>
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <div style="display:flex;align-items:center;gap:10px"><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg" style="width:44px;height:44px">
+      <div style="flex:1"><h2>Pętla 1 h 30 min</h2><div class="pod">Wracasz tu · 14 miejsc w zasięgu</div></div></div>
+    <div class="wybor" style="margin-top:12px"><div>45 min</div><div>1 h</div><div class="on">1 h 30</div><div>2 h</div></div>
+    <div class="przycisk">Ułóż pętlę <span data-i="strzalka" style="display:flex;width:20px"></span></div>
+  </div>
+  <div class="home"></div>
+</div><script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { center: nad(JA, 110, 13.6), zoom: 13.6, zasiegKm: 0.6, miejsca: true, miejscaR: 3 });</script>
+</body></html>

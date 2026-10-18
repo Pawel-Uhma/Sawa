@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useSyncExternalStore } from "react";
 import {
+  fadeInLevel,
+  lateSteps,
   MUSIC_STORAGE_KEY,
   type MusicEvent,
   parseMusicPreference,
@@ -22,23 +24,36 @@ const FADE_SEC = 1.2;
 const REVERB_SEC = 2.5;
 /** Nuty planujemy z wyprzedzeniem: timer przeglądarki się spóźnia, zegar audio nie. */
 const LOOKAHEAD_SEC = 1.2;
+/** Karta w tle: przeglądarka budzi timer najwyżej co sekundę, więc planujemy dalej naprzód. */
+const HIDDEN_LOOKAHEAD_SEC = 3;
 const SCHEDULE_EVERY_MS = 100;
 const SWITCH_CHECK_MS = 500;
+/** Po zatrzymaniu tyle czekamy, aż zaplanowane nuty i pogłos wybrzmią w ciszy, potem odpinamy. */
+const RELEASE_MS = (FADE_SEC + HIDDEN_LOOKAHEAD_SEC + REVERB_SEC) * 1000;
 
 type Session = { duck: GainNode; stop: () => void };
 type Playing = { startedAt: number; stop: () => void };
 
 let context: AudioContext | null = null;
 let noise: AudioBuffer | null = null;
+let reverbImpulse: AudioBuffer | null = null;
+let vinylNoise: AudioBuffer | null = null;
+/** Gdzie muzyka stanęła: po pauzie gra dalej ten sam utwór, zamiast za każdym razem od lo-fi. */
+let resumeAt = { index: 0, playedSec: 0 };
 
 function audioContext(): AudioContext {
-  if (!context) {
-    context = new AudioContext();
-    // Safari 17+: bez tego przełącznik wyciszenia w iPhonie wycisza Web Audio (głos Sawy z <audio> gra dalej)
-    const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
-    if (session) session.type = "playback";
-  }
+  if (!context) context = new AudioContext();
   return context;
+}
+
+/**
+ * Safari 17+: bez tego przełącznik wyciszenia w iPhonie wycisza Web Audio (głos Sawy z <audio>
+ * gra dalej). Ustawiamy raz, przy wejściu na stronę, zanim cokolwiek gra: zmiana kategorii sesji
+ * w trakcie głosu Sawy może go na iOS przerwać.
+ */
+function preparePlaybackSession() {
+  const session = (navigator as Navigator & { audioSession?: { type: string } }).audioSession;
+  if (session && session.type !== "playback") session.type = "playback";
 }
 
 function noiseBuffer(ctx: AudioContext): AudioBuffer {
@@ -50,15 +65,18 @@ function noiseBuffer(ctx: AudioContext): AudioBuffer {
   return noise;
 }
 
+/** Pogłos: odpowiedź impulsowa liczona raz, a nie przy każdej zmianie utworu i każdym wznowieniu. */
 function reverb(ctx: AudioContext): ConvolverNode {
-  const length = Math.floor(ctx.sampleRate * REVERB_SEC);
-  const buffer = ctx.createBuffer(2, length, ctx.sampleRate);
-  for (let c = 0; c < 2; c++) {
-    const data = buffer.getChannelData(c);
-    for (let i = 0; i < length; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / length) ** 3;
+  if (!reverbImpulse) {
+    const length = Math.floor(ctx.sampleRate * REVERB_SEC);
+    reverbImpulse = ctx.createBuffer(2, length, ctx.sampleRate);
+    for (let c = 0; c < 2; c++) {
+      const data = reverbImpulse.getChannelData(c);
+      for (let i = 0; i < length; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / length) ** 3;
+    }
   }
   const node = ctx.createConvolver();
-  node.buffer = buffer;
+  node.buffer = reverbImpulse;
   return node;
 }
 
@@ -197,14 +215,16 @@ function play(ctx: AudioContext, to: AudioNode, event: MusicEvent, t: number) {
 
 /** Trzask płyty: rzadkie kliknięcia na cichym szumie, w pętli. */
 function crackle(ctx: AudioContext, to: AudioNode): AudioBufferSourceNode {
-  const buffer = ctx.createBuffer(1, ctx.sampleRate * 4, ctx.sampleRate);
-  const data = buffer.getChannelData(0);
-  for (let i = 0; i < data.length; i++) {
-    data[i] =
-      Math.random() < 0.00025 ? (Math.random() * 2 - 1) * 0.5 : (Math.random() * 2 - 1) * 0.01;
+  if (!vinylNoise) {
+    vinylNoise = ctx.createBuffer(1, ctx.sampleRate * 4, ctx.sampleRate);
+    const data = vinylNoise.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      data[i] =
+        Math.random() < 0.00025 ? (Math.random() * 2 - 1) * 0.5 : (Math.random() * 2 - 1) * 0.01;
+    }
   }
   const source = ctx.createBufferSource();
-  source.buffer = buffer;
+  source.buffer = vinylNoise;
   source.loop = true;
   const highpass = ctx.createBiquadFilter();
   highpass.type = "highpass";
@@ -217,8 +237,11 @@ function crackle(ctx: AudioContext, to: AudioNode): AudioBufferSourceNode {
   return source;
 }
 
-/** Jeden utwór: wchodzi z wyciszenia i planuje swoje nuty, póki go nie zatrzymamy. */
-function startTrack(ctx: AudioContext, track: Track, to: AudioNode): Playing {
+/**
+ * Jeden utwór: wchodzi z wyciszenia i planuje swoje nuty, póki go nie zatrzymamy.
+ * `playedSec`: ile już grał przed pauzą, żeby zmiana utworu przyszła o czasie.
+ */
+function startTrack(ctx: AudioContext, track: Track, to: AudioNode, playedSec = 0): Playing {
   const now = ctx.currentTime;
   const out = ctx.createGain();
   out.gain.setValueAtTime(0, now);
@@ -234,7 +257,13 @@ function startTrack(ctx: AudioContext, track: Track, to: AudioNode): Playing {
   let n = 0;
   let next = now + 0.1;
   const schedule = () => {
-    while (next < ctx.currentTime + LOOKAHEAD_SEC) {
+    const at = ctx.currentTime;
+    // Po uśpionej karcie zaległe nuty przepadają, zamiast zagrać wszystkie naraz
+    const skip = lateSteps(next, at, track.stepSec);
+    n += skip;
+    next += skip * track.stepSec;
+    const ahead = document.hidden ? HIDDEN_LOOKAHEAD_SEC : LOOKAHEAD_SEC;
+    while (next < at + ahead) {
       for (const event of step(n)) play(ctx, tone, event, next);
       next += track.stepSec;
       n++;
@@ -244,22 +273,20 @@ function startTrack(ctx: AudioContext, track: Track, to: AudioNode): Playing {
   const timer = setInterval(schedule, SCHEDULE_EVERY_MS);
 
   return {
-    startedAt: now,
+    startedAt: now - playedSec,
     stop: () => {
       clearInterval(timer);
       const t = ctx.currentTime;
       out.gain.cancelScheduledValues(t);
-      out.gain.setValueAtTime(out.gain.value, t);
+      // Zatrzymany w trakcie wejścia schodzi z tego miejsca, bez skoku głośności
+      out.gain.setValueAtTime(fadeInLevel(t - now, FADE_SEC), t);
       out.gain.linearRampToValueAtTime(0, t + FADE_SEC);
       vinyl?.stop(t + FADE_SEC);
       // Zaplanowane nuty i pogłos wybrzmiewają w ciszy, potem odpinamy utwór
-      setTimeout(
-        () => {
-          out.disconnect();
-          wet.disconnect();
-        },
-        (FADE_SEC + LOOKAHEAD_SEC + REVERB_SEC) * 1000,
-      );
+      setTimeout(() => {
+        out.disconnect();
+        wet.disconnect();
+      }, RELEASE_MS);
     },
   };
 }
@@ -276,8 +303,8 @@ function startSession(ctx: AudioContext, isSpeaking: () => boolean): Session {
   duck.gain.value = isSpeaking() ? DUCKED_GAIN : 1;
   duck.connect(master);
 
-  let index = 0;
-  let playing = startTrack(ctx, trackAt(index), duck);
+  let index = resumeAt.index;
+  let playing = startTrack(ctx, trackAt(index), duck, resumeAt.playedSec);
   const timer = setInterval(() => {
     if (!shouldSwitchTrack(ctx.currentTime - playing.startedAt, isSpeaking())) return;
     playing.stop();
@@ -289,8 +316,9 @@ function startSession(ctx: AudioContext, isSpeaking: () => boolean): Session {
     duck,
     stop: () => {
       clearInterval(timer);
+      resumeAt = { index, playedSec: Math.max(0, ctx.currentTime - playing.startedAt) };
       playing.stop();
-      setTimeout(() => master.disconnect(), (FADE_SEC + LOOKAHEAD_SEC + REVERB_SEC) * 1000);
+      setTimeout(() => master.disconnect(), RELEASE_MS);
     },
   };
 }
@@ -303,6 +331,8 @@ export function useRideMusic(active: boolean, speaking: boolean) {
   const session = useRef<Session | null>(null);
   const speakingRef = useRef(speaking);
   speakingRef.current = speaking;
+
+  useEffect(preparePlaybackSession, []);
 
   useEffect(() => {
     if (!active) return;

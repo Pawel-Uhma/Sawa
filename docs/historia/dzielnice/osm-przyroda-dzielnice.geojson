@@ -1,0 +1,4754 @@
+{
+ "type": "FeatureCollection",
+ "name": "osm-przyroda-dzielnice",
+ "metadata": {
+  "zebrano": "2026-10-18",
+  "zrodla": "OpenStreetMap (ODbL)",
+  "uwaga": "Pomniki przyrody, rezerwaty, punkty widokowe i nazwane obiekty historyczne w dzielnicach poniżej 15 miejsc na km²."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.046817,
+     52.120494
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-buk-zwyczajny-buk-pospolity-38202104",
+    "nazwa": "Pomnik przyrody: Buk zwyczajny, buk pospolity",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Buk zwyczajny, buk pospolity.",
+     "Obwód pnia: 2,97 m.",
+     "Wysokość: 27 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/38202104"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Wiatalaskabacki.jpg/1280px-Wiatalaskabacki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wiatalaskabacki.jpg",
+      "opis": "Wiata w Lesie Kabackim z tabliczką upamiętniającą \"Dziarskiego Dziadka\"",
+      "autor": "Bartosz Popczyński",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.044319,
+     52.136651
+    ]
+   },
+   "properties": {
+    "id": "osmp-gorka-kazurka-38449976",
+    "nazwa": "Górka Kazurka",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/38449976"
+     },
+     {
+      "tytul": "Wikipedia: Wzgórze Trzech Szczytów",
+      "url": "https://pl.wikipedia.org/wiki/Wzgórze_Trzech_Szczytów"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Kazurka_w_Warszawie_2016_01.jpg/1280px-Kazurka_w_Warszawie_2016_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Kazurka_w_Warszawie_2016_01.jpg",
+      "autor": "Adrian Grycuk",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2016",
+      "zrodlo": "Wikimedia Commons",
+      "opis": "Górka Kazurka"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.959561,
+     52.285217
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-populus-nigra-675090144",
+    "nazwa": "Pomnik przyrody: Populus nigra",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Populus nigra.",
+     "Obwód pnia: 5.84 m.",
+     "Wysokość: 31 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/675090144"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.942798,
+     52.170607
+    ]
+   },
+   "properties": {
+    "id": "osmp-okecie-gorka-spoterska-916251109",
+    "nazwa": "Okęcie - Górka Spoterska",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/916251109"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Boeing_737-8FH_OK-TVF_Travel_Service_%283513377965%29.jpg/1280px-Boeing_737-8FH_OK-TVF_Travel_Service_%283513377965%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Boeing_737-8FH_OK-TVF_Travel_Service_(3513377965).jpg",
+      "opis": "Boeing 737-8FH OK-TVF Travel Service",
+      "autor": "Kuba Bożanowski from Warsaw, Poland",
+      "licencja": "CC BY 2.0",
+      "rok": "2009",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.086398,
+     52.118542
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-1313560038",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 2,72 m.",
+     "Wysokość: 28 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/1313560038"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.083992,
+     52.117901
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-buk-zwyczajny-buk-pospolity-1940731688",
+    "nazwa": "Pomnik przyrody: Buk zwyczajny, buk pospolity",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Buk zwyczajny, buk pospolity.",
+     "Obwód pnia: 2,85 m.",
+     "Wysokość: 31 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/1940731688"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.084077,
+     52.11793
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-buk-zwyczajny-buk-pospolity-1940731695",
+    "nazwa": "Pomnik przyrody: Buk zwyczajny, buk pospolity",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Buk zwyczajny, buk pospolity.",
+     "Obwód pnia: 3,25 m.",
+     "Wysokość: 35 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/1940731695"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.084087,
+     52.117969
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-buk-zwyczajny-buk-pospolity-1940731703",
+    "nazwa": "Pomnik przyrody: Buk zwyczajny, buk pospolity",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Buk zwyczajny, buk pospolity.",
+     "Obwód pnia: 2,8 m.",
+     "Wysokość: 32 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/1940731703"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.08399,
+     52.118039
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-buk-zwyczajny-buk-pospolity-1940731729",
+    "nazwa": "Pomnik przyrody: Buk zwyczajny, buk pospolity",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Buk zwyczajny, buk pospolity.",
+     "Obwód pnia: 3,15 m.",
+     "Wysokość: 27 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/1940731729"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.055337,
+     52.119253
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-1994577688",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 3,29 m.",
+     "Wysokość: 21 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/1994577688"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.927271,
+     52.343254
+    ]
+   },
+   "properties": {
+    "id": "osmp-527-kilometr-wisly-2502537150",
+    "nazwa": "527 Kilometr Wisły",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/2502537150"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Atak_%C5%82ab%C4%99dzi_%284360339870%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Atak_%C5%82ab%C4%99dzi_(4360339870).jpg",
+      "opis": "Atak łabędzi",
+      "autor": "Logofag from Warszawa (Warsaw), Polska (Poland)",
+      "licencja": "CC BY-SA 2.0",
+      "rok": "2010",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.923051,
+     52.224357
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-drobnolistna-2785809373",
+    "nazwa": "Pomnik przyrody: lipa drobnolistna",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: lipa drobnolistna.",
+     "Obwód pnia: 4.10 m.",
+     "Wysokość: 17 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/2785809373"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.90882,
+     52.193275
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-platan-klonolistny-2836052660",
+    "nazwa": "Pomnik przyrody: platan klonolistny",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: platan klonolistny.",
+     "Obwód pnia: 3.51 m.",
+     "Wysokość: 17 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/2836052660"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Szko%C5%82a_dwuj%C4%99zyczna_h2h.jpg/1280px-Szko%C5%82a_dwuj%C4%99zyczna_h2h.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Szko%C5%82a_dwuj%C4%99zyczna_h2h.jpg",
+      "opis": "Dwujęzyczna Szkoła Podstawowa Human to Human, ul. Ryżowa 33B w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.993687,
+     52.204748
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-robinia-akacjowa-3102061259",
+    "nazwa": "Pomnik przyrody: Robinia akacjowa",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Robinia akacjowa.",
+     "Wysokość: 5 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3102061259"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.971865,
+     52.170265
+    ]
+   },
+   "properties": {
+    "id": "osmp-taras-widokowy-lotniska-im-f-chopina-3615794869",
+    "nazwa": "Taras widokowy Lotniska im. F. Chopina",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3615794869"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.951809,
+     52.165766
+    ]
+   },
+   "properties": {
+    "id": "osmp-gorka-spotterska-3615842207",
+    "nazwa": "Górka Spotterska",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy.",
+     "Górka Spotterska przy Lotniskowej Straży Pożarnej"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3615842207"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.231905,
+     52.175855
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-3659427884",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3659427884"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.189447,
+     52.212152
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-3659441410",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 3,95 m.",
+     "Wysokość: 26 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/3659441410"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/2025_Warszawa_Czarno%C5%82%C4%99cka_26%2C_d%C4%85b_szypu%C5%82kowy%2C_1.jpg/1280px-2025_Warszawa_Czarno%C5%82%C4%99cka_26%2C_d%C4%85b_szypu%C5%82kowy%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2025_Warszawa_Czarno%C5%82%C4%99cka_26,_d%C4%85b_szypu%C5%82kowy,_1.jpg",
+      "opis": "Pomnikowy dąb przy ulicy Czarnołęckiej 26 w Warszawie widziany z ulicy Czeladniczej.",
+      "autor": "Cybularny",
+      "licencja": "CC0",
+      "rok": "2025",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.004929,
+     52.193383
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-drzewo-4348454761",
+    "nazwa": "Pomnik przyrody (drzewo)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/4348454761"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.981687,
+     52.19103
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-drzewo-5171330648",
+    "nazwa": "Pomnik przyrody (drzewo)",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/5171330648"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Przychodnia_luxmed_1_sierpnia_fragment.jpg/1280px-Przychodnia_luxmed_1_sierpnia_fragment.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Przychodnia_luxmed_1_sierpnia_fragment.jpg",
+      "opis": "Budynek przy ul. 1 Sierpnia 8 w Warszawie, dawniej część kompleksu biurowego Wiśniowy Business Park. M.in. przychodnia Lux-Med",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.982462,
+     52.194315
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-drzewo-5171330656",
+    "nazwa": "Pomnik przyrody (drzewo)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/5171330656"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Resi4rent_skrzy%C5%BCowanie_woronicza_ze_%C5%BCwirki_i_wigury.jpg/1280px-Resi4rent_skrzy%C5%BCowanie_woronicza_ze_%C5%BCwirki_i_wigury.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Resi4rent_skrzy%C5%BCowanie_woronicza_ze_%C5%BCwirki_i_wigury.jpg",
+      "opis": "Blok Resi4Rent przy ul. Białej Floty 1 w rejonie osiedli Marina Mokotów i Marina Mokotów 2 w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.932433,
+     52.280917
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-jesion-wyniosly-6258744462",
+    "nazwa": "Pomnik przyrody: Jesion wyniosły",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Jesion wyniosły."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/6258744462"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Pomnik_przyrody_-_Jesion_wynios%C5%82y.jpg/1280px-Pomnik_przyrody_-_Jesion_wynios%C5%82y.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnik_przyrody_-_Jesion_wynios%C5%82y.jpg",
+      "opis": "This is a photography of protected area with CRFOP ID",
+      "autor": "PKrawcz",
+      "licencja": "CC BY 3.0",
+      "rok": "2016",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.885675,
+     52.194064
+    ]
+   },
+   "properties": {
+    "id": "osmp-kazimierz-szklarczyk-6267820883",
+    "nazwa": "Kazimierz Szklarczyk",
+    "typ": "pomnik",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Ksiądz Infułat\nKazimierz Szklarczyk\nDziekan Dekanatu\nWarszawa - Ursus\nProboszcz tut. parafii\nw latach 1973 - 2001\nBudowniczy kościołów \nW Ursusie\nŻył lat 71\nW kapłaństwie lat 45\nzm. 29.X.2001”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/6267820883"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Ursus%2C_ko%C5%9Bci%C3%B3%C5%82_%C5%9Aw._J%C3%B3zefa_Oblubie%C5%84ca_N.M.P._-_panoramio.jpg/1280px-Ursus%2C_ko%C5%9Bci%C3%B3%C5%82_%C5%9Aw._J%C3%B3zefa_Oblubie%C5%84ca_N.M.P._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ursus,_ko%C5%9Bci%C3%B3%C5%82_%C5%9Aw._J%C3%B3zefa_Oblubie%C5%84ca_N.M.P._-_panoramio.jpg",
+      "opis": "Ursus, kościół Św. Józefa Oblubieńca N.M.P.",
+      "autor": "Rafał Klisowski",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.966043,
+     52.160329
+    ]
+   },
+   "properties": {
+    "id": "osmp-paluch-gorka-spotterska-6352841110",
+    "nazwa": "Paluch - Górka Spotterska",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/6352841110"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.898744,
+     52.243521
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomost-widokowy-6913075088",
+    "nazwa": "Pomost widokowy",
+    "typ": "miejsce",
+    "dzielnica": "Bemowo",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/6913075088"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.089796,
+     52.114938
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-brzoza-brodawkowata-brzoza-zwisla-7924133882",
+    "nazwa": "Pomnik przyrody: Brzoza brodawkowata, brzoza zwisła",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Brzoza brodawkowata, brzoza zwisła.",
+     "Obwód pnia: 2.52, 1.88 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/7924133882"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.982785,
+     52.194294
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-drzewo-8211187836",
+    "nazwa": "Pomnik przyrody (drzewo)",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8211187836"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Ulica_bia%C5%82ej_floty.jpg/1280px-Ulica_bia%C5%82ej_floty.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ulica_bia%C5%82ej_floty.jpg",
+      "opis": "ulica Białej Floty w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.981784,
+     52.191354
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-drzewo-8211187839",
+    "nazwa": "Pomnik przyrody (drzewo)",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8211187839"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Novotel_ok%C4%99cie_za_skrzy%C5%BCowaniem.jpg/1280px-Novotel_ok%C4%99cie_za_skrzy%C5%BCowaniem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Novotel_ok%C4%99cie_za_skrzy%C5%BCowaniem.jpg",
+      "opis": "Hotel Novotel Warszawa Airport",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2022",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.944147,
+     52.318531
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-quercus-robur-8364877294",
+    "nazwa": "Pomnik przyrody: Quercus robur",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Quercus robur.",
+     "Obwód pnia: 512 cm.",
+     "Wysokość: 27 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8364877294"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.165461,
+     52.188083
+    ]
+   },
+   "properties": {
+    "id": "osmp-mogila-zolnierska-8510379815",
+    "nazwa": "Mogiła żołnierska",
+    "typ": "pomnik",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „Andrzej Steciuk. Żołnierz polski. 1900 1944”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/8510379815"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.014158,
+     52.168821
+    ]
+   },
+   "properties": {
+    "id": "osmp-molo-sluzewieckie-9067468439",
+    "nazwa": "Molo Służewieckie",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Punkt widokowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9067468439"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.881112,
+     52.308652
+    ]
+   },
+   "properties": {
+    "id": "osmp-miejsce-uswiecone-krwia-polakow-dn-26-lipca-1943-r-9336588346",
+    "nazwa": "MIEJSCE UŚWIĘCONE KRWIĄ POLAKÓW DN 26 LIPCA 1943 R",
+    "typ": "pomnik",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „MIEJSCE UŚWIĘCONE\nKRWIĄ POLAKÓW\nDN 26 LIPCA 1943 R\nHITLEROWCY ZAMORDOWALI\n1 OSOBĘ”.",
+     "Od swojego dziadka dowiedział się w jakich okolicznościach zginął ten człowiek. Nagrałem tę opowieść na dyktafon i swoimi słowami ją przedstawię.\nPodczas wojny w miejscu, gdzie obecnie znajduje się ta symboliczna mogiła, było pole, na którym rosły ziemnia"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9336588346"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.864947,
+     52.201758
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-9347648954",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 3.18 m.",
+     "Wysokość: 26 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9347648954"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.864773,
+     52.201654
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-9405827647",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 2.84 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9405827647"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.864691,
+     52.201464
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-szerokolistna-9405827807",
+    "nazwa": "Pomnik przyrody: lipa szerokolistna",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: lipa szerokolistna.",
+     "Obwód pnia: 3.62 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9405827807"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.868047,
+     52.199264
+    ]
+   },
+   "properties": {
+    "id": "osmp-mogila-zbiorowa-zolnierzy-poleglych-w-walkach-w-1939-9717867723",
+    "nazwa": "Mogiła zbiorowa żołnierzy poległych w walkach w 1939",
+    "typ": "pomnik",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Napis: „17 żołnierzom poległym w walkach w 1939r.\nSpołeczeństwo Ursusa”."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/9717867723"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Cmentarz_w_Go%C5%82%C4%85bkach_DM2.JPG/1280px-Cmentarz_w_Go%C5%82%C4%85bkach_DM2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Cmentarz_w_Go%C5%82%C4%85bkach_DM2.JPG",
+      "opis": "Cmentarz parafialny rzymskokatolicki (tzw. piastowski) w Gołąbkach, groby harcerzy, 1928\nul. Bohdana Żołądkowskiego, Warszawa, dz. Ursus",
+      "autor": "Dominika Maria Styczyńska",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.21535,
+     52.212831
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-10830352153",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wesoła",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 4,43 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/10830352153"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933652,
+     52.358645
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-11011141831",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 4.40 m.",
+     "Wysokość: 24 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011141831"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933212,
+     52.359023
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-11011141832",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 3.86 m.",
+     "Wysokość: 26 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011141832"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933787,
+     52.358534
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-11011141833",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 3.90 m.",
+     "Wysokość: 24.5 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011141833"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933273,
+     52.35897
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-11011141834",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 3.86 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011141834"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.951604,
+     52.35678
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-11011141835",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 5.37 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011141835"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933528,
+     52.358783
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-11011141836",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 4.33 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011141836"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.95119,
+     52.35563
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-drobnolistna-11011141837",
+    "nazwa": "Pomnik przyrody: lipa drobnolistna",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: lipa drobnolistna.",
+     "Obwód pnia: 4.05 m.",
+     "Wysokość: 22 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011141837"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/2017_Warszawa_Chlubna-Czajki_krzy%C5%BC_2.jpg/1280px-2017_Warszawa_Chlubna-Czajki_krzy%C5%BC_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Warszawa_Chlubna-Czajki_krzy%C5%BC_2.jpg",
+      "opis": "Krzyż na rogu ulic Chlubnej i Czajki na warszawskiej Białołęce.",
+      "autor": "Cybularny",
+      "licencja": "CC0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.876513,
+     52.193179
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-drobnolistna-11011188790",
+    "nazwa": "Pomnik przyrody: lipa drobnolistna",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: lipa drobnolistna.",
+     "Wysokość: 26 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188790"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865727,
+     52.201927
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-drobnolistna-11011188791",
+    "nazwa": "Pomnik przyrody: lipa drobnolistna",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: lipa drobnolistna.",
+     "Obwód pnia: 3.76 m.",
+     "Wysokość: 22 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188791"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.89455,
+     52.195998
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-11011188792",
+    "nazwa": "Pomnik przyrody: dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: dąb szypułkowy.",
+     "Obwód pnia: 3.12 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188792"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Park_achera.jpg/1280px-Park_achera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Park_achera.jpg",
+      "opis": "Park Achera w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.894385,
+     52.197616
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-drobnolistna-11011188793",
+    "nazwa": "Pomnik przyrody: lipa drobnolistna",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: lipa drobnolistna.",
+     "Obwód pnia: 3.40 m.",
+     "Wysokość: 22 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188793"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Lipa_na_nowotyskiej.jpg/1280px-Lipa_na_nowotyskiej.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Lipa_na_nowotyskiej.jpg",
+      "opis": "Lipa na podwórku przy ulicy Nowotyskiej 20 w Warszawie, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865285,
+     52.202284
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-zywotnik-zachodni-11011188794",
+    "nazwa": "Pomnik przyrody: żywotnik zachodni",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: żywotnik zachodni.",
+     "Obwód pnia: 2.15 m.",
+     "Wysokość: 13 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188794"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865264,
+     52.20225
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-zywotnik-zachodni-11011188795",
+    "nazwa": "Pomnik przyrody: żywotnik zachodni",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: żywotnik zachodni.",
+     "Obwód pnia: 1.67 m.",
+     "Wysokość: 13 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188795"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865527,
+     52.202453
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-brzoza-brodawkowata-11011188796",
+    "nazwa": "Pomnik przyrody: brzoza brodawkowata",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: brzoza brodawkowata.",
+     "Obwód pnia: 2.24 m.",
+     "Wysokość: 17 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188796"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865961,
+     52.202146
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-klon-pospolity-11011188797",
+    "nazwa": "Pomnik przyrody: klon pospolity",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: klon pospolity.",
+     "Obwód pnia: 3.91 m.",
+     "Wysokość: 19 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188797"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.895689,
+     52.195222
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-kasztanowiec-zwyczajny-11011188798",
+    "nazwa": "Pomnik przyrody: kasztanowiec zwyczajny",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: kasztanowiec zwyczajny.",
+     "Obwód pnia: 3.26 m.",
+     "Wysokość: 20 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188798"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.865328,
+     52.20193
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-klon-jawor-11011188799",
+    "nazwa": "Pomnik przyrody: klon jawor",
+    "typ": "miejsce",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: klon jawor.",
+     "Obwód pnia: 2.79 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/11011188799"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.970174,
+     52.278111
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-quercus-robur-12128693651",
+    "nazwa": "Pomnik przyrody: Quercus robur",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Quercus robur.",
+     "Obwód pnia: 3.91 m.",
+     "Wysokość: 20 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128693651"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pomnik_przyrody_d%C4%85b_h%C5%82aski_rudzka_warszawa.jpg/1280px-Pomnik_przyrody_d%C4%85b_h%C5%82aski_rudzka_warszawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnik_przyrody_d%C4%85b_h%C5%82aski_rudzka_warszawa.jpg",
+      "opis": "Dąb szypułkowy na skwerze na rogu ulic Rudzkiej i Hłaski w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2019",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.959555,
+     52.296179
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-platan-klonolistny-12128725625",
+    "nazwa": "Pomnik przyrody: Platan klonolistny",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Platan klonolistny.",
+     "Obwód pnia: 3.49 m.",
+     "Wysokość: 22 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128725625"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/3/34/Ko%C5%9Bci%C3%B3%C5%82_pw._Niepokalanego_Pocz%C4%99cia_NMP_Warszawa_Bielany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Ko%C5%9Bci%C3%B3%C5%82_pw._Niepokalanego_Pocz%C4%99cia_NMP_Warszawa_Bielany.jpg",
+      "opis": "Dewajtis 3, 01-815 Warszawa",
+      "autor": "MazowieckiPielgrzym",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2013",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.959335,
+     52.295936
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-platan-klonolistny-12128725626",
+    "nazwa": "Pomnik przyrody: Platan klonolistny",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Platan klonolistny.",
+     "Obwód pnia: 3.33 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128725626"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Warsaw_rococo_portal_church_Bielany.jpg/1280px-Warsaw_rococo_portal_church_Bielany.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warsaw_rococo_portal_church_Bielany.jpg",
+      "opis": "portal rokokowy w kościele kamedułów na Bielanach w Warszawie",
+      "autor": "Konarski",
+      "licencja": "CC0",
+      "rok": "28 A",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.961049,
+     52.279057
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-populus-nigra-12128736593",
+    "nazwa": "Pomnik przyrody: Populus nigra",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Populus nigra.",
+     "Obwód pnia: 6.16 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128736593"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Topola_smole%C5%84skiego_2.jpg/1280px-Topola_smole%C5%84skiego_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Topola_smole%C5%84skiego_2.jpg",
+      "opis": "Topola czarna na boisku szkoły przy ulicy Smoleńskiego 31 w Warszawie. Pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2019",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.955529,
+     52.282232
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-drzewo-12128736594",
+    "nazwa": "Pomnik przyrody (drzewo)",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Obwód pnia: 3.03 m.",
+     "Wysokość: 18 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128736594"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.971046,
+     52.276355
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-quercus-robur-12128736595",
+    "nazwa": "Pomnik przyrody: Quercus robur",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Quercus robur.",
+     "Obwód pnia: 3.47 m.",
+     "Wysokość: 10 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128736595"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Place_of_National_Memory_at_12_Gda%C5%84ska_Street_in_Warsaw_-_01.jpg/1280px-Place_of_National_Memory_at_12_Gda%C5%84ska_Street_in_Warsaw_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Place_of_National_Memory_at_12_Gda%C5%84ska_Street_in_Warsaw_-_01.jpg",
+      "opis": "Place of National Memory at 12 Gdańska Street in Warsaw",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2013",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.96712,
+     52.277644
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-alnus-glutinosa-12128736597",
+    "nazwa": "Pomnik przyrody: Alnus glutinosa",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Alnus glutinosa.",
+     "Obwód pnia: 2.60 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128736597"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Stawy_kellera_pomnikowa_olsza_ni%C5%BCsza_12.jpg/1280px-Stawy_kellera_pomnikowa_olsza_ni%C5%BCsza_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Stawy_kellera_pomnikowa_olsza_ni%C5%BCsza_12.jpg",
+      "opis": "Pomnikowe olsze czarne w parku Stawy Kellera w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.966868,
+     52.277542
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-alnus-glutinosa-12128736598",
+    "nazwa": "Pomnik przyrody: Alnus glutinosa",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Alnus glutinosa.",
+     "Obwód pnia: 3.03 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12128736598"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Stawy_kellera_pomnikowa_olsza_ni%C5%BCsza_12.jpg/1280px-Stawy_kellera_pomnikowa_olsza_ni%C5%BCsza_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Stawy_kellera_pomnikowa_olsza_ni%C5%BCsza_12.jpg",
+      "opis": "Pomnikowe olsze czarne w parku Stawy Kellera w Warszawie",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.965012,
+     52.275583
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-quercus-robur-12140906708",
+    "nazwa": "Pomnik przyrody: Quercus robur",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Quercus robur.",
+     "Wysokość: 20 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906708"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/D%C4%99by_na_s%C5%82owia%C5%84skiej_03.jpg/1280px-D%C4%99by_na_s%C5%82owia%C5%84skiej_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:D%C4%99by_na_s%C5%82owia%C5%84skiej_03.jpg",
+      "opis": "Dwa dęby szypułkowe na rogu al. Słowiańskiej i ul. Marymonckiej. Pomnik przyrody.",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.965092,
+     52.275614
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-quercus-robur-12140906709",
+    "nazwa": "Pomnik przyrody: Quercus robur",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Quercus robur.",
+     "Wysokość: 20 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906709"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/D%C4%99by_na_s%C5%82owia%C5%84skiej_03.jpg/1280px-D%C4%99by_na_s%C5%82owia%C5%84skiej_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:D%C4%99by_na_s%C5%82owia%C5%84skiej_03.jpg",
+      "opis": "Dwa dęby szypułkowe na rogu al. Słowiańskiej i ul. Marymonckiej. Pomnik przyrody.",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.968921,
+     52.275939
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-quercus-robur-12140906710",
+    "nazwa": "Pomnik przyrody: Quercus robur",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Quercus robur.",
+     "Obwód pnia: 3.18 m.",
+     "Wysokość: 22 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906710"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Pomnikowy_d%C4%85b_kolektorska.jpg/1280px-Pomnikowy_d%C4%85b_kolektorska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowy_d%C4%85b_kolektorska.jpg",
+      "opis": "Dąb szypułkowy na granicy działek Kolektorska 24b i 26. Warszawa. Pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.969918,
+     52.280507
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-juniperus-virginiana-12140906711",
+    "nazwa": "Pomnik przyrody: Juniperus virginiana",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Juniperus virginiana."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906711"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Pomnikowe_ja%C5%82owce_%C5%82omia%C5%84ska.jpg/1280px-Pomnikowe_ja%C5%82owce_%C5%82omia%C5%84ska.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowe_ja%C5%82owce_%C5%82omia%C5%84ska.jpg",
+      "opis": "Trzy jałowce wirginijskie w ogródku domu przy ulicy Łomiańskiej 10 w Warszawie. Pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2019",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.931571,
+     52.285988
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-salix-fragilis-12140906714",
+    "nazwa": "Pomnik przyrody: Salix fragilis",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Salix fragilis.",
+     "Obwód pnia: 3.28 m.",
+     "Wysokość: 28 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906714"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.928763,
+     52.280884
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-acer-platanoides-12140906715",
+    "nazwa": "Pomnik przyrody: Acer platanoides",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Acer platanoides."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906715"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/POL_Warszyszew_Warsaw_old_church.JPG/1280px-POL_Warszyszew_Warsaw_old_church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:POL_Warszyszew_Warsaw_old_church.JPG",
+      "opis": "Kościół parafialny pw. św. Marii Magdaleny na Wawrzyszewie, Warszawa",
+      "autor": "Hiuppo",
+      "licencja": "CC BY 3.0",
+      "rok": "2007",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.928979,
+     52.280617
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-acer-platanoides-12140906716",
+    "nazwa": "Pomnik przyrody: Acer platanoides",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Acer platanoides."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906716"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/POL_Warsawa_Wawrzyszew_new_church.JPG/1280px-POL_Warsawa_Wawrzyszew_new_church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:POL_Warsawa_Wawrzyszew_new_church.JPG",
+      "opis": "Kościół pw. Maryi Matki Zawierzenia na Wawrzyszewie, Warszawa",
+      "autor": "Hiuppo",
+      "licencja": "CC BY 3.0",
+      "rok": "2007",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.928788,
+     52.28064
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-acer-platanoides-12140906717",
+    "nazwa": "Pomnik przyrody: Acer platanoides",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Acer platanoides."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906717"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/POL_Warsawa_Wawrzyszew_new_church.JPG/1280px-POL_Warsawa_Wawrzyszew_new_church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:POL_Warsawa_Wawrzyszew_new_church.JPG",
+      "opis": "Kościół pw. Maryi Matki Zawierzenia na Wawrzyszewie, Warszawa",
+      "autor": "Hiuppo",
+      "licencja": "CC BY 3.0",
+      "rok": "2007",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.928922,
+     52.280877
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-acer-platanoides-12140906718",
+    "nazwa": "Pomnik przyrody: Acer platanoides",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Acer platanoides."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906718"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/POL_Warsawa_Wawrzyszew_new_church.JPG/1280px-POL_Warsawa_Wawrzyszew_new_church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:POL_Warsawa_Wawrzyszew_new_church.JPG",
+      "opis": "Kościół pw. Maryi Matki Zawierzenia na Wawrzyszewie, Warszawa",
+      "autor": "Hiuppo",
+      "licencja": "CC BY 3.0",
+      "rok": "2007",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.929076,
+     52.280856
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-acer-platanoides-12140906719",
+    "nazwa": "Pomnik przyrody: Acer platanoides",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Acer platanoides."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906719"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Wawrzyszew_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marii_Magdaleny_tablica_partyzant%C3%B3w.jpg/1280px-Wawrzyszew_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marii_Magdaleny_tablica_partyzant%C3%B3w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wawrzyszew_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marii_Magdaleny_tablica_partyzant%C3%B3w.jpg",
+      "opis": "Tablica poświęcona partyzantom z Armii Krajowej na murach kościoła św. Marii Magdaleny na Wawrzyszewie w Warszawie.",
+      "autor": "Bartek z Polski",
+      "licencja": "CC0",
+      "rok": "2024",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.929211,
+     52.280835
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-acer-platanoides-12140906720",
+    "nazwa": "Pomnik przyrody: Acer platanoides",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Acer platanoides."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906720"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Wawrzyszew_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marii_Magdaleny_tablica_partyzant%C3%B3w.jpg/1280px-Wawrzyszew_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marii_Magdaleny_tablica_partyzant%C3%B3w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wawrzyszew_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Marii_Magdaleny_tablica_partyzant%C3%B3w.jpg",
+      "opis": "Tablica poświęcona partyzantom z Armii Krajowej na murach kościoła św. Marii Magdaleny na Wawrzyszewie w Warszawie.",
+      "autor": "Bartek z Polski",
+      "licencja": "CC0",
+      "rok": "2024",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.928531,
+     52.280652
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-ulmus-laevis-12140906721",
+    "nazwa": "Pomnik przyrody: Ulmus laevis",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Ulmus laevis.",
+     "Wysokość: 19 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906721"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/POL_Warsawa_Wawrzyszew_new_church.JPG/1280px-POL_Warsawa_Wawrzyszew_new_church.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:POL_Warsawa_Wawrzyszew_new_church.JPG",
+      "opis": "Kościół pw. Maryi Matki Zawierzenia na Wawrzyszewie, Warszawa",
+      "autor": "Hiuppo",
+      "licencja": "CC BY 3.0",
+      "rok": "2007",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.909286,
+     52.295458
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-quercus-robur-12140906722",
+    "nazwa": "Pomnik przyrody: Quercus robur",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Quercus robur.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12140906722"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.940783,
+     52.319189
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-drzewo-12345995792",
+    "nazwa": "Pomnik przyrody (drzewo)",
+    "typ": "miejsce",
+    "dzielnica": "Białołęka",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Obwód pnia: 420 cm.",
+     "Wysokość: 21 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12345995792"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/2026_Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jakuba%2C_1.jpg/1280px-2026_Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jakuba%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2026_Warszawa_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Jakuba,_1.jpg",
+      "opis": "Kościół św. Jakuba w Warszawie.",
+      "autor": "Cybularny",
+      "licencja": "CC BY 4.0",
+      "rok": "2026",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.226917,
+     52.193889
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-12714122995",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12714122995"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/D%C4%85b_szypu%C5%82kowy_pomnik_przyrody_1.jpg/1280px-D%C4%85b_szypu%C5%82kowy_pomnik_przyrody_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:D%C4%85b_szypu%C5%82kowy_pomnik_przyrody_1.jpg",
+      "opis": "Pomnik przyrody Dąb szypułkowy.",
+      "autor": "Mrksmlk",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.226692,
+     52.194109
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-12714122996",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12714122996"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.960016,
+     52.297497
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-12729661077",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Bielany",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12729661077"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.911332,
+     52.207068
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-tulipanowiec-amerykanski-12775765398",
+    "nazwa": "Pomnik przyrody: Tulipanowiec amerykański",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Tulipanowiec amerykański.",
+     "Obwód pnia: 0.329 m.",
+     "Wysokość: 28 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775765398"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85_z_pniem_tulipanowca.jpg/1280px-Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85_z_pniem_tulipanowca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85_z_pniem_tulipanowca.jpg",
+      "opis": "Platan klonolistny w parku Kombatantów w Warszawie, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.911152,
+     52.207044
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-platan-klonolistny-12775765620",
+    "nazwa": "Pomnik przyrody: Platan klonolistny",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Platan klonolistny.",
+     "Obwód pnia: 0.357 m.",
+     "Wysokość: 28 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775765620"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Sosna_D732591_z_surmi%C4%85.jpg/1280px-Sosna_D732591_z_surmi%C4%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Sosna_D732591_z_surmi%C4%85.jpg",
+      "opis": "Północna, nieco większa z dwóch sosen czarnych w warszawskim parku Kombatantów uznanych za pomniki przyrody, numer D732591 w warszawskiej bazie zieleni",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.911415,
+     52.206923
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-sosna-czarna-12775765636",
+    "nazwa": "Pomnik przyrody: Sosna czarna",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Sosna czarna.",
+     "Obwód pnia: 0.245 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775765636"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85_z_pniem_tulipanowca.jpg/1280px-Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85_z_pniem_tulipanowca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85_z_pniem_tulipanowca.jpg",
+      "opis": "Platan klonolistny w parku Kombatantów w Warszawie, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.911332,
+     52.206775
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-sosna-czarna-12775765637",
+    "nazwa": "Pomnik przyrody: Sosna czarna",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Sosna czarna.",
+     "Obwód pnia: 0.239 m.",
+     "Wysokość: 20 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775765637"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85.jpg/1280px-Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowy_platan_w_parku_kombatant%C3%B3w_jesieni%C4%85.jpg",
+      "opis": "Platan klonolistny w parku Kombatantów w Warszawie, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.912463,
+     52.207764
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-drobnolistna-12775765981",
+    "nazwa": "Pomnik przyrody: Lipa drobnolistna",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Lipa drobnolistna.",
+     "Obwód pnia: 0.433 m.",
+     "Wysokość: 18 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775765981"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Og%C5%82owiona_pomnikowa_lipa_w_parku_kombatant%C3%B3w_pie%C5%84_bez_kory.jpg/1280px-Og%C5%82owiona_pomnikowa_lipa_w_parku_kombatant%C3%B3w_pie%C5%84_bez_kory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Og%C5%82owiona_pomnikowa_lipa_w_parku_kombatant%C3%B3w_pie%C5%84_bez_kory.jpg",
+      "opis": "Jedna z lip drobnolistnych w parku Kombatantów w Warszawie, nr w warszawskiej bazie zieleni D732687, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.912698,
+     52.207944
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-kasztanowiec-zwyczajny-12775766077",
+    "nazwa": "Pomnik przyrody: Kasztanowiec zwyczajny",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Kasztanowiec zwyczajny.",
+     "Obwód pnia: 0.299 m.",
+     "Wysokość: 26 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775766077"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Kasztanowiec_w_parku_kombatatnt%C3%B3w_u_zbiegu_cienistej_zdobniczej_i_obro%C5%84c%C3%B3w_pokoju.jpg/1280px-Kasztanowiec_w_parku_kombatatnt%C3%B3w_u_zbiegu_cienistej_zdobniczej_i_obro%C5%84c%C3%B3w_pokoju.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Kasztanowiec_w_parku_kombatatnt%C3%B3w_u_zbiegu_cienistej_zdobniczej_i_obro%C5%84c%C3%B3w_pokoju.jpg",
+      "opis": "Kasztanowiec zwyczajny w parku Kombatantów w Warszawie przy bramie wychodzącej na ulicę Zdobniczą, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.913436,
+     52.206533
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-klon-polny-12775766348",
+    "nazwa": "Pomnik przyrody: Klon polny",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Klon polny.",
+     "Obwód pnia: 0.382 m.",
+     "Wysokość: 15 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775766348"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Pomnikowy_klon_park_kombatant%C3%B3w.jpg/1280px-Pomnikowy_klon_park_kombatant%C3%B3w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowy_klon_park_kombatant%C3%B3w.jpg",
+      "opis": "Klon polny w parku Kombatantów w Warszawie, drzewo nr D663931 w warszawskiej bazie zieleni, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.913225,
+     52.206553
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-lipa-drobnolistna-12775766349",
+    "nazwa": "Pomnik przyrody: Lipa drobnolistna",
+    "typ": "miejsce",
+    "dzielnica": "Włochy",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Lipa drobnolistna.",
+     "Obwód pnia: 0.370 m.",
+     "Wysokość: 26 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12775766349"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ],
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Pomnikowa_lipa_w_parku_kombatant%C3%B3w_w_grupie.jpg/1280px-Pomnikowa_lipa_w_parku_kombatant%C3%B3w_w_grupie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Pomnikowa_lipa_w_parku_kombatant%C3%B3w_w_grupie.jpg",
+      "opis": "Jedna z lip drobnolistnych w parku Kombatantów w Warszawie, nr w warszawskiej bazie zieleni D663932, pomnik przyrody",
+      "autor": "Panek",
+      "licencja": "CC BY-SA 4.0",
+      "rok": "2021",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.067173,
+     52.18322
+    ]
+   },
+   "properties": {
+    "id": "osmp-280mm-schneider-wz-1914-12974928877",
+    "nazwa": "280mm Schneider wz.1914",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Moździerz oblężniczy Schneidera kal. 280 mm wz. 1914. Moździerz wprowadziła na rynek zbrojeniowy w 1914 r. francuska firma Schneider pod oznaczeniem Mortier de 280 TR modèle 1914 Schneider. Skrót TR pochodził od Tir Rapide – szybkostrzelny."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/12974928877"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Sadyba1_DSC0689.JPG/1280px-Sadyba1_DSC0689.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Sadyba1_DSC0689.JPG",
+      "opis": "Fort IX Warschau",
+      "autor": "Wistula",
+      "licencja": "CC BY 3.0",
+      "rok": "2010",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.227348,
+     52.213634
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-13148155271",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wesoła",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13148155271"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.069771,
+     52.120685
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-modrzew-europejski-13484978487",
+    "nazwa": "Pomnik przyrody: Modrzew europejski",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Modrzew europejski.",
+     "Obwód pnia: 2,39 m.",
+     "Wysokość: 30 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13484978487"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.074517,
+     52.122588
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-sosna-zwyczajna-13484978488",
+    "nazwa": "Pomnik przyrody: Sosna zwyczajna",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Sosna zwyczajna.",
+     "Obwód pnia: 3,06 m.",
+     "Wysokość: 28 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13484978488"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.052728,
+     52.11991
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-sosna-zwyczajna-13484978490",
+    "nazwa": "Pomnik przyrody: Sosna zwyczajna",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Sosna zwyczajna.",
+     "Obwód pnia: 2,52 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13484978490"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.02659,
+     52.124183
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-13484978492",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Ursynów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 3,95 m.",
+     "Wysokość: 30 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13484978492"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.215472,
+     52.216283
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-13500789607",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wesoła",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 3,8 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13500789607"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.214759,
+     52.21417
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-13500789608",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wesoła",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 3,85 m.",
+     "Wysokość: 25 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13500789608"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.223368,
+     52.217183
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-13500789609",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wesoła",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 3,87 m.",
+     "Wysokość: 23 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13500789609"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.23398,
+     52.219875
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-grusza-pospolita-13500789610",
+    "nazwa": "Pomnik przyrody: Grusza pospolita",
+    "typ": "miejsce",
+    "dzielnica": "Wesoła",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Grusza pospolita.",
+     "Obwód pnia: 2,9 m.",
+     "Wysokość: 10 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/13500789610"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.169365,
+     52.225448
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-dab-szypulkowy-14081817932",
+    "nazwa": "Pomnik przyrody: Dąb szypułkowy",
+    "typ": "miejsce",
+    "dzielnica": "Wawer",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Dąb szypułkowy.",
+     "Obwód pnia: 3,23 m.",
+     "Wysokość: 22 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/14081817932"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.024608,
+     52.194727
+    ]
+   },
+   "properties": {
+    "id": "osmp-pomnik-przyrody-jesion-wyniosly-14127245607",
+    "nazwa": "Pomnik przyrody: Jesion wyniosły",
+    "typ": "miejsce",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Drzewo objęte ochroną jako pomnik przyrody.",
+     "Gatunek: Jesion wyniosły.",
+     "Obwód pnia: 2,54 m.",
+     "Wysokość: 24 m."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/node/14127245607"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "tagi": [
+     "nature"
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.022003,
+     52.155308
+    ]
+   },
+   "properties": {
+    "id": "osmp-dom-dzokeja-99224118",
+    "nazwa": "Dom Dżokeja",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Barwna 8",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1932."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/99224118"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.022559,
+     52.156015
+    ]
+   },
+   "properties": {
+    "id": "osmp-czerwoniak-99232847",
+    "nazwa": "Czerwoniak",
+    "typ": "budynek",
+    "dzielnica": "Ursynów",
+    "adres_dzis": "Eugeniusza Romera 8A",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Jeden z najstarszych budynków na Ursynowie, opuszczony, z zamurowanymi oknami."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/99232847"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://upload.wikimedia.org/wikipedia/commons/4/41/Solaris_Urbino_12III%2C_-A009%2C_%22Mobilis%22_Mo%C5%9Bciska_Dept_Warsaw_%2825428559604%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "url": "https://commons.wikimedia.org/wiki/File:Solaris_Urbino_12III,_-A009,_%22Mobilis%22_Mo%C5%9Bciska_Dept_Warsaw_(25428559604).jpg",
+      "opis": "Warszawa - Ursynów. Romera street. 25.03.2016 r.",
+      "autor": "Janusz Jakubowski from Warsaw, Poland",
+      "licencja": "CC BY 2.0",
+      "rok": "2016",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.088452,
+     52.164729
+    ]
+   },
+   "properties": {
+    "id": "osmp-kordegarda-111646527",
+    "nazwa": "Kordegarda",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1775..1778."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/111646527"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Wilan%C3%B3w_guardhouse_02.jpg/1280px-Wilan%C3%B3w_guardhouse_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wilan%C3%B3w_guardhouse_02.jpg",
+      "opis": "Guardhouse from 1775-78 in the Wilanów palace complex in Warsaw.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.088963,
+     52.164706
+    ]
+   },
+   "properties": {
+    "id": "osmp-dawna-oficyna-kuchenna-111646529",
+    "nazwa": "dawna oficyna kuchenna",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1775..1778."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/111646529"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Wilan%C3%B3w_palace_kitchen_02.jpg/1280px-Wilan%C3%B3w_palace_kitchen_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wilan%C3%B3w_palace_kitchen_02.jpg",
+      "opis": "Kitchen building from 1775-78 at the Wilanów palace complex in Warsaw.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.089749,
+     52.167136
+    ]
+   },
+   "properties": {
+    "id": "osmp-dawny-szpital-sw-aleksandra-136551468",
+    "nazwa": "dawny szpital św. Aleksandra",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1845..1847.",
+     "dawny szpital św. Aleksandra"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/136551468"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/281012_Chapel_at_Wilan%C3%B3w_Cemetery_-_02.jpg/1280px-281012_Chapel_at_Wilan%C3%B3w_Cemetery_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:281012_Chapel_at_Wilan%C3%B3w_Cemetery_-_02.jpg",
+      "opis": "Chapel at Wilanów Cemetery",
+      "autor": "Jolanta Dyr",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.088573,
+     52.166425
+    ]
+   },
+   "properties": {
+    "id": "osmp-stajnie-ogrodowe-z-figarnia-136552051",
+    "nazwa": "Stajnie ogrodowe z figarnią",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: ~mid C19."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/136552051"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Wilanow_palace_-_panoramio.jpg/1280px-Wilanow_palace_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wilanow_palace_-_panoramio.jpg",
+      "opis": "Wilanow palace",
+      "autor": "Laima Gūtmane (simka…",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "Take",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.089646,
+     52.166422
+    ]
+   },
+   "properties": {
+    "id": "osmp-oranzeria-159142844",
+    "nazwa": "Oranżeria",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Stanisława Kostki Potockiego 10/16",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: mid C18."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/159142844"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Wilan%C3%B3w_orangery_02.jpg/1280px-Wilan%C3%B3w_orangery_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wilan%C3%B3w_orangery_02.jpg",
+      "opis": "Orangery building in the Wilanów palace complex.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.04254,
+     52.278512
+    ]
+   },
+   "properties": {
+    "id": "osmp-kosciol-pw-swietego-wincentego-a-paulo-169157740",
+    "nazwa": "Kościół pw. Świętego Wincentego à Paulo",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Świętego Wincentego 81",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "kościół drewniany"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/169157740"
+     },
+     {
+      "tytul": "Wikipedia: Kościół św. Wincentego à Paulo w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Kościół_św._Wincentego_à_Paulo_w_Warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Wincentego_%C3%A0_Paulo_w_Warszawie_2023.jpg/1280px-Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Wincentego_%C3%A0_Paulo_w_Warszawie_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Wincentego_%C3%A0_Paulo_w_Warszawie_2023.jpg",
+      "autor": "Adrian Grycuk",
+      "licencja": "CC BY 3.0 pl",
+      "rok": "2023",
+      "zrodlo": "Wikimedia Commons",
+      "opis": "Kościół pw. Świętego Wincentego à Paulo"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.087406,
+     52.164221
+    ]
+   },
+   "properties": {
+    "id": "osmp-wozownia-ii-201494518",
+    "nazwa": "Wozownia II",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: ~mid C19."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/201494518"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.08899,
+     52.167293
+    ]
+   },
+   "properties": {
+    "id": "osmp-dawny-dom-doktora-201494535",
+    "nazwa": "dawny Dom Doktora",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1845..1847.",
+     "dawny Dom Doktora"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/201494535"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Wilan%C3%B3w_-_Dom_doktora_01.jpg/1280px-Wilan%C3%B3w_-_Dom_doktora_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wilan%C3%B3w_-_Dom_doktora_01.jpg",
+      "opis": "Dom doktora (eng. doctor's house) from 1845-47 at 6a Biedronki Street in Wilanów, Warsaw.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.087919,
+     52.161609
+    ]
+   },
+   "properties": {
+    "id": "osmp-spichlerz-201494566",
+    "nazwa": "Spichlerz",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": "Stanisława Kostki Potockiego 7",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "dawny spichlerz"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/201494566"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.055885,
+     52.267466
+    ]
+   },
+   "properties": {
+    "id": "osmp-willa-pietrusinskiego-340403602",
+    "nazwa": "Willa Pietrusińskiego",
+    "typ": "budynek",
+    "dzielnica": "Targówek",
+    "adres_dzis": "Tykocińska 15",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1930."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/340403602"
+     },
+     {
+      "tytul": "Wikipedia: Willa Bolesława Pietrusińskiego w Warszawie",
+      "url": "https://pl.wikipedia.org/wiki/Willa_Bolesława_Pietrusińskiego_w_Warszawie"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Warszawa_ul._Tykoci%C5%84ska_15%2C_willa_1930.jpg/1280px-Warszawa_ul._Tykoci%C5%84ska_15%2C_willa_1930.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Warszawa_ul._Tykoci%C5%84ska_15,_willa_1930.jpg",
+      "autor": "Pawel.lech",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2011",
+      "zrodlo": "Wikimedia Commons",
+      "opis": "Willa Pietrusińskiego"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.088897,
+     52.164481
+    ]
+   },
+   "properties": {
+    "id": "osmp-pawilon-rzezby-352833048",
+    "nazwa": "Pawilon Rzeźby",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1848..1850.",
+     "dawna stajnia pałacowa z wiatą"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/352833048"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Wilan%C3%B3w_stable_02.jpg/1280px-Wilan%C3%B3w_stable_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wilan%C3%B3w_stable_02.jpg",
+      "opis": "Palace stable from 1848-1850 in Wilanów, Warsaw.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.098049,
+     52.175328
+    ]
+   },
+   "properties": {
+    "id": "osmp-palacyk-w-morysinie-626379102",
+    "nazwa": "Pałacyk w Morysinie",
+    "typ": "miejsce",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1811.",
+     "Zrujnowana rotunda pozostała z pałacyku",
+     "Architekt: Chrystian Piotr Aigner."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/626379102"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.129338,
+     52.151589
+    ]
+   },
+   "properties": {
+    "id": "osmp-cmentarz-ewangelicko-augsburski-na-kepie-zawadowskiej-702147884",
+    "nazwa": "Cmentarz Ewangelicko-Augsburski na Kępie Zawadowskiej",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1832."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/702147884"
+     },
+     {
+      "tytul": "Wikipedia: Cmentarz ewangelicki na Kępie Zawadowskiej",
+      "url": "https://pl.wikipedia.org/wiki/Cmentarz_ewangelicki_na_Kępie_Zawadowskiej"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Cmentarz_ewangelicki_na_K%C4%99pie_Zawadowskiej_01.JPG/1280px-Cmentarz_ewangelicki_na_K%C4%99pie_Zawadowskiej_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Cmentarz_ewangelicki_na_K%C4%99pie_Zawadowskiej_01.JPG",
+      "autor": "Mzungu",
+      "licencja": "CC BY-SA 3.0",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons",
+      "opis": "Cmentarz Ewangelicko-Augsburski na Kępie Zawadowskiej"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.091758,
+     52.166548
+    ]
+   },
+   "properties": {
+    "id": "osmp-pompownia-848539509",
+    "nazwa": "Pompownia",
+    "typ": "budynek",
+    "dzielnica": "Wilanów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1856."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/848539509"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Wilan%C3%B3w_park_pumps_building_01.jpg/1280px-Wilan%C3%B3w_park_pumps_building_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Wilan%C3%B3w_park_pumps_building_01.jpg",
+      "opis": "Building of the pumps station in the park by the Wilanów palace in Warsaw.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.933914,
+     52.329509
+    ]
+   },
+   "properties": {
+    "id": "osmp-dwor-w-buczynku-946516660",
+    "nazwa": "Dwór w Buczynku",
+    "typ": "budynek",
+    "dzielnica": "Białołęka",
+    "adres_dzis": "Odkryta 25A",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Więcej informacji: https://www.facebook.com/historia.bialoleki/posts/pfbid0DviZELnWesM1QfN19Qva5ETeR63fzTKFYVLEgEZxXbnWcaXKsTYkqFA6s4TGBwqhl"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/946516660"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.067235,
+     52.188244
+    ]
+   },
+   "properties": {
+    "id": "osmp-kosciol-parafialny-pw-sw-tadeusza-apostola-952095847",
+    "nazwa": "Kościół parafialny pw. św. Tadeusza Apostoła",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Goraszewska 16a",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1950s."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/952095847"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.034081,
+     52.1782
+    ]
+   },
+   "properties": {
+    "id": "osmp-dworek-bonifacego-pyzla-953498887",
+    "nazwa": "Dworek Bonifacego Pyzla",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Potoki 5",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1880."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/953498887"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/2017_Warszawa_Potoki.jpg/1280px-2017_Warszawa_Potoki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2017_Warszawa_Potoki.jpg",
+      "opis": "Ulica Potoki w Warszawie.",
+      "autor": "Cybularny",
+      "licencja": "CC0",
+      "rok": "2017",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.22068,
+     52.221331
+    ]
+   },
+   "properties": {
+    "id": "osmp-kosciol-pw-swietego-antoniego-padewskiego-958897807",
+    "nazwa": "Kościół pw. Świętego Antoniego Padewskiego",
+    "typ": "budynek",
+    "dzielnica": "Wesoła",
+    "adres_dzis": "Borkowska 1",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Stary kościół parafialny"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/958897807"
+     },
+     {
+      "tytul": "Wikipedia: Kościół św. Antoniego Padewskiego w Warszawie (Stara Miłosna)",
+      "url": "https://pl.wikipedia.org/wiki/Kościół_św._Antoniego_Padewskiego_w_Warszawie_(Stara_Miłosna)"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Portal_ko%C5%9Bcio%C5%82a_w_Starej_Mi%C5%82o%C5%9Bnie_fot._Tadeusz_Oleksyn.jpg/1280px-Portal_ko%C5%9Bcio%C5%82a_w_Starej_Mi%C5%82o%C5%9Bnie_fot._Tadeusz_Oleksyn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Portal_ko%C5%9Bcio%C5%82a_w_Starej_Mi%C5%82o%C5%9Bnie_fot._Tadeusz_Oleksyn.jpg",
+      "autor": "Tadeusz Oleksyn",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons",
+      "opis": "Kościół pw. Świętego Antoniego Padewskiego"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.221012,
+     52.169622
+    ]
+   },
+   "properties": {
+    "id": "osmp-willa-bajka-961682834",
+    "nazwa": "Willa \"Bajka\"",
+    "typ": "budynek",
+    "dzielnica": "Wawer",
+    "adres_dzis": "Lokalna 57/59",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1900."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/961682834"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/2026_Warszawa_Lokalna_57-59%2C_1.jpg/1280px-2026_Warszawa_Lokalna_57-59%2C_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:2026_Warszawa_Lokalna_57-59,_1.jpg",
+      "opis": "Zabytkowa willa przy ulicy Lokalnej 57/59 w Warszawie.",
+      "autor": "Cybularny",
+      "licencja": "CC BY 4.0",
+      "rok": "2026",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.02045,
+     52.187816
+    ]
+   },
+   "properties": {
+    "id": "osmp-willa-stephanow-966838459",
+    "nazwa": "Willa Stephanów",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": "Bieżanowska 5",
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Data powstania wg OSM: 1936.",
+     "Willa z 1936 roku. Znajduje się w rejestrze zabytków. Obiekt ten był miejscem akcji filmu \"Nie ma róży bez ognia\""
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/966838459"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/5_Bie%C5%BCanowska_Street_in_Warsaw_01.jpg/1280px-5_Bie%C5%BCanowska_Street_in_Warsaw_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:5_Bie%C5%BCanowska_Street_in_Warsaw_01.jpg",
+      "opis": "Monumental villa from 1936 at 5 Bieżanowska Street in Warsaw, Mokotów district.",
+      "autor": "Krysiul",
+      "licencja": "CC BY-SA 3.0 pl",
+      "rok": "2012",
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     21.028402,
+     52.189386
+    ]
+   },
+   "properties": {
+    "id": "osmp-kuchnia-12995026",
+    "nazwa": "Kuchnia",
+    "typ": "budynek",
+    "dzielnica": "Mokotów",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Dawna kuchnia Królikarni"
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/12995026"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda",
+    "zdjecia": [
+     {
+      "url_pliku": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Stiuki_zamek_Nowy_Wi%C5%9Bnicz.jpg/1280px-Stiuki_zamek_Nowy_Wi%C5%9Bnicz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "url": "https://commons.wikimedia.org/wiki/File:Stiuki_zamek_Nowy_Wi%C5%9Bnicz.jpg",
+      "opis": "Stiuki na zamku w Nowym Wiśniczu",
+      "autor": "Konarski",
+      "licencja": "CC BY 3.0",
+      "rok": null,
+      "zrodlo": "Wikimedia Commons (zdjęcie w promieniu 30 m)"
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     20.863774,
+     52.198333
+    ]
+   },
+   "properties": {
+    "id": "osmp-uklad-urbanistyczny-osiedle-zakladow-ursus-14362087",
+    "nazwa": "Układ urbanistyczny Osiedle Zakładów Ursus",
+    "typ": "budynek",
+    "dzielnica": "Ursus",
+    "adres_dzis": null,
+    "lokalizacja": "dokladna",
+    "fakty": [
+     "Architekt: Andrzej Orchowski."
+    ],
+    "zrodla": [
+     {
+      "tytul": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/relation/14362087"
+     }
+    ],
+    "pewnosc": "srednia",
+    "zrodlo_rekordu": "osm-przyroda"
+   }
+  }
+ ]
+}

@@ -7,7 +7,7 @@ import { createPortal } from "react-dom";
 import { useT } from "@/features/i18n";
 import { usePlace } from "@/features/map";
 import { haptic, project, SPRING, SPRING_FLICK } from "../lib/device";
-import { photoCredit, showablePhotos, thumbnailUrl } from "../lib/photos";
+import { photoCaption, photoCredit, showablePhotos, thumbnailUrl } from "../lib/photos";
 import { CloseIcon } from "./icons";
 
 /*
@@ -18,7 +18,7 @@ import { CloseIcon } from "./icons";
  */
 
 // Miniatury mają stałe proporcje, więc ładujące się zdjęcie nie przesuwa tekstu
-const THUMB = "h-[88px] w-[118px]";
+const THUMB = "h-[104px] w-[148px]";
 // Zrzut w dół zamyka powiększenie, gdy zdjęcie zatrzymałoby się dalej niż tyle pikseli
 const DISMISS_PX = 140;
 
@@ -50,12 +50,12 @@ export function StoryPhotos({
         className={`flex touch-pan-x touch-pan-y snap-x snap-mandatory gap-2 overflow-x-auto overscroll-x-contain pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${className}`}
       >
         {photos.map((photo) => (
-          <li key={photo.url} className="w-[118px] shrink-0 snap-start">
+          <li key={photo.url} className="w-[148px] shrink-0 snap-start">
             <button
               type="button"
               aria-label={t(
-                `Powiększ zdjęcie: ${photo.caption ?? name}`,
-                `Enlarge photo: ${photo.caption ?? name}`,
+                `Powiększ zdjęcie: ${photoCaption(photo) ?? name}`,
+                `Enlarge photo: ${photoCaption(photo) ?? name}`,
               )}
               onClick={(event) => {
                 haptic();
@@ -66,12 +66,12 @@ export function StoryPhotos({
             >
               <Thumb
                 photo={photo}
-                alt={photo.caption ?? name}
+                alt={photoCaption(photo) ?? name}
                 hidden={opened?.photo.url === photo.url}
                 onError={() => setFailed((prev) => new Set(prev).add(photo.url))}
               />
             </button>
-            <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-tekst-3">
+            <p className="mt-1 line-clamp-3 text-[11px] leading-snug text-tekst-3">
               {photoCredit(photo)}
             </p>
           </li>
@@ -147,6 +147,7 @@ function Lightbox({
   const closeRef = useRef<HTMLButtonElement>(null);
   const { photo, from, trigger } = opened;
   const credit = photoCredit(photo);
+  const caption = photoCaption(photo);
 
   // Przesunięcie i skala, które kładą zdjęcie na miniaturze (szerokość docelowa jak w klasie niżej)
   const origin = useMemo(() => {
@@ -180,7 +181,7 @@ function Lightbox({
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={photo.caption ?? name}
+      aria-label={caption ?? name}
       className="fixed inset-0 z-[100] flex items-center justify-center px-4"
     >
       <motion.button
@@ -209,15 +210,13 @@ function Lightbox({
         {/* biome-ignore lint/performance/noImgElement: zdjęcia z wielu archiwów, next/image wymagałby każdej domeny w konfiguracji */}
         <img
           src={photo.url}
-          alt={photo.caption ?? name}
+          alt={caption ?? name}
           referrerPolicy="no-referrer"
           draggable={false}
           className="max-h-[72dvh] w-full rounded-2xl object-contain"
         />
         <figcaption className="w-full text-center text-white">
-          {photo.caption && (
-            <p className="text-[15px] font-semibold leading-snug">{photo.caption}</p>
-          )}
+          {caption && <p className="text-[15px] font-semibold leading-snug">{caption}</p>}
           {credit && <p className="mt-1 text-xs text-white/70">{credit}</p>}
           {photo.pageUrl && (
             <a

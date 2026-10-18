@@ -26,8 +26,12 @@ export type MapPalette = {
   stopText: string;
   /** Ring around the selected place. */
   selected: string;
+  /** Name under the route place the story is about. */
+  activeLabel: string;
   /** Fill of the start and transfer rings. */
   boardingFill: string;
+  /** Empty part of the countdown ring at a boarding stop. */
+  timerTrack: string;
   label: string;
   labelHalo: string;
   walk: string;
@@ -67,7 +71,9 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopFill: "#18181b",
     stopText: "#ffffff",
     selected: "#18181b",
+    activeLabel: "#17706f",
     boardingFill: "#ffffff",
+    timerTrack: "#e3e7e6",
     label: "#27272a",
     labelHalo: "#ffffff",
     walk: "#52525b",
@@ -99,7 +105,9 @@ export const MAP_PALETTES: Record<MapTheme, MapPalette> = {
     stopFill: "#e6efed",
     stopText: "#0e1615",
     selected: "#e6efed",
+    activeLabel: "#8ed1b5",
     boardingFill: "#0e1615",
+    timerTrack: "#2a3634",
     label: "#d5dfdd",
     labelHalo: "#0e1615",
     walk: "#a1a1aa",
@@ -387,25 +395,14 @@ export function lineColor(lineIndex: number): string {
   return LINE_COLORS[lineIndex % LINE_COLORS.length];
 }
 
-/** How much white goes into the colour of the previous and next vehicle of the line. */
+/** How much white goes into the icon of the previous and next vehicle of the line. */
 export const PALE_SHARE = 0.4;
-
-/** `#rrggbb` mixed with white, `share` of it (0 = unchanged, 1 = white). */
-export function paleColor(hex: string, share = PALE_SHARE): string {
-  const channels = [1, 3, 5].map((i) => {
-    const v = Number.parseInt(hex.slice(i, i + 2), 16);
-    return Math.round(v + (255 - v) * share)
-      .toString(16)
-      .padStart(2, "0");
-  });
-  return `#${channels.join("")}`;
-}
 
 /**
  * Map icons in `public/map-icons/`, 96 px PNGs registered with pixelRatio 2, so icon-size 1 is 48 css px.
  * Place markers are not here: they are drawn in the browser in their topic colour (place-stickers.ts).
  */
-export const MAP_ICONS = ["stop", "tram", "bus"] as const;
+export const MAP_ICONS = ["tram", "bus"] as const;
 export const MAP_ICON_PIXEL_RATIO = 2;
 
 export function mapIconId(name: string): string {

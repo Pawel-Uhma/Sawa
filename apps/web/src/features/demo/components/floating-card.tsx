@@ -26,6 +26,8 @@ type FloatingCardProps = {
   /** Co wystaje nad kartą (Sawa z dymkiem). Dostaje postęp zwijania 0–1, żeby mogło znikać razem z kartą. */
   above?: (progress: MotionValue<number>) => ReactNode;
   className?: string;
+  /** Ile pikseli od dołu ekranu karta zasłania w spoczynku (przycisk lokalizacji staje nad nią). */
+  onCoverChange?: (px: number) => void;
   children: ReactNode;
 };
 
@@ -40,11 +42,13 @@ export function FloatingCard({
   peekPx,
   above,
   className = "",
+  onCoverChange,
   children,
 }: FloatingCardProps) {
   const t = useT();
   const isDesktop = useIsDesktop();
   const reduce = useReducedMotion();
+  const wrapRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
   const [cardHeight, setCardHeight] = useState(0);
@@ -77,6 +81,14 @@ export function FloatingCard({
     const animation = animate(y, target, SPRING);
     return () => animation.stop();
   }, [collapsed, range, reduce, y]);
+
+  // Zwinięta zostawia nagłówek; wysokość liczona od dołu ekranu, z paskiem home na iPhonie
+  useEffect(() => {
+    const wrap = wrapRef.current;
+    if (!onCoverChange || !wrap || cardHeight === 0) return;
+    const inset = Math.max(0, window.innerHeight - wrap.getBoundingClientRect().bottom);
+    onCoverChange(inset + (collapsed && !isDesktop ? peekPx : cardHeight + GAP_PX));
+  }, [onCoverChange, collapsed, isDesktop, peekPx, cardHeight]);
 
   useVerticalDrag(dragRef, {
     shouldStart: (dy, target) => {
@@ -114,6 +126,7 @@ export function FloatingCard({
   return (
     // Opakowanie kończy się nad wskaźnikiem home i przycina zjeżdżającą kartę.
     <div
+      ref={wrapRef}
       className={`pointer-events-none absolute inset-x-0 top-0 bottom-[env(safe-area-inset-bottom)] z-20 md:bottom-0 md:overflow-visible ${
         isClipped ? "[overflow-y:clip]" : ""
       }`}

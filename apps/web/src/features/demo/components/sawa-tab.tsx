@@ -26,6 +26,7 @@ type SawaTabProps = {
   onNext: () => void;
   /** Powrót na mapę (nie ma już paska zakładek). */
   onClose: () => void;
+  onCoverChange?: (px: number) => void;
 };
 
 /** Podgląd podcastu: co Sawa mówi teraz, sterowanie i lista miejsc, o których już opowiedziała. */
@@ -39,6 +40,7 @@ export function SawaTab({
   onPrev,
   onNext,
   onClose,
+  onCoverChange,
 }: SawaTabProps) {
   const t = useT();
   const lang = useLang();
@@ -66,6 +68,7 @@ export function SawaTab({
       collapsed={collapsed}
       onCollapsedChange={onCollapsedChange}
       peekPx={88}
+      onCoverChange={onCoverChange}
       className="flex flex-col gap-4 rounded-[32px] p-5 md:p-6"
     >
       <Grabber />

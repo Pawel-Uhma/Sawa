@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Szukaj C · trasa do celu</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .kierunek{position:absolute;top:50px;left:12px;right:12px;z-index:30;background:#fff;border-radius:22px;padding:12px 12px 12px 8px;box-shadow:0 6px 20px rgba(16,43,42,.14)}
+  .kierunek .r{display:flex;align-items:center;gap:8px}
+  .kierunek .wst{width:36px;height:36px;display:grid;place-items:center;color:var(--tekst-2)} .kierunek .wst svg{width:22px;height:22px}
+  .pola{flex:1;display:flex;flex-direction:column;gap:6px}
+  .pp{display:flex;align-items:center;gap:10px;height:42px;padding:0 12px;border-radius:12px;background:var(--tlo-2);font-size:15px;font-weight:600}
+  .pp svg{width:16px;height:16px;flex:none}
+  .pp.start svg{color:var(--glebia)} .pp.meta svg{color:var(--koral)}
+  .zm{width:36px;height:36px;display:grid;place-items:center;color:var(--tekst-2)} .zm svg{width:20px;height:20px}
+  .tryby{display:flex;gap:6px;margin:10px 0 0 44px}
+  .tryby div{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:17px;font-size:13.5px;font-weight:700;color:var(--tekst-2);background:var(--tlo-2)}
+  .tryby div.on{background:var(--mieta-jasna);color:var(--glebia-ciemna)}
+  .tryby svg{width:16px;height:16px}
+</style>
+</head>
+<body><div class="telefon">
+  <div class="mapa" id="mapa"></div>
+  <div class="status"></div>
+  <div class="kierunek">
+    <div class="r"><div class="wst" data-i="wstecz"></div>
+      <div class="pola"><div class="pp start" data-i="kropka">Twoja lokalizacja</div><div class="pp meta" data-i="pin">Plac Zamkowy</div></div>
+      <div class="zm" data-i="zamien"></div></div>
+    <div class="tryby"><div class="on" data-i="tramwaj">22 min</div><div data-i="pieszo">48 min</div><div data-i="petla">Pętla</div></div>
+  </div>
+  <div class="arkusz">
+    <div class="uchwyt"></div>
+    <div style="display:flex;align-items:center;gap:10px"><h2 style="flex:1">Ile masz czasu?</h2><span class="pod">najszybciej 22 min</span></div>
+    <div class="wybor" style="margin-top:12px"><div>22 min</div><div class="on">45 min</div><div>1 h</div><div>1 h 30</div></div>
+    <div class="wiersz" style="margin-top:8px"><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg" style="width:40px;height:40px"><div class="tresc"><b>Krajoznawczo przez Muranów</b><span>5 opowieści po drodze · linie 22, 17, pieszo</span></div></div>
+    <div class="przycisk" style="margin-top:6px">Jedziemy <span data-i="strzalka" style="display:flex;width:20px"></span></div>
+  </div>
+  <div class="home"></div>
+</div>
+<script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { trasa: 'srodmiescie', dopasuj: { top: 230, bottom: 330, left: 40, right: 40 }, numery: [] });</script>
+</body></html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Pętla H · tarcza</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="_wspolne.css" rel="stylesheet"><link href="_wyznacz.css" rel="stylesheet"><link href="_szukaj.css" rel="stylesheet"><link href="_petla.css" rel="stylesheet">
+<script src="_dane.js"></script><script src="_mapa.js"></script>
+<style>
+  .tarcza{position:relative;width:230px;height:230px;margin:6px auto 0}
+  .tarcza svg{position:absolute;inset:0}
+  .tarcza .sr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .tarcza .sr strong{font-size:40px;font-weight:800;letter-spacing:-.04em;color:var(--glebia);line-height:1}
+  .tarcza .sr span{font-size:13px;font-weight:600;color:var(--tekst-2);margin-top:6px}
+  .seg div svg{width:18px;height:18px}
+</style></head><body><div class="telefon">
+  <div class="mapa" id="mapa"></div><div class="status"></div>
+  <div class="szukaj"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><div class="tekst">Dokąd? Pusto = pętla</div><img class="awatar" src="../../../pitch/img/ikona-sawa.jpg"></div>
+  <div class="arkusz" style="padding-top:8px">
+    <div class="uchwyt"></div>
+    <div class="seg"><div class="on" data-i="petla">Pętla stąd</div><div data-i="pin">Do celu</div></div>
+    <div class="tarcza">
+      <svg viewBox="0 0 230 230">
+        <circle cx="115" cy="115" r="96" fill="none" stroke="rgba(16,43,42,.07)" stroke-width="22"/>
+        <circle cx="115" cy="115" r="96" fill="none" stroke="#17706F" stroke-width="22" stroke-linecap="round" stroke-dasharray="226 603" transform="rotate(-90 115 115)"/>
+        <g font-size="11" font-weight="700" fill="#8A9C9A" text-anchor="middle" font-family="Plus Jakarta Sans"><text x="115" y="12">0</text><text x="224" y="119">1 h</text><text x="115" y="228">2 h</text><text x="7" y="119">3 h</text></g>
+        <circle cx="183" cy="183" r="16" fill="#fff" stroke="rgba(16,43,42,.1)"/><path d="M176 183a7 7 0 1 0 2-5l-2 2m0-5v5h5" fill="none" stroke="#17706F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="sr"><strong>1 h 30</strong><span>okrążasz i wracasz</span></div>
+    </div>
+    <div class="seg" style="margin-top:10px"><div class="on" data-i="tramwaj">Komunikacją</div><div data-i="pieszo">Pieszo</div></div>
+    <div class="przycisk">Ułóż pętlę <span data-i="strzalka" style="display:flex;width:20px"></span></div>
+  </div>
+  <div class="home"></div>
+</div><script src="_szukaj.js"></script>
+<script>sawaMapa('mapa', { center: nad(JA, 260, 14), zoom: 14, miejsca: true, miejscaR: 4 });</script>
+</body></html>
