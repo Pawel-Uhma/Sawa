@@ -18,6 +18,7 @@ import { useBasemapOverrides } from "../hooks/use-basemap-overrides";
 import { useLiveVehicles } from "../hooks/use-live-vehicles";
 import { usePlaces } from "../hooks/use-places";
 import { useSelectedPlace } from "../hooks/use-selected-place";
+import { registerBoardingTimers } from "../lib/boarding-timers";
 import type { LngLatBounds } from "../lib/bounds";
 import {
   cameraMoveKey,
@@ -27,7 +28,6 @@ import {
   paddingWithSheet,
   resolveCamera,
 } from "../lib/camera";
-import { registerBoardingTimers } from "../lib/boarding-timers";
 import { registerClusterBadges } from "../lib/cluster-badges";
 import { loadMapIcons } from "../lib/map-icons";
 import {

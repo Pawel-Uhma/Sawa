@@ -75,7 +75,9 @@ export function parseBoardingTimerId(id: string): ParsedTimer | null {
   if (content === "nowpl" || content === "nowen") {
     return { ...base, countdown: { kind: "now" }, lang: content.slice(3) as Lang };
   }
-  if (content.startsWith("c")) return { ...base, countdown: { kind: "clock" }, clock: content.slice(1) };
+  if (content.startsWith("c")) {
+    return { ...base, countdown: { kind: "clock" }, clock: content.slice(1) };
+  }
   const minutes = /^m(\d+)(h?)$/.exec(content);
   if (!minutes) return null;
   return {

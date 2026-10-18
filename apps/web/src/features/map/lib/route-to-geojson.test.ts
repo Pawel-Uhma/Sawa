@@ -134,6 +134,16 @@ describe("lines and transfers", () => {
     ]);
   });
 
+  it("gives each boarding its departure and the walk right before it", () => {
+    const walk = { ...ROUTE.legs[0], line: "", mode: "walk" as const, durationMin: 3.5 };
+    const { features } = routeBoardingsToGeoJson({ ...ROUTE, legs: [walk, ...ROUTE.legs] });
+    expect(features.map((f) => [f.properties.walkMin, f.properties.clock])).toEqual([
+      [3.5, "14:00"],
+      [0, "14:10"],
+    ]);
+    expect(features[0].properties.departAtMs).toBe(Date.parse("2026-10-17T14:00:00+02:00"));
+  });
+
   it("adds the ZTM post number to the stop name", () => {
     const legs = [
       { ...ROUTE.legs[0], fromStop: { ...stop("700905", 52.23, 21.01), name: "Centrum" } },
