@@ -14,10 +14,10 @@ import {
   CloseIcon,
   PauseIcon,
   PlayIcon,
+  RestartIcon,
   SkipNextIcon,
   SkipPrevIcon,
   SparkIcon,
-  StopIcon,
 } from "./icons";
 
 // Szerokość jednego miejsca na linii; bieżące stoi na środku, jak na wyświetlaczu w tramwaju.
@@ -282,10 +282,10 @@ export function PodcastDock({
             "Zatrzymaj i wróć na początek opowieści",
             "Stop and go back to the start of the story",
           )}
-          title={t("Zatrzymaj", "Stop")}
+          title={t("Od początku", "From the start")}
           className="flex size-11 items-center justify-center rounded-full text-tekst-2 transition-[transform,background-color] hover:bg-tlo-2 active:scale-[0.92]"
         >
-          <StopIcon className="size-3.5" />
+          <RestartIcon className="size-5" />
         </button>
       </div>
     </div>
