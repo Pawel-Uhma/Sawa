@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postęp trasy: 5 wariantów</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Fredoka:wght@600&display=block" rel="stylesheet">
+<style>
+  /* Zamiast suwaka całej przejażdżki (jak oś w YouTube): gdzie jestem, co teraz, co dalej. */
+  :root { --glebia: #17706f; --glebia-ciemna: #0f5554; --mieta: #8ed1b5; --mieta-jasna: #ddf2e9; --koral: #f2755f;
+    --tekst: #102b2a; --tekst-2: #4c6462; --tekst-3: #8a9c9a; --tlo-2: #f4f6f5; --pow: #fdfefd; --linia: #e4e9e8; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #e7ecea; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: var(--tekst); -webkit-font-smoothing: antialiased; }
+  .siatka { display: grid; grid-template-columns: repeat(5, 390px); gap: 32px; padding: 32px; width: max-content; }
+  .opis h2 { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
+  .opis h2 span { color: var(--koral); margin-right: 6px; }
+  .opis h2 em { font-style: normal; font-size: 11px; font-weight: 700; color: #fff; background: var(--glebia); border-radius: 99px; padding: 3px 8px; margin-left: 6px; vertical-align: 3px; }
+  .opis > p { font-size: 12.5px; color: var(--tekst-2); line-height: 1.45; margin: 4px 0 14px; min-height: 92px; }
+
+  .tel { position: relative; width: 390px; height: 844px; border-radius: 28px; overflow: hidden; background: var(--pow);
+    box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 16px 40px rgba(16,43,42,.14); }
+  .mapa { position: absolute; left: 0; right: 0; top: 0; height: 470px; background: #eef1ef url(d2-postep-mapa.jpg) center 0 / 390px auto no-repeat; }
+  .mapa.krotka { height: 300px; background-position: center -150px; }
+  .awatarek { position: absolute; top: 46px; left: 16px; width: 48px; height: 48px; border-radius: 50%; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.12); }
+  .arkusz { position: absolute; left: 0; right: 0; bottom: 0; background: var(--pow); border-radius: 26px 26px 0 0; padding: 10px 20px 34px;
+    box-shadow: 0 -6px 24px rgba(16,43,42,.10); display: flex; flex-direction: column; }
+  .uchwyt { width: 36px; height: 5px; border-radius: 3px; background: #d3dbd9; margin: 0 auto 14px; }
+  .etyk { font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--tekst-3); display: flex; align-items: center; gap: 8px; }
+  .etyk .k { width: 8px; height: 8px; border-radius: 50%; background: var(--koral); box-shadow: 0 0 0 4px rgba(242,117,95,.18); }
+  .etyk .x { margin-left: auto; width: 34px; height: 34px; border-radius: 50%; background: var(--tlo-2); display: grid; place-items: center; font-size: 15px; color: var(--tekst-2); letter-spacing: 0; }
+  h1 { font-size: 26px; font-weight: 800; line-height: 1.12; letter-spacing: -.03em; margin-top: 4px; }
+  .sub { font-size: 13.5px; color: var(--tekst-2); margin-top: 3px; }
+  .dalej { font-size: 13.5px; color: var(--tekst-2); }
+  .dalej b { color: var(--tekst); font-weight: 600; }
+  .dalej s { text-decoration: none; color: var(--tekst-3); }
+
+  /* Sterowanie, wspólne */
+  .ster { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+  .ster .srodek { display: flex; align-items: center; gap: 18px; }
+  .ikona { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: var(--tekst-2); font-size: 15px; }
+  .ikona.mieta { background: var(--mieta-jasna); color: var(--glebia-ciemna); font-size: 18px; }
+  .skok { font-size: 22px; color: var(--tekst); width: 44px; text-align: center; letter-spacing: -3px; }
+  .play { position: relative; width: 68px; height: 68px; border-radius: 50%; background: var(--glebia); display: grid; place-items: center; box-shadow: 0 8px 20px rgba(23,112,111,.3); flex: none; }
+  .play::after { content: ""; width: 7px; height: 24px; border-left: 7px solid #fff; border-right: 7px solid #fff; box-sizing: content-box; padding: 0 2px; background-clip: padding-box; }
+  /* Pierścień postępu bieżącej opowieści */
+  .pierscien { position: absolute; inset: -7px; width: 82px; height: 82px; transform: rotate(-90deg); }
+  .pierscien circle { fill: none; stroke-width: 3.5; }
+  .pierscien .tor { stroke: rgba(23,112,111,.14); }
+  .pierscien .pel { stroke: var(--glebia); stroke-linecap: round; }
+
+  /* A · Linia tramwaju */
+  .linia { position: relative; margin: 18px -20px 0; padding: 0 20px; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent 0, #000 20px, #000 calc(100% - 36px), transparent); }
+  .linia .tor { position: absolute; top: 9px; left: 0; right: 0; height: 4px; background: var(--linia); }
+  .linia .tor::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 120px; background: var(--glebia); opacity: .35; }
+  .linia .rzad { position: relative; display: flex; gap: 0; }
+  .linia .st { width: 78px; flex: none; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .linia .kr { width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #fff; border: 3px solid #c9d3d1; }
+  .linia .st.byla .kr { background: var(--glebia); border-color: var(--glebia); opacity: .45; }
+  .linia .st.teraz .kr { width: 22px; height: 22px; margin-top: 0; background: var(--koral); border: 4px solid #fff; box-shadow: 0 0 0 2px var(--koral), 0 4px 10px rgba(242,117,95,.35); }
+  .linia .n { font-size: 11.5px; font-weight: 700; line-height: 1.25; margin-top: 8px; color: var(--tekst); max-width: 72px; }
+  .linia .st.byla .n { color: var(--tekst-3); font-weight: 600; }
+  .linia .st.teraz .n { color: var(--koral); }
+  .linia .g { font-size: 11px; font-weight: 600; color: var(--tekst-3); margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .cel { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; color: var(--tekst-3); margin-top: 12px; }
+  .cel b { color: var(--tekst-2); }
+
+  /* B · Pierścień */
+  .zdanie { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border-radius: 99px; background: var(--tlo-2); font-size: 12.5px; font-weight: 700; color: var(--tekst-2); }
+  .chip.m { background: var(--mieta-jasna); color: var(--glebia-ciemna); }
+  .wielka { display: flex; flex-direction: column; align-items: center; margin-top: auto; }
+  .wielka .play { width: 84px; height: 84px; }
+  .wielka .pierscien { inset: -9px; width: 102px; height: 102px; }
+  .wielka .pod { font-size: 12px; font-weight: 700; color: var(--tekst-3); margin-top: 14px; font-variant-numeric: tabular-nums; }
+
+  /* C · Segmenty */
+  .seg { display: flex; gap: 4px; margin-top: 18px; align-items: center; }
+  .seg i { flex: 1; height: 4px; border-radius: 3px; background: var(--linia); position: relative; overflow: hidden; }
+  .seg i.b { background: rgba(23,112,111,.45); }
+  .seg i.t { flex: 2.2; height: 6px; }
+  .seg i.t::before { content: ""; position: absolute; inset: 0; width: 42%; background: var(--glebia); border-radius: 3px; }
+  .seg .wiecej { font-size: 11px; font-weight: 700; color: var(--tekst-3); flex: none; padding: 0 2px; }
+  .seg-podpis { display: flex; justify-content: space-between; margin-top: 8px; font-size: 11.5px; font-weight: 600; color: var(--tekst-3); }
+  .seg-podpis b { color: var(--glebia); }
+
+  /* D · Pionowa lista */
+  .lista { position: relative; margin-top: 14px; }
+  .lista::before { content: ""; position: absolute; left: 47px; top: 10px; bottom: 10px; width: 3px; border-radius: 2px; background: linear-gradient(var(--glebia) 0 26%, var(--linia) 26%); opacity: .9; }
+  .wiersz { position: relative; display: flex; align-items: center; gap: 12px; height: 48px; }
+  .wiersz .h { width: 34px; font-size: 12px; font-weight: 600; color: var(--tekst-3); font-variant-numeric: tabular-nums; text-align: right; }
+  .wiersz .kr { position: relative; z-index: 1; width: 13px; height: 13px; border-radius: 50%; background: #fff; border: 3px solid #c9d3d1; margin: 0 1px; }
+  .wiersz.byla .kr { background: var(--glebia); border-color: var(--glebia); }
+  .wiersz.byla .tx { color: var(--tekst-3); }
+  .wiersz .tx { flex: 1; font-size: 14.5px; font-weight: 700; letter-spacing: -.01em; }
+  .wiersz .tx small { display: block; font-size: 12px; font-weight: 500; color: var(--tekst-3); }
+  .wiersz .ok { color: var(--glebia); font-size: 14px; }
+  .wiersz.teraz { margin: 4px -10px; padding: 0 10px; height: 64px; border-radius: 16px; background: #fff3f0; }
+  .wiersz.teraz .kr { width: 19px; height: 19px; margin: 0 -2px; background: var(--koral); border: 4px solid #fff; box-shadow: 0 0 0 2px var(--koral); }
+  .wiersz.teraz .tx { color: var(--tekst); }
+  .wiersz.teraz .tx small { color: var(--koral); font-weight: 700; }
+  .mini { width: 40px; height: 40px; border-radius: 50%; background: var(--glebia); display: grid; place-items: center; position: relative; }
+  .mini::after { content: ""; width: 4px; height: 13px; border-left: 4px solid #fff; border-right: 4px solid #fff; box-sizing: content-box; padding: 0 1.5px; background-clip: padding-box; }
+  .mini svg { position: absolute; inset: -4px; width: 48px; height: 48px; transform: rotate(-90deg); }
+  .mini circle { fill: none; stroke-width: 2.5; }
+
+  /* E · Karuzela */
+  .karty { display: flex; gap: 10px; margin: 2px -20px 0; padding: 0 20px; overflow: hidden; }
+  .karta { width: 250px; flex: none; border-radius: 22px; background: #fff; box-shadow: 0 1px 2px rgba(16,43,42,.06), 0 10px 24px rgba(16,43,42,.10); overflow: hidden; }
+  .karta.boczna { width: 250px; opacity: .55; transform: scale(.94); }
+  .karta .foto { height: 120px; background: linear-gradient(135deg, #c9b79c, #8d7a62 60%, #5f5242); position: relative; }
+  .karta .foto.b { background: linear-gradient(135deg, #b8c6c9, #6f8489 60%, #46585c); }
+  .karta .foto.c { background: linear-gradient(135deg, #d6c6a4, #a4875d 60%, #6b5638); }
+  .karta .nr { position: absolute; left: 12px; top: 12px; height: 24px; padding: 0 9px; border-radius: 99px; background: rgba(255,255,255,.9); font-size: 11.5px; font-weight: 800; display: grid; place-items: center; }
+  .karta .nr.t { background: var(--koral); color: #fff; }
+  .karta .w { padding: 12px 14px 14px; }
+  .karta .w b { font-size: 17px; font-weight: 800; letter-spacing: -.02em; display: block; }
+  .karta .w span { font-size: 12.5px; color: var(--tekst-3); font-weight: 600; }
+  .karta .pasek { height: 4px; border-radius: 3px; background: var(--linia); margin-top: 10px; overflow: hidden; }
+  .karta .pasek::before { content: ""; display: block; height: 100%; width: 42%; background: var(--glebia); }
+  .kropki { display: flex; justify-content: center; gap: 5px; margin-top: 12px; }
+  .kropki i { width: 6px; height: 6px; border-radius: 50%; background: #d3dbd9; }
+  .kropki i.t { width: 18px; border-radius: 3px; background: var(--koral); }
+  .kropki i.b { background: rgba(23,112,111,.4); }
+</style></head>
+<body><div class="siatka">
+
+<!-- A -->
+<div><div class="opis"><h2><span>A</span>Linia tramwaju<em>polecam</em></h2>
+<p>Jak wyświetlacz w tramwaju: kropki miejsc, bieżące w koralu, minione wyszarzone, następne z godziną dojazdu. Pasek przewija się palcem w bok, stuknięcie w kropkę przeskakuje do opowieści. Postęp bieżącej opowieści to pierścień na Play (z B). Na dole tylko „do celu”, bez osi czasu.</p></div>
+<div class="tel"><div class="mapa"></div>
+<div class="arkusz" style="height:390px"><div class="uchwyt"></div>
+  <div class="etyk"><i class="k"></i>Teraz · 7 z 47<span class="x">✕</span></div>
+  <h1>Chłodna</h1>
+  <div class="linia"><div class="tor"></div><div class="rzad">
+    <div class="st byla"><i class="kr"></i><div class="n">Rondo ONZ</div><div class="g">9:28</div></div>
+    <div class="st byla"><i class="kr"></i><div class="n">Hala Mirowska</div><div class="g">9:32</div></div>
+    <div class="st teraz"><i class="kr"></i><div class="n">Chłodna</div><div class="g">teraz</div></div>
+    <div class="st"><i class="kr"></i><div class="n">Elektrownia Tramwajowa</div><div class="g">9:37</div></div>
+    <div class="st"><i class="kr"></i><div class="n">Kino Femina</div><div class="g">9:41</div></div>
+    <div class="st"><i class="kr"></i><div class="n">Muranów</div><div class="g">9:46</div></div>
+  </div></div>
+  <div class="cel"><span>Jeszcze <b>40 miejsc</b></span><span>Na miejscu ok. <b>10:48</b></span></div>
+  <div class="ster"><span class="ikona mieta">✦</span><div class="srodek"><span class="skok">◂◂</span>
+    <span class="play"><svg class="pierscien" viewBox="0 0 82 82"><circle class="tor" cx="41" cy="41" r="38"/><circle class="pel" cx="41" cy="41" r="38" stroke-dasharray="100 239"/></svg></span>
+    <span class="skok">▸▸</span></div><span class="ikona">■</span></div>
+</div></div></div>
+
+<!-- B -->
+<div><div class="opis"><h2><span>B</span>Pierścień na Play</h2>
+<p>Bez paska. Pierścień wokół dużego przycisku pokazuje, ile zostało z tej opowieści, pod nim „jeszcze 1:40”. Gdzie jestem i co dalej mówią trzy chipy w jednym rzędzie. Najmniej elementów; trasę widać na mapie.</p></div>
+<div class="tel"><div class="mapa"></div>
+<div class="arkusz" style="height:390px"><div class="uchwyt"></div>
+  <div class="etyk"><i class="k"></i>Teraz<span class="x">✕</span></div>
+  <h1>Chłodna</h1><div class="sub">Ulica, która przetrwała dwie wojny</div>
+  <div class="zdanie"><span class="chip m">7 z 47</span><span class="chip">Dalej: Elektrownia · 2 min</span><span class="chip">Cel 10:48</span></div>
+  <div class="wielka" style="margin-top:auto">
+    <div class="ster" style="width:100%"><span class="ikona mieta">✦</span><div class="srodek"><span class="skok">◂◂</span>
+      <span class="play"><svg class="pierscien" viewBox="0 0 102 102"><circle class="tor" cx="51" cy="51" r="48"/><circle class="pel" cx="51" cy="51" r="48" stroke-dasharray="126 302"/></svg></span>
+      <span class="skok">▸▸</span></div><span class="ikona">■</span></div>
+    <div class="pod">jeszcze 1:40 tej opowieści</div>
+  </div>
+</div></div></div>
+
+<!-- C -->
+<div><div class="opis"><h2><span>C</span>Segmenty jak w Stories</h2>
+<p>Jedna kreska na opowieść, okno ok. 9 kresek wokół bieżącej. Napełnia się tylko bieżąca (szersza). Gest znany z Instagrama: od razu widać, że to osobne historie. Stuknięcie w prawą połowę zdjęcia/tekstu przeskakuje dalej.</p></div>
+<div class="tel"><div class="mapa"></div>
+<div class="arkusz" style="height:390px"><div class="uchwyt"></div>
+  <div class="etyk"><i class="k"></i>Teraz · 7 z 47<span class="x">✕</span></div>
+  <h1>Chłodna</h1>
+  <p class="dalej" style="margin-top:10px">Dalej: <b>Elektrownia Tramwajowa</b> <s>· za 2 min</s></p>
+  <div class="seg"><span class="wiecej">+3</span><i class="b"></i><i class="b"></i><i class="b"></i><i class="t"></i><i></i><i></i><i></i><i></i><span class="wiecej">+40</span></div>
+  <div class="seg-podpis"><span>Hala Mirowska</span><b>Chłodna · 1:40</b><span>Elektrownia</span></div>
+  <div class="ster"><span class="ikona mieta">✦</span><div class="srodek"><span class="skok">◂◂</span><span class="play"></span><span class="skok">▸▸</span></div><span class="ikona">■</span></div>
+</div></div></div>
+
+<!-- D -->
+<div><div class="opis"><h2><span>D</span>Rozkład w arkuszu</h2>
+<p>Jak kroki transportu w Mapach Apple. Zwinięty arkusz: „Teraz” i następne miejsce. Podciągnięty (tu): pionowa lista z godzinami zegarowymi, minione odhaczone, bieżące wyróżnione z małym Play i pierścieniem. Stuknięcie w miejsce zaczyna jego opowieść.</p></div>
+<div class="tel"><div class="mapa krotka"></div>
+<div class="arkusz" style="height:560px"><div class="uchwyt"></div>
+  <div class="etyk"><i class="k"></i>Teraz · 7 z 47 · cel 10:48<span class="x">✕</span></div>
+  <div class="lista">
+    <div class="wiersz byla"><span class="h">9:28</span><i class="kr"></i><span class="tx">Rondo ONZ</span><span class="ok">✓</span></div>
+    <div class="wiersz byla"><span class="h">9:32</span><i class="kr"></i><span class="tx">Hala Mirowska</span><span class="ok">✓</span></div>
+    <div class="wiersz teraz"><span class="h" style="color:var(--koral)">teraz</span><i class="kr"></i><span class="tx">Chłodna<small>Sawa opowiada · jeszcze 1:40</small></span>
+      <span class="mini"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" stroke="rgba(23,112,111,.18)"/><circle cx="24" cy="24" r="22" stroke="#f2755f" stroke-dasharray="58 138" stroke-linecap="round"/></svg></span></div>
+    <div class="wiersz"><span class="h">9:37</span><i class="kr"></i><span class="tx">Elektrownia Tramwajowa<small>za 2 min</small></span></div>
+    <div class="wiersz"><span class="h">9:41</span><i class="kr"></i><span class="tx">Kino Femina</span></div>
+    <div class="wiersz"><span class="h">9:46</span><i class="kr"></i><span class="tx">Muranów</span></div>
+    <div class="wiersz"><span class="h">9:50</span><i class="kr"></i><span class="tx">Pomnik Bohaterów Getta</span></div>
+  </div>
+  <div class="ster"><span class="ikona mieta">✦</span><div class="srodek"><span class="skok">◂◂</span><span class="play"></span><span class="skok">▸▸</span></div><span class="ikona">■</span></div>
+</div></div></div>
+
+<!-- E -->
+<div><div class="opis"><h2><span>E</span>Karuzela kart</h2>
+<p>Mapa jest osią: na dole poziome karty miejsc ze zdjęciem, bieżąca zatrzaskuje się na środku z paskiem tej opowieści. Przesunięcie karty przesuwa kamerę na miejsce. Postęp trasy pokazują jadąca kropka i numerki na mapie, pod kartami kropki.</p></div>
+<div class="tel"><div class="mapa"></div>
+<div class="arkusz" style="height:390px"><div class="uchwyt"></div>
+  <div class="karty">
+    <div class="karta boczna" style="margin-left:-210px"><div class="foto b"><span class="nr">6</span></div><div class="w"><b>Hala Mirowska</b><span>opowiedziane</span></div></div>
+    <div class="karta"><div class="foto"><span class="nr t">7 · teraz</span></div><div class="w"><b>Chłodna</b><span>Dalej Elektrownia · 2 min</span><div class="pasek"></div></div></div>
+    <div class="karta boczna"><div class="foto c"><span class="nr">8</span></div><div class="w"><b>Elektrownia</b><span>9:37</span></div></div>
+  </div>
+  <div class="kropki"><i class="b"></i><i class="b"></i><i class="t"></i><i></i><i></i><i></i><i></i></div>
+  <div class="ster"><span class="ikona mieta">✦</span><div class="srodek"><span class="skok">◂◂</span><span class="play"></span><span class="skok">▸▸</span></div><span class="ikona">■</span></div>
+</div></div></div>
+
+</div></body></html>

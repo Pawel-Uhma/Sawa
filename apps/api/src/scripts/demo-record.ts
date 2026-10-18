@@ -8,7 +8,8 @@
  *   DEMO_MODE=record pnpm --filter @sawa/api dev       # in one terminal
  *   pnpm --filter @sawa/api demo:record                # in another
  *
- * --within 10 (only places heard in the first 10 min of a ride), --max 40, --parallel 3, --dry.
+ * --within 10 (only places heard in the first 10 min of a ride), --max 40, --parallel 3, --dry,
+ * --text (stories without voice).
  *
  * PLAN_API_URL=<deployed API> plans the rides there, with the walking paths production has.
  *
@@ -35,6 +36,8 @@ const WITHIN_SEC =
   withinArg > 0 ? Number(process.argv[withinArg + 1]) * 60 : Number.POSITIVE_INFINITY;
 const parallelArg = process.argv.indexOf("--parallel");
 const PARALLEL = parallelArg > 0 ? Number(process.argv[parallelArg + 1]) : 1;
+/** Stories only, no ElevenLabs: replay then shows the text on a timer. */
+const TEXT_ONLY = process.argv.includes("--text");
 
 const ORIGINS: Record<string, LatLng> = {
   "42 Warsaw": HACKATHON_VENUE,
@@ -138,7 +141,7 @@ async function worker() {
     const [placeId, { name, targetSec }] = todo[i] ?? [];
     if (!placeId || !targetSec) continue;
     const started = Date.now();
-    const res = await post("/v1/stories/audio", {
+    const res = await post(TEXT_ONLY ? "/v1/stories" : "/v1/stories/audio", {
       placeId,
       targetSec,
       interests: ["historical", "cultural"],

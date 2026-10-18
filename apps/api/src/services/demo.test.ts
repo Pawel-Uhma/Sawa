@@ -93,6 +93,14 @@ describe("createRecordingStoryService", () => {
     await createRecordingStoryService(real, store, failed).tell(request("p1") as never);
     expect(store.story("p1")).toBeUndefined();
   });
+
+  it("does not save a silent place, which replay would read out as its name", async () => {
+    const store = memoryStore();
+    const real = fakeStories();
+    real.tell.mockResolvedValueOnce({ ...story("p1", "Kapliczka"), factIds: [], silent: true });
+    await createRecordingStoryService(real, store, new Set()).tell(request("p1") as never);
+    expect(store.story("p1")).toBeUndefined();
+  });
 });
 
 describe("createFixtureSynthesizer", () => {

@@ -7,5 +7,5 @@ Rzeczy, które trzeba zrobić albo sprawdzić przed pokazem (niedziela 18.10, pr
 - [ ] `/health` na Railway: `transitDate: "2026-10-18"` (grafy na 17–23.10 są w repo, API przełącza się o północy). Trasa demo zapisana jako fixture (T-18).
 - [ ] Rozgrzane opowieści i głos dla trasy demo: cache jest w pamięci, restart Railway go czyści (T-94). Rozwiązanie: tryb demo, [16-tryb-demo.md](16-tryb-demo.md).
 - [ ] **Nagrane opowieści i głos** w `apps/api/data/demo/` dla trasy pitchu (`DEMO_MODE=record`, `demo:record`), w commicie (T-152). Głos wymaga kredytów ElevenLabs.
-- [ ] **Railway: `DEMO_MODE=replay`**, `/health` zwraca `"demoMode":"replay"`. **Vercel: `NEXT_PUBLIC_VOICE=1`**, gdy są nagrane klipy.
+- [ ] **Railway: `DEMO_MODE=replay`**, `/health` zwraca `"demoMode":"replay"`.
 - [ ] Railway: `DEBUG_PAGES=0` (uwaga w `apps/api/.env.example`).
