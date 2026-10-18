@@ -85,7 +85,7 @@ async function post(path: string, body: unknown, base = API): Promise<Response> 
 }
 
 const health = await fetch(`${API}/health`).then((r) => r.json() as Promise<{ demoMode?: string }>);
-if (health.demoMode !== "record") {
+if (!DRY && health.demoMode !== "record") {
   console.error(`${API} is not in DEMO_MODE=record (health: ${JSON.stringify(health)})`);
   process.exit(1);
 }
