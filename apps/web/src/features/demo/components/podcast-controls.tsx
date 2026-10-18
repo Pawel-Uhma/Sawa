@@ -2,13 +2,14 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { type ReactNode, useEffect, useRef, useState } from "react";
-import { Spinner } from "@/components/waiting";
+import { RollingText, Spinner } from "@/components/waiting";
 import { LANG_LOCALES, useLang, useT } from "@/features/i18n";
 import { haptic, SPRING } from "../lib/device";
 import { placesLabel } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
 import { inMinutes, splitName } from "../lib/podcast";
 import { storyStartSec } from "../lib/ride-clock";
+import { useStoryWaitMessage } from "../lib/story-wait";
 import {
   CloseIcon,
   PauseIcon,
@@ -19,8 +20,9 @@ import {
   StopIcon,
 } from "./icons";
 
-// Szerokość jednego miejsca na linii; bieżące stoi na środku, jak na wyświetlaczu w tramwaju
-const STOP_W = 76;
+// Szerokość jednego miejsca na linii; bieżące stoi na środku, jak na wyświetlaczu w tramwaju.
+// Tyle, żeby dłuższe słowo („starozakonnych”) zmieściło się z przeniesieniem, bez wchodzenia na sąsiada
+const STOP_W = 96;
 // Co ile przeliczamy godziny dojazdu przy miejscach
 const WALL_TICK_MS = 30_000;
 
@@ -40,6 +42,8 @@ export type PodcastProps = {
 };
 
 export type Podcast = ReturnType<typeof usePodcast>;
+
+type SawaMode = "waiting" | "thinking" | "telling" | "paused";
 
 /** Pulsująca kropka „na żywo”; przy pauzie stoi i szarzeje. */
 export function LiveDot({ on }: { on: boolean }) {
@@ -89,14 +93,17 @@ export function usePodcast({
           ? t("Teraz", "Now")
           : t("Wstrzymane", "Paused");
 
-  // Przed pierwszym miejscem jedno zdanie, kiedy Sawa zacznie; potem ile miejsc zostało
+  // Co Sawa robi teraz: czeka na miejsce, myśli nad opowieścią, mówi albo stoi
+  const mode: SawaMode =
+    waiting && !held ? "waiting" : buffering ? "thinking" : isPlaying ? "telling" : "paused";
+  const waitIn = waiting && stop ? inMinutes(storyStartSec(stop) - sec, lang) : null;
+
+  // Pod linią ile miejsc zostało (kiedy Sawa zacznie, mówi wiersz stanu nad linią)
   const left = stops.length - 1 - index;
   const hint =
-    waiting && stop
-      ? `${t("Sawa zacznie na miejscu", "Sawa will start once you're there")} · ${inMinutes(storyStartSec(stop) - sec, lang)}`
-      : left > 0
-        ? t(`Jeszcze ${placesLabel(left, "pl")}`, `${placesLabel(left, "en")} to go`)
-        : t("Ostatnie miejsce tej przejażdżki", "Last place on this ride");
+    left > 0
+      ? t(`Jeszcze ${placesLabel(left, "pl")}`, `${placesLabel(left, "en")} to go`)
+      : t("Ostatnie miejsce tej przejażdżki", "Last place on this ride");
 
   return {
     stops,
@@ -109,6 +116,8 @@ export function usePodcast({
     held,
     buffering,
     status,
+    mode,
+    waitIn,
     hint,
     hasNext: activeIndex < stops.length - 1,
   };
@@ -193,7 +202,7 @@ export function PodcastDock({
 }: PodcastDockProps) {
   const t = useT();
   const lang = useLang();
-  const { stops, index, sec, total, hint, buffering, isPlaying, waiting } = podcast;
+  const { stops, index, sec, total, hint, buffering, isPlaying, waiting, mode } = podcast;
   const now = useWallClock();
   const at = (rideSec: number) =>
     now === null
@@ -205,7 +214,8 @@ export function PodcastDock({
 
   return (
     <div className="flex flex-col">
-      <StopLine stops={stops} index={index} waiting={waiting} at={at} onJump={onJump} />
+      <SawaStatus mode={mode} waitIn={podcast.waitIn} />
+      <StopLine stops={stops} index={index} mode={mode} at={at} onJump={onJump} />
       <p className="mt-2 flex justify-between gap-3 text-[12px] font-semibold text-tekst-3">
         <span className="min-w-0 truncate">{hint}</span>
         {arrival && (
@@ -304,13 +314,13 @@ export function PodcastDock({
 function StopLine({
   stops,
   index,
-  waiting,
+  mode,
   at,
   onJump,
 }: {
   stops: MockStop[];
   index: number;
-  waiting: boolean;
+  mode: SawaMode;
   at: (rideSec: number) => string | null;
   onJump: (index: number) => void;
 }) {
@@ -334,18 +344,20 @@ function StopLine({
     <ol
       ref={listRef}
       aria-label={t("Miejsca na trasie", "Places on the route")}
-      className="-mx-4 flex snap-x overflow-x-auto overscroll-x-contain px-[calc(50%-38px)] [mask-image:linear-gradient(to_right,transparent,#000_24px,#000_calc(100%-24px),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      className="-mx-4 mt-3 flex snap-x overflow-x-auto overscroll-x-contain px-[calc(50%-48px)] [mask-image:linear-gradient(to_right,transparent,#000_24px,#000_calc(100%-24px),transparent)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
       {stops.map((s, i) => {
         const past = i < index;
         const current = i === index;
         const when = current
-          ? waiting
+          ? mode === "waiting"
             ? at(storyStartSec(s))
-            : t("teraz", "now")
+            : mode === "thinking"
+              ? t("Sawa myśli", "thinking")
+              : t("teraz", "now")
           : at(storyStartSec(s));
         return (
-          <li key={s.id} className="relative w-[76px] shrink-0 snap-center">
+          <li key={s.id} className="relative w-[96px] shrink-0 snap-center">
             {i > 0 && (
               <span
                 aria-hidden="true"
@@ -369,11 +381,14 @@ function StopLine({
               }}
               className="relative flex w-full flex-col items-center px-1 text-center transition-transform active:scale-[0.94]"
             >
-              <span className="flex h-6 items-center">
+              <span className="relative flex h-6 items-center">
+                {current && <CurrentPulse mode={mode} />}
                 <span
-                  className={`rounded-full transition-[width,height,background-color] ${
+                  className={`relative rounded-full transition-[width,height,background-color] ${
                     current
-                      ? "size-[22px] border-4 border-powierzchnia bg-koral shadow-[0_0_0_2px_var(--koral),0_4px_10px_rgba(242,117,95,0.35)]"
+                      ? mode === "waiting"
+                        ? "size-[22px] border-[3px] border-koral bg-powierzchnia"
+                        : "size-[22px] border-4 border-powierzchnia bg-koral shadow-[0_0_0_2px_var(--koral),0_4px_10px_rgba(242,117,95,0.35)]"
                       : past
                         ? "size-3.5 bg-glebia/45"
                         : "size-3.5 border-[3px] border-tekst/20 bg-powierzchnia"
@@ -381,7 +396,7 @@ function StopLine({
                 />
               </span>
               <span
-                className={`mt-1.5 line-clamp-2 text-[11.5px] leading-[1.25] ${
+                className={`mt-1.5 line-clamp-2 w-full hyphens-auto break-words px-1 text-[11.5px] leading-[1.25] [overflow-wrap:anywhere] ${
                   current
                     ? "font-bold text-koral"
                     : past
@@ -402,6 +417,113 @@ function StopLine({
       })}
     </ol>
   );
+}
+
+/**
+ * Jedno zdanie nad linią, co Sawa teraz robi, żeby cisza nie wyglądała na zawieszenie:
+ * czeka, aż podjedziesz (z czasem), myśli nad opowieścią (kolejne kroki), opowiada albo stoi.
+ */
+function SawaStatus({ mode, waitIn }: { mode: SawaMode; waitIn: string | null }) {
+  const t = useT();
+  const reduce = useReducedMotion();
+  const thinking = useStoryWaitMessage(mode === "thinking");
+  const text =
+    mode === "waiting"
+      ? t("Sawa czeka, aż podjedziemy", "Sawa is waiting till we get there")
+      : mode === "thinking"
+        ? (thinking ?? t("Sawa zbiera myśli…", "Sawa is gathering her thoughts…"))
+        : mode === "telling"
+          ? t("Sawa opowiada", "Sawa is telling the story")
+          : t("Wstrzymane. Stuknij, a Sawa mówi dalej", "Paused. Tap play and Sawa goes on");
+
+  return (
+    <div
+      aria-live="polite"
+      className={`flex min-h-9 items-center gap-2.5 rounded-2xl px-3 py-2 text-[13px] font-semibold transition-colors ${
+        mode === "waiting" || mode === "thinking"
+          ? "bg-mieta-jasna text-glebia-ciemna"
+          : "bg-tlo-2 text-tekst-2"
+      }`}
+    >
+      <span className="flex size-4 shrink-0 items-center justify-center">
+        {mode === "thinking" ? (
+          <Spinner className="size-3.5 text-glebia" />
+        ) : mode === "waiting" ? (
+          <WaitDots reduce={Boolean(reduce)} />
+        ) : (
+          <LiveDot on={mode === "telling"} />
+        )}
+      </span>
+      <span className="min-w-0 flex-1 truncate">
+        <RollingText text={text} />
+      </span>
+      {mode === "waiting" && waitIn && (
+        <span className="shrink-0 tabular-nums text-glebia">{waitIn}</span>
+      )}
+    </div>
+  );
+}
+
+/** Trzy kropki jedna po drugiej: Sawa czeka. Przy ograniczonym ruchu stoją. */
+function WaitDots({ reduce }: { reduce: boolean }) {
+  return (
+    <span aria-hidden="true" className="flex items-center gap-[3px]">
+      {[0, 1, 2].map((i) => (
+        <motion.span
+          key={i}
+          className="size-[4px] rounded-full bg-glebia"
+          animate={reduce ? undefined : { opacity: [0.25, 1, 0.25] }}
+          transition={{
+            duration: 1.2,
+            repeat: Number.POSITIVE_INFINITY,
+            delay: i * 0.2,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+    </span>
+  );
+}
+
+/**
+ * Ruch wokół bieżącego miejsca: przy czekaniu fala jak sonar (zbliżamy się), przy myśleniu
+ * obracający się łuk. Gdy Sawa mówi albo stoi, nic się nie rusza.
+ */
+function CurrentPulse({ mode }: { mode: SawaMode }) {
+  const reduce = useReducedMotion();
+  if (reduce) return null;
+  if (mode === "waiting") {
+    return (
+      <motion.span
+        aria-hidden="true"
+        className="absolute top-1/2 left-1/2 size-[22px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-koral/40"
+        animate={{ scale: [1, 2], opacity: [0.6, 0] }}
+        transition={{ duration: 1.8, repeat: Number.POSITIVE_INFINITY, ease: "easeOut" }}
+      />
+    );
+  }
+  if (mode === "thinking") {
+    return (
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 32 32"
+        className="absolute top-1/2 left-1/2 size-8 -translate-x-1/2 -translate-y-1/2 animate-spin [animation-duration:1.1s]"
+      >
+        <circle
+          cx="16"
+          cy="16"
+          r="14"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeDasharray="22 66"
+          className="text-koral"
+        />
+      </svg>
+    );
+  }
+  return null;
 }
 
 /** Teraz w ms, co pół minuty; null przed pierwszym efektem (Date.now() w renderze psuje prerender). */
