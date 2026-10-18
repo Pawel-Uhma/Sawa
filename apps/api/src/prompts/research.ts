@@ -1,5 +1,5 @@
 import type { PlaceKind } from "@sawa/shared";
-import { isDryFact } from "../domain/dry-facts";
+import { isDryFact } from "@sawa/shared";
 import type { Place } from "../domain/place";
 
 /** How the search names each kind, so a mural called "David Bowie" is not the singer's biography. */

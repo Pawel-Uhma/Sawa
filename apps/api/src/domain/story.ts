@@ -1,5 +1,5 @@
 import { type Audience, factId, haversineM, type LatLng, type StoryStyle } from "@sawa/shared";
-import { isDryFact } from "./dry-facts";
+import { isDryFact } from "@sawa/shared";
 import type { BBox, Place, PlaceKind, PlaceSource, PlaceSummary } from "./place";
 import type { Finding } from "./research";
 
