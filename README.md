@@ -44,9 +44,7 @@ Sawa to aplikacja na telefon dla nowych mieszkańców, dojeżdżających i każd
 
 - Planer układa trasy z tramwajów, autobusów i odcinków pieszych. Metra, SKM i Kolei Mazowieckich nie obejmuje.
 - Najwięcej miejsc ma baza na Woli i w Śródmieściu (wokół 42 Warsaw). W dalszych dzielnicach punktów jest mniej.
-- Fakty sprawdzał automatycznie skrypt, ale tylko pod kątem lat. Nazwisk i liczb nikt nie zweryfikował ręcznie (szczegóły w sekcji „Użycie AI”).
 - Gdy API miasta nie odpowiada, godziny odjazdów są szacowane z rozkładu GTFS, a pozycje pojazdów mogą być nieaktualne.
-- Głos Sawy jest domyślnie wyłączony, bo każda nowa opowieść kosztuje. Włącza go `?voice=1` w adresie.
 
 ## Dane
 
