@@ -46,7 +46,7 @@ type RouteSheetProps = {
 /** Trasa: arkusz z punktami zatrzymania na telefonie, pływający panel na desktopie. */
 export function RouteSheet(props: RouteSheetProps) {
   const { stops, activeIndex, onActiveChange, onPlayStop, player, clock } = props;
-  const { setIsPlaying, rewind, restart, more } = player;
+  const { setIsPlaying, rewind, restart, more, skip } = player;
   const hasNext = activeIndex < stops.length - 1;
   const { progress, toggle: togglePlay } = player;
 
@@ -155,6 +155,7 @@ export function RouteSheet(props: RouteSheetProps) {
       onNext={goNext}
       onMore={more}
       onJump={onPlayStop}
+      onSkip={player.canSkip ? skip : undefined}
     />
   );
 

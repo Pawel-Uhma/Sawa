@@ -9,9 +9,12 @@ import { placesLabel } from "../lib/format";
 import type { MockStop } from "../lib/mock-data";
 import { inMinutes, splitName } from "../lib/podcast";
 import { storyStartSec } from "../lib/ride-clock";
+import { SKIP_SEC } from "../lib/story-player";
 import { useStoryWaitMessage } from "../lib/story-wait";
 import {
+  Back15Icon,
   CloseIcon,
+  Forward15Icon,
   PauseIcon,
   PlayIcon,
   RestartIcon,
@@ -169,6 +172,8 @@ export type PodcastDockProps = {
   onMore: () => void;
   /** Stuknięcie w miejsce na linii: jego opowieść od początku. */
   onJump: (index: number) => void;
+  /** ±15 s w bieżącej opowieści; brak, gdy nie ma czego przewijać. */
+  onSkip?: (deltaSec: number) => void;
 };
 
 /**
@@ -185,6 +190,7 @@ export function PodcastDock({
   onNext,
   onMore,
   onJump,
+  onSkip,
 }: PodcastDockProps) {
   const t = useT();
   const lang = useLang();
@@ -211,7 +217,23 @@ export function PodcastDock({
         )}
       </p>
 
-      <div className="mt-2 flex items-center justify-between">
+      {/* Przewija bieżącą opowieść, nie przejażdżkę; każdy nad przyciskiem miejsca po swojej stronie. */}
+      <div className="mt-1 flex justify-center gap-[112px]">
+        <SkipButton
+          label={t("Opowieść 15 sekund wstecz", "Story back 15 seconds")}
+          onClick={onSkip && (() => onSkip(-SKIP_SEC))}
+        >
+          <Back15Icon className="size-6" />
+        </SkipButton>
+        <SkipButton
+          label={t("Opowieść 15 sekund do przodu", "Story forward 15 seconds")}
+          onClick={onSkip && (() => onSkip(SKIP_SEC))}
+        >
+          <Forward15Icon className="size-6" />
+        </SkipButton>
+      </div>
+
+      <div className="flex items-center justify-between">
         <button
           type="button"
           onClick={() => {
@@ -585,6 +607,33 @@ function BufferRing({ show }: { show: boolean }) {
         </motion.svg>
       )}
     </AnimatePresence>
+  );
+}
+
+/** Mały przycisk ±15 s: ikona 24 px, pole dotyku 44 px. */
+function SkipButton({
+  label,
+  onClick,
+  children,
+}: {
+  label: string;
+  onClick: (() => void) | undefined;
+  children: ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      title={label}
+      disabled={!onClick}
+      onClick={() => {
+        haptic(4);
+        onClick?.();
+      }}
+      className="flex size-11 items-center justify-center rounded-full text-tekst-2 transition-[transform,background-color,opacity] hover:bg-tlo-2 active:scale-[0.88] disabled:opacity-30 disabled:hover:bg-transparent"
+    >
+      {children}
+    </button>
   );
 }
 

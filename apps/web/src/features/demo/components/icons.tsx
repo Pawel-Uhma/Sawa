@@ -170,6 +170,37 @@ export function SkipNextIcon(props: IconProps) {
   );
 }
 
+/** Strzałka w kółku z liczbą sekund: wstecz (`back`) albo do przodu, jak w Podcastach. */
+function SkipSecIcon({ back, ...props }: IconProps & { back?: boolean }) {
+  return (
+    <svg aria-hidden="true" {...base} {...props}>
+      <g transform={back ? undefined : "matrix(-1 0 0 1 24 0)"}>
+        <path d="M4.6 9A8.5 8.5 0 1 1 3.5 13" />
+        <path d="M4 4.5V9h4.5" />
+      </g>
+      <text
+        x="12"
+        y="15.6"
+        textAnchor="middle"
+        fill="currentColor"
+        stroke="none"
+        fontSize="8.5"
+        fontWeight="700"
+      >
+        15
+      </text>
+    </svg>
+  );
+}
+
+export function Back15Icon(props: IconProps) {
+  return <SkipSecIcon back {...props} />;
+}
+
+export function Forward15Icon(props: IconProps) {
+  return <SkipSecIcon {...props} />;
+}
+
 export function SkipPrevIcon(props: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
