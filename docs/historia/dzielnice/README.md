@@ -41,6 +41,26 @@ Rate limitów nie było: Overpass dostał 12 zapytań, a Wikidata jedno. Google 
 - **Adresy z Wikipedii:** 3476 zdań z adresami w 5 dzielnicach. Filtr na Warszawę i geokod co do budynku zostawił 481 adresów, z których 3 agentów Haiku zrobiło rekordy.
 - **Firecrawl:** dwa klucze, ok. 1950 z 2050 kredytów zużytych: warszawa1939.pl (1515 kart) i sztetl.org.pl (300 stron + listy).
 
+## Rundy 8–14: pozostałe 13 dzielnic (17–18.10)
+
+Cel: podobna gęstość miejsc na km² we wszystkich dzielnicach, bez dokładania Śródmieściu. Pliki dopisane do `scripts/historia/sources.ts`:
+
+| Plik | Źródło | Miejsca |
+|---|---|---|
+| `wikipedia-pozostale-dzielnice` | lokalny zrzut Wikipedii, artykuły wybrane przez Wikidatę i granice dzielnic, 23 agentów Haiku | 942 |
+| `warszawikia-pozostale-dzielnice` | Warszawikia (API), 10 agentów | 441 |
+| `sztetl-pozostale-dzielnice` | Wirtualny Sztetl (Firecrawl) | 20 |
+| `osm-pozostale-dzielnice` | OSM: tablice, pomniki, parki, sport | 588 |
+| `wikidata-zabytki-dzielnice` | Wikidata: zabytki z rejestru i ewidencji bez artykułu (data, architekt, nr rejestru, zdjęcie P18); bez domów, które mają tylko datę; z Bielan i Bemowa najwyżej 5 na zespół | 633 |
+| `osm-przyroda-dzielnice` | OSM: pomniki przyrody, rezerwaty, punkty widokowe | 123 |
+| `wikipedia-adresy-pozostale-dzielnice` | zdania „przy ul. X 12” z Wikipedii, adres dopasowany do numeru z OSM, 1 agent | 60 |
+| `wikipedia-osiedla-dzielnice` | zdania „mieszkał/urodził się w Aninie” itd., jeden rekord na osiedle (punkt w środku osiedla), 1 agent | 27 |
+| `patroni-ulic-dzielnice` | ulice z `name:etymology:wikidata` w OSM: kim był patron (tylko osoby) | 353 |
+
+Po rundzie 14 w Supabase jest 7698 miejsc i 4692 zdjęcia. Najmniej na km² nadal mają Wawer i Białołęka (3,3), Rembertów (4,4) i Wesoła (4,5). To duże dzielnice z lasami, o których Wikipedia i Warszawikia piszą mało; zabytek.pl nie pomaga, bo większość kart nie ma opisów.
+
+Uwaga: seed tylko dodaje i aktualizuje, nie usuwa. Rekord wycięty z pliku zostaje w bazie.
+
 ## Ograniczenia
 
 - Śródmieście ma 74% rekordów, bo tam jest najwięcej artykułów. Bemowo i Bielany są cienkie, a dobrze uzupełnia je warstwa OSM (parki, sport).

@@ -15447,51 +15447,6 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     20.897574,
-     52.25928
-    ]
-   },
-   "properties": {
-    "id": "patron-rondo-pulkownika-bernarda-adameckiego-bemowo",
-    "nazwa": "Rondo pułkownika Bernarda Adameckiego",
-    "typ": "ulica",
-    "dzielnica": "Bemowo",
-    "adres_dzis": "Rondo pułkownika Bernarda Adameckiego",
-    "lokalizacja": "przyblizona",
-    "fakty": [
-     "Patron ulicy: Bernard Adamecki (1897–1952), oficer Wojska Polskiego.",
-     "Bernard Antoni Adamecki, ps. Bocian, Dyrektor Gozdawa, Doktor, Grabiec, Parasol – oficer pilot obserwator Wojska Polskiego II Rzeczypospolitej i ludowego Wojska Polskiego, dwukrotny kawaler Orderu Virtuti Militari."
-    ],
-    "zrodla": [
-     {
-      "tytul": "Wikipedia: Bernard Adamecki",
-      "url": "https://pl.wikipedia.org/wiki/Bernard_Adamecki"
-     },
-     {
-      "tytul": "Wikidata: Bernard Adamecki",
-      "url": "https://www.wikidata.org/wiki/Q7940902"
-     },
-     {
-      "tytul": "OpenStreetMap: Rondo pułkownika Bernarda Adameckiego",
-      "url": "https://www.openstreetmap.org/search?query=Rondo%20pu%C5%82kownika%20Bernarda%20Adameckiego%2C%20Warszawa"
-     }
-    ],
-    "pewnosc": "srednia",
-    "zrodlo_rekordu": "patroni-ulic",
-    "ludzie": [
-     {
-      "kto": "Bernard Adamecki",
-      "rola": "patron ulicy",
-      "wiki": "https://pl.wikipedia.org/wiki/Bernard_Adamecki"
-     }
-    ]
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
      20.926465,
      52.250979
     ]
