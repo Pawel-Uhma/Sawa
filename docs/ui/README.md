@@ -80,6 +80,7 @@ Każdy zrzut ma jedną linię poniżej: plik, co pokazuje, decyzja (jeśli jest)
 | [1150-…-d-przejazdzki-jak-odcinki](propozycje/1150-ekran-glowny-d-przejazdzki-jak-odcinki-mobile.png) | D: gotowe trasy jak odcinki podcastu (mapa trasy, linie ZTM, zajawka opowieści), przełącznik czasu, pasek zakładek | ekran główny | |
 | [1150-…-e-wieczor](propozycje/1150-ekran-glowny-e-wieczor-mobile.png) | E: tryb ciemny, mapa z punktami historii, wybór czasu kółkami jak w minutniku iOS, koralowe „Jedziemy” | ekran główny | |
 | [2240-odtwarzacz-uklad-zestawienie](propozycje/2240-odtwarzacz-uklad-zestawienie.png) | Odtwarzacz na trasie: obecny i 3 warianty (A zwarty, B napisy na górze ze sterowaniem w doku, C karta miejsca ze zdjęciem i suwakiem na odcinki), HTML w `propozycje/html/odtwarzacz-uklad.html` | odtwarzacz | |
+| [0850-punkty-trasy-00-zestawienie](propozycje/0850-punkty-trasy-00-zestawienie.png) | Punkty trasy z glifem podrodzaju zamiast czarnych numerków: A moneta z numerkiem w rogu, B kolorowy medal, C pinezka, D pigułka numer + glif (aktywna z nazwą), E same naklejki bez numerów; HTML w `propozycje/html/punkty-trasy.html` | mapa, trasa | |
 
 ## Źródła makiet
 
