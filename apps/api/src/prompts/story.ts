@@ -1,4 +1,4 @@
-import type { Audience, Familiarity, Interest, Side, StoryStyle } from "@sawa/shared";
+import type { Audience, Familiarity, Interest, Side, StoryLang, StoryStyle } from "@sawa/shared";
 import type { StoryContext } from "../domain/contexts";
 import type { Place, PlaceSource } from "../domain/place";
 import { type FactPick, isGentleForKids, type StoryFact } from "../domain/story";
@@ -93,6 +93,12 @@ const STYLE_PL: Record<StoryStyle, string> = {
   trivia: "jedna ciekawostka w jednym, dwóch zdaniach, bez wstępu",
 };
 
+/**
+ * The listener uses the app in English: the same story, told and read in English. The material
+ * stays Polish, so the model translates it; numbers keep English digits (domain/speech.ts).
+ */
+const ENGLISH_RULES = `Język: słuchacz nie mówi po polsku. Całą opowieść (pole "text") piszesz po angielsku, naturalnie i ciepło, jak koleżanka, na „you”. Materiał jest po polsku, więc go tłumaczysz, niczego nie dodając. Zdania w cudzysłowie podane wyżej też mówisz po angielsku. Nazwy własne miejsc, ulic i ludzi zostawiasz po polsku; przy pierwszym użyciu możesz krótko powiedzieć po angielsku, co to jest („Hale Mirowskie, the old market halls”). Zasady o liczbach stosujesz po angielsku: lata cyframi („in 1867”), wieki liczebnikiem („the 19th century”), nigdy cyframi rzymskimi; jednostki pełnymi słowami („metres”, „kilometres”).`;
+
 /** Tells the model what each line is, so it reaches for the stories first. */
 const KIND_LABEL: Record<StoryFact["kind"], string> = {
   story: "historia",
@@ -108,6 +114,8 @@ export type StoryPromptOpts = {
   style?: StoryStyle;
   familiarity?: Familiarity;
   audience?: Audience;
+  /** "en": the story is told in English; missing: Polish. */
+  lang?: StoryLang;
   /** Where to look; missing when the client does not know. */
   side?: Side;
   /** Background to explain first (first-timers, once per topic). */
@@ -171,6 +179,7 @@ export function storyUserPrompt(
       : "Słuchacz nie podał zainteresowań.",
     opts.style && `Styl: ${STYLE_PL[opts.style]}.`,
     `Długość: najwyżej ${opts.words} słów. Krócej, jeśli materiał się skończy.`,
+    opts.lang === "en" && ENGLISH_RULES,
   ];
   return lines.filter((l) => l !== false && l !== null && l !== 0 && l !== undefined).join("\n");
 }

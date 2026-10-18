@@ -62,7 +62,7 @@
 
 - [ ] **T-123** Tryb dla dzieci: przełącznik w onboardingu, pole `audience` w kontrakcie, prostsza opowieść Sawy (dalej tylko z faktów), delikatnie o miejscach wojennych; pomysły dodatkowe w issue ([#65](https://github.com/Pawel-Uhma/Sawa/issues/65)) — `R3` (Paweł; prompt to obszar R4)
 - [x] **T-128** Interfejs po angielsku: przełącznik Polski / English w menu i na ekranie powitalnym, `features/i18n` (`useT`, `pick`), wybór w localStorage — `R3` (Paweł, 17.10, 19:10)
-- [ ] **T-129** Opowieści i głos po angielsku: pole `lang` w `StoryRequest` (kontrakt), prompt i TTS w języku interfejsu; web wyśle `useLang()` po dodaniu pola — `R4` (prompt) + `R3`
+- [~] **T-129** Opowieści i głos po angielsku: pole `lang` w `StoryRequest` (kontrakt), prompt i TTS w języku interfejsu; web wyśle `useLang()` po dodaniu pola — `R4` (prompt) + `R3` (Paweł z agentem, 18.10 08:50: kod w gałęzi `r3/opowiesci-en`, zostaje test na żywo po deployu)
 
 - [x] **T-110** Cel trasy: najpierw najszybsza droga (`destination` bez `durationMin`), suwak od jej `totalMin` ([#43](https://github.com/Pawel-Uhma/Sawa/issues/43)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)
 - [x] **T-111** Godziny odjazdów: rozkład vs „ok.”, opóźnienie `delaySec`, podpis z `attribution` ([#44](https://github.com/Pawel-Uhma/Sawa/issues/44)) — `R3` (Szczepan na prośbę użytkownika, 17:50: gałąź `r3/fastest-and-departures`, czeka na PR)

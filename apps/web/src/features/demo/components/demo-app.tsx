@@ -313,7 +313,7 @@ export function DemoApp({ scenario }: { scenario?: "stage" } = {}) {
     origin,
   ]);
 
-  const listener = useMemo(() => listenerOf(profile), [profile]);
+  const listener = useMemo(() => listenerOf(profile, lang), [profile, lang]);
   const memory = useMemory();
   // Odtwarzacz jest tu, a nie w arkuszu trasy: zakładka Sawa steruje tą samą opowieścią.
   const player = useStoryPlayer(route, activeIndex, listener);

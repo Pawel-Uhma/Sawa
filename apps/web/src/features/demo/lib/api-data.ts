@@ -8,6 +8,7 @@ import {
   type LatLng,
   type Route,
   STORY_STYLES,
+  type StoryLang,
   type StoryStyle,
   type Travel,
 } from "@sawa/shared";
@@ -36,14 +37,17 @@ export type Listener = {
   familiarity?: Familiarity;
   storyStyle?: StoryStyle;
   audience?: Audience;
+  /** The interface's language: Sawa tells and reads the stories in it. */
+  lang?: StoryLang;
 };
 
-export function listenerOf(profile: Profile): Listener {
+export function listenerOf(profile: Profile, lang?: StoryLang): Listener {
   return {
     interests: toPlannerInterests(profile.interests),
     familiarity: oneOf(FAMILIARITY, profile.familiarity),
     storyStyle: oneOf(STORY_STYLES, profile.storyStyle),
     audience: oneOf(AUDIENCES, profile.audience),
+    lang,
   };
 }
 

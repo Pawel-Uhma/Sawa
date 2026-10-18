@@ -85,6 +85,7 @@ export function createLiveStoryService({
             try {
               const voiced = speech.speakStream(text.read(), {
                 whole: told.whole,
+                lang: request.lang,
                 onWords: (times) => wordTimes.push(...times),
               });
               for await (const bytes of voiced) {

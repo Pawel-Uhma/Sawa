@@ -1,3 +1,4 @@
+import type { StoryLang } from "@sawa/shared";
 import {
   createSentenceChunker,
   normalizeSpeechText,
@@ -35,6 +36,8 @@ export type SpeakStreamOptions = {
    * when a sentence cannot be timed, so the times never belong to the wrong words.
    */
   onWords?: (starts: number[]) => void;
+  /** Language of the text; missing: "pl" (digits are spelled out in Polish). */
+  lang?: StoryLang;
 };
 
 /** A cached clip; `wordTimes` when every word of it was timed. */
@@ -69,7 +72,9 @@ export function createSpeechService(synthesizer: SpeechSynthesizer): SpeechServi
     async *speakStream(text, opts) {
       // A story told before is a whole clip in the cache.
       const hit =
-        opts?.whole === undefined ? undefined : cache.get(normalizeSpeechText(opts.whole));
+        opts?.whole === undefined
+          ? undefined
+          : cache.get(normalizeSpeechText(opts.whole, opts.lang));
       if (hit) {
         const clip = await hit;
         const words = opts?.whole === undefined ? 0 : wordCount(cleanForSpeech(opts.whole));
@@ -79,7 +84,7 @@ export function createSpeechService(synthesizer: SpeechSynthesizer): SpeechServi
       }
       const stream = synthesizer.stream?.bind(synthesizer);
       let timed = synthesizer.streamWithTimes?.bind(synthesizer);
-      const chunker = createSentenceChunker();
+      const chunker = createSentenceChunker(opts?.lang);
       const said: string[] = [];
       const parts: Uint8Array[] = [];
       // Where the next sentence starts in the clip, and every word's time so far.
@@ -166,7 +171,7 @@ export function createSpeechService(synthesizer: SpeechSynthesizer): SpeechServi
       if (rest) yield* say(rest);
       if (parts.length) {
         remember(
-          normalizeSpeechText(said.join(" ")),
+          normalizeSpeechText(said.join(" "), opts?.lang),
           Promise.resolve({
             audio: joinAudio(parts),
             contentType: "audio/mpeg",

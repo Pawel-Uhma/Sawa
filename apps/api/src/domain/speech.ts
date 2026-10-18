@@ -1,3 +1,4 @@
+import type { StoryLang } from "@sawa/shared";
 import { spellNumbers } from "./spoken-numbers";
 import { cleanForSpeech } from "./story";
 
@@ -10,10 +11,12 @@ export type SpeechAudio = {
 /**
  * Text as it goes to TTS and as the cache key: same words with different spacing are one clip.
  * Line breaks become spaces because ElevenLabs reads a newline as a long pause, and numbers in
- * digits (years, house numbers, amounts) become words because it reads digits badly.
+ * digits (years, house numbers, amounts) become words because it reads Polish digits badly.
+ * English digits it reads well, so an English text keeps them.
  */
-export function normalizeSpeechText(text: string): string {
-  return spellNumbers(text.replace(/\s+/g, " ").trim());
+export function normalizeSpeechText(text: string, lang: StoryLang = "pl"): string {
+  const spaced = text.replace(/\s+/g, " ").trim();
+  return lang === "en" ? spaced : spellNumbers(spaced);
 }
 
 /** The first chunk is short so the voice starts soon; later ones are longer for steadier prosody. */
@@ -30,12 +33,12 @@ export type SpeechChunk = { display: string; spoken: string };
  * Cuts text arriving in pieces into whole sentences for TTS: never mid-sentence, and only once a
  * chunk is long enough. `flush` returns what is left when the text ends.
  */
-export function createSentenceChunker() {
+export function createSentenceChunker(lang: StoryLang = "pl") {
   let buffer = "";
   let first = true;
   const clean = (text: string): SpeechChunk | null => {
     const display = cleanForSpeech(text);
-    return display ? { display, spoken: normalizeSpeechText(display) } : null;
+    return display ? { display, spoken: normalizeSpeechText(display, lang) } : null;
   };
 
   return {
